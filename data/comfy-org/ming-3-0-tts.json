@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 5454,
+  "downloads_30d": 5475,
   "trending_score": 13,
   "parameters": null,
   "parameters_human": null,
@@ -39,5 +39,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    }
+  ]
 }

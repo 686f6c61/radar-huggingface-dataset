@@ -18,8 +18,8 @@
     "comfyui",
     "int8",
     "convrot",
-    "base_model:Edge0/Audio8-TTS-Realistic-0.6b",
-    "base_model:finetune:Edge0/Audio8-TTS-Realistic-0.6b",
+    "base_model:Edge0/Audio8-TTS-Realistic-Air",
+    "base_model:finetune:Edge0/Audio8-TTS-Realistic-Air",
     "license:apache-2.0",
     "region:us"
   ],

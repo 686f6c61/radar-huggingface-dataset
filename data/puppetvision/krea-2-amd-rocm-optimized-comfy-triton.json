@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 4160,
+  "downloads_30d": 4164,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "comfyui-rocm/comfy/ldm/krea2 at master - GitHub",
-      "url": "https://github.com/localhubs/comfyui-rocm/tree/master/comfy/ldm/krea2",
-      "snippet": "Windows-only version of ComfyUI which uses AMD's official ROCm and PyTorch libraries to get better performance with AMD GPUs. [auto-installation and popular performance enhancing packages like..."
-    },
-    {
-      "title": "comfyui-rocm/comfy/ldm/krea2/model.py at master - GitHub",
-      "url": "https://github.com/LordFlashmeow/comfyui-rocm/blob/master/comfy/ldm/krea2/model.py",
-      "snippet": "Windows-only version of ComfyUI which uses AMD's official ROCm and PyTorch libraries to get better performance with AMD GPUs. [auto-installation and popular performance enhancing packages like..."
-    },
-    {
-      "title": "Supercharge Krea 2 Turbo on AMD ROCm - ComfyUI Triton-optimized models",
-      "url": "https://www.youtube.com/watch?v=fD-J2CYetIg",
-      "snippet": "🚀 **Krea 2 Turbo on AMD ROCm — up to 64.9% lower first-workflow time with the fully optimized ComfyUI stack**This release delivers an AMD ROCm-optimized **K..."
-    },
-    {
-      "title": "Krea 2 Turbo on RX 7800 XT via ComfyUI + ROCm: GGUF Text-to-Image in 16GB",
-      "url": "https://smeltcore.com/recipes/krea-2-rx-7800-xt/",
-      "snippet": "A local install of Krea 2 Turbo — the distilled, few-step variant of Krea AI&#x27;s from-scratch aesthetic-first text-to-image foundation model (released 2026-06-23) — running 8-step text-to-image at up to 1280×720 on an AMD RX 7800 XT (16GB), inside ComfyUI on ROCm."
-    },
-    {
-      "title": "Comfy-Org/Krea-2 · Running On <4gb Vram - Hugging Face",
-      "url": "https://huggingface.co/Comfy-Org/Krea-2/discussions/21",
-      "snippet": "Instructions to use Comfy-Org/Krea-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusion Single File How to use Comfy-Org/Krea-2 with Diffusion Single File:"
-    }
-  ]
+  "sources": []
 }

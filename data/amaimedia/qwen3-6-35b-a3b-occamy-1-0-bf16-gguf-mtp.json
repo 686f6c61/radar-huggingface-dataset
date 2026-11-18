@@ -262,7 +262,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1779,
+  "downloads_30d": 1762,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",
@@ -283,31 +283,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Přihlášení do aplikace YouTube na chytré televizi nebo herní konzoli",
-      "url": "https://support.google.com/youtube/answer/3015415?hl=cs",
-      "snippet": "Přečtěte si, jak se odhlásit nebo odebrat účet v aplikaci YouTube na chytré televizi nebo herní konzoli. Pokud jste členem služby …"
-    },
-    {
-      "title": "YouTube 鍵盤快速鍵",
-      "url": "https://support.google.com/youtube/answer/7631406?hl=zh-Hant",
-      "snippet": "如果你使用的是 新版電腦網頁，必須先按一下影片播放器，才能使用鍵盤快速鍵。如要回復到舊版電腦網頁，請依序按一下個人資料 …"
-    },
-    {
-      "title": "First Look: YT Industries TUES CF - Pinkbike",
-      "url": "https://www.pinkbike.com/news/first-look-YT-TUES-CF-Pro-2015.html",
-      "snippet": "Feb 19, 2015 · Gravity riders have been anticipating this moment, and YT did not disappoint - Pro spec and a carbon chassis at a …"
-    },
-    {
-      "title": "Results for \"Decoy\" - Pinkbike BuySell Search",
-      "url": "https://www.pinkbike.com/buysell/list/?q=Decoy",
-      "snippet": "Explore North America's largest marketplace for used mountain bikes and parts."
-    },
-    {
-      "title": "Đăng xuất hoặc xoá tài khoản khỏi YouTube trên TV hoặc máy chơi trò …",
-      "url": "https://support.google.com/youtube/answer/7612539?hl=vi",
-      "snippet": "Tìm hiểu thêm về việc: Đăng xuất khỏi YouTube trên máy tính hoặc thiết bị di động. Xoá hoặc ẩn kênh YouTube. Huỷ, tạm dừng …"
-    }
-  ]
+  "sources": []
 }

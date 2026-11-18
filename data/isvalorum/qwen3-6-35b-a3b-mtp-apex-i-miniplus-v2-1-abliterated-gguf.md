@@ -2,104 +2,100 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización GGUF de la edición "abliterated" (sin rechazos) del modelo Qwen3.6-35B-A3B, publicada por el usuario IsValorum. Se trata de un derivado del modelo base Qwen/Qwen3.6-35B-A3B, un MoE híbrido de 34.660.610.688 parámetros totales (unos 34,66B) con aproximadamente 3B de parámetros activos por token, arquitectura que combina capas de atención completa con capas recurrentes basadas en DeltaNet SSM y un bloque integrado de predicción multi-token (MTP).
+Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF es una cuantizacion GGUF de la familia Qwen3.6, publicada por el usuario independiente IsValorum. Se trata de una version "abliterated" (sin rechazos, tambien etiquetada como uncensored) del modelo base Qwen/Qwen3.6-35B-A3B, un transformer de tipo Mixture-of-Experts (MoE) con 34.660.610.688 parametros totales, del que se activan aproximadamente 3.000 millones por token (la designacion A3B indica 3B activos). El modelo base es multimodal (image-text-to-text), con capacidades de razonamiento, codigo, uso de herramientas y agentes, y soporte de decodificacion especulativa mediante MTP (Multi-Token Prediction).
 
-El problema que aborda es doble: por un lado, comprimir un MoE de 35B en un envelope de 14,66 GB (13,65 GiB) manteniendo una calidad declarada de nivel Q5_K_M, de modo que quepa en una única GPU de consumo de 16 GB; por otro, eliminar matemáticamente la dirección de rechazo del modelo mediante ablación direccional (TPE, optimización multivariante de Pareto) aplicada sobre las proyecciones residuales `attn.o_proj` y `mlp.down_proj`. La relevancia actual está en que permite ejecutar localmente un modelo de razonamiento de contexto largo (hasta 256K tokens) sin guardarraíles de rechazo, algo interesante tanto para investigación sobre alineación como para flujos de trabajo de seguridad ofensiva autorizada.
+La relevancia de esta ficha es doble: por un lado, documenta un MoE de ~35B con contexto nativo de 256K que puede ejecutarse en GPU de consumo gracias a su reducido numero de parametros activos; por otro, ejemplifica la practica de la "abliteration", una modificacion de pesos orientada a eliminar los comportamientos de rechazo aprendidos en el alineamiento, con implicaciones legales y de seguridad que conviene tener presentes en produccion.
 
-Según las métricas declaradas por el autor, la cuantización introduce un incremento de perplejidad en WikiText-2 de +0,1395 puntos (+2,62%) respecto al BF16 sin comprimir, frente al +0,0493 (+0,93%) de la edición alineada del mismo autor. El repositorio incluye acompañantes en Q8_0 para el bloque MTP y un proyector de visión `mmproj`. No se han publicado resultados de benchmarks de razonamiento, código o matemáticas, y la búsqueda web no ha devuelto fuentes independientes sobre el modelo.
+El autor distribuye el modelo en formato GGUF con cuantizaciones "quirurgicas" por tensor (mapa de cuantizacion auditado desde el propio GGUF), acompanado de un modulo MTP dedicado en Q8_0 y un componente de vision separado. La licencia declarada es Apache 2.0, heredada del modelo base, y el pipeline es image-text-to-text.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida transformer: capas de atención completa intercaladas con capas recurrentes DeltaNet SSM, 40 capas y 256 micro-expertos por capa, más bloque MTP integrado |
-| Parametros totales | 34.660.610.688 (≈34,66B) |
-| Parametros activos | ≈3B por token (según la nomenclatura A3B del modelo base) |
-| Longitud de contexto | 256K tokens según la model card ("Full 256K Context"); se mencionan escenarios de offload parcial para contexto de 128K o superior |
-| Tipos de cuantizacion | GGUF mixta tensor a tensor: `IQ3_XXS` en expertos centrales (capas 10-29), `Q3_K` en expertos de borde (0-9 y 30-39), `Q5_K` en el experto compartido (40 capas), `Q4_K` en `q/k/v` + `Q6_K` en la proyección de salida de atención, `Q8_0` en las puertas de atención (30 capas), `Q6_K` en la cabeza de salida, `F32` sin comprimir en los 80 enrutadores (`gate_inp` y `gate_shexp`). Acompañantes en `Q8_0` para MTP y visión |
-| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar (13 idiomas) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (`llama.cpp`); el modelo base se distribuye en safetensors, este repositorio no |
-| Tamaño del repositorio | 17,3 GB en total; el archivo principal de la cuantización ocupa 14,66 GB (13,65 GiB) |
-| Fecha de publicación | 2026-09-23 (creación y última actualización en la ficha de Hugging Face) |
+| Arquitectura | Transformer Mixture-of-Experts (Qwen3.6, familia qwen3_5_moe) con MTP |
+| Parametros totales | 34.660.610.688 (~34,7B) |
+| Parametros activos | ~3B (designacion A3B; valor exacto no disponible) |
+| Longitud de contexto | 256K tokens (segun model card) |
+| Tipos de cuantizacion | GGUF con cuantizacion personalizada por tensor (APEX-I-MiniPlus V2.1); cuantizaciones concretas por archivo no detalladas en la informacion disponible |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); modulo MTP en Q8_0 y componente de vision como archivos companeros |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe el modelo base como un MoE disperso de 35B con unos 3B de parámetros activos, organizado en 40 capas y 256 micro-expertos, más un experto compartido (`shexp`) presente en todas las capas. La model card menciona explícitamente matrices de estado recurrente de DeltaNet SSM y un subconjunto de capas con atención completa (capas 3, 7, 11, ...), lo que apunta a una arquitectura híbrida que alterna mecanismos de atención lineal/recurrente con atención completa periódica. Se incluye además un bloque MTP (multi-token prediction) que el autor acompaña de un archivo separado en Q8_0, presumiblemente para decodificación especulativa, aunque la model card no detalla su uso.
+El modelo base Qwen3.6-35B-A3B es un transformer de tipo Mixture-of-Experts: de los ~34,7B parametros totales, solo se activan alrededor de 3B por token, lo que reduce el coste computacional de inferencia manteniendo la capacidad de representacion de un modelo de mayor tamano. Incorpora MTP (Multi-Token Prediction), que permite decodificacion especulativa y, por tanto, un aumento del throughput de generacion. El pipeline declarado es image-text-to-text, por lo que el modelo base integra un codificador visual y capacidades multimodales.
 
-No se documentan en la información proporcionada los datos de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación). Lo que sí se documenta es el post-procesado aplicado por el autor de la cuantización: una ablación direccional de rechazo mediante optimización multivariante de Pareto con TPE, en la que el vector de rechazo se ortogonaliza contra activaciones inofensivas y se resta estrictamente de las proyecciones residuales (`attn.o_proj` y `mlp.down_proj`), preservando las matrices de estado recurrente de DeltaNet. La asignación de precisión por tensor se realizó manualmente, manteniendo en F32 los 80 enrutadores para evitar deriva de routing durante el forward pass.
+Sobre el entrenamiento del modelo base no se aporta informacion en la documentacion disponible (numero de tokens, composicion del dataset, uso de RLHF/DPO u otras etapas de alineamiento): no disponible. La intervencion de IsValorum consiste en una cuantizacion GGUF con asignacion diferenciada de precision por tensor, auditada desde el propio archivo GGUF, mas una ablacion direccional de los rechazos ("true directional refusal ablation") que da lugar a la variante Abliterated. El autor declara que el calculo se realizo de forma independiente en clusters de nube privados, sin acceso a la infraestructura del desarrollador original.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento multi-paso: la model card afirma que los caminos de chain-of-thought, la síntesis de código y las derivaciones matemáticas conservan su fidelidad tras la ablación, aunque sin aportar benchmarks que lo respalden.
-- Razonamiento con presupuesto de contexto largo: ventana declarada de 256K tokens, con soporte de carga parcial en memoria de sistema para contextos de 128K o superiores.
-- Generación y comprensión de código: se cita explícitamente la preservación de la síntesis de código y de la indentación y llaves correctas, en contraste con cuantizaciones comunitarias más agresivas que el autor describe como propensas a errores de sintaxis.
-- Capacidades de visión: el repositorio incluye un proyector de visión (`mmproj`) como acompañante, lo que sugiere entrada multimodal, si bien la model card no detalla el alcance ni los benchmarks de visión.
-- Multilingüismo: 13 idiomas declarados (inglés, chino, español, francés, alemán, portugués, italiano, ruso, japonés, coreano, vietnamita, tailandés y árabe).
-- Ausencia deliberada de rechazos: la dirección de rechazo ha sido ablacionada en tareas de seguridad de sistemas, pruebas de penetración, ingeniería inversa y red teaming.
-- Tool calling / function calling: no disponible. La model card no documenta soporte explícito de llamadas a herramientas; solo aparecen los tags `conversational` y `endpoints_compatible`.
-- Capacidades de agente y razonamiento multi-paso autónomo: no disponibles como característica documentada; el tag `reasoning` y la presencia del bloque MTP son los únicos indicios indirectos.
+- Generacion de texto y razonamiento general, con modo de razonamiento configurable ("reasoning effort") mediante plantilla de chat endurecida.
+- Generacion de codigo y tareas de ingenieria de software, con etiquetas que referencian SWE-bench en la metadata del modelo.
+- Capacidades multimodales de vision (image-text-to-text) mediante el componente de vision companero.
+- Tool calling y function calling, orientado a flujos agenticos.
+- Razonamiento multi-paso y uso de agentes.
+- Decodificacion especulativa via MTP para acelerar la generacion.
+- Multilingue en 13 idiomas: ingles, chino, espanol, frances, aleman, portugues, italiano, ruso, japones, coreano, vietnamita, tailandes y arabe.
+- Comportamiento sin rechazos (abliterated/uncensored): el modelo no aplica las negativas de seguridad del alineamiento original.
 
 ## Casos de uso
 
-- Red teaming y evaluación de seguridad interna: el modelo puede generar hipótesis de ataque, análisis de superficie de exposición y borradores de exploits contra infraestructura propia, sin que la capa de rechazo interrumpa el flujo. Es adecuado precisamente porque la ablación elimina la dirección de rechazo en tareas de pentesting, lo que lo hace inutilizable como asistente de cara al público sin moderación externa.
-- Investigación sobre alineación y mecanismos de rechazo: permite comparar la distribución de respuestas del modelo base alineado frente a la variante ablacionada sobre el mismo prompt, con una penalización de perplejidad conocida (+0,1395 PPL en WikiText-2) que acota el coste de la intervención.
-- Análisis de documentación extensa en local: con 256K tokens de contexto y 14,66 GB de pesos, se pueden procesar expedientes, contratos o informes técnicos de cientos de páginas en una estación de trabajo con una GPU de 16 GB, sin enviar datos a servicios externos.
-- Asistente de código en puesto de trabajo individual: el modelo cabe en una RTX 4060 Ti de 16 GB o similar y, según el autor, mantiene la coherencia de nivel Q5_K_M en generación de código; es adecuado para autocompletado, refactorización y explicación de código sobre repositorios privados.
-- Despliegue en servidores sin GPU: con inferencia en memoria de sistema (DDR4/DDR5), el autor declara 20-45 tok/s según CPU y ancho de banda de memoria, lo que permite servir el modelo en un host de CPU para tareas por lotes o de baja concurrencia.
-- Traducción y localización multilingüe: con 13 idiomas declarados se puede usar como traductor entre pares de idiomas europeos y asiáticos, aunque no hay métricas BLEU o COMET publicadas que respalden la calidad.
-- Generación de datos sintéticos y aumentación de datasets: útil para producir corpus de dominios sensibles o poco representados donde un modelo alineado se negaría a continuar, siempre con revisión humana posterior.
-- Tutoría técnica y explicación de conceptos de seguridad ofensiva: al no rechazar temáticas de ingeniería inversa, resulta apropiado para material formativo interno dirigido a equipos de seguridad, con la advertencia de que el contenido generado debe validarse.
+- Atencion al cliente automatizada: el modelo puede sostener conversaciones multi-turno con historial extenso gracias a su ventana de 256K tokens, y el bajo numero de parametros activos permite servir varias sesiones concurrentes en una sola GPU.
+- Generacion de codigo en produccion: con soporte de tool calling, puede integrarse en pipelines de CI/CD para revision de parches, generacion de tests o resolucion de issues acotadas; el modulo MTP reduce la latencia en bucles de generacion largos.
+- Agentes autonomos de investigacion: la combinacion de razonamiento multi-paso, contexto largo y uso de herramientas permite construir agentes que consulten APIs, lean documentacion extensa y sinteticen resultados.
+- Procesamiento de documentos con imagenes: al ser image-text-to-text, sirve para extraer informacion de capturas, diagramas o formularios escaneados junto con el texto que los acompana.
+- Analisis de repositorios y bases de codigo: el contexto de 256K permite cargar varios archivos y mantener coherencia entre ellos en tareas de refactorizacion o auditoria.
+- Despliegue local en estaciones de trabajo: con cuantizacion agresiva y offload parcial a RAM del sistema, el modelo puede ejecutarse en equipos con GPU de consumo, lo que facilita prototipado sin coste de API.
+- Investigacion sobre alineamiento y seguridad: la variante abliterated es util como objeto de estudio para medir como cambia el comportamiento del modelo al eliminar las capas de rechazo, siempre en entornos controlados.
+- Asistentes multilingues: la cobertura de 13 idiomas permite desplegar un unico modelo para soporte en mercados con lenguas diversas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de razonamiento, código o matemáticas (MMLU, HumanEval, GSM8K u otros) en la información disponible. El único dato cuantitativo aportado por el autor es la perplejidad en WikiText-2:
+La model card incluye referencias a un "Independent Benchmark of the APEX-I-MiniPlus Family (Occamy V2 Reference)", a una seccion de "Empirical Benchmarks & Fidelity Verification" y a un espectro de calidad frente a cuantizaciones planas estandar. Sin embargo, en la informacion proporcionada no se incluyen los valores numericos de dichos benchmarks (MMLU, HumanEval, GSM8K, WikiText-2 PPL u otros) para este modelo concreto. Los unicos datos cuantitativos de rendimiento presentes corresponden a otras releases del autor (por ejemplo, mejoras de PPL en WikiText-2 frente a GSQ-RCO IQ3_S para los modelos de 27B), no a este modelo.
 
-| Modelo | Perplejidad WikiText-2 | Delta frente a BF16 |
-|---|---|---|
-| Base BF16 sin comprimir (referencia aproximada citada por el autor) | ≈5,32 | — |
-| APEX-I-MiniPlus V2.1 (edición alineada, Q6_K) | ≈5,3693 (ΔPPL +0,0493) | +0,93% |
-| Este repositorio (abliterated, mezcla IQ3_XXS/Q3_K/Q5_K/Q8_0) | 5,4595 ± 0,12874 | +0,1395 (+2,62%) |
-
-El autor atribuye +0,08 puntos de perplejidad a la eliminación de la dirección de rechazo y el resto a la compresión. No hay mediciones independientes que verifiquen estas cifras.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: el archivo principal ocupa 14,66 GB (13,65 GiB), por lo que requiere al menos 16 GB de VRAM para una carga completa de los pesos, sin contar caché KV.
-- GPU recomendadas: una GPU de 16 GB (RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 5060 Ti 16 GB, A4000) permite cargar los pesos; para contexto largo conviene una GPU de 24 GB o superior (RTX 4090, RTX 5090, A5000, L40S) y, para servicio concurrente, A100 o H100.
-- Viabilidad en GPU de consumo: sí. El propio autor destaca que el build cabe "enteramente en una única GPU de consumo de 16 GB". Para ventanas de 128K o más, se debe recurrir a offload parcial a memoria de sistema.
-- Memoria de sistema: los 17,3 GB del repositorio incluyen acompañantes (MTP en Q8_0 y proyector de visión), por lo que conviene reservar al menos 32 GB de RAM para carga completa en CPU y 64 GB o más si se quiere mantener contexto largo con offload parcial.
-- Opciones de despliegue: `llama.cpp`, Ollama, LM Studio y cualquier runtime compatible con GGUF y endpoints compatibles con la API de OpenAI. El soporte de vLLM con GGUF no está confirmado en la información disponible.
-- Rendimiento: no disponible para inferencia en GPU. En inferencia sobre memoria de sistema, el autor declara entre 20 y 45 tok/s en función del procesador, el ancho de banda de memoria y la configuración DDR4/DDR5.
-- Efecto del hardware en el rendimiento: el autor afirma que la configuración elegida evita paradas de dequantización en CPU ("cero stalls de AVX2"), pero no se aportan mediciones reproducibles.
+- VRAM estimada: el repositorio ocupa 18,4 GB, por lo que la cuantizacion principal cabe en GPUs de 24 GB con margen para contexto moderado; la model card menciona explicitamente un escenario de "24GB miracle" con contexto completo de 256K en VRAM, aunque el detalle de configuracion no se reproduce en la informacion disponible.
+- GPUs recomendadas: no se detalla una lista concreta; la model card incluye una seccion de throughput y offload para RTX 30, RTX 40 y RTX 50, ademas de streaming desde RAM del sistema.
+- GPU de consumo: si, el modelo esta disenado para caber en GPUs de consumo de 24 GB y para ejecucion con offload parcial a RAM en equipos con menos VRAM.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo); la etiqueta endpoints_compatible sugiere compatibilidad con endpoints de inferencia, pero no se especifican vLLM, TGI ni Ollama en la informacion disponible.
+- Latencia y throughput: no se proporcionan cifras concretas en la informacion disponible; la decodificacion especulativa via MTP esta pensada para mejorar el throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato y tamaño | Licencia | Notas |
+| Modelo | Parametros | Activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este repositorio (APEX-I-MiniPlus V2.1 Abliterated) | 34,66B totales, ≈3B activos | 256K | GGUF mixto, 14,66 GB | apache-2.0 | Ablación de rechazo, ΔPPL +0,1395 (+2,62%) |
-| APEX-I-MiniPlus V2.1 GGUF (edición alineada, mismo autor) | 34,66B totales, ≈3B activos | 256K | GGUF, 15,23 GB | apache-2.0 | Mantiene guardarraíles, ΔPPL +0,0493 (+0,93%), incluye `mmproj` |
-| Generic APEX-I-Mini (cuantización comunitaria descrita por el autor) | 34,66B totales, ≈3B activos | no disponible | GGUF con expertos en `IQ2_S` y cabeza en `Q3_K_M`, ≈12,5 GB | no disponible | El autor reporta picos de perplejidad, errores de sintaxis y llaves de código rotas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 34,66B totales, ≈3B activos | no disponible | safetensors BF16 (≈69 GB estimados a 2 bytes por parámetro) | apache-2.0 | Referencia sin cuantizar ni ablacionar; PPL WikiText-2 ≈5,32 según el autor |
+| Qwen3.6-35B-A3B MTP APEX-I-MiniPlus V2.1 Abliterated (este) | ~34,7B | ~3B | 256K | Apache 2.0 | Variante sin rechazos, GGUF, con MTP y vision |
+| Qwen3.6-35B-A3B MTP APEX-I-MiniPlus V2.1 (alineado) | ~34,7B | ~3B | 256K | Apache 2.0 | Misma base con guardrails por defecto; 15,23 GB, fidelidad Q5_K_L |
+| Ornith 1.5 35B-A3B APEX-I-MiniPlus V2.1 | ~35B | ~3B | no disponible | no disponible | Enfocado a ingenieria de software y agentes de repositorio |
+| Tiel Coder 35B-A3B APEX-I-MiniPlus V2.1 | ~35B | ~3B | no disponible | no disponible | Especialista en codigo agentico y uso iterativo de herramientas |
 
-No se dispone de comparaciones con otras familias de MoE de tamaño similar (por ejemplo, alternativas de ~30B con ~3B activos) dentro de la información proporcionada, ni de datos de benchmarks que permitan una comparación objetiva de capacidades.
+Las tres alternativas proceden del mismo autor y comparten metodologia de cuantizacion, pero son familias de modelos distintas, no variantes intercambiables del mismo modelo. No se dispone de datos de rendimiento comparativo entre ellas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de guardarraíles: la dirección de rechazo ha sido ablacionada de forma explícita, por lo que el modelo responderá a peticiones sobre seguridad de sistemas, ingeniería inversa o red teaming sin filtros. Desplegarlo de cara al público o en productos finales exige capas de moderación externas y revisión legal.
-- Riesgo de uso indebido: la combinación de contexto de 256K tokens, ejecución local y cero rechazos facilita la generación de contenido dañino con trazabilidad limitada. Cualquier uso debe enmarcarse en un contexto autorizado (pentesting con contrato, investigación académica, entornos aislados).
-- Degradación medible por la ablación: el autor cifra en +0,08 puntos de perplejidad el coste de eliminar la dirección de rechazo y en +0,1395 puntos el total del build, lo que sitúa la calidad en el nivel Q5_K_M y no en el Q6_K de la edición alineada.
-- Alucinación: no hay datos publicados sobre tasas de alucinación ni evaluaciones de veracidad. Al ser un modelo de razonamiento con contexto muy largo, la probabilidad de que genere referencias o APIs inexistentes en tareas de código y documentación es un riesgo real que debe mitigarse con verificación.
-- Cobertura de benchmarks inexistente: no hay resultados de MMLU, HumanEval, GSM8K ni evaluaciones multilingües, por lo que no es posible estimar su rendimiento relativo frente a alternativas de su categoría.
-- Idiomas: se declaran 13 idiomas, pero no se especifica el nivel de competencia por idioma ni el porcentaje de tokens de cada uno en el entrenamiento del modelo base. Los idiomas con menos representación (tailandés, vietnamita, árabe) probablemente rindan peor.
-- Restricciones de licencia: la licencia declarada es apache-2.0, heredada del modelo base, lo que en principio permite uso comercial. Sin embargo, la intervención de abliteración puede chocar con las políticas de uso aceptable del modelo original y con la normativa aplicable en jurisdicciones que regulan la generación de contenido dañino; conviene revisar los términos del modelo base antes de un despliegue comercial.
-- Formato único: solo se distribuye en GGUF. No hay safetensors ni pesos sin cuantizar en este repositorio, lo que impide reentrenamiento o ajuste fino a partir de estos pesos.
-- Trazabilidad limitada del autor: el repositorio no tiene descargas ni valoraciones, y no hay publicaciones, papers ni evaluaciones de terceros que verifiquen las afirmaciones de la model card sobre routing, stalls de CPU o fidelidad de razonamiento.
-- Gestión de contexto largo: aunque se declaran 256K tokens, para 128K o más el autor recomienda offload parcial a memoria de sistema, lo que reduce el throughput y puede degradar la latencia en producción.
+- La ablacion de rechazos elimina las barreras de seguridad del alineamiento original: el modelo puede generar contenido danino, ilegal o inseguro sin las negativas habituales. No es adecuado para aplicaciones de cara al publico sin filtros externos.
+- La licencia Apache 2.0 permite uso comercial, pero el uso de una variante abliterated puede incumplir politicas de plataformas, terminos de servicio de proveedores de inferencia o normativa sectorial; la responsabilidad recae en el desplegador.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, no mitigado por la cuantizacion; en tareas factuales requiere verificacion.
+- La cuantizacion GGUF introduce perdida de fidelidad respecto a los pesos originales en BF16/FP16; el autor reporta mejoras frente a cuantizaciones planas, pero no se aportan cifras para este modelo concreto.
+- La model card advierte de un problema especifico de sintaxis en generacion de codigo relacionado con el repeat penalty ("character swapping"), que puede degradar la salida si no se ajustan los parametros de generacion recomendados.
+- El contexto de 256K en VRAM depende de la configuracion de KV cache y del hardware; en GPUs de 24 GB puede requerir cuantizacion de la cache o compromisos de contexto efectivo.
+- La cobertura de 13 idiomas no garantiza calidad uniforme; el rendimiento en idiomas de bajos recursos del conjunto puede ser inferior al de ingles y chino.
+- Modelo publicado por un tercero independiente, no por el equipo de Qwen: no cuenta con el mismo nivel de validacion, soporte ni auditoria que una release oficial.
+- No se dispone de informacion sobre sesgos especificos medidos para esta variante.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
-- Edición alineada del mismo autor (sin ablacionar): https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.
+- Version alineada del mismo autor: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
+- Coleccion APEX-I MiniPlus V2.1 Abliterated: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-abliterated-moe-6acfee762fc4a8cf2298c55b
+- Ornith 1.5 APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Tiel Coder APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Qwen3.8 27B MiniPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
+- Qwen3.8 27B NanoPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
+- Swift-1.5 Qwen3.8 27B Uncensored MTP MiniPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-MiniPlus-V3-GGUF
+- Swift-1.5 Qwen3.8 27B Uncensored MTP NanoPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-NanoPlus-V3-GGUF
+- Apoyo al autor: https://ko-fi.com/isvalorum

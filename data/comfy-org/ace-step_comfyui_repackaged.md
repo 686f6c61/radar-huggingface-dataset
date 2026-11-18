@@ -2,82 +2,84 @@
 
 ## Resumen
 
-ACE-Step es un modelo de generación de música de código abierto desarrollado conjuntamente por el equipo chino StepFun y ACE Studio. Este repositorio concreto, `Comfy-Org/ACE-Step_ComfyUI_repackaged`, contiene los ficheros del modelo reempaquetados específicamente para su uso dentro de ComfyUI, el popular entorno de generación por nodos. El modelo base es `ACE-Step/ACE-Step-v1-3.5B`, con 3.500 millones de parámetros, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
+ACE-Step es un modelo de generacion de audio a partir de texto (text-to-audio) desarrollado originalmente por el equipo de ACE-Step (repositorio `ACE-Step/ACE-Step-v1-3.5B`). El repositorio aqui descrito, `Comfy-Org/ACE-Step_ComfyUI_repackaged`, es un reempaquetado de los pesos originales en un unico fichero safetensors (`ace_step_v1_3.5b.safetensors`) listo para cargarse como checkpoint en ComfyUI. No introduce cambios en el modelo, sino que adapta el formato de distribucion a la convencion de ComfyUI (carpeta `models/checkpoints`).
 
-La relevancia de este modelo radica en que ofrece capacidades de generación y edición de música de alta calidad mediante técnicas de difusión aplicadas al audio, algo que hasta hace poco estaba reservado a sistemas propietarios. Al estar integrado en ComfyUI, los usuarios pueden construir flujos de trabajo visuales que combinan generación musical con otras herramientas de IA, como modelos de lenguaje para crear letras o prompts. El reempaquetado simplifica la instalación, ya que solo requiere colocar el fichero `ace_step_v1_3.5b.safetensors` en la carpeta de checkpoints de ComfyUI.
+El modelo resuelve la sintesis de audio musical y canciones a partir de descripciones textuales, incluyendo instrumentales y canciones con letra, ademas de edicion audio-a-audio (M2M, music-to-music). Con 3.500 millones de parametros (segun el identificador `v1-3.5B`), esta pensado para ejecutarse en hardware de consumo y para integrarse en flujos de trabajo visuales de ComfyUI, lo que lo hace relevante para creadores y desarrolladores que quieren generar musica sin depender de APIs cerradas.
 
-## Especificaciones técnicas
+La licencia Apache 2.0 y el formato de fichero unico facilitan su uso comercial y su despliegue local. El repositorio acumula mas de 127.000 descargas, lo que refleja una adopcion notable dentro del ecosistema ComfyUI.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión para audio (generación de música) |
-| Parametros totales | 3.500 millones (3.5B) |
-| Parametros activos | no disponible |
+| Arquitectura | no disponible (modelo de difusion para audio, segun el tag `diffusion-single-file`) |
+| Parametros totales | 3.500 millones (deducido del identificador `v1-3.5B`) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato original safetensors) |
-| Idiomas soportados | no disponible (el modelo opera sobre audio, no texto; los prompts pueden estar en varios idiomas) |
+| Tipos de cuantizacion | no disponible (se distribuye como safetensors en precision original; ComfyUI puede aplicar cuantizaciones propias) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (fichero único `ace_step_v1_3.5b.safetensors`) |
+| Formato de pesos | safetensors (fichero unico `ace_step_v1_3.5b.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-ACE-Step se basa en una arquitectura de difusión aplicada a representaciones de audio, similar a la empleada por otros modelos de generación musical como MusicGen o Stable Audio, aunque con innovaciones propias desarrolladas por StepFun y ACE Studio. El modelo es capaz de generar música a partir de descripciones textuales, así como de realizar tareas de edición como covers, remezclas y repintado (repaint) de pistas existentes. No se dispone de información detallada sobre el conjunto de datos de entrenamiento, el número de tokens o el proceso de alineación (si se usó RLHF o DPO). El reempaquetado para ComfyUI no modifica la arquitectura, solo organiza los ficheros para que el runtime de ComfyUI pueda cargarlos directamente.
+La informacion disponible no detalla la arquitectura interna del modelo. El tag `diffusion-single-file` y la pipeline `text-to-audio` indican que se trata de un modelo de difusion orientado a la generacion de audio, empaquetado como fichero unico para ComfyUI. El tamano del repositorio (7,7 GB) es coherente con pesos en precision alta de un modelo de aproximadamente 3.500 millones de parametros.
+
+No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion, decodificacion, etc.). Esta informacion deberia consultarse en la model card del repositorio original `ACE-Step/ACE-Step-v1-3.5B`.
 
 ## Capacidades
 
-- Generación de música a partir de prompts de texto (text-to-music).
-- Edición musical: creación de covers y remezclas a partir de pistas existentes.
-- Repintado (repaint) de secciones musicales, permitiendo modificar partes concretas de una composición.
-- Integración con modelos de lenguaje para generar samples musicales a partir de descripciones avanzadas (según el repositorio GitHub de ACE-Step-ComfyUI).
-- Funciona dentro de ComfyUI, lo que permite combinarlo con otros nodos de generación de audio, vídeo o imagen.
-- Soporte de flujos de trabajo visuales mediante nodos, facilitando la automatización de tareas musicales.
+- Generacion de audio a partir de texto (text-to-audio): instrumentales musicales y canciones completas con letra.
+- Edicion music-to-music (M2M): transformacion de audio existente segun una descripcion textual, segun el workflow "ACE Step v1 M2M Editing".
+- Generacion de instrumentales: workflow especifico "ACE-Step v1 Text to Instrumentals Music".
+- Generacion de canciones con letra: workflow "ACE Step v1 Text to Song".
+- Integracion nativa en ComfyUI como checkpoint de audio.
+- No se documentan capacidades de tool calling, agentes, vision, audio de entrada en lenguaje natural ni modo de razonamiento; el modelo es especificamente de sintesis musical.
 
 ## Casos de uso
 
-- Producción musical profesional: los compositores pueden generar ideas melódicas o armonías a partir de descripciones textuales, acelerando el proceso creativo. El modelo permite iterar rápidamente sobre variaciones sin necesidad de grabar instrumentos.
-- Creación de contenido audiovisual: generación de bandas sonoras para vídeos, podcasts o anuncios. Gracias a su integración en ComfyUI, puede combinarse con generadores de vídeo para producir piezas completas.
-- Remezcla y covers automáticos: a partir de una pista existente, el modelo puede crear versiones alternativas cambiando el estilo, el tempo o la instrumentación, útil para DJs y productores.
-- Educación musical: los estudiantes pueden experimentar con diferentes estilos y estructuras musicales, usando el modelo como herramienta de aprendizaje interactivo.
-- Prototipado rápido en estudios de grabación: los ingenieros de sonido pueden generar demos de alta calidad antes de la grabación final, ahorrando tiempo y recursos.
-- Investigación en IA musical: al ser de código abierto y con licencia Apache 2.0, sirve como base para experimentos académicos sobre generación de audio, edición y evaluación de modelos de difusión.
+- Produccion musical asistida: generar instrumentales completas a partir de una descripcion de estilo, instrumentacion y tempo, usando el workflow text-to-instrumentals para obtener borradores sobre los que trabajar en un DAW.
+- Creacion de canciones con letra: emplear el workflow text-to-song para sintetizar una pieza vocal completa a partir de una letra y una indicacion de genero, util para maquetas rapidas.
+- Edicion y remezcla music-to-music: transformar una pista existente (cambiar instrumentacion, estilo o ambiente) manteniendo la estructura, gracias al workflow M2M.
+- Bandas sonoras para videojuegos y audiovisual: generar loops y temas instrumentales por categoria (exploracion, combate, ambiente) dentro de un pipeline de ComfyUI que luego se exporte al motor o al editor de video.
+- Prototipado rapido en estudios pequeños: sustituir sesiones de maqueta con musicos por generaciones locales en GPU de consumo, reduciendo coste y tiempo de iteracion antes de la produccion final.
+- Investigacion en generacion musical: usar los pesos como base para fine-tuning o para experimentos de evaluacion de modelos de difusion de audio, al estar bajo Apache 2.0 y en formato safetensors.
+- Contenido para redes y publicidad: generar jingles o fondos musicales libres de regalias para piezas cortas, aprovechando la licencia permisiva para uso comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen métricas oficiales comparativas con otros modelos de generación musical en la documentación del reempaquetado ni en la model card original.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de requisitos oficiales de hardware para ACE-Step. Dado que el modelo tiene 3.500 millones de parámetros y se distribuye en formato safetensors de 7.7 GB, se estima que la inferencia en precisión FP16 requiere al menos 8-10 GB de VRAM.
-- GPU recomendadas: tarjetas con 12 GB o más de VRAM, como NVIDIA RTX 3080/3090, RTX 4070/4080/4090, o GPUs profesionales como A100 o H100 para despliegues a mayor escala.
-- Es posible ejecutarlo en GPUs de consumo medio (por ejemplo, RTX 3060 de 12 GB) con cuantización, aunque no se proporcionan ficheros cuantizados oficiales.
-- El despliegue se realiza a través de ComfyUI, que gestiona la carga del modelo y la ejecución. No se mencionan alternativas como vLLM u Ollama, ya que no es un modelo de lenguaje.
-- La latencia y el throughput dependen en gran medida de la GPU utilizada y de la longitud del audio generado; no hay datos oficiales disponibles.
+- VRAM estimada: no disponible de forma oficial. El repositorio pesa 7,7 GB, por lo que en precision original se requiere una GPU con al menos ~8-10 GB de VRAM libre para cargar el checkpoint, mas el overhead de inferencia de ComfyUI.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, cabria esperar ejecucion en GPUs de consumo de gama alta (RTX 3090, RTX 4090) y en GPUs de datacenter (A100, H100) para mayor velocidad, pero no hay datos confirmados.
+- Cabe en GPU de consumo: probablemente si en GPUs con 12-24 GB de VRAM, aunque no se confirma en la documentacion disponible.
+- Opciones de despliegue: ComfyUI (formato nativo de este repositorio). No se documentan otros runners (vLLM, llama.cpp, Ollama, TGI) para este modelo de audio.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tipo | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| ACE-Step (este) | 3.5B | Difusión de audio | Apache 2.0 | ComfyUI, safetensors |
-| MusicGen (Meta) | 1.5B / 3.3B | Autoregresivo + audio codec | CC-BY-NC 4.0 (no comercial) | Transformers, API |
-| AudioLDM 2 | 712M | Difusión latente | Apache 2.0 | Hugging Face |
-| Stable Audio Open | 1.2B | Difusión latente | Stable Audio Open Research License (uso no comercial) | Hugging Face |
-
-No se dispone de datos de rendimiento comparativo en benchmarks. ACE-Step destaca por su licencia Apache 2.0, que permite uso comercial sin restricciones, a diferencia de MusicGen o Stable Audio Open. Su integración nativa con ComfyUI lo hace especialmente atractivo para flujos de trabajo visuales, algo que los competidores no ofrecen de serie.
+No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos alternativos de text-to-audio (por ejemplo, MusicGen, Stable Audio o AudioLDM) que permitan una comparacion rigurosa. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos, pero al ser un modelo entrenado con datos musicales, puede reflejar estilos o géneros predominantes en su conjunto de entrenamiento, lo que podría limitar la diversidad creativa.
-- Riesgo de alucinación: aunque no es un modelo de texto, puede generar estructuras musicales incoherentes o de baja calidad en contextos poco representados en los datos de entrenamiento.
-- Limitaciones de idioma: no se especifican idiomas soportados para los prompts; es probable que funcione mejor en inglés, dado que la mayoría de los datasets musicales utilizan anotaciones en ese idioma.
-- La licencia Apache 2.0 permite uso comercial, pero es responsabilidad del usuario asegurarse de que las obras generadas no infrinjan derechos de autor de terceros, especialmente en tareas de cover o remezcla.
-- Para producción, se recomienda validar la calidad del audio generado, ya que el modelo puede producir artefactos o resultados inesperados en entradas complejas.
-- No se proporcionan ficheros cuantizados ni guías de optimización para entornos con recursos limitados.
+- No se documentan sesgos conocidos del modelo en la informacion disponible; al ser un modelo generativo de musica, puede reproducir sesgos estilisticos y culturales presentes en sus datos de entrenamiento.
+- Riesgo de alucinacion en el sentido de generar audio incoherente, con letras mal pronunciadas o estructuras musicales defectuosas; no hay evaluaciones publicadas que cuantifiquen este riesgo.
+- No se especifican los idiomas soportados para la letra ni para los prompts; el rendimiento multilingue es desconocido.
+- No se documenta la longitud maxima de audio generable ni el contexto temporal del modelo.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene conservar los avisos de licencia y verificar la procedencia de los datos de entrenamiento si se usa en productos comerciales.
+- Este repositorio es solo un reempaquetado; para informacion tecnica autoritativa (arquitectura, entrenamiento, limitaciones) debe consultarse el repositorio original `ACE-Step/ACE-Step-v1-3.5B`.
+- El fichero debe colocarse en `ComfyUI/models/checkpoints/`; una ubicacion incorrecta impedira su carga.
 
 ## Enlaces
 
-- Repositorio Hugging Face del reempaquetado: https://huggingface.co/Comfy-Org/ACE-Step_ComfyUI_repackaged
-- Modelo original: https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B
-- Repositorio GitHub de nodos ComfyUI: https://github.com/ace-step/ACE-Step-ComfyUI
-- Guía oficial de ComfyUI para ACE-Step v1: https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1
-- Guía oficial de ComfyUI para ACE-Step 1.5: https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1-5
-- Ejemplos de ComfyUI para audio: https://comfyanonymous.github.io/ComfyUI_examples/audio/
+- Repositorio Hugging Face (reempaquetado): https://huggingface.co/Comfy-Org/ACE-Step_ComfyUI_repackaged
+- Repositorio original del modelo: https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B
+- Ejemplos de audio en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/audio/
+- Tutorial de ACE-Step en ComfyUI: https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1
+- Workflow M2M Editing: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/audio_ace_step_1_m2m_editing.json
+- Workflow Text to Instrumentals: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/audio_ace_step_1_t2a_instrumentals.json
+- Workflow Text to Song: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/audio_ace_step_1_t2a_song.json
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Comfy Cloud: https://cloud.comfy.org/

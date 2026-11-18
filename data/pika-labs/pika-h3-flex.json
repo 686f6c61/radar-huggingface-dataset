@@ -24,9 +24,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 745,
+  "likes": 746,
   "downloads_30d": 162821,
-  "trending_score": 15.5,
+  "trending_score": 14,
   "parameters": 33122992896,
   "parameters_human": "33.12B",
   "storage_bytes": 219901669273,
@@ -48,29 +48,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Pika",
+      "title": "Pika: AI Creative Tools for Video, Image & Audio",
       "url": "https://pika.art/",
-      "snippet": "Pika is the AI creative platform you’ve been waiting for. Comprehensive. Simple. With outputs that meet your standards."
+      "snippet": "Create AI video, images and audio with Pika. Use Seedance 2.5, Kling 4.0, Veo 3.1, Wan 3.0 and more models in one creative platform."
     },
     {
       "title": "Pika",
       "url": "https://www.pika.fr/",
-      "snippet": "3 days ago · Fondée en 2000, Pika Édition est une maison d’édition spécialisée en manga. Avec un large choix de séries telles que …"
+      "snippet": "6 days ago · Le Prix des Lecteurs Pika revient pour sa troisième édition : préparez-vous à voter ! Pour sa troisième édition, Pika …"
+    },
+    {
+      "title": "PIKA° Kitchen",
+      "url": "https://www.pika-kitchen.com/fr/",
+      "snippet": "Pika est née de l’idée de conserver sous vide vos préparations en utilisant vos propres contenants à bords lisses. Supprimez l’air de …"
+    },
+    {
+      "title": "Pika | Pika Édition",
+      "url": "https://www.pika.fr/livres-pika/",
+      "snippet": "Jun 3, 2026 · Pour l’année scolaire 2026-2027, Pika Édition vous propose deux agendas ! Dès le 3 juin, découvrez nos agendas …"
     },
     {
       "title": "Pika Labs - AI Video, Image & Audio Creative Platform",
       "url": "https://pikaslabs.com/",
       "snippet": "Sep 24, 2026 · From Pika 1.0 to Pika 2.5, each release expanded what AI video could be. Today Pika 2.5 sits alongside partner …"
-    },
-    {
-      "title": "Pika Labs Opens 33B H3 Flex Audio-Video Model on Hugging Face | ...",
-      "url": "https://aiweekly.co/alerts/pika-labs-opens-33b-h3-flex-audio-video-model-on-hugging-face",
-      "snippet": "Pika Labs has posted the weights for Pika H3 Flex, a 33-billion-parameter video model, on Hugging Face. The model is a post-trained variant of MiniMax-H3…"
-    },
-    {
-      "title": "Pika | Pika Édition",
-      "url": "https://www.pika.fr/livres-pika/",
-      "snippet": "Jun 24, 2026 · Pour l’année scolaire 2026-2027, Pika Édition vous propose deux agendas ! Dès le 3 juin, découvrez nos agendas …"
     }
   ]
 }

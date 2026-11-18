@@ -2,90 +2,97 @@
 
 ## Resumen
 
-LTX-2.5-22b-IC-LoRA-Ingredients es un adaptador LoRA de tipo *in-context* (IC-LoRA) publicado por Lightricks para su modelo de difusion de video LTX-2.5. Su funcion es la de un adaptador de video a video orientado a mantener la consistencia de personajes y elementos a partir de una hoja de referencia (*reference sheet*), de modo que el modelo base pueda generar o transformar video respetando la identidad visual aportada como contexto. Se distribuye como un unico archivo de difusion (formato *diffusion-single-file*), con un peso de repositorio de 1,4 GB, lo que confirma que se trata de un adaptador y no de un modelo completo.
+LTX-2.5-22b-IC-LoRA-Ingredients es un adaptador LoRA de tipo IC-LoRA (in-context LoRA) desarrollado por Lightricks sobre el modelo base de generación de vídeo LTX-2.5, de 22.000 millones de parámetros. Su función específica es la consistencia de personajes y la transferencia de referencias visuales en tareas de vídeo a vídeo: a partir de una hoja de referencia ("reference sheet") con los ingredientes visuales de un personaje o escena, el adaptador condiciona la generación para que el resultado mantenga la identidad y los atributos de esa referencia a lo largo del clip.
 
-El repositorio se publica bajo la licencia *ltx-2.x-community-license*, hereda el modelo base Lightricks/LTX-2.5 y esta etiquetado para la tarea de video-to-video con soporte exclusivo de ingles (en). El acceso es restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. La nomenclatura "22b" del identificador apunta al modelo base de 22 mil millones de parametros sobre el que se aplica el LoRA, no al tamano del adaptador en si.
+El modelo se distribuye como archivo único en formato de pesos diffusers (`diffusion-single-file`) y está etiquetado como pipeline de vídeo a vídeo. Con 16.572 descargas y 129 "likes" en Hugging Face, es una pieza relevante para flujos de producción audiovisual que necesitan coherencia de personaje entre tomas, un problema clásico de los modelos de vídeo generativo que suelen derivar en la apariencia de los sujetos entre frames y entre clips.
 
-Su relevancia actual reside en que resuelve uno de los problemas mas persistentes de la generacion de video con difusion: la deriva de identidad entre planos. Al plantearse como un LoRA aplicable sobre LTX-2.5, permite reutilizar la infraestructura de inferencia ya existente para el modelo base y anadir consistencia de personaje sin reentrenar.
+Es importante subrayar que no se trata de un modelo de lenguaje: no genera texto, no razona y no soporta tool calling. Es un adaptador de difusión para vídeo. El acceso está restringido (gated) y requiere aceptar la licencia comunitaria LTX-2.x en Hugging Face antes de la descarga.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (IC-LoRA, in-context) sobre un modelo de difusion de video; no disponible el detalle de la arquitectura interna del modelo base |
-| Parametros totales | No disponible para el adaptador; el identificador indica 22b (22 000 millones) para el modelo base Lightricks/LTX-2.5 |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (el repositorio se distribuye como archivo unico de difusion) |
-| Idiomas soportados | en (ingles) |
-| Licencia | ltx-2.x-community-license |
-| Formato de pesos | diffusion-single-file (archivo unico de difusion); no disponible el detalle de formato exacto (safetensors, GGUF u otros) |
+| Arquitectura | Adaptador LoRA (IC-LoRA) sobre modelo de difusión de vídeo LTX-2.5 |
+| Parámetros totales | 22.000 millones (modelo base LTX-2.5); el adaptador LoRA es un subconjunto de pesos de bajo rango, tamaño no disponible |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (modelo de vídeo; la ventana relevante es la duración del clip, no especificada) |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | ltx-2.x-community-license (licencia "other", acceso restringido) |
+| Formato de pesos | Diffusion single-file (archivo único compatible con diffusers) |
+| Tamaño del repositorio | 1,4 GB |
+| Modelo base | Lightricks/LTX-2.5 |
+| Pipeline | video-to-video |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
+| Fecha de creación | 2026-09-10 |
+| Última actualización | 2026-10-22 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del adaptador ni del modelo base. Por las etiquetas del repositorio (*ic-lora*, *ltx-2.5*, *video-to-video*, *reference-sheet*, *character-consistency*) se deduce que se trata de un LoRA de condicionamiento en contexto: el adaptador anade al modelo de difusion la capacidad de tomar una hoja de referencia visual como entrada adicional y utilizarla como guia de identidad durante la generacion o transformacion de video. El repositorio se clasifica en la libreria *diffusion-single-file* y el pipeline declarado es video-to-video.
+El adaptador se construye sobre LTX-2.5, el modelo de difusión de vídeo de Lightricks, y emplea la técnica IC-LoRA (in-context LoRA). En lugar de un LoRA convencional que modifica el estilo global del modelo, un IC-LoRA inyecta información de contexto —en este caso, una hoja de referencia con los "ingredientes" visuales del personaje— en el proceso de denoising, de modo que el modelo base respeta esos atributos durante la generación vídeo a vídeo. El repositorio se distribuye como archivo único de pesos, lo que simplifica su carga en pipelines basados en diffusers.
 
-No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, si se emplearon tecnicas de RLHF o DPO, ni sobre el rango, los modulos objetivo o los hiperparametros del LoRA. El adaptador depende del modelo base Lightricks/LTX-2.5, por lo que su comportamiento esta ligado a la version concreta de dicho modelo. El peso del repositorio (1,4 GB) es coherente con un adaptador de bajo rango y no con un conjunto completo de pesos.
+No se dispone de información sobre el número de tokens o clips de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se detallan innovaciones de decodificación o atención específicas del adaptador. El tamaño del repositorio (1,4 GB) es coherente con un adaptador de bajo rango, no con los pesos completos del modelo base de 22.000 millones de parámetros.
 
 ## Capacidades
 
-- Generacion y transformacion de video a video condicionada por una hoja de referencia (*reference sheet*).
-- Consistencia de personaje: mantiene los rasgos de identidad visual definidos en la referencia a lo largo de la generacion.
-- Consistencia de elementos o "ingredientes": el nombre del adaptador sugiere soporte para fijar objetos o componentes concretos de la escena, no solo personajes.
-- Condicionamiento en contexto (IC): la referencia se aporta como contexto adicional al proceso de difusion, en lugar de requerir reentrenamiento.
-- Aplicacion como adaptador sobre LTX-2.5, reutilizando el pipeline del modelo base.
-- Soporte de idioma limitado al ingles (en) segun los metadatos del repositorio.
-- Soporte de *tool calling*, agentes, razonamiento multi-paso, vision general, audio o modo *thinking*: no disponible; el pipeline declarado es exclusivamente video-to-video.
+- Generación de vídeo a vídeo condicionada por una hoja de referencia visual ("reference sheet") con los ingredientes del personaje.
+- Consistencia de personaje: mantiene la identidad y los atributos visuales de la referencia a lo largo del clip generado.
+- Transferencia de referencias: permite aplicar los elementos de una hoja de ingredientes a un vídeo de entrada.
+- Integración en pipelines de difusión para vídeo mediante el modelo base LTX-2.5.
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- Capacidades multilingües: limitadas al inglés (`en`).
+- No dispone de modo de pensamiento (thinking), visión general ni audio; su única modalidad es el vídeo.
 
 ## Casos de uso
 
-- Produccion audiovisual con personajes recurrentes: se genera una hoja de referencia del personaje y el adaptador la aplica en cada plano de video-to-video, evitando la deriva de identidad entre tomas que obliga a correcciones manuales.
-- Previsualizacion de storyboards animados: a partir de un boceto o video base y una hoja de referencia, se obtienen planos previos coherentes con el diseno de personaje aprobado antes de entrar en produccion final.
-- Publicidad y contenido de marca: se fija la apariencia de un producto o mascota corporativa mediante la referencia y se transforman planos de video manteniendo ese elemento estable entre escenas.
-- Creacion de contenido para redes sociales con avatares consistentes: se define una referencia de personaje y se generan variaciones de video conservando la identidad en toda la serie de publicaciones.
-- Video-to-video de estilizado controlado: se transforma metraje existente aplicando un tratamiento visual y una referencia de personaje concreta, util para remasterizaciones o cambios de reparto.
-- Prototipado rapido en estudios de animacion: iteracion sobre variantes de personaje y de escena con coste de computo menor que el de reentrenar o ajustar el modelo base completo.
-- Investigacion en consistencia de difusion de video: sirve como referencia para estudiar el condicionamiento en contexto aplicado a la coherencia de identidad a lo largo del tiempo.
+- Producción de series animadas con personajes recurrentes: el adaptador permite generar cada plano condicionado por la hoja de referencia del personaje, reduciendo la deriva de identidad entre tomas y episodios.
+- Publicidad con mascota de marca: a partir de una reference sheet corporativa, se generan variaciones de vídeo del personaje en distintos escenarios manteniendo los rasgos de marca.
+- Previsualización de videojuegos: generar cinemáticas o animaciones de personajes a partir de sus hojas de diseño conceptual, acelerando la iteración artística.
+- Doblaje y localización visual: aplicar la referencia de un personaje a metraje existente para mantener coherencia en versiones localizadas o remasterizadas.
+- Contenido para redes sociales con influencer virtual: mantener la apariencia del personaje generado entre publicaciones y clips sucesivos.
+- Storyboarding y animática: convertir hojas de personaje y guiones visuales en clips de referencia para equipos de dirección antes de la producción final.
+- Restauración o reestilización de metraje: usar el pipeline vídeo a vídeo con referencias para reestilizar secuencias preservando la identidad de los sujetos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El adaptador en si ocupa 1,4 GB, por lo que el requisito real de VRAM lo determina el modelo base Lightricks/LTX-2.5.
-- Estimacion orientativa para el modelo base de 22 000 millones de parametros: en bf16/fp16 los pesos suponen del orden de 44 GB, a los que hay que sumar el codificador de texto, el VAE de video y las activaciones del proceso de difusion, lo que en la practica exige GPUs de 48-80 GB (A100 80 GB, H100 80 GB, o configuraciones multi-GPU).
-- En cuantizacion de 8 bits la huella de pesos baja aproximadamente a 22 GB, lo que puede permitir ejecucion en GPUs de 24-32 GB (por ejemplo RTX 3090, RTX 4090, A6000) segun el margen que requieran las activaciones y la resolucion y duracion del video.
-- Ejecucion en GPU de consumo: no confirmada en la informacion disponible; con cuantizacion agresiva y resoluciones reducidas podria ser viable en tarjetas de 24 GB, pero no hay datos publicados que lo verifiquen.
-- Opciones de despliegue: no disponible. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI; al tratarse de un modelo de difusion de video, las herramientas habituales son las del ecosistema de difusion y las del propio modelo base.
-- Latencia y throughput estimados: no disponible.
-- El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en Hugging Face antes de la descarga, incluso para pruebas.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Al operar sobre un modelo base de 22.000 millones de parámetros, la inferencia requiere cargar el modelo base completo además del adaptador; el adaptador en sí ocupa 1,4 GB.
+- GPU recomendadas: no disponibles de forma específica; por el tamaño del modelo base, se requiere hardware de gama alta (A100, H100 o equivalentes con VRAM suficiente), aunque no se confirma en la información.
+- Compatibilidad con GPU de consumo: no confirmada; no disponible.
+- Opciones de despliegue: pipelines de difusión compatibles con `diffusion-single-file` y el modelo base LTX-2.5; no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no aplicables aquí).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre adaptadores comparables en la documentacion proporcionada. La unica comparacion posible con los datos disponibles es contra el modelo base:
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Acceso |
+|---|---|---|---|---|---|
+| LTX-2.5-22b-IC-LoRA-Ingredients | IC-LoRA vídeo a vídeo sobre LTX-2.5 | 22.000 M (base) | No disponible | ltx-2.x-community-license | Restringido (gated) |
+| LTX-2.5-22b-LoRA-Slow-Motion-Control | LoRA de control de cámara/velocidad sobre LTX-2.5 | 22.000 M (base) | No disponible | No disponible | No disponible |
+| LTX-2.5-22b-LoRA-Cinemagraph | LoRA de cinemagraph sobre LTX-2.5 | 22.000 M (base) | No disponible | No disponible | No disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-Ingredients | No disponible para el adaptador (1,4 GB); 22b en el modelo base | No disponible | ltx-2.x-community-license | Hugging Face, acceso restringido (gated), 95 descargas y 10 likes en el momento de la consulta |
-| Lightricks/LTX-2.5 (modelo base) | 22b segun el identificador | No disponible | No disponible en la informacion proporcionada | Hugging Face |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
+Los modelos comparables identificados pertenecen a la misma familia LTX-2.5 de Lightricks y comparten el modelo base, por lo que la diferencia principal es la tarea del adaptador (consistencia de personaje frente a control de movimiento o cinemagraph). No se dispone de datos de rendimiento comparativo ni de alternativas de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es un repositorio *gated*, por lo que la descarga y el uso requieren aceptar previamente las condiciones en Hugging Face.
-- Licencia *ltx-2.x-community-license*: no es una licencia de codigo abierto estandar; es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que puede imponer restricciones de escala, atribucion o redistribucion.
-- Dependencia del modelo base: el adaptador solo funciona junto con Lightricks/LTX-2.5 y queda sujeto a los cambios y a las limitaciones de dicho modelo.
-- Idioma: los metadatos declaran unicamente soporte de ingles (en), lo que limita prompts y descripciones en otros idiomas.
-- Deriva de identidad: aunque el objetivo del adaptador es precisamente reducirla, no hay datos publicados sobre su tasa de exito en secuencias largas ni sobre el numero de planos a partir del cual la consistencia se degrada.
-- Alucinacion visual: como todo modelo de difusion, puede generar detalles anatomicos o de escena incorrectos, especialmente en movimiento rapido, oclusiones o manos.
-- Rendimiento y cuantizacion: no hay informacion publica sobre la perdida de calidad al cuantizar ni sobre configuraciones validadas de memoria.
-- Madurez: con 95 descargas y 10 likes en el momento de la consulta, se trata de un artefacto reciente y con poca validacion por parte de la comunidad.
-- Ausencia de benchmarks: no hay metricas objetivas publicadas que permitan estimar su calidad frente a alternativas.
+- No es un modelo de lenguaje: no genera texto, no razona, no soporta tool calling ni agentes.
+- Idiomas: únicamente inglés (`en`); no se documenta soporte multilingüe.
+- Licencia comunitaria LTX-2.x: es necesario revisar sus términos para uso comercial, ya que no es una licencia de código abierto estándar (Apache, MIT) y el acceso es restringido.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de despliegues y la reproducibilidad en CI/CD.
+- Dependencia del modelo base LTX-2.5: el adaptador no funciona de forma autónoma y hereda las limitaciones, sesgos y riesgos de alucinación visual del modelo base.
+- Riesgo de deriva de identidad en clips largos o con cambios de escena complejos, pese al condicionamiento por referencia; no se documentan métricas de consistencia.
+- No se dispone de información sobre sesgos demográficos o culturales del adaptador ni del modelo base.
+- No se documentan requisitos de hardware ni latencias, lo que dificulta la planificación de producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients
+- Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
-- Organizacion del autor: https://huggingface.co/Lightricks
-- La busqueda web realizada no devolvio enlaces relevantes sobre este modelo (los resultados correspondian a servicios no relacionados). No se dispone de papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.
+- Organización Lightricks en Hugging Face: https://huggingface.co/Lightricks
+- Sitio web de Lightricks: https://www.lightricks.com/
+- Sobre Lightricks: https://www.lightricks.com/about
+- Lightricks en Wikipedia: https://en.m.wikipedia.org/wiki/Lightricks
+- Lightricks en GitHub: https://github.com/Lightricks

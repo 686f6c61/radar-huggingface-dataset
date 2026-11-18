@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/DSR1-Qwen-32B-still-GGUF",
+  "slug": "mradermacher-dsr1-qwen-32b-still-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DSR1-Qwen-32B-still-GGUF",
+  "created_at": "2025-03-08T05:11:01.000Z",
+  "updated_at": "2026-11-18T00:48:08.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000859424,
+  "storage_human": "224.0 GB",
+  "context_length": 131072,
+  "base_model": "moogician/DSR1-Qwen-32B-still",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

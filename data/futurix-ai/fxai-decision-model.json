@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 8120,
+  "downloads_30d": 8121,
   "trending_score": 0,
   "parameters": 26085330160,
   "parameters_human": "26.09B",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PRACTICE | English meaning - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/dictionary/english/practice",
-      "snippet": "Oct 12, 2026 · PRACTICE definition: 1. action rather than thought or ideas: 2. used to describe what really happens as opposed to …Read more"
-    },
-    {
-      "title": "practice - Traduction française – Linguee",
-      "url": "https://www.linguee.fr/anglais-francais/traduction/practice.html",
-      "snippet": "De très nombreux exemples de phrases traduites contenant \"practice\" – Dictionnaire français-anglais et moteur de recherche de …"
-    },
-    {
-      "title": "Practice vs. Practise: Easy Rules & Examples",
-      "url": "https://learnenglishgrammar.org/practice-vs-practise/",
-      "snippet": "Learn the difference between practice vs practise with simple rules, examples, common mistakes, and a quick quiz."
-    },
-    {
-      "title": "Practice or Practise? - Grammar Monster",
-      "url": "https://www.grammar-monster.com/easily_confused/practice_practise.htm",
-      "snippet": "In the UK, 'practice' is a noun (like preparation), but 'practise' is a verb (like to prepare). The difference between practice and practise …"
-    },
-    {
-      "title": "practice - Définitions, synonymes, prononciation, exemples | Dico en ...",
-      "url": "https://dictionnaire.lerobert.com/definition/practice",
-      "snippet": "Définition, exemples et prononciation de practice : Terrain d'entraînement (recommandation officielle)…"
-    }
-  ]
+  "sources": []
 }

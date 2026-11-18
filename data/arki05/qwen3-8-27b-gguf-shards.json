@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10818,
+  "downloads_30d": 10798,
   "trending_score": 0,
   "parameters": 2671616,
   "parameters_human": "2.7M",
@@ -39,31 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Arki05/Qwen3.8-27B-GGUF-shards at main - Hugging Face",
-      "url": "https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards/tree/main",
-      "snippet": "Instructions to use Arki05/Qwen3.8-27B-GGUF-shards with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Arki05/Qwen3.8-27B-GGUF-shards with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "Qwen3.8-27B - GitHub",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
-      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
-      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
-    },
-    {
-      "title": "GitHub",
-      "url": "https://github.com/qwen3-8-27b/qwen3-8-27b",
-      "snippet": "GitHub"
-    },
-    {
-      "title": "Qwen3.8-27B - QwenCloud",
-      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
-      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
-    }
-  ]
+  "sources": []
 }

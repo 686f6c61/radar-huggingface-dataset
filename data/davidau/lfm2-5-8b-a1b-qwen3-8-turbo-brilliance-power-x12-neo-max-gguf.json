@@ -69,7 +69,7 @@
     "conversational"
   ],
   "likes": 70,
-  "downloads_30d": 20086,
+  "downloads_30d": 19604,
   "trending_score": 12,
   "parameters": 8467856832,
   "parameters_human": "8.47B",
@@ -89,31 +89,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DavidAU/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12 ...",
-      "url": "https://huggingface.co/DavidAU/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF",
-      "snippet": "LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF. The Turbo Brilliance system ..."
-    },
-    {
-      "title": "DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO ...",
-      "url": "https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF",
-      "snippet": "Turbo Brilliance ADDED: 12 reasoning modes and 12 instruct modes (this model DID NOT have a native instruct mode, now it has 12), switchable on the fly via in ..."
-    },
-    {
-      "title": "POV 8GB VRAM + 16GB RAM folks checking locallama everyday",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwocom/pov_8gb_vram_16gb_ram_folks_checking_locallama/",
-      "snippet": "vor 2 Tagen ... ... Power-X12-NEO-MAX-GGUF or if you want the MOE https://huggingface.co/DavidAU/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF."
-    },
-    {
-      "title": "DavidAU (David Belton) - Hugging Face",
-      "url": "https://huggingface.co/DavidAU/models",
-      "snippet": "DavidAU/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF. Text Generation • 8B • Updated about 21 hours ago • 5k • 11 · DavidAU/LFM2.5-2.6B-Qwen3.8 ..."
-    },
-    {
-      "title": "DavidAU (David Belton) – Likes - Hugging Face",
-      "url": "https://huggingface.co/DavidAU/activity/likes",
-      "snippet": "DavidAU/Qwen3.8-27B-ULT3-QNext-Stage1. updated a model about 7 hours ago. DavidAU/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF · View all ..."
-    }
-  ]
+  "sources": []
 }

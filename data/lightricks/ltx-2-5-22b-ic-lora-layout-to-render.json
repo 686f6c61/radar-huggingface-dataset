@@ -27,8 +27,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 144,
-  "downloads_30d": 19311,
+  "likes": 146,
+  "downloads_30d": 19460,
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,
@@ -53,24 +53,24 @@
       "snippet": "Lightricks is a leading AI technology company transforming creative workflows with innovative tools; across web, mobile and open …"
     },
     {
-      "title": "Lightricks - GitHub",
-      "url": "https://github.com/Lightricks",
-      "snippet": "Bridging Imagination and Creation. Lightricks has 152 repositories available. Follow their code on GitHub."
-    },
-    {
-      "title": "Lightricks - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Lightricks",
-      "snippet": "Lightricks is a software development company founded in January 2013. The company develops Facetune, a mobile app for image …"
-    },
-    {
-      "title": "PressKit - Lightricks",
+      "title": "About Lightricks | AI-Powered Creative Apps",
       "url": "https://www.lightricks.com/about",
-      "snippet": "About Lightricks Lightricks, an AI-first company, is revolutionizing how visual content is created. With a mission to bridge the gap …"
+      "snippet": "Lightricks, an AI-first company, is revolutionizing how visual content is created. With a mission to bridge the gap between imagination …"
     },
     {
       "title": "Lightricks (LTX.io) - Hugging Face",
       "url": "https://huggingface.co/Lightricks",
-      "snippet": "Generative AI, Computer Vision, Audio and Speech, LLMs and Diffusion models. Innovating in the ML domain to build amazing …"
+      "snippet": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control ... Lightricks/LTX-2.5-22b-LoRA-Cinemagraph ... Lightricks/LTX-2.5-22b-IC-LoRA …"
+    },
+    {
+      "title": "Lightricks - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Lightricks",
+      "snippet": "In the summer of 2022, with the emergence of generative artificial intelligence, Lightricks began incorporating GenAI flows in its apps, …"
+    },
+    {
+      "title": "Lightricks - GitHub",
+      "url": "https://github.com/Lightricks",
+      "snippet": "Bridging Imagination and Creation. Lightricks has 154 repositories available. Follow their code on GitHub."
     }
   ]
 }

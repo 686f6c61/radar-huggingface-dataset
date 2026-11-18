@@ -23,8 +23,8 @@
     "mxfp8",
     "region:us"
   ],
-  "likes": 244,
-  "downloads_30d": 4943,
+  "likes": 246,
+  "downloads_30d": 5050,
   "trending_score": 11,
   "parameters": 28783218402,
   "parameters_human": "28.78B",
@@ -46,29 +46,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "KRAFTON/Raon-1-mini-preview - Hugging Face",
-      "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview",
-      "snippet": "Raon-1 mini is a 30B-A4B Mixture-of-Experts (MoE) language model, designed and trained from scratch by KRAFTON AI. It demonstrates strong capabilities in Korean conversation and agentic tasks."
+      "title": "home | KRAFTON",
+      "url": "https://www.krafton.com/en/",
+      "snippet": "KRAFTON will further expand our original IPs and build immersive, virtual worlds, where our fans play together and share fun …"
     },
     {
-      "title": "Krafton Releases Raon-1 Mini, Its In-House AI Language Model - ...",
-      "url": "https://en.sedaily.com/technology/2026/10/21/krafton-releases-raon-1-mini-its-in-house-ai-language-model",
-      "snippet": "vor 10 Stunden ... Krafton has released a preview of Raon-1 mini, a 30-billion-parameter language model, free on Hugging Face under an Apache 2.0 license."
+      "title": "KRAFTON",
+      "url": "https://accounts.krafton.com/",
+      "snippet": "Creating a KRAFTON Player Account opens up a world of opportunities. We use your KRAFTON Player Account as a vessel to …"
     },
     {
-      "title": "Krafton Releases Preview of Its Self-Developed LLM \"Raon-1 Mini\" ...",
-      "url": "https://www.asiae.co.kr/en/article/IT/2026102115574147611",
-      "snippet": "It lowered inference costs by combining a mixture-of-experts (MoE) structure, which activates only 4 billion of the model's 30 billion parameters as needed, with its own linear attention technology. Krafton emphasized that Raon-1 Mini Preview delivers superior performance to overseas models of a similar size and comes close to large domestic models on some metrics."
+      "title": "Krafton - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Krafton",
+      "snippet": "Krafton ... KRAFTON, Inc. (Korean: 주식회사 크래프톤) is a South Korean video game publisher and holding company based in …"
     },
     {
-      "title": "Krafton Unveils Preview of 30B 'Raon-1 Mini'... \"Competing with a ...",
-      "url": "https://finance.biggo.com/news/760bb58d-5dcc-490a-9fa4-2c03ecbbef67",
-      "snippet": "South Korea's Krafton has released a preview version of \"Raon-1 Mini,\" a 30-billion-parameter large language model it developed in-house, on Hugging Face under the Apache 2.0 license."
+      "title": "Krafton — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Krafton",
+      "snippet": "Krafton Inc. (anciennement Bluehole Studio et Bluehole) est une entreprise sud-coréenne de développement et d' édition de jeux …"
     },
     {
-      "title": "KRAFTON Unveils “Raon-1 Mini,” a 30B-Scale In-House Language ...",
-      "url": "https://en.edaily.co.kr/news/eda202610215570/",
-      "snippet": "The Raon-1 mini preview has been released on the AI model sharing platform Hugging Face under the Apache 2.0 license. Anyone can download it for free and use it for research and the development of commercial services."
+      "title": "PUBG: BATTLEGROUNDS",
+      "url": "https://pubg.com/",
+      "snippet": "© 2026 KRAFTON, INC. PUBG IS A REGISTERED TRADEMARK OR SERVICE MARK OF KRAFTON, INC."
     }
   ]
 }

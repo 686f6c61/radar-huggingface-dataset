@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 61458,
+  "downloads_30d": 60226,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -36,31 +36,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MDR Sport | mdr.de",
-      "url": "https://www.mdr.de/sport",
-      "snippet": "Sport im Osten - News, Videos, Livestreams, Ticker, Ergebnisse, Tabellen - Fußball der 1. und 2. Bundesliga, 3. Liga und …"
-    },
-    {
-      "title": "Livesport im MDR: Alle Sport-Livestreams von SPORT IM OSTEN",
-      "url": "https://www.mdr.de/sport/livestreams",
-      "snippet": "SPORT IM OSTEN bringt den Livesport nach Hause! Hier gibt es alle geplanten Livestreams in der Übersicht: Vom Fußball in der 3. …"
-    },
-    {
-      "title": "Live-Sport und aktuelle Ergebnisse | mdr.de",
-      "url": "https://www.mdr.de/sport/live/heute",
-      "snippet": "Liga, 3. Liga, Regionalliga Nordost und von Champions League und Nationalelf vom aktuellen Tag. Zudem Live-Ergebnisse aus der …"
-    },
-    {
-      "title": "Die Sportsendung im MDR-Fernsehen: SPORT IM OSTEN",
-      "url": "https://www.mdr.de/sport/sport-im-osten",
-      "snippet": "Die SPORT IM OSTEN-Doku \"Blau-Weiß für die Ewigkeit\" zeichnet die bewegende Geschichte des einzigen DDR …"
-    },
-    {
-      "title": "Fußball im MDR | mdr.de",
-      "url": "https://www.mdr.de/sport/fussball",
-      "snippet": "Fußball im MDR: News, Videos, Liveticker, Ergebnisse, Spielberichte und Statistiken. Im Mittelpunkt stehen die mitteldeutschen …"
-    }
-  ]
+  "sources": []
 }

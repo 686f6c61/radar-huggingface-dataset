@@ -61,9 +61,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 286,
+  "likes": 289,
   "downloads_30d": 26890,
-  "trending_score": 14,
+  "trending_score": 16,
   "parameters": 1918181888,
   "parameters_human": "1.92B",
   "storage_bytes": 3854326178,
@@ -82,31 +82,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Buy Residential Proxies - Best Quality IPs - Fast & Affordable",
-      "url": "https://iproyal.com/residential-proxies/",
-      "snippet": "Buy a residential proxy pool of IPs from real Internet Service Providers. Minimize CAPTCHAs and avoid IP bans and geo-restrictions …"
-    },
-    {
-      "title": "12 Best Cheap Residential Proxies",
-      "url": "https://aimultiple.com/residential-proxy-providers",
-      "snippet": "Oct 1, 2026 · Discover the best residential proxy providers with detailed comparisons on speed and features. Find the ideal solution …"
-    },
-    {
-      "title": "Residential Proxies From $2/GB – 115M+ IPs - Smartproxy",
-      "url": "https://decodo.com/proxies/residential-proxies",
-      "snippet": "Get premium residential proxies with 115M+ IPs from 195+ locations. #1 response time, 99.92% success rate, 24/7 tech support, and …"
-    },
-    {
-      "title": "Buy Residential Proxies - Starting from $2.50/IP - Bright Data",
-      "url": "https://brightdata.com/proxy-types/residential-proxies",
-      "snippet": "Over 400M+ monthly residential proxy IPs, best-in-class technology and the ability to target any country, city, ZIP Code, carrier, & …"
-    },
-    {
-      "title": "Best Residential Proxies for 2026 - Cybernews",
-      "url": "https://cybernews.com/best-proxy/residential-proxies/",
-      "snippet": "Aug 24, 2026 · For this reason, I reviewed and compared the 7 best residential proxies in 2026, to help you save time and choose …"
-    }
-  ]
+  "sources": []
 }

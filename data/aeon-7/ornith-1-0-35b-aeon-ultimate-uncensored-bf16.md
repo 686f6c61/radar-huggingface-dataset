@@ -2,100 +2,105 @@
 
 ## Resumen
 
-Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16 es una compilación "abliterated" (sin rechazos) del modelo agentico de codigo `deepreinforce-ai/Ornith-1.0-35B`, publicada por el usuario AEON-7. El modelo base es un Mixture-of-Experts (MoE) de 35.107.181.936 parametros totales con arquitectura hibrida `qwen3_5_moe`: 40 capas (30 de atencion lineal GatedDeltaNet y 10 de atencion completa), 256 expertos enrutados mas 1 compartido, torre de vision y contexto de 256K tokens. Segun la model card, los pesos del miembro 35B-MoE se inicializan a partir de `Qwen/Qwen3.6-35B-A3B` (rel-L2 0.0022 frente a 0.0256 respecto a Qwen3.5-35B-A3B-Base).
+Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16 es una variante "abliterated" (sin rechazos) del modelo agentico de codigo Ornith-1.0-35B de DeepReinforce. Lo publica el usuario AEON-7 sobre el checkpoint base `deepreinforce-ai/Ornith-1.0-35B`, y aplica una eliminacion selectiva del comportamiento de rechazo manteniendo, segun el autor, la capacidad original intacta. El modelo es un MoE multimodal de 35.107.181.936 parametros totales con torre de vision y contexto de 256K tokens.
 
-El objetivo de esta variante es eliminar el comportamiento de rechazo del modelo original preservando su capacidad agentica y de codigo. Para ello se aplica abliteracion con biproyeccion que preserva la norma y "Expert-Granular Abliteration" (EGA) sobre los 256 expertos fusionados, el experto compartido y la supresion del router, con busqueda multiobjetivo Optuna (rechazos frente a divergencia KL). Antes de la abliteracion se reparan dos bloques atipicos de `conv1d` en las capas 36 y 37 (metodo FernflowerAI) para evitar el colapso de coherencia.
+La arquitectura es `qwen3_5_moe`: 40 capas (30 de atencion lineal GatedDeltaNet y 10 de atencion completa), 256 expertos enrutados mas 1 compartido (configuracion A3B, es decir, aproximadamente 3.000 millones de parametros activos por token). El autor documenta que los pesos se inicializan a partir de `Qwen/Qwen3.6-35B-A3B`, aunque la model card original menciona post-entrenamiento sobre Gemma 4 y Qwen 3.5.
 
-La relevancia actual reside en que combina un modelo de codigo agentico de referencia (Terminal-Bench 2.1 = 64,2; SWE-bench Verified = 75,6 segun el autor) con una eliminacion de rechazos medida: 0/80 rechazos en un conjunto de 80 prompts daninos diversos, con un KL de primer token de ~0,0014 y un pass@1 agentico de 0,833 identico al original en una sonda de 18 tareas. Se distribuye con licencia MIT y pesos en BF16 (~66 GB).
+Su relevancia actual radica en dos factores: por un lado, es un modelo de codigo agentico con resultados reportados de Terminal-Bench 2.1 = 64,2 y SWE-bench Verified = 75,6 en el modelo base; por otro, esta version elimina los rechazos de seguridad conservando esas capacidades, lo que lo hace atractivo para entornos de investigacion de seguridad y para despliegues donde el filtrado se delega a capas externas. La licencia es MIT y el repo ocupa 70,2 GB en BF16.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE hibrido `qwen3_5_moe`: 40 capas (30 GatedDeltaNet de atencion lineal + 10 de atencion completa), 256 expertos enrutados + 1 compartido, torre de vision |
-| Parametros totales | 35.107.181.936 |
-| Parametros activos | no disponible (el sufijo A3B del base sugiere ~3B activos, no confirmado en la informacion) |
-| Longitud de contexto | 256K tokens (262.144) |
-| Tipos de cuantizacion | BF16 (este repo); NVFP4 (~23,7 GB, solo pesos MLP, requiere GPU Blackwell); FP8 no viable segun el autor |
+| Arquitectura | Transformer hibrido MoE con atencion lineal GatedDeltaNet (`qwen3_5_moe`): 40 capas (30 GatedDeltaNet + 10 atencion completa), 256 expertos enrutados + 1 compartido |
+| Parametros totales | 35.107.181.936 (35,1 B) |
+| Parametros activos | Aproximadamente 3 B por token (configuracion A3B) |
+| Longitud de contexto | 262.144 tokens (256K) |
+| Tipos de cuantizacion | BF16 (este repo); NVFP4 (variante oficial, ~23,7 GB); FP8 no viable segun el autor |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria transformers); tamano del repo 70,2 GB |
+| Formato de pesos | safetensors (BF16), libreria transformers; compatible con vLLM |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un MoE hibrido con atencion lineal GatedDeltaNet en 30 de las 40 capas y atencion completa en las 10 restantes, 256 expertos enrutados mas un experto compartido y una torre de vision heredada del modelo base. La model card indica que el 35B-MoE se inicializa desde `Qwen/Qwen3.6-35B-A3B`, aunque la card original de la familia afirma un post-entrenamiento sobre Gemma 4 y Qwen 3.5. No se dispone de datos sobre numero de tokens de entrenamiento, composicion del dataset ni etapas de RLHF/DPO del modelo base en la informacion proporcionada.
+El modelo es un transformer hibrido con mezcla de expertos. Combina 30 capas de atencion lineal basada en GatedDeltaNet (un mecanismo de espacio de estados con puerta delta) con 10 capas de atencion completa, lo que reduce el coste cuadratico en contextos largos y permite sostener 256K tokens. El bloque MoE tiene 256 expertos enrutados mas uno compartido, con unos 3.000 millones de parametros activos por token. Incluye una torre de vision que habilita entrada image-text-to-text, y el autor indica que la torre de vision y los internos de GatedDeltaNet/SSM no se han modificado respecto al base.
 
-La innovacion de esta compilacion es el proceso de abliteracion: reparacion de outliers en `conv1d` (capas 36/37, sigma de 0,10 a 0,062), abliteracion con `abliterix` v1.9 aplicando biproyeccion que preserva la norma y EGA sobre los 256 expertos fusionados, el experto compartido y el router, dejando intactos Q/K/V (`attn_output_gate`), los internos de GatedDeltaNet/SSM y la torre de vision. Se selecciono un ajuste de expertos 170 veces mas suave que el candidato de menor rechazo para evitar la degeneracion en generacion larga, manteniendo un KL de primer token de ~0,0014.
+El proceso de "abliteration" aplicado por AEON-7 consta de tres fases documentadas. Primero, una reparacion de valores atipicos en el `conv1d` del SSM (metodo FernflowerAI) que reescala dos bloques problematicos (capas 36 y 37, de sigma 0,10 a 0,062) para evitar el colapso de coherencia. Segundo, la abliteracion propiamente dicha con `abliterix` v1.9, usando biproyeccion con preservacion de norma de grimjim y Expert-Granular Abliteration (EGA) sobre los 256 expertos fusionados, el experto compartido y la supresion del router, con busqueda multiobjetivo Optuna entre rechazos y divergencia KL. Las proyecciones Q/K/V no se tocan (`attn_output_gate`). Tercero, una seleccion de "rodilla suave": el ensayo con menos rechazos resultaba sobre-abliterado y degeneraba en generacion larga, por lo que se envio una edicion de expertos 170 veces mas ligera que mantiene la eliminacion de rechazos sin perdida de coherencia. No se dispone de datos sobre el volumen o composicion del dataset de entrenamiento original del base.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento con modo "thinking": cada turno abre un bloque `<think>...</think>`.
-- Codigo agentico: el autor reporta SWE-bench Verified 75,6 y Terminal-Bench 2.1 64,2 en el modelo base.
-- Tool calling / function calling: soportado en vLLM con `--enable-auto-tool-choice --tool-call-parser qwen3_coder`.
-- Razonamiento multi-paso y uso de agentes (etiquetas `agentic`, `swe-bench`, `terminal-bench`).
-- Multimodal: entrada image-text-to-text con torre de vision intacta (imagen y video); limite sugerido de 4 imagenes y 2 videos por prompt en vLLM.
-- Multilingue: no disponible (no se detallan idiomas).
-- Sin rechazos: comportamiento de rechazo eliminado (0/80 en la validacion del autor).
+- Generacion de texto y razonamiento con modo de pensamiento: cada turno abre un bloque `<think>…</think>` (parser de razonamiento `qwen3` en vLLM).
+- Codigo agentico: resultados reportados en el base de SWE-bench Verified 75,6 y Terminal-Bench 2.1 64,2.
+- Tool calling y function calling: soporte nativo con `--enable-auto-tool-choice --tool-call-parser qwen3_coder` en vLLM.
+- Razonamiento multi-paso y uso de agentes en terminal y pipelines de codigo.
+- Vision multimodal: entrada de imagen y video (image-text-to-text), con limite configurable por prompt (por ejemplo, 4 imagenes y 2 videos).
+- Capacidad de contexto largo: hasta 262.144 tokens.
+- Sin rechazos de seguridad: 0 de 80 prompts daneses en la validacion del autor.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Generacion de codigo en produccion: puede integrarse en pipelines de CI/CD para proponer parches y ejecutar tool calls, con contexto de 256K tokens para repositorios completos y un pass@1 agentico reportado de 0,833 en la sonda del autor.
-- Agentes autonomos de terminal: adecuado para tareas de tipo Terminal-Bench donde el modelo emite comandos y llamadas a herramientas de forma iterativa.
-- Asistente de ingenieria sobre base de codigo: ventana de 256K para analizar multiples ficheros y mantener contexto de conversacion largo en tareas de refactorizacion.
-- Analisis de documentos e imagenes: la torre de vision permite procesar capturas, diagramas o videos junto a texto en flujos de extraccion y respuesta.
-- Investigacion sobre seguridad y alineacion: util para estudiar comportamiento sin rechazos y medir diferencias frente al modelo original (KL ~0,0014).
-- Despliegue en DGX Spark / GB10: la variante NVFP4 (~23,7 GB) permite servir el modelo en hardware Blackwell con memoria unificada, segun las instrucciones del autor.
+- Agente de codigo autonomo en terminal: el modelo puede ejecutar tareas de tipo Terminal-Bench (edicion de ficheros, ejecucion de comandos, correccion de errores) gracias a su soporte de tool calling y a su contexto de 256K, que permite mantener el estado de un repositorio completo en la ventana.
+- Resolucion de issues en produccion: integrado en un pipeline de CI/CD con vLLM y el parser `qwen3_coder`, puede recibir un issue de GitHub, inspeccionar el codigo relevante y proponer un parche verificable, apoyandose en el rendimiento reportado de SWE-bench Verified 75,6 del base.
+- Investigacion de seguridad y red teaming: al no emitir rechazos, sirve para estudiar comportamientos del modelo sin la capa de negativa, generar casos adversarios y evaluar la eficacia de filtros externos, con la advertencia de que la responsabilidad recae en el operador.
+- Analisis de documentacion tecnica con vision: la torre de vision permite procesar capturas de pantalla, diagramas de arquitectura o imagenes de errores y combinarlas con el contexto de codigo para diagnosticar fallos.
+- Asistente de refactorizacion a gran escala: con 256K de contexto puede cargar modulos completos y mantener coherencia entre multiples ficheros en una sola sesion, reduciendo la perdida de contexto entre llamadas.
+- Despliegue en estacion de trabajo DGX Spark: la variante NVFP4 (~23,7 GB) esta pensada para GB10/sm_120 y permite ejecutar el modelo en memoria unificada con `--gpu-memory-utilization` entre 0,6 y 0,7.
+- Generacion de contenido sin restricciones para investigacion creativa o editorial: util en entornos controlados donde el filtrado de seguridad se aplica en una capa posterior y se necesita que el modelo no se autocensure.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Ornith-1.0-35B original | Este modelo |
-|---|---|---|
-| Rechazos (80 prompts daninos diversos: CBRN, ciber, armas, autolesion) | alto (sin cifra) | 0 / 80 (0,0%) |
-| Pass@1 agentico/codigo (sonda propia de 18 tareas) | 0,833 | 0,833 (identico por familia) |
-| KL de primer token frente al base | — | ~0,0014 |
-| Coherencia (benigno + danino, generacion larga) | — | limpia (sin degeneracion) |
-| Terminal-Bench 2.1 (base, citado) | 64,2 | no disponible |
-| SWE-bench Verified (base, citado) | 75,6 | no disponible |
+Datos reportados por el autor en la model card, medidos sobre este modelo y su base:
 
-Los datos de Terminal-Bench y SWE-bench corresponden al modelo base segun el autor; no se aportan mediciones de esta variante en esos benchmarks. La variante NVFP4 se valida como identica a este BF16: 0,833 (15/18) agentico, 0 rechazos y 0 degenerados.
+| Metrica | Ornith-1.0-35B (base) | Este modelo |
+|---|---|---|
+| Rechazos (80 prompts daneses diversos: CBRN, ciber, armas, autolesion) | alto | 0 / 80 (0,0 %) |
+| Agentico/codigo pass@1 (sonda propia de 18 tareas) | 0,833 | 0,833 (identico por familia) |
+| KL del primer token frente al base | — | ~0,0014 |
+| Coherencia (benigno + danes, generacion larga) | — | limpia, sin degeneracion |
+| Terminal-Bench 2.1 (base, reportado) | 64,2 | no disponible |
+| SWE-bench Verified (base, reportado) | 75,6 | no disponible |
+
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval o GSM8K para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~66 GB en BF16 (repo de 70,2 GB); ~23,7 GB en NVFP4.
-- GPU recomendadas: para BF16, GPUs con suficiente VRAM agregada o memoria unificada; el autor cita DGX Spark (GB10) y menciona B200 (sm_100) para NVFP4.
-- NVFP4 requiere GPU Blackwell (B200 / sm_100 o GB10 / sm_120); FP8 no es viable segun el autor (W8A8 degrada coherencia y W8A16 carece de kernel ScaledMM).
-- En DGX Spark (memoria unificada) el autor recomienda `--gpu-memory-utilization` entre 0,6 y 0,7; por encima de ~0,8 el pool compartido CPU+GPU provoca page thrashing. En GPUs con VRAM discreta se puede subir.
-- Despliegue: vLLM (comando de inicio incluido por el autor con `--max-model-len 262144`, `--mamba-cache-dtype float32`, `--attention-backend flash_attn`, `--enable-chunked-prefill`, `--enable-prefix-caching`, `--trust-remote-code`). No se mencionan llama.cpp, Ollama ni TGI.
-- Muestreo recomendado: temperature 0,6, top_p 0,95, top_k 20.
-- Latencia y throughput: no disponibles.
+- VRAM en BF16: aproximadamente 66 GB de pesos, mas cache KV y cache Mamba; el repo ocupa 70,2 GB.
+- VRAM en NVFP4: aproximadamente 23,7 GB, con expertos y MLP compartido en NVFP4 y atencion, GatedDeltaNet, vision, puertas y embeddings en BF16.
+- GPU recomendadas: A100 80 GB o H100 para BF16 con contexto largo; B200 (sm_100) o GB10 (sm_120) para la variante NVFP4.
+- GPU de consumo: el BF16 no cabe en RTX 4090 (24 GB) sin cuantizacion adicional; la variante NVFP4 de 23,7 GB queda al limite en 24 GB y esta validada para Blackwell, no para Ada.
+- Despliegue: vLLM es la opcion documentada, con `--trust-remote-code`, `--attention-backend flash_attn`, `--enable-chunked-prefill` y `--enable-prefix-caching`. No se documentan recetas para llama.cpp, Ollama ni TGI.
+- En DGX Spark (memoria unificada) se recomienda `--gpu-memory-utilization` de 0,6 a 0,7; por encima de 0,8 el pool compartido CPU+GPU sufre page thrashing. En GPUs con VRAM discreta se puede subir.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Notas |
+| Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16 | 35,1B (MoE) | 256K | Pass@1 agentico 0,833 (sonda 18 tareas); 0/80 rechazos | MIT | Vision, thinking, sin rechazos |
-| deepreinforce-ai/Ornith-1.0-35B (base) | 35,1B (MoE) | 256K | Terminal-Bench 2.1 64,2; SWE-bench Verified 75,6 | MIT | Con rechazos; referencia de capacidad |
-| Qwen/Qwen3.6-35B-A3B (origen de pesos) | 35B (MoE, A3B) | no disponible | no disponible | no disponible | Inicializacion del 35B-MoE segun correlacion de pesos |
-| Variante NVFP4 del mismo modelo | 35,1B (MoE) | 256K | 0,833 (15/18); 0 rechazos | MIT | ~23,7 GB; requiere Blackwell |
+| Ornith-1.0-35B-AEON-Ultimate-Uncensored (este) | 35,1 B totales / ~3 B activos | 256K | pass@1 agentico 0,833 (sonda propia); 0 rechazos | MIT | Hugging Face (BF16 y NVFP4) |
+| deepreinforce-ai/Ornith-1.0-35B (base) | 35,1 B totales / ~3 B activos | 256K | Terminal-Bench 2.1 64,2; SWE-bench Verified 75,6; rechazos altos | MIT | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (origen de pesos segun correlacion) | ~35 B totales / ~3 B activos | no disponible | no disponible | no disponible | Hugging Face |
 
-No se dispone de comparaciones con otros modelos abliterated de tamano similar en la informacion proporcionada.
+No se dispone de datos de benchmarks comparativos con otros modelos abliterated de tamano similar en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo sin rechazos: genera contenido que el base rechazaria, incluido material peligroso (herramientas daninas, quimicos, agentes biologicos, codigo de explotacion), violencia, autolesion, sexualidad grafica y contenido ilegal en algunas jurisdicciones.
-- Riesgo operativo: al ser un modelo agentico de codigo, sus salidas son a menudo tool calls y codigo que sistemas posteriores ejecutan; una instruccion erronea o maliciosa puede convertirse en una accion real sin supervision humana.
-- Alucinacion: no se aportan mediciones especificas; el modo thinking puede producir cadenas de razonamiento extensas.
-- Idiomas soportados: no disponibles; no se garantiza cobertura multilingue.
-- La abliteracion, aunque medida (KL ~0,0014), puede alterar comportamientos sutiles no cubiertos por la sonda de 18 tareas.
-- La reparacion de outliers en `conv1d` y el ajuste de expertos implican modificaciones no triviales; la coherencia se valida solo con pruebas del autor.
-- FP8 no es una ruta viable segun el autor; la cuantizacion de baja precision requiere hardware Blackwell.
-- Licencia MIT, lo que permite uso comercial, pero la responsabilidad legal y etica del contenido generado recae en el usuario.
+- Modelo sin rechazos: genera contenido que el base rechazaria, incluidos instrucciones para herramientas peligrosas, agentes quimicos o biologicos, codigo de explotacion, violencia, autolesion y contenido sexual grafico. No emite juicio interno sobre si cumplir.
+- Riesgo agentico: al ser un modelo de codigo agentico, sus salidas son a menudo llamadas a herramientas y codigo que sistemas posteriores ejecutan; una instruccion maliciosa o erronea puede convertirse en una accion real con efectos secundarios.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; la sonda de validacion del autor es de solo 18 tareas y no cubre dominios generales.
+- La validacion de capacidades se limita a la sonda propia del autor (18 tareas) y a las metricas del base; no hay evaluacion independiente publicada.
+- Idiomas soportados: no disponibles; no se puede garantizar calidad multilingue fuera del ingles.
+- Restricciones de licencia: MIT permite uso comercial, pero el contenido generado puede ser ilegal en algunas jurisdicciones y la responsabilidad recae en el operador.
+- FP8 no es viable segun el autor: W8A8 degrada la coherencia y W8A16 carece de kernel ScaledMM. La cuantizacion de baja precision recomendada es NVFP4, que exige GPU Blackwell.
+- La torre de vision y los internos de GatedDeltaNet/SSM no se modificaron, por lo que el comportamiento multimodal y de atencion lineal es el del base.
+- En memoria unificada (DGX Spark) hay que limitar `--gpu-memory-utilization` a 0,6-0,7 para evitar thrashing.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16
+- Modelo en Hugging Face: https://huggingface.co/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16
 - Variante NVFP4: https://huggingface.co/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4
 - Modelo base: https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B
 - Licencia del base: https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B/blob/main/LICENSE
-- Repositorio de la receta: https://github.com/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored
-- Herramienta de abliteracion: https://github.com/wuwangzhang1216/abliterix
+- Repositorio de la receta de abliteracion: https://github.com/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored
+- Herramienta abliterix: https://github.com/wuwangzhang1216/abliterix
+- Soporte del autor: https://lotusmake.com/support

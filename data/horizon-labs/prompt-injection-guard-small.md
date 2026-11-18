@@ -2,114 +2,103 @@
 
 ## Resumen
 
-Prompt Injection Guard (small) es un clasificador de texto desarrollado por Horizon-Labs que detecta intentos de prompt injection y de jailbreak, tanto en mensajes escritos directamente por el usuario (inyeccion directa) como en contenido no confiable que lee un agente de IA: correos, paginas web, documentos, fragmentos recuperados por RAG y salidas de herramientas o API (inyeccion indirecta). Devuelve dos etiquetas, `benign` (0) e `injection` (1), y esta construido sobre el backbone jhu-clsp/mmBERT-small, una variante multilingue de la familia ModernBERT, con 140.642.306 parametros (~141 M) y una ventana de contexto de 8.000 tokens.
+Prompt Injection Guard (small) es un clasificador de texto de 141 millones de parámetros desarrollado por Horizon-Labs, cuyo propósito es detectar intentos de prompt injection y jailbreak tanto en mensajes directos del usuario como en contenido no confiable que lee un agente de IA: correos electrónicos, páginas web, documentos, fragmentos de RAG y salidas de herramientas o APIs. El modelo se construye sobre el backbone jhu-clsp/mmBERT-small, una variante multilingüe de la familia ModernBERT, y se distribuye con licencia Apache-2.0 sin restricciones de acceso.
 
-El modelo esta orientado a agentes: se entreno con documentos realistas de 45 tipos en los que se insertaron inyecciones, junto con sus versiones limpias, de modo que aprende a buscar *instrucciones dirigidas a la IA* y no simples palabras amenazantes. De ahi su comportamiento en textos benignos que contienen disparadores: 0,861 de exactitud en NotInject y 1,000 en XSTest, con 0,995 declarado en OR-Bench-hard.
+La propuesta técnica del modelo es distinguirse de los clasificadores basados en palabras clave: se ha entrenado con documentos realistas que contienen inyecciones plantadas en 45 tipos de documentos distintos, junto con sus correspondientes versiones limpias. De este modo, el clasificador aprende a identificar instrucciones dirigidas al modelo, no simplemente términos alarmantes. Esto se tradujo en una tasa de falsos positivos baja sobre texto benigno parecido: 96,2 % de precisión en NotInject y 99,5 % en OR-Bench-hard.
 
-Su relevancia actual es doble. Por un lado cubre la inyeccion indirecta, que es el vector tipico en agentes que consumen herramientas externas y que los filtros centrados en el mensaje del usuario no cubren. Por otro, incorpora datos sinteticos de entrenamiento en 30 idiomas, lo que lo hace util en despliegues multilingues donde los guardrails solo en ingles se degradan. La variante small prioriza el coste de inferencia frente al modelo base de 308 M de la misma familia.
+Es relevante ahora porque los agentes basados en LLM procesan cada vez más contenido externo no verificado y expuestos a ataques indirectos, un vector que los filtros de prompt tradicionales no cubren. El modelo ofrece una ventana de contexto de 8.000 tokens, soporte para 30 idiomas en los datos de entrenamiento y exportaciones a PyTorch, ONNX (fp32 e int8) y transformers.js, lo que permite desplegarlo tanto en servidores como en el navegador.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo ModernBERT (backbone `jhu-clsp/mmBERT-small`) |
-| Parametros totales | 140.642.306 (~141 M) |
+| Arquitectura | ModernBERT / mmBERT-small (encoder transformer bidireccional con atención lineal, base jhu-clsp/mmBERT-small) |
+| Parametros totales | 140.642.306 |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 8.000 tokens |
-| Tipos de cuantizacion | ONNX fp32 y ONNX int8 (embeddings en int8, aproximadamente la mitad de tamano); en transformers.js, `dtype: "q8"` |
-| Idiomas soportados | Multilingue; etiquetas para en, de, fr, es, pt, it, nl, pl, ru, uk, tr, ar, hi, zh, ja, ko, vi, id y th; datos sinteticos de entrenamiento en 30 idiomas |
+| Longitud de contexto | 8.000 tokens; documentos más largos requieren ventaneo con solapamiento (ejemplo con ventana 2048 y stride 512) |
+| Tipos de cuantizacion | ONNX fp32 (`onnx/model.onnx`) y ONNX int8 (`onnx/model_quantized.onnx`, embeddings int8, mitad del tamaño); transformers.js con dtype `q8` |
+| Idiomas soportados | Multilingüe; datos sintéticos de entrenamiento en 30 idiomas; lista declarada: en, de, fr, es, pt, it, nl, pl, ru, uk, tr, ar, hi, zh, ja, ko, vi, id, th |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX (`onnx/model.onnx` fp32, `onnx/model_quantized.onnx` int8) |
-
-Otros datos de distribucion: repositorio de 1,4 GB, sin gating, pipeline `text-classification`, libreria `transformers`, compatible con text-embeddings-inference y con Hugging Face Inference Endpoints. Fechas de creacion y ultima actualizacion: 23 de septiembre de 2026. Descargas y likes en el momento de la consulta: 0 y 0.
+| Formato de pesos | safetensors, ONNX (fp32 e int8); compatible con transformers.js |
+| Tarea | Clasificación de texto binaria: `SAFE` (0) / `INJECTION` (1) |
+| Librería | transformers; compatible con text-embeddings-inference y endpoints |
+| Tamaño del repo | 4,3 GB |
+| Descargas | 4.644 |
+| Fecha de creación / actualización | 2026-09-23 / 2026-11-09 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un clasificador de secuencia (dos etiquetas) construido sobre el backbone `jhu-clsp/mmBERT-small`, derivado de ModernBERT en su variante multilingue. Se trata de un transformer encoder denso de ~141 M de parametros, sin mecanismos de mezcla de expertos (MoE) ni estado recurrente. El tokenizador y el modelo se cargan con `AutoTokenizer` y `AutoModelForSequenceClassification`. Se distribuyen pesos en safetensors para PyTorch y exportaciones ONNX en fp32 e int8, esta ultima con embeddings cuantizados a int8.
+El modelo es un encoder transformer bidireccional derivado de jhu-clsp/mmBERT-small, la variante multilingüe y compacta de la familia ModernBERT. ModernBERT introduce atención lineal (rotary position embeddings con atención eficiente) y una arquitectura optimizada para contextos largos, lo que aquí se traduce en una ventana de 8.000 tokens con coste de atención subcuadrático frente a un transformer clásico. Sobre el backbone se añade una cabeza de clasificación de secuencia con dos etiquetas, entrenada con descenso de gradiente supervisado; la model card no documenta fases de RLHF ni DPO.
 
-El autor declara que el entrenamiento se realizo unicamente con datos con licencia permisiva y que se deduplico el conjunto de entrenamiento contra todos los conjuntos de evaluacion. Entre los corpus empleados figuran conjuntos especificos de inyeccion y jailbreak (neuralchemy/Prompt-injection-dataset, S-Labs/prompt-injection-dataset, microsoft/llmail-inject-challenge, hendzh/PromptShield, TrustAIRLab/in-the-wild-jailbreak-prompts, nvidia/Nemotron-RL-Agentic-Indirect-Prompt-Injection-v1, 3nesdeniz/agentic-prompt-injection-5k, rgeada/tool-response-injections) junto con corpus generales y multilingues (OpenAssistant/oasst2, CohereLabs/aya_dataset, HuggingFaceFW/fineweb-edu, HuggingFaceFW/fineweb-2). No se especifica el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; esa informacion no esta disponible en la documentacion publicada.
-
-La innovacion tecnica principal que declara el autor es el enfoque de datos: 45 tipos de documento con inyecciones plantadas y sus contrapartidas limpias, con datos sinteticos en 30 idiomas, orientados a distinguir instrucciones dirigidas al modelo de instrucciones dirigidas a humanos o de discusiones *sobre* prompt injection. El modelo se evalua con ventana deslizante (maximo sobre ventanas) para entradas largas.
+El entrenamiento combina conjuntos de datos de inyección y jailbreak de origen permisivo: neuralchemy/Prompt-injection-dataset, S-Labs/prompt-injection-dataset, microsoft/llmail-inject-challenge, hendzh/PromptShield, TrustAIRLab/in-the-wild-jailbreak-prompts, nvidia/Nemotron-RL-Agentic-Indirect-Prompt-Injection-v1, 3nesdeniz/agentic-prompt-injection-5k, rgeada/tool-response-injections, JailbreakV-28K/JailBreakV-28k y nvidia/Nemotron-RL-Jailbreak-Robustness-v1, junto con datos benignos de OpenAssistant/oasst2, CohereLabs/aya_dataset, HuggingFaceFW/fineweb-edu y HuggingFaceFW/fineweb-2. La innovación destacable es la generación de documentos realistas con inyecciones indirectas plantadas en 45 tipos de documentos, emparejados con sus equivalentes limpios, además de la síntesis multilingüe en 30 idiomas. El número exacto de tokens de entrenamiento no está disponible en la información proporcionada. El código de datos, entrenamiento y evaluación está publicado en el repositorio github.com/horizon-ai-labs/agent-io-guards.
 
 ## Capacidades
 
-- Clasificacion binaria de texto en `benign` (0) e `injection` (1) para deteccion de prompt injection y jailbreak.
-- Deteccion de inyeccion directa: intentos de anular instrucciones, mensajes falsos de sistema o desarrollador, trucos de delimitadores, extraccion del system prompt y encuadres de jailbreak (persona, "developer mode", hipoteticos).
-- Deteccion de inyeccion indirecta en contenido no confiable: correos, paginas web, documentos, fragmentos de RAG y salidas de herramientas o API, incluidas instrucciones educadas u ocultas (comentarios HTML, notas falsas atribuidas al usuario).
-- Procesamiento de entradas largas: contexto de 8.000 tokens; para documentos mayores la model card propone ventana deslizante con `window` y `stride` y agregacion por maximo de probabilidad.
-- Multilingue: etiquetas de idioma para 20 idiomas y datos sinteticos de entrenamiento en 30 idiomas.
-- Inferencia en multiples runtimes: PyTorch (`transformers`), ONNX Runtime y transformers.js en el navegador.
-- Distincion deliberada entre intento de *override* y peticion danina: las solicitudes peligrosas sin intento de anulacion se etiquetan como benignas y se derivan a un clasificador de moderacion de contenido.
-- No es un modelo generativo: no produce texto, no soporta tool calling ni function calling, no ejecuta razonamiento multi-paso ni agentes por si mismo; su funcion es la de guardrail previo o posterior a las llamadas del agente.
-- No dispone de modo de razonamiento (thinking), vision ni audio.
+- Detección de prompt injection directa: anulación o ignorancia de instrucciones, mensajes falsos de sistema o desarrollador, trucos de delimitadores y extracción de system prompt.
+- Detección de jailbreak: personas alternativas, "developer mode", marcos hipotéticos y demás técnicas orientadas a eliminar las reglas del modelo.
+- Detección de inyección indirecta en documentos y salidas de herramientas: instrucciones plantadas para que un agente exfiltre datos, envíe correos, invoque herramientas o modifique su comportamiento.
+- Clasificación binaria con etiquetas `SAFE` (0) e `INJECTION` (1), convención idéntica a protectai/deberta-v3-base-prompt-injection-v2, lo que permite sustituirlo directamente en código y herramientas existentes.
+- Multilingüe: entrenamiento sintético en 30 idiomas y evaluación declarada en alemán, entre otros; la lista de idiomas cubre en, de, fr, es, pt, it, nl, pl, ru, uk, tr, ar, hi, zh, ja, ko, vi, id, th.
+- Procesamiento de entradas largas: ventana de 8.000 tokens y función de ventaneo con solapamiento para texto de longitud arbitraria que devuelve la probabilidad máxima de inyección.
+- Integración con LLM Guard mediante el scanner PromptInjection con umbral configurable y MatchType.FULL.
+- Despliegue en navegador vía transformers.js con cuantización q8.
+- No se declaran capacidades de generación de texto, tool calling propio, visión, audio ni modo de razonamiento; el modelo es exclusivamente un clasificador.
 
 ## Casos de uso
 
-- Guardrail de entrada en asistentes conversacionales: clasificar el mensaje del usuario antes de enviarlo al LLM y bloquear, reescribir o derivar a revision las peticiones con puntuacion de inyeccion superior al umbral. Los ~141 M de parametros permiten ejecutarlo en la misma instancia que el LLM con un coste de latencia minimo.
-- Proteccion de pipelines RAG: puntuar cada fragmento recuperado antes de insertarlo en el contexto del modelo, ya que el texto recuperado es contenido no confiable. Con `window=2048` y `stride=512` la funcion de ejemplo cubre documentos de longitud arbitraria.
-- Interceptacion de salidas de herramientas en agentes: escanear respuestas de API, resultados de busqueda web, correos o tickets antes de que el agente los interprete, siguiendo el patron de la model card (`fetch_web_page` seguido de `injection_score` y sustitucion del contenido sospechoso).
-- Automatizacion de correo y gestion documental: el entrenamiento incluye 45 tipos de documento con inyecciones plantadas y sus versiones limpias, lo que encaja con el filtrado de adjuntos, mensajes entrantes y documentos procesados en lote.
-- Extensiones de navegador y aplicaciones de escritorio con transformers.js: la exportacion ONNX int8 mas `dtype: "q8"` permite clasificar en el cliente sin enviar el contenido a un servidor, util para asistentes embebidos en paginas o en aplicaciones Electron.
-- Auditoria de seguridad y red teaming: puntuar grandes volumenes de logs o prompts historicos para calcular tasas de inyeccion, comparar variantes de ataque y priorizar los casos que revisara un analista.
-- Convivencia con moderacion de contenido: separar el problema de seguridad (intento de override) del de contenido danino. El modelo etiqueta como benignas las peticiones peligrosas sin intento de anulacion, de modo que se combina con un clasificador de seguridad en lugar de sustituirlo.
-- Aplicaciones multilingues: el soporte declarado de 20 idiomas y los datos sinteticos en 30 idiomas permiten desplegar un unico guardrail en productos con usuarios en varios idiomas en lugar de mantener filtros por idioma.
+- Filtrado de entrada de usuario en chatbots: clasificar cada mensaje antes de enviarlo al LLM principal y rechazar o marcar aquellos con probabilidad de inyección superior al umbral, usando la integración directa con LLM Guard y la convención de etiquetas compatible con protectai.
+- Protección de agentes que leen contenido externo: aplicar la función de ventaneo sobre correos, páginas web, PDF y fragmentos de RAG antes de incorporarlos al contexto del agente, sustituyendo el contenido sospechoso por un marcador de texto eliminado.
+- Saneamiento de salidas de herramientas y APIs: interceptar la respuesta de llamadas a herramientas (búsqueda web, lectura de ficheros, consultas a bases de datos) y bloquear respuestas que contengan instrucciones dirigidas al modelo, un vector cubierto por el dataset rgeada/tool-response-injections.
+- Defensa en pipelines de CI/CD para aplicaciones LLM: ejecutar el clasificador en modo ONNX int8 como paso de validación de prompts de sistema y plantillas antes del despliegue, con bajo coste de cómputo por su tamaño de 141M.
+- Moderación multilingüe en productos SaaS: al ser multilingüe y cubrir 30 idiomas de entrenamiento, permite un único clasificador para bases de usuarios en alemán, francés, español, portugués, ruso, árabe, hindi, chino, japonés, coreano, vietnamita, indonesio, tailandés, entre otros, evitando mantener un modelo por idioma.
+- Ejecución en el cliente o en el borde: con ONNX int8 y transformers.js (dtype q8) el modelo puede correr en navegador o en dispositivos sin GPU, útil para aplicaciones que procesan contenido localmente antes de enviarlo a un servicio remoto.
+- Evaluación de robustez de asistentes: usar las puntuaciones del clasificador como métrica auxiliar para medir la exposición de un agente a jailbreaks y inyecciones indirectas durante pruebas de seguridad.
 
 ## Benchmarks y rendimiento
 
-Todos los numeros fueron calculados por el autor con el mismo script (`code/train/evaluate.py`) y umbral por defecto de 0,5. Las entradas largas se puntuan con ventana deslizante (maximo sobre ventanas; 512 tokens para las lineas base basadas en DeBERTa). Los conjuntos marcados con asterisco estan excluidos del generador sintetico propio, que es el mismo que produjo los datos de entrenamiento; el autor los incluye solo a titulo informativo porque favorecen a su modelo. Los datos de entrenamiento se deduplicaron contra todos los conjuntos de evaluacion.
+| Benchmark | Resultado | Notas |
+|---|---|---|
+| NotInject (texto benigno parecido) | 96,2 % | Tasa de acierto declarada por el autor |
+| OR-Bench-hard | 99,5 % | Tasa de acierto declarada por el autor |
 
-Subconjunto de la tabla de evaluacion disponible (defensa excesiva; mayor valor = menos falsas alarmas):
-
-| Conjunto de evaluacion | Este modelo | base (308 M) | ProtectAI v2 | deepset | PIGuard | Prompt Guard 2 86M | Prompt Guard 2 22M | Wolf Defender | NeuralTrust small |
-|---|---|---|---|---|---|---|---|---|---|
-| NotInject (prompts benignos con palabras disparadoras), exactitud | 0,861 | 0,909 | 0,563 | 0,286 | 0,885 | 0,953 | 0,994 | 0,920 | 0,944 |
-| XSTest (prompts seguros e inseguros pero sin inyeccion), exactitud | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 | 0,964 | 0,720 |
-
-La model card declara ademas 0,995 de exactitud en OR-Bench-hard (prompts benignos aparentemente toxicos). El resto de filas de la tabla de evaluacion (OR-Bench-hard-1k y conjuntos posteriores) aparece truncado en la informacion disponible, por lo que no se reproducen. No hay resultados publicados de MMLU, HumanEval, GSM8K ni otros benchmarks generativos: no aplican a un clasificador.
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible. No se dispone de comparaciones numéricas directas con protectai/deberta-v3-base-prompt-injection-v2 ni con otras alternativas en la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos (calculo a partir de los 140.642.306 parametros): aproximadamente 0,56 GB en fp32, 0,28 GB en fp16/bf16 y 0,14 GB en la exportacion ONNX int8.
-- VRAM total en inferencia: con activaciones y ventana completa de 8.000 tokens, el modelo cabe holgadamente por debajo de 1 GB en fp16 y en torno a ese orden en fp32. Cualquier GPU consumer lo ejecuta sin problema.
-- GPU recomendadas: no hay recomendaciones publicadas por el autor. Por tamano, cualquier GPU desde una GTX 1060 de 6 GB o una RTX 3060 en adelante es suficiente; tambien es viable en CPU y en el navegador mediante transformers.js.
-- Caber en GPU consumer: si, en todas las gamas actuales, incluso en las de 4-6 GB, y tambien en CPU para lotes moderados.
-- Opciones de despliegue: `transformers` con PyTorch, ONNX Runtime (`onnx/model.onnx` o `onnx/model_quantized.onnx`), transformers.js, text-embeddings-inference y Hugging Face Inference Endpoints (el modelo esta marcado como `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no estan soportados de forma nativa.
-- Latencia y throughput: no disponibles. El autor no publica medidas de latencia ni de tokens por segundo.
+- VRAM estimada: el modelo tiene 140,6M parámetros; en fp32 ocupa aproximadamente 560 MB de pesos, en fp16 unos 280 MB y en ONNX int8 en torno a 140-280 MB. Con activaciones y overhead de inferencia, cabe holgadamente en 1-2 GB de VRAM.
+- GPU recomendadas: cualquier GPU moderna es suficiente; para lotes grandes o alto throughput se recomiendan A100, H100 o L40S, aunque no son necesarias para uso individual.
+- Consumer GPU: sí, cabe en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 y similares, e incluso en CPU y en navegador mediante ONNX int8 o transformers.js q8.
+- Opciones de despliegue: transformers (pipeline de text-classification), ONNX Runtime, transformers.js, LLM Guard como scanner de entrada, y text-embeddings-inference según las tags del repositorio.
+- Latencia y throughput: no se han publicado cifras concretas de latencia o throughput en la información disponible. Por el tamaño del modelo y la atención lineal de ModernBERT, se espera una latencia muy baja en GPU y CPU, pero no hay datos medidos que citar.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Exactitud NotInject | Exactitud XSTest |
-|---|---|---|---|---|---|---|
-| prompt-injection-guard-small (este modelo) | 141 M | 8.000 tokens | Apache-2.0 | Abierto, sin gating, safetensors y ONNX | 0,861 | 1,000 |
-| prompt-injection-guard-base | 308 M | no disponible | no disponible | Abierto (misma cuenta de Horizon-Labs) | 0,909 | 1,000 |
-| Prompt Guard 2 86M | 86 M | no disponible | no disponible | no disponible | 0,953 | 1,000 |
-| Prompt Guard 2 22M | 22 M | no disponible | no disponible | no disponible | 0,994 | 1,000 |
-| ProtectAI v2 (base DeBERTa) | no disponible | no disponible | no disponible | no disponible | 0,563 | 1,000 |
-| PIGuard | no disponible | no disponible | no disponible | no disponible | 0,885 | 1,000 |
-| deepset (deberta-v3-base-prompt-injection) | no disponible | no disponible | no disponible | no disponible | 0,286 | 1,000 |
-| Wolf Defender | no disponible | no disponible | no disponible | no disponible | 0,920 | 0,964 |
-| NeuralTrust small | no disponible | no disponible | no disponible | no disponible | 0,944 | 0,720 |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Horizon-Labs/prompt-injection-guard-small | 140,6M | 8.000 tokens | Clasificador binario directo + indirecto, multilingüe | Apache-2.0 | Hugging Face, ONNX, transformers.js |
+| protectai/deberta-v3-base-prompt-injection-v2 | No disponible en la información proporcionada | No disponible en la información proporcionada | Clasificador de prompt injection (referencia de convención de etiquetas) | No disponible en la información proporcionada | Hugging Face |
+| Horizon-Labs/prompt-injection-guard-base | No disponible en la información proporcionada | No disponible en la información proporcionada | Misma familia, tamaño base | Apache-2.0 | Hugging Face |
+| Horizon-Labs/prompt-injection-guard-large | No disponible en la información proporcionada | No disponible en la información proporcionada | Misma familia, tamaño large | Apache-2.0 | Hugging Face |
 
-Las cifras de los modelos alternativos proceden de la tabla de evaluacion del autor de este modelo, no de mediciones independientes. Los parametros, la licencia y el contexto de los modelos de terceros no se detallan en la informacion disponible. En defensa excesiva sobre NotInject, Prompt Guard 2 22M y Prompt Guard 2 86M superan a este modelo (0,994 y 0,953 frente a 0,861), mientras que el modelo base de 308 M de la misma familia tambien lo supera (0,909) a costa de mas del doble de parametros.
+La comparación con protectai/deberta-v3-base-prompt-injection-v2 se limita a la compatibilidad de etiquetas (`SAFE`/`INJECTION`) declarada por el autor; no se dispone de datos de rendimiento comparativo. Las variantes base y large de la misma familia se citan en la model card como alternativas de mayor tamaño, sin especificaciones publicadas en la información disponible.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo ni un sistema de mitigacion completo: solo clasifica. La respuesta al ataque (bloquear, sanear el contenido, reescribir el prompt) debe implementarla la aplicacion.
-- Delimitacion deliberada del alcance: las peticiones daninas sin intento de anulacion de instrucciones se etiquetan como benignas, igual que los documentos que contienen instrucciones para humanos o que *discuten* prompt injection. No sustituye a un clasificador de moderacion de contenido.
-- Tasa no despreciable de falsos positivos en textos con palabras disparadoras: 0,861 de exactitud en NotInject implica en torno a un 13,9 % de clasificaciones incorrectas en ese conjunto, muy por encima del 0,994 de Prompt Guard 2 22M.
-- Umbral fijo: la evaluacion usa 0,5 por defecto. En produccion conviene calibrar el umbral segun el coste relativo de falsos positivos y falsos negativos, y no existe una guia publicada de calibracion por dominio.
-- Limite de contexto de 8.000 tokens: los documentos mas largos requieren ventana deslizante con solapamiento, lo que multiplica el coste de computo y puede fragmentar una inyeccion entre dos ventanas.
-- Idiomas: aunque se declaran 20 idiomas etiquetados y datos sinteticos en 30, no se publican metricas desagregadas por idioma, por lo que el rendimiento real fuera del ingles no esta verificado.
-- Sesgo de datos sinteticos: los conjuntos de evaluacion marcados con asterisco proceden del mismo generador que los datos de entrenamiento, lo que infla los resultados. El autor lo advierte explicitamente y pide no usarlos como referencia de rendimiento real.
-- Riesgo de confianza mal calibrada: un clasificador puede devolver puntuaciones cercanas a 1,0 en textos que no son inyecciones (y viceversa); conviene tratar la salida como senal, no como decision definitiva, y registrar los casos dudosos.
-- Adopcion temprana: 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de terceros.
-- Licencia: Apache-2.0 permite uso comercial y modificacion, pero conviene verificar las licencias de los conjuntos de datos de entrenamiento si se redistribuye el modelo o se derivan versiones.
-- No se han publicado medidas de latencia, throughput ni consumo energetico, imprescindibles para dimensionar un guardrail en produccion.
+- Es un clasificador, no un generador: no mitiga por sí solo todos los ataques; debe combinarse con otras defensas (aislamiento de instrucciones, permisos mínimos de herramientas, validación de salidas).
+- Riesgo de falsos positivos y falsos negativos: aunque declara 96,2 % en NotInject y 99,5 % en OR-Bench-hard, son métricas sobre conjuntos concretos; el umbral debe calibrarse por aplicación (el ejemplo usa 0,5, pero es configurable).
+- Entradas de más de 8.000 tokens se truncan si no se aplica ventaneo; el truncado simple puede dejar pasar inyecciones situadas fuera de la ventana.
+- El entrenamiento usa datos sintéticos multilingües en 30 idiomas; el rendimiento real en idiomas distintos de los evaluados y en variedades dialectales no está cuantificado en la información disponible.
+- Posibles sesgos heredados de los datasets de entrenamiento (conversacionales y web como oasst2, aya_dataset, fineweb-edu, fineweb-2), no documentados en detalle.
+- No se documentan tasas de alucinación ni comportamiento adversario específico más allá de las métricas citadas; no hay datos sobre robustez frente a ataques adversariales optimizados contra el propio clasificador.
+- Licencia Apache-2.0 permite uso comercial, pero conviene verificar las licencias de los datasets subyacentes si se redistribuye el modelo derivado; la model card afirma entrenamiento solo con datos de licencia permisiva.
+- El tamaño del repo (4,3 GB) es mayor que el de los pesos del modelo, probablemente por artefactos adicionales; conviene verificar qué ficheros se descargan en despliegues con almacenamiento limitado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/prompt-injection-guard-small
-- Demo en el navegador: https://huggingface.co/spaces/Horizon-Labs/prompt-injection-guard
-- Variante de mayor tamano: https://huggingface.co/Horizon-Labs/prompt-injection-guard-base
+- Demo en Spaces: https://huggingface.co/spaces/Horizon-Labs/prompt-injection-guard
+- Variante base: https://huggingface.co/Horizon-Labs/prompt-injection-guard-base
+- Variante large: https://huggingface.co/Horizon-Labs/prompt-injection-guard-large
+- Código fuente (datos, entrenamiento, evaluación): https://github.com/horizon-ai-labs/agent-io-guards
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
-- Busqueda web: los resultados devueltos no guardan relacion con el modelo (contenido sobre el partido politico Horizons, Meta Horizon, la saga de videojuegos Horizon y el programa Horizon Europe). No se han localizado papers, blogs tecnicos ni repositorios adicionales en la busqueda realizada.
+- Modelo de referencia con convención de etiquetas compatible: https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2

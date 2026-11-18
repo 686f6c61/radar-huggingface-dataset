@@ -2,83 +2,101 @@
 
 ## Resumen
 
-El modelo **Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF** es un fine-tune de 40 mil millones de parámetros desarrollado por DavidAU, construido a partir de una fusión multi-etapa de varias versiones del modelo Qwen3.6-27B-Fable-Fusion-711 (también de DavidAU) y del modelo base Qwen3.6 40B (Deckard). El resultado es un modelo denso, orientado a uso general, con capacidades de razonamiento, generación de código, escritura creativa, roleplaying y visión (pipeline image-text-to-text). Se distribuye exclusivamente en formato GGUF, con cuantizaciones regulares y variantes MTP (Multi-Token Prediction) optimizadas con imatrix.
+El modelo `Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF` es un fine-tune y merge multi-etapa publicado por DavidAU sobre la base de la familia Qwen 3.6. Se construye a partir de la fusión de cinco versiones de los modelos Fable Fusion 711 y 717 (este último no publicado), más el modelo Deckard Qwen 3.6 40B, en un proceso de diez etapas con sub-etapas de ajuste y reparación posteriores a la expansión de parámetros (de 27B a 40B). El resultado es un modelo denso de aproximadamente 39.070 millones de parámetros, empaquetado en cuantizaciones GGUF tanto regulares como MTP (multi-token prediction) generadas con imatrix.
 
-La relevancia de este modelo radica en que, según su autor, alcanza niveles de inteligencia comparables a modelos propietarios (OpenAI, Claude) en cuantizaciones de 4 y 8 bits, manteniendo un rendimiento alto en benchmarks y añadiendo un modo "uncensored" (sin censura) mediante técnicas de abliteration. Está pensado para ejecutarse en hardware de consumo, ya que fue entrenado con Unsloth y optimizado para inferencia local.
+El objetivo declarado del autor es incrementar la inteligencia general y la resolución de problemas sin dañar el modelo base, manteniendo o elevando todos los benchmarks centrales y evitando prácticas de "benchmaxing". Las mejoras reportadas incluyen una reducción del 50% al 90% en el número de tokens de razonamiento, razonamiento de longitud variable automática según la dificultad de la tarea, mayor profundidad analítica en las respuestas y capacidades creativas reforzadas. Está orientado a escritura creativa, roleplay, razonamiento y casos de uso generales, con un enfoque "uncensored" y "abliterated" que elimina las restricciones de contenido del modelo original.
+
+La relevancia actual reside en que se presenta como un modelo de 40B ejecutable en hardware de consumo mediante cuantización GGUF, con soporte multimodal (pipeline `image-text-to-text`) y capacidades de razonamiento y pensamiento extendido. El repositorio acumula 7.036 descargas y 71 likes, con un tamaño total de 350,4 GB debido a la gran cantidad de cuantizaciones publicadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Qwen3.6 40B) |
-| Parametros totales | 40 mil millones (aproximado, segun nombre del modelo) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (no especificado en la informacion) |
-| Tipos de cuantizacion | GGUF: cuantizaciones regulares (incluye 4-bit y 8-bit) y variantes MTP Neo MAX Imatrix |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Arquitectura | Transformer denso (derivado de Qwen 3.6), con soporte MTP para decodificación multi-token |
+| Parametros totales | 39.072.596.736 (~39,07B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF regulares y GGUF MTP (imatrix), presumiblemente Q4 y Q8 entre otras; el autor menciona explícitamente 4-bit y 8-bit |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors no disponible en este repositorio) |
+| Formato de pesos | GGUF (safetensors para el modelo base; el repo publica cuantizaciones GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Transformer de Qwen3.6 40B, un modelo denso (no MoE) con capacidades multimodales (texto e imagen). El proceso de construcción fue una fusión multi-etapa: se fusionaron cinco versiones del modelo Qwen3.6-27B-Fable-Fusion-711 (incluyendo una versión no publicada, la 717) y posteriormente se fusionó con el modelo Qwen3.6 40B "Deckard". El resultado se sometió a un fine-tune multi-etapa con datasets propios (Polar-STRICT y F451-STRICT) y ajustes adicionales de "heretic" (eliminación de rechazos) y abliteration.
+El modelo es un transformer denso derivado de la familia Qwen 3.6, expandido de 27B a 40B parámetros mediante un proceso de fusión de múltiples checkpoints. La construcción consta de diez etapas con sub-etapas: cinco versiones de Fable Fusion 711 y 717 (esta última no publicada) se fusionaron y ajustaron conjuntamente, y posteriormente se fusionó el modelo Deckard Qwen 3.6 40B sobre el resultado. El autor describe el proceso como "multi-stage fine tune, multi-fine tune y multi-stage merge", con pruebas y benchmarks en cada etapa para verificar la calidad.
 
-El entrenamiento incluyó 10 etapas con sub-etapas, y se realizó verificación de calidad en cada paso mediante pruebas automáticas y humanas. Se aplicaron técnicas de "multi-stage tuning" y "multi-state merge" para preservar las capacidades del modelo base mientras se mejoraba el seguimiento de instrucciones y la resolución de problemas. El modelo incorpora un modo de razonamiento automático variable: solo genera tokens de pensamiento cuando la tarea lo requiere, reduciendo el número de tokens de thinking entre 1/10 y 1/2 respecto al modelo base.
+Los datos de entrenamiento combinan trazas ligeras de "Fable" (aportadas por armand0e), trazas de razonamiento/pensamiento de Claude Opus, el dataset interno F451 (DavidAU/F451-STRICT-Datasets) y datos de GPT-5 no razonador (Polaris, DavidAU/Polar-STRICT-Datasets). Se aplicaron además datasets internos adicionales en las fases de reparación y ajuste posteriores a la expansión. El modelo incorpora técnicas de "heretic'ing" y "abliteration" para eliminar restricciones de contenido, y se entrenó con Unsloth en hardware de consumo. No se especifica el número total de tokens de entrenamiento ni la composición exacta del dataset. La innovación destacable es la decodificación multi-token (MTP) en las cuantizaciones GGUF, que acelera la generación, junto con el razonamiento de longitud variable automática.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: resolución de problemas complejos con razonamiento paso a paso (thinking mode) y profundidad analítica.
-- Generación de código: soporte para tareas de programación, aunque no se especifica tool calling explícitamente (heredado de Qwen3.6).
-- Escritura creativa: ficción, narrativa, roleplaying, con detalle extremo en descripciones y desarrollo de personajes.
-- Visión: procesamiento de imágenes (pipeline image-text-to-text), aunque no se detallan las tareas específicas.
-- Multilingüe: inglés y chino (según frontmatter).
-- Modo "uncensored": sin filtros de contenido gracias a la abliteration, lo que permite generar respuestas sin restricciones de seguridad.
-- Razonamiento automático variable: ajusta la cantidad de razonamiento según la complejidad de la tarea.
-- Mejora en el seguimiento de instrucciones: mayor adherencia a las indicaciones del usuario.
+- Generación de texto general con razonamiento y pensamiento extendido (thinking mode).
+- Razonamiento de longitud variable: el modelo ajusta el número de tokens de pensamiento según la dificultad de la tarea, con reducciones del 50% al 90% respecto a versiones anteriores.
+- Escritura creativa y ficción: narrativa, cuentos, todos los géneros, roleplay y escritura de formato largo.
+- Generación de código (tag `coder` en el repositorio).
+- Capacidades matemáticas y de resolución de problemas (mencionadas en los objetivos de entrenamiento).
+- Procesamiento multimodal imagen-texto (pipeline `image-text-to-text`).
+- Capacidades multilingües limitadas a inglés y chino.
+- Análisis en profundidad y respuestas detalladas cuando la tarea lo requiere.
+- Sin censura: contenido "uncensored" y "abliterated" sin las restricciones del modelo base.
+- Soporte de tool calling / function calling: no disponible (no se menciona en la información).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no se detalla explícitamente).
 
 ## Casos de uso
 
-- **Asistente de programación local**: el modelo puede generar, revisar y explicar código en múltiples lenguajes. Su cuantización 4-bit permite ejecutarlo en GPUs de 24 GB, ideal para entornos de desarrollo sin conexión a la nube.
-- **Escritura creativa y roleplaying**: gracias a su entrenamiento con datasets de ficción y su modo "uncensored", es adecuado para generar narrativas largas, diálogos de personajes y mundos de juego. La ventana de contexto (aunque no especificada) probablemente sea amplia, permitiendo mantener hilos narrativos extensos.
-- **Análisis de datos y generación de informes**: el modelo destaca en "deep analytics" y puede procesar datos estructurados o texto para producir resúmenes detallados, informes técnicos o análisis de mercado.
-- **Prototipado rápido de chatbots**: al ser un modelo de 40B con buen rendimiento en instrucciones, puede servir como base para chatbots de atención al cliente o asistentes virtuales, desplegado con vLLM o llama.cpp.
-- **Generación de contenido multimodal**: al soportar entrada de imágenes, puede describir imágenes, generar texto alternativo o crear contenido a partir de capturas de pantalla.
-- **Investigación en IA sin censura**: para investigadores que necesitan estudiar comportamientos de modelos sin restricciones de seguridad, este modelo ofrece una alternativa abierta y ejecutable localmente.
+- Escritura creativa y narrativa de formato largo: el modelo está entrenado específicamente para ficción, cuentos y todos los géneros, con capacidad de mantener profundidad y detalle en textos extensos gracias a su ajuste para escritura creativa.
+- Roleplay y personajes conversacionales: el tag `roleplaying` y la ausencia de censura lo hacen adecuado para interacciones de personaje sin restricciones de contenido, con respuestas coherentes en conversaciones multi-turno.
+- Razonamiento y resolución de problemas complejos: el modo de pensamiento con longitud variable permite usar el modelo en tareas analíticas donde se requiere cadena de razonamiento, ajustando el coste computacional a la dificultad.
+- Análisis de documentos e imágenes: el pipeline `image-text-to-text` permite procesar entradas multimodales, útil para descripción de imágenes, extracción de información visual o análisis combinado de texto e imagen.
+- Generación de código en entornos de desarrollo: el tag `coder` indica capacidad de generación y asistencia de código, integrable en editores o pipelines de desarrollo.
+- Asistencia en investigación y análisis profundo: la capacidad declarada de "analítica en profundidad" y las respuestas detalladas lo orientan a tareas de síntesis, revisión y análisis de información extensa.
+- Despliegue local en hardware de consumo: las cuantizaciones GGUF (4-bit y 8-bit) permiten ejecutar un modelo de 40B en GPUs de consumo, adecuado para prototipado, investigación y uso personal sin infraestructura de servidor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la informacion disponible. El README menciona que el modelo supera al Qwen3.6 27B en 6 de 7 benchmarks y lo iguala en el séptimo, y que supera los 7 benchmarks del Qwen3.6-35B-A3B. Sin embargo, no se proporcionan las cifras concretas. Se recomienda consultar el repositorio del modelo base (Qwen3.6-27B-Fable-Fusion-711) para referencias de rendimiento, aunque no se garantiza que los resultados sean idénticos.
+El autor afirma que el modelo, tanto en 4-bit como en 8-bit, supera al Qwen 3.6 27B base en 6 de 7 benchmarks y lo iguala en el séptimo, y supera los 7 benchmarks del Qwen3.6-35B-A3B. Sin embargo, no se proporcionan en la información disponible las tablas concretas con los valores numéricos de MMLU, HumanEval, GSM8K, ARC-C ni el resto de benchmarks mencionados.
+
+No se han publicado resultados de benchmarks detallados en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: para cuantización 4-bit, aproximadamente 20-24 GB (40B × ~0.5 bytes/parámetro + overhead). Para 8-bit, alrededor de 40-48 GB.
-- **GPUs recomendadas**: RTX 3090/4090 (24 GB) para 4-bit; A100 40GB/80GB o RTX A6000 para 8-bit. El modelo fue construido en hardware de consumo, por lo que es viable en GPUs de gama alta para consumidores.
-- **Opciones de despliegue**: llama.cpp, Ollama, vLLM (con soporte GGUF), text-generation-webui. Las variantes MTP pueden mejorar la velocidad de decodificación.
-- **Latencia y throughput**: no disponibles. Se espera que la cuantización 4-bit ofrezca un throughput razonable en GPUs de 24 GB, pero no hay datos concretos.
+- VRAM estimada para inferencia: no disponible de forma explícita. Para un modelo denso de ~39B parámetros, las estimaciones habituales serían aproximadamente 20-24 GB en cuantización 4-bit y 40-45 GB en 8-bit, pero estos valores no están confirmados en la información proporcionada.
+- GPU recomendadas: no disponible en la información. El autor menciona que el modelo está construido para "hardware de consumo" y que se entrenó en hardware de consumo con Unsloth.
+- Compatibilidad con GPU de consumo: el autor afirma explícitamente que es un modelo para hardware de consumo, con cuantizaciones 4-bit y 8-bit que lo hacen viable en GPUs de gama alta de consumo (no se especifican modelos concretos).
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; las cuantizaciones MTP requieren soporte de decodificación multi-token en el runtime. No se mencionan vLLM ni TGI (orientados a safetensors).
+- Latencia y throughput: no disponibles. La inclusión de cuantizaciones MTP sugiere una mejora de velocidad frente a las GGUF regulares, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-40B-Fable-Fusion (este) | 40B | No disponible | Apache 2.0 | GGUF | Fine-tune "uncensored", visión, razonamiento variable |
-| Qwen3.6-27B-Fable-Fusion-711 | 27B | No disponible | Apache 2.0 | GGUF | Modelo base de los cores, 2.4M+ descargas |
-| Qwen3.6-35B-A3B | 35B (MoE, 3B activos) | No disponible | Apache 2.0 | Safetensors/GGUF | Modelo oficial de Qwen, eficiente en inferencia |
+| Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor (este modelo) | ~39,07B | no disponible | Apache 2.0 | GGUF | Fine-tune multi-etapa, uncensored, MTP |
+| Qwen3.6-27B-Fable-Fusion-711 (base del autor) | ~27B | no disponible | Apache 2.0 | GGUF | Modelo de origen; el 40B lo supera en 6/7 benchmarks según el autor |
+| Qwen 3.6 27B (base oficial) | ~27B | no disponible | no disponible | safetensors/GGUF | Modelo base oficial de Qwen |
+| Qwen3.6-35B-A3B | ~35B totales (A3B activos) | no disponible | no disponible | safetensors/GGUF | MoE; el autor afirma que el 40B lo supera en los 7 benchmarks |
 
-Según el autor, este modelo supera a ambos en benchmarks, pero no se aportan cifras. La comparativa se basa en las afirmaciones del README, no en datos verificados.
+No se dispone de datos numéricos de benchmarks para establecer una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- **Contenido sin censura**: al ser "uncensored" y "abliterated", el modelo puede generar contenido inapropiado, ofensivo o peligroso. No es adecuado para aplicaciones comerciales donde se requiera moderación de contenido.
-- **Riesgo de alucinaciones**: como todo modelo de lenguaje, puede inventar información, especialmente en tareas de razonamiento complejo o con datos no vistos.
-- **Idiomas limitados**: solo se declaran inglés y chino. El rendimiento en otros idiomas (incluido el español) no está garantizado.
-- **Contexto no especificado**: se desconoce la longitud máxima de contexto, lo que puede afectar a tareas que requieran ventanas largas.
-- **Licencia Apache 2.0**: permite uso comercial, pero el modelo incluye datasets propios (Polar-STRICT, F451-STRICT) cuyas licencias no se detallan. Se recomienda revisar los términos de esos datasets.
-- **Dependencia de cuantizaciones**: el rendimiento puede degradarse en cuantizaciones muy bajas (por debajo de 4-bit), aunque el autor afirma que los quants más bajos son excepcionales.
-- **Sin garantía de benchmarks**: los resultados mencionados no están publicados con números, por lo que no se puede verificar objetivamente el rendimiento.
+- Modelo "uncensored" y "abliterated": se han eliminado deliberadamente las restricciones de contenido, por lo que puede generar material sensible, ofensivo o inapropiado sin filtros. No es apto para aplicaciones de producción orientadas al público general sin capas adicionales de moderación.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa con aparente confianza; el modo de razonamiento extendido no elimina este riesgo.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no especificada en la información disponible, lo que impide evaluar su idoneidad para tareas de contexto largo.
+- Proceso de construcción complejo (diez etapas, múltiples fusiones y datasets propietarios) que dificulta la reproducibilidad y la auditoría del entrenamiento.
+- Las afirmaciones de rendimiento del autor ("nivel de inteligencia de modelos cerrados", superación de benchmarks) no están respaldadas con tablas numéricas verificables en la información disponible.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado sin censura puede conllevar responsabilidad legal según la jurisdicción y el uso.
+- Tamaño del repositorio de 350,4 GB: la descarga completa es costosa; conviene seleccionar únicamente la cuantización necesaria.
+- Soporte de tool calling y agentes no documentado, lo que limita su uso en pipelines agénticos sin validación previa.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF
-- Modelo base (Qwen3.6-27B-Fable-Fusion-711): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
-- Modelo de prueba 9B (The Defiant Fable): https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
-- Datasets: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets y https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
+- Modelo base (safetensors): https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored
+- Modelo de origen Qwen3.6-27B-Fable-Fusion-711: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Discusión y pruebas de terceros del modelo 27B: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions
+- Modelo de control Qwen3.5-9B-The-Defiant: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- FAQs del autor: https://huggingface.co/DavidAU/support
+- Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
+- Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

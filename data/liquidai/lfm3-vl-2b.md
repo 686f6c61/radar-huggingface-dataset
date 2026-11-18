@@ -2,102 +2,96 @@
 
 ## Resumen
 
-LFM3-VL-2B es un modelo de visión-lenguaje (VLM) desarrollado por LiquidAI, diseñado específicamente para comprensión visual en dispositivo (*on-device*). Combina el modelo de lenguaje LFM3 (1,73B parámetros) con un codificador visual propio de 164M parámetros y un proyector de 25M, sumando 1,92B parámetros totales. Acepta texto, imágenes y vídeo como entrada, este último muestreado a 2 fps, y procesa las imágenes a resolución nativa.
+LFM3-VL-2B es un modelo vision-lenguaje (VLM) desarrollado por Liquid AI, disenado especificamente para inferencia en dispositivo (edge) con un total de 1.918 millones de parametros. Combina el modelo de lenguaje LFM3-1.7B (1.730 millones de parametros) con un codificador visual propio de 164 millones de parametros y un proyector de 25 millones, permitiendo entrada conjunta de texto, imagen y video. Se distribuye bajo licencia LFM Open License v1.0 y soporta 16 idiomas, incluido el castellano.
 
-La novedad principal respecto a generaciones anteriores de la familia es la incorporación de entrada de vídeo, un modo de razonamiento explícito (*thinking*) que descompone el problema paso a paso antes de responder, y capacidades de razonamiento espacial y encarnado (*embodied*), orientadas a robótica y localización de objetos. El modelo forma parte de la familia LFM3, que incluye variantes base, texto, visión, audio, omni y decision.
+El modelo destaca por ser el primer miembro de la familia LFM con capacidad de comprension de video, ademas de incorporar un modo de razonamiento por pasos (thinking) que mejora el rendimiento en preguntas visuales complejas como matematicas, graficos y problemas de varios pasos. Tambien incluye razonamiento espacial y encarnado (embodied), orientado a aplicaciones roboticas donde es necesario localizar objetos y razonar sobre sus relaciones espaciales.
 
-Con 128K tokens de contexto (entrada más salida) y soporte de 16 idiomas, incluido el español, se posiciona como una alternativa compacta para tareas visuales en entornos con recursos limitados: lectura de documentos, descripción de vídeo, gráficos y problemas visuales de varios pasos. La licencia es la LFM Open License v1.0, que conviene revisar antes de un uso comercial.
+Su relevancia actual reside en la combinacion de un tamano reducido (apto para GPUs de consumo e incluso despliegue en dispositivo), capacidades multimodales (texto, imagen y video), modo thinking y una ventana de contexto que, segun la informacion disponible, no se especifica en la model card. La fecha de creacion del repositorio es octubre de 2026 y la ultima actualizacion noviembre de 2026, con 26.890 descargas y 289 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: LM LFM3 (13 convoluciones cortas con gating, 5 atenciones de ventana deslizante, 6 atenciones globales) + codificador visual de 14 capas + proyector de 25M |
-| Parametros totales | 1.918.181.888 (1,92B): 1,73B de lenguaje, 164M de visión, 25M de proyector |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 128K tokens (entrada + salida) |
-| Tipos de cuantizacion | No disponible en la información proporcionada |
-| Idiomas soportados | Inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso, polaco |
-| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, etiquetada como `other` en Hugging Face) |
-| Formato de pesos | Safetensors, con código personalizado (`custom_code`, requiere `trust_remote_code`) |
+| Arquitectura | Transformer hibrido con convoluciones y atencion (LFM3) + codificador visual propio |
+| Parametros totales | 1.918.181.888 (1,92B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
+| Licencia | LFM Open License v1.0 (lfm1.0) |
+| Formato de pesos | safetensors |
 
-Otros datos técnicos: vocabulario de 128.000 tokens, tamaño del repositorio de 3,9 GB, entrada de imagen a resolución nativa con parches de 16×16 y embeddings rotatorios 2D. Cada bloque de 2×2 parches se convierte en un único token de lenguaje, lo que reduce la longitud efectiva de la secuencia visual.
+Desglose de parametros segun la model card: 1,73B corresponden al modelo de lenguaje, 164M al codificador visual y 25M al proyector. El modelo de lenguaje consta de 24 capas: 13 convoluciones cortas con compuerta (gated short convolutions), 5 capas de atencion de ventana deslizante y 6 capas de atencion global. El codificador visual consta de 14 capas (la model card se trunca en "8 gated d...", por lo que el detalle completo de su composicion no esta disponible).
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un diseño híbrido en lugar de un transformer puro. El componente de lenguaje consta de 24 capas que alternan tres tipos de operación: 13 convoluciones cortas con compuerta (*gated short convolutions*), 5 capas de atención de ventana deslizante y 6 capas de atención global. Esta mezcla busca reducir el coste computacional y de memoria de la atención completa manteniendo el alcance efectivo sobre secuencias largas, algo relevante para el contexto de 128K tokens y para el despliegue en dispositivo.
+LFM3-VL-2B emplea una arquitectura hibrida para el componente de lenguaje: en lugar de un transformer convencional con atencion completa en todas las capas, combina 13 capas de convolucion corta con compuerta, 5 capas de atencion de ventana deslizante y 6 capas de atencion global. Este diseno reduce el coste computacional y de memoria en secuencias largas, lo que resulta coherente con su orientacion a inferencia en dispositivo. El codificador visual es de desarrollo propio (in-house) y consta de 14 capas, conectado al modelo de lenguaje mediante un proyector de 25M de parametros.
 
-El codificador visual tiene 14 capas: 8 convoluciones 2D *depthwise* con compuerta y 6 capas de atención bidireccional, con parches de 16×16 y embeddings rotatorios 2D. La conexión con el modelo de lenguaje se realiza mediante un proyector de 25M de parámetros. El resultado se entrega al LM como tokens, con un factor de compresión de 4 parches por token. Para vídeo, el muestreo es de 2 fps.
+El modelo parte del checkpoint base LiquidAI/LFM3-1.7B-Base y se ha sometido a un post-entrenamiento para convertirse en un modelo vision-lenguaje conversacional. La model card menciona explicitamente la incorporacion de un modo de razonamiento paso a paso (thinking) que el modelo activa antes de responder, lo que sugiere tecnicas de entrenamiento orientadas a razonamiento (posiblemente RL o SFT con cadenas de pensamiento, aunque el detalle no se especifica). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-El checkpoint es un modelo post-entrenado sobre LFM3-1.7B-Base. La model card menciona el modo *thinking* (razonamiento paso a paso antes de responder), lo que implica algún tipo de entrenamiento orientado a razonamiento, pero no se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF, DPO u otras técnicas de alineamiento.
+La innovacion tecnica mas destacable es la incorporacion de video como modalidad de entrada, algo nuevo en la familia LFM, junto con el razonamiento espacial y encarnado orientado a robotica. No se mencionan tecnicas como decodificacion especulativa o atencion lineal en la informacion disponible.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con 128K tokens de contexto compartido entre entrada y salida.
-- Comprensión de imágenes a resolución nativa, sin reescalado forzado a una resolución fija.
-- Comprensión de vídeo a 2 fps: permite hacer preguntas sobre clases grabadas, recorridos filmados con el móvil o fragmentos de cámaras.
-- Modo *thinking*: razonamiento explícito paso a paso antes de la respuesta final, útil en problemas visuales complejos como matemáticas, gráficos y tareas de varios pasos.
-- Razonamiento espacial y encarnado: localización de objetos y razonamiento sobre sus relaciones posicionales, planteado como base para robótica.
-- Multilingüismo en 16 idiomas, con español incluido en la lista oficial.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso autónomo: no disponible en la información proporcionada (el modo *thinking* es razonamiento interno, no necesariamente orquestación de agentes).
-- Capacidades de audio: no disponibles en esta variante (la familia LFM3 tiene variantes de audio y omni separadas).
+- Comprension de imagenes: el modelo acepta imagenes como entrada y responde preguntas sobre su contenido.
+- Comprension de video: primera incorporacion de video en la familia LFM; permite formular preguntas sobre grabaciones, clases, recorridos filmados o clips de camaras.
+- Modo thinking: razonamiento paso a paso antes de responder, con mejora en preguntas visuales dificiles (matematicas, graficos, problemas multi-paso).
+- Razonamiento espacial y encarnado: localizacion de objetos y razonamiento sobre sus relaciones espaciales, orientado a robotica.
+- Generacion de texto conversacional multi-turno.
+- Capacidades multilingues en 16 idiomas: ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso y polaco.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: el modo thinking habilita razonamiento multi-paso, pero no se detalla soporte de agentes.
+- Capacidades de audio: no disponibles en este modelo (la familia LFM incluye modelos de audio y omni por separado).
 
 ## Casos de uso
 
-- **Lectura de documentos y formularios en el dispositivo**: el modelo procesa la imagen a resolución nativa y responde preguntas sobre el contenido, lo que permite extraer campos de facturas, tickets o informes sin enviar el documento a un servidor externo.
-- **Asistencia a personas con discapacidad visual**: descripción de escenas y respuesta a preguntas sobre el entorno en tiempo real, aprovechando el tamaño reducido y la orientación *on-device* para funcionar sin conectividad.
-- **Análisis de vídeo de cámara de vigilancia o Industrial**: con muestreo a 2 fps se pueden resumir fragmentos, detectar eventos concretos o responder preguntas sobre lo ocurrido en una grabación sin necesidad de un pipeline de visión separado.
-- **Razonamiento sobre gráficos y tablas**: el modo *thinking* está pensado para preguntas de varios pasos sobre gráficos económicos, dashboards o figuras de artículos científicos, donde una respuesta directa suele fallar.
-- **Robótica y automatización física**: las capacidades de razonamiento espacial permiten localizar objetos y describir relaciones de posición, útiles como módulo de percepción semántica en brazos robóticos o agentes móviles.
-- **Soporte técnico con capturas de pantalla**: el usuario adjunta una captura de un error o de una interfaz y el modelo interpreta la imagen junto con el historial de la conversación, manteniendo el contexto gracias a la ventana de 128K.
-- **Accesibilidad y educación**: explicar diagramas, ejercicios de geometría o figuras de un libro de texto paso a paso, con la ventaja de que el modelo cabe en hardware de consumo y puede ejecutarse localmente en un aula o en un portátil.
+- Asistencia visual en dispositivo: el modelo puede procesar imagenes capturadas por la camara de un movil o dispositivo embebido y responder preguntas sobre ellas, gracias a sus 1,92B de parametros que permiten inferencia local sin depender de la nube.
+- Analisis de video para vigilancia o monitorizacion: permite formular preguntas sobre clips de camaras de seguridad o grabaciones, aprovechando la nueva capacidad de entrada de video para detectar eventos o describir escenas.
+- Robotica y navegacion: el razonamiento espacial y encarnado permite localizar objetos y razonar sobre su disposicion relativa, lo que sirve como base para tareas de manipulacion o navegacion en entornos fisicos.
+- Educacion y tutoria visual: un estudiante puede subir una foto de un problema de matematicas o un grafico y el modelo, con modo thinking, razona paso a paso para explicar la solucion.
+- Accesibilidad: descripcion de imagenes y videos para personas con discapacidad visual, ejecutandose localmente en el dispositivo para preservar la privacidad.
+- Analisis de documentos y graficos: interpretacion de tablas, diagramas y figuras en informes, con razonamiento multi-paso para extraer conclusiones.
+- Asistencia en campo: tecnicos que fotografian equipos o grabaciones de procedimientos y consultan al modelo sobre el estado o los pasos a seguir, sin conexion a internet.
+- Atencion al cliente multimodal: gestion de conversaciones donde el usuario adjunta capturas de pantalla o fotos de productos, con soporte en 16 idiomas incluido el espanol.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card proporcionada está truncada y no incluye tablas de MMLU, HumanEval, GSM8K ni métricas específicas de visión (MMMU, DocVQA, VideoMME u otras), por lo que no se presentan cifras que no puedan verificarse.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada en fp16/bf16**: alrededor de 3,8-4 GB solo para pesos, más caché KV y activaciones; el repositorio completo ocupa 3,9 GB.
-- **VRAM estimada en int8**: aproximadamente 2 GB para pesos, más overhead de inferencia.
-- **VRAM estimada en int4**: alrededor de 1-1,2 GB para pesos, si se dispone de una build cuantizada (no confirmada en la información disponible).
-- **GPU de consumo**: por tamaño, cabe con holgura en tarjetas de 8-12 GB (RTX 3060, RTX 4060, RTX 4070) en fp16, y en GPUs integradas o de 4-6 GB con cuantización agresiva. El contexto de 128K incrementa de forma notable el consumo de caché KV, así que conviene limitar la longitud efectiva en entornos con poca memoria.
-- **GPU de datacenter**: A100, H100, L40S o similares para despliegues con concurrencia alta o contextos largos; el modelo es lo bastante pequeño como para replicar muchas instancias por GPU.
-- **Despliegue**: la librería indicada es `transformers`, y el modelo requiere `trust_remote_code=True` por el código personalizado. No se confirma en la información disponible soporte de vLLM, llama.cpp, Ollama o TGI; al ser una arquitectura híbrida con convoluciones y atención mixta, la compatibilidad con motores de inferencia genéricos no está garantizada.
-- **Latencia y throughput**: no disponibles en la información proporcionada.
-- **Otras vías**: LiquidAI ofrece API en su consola y playground, además de los pesos abiertos.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamano, un modelo de 1,92B en FP16 requiere aproximadamente 3,8 GB de pesos, mas overhead de activaciones y cache KV; en cuantizacion de 8 bits rondaria los 2 GB y en 4 bits alrededor de 1 GB, aunque estos valores no estan confirmados por el autor.
+- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, el modelo es apto para GPUs de consumo como RTX 3060, RTX 4060, RTX 4090, asi como para GPUs de datacenter (A100, H100) si se busca mayor throughput.
+- Cabe en GPU de consumo: si, por su tamano de 1,92B es probable que quepa en la mayoria de GPUs de consumo actuales, aunque la VRAM exacta depende de la cuantizacion y del procesamiento de video (que incrementa el coste de activaciones).
+- Opciones de despliegue: la model card indica compatibilidad con transformers y con endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Vídeo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B | 1,92B | 128K | Sí (2 fps) | LFM Open License v1.0 | Pesos en Hugging Face + API |
-| Qwen2.5-VL-3B | ~3,75B | 128K (dato público, no verificado aquí) | Sí | Apache 2.0 (según versión) | Pesos en Hugging Face |
-| SmolVLM2-2.2B | ~2,2B | No disponible en esta información | Sí | Apache 2.0 (según variante) | Pesos en Hugging Face |
-| Gemma 3 (4B) | ~4B | 128K (dato público, no verificado aquí) | No | Gemma Terms | Pesos en Hugging Face |
+| LFM3-VL-2B | 1,92B | No disponible | Texto, imagen, video | LFM Open License v1.0 | Hugging Face, API y playground de Liquid AI |
+| LFM3-1.7B (texto) | 1,73B | No disponible | Texto | LFM Open License v1.0 | Hugging Face |
+| Otros VLM de ~2B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-Los datos de los modelos competidores no provienen de la información proporcionada en esta búsqueda y deben verificarse en sus respectivas model cards antes de tomar una decisión. No se dispone de comparaciones de rendimiento verificadas entre LFM3-VL-2B y estas alternativas.
+La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos competidores de la misma categoria, por lo que no es posible establecer una comparativa cuantitativa fiable. El unico comparable directo documentado es el modelo de lenguaje LFM3-1.7B, del que este VLM deriva y al que anade el codificador visual y el proyector.
 
 ## Limitaciones y advertencias
 
-- **Resultados de benchmarks no disponibles**: no se puede evaluar su calidad relativa frente a alternativas sin datos publicados; conviene hacer una evaluación propia sobre el caso de uso concreto.
-- **Riesgo de alucinación**: como cualquier VLM de 1,9B, puede describir objetos o texto inexistentes en la imagen, especialmente en documentos densos, gráficos con muchas etiquetas o fotogramas de vídeo de baja calidad.
-- **Licencia no estándar**: la LFM Open License v1.0 no es una licencia OSI ni Apache/MIT. Es imprescindible leer el archivo LICENSE del repositorio para conocer las condiciones de uso comercial, los umbrales de facturación o las restricciones de despliegue antes de integrarlo en un producto.
-- **Dependencia de código personalizado**: requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; en entornos de producción conviene auditar y fijar una revisión concreta del repositorio.
-- **Compatibilidad de herramientas limitada**: no se confirma soporte en vLLM, llama.cpp u Ollama, lo que puede complicar el despliegue y el *batching* a gran escala.
-- **Tool calling y agentes no confirmados**: no hay información sobre function calling ni sobre orquestación multi-paso con herramientas; no debe asumirse su disponibilidad.
-- **Idiomas**: los 16 idiomas están listados por el autor, pero el rendimiento relativo por idioma no está documentado; en español y otras lenguas distintas del inglés el comportamiento puede degradarse, sobre todo en OCR de texto manuscrito o de baja resolución.
-- **Contexto visual costoso**: aunque el modelo comprime 4 parches por token, imágenes de alta resolución y vídeos a 2 fps consumen contexto rápidamente; con 128K compartidos entre entrada y salida, un vídeo largo puede agotar la ventana.
-- **Resultados de la búsqueda web no relevantes**: las consultas devolvieron páginas de proveedores de proxies residenciales sin relación con el modelo, por lo que no aportan información técnica adicional ni enlaces válidos.
+- Sesgos conocidos: no documentados en la informacion disponible; como todo modelo entrenado con datos web, es probable que herede sesgos de esos datos, pero no hay confirmacion oficial.
+- Riesgo de alucinacion: no cuantificado en la model card; el modo thinking puede reducir errores en tareas visuales complejas, pero no elimina el riesgo de respuestas incorrectas, especialmente en texto dentro de imagenes o videos de baja calidad.
+- Limitaciones de contexto o idioma: la longitud de contexto no se especifica, lo que impide evaluar el limite para conversaciones largas o videos extensos. Aunque soporta 16 idiomas, el rendimiento relativo por idioma no esta documentado.
+- Restricciones de licencia: la licencia LFM Open License v1.0 es una licencia "other" con terminos propios; es imprescindible revisar el archivo LICENSE antes de un uso comercial, ya que puede incluir restricciones de uso, requisitos de atribucion o limitaciones de despliegue.
+- Caveats para produccion: el modelo usa codigo personalizado (tag custom_code), lo que puede requerir versiones especificas de transformers y complicar el despliegue estandar. La model card esta truncada en la descripcion del codificador visual, por lo que faltan detalles tecnicos. No se confirma soporte de motores de inferencia populares como vLLM o llama.cpp, lo que puede limitar el throughput en produccion.
+- Procesamiento de video: al ser una capacidad nueva, el coste computacional y de memoria del procesamiento de video puede ser significativamente mayor que el de imagen unica, aunque no se aportan cifras.
 
 ## Enlaces
 
-- [Modelo en Hugging Face: LiquidAI/LFM3-VL-2B](https://huggingface.co/LiquidAI/LFM3-VL-2B)
-- [Modelo base: LiquidAI/LFM3-1.7B-Base](https://huggingface.co/LiquidAI/LFM3-1.7B-Base)
-- [Blog de lanzamiento de la familia LFM3](https://www.liquid.ai/blog/lfm3)
-- [Documentación de LiquidAI](https://docs.liquid.ai/lfm/getting-started/welcome)
-- [Playground de LiquidAI](https://playground.liquid.ai/)
-- [Consola / API de LiquidAI](https://console.liquid.ai/dashboard)
-- [Colección LFM3 en Hugging Face](https://huggingface.co/collections/LiquidAI/lfm3)
-- [Licencia LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/main/LICENSE)
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B
+- Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
+- Modelo de lenguaje LFM3-1.7B: https://huggingface.co/LiquidAI/LFM3-1.7B
+- Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3
+- Documentacion de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
+- Playground: https://playground.liquid.ai/
+- Consola / API: https://console.liquid.ai/dashboard
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

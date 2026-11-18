@@ -2,74 +2,85 @@
 
 ## Resumen
 
-Wan-Dancer es un reempaquetado del modelo Wan2.2-Dancer-14B, desarrollado originalmente por Wan-AI (Alibaba) y adaptado por Comfy-Org para su uso directo en ComfyUI. El nombre sugiere que se trata de un modelo especializado en la generación de secuencias de baile o movimiento coreografiado, probablemente a partir de audio o de condiciones de pose. El repositorio contiene dos archivos de pesos en formato `safetensors` con cuantización `fp8_scaled`: uno para el modelo "global" y otro para el "local", lo que indica una arquitectura de dos etapas o de control fino sobre el movimiento.
+Wan-Dancer es un repositorio de redistribución de pesos para ComfyUI del modelo Wan2.2-Dancer-14B, desarrollado originalmente por Wan-AI. No se trata de un modelo nuevo, sino de un reempaquetado de los archivos del modelo base en formato single-file con cuantización FP8 escalada, listo para colocarse en el directorio `models/diffusion_models/` de ComfyUI. El repositorio lo mantiene Comfy-Org, el equipo detrás de la interfaz ComfyUI, y su función es facilitar el uso del modelo generativo de vídeo dentro de ese ecosistema sin necesidad de convertir pesos manualmente.
 
-La model card oficial es extremadamente escueta: solo proporciona instrucciones de instalación y no incluye detalles técnicos sobre arquitectura, entrenamiento o capacidades. Toda la información técnica debe buscarse en el repositorio original de Wan-AI, que no está disponible en los datos proporcionados. Aun así, por el nombre y el tamaño (14B parámetros), se puede inferir que es un modelo de difusión para video, probablemente basado en una arquitectura de transformer 3D, similar a otros modelos de la familia Wan2.2.
+El modelo base es un modelo de difusión para generación de vídeo de 14.000 millones de parámetros orientado a la síntesis de movimiento de baile a partir de audio (music-to-dance), según se deduce del workflow publicado "Wan Dancer: Music to Dance". El repositorio incluye dos variantes de pesos, una etiquetada como `global` y otra como `local`, ambas con cuantización FP8 escalada, lo que sugiere una separación entre componentes de atención global y local propia de la arquitectura Wan2.2.
 
-La relevancia de este modelo radica en su integración con ComfyUI, lo que permite a los usuarios generar vídeo de baile de alta calidad sin necesidad de escribir código, utilizando nodos visuales. La licencia Apache-2.0 facilita su uso comercial y su modificación.
+La relevancia actual del repositorio reside en su integración directa con ComfyUI: al estar empaquetado como `diffusion-single-file`, los usuarios pueden descargar los pesos y ejecutar el workflow sin pasos intermedios de conversión. Con 41.284 descargas y licencia Apache 2.0, es una opción accesible para experimentación con generación de vídeo en entornos de código abierto.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (probablemente difusión de video basada en transformer 3D) |
-| Parametros totales | 14B (según el nombre del modelo) |
+| Arquitectura | modelo de difusión (base Wan2.2-Dancer-14B); detalles internos no disponibles |
+| Parametros totales | 14B (según nombre del modelo base) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | fp8_scaled (según los nombres de archivo) |
+| Longitud de contexto | no disponible (modelo de difusión, no aplica ventana de contexto textual) |
+| Tipos de cuantizacion | FP8 escalada (`fp8_scaled`), en variantes global y local |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (single-file para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. La model card de Comfy-Org solo indica que se trata de un reempaquetado de los archivos del modelo original de Wan-AI. Para conocer la arquitectura exacta (por ejemplo, si es un modelo de difusión con atención espaciotemporal, si utiliza un codificador de audio para sincronizar el baile, o si emplea un mecanismo de control de poses), es necesario consultar el repositorio original de Wan-AI, que no está incluido en la información proporcionada.
+No se dispone de información detallada sobre la arquitectura interna en la información proporcionada. El modelo base es Wan-AI/Wan2.2-Dancer-14B, un modelo de difusión de 14.000 millones de parámetros. El reempaquetado de Comfy-Org separa los pesos en dos archivos, `wan2.2_dancer_14b_global_fp8_scaled.safetensors` y `wan2.2_dancer_14b_local_fp8_scaled.safetensors`, lo que apunta a una arquitectura con componentes de procesamiento global y local diferenciados, habitual en modelos de difusión para vídeo que combinan atención a nivel de secuencia completa con procesamiento por bloques o ventanas.
 
-Dado que el modelo se llama "Dancer" y tiene 14B parámetros, es razonable suponer que sigue la línea de los modelos Wan2.2 de Alibaba, que utilizan arquitecturas de difusión latente para vídeo con componentes de control de movimiento. Sin embargo, estos detalles no están confirmados en los datos disponibles.
+No se han proporcionado datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá de la cuantización FP8 escalada aplicada en el reempaquetado. El tamaño del repositorio es de 36,7 GB, coherente con dos variantes FP8 de un modelo de 14B más posibles componentes auxiliares.
 
 ## Capacidades
 
-- Generación de vídeo de baile: el nombre del modelo indica que está especializado en generar secuencias de movimiento coreografiado, probablemente sincronizadas con audio o con condiciones de pose.
-- Integración con ComfyUI: los archivos están preparados para colocarse en las carpetas `diffusion_models` de ComfyUI, lo que permite su uso mediante nodos visuales.
-- Dos etapas de generación: la presencia de archivos "global" y "local" sugiere que el modelo puede operar en dos niveles (por ejemplo, generación global de la escena y refinamiento local del movimiento), aunque no se especifica el flujo exacto.
-- No se confirman capacidades adicionales como tool calling, razonamiento multimodal o soporte de agentes, ya que no hay información al respecto.
+- Generación de vídeo a partir de audio: el workflow publicado se denomina "Music to Dance", lo que indica síntesis de movimiento de baile condicionada por música.
+- Generación de vídeo de alta resolución y varios segundos de duración, según las capacidades típicas de la familia Wan2.2 (no confirmado explícitamente en la información disponible).
+- Integración nativa con ComfyUI mediante nodos y plantillas de workflow.
+- Ejecución con pesos cuantizados a FP8 para reducir requisitos de VRAM.
+- No se documenta soporte de tool calling, agentes, razonamiento multi-step ni capacidades multilingües, al ser un modelo generativo de vídeo y no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Producción de animación y vídeo: los creadores pueden generar secuencias de baile para personajes animados, ahorrando tiempo en captura de movimiento o animación manual. El modelo se integraría en un pipeline de ComfyUI para producir clips de vídeo a partir de una condición inicial (por ejemplo, una pose o una pista de audio).
-- Prototipado de coreografías: coreógrafos y diseñadores pueden usar el modelo para visualizar ideas de movimiento antes de llevarlas a producción real, generando vídeos de referencia rápidos.
-- Contenido para redes sociales: generación de vídeos cortos de baile para plataformas como TikTok o Instagram, con la posibilidad de ajustar el estilo mediante prompts o condiciones.
-- Investigación en generación de movimiento: el modelo puede servir como base para estudiar la generación de vídeo condicionada por audio o por poses, gracias a su licencia Apache-2.0 que permite su modificación.
-- Educación y demostraciones: en entornos educativos, se puede utilizar para ilustrar conceptos de generación de vídeo con IA, mostrando cómo un modelo de difusión produce movimiento coherente.
-- Integración en herramientas de VFX: los estudios de efectos visuales pueden emplear el modelo para generar capas de movimiento de baile que luego se combinan con otros elementos en postproducción.
+- Generación de vídeos de baile a partir de una pista musical: el workflow "Music to Dance" permite introducir audio y obtener una animación sincronizada, adecuado para prototipos creativos y contenido para redes sociales.
+- Previsualización de coreografías: estudios de danza pueden generar borradores animados antes de rodar, reduciendo costes de producción.
+- Creación de contenido para videojuegos: generación de animaciones de personajes no jugadores con movimiento rítmico a partir de bandas sonoras.
+- Producción audiovisual independiente: realizadores sin equipo de motion capture pueden obtener clips de baile generados para inserts o fondos.
+- Investigación en generación de vídeo condicionada por audio: el repositorio facilita reproducir el modelo base en ComfyUI para experimentos de comparación y ajuste fino.
+- Educación y demostraciones técnicas: talleres sobre modelos de difusión pueden usar el workflow preconfigurado para mostrar el pipeline completo de audio a vídeo.
+- Automatización de contenido musical: generación de vídeos promocionales para lanzamientos de canciones con un pipeline reproducible en ComfyUI.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de Comfy-Org no incluye métricas de rendimiento, y no se proporcionan datos del repositorio original. Por tanto, no es posible comparar objetivamente este modelo con alternativas en tareas como generación de vídeo, sincronización de audio o calidad de movimiento.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Almacenamiento: el repositorio ocupa 36.7 GB, por lo que se necesitará al menos ese espacio en disco para descargar los pesos.
-- VRAM estimada: no disponible. Dado que el modelo tiene 14B parámetros y los archivos están en fp8, se puede estimar que la inferencia requerirá al menos 16-20 GB de VRAM, pero este dato no está confirmado.
-- GPU recomendadas: no disponible. Modelos de este tamaño suelen ejecutarse en GPUs de gama alta como RTX 4090, A100 o H100, pero no hay especificación oficial.
-- Opciones de despliegue: al estar empaquetado para ComfyUI, el despliegue natural es a través de esa interfaz. También podría usarse con otros frameworks que soporten safetensors y difusión de vídeo, pero no se indica compatibilidad con vLLM, llama.cpp u otros.
+- VRAM estimada: los pesos están en FP8, por lo que el modelo de 14B ocupa aproximadamente 14 GB solo en pesos; con activaciones y buffers de difusión para vídeo, se estima un mínimo práctico de 16-24 GB de VRAM (estimación, no confirmada en la información disponible).
+- GPU recomendadas: no disponible en la información proporcionada; por el tamaño, se requieren GPUs de gama alta (RTX 4090, A100, H100) para ejecución cómoda.
+- ¿Cabe en GPU de consumo? Probablemente en RTX 4090 (24 GB) con FP8, aunque no está confirmado; en GPUs de 8-12 GB requeriría offloading o cuantizaciones adicionales no incluidas en este repositorio.
+- Opciones de despliegue: ComfyUI es el entorno objetivo documentado; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión de vídeo).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El modelo pertenece a la familia Wan2.2 de Alibaba, que incluye otros modelos como Wan2.2-TI2V-14B (texto a vídeo) o Wan2.2-Audio, pero no se conocen sus especificaciones exactas ni sus resultados. Sin datos de benchmarks ni de arquitectura, no es posible comparar con alternativas como Sora, Runway Gen-3 o modelos open source como Open-Sora o CogVideoX. Se recomienda consultar el repositorio original de Wan-AI para obtener una comparativa fundamentada.
+| Modelo | Parámetros | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Wan-Dancer (este repo) | 14B | safetensors FP8 single-file | Apache 2.0 | Hugging Face, ComfyUI |
+| Wan-AI/Wan2.2-Dancer-14B | 14B | pesos originales (formato no disponible) | no disponible en esta ficha | Hugging Face |
+| Otros modelos de difusión de vídeo de la familia Wan2.2 | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento comparativo ni de especificaciones de alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Información técnica insuficiente: la model card no proporciona detalles sobre arquitectura, entrenamiento, sesgos o limitaciones. Los usuarios deben asumir riesgos al usar el modelo sin conocer su comportamiento en escenarios específicos.
-- Posibles sesgos en el movimiento generado: al ser un modelo entrenado con datos de vídeo, es probable que reproduzca sesgos presentes en los datos de entrenamiento (por ejemplo, estilos de baile dominantes o movimientos asociados a ciertos cuerpos). No hay información sobre mitigaciones.
-- Riesgo de alucinación visual: como todo modelo generativo, puede producir movimientos incoherentes o artefactos visuales, especialmente en condiciones de entrada poco comunes.
-- Dependencia de ComfyUI: el empaquetado está pensado para ComfyUI, por lo que su uso fuera de este entorno puede requerir adaptaciones no documentadas.
-- Licencia Apache-2.0: permite uso comercial y modificación, pero no se especifican restricciones adicionales sobre el contenido generado (por ejemplo, si el modelo puede generar contenido con derechos de autor).
-- Sin soporte oficial: al ser un reempaquetado de la comunidad, no hay garantía de mantenimiento o actualizaciones.
+- Es un reempaquetado, no un modelo original: cualquier limitación del modelo base Wan2.2-Dancer-14B se hereda sin cambios.
+- La cuantización FP8 puede introducir pérdida de calidad frente a los pesos originales en precisión completa.
+- No se documentan sesgos conocidos, pero los modelos de difusión de vídeo entrenados con datos web pueden reproducir estereotipos de movimiento, género o etnia.
+- Riesgo de artefactos y alucinaciones visuales en movimientos complejos o audio ambiguo.
+- No se especifican idiomas soportados ni limitaciones de contexto, al no ser un modelo de lenguaje.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base y de los datasets de entrenamiento originales.
+- El repositorio depende de ComfyUI y de la estructura de directorios indicada; no es un paquete autónomo.
+- No hay información sobre requisitos mínimos oficiales ni sobre soporte de hardware específico.
 
 ## Enlaces
 
-- Repositorio de Hugging Face de Comfy-Org: https://huggingface.co/Comfy-Org/Wan-Dancer
-- Repositorio original del modelo (referenciado en la model card): https://huggingface.co/Wan-AI/Wan2.2-Dancer-14B
-- No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Wan-Dancer
+- Modelo base: https://huggingface.co/Wan-AI/Wan2.2-Dancer-14B
+- Workflow "Wan Dancer: Music to Dance": https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan_dancer.json
+- Repositorio ComfyUI: https://github.com/Comfy-Org/ComfyUI

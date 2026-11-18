@@ -255,7 +255,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2454,
+  "downloads_30d": 2425,
   "trending_score": 0,
   "parameters": 321323031390,
   "parameters_human": "321.32B",
@@ -276,31 +276,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Krim – Wikipedia",
-      "url": "https://sv.wikipedia.org/wiki/Krim",
-      "snippet": "Den geopolitiska enheten Krim är de jure en autonom parlamentarisk republik inom Ukraina, men de facto styrs Krim som två olika …"
-    },
-    {
-      "title": "Förundersökningsprotokoll och domar online - Krimfup.se | Krimfup.se",
-      "url": "https://www.krimfup.se/",
-      "snippet": "Sep 10, 2026 · Få tillgång till förundersökningsprotokoll och domar i brottmål online med Krimfup.se. Officiella …"
-    },
-    {
-      "title": "Republiken Krim – Wikipedia",
-      "url": "https://sv.wikipedia.org/wiki/Republiken_Krim",
-      "snippet": "Det saknas aktuell demografisk information om Krim, men många ukrainare och krimtatarer har lämnat Krim och ryssar har flyttat till …"
-    },
-    {
-      "title": "Krim - Aftonbladet",
-      "url": "https://www.aftonbladet.se/nyheter/krim",
-      "snippet": "2 days ago · Det senaste om Krim – nyheter, artiklar, video och poddar från Aftonbladet."
-    },
-    {
-      "title": "Crimea - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Crimea",
-      "snippet": "May 2015 satellite image of the Crimean Peninsula Crimea[a] (/ kraɪˈmiːə / ⓘ kry-MEE-ə) is a peninsula in Eastern Europe, on the …"
-    }
-  ]
+  "sources": []
 }

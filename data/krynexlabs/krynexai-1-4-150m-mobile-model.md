@@ -2,57 +2,53 @@
 
 ## Resumen
 
-KrynexAI 1.4 es un modelo de lenguaje de tipo decoder-only basado en la arquitectura Llama, publicado por KrynexLabs bajo el identificador `KrynexLabs/KrynexAI-1.4-150M-Mobile-Model`. Con aproximadamente 150 millones de parametros y un peso declarado de unos 270 MB en bfloat16, esta disenado explicitamente para inferencia rapida y despliegue en dispositivos locales (telefonos, portatiles de gama baja y sistemas embebidos). Su ventana de contexto es de 8.192 tokens, un valor poco habitual en modelos de este tamano.
+KrynexAI 1.4 es un modelo de lenguaje causal de tipo decoder-only, con arquitectura basada en Llama, desarrollado por KrynexLabs a partir de SmolLM2-135M de Hugging Face. Está pensado como un modelo base ultraligero de aproximadamente 150 millones de parámetros (134.515.008 reales según los pesos en safetensors), orientado a generación de texto de alta eficiencia, inferencia rápida y despliegue en dispositivos locales o de borde (*on-device*, *edge-ai*). Su ventana de contexto declarada es de 8.192 tokens y los pesos ocupan unos 270 MB en precisión bfloat16.
 
-El modelo se presenta como un modelo base (etiqueta `base-model`) entrenado sobre una mezcla de "multiples billones de tokens" de contenido web, codigo y datos educativos, segun la model card del autor. La unica modalidad soportada es texto y el unico idioma declarado es el ingles. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo se presenta como una alternativa compacta para entornos con recursos limitados: navegador mediante transformers.js, móviles, sistemas embebidos o CPU sin GPU dedicada. El repositorio incluye pesos en safetensors, ONNX y GGUF, lo que facilita su integración con distintos runtimes de inferencia. La model card menciona un entrenamiento sobre una mezcla de datos web, código y contenido educativo, aunque no se detallan cifras verificables de tokens ni la composición exacta del dataset.
 
-Su relevancia actual reside en la categoria de modelos ultracompactos para edge computing: permite ejecutar generacion de texto en hardware sin GPU dedicada, con un coste de memoria muy bajo. No obstante, conviene tener presente que se trata de un modelo base de 150M de parametros, con capacidades de razonamiento limitadas y con unos resultados de benchmarks que lo situan muy por debajo de modelos pequenos mas recientes de la misma franja.
+La relevancia de esta ficha radica en su carácter de modelo base pequeño con licencia Apache-2.0, lo que permite uso comercial sin restricciones significativas. No obstante, conviene señalar que los resultados publicados en benchmarks son modestos y coherentes con su tamaño, y que el propio autor advierte de que el repositorio puede contener archivos desactualizados o inexactos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only basado en Llama |
-| Parametros totales | ~150 millones |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer decoder-only basada en Llama |
+| Parametros totales | 134.515.008 (~150M declarados) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 8.192 tokens |
-| Tipos de cuantizacion | No disponible; la model card solo menciona `bfloat16` y `fp16` |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | No disponible; se distribuye para `transformers` (PyTorch). No se mencionan safetensors ni GGUF |
+| Tipos de cuantizacion | bfloat16, fp16; pesos GGUF y ONNX en el repo (no se detallan variantes concretas) |
+| Idiomas soportados | en, fr, zh (segun model card); el campo `language` del repo solo declara en |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors, ONNX, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura de transformer decoder-only "basada en Llama", sin especificar el numero de capas, dimensiones ocultas, numero de cabezas de atencion ni tipo de normalizacion. Tampoco se indica si emplea atencion con RoPE, GQA ni ninguna otra variante. La precision de entrenamiento y de inferencia declarada es `bfloat16` / `fp16`, y el modelo se carga mediante `AutoModelForCausalLM` de la libreria `transformers`.
+El modelo emplea una arquitectura transformer decoder-only de estilo Llama, con atención causal estándar y sin innovaciones arquitectónicas destacadas respecto a su modelo base, SmolLM2-135M. Se distribuye en precisión bfloat16 y fp16, y el repositorio incluye conversiones a ONNX y GGUF para facilitar el despliegue en distintos entornos. No se especifican en la información disponible detalles sobre número de capas, dimensión oculta, número de cabezas de atención ni vocabulario.
 
-En cuanto a los datos, el autor afirma un entrenamiento sobre una mezcla de "multiples billones de tokens" que combina contenido web, codigo y datos educativos, pero no se aporta ninguna informacion verificable sobre el numero exacto de tokens, la composicion porcentual del corpus, el proceso de filtrado, la tokenizacion empleada ni si hubo fases de ajuste fino con RLHF, DPO o instrucciones. Tampoco se documentan innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, SSM o arquitecturas hibridas). La unica innovacion funcional es la orientacion al despliegue en dispositivo, con un peso de aproximadamente 270 MB.
+En cuanto al entrenamiento, la model card indica que se utilizó una mezcla de contenido web, código y datos educativos a escala de "multi-trillion tokens", pero no se aportan cifras concretas ni proporciones del dataset. Se referencian tres datasets propios de KrynexLabs (KrynexAI-Dataset-Flash-Instruction, KrynexAI-Santa-Ana-Tusi-Pasco-Quechua y KrynexAI-Dataset-Mini-Top1), aunque no se detalla su peso en el entrenamiento ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documentan técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles: continuacion de prompt, redaccion basica y completado de frases.
-- Razonamiento de sentido comun elemental, segun los benchmarks declarados (HellaSwag 42,1; PIQA 68,4; CommonsenseQA 33,9; OpenBookQA 34,6).
-- Conocimiento general limitado: MMLU en formato cloze de 31,5, lo que indica una cobertura enciclopedica baja.
-- Capacidad declarada de "instruction following", aunque la etiqueta oficial del repositorio es `base-model`, por lo que no hay evidencia publicada de un ajuste por instrucciones.
-- No hay soporte documentado de tool calling ni de function calling.
-- No hay soporte documentado de agentes ni de razonamiento multi-paso.
-- No dispone de modo "thinking", vision, audio ni ninguna otra modalidad adicional al texto.
-- Multilingue: no. Solo ingles declarado.
+- Generación de texto autoregresiva en modo base (no se confirma un ajuste por instrucciones robusto).
+- Razonamiento básico y respuesta a preguntas sencillas, limitado por el tamaño del modelo.
+- Procesamiento de texto multilingüe declarado para inglés, francés y chino, aunque el campo de idiomas del repositorio solo lista inglés.
+- Conversión a ONNX y GGUF para inferencia en CPU, navegador (transformers.js) y dispositivos de borde.
+- Compatibilidad con text-generation-inference y endpoints compatibles según los tags del repositorio.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido (*thinking*).
 
 ## Casos de uso
 
-- Autocompletado de texto en aplicaciones moviles sin conexion: con 270 MB de pesos en `bfloat16` y 8.192 tokens de contexto, puede integrarse en una app Android o iOS para sugerir continuaciones de texto localmente, sin enviar datos a un servidor.
-- Prototipado rapido de pipelines de generacion de texto: sirve como modelo de pruebas para validar tokenizadores, plantillas de prompt y flujos de inferencia antes de migrar a modelos mayores, gracias a su carga inmediata en CPU.
-- Clasificacion y etiquetado ligero por perplejidad: uso del modelo como scorer para filtrar, puntuar o agrupar textos cortos en ingles en procesos de curado de datos, dado su bajo coste computacional.
-- Sistemas embebidos y robotica con recursos muy limitados: dispositivos con microcontroladores de gama alta o SBC tipo Raspberry Pi pueden ejecutar inferencia en CPU usando el modelo en cuantizacion reducida, si se convierte previamente a un formato adecuado.
-- Generacion de texto de relleno o plantillas en herramientas de desarrollo: por ejemplo, para producir datos sinteticos de prueba en ingles en tests automatizados, donde la calidad linguistica no es critica.
-- Educacion e investigacion sobre modelos pequenos: util como linea base (baseline) reproducible para experimentos de destilacion, pruning o cuantizacion, al ser Apache 2.0 y de tamano minimo.
-- Filtrado previo en cascada: actuar como primer nivel de un sistema en cascada que solo derive al modelo grande las peticiones que el modelo pequeno no pueda resolver con suficiente confianza.
+- Autocompletado y generación de texto en aplicaciones móviles: con ~270 MB de pesos en bfloat16, el modelo puede ejecutarse en un smartphone moderno para sugerencias de escritura o respuestas cortas sin conexión.
+- Asistentes conversacionales embebidos en navegador: gracias a la conversión ONNX y al soporte de transformers.js, puede integrarse en una web para chat básico sin enviar datos a un servidor.
+- Prototipado rápido de pipelines de NLP: su reducido tamaño permite iterar en local sobre tareas de clasificación, resumen corto o extracción de información antes de escalar a modelos mayores.
+- Filtrado y etiquetado de texto en el borde: útil en dispositivos IoT o gateways con CPU limitada para tareas de moderación simple o categorización de mensajes.
+- Educación y demos didácticas: sirve para ilustrar el funcionamiento de un LLM en cursos o talleres sin requerir GPU, dado su bajo consumo de memoria.
+- Generación de texto en entornos con restricciones de privacidad: al ejecutarse localmente, permite procesar datos sensibles sin salir del dispositivo.
+- Base para fine-tuning ligero: al ser un modelo base Apache-2.0, puede adaptarse con LoRA a dominios específicos con recursos modestos.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card:
-
-| Metrica | KrynexAI 1.4 |
+| Benchmark | KrynexAI 1.4 |
 |---|---|
 | HellaSwag | 42,1 |
 | ARC (media) | 43,9 |
@@ -61,48 +57,42 @@ Resultados declarados por el autor en la model card:
 | CommonsenseQA | 33,9 |
 | OpenBookQA | 34,6 |
 
-No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, MT-Bench u otros) en la informacion disponible, ni se proporcionan comparaciones directas con otros modelos dentro de la propia model card. Los valores de MMLU y CommonsenseQA se situan en el rango esperable para un modelo base de 150M de parametros sin ajuste por instrucciones.
+No se han publicado en la información disponible resultados comparativos con otros modelos en la misma tabla, ni datos de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada en `bfloat16`/`fp16`: aproximadamente 270 MB solo para los pesos, mas la memoria de activaciones y cache KV. Con 8.192 tokens de contexto, la cache KV puede anadir varias decenas o cientos de megabytes segun el numero de capas y cabezas (no documentado).
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente. Modelos como NVIDIA T4, GTX 1650, RTX 3050 o superiores funcionan sin problema. Una RTX 4090, A100 o H100 estan enormemente sobredimensionadas para este modelo.
-- GPU de consumo: si, cabe en practicamente cualquier GPU de consumo de los ultimos diez anos e incluso en GPUs integradas con memoria compartida.
-- CPU: es viable la inferencia en CPU, dado el reducido numero de parametros; tambien es apto para dispositivos moviles.
-- Opciones de despliegue: inferencia nativa con `transformers` (segun el ejemplo de la model card). Para vLLM, TGI, llama.cpp u Ollama seria necesario convertir los pesos a los formatos correspondientes (safetensors/GGUF), conversion que no se documenta en el repositorio ni se han publicado artefactos de ese tipo.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 270 MB en bfloat16 o fp16; en torno a 150-200 MB en cuantizaciones de 8 bits y menos de 100 MB en 4 bits (estimación orientativa, no confirmada por el autor).
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; funciona en GTX 1050, RTX 2060, RTX 3060, RTX 4090, A100 o H100 sin aprovechar su capacidad.
+- Cabe holgadamente en GPU de consumo e incluso en CPU y dispositivos móviles.
+- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, llama.cpp con GGUF, transformers.js en navegador, text-generation-inference y endpoints compatibles.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se han proporcionado datos verificables de rendimiento para modelos alternativos en la informacion disponible. A continuacion se comparan unicamente caracteristicas estructurales ampliamente conocidas de la categoria; los valores de contexto y rendimiento de los modelos alternativos no estan verificados en esta busqueda y deben contrastarse con sus fichas oficiales.
-
-| Modelo | Parametros | Contexto | Licencia | Idiomas |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| KrynexAI 1.4 150M | ~150M | 8.192 tokens | Apache 2.0 | Ingles |
-| SmolLM2-135M (Hugging Face) | 135M | No disponible en esta ficha | Apache 2.0 | Ingles y otros |
-| Qwen2.5-0.5B (Alibaba) | 0,5B | No disponible en esta ficha | Apache 2.0 | Multilingue |
-| TinyLlama-1.1B (TinyLlama) | 1,1B | No disponible en esta ficha | Apache 2.0 | Ingles |
+| KrynexAI 1.4 | ~150M | 8.192 | Apache-2.0 | Basado en SmolLM2-135M; pesos en safetensors, ONNX y GGUF |
+| SmolLM2-135M (HuggingFaceTB) | 135M | 8.192 | Apache-2.0 | Modelo base del que deriva; referencia directa |
+| Qwen2.5-0.5B | ~500M | 32.768 | Apache-2.0 | Mayor tamaño y contexto; más capacidad pero más recursos |
+| TinyLlama-1.1B | ~1.1B | 2.048 | Apache-2.0 | Mayor número de parámetros; contexto menor |
 
-Los datos de benchmarks de KrynexAI 1.4 (MMLU cloze 31,5) son notablemente bajos en comparacion con modelos mas recientes de tamano similar, aunque no se dispone de cifras comparables bajo la misma metodologia de evaluacion para confirmarlo con rigor.
+No se dispone de datos de benchmarks comparativos directos entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no hay evaluacion de sesgos publicada. Un modelo entrenado sobre datos web en ingles tiende a reproducir sesgos de genero, raza y cultura presentes en ese corpus.
-- Riesgo de alucinacion: elevado. Con un MMLU cloze de 31,5 y CommonsenseQA de 33,9, la probabilidad de generar afirmaciones factualmente incorrectas es alta, especialmente en dominios especializados.
-- Instrucciones: aunque la model card menciona capacidades de "instruction following", la etiqueta oficial es `base-model`, por lo que no hay garantia de que responda correctamente a instrucciones directas sin un ajuste adicional.
-- Idioma: solo ingles declarado. No debe usarse en produccion para castellano u otros idiomas sin evaluacion previa.
-- Contexto: la ventana de 8.192 tokens es amplia para su tamano, pero no hay documentacion sobre como degrada el rendimiento en la parte final del contexto.
-- Documentacion incompleta: no se especifican arquitectura detallada (capas, cabezas, dimensiones), datos de entrenamiento verificables, ni procesos de alineacion.
-- Repositorio con actividad minima: el modelo registra 0 descargas y 1 "like" en el momento de la consulta, por lo que no existe una comunidad que haya validado su comportamiento.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios realizados. No impone restricciones de uso adicionales.
-- Produccion: no se recomienda su uso en tareas criticas (atencion al cliente, decision automatizada, generacion de codigo) sin una evaluacion exhaustiva propia.
+- Modelo de 150M de parámetros: capacidad de razonamiento y conocimiento factual muy limitada; propenso a alucinaciones y respuestas incoherentes en tareas complejas.
+- El autor advierte explícitamente de que el repositorio puede contener archivos inexactos o desactualizados, y que aproximadamente la mitad de los archivos originales no se modificaron.
+- El campo `language` del repositorio solo declara inglés, pese a que la model card menciona francés y chino; el soporte multilingüe real no está verificado.
+- No se documenta ajuste por instrucciones ni RLHF/DPO, por lo que su comportamiento conversacional puede ser limitado.
+- La ventana de contexto de 8.192 tokens es declarada, pero no se confirma su rendimiento efectivo en secuencias largas.
+- Licencia Apache-2.0 permite uso comercial con atribución; no obstante, la calidad del modelo en producción debe validarse empíricamente.
+- No se han publicado datos de sesgos, toxicidad ni evaluaciones de seguridad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/KrynexLabs/KrynexAI-1.4-150M-Mobile-Model
-- Perfil del autor: https://huggingface.co/KrynexLabs
-- Paper tecnico: no disponible
-- Blog o anuncio oficial: no disponible
-- Repositorio de codigo: no disponible
-- Demos: no disponible
-- Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo (contenido sobre guias de videojuegos), por lo que no se han incluido como enlaces relevantes.
+- Hugging Face: https://huggingface.co/KrynexLabs/KrynexAI-1.4-150M-Mobile-Model
+- Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
+- Dataset KrynexAI-Dataset-Flash-Instruction: https://huggingface.co/datasets/KrynexLabs/KrynexAI-Dataset-Flash-Instruction
+- Dataset KrynexAI-Santa-Ana-Tusi-Pasco-Quechua: https://huggingface.co/datasets/KrynexLabs/KrynexAI-Santa-Ana-Tusi-Pasco-Quechua
+- Dataset KrynexAI-Dataset-Mini-Top1: https://huggingface.co/datasets/KrynexLabs/KrynexAI-Dataset-Mini-Top1
+- Revisión en vídeo (44 min): https://www.youtube.com/watch?v=qpV0DnLezzc

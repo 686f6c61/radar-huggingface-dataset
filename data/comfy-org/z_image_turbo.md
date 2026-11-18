@@ -2,76 +2,81 @@
 
 ## Resumen
 
-Z-Image-Turbo es un modelo de generación de imágenes de tipo difusión destilado, desarrollado por Comfy-Org, el equipo detrás de ComfyUI. Con 6 mil millones de parámetros, está diseñado para ofrecer una latencia de inferencia inferior a un segundo, lo que lo convierte en una opción especialmente adecuada para aplicaciones que requieren generación de imágenes en tiempo real o flujos de trabajo interactivos. El modelo destaca por su capacidad para producir imágenes fotorrealistas con alta fidelidad de detalle, y se distribuye como un archivo único compatible con ComfyUI.
+Z-Image Turbo es un modelo de difusión para generación de imágenes a partir de texto (text-to-image), desarrollado originalmente por Tongyi-MAI (Alibaba) y redistribuido por Comfy-Org en un formato de fichero único optimizado para ComfyUI. El repositorio de Comfy-Org no contiene un modelo nuevo, sino el reempaquetado de los pesos del modelo base `Tongyi-MAI/Z-Image-Turbo` junto con los componentes auxiliares necesarios (text encoder Qwen 3 de 4B, VAE y una LoRA de destilación), todo listo para colocarse en las carpetas de ComfyUI sin conversiones adicionales.
 
-La relevancia de Z-Image-Turbo radica en su equilibrio entre velocidad y calidad, algo poco común en modelos de su tamaño. Aunque se trata de una versión destilada, el equipo de investigación ha anunciado planes para publicar posteriormente el modelo base completo sin destilar, lo que permitirá a la comunidad realizar fine-tuning y desarrollar flujos personalizados. El modelo se ha hecho muy popular en la plataforma Hugging Face, acumulando más de 5,7 millones de descargas y 814 likes en pocos meses.
+La relevancia de este repositorio es eminentemente práctica: con casi 10 millones de descargas y más de mil likes, se ha convertido en el punto de entrada habitual para usar Z-Image Turbo en ComfyUI. Incluye variantes de pesos en bf16, int8 con rotación de convoluciones y nvfp4, además de versiones mixtas fp4/fp8 del text encoder, lo que permite ajustar el consumo de VRAM según el hardware disponible.
 
-## Especificaciones tecnicas
+La licencia Apache 2.0 y la disponibilidad de workflows oficiales (text-to-image, upscaling a 2K y ControlNet Union) lo sitúan como una opción atractiva para integración en producción. No obstante, la información pública proporcionada no detalla la arquitectura interna del modelo de difusión ni sus datos de entrenamiento, por lo que varios apartados técnicos se marcan como no disponibles.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion destilado (arquitectura exacta no disponible) |
-| Parametros totales | 6 mil millones (6B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (generacion de imagenes) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (se menciona renderizado bilingue de texto, sin especificar idiomas) |
-| Licencia | No disponible |
-| Formato de pesos | diffusion-single-file (probablemente safetensors, no confirmado) |
+| Arquitectura | Modelo de difusión (detalles internos no disponibles); text encoder basado en Qwen 3 de 4B |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | bf16, int8 (convrot), nvfp4; text encoder en bf16, fp4 mixed y fp8 mixed |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (diffusion-single-file para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-Z-Image-Turbo es un modelo de difusion destilado de 6 mil millones de parametros. La destilacion permite reducir la latencia de inferencia a menos de un segundo, manteniendo una calidad visual alta, especialmente en imagenes fotorrealistas. No se han publicado detalles sobre el proceso de entrenamiento, el dataset utilizado ni las tecnicas de destilacion concretas. El modelo se distribuye como un archivo unico (single-file) pensado para su uso directo en ComfyUI, lo que simplifica su integracion en pipelines de generacion de imagenes.
+El repositorio distribuye los pesos del modelo base `Tongyi-MAI/Z-Image-Turbo` reempaquetados como ficheros únicos para ComfyUI. La arquitectura concreta del difusor (tipo de backbone, número de parámetros, mecanismo de atención) no se detalla en la información disponible. Sí se especifica que el pipeline emplea un text encoder Qwen 3 de 4B parámetros, un VAE independiente (`ae.safetensors`) y una LoRA de destilación (`z_image_turbo_distill_patch_lora_bf16.safetensors`), lo que sugiere un proceso de destilación para reducir el número de pasos de muestreo, coherente con la denominación "Turbo".
 
-El equipo de Comfy-Org ha indicado que planea lanzar posteriormente el modelo base completo sin destilar, lo que abrira la puerta a fine-tuning comunitario y a un mayor desarrollo en el ecosistema open source. Por el momento, no hay informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+No se han publicado en la información proporcionada datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá de la mencionada destilación y de las variantes cuantizadas (int8 con rotación de convoluciones y nvfp4) orientadas a reducir el uso de memoria en inferencia.
 
 ## Capacidades
 
-- Generacion de imagenes fotorrealistas con alta fidelidad de detalle.
-- Inferencia rapida, con latencia inferior a un segundo, adecuada para aplicaciones interactivas.
-- Renderizado de texto bilingue en imagenes, util para carteles y graficos.
-- Integracion nativa con ComfyUI mediante workflows predefinidos.
-- Soporte para ejecucion en Comfy Cloud o local.
-- Disponible en formato BF16, con control total de parametros en ComfyUI.
+- Generación de imágenes a partir de texto (text-to-image) mediante workflows nativos de ComfyUI.
+- Upscaling de imágenes hasta resolución 2K mediante workflow dedicado.
+- Control espacial y estructural mediante ControlNet Union (workflow "Fun Union ControlNet").
+- Ejecución con distintos niveles de precisión: bf16, int8 y nvfp4, para adaptarse a distintos presupuestos de VRAM.
+- Uso de text encoder cuantizado en fp4/fp8 mixto para reducir el consumo de memoria del componente lingüístico.
+- Integración directa con el ecosistema ComfyUI, incluyendo plantillas de workflow oficiales.
+- No se documentan capacidades de edición de imagen por instrucciones, vídeo, audio ni tool calling, al tratarse de un modelo de difusión de imagen.
 
 ## Casos de uso
 
-- Generacion de imagenes en tiempo real para aplicaciones de diseno interactivo: gracias a su latencia sub-segundo, el modelo puede integrarse en herramientas donde el usuario ajusta parametros y ve resultados inmediatos, mejorando la experiencia de iteracion.
-- Creacion de carteles y graficos con texto bilingue: el modelo puede renderizar texto en dos idiomas dentro de la imagen, lo que resulta util para disenadores que necesitan producir material promocional multilingue de forma rapida.
-- Prototipado visual para marketing y publicidad: los equipos creativos pueden generar imagenes fotorrealistas de productos o escenas en segundos, acelerando la fase de conceptualizacion antes de pasar a produccion.
-- Automatizacion de contenido visual para redes sociales: al integrarse en pipelines de generacion por lotes, el modelo permite producir variaciones de imagenes para campanas digitales con un coste computacional reducido.
-- Generacion de imagenes de referencia para ilustradores y artistas: la alta fidelidad fotorrealista sirve como base para bocetos o referencias rapidas, reduciendo el tiempo de busqueda de inspiracion.
-- Despliegue en entornos de produccion con ComfyUI: al ser un archivo unico y compatible con ComfyUI, puede integrarse en servidores de inferencia o en la nube de Comfy para ofrecer un servicio de generacion de imagenes escalable.
+- Generación de ilustraciones para blogs y documentación técnica: el workflow text-to-image oficial permite producir imágenes de cabecera a partir de descripciones textuales, con la ventaja de que el modelo está empaquetado para funcionar en ComfyUI sin pasos de conversión.
+- Prototipado rápido de conceptos visuales en estudios de diseño: la variante Turbo y la LoRA de destilación reducen el coste por iteración, lo que facilita explorar decenas de variaciones de una misma idea en una sola sesión.
+- Reescalado de imágenes existentes a 2K: el workflow "Image Upscale: Z-Image-Turbo 2K" permite mejorar la resolución de material gráfico ya generado o de fotografías de baja calidad para su uso en impresión o web de alta densidad.
+- Control de composición en pipelines de marketing: con el workflow ControlNet Union se puede condicionar la estructura de la imagen generada (postura, silueta, disposición) para mantener la coherencia de marca entre piezas de una campaña.
+- Despliegue en estaciones de trabajo con GPU de consumo: las variantes int8 y nvfp4 reducen los requisitos de memoria, lo que permite ejecutar el modelo en equipos con VRAM limitada frente a la versión bf16 completa.
+- Generación de recursos para videojuegos y entornos 3D: producción de texturas, concept art y variaciones de personajes dentro de un flujo ComfyUI, aprovechando las plantillas oficiales como base para pipelines automatizados.
+- Automatización por lotes en servidores: al estar en formato single-file safetensors y con licencia Apache 2.0, puede integrarse en servicios internos de generación de imágenes sin restricciones de uso comercial derivadas de la licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos comparativos con otros modelos de generacion de imagenes en terminos de FID, CLIP score u otras metricas estandar.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- No se han publicado requisitos oficiales de hardware en la informacion disponible.
-- Al tratarse de un modelo de 6B parametros en formato single-file, se estima que requiere una GPU con al menos 12-16 GB de VRAM para inferencia en BF16, aunque no hay datos confirmados.
-- Es probable que funcione en GPUs consumer de gama alta como la RTX 4090, pero no se ha verificado.
-- Se puede ejecutar en Comfy Cloud, lo que elimina la necesidad de hardware local potente.
-- No se dispone de datos de latencia y throughput mas alla de la mencion de "sub-second inference latency".
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ofrece variantes bf16, int8 y nvfp4 precisamente para ajustar el consumo, pero no se indican cifras concretas.
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Compatibilidad con GPU de consumo: la existencia de las variantes int8 y nvfp4, junto con text encoder en fp4/fp8 mixto, indica que el modelo está pensado para ejecutarse en GPU de consumo, aunque no se especifica qué modelos exactos.
+- Opciones de despliegue: ComfyUI es el entorno de referencia (los pesos están empaquetados como `diffusion-single-file` para este fin). No se documentan otros backends como vLLM, llama.cpp u Ollama, que además no son aplicables a un modelo de difusión de imagen.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con otros modelos de generacion de imagenes de tamano similar. No hay datos publicados sobre rendimiento relativo frente a alternativas como SDXL, Flux o modelos propietarios.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de la misma categoría que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se ha publicado informacion sobre sesgos o alucinaciones en el modelo.
-- Al ser una version destilada, puede presentar limitaciones frente al modelo base completo en cuanto a variedad de estilos o fidelidad en casos extremos.
-- La licencia no esta especificada, por lo que se desconoce si permite uso comercial o si existen restricciones de redistribucion.
-- No se dispone de informacion sobre los idiomas soportados para el renderizado de texto, lo que limita la planificacion de proyectos multilingues.
-- El modelo esta orientado principalmente a generacion de imagenes; no soporta tareas de texto, codigo o razonamiento.
+- La model card de este repositorio es un reempaquetado: no documenta la arquitectura interna, los datos de entrenamiento ni las evaluaciones del modelo original, por lo que la trazabilidad técnica es limitada.
+- No se especifican los idiomas soportados por el text encoder en el contexto de generación de imágenes; el comportamiento multilingüe de las instrucciones no está documentado.
+- Riesgo de sesgos y de alucinación visual: al no publicarse información sobre la composición del dataset de entrenamiento, no es posible evaluar sesgos demográficos, culturales o de estilo.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base original (`Tongyi-MAI/Z-Image-Turbo`) y de los componentes auxiliares (Qwen 3, VAE) antes de desplegarlo en producción.
+- El modelo está orientado exclusivamente a generación y manipulación de imágenes; no debe emplearse para tareas de texto, razonamiento o agentes.
+- El tamaño del repositorio (42,1 GB) implica requisitos de almacenamiento considerables; conviene descargar solo las variantes de pesos necesarias.
+- No se documentan limitaciones específicas de resolución, pasos de muestreo o estabilidad en las variantes cuantizadas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Comfy-Org/z_image_turbo
-- Workflows de ejemplo en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/z_image/
-- Tutorial de Z-Image-Turbo en docs.comfy.org: https://docs.comfy.org/tutorials/image/z-image/z-image-turbo
-- Blog de Comfy sobre Z-Image Turbo: https://blog.comfy.org/p/z-image-turbo-in-comfyui-realism
-- Plantillas de workflows de Z-Image: https://comfy.org/workflows/model/z-image/
-- Pagina de Z Image Turbo BF16 en Comfy: https://comfy.org/p/supported-models/z-image-turbo-bf16/
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/z_image_turbo
+- Modelo base original: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Workflows oficiales de Z-Image: https://comfyanonymous.github.io/ComfyUI_examples/z_image/
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Plantillas de workflow: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_z_image_turbo.json

@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 46559,
+  "downloads_30d": 45277,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,5 +38,11 @@
   "renamed_to": "Comfy-Org/stable-audio-open-1.0",
   "renamed_at": "2026-11-11T02:32:33.513Z",
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    }
+  ]
 }

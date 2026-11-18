@@ -1,79 +1,90 @@
 # Edge0/Edge0-120B-NVFP4
 
 ## Resumen
-Edge0-120B-NVFP4 es una compilación cuantizada a 4 bits (NVFP4) del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el colectivo Edge0 bajo licencia Apache 2.0. Aunque la nomenclatura comercial del repositorio indica "120B", los pesos reales en safetensors suman 4.947.698.560 parámetros (aproximadamente 4,95 mil millones), lo que apunta a una arquitectura de mezcla de expertos (MoE) con un número de parámetros activos muy inferior al total nominal. El repositorio ocupa 97,6 GB, un tamaño desproporcionado para el número de parámetros declarado, lo que sugiere pesos empaquetados en precisión de 4 bits con metadatos adicionales o múltiples variantes incluidas.
 
-El modelo está orientado explícitamente a inferencia en el borde (edge inference), agentes y generación de código, según las etiquetas del repositorio. Incorpora la etiqueta "latent-moe", que sugiere una variante de MoE con enrutamiento latente, y se distribuye tanto en formato GGUF como en pesos nativos para CUDA. La librería asociada es `edge0`, propia del autor, y el modelo declara compatibilidad con endpoints conversacionales.
+Edge0-120B-NVFP4 es un modelo de lenguaje de tipo Mixture of Experts (MoE) publicado por Edge0, un proyecto centrado en inferencia en el borde (edge inference). Se distribuye como un cuantizado en 4 bits (NVFP4) del modelo base Qwen/Qwen3.8-Flash-Next, y está empaquetado con la librería propietaria `edge0` y pesos en formato GGUF. El repositorio ocupa 102,6 GB y acumula cerca de 6.800 descargas en Hugging Face, lo que indica un uso activo pese a su carácter reciente (noviembre de 2026).
 
-Su relevancia radica en la combinación de licencia permisiva, cuantización agresiva a 4 bits y un enfoque declarado hacia despliegues en hardware limitado, aunque la ausencia de benchmarks publicados y de documentación sobre el proceso de cuantización limita seriamente su evaluación rigurosa. La ficha se basa exclusivamente en los metadatos disponibles; cualquier dato no confirmado se marca como no disponible.
+El modelo se presenta con etiquetas que apuntan a casos de uso de agentes y generación de código, e incorpora una variante de arquitectura que el autor denomina "latent-moe". Está pensado para despliegue en hardware CUDA de gama alta, no para GPUs de consumo, dado su volumen de pesos. La licencia es propia (`edge0-community-model-1.0`), lo que condiciona su uso comercial.
 
-## Especificaciones técnicas
+La información pública disponible es limitada: no se detallan composición del dataset, número de tokens de entrenamiento, benchmarks ni idiomas soportados. Esta ficha recoge exclusivamente los datos verificables de la model card y de los metadatos del repositorio, señalando explícitamente los campos no disponibles.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con enrutamiento latente (latent-moe), transformer; detalles no disponibles |
-| Parámetros totales | 4.947.698.560 (según safetensors) |
-| Parámetros activos | no disponible |
+| Arquitectura | Mixture of Experts (MoE) con variante "latent-moe", derivada de Qwen/Qwen3.8-Flash-Next |
+| Parametros totales | 4.947.698.560 (según safetensors del repo cuantizado) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | 4 bits NVFP4 (única variante publicada); GGUF mencionado en tags |
+| Tipos de cuantizacion | 4 bits (NVFP4); pesos en GGUF |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y GGUF (según tags y librería) |
+| Licencia | edge0-community-model-1.0 (licencia propia, categoría "other") |
+| Formato de pesos | GGUF (librería `edge0`) |
+
+Nota: la discrepancia entre el nombre comercial "120B" y el recuento de parámetros del safetensors (≈4,95 mil millones) sugiere que el número del nombre puede referirse a otra métrica (por ejemplo, parámetros del modelo base sin cuantizar o una denominación interna), pero no se dispone de información que lo confirme.
 
 ## Arquitectura y entrenamiento
-La información disponible describe el modelo como una mezcla de expertos (MoE) con una variante denominada "latent-moe", lo que implica un mecanismo de enrutamiento que opera en un espacio latente en lugar de sobre las representaciones explícitas de los tokens. No se especifican el número de expertos, la dimensión del espacio latente, la estrategia de top-k routing ni la proporción de parámetros activos por token. El tamaño real de 4,95 mil millones de parámetros contrasta con la denominación "120B" del repositorio, lo que sugiere que el nombre comercial puede referirse a un conteo agregado de expertos o a una convención de marketing no verificable con los pesos publicados.
 
-No hay información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO o fine-tuning supervisado. Tampoco se documenta el proceso de cuantización a NVFP4 (calibración, granularidad de escala, manejo de outliers) ni las innovaciones técnicas asociadas al modelo base Qwen/Qwen3.8-Flash-Next. Todos estos extremos deben considerarse no disponibles.
+El modelo es un MoE cuantizado a 4 bits en formato NVFP4, empaquetado en GGUF y servido mediante la librería `edge0`. El autor etiqueta la arquitectura como "latent-moe", un término no estándar en la literatura pública que no viene acompañado de documentación técnica en la información disponible. El modelo base es Qwen/Qwen3.8-Flash-Next, del que hereda la estructura general, pero no se detalla el proceso de destilación, cuantización ni ajuste posterior.
+
+No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones como decodificación especulativa, atención lineal o mecanismos de compresión adicionales más allá de la propia cuantización NVFP4.
 
 ## Capacidades
-- Generación de texto conversacional multi-turno, según la etiqueta "conversational" y el pipeline text-generation.
-- Generación de código, respaldada por la etiqueta "coding" del repositorio.
-- Soporte declarado para agentes y flujos de razonamiento multi-paso, según la etiqueta "agent".
-- Inferencia en el borde (edge inference), con cuantización a 4 bits orientada a hardware limitado.
-- Compatibilidad con endpoints conversacionales (tag "endpoints_compatible").
-- Capacidades multilingües: no disponibles (no se declaran idiomas).
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Modo thinking, visión o audio: no disponible.
+
+- Generación de texto conversacional, según el pipeline declarado (`text-generation`) y la etiqueta `conversational`.
+- Orientación a tareas de agente y orquestación multi-paso, indicada por la etiqueta `agent`.
+- Generación y asistencia en código, indicada por la etiqueta `coding`.
+- Inferencia en el borde (edge inference) como objetivo de diseño declarado.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que sugiere integración con APIs de inferencia.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Modo de razonamiento explícito (thinking mode): no disponible.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
-- Asistentes conversacionales en dispositivos locales: el modelo puede gestionar diálogos multi-turno en hardware de consumo gracias a su cuantización NVFP4 de 4 bits y a la etiqueta edge-inference, aunque la longitud de contexto no está confirmada.
-- Autocompletado y generación de código en IDE: la etiqueta "coding" sugiere uso como copiloto local en entornos con GPU modesta, evitando dependencia de la nube.
-- Agentes autónomos de automatización de tareas: el tag "agent" indica soporte para planificación y ejecución de pasos, adecuado para orquestadores locales con tool calling (aunque este no está documentado).
-- Despliegue en entornos con requisitos de privacidad: al ser Apache 2.0 y ejecutable localmente, permite procesar datos sensibles sin salir del dispositivo.
-- Prototipado rápido de aplicaciones conversacionales: la compatibilidad con endpoints y el formato GGUF facilitan integraciones en servidores de inferencia ligeros.
-- Investigación sobre cuantización y MoE: el modelo sirve como caso de estudio para evaluar el impacto de NVFP4 en un MoE con enrutamiento latente, aunque sin benchmarks publicados la comparación es limitada.
-- Filtrado y resumen de texto en pipelines de borde: su tamaño reducido permite ejecutarlo junto a otros procesos en una misma GPU.
+
+- Asistencia a programadores en IDE: el modelo puede integrarse en extensiones de editor para autocompletado y generación de fragmentos de código, aprovechando su orientación declarada a `coding` y su formato GGUF para despliegue local en estaciones con GPU CUDA.
+- Agentes autónomos de automatización: gracias a la etiqueta `agent`, puede emplearse como motor de decisión en pipelines que requieran planificación multi-paso, siempre que se valide empíricamente su fiabilidad en tool calling, ya que no está documentada.
+- Inferencia en el borde con GPU dedicada: su empaquetado NVFP4 y la librería `edge0` están pensados para servidores o estaciones con CUDA, lo que permite desplegarlo en entornos con recursos moderados frente a un modelo de 120B en precisión completa.
+- Servicio conversacional de baja latencia: el formato de 4 bits reduce el ancho de banda de memoria, lo que puede traducirse en menor latencia por token en GPUs con memoria limitada, adecuado para chatbots internos.
+- Prototipado de asistentes técnicos: investigadores pueden evaluar el comportamiento de un MoE cuantizado frente a alternativas densas en tareas de razonamiento y código antes de comprometerse con infraestructura mayor.
+- Investigación sobre cuantización: el modelo sirve como caso de estudio para medir la degradación de calidad de NVFP4 frente al modelo base Qwen/Qwen3.8-Flash-Next en tareas concretas.
+- Generación de documentación técnica y resúmenes: uso conversacional general con contexto que habría que validar, dado que la longitud de contexto no está publicada.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible.
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: con 4,95 mil millones de parámetros en 4 bits, el peso teórico ronda los 2,5 GB, pero el repositorio ocupa 97,6 GB, por lo que el despliegue real puede requerir espacio en disco muy superior y VRAM adicional para buffers y metadatos; no disponible con precisión.
-- GPU recomendadas: no disponibles. Por tamaño de pesos, una RTX 4090 (24 GB) o superior debería ser suficiente en teoría, pero la discrepancia entre el tamaño del repo y los parámetros impide confirmarlo.
-- Compatibilidad con GPU de consumo: probable en tarjetas con 8-24 GB si se usa la variante GGUF, pero no confirmado.
-- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y TGI solo si se confirma compatibilidad con safetensors NVFP4 (no documentada). La librería propia `edge0` es el mecanismo de carga declarado.
-- Latencia y throughput: no disponibles.
+
+- VRAM estimada para inferencia: el repositorio pesa 102,6 GB en pesos GGUF de 4 bits, por lo que se requiere al menos ~103 GB de VRAM para cargar el modelo completo sin offloading.
+- GPU recomendadas: H100 (80 GB) en configuración multi-GPU (2×H100), A100 80 GB en multi-GPU, o GPUs con 141 GB como H200 en single-GPU; una RTX 4090 (24 GB) no es suficiente para el modelo completo.
+- ¿Cabe en consumer GPU? No de forma completa. Sería necesario offloading a CPU/RAM o un despliegue multi-GPU, con la penalización de latencia correspondiente.
+- Opciones de despliegue: la librería propietaria `edge0` es el runtime declarado; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, aunque el formato GGUF abre la puerta a runtimes que lo soporten, sin garantía del autor.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Edge0-120B-NVFP4 | 4,95 B (según safetensors) | no disponible | Apache 2.0 | safetensors, GGUF | Cuantización NVFP4, MoE latente, sin benchmarks |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | no disponible | no disponible | Modelo base del que deriva; sin datos públicos en esta ficha |
-| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de información suficiente para comparar con modelos equivalentes |
+| Edge0-120B-NVFP4 | 4,95 B (safetensors del repo) | no disponible | edge0-community-model-1.0 | GGUF 4-bit | Cuantizado de Qwen/Qwen3.8-Flash-Next, orientado a edge y agentes |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | no disponible | no disponible | Referencia de calidad original; sin datos públicos en esta ficha |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de información suficiente para establecer comparaciones fiables |
 
 ## Limitaciones y advertencias
-- Discrepancia entre el nombre "120B" y los 4,95 mil millones de parámetros reales en safetensors: verificar el conteo antes de dimensionar infraestructura.
-- Tamaño del repositorio (97,6 GB) muy superior al esperado para 4,95 B en 4 bits, lo que puede indicar pesos redundantes, múltiples variantes o metadatos no documentados.
-- Ausencia total de benchmarks: no es posible validar calidad, razonamiento, código ni multilingüismo frente a alternativas.
-- No se documentan idiomas soportados, lo que impide garantizar calidad en castellano.
-- No se confirma soporte de tool calling ni de contexto largo, pese a las etiquetas de agente.
-- Riesgo de alucinación inherente a los modelos generativos, agravado por la falta de evaluación publicada.
-- Proceso de cuantización NVFP4 no documentado: posible degradación de calidad frente al modelo base, sin métricas que lo cuantifiquen.
-- Licencia Apache 2.0 permite uso comercial, pero la procedencia del modelo base Qwen/Qwen3.8-Flash-Next y sus posibles restricciones adicionales no están verificadas en esta información.
-- Modelo con 0 descargas y 1 like en el momento de la consulta: ecosistema mínimo, sin garantías de mantenimiento.
+
+- Licencia propia `edge0-community-model-1.0`: es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial, ya que las condiciones no están resumidas en la información disponible.
+- Cuantización NVFP4: la reducción a 4 bits puede degradar la calidad frente al modelo base en tareas de razonamiento o código; no se han publicado evaluaciones que cuantifiquen esa pérdida.
+- Ausencia de benchmarks: no hay evidencia pública de rendimiento en MMLU, HumanEval, GSM8K ni otras pruebas, lo que impide validar las afirmaciones de capacidad.
+- Idiomas no declarados: se desconoce si el modelo mantiene el multilingüismo del base Qwen o si está limitado al inglés.
+- Longitud de contexto no documentada: crítico para casos de uso con documentos largos o conversaciones multi-turno extensas.
+- Riesgo de alucinación: no evaluado; al ser un modelo conversacional sin datos de alineación publicados, debe asumirse un riesgo estándar y validar salidas en producción.
+- Dependencia de la librería `edge0`: el runtime propietario puede limitar la portabilidad y la integración con stacks estándar de inferencia.
+- Discrepancia en el recuento de parámetros: el nombre "120B" no coincide con los ~4,95 B del safetensors; conviene verificar la naturaleza real del checkpoint antes de dimensionar infraestructura.
 
 ## Enlaces
+
 - Hugging Face: https://huggingface.co/Edge0/Edge0-120B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.
+- Licencia: https://huggingface.co/Edge0/Edge0-120B-NVFP4/blob/main/LICENSE
+- Paper, blog o repositorio adicional: no disponible en la información proporcionada.

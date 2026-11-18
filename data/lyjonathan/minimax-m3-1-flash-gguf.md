@@ -1,119 +1,102 @@
 # LyJonathan/MiniMax-M3.1-Flash-GGUF
 
 ## Resumen
+MiniMax-M3.1-Flash es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por MiniMaxAI, publicado originalmente en Hugging Face y del que aqui se documenta una distribucion cuantizada en GGUF mantenida por el usuario LyJonathan. El modelo completo cuenta con 426.186.370.176 parametros totales (segun los pesos en safetensors del modelo base), lo que lo situa en la categoria de modelos frontera de gran escala. La version que nos ocupa no es el checkpoint original, sino un conjunto de copias cuantizadas de 1 a 4 bits pensadas para ejecutarse en hardware de consumo mediante el motor Sparsa, un runtime experimental desarrollado por el mismo autor.
 
-MiniMax-M3.1-Flash-GGUF es una cuantización de tipo GGUF del modelo MiniMaxAI/MiniMax-M3.1-Flash, un transformer con mezcla de expertos (MoE) de 426.186.370.176 parámetros totales (≈426,2 B). La publica el usuario LyJonathan mediante las herramientas Strata (`strata-mm-quant`), que generan las cuantizaciones en CPU a partir de los pesos originales, publicados originalmente en NVFP4/MXFP8 de 4 bits con QAT. El objetivo es hacer utilizable un MoE de este tamaño en hardware de consumo, a costa de una pérdida de fidelidad notable.
+La relevancia de esta distribucion radica en que demuestra la viabilidad de ejecutar un modelo de mas de 400.000 millones de parametros en un PC convencional: el tier `IQ2_XXS` de 124,5 GB corre en dos tarjetas de 16 GB (RTX 4060 Ti y RTX 5060 Ti) junto a un Ryzen 9 5900X y 121 GB de DDR4 bajo Linux, con unas cifras de 245 tokens/s en prefill de 4.000 tokens y unos 8 tokens/s en generacion a contexto de 32K. Se trata, sin embargo, de un proyecto marcado explicitamente como experimental, con una calidad que degrada de forma notable en los niveles de 1 y 2 bits y con compatibilidad limitada fuera de Sparsa.
 
-El repositorio contiene un único conjunto de 13 particiones en formato IQ2_XS que ocupa aproximadamente 133,1 GB en disco. Los expertos enrutados (`ffn_gate_exps`, `ffn_up_exps`, `ffn_down_exps`) se cuantizan a IQ2_XS, mientras que atención, MLP densa, expertos compartidos y embeddings se mantienen en Q8_0 y la capa de salida en Q6_K. El autor advierte explícitamente de que IQ2_XS es una cuantización de 2 bits «notablemente degradada»: divergencia KL media de 1,92, acuerdo top-1 del 46,8 % y perplejidad 1,71 veces superior a la referencia FP32.
+El modelo base esta etiquetado como `mixture-of-experts` y `sparsa` (termino que en este contexto alude a la tecnica de streaming de expertos desde disco), y los expertos fueron entrenados originalmente en 4 bits (NVFP4), lo que explica que las cuantizaciones de 1 y 2 bits sufran perdidas de calidad medibles. La licencia es `minimax-community`, una licencia propia del autor original que conviene revisar antes de cualquier uso comercial.
 
-La relevancia ahora es doble: por un lado, permite ejecutar un modelo de más de 400 B en equipos con poca VRAM y mucha RAM (el smoke test se hizo con 2× RTX 5070 de 12 GB y 128 GB de DDR4); por otro, requiere un parche de llama.cpp que todavía no está en upstream para aprovechar el indexer de atención dispersa de M3.1, de modo que con compilaciones estándar las capas 0-2 caen a atención densa.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); arquitectura `minimax-m3` con indexer de atención dispersa (M3.1) |
-| Parámetros totales | 426.186.370.176 (≈426,2 B) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible (los ejemplos de la model card usan `-c 8192`) |
-| Tipos de cuantización | IQ2_XS (expertos enrutados, imatrix); Q8_0 (atención, indexer, MLP densa, expertos compartidos, `token_embd`); Q6_K (`output.weight`); F32 (router gate, `exp_probs_b`, normas) |
+| Arquitectura | Mixture-of-experts (MoE), transformer; etiquetado como "sparsa" en el repo |
+| Parametros totales | 426.186.370.176 (426,2 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 32K (contexto de referencia en las mediciones de generacion del autor); maximo oficial no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_S-GPTQ, IQ1_M, IQ1_M-GPTQ-v2, IQ2_XXS, IQ2_XXS-GPTQ, IQ2_XXS-GPTQ-v2, IQ2_KT, IQ2_XS, IQ2_XS-D3, IQ2_KL, IQ3_K, IQ4_KS, NVFP4 |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-community (en Hugging Face aparece como `license: other` con `license_name: minimax-community`) |
-| Formato de pesos | GGUF, 13 particiones (`split`), ≈133,1 GB en disco |
-| Tamaño de vocabulario | 200.064 tokens (metadata en la partición 1) |
-| Tensores en el conjunto | 1.188 |
-| Atención (`key_length` / `value_length`) | 128 / 128 |
-| RoPE | `freq_base` = 10.000.000; `dimension_count` = 64 |
-| Calibración de la imatrix | 23.738 tokens (`calibration.txt:shard0of1`) |
-| Descargas / likes | 0 / 2 |
+| Licencia | minimax-community (etiqueta `license: other` en el repo) |
+| Formato de pesos | GGUF (multiples tiers organizados en carpetas de partes) |
 
 ## Arquitectura y entrenamiento
+El modelo base es un transformer de tipo mixture-of-experts con 426.200 millones de parametros totales. La informacion disponible no detalla el numero de parametros activos por token, el numero de expertos, la dimension oculta ni la composicion exacta del dataset de entrenamiento. Si se sabe, por la model card, que los expertos fueron entrenados en precision de 4 bits (formato NVFP4), lo que constituye una decision de diseno relevante: implica que el checkpoint de referencia ya incorpora cuantizacion en los expertos y que las conversiones posteriores a 1 y 2 bits parten de una base ya comprimida, con la consiguiente acumulacion de error.
 
-El modelo base es un MoE con arquitectura `minimax-m3`: capas con expertos enrutados por un router gate (en F32 en esta cuantización), expertos compartidos y una MLP densa, más un mecanismo de atención dispersa gobernado por un indexer. La variante 3.1 introduce ese indexer de atención, y el GGUF expone la clave `minimax-m3.attention.indexer.first_layer` con valor `0` para que las capas 0-2 también usen atención dispersa. La atención tiene `key_length = value_length = 128`, lo que no coincide con el valor por defecto `embedding_length / head_count` = 96, un detalle que cualquier loader debe respetar para dar forma correcta al tensor Q.
-
-Los pesos originales se publicaron como expertos en NVFP4 de 4 bits con cuantización consciente del entrenamiento (QAT). El proceso de esta ficha es una recuantización: los expertos se comprimen a ~2 bits con una imatrix de activaciones real construida sobre 23.738 tokens, y los tensores sensibles (atención, MLP densa, expertos compartidos, embeddings) se mantienen en Q8_0. No se dispone de información sobre el dataset de preentrenamiento, el número de tokens vistos, el cómputo empleado ni las etapas de alineación (RLHF/DPO) del modelo base. El autor indica que está preparando un nivel de mayor calidad (proyecciones down en 3 bits, ~146 GB).
-
-La validación de la cuantización se hizo comparando logits con implementación forzada por profesor (*teacher forcing*) entre una referencia en PyTorch FP32, validada paso a paso contra el checkpoint original, y llama.cpp parcheado para M3.1, sobre los mismos token ids. La integridad está verificada: las 13 particiones coinciden con sus SHA-256 publicados, se parsearon las cabeceras y tablas de tensores y se comprobó el tamaño exacto de cada archivo sin bytes sobrantes ni ausentes.
+La innovacion tecnica principal de esta distribucion no esta en el modelo sino en el runtime: Sparsa implementa streaming de expertos desde SSD hacia RAM y VRAM, de modo que solo una parte de los pesos reside en memoria rapida y el resto se carga bajo demanda. El autor aplica ademas GPTQ secuencial sobre algunos tiers (`IQ1_S-GPTQ`, `IQ1_M-GPTQ-v2`, `IQ2_XXS-GPTQ`, `IQ2_XXS-GPTQ-v2`) para reducir el error de redondeo, y en el tier `IQ2_XXS-GPTQ-v2` emplea un layout de tipos por capa denominado "Maya-S" con mezcla de tipos gate/up en cinco capas y sin tensores de indexer en las capas 0-2. No se dispone de informacion sobre el proceso de alineacion (RLHF, DPO) del modelo base.
 
 ## Capacidades
-
-- Generación de texto conversacional: el repositorio está etiquetado como `conversational`, y la model card confirma que la cuantización IQ2_XS «escribe texto coherente».
-- Ejecución local de un MoE de 426 B mediante offload de expertos a RAM del sistema (`-ot "exps=CPU"`), manteniendo el resto en GPU.
-- Atención dispersa mediante indexer en las capas 0-2 y siguientes, siempre que se use una compilación de llama.cpp con el parche de MiniMax-M3.1.
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`); la model card no documenta el mecanismo concreto.
-- Inferencia multi-turno con prompts largos: las pruebas de fidelidad incluyeron 8 prompts, dos de ellos de más de 4K tokens, y 935 posiciones evaluadas.
-- Razonamiento, código, matemáticas, visión, audio, tool calling y capacidades de agente: no disponible en la información proporcionada.
+- Generacion de texto conversacional en contextos de hasta 32K tokens, segun las mediciones del autor.
+- Razonamiento y escritura: la model card reporta pruebas de "writing" a contexto de 32K.
+- Soporte de conversacion multi-turno (tag `conversational`).
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere integracion con APIs tipo OpenAI en el runtime Sparsa.
+- Capacidades de codigo: la evaluacion de calidad incluye un "hard code prompt", aunque no se detalla el rendimiento especifico.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible (el repo no declara idiomas).
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
-
-- Investigación en cuantización extrema: sirve como caso de estudio reproducible de cómo afecta IQ2_XS a un MoE de 426 B, con métricas publicadas (KL 1,92, acuerdo top-1 46,8 %) y sumas SHA-256 verificables para replicar experimentos.
-- Despliegue de bajo presupuesto en VRAM: con 2× RTX 5070 de 12 GB y 128 GB de DDR4, el modelo carga en 32-35 s manteniendo los expertos enrutados en CPU; útil para entornos donde la RAM es abundante y la GPU escasa.
-- Prototipado conversacional offline: al escribir texto coherente, permite probar flujos de chat multi-turno sin depender de APIs externas, aceptando la pérdida de calidad frente al modelo original.
-- Validación de llama.cpp y de la implementación de `minimax-m3`: el repositorio incluye detalles de claves GGUF (`attention.key_length`, `rope.freq_base`, `minimax-m3.attention.indexer.first_layer`) útiles para desarrolladores que implementen o verifiquen el soporte del loader.
-- Comparación de recetas de cuantización: la métrica de perplejidad (68,0 frente a 39,7 de referencia, 1,71×) permite contrastar esta receta IQ2_XS con la futura tier de 3 bits (~146 GB) cuando esté disponible.
-- Pruebas de integridad y pipelines de descarga: los 13 archivos, con tamaños entre 3,4 GB y 18,2 GB y hashes publicados en `SHA256SUMS`, permiten ejercitar procedimientos de verificación y reanudación de descargas en infraestructura propia.
-- Evaluación de atención dispersa: con el parche aplicado, sirve para medir el efecto del indexer M3.1 en capas tempranas frente al fallback denso de llama.cpp estándar.
+- Experimentacion e investigacion en hardware de consumo: el tier `IQ2_XS-D3` (146,1 GB) o `IQ2_KT` (123,8 GB) permite ejecutar un modelo de 426 B en un PC con 128 GB de RAM, lo que habilita estudios de comportamiento de modelos frontera sin acceso a clusters.
+- Evaluacion comparativa de tecnicas de cuantizacion: los distintos tiers con metricas top-1 y KL64 publicadas permiten medir el impacto de IQ1/IQ2/IQ3/IQ4/NVFP4 sobre las mismas prompts, util para investigar metodos de compresion.
+- Generacion de texto asistida en local con contexto largo: el tier `IQ2_XXS` sostiene escritura a 32K de contexto a unos 8 tokens/s, adecuado para tareas por lotes o asincronas donde la latencia no es critica.
+- Desarrollo y validacion del propio runtime Sparsa: el repo sirve como banco de pruebas para el streaming de expertos, el soporte de GPTQ secuencial y la compatibilidad con llama.cpp parcheado.
+- Prototipado de asistentes conversacionales autoalojados: con 245 tokens/s de prefill y contexto de 32K, un equipo pequeno puede desplegar un prototipo conversacional sin depender de APIs externas.
+- Reproduccion de evaluaciones de calidad: los pares top-1/KL64 frente a una referencia FP32 permiten auditar la fidelidad de cada tier antes de comprometerse con un despliegue.
+- Formacion y docencia: ilustra de forma tangible el compromiso entre tamano, cuantizacion, memoria y calidad en modelos MoE de gran escala.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor publica metricas de fidelidad de cuantizacion frente a una referencia FP32 (6 prompts cortos, 679 posiciones), que se recogen a continuacion:
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos numéricos son métricas de fidelidad de la cuantización frente a una referencia FP32 y un smoke test de velocidad.
+| Tier | Tamano | Top-1 | KL64 | Notas |
+|---|---:|---:|---:|---|
+| IQ1_S | 94,8 GB | 44,3 % | 1,926 | Incoherente en la practica (bucle "and and and...") |
+| IQ1_M | 106,6 GB | 47,1 % | 1,673 | Tier usable mas pequeno; degradado |
+| IQ2_KT | 123,8 GB | 56,3 % | 1,292 | Mejor 2-bit por byte medido; solo Sparsa |
+| IQ2_XXS | 124,5 GB | 52,0 % | 1,804 | Tambien carga en llama.cpp parcheado |
+| IQ2_XS-D3 | 146,1 GB | 59,4 % | 1,211 | Opcion por defecto; corre en PC de 128 GB |
+| IQ2_KL | 152,7 GB | 59,8 % | 1,184 | Ligeramente mejor que D3; solo Sparsa |
+| IQ3_K | 191,2 GB | 69,8 % | 0,847 | Salto de calidad respecto a 2 bits |
+| IQ4_KS | 233,6 GB | 74,4 % | 0,760 | El tier IQ mas cercano a NVFP4 |
+| NVFP4 | 246,1 GB | 77,3 % | 0,670 | Mejor calidad medida; copia sin perdida de los expertos 4-bit |
 
-Métricas de fidelidad (8 prompts, dos de ellos de más de 4K tokens, 935 posiciones):
+Metricas adicionales reportadas por el autor: `IQ2_XXS-GPTQ` obtiene KL 0,284 y top-1 84,4 % frente a las respuestas del tier NVFP4 (3.020 tokens de asistente), frente a 0,388 / 82,6 % del mismo layout sin GPTQ. `IQ2_XXS-GPTQ-v2` alcanza KL 0,211 y top-1 87,5 % (referencia Maya-S: 0,199 / 86,8 %); `IQ1_S-GPTQ` logra KL 0,461 y top-1 79,1 %; `IQ1_M-GPTQ-v2`, KL 0,312 y top-1 82,4 %. `IQ2_XS` solo esta medido en llama.cpp parcheado sobre un conjunto mas dificil de ocho prompts (top-1 46,8 %, KL 1,92; `IQ2_XS-D3` en ese mismo conjunto: 53,8 %, 1,58), por lo que no es comparable con la tabla principal.
 
-| Métrica | IQ2_XS | Referencia FP32 |
-|---|---:|---:|
-| Divergencia KL (media) | 1,92 | — |
-| Acuerdo top-1 | 46,8 % | — |
-| Acuerdo top-1 donde la referencia tiene >99 % de confianza | 86,8 % | — |
-| Perplejidad (muestra de texto plano de 2.048 tokens) | 68,0 | 39,7 (1,71×) |
+Rendimiento de inferencia medido por el autor con Sparsa v0.2.0 en el rig descrito (RTX 4060 Ti 16 GB + RTX 5060 Ti 16 GB, Ryzen 9 5900X, 121 GB DDR4, Linux):
 
-Smoke test con llama.cpp sin ajuste fino, medido una vez (2× RTX 5070 12 GB, Ryzen 9 5900X, 128 GB DDR4, expertos en CPU):
-
-| Métrica | Valor |
+| Metrica | Valor |
 |---|---|
-| Tiempo de carga | 32-35 s |
-| Prefill | ≈2,0-2,3 tok/s |
-| Decode | ≈2,9-3 tok/s (valor truncado en la model card) |
+| Prefill, 4.000 tokens | 245 tokens/s |
+| Prefill, 500 tokens | ~6 s |
+| Generacion a 32K de contexto | ~8 tokens/s |
 
 ## Requisitos de hardware
-
-- Almacenamiento: ≈133,1 GB para las 13 particiones, que deben mantenerse juntas; los nombres de archivo determinan el conjunto de splits.
-- VRAM: el conjunto completo no cabe en GPU de consumo. La configuración verificada es 2× RTX 5070 de 12 GB con `-ot "exps=CPU"`, que mantiene los expertos enrutados en RAM del sistema.
-- RAM: 128 GB de DDR4 en la configuración del smoke test. Los expertos ocupan la mayor parte de los 133 GB, por lo que se necesita un volumen de memoria del sistema del mismo orden.
-- Para mantener todo el modelo en VRAM harían falta al menos dos GPU de 80 GB (133 GB de pesos); es una estimación aritmética a partir del tamaño en disco, no un dato publicado.
-- GPU recomendadas: no disponible. La única configuración documentada es la de 2× RTX 5070; con más VRAM puede prescindirse de `-ot "exps=CPU"` y aumentar `-ngl`.
-- Despliegue: llama.cpp con el parche de MiniMax-M3.1 (no en upstream). Comando de referencia: `llama-cli -m IQ2_XS/MiniMax-M3.1-Flash-IQ2_XS-00001-of-00013.gguf -ngl 99 -ot "exps=CPU" -fa on -c 8192`. Soporte en el motor Strata en desarrollo. Otros runners (vLLM, TGI, Ollama) no están documentados en la información disponible.
-- Throughput: prefill ≈2,0-2,3 tok/s y decode ≈2,9-3 tok/s en la configuración citada. Sin datos para configuraciones con más VRAM.
+- VRAM/RAM: el tier mas pequeno (`IQ1_S`, 94,8 GB) no es recomendable por incoherencia. El minimo usable es `IQ1_M` (106,6 GB); el autor recomienda elegir el tier mas grande que quepa en RAM + VRAM dejando unos 10 GB de margen.
+- Configuracion de referencia del autor: dos GPU de 16 GB (RTX 4060 Ti + RTX 5060 Ti) con 121 GB de DDR4 para el tier `IQ2_XXS` de 124,5 GB.
+- PC de 128 GB de RAM: suficiente para `IQ2_XS-D3` (146,1 GB) con streaming desde SSD.
+- GPU recomendadas: no hay datos para A100/H100; el proyecto esta orientado a GPU de consumo con 16 GB y a configuraciones multi-GPU modestas. Para los tiers de 191-246 GB se requiere RAM abundante o streaming desde SSD.
+- Despliegue: el motor previsto es Sparsa (v0.2.2 o superior para los tiers GPTQ-v2; v0.2.1 carga `IQ2_XXS-GPTQ-v2` pero falla con prompts por lotes, corregido en PR #60; v0.2.0 no lo carga). `IQ2_XXS` e `IQ2_XS` pueden cargarse en llama.cpp parcheado; la mayoria de los tiers no cargan en llama.cpp, LM Studio ni Ollama estandar.
+- Latencia y throughput: prefill de 245 tokens/s a 4.000 tokens y ~8 tokens/s de generacion a 32K; el streaming desde SSD funciona pero es mas lento.
 
 ## Comparativa con modelos similares
-
-| Modelo | Parámetros | Contexto | Formato / cuantización | Fidelidad | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| LyJonathan/MiniMax-M3.1-Flash-GGUF (esta ficha) | 426,2 B (MoE) | no disponible | GGUF IQ2_XS + Q8_0/Q6_K, ≈133 GB | KL 1,92; top-1 46,8 %; perplejidad 1,71× | minimax-community | Público en Hugging Face |
-| MiniMaxAI/MiniMax-M3.1-Flash (base) | 426,2 B (MoE) | no disponible | NVFP4 / MXFP8 de 4 bits con QAT | Referencia (FP32 validado) | minimax-community | Público en Hugging Face |
-| Tier de 3 bits anunciada por el autor | 426,2 B (MoE) | no disponible | GGUF, proyecciones down en 3 bits, ~146 GB | no disponible (en preparación) | minimax-community | No publicada |
-| Otras cuantizaciones de MoE de ~400 B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de datos verificables de otros modelos comparables en la información proporcionada; la comparación se limita al modelo base y a la tier anunciada por el mismo autor.
+No disponible. La informacion proporcionada no incluye datos de modelos alternativos comparables (mismo tamano, misma tarea o mismo enfoque de cuantizacion extrema), por lo que no es posible establecer una comparativa rigurosa sin inventar cifras.
 
 ## Limitaciones y advertencias
-
-- La cuantización IQ2_XS está degradada de forma explícita: el propio autor la describe como «notablemente degradada» frente a cuantizaciones típicas. El acuerdo top-1 del 46,8 % implica que más de la mitad de las predicciones difieren del modelo de referencia.
-- Riesgo elevado de alucinación y de errores factuales: la perplejidad es 1,71 veces la de la referencia (68,0 frente a 39,7) en una muestra de texto plano de 2.048 tokens.
-- El acuerdo top-1 sube al 86,8 % solo cuando la referencia tiene más del 99 % de confianza, es decir, el modelo acierta sobre todo en tokens triviales.
-- Requiere un build de llama.cpp con el parche de MiniMax-M3.1: sin él, las capas 0-2 usan atención densa y los pesos del indexer no se aplican, con lo que el comportamiento difiere del previsto.
-- Los 13 archivos deben permanecer juntos; las particiones 2 a 13 solo llevan `split.no`, `split.count` y `split.tensors.count`, sin tokenizer ni metadata propia.
-- Licencia `minimax-community` (etiquetada como `other`): no se han revisado aquí las cláusulas de uso comercial; deben consultarse en el enlace de licencia del modelo base antes de un despliegue en producción.
-- Idiomas soportados no documentados; no se puede garantizar calidad en castellano ni en otros idiomas distintos del inglés.
-- Longitud de contexto no declarada en la model card; `-c 8192` es solo un valor de ejemplo, no una especificación.
-- Throughput muy bajo (~3 tok/s de decode) en la configuración probada, insuficiente para aplicaciones interactivas con requisitos de latencia.
-- Repositorio con 0 descargas y sin resultados de benchmarks de tareas, por lo que no hay evidencia pública de calidad más allá de las métricas de fidelidad del autor.
-- Licencia del modelo base pendiente de verificación para uso comercial; el autor no ofrece garantías sobre el comportamiento en producción.
+- Proyecto experimental: el propio autor lo etiqueta como tal y advierte de que el desarrollo se ha ralentizado, aunque sigue activo.
+- Calidad degradada en baja precision: los expertos se entrenaron en 4 bits (NVFP4), por lo que los tiers de 1 y 2 bits pierden calidad de forma apreciable; un unico prompt de codigo dificil arrastra todas las medias.
+- `IQ1_S` es inutilizable en la practica: entra en bucle ("and and and...") en lugar de generar texto.
+- Compatibilidad restringida: la mayoria de los tiers no cargan en llama.cpp, LM Studio ni Ollama estandar; los marcados como "Sparsa only" requieren el runtime del autor.
+- Dependencia de un runtime de un solo mantenedor: Sparsa es un proyecto personal con versiones muy recientes (v0.2.x) y cambios que rompen compatibilidad entre releases.
+- Licencia `minimax-community`: es una licencia propia, no una licencia open source estandar; hay que revisar sus terminos antes de cualquier uso comercial. El repo la declara como `license: other`.
+- Idiomas soportados no declarados: no hay garantia documentada de calidad multilingue.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; en un modelo de este tipo y con cuantizaciones agresivas es esperable.
+- Sesgos: no documentados en la informacion proporcionada.
+- Requisitos de memoria muy elevados: incluso el tier mas pequeno usable supera los 100 GB, lo que excluye su uso en equipos de consumo convencionales sin streaming desde SSD.
+- Longitud de contexto: las mediciones se hacen a 32K, pero el maximo oficial del modelo base no se especifica.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF
+- Repositorio GGUF: https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE
-- Sumas de verificación SHA-256: https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF/blob/main/SHA256SUMS
-- Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a SteamDB y no guardan relación).
+- Motor Sparsa: https://github.com/LyJonathan/Sparsa
+- Release Sparsa v0.2.2: https://github.com/LyJonathan/Sparsa/releases/tag/sparsa-v0.2.2-experimental

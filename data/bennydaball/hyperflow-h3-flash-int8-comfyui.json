@@ -35,7 +35,7 @@
   ],
   "likes": 35,
   "downloads_30d": 79100,
-  "trending_score": 18,
+  "trending_score": 17,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 96707518008,
@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "HyperFlow H3 Flash — Real-Time 768p Video Generation | Video Rebirth",
-      "url": "https://www.videorebirth.com/lp/hyperflow-flash",
-      "snippet": "HyperFlow H3 Flash is a 14B, six-step video model built on MiniMax H3. It generates 768p video in real time on four B200 GPUs and runs on consumer hardware."
-    },
-    {
-      "title": "VideoRebirthAI/hyperflow-h3-flash · Hugging Face",
-      "url": "https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash",
-      "snippet": "HyperFlow H3 Flash is Video Rebirth's compressed, few-step version of MiniMax-H3. It generates video and synchronized stereo audio together. Showcase: See HyperFlow H3 Flash generated video and audio examples ..."
-    }
-  ]
+  "sources": []
 }

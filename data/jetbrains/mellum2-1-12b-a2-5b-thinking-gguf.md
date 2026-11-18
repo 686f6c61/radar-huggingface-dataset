@@ -1,209 +1,92 @@
 # JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
 
-` blocks.
-   - *Base Model Relation:* Quantized version of the base model.
-   - *Benchmarks:* Not provided in the input. I must state "No se han publicado resultados de benchmarks en la informacion disponible."
-   - *Training Data/RLHF:* Not explicitly detailed in the provided text. I'll note "no disponible" or infer carefully based on "thinking model" and "base_model" relation, but strictly state if unknown.
-   - *Hardware/VRAM:* BF16: 24.3 GB. Q8_0: 12.9 GB. Q6_K: 10.9 GB. Q4_K_M: 8.1 GB. MXFP4: 7.0 GB. Fits consumer GPUs (RTX 3090/4090 with 24GB for Q8/Q6, maybe 4090 for Q4_K_M). Deployment: llama.cpp, Ollama, LM Studio, vLLM (via GGUF bridge or native support), TGI (not native for GGUF, but can use llama.cpp server). Latency/throughput: not provided.
-   - *Comparables:* Not provided. I'll state "no disponible" or mention similar MoE thinking models if I can infer, but better to stick to "no disponible" per rules. Actually, I can mention similar architectures like Mixtral or Qwen2.5-MoE, but the prompt says "Si no conoces modelos comparables, indica 'no disponible'." I'll stick to that to be safe.
-   - *Limitations:* English only, MoE routing complexity, thinking mode adds latency, potential hallucination in reasoning steps, Apache 2.0 allows commercial use but requires attribution.
-
-4.  **Draft Construction (Mental Refinement - Spanish Spain):**
-   *Resumen:* Mellum2.1-12B-A2.5B-Thinking-GGUF es una versión cuantizada del modelo de razonamiento MoE desarrollado por JetBrains. Diseñado para tareas que requieren cadenas de pensamiento estructuradas, el modelo activa 2.500 millones de parámetros de un total de 12.150 millones por token, manteniendo una ventana de contexto de 131.072 tokens. Su relevancia actual radica en la democratización del razonamiento complejo mediante arquitecturas MoE eficientes y la integración nativa de bloques de pensamiento (`<think>...`), lo que permite una mayor transparencia y depuración en pipelines de producción. Al distribuirse en formato GGUF, facilita su despliegue local y en edge devices sin depender de frameworks propietarios.
-
-   *Especificaciones tecnicas:* (Fill table exactly as requested)
-   | Parametro | Valor |
-   |---|---|
-   | Arquitectura | Mixture-of-Experts (MoE) |
-   | Parametros totales | 12.149.923.072 (~12,15B) |
-   | Parametros activos | 2.500.000.000 (~2,5B) |
-   | Longitud de contexto | 131.072 tokens |
-   | Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M, MXFP4_MOE |
-   | Idiomas soportados | Inglés (en) |
-   | Licencia | Apache 2.0 |
-   | Formato de pesos | GGUF |
-
-   *Arquitectura y entrenamiento:* El modelo sigue una arquitectura Transformer MoE con 64 expertos y un routing mechanism que activa 8 expertos por token. Esta configuración optimiza la eficiencia computacional al mantener una ventana de contexto de 131.072 tokens sin saturar la memoria de cómputo. El entrenamiento no se detalla en la documentación proporcionada, pero se indica que es un modelo base con fine-tuning para modo de pensamiento (thinking mode), que estructura la salida en bloques de razonamiento explícitos antes de la respuesta final. No se menciona el uso de RLHF o DPO en el texto base, por lo que se asume un entrenamiento supervisado o por imitación centrado en la coherencia lógica.
-
-   *Capacidades:*
-   - Generación de texto con razonamiento paso a paso (chain-of-thought) estructurado en bloques XML.
-   - Resolución de problemas lógicos y matemáticos mediante explicaciones detalladas.
-   - Generación y depuración de código, alineado con el ecosistema de JetBrains.
-   - Soporte de contexto largo (hasta 131.072 tokens) para análisis de documentos extensos.
-   - Modo de pensamiento explícito que facilita la auditoría y corrección de errores de lógica.
-   - No se reporta soporte nativo para tool calling, agentes multi-paso o capacidades multimodales (visión/audio).
-
-   *Casos de uso:*
-   - Análisis de documentación técnica extensa: el modelo puede procesar manuales o especificaciones de hasta 131K tokens, extrayendo relaciones lógicas y generando resúmenes estructurados sin perder contexto.
-   - Asistente de programación con explicación de código: los desarrolladores pueden solicitar refactorizaciones o explicaciones de algoritmos complejos, aprovechando el modo thinking para obtener pasos lógicos antes de la implementación.
-   - Depuración de pipelines de CI/CD: al analizar logs o errores de compilación, el modelo estructura su diagnóstico paso a paso, facilitando la identificación de puntos de fallo en entornos automatizados.
-   - Generación de tests unitarios razonados: el modelo puede inferir casos borde y precondiciones a partir de especificaciones, emitiendo primero la lógica de validación antes de generar el código de prueba.
-   - Asesoría técnica en inglés: dado su entrenamiento monolingüe, es idóneo para foros, documentación o soporte técnico donde se requiera precisión terminológica en inglés.
-   - Investigación y revisión académica: la ventana de contexto y el razonamiento explícito permiten comparar artículos o patentes, destacando similitudes y diferencias metodológicas de forma auditada.
-
-   *Benchmarks y rendimiento:* No se han publicado resultados de benchmarks en la informacion disponible.
-
-   *Requisitos de hardware:*
-   - VRAM estimada: 7,0 GB (MXFP4_MOE), 8,1 GB (Q4_K_M), 10,9 GB (Q6_K), 12,9 GB (Q8_0), 24,3 GB (BF16).
-   - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB VRAM) para Q8_0/Q6_K; tarjetas con 8-12 GB VRAM para Q4_K_M o MXFP4_MOE.
-   - Compatibilidad con GPU consumer: Sí, cabe en RTX 3060/4060 (12 GB) con Q4_K_M/MXFP4_MOE, y en RTX 3090/4090 con cuantizaciones superiores.
-   - Opciones de despliegue: llama.cpp (nativo), Ollama, LM Studio, llama-server (API OpenAI compatible). No es compatible nativamente con vLLM o TGI sin conversión previa a safetensors/ONNX.
-   - Latencia y throughput estimados: no disponible (depende de la cuantización, hardware y longitud de salida; el modo thinking incrementa la latencia de generación inicial).
-
-   *Comparativa con modelos similares:* no disponible (no se proporcionan datos de modelos alternativos directos en la documentación de referencia).
-
-   *Limitaciones y advertencias:*
-   - Restricción idiomática: entrenado y optimizado exclusivamente para inglés; su rendimiento en otros idiomas no está garantizado.
-   - Latencia en modo thinking: la generación de bloques `<think>...` antes de la respuesta final aumenta el tiempo de primer token (TTFT) y el consumo de tokens de salida.
-   - Riesgo de alucinación lógica: aunque el razonamiento explícito mejora la transparencia, no elimina la posibilidad de errores de inferencia en problemas complejos o con datos incompletos.
-   - Ausencia de tool calling/agentes: no está diseñado para interacción directa con APIs externas o ejecución de código autónomo sin integración manual.
-   - Licencia Apache 2.0: permite uso comercial y modificación, pero exige conservar el aviso de copyright y la licencia en distribuciones.
-   - Formato GGUF: requiere runtimes específicos; no es directamente intercambiable con safetensors sin conversión.
-
-   *Enlaces:*
-   - Hugging Face: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
-   - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
-   - llama.cpp: https://github.com/ggml-org/llama.cpp
-   - Ollama: https://ollama.com
-   - JetBrains: https://www.jetbrains.com/
-
-5.  **Self-Correction & Verification against Constraints:**
-   - *Structure:* Matches exactly.
-   - *Language:* Spanish (Spain). Checked grammar, terminology (e.g., "parámetros activos", "ventana de contexto", "cuantización").
-   - *Capitalization:* "Solo la primera palabra de los titulos va en mayuscula." -> I need to fix the titles in the markdown to match this rule. The prompt says "Solo la primera palabra de los titulos va en mayuscula." I will adjust all headings accordingly.
-   - *No emojis:* Checked.
-   - *Only Markdown:* Checked.
-   - *No invented data:* I explicitly marked benchmarks as unavailable, training details as not specified, and comparable models as unavailable. I used exact numbers from the prompt.
-   - *Table format:* Checked.
-   - *Specific rows:* Arquitectura, Parametros totales, Parametros activos, Longitud de contexto, Tipos de cuantizacion, Idiomas soportados, Licencia, Formato de pesos. All present.
-   - *Capacidades/Casos de uso:* 6 cases, detailed.
-   - *Hardware:* VRAM, GPUs, consumer fit, deployment, latency. All addressed.
-   - *Titles capitalization fix:* I will rewrite the headings to strictly follow "Solo la primera palabra en mayúscula".
-     ## Resumen
-     ## Especificaciones tecnicas
-     ## Arquitectura y entrenamiento
-     ## Capacidades
-     ## Casos de uso
-     ## Benchmarks y rendimiento
-     ## Requisitos de hardware
-     ## Comparativa con modelos similares
-     ## Limitaciones y advertencias
-     ## Enlaces
-     (Note: The prompt itself has lowercase "tecnicas", "tecnico", etc. I will follow the exact prompt casing for headings but ensure only the first word is capitalized. I'll adjust to standard Spanish but keep the rule strict: "Solo la primera palabra de los titulos va en mayuscula." -> e.g., "## Resumen", "## Especificaciones técnicas", "## Arquitectura y entrenamiento", etc. I'll fix typos in my draft headings to match the prompt's exact strings but apply the capitalization rule.)
-
-   Let's carefully check the exact heading strings requested:
-   ## Resumen
-   ## Especificaciones tecnicas
-   ## Arquitectura y entrenamiento
-   ## Capacidades
-   ## Casos de uso
-   ## Benchmarks y rendimiento
-   ## Requisitos de hardware
-   ## Comparativa con modelos similares
-   ## Limitaciones y advertencias
-   ## Enlaces
-
-   I will use these exact strings. I'll ensure only the first word is capitalized as requested.
-
-   Check content against rules:
-   - "NO inventes datos." -> I used "no disponible" where appropriate.
-   - "Usa castellano de Espana, sin faltas de ortografia." -> I will proofread carefully.
-   - "Solo la primera palabra de los titulos va en mayuscula." -> I will strictly apply this.
-   - "No uses emojis." -> Checked.
-   - "Responde unicamente con el Markdown de la ficha..." -> Checked.
-   - "Sé especifico y tecnico." -> I'll refine the language to be more precise (e.g., specifying routing, KV cache implications, GGUF specifics).
-
-   Refining content for technical precision:
-   - In "Arquitectura y entrenamiento", I'll clarify that the GGUF repo is a quantized derivative of the base model, and training details are not provided in the source.
-   - In "Capacidades", I'll explicitly note the absence of multimodal/tool-calling based on the source.
-   - In "Hardware", I'll calculate VRAM more precisely including KV cache overhead for 131K context. For 131K tokens at Q4_K_M (8.1GB model), KV cache will be significant. I'll mention that VRAM needs to account for KV cache, recommending 12-16GB for Q4_K_M with full context.
-   - I'll adjust the "Comparativa" to explicitly state "no disponible" as instructed.
-   - I'll ensure all tables are correctly formatted.
-
-   Let's draft it carefully. 
-   Self-Correction/Verification during drafting:
-   - Check heading capitalization: The prompt says "Solo la primera palabra de los titulos va en mayuscula." I will strictly follow: `## Resumen`, `## Especificaciones tecnicas`, `## Arquitectura y entrenamiento`, `## Capacidades`, `## Casos de uso`, `## Benchmarks y rendimiento`, `## Requisitos de hardware`, `## Comparativa con modelos similares`, `## Limitaciones y advertencias`, `## Enlaces`. (Note: I'll keep the exact spelling from prompt, even if "tecnicas" lacks accent, to be safe, or I'll fix it to standard Spanish but keep the rule. I'll stick to the prompt's exact strings but capitalize only first word.)
-   - Check table rows: exactly as requested.
-   - Check language: Spanish Spain.
-   - Check tone: Technical, senior editor.
-   - Check data: All from prompt. No benchmarks. No training data details. Explicitly marked.
-   - Check cases: 6 concrete cases.
-   - Check hardware: VRAM, GPUs, consumer, deployment, latency. All covered.
-   - Check links: HF + base + llama.cpp + ollama + jetbrains.
-
-   Everything looks solid. I will generate the response now. 
-   One minor thing: The prompt says "Especificaciones tecnicas" (without accent). I will use exactly that heading. I'll apply the capitalization rule strictly.
-   I will ensure the markdown renders correctly.
-   Proceed. 
-   Output matches the response. 
-   [Done] 
-   *Self-Correction/Refinement during thought*: 
-   I need to make sure the "Parametros activos" row is included only if MoE. The model is MoE, so I'll include it.
-   I'll double-check the VRAM calculation: 8.1GB for Q4_K_M model weights. KV cache for 131K tokens at 4-bit is roughly (131072 * 2 layers * head_dim * 0.5 bytes) + overhead. It's substantial. I'll note that VRAM estimations are for model weights and recommend accounting for KV cache overhead, especially at max context.
-   I'll adjust the hardware section to be precise.
-   All good. Output matches. 
-   Generating. 
-   [Output Generation] -> *Proceeds*
-
-
 ## Resumen
-Mellum2.1-12B-A2.5B-Thinking-GGUF es una versión cuantizada del modelo de razonamiento MoE desarrollado por JetBrains, diseñado para tareas que exigen cadenas de pensamiento estructuradas y auditables. El modelo activa 2.500 millones de parámetros de un total de 12.149 millones por token, manteniendo una ventana de contexto de 131.072 tokens. Su relevancia actual radica en la democratización del razonamiento complejo mediante arquitecturas MoE eficientes y la integración nativa de bloques de pensamiento (`<think>...`), lo que permite una mayor transparencia y depuración en pipelines de producción. Al distribuirse en formato GGUF, facilita su despliegue local y en edge devices sin depender de frameworks propietarios, optimizando el uso de memoria en hardware consumer y profesional.
+
+Mellum2.1-12B-A2.5B-Thinking-GGUF es la distribución cuantizada en formato GGUF del modelo de razonamiento Mellum2.1-12B-A2.5B-Thinking, desarrollado por JetBrains. Se trata de un modelo Mixture-of-Experts (MoE) con 12.149.923.072 parámetros totales y aproximadamente 2.500 millones de parámetros activos por token (64 expertos, 8 activados por token), diseñado específicamente para tareas de razonamiento mediante cadenas de pensamiento emitidas en bloques `<think>...</think>` antes de la respuesta final.
+
+El modelo base incorpora una ventana de contexto de 131.072 tokens y una cabeza de predicción multi-token (MTP) que actúa como borrador especulativo en llama.cpp, acelerando la generación sin alterar la salida. Esta variante GGUF publica cinco niveles de cuantización (BF16, Q8_0, Q6_K, Q4_K_M y MXFP4_MOE) junto con los ficheros de la cabeza MTP, lo que permite desplegar el modelo en hardware de consumo con pérdidas de calidad medidas y documentadas.
+
+La relevancia de esta publicación radica en que combina razonamiento explícito, arquitectura MoE eficiente en cómputo y licencia Apache 2.0, con builds listos para llama.cpp, Ollama y LM Studio. Con más de 350.000 descargas en Hugging Face, se posiciona como una opción práctica para integrar razonamiento local en entornos de desarrollo sin depender de APIs externas.
 
 ## Especificaciones tecnicas
+
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) |
-| Parametros totales | 12.149.923.072 (~12,15B) |
-| Parametros activos | 2.500.000.000 (~2,5B) |
+| Arquitectura | Mixture-of-Experts (MoE), transformer con 64 expertos y 8 activados por token; cabeza MTP adicional para decodificación especulativa |
+| Parametros totales | 12.149.923.072 (12,15 B) |
+| Parametros activos | Aproximadamente 2,5 B por token (denominación A2.5B) |
 | Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M, MXFP4_MOE |
 | Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (un fichero por cuantización; también ficheros combinados modelo + cabeza MTP) |
 
 ## Arquitectura y entrenamiento
-El modelo sigue una arquitectura Transformer MoE con 64 expertos y un mecanismo de routing que activa 8 expertos por token. Esta configuración optimiza la eficiencia computacional al mantener una ventana de contexto de 131.072 tokens sin saturar la memoria de cómputo, aunque requiere una gestión cuidadosa del KV cache durante la inferencia. El repositorio indica que se trata de una cuantización derivada del modelo base `JetBrains/Mellum2.1-12B-A2.5B-Thinking`, fine-tuned para activar un modo de pensamiento explícito que estructura la salida en bloques de razonamiento antes de la respuesta final. No se proporcionan detalles sobre el corpus de entrenamiento (número de tokens o composición), ni se menciona el uso de RLHF, DPO o técnicas de alineación avanzadas, por lo que se asume un entrenamiento supervisado centrado en la coherencia lógica y la precisión técnica.
+
+Mellum2.1 Thinking es un transformer con arquitectura Mixture-of-Experts: 64 expertos en total, de los cuales se activan 8 por token, lo que resulta en unos 2,5 B de parámetros activos sobre 12,15 B totales. El modelo fue entrenado con una cabeza de predicción multi-token (MTP): un bloque transformer adicional con la misma forma de atención y MoE que una capa del modelo, que predice el token siguiente al recién muestreado. En llama.cpp esta cabeza se usa como borrador especulativo (`--spec-type draft-mtp`), de modo que el modelo completo verifica cada token propuesto y la salida permanece idéntica mientras se acelera la generación cuando los borradores se aceptan.
+
+El modelo emite su cadena de pensamiento dentro de bloques `<think>...</think>` antes de la respuesta final, lo que lo orienta a tareas de razonamiento multi-paso. La model card de esta distribución GGUF no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; esa información se remite a la model card del modelo base. La cuantización se evaluó midiendo divergencia KL y coincidencia de top-token frente a los logits en BF16 sobre Wikitext-2 con `n_ctx=512`: Q8_0 presenta KLD 0,008 y 96,1 % de coincidencia; Q6_K, 0,020 y 93,9 %; Q4_K_M, 0,075 y 88,0 %; y MXFP4_MOE, 0,115 y 85,6 %.
 
 ## Capacidades
-- Generación de texto con razonamiento paso a paso (chain-of-thought) estructurado en bloques XML.
-- Resolución de problemas lógicos, matemáticos y de optimización mediante explicaciones detalladas.
-- Generación, refactorización y depuración de código, alineado con las herramientas de JetBrains.
-- Soporte de contexto largo (hasta 131.072 tokens) para análisis de documentación, logs o repositorios extensos.
-- Modo de pensamiento explícito que facilita la auditoría, corrección de errores y validación humana de la lógica interna.
-- No se reporta soporte nativo para tool calling, agentes multi-paso, ni capacidades multimodales (visión, audio).
+
+- Generación de texto conversacional con razonamiento explícito en bloques `<think>...</think>` antes de la respuesta final.
+- Razonamiento multi-paso y resolución de problemas (el ejemplo de la model card es determinar si 1024 es una potencia de 2 explicando el razonamiento).
+- Decodificación especulativa mediante la cabeza MTP integrada, con verificación por el modelo completo y salida sin cambios.
+- Servicio con API compatible con OpenAI a través de `llama-server` en `http://localhost:8080/v1`.
+- Soporte de llama.cpp, Ollama, LM Studio y otros runtimes compatibles con GGUF.
+- Capacidades multilingües limitadas al inglés según el campo `language` de la model card.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, visión ni audio.
 
 ## Casos de uso
-- Análisis de documentación técnica extensa: el modelo puede procesar manuales o especificaciones de hasta 131K tokens, extrayendo relaciones lógicas y generando resúmenes estructurados sin perder contexto, ideal para equipos de ingeniería.
-- Asistente de programación con explicación de código: los desarrolladores pueden solicitar refactorizaciones o explicaciones de algoritmos complejos, aprovechando el modo thinking para obtener pasos lógicos antes de la implementación final.
-- Depuración de pipelines de CI/CD: al analizar logs de compilación o errores de runtime, el modelo estructura su diagnóstico paso a paso, facilitando la identificación de puntos de fallo en entornos automatizados.
-- Generación de tests unitarios razonados: el modelo puede inferir casos borde y precondiciones a partir de especificaciones, emitiendo primero la lógica de validación antes de generar el código de prueba, reduciendo falsos positivos.
-- Asesoría técnica en inglés: dado su entrenamiento monolingüe, es idóneo para foros, documentación o soporte técnico donde se requiera precisión terminológica y coherencia técnica en inglés.
-- Investigación y revisión académica: la ventana de contexto y el razonamiento explícito permiten comparar artículos o patentes, destacando similitudes y diferencias metodológicas de forma auditada y reproducible.
+
+- Razonamiento matemático local: el modelo puede resolver problemas paso a paso emitiendo la cadena de pensamiento en `<think>`, útil para asistentes de estudio o validación de cálculos sin conexión a APIs externas.
+- Asistencia al desarrollo en IDE: con 131.072 tokens de contexto puede analizar ficheros y fragmentos de código extensos y razonar sobre ellos antes de responder, integrándose en herramientas locales compatibles con la API de OpenAI.
+- Despliegue en estaciones de trabajo con GPU de consumo: la cuantización Q4_K_M (8,1 GB) o MXFP4_MOE (7,0 GB) permite ejecutar el modelo en equipos con VRAM moderada manteniendo una coincidencia de top-token del 88,0 % y 85,6 % respectivamente.
+- Servicio de inferencia autoalojado: `llama-server` expone un endpoint compatible con OpenAI, lo que permite sustituir llamadas a APIs comerciales en prototipos y pipelines internos con licencia Apache 2.0.
+- Generación acelerada con decodificación especulativa: usando los ficheros combinados modelo + MTP (por ejemplo, `MTP-Q4_K_M`, 8,3 GB) se reduce la latencia en generación de texto largo sin modificar la salida.
+- Evaluación y experimentación en investigación: las cinco cuantizaciones con métricas de KLD y coincidencia de top-token publicadas permiten estudiar el compromiso entre tamaño y fidelidad al modelo BF16 de referencia.
+- Procesamiento de documentos largos en inglés: el contexto de 131.072 tokens admite resumir o razonar sobre documentos extensos en una sola pasada.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible.
+
+No se han publicado resultados de benchmarks en la información disponible. La model card de esta distribución GGUF únicamente incluye métricas de fidelidad de cuantización frente a BF16 sobre Wikitext-2 (`n_ctx=512`):
+
+| Cuantizacion | Tamano | KLD vs BF16 (menor es mejor) | Coincidencia top-token (mayor es mejor) |
+|---|---|---|---|
+| BF16 | 24,3 GB | referencia | referencia |
+| Q8_0 | 12,9 GB | 0,008 | 96,1 % |
+| Q6_K | 10,9 GB | 0,020 | 93,9 % |
+| Q4_K_M | 8,1 GB | 0,075 | 88,0 % |
+| MXFP4_MOE | 7,0 GB | 0,115 | 85,6 % |
 
 ## Requisitos de hardware
-- VRAM estimada (solo pesos): 7,0 GB (MXFP4_MOE), 8,1 GB (Q4_K_M), 10,9 GB (Q6_K), 12,9 GB (Q8_0), 24,3 GB (BF16). Se debe añadir memoria para el KV cache, especialmente a 131K tokens (recomendable +4-8 GB adicionales según cuantización).
-- GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB VRAM) para Q8_0/Q6_K con contexto completo; tarjetas con 8-12 GB VRAM para Q4_K_M o MXFP4_MOE.
-- Compatibilidad con GPU consumer: Sí, cabe en RTX 3060/4060 (12 GB) con Q4_K_M/MXFP4_MOE, y en RTX 3090/4090 con cuantizaciones superiores.
-- Opciones de despliegue: llama.cpp (nativo), Ollama, LM Studio, llama-server (API OpenAI compatible). No es compatible nativamente con vLLM o TGI sin conversión previa a safetensors/ONNX.
-- Latencia y throughput estimados: no disponible. El modo thinking incrementa el TTFT (time-to-first-token) y el consumo de tokens de salida; el throughput depende de la cuantización, el hardware y la longitud de la ventana de contexto.
+
+- VRAM estimada para inferencia: aproximadamente 7,0 GB (MXFP4_MOE), 8,1 GB (Q4_K_M), 10,9 GB (Q6_K), 12,9 GB (Q8_0) y 24,3 GB (BF16) solo para los pesos; hay que añadir la memoria de la caché KV para el contexto configurado, que con 131.072 tokens puede ser considerable.
+- Ficheros combinados con cabeza MTP: 7,3 GB (MXFP4_MOE), 8,3 GB (Q4_K_M), 11,3 GB (Q6_K), 13,4 GB (Q8_0) y 25,2 GB (BF16); la cabeza MTP suelta en BF16 ocupa 1,8 GB.
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño de pesos, las cuantizaciones de 4 bits caben en GPUs de consumo con 8-12 GB de VRAM; Q8_0 y BF16 requieren GPUs de mayor memoria (por ejemplo, A100 o H100) o partición entre CPU y GPU.
+- Cabe en GPU de consumo: sí, al menos las variantes Q4_K_M y MXFP4_MOE según el tamaño de los pesos; el contexto completo de 131.072 tokens condiciona la VRAM efectiva necesaria.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama, LM Studio y otros runtimes compatibles con GGUF.
+- Latencia y throughput: no disponibles. La model card indica que la decodificación especulativa con la cabeza MTP acelera la generación cuando los borradores se aceptan, pero no publica cifras de rendimiento.
 
 ## Comparativa con modelos similares
-no disponible
+
+No disponible. La información proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
-- Restricción idiomática: entrenado y optimizado exclusivamente para inglés; su rendimiento en otros idiomas no está garantizado y puede degradarse significativamente.
-- Latencia en modo thinking: la generación de bloques `<think>...` antes de la respuesta final aumenta el tiempo de primer token y el consumo de tokens de salida, impactando la interactividad en tiempo real.
-- Riesgo de alucinación lógica: aunque el razonamiento explícito mejora la transparencia, no elimina la posibilidad de errores de inferencia en problemas complejos, ambigüedades o con datos incompletos.
-- Ausencia de tool calling/agentes: no está diseñado para interacción directa con APIs externas, ejecución de código autónomo o planificación multi-paso sin integración manual mediante frameworks de agentes.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero exige conservar el aviso de copyright y la licencia en distribuciones; se recomienda verificar compatibilidad con políticas internas de datos sensibles.
-- Formato GGUF: requiere runtimes específicos; no es directamente intercambiable con safetensors sin conversión, lo que puede limitar la integración en infraestructuras estandarizadas que dependan de PyTorch o Transformers.
+
+- Idiomas: la model card declara únicamente inglés (`en`); no se documenta soporte de castellano ni de otros idiomas.
+- Razonamiento explícito: el modelo emite cadenas de pensamiento en `<think>...</think>`, lo que incrementa el número de tokens generados y la latencia frente a modelos sin modo thinking; la model card usa `max_tokens=81920` en el ejemplo.
+- Alucinación: no se documentan evaluaciones específicas de tasa de alucinación en la información disponible.
+- Sesgos: no se documentan análisis de sesgos en la información disponible.
+- Cuantización: las variantes de 4 bits pierden fidelidad respecto a BF16 (Q4_K_M con KLD 0,075 y 88,0 % de coincidencia de top-token; MXFP4_MOE con KLD 0,115 y 85,6 %), lo que puede afectar a tareas sensibles a la precisión.
+- Contexto: aunque la ventana es de 131.072 tokens, la memoria de caché KV necesaria para aprovecharla condiciona el hardware; la model card no publica requisitos de VRAM para contexto completo.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base en su propia model card.
+- La cabeza MTP solo aporta aceleración en runtimes que soportan decodificación especulativa con `--spec-type draft-mtp` en llama.cpp; en otros runtimes puede no utilizarse.
 
 ## Enlaces
-- Hugging Face: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
+
+- Repositorio GGUF en Hugging Face: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Ollama: https://ollama.com
 - JetBrains: https://www.jetbrains.com/
+- JetBrains en Wikipedia: https://en.wikipedia.org/wiki/JetBrains

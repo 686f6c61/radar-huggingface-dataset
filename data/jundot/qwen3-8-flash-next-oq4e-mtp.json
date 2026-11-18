@@ -26,8 +26,8 @@
     "4-bit",
     "region:us"
   ],
-  "likes": 134,
-  "downloads_30d": 56931,
+  "likes": 135,
+  "downloads_30d": 57468,
   "trending_score": 10,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.8-Flash-Next - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next?file=Qwen3.8-Flash-Next",
-      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
-    },
-    {
-      "title": "jedisct1/Qwen3.8-Flash-Next-oQ4e-128k · Hugging Face",
-      "url": "https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-128k",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-128k · Hugging Face",
-      "url": "https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-128k",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
-    },
-    {
-      "title": "Qwen3.8-Flash - QwenCloud",
-      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
-      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
-    }
-  ]
+  "sources": []
 }

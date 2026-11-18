@@ -5,7 +5,7 @@
   "author": "Ayaka157",
   "url": "https://huggingface.co/Ayaka157/RetNet-0.5B-v21.1-chat",
   "created_at": "2026-10-29T02:58:36.000Z",
-  "updated_at": "2026-10-29T03:15:14.000Z",
+  "updated_at": "2026-11-17T14:09:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "retnet",
     "retention",
     "custom-code",
+    "custom_code",
     "license:mit",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

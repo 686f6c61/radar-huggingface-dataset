@@ -27,7 +27,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 304,
+  "likes": 305,
   "downloads_30d": 18602,
   "trending_score": 11.2,
   "parameters": 754638836864,
@@ -48,5 +48,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - elder-plinius/OBLITERATUS: OBLITERATE THE CHAINS …",
+      "url": "https://github.com/elder-plinius/OBLITERATUS",
+      "snippet": "OBLITERATUS is the most advanced open-source toolkit for understanding and removing refusal behaviors from large language …"
+    },
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+      "snippet": "Text Generation model with 28B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "OBLITERATUS : l'outil open source qui supprime définitivement les ...",
+      "url": "https://david-informaticien.com/blog/ia/3935-obliteratus-loutil-open-source-qui-supprime-definitivement-les-filtres-dune-ia",
+      "snippet": "Apr 27, 2026 · OBLITERATUS est un outil open source qui supprime définitivement les filtres des IA en quelques minutes. …"
+    },
+    {
+      "title": "OBLITERATUS/obliteratus at main · elder-plinius/OBLITERATUS · …",
+      "url": "https://github.com/elder-plinius/OBLITERATUS/tree/main/obliteratus",
+      "snippet": "OBLITERATE THE CHAINS THAT BIND YOU. Contribute to elder-plinius/OBLITERATUS development by creating an account on …"
+    },
+    {
+      "title": "OBLITERATUS (OBLITERATUS) - Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS",
+      "snippet": "Org profile for OBLITERATUS on Hugging Face, the AI community building the future."
+    }
+  ]
 }

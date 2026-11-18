@@ -2,99 +2,100 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Transcribe-30B-A4B es un modelo de lenguaje de voz (speech LLM) de pesos abiertos desarrollado por NVIDIA para transcripcion automatica, traduccion de voz, diarizacion de hablantes y preguntas sobre audio. Esta ficha corresponde a la cuantizacion GGUF en BF16 publicada por AMAImedia (NOESIS), una conversion comunitaria del modelo original de NVIDIA pensada para despliegue local con runtimes compatibles con el formato GGUF.
+NVIDIA-Nemotron-3.5-Transcribe-30B-A4B es un modelo de voz y audio de pesos abiertos desarrollado por NVIDIA, distribuido en este repositorio por AMAImedia en formato GGUF. Se trata de un modelo de lenguaje de voz (speech LLM) especializado en transcripción automática (ASR), traducción de voz, diarización de hablantes e identificación de idioma, con soporte para 40 idiomas y grabaciones de hasta una hora de duración. Forma parte de la familia Nemotron 3.5 y se apoya en el modelo base NVIDIA-Nemotron-3.5-Lightning-30B-A3B.
 
-El modelo resuelve el problema de transcribir grabaciones largas (hasta una hora) en 40 idiomas con marcas de tiempo, identificacion de idioma y soporte de code-switching, todo en un unico modelo instruido. Su arquitectura hibrida de tipo mixture-of-experts activa aproximadamente 4,3 mil millones de parametros (incluido el codificador de audio) sobre un total de unos 33,7 mil millones, lo que reduce drasticamente el coste computacional por token frente a un modelo denso equivalente. El contexto es de 65.536 tokens.
+La arquitectura es un transformer híbrido de mezcla de expertos (MoE) que activa aproximadamente 4.300 millones de parámetros por token, incluyendo el codificador de audio, sobre un total de 33.697.781.029 parámetros según los pesos en safetensors. El modelo se publica originalmente en BF16, FP8 y NVFP4, y esta ficha corresponde a la conversión GGUF con cuantización por imatrix realizada por AMAImedia.
 
-Es relevante ahora porque las alternativas open source a Whisper para audio largo y multilingue con instrucciones son escasas, y Nemotron 3.5 Transcribe se publica en precisiones BF16, FP8 y NVFP4 junto con el dataset de entrenamiento Granary-v2, facilitando tanto despliegue en produccion como fine-tuning.
+Su relevancia actual radica en que combina ventana de contexto de 65.536 tokens, soporte de audio de formato largo, diarización y traducción de voz en un único modelo instruible mediante prompts, lo que permite sustituir pipelines de varios componentes por un solo modelo con pesos abiertos y licencia OpenMDW-1.1.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Speech LLM hibrido mixture-of-experts (base Nemotron 3.5 Lightning) con codificador de audio |
-| Parametros totales | 33.697.781.029 (dato real safetensors, ~33,7 B) |
-| Parametros activos | ~4,3 B (incluido el codificador de audio) |
-| Longitud de contexto | 65.536 tokens (audio de hasta 1 hora) |
-| Tipos de cuantizacion | BF16 (esta conversion); el modelo original de NVIDIA se publica en BF16, FP8 y NVFP4 |
-| Idiomas soportados | 40 idiomas: aleman, arabe, bengali, búlgaro, chino, coreano, croata, danes, eslovaco, esloveno, espanol, estonio, euskera no incluido — cs, nl, en, fr, de, hi, it, ko, pl, pt, ru, sk, es, bg, hr, da, et, fi, hu, ja, lv, lt, ro, sl, sv, th, tr, uk, ar, bn, zh, el, he, id, mt, mr, tl, ta, te, vi |
-| Licencia | OpenMDW-1.1 (license: other) |
-| Formato de pesos | GGUF (conversion con imatrix); el original usa safetensors en NeMo/PyTorch |
-
-Nota: el repositorio pesa 91,7 GB, coherente con BF16 para ~33,7 B de parametros mas el codificador de audio.
+| Arquitectura | Transformer híbrido con mezcla de expertos (MoE) y codificador de audio (nemo_speechlm) |
+| Parametros totales | 33.697.781.029 |
+| Parametros activos | Aproximadamente 4.300 millones por token, incluido el codificador de audio |
+| Longitud de contexto | 65.536 tokens |
+| Tipos de cuantizacion | BF16 (original), FP8 y NVFP4 (originales de NVIDIA); GGUF con imatrix en este repositorio (niveles no detallados en la informacion disponible) |
+| Idiomas soportados | 40 idiomas: cs, nl, en, fr, de, hi, it, ko, pl, pt, ru, sk, es, bg, hr, da, et, fi, hu, ja, lv, lt, ro, sl, sv, th, tr, uk, ar, bn, zh, el, he, id, mt, mr, tl, ta, te, vi |
+| Licencia | OpenMDW-1.1 |
+| Formato de pesos | safetensors y GGUF (repositorio de 91,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, un LLM hibrido mixture-of-experts, al que se anade un codificador de audio para formar la variante Transcribe 30B-A4B. La activacion de ~4,3 B de parametros (frente a ~3 B en el Lightning base) refleja la inclusion del componente de audio. La arquitectura hibrida (combinacion de capas attention y capas eficientes, tipica de la familia Nemotron 3.5) permite manejar secuencias largas de audio con contexto de 65.536 tokens.
+El modelo emplea una arquitectura de transformer híbrido con mezcla de expertos: de los 33.700 millones de parámetros totales, solo unos 4.300 millones se activan por token, incluyendo el codificador de audio. Esta proporción permite un coste de inferencia muy inferior al de un modelo denso del mismo tamaño nominal. El modelo integra un codificador de audio dentro del propio speech LLM, de modo que la transcripción, la traducción, la diarización y la respuesta a preguntas sobre audio se resuelven con un único modelo instruible mediante prompts en lugar de con una cascada de módulos.
 
-El entrenamiento utiliza el dataset nvidia/Granary-v2, un corpus de voz multilingue publicado por NVIDIA junto al modelo. El modelo es instruido (instruction-following) y admite tareas definidas por prompt: transcripcion con estilo seleccionado por instruccion, traduccion de voz, diarizacion, identificacion de idioma y preguntas sobre el audio. No hay informacion disponible sobre el numero exacto de tokens de entrenamiento ni sobre el uso de RLHF/DPO; los detalles tecnicos estan en el informe tecnico oficial de NVIDIA (ver Enlaces).
+El entrenamiento se apoya en el dataset nvidia/Granary-v2, según los metadatos del repositorio. La model card menciona una precisión de referencia en BF16, FP8 y NVFP4, y remite al informe técnico de NVIDIA para los detalles de composición del corpus y del proceso de ajuste. No se dispone en la informacion proporcionada de datos concretos sobre número de tokens de entrenamiento, composición exacta del dataset ni uso de RLHF o DPO. La conversión a GGUF de este repositorio emplea cuantización con matriz de importancia (imatrix), una técnica que calibra la pérdida de precisión por capa para preservar la calidad en los niveles bajos de bits.
 
 ## Capacidades
 
-- Transcripcion automatica de voz (ASR) en 40 idiomas, con marcas de tiempo (timestamps)
-- Audio largo: grabaciones de hasta una hora de duracion en una sola pasada
-- Traduccion de voz (speech translation) entre los idiomas soportados
-- Diarizacion de hablantes (separacion por hablante en la transcripcion)
-- Identificacion de idioma (language identification)
-- Soporte de code-switching (mezcla de idiomas dentro de la misma grabacion)
-- Preguntas y respuestas sobre contenido de audio (audio question answering)
-- Seguimiento de instrucciones: el estilo y formato de la transcripcion se controlan por prompt
-- Etiquetado en el HF ASR leaderboard; pipeline text2text-generation sobre representaciones de audio
+- Transcripción automática de voz (ASR) en 40 idiomas, con soporte de audio de formato largo de hasta una hora por grabación.
+- Traducción de voz (speech translation) entre idiomas.
+- Diarización de hablantes, es decir, atribución de segmentos a distintos interlocutores.
+- Generación de marcas temporales (timestamps) sobre la transcripción.
+- Identificación de idioma (language identification) y manejo de cambio de código (code-switching) dentro de una misma grabación.
+- Respuesta a preguntas sobre audio (audio question answering).
+- Seguimiento de instrucciones para controlar el estilo y el formato de la salida de transcripción.
+- Capacidad conversacional y de generación texto-a-texto según la etiqueta del pipeline.
+- Integración con el ecosistema NeMo Speech y con SGLang-Omni para servicio en producción.
 
 ## Casos de uso
 
-- Transcripcion de reuniones y llamadas largas: gracias al soporte de audio de hasta 1 hora y a la diarizacion, puede generar actas con separacion por hablante en una sola pasada sin troceado manual.
-- Subtitulado y doblaje multilingue: la combinacion de transcripcion con timestamps y traduccion de voz lo encaja en pipelines de subtitulado y localizacion de video; el propio publicador lo enmarca en una plataforma de doblaje automatico.
-- Atencion al cliente y analitica de llamadas: transcripcion de grabaciones en 40 idiomas con identificacion de idioma automatica, util para centros de contacto internacionales.
-- Procesamiento de contenido multilingue con code-switching: entrevistas o podcasts donde los hablantes mezclan idiomas (por ejemplo espanol-ingles), escenario donde los ASR clasicos suelen fallar.
-- Interfaces de voz conversacionales: como speech LLM instruido, puede integrarse en asistentes que responden preguntas sobre el audio (resumenes, extraccion de datos de una llamada).
-- Generacion de datasets de voz: uso como modelo profesor para pseudoetiquetar corpus de audio en idiomas con poca cobertura, aprovechando el soporte de 40 idiomas.
-- Investigacion en ASR local y privado: despliegue offline en GPU propia para organizaciones que no pueden enviar audio a APIs de terceros.
+- Transcripción de reuniones y actas: el modelo puede procesar grabaciones de hasta una hora en una sola pasada gracias a su contexto de 65.536 tokens, con marcas temporales y diarización para separar a los participantes y generar actas estructuradas.
+- Subtitulado y doblaje multilingüe: la combinación de traducción de voz, marcas temporales e identificación de idioma permite generar subtítulos traducidos en un solo paso, lo que encaja con plataformas de doblaje automatizado como la que motiva la publicación de este repositorio.
+- Atención al cliente y análisis de llamadas: la diarización y la transcripción con marcas temporales permiten separar agente y cliente, medir tiempos de intervención y alimentar sistemas de control de calidad o de análisis de sentimiento sobre texto.
+- Documentación clínica o legal dictada: el soporte de audio de formato largo y el seguimiento de instrucciones permiten fijar el formato de salida (por ejemplo, con puntuación y estructura de informe) y transcribir sesiones completas sin fragmentar el audio.
+- Investigación en lingüística y análisis de corpus: los 40 idiomas cubiertos y el manejo de code-switching facilitan la transcripción de grabaciones multilingües y de habla espontánea con cambios de idioma, un escenario habitual en corpus reales.
+- Búsqueda y recuperación sobre archivos de audio: la transcripción con marcas temporales permite indexar podcasts, clases o archivos de medios y enlazar cada fragmento de texto con su minuto exacto en el audio.
+- Asistentes de voz con comprensión de audio: la capacidad de audio question answering permite construir asistentes que respondan preguntas sobre el contenido de una grabación sin transcribirla por completo antes de responder.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta conversion concreta. La model card original de NVIDIA remite a su seccion "Results at a Glance" y al informe tecnico oficial, pero no incluye tablas de metricas (WER, BLEU, etc.) en el material proporcionado, por lo que no se reproducen numeros aqui.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al informe técnico de NVIDIA y a la sección "Results at a Glance", pero los valores numéricos no se incluyen en los datos proporcionados, por lo que no se reproducen aquí.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16 GGUF: ~65-70 GB solo de pesos (33,7 B a 2 bytes por parametro, mas overhead del codificador de audio y del KV cache); con contexto de audio largo, presupuestar 80 GB o mas.
-- GPUs recomendadas: A100 80 GB, H100 80 GB o H200; en consumer, una RTX 4090 (24 GB) no basta para BF16 y requeriria offload a RAM.
-- El autor de la conversion ejecuta sus cuants con 64 GB de DDR5 y RTX 3060 Laptop 6 GB usando offload a RAM (llama.cpp), lo que indica que es viable en CPU + GPU hibrida con velocidad reducida.
-- Para precisiones FP8 o NVFP4 (publicadas por NVIDIA en el modelo original), los requisitos bajan a ~35 GB y ~18 GB aproximadamente, cabiendo en una H100 80 GB con margen o en una RTX 5090 (32 GB) en NVFP4, respectivamente (estimacion por tamano de pesos, no dato oficial).
-- Despliegue: llama.cpp y runtimes GGUF (Ollama, LM Studio) para esta conversion; para el modelo original, NeMo Speech, SGLang-Omni (con cookbook oficial) y el demo en Hugging Face Spaces.
-- Latencia y throughput: no disponible.
+- El repositorio GGUF ocupa 91,7 GB, lo que corresponde a varias cuantizaciones del modelo de 33.700 millones de parámetros. El tamaño exacto de cada nivel de cuantización no se detalla en la informacion disponible.
+- Para inferencia en BF16 se necesitan aproximadamente 67 GB solo para los pesos, además del estado de activaciones y caché KV; en la práctica esto exige GPU de 80 GB (A100, H100) o reparto multi-GPU.
+- Con cuantizaciones GGUF de 4 a 8 bits, el modelo puede ejecutarse en configuraciones de 24 a 48 GB de VRAM, lo que incluye una RTX 4090 (24 GB) en los niveles más agresivos y GPUs profesionales como A6000 o L40S en niveles intermedios.
+- No cabe en GPUs de consumo de 8 a 16 GB en ninguno de los niveles de cuantización habituales, dado el tamaño total de parámetros.
+- Despliegue previsto: NeMo Speech para ajuste fino y servicio, SGLang-Omni según la model card, y llama.cpp u Ollama para los ficheros GGUF de este repositorio. vLLM y TGI no aparecen mencionados en la informacion disponible para este modelo.
+- No se dispone de datos de latencia ni de throughput en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros / activos | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Nemotron 3.5 Transcribe 30B-A4B (esta ficha) | 33,7 B / ~4,3 B | 65.536 tokens (audio 1 h) | 40 | OpenMDW-1.1 | GGUF (BF16), BF16/FP8/NVFP4 original |
-| Whisper large-v3 (OpenAI) | ~1,55 B (denso) | ~30 s por ventana | ~99 | MIT (pesos) | safetensors, GGUF |
-| Voxtral / Qwen2-Audio (clase audio-LLM) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| NVIDIA-Nemotron-3.5-Transcribe-30B-A4B (este) | 33,7B totales, ~4,3B activos | 65.536 tokens | 40 | OpenMDW-1.1 | safetensors, GGUF, FP8, NVFP4 |
+| NVIDIA-Nemotron-3.5-Lightning-30B-A3B (modelo base) | 30B clase, ~3B activos | no disponible | no disponible | no disponible | BF16 |
+| Whisper large-v3 | no disponible | 30 s por ventana (ventana fija) | ~99 | MIT | safetensors, GGUF |
+| Alternativas ASR de pesos abiertos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Frente a Whisper large-v3, Nemotron 3.5 Transcribe ofrece audio largo nativo (1 hora frente a ventanas de ~30 s), diarizacion, traduccion y seguimiento de instrucciones, a costa de un tamano mucho mayor (aunque con solo ~4,3 B activos). No hay datos de WER comparativos publicados en la informacion disponible.
+La comparación con Whisper large-v3 se incluye por categoría de tarea, no por arquitectura: Whisper es un modelo denso con ventanas de 30 segundos, mientras que este modelo aborda audio de hasta una hora mediante contexto de 65.536 tokens y añade diarización y traducción de voz. No se dispone de datos de benchmarks que permitan comparar rendimiento numérico entre ambos.
 
 ## Limitaciones y advertencias
 
-- Licencia OpenMDW-1.1: es una licencia abierta distinta de Apache-2.0/MIT; revisar sus terminos antes de uso comercial (enlace en la model card).
-- Riesgo de alucinacion tipico de ASR generativo: al ser un LLM de voz instruido, puede inventar contenido en silencios o audio ruidoso; validar contra marcas de tiempo en usos criticos.
-- El rendimiento en GGUF BF16 conversion comunitaria puede diferir del original de NVIDIA; la conversion procede de AtomicChat y AMAImedia, no de NVIDIA.
-- Requisitos de hardware elevados en BF16 (~70 GB), lo que limita el despliegue local sin offload a RAM y penaliza la latencia.
-- No hay informacion disponible sobre sesgos especificos, ni sobre WER por idioma en esta ficha; consultar el informe tecnico de NVIDIA.
-- El soporte de 40 idiomas no garantiza calidad homogenea; los idiomas con menos recursos (mr, mt, tl) probablemente rindan peor que en, es o zh (no hay datos publicados aqui para confirmarlo).
-- Requiere libreria NeMo o runtimes GGUF compatibles; no funciona directamente con transformers estandar para audio sin adaptacion.
+- No se han publicado en la informacion disponible datos sobre sesgos demográficos, acústicos o lingüísticos del modelo; conviene evaluarlo en el dominio concreto antes de producción.
+- Riesgo de alucinación inherente a los modelos generativos: en pasajes con ruido, solapamiento de hablantes o audio de baja calidad, la transcripción puede contener texto inventado o atribuciones de hablante incorrectas.
+- La cobertura de 40 idiomas no implica calidad homogénea; los idiomas con menos presencia en el corpus de entrenamiento pueden degradarse.
+- El contexto de 65.536 tokens impone un límite práctico de una hora de audio por pasada; grabaciones más largas requieren segmentación y pueden perder coherencia entre fragmentos.
+- La licencia OpenMDW-1.1 incluye condiciones específicas que deben revisarse antes de uso comercial; no es una licencia permisiva tipo MIT o Apache 2.0.
+- Este repositorio es una conversión GGUF de terceros (AMAImedia) sobre el modelo de NVIDIA; los niveles de cuantización pueden introducir pérdida de precisión respecto a los pesos originales en BF16, FP8 o NVFP4.
+- El repositorio incluye contenido promocional y solicitudes de donación del autor de la conversión, ajenos al modelo original de NVIDIA.
+- No se dispone de información sobre latencia, throughput ni requisitos exactos de memoria por nivel de cuantización en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo (esta conversion GGUF): https://huggingface.co/AMAImedia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-BF16-GGUF
-- Modelo original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
-- Base Nemotron 3.5 Lightning: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
-- Dataset de entrenamiento Granary-v2: https://huggingface.co/datasets/nvidia/Granary-v2
-- Informe tecnico de NVIDIA: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/nemotron-transcribe
+- Repositorio Hugging Face: https://huggingface.co/AMAImedia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-BF16-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+- Modelo Lightning base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Conversión GGUF de referencia: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF
+- Página de desarrollador de Nemotron: https://developer.nvidia.com/nemotron
 - NeMo Speech (GitHub): https://github.com/NVIDIA-NeMo/Speech
-- SGLang-Omni cookbook: https://sgl-project.github.io/sglang-omni/cookbook/nemotron_transcribe.html
-- Pagina de desarrolladores Nemotron: https://developer.nvidia.com/nemotron
+- Informe técnico: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf
+- Demo en vivo: https://huggingface.co/spaces/nvidia/nemotron-transcribe
+- Guía de servicio con SGLang-Omni: https://sgl-project.github.io/sglang-omni/cookbook/nemotron_transcribe.html
+- Dataset Granary-v2: https://huggingface.co/datasets/nvidia/Granary-v2
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Paper arXiv citado en tags: https://arxiv.org/abs/2310.09424
-- Discord NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
+- Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
+- Organización AMAImedia: https://www.amaimedia.com

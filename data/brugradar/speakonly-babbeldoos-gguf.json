@@ -5,7 +5,7 @@
   "author": "BrugRadar",
   "url": "https://huggingface.co/BrugRadar/SpeakOnly-Babbeldoos-GGUF",
   "created_at": "2026-11-13T21:56:22.000Z",
-  "updated_at": "2026-11-14T15:08:39.000Z",
+  "updated_at": "2026-11-16T10:52:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,7 +16,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 157,
+  "downloads_30d": 178,
   "trending_score": 0,
   "parameters": 264068050,
   "parameters_human": "264.1M",

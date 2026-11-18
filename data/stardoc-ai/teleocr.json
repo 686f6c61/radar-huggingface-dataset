@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 1319,
-  "downloads_30d": 18767,
+  "downloads_30d": 19349,
   "trending_score": 497,
   "parameters": 1415072768,
   "parameters_human": "1.42B",
@@ -55,11 +55,5 @@
   "renamed_to": "XingChen-AGI/TeleOCR",
   "renamed_at": "2026-11-11T03:56:40.578Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Burj Khalifa, Dubai | Buchen Sie Tickets, Touren & Mehr - Tiqets",
-      "url": "https://www.tiqets.com/de/burj-khalifa-tickets-l145628/",
-      "snippet": "Buchen Sie Burj-Khalifa-Tickets online und sichern Sie sich Ihr bevorzugtes Zeitfenster, überspringen Sie lange Warteschlangen an …"
-    }
-  ]
+  "sources": []
 }

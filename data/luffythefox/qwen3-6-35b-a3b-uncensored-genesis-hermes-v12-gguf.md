@@ -2,92 +2,92 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF es un modelo de lenguaje multimodal (texto e imagen) de arquitectura MoE, desarrollado por LuffyTheFox como parte de la serie Genesis. Se basa en el modelo sin censura HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive y aplica un post-procesado denominado Genesis, que repara el ruido acumulado en los tensores mediante técnicas estadísticas (distribución de Marchenko-Pastur y SVD) sin reentrenar el modelo. Además, incorpora datos transferidos de un finetune Hermes para mejorar sus capacidades de agente y function calling.
+Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF es una cuantizacion en formato GGUF de un modelo MoE (Mixture of Experts) multimodal de aproximadamente 34.660 millones de parametros totales, publicado por el desarrollador independiente LuffyTheFox bajo el paraguas del proyecto Genesis. El modelo parte de la base HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive y le incorpora, mediante transferencia de tensores, datos de un finetune sobre el dataset Hermes (NousResearch/hermes-function-calling-v1) procedente de DJLougen/hermes-qwen3.5-35b-a3b-GGUF. El resultado es un modelo orientado a uso conversacional, agentico y sin censura, con soporte declarado de vision (pipeline image-text-to-text).
 
-El modelo tiene 35.000 millones de parámetros totales con 3.000 millones activos por token (A3B), lo que lo hace viable en hardware de consumo con cuantización GGUF. Es un modelo sin censura (0/465 rechazos según el autor), con soporte de visión, tool calling y modo de razonamiento, y se distribuye bajo licencia Apache 2.0. Su popularidad es notable: más de un millón de descargas y 579 likes en Hugging Face, lo que refleja el interés de la comunidad por modelos locales sin restricciones de contenido.
+El interes tecnico del release no reside tanto en el modelo base como en el procedimiento Genesis, una suerte de "reparacion de tensores" post-entrenamiento que el autor aplica sobre modelos ya cuantizados en GGUF. Segun la model card, Genesis escanea tensores ssm_conv1d, reequilibra cabezas de atencion y reduce ruido de entrenamiento mediante una SVD personalizada basada en la distribucion de Marchenko-Pastur, con la intencion de mejorar la coherencia de contexto y reducir alucinaciones sin reentrenar. Es un enfoque poco convencional y sin validacion academica publica, por lo que debe tratarse con cautela.
 
-La relevancia de este modelo radica en su enfoque poco convencional: en lugar de un entrenamiento o fine-tuning tradicional, el autor aplica una "cirugía numérica" sobre los pesos para reducir el ruido de entrenamiento, lo que promete mayor estabilidad y menor alucinación. Aunque el método no está validado académicamente, la serie ha acumulado una base de usuarios que reportan mejoras subjetivas en calidad de salida.
+El modelo acumula cifras notables de adopcion en Hugging Face (273.947 descargas y 732 likes en el momento de la consulta), lo que sugiere interes real de la comunidad, especialmente entre usuarios que buscan alternativas sin filtros para despliegue local. La licencia declarada es Apache 2.0, aunque conviene verificar la cadena de licencias del modelo base y del finetune intermedio.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida con Gated DeltaNet y 256 expertos (8 activos + 1 compartido por token), según documentación de la serie Genesis |
-| Parametros totales | 35.000 millones (35B) |
-| Parametros activos | 3.000 millones (3B, A3B) |
-| Longitud de contexto | no disponible (no especificada en la documentación del autor) |
-| Tipos de cuantizacion | GGUF (varias, incluida la variante denominada "APEX" por el autor) |
-| Idiomas soportados | inglés, chino y multilingüe |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (no se ofrecen safetensors en este repositorio) |
+| Arquitectura | Transformer MoE (Mixture of Experts) con capacidades multimodales (image-text-to-text); detalles internos de capas y dimensiones no disponibles |
+| Parametros totales | 34.660.610.688 (~34,66 B) |
+| Parametros activos | no disponible (el nombre "A3B" sugiere ~3 B activos, pero no se confirma en la informacion proporcionada) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (multiples cuantizaciones; niveles concretos no especificados), generado con perfiles Unsloth e imatrix |
+| Idiomas soportados | en, zh, multilingual |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repositorio de 131,2 GB con multiples ficheros) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un MoE híbrido que combina atención con Gated DeltaNet, un mecanismo de estado recurrente para el manejo de contexto largo. Según la documentación de la serie, el modelo contiene 256 expertos, de los cuales 8 son enrutados por token más un experto compartido, lo que explica la relación 35B totales / 3B activos.
+El modelo es un transformer con arquitectura MoE, heredado de la familia Qwen3.6, y con soporte multimodal declarado (entrada de imagen y texto). No se dispone de informacion detallada sobre numero de capas, dimension oculta, numero de expertos ni composicion exacta del dataset de preentrenamiento del modelo base. El pipeline declarado en Hugging Face es image-text-to-text, y los tags incluyen vision y multimodal, lo que confirma la intencion de uso con imagenes.
 
-El proceso de creación no es un entrenamiento convencional. El autor parte del modelo base sin censura de HauhauCS y aplica el algoritmo Genesis, que consta de tres etapas: reparación del equilibrio entre cabezas en los tensores `ssm_conv1d` (relacionados con la memoria de contexto largo), sustitución de bloques cero en tensores dañados mediante selección de bloques óptimos, y reducción de ruido de entrenamiento mediante SVD basada en la distribución de Marchenko-Pastur, preservando el 99 % de la señal y el gradiente aprendido. Además, se transfirieron alrededor de 2000 bloques de dos tensores expertos FFN desde el finetune Hermes de DJLougen, que fue entrenado sobre el dataset NousResearch/hermes-function-calling-v1, para dotar al modelo de capacidades de agente.
-
-El resultado es un modelo que no ha sido fine-tuneado con datos nuevos, sino reparado a nivel de tensores, lo que el autor describe como "cirugía numérica sobre los bytes del archivo". No se especifican datos de entrenamiento adicionales, número de tokens ni composición del dataset, más allá del dataset de function calling mencionado.
+El proceso de construccion es en tres saltos: (1) el modelo base HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (una variante sin censura del Qwen3.6 MoE); (2) un finetune sobre el dataset Hermes de function calling (DJLougen/hermes-qwen3.5-35b-a3b-GGUF), del que el autor transfiere aproximadamente 2.000 bloques de dos tensores FFN de expertos; y (3) la aplicacion del metodo Genesis, que segun la model card escanea tensores ssm_conv1d, reequilibra cabezas y aplica una SVD basada en Marchenko-Pastur para reducir ruido. No hay evidencia publica independiente de que este procedimiento mejore metricas objetivas, y el autor lo describe como un trabajo de investigacion independiente realizado en Google Colab con una Tesla T4.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo de pensamiento (thinking mode) activable, recomendado para tareas de programación.
-- Procesamiento multimodal de imágenes y texto (pipeline `image-text-to-text`), capaz de describir y razonar sobre entradas visuales.
-- Tool calling y function calling, gracias a la transferencia del finetune Hermes entrenado sobre hermes-function-calling-v1.
-- Soporte de agentes y razonamiento multi-paso, con identidades de sistema alternativas ("agent" o "assistant") proporcionadas por el autor.
-- Modelo sin censura: el autor reporta 0/465 rechazos en el modelo base, lo que implica ausencia de filtros de contenido en la generación.
-- Multilingüe, con soporte principal de inglés y chino, y rendimiento variable en otros idiomas.
-- Capacidad de generación de imágenes SVG (el autor muestra un ejemplo de un pelícano en bicicleta), aunque esto depende del prompt y de la configuración.
+- Generacion de texto conversacional multi-turno en ingles, chino y otros idiomas (multilingual).
+- Razonamiento y respuesta a instrucciones con un sesgo explicito hacia la ausencia de rechazos (la model card cita "0/465 refusals" en el modelo base).
+- Soporte de tool calling y function calling, segun el dataset Hermes utilizado en el finetune.
+- Capacidades agenticas y de razonamiento multi-paso, segun los tags del repositorio (agentic, hermes).
+- Procesamiento de imagenes junto con texto (image-text-to-text, vision, multimodal).
+- Uso como modelo de chat con plantillas compatibles con endpoints (tag endpoints_compatible).
+- Modo "uncensored": menor probabilidad de negarse a responder, por diseno.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales sin restricciones de contenido: el modelo puede desplegarse en el equipo del usuario mediante llama.cpp u Ollama, ofreciendo conversaciones multi-turno sin filtros de moderación. Es adecuado para entornos donde se requiere libertad de expresión, como juegos de rol o escritura creativa, siempre con las advertencias legales correspondientes.
-- Agentes autónomos con function calling: gracias al finetune Hermes, el modelo puede integrarse en pipelines que llaman herramientas externas (APIs, bases de datos, ejecución de scripts) para automatizar tareas como la gestión de correos, la reserva de citas o la consulta de información en tiempo real.
-- Análisis de imágenes y documentos visuales: al ser multimodal, puede extraer información de capturas de pantalla, diagramas, fotografías o documentos escaneados, generando descripciones o resúmenes en texto. Útil para herramientas de accesibilidad o revisión de contenido visual.
-- Generación de código asistida: con el modo de pensamiento activado y los parámetros recomendados (temperatura 0.6, top_p 1.0, top_k 20), el modelo puede razonar sobre problemas de programación, generar fragmentos de código y explicar soluciones. Puede integrarse en editores o entornos de desarrollo con interfaces tipo chat.
-- Prototipado rápido de aplicaciones con LLM en local: al ser GGUF y caber en GPUs de consumo con cuantización, es una opción para desarrolladores que necesitan probar funcionalidades de agente o multimodalidad sin depender de APIs externas ni enviar datos a la nube.
-- Investigación en comportamiento de modelos sin alineación: al ser un modelo sin censura y con un método de post-procesado no convencional, resulta interesante para estudiar diferencias de comportamiento frente a modelos alineados, aunque debe usarse en entornos controlados y con fines académicos.
-- Creación de contenido creativo (historias, guiones, diálogos): al carecer de filtros de contenido, puede generar narrativas adultas o temas tabú que otros modelos rechazan, siendo útil para escritores que necesitan explorar territorios sensibles.
+- Asistentes conversacionales locales sin filtros: el modelo puede mantener dialogos multi-turno en ingles y chino, y su naturaleza uncensored lo hace adecuado para prototipos de role-play, escritura creativa o investigacion sobre comportamiento de modelos sin alineamiento restrictivo.
+- Agentes con function calling: gracias al finetune sobre el dataset Hermes, puede invocarse en pipelines de agentes que necesiten llamar a APIs, consultar bases de datos o ejecutar herramientas, integrándose via endpoints compatibles.
+- Procesamiento de documentos con imagenes: al aceptar entrada image-text-to-text, puede emplearse para extraer informacion de capturas, diagramas o formularios combinados con instrucciones textuales.
+- Despliegue en hardware de consumo: al distribuirse en GGUF con cuantizaciones, permite ejecutar un MoE de ~35 B en equipos con VRAM limitada usando llama.cpp u Ollama, cargando solo los expertos activos.
+- Investigacion sobre tecnicas de cuantizacion y "reparacion" de tensores: el modelo sirve como caso de estudio para comparar el efecto del metodo Genesis frente al modelo base sin procesar.
+- Generacion de codigo y scripting en entornos de desarrollo locales: aunque no se declaran benchmarks especificos, el modelo base Qwen3.6 tiene capacidades de codigo que se heredan, y el soporte de tool calling facilita su integracion en asistentes de IDE.
+- Chat multilingue para comunidades: con soporte de en, zh y multilingual, puede desplegarse como bot en foros o canales de soporte tecnico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no proporciona métricas estándar como MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con otros modelos. La única afirmación de rendimiento es la ausencia de rechazos en el modelo base y las mejoras subjetivas reportadas por usuarios en la comunidad. No es posible evaluar objetivamente su rendimiento frente a alternativas sin datos adicionales.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas comparativas; solo menciona cualitativamente "0/465 refusals" en el modelo base, sin detallar el conjunto de evaluacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos GGUF en cuantización Q4_K_M ocupan aproximadamente 20 GB, mientras que en Q8 rondan los 35 GB. Con el offload de 40 capas MoE a CPU recomendado por el autor, la VRAM necesaria puede reducirse a 12-16 GB, a costa de mayor uso de memoria RAM y menor velocidad.
-- GPUs recomendadas: RTX 3090 o RTX 4090 (24 GB VRAM) permiten descargar la mayor parte del modelo en GPU. GPUs de datacenter como A100 o H100 ofrecen mayor throughput para despliegues concurrentes. GPUs de 8-12 GB (RTX 3080, RTX 4070) pueden funcionar con offload agresivo a CPU.
-- Compatibilidad con hardware de consumo: sí, con cuantización GGUF y offload parcial a CPU es viable en equipos con 16 GB de VRAM y 32 GB de RAM. El autor recomienda forzar 40 capas MoE a CPU y fijar el número de expertos activos en 8.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y koboldcpp son compatibles con formato GGUF. vLLM no soporta GGUF de forma nativa, por lo que no es una opción directa.
-- Latencia y throughput: no disponibles. Dependen de la cuantización, del número de expertos activos y del equilibrio GPU/CPU. Con 3B activos, la generación puede ser fluida en GPUs modernas, pero el offload a CPU introduce latencia adicional.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un MoE de ~34,66 B en GGUF, las cuantizaciones Q4 requieren del orden de 20-25 GB de VRAM/ RAM, y Q8 o FP16 superan los 35-65 GB; los valores exactos dependen de la cuantizacion concreta del repositorio (131,2 GB totales).
+- GPU recomendadas: no especificadas por el autor. Por tamano, cabria esperar uso en A100 40/80 GB, H100, RTX 6000 Ada o configuraciones multi-GPU consumer.
+- GPU de consumo: probablemente ejecutable en RTX 4090 (24 GB) con cuantizaciones bajas (Q4 o inferiores) y offload parcial a RAM; en GPUs de 12-16 GB requeriria offload agresivo y penalizacion de velocidad.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runners compatibles con GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints tipo TGI/vLLM para el formato original, no necesariamente para GGUF.
+- Latencia y throughput: no disponibles. Al ser MoE con ~3 B activos (segun el nombre), el throughput por token deberia ser mas alto que un denso de 35 B, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Características |
-|---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12 (este) | 35B | 3B | no disponible | Apache 2.0 | GGUF | Multimodal, uncensored, agente Hermes, Genesis |
-| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (base) | 35B | 3B | no disponible | Apache 2.0 | no disponible | Uncensored, sin post-procesado Genesis |
-| DJLougen/hermes-qwen3.5-35b-a3b-GGUF (finetune Hermes) | 35B | 3B | no disponible | no disponible | GGUF | Finetune Hermes para agentes, sin Genesis |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12 (este) | ~34,66 B (MoE) | no disponible | Apache 2.0 | GGUF | Finetune Hermes + metodo Genesis |
+| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive | ~34,66 B (MoE) | no disponible | no disponible en la informacion | safetensors/GGUF | Modelo base sin censura |
+| DJLougen/hermes-qwen3.5-35b-a3b-GGUF | ~35 B (MoE) | no disponible | no disponible en la informacion | GGUF | Finetune Hermes sobre Qwen3.5 |
+| Qwen3.6-35B-A3B (original, referencia) | ~34,66 B (MoE) | no disponible | no disponible en la informacion | safetensors | Base de la familia Qwen3.6 |
 
-No se dispone de benchmarks para comparar el rendimiento real entre estos modelos. La comparativa es estructural: este modelo combina la base uncensored con la transferencia del finetune Hermes y el post-procesado Genesis, lo que lo diferencia de sus predecesores. No hay datos de contexto máximo confirmados para ninguno de los tres.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo sin censura: puede generar contenido ofensivo, violento, sexual o peligroso. Su uso en producción requiere políticas de moderación externas y responsabilidad legal del desplegador.
-- Método no validado: el algoritmo Genesis es una aproximación del autor sin revisión académica ni evaluación independiente. Las afirmaciones sobre reducción de ruido y mejora de estabilidad no están contrastadas.
-- Riesgo de alucinación: aunque el autor afirma que el post-procesado reduce las alucinaciones, no hay evidencia objetiva. En tareas de razonamiento o factualidad, el modelo puede inventar información con confianza.
-- Idiomas limitados: el soporte principal es inglés y chino; el rendimiento en otros idiomas, incluido el español, no está garantizado y puede ser inferior.
-- Configuración sensible: el autor recomienda ajustes específicos (chat template, K/V cache en F16, offload de 40 capas MoE, 8 expertos activos) para un funcionamiento óptimo. Sin estos ajustes, la calidad puede degradarse notablemente.
-- Licencia Apache 2.0: permite uso comercial, pero el contenido generado es responsabilidad del usuario. No hay garantías de seguridad ni soporte oficial.
-- Reproducibilidad: el proceso Genesis no está documentado de forma completa y reproducible; los scripts de cuantización se ofrecen en un enlace externo (pastebin), lo que añade riesgo de dependencia de terceros.
+- El metodo Genesis no cuenta con validacion independiente ni publicacion revisada por pares; las afirmaciones sobre reduccion de ruido y mejora de coherencia deben tomarse como hipotesis del autor.
+- Modelo "uncensored": no aplica filtros de seguridad, por lo que puede generar contenido ofensivo, ilegal o danino; no es apto para despliegues publicos sin moderacion adicional.
+- Riesgo elevado de alucinacion, especialmente en dominios especializados y en contextos largos; no hay benchmarks que cuantifiquen este riesgo.
+- Idiomas: el soporte declarado se limita a en, zh y "multilingual" generico; el rendimiento en castellano no esta verificado.
+- Licencia Apache 2.0 declarada, pero conviene auditar la cadena de licencias del modelo base y del finetune intermedio antes de uso comercial.
+- La longitud de contexto no esta documentada, lo que dificulta planificar despliegues con ventanas largas.
+- El repositorio es grande (131,2 GB) y contiene multiples cuantizaciones; la eleccion de fichero afecta directamente a calidad y requisitos de hardware.
+- El modelo se distribuye unicamente en GGUF; para fine-tuning adicional o integracion con frameworks que requieran safetensors habria que reconvertir.
+- La model card incluye llamadas a donaciones y datos de contacto del autor; no constituyen garantia de soporte tecnico.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF
-- Modelo base uncensored: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
-- Finetune Hermes de DJLougen: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
-- Chat template recomendado (de la serie V7): https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF/raw/main/chat_template.jinja
-- System prompt creativo con identidad "assistant" (serie V5): https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF/raw/main/System_Prompt_Creative.txt
-- Script de cuantización con perfiles Unsloth: https://pastebin.com/hXhcMJn9
-- Comunidad Discord del proyecto: https://discord.gg/SZ5vacTXYf
-- Enlace de donación al autor: https://web.tribute.tg/d/KIH
+- Repositorio Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF
+- Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Finetune Hermes de referencia: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
+- Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
+- Script de cuantizacion con perfiles Unsloth: https://pastebin.com/hXhcMJn9
+- Discord del proyecto: https://discord.gg/SZ5vacTXYf
+- Distribucion de Marchenko-Pastur (referencia matematica citada): https://en.wikipedia.org/wiki/Marchenko%E2%80%93Pastur_distribution

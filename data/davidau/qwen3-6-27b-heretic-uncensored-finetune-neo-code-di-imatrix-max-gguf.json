@@ -52,8 +52,8 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 437,
-  "downloads_30d": 19905,
+  "likes": 436,
+  "downloads_30d": 19920,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -73,31 +73,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
-      "url": "https://bingquiz.com/bing-homepage-quiz/",
-      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
-    },
-    {
-      "title": "Bing Homepage Quiz - Play Today's Interactive Homepage Bing …",
-      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
-      "snippet": "Jan 12, 2026 · Did you know that the Bing Homepage Quiz is a daily trivia game with 15 questions based on the Bing homepage …"
-    },
-    {
-      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
-      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
-      "snippet": "2 days ago · Looking for a fresh Bing Homepage Quiz to play today? This independent quiz gives you a quick and meaningful way to …"
-    },
-    {
-      "title": "Today's Bing Quiz | Daily Bing Quizzes",
-      "url": "https://bingquizzes.com/",
-      "snippet": "1 day ago · Explore Bing Quizzes across fun, family-friendly, and engaging topics like general knowledge, history, science, …"
-    },
-    {
-      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
-      "url": "https://bingquiz.org/",
-      "snippet": "1 day ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
-    }
-  ]
+  "sources": []
 }

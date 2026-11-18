@@ -2,104 +2,109 @@
 
 ## Resumen
 
-Xing4.0-29B-A4B-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario SolenopsisCampo a partir del modelo Xing4.0-29B-A4B, desarrollado por XingChen-AGI. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a la inferencia local: el repositorio no aporta pesos originales, proceso de entrenamiento ni documentación técnica propia, y su model card se limita al frontmatter de licencia y a la declaración del modelo base.
+Xing4.0-29B-A4B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por China Telecom Artificial Intelligence Technology Co., Ltd. (heredero de la familia TeleChat) y publicado en el repositorio de cuantizaciones GGUF de SolenopsisCampo. Con 29B parámetros totales y solo 4B activos por token, ofrece una ventana de contexto nativa de 256K tokens extensible a 512K, lo que lo sitúa en la categoría de modelos de contexto largo orientados a tareas de agente.
 
-La relevancia del repositorio depende por completo del modelo subyacente. La nomenclatura del nombre ("29B-A4B") sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 29.000 millones de parámetros totales y unos 4.000 millones activos por token, lo que situaría el coste de decodificación en el orden de un modelo denso de 4B. Ninguno de estos extremos aparece confirmado en la información disponible.
+La relevancia técnica del modelo radica en dos factores. Primero, es el primer modelo de esta escala entrenado íntegramente en la plataforma Ascend NPU con el framework MindSpore, con optimizaciones específicas (operadores fusionados mHC, recomputación selectiva, fusión automática de grafos DVM) que elevaron el throughput de entrenamiento un 96% respecto al rendimiento base. Segundo, su arquitectura mHC + MLA + MTP está diseñada explícitamente para planificación multi-paso, tool calling y cadenas de razonamiento largas.
 
-En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, carece de pipeline declarado y no especifica idiomas soportados. La licencia declarada es Apache-2.0. Cualquier evaluación de capacidades debe remitirse al modelo base de XingChen-AGI.
+El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors (transformers) y GGUF (esta cuantización), y compatibilidad declarada con vLLM, SGLang, KTransformers, LLaMA-Factory y MindFormers, además de frameworks de agentes como OpenCode, Claude Code, OpenClaw y Hermes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el sufijo "A4B" del nombre sugiere MoE con 4.000 millones de parametros activos; sin confirmar) |
-| Parametros totales | no disponible (el nombre sugiere 29.000 millones) |
-| Parametros activos | no disponible (el nombre sugiere unos 4.000 millones) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio es de formato GGUF, pero no se enumeran los niveles de cuantizacion incluidos) |
+| Arquitectura | Transformer MoE con mHC + MLA + MTP (40 capas, hidden size 3584) |
+| Parametros totales | 31.215.031.088 (~29B, dato real de safetensors) |
+| Parametros activos | ~4B por token (4 de 64 expertos enrutados + 1 compartido) |
+| Longitud de contexto | 256K tokens nativo, extensible a 512K |
+| Tipos de cuantizacion | GGUF (este repositorio); safetensors en el modelo base |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF |
-| Modelo base | XingChen-AGI/Xing4.0-29B-A4B y XingChen-AGI/Xing4.0-29B-A4B-GGUF |
-| Autor de la cuantizacion | SolenopsisCampo |
-| Pipeline declarado | no disponible |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion del repositorio | 2026-09-17 |
-| Ultima actualizacion | 2026-09-17 |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base mas alla de lo que sugiere su nomenclatura. El sufijo "A4B" es la convencion habitual para designar modelos de mezcla de expertos (MoE) con un numero reducido de parametros activos por token; en este caso apuntaria a unos 29.000 millones de parametros totales con aproximadamente 4.000 millones activos. Se desconoce el numero de expertos, el numero de expertos activados por token, el mecanismo de enrutamiento, si emplea atencion completa o variantes eficientes, y si incorpora componentes hibridos.
+El modelo emplea una arquitectura MoE con 40 capas, hidden size de 3584, FFN densa con tamaño intermedio de 9216 y expertos con tamaño intermedio de 1024. Dispone de 64 expertos enrutados de los que se activan 4 por token, más 1 experto compartido. La atención es de tipo MLA (Multi-head Latent Attention), y el diseño incorpora mHC (componente propietario de la familia Xing) y MTP (Multi-Token Prediction), orientados a mantener coherencia en contextos largos y a acelerar la decodificación.
 
-Tampoco se dispone de informacion sobre el corpus de entrenamiento (numero de tokens, composicion, proporción de codigo o datos multilingues), sobre la posible aplicacion de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas concretas. El repositorio analizado unicamente contiene pesos convertidos a GGUF, por lo que el proceso de cuantizacion aplicado (herramienta utilizada, calibracion, niveles exactos) tambien es desconocido.
+El entrenamiento se realizó íntegramente en clústeres de Ascend 910C con MindSpore/MindFormers, incluyendo adaptación de características para mHC y desarrollo de operadores fusionados en Ascend C. Las optimizaciones de eficiencia incluyen comunicación MoE de grano fino, recomputación selectiva y fusión automática grafo-operador mediante DVM, con una mejora global de throughput del 96%. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional: no confirmada en la documentacion del repositorio; debe verificarse contra el modelo base.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el repositorio no declara idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Ejecucion local mediante llama.cpp y derivados: es la unica capacidad verificable a partir del formato de pesos publicado.
+- Generación de texto conversacional y razonamiento complejo, con modo "thinking" activable o desactivable mediante `chat_template_kwargs.enable_thinking`.
+- Razonamiento matemático de competición (evaluado en AIME2026 con 90.00).
+- Generación y edición de código en repositorios reales (SWE-bench Verified 75.00, SWE-bench Multilingual 66.00).
+- Ejecución de tareas en terminal y entornos de línea de comandos (Terminal-Bench 2.1 con 57.50).
+- Tool calling y function calling, con adaptación específica a frameworks de agentes (OpenCode, Claude Code, OpenClaw, Hermes).
+- Planificación multi-paso y ejecución de cadenas de razonamiento largas gracias a la arquitectura orientada a agentes.
+- Investigación profunda y recuperación de información multi-fuente (DeepresearchBII 60.80).
+- Seguimiento de instrucciones complejas (IFBench 69.67).
+- Capacidades multilingües en tareas de código (SWE-bench Multilingual); el conjunto exacto de idiomas naturales soportados no está disponible.
+- Fine-tuning ligero para dominios verticales: clasificación de intención, comprensión de tablas, auditoría de contratos y QA sobre conocimiento.
 
 ## Casos de uso
 
-- Despliegue local en estacion de trabajo: si se confirma la arquitectura MoE con unos 4.000 millones de parametros activos, una cuantizacion Q4_K_M de un modelo de 29B ocuparia del orden de 17-18 GB y cabria en una GPU de 24 GB, ofreciendo una velocidad de decodificacion mas cercana a la de un modelo denso de 4B que a la de uno de 29B.
-- Asistente conversacional en intranet corporativa: el formato GGUF permite servir el modelo sin exponer datos a APIs externas, siempre que se validen previamente la calidad de respuesta y el soporte de castellano, hoy no documentados.
-- Procesamiento por lotes de documentacion: resumen, clasificacion y extraccion de entidades sobre volumenes grandes de texto mediante colas offline, aprovechando el menor coste de inferencia de una arquitectura esparsa.
-- Generacion y revision de codigo en pipelines de CI: condicionado a que el modelo base demuestre capacidad de codigo; no hay evidencia en la informacion disponible.
-- Recuperacion aumentada (RAG) sobre corpus internos: viable tecnicamente, pero la longitud de contexto es desconocida, por lo que el tamano de los fragmentos recuperados debe fijarse de forma conservadora hasta verificarla.
-- Prototipado e investigacion sobre modelos esparsos: util para comparar el comportamiento de un MoE de 29B con 4B activos frente a alternativas densas del mismo orden en terminos de latencia, memoria y calidad.
-- Traduccion y normalizacion de textos: solo si se confirma cobertura multilingue del modelo base; no declarada en el repositorio.
-- Experimentacion en hardware de gama alta de consumo: permite reproducir evaluaciones con presupuesto reducido, aunque los resultados de una cuantizacion Q4 no son extrapolables a los pesos originales en precision completa.
+- **Automatización de ingeniería de software**: el modelo puede resolver issues reales sobre repositorios (75.00 en SWE-bench Verified) e integrarse en pipelines de CI/CD mediante tool calling y su ventana de 256K tokens para cargar contexto de proyecto completo.
+- **Agentes autónomos de terminal**: con 57.50 en Terminal-Bench 2.1, es adecuado para orquestar tareas de shell, instalación de dependencias y depuración en entornos aislados con timeouts de hasta 24 horas.
+- **Atención al cliente multi-turno**: la ventana de 256K permite mantener historiales de conversación extensos y documentación de producto en contexto sin truncamiento, con temperatura recomendada de 1.0 y top_p 0.95.
+- **Auditoría de contratos y documentos legales**: el modelo está diseñado para fine-tuning ligero en dominios verticales como auditoría contractual y QA sobre conocimiento, aprovechando el contexto largo para procesar expedientes completos.
+- **Investigación profunda automatizada**: con 60.80 en DeepresearchBII, puede encadenar búsquedas, lectura de fuentes y síntesis en tareas de research multi-paso.
+- **Migración y refactorización multi-repositorio**: los 66.00 en SWE-bench Multilingual y el soporte de tool calling permiten abordar cambios de código que cruzan lenguajes y proyectos.
+- **Comprensión de tablas y clasificación de intención**: escenarios de back-office donde se requiere adaptación con datos propietarios mediante LLaMA-Factory o MindFormers.
+- **Despliegue en infraestructura Ascend**: organizaciones con clústeres Ascend 910C pueden aprovechar la co-optimización nativa del modelo con MindSpore/MindFormers.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Benchmark | Xing4.0-29B-A4B | Gemma4-26B-A4B | Qwen3.6-35B-A3B |
+|---|---:|---:|---:|
+| IFBench | 69.67 | **72.67** | 65.50 |
+| AIME2026 | 90.00 | 88.30 | **92.70** |
+| AA.LCR | 61.00 | **66.00** | 62.00 |
+| Tau3-Bench | 64.63 | 58.90 | **67.20** |
+| Claw-Eval | **76.55** | 71.49 | 74.54 |
+| SWE-bench Verified | 75.00 | 53.00 | **76.00** |
+| Terminal-Bench 2.1 | **57.50** | 30.00 | 51.50 |
+| SWE-bench Multilingual | 66.00 | 51.00 | **67.20** |
+| DeepresearchBII | **60.80** | 39.30 | 59.70 |
+
+Condiciones de evaluación declaradas por el autor: SWE-bench Verified y Multilingual con harness `SWE-agent`, temperature 1.0, top_p 0.95, repetition_penalty 1.05 y ventana de 210K; Terminal-Bench 2.1 en `terminus-2` con temperature 0.8, max_tokens 64K, timeout de 24 horas y media de 3 ejecuciones; Claw-Eval con harness oficial, max_tokens 16384, contexto 256K y media de 3 ejecuciones; Tau3-Bench con harness oficial y temperature 0.8 (el resto de parámetros queda truncado en la información disponible).
 
 ## Requisitos de hardware
 
-Estimaciones calculadas a partir de un modelo de 29.000 millones de parametros (cifra inferida del nombre, no confirmada); el consumo real depende de la arquitectura final y de la longitud de contexto configurada.
-
-- Precision completa (FP16/BF16): ~58 GB de pesos mas cache KV, en torno a 80 GB con contexto moderado. Requiere A100 80 GB, H100 80 GB o 2x RTX 4090/A6000 de 48 GB.
-- Q8_0: ~31 GB de pesos. Cabe en 2x RTX 3090/4090 (48 GB) o en un Apple Silicon con 48-64 GB de memoria unificada.
-- Q5_K_M: ~20-21 GB. Ajustado en una RTX 4090 o RTX 3090 de 24 GB con contexto reducido.
-- Q4_K_M: ~17-18 GB. Cabe con holgura en 24 GB (RTX 3090, RTX 4090, L4 no), y es el nivel recomendado para uso en GPU de consumo.
-- Q3_K_M: ~13-14 GB. Cabe en GPUs de 16 GB (RTX 4080, RTX 4070 Ti Super) con contexto limitado.
-- Q2_K: ~10-11 GB. Viable en GPUs de 12 GB, con degradacion de calidad esperable y no medida.
-- CPU y memoria unificada: el formato GGUF permite repartir capas entre GPU y RAM; un equipo con 32 GB de RAM y una GPU de 12-16 GB puede ejecutar Q4 con offload parcial a costa de latencia.
-- Velocidad: si se confirma la activacion de unos 4.000 millones de parametros por token, la decodificacion deberia ser sustancialmente mas rapida que la de un modelo denso de 29B, pero no hay medidas publicadas de tokens por segundo.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, kobold.cpp, llama-cpp-python y text-generation-webui para el formato GGUF; vLLM y TGI no estan optimizados para GGUF y rinden mejor con los pesos safetensors del modelo base.
+- **VRAM estimada**: con 31.2B parámetros totales, en FP16 se requieren aproximadamente 62 GB de pesos; en cuantización de 8 bits, ~31 GB; en 4 bits, ~16-18 GB. Al ser MoE con 4B activos, la latencia por token es más próxima a la de un modelo denso de 4B que a la de uno de 29B, aunque la memoria debe alojar todos los expertos.
+- **GPU recomendadas**: A100 80GB, H100 80GB o clústeres Ascend 910C para FP16 y contexto largo. Para cuantizaciones de 4 bits, una RTX 4090 (24 GB) puede alojar los pesos, aunque la ventana de 256K exigirá gestión agresiva de KV cache.
+- **Consumer GPU**: viable en RTX 4090 y GPUs con 24 GB o más usando GGUF de 4 bits; en GPUs de 16 GB solo con cuantizaciones agresivas y contextos reducidos.
+- **Despliegue**: vLLM, SGLang, KTransformers, Transformers, llama.cpp/Ollama para GGUF, y MindFormers en Ascend. Fine-tuning con LLaMA-Factory o MindFormers.
+- **Latencia y throughput**: no disponibles en la información proporcionada. El autor reporta una mejora del 96% en throughput de entrenamiento, no de inferencia.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos comparados proceden de su documentacion publica y deben verificarse antes de usarse en una decision tecnica. No es posible comparar rendimiento porque no existen benchmarks publicados para Xing4.0-29B-A4B-GGUF.
+| Modelo | Parámetros | Activos | Contexto | Licencia | Punto fuerte |
+|---|---|---|---|---|---|
+| Xing4.0-29B-A4B | 29B | 4B | 256K (512K ext.) | Apache 2.0 | Agentes y terminal (Terminal-Bench 57.50, Claw-Eval 76.55) |
+| Gemma4-26B-A4B | 26B | 4B | no disponible | no disponible | Seguimiento de instrucciones (IFBench 72.67) y contexto largo (AA.LCR 66.00) |
+| Qwen3.6-35B-A3B | 35B | 3B | no disponible | no disponible | Matemáticas (AIME2026 92.70) y código (SWE-bench 76.00) |
 
-| Modelo | Parametros (total / activos) | Contexto | Licencia | Formatos publicados |
-|---|---|---|---|---|
-| Xing4.0-29B-A4B-GGUF | no disponible (nombre sugiere 29B / 4B) | no disponible | apache-2.0 | GGUF |
-| Qwen3-30B-A3B | 30B / 3B | 128.000 tokens | Apache-2.0 | safetensors, GGUF |
-| Mixtral 8x7B | 46,7B / 12,9B | 32.768 tokens | Apache-2.0 | safetensors, GGUF |
+Xing4.0 destaca en tareas de agente sobre terminal y en investigación profunda, mientras que Qwen3.6-35B-A3B lidera en matemáticas y código puro, y Gemma4-26B-A4B en seguimiento de instrucciones. La licencia Apache 2.0 de Xing4.0 es una ventaja clara para uso comercial frente a alternativas con licencias más restrictivas.
 
 ## Limitaciones y advertencias
 
-- Repositorio sin validacion comunitaria: 0 descargas y 0 likes, sin pipeline declarado ni resultados de evaluacion.
-- Model card practicamente vacia: unicamente un frontmatter con licencia y modelo base; no hay descripcion de arquitectura, datos de entrenamiento ni uso previsto.
-- Procedencia de la cuantizacion desconocida: no se indica la herramienta empleada, los niveles incluidos ni si se aplico calibracion (importante para imatrix).
-- Degradacion por cuantizacion: los niveles Q3 y Q2 reducen de forma apreciable la calidad, especialmente en razonamiento y matematicas; no se ha medido el impacto en este modelo concreto.
-- Idiomas no declarados: no hay garantia de un rendimiento adecuado en castellano.
-- Riesgo de alucinacion inherente a los modelos generativos, agravado por la ausencia de evaluaciones publicadas.
-- Contexto desconocido: planificar aplicaciones con ventanas largas sin verificar antes el limite real puede provocar truncamientos silenciosos.
-- Licencia: el repositorio declara Apache-2.0, pero conviene comprobar la licencia y las condiciones del modelo base de XingChen-AGI antes de un uso comercial, ya que la cuantizacion no puede otorgar derechos mas amplios que el original.
-- Fecha de creacion atipica (2026-09-17) y actualizacion en apenas diez minutos: sugiere una publicacion automatizada o de prueba.
-- No debe utilizarse como sustituto de los pesos originales en tareas de evaluacion cientifica, ya que las cuantizaciones no son representativas del rendimiento en precision completa.
+- **Sesgos**: no se documentan en la información disponible; cabe esperar sesgos derivados de los datos de entrenamiento, no publicados.
+- **Alucinación**: no se han publicado evaluaciones específicas de factualidad o tasa de alucinación.
+- **Idiomas**: el conjunto exacto de idiomas naturales soportados no está disponible; la evaluación multilingüe se limita a código (SWE-bench Multilingual).
+- **Contexto**: aunque el contexto nativo es de 256K, el rendimiento en ventanas extremas puede degradarse; las evaluaciones de SWE-bench usan 210K, no el máximo.
+- **Licencia**: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los frameworks de agentes adaptados (OpenCode, Claude Code, OpenClaw, Hermes), que tienen licencias propias.
+- **Producción**: el repositorio es una cuantización GGUF de terceros (SolenopsisCampo), no el repo oficial; para producción conviene validar la fidelidad de la cuantización frente al modelo base y fijar parámetros de muestreo (temperature 1.0/0.8, top_p 0.95, repetition_penalty 1.05) según el escenario.
+- **Hardware**: el entrenamiento está co-optimizado para Ascend; el rendimiento en GPUs NVIDIA no está cuantificado en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/SolenopsisCampo/Xing4.0-29B-A4B-GGUF
-- Modelo base (pesos originales): https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
-- Modelo base (GGUF de referencia): https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-GGUF
-- Paper, blog o demo del modelo: no disponible
-- Repositorio de codigo: no disponible
+- Repositorio Hugging Face (GGUF): https://huggingface.co/SolenopsisCampo/Xing4.0-29B-A4B-GGUF
+- Modelo base: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
+- GitHub del modelo: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
+- TeleChat (predecesor): https://github.com/Tele-AI/TeleChat3
+- vLLM: https://github.com/vllm-project/vllm
+- SGLang: https://github.com/sgl-project/sglang
+- KTransformers: https://github.com/kvcache-ai/ktransformers
+- Harness Claw-Eval: https://github.com/claw-eval/claw-eval
+- Harness Tau-Bench: https://github.com/sierra-research/tau-bench
+- Paper referenciado (arXiv:2512.24157): no disponible enlace directo en la información proporcionada
+- Paper referenciado (arXiv:2507.18013): no disponible enlace directo en la información proporcionada

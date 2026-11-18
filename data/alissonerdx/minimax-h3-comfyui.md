@@ -2,47 +2,57 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) para el modelo de generación de video MiniMax H3, desarrollado por Alissonerdx para su uso en ComfyUI. El adaptador, llamado `minimax_h3_lms_v1.0_r64`, tiene como objetivo principal afilar (sharpening) el vídeo de entrada manteniendo una apariencia fotorrealista. En lugar de condicionarse mediante una descripción textual del vídeo, el LoRA usa una guía latente (guide latents) alineada con la línea de tiempo del objetivo, lo que permite una correspondencia píxel a píxel con el clip fuente.
+MiniMax-H3-ComfyUI es una colección de LoRAs experimentales para los modelos de generación de vídeo e imagen MiniMax H3, empaquetadas y adaptadas para su uso directo en ComfyUI. El repositorio lo mantiene el usuario Alissonerdx y no constituye un modelo fundacional, sino un conjunto de adaptadores de bajo rango (LoRA) que modifican el comportamiento de los pesos base de MiniMaxAI/MiniMax-H3 y MiniMaxAI/MiniMax-H3-Image. Con 323.392 descargas y 636 likes en el momento de la consulta, es uno de los repositorios de referencia para trabajar con H3 dentro del ecosistema ComfyUI.
 
-El modelo base MiniMax H3 es un modelo de vídeo de MiniMaxAI; los pesos del modelo se cargan desde el repositorio Comfy-Org/MiniMax-H3. El LoRA está entrenado principalmente para la variante `ref2va` (referencia a vídeo), con soporte limitado para `fl2va`. El repositorio incluye el archivo del LoRA en formato Safetensors, un workflow de ComfyUI preconfigurado y ocho vídeos de comparación antes/después. No se dispone de datos sobre el número de parámetros, la arquitectura del modelo base, ni benchmarks públicos.
+El paquete cubre tres familias funcionales: intercambio de personaje y cabeza (character swap, head swap, preprocessor map), transferencia de movimiento (motion transfer, variantes TARA y FFP, controladores SolarRenderer) y edición, mejora y animación (VFX edit, style transfer, LMS/sharpness, live wallpaper). Cada LoRA incluye un trigger textual específico (`body_swap:`, `motion_transfer:`, `vfx_edit:`, `style_transfer:`, `live_wallpaper:`, entre otros) y va acompañada de guías y workflows JSON para ComfyUI.
 
-## Especificaciones tecnicas
+La relevancia actual del repo radica en que extiende un modelo de difusión de vídeo de gran tamaño con capacidades de edición controlada sin necesidad de reentrenar el modelo base, algo crítico para flujos de producción de VFX y contenido audiovisual. No obstante, el propio autor lo describe como modelos de investigación, no como herramientas terminadas.
 
-| Parámetro | Valor |
+## Especificaciones técnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (Low-Rank Adaptation) sobre modelo base de video MiniMax H3 |
-| Parametros totales | No disponible |
-| Parametros activos | No aplicable (no es MoE) |
-| Longitud de contexto | No disponible (modelo de video, sin contexto textual definido) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (el LoRA no procesa texto) |
-| Licencia | Apache-2.0 (para el LoRA; el modelo base puede tener otra licencia) |
-| Formato de pesos | Safetensors (LoRA); workflow en JSON |
+| Arquitectura | LoRA (adaptadores de bajo rango) sobre el modelo base MiniMax H3 (difusión vídeo/imagen) |
+| Parametros totales | no disponible (depende del rango de cada LoRA; se documentan rangos r32, r64 y r128) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | mixed-asset-licenses (other); enlace a LICENSES.md en el repo |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 para el modelo de video MiniMax H3. Se entrenó usando una técnica de guía latente (guide latents) en lugar del nodo nativo de referencia (`MiniMaxH3ReferenceToVideo`). El clip fuente se codifica con el VAE de video y se empaqueta en la secuencia del transformer como un bloque de condicionamiento alineado con la línea de tiempo del objetivo. Tres propiedades definen esta alineación: mismo origen temporal (el fotograma `i` de la guía coincide con el fotograma `i` del objetivo), misma cuadrícula espacial (la guía se codifica a la resolución del objetivo), y no avanza el reloj de referencia, ya que la guía ocupa la línea de tiempo del propio objetivo en lugar de anteponerse a él. Esto elimina el coste posicional en la atención entre guía y objetivo.
+Los artefactos son LoRAs, es decir, matrices de baja秩 descomposición que se inyectan en las capas del modelo base MiniMax H3. El repositorio documenta explícitamente los rangos empleados: r32 para head swap y live wallpaper, r64 para style transfer, LMS y character swap v1.0, y r128 para VFX edit. Las LoRAs están entrenadas y probadas principalmente contra los pesos `ref2va` del modelo base, publicados por Comfy-Org en su árbol de `diffusion_models`.
 
-Durante el entrenamiento, la guía se mantiene casi limpia (aproximadamente un 0,1% de aumentación de ruido), mientras que el objetivo se ruidifica normalmente. Así el modelo aprende a mapear la guía al objetivo en lugar de denoificar ambos. El codificador de texto nunca ve la guía; solo el caption llega al texto, y el vídeo accede al transformer puramente como latentes. Por tanto, el modelo aprende una correspondencia a nivel de píxel con la fuente, no una paráfrasis de ella. El entrenamiento se realizó con un fork personalizado de ai-toolkit que añadió soporte para guías latentes.
+No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO; estos datos no aparecen en la model card. Sí se documenta una innovación operativa relevante: la integración con "Guide Latents" para transferencia de movimiento y con alineación TARA para escenas con múltiples sujetos, así como el uso de mapas de preprocesado (normal maps y DWPose) para el swap de hasta tres sujetos marcados por color. Las LoRAs de SolarRenderer incluyen una variante de destilación a 4 pasos, pensada para reducir el coste de muestreo.
 
 ## Capacidades
 
-- Afilado de vídeo (sharpening) preservando el fotorrealismo, mediante la guía latente alineada.
-- Condicionamiento sobre el vídeo fuente sin necesidad de describirlo en texto.
-- Integración nativa con ComfyUI a través del nodo `MiniMaxH3AddGuide` con `frame_idx = 0`.
-- Funciona como una segunda pasada (segunda pasada) para mejorar clips ya generados, aunque también puede usarse para generación directa con resultados diferentes.
-- Compatible principalmente con la base `ref2va`; `fl2va` es compatible pero menos probado.
-- Incluye un workflow preconfigurado con el nodo externo `AIToolkitMiniMaxH3RefVideo` para reescalado del clip.
-- No ofrece capacidades de lenguaje, razonamiento, código, matemáticas, visión, tool calling, agentes ni multi-step reasoning; es exclusivamente un adaptador de video.
+- Intercambio de personaje principal en vídeo mediante una imagen de referencia, con trigger `body_swap:`.
+- Intercambio de cabeza aislado (experimental) con trigger `head_swap:`.
+- Intercambio de hasta tres sujetos marcados por color usando mapas de normales o DWPose, con trigger `character_swap:`.
+- Intercambio de hasta tres personas marcadas por color en imagen fija (H3 Image), con activación automática.
+- Transferencia de movimiento desde un vídeo guía a imágenes de referencia, con trigger `motion_transfer:`.
+- Variante TARA de transferencia de movimiento optimizada para múltiples sujetos.
+- Edición guiada por prompt sobre vídeo fuente (VFX edit) con trigger `vfx_edit:`.
+- Propagación de edición desde el primer fotograma al resto del clip (FFP).
+- Transferencia de estilo desde imagen o texto, con trigger `style_transfer:`.
+- Restauración de detalle y nitidez (LMS) a partir de una fuente alineada, con caption fija.
+- Animación de 1 a 3 imágenes fijas como live wallpaper, con trigger `live_wallpaper:`.
+- Control y destilación a 4 pasos vía LoRAs de SolarRenderer.
+- Integración nativa con ComfyUI mediante workflows JSON y nodos nativos.
 
 ## Casos de uso
 
-- Postproducción de vídeo generado: aplicar el LoRA a un clip ya generado con MiniMax H3 para aumentar la nitidez en una segunda pasada, manteniendo la coherencia visual.
-- Mejora de calidad en pipelines de ComfyUI: el workflow incluido permite integrar el LoRA en procesos de generación de vídeo con el nodo `Add Guide`, útil para producción de contenido audiovisual.
-- Restauración de metraje antiguo o de baja calidad: al condicionar sobre el clip fuente, el modelo puede recuperar detalle sin alterar la identidad del vídeo original.
-- Refinado de animaciones generadas por IA: usar el LoRA para afilar texturas y bordes en clips destinados a composición o efecto visual.
-- Investigación de técnicas de condicionamiento latente: el mecanismo de guía alineada ofrece un caso de estudio para métodos de control píxel a píxel en modelos de vídeo.
-- Comparación de estilos en desarrollo creativo: los vídeos de ejemplo incluidos permiten evaluar rápidamente el efecto del LoRA antes de integrarlo en un flujo de trabajo mayor.
+- Postproducción de VFX: sustituir el rostro o el cuerpo de un actor por el de un doble en planos de vídeo, usando character swap v1.1 con una imagen de referencia y el trigger `body_swap:`, reduciendo el coste frente a rotoscopia manual.
+- Previsualización de reparto (casting previz): aplicar la cara de un actor candidato sobre el clip de una prueba de cámara para evaluar encaje visual antes de rodar.
+- Animación de fotografías para señalización digital: convertir de 1 a 3 imágenes fijas en bucles animados con live wallpaper, útil para pantallas en tienda o presentaciones.
+- Transferencia de actuación: trasladar el movimiento de un vídeo guía a un personaje ilustrado o a una foto mediante motion transfer, adecuado para animación de personajes en publicidad.
+- Limpieza y mejora de metraje: restaurar detalle en material de archivo o de baja resolución usando LMS/sharpness con una fuente alineada, en pipelines de remasterización.
+- Estilización de clips para redes: aplicar style transfer a vídeo corto para homogeneizar la estética de una campaña sin rehacer el rodaje.
+- Edición iterativa de vídeo por prompt: modificar elementos concretos (vestuario, objetos, iluminación) con VFX edit y propagar el cambio con la variante FFP, útil en revisiones de cliente.
+- Sustitución múltiple de figurantes: reemplazar hasta tres personas marcadas por color en una imagen fija con la LoRA de H3 Image, para composición de escenas publicitarias.
 
 ## Benchmarks y rendimiento
 
@@ -50,27 +60,40 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- No se proporcionan datos específicos de VRAM, GPU recomendadas, latencia ni throughput.
-- El modelo base MiniMax H3 es un modelo de vídeo de gran tamaño; se requiere un entorno capaz de ejecutarlo en ComfyUI. La VRAM necesaria dependerá de la resolución y la longitud del clip, pero no se dispone de cifras.
-- El despliegue se realiza mediante ComfyUI, cargando los pesos base desde Comfy-Org/MiniMax-H3 y aplicando el LoRA.
+- El repo ocupa 40,7 GB, pero ese tamaño corresponde al conjunto de LoRAs y workflows, no a los pesos base; el modelo fundacional MiniMax H3 debe descargarse aparte y es el que determina los requisitos reales de VRAM.
+- VRAM estimada para inferencia: no disponible. Depende del tamaño y la resolución del modelo base H3, así como de la resolución y duración del vídeo generado.
+- GPU recomendadas: no disponible en la información proporcionada. Para modelos de difusión de vídeo de esta escala se suele requerir hardware de datacenter (A100, H100) o GPUs de consumo de gama alta con suficiente VRAM, pero no se confirma en la documentación.
+- ¿Cabe en GPU de consumo? no disponible.
+- Opciones de despliegue: ComfyUI (soporte nativo con workflows JSON incluidos), con pesos en safetensors. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que además no aplican a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponible. La variante SolarRenderer 4-step está pensada para reducir pasos de muestreo, lo que sugiere una mejora de latencia, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han encontrado comparativas públicas con otros LoRA o modelos similares en la información proporcionada.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax-H3-ComfyUI (este repo) | LoRAs para edición de vídeo/imagen sobre H3 | no disponible (rangos r32–r128) | no disponible | mixed-asset-licenses | Hugging Face, ComfyUI |
+| MiniMaxAI/MiniMax-H3 | Modelo base de difusión vídeo | no disponible | no disponible | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3-Image | Modelo base de difusión imagen | no disponible | no disponible | no disponible | Hugging Face |
+| Comfy-Org/MiniMax-H3 (ref2va) | Pesos base empaquetados para ComfyUI | no disponible | no disponible | no disponible | Hugging Face |
+
+No se dispone de datos de benchmarks ni de especificaciones de parámetros de los modelos base en la información proporcionada, por lo que no es posible una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El LoRA está entrenado principalmente para `ref2va`; el uso con `fl2va` es posible pero está menos probado y puede producir resultados distintos.
-- Requiere longitudes de clip válidas según la fórmula `17k + 5` fotogramas (5, 22, 39, 56, 73, 90, 107, 124...). Una guía más corta que el objetivo o con una resolución diferente rompe la alineación.
-- El uso combinado con el nodo nativo `MiniMaxH3ReferenceToVideo` es opcional y experimental; introducir dos tipos de condicionamiento a la vez puede alterar los resultados de forma impredecible.
-- El workflow incluido depende del nodo externo `AIToolkitMiniMaxH3RefVideo` de ostris/ComfyUI-AIToolkit-MiniMaxH3; si no se instala, el workflow no carga tal cual.
-- La licencia Apache-2.0 se aplica a este repositorio y al LoRA; el modelo base MiniMax H3 puede tener restricciones adicionales de licencia que deben revisarse para uso comercial.
-- No se dispone de información sobre sesgos, riesgos de alucinación visual ni limitaciones idiomáticas específicas del LoRA.
+- Modelos de investigación: el autor advierte explícitamente de que no son herramientas terminadas y que los resultados varían sustancialmente según el clip fuente, la resolución, el prompt y las imágenes de referencia.
+- Licencia mixta (mixed-asset-licenses) con fichero LICENSES.md propio: es imprescindible revisarlo antes de cualquier uso comercial, ya que puede imponer restricciones sobre los assets generados o sobre los pesos base.
+- Riesgo de artefactos y alucinación visual: al ser LoRAs de edición sobre difusión, pueden aparecer inconsistencias de identidad, parpadeos entre fotogramas o deformaciones, especialmente en las variantes marcadas como experimentales (head swap, FFP, preprocessor map).
+- Dependencia del modelo base: el funcionamiento correcto está probado principalmente con los pesos `ref2va` de Comfy-Org; otros pesos o versiones pueden degradar los resultados.
+- Triggers obligatorios: cada LoRA requiere su palabra de activación concreta (`body_swap:`, `motion_transfer:`, `vfx_edit:`, `style_transfer:`, `live_wallpaper:`); omitirla invalida el efecto esperado.
+- Idiomas soportados no documentados: no se especifica el comportamiento multilingüe de los prompts.
+- Sin datos de sesgo: no se documentan sesgos conocidos ni evaluaciones de equidad, lo que es relevante si se emplean para sustitución de personas.
+- Requisitos de hardware no publicados: planificar el despliegue exige estimar la VRAM a partir del modelo base, no de este repo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Pesos para ComfyUI (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
-- Nodo externo AIToolkit: https://github.com/ostris/ComfyUI-AIToolkit-MiniMaxH3
-- Herramienta de entrenamiento ai-toolkit: https://github.com/ostris/ai-toolkit
+- Modelo base MiniMax H3 Image: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
+- Pesos ref2va para ComfyUI: https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/diffusion_models
+- Licencias: https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/blob/main/LICENSES.md
+- Repositorio Henge (herramientas SolarRenderer y FFP): https://github.com/alisson-anjos/Henge

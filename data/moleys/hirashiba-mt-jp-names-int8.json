@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Moleys/hirashiba-mt-jp-names-int8",
+  "slug": "moleys-hirashiba-mt-jp-names-int8",
+  "author": "Moleys",
+  "url": "https://huggingface.co/Moleys/hirashiba-mt-jp-names-int8",
+  "created_at": "2026-11-17T23:46:32.000Z",
+  "updated_at": "2026-11-17T23:47:07.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ctranslate2",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "ctranslate2",
+    "onnx",
+    "int8",
+    "quantization",
+    "onnxruntime",
+    "marian",
+    "name-transliteration",
+    "translation",
+    "zh",
+    "base_model:chi-vi/hirashiba-mt-jp-names",
+    "base_model:quantized:chi-vi/hirashiba-mt-jp-names",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47049998,
+  "storage_human": "47 MB",
+  "context_length": null,
+  "base_model": "chi-vi/hirashiba-mt-jp-names",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

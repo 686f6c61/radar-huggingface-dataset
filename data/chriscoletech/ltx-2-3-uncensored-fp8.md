@@ -2,77 +2,100 @@
 
 ## Resumen
 
-LTX-2.3-uncensored-fp8 es una compilación de cuantizaciones del modelo LTX-2.3 22B de Lightricks, redistribuida por el usuario ChrisColeTech en Hugging Face. Se trata de una versión "uncensored" (sin censura) del modelo original, que incluye no solo el transformador principal sino también los text encoders (Gemma-3-12B), los VAEs de video y audio, las LoRAs de destilación y un upscaler espacial, todo organizado en un layout de archivos pensado para ejecución local. El nombre comercial indica 22B parámetros, aunque el dato real de safetensors es de 11.766.034.176 parámetros (aproximadamente 11.7B), lo que sugiere que la denominación "22B" corresponde al nombre del checkpoint de Lightricks y no al recuento exacto de pesos.
+LTX-2.3-uncensored-fp8 es una compilación pre-fusionada del modelo de generación de vídeo LTX Video-2.3 de Lightricks, publicada por el usuario ChrisColeTech bajo el nombre comercial de "LTX Video-2.3 Uncensored Turbo v1.4". No se trata de un modelo entrenado desde cero, sino de un merge de pesos que combina el DiT base con tres fine-tunes: la LoRA Eros10 NSFW, la LoRA destilada DMD y el ICLoRA Detailer oficial de LTXV. El resultado se distribuye en formato GGUF y FP8, lo que reduce los requisitos de memoria frente a los pesos originales en bf16.
 
-El modelo está diseñado para generación de video de texto a video (txt2video) e imagen a video (img2video), con soporte de audio sincronizado (aunque no se ejercita en el ejemplo de muestra) y modo destilado que permite generar video con solo 12 pasos de difusión. La relevancia actual radica en que ofrece una alternativa de generación de video sin restricciones de contenido para ejecutarse en GPU de consumo, como la RTX 5090 de 32 GB, algo poco habitual en este tipo de modelos. El repositorio pesa 164.4 GB en total, pero un conjunto funcional completo (transformador Q4_K_M + Gemma + conectores + VAE + LoRA) ocupa aproximadamente 27 GB.
+El modelo resuelve la generación de vídeo a partir de texto, imagen, audio y referencias visuales (T2V, I2V, V2V, A2V, FL2VA, REF2VA) con un enfoque explícito en contenido para adultos y sin censura, además de una destilación que permite generar vídeo en tan solo 4-8 pasos en lugar de las decenas habituales en modelos de difusión. Su relevancia actual radica en la combinación de velocidad (destilación DMD), preservación de identidad en image-to-video y la posibilidad de ejecutarlo en hardware de consumo gracias a la cuantización.
 
-## Especificaciones técnicas
+El repositorio tiene 296 GB, 93.766 descargas y 366 likes en el momento de la consulta. La licencia figura como "unknown", lo que supone un riesgo legal relevante para cualquier uso comercial. Los pesos declarados en safetensors suman 21.005.004.544 parámetros, aunque el pipeline es de difusión (DiT) y no un modelo de lenguaje.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LTX-2.3 (Lightricks), transformer de difusion para video |
-| Parametros totales | 11.766.034.176 (dato real safetensors; nombre comercial "22B") |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no disponible (modelo de video, no texto) |
-| Tipos de cuantizacion | Q4_K_M, Q6_K, Q8_0, FP8, INT8 (GGUF y safetensors) |
-| Idiomas soportados | no disponible |
-| Licencia | unknown (referir a licencia upstream de Lightricks) |
-| Formato de pesos | GGUF, safetensors |
+| Arquitectura | DiT (Diffusion Transformer) de vídeo, base Lightricks LTX-2.3 |
+| Parametros totales | 21.005.004.544 (según safetensors del repo) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (condicionamiento por prompt; hasta 960 frames / ~40 s de vídeo) |
+| Tipos de cuantizacion | GGUF (cuantizaciones varias) y FP8 |
+| Idiomas soportados | no disponible (prompts en lenguaje natural; el modelo card está en inglés) |
+| Licencia | unknown (desconocida) |
+| Formato de pesos | GGUF, FP8 (safetensors como base) |
+| Resolución de ejemplo | 1280 × 736 |
+| Frames máximos documentados | 960 frames (~40 s) |
+| Pasos de inferencia | 4 (mínimo), 8-9 recomendados |
+| CFG de referencia | 1.0 (íntimo), 3.5 (general), 3.8 (acción/diálogo) |
+| Pipeline | text-to-video (con variantes image-to-video, video-to-video, audio-to-video) |
 
 ## Arquitectura y entrenamiento
 
-LTX-2.3 es un modelo de difusion para video desarrollado por Lightricks, la compania detras de la app de edicion Facetune. La arquitectura es un transformer de difusion que opera en un espacio latente comprimido por un VAE de video, con un text encoder basado en Gemma-3-12B y un proyector multimodal para integrar las condiciones textuales. Este repositorio en concreto no es un reentrenamiento: son cuantizaciones de los pesos del modelo original, tanto de la linea "uncensored" (1.1) como de la "distilled" (1.0), redistribuidas junto con los componentes necesarios para ejecutarlas localmente.
+La base es LTX-2.3 de Lightricks, un Diffusion Transformer para vídeo que opera en espacio latente y admite condicionamiento multimodal: texto, imagen inicial/final, audio y referencias visuales. Sobre esa base, el autor ha fusionado tres adaptadores en los pesos finales: la LoRA Eros10 NSFW a fuerza 1.0, la LoRA DMD destilada a fuerza 1.0 y el ICLoRA Detailer oficial de LTXV a fuerza 0.6. La destilación DMD (Distribution Matching Distillation) es la innovación clave: reduce el número de pasos de muestreo necesarios, lo que permite generar vídeo en 4-8 pasos con una calidad aceptable y mejora la preservación facial en image-to-video y el seguimiento de instrucciones respecto al modelo stock.
 
-El modelo esta destilado, lo que significa que ha sido entrenado para generar video en pocos pasos de difusion (12 pasos recomendados, frente a los 20-50 habituales en modelos no destilados) y no usa clasifier-free guidance (CFG). La destilacion se aplica mediante una LoRA obligatoria que se carga en tiempo de ejecucion; sin ella, el pipeline no arranca. El modelo soporta resolucion nativa de hasta 4K segun la documentacion de Lightricks, aunque la configuracion recomendada en este repo es 1024x576 para evitar problemas de desaturacion de color medidos por el autor.
+No se dispone de información sobre el volumen de tokens, la composición del dataset de entrenamiento original de LTX-2.3 ni sobre si hubo RLHF o DPO; esos datos corresponden al modelo base de Lightricks y no están incluidos en la información proporcionada. Tampoco se detalla la metodología exacta del merge (por ejemplo, si se usó fusión lineal de pesos o concatenación de módulos), más allá de que los LoRA están "baked in". El modelo card menciona que existen "guardrails" para impedir contenido ilegal, aunque el foco declarado es NSFW.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (txt2video) e imagen (img2video).
-- Generacion de video con audio sincronizado (el audio VAE esta incluido, aunque el sample de muestra no lo ejerce).
-- Modo destilado con generacion en 12 pasos de difusion (frente a los 20-50 de modelos no destilados).
-- Soporte de upscaling espacial 2x mediante un modelo dedicado incluido en el repositorio.
-- Capacidad de generar video en resoluciones desde 768x512 hasta 4K, con la recomendacion del autor de usar 1024x576 para evitar desaturacion de color.
-- Sin restricciones de contenido (version "uncensored"), pensada para contenido creativo sin filtros.
-- Compatible con cargadores que descubren componentes por directorio (ComfyUI, llama.cpp) mediante la estructura de archivos `split/`.
+- Generación de vídeo texto-a-vídeo (T2V) con prompts descriptivos en lenguaje natural.
+- Generación de vídeo imagen-a-vídeo (I2V) preservando la identidad del sujeto de la imagen de referencia.
+- Vídeo-a-vídeo (V2V) y audio-a-vídeo (A2V), incluyendo variantes FL2VA (primer y último frame), T2VA (texto a vídeo con audio), I2VA (imagen a vídeo con audio) y REF2VA (referencia a vídeo con audio).
+- Generación de audio sincronizado junto con el vídeo (el CFG más alto incrementa el movimiento y el audio).
+- Generación de clips largos: hasta 960 frames, aproximadamente 40 segundos, manteniendo coherencia de personaje y escena.
+- Control de cámara mediante prompt (travelling, zoom out, seguimiento estilo smartphone).
+- Generación rápida en 4 pasos (8 recomendados) gracias a la destilación DMD.
+- Contenido NSFW explícito, sin censura, como característica diferencial frente al modelo base.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso; no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Creacion de contenido creativo sin restricciones: el modelo permite generar video de cualquier tematica sin filtros de seguridad, util para artistas y creadores que necesitan explorar conceptos que los modelos censurados bloquean. Se usaria con prompts descriptivos y la configuracion recomendada de 1024x576, 12 pasos y guidance 1.0.
-- Prototipado rapido de video para publicidad: con 12 pasos de difusion y una RTX 5090, se puede generar un clip de 5 segundos en aproximadamente 11 minutos, lo que permite iterar sobre conceptos de anuncios sin depender de servicios externos ni costes por uso.
-- Generacion de video de fondo para produccion audiovisual: el modelo puede producir clips de ambiente (paisajes, texturas, objetos) que se pueden usar como material de archivo, con la opcion de upscaling 2x para mejorar la resolucion.
-- Investigacion en generacion de video sin censura: para investigadores que estudian como los modelos generativos manejan contenido de riesgo, este repo ofrece una base reproducible con cuantizaciones que caben en GPU de 32 GB.
-- Creacion de video de imagen a video: a partir de una fotografia, el modelo puede generar una animacion corta con movimiento de camara, util para dar vida a imagenes fijas en presentaciones o redes sociales.
-- Desarrollo de pipelines de generacion de video en local: gracias a los cuantizados GGUF, se puede integrar en entornos de produccion con llama.cpp o ComfyUI para automatizar la generacion de video sin depender de APIs externas.
+- Previsualización de storyboards para cine y publicidad: generar clips de 5 segundos en 8 pasos a 1280 × 736 permite iterar sobre encuadres y movimiento de cámara antes de rodar, con CFG 3.8 para escenas de acción.
+- Prototipado de vídeo musical o doblaje: la variante T2VA/I2VA genera audio sincronizado junto al vídeo, útil para maquetas de videoclips o escenas con diálogo.
+- Animación de retratos y personajes a partir de una imagen fija: la combinación de I2V con el ICLoRA Detailer y la preservación facial de DMD lo hace adecuado para animar fotos de producto, avatares o personajes recurrentes.
+- Creación de contenido para adultos con coherencia de personaje: el merge de Eros10 permite mantener identidad y continuidad entre planos en clips largos de hasta 40 segundos, un caso de uso declarado explícitamente por el autor.
+- Generación de vídeo de referencia para VFX y composición: la variante FL2VA con primer y último frame permite definir transiciones exactas entre dos imágenes, útil para previsualización en postproducción.
+- Investigación sobre destilación de modelos de difusión: al estar publicados los pesos en GGUF y FP8 con la LoRA DMD fusionada, sirve para estudiar el impacto de la destilación en calidad y velocidad frente al modelo stock.
+- Despliegue local en estaciones de trabajo con GPU de consumo: la cuantización GGUF permite ejecutar el pipeline en ComfyUI en equipos con menos VRAM que los necesarios para bf16, facilitando pruebas sin infraestructura en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye mediciones internas del autor (sharpness medida como varianza de Laplacian y color spread), pero no hay datos comparativos con otros modelos de video como MMLU, HumanEval o similares. La unica referencia de rendimiento es el tiempo de generacion medido en un RTX 5090: aproximadamente 11 minutos para 5.04 segundos de video (121 frames, 24 fps, 12 pasos, Q4_K_M), incluyendo la carga del modelo. No se ha publicado ningun benchmark estandarizado.
+No se han publicado resultados de benchmarks en la informacion disponible. El model card únicamente aporta parámetros de muestreo de ejemplo (resolución 1280 × 736, 121 frames, 8 pasos, CFG 3.5) y capturas de muestra, sin métricas cuantitativas como FVD, CLIP score o comparativas numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el conjunto de trabajo completo (transformador Q4_K_M + text encoder + VAE + LoRA) ocupa unos 27 GB, por lo que cabe en una GPU de 32 GB.
-- GPU recomendadas: RTX 5090 (32 GB) es la unica hardware mencionada en la model card para generar el sample. En principio cualquier GPU con 24 GB o mas de VRAM podria ejecutar el conjunto Q4_K_M, aunque la velocidad seria menor.
-- Si cabe en consumer GPU: si, en GPUs de 24 GB o más. El autor indica que el Q4_K_M (14.30 GB) cabe "comodamente" en una tarjeta de 32 GB.
-- Opciones de despliegue: el repositorio esta pensado para cargadores que descubren componentes por directorio (ComfyUI, llama.cpp). Se menciona compatibilidad con endpoints.
-- Latencia y throughput: aproximadamente 11 minutos para 5.04 segundos de video (121 frames) en RTX 5090, con escalado lineal respecto al numero de frames. La carga del modelo no es el cuello de botella, sino el bucle de difusion.
+- VRAM estimada: no disponible de forma oficial. Con 21.000 millones de parámetros, los pesos en FP8 ocupan aproximadamente 21 GB, y en bf16 unos 42 GB; a ello hay que sumar el VAE, el codificador de texto y los latentes de vídeo, por lo que el pico de memoria es considerablemente mayor.
+- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, un despliegue en FP8 requiere GPUs de 40-80 GB (A100 40/80 GB, H100) para trabajar con holgura; las cuantizaciones GGUF más agresivas podrían acercarse a GPUs de 24 GB (RTX 4090) o 16 GB, aunque no hay confirmación del autor.
+- ¿Cabe en GPU de consumo? Probablemente en RTX 4090 (24 GB) con GGUF de baja precisión y resolución reducida, pero no hay datos verificados de VRAM ni de velocidad en el model card.
+- Opciones de despliegue: ComfyUI es el entorno documentado (se incluye un workflow JSON de ejemplo para T2AV). El formato GGUF sugiere compatibilidad con runners basados en llama.cpp/GGUF para difusión, aunque no se detalla; no se mencionan vLLM ni TGI, que no aplican a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponibles. Solo se indica que el modelo genera en 4-8 pasos, lo que reduce el coste frente a muestreos de 20-50 pasos, pero sin cifras de segundos por clip.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa con modelos similares. La unica referencia es LTX-2.5, el modelo actual de Lightricks, que segun la web oficial de LTX es la generacion vigente y esta totalmente soportado, pero no hay datos de rendimiento ni de parametros en la informacion proporcionada. El blog de Siray menciona que LTX-2.3 tiene 22B parametros y soporta 4K nativo, pero no proporciona una comparativa directa con alternativas como CogVideoX, Mochi o HunyuanVideo. Por tanto, la comparativa no esta disponible.
+| Modelo | Parámetros | Contexto / duración | Pasos | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| LTX-2.3-uncensored-fp8 (este) | 21,0 B | hasta 960 frames (~40 s) | 4-8 | unknown | Vídeo NSFW, T2V/I2V/A2V, GGUF/FP8 |
+| Lightricks/LTX-2.3 (base) | no disponible en la información | no disponible | no disponible | la del modelo base (no confirmada aquí) | Vídeo general con censura |
+| TenStrip/LTX2.3-10Eros | no disponible | no disponible | no disponible | no disponible | Fine-tune NSFW sobre LTX-2.3 |
+| TenStrip/LTX2.3_DMD_Lora | no disponible | no disponible | destilado | no disponible | LoRA de destilación DMD |
+
+La comparativa se limita a los modelos citados como base en el repositorio, ya que no se han proporcionado datos de otros sistemas de vídeo (por ejemplo, modelos cerrados o de otros tamaños) que permitan una comparación rigurosa de parámetros, contexto y rendimiento. No hay cifras de benchmarks para ninguno de ellos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia: el repositorio marca la licencia como `unknown`; el autor recomienda revisar la licencia upstream de Lightricks para uso comercial y redistribucion. No se puede asumir que sea de uso libre.
-- Contenido sin censura: el modelo genera contenido no apto para todos los publicos (tag `not-for-all-audiences`), lo que implica riesgo de contenido inapropiado o ilegal segun la jurisdiccion. No hay filtros de seguridad integrados.
-- Generacion lenta: 11 minutos para 5 segundos de video en una GPU de gama alta, lo que no es adecuado para produccion en tiempo real ni para iterar rapidamente en volumen.
-- Distill LoRA obligatoria: el pipeline no carga sin ella, y si el directorio se llama `split/lora/` en lugar de `split/distill_loras/`, el modelo se salta silenciosamente. Es un punto de fallo en despliegues automatizados.
-- Audio VAE presente pero no ejercitado: el sample no tiene audio, y el autor no ha validado la generacion de audio en esta compilacion. Puede haber fallos en esa ruta.
-- Resolucion recomendada de 1024x576, no 768x512: el autor ha medido desaturacion de color reproducible a 768x512 con 121 frames. Usar la resolucion no recomendada degrada la calidad.
-- Parametros reales de 11.7B, no 22B: el nombre comercial "22B" no coincide con el dato real de safetensors, lo que puede causar confusion en la planificacion de recursos.
+- Licencia "unknown": no hay términos legales claros, lo que impide garantizar el uso comercial y puede entrar en conflicto con la licencia del modelo base de Lightricks. Es un bloqueo para producción empresarial.
+- Contenido NSFW explícito: el merge de Eros10 está diseñado para generar material para adultos, lo que implica riesgos de moderación, cumplimiento normativo y reputación en cualquier despliegue público.
+- El autor afirma que existen "guardrails" contra contenido ilegal, pero no se documenta su funcionamiento ni su robustez; no deben considerarse una garantía.
+- Riesgo de alucinación visual: como todo modelo generativo de vídeo, puede producir anatomías incoherentes, artefactos temporales, texto ilegible y físicas imposibles, especialmente en clips largos.
+- Coherencia limitada en secuencias largas: aunque se documentan hasta 960 frames, la consistencia de personaje y escena puede degradarse; el propio autor recomienda prompts muy detallados para mantenerla.
+- Sin datos de benchmarks ni de VRAM verificada: no hay métricas objetivas de calidad (FVD, CLIP) ni cifras de rendimiento que permitan comparar con el modelo stock.
+- Idiomas no documentados: los prompts de ejemplo están en inglés y no se confirma el soporte multilingüe.
+- Dependencia de ComfyUI y de un workflow concreto: la integración en otros pipelines no está documentada.
+- Repositorio de 296 GB: el almacenamiento y la descarga son costosos, y conviene verificar la integridad de los archivos GGUF/FP8 antes de usarlos.
+- Es un merge de terceros, no un modelo oficial de Lightricks: la calidad y la estabilidad no están respaldadas por el desarrollador original.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8
-- Blog de Siray sobre LTX 2.3: https://blog.siray.ai/ltx-2-3-nsfw/
-- Pagina de LTX (Lightricks): https://ltx.io/model/ltx-2-3
-- GitHub de workflows ComfyUI: https://github.com/minflamingo/ltx-2.3-uc
+- Modelo en Hugging Face: https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8
+- Modelo base: https://huggingface.co/Lightricks/LTX-2.3
+- Fine-tune NSFW de referencia: https://huggingface.co/TenStrip/LTX2.3-10Eros
+- LoRA DMD de referencia: https://huggingface.co/TenStrip/LTX2.3_DMD_Lora
+- Workflow de ejemplo T2AV: https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8/resolve/main/workflow_examples/LTXV23_v1.4_T2AV_nsfw.json
+- Vídeo de muestra T2V: https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8/resolve/main/samples/ComfyUI_00099_cfg_3_5.mp4
+- Vídeo de muestra I2V con audio: https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8/resolve/main/samples/ComfyUI_00098_i2va.mp4

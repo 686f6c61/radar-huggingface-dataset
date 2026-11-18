@@ -2,121 +2,100 @@
 
 ## Resumen
 
-Occamy-1.0 GGUF es la versión cuantizada en formato GGUF del modelo multimodal Accio-Lab/occamy-1.0, publicada por Accio-Lab. Se trata de una conversión directa desde el checkpoint BF16 original, sin pesos donantes ni mezcla de modelos, e incluye tanto el modelo de lenguaje como un proyector de visión independiente (mmproj) que habilita la entrada de imagen junto a texto. El repositorio ofrece dos cuantizaciones del modelo de lenguaje (Q8_0 y Q4_K_M) más el proyector en F16, pensadas para su ejecución en llama.cpp.
+Occamy-1.0 es un modelo de lenguaje multimodal (image-text-to-text) desarrollado por Accio-Lab, distribuido en su variante GGUF cuantizada para inferencia local con llama.cpp. Segun los metadatos del repositorio, se trata de un modelo de arquitectura MoE (mixture of experts) basado en la familia Qwen3.5 MoE, con 34.660.610.688 parametros totales en sus pesos safetensors originales, y orientado explicitamente a tool-use y conversacion. La ficha que nos ocupa es la del repositorio de cuantizaciones, no la de los pesos originales en BF16.
 
-El modelo base cuenta con 34.660.610.688 parámetros totales (~34,66 mil millones) y su etiquetado apunta a una arquitectura de tipo MoE (`qwen3_5_moe`) con soporte de tool-use y pipeline image-text-to-text. La ficha no detalla el número de parámetros activos, la longitud de contexto nativa ni la composición del dataset de entrenamiento, por lo que esos datos quedan como no disponibles.
+El interes practico de esta publicacion esta en el ecosistema de despliegue: ofrece 17 cuantizaciones GGUF distintas, desde IQ2_M (10,86 GiB) hasta Q8_0 (34,37 GiB), ademas de un proyector de vision opcional en F16 (0,84 GiB). Esto permite ejecutar un modelo MoE de ~34,7 mil millones de parametros en hardware de consumo con perdida de precision controlada, algo relevante para desarrolladores que quieren probar tool calling y capacidades multimodales sin depender de una GPU de datacenter.
 
-La relevancia de esta publicación es práctica: permite desplegar un modelo multimodal con capacidades de tool calling en hardware de consumo o en servidores modestos mediante cuantización, con instrucciones reproducibles de llama.cpp, una tabla de presupuestos de memoria y un conjunto de validación documentado (incluyendo fallos conocidos) que facilita evaluar su idoneidad antes de integrarlo en producción.
+La licencia Apache 2.0 y el volumen de descargas (mas de 481.000) indican una adopcion considerable. No obstante, la informacion publica disponible es limitada: no se detallan parametros activos del MoE, longitud de contexto nativa, composicion del dataset de entrenamiento ni resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal (etiqueta `qwen3_5_moe`); modelo de lenguaje + encoder/proyector de visión separado |
-| Parametros totales | 34.660.610.688 (~34,66 mil millones) |
+| Arquitectura | MoE (mixture of experts) tipo transformer, familia Qwen3.5 MoE (tag `qwen3_5_moe`) |
+| Parametros totales | 34.660.610.688 (~34,7 B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (la validación smoke se realizó con 8K de contexto) |
-| Tipos de cuantizacion | Q8_0 y Q4_K_M del modelo de lenguaje; proyector de visión en F16; origen BF16 |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF |
+| Longitud de contexto | no disponible (el ejemplo de quickstart usa `-c 8192`) |
+| Tipos de cuantizacion | IQ2_M, Q2_K, IQ3_XS, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, IQ4_NL, Q4_K_S, Q4_K_M, Q5_K_S, Q5_0, Q5_K_M, Q6_K, Q8_0; proyector de vision F16 |
+| Idiomas soportados | en, zh (segun tags y model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); pesos base en safetensors en el repo original |
 
 ## Arquitectura y entrenamiento
 
-La model card identifica el modelo dentro de la arquitectura `qwen3_5_moe`, lo que implica un transformer con mezcla de expertos (MoE) y soporte multimodal de tipo image-text-to-text. El paquete GGUF separa el modelo de lenguaje (archivos `occamy-1.0-Q8_0.gguf` y `occamy-1.0-Q4_K_M.gguf`) del componente de visión (`mmproj-occamy-1.0-F16.gguf`, 0,899 GB), que actúa como encoder/proyector y debe cargarse junto al modelo de lenguaje para tareas con imagen.
+La informacion disponible confirma que se trata de un modelo MoE de la familia Qwen3.5 MoE, con 34.660.610.688 parametros totales y soporte multimodal mediante un proyector de vision separado (mmproj). El pipeline declarado es `image-text-to-text`, y los tags incluyen `tool-use` y `conversational`. No se dispone de datos sobre el numero de parametros activos por token, el numero de expertos, la longitud de contexto nativa ni la composicion del dataset de entrenamiento en la informacion proporcionada.
 
-Sobre el entrenamiento no se aporta información: no se especifican el número de tokens, la composición del dataset, ni si hubo fases de RLHF o DPO. La conversión es directa desde el checkpoint BF16 sin pesos donantes ni merging. En cuanto a la cuantización, Q8_0 se deriva directamente del BF16, mientras que Q4_K_M se genera con `llama-quantize` sin importance matrix, aplicando reglas estándar de precisión mixta a los tensores pequeños y sensibles. Se ha corregido manualmente el metadato `tokenizer.ggml.pre` a `qwen2` (el conversor sin modificar infería `qwen35`), lo que afecta a la tokenización de ciertos alfabetos pero no a los datos de los tensores. La tokenización de entrada debe normalizarse a NFC para reproducir el normalizador del tokenizer original.
+En cuanto al proceso de cuantizacion, la model card distingue dos regimenes: cinco cuantizaciones (Q3_K_S, Q5_K_S, Q3_K_L, Q4_0 y Q5_0) son conversiones directas desde BF16 con recetas estandar y sin importance matrix; el resto emplea matrices de calibracion (imatrix). Q4_K_M y Q8_0 conservan sus recetas historicas. La model card advierte explicitamente que las etiquetas describen precision mixta y no bits uniformes por tensor. Ademas, existe un repositorio complementario (APEX GGUF) con siete perfiles adicionales de precision mixta para MoE, tres planos y cuatro calibrados con imatrix, incluido uno llamado Mini. En total se documentan 24 opciones GGUF entre ambos repositorios.
+
+Un detalle tecnico relevante es la compatibilidad de tokenizer: la model card pide normalizar el contenido del prompt a NFC antes de enviarlo y senala que las mediciones de benchmark publicadas anteriormente con la etiqueta qwen35 usaron un protocolo de tokenizer distinto. El ejemplo de quickstart usa los metadatos nativos `qwen2`.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno (pipeline `conversational`).
-- Comprensión de imágenes junto a texto (image-text-to-text) mediante el proyector de visión F16.
-- Tool calling / function calling, indicado explícitamente por la etiqueta `tool-use`.
-- Generación de código: la validación incluye dos comprobaciones de funciones de código superadas en las tres variantes.
-- Salida estructurada en JSON: en las pruebas estrictas se superaron 3 de 4 comprobaciones por variante.
-- Modo de razonamiento conmutable: el chat template acepta `chat_template_kwargs: {"enable_thinking": false}`.
-- Identificación de imágenes sintéticas: la prueba de imagen roja sintética se resolvió correctamente.
-- Capacidades multilingües: no disponibles (la ficha no especifica idiomas).
+- Generacion de texto conversacional multi-turno, con pipeline declarado `conversational`.
+- Razonamiento y generacion de codigo: el ejemplo de la model card solicita una funcion Python, y los tags incluyen `tool-use`.
+- Tool calling / function calling: soportado segun los tags del modelo; el servidor de ejemplo expone la API compatible con OpenAI (`/v1/chat/completions`).
+- Procesamiento de imagen: pipeline `image-text-to-text` con proyector de vision opcional (`mmproj-occamy-1.0-F16.gguf`).
+- Capacidades multilingues limitadas a ingles y chino segun los tags y la model card.
+- Integracion con llama.cpp mediante `llama-server`, con soporte de plantilla de chat via `--jinja`.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
+
+No se documenta en la informacion disponible un modo de razonamiento explicito (thinking mode), soporte de audio ni capacidades de agente multi-paso mas alla de lo que implica el tool-use.
 
 ## Casos de uso
 
-- Asistente conversacional con visión: el modelo puede mantener diálogos multi-turno e incorporar imágenes mediante el proyector F16, útil para soporte técnico donde el usuario adjunta capturas de pantalla o fotos de productos.
-- Automatización de agentes con herramientas: gracias al soporte de tool-use y formato de chat con Jinja, puede integrarse en pipelines donde el modelo invoca funciones externas (APIs, consultas a bases de datos) encadenando varios pasos.
-- Generación y revisión de código en desarrollo: las comprobaciones de funciones de código pasaron en todas las variantes, por lo que es viable para autocompletado, generación de utilidades o revisión en flujos de CI/CD que consuman una API compatible con llama-server.
-- Extracción de datos estructurados: con una tasa de acierto de 3/4 en validación JSON estricta, puede emplearse para convertir texto o imágenes en objetos JSON, siempre con validación posterior en el pipeline.
-- Procesamiento documental con imágenes: transcripción y resumen de documentos escaneados o fotografías combinando el encoder de visión con el modelo de lenguaje.
-- Despliegue local con privacidad: al ejecutarse en llama.cpp con pesos GGUF, permite montar asistentes on-premise sin enviar datos a servicios externos.
-- Prototipado multimodal en investigación: el par de cuantizaciones (Q4_K_M y Q8_0) más el proyector permiten comparar el impacto de la cuantización en tareas de texto, código e imagen dentro del mismo entorno.
+- Asistente de codigo en local: con Q4_K_M (19,71 GiB) o Q5_K_M (23,03 GiB) se puede desplegar un servidor compatible con la API de OpenAI en una estacion de trabajo con GPU de 24 GB, cubriendo autocompletado, generacion de funciones y explicacion de codigo sin enviar datos a terceros.
+- Automatizacion de tool calling en pipelines internos: el tag `tool-use` y el soporte de plantilla Jinja en `llama-server` permiten conectar el modelo a funciones locales (consulta de bases de datos, APIs internas) en flujos de agentes de un solo paso o encadenados.
+- Procesamiento de documentos con imagenes: gracias al proyector de vision F16 se pueden enviar capturas, diagramas o formularios escaneados junto con instrucciones de texto para extraccion de datos o resumenes, usando `--mmproj` en llama.cpp.
+- Prototipado en hardware de consumo: las variantes IQ2_M (10,86 GiB) e IQ3_XS (13,49 GiB) permiten ejecutar el modelo en GPUs de 12-16 GB, utiles para evaluacion interna antes de escalar a una cuantizacion mayor.
+- Chat multilingue ingles-chino: para equipos que operan en ambos idiomas, el modelo cubre conversacion y generacion en las dos lenguas declaradas, con la advertencia de que no se documentan otros idiomas.
+- Despliegue en entornos air-gapped: al ser GGUF con licencia Apache 2.0 y ejecutable con llama.cpp, el modelo puede operar completamente offline en infraestructura propia, requisito habitual en sectores regulados.
+- Servicio de inferencia ligero con API compatible OpenAI: `llama-server` con `--alias occamy` permite sustituir un endpoint remoto por uno local sin cambiar el codigo cliente, util para desarrollo y pruebas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La única evidencia cuantitativa es la tabla de validación interna del repositorio, que compara la referencia BF16 GGUF con las variantes Q4_K_M y Q8_0:
-
-| Comprobacion | BF16 GGUF (referencia) | Q4_K_M | Q8_0 |
-|---|---:|---:|---:|
-| Respuestas smoke completadas con EOS | 8/8 | 8/8 | 8/8 |
-| Comprobaciones de funciones de código | 2/2 | 2/2 | 2/2 |
-| Comprobaciones JSON estrictas | 3/4 | 3/4 | 3/4 |
-| Coincidencia del tokenizer en crudo | 13/14 | 13/14 | 13/14 |
-| Coincidencia del tokenizer tras NFC | 14/14 | 14/14 | 14/14 |
-| Instrucción exacta `OK` | Falló (`OK.`) | Falló (`OK.`) | Falló (`OK.`) |
-| Identificación de imagen roja sintética | Correcta | Correcta | Correcta |
-
-El propio autor advierte de que completar las respuestas no equivale a superar todas las aserciones, que los fallos conocidos se mantienen visibles y que no se reclama paridad de calidad general con la referencia BF16.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona mediciones previas con la etiqueta qwen35 y una evaluacion de Q3_K_S/Q5_K_S con metadatos nativos y entrada NFC, pero no incluye cifras concretas de MMLU, HumanEval, GSM8K ni de tareas multimodales en el material proporcionado.
 
 ## Requisitos de hardware
 
-- Tamaño de los archivos (GB decimales, no consumo medido): Q4_K_M 21,167 GB; Q8_0 36,903 GB; proyector de visión F16 0,899 GB.
-- Presupuestos ilustrativos de memoria (tamaño de archivo convertido a GiB más una reserva asumida de 4 u 8 GiB, no medidos):
-  - Q4_K_M solo texto: 19,71 GiB de pesos; 23,71 GiB con reserva de 4 GiB; 27,71 GiB con 8 GiB.
-  - Q4_K_M + proyector F16: 20,55 GiB; 24,55 GiB con 4 GiB; 28,55 GiB con 8 GiB.
-  - Q8_0 solo texto: 34,37 GiB; 38,37 GiB con 4 GiB; 42,37 GiB con 8 GiB.
-  - Q8_0 + proyector F16: 35,21 GiB; 39,21 GiB con 4 GiB; 43,21 GiB con 8 GiB.
-- La reserva debe cubrir caché KV, buffers de cómputo, estado recurrente y procesamiento de imagen; el autor indica que el overhead real puede superar cualquiera de las dos reservas.
-- Para ejecución totalmente en GPU hay que comparar contra la VRAM libre, no la anunciada. El offload a CPU reparte la carga entre RAM de host y VRAM, pero no se establece un mínimo de RAM de host.
-- En máquinas de memoria unificada hay que dejar margen para el sistema operativo y otras aplicaciones.
-- Compatibilidad con CPU-only, Apple Silicon y GPU de consumo no ha sido establecida por las pruebas del autor.
-- No se han publicado cifras de latencia ni throughput.
-- Despliegue validado con llama.cpp en el commit `d1d3c3396aa13a5f239109a822666c4870490ad5`, con la arquitectura `qwen3_5_moe`. Ejemplo de arranque:
-
-```bash
-llama-server \
-  -m occamy-1.0-Q4_K_M.gguf \
-  --mmproj mmproj-occamy-1.0-F16.gguf \
-  -ngl 999 -c 8192 -np 1 -fa on \
-  --jinja --host 127.0.0.1 --port 8080
-```
-
-Para uso solo de texto se omite `--mmproj`. Los archivos no son checkpoints NVFP4 y no requieren backend específico NVFP4.
+- VRAM estimada para inferencia (solo pesos, sin KV cache): desde ~10,9 GiB con IQ2_M hasta ~34,4 GiB con Q8_0. La model card advierte que el tamano de fichero no es el pico de RAM/VRAM: hay que sumar KV cache, contexto, concurrencia e imagenes.
+- Cuantizaciones para GPU de 12-16 GB: IQ2_M (10,86 GiB), Q2_K (12,05 GiB), IQ3_XS (13,49 GiB), Q3_K_S (14,14 GiB), IQ3_M (14,38 GiB).
+- Cuantizaciones para GPU de 24 GB: Q3_K_M (15,61 GiB), Q3_K_L (16,87 GiB), IQ4_XS (17,44 GiB), Q4_0 (18,36 GiB), IQ4_NL (18,42 GiB), Q4_K_S (18,52 GiB), Q4_K_M (19,71 GiB), Q5_K_S y Q5_0 (22,33 GiB), Q5_K_M (23,03 GiB). Cabe en una RTX 4090 de 24 GB, aunque con margen ajustado para contexto largo.
+- Cuantizaciones para GPU de 40-80 GB: Q6_K (26,56 GiB) y Q8_0 (34,37 GiB), adecuadas para A100 40/80 GB o H100.
+- Proyector de vision: 0,84 GiB adicionales en F16, solo necesario para entrada de imagen.
+- Opciones de despliegue: llama.cpp (`llama-server`), con soporte de `-ngl` para offload completo a GPU, `-fa on` para flash attention y `--jinja` para plantilla de chat. La model card indica que la validacion CUDA registrada uso la revision `972d2313bc0bf0a45f634f77d95c9fb03aeab12c` de llama.cpp.
+- Plataformas no verificadas: la model card senala que la ejecucion solo-CPU y en Apple Silicon no se probo en esa validacion.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con modelos alternativos de la misma categoría en la información proporcionada. La única comparación posible es entre las variantes del propio repositorio:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Occamy-1.0 (este) | 34,7 B totales (MoE) | no disponible | Apache 2.0 | GGUF, safetensors | Multimodal, tool-use, 17 cuantizaciones GGUF |
+| Qwen3.5 MoE (familia base) | no disponible | no disponible | no disponible | no disponible | Arquitectura de referencia segun el tag `qwen3_5_moe` |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos equivalentes en la informacion proporcionada |
 
-| Variante | Peso del modelo de lenguaje | Proyector de visión | Contexto validado | Licencia |
-|---|---:|---:|---:|---|
-| occamy-1.0 Q8_0 | 36,903 GB | F16 (0,899 GB) | 8K (smoke test) | apache-2.0 |
-| occamy-1.0 Q4_K_M | 21,167 GB | F16 (0,899 GB) | 8K (smoke test) | apache-2.0 |
-
-Modelos comparables externos: no disponible.
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Alucinación: no se han publicado evaluaciones de veracidad; el fallo de la instrucción exacta `OK` (devuelve `OK.`) indica que el modelo puede no seguir instrucciones de formato de forma literal.
-- JSON estricto: 1 de cada 4 comprobaciones falló en todas las variantes, por lo que no conviene confiar en la validez sintáctica de la salida sin validación posterior.
-- Tokenización: es obligatorio normalizar el texto de entrada a NFC antes de tokenizar para reproducir el tokenizer original; llama.cpp no lo aplica automáticamente. Los clientes de API deben aplicar `unicodedata.normalize("NFC", text)`. La prueba de equivalencia se limita a 14 casos y no demuestra equivalencia para toda entrada Unicode.
-- Contexto: la ventana nativa del modelo no se especifica; el test de humo empleó 8K de contexto con un solo slot y no certifica configuraciones de contexto más largas.
-- Idiomas: la ficha no declara idiomas soportados, lo que impide garantizar calidad multilingüe.
-- Parámetros activos: al ser un modelo MoE, se desconoce el número de parámetros activos, dato relevante para estimar latencia real.
-- Hardware: la compatibilidad con CPU-only, Apple Silicon y GPU de consumo no está establecida por el autor; los presupuestos de memoria de la ficha son estimaciones de planificación, no mediciones.
-- Licencia: apache-2.0 permite uso comercial, pero conviene conservar las notas de compatibilidad del tokenizer en cualquier redistribución.
-- Datos de entrenamiento y sesgos: no disponibles.
+- Idiomas: solo se declaran ingles y chino; el rendimiento en castellano no esta documentado.
+- Tokenizer: es obligatorio normalizar el prompt a NFC; la model card advierte que las mediciones antiguas usaron otro protocolo de tokenizer, por lo que comparaciones con benchmarks previos pueden no ser homogeneas.
+- Parametros activos del MoE y contexto nativo no documentados: planificar el despliegue sin asumir una ventana de contexto concreta mas alla de la configurada manualmente.
+- Las etiquetas de cuantizacion indican precision mixta, no bits uniformes; el rendimiento puede variar de forma no lineal entre variantes.
+- Riesgo de alucinacion: no se documentan evaluaciones de fidelidad ni de tasas de alucinacion en la informacion disponible.
+- Sesgos: no se documentan analisis de sesgo en la informacion proporcionada.
+- Validacion limitada: la model card solo registra pruebas en CUDA con una revision concreta de llama.cpp; CPU y Apple Silicon no fueron verificados en esa ejecucion.
+- El proyector de vision es opcional; sin el, el modelo funciona solo con texto.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base original y de los pesos BF16 de los que deriva.
+- Repositorio de gran tamano (342,9 GB en total): descargar solo la cuantizacion necesaria.
 
 ## Enlaces
 
-- Hugging Face (modelo GGUF): https://huggingface.co/Accio-Lab/occamy-1.0-GGUF
+- Repositorio GGUF: https://huggingface.co/Accio-Lab/occamy-1.0-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
-- Herramienta de estimación de hardware de Hugging Face: https://huggingface.co/settings/hardware?fromRepo=Accio-Lab/occamy-1.0-GGUF
-- Resultados de validación del repositorio: ./VALIDATION.json
-- Script de normalización de texto: ./normalize_nfc.py
-- Los resultados de la búsqueda web (accio.com, fr.accio.com, Google Play) corresponden a la plataforma comercial "Accio Work" y no guardan relación con el modelo; no se han encontrado papers, blogs ni repositorios técnicos adicionales en la información disponible.
+- Perfiles APEX GGUF: https://huggingface.co/Accio-Lab/occamy-1.0-APEX-GGUF
+- Coleccion de modelos: https://huggingface.co/collections/Accio-Lab/occamy-10-6ac00729659e8a86ec11e216
+- Checkpoint explorer (Space): https://huggingface.co/spaces/Accio-Lab/Occamy-Explorer
+- Pagina del proyecto: https://accio-lab.github.io/occamy/
+- Paper: https://arxiv.org/abs/2609.11977
+- llama.cpp: https://github.com/ggml-org/llama.cpp

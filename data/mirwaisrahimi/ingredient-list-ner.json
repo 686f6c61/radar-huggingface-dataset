@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mirwaisrahimi/ingredient-list-ner",
+  "slug": "mirwaisrahimi-ingredient-list-ner",
+  "author": "mirwaisrahimi",
+  "url": "https://huggingface.co/mirwaisrahimi/ingredient-list-ner",
+  "created_at": "2026-11-18T00:41:34.000Z",
+  "updated_at": "2026-11-18T00:43:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "food",
+    "ocr",
+    "ingredients",
+    "multilingual",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134736387,
+  "parameters_human": "134.7M",
+  "storage_bytes": 538957900,
+  "storage_human": "539 MB",
+  "context_length": null,
+  "base_model": "distilbert/distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

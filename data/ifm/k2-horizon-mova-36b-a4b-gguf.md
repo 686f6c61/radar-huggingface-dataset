@@ -2,88 +2,106 @@
 
 ## Resumen
 
-K2-Horizon-MoVA-36B-A4B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por IFM, una organización vinculada al ecosistema de MBZUAI (el fork de `llama.cpp` necesario para ejecutarlo se aloja en `MBZUAI-IFM`). El modelo almacena 36 000 millones de parámetros en total, pero activa únicamente 4 000 millones por token, lo que permite un rendimiento de nivel frontera con un coste computacional reducido. Su principal innovación es la atención Mixture-of-Values (MoVA), una variante de atención que combina múltiples transformaciones de valores dentro de un mismo mecanismo de atención, mejorando la expresividad sin disparar el coste de cómputo.
+K2-Horizon-MoVA-36B-A4B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por IFM, con 36.000 millones de parametros totales y aproximadamente 4.000 millones activos por token. Su rasgo diferencial es el mecanismo de atencion Mixture-of-Values (MoVA), una variante de atencion que combina la seleccion dispersa de expertos con una mezcla de valores en el calculo de la atencion. Este repositorio concreto contiene la version cuantizada en formato GGUF, pensada para su uso con `llama.cpp`.
 
-El modelo destaca por su ventana de contexto nativa de 524 288 tokens (512K), algo inusual en modelos de su tamaño, y por sus resultados en tareas de razonamiento y agéntica, donde compite con modelos densos de aproximadamente 30 000 millones de parámetros y con MoE de hasta 15 veces su tamaño. Se distribuye bajo licencia Apache 2.0, y el autor ha anunciado la publicación de los checkpoints intermedios, los datos de entrenamiento y el código de entrenamiento, lo que lo convierte en una opción atractiva para investigación y despliegue en producción. El repositorio aquí descrito contiene exclusivamente los pesos en formato GGUF, preparados para su uso con `llama.cpp`.
+El modelo se presenta como el miembro disperso de la familia K2-Horizon y esta disenado para cargas de trabajo agenticas y de razonamiento, donde el autor declara resultados competitivos frente a modelos densos de tamano similar y MoE de hasta 15 veces su tamano. Incorpora una ventana de contexto nativa de 524.288 tokens (512K) desde las etapas de midtraining, lo que lo situa en el rango de contexto largo para un modelo de su clase y tamano.
+
+La relevancia actual del modelo radica en tres factores: la relacion entre parametros totales y activos (36B/4B), que reduce el coste computacional por token manteniendo capacidad de almacenamiento; una licencia Apache 2.0 que permite uso comercial sin restricciones adicionales; y el compromiso del autor de publicar datos de entrenamiento, receta, codigo y checkpoints intermedios, lo que lo convierte en un candidato interesante para investigacion reproducible sobre dinamicas de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con atención Mixture-of-Values (MoVA) |
-| Parametros totales | 36 000 millones (según model card); 37 444 792 020 (según safetensors) |
-| Parametros activos | 4 000 millones por token |
-| Longitud de contexto | 524 288 tokens (512K) |
-| Tipos de cuantizacion | no disponible (el repositorio GGUF solo indica almacenamiento en BF16 original; no se enumeran cuantizaciones específicas) |
-| Idiomas soportados | ingles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con tokenizer y chat template compatibles con llama.cpp) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) con atencion Mixture-of-Values (MoVA) |
+| Parametros totales | 37.444.792.020 (37,4B; el autor lo denomina 36B) |
+| Parametros activos | Aproximadamente 4B por token |
+| Longitud de contexto | 524.288 tokens (512K) nativo desde midtraining |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q5_0, Q4_K_M (en este repo GGUF) |
+| Idiomas soportados | Ingles (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (este repo); safetensors en el modelo base |
+| Tamano del repositorio | 241,3 GB |
+| Libreria | transformers (metadata), ejecucion via llama.cpp |
+| Modelo base | IFM/K2-Horizon-MoVA-36B-A4B |
+| Datasets de entrenamiento | IFM/K2-Horizon-Pretrain-Data, IFM/K2-Horizon-Midtrain-Data |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura MoE con 36 000 millones de parámetros totales y 4 000 millones activos por token. La novedad principal es la atención Mixture-of-Values (MoVA), que generaliza la atención estándar aplicando una mezcla de transformaciones lineales a los valores antes del producto de atención, lo que aumenta la capacidad de representación sin incrementar linealmente el coste computacional. Esta técnica se combina con el enrutamiento MoE típico, donde solo un subconjunto de expertos se activa en cada capa.
+La arquitectura es un transformer disperso de tipo MoE con una innovacion central denominada MoVA (Mixture-of-Values attention). El modelo almacena 36B parametros pero solo activa alrededor de 4B por token, lo que reduce el coste de inferencia por paso manteniendo una gran capacidad de parametros. El mecanismo MoVA aplica una logica de mezcla de valores sobre la atencion, segun la nomenclatura del autor; la model card no detalla el numero de expertos, el top-k de enrutamiento ni la distribucion exacta de capas, por lo que esos datos concretos no estan disponibles en la informacion proporcionada.
 
-En cuanto al entrenamiento, el modelo se preentrenó y posteriormente se sometió a una fase de "midtrain" (entrenamiento intermedio) sobre los datasets propietarios `IFM/K2-Horizon-Pretrain-Data` y `IFM/K2-Horizon-Midtrain-Data`. No se especifican el número total de tokens, la composición exacta del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El autor ha declarado que los checkpoints intermedios, los datos y el código de entrenamiento se publicarán, lo que permitirá estudiar la evolución de las capacidades a lo largo del entrenamiento. El contexto de 512K se incorporó de forma nativa a partir de las etapas de midtrain.
+En cuanto a entrenamiento, el autor referencia dos datasets propios: `IFM/K2-Horizon-Pretrain-Data` y `IFM/K2-Horizon-Midtrain-Data`. La ventana de 512K tokens se introduce de forma nativa a partir de las etapas de midtraining. No se especifica en la informacion disponible el numero total de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron etapas de RLHF, DPO o similares. El autor anuncia la publicacion futura de checkpoints intermedios, datos, receta y codigo de entrenamiento, lo que permitira estudiar la evolucion de capacidades a lo largo del entrenamiento.
 
 ## Capacidades
 
-- Generacion de texto y continuacion de conversacion con un contexto largo de hasta 512K tokens, adecuado para documentos extensos y dialogos multi-turno.
-- Razonamiento complejo: segun la model card, supera a modelos densos de ~30B y a MoE de hasta 15x su tamaño en benchmarks de razonamiento y agentica.
-- Capacidades agenticas: puede ejecutar tareas de multi-step reasoning y coordinacion de herramientas, aunque no se detalla el soporte explicito de tool calling en la documentacion.
-- Competitivo frente a modelos cerrados de frontera en tareas de razonamiento y agentica, segun las afirmaciones del autor.
-- Multilingue limitado: solo se declara soporte para ingles.
-- Compatible con `llama.cpp` mediante un fork especifico que implementa la arquitectura K2 Horizon; el soporte oficial en `llama.cpp` esta en proceso de integracion.
+- Generacion de texto conversacional y de un solo turno, con template de chat compatible con llama.cpp incluido en los ficheros GGUF.
+- Razonamiento de multiples pasos y tareas agenticas, segun los benchmarks declarados por el autor.
+- Contexto largo: ventana nativa de 524.288 tokens, adecuada para documentos extensos, repositorios de codigo o historiales de conversacion prolongados.
+- Capacidad multilingue limitada: el modelo esta etiquetado unicamente para ingles (`en`).
+- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible.
+- Soporte de modo "thinking" o razonamiento extendido: no confirmado en la informacion disponible.
+- Vision, audio u otras modalidades: no disponibles; el modelo es exclusivamente de texto.
+- Ejecucion eficiente en CPU/GPU mixta mediante llama.cpp gracias al formato GGUF y a los 4B parametros activos.
 
 ## Casos de uso
 
-- Agentes autonomos de razonamiento: su bajo numero de parametros activos (4B) y su alto rendimiento en tareas agenticas lo hacen adecuado para sistemas que requieren planificacion multi-paso y ejecucion de acciones con presupuesto de computo limitado.
-- Analisis de documentos extensos: la ventana de 512K tokens permite procesar libros completos, informes financieros o codigo fuente de grandes repositorios en una sola pasada, sin necesidad de chunking ni RAG.
-- Asistencia a desarrolladores: puede integrarse en entornos de desarrollo para generar codigo, explicar fragmentos complejos y mantener contexto de todo el proyecto en memoria.
-- Investigacion en IA: la publicacion prevista de checkpoints intermedios, datos y codigo de entrenamiento facilita estudios sobre la evolucion de capacidades, interpretabilidad y analisis de la arquitectura MoVA.
-- Sistemas de dialogo de largo recorrido: su contexto amplio y su capacidad de razonamiento permiten mantener conversaciones coherentes sobre temas complejos sin perder informacion previa.
-- Clasificacion y extraccion de informacion a gran escala: al poder procesar secuencias muy largas, es util para tareas de resumen, extraccion de entidades y analisis de sentimiento sobre corpus extensos.
+- Analisis de repositorios y bases de codigo extensas: con 512K tokens de contexto, el modelo puede ingerir multiples ficheros y mantener coherencia entre ellos en tareas de revision, refactorizacion o explicacion de arquitectura.
+- Procesamiento de documentacion legal o tecnica de gran volumen: contratos, manuales o expedientes completos caben en una sola ventana, evitando estrategias de chunking y perdida de contexto entre fragmentos.
+- Agentes autonomos de multiples pasos: el perfil MoE con 4B activos reduce el coste por iteracion, lo que lo hace adecuado para bucles de planificacion y ejecucion donde se realizan muchas llamadas al modelo.
+- Asistentes conversacionales de larga duracion: el contexto de 512K permite mantener historiales extensos sin resumen intermedio, util en soporte tecnico o tutoria.
+- Despliegue en hardware de gama alta para consumo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en configuraciones con memoria unificada o multiples GPU consumer, con llama.cpp como runtime.
+- Investigacion sobre entrenamiento de MoE: la publicacion anunciada de checkpoints intermedios, datos y receta permite reproducir y estudiar la evolucion de capacidades, algo poco habitual en modelos de este tamano.
+- Generacion aumentada por recuperacion (RAG) sobre corpus grandes: la ventana larga reduce la dependencia de un retrieval agresivo y permite inyectar muchos pasajes simultaneamente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card incluye una tabla comparativa con modelos como Nemotron 3 Ultra (550B), Nemotron 3 Super (120B), G9v3-39A5B, Qwen3.6-35B-A3B, Muse Glimmer-30B y Gemma 4 31B-it, pero los valores concretos no estan accesibles en el extracto proporcionado. La unica afirmacion cualitativa es que el modelo supera a modelos densos de ~30B y a MoE de hasta 15x su tamaño en benchmarks de agentica y razonamiento, y que compite de forma cercana con modelos cerrados de frontera. Estos datos no pueden verificarse con la informacion disponible.
+La model card incluye una tabla comparativa con modelos como Nemotron 3 Ultra, Nemotron 3 Super, G9v3-39A5B, Qwen3.6-35B-A3B, Muse Glimmer-30B y Gemma 4 31B-it, pero los valores numericos de las metricas no estan presentes en la informacion proporcionada (la tabla aparece truncada). Por tanto:
+
+No se han publicado resultados de benchmarks numericos en la informacion disponible.
+
+El autor afirma cualitativamente que el modelo supera a modelos densos de aproximadamente 30B y a MoE de hasta 15 veces su tamano en benchmarks agenticos y de razonamiento, y que compite con modelos frontera cerrados, pero no se dispone de las cifras concretas para verificar estas afirmaciones.
 
 ## Requisitos de hardware
 
-- Tamaño del repositorio: 74,9 GB (pesos en BF16, formato GGUF).
-- VRAM estimada: sin datos oficiales. Como referencia, un modelo de 36B en cuantizacion 4-bit (Q4_K_M) suele ocupar entre 20 y 22 GB; en 8-bit (Q8_0) alrededor de 38-40 GB. La carga completa en BF16 requeriria aproximadamente 75 GB.
-- GPU recomendadas: para cuantizacion 4-bit, una GPU con 24 GB de VRAM (RTX 3090/4090, A5000) es suficiente; para 8-bit se necesitarian 48 GB (A6000, A100 40GB) o mas. Para BF16 completo se requiere una GPU de 80 GB (A100, H100) o distribucion en varias GPUs.
-- Compatibilidad con GPU de consumo: si, con cuantizaciones 4-bit o menores en GPUs de 24 GB, aunque la velocidad dependera del ancho de banda de memoria.
-- Opciones de despliegue: `llama.cpp` (mediante el fork MBZUAI-IFM), y por extension cualquier herramienta compatible con GGUF (Ollama, LM Studio, etc.) una vez que el soporte de la arquitectura K2 Horizon se integre en el `llama.cpp` principal.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (aproximada, segun cuantizacion y 37,4B parametros totales):
+  - BF16: en torno a 75 GB de pesos.
+  - Q8_0: en torno a 40 GB.
+  - Q6_K: en torno a 31 GB.
+  - Q5_K_M: en torno a 27 GB.
+  - Q4_K_M: en torno a 23 GB.
+  - Nota: al ser MoE, la VRAM debe alojar todos los parametros (no solo los activos); los 4B activos reducen el coste de computo, no el de memoria.
+- GPU recomendadas: H100 80 GB o A100 80 GB para BF16; configuraciones multi-GPU (2x A100 40 GB, 2x RTX 4090 24 GB) para cuantizaciones Q5/Q6; RTX 4090 unica viable en Q4_K_M con contexto moderado.
+- Cabe en GPU consumer: si, en Q4_K_M o Q5_K_M sobre RTX 4090 24 GB o configuraciones con memoria unificada (Apple Silicon de 32-64 GB), asumiendo contexto reducido por el coste de la cache KV a 512K tokens.
+- Opciones de despliegue: llama.cpp (soporte de la arquitectura K2 Horizon integrado en la release b11454 o posterior), Ollama (si empaqueta dicha version), y servidores compatibles con endpoints. vLLM y TGI no estan confirmados para esta arquitectura en la informacion disponible.
+- Latencia y throughput: no disponibles. El perfil de 4B parametros activos sugiere un throughput por token mas alto que un denso de 36B, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento numericos para realizar una comparativa rigurosa. Los modelos que aparecen en la tabla de la model card son:
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| K2-Horizon-MoVA-36B-A4B | 36B (37,4B reales) | ~4B | 512K | Apache 2.0 | GGUF, safetensors |
+| Qwen3.6-35B-A3B | 35B | ~3B | no disponible | no disponible | no disponible |
+| G9v3-39A5B | 39B | ~5B | no disponible | no disponible | no disponible |
+| Muse Glimmer-30B | 30B | denso | no disponible | no disponible | no disponible |
+| Gemma 4 31B-it | 31B | denso | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia |
-|---|---|---|---|---|
-| K2-Horizon-MoVA-36B-A4B (este) | 36B | 4B | 512K | Apache-2.0 |
-| Qwen3.6-35B-A3B | 35B | 3B | no disponible | no disponible |
-| Gemma 4 31B-it | 31B | denso | no disponible | no disponible |
-| Muse Glimmer-30B | 30B | no disponible | no disponible | no disponible |
-| G9v3-39A5B | 39B | 5B | no disponible | no disponible |
-| Nemotron 3 Super | 120B | no disponible | no disponible | no disponible |
-| Nemotron 3 Ultra | 550B | no disponible | no disponible | no disponible |
-
-La model card afirma que K2-Horizon-MoVA-36B-A4B supera a todos estos modelos en benchmarks de agentica y razonamiento, pero no se proporcionan cifras concretas. La comparativa cualitativa indica que el modelo logra resultados de nivel frontera con solo 4B de parametros activos, lo que lo situa en una posicion ventajosa en terminos de eficiencia.
+Los datos de contexto, licencia y formato de los modelos comparables no estan disponibles en la informacion proporcionada; la comparativa se limita a los parametros totales y activos reflejados en la tabla de la model card. No se dispone de resultados numericos de benchmarks para establecer una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se ha declarado soporte para ingles; el rendimiento en otros idiomas no esta garantizado y podria ser significativamente inferior.
-- Sesgos y alucinaciones: no se han publicado evaluaciones de sesgos o factualidad; como cualquier modelo generativo, existe riesgo de alucinacion, especialmente en tareas abiertas.
-- Soporte de herramientas: no se menciona explicitamente el soporte de function calling o tool calling; las capacidades agenticas descritas podrian requerir adaptaciones externas.
-- Compatibilidad de software: el modelo requiere una version especifica de `llama.cpp` (fork de MBZUAI-IFM) que implemente la arquitectura K2 Horizon; el soporte oficial en el `llama.cpp` principal esta aun en proceso de integracion, lo que limita su portabilidad inmediata.
-- Datos de entrenamiento: aunque se ha anunciado la publicacion de los datasets, estos no estan disponibles actualmente, lo que dificulta la reproduccion y la evaluacion independiente.
-- Cuantizaciones: el repositorio GGUF no especifica las cuantizaciones disponibles, solo indica que los tensores se almacenan en BF16; el usuario debera generar sus propias cuantizaciones o esperar a que se publiquen.
-- Fecha de creacion: el modelo se publico en septiembre de 2026, por lo que su ecosistema de soporte (librerias, documentacion, ejemplos) puede ser aun inmaduro.
+- Idioma: el modelo esta entrenado y etiquetado unicamente para ingles; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea inferior.
+- Riesgo de alucinacion: no se documentan evaluaciones de factualidad ni tasas de alucinacion; como todo LLM generativo, requiere verificacion en produccion.
+- Sesgos: no se publica informacion sobre evaluaciones de sesgo, toxicidad o alineacion; se desconoce el grado de mitigacion aplicado.
+- Contexto largo: aunque la ventana nativa es de 512K tokens, el coste de memoria de la cache KV a esa longitud es muy elevado y puede hacer inviable su uso practico en hardware consumer sin tecnicas adicionales.
+- Dependencia de version: los GGUF requieren una version de llama.cpp con soporte de la arquitectura K2 Horizon (integrado en b11454 o posterior); versiones anteriores fallaran al cargar el modelo.
+- Tool calling y modo de razonamiento: no confirmados; conviene validar el comportamiento real antes de disenar agentes que dependan de estas capacidades.
+- Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero el autor no ofrece garantias ni asume responsabilidad por el uso.
+- Madurez: el ecosistema de tooling (vLLM, TGI, integraciones de terceros) puede no estar completo para esta arquitectura en el momento de la publicacion.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF
-- Repositorio Hugging Face (modelo original): https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
-- Fork de llama.cpp con soporte K2 Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon
+- Repositorio GGUF: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF
+- Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+- Dataset de preentrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
+- Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data
+- Release de llama.cpp con soporte K2 Horizon (b11454): https://github.com/ggml-org/llama.cpp/releases?page=5#release-b11454
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

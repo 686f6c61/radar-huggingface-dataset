@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "rwtd5150/Qwen3.8-Flash-Next-oQ4-mtp",
+  "slug": "rwtd5150-qwen3-8-flash-next-oq4-mtp",
+  "author": "rwtd5150",
+  "url": "https://huggingface.co/rwtd5150/Qwen3.8-Flash-Next-oQ4-mtp",
+  "created_at": "2026-11-17T21:42:12.000Z",
+  "updated_at": "2026-11-18T00:59:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71381134326,
+  "storage_human": "71.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

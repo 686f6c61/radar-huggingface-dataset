@@ -2,106 +2,104 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Turbo-NVFP4 es una cuantizacion independiente, publicada por el usuario BennyDaBall, del modelo de generacion y edicion de imagen Qwen-Image-2.1-Turbo de Alibaba Qwen. El paquete incluye un transformer de difusion de imagen y un encoder de texto Qwen3-VL-8B, ambos convertidos a NVFP4 (formato de 4 bits en coma flotante de NVIDIA) de forma selectiva, dejando capas sensibles en BF16. No es un modelo nuevo: reproduce la arquitectura y los pesos del checkpoint original, solo comprimidos y empaquetados como pesos nativos de ComfyUI.
+Qwen-Image-2.1-Turbo-NVFP4 es una cuantización en formato NVFP4 del modelo de difusión Qwen-Image-2.1-Turbo, desarrollada por el usuario independiente BennyDaBall y publicada en Hugging Face. No se trata de un modelo original, sino de una redistribución optimizada para ComfyUI que reduce el peso del paquete completo de BF16 a 15,70 GB (un 51,6 % menos), manteniendo la arquitectura del transformer de difusión original de Qwen. El modelo base pertenece a la familia Qwen-Image, orientada a generación y edición de imágenes de alta fidelidad, incluyendo tipografía y fondos transparentes nativos.
 
-El objetivo es reducir el coste de memoria y acelerar la inferencia sin degradar de forma perceptible la calidad de imagen. El paquete completo ocupa 15,70 GB (transformer NVFP4 de 5,69 GB, encoder NVFP4 de 9,33 GB y VAE BF16 de 0,68 GB), un 51,6 % menos que el paquete BF16 original, que ronda los 32,4 GB. Segun el autor, alcanza una mediana de 1,739 s por imagen a 1024×1024 en una RTX 5090 con ComfyUI sin modificar, incluyendo codificacion de texto, muestreo, decodificacion y guardado PNG.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de generación de imágenes de gama alta en hardware de consumo, concretamente en una única GPU RTX 5090, con un esquema de muestreo de solo ocho pasos (Euler, CFG 1, schedule oficial de Turbo). El autor ha aplicado una cuantización selectiva: 144 matrices del transformer en NVFP4 y 48 matrices sensibles preservadas en BF16, más un encoder con 188 matrices NVFP4 y 64 en BF16.
 
-El modelo base, Qwen-Image-2.1-Turbo, es un checkpoint acelerado de Qwen-Image-2.1 pensado para generar y editar imagenes en solo 8 pasos de denoising. Incluye soporte nativo de transparencia RGBA, edicion por referencia y tipografia. Es relevante ahora porque combina un generador visual relativamente compacto con un plan de muestreo corto, lo que abarata el coste por imagen, y esta cuantizacion concreta lo hace ejecutable en GPU de consumo Blackwell (serie RTX 50) o en entornos con aceleracion NVFP4.
+La versión de noviembre de 2026 introduce un segundo fichero (`qwen_image_2.1_turbo_nvfp4_BdB_SR.safetensors`) calibrado sobre ejecuciones reales del denoiser en ComfyUI, que reduce el error por paso un 21 % en text-to-image y un 25 % en edición de imágenes respecto al fichero original, según las mediciones del propio autor. La licencia es `qwen-research`, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (DiT) para imagen, con encoder de texto Qwen3-VL-8B |
-| Parametros totales | No disponible en la model card; fuentes externas describen el generador visual como de ~7B, mas un encoder Qwen3-VL-8B |
-| Parametros activos | No aplicable (no es un modelo MoE) |
-| Longitud de contexto | No aplicable directamente (modelo de generacion de imagen); resoluciones de salida de 1024×1024 hasta 2048×2048 |
-| Tipos de cuantizacion | NVFP4 selectivo (4 bits) en transformer y encoder, con capas sensibles en BF16; VAE sin cambios en BF16 |
-| Idiomas soportados | No disponible en la model card; el encoder de texto Qwen3-VL-8B es multilingue |
+| Arquitectura | Transformer de difusion (modelo base Qwen-Image-2.1-Turbo), cuantizado selectivamente |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 (matrices principales) + BF16 (matrices sensibles); INT8 ConvRot disponible como referencia del modelo oficial |
+| Idiomas soportados | no disponible |
 | Licencia | qwen-research (license: other) |
-| Formato de pesos | safetensors (diffusion-single-file) |
+| Formato de pesos | safetensors (diffusion-single-file para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El paquete no define una arquitectura nueva: hereda la de Qwen-Image-2.1-Turbo, un transformer de difusion para generacion y edicion de imagen que el autor del modelo original describe como un checkpoint acelerado con solo 8 pasos de denoising. El texto se procesa con un encoder Qwen3-VL-8B y el resultado se decodifica con un VAE que se mantiene en BF16 sin tocar. La generacion funciona con el sampler Euler, CFG 1 y un plan de sigmas fijo de ocho valores (1,0; 0,978453; 0,95418; 0,926626; 0,89508; 0,845148; 0,704534; 0,414568; 0,0) mediante `ManualSigmas` y `SamplerCustomAdvanced`.
+El modelo es una cuantización del transformer de difusión Qwen-Image-2.1-Turbo, no un modelo entrenado desde cero. La arquitectura subyacente es un transformer de difusión para text-to-image y edición de imágenes, acompañado de un encoder de texto basado en Qwen3-VL de 8B (`qwen3vl_8b_turbo_nvfp4.safetensors`, 9,33 GB) y un VAE en BF16 (0,68 GB). El pipeline completo suma 15,70 GB en disco.
 
-La innovacion de esta release concreta es la cuantizacion selectiva. El autor empleo sondas de capas en BF16 y comparaciones de imagen para decidir que comprimir: el transformer contiene 144 matrices en NVFP4 y 48 matrices sensibles adicionales en BF16; el encoder contiene 188 matrices en NVFP4 y 64 matrices de lenguaje adicionales en BF16. Vision, embeddings, la cabeza de lenguaje y otros tensores criticos conservan la precision original, y el VAE queda intacto. Los pesos se empaquetaron como single-file nativo de ComfyUI, sin nodos personalizados ni parches del core, y se validaron contra el checkpoint BF16 con 16 casos de prompt/seed comparados visualmente. No se ha publicado informacion sobre el dataset de entrenamiento original ni sobre el proceso de destilacion de Qwen-Image-2.1-Turbo.
+La innovación técnica principal es la cuantización selectiva en NVFP4 con preservación de capas sensibles. El autor utilizó sondas de capas en BF16 y comparaciones de imagen para decidir qué matrices comprimir: en el transformer, 144 matrices van en NVFP4 y 48 se mantienen en BF16; en el encoder, 188 en NVFP4 y 64 en BF16 (las capas de visión y embedding se preservan). La variante `BdB_SR` se calibró sobre ejecuciones reales del denoiser en ComfyUI 0.45.0, cubriendo tanto text-to-image como edición, en lugar de usar redondeo simple (round-to-nearest). No se dispone de información sobre el número de tokens de entrenamiento, composición del dataset ni si hubo RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de imagen a partir de texto (text-to-image) con resoluciones como 1024×1024, 1536×1024 y 2048×2048; se recomienda usar dimensiones divisibles por 16.
-- Edicion de imagen guiada por referencia (por ejemplo, cambiar el vestuario de una fotografia) mediante flujos con imagen de entrada.
-- Generacion con transparencia RGBA nativa, util para recortes de producto con canal alfa real.
-- Composicion a partir de multiples referencias, combinando dos imagenes de entrada en un mismo flujo de trabajo.
-- Tipografia y rotulacion de campana: renderiza texto concreto en la imagen siguiendo instrucciones de contenido y colocacion.
-- Siete flujos de trabajo listos para cargar en ComfyUI (text-to-image, edicion, RGBA transparente, referencias multiples, tipografia a 1536×1024, opcion de encoder BF16 y tipografia a 2048×2048).
-- Muestreo acelerado en 8 pasos con el plan de sigmas oficial de Turbo.
-- No se documentan en la model card capacidades de tool calling, agentes, audio ni modos de razonamiento extendido; se trata de un modelo de difusion de imagen, no de un LLM conversacional.
+- Generación de imágenes text-to-image con muestreo de ocho pasos (Euler, CFG 1, schedule oficial de Turbo).
+- Edición de imágenes: cambio de vestuario u otros atributos a partir de una fotografía de referencia.
+- Generación de fondos transparentes nativos en RGBA (recorte de producto con canal alfa).
+- Combinación de múltiples referencias en una sola generación.
+- Tipografía y lettering de campaña, incluyendo salida a 1536×1024 y 2048×2048 (2K).
+- Ilustración y fotografía de moda/casual.
+- Compatibilidad nativa con ComfyUI sin nodos personalizados ni parches del core.
+- Siete workflows listos para cargar que cubren los casos anteriores.
 
 ## Casos de uso
 
-- Edicion de moda y producto: el flujo 02 permite cambiar el vestuario de una fotografia de referencia manteniendo el encuadre, util para catalogos de e-commerce que necesitan variantes de color o prenda sin repetir sesion fotografica.
-- Recortes de producto con fondo transparente: el flujo 03 genera RGBA nativo con alfa real, lo que evita el paso de segmentacion posterior y acelera la publicacion en tiendas online.
-- Creacion de creatividades publicitarias con texto: los flujos 05 y 07 renderizan tipografia a 1536×1024 y 2048×2048, apropiados para banners y cabeceras de campana donde el lema debe aparecer legible y colocado segun instruccion.
-- Ilustracion y arte conceptual: con 8 pasos de muestreo y alrededor de 1,7 s por imagen a 1024×1024 en RTX 5090, permite iterar rapidamente sobre bocetos generados por prompt.
-- Composicion a partir de varias referencias: el flujo 04 combina dos imagenes de entrada, util para previsualizar mezclas de estilos, productos o escenarios antes de una produccion real.
-- Prototipado de interfaces graficas y assets: la generacion con transparencia y la salida a resoluciones altas facilitan obtener iconos o elementos de UI provisionales con fondo limpio.
-- Integracion en pipelines locales de diseno: al cargar en ComfyUI 0.39.0 sin nodos personalizados, encaja en estaciones de trabajo con GPU Blackwell para generar lotes de imagenes de forma repetible y automatizable.
-- Pruebas de cuantizacion y benchmarking de NVFP4: sirve como caso practico para medir latencia y calidad en hardware que soporte NVFP4 en comparacion con el BF16 original.
+- Generación de imágenes de moda y fotografía casual: con ocho pasos y CFG 1, el modelo produce renders en aproximadamente 2,2 segundos por imagen en una RTX 5090, adecuado para iteración rápida de conceptos visuales.
+- Edición de vestuario sobre fotografía de referencia: el workflow 02 permite sustituir prendas manteniendo la identidad del sujeto, útil en catálogos de e-commerce y previsualización de colecciones.
+- Recorte de producto con alfa nativo: el workflow 03 genera PNG con transparencia real (RGBA), lo que evita post-procesado de máscaras en pipelines de fichas de producto.
+- Campañas tipográficas: el workflow 05 genera lettering a 1536×1024 y el 07 a 2048×2048, con instrucciones de citar literalmente el texto y describir su colocación, apto para piezas publicitarias.
+- Composición con múltiples referencias: el workflow 04 combina dos referencias visuales, útil para moodboards y dirección de arte asistida.
+- Despliegue local en estación de trabajo con GPU de consumo: al ocupar 15,70 GB en disco y ejecutarse en una RTX 5090, permite flujos de generación de imágenes sin depender de servicios en la nube.
+- Integración en ComfyUI como motor de imágenes dentro de pipelines creativos automatizados, sin necesidad de nodos personalizados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible, ya que el modelo es de generacion de imagen y no un LLM. Los datos de rendimiento aportados por el autor son de latencia y calidad visual:
+El autor publica métricas comparativas medidas en una RTX 5090 con ComfyUI 0.45.0, 12 prompts × 6 semillas, schedule oficial de 8 sigma, Euler, CFG 1 y encoder de texto BF16. Cada render se compara contra el render BF16 de la misma semilla.
 
-| Metrica | Valor | Condiciones |
-|---|---|---|
-| Latencia por imagen a 1024×1024 | 1,739 s (mediana de cinco ejecuciones en caliente) | RTX 5090, ComfyUI 0.39.0 sin modificar, incluye codificacion de texto, muestreo, decodificacion y guardado PNG |
-| Pasos de muestreo | 8 | Euler, CFG 1, plan de sigmas oficial de Turbo |
-| Tamano del paquete | 15,70 GB | Transformer 5,69 GB + encoder 9,33 GB + VAE 0,68 GB |
-| Reduccion de tamano | 51,6 % frente al BF16 original (~32,4 GB) | Calculo a partir del dato del autor |
+| Fichero del transformer | LPIPS vs BF16 (menor = mejor) | LPIPS mediana | PSNR | Tiempo en caliente (s/imagen) |
+|---|---:|---:|---:|---:|
+| INT8 ConvRot oficial (7,26 GB) | 0,057 | 0,035 | 28,3 dB | 2,17 |
+| `qwen_image_2.1_turbo_nvfp4.safetensors` original | 0,166 | 0,144 | 20,5 dB | 2,25 |
+| `qwen_image_2.1_turbo_nvfp4_BdB_SR.safetensors` (nuevo) | 0,136 | 0,111 | 21,3 dB | 2,27 |
 
-La validacion de calidad se realizo con 16 casos de prompt/seed comparados visualmente entre BF16, NVFP4 selectivo y NVFP4 con encoder BF16, documentados en `COMPARISONS.md`. No se aportan metricas automaticas como FID, CLIP score o SSIM.
+El fichero nuevo queda más cerca de BF16 en 45 de 72 renders (LPIPS medio −0,030, IC 95 % −0,050 a −0,011; PSNR +0,8 dB). En edición de imágenes, el error por paso del denoiser baja un 25 % (240 llamadas de edición retenidas, más cercano en las 240). En text-to-image, el error por paso baja un 21 % (320 llamadas retenidas, más cercano en 298). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) porque no aplican a un modelo de difusión de imágenes.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos suman 15,70 GB (transformer NVFP4 5,69 GB, encoder NVFP4 9,33 GB, VAE BF16 0,68 GB); se recomienda un minimo de 24 GB de VRAM para dejar margen a activaciones y al proceso de decodificacion.
-- GPU recomendadas: RTX 5090 (probada por el autor) para NVFP4 nativo; tambien caben en GPUs de 24 GB como RTX 4090 o RTX 3090, aunque con menos holgura y probablemente sin aceleracion NVFP4 nativa.
-- Compatibilidad NVFP4: el soporte nativo de NVFP4 exige arquitectura Blackwell (serie RTX 50, B100/B200, RTX PRO Blackwell). En GPUs sin soporte nativo, ComfyUI carga el encoder mediante el fallback de matmul en precision completa, lo que puede aumentar el uso de memoria y reducir la ventaja de velocidad.
-- Cabe en GPU de consumo: si, en la RTX 5090 (32 GB) con holgura, y de forma ajustada en GPUs de 24 GB. No se recomienda para GPUs de 16 GB o menos sin cuantizacion adicional.
-- Opciones de despliegue: ComfyUI 0.39.0 o superior (ruta principal, con cargadores estandar y sin nodos personalizados); libreria `diffusion-single-file`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a LLMs y no a este tipo de modelo de difusion.
-- Latencia y throughput: 1,739 s de mediana por imagen a 1024×1024 en RTX 5090 con ComfyUI 0.39.0, cinco ejecuciones en caliente, con los modelos ya cargados y re-codificacion de texto en cada ejecucion. Probado con frontend 1.53.10, Comfy Kitchen 0.2.37 y PyTorch 2.14.0+cu130. Otros equipos y ajustes variaran.
+- VRAM estimada para inferencia: no disponible de forma explícita; el paquete completo ocupa 15,70 GB en disco (transformer 5,69 GB, encoder 9,33 GB, VAE 0,68 GB).
+- GPU recomendada: RTX 5090 (hardware en el que el autor construyó y probó todos los workflows).
+- Cabe en GPU de consumo: sí, según el autor, en una RTX 5090; no se confirma compatibilidad con GPUs de menor VRAM.
+- Opciones de despliegue: ComfyUI 0.39.0 o superior (probado en 0.45.0), sin nodos personalizados ni parches del core.
+- Latencia y throughput: aproximadamente 2,25–2,27 segundos por imagen en caliente en RTX 5090 con 8 pasos.
+- El workflow opcional con encoder BF16 requiere `qwen3vl_8b_bf16.safetensors` de Comfy-Org.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros / encoder | Contexto / salida | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento (LPIPS vs BF16) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4 (este) | ~7B generador + Qwen3-VL-8B encoder (segun fuentes externas) | Salida de 1024×1024 a 2048×2048 | 1,739 s a 1024×1024 en RTX 5090; 8 pasos | qwen-research | Hugging Face (16,1 GB de repo) |
-| Qwen/Qwen-Image-2.1-Turbo (BF16 original) | Misma arquitectura | Misma salida | Misma calidad de referencia; sin cuantizar | qwen-research | Hugging Face |
-| Comfy-Org/Qwen-Image-2.1 (BF16 fuente nativa) | Misma arquitectura, revision `a3c1a9e2efcba96124a9dc8600c0c07d6f5e68aa` | Misma salida | Checkpoint fuente del que parte esta cuantizacion | qwen-research | Hugging Face |
-| BennyDaBall/Qwen-Image-2.1-NVFP4 (sin Turbo) | Version NVFP4 de Qwen-Image-2.1 | Misma salida | Paquete de 12,42 GB; version no Turbo, sin plan de 8 pasos | qwen-research | Hugging Face |
+| Qwen-Image-2.1-Turbo NVFP4 (este) | no disponible | no disponible | 0,136 (BdB_SR) / 0,166 (original) | qwen-research | Hugging Face, 38.909 descargas |
+| Qwen-Image-2.1-Turbo INT8 ConvRot oficial | no disponible | no disponible | 0,057 | qwen-research | Referencia del autor; pesos oficiales en Comfy-Org |
+| Qwen-Image-2.1-Turbo BF16 (modelo base) | no disponible | no disponible | 0 (referencia) | qwen-research | Hugging Face (Qwen/Qwen-Image-2.1-Turbo) |
 
-No se dispone de benchmarks cuantitativos que permitan comparar calidad de imagen entre estas variantes mas alla de las rejillas de comparacion visual del autor.
+La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de benchmarks frente a otros modelos de difusión de imágenes. El INT8 oficial es más fiel a BF16 (LPIPS 0,057) pero pesa 7,26 GB frente a los 5,69 GB del transformer NVFP4.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan sesgos especificos del modelo original ni de esta cuantizacion; al ser una compresion del checkpoint de Qwen, hereda los sesgos del dataset de entrenamiento original, que no se detalla.
-- Riesgo de degradacion por cuantizacion: la cuantizacion selectiva a NVFP4 puede introducir diferencias perceptibles frente al BF16 en ciertos prompts o semillas. El autor publica rejillas comparativas, pero no metricas objetivas.
-- Alucinacion visual: como cualquier modelo de difusion, puede generar texto ilegible en tipografia compleja o elementos anatomicos incorrectos; conviene revisar las salidas antes de usarlas en produccion.
-- Limitaciones de idioma: la model card no especifica idiomas soportados; el rendimiento con prompts en castellano no esta documentado explicitamente, aunque el encoder Qwen3-VL-8B es multilingue.
-- Restricciones de licencia: la licencia es qwen-research (`license: other`), no una licencia permisiva estandar. Es imprescindible revisar los terminos antes de un uso comercial; el propio autor remite al LICENSE y al NOTICE del modelo fuente.
-- Dependencia de hardware: el rendimiento declarado (1,739 s por imagen) se obtuvo en RTX 5090 con NVFP4 nativo. En GPUs sin soporte NVFP4, el fallback a matmul en precision completa puede reducir la velocidad y aumentar el consumo de memoria.
-- Dependencia de la version de ComfyUI: los flujos estan probados unicamente en ComfyUI 0.39.0 sin modificar; cambios futuros de version o de nodos pueden alterar el comportamiento.
-- Mantenimiento: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion reciente y sin validacion comunitaria amplia.
+- La licencia `qwen-research` restringe el uso comercial; es imprescindible revisar el enlace de licencia del modelo base antes de cualquier despliegue en producción.
+- El modelo es una cuantización no oficial realizada por un tercero (BennyDaBall), no por Qwen; no hay garantías de soporte ni de paridad exacta con el modelo original.
+- La fidelidad respecto a BF16 es limitada: LPIPS de 0,136 y PSNR de 21,3 dB, inferiores al INT8 oficial (0,057 y 28,3 dB).
+- Los benchmarks publicados son mediciones del propio autor en una única RTX 5090 y con un conjunto acotado de prompts y semillas; no son una evaluación independiente.
+- No se dispone de información sobre sesgos, idiomas soportados ni riesgos de alucinación visual del modelo base en la documentación proporcionada.
+- El muestreo requiere mantener el schedule oficial de ocho pasos; alterarlo puede degradar la calidad.
+- Las dimensiones de salida deben ser divisibles por 16 para obtener el tamaño exacto.
+- Para edición y referencias es necesario copiar previamente las imágenes de `input/` a `ComfyUI/input/`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4
-- Modelo base original: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
-- Fuente nativa BF16: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
-- Licencia del modelo fuente: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
-- Checksums del paquete: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4/resolve/main/SHA256SUMS
-- Comparaciones de imagen: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4/blob/main/COMPARISONS.md
-- Version NVFP4 sin Turbo: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-NVFP4
-- Ficha del modelo base en QwenCloud: https://www.qwencloud.com/models/qwen-image-2.1-turbo
-- Analisis del modelo base (explainx.ai): https://www.explainx.ai/blog/qwen-image-2-1-turbo-8-step-7b-open-checkpoint-diffusers-how-to-run-2026
-- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
+- Checksums: https://huggingface.co/BennyDaBall/Qwen-Image-2.1-Turbo-NVFP4/resolve/main/SHA256SUMS
+- Comparativas de imagen: COMPARISONS.md (en el repositorio)
+- Workflows de ejemplo: workflows/ (en el repositorio)
+- Muestras: assets/showcase_grid.jpg (en el repositorio)
+- ComfyUI 0.39.0: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0
+- Encoder BF16 opcional (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/main/split_files/text_encoders
+- Perfil del autor en X: https://x.com/BennyDaBall_OG
+- Ko-fi del autor: https://ko-fi.com/bennydaball

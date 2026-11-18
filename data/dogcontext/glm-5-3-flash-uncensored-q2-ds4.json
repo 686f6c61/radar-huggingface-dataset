@@ -41,7 +41,7 @@
     "conversational"
   ],
   "likes": 23,
-  "downloads_30d": 20493,
+  "downloads_30d": 20949,
   "trending_score": 0,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
@@ -61,5 +61,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "The Hot Zone With Chuck Holton - YouTube",
+      "url": "https://www.youtube.com/channel/UCaMv0-Rb9fIrQiCUH6Xp7sA",
+      "snippet": "Welcome to The Hot Zone with Chuck Holton. This is where you get uncensored, boots-on-the-ground reporting from war zones, …"
+    }
+  ]
 }

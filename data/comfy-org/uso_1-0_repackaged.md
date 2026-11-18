@@ -2,67 +2,85 @@
 
 ## Resumen
 
-USO 1.0 es un paquete de archivos de modelo publicado por Comfy-Org en Hugging Face, diseñado específicamente para su integración en ComfyUI. El repositorio contiene dos archivos en formato safetensors: un LoRA (`uso-flux1-dit-lora-v1.safetensors`) y un projector (`uso-flux1-projector-v1.safetensors`), lo que sugiere que se trata de un adaptador para el modelo de difusión Flux.1, aunque no se proporciona documentación técnica adicional. El paquete tiene un tamaño total de 0,5 GB y se distribuye bajo licencia Apache-2.0.
+USO 1.0 (Unified Style and Subject-Driven Generation) es un conjunto de pesos de difusion para generacion de imagenes condicionada por referencia visual, desarrollado originalmente por ByteDance Research. El repositorio `Comfy-Org/USO_1.0_Repackaged` no contiene el modelo completo, sino un reempaquetado de los ficheros necesarios para su uso dentro de ComfyUI: una LoRA (`uso-flux1-dit-lora-v1.safetensors`) y un proyector (`uso-flux1-projector-v1.safetensors`), ambos en formato safetensors y con un tamano total de repositorio de 0,5 GB.
 
-La relevancia de este modelo radica en que facilita a los usuarios de ComfyUI la incorporación de un LoRA y un projector preempaquetados, evitando pasos de conversión o instalación manual. Sin embargo, al carecer de una model card descriptiva, no se dispone de información sobre su arquitectura interna, datos de entrenamiento o rendimiento. Es probable que su función sea modificar o adaptar las capacidades de generación de imágenes de Flux, pero no se puede confirmar sin más datos.
+El modelo resuelve la tarea de transferencia de estilo y sujeto a partir de una imagen de referencia, apoyandose en el modelo base Flux.1 Dev. El flujo tipico consiste en cargar Flux.1 Dev como difusor principal, aplicar la LoRA de USO sobre su bloque DiT y usar el proyector para alinear las caracteristicas de la imagen de referencia con el espacio latente del modelo generativo.
+
+Es relevante porque permite a los usuarios de ComfyUI incorporar generacion condicionada por referencia sin necesidad de gestionar el repositorio original de ByteDance ni sus dependencias de investigacion. La licencia Apache 2.0 facilita su integracion en productos comerciales, siempre que se respeten las condiciones del modelo base Flux.1 Dev, que se distribuye bajo su propia licencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (adaptador para modelo de difusión, probablemente Flux) |
+| Arquitectura | Difusion (LoRA sobre el DiT de Flux.1 Dev mas proyector de referencia) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no aplicable (modelo de difusión) |
-| Tipos de cuantizacion | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (los ficheros distribuidos son safetensors) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (LoRA y model patch) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. Los nombres de los archivos (`uso-flux1-dit-lora-v1` y `uso-flux1-projector-v1`) indican que se trata de un LoRA y un proyector destinados a ser aplicados sobre el modelo base Flux.1, probablemente para ajustar sus representaciones latentes o mejorar alguna capacidad específica. No obstante, al no existir una model card técnica, no se puede confirmar ninguna innovación o detalle de entrenamiento.
+USO se construye sobre Flux.1 Dev, un transformer de difusion (DiT) para generacion de imagenes texto-a-imagen. El reempaquetado incluye dos componentes: una LoRA que se inyecta en el DiT de Flux y un proyector que transforma las caracteristicas extraidas de una imagen de referencia en una representacion compatible con el espacio latente del modelo. El workflow oficial de ComfyUI (`flux1_dev_uso_reference_image_gen.json`) demuestra el uso conjunto de ambos ficheros para generar imagenes que preservan el sujeto o el estilo de la referencia.
+
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas adicionales en la informacion proporcionada. El repositorio es un reempaquetado de inferencia, no una publicacion de entrenamiento, por lo que los detalles de entrenamiento deben consultarse en el repositorio original de ByteDance Research.
 
 ## Capacidades
 
-- Generación de imágenes: al tratarse de un modelo de difusión (según la etiqueta `diffusion-single-file`), se infiere que participa en procesos de generación o edición de imágenes, aunque su papel exacto no está documentado.
-- Integración con ComfyUI: los archivos están empaquetados para ser colocados en las carpetas `models/loras` y `models/model_patches` de ComfyUI, lo que permite su uso directo en flujos de trabajo de esta herramienta.
-- No se conocen otras capacidades específicas, como soporte de tool calling, agentes o multimodalidad.
+- Generacion de imagenes texto-a-imagen condicionada por una imagen de referencia.
+- Transferencia de sujeto: mantiene la identidad de un objeto o personaje presente en la referencia.
+- Transferencia de estilo: aplica la estetica o el tratamiento visual de la imagen de referencia.
+- Integracion nativa con ComfyUI mediante nodos de carga de LoRA y model patch.
+- Compatibilidad con el ecosistema Flux.1 Dev, incluyendo sus workflows y herramientas de muestreo.
+- No se ha documentado soporte de tool calling, agentes ni razonamiento multi-paso (no es un modelo de lenguaje).
+- Capacidades multilingues: no aplica al ser un modelo de difusion; los prompts se gestionan a traves del text encoder de Flux.1 Dev.
 
 ## Casos de uso
 
-- Personalización de generación de imágenes en ComfyUI: el LoRA puede aplicarse a un modelo base Flux para ajustar estilos, personajes o temáticas concretas, aunque no se especifican detalles.
-- Experimentación con patches de modelo: el projector podría utilizarse para modificar la representación interna del modelo base, permitiendo pruebas de adaptación sin reentrenar el modelo completo.
-- Investigación en adaptadores de difusión: al ser código abierto, puede servir como referencia para estudiar la implementación de LoRAs y projectors en el ecosistema Flux.
-- Despliegue en entornos locales: al ser un paquete ligero (0,5 GB), es adecuado para equipos con recursos limitados que ya dispongan del modelo base Flux.
-- Integración en pipelines de generación automatizada: mediante ComfyUI, se puede incorporar en flujos de trabajo programáticos para producción de imágenes.
-- Evaluación de calidad de adaptadores: permite comparar el efecto de este LoRA frente a otros disponibles en la comunidad.
+- Generacion de retratos consistentes de personajes: usar una foto de referencia junto con la LoRA y el proyector para producir nuevas imagenes del mismo personaje en escenas distintas, util en ilustracion y narrativa visual.
+- Transferencia de estilo en diseno grafico: aplicar el estilo de una referencia (paleta, textura, iluminacion) a nuevas composiciones manteniendo el contenido indicado en el prompt.
+- Prototipado de producto: generar variaciones de un objeto a partir de una foto de referencia para catalogos y mockups, con control sobre el fondo y la iluminacion via prompt.
+- Creacion de assets para videojuegos: producir variaciones de un personaje o props manteniendo coherencia visual entre iteraciones dentro de un pipeline de ComfyUI.
+- Edicion y extension de imagenes existentes: combinar la referencia con prompts para recontextualizar un sujeto en nuevos entornos sin perder sus rasgos distintivos.
+- Flujos automatizados de contenido: integrar el workflow de ComfyUI en pipelines por lotes para generar imagenes condicionadas por referencia a partir de una base de datos de imagenes fuente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de especificaciones oficiales de hardware.
-- Dado que el paquete solo contiene un LoRA y un projector (0,5 GB en total), el consumo de VRAM adicional sobre el modelo base será reducido, probablemente inferior a 2 GB.
-- Se recomienda una GPU con al menos 8 GB de VRAM para ejecutar Flux junto con estos adaptadores, aunque no hay confirmación oficial.
-- Opciones de despliegue: ComfyUI es la herramienta principal; también podría usarse en otros entornos que soporten safetensors y LoRAs, como Diffusers, pero no se ha verificado.
+- VRAM estimada: no disponible de forma especifica para este reempaquetado; depende del modelo base Flux.1 Dev sobre el que se aplica. La LoRA y el proyector anaden una sobrecarga reducida (repo de 0,5 GB).
+- GPU recomendadas: no disponibles en la informacion proporcionada; en la practica, el requisito dominante es el de Flux.1 Dev, no el de la LoRA.
+- Cabe en GPU consumer: no disponible; condicionado por el modelo base Flux.1 Dev.
+- Opciones de despliegue: ComfyUI (flujo oficial documentado). No se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion de este tipo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer comparaciones con otros modelos de la misma categoría. La ausencia de documentación técnica impide conocer sus características frente a alternativas.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| USO 1.0 (este repo) | LoRA + proyector sobre Flux.1 Dev | no disponible | no disponible | Apache 2.0 | Hugging Face (reempaquetado ComfyUI) |
+| bytedance-research/USO (original) | Modelo completo de referencia | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| Flux.1 Dev | DiT texto-a-imagen | no disponible | no disponible | licencia propia de Flux.1 Dev | Hugging Face / BFL |
+
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Falta de documentación: no hay model card técnica, por lo que se desconocen detalles de entrenamiento, sesgos o limitaciones de uso.
-- Dependencia de un modelo base: los archivos requieren de un modelo Flux.1 base que no se incluye en el repositorio, lo que obliga a descargarlo por separado.
-- Riesgo de incompatibilidad: no se garantiza que funcione con todas las versiones de ComfyUI o de Flux.
-- Uso comercial: la licencia Apache-2.0 permite uso comercial, pero se debe verificar la licencia del modelo base Flux, que puede tener restricciones adicionales.
-- Alucinaciones o artefactos: al ser un adaptador sin documentación, no se pueden prever problemas de calidad en la generación.
+- El repositorio no contiene un modelo autonomo: requiere Flux.1 Dev como base y el entorno ComfyUI para funcionar.
+- La licencia Apache 2.0 del reempaquetado no sustituye a la licencia del modelo base Flux.1 Dev; el uso comercial esta condicionado por ambas.
+- No se documentan sesgos especificos, pero al heredar el comportamiento de Flux.1 Dev y de sus datos de entrenamiento, pueden aparecer sesgos de representacion y estilisticos.
+- Riesgo de alucinacion visual: la generacion condicionada por referencia puede desviarse del sujeto o estilo original, especialmente con referencias ambiguas o prompts contradictorios.
+- No hay informacion sobre idiomas soportados ni sobre el comportamiento del text encoder con prompts en castellano.
+- No se dispone de datos de benchmarks, latencia ni requisitos de VRAM especificos de este reempaquetado.
+- El repositorio se actualizo por ultima vez en septiembre de 2026; conviene verificar la compatibilidad con la version actual de ComfyUI.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/USO_1.0_Repackaged
-- No se encontraron otros enlaces relevantes (papers, blogs o demos) en la información proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/USO_1.0_Repackaged
+- Modelo original: https://huggingface.co/bytedance-research/USO
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
+- Workflow oficial Flux.1 Dev USO Reference Image Generation: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/flux1_dev_uso_reference_image_gen.json

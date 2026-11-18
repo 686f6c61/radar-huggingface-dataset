@@ -2,129 +2,115 @@
 
 ## Resumen
 
-Ternary Bonsai 2 27B Abliterated v2 es una cuantizacion ternaria de 2 bits del modelo Bonsai 2 27B de PrismML, publicada por el usuario BoldingBuilds en formato GGUF propietario PQ2_0. Sobre los pesos originales se han aplicado dos modificaciones: la eliminacion de los rechazos (abliteration) mediante la edicion in-place de 98 tensores de las bloques 15 a 63, y un ajuste de una unica fila de la capa de salida correspondiente al token de cierre de razonamiento, con el objetivo de que el modelo entregue la respuesta en lugar de agotar el presupuesto de tokens dentro del bloque de pensamiento. El resultado son dos ficheros de 7,21 GB y 7,66 GB que contienen los mismos pesos de lenguaje, diferenciandose el segundo por incorporar 15 tensores adicionales para decodificacion especulativa basada en prediccion multi-token (MTP), con una mejora de velocidad de decodificacion de aproximadamente el 40%.
+Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF es una cuantización GGUF de 2 bits (formato PQ2_0 de PrismML) del modelo Ternary-Bonsai-2-27B, un transformer de 26.896 millones de parámetros con arquitectura híbrida (atención + capas SSM, según los tensores `ssm_out` documentados) y torre de visión opcional. Lo publica el usuario BoldingBuilds sobre el release de prism-ml, aplicando una edición de "abliteración" (eliminación de rechazos) sobre 98 tensores y un ajuste de una única fila de la capa de salida para forzar el cierre del bloque de razonamiento.
 
-El modelo cuenta con 26.895.998.464 parametros (unos 26,9 mil millones) segun los pesos originales en safetensors y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial. Esta orientado a generacion de texto y razonamiento en modo pensamiento, con soporte de un parametro `reasoning_effort` que modula la longitud del razonamiento y afecta de forma notable a la calidad de las respuestas cuando el presupuesto de tokens es limitado.
+La relevancia de esta versión (v2) está en su comportamiento con el modo *thinking* activado: el autor reporta una puntuación de 0,941 en StrongReject (150 peticiones dañinas detalladas, presupuesto de 16.384 tokens) frente a 0,781 de su v1 y valores de 0,668-0,738 en builds alternativos, además de reducir a 7 sobre 150 las respuestas vacías. El modelo incluye además un fichero con cabezas MTP (multi-token prediction) para decodificación especulativa, que según el autor decodifica aproximadamente un 40% más rápido.
 
-Su relevancia es doble. Por un lado, es un ejemplo de cuantizacion ternaria extrema (aproximadamente 2,1 bits por parametro) que reduce un modelo de 27B a menos de 8 GB, haciendolo desplegable en GPU de consumo. Por otro, es un modelo deliberadamente "uncensored": elimina practicamente todos los rechazos (0% en las pruebas declaradas) y esta pensado explicitamente para generar respuestas detalladas a peticiones daninas, lo que lo situa en el terreno de la investigacion en seguridad y de los testes de robustez, con las advertencias legales y eticas correspondientes.
+Se distribuye bajo licencia Apache 2.0, con un tamaño de repositorio de 15,5 GB y más de 44.000 descargas, lo que lo sitúa entre los derivados "uncensored" más populares de la familia Bonsai 2. Requiere obligatoriamente el fork de llama.cpp de PrismML: el formato PQ2_0 no lo cargan las builds estándar de llama.cpp, Ollama ni LM Studio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No detallada explicitamente en la informacion disponible; la etiqueta `qwen3_5` y los tensores citados (`ffn_down`, `ssm_out`, `attn_output` en los bloques 15-63) apuntan a una arquitectura hibrida de atencion y modelos de espacio de estados (SSM) |
-| Parametros totales | 26.895.998.464 (≈ 26,9 mil millones), dato de safetensors del modelo base |
-| Parametros activos | No aplica / no disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible; la configuracion recomendada por el autor usa `-c 32768` |
-| Tipos de cuantizacion | PQ2_0 ternario (≈ 2,1 bits por parametro; ficheros de 7,21 GB y 7,66 GB). Existe tambien una variante PTQ1_0 de 1,75 bpw, pero corresponde a la generacion v1 |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer híbrido (atención + SSM) con torre de visión opcional; linaje `qwen3_5` |
+| Parametros totales | 26.895.998.464 (26,9 B) |
+| Parametros activos | no disponible (no se documenta como MoE) |
+| Longitud de contexto | 32.768 tokens (configuración recomendada `-c 32768`) |
+| Tipos de cuantizacion | PQ2_0 (2 bits ternario, ~2,1 bpw estimado a partir de 7,21 GB); variante PTQ1_0 (1,75 bpw) en repo aparte; proyector de visión Q8_0 |
+| Idiomas soportados | no disponible (la model card no los enumera) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (formato PQ2_0 de PrismML) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre el entrenamiento del modelo base Bonsai 2 27B en la documentacion facilitada: no se indican el numero de tokens, la composicion del dataset ni si hubo fases de RLHF, DPO u otras tecnicas de alineamiento. Lo que si se documenta con detalle es el proceso de modificacion posterior. Se editaron 99 de los 851 tensores del modelo: 98 tensores (`ffn_down`, `ssm_out`, `attn_output`, bloques 15 a 63) para eliminar los rechazos mediante el mismo metodo in-place sobre los digitos ternarios empleado en v1, pero con aproximadamente 8 veces mas bytes modificados; y una unica fila de `output.weight`, correspondiente al token de cierre de razonamiento, de 1.250 bytes, ajustada para que el cierre sea probable cuando la respuesta ya esta escrita e improbable a mitad del razonamiento. El total de bytes modificados es el 0,95% del fichero (frente al 0,12% de v1) y el resto es byte-identico a la publicacion de PrismML. No hay recuantizacion: las ediciones se hacen sobre el empaquetado ternario ya publicado.
+El modelo base es Ternary-Bonsai-2-27B de prism-ml, un transformer de 27B con pesos ternarios y capas de estado recurrente (los tensores editados incluyen `ssm_out`, además de `ffn_down` y `attn_output` en los bloques 15-63), lo que apunta a una arquitectura híbrida atención/SSM. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; esa información no está disponible en la documentación proporcionada. Sí se documenta que el modelo incorpora un modo de razonamiento explícito controlable mediante `reasoning_effort` (valores como *medium*) y una torre de visión que se distribuye como proyector separado.
 
-En cuanto a la variante MTP, el fichero anade 15 tensores (`blk.64.*`) que permiten decodificacion especulativa, con una mejora de velocidad de decodificacion de aproximadamente el 40%. Con la especulacion desactivada, ambos ficheros produjeron salidas byte-identicas en las cinco peticiones de prueba (400 tokens cada una). Los hashes SHA-256 (primeros 16 caracteres) son `b284cbc6cb6c2894` para el fichero simple y `a4e4c7b578131595` para la variante MTP.
+Sobre esta base, BoldingBuilds aplica dos modificaciones en el empaquetado ternario original, sin recuantizar: (1) una abliteración sobre 98 tensores (`ffn_down`, `ssm_out`, `attn_output`, bloques 15-63), con aproximadamente 8 veces más bytes modificados que en v1; y (2) un ajuste de una sola fila de `output.weight` correspondiente al token `</think>`, de 1.250 bytes, calibrado sobre trazas de razonamiento del modelo original para que el cierre del bloque de pensamiento sea probable cuando la respuesta ya está redactada. En total cambia el 0,95% de los bytes del fichero (99 de 851 tensores); el resto es idéntico byte a byte al release de PrismML. La variante MTP añade 15 tensores (`blk.64.*`) para decodificación especulativa; con la especulación desactivada, ambos ficheros producen salidas idénticas byte a byte en las 5 pruebas del autor (400 tokens cada una).
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato chat, con plantilla Jinja (`--jinja`).
-- Razonamiento explicito en modo pensamiento (*thinking*), con control mediante el parametro `reasoning_effort` (el autor recomienda `medium` cuando el presupuesto de tokens es ajustado).
-- Cierre controlado del bloque de razonamiento: la modificacion de v2 esta disenada para que el modelo entregue la respuesta final en lugar de quedarse sin presupuesto dentro del razonamiento.
-- Ausencia practica de rechazos: 0% de rechazos en las pruebas declaradas sobre peticiones daninas.
-- Decodificacion especulativa mediante prediccion multi-token (MTP) en el fichero correspondiente.
-- Capacidades matematicas y de codigo heredadas del modelo base: la model card cita resultados de MATH y HumanEval del Bonsai 2 original, aunque no se publican cifras propias del modelo modificado.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado especificamente; el modo pensamiento y la decodificacion especulativa son los unicos elementos relevantes.
-- Capacidades multilingues: no disponible.
-- Vision o audio: no disponible (el pipeline declarado es text-generation).
+- Generación de texto conversacional multi-turno con plantilla de chat compatible con Jinja.
+- Razonamiento explícito en modo *thinking*, con control de esfuerzo mediante `reasoning_effort` (por ejemplo, *medium*) pasado como kwarg de la plantilla.
+- Generación de código y matemáticas: el autor reporta puntuaciones de HumanEval (145 vs 158) y MATH (213 vs 238) en el modelo base con presupuesto de 4k tokens, comparando esfuerzo por defecto frente a *medium*.
+- Visión multimodal opcional mediante `--mmproj` con el proyector Q8_0: lectura de capturas de pantalla, transcripción de facturas y conteo de formas geométricas en pruebas de humo.
+- Decodificación especulativa vía cabezas MTP en el fichero `-MTP.gguf`, con una mejora de velocidad de decodificación de aproximadamente el 40% según el autor.
+- Comportamiento "uncensored": la abliteración elimina los rechazos en el espacio de pesos, sin system prompt adicional.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags de Hugging Face).
+- No se documenta soporte explícito de tool calling ni de flujos de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Red teaming y evaluacion de seguridad: el modelo genera respuestas detalladas a peticiones potencialmente daninas (puntuacion StrongReject de 0,941 en el conjunto de 150 peticiones), lo que permite construir conjuntos de datos adversarios para entrenar y validar clasificadores de seguridad y filtros de contenido.
-- Investigacion sobre mecanismos de rechazo: al ser un modelo abliterado con un porcentaje de modificacion documentado (99 de 851 tensores, 0,95% de los bytes), sirve como caso de estudio reproducible para analizar como se codifica el comportamiento de rechazo en los pesos y como se altera con ediciones minimas.
-- Generacion de datos sinteticos para alineamiento: puede usarse para producir pares de respuesta anadina/danina y alimentar pipelines de DPO, RLHF o classificacao, siempre dentro de un marco controlado y con revision humana.
-- Escritura creativa sin restricciones: ficcion, narrativa de genero, dialogos y contenido para videojuegos donde los rechazos de los modelos convencionales interrumpen el flujo creativo. El contexto configurable de 32.768 tokens permite mantener arcos narrativos largos.
-- Despliegue local en hardware de consumo: con 7,21 GB de pesos, el modelo cabe en GPU de 12 GB o superiores, lo que habilita asistentes y herramientas de generacion de texto en equipos de sobremesa o estaciones de trabajo sin conexion a servicios en la nube.
-- Inferencia de alto rendimiento con decodificacion especulativa: la variante MTP reduce el tiempo de decodificacion en torno a un 40%, lo que resulta adecuado para servicios con muchos usuarios concurrentes donde el coste por token generado es determinante.
-- Entornos aislados (air-gapped): al ser un GGUF ejecutable con llama.cpp, puede desplegarse en redes sin acceso a internet, algo relevante para laboratorios de seguridad que necesitan procesar material sensible sin enviarlo a APIs externas.
-- Evaluacion comparativa de cuantizaciones ternarias: sirve para medir el impacto de formatos de 1,75-2,1 bpw frente a cuantizaciones convencionales de 4-8 bits en tareas de razonamiento y generacion de codigo.
+- Investigación sobre alineación y abliteración: el modelo permite estudiar cómo la edición de un conjunto reducido de tensores (98 de 851) altera la tasa de rechazo sin reentrenar, comparando directamente contra el modelo base intacto y contra builds alternativos con la misma metodología.
+- Evaluación de robustez de filtros de seguridad: con una tasa de rechazo baja medida en StrongReject (0,941) y un 7% de preguntas seguras sin responder, sirve como caso adversario para calibrar clasificadores y guardrails de producción.
+- Razonamiento con presupuesto de tokens ajustado: configurando `reasoning_effort=medium` y 32k de contexto, el modelo mantiene la calidad en matemáticas y código donde el esfuerzo por defecto agota el presupuesto (0,977 frente a 0,513 en StrongReject con solo 4k tokens).
+- Procesamiento de documentos con visión: el proyector Q8_0 permite transcribir facturas de varias líneas o extraer texto de capturas de pantalla en pipelines de digitalización, aunque solo se ha validado con pruebas de humo y sin benchmarks formales (MMMU, OCRBench).
+- Despliegue en hardware de gama media: con 7,21 GB para el fichero principal y 7,66 GB con MTP, el modelo cabe en GPUs de consumo con 8-12 GB de VRAM, lo que facilita prototipado local de asistentes conversacionales sin censura.
+- Servicio de inferencia de baja latencia: el fichero MTP con decodificación especulativa reduce el tiempo por token aproximadamente un 40%, útil para chat interactivo en `llama-server` con `-ngl 99 -fa on`.
+- Análisis de conversaciones de comunidades: dado su origen en pruebas con capturas de Discord, encaja en la moderación o el análisis de hilos de chat donde se requiere contexto largo y lectura de imágenes adjuntas.
 
 ## Benchmarks y rendimiento
 
-Puntuaciones StrongReject sobre 150 peticiones daninas detalladas, con pensamiento activo, configuracion por defecto y presupuesto de 16.384 tokens. El mismo juez para todas las filas (0-1, mas alto es mejor):
+Datos publicados por el autor en la model card (StrongReject, 150 peticiones dañinas detalladas, thinking activado, ajustes por defecto, presupuesto de 16.384 tokens, mismo juez para todas las filas):
 
-| Build | StrongReject (0-1) | Sin respuesta (de 150) |
+| Build | StrongReject (0-1, mayor mejor) | Sin respuesta (de 150, menor mejor) |
 |---|---:|---:|
-| Este modelo (v2) | 0.941 | 7 |
-| Hikari07jp abliterated | 0.738 | 34 |
-| OS-Software Heretic | 0.723 | 41 |
-| Blackfrost DERISKED | 0.708 | 12 |
-| dealignai CRACK | 0.668 | 48 |
-| v1 de BoldingBuilds | 0.781 | 23 |
+| **Este modelo (v2)** | **0,941** | **7** |
+| Hikari07jp abliterated | 0,738 | 34 |
+| OS-Software Heretic | 0,723 | 41 |
+| Blackfrost DERISKED | 0,708 | 12 |
+| dealignai CRACK | 0,668 | 48 |
+| v1 del mismo autor | 0,781 | 23 |
 
-SimpleSafetyTests (100 peticiones daninas) y XSTest-safe (100 peticiones seguras), pensamiento activo, muestreador por defecto, semilla 0 y 4.096 tokens:
+En el conjunto dañino más fácil con ajustes por defecto, Hikari (0,834) y dealignai (0,866) superan a v2 (0,796), sin significación estadística según el autor; con `reasoning_effort=medium` todos los builds buenos alcanzan el techo. En preguntas seguras (XSTest-safe), v2 deja sin responder el 7%, frente al 8-14% de los demás builds de Bonsai abliterados probados.
 
-| Metrica | Stock | v1 | v2 | v2 (medium) |
-|---|---:|---:|---:|---:|
-| Rechazo, peticiones daninas | 84% | 0% | 0% | 0% |
-| Daninas: sin respuesta alguna | 0% | 27% | 15% | 0% |
-| Daninas: presupuesto de tokens agotado | 0% | 31% | 23% | 0% |
-| StrongReject (0-1) | 0.149 | 0.636 | 0.796 | 0.978 |
-| Peticiones seguras: sin respuesta | 6% | 20% | 7% | 0% |
-| Sobre-rechazo en peticiones seguras | 1.0% | 0.0% | 0.0% | 0.0% |
-| Longitud mediana del razonamiento (caracteres) | 1.038 | 6.531 | 3.802 | 1.730 |
+Capacidades del modelo base Bonsai 2 (presupuesto de 4k tokens, esfuerzo por defecto frente a *medium*):
 
-Diferencias declaradas: v2 frente a v1 en configuracion por defecto, +0,160 (p < 0,001); v2 en `medium` frente a v1 por defecto, +0,341 (p < 0,0001).
+| Benchmark | Default | Medium |
+|---|---:|---:|
+| MATH | 213 | 238 |
+| HumanEval | 145 | 158 |
 
-Efecto del presupuesto de tokens en el conjunto de 150 peticiones daninas: con 4.096 tokens y esfuerzo por defecto, 110 de 150 peticiones agotan el presupuesto y la puntuacion cae a 0,513; con `reasoning_effort=medium` y el mismo presupuesto, la puntuacion sube a 0,977.
-
-Datos citados del Bonsai 2 sin modificar (4k tokens, esfuerzo por defecto frente a medium): MATH 213 frente a 238 y HumanEval 145 frente a 158. Una medicion independiente de Killy (@net_termina) sobre el modelo sin modificar reporta HumanEval a 4k tokens con 137 de 164 en esfuerzo por defecto frente a 157 en medium.
-
-No se han publicado resultados de MMLU ni de otros benchmarks generales para este modelo en la informacion disponible.
+No se han publicado resultados de MMLU, MMMU, OCRBench ni GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: aproximadamente 7,2 GB para el fichero PQ2_0 simple y 7,7 GB para la variante MTP. El consumo total depende del contexto, del tamano del KV cache y de la implementacion.
-- GPU recomendadas: no especificadas por el autor. Por tamano de pesos, el modelo cabe en tarjetas de 12 GB o mas, como la RTX 3060 de 12 GB, RTX 4070, RTX 4080, RTX 4090, RTX 5090, A100, H100 y L40S; las tarjetas de gama alta permiten contextos mayores y mayor concurrencia.
-- Caben en GPU de consumo: si, con 12 GB o mas de VRAM, siempre que la longitud de contexto se ajuste a la memoria disponible.
-- Opciones de despliegue: es necesario el fork de llama.cpp de PrismML (https://github.com/PrismML-Eng/llama.cpp). Las compilaciones de llama.cpp mainline, Ollama y LM Studio no cargaran el formato PQ2_0. Probado con las etiquetas `prism-b10687-5d80cff` y `prism-b10743-adfffbe`; la etiqueta `prism-b10743-adfffbe` o posterior ejecuta la variante MTP tal cual.
-- Ejemplo de lanzamiento recomendado por el autor: `llama-server -m Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0.gguf -ngl 99 -fa on -c 32768 --jinja --chat-template-kwargs '{"reasoning_effort":"medium"}'`, con los valores de muestreo por defecto del fichero (temperatura 1.0, top-k 20, top-p 0.95).
-- Latencia y throughput: no se publican cifras absolutas. El unico dato disponible es que el fichero MTP decodifica aproximadamente un 40% mas rapido que el fichero sin tensores MTP.
+- VRAM estimada: 7,21 GB para el fichero PQ2_0 sin visión; 7,66 GB con MTP; añadir 0,63 GB si se carga el proyector de visión Q8_0. Con contexto de 32k y caché KV en FP16 hay que sumar varios GB adicionales según la implementación.
+- GPU recomendadas: cualquier GPU con al menos 8-10 GB de VRAM para el modelo solo; RTX 4090, A100 o H100 para servir con contexto completo y visión. Cabe en GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070.
+- Despliegue: exclusivamente con el fork de llama.cpp de PrismML (etiquetas `prism-b10687-5d80cff` y `prism-b10743-adfffbe` probadas; `prism-b10743-adfffbe` o superior ejecuta el fichero MTP tal cual). Las builds estándar de llama.cpp, Ollama y LM Studio no cargan el formato PQ2_0.
+- Comando de referencia: `llama-server -m ... -ngl 99 -fa on -c 32768 --jinja --chat-template-kwargs '{"reasoning_effort":"medium"}'`, con sampler en los valores por defecto del fichero (temperatura 1.0, top-k 20, top-p 0.95).
+- Latencia y throughput: no se publican cifras absolutas de tokens por segundo; solo la mejora relativa de aproximadamente un 40% en decodificación con el fichero MTP frente al fichero plano.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / bpw | Rendimiento (StrongReject, peticiones daninas) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B-Abliterated-v2 (este) | 26,9 mil millones | No disponible (config. recomendada: 32.768) | GGUF PQ2_0, ≈ 2,1 bpw | 0,941 (16k, 150 peticiones); 0,796 (4k, 100 peticiones) | Apache 2.0 | Hugging Face, requiere fork de llama.cpp |
-| Ternary-Bonsai-2-27B-Abliterated v1 | 26,9 mil millones | No disponible | GGUF PQ2_0 + MTP | 0,781 (16k, 150 peticiones); 0,636 (4k, 100 peticiones) | Apache 2.0 | Hugging Face, requiere fork de llama.cpp |
-| Ternary-Bonsai-2-27B-Abliterated PTQ1_0 (v1) | 26,9 mil millones | No disponible | GGUF PTQ1_0, 1,75 bpw | No disponible | Apache 2.0 | Hugging Face |
-| Bonsai 2 27B (stock, PrismML) | 26,9 mil millones | No disponible | GGUF ternario | 0,149 (4k, 100 peticiones); 84% de rechazos | Apache 2.0 | Hugging Face |
-| Hikari07jp abliterated | No disponible | No disponible | No disponible | 0,738 (16k, 150 peticiones); 0,834 en el conjunto facil | No disponible | No disponible |
-| dealignai CRACK | No disponible | No disponible | No disponible | 0,668 (16k, 150 peticiones); 0,866 en el conjunto facil | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | StrongReject (16k) | Licencia | Disponibilidad |
+|---|---|---:|---:|---|---|
+| Ternary-Bonsai-2-27B-Abliterated-v2 (este) | 26,9 B | 32.768 | 0,941 | Apache 2.0 | GGUF PQ2_0, fork PrismML |
+| Ternary-Bonsai-2-27B-Abliterated v1 | 26,9 B | 32.768 | 0,781 | Apache 2.0 | GGUF PQ2_0 y PTQ1_0 |
+| Hikari07jp abliterated (Bonsai 2) | no disponible | no disponible | 0,738 | no disponible | no disponible |
+| dealignai CRACK (Bonsai 2) | no disponible | no disponible | 0,668 | no disponible | no disponible |
+| Blackfrost DERISKED (Bonsai 2) | no disponible | no disponible | 0,708 | no disponible | no disponible |
 
-Diferencias significativas declaradas: v2 supera a v1 en el conjunto de 150 peticiones daninas (+0,160, p < 0,001). En el conjunto facil, Hikari (0,834) y dealignai (0,866) superan a v2 (0,796), aunque el autor indica que ninguna de las dos diferencias es estadisticamente significativa. Con `reasoning_effort=medium`, todos los builds abliterados comparados alcanzan el techo en ese conjunto.
+La comparativa se limita a los builds medidos por el autor en el mismo protocolo; no se dispone de datos de benchmarks estándar (MMLU, HumanEval, GSM8K) para los modelos alternativos que permitan una comparación de capacidad general.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterado: los rechazos se han eliminado deliberadamente (0% en las pruebas declaradas). No incorpora salvaguardas de contenido y respondera con detalle a peticiones potencialmente daninas. Su uso en produccion de cara al publico es legalmente arriesgado y puede entrar en conflicto con el Reglamento europeo de Inteligencia Artificial y con la normativa de servicios digitales.
-- Riesgo elevado de uso indebido: la propia model card presenta como metrica principal la calidad de las respuestas a peticiones daninas. Cualquier despliegue debe contemplar controles externos, registro de auditoria y supervision humana.
-- Riesgo de alucinacion: no se publican datos sobre tasas de alucinacion ni evaluaciones de veracidad. Como en cualquier modelo de 27B, la generacion de hechos debe verificarse.
-- Degradacion con presupuestos de tokens cortos: con 4.096 tokens y esfuerzo por defecto, 110 de 150 peticiones daninas agotan el presupuesto y la puntuacion cae de 0,977 a 0,513. El parametro `reasoning_effort=medium` es practicamente obligatorio si el contexto util es reducido.
-- Contexto maximo no documentado: la unica referencia disponible es el valor de 32.768 tokens de la configuracion recomendada; no se especifica la longitud maxima soportada por el modelo base.
-- Idiomas soportados no documentados: no hay informacion sobre cobertura multilingue ni sobre el comportamiento fuera del ingles.
-- Compatibilidad restringida: el formato PQ2_0 exige el fork de llama.cpp de PrismML. Ollama, LM Studio y llama.cpp mainline no pueden cargar los ficheros, lo que limita las opciones de despliegue y complica el mantenimiento a largo plazo.
-- Sesgos: no se han publicado evaluaciones de sesgo para este modelo ni para su base. La abliteracion puede alterar el comportamiento en dominios sensibles de formas no medidas.
-- Trazabilidad parcial: los cambios afectan al 0,95% de los bytes del fichero (99 de 851 tensores), por lo que la mayor parte de los pesos es identica a la publicacion de PrismML. Aun asi, la evaluacion se apoya en mediciones del propio autor y en un unico juez automatico (Qwen3.8-27B-OBLITERATED-Q8_0), sin validacion humana publicada.
-- Fechas de publicacion: la ficha de Hugging Face indica fechas de creacion y actualizacion de septiembre de 2026, posteriores a la informacion disponible en el momento de redactar esta ficha; conviene verificar el estado actual del repositorio.
+- La abliteración elimina los rechazos en el espacio de pesos: el modelo responderá a peticiones dañinas con alta probabilidad (0,941 en StrongReject). No es apto para despliegues públicos sin guardrails externos.
+- Riesgo de alucinación no cuantificado: no se han publicado evaluaciones de factualidad ni de calibración en la información disponible.
+- El modo *thinking* consume presupuesto de tokens de forma agresiva: con 4.096 tokens y esfuerzo por defecto, 110 de 150 peticiones agotan el presupuesto y la puntuación cae a 0,513. Es necesario usar `reasoning_effort=medium` o ampliar el límite.
+- La corrección del cierre de razonamiento se basa en el ajuste de una única fila de la capa de salida; su generalización fuera de los conjuntos de prueba del autor no está validada de forma independiente.
+- La visión solo se ha comprobado con pruebas de humo (captura de Discord, factura de 4 líneas, conteo de formas); no hay benchmarks de MMMU ni OCRBench y la calidad en documentos complejos es desconocida.
+- Dependencia de un fork específico de llama.cpp: la falta de soporte en herramientas estándar complica el despliegue en plataformas gestionadas y encarece el mantenimiento.
+- Idiomas soportados no documentados; no hay garantías sobre calidad multilingüe fuera del inglés.
+- Aunque la licencia es Apache 2.0, el uso comercial de un modelo abliterado puede incumplir políticas de plataformas de despliegue y acarrear obligaciones legales según la jurisdicción; conviene revisar los términos de servicio del proveedor de inferencia.
+- El autor advierte de que las ediciones se hacen sobre el empaquetado ternario original sin recuantizar; cualquier conversión posterior a otros formatos puede alterar el comportamiento medido.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF
+- Versión v1 (PQ2_0 + MTP): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF
+- Versión v2 PTQ1_0 (1,75 bpw): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PTQ1_0-GGUF
+- Versión v1 PTQ1_0: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
-- Version anterior (v1, PQ2_0 + MTP): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF
-- Version reducida (PTQ1_0, 1,75 bpw): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF
-- Informe comparativo de builds abliterados: https://huggingface.co/spaces/BoldingBuilds/bonsai-2-uncensored-shootout
-- Fork de llama.cpp de PrismML (requerido): https://github.com/PrismML-Eng/llama.cpp
-- Medicion independiente de Killy sobre HumanEval a 4k tokens: https://x.com/net_termina
+- Fork de llama.cpp de PrismML: https://github.com/PrismML-Eng/llama.cpp
+- Informe comparativo de builds uncensored de Bonsai 2: https://huggingface.co/spaces/BoldingBuilds/bonsai-2-uncensored-shootout
+- Prueba independiente de Killy (@net_termina) sobre HumanEval a 4k tokens: https://x.com/net_termina

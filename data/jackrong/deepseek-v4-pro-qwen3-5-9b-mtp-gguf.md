@@ -2,83 +2,83 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-Qwen3.5-9B-MTP-GGUF es un modelo de lenguaje de 9.000 millones de parámetros publicado por Jackrong en formato GGUF, pensado para inferencia eficiente en entornos de producción. Se trata de una destilación de las capacidades de razonamiento de DeepSeek sobre la base Qwen3.5-9B de unsloth, con un entrenamiento adicional mediante SFT y RL (GSPO) orientado a matemáticas, STEM, tool-use y function-calling. El sufijo MTP indica que incorpora Multi-Token Prediction, una técnica que acelera la generación al predecir varios tokens por paso.
+DeepSeek-V4-Pro-Qwen3.5-9B es un ajuste fino (fine-tune) de Qwen3.5-9B desarrollado por Jackrong, destilado a partir de respuestas generadas por DeepSeek-V4-Pro en modo "Max Effect". El modelo se centra en razonamiento matemático y STEM, conservando la eficiencia y facilidad de despliegue de la clase de 9B parámetros. Es relevante porque ofrece capacidades de razonamiento estructurado de un modelo profesor grande en un tamaño que cabe en hardware de consumo, con licencia Apache 2.0.
 
-El modelo está disponible en Hugging Face con más de 65.000 descargas y 74 likes, lo que sugiere una adopción temprana relevante. Su licencia Apache-2.0 (según los tags) permite uso comercial sin restricciones significativas, y su formato GGUF lo hace compatible con motores de inferencia como llama.cpp, Ollama o vLLM. Es especialmente relevante para desarrolladores que buscan un modelo de razonamiento de tamaño medio con soporte multilingüe (inglés, chino, coreano, japonés, español y ruso) y capacidades de agente.
+El modelo tiene 9.197.093.888 parámetros totales y se distribuye en formato GGUF, lo que facilita su ejecución con llama.cpp y Ollama. Incluye soporte para MTP (Multi-Token Prediction) y ha sido evaluado con rutas de despliegue vLLM NVFP4 y llama.cpp MTP-Q8_0. El repositorio ocupa 48.9 GB e incluye cuantizaciones para diferentes presupuestos de VRAM.
 
-## Especificaciones tecnicas
+La relevancia actual radica en la tendencia de destilar modelos de razonamiento grandes (DeepSeek-V4-Pro) en modelos compactos que pueden ejecutarse localmente, manteniendo capacidades de descomposición de problemas y solución multi-paso. El modelo soporta seis idiomas (inglés, chino, coreano, japonés, español y ruso) y está etiquetado para tool-use y function-calling.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (probablemente transformer, sin confirmar) |
-| Parametros totales | 9B (segun el nombre del modelo) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer (basado en Qwen3.5-9B), con soporte MTP |
+| Parámetros totales | 9.197.093.888 (9,2B) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (variantes no especificadas) |
-| Idiomas soportados | en, zh, ko, ja, es, ru (segun tags) |
-| Licencia | Apache-2.0 (segun tags; campo oficial no disponible) |
-| Formato de pesos | GGUF |
+| Tipos de cuantización | GGUF (incluye Q8_0 con MTP); NVFP4 evaluado en vLLM |
+| Idiomas soportados | en, zh, ko, ja, es, ru |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo principal); safetensors disponible en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura interna no se detalla en la informacion disponible, pero el nombre y los tags indican que parte de la base Qwen3.5-9B de unsloth, un transformer denso de 9B parametros. Sobre esta base se ha aplicado una destilacion de las capacidades de razonamiento de DeepSeek, seguida de un entrenamiento con SFT (supervised fine-tuning) y RL mediante GSPO (Grouped Stepwise Policy Optimization), una variante de optimizacion de politicas que refuerza pasos intermedios de razonamiento. El tag MTP sugiere la incorporacion de Multi-Token Prediction, que permite predecir multiples tokens por paso de decodificacion, reduciendo la latencia en generacion larga.
+El modelo se basa en la arquitectura transformer de Qwen3.5-9B, un modelo denso de 9,2B parámetros. Sobre esta base, Jackrong aplicó un proceso de destilación (distillation) utilizando respuestas generadas por DeepSeek-V4-Pro en modo "Max Effect" como señal de supervisión. El entrenamiento se centró en aproximadamente 250.000 muestras de matemáticas y STEM, con técnicas de SFT (Supervised Fine-Tuning) y RL (Reinforcement Learning) mediante GSPO (Group Sequence Policy Optimization), según las etiquetas del modelo.
 
-No se han publicado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset ni los detalles del proceso de destilacion. La informacion disponible tampoco especifica si se aplicaron tecnicas adicionales como DPO o RLHF convencional.
+Una innovación destacable es la inclusión de MTP (Multi-Token Prediction), que permite predecir varios tokens por paso de decodificación, mejorando el throughput en inferencia. El modelo ha sido evaluado con rutas de despliegue específicas: vLLM con cuantización NVFP4 y llama.cpp con MTP-Q8_0. A pesar de no incluir datos de SFT específicos de código, el autor reporta pequeñas ganancias en programación y uso de herramientas por transferencia entre dominios.
 
 ## Capacidades
 
-- Razonamiento y resolucion de problemas paso a paso, reforzado mediante GSPO.
-- Matematicas y dominios STEM, con entrenamiento especifico en estas areas.
-- Tool-use y function-calling, lo que permite integrar el modelo en pipelines que invocan APIs o herramientas externas.
-- Soporte de agentes y multi-step reasoning, gracias a la combinacion de razonamiento y tool-use.
-- Capacidades multilingues en ingles, chino, coreano, japones, español y ruso.
-- Generacion conversacional de multiples turnos, apta para chatbots y asistentes.
-- Generacion acelerada mediante MTP (Multi-Token Prediction), que reduce la latencia en textos largos.
+- Generación de texto y razonamiento estructurado con descomposición de problemas multi-paso.
+- Razonamiento matemático y resolución de problemas STEM (ciencia, tecnología, ingeniería y matemáticas).
+- Soporte de tool calling / function calling (etiquetado explícitamente).
+- Capacidades de agentes y razonamiento multi-paso.
+- Soporte multilingüe en inglés, chino, coreano, japonés, español y ruso.
+- Transferencia cross-domain: pequeñas mejoras en programación y uso de herramientas sin SFT específico de código.
+- Modo de razonamiento (reasoning) destilado del profesor DeepSeek-V4-Pro.
+- Compatible con endpoints (tag `endpoints_compatible`) y text-generation-inference.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada multilingue: el modelo puede gestionar conversaciones de varios turnos en seis idiomas, resolviendo consultas de soporte tecnico o comercial sin necesidad de un sistema de traduccion intermedio.
-- Generacion de codigo con tool calling: al soportar function-calling, puede integrarse en pipelines de CI/CD para autogenerar fragmentos de codigo, revisar cambios o invocar herramientas de build y test.
-- Asistente de matematicas y ciencias: su entrenamiento en STEM lo hace adecuado para resolver problemas de calculo, algebra o fisica, con razonamiento paso a paso explicable.
-- Agente autonomo de analisis de datos: combinando tool-use y razonamiento, puede consultar bases de datos, ejecutar scripts y resumir resultados en lenguaje natural.
-- Chatbot de documentacion tecnica: con su soporte multilingue y contexto conversacional, puede responder preguntas sobre APIs, frameworks o manuales en varios idiomas.
-- Sistema de tutoria educativa: el modelo puede guiar a estudiantes en la resolucion de ejercicios, explicando cada paso del razonamiento, gracias a su entrenamiento en matematicas y STEM.
+- Resolución de problemas matemáticos y STEM en entornos educativos: el modelo puede descomponer problemas complejos en pasos intermedios y generar soluciones razonadas, adecuado para tutores automáticos o generación de material didáctico.
+- Asistencia en investigación científica: ayuda a estructurar razonamientos sobre problemas de física, química o biología, aprovechando la destilación de un profesor entrenado en STEM.
+- Automatización de pipelines de análisis técnico: integración mediante tool calling para consultar calculadoras, bases de datos o APIs externas en flujos de trabajo científicos.
+- Agentes multi-paso para tareas de razonamiento: el modelo puede encadenar pasos de razonamiento y llamadas a herramientas, útil en orquestación de agentes con frameworks compatibles con OpenAI endpoints.
+- Despliegue local en estaciones de trabajo: al ser un modelo de 9,2B en GGUF, puede ejecutarse en GPUs de consumo para prototipado y pruebas de razonamiento sin depender de la nube.
+- Generación de código asistida por razonamiento: aunque no fue entrenado específicamente en código, la transferencia cross-domain permite su uso en tareas de programación que requieren descomposición lógica, integrable en pipelines de CI/CD mediante tool calling.
+- Atención al cliente técnica multilingüe: con soporte para seis idiomas y contexto conversacional, puede gestionar consultas técnicas multi-turno en español, inglés, chino, coreano, japonés y ruso.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni otras metricas estandar para este modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 9B parametros, una cuantizacion Q4_K_M requiere aproximadamente 5-6 GB de VRAM; Q8_0 alrededor de 9-10 GB. La cuantizacion exacta no se especifica en la informacion disponible.
-- GPU recomendadas: tarjetas consumer como RTX 3060 (12 GB), RTX 4070 o RTX 4090 pueden ejecutar el modelo en cuantizaciones bajas. Para cuantizaciones altas o mayor velocidad, se recomienda A100 o H100.
-- Si cabe en consumer GPU: si, en cuantizaciones Q4 o Q5 con 8-12 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI (Text Generation Inference) y cualquier motor compatible con GGUF.
-- Latencia y throughput: no disponibles. El MTP deberia reducir la latencia frente a modelos sin esta tecnica, pero no se aportan cifras concretas.
+- VRAM estimada para inferencia: un modelo de 9,2B parámetros en GGUF Q8_0 requiere aproximadamente 9-10 GB de VRAM; en Q4_K_M, alrededor de 5-6 GB.
+- GPU recomendadas: NVIDIA A100, H100 para despliegue en producción con vLLM (NVFP4 evaluado); RTX 4090, RTX 3090 para inferencia local en Q8_0.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con Q8_0 y en GPUs de 8 GB con cuantizaciones Q4.
+- Opciones de despliegue: llama.cpp (MTP-Q8_0 evaluado), vLLM (NVFP4 evaluado), Ollama (formato GGUF), text-generation-inference (tag incluido).
+- Latencia y throughput estimados: no disponibles; el soporte MTP está diseñado para mejorar el throughput en decodificación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-Qwen3.5-9B-MTP (este) | 9B | no disponible | Apache-2.0 | GGUF | Destilacion de DeepSeek sobre Qwen3.5, con MTP y GSPO |
-| Qwen3.5-9B (base, unsloth) | 9B | no disponible | Apache-2.0 | safetensors | Modelo base sin destilacion ni RL especifico |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | 32K (tipico) | MIT | safetensors/GGUF | Destilacion de DeepSeek-R1 sobre Qwen, razonamiento fuerte |
-
-La comparativa se basa en datos publicos generales; no se dispone de benchmarks propios para verificar diferencias de rendimiento. El modelo de Jackrong se diferencia por el entrenamiento con GSPO y MTP, que no estan presentes en las alternativas listadas.
+| DeepSeek-V4-Pro-Qwen3.5-9B | 9,2B | no disponible | Apache 2.0 | GGUF | Destilado de DeepSeek-V4-Pro, foco STEM/matemáticas |
+| Qwen3.5-9B (base) | 9,2B | no disponible | Apache 2.0 | safetensors/GGUF | Modelo base sin destilación de razonamiento |
+| Alternativas de 7-9B con razonamiento | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos sobre sesgos o alucinaciones especificos de este modelo; se asume riesgo similar a otros modelos de 9B entrenados con destilacion.
-- La longitud de contexto no esta documentada, lo que dificulta planificar su uso en tareas con ventanas largas.
-- El campo oficial de licencia aparece como "no disponible"; la licencia Apache-2.0 se infiere de los tags, por lo que conviene verificar antes de un despliegue comercial.
-- No hay benchmarks publicados, por lo que no se puede validar su rendimiento frente a alternativas.
-- Al ser una destilacion, puede heredar limitaciones del modelo base Qwen3.5-9B, como debilidades en idiomas poco representados o en dominios fuera de su dataset de entrenamiento.
-- El formato GGUF limita el uso de tecnicas avanzadas de servicion (como paged attention optimizada) en algunos motores, aunque vLLM y TGI lo soportan parcialmente.
+- Sesgos conocidos: no se documentan sesgos específicos en la información disponible; al ser destilado de un profesor, puede heredar sesgos de DeepSeek-V4-Pro.
+- Riesgo de alucinación: presente como en cualquier modelo generativo; el foco en matemáticas y STEM no elimina errores en razonamientos largos.
+- Limitaciones de contexto o idioma: la longitud de contexto no está documentada; el soporte multilingüe se limita a los seis idiomas listados (en, zh, ko, ja, es, ru).
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3.5-9B y del profesor DeepSeek-V4-Pro.
+- Caveat para producción: el modelo no fue entrenado con SFT específico de código; las ganancias en programación son por transferencia y pueden ser limitadas.
+- El repositorio ocupa 48,9 GB, lo que requiere espacio de almacenamiento considerable si se descargan todas las cuantizaciones.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B-MTP-GGUF
-- Modelo base (unsloth/Qwen3.5-9B): no disponible en la informacion proporcionada
-- Paper o documentacion tecnica: no disponible
-- Repositorio de codigo: no disponible
-- Demo: no disponible
+- Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
+- Perfil del colaborador (hardware): https://x.com/KyleHessling1

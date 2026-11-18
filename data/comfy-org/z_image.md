@@ -2,54 +2,78 @@
 
 ## Resumen
 
-Z-Image es un modelo de difusión para generación de imágenes, distribuido por Comfy-Org como archivos empaquetados para su uso directo en ComfyUI. Se publicó en enero de 2026 y ha acumulado más de 149.000 descargas y 256 likes en Hugging Face, lo que indica un interés notable en la comunidad. La model card proporcionada es muy escueta: únicamente indica que se trata de archivos reempaquetados para ComfyUI y da instrucciones de colocación en las carpetas del modelo, el codificador de texto y el VAE.
+Z-Image es un modelo de difusion para generacion de imagenes a partir de texto, desarrollado originalmente por Tongyi-MAI (Alibaba) y redistribuido por Comfy-Org en un formato de fichero unico optimizado para ComfyUI. Este repositorio no contiene el modelo original, sino una reempaquetado de los pesos en ficheros `safetensors` individuales listos para colocarse en los directorios `diffusion_models`, `text_encoders` y `vae` de ComfyUI, lo que elimina la friccion de conversion y carga para usuarios del ecosistema ComfyUI.
 
-A partir de los archivos incluidos, se puede inferir que el modelo principal es un archivo safetensors de 36 GB (probablemente en BF16), acompañado de un codificador de texto basado en Qwen 3 4B (con versiones FP4 y FP8) y un VAE separado. Sin embargo, no se dispone de información oficial sobre la arquitectura interna, los parámetros, el entrenamiento, la licencia o los idiomas soportados. Esta ficha se limita a los datos disponibles y marca como "no disponible" cualquier especificación no documentada.
+El modelo emplea un text encoder basado en Qwen 3 de 4.000 millones de parametros (disponible en variantes bf16, fp8 mixed y fp4 mixed) y un VAE independiente (`ae.safetensors`). El repositorio incluye dos variantes del UNet/difusion: una en bf16 completa (`z_image_bf16.safetensors`) y otra cuantizada a int8 con rotacion de convoluciones (`z_image_int8_convrot.safetensors`), pensada para reducir requisitos de VRAM manteniendo calidad.
 
-## Especificaciones técnicas
+Su relevancia actual radica en que Comfy-Org actua como canal de distribucion curado para ComfyUI: los workflows oficiales de texto a imagen (tanto en bf16 como en int8) estan publicados en el repositorio de plantillas, lo que permite a cualquier usuario reproducir la inferencia con un solo clic. La licencia Apache 2.0 facilita el uso comercial y la integracion en productos.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Modelo de difusion (UNet) con text encoder Qwen 3 4B y VAE independiente |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (se mencionan archivos BF16, FP4 y FP8 para el text encoder, pero no para el modelo principal) |
+| Tipos de cuantizacion | bf16 (UNet), int8 con convrot (UNet), fp8 mixed y fp4 mixed (text encoder) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (archivos .safetensors para el modelo, text encoder y VAE) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (ficheros unicos para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo (si es un transformer de difusión, un modelo de flujo, etc.) ni sobre los datos de entrenamiento, el número de tokens, el proceso de alineación o cualquier innovación técnica. La model card no incluye ningún detalle al respecto.
+La informacion disponible no detalla la arquitectura interna del modelo de difusion mas alla de que se distribuye como un unico fichero de difusion compatible con ComfyUI, acompanado de un text encoder Qwen 3 de 4.000 millones de parametros y un VAE (`ae.safetensors`). El pipeline es de texto a imagen: el text encoder procesa el prompt y el modelo de difusion genera la imagen latente que el VAE decodifica.
+
+No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, etc.). La variante int8 emplea una tecnica de rotacion de convoluciones (`convrot`) para la cuantizacion, segun el nombre del fichero.
 
 ## Capacidades
 
-No se dispone de información detallada sobre las capacidades del modelo en la documentación proporcionada. Dado que es un modelo de difusión para imágenes, se espera que pueda generar imágenes a partir de texto, pero no hay confirmación oficial ni detalles sobre funciones adicionales como tool calling, razonamiento multimodal o soporte de agentes.
+- Generacion de imagenes a partir de descripciones textuales (text-to-image) mediante el workflow oficial de ComfyUI.
+- Soporte de dos niveles de precision: bf16 completa e int8 cuantizada con convrot, para adaptarse a distintos presupuestos de VRAM.
+- Text encoder Qwen 3 4B con variantes de cuantizacion fp8 mixed y fp4 mixed, lo que permite reducir el consumo de memoria del encoder.
+- Integracion nativa con ComfyUI mediante plantillas de workflow publicadas (imagen Z-Image y Z-Image Int8).
+- No se documentan capacidades de edicion de imagen, inpainting, controlnet, tool calling, agentes ni multimodalidad de entrada.
 
 ## Casos de uso
 
-No se dispone de información concreta sobre casos de uso específicos en la documentación proporcionada. Al tratarse de un modelo de difusión de imágenes, los usos típicos podrían incluir generación artística, edición o síntesis de imágenes, pero no hay datos que respalden estas afirmaciones.
+- Generacion de ilustraciones para blogs y documentacion tecnica: el workflow oficial de texto a imagen permite producir imagenes de portada o diagramas ilustrativos a partir de prompts, integrándose en un pipeline de publicacion automatica.
+- Prototipado rapido de conceptos visuales en diseno de producto: con la variante int8 se puede iterar sobre decenas de prompts en una GPU de consumo, comparando resultados antes de fijar una direccion creativa.
+- Creacion de assets para videojuegos y aplicaciones: la licencia Apache 2.0 permite generar y distribuir imagenes derivadas en productos comerciales sin obligaciones de atribucion adicionales.
+- Generacion de material de marketing a escala: el repositorio incluye los pesos en formato de fichero unico, lo que simplifica el despliegue en servidores con ComfyUI y la generacion por lotes mediante la API de ComfyUI.
+- Experimentacion en investigacion sobre difusion: al estar los componentes separados (UNet, text encoder, VAE) y disponibles en varias precisiones, es util para estudiar el impacto de la cuantizacion int8/fp8/fp4 en la calidad de la imagen generada.
+- Educacion y demos de IA generativa: la instalacion por copia de ficheros en carpetas conocidas y los workflows listos para cargar reducen la barrera para talleres y cursos practicos.
+- Entornos con VRAM limitada: la variante int8 con convrot y el text encoder fp4 mixed permiten ejecutar el modelo en GPU de consumo donde la version bf16 no cabria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware en la documentación proporcionada. El tamaño del repositorio (36 GB) sugiere que el modelo principal requiere una GPU con al menos 24 GB de VRAM para inferencia en BF16, pero esto es una estimación no confirmada.
+- VRAM estimada: no disponible de forma oficial. El repositorio ocupa 36 GB e incluye todas las variantes (bf16 e int8 del UNet, tres variantes del text encoder y el VAE); la VRAM necesaria para inferencia es inferior al tamano del repositorio, pero no se detalla en la informacion proporcionada.
+- GPU recomendadas: no disponibles. La existencia de variantes int8, fp8 y fp4 sugiere orientacion a GPU de consumo, pero no se confirma en la informacion.
+- Cabe en GPU de consumo: probablemente si con la variante int8 y el text encoder cuantizado, aunque no se dispone de cifras oficiales.
+- Opciones de despliegue: ComfyUI es el destino principal (carpetas `models/diffusion_models`, `models/text_encoders` y `models/vae`). No se documentan otros runners (vLLM, llama.cpp, TGI, Ollama) en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre sesgos, riesgos de alucinación o limitaciones de contexto.
-- La licencia no está especificada, por lo que se desconoce si el uso comercial está permitido.
-- Al ser un modelo de difusión, es posible que presente limitaciones típicas como generación de detalles inconsistentes o dificultad con texto dentro de las imágenes, pero esto no está documentado.
-- La ausencia de una model card detallada dificulta la evaluación de su idoneidad para producción.
+- Este repositorio es un reempaquetado para ComfyUI; la fuente autoritativa y la documentacion del modelo original estan en `Tongyi-MAI/Z-Image`. Cualquier actualizacion o correccion del modelo debe consultarse alli.
+- No se documentan sesgos conocidos, tasas de alucinacion visual ni limitaciones de idioma en la informacion disponible; al ser un modelo de difusion, los sesgos del dataset de entrenamiento pueden reflejarse en las imagenes generadas.
+- La calidad y el comportamiento de la variante int8 con convrot pueden diferir de la bf16; no se han publicado metricas comparativas.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia y condiciones del modelo original en `Tongyi-MAI/Z-Image` antes de redistribuir pesos derivados.
+- El repositorio de 36 GB incluye multiples variantes; descargar solo los ficheros necesarios para el workflow elegido.
+- No se dispone de informacion sobre resoluciones de salida soportadas, pasos de muestreo recomendados ni schedulers compatibles.
 
 ## Enlaces
 
-- [Hugging Face - Comfy-Org/z_image](https://huggingface.co/Comfy-Org/z_image)
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/z_image
+- Modelo original: https://huggingface.co/Tongyi-MAI/Z-Image
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
+- Workflow texto a imagen (bf16): https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_z_image.json
+- Workflow texto a imagen (int8): https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_z_image_int8.json

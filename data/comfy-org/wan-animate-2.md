@@ -2,72 +2,87 @@
 
 ## Resumen
 
-Wan-Animate-2 es un modelo de animación publicado por Comfy-Org, la organización responsable del ecosistema ComfyUI, en el repositorio de Hugging Face con ID `Comfy-Org/Wan-Animate-2`. El nombre sugiere que se trata de la segunda versión de un modelo orientado a la animación de imágenes o vídeo, probablemente integrable en flujos de trabajo de ComfyUI. A fecha de su publicación (14 de julio de 2026), el modelo cuenta con 39 likes pero cero descargas, lo que indica que es un lanzamiento muy reciente o que aún no ha sido ampliamente adoptado.
+Wan Animate 2 es un modelo de difusión para vídeo orientado a la transferencia de movimiento (*motion transfer*), es decir, animar un sujeto o personaje a partir de una referencia de movimiento extraída de un vídeo. El modelo original es Wan2.2-Animate-2-14B, desarrollado por Wan-AI, y esta ficha corresponde al reempaquetado oficial de Comfy-Org para su uso directo en ComfyUI. El repositorio incluye los pesos en formato `safetensors` de un solo archivo, junto con los componentes auxiliares necesarios (text encoder, VAE, CLIP vision y un LoRA de destilación).
 
-La información disponible en Hugging Face es extremadamente limitada: no se especifican arquitectura, tamaño, contexto, pipeline ni idiomas soportados. El único dato técnico adicional es la etiqueta `license:apache-2.0`, que sugiere una licencia permisiva de código abierto, aunque el campo de licencia formal aparece como "no disponible". Dada la escasez de especificaciones públicas, esta ficha se basa únicamente en los metadatos del repositorio y no puede ofrecer detalles técnicos verificados.
+El interés actual del modelo radica en que Comfy-Org distribuye una versión lista para producción dentro del ecosistema ComfyUI, con variantes en bf16, int8 y destiladas, lo que permite reducir requisitos de cómputo manteniendo el pipeline completo. Con más de 925.000 descargas y 119,2 GB de repositorio, se ha consolidado como una de las referencias para animación de personajes con control de movimiento en flujos de trabajo basados en nodos.
+
+La información pública disponible es limitada: la model card se limita a indicar el reempaquetado y la estructura de carpetas, sin detallar arquitectura interna, datos de entrenamiento ni resultados de benchmarks. Los datos que se ofrecen a continuación proceden exclusivamente de la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
+| Arquitectura | modelo de difusión para vídeo (detalles internos no disponibles) |
+| Parametros totales | 14B (según denominación del modelo original Wan2.2-Animate-2-14B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | bf16, int8 (variantes `int8_convrot`), fp8 (text encoder), fp16 (text encoder) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (segun etiqueta del repositorio; campo formal no disponible) |
-| Formato de pesos | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (archivos únicos para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna de Wan-Animate-2. El nombre del modelo sugiere una continuacion de la serie Wan, que en el ecosistema de generacion de video suele emplear arquitecturas de difusion latente o transformadores de video, pero no hay datos confirmados. Tampoco se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.) seria especulativa y queda fuera del alcance de esta ficha.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El modelo pertenece a la familia Wan 2.2 y se distribuye como modelo de difusión para generación y animación de vídeo, con un tamaño de 14B parámetros según la nomenclatura del repositorio original (Wan-AI/Wan2.2-Animate-2-14B). El pipeline en ComfyUI combina un text encoder UMT5-XXL, un VAE (Wan2_1_VAE en bf16) y un codificador de visión CLIP (`clip_vision_h`), lo que sugiere un condicionamiento multimodal texto-imagen para la animación.
+
+El reempaquetado incluye dos variantes principales: una versión completa en bf16 y una versión destilada, además de sendas variantes en int8 con rotación de convoluciones (`convrot`). También se incluye el LoRA `lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16`, orientado a destilación de pasos y CFG para imagen-a-vídeo a 480p. No se dispone de datos sobre número de tokens de entrenamiento, composición del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- No se dispone de informacion verificada sobre las capacidades del modelo.
-- El nombre "Animate" sugiere que podria estar orientado a la animacion de imagenes o video, pero no hay documentacion que lo confirme.
-- No se ha confirmado soporte para generacion de texto, codigo, matematicas, vision, tool calling, agentes o capacidades multilingues.
-- No se ha confirmado la existencia de modos especiales como thinking mode, vision o audio.
+- Transferencia de movimiento: anima un sujeto o personaje a partir de una referencia de movimiento, según el flujo de trabajo "Motion Transfer" incluido.
+- Generación de vídeo condicionada por texto e imagen: el pipeline integra text encoder UMT5-XXL y CLIP vision.
+- Variantes destiladas: permiten reducir el número de pasos de muestreo y el coste computacional.
+- Cuantización int8: variantes `int8_convrot` para despliegue con menor huella de memoria.
+- Integración nativa con ComfyUI mediante plantillas de flujo de trabajo oficiales.
+- Soporte de LoRA para destilación de pasos y CFG en imagen-a-vídeo a 480p.
+- No se dispone de información sobre tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
 
 ## Casos de uso
 
-Dada la ausencia de especificaciones publicas, no es posible enumerar casos de uso concretos y verificados. Los siguientes son escenarios hipoteticos basados unicamente en el nombre del modelo y su integracion con ComfyUI, pero deben tratarse con cautela:
-
-- Animacion de imagenes estaticas en flujos de trabajo de ComfyUI: si el modelo sigue la linea de Wan-Animate, podria permitir animar personajes u objetos a partir de una imagen fija, pero no hay confirmacion.
-- Generacion de video corto a partir de prompts: posible pero no verificado.
-- Integracion en pipelines de postproduccion para motion graphics: especulativo.
-- Uso como componente en sistemas de generacion de contenido audiovisual: especulativo.
-
-En cualquier caso, se recomienda consultar el repositorio de Hugging Face y la documentacion de ComfyUI antes de considerar cualquier implementacion.
+- Animación de personajes para producción audiovisual: usar el flujo "Motion Transfer" para trasladar el movimiento de un actor real a un personaje generado, manteniendo la identidad visual del sujeto de referencia.
+- Previsualización rápida de animaciones: emplear la variante destilada junto con el LoRA de destilación de pasos para generar borradores de vídeo con menos pasos de muestreo antes de un render final en bf16.
+- Creación de contenido para redes sociales: animar retratos o ilustraciones estáticas a partir de clips de movimiento cortos, con el pipeline completo en ComfyUI.
+- Prototipado en estudios de animación: integrar el modelo en flujos de trabajo basados en nodos para iterar sobre poses y movimientos sin salir de ComfyUI.
+- Despliegue en hardware limitado: utilizar las variantes int8 `convrot` para reducir la VRAM necesaria en estaciones con GPU de gama alta de consumo.
+- Investigación en transferencia de movimiento: servir como base reproducible (licencia Apache 2.0) para experimentos de animación condicionada por vídeo y comparación con otros modelos de la familia Wan.
+- Automatización de pipelines de vídeo: encadenar el modelo con otros nodos de ComfyUI para postprocesado, interpolación o composición de escenas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre MMLU, HumanEval, GSM8K ni otras metricas estandar. Tampoco se dispone de comparativas con modelos similares.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. Dado que el repositorio pertenece a Comfy-Org, es probable que el modelo este disenado para ejecutarse dentro de ComfyUI, pero no hay confirmacion.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo de difusión de 14B en bf16 requiere del orden de 28 GB solo para los pesos, a lo que hay que sumar el text encoder UMT5-XXL y el VAE; las variantes int8 reducen aproximadamente a la mitad el peso del modelo de difusión.
+- GPU recomendadas: no disponibles en la documentación. Por tamaño, se sitúan en el rango de A100/H100 para bf16 sin cuantizar y de RTX 4090 o superiores para variantes int8 y destiladas.
+- GPU de consumo: las variantes int8 y destiladas están pensadas para acercar el modelo a GPU de consumo de gama alta; no se confirma compatibilidad con GPU de menor VRAM.
+- Opciones de despliegue: ComfyUI (soporte nativo mediante las plantillas oficiales); otros motores no están documentados en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El nombre sugiere una relacion con la serie Wan de Alibaba (como Wan2.1 o Wan2.2), pero no hay datos publicos que permitan comparar parametros, contexto, rendimiento o licencia. Se recomienda consultar los repositorios oficiales de Wan para obtener alternativas documentadas.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Wan Animate 2 (Comfy-Org) | 14B | no disponible | Apache 2.0 | Hugging Face, integrado en ComfyUI |
+| Wan2.2-Animate-2-14B (Wan-AI) | 14B | no disponible | no disponible en la información | Hugging Face (repositorio original) |
+| Otros modelos de animación por movimiento | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se puede evaluar la calidad, robustez ni seguridad del modelo.
-- Sesgos desconocidos: al no haber informacion sobre el dataset de entrenamiento, no es posible identificar sesgos potenciales.
-- Riesgo de alucinacion: no evaluable sin benchmarks.
-- Limitaciones de contexto o idioma: desconocidas.
-- Restricciones de licencia: la etiqueta indica Apache 2.0, que permite uso comercial y modificacion, pero el campo formal de licencia no esta disponible; se recomienda verificar antes de usar en produccion.
-- El modelo tiene cero descargas, lo que sugiere que no ha sido probado por la comunidad y podria contener errores o estar incompleto.
-- Fecha de creacion futura (2026): verificar la autenticidad del repositorio y su mantenimiento.
+- La model card no documenta sesgos, tasas de alucinación ni limitaciones idiomáticas; se desconoce el comportamiento del modelo fuera de los flujos de transferencia de movimiento.
+- Al ser un modelo de difusión de vídeo, puede generar artefactos temporales, inconsistencias entre fotogramas o pérdida de identidad en movimientos complejos; no hay datos oficiales sobre la magnitud de estos fallos.
+- El repositorio ocupa 119,2 GB, por lo que el almacenamiento y la transferencia de pesos son costosos.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia y condiciones del modelo original Wan-AI/Wan2.2-Animate-2-14B, ya que esta ficha solo cubre el reempaquetado.
+- El uso está orientado a ComfyUI; no se documentan integraciones con vLLM, TGI u otros motores de inferencia.
+- No hay información sobre requisitos mínimos de VRAM ni sobre el rendimiento en GPU de consumo.
+- El contenido generado puede plantear riesgos de suplantación de identidad o uso indebido de imágenes de personas; se recomienda aplicar salvaguardas en producción.
 
 ## Enlaces
 
-- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/Wan-Animate-2
-- No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Wan-Animate-2
+- Modelo original: https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
+- Plantilla de flujo "Wan Animate 2: Motion Transfer": https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan_animate2.json
+- Plantilla de flujo "Wan Animate 2 Distilled: Motion Transfer": https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_wan_animate2_distilled.json

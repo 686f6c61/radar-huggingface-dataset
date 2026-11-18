@@ -2,90 +2,90 @@
 
 ## Resumen
 
-Fight Flow V1 es un adaptador LoRA experimental para el modelo de generación de vídeo MiniMax-H3, publicado por el usuario JOKER141. Su objetivo no es enseñar nuevas coreografías de combate, sino modelar cómo dos o más personajes interactúan de forma continuada dentro de una misma pelea: iniciación, respuesta, contacto, consecuencia, cambio de iniciativa y encadenamiento con la siguiente acción. El adaptador se distribuye bajo los tags minimax-h3, lora, video-generation, weapon-combat, action y motion, y su repositorio ocupa aproximadamente 0,2 GB.
+Fight Flow es un LoRA experimental para el modelo de generación de vídeo MiniMax-H3, desarrollado por el usuario JOKER141 y publicado en Hugging Face. No enseña movimientos nuevos, sino que intenta que el modelo base aprenda a organizar interacciones de combate entre dos o más personajes: que la acción de uno genere la respuesta del otro, con causalidad ataque-defensa, contacto, desplazamiento forzado y transferencia de iniciativa. El objetivo declarado es pasar de "saber pegar" a "saber pelear" de forma continua, evitando el patrón de "ataco, reinicio la pose, vuelvo a atacar".
 
-El autor lo entrena con una variante denominada D-OPSD, en la que el Teacher puede referenciar directamente el vídeo objetivo en lugar de depender solo de la descripción textual. Esto permite capturar relaciones de movimiento difíciles de describir con palabras, como contactos, trayectorias, desplazamientos forzados, interacción de armas y transiciones de estado. El entrenamiento se realizó íntegramente en una RTX 6000D con picos de VRAM de unos 60 GB y un tiempo aproximado de 2 a 3 veces el de un LoRA habitual del autor.
+El adaptador se entrenó con una variante de entrenamiento denominada D-OPSD, en la que el Teacher puede referenciar directamente el vídeo objetivo en lugar de depender solo de los captions. Esto permite aprender relaciones de movimiento difíciles de describir textualmente: contacto, trayectorias, cambios de iniciativa y herencia de estado entre acciones. La versión V2 del LoRA corrige de forma notable los artefactos de la V1, en concreto los brazos y armas que aparecían como "fideos" y las distorsiones o desenfoques en los personajes.
 
-El adaptador se plantea como una capa de interacción que se combina con otros LoRA especializados (Combat, Weapon, GunFu, Motion Repair) más que como un sustituto de estos. El autor recomienda pesos de 0,65 en la primera pasada y 0,25 en la segunda. La información pública disponible no incluye licencia, benchmarks ni especificaciones del modelo base, por lo que varios apartados de esta ficha quedan marcados como no disponibles.
+El modelo se distribuye como adaptador (repo de 0,3 GB) sobre MiniMaxAI/MiniMax-H3, con licencia comunitaria de MiniMax y etiqueta de idioma inglés. Su uso previsto es como capa de interacción combinada con otros LoRA especializados (combate, armas, reparación de movimiento), no como sustituto de ellos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre MiniMax-H3, modelo de generación de vídeo; detalle interno no disponible |
-| Parametros totales | no disponible (tamaño del repositorio: 0,2 GB) |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de generación de vídeo MiniMax-H3 |
+| Parametros totales | no disponible (adaptador LoRA; el repo ocupa 0,3 GB) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (repositorio de 0,2 GB; formato concreto no especificado) |
+| Idiomas soportados | en |
+| Licencia | minimax-h3-community-license (licencia comunitaria de MiniMax-H3) |
+| Formato de pesos | no disponible (librería minimax-h3) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un adaptador LoRA, es decir, un conjunto de pesos de bajo rango que se acoplan sobre el modelo base MiniMax-H3 (MiniMaxAI/MiniMax-H3). El repositorio no documenta el rango, los módulos objetivo ni la configuración exacta del adaptador. La innovación declarada está en el método de entrenamiento D-OPSD: a diferencia de un LoRA convencional que se apoya principalmente en los captions, este esquema permite que el Teacher consulte directamente el vídeo objetivo durante el entrenamiento, lo que facilita aprender relaciones de movimiento que el texto describe mal (contacto, trayectoria, desplazamiento pasivo, interacción de armas, cambios de iniciativa y herencia de estado entre acciones).
+El adaptador es un LoRA sobre MiniMax-H3, un modelo de generación de vídeo. El autor no detalla la arquitectura interna del modelo base en la información disponible. La innovación principal está en el método de entrenamiento: D-OPSD, que a diferencia del entrenamiento LoRA convencional basado en captions permite que el Teacher consulte directamente el vídeo de entrenamiento objetivo. Con ello se aprenden relaciones de movimiento que el texto describe mal: contacto entre cuerpos o armas, trayectorias, desplazamientos pasivos, cambios de iniciativa y transiciones de estado entre acciones consecutivas.
 
-No se especifican en la información disponible el número de tokens o clips de entrenamiento, la composición del dataset, ni si se emplearon técnicas de alineación como RLHF o DPO. El único dato de cómputo aportado es que el entrenamiento se ejecutó en una RTX 6000D con picos de VRAM de aproximadamente 60 GB, con una duración estimada de 2 a 3 veces la de un LoRA estándar del mismo autor. El propósito explícito es mejorar la causalidad ataque-respuesta, la naturalidad de los cambios de iniciativa y la continuidad de estado, reduciendo secuencias del tipo "ataque, reinicio de pose, nuevo ataque".
+El entrenamiento se realizó íntegramente en una RTX 6000D, con picos de VRAM en torno a 60 GB y un tiempo aproximado de 2 a 3 veces el de un LoRA habitual del autor. No se especifican el número de pasos, el tamaño del dataset ni la composición de los datos de entrenamiento. El LoRA incorpora tres disparadores de interacción: "Unarmed combat interaction." (combate cuerpo a cuerpo, puños, patadas, agarres y proyecciones), "Melee weapon interaction." (líneas de arma blanca, bloqueos y contacto de armas) y "Gun-fu interaction." (control de boca de fuego, manejo de arma y disparo a corta distancia). El autor recomienda elegir el disparador por la lógica de interacción dominante, no por el equipo visible.
 
 ## Capacidades
 
-- Generación de vídeo de escenas de combate continuado sobre el modelo base MiniMax-H3.
-- Encadenamiento de acciones con herencia de estado: la posición, el centro de gravedad y la distancia de la acción previa sirven como punto de partida de la siguiente.
-- Tres disparadores de interacción: "Unarmed combat interaction" (puñetazos, patadas, agarres, proyecciones y control corporal), "Melee weapon interaction" (hojas, bastones, lanzas y otras líneas de arma cuerpo a cuerpo) y "Gun-fu interaction" (control de boca de fuego, manejo de arma, disparo a corta distancia e interacción arma-mano).
-- Mejora de la causalidad ataque-respuesta y de la naturalidad de los cambios de iniciativa en combates de dos o más personajes.
-- Gestión de entradas y salidas de oponentes en peleas multitudinarias, permitiendo que un enemigo se retire mientras otro entra en la refriega.
-- Organización de intercambios de combate completos a partir de un prompt corto más el disparador correspondiente.
-- No soporta, según la información disponible, tool calling, function calling, agentes ni modos de razonamiento; es un adaptador puramente generativo de vídeo.
+- Generación de vídeo con interacciones de combate continuas entre dos o más personajes.
+- Causalidad ataque-respuesta: la acción de un personaje genera la reacción del otro (bloqueo, esquiva, desvío, separación).
+- Continuidad de estado: la posición, el centro de gravedad, la distancia y la postura de una acción se heredan en la siguiente, evitando el reinicio a pose neutra.
+- Transferencia de iniciativa y cambios de protagonismo en combates multitudinarios (un oponente sale del intercambio y otro entra).
+- Tres modos de interacción mediante disparadores: combate desarmado, combate con arma cuerpo a cuerpo y gun-fu.
+- Funciona con prompts cortos más disparador, sin necesidad de descripciones extensas.
+- Capacidad de composición con otros LoRA especializados (combate, armas, gun-fu, reparación de movimiento) como capa de interacción.
+- No incluye tool calling, function calling, razonamiento multi-paso en texto ni capacidades de audio; es un adaptador exclusivamente de generación de vídeo.
 
 ## Casos de uso
 
-- Previsualización de escenas de acción en cine y animación: el adaptador puede generar intercambios de pelea con continuidad de estado para validar coreografía y ritmo antes del rodaje o la animación final, evitando el efecto de "pose neutral entre golpes".
-- Prototipado de animaciones de combate para videojuegos: sirve para producir referencias animadas de secuencias cuerpo a cuerpo o con armas que después se ajustan en el motor, gracias a la continuidad de iniciativa entre atacante y defensor.
-- Storyboards animados y previsualización (previs): permite convertir un guion de pelea en un vídeo de referencia con transiciones coherentes entre acciones, útil para equipos de dirección y de efectos.
-- Generación de contenido de acción para redes y cortometrajes: con un prompt corto y el disparador adecuado, el autor indica que el modelo ya organiza intercambios completos, lo que facilita clips de combate sin una descripción exhaustiva.
-- Diseño de secuencias con armas blancas o de fuego: mediante los disparadores "Melee weapon interaction" y "Gun-fu interaction" se pueden generar combates centrados en líneas de arma o en control de arma corta, respectivamente.
-- Pruebas de continuidad y montaje: al modelar el paso de una acción a la siguiente, resulta útil para estudiar cómo se encadenan planos de pelea y dónde conviene cortar o cambiar de oponente.
-- Combinación con otras capas LoRA: el autor lo plantea como capa de interacción junto a LoRA de Combat, Weapon, GunFu y Motion Repair, de modo que aquellos deciden "qué movimientos se conocen" y Fight Flow los une en una pelea continua.
+- Previsualización de escenas de acción para cine o animación: el LoRA organiza intercambios de golpes con causalidad y continuidad, lo que permite generar animáticas de peleas con menos iteraciones de corrección manual.
+- Prototipado de secuencias de artes marciales: con el disparador "Unarmed combat interaction." se pueden generar combinaciones de puños, patadas y proyecciones encadenadas para evaluar coreografías antes de producirlas.
+- Escenas de esgrima o combate con armas: con "Melee weapon interaction." se generan líneas de ataque, bloqueos y choques de armas con menor incidencia de artefactos en las hojas y astas, gracias a las correcciones de la V2.
+- Secuencias de acción con armas de fuego y combate cercano: el disparador "Gun-fu interaction." permite generar control de boca de fuego, disparos a corta distancia y transiciones entre disparo y cuerpo a cuerpo.
+- Generación de contenido para videojuegos: vídeos de referencia para animadores o para pipelines de motion matching, con combates multitudinarios donde los enemigos entran y salen del intercambio de forma natural.
+- Integración en flujos de postproducción con otros LoRA: usar Fight Flow como capa de interacción (peso 0,65 en primera pasada y 0,25 en segunda) sobre LoRA de combate y reparación de movimiento para producir peleas completas y coherentes.
+- Creación de material promocional o demos de acción: con un prompt breve y el disparador adecuado se obtienen intercambios de combate razonablemente completos sin ingeniería de prompts compleja.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas cuantitativas (FVD, CLIP, evaluaciones humanas u otras) ni comparaciones numéricas con alternativas.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa aproximadamente 0,2 GB, pero la inferencia requiere cargar el modelo base MiniMax-H3, cuyos requisitos de VRAM no se detallan en la información disponible.
-- Entrenamiento: el autor reporta una RTX 6000D con picos de VRAM de unos 60 GB y un tiempo de 2 a 3 veces su LoRA habitual. Esa cifra corresponde al proceso de entrenamiento, no a la inferencia.
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible para inferencia; para entrenamiento se cita la RTX 6000D.
-- Compatibilidad con GPU de consumo: no disponible (un pico de 60 GB en entrenamiento sugiere que el entrenamiento no cabe en GPU de consumo; la inferencia no está documentada).
-- Opciones de despliegue: no disponible (no se mencionan vLLM, llama.cpp, Ollama ni TGI; el adaptador depende del stack del modelo base MiniMax-H3).
-- Latencia y throughput: no disponible.
-- Ajustes de inferencia recomendados por el autor: peso del LoRA de 0,65 en la primera pasada y 0,25 en la segunda.
+- El adaptador pesa 0,3 GB; el requisito real de VRAM lo determina el modelo base MiniMax-H3, cuyas especificaciones no están disponibles en la información proporcionada.
+- Entrenamiento: el autor reporta picos de VRAM de aproximadamente 60 GB en una RTX 6000D, con un tiempo de 2 a 3 veces el de un LoRA habitual.
+- GPU recomendadas para entrenamiento: RTX 6000D (configuración usada por el autor); por el consumo de VRAM reportado, se requiere una GPU profesional de gama alta con al menos 60 GB.
+- VRAM para inferencia: no disponible.
+- Opciones de despliegue: la librería asociada es minimax-h3; no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a texto, no aplicables directamente a este adaptador de vídeo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones de adaptadores comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible. A continuación se contrastan únicamente los elementos declarados frente a la alternativa genérica de uso del modelo base sin este adaptador.
+No se dispone de información sobre otros LoRA de interacción de combate comparables para MiniMax-H3 en la documentación proporcionada. El propio autor menciona LoRA complementarios del mismo ecosistema (Combat, Weapon, GunFu, Motion Repair), pero sin datos de parámetros, contexto ni rendimiento que permitan una comparación cuantitativa.
 
-| Modelo | Tipo | Enfoque | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Fight Flow V1 (JOKER141) | LoRA sobre MiniMax-H3 | Interacción y continuidad de combate | en | no disponible | Hugging Face (0 descargas, 1 like) |
-| MiniMax-H3 (base) | Modelo de generación de vídeo | Generación de vídeo generalista | no disponible | no disponible | Hugging Face |
-| Otros LoRA de combate ("Combat", "Weapon", "GunFu", "Motion Repair") | LoRA sobre MiniMax-H3 | Movimientos especializados | no disponible | no disponible | Mencionados por el autor, sin enlaces |
+| Modelo | Base | Función | Licencia | Datos comparativos |
+|---|---|---|---|---|
+| Fight Flow (este) | MiniMax-H3 | Capa de interacción de combate | minimax-h3-community-license | no disponible |
+| Combat / Weapon / GunFu / Motion Repair (mencionados) | MiniMax-H3 | LoRA especializados en movimientos y reparación | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El propio autor lo califica como experimental y explícitamente no es un LoRA de "aceleración": no hace que los personajes se muevan más rápido, sino que reorganiza el encadenamiento de las acciones.
-- El repositorio no declara licencia, lo que impide determinar si se permite el uso comercial. Conviene contactar con el autor antes de usarlo en producción.
-- No hay benchmarks ni evaluaciones cuantitativas publicadas, por lo que la mejora descrita se basa únicamente en la observación cualitativa del autor.
-- El único idioma declarado es el inglés (en), lo que puede limitar prompts en otros idiomas.
-- El rendimiento depende del disparador elegido: el autor recomienda seleccionarlo según la lógica de interacción dominante (cuerpo a cuerpo, arma blanca o arma de fuego), no según el equipo visible en pantalla.
-- Se plantea como capa de interacción que debe combinarse con otros LoRA especializados; usarlo en solitario puede no dar los mismos resultados.
-- La información sobre el modelo base MiniMax-H3 (contexto, cuantizaciones, licencia) no está incluida en los datos disponibles, lo que añade incertidumbre sobre el despliegue.
-- No se documentan sesgos, tasas de alucinación ni comportamientos anómalos concretos; al ser un modelo generativo de vídeo, existe riesgo de artefactos visuales y de incoherencias de movimiento no evaluadas.
-- Fecha de creación registrada en Hugging Face: 2026-10-07; fecha de última actualización: 2026-10-07. El modelo acumula 0 descargas y 1 like, por lo que no hay validación por parte de la comunidad.
+- Modelo experimental: el autor lo describe explícitamente como un LoRA experimental de interacción de combate continuo.
+- La V1 presentaba problemas graves de armas convertidas en "fideos" y personajes distorsionados o borrosos; la V2 los reduce de forma significativa, pero no se garantiza su eliminación total.
+- No es un LoRA de velocidad: no acelera el movimiento, sino que reorganiza la continuidad entre acciones; esperar "más intensidad" por velocidad es un mal uso.
+- Depende de disparadores concretos ("Unarmed combat interaction.", "Melee weapon interaction.", "Gun-fu interaction."); elegir el disparador incorrecto puede degradar la coherencia de la interacción.
+- Está pensado para combinarse con otros LoRA especializados; usarlo aislado puede limitar la variedad de movimientos disponibles.
+- Pesos recomendados por el autor: 0,65 en primera pasada y 0,25 en segunda; valores fuera de ese rango no están validados.
+- Idioma soportado: inglés únicamente.
+- Licencia comunitaria de MiniMax-H3: es necesario revisar los términos del enlace de licencia antes de cualquier uso comercial, ya que las condiciones de la licencia comunitaria pueden imponer restricciones.
+- Riesgo de artefactos en anatomía y armas en escenas de combate complejas o multitudinarias, propio de la generación de vídeo.
+- No hay datos publicados de benchmarks, latencia ni requisitos de VRAM para inferencia.
 
 ## Enlaces
 
-- Repositorio del adaptador en Hugging Face: https://huggingface.co/JOKER141/H3-Fight-Flow-Fight-Interaction-LoRA
+- Modelo en Hugging Face: https://huggingface.co/JOKER141/H3-Fight-Flow-Fight-Interaction-LoRA
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Vídeo de demostración: https://huggingface.co/JOKER141/H3-Fight-Flow-Fight-Interaction-LoRA/resolve/main/assets/demo.mp4

@@ -2,103 +2,91 @@
 
 ## Resumen
 
-Qdrant/all_miniLM_L6_v2_with_attentions es un port a ONNX de sentence-transformers/all-MiniLM-L6-v2 modificado para devolver los pesos de atencion ademas del embedding. Lo publica Qdrant y su proposito es alimentar la busqueda BM42, la propuesta de recuperacion dispersa de Qdrant en la que la importancia de cada termino no se calcula con estadisticas de corpus (IDF) sino con los pesos de atencion del propio transformer.
+`Qdrant/all_miniLM_L6_v2_with_attentions` es un port a ONNX del conocido modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2`, modificado por Qdrant para devolver los pesos de atención además del embedding. Desarrollado por el equipo de Qdrant (motor de búsqueda vectorial open source escrito en Rust), el modelo resuelve un problema muy concreto: habilitar búsquedas híbridas del tipo BM42, una variante de BM25 que sustituye las frecuencias de término clásicas por pesos derivados de la atención del transformer.
 
-El modelo se apoya en el encoder MiniLM-L6, una destilacion de 6 capas y unos 22,7 millones de parametros con representaciones de 384 dimensiones, por lo que es extremadamente ligero: el repositorio completo ocupa 0,1 GB. Su salida no es un vector denso al uso, sino un vector disperso de pares indice/valor que Qdrant indexa como sparse vector configurado con Modifier.IDF.
+La relevancia del modelo es práctica: permite construir representaciones dispersas (sparse) de documentos que combinan la interpretabilidad y el sesgo hacia términos poco frecuentes de BM25 con la capacidad semántica de un transformer ligero. Al estar basado en MiniLM-L6-v2, mantiene un tamaño reducido (6 capas, ~22,7 M de parámetros) y un coste de inferencia bajo, lo que lo hace adecuado para indexar grandes volúmenes de documentos en pipelines de recuperación.
 
-Es relevante ahora porque resuelve un problema operativo concreto de los sistemas RAG: los esquemas tipo BM25 obligan a recalcular estadisticas globales del corpus cada vez que se anade o modifica un documento, lo que complica la ingesta en streaming. Al derivar los pesos de termino de la atencion, BM42 permite indexar documentos de forma incremental sin reestimar IDF. El modelo esta publicado bajo licencia Apache 2.0 y solo cubre ingles.
+El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato ONNX, y está pensado para usarse con FastEmbed y Qdrant configurando el modificador `Modifier.IDF` en la colección. Solo declara soporte para inglés.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT (MiniLM-L6, 6 capas) exportado a ONNX |
-| Parametros totales | ~22,7 M (heredados del modelo base sentence-transformers/all-MiniLM-L6-v2) |
-| Parametros activos | no aplica (no es una arquitectura MoE) |
-| Longitud de contexto | 256 tokens en la configuracion del modelo base; el encoder subyacente admite hasta 512 posiciones |
-| Tipos de cuantizacion | no se documentan variantes cuantizadas en el repositorio; al ser un grafo ONNX admite cuantizacion dinamica INT8 con ONNX Runtime |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | Transformer BERT (MiniLM-L6-v2), 6 capas, exportado a ONNX con salida de pesos de atención |
+| Parámetros totales | ~22,7 M (heredados de all-MiniLM-L6-v2; no confirmado explícitamente en la información proporcionada) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (MiniLM-L6-v2 original soporta hasta 256 tokens; no confirmado en la información proporcionada) |
+| Tipos de cuantización | no disponible (formato ONNX; FastEmbed puede aplicar cuantización, pero no se detalla) |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (repositorio de ~0,1 GB) |
-| Dimension del embedding denso | 384 (modelo base) |
-| Tipo de salida | vector disperso (indices y valores) derivado de los pesos de atencion |
-| Tamano de vocabulario | 30.522 tokens (WordPiece, BERT uncased en el modelo base) |
-| Nombre en FastEmbed | Qdrant/bm42-all-minilm-l6-v2-attentions |
-| Descargas / likes en Hugging Face | 223.349 / 16 |
-| Fecha de creacion / ultima actualizacion | 2024-05-09 / 2026-09-27 |
+| Formato de pesos | ONNX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base all-MiniLM-L6-v2: un encoder transformer de 6 capas con atencion multi-cabeza, dimension oculta de 384 y alrededor de 22,7 millones de parametros, obtenido mediante destilacion (autoatencion y conocimiento) a partir de un modelo profesor de mayor tamano. Sobre esa base, Qdrant ha reexportado y ajustado el grafo a ONNX para exponer no solo las representaciones, sino tambien las matrices de atencion necesarias para ponderar terminos. No se documenta en la informacion disponible ningun reentrenamiento adicional, ni fases de ajuste con RLHF o DPO (no aplican a un modelo de embeddings).
+El modelo es un port directo de `sentence-transformers/all-MiniLM-L6-v2`, un transformer encoder de tipo BERT con 6 capas y dimensión oculta de 384, destilado originalmente del modelo `microsoft/MiniLM-L12-H384-uncased` y afinado para similitud semántica de frases. La modificación introducida por Qdrant consiste en ajustar la exportación a ONNX para que el grafo devuelva también los pesos de atención de las capas internas, que son la señal que utiliza BM42 para calcular la importancia de cada token.
 
-La innovacion relevante no esta en el encoder sino en el uso que se hace de su senal interna. BM42 sustituye el IDF clasico, que es una estadistica global del corpus, por pesos derivados de la atencion de la consulta y del documento; de ahi que el modelo se distribuya especificamente para devolver esos pesos. En el ejemplo de la model card los indices devueltos superan ampliamente el tamano del vocabulario BERT (por ejemplo 1881538586 o 1932363795), lo que indica que se aplica una funcion de hash sobre los terminos en lugar de exponer los identificadores de vocabulario originales. La model card advierte ademas de que los vectores deben configurarse en Qdrant con Modifier.IDF; sin ese modificador la ponderacion de terminos no se aplica como espera el diseno de BM42.
+No se dispone de información sobre el dataset de entrenamiento específico de este port, ni sobre procesos de RLHF/DPO (no aplicables a un modelo de embeddings). La innovación técnica destacable no está en el entrenamiento sino en el uso: BM42 emplea los pesos de atención como proxy de la relevancia de un término, evitando el sesgo clásico de BM25 hacia documentos largos y mejorando la recuperación de términos raros sin renunciar a la eficiencia de los índices invertidos.
 
 ## Capacidades
 
-- Extraccion de caracteristicas y similitud de frases: genera representaciones para busqueda semantica y comparacion de textos.
-- Generacion de embeddings dispersos: produce pares indice/valor aptos para indices de vectores dispersos en Qdrant.
-- Exposicion de pesos de atencion: permite derivar la importancia de cada termino segun la atencion del modelo, que es la base de BM42.
-- Recuperacion lexica mejorada: al ponderar terminos con atencion, captura coincidencias exactas de vocabulario poco frecuente (nombres propios, identificadores, codigos) mejor que un embedding denso puro.
-- Indexacion incremental: al no depender de estadisticas globales del corpus, permite anadir y actualizar documentos sin recalcular IDF.
-- Integracion con FastEmbed: se consume mediante SparseTextEmbedding con el nombre Qdrant/bm42-all-minilm-l6-v2-attentions.
-- Idiomas: exclusivamente ingles.
-- No soporta generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling ni flujos de agente; es un modelo de representacion, no un modelo generativo.
+- Generación de embeddings de frase densos (384 dimensiones) para similitud semántica.
+- Exposición de pesos de atención por token, necesarios para calcular representaciones sparse tipo BM42.
+- Extracción de características (`feature-extraction`) y `sentence-similarity` como pipeline principal.
+- Compatible con `text-embeddings-inference` y con endpoints compatibles según los tags del repositorio.
+- Integración nativa con FastEmbed mediante `SparseTextEmbedding(model_name="Qdrant/bm42-all-minilm-l6-v2-attentions")`.
+- Soporte exclusivo de inglés.
+- No soporta tool calling, agentes, visión ni audio: es un modelo de embeddings, no generativo.
 
 ## Casos de uso
 
-- Recuperacion hibrida en Qdrant: combinar el vector disperso BM42 generado por este modelo con un embedding denso del mismo documento y fusionar ambos rankings; el sistema gana precision en coincidencias exactas sin perder recall semantico.
-- RAG sobre corpus que cambia con frecuencia: en escenarios de ingesta continua (noticias, tickets, catalogos) BM42 evita recalcular IDF en cada insercion, de modo que el pipeline de indexacion puede ejecutarse documento a documento.
-- Busqueda de identificadores y terminologia tecnica: consultas con numeros de referencia, nombres de producto o siglas, donde un modelo denso tiende a diluir la coincidencia exacta y el enfoque disperso ponderado por atencion la preserva.
-- Primera etapa de recuperacion con presupuesto de latencia ajustado: al ser un encoder de 6 capas y ~23 MB en INT8, puede ejecutarse en CPU dentro del propio nodo de indexacion y devolver candidatos para un reranker posterior.
-- Deduplicacion y agrupacion de documentos: usar la similitud entre representaciones para detectar duplicados casi exactos o agrupar textos cortos por similitud en pipelines de limpieza de datos.
-- Recomendacion basada en contenido: representar articulos, ofertas o entradas de catalogo y recuperar los vecinos mas proximos a los elementos con los que un usuario ha interactuado.
-- Filtrado y enrutado previo en asistentes: clasificar la intencion o el dominio de una consulta comparandola con ejemplos etiquetados antes de invocar un modelo mayor.
-- Analisis de atribucion de terminos: al exponer los pesos de atencion, permite inspeccionar que palabras de una consulta dominan la recuperacion, util para depurar y explicar resultados de busqueda.
+- Búsqueda híbrida en Qdrant con BM42: se indexan documentos como vectores sparse y se configura `Modifier.IDF` en la colección; el modelo aporta los pesos de atención que BM42 convierte en pesos de término, combinando recuperación léxica y semántica en una sola consulta.
+- Recuperación aumentada (RAG) sobre corpus en inglés: al generar representaciones sparse, el modelo permite recuperar pasajes relevantes con bajo coste computacional y buena cobertura de términos poco frecuentes, ideal para bases documentales grandes.
+- Indexación masiva de documentación técnica: con ~22,7 M de parámetros y pesos ONNX, el throughput es alto y el coste por documento mínimo, lo que permite procesar millones de chunks en pipelines batch con FastEmbed.
+- Motor de búsqueda interna para aplicaciones empresariales: se puede desplegar junto a Qdrant en infraestructura propia y servir consultas de similitud con latencia baja, sin depender de APIs externas.
+- Filtrado y deduplicación de datasets: los embeddings densos permiten agrupar documentos casi duplicados antes de indexarlos, reduciendo el ruido en el corpus de recuperación.
+- Sistemas de recomendación de contenido textual: la similitud entre embeddings de artículos, noticias o fichas de producto permite construir vecindarios de items relacionados con un coste de inferencia muy contenido.
+- Evaluación de recuperación léxica vs. semántica: al exponer los pesos de atención, es útil para experimentar con variantes de BM42 y comparar su comportamiento frente a BM25 clásico en tareas de IR.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de recuperacion (MRR, nDCG, recall) y la informacion de la busqueda web solo refleja datos de uso (223.349 descargas, 16 likes) y metadatos de repositorio.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 91 MB en FP32, 46 MB en FP16 y 23 MB en INT8 para los pesos, mas el overhead del runtime de ONNX y de las activaciones.
-- GPU recomendadas: ninguna en particular; el modelo cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4090, e incluso integradas) y tambien en GPU de datacenter (A100, H100) si se comparte con otros servicios.
-- Ejecucion en CPU: totalmente viable y es el escenario habitual de despliegue, dado el tamano del modelo y que la secuencia se trunca a 256 tokens.
-- Cabe en GPU consumer: si, sin restricciones practicas de memoria.
-- Opciones de despliegue: FastEmbed (via SparseTextEmbedding con el nombre Qdrant/bm42-all-minilm-l6-v2-attentions), ONNX Runtime, Qdrant como motor de indexacion con Modifier.IDF activado. La model card y las etiquetas del repositorio mencionan ademas compatibilidad con text-embeddings-inference, endpoints y despliegue en Azure.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 para los ~22,7 M de parámetros; en la práctica, unos pocos cientos de MB incluyendo buffers de activación.
+- GPU recomendadas: cualquier GPU moderna sirve; para alto throughput, A100, H100, L4 o RTX 4090. Para volúmenes moderados, RTX 3060/4060 o incluso T4.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 2 GB de VRAM; también funciona en CPU con rendimiento aceptable gracias al tamaño reducido.
+- Opciones de despliegue: FastEmbed (recomendado por el autor), ONNX Runtime, `text-embeddings-inference` y cualquier runtime compatible con ONNX.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; dependerá del hardware y del tamaño de lote.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo de recuperacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qdrant/all_miniLM_L6_v2_with_attentions | ~22,7 M | 256 tokens | Dispersa (BM42, pesos de atencion) | Apache 2.0 | Hugging Face, FastEmbed, Qdrant |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Densa (384 dimensiones) | Apache 2.0 | Hugging Face, sentence-transformers |
-| naver/splade-cocondenser-ensembledistil | ~110 M (BERT-base) | 512 tokens | Dispersa aprendida (SPLADE) | Apache 2.0 | Hugging Face |
-| BM25 | no aplica | no aplica | Lexica (TF-IDF/BM25) | no aplica | Cualquier motor de busqueda |
-
-Nota: los datos de las tres alternativas proceden de su documentacion publica y no de la informacion proporcionada en esta ficha; no se dispone de comparaciones de rendimiento entre ellas y el modelo descrito dentro de esa informacion.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Qdrant/all_miniLM_L6_v2_with_attentions | ~22,7 M | no disponible | en | Apache 2.0 | ONNX | Devuelve pesos de atención para BM42 |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | en | Apache 2.0 | safetensors, PyTorch | Modelo base; no expone atención de forma directa para BM42 |
+| Qdrant/bm25 | no aplica | no aplica | multilingüe (según tokenizador) | Apache 2.0 | no disponible | Implementación BM25 clásica en FastEmbed, sin componente neuronal |
+| BAAI/bge-small-en-v1.5 | ~33 M | 512 tokens | en | MIT | safetensors, ONNX | Embeddings densos con mejor rendimiento general en MTEB, pero sin señal de atención para sparse |
 
 ## Limitaciones y advertencias
 
-- Solo ingles: no se ha entrenado ni evaluado para otros idiomas, por lo que su uso en corpus en castellano degradara la calidad de la recuperacion.
-- Sesgos heredados: al derivar de un modelo destilado con datos web en ingles, puede reproducir sesgos de genero, origen o profesion presentes en esos datos.
-- No genera texto: no hay riesgo de alucinacion generativa, pero si de similitudes espurias o de ponderaciones de atencion poco intuitivas que no deben interpretarse como una explicacion causal.
-- Dependencia de Qdrant: la model card indica explicitamente que los vectores deben configurarse con Modifier.IDF. Sin esa configuracion el comportamiento del indice no coincide con el diseno previsto.
-- Acoplamiento a BM42: el modelo esta pensado para ese esquema de busqueda; reutilizarlo como embedder denso convencional no tiene sentido, ya que su salida es dispersa.
-- Longitud limitada: los textos se truncan a 256 tokens en la configuracion del modelo base, lo que descarta documentos largos sin un troceado previo.
-- Indices hasheados: los identificadores devueltos no son identificadores de vocabulario BERT, sino hashes, lo que complica la inspeccion manual o la reutilizacion fuera del ecosistema Qdrant/FastEmbed.
-- Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero conviene verificar las condiciones del modelo base y de los datos con los que se entreno.
-- Produccion: no se publican metricas de calidad ni de latencia en la informacion disponible, por lo que cualquier despliegue deberia acompanarse de una evaluacion propia sobre el corpus objetivo antes de sustituir un sistema BM25 en funcionamiento.
+- Solo soporta inglés; el rendimiento en otros idiomas no está garantizado ni documentado.
+- Es un modelo de embeddings, no generativo: no responde preguntas ni mantiene conversaciones.
+- Los pesos de atención no son una medida calibrada de relevancia; BM42 los usa como heurística y puede comportarse de forma distinta a BM25 en dominios muy específicos.
+- Requiere configurar `Modifier.IDF` en Qdrant para que los vectores sparse funcionen como se espera; sin esa configuración, los resultados de búsqueda pueden degradarse.
+- La longitud de contexto está limitada por el modelo base (habitualmente 256 tokens); documentos más largos deben trocearse.
+- Riesgo de alucinación no aplica en sentido estricto, pero sí de recuperar pasajes irrelevantes si el corpus no está bien troceado.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base original por si hubiera restricciones adicionales (no indicadas en la información disponible).
+- El repositorio ocupa 0,2 GB; verificar la versión concreta de ONNX antes de desplegar en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions
-- Archivos del repositorio: https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions/tree/main
+- Hugging Face: https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
-- Articulo sobre BM42: https://qdrant.tech/articles/bm42/
-- Repositorio de FastEmbed: https://github.com/qdrant/fastembed
-- Documentacion del modificador IDF en Qdrant: https://qdrant.tech/documentation/concepts/indexing/?q=modifier#idf-modifier
-- Grafo de arquitectura: https://hfviewer.com/Qdrant/all_miniLM_L6_v2_with_attentions
-- Ficha en Inferix: https://inferix.co/models/Qdrant/all_miniLM_L6_v2_with_attentions
-- Ficha en Endor Labs: https://www.endorlabs.com/ai-model/qdrant-all-minilm-l6-v2-with-attentions
+- Artículo BM42 de Qdrant: https://qdrant.tech/articles/bm42/
+- Documentación de Qdrant sobre el modificador IDF: https://qdrant.tech/documentation/concepts/indexing/?=modifier#idf-modifier
+- FastEmbed (GitHub): https://github.com/qdrant/fastembed
+- Qdrant (web oficial): https://qdrant.tech/
+- Qdrant (GitHub): https://github.com/qdrant/qdrant
+- Documentación de Qdrant: https://qdrant.tech/documentation/
+- Organización Qdrant en Hugging Face: https://huggingface.co/Qdrant

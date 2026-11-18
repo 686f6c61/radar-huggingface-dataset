@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 130,
-  "downloads_30d": 1395602,
+  "downloads_30d": 1437062,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -39,5 +39,11 @@
   "renamed_to": "Comfy-Org/Flux-2-Klein-4B",
   "renamed_at": "2026-11-11T02:32:35.652Z",
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    }
+  ]
 }

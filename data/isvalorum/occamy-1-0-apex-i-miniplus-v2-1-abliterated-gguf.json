@@ -64,7 +64,7 @@
     "imatrix"
   ],
   "likes": 14,
-  "downloads_30d": 17159,
+  "downloads_30d": 17910,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -84,31 +84,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ZDF Mediathek - DIGITAL FERNSEHEN Forum",
-      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek.164377/",
-      "snippet": "Nov 1, 2007 · AW: ZDF Mediathek ich finde die seite auch schrecklich. mit dem etwas älteren IE 5 tut sich bei mir gar nichts. firefox …"
-    },
-    {
-      "title": "ZDF Mediathek Downloads - DIGITAL FERNSEHEN Forum",
-      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek-downloads.417263/",
-      "snippet": "May 2, 2020 · Hallo Leute, ich hoffe ich bin hier richtig. Ich benutze ein neues Chromebook und habe mal eine Folge des \"Alten\" in …"
-    },
-    {
-      "title": "Beiträge von Dyran Cutler - VLC Player Forum",
-      "url": "https://www.vlc-forum.de/user-post-list/14864-dyran-cutler/",
-      "snippet": "VLC Player Forum Sie haben noch kein Benutzerkonto auf unserer Seite? Registrieren Sie sich kostenlos und nehmen Sie an …"
-    },
-    {
-      "title": "Beiträge von Marcus Rull - VLC Player Forum",
-      "url": "https://www.vlc-forum.de/user-post-list/14863-marcus-rull/",
-      "snippet": "VLC Player Forum Sie haben noch kein Benutzerkonto auf unserer Seite? Registrieren Sie sich kostenlos und nehmen Sie an …"
-    },
-    {
-      "title": "ZDF Mediathek | Seite 57 | DIGITAL FERNSEHEN Forum",
-      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek.421029/page-57",
-      "snippet": "Oct 13, 2020 · Das liegt aber nicht an der Mediathek, sondern am Inhalt. Ich nutze ja nur die ZDF-Mediathek, weil die vernünftig …"
-    }
-  ]
+  "sources": []
 }

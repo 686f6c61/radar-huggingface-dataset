@@ -5,7 +5,7 @@
   "author": "ChuckMcSneed",
   "url": "https://huggingface.co/ChuckMcSneed/gemma-4-12B-it-uncensor-lora-gguf",
   "created_at": "2026-11-17T07:55:50.000Z",
-  "updated_at": "2026-11-17T08:01:30.000Z",
+  "updated_at": "2026-11-17T08:24:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,18 +13,22 @@
   "languages": [],
   "tags": [
     "gguf",
+    "uncensored",
+    "uncensor",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": 96000,
   "parameters_human": "96000",
   "storage_bytes": 385184,
   "storage_human": "385184 B",
   "context_length": null,
-  "base_model": null,
+  "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf"
   ],

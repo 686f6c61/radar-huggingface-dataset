@@ -13,8 +13,8 @@
   "languages": [],
   "tags": [
     "text-to-image",
-    "base_model:Comfy-Org/z_image_turbo",
-    "base_model:finetune:Comfy-Org/z_image_turbo",
+    "base_model:Comfy-Org/Z-Image-Turbo",
+    "base_model:finetune:Comfy-Org/Z-Image-Turbo",
     "region:us"
   ],
   "likes": 15,

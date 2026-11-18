@@ -2,74 +2,89 @@
 
 ## Resumen
 
-El modelo `Comfy-Org/void-model` es un paquete de pesos reempaquetado para su uso en ComfyUI, basado en el modelo original VOID (Video Object and Interaction Deletion) desarrollado por Netflix. VOID es un modelo de difusión de video diseñado para eliminar objetos o interacciones no deseadas en secuencias de video, una tarea de edición de video que requiere comprender tanto la estructura espacial como la temporal de la escena. El paquete incluye los pesos de las dos pasadas del modelo (pass1 y pass2), junto con componentes auxiliares como el modelo de flujo óptico RAFT, un codificador de texto T5 y un VAE de CogVideoX.
+VOID (Video Object and Interaction Deletion) es un modelo de difusión para la eliminación de objetos e interacciones en vídeo, desarrollado originalmente por Netflix y republicado por Comfy-Org como un paquete de archivos compatibles con ComfyUI. El repositorio `Comfy-Org/void-model` no contiene pesos originales nuevos, sino una reempaquetación en formato `diffusion-single-file` de los pesos de `netflix/void-model`, junto con las dependencias necesarias (RAFT para flujo óptico, el text encoder T5-XXL y el VAE de CogVideoX) para ejecutar el pipeline completo dentro de ComfyUI.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está pensado para integrarse en el ecosistema ComfyUI, lo que facilita su uso en flujos de trabajo de edición de video sin necesidad de escribir código. Aunque no se proporcionan especificaciones técnicas detalladas en la información disponible, el tamaño del repositorio (32,5 GB) sugiere que se trata de un modelo de difusión de gran escala, probablemente basado en la arquitectura de CogVideoX. Su relevancia actual radica en la creciente demanda de herramientas de edición de video automáticas y controlables, especialmente en el ámbito de la postproducción y la generación de contenido.
+La tarea que resuelve es la edición de vídeo mediante inpainting temporal: dado un vídeo y una máscara que delimita un objeto o una interacción, el modelo reconstruye coherentemente el fondo a lo largo de los fotogramas, manteniendo la consistencia temporal. Se distribuye en dos pases (`void_pass1.safetensors` y `void_pass2.safetensors`), lo que sugiere un refinamiento progresivo del resultado. Es relevante para desarrolladores de posproducción y pipelines de generación de vídeo porque integra una capacidad de edición temporal compleja en un flujo de trabajo estándar de ComfyUI, con licencia Apache 2.0 y un tamaño de repositorio de 32,5 GB.
+
+La información pública disponible sobre arquitectura interna, número de parámetros, datos de entrenamiento y benchmarks es muy limitada; esta ficha se limita a los datos verificables del repositorio y de la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion de video (basado en CogVideoX, con dos pasadas de refinamiento) |
+| Arquitectura | Modelo de difusión para vídeo (inpainting temporal); arquitectura interna no detallada en la información disponible |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (los pesos se proporcionan en safetensors, probablemente fp16) |
-| Idiomas soportados | no disponible (el codificador de texto T5 sugiere soporte multilingue, pero no se especifica) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de vídeo; depende de la longitud de clip soportada por el pipeline) |
+| Tipos de cuantizacion | no disponible; el repo incluye pesos en safetensors, con T5-XXL en fp16 |
+| Idiomas soportados | no disponible (el condicionamiento textual usa T5-XXL) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (archivos individuales para cada componente) |
+| Formato de pesos | safetensors (`diffusion-single-file` para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo, pero los archivos incluidos permiten inferir una composicion modular. El modelo principal se divide en dos pasadas (`void_pass1.safetensors` y `void_pass2.safetensors`), lo que sugiere un enfoque de refinamiento progresivo: la primera pasada probablemente genera una eliminacion inicial del objeto, y la segunda refina los detalles temporales y espaciales. Se incluye un modelo de flujo optico RAFT (Large, con pesos `raft_large_C_T_SKHT_V2-ff5fadd5.safetensors`) para estimar el movimiento entre fotogramas, lo que es critico para mantener la coherencia temporal al eliminar objetos en movimiento. El codificador de texto es T5 (variante XXL en fp16, `t5xxl_fp16.safetensors`), que se utiliza para condicionar la generacion mediante descripciones textuales. El VAE es el de CogVideoX (`cogvideox_vae.safetensors`), lo que indica que la arquitectura de difusion subyacente esta relacionada con CogVideoX, un modelo de generacion de video de ZAI.
+VOID se presenta como un modelo de difusión orientado a vídeo, empaquetado en dos etapas (`void_pass1` y `void_pass2`), lo que apunta a un esquema de generación en dos pases con refinamiento. El pipeline completo requiere componentes auxiliares: un modelo de flujo óptico RAFT Large (`raft_large_C_T_SKHT_V2`) procedente de Princeton-VL, el text encoder T5-XXL en fp16 y el VAE de CogVideoX-2B, lo que indica que el condicionamiento textual y la codificación latente del vídeo se apoyan en la familia CogVideoX.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO. El modelo original de Netflix (enlace en la model card) podria contener mas detalles, pero no estan disponibles en la informacion proporcionada.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO. La model card del repositorio de Comfy-Org es únicamente una guía de instalación y no documenta detalles de entrenamiento. Cualquier afirmación sobre innovaciones técnicas internas (atención lineal, decodificación especulativa, etc.) no está respaldada por la información disponible.
 
 ## Capacidades
 
-- Eliminacion de objetos y interacciones en secuencias de video, manteniendo la coherencia temporal.
-- Edicion de video basada en instrucciones textuales (gracias al codificador T5).
-- Refinamiento en dos pasadas para mejorar la calidad del resultado.
-- Integracion con ComfyUI, lo que permite construir flujos de trabajo visuales sin programacion.
-- Uso de flujo optico (RAFT) para manejar objetos en movimiento y fondos dinamicos.
-- Capacidad de procesar video completo (no solo imagenes individuales), gracias a la arquitectura de difusion de video.
+- Eliminación de objetos en vídeo (video object removal) mediante inpainting temporal guiado por máscara.
+- Eliminación de interacciones: reconstrucción del fondo cuando un objeto interactúa con otro (por ejemplo, una persona manipulando un objeto), según el nombre del modelo.
+- Coherencia temporal a lo largo de los fotogramas, apoyada por el modelo de flujo óptico RAFT incluido en el pipeline.
+- Condicionamiento textual mediante T5-XXL, lo que permite guiar la reconstrucción con prompts de texto.
+- Integración nativa en ComfyUI mediante un workflow de plantilla (`utility_void_video_inpainting.json`).
+- Procesamiento en dos pases para refinamiento del resultado.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-step, visión general, audio ni modo thinking; es un modelo generativo de vídeo, no un LLM.
 
 ## Casos de uso
 
-- Postproduccion cinematografica: eliminar elementos no deseados (micrófonos, cables, personas de fondo) de tomas de video sin necesidad de re-grabar.
-- Creacion de contenido para redes sociales: limpiar videos grabados con el movil, eliminando objetos que distraen o personas que aparecen accidentalmente.
-- Edicion de video publicitario: retirar logotipos o marcas de agua de material de archivo, siempre que se tenga derecho a hacerlo.
-- Restauracion de video historico: eliminar artefactos o elementos anacronicos en grabaciones antiguas.
-- Automatizacion de flujos de trabajo en estudios de produccion: integrar el modelo en pipelines de ComfyUI para procesar lotes de video de forma consistente.
-- Investigacion en vision por computador: utilizar el modelo como referencia para estudiar tecnicas de edicion de video basadas en difusion y flujo optico.
+- Posproducción audiovisual: eliminar objetos no deseados (micrófonos, cables, señalización, marcas) de planos rodados, usando la máscara sobre el objeto y dejando que el modelo reconstruya el fondo de forma coherente entre fotogramas.
+- Limpieza de material de archivo: retirar logotipos o marcas de agua de vídeos históricos o de stock antes de reutilizarlos, con el workflow de inpainting de ComfyUI.
+- Protección de privacidad: difuminar o eliminar rostros, matrículas o identificadores personales en grabaciones de vigilancia o vídeos divulgativos, sustituyéndolos por fondo reconstruido en lugar de un simple desenfoque.
+- VFX y previsualización: generar placas limpias (clean plates) para composición, eliminando un actor o un elemento de atrezo de un plano para insertar después un elemento digital.
+- Creación de contenido para redes: retirar productos competidores o elementos distractores en vídeos comerciales sin volver a rodar.
+- Investigación en edición de vídeo: servir como baseline reproducible para experimentos de inpainting temporal, dado que el pipeline completo (RAFT, T5-XXL, VAE CogVideoX) está empaquetado y es ejecutable en ComfyUI.
+- Automatización de pipelines de datos: limpiar datasets de vídeo de elementos no deseados antes de usarlos para entrenar otros modelos generativos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K ni metricas especificas de edicion de video (como PSNR, SSIM o FVD). Se recomienda consultar el repositorio original de Netflix (enlace en la seccion de enlaces) para posibles evaluaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: dado el tamaño del repositorio (32,5 GB) y el uso de pesos en fp16, se estima que se necesitan al menos 32 GB de VRAM para cargar todos los componentes simultaneamente. Sin embargo, es posible que el modelo se ejecute con menos memoria si se cargan los componentes de forma secuencial o se utiliza cuantizacion (no incluida en este paquete).
-- GPU recomendadas: NVIDIA A100 (40 GB o 80 GB), H100, o GPUs de consumo con 24 GB o mas, como la RTX 4090, aunque podria requerir optimizaciones adicionales.
-- No se garantiza su funcionamiento en GPUs de gama baja (8-12 GB) debido al tamaño de los pesos.
-- Opciones de despliegue: ComfyUI es el entorno principal, pero los archivos safetensors pueden ser utilizados con otras herramientas que soporten difusion de video, como Diffusers (si se adaptan los pesos). No se menciona soporte para vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
-- Latencia y throughput: no disponibles. El procesamiento de video es computacionalmente intensivo y dependera de la resolucion, el numero de fotogramas y la GPU utilizada.
+- VRAM estimada: no disponible de forma oficial. El repositorio ocupa 32,5 GB e incluye dos checkpoints de difusión más T5-XXL fp16, RAFT y el VAE de CogVideoX; en la práctica, la inferencia de vídeo con difusión y T5-XXL fp16 requiere GPUs de gama alta.
+- GPU recomendadas: no especificadas por el autor; por el perfil del pipeline (difusión de vídeo + T5-XXL fp16) se encuadra en el rango de A100/H100 o GPUs consumer de 24 GB o más, aunque este dato no está confirmado en la información disponible.
+- ¿Cabe en consumer GPU?: no confirmado; el tamaño conjunto de los componentes hace improbable su ejecución en GPUs de menos de 12-16 GB sin cuantización adicional, dato no documentado.
+- Opciones de despliegue: ComfyUI (soporte nativo mediante los archivos `diffusion_models`, `optical_flow`, `text_encoders` y `vae`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con otros modelos de edicion de video. Modelos como Runway Gen-2 o Pika Labs ofrecen funcionalidades similares, pero son propietarios y no publican especificaciones tecnicas comparables. En el ambito open source, existen modelos como Stable Video Diffusion o modelos de eliminacion de objetos basados en inpainting, pero no se dispone de datos de rendimiento para comparar. Por tanto, la comparativa se limita a indicar que VOID se basa en CogVideoX y utiliza RAFT, lo que lo diferencia de enfoques puramente basados en inpainting por fotograma.
+| Modelo | Tipo | Parametros | Contexto / longitud | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| VOID (Comfy-Org/void-model) | Difusión de vídeo para inpainting temporal | no disponible | no disponible | Apache 2.0 | Hugging Face (reempaquetado para ComfyUI) |
+| CogVideoX-2B (zai-org) | Difusión de vídeo texto-a-vídeo | ~2B (según nombre del modelo) | no disponible | Apache 2.0 | Hugging Face |
+| RAFT Large (princeton-vl) | Flujo óptico (componente auxiliar) | no disponible | no aplica | BSD-3-Clause | Hugging Face / GitHub |
+
+No se dispone de datos de rendimiento comparativo entre VOID y alternativas de inpainting de vídeo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se dispone de informacion sobre sesgos del modelo, pero al ser un modelo de difusion entrenado con datos de video, podria reflejar sesgos presentes en los datos de entrenamiento (por ejemplo, en la representacion de personas o escenas).
-- Riesgo de alucinacion visual: al eliminar objetos, el modelo podria generar artefactos o rellenar regiones de forma incorrecta, especialmente en escenas complejas o con movimiento rapido.
-- Limitaciones de contexto: al ser un modelo de video, la longitud de la secuencia procesable esta limitada por la memoria de la GPU y la arquitectura, aunque no se especifica el numero maximo de fotogramas.
-- Restricciones de licencia: aunque la licencia es Apache 2.0, el uso de los componentes RAFT (licencia BSD-3) y CogVideoX (Apache 2.0) debe respetar sus respectivos terminos. El modelo original de Netflix tambien es Apache 2.0, pero se recomienda revisar las condiciones de uso comercial.
-- Para produccion, es necesario validar la calidad del resultado en cada caso de uso, ya que la eliminacion de objetos puede fallar en condiciones de iluminacion adversa, oclusiones o movimientos complejos.
+- La información técnica pública es escasa: no hay datos de parámetros, dataset de entrenamiento ni evaluación cuantitativa, lo que dificulta estimar su calidad frente a alternativas.
+- Riesgo de artefactos de reconstrucción en regiones con movimiento complejo, oclusiones o interacciones entre varios objetos; no hay métricas publicadas que lo cuantifiquen.
+- El modelo está diseñado para eliminar objetos e interacciones; no debe esperarse un comportamiento fiable fuera de esa tarea (generación libre de vídeo, edición estructural, etc.).
+- El pipeline depende de componentes externos (RAFT, T5-XXL, VAE de CogVideoX); cambios de versión en estos componentes pueden alterar los resultados.
+- Licencia Apache 2.0 para los pesos de VOID, pero conviene verificar las licencias de los componentes auxiliares (RAFT es BSD-3-Clause; CogVideoX-2B es Apache 2.0 según la model card).
+- No se documentan sesgos específicos, pero al ser un modelo de difusión entrenado con datos no especificados, puede heredar sesgos de su corpus de entrenamiento.
+- El repositorio es una reempaquetación de Comfy-Org, no el repositorio oficial de Netflix; para uso en producción conviene contrastar con `netflix/void-model`.
 
 ## Enlaces
 
-- Repositorio del modelo en Hugging Face: https://huggingface.co/Comfy-Org/void-model
-- Modelo original de Netflix: https://huggingface.co/netflix/void-model
-- Repositorio de RAFT (flujo optico): https://github.com/princeton-vl/raft
-- Modelo CogVideoX-2b (base del VAE): https://huggingface.co/zai-org/CogVideoX-2b
+- Repositorio reempaquetado: https://huggingface.co/Comfy-Org/void-model
+- Modelo original: https://huggingface.co/netflix/void-model
+- RAFT (flujo óptico): https://github.com/princeton-vl/raft
+- RAFT en Hugging Face: https://huggingface.co/princeton-vl/raft
+- CogVideoX-2B: https://huggingface.co/zai-org/CogVideoX-2b
+- Workflow de inpainting de vídeo para ComfyUI: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/utility_void_video_inpainting.json
+- ComfyUI: https://github.com/Comfy-Org/ComfyUI

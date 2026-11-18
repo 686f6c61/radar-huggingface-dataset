@@ -2,89 +2,108 @@
 
 ## Resumen
 
-Este repositorio contiene una colección de adaptadores LoRA para el modelo de generación de vídeo MiniMax-H3, desarrollados por el usuario Hearmeman (HearmemanAI). Los adaptadores están entrenados específicamente con material adulto explícito y están diseñados para mejorar la representación anatómica y de acciones en la generación de vídeo NSFW. El repositorio incluye seis adaptadores independientes que se pueden apilar entre sí: un adaptador de movimiento (HMNSFW), uno de acción (HMCumshot) y cuatro de anatomía (HMPussy, HMInnie, HMBreasts y HMPenis).
+MiniMax-H3 LoRAs es una colección de adaptadores LoRA de bajo rango para el modelo generativo de vídeo MiniMax-H3, publicada por el usuario Hearmeman (HearmemanAI) bajo la licencia comunitaria de MiniMax. El repositorio actúa como espejo accesible sin autenticación de los LoRAs que el autor distribuye en CivitAI, e incluye adaptadores de concepto único especializados en contenido para adultos: unos enseñan al modelo base la anatomía de una parte del cuerpo ("anatomy adapters", entrenados con imágenes fijas) y otros le enseñan qué hace un cuerpo ("action adapters", entrenados con vídeo). Su relevancia actual es práctica: permiten modular el comportamiento del modelo base H3 en flujos de trabajo de ComfyUI sin reentrenar el modelo completo, y su diseño por capas permite apilarlos sobre LoRAs de personaje o escena ya existentes.
 
-La relevancia de este proyecto radica en que el modelo base MiniMax-H3, un modelo nativo multimodal de generación de vídeo en 2K con audio estéreo 3D sincronizado, produce anatomía femenina "blanda y vaga" según el autor, y los adaptadores corrigen estas deficiencias. Los adaptadores son de concepto único y se apilan bajo otros LoRA de personajes o escenas. El repositorio funciona como un espejo de los pesos publicados en CivitAI, permitiendo descargarlos mediante URL `resolve` sin necesidad de cuenta.
+El repositorio ocupa 4,1 GB y contiene archivos individuales de entre 78 MB y 626 MB, lo que refleja el rango de rangos y de capas entrenadas de cada adaptador. La ficha del modelo base (MiniMaxAI/MiniMax-H3) no está incluida en la información disponible, por lo que los datos de arquitectura, parámetros y contexto del modelo subyacente se indican como no disponibles.
 
-El contenido es explícitamente NSFW y no apto para todos los públicos. La licencia es `minimax-h3-community-license`, derivada del modelo base MiniMax-H3.
+Conviene subrayar que este repositorio no es un modelo autónomo: es un conjunto de pesos LoRA que requieren el modelo base MiniMax-H3 para funcionar, y su contenido está marcado explícitamente como no apto para todo público.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA/LoKr sobre MiniMax-H3 (variante fl2va bf16) |
-| Parametros totales | no disponible (cada adaptador es un archivo safetensors de 296-597 MB) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (depende del modelo base MiniMax-H3) |
-| Tipos de cuantizacion | bf16 (entrenado y generado con el modelo bf16 completo) |
-| Idiomas soportados | no disponible (prompts en ingles) |
-| Licencia | minimax-h3-community-license |
+| Arquitectura | LoRA (adaptadores de bajo rango) sobre el modelo base MiniMax-H3; arquitectura del modelo base no disponible |
+| Parametros totales | No disponible (el tamaño de los adaptadores oscila entre 78 MB y 626 MB por archivo) |
+| Parametros activos | No aplica (no es un modelo MoE; es un conjunto de adaptadores) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible; se distribuyen pesos en safetensors sin indicación de variantes cuantizadas |
+| Idiomas soportados | No disponibles |
+| Licencia | minimax-h3-community-license (heredada del modelo base; enlace en la model card) |
 | Formato de pesos | safetensors |
+| Modelo base | MiniMaxAI/MiniMax-H3 |
+| Pipeline | text-to-video (con soporte declarado de image-to-video) |
+| Libreria | minimax-h3 |
+| Tamano del repositorio | 4,1 GB |
+| Descargas | 52.569 |
+| Likes | 83 |
 
 ## Arquitectura y entrenamiento
 
-Los adaptadores son LoRA/LoKr entrenados sobre el modelo base MiniMax-H3 en su variante fl2va bf16. El autor indica que HMInnie se entrenó con AI-Toolkit sobre 117 imágenes a rango 32 sobre el modelo bf16 completo. Los adaptadores de anatomía (HMPussy, HMInnie, HMBreasts, HMPenis) se entrenaron principalmente con imágenes fijas, mientras que los de acción (HMNSFW, HMCumshot) se entrenaron con vídeo. HMPussy requiere dos archivos: uno entrenado con imágenes fijas (`vagassist_e40`) y otro con vídeo (`hmpussy_v6_epoch30`), que se apilan a intensidades distintas (1.0 y 0.35 respectivamente).
+El repositorio contiene adaptadores LoRA de rango bajo que se aplican sobre el modelo de difusión de vídeo MiniMax-H3. La model card distingue dos familias según el régimen de entrenamiento: los adaptadores de acción están entrenados con vídeo y los de anatomía con imágenes fijas. El adaptador más reciente, HMNSFW V2.5, se entrenó con cerca de 1000 vídeos, aproximadamente 15 veces el conjunto de datos de la versión V2, durante más de 40 horas de entrenamiento. El autor indica que esta versión se concibió como V3 pero no está terminada, y que habrá más versiones.
 
-Los captions de entrenamiento son frases descriptivas largas (165-269 palabras, mediana de 225) en prosa anatómica, no etiquetas. Esto significa que el prompting óptimo requiere párrafos descriptivos fluidos en lugar de listas de keywords. El adaptador HMNSFW se generó con el modelo bf16 completo, muestreador `dpmpp_2m` con scheduler Beta y 20 pasos. HMCumshot admite modos Turbo LoRA de 8 pasos (0.20, Euler, `ddim_uniform`) para T2V/I2V y 4 pasos (0.85, Euler, `beta`) para R2V.
+Los adaptadores son de concepto único y están diseñados para apilarse: la recomendación del autor es colocarlos por debajo del LoRA de personaje o de escena que ya se esté usando, de modo que el adaptador de anatomía aporte la representación de la parte del cuerpo y el de acción aporte el movimiento. Cada adaptador define una palabra de activación (trigger) y un rango de fuerza recomendado; cuando no se publica una fuerza concreta, el autor sugiere empezar en 1.0 y reducirla progresivamente. No se dispone de información sobre el número de tokens, la composición del dataset ni el uso de RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Mejora de la representación anatómica femenina y masculina en generación de vídeo (genitales, pechos, forma del cuerpo).
-- Control de acciones y movimiento: el adaptador HMNSFW cubre posiciones como misionero, perrito, cowgirl, masturbación manual, sexo oral e inserciones.
-- Control de atributos anatómicos mediante ejes descriptivos en inglés: tamaño de pecho, forma, tamaño y color de areolas, estado de pezones, forma del monte de Venus, apertura de la hendidura, labios internos y color de labios.
-- Apilado de adaptadores: los adaptadores de anatomía se pueden combinar con los de acción y con otros LoRA de personajes o escenas.
-- Compatibilidad con generación texto-a-vídeo (T2V), imagen-a-vídeo (I2V) y referencia-a-vídeo (R2V, indicado para HMCumshot).
-- Integración con ComfyUI: el autor menciona el nodo `ExtendIntermediateSteps` para refinar la generación.
+- Generación de vídeo a partir de texto (text-to-video) mediante el modelo base MiniMax-H3, modulado por los adaptadores.
+- Generación de vídeo a partir de imagen (image-to-video); el autor señala que el adaptador HMNSFW V2.5 funciona especialmente bien en este modo, con anatomía y movimiento coherentes.
+- Especialización anatómica: adaptadores que enseñan al modelo la representación de partes del cuerpo concretas (HMPussy, HMInnie, HMBreasts, HMPenis).
+- Especialización de acción: adaptadores que enseñan al modelo movimientos y acciones concretas (HMNSFW AIO, HMCumshot, HMSquirt, HMMasturbation).
+- Apilamiento de adaptadores: combinación de adaptadores de anatomía y de acción con LoRAs de personaje o escena.
+- Control mediante palabras de activación específicas por adaptador (`hmmotion`, `cumshot`, `hmsquirt`, `Pussy`, `vagina`, `anus`, `inniepussy`, `tits`, `HMBreasts`, `HMPenis`, entre otras).
+- Integración con ComfyUI: el autor publica flujos de trabajo gratuitos y plantillas de Runpod orientadas a este entorno.
+- No se declaran capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio.
 
 ## Casos de uso
 
-- Generación de contenido adulto personalizado: el adaptador HMNSFW permite generar escenas de sexo explícito en vídeo con control de posiciones y acciones mediante prompts descriptivos largos en prosa.
-- Control anatómico fino en vídeo: los adaptadores de anatomía (HMPussy, HMPenis, HMBreasts, HMInnie) corrigen las deficiencias del modelo base en la representación de genitales y pechos, permitiendo especificar atributos como tamaño, forma y color mediante ejes descriptivos.
-- Refinamiento de generación imagen-a-vídeo: los adaptadores funcionan bien en I2V para la mayoría de posiciones, lo que permite partir de una imagen fija y animarla con movimiento controlado.
-- Creación de contenido con estilo consistente: al apilar los adaptadores bajo LoRA de personajes o escenas existentes, se puede mantener un estilo visual coherente mientras se añade control anatómico y de acción.
-- Investigación en fine-tuning de modelos de vídeo: el repositorio documenta el proceso de entrenamiento (AI-Toolkit, rango 32, captions largos, LoKr) que puede servir de referencia para otros proyectos de adaptación de MiniMax-H3.
-- Evaluación de límites del modelo base: los adaptadores revelan las deficiencias de MiniMax-H3 en la representación de anatomía humana y demuestran que se pueden corregir con LoRA específicos, lo que resulta útil para quienes investigan las capacidades del modelo base.
+- Producción de vídeo para adultos con ComfyUI: cargar el modelo base H3, aplicar el LoRA de personaje o escena y apilar encima el adaptador de anatomía y el de acción correspondientes; el flujo por capas permite ajustar el resultado sin reentrenar el modelo completo.
+- Animación image-to-video de imágenes fijas: el adaptador HMNSFW V2.5 está entrenado específicamente para este régimen y el autor lo describe como su punto fuerte, con anatomía y movimiento coherentes, lo que lo hace adecuado para animar retratos o ilustraciones existentes.
+- Creación de variantes de un mismo concepto: al ser adaptadores de concepto único con palabra de activación propia, permiten generar distintas versiones de una misma escena cambiando únicamente el adaptador de acción y manteniendo fijo el de personaje.
+- Despliegue en infraestructura cloud: el autor proporciona una plantilla de Runpod enlazada desde la model card, pensada para ejecutar los flujos de MiniMax-H3 con estos LoRAs en GPU remotas.
+- Investigación sobre adaptación de bajo rango en modelos de vídeo: el repositorio documenta entrenamientos con cerca de 1000 vídeos y más de 40 horas, lo que sirve como referencia práctica de coste y volumen de datos para ajustar adaptadores de acción.
+- Distribución automatizada de pesos: el repositorio existe para permitir descargar los pesos con una URL `resolve` simple sin necesidad de cuenta, lo que facilita integrarlos en pipelines de descarga automatizada o en imágenes de contenedor.
+- Verificación de integridad de artefactos: la model card publica sumas SHA-256 que coinciden con las versiones de CivitAI, lo que permite validar que el archivo descargado es idéntico al publicado originalmente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas cuantitativas de rendimiento ni comparaciones con otros adaptadores. El autor menciona cualitativamente que HMNSFW produce "ocasionalmente genitales deformados" en I2V y que T2V es "impredecible" (hit or miss), lo que motivó la creación de los adaptadores de anatomía.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Los adaptadores LoRA son ligeros: cada archivo safetensors pesa entre 296 MB y 597 MB, por lo que el almacenamiento adicional es mínimo.
-- La VRAM requerida depende del modelo base MiniMax-H3, que es un modelo de generación de vídeo 2K con audio sincronizado; se recomienda consultar los requisitos del modelo base.
-- El autor indica que la generación se realiza con el modelo bf16 completo, lo que sugiere que se necesita una GPU con VRAM suficiente para el modelo base en bf16 (probablemente 24 GB o más, dependiendo de la configuración).
-- Compatible con ComfyUI, lo que permite su uso en entornos con flujos de trabajo gráficos.
-- No se dispone de datos de latencia ni throughput para los adaptadores.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; depende enteramente del modelo base MiniMax-H3, cuyos requisitos no se detallan.
+- GPU recomendadas: no disponibles; el autor ofrece una plantilla de Runpod, lo que sugiere despliegue en GPU cloud, pero no especifica modelos concretos.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: ComfyUI (entorno principal promocionado por el autor) y plantilla de Runpod. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que además no aplican a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponibles.
+- Espacio en disco: el repositorio completo ocupa 4,1 GB; los adaptadores individuales van de 78 MB a 626 MB, por lo que solo es necesario descargar los que se vayan a usar.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Contenido | Tamano | Licencia |
-|---|---|---|---|---|
-| Hearmeman/minimax-h3-loras | LoRA para MiniMax-H3 | NSFW explícito | 2.8 GB (repo) | minimax-h3-community-license |
-| fal/MiniMax-H3-Realism-People-LoRA | LoRA para MiniMax-H3 | Realismo de personas | no disponible | no disponible |
-| iamgroot1212/minimax-h3-loras | LoRA para MiniMax-H3 | no disponible | no disponible | no disponible |
-
-No se dispone de información suficiente sobre los repositorios comparables para realizar una comparativa detallada de rendimiento o especificaciones.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (adaptadores LoRA para generación de vídeo) ni datos de rendimiento que permitan establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Contenido NSFW explícito: este repositorio contiene adaptadores entrenados con material adulto explícito y no es apto para todos los públicos. No debe descargarse si no se busca este tipo de contenido.
-- Licencia restrictiva: la licencia `minimax-h3-community-license` del modelo base puede imponer restricciones de uso comercial o de distribución. Es necesario revisar los términos de la licencia antes de cualquier uso en producción.
-- Calidad variable: el autor advierte que T2V es "impredecible" (hit or miss) para HMNSFW y que se producen "ocasionalmente genitales deformados" en I2V.
-- Anatomía imperfecta: el adaptador HMPussy V0.5 mejoró los anos pero "todavía no están del todo bien".
-- Dependencia del prompting: los captions de entrenamiento son frases largas en prosa (165-269 palabras), por lo que las listas de keywords producen resultados fuera de distribución. Se requiere un estilo de prompting específico.
-- Ortografía sensible: el adaptador HMBreasts aprendió el término "areoles" y el autor indica que la ortografía importa para obtener resultados correctos.
-- Sin métricas de rendimiento: no hay benchmarks publicados que permitan evaluar objetivamente la calidad de los adaptadores.
-- Restricciones de edad: el contenido es exclusivamente para adultos y puede violar las políticas de algunas plataformas de distribución de modelos.
+- Contenido explícito para adultos: el repositorio está etiquetado como `not-for-all-audiences` y todos los adaptadores están orientados a contenido sexual explícito; no es apto para uso general ni para entornos sin control de edad.
+- Licencia: se hereda la `minimax-h3-community-license` del modelo base, con términos adicionales que no se detallan en la información disponible; es imprescindible revisar el enlace de licencia antes de cualquier uso comercial.
+- Dependencia del modelo base: los adaptadores no funcionan de forma autónoma; requieren MiniMax-H3 y su licencia, además de los recursos de hardware que este exija.
+- Calidad dependiente del prompt: el autor advierte explícitamente que un prompt corto o vago produce malos resultados y recomienda igualar la longitud y el registro de los ejemplos publicados en CivitAI.
+- Variabilidad por semilla: la model card reconoce "la ocasional mala semilla" incluso en el adaptador más reciente, lo que implica necesidad de reintentos en producción.
+- Versión inacabada: HMNSFW V2.5 se describe como un trabajo en curso que iba a ser V3, con más versiones previstas; su comportamiento puede cambiar entre publicaciones.
+- Fuerza de adaptador mal calibrada: aplicar fuerzas fuera del rango recomendado (por ejemplo, por encima de 0.9 en los adaptadores de acción, o por encima de 0.5 en HMNSFW V2) puede degradar el resultado.
+- Pesos incompletos en el espejo: HMMisDog v1.0 está listado en CivitAI pero sus pesos no se replican en este repositorio.
+- Sin datos de sesgo, alucinación o cobertura idiomática: no se ha publicado información al respecto, y en un modelo de difusión de vídeo estos conceptos no se aplican de la misma forma que en un LLM.
+- Trazabilidad: el repositorio es un espejo de CivitAI; los vídeos de muestra, el historial de versiones y los hilos de comentarios solo están disponibles en la plataforma original.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Hearmeman/minimax-h3-loras
+- Repositorio en Hugging Face: https://huggingface.co/Hearmeman/minimax-h3-loras
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Colección MiniMax-H3: https://huggingface.co/collections/MiniMaxAI/minimax-h3
-- Guía oficial MiniMax H3: https://design.minimax.io/h3
-- Hub comunitario MiniMax H3 (GitHub): https://github.com/ai-models-lab/minimax-h3
-- Repositorio comparable (fal): https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA
-- Repositorio comparable (iamgroot1212): https://huggingface.co/iamgroot1212/minimax-h3-loras
-- Perfil CivitAI del autor: https://civitai.com/user/HearmemanAI
+- Licencia comunitaria MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Sitio del autor (flujos de ComfyUI, plantillas y guías): https://hearmemanai.com/
+- Discord del autor: https://discord.gg/ZVWVhT43GW
+- Plantilla de Runpod para MiniMax: https://get.runpod.io/minimax-template
+- Perfil del autor en CivitAI: https://civitai.com/user/HearmemanAI
+- HMNSFW V2.5 (AIO Sex): https://civitai.com/models/2834417?modelVersionId=3268303
+- HMNSFW V2 (AIO Sex): https://civitai.com/models/2834417?modelVersionId=3206518
+- HMCumshot v1.0: https://civitai.com/models/2857340?modelVersionId=3329529
+- HMCumshot V0.5: https://civitai.com/models/2857340?modelVersionId=3238531
+- HMMasturbation v2.0: https://civitai.com/models/2893742?modelVersionId=3310312
+- HMSquirt v0.1: https://civitai.com/models/2893742?modelVersionId=3271912
+- HMMisDog v1.0: https://civitai.com/models/2924146?modelVersionId=3308736
+- HMPussy V2: https://civitai.com/models/2846342?modelVersionId=3436891
+- HMPussy V1: https://civitai.com/models/2846342?modelVersionId=3252213
+- HMPussy v0.5: https://civitai.com/models/2846342?modelVersionId=3215304
+- HMInnie v1.0: https://civitai.com/models/2853405?modelVersionId=3222484
+- HMBreasts V2: https://civitai.com/models/2848799?modelVersionId=3268969
+- HMBreasts V1.0: https://civitai.com/models/2848799?modelVersionId=3216751
+- HMPenis v1.0: https://civitai.com/models/2849923?modelVersionId=3218160

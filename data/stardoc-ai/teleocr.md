@@ -2,56 +2,57 @@
 
 ## Resumen
 
-TeleOCR es un modelo de visión-lenguaje (VLM) de código abierto desarrollado por StarDoc-AI (TeleAI), especializado en el parseo de documentos. Con aproximadamente 1.200 millones de parámetros según su autor y 1.415.072.768 parámetros reales en los ficheros safetensors del repositorio, está construido sobre la arquitectura Qwen2.5-VL y se distribuye bajo licencia Apache-2.0. Su propuesta diferencial es unificar en un único modelo el parseo de documentos digitales nativos y el de documentos capturados con cámara, escenario este último en el que los parsers tradicionales suelen fallar por deformaciones geométricas, iluminación irregular y perspectiva.
+TeleOCR es un modelo de visión-lenguaje (VLM) especializado en el análisis y extracción de contenido de documentos, desarrollado por StarDoc-AI. Con aproximadamente 1.200 millones de parámetros (1.415.072.768 según los pesos en safetensors), está construido sobre la arquitectura Qwen2.5-VL y se distribuye bajo licencia Apache 2.0. Su propuesta diferencial es unificar en un único marco el análisis de documentos digitales (PDF nativos, imágenes limpias) y de documentos capturados con cámara (fotografías con perspectiva, curvatura y deformación geométrica), un escenario que la mayoría de modelos OCR tratan por separado o resuelven con preprocesamiento de rectificación.
 
-El modelo resuelve tareas de OCR estructurado: extracción de texto, reconocimiento de orden de lectura, reconstrucción de tablas en formato estructurado y conversión de fórmulas matemáticas a LaTeX u otras representaciones. Frente a alternativas como MinerU 2.5 Pro, PaddleOCR-VL 1.6 u OvisOCR2, TeleOCR declara resultados de estado del arte en OmniDocBench v1.6 (96,87 de puntuación overall) manteniendo un tamaño reducido que permite despliegue en hardware modesto. El modelo se publicó originalmente como NaviDC-OCR el 17 de agosto de 2026 y fue renombrado a TeleOCR el 10 de septiembre de 2026.
+El modelo resuelve el problema de la conversión de documentos a formatos estructurados (Markdown, HTML, tablas, fórmulas) manteniendo el orden de lectura y la estructura semántica, sin necesidad de un modelo dedicado de dewarping. Para ello introduce técnicas como Multi-node Consensus Voting (MCV) para el etiquetado pseudoautomático, modelado geométrico consciente de la deformación, muestreo Curvature-Guided Douglas-Peucker (CGDP) y autoverificación imagen-a-imagen para refinar datos de entrenamiento.
 
-Es relevante ahora porque cubre un hueco práctico: pipelines de digitalización documental que hasta hace poco requerían un modelo de rectificación (dewarping) más un modelo de parseo, y que TeleOCR resuelve de forma extremo a extremo sin preprocesado de rectificación. El repositorio acumula 29.682 descargas y 49 likes, y ya existe una conversión GGUF de la comunidad para llama.cpp, lo que amplía las opciones de despliegue en CPU y hardware de borde.
+Es relevante ahora porque alcanza resultados de estado del arte en OmniDocBench v1.6 (96,87 de puntuación global) y en el reto Dr.DocBench (67,96), superando a alternativas como MinerU 2.5 Pro, PaddleOCR-VL 1.6 u OvisOCR2, manteniéndose lo bastante ligero (1,2B) para despliegue práctico en infraestructura moderada. El modelo fue renombrado desde NaviDC-OCR en septiembre de 2026.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language transformer basado en Qwen2.5-VL (tag `qwen2_5_vl`, `custom_code`), con adaptaciones propias para parseo documental |
-| Parámetros totales | 1.415.072.768 (según safetensors); el autor indica ~1,2 B en la model card |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No especificados por el autor; existe una conversión GGUF mantenida por la comunidad (nandraj/NaviDC-OCR-GGUF) |
-| Idiomas soportados | Chino (zh), inglés (en), japonés (ja) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (repo de 2,8 GB); GGUF disponible en repositorio de terceros |
+| Arquitectura | Vision-Language Model basada en Qwen2.5-VL (transformer multimodal) |
+| Parametros totales | 1.415.072.768 (~1,2B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (existe conversion GGUF de la comunidad) |
+| Idiomas soportados | chino (zh), ingles (en), japones (ja) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 2,8 GB); GGUF disponible via conversion de la comunidad |
 
 ## Arquitectura y entrenamiento
 
-TeleOCR sigue el patrón de los VLM multimodales conversacionales: un codificador visual que proyecta las imágenes a tokens y un decodificador de lenguaje que genera la salida estructurada. La base declarada es Qwen2.5-VL, lo que implica atención completa sobre la secuencia de tokens visuales y de texto, y requiere cargar código personalizado (`trust_remote_code`) por el tag `custom_code` del repositorio. El autor reporta aproximadamente 1,2 B de parámetros, cifra coherente con el tamaño del repo (2,8 GB en safetensors, equivalente a pesos en precisión de 16 bits).
+TeleOCR es un transformer multimodal basado en Qwen2.5-VL, con un codificador visual y un decodificador de lenguaje que procesan conjuntamente imagen y texto para generar contenido estructurado. El entrenamiento sigue un pipeline progresivo de cuatro etapas, e incorpora un conjunto de innovaciones técnicas orientadas al análisis documental: Multi-node Consensus Voting (MCV) para generar pseudoetiquetas de forma automática y fiable; modelado geométrico consciente de la geometría para documentos capturados con cámara; muestreo Curvature-Guided Douglas-Peucker (CGDP) para manejar curvas y deformaciones; autoverificación imagen-a-imagen para refinar automáticamente los datos; y aprendizaje desacoplado de contenido y estructura (Content-Structure Decoupled Learning) específicamente para tablas y fórmulas.
 
-La model card describe una pipeline de entrenamiento progresiva en cuatro etapas y varias innovaciones técnicas: Multi-node Consensus Voting (MCV) para generación automática de pseudo-etiquetas; modelado documental geométricamente consciente para documentos capturados con cámara; Curvature-Guided Douglas-Peucker Sampling (CGDP); autoverificación imagen-a-imagen para refinado automático de datos; y Content-Structure Decoupled Learning para tablas y fórmulas, que separa el aprendizaje del contenido del de la estructura. No se detallan en la información disponible el número exacto de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Tampoco se documenta el uso de decodificación especulativa ni de mecanismos de atención lineal.
+El modelo está diseñado para operar directamente sobre documentos deformados sin un paso previo de rectificación (dewarping), como demuestran las evaluaciones sobre los conjuntos DocUNet y DIR300. No se especifican en la información disponible el número exacto de tokens de entrenamiento, la composición detallada del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Reconocimiento óptico de caracteres (OCR) sobre documentos digitales y fotografías de documentos.
-- Parseo de estructura documental: detección de bloques, orden de lectura y jerarquía de secciones.
-- Reconstrucción de tablas en formato estructurado, incluyendo tablas complejas con celdas combinadas.
-- Conversión de fórmulas matemáticas a representaciones como LaTeX (métrica Formula CDM en los benchmarks).
-- Procesamiento de documentos deformados geométricamente (curvaturas, perspectiva, iluminación irregular) sin etapa previa de dewarping ni modelo dedicado de rectificación.
-- Generación de texto multimodal conversacional, ya que el pipeline declarado es `image-text-to-text` con tag `conversational`.
-- Soporte multilingüe limitado a chino, inglés y japonés.
-- Compatibilidad con despliegue en Text Generation Inference y endpoints compatibles (tags `text-generation-inference` y `endpoints_compatible`).
-- No se documenta soporte explícito de tool calling, function calling, modo de razonamiento extendido (thinking), audio ni vídeo.
+- Análisis de documentos digitales y capturados con cámara en un único marco, incluyendo documentos con curvatura y perspectiva.
+- Extracción de texto con preservación del orden de lectura.
+- Reconocimiento y reconstrucción de tablas en formato estructurado.
+- Reconocimiento de fórmulas matemáticas con salida en formato estructurado (evaluado mediante métricas CDM).
+- Generación de salida estructurada (Markdown/HTML) a partir de la imagen del documento.
+- Procesamiento multimodal imagen-texto conversacional (pipeline image-text-to-text).
+- Capacidades multilingües limitadas a chino, inglés y japonés.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, visión o audio adicional: no disponible; la capacidad principal es visión para documentos.
 
 ## Casos de uso
 
-- Digitalización masiva de archivos administrativos: el modelo convierte escaneos y fotografías de expedientes en texto estructurado con orden de lectura correcto, aprovechando su capacidad de parseo de bloques y jerarquías.
-- Extracción de tablas financieras: facturas, balances y hojas de cálculo fotografiadas se transforman en tablas estructuradas listas para ingestión en bases de datos, con una métrica TEDS de 97,05 en OmniDocBench v1.6.
-- Conversión de documentación científica a formatos editables: artículos con fórmulas matemáticas se convierten directamente a LaTeX, lo que facilita la migración de corpus PDF a repositorios de código o wikis técnicas.
-- Procesamiento de documentos capturados con móvil en campo: inspecciones técnicas, albaranes o formularios fotografiados sin trípode, donde la deformación de perspectiva impide el uso de parsers clásicos; TeleOCR parsea directamente sin rectificación previa.
-- Automatización de back-office con documentos en chino o japonés: contratos, formularios médicos o documentos fiscales en estos idiomas, cubiertos explícitamente por el modelo.
-- Despliegue en borde o en hardware sin GPU dedicada: gracias a su tamaño de 1,2 B y a la conversión GGUF comunitaria, puede ejecutarse con llama.cpp en CPU o en aceleradores como Ascend 910B, según reporta la comunidad.
-- Preprocesado para pipelines RAG: extracción de texto estructurado de PDFs y escaneos antes de la indexación vectorial, tarea en la que el orden de lectura correcto es determinante para la calidad de los fragmentos recuperados.
+- Digitalización masiva de archivos históricos: el modelo puede procesar documentos escaneados o fotografiados con deformaciones sin necesidad de un paso previo de rectificación, lo que simplifica los pipelines de digitalización y reduce el coste computacional al eliminar el modelo de dewarping.
+- Extracción de tablas financieras: gracias al aprendizaje desacoplado de contenido y estructura y a su puntuación TEDS de 97,05 en OmniDocBench, es adecuado para convertir estados de cuenta, informes contables o tablas de datos en formatos estructurados consumibles por bases de datos.
+- Conversión de documentación técnica con fórmulas: la capacidad de reconocimiento de fórmulas (CDM 96,36) permite transformar papers y manuales científicos a Markdown o LaTeX para su publicación o indexación.
+- Captura móvil de documentos: en aplicaciones de escaneo con smartphone, el modelo puede procesar fotografías con perspectiva y curvatura directamente, sin corrección geométrica previa, mejorando la experiencia en apps de gestión documental.
+- Procesamiento de facturas y formularios: la preservación del orden de lectura (Read Order Edit de 0,122) y la extracción estructurada permiten automatizar la captura de datos en flujos de cuentas por pagar y gestión administrativa.
+- Análisis de documentos en chino e inglés: con soporte nativo para ambos idiomas y también japonés, es adecuado para empresas con documentación multilingüe en esos mercados.
+- Integración en pipelines de RAG documental: la salida estructurada y limpia facilita la fragmentación e indexación de documentos para sistemas de recuperación aumentada, reduciendo el ruido en la extracción.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el reto Dr.DocBench (EMNLP 2026), evaluados con los pesos nativos de NaviDC-OCR antes del renombrado:
+Resultados en Dr.DocBench Challenge:
 
 | Modelo | Overall ↑ | Text edit ↓ | Formula CDM ↑ | Table TEDS ↑ | Order edit ↓ |
 |---|---|---|---|---|---|
@@ -62,54 +63,55 @@ Resultados declarados por el autor en el reto Dr.DocBench (EMNLP 2026), evaluado
 
 Resultados en OmniDocBench v1.6:
 
-| Modelo | Parámetros | Overall ↑ | Text edit ↓ | Formula CDM ↑ | Table TEDS ↑ | Table TEDS-S ↑ | Read order edit ↓ |
+| Modelo | Param | Overall ↑ | Text edit ↓ | Formula CDM ↑ | Table TEDS ↑ | Table TEDS-S ↑ | Read order edit ↓ |
 |---|---|---|---|---|---|---|---|
-| TeleOCR | 1,2 B | 96,87 | 0,027 | 96,36 | 97,05 | 98,52 | 0,122 |
-| OvisOCR2 | 0,8 B | 96,58 | 0,025 | 97,53 | 94,76 | 97,16 | 0,111 |
-| PaddleOCR-VL 1.6 | 0,9 B | 96,33 | 0,033 | 97,49 | 94,76 | 97,11 | 0,127 |
-
-El autor también reporta evaluación cualitativa de layout sobre los conjuntos de dewarping DocUNet y DIR300, sin métricas numéricas publicadas en la información disponible.
+| TeleOCR | 1,2B | 96,87 | 0,027 | 96,36 | 97,05 | 98,52 | 0,122 |
+| OvisOCR2 | 0,8B | 96,58 | 0,025 | 97,53 | 94,76 | 97,16 | 0,111 |
+| PaddleOCR-VL-1.6 | 0,9B | 96,33 | 0,033 | 97,49 | 94,76 | 97,11 | 0,127 |
+| MinerU2.5-Pro | 1,2B | 95,75 | 0,036 | 97,45 | 93,42 | 95,92 | 0,120 |
+| GLM-OCR | 0,9B | 95,22 | 0,044 | 97,18 | 92,83 | 95,39 | 0,133 |
+| PaddleOCR-VL-1.5 | 0,9B | 94,87 | 0,038 | 96,69 | 91,67 | 94,37 | 0,130 |
+| HunyuanOCR-1.5 | 1B | 94,74 | 0,033 | 97,49 | 94,76 | 97,1 | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: en torno a 3-4 GB solo para pesos (1,415 B × 2 bytes ≈ 2,8 GB), más el coste del codificador visual y la caché KV, lo que sitúa el consumo práctico en el rango de 5-8 GB según resolución de imagen y longitud de secuencia.
-- En cuantización GGUF de 4 bits, los pesos bajan aproximadamente a 0,8-1 GB, lo que permite ejecución en CPU con llama.cpp y en GPUs de gama baja.
-- GPU recomendadas: cualquier GPU con 8 GB o más de VRAM para fp16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090). Para despliegue en servidor, A100, H100 o L40S ofrecen margen de sobra para lotes grandes.
-- Cabe en GPU de consumo: sí, es uno de los puntos fuertes del modelo dado su tamaño de 1,2 B; en cuantización de 4 bits es viable incluso en GPUs de 4-6 GB.
-- Opciones de despliegue: transformers con `trust_remote_code=True`, Text Generation Inference (TGI), endpoints compatibles con la API de inferencia, llama.cpp mediante la conversión GGUF de la comunidad, y presumiblemente Ollama a partir de esos GGUF. También hay reportes comunitarios de despliegue en Ascend 910B.
+- VRAM estimada para inferencia: en precisión completa (fp16/bf16), aproximadamente 2,8-3 GB para los pesos más memoria para activaciones y el codificador visual; en cuantización de 8 bits, en torno a 1,5 GB; en 4 bits, alrededor de 0,8-1 GB (estimaciones orientativas, no confirmadas en la información disponible).
+- GPU recomendadas: A100 o H100 para despliegues de alto throughput; RTX 4090, RTX 3090 o A10 para producción de volumen moderado.
+- Cabe en GPU de consumo: sí, por su tamaño de ~1,2B es viable en tarjetas con 8 GB o más de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, etc.), especialmente con cuantización.
+- Opciones de despliegue: transformers (librería nativa), text-generation-inference (TGI), vLLM, llama.cpp y Ollama mediante la conversión GGUF de la comunidad (NaviDC-OCR-GGUF); endpoints compatibles.
 - Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Enfoque | Overall OmniDocBench v1.6 | Table TEDS | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| TeleOCR | 1,2 B | Parseo unificado digital + cámara | 96,87 | 97,05 | Apache-2.0 | Hugging Face, GGUF comunitario |
-| OvisOCR2 | 0,8 B | Parseo documental especializado | 96,58 | 94,76 | No disponible | Referenciado en benchmarks del autor |
-| PaddleOCR-VL 1.6 | 0,9 B | Parseo documental especializado | 96,33 | 94,76 | No disponible | Referenciado en benchmarks del autor |
-| MinerU 2.5 Pro | No disponible | Pipeline de parseo documental | No evaluado en OmniDocBench v1.6 en la información disponible | 67,75 (Dr.DocBench) | No disponible | Referenciado en benchmarks del autor |
+| Modelo | Parámetros | Overall OmniDocBench v1.6 | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| TeleOCR | 1,2B | 96,87 | Apache 2.0 | Hugging Face, GGUF comunidad |
+| OvisOCR2 | 0,8B | 96,58 | no disponible | Hugging Face |
+| PaddleOCR-VL-1.6 | 0,9B | 96,33 | no disponible | Hugging Face |
+| MinerU2.5-Pro | 1,2B | 95,75 | no disponible | Hugging Face |
 
-TeleOCR es el único de los cuatro con licencia Apache-2.0 confirmada y el único que declara explícitamente capacidades de parseo sobre documentos capturados con cámara sin rectificación previa.
+TeleOCR lidera en puntuación global y en Table TEDS (97,05) y Table TEDS-S (98,52), aunque OvisOCR2 obtiene mejor Text Edit (0,025 frente a 0,027) y mejor Read Order Edit (0,111 frente a 0,122), y PaddleOCR-VL-1.6 tiene mejor Formula CDM (97,49 frente a 96,36). En Dr.DocBench, TeleOCR supera claramente en overall a MinerU 2.5 Pro, OvisOCR2 y PaddleOCR-VL 1.6, aunque MinerU 2.5 Pro obtiene mejor Table TEDS (67,75 frente a 64,97) y PaddleOCR-VL 1.6 mejor Formula CDM (0,21 frente a 0,02).
 
 ## Limitaciones y advertencias
 
-- Cobertura idiomática restringida a chino, inglés y japonés; no se declara soporte de español ni de otras lenguas latinas, lo que limita su uso directo en mercados hispanohablantes sin evaluación previa.
-- Todos los resultados de benchmarks proceden del propio autor del modelo y no se han verificado de forma independiente en la información disponible; además, las métricas de Dr.DocBench se obtuvieron con los pesos de NaviDC-OCR, anteriores al renombrado.
-- Riesgo de alucinación inherente a los modelos generativos: en documentos con baja resolución, ruido o tipografías inusuales puede generar contenido plausible pero incorrecto, especialmente en tablas y fórmulas.
-- Longitud de contexto no documentada, lo que dificulta planificar el procesado de documentos de muchas páginas o de conversaciones multi-turno largas.
-- Requiere `trust_remote_code=True` por el tag `custom_code`, lo que implica ejecutar código del repositorio: conviene auditar el código antes de desplegarlo en producción.
-- El modelo es especializado en parseo documental; no debe esperarse de él un rendimiento competitivo en tareas generales de razonamiento, código o matemáticas fuera del contexto de una imagen.
-- Licencia Apache-2.0: permite uso comercial y modificación con obligación de conservar el aviso de licencia y de patentes; no impone restricciones de uso adicionales conocidas.
-- La model card no documenta sesgos específicos, composición del dataset de entrenamiento ni proceso de alineación (RLHF/DPO), lo que dificulta la evaluación de riesgos de sesgo.
+- Idiomas limitados a chino, inglés y japonés; no se garantiza un rendimiento adecuado en otros idiomas como el español.
+- Riesgo de alucinación inherente a los modelos generativos: puede producir contenido no presente en el documento original, especialmente en regiones de baja calidad o documentos muy degradados.
+- El rendimiento en fórmulas es bajo en el benchmark Dr.DocBench (CDM 0,02), lo que sugiere debilidades en escenarios de fórmulas complejas fuera de OmniDocBench.
+- No se dispone de información sobre sesgos específicos del modelo.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), conviene verificar las condiciones de los datos de entrenamiento y de los modelos base (Qwen2.5-VL) para producción.
+- La longitud de contexto no está especificada, lo que limita la planificación de despliegues con documentos de muchas páginas.
+- El modelo está especializado en análisis documental; no debe emplearse como modelo generalista de visión o conversación.
+- La conversión GGUF es de la comunidad (Nandraj), no oficial, por lo que puede presentar diferencias de calidad frente a los pesos originales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/StarDoc-AI/TeleOCR
-- Pesos anteriores (NaviDC-OCR): https://huggingface.co/StarDoc-AI/NaviDC-OCR
+- Modelo original (NaviDC-OCR): https://huggingface.co/StarDoc-AI/NaviDC-OCR
 - Repositorio GitHub: https://github.com/caipeng328/TeleOCR
 - Informe técnico (arXiv): https://arxiv.org/abs/2608.12898
 - PDF del informe técnico: https://arxiv.org/pdf/2608.12898
-- Aplicación web de TeleAI: https://www.teleai.com.cn/docparse/DocumentParsing
-- Conversión GGUF de la comunidad (nandraj): https://huggingface.co/nandraj/NaviDC-OCR-GGUF
-- Artículo sobre despliegue en Ascend 910B: https://zhuanlan.zhihu.com/p/2078516899093155893
-- Reto Dr.DocBench (EMNLP 2026): https://eval.ai/web/challenges/challenge-page/2717/overview
+- Webapp en TeleAI: https://www.teleai.com.cn/docparse/DocumentParsing
+- Conversión GGUF (comunidad): https://huggingface.co/nandraj/NaviDC-OCR-GGUF
 - OmniDocBench: https://github.com/opendatalab/OmniDocBench
+- Dr.DocBench Challenge: https://eval.ai/web/challenges/challenge-page/2717/overview
+- Experiencia de despliegue en Ascend 910B: https://zhuanlan.zhihu.com/p/2078516899093155893

@@ -2,119 +2,105 @@
 
 ## Resumen
 
-AtomicChat/Qwen-Image-2.1-Turbo-GGUF es una redistribucion cuantizada en formato GGUF del checkpoint Qwen-Image-2.1-Turbo de Qwen. No es un modelo de lenguaje: se trata de un modelo de difusion text-to-image cuyo denoiser tiene 7.115.124.736 parametros (unos 7,1B) y que ha sido destilado para generar imagenes en 8 pasos de denoising con CFG 1 y una programacion de sigmas fija propia. El repositorio lo publica AtomicChat, orientado a ejecutar el modelo en local mediante stable-diffusion.cpp y su cliente sd-cli.
+Qwen-Image-2.1-Turbo-GGUF es una cuantización en formato GGUF del modelo de generación y edición de imágenes Qwen-Image-2.1-Turbo, desarrollado originalmente por el equipo Qwen de Alibaba y cuantizado por AtomicChat para su uso con el motor stable-diffusion.cpp. El modelo base es un generador de imágenes de aproximadamente 7.115 millones de parámetros (7,1B) destilado para funcionar con solo 8 pasos de denoising a CFG 1, lo que reduce drásticamente el coste computacional frente a los pipelines de difusión convencionales que requieren entre 20 y 50 pasos.
 
-El problema que resuelve es practico: los pesos originales en BF16 ocupan 14,23 GB solo para el denoiser, a los que hay que sumar el codificador de texto Qwen3-VL-8B y el VAE. Este repositorio ofrece siete ficheros GGUF entre 2,39 GB (Q2_K) y 7,59 GB (Q8_0), de modo que el modelo puede caber en equipos con menos VRAM. Ademas, la model card publica una evaluacion cuantitativa de la perdida de fidelidad de cada nivel de cuantizacion frente a BF16, medida sobre 96 renders (48 prompts por 2 semillas) con LPIPS, SSIM y PSNR.
+El interés de esta publicación reside en que permite ejecutar localmente un generador de imágenes de última generación en hardware de consumo, gracias a las cuantizaciones que van desde Q8_0 (7,59 GB) hasta Q2_K (2,55 GB). AtomicChat no se limita a aplicar cuantización estándar: introduce un esquema propio denominado AD (Atomic Dynamic) que elige el tipo de cuantización por tensor y utiliza una importance matrix calculada a partir de 32 renders de Turbo, con el objetivo de preservar la fidelidad perceptual respecto a los pesos BF16 originales.
 
-Es relevante ahora porque la generacion de imagenes en local sigue dependiendo del equilibrio entre calidad y memoria, y porque el modelo exige una programacion de sigmas concreta que, si no se respeta, produce resultados distintos a los previstos. La informacion disponible no detalla el volumen de descargas ni adopcion: el repositorio registra 0 descargas y 1 like en el momento de la consulta.
+La relevancia actual del modelo estriba en la combinación de tres factores: la licencia qwen-research (uso de investigación, con restricciones comerciales), la disponibilidad de pesos GGUF listos para stable-diffusion.cpp y la publicación de métricas objetivas de degradación por cuantización (LPIPS, SSIM, PSNR) sobre un conjunto fijo de 48 prompts y 2 semillas. Esto convierte al repositorio en una referencia útil tanto para desarrolladores que quieren desplegar generación de imágenes en local como para investigadores que necesitan evaluar el impacto real de la cuantización en modelos de difusión.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (denoiser con bloques transformer, modulacion compartida, embedding de timestep, norm final y proyeccion de salida); pipeline text-to-image con codificador de texto Qwen3-VL-8B y VAE |
-| Parametros totales | 7.115.124.736 (denoiser, dato de safetensors); no incluye el codificador de texto Qwen3-VL-8B ni el VAE |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo de difusion de imagenes; el prompt lo procesa el codificador de texto Qwen3-VL-8B, cuya ventana no se especifica en la informacion disponible) |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K, Q4_K, Q3_K, Q2_K |
-| Idiomas soportados | no disponibles en los metadatos de Hugging Face; la model card incluye validacion especifica de renderizado de texto en chino (8 prompts) |
-| Licencia | other / qwen-research (enlace a licencia del modelo base) |
-| Formato de pesos | GGUF (denoiser); safetensors para el VAE (`vae/qwen_image_2.1_vae_bf16.safetensors`) |
-| Resolucion de referencia | 1024 x 1024 (usada en las mediciones) |
-| Pasos de muestreo | 8 (CFG 1.0, metodo euler, sigmas personalizadas) |
-| Tamano del repositorio | 42,2 GB |
-| Modelo base | Qwen/Qwen-Image-2.1-Turbo |
+| Arquitectura | Modelo de difusión (denoiser) basado en transformer, derivado de Qwen-Image-2.1; texto codificado con Qwen3-VL-8B y VAE propio |
+| Parametros totales | 7.115.124.736 (7,1B) en el denoiser |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | BF16, Q8_0, AD-Q6_K, AD-Q5_K, AD-Q4_K, AD-Q3_K, AD-Q2_K (además de las variantes estándar Q4_K y Q2_K usadas como línea base) |
+| Idiomas soportados | No disponible (el modelo genera imágenes; el texto en imagen se ha evaluado en chino) |
+| Licencia | qwen-research (license: other) |
+| Formato de pesos | GGUF (para stable-diffusion.cpp); el modelo base se distribuye en BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un generador de imagenes de difusion de tipo transformer, con un denoiser de 7,1B parametros. Segun la model card, la conversion a GGUF aplica el tipo de cuantizacion elegido a los bloques transformer, la modulacion compartida, el embedding de timestep, la norm final y la proyeccion de salida, mientras que las dos proyecciones de entrada y las normas 1-D se mantienen en BF16. El codificador de texto es Qwen3-VL-8B (en el ejemplo de ejecucion, `Qwen3VL-8B-Instruct-Q4_K_M.gguf`) y el VAE es el mismo que en Qwen-Image-2.1.
+El modelo base Qwen-Image-2.1-Turbo es un checkpoint acelerado de Qwen-Image-2.1: mantiene el mismo generador de imágenes de 7B y ha sido destilado para operar con 8 pasos de denoising a CFG 1, con un schedule de muestreo fijo propio. La arquitectura del denoiser es de tipo transformer de difusión, y el pipeline completo incluye un codificador de texto Qwen3-VL-8B y un VAE que se mantienen idénticos a los de Qwen-Image-2.1, de modo que los ficheros auxiliares de la versión 2.1 son reutilizables. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-Qwen-Image-2.1-Turbo es, segun la informacion proporcionada, el checkpoint acelerado de Qwen-Image-2.1: el mismo generador de 7B destilado a 8 pasos de denoising con CFG 1 y su propia programacion fija de sigmas. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de alineacion como RLHF o DPO: esa informacion no aparece en los materiales consultados. La innovacion tecnica destacable, en lo que respecta a esta publicacion, es la propia destilacion a 8 pasos combinada con la conversion a GGUF y la evaluacion de fidelidad publicada por nivel de cuantizacion.
-
-La model card indica que las mediciones se hicieron con stable-diffusion.cpp en el commit `36f1b1a`, sobre una A100 de 80 GB, a 1024x1024. El codificador de texto y el VAE se mantuvieron en BF16 en todos los renders, de modo que la unica variable fue el fichero del denoiser. Los pesos BF16 renderizan de forma determinista: dos ejecuciones BF16 producen imagenes identicas, por lo que las diferencias reportadas se atribuyen exclusivamente a la cuantizacion.
+La innovación técnica principal de esta publicación es el esquema de cuantización AD (Atomic Dynamic), que selecciona el tipo de cuantización por tensor en lugar de aplicarlo uniformemente a todos los bloques. La modulación compartida por todos los bloques se mantiene en Q8_0 (o BF16 en AD-Q6_K), mientras que el timestep embedding, la normalización final y la proyección de salida reciben un trato específico. Además, los ficheros AD se cuantizan con una importance matrix derivada de 32 renders de Turbo que no comparten prompt con el conjunto de evaluación. Según el autor, AD-Q4_K se mantiene un 21% más cerca de la imagen BF16 que un Q4_K estándar, con solo 150 MB adicionales de tamaño.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (text-to-image) en 8 pasos de denoising con CFG 1.0.
-- Edicion de imagenes: el repositorio incluye la etiqueta image-editing, heredada del modelo base.
-- Renderizado de texto dentro de la imagen: la model card valida especificamente ocho prompts con texto en chino, con metrica LPIPS propia (`text (zh)`).
-- Seguimiento de prompts en escenas complejas: en las comprobaciones con Q2_K, el modelo seguia el prompt y escribia el texto correctamente, aunque la imagen resultante difería de la de BF16.
-- Ejecucion local sin conexion mediante stable-diffusion.cpp, tanto por linea de comandos (`sd-cli`) como a traves de su API de servidor.
-- Control explicito del muestreo: permite pasar una lista de sigmas personalizada (`--sigmas` en CLI, `sample_params.custom_sigmas` en la API).
-- No se documentan capacidades de tool calling, function calling, uso agentico, vision de entrada ni audio: son capacidades ajenas al tipo de modelo.
+- Generación de imágenes a partir de descripciones textuales (text-to-image) con 8 pasos de denoising a CFG 1.
+- Edición de imágenes (image-editing), según la etiqueta del pipeline del modelo base.
+- Renderizado de texto dentro de la imagen, evaluado específicamente en chino sobre ocho prompts del conjunto de pruebas.
+- Ejecución local determinista en BF16: dos ejecuciones con los mismos pesos y semilla producen imágenes idénticas.
+- Compatibilidad con stable-diffusion.cpp como motor de inferencia, incluyendo el ecosistema de herramientas que lo integran (por ejemplo, Atomic Chat).
+- No se ha documentado soporte de tool calling, function calling, agentes ni razonamiento multi-paso; estas capacidades no aplican a un modelo de difusión de imagen.
+- No se ha documentado soporte de audio ni de visión como entrada más allá del pipeline de edición de imagen.
 
 ## Casos de uso
 
-- Generacion de imagenes en local en equipos sin conexion: el modelo puede ejecutarse con stable-diffusion.cpp sobre los ficheros GGUF, lo que permite producir imagenes sin depender de APIs externas y sin enviar prompts a terceros.
-- Equipos con VRAM limitada: los ficheros Q2_K (2,39 GB) y Q3_K (3,11 GB) permiten desplegar el denoiser en hardware modesto a cambio de una perdida de fidelidad medible (LPIPS 0,475 y 0,293 respectivamente frente a BF16).
-- Produccion de carteles y rotulos con texto integrado: la model card evalua el renderizado de texto en chino; el ejemplo de ejecucion es un letrero de neon con la frase "OPEN LATE", un escenario tipico de rotulacion, senaletica o mockups publicitarios.
-- Edicion y variacion de imagenes: la etiqueta image-editing del modelo base sugiere su uso en flujos de retoque o generacion de variantes a partir de una imagen de partida.
-- Integracion en pipelines de ComfyUI: el VAE de referencia procede del repositorio Comfy-Org/Qwen-Image-2.1, lo que encaja con flujos de trabajo basados en nodos y produccion por lotes.
-- Servicio de generacion de imagenes por API: stable-diffusion.cpp expone un servidor que acepta las sigmas personalizadas, lo que permite montar un endpoint interno de text-to-image para aplicaciones propias.
-- Prototipado rapido de assets graficos: al necesitar solo 8 pasos de denoising, el coste por imagen es bajo comparado con modelos que requieren decenas de pasos, lo que resulta util en iteracion de diseno.
-- Investigacion sobre cuantizacion de modelos de difusion: el repositorio publica LPIPS, SSIM y PSNR por nivel de cuantizacion sobre 96 renders, lo que sirve como referencia reproducible para estudiar el impacto de la cuantizacion.
+- Generación de ilustraciones para prototipado de producto: con AD-Q4_K (4,20 GB) el modelo cabe en GPUs de consumo y permite iterar rápidamente sobre conceptos visuales en 8 pasos, lo que reduce el tiempo por imagen frente a pipelines de 20-50 pasos.
+- Edición de imágenes en flujos de trabajo creativos: el pipeline de image-editing del modelo base permite modificar imágenes existentes; al compartir el VAE y el text encoder con Qwen-Image-2.1, se pueden reutilizar assets ya preparados para esa versión.
+- Generación de carteles y material gráfico con texto: el modelo ha sido evaluado específicamente en la renderización de texto en chino (LPIPS 0,166 en AD-Q4_K), por lo que es adecuado para piezas que incluyan tipografía, aceptando la pérdida de fidelidad que introduce la cuantización.
+- Despliegue en estaciones de trabajo sin GPU de datacenter: con AD-Q2_K (2,55 GB) el modelo cabe en equipos con VRAM limitada; el autor advierte que la imagen difiere notablemente de la BF16, pero sigue el prompt y mantiene la ortografía en las comprobaciones puntuales realizadas.
+- Investigación sobre cuantización de modelos de difusión: el repositorio publica métricas LPIPS, SSIM y PSNR por fichero sobre 48 prompts y 2 semillas, lo que permite estudiar la degradación perceptual inducida por la cuantización con un conjunto reproducible.
+- Integración en aplicaciones de escritorio: al ejecutarse sobre stable-diffusion.cpp, los GGUF pueden integrarse en aplicaciones locales como Atomic Chat, lo que facilita la generación de imágenes sin conexión y sin enviar datos a servicios externos.
+- Evaluación comparativa de esquemas de cuantización: la inclusión de ficheros Q4_K y Q2_K estándar como línea base permite comparar directamente el esquema AD frente al convencional en las mismas condiciones de prompt y semilla.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, ya que se trata de un modelo de generacion de imagenes. Lo que si se publica es una tabla de fidelidad de cuantizacion frente a los pesos BF16, medida sobre 48 prompts x 2 semillas (96 renders), a 1024x1024, con stable-diffusion.cpp en el commit `36f1b1a` sobre una A100 de 80 GB:
+El autor publica métricas de fidelidad respecto a los pesos BF16 sobre 48 prompts y 2 semillas, con el mismo ruido inicial. LPIPS mide distancia perceptual (menor es mejor); "vs. new seed" normaliza la distancia tomando como 100% la diferencia entre dos semillas distintas (LPIPS 0,499); "text (zh)" es el LPIPS sobre los ocho prompts con texto chino en la imagen.
 
-| Fichero | Tamano en disco | LPIPS [IC 95%] | vs. nueva semilla | SSIM | PSNR | Texto (zh) |
+| Fichero | Tamano en disco | LPIPS [IC 95%] | vs. new seed | SSIM | PSNR | text (zh) |
 |---|---:|---|---:|---:|---:|---:|
-| BF16 | 14,23 GB | 0 (identico) | 0% | 1,000 | no disponible | 0 |
+| BF16 | 14,23 GB | 0 (idéntico) | 0% | 1,000 | — | 0 |
 | Q8_0 | 7,59 GB | 0,037 [0,030; 0,046] | 7% | 0,964 | 30,2 dB | 0,037 |
-| Q6_K | 5,88 GB | 0,072 [0,056; 0,090] | 14% | 0,926 | 25,9 dB | 0,079 |
-| Q5_K | 4,94 GB | 0,115 [0,098; 0,133] | 23% | 0,886 | 22,6 dB | 0,150 |
-| Q4_K | 4,05 GB | 0,187 [0,161; 0,214] | 37% | 0,812 | 19,2 dB | 0,259 |
-| Q3_K | 3,11 GB | 0,293 [0,267; 0,321] | 59% | 0,721 | 15,9 dB | 0,382 |
-| Q2_K | 2,39 GB | 0,475 [0,454; 0,496] | 95% | 0,594 | 13,1 dB | 0,499 |
+| AD-Q6_K | 6,71 GB | 0,044 [0,035; 0,055] | 9% | 0,956 | 29,6 dB | 0,052 |
+| AD-Q5_K | 5,40 GB | 0,076 [0,064; 0,090] | 15% | 0,922 | 25,2 dB | 0,080 |
+| AD-Q4_K | 4,20 GB | 0,147 [0,128; 0,167] | 29% | 0,850 | 20,8 dB | 0,166 |
+| AD-Q3_K | 3,60 GB | 0,206 [0,182; 0,232] | 41% | 0,801 | 18,6 dB | 0,267 |
+| AD-Q2_K | 2,55 GB | 0,359 [0,328; 0,389] | 72% | 0,671 | 14,7 dB | 0,421 |
 
-La columna "vs. nueva semilla" compara la distancia con el cambio que provoca unicamente variar la semilla en BF16 (LPIPS 0,499 para una imagen no relacionada del mismo prompt). Q2_K alcanza el 95% de esa referencia, es decir, produce una imagen practicamente tan distinta como si se cambiara la semilla.
+No se han publicado en la información disponible resultados de benchmarks estándar de generación de imágenes (FID, CLIP score, GenEval u otros) ni comparaciones con modelos de difusión de otros fabricantes.
 
 ## Requisitos de hardware
 
-- VRAM del denoiser: entre 2,39 GB (Q2_K) y 14,23 GB (BF16) solo para el fichero de difusion, segun el nivel de cuantizacion elegido.
-- A esa cifra hay que anadir el codificador de texto Qwen3-VL-8B (en el ejemplo se usa `Qwen3VL-8B-Instruct-Q4_K_M.gguf`) y el VAE (`qwen_image_2.1_vae_bf16.safetensors`). Los tamanos de estos dos componentes no se detallan en la informacion disponible, por lo que no se puede dar una cifra total de VRAM verificada.
-- GPU de referencia de las mediciones: A100 de 80 GB. No se publican requisitos de VRAM por modelo de GPU ni estimaciones de rendimiento para GPUs de consumo.
-- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible. Los tamanos de fichero mas bajos (Q2_K, Q3_K, Q4_K) son compatibles en cuanto a memoria con GPUs de gama alta de consumo, pero la model card no certifica ninguna configuracion concreta.
-- Opciones de despliegue: stable-diffusion.cpp (cliente `sd-cli` y API de servidor), la aplicacion Atomic Chat, y flujos basados en ComfyUI, dado que el VAE de referencia procede de Comfy-Org/Qwen-Image-2.1.
-- Requisito de version: es necesario usar una compilacion de stable-diffusion.cpp del 6 de octubre de 2026 o posterior (el commit `c150a6b` corrigio el manejo de listas de sigmas personalizadas).
-- Latencia y throughput: no disponibles. La model card no publica tiempos por imagen ni imagenes por segundo.
+- VRAM estimada para el denoiser según cuantización: aproximadamente 2,55 GB (AD-Q2_K), 3,60 GB (AD-Q3_K), 4,20 GB (AD-Q4_K), 5,40 GB (AD-Q5_K), 6,71 GB (AD-Q6_K), 7,59 GB (Q8_0) y 14,23 GB (BF16). A estas cifras hay que sumar la memoria del text encoder Qwen3-VL-8B y del VAE, que no se detalla en la información disponible.
+- GPUs recomendadas: no especificadas por el autor. Por tamaño, los ficheros de 4 bits y menores son compatibles con GPUs de consumo de gama media-alta; Q8_0 y BF16 requieren GPUs con más VRAM o ejecución parcial en CPU.
+- Cabe en GPU de consumo: sí, al menos las variantes AD-Q4_K, AD-Q3_K y AD-Q2_K, que ocupan entre 2,55 y 4,20 GB para el denoiser.
+- Opciones de despliegue: stable-diffusion.cpp (motor con el que se construyeron y verificaron los ficheros) y aplicaciones que lo integran, como Atomic Chat. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
+- Latencia y throughput: no disponibles. El modelo está destilado para 8 pasos de denoising a CFG 1, lo que reduce el número de evaluaciones del denoiser frente a pipelines convencionales, pero no se publican tiempos por imagen.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de terceros comparables en la informacion proporcionada. La comparacion posible se limita a las variantes del propio repositorio y al modelo base:
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen-Image-2.1-Turbo-GGUF (este) | 7,1B (denoiser) | No disponible | GGUF (BF16 a Q2_K) | qwen-research | Hugging Face, 209.995 descargas |
+| Qwen-Image-2.1-Turbo (base) | 7,1B (denoiser) | No disponible | BF16 | qwen-research | Hugging Face (Qwen/Qwen-Image-2.1-Turbo) |
+| Qwen-Image-2.1-Turbo-Uncensored-GGUF | 7,1B (denoiser) | No disponible | GGUF | qwen-research (según repositorio) | Hugging Face (AtomicChat) |
 
-| Modelo / fichero | Parametros (denoiser) | Pasos | CFG | Formato | Tamano | Licencia |
-|---|---|---:|---:|---|---:|---|
-| Qwen-Image-2.1-Turbo (BF16 original) | 7,1B | 8 | 1,0 | safetensors | equivalente a 14,23 GB en GGUF BF16 | qwen-research |
-| Qwen-Image-2.1-Turbo-GGUF Q8_0 | 7,1B | 8 | 1,0 | GGUF | 7,59 GB | qwen-research |
-| Qwen-Image-2.1-Turbo-GGUF Q4_K | 7,1B | 8 | 1,0 | GGUF | 4,05 GB | qwen-research |
-| Qwen-Image-2.1-Turbo-GGUF Q2_K | 7,1B | 8 | 1,0 | GGUF | 2,39 GB | qwen-research |
-| Qwen-Image-2.1 (base, sin destilar) | 7,1B (mismo generador, segun la model card) | no disponible | no disponible | no disponible | no disponible | qwen-research |
-
-Alternativas de otros desarrolladores en la misma categoria (generacion de imagenes text-to-image cuantizada en GGUF): no disponible en la informacion proporcionada.
+No se dispone de información sobre otros modelos de difusión comparables (por ejemplo, de otras familias) en los datos proporcionados, por lo que la comparación se limita a las variantes del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- Perdida de fidelidad con cuantizaciones agresivas: con Q4_K y Q3_K se producen desplazamientos visibles en la composicion, los rostros y el rotulado; con Q2_K la imagen deja de ser la misma que con BF16, incluso partiendo de la misma semilla y el mismo prompt.
-- El texto en la imagen se degrada antes que las fotografias: la metrica `text (zh)` es peor que el LPIPS global en todos los niveles (por ejemplo, 0,259 frente a 0,187 en Q4_K).
-- Dependencia de la programacion de sigmas: sin `--sigmas`, stable-diffusion.cpp aplica la programacion por defecto de Qwen-Image-2.1, para la que el modelo no fue destilado, y la imagen resultante es distinta. Omitir este parametro invalida los resultados esperados.
-- Dependencia de la version de stable-diffusion.cpp: se requiere una compilacion del 6 de octubre de 2026 o posterior para que funcionen las listas de sigmas personalizadas.
-- Licencia: la licencia declarada es "other" con nombre "qwen-research". La informacion disponible no detalla los terminos completos, pero un nombre de licencia basado en "research" sugiere restricciones para uso comercial. Debe verificarse el texto completo de la licencia del modelo base antes de cualquier despliegue en produccion.
-- Idiomas: no se declaran idiomas soportados en los metadatos. La validacion publicada de renderizado de texto se limita al chino. No hay evidencia publicada sobre calidad con prompts en castellano.
-- Sesgos: no se documenta ninguna evaluacion de sesgos en la informacion disponible. Al ser un modelo de generacion de imagenes entrenado con datos no especificados, es esperable que reproduzca sesgos presentes en sus datos de entrenamiento, pero esto no puede cuantificarse con lo publicado.
-- Riesgo de alucinacion visual: no se publican evaluaciones de seguimiento de prompt ni de fidelidad semantica frente al texto de entrada. Las metricas disponibles miden solo la diferencia respecto a BF16, no la correccion respecto al prompt.
-- Adopcion: el repositorio registra 0 descargas y 1 like, por lo que no existe una base de usuarios que haya validado el comportamiento en produccion.
-- El repositorio ocupa 42,2 GB en total, lo que exige espacio en disco considerable si se descargan varios niveles de cuantizacion.
-- Fecha de publicacion en los metadatos de Hugging Face: 9 de octubre de 2026 (ultima actualizacion el mismo dia).
+- La licencia qwen-research restringe el uso comercial; es necesario revisar los términos completos en el enlace a la licencia del modelo base antes de cualquier despliegue en producción.
+- La degradación por cuantización es significativa en los niveles bajos: AD-Q3_K presenta desplazamientos visibles en composición, rostros y rotulación, y AD-Q2_K genera una imagen notablemente distinta de la BF16 con la misma semilla.
+- El texto en imagen se degrada antes que las fotografías: el LPIPS sobre prompts con texto chino es de 0,166 en AD-Q4_K frente a 0,147 en el conjunto general, y sube a 0,267 en AD-Q3_K y 0,421 en AD-Q2_K.
+- El modelo Turbo requiere su propio schedule de 8 pasos a CFG 1; usar otros valores de CFG o un número distinto de pasos puede degradar la calidad de forma no documentada.
+- No se dispone de información sobre sesgos, riesgo de alucinación visual o limitaciones idiomáticas más allá de la evaluación en chino.
+- El pipeline abierto de Qwen-Image no incluye filtro de contenido según el autor; la variante Uncensored elimina la dirección de rechazo del text encoder, lo que traslada al usuario la responsabilidad sobre el contenido generado.
+- La información sobre requisitos de VRAM del text encoder y del VAE no está disponible, por lo que las estimaciones de memoria total del pipeline son incompletas.
+- No se han publicado benchmarks estándar de calidad de generación (FID, CLIP score) que permitan comparar objetivamente con otros generadores de imagen.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
-- stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp
-- VAE de referencia (Comfy-Org/Qwen-Image-2.1): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
-- Atomic Chat: https://atomic.chat/
-- Repositorio de Atomic Chat en GitHub: https://github.com/AtomicBot-ai/Atomic-Chat
-- Servidor de Discord de Atomic Chat: https://discord.gg/8wGSsvmg4V
+- Dataset de métricas y renders: https://huggingface.co/datasets/AtomicChat/Qwen-Image-2.1-Turbo-GGUF-metrics
+- Variante sin censura: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF
+- Motor stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp
+- Aplicación Atomic Chat: https://atomic.chat/
+- Repositorio GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord de AtomicChat: https://discord.gg/8wGSsvmg4V
+- Cuenta de X de AtomicChat: https://x.com/atomic_chat_hq

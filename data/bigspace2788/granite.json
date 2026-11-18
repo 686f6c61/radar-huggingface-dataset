@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "Bigspace2788/granite",
+  "slug": "bigspace2788-granite",
+  "author": "Bigspace2788",
+  "url": "https://huggingface.co/Bigspace2788/granite",
+  "created_at": "2026-11-18T00:08:49.000Z",
+  "updated_at": "2026-11-18T02:28:59.000Z",
+  "license": "archive",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340190038208,
+  "storage_human": "340.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

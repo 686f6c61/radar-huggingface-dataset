@@ -2,105 +2,106 @@
 
 ## Resumen
 
-Mapika/decider-4b-GGUF es la distribucion en formato GGUF del modelo Mapika/decider-4b v2.1, un modelo de decision y clasificacion desarrollado por Mapika. No es un modelo conversacional: no genera texto como respuesta, sino que lee un estado (por ejemplo, el texto de una incidencia) acompanado de una o varias preguntas, cada una con su lista explicita de opciones, y devuelve una probabilidad para cada opcion en una unica pasada hacia delante. La respuesta se obtiene leyendo los logits de los tokens correspondientes a las letras de cada opcion, divididos por una temperatura ajustada, mediante el script `decide_gguf.py` incluido en el repositorio.
+decider-4b es un modelo de decisión desarrollado por Mapika que no genera texto libre: lee un estado (por ejemplo, el texto de una incidencia) junto con una o varias preguntas, cada una con una lista explícita de opciones, y devuelve una probabilidad calibrada para cada opción en un único forward pass. Esta ficha cubre los ficheros GGUF (v3, publicados el 20 de octubre de 2026) del modelo base Mapika/decider-4b, pensados para su uso con llama.cpp y llama-cpp-python.
 
-El modelo cuenta con 4.205.751.296 parametros (~4,2 mil millones) y deriva de Qwen/Qwen3.5-4B-Base, segun declara el propio autor. Esta orientado a tareas de clasificacion con opciones cerradas, con calibracion explicita de probabilidades: la model card reporta metricas de ECE (error de calibracion esperado) ademas de precision y NLL, lo que lo hace util para enrutado, triaje y etiquetado automatico donde se necesita una confianza interpretable por clase.
+El modelo parte de Qwen/Qwen3.5-4B-Base y cuenta con 4.205.751.296 parámetros totales. Su valor diferencial es el enfoque "one-pass" con salida estructurada: en lugar de instruir a un LLM generativo para que responda con una etiqueta, se leen directamente los logits de los tokens correspondientes a las letras de cada opción en posiciones de respuesta predefinidas, divididos por una temperatura ajustada por tipo de pregunta. Esto produce distribuciones de probabilidad calibradas (ECE en torno a 0,047 en tareas in-task) y elimina la variabilidad de la decodificación autoregresiva.
 
-La relevancia de esta publicacion es practica: ofrece tres niveles de cuantizacion en GGUF (Q4_K_M de 2,7 GB, Q8_0 de 4,5 GB y BF16 de 8,4 GB) que permiten ejecutar el modelo en llama.cpp, con una degradacion de calidad medida y documentada respecto a los pesos bf16 en PyTorch. El autor publica tablas comparativas por cuantizacion y advierte explicitamente de los efectos de la decodificacion por lotes y de las diferencias CPU/GPU en las probabilidades de salida.
+La relevancia práctica está en tareas de clasificación y enrutamiento en producción: triaje de tickets, asignación de departamento, evaluación de urgencia o respuestas sí/no, donde se necesita una probabilidad explícita por clase y no una cadena de texto que haya que parsear. Los ficheros GGUF permiten ejecutar el modelo en CPU o en GPU de consumo con llama.cpp, con una pérdida de calidad mínima en Q8_0 respecto a los pesos bf16 en PyTorch.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder derivado de Qwen/Qwen3.5-4B-Base; la salida se lee de los logits de los tokens de opcion. El `config` del checkpoint declara una capa MTP, aunque no contiene pesos de multi-token-prediction |
-| Parametros totales | 4.205.751.296 (~4,2 mil millones) |
-| Parametros activos | No disponible (no se indica que el modelo sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF BF16 (sin cuantizar), Q8_0 y Q4_K_M. En Q4_K_M, la matriz de embedding (que es tambien la matriz de salida con las filas de letras de opcion) se almacena en Q6_K |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF para llama.cpp (variantes BF16, Q8_0 y Q4_K_M); el modelo base Mapika/decider-4b se distribuye en safetensors |
+| Arquitectura | Transformer decoder (base Qwen/Qwen3.5-4B-Base); lectura de logits en slots de respuesta |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 (sin cuantizar), Q8_0, Q4_K_M |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); pesos PyTorch del modelo base en safetensors |
+| Tamano del repo | 31,3 GB |
+| Ficheros GGUF | Q4_K_M 2,7 GB; Q8_0 4,5 GB; BF16 8,4 GB |
+| Pipeline | text-classification |
+| Version de los ficheros | v3 (2026-10-20); v2.1 disponible bajo el tag `v2.1` |
+| Entrada multimodal | solo con pesos PyTorch del modelo base y decider-ai 1.10.0; los GGUF contienen únicamente el modelo de texto |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de su modelo base, Qwen/Qwen3.5-4B-Base, y del mecanismo de lectura de salida. El modelo no produce texto libre: en cada ranura de respuesta del prompt (construido por `decider.prompt`) se leen los logits de los tokens que representan las letras de las opciones, se dividen por una temperatura ajustada y se normalizan para obtener una distribucion de probabilidad sobre cada lista de opciones. Esa temperatura se guarda en `decider_config.json` y vale 1.099 en la version publicada.
+El modelo se construye sobre el checkpoint Qwen/Qwen3.5-4B-Base, un transformer decoder de 4.205.751.296 parámetros. La innovación no está en la arquitectura de la red sino en el protocolo de inferencia: el prompt se construye con `decider.prompt`, que inserta cada pregunta con su lista de opciones y reserva un slot de respuesta por pregunta. La respuesta se obtiene leyendo los logits de los tokens correspondientes a las letras de las opciones en esos slots y normalizándolos tras dividir por una temperatura ajustada por tipo de pregunta (por ejemplo, 2,098 para preguntas de tipo Choice y 0,05 para respuestas sí/no del tipo Noul). No hay generación autoregresiva ni muestreo.
 
-El autor no especifica en la model card el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. Si se documenta el conjunto de evaluacion: un conjunto de regresion de 95 tareas, 144.226 preguntas, dividido en 67 tareas in-task y 28 held-out, con tareas como fin_phrasebank, medmcqa y mmlu. La conversion a GGUF se realizo con `convert_hf_to_gguf.py --no-mtp --outtype bf16` sobre el commit `c9064dded` de llama.cpp (2026-09-27) y posterior `llama-quantize` a Q8_0 y Q4_K_M; el flag `--no-mtp` es obligatorio porque el checkpoint no tiene pesos MTP aunque su config declare una capa.
+Los detalles de composición del dataset de entrenamiento, número de tokens y si se aplicó RLHF o DPO no están disponibles en la información proporcionada; la model card remite a la ficha del modelo base Mapika/decider-4b para los orígenes de entrenamiento y sus términos. El checkpoint declara una capa de multi-token prediction (MTP) en su configuración pero no contiene pesos MTP, de modo que la conversión a GGUF exige `convert_hf_to_gguf.py --no-mtp --outtype bf16` seguida de `llama-quantize`; sin el flag el fichero resultante no carga en llama.cpp. La conversión se realizó con llama.cpp `c9064dded` (2026-09-27).
 
 ## Capacidades
 
-- Clasificacion y decision con opciones cerradas: dada una situacion y una pregunta con una lista de opciones, devuelve la opcion elegida junto con la probabilidad de cada alternativa.
-- Multiples preguntas por estado en una sola pasada: el ejemplo de la model card resuelve a la vez el departamento responsable y el nivel de urgencia de una incidencia.
-- Probabilidades calibradas: la API devuelve `choice`, `confidence` y el diccionario `probs` completo, con calibracion medida mediante ECE.
-- Respuestas de tipo si/no y puntuacion: la API completa del paquete `decider-ai` (`system_one`) contempla respuestas si/no y puntuaciones, aunque en GGUF solo esta liberado `decide()` para preguntas de eleccion.
-- Ejecucion local en llama.cpp con soporte de GPU CUDA y Metal, o en CPU.
-- No dispone de generacion de texto util: el texto que produzca al cargarse en `llama-cli`, `llama-server`, Ollama o LM Studio no constituye su respuesta.
-- No se documenta soporte de tool calling, function calling, agentes, vision ni audio.
-- Capacidad multilingue limitada al ingles segun el campo `language` de la model card.
+- Clasificación con probabilidades calibradas: devuelve una probabilidad por cada opción de una lista cerrada, no texto libre.
+- Múltiples preguntas por estado: `decide()` acepta un estado y varias preguntas con sus opciones, resolviéndolas en un solo forward pass.
+- Preguntas de tipo sí/no (`system_one` con `score` y respuestas Noul) mediante decider-ai 1.6.0 o superior.
+- Salida estructurada determinista en cuanto a formato: la respuesta se lee de slots fijos, sin parseo de texto generado.
+- Inferencia en CPU y GPU vía llama.cpp / llama-cpp-python, con builds CUDA y Metal.
+- Entrada de imagen solo con los pesos PyTorch del modelo base y decider-ai 1.10.0; no disponible en los ficheros GGUF.
+- Multilingüe: no; el modelo declara únicamente inglés.
+- Tool calling, agentes y razonamiento multi-paso: no disponibles; el modelo no es conversacional ni genera texto.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: clasificar cada incidencia por departamento (billing, technical, sales) y por urgencia (low, medium, high) en una sola llamada, aprovechando que el modelo devuelve probabilidades por opcion para aplicar umbrales o derivar a revision humana cuando la confianza es baja.
-- Triaje de bandejas de entrada: asignar correos entrantes a categorias predefinidas con una confianza cuantificada, lo que permite automatizar el enrutado y marcar los casos ambiguos para revision.
-- Etiquetado de datasets para entrenamiento: generar etiquetas con probabilidad asociada sobre corpus de clasificacion (sentimiento, topicos, intencion) a bajo coste, usando Q4_K_M en CPU si no hay GPU disponible.
-- Analisis de encuestas con respuestas cerradas: mapear texto libre de encuestados a escalas o categorias predefinidas, manteniendo la distribucion de probabilidad para ponderar resultados.
-- Moderacion y politica de contenido: decidir si un texto incumple una politica concreta entre un conjunto reducido de categorias, con la ventaja de disponer de una medida de calibracion para fijar el punto de corte.
-- Enrutado dentro de agentes y pipelines multi-paso: como componente de decision barato que selecciona la siguiente herramienta o ruta de un flujo, en lugar de un modelo generativo de mayor coste.
-- Clasificacion en dominios especializados: la evaluacion incluye tareas como medmcqa y mmlu, de modo que el modelo se ha medido en preguntas de opcion multiple de tipo medico y de conocimiento general.
-- Procesamiento por lotes en servidores sin GPU: con 8 hilos de CPU, una peticion de 40 a 120 tokens tarda entre 0,3 y 0,7 segundos con Q4_K_M, lo que permite clasificacion masiva sin acelerador.
+- Triaje de tickets de soporte: se pasa el texto del ticket como estado y una pregunta con opciones de departamento (billing, technical, sales); el modelo devuelve la probabilidad de cada uno en un solo paso, lo que permite umbrales de confianza y derivación a revisión humana cuando la máxima probabilidad es baja.
+- Enrutamiento con múltiples decisiones por caso: `decide()` admite varias preguntas en la misma llamada (departamento y urgencia), de modo que un pipeline de atención al cliente obtiene ambas etiquetas con una única pasada por el modelo.
+- Moderación y etiquetado de contenido: clasificación de textos en categorías cerradas con probabilidad calibrada, útil para priorizar colas de revisión según la confianza del modelo.
+- Verificación de hipótesis en pipelines de datos: preguntas de tipo sí/no con `system_one` para comprobar si un registro cumple una condición, con score asociado en lugar de una respuesta textual que haya que interpretar.
+- Despliegue en entornos sin GPU: el fichero Q4_K_M (2,7 GB) con `gguf_options=dict(n_gpu_layers=0, n_threads=8)` permite ejecutar la clasificación en CPU manteniendo la precisión held-out del modelo bf16 según la tabla del autor.
+- Servicios de decisión de baja latencia: al requerir un único forward pass por prompt y no generar tokens, el coste por consulta es sustancialmente menor que el de un LLM generativo del mismo tamaño usado para clasificar.
+- Evaluación A/B y experimentación: la salida probabilística calibrada (ECE 0,0468 in-task en bf16) facilita métricas de calibración y comparación entre versiones del modelo sin ruido de muestreo.
 
 ## Benchmarks y rendimiento
 
-La model card publica la evaluacion sobre el conjunto de regresion de decider-4b (95 tareas, 144.226 preguntas, 67 tareas in-task y 28 held-out) con la temperatura de 1.099, leida mediante llama.cpp con build CUDA y comparada fila a fila con los pesos bf16 en PyTorch. La precision, la NLL y el ECE son medias sobre tareas.
+Resultados del conjunto de regresión del modelo base (95 tareas, 144.226 preguntas, 67 tareas in-task y 28 held-out) a temperatura Choice 2,098, leídos con llama.cpp (build CUDA, un prompt por decode) y comparados fila a fila con los pesos bf16 en PyTorch. Precisión, NLL y ECE son medias sobre tareas.
 
-| Formato | Precision in-task | NLL in-task | ECE in-task | Precision held-out | NLL held-out | ECE held-out | Coincidencia con bf16 PyTorch |
-|---|---|---|---|---|---|---|---|
-| Pesos bf16, PyTorch | 0,8308 | 0,4145 | 0,0308 | 0,7838 | 0,5703 | 0,0781 | referencia |
-| BF16 GGUF | 0,8308 | 0,4145 | 0,0308 | 0,7837 | 0,5700 | 0,0782 | 99,45 % |
-| Q8_0 | 0,8310 | 0,4145 | 0,0309 | 0,7829 | 0,5699 | 0,0778 | 99,31 % |
-| Q4_K_M | 0,8288 | 0,4194 | 0,0324 | 0,7834 | 0,5691 | 0,0733 | 97,06 % |
+| Modelo / fichero | In-task acc / NLL / ECE | Held-out acc / NLL / ECE | Misma respuesta que bf16 PyTorch |
+|---|---|---|---|
+| bf16, PyTorch | 0,8206 / 0,4523 / 0,0468 | 0,7823 / 0,5680 / 0,0841 | — |
+| Q8_0 | 0,8206 / 0,4525 / 0,0469 | 0,7813 / 0,5675 / 0,0841 | 99,44% |
+| Q4_K_M | 0,8193 / 0,4562 / 0,0467 | 0,7824 / 0,5693 / 0,0821 | 96,46% |
 
-Detalles reportados por el autor: el GGUF BF16 difiere de PyTorch solo en empates cercanos (diferencia mediana de probabilidad de 0,001); Q8_0 se mantiene dentro de ese ruido, con 31 tareas que suben y 39 que bajan, como maximo 0,9 puntos; Q4_K_M pierde 0,2 puntos de precision in-task con una NLL ligeramente peor, mientras que la precision held-out no cambia, con 54 tareas peores y 36 mejores. La mayor caida de Q4_K_M se da en fin_phrasebank (-3,5 puntos), seguida de medmcqa y mmlu (-1,3 puntos).
+El fichero BF16 GGUF no se evaluó sobre este conjunto. El autor advierte que los estados largos (decenas de miles de tokens) se degradan más con Q4_K_M de lo que refleja la tabla, medido sobre v2.1.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (a partir del tamano de archivo, con margen para cache KV y contexto): Q4_K_M en torno a 3 GB; Q8_0 en torno a 5 GB; BF16 en torno a 9 GB. No son cifras publicadas por el autor.
-- Cabe en GPU de consumo: Q4_K_M y Q8_0 son aptos para tarjetas con 4-8 GB de VRAM; BF16 requiere tarjetas de gama alta o profesional.
-- Funciona tambien en CPU: la model card reporta 0,3 a 0,7 segundos por peticion de 40 a 120 tokens con Q4_K_M sobre 8 hilos de CPU, y Q8_0 aproximadamente un 20 % mas lento.
-- GPU empleadas en la medicion: build CUDA de llama.cpp. No se ejecutaron las builds de CPU ni Metal sobre el conjunto de regresion.
-- Opciones de despliegue: llama.cpp mediante `llama-cpp-python` (version 0.3.35 o superior), con el script `decide_gguf.py` del repositorio; el paquete `decider-ai==1.5.0` para el manejo del prompt y la temperatura. Los ficheros pueden cargarse en llama-cli, llama-server, Ollama o LM Studio, pero en esos entornos se comportan como un modelo de continuacion de texto y no como el clasificador previsto.
-- Ajuste de ejecucion: `n_gpu_layers=-1` para cargar todas las capas en GPU si la build dispone de aceleracion; `n_threads` configurable para CPU.
-- Advertencia de rendimiento: con varias peticiones en un mismo `llama_decode`, las probabilidades cambian segun el resto del lote (hasta 0,02 en BF16 y 0,16 en Q4_K_M); se recomienda una peticion por decodificacion para obtener resultados reproducibles.
+- VRAM estimada: Q4_K_M 2,7 GB, Q8_0 4,5 GB, BF16 8,4 GB de pesos; el consumo real añade el contexto y el overhead de llama.cpp.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para Q4_K_M y Q8_0; A100, H100 o RTX 4090 para mayor throughput y contextos largos. Builds CUDA (`CMAKE_ARGS="-DGGML_CUDA=on"`) y Metal en Apple Silicon.
+- Consumer GPU: sí; Q4_K_M y Q8_0 caben en GPUs de consumo con 6-8 GB de VRAM. También es viable en CPU con `n_gpu_layers=0`.
+- Opciones de despliegue: llama.cpp, llama-cpp-python, decider-ai (extra `[gguf]`) y el script `decide_gguf.py`. El servidor HTTP de decider-ai no sirve ficheros GGUF.
+- Latencia y throughput: no disponibles de forma numérica; al ser un único forward pass por prompt, el coste por consulta es menor que el de generación autoregresiva. El autor recomienda un prompt por `llama_decode`: con varios prompts en un mismo decode las probabilidades varían con el resto del lote (hasta 0,02 en BF16 y 0,16 en Q4_K_M en la versión anterior del modelo).
+- Nota: las builds de CPU y GPU producen probabilidades ligeramente distintas sobre el mismo fichero; las mediciones de la tabla usan la build CUDA.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros modelos de decision con lectura directa de logits que sean comparables. La comparativa mas directa es entre las propias variantes de cuantizacion del modelo:
-
-| Variante | Tamano de archivo | Precision in-task | Precision held-out | Coincidencia con bf16 PyTorch | Uso previsto |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BF16 GGUF | 8,4 GB | 0,8308 | 0,7837 | 99,45 % | Sin cuantizar; base para generar otras cuantizaciones |
-| Q8_0 | 4,5 GB | 0,8310 | 0,7829 | 99,31 % | Misma calidad que los pesos bf16 |
-| Q4_K_M | 2,7 GB | 0,8288 | 0,7834 | 97,06 % | La mas pequena, con ~0,2 puntos menos de precision in-task |
+| decider-4b (GGUF v3) | 4.205.751.296 | no disponible | Clasificación one-pass con probabilidades calibradas | apache-2.0 | Hugging Face, GGUF para llama.cpp |
+| Qwen3.5-4B-Base | ~4B | no disponible | LLM generativo base | no disponible | Hugging Face |
+| LLM generativo de ~4B usado para clasificar | ~4B | variable | Generación de texto con parseo posterior | variable | variable |
 
-Como referencia de origen, el modelo base Qwen/Qwen3.5-4B-Base es un modelo de generacion de texto y no resulta comparable en la tarea de decision con opciones cerradas. No se dispone de alternativas de otros autores en la informacion proporcionada.
+No se dispone en la información proporcionada de resultados de benchmarks de alternativas comparables sobre el mismo conjunto de regresión, por lo que la comparación cuantitativa de rendimiento entre modelos queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional. Cargarlo en herramientas de chat produce texto de continuacion que no constituye su respuesta; la respuesta valida se obtiene leyendo los logits de los tokens de opcion.
-- La calidad de la salida depende de construir el prompt con `decider.prompt` y de aplicar la temperatura ajustada (1,099) guardada en `decider_config.json`.
-- La decodificacion por lotes altera las probabilidades: hasta 0,02 en BF16 y 0,16 en Q4_K_M. Se debe puntuar una peticion por `llama_decode` para obtener resultados estables.
-- Las builds de CPU y GPU dan probabilidades ligeramente distintas sobre el mismo fichero (por ejemplo, 0,846 y 0,830 para "billing", frente a 0,844 en PyTorch). Los umbrales de decision deberian fijarse con la build que se vaya a usar en produccion.
-- La cuantizacion Q4_K_M degrada tareas concretas: fin_phrasebank baja 3,5 puntos y medmcqa y mmlu bajan 1,3 puntos.
-- Solo soporta ingles, segun el campo `language` de la model card. No hay datos de rendimiento en castellano.
-- La API completa del paquete (`system_one` con puntuaciones y respuestas si/no, y el servidor HTTP) no esta disponible para ficheros GGUF en la version publicada; solo `decide()` para preguntas de eleccion.
-- La conversion del checkpoint exige el flag `--no-mtp`; sin el, el fichero generado no se puede cargar en llama.cpp.
-- No se documentan sesgos especificos ni tasas de alucinacion. Al tratarse de un clasificador de opciones cerradas, el riesgo principal no es inventar contenido, sino elegir una opcion incorrecta con confianza alta; el ECE medido (0,0308 in-task y 0,0781 held-out en bf16) cuantifica ese riesgo de calibracion.
-- Licencia Apache-2.0, heredada de decider-4b y de Qwen/Qwen3.5-4B-Base, que permite uso comercial y modificacion con las condiciones habituales de atribucion y aviso de licencia.
+- No es un modelo conversacional: cargarlo en `llama-cli`, `llama-server`, Ollama o LM Studio produce un modelo de texto que continúa prompts, y ese texto generado no es su respuesta. El uso correcto exige el protocolo de lectura de logits de `decider.prompt` y `decide_gguf.py` o decider-ai.
+- Solo inglés: no hay soporte multilingüe declarado.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades pueden ser erróneas o poco informativas en estados fuera de la distribución de entrenamiento; la calibración held-out (ECE 0,0841 en bf16) es peor que la in-task.
+- Los estados largos (decenas de miles de tokens) se degradan más con Q4_K_M de lo que muestra la tabla de regresión, según medición del autor sobre v2.1.
+- Requisito de un prompt por `llama_decode`: batchear varios prompts en un mismo decode altera las probabilidades.
+- Diferencias menores entre builds de CPU y GPU sobre el mismo fichero.
+- La entrada de imagen no está disponible en los GGUF; requiere los pesos PyTorch del modelo base y decider-ai 1.10.0.
+- El servidor HTTP de decider-ai no sirve ficheros GGUF.
+- Licencia apache-2.0 para los ficheros GGUF, pero los términos de las fuentes de entrenamiento se remiten a la ficha del modelo base; conviene revisarlos antes de un uso comercial.
+- La conversión exige `--no-mtp`; sin ese flag el fichero generado no carga en llama.cpp.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Mapika/decider-4b-GGUF
 - Modelo base: https://huggingface.co/Mapika/decider-4b
-- Modelo base del base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
-- Paquete `decider-ai` (version 1.5.0): no se proporciona URL en la informacion disponible
-- llama.cpp: no se proporciona URL en la informacion disponible; el commit de conversion citado es `c9064dded` (2026-09-27)
+- Tag de la versión anterior: https://huggingface.co/Mapika/decider-4b-GGUF/tree/v2.1
+- Modelo base de la arquitectura: https://huggingface.co/Qwen/Qwen3.5-4B-Base
+- llama.cpp (conversión y cuantización): https://github.com/ggml-org/llama.cpp
+- llama-cpp-python: https://github.com/abetlen/llama-cpp-python

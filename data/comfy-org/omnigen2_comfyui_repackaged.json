@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 33,
-  "downloads_30d": 20458,
+  "downloads_30d": 20948,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,5 +38,21 @@
   "renamed_to": "Comfy-Org/OmniGen-2",
   "renamed_at": "2026-11-11T02:32:18.584Z",
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    },
+    {
+      "title": "Comfy Cloud: Run ComfyUI online | Zero Setup, Powerful GPUs, …",
+      "url": "https://cloud.comfy.org/",
+      "snippet": "Bring your creative ideas to life with Comfy Cloud. Build and run your workflows to generate stunning images and videos instantly …"
+    },
+    {
+      "title": "ComfyUI France - La communauté francophone de génération IA",
+      "url": "https://comfyui.fr/",
+      "snippet": "Comfy Registry 800+ custom nodes vérifiés. Trouvez les extensions parfaites pour votre workflow."
+    }
+  ]
 }

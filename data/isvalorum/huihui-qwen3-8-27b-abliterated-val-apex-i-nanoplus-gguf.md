@@ -2,109 +2,99 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantizacion GGUF del modelo Huihui-Qwen3.8-27B-abliterated, publicada por el usuario IsValorum bajo la denominacion VAL-APEX-I NanoPlus. No se trata de un modelo entrenado desde cero, sino de una compresion quirurgica tensor a tensor del checkpoint base de 27.320.697.856 parametros (27,3 B), orientada a reducir el peso en disco a 11,90 GB (2,85 bits por peso) manteniendo la calidad de razonamiento en un nivel equivalente a un Q4_K_M convencional.
+Esta ficha describe la cuantización GGUF **Huihui-Qwen3.8-27B-Abliterated VAL-APEX-I NanoPlus V3**, publicada por el usuario IsValorum. No es un modelo entrenado desde cero, sino una conversión a formato GGUF del modelo `huihui-ai/Huihui-Qwen3.8-27B-abliterated`, que a su vez deriva de la familia Qwen3.8 de 27B de parámetros. El autor aplica su propio esquema de cuantización denominado VAL-APEX-I (Vector-calibrated Asymmetric Layer-wise Outlier-preserving Recurrent-aware Unified Matrix-quantization), orientado a preservar la calidad en contextos largos y razonamiento multi-paso con un tamaño de fichero muy contenido.
 
-La familia base es una variante "abliterated" del modelo Qwen3.8-27B, es decir, una version en la que se ha eliminado quirurgicamente la direccion de rechazo del modelo original para dar lugar a un modelo sin censura. El checkpoint comprimido conserva la arquitectura hibrida del original: 64 capas, de las cuales 47 son SSM lineales tipo DeltaNet y 17 son capas de atencion completa periodicas, con una ventana de contexto declarada de 256.000 tokens.
+El resultado es un fichero de 12,18 GB con 3,57 bits por peso (BPW) de media y 866 tensores auditados, que según el autor reporta una perplejidad en WikiText-2 de 5,7729 ± 0,4960. La model card indica que la versión V3 corrige problemas de la build anterior, como inestabilidad del estado recurrente, degradación del contexto y mezcla de idiomas durante la generación. El modelo base es una variante "abliterated" (sin las capas de rechazo alineadas), lo que lo orienta a usos sin filtrado editorial.
 
-Su relevancia practica radica en el objetivo de despliegue: segun el autor, el modelo completo con los 256K tokens de contexto cabe en VRAM de una GPU de 24 GB, y el archivo de pesos se ejecuta en GPUs de 16 GB. La licencia declarada es Apache 2.0 y el unico idioma soportado segun los metadatos es el ingles.
+La relevancia actual radica en que permite ejecutar un modelo de 27B con contexto nativo declarado de 256K en equipos de consumo con 12-16 GB de VRAM, un espacio tradicionalmente reservado a modelos de 7B-13B. La licencia Apache 2.0 y el formato GGUF lo hacen directamente desplegable en llama.cpp y herramientas compatibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida densa lineal-cuadratica: 64 capas, 47 SSM lineales DeltaNet (recurrencia) + 17 capas de atencion completa periodicas |
-| Parametros totales | 27.320.697.856 (27,3 B), dato real de safetensors |
-| Parametros activos | No aplica: es un modelo denso, no MoE |
-| Longitud de contexto | 256.000 tokens (256K), segun el autor |
-| Tipos de cuantizacion | Mezcla GGUF por tensor: `ssm_*` en F32, puertas de atencion en Q8_0, atencion completa en IQ3_S/Q4_K, proyecciones down SwiGLU en IQ3_XXS/IQ3_S, gate/up en IQ2_XXS/IQ3_XXS, `output.weight` en Q6_K. Tamano total 11,90 GB (2,85 BPW) |
-| Idiomas soportados | Ingles (en), unico idioma declarado en los metadatos |
+| Arquitectura | Transformer denso (derivada de Qwen3.8), cuantizada en GGUF |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 256K declarados por el autor (contexto nativo) |
+| Tipos de cuantizacion | GGUF VAL-APEX-I NanoPlus V3, 3,57 BPW de media |
+| Idiomas soportados | en (ingles; el autor menciona correccion de mezcla de idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp), cuantizacion con calibracion imatrix |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del checkpoint subyacente es un transformer hibrido: combina 47 capas de espacio de estados (SSM) lineales basadas en DeltaNet con 17 capas de atencion completa distribuidas periodicamente a lo largo de las 64 capas totales. Este diseno reduce el coste cuadratico de la atencion, ya que solo una fraccion de las capas mantiene una matriz de atencion completa, y es lo que permite al autor afirmar que el modelo completo con 256K de contexto se mantiene dentro de la VRAM de una GPU de 24 GB. Al ser un modelo denso, los 27,3 B de parametros se activan en cada token, a diferencia de un MoE de tamano comparable.
+El modelo base es un transformer denso de la familia Qwen3.8 con 27,3 mil millones de parámetros. Sobre él, `huihui-ai` aplicó el proceso de "abliteration", que consiste en identificar y neutralizar las direcciones de activación asociadas al rechazo de peticiones, de modo que el modelo responde sin las capas de alineación habituales. IsValorum realiza después la cuantización a GGUF con su pipeline VAL-APEX-I, que según la model card combina calibración vectorial, asignación asimétrica de precisión por capa, preservación de valores atípicos (outliers) y un tratamiento específico del estado recurrente para mantener la coherencia en contextos largos.
 
-Sobre el proceso de entrenamiento del modelo base no hay informacion disponible en los datos proporcionados: no se indica el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. Lo unico documentado es que el checkpoint base es una version "abliterated" del Qwen3.8-27B, es decir, con la direccion de rechazo ablacionada; el metodo exacto de ablacion no se detalla en la model card. La innovacion tecnica declarada en este repositorio es la propia receta de cuantizacion VAL-APEX-I, que segun su autor realiza una auditoria matematica tensor a tensor con calibracion imatrix, preservando sin comprimir el estado recurrente (`ssm_*` en F32) y la cabeza de salida (`output.weight` en Q6_K) para evitar la deriva acumulativa del estado recurrente y la rotura de los delimitadores de razonamiento.
+La model card no detalla el número de tokens de entrenamiento del modelo base, la composición del dataset ni si hubo fases de RLHF o DPO; esos datos corresponden al modelo original de Qwen y no se reproducen aquí. La innovación técnica destacable de esta publicación es el esquema de cuantización por capas con matrices de calibración de millones de tokens y la corrección explícita de los fallos de la versión previa (inestabilidad recurrente, degradación de contexto y fuga de idioma). El autor documenta un mapa tensor a tensor en un fichero `tensor-map.tsv` certificado.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con plantilla de chat propia orientada a uso agéntico ("Hardened Agentic Chat Template") y control del esfuerzo de razonamiento.
-- Modo de razonamiento explicito, con delimitadores de pensamiento (`<think>`) que la receta de cuantizacion trata de preservar intactos.
-- Razonamiento de multiples pasos y cadenas de pensamiento largas, aprovechando la ventana declarada de 256K tokens.
-- Generacion de codigo, con advertencia explicita del autor sobre el parametro de penalizacion por repeticion para evitar el intercambio de caracteres en salida de sintaxis.
-- Ejecucion local en contenedores compatibles con llama.cpp; los tags incluyen `endpoints_compatible`, lo que apunta a servidores con API compatible con OpenAI.
-- Capacidades multilingues: limitadas al ingles segun los metadatos del repositorio.
-- Comportamiento sin rechazos (uncensored) derivado de la ablacion del modelo base.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Vision, audio u otras modalidades: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno en inglés.
+- Razonamiento multi-paso y modo de razonamiento (reasoning), con fidelidad declarada a través de todas las capas.
+- Generación de código, incluyendo tareas de ingeniería de software y pipelines según la evaluación agéntica citada (Shortbench / NanoBench).
+- Recuperación asociativa en contexto largo (hasta 256K tokens declarados).
+- Respuestas sin filtrado editorial gracias a la base abliterated.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con el ecosistema llama.cpp.
+- Soporte de plantilla de chat endurecida para uso agéntico, según la model card.
 
 ## Casos de uso
 
-- Asistente de razonamiento en local sobre GPU de gama alta de consumo: con 11,08 GiB de huella de pesos, el modelo se ejecuta integramente en VRAM en GPUs de 16 GB y superiores, lo que permite mantener un asistente de razonamiento de 27,3 B sin depender de APIs externas.
-- Analisis de documentacion extensa: la ventana declarada de 256K tokens permite ingerir manuales tecnicos, expedientes o bases de codigo completas en una sola pasada, y el autor sostiene que esa ventana completa cabe en 24 GB de VRAM gracias al diseno hibrido con solo 17 capas de atencion completa.
-- Generacion y revision de codigo en entornos aislados: el modelo puede integrarse en un servidor llama.cpp local para autocompletado y revision, siempre ajustando el parametro de penalizacion por repeticion segun la advertencia del autor para evitar sustituciones de caracteres en la sintaxis.
-- Investigacion sobre alineacion y comportamiento de rechazo: al ser una variante "abliterated" cuantizada, sirve como material de estudio comparativo frente al checkpoint original con rechazos, permitiendo medir como se comporta la ablacion tras una compresion agresiva a 2,85 BPW.
-- Backend de agentes con contexto largo: la plantilla de chat agéntica y el control de esfuerzo de razonamiento permiten encadenar pasos de planificacion y ejecucion manteniendo el historial completo dentro de la ventana de contexto.
-- Procesamiento de lotes en CPU o con offload parcial: con 11,90 GB en disco, el modelo puede desplegarse en servidores sin GPU dedicada mediante llama.cpp, aceptando una penalizacion de latencia a cambio de no requerir acelerador.
-- Evaluacion comparativa de recetas de cuantizacion: el repositorio publica sus mediciones de perplejidad frente a cuantizaciones planas, lo que lo convierte en un punto de referencia util para replicar el arnes `llama-perplexity` sobre arquitecturas hibridas SSM + atencion.
+- **Asistente de código en local:** el modelo puede integrarse en un IDE o CLI mediante llama.cpp para autocompletado y refactorización, aprovechando su tamaño de 12,18 GB para caber en GPUs de consumo con 16 GB de VRAM.
+- **Análisis de repositorios y documentos largos:** con contexto de 256K tokens, permite cargar ficheros extensos o historiales de conversación completos sin truncar, útil para revisión de código o resúmenes de documentación técnica.
+- **Agentes autónomos de ingeniería:** la model card cita evaluación en tareas agénticas de software (pipelines, integridad de sistemas), por lo que encaja en flujos de ejecución multi-paso con tool calling sobre llama.cpp.
+- **Generación de contenido sin restricciones editoriales:** al estar abliterated, se emplea en entornos de investigación o creación donde se requiere ausencia de rechazos, siempre bajo responsabilidad del operador.
+- **Prototipado de chatbots especializados:** su formato GGUF y licencia Apache 2.0 permiten desplegar un servicio conversacional en una sola máquina sin depender de APIs externas.
+- **Investigación sobre cuantización:** el mapa tensor a tensor y las métricas de perplejidad publicadas lo convierten en un caso de estudio para evaluar el impacto de esquemas de cuantización agresivos (3,57 BPW) en modelos de 27B.
+- **Procesamiento por lotes en hardware modesto:** con 12,18 GB de fichero, se puede ejecutar en estaciones con una RTX 4090 o incluso en CPU con suficiente RAM, para tareas de generación no interactivas.
 
 ## Benchmarks y rendimiento
 
-El autor publica mediciones de perplejidad sobre WikiText-2 con longitud de contexto 512, obtenidas directamente sobre los pesos GGUF compilados con `llama-perplexity`. Son datos autodeclarados, sin verificacion independiente. No hay resultados disponibles de MMLU, HumanEval, GSM8K ni de ninguna otra prueba estandar de capacidades.
+| Metrica | Resultado |
+|---|---|
+| WikiText-2 PPL (NanoPlus V3) | 5,7729 ± 0,4960 |
+| Tamano de fichero | 12,18 GB (11,35 GiB) |
+| BPW de fichero completo | 3,57 |
+| Tensores auditados | 866 |
 
-| Especificacion | Tamano en disco | Huella en memoria | BPW medio | Perplejidad WikiText-2 (ctx 512) | Delta frente a BF16 | Nivel de calidad equivalente |
-|---|---|---|---|---|---|---|
-| BF16 sin comprimir (referencia) | 54,00 GB (50,29 GiB) | 50,29 GiB | 16,00 | ~6,0000 (referencia) | Base (0,00 %) | Referencia sin perdida |
-| VAL-APEX-I MiniPlus V2.1 | 15,33 GB (14,28 GiB) | 14,28 GiB | 3,93 | 6,1466 +/- 0,4919 | +0,1466 (+2,44 %) | Frontera Q5_K_M / Q6_K |
-| VAL-APEX-I NanoPlus (este repositorio) | 11,90 GB (11,08 GiB) | 11,08 GiB | 2,85 | 6,4238 +/- 0,4960 | +0,4238 (+7,06 %) | Q4_K_M solido |
-| Q4_K_M plano estandar | 17,10 GB | 15,93 GiB | 4,50 | ~6,22 a 6,28 | +0,22 a +0,28 (+3,7 %) | Compromiso industrial estandar |
-| Q3_K_M plano estandar | 13,50 GB | 12,57 GiB | 3,44 | ~6,45 a 6,70 | +0,45 a +0,70 (+7,5 %) | Caida perceptible de sintaxis y ruido de razonamiento |
-| APEX Mini generico (IQ2_S) | 10,20 GB | 9,50 GiB | 2,50 | ~7,10 a 7,80+ | +1,10 a +1,80+ (+18,3 %) | Ruptura severa del razonamiento |
+La model card menciona una evaluación en el conjunto agéntico Shortbench / NanoBench (12 tareas objetivas de ingeniería de software, pipelines e integridad de sistemas), pero el texto proporcionado se interrumpe antes de incluir los resultados numéricos. No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni comparativas numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- Huella de pesos: 11,08 GiB en memoria una vez cargado el GGUF de 11,90 GB en disco, segun el autor.
-- VRAM estimada para inferencia: 11,08 GiB solo de pesos; hay que sumar la cache KV de las 17 capas de atencion completa, que crece con la longitud de contexto. El autor afirma que la ventana completa de 256K cabe en una GPU de 24 GB, pero no publica el desglose de memoria de la cache.
-- GPU de 16 GB: el autor indica que el modelo se ejecuta integramente en VRAM en GPUs de 16 GB (por ejemplo, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080); el contexto utilizable en ese caso sera inferior a 256K.
-- GPU de 24 GB: RTX 3090, RTX 4090, A5000 y similares; es el escenario para el que el autor reclama el contexto completo de 256K.
-- GPU de 48 GB o mas: A6000, L40S, A100 80 GB, H100; utiles para servir varias instancias concurrentes o aumentar el lote.
-- Despliegue: llama.cpp, llama-server (API compatible con OpenAI segun el tag `endpoints_compatible`), y por compatibilidad de formato, Ollama, LM Studio y koboldcpp.
-- Latencia y throughput estimados: no disponible. El autor no publica mediciones de tokens por segundo ni de latencia por peticion.
+- **VRAM estimada:** el fichero pesa 12,18 GB; para inferencia completa en GPU se necesitan al menos 13-14 GB de VRAM, más el espacio para el contexto KV. Con 256K de contexto el consumo de KV crece de forma significativa y puede requerir offloading a RAM.
+- **GPU recomendadas:** RTX 4090 (24 GB) o RTX 3090 (24 GB) para carga completa con margen; A100/H100 para despliegues de producción con contexto largo.
+- **GPU de consumo:** cabe en tarjetas de 16 GB (RTX 4080, 4070 Ti Super) con contexto moderado; en 12 GB requiere offloading parcial a RAM del sistema.
+- **Opciones de despliegue:** llama.cpp y derivados (Ollama, LM Studio, koboldcpp); el tag `endpoints_compatible` sugiere compatibilidad con servidores de endpoints. No se confirma soporte de vLLM o TGI para este GGUF.
+- **Latencia y throughput:** no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-Comparativa dentro de la propia familia de publicaciones del autor, que es la unica informacion verificable disponible:
+| Modelo | Parametros | Contexto | Formato / tamano | Licencia |
+|---|---|---|---|---|
+| Huihui-Qwen3.8-27B-Abliterated VAL-APEX-I NanoPlus V3 (este) | 27,3B | 256K | GGUF, 12,18 GB | Apache 2.0 |
+| Huihui-Qwen3.8-27B-Abliterated VAL-APEX-I MiniPlus V3 | 27,3B | 256K | GGUF, 14,16 GB | Apache 2.0 |
+| Qwen3.8 27B VAL-APEX-I NanoPlus V3 (sin abliterar) | 27,3B | 256K | GGUF, 12,18 GB | Apache 2.0 |
+| Qwen3.8 27B EfficientThink Uncensored NanoPlus | 27,3B | no disponible | GGUF, 11,93 GB | Apache 2.0 |
 
-| Modelo | Parametros | Contexto | Formato / tamano | Perplejidad declarada | Licencia |
-|---|---|---|---|---|---|
-| Este repositorio (NanoPlus) | 27,3 B densos | 256K | GGUF, 11,90 GB, 2,85 BPW | 6,4238 (+7,06 %) | Apache 2.0 |
-| Huihui-Qwen3.8-27B-Abliterated VAL-APEX-I MiniPlus V2.1 | 27,3 B densos | 256K | GGUF, 15,33 GB, 3,93 BPW | 6,1466 (+2,44 %) | Apache 2.0 |
-| Huihui-Qwen3.8-27B-abliterated (BF16 base) | 27,3 B densos | 256K | Safetensors, 54,00 GB | Referencia (~6,0000) | Apache 2.0 |
-| Qwen3.8-27B-EfficientThink-Uncensored VAL-APEX-I MiniPlus V2.1 | no disponible | no disponible | GGUF | no disponible | no disponible |
-
-No se dispone de datos de benchmarks de capacidades ni de comparaciones con modelos de otros autores dentro de la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento frente a alternativas externas.
+Las alternativas listadas proceden de la propia colección del autor y comparten base y esquema de cuantización; la diferencia principal es el grado de filtrado (abliterated frente a estándar) y el perfil de tamaño (NanoPlus frente a MiniPlus). No se dispone de datos de benchmarks comparativos entre ellas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "abliterated": la direccion de rechazo ha sido eliminada, por lo que no aplica ninguna garantia de alineacion de seguridad. Puede generar contenido que el modelo original rechazaria, incluido material danino o ilegal. No es apto para despliegues de cara al publico sin filtros adicionales.
-- Idioma: unicamente ingles declarado en los metadatos. No hay evidencia de capacidades en castellano ni en otros idiomas.
-- Perdida de calidad por cuantizacion: el propio autor mide un incremento de perplejidad del 7,06 % frente a BF16, con un margen de error de +/- 0,4960. Es peor que el Q4_K_M plano estandar (+3,7 %) a pesar de ocupar 5,2 GB menos, por lo que la equivalencia declarada con "Q4_K_M solido" es una estimacion del autor, no una medicion de capacidades.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje de esta escala y no cuantificado en la informacion disponible.
-- Advertencia del autor sobre penalizacion por repeticion: un valor inadecuado provoca intercambio de caracteres en la salida, especialmente critico al generar codigo. Requiere ajuste manual antes de ponerlo en produccion.
-- Deriva del estado recurrente: el autor documenta que las cuantizaciones planas genericas sufren acumulacion de deriva en las capas SSM y rompen los delimitadores `<think>`; esta receta lo mitiga manteniendo `ssm_*` en F32, pero no elimina el riesgo en contextos muy largos.
-- Benchmarks autodeclarados: las cifras de perplejidad provienen del propio publicador, sobre un unico conjunto (WikiText-2 a 512 tokens de contexto) y con una sola semilla de evaluacion. No hay verificacion independiente ni pruebas de MMLU, HumanEval o GSM8K.
-- Trazabilidad del modelo base: la informacion proporcionada no detalla el proceso de ablacion ni los datos de entrenamiento del checkpoint original de 27,3 B, por lo que no es posible auditar su procedencia completa.
-- Licencia: Apache 2.0 declarada en el repositorio, lo que en principio permite uso comercial, pero conviene verificar que la licencia del checkpoint base sea compatible, ya que la model card no detalla las condiciones heredadas.
-- Fechas de publicacion: el repositorio figura creado el 6 de octubre de 2026 y con 0 descargas y 0 me gusta, por lo que carece de validacion por parte de la comunidad.
+- **Modelo abliterated:** la eliminación de las capas de rechazo implica que el modelo puede generar contenido sensible sin filtro; el operador asume la responsabilidad de moderación.
+- **Idioma:** la model card declara únicamente inglés; el rendimiento en castellano no está garantizado y el autor menciona haber corregido fugas de idioma, lo que sugiere fragilidad multilingüe.
+- **Riesgo de alucinación:** inherente a los modelos de 27B y acentuado por cuantizaciones agresivas de 3,57 BPW; conviene validar salidas en producción.
+- **Contexto largo:** aunque se declaran 256K tokens, la calidad efectiva en ventanas extremas no está verificada con benchmarks publicados en la información disponible.
+- **Historial de inestabilidad:** la propia model card advierte de fallos graves en builds anteriores (estado recurrente, degradación de contexto, mezcla de idiomas); se recomienda usar exclusivamente la versión V3 certificada.
+- **Licencia:** Apache 2.0 permite uso comercial, pero el modelo base abliterated puede arrastrar obligaciones o consideraciones éticas adicionales según el contexto de despliegue.
+- **Soporte de herramientas:** no se confirma soporte en vLLM o TGI para este GGUF; el ecosistema validado es llama.cpp.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-NanoPlus-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
-- Version hermana MiniPlus V2.1: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-MiniPlus-V2.1-GGUF
-- Especialista en razonamiento sintetico: https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-MiniPlus-V2.1-GGUF
-- Coleccion VAL-APEX-I: https://huggingface.co/collections/IsValorum/val-apex-i-6ac563d1784a04a1bb177f47
-- Coleccion APEX-I-MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104
-- Coleccion APEX-I-NanoPlus: https://huggingface.co/collections/IsValorum/apex-i-nanoplus-6ab41467c988a1b1cb9b83bc
-- Paper, blog o repositorio del modelo base: no disponible en la informacion proporcionada.
+- Variante MiniPlus V3: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-MiniPlus-V3-GGUF
+- Qwen3.8 27B NanoPlus V3 (estándar): https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
+- Qwen3.8 27B EfficientThink Uncensored NanoPlus: https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-NanoPlus-GGUF
+- Colección NanoPlus Abliterated 27B: https://huggingface.co/collections/IsValorum/val-apex-nanoplus-abliterated-27b-6acfec5503f6e74218f71f64
+- Colección MiniPlus Abliterated 27B: https://huggingface.co/collections/IsValorum/val-apex-miniplus-abliterated-27b-6acfec541ee5628d2632c663
+- Shortbench / NanoBench: https://shortbench.vercel.app/
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

@@ -2,81 +2,102 @@
 
 ## Resumen
 
-El repositorio `CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0` es una publicación de pesos en Hugging Face firmada por el usuario CompiledThoughts, distribuida bajo licencia Apache 2.0 y creada el 17 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", no tiene pipeline declarado y su model card se limita a la línea de licencia, sin README técnico, sin descripción del modelo base ni instrucciones de uso.
+Qwen3.8-Flash-Next-NVFP4-Q8_0 es una conversión a GGUF del checkpoint NVFP4 publicado por NVIDIA, que a su vez cuantiza el modelo Qwen3.8-Flash-Next de Qwen. La conversión la mantiene el usuario independiente CompiledThoughts y no está revisada ni avalada por NVIDIA ni por Qwen. El resultado es un archivo de 119,02 GiB (127.809.147.712 bytes) que contiene 176.944 millones de parámetros y está pensado específicamente para ejecutarse mediante streaming desde un SSD NVMe, no para cargarse completo en memoria.
 
-El identificador del repositorio sugiere que se trata de una o varias versiones cuantizadas de un modelo denominado "Qwen3.8-Flash-Next", en formatos NVFP4 (FP4 de NVIDIA con escalado por bloques) y Q8_0 (cuantización de 8 bits típica del ecosistema GGUF). Esta lectura procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación aportada: no se especifica el modelo base, el número de parámetros, la longitud de contexto ni el procedimiento de cuantización empleado.
+El modelo es un transformer de tipo mezcla de expertos (MoE) con 48 capas y 512 expertos enrutados por capa, de los cuales solo se activan 10 por token. Incorpora además componentes menos habituales: capas GatedDeltaNet, expertos compartidos, hyper-connections y una tabla hashed n-gram (PLE) de 51.200 millones de parámetros. La conversión conserva los expertos enrutados en el formato NVFP4 original de NVIDIA y cuantiza el resto a Q8_0.
 
-La relevancia de una publicación así, si se confirma su contenido, residiría en la posibilidad de ejecutar un modelo grande en hardware con soporte nativo de FP4 (arquitecturas Blackwell) o en equipos modestos mediante Q8_0, reduciendo el coste por token frente a pesos en BF16. No obstante, la ausencia total de documentación, de métricas y de adopción hace imposible validar esa hipótesis con la información disponible.
+Su relevancia práctica es que permite ejecutar un modelo de 177B parámetros en una GPU consumer de 16 GB de VRAM y 32 GB de RAM, a costa de leer aproximadamente 100 GiB desde disco bajo demanda. El motor de referencia es inferredThoughts, un servidor compatible con la API de OpenAI que también soporta tool calling para agentes de programación.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se puede confirmar que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | el identificador indica NVFP4 y Q8_0; no verificado en la model card |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible (el sufijo Q8_0 es habitual en GGUF, pero no se confirma en la informacion proporcionada) |
+| Arquitectura | Transformer MoE con GatedDeltaNet, expertos compartidos y hyper-connections |
+| Parámetros totales | 176.944.046.976 (176,944B) |
+| Parámetros activos | 4,3B densos + 2,4B de expertos enrutados (10 de 512 por capa) + 16 filas de la tabla n-gram por token |
+| Longitud de contexto | No disponible como límite oficial; el autor documenta ejecuciones con `--ctx` de 8.192 y 32.000 tokens |
+| Tipos de cuantización | Expertos enrutados en NVFP4 con escalas por experto; resto en Q8_0; normas en F32; tabla n-gram en Q8_0 con escala FP8 restaurada |
+| Idiomas soportados | No disponible |
+| Licencia | NVIDIA Open Model License y Qwen Community License 1.0 (etiqueta `license: other`) |
+| Formato de pesos | GGUF (archivo principal de 127.809.147.712 bytes más un archivo MTP de 1.515.803.392 bytes) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo base ni sobre el proceso de cuantización aplicado. La model card únicamente declara la licencia Apache 2.0, por lo que se desconoce si los pesos derivan de un transformer denso, de una arquitectura MoE o de un esquema híbrido, así como el número de tokens de entrenamiento, la composición del dataset o si hubo fases de RLHF, DPO u otro ajuste por preferencias.
+La arquitectura es un transformer MoE de 48 capas con 512 expertos enrutados por capa y activación de 10 expertos por token, lo que mantiene el coste computacional por token muy por debajo de lo que sugiere el tamaño total. Además de la atención, el modelo incluye capas GatedDeltaNet, expertos compartidos y hyper-connections, componentes que no aparecen en un transformer denso convencional. La tabla hashed n-gram (PLE) de 51.200 millones de parámetros es, en términos de recuento, la parte más grande del archivo (50,66 GiB en Q8_0), aunque por token solo se consultan 16 filas de la misma.
 
-Tampoco hay detalles sobre el método de cuantización (calibración, granularidad de los bloques de escala, tratamiento de las capas de atención y de embedding) ni sobre posibles pérdidas de precisión respecto a los pesos originales. Cualquier afirmación sobre el rendimiento de estos pesos frente al modelo sin cuantizar requeriría una evaluación empírica que el repositorio no proporciona.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO, ya que la model card de esta conversión no los detalla y no se ha proporcionado la documentación del modelo base. La innovación técnica destacable de esta ficha no está en el entrenamiento sino en el empaquetado: la conversión mantiene los expertos enrutados en NVFP4 sin recuantizar y combina ese formato con Q8_0 para el resto, algo que GGUF no puede expresar de forma nativa porque `general.file_type` admite una sola etiqueta por archivo. Por eso las herramientas reportan el archivo como Q8_0 aunque sea una mezcla. Tampoco se incluyen el cabezal MTP (unos 4B de parámetros, distribuido aparte) ni el codificador de visión, de modo que esta conversión es exclusivamente de texto.
 
 ## Capacidades
 
-- No se documenta ninguna capacidad específica en la información disponible.
-- No hay confirmación de soporte de tool calling, function calling ni de flujos de agente multi-paso.
-- No hay confirmación de capacidades multilingües ni de idiomas soportados.
-- No hay confirmación de modo "thinking", razonamiento extendido, visión, audio u otras modalidades.
-- Por el identificador, se trataría de pesos para inferencia de texto, pero esta afirmación no está respaldada por documentación alguna.
+- Generación de texto conversacional multi-turno, con plantilla de chat y pipeline `text-generation`.
+- Razonamiento y respuestas encadenadas; los tags del repositorio incluyen `inferred-thoughts`.
+- Tool calling y function calling: el servidor de referencia expone una API compatible con OpenAI y el autor indica compatibilidad con agentes de programación como Cline.
+- Integración con clientes que hablan el protocolo OpenAI (`/v1`) y página de chat en el propio servidor.
+- Prefill por capas para prompts largos, pensado para aprovechar la lectura única de cada experto por prompt.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Visión y audio: no soportadas en esta conversión (el codificador de visión no está incluido).
 
 ## Casos de uso
 
-Los siguientes escenarios son aplicaciones plausibles del formato de cuantización, condicionadas a que el modelo base tenga las capacidades correspondientes (no verificadas):
-
-- Servicio de inferencia de alto rendimiento en GPUs Blackwell: el formato NVFP4 está diseñado para ejecutarse con tensor cores de 4 bits, lo que permite servir modelos grandes con aproximadamente la mitad de memoria de pesos que FP8 y mayor throughput por GPU. Requiere hardware con soporte nativo de FP4 y software de serving compatible.
-- Despliegue en CPU o GPU de gama media mediante Q8_0: este formato mantiene una fidelidad alta respecto a los pesos originales y es habitual en motores de inferencia tipo llama.cpp u Ollama, lo que permitiría ejecutar el modelo en estaciones de trabajo sin aceleradores de datacenter.
-- Evaluación del impacto de la cuantización: usar ambos formatos como sujetos de prueba en un estudio comparativo de degradación de precisión (razonamiento, matemáticas, código) frente a los pesos en BF16 del modelo base.
-- Asistentes locales sin conexión: un despliegue cuantizado con Q8_0 puede integrarse en herramientas de escritorio para tareas de resumen, generación de código o búsqueda semántica sin enviar datos a APIs externas, siempre que la licencia del modelo base lo permita.
-- Prototipado en pipelines de CI/CD: incorporar el modelo como componente local en pruebas automatizadas (generación de casos de test, revisión de diffs, documentación) evita depender de proveedores externos y reduce costes variables.
-- Investigación en formatos de compresión: comparar NVFP4 y Q8_0 sobre el mismo modelo permite medir el compromiso entre tamaño en disco, ancho de banda de memoria requerido y calidad de salida en tareas concretas.
-- Benchmarking de infraestructura: utilizar los dos formatos para medir latencia y tokens por segundo en distintas GPUs (por ejemplo, FP4 en Blackwell frente a dequantización de Q8_0 en arquitecturas anteriores).
+- Asistentes de programación en local: el modelo se sirve en `http://127.0.0.1:8080/v1` y se conecta a Cline u otros agentes que usan tool calling, lo que permite tener un agente de código funcionando sin depender de APIs externas ni de GPUs de datacenter.
+- Prototipado y evaluación de modelos de 177B en estaciones de trabajo: con 16 GB de VRAM, 32 GB de RAM y un NVMe Gen4/Gen5 se puede medir el comportamiento real del modelo antes de comprometer hardware mayor.
+- Procesamiento por lotes de prompts largos: el prefill por capas lee cada experto una sola vez por prompt, lo que hace viable analizar documentos de varios miles de tokens a 119-193 tok/s de prefill según contexto.
+- Chat multi-turno con contexto medio (hasta 32.000 tokens documentados): útil para asistencia técnica o análisis de conversaciones largas donde la latencia de decodificación de 7-9 tok/s es aceptable para uso interactivo no crítico.
+- Entornos con restricciones de exportación o privacidad de datos: al ejecutarse íntegramente en local, ningún prompt sale de la máquina, lo que encaja en auditorías internas o datos sensibles.
+- Investigación sobre offloading y streaming de MoE: el par modelo+motor sirve como banco de pruebas reproducible para estudiar el compromiso entre ancho de banda de SSD, aciertos de caché de expertos y throughput.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos numéricos publicados son de velocidad de inferencia con streaming desde SSD:
+
+| Configuración | Prefill | Decodificación |
+|---|---:|---:|
+| `--ctx 8192`, prompt de 5.700 tokens | 193 tok/s | 8,5 a 9,1 tok/s |
+| `--ctx 32000`, turnos de 2.800 a 3.300 tokens | 119 a 139 tok/s | 7,3 a 8,1 tok/s |
+| Misma máquina, llama.cpp | no disponible | 4,9 tok/s |
+
+Hardware de referencia: RTX 5060 Ti 16 GB, 32 GB DDR5, NVMe Gen5, Windows 11 nativo, `inferred serve` 1.1 con ajustes por defecto.
 
 ## Requisitos de hardware
 
-- VRAM específica: no disponible, porque se desconoce el número de parámetros y la longitud de contexto del modelo base.
-- Estimación genérica por formato (cálculo basado en el tamaño de los pesos, no en datos del repositorio): Q8_0 emplea unos 8,5 bits por parámetro, en torno a 1,06 GB por cada 1000 millones de parámetros; NVFP4 emplea 4 bits más escalas de bloque, en torno a 0,55-0,6 GB por cada 1000 millones de parámetros. A esas cifras hay que sumar la caché KV, que depende del contexto, del número de capas y de cabezas.
-- GPU recomendadas: para NVFP4, GPU con soporte nativo de FP4 (generación Blackwell y posteriores). Para Q8_0, cualquier GPU con suficiente VRAM (A100, H100, L40S, RTX 4090/5090) o incluso CPU con AVX2/AVX-512.
-- Viabilidad en GPU de consumo: indeterminable sin conocer el tamaño del modelo; si el modelo base ronda los 7-14 mil millones de parámetros, Q8_0 cabría en GPUs de 16-24 GB y NVFP4 en GPUs de 12-16 GB.
-- Opciones de despliegue: para Q8_0, llama.cpp, Ollama, LM Studio o cualquier runtime GGUF; para NVFP4, frameworks de serving con soporte de cuantización FP4 (por ejemplo, TensorRT-LLM o vLLM, sujeto a versión y compatibilidad). No confirmado para este repositorio concreto.
-- Latencia y throughput: no disponible.
+- VRAM: 16 GB es el mínimo documentado; el motor mantiene en VRAM los pesos densos y los expertos más usados, y el resto se reparte entre RAM y SSD.
+- RAM: 32 GB documentados; los expertos de segundo nivel de uso se cachean en memoria del sistema.
+- Almacenamiento: SSD NVMe local Gen4 o Gen5 con 128 GB libres; aproximadamente 100 GiB del archivo permanecen en disco y se leen bajo demanda.
+- GPU: RTX 50-series o RTX PRO Blackwell con 16 GB, driver NVIDIA R570+ y CUDA 12.8+. El formato NVFP4 requiere soporte hardware de esa generación; no se documenta funcionamiento en Ada, Ampere o GPUs de consumo anteriores.
+- Sistema operativo: Windows 11 o WSL2 con Ubuntu 24.04.
+- Despliegue: motor inferredThoughts (Rust, compilado con `--features cuda`), servidor compatible con OpenAI. No se documenta soporte en vLLM, llama.cpp, Ollama ni TGI para este archivo; de hecho, llama.cpp se cita solo como comparación de velocidad y rinde menos de la mitad.
+- Throughput: 8,5-9,1 tok/s de decodificación con contexto de 8K y 7,3-8,1 tok/s con 32K; prefill de 119-193 tok/s según longitud de prompt.
 
 ## Comparativa con modelos similares
 
-No disponible. Sin conocer el modelo base, su tamaño y sus resultados, no es posible establecer una comparación rigurosa con alternativas de la misma categoría. La única comparación interna posible es entre los dos formatos del propio repositorio: NVFP4 prioriza ahorro de memoria y throughput en hardware Blackwell, mientras que Q8_0 prioriza fidelidad y portabilidad entre motores de inferencia.
+| Modelo | Parámetros | Contexto | Formato / ejecución | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-NVFP4-Q8_0 (esta ficha) | 176,944B (MoE) | No disponible; ejecuciones documentadas hasta 32K | GGUF mixto NVFP4/Q8_0 con streaming desde SSD | NVIDIA Open Model License + Qwen Community License 1.0 | Hugging Face, 8.507 descargas |
+| nvidia/Qwen3.8-Flash-Next-NVFP4 | Mismo modelo base en NVFP4 | No disponible | Checkpoint NVFP4 para carga completa | NVIDIA Open Model License | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | Mismo modelo base en precisión original | No disponible | Pesos originales | Qwen Community License 1.0 | Hugging Face |
+| llama.cpp sobre este mismo GGUF | 176,944B | No disponible | GGUF con offloading convencional | Según pesos | 4,9 tok/s de decodificación en el hardware de referencia |
+
+La comparación relevante no es de calidad —los tres primeros son el mismo modelo en distintos empaquetados— sino de viabilidad de despliegue: el checkpoint NVFP4 y los pesos originales exigen mucha más VRAM que 16 GB, mientras que esta conversión es la única de las listadas que el autor documenta como ejecutable en una GPU consumer de 16 GB.
 
 ## Limitaciones y advertencias
 
-- La model card no contiene documentación técnica: no se especifica modelo base, tamaño, contexto, idiomas ni método de cuantización.
-- Riesgo de alucinación: inherente a cualquier modelo generativo, no cuantificado para estos pesos.
-- Sesgos: desconocidos; no hay información sobre los datos de entrenamiento ni sobre evaluaciones de sesgo.
-- Licencia: el repositorio declara Apache 2.0, pero al tratarse de un derivado, la licencia del modelo base podría imponer condiciones adicionales. Verificar la procedencia antes de cualquier uso comercial.
-- Estado del repositorio: 0 descargas y 0 "likes", sin validación comunitaria ni issues públicos; no hay garantía de integridad o reproducibilidad de los pesos.
-- Fecha de creación declarada (2026-09-17): inusualmente posterior a la fecha habitual de publicación de modelos de este tipo; conviene confirmar la vigencia del repositorio.
-- Compatibilidad de hardware: NVFP4 exige GPUs con tensor cores FP4; su uso en arquitecturas anteriores implicaría dequantización y pérdida del beneficio de rendimiento.
-- Ausencia de benchmarks: sin datos publicados, no se puede afirmar que la cuantización conserve la calidad del modelo original.
-- Los resultados de la búsqueda web asociada no contienen información sobre este modelo (se refieren a la instalación del navegador Google Chrome) y no deben usarse como fuente.
+- Conversión independiente: no está hecha, revisada ni avalada por NVIDIA ni por Qwen; los fallos de conversión son responsabilidad del autor del repo.
+- Solo texto: el codificador de visión no está incluido, así que no reproduce las capacidades multimodales del modelo base si las tuviera.
+- El cabezal MTP va en un archivo aparte de 1,41 GiB; sin él se pierden las ventajas de decodificación especulativa asociadas.
+- La etiqueta `general.file_type` reporta Q8_0 aunque el archivo mezcla NVFP4 y Q8_0, lo que puede confundir a herramientas de inspección o a pipelines automáticos.
+- Dependencia fuerte de hardware: exige GPU Blackwell de 16 GB o superior con NVFP4, driver R570+ y CUDA 12.8+; no hay soporte documentado para GPUs anteriores.
+- Dependencia de disco: el rendimiento depende críticamente de un NVMe Gen4/Gen5 local; un SSD SATA o un disco de red degradarán el throughput de forma severa.
+- Licencia doble y restrictiva: se aplican simultáneamente la NVIDIA Open Model License y la Qwen Community License 1.0; hay que revisar ambas antes de uso comercial.
+- Idiomas soportados no documentados en esta ficha; no se puede asumir cobertura multilingüe sin verificarla contra el modelo base.
+- Sin benchmarks de calidad publicados en la información disponible, por lo que no hay evidencia numérica de rendimiento en tareas downstream para esta conversión concreta.
+- Riesgo de alucinación y sesgos: no documentados específicamente para esta conversión; deben evaluarse sobre el modelo base.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0
-- Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0
+- Modelo base (NVIDIA): https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
+- Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Motor de streaming: https://github.com/compiledthoughts/Inferred-Thoughts
+- Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
+- Licencia Qwen Community License 1.0: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Panel de métricas Model Pulse: https://huggingface.co/spaces/tardellirs/model-pulse?model=CompiledThoughts/Qwen3.8-Flash-Next-NVFP4-Q8_0

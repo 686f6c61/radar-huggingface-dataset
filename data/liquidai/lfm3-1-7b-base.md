@@ -2,108 +2,93 @@
 
 ## Resumen
 
-LFM3-1.7B-Base es el checkpoint preentrenado (texto únicamente) que sirve de tronco a LFM3-1.7B, el modelo conversacional de la familia LFM3 de Liquid AI. Cuenta con 1.728.801.536 parámetros (1,73B) y una arquitectura tri-híbrida de 24 capas que combina 13 convoluciones cortas con compuerta, 5 capas de atención de ventana deslizante y 6 capas de atención global, con una ventana de contexto de 256K tokens y un vocabulario de 128.000 tokens.
+LFM3-1.7B-Base es el checkpoint preentrenado de la familia LFM3 de Liquid AI, un modelo de lenguaje de 1,73 mil millones de parámetros disenado especificamente para despliegue en el borde (edge): telefonos moviles, portatiles y dispositivos con recursos limitados. Se trata del modelo base sobre el que se construye LFM3-1.7B, la variante conversacional e instruida, y esta pensado como punto de partida para preentrenamiento continuado y postentrenamiento propio.
 
-El modelo se ha preentrenado sobre 22 billones (22T) de tokens. Los últimos 3,5T corresponden a una fase de mid-training con datos curados de mayor calidad, una mayor proporción de trazas agénticas y llamadas a herramientas, y la extensión del contexto hasta los 256K tokens. Respecto a LFM2, la mezcla incorpora más artículos científicos, código a nivel de repositorio, más fuentes de conocimiento y bastante más matemáticas.
+La innovacion principal es su arquitectura tri-hibrida: de las 24 capas totales, 13 son convoluciones cortas con compuertas (gated short convolutions), 5 son atencion de ventana deslizante y 6 son atencion global. Esta mezcla reduce el coste computacional y de memoria frente a un transformer clasico de atencion completa, manteniendo una ventana de contexto de 256.000 tokens (entrada mas salida) que resulta notable para su tamano.
 
-Su relevancia actual es doble: por un lado, está diseñado para el edge (a 4 bits ocupa aproximadamente 1 GB, por lo que cabe en un teléfono o un portátil); por otro, se distribuye como base para especialización, es decir, como punto de partida para preentrenamiento continuado y post-entrenamiento propio. No es un modelo para usar directamente en chat: para conversación, tool calling y agentes, Liquid AI remite explícitamente a LFM3-1.7B. El repositorio es muy reciente (creado el 26 de octubre de 2026) y tiene una adopción todavía baja (15 descargas, 40 likes en el momento de la consulta).
+El modelo se ha preentrenado sobre 22 billones de tokens, de los cuales los ultimos 3,5 billones corresponden a datos de mid-training curados con trazas agenticas y llamadas a herramientas. A 4 bits ocupa aproximadamente 1 GB de memoria, lo que lo hace viable en practicamente cualquier dispositivo moderno. Soporta 16 idiomas y se distribuye bajo licencia LFM 1.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Tri-híbrida: 24 capas (13 convoluciones cortas con compuerta, 5 de atención de ventana deslizante, 6 de atención global) |
-| Parametros totales | 1.728.801.536 (1,73B), dato real de safetensors |
-| Parametros activos | No aplica: modelo denso, no es MoE |
-| Longitud de contexto | 262.144 tokens (256K), entrada + salida |
-| Tipos de cuantizacion | Pesos publicados en BF16; el autor indica ~1 GB de memoria a 4 bits. No se documentan en la información disponible ficheros GGUF, AWQ, GPTQ ni EXL2 oficiales |
-| Idiomas soportados | 16: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco |
-| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, etiquetada como `other` en Hugging Face) |
-| Formato de pesos | safetensors en BF16; repositorio de 3,5 GB; requiere `trust_remote_code=True` (`custom_code`) |
+| Arquitectura | Tri-hibrida: 24 capas (13 convoluciones cortas con compuertas, 5 atencion de ventana deslizante, 6 atencion global) |
+| Parametros totales | 1.728.801.536 (1,73B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 256K tokens (entrada + salida) |
+| Tipos de cuantizacion | 4 bits mencionado por el autor (aproximadamente 1 GB); otros formatos no disponibles |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
+| Licencia | LFM 1.0 (license: other) |
+| Formato de pesos | safetensors (transformers, custom_code) |
 | Vocabulario | 128.000 tokens |
-| Tipo de checkpoint | Base preentrenado, solo texto, sin post-entrenamiento |
+| Tamano del repositorio | 3,5 GB |
+| Tipo de checkpoint | Preentrenado, solo texto (base) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una híbrida de tres componentes sobre 24 capas: 13 capas de convolución corta con compuerta, 5 capas de atención con ventana deslizante y 6 capas de atención global. Este reparto implica que solo 11 de las 24 capas mantienen atención, lo que reduce el coste asociado al caché KV en contextos largos frente a un transformer de atención completa equivalente. El modelo comparte código de modelado con LFM3-1.7B y se carga en `transformers` con `trust_remote_code=True` y `dtype="bfloat16"`.
+LFM3-1.7B-Base emplea una arquitectura tri-hibrida que combina tres tipos de capas en un unico transformer: convoluciones cortas con compuertas (gated short convolutions), atencion de ventana deslizante y atencion global. De las 24 capas, 13 son convolucionales, 5 usan atencion de ventana deslizante y 6 emplean atencion global. Este diseno busca reducir el coste de atencion cuadratica en secuencias largas manteniendo capacidad de modelado global, algo critico para un modelo que aspira a operar con 256K tokens de contexto en hardware de borde. El vocabulario es de 128.000 tokens.
 
-El preentrenamiento cubre 22T tokens. La fase final de 3,5T tokens es un mid-training sobre datos curados de mayor calidad que incorpora trazas agénticas y llamadas a herramientas diversas, y que además extiende la ventana de contexto hasta 256K tokens. En comparación con la generación LFM2, la mezcla de datos añade más artículos científicos, código a nivel de repositorio, un abanico más amplio de fuentes de conocimiento y un volumen notablemente superior de matemáticas. Al ser un checkpoint base, no consta que se hayan aplicado fases de RLHF o DPO: ese post-entrenamiento es el que da lugar a LFM3-1.7B. La model card no detalla la composición exacta del dataset ni el reparto por idioma.
+El entrenamiento cubre 22 billones de tokens en total. Los ultimos 3,5 billones corresponden a una fase de mid-training con datos curados que incluyen trazas agenticas y llamadas a herramientas, y es en esta fase donde se extiende la ventana de contexto hasta los 256K tokens. Al ser un checkpoint base, no se ha aplicado postentrenamiento de tipo RLHF o DPO; el autor lo presenta explicitamente como material de partida para preentrenamiento continuado y postentrenamiento propio. La model card no detalla la composicion exacta del dataset ni innovaciones adicionales como decodificacion especulativa.
 
 ## Capacidades
 
-- Generación de texto por continuación de secuencia (next-token prediction): es su función nativa como modelo base, sin alineación conversacional.
-- Razonamiento y conocimiento general adquiridos en el preentrenamiento, con refuerzo específico en matemáticas y literatura científica según la composición declarada de la mezcla.
-- Generación de código, incluyendo código a nivel de repositorio, por la inclusión explícita de este tipo de datos en el corpus.
-- Multilingüismo declarado en 16 idiomas, con español entre ellos.
-- Ventana de contexto de 256K tokens (entrada más salida), ampliada durante el mid-training.
-- Prioris agénticos latentes: el mid-training incluye trazas de agente y llamadas a herramientas, lo que facilita el post-entrenamiento posterior, pero no implica que el modelo base ejecute tool calling de forma fiable sin ajuste.
-- No dispone de visión, audio ni modo "thinking" documentado; esas variantes corresponden a otros miembros de la familia LFM3 (vision, audio, omni, decision).
-- No soporta instrucciones ni plantillas de chat de serie: no hay tokens especiales de rol ni formato de conversación publicado en la información disponible.
+- Generacion de texto autoregresiva: al ser un modelo base, la capacidad principal es la continuacion y generacion de texto, sin alineacion conversacional.
+- Razonamiento y conocimiento general: preentrenado sobre 22T tokens, con capacidad de razonamiento basico y conocimiento factual propio de su escala.
+- Codigo y matematicas: capacidad derivada del preentrenamiento; no se publican resultados especificos en la model card.
+- Trazas agenticas y llamadas a herramientas: el mid-training incluye datos de agentic traces y tool calls, por lo que el modelo base ya ha visto patrones de uso de herramientas, aunque sin postentrenamiento especifico de tool calling.
+- Multilingue: 16 idiomas declarados (ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso y polaco).
+- Contexto largo: ventana de 256K tokens de entrada mas salida, adecuada para documentos extensos y conversaciones multi-turno largas.
+- Base para especializacion: pensado para fine-tuning, preentrenamiento continuado y postentrenamiento por parte del usuario.
+- No incluye vision, audio ni modo thinking (segun la informacion disponible; la familia LFM3 tiene variantes de vision, audio, omni y decision, pero este checkpoint es solo texto).
 
 ## Casos de uso
 
-- Preentrenamiento continuado para dominio específico: el checkpoint está pensado como tronco sobre el que seguir entrenando con corpus propietarios (legal, sanitario, financiero), aprovechando que parte de un modelo ya expuesto a 22T tokens y a 256K de contexto.
-- Asistente en un idioma concreto: ajuste fino supervisado sobre datos en español, catalán o portugués para obtener un modelo de 1,73B especializado, con la ventaja de que a 4 bits cabe en ~1 GB y puede desplegarse en local.
-- Investigación en post-entrenamiento: banco de pruebas para probar recetas de SFT, DPO o RL sobre una arquitectura híbrida (convolución + atención) en lugar de un transformer puro, con un coste de cómputo contenido.
-- Generación de código en pipelines internos: tras un ajuste fino con pares instrucción-respuesta, puede emplearse para autocompletado o generación de parches en un repositorio, apoyándose en los datos de código a nivel de repositorio vistos en el preentrenamiento.
-- Modelo base para destilación: generar datos sintéticos o servir de profesor/alumno en procesos de destilación hacia modelos más pequeños de la familia (LFM2.5-230M, LFM2.5-350M) o hacia variantes cuantizadas.
-- Procesamiento de documentos largos en el edge: resumen o extracción sobre entradas de hasta 256K tokens en un portátil, sin GPU dedicada, una vez aplicado el ajuste necesario para la tarea concreta.
-- Base para experimentos de agentes: al haber visto trazas agénticas durante el mid-training, es un punto de partida razonable para investigar formatos de tool calling propios antes de fijar una plantilla definitiva.
+- Preentrenamiento continuado en dominio: el modelo sirve como inicializacion para adaptar el conocimiento a un dominio vertical (legal, medico, financiero) con corpus propios, aprovechando su contexto de 256K tokens para documentos largos.
+- Postentrenamiento y alineacion propios: equipos que quieran construir su propio modelo instruido o conversacional pueden partir de este checkpoint y aplicar SFT, DPO o RLHF segun sus necesidades, en lugar de depender de la variante ya alineada.
+- Agentes locales en dispositivos: gracias a sus aproximadamente 1 GB a 4 bits, puede ejecutarse en telefonos y portatiles para tareas de agente ligero (resumen, extraccion, clasificacion) sin conexion a la nube, con los datos permaneciendo en el dispositivo.
+- Procesamiento de documentos largos en el borde: con 256K tokens de contexto, puede resumir o extraer informacion de contratos, informes o transcripciones extensas directamente en un portatil, sin enviar el contenido a un servidor.
+- Generacion de codigo asistida en local: integrable en editores o herramientas de desarrollo que necesiten autocompletado o generacion de fragmentos sin latencia de red, aprovechando su capacidad de codigo derivada del preentrenamiento.
+- Investigacion en arquitecturas hibridas: su combinacion de convoluciones y atencion lo convierte en una base util para estudiar eficiencia, extrapolacion de contexto y comportamiento de capas hibridas en modelos pequenos.
+- Clasificacion y etiquetado a gran escala: al ser un modelo base, puede adaptarse con cabezas de clasificacion o fine-tuning ligero para tareas de moderacion, enrutamiento o etiquetado multilingue en 16 idiomas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card ni los extractos del blog de Liquid AI consultados incluyen cifras de MMLU, HumanEval, GSM8K ni de evaluaciones de contexto largo para este checkpoint base.
-
-| Benchmark | LFM3-1.7B-Base | Referencia comparable |
-|---|---|---|
-| MMLU | No disponible | No disponible |
-| HumanEval | No disponible | No disponible |
-| GSM8K | No disponible | No disponible |
-| RULER / contexto largo | No disponible | No disponible |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos en BF16: 1,73B × 2 bytes ≈ 3,5 GB, cifra coherente con el tamaño del repositorio (3,5 GB). Con caché de activaciones y overhead del runtime, el consumo real se sitúa típicamente en 4-5 GB de VRAM (estimación aritmética, no medida publicada).
-- Pesos en FP32: ≈ 6,9 GB de VRAM (estimación).
-- Cuantización a 8 bits: ≈ 1,7 GB para los pesos (estimación).
-- Cuantización a 4 bits: ≈ 1 GB, cifra aportada por el autor; cabe en teléfonos y portátiles modernos.
-- Caché KV: solo afecta a las 11 capas con atención (5 de ventana deslizante y 6 globales), no a las 13 convolucionales. El desglose de cabezas y dimensión por cabeza no está disponible, por lo que no se puede calcular el consumo exacto a 256K tokens.
-- GPU recomendadas: cualquier GPU consumer con 6 GB o más permite inferencia en BF16 (RTX 3060 12 GB, RTX 4060 Ti, RTX 4090); en 4 bits basta una GPU integrada o incluso CPU. A100 y H100 son innecesarias para inferencia, aunque pueden tener sentido para preentrenamiento continuado o ajuste fino.
-- Despliegue: la vía documentada es `transformers` con `AutoModelForCausalLM.from_pretrained(..., device_map="auto", dtype="bfloat16", trust_remote_code=True)`. No se confirma en la información disponible soporte oficial en vLLM, llama.cpp, Ollama ni TGI, ni la existencia de pesos GGUF; la dependencia de `custom_code` complica la portabilidad a otros runtimes.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: aproximadamente 1 GB a 4 bits segun el autor; en precision completa (fp16/bf16) el checkpoint de 1,73B requiere del orden de 3,5 GB de pesos mas overhead de activaciones y cache KV.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 en adelante, RTX 4090) puede ejecutarlo con holgura; en entornos de servidor, A100 o H100 no son necesarios para inferencia, aunque pueden usarse para fine-tuning.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer con al menos 4-6 GB de VRAM en cuantizacion, y en CPU con suficiente RAM.
+- Despliegue en movil y portatil: el autor indica que a 4 bits ocupa aproximadamente 1 GB y cabe en cualquier telefono o portatil.
+- Opciones de despliegue: transformers (libreria declarada, con custom_code); vLLM, llama.cpp, Ollama o TGI no se mencionan en la informacion disponible, por lo que su compatibilidad no esta confirmada.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Base | 1,73B | 256K | Base preentrenado, solo texto | LFM Open License v1.0 | Hugging Face (15 descargas, 40 likes) |
-| LFM3-1.7B | 1,73B | 256K | Post-entrenado para chat, tool calling y agentes | LFM Open License v1.0 | Hugging Face |
-| LFM2.5-1.2B-Instruct | ~1,2B (según denominación) | No disponible | Instruct de generación anterior | No disponible en la información consultada | Hugging Face |
-| LFM2.5-1.2B-Thinking | ~1,2B (según denominación) | No disponible | Con modo de razonamiento | No disponible en la información consultada | Hugging Face |
-
-La comparación con modelos de otros fabricantes en el rango de 1,5-2B (Qwen, Gemma, Llama) no está cubierta por la información proporcionada; no se dispone de datos verificados de parámetros, contexto ni rendimiento para incluirlos en la tabla.
+| LFM3-1.7B-Base | 1,73B | 256K | Tri-hibrida (conv + atencion) | LFM 1.0 | Base preentrenado, 16 idiomas, orientado a edge |
+| LFM3-1.7B | 1,73B | 256K | Tri-hibrida | LFM 1.0 | Variante instruida/conversacional del mismo checkpoint |
+| Alternativas de ~1-2B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para comparar con modelos de la competencia |
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint base: no sigue instrucciones, no mantiene formato de chat y no debe usarse tal cual en producción conversacional. Liquid AI recomienda LFM3-1.7B para esos casos.
-- El tool calling y el comportamiento agéntico son potenciales, no garantizados: el mid-training incluye trazas de herramientas, pero la fiabilidad solo se obtiene tras un post-entrenamiento específico.
-- Riesgo de alucinación inherente a un modelo de 1,73B preentrenado, sin alineación ni filtros de seguridad aplicados.
-- Sesgos desconocidos: la model card no publica análisis de sesgo, composición del dataset por idioma ni evaluaciones de seguridad.
-- Calidad multilingüe desigual previsible: se declaran 16 idiomas, pero no hay evaluación por idioma que confirme un rendimiento homogéneo, especialmente en hindi, tailandés, vietnamita o indonesio.
-- Contexto de 256K anunciado, pero sin resultados de RULER ni de otras pruebas de contexto largo; el rendimiento efectivo en ventanas muy extensas no está verificado.
-- Licencia LFM Open License v1.0: los términos exactos (condiciones de uso comercial, umbrales de facturación, obligaciones de atribución) no se detallan en la información disponible; es imprescindible revisar el fichero LICENSE antes de un uso comercial.
-- Dependencia de `trust_remote_code=True` y de código de modelado propio: implica revisar el código remoto y limita el soporte en herramientas de terceros.
-- Adopción muy baja y release reciente (menos de un día entre creación y actualización en el momento de la consulta): no hay ecosistema de ajustes comunitarios, cuantizaciones ni recetas verificadas.
+- Es un checkpoint base, no un modelo instruido: no esta alineado para conversacion, no sigue instrucciones de forma fiable y puede generar contenido inapropiado o divagante sin postentrenamiento.
+- Riesgo de alucinacion: como todo modelo de lenguaje preentrenado, puede producir afirmaciones factualmente incorrectas con aparente seguridad.
+- Sesgos: no se documentan evaluaciones de sesgo en la model card; al entrenarse sobre datos web a gran escala, es probable que herede sesgos de esos datos.
+- Licencia LFM 1.0 (license: other): no es una licencia open source estandar; es necesario revisar el archivo LICENSE del repositorio para conocer las restricciones exactas de uso comercial antes de desplegarlo en produccion.
+- Idiomas: aunque declara 16 idiomas, el rendimiento relativo por idioma no se documenta; el espanol esta incluido pero sin metricas publicadas.
+- Contexto: los 256K tokens son la ventana nominal; el rendimiento real en contextos muy largos no se ha verificado con benchmarks publicados en la informacion disponible.
+- Compatibilidad de despliegue: al requerir custom_code en transformers, puede no funcionar directamente en todos los runners de inferencia sin adaptaciones.
+- Sin datos de benchmarks: no hay resultados publicados que permitan validar el rendimiento frente a alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
-- Checkpoint post-entrenado de la misma familia: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Blog de presentación de LFM3: https://www.liquid.ai/blog/lfm3
-- Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
+- Variante instruida LFM3-1.7B: https://huggingface.co/LiquidAI/LFM3-1.7B
+- Coleccion LFM3: https://huggingface.co/collections/LiquidAI/lfm3
+- Blog de lanzamiento: https://www.liquid.ai/blog/lfm3
+- Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome
+- Consola / API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- Consola y API: https://console.liquid.ai/dashboard
-- Colección de la familia LFM3: https://huggingface.co/collections/LiquidAI/lfm3
-- Página de modelos de Liquid AI: https://www.liquid.ai/models
-- Artículo de análisis: https://www.orcarouter.ai/blog/lfm3-1-7b-base-release
-- Cobertura de Unite.AI: https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/

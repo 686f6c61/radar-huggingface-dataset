@@ -24,8 +24,8 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 2354,
-  "downloads_30d": 2431792,
+  "likes": 2356,
+  "downloads_30d": 2455112,
   "trending_score": 11,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -47,29 +47,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qwen/Qwen3.6-27B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
     },
     {
-      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
-      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
-      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
     },
     {
-      "title": "qwen/qwen3.6-27b • LM Studio",
-      "url": "https://lmstudio.ai/models/qwen/qwen3.6-27b",
-      "snippet": "Dense 27B Qwen 3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
     },
     {
-      "title": "Qwen/Qwen3.6-27B | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-27B",
-      "snippet": "Qwen3.6 dense multimodal model (27B) with gated delta networks hybrid attention, MTP, and 262K context"
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen combines chain-of-thought reasoning with creative idea generation to craft narratives, develop characters, and explore plots …"
     },
     {
-      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
-      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
-      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large …"
     }
   ]
 }

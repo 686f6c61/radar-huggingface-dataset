@@ -2,82 +2,86 @@
 
 ## Resumen
 
-El repositorio `Comfy-Org/Qwen3.5` aloja un conjunto de archivos de modelo reempaquetados específicamente para su uso con ComfyUI, una interfaz de nodos para flujos de trabajo de generación de imágenes y vídeo basados en difusión. Según la información disponible, se trata de tres archivos de codificadores de texto (`qwen3.5_2b_bf16.safetensors`, `qwen3.5_4b_bf16.safetensors` y `qwen3.5_9b_bf16.safetensors`) que deben colocarse en la carpeta `models/text_encoders/` de una instalación de ComfyUI.
+Qwen3.5 es una familia de modelos de lenguaje de la serie Qwen, desarrollada por el equipo Qwen de Alibaba. El repositorio analizado, `Comfy-Org/Qwen3.5`, no es el modelo original, sino un reempaquetado de los pesos de las variantes de 2B, 4B y 9B en formato de fichero unico (`safetensors`) para su uso como codificadores de texto (`text_encoders`) dentro de ComfyUI. El autor del reempaquetado es Comfy-Org, la organizacion que mantiene ComfyUI.
 
-El nombre sugiere una posible relación con la familia de modelos Qwen, aunque no se proporciona documentación técnica adicional en la model card. El repositorio tiene un tamaño de 66,3 GB y está licenciado bajo Apache 2.0, lo que permite uso comercial y modificación. La ausencia de detalles sobre arquitectura, entrenamiento o capacidades limita la evaluación, pero su propósito declarado es integrar codificadores de texto en pipelines de difusión dentro de ComfyUI.
+El interes de este repositorio es practico: permite a los usuarios de ComfyUI disponer de los pesos de Qwen3.5 en variantes bf16, int8 y w4a8 (GPTQ) sin tener que convertir manualmente los checkpoints originales. El repositorio acumula 283.767 descargas y 58 likes, lo que indica una adopcion considerable dentro del ecosistema ComfyUI.
 
-Dado que el contenido es un reempaquetado de archivos, no se dispone de información sobre el modelo subyacente, sus parámetros, contexto o rendimiento. Cualquier especificación técnica debe considerarse no disponible hasta que el autor publique documentación adicional.
+La informacion disponible sobre el modelo original es limitada: la model card del reempaquetado solo enlaza a los repositorios oficiales de Qwen (2B, 4B y 9B) y describe la ubicacion de los ficheros. No se detallan en esta fuente la arquitectura, el contexto, los datos de entrenamiento ni los benchmarks del modelo original, por lo que esos apartados se marcan como no disponibles cuando no hay dato verificable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (se infieren tamaños de archivo: 2B, 4B y 9B, pero no se confirma) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | no disponible (modelo base: Qwen3.5, familia de modelos de lenguaje de Qwen) |
+| Parametros totales | 2B, 4B y 9B (tres variantes incluidas en el repo) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (los archivos usan precision bf16 segun el nombre) |
+| Tipos de cuantizacion | bf16 (2B, 4B, 9B), int8 con `convrot` (9B), w4a8 GPTQ (9B) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (archivos individuales para text encoders) |
+| Formato de pesos | `safetensors` (fichero unico para ComfyUI, libreria `diffusion-single-file`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna de los modelos contenidos en este repositorio. La model card solo indica que son archivos reempaquetados para ComfyUI, sin detalles sobre el diseño (transformer, difusion, etc.), el proceso de entrenamiento, el dataset utilizado o tecnicas de optimizacion como RLHF o DPO. Los nombres de los archivos sugieren que podrian ser codificadores de texto con 2.000, 4.000 y 9.000 millones de parametros, pero esto no esta confirmado por el autor.
+No se han publicado en la informacion disponible detalles sobre la arquitectura interna del modelo original Qwen3.5 (tipo de transformer, atencion, posibles componentes MoE, etc.). El repositorio de Comfy-Org es exclusivamente un reempaquetado: toma los checkpoints de `Qwen/Qwen3.5-2B`, `Qwen/Qwen3.5-4B` y `Qwen/Qwen3.5-9B` y los publica como ficheros `safetensors` individuales pensados para la carpeta `ComfyUI/models/text_encoders/`.
 
-Dado que el repositorio se etiqueta como `diffusion-single-file`, es probable que estos archivos se utilicen como componentes dentro de un pipeline de generacion de imagenes, pero no se puede afirmar nada mas alla de lo indicado en la model card.
+Tampoco se dispone de datos sobre el corpus de entrenamiento, el numero de tokens, el uso de RLHF/DPO ni innovaciones tecnicas especificas. La unica informacion tecnica adicional es la existencia de variantes cuantizadas para la version de 9B: una int8 con `convrot` y una w4a8 GPTQ, orientadas a reducir el consumo de memoria en inferencia dentro de ComfyUI.
 
 ## Capacidades
 
-No se han documentado capacidades especificas para este repositorio. Al tratarse de archivos reempaquetados para ComfyUI, se presume que su funcion es actuar como codificadores de texto en flujos de trabajo de difusion, pero no hay informacion sobre:
-
-- Generacion de texto o razonamiento
-- Soporte de tool calling o function calling
-- Capacidades de agentes o multi-step reasoning
-- Capacidades multilingues
-- Modos especiales (thinking, vision, audio, etc.)
-
-La unica funcionalidad implicita es la integracion con ComfyUI para procesar texto dentro de modelos de difusion.
+- Codificacion de texto para pipelines de ComfyUI: el uso previsto en este repositorio es servir como `text_encoder` en flujos de generacion (por ejemplo, modelos de difusion que consumen embeddings de texto).
+- Generacion de texto y comprension del lenguaje: heredadas del modelo base Qwen3.5, aunque no se detallan en la informacion disponible.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-Dado que la informacion es limitada, los casos de uso se infieren del proposito declarado del repositorio:
-
-- Integracion de codificadores de texto en flujos de trabajo de ComfyUI: los archivos deben colocarse en `models/text_encoders/` para que ComfyUI los cargue y los use como parte de un pipeline de generacion de imagenes.
-- Personalizacion de modelos de difusion: al disponer de tres tamanos (2B, 4B, 9B), un usuario podria elegir el codificador que mejor se adapte a sus requisitos de memoria o calidad.
-- Desarrollo de nodos personalizados en ComfyUI: los archivos pueden ser referenciados por nodos custom para experimentar con diferentes codificadores de texto.
-- Reproduccion de experimentos: al ser un reempaquetado oficial de Comfy-Org, sirve como referencia para asegurar compatibilidad con la version actual de ComfyUI.
-- Despliegue local de generacion de imagenes: usuarios con GPUs de gama media pueden usar el archivo de 2B o 4B, mientras que el de 9B requeriria mayor VRAM.
-- Investigacion sobre codificadores de texto en difusion: aunque no hay documentacion, los archivos podrian ser analizados para estudiar su comportamiento en tareas de text-to-image.
+- Codificacion de prompts en ComfyUI: colocar `qwen3.5_2b_bf16.safetensors` en `models/text_encoders/` permite usar la variante de 2B como codificador de texto en flujos de generacion, con un coste de memoria reducido.
+- Flujos de mayor calidad con la variante de 9B: usar `qwen3.5_9b_bf16.safetensors` cuando se necesita un codificador de texto de mayor capacidad, a cambio de mas VRAM.
+- Despliegue en GPUs con memoria limitada: la variante `qwen3.5_9b_int8_convrot.safetensors` reduce el peso del codificador respecto a bf16, adecuada para equipos con 16-24 GB de VRAM.
+- Despliegue en GPUs de gama consumer con cuantizacion agresiva: `qwen3.5_9b_w4a8_gptq.safetensors` permite cargar el codificador de 9B en configuraciones con menos memoria, a costa de posible perdida de fidelidad en los embeddings.
+- Estandarizacion de entornos ComfyUI en equipos: al ser un reempaquetado oficial de Comfy-Org, facilita que varios usuarios de un mismo estudio trabajen con los mismos ficheros y rutas, evitando conversiones manuales.
+- Evaluacion comparativa de codificadores de texto: disponer de 2B, 4B y 9B en el mismo repositorio permite comparar el impacto del tamano del codificador en la calidad de salida de un mismo pipeline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar. Tampoco hay comparaciones con otros modelos de codificacion de texto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No se proporcionan requisitos oficiales. Sin embargo, basandose en el tamaño de los archivos (2B, 4B, 9B en bf16) y su uso como text encoders en ComfyUI, se pueden hacer estimaciones orientativas:
-
-- VRAM estimada: un archivo de 2B en bf16 ocupa aproximadamente 4 GB, el de 4B unos 8 GB y el de 9B unos 18 GB. A esto hay que sumar el modelo de difusion principal (por ejemplo, SDXL o Flux) que suele requerir entre 8 y 16 GB adicionales.
-- GPU recomendadas: para el codificador de 2B, una GPU con 8 GB de VRAM (RTX 3060, RTX 4060) seria suficiente. Para el de 4B, se recomienda al menos 12 GB (RTX 4070, RTX 3080). Para el de 9B, se necesitan 24 GB o mas (RTX 3090, RTX 4090, A100).
-- Compatibilidad con GPU de consumo: si, los archivos de 2B y 4B caben en GPUs de consumo modernas, siempre que el modelo de difusion no supere la VRAM disponible.
-- Opciones de despliegue: el uso principal es a traves de ComfyUI, que gestiona la carga de estos archivos automaticamente. No se mencionan otros frameworks como vLLM o llama.cpp, ya que no es un modelo de lenguaje generativo.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (orientativa, segun el tamano de los pesos en bf16): 2B ~4-5 GB; 4B ~8-9 GB; 9B ~18-20 GB, mas el coste de activaciones y del resto del pipeline de ComfyUI.
+- Variante int8 del 9B: aproximadamente la mitad del peso en bf16 (~9-10 GB), mas overhead.
+- Variante w4a8 GPTQ del 9B: peso de pesos en torno a 4-5 GB, pensada para GPUs con menos memoria.
+- GPU recomendadas: RTX 4090 (24 GB) para el 9B en bf16; RTX 3090/4080 (16-24 GB) para el 9B en int8; GPUs de 8-12 GB para el 2B/4B en bf16 o el 9B en w4a8.
+- Despliegue: el uso previsto es ComfyUI (carpeta `models/text_encoders/`). No se documentan en esta fuente opciones como vLLM, llama.cpp, Ollama o TGI para estos ficheros reempaquetados.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con otros modelos. Los archivos son codificadores de texto para difusion, y no se conocen alternativas directas en el mismo repositorio. Si se interpreta que podrian ser modelos de la familia Qwen, habria que compararlos con Qwen2.5 o Qwen3, pero no hay datos que lo confirmen.
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| Comfy-Org/Qwen3.5 (este repo) | 2B / 4B / 9B | no disponible | Apache 2.0 | safetensors single-file | Hugging Face, integrado en ComfyUI |
+| Qwen/Qwen3.5-2B (original) | 2B | no disponible | Apache 2.0 | no disponible | Hugging Face |
+| Qwen/Qwen3.5-4B (original) | 4B | no disponible | Apache 2.0 | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B (original) | 9B | no disponible | Apache 2.0 | no disponible | Hugging Face |
+
+No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con modelos de otras familias.
 
 ## Limitaciones y advertencias
 
-- Falta de documentacion: la model card no incluye informacion tecnica sobre arquitectura, entrenamiento o capacidades. Cualquier uso en produccion debe basarse en pruebas propias.
-- Posible confusion de identidad: el nombre "Qwen3.5" podria inducir a error, ya que no hay confirmacion oficial de que estos archivos correspondan a modelos Qwen reales. Es posible que sea un reempaquetado de otro modelo con nombre similar.
-- Requisitos de VRAM: el archivo de 9B puede no caber en GPUs de consumo junto con un modelo de difusion grande.
-- Licencia Apache 2.0: permite uso comercial, pero se debe verificar si los pesos subyacentes tienen restricciones adicionales no indicadas en el repositorio.
-- Fecha de creacion futura: el repositorio fue creado en marzo de 2026, lo que podria indicar que se trata de un proyecto experimental o no oficial.
-- Sin garantias de compatibilidad: aunque se indica la ruta de instalacion, no se especifica la version de ComfyUI requerida ni si hay dependencias adicionales.
+- Este repositorio no es el modelo original: es un reempaquetado para ComfyUI. Para documentacion completa del modelo conviene consultar los repositorios oficiales de Qwen.
+- No se documentan sesgos conocidos, tasas de alucinacion ni limitaciones idiomaticas en la informacion disponible.
+- Las variantes cuantizadas (int8 `convrot` y w4a8 GPTQ) pueden degradar la calidad de los embeddings respecto a bf16; conviene validar el pipeline antes de usarlas en produccion.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse en los repositorios originales de Qwen cualquier condicion adicional aplicable al modelo base.
+- El tamano del repo (78,9 GB) implica una descarga considerable; conviene descargar solo las variantes necesarias.
+- No hay informacion sobre contexto maximo, idiomas o capacidades de tool calling en esta fuente; no deben asumirse.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Qwen3.5
-- Sitio oficial de ComfyUI: https://www.comfy.org/ (no confirmado en la informacion proporcionada, pero es el proyecto asociado al autor)
+- Modelo original 2B: https://huggingface.co/Qwen/Qwen3.5-2B
+- Modelo original 4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Modelo original 9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Repositorio ComfyUI: https://github.com/Comfy-Org/ComfyUI

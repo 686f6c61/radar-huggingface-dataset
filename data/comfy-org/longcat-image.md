@@ -2,76 +2,81 @@
 
 ## Resumen
 
-LongCat-Image es un modelo de difusión para generación y edición de imágenes, desarrollado por el equipo de Meituan (meituan-longcat). Este repositorio concreto, publicado por Comfy-Org, contiene un reempaquetado de los archivos de peso del modelo original para su uso directo en ComfyUI, una interfaz de nodos muy popular en el ecosistema de generación de imágenes. Se ofrecen tres variantes: la versión base para generación, una versión Edit para edición de imágenes y una versión Edit-Turbo optimizada para inferencia más rápida.
+LongCat-Image es un modelo de difusion para generacion y edicion de imagenes desarrollado por Meituan, empaquetado y redistribuido por Comfy-Org en formato de fichero unico (`diffusion-single-file`) para su uso directo en ComfyUI. El repositorio que nos ocupa no contiene el modelo original, sino una conversion de los pesos a `safetensors` en precision bf16, lista para colocarse en el directorio `models/diffusion_models/` de una instalacion de ComfyUI. El autor del modelo base es Meituan (organizacion `meituan-longcat`), mientras que Comfy-Org se limita a la redistribucion y al mantenimiento de los workflows de referencia.
 
-El modelo se distribuye bajo licencia Apache 2.0 y los archivos están en formato safetensors con precisión bf16. El repositorio ocupa 37,6 GB, lo que sugiere que cada variante tiene un tamaño considerable, probablemente en el rango de los 6.000 millones de parámetros por archivo, aunque no se ha confirmado oficialmente. Al ser un repack para ComfyUI, su integración es sencilla para usuarios de esta herramienta, pero no se proporcionan detalles técnicos adicionales sobre la arquitectura o el entrenamiento.
+El repositorio agrupa tres variantes: `longcat_image_bf16.safetensors` para generacion texto-a-imagen, `longcat_image_edit_bf16.safetensors` para edicion de imagenes por instrucciones y `longcat_image_edit_turbo_bf16.safetensors`, una version acelerada de la variante de edicion. Los tres comparten la misma licencia Apache 2.0 del modelo original, lo que permite uso comercial sin restricciones adicionales por parte del redistribuidor.
 
-La relevancia de este modelo radica en que Meituan, una gran empresa tecnológica china, ha publicado un modelo de difusión de última generación con variantes especializadas en edición y velocidad, lo que amplía el ecosistema de modelos abiertos para generación de imágenes. Sin embargo, la información pública disponible es muy limitada, y la mayor parte de las especificaciones técnicas no han sido reveladas en esta model card.
+Su relevancia practica radica en la integracion con ComfyUI: al tratarse de ficheros unicos en bf16, cualquier usuario puede incorporar el modelo a un grafo de nodos sin depender de scripts de conversion ni de la libreria `diffusers`. El repositorio ocupa 37,6 GB y acumula mas de 10.000 descargas, lo que indica una adopcion moderada dentro del ecosistema ComfyUI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion para imagenes) |
-| Parametros totales | no disponible (estimacion indirecta: ~6.25 mil millones por variante segun tamano de archivo) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no aplica (modelo de imagenes) |
-| Tipos de cuantizacion | bf16 (segun nombres de archivo) |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | modelo de difusion (detalles de la red no disponibles en la informacion proporcionada) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no disponible (modelo de imagen; condicionamiento por prompt de texto) |
+| Tipos de cuantizacion | solo se distribuyen pesos en bf16; no se listan variantes cuantizadas en el repositorio |
+| Idiomas soportados | no disponibles (prompts de texto; el modelo card no declara cobertura linguistica) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (`diffusion-single-file`) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna del modelo. Por el nombre y el tag `diffusion-single-file`, se trata de un modelo de difusion para imagenes, probablemente basado en una arquitectura de difusion latente similar a otros modelos del estado del arte (como Stable Diffusion o SDXL), pero no se confirma si utiliza U-Net, transformer o una arquitectura hibrida. Tampoco se dispone de datos sobre el dataset de entrenamiento, el numero de tokens o el proceso de alineacion (RLHF, DPO, etc.). La unica informacion disponible es que existen tres variantes: una base, una de edicion y una turbo, lo que sugiere que la variante turbo podria emplear tecnicas de destilacion o aceleracion, aunque no se especifica.
+La informacion disponible no detalla la arquitectura interna del modelo de difusion: no se especifica si emplea un UNet, un transformer de difusion (DiT) o una variante hibrida, ni se indican el numero de parametros, la resolucion nativa de entrenamiento, el tipo de encoder de texto asociado ni el scheduler recomendado. Tampoco se documentan el volumen de datos de entrenamiento, la composicion del dataset, el uso de RLHF/DPO (no aplicable en el mismo sentido que en modelos de lenguaje) ni tecnicas de destilacion o aceleracion, salvo la existencia de una variante Turbo en el modelo base, que sugiere un proceso de destilacion para reducir el numero de pasos de muestreo.
+
+Lo unico verificable desde el repositorio es el empaquetado: los pesos se han convertido a `safetensors` en bf16 y se han dispuesto como ficheros unicos consumibles por ComfyUI. Las tres variantes (generacion, edicion y edicion Turbo) se distribuyen por separado, de modo que el usuario elige el fichero segun la tarea. Para conocer la arquitectura, los datos de entrenamiento y las innovaciones tecnicas del modelo original es necesario consultar los repositorios de `meituan-longcat/LongCat-Image`, `LongCat-Image-Edit` y `LongCat-Image-Edit-Turbo`, que no forman parte de la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (text-to-image), segun la naturaleza del modelo de difusion.
-- Edicion de imagenes (image-to-image) mediante la variante `LongCat-Image-Edit`.
-- Inferencia acelerada con la variante `LongCat-Image-Edit-Turbo`, probablemente optimizada para menor latencia.
-- Integracion directa con ComfyUI, permitiendo su uso en flujos de trabajo basados en nodos.
-- No se han documentado capacidades adicionales como tool calling, agentes o soporte multimodal mas alla de la imagen.
+- Generacion de imagenes a partir de prompts de texto mediante la variante `longcat_image_bf16.safetensors`.
+- Edicion de imagenes guiada por instrucciones mediante `longcat_image_edit_bf16.safetensors`.
+- Edicion acelerada de imagenes con `longcat_image_edit_turbo_bf16.safetensors`, orientada a reducir el coste de muestreo.
+- Integracion nativa con ComfyUI como fichero de modelo de difusion en `models/diffusion_models/`.
+- Ejecucion dentro de grafos de nodos de ComfyUI, lo que permite encadenar el modelo con encoders de texto, VAEs, samplers y postprocesado.
+- No se documentan en la informacion disponible capacidades de tool calling, agentes, razonamiento multi-paso, audio, video ni vision comprensiva; se trata de un modelo generativo de imagen, no de un modelo multimodal conversacional.
 
 ## Casos de uso
 
-Dado que la informacion publica es escasa, los siguientes casos de uso se infieren de la naturaleza del modelo (difusion de imagenes) y deben considerarse como aplicaciones tipicas, no como capacidades confirmadas:
-
-- Generacion de ilustraciones y arte digital: el modelo puede crear imagenes originales a partir de descripciones textuales, util para disenadores y creadores de contenido.
-- Edicion fotografica: la variante Edit permite modificar imagenes existentes, como cambiar fondos, anadir objetos o aplicar estilos, integrable en flujos de trabajo de retoque.
-- Prototipado rapido en diseno de producto: generar imagenes conceptuales a partir de bocetos o prompts para visualizar ideas antes de producirlas.
-- Creacion de assets para videojuegos: generar texturas, fondos o personajes de forma procedural, acelerando el pipeline de desarrollo.
-- Generacion de imagenes para campanas publicitarias: producir variaciones de imagenes para pruebas A/B en marketing digital.
-- Automatizacion de contenido visual en redes sociales: generar imagenes personalizadas para publicaciones, usando la variante turbo para respuestas rapidas.
+- Generacion de ilustraciones para prototipado de producto: la variante texto-a-imagen permite producir bocetos visuales a partir de descripciones textuales dentro de un flujo de ComfyUI, acelerando la iteracion de diseño antes de encargar arte final.
+- Edicion localizada de imagenes en estudio: con la variante de edicion se pueden aplicar instrucciones sobre una imagen existente para modificar elementos concretos sin rehacer la composicion completa, lo que encaja en flujos de retoque y variaciones de campana.
+- Creacion de variaciones de assets para marketing: el modelo puede generar multiples versiones de una misma idea a partir de prompts ajustados, y el grafo de ComfyUI permite automatizar lotes con semillas y parametros distintos.
+- Iteracion rapida en produccion con la variante Turbo: cuando el coste por imagen o el tiempo de respuesta es critico, la version Turbo de edicion reduce el numero de pasos de muestreo y hace viable la generacion en bucles de previsualizacion.
+- Automatizacion de pipelines de contenido en ComfyUI: al ser ficheros unicos en `safetensors`, se pueden orquestar mediante la API de ComfyUI para generar imagenes bajo demanda desde un backend, integrándolas en un CMS o en un sistema de publicacion.
+- Experimentacion e investigacion en difusion: el formato abierto y la licencia Apache 2.0 permiten usar los pesos como base para fine-tuning, evaluacion comparativa de samplers o estudios de edicion por instrucciones sin restricciones de licencia.
+- Educacion y demostraciones: la instalacion en ComfyUI es directa (copiar el fichero a la carpeta de modelos), lo que facilita talleres y demos sin configurar entornos de `diffusers`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre metricas como FID, CLIP score, HumanEval (no aplica) o comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de requisitos oficiales de hardware.
-- El tamano del repositorio (37,6 GB en total, ~12,5 GB por archivo en bf16) sugiere que cada variante requiere al menos 16 GB de VRAM para cargarse en precision bf16, y probablemente mas para inferencia con espacio de trabajo.
-- Se recomienda una GPU de gama alta con al menos 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A100) para un rendimiento razonable.
-- Para la variante turbo, podria ser posible ejecutarla en GPUs con 12-16 GB si se aplican cuantizaciones adicionales, pero no se han publicado archivos cuantizados.
-- Opciones de despliegue: al ser un repack para ComfyUI, el despliegue natural es a traves de ComfyUI. Tambien podria usarse con otros frameworks que soporten safetensors y modelos de difusion, como Diffusers, aunque no se ha confirmado compatibilidad.
-- No se conocen datos de latencia o throughput.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, el repositorio completo ocupa 37,6 GB y los pesos se distribuyen en bf16; el fichero individual debe cargarse completo en memoria de GPU o descargarse por capas a RAM/VRAM segun el backend, por lo que se requiere una GPU con capacidad suficiente para el fichero elegido mas el encoder de texto y el VAE.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por el tamano del empaquetado, el uso en GPUs de consumo exige verificar la VRAM disponible frente al tamano del fichero bf16; no se confirma que quepa en tarjetas de 8, 12 o 16 GB.
+- Cabe en GPU de consumo: no confirmado; depende del tamano real del fichero bf16 y del soporte de offloading del backend.
+- Opciones de despliegue: ComfyUI (soporte nativo, con workflows oficiales de Comfy-Org); otros backends no se mencionan en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos. El modelo no tiene una ficha tecnica publica que permita contrastar parametros, contexto o rendimiento. Se desconoce si es comparable a Stable Diffusion XL, SD3, Flux o modelos de Meituan anteriores. Por tanto, la comparativa no esta disponible.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se ha publicado informacion sobre sesgos, alucinaciones o limitaciones de contenido. Al ser un modelo de difusion, es probable que herede sesgos de los datos de entrenamiento, pero no hay evidencia documentada.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos de los repositorios originales de Meituan, ya que este repack podria tener condiciones adicionales no reflejadas en la model card.
-- El modelo esta pensado para su uso en ComfyUI; su integracion en otros entornos puede requerir adaptaciones no documentadas.
-- No se especifican los idiomas soportados para los prompts; es posible que el modelo este optimizado para ingles o chino, pero no se confirma.
-- El tamano de los archivos (37,6 GB) implica requisitos de almacenamiento y memoria considerables, lo que puede ser una barrera para despliegues en entornos con recursos limitados.
+- La model card del repositorio redistribuido es minima: no documenta arquitectura, datos de entrenamiento, resolucion nativa ni parametros de muestreo recomendados.
+- No se declaran los idiomas soportados en los prompts; el rendimiento multilingue es desconocido.
+- Riesgo de sesgos y de alucinacion visual (artefactos, incoherencias anatomicas o de texto en la imagen) no cuantificado por el autor en esta ficha.
+- Solo se distribuyen pesos en bf16; no hay variantes cuantizadas oficiales en este repositorio, lo que limita el despliegue en hardware con poca VRAM.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar las condiciones del modelo original en `meituan-longcat/LongCat-Image` y derivados, ya que este repositorio es una redistribucion.
+- El repositorio incluye tres variantes con nombres similares; colocar el fichero equivocado en `diffusion_models/` o emparejarlo con un workflow inadecuado provoca fallos de carga.
+- No se proporcionan garantias de soporte ni actualizaciones por parte de Comfy-Org mas alla del repackage.
 
 ## Enlaces
 
-- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/LongCat-Image
-- Repositorio original (Meituan): https://huggingface.co/meituan-longcat/LongCat-Image
-- Repositorio original Edit: https://huggingface.co/meituan-longcat/LongCat-Image-Edit
-- Repositorio original Edit-Turbo: https://huggingface.co/meituan-longcat/LongCat-Image-Edit-Turbo
+- Repositorio redistribuido: https://huggingface.co/Comfy-Org/LongCat-Image
+- Modelo original texto-a-imagen: https://huggingface.co/meituan-longcat/LongCat-Image
+- Modelo original de edicion: https://huggingface.co/meituan-longcat/LongCat-Image-Edit
+- Modelo original de edicion Turbo: https://huggingface.co/meituan-longcat/LongCat-Image-Edit-Turbo
+- Workflow texto-a-imagen para ComfyUI: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_longcat_text_to_image.json
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI

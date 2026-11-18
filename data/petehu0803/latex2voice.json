@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "petehu0803/latex2voice",
+  "slug": "petehu0803-latex2voice",
+  "author": "petehu0803",
+  "url": "https://huggingface.co/petehu0803/latex2voice",
+  "created_at": "2026-11-18T01:59:21.000Z",
+  "updated_at": "2026-11-18T02:14:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "latex",
+    "text-normalization",
+    "tts-frontend",
+    "math",
+    "asr",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94410616,
+  "storage_human": "94 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

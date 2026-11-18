@@ -2,101 +2,91 @@
 
 ## Resumen
 
-Pruna-Qwen-Image-2.1 es un modelo de generación y edición de imágenes a partir de texto publicado por PrunaAI, una empresa especializada en optimización de modelos (su framework open source Pruna está orientado a reducir latencia y coste de inferencia). Se distribuye como adaptador sobre el modelo base Qwen/Qwen-Image-2.1, desarrollado por el equipo Qwen de Alibaba, y se empaqueta con la librería diffusers bajo licencia qwen-research.
+Pruna-Qwen-Image-2.1 es un modelo de generación y edición de imágenes de texto-a-imagen derivado de Qwen/Qwen-Image-2.1, publicado por PrunaAI sobre la librería diffusers. El modelo se distribuye como un adaptador LoRA destilado de pocos pasos (few-step), lo que reduce el número de pasos de muestreo necesarios para obtener una imagen final en comparación con el modelo base, manteniendo la arquitectura y las capacidades del Qwen-Image-2.1 original. Está orientado a pipelines de text-to-image y de edición de imágenes, e incluye soporte para salidas con canal alfa (RGBA).
 
-El modelo combina tres características distintivas según sus etiquetas: destilación a pocos pasos (few-step), soporte de canal alfa (RGBA) para generar imágenes con transparencia, y compatibilidad con LoRA. El repositorio ocupa 2,4 GB, coherente con un conjunto de pesos de adaptador más que con un modelo completo. No se especifican en la información disponible el número de parámetros, la arquitectura interna concreta ni la longitud máxima de prompt.
+La relevancia del modelo reside en la optimización de coste de inferencia: al ser un LoRA destilado de pocos pasos, permite generar imágenes con menos evaluaciones del UNet/DiT, lo que se traduce en menor latencia y menor consumo de GPU por imagen. El repositorio ocupa 3,9 GB, lo que es coherente con un adaptador LoRA más los assets asociados, no con un checkpoint completo del modelo base.
 
-Es relevante ahora porque ataca dos cuellos de botella prácticos de la generación de imágenes en producción: el coste por imagen (mediante la reducción del número de pasos de muestreo) y la integración en flujos de diseño reales (mediante la salida RGBA, que evita el postprocesado de recorte de fondo). Aun así, sus cifras de adopción son muy bajas: 2 descargas y 13 likes en el momento de los metadatos, con publicación el 23 de septiembre de 2026 y última actualización el 24 de septiembre de 2026, por lo que se trata de un artefacto reciente y poco rodado.
+La licencia es qwen-research (etiquetada como "other"), lo que restringe el uso comercial directo y exige revisar los términos del modelo base antes de desplegarlo en producción. El modelo acumula 23.655 descargas y 194 likes en Hugging Face, con fecha de creación en septiembre de 2026 y última actualización en octubre del mismo año.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (hereda la del modelo base Qwen/Qwen-Image-2.1; el repositorio es un adaptador destilado) |
-| Parametros totales | no disponible (el repositorio, de 2,4 GB, apunta a pesos de adaptador LoRA, no al modelo completo) |
-| Parametros activos | no aplica (no se describe una arquitectura MoE) |
-| Longitud de contexto | no disponible (no se especifica la longitud máxima del prompt de texto) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (la ficha de Hugging Face marca los idiomas como no disponibles; el soporte multilingüe dependería del codificador de texto del modelo base) |
-| Licencia | qwen-research (campo `license: other`, `license_name: qwen-research`) |
-| Formato de pesos | no disponible de forma explícita; el repositorio se distribuye para la librería `diffusers` y ocupa 2,4 GB |
+| Arquitectura | Adaptador LoRA sobre Qwen/Qwen-Image-2.1 (modelo de difusión texto-a-imagen); arquitectura interna del base no disponible en la informacion proporcionada |
+| Parametros totales | no disponible (repo de 3,9 GB; el adaptador LoRA no especifica recuento de parametros) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada; al ser LoRA, la cuantizacion aplica al modelo base |
+| Idiomas soportados | no disponibles |
+| Licencia | qwen-research (license: other) |
+| Formato de pesos | pesos compatibles con diffusers; formato concreto (safetensors u otro) no disponible |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado en la información disponible la arquitectura interna del modelo (salvo que se trata de un modelo de difusión para texto a imagen y edición de imágenes, heredado de Qwen/Qwen-Image-2.1). Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF o DPO, ni el proceso exacto de destilación empleado por PrunaAI. La única información técnica operativa son las etiquetas del repositorio: `distilled` y `few-step`, que indican que el adaptador está entrenado para generar imágenes con un número reducido de pasos de muestreo en lugar de la cadena completa de difusión.
+El modelo es un adaptador LoRA destilado sobre el checkpoint Qwen/Qwen-Image-2.1. La técnica de destilación de pocos pasos (few-step distillation) entrena el adaptador para aproximar la trayectoria de muestreo del modelo base con un número reducido de pasos, de modo que el modelo final puede generar imágenes con menos evaluaciones por muestra. La arquitectura subyacente es la del modelo base de difusión de Qwen, cuyos detalles internos (tipo de backbone, número de bloques, dimensión de atención) no se detallan en la información disponible.
 
-Las innovaciones que sí se pueden afirmar a partir de los metadatos son tres: la destilación a pocos pasos (que en la práctica reduce el tiempo de inferencia por imagen), el soporte de salida RGBA con canal alfa (útil para composición directa sobre otros fondos) y la compatibilidad con LoRA, lo que permite ajustar el estilo del modelo sin reentrenar los pesos base. PrunaAI mantiene además un framework propio de optimización de modelos (repositorio `PrunaAI/pruna`) que es, presumiblemente, la herramienta con la que se ha producido este adaptador, aunque la model card no detalla el procedimiento.
+No se especifican en la información proporcionada el número de tokens o imágenes de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF/DPO o ajuste por preferencias. La etiqueta "distilled" y "few-step" confirma la estrategia de destilación, y las etiquetas "rgba" y "lora" indican soporte de canal alfa en las salidas y la naturaleza de adaptador del artefacto publicado.
 
 ## Capacidades
 
-- Generación de imágenes a partir de texto (pipeline declarado: `text-to-image`).
-- Edición de imágenes (etiqueta `image-editing`), es decir, modificación de imágenes existentes mediante instrucciones.
-- Generación con canal alfa (etiqueta `rgba`), lo que permite obtener imágenes con transparencia directamente.
-- Inferencia en pocos pasos (etiquetas `distilled` y `few-step`), orientada a reducir el coste computacional por imagen.
-- Ajuste mediante LoRA (etiqueta `lora`), lo que habilita personalización de estilos y conceptos.
-- Compatibilidad con el ecosistema `diffusers`.
-- Soporte de tool calling / function calling: no aplica (no es un modelo de lenguaje).
-- Soporte de agentes y razonamiento multi-paso: no aplica.
-- Capacidades multilingües: no disponible.
-- Modo thinking, visión o audio: no disponible; el modelo únicamente cubre entrada de texto e imagen y salida de imagen.
+- Generación de imágenes a partir de prompts de texto (text-to-image).
+- Edición de imágenes, según la etiqueta image-editing de la model card.
+- Salidas con canal alfa (RGBA), útil para composición y pipelines gráficos con transparencia.
+- Muestreo de pocos pasos gracias a la destilación, reduciendo el coste por imagen.
+- Integración nativa con la librería diffusers y su pipeline text-to-image.
+- Compatibilidad como adaptador LoRA sobre el modelo base Qwen/Qwen-Image-2.1.
+- Soporte de tool calling, agentes, visión o audio: no disponible en la información proporcionada (no aplica a un modelo de difusión de imagen).
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Generación de assets con transparencia para interfaces: gracias a la salida RGBA, el modelo puede producir iconos, logotipos o elementos gráficos que se insertan directamente sobre cualquier fondo sin recorte manual posterior, lo que ahorra un paso de postprocesado en el pipeline de diseño.
-- Edición de fotografías de producto en comercio electrónico: sustitución de fondos, limpieza de elementos no deseados o recoloreado de un artículo a partir de una instrucción en lenguaje natural, reutilizando la capacidad de `image-editing` sobre imágenes ya existentes.
-- Prototipado rápido en estudios de diseño: al estar destilado a pocos pasos, permite iterar sobre variaciones de una idea con un coste por imagen inferior al de un modelo de difusión completo, lo que encaja en sesiones de exploración con muchas generaciones descartables.
-- Producción de sprites y elementos de interfaz para videojuegos: la combinación de generación por texto y canal alfa permite obtener recursos 2D listos para motores como Unity o Godot, que necesitan texturas con transparencia.
-- Personalización de estilo con LoRA: un equipo puede entrenar un LoRA propio sobre este adaptador para fijar una identidad visual de marca y aplicarla de forma consistente a todas las generaciones, sin tocar los pesos del modelo base.
-- Automatización de creatividades de marketing por lotes: al reducir el número de pasos de muestreo, el coste por imagen baja y resulta viable generar variantes de un mismo anuncio en distintos formatos y proporciones desde un script que invoque el pipeline de diffusers.
-- Aumento de datos sintéticos para visión por computador: generación de imágenes etiquetadas con fondo transparente que luego se componen sobre escenas aleatorias para ampliar un dataset de entrenamiento sin necesidad de capturas reales.
-- Integración en herramientas internas vía diffusers: al ser un artefacto de la librería diffusers, se puede cargar en un servicio Python propio y exponerlo por API para que otros equipos lo consuman sin gestionar pesos manualmente.
+- Generación rápida de imágenes para prototipado de producto: con el adaptador destilado de pocos pasos, un equipo puede iterar sobre prompts y obtener borradores visuales con menos pasos de muestreo, reduciendo el tiempo de cada iteración en entornos de diseño.
+- Edición de imágenes en pipelines de marketing: el modelo admite edición de imágenes además de generación, por lo que puede usarse para modificar assets existentes (fondos, composición) antes de publicarlos en campañas.
+- Composición con transparencia para diseño gráfico: la salida RGBA permite generar elementos con canal alfa directamente, integrables en herramientas de diseño y en pipelines de renderizado sin post-procesado manual de máscaras.
+- Generación de assets para videojuegos y UI: sprites, iconos y elementos de interfaz con transparencia pueden generarse por lotes y ajustarse por prompt, aprovechando la salida RGBA y el bajo coste por paso.
+- Servicio de generación de imágenes de bajo coste: al requerir menos pasos de muestreo que el modelo base, el adaptador reduce el coste por imagen en GPU, lo que lo hace adecuado para endpoints con tráfico moderado y presupuesto ajustado.
+- Experimentación e investigación en destilación: al ser un LoRA destilado publicado sobre un modelo base conocido, sirve como referencia para estudiar el equilibrio entre número de pasos, calidad visual y fidelidad al prompt en pipelines diffusers.
+- Integración en flujos de automatización con diffusers: el modelo puede cargarse como adaptador dentro de scripts Python basados en diffusers y encadenarse con otros pasos del pipeline (filtrado, upscaling, composición).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. La VRAM depende íntegramente del tamaño del modelo base Qwen/Qwen-Image-2.1, que no se especifica en la información proporcionada, y del número de pasos de muestreo configurado. El repositorio de 2,4 GB corresponde al adaptador, no al conjunto completo de pesos que hay que cargar en memoria.
-- Referencia aritmética orientativa: como cálculo genérico y no como dato del modelo, unos pesos de difusión de 20 000 millones de parámetros en bf16 ocuparían en torno a 40 GB solo en pesos, sin contar activaciones ni caché del codificador de texto. Este número es una estimación condicional, no una cifra publicada para este modelo.
-- GPU recomendadas: no disponible en la documentación. En términos generales, los modelos de difusión de gran tamaño se despliegan en A100 (40/80 GB), H100 o L40S; las GPU de consumo como la RTX 4090 (24 GB) solo son viables con cuantización, offload de componentes a CPU o carga secuencial de submodelos.
-- ¿Cabe en GPU de consumo?: no disponible. Depende del tamaño real del modelo base; con cuantización y descarga por etapas puede ser posible en tarjetas de 16-24 GB, pero no hay confirmación en la información disponible.
-- Opciones de despliegue: `diffusers` (librería declarada), y por extensión los entornos que consumen pipelines de diffusers. Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no aplica o no disponible, al no ser un modelo de lenguaje.
-- Latencia y throughput estimados: no disponible. Cualitativamente, la naturaleza `few-step` del adaptador implica menos evaluaciones del modelo por imagen que un muestreo completo, lo que reduce la latencia, pero no se publican cifras.
+- VRAM estimada para inferencia: no disponible de forma explícita; depende del modelo base Qwen/Qwen-Image-2.1 y de la precisión usada. El adaptador LoRA en sí añade una sobrecarga pequeña respecto al base.
+- GPU recomendadas: no disponibles en la información proporcionada; al tratarse de un modelo de difusión sobre Qwen-Image-2.1, se recomienda consultar los requisitos del modelo base.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; depende de si el modelo base cabe en VRAM de 16-24 GB en precisiones reducidas.
+- Opciones de despliegue: diffusers (librería declarada en la model card); otras opciones (vLLM, llama.cpp, Ollama, TGI) no aplican o no están documentadas para este artefacto.
+- Latencia y throughput: no disponibles; la ventaja esperada es una reducción del número de pasos de muestreo por imagen gracias a la destilación few-step.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / prompt | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pruna-Qwen-Image-2.1 | no disponible | no disponible | sin benchmarks publicados en la información disponible | qwen-research | Hugging Face (2 descargas, 13 likes) |
-| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
-| Otros modelos destilados de pocos pasos para texto a imagen | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Pruna-Qwen-Image-2.1 | no disponible (LoRA sobre Qwen-Image-2.1) | no disponible | no disponible | qwen-research | Hugging Face, diffusers |
+| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| Alternativas de text-to-image de pocos pasos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos verificables de otras alternativas comparables en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa fiable.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no puede realizarse.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. No se documenta ningún análisis de sesgo demográfico, cultural o de estilo en la información proporcionada.
-- Riesgo de alusión: inherente a los modelos generativos de imagen, que pueden producir contenido visualmente plausible pero incorrecto o incoherente con el prompt. No se han publicado métricas de fidelidad al prompt para este adaptador.
-- Limitaciones de contexto o idioma: se desconoce la longitud máxima de prompt y los idiomas soportados; la ficha de Hugging Face marca los idiomas como no disponibles.
-- Restricciones de licencia: la licencia es `qwen-research` (registrada como `license: other`). Por su nombre y por la política habitual de Qwen, es previsible que imponga restricciones al uso comercial, pero los términos exactos no se detallan en la información disponible y deben consultarse antes de cualquier despliegue en producción.
-- Madurez del artefacto: publicado el 23 de septiembre de 2026 y actualizado un día después, con 2 descargas registradas. Es un modelo sin rodaje en producción ni validación externa documentada.
-- Dependencia del modelo base: al tratarse de un adaptador sobre Qwen/Qwen-Image-2.1, hereda las limitaciones, la licencia del base y cualquier requisito de aceptación de términos que Qwen imponga sobre el modelo original.
-- Ausencia de benchmarks: no hay resultados publicados de métricas estándar (FID, CLIPScore, benchmarks de edición), lo que impide verificar las afirmaciones de rendimiento derivadas de la destilación.
-- Idoneidad para RGBA: aunque la etiqueta `rgba` indica soporte de canal alfa, no se documenta la calidad del recorte en bordes finos (pelo, cristal, humo), un caso históricamente problemático en generación con transparencia.
+- Licencia qwen-research: restringe el uso comercial; es necesario revisar los términos del modelo base Qwen/Qwen-Image-2.1 antes de cualquier despliegue en producción.
+- Al ser un adaptador LoRA, requiere cargar el modelo base Qwen/Qwen-Image-2.1; el rendimiento final depende del base y de la configuración de muestreo.
+- La destilación few-step puede introducir pérdida de fidelidad al prompt o de detalle fino en comparación con el muestreo completo del modelo base; no hay datos publicados que cuantifiquen esta diferencia.
+- Sesgos conocidos: no disponibles en la información proporcionada; los modelos de difusión heredan sesgos de sus datasets de entrenamiento, que no se detallan aquí.
+- Riesgo de alucinación visual: no cuantificado en la información disponible; los modelos de imagen pueden generar contenido incoherente con el prompt.
+- Idiomas soportados no documentados; el comportamiento multilingüe de los prompts no está garantizado.
+- No se especifican requisitos de hardware ni latencias, lo que dificulta planificar capacidad de despliegue.
+- El tamaño del repo (3,9 GB) corresponde al adaptador y assets; no debe interpretarse como el tamaño completo del modelo base.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/PrunaAI/Pruna-Qwen-Image-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Organización PrunaAI en Hugging Face: https://huggingface.co/PrunaAI
-- Repositorio del framework Pruna: https://github.com/PrunaAI/pruna
-- Organización PrunaAI en GitHub: https://github.com/PrunaAI
-- Sitio web de Pruna AI: https://www.pruna.ai/
-- Página del producto P-Video: https://www.pruna.ai/p-video
+- Repositorio GitHub de PrunaAI: https://github.com/PrunaAI/pruna
 - Twitter/X de PrunaAI: https://twitter.com/PrunaAI
-- LinkedIn de Pruna AI: https://www.linkedin.com/company/pruna-ai
-- Discord de Pruna AI: https://discord.com/invite/JFQmtFKCjd
-- Panel de modelos optimizados de Pruna: https://dashboard.pruna.ai/login
-- Entrenador de LoRA p-image-edit: https://replicate.com/prunaai/p-image-edit-trainer
-- Uso de LoRA p-image-edit: https://replicate.com/prunaai/p-image-edit-lora
+- LinkedIn de PrunaAI: https://www.linkedin.com/company/pruna-ai
+- Discord de PrunaAI: https://discord.com/invite/JFQmtFKCjd
+- Dashboard de PrunaAI: https://dashboard.pruna.ai/login

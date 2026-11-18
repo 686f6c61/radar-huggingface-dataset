@@ -19,9 +19,9 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 708,
+  "likes": 711,
   "downloads_30d": 6460250,
-  "trending_score": 46,
+  "trending_score": 48,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 68755101184,
@@ -40,29 +40,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Comfy - Professional Control of Visual AI",
-      "url": "https://comfy.org/",
-      "snippet": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output.Read more"
-    },
-    {
-      "title": "Download Comfy Desktop - Run AI on Your Hardware",
-      "url": "https://comfy.org/download",
-      "snippet": "Why would I pay for Comfy Cloud if Desktop is free? + Your machine or ours. Cloud gives you powerful GPUs on demand, pre …"
-    },
-    {
-      "title": "COMFY®",
-      "url": "https://comfy.eu/fr/comfy/",
-      "snippet": "Notre gamme diversifiée de produits COMFY® regroupent des jouets intérieurs et extérieurs pour enfants, des aides à la natation, …"
-    },
-    {
-      "title": "Comfy Cloud: Run ComfyUI online | Zero Setup, Powerful GPUs, …",
-      "url": "https://cloud.comfy.org/",
-      "snippet": "Bring your creative ideas to life with Comfy Cloud. Build and run your workflows to generate stunning images and videos instantly …"
-    },
-    {
-      "title": "ComfyUI France - La communauté francophone de génération IA",
-      "url": "https://comfyui.fr/",
-      "snippet": "Comfy Registry 800+ custom nodes vérifiés. Trouvez les extensions parfaites pour votre workflow."
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
     }
   ]
 }

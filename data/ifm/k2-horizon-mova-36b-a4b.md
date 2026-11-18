@@ -1,80 +1,92 @@
 # IFM/K2-Horizon-MoVA-36B-A4B
 
 ## Resumen
+K2-Horizon-MoVA-36B-A4B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por IFM, con 36 000 millones de parámetros almacenados y aproximadamente 4 000 millones activados por token. Forma parte de la familia K2-Horizon y su rasgo diferencial es el uso de una atención denominada MoVA (Mixture-of-Values attention), una variante de atención que combina valores de múltiples cabezas o expertos. El modelo está publicado con pesos abiertos, datos de entrenamiento y código de entrenamiento.
 
-K2-Horizon-MoVA-36B-A4B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por IFM, que incorpora una arquitectura de atención novedosa denominada Mixture-of-Values (MoVA). Con 36 mil millones de parámetros totales y solo 4 mil millones activos por token, el modelo está diseñado para ofrecer un rendimiento de nivel frontera en tareas de razonamiento y agente, manteniendo una eficiencia computacional elevada. Su contexto nativo de 524 288 tokens (512K) lo posiciona como una opción atractiva para aplicaciones que requieren procesamiento de secuencias muy largas.
+El modelo resuelve el problema de obtener rendimiento de gama alta en tareas de razonamiento y agentes con un coste de inferencia reducido, gracias a su ratio de activación de 4B parámetros. Su ventana de contexto nativa es de 524 288 tokens (512K), lo que lo sitúa en el rango de modelos de contexto largo orientados a agentes y documentos extensos.
 
-El modelo se publica con pesos abiertos bajo licencia Apache 2.0, y el autor ha anunciado la liberación de los checkpoints intermedios, los datos de entrenamiento y el código de entrenamiento, lo que facilita la reproducibilidad y el estudio de la evolución de capacidades durante el entrenamiento. Aunque los datos de benchmarks no se han detallado en la información disponible, la model card indica que supera a modelos densos de aproximadamente 30B y a MoE de hasta 15 veces su tamaño en tareas agénticas y de razonamiento, compitiendo también con modelos cerrados de frontera.
+Es relevante ahora porque IFM publica no solo los checkpoints finales, sino también checkpoints intermedios, el dataset de preentrenamiento y midtraining, y el código de entrenamiento, lo que permite reproducir y estudiar la evolución de capacidades a lo largo del entrenamiento. La licencia Apache 2.0 facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con Mixture-of-Values attention (MoVA) |
-| Parametros totales | 37 444 792 020 (36B segun model card) |
-| Parametros activos | 4B |
-| Longitud de contexto | 524 288 tokens (512K) |
+| Arquitectura | Transformer Mixture-of-Experts con atención MoVA (Mixture-of-Values attention) |
+| Parametros totales | 37 444 792 020 (~37,4B; la model card indica 36B) |
+| Parametros activos | ~4B por token |
+| Longitud de contexto | 524 288 tokens (512K), nativa desde midtraining |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (requiere `custom_code` de `transformers`) |
 
 ## Arquitectura y entrenamiento
+La arquitectura es un transformer disperso de tipo Mixture-of-Experts: el modelo almacena unos 37,4B parámetros en safetensors y activa aproximadamente 4B por token, lo que reduce el coste computacional por paso de decodificación frente a un modelo denso del mismo tamaño. La innovación destacada es la atención MoVA (Mixture-of-Values attention), que según la model card combina valores de forma mezclada dentro del mecanismo de atención; no se detalla en la información disponible el número de expertos, la estrategia de enrutamiento ni la proporción de capas MoE.
 
-K2-Horizon-MoVA-36B-A4B emplea una arquitectura MoE en la que cada token activa únicamente 4B de los 36B parámetros totales. La innovación principal reside en la atención Mixture-of-Values (MoVA), que combina múltiples transformaciones de valores dentro del mecanismo de atención, permitiendo una representación más rica sin incrementar el coste computacional por token. El modelo se entrenó con los datasets IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data, ambos públicos, y el autor ha confirmado que liberará el código de entrenamiento y los checkpoints intermedios. No se especifica si se aplicaron técnicas de RLHF o DPO, aunque el modelo está orientado a tareas conversacionales y de agente.
+El modelo se entrena en al menos dos fases documentadas: preentrenamiento (dataset `IFM/K2-Horizon-Pretrain-Data`) y midtraining (dataset `IFM/K2-Horizon-Midtrain-Data`), siendo en la fase de midtraining donde se establece el contexto nativo de 524 288 tokens. IFM publica el código de entrenamiento (xllm) y el código de evaluación (Eval360). No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
-
-- Generacion de texto y razonamiento avanzado, con resultados destacados en benchmarks de tareas agénticas y de razonamiento.
-- Soporte de contexto largo nativo de 524 288 tokens, adecuado para documentos extensos y conversaciones multi-turno.
-- Capacidad de procesamiento de secuencias largas sin degradación aparente, gracias a la arquitectura MoVA.
-- Entrenamiento orientado a tareas de agente, lo que sugiere soporte para razonamiento multi-paso y planificación.
-- Modelo conversacional, con capacidad de mantener diálogos coherentes.
-- Solo soporta inglés como idioma de entrada y salida.
+- Generación de texto conversacional en inglés.
+- Razonamiento y tareas agénticas: la model card destaca resultados competitivos en benchmarks de agentes y razonamiento.
+- Contexto largo: ventana nativa de 512K tokens, adecuada para documentos extensos y conversaciones multi-turno prolongadas.
+- Capacidad de ejecución con bajo coste por token gracias a los ~4B parámetros activos.
+- No se documentan en la información disponible capacidades de visión, audio, tool calling explícito ni modo de razonamiento dedicado; deben verificarse en la documentación del autor antes de asumirlas.
 
 ## Casos de uso
-
-- Agentes autonomos para automatizacion de tareas: el modelo puede razonar sobre multiples pasos y mantener contexto largo, lo que lo hace adecuado para agentes que gestionan flujos de trabajo complejos con historial extenso.
-- Analisis de documentos legales o academicos: con 512K de contexto, puede procesar contratos, articulos de investigacion o informes tecnicos completos sin necesidad de truncamiento.
-- Generacion de codigo en entornos de desarrollo: su capacidad de razonamiento y contexto largo permite mantener coherencia en proyectos grandes, aunque no se ha confirmado soporte explicito de tool calling.
-- Asistentes conversacionales para soporte tecnico: puede gestionar conversaciones multi-turno con contexto amplio, reduciendo la perdida de informacion en interacciones largas.
-- Investigacion en IA: al ser open weights y con datos de entrenamiento publicos, es util para estudiar el comportamiento de MoE y MoVA en tareas de razonamiento.
-- Procesamiento de datos a gran escala: su contexto nativo permite analizar logs, series temporales o datos de sensores en una sola pasada, facilitando tareas de extraccion de informacion.
+- Análisis de documentación extensa: con 512K tokens de contexto, el modelo puede ingerir contratos, informes o bases de código completas en una sola pasada sin fragmentación.
+- Agentes autónomos multi-paso: su perfil de 4B parámetros activos permite ejecutar bucles de razonamiento y llamadas a herramientas con menor coste de inferencia que un modelo denso equivalente.
+- Asistentes conversacionales de atención al cliente: la ventana larga mantiene el historial completo de la conversación y el contexto del cliente sin truncar.
+- Procesamiento por lotes de texto a gran escala: el bajo número de parámetros activos reduce el coste por token en pipelines de generación masiva.
+- Investigación sobre entrenamiento de MoE: la publicación de checkpoints intermedios, datos y código permite estudiar la evolución de capacidades durante el entrenamiento.
+- Reproducción y ajuste fino: la licencia Apache 2.0 y los pesos en safetensors permiten adaptar el modelo a dominios específicos y desplegarlo en producción propia.
+- Evaluación comparativa de arquitecturas de atención: la atención MoVA puede compararse frente a atención estándar en tareas de contexto largo.
 
 ## Benchmarks y rendimiento
+La model card incluye una tabla comparativa con modelos abiertos (Nemotron 3 Ultra, Nemotron 3 Super, G9v3-39A5B, Qwen3.6-35B-A3B, Muse Glimmer-30B, Gemma 4 31B-it) y afirma resultados de primer nivel en benchmarks de agentes y razonamiento. Sin embargo, en la información proporcionada solo se incluye el encabezado y las filas de número de parámetros y parámetros activos de dicha tabla; los valores numéricos de los benchmarks no están disponibles.
 
-No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card incluye una tabla comparativa con modelos como Nemotron 3 Ultra (550B), Nemotron 3 Super (120B), G9v3-39A5B (39B), Qwen3.6-35B-A3B (35B), Muse Glimmer-30B (30B) y Gemma 4 31B-it (31B), pero los valores concretos no se han proporcionado en el texto extraido. Se indica que el modelo supera a estos en tareas agénticas y de razonamiento, pero sin cifras exactas no es posible realizar una comparacion cuantitativa.
+| Modelo | Params totales | Params activos |
+|---|---|---|
+| K2-Horizon-MoVA-36B-A4B | 36B | 4B |
+| Nemotron 3 Ultra | 550B | 55B |
+| Nemotron 3 Super | 120B | 12B |
+| G9v3-39A5B | 39B | no disponible |
+| Qwen3.6-35B-A3B | 35B | no disponible |
+| Muse Glimmer-30B | 30B | no disponible |
+| Gemma 4 31B-it | 31B | no disponible |
+
+No se han publicado en la información disponible los resultados numéricos por benchmark (MMLU, HumanEval, GSM8K, etc.).
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: con 36B parametros en FP16 se requieren aproximadamente 72 GB de VRAM. Con cuantizacion a 8 bits, unos 36 GB; con 4 bits, unos 18 GB. Dado que solo 4B estan activos por token, la memoria para activaciones es reducida, pero los pesos completos deben residir en memoria.
-- GPU recomendadas: para FP16, se necesitan GPUs como A100 80GB, H100 80GB o multiples RTX 4090 (24GB cada una) con paralelismo. Con cuantizacion 4-bit, una RTX 4090 o RTX 3090 (24GB) podria ser suficiente.
-- Si cabe en consumer GPU: si, con cuantizacion agresiva (4-bit) y usando herramientas como llama.cpp u Ollama, aunque el rendimiento puede verse limitado por el ancho de banda de memoria.
-- Opciones de despliegue: al ser un modelo transformers, es compatible con vLLM, TGI, llama.cpp, Ollama y otras plataformas de inferencia. No se han proporcionado datos de latencia o throughput.
-- El tamano del repositorio es de 2471.5 GB, lo que implica una descarga considerable y espacio en disco para los pesos completos.
+- VRAM estimada: con pesos en bf16/fp16, el modelo requiere aproximadamente 75 GB solo para pesos, más caché KV; con cuantización a 8 bits, unos 38 GB, y a 4 bits, unos 19 GB (estimaciones a partir de los 37,4B parámetros, no confirmadas por el autor).
+- GPU recomendadas: para bf16 se necesitan varias GPU de 80 GB (A100, H100) o una H200; para cuantización de 4-8 bits puede caber en una RTX 4090 (24 GB) o A6000 (48 GB), con margen limitado por la caché KV a contexto largo.
+- Contexto largo: 512K tokens implican una caché KV muy grande; el despliegue a contexto completo requiere hardware con memoria abundante o técnicas de atención eficiente.
+- Opciones de despliegue: `transformers` con `custom_code` (requerido por la arquitectura MoVA); no se confirma soporte en vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia |
-|---|---|---|---|---|
-| K2-Horizon-MoVA-36B-A4B | 36B | 4B | 512K | Apache 2.0 |
-| Qwen3.6-35B-A3B | 35B | 3B | no disponible | no disponible |
-| G9v3-39A5B | 39B | 5B | no disponible | no disponible |
-| Nemotron 3 Super | 120B | 12B | no disponible | no disponible |
+| Modelo | Params totales | Params activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| K2-Horizon-MoVA-36B-A4B | 36B | 4B | 512K | Apache 2.0 | Pesos, datos y código abiertos |
+| Qwen3.6-35B-A3B | 35B | no disponible | no disponible | no disponible | no disponible |
+| G9v3-39A5B | 39B | no disponible | no disponible | no disponible | no disponible |
+| Gemma 4 31B-it | 31B | denso | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparativos en la informacion proporcionada. La comparacion se limita a parametros y contexto, donde K2-Horizon destaca por su contexto nativo de 512K, muy superior a la mayoria de modelos de su categoria.
+La comparativa se limita a los datos de tamaño que aparecen en la tabla de la model card; no hay datos de rendimiento ni de contexto de los modelos alternativos en la información disponible.
 
 ## Limitaciones y advertencias
-
-- Solo soporta ingles, lo que limita su uso en aplicaciones multilingues.
-- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en tareas de generacion libre.
-- El tamano del repositorio (2471.5 GB) puede suponer una barrera para su descarga y almacenamiento.
-- No se ha confirmado soporte explicito de tool calling o function calling, aunque su orientacion a agentes sugiere que podria incorporarse.
-- No se han publicado datos de sesgos o evaluaciones de seguridad en la informacion disponible.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos de los datasets de entrenamiento para posibles restricciones adicionales.
+- Idioma: el modelo solo declara soporte de inglés; el rendimiento en castellano no está garantizado.
+- Riesgo de alucinación: no se documentan medidas específicas de mitigación en la información disponible.
+- Sesgos: no se documentan evaluaciones de sesgo o seguridad.
+- Contexto largo: aunque la ventana nativa es de 512K tokens, el rendimiento efectivo en contextos muy largos no está verificado con datos públicos en la información disponible.
+- Licencia: Apache 2.0 permite uso comercial, pero debe revisarse el cumplimiento de las licencias de los datasets publicados.
+- Despliegue: requiere `custom_code` en `transformers`; la compatibilidad con motores de inferencia populares no está confirmada, lo que puede complicar la puesta en producción.
+- Tamaño del repositorio: 5167,6 GB, lo que implica una descarga y almacenamiento considerables.
 
 ## Enlaces
-
 - Hugging Face: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
-- Dataset de pretraining: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
+- Código de entrenamiento: https://github.com/ifm-ai/xllm
+- Código de evaluación: https://github.com/ifm-ai/Eval360
+- Datos de entrenamiento: https://github.com/ifm-ai/DATA_NAVIGATOR
+- Dataset de preentrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
 - Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data

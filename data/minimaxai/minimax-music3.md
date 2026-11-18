@@ -2,70 +2,100 @@
 
 ## Resumen
 
-MiniMax Music 3 es un modelo de generación de música desarrollado por MiniMaxAI, diseñado para crear canciones completas de hasta cinco minutos de duración a partir de una descripción musical detallada y, opcionalmente, letras. El modelo compone, arregla, interpreta y produce una canción completa en una sola pasada, con voces expresivas, arreglos que evolucionan y una calidad de audio estable en formatos largos. Se distribuye con pesos abiertos y está pensado para producción, con soporte para integración mediante API y despliegue local.
+MiniMax Music 3 es un modelo de generacion de musica texto-a-audio desarrollado por MiniMaxAI, disenado para crear canciones completas de hasta cinco minutos de duracion a partir de una letra y una descripcion musical detallada. Combina una arquitectura hibrida de dos LLM (uno global de 8B inicializado desde Qwen3-8B y uno local de 0,6B) con un sistema de sintesis continua basado en Flow Matching y Flow-VAE, produciendo audio estereo a 32 kHz y 16 bits en formato WAV.
 
-El modelo se publica en Hugging Face bajo el identificador MiniMaxAI/MiniMax-Music3, con pipeline de text-to-audio y etiquetas que indican compatibilidad con sglang-omni, diffusers y safetensors. Aunque la ficha de Hugging Face no especifica licencia ni idiomas, el repositorio oficial en GitHub y el blog de MiniMax confirman que es un modelo de generación musical de nueva generación, orientado a casos de uso creativos y comerciales. Su relevancia actual radica en la demanda de herramientas de generación musical de alta calidad y código abierto, capaces de producir piezas completas y coherentes sin necesidad de edición posterior.
+El modelo resuelve el problema de la coherencia musical a largo plazo: mantiene temas, ritmo, identidad vocal y progresion del arreglo a lo largo de secuencias extensas, permitiendo estructuras completas de cancion (intro, verso, estribillo, puente, solo instrumental, outro). Frente a generadores de fragmentos cortos, Music 3 apunta a produccion musical asistida donde la estructura global importa tanto como el detalle acustico.
+
+Con 2.431.905.920 parametros totales en pesos safetensors y un repositorio de 67,2 GB, el modelo se distribuye bajo la libreria diffusers con pipeline `text-to-audio`. Su publicacion en Hugging Face (agosto de 2026, actualizado en octubre de 2026) acumula mas de 5.200 descargas y 1.500 likes, lo que indica interes activo de la comunidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Hibrida: Global LLM (8B, inicializado desde Qwen3-8B) + Local LLM (0,6B) + Flow Matching (2,4B) + Flow-VAE Decoder (123M) |
+| Parametros totales | 2.431.905.920 (safetensors) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (según etiquetas de Hugging Face) |
+| Licencia | no disponible (existe archivo LICENSE en el repo, contenido no especificado) |
+| Formato de pesos | safetensors |
+| Frecuencia de muestreo | 32 kHz, 16 bits, estereo (WAV) |
+| Duracion maxima de generacion | hasta 5 minutos |
+| Tokenizer musical | RVQ de 8 capas: 1 codebook semantico (16.384 entradas) + 7 codebooks acusticos (1.024 entradas cada uno) |
+| Libreria | diffusers |
+| Pipeline | text-to-audio |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública detallada sobre la arquitectura interna del modelo, el número de parámetros, la composición del dataset de entrenamiento ni las técnicas de alineación utilizadas (como RLHF o DPO). El repositorio oficial y el blog de MiniMax describen el modelo como un generador de música de alto rendimiento, pero no publican especificaciones técnicas sobre la red neuronal, el tipo de tokenización de audio o el proceso de entrenamiento. Se sabe que el modelo acepta como entrada una descripción textual y letras opcionales, y genera audio de forma autoregresiva o mediante difusión, aunque no se confirma el mecanismo exacto.
+MiniMax Music 3 emplea una arquitectura autorregresiva jerarquica que separa el modelado musical global del acustico local. El Global LLM (8B) predice el primer codebook RVQ fotograma a fotograma y modela la progresion semantica y estructural de la cancion a largo plazo; el Local LLM (0,6B) predice los siete codebooks acusticos restantes dentro de cada fotograma y restaura el detalle fino. El Global LLM se inicializa desde Qwen3-8B: durante el entrenamiento se adaptan primero sus capas de embedding y salida a tokens musicales semanticos, y despues ambos LLM se entrenan conjuntamente para modelar todos los codebooks RVQ.
+
+La sintesis no decodifica unicamente desde tokens RVQ discretos: fusiona los estados ocultos finales de ambos LLM y los pasa por un modulo de Flow Matching (2,4B) que genera el latente de un Flow-VAE, cuyo decoder (123M) produce audio estereo a 32 kHz. Esta representacion continua preserva informacion acustica mas rica para articulacion vocal, textura instrumental y continuidad temporal. La arquitectura Flow-VAE se adapta de MiniMax Speech y se reentrena para el rango dinamico y las caracteristicas espectrales de la musica. El tokenizer de entrenamiento usa ocho capas de Residual Vector Quantization: primero se optimiza el codebook semantico y despues se entrenan conjuntamente los ocho codebooks. En inferencia, la sintesis de onda usa los estados ocultos fusionados y no requiere el decoder discreto del tokenizer. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de canciones completas de hasta cinco minutos, incluyendo composición, arreglo, interpretación vocal y producción.
-- Condicionamiento por letras y descripción musical detallada, lo que permite controlar estilo, instrumentación, tempo y estructura.
-- Voces expresivas y arreglos que evolucionan a lo largo de la pieza, manteniendo coherencia estructural en formatos largos.
-- Generación de audio estable y de alta calidad, adecuada para uso directo en producción musical.
-- Integración con pipelines de generación de audio mediante la API de MiniMax y despliegue local con herramientas compatibles con safetensors.
-- Soporte para generación de música instrumental o con voz, según la entrada proporcionada.
+- Generacion de musica completa texto-a-audio: canciones de hasta cinco minutos con estructura coherente (intro, verso, pre-estribillo, estribillo, post-estribillo, puente, instrumental, solo, outro).
+- Control fino mediante letra con etiquetas de seccion explicitas (`[Intro]`, `[Verse]`, `[Pre-Chorus]`, `[Chorus]`, `[Post-Chorus]`, `[Bridge]`, `[Instrumental]`, `[Solo]`, `[Outro]`).
+- Control mediante descripcion musical: estilo, progresion emocional, interpretacion vocal, instrumentacion, arreglo y perfil de produccion.
+- Soporte de caption estructurado en tres secciones: metadatos globales (genero, subgenero, BPM, tonalidad, escala, progresion emocional, escenario de escucha, perfil de produccion), detalles vocales (genero vocal, timbre, estilo interpretativo, armonias, coros, efectos vocales) y arreglo (instrumentos principales y secundarios, evolucion por seccion, groove, bajo, percusion, texturas, efectos espaciales).
+- Coherencia a largo plazo de tema, ritmo, identidad vocal y progresion del arreglo.
+- Voces expresivas con articulacion vocal preservada gracias a la sintesis por estados ocultos continuos.
+- Generacion de audio estereo de calidad de produccion a 32 kHz y 16 bits.
+- No disponible: soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio de entrada o modo thinking. Es un modelo especializado exclusivamente en generacion musical.
 
 ## Casos de uso
 
-- Producción musical independiente: artistas y productores pueden generar demos completas de canciones a partir de una idea textual y letras, acelerando el proceso de composición y arreglo.
-- Banda sonora para vídeo y multimedia: creadores de contenido pueden generar música de fondo personalizada para vídeos, podcasts o anuncios, describiendo el estado de ánimo y la duración deseada.
-- Prototipado rápido para sellos discográficos: los equipos de A&R pueden evaluar múltiples variaciones de una canción en minutos, generando versiones alternativas con diferentes arreglos o estilos.
-- Herramientas educativas de composición: estudiantes de música pueden experimentar con estructuras armónicas y melódicas, usando el modelo como asistente creativo para explorar ideas.
-- Generación de jingles y sintonías: marcas y agencias pueden crear piezas cortas personalizadas para campañas publicitarias, ajustando el tono y la instrumentación mediante descripciones.
-- Integración en plataformas de creación musical: desarrolladores pueden incorporar el modelo en aplicaciones de producción musical, ofreciendo a los usuarios la posibilidad de generar pistas completas desde texto.
+- Produccion de maquetas completas: un compositor introduce la letra con etiquetas de seccion y un caption estructurado con BPM, tonalidad y estilo; el modelo genera una maqueta de hasta cinco minutos con estructura completa para evaluar arreglo y progresion antes de la grabacion real.
+- Generacion de musica de fondo para video y podcast: la descripcion musical permite fijar genero, ambiente y perfil de produccion, y la duracion de hasta cinco minutos cubre piezas de acompanamiento sin necesidad de concatenar fragmentos.
+- Creacion de jingles y musica publicitaria: el control por secciones permite definir un estribillo corto y reconocible con letra especifica, y el caption vocal ajusta timbre y estilo interpretativo al tono de marca.
+- Prototipado rapido de ideas musicales: iterar sobre variaciones de un mismo tema cambiando solo el caption (instrumentacion, groove, progresion emocional) manteniendo la letra, lo que acelera la exploracion creativa.
+- Localizacion y adaptacion de canciones: al separar letra y descripcion musical, se puede mantener el arreglo y variar la letra para distintas versiones o idiomas, siempre que el modelo soporte el idioma de la letra (no confirmado en la informacion disponible).
+- Educacion musical y analisis de estructura: generar ejemplos con secciones etiquetadas explicitamente para ilustrar formas musicales (verso-estribillo, forma AABA) en contextos docentes.
+- Contenido para plataformas y demos tecnicas: el pipeline `text-to-audio` de diffusers permite integrar la generacion en flujos automatizados de creacion de contenido, con audio estereo listo para publicacion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos objetivos sobre calidad musical, comparación con otros modelos de generación de audio, ni métricas de rendimiento como latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No se dispone de información oficial sobre requisitos de hardware. Al tratarse de un modelo de generación de audio con pesos en safetensors, se espera que requiera una GPU con VRAM suficiente para cargar el modelo y generar audio de forma eficiente, pero no se especifican cifras concretas. Las opciones de despliegue incluyen la API de MiniMax y posiblemente herramientas como vLLM o TGI si el modelo es compatible, aunque no se confirma. Se recomienda consultar la documentación oficial para obtener requisitos actualizados.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, el repositorio ocupa 67,2 GB en safetensors y los pesos declarados suman 2.431.905.920 parametros; la discrepancia entre ambos datos sugiere componentes adicionales (VAE, tokenizer, posibles pesos en precision alta) cuyo desglose no se detalla.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; el tamano del repositorio (67,2 GB) excede la VRAM de la mayoria de GPU consumer, por lo que previsiblemente requiere GPU de datacenter o cuantizacion (no documentada).
+- Opciones de despliegue: libreria diffusers (pipeline `text-to-audio`); el tag `sglang-omni` sugiere soporte de SGLang para el componente LLM. No se documentan opciones para llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados entre MiniMax Music 3 y otros modelos de generación musical como MusicGen de Meta, AudioLDM o Stable Audio. No hay información sobre parámetros, contexto, rendimiento o licencia que permita establecer una comparación objetiva. Se recomienda evaluar el modelo directamente en casos de uso específicos para determinar su idoneidad frente a alternativas.
+| Modelo | Parametros | Contexto / duracion | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax Music 3 | 2.431.905.920 (global 8B + local 0,6B + Flow Matching 2,4B + VAE 123M) | Canciones de hasta 5 min; contexto no disponible | no disponible | safetensors (diffusers) | Hugging Face, API MiniMax |
+| Alternativas de generacion musical texto-a-audio | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone en la informacion proporcionada de datos verificables sobre modelos comparables de la misma categoria (generacion musical texto-a-audio de formato largo) para establecer una comparacion cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- No se ha publicado información sobre sesgos o limitaciones éticas del modelo; al ser un generador de música, podría reflejar sesgos presentes en los datos de entrenamiento, como preferencias estilísticas o culturales.
-- Riesgo de alucinación en la interpretación de descripciones ambiguas o muy complejas, lo que puede dar lugar a resultados que no se ajusten a la intención del usuario.
-- La licencia no está especificada en la ficha de Hugging Face, por lo que se desconoce si el uso comercial está permitido o si existen restricciones de atribución o redistribución.
-- No se dispone de información sobre la calidad de las voces generadas en idiomas distintos del inglés, ni sobre la cobertura de géneros musicales.
-- El modelo genera audio de hasta cinco minutos, pero no se especifica si es posible generar piezas más largas mediante concatenación o si existen limitaciones de memoria o tiempo de generación.
-- Para uso en producción, es necesario validar la estabilidad del modelo en cargas de trabajo reales y verificar la compatibilidad con el stack tecnológico elegido.
+- Licencia no disponible en la informacion proporcionada: existe un archivo LICENSE en el repositorio, pero su contenido no se especifica. Antes de cualquier uso comercial es imprescindible revisar dicho archivo directamente.
+- Idiomas soportados no documentados: no se confirma que idiomas acepta la letra ni la descripcion musical; el rendimiento fuera del ingles o chino (idiomas habituales del ecosistema MiniMax/Qwen) es incierto.
+- Riesgo de alucinacion musical: como modelo generativo, puede producir letras mal articuladas, secciones que no respetan las etiquetas o arreglos incoherentes con el caption, especialmente en descripciones ambiguas.
+- Longitud de contexto no publicada: aunque se afirma coherencia en canciones de hasta cinco minutos, no se detalla la ventana de contexto del Global LLM ni como escala con la duracion.
+- Requisitos de hardware elevados: el repositorio de 67,2 GB y la ausencia de cuantizaciones documentadas limitan el despliegue en entornos con GPU de consumo.
+- Dependencia de la calidad del caption: el control fino depende de un caption estructurado bien redactado; descripciones pobres producen resultados genericos.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas, lo que dificulta la evaluacion objetiva previa a adopcion.
+- Posibles sesgos estilisticos y vocales derivados del dataset de entrenamiento, cuya composicion no se detalla.
+- No apto para tareas fuera de generacion musical: carece de tool calling, agentes, vision o razonamiento general.
 
 ## Enlaces
 
-- [Hugging Face - MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
-- [GitHub - MiniMax-AI/MiniMax-Music3](https://github.com/MiniMax-AI/MiniMax-Music3)
-- [Blog de MiniMax - MiniMax Music 3.0](https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model)
-- [Documentación de API de MiniMax - Modelos](https://platform.minimax.io/docs/release-notes/models)
-- [MiniMax Music 3.0 - API, precios y uso](https://minimax-ai.chat/models/minimax-music-3-0/)
+- Modelo en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Licencia (archivo en el repo): https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
+- Demo de ejemplos: https://minimax-ai.github.io/music3-demo/
+- Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-Music3
+- Organizacion en Hugging Face: https://huggingface.co/MiniMaxAI
+- Documentacion de API: https://platform.minimax.io/docs/guides/text-generation
+- Web oficial de MiniMax: https://www.minimax.io
+- MiniMax Code: https://agent.minimax.io/
+- ModelScope: https://modelscope.cn/organization/minimax
+- Discord: https://discord.com/invite/DPC4AHFCBw
+- Contacto (FAQ): https://platform.minimaxi.com/docs/faq/contact-us

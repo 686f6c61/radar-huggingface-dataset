@@ -21,6 +21,8 @@
     "italianfood",
     "qer-matched",
     "conversational",
+    "base_model:AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+    "base_model:finetune:AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
     "license:apache-2.0",
     "text-generation-inference",
     "endpoints_compatible",

@@ -2,102 +2,91 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Astra-WeightEdit es una variante del modelo base Qwen/Qwen3.5-0.8B (873.438.784 parámetros, licencia Apache 2.0) en la que se han modificado directamente dos tensores de los pesos, sin ningún tipo de entrenamiento ni ajuste fino adicional. La edición, aplicada por JonathanColetti, reproduce el diff publicado por el equipo de MIT CSAIL (Rikiya Takehi, Jayden Teoh, Alex Zhang y Omar Khattab) en su experimento de "weight-space programming", en el que un LLM (GPT-6 Astra) edita pesos de forma nativa.
+Qwen3.5-0.8B-Astra-WeightEdit es una variante del modelo Qwen3.5-0.8B de Alibaba Qwen en la que se han editado directamente dos tensores de los pesos, sin ningún tipo de entrenamiento adicional. La edición la realizó un LLM (GPT-6 Astra) aplicando la técnica de "weight-space programming" descrita por investigadores del MIT CSAIL (Rikiya Takehi, Jayden Teoh, Alex Zhang y Omar Khattab), y JonathanColetti se ha limitado a aplicar el diff publicado y verificar que coincide hash por hash con el checkpoint evaluado por los autores. El objetivo concreto es corregir los bucles de repetición que el modelo base presenta cuando opera en modo "thinking".
 
-El cambio consiste en restar la dirección de bucle (loop direction) de 64 columnas de salida de `mlp.down_proj` en las capas 15 y 19, lo que afecta a unos 130.000 pesos, el 0,016 % del total del modelo. El resto de tensores son idénticos byte a byte al modelo base. El objetivo es corregir el fallo de repetición en bucle que el modelo base presenta en modo thinking.
+El modelo mantiene la arquitectura y el tamaño del base: aproximadamente 873 millones de parámetros (0,8B), pipeline image-text-to-text y licencia Apache 2.0. La intervención es quirúrgica: se restan direcciones de bucle de 64 columnas de salida de `mlp.down_proj` en las capas 15 y 19, lo que afecta a unos 130.000 pesos, el 0,016% del total. Todo lo demás es byte-idéntico al modelo original, lo que facilita la verificación y reduce el riesgo de regresiones no deseadas.
 
-La relevancia de esta ficha es doble: por un lado, documenta un caso práctico de edición de pesos como alternativa al entrenamiento; por otro, advierte de que la mejora reportada (por ejemplo, MATH-500 de 7,9 a 48,1) procede de los autores originales y no ha sido reproducida de forma independiente por el publicador de este repositorio, que indica que su propia evaluación está en curso.
+Su relevancia actual es doble: por un lado, demuestra que es posible modificar comportamiento específico de un modelo editando pesos de forma dirigida sin reentrenar; por otro, ofrece una versión corregida y lista para producción de un modelo pequeño con capacidades multimodales, publicada en múltiples formatos (safetensors, ONNX, GGUF) para cubrir desde servidores GPU hasta navegadores con WebGPU y aplicaciones locales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.5), variante multimodal image-text-to-text segun el pipeline declarado |
+| Arquitectura | Transformer multimodal (image-text-to-text), clase `Qwen3_5ForConditionalGeneration` |
 | Parametros totales | 873.438.784 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (la evaluacion reportada usa 32k tokens, pero no se confirma el maximo del modelo) |
-| Tipos de cuantizacion | no disponible (repo en safetensors sin variantes GGUF/AWQ/GPTQ publicadas) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (valor usado en los ejemplos de llama.cpp con `-c 32768`) |
+| Tipos de cuantizacion | bf16 (safetensors); ONNX en fp32, fp16, int8 (quantized), q4f16 y q4; GGUF BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (modelo base); la edicion se declara CC BY 4.0 por los autores del metodo |
-| Formato de pesos | safetensors (libreria transformers) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (bf16), ONNX, GGUF (BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3.5-0.8B base, un transformer de aproximadamente 873 millones de parámetros. No se ha realizado entrenamiento, fine-tuning, RLHF ni DPO sobre esta variante: la única intervención es una edición directa de pesos sobre dos tensores concretos. En concreto, se ha restado la dirección de bucle de 64 columnas de salida de la capa `mlp.down_proj` en las capas 15 y 19, lo que supone unos 130.000 pesos modificados (0,016 % del modelo). El resto de los tensores es byte-idéntico al checkpoint base.
+El modelo es un transformer multimodal del linaje Qwen3.5, con un codificador de visión y un decodificador de lenguaje, empaquetado bajo la clase `Qwen3_5ForConditionalGeneration`. No ha habido entrenamiento ni fine-tuning: la model card indica explícitamente que se editaron dos tensores directamente mediante un LLM, sin training. La edición consiste en restar la dirección de bucle de 64 columnas de salida de `mlp.down_proj` en las capas 15 y 19, afectando a unos 130.000 pesos (0,016% del modelo). El resto de pesos es byte-idéntico al base Qwen3.5-0.8B.
 
-La innovación técnica es precisamente el método: edición de pesos en el espacio de pesos ("weight-space programming") realizada por un LLM, sin gradientes ni datos de entrenamiento. El script de reconstrucción (`exp8_math/code/apply_edit.py`, sobre la revisión base `2fc06364`) verifica el hash de cada tensor, de modo que la edición es reproducible. El publicador indica que aplicó el diff liberado por los autores y comprobó que coincide hash a hash con el checkpoint evaluado por ellos. No se dispone de información sobre la composición del dataset de entrenamiento del modelo base ni sobre procesos de alineación adicionales.
+La innovación técnica es precisamente el método de edición: "weight-space programming", una técnica en la que un modelo de lenguaje genera una modificación directamente sobre el espacio de pesos en lugar de sobre texto o código. El trabajo original corresponde al experimento 8 del blog "Sparks of Weight-Space Programming" de MIT CSAIL, y el autor de esta ficha solo aplicó el diff publicado, verificando que coincide con el checkpoint evaluado por los autores. Los artefactos ONNX y GGUF no se reexportaron desde cero: se tomaron conversiones existentes de la misma revisión base y se reescribieron únicamente los dos tensores editados, de modo que el resto de bytes coincide con builds ya probados.
 
 ## Capacidades
 
-- Generación de texto conversacional, heredada del modelo base Qwen3.5-0.8B.
-- Razonamiento matemático en modo thinking: el propósito declarado de la edición es reducir los bucles de repetición que truncaban las respuestas antes de llegar a la solución.
-- Procesamiento image-text-to-text segun el `pipeline_tag` declarado en el repositorio (no se detallan capacidades de visión en la model card).
-- Modo thinking activable y desactivable; la edición afecta principalmente al comportamiento con thinking activado.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades especiales (audio, visión detallada): no disponible.
+- Generación de texto y razonamiento paso a paso, con modo "thinking" activable mediante `enable_thinking=True` en el chat template.
+- Razonamiento matemático: los ejemplos de la model card emplean problemas aritméticos con formato de respuesta `\boxed{}`.
+- Procesamiento de imagen y texto (pipeline image-text-to-text), con codificador de visión incluido en los pesos safetensors y en los grafos ONNX.
+- Salida de razonamiento estructurada y verificable, orientada a problemas de matemáticas y lógica.
+- Despliegue multiplataforma: Transformers, vLLM, SGLang, Transformers.js (WebGPU/WASM/Node.js), ONNX Runtime, llama.cpp, LM Studio, Ollama y Jan.
+- No se documenta soporte explícito de tool calling, function calling ni comportamiento agéntico multi-paso en la información disponible.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Evaluación de técnicas de edición de pesos: el modelo sirve como caso de estudio reproducible para investigadores que quieran verificar si una edición de dos tensores corrige un fallo de comportamiento sin reentrenar. El script `apply_edit.py` permite reconstruir el checkpoint y comparar hashes.
-- Razonamiento matemático con presupuesto de tokens limitado: al reducir los bucles de repetición en modo thinking, el modelo puede emplearse en pipelines de resolución de problemas de MATH-500 o GSM8K donde el truncamiento por límite de tokens era el cuello de botella principal.
-- Investigación sobre fallos de repetición en modelos pequeños: útil para estudiar cómo se manifiestan los bucles de decodificación en modelos de menos de 1.000 millones de parámetros y qué intervenciones mínimas los mitigan.
-- Experimentos de alineación sin entrenamiento: como referencia para comparar edición de pesos frente a fine-tuning supervisado o DPO en tareas de corrección de comportamiento.
-- Docencia y divulgación sobre interpretabilidad: modelo pequeño (1,8 GB de repositorio) que cabe en hardware modesto y permite reproducir un experimento de edición de pesos en el espacio de parámetros.
-- Pruebas de compatibilidad con `transformers` y endpoints: al declararse `endpoints_compatible`, puede desplegarse en infraestructuras de inferencia estándar para validar la integración de checkpoints editados.
-- Evaluación comparativa base vs. editado: el propio autor propone comparar MATH-500 con thinking activado y desactivado, ya que con thinking desactivado el modelo base apenas entra en bucle.
+- Resolución de problemas matemáticos con razonamiento explícito: el modelo está pensado para generar cadenas de razonamiento paso a paso y devolver la respuesta final en formato `\boxed{}`, lo que facilita la extracción automática en pipelines de evaluación o tutorización.
+- Corrección de bucles en asistentes conversacionales: al eliminar los bucles de repetición del modo thinking, el modelo es adecuado para chatbots donde el base tendía a repetirse en respuestas largas, con muestreo recomendado de temperatura 0,6, top_p 0,95, top_k 20 y presence penalty 1,5.
+- Inferencia en navegador con WebGPU: los grafos ONNX en fp16 (1,5 GB de decodificador) permiten ejecutar el modelo en el navegador con Transformers.js, útil para demos interactivas o aplicaciones que requieren privacidad sin enviar datos a un servidor.
+- Aplicaciones de escritorio y locales: el GGUF BF16 (1,56 GB) se ejecuta en llama.cpp, LM Studio, Ollama o Jan en portátiles, CPU o Mac, con contexto de hasta 32.768 tokens.
+- Procesamiento de documentos con imagen y texto: al ser un modelo image-text-to-text, puede emplearse para tareas de descripción o extracción de información a partir de imágenes combinadas con instrucciones textuales, siempre que se use la versión safetensors/ONNX con codificador de visión (el GGUF es solo texto).
+- Investigación sobre edición de pesos: sirve como caso de estudio reproducible para validar técnicas de weight-space programming, ya que el diff está publicado, el hash verificado y el resto del modelo es byte-idéntico al base.
+- Prototipado rápido en entornos con recursos limitados: con 873M de parámetros y cuantizaciones de 0,44-0,87 GB en ONNX, es viable para pruebas en hardware modesto antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos disponibles son los reportados por los autores del método, no reproducidos por el publicador. Configuración: thinking activado, temperatura 0,6, top_p 0,95, top_k 20, presence_penalty 1,5, 32k tokens.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
-| Modelo | MATH-500 | GSM8K | IFEval | MMLU-Pro |
-|---|---|---|---|---|
-| Qwen3.5-0.8B base | 7,9 | 13,8 | 21,0 | 40,3 |
-| Qwen3.5-0.8B-Astra-WeightEdit | 48,1 | 67,1 | 62,3 | 45,5 |
-
-Advertencia del autor: la edición elimina un modo de fallo, no añade capacidad. La mayor parte de la ganancia proviene de respuestas que ya no alcanzan el límite de tokens (la proporción de respuestas truncadas pasa del 93 % al 33 %). No se han publicado resultados independientes de MATH-500, GSM8K ni IFEval en el momento de redactar esta ficha; el autor indica que están en curso.
+La model card únicamente aporta una comprobación de concordancia de argmax del siguiente token frente al modelo PyTorch bf16 sobre un prompt de 35 tokens: fp32, fp16 e int8 coinciden al 100%; q4f16 y q4, aproximadamente al 69%. No hay datos de MMLU, GSM8K, HumanEval ni similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 1,7-1,8 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, unos 3-4 GB para contexto moderado.
-- En cuantización de 8 bits: alrededor de 0,9 GB de pesos; en 4 bits, unos 0,5 GB (estimaciones, no hay variantes cuantizadas publicadas en el repo).
-- GPU recomendadas: cualquier GPU consumer con 8 GB o más (RTX 3060, RTX 4060, RTX 4090) puede ejecutar el modelo en FP16 con contexto amplio; para 32k tokens de contexto conviene 16 GB o más por el coste de la caché KV.
-- Cabe en GPU consumer: sí, en la mayoría de tarjetas con 8 GB o más.
-- Opciones de despliegue: `transformers` (librería declarada), vLLM (usado por los autores en su evaluación), y previsiblemente llama.cpp/Ollama si se generan conversiones GGUF, aunque no se publican en el repositorio.
-- Latencia y throughput: no disponibles. El autor menciona que su script de evaluación replica los ajustes de sampling y de vLLM del equipo original, pero no publica cifras de rendimiento.
+- VRAM estimada para inferencia en bf16: aproximadamente 1,75 GB solo para pesos (873M parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, entre 2,5 y 4 GB según longitud de contexto.
+- ONNX: decodificador de 3,0 GB en fp32, 1,5 GB en fp16, 0,87 GB en int8, 0,48 GB en q4 y 0,44 GB en q4f16.
+- GGUF: único archivo BF16 de 1,56 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para bf16; A100, H100 y RTX 4090 sobran para este tamaño y permiten lotes grandes y contexto completo. Para WebGPU, fp16 requiere una GPU integrada o dedicada compatible con WebGPU.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060, RTX 4090 y similares; también en CPU y Mac mediante GGUF o ONNX int8.
+- Opciones de despliegue: Transformers, vLLM, SGLang, Transformers.js (WebGPU, WASM, Node.js), ONNX Runtime, llama.cpp, LM Studio, Ollama y Jan.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | MATH-500 (thinking) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.5-0.8B (base) | 873 M | no disponible | 7,9 | Apache 2.0 | Hugging Face |
-| Qwen3.5-0.8B-Astra-WeightEdit | 873 M | no disponible | 48,1 (reportado, no reproducido) | Apache 2.0 + CC BY 4.0 (edicion) | Hugging Face |
-| Alternativas de tamano similar (p. ej. Llama 3.2 1B, Gemma 2 2B) | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de datos de benchmarks de modelos comparables en la información proporcionada, por lo que la comparativa se limita al par base/editado. Cualquier comparación con otros modelos pequeños requeriría ejecutar la misma evaluación con idéntica configuración de sampling.
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formatos | Notas |
+|---|---|---|---|---|---|---|
+| Qwen3.5-0.8B-Astra-WeightEdit | 873M | 32.768 | Sí (image-text-to-text) | Apache 2.0 | safetensors, ONNX, GGUF | Bucles de thinking corregidos por edición de pesos |
+| Qwen3.5-0.8B (base) | 873M | no disponible | Sí | Apache 2.0 | safetensors | Presenta bucles de repetición en modo thinking |
+| Alternativas de ~1B | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Los resultados de benchmarks proceden de los autores del método y no han sido reproducidos de forma independiente por el publicador del repositorio; deben tratarse como preliminares.
-- La edición corrige un modo de fallo (bucles de repetición en thinking), no mejora la capacidad intrínseca del modelo; con thinking desactivado la diferencia frente al base es previsiblemente pequeña.
-- Modelo de 873 millones de parámetros: capacidad limitada en razonamiento complejo, conocimiento factual y tareas de larga cadena, incluso tras la edición.
-- Riesgo de alucinación inherente a modelos de este tamaño; no se han publicado evaluaciones de factualidad ni de calibración.
-- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe homogéneo.
-- Longitud de contexto máxima no documentada; la evaluación usa 32k tokens pero no se confirma que sea el límite del modelo.
-- El pipeline declarado es image-text-to-text, pero la model card no detalla capacidades de visión; conviene validarlas antes de usarlas en producción.
-- La licencia del modelo base es Apache 2.0, pero la edición se declara CC BY 4.0 por los autores del método; para uso comercial conviene revisar la atribución requerida y conservar el aviso de licencia del repositorio.
-- El publicador no está afiliado ni respaldado por los autores del método, OpenAI ni Qwen.
-- El grader original de los autores (`mathqa.py`) depende de un módulo interno (`mcqa`) no liberado; el publicador usa un sustituto de una función, lo que puede introducir diferencias menores en la evaluación.
-- Repositorio con 0 descargas y 0 likes en el momento de redactar la ficha: sin validación comunitaria.
+- La corrección de bucles solo es efectiva con el modo thinking activado (`enable_thinking=True`); con thinking desactivado no aporta mejora.
+- El GGUF es únicamente texto: no incluye archivo `mmproj` de visión, por lo que las capacidades de imagen no están disponibles en llama.cpp, LM Studio, Ollama ni Jan.
+- Las cuantizaciones de 4 bits (q4, q4f16) son notablemente lossy a este tamaño: la concordancia de argmax con bf16 cae al ~69%, por lo que no se recomiendan para tareas sensibles a la precisión.
+- Riesgo de alucinación inherente a un modelo de 0,8B: la capacidad de razonamiento y conocimiento factual es limitada en comparación con modelos mayores.
+- Sesgos conocidos: no documentados en la información proporcionada; se heredan los del modelo base Qwen3.5-0.8B.
+- Idiomas soportados: no disponibles; conviene validar el comportamiento multilingüe antes de usarlo en producción en idiomas distintos del inglés.
+- Licencia Apache 2.0: permite uso comercial, pero el autor declara no estar afiliado ni respaldado por los autores del método, OpenAI ni Qwen.
+- El modelo no ha sido reentrenado: cualquier comportamiento no relacionado con los bucles de repetición es idéntico al base, incluidas sus limitaciones.
+- No se documenta soporte de tool calling ni de agentes multi-paso; no asumir estas capacidades sin validación previa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JonathanColetti/Qwen3.5-0.8B-Astra-WeightEdit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog del método (Sparks of Weight-Space Programming, experimento 8): https://rikiyat.github.io/blog/weight-space-programming/
-- Logs y edición de los autores: https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math
-- Directorio de la edición en el repositorio: `astra_edit/` (incluido en el repo de Hugging Face)
-- Script de reconstrucción: `exp8_math/code/apply_edit.py` (revisión base `2fc06364`)
-- Cita del método: Takehi, Rikiya; Teoh, Jayden; Zhang, Alex; Khattab, Omar (2026), "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights"
+- Logs y edición originales: https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math
+- Conversión ONNX de referencia: https://huggingface.co/onnx-community/Qwen3.5-0.8B-ONNX-OPT

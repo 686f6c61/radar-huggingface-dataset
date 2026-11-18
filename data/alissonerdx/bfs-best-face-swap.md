@@ -2,94 +2,99 @@
 
 ## Resumen
 
-BFS (Best Face Swap) es una serie de adaptadores LoRA desarrollada por Alissonerdx para realizar intercambios de rostro, cabeza y cuerpo completos con alta fidelidad, integración natural del tono de piel y consistencia de iluminación. El modelo no es un modelo independiente, sino un conjunto de adaptadores diseñados para funcionar sobre tres familias de modelos base: Qwen Image Edit 2509/2511, FLUX.2 Klein 4B/9B y Krea 2. Publicado bajo licencia MIT, acumula más de 115.000 descargas y 766 likes en Hugging Face.
+BFS (Best Face Swap) es una colección de adaptadores LoRA para modelos de difusión orientados a la edición de imagen, desarrollada por el usuario Alissonerdx y publicada bajo licencia MIT. Su función es el reemplazo selectivo de cara, cabeza y cuerpo (face swap, head swap, body swap) sobre imágenes de entrada, apoyándose en modelos base de gran tamaño como Qwen Image 2.1, Qwen Image Edit 2509/2511, FLUX.2 Klein (4B y 9B), Krea 2 y, de forma experimental, LTX-2. No se trata de un modelo generativo autónomo, sino de pesos LoRA que se cargan sobre el modelo base correspondiente y se ejecutan mediante flujos de trabajo de ComfyUI o la librería diffusers.
 
-La serie se organiza en versiones con distinto alcance de sustitución: Face V1 intercambia únicamente el rostro preservando el pelo, la iluminación y el fondo de la imagen objetivo; Head V1 a V5 realizan intercambios completos de cabeza con mejoras progresivas en coincidencia de tono de piel, alineación de pose y consistencia anatómica; y las versiones para Krea 2 añaden además intercambio de cuerpo completo. Cada versión requiere un orden específico de las imágenes de entrada, y algunas versiones (Head V3 en adelante) utilizan orden invertido (cuerpo primero, rostro después).
+El repositorio agrupa múltiples versiones de pesos (head V1, V1.1, body swap V1.0, body swap selectivo con marca magenta, face V1, head V2-V5 para Qwen Edit, variantes para FLUX.2 Klein y Krea 2) y cada familia tiene su propio contrato de orden de entrada, prompt y workflow. El tamaño total del repositorio es de 14,2 GB, lo que refleja la acumulación de todas las variantes y sus versiones en fp16/fp32.
 
-La relevancia actual del modelo radica en que aborda uno de los problemas más difíciles del image-to-image: el intercambio facial con preservación de identidad y coherencia visual, sin necesidad de entrenar un modelo completo. Al ser adaptadores LoRA sobre modelos base ya optimizados, ofrece una vía práctica para integrar face swapping en flujos de ComfyUI y pipelines de edición de imagen.
+Su relevancia actual radica en que cubre varios de los modelos de edición de imagen más recientes (Qwen Image 2.1, FLUX.2 Klein, Krea 2) con un único conjunto de LoRAs y flujos listos para ComfyUI, lo que facilita incorporar sustitución de identidad en pipelines de edición sin entrenar adaptadores propios. La model card insiste en el uso responsable y prohíbe explícitamente generar resultados con figuras públicas o personas sin consentimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA sobre modelos base de difusion (Qwen Image Edit 2509/2511, FLUX.2 Klein 4B/9B, Krea 2) |
-| Parametros totales | No disponible (los LoRA varian por version; el repo pesa 12,8 GB e incluye multiples adaptadores) |
-| Parametros activos | No aplica (es un adaptador, no un modelo MoE) |
-| Longitud de contexto | No aplica (modelo de imagen, no de texto) |
-| Tipos de cuantizacion | safetensors (fp16 y fp32 segun version; existen variantes rank 16 fp16 y rank 32 fp32 para Head V5) |
-| Idiomas soportados | Ingles (prompts de activacion y descripciones) |
+| Arquitectura | LoRA (adaptadores de bajo rango) sobre modelos de difusión de edición de imagen (Qwen Image 2.1, Qwen Image Edit 2509/2511, FLUX.2 Klein 4B/9B, Krea 2, LTX-2 experimental) |
+| Parametros totales | no disponible (depende del modelo base; los LoRA son adaptadores de bajo rango con rank variable, p. ej. rank 16, 32, 64, 128 en algunas variantes) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible de forma explícita; se distribuyen pesos en fp16 y fp32 (p. ej. `bfs_head_v5_2511_merged_version_rank_16_fp16.safetensors`, `rank_32_fp32`), y existen bases FLUX.2 Klein en fp8 |
+| Idiomas soportados | en (inglés) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (LoRA); workflows en JSON para ComfyUI |
 
 ## Arquitectura y entrenamiento
 
-BFS es una serie de adaptadores LoRA que se aplican sobre modelos base de difusion de imagen. Los modelos base soportados son Qwen Image Edit 2509 y 2511 (modelos de edicion de imagen de Qwen), FLUX.2 Klein 4B y 9B de Black Forest Labs, y Krea 2. Cada version del adaptador se entrena especificamente para un modelo base y un nivel de sustitución distinto: solo rostro, cabeza completa o cuerpo entero.
+BFS no es un transformer generativo completo, sino un conjunto de adaptadores LoRA que se inyectan en los bloques de atención de modelos de difusión basados en transformer (DiT) para edición de imagen. Cada release está entrenado sobre un modelo base concreto (Qwen Image 2.1, Qwen Image Edit 2509/2511, FLUX.2 Klein 4B/9B, Krea 2) y requiere cargarse sobre ese mismo base para funcionar correctamente. Las variantes incluyen distintos rangos (rank 16, 32, 64, 128) y precisiones (fp16, fp32), y en el caso de Qwen Edit 2511 se ofrecen versiones "original" y "merged" con distinto rank y precisión.
 
-Los detalles de entrenamiento disponibles son parciales. La version Head V5 para Qwen Image Edit 2511 se entreno durante mas de 5.500 pasos directamente sobre el modelo 2511, y tambien se publicaron versiones fusionadas (merge) de Head V4 (2509) sobre el original entrenado en 2511. Segun el autor, las versiones fusionadas rinden mejor en la reproduccion de un rango mas amplio de expresiones. Para FLUX.2 Klein 9B existen variantes con 3.500 pasos a rank 128 y 3.750 pasos a rank 64. No se especifica la composicion del dataset de entrenamiento ni si se utilizaron tecnicas de RLHF o DPO.
-
-Una innovacion destacable es el uso de orden invertido de imagenes de entrada en las versiones Head V3, V4 y V5: se envia primero el cuerpo y despues el rostro, lo que segun el autor mejora la estabilidad y precision del intercambio. Tambien se incluyen prompts de activacion especificos para las versiones de Krea 2, como `head_swap: replace the head with the reference head` y `body_swap: replace the person with the reference person`.
+La model card no detalla el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de alineación como RLHF o DPO; esa información no está disponible. La innovación principal es la especialización por tarea (cara, cabeza, cuerpo, cuerpo selectivo con marca magenta) y la cobertura multi-modelo con contratos de entrada documentados por versión. La variante de body swap selectivo permite reemplazar únicamente a la persona marcada en magenta, lo que resulta útil en fotos de grupo y escenas con varias personas.
 
 ## Capacidades
 
-- Intercambio de rostro (face swap) preservando pelo, iluminacion y fondo de la imagen objetivo, mediante la version Face V1.
-- Intercambio completo de cabeza (head swap) con integracion natural entre cabeza y cuerpo, disponible en las versiones Head V1 a V5.
-- Intercambio de cuerpo completo (body swap) con la version experimental para Krea 2, que sustituye a la persona por la persona de referencia.
-- Cambio de fondo combinable con el body swap mediante el sufijo `BG: [descripcion]` en el prompt.
-- Combinacion de adaptadores: el autor sugiere usar el head swap y el body swap de Krea 2 juntos a intensidad 0,5 para mejorar la identidad facial.
-- Transferencia de expresiones faciales mejorada en las versiones Head V4 y V5.
-- Compatibilidad multiplataforma: funciona con Qwen Image Edit, FLUX.2 Klein y Krea 2, y se integra en ComfyUI mediante flujos de trabajo incluidos en el repositorio.
+- Reemplazo de cara (face swap) sobre una imagen de entrada, manteniendo la identidad de la cara de referencia.
+- Reemplazo de cabeza (head swap) con versiones V1, V1.1 y V2-V5 según el modelo base.
+- Reemplazo de cuerpo (body swap) completo sobre Qwen Image 2.1 y Krea 2.
+- Reemplazo de cuerpo selectivo: sustituye solo a la persona marcada en magenta, útil en grupos.
+- Edición de imagen guiada por prompt y por imagen de referencia (pipeline image-to-image).
+- Integración con ComfyUI mediante workflows JSON incluidos en el repositorio.
+- Compatibilidad con diffusers como librería de carga.
+- Soporte experimental de LTX-2 mediante LoRA de tipo IC (in-context).
+- No incluye tool calling, function calling, razonamiento multi-paso ni capacidades de agente; es un modelo de edición de imagen, no de texto.
 
 ## Casos de uso
 
-- Postproduccion fotografica profesional: sustituir el rostro de un sujeto en una sesion de estudio manteniendo la iluminacion y el fondo originales, gracias a la version Face V1 que preserva el pelo y el contexto.
-- Correccion de retratos: reemplazar una expresion no deseada o unos ojos cerrados en una foto de grupo utilizando Head V4 o V5, que transfieren la expresion del rostro de referencia con mayor robustez.
-- Creacion de contenido para cine y video: generar tomas alternativas intercambiando cabezas entre actores para escenas de dobles, usando las versiones Head V3 o V5 con el orden de entrada invertido.
-- Personalizacion de avatares y personajes: aplicar el rostro de una persona sobre cuerpos o poses distintas con la version Body Swap de Krea 2, combinada con el head swap a intensidad 0,5 para mantener la identidad.
-- Restauracion de fotografias antiguas: transferir un rostro bien conservado a una imagen degradada o con el rostro danado, aprovechando la coincidencia de tono de piel de las versiones Head V2 y V3.
-- Prototipado rapido en diseno de moda: visualizar prendas sobre distintos modelos intercambiando cabezas o cuerpos completos, con la posibilidad de cambiar el fondo mediante el sufijo `BG:` en Krea 2.
-- Flujos de trabajo automatizados en ComfyUI: integrar los adaptadores en pipelines de edicion por lotes, gracias a los flujos de trabajo JSON incluidos en el repositorio.
+- Producción audiovisual y postproducción: sustituir la cabeza o el cuerpo de un actor de doble por el del protagonista en planos concretos, usando el LoRA de head swap V1.1 sobre Qwen Image 2.1 y el workflow de ComfyUI incluido.
+- Fotografía de producto con modelos: reemplazar la identidad del modelo de referencia por la del cliente manteniendo cuerpo y vestuario, con el LoRA de body swap V1.0 sobre Qwen Image 2.1.
+- Fotos de grupo y eventos: usar la variante de body swap selectivo (magenta) para cambiar solo a una persona marcada, sin alterar al resto del grupo.
+- Creación de contenido para redes y avatares: generar variantes de una misma identidad sobre distintas poses o cuerpos a partir de una imagen de referencia, encadenando el LoRA de face swap con el modelo base Qwen Image Edit 2509/2511.
+- Prototipado rápido en estudios de diseño: iterar sobre composiciones con FLUX.2 Klein 4B (versión ligera) para pruebas de concepto y pasar a 9B para la versión final, usando los LoRA correspondientes a cada tamaño.
+- Investigación en edición de imagen: comparar el comportamiento de distintos modelos base (Qwen Image 2.1, FLUX.2 Klein, Krea 2) con el mismo adaptador de reemplazo de cabeza, aprovechando que el repositorio ofrece pesos para cada familia.
+- Integración en pipelines de diffusers: cargar el LoRA sobre el base y automatizar la sustitución de identidad en lotes de imágenes mediante scripts, sin depender de la interfaz de ComfyUI.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona metricas cuantitativas como FID, LPIPS o evaluaciones de identidad facial. La evaluacion se basa en ejemplos visuales publicados en la model card y en la valoracion subjetiva del autor, que indica que las versiones fusionadas de Head V5 rinden mejor en expresiones que la version original.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Los adaptadores LoRA en si son ligeros, pero los requisitos reales de VRAM los determina el modelo base elegido.
-- Para FLUX.2 Klein 4B: cabe en GPUs de consumo con 8-12 GB de VRAM en fp16, dependiendo de la resolucion de imagen.
-- Para FLUX.2 Klein 9B: requiere 16-24 GB de VRAM en fp16; con cuantizacion fp8 puede ejecutarse en GPUs de 12-16 GB.
-- Para Qwen Image Edit 2511: los requisitos dependen del tamano del modelo base; se recomiendan GPUs con al menos 16 GB de VRAM.
-- Para Krea 2: requisitos no especificados; se recomienda probar en GPUs de 16 GB o superiores.
-- GPUs recomendadas: NVIDIA RTX 4090 (24 GB) para modelos 4B y Krea 2; A100 o H100 para los modelos 9B a resoluciones altas.
-- Opciones de despliegue: ComfyUI con los flujos de trabajo incluidos; Diffusers para integracion en Python; no se menciona soporte para vLLM, llama.cpp u Ollama, ya que no es un modelo de texto.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; depende del modelo base. Los LoRA en sí ocupan poco (del orden de decenas a cientos de MB según rank y precisión), pero el modelo base Qwen Image 2.1 o FLUX.2 Klein 9B requiere VRAM considerable.
+- GPU recomendadas: no disponible en la información proporcionada; por el tamaño de los modelos base (FLUX.2 Klein 9B, Qwen Image 2.1) se recomienda hardware de gama alta, pero el autor no especifica modelos concretos.
+- ¿Cabe en GPU de consumo? No disponible. Existen variantes fp8 de FLUX.2 Klein (4B y 9B) que reducen requisitos, pero no se documentan cifras de VRAM.
+- Opciones de despliegue: ComfyUI (workflows JSON incluidos) y diffusers. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a difusión de imagen).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Alcance | Licencia | Disponibilidad |
+| Modelo | Tipo | Modelos base | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| BFS (este modelo) | LoRA | Qwen Image Edit, FLUX.2 Klein, Krea 2 | Rostro, cabeza, cuerpo | MIT | Hugging Face |
-| InsightFace / inswapper | Modelo de reconocimiento facial | Independiente | Rostro | No comercial (para inswapper) | GitHub, pip |
-| Roop / face-swap | Pipeline de intercambio | Independiente | Rostro | No comercial | GitHub |
-| InstantID | Adaptador | SDXL | Rostro con control de pose | Apache 2.0 (codigo), modelo con restricciones | Hugging Face |
+| BFS (Best Face Swap) | Colección de LoRA para face/head/body swap | Qwen Image 2.1, Qwen Image Edit 2509/2511, FLUX.2 Klein 4B/9B, Krea 2, LTX-2 | MIT | safetensors + workflows ComfyUI | Hugging Face, 218.696 descargas |
+| Alternativas de face swap | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-BFS se diferencia de alternativas como Roop o InsightFace en que no requiere deteccion facial en tiempo real ni reconstruccion 3D: opera como un adaptador LoRA dentro del proceso de difusion, lo que permite integracion natural con la iluminacion y el estilo del modelo base. Frente a InstantID, BFS cubre tambien intercambio de cabeza y cuerpo completo, no solo el rostro. La licencia MIT es mas permisiva que la de la mayoria de alternativas de face swap, que suelen tener restricciones de uso no comercial.
+No se dispone de información sobre modelos comparables en la documentación proporcionada; la model card no incluye comparativas con otras soluciones de face swap.
 
 ## Limitaciones y advertencias
 
-- Riesgo de uso indebido: el intercambio facial puede emplearse para suplantacion de identidad o creacion de contenido falso; debe utilizarse con consentimiento explicito de las personas implicadas.
-- La version Body Swap de Krea 2 es experimental: la transferencia de pose no siempre coincide exactamente con la imagen original.
-- Las versiones Head V3, V4 y V5 requieren orden invertido de imagenes (cuerpo primero, rostro despues); usar el orden estandar produce resultados incorrectos.
-- El modelo esta documentado solo en ingles; los prompts de activacion deben escribirse en ingles.
-- No se han publicado evaluaciones cuantitativas de fidelidad de identidad ni de calidad de imagen; la eficacia se basa en ejemplos visuales.
-- Las versiones fusionadas de Head V5 no son perfectas, segun el propio autor, especialmente en la reproduccion de un rango amplio de expresiones.
-- El rendimiento depende criticamente del modelo base; no es un modelo autonomo y requiere descargar el adaptador y el modelo base correspondiente.
-- La licencia MIT cubre el adaptador, pero los modelos base (FLUX.2, Qwen Image Edit, Krea 2) tienen sus propias licencias que deben verificarse por separado para uso comercial.
+- Sesgos conocidos: no documentados en la model card; al operar sobre modelos base de difusión, hereda los sesgos de esos modelos en cuanto a representación de identidades, etnias, edades y géneros.
+- Riesgo de alucinación: los resultados son demostraciones y no hay garantía de resultados idénticos en cada imagen; la propia model card advierte que los ejemplos no garantizan reproducibilidad.
+- Limitaciones de contexto e idioma: el modelo está etiquetado únicamente para inglés; los prompts deben formularse en ese idioma.
+- Restricciones de licencia: la licencia es MIT, pero la model card prohíbe explícitamente usar o compartir resultados con figuras públicas o personas que no hayan dado su consentimiento. Esta restricción es de uso, no de licencia, y debe respetarse en producción.
+- Caveat de compatibilidad: cada LoRA debe usarse con su modelo base correspondiente; mezclar familias (base, text encoder, VAE, workflow y LoRA de distinto origen) provoca fallos. El orden de entrada varía por versión (algunos head swap usan cuerpo primero y cara de referencia después).
+- Fuerza del LoRA: se recomienda empezar en 1.0 y ajustar según base, resolución e imagen de referencia.
+- Riesgo de uso malicioso: la sustitución de identidad sin consentimiento es un vector claro de suplantación y deepfakes; debe aplicarse control de acceso y verificación de consentimiento en cualquier despliegue.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap
-- Contenido del repositorio: https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap/tree/main
-- Flujo de trabajo Head/Face Swap para Qwen Image Edit 2509 (Civitai): https://civitai.com/articles/20190/headface-swap-workflow-qwen-image-edit-2509
-- Pagina del modelo en Civitai (FLUX.2 Klein 9B): https://civitai.red/models/2027766/bfs-best-face-swap
-- Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/bfs-best-face-swap-alissonerdx
+- Modelo en Hugging Face: https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap
+- Guía Qwen Image 2.1 (head V1/V1.1): docs/qwen-image-2.1.md
+- Guía Qwen Image 2.1 (body swap V1.0): docs/qwen-image-2.1-body.md
+- Guía Qwen Image 2.1 (body swap selectivo magenta): docs/qwen-image-2.1-body-selective.md
+- Guía Qwen Image Edit 2509/2511: docs/qwen-image-edit.md
+- Guía FLUX.2 Klein: docs/flux-2-klein.md
+- Guía Krea 2: docs/krea-2.md
+- Guía LTX-2 (experimental): docs/ltx-2.md
+- Workflow head swap Qwen 2.1: workflows/Head Swap V1 Qwen 2.1 Workflow.json
+- Workflow body swap Qwen Image 2.1: workflows/Body Swap Qwen Image 2.1 - V1.json
+- Workflow body swap selectivo Qwen Image 2.1: workflows/Body Swap Selective Qwen Image 2.1 - V1.0.json
+- Modelo base Qwen Image 2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base Qwen Image Edit 2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
+- Modelo base FLUX.2 Klein 9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
+- Modelo base FLUX.2 Klein 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+- Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw

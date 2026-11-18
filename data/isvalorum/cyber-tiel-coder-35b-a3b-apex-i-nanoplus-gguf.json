@@ -78,7 +78,7 @@
     "region:us"
   ],
   "likes": 13,
-  "downloads_30d": 5876,
+  "downloads_30d": 5690,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -98,31 +98,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF",
-      "snippet": "CyberTiel outcodes every other 35B-A3B at Q4 quantization (and spring-of-2026 frontier models), while engaging with offensive security work without hesitation or refusal. As a sweet spot between speed and ability, CyberTiel delivers agentic coding solves about 3-4x faster than 3.8-27B dense. This is the first time the frontier coder in this size/speed class is an uncensored model. If you need ..."
-    },
-    {
-      "title": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP - Hugging Face",
-      "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP",
-      "snippet": "CyberTiel outcodes every other 35B-A3B at Q4 quantization (and spring-of-2026 frontier models), while engaging with offensive security work without hesitation or refusal. As a sweet spot between speed and ability, CyberTiel delivers agentic coding solves about 3-4x faster than 3.8-27B dense. This is the first time the frontier coder in this size/speed class is an uncensored model. If you need ..."
-    },
-    {
-      "title": "Tiel Coder 35b A3b Apex I Nanoplus Gguf - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/isvalorum/tiel-coder-35b-a3b-apex-i-nanoplus-gguf",
-      "snippet": "Registry entry for model Tiel Coder 35b A3b Apex I Nanoplus Gguf; source metadata pending."
-    },
-    {
-      "title": "Cyber Tiel Coder 35b A3b Gguf Mtp - GGUF Model",
-      "url": "https://local-ai-zone.github.io/models/cyber-tiel-coder-35b-a3b-gguf-mtp.html",
-      "snippet": "Download Cyber Tiel Coder 35b A3b Gguf Mtp GGUF model. 20.7 GB, 64,759 downloads."
-    },
-    {
-      "title": "Cyber Tiel Coder 35b A3b - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/cyber-tiel-coder-35b-a3b.html",
-      "snippet": "Download Cyber Tiel Coder 35b A3b GGUF model. 20.7 GB, 24,356 downloads, 60 likes."
-    }
-  ]
+  "sources": []
 }

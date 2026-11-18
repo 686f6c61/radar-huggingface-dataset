@@ -2,85 +2,98 @@
 
 ## Resumen
 
-MiniMax-H3-Combat-Base-V2 es un adaptador LoRA de 148 MB creado por el usuario JOKER141 sobre el modelo de generacion de video MiniMax H3 de Comfy-Org. A diferencia de un modelo completo, este adaptador no genera texto ni imagenes: modifica el comportamiento del modelo base para producir escenas de accion, pelea y dialogo con mayor realismo fisico y continuidad. El autor lo presenta como una actualizacion importante de la version V1, con mejoras en la continuidad de acciones, reacciones de impacto acumulativas, movimiento espacial y causa-efecto fisico. Es relevante para creadores de video, animadores y desarrolladores que trabajan con flujos de ComfyUI y necesitan coreografiar escenas de combate sin recurrir a captura de movimiento. La ficha incluye dos workflows especializados de "combat director" y recomienda configuraciones concretas de sampler para obtener resultados nitidos. El modelo funciona con prompts en ingles y chino.
+MiniMax-H3-Combat-Base-V2 es un LoRA de adaptación (no un modelo completo) creado por el usuario JOKER141 sobre el modelo base Comfy-Org/MiniMax-H3, orientado a la generación de vídeo con coreografía de combate, movimiento corporal y puesta en escena cinematográfica. El adaptador no genera el modelo subyacente: modifica el comportamiento del MiniMax-H3 para producir cadenas de acción físicamente coherentes, reacciones a impactos acumulativas y continuidad entre planos, además de mejorar el movimiento corporal y la dinámica de audio en escenas de diálogo.
 
-## Especificaciones tecnicas
+La versión V2 amplía el alcance de la V1 (centrada solo en combate) hacia escenas mixtas de acción y diálogo, incorporando físicas de movimiento continuas, colisiones en tres fases con el entorno, trayectorias de caída multiphase y coreografía de tipo "uno contra muchos" con entradas escalonadas de atacantes. El repositorio ocupa 0,2 GB, lo que es consistente con un adaptador LoRA de pesos ligeros sobre un modelo de vídeo de gran tamaño.
 
-| Parametro | Valor |
+Es relevante ahora porque aborda uno de los problemas clásicos de los modelos de vídeo generativo: la falta de continuidad física y la tendencia a bucles de "ataque y reinicio". El autor publica métricas internas de mejora en escenas de diálogo y recomienda configuraciones concretas de sampler y scheduler, lo que indica que el adaptador es sensible a la configuración de inferencia y requiere ajuste para rendir correctamente.
+
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (Low-Rank Adaptation) sobre el modelo de generacion de video MiniMax H3 de Comfy-Org. La arquitectura interna del modelo base no se detalla en la informacion disponible. |
-| Parametros totales | no disponible |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre MiniMax-H3; arquitectura del modelo base no disponible |
+| Parámetros totales | no disponible (el adaptador ocupa 0,2 GB en el repositorio) |
+| Parámetros activos | no aplica (no es MoE, según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Ingles, chino |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (archivo H3_Combat_V2.safetensors, 148 MB) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | en, zh |
+| Licencia | minimax-h3-community-license |
+| Formato de pesos | no disponible (repositorio de 0,2 GB, librería minimax-h3) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye como una LoRA sobre el modelo base MiniMax H3, propiedad de Comfy-Org. El autor no publica detalles del entrenamiento: no se indica el conjunto de datos, el numero de tokens ni si se usaron tecnicas como RLHF o DPO. La unica informacion tecnica disponible es la lista de mejoras de la version V2, que incluyen una logica de "cadena fisica continua" en la que los golpes fallidos conservan el impulso, los bloqueos cambian de direccion sin cortes y las extremidades se separan limpiamente. El README advierte que el resultado depende en gran medida del sampler: se recomienda res_multistep con scheduler simple, o euler con scheduler beta. Otras combinaciones pueden producir resultados mas borrosos o suaves. El pack incluye dos workflows de director de combate (general y "uno contra muchos") con instrucciones en chino que permiten generar prompts finales en cualquier idioma.
+El artefacto es un LoRA, es decir, un conjunto de matrices de bajo rango que se aplican sobre las capas del modelo base Comfy-Org/MiniMax-H3. La model card no detalla el rango del adaptador, las capas objetivo ni el número de pasos de entrenamiento. El modelo base es un generador de vídeo de MiniMax (familia H3) con soporte de audio, a juzgar por las métricas de Audio RMS y la mención a dinámicas vocales en la evaluación del autor.
+
+El entrenamiento se ha orientado explícitamente a la física del movimiento: el autor describe que V2 abandona los bucles de "ataque → reinicio" en favor de cadenas físicas continuas donde los golpes fallidos conservan el momento, los bloqueos cambian de dirección de forma suave y los miembros se separan limpiamente sin pegarse. También se modelan reacciones a impactos persistentes y acumulativas (flexión sostenida del torso, guardia baja, movilidad reducida) que construyen hacia finalizadores pesados creíbles. No se especifican el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO; estos datos no están disponibles.
+
+El autor incluye dos flujos de trabajo especializados de "director de combate" (general y uno contra muchos) con instrucciones en chino que admiten la generación de prompts en cualquier idioma de destino.
 
 ## Capacidades
 
-- Generacion de video de accion y pelea con mayor velocidad y claridad de movimiento.
-- Continuidad de combate en cadena: los ataques fallidos mantienen el impulso, los bloqueos redirigen la accion de forma natural y los contactos no se "pegan" entre personajes.
-- Reacciones de impacto persistentes y acumulativas: el dano se expresa en el tiempo como torso doblado, guardia descendida o movilidad reducida, y se acumula hasta remates pesados.
-- Coreografia avanzada: patadas giratorias continuas, grappling sostenido, derribos, colisiones ambientales en tres fases (cuerpo, entorno, material) y caidas con trayectorias multifasicas.
-- Coreografia cinematografica "uno contra muchos" con entradas escalonadas de atacantes, control de carriles espaciales, seguimiento centrado en el protagonista y continuidad de accion a traves de cortes.
-- Mejora de escenas de dialogo: el autor reporta +19.5% de movimiento dentro del plano, +34.2% de RMS de audio y +22.4% de nitidez de bordes en pruebas internas de dialogo con la misma semilla.
-- Integracion con ComfyUI mediante dos workflows de "combat director" que soportan la generacion de prompts en cualquier idioma.
-- No es un sistema automatico: requiere que el prompt especifique la secuencia de la pelea (quien ataca, donde impacta, como reacciona el oponente). Con prompts simples como "two people fighting", el resultado tiende a ser rapido pero sin logica.
+- Generación de vídeo con coreografía de combate continuo: cadenas de acción sin reinicios, con momento conservado en golpes fallidos y transiciones suaves de bloqueo.
+- Reacciones a impactos acumulativas y persistentes que afectan a la postura y la movilidad del personaje.
+- Técnicas de combate específicas: patadas rotacionales continuas, agarres y derribos sostenidos, colisiones en tres fases con el entorno (cuerpo → entorno → material) y trayectorias de caída multiphase.
+- Puesta en escena cinematográfica de tipo "uno contra muchos": entradas escalonadas de atacantes, control de carriles espaciales, seguimiento continuo centrado en el protagonista y continuidad de movimiento entre cortes.
+- Mejora de escenas de diálogo: mayor movimiento corporal dentro del plano, respiración, actuación física y dinámica vocal.
+- Sistema de disparadores (triggers) en tres niveles: sin trigger para máxima precisión anatómica, `prfight2` para mayor intensidad de ataque, y `prfight2, prfin1` para impacto pesado de especialista.
+- Soporte de prompts en inglés y chino; los flujos de trabajo adjuntos permiten generar prompts finales en cualquier idioma.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso; no aplica a un adaptador de generación de vídeo.
 
 ## Casos de uso
 
-- Produccion cinematografica de escenas de lucha: el adaptador permite coreografiar peleas con continuidad fisica creible y reacciones de impacto realistas. Los workflows incluidos en ComfyUI ayudan a estructurar el prompt como "accion primero, dialogo despues".
-- Generacion de cinemáticas de combate para videojuegos: sirve para producir animaciones de derribos, reacciones a dano y remates de alto impacto, reduciendo la necesidad de captura de movimiento.
-- Contenido de accion para redes sociales: con los ajustes de sampler recomendados, se pueden generar clips cortos de combate con movimientos rapidos y nitidos listos para plataformas como TikTok o YouTube Shorts.
-- Animacion de escenas de dialogo con actuacion corporal: segun las pruebas internas, el adaptador tambien mejora la respiracion, el movimiento corporal y la dinamica vocal en planos sin pelea, lo que resulta util en serie y cine de dialogo.
-- Prototipado de coreografias para directores de accion: permite visualizar secuencias de pelea y probar variaciones de bloqueos, contragolpes y caidas modificando solo el prompt, sin coste de produccion fisica.
-- Trailers y piezas de marketing: la funcion "prfin1" facilita remates pesados y estunt, por lo que es adecuada para generar clips de impacto en campañas de promocion de peliculas o videojuegos.
-- Integracion en pipelines de IA generativa: como modulo de sincronizacion de acciones dentro de flujos ComfyUI, combinable con otros adaptadores para crear planos complejos con multiples elementos.
+- Previsualización de escenas de acción para cine y animación: el LoRA permite generar borradores de coreografías con continuidad física entre planos, útil para que directores de acción evalúen el ritmo de una secuencia antes del rodaje o la producción final.
+- Generación de contenido para videojuegos: creación de animaciones de combate cuerpo a cuerpo con reacciones a impactos acumulativas, aprovechables como referencia para animadores o para prototipado de sistemas de combate.
+- Escenas de diálogo con actuación física: las métricas internas del autor (+19,5 % de movimiento en plano, +34,2 % de Audio RMS, +22,4 % de nitidez de bordes) indican que el adaptador mejora el lenguaje corporal y la dinámica vocal en escenas no combatientes, útil para dramas o contenido narrativo breve.
+- Secuencias de "uno contra muchos": el flujo de trabajo especializado permite generar escenas de acción con múltiples atacantes y seguimiento continuo del protagonista, adecuado para tráilers o cortometrajes de acción.
+- Prototipado rápido de storyboards animados: con la estructura de prompt recomendada (ACCIÓN → DIÁLOGO) y los disparadores adecuados, se pueden iterar variantes de una misma escena ajustando intensidad y tipo de impacto.
+- Contenido de marketing con acción: anuncios o piezas promocionales que requieran movimiento físico creíble y continuidad entre planos, donde la falta de fluidez del modelo base resultaría evidente.
+- Investigación en generación de vídeo: el adaptador sirve como caso de estudio de cómo un LoRA puede inducir física de movimiento continua y reacciones acumulativas en un modelo de vídeo, útil para quienes investigan control fino de dinámicas físicas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor presenta mediciones internas de pruebas de dialogo con la misma semilla, que no son comparables con benchmarks publicos y no se han replicado de forma independiente. Estos datos se recogen a continuacion:
+El autor publica únicamente métricas internas de comparación misma-semilla en escenas de diálogo, sin especificar la línea base exacta ni el conjunto de evaluación:
 
-| Metrica interna | Variacion reportada |
+| Métrica (escenas de diálogo, misma semilla) | Variación |
 |---|---|
-| Movimiento dentro del plano (in-shot motion) | +19.5% |
-| RMS de audio | +34.2% |
-| Nitidez de bordes (edge sharpness) | +22.4% |
+| Movimiento dentro del plano | +19,5 % |
+| Audio RMS | +34,2 % |
+| Nitidez de bordes | +22,4 % |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, lo cual es esperable al tratarse de un adaptador de generación de vídeo y no de un modelo de lenguaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no publicada para el adaptador. El LoRA anade aproximadamente 148 MB al peso del modelo base, pero la VRAM total dependera del modelo base, del numero de frames y de la resolucion de salida.
-- GPU recomendadas: no se han publicado requisitos especificos para este LoRA. Para el modelo base MiniMax H3, el repositorio de integraciones de MiniMax-AI documenta configuraciones verificadas en 4xH200/H100, B200/B300, 2xRTX 5090 con offload por capas y una unica RTX 4090 de 24 GB con cuantizacion int8. Tambien se indica soporte para AMD MI355X y MI300X via ROCm y AITER.
-- Compatibilidad con GPU de consumo: es posible ejecutar el modelo base en una RTX 4090 24 GB con cuantizacion int8, segun la documentacion publicada, aunque no se confirma explicitamente el comportamiento de este adaptador en esa configuracion.
-- Opciones de despliegue: ComfyUI con los workflows incluidos; SGLang Diffusion con soporte nativo para el pipeline H3; plataformas en la nube como RunningHub, citada en la ficha de CivArchive como destino de ejecucion.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Al ser un LoRA sobre MiniMax-H3, los requisitos vienen determinados por el modelo base, cuyas especificaciones no se detallan.
+- GPU recomendadas: no disponible. Depende del modelo base MiniMax-H3.
+- Compatibilidad con GPU de consumo: no disponible; no se puede confirmar sin conocer el tamaño y la arquitectura del modelo base.
+- Opciones de despliegue: la librería indicada es `minimax-h3`; el autor recomienda configuraciones específicas de sampler y scheduler (Opción A: `res_multistep` + `simple`; Opción B: `euler` + `beta`). Otras combinaciones pueden producir resultados notablemente más borrosos o suaves. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de adaptador.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se han proporcionado datos sobre modelos similares en la informacion disponible. La unica referencia directa es la version anterior del propio autor, Combat Base V1, que segun el README queda superada por esta V2, pero no se dispone de las especificaciones de V1. No se incluyen otros LoRAs para el mismo modelo base en los datos facilitados.
+No se dispone de información sobre adaptadores LoRA comparables de la misma familia ni sobre modelos de vídeo con funcionalidad equivalente en la documentación proporcionada. La comparación con el modelo base es la única referencia posible:
 
-| Adaptador | Modelo base | Tamano | Licencia | Disponibilidad |
+| Modelo | Tipo | Enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMax-H3-Combat-Base-V2 | Comfy-Org/MiniMax-H3 | 148 MB | no disponible | Hugging Face, CivArchive |
-| Combat Base V1 (anterior) | Comfy-Org/MiniMax-H3 | no disponible | no disponible | no disponible |
+| MiniMax-H3-Combat-Base-V2 | LoRA sobre MiniMax-H3 | Combate, acción y diálogo con física continua | en, zh | minimax-h3-community-license | Hugging Face (24.217 descargas, 54 likes) |
+| Comfy-Org/MiniMax-H3 | Modelo base | Generación de vídeo general | no disponible | no disponible | Hugging Face |
+| Versión V1 del adaptador (referida por el autor) | LoRA sobre MiniMax-H3 | Solo combate, más rápido | en, zh | no disponible | no disponible en la información |
 
 ## Limitaciones y advertencias
 
-- El autor advierte que no es un "LoRA magico": no coreografia automaticamente una pelea. Si el prompt es demasiado simple (por ejemplo, "two people fighting"), el modelo puede generar movimientos rapidos pero sin logica, como golpes al aire sin conexion.
-- El resultado es muy sensible a la configuracion del sampler. Se recomienda usar res_multistep con scheduler simple o euler con scheduler beta; otras combinaciones pueden producir videos borrosos o menos contundentes.
-- Cuando un plano combina combate y dialogo, la orden del prompt es critica: debe completarse primero la accion de golpeo y despues la linea de dialogo. De lo contrario, el modelo puede revertir al comportamiento mas lento del modelo base.
-- No se dispone de informacion sobre sesgos o mitigaciones. El adaptador fue probado con prompts en ingles y chino, por lo que su rendimiento con otros idiomas no esta garantizado.
-- La licencia no esta publicada, lo que genera incertidumbre para uso comercial. Ademas, el modelo base MiniMax H3 puede tener sus propias restricciones, que no se detallan en esta ficha.
-- Al ser una LoRA, las limitaciones del modelo base (por ejemplo, artefactos de generacion, falta de control fino sobre la fisica) se heredan y pueden amplificarse en escenas complejas con multiples personajes o interacciones con el entorno.
+- El propio autor advierte que no es un "LoRA mágico": no coreografía automáticamente una pelea completa. Con prompts simples como "two people fighting" el modelo tiende a producir movimientos rápidos y sin lógica. Es necesario especificar quién ataca primero, qué hace, dónde impacta, cómo reacciona el oponente y por qué encadena el siguiente ataque.
+- Sensibilidad alta a la configuración de sampler y scheduler: combinaciones distintas de las recomendadas pueden degradar notablemente la nitidez y la definición del movimiento.
+- En planos que combinan combate y diálogo, el ataque debe completarse antes de la línea de diálogo; de lo contrario, el movimiento puede revertir al comportamiento más lento del modelo base.
+- Sesgos conocidos: no documentados en la información disponible.
+- Riesgo de alucinación: no aplica en el sentido de texto factual, pero sí existe riesgo de artefactos visuales y físicas incoherentes si el prompt no está bien estructurado.
+- Limitaciones de idioma: solo se declaran inglés y chino; el rendimiento en otros idiomas no está verificado.
+- Licencia: minimax-h3-community-license, con enlace al texto en el repositorio de MiniMaxAI. Es una licencia "other" que debe revisarse antes de cualquier uso comercial; las restricciones concretas no se detallan en la información disponible.
+- El repositorio es pequeño (0,2 GB), coherente con un adaptador, pero no se especifican los requisitos del modelo base para producción.
+- No se documentan garantías de calidad ni procesos de validación externos; las métricas publicadas son internas y del propio autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2
-- CivArchive: https://civarchive.com/models/2853878?modelVersionId=3246572
-- Integraciones de MiniMax H3 en GitHub: https://github.com/MiniMax-AI/awesome-minimax-h3-integration
-- Informacion del modelo base MiniMax H3 Max: https://fal.ai/minimax-h3-max
+- Modelo en Hugging Face: https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2
+- Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
+- Texto de la licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

@@ -2,137 +2,109 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF es una redistribución del modelo ternario `prism-ml/Ternary-Bonsai-2-27B-gguf` en la que el autor (BoldingBuilds) ha eliminado el comportamiento de rechazo (abliteration) modificando un número reducido de dígitos ternarios in situ, sin tocar las escalas de bloque ni recuantizar el modelo. Se publica en formato GGUF, con dos ficheros: uno de 7,21 GB con los pesos del modelo de lenguaje y otro de 7,66 GB que añade una cabeza de predicción multi-token (MTP) de 15 tensores para habilitar decodificación especulativa.
+Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF es una cuantización GGUF de 2 bits (2,13 bits por peso) del modelo Ternary Bonsai 2 27B, publicado por el usuario BoldingBuilds. Parte de la versión ternaria de PrismML (`prism-ml/Ternary-Bonsai-2-27B-gguf`) y aplica una técnica de abliteración que elimina el comportamiento de rechazo modificando únicamente un 0,052% de los dígitos ternarios del modelo, sin tocar las escalas de bloque ni recuantizar. El resultado es un modelo sin censura que mantiene prácticamente intactas las capacidades del original.
 
-El modelo tiene 26.895.998.464 parámetros (26,9B) y una licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Su principal atractivo es el empaquetado ternario a 2,13 bits por peso (PQ2_0), que reduce el peso en disco a poco más de 7 GB y permite ejecutarlo íntegramente en una GPU de consumo, junto con la variante MTP que acelera la decodificación un 37% en cargas de trabajo estructuradas.
+El modelo tiene 26.895.998.464 parámetros y una arquitectura híbrida etiquetada como `qwen3_5`, con capas de atención, capas SSM (`ssm_out`) y una cabeza de predicción multi-token (MTP) opcional que acelera la decodificación aproximadamente un 37% mediante decodificación especulativa. Se distribuye en dos ficheros: uno estándar de 7,21 GB y otro con la cabeza MTP de 7,66 GB que requiere un runtime parcheado.
 
-Es relevante ahora porque combina tres tendencias: cuantización extrema por debajo de 3 bits, arquitecturas híbridas con capas de estado (SSM) y decodificación especulativa auto-contenida, todo ello en un paquete ejecutable con llama.cpp. El coste medido de la compresión ternaria frente al modelo padre no ternario es de aproximadamente 5,2 puntos porcentuales en MMLU.
+Es relevante porque demuestra que la abliteración es viable directamente sobre pesos ternarios empaquetados, un formato extremadamente comprimido, y porque combina esa edición con decodificación especulativa, algo que el autor presenta como el primer caso en un Bonsai 2 abliterado. La licencia Apache 2.0 facilita su uso comercial, aunque el modo de razonamiento presenta problemas conocidos en esta versión.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer cuantizado en ternario con capas de atencion y de estado (SSM); los tensores modificados incluyen `attn_output`, `ssm_out` y `ffn_down`. La model card la asocia a la familia Qwen3.5/Qwen3.8-27B, pero no se detalla la topologia completa |
+| Arquitectura | Transformer híbrido con capas SSM y atención (familia qwen3_5), con cabeza MTP opcional |
 | Parametros totales | 26.895.998.464 (26,9B) |
-| Parametros activos | No aplica: no se documenta una arquitectura MoE |
-| Longitud de contexto | No disponible de forma oficial; el ejemplo de ejecucion de la model card usa `-c 32768` |
-| Tipos de cuantizacion | Empaquetado ternario PQ2_0 (2,13 bits por peso). Existe una variante PTQ1_0 del mismo autor (1,75 bpw) |
-| Idiomas soportados | No disponible (la model card no publica lista de idiomas) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de ejecucion usa `-c 32768`) |
+| Tipos de cuantizacion | Ternaria PQ2_0 (2,13 bpw); existe variante PTQ1_0 (1,75 bpw) del mismo autor |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero base de 7,21 GB y fichero con MTP de 7,66 GB; repositorio de 14,9 GB) |
+| Formato de pesos | GGUF (safetensors para el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se trata de un modelo entrenado desde cero, sino de una edicion quirurgica sobre `prism-ml/Ternary-Bonsai-2-27B-gguf`. El autor modifico 98 de los 851 tensores del modelo (0,20-0,27% de los digitos ternarios dentro de esos tensores), concretamente los tensores que escriben en la corriente residual — `ffn_down`, `ssm_out` y `attn_output` — en los bloques 15 a 63. Las escalas de bloque no se alteraron y el resto de tensores es byte a byte idéntico a la publicacion de PrismML. La presencia de tensores `ssm_out` junto a tensores de atencion apunta a una arquitectura hibrida con capas de espacio de estados, coherente con la familia Qwen3.5 referenciada en las etiquetas, aunque la model card no describe el entrenamiento original ni la composicion del dataset.
+El modelo base es Ternary Bonsai 2 27B de PrismML, un transformer híbrido de la familia qwen3_5 que combina bloques de atención con bloques de estado recurrente (SSM), tal como revelan los nombres de tensores modificados (`ffn_down`, `ssm_out`, `attn_output`). Los pesos se almacenan en formato ternario con escalas de bloque, a 2,13 bits por peso en el empaquetado PQ2_0. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO.
 
-La innovacion tecnica destacable es el injerto de la cabeza de prediccion multi-token (MTP) de Qwen3.8-27B, que anade 15 tensores `blk.64.*` y habilita `--spec-type draft-mtp` en llama.cpp. Con la especulacion desactivada, ambos ficheros generan texto identico byte a byte (verificado en 5 de 5 prompts de 400 tokens). El MTP requiere un parche de 14 lineas (`0001-qwen35-mtp-hadamard-inverse.patch`) sobre la etiqueta `prism-b10687-5d80cff` del fork `PrismML-Eng/llama.cpp`, porque los modelos ternarios de PrismML almacenan `token_embd.weight` rotado y el grafo borrador del MTP omite la transformada inversa de Hadamard. El mismo fallo fue detectado y corregido de forma independiente por los usuarios decent-jawfish y ProCreations.
+La edición de abliteración modifica 98 de los 851 tensores del modelo, concretamente los que escriben en la corriente residual (`ffn_down`, `ssm_out`, `attn_output`) en los bloques 15 a 63. Dentro de esos tensores se invierte entre un 0,20% y un 0,27% de los dígitos ternarios, lo que supone un 0,052% del total de dígitos del modelo. Las escalas de bloque no se alteran y el resto de pesos permanece byte a byte idéntico al release original. La variante MTP añade 15 tensores (`blk.64.*`) correspondientes a la cabeza de predicción multi-token de Qwen3.8-27B, que habilita decodificación especulativa con `--spec-type draft-mtp`. Esta cabeza requiere un parche de 14 líneas sobre llama.cpp (etiqueta `prism-b10687-5d80cff`) porque la búsqueda de embeddings del grafo borrador omite la transformación inversa de Hadamard que PrismML aplica al tensor `token_embd.weight`.
 
 ## Capacidades
 
-- Generacion de texto conversacional (`pipeline_tag: text-generation`, etiqueta `conversational`).
-- Razonamiento y generacion de codigo: medido con 96,9 tok/s y 0,833 de aceptacion especulativa en prompts de razonamiento, y 95,7 tok/s con 0,818 en codigo Python.
-- Salida estructurada en JSON: 94,0 tok/s con 0,790 de aceptacion.
-- Decodificacion especulativa auto-contenida mediante cabeza MTP (`--spec-type draft-mtp`), con `--spec-draft-n-max 2` como configuracion optima medida.
-- Respuestas sin rechazo: 0,0% de rechazo en SimpleSafetyTests (n=100) y 0,0% de sobrerrechazo en XSTest-safe (n=250), juzgado por un modelo evaluador.
-- Compatibilidad con endpoints (`endpoints_compatible`).
-- No se documentan capacidades de vision, audio, tool calling ni uso de agentes en la informacion disponible.
-- No se publica lista de idiomas soportados.
+- Generación de texto conversacional en formato chat, con plantilla Jinja (`--jinja`).
+- Razonamiento en modo thinking, aunque con problemas graves en esta versión (ver limitaciones).
+- Generación de código: HumanEval-164 con pass@1 de 0,872 en decodificación greedy.
+- Conocimiento general y respuesta a preguntas de opción múltiple: MMLU 0,7812 en el conjunto de test completo.
+- Decodificación especulativa mediante cabeza MTP en el fichero correspondiente, con aproximadamente un 37% más de velocidad de decodificación.
+- Comportamiento sin rechazo: 0% de rechazo en SimpleSafetyTests y 0% de sobrerrechazo en XSTest-safe.
+- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas del repositorio).
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Generacion de codigo en local: el modelo cabe en una GPU de consumo y alcanza 95,7 tok/s con especulacion en prompts de codigo Python, con una tasa de aceptacion de 0,818, lo que lo hace util para autocompletado o generacion de funciones en estaciones de trabajo sin GPU de centro de datos.
-- Razonamiento encadenado por lotes: con 96,9 tok/s y 0,833 de aceptacion en prompts de razonamiento, es adecuado para pipelines de generacion de cadenas de pensamiento o sintesis de datos donde el coste por token importa y el hardware es limitado.
-- Generacion de JSON para integracion de sistemas: la salida estructurada mantiene 94,0 tok/s con 0,790 de aceptacion, util para extraccion de campos, normalizacion de registros o rellenado de esquemas en backends.
-- Investigacion sobre abliteration y seguridad: al publicar cifras pareadas de rechazo y sobrerrechazo (83,0% a 0,0% y 1,6% a 0,0%) con un modelo evaluador, sirve como referencia reproducible para estudiar el efecto de eliminar el comportamiento de rechazo en modelos ternarios.
-- Experimentacion con cuantizacion extrema: con 2,13 bpw y un coste medido de 5,2 puntos porcentuales en MMLU frente al padre no ternario, es un banco de pruebas para medir degradacion a 2 bits en tareas de conocimiento.
-- Evaluacion de decodificacion especulativa con MTP: el repositorio incluye medidas por tipo de prompt (razonamiento, codigo, JSON, explicacion tecnica y prosa libre), lo que permite reproducir y comparar estrategias de borrador en distintas GPU.
-- Despliegue de asistentes sin filtros de rechazo: para casos donde el rechazo del modelo base resulta un obstaculo (redaccion de ficcion con contenido dificil, analisis de seguridad ofensiva o investigacion sobre prompts adversarios), asumiendo las advertencias de la seccion de limitaciones.
-- Ejecucion en una unica RTX 3090: el ejemplo de la model card usa `-ngl 99 -fa on -c 32768 --jinja`, es decir, todo el modelo descargado en GPU con atencion flash, un escenario realista para equipos de investigacion con hardware de gama alta de consumo.
+- Investigación sobre alineación y abliteración: el modelo permite estudiar el efecto de eliminar el comportamiento de rechazo sobre pesos ternarios sin recuantizar, comparando directamente con el modelo original de PrismML y midiendo el impacto en MMLU y HumanEval.
+- Despliegue en hardware de gama consumer: con 7,21 GB en el fichero estándar, cabe en GPUs con 8-12 GB de VRAM, lo que permite ejecutar un modelo de 27B en equipos domésticos mediante llama.cpp u Ollama.
+- Generación de código en local: el pass@1 de 0,872 en HumanEval lo hace utilizable para autocompletado y generación de funciones en entornos sin conexión o con requisitos de privacidad.
+- Evaluación de decodificación especulativa: la variante MTP sirve para medir el rendimiento de `draft-mtp` en llama.cpp parcheado, con una mejora de velocidad del 37% a pesos idénticos.
+- Procesamiento por lotes de texto en servidores modestos: el bajo consumo de memoria (2,13 bpw) permite mayor concurrencia por GPU en tareas de clasificación, resumen o extracción de información.
+- Estudio de robustez frente a prompts dañinos: al tener 0% de rechazo, es útil como caso extremo en pruebas de sistemas de moderación y filtrado, siempre en entornos controlados y con las salvaguardas externas adecuadas.
+- Referencia para compresión extrema: sirve para comparar la pérdida de calidad de la cuantización ternaria (5,2 puntos porcentuales en MMLU frente al padre no ternario) con otras técnicas de cuantización.
 
 ## Benchmarks y rendimiento
 
-MMLU, split de test completo (14.042 preguntas), 0-shot, logit de la letra del siguiente token. Las cifras corresponden al build PTQ1_0 del mismo metodo; el autor indica que la ejecucion sobre PQ2_0 esta en curso y que actualizara la model card.
+| Benchmark | Modelo | Resultado |
+|---|---|---|
+| MMLU (test completo, 14.042 preguntas, 0-shot) | Qwen3.8-27B Q4_K_M (referencia no ternaria) | 0,8318 |
+| MMLU | Ternary Bonsai 2 PQ2_0 original | 0,7797 |
+| MMLU | Este modelo (PQ2_0) | 0,7812 |
+| MMLU | Ternary Bonsai 2 PTQ1_0 original | 0,7802 |
+| MMLU | Método de este autor sobre PTQ1_0 | 0,7814 |
+| HumanEval-164 (greedy pass@1) | Ternary Bonsai 2 PQ2_0 original | 0,890 |
+| HumanEval-164 (greedy pass@1) | Este modelo | 0,872 |
+| Rechazo en SimpleSafetyTests (n=100) | Ternary Bonsai 2 PQ2_0 original | 83% |
+| Rechazo en SimpleSafetyTests (n=100) | Este modelo | 0% |
+| Calidad de respuesta en SimpleSafetyTests (StrongReject, 0-1) | Original | 0,164 |
+| Calidad de respuesta en SimpleSafetyTests (StrongReject, 0-1) | Este modelo | 0,735 |
+| Sobrerrechazo en XSTest-safe (n=250) | Original | 1,6% |
+| Sobrerrechazo en XSTest-safe (n=250) | Este modelo | 0,0% |
+| Rechazo parcial en XSTest-safe | Original | 0,4% |
+| Rechazo parcial en XSTest-safe | Este modelo | 0,0% |
 
-| Modelo | MMLU |
-|---|---:|
-| Qwen3.8-27B Q4_K_M (referencia no ternaria) | 0,8318 |
-| Ternary Bonsai 2 PTQ1_0 original | 0,7802 |
-| Este metodo, PTQ1_0 | 0,7814 |
-
-El autor senala que la edicion cuesta +0,12 puntos porcentuales (McNemar exacto p = 0,51 sobre 577 pares discordantes), es decir, sin efecto medible, y que la compresion ternaria en si cuesta unos 5,2 puntos porcentuales frente al padre no ternario (p = 2,6e-71).
-
-Rechazo y sobrerrechazo, evaluados con un modelo juez y los mismos ajustes en todas las filas:
-
-| Metrica | Bonsai 2 original | Este modelo |
-|---|---:|---:|
-| Rechazo, SimpleSafetyTests (n=100) | 83,0% | 0,0% |
-| Sobrerrechazo, XSTest-safe (n=250) | 1,6% | 0,0% |
-| Rechazo parcial, XSTest-safe | 1,6% | 0,0% |
-
-Decodificacion, una RTX 3090, 5 prompts de 400 tokens, `--parallel 1`, greedy, mediana:
-
-| Configuracion | tok/s | Aceptacion |
-|---|---:|---:|
-| Sin MTP | 68,8 | — |
-| `--spec-draft-n-max 2` | 94,0 | 0,643 |
-| `--spec-draft-n-max 4` | 86,3 | 0,445 |
-| `--spec-draft-n-max 3` | 84,7 | 0,520 |
-
-Ganancia de la especulacion segun el tipo de contenido (linea base 68,8 tok/s):
-
-| Tipo de prompt | tok/s | Aceptacion |
-|---|---:|---:|
-| Razonamiento | 96,9 | 0,833 |
-| Codigo Python | 95,7 | 0,818 |
-| Salida JSON | 94,0 | 0,790 |
-| Explicacion tecnica | 75,7 | 0,535 |
-| Prosa libre | 65,0 | 0,391 |
-
-En prosa libre la especulacion resulto mas lenta que no usarla. El mismo injerto sobre el build PTQ1_0 rindio solo +1,6%, con una aceptacion similar (0,648) pero una verificacion que no compensa; ademas PTQ1_0 decodifica mas lento (57,8 tok/s) que PQ2_0 (68,8 tok/s) pese a ser 1,26 GB mas pequeno.
+La diferencia en MMLU frente al original es de +0,15 puntos porcentuales (p de McNemar exacto = 0,40, no significativa). En HumanEval la diferencia es de −1,8 puntos porcentuales (3 problemas ganados, 6 perdidos, p = 0,51, no significativa). La compresión ternaria en sí cuesta unos 5,2 puntos porcentuales en MMLU frente al padre no ternario (p = 2,6e-71). Las mediciones de rechazo se hicieron con thinking desactivado, decodificación greedy y respuestas de 2.048 tokens, evaluadas por Qwen3.8-27B-OBLITERATED-Q8_0 con la rúbrica StrongReject. La velocidad de decodificación con MTP se midió en una RTX 3090 con 5 prompts de 400 tokens cada uno, pero el dato numérico exacto de tokens por segundo no aparece en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM para los pesos: 7,21 GB (fichero sin MTP) o 7,66 GB (fichero con MTP).
-- VRAM total recomendada: alrededor de 10-12 GB para contexto moderado con atencion flash; el ejemplo publicado carga todo el modelo en GPU (`-ngl 99`) sobre una RTX 3090 de 24 GB con `-c 32768`, por lo que el presupuesto de KV cache queda cubierto con holgura en esa tarjeta.
-- Cabe en GPU de consumo: si, en RTX 3090 (medida), y previsiblemente en RTX 4080/4090, RTX 3080 Ti y tarjetas de 12 GB o mas con contexto reducido.
-- GPU de centro de datos compatibles: A100, H100, L40S y similares, aunque el modelo esta pensado para inferencia local y no se publican medidas en esas tarjetas.
-- Opciones de despliegue: llama.cpp / `llama-server` (unico runtime con soporte documentado). Para la variante MTP es obligatorio un binario parcheado (`prism-b10687-5d80cff` mas `0001-qwen35-mtp-hadamard-inverse.patch`), compilado con `-DGGML_CUDA=ON` y `-DLLAMA_CURL=OFF`. El fichero sin MTP funciona en binarios estandar.
-- Latencia y throughput medidos: 68,8 tok/s sin especulacion y 94,0 tok/s con `--spec-draft-n-max 2` en una RTX 3090, con degradacion a 65,0 tok/s en prosa libre.
-- Comando de referencia: `llama-server -m Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP.gguf -ngl 99 -fa on -c 32768 --jinja --spec-type draft-mtp --spec-draft-n-max 2`.
+- VRAM estimada: unos 7,2 GB para el fichero estándar y unos 7,7 GB para el fichero MTP, más la memoria de contexto y el estado KV. Con `-c 32768` y `-fa on` el consumo adicional de caché es considerable.
+- GPUs recomendadas: RTX 3090 (usada en las mediciones del autor), RTX 4090, A100 y H100 para mayor concurrencia y contexto. Cualquier GPU con al menos 8-10 GB de VRAM puede ejecutar el fichero estándar.
+- Cabe en GPU consumer: sí, en tarjetas de 8 GB o más con cuantización PQ2_0; en 6 GB requeriría reducir contexto o usar la variante PTQ1_0 de 1,75 bpw.
+- Opciones de despliegue: llama.cpp (obligatorio para la variante MTP con el parche `0001-qwen35-mtp-hadamard-inverse.patch`), llama-server con `--jinja`, y presumiblemente Ollama y otros frontends compatibles con GGUF para el fichero estándar. vLLM y TGI no se mencionan como soportados.
+- Latencia y throughput: la variante MTP decodifica aproximadamente un 37% más rápido que el fichero estándar a pesos idénticos, medido en una RTX 3090 con `--spec-draft-n-max 2`. No se proporcionan cifras absolutas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | MMLU | Contexto | Licencia | Disponibilidad |
-|---|---|---|---:|---|---|---|
-| Este modelo (PQ2_0, abliterated, MTP) | 26,9B | PQ2_0, 2,13 bpw | No medido aun en PQ2_0 | `-c 32768` en el ejemplo | Apache 2.0 | GGUF, 7,21/7,66 GB, 5.443 descargas |
-| BoldingBuilds Ternary-Bonsai-2-27B-Abliterated-PTQ1_0 | 26,9B | PTQ1_0, 1,75 bpw | 0,7814 | No disponible | Apache 2.0 | GGUF, 1.680 descargas; el MTP no aporta (+1,6%) |
-| Ternary Bonsai 2 PTQ1_0 original (PrismML) | 26,9B | PTQ1_0, 1,75 bpw | 0,7802 | No disponible | No disponible en la informacion proporcionada | GGUF, modelo base |
-| Qwen3.8-27B Q4_K_M (no ternario) | 27B (nominal) | Q4_K_M | 0,8318 | No disponible | No disponible en la informacion proporcionada | Referencia no ternaria citada en la model card |
+| Modelo | Parámetros | Contexto | MMLU | HumanEval | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| Este modelo (PQ2_0) | 26,9B | no disponible | 0,7812 | 0,872 | Apache 2.0 | GGUF ternario 2,13 bpw |
+| Ternary Bonsai 2 PQ2_0 original | 26,9B | no disponible | 0,7797 | 0,890 | Apache 2.0 | GGUF ternario 2,13 bpw |
+| Ternary Bonsai 2 PTQ1_0 | 26,9B | no disponible | 0,7802 | no disponible | Apache 2.0 | GGUF ternario 1,75 bpw |
+| Qwen3.8-27B Q4_K_M | 27B (aprox.) | no disponible | 0,8318 | no disponible | no disponible | GGUF 4 bits |
 
-No se dispone de datos de benchmarks ni de especificaciones del resto de alternativas de la misma categoria mas alla de las cifras citadas por el autor.
+Frente al original, este modelo iguala el rendimiento en MMLU y pierde 1,8 puntos en HumanEval sin significación estadística, a cambio de eliminar por completo el rechazo. Frente al padre no ternario Qwen3.8-27B en Q4_K_M, la compresión ternaria cuesta unos 5,2 puntos de MMLU. La variante PTQ1_0 ofrece un tamaño menor (1,75 bpw) con MMLU prácticamente idéntico, pero sin soporte útil de MTP según el autor.
 
 ## Limitaciones y advertencias
 
-- El modelo ha eliminado el comportamiento de rechazo: 0,0% de rechazo en SimpleSafetyTests y 0,0% de sobrerrechazo en XSTest-safe. Generara contenido ante peticiones daninas si no se interpone un filtro externo; no es adecuado para despliegues orientados al publico sin moderacion adicional.
-- La eliminacion del rechazo modifica 98 tensores con solo 0,20-0,27% de digitos ternarios cambiados, lo que demuestra que el comportamiento de seguridad puede alterarse con ediciones minimas sobre un empaquetado cuantizado; conviene auditar cualquier build derivado.
-- Las cifras de MMLU publicadas corresponden al build PTQ1_0, no a PQ2_0. El propio autor advierte que no asume que el numero se traslade y que actualizara la tarjeta cuando termine la ejecucion sobre PQ2_0.
-- La compresion ternaria degrada unos 5,2 puntos porcentuales de MMLU frente al modelo padre no ternario; es una perdida atribuible a la cuantizacion, no a la abliteration.
-- La variante MTP exige un runtime parcheado y falla al arrancar en binarios estandar con el error `Hadamard-latent table 'token_embd.weight' is read without the inverse transform`. Sin parche, hay que usar el fichero sin MTP.
-- La decodificacion especulativa penaliza la prosa libre: 65,0 tok/s frente a 68,8 tok/s de linea base, con una aceptacion de solo 0,391.
-- La ganancia del MTP depende del tipo de carga; el valor optimo de `--spec-draft-n-max` (2 en la RTX 3090 del autor) debe reajustarse en cada GPU.
-- La model card no publica lista de idiomas, longitud de contexto oficial, composicion del dataset de entrenamiento ni detalles del RLHF/DPO del modelo original.
-- No se documentan capacidades de tool calling, agentes, vision ni audio; asumir su presencia en produccion seria infundado.
-- Las evaluaciones de rechazo y sobrerrechazo dependen de un unico modelo juez; no se publican intervalos de confianza ni evaluaciones con multiples jueces.
-- Riesgo de alucinacion propio de un modelo de 27B cuantizado a 2 bits: no se han publicado evaluaciones de veracidad ni de tasa de alucinacion en la informacion disponible.
-- La licencia Apache 2.0 cubre el artefacto publicado, pero el modelo base y sus datos de entrenamiento pueden tener condiciones adicionales no declaradas en esta ficha.
+- El modo thinking está roto en esta versión: con ajustes por defecto, el 27% de los prompts dañinos no produce respuesta y el 20% de los seguros tampoco; con decodificación greedy el 65% de los dañinos queda sin respuesta por bucles de repetición. El autor recomienda desactivar thinking y ha publicado una v2 que corrige el problema.
+- La abliteración elimina el rechazo por completo (0% en SimpleSafetyTests), lo que implica que el modelo responderá a solicitudes dañinas. Requiere salvaguardas externas en cualquier despliegue público.
+- La cuantización ternaria degrada el rendimiento en unos 5,2 puntos de MMLU frente al modelo no ternario, de forma independiente a la abliteración.
+- La variante MTP exige compilar llama.cpp con un parche específico sobre la etiqueta `prism-b10687-5d80cff`; los binarios estándar fallan al arrancar con `--spec-type draft-mtp`.
+- No se dispone de información sobre idiomas soportados, sesgos específicos ni riesgos de alucinación más allá de los inherentes a un modelo de 27B cuantizado a 2 bits.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y el proceso de abliteración deben revisarse según la política de la organización.
+- El repositorio tiene 5.075 descargas y 32 likes, con una fecha de actualización de septiembre de 2026; es un artefacto de la comunidad, no un release oficial de PrismML.
 
 ## Enlaces
 
-- Pagina de Hugging Face del modelo: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF
-- Variante PTQ1_0 (1,75 bpw, mismo metodo de abliteration): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF
+- Versión v2 con el problema de thinking corregido: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF
+- Variante PTQ1_0 (1,75 bpw): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
-- Fork de llama.cpp usado para el parche: https://github.com/PrismML-Eng/llama.cpp
-- Parche incluido en el repositorio: `0001-qwen35-mtp-hadamard-inverse.patch` (sobre la etiqueta `prism-b10687-5d80cff`)
-- Trabajo independiente con el mismo arreglo del MTP: https://huggingface.co/decent-jawfish/bonsai-2-27b-mtp
-- Trabajo independiente con el mismo arreglo del MTP: https://huggingface.co/ProCreations/Ternary-Bonsai-2-27B-MTP
-- No se han encontrado papers, blogs ni demos adicionales en los resultados de busqueda web disponibles.
+- Repositorio de llama.cpp de PrismML: https://github.com/PrismML-Eng/llama.cpp
+- Implementación MTP independiente de decent-jawfish: https://huggingface.co/decent-jawfish/bonsai-2-27b-mtp
+- Implementación MTP independiente de ProCreations: https://huggingface.co/ProCreations/Ternary-Bonsai-2-27B-MTP

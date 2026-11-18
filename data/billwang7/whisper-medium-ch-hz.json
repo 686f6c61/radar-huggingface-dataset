@@ -5,7 +5,7 @@
   "author": "BillWang7",
   "url": "https://huggingface.co/BillWang7/whisper-medium-ch-hz",
   "created_at": "2024-07-12T16:30:51.000Z",
-  "updated_at": "2026-11-13T03:49:33.000Z",
+  "updated_at": "2026-11-14T00:11:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 181,
   "trending_score": 0,
   "parameters": 763857920,
   "parameters_human": "763.9M",

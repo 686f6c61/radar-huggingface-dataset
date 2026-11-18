@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 44105,
+  "downloads_30d": 42554,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -36,31 +36,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/?hl=ar",
-      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
-    },
-    {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/",
-      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
-    },
-    {
-      "title": "انستغرام - التطبيقات على Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=ar",
-      "snippet": "اللحظات البسيطة تؤدي إلى بناء صداقات أفضل. شارك لحظاتك على Instagram. — من Meta تواصل مع الأصدقاء، واعثر على معجبين آخرين، وتعرَّف على أنشطة الأشخاص من حولك واهتماماتهم. …"
-    },
-    {
-      "title": "Instagram (@instagram) • Instagram photos and videos",
-      "url": "https://www.instagram.com/instagram/",
-      "snippet": "687M Followers, 299 Following, 8,590 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
-    },
-    {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/sem/campaign/login/",
-      "snippet": "Log in to Instagram and connect with friends, family, and interests worldwide."
-    }
-  ]
+  "sources": []
 }

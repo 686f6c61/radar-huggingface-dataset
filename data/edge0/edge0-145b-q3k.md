@@ -2,80 +2,83 @@
 
 ## Resumen
 
-Edge0-145B-q3k es una cuantización GGUF de 4 bits del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el usuario Edge0 bajo licencia Apache 2.0. Según la información disponible, se trata de un modelo de arquitectura Mixture of Experts (MoE) orientado a inferencia en el borde (edge-inference) y a tareas de agente y generación de código. La nomenclatura del repositorio sugiere un tamaño nominal de 145B parámetros, aunque el dato real declarado en safetensors es de 4.947.698.560 parámetros, una discrepancia significativa que conviene tener en cuenta.
+Edge0-145B-q3k es una cuantizacion GGUF de 4 bits del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el usuario Edge0 bajo la libreria propietaria `edge0` y la licencia `edge0-community-model-1.0`. El modelo esta disenado para inferencia en el borde (edge inference) y emplea una arquitectura MoE latente (latent-moe) segun las etiquetas del autor, con soporte declarado para agentes y generacion de codigo sobre CUDA.
 
-El modelo se distribuye en formato GGUF con cuantización q3k (4 bits) y un tamaño de repositorio de 105,4 GB, lo que resulta coherente con un modelo de gran tamaño cuantizado a baja precisión. La model card menciona explícitamente las etiquetas `latent-moe`, `edge-inference`, `agent` y `coding`, lo que sitúa al modelo en el segmento de asistentes de código y agentes autónomos desplegables en hardware limitado.
+El dato de parametros totales registrado en safetensors es de 4.947.698.560 (aproximadamente 4,95 mil millones), una cifra que no concuerda con el nombre comercial "145B" del repositorio. El tamano del repositorio es de 106,3 GB, coherente con un modelo de mayor magnitud cuantizado, por lo que existe una discrepancia no resuelta entre la denominacion, el conteo de parametros declarado y el peso real del artefacto. Se recomienda tratar estas cifras con cautela.
 
-La relevancia de esta ficha es limitada por la escasez de información verificable: no se publican benchmarks, no se detalla la composición del dataset de entrenamiento, no se especifican los idiomas soportados y la model card no incluye datos técnicos sustantivos más allá de las etiquetas. El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica una adopción prácticamente nula.
+El modelo acumula 112.667 descargas y 137 likes desde su creacion el 11 de noviembre de 2026, lo que sugiere una adopcion notable en el ecosistema de inferencia local. La model card publicada esta dominada por estilos CSS y no aporta informacion tecnica sustantiva sobre entrenamiento, contexto o rendimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) con variante "latent-moe", según etiquetas del autor; detalles no disponibles |
-| Parametros totales | 4.947.698.560 (dato real declarado en safetensors); el nombre del repositorio indica 145B, discrepancia no aclarada |
+| Arquitectura | MoE latente (latent-moe) segun etiquetas del autor; detalles no disponibles |
+| Parametros totales | 4.947.698.560 (registro safetensors); el nombre del repo indica 145B, discrepancia no resuelta |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | q3k (4 bits, formato GGUF) |
+| Tipos de cuantizacion | GGUF 4-bit (q3k); otras variantes no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repositorio de 105,4 GB) |
+| Licencia | edge0-community-model-1.0 (license: other) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo emplea una arquitectura Mixture of Experts, con la etiqueta específica `latent-moe`, que sugiere una variante de MoE con representaciones latentes, aunque no se detalla en qué consiste esta innovación ni cómo difiere de un MoE convencional. El modelo base es Qwen/Qwen3.8-Flash-Next, del que no se proporcionan especificaciones en la información consultada. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF, DPO u otras fases de alineación.
+La informacion disponible indica unicamente que se trata de una arquitectura MoE latente (etiqueta `latent-moe`) y que el modelo base es Qwen/Qwen3.8-Flash-Next. No se especifican el numero de expertos, la estrategia de enrutamiento, la dimension oculta, el numero de capas ni la ventana de atencion. Tampoco se detalla el proceso de entrenamiento del modelo base: numero de tokens, composicion del corpus, uso de RLHF, DPO u otras tecnicas de alineamiento.
 
-La model card no incluye detalles sobre innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos de enrutamiento de expertos. La única información técnica concreta es la cuantización q3k a 4 bits y la orientación explícita a inferencia en el borde y a cargas de trabajo de agente y código. No se especifica si el proceso de cuantización fue realizado por el autor o si se heredó del modelo base.
+La unica innovacion tecnica documentada por el autor es la orientacion a inferencia en el borde con soporte CUDA y la cuantizacion a 4 bits en formato GGUF, lo que sugiere optimizacion para despliegue en hardware con memoria limitada. No hay informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones.
 
 ## Capacidades
 
-- Generación de texto conversacional, según la etiqueta `conversational` y la pipeline `text-generation`.
-- Orientación a tareas de agente (`agent`), aunque no se detalla el soporte concreto de tool calling o function calling.
-- Generación de código (`coding`), sin especificación de lenguajes ni benchmarks asociados.
-- Inferencia en el borde (`edge-inference`), lo que sugiere optimización para hardware con recursos limitados.
-- Compatibilidad con endpoints (`endpoints_compatible`), según las etiquetas del repositorio.
-- Soporte de CUDA (`cuda`), indicado en las etiquetas.
-- Capacidades multilingües: no disponibles.
-- Modo thinking, visión o audio: no disponibles.
+- Generacion de texto conversacional (pipeline `text-generation`, etiqueta `conversational`).
+- Soporte declarado para agentes (etiqueta `agent`).
+- Generacion de codigo (etiqueta `coding`).
+- Inferencia en el borde con aceleracion CUDA (etiquetas `edge-inference`, `cuda`).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Capacidades multilingues: no disponibles.
+- Soporte de tool calling / function calling: no disponible.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Asistencia de código en local: el formato GGUF y la cuantización q3k permiten desplegar el modelo en estaciones de trabajo con GPU de consumo, integrándolo en editores o terminales para autocompletado y generación de fragmentos de código sin depender de la nube.
-- Agentes autónomos en el borde: la etiqueta `agent` sugiere su uso en pipelines de razonamiento multi-paso ejecutados en dispositivos locales, aunque la ausencia de documentación sobre tool calling obliga a validar esta capacidad empíricamente antes de producción.
-- Procesamiento por lotes de texto en servidores modestos: el tamaño del repositorio (105,4 GB) y la cuantización a 4 bits permiten servir el modelo con vLLM o llama.cpp en una única GPU de 80 GB o en configuraciones multi-GPU, para tareas de generación masiva.
-- Experimentación e investigación: al ser un modelo derivado de Qwen3.8-Flash-Next con licencia Apache 2.0, puede utilizarse como base para fine-tuning o para estudiar el comportamiento de arquitecturas MoE cuantizadas.
-- Despliegue en entornos con requisitos de privacidad: al poder ejecutarse en hardware propio, encaja en escenarios donde los datos no pueden salir de la infraestructura del cliente, como análisis de documentos internos o generación de código sobre repositorios privados.
-- Evaluación comparativa de cuantizaciones: útil para medir la degradación de calidad de q3k frente a otras precisiones del mismo modelo base, siempre que se disponga de un conjunto de evaluación propio, dado que no hay benchmarks publicados.
+- Asistente de codigo en local: el modelo puede integrarse en editores o IDE mediante servidores compatibles con la API de endpoints, aprovechando la etiqueta `coding` para autocompletado y generacion de funciones en entornos con GPU de consumo.
+- Agentes autonomos de proposito general: la etiqueta `agent` sugiere uso en bucles multi-paso, aunque la ausencia de datos sobre tool calling y contexto limita la planificacion de arquitecturas complejas.
+- Despliegue en el borde: gracias a la cuantizacion GGUF de 4 bits y la orientacion `edge-inference`, es adecuado para dispositivos con VRAM reducida donde no cabe un modelo de mayor precision.
+- Procesamiento por lotes en estaciones de trabajo con CUDA: la etiqueta `cuda` indica soporte para aceleracion por GPU en tareas de generacion de texto a escala moderada.
+- Prototipado rapido de chatbots: el pipeline `text-generation` y la naturaleza conversacional permiten montar asistentes conversacionales sin infraestructura dedicada.
+- Evaluacion comparativa de cuantizaciones: al ser una variante q3k de un modelo base identificado, sirve para medir la degradacion de calidad frente a otras precisiones del mismo Qwen3.8-Flash-Next.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio GGUF ocupa 105,4 GB, por lo que se requiere al menos esa cantidad de VRAM o de memoria unificada para cargar los pesos completos. Con offloading a RAM/CPU el requisito de VRAM puede reducirse, a costa de latencia.
-- GPU recomendadas: para carga completa en VRAM, GPUs con 80 GB o más (A100 80GB, H100 80GB) o configuraciones multi-GPU. En GPUs de consumo (RTX 4090 con 24 GB) solo es viable con offloading parcial o cuantizaciones más agresivas no publicadas en este repositorio.
-- Cabe en consumer GPU: no de forma completa; sí con offloading parcial o en configuraciones con memoria unificada grande (por ejemplo, Apple Silicon con 128 GB o más), aunque no hay datos de rendimiento publicados.
-- Opciones de despliegue: llama.cpp y Ollama son compatibles con GGUF; vLLM requiere verificar soporte para esta arquitectura MoE concreta. La librería declarada es `edge0`, específica del autor, lo que puede limitar la compatibilidad con herramientas estándar.
+- VRAM estimada: no disponible con precision; el repositorio ocupa 106,3 GB, lo que sugiere que la inferencia completa requiere memoria sustancial, aunque la cuantizacion 4-bit reduce el footprint frente a precision completa.
+- GPU recomendadas: no disponibles; la etiqueta `cuda` indica compatibilidad con GPUs NVIDIA, pero no se especifican modelos concretos.
+- Cabe en GPU de consumo: no confirmado; la discrepancia entre el nombre (145B) y el conteo de parametros (4,95B) impide estimar con fiabilidad.
+- Opciones de despliegue: formato GGUF, compatible con llama.cpp y potencialmente con Ollama; la libreria `edge0` es propietaria y su soporte de runtime no esta documentado. La etiqueta `endpoints_compatible` sugiere integracion con APIs de endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones del modelo base Qwen/Qwen3.8-Flash-Next que permitan una comparación rigurosa con alternativas de la misma categoría.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Edge0-145B-q3k | 4,95B (registro) / 145B (nombre) | no disponible | edge0-community-model-1.0 | GGUF 4-bit | Cuantizacion de Qwen3.8-Flash-Next |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible | Modelo base del anterior |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Discrepancia entre el nombre del repositorio (145B) y el recuento real de parámetros en safetensors (4.947.698.560), sin aclaración por parte del autor; conviene verificar el tamaño efectivo antes de planificar el despliegue.
-- Ausencia total de benchmarks publicados: no es posible evaluar la calidad del modelo frente a alternativas sin realizar una evaluación propia.
-- La model card no documenta el dataset de entrenamiento, los idiomas soportados ni las fases de alineación, lo que dificulta anticipar sesgos o comportamientos en producción.
-- Riesgo de alucinación no cuantificado; al no haber evaluación publicada, no puede descartarse un comportamiento degradado por la cuantización q3k a 4 bits.
-- La librería `edge0` es específica del autor y no estándar, lo que puede complicar la integración con frameworks habituales (Transformers, vLLM, TGI).
-- Adopción prácticamente nula (0 descargas, 1 like), sin comunidad ni soporte documentado.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario debe asumir la responsabilidad de validar el modelo y de cumplir las condiciones del modelo base Qwen, cuyos términos no se detallan en la información disponible.
-- No se especifica la longitud de contexto, lo que impide garantizar conversaciones multi-turno largas o procesamiento de documentos extensos.
+- Discrepancia critica entre el nombre del repositorio (145B), el conteo de parametros en safetensors (4,95B) y el tamano del artefacto (106,3 GB); verificar antes de desplegar en produccion.
+- La licencia `edge0-community-model-1.0` es de tipo "other" y no se ha publicado el texto completo en la informacion disponible; es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial.
+- La model card no contiene informacion tecnica sustantiva (esta compuesta mayoritariamente por CSS), lo que impide evaluar sesgos, alucinacion o calidad real.
+- Idiomas soportados no declarados; riesgo de comportamiento deficiente fuera del idioma principal del modelo base.
+- Longitud de contexto desconocida; no apto para planificacion de pipelines que dependan de ventanas largas sin verificacion previa.
+- La cuantizacion a 4 bits puede degradar la calidad respecto al modelo base, especialmente en tareas de razonamiento y codigo.
+- La libreria `edge0` es propietaria y su ecosistema de herramientas y mantenimiento no esta documentado.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Edge0/Edge0-145B-q3k
+- Hugging Face: https://huggingface.co/Edge0/Edge0-145B-q3k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.
+- Licencia: https://huggingface.co/Edge0/Edge0-145B-q3k/blob/main/LICENSE

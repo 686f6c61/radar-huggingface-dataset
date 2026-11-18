@@ -64,8 +64,8 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 346,
-  "downloads_30d": 391808,
+  "likes": 347,
+  "downloads_30d": 402395,
   "trending_score": 10,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -85,31 +85,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 · Hugging Face",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
-      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels."
-    },
-    {
-      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1: Text-to-Text model — overview, use ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau",
-      "snippet": "Overview Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 is a 27-billion parameter instruction-tuned language model built by DavidAU that applies the COLD FUSION training methodology—combining GAIN (an internally developed technique) with Unsloth&#x27;s training infrastructure—to reduce thinking tokens to 1/10 to 1/2 of standard Qwen models while maintaining 99% of full-precision performance at both 8-bit ..."
-    },
-    {
-      "title": "Qwen3.8-27B - GitHub",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "DavidAU (David Belton) - Hugging Face",
-      "url": "https://huggingface.co/DavidAU",
-      "snippet": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP ... DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF"
-    },
-    {
-      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 - FriendliAI",
-      "url": "https://friendli.ai/models/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
-      "snippet": "This training is about assessing root Qwen3.8-27B and a trained version on known datasets using the COLD FUSION training tech which was invented by my team during the R & D of \"Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic\"."
-    }
-  ]
+  "sources": []
 }

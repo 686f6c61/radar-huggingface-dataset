@@ -25,8 +25,8 @@
     "decision-making",
     "quantized",
     "en",
-    "base_model:wfzyx/von-1.0",
-    "base_model:finetune:wfzyx/von-1.0",
+    "base_model:wfzyx/von",
+    "base_model:finetune:wfzyx/von",
     "license:apache-2.0",
     "region:us"
   ],

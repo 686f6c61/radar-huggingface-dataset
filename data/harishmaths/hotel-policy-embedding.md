@@ -2,114 +2,104 @@
 
 ## Resumen
 
-Hotel-Policy-Embedding es un modelo de embeddings de frases publicado por el usuario HarishMaths en Hugging Face. Se trata de un Sentence Transformer construido sobre un encoder BERT que proyecta texto en un espacio vectorial denso de 384 dimensiones, entrenado especificamente para medir similitud semantica en el dominio de politicas hoteleras (cancelaciones, upgrades, programas de fidelizacion, normas de ocupacion y tabaquismo). El modelo no genera texto: su salida es un vector normalizado que permite comparar fragmentos de politica mediante similitud coseno.
+Hotel-Policy-Embedding es un modelo de embeddings de frases desarrollado por el usuario HarishMaths y publicado en Hugging Face. Se trata de un Sentence Transformer construido sobre una arquitectura BERT que proyecta oraciones y parrafos a un espacio vectorial denso de 384 dimensiones, pensado para tareas de similitud semantica, busqueda semantica, mineria de parafrasis, clasificacion y clustering. Su especializacion es el dominio de politicas hoteleras: condiciones de cancelacion, reembolsos, normas de ocupacion, politica de fumadores y programas de fidelizacion.
 
-El modelo cuenta con 22.713.216 parametros (aproximadamente 0,1 GB en safetensors) y una longitud maxima de secuencia de 128 tokens. Fue entrenado con la funcion de perdida MultipleNegativesRankingLoss sobre un conjunto de 3.872 pares de frases, una configuracion tipica de ajuste fino para recuperacion y similitud semantica. No requiere GPU para funcionar, lo que lo hace atractivo para desplegar busqueda semantica sobre documentacion de politicas en entornos con recursos limitados.
+El modelo resuelve el problema de recuperar y comparar fragmentos normativos de reservas hoteleras, un dominio con lenguaje muy formal y redundante donde los embeddings genericos suelen confundir conceptos proximos (por ejemplo, cancelacion flexible frente a no reembolsable). Con 22,7 millones de parametros y un vector de salida de 384 dimensiones, es un modelo pequeno y ligero, adecuado para indexar grandes volumenes de documentos en entornos con recursos limitados.
 
-Su relevancia actual es acotada pero clara: es un modelo muy especializado, con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada ni idiomas especificados en la model card. Resulta util como componente de recuperacion (retrieval) dentro de un pipeline RAG sobre documentacion hotelera, no como modelo de proposito general.
+Es relevante ahora porque los sistemas de atencion al cliente y de gestion de reservas necesitan recuperacion semantica precisa sobre textos legales de pequena extension, y este modelo ofrece una alternativa afinada al dominio frente a embeddings generalistas, con un coste computacional minimo. Su ventana de contexto es de solo 128 tokens, lo que condiciona su uso a fragmentos cortos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sentence Transformer: encoder BertModel + pooling por media + normalizacion |
+| Arquitectura | BERT (BertModel) con Pooling de media y Normalize; Sentence Transformer |
 | Parametros totales | 22.713.216 |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 128 tokens (longitud maxima de secuencia) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes cuantizadas) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 128 tokens |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantizacion estandar de transformers, no documentada por el autor) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Dimension de salida | 384 dimensiones |
-| Funcion de similitud | similitud coseno |
-| Funcion de pooling | media (mean pooling), incluye prompt |
-| Perdida de entrenamiento | MultipleNegativesRankingLoss |
-| Tamano del dataset de entrenamiento | 3.872 ejemplos |
-| Tamano del repositorio | 0,1 GB |
-| Modalidad | texto |
+| Dimension del embedding | 384 |
+| Funcion de similitud | coseno |
+| Funcion de perdida de entrenamiento | MultipleNegativesRankingLoss |
+| Tamano del dataset de entrenamiento | 3872 ejemplos |
+| Tamano del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura, tal como se detalla en la model card, es un `SentenceTransformer` compuesto por tres modulos en serie: (1) un encoder `BertModel` en modo `feature-extraction` que devuelve `last_hidden_state`; (2) una capa de pooling por media que produce el vector de 384 dimensiones, con `include_prompt: True`; y (3) una capa de normalizacion. Esta estructura es la habitual en la familia Sentence-BERT para tareas de similitud textual y busqueda semantica, y permite comparar frases directamente mediante producto escalar o distancia coseno sin necesidad de un cross-encoder.
+El modelo sigue la arquitectura clasica de Sentence Transformers: un codificador BERT que extrae el `last_hidden_state`, seguido de una capa de pooling por media sobre los token embeddings y una capa de normalizacion final. El resultado es un vector de 384 dimensiones normalizado, de modo que la similitud coseno entre vectores es directamente comparable. No emplea atencion lineal, decodificacion especulativa ni mecanismos hibridos; es un encoder denso convencional.
 
-El entrenamiento se realizo con la libreria `sentence-transformers` y el tag `generated_from_trainer` indica que se genero con el flujo automatico de entrenamiento de dicha libreria. Se utilizo la perdida `MultipleNegativesRankingLoss` sobre un conjunto de 3.872 pares (tag `dataset_size:3872`), una perdida contrastiva que aprovecha los demas ejemplos del lote como negativos. El modelo base no esta declarado en la model card (aparece como `Unknown`), y tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO (no aplicables, en cualquier caso, a un modelo de embeddings). No se documenta ninguna innovacion tecnica adicional como decodificacion especulativa o atencion lineal.
+El entrenamiento se realizo con la libreria sentence-transformers mediante `generated_from_trainer`, sobre un dataset de 3872 pares o tripletas del dominio hotelero y con la funcion de perdida MultipleNegativesRankingLoss, habitual en recuperacion densa porque trata los negativos del propio batch como negativos en la comparacion. No se documenta el modelo base concreto, el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO. La model card no indica el checkpoint de partida, lo que impide evaluar el grado de desviacion respecto a un BERT generico.
 
 ## Capacidades
 
-- Generacion de embeddings de texto: convierte frases y parrafos en vectores densos de 384 dimensiones, normalizados y comparables por similitud coseno.
-- Similitud textual semantica: calcula puntuaciones de similitud entre pares de textos, tal como muestra el ejemplo de la model card (similitud 0,9151 entre dos textos sobre politicas de tabaco).
-- Busqueda semantica: permite indexar un corpus y recuperar los fragmentos mas relevantes ante una consulta en lenguaje natural.
-- Mineria de parafrasis: identifica fragmentos con significado equivalente aunque difieran en su redaccion.
-- Clustering de textos: agrupa fragmentos de politica por tematica (cancelacion, upgrade, ocupacion, etc.).
-- Clasificacion basada en embeddings: utilizable como extractor de caracteristicas para un clasificador posterior (tag `feature-extraction`).
-- Compatibilidad con Text Embeddings Inference: el tag `text-embeddings-inference` y `endpoints_compatible` indican soporte para despliegue en Hugging Face Inference Endpoints.
-- No soporta generacion de texto, razonamiento, codigo, matematicas, vision ni audio.
-- No dispone de tool calling, function calling ni capacidades de agente o razonamiento multi-paso.
-- Capacidades multilingues: no disponibles (no se declara la lista de idiomas).
+- Generacion de embeddings de frases y parrafos cortos en un espacio denso de 384 dimensiones.
+- Similitud semantica entre textos (semantic textual similarity) con similitud coseno.
+- Busqueda semantica y recuperacion densa sobre fragmentos de politicas hoteleras.
+- Mineria de parafrasis y deteccion de duplicados conceptuales.
+- Clasificacion de textos mediante embeddings como caracteristica de entrada.
+- Clustering de fragmentos normativos por tematica (cancelacion, reembolso, ocupacion, tabaco, fidelizacion).
+- Extraccion de caracteristicas (`feature-extraction`) para pipelines posteriores.
+- Compatible con text-embeddings-inference y endpoints de Hugging Face.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio: es un encoder puro de texto, no un modelo generativo.
+- Capacidades multilingues: no documentadas; el material de ejemplo esta integramente en ingles.
 
 ## Casos de uso
 
-- Busqueda semantica sobre politicas hoteleras: indexar el corpus de condiciones de una cadena hotelera (cancelaciones, upgrades, programa de fidelizacion) y permitir consultas en lenguaje natural que recuperen la clausula exacta, usando los 384 dimensiones del embedding como clave de recuperacion en una base vectorial.
-- Recuperacion aumentada (RAG) para asistentes de atencion al cliente: el modelo actua como retriever que selecciona los fragmentos de politica relevantes antes de pasarselos a un LLM generativo, evitando que este responda sin base documental.
-- Enrutado de consultas entrantes: clasificar tickets o mensajes de clientes por intencion (cancelacion, facturacion, upgrade, queja) comparando el embedding de la consulta con embeddings prototipo de cada categoria.
-- Deduplicacion de clausulas contractuales: detectar condiciones repetidas o casi identicas entre documentos de distintas propiedades o cadenas, reduciendo el trabajo manual de revision legal.
-- Deteccion de incoherencias entre politicas: agrupar clausulas por similitud para localizar contradicciones entre el documento global de la cadena y las condiciones locales de cada propiedad.
-- Cache semantico de respuestas: almacenar embeddings de preguntas frecuentes y reutilizar respuestas previas cuando una consulta nueva supera un umbral de similitud, reduciendo coste de inferencia de un LLM.
-- Moderacion y clasificacion de resenas: agrupar resenas de huespedes por tematica o detectar menciones a incumplimientos de politica (tabaquismo, ocupacion, danos) para su escalado.
-- Motor de recomendacion de tarifas: dado el perfil de reserva del usuario, recuperar las condiciones de tarifa mas similares semánticamente (flexible, semiflexible, no reembolsable) y presentarlas de forma comparada.
-- Analisis exploratorio de corpus de politica: proyectar los embeddings y aplicar clustering para obtener un mapa tematico de la documentacion sin etiquetas previas.
+- Busqueda semantica en bases de conocimiento de politicas hoteleras: indexar fragmentos de condiciones de reserva y recuperar los mas proximos a la consulta del usuario mediante similitud coseno, aprovechando el afinado al dominio para distinguir entre cancelacion flexible, semirreembolsable y no reembolsable.
+- Atencion al cliente automatizada: dado que la ventana es de 128 tokens, el modelo se usa como recuperador de pasajes cortos que alimentan a un LLM generativo en un patron RAG; el encoder localiza la clausula relevante y el generador redacta la respuesta.
+- Deduplicacion de clausulas contractuales: agrupar por clustering fragmentos equivalentes procedentes de distintos contratos de hotel, utiles para auditar la coherencia de una politica corporativa de reservas.
+- Clasificacion automatica de tickets de soporte: convertir el texto del ticket en un embedding y entrenar un clasificador lineal encima para enrutar consultas a cancelaciones, reembolsos, ocupacion o fidelizacion.
+- Deteccion de parafrasis en revisiones de politicas: comparar versiones sucesivas de un documento normativo y senalar las clausulas reformuladas sin cambio de fondo.
+- Motor de recomendacion de tarifas: comparar la descripcion de una tarifa con las condiciones que busca el usuario y ordenar las opciones por similitud semantica.
+- Filtrado previo en pipelines de moderacion de contenido: descartar rapidamente textos ajenos al dominio hotelero antes de procesarlos con modelos mas costosos.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el campo `model-index` de la model card. La metrica `verified: false` indica que no han sido verificados de forma independiente.
+Resultados declarados por el autor en la model card (no verificados por un tercero), sobre un conjunto de validacion propio de similitud semantica:
 
 | Tarea | Dataset | Metrica | Valor |
 |---|---|---|---|
-| Semantic Similarity | val | Pearson Cosine | 0,6244 |
-| Semantic Similarity | val | Spearman Cosine | 0,6463 |
+| Similitud semantica | val | Pearson Cosine | 0,6244 |
+| Similitud semantica | val | Spearman Cosine | 0,6463 |
 
-No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, MTEB, etc.) en la informacion disponible. El dataset de evaluacion se identifica unicamente como `val`, sin especificar su composicion ni su tamano.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, MTEB) en la informacion disponible. Las cifras anteriores corresponden a un split de validacion interno y no son comparables con leaderboards publicos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 91 MB en FP32, 46 MB en FP16 y 23 MB en INT8, correspondientes a los 22,7 millones de parametros; el consumo real lo dominan las activaciones y el tamano del lote.
-- Cabe en cualquier GPU de consumo, incluidas GTX 1050, RTX 3060, RTX 4090 y tambien en GPUs integradas; tambien funciona en CPU sin problema apreciable dada su magnitud.
-- GPU de datacenter (A100, H100) solo estan justificadas si se necesita procesar volumenes muy elevados de embeddings por segundo en un mismo nodo.
-- Opciones de despliegue: libreria `sentence-transformers`, Text Embeddings Inference (TEI), Hugging Face Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime para aceleracion en CPU, y uso como extractor dentro de Transformers.
-- Integracion con bases vectoriales y frameworks: FAISS, Qdrant, Milvus, pgvector, Elasticsearch, LangChain y LlamaIndex como retriever.
-- No es compatible con llama.cpp ni Ollama, ya que no se distribuyen pesos en formato GGUF ni se trata de un modelo generativo.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: inferior a 0,5 GB en precision completa (22,7 millones de parametros en fp32 ocupan unos 91 MB, mas el overhead de activaciones y del runtime). Cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; una RTX 3060, RTX 4090, T4 o incluso CPU son suficientes. Para indexacion masiva, una A100 o H100 solo aporta ventaja por paralelismo de batch, no por memoria.
+- Cabe en GPU consumer: si, en practicamente todas las GPU modernas e incluso en iGPU.
+- Opciones de despliegue: sentence-transformers (referencia), Hugging Face Text Embeddings Inference (TEI), integracion en pipelines de transformers, ONNX Runtime para CPU. No se documenta soporte GGUF ni Ollama, aunque es tecnicamente posible convertirlo.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera un throughput alto en CPU y muy alto en GPU con batches grandes, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye modelos comparables declarados por el autor. A continuacion se contrasta con alternativas de proposito general ampliamente utilizadas para similitud semantica; los datos de esos modelos de referencia no provienen de la informacion suministrada y deben verificarse en sus respectivas model cards.
-
-| Modelo | Parametros | Dimensiones | Contexto | Licencia | Observaciones |
+| Modelo | Parametros | Contexto | Dimension | Licencia | Notas |
 |---|---|---|---|---|---|
-| HarishMaths/Hotel-Policy-Embedding | 22,7 M | 384 | 128 tokens | no disponible | Especializado en politicas hoteleras; 3.872 pares de entrenamiento; metricas no verificadas |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 384 | 256 tokens | Apache 2.0 | Proposito general, ampliamente adoptado; mismo orden de magnitud en parametros |
-| BAAI/bge-small-en-v1.5 | 33 M | 384 | 512 tokens | MIT | Buen rendimiento en recuperacion; orientado a ingles |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 384 | 128 tokens | Apache 2.0 | Multilingue (mas de 50 idiomas), mas pesado |
+| Hotel-Policy-Embedding | 22,7 M | 128 tokens | 384 | no disponible | Afinado al dominio hotelero; metricas solo en validacion interna |
+| all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | 384 | Apache 2.0 | Embedding generico muy extendido, mismo orden de tamano y dimension |
+| multi-qa-MiniLM-L6-cos-v1 | ~22,7 M | 512 tokens | 384 | Apache 2.0 | Optimizado para recuperacion de preguntas y respuestas |
+| paraphrase-multilingual-MiniLM-L12-v2 | ~118 M | 128 tokens | 384 | Apache 2.0 | Multilingue, mas pesado, referencia para comparativas cross-lingue |
 
-No se dispone de datos de contexto, licencia o idiomas del modelo evaluado que permitan una comparacion completa con alternativas de su misma categoria especializada.
+La comparacion con all-MiniLM-L6-v2 es la mas directa por tamano y dimension de salida; sin embargo, no hay datos publicos que permitan afirmar que el modelo afinado supere al generico fuera del dominio hotelero. La ventaja de contexto (128 frente a 256 tokens) juega en contra del modelo especializado.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial; conviene contactar con el autor o tratar el modelo como no apto para produccion.
-- Idiomas no declarados: no se puede confirmar el soporte multilingue; los ejemplos de la model card y el dominio (politicas de Marriott) estan en ingles, por lo que el rendimiento en castellano es incierto.
-- Longitud de contexto muy reducida (128 tokens): las clausulas de politica mas largas se truncan y pueden perder informacion critica; es necesario fragmentar los documentos antes de generar embeddings.
-- Riesgo de falsos positivos por similitud: un modelo de embeddings no alucina texto, pero puede asignar puntuaciones altas a fragmentos con tematica parecida y semantica distinta; se recomienda umbral y validacion con un re-ranker.
-- Sesgo de dominio: el entrenamiento se realizo sobre 3.872 pares centrados en un unico dominio y probablemente en una unica cadena hotelera, lo que limita la generalizacion a otros sectores o a otras cadenas.
-- Sobreajuste al conjunto de validacion: las metricas declaradas (Pearson 0,6244 y Spearman 0,6463) no estan verificadas y corresponden a un conjunto `val` sin descripcion; no deben tomarse como rendimiento garantizado en datos reales.
-- Modelo de baja difusion: 0 descargas y 0 likes en el momento de la consulta, sin historial de mantenimiento posterior a la fecha de actualizacion.
-- Modelo base no declarado: al no indicarse la arquitectura de partida, no es posible auditar su procedencia ni los datos con los que fue preentrenado.
-- No apto para generacion, agentes ni razonamiento: cualquier uso de ese tipo requiere combinarlo con un modelo generativo independiente.
-- Rendimiento inferior esperable frente a modelos de embeddings mas grandes (por ejemplo, variantes de 100 M o 300 M de parametros) en tareas fuera de su dominio.
+- Ventana de contexto de solo 128 tokens: obliga a fragmentar los documentos en trozos muy cortos, lo que puede romper clausulas largas y perder contexto.
+- No es un modelo generativo: no produce texto, solo vectores; cualquier caso de uso conversacional requiere un LLM adicional.
+- Licencia no especificada: no hay garantia explicita de uso comercial; conviene contactar con el autor antes de integrarlo en produccion.
+- Idiomas no documentados: el material de ejemplo esta en ingles; el rendimiento en castellano es desconocido.
+- Dataset de entrenamiento pequeno (3872 ejemplos) y de dominio estrecho: riesgo de sobreajuste a las expresiones concretas de las politicas de ejemplo y de pobre generalizacion.
+- Metricas de benchmark no verificadas y sobre un split de validacion interno, sin comparacion con test independiente.
+- Riesgo de sesgo hacia el vocabulario de una cadena hotelera concreta (el ejemplo menciona explicitamente Marriott), lo que puede degradar la recuperacion en otros operadores.
+- Alucinacion: no aplica directamente al ser un encoder, pero los sistemas RAG que lo usen pueden generar respuestas incorrectas si la recuperacion falla.
+- Solo 1 like y un autor individual: soporte y mantenimiento no garantizados; la fecha de creacion indicada (2026) debe verificarse en el repositorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/HarishMaths/Hotel-Policy-Embedding
-- Documentacion de Sentence Transformers: https://www.SBERT.net
-- Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos con la libreria sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
-- Paper de referencia de Sentence-BERT (arquitectura base de la familia): https://arxiv.org/abs/1908.10084
+- Documentacion de Sentence Transformers: https://sbert.net
+- Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers
+- Modelos Sentence Transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers

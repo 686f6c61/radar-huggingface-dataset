@@ -49,29 +49,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Lightricks (LTX.io) - Hugging Face",
-      "url": "https://huggingface.co/Lightricks",
-      "snippet": "models 71. Sort: Recently updated · Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render · Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen · Lightricks/LTX-2.5-22b-IC-LoRA-SDR ..."
-    },
-    {
       "title": "The AI Technology Company Empowering Creativity | Lightricks",
       "url": "https://www.lightricks.com/",
       "snippet": "Lightricks is a leading AI technology company transforming creative workflows with innovative tools; across web, mobile and open …"
     },
     {
-      "title": "Lightricks - GitHub",
-      "url": "https://github.com/Lightricks",
-      "snippet": "Bridging Imagination and Creation. Lightricks has 152 repositories available. Follow their code on GitHub."
+      "title": "About Lightricks | AI-Powered Creative Apps",
+      "url": "https://www.lightricks.com/about",
+      "snippet": "Lightricks, an AI-first company, is revolutionizing how visual content is created. With a mission to bridge the gap between imagination …"
+    },
+    {
+      "title": "Lightricks (LTX.io) - Hugging Face",
+      "url": "https://huggingface.co/Lightricks",
+      "snippet": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control ... Lightricks/LTX-2.5-22b-LoRA-Cinemagraph ... Lightricks/LTX-2.5-22b-IC-LoRA …"
     },
     {
       "title": "Lightricks - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Lightricks",
-      "snippet": "Lightricks is a software development company founded in January 2013. The company develops Facetune, a mobile app for image …"
+      "url": "https://en.m.wikipedia.org/wiki/Lightricks",
+      "snippet": "In the summer of 2022, with the emergence of generative artificial intelligence, Lightricks began incorporating GenAI flows in its apps, …"
     },
     {
-      "title": "LTX just dropped an HDR IC-LoRA beta: EXR output, built ... - Reddit",
-      "url": "https://www.reddit.com/r/StableDiffusion/comments/1stlrer/ltx_just_dropped_an_hdr_iclora_beta_exr_output/",
-      "snippet": "24.04.2026 ... HDR has been the missing piece for getting AI video into real production pipelines. This IC-LoRA is our answer. The first model-level ..."
+      "title": "Lightricks - GitHub",
+      "url": "https://github.com/Lightricks",
+      "snippet": "Bridging Imagination and Creation. Lightricks has 154 repositories available. Follow their code on GitHub."
     }
   ]
 }

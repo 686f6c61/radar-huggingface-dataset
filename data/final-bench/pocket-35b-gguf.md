@@ -2,101 +2,122 @@
 
 ## Resumen
 
-POCKET-35B-GGUF es la distribucion en formato GGUF del modelo Darwin-36B-Opus de FINAL-Bench, un modelo de lenguaje de tipo mixture-of-experts disperso con 34.660.610.688 parametros totales y aproximadamente 3.000 millones de parametros activos por token. El objetivo declarado por el autor es ofrecer inferencia local en PC sin GPU, apoyandose en llama.cpp y en un conjunto de cuantizaciones que van desde IQ1_M (unos 8,2 GB) hasta Q4_K_M (unos 21 GB). El modelo base esta etiquetado como qwen3_5_moe, lo que sugiere una arquitectura derivada de la familia Qwen 3.5 MoE.
+POCKET-35B-GGUF es la distribucion cuantizada en formato GGUF del modelo Darwin-36B-Opus, un Mixture of Experts (MoE) disperso de 34.660.610.688 parametros totales con aproximadamente 3.000 millones de parametros activos por token. Lo publica el colectivo FINAL-Bench (vinculado a VIDRAFT) bajo licencia Apache-2.0, y esta pensado para ejecucion local en PC, incluyendo una ruta de inferencia solo-CPU mediante llama.cpp con soporte para la arquitectura `qwen35moe`.
 
-La relevancia actual del artefacto es doble: por un lado, permite ejecutar un modelo de casi 35.000 millones de parametros en equipos de consumo con 16-32 GB de RAM gracias a la esparsidad del MoE; por otro, la licencia Apache-2.0 elimina las restricciones habituales de uso comercial de otros modelos abiertos. El repositorio acumula mas de 531.000 descargas y una actualizacion reciente en noviembre de 2026, lo que indica mantenimiento activo.
+El modelo resuelve el problema de desplegar un MoE de ~35B en hardware de consumo: al activar solo ~3B parametros por token y ofrecer builds desde IQ1_M hasta Q4_K_M (13-21 GB), permite inferencia en equipos con 16-32 GB de RAM sin GPU dedicada. La model card lo describe como "Korean-tuned", es decir, ajustado para coreano, aunque los idiomas exactos no se detallan en la informacion disponible.
 
-Conviene subrayar que este repositorio contiene las builds de modelo completo para PC, no las variantes de aproximadamente 5 GB para telefono, que se distribuyen en repositorios separados (POCKET-KR-GGUF, POCKET-KR-MLX y POCKET-EN-GGUF). La model card esta redactada en ingles aunque describe el ajuste como "Korean-tuned", y no detalla la composicion del dataset ni los idiomas soportados de forma explicita.
+Es relevante ahora porque la familia Darwin de VIDRAFT aparece en la model card con resultados destacados en el benchmark SuperCLUE de noviembre de 2026 (Darwin-180B-RSI-R3 con 73,68 en razonamiento matematico y cientifico, primer modelo de pesos abiertos), y POCKET-35B traslada esa linea de modelos al terreno on-device. El repositorio acumula 365.166 descargas y 59,1 GB de tamano total, lo que refleja una adopcion considerable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts disperso (etiqueta qwen3_5_moe, soporte en llama.cpp) |
-| Parametros totales | 34.660.610.688 (34,66 B) |
-| Parametros activos | Aproximadamente 3 B por token |
-| Longitud de contexto | No disponible (el ejemplo de ejecucion usa -c 4096, pero no se declara un maximo) |
-| Tipos de cuantizacion | IQ1_M, Q2_K, Q3_K_M, Q4_K_M (con imatrix) |
-| Idiomas soportados | No disponible (la model card indica "Korean-tuned" sin lista formal) |
+| Arquitectura | Mixture of Experts (MoE) disperso, familia `qwen35moe` |
+| Parametros totales | 34.660.610.688 (~34,66B) |
+| Parametros activos | ~3B por token |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ1_M, Q2_K, Q3_K_M, Q4_K_M (imatrix) |
+| Idiomas soportados | no disponible (model card indica "Korean-tuned") |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); existe un artefacto MLX separado en otro repositorio |
+| Formato de pesos | GGUF (llama.cpp) |
+| Modelo base | FINAL-Bench/Darwin-36B-Opus |
+| Tamano del repositorio | 59,1 GB |
+| Libreria | llama.cpp |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer con mezcla de expertos dispersa: de los 34,66 B de parametros totales solo se activan aproximadamente 3 B por token, lo que reduce drasticamente el coste computacional por token generado y explica que pueda ejecutarse en CPU. La etiqueta qwen3_5_moe y el requisito de una build de llama.cpp con soporte para dicha arquitectura indican que el grafo computacional sigue el esquema de la familia Qwen 3.5 MoE. El checkpoint de partida es FINAL-Bench/Darwin-36B-Opus, del que este repositorio es una conversion cuantizada; la model card no documenta el proceso de destilacion, ajuste o alineacion que dio lugar al modelo base.
+El modelo es un transformer con capas de mezcla de expertos (MoE) dispersas: de los ~34,66B parametros totales solo se activan aproximadamente 3B por token, lo que reduce drasticamente el coste computacional por paso de decodificacion. La arquitectura se identifica en los tags como `qwen3_5_moe` y requiere una build de llama.cpp con soporte para `qwen35moe`. Segun la model card, la linea Darwin hereda las capas de expertos de Qwen3.8-Flash-Next y reconstruye unicamente las capas de atencion y de expertos compartidos mediante un proceso de auto-mejora recursiva (recursive self-improvement, RSI).
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La unica pista sobre el ajuste es la descripcion "Korean-tuned", que sugiere una especializacion en coreano, pero sin datos cuantitativos sobre la mezcla linguistica. Las cuantizaciones se han generado con imatrix, una tecnica de calibracion por importancia que mejora la calidad de los formatos de baja precision (IQ1_M, Q2_K) respecto a la cuantizacion uniforme.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La model card menciona que el modelo base Darwin-36B-Opus fue ajustado para coreano ("Korean-tuned"), pero no detalla el corpus de ajuste. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal mas alla de la propia arquitectura MoE.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el pipeline declarado es text-generation y la etiqueta "conversational" indica un ajuste orientado a dialogo multi-turno.
-- Ejecucion en CPU: el modelo esta disenado para correr sin GPU mediante llama.cpp con `--device none -ngl 0`, lo que lo hace apto para equipos sin acelerador dedicado.
-- Inferencia local y on-device: las etiquetas incluyen "on-device", "local-llm" y "edge", orientadas a privacidad y despliegue sin dependencia de la nube.
-- Multilinguee parcial: la model card menciona ajuste en coreano y existen derivados separados para coreano e ingles, pero no se publica una lista de idiomas ni evaluaciones por idioma.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere integracion con APIs compatibles con el formato de Hugging Face.
-- Soporte de tool calling, function calling, agentes, vision, audio o modo thinking: no documentado en la informacion disponible.
+- Generacion de texto conversacional multi-turno.
+- Razonamiento (tag `reasoning` en el repositorio).
+- Ejecucion local en CPU sin GPU dedicada, mediante llama.cpp.
+- Despliegue on-device en PC con 16-32 GB de RAM segun el build elegido.
+- Cuantizacion con imatrix para preservar calidad en builds de baja precision.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Ajuste orientado a coreano (segun la model card).
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Capacidades de agentes y multi-step reasoning: no disponible en la informacion.
+- Vision, audio o thinking mode explicito: no disponible en la informacion.
 
 ## Casos de uso
 
-- Asistente conversacional local en PC sin GPU: con la build Q2_K (unos 13 GB) y 16-24 GB de RAM, el modelo puede mantener dialogos multi-turno en un equipo de sobremesa o portatil de gama alta, sin enviar datos a servicios externos.
-- Procesamiento de texto con requisitos de privacidad: al ejecutarse integramente en local, es adecuado para resumir documentos internos, clasificar correos o extraer informacion de contratos en entornos donde no se permite la salida de datos.
-- Desarrollo y prototipado offline: investigadores que trabajan en portatiles sin GPU pueden usar la build IQ1_M (8,2 GB) para experimentar con un MoE de 35 B y comparar el efecto de la cuantizacion en la calidad.
-- Generacion de texto en coreano: dado el ajuste declarado en coreano, es una opcion para redaccion, traduccion o atencion al cliente en ese idioma, siempre que se valide la calidad con la build Q4_K_M, que el autor presenta como la de mayor calidad medida en coreano.
-- Despliegue en estaciones de trabajo con 32 GB de RAM: la build Q4_K_M (unos 21 GB) permite usar el modelo como backend de una aplicacion de escritorio o de un servidor interno de baja concurrencia.
-- Educacion e investigacion sobre MoE: el contraste entre 34,66 B de parametros totales y 3 B activos lo convierte en un caso practico para estudiar el comportamiento de modelos dispersos bajo cuantizacion agresiva.
-- Integracion en herramientas de escritorio: mediante llama.cpp, Ollama o LM Studio, puede incrustarse en editores, IDE o utilidades ofimaticas que requieran generacion de texto sin conexion.
+- Asistente conversacional local en PC: con el build Q2_K (~13 GB) el modelo cabe en equipos de 16-24 GB de RAM y permite mantener conversaciones multi-turno sin conexion a servicios en la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Procesamiento de texto en portatiles sin GPU: la ruta solo-CPU de llama.cpp permite ejecutar el MoE activando solo ~3B parametros por token, con una latencia aceptable para tareas interactivas en portatiles de gama media.
+- Desarrollo y prototipado offline: los desarrolladores pueden integrar el modelo en pipelines locales mediante llama.cpp o el servidor compatible con endpoints, sin depender de APIs externas ni de costes por token.
+- Atencion al cliente en coreano: dado el ajuste "Korean-tuned" del modelo base, es adecuado para conversaciones de soporte en ese idioma, aunque la calidad exacta por idioma no esta documentada.
+- Generacion de texto y resumen en estaciones de trabajo: el build Q4_K_M (~21 GB) ofrece la mayor calidad coreana medida entre los builds y requiere 32 GB de RAM, apropiado para tareas de redaccion y sintesis por lotes.
+- Investigacion sobre cuantizacion MoE: el repositorio incluye builds IQ1_M, Q2_K, Q3_K_M y Q4_K_M con imatrix, lo que lo convierte en un banco de pruebas para estudiar el impacto de la cuantizacion agresiva en modelos de mezcla de expertos.
+- Despliegue en entornos aislados (air-gapped): al ser un GGUF Apache-2.0 ejecutable en CPU, puede instalarse en maquinas sin acceso a internet ni GPU, util en laboratorios y entornos industriales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona una seccion "Quality and evaluation" y afirma que Q4_K_M ofrece "la mayor calidad medida en coreano entre estas builds", pero no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra prueba estandar, ni comparaciones numericas con modelos alternativos.
+No se han publicado resultados de benchmarks especificos de POCKET-35B en la informacion disponible. La model card incluye resultados de SuperCLUE (noviembre de 2026) para el modelo hermano Darwin-180B-RSI-R3, no para este modelo:
+
+| Modelo | Desarrollador | Pesos abiertos | Razonamiento matematico y cientifico |
+|---|---|---|---|
+| GPT-6.1-Sol | OpenAI | No | 76,32 |
+| Darwin-180B-RSI-R3 | VIDRAFT | Si | 73,68 |
+| Gemini-4-Argon | Google | No | 71,05 |
+| DeepSeek-V4.1-Flash | DeepSeek | Si | 71,05 |
+| Grok-4.7 | xAI | No | 68,42 |
+| Qwen3.8-Max-0902 | Alibaba | No | 68,42 |
+| GLM-5.3 | Zhipu AI | Si | 65,79 |
+| Kimi-K3.1-Pro | Moonshot | Si | 63,16 |
+| Qwen3.8-Flash | Alibaba | Si | 57,89 |
+
+Estos datos corresponden al modelo de 180B de la misma familia y no deben extrapolarse a POCKET-35B.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica en el modo CPU; para ejecucion en GPU no se documentan requisitos, y el autor recomienda explicitamente la ruta sin GPU.
-- RAM estimada segun build:
-  - IQ1_M (unos 8,2 GB de archivo): 16 GB de RAM segun el autor; mayor perdida de calidad.
-  - Q2_K (unos 13 GB): 16-24 GB de RAM; build recomendada para uso diario.
-  - Q3_K_M (unos 16 GB): 24 GB de RAM.
-  - Q4_K_M (unos 21 GB): 32 GB de RAM; mayor calidad medida en coreano.
-- Los tamanos son GB decimales redondeados y no incluyen buffers de contexto, sistema operativo ni otras aplicaciones; el autor advierte que hay que reservar memoria adicional.
-- GPU recomendadas: no documentadas. El modelo esta pensado para CPU; no se publican pruebas en A100, H100 ni RTX 4090.
-- Opciones de despliegue: llama.cpp (con soporte qwen35moe), Ollama (version compatible con la arquitectura), LM Studio (runtime incluido que soporte la arquitectura) y PocketPal u otros runtimes moviles solo con los derivados especificos para telefono. Para Apple MLX existe un artefacto separado (POCKET-KR-MLX), no este GGUF.
-- Latencia y throughput: no disponibles. El autor no publica tokens por segundo ni tiempos de primera respuesta; solo indica que usar el numero de nucleos fisicos en `-t` suele dar mejor throughput que usar todos los hilos logicos.
+- Q2_K (recomendado): ~13 GB de archivo; guia del editor de 16-24 GB de RAM en PC.
+- Q3_K_M: ~16 GB de archivo; guia del editor de 24 GB de RAM.
+- Q4_K_M: ~21 GB de archivo; guia del editor de 32 GB de RAM; mayor calidad coreana medida entre los builds.
+- IQ1_M: build de muy baja precision; tamano no disponible en la informacion.
+- GPU dedicada: no requerida; la model card indica una ruta solo-CPU disponible. No se especifican GPU recomendadas (A100, H100, RTX 4090) ni VRAM estimada para aceleracion por GPU.
+- Despliegue: llama.cpp con soporte de arquitectura `qwen35moe`; requiere verificar la build instalada. Compatible con endpoints.
+- Latencia y throughput: no disponibles en la informacion.
+- Los builds de este repositorio son de modelo completo para PC; los derivados para movil (~5 GB) estan en repositorios separados (POCKET-KR-GGUF, POCKET-KR-MLX, POCKET-EN-GGUF).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato / despliegue |
-|---|---|---|---|---|---|
-| POCKET-35B-GGUF (este) | 34,66 B | ~3 B | No disponible | Apache-2.0 | GGUF para llama.cpp, CPU-first |
-| POCKET-26B-GGUF (mismo autor) | No disponible en la informacion | No disponible | No disponible | No disponible | GGUF |
-| POCKET-Darwin-180B-GGUF (mismo autor) | No disponible en la informacion | No disponible | No disponible | No disponible | GGUF |
-| Darwin-36B-Opus (modelo base) | No disponible en la informacion | No disponible | No disponible | No disponible | Pesos originales |
+No se dispone de datos de rendimiento de POCKET-35B que permitan una comparacion cuantitativa fiable. A continuacion se comparan caracteristicas estructurales con alternativas de la misma categoria (MoE de ~30-40B cuantizados para ejecucion local):
 
-No se dispone de datos de rendimiento comparado con alternativas de otros autores (por ejemplo, otros MoE abiertos de tamano similar) en la informacion proporcionada, por lo que la comparativa se limita a la familia POCKET del mismo editor.
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| POCKET-35B-GGUF | ~34,66B | ~3B | no disponible | Apache-2.0 | GGUF |
+| Darwin-180B-RSI-R3 | 180B (familia) | no disponible | no disponible | no disponible | no disponible |
+| Qwen3.8-Flash | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La informacion proporcionada no incluye especificaciones de contexto, rendimiento ni licencia de los modelos comparables, por lo que la comparativa queda limitada a los datos de la familia Darwin y sus referencias en SuperCLUE.
 
 ## Limitaciones y advertencias
 
-- Idiomas: la model card no publica una lista formal de idiomas soportados; el ajuste declarado es en coreano, y el rendimiento en castellano no esta documentado ni evaluado.
-- Cuantizacion agresiva: las builds IQ1_M y Q2_K implican perdida de calidad frente al checkpoint original; el autor solo avala Q4_K_M como la de mayor calidad medida, y unicamente en coreano.
-- Sin benchmarks publicos: no hay cifras de MMLU, HumanEval, GSM8K ni evaluaciones de alucinacion, sesgo o seguridad, lo que dificulta la comparacion objetiva con alternativas.
-- Compatibilidad de runtime fragil: requiere una build de llama.cpp con soporte qwen35moe; el autor no proporciona un hash o version exacta para todas las mediciones, y advierte que el mismo formato no garantiza soporte en todas las apps o versiones.
-- Memoria: los tamanos de archivo no equivalen al consumo de proceso; el contexto, los buffers del runtime y el sistema operativo anaden consumo, y una configuracion ajustada puede provocar errores de memoria.
-- Uso en telefono: este repositorio no contiene las builds para movil; usar estos ficheros en un telefono no esta garantizado y el autor remite a repositorios separados.
-- Atribucion: aunque la licencia es Apache-2.0, la model card incluye una seccion "License and attribution" que conviene revisar antes de redistribuir.
-- Procedencia del ajuste: se desconoce la composicion del dataset de entrenamiento y si hubo filtrado de datos toxicos o de seguridad, lo que limita las garantias para produccion en dominios sensibles.
+- No hay datos publicados de benchmarks especificos de este modelo; los resultados de SuperCLUE corresponden a Darwin-180B-RSI-R3, no a POCKET-35B.
+- La longitud de contexto no esta documentada, lo que dificulta planificar cargas de trabajo con ventanas largas.
+- El ajuste esta orientado a coreano ("Korean-tuned"); el rendimiento en castellano u otros idiomas no esta verificado.
+- Los builds de baja precision (IQ1_M, Q2_K) pueden degradar la calidad de forma notable; el editor recomienda Q2_K como equilibrio, pero no publica metricas de perplejidad por build.
+- Riesgo de alucinacion inherente a los modelos generativos; no se documentan evaluaciones de factualidad.
+- Sesgos conocidos: no disponibles en la informacion.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base Darwin-36B-Opus y su procedencia (herencia de capas de Qwen3.8-Flash-Next) deben verificarse por posibles obligaciones de atribucion; la model card remite a su seccion "License and attribution".
+- Requiere una build de llama.cpp con soporte `qwen35moe`; builds antiguas no cargaran el modelo.
+- Las cifras de RAM son guias del editor, no requisitos medidos de forma independiente.
+- El repositorio contiene builds de modelo completo para PC; no debe confundirse con los derivados moviles de ~5 GB.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/FINAL-Bench/POCKET-35B-GGUF
-- Ficheros del repositorio: https://huggingface.co/FINAL-Bench/POCKET-35B-GGUF/tree/main
-- Modelo base Darwin-36B-Opus: https://huggingface.co/FINAL-Bench/Darwin-36B-Opus
+- Archivos y descargas: https://huggingface.co/FINAL-Bench/POCKET-35B-GGUF/tree/main
+- Guia de instalacion: https://vidraft.net/p/pocket.html?model=pocket_35b
+- Modelo base: https://huggingface.co/FINAL-Bench/Darwin-36B-Opus
+- POCKET-27B-GGUF: https://huggingface.co/FINAL-Bench/POCKET-27B-GGUF
 - POCKET-26B-GGUF: https://huggingface.co/FINAL-Bench/POCKET-26B-GGUF
 - POCKET-Darwin-180B-GGUF: https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF
-- POCKET-KR-GGUF (derivado coreano para telefono): https://huggingface.co/FINAL-Bench/POCKET-KR-GGUF
-- POCKET-KR-MLX (derivado coreano para Apple MLX): https://huggingface.co/FINAL-Bench/POCKET-KR-MLX
-- POCKET-EN-GGUF (derivado ingles para telefono): https://huggingface.co/FINAL-Bench/POCKET-EN-GGUF
-- Guia de instalacion del autor: https://vidraft.net/p/pocket.html?model=pocket_35b
-- Build de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md
-- Documentacion de carga de modelos en llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/docs/models.md
-- CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/guides/cli
-- Integracion GGUF con Ollama: https://huggingface.co/docs/hub/ollama
+- POCKET-KR-GGUF (movil): https://huggingface.co/FINAL-Bench/POCKET-KR-GGUF
+- POCKET-KR-MLX (movil): https://huggingface.co/FINAL-Bench/POCKET-KR-MLX
+- POCKET-EN-GGUF (movil): https://huggingface.co/FINAL-Bench/POCKET-EN-GGUF
+- Darwin-180B-RSI-R3: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3
+- SuperCLUE: https://www.superclueai.com/homepage

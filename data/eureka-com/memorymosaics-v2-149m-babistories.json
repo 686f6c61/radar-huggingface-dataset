@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Eureka-COM/MemoryMosaics-v2-149M-BabiStories",
+  "slug": "eureka-com-memorymosaics-v2-149m-babistories",
+  "author": "Eureka-COM",
+  "url": "https://huggingface.co/Eureka-COM/MemoryMosaics-v2-149M-BabiStories",
+  "created_at": "2026-11-18T00:29:51.000Z",
+  "updated_at": "2026-11-18T01:59:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "memory-mosaics",
+    "from-scratch",
+    "babistories",
+    "research",
+    "en",
+    "arxiv:2507.03285",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 148594128,
+  "parameters_human": "148.6M",
+  "storage_bytes": 594513697,
+  "storage_human": "595 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

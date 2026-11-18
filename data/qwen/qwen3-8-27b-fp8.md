@@ -2,83 +2,93 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8 es la versión cuantizada en FP8 del modelo Qwen3.8-27B, desarrollado por Alibaba Qwen. Se trata de un modelo de lenguaje causal con encoder de visión, de arquitectura híbrida densa que combina atención lineal (Gated DeltaNet) con atención clásica (Gated Attention), diseñado para tareas de razonamiento, codificación, trabajo profesional y ejecución de agentes de larga duración. El modelo base tiene 27.781 millones de parámetros y una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.000.000. Esta versión FP8 reduce el tamaño del repositorio a 30,9 GB, lo que permite su ejecución en una sola GPU de gama alta, manteniendo un rendimiento casi idéntico al original según la documentación oficial.
+Qwen3.8-27B-FP8 es la versión cuantizada en FP8 del modelo Qwen3.8-27B, desarrollado por el equipo Qwen (Alibaba). Se trata de un modelo de lenguaje causal denso de 27B parámetros con codificador de visión integrado, lo que lo convierte en un modelo nativo vision-language capaz de procesar imágenes y vídeos además de texto. La cuantización FP8 con granularidad fina y bloques de 128 permite reducir el espacio de pesos a aproximadamente 30,9 GB manteniendo, según el autor, métricas de rendimiento casi idénticas al modelo original en BF16.
 
-La relevancia de este lanzamiento radica en que Qwen3.8 es la generación más capaz de la familia abierta de Qwen hasta la fecha, e incorpora mejoras sustanciales en capacidades de agente, comprensión de imágenes y vídeo, y control flexible del razonamiento. Al estar publicada bajo licencia Apache 2.0 y ser compatible con los principales motores de inferencia (Transformers, vLLM, SGLang, TokenSpeed), se posiciona como una opción atractiva para despliegues en producción tanto en la nube como en hardware local.
+La arquitectura combina capas de atención lineal (Gated DeltaNet) con capas de atención con compuerta (Gated Attention) en un patrón híbrido de 64 capas, e incorpora Multi-Token Prediction (MTP) entrenado con múltiples pasos. El contexto nativo es de 262.144 tokens, extensible hasta 1.000.000, lo que lo posiciona como una opción adecuada para tareas de agente de largo horizonte y comprensión de documentos extensos o vídeos de larga duración.
+
+Su relevancia actual radica en que ofrece capacidades de codificación, trabajo profesional, investigación y ejecución agéntica propias de la generación Qwen3.8 en un modelo denso, compacto y desplegable, con licencia Apache 2.0 y compatibilidad con Transformers, vLLM, SGLang y TokenSpeed.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Causal Language Model con Vision Encoder, híbrido denso (Gated DeltaNet + Gated Attention) |
-| Parametros totales | 27.781.427.952 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262.144 tokens nativo, extensible hasta 1.000.000 |
-| Tipos de cuantizacion | FP8 (bloque 128), BF16, NVFP4 W4A4 (según SGLang) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer causal híbrido con codificador de visión; 64 capas con layout 16 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)) |
+| Parametros totales | 27.781.427.952 (27B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens nativo; extensible hasta 1.000.000 |
+| Tipos de cuantizacion | FP8 con granularidad fina y tamaño de bloque 128 (este repositorio); el modelo base admite otras cuantizaciones no detalladas |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (también compatible con GGUF vía conversión) |
+| Formato de pesos | safetensors (formato Transformers) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-27B es un modelo denso con una arquitectura híbrida que intercala bloques de atención lineal (Gated DeltaNet) con bloques de atención clásica (Gated Attention). El layout interno es 16 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)), con 64 capas en total. La dimensión oculta es 5120, con 48 cabezas de atención lineal para V y 16 para QK (dimensión 128), y 24 cabezas Q y 4 cabezas KV para la atención clásica (dimensión 256). El embedding de tokens tiene un tamaño de 248.320 (padded). Además, el modelo incorpora Multi-Token Prediction (MTP) entrenado con múltiples pasos, lo que mejora la eficiencia de decodificación.
+El modelo es un transformer causal denso con codificador de visión. La dimensión oculta es 5120, con embedding de tokens de 248.320 (con padding) y salida LM del mismo tamaño. Las 64 capas siguen un layout híbrido: por cada bloque de 16 capas, tres capas usan Gated DeltaNet (atención lineal con 48 cabezas para V y 16 para QK, dimensión de cabeza 128) y una capa usa Gated Attention (24 cabezas para Q, 4 para KV, dimensión de cabeza 256, dimensión RoPE 64). La FFN tiene dimensión intermedia de 17.408. Esta combinación de atención lineal y atención completa reduce el coste de cómputo en contextos largos manteniendo calidad de atención.
 
-El entrenamiento comprende una fase de pre-entrenamiento y otra de post-entrenamiento, pero no se han publicado detalles específicos sobre el número de tokens, la composición del dataset ni el uso de RLHF o DPO en la información disponible. La cuantización FP8 de este repositorio utiliza un esquema de grano fino con bloque de tamaño 128, y según la documentación, las métricas de rendimiento son casi idénticas a las del modelo original.
+El entrenamiento pasa por fases de pre-entrenamiento y post-entrenamiento; la model card no detalla el número de tokens ni la composición exacta del dataset, ni especifica si se emplearon RLHF o DPO. Sí se indica que el modelo incorpora Multi-Token Prediction (MTP) entrenado con múltiples pasos, una innovación que puede acelerar la decodificación. La versión FP8 emplea cuantización fina por bloques de 128, técnica que preserva la precisión numérica en pesos y activaciones con menor degradación que esquemas de cuantización más agresivos.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo, con modo de pensamiento (thinking mode) activado por defecto y desactivable por petición.
-- Comprensión de imágenes y vídeo de forma nativa, incluyendo diagramas STEM, documentos y vídeos de hasta una hora de duración.
-- Ejecución de agentes autónomos con planificación de largo horizonte y manejo de feedback del entorno.
-- Control flexible del razonamiento mediante el parámetro `reasoning_effort` y retención del contexto de razonamiento histórico con `preserve_thinking`.
-- Soporte de tool calling y function calling (implícito en las capacidades de agente, aunque no se detalla explícitamente en la documentación).
-- Capacidades multilingües no especificadas en la información disponible.
-- Compatibilidad con múltiples motores de inferencia: Transformers, vLLM, SGLang y TokenSpeed.
+- Generación de texto y razonamiento complejo, con modo de pensamiento (thinking) activado por defecto y desactivable por petición.
+- Control flexible del razonamiento mediante `reasoning_effort` y retención del contexto de razonamiento histórico con `preserve_thinking`.
+- Comprensión nativa de imágenes y vídeos: diagramas STEM, documentos y vídeos de escala horaria.
+- Codificación y tareas de trabajo profesional e investigación.
+- Ejecución agéntica de largo horizonte: planificación autonoma y manejo de retroalimentación del entorno.
+- Compatibilidad con harnesses y herramientas de desarrollo populares para integración en stacks existentes.
+- Soporte de tool calling / function calling: no se detalla explícitamente en la información disponible, aunque la orientación agéntica y la mención de "official built-in tools" en la versión alojada sugieren compatibilidad; tratar como no confirmado.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de programación en producción: el modelo puede generar, revisar y depurar código en múltiples lenguajes, integrándose en pipelines de CI/CD mediante su API y soporte de tool calling. Su contexto de 262K tokens permite manejar repositorios completos o archivos de gran tamaño.
-- Agente de automatización de tareas empresariales: gracias a su capacidad de planificación multi-paso y manejo de feedback, puede ejecutar flujos de trabajo complejos como gestión de correos, generación de informes o interacción con APIs externas.
-- Análisis de documentos técnicos y científicos: su comprensión de imágenes y vídeo permite extraer información de gráficos, diagramas y páginas escaneadas, útil en investigación y consultoría.
-- Soporte al cliente con contexto largo: puede mantener conversaciones multi-turno con historial extenso (hasta 1M tokens con extensión), gestionando consultas complejas y derivando a herramientas externas cuando es necesario.
-- Generación de contenido multimedia: al entender imágenes y vídeo, puede describir, resumir o transcribir contenido audiovisual, útil para accesibilidad o moderación de contenido.
-- Investigación y razonamiento matemático: su capacidad de razonamiento profundo (thinking mode) lo hace adecuado para resolver problemas de matemáticas, física o lógica, con la opción de ajustar el esfuerzo de razonamiento según la complejidad.
+- Atención al cliente automatizada: con 262.144 tokens de contexto nativo, el modelo puede mantener conversaciones multi-turno con historial extenso y documentación de producto adjunta sin truncar información.
+- Generación de código en producción: su enfoque en codificación y tareas agénticas de terminal permite integrarlo en pipelines de CI/CD para generación, revisión y corrección automatizada de parches.
+- Análisis de documentos técnicos y diagramas: al ser vision-language nativo, puede interpretar diagramas STEM, tablas e imágenes embebidas en informes de ingeniería junto con el texto circundante.
+- Procesamiento de vídeos de larga duración: la ventana extensible hasta 1M tokens y el contexto nativo de 262K permiten analizar vídeos de escala horaria para resumen, extracción de eventos o control de calidad.
+- Agentes autonómicos de investigación: el modelo está diseñado para llevar tareas multi-paso hasta su finalización con mayor fiabilidad, útil en pipelines de búsqueda, síntesis y verificación de fuentes.
+- Asistencia a trabajo profesional: redacción de informes, extracción estructurada de documentación legal o financiera y resumen de reuniones con contexto largo.
+- Despliegue en infraestructura propia con vLLM, SGLang o TokenSpeed: la cuantización FP8 reduce el requisito de memoria a ~31 GB, lo que facilita servir el modelo en una sola GPU de 40-48 GB.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de benchmarks comparativos, pero la información proporcionada está incompleta (solo se muestra la cabecera y la primera fila de la categoría "Coding" con el benchmark "Agentic terminal coding", sin valores numéricos). No se han publicado resultados completos en la información disponible. Se recomienda consultar la documentación oficial de Qwen para obtener las cifras detalladas.
+La model card incluye una tabla comparativa con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer-30B y Opus4.6 Max, pero los valores numéricos concretos no están disponibles en la información proporcionada (la tabla aparece truncada). No se han publicado resultados de benchmarks completos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización FP8, el modelo ocupa aproximadamente 30,9 GB en disco, por lo que se necesita al menos 32 GB de VRAM para cargar los pesos y el overhead de inferencia. En BF16, el requisito sube a ~54 GB.
-- GPU recomendadas: según la documentación de SGLang, puede ejecutarse en una sola GPU H200, RTX PRO 6000, RTX 5090 o DGX Spark. También es viable en A100 80GB o RTX 4090 24GB (con FP8 y optimizaciones de memoria).
-- En consumer GPU: cabe en RTX 4090 (24 GB) con FP8 y técnicas de offloading, aunque con limitaciones de velocidad. Para un rendimiento óptimo se recomienda una GPU con 32 GB o más.
-- Opciones de despliegue: vLLM, SGLang, Transformers, TokenSpeed, y también es compatible con Ollama y llama.cpp mediante conversión a GGUF.
-- Latencia y throughput: no se han publicado cifras oficiales, pero al ser un modelo denso de 27B con MTP, se espera una latencia de decodificación competitiva en GPUs de alta gama. El coste por millón de tokens en una GPU única se estima en el mismo rango que las APIs de modelos pequeños, según análisis de terceros.
+- VRAM estimada para inferencia: aproximadamente 31 GB solo para los pesos en FP8; con caché KV y overhead de runtime, se recomienda al menos 40-48 GB para contextos moderados.
+- GPU recomendadas: A100 40GB/80GB, H100 80GB, L40S 48GB; para contextos muy largos (262K-1M) se recomienda H100 80GB o múltiples GPU.
+- GPU de consumo: el modelo no cabe en GPU consumer de 24 GB (RTX 4090) en FP8 sin offloading o cuantización adicional a 4 bits; podría caber en RTX 5090 (32 GB) solo para pesos, con margen muy ajustado.
+- Opciones de despliegue: Transformers, vLLM, SGLang, TokenSpeed; llama.cpp/Ollama no se mencionan como compatibles con este repositorio FP8.
+- Latencia y throughput: no disponibles; la presencia de MTP (Multi-Token Prediction) sugiere decodificación especulativa nativa que puede mejorar el throughput, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Cuantizaciones | Notas |
-|---|---|---|---|---|---|
-| Qwen3.8-27B (FP8) | 27,78B | 262K (ext. 1M) | Apache 2.0 | FP8, BF16, NVFP4 | Última generación, visión-lenguaje, agente |
-| Qwen3.5-27B (FP8) | ~27B | No disponible | Apache 2.0 | FP8 | Generación anterior, sin visión nativa |
-| Qwen3.6-27B | ~27B | No disponible | Apache 2.0 | No disponible | Mencionado en benchmarks, sin detalles públicos |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Qwen3.8-27B-FP8 | 27B (denso) | 262K nativo, hasta 1M | Apache 2.0 | Hugging Face, abierto |
+| Qwen3.6-27B | 27B (denso) | no disponible | no disponible | Referenciado en benchmarks del autor |
+| Muse Glimmer-30B | 30B | no disponible | no disponible | Referenciado en benchmarks del autor |
+| Qwen3.7-Plus | no disponible | no disponible | no disponible | Referenciado en benchmarks del autor |
 
-No se dispone de datos suficientes para comparar con modelos de otros fabricantes (como Muse Glimmer-30B u Opus4.6 Max) en la información proporcionada.
+No se dispone de datos de rendimiento numéricos para establecer una comparación cuantitativa fiable; la comparativa se limita a parámetros, contexto y licencia según la información disponible.
 
 ## Limitaciones y advertencias
 
-- No se han publicado detalles sobre sesgos o alucinaciones específicos del modelo; como todo LLM, puede generar contenido incorrecto o inventado, especialmente en tareas de razonamiento complejo.
-- La ventana de contexto de 262K tokens es nativa, pero la extensión a 1M puede requerir técnicas de interpolación de posición o hardware adicional.
-- Los idiomas soportados no están especificados; se asume un soporte multilingüe similar a otros modelos Qwen, pero no confirmado.
-- La cuantización FP8 puede introducir ligeras pérdidas de precisión en comparación con BF16, aunque la documentación afirma que las métricas son casi idénticas.
-- Para uso comercial, la licencia Apache 2.0 permite uso libre, pero es recomendable revisar los términos de la política de uso aceptable de Qwen.
-- El modelo requiere hardware con al menos 32 GB de VRAM para un despliegue cómodo; en GPUs de 24 GB puede ser necesario usar offloading o cuantización más agresiva, con impacto en rendimiento.
+- Sesgos conocidos: no documentados en la información proporcionada; se recomienda evaluar sesgos en el dominio de despliegue antes de producción.
+- Riesgo de alucinación: inherente a modelos generativos de esta escala; el modo thinking activado por defecto puede mitigar parcialmente errores en tareas de razonamiento, pero no elimina el riesgo.
+- Limitaciones de contexto: aunque el contexto nativo es 262K y extensible a 1M, la extensión a 1M puede degradar calidad y aumentar latencia; validar en el caso de uso concreto.
+- Idiomas soportados: no disponibles; no se puede garantizar cobertura multilingüe más allá de lo observado empíricamente.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.8-27B y cualquier componente de terceros.
+- La cuantización FP8, aunque fina, puede introducir pequeñas diferencias respecto al modelo BF16; el autor afirma rendimiento casi idéntico, pero no aporta métricas comparativas.
+- La versión alojada en Qwen Cloud incluye contexto de 1M por defecto y herramientas integradas; la versión open-weights no necesariamente replica esas capacidades de producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
-- Documentación de despliegue con SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B
-- Guía de especificaciones y hardware (Yottalabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
-- Guía de ejecución local (SWFTE): https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026
-- Información general de Qwen 3.8 (OpenLM): https://openlm.ai/qwen3.8/
+- Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Qwen Cloud (servicio alojado): https://www.qwencloud.com
+- Overview del modelo alojado: https://www.qwencloud.com/models/qwen3.8-27b
+- Chat oficial Qwen: https://chat.qwen.ai/
+- Web oficial Qwen: https://qwen.ai/home
+- Qwen Chat: https://qwen.ai/qwenchat
+- Wikipedia (EN): https://en.wikipedia.org/wiki/Qwen
+- Wikipedia (FR): https://fr.wikipedia.org/wiki/Qwen

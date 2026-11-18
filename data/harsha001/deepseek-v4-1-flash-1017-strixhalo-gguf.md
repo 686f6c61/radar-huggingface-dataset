@@ -1,115 +1,93 @@
 # Harsha001/DeepSeek-V4.1-Flash-1017-StrixHalo-GGUF
 
 ## Resumen
+DeepSeek-V4.1-Flash-1017-StrixHalo-GGUF es una compilación cuantizada y podada del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario Harsha001 bajo el marco de trabajo ROCmFPX. Su objetivo es hacer viable la ejecución de un modelo Mixture-of-Experts (MoE) de gran escala (657.884.565.104 parámetros totales) en una única máquina AMD Ryzen AI Max+ 395 con 128 GB de memoria unificada (plataforma Strix Halo), apuntando a una ventana de contexto de 64K.
 
-DeepSeek-V4.1-Flash-1017-StrixHalo-GGUF es una compilación comunitaria de cuantización del modelo DeepSeek-V4.1-Flash-1017 (DeepSeek, licencia MIT), publicada por el usuario Harsha001 dentro del proyecto ROCmFPX. Su objetivo no es ofrecer una versión más ligera del modelo, sino hacerlo ejecutable en una única máquina AMD Ryzen AI Max+ 395 (Strix Halo) con 128 GB de memoria unificada, algo imposible con el modelo original: el checkpoint completo, con 384 expertos enrutados por capa, ocupa unos 510 GB en su formato nativo MXFP4 y sigue necesitando unos 230 GB incluso con las cuantizaciones estándar más agresivas.
+Para lograrlo, el autor aplica una poda de expertos enrutados (de 384 expertos por capa conserva un subconjunto, con variantes E320 y E277) y reutiliza cuantizaciones de 1 a 2 bits generadas con el método GSQ-RCO de ISTA-DASLab. El resultado son dos builds (`IQ1_M-E320` e `IQ2_XXS-E277`) en formato GGUF que ocupan unos 215 GB en disco, de los cuales solo unos 97 GiB deben residir en memoria de GPU; la tabla Engram (110,6 GB) permanece en el SSD y se lee bajo demanda.
 
-La receta combina tres piezas: poda de expertos por capa según el criterio REAP (se conservan 320 o 277 de los 384 expertos), cuantización de los expertos con el método GSQ-RCO de ISTA-DASLab (1,75 y 2 bits por peso aproximadamente) y externalización de la tabla Engram (110,6 GB en IQ4_NL) a un SSD, de modo que solo unos 97,3 GiB tienen que residir en memoria de GPU. El resultado son dos builds con perplejidad de 3,40 y 3,59 frente al 2,01 del modelo completo.
-
-Es relevante ahora porque demuestra un patrón de despliegue de modelos MoE de escala frontera en hardware de consumo profesional con memoria unificada, a costa de una pérdida de calidad medible y con kernels de 1-2 bits todavía sin optimizar. El propio autor lo etiqueta como versión de prueba comunitaria: verificado en CPU, no ejecutado aún en un Strix Halo real.
+La versión actual (1 de noviembre de 2026) incorpora la edición "uncensored" de AtomicChat, que elimina las negativas del modelo mediante la reflexión de una dirección de rechazo en 82 tensores, manteniendo los expertos enrutados intactos. Es una versión de prueba comunitaria: se ha validado en CPU y en una NVIDIA GB10 con CUDA, pero no se ha ejecutado todavía en un Strix Halo real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con expertos enrutados (384 expertos por capa en el modelo completo) y tabla de búsqueda Engram |
-| Parametros totales | 657.884.565.104 (~657,9 B) |
+| Arquitectura | Transformer MoE con expertos enrutados y tabla Engram (según model card) |
+| Parametros totales | 657.884.565.104 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 65.536 tokens (64K) objetivo en estos builds; contexto nativo del modelo base: no disponible |
-| Tipos de cuantizacion | IQ1_M (expertos, build E320), IQ2_XXS (expertos, build E277), Q8_0 (atención, router, shared expert, embeddings), IQ4_NL (tabla Engram), MXFP4 (modelo completo de referencia) |
+| Longitud de contexto | 64K (objetivo declarado) |
+| Tipos de cuantizacion | GGUF IQ1_M (E320) e IQ2_XXS (E277); tensores editados en Q8_0 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF, 4 shards por build (3 de modelo + 1 de Engram) |
+| Formato de pesos | GGUF (shards; shard 4 = tabla Engram) |
 
 ## Arquitectura y entrenamiento
+El modelo base es un transformer MoE con 384 expertos enrutados por capa y una tabla Engram de búsqueda de 110,6 GB. Esta compilación no reentrena el modelo: parte de los pesos de DeepSeek-V4.1-Flash-1017 y aplica una poda de expertos por capa (conservando los más utilizados) junto con la cuantización GSQ-RCO de ISTA-DASLab en 1-2 bits. El autor indica que el modelo completo necesitaría unos 230 GB incluso con las cuantizaciones estándar más pequeñas, de ahí la necesidad de la poda.
 
-El modelo base es un transformer con mezcla de expertos: 384 expertos enrutados por capa, más atención, router, shared expert y embeddings. Sobre ese checkpoint original, esta ficha aplica un proceso de compresión en tres etapas. Primero, un ranking por capa con el criterio REAP (peso del router multiplicado por el tamaño de salida del experto, promediado sobre los tokens que lo activan), medido sobre 131.072 tokens de texto y código mezclados; con ese ranking se generan las listas de expertos conservados, disponibles en el directorio `keep/`. El build de 320 expertos retiene el 97,5 % del peso de enrutado y el de 277 retiene el 94,4 %; 47 expertos no se activaron nunca durante la calibración.
-
-Segundo, los expertos conservados se copian sin modificar desde la cuantización de ISTA-DASLab, que aplica GSQ (Gumbel-Softmax Quantization, arXiv:2604.18556) y RCO (Riemannian Constrained Optimization, arXiv:2605.00649) para bajar a 1-2 bits por peso. El resto de componentes (atención, router con su sesgo recortado a los mismos expertos, shared expert y embeddings) se cuantiza a Q8_0 desde el checkpoint original. Tercero, la tabla Engram se guarda en IQ4_NL (110,6 GB) y el runtime la mantiene en memoria de host, leyéndola de forma perezosa desde el fichero.
-
-No se documentan en esta información los datos de preentrenamiento del modelo base (número de tokens, composición del corpus, si hubo RLHF o DPO). La model card de DeepSeek-V4.1-Flash-1017 en ModelScope lo describe como una actualización menor de DeepSeek-V4.1-Flash con mejoras en razonamiento, código, tareas agénticas y benchmarks visuales, además de reducción del tiempo de ejecución y de la longitud de salida. La plantilla de chat va embebida en el GGUF, adaptada de la release de Unsloth para V4.1.
+Sobre esa base se aplica la edición "uncensored" de AtomicChat: una dirección de rechazo medida sobre los pesos originales de DeepSeek se refleja fuera de las capas que escriben en el flujo residual. Concretamente se modifican 82 tensores (40 capas de `attn_output_b`, 40 de `ffn_down_shexp` y 2 de `engram_kv`) añadiendo un adaptador de rango 1 a fuerza 2,0 y reempaquetando cada tensor en Q8_0. Los expertos enrutados, el router y la tabla Engram no se alteran. El autor reconoce que la poda y la cuantización de muy bajo bit conllevan una pérdida de calidad medible en perplejidad.
 
 ## Capacidades
-
-- Generación de texto conversacional: el repositorio incluye plantilla de chat embebida y está etiquetado como `conversational` y `text-generation`.
-- Razonamiento y código: el modelo base declara mejoras sustanciales en razonamiento, programación y tareas agénticas respecto a DeepSeek-V4.1-Flash.
-- Contexto largo: los builds apuntan a 65.536 tokens, suficiente para documentos extensos o repositorios de código medianos en una sola ventana.
-- Procesamiento de código y texto técnico: la calibración de expertos y la medición de perplejidad se hicieron sobre mezcla de Wikipedia en inglés y código fuente.
-- Soporte de tool calling / function calling: no documentado en este repositorio.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente aquí; el modelo base declara mejoras en tareas agénticas.
-- Capacidades multilingües: no disponible (el campo de idiomas no está informado).
-- Visión: no disponible en este repositorio; el pipeline declarado es text-generation, aunque la model card del base menciona benchmarks visuales.
-- Modo thinking u otras capacidades especiales: no disponible.
+- Generación de texto conversacional multi-turno (pipeline `text-generation`, tag `conversational`).
+- Razonamiento y respuesta a instrucciones, con modo "thinking" desactivable (usado en las pruebas del autor con `thinking off`).
+- Ejecución de un MoE de gran escala en hardware de consumo con memoria unificada (Strix Halo, 128 GB).
+- Comportamiento "uncensored": no rechaza peticiones dañinas en las pruebas realizadas (3% de rechazos en JailbreakBench con IQ1_M-E320, 2% con IQ2_XXS-E277).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Tool calling, function calling, agentes o visión: no disponible en la información proporcionada.
 
 ## Casos de uso
-
-- Asistente de código en estación de trabajo local: con 64K de contexto y una GPU integrada de 128 GB de memoria unificada, permite indexar y consultar módulos completos sin enviar código propietario a la nube; encaja en equipos con requisitos de confidencialidad.
-- Análisis de documentación extensa offline: resúmenes y extracción de datos sobre contratos, informes o manuales de decenas de miles de tokens en entornos sin conectividad, donde el coste de la calidad perdida se compensa con la ausencia de fuga de datos.
-- Prototipado de agentes multi-paso: usar el build E320 como sustituto local del modelo completo para validar flujos de razonamiento y de orquestación antes de mover la carga a infraestructura con el modelo nativo.
-- Investigación en cuantización de baja precisión: los dos builds (320 y 277 expertos) permiten estudiar empíricamente la relación entre retención de peso de enrutado (97,5 % frente a 94,4 %) y perplejidad (3,40 frente a 3,59) sobre el mismo corpus.
-- Laboratorio de pruebas de kernels: el fork ROCmFPX admite los tipos IQ1_M e IQ2_XXS en Vulkan; este repositorio sirve para medir velocidad y consumo antes de que los kernels estén optimizados.
-- Generación de borradores y tareas de baja criticidad: clasificación, reescritura o generación de documentación interna donde un aumento de perplejidad de 2,01 a 3,40 es aceptable frente a la alternativa de no disponer de inferencia local.
-- Escenarios air-gapped de defensa o industria: inferencia completamente on-device con pesos MIT, sin dependencia de API externa, siempre que se acepte el rendimiento reducido y la naturaleza de prueba del build.
+- Inferencia local de un MoE de 657B parámetros en una única máquina Strix Halo: el recorte a ~97 GiB en GPU y la tabla Engram en SSD permiten ejecutar un modelo que de otro modo requeriría ~230 GB o más, ideal para laboratorios con hardware AMD de gama alta de escritorio.
+- Investigación sobre poda de expertos y cuantización extrema: las variantes E320 y E277 permiten estudiar el compromiso entre expertos conservados, bits por peso y perplejidad en un modelo real.
+- Evaluación de técnicas de abliteration: la edición de AtomicChat sobre 82 tensores y su medición de KL divergence (~0,012) sirven como caso de estudio reproducible de modificación de comportamiento sin reentrenamiento.
+- Experimentación con contextos largos (objetivo 64K) en tareas de resumen o análisis de documentos extensos, siempre que se validen la calidad y la velocidad en el hardware objetivo.
+- Pruebas de seguridad y alineación: al ser una variante sin rechazos, es útil para medir la eficacia de filtros externos y estudiar jailbreaks en entornos controlados.
+- Desarrollo y benchmarking de stacks de inferencia para AMD (ROCm, llama.cpp con soporte GGUF, `llama-server`), comparando rendimiento entre CPU, CUDA y Strix Halo.
+- Prototipado de asistentes conversacionales autoalojados donde la privacidad impide usar APIs en la nube, asumiendo las limitaciones de calidad de la cuantización de 1-2 bits.
 
 ## Benchmarks y rendimiento
+El autor publica métricas de la edición uncensored frente a la versión regular del mismo tamaño, no benchmarks estándar de capacidad (MMLU, HumanEval, GSM8K no aparecen en la información disponible).
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor solo reporta perplejidad, medida sobre 8 fragmentos de 2.048 tokens de texto mixto de Wikipedia en inglés y código fuente, en CPU y con el mismo texto para las tres filas:
+| Build | JailbreakBench (100 peticiones dañinas): rechazos | XSTest (250 prompts seguros): rechazos | KL divergence vs. regular | Mismo token top | Cambio de perplejidad |
+|---|---|---|---|---|---|
+| Regular IQ1_M-E320 | 98% | 8,4% | - | - | - |
+| Uncensored IQ1_M-E320 | 3% | 0% | 0,012 | 96,3% | +0,1% |
+| Uncensored IQ2_XXS-E277 | 2% | 0% | 0,014 | 95,7% | +0,35% |
 
-| Build | Expertos conservados | Cuantización de expertos | Perplejidad (menor es mejor) | Parte en GPU |
-|---|---|---|---|---|
-| IQ1_M-E320 (recomendado) | 320 de 384 | GSQ-RCO IQ1_M | 3,40 | 104,5 GB (97,3 GiB) |
-| IQ2_XXS-E277 | 277 de 384 | GSQ-RCO IQ2_XXS | 3,59 | 104,2 GB (97,1 GiB) |
-| Modelo completo (referencia) | 384 | MXFP4 nativo | 2,01 | 510 GB |
-
-Dato relevante del autor: conservar más expertos a 1,75 bits rinde mejor que conservar menos a 2 bits. No hay cifras de throughput ni de latencia publicadas; el autor advierte que la velocidad inicial será baja porque los kernels de 1-2 bits en Vulkan no están ajustados.
+Mediciones de AtomicChat sobre los ficheros GSQ-RCO sin podar: rechazos en peticiones dañinas en inglés del 89% al 0% (IQ1_M) y del 85% al 0% (IQ2_XXS); MMLU-500 del 80,2% al 80,6% y del 83% (dato truncado en la información disponible). No se han publicado resultados de benchmarks estándar completos en la información disponible.
 
 ## Requisitos de hardware
-
-- Memoria: máquina con 128 GB de memoria unificada (AMD Ryzen AI Max+ 395, Strix Halo). La GPU debe poder reservar unos 100 GiB; en Windows hay que fijar el mayor tamaño de memoria gráfica en BIOS o AMD Software dejando RAM suficiente al sistema, y en Linux elevar el límite GTT.
-- VRAM efectiva: 97,3 GiB para el build E320 y 97,1 GiB para el E277 (atención, router, expertos conservados y embeddings).
-- Memoria de host adicional: 110,6 GB para la tabla Engram, que el runtime coloca siempre en memoria de host incluso con `-ngl 99`.
-- Almacenamiento: cada build ocupa unos 215 GB en disco y el repositorio completo 319,3 GB (dos builds más el fichero Engram). Se recomienda NVMe rápido por la lectura perezosa de Engram.
-- GPU compatibles: el diseño está pensado para Strix Halo (memoria unificada). No se documenta compatibilidad con A100, H100 ni RTX 4090; por tamaño, los builds no caben en GPUs de consumo con 24 GB.
-- Despliegue: `llama-server` del fork ROCmFPX, compilado con `-DGGML_VULKAN=ON`; upstream llama.cpp todavía no soporta DeepSeek-V4.1 (el soporte llega vía PR #30817, incluido en el fork). Comando de referencia: `-ngl 99 -c 65536 --jinja`.
-- Latencia y throughput: no disponibles. No verificado todavía en hardware Strix Halo según el propio autor.
-- Ollama, vLLM o TGI: no documentados para estos ficheros.
+- Memoria: ~97 GiB en GPU/memoria unificada para el modelo (atención, router y expertos conservados); la tabla Engram (110,6 GB) permanece en SSD y no consume VRAM.
+- Almacenamiento: ~215 GB en disco por build descargado (el repositorio completo muestra 528 GB por incluir dos builds y el fichero Engram).
+- Hardware objetivo: AMD Ryzen AI Max+ 395 (Strix Halo) con 128 GB de memoria unificada.
+- Validación realizada: CPU y NVIDIA GB10 con CUDA mediante `llama-server`; no se ha probado aún en Strix Halo según el autor.
+- GPU discretas tipo A100/H100/RTX 4090: no disponible en la información proporcionada; por tamaño, no cabe en GPUs de consumo de 24 GB.
+- Despliegue: llama.cpp / `llama-server` (formato GGUF); compatibilidad con vLLM, TGI u Ollama no confirmada en la información disponible.
+- Latencia y throughput: no disponibles; el autor solicita a la comunidad reportar velocidad y memoria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Expertos | Contexto | Perplejidad | Memoria necesaria | Licencia |
-|---|---|---|---|---|---|---|
-| Este repo, build IQ1_M-E320 | ~657,9 B (totales) | 320 de 384 | 65.536 | 3,40 | ~97,3 GiB GPU + 110,6 GB host | MIT |
-| Este repo, build IQ2_XXS-E277 | ~657,9 B (totales) | 277 de 384 | 65.536 | 3,59 | ~97,1 GiB GPU + 110,6 GB host | MIT |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | ~657,9 B (totales) | 384 de 384 | no disponible | 2,01 | ~510 GB | MIT |
-| DeepSeek-V4.1-Flash-1017 con cuantización estándar mínima | ~657,9 B (totales) | 384 de 384 | no disponible | no disponible | ~230 GB | MIT |
-| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | ~657,9 B (totales) | 384 de 384 | no disponible | no disponible | no disponible | MIT |
-
-No se dispone de datos de benchmarks estándar ni de modelos alternativos de otro fabricante en la información proporcionada que permitan una comparación de rendimiento por tarea.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017 (original) | 657.884.565.104 | no disponible | no disponible | Hugging Face | Requiere ~230 GB incluso en cuantizaciones mínimas estándar |
+| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | 657.884.565.104 | no disponible | no disponible | Hugging Face | Cuantización GSQ-RCO sin poda de expertos |
+| AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF | 657.884.565.104 | no disponible | MIT | Hugging Face | Variante uncensored sin poda; base de esta compilación |
+| Esta ficha (StrixHalo GGUF) | 657.884.565.104 | 64K (objetivo) | MIT | Hugging Face | Poda de expertos + 1-2 bits; ~97 GiB en memoria |
 
 ## Limitaciones y advertencias
-
-- Pérdida de calidad medible: la perplejidad sube de 2,01 (modelo completo) a 3,40 en el build recomendado, un 69 % peor; no es adecuado para tareas donde la precisión sea crítica sin validación adicional.
-- Poda de expertos irreversible: se eliminan entre 64 y 107 expertos por capa y se recorta el router; dominios o idiomas poco representados en los 131.072 tokens de calibración (texto y código en inglés) pueden degradarse más de lo que refleja la perplejidad agregada.
-- Sesgo de calibración: el corpus de calibración es mayoritariamente inglés y código, por lo que el ranking REAP puede no ser óptimo para castellano u otros idiomas.
-- Estado de prueba: el autor indica que el modelo se ha verificado en CPU (carga, respuestas correctas y perplejidad) pero no se ha ejecutado en un Strix Halo real; el rendimiento y el consumo son desconocidos.
-- Dependencia de un fork: requiere ROCmFPX (llama.cpp con soporte DeepSeek-V4.1 y ajustes Vulkan); upstream llama.cpp no lo soporta todavía, lo que complica el mantenimiento y la reproducibilidad.
-- Kernels sin optimizar: los kernels de 1-2 bits en Vulkan no están ajustados, por lo que la velocidad será baja en la primera iteración.
-- Presión de memoria: 97,3 GiB de GPU más 110,6 GB de Engram dejan poco margen en una máquina de 128 GB; cualquier proceso gráfico adicional puede provocar fallos de asignación.
-- Dependencia de almacenamiento: la tabla Engram se lee del SSD de forma perezosa; un disco lento degrada directamente la latencia.
-- Alucinación: no hay evaluación específica en la información disponible y la cuantización agresiva tiende a incrementar el riesgo.
-- Licencia: pesos y cuantización de ISTA-DASLab son MIT, lo que permite uso comercial; no se especifica la licencia del fork ROCmFPX ni de los scripts de este repositorio.
-- Idiomas soportados: no declarados, lo que impide garantizar calidad multilingüe en producción.
+- Pérdida de calidad por poda de expertos y cuantización de 1-2 bits; el autor la reconoce explícitamente y planea formatos ROCmFPX de ~2,1 bits para mitigarla.
+- Estado de prueba comunitaria: no verificado en Strix Halo; solo probado en CPU y NVIDIA GB10 con CUDA.
+- Modelo "uncensored": no rechaza peticiones dañinas (3% y 2% de rechazos en JailbreakBench), lo que implica riesgos de uso indebido y la necesidad de filtros externos en producción.
+- Riesgo de alucinación inherente a modelos de lenguaje; no se han publicado evaluaciones de factualidad en la información disponible.
+- Idiomas soportados no documentados; el comportamiento multilingüe no está garantizado.
+- La tabla Engram requiere acceso a SSD durante la inferencia; un almacenamiento lento puede degradar la latencia.
+- Licencia MIT permite uso comercial, pero la responsabilidad sobre el contenido generado y sobre la variante sin rechazos recae en el desplegador.
+- Los tamaños mostrados por Hugging Face (528 GB) corresponden a la descarga completa del repositorio, no al uso de memoria; conviene descargar un solo build.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-StrixHalo-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-StrixHalo-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantización GSQ-RCO de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
-- Fork de runtime ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
-- Página del proyecto y votación de próximas cuantizaciones: https://harshavardhan3002.github.io/ROCmFPX/
-- Paper GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556
-- Paper RCO (Riemannian Constrained Optimization): https://arxiv.org/abs/2605.00649
-- Pull request de soporte DeepSeek-V4.1 en llama.cpp (#30817): https://github.com/ggml-org/llama.cpp/pull/30817
-- Ficha del modelo base en ModelScope: https://modelscope.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Guía de terceros sobre la cuantización GSQ-RCO (no verificada): https://www.stratat.com/en/guides/deepseek-v4-1-flash-1017-gsq-rco-gguf
-- Listado de terceros del modelo en GGUF (no verificado): https://local-ai-zone.github.io/models/deepseek-v4-1-flash-1017.html
+- Variante uncensored de AtomicChat: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
+- Variante uncensored GSQ-RCO de AtomicChat: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
+- Página del proyecto ROCmFPX: https://harshavardhan3002.github.io/ROCmFPX/
+- Paper referenciado (arXiv:2604.18556): https://arxiv.org/abs/2604.18556
+- Paper referenciado (arXiv:2605.00649): https://arxiv.org/abs/2605.00649

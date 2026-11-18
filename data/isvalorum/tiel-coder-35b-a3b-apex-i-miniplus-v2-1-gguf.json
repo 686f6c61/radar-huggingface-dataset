@@ -66,7 +66,7 @@
     "region:us"
   ],
   "likes": 26,
-  "downloads_30d": 4248,
+  "downloads_30d": 4129,
   "trending_score": 10,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
@@ -86,31 +86,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.de/index.html",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google",
-      "url": "https://ipv4.google.com/?hl=de",
-      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
-    },
-    {
-      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
-      "url": "https://support.google.com/websearch/answer/463?hl=de",
-      "snippet": "Öffnen Sie den Browser und rufen Sie www.google.de auf. Ziehen Sie den Tab auf die Schaltfläche \"Startseite\" und lassen Sie ihn …"
-    },
-    {
-      "title": "Google",
-      "url": "https://ipv4.google.com/?hl=de_AT",
-      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
-    },
-    {
-      "title": "Google News",
-      "url": "https://news.google.com/?hl=de",
-      "snippet": "Ausführliche und aktuelle Beiträge - von Google News aus verschiedenen Nachrichtenquellen aus aller Welt zusammengetragen"
-    }
-  ]
+  "sources": []
 }

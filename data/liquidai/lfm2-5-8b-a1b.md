@@ -2,85 +2,96 @@
 
 ## Resumen
 
-LFM2.5-8B-A1B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Liquid AI, diseñado específicamente para despliegue en dispositivos de borde (on-device) como teléfonos, portátiles y hardware de consumo. Forma parte de la familia LFM2.5, que combina arquitecturas híbridas con un entrenamiento extendido y refuerzo para ofrecer un rendimiento competitivo en tareas de instrucción y agentes, a la vez que mantiene un coste computacional reducido gracias a sus 1.500 millones de parámetros activos por paso.
+LFM2.5-8B-A1B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Liquid AI, disenado especificamente para despliegue en dispositivo (on-device) y aplicaciones de asistente personal. Emplea la arquitectura hibrida LFM2, que combina capas convolucionales doblemente con puerta (double-gated conv) con capas de atencion GQA, y cuenta con 8.467.856.832 parametros totales segun los pesos en safetensors, de los cuales aproximadamente 1.500 millones estan activos por token (8.3B totales / 1.5B activos segun la model card). Su ventana de contexto alcanza los 128.000 tokens.
 
-El modelo cuenta con 8.300 millones de parámetros totales (8.467.856.832 según los pesos safetensors), una ventana de contexto de 128.000 tokens y soporte multilingüe para diez idiomas. Está optimizado para encadenar llamadas a herramientas, seguir instrucciones complejas y razonar con cadena de pensamiento explícita, lo que lo convierte en una opción atractiva para asistentes personales y aplicaciones de agentes en entornos con recursos limitados.
+El modelo es la version afinada con razonamiento (reasoning-tuned) de la base LFM2.5-8B-A1B-Base, entrenada sobre 38 billones de tokens y posteriormente sometida a aprendizaje por refuerzo. Soporta diez idiomas (ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues y espanol) y esta optimizado para flujos agénticos, uso de herramientas, salidas estructuradas y asistentes multilingues. Liquid AI lo posiciona como competitivo frente a modelos densos y MoE de mayor tamano en seguimiento de instrucciones y tareas agénticas, con especial enfasis en throughput.
 
-Su relevancia actual radica en que ofrece una compresión de rendimiento comparable a modelos densos y MoE mucho más grandes, con un throughput superior en su clase de tamaño. El modelo se distribuye con pesos abiertos bajo la licencia lfm1.0 y tiene soporte desde el primer día para los principales frameworks de inferencia como llama.cpp, MLX, vLLM y SGLang.
+Su relevancia actual radica en la combinacion de una ventana de contexto amplia, soporte nativo de function calling y un formato de pesos disponible en multiples backends (Transformers, GGUF, ONNX, MLX), ademas de un modelo drafter de decodificacion especulativa (DSpark, 328M) que promete acelerar la decodificacion. La licencia es lfm1.0, de tipo "other", por lo que conviene revisar sus terminos antes de un uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (18 capas double-gated conv + 6 capas GQA) |
-| Parametros totales | 8.467.856.832 (8,3B declarados) |
-| Parametros activos | 1,5B |
+| Arquitectura | Hibrida LFM2: 24 capas (18 double-gated conv + 6 GQA), MoE |
+| Parametros totales | 8.467.856.832 (8.3B) |
+| Parametros activos | 1.5B (segun model card) |
 | Longitud de contexto | 128.000 tokens |
-| Tipos de cuantizacion | GGUF (varias precisiones), ONNX, MLX (8-bit) |
-| Idiomas soportados | inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español |
-| Licencia | lfm1.0 (licencia propia de Liquid AI) |
-| Formato de pesos | safetensors (original), GGUF, ONNX, MLX |
+| Tipos de cuantizacion | GGUF (llama.cpp), ONNX, MLX 8-bit; otras cuantizaciones no disponibles |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es |
+| Licencia | lfm1.0 (license: other) |
+| Formato de pesos | safetensors (nativo), GGUF, ONNX, MLX |
+| Tamano del vocabulario | 128.000 |
+| Presupuesto de entrenamiento | 38 billones de tokens |
+| Parametros de generacion recomendados | temperature 0.2, top_k 80, repetition_penalty 1.05 |
 
 ## Arquitectura y entrenamiento
 
-LFM2.5-8B-A1B utiliza una arquitectura de mezcla de expertos (MoE) híbrida que combina capas convolucionales con doble compuerta (double-gated conv) y capas de atención con consulta agrupada (GQA). En total tiene 24 capas, de las cuales 18 son del tipo double-gated conv y 6 son GQA. Esta combinación permite reducir el coste computacional manteniendo una alta calidad de representación, lo que resulta clave para su despliegue en dispositivos con recursos limitados.
+LFM2.5-8B-A1B se construye sobre la arquitectura hibrida LFM2, que intercala 18 capas convolucionales doblemente con puerta con 6 capas de atencion con query agrupada (GQA) en un total de 24 capas. Esta combinacion busca reducir el coste computacional de la atencion clasica manteniendo la capacidad de modelado de dependencias largas, algo coherente con su ventana de 128.000 tokens. El modelo es de tipo Mixture of Experts, con 8.3B parametros totales y 1.5B activos por token, lo que permite un throughput elevado en CPU y GPU.
 
-El modelo fue pre-entrenado con un presupuesto de 38 billones de tokens y posteriormente afinado mediante aprendizaje por refuerzo (RL) para mejorar sus capacidades de razonamiento y seguimiento de instrucciones. El entrenamiento incluye una fase de ajuste fino supervisado y otra de optimización con RL, lo que le permite generar cadenas de pensamiento explícitas antes de la respuesta final. No se han publicado detalles sobre la composición exacta del dataset ni sobre el uso de técnicas como DPO o RLHF, aunque la mención a "reinforcement learning" en la documentación sugiere que se empleó alguna variante de RL.
+El entrenamiento parte de LFM2.5-8B-A1B-Base, preentrenado sobre 38 billones de tokens, y posteriormente se aplica un ajuste con aprendizaje por refuerzo (reinforcement learning) para obtener la version orientada a razonamiento. La model card menciona que es un modelo de razonamiento con cadena de pensamiento explicita en los turnos del asistente. Liquid AI publica ademas un drafter de decodificacion especulativa (DSpark, 328M) que, emparejado con el modelo principal, promete aproximadamente 2.5x mas velocidad de decodificacion con salidas identicas.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con cadena de pensamiento explícita, activada de forma automática en las respuestas del asistente.
-- Soporte de tool calling / function calling en cuatro pasos: definición de herramientas, llamada a la función (en formato Pythonico entre tokens especiales), ejecución y respuesta final.
-- Capacidades de agente: puede encadenar múltiples llamadas a herramientas y seguir instrucciones complejas en flujos de trabajo de varios pasos.
-- Multilingüe: soporta diez idiomas (inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués y español), lo que permite asistentes multilingües.
-- Salidas estructuradas: puede generar JSON u otros formatos estructurados si se le indica en el prompt del sistema.
-- Modelo de solo texto: no tiene capacidades de visión ni audio.
-- Optimizado para inferencia rápida en CPU y GPU, con soporte nativo para llama.cpp, MLX, vLLM y SGLang.
+- Generacion de texto y razonamiento con cadena de pensamiento explicita antes de la respuesta final.
+- Soporte de function calling en cuatro pasos: definicion de funciones en el system prompt, llamada en formato Pythonico entre tokens especiales `<|tool_call_start|>` y `<|tool_call_end|>`, ejecucion y retorno con rol `tool`, y respuesta final en texto plano.
+- Capacidad de sobrescribir el formato de llamada para emitir JSON en lugar de Python, indicandolo en el system prompt.
+- Flujos agénticos y encadenamiento de multiples llamadas a herramientas.
+- Salidas estructuradas.
+- Asistentes multilingues en diez idiomas.
+- Capacidades de instruccion compleja orientadas a aplicaciones de asistente personal en dispositivo.
+- No es un modelo multimodal: la model card lo describe como text-only.
 
 ## Casos de uso
 
-- Asistente personal en dispositivo: al ser un modelo compacto con 1,5B de parámetros activos, puede ejecutarse en teléfonos y portátiles, gestionando conversaciones multi-turno con contexto largo (128K tokens) y respondiendo a comandos de voz o texto.
-- Automatización de atención al cliente: su capacidad de tool calling permite integrarse con sistemas de ticketing o bases de conocimiento, resolviendo consultas de usuarios en varios idiomas y escalando casos complejos a humanos.
-- Agente de automatización de tareas: puede encadenar llamadas a APIs (por ejemplo, consultar calendarios, enviar correos o actualizar registros) siguiendo instrucciones de alto nivel, gracias a su soporte de function calling y razonamiento multi-paso.
-- Generación de contenido multilingüe: redacción de textos en español, francés, alemán, etc., con control de tono y estilo, útil para marketing, soporte o documentación.
-- Asistente de programación ligero: aunque no es su punto fuerte, puede ayudar con tareas de codificación simples, como generar fragmentos de código o explicar conceptos, siempre que no se requiera un razonamiento profundo sobre código complejo.
-- Razonamiento y análisis de documentos largos: con 128K de contexto, puede procesar informes extensos, contratos o artículos, resumiendo información y respondiendo preguntas concretas, aunque se recomienda usar recuperación (RAG) para tareas de conocimiento intensivo.
-- Despliegue en entornos edge con presupuesto limitado: su bajo número de parámetros activos y su soporte para cuantización GGUF y ONNX permiten ejecutarlo en hardware de consumo, como una Raspberry Pi 5 o una GPU de gama media, sin sacrificar demasiada calidad.
+- Asistente personal en dispositivo: el modelo puede ejecutarse en CPU y GPU con backends como llama.cpp, MLX o ONNX, gestionando conversaciones multi-turno con hasta 128.000 tokens de contexto y encadenando llamadas a herramientas para tareas cotidianas.
+- Automatizacion de atencion al cliente: con soporte nativo de function calling, puede consultar el estado de un pedido o de un candidato en un proceso de seleccion (como en el ejemplo de la model card) y devolver una respuesta en lenguaje natural.
+- Orquestacion agéntica multi-paso: su capacidad de encadenar llamadas a funciones y su modo de razonamiento lo hacen adecuado para pipelines donde el modelo decide que herramienta invocar en cada paso.
+- Asistentes multilingues: al cubrir diez idiomas, puede desplegarse en aplicaciones de soporte o productividad para usuarios de habla hispana, arabe, china, francesa, alemana, italiana, japonesa, coreana y portuguesa.
+- Generacion de salidas estructuradas: util para rellenar formularios, extraer campos o producir JSON validado en integraciones con sistemas externos, aprovechando la posibilidad de forzar llamadas en formato JSON.
+- Despliegue en hardware de borde: gracias a sus 1.5B parametros activos y a los formatos GGUF/ONNX/MLX, puede integrarse en portatiles, Mac con Apple Silicon y dispositivos con recursos limitados.
+- Aceleracion de inferencia en produccion: el drafter DSpark (328M) permite decodificacion especulativa con aproximadamente 2.5x mas velocidad manteniendo las mismas salidas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. La model card menciona una métrica llamada "AA-Omniscience Index" (de Artificial Analysis) que recompensa respuestas correctas y penaliza alucinaciones, con una puntuación que va de -100 a 100, pero no se proporcionan valores concretos para este modelo. Tampoco se incluyen comparativas con otros modelos en la documentación oficial. Por tanto, no es posible presentar una tabla de rendimiento objetiva sin inventar datos.
+No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card menciona de forma cualitativa que el modelo es competitivo con modelos densos y MoE de mayor tamano en seguimiento de instrucciones y tareas agénticas, y hace referencia al AA-Omniscience Index de Artificial Analysis, pero no incluye cifras concretas (MMLU, HumanEval, GSM8K u otros) en el material proporcionado.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos exactos de VRAM en la documentación oficial. Sin embargo, al tratarse de un modelo con 8,3B parámetros totales y solo 1,5B activos, se puede estimar que una cuantización GGUF de 4 bits ocuparía aproximadamente entre 4 y 5 GB de memoria, lo que lo hace apto para GPUs de consumo con 6 GB o más (por ejemplo, RTX 3060, RTX 4060, o incluso iGPUs con suficiente memoria compartida).
-- Para inferencia en CPU, el modelo está optimizado para llama.cpp, por lo que puede ejecutarse en procesadores modernos con 16 GB de RAM, aunque la velocidad dependerá del número de hilos y de la cuantización.
-- En GPU, se recomienda al menos una GPU con 8 GB de VRAM para la versión completa en FP16, o 6 GB para cuantizaciones de 4 bits.
-- Frameworks de despliegue compatibles: llama.cpp, vLLM, SGLang, MLX (Apple Silicon), ONNX Runtime y Transformers.
-- El throughput es notablemente alto para su clase de tamaño, según la documentación, pero no se proporcionan cifras concretas de tokens por segundo.
+- VRAM estimada: no disponible de forma explicita en la informacion proporcionada. Como referencia de orden de magnitud, el repo nativo en safetensors ocupa 17.0 GB, por lo que la inferencia en precision completa requiere al menos esa cantidad de memoria; las versiones GGUF y MLX 8-bit reducen el requisito.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible; los formatos GGUF, ONNX y MLX estan orientados a despliegue local y de borde, lo que sugiere viabilidad en hardware de consumo, pero sin cifras oficiales.
+- Opciones de despliegue: Transformers, vLLM, SGLang, llama.cpp (GGUF), ONNX Runtime, MLX (Apple Silicon).
+- Latencia y throughput: no disponibles. La model card afirma que es el mas rapido de su clase en CPU y GPU y que el drafter DSpark ofrece aproximadamente 2.5x mas velocidad de decodificacion, pero sin cifras absolutas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos objetivos en la información proporcionada. LFM2.5-8B-A1B compite en la categoría de modelos MoE compactos para edge, como Qwen2.5-7B-Instruct (denso, 7B) o Mixtral-8x7B (MoE con 46,7B totales y 12,9B activos), pero no se han publicado resultados de benchmarks que permitan una comparación cuantitativa. La documentación afirma que es "competitivo con modelos mucho más grandes" en tareas de instrucción y agentes, pero sin datos numéricos no es posible verificar esta afirmación.
+No disponible. La informacion proporcionada no incluye datos numericos de modelos comparables de la misma categoria (MoE de ~8B totales con ~1.5B activos y contexto de 128K) que permitan una comparacion rigurosa de parametros, contexto, rendimiento y licencia.
 
 ## Limitaciones y advertencias
 
-- No es adecuado para programación pesada ni para tareas de conocimiento intensivo sin recuperación (RAG), según la propia model card. Para estos casos se recomienda usar modelos especializados o integrar un sistema de búsqueda.
-- Puede generar alucinaciones, especialmente en temas de conocimiento factual, aunque el entrenamiento con RL mitiga parcialmente este problema.
-- La licencia lfm1.0 es una licencia propia de Liquid AI; es necesario revisar sus términos para determinar si permite uso comercial y qué restricciones impone sobre la redistribución o el uso en productos propietarios.
-- El modelo es solo de texto; no admite entradas de imagen, audio ni vídeo.
-- Aunque soporta 10 idiomas, el rendimiento puede variar entre ellos; los idiomas con menos representación en el entrenamiento podrían tener una calidad inferior.
-- La generación de cadenas de pensamiento explícitas puede aumentar la latencia en comparación con modelos que no las generan, aunque esto es una compensación por la mejora en razonamiento.
-- No se han publicado detalles sobre sesgos específicos del modelo, pero al estar entrenado con datos web, es probable que herede sesgos sociales y culturales presentes en esos datos.
+- La model card indica explicitamente que no es la mejor opcion para programacion intensiva ni para preguntas intensivas en conocimiento sin recuperacion (RAG); en esos casos el riesgo de alucinacion aumenta.
+- Es un modelo text-only; no soporta vision ni audio.
+- La licencia lfm1.0 es de tipo "other"; deben revisarse los terminos del archivo LICENSE antes de cualquier uso comercial.
+- El modelo genera cadenas de pensamiento explicitas, lo que incrementa el consumo de tokens en produccion y requiere gestionar el formato de la plantilla de chat.
+- Aunque soporta diez idiomas, el rendimiento relativo por idioma no se detalla en la informacion disponible; conviene validar la calidad en espanol antes de desplegarlo.
+- El formato por defecto de las llamadas a herramientas es Pythonico, no JSON; si el sistema consumidor espera JSON, hay que forzarlo mediante el system prompt.
+- No se han publicado cifras de benchmarks ni de sesgos en la informacion disponible, por lo que la evaluacion de sesgos queda pendiente de validacion propia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
-- Blog de Liquid AI: https://www.liquid.ai/blog/lfm2-5-8b-a1b
-- Documentación oficial: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
-- Repositorio de cuantizaciones GGUF: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
-- Repositorio ONNX: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-ONNX
-- Repositorio MLX (8-bit): https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-MLX-8bit
-- Playground de Liquid AI: https://playground.liquid.ai/
-- LEAP (plataforma de Liquid AI): https://leap.liquid.ai/
-- Discord de Liquid AI: https://discord.com/invite/liquid-ai
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
+- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-Base
+- GGUF: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
+- ONNX: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-ONNX
+- MLX 8-bit: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-MLX-8bit
+- Drafter DSpark: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-DSpark
+- Blog del modelo: https://www.liquid.ai/blog/lfm2-5-8b-a1b
+- Playground: https://playground.liquid.ai/
+- Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome
+- LEAP: https://leap.liquid.ai/
+- Discord: https://discord.com/invite/liquid-ai
+- Documentacion de plantilla de chat: https://docs.liquid.ai/lfm/key-concepts/chat-template
+- Documentacion de tool use: https://docs.liquid.ai/lfm/key-concepts/tool-use
+- Evaluacion AA-Omniscience: https://artificialanalysis.ai/evaluations/omniscience
+- Paper referenciado: arxiv:2511.23404
+- Paper referenciado: arxiv:2607.15232

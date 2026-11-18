@@ -2,109 +2,95 @@
 
 ## Resumen
 
-LTX-2.5-uncensored-v1.1-FP8 es un derivado afinado (fine-tune) del modelo de generacion de video Lightricks/LTX-2.5, publicado por el usuario ChrisColeTech. Se distribuye como un build pre-fusionado en formato FP8 y GGUF que incorpora cinco LoRA ya integradas en los pesos: Eros10 NSFW (fuerza 0,7), DMD Distilled (1,0), LTXV In-Context LoRA (0,7), LTX Video IC-LoRA Detailer (0,45) e Img2Vid LoRA (0,45). El resultado es un modelo unico que cubre text-to-video, image-to-video, video-to-video y audio-to-video sin necesidad de cargar adaptadores externos.
+LTX-2.5-uncensored-v1.1-FP8 es una compilación pre-fusionada del modelo de generación de vídeo LTX Video 2.5 de Lightricks, publicada por el usuario ChrisColeTech en Hugging Face. Se trata de un derivado que integra en los pesos cinco ajustes finos distintos (LoRAs de contenido NSFW, destilación DMD, control in-context, detallado y adaptador imagen-a-vídeo), empaquetado en formato FP8 y GGUF para acelerar la inferencia. El resultado es un modelo de vídeo generativo "turbo" que promete generaciones en tan solo 4 pasos y soporte multimodal de entrada (texto, imagen, audio y referencia visual).
 
-El modelo base declarado es Lightricks/LTX-2.5, con TenStrip/LTX2.3-10Eros y TenStrip/LTX2.3_DMD_Lora como ascendientes de los fine-tunes. El dato de safetensors indica 21.004.025.600 parametros totales (aproximadamente 21.000 millones) para el componente de difusion, a los que se suma un codificador de texto descrito por el autor como "Gemma4 12B uncensored" en int8 con las proyecciones de LTX ya integradas. El repositorio ocupa 226 GB, lo que refleja la convivencia de varios formatos y precisiones en el mismo espacio.
+El modelo resuelve el problema de tener que cargar y combinar manualmente múltiples LoRAs sobre el modelo base, ofreciendo una única descarga con todo el pipeline pre-integrado. Incluye además un codificador de texto Gemma4 12B sin censura con las proyecciones de LTX ya incorporadas, eliminando la necesidad de ficheros adicionales. Con 21.004.025.600 parámetros totales y un repositorio de 226 GB, está claramente orientado a entornos de inferencia con GPU de gama alta.
 
-Su relevancia practica reside en dos factores. Por un lado, la destilacion DMD permite generar video con tan solo 4 pasos de muestreo (8 pasos para el mejor resultado), lo que reduce drasticamente el coste de inferencia frente a los modelos de difusion de video convencionales. Por otro lado, la fusion de las LoRA elimina la gestion de multiples adaptadores en ComfyUI, a cambio de perder granularidad en el ajuste de cada una. El caracter "uncensored" y la etiqueta not-for-all-audiences lo orientan a produccion de contenido para adultos y a flujos creativos sin filtros, un nicho con demanda alta pero con implicaciones legales y de licencia relevantes.
+Su relevancia actual radica en la combinación de destilación DMD (menos pasos de muestreo), soporte de audio nativo en la generación de vídeo y la posibilidad de control in-context mediante plantillas estructuradas. No obstante, la licencia es desconocida y el contenido está marcado como no apto para todas las audiencias, lo que limita su uso en producción comercial sin una revisión legal previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Difusion para video (familia LTX Video 2.5); detalles de bloques no disponibles |
-| Parametros totales | 21.004.025.600 (dato de safetensors, componente de difusion) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | FP8 (fp8_scaled) y GGUF; el codificador de texto se distribuye en int8. Lista completa de niveles GGUF no disponible |
-| Idiomas soportados | No disponible |
-| Licencia | unknown (segun el campo license del repositorio) |
-| Formato de pesos | safetensors (FP8), GGUF, JSON de workflows de ComfyUI |
-
-Datos adicionales del repositorio: 226,0 GB de tamano, 8.904 descargas, 12 likes, fecha de creacion 11-08-2026 y ultima actualizacion 13-09-2026. Modelos base declarados: Lightricks/LTX-2.5, TenStrip/LTX2.3-10Eros y TenStrip/LTX2.3_DMD_Lora.
+| Arquitectura | Modelo de difusión para vídeo (LTX Video 2.5) con codificador de texto Gemma4 12B; no se detalla la arquitectura interna exacta |
+| Parametros totales | 21.004.025.600 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP8 (fp8_scaled), GGUF, int8 para el codificador de texto |
+| Idiomas soportados | no disponible |
+| Licencia | unknown (desconocida) |
+| Formato de pesos | safetensors (FP8), GGUF |
+| Modos de generación | text-to-video, image-to-video, video-to-video, audio-to-video |
+| Pasos de muestreo | 4 pasos (mínimo), 8 pasos (recomendado) |
+| Tamaño del repositorio | 226,0 GB |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion detallada en la documentacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. Lo que si se documenta es la receta de fusion: el autor ha integrado cinco adaptadores LoRA sobre el modelo base mediante fusion de pesos con fuerzas explicitas. La LoRA DMD Distilled (fuerza 1,0) es la responsable de la reduccion de pasos de muestreo y, segun el autor, de una mejor preservacion facial en image-to-video y de un mejor seguimiento de instrucciones frente a la version v1 y frente al modelo stock. Las dos LoRA de tipo IC (In-Context) aportan adherencia a imagenes de referencia y control video-to-video; los adaptadores Img2Vid y Eros10 completan el comportamiento.
+El modelo se basa en LTX Video 2.5 de Lightricks, un modelo de difusión para generación de vídeo. Sobre esta base se han fusionado cinco LoRAs con distintas intensidades: Eros10 NSFW (0,7), DMD Distilled (1,0), LTX Video IC-LoRA (0,7), LTX Video IC-LoRA Detailer (0,45) e Img2Vid LoRA (0,45). La fusión pre-merged elimina la necesidad de cargar adaptadores por separado en tiempo de inferencia.
 
-El codificador de texto es un componente clave: el autor indica que se trata de un "Gemma4 12B uncensored" con las proyecciones de LTX ya incorporadas, cuantizado en int8, de modo que no requiere ficheros adicionales. Esto implica que la pipeline completa consta de al menos dos redes de gran tamano (el difusor de ~21.000 millones de parametros y el codificador de texto de ~12.000 millones), lo que condiciona los requisitos de memoria. La innovacion practica mas destacable es la generacion en 4-8 pasos gracias a la destilacion DMD, junto con la capacidad multimodal de audio integrada (generacion de habla y sonido sincronizados a partir del prompt).
+La innovación técnica principal es la destilación DMD (Distribution Matching Distillation), que reduce drásticamente el número de pasos de muestreo necesarios (4-8 en lugar de decenas), acelerando la generación y mejorando la preservación facial en image-to-video y el seguimiento de instrucciones. El codificador de texto es un Gemma4 12B sin censura con proyecciones LTX integradas, cuantizado a int8. El modelo soporta además plantillas de prompt estructuradas con etiquetas `[VISUAL]`, `[SPEECH]` y `[SOUNDS]` para control preciso de la salida audiovisual, incluyendo multi-shot y efectos de audio. No se dispone de información sobre el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video) con 4 pasos minimos y 8 pasos recomendados.
-- Generacion de video a partir de imagen (image-to-video) con el adaptador Img2Vid ya integrado, sin configuracion adicional.
-- Transformacion video-to-video mediante la LoRA IC-LoRA Detailer.
-- Audio-to-video y variantes con audio: el autor lista los modos FL2VA, T2VA, I2VA y REF2VA, que abarcan generacion conjunta de video, habla y sonido.
-- Generacion de habla y efectos de sonido sincronizados, controlables mediante etiquetas de audio en el prompt.
-- Narrativa multi-plano: el prompt admite descripciones de corte entre planos (por ejemplo, pasar de un primer plano frontal a un plano general trasero).
-- Plantilla de prompt estructurada con tres secciones obligatorias para el modo IC LoRA: [VISUAL], [SPEECH] y [SOUNDS].
-- Control de banda sonora: el autor indica que la negacion explicita de musica no funciona y que debe usarse el termino "unscored" para forzar la ausencia de musica de fondo.
-- Aderencia mejorada a imagenes de referencia gracias a las dos LoRA de tipo In-Context.
-- Ejecucion en ComfyUI mediante el nodo personalizado comfyui-gguf-loader; se incluyen workflows de ejemplo en el repositorio.
-- No se documenta soporte de tool calling, function calling ni comportamiento de agente; son capacidades propias de modelos de lenguaje y no aplican al caso de uso principal de este modelo.
+- Generación de vídeo a partir de texto (text-to-video) con tan solo 4 pasos de muestreo.
+- Generación de vídeo a partir de imagen (image-to-video) con preservación facial mejorada gracias a la destilación DMD.
+- Generación de vídeo a partir de vídeo (video-to-video) mediante el adaptador IC-LoRA Detailer.
+- Generación de vídeo a partir de audio (audio-to-video).
+- Generación de audio sincronizado: diálogo hablado, efectos de sonido y bandas sonoras, controlables mediante las etiquetas `[SPEECH]` y `[SOUNDS]`.
+- Soporte de multi-shot: transiciones entre planos dentro de una misma generación (por ejemplo, "primer plano frontal, luego corte a plano general trasero").
+- Control in-context mediante plantillas estructuradas de prompt con precisión sobre lo visual, el habla y los sonidos.
+- Contenido sin censura (NSFW) integrado mediante la LoRA Eros10.
+- Seguimiento de instrucciones mejorado respecto a la versión stock y a la v1.
+- No se documenta soporte de tool calling ni de agentes, al no ser un modelo de lenguaje conversacional.
 
 ## Casos de uso
 
-- Previsualizacion de planos en produccion audiovisual: generar animaticos de 4 a 8 pasos a partir de un guion escrito permite validar encuadres y ritmo antes de rodar, con un coste de computo muy inferior al de un modelo de difusion de video no destilado.
-- Animacion de personajes a partir de una ilustracion: el flujo image-to-video con el adaptador Img2Vid integrado sirve para dar movimiento a arte conceptual o a ilustraciones de personajes sin tener que componer manualmente una cadena de adaptadores.
-- Doblaje y localizacion de video: los modos con audio (T2VA, I2VA) generan habla y sonido sincronizados a partir de un guion, utiles para crear versiones localizadas de clips cortos antes de recurrir a un estudio de doblaje.
-- Avatares parlantes para formacion corporativa: alimentando una fotografia del instructor y un texto con las secciones [SPEECH] y [SOUNDS], se obtienen videos explicativos sin necesidad de grabacion en plato.
-- Postproduccion y retoque video-to-video: la LoRA IC-LoRA Detailer permite aplicar control sobre metraje existente, por ejemplo para reestilizar una secuencia manteniendo la estructura original.
-- Creacion de material para ecommerce y publicidad: generar variaciones de un producto en movimiento desde una imagen fija para pruebas A/B de creatividades antes de comprometer presupuesto de rodaje.
-- Prototipado rapido de assets para videojuegos: producir clips de referencia de animaciones y efectos para presentar a un equipo de arte antes de la implementacion final.
-- Produccion de contenido para adultos: el ajuste Eros10 y la ausencia de censura en el codificador de texto estan orientados explicitamente a este nicho; su uso exige verificar la legalidad en la jurisdiccion de destino, la verificacion de edad y el cumplimiento de las politicas de la plataforma de distribucion.
+- **Generación de vídeo publicitario de bajo coste computacional**: con 4-8 pasos de muestreo, el modelo permite iterar rápidamente sobre variaciones de un anuncio (text-to-video) sin incurrir en los tiempos de generación típicos de modelos de difusión de decenas de pasos.
+- **Doblaje y sincronización de audio en vídeo**: la capacidad audio-to-video y la generación de habla sincronizada permiten crear vídeos con diálogo y efectos sonoros a partir de una pista de audio, útil para localización de contenido.
+- **Prototipado de escenas para previsualización cinematográfica**: el soporte multi-shot y las plantillas `[VISUAL]`/`[SPEECH]`/`[SOUNDS]` permiten generar storyboards animados con cortes de cámara y audio descriptivo.
+- **Animación de retratos o personajes a partir de una imagen**: el modo image-to-video con la LoRA Img2Vid y la preservación facial de DMD lo hacen adecuado para animar avatares o personajes estáticos manteniendo la coherencia de identidad.
+- **Edición y retoque de vídeo existente**: el modo video-to-video con IC-LoRA Detailer permite aplicar transformaciones controladas sobre metraje ya grabado, como cambios de estilo o correcciones guiadas por prompt.
+- **Creación de contenido para adultos con control de referencia visual**: la integración de la LoRA Eros10 y el IC-LoRA de referencia permiten generar contenido NSFW manteniendo la adherencia a una imagen de referencia, en entornos donde dicho contenido sea legal y esté permitido.
+- **Generación de material B-roll sin música de fondo**: la instrucción "unscored" permite producir clips de recurso sin banda sonora, listos para montaje posterior.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas de calidad de video (FVD, CLIP similarity, VBench u otras), ni comparaciones numericas frente al modelo base o a alternativas. Los unicos datos de rendimiento declarados son cualitativos y proceden del autor: generacion funcional con 4 pasos de muestreo y mejor resultado con 8 pasos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el difusor en FP8: en torno a 21-25 GB solo para los pesos del componente de difusion, dado que el recuento de parametros es de aproximadamente 21.000 millones. Es una estimacion derivada del numero de parametros, no un dato publicado.
-- Codificador de texto: al tratarse de un modelo descrito como Gemma4 12B en int8, anade del orden de 12-14 GB si se carga en memoria de forma simultanea. Se desconoce si el repositorio ofrece una variante que permita descargarlo a CPU o cuantizarlo mas agresivamente.
-- Repositorio completo: 226 GB, aunque no es necesario descargarlo entero si se seleccionan unicamente los ficheros del formato deseado.
-- GPU de datacenter: A100 80 GB y H100 80 GB son las opciones sin riesgo de offloading para la pipeline completa en FP8.
-- GPU consumer: una RTX 4090 o RTX 3090 con 24 GB puede alojar el difusor en FP8, pero muy probablemente requerira offloading del codificador de texto. Tarjetas de 16 GB (RTX 4080, 4070 Ti Super) necesitan cuantizaciones GGUF mas agresivas y gestion de memoria por capas.
-- Tarjetas de 8-12 GB: viables solo con GGUF de baja precision y offloading intensivo a RAM o disco, con penalizacion severa de velocidad.
-- Opciones de despliegue: el autor documenta ComfyUI con el nodo comfyui-gguf-loader y proporciona workflows JSON de ejemplo. No se mencionan vLLM, TGI, llama.cpp ni Ollama, que no son aplicables a un modelo de difusion de video de este tipo.
-- Latencia y throughput: no disponibles. El unico dato util para estimar coste es el numero de pasos de muestreo (4 minimo, 8 recomendado).
+- **VRAM estimada**: con 21.004 millones de parámetros en FP8, el peso de los pesos ronda los 21 GB solo para el modelo de difusión, a lo que se suma el codificador de texto Gemma4 12B en int8 (aproximadamente 12 GB adicionales). Se estima un mínimo práctico de 40-48 GB de VRAM para inferencia completa, aunque no se dispone de cifras oficiales.
+- **GPU recomendadas**: A100 80 GB, H100 80 GB, o configuraciones multi-GPU. Las RTX 4090 (24 GB) no pueden alojar el modelo completo en FP8 sin offloading a RAM del sistema.
+- **GPU de consumo**: no cabe en GPUs de consumo de 24 GB o menos sin técnicas de offloading agresivo o cuantización GGUF adicional; el tamaño del repositorio (226 GB) sugiere que existen variantes GGUF de menor precisión que podrían ejecutarse con offloading, aunque no se detallan.
+- **Opciones de despliegue**: ComfyUI (los ejemplos de la model card usan ficheros `ComfyUI_*.mp4`), llama.cpp/GGUF para las variantes cuantizadas, y potencialmente vLLM o TGI si se adaptan al pipeline de difusión (no confirmado).
+- **Latencia y throughput**: no disponible; la model card solo indica que 4 pasos producen resultados aceptables y 8 pasos los mejores, sin cifras de tiempo por generación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8 | ~21.000 M (difusor) + codificador de texto 12B int8 | No disponible | Sin benchmarks publicados; 4-8 pasos por destilacion DMD | unknown | Hugging Face, FP8 y GGUF, 8.904 descargas |
-| Lightricks/LTX-2.5 (base) | No disponible | No disponible | Sin datos en la informacion disponible | No disponible en la informacion proporcionada | Hugging Face, repositorio oficial |
-| TenStrip/LTX2.3-10Eros | No disponible | No disponible | Sin datos en la informacion disponible | No disponible en la informacion proporcionada | Hugging Face |
-| Otras alternativas de generacion de video open source (por ejemplo, familias Wan o HunyuanVideo) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos en la informacion proporcionada para establecer una comparacion fiable |
+| Modelo | Parámetros | Contexto / pasos | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| LTX-2.5-uncensored-v1.1-FP8 | 21,0 B | 4-8 pasos de muestreo | unknown | Hugging Face (GGUF, FP8) |
+| Lightricks/LTX-2.5 (base) | no disponible | no disponible | no disponible | Hugging Face |
+| TenStrip/LTX2.3-10Eros | no disponible | no disponible | no disponible | Hugging Face |
+| TenStrip/LTX2.3_DMD_Lora | no disponible | no disponible | no disponible | Hugging Face |
 
-La comparacion cuantitativa con alternativas de la misma categoria no puede completarse con la informacion disponible. El elemento diferenciador objetivo de este modelo frente a su base es la fusion de las cinco LoRA y la destilacion a 4-8 pasos, no una mejora de parametros o de ventana de contexto.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia "unknown": no se especifican terminos de uso, lo que impide determinar si el uso comercial esta permitido. Ademas, al derivar de Lightricks/LTX-2.5, habria que revisar por separado los terminos del modelo original, que no se incluyen en la informacion proporcionada.
-- Etiquetado explicito como not-for-all-audiences y orientado a contenido NSFW, con la LoRA Eros10 integrada a fuerza 0,7. El uso en productos comerciales abiertos al publico general es desaconsejable sin filtrado posterior.
-- Riesgo legal y de cumplimiento: la generacion de contenido para adultos con personas sinteticas exige verificacion de edad, etiquetado y cumplimiento de la normativa de la jurisdiccion de despliegue. No se documentan mecanismos de moderacion, marcas de agua ni metadatos de procedencia en el repositorio.
-- Riesgo de alucinacion visual: como todo modelo de difusion, puede producir artefactos anatomicos, incoherencias temporales entre fotogramas y texto en pantalla malformado. El autor no publica tasas de fallo.
-- Idiomas soportados: no disponibles. No se indica si el habla generada cubre castellano o si esta limitada al ingles.
-- Ausencia de benchmarks: no hay datos objetivos de calidad, por lo que la evaluacion depende de pruebas propias.
-- Mantenimiento incierto: se trata de un fine-tune de autor individual, con 12 likes y sin garantia de soporte a largo plazo ni de compatibilidad futura con versiones nuevas de ComfyUI.
-- Requisitos de memoria elevados: la combinacion de un difusor de ~21.000 millones de parametros y un codificador de texto de ~12.000 millones en int8 limita el despliegue en hardware de consumo.
-- Las afirmaciones sobre mejoras (mejor preservacion facial, mejor seguimiento de instrucciones) proceden del autor y no estan respaldadas por mediciones publicadas.
-- Comportamiento de prompt no intuitivo: la negacion explicita ("no music") no funciona y debe sustituirse por el termino "unscored", lo que indica fragilidad en el seguimiento de instrucciones negativas.
+- **Licencia desconocida**: la licencia figura como "unknown", lo que impide determinar si el uso comercial está permitido. Es imprescindible contactar con el autor o con Lightricks antes de cualquier despliegue en producción.
+- **Contenido NSFW integrado**: el modelo incorpora explícitamente la LoRA Eros10 y está etiquetado como "not-for-all-audiences". Su uso puede infringir las políticas de plataformas de distribución y las legislaciones locales sobre contenido para adultos.
+- **Riesgo de alucinación visual**: como todo modelo generativo de vídeo, puede producir artefactos, incoherencias temporales o contenido no solicitado, especialmente en generaciones largas o con prompts ambiguos.
+- **Idiomas no documentados**: no se especifican los idiomas soportados por el codificador de texto Gemma4 en esta configuración, por lo que el rendimiento multilingüe es incierto.
+- **Requisitos de hardware elevados**: 21 B de parámetros en FP8 más un codificador de 12 B hacen que el modelo no sea apto para GPUs de consumo sin offloading, lo que limita su adopción en entornos pequeños.
+- **Trazabilidad de la fusión**: al ser una fusión pre-merged de cinco LoRAs con intensidades fijas, no es posible ajustar la contribución de cada una en tiempo de inferencia sin recurrir al modelo base y las LoRAs por separado.
+- **Origen comunitario**: el autor es un usuario individual (ChrisColeTech), no el desarrollador original (Lightricks), por lo que no hay garantías de soporte, mantenimiento ni auditoría de seguridad.
+- **Tamaño del repositorio**: 226 GB de descarga suponen un coste de almacenamiento y ancho de banda considerable.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8
-- Modelo base oficial: https://huggingface.co/Lightricks/LTX-2.5
-- Modelo base del fine-tune NSFW: https://huggingface.co/TenStrip/LTX2.3-10Eros
-- LoRA DMD utilizada: https://huggingface.co/TenStrip/LTX2.3_DMD_Lora
-- Workflow de text-to-video de ejemplo: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8/blob/main/workflow_examples/ltx25_t2v_simple.json
-- Imagen del workflow: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8/resolve/main/workflow_examples/workflow_example_ltx25_t2v_simple.png
-- Muestra de text-to-video: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8/resolve/main/samples/ComfyUI_00032_.mp4
-- Muestra de text-to-video con plantilla IC LoRA: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8/resolve/main/samples/ComfyUI_00034_.mp4
-- Imagen de entrada de image-to-video: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8/resolve/main/samples/wildcards_01450_.png
-- Muestra de image-to-video: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8/resolve/main/samples/ComfyUI_00065_.mp4
-- Hilo de la comunidad sobre flujos de trabajo en ComfyUI: https://www.reddit.com/r/comfyui/comments/1wfh062/share_your_personal_porn_workflow/
-
-No se han encontrado papers, blogs tecnicos ni repositorios de codigo adicionales en los resultados de busqueda web proporcionados.
+- Hugging Face: https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8
+- Modelo base Lightricks LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
+- Modelo base TenStrip/LTX2.3-10Eros: https://huggingface.co/TenStrip/LTX2.3-10Eros
+- LoRA TenStrip/LTX2.3_DMD_Lora: https://huggingface.co/TenStrip/LTX2.3_DMD_Lora
+- Ejemplos de vídeo (samples): https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8/tree/main/samples

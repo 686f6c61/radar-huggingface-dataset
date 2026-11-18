@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "Microck/Spunto-Router-23M",
+  "slug": "microck-spunto-router-23m",
+  "author": "Microck",
+  "url": "https://huggingface.co/Microck/Spunto-Router-23M",
+  "created_at": "2026-11-17T22:45:43.000Z",
+  "updated_at": "2026-11-17T22:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "reranker",
+    "routing",
+    "agents",
+    "skills",
+    "cross-encoder",
+    "minilm",
+    "text-classification",
+    "en",
+    "es",
+    "pt",
+    "arxiv:2506.05176",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:quantized:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181577132,
+  "storage_human": "182 MB",
+  "context_length": null,
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2, sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agent skill routing",
+      "dataset": "Private authored fresh routing set",
+      "metric": "Top-1 precision, lower label bound",
+      "value": 0.8
+    },
+    {
+      "task": "Agent skill routing",
+      "dataset": "Private authored fresh routing set",
+      "metric": "Fire-based coverage, lower label bound, not recall",
+      "value": 0.692
+    },
+    {
+      "task": "Agent skill routing",
+      "dataset": "Private authored fresh routing set",
+      "metric": "False fires on known-no-skill requests",
+      "value": 2
+    }
+  ],
+  "sources": []
+}

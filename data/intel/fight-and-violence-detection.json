@@ -5,7 +5,7 @@
   "author": "Intel",
   "url": "https://huggingface.co/Intel/fight-and-violence-detection",
   "created_at": "2026-08-05T22:02:17.000Z",
-  "updated_at": "2026-11-10T22:33:49.000Z",
+  "updated_at": "2026-11-18T00:34:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

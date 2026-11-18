@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 9,
-  "downloads_30d": 8864,
+  "downloads_30d": 9190,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -44,16 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SargeDev/JEV-27B-Uncensored · Hugging Face",
-      "url": "https://huggingface.co/SargeDev/JEV-27B-Uncensored",
-      "snippet": "The first uncensored member of the JEV 27B family. The AutoTrust System-1 decision block (calibrated typed decisions: yes/no · choice 2-256 · score 0-5, one forward pass) has been merged into huihui's abliterated Qwen3.8-27B backbone, so the decision engine answers WITHOUT the stock model's refusal wiring."
-    },
-    {
-      "title": "SargeDev/JEV-27B-Uncensored-GGUF · Hugging Face",
-      "url": "https://huggingface.co/SargeDev/JEV-27B-Uncensored-GGUF",
-      "snippet": "The first uncensored member of the JEV 27B family. The AutoTrust System-1 decision block (calibrated typed decisions: yes/no · choice 2-256 · score 0-5, one forward pass) has been merged into huihui's abliterated Qwen3.8-27B backbone, so the decision engine answers WITHOUT the stock model's refusal wiring."
-    }
-  ]
+  "sources": []
 }

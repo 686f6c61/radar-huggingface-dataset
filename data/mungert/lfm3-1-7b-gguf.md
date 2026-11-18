@@ -2,91 +2,88 @@
 
 ## Resumen
 
-LFM3-1.7B es un modelo de lenguaje de 1,73 mil millones de parámetros desarrollado por Liquid AI, distribuido originalmente en Hugging Face como `LiquidAI/LFM3-1.7B` y empaquetado en formato GGUF por el usuario Mungert bajo el identificador `Mungert/LFM3-1.7B-GGUF`. Está diseñado específicamente para ejecutarse en el borde (edge computing): según su model card, en cuantización de 4 bits ocupa aproximadamente 1 GB de memoria, lo que permite desplegarlo en teléfonos y portátiles convencionales. Es un modelo solo de texto, post-entrenado para tareas de agente local.
+LFM3-1.7B-GGUF es la cuantizacion en formato GGUF del modelo LFM3-1.7B de Liquid AI, un modelo de lenguaje de texto disenado especificamente para agentes locales y aplicaciones especializadas. Este repositorio, publicado por el usuario Mungert, ofrece los pesos convertidos a GGUF mediante llama.cpp, lo que permite ejecutar el modelo en hardware de consumo mediante herramientas como llama.cpp u Ollama. El modelo original emplea la nueva arquitectura tri-hibrida de Liquid AI y cuenta con 1.730 millones de parametros, con un contexto declarado de 256K tokens.
 
-La arquitectura es una innovación propia de Liquid AI denominada "tri-hybrid": 24 capas que combinan 13 convoluciones cortas con compuertas (gated short convolutions), 5 capas de atención de ventana deslizante y 6 capas de atención global. Esta mezcla busca reducir el coste computacional de la atención tradicional manteniendo capacidad de modelado de contexto largo.
+El modelo destaca por su enfoque en eficiencia para el borde: a 4 bits ocupa aproximadamente 1 GB de memoria, lo que lo hace viable en telefonos moviles y portatiles. Ha sido post-entrenado para arneses de agentes como Hermes Agent, Pi y OpenClaw, y esta disenado para ser especializado mediante fine-tuning rapido en una sola GPU. Soporta 16 idiomas, incluido el castellano.
 
-El modelo resulta relevante porque ofrece una ventana de contexto de 256K tokens en un tamaño muy reducido, con entrenamiento orientado a agentes (Hermes Agent, Pi, OpenClaw) y soporte para 16 idiomas, incluido el español. La versión GGUF facilita su despliegue con llama.cpp, Ollama y otras herramientas de inferencia local, lo que lo convierte en candidato para aplicaciones de agente en dispositivos con recursos limitados.
+La relevancia de esta ficha radica en que combina un modelo compacto con capacidades agenticas y un contexto muy amplio, algo poco habitual en la categoria de menos de 2.000 millones de parametros. La version GGUF facilita su despliegue local sin depender de infraestructura en la nube.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Tri-hybrid: 24 capas (13 gated short convolutions, 5 sliding-window attention, 6 global attention) |
-| Parámetros totales | 1.728.801.600 (1,73B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 256.000 tokens |
-| Tipos de cuantización | GGUF (generado con llama.cpp, commit ca89968a2); niveles concretos no disponibles en la información |
-| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
-| Licencia | lfm1.0 (licencia propia de Liquid AI, marcada como "other") |
-| Formato de pesos | GGUF (repo de 48,0 GB con múltiples cuantizaciones); pesos originales del base model en safetensors |
+| Arquitectura | Tri-hibrida: 24 capas (13 convoluciones cortas con compuerta, 5 atencion de ventana deslizante, 6 atencion global) |
+| Parametros totales | 1.728.801.600 (1,73B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 256K tokens |
+| Tipos de cuantizacion | GGUF (multiples variantes generadas con llama.cpp; la model card menciona 4 bits como referencia de ~1 GB) |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
+| Licencia | lfm1.0 (licencia "other" con nombre lfm1.0) |
+| Formato de pesos | GGUF (repo de 48,0 GB con multiples cuantizaciones) |
 
 ## Arquitectura y entrenamiento
 
-LFM3-1.7B emplea una arquitectura híbrida de 24 capas que alterna tres tipos de bloques: 13 capas de convolución corta con compuertas, 5 capas de atención de ventana deslizante y 6 capas de atención global. Este diseño "tri-hybrid" reduce el coste cuadrático de la atención en la mayor parte de la red, reservando la atención global completa para un subconjunto de capas, lo que permite sostener un contexto de 256K tokens con un coste de memoria y cómputo contenido para un modelo de 1,73B de parámetros.
+El modelo se basa en una arquitectura tri-hibrida que combina tres tipos de capas en sus 24 niveles: 13 capas de convolucion corta con compuerta (gated short convolutions), 5 capas de atencion de ventana deslizante (sliding-window attention) y 6 capas de atencion global. Esta mezcla busca reducir el coste computacional y de memoria frente a un transformer clasico con atencion completa en todas las capas, manteniendo la capacidad de modelar dependencias de largo alcance gracias a las capas de atencion global. El checkpoint publicado es un modelo de texto post-entrenado, no la version base.
 
-El checkpoint distribuido es un modelo post-entrenado (post-trained) solo de texto, construido sobre `LiquidAI/LFM3-1.7B-Base`. Según la model card, ha sido post-entrenado para "agentic harnesses" como Hermes Agent, Pi y OpenClaw, lo que implica ajuste orientado a uso de herramientas y razonamiento multi-paso. No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas concretas de RLHF o DPO. La versión GGUF fue generada con llama.cpp en el commit `ca89968a2`.
+El post-entrenamiento esta orientado a arneses agenticos (Hermes Agent, Pi y OpenClaw), lo que sugiere un ajuste especifico para tareas de uso de herramientas y razonamiento multi-paso. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La model card indica que el modelo esta pensado para ser especializado mediante fine-tuning rapido en una sola GPU.
 
 ## Capacidades
 
-- Generación de texto conversacional y completado de texto (pipeline `text-generation`).
-- Entrenamiento orientado a agentes: post-entrenado para harnesses agénticos como Hermes Agent, Pi y OpenClaw.
-- Razonamiento multi-paso en el contexto de flujos agénticos, según la orientación declarada del post-entrenamiento.
-- Manejo de contexto largo: ventana de 256K tokens, adecuada para documentos extensos y conversaciones multi-turno prolongadas.
-- Capacidades multilingües en 16 idiomas: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
-- Especialización mediante fine-tuning: la model card indica que puede adaptarse a dominios, formatos y herramientas concretos con fine-tuning rápido en una sola GPU.
-- Soporte de tool calling / function calling: no se detalla explícitamente en la información disponible, aunque el entrenamiento para harnesses agénticos sugiere compatibilidad; conviene verificar en la documentación oficial.
+- Generacion de texto conversacional y de proposito general.
+- Entrenamiento agentico orientado a arneses como Hermes Agent, Pi y OpenClaw.
+- Razonamiento multi-paso y ejecucion de tareas en entornos de agente (segun el diseno declarado en la model card).
+- Capacidades multilingues en 16 idiomas, incluidos castellano, ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, vietnamita, tailandes, indonesio, hindi, ruso y polaco.
+- Ventana de contexto de 256K tokens, adecuada para conversaciones largas y documentos extensos.
+- No se especifica en la informacion disponible soporte explicito de tool calling, vision, audio ni modo de pensamiento (thinking mode); la model card solo menciona el enfoque agentico.
 
 ## Casos de uso
 
-- Agentes locales en dispositivos móviles: con ~1 GB de memoria en 4 bits, el modelo puede ejecutar bucles de agente (planificación, llamada a herramientas, resumen) directamente en un teléfono o portátil sin conexión a la nube.
-- Asistentes conversacionales embebidos: su ventana de 256K tokens permite mantener historiales de conversación muy largos y recuperar contexto de documentos extensos sin truncamiento agresivo.
-- Procesamiento de documentos largos en el borde: resumen, extracción de entidades y respuesta a preguntas sobre contratos, informes o transcripciones que superen las decenas de miles de tokens, ejecutándose en hardware de consumo.
-- Automatización de flujos con herramientas: al estar post-entrenado para harnesses agénticos, puede integrarse en pipelines que requieran invocar APIs, ejecutar comandos o encadenar pasos de razonamiento en entornos de escritorio.
-- Atención al cliente multilingüe: con soporte para 16 idiomas, incluido el español, puede gestionar conversaciones multi-turno en centros de contacto con requisitos de privacidad (inferencia local, sin envío de datos a terceros).
-- Prototipado rápido y experimentación: el formato GGUF y su reducido tamaño permiten iterar con llama.cpp u Ollama en estaciones de trabajo sin GPU dedicada, evaluando comportamientos agénticos antes de escalar a modelos mayores.
-- Fine-tuning de dominio en una sola GPU: la model card destaca la adaptación rápida a dominios y formatos específicos, útil para verticales como legal, sanitario o soporte técnico interno.
+- Agentes locales en dispositivos de borde: el modelo puede ejecutarse en un telefono o portatil (aproximadamente 1 GB a 4 bits) y actuar como nucleo de un agente personal que gestione tareas, recordatorios y consultas sin conexion a la nube.
+- Asistente conversacional multilingue: con soporte para 16 idiomas y contexto de 256K tokens, puede mantener conversaciones largas y cambiar de idioma segun el usuario, adecuado para atencion al cliente en mercados internacionales.
+- Procesamiento de documentos extensos en local: la ventana de 256K tokens permite resumir, extraer informacion o responder preguntas sobre contratos, informes o manuales sin fragmentar el texto en trozos pequenos.
+- Fine-tuning especializado en una sola GPU: la model card indica que el modelo esta disenado para adaptarse a dominios, formatos y herramientas concretos mediante ajuste rapido, por ejemplo para un asistente interno de una empresa con vocabulario propio.
+- Automatizacion de flujos agenticos con herramientas: su post-entrenamiento para arneses como Hermes Agent o OpenClaw lo hace candidato para pipelines que encadenan llamadas a APIs y acciones multi-paso.
+- Prototipado y experimentacion en investigacion: al ser un GGUF ligero, permite iterar rapidamente en entornos con recursos limitados y comparar variantes de cuantizacion sin infraestructura dedicada.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente, los datos no salen del dispositivo, lo que resulta util en sectores regulados como sanidad o legal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1 GB en cuantización de 4 bits según la model card; las cuantizaciones de 8 bits y superiores requerirán más memoria (el repo completo ocupa 48,0 GB por incluir múltiples variantes).
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, el modelo es apto para GPUs de consumo como RTX 3060, RTX 4060, RTX 4090, así como para Apple Silicon y CPUs modernas.
-- Compatibilidad con GPU de consumo: sí, en 4 bits cabe holgadamente en cualquier GPU con 4 GB o más de VRAM, y también en teléfonos y portátiles según el fabricante.
-- Opciones de despliegue: llama.cpp (herramienta con la que se generaron los GGUF), Ollama, y cualquier runtime compatible con GGUF; el repo está marcado como `endpoints_compatible` y la librería declarada es transformers.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: aproximadamente 1 GB a 4 bits segun la model card; las cuantizaciones de mayor precision (8 bits, 16 bits) requeriran mas memoria, aunque no se detallan cifras exactas en la informacion proporcionada.
+- GPU recomendadas: no se especifican modelos concretos en la informacion disponible; por el tamano del modelo, es viable en GPUs de consumo como RTX 3060, RTX 4060 o superiores, asi como en Apple Silicon.
+- Cabe en GPU de consumo: si, dado el reducido tamano (1,73B parametros) y la disponibilidad de cuantizaciones GGUF.
+- Opciones de despliegue: llama.cpp (herramienta usada para generar los GGUF), Ollama y otros runners compatibles con GGUF; la model card original menciona transformers como libreria, pero esta version esta orientada a GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B (este) | 1,73B | 256K | lfm1.0 | GGUF / safetensors | Arquitectura tri-hybrid, post-entrenado para agentes |
-| Alternativas de ~1-2B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
+| LFM3-1.7B-GGUF (este) | 1,73B | 256K | lfm1.0 | GGUF | Arquitectura tri-hibrida, orientado a agentes |
+| Alternativas de ~1-2B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
-No se dispone de información suficiente en la documentación facilitada para establecer una comparativa rigurosa con modelos alternativos de la misma categoría (tamaño ~1-2B orientados a edge). Se recomienda consultar el blog de lanzamiento de Liquid AI y la colección LFM3 en Hugging Face para obtener datos comparativos oficiales.
+No se dispone en la informacion proporcionada de datos suficientes sobre modelos comparables de la misma categoria para establecer una comparativa rigurosa con parametros, contexto, rendimiento y licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la información disponible; como todo modelo entrenado con datos web, es previsible que herede sesgos de sus datos de entrenamiento.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de este tamaño; su reducida capacidad (1,73B) puede aumentar la tasa de errores factuales en tareas de conocimiento intensivo.
-- Limitaciones de contexto: aunque la ventana es de 256K tokens, la calidad de recuperación en posiciones muy lejanas del contexto no está validada en la información disponible.
-- Limitaciones de idioma: aunque declara 16 idiomas, el rendimiento relativo por idioma no se detalla; el español está soportado pero sin métricas publicadas.
-- Restricciones de licencia: la licencia `lfm1.0` es propia de Liquid AI y está marcada como "other"; es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial, ya que puede imponer condiciones específicas.
-- Caveat de producción: el modelo es solo de texto (no visión ni audio en este checkpoint); para capacidades multimodales habría que acudir a otras variantes de la familia LFM3.
-- El repo GGUF es una conversión de terceros (Mungert), no oficial de Liquid AI; conviene validar la fidelidad de las cuantizaciones frente a los pesos originales.
+- Sesgos conocidos: no se documentan en la informacion proporcionada; como todo modelo entrenado con datos web, es probable que herede sesgos, pero no hay datos concretos.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; conviene validar las salidas en aplicaciones criticas.
+- Limitaciones de contexto o idioma: aunque declara 256K tokens y 16 idiomas, no se especifica la calidad por idioma ni el comportamiento en contextos muy largos.
+- Restricciones de licencia: la licencia es "lfm1.0" (categoria "other"), por lo que es imprescindible revisar el archivo LICENSE antes de un uso comercial; no se detallan las condiciones en la informacion proporcionada.
+- Caveats para produccion: esta es una cuantizacion de terceros (Mungert) del modelo original de Liquid AI; la calidad puede variar segun la variante GGUF elegida. La fecha de creacion indicada (2026) resulta anomala y conviene verificarla en el repositorio.
+- El modelo es solo de texto; no se declaran capacidades de vision, audio ni tool calling explicito en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/Mungert/LFM3-1.7B-GGUF
-- Modelo base original: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
-- Modelo post-entrenado de referencia: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Colección LFM3: https://huggingface.co/collections/LiquidAI/lfm3
-- Blog de lanzamiento: https://www.liquid.ai/blog/lfm3
-- Documentación: https://docs.liquid.ai/lfm/getting-started/welcome
+- Repositorio Hugging Face: https://huggingface.co/Mungert/LFM3-1.7B-GGUF
+- Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
+- Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3
+- Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground: https://playground.liquid.ai/
 - Consola/API: https://console.liquid.ai/dashboard
+- Coleccion LFM3: https://huggingface.co/collections/LiquidAI/lfm3
 - llama.cpp (commit usado): https://github.com/ggerganov/llama.cpp/commit/ca89968a23a13e571a6b802a9891d22763153b61
-- Guía de selección de formato GGUF del autor: https://readyforquantum.com/huggingface_gguf_selection_guide.html
+- Guia de seleccion de GGUF: https://readyforquantum.com/huggingface_gguf_selection_guide.html

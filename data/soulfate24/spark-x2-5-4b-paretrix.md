@@ -2,118 +2,114 @@
 
 ## Resumen
 
-Spark-X2.5-4B-Paretrix es una redistribucion cuantizada en formato GGUF del modelo XHToken/Spark-X2.5-4B, publicada por el usuario Soulfate24 dentro de su suite empirica de cuantizacion denominada Paretrix. No se trata de un modelo entrenado desde cero, sino de una receta de compresion que asigna anchos de bits de forma heterogenea por clase de tensor en funcion de la sensibilidad de activacion medida con `llama-imatrix`, en lugar de aplicar un unico esquema uniforme a toda la red. El modelo base es un LLM compacto de proposito general con 4.112.079.360 parametros (~4,1 mil millones), orientado a conversacion, redaccion, traduccion, razonamiento, codigo, uso de herramientas y flujos agenticos.
+Spark-X2.5-4B-Paretrix es una suite de cuantizaciones GGUF del modelo base XHToken/Spark-X2.6-4B, un transformer de 4.112.079.360 parámetros orientado a generación de texto y flujos de agente. Lo publica el usuario Soulfate24 bajo licencia Apache 2.0 y emplea la metodología propia Paretrix, un esquema de cuantización híbrida guiado por activaciones que planifica cada nivel ("rung") mediante una mochila exacta sobre mediciones por clase de tensor, en lugar de aplicar una única familia de bits a toda la red.
 
-La relevancia de esta publicacion es practica: ofrece ocho variantes comprimidas con presupuestos que van desde 1664 MiB (Femto-21pc) hasta 3772 MiB (Fidelity-48pc), ademas de las cuantizaciones estandar de llama.cpp (Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx) como referencia. Cada nivel se presenta con metricas de degradacion (PPL, KLD, RMS delta-p y coincidencia de top-p) para que el usuario pueda elegir el punto de la frontera de Pareto que mejor se ajuste a su presupuesto de memoria. La licencia Apache 2.0 y la compatibilidad con llama.cpp facilitan su despliegue tanto en servidor como en equipos de consumo.
+El interés del artefacto no reside en un modelo nuevo, sino en el catálogo de variantes comprimidas con métricas de fidelidad publicadas (PPL, ΔPPL, KLD, RMS Δp y top-p) frente a los cuantizados estándar de llama.cpp (Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx). Cada nivel se posiciona en una frontera de Pareto declarada, de modo que el usuario puede elegir el compromiso tamaño/fidelidad con datos medidos y no estimados.
 
-El repositorio tiene 21,7 GB y, en la fecha de consulta, cero descargas y cero "likes", por lo que se trata de una publicacion reciente y sin validacion comunitaria independiente. La informacion sobre idiomas no aparece en la ficha de Hugging Face del modelo cuantizado, aunque la documentacion del modelo base de la serie Spark-X2.5 si menciona cobertura de mas de 200 idiomas y contexto nativo de hasta 1M de tokens.
+Además incluye módulos de decodificación especulativa (drafts DSpark) que aceleran la inferencia sobre el nivel Quality-36pc, con incrementos de throughput medidos de hasta ×2,46 según la cuantización de la caché KV. El repositorio ocupa 64,2 GB y acumula 9.319 descargas, lo que indica un uso real en despliegues locales con llama.cpp.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el autor no la detalla; se distribuye como LLM de generacion de texto compatible con transformers y llama.cpp) |
-| Parametros totales | 4.112.079.360 (~4,11 mil millones) |
-| Parametros activos | no disponible (no se ha confirmado que sea una arquitectura MoE) |
-| Longitud de contexto | hasta 1M de tokens en el modelo base Spark-X2.5-4B, segun la documentacion de la serie; no confirmado para esta version cuantizada |
-| Tipos de cuantizacion | GGUF estandar: Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx. Tiers Paretrix hibridos: Fidelity-48pc (3772 MiB), Precision-42pc (3359 MiB), Quality-36pc (2838 MiB), Compact-33pc (2587 MiB), Mini-30pc (2343 MiB), Nano-27pc (2123 MiB), Pico-24pc (1982 MiB), Femto-21pc (1664 MiB) |
-| Idiomas soportados | no disponible en la ficha del cuantizado; el modelo base declara mas de 200 idiomas |
+| Arquitectura | Transformer (detalles no disponibles en la información proporcionada) |
+| Parámetros totales | 4.112.079.360 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (el draft `draft-32K` sugiere ventanas de hasta 32K, sin confirmación) |
+| Tipos de cuantización | GGUF híbridos Paretrix: Fidelity-48pc, Precision-42pc, Quality-36pc, Compact-33pc, Mini-30pc, Nano-27pc, Pico-24pc, Femto-21pc; más bases stock Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el repositorio contiene ademas pesos safetensors segun los metadatos de parametros |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base XHToken/Spark-X2.5-4B en los materiales consultados: no se especifica si es un transformer denso, un MoE, un modelo hibrido ni el tipo de atencion empleado. Lo unico confirmado es que se distribuye con soporte para la libreria transformers y que se ha convertido a GGUF para su uso con llama.cpp, lo que implica una topologia compatible con las operaciones habituales de ese motor (atencion por cabezas, capas FFN y embeddings estandar).
+La información disponible describe el proceso de cuantización, no el preentrenamiento del modelo base. Spark-X2.6-4B es un transformer de 4,1 mil millones de parámetros del que no se detallan composición del dataset, número de tokens ni si hubo RLHF o DPO. Los tags incluyen `agent` y `conversational`, lo que sugiere un ajuste orientado a diálogo y uso como agente, pero no se aportan cifras.
 
-Respecto al entrenamiento, tampoco hay datos publicos sobre numero de tokens, composicion del dataset ni si se aplicaron fases de RLHF, DPO u otras tecnicas de alineamiento. La contribucion tecnica de esta publicacion concreta no esta en el entrenamiento, sino en el esquema de cuantizacion: Paretrix mide la sensibilidad real de activacion por clase de tensor mediante `llama-imatrix`, aprende tablas de tasa a partir de campanas entre arquitecturas y reparte el presupuesto de bits con objetivos exactos de tamano (recetas planas cuando la uniformidad gana y mochila calibrada por tasa cuando la heterogeneidad compensa). El resultado son tiers como Quality-36pc, que con 2838 MiB iguala en tamano a Q5_K_M-imx (2840 MiB) pero reduce el KLD de 0,0571 a 0,0437.
+La innovación técnica documentada es Paretrix: se toman tres bases stock (Q8_0, Q6_K-imx e IQ4_XS-imx), se mueve cada clase de tensor de forma aislada a cada tipo de cuantización y se mide la respuesta contra los logits en BF16. Con esas celdas, una mochila exacta planifica cada nivel y un duelo en el régimen de veredicto decide si el plan sustituye al campeón. El resultado son niveles con tamaños intermedios entre los estándar (por ejemplo, Quality-36pc con 2.894 MiB frente a Q5_K_M-imx con 2.840 MiB) pero con menor degradación de perplejidad. Se incluyen además drafts de decodificación especulativa: el oficial (415 MiB), `draft-32K` con capas oficiales y readout propio (453 MiB) y `draft-lite` podado y reentrenado (209 MiB).
 
 ## Capacidades
 
-- Generacion de texto conversacional y de proposito general: el modelo base esta disenado para dialogo, redaccion y resumen.
-- Razonamiento y matematicas: la serie Spark-X2.5 declara resultados competitivos en tareas cotidianas de razonamiento entre modelos abiertos de su categoria.
-- Generacion de codigo: incluida explicitamente entre las capacidades declaradas del modelo base.
-- Traduccion y cobertura multilingue: mas de 200 idiomas segun la documentacion de la serie.
-- Uso de herramientas (tool calling / function calling): declarado como capacidad soportada.
-- Flujos agenticos y razonamiento multi-paso: el modelo base y los tags del repositorio (`agent`, `sparkx2_5`) apuntan a este caso de uso.
-- Contexto largo: hasta 1M de tokens nativos en el modelo base, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
-- Compatibilidad con llama.cpp y con el ecosistema GGUF: permite inferencia en CPU, GPU o mixta, e integracion en servidores compatibles con la API de OpenAI (`endpoints_compatible` en los tags).
-- Modo "thinking" o vision/audio: no disponible / no declarado en la informacion consultada.
+- Generación de texto conversacional en inglés y chino.
+- Orientación a flujos de agente según los tags del repositorio (`agent`), sin detalle de soporte explícito de tool calling en la información disponible.
+- Decodificación especulativa mediante módulos DSpark, con ganancias de throughput medidas sobre el nivel Quality-36pc.
+- Despliegue en llama.cpp con cuantizaciones GGUF de distintos tamaños y perfiles de fidelidad.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`).
+- No se documentan capacidades de visión, audio, matemáticas avanzadas ni modo thinking.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno con historial extenso, apoyandose en el contexto de hasta 1M de tokens del modelo base para conservar el hilo de incidencias largas sin resumir en exceso.
-- Asistentes de codigo integrados en el IDE: con la variante Quality-36pc (2838 MiB) se puede ejecutar localmente en una GPU de consumo, ofreciendo autocompletado, explicacion de fragmentos y generacion de pruebas sin enviar codigo a servicios externos.
-- Agentes autonomos con tool calling: el soporte declarado de uso de herramientas permite construir pipelines en los que el modelo decide que funcion invocar (busqueda, calculo, acceso a base de datos) y encadena varios pasos hasta completar la tarea.
-- Traduccion y localizacion de contenido: con cobertura declarada de mas de 200 idiomas en el modelo base, encaja en flujos de traduccion de documentacion, correos o articulos, especialmente si se necesita procesar documentos completos de una sola pasada.
-- Procesamiento de documentos largos: informes financieros, expedientes legales o manuales tecnicos que superan la ventana tipica de 8K-32K tokens se pueden analizar integramente gracias al contexto extendido, extrayendo resumenes, entidades y respuestas concretas.
-- Despliegue en entornos con hardware limitado: la variante Femto-21pc (1664 MiB) permite ejecutar el modelo en portatiles sin GPU dedicada o en mini-PC con CPU, a costa de una degradacion de PPL notable (+6,3975 respecto a la referencia), util para prototipos y demos offline.
-- Clasificacion y enrutado de tickets: con Mini-30pc (2343 MiB) o Nano-27pc (2123 MiB) es viable mantener varias instancias en una sola GPU para etiquetar, priorizar y derivar solicitudes en tiempo casi real.
-- Generacion de contenido y copywriting: redaccion de borradores de blog, fichas de producto o correos, con la ventaja de que el modelo corre en local y la licencia Apache 2.0 permite uso comercial sin restricciones de peso.
+- Inferencia local en estaciones de trabajo: los niveles Compact-33pc (2.660 MiB) y Mini-30pc (2.424 MiB) permiten ejecutar un modelo de 4B en GPU de consumo con pérdida de perplejidad contenida (+0,0489 y +0,4101 respectivamente frente a BF16), adecuado para prototipos y asistentes personales.
+- Servicio conversacional de bajo coste: el nivel Quality-36pc (2.894 MiB) ofrece el mejor equilibrio declarado entre tamaño y fidelidad y, combinado con el draft `draft-32K`, alcanza 112,7 t/s con caché KV q8_0 y 106,1 t/s con q5_1, útil para chat multi-turno con latencia ajustada.
+- Despliegue en hardware limitado: Femto-21pc (1.750 MiB) y Pico-24pc (1.978 MiB) caben en GPUs con 4-6 GB de VRAM, pensados para entornos embebidos o portátiles sin GPU dedicada.
+- Aceleración de pipelines existentes: si ya se sirve Spark-X2.6-4B en llama.cpp, sustituir el GGUF stock por el nivel Paretrix equivalente reduce tamaño manteniendo o mejorando PPL y KLD, sin cambios en la integración.
+- Evaluación de estrategias de cuantización: la tabla publicada de PPL, KLD, RMS Δp y top-p por nivel sirve como referencia para decidir presupuestos de bits en otros modelos de la misma familia, ya que el autor indica que las mediciones se heredan entre modelos de la familia.
+- Generación de texto bilingüe inglés-chino: el soporte declarado de ambos idiomas cubre casos de atención al cliente o documentación en esos mercados, siempre con validación propia porque no hay benchmarks multilingües publicados.
+- Decodificación especulativa en producción: `draft-lite` (209 MiB) ofrece ×1,78 con KV q8_0 y ×2,30 con KV q5_1, una opción de bajo coste de memoria para acelerar el servicio sin el draft completo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El unico conjunto de metricas publicado es el de calidad de cuantizacion de la suite Paretrix, medido sobre el propio modelo:
+Métricas de cuantización publicadas por el autor (PPL de referencia BF16: 14,7611 según los deltas; KLD y RMS Δp frente a logits BF16):
 
-| Modelo (tier GGUF) | MiB | PPL | Delta PPL | KLD | RMS delta-p | top-p | Pareto |
-|---|---:|---:|---:|---:|---:|---:|---|
-| Q8_0 (stock) | 4172 | 19,9740 | -0,1394 | 0,0047 | 1,60 % | 97,3 % | si |
-| Fidelity-48pc | 3772 | 20,0099 | -0,1035 | 0,0115 | 2,49 % | 95,3 % | si |
-| Precision-42pc | 3359 | 19,7049 | -0,4085 | 0,0128 | 2,66 % | 95,0 % | si |
-| Q6_K-imx (stock) | 3223 | 19,6832 | -0,4303 | 0,0173 | 3,02 % | 93,8 % | si |
-| Q5_K_M-imx (stock) | 2840 | 20,8885 | +0,7751 | 0,0571 | 5,57 % | 89,4 % | dominado por Quality-36pc |
-| Quality-36pc | 2838 | 20,0193 | -0,0941 | 0,0437 | 4,70 % | 90,4 % | si |
-| Compact-33pc | 2587 | 20,6036 | +0,4902 | 0,0976 | 7,16 % | 86,1 % | si |
-| Mini-30pc | 2343 | 21,3848 | +1,2714 | 0,1203 | 8,06 % | 84,6 % | si |
-| IQ4_XS-imx (stock) | 2266 | 23,2522 | +3,1388 | 0,1678 | 9,45 % | 81,8 % | si |
-| Nano-27pc | 2123 | 22,3853 | +2,2719 | 0,2498 | 11,35 % | 78,4 % | si |
-| Pico-24pc | 1982 | 19,4291 | -0,6843 | 0,2812 | 12,30 % | 76,9 % | si |
-| IQ3_M-imx (stock) | 1949 | 21,6523 | +1,5389 | 0,3635 | 14,23 % | 73,7 % | si |
-| Femto-21pc | 1664 | 26,5109 | +6,3975 | 0,5799 | 17,22 % | 67,7 % | si |
+| Modelo | MiB | PPL | ΔPPL | KLD | RMS Δp | top-p |
+|---|---:|---:|---:|---:|---:|---:|
+| Q8_0 (stock) | 4172 | 14,9008 | +0,1397 | 0,0037 | 1,43% | 97,7% |
+| Fidelity-48pc | 3767 | 14,8424 | +0,0813 | 0,0068 | 1,90% | 97,0% |
+| Precision-42pc | 3356 | 14,9059 | +0,1448 | 0,0100 | 2,41% | 96,0% |
+| Q6_K-imx (stock) | 3223 | 14,8915 | +0,1304 | 0,0148 | 2,97% | 95,2% |
+| Quality-36pc | 2894 | 15,2836 | +0,5225 | 0,0263 | 4,04% | 93,4% |
+| Q5_K_M-imx (stock) | 2840 | 15,9084 | +1,1473 | 0,0503 | 5,37% | 90,8% |
+| Compact-33pc | 2660 | 14,8100 | +0,0489 | 0,0517 | 5,34% | 90,5% |
+| Mini-30pc | 2424 | 15,1712 | +0,4101 | 0,0781 | 6,75% | 88,2% |
+| IQ4_XS-imx (stock) | 2266 | 14,9378 | +0,1767 | 0,1194 | 8,06% | 84,9% |
+| Nano-27pc | 2201 | 14,7133 | −0,0478 | 0,1240 | 8,25% | 85,1% |
+| Pico-24pc | 1978 | 15,5452 | +0,7842 | 0,2228 | 11,63% | 79,5% |
+| IQ3_M-imx (stock) | 1949 | 19,8316 | +5,0705 | 0,4549 | 16,95% | 72,0% |
+| Femto-21pc | 1750 | 16,7988 | +2,0378 | 0,3624 | 14,58% | 74,4% |
 
-Advertencias sobre esta tabla: no se especifica en la informacion disponible cual es la linea base contra la que se calculan Delta PPL y KLD, ni el corpus de evaluacion empleado. El valor de PPL de Pico-24pc aparece marcado con una daga (†) en la model card original, pero la nota al pie no se ha incluido en la informacion proporcionada, por lo que su significado es "no disponible". Estos numeros miden fidelidad respecto al modelo de referencia, no calidad absoluta en tareas.
+Rendimiento de decodificación especulativa sobre Quality-36pc:
+
+| Draft | Módulo | KV q8_0 | KV q5_1 |
+|---|---:|---:|---:|
+| official draft | 415 MiB | 106,3 t/s · ×1,92 | 98,6 t/s · ×2,30 |
+| `draft-32K` | 453 MiB | 112,7 t/s · ×2,02 | 106,1 t/s · ×2,46 |
+| `draft-lite` | 209 MiB | 98,7 t/s · ×1,78 | 98,2 t/s · ×2,30 |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada de pesos segun tier: 1664 MiB (Femto-21pc), 1949 MiB (IQ3_M-imx), 1982 MiB (Pico-24pc), 2123 MiB (Nano-27pc), 2266 MiB (IQ4_XS-imx), 2343 MiB (Mini-30pc), 2587 MiB (Compact-33pc), 2838 MiB (Quality-36pc), 2840 MiB (Q5_K_M-imx), 3223 MiB (Q6_K-imx), 3359 MiB (Precision-42pc), 3772 MiB (Fidelity-48pc) y 4172 MiB (Q8_0). Hay que sumar el espacio de la cache KV, que crece de forma lineal con la longitud de contexto.
-- Modelo base sin cuantizar (fp16/bf16): los 4,11 mil millones de parametros ocupan aproximadamente 8,2 GB solo en pesos, por lo que se necesita una GPU de 12-16 GB para trabajar con comodidad.
-- GPU recomendadas: para fp16, RTX 4080/4090, L4, L40S, A100 o H100. Para tiers intermedios (Compact-33pc, Quality-36pc, Q6_K, Precision-42pc, Fidelity-48pc), GPU de 8 GB como RTX 3060 Ti, RTX 4060 Ti o RTX 3070 son suficientes en la mayoria de escenarios con contextos moderados.
-- Cabe en GPU de consumo: si. Los tiers Femto-21pc, IQ3_M-imx, Pico-24pc, Nano-27pc, IQ4_XS-imx y Mini-30pc se ajustan a GPU de 4-6 GB (GTX 1650, RTX 3050 6 GB, RTX 2060) e incluso a inferencia parcial en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python); servidores con API compatible con OpenAI segun el tag `endpoints_compatible`; transformers para los pesos safetensors. No se menciona soporte explicito para vLLM o TGI en la informacion disponible.
-- Latencia y throughput: no disponibles. Dependen del tier elegido, de si la inferencia es total o parcialmente en GPU y de la longitud de contexto efectiva; con ventanas cercanas a 1M de tokens la cache KV puede dominar el consumo de memoria.
-- Nota sobre contexto largo: aunque el modelo base declare 1M de tokens, ejecutar esa ventana completa exige memoria para la cache KV muy superior a la de los pesos, por lo que en hardware de consumo se recomienda trabajar con ventanas reducidas o cuantizar la cache.
+- VRAM estimada según el tamaño del GGUF: Femto-21pc ~1,7 GB, Pico-24pc ~1,9 GB, Nano-27pc ~2,2 GB, Mini-30pc ~2,4 GB, Compact-33pc ~2,6 GB, Quality-36pc ~2,8 GB, Precision-42pc ~3,3 GB, Fidelity-48pc ~3,7 GB. Hay que sumar la caché KV y el draft si se usa decodificación especulativa.
+- GPU de consumo: cualquier tarjeta con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 2070) puede alojar los niveles Mini a Quality con margen para contexto y caché KV; los niveles Femto y Pico caben en GPUs de 4 GB.
+- GPU profesionales: A100, H100 y RTX 4090 no son necesarias para el tamaño del modelo, pero permiten lotes grandes y mayor contexto.
+- Despliegue: llama.cpp es el runtime de referencia (formato GGUF, tags `llama.cpp` e `imatrix`); también se declara compatibilidad con endpoints. No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- Throughput medido: 98,2-112,7 t/s en el escenario de decodificación especulativa sobre Quality-36pc, con variación según la cuantización de la caché KV (q8_0 frente a q5_1). No se especifica el hardware de la medición.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
-|---|---:|---|---|---|---|
-| Spark-X2.5-4B-Paretrix (este) | 4,11 mil millones | hasta 1M en el base (no confirmado en el cuantizado) | Apache 2.0 | GGUF, safetensors | 13 tiers de cuantizacion con metricas PPL/KLD publicadas |
-| XHToken/Spark-X2.5-4B | 4,11 mil millones | hasta 1M | no disponible en la informacion consultada | safetensors (modelo original) | Modelo base de esta publicacion |
-| Spark-X2.5-1.7B | no disponible | no disponible | no disponible en la informacion consultada | no disponible | Variante compacta de la misma serie, mencionada en el repositorio oficial |
-| Soulfate24/Spark-X2.5-4B-ASHQ1-Remix-GGUF | 4,11 mil millones | no disponible | Apache 2.0 | GGUF | Cuantizacion alternativa del mismo base, publicada por el mismo autor |
-| nassimjp/Spark-X2.5-4B | 4,11 mil millones | no disponible | no disponible | no disponible | Replica o copia del modelo base en Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Spark-X2.5-4B-Paretrix | 4,11B | no disponible | Apache 2.0 | GGUF | Niveles híbridos con métricas de fidelidad publicadas y drafts especulativos |
+| Spark-X2.6-4B (base) | 4,11B | no disponible | no disponible en la información | transformers/safetensors | Modelo original sin cuantizar; referencia de PPL BF16 |
+| Q5_K_M-imx stock | 4,11B | no disponible | Apache 2.0 (derivado) | GGUF | 2.840 MiB, ΔPPL +1,1473; Compact-33pc lo iguala en tamaño con ΔPPL +0,0489 |
+| IQ4_XS-imx stock | 4,11B | no disponible | Apache 2.0 (derivado) | GGUF | 2.266 MiB, KLD 0,1194; Nano-27pc logra KLD 0,1240 con 65 MiB menos |
 
-No se dispone de datos de rendimiento ni de especificaciones comparables de modelos de terceros (por ejemplo, alternativas densas de ~3-4B) en la informacion proporcionada, por lo que no se puede establecer una comparativa de calidad frente a otras familias.
+No se dispone de datos de otros modelos de 4B comparables (Qwen, Llama, Phi) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles. No hay documentacion sobre composicion del dataset ni auditoria de sesgos del modelo base.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible. Como cualquier LLM de 4B, la tasa de invencion de hechos es previsiblemente mayor que en modelos de mayor tamano, especialmente en dominios especializados.
-- Degradacion por cuantizacion: los tiers agresivos pierden fidelidad de forma acusada. Femto-21pc presenta un incremento de PPL de +6,3975 y un KLD de 0,5799; Nano-27pc, +2,2719 y 0,2498. Para tareas sensibles se recomienda Quality-36pc o superior.
-- Metricas sin baseline documentada: la tabla de la model card no indica contra que referencia se calculan Delta PPL y KLD ni el corpus de evaluacion, lo que limita la interpretabilidad de los numeros.
-- Valor atipico no explicado: PPL de Pico-24pc aparece con una daga sin nota al pie en la informacion disponible; conviene tratar ese dato con cautela.
-- Idiomas: la ficha de Hugging Face del cuantizado no declara idiomas. La cobertura de mas de 200 idiomas proviene de la documentacion del modelo base y no ha sido verificada de forma independiente en esta version.
-- Contexto largo en la practica: la ventana de 1M de tokens del modelo base no esta confirmada para el cuantizado y su uso real esta limitado por la memoria de la cache KV.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion y conservacion del aviso de licencia. Verificar que el modelo base XHToken/Spark-X2.5-4B mantiene la misma licencia antes de un despliegue comercial.
-- Madurez y soporte: el repositorio tiene cero descargas y cero "likes" en la fecha de consulta, sin issues ni validacion comunitaria. No hay garantia de mantenimiento ni de actualizaciones por parte del autor.
-- Fechas: la ficha figura creada y actualizada el 8 de octubre de 2026, una fecha posterior a la informacion disponible sobre el modelo base; conviene contrastar la procedencia de los pesos antes de usarlos en produccion.
+- No hay benchmarks de tareas (razonamiento, código, matemáticas) publicados; las métricas disponibles miden fidelidad de cuantización, no calidad funcional.
+- El soporte de tool calling y de flujos de agente solo se infiere de los tags; no está documentado con ejemplos ni evaluaciones.
+- La longitud de contexto no se especifica; el nombre `draft-32K` no confirma la ventana real del modelo base.
+- Solo se declaran inglés y chino; el rendimiento en castellano no está evaluado.
+- Los niveles agresivos (Femto-21pc, Pico-24pc) muestran degradación notable: ΔPPL +2,04 y +0,78, KLD 0,36 y 0,22, top-p 74,4% y 79,5%. No son recomendables para producción sensible a la fidelidad.
+- El dato de Nano-27pc con ΔPPL negativo (−0,0478) se marca con una daga en la model card; conviene tratarlo con cautela porque un valor inferior al de referencia puede indicar ruido de medición.
+- Las cifras de throughput no indican el hardware empleado, por lo que no son directamente trasladables a otros entornos.
+- Aunque la licencia es Apache 2.0, el modelo base y sus condiciones deben verificarse por separado antes de uso comercial.
+- Riesgo de alucinación y sesgos del modelo base no documentados en la información disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Soulfate24/Spark-X2.5-4B-Paretrix
-- Modelo base Spark-X2.5-4B: https://huggingface.co/XHToken/Spark-X2.5-4B
-- Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
-- Cuantizacion alternativa del mismo autor (ASHQ1-Remix-GGUF): https://huggingface.co/Soulfate24/Spark-X2.5-4B-ASHQ1-Remix-GGUF
-- Repositorio oficial de la serie Spark-X2.5: https://github.com/XHToken/Spark-X2.5
-- Pagina de modelos y agentes de XHToken: https://xhtoken.ai/
-- Pagina del modelo en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-4B
-- Replica del modelo base en Hugging Face: https://huggingface.co/nassimjp/Spark-X2.5-4B
+- Repositorio Hugging Face: https://huggingface.co/Soulfate24/Spark-X2.5-4B-Paretrix
+- Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
+- Draft DSpark oficial: https://huggingface.co/XHToken/Spark-X2.6-4B-DSpark-GGUF
+- Suite de cuantización Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite

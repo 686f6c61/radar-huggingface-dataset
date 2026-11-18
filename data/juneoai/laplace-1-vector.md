@@ -2,103 +2,106 @@
 
 ## Resumen
 
-Laplace-1-Vector es un modelo de lenguaje de 4.112 millones de parametros (4,1B) desarrollado por JuneoAI, presentado como el miembro "edge" de la familia Laplace-1 de modelos de decision causal-intervencional. Su proposito no es la generacion de texto generalista, sino emitir juicios operativos sobre acciones de agentes: dado un estado de la organizacion, una cadena de autoridad y un conjunto de acciones candidatas, el modelo devuelve una distribucion sobre esas candidatas que se traduce en tres veredictos (proceder, devolver a una persona o bloquear). Se distribuye con licencia Apache-2.0 y pesos completos en BF16.
+Laplace-1-Vector es un modelo de lenguaje de 4.112 millones de parámetros (4,1B) desarrollado por JuneoAI, especializado en toma de decisiones causales e intervencionistas para agentes autónomos. Se presenta como el miembro "edge" de la familia Laplace-1, junto al modelo insignia Laplace-1-Atlas de 27,4B. Su propósito es predecir las consecuencias de una acción candidata antes de ejecutarla, modelando la distribución interventional p(s' | do(a), s, C), donde s es el estado de la organización, a la acción y C la cadena de autoridad.
 
-El modelo se construye como un fine-tuning de XHToken/Spark-X2.6-4B y esta disenado para ejecutarse en hardware propio de la organizacion (on-premises o on-device), de modo que los datos no abandonan la infraestructura del cliente. Segun la model card, ocupa el primer puesto en 7 de 8 benchmarks de decision frente a modelos de Perplexity, IBM, Liquid AI, Together AI, TokenRhythm y Shanghai AI Lab, y supera a IBM Granite Switch 4.1 8B en los 8 benchmarks pese a tener la mitad de parametros.
+El modelo está afinado a partir de XHToken/Spark-X2.6-4B y se distribuye con licencia Apache-2.0 y pesos completos en BF16 (8,2 GB). Su propuesta central es que un juicio sea un único forward pass: se leen las probabilidades sobre los candidatos directamente desde los logits del siguiente token, sin muestreo ni parsing, lo que abarata su uso delante de cada acción de un agente. Está pensado para ejecutarse en hardware propio de la organización (on-premises u on-device), de modo que los datos sensibles no salgan del perímetro.
 
-La relevancia actual del modelo radica en su enfoque: en lugar de competir en capacidad generativa, ataca el problema de la supervision de agentes autonomos conectados por A2A y MCP, donde no existe un mecanismo estandar que anticipe las consecuencias de una accion antes de ejecutarla. La innovacion declarada es aprender la distribucion interventional p(s' | do(a), s, C) a partir de un dataset propio (Decision Forge), algo que los datos publicos observacionales no capturan.
+La relevancia actual del modelo reside en su enfoque: frente a los LLM generalistas que aprenden de datos observacionales, Laplace aprende de datos intervencionistas compilados desde políticas organizativas mediante la herramienta Decision Forge, con cada etiqueta replicada desde una regla y trazada a su fuente. Según el autor, encabeza 7 de 8 benchmarks de decisión frente a modelos de Perplexity, IBM, Liquid AI, Together AI, TokenRhythm y Shanghai AI Lab.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (fine-tuning de XHToken/Spark-X2.6-4B); requiere `custom_code` |
-| Parametros totales | 4.112.079.360 (4,1B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (pesos publicados en BF16) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer causal (fine-tune de XHToken/Spark-X2.6-4B); detalles internos no disponibles |
+| Parámetros totales | 4.112.079.360 (4,1B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (pesos publicados en BF16) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (BF16, repositorio de 8,2 GB) |
+| Formato de pesos | safetensors (BF16, 8,2 GB); requiere `custom_code` |
 
 ## Arquitectura y entrenamiento
 
-Laplace-1-Vector es un transformer causal derivado por fine-tuning de XHToken/Spark-X2.6-4B. La model card no detalla la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO; unicamente indica que el juicio del modelo proviene de "Decision Forge", un conjunto de datos propio del proyecto publicado en el repositorio de GitHub Juneo-Lab/decision-forge. El objetivo declarado del entrenamiento es modelar la distribucion interventional p(s' | do(a), s, C): el siguiente estado de una organizacion tras una accion candidata, condicionado a la cadena de autoridad del agente.
+Laplace-1-Vector es un fine-tune del modelo base XHToken/Spark-X2.6-4B, un transformer causal de aproximadamente 4B parámetros. La model card no detalla la arquitectura interna del modelo base (número de capas, dimensiones, tipo de atención) ni la longitud de contexto. El modelo requiere `trust_remote_code` por el uso de código personalizado (`custom_code`) para su carga en transformers.
 
-La innovacion tecnica principal no reside en el bloque transformer sino en la interfaz de inferencia: el modelo expone dos primitivas. La primera es el scoring de candidatas, que lee una distribucion sobre las opciones exactas proporcionadas directamente de los logits del siguiente token, en un unico forward pass, sin muestreo ni parseo posterior. La segunda es la prediccion de resultados, que genera la siguiente observacion dado un conjunto de reglas de entorno, contexto y accion. Esta lectura directa de logits es lo que permite calificar cada accion a bajo coste. No se documentan mecanismos adicionales como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
+El entrenamiento se realizó íntegramente sobre datos generados con Decision Forge, un pipeline que compila políticas organizativas en ejemplos de decisión donde cada etiqueta se replica a partir de una regla explícita y se traza hasta su fuente. El objetivo declarado es aprender la distribución interventional de consecuencias p(s' | do(a), s, C). No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon técnicas de RLHF o DPO. La innovación técnica destacada es el modo de inferencia: la decisión se obtiene en un único forward pass leyendo una distribución sobre los candidatos a partir de los logits del siguiente token, sin muestreo ni parsing posterior.
 
 ## Capacidades
 
-- Toma de decisiones sobre acciones de agentes: clasifica cada accion candidata como proceder, devolver a una persona o bloquear.
-- Scoring de candidatas en un solo forward pass mediante lectura de logits, sin muestreo ni parsing.
-- Prediccion de consecuencias: genera la siguiente observacion de un entorno dadas sus reglas, el contexto y una accion.
-- Razonamiento causal-interventional orientado a prever el efecto de una accion sobre el estado de una organizacion.
-- Seleccion de siguiente accion y enrutamiento entre opciones predefinidas.
-- Decisiones de control de acceso y escalado (casos de uso citados en la evaluacion: OrgAccess, escalado).
-- Integracion en flujos de agentes con A2A y MCP, segun la motivacion de la model card.
-- Ejecucion on-premises y on-device.
-- Capacidades multilingues: no disponibles.
-- Vision, audio y modo thinking: no disponibles.
+- Toma de decisiones estructurada: puntuación de candidatos (candidate scoring) devolviendo una distribución sobre las opciones proporcionadas.
+- Predicción de consecuencias de acciones (consequence prediction) bajo un estado y una cadena de autoridad dados.
+- Asignación de trabajo: recomendar qué persona o rol debe poseer una tarea.
+- Control de acceso e información: decidir qué roles pueden ver qué datos y en qué grado.
+- Decisión de actuación: ejecutar, ajustar o escalar una acción según su consecuencia prevista.
+- Evaluación de resultados: comprobar si un entregable cumple sus criterios de aceptación.
+- Orientado a agentes y seguridad de agentes (tags `agents`, `agent-safety`), con integración prevista vía A2A y MCP según la model card.
+- Ejecución on-device y on-premises para mantener los datos en el perímetro de la organización.
+- Capacidades multilingües: no disponibles.
+- No se documentan capacidades de visión, audio ni modo "thinking" explícito.
 
 ## Casos de uso
 
-- Supervision de agentes autonomos en produccion: colocado delante de cada llamada a herramienta de un agente, el modelo recibe el estado actual, la cadena de autoridad y la accion propuesta, y devuelve un veredicto de proceder, escalar o bloquear. Es adecuado porque la decision cuesta un unico forward pass sobre un modelo de 4B, lo que permite aplicarla a todas las acciones y no solo a una muestra.
-- Control de acceso y permisos (OrgAccess): dado un estado organizativo y una solicitud de acceso, el modelo puntua las opciones de conceder, denegar o escalar a un responsable. La evaluacion publicada incluye este escenario entre los benchmarks donde el modelo queda a menos de 0,5 puntos del Laplace-1-Atlas de 27B.
-- Enrutamiento de solicitudes y escalado a humanos: uso de la primitiva de scoring de candidatas para decidir a que cola, equipo o persona derivar una peticion, con la opcion de "devolver a una persona" integrada como candidata explicita.
-- Previsualizacion de consecuencias antes de ejecutar una accion: mediante la primitiva de prediccion de resultados, el sistema genera la siguiente observacion esperada del entorno y la muestra al operador o la usa como comprobacion previa a la ejecucion.
-- Despliegue en entornos con requisitos de soberania del dato: al ejecutarse on-premises u on-device con pesos Apache-2.0 y sin acceso restringido, encaja en organizaciones que no pueden enviar estados internos a APIs de terceros.
-- Guardrail en pipelines de agentes conectados por MCP: interceptar llamadas a herramientas y aplicar el juicio del modelo como capa de seguridad antes de que la llamada salga del sistema.
-- Evaluacion de decisiones organizativas en simulacion: usar la prediccion de estados siguientes para comparar el impacto de varias acciones candidatas sobre el estado de la organizacion antes de comprometerse con una.
+- Enrutamiento de tareas en organizaciones con agentes: dado un estado y una lista de candidatos (personas o agentes), el modelo devuelve una distribución sobre quién debe recibir la tarea en un solo forward pass, lo que permite enrutar cada nueva entrada a bajo coste.
+- Control de acceso a datos sensibles: colocado delante de una consulta, decide si un rol concreto puede ver un campo o registro, manteniendo los datos dentro del hardware propio y sin enviarlos a un proveedor externo.
+- Escalado de acciones de agentes: para cada acción propuesta, el modelo estima la consecuencia y decide si ejecutarla, ajustarla o derivarla a un humano, actuando como capa de seguridad antes de invocar herramientas.
+- Verificación de entregables: comprobar automáticamente si un resultado cumple sus criterios de aceptación antes de la firma, devolviendo la probabilidad de cada veredicto.
+- Puerta de aprobación en pipelines de negocio: decidir si un contrato o pedido supera un umbral y debe enviarse a su responsable, integrándose como paso previo en flujos existentes.
+- Despliegue en dispositivos con recursos limitados: al ser un modelo de 4,1B con pesos BF16 de 8,2 GB, puede ejecutarse en servidores on-premises o en hardware de borde para juicios locales sin conexión a la nube.
+- Evaluación de políticas organizativas: usar el modelo para simular la consecuencia de distintas reglas de asignación o acceso antes de aplicarlas en producción.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card. Los guiones indican que el modelo comparable no reporta resultado en esa prueba.
+La model card reporta los siguientes resultados declarados por el autor:
 
-| Benchmark | Laplace-1-Vector (4B) | Decider Flash v1.2 (4B, Perplexity) | Tev1-4B (Together AI) | NeoHorse-Jev-4B (TokenRhythm) | d1-3B (Liquid AI) | Granite Switch 4.1 (8B, IBM) | Intern-Decision-4B (Shanghai AI Lab) |
-|---|---|---|---|---|---|---|---|
-| JevBench | 89,0 | 89,0 | 83,2 | 78,5 | 84,3 | 82,2 | 88,5 |
-| JEVal | 68,2 | 75,0 | 54,6 | 55,2 | 64,6 | 65,9 | 58,0 |
-| When2Call | 83,1 | 76,8 | 62,0 | 58,0 | 80,4 | 57,1 | 69,5 |
-| AgentDecisionBench L2 common | 89,6 | 85,8 | — | 63,9 | 54,8 | 67,9 | — |
-| AgentDecisionBench L2 shift | 88,1 | 85,6 | — | 68,8 | 56,2 | 62,0 | — |
-| Coherence | 85,2 | 83,2 | 75,2 | — | 74,3 | 72,6 | — |
+| Benchmark | Resultado | Nota |
+|---|---|---|
+| AgentDecisionBench L2 common | 89,6% | Por delante de todos los modelos de la comparativa |
+| AgentDecisionBench L2 shift | 88,1% | Por delante de todos los modelos de la comparativa |
+| Posición global | 1.º en 7 de 8 benchmarks de decisión | Empates contabilizados |
 
-La model card afirma que el modelo queda primero en 7 de 8 benchmarks (contando empates) y que supera a Granite Switch 4.1 8B en los 8 benchmarks por un margen de 2,3 a 26,1 puntos. El unico benchmark de la tabla donde no lidera es JEVal, con 68,2 frente a los 75,0 de Decider Flash v1.2. No se publican resultados de benchmarks generalistas (MMLU, HumanEval, GSM8K) en la informacion disponible.
+Comparaciones declaradas por el autor:
+
+- Frente a IBM Granite Switch 4.1 8B: supera en los 8 benchmarks, por un margen de 2,3 a 26,1 puntos.
+- Frente a Laplace-1-Atlas (27,4B): se mantiene a menos de 0,5 puntos en COMPASS, OrgAccess y Coherence.
+
+No se han publicado en la información disponible los valores numéricos completos de cada benchmark ni resultados de benchmarks estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 8,2 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se recomienda reservar entre 10 y 12 GB.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 4,5-5 GB de pesos; en 4 bits, en torno a 2,5-3 GB. Estas cifras son estimaciones por tamano y no estan confirmadas por el autor, que no publica artefactos cuantizados.
-- GPU de datacenter: A100, H100 y equivalentes sin problema; el modelo es pequeno para estos aceleradores y el cuello de botella sera la latencia de red, no el computo.
-- GPU de consumo: cabe en RTX 4090 (24 GB) y RTX 3090 (24 GB) en BF16; en tarjetas de 8-12 GB requerira cuantizacion.
-- Despliegue: la libreria declarada es transformers y el modelo requiere `custom_code`, por lo que hay que confiar en el codigo remoto del repositorio o auditarlo. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la informacion disponible; dado que no se publican GGUF, llama.cpp y Ollama no estan disponibles de forma directa.
-- Latencia y throughput: no disponibles. La model card solo afirma que una decision es un unico forward pass, sin cifras de latencia ni tokens por segundo.
+- VRAM estimada para inferencia en BF16: en torno a 8,2 GB de pesos más overhead de activaciones y KV cache; no se especifica la cifra exacta.
+- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, un modelo de 4,1B en BF16 encaja en GPUs de consumo con 12-16 GB o más (por ejemplo, RTX 4090), aunque el autor no confirma modelos concretos.
+- Cabe en GPU de consumo: probablemente sí en BF16 en GPUs de 16 GB o más; no confirmado por el autor.
+- Opciones de despliegue: transformers con `trust_remote_code` (único formato confirmado). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, ni versiones GGUF.
+- Latencia y throughput: no disponibles. El autor destaca que una decisión es un único forward pass, lo que reduce el coste frente a esquemas de muestreo y parsing.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Resultado destacado |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laplace-1-Vector | 4,1B | No disponible | Decision causal-interventional, edge | Apache-2.0 | 89,6 en AgentDecisionBench L2 common |
-| Laplace-1-Atlas | 27,4B | No disponible | Decision causal-interventional, flagship | No disponible en la informacion | Referencia de la familia; Vector queda a menos de 0,5 puntos en COMPASS, OrgAccess y Coherence |
-| Decider Flash v1.2 (Perplexity) | 4B | No disponible | Decision | No disponible | 75,0 en JEVal, 85,8 en AgentDecisionBench L2 common |
-| Granite Switch 4.1 (IBM) | 8B | No disponible | Decision | No disponible | 82,2 en JevBench; superado por Vector en los 8 benchmarks |
-| d1-3B (Liquid AI) | 3B | No disponible | Decision | No disponible | 84,3 en JevBench, 54,8 en AgentDecisionBench L2 common |
+| Laplace-1-Vector | 4,1B | no disponible | Decisión causal / edge | Apache-2.0 | Pesos abiertos |
+| Laplace-1-Atlas | 27,4B | no disponible | Decisión causal / insignia | no disponible | Pesos abiertos (familia) |
+| IBM Granite Switch 4.1 8B | 8B | no disponible | Decisión / enrutamiento | no disponible | no disponible |
+| Modelos de Perplexity, Liquid AI, Together AI, TokenRhythm, Shanghai AI Lab | no disponible | no disponible | Decisión | no disponible | no disponible |
+
+Según el autor, Vector supera a Granite Switch 4.1 8B en los 8 benchmarks (entre 2,3 y 26,1 puntos) y se mantiene a menos de 0,5 puntos de Atlas en COMPASS, OrgAccess y Coherence. No se dispone de cifras detalladas del resto de competidores.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado: no es un modelo de proposito general. Su uso previsto es el scoring de candidatas y la prediccion de consecuencias; emplearlo como generador de texto abierto no es su diseno y no hay evaluacion publicada en esa direccion.
-- Sesgos: no se documenta ninguna evaluacion de sesgos, toxicidad o equidad en la informacion disponible.
-- Alucinacion: la primitiva de prediccion de resultados genera la siguiente observacion, por lo que puede producir consecuencias plausibles pero incorrectas; en un guardrail de seguridad esto es critico y exige validacion externa.
-- Contexto e idiomas: la longitud de contexto y los idiomas soportados no estan publicados, lo que impide planificar su uso en conversaciones largas o en espanol sin pruebas previas.
-- Dependencia de `custom_code`: la carga requiere ejecutar codigo remoto del repositorio con `trust_remote_code`, lo que introduce un riesgo de cadena de suministro en produccion.
-- Madurez: el repositorio tiene 0 descargas y 2 likes en el momento de la consulta, y los benchmarks son autoinformados por el autor sin verificacion independiente; los conjuntos de evaluacion (JevBench, AgentDecisionBench, When2Call) no son estandar de la industria.
-- Licencia: Apache-2.0 permite uso comercial sin restricciones adicionales, pero no hay garantias ni indemnizacion por parte del autor.
-- Ausencia de cuantizaciones oficiales: no se publican GGUF ni AWQ/GPTQ, de modo que el despliegue en hardware limitado exige generarlas y validar que no degradan el scoring de logits.
+- Sesgos conocidos: no documentados en la información disponible.
+- Riesgo de alucinación: no evaluado explícitamente; el modelo está especializado en decisiones y no en generación abierta, por lo que su uso fuera del dominio previsto puede degradar la fiabilidad.
+- Idiomas soportados: no especificados; no hay garantía de comportamiento multilingüe.
+- Longitud de contexto: no disponible, lo que impide planificar despliegues con conversaciones o estados organizativos extensos.
+- Dependencia de `custom_code`: requiere `trust_remote_code=True` en transformers, lo que implica ejecutar código del autor y revisarlo antes de producción.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero se recomienda verificar el archivo LICENSE del repositorio.
+- Datos de benchmarks: los resultados provienen del propio autor y no se han verificado de forma independiente en la información disponible.
+- Madurez: modelo reciente (creado el 2026-11-01) y de nicho; ecosistema de despliegue (GGUF, vLLM) no confirmado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JuneoAI/Laplace-1-Vector
-- Modelo flagship de la familia: https://huggingface.co/JuneoAI/Laplace-1-Atlas
-- Dataset Decision Forge: https://github.com/Juneo-Lab/decision-forge
+- Demo (Space): https://huggingface.co/spaces/JuneoAI/Laplace-1-Vector
+- Modelo insignia Laplace-1-Atlas: https://huggingface.co/JuneoAI/Laplace-1-Atlas
+- Decision Forge (datos): https://github.com/Juneo-Lab/decision-forge
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
-- Contacto comercial: business@juneo.ai
+- Contacto: business@juneo.ai

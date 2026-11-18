@@ -2,91 +2,91 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-0.6B-GGUF es una cuantización en formato GGUF del modelo de síntesis de voz Qwen3-TTS-12Hz-0.6B-Base, desarrollado originalmente por el equipo Qwen de Alibaba y empaquetado para inferencia local por el usuario BricksDisplay. El modelo resuelve el problema de generar voz sintética de alta calidad con clonación de voz (voice cloning) a partir de una muestra de referencia corta, en diez idiomas, y ejecutándose completamente offline en CPU o GPU.
+Qwen3-TTS-12Hz-0.6B-GGUF es la versión cuantizada en formato GGUF del modelo de síntesis de voz Qwen3-TTS-12Hz-0.6B-Base de Alibaba Qwen, publicada por el usuario BricksDisplay. Se trata de un sistema de text-to-speech con clonación de voz que cubre diez idiomas (ingles, chino, japones, coreano, frances, aleman, espanol, italiano, portugues y ruso) y que mantiene el caracter offline del ecosistema llama.cpp.
 
-La particularidad de este empaquetado es su arquitectura de dos ficheros: un *backbone* (el modelo de lenguaje texto-a-voz, ejecutado por llama.cpp) y un *codec* (decodificador/vocoder, codificadores de hablante y adaptador entre ambos, ejecutado por codec.cpp). Esta separación recuerda al patrón de proyectores multimodales de llama.cpp y permite reutilizar el ecosistema GGUF existente para TTS.
+La particularidad de este empaquetado es que el modelo se distribuye en dos ficheros complementarios: un backbone de lenguaje (el LM de TTS) que ejecuta llama.cpp, y un fichero de codec que contiene el decodificador/vocoder, los encoders de hablante y el adaptador entre ambos, ejecutado por codec.cpp. Esta separacion permite reutilizar la infraestructura de llama.cpp para la parte linguistica y delegar la sintesis de audio a un runtime especializado.
 
-El modelo base tiene 661.281.985 parámetros (aproximadamente 0,6B) y está liberado bajo licencia Apache 2.0, lo que lo hace atractivo para integración comercial y despliegue en dispositivos de borde. El repositorio GGUF ocupa 49,2 GB en total, pero las combinaciones recomendadas de backbone más codec ocupan entre 1,7 GB y 2,6 GB, lo que permite ejecución en hardware de consumo.
+El modelo base cuenta con 661.281.985 parametros y esta pensado para despliegue local en CPU o GPU (CUDA, Vulkan, Metal) sin conexion. La relevancia actual radica en que ofrece clonacion de voz multilingue con un peso reducido (desde 1,06 GB en la configuracion mas ligera) y bajo licencia Apache 2.0, lo que facilita su integracion en aplicaciones de escritorio, moviles y sistemas embebidos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de lenguaje texto-a-voz (backbone) + codec de audio separado (decoder/vocoder, codificadores de hablante y adaptador); inferencia vía llama.cpp + codec.cpp |
-| Parámetros totales | 661.281.985 (dato real de safetensors del modelo base) |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Modelo de lenguaje para TTS (backbone) + codec/vocoder separado; inferencia via llama.cpp y codec.cpp |
+| Parametros totales | 661.281.985 |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | f32, f16, bf16, q8_0, q6_k, q5_k_m, q5_k_s, q5_1, q5_0, q4_k_m, q4_k_s, q4_1, q4_0, q3_k_l, q3_k_m, q3_k_s, q2_k (para backbone y codec por separado) |
+| Tipos de cuantizacion | q2_k, q3_k_s, q3_k_m, q3_k_l, q4_0, q4_1, q4_k_s, q4_k_m, q5_0, q5_1, q5_k_s, q5_k_m, q6_k, q8_0, f16, bf16, f32 (backbone); f32, f16, q8_0, q5_k_m, q4_k_m, q8_0-lm-q4_k_m (codec) |
 | Idiomas soportados | en, zh, ja, ko, fr, de, es, it, pt, ru |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (dos ficheros: backbone y codec) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un esquema de dos grafos computacionales acoplados. El *backbone* es un modelo de lenguaje que transforma texto en tokens/embeddings de audio y se ejecuta con llama.cpp; el *codec* contiene el decodificador/vocoder, los codificadores de hablante y el adaptador que conecta las representaciones del backbone con el audio final, y se ejecuta con codec.cpp. La frecuencia de muestreo de tokens de audio es de 12 Hz, según el nombre del modelo. Esta separación permite cuantizar por separado cada componente y reutilizar la infraestructura de llama.cpp (CPU, CUDA, Vulkan, Metal) para la parte lingüística.
+El modelo sigue un esquema en dos grafos. El backbone es un modelo de lenguaje de 0,6B parametros que genera tokens discretos de audio a partir del texto de entrada y, opcionalmente, de un audio de referencia para clonacion de voz. El codec es un modulo independiente que incluye el decodificador/vocoder, los encoders de hablante y el adaptador que conecta la salida del LM con el dominio de audio. La frecuencia de trabajo es de 12 Hz, lo que implica un frame rate bajo de tokens de audio por segundo, coherente con el nombre del modelo.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card sí documenta los parámetros de muestreo recomendados, heredados del `generation_config.json` del modelo original: temperatura 0,9, top-k 50, top-p 1,0 (desactivado), min-p 0 (desactivado), penalización de repetición 1,05 con ventana de 4096 tokens, y orden de samplers penalties → temperature → top-k → top-p. La penalización de repetición se aplica solo al primer codebook de cada frame, igual que en el modelo original, y es importante mantenerla para evitar bucles en las cuantizaciones más pequeñas al clonar voces con transcripción de referencia.
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF o DPO. La model card del repositorio cuantizado no documenta estos aspectos, y el modelo base original no aporta esa informacion en los datos facilitados. La innovacion tecnica destacable es la separacion backbone/codec, que permite ejecutar cada parte con un runtime distinto y reutilizar llama.cpp como host del LM, ademas de soportar streaming de audio mediante `tts.stream(text)` en Python.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) en diez idiomas: inglés, chino, japonés, coreano, francés, alemán, español, italiano, portugués y ruso.
-- Clonación de voz (voice cloning) a partir de una muestra de audio de referencia corta y limpia, con cualquier frecuencia de muestreo.
-- Streaming de audio: la API Python `tts.stream(text)` devuelve audio a medida que se genera.
-- Guardado y reutilización de voces (`--save-speaker` en CLI, `tts.voices()` en Python).
-- Ejecución totalmente offline en CPU o GPU (CUDA, Vulkan, Metal).
-- Integración móvil vía llama.rn (iOS y Android) con el mismo par de ficheros.
-- Soporte de decodificación de embeddings continuos (`continuous_embd`) o de tokens de audio, según el flujo del modelo.
-- No es un modelo de texto generativo, razonamiento, código ni visión: su única salida es audio.
+- Sintesis de voz (text-to-speech) a partir de texto en diez idiomas.
+- Clonacion de voz mediante audio de referencia (`--ref-audio` / `ref_audio=`), con cualquier frecuencia de muestreo de entrada.
+- Guardado y reutilizacion de voces clonadas (`--save-speaker`).
+- Streaming de audio generado token a token en la API Python.
+- Ejecucion totalmente offline en CPU y GPU (CUDA, Vulkan, Metal).
+- Soporte de despliegue en movil via llama.rn (iOS y Android).
+- Aplicacion de parametros de muestreo recomendados embebidos en metadatos GGUF (temperatura 0.9, top-k 50, top-p 1.0, min-p 0, penalizacion de repeticion 1.05, ventana 4096).
+- No dispone de voces integradas: requiere siempre audio de referencia para clonar.
 
 ## Casos de uso
 
-- Audiolibros y narración automatizada: el modelo convierte texto largo en voz con una voz de referencia consistente, y el streaming permite empezar a reproducir antes de completar la síntesis.
-- Asistentes de voz en dispositivos de borde: con la combinación q4_k_m (1,7 GB) o q8_0 (1,9 GB) puede ejecutarse en portátiles y móviles mediante llama.rn, sin conexión a internet.
-- Clonación de voz para accesibilidad: usuarios que pierden la voz pueden grabar una muestra corta y reutilizarla con `--save-speaker` para generar nueva voz en diez idiomas.
-- Localización de contenido multimedia: un mismo guion puede sintetizarse en inglés, español, francés, alemán, etc., manteniendo el timbre de la voz de referencia.
-- Integración en pipelines de CI/CD para pruebas de audio: la API Python `codec_cpp` permite generar ficheros WAV deterministas (con los parámetros de muestreo fijados) para tests de regresión de audio.
-- Prototipado de interfaces conversacionales: el streaming y la baja huella de memoria permiten construir demos de asistentes por voz en entornos sin GPU.
-- Generación de voces para videojuegos y contenido interactivo: la clonación con muestras cortas y el soporte multilingüe facilitan doblajes rápidos de personajes.
+- Clonacion de voz personal para asistentes: el modelo permite generar respuestas habladas con la voz del usuario a partir de un clip corto de referencia, util en asistentes de escritorio o moviles que funcionan sin conexion.
+- Audiolibros y narracion automatizada: con diez idiomas soportados y la posibilidad de guardar voces, se puede narrar texto largo con una voz consistente entre capitulos reutilizando el hablante guardado.
+- Accesibilidad y lectura en voz alta: integracion en lectores de pantalla o aplicaciones de accesibilidad que necesiten sintesis local en dispositivos sin GPU dedicada, gracias a la configuracion q4_0 + codec q8_0-lm-q4_k_m de 1,06 GB.
+- Doblaje y localizacion de contenido: el soporte multilingue (es, fr, de, it, pt, ru, en, zh, ja, ko) permite generar pistas de voz en distintos idiomas manteniendo un timbre de referencia comun.
+- Prototipado de interfaces conversacionales: el streaming de audio y la ejecucion en CPU facilitan iterar sobre dialogos hablados en entornos de desarrollo sin infraestructura de GPU.
+- Aplicaciones moviles offline: mediante llama.rn en iOS y Android se puede empaquetar el modelo en una app que sintetice voz sin enviar datos a servidores externos, relevante por privacidad.
+- Generacion de contenido para videojuegos o podcasts: la clonacion de voz y el bajo peso permiten generar lineas de dialogo con voces de referencia en pipelines de produccion locales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: la combinación recomendada (backbone q8_0 + codec q8_0) ocupa 1,9 GB en disco; la más pequeña (q4_k_m en ambos) 1,7 GB; la de mayor calidad (f16 en ambos) 2,6 GB. El backbone por sí solo va desde 296 MB (q2_k) hasta 2,4 GB (f32); el codec desde 1,3 GB (q5_k_m) hasta 1,7 GB (f32).
-- GPU recomendadas: no se especifican modelos concretos en la información disponible; el runtime soporta CUDA, Vulkan y Metal, por lo que cabe en GPUs de consumo con al menos ~2-3 GB de VRAM libre para las combinaciones cuantizadas.
-- Cabe en GPU de consumo: sí, con las cuantizaciones q4/q5/q8; también en CPU pura.
-- Opciones de despliegue: `tts-cli` y `tts-server` de codec.cpp (que incluye llama.cpp), paquete Python `codec_cpp`, y llama.rn para iOS/Android. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: no disponible de forma explicita; el peso del modelo en disco orienta el consumo. Configuracion recomendada (q8_0 backbone + codec q8_0): 1,9 GB. Configuracion mas pequena (q4_k_m + codec q4_k_m): 1,7 GB. Mejor calidad (f16 + f16): 2,6 GB. Configuracion para moviles (q4_0 + codec q8_0-lm-q4_k_m): 1,06 GB.
+- GPU recomendadas: no se especifican modelos concretos; el modelo soporta CUDA, Vulkan y Metal, por lo que es compatible con GPUs NVIDIA, AMD e Intel via Vulkan y con Apple Silicon via Metal.
+- Cabe en GPU de consumo: si, dado el reducido tamano (inferior a 3 GB en todas las configuraciones documentadas), es viable en GPUs de consumo con suficiente memoria libre.
+- Opciones de despliegue: codec.cpp (`tts-cli`, `tts-server`), llama.cpp como host del backbone, paquete Python `codec_cpp`, y llama.rn para iOS y Android.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Clonación de voz | Licencia | Formato/despliegue |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3-TTS-12Hz-0.6B-GGUF (este) | ~0,66B | 10 | Sí | Apache 2.0 | GGUF, llama.cpp + codec.cpp, llama.rn |
-| Qwen3-TTS-12Hz-0.6B-Base (original) | ~0,66B | 10 | Sí | Apache 2.0 | Pesos originales (no GGUF) |
-| Otras alternativas TTS | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Qwen3-TTS-12Hz-0.6B-GGUF (este) | 661 M | No disponible | 10 | Apache 2.0 | GGUF |
+| Qwen3-TTS-12Hz-0.6B-Base | 661 M | No disponible | 10 | Apache 2.0 | Safetensors (original) |
+| Alternativas de TTS open source | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos competidores comparables, por lo que la comparativa se limita al modelo base original y a la ausencia de alternativas documentadas.
+Solo se dispone de datos del modelo base original como referencia directa. No se han proporcionado datos de otros modelos TTS comparables en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo Base no incluye voces integradas: cada ejecución requiere `--ref-audio` con una muestra corta y limpia de la voz a clonar (o una voz previamente guardada con `--save-speaker`).
-- Sin la penalización de repetición recomendada (1,05), una voz clonada con transcripción de referencia puede entrar en bucle en las cuantizaciones más pequeñas en lugar de terminar la síntesis.
-- No se han publicado datos de sesgos, tasas de alucinación ni evaluaciones de calidad subjetiva (MOS) en la información disponible.
-- La longitud de contexto no está documentada; se desconoce el límite práctico de texto por síntesis.
-- El repositorio completo ocupa 49,2 GB, aunque solo se necesitan dos ficheros (backbone + codec) por ejecución.
-- Riesgo de uso indebido de la clonación de voz: la licencia Apache 2.0 permite uso comercial, pero no se documentan salvaguardas técnicas contra suplantación de identidad.
-- El paquete Python `codec_cpp` requiere CMake y un compilador de C++ para compilar codec.cpp con su llama.cpp embebido, lo que añade complejidad al despliegue.
-- No se documentan limitaciones específicas por idioma más allá de la lista de diez idiomas soportados.
+- El modelo es la variante Base: no incluye voces integradas, por lo que toda sintesis requiere un audio de referencia para clonar.
+- Sin la penalizacion de repeticion (1.05) configurada, una voz clonada con transcripcion de referencia puede entrar en bucle en las cuantizaciones mas pequenas en lugar de terminar la generacion.
+- No se documentan sesgos conocidos, pero al ser un modelo entrenado con datos no especificados, existe riesgo de sesgos en el timbre, prosodia o cobertura linguistica.
+- Riesgo de alucinacion en la generacion de audio: no se documenta en la informacion disponible, aunque es un fenomeno comun en modelos generativos.
+- La longitud de contexto no esta disponible, lo que limita la planificacion de textos largos sin pruebas previas.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base original y de los datos de entrenamiento no documentados.
+- El despliegue requiere compilar codec.cpp con su llama.cpp embebido (CMake y compilador C++), lo que anade complejidad frente a un paquete Python puro.
+- El repo ocupa 57,5 GB por incluir todas las cuantizaciones; conviene descargar solo los dos ficheros necesarios (backbone + codec).
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
-- codec.cpp (runtime de audio): https://github.com/mybigday/codec.cpp
-- Documentación Python de codec.cpp: https://github.com/mybigday/codec.cpp/tree/main/python
+- codec.cpp: https://github.com/mybigday/codec.cpp
+- Documentacion Python de codec.cpp: https://github.com/mybigday/codec.cpp/tree/main/python
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- llama.rn (TTS en móvil): https://github.com/mybigday/llama.rn
-- Documentación TTS de llama.rn: https://github.com/mybigday/llama.rn#text-to-speech-tts
+- llama.rn: https://github.com/mybigday/llama.rn
+- Documentacion TTS de llama.rn: https://github.com/mybigday/llama.rn#text-to-speech-tts

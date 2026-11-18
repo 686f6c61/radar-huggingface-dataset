@@ -2,104 +2,98 @@
 
 ## Resumen
 
-THX-02 es un modelo de decisión ("decision model") desarrollado por HAL-X-AI, presentado como sucesor de THX-01 (0,3 B). A diferencia de un LLM generativo convencional, THX-02 recibe un *estado* (un mensaje, un ticket, un documento, un registro JSON, una traza de agente, una imagen o un gráfico) junto con un conjunto de preguntas tipadas redactadas en lenguaje natural, y devuelve para cada pregunta una distribución de probabilidad completa sobre las opciones suministradas. No genera texto libre salvo cuando activa su modo de razonamiento ("thinking"), y nunca inventa opciones fuera del conjunto proporcionado.
+THX-02 es un modelo de decisión con capacidad de razonamiento desarrollado por HAL-X-AI. A diferencia de los modelos generativos convencionales, THX-02 recibe un estado (un mensaje, un ticket, un documento, un registro JSON, una traza de agente, una imagen o un grafico) junto con un conjunto de preguntas tipadas redactadas en lenguaje natural, y devuelve para cada pregunta una distribución de probabilidad completa sobre las opciones suministradas. No genera texto libre salvo cuando activa su modo de pensamiento, y nunca inventa opciones que no esten en la peticion.
 
-El modelo tiene 4.539.265.536 parámetros (aproximadamente 4,5 B) más un adaptador de razonamiento de 60 M, y está entrenado para contextos de hasta 32k tokens por petición. Soporta tres tipos de pregunta: `choice` (hasta 255 opciones), `noul` (sí/no) y `score` (escala ordenada). Es multimodal (texto, imágenes y gráficos, hasta 4 imágenes por petición) y multilingüe, con entrenamiento y evaluación en más de 20 idiomas durante el post-entrenamiento.
+El modelo cuenta con 4.539.265.536 parametros (aproximadamente 4,5 B) mas un adaptador de pensamiento de 60 M, con un contexto entrenado de hasta 32.000 tokens por peticion. Es multimodal (hasta 4 imagenes por peticion), multilingue (entrenado y evaluado en mas de 20 idiomas durante el post-entrenamiento) y esta disenado para no requerir reentrenamiento cuando aparecen nuevas tareas: el conjunto de etiquetas forma parte de la propia peticion.
 
-Su relevancia práctica radica en la combinación de latencia baja (mediana de 50 ms sin thinking y 79 ms con thinking autogestionado en una RTX PRO 6000; 129 peticiones por segundo en una RTX 4090), calibración de probabilidades y ausencia de reentrenamiento para nuevas tareas, ya que el conjunto de etiquetas forma parte de la propia petición. La licencia es Apache-2.0.
+Su relevancia actual radica en que sustituye el patron de "prompt generativo + parseo de salida" por una interfaz de clasificacion nativa con probabilidades calibradas, latencias de decenas de milisegundos (mediana de 50 ms sin pensamiento y 79 ms con pensamiento en una RTX PRO 6000; 129 peticiones por segundo en una RTX 4090) y licencia Apache-2.0. THX-02 es el sucesor de THX-01 (0,3 B), sobre el que mejora de 11,30 a 65,06 en la misma evaluacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de decisión con adaptador de razonamiento separado) |
-| Parametros totales | 4.539.265.536 (4,5 B) + 60 M del adaptador de thinking |
+| Arquitectura | no disponible (modelo de decision; transformer multimodal segun la model card, sin detalle del backbone) |
+| Parametros totales | 4.539.265.536 (4,5 B) + 60 M del adaptador de pensamiento |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | entrenado hasta 32k tokens por petición |
-| Tipos de cuantizacion | BF16 en GPU; BF16 o FP32 en CPU (no se documentan otras) |
-| Idiomas soportados | en, az, zh, kk, uz, ky, ja, es, ru, tr (entrenado y evaluado en más de 20 idiomas en post-entrenamiento) |
+| Longitud de contexto | hasta 32.000 tokens por peticion (entrenado) |
+| Tipos de cuantizacion | BF16 en GPU; BF16 o FP32 en CPU (no se documentan GGUF, INT8 ni INT4) |
+| Idiomas soportados | en, az, zh, kk, uz, ky, ja, es, ru, tr (etiquetas de la model card); entrenado y evaluado en mas de 20 idiomas en post-entrenamiento |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del backbone (no se especifica si es un transformer denso, MoE o híbrido). Lo que sí se documenta es la separación en dos componentes: un modelo de decisión de 4,5 B y un adaptador de razonamiento ("think adapter") de 60 M que se activa de forma autogestionada cuando el modelo detecta incertidumbre y la pregunta requiere razonamiento. El modelo está diseñado para producir directamente una distribución de probabilidad sobre opciones tipadas (`choice`, `noul`, `score`) en lugar de texto libre, lo que implica una cabeza de clasificación calibrada sobre el estado de entrada y las instrucciones de cada pregunta.
+La informacion disponible no detalla la arquitectura interna (tipo de backbone, atencion, capas) mas alla de que se trata de un modelo de decision multimodal que procesa texto, imagenes y graficos en la misma peticion (hasta 4 imagenes) y que incorpora un adaptador de pensamiento separado de 60 M de parametros. El modelo expone tres tipos de pregunta: `choice` (hasta 255 opciones), `noul` (si/no) y `score` (escala ordenada). La salida es siempre una distribucion de probabilidad sobre las opciones proporcionadas, con una confianza asociada, y no se emite texto libre salvo en el modo de pensamiento.
 
-En cuanto a datos de entrenamiento, la model card menciona que el post-entrenamiento cubre más de 20 idiomas, pero no se especifica el número de tokens, la composición del dataset ni si se emplearon técnicas concretas de RLHF o DPO. Tampoco se detallan innovaciones como decodificación especulativa o atención lineal. La innovación destacada es funcional: el conjunto de etiquetas y las instrucciones de cada pregunta forman parte de la petición, de modo que el modelo no requiere reentrenamiento para nuevas tareas de clasificación o enrutamiento. El modelo se distribuye con la librería `thx02`, que incluye un cliente sin dependencias y una ruta GPU compilada opcional (`requirements-fast.txt`).
+Sobre el entrenamiento, la model card unicamente indica que el modelo fue entrenado y evaluado en mas de 20 idiomas durante el post-entrenamiento y que el conjunto de etiquetas es parte de la peticion, de modo que no hace falta reentrenar para tareas nuevas. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon RLHF, DPO u otras tecnicas de alineacion. El modo de pensamiento es autocontrolado ("self-gated"): el modelo decide cuando escribir un pensamiento breve antes de responder, lo que anade latencia (de 50 a 79 ms de mediana en la RTX PRO 6000) y mejora la puntuacion en la evaluacion interna (65,06 con pensamiento frente a 63,83 sin el).
 
 ## Capacidades
 
-- Clasificación zero-shot con etiquetas definidas en la petición: preguntas de tipo `choice` con hasta 255 opciones, `noul` (sí/no) y `score` (escala ordenada).
-- Salida calibrada: cada respuesta es una distribución de probabilidad completa sobre las opciones suministradas, con campo de confianza; el modelo no inventa opciones.
-- Modo thinking autogestionado: cuando el modelo es incierto y la pregunta lo requiere, escribe un breve pensamiento antes de decidir; puede forzarse con `think=True` o dejarse en `think="auto"`.
-- Multimodalidad: acepta texto, imágenes y gráficos en la misma petición, con hasta 4 imágenes (por ejemplo, capturas de pantalla o gráficos de series temporales).
-- Multilingüe: entrenado y evaluado en más de 20 idiomas en post-entrenamiento; la model card cita 10 idiomas en metadatos (en, az, zh, kk, uz, ky, ja, es, ru, tr).
-- Procesamiento por lotes: endpoint `/v1/decide/batch` para decidir múltiples estados en una sola llamada.
-- Uso en agentes: la demo de "screen agent" muestra al modelo eligiendo botones numerados sobre capturas de pantalla para completar objetivos de varios pasos.
-- No se documenta soporte explícito de tool calling ni de function calling en el sentido habitual de los LLM generativos.
+- Clasificacion zero-shot con etiquetas definidas en la peticion, sin reentrenamiento por tarea.
+- Salida de probabilidades calibradas sobre todas las opciones suministradas; el modelo no inventa opciones ni genera texto libre fuera del modo de pensamiento.
+- Tres tipos de pregunta: `choice` (hasta 255 opciones), `noul` (si/no) y `score` (escala ordenada).
+- Modo de pensamiento autocontrolado (`think="auto"`, `think=True`) para preguntas que requieren razonamiento.
+- Multimodalidad: texto, imagenes y graficos en la misma peticion, hasta 4 imagenes.
+- Multilingue: mas de 20 idiomas en post-entrenamiento; etiquetas oficiales en en, az, zh, kk, uz, ky, ja, es, ru y tr.
+- Procesamiento por lotes mediante el endpoint `/v1/decide/batch`.
+- Capacidad de actuar como componente de decision en agentes: en la demo de agente de pantalla elige botones numerados a partir de capturas para completar un objetivo.
+- Uso en movil: el cliente de PyPI no tiene dependencias y funciona en Termux en Android.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket y devuelve la probabilidad de cada departamento (`billing`, `support`, `sales`) junto con prioridad y sentimiento; con umbrales de confianza (por ejemplo, 0,60) los casos dudosos se derivan a revisión humana. La demo de clasificación en vivo procesa 24 mensajes en 16 idiomas en una sola llamada de 641 ms.
-- Control de calidad visual en línea de producción: la demo de clasificación de huevos usa un detector de vocabulario abierto para dibujar las cajas y THX-02 decide `clean`, `dirty` o `cracked` para cada huevo (16 huevos por fotograma en una RTX 4090). El patrón es aplicable a inspección de piezas, defectos de fabricación o verificación de etiquetado.
-- Extracción de decisiones sobre documentos y registros JSON: dado un registro estructurado y preguntas tipadas, el modelo devuelve probabilidades por campo, lo que permite construir pipelines de validación con umbrales de confianza en lugar de parsear texto libre.
-- Agentes que operan interfaces gráficas: la demo de reserva de vuelos muestra al modelo interpretando capturas de pantalla con botones numerados y eligiendo la acción siguiente para cumplir un objetivo multi-paso ("el vuelo más barato de Bakú a Estambul el 24 de octubre que salga antes del mediodía, para 2 adultos").
-- Análisis de gráficos financieros: con una imagen de un gráfico (por ejemplo, inflación y tipo de política, 2018-2025) y una pregunta `choice`, el modelo responde en qué año el tipo real fue más negativo, sin necesidad de OCR ni de extracción tabular previa.
-- Moderación y triaje de contenido: preguntas `noul` y `score` sobre mensajes de usuario permiten obtener probabilidades calibradas de que un mensaje sea abusivo o el grado de frustración del cliente, útiles para priorizar colas de revisión.
-- Clasificación multilingüe sin reentrenamiento: al formar parte la etiqueta de la petición, un mismo despliegue cubre nuevos dominios e idiomas cambiando solo las instrucciones y los criterios, sin fine-tuning.
+- Enrutado de tickets de soporte: el modelo recibe el mensaje del cliente y devuelve la probabilidad de cada departamento (facturacion, soporte tecnico, ventas), con umbral de derivacion a humano cuando la confianza es baja (en la demo, un mensaje vago obtuvo 0,38 y se envio a revision humana). Es adecuado porque la latencia por lote es de centenares de milisegundos y las etiquetas se definen en la peticion.
+- Control de calidad visual en linea de produccion: con un detector de vocabulario abierto que dibuja las cajas, THX-02 decide limpio, sucio o roto para cada huevo (16 por fotograma en una RTX 4090). El modelo es apropiado por su latencia y porque combina imagen y pregunta tipada en una sola llamada.
+- Agente de interfaz (screen agent): dado un objetivo y capturas de pantalla con botones numerados, el modelo elige el siguiente control, como en la demo de reserva de un vuelo con restricciones de precio, fecha y horario.
+- Extraccion de campos de documentos y registros JSON: se envian preguntas de tipo `choice` o `noul` sobre el registro y se obtiene una distribucion por campo, util para pipelines que necesitan umbrales de confianza en lugar de parsear texto generado.
+- Analisis de sentimiento y prioridad en atencion al cliente: con preguntas de tipo `score` (por ejemplo, calma, molesta, enfadada) se obtiene una escala ordenada con probabilidades, y en la demo se procesaron 24 mensajes en 16 idiomas en una sola llamada de 641 ms.
+- Enrutado de decisiones dentro de pipelines de agentes: el modelo actua como capa de decision rapida (50-79 ms de mediana) que selecciona la siguiente accion a partir de una traza del agente, adecuado para bucles multi-paso donde la latencia importa.
+- Lectura de graficos: el ejemplo de la model card decide en que ano el tipo de interes real fue mas negativo a partir de un grafico de inflacion y tipo de politica, combinando vision y pregunta `choice`.
 
 ## Benchmarks y rendimiento
 
-| Metrica | THX-02 | THX-01 (0,3 B) |
-|---|---|---|
-| Decision Index 0.3 (con thinking) | 65,06 | 11,30 |
-| Decision Index 0.3 (sin thinking) | 63,83 | no disponible |
-| Decision Vision Index (conjuntos públicos) | 72,19 | no disponible |
+| Benchmark | THX-02 con pensamiento | THX-02 sin pensamiento | THX-01 (0,3 B) |
+|---|---|---|---|
+| Decision Index 0.3 (indice publico) | 65,06 | 63,83 | 11,30 |
+| Decision Vision Index (conjuntos publicos) | 72,19 | no disponible | no disponible |
 
-Datos de latencia y throughput publicados en la model card:
-
-| Metrica | Valor |
-|---|---|
-| Latencia mediana sin thinking (RTX PRO 6000) | 50 ms por petición |
-| Latencia mediana con thinking autogestionado (RTX PRO 6000) | 79 ms por petición |
-| Throughput (RTX 4090) | 129 peticiones por segundo |
-| Lote de 24 mensajes en 16 idiomas (`/v1/decide/batch`) | 641 ms en una RTX 4090 |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los datos de latencia y throughput indicados por el autor son: mediana de 50 ms por peticion sin pensamiento y 79 ms con pensamiento en una RTX PRO 6000; 129 peticiones por segundo en una RTX 4090; lote de 24 mensajes en 641 ms en una RTX 4090.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: no disponible de forma explícita; con 4,5 B de parámetros más el adaptador de 60 M, el peso en BF16 ronda los 9 GB, lo que encaja con el tamaño del repositorio (9,6 GB). En FP32 en CPU el requisito de memoria sería aproximadamente el doble.
-- GPU recomendadas según la model card: RTX PRO 6000 (latencia de 50-79 ms por petición) y RTX 4090 (129 peticiones por segundo).
-- GPU de consumo: por el tamaño en BF16, el modelo debería caber en GPU de consumo con 12-16 GB o más de VRAM, aunque la model card no publica una lista de GPUs de consumo validadas.
-- Despliegue: paquete `thx02` de PyPI con cliente sin dependencias y modo local (`thx02[local]`, `THX02.load(...)`), ruta GPU compilada opcional (`requirements-fast.txt`), servidor propio accesible vía `Client(base_url="http://host:8200")` y API alojada en `api.hal-x.ai`. También se documenta el uso en Android con Termux. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: ver tabla de benchmarks; en CPU el rendimiento no está documentado.
+- VRAM estimada: no disponible de forma explicita; con 4,5 B parametros en BF16 el peso ronda los 9 GB, mas overhead de activaciones y del procesador de vision, por lo que se recomienda margen sobre esa cifra.
+- GPU recomendadas segun el autor: RTX 4090 y RTX PRO 6000 (ambas citadas en las mediciones de latencia y throughput de la model card).
+- GPU de consumo: el modelo se ha ejecutado en una RTX 4090 (24 GB), por lo que cabe en GPU de consumo de gama alta; no se documenta su comportamiento en GPU con menos VRAM.
+- Despliegue: paquete `thx02` de PyPI con cliente sin dependencias y servidor local (`THX02.load(...)`), ruta GPU compilada mediante `requirements-fast.txt`, y API alojada en `api.hal-x.ai` con endpoint `/v1/decide/batch`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- CPU: soportada en BF16 o FP32 (`THX02.load(".", device="cpu")`); no se publican metricas de latencia en CPU.
+- Movil: cliente compatible con Termux en Android.
+- Latencia y throughput: mediana de 50 ms sin pensamiento y 79 ms con pensamiento en RTX PRO 6000; 129 peticiones por segundo en RTX 4090; 24 decisiones en 641 ms por lote en RTX 4090.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| THX-02 | 4,5 B + 60 M think adapter | 32k tokens | Modelo de decisión con salida de probabilidades, multimodal | Apache-2.0 | Hugging Face, PyPI, API alojada |
-| THX-01 | 0,3 B | no disponible | Modelo de decisión (predecesor) | no disponible en la informacion | Hugging Face (doofz/THX-01) |
-| LLM generativos de tamaño similar (por ejemplo, familias de 3-8 B) | 3-8 B | variable | Generación de texto libre con clasificación vía prompting | variable | amplia |
+| THX-02 | 4,5 B + 60 M (adaptador) | 32k tokens por peticion | Modelo de decision con probabilidades calibradas, multimodal y modo de pensamiento | Apache-2.0 | Hugging Face, PyPI y API alojada |
+| THX-01 | 0,3 B | no disponible | Predecesor del mismo fabricante, modelo de decision | no disponible en la informacion | Hugging Face (repo del autor original) |
+| Modelos generativos de proposito general de ~4 B | ~4 B | variable | Generacion de texto libre con parseo posterior de salida | variable | variable |
 
-La información disponible no incluye comparaciones con modelos de clasificación zero-shot dedicados (por ejemplo, NLI-based) ni con LLMs generativos concretos; la única comparación publicada es contra THX-01, con una diferencia de 65,06 frente a 11,30 en el Decision Index 0.3 con thinking.
+No se dispone de datos de benchmarks de terceros comparables en la informacion proporcionada; la unica comparacion publicada es frente a THX-01 en el Decision Index 0.3 (65,06 frente a 11,30).
 
 ## Limitaciones y advertencias
 
-- El modelo solo responde a preguntas tipadas sobre opciones suministradas; no es un generador de texto libre y no debe usarse como tal.
-- Riesgo de calibración deficiente fuera de distribución: aunque la model card destaca la calibración, no se publican curvas de fiabilidad ni datos de calibración por idioma o dominio.
-- Cobertura lingüística declarada de forma inconsistente: los metadatos listan 10 idiomas, mientras que la model card afirma más de 20 en post-entrenamiento; conviene validar el rendimiento en los idiomas concretos de producción.
-- Contexto limitado a 32k tokens por petición y a un máximo de 4 imágenes por solicitud.
-- No se documentan sesgos conocidos, tasas de alucinación ni evaluaciones de seguridad en la información disponible.
-- Licencia Apache-2.0: permite uso comercial, pero conviene revisar los términos del servicio de la API alojada (`api.hal-x.ai`) si se usa el tier gratuito, que está limitado por IP.
-- El repositorio tiene 0 descargas y 11 likes en el momento de la consulta, lo que indica una adopción aún muy limitada; el ecosistema (`library_name: thx02`) es propio y no estándar, lo que puede complicar la integración con herramientas existentes.
-- Las demos (control de calidad de huevos, agente de pantalla) usan componentes externos no incluidos en la release, como el detector de vocabulario abierto; no deben tomarse como capacidades end-to-end del modelo por sí solo.
+- Modelo de decision, no generativo: no produce texto libre fuera del modo de pensamiento; no es adecuado para tareas de generacion abierta.
+- Riesgo de calibracion deficiente fuera de dominio: la model card recomienda derivar a revision humana cuando la confianza es baja (en la demo se uso un umbral de 0,60), lo que implica que la probabilidad no debe tratarse como verdad absoluta en produccion.
+- Sesgos: no se documentan sesgos conocidos ni evaluaciones de equidad en la informacion disponible; al entrenarse en mas de 20 idiomas, el rendimiento puede variar entre lenguas y las etiquetas oficiales cubren solo 10 idiomas.
+- Cobertura idiomatica limitada en la model card: las etiquetas de idioma listan en, az, zh, kk, uz, ky, ja, es, ru y tr, aunque el texto menciona mas de 20 idiomas en post-entrenamiento; no se especifica el nivel por idioma.
+- Contexto: 32k tokens por peticion; los documentos o trazas mas largas requieren troceado.
+- Imagenes: maximo de 4 por peticion.
+- Opciones: el tipo `choice` admite hasta 255 opciones; no se documenta el comportamiento con conjuntos mayores.
+- Licencia Apache-2.0: permite uso comercial, pero no se detallan garantias ni condiciones adicionales en la informacion disponible.
+- Dependencia de la API alojada: el nivel gratuito esta limitado por IP y requiere clave para uso intensivo; para produccion hay que desplegar el modelo o contratar el servicio.
+- Fecha de creacion del repositorio (2026-10-23) y actualizacion (2026-11-13) segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/HAL-X-AI/THX-02
+- Hugging Face: https://huggingface.co/HAL-X-AI/THX-02
 - Predecesor THX-01: https://huggingface.co/doofz/THX-01
 - Referencia de la API: https://api.hal-x.ai/docs/thx-02
-- Paquete PyPI: `pip install thx02` (cliente y comando `thx02`)
-- Repositorio del modelo: descarga vía `hf download HAL-X-AI/THX-02 --local-dir THX-02`
+- Paquete PyPI: `thx02` (cliente, servidor local y comando `thx02`)

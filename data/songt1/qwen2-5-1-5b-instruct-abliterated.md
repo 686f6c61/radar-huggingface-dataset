@@ -1,85 +1,72 @@
 # SonGT1/Qwen2.5-1.5B-Instruct-abliterated
 
 ## Resumen
+SonGT1/Qwen2.5-1.5B-Instruct-abliterated es una variante "abliterated" (sin guardarraíles de seguridad) del modelo Qwen2.5-1.5B-Instruct de Alibaba Cloud. El autor, SonGT1, ha aplicado la técnica de abliteration mediante la herramienta Heretic para eliminar la dirección de rechazo en el espacio de activaciones del transformer, reduciendo drásticamente la tasa de rechazos de peticiones. El modelo base es un transformer decoder-only de 1.543.714.304 parámetros (1,5B), con contexto de 32.768 tokens y entrenado originalmente para instrucciones en chino e inglés.
 
-SonGT1/Qwen2.5-1.5B-Instruct-abliterated es una versión "abliterada" (con los mecanismos de rechazo eliminados) del modelo Qwen2.5-1.5B-Instruct de Alibaba/Qwen, publicada por el usuario SonGT1 en Hugging Face. El proceso de abliteration se ha realizado con la herramienta open source Heretic, que modifica los pesos del modelo para suprimir sus conductas de negación sin necesidad de reentrenamiento completo. Según la model card, la tasa de rechazo baja de 99/100 en el modelo base a 8/100 en la versión abliterada, con una divergencia KL de 0.0759 respecto al original.
-
-El modelo base, Qwen2.5-1.5B-Instruct, es un transformer decoder-only denso de aproximadamente 1.500 millones de parámetros, orientado a generación de texto conversacional y con buen soporte de instrucciones. La versión abliterada conserva esas capacidades pero genera contenido sin los filtros de seguridad originales. Es relevante para desarrolladores que necesitan un modelo pequeño, ejecutable en hardware de consumo, sin guardrails incorporados, por ejemplo para investigación en alineación, red-teaming o generación de contenido creativo sin restricciones. Su licencia Apache 2.0 permite uso comercial, aunque la responsabilidad legal del contenido generado recae íntegramente en el usuario final.
+El modelo resuelve el problema de los rechazos no deseados en aplicaciones donde el filtrado de seguridad del modelo base interfiere con casos de uso legítimos (investigación sobre sesgos, generación creativa sin restricciones, análisis de contenido sensible). La relevancia actual radica en que ofrece una alternativa de pequeño tamaño, licencia Apache 2.0 y compatible con endpoints, adecuada para despliegue en hardware consumer. Sin embargo, la eliminación de guardarraíles conlleva riesgos legales y éticos que el autor declara explícitamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen2.5) |
-| Parametros totales | 1.543.714.304 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la model card (el modelo base Qwen2.5-1.5B-Instruct soporta 32.768 tokens) |
-| Tipos de cuantizacion | no disponible (el repo incluye pesos en safetensors y GGUF, tamaño total 4,7 GB) |
-| Idiomas soportados | chino (zh) e ingles (en) |
+| Arquitectura | Transformer decoder-only (Qwen2) |
+| Parametros totales | 1.543.714.304 (1,5B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens (heredado de Qwen2.5-1.5B-Instruct) |
+| Tipos de cuantizacion | GGUF (recomendado Q5_K_M o superior), safetensors en FP16/BF16 |
+| Idiomas soportados | Chino (zh), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y GGUF |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
-
-El modelo es una modificación directa de Qwen2.5-1.5B-Instruct, un transformer decoder-only denso de la familia Qwen2.5 de Alibaba. No se trata de un reentrenamiento: la abliteration aplicada con Heretic actua sobre los pesos existentes, identificando y neutralizando las direcciones del espacio de activaciones asociadas a los rechazos. El resultado es un modelo con la misma arquitectura y numero de parametros que el original, pero con los guardrails de seguridad mayoritariamente desactivados.
-
-No se ha publicado informacion sobre datos de entrenamiento adicionales, numero de tokens ni procesos RLHF/DPO aplicados a esta version; todo el entrenamiento original corresponde a Qwen/Qwen2.5-1.5B-Instruct. El unico dato tecnico cuantitativo publicado es la metrica de la abliteration: tasa de rechazo de 8/100 frente a 99/100 del modelo base, con una divergencia KL de 0,0759, lo que indica que las capacidades generales se mantienen cercanas al original.
+El modelo base Qwen2.5-1.5B-Instruct es un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). Fue entrenado por Alibaba con datos multilingües (predominantemente chino e inglés) y ajustado con instrucciones mediante SFT y optimización preferencial (posiblemente DPO/RLHF). La variante abliterated no ha sido reentrenada: se ha modificado directamente la matriz de pesos del modelo base para eliminar la dirección de rechazo, técnica conocida como abliteration. Según la model card, la tasa de rechazo cae de 99/100 en el modelo base a 8/100 en la variante, con una divergencia KL de 0,0759 respecto al original, lo que indica una alteración moderada de la distribución de salida. La herramienta utilizada es Heretic (p-e-w/heretic).
 
 ## Capacidades
-
-- Generacion de texto conversacional en chino e ingles, heredada del modelo base Qwen2.5-1.5B-Instruct.
-- Seguimiento de instrucciones (modelo instruct).
-- Generacion de contenido sin filtros de seguridad: los rechazos tipicos del modelo base han sido eliminados en gran medida (tasa de rechazo del 8% en la metrica publicada).
-- Compatibilidad con endpoints de inferencia estandar (endpoints_compatible) y con formatos safetensors y GGUF, lo que permite su uso en llama.cpp, Ollama y derivados.
-- No se ha documentado soporte de vision, audio, tool calling ni modos de razonamiento extendido en la model card.
+- Generación de texto conversacional multi-turno en chino e inglés.
+- Razonamiento básico y respuesta a instrucciones (heredado de Qwen2.5-1.5B-Instruct).
+- Generación de código y matemáticas a nivel de modelo pequeño (sin garantías de alta precisión).
+- Soporte de tool calling / function calling (capacidad presente en el modelo base Qwen2.5, aunque no verificada en la model card de esta variante).
+- Capacidad de agentes y razonamiento multi-paso limitada por el tamaño (1,5B).
+- Multilingüe limitado a zh y en (no se declaran otros idiomas).
+- Modo "uncensored": respuestas sin filtrado de seguridad, incluyendo contenido potencialmente sensible.
+- No se declaran capacidades de visión, audio ni modo thinking explícito.
 
 ## Casos de uso
-
-- Investigacion en alineacion y seguridad: al tener los guardrails eliminados de forma medible (tasa de rechazo y KL publicadas), resulta util como sujeto de estudio para red-teaming, evaluacion de filtros externos y analisis de abliteration.
-- Generacion de contenido creativo sin restricciones: escritura de ficcion para adultos, narrativa con tematica sensible o dialogos realistas donde los rechazos del modelo original interrumpen el flujo creativo.
-- Chatbots locales en hardware modesto: con 1.500 millones de parametros y formato GGUF, puede ejecutarse en portatiles y mini-PC sin GPU dedicada, util para asistentes offline en chino e ingles.
-- Prototipado rapido de pipelines de LLM: su tamaño permite iteraciones rapidas en bucles de agentes o pruebas de prompts sin coste de infraestructura, sustituyendolo despues por modelos mayores.
-- Generacion de datos sinteticos sin filtrado: creacion de datasets donde el modelo base se negaria a responder, por ejemplo para investigacion sobre moderacion o clasificacion de contenido sensible.
-- Estudio de la tecnica de abliteration: comparacion directa entre el modelo base y la version abliterada (ambos disponibles) para medir el impacto de la eliminacion de guardrails en la calidad de salida.
+- Investigación sobre sesgos y alineación: el modelo permite estudiar cómo un modelo sin guardarraíles responde a prompts sensibles, comparando con el base para analizar la dirección de rechazo y sus efectos.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que aborde temas controvertidos sin rechazos automáticos, con contexto de 32K tokens para tramas largas.
+- Análisis de contenido sensible en entornos controlados: clasificación o resumen de textos que el modelo base rechazaría, útil en moderación de contenido o investigación en ciencias sociales.
+- Prototipado rápido en hardware consumer: al ser 1,5B y con GGUF, puede ejecutarse en GPU de gama media (8-12 GB VRAM) para experimentos de generación de texto en local.
+- Evaluación de robustez de sistemas: probar cómo pipelines de producción manejan salidas no filtradas y diseñar capas de seguridad externas.
+- Educación y divulgación: demostraciones sobre el funcionamiento de la abliteration y sus límites, comparando tasas de rechazo y divergencia KL.
+- Generación de código en entornos de confianza: asistencia básica de programación en inglés o chino, con la advertencia de que el tamaño limita la calidad frente a modelos mayores.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato cuantitativo publicado por el autor es la metrica de abliteration:
-
-| Modelo | Tasa de rechazo | KL |
-|---|---|---|
-| Qwen2.5-1.5B-Instruct (base) | 99/100 | 0,0000 |
-| SonGT1/Qwen2.5-1.5B-Instruct-abliterated | 8/100 | 0,0759 |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta tasas de rechazo (99/100 base vs 8/100 abliterated) y divergencia KL (0,0759).
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: con 1.500 millones de parametros, la version en FP16 requiere unos 3-4 GB de VRAM; en GGUF cuantizado (Q4/Q5/Q8) puede bajar a aproximadamente 1-2 GB. El repo completo ocupa 4,7 GB.
-- GPU recomendadas: cualquier GPU de consumo con 4 GB de VRAM o mas es suficiente (RTX 3060, RTX 4060, RTX 4090 con margen sobrado). No se requiere hardware de centro de datos.
-- Consumer GPUs: si cabe con holgura; incluso puede ejecutarse solo en CPU gracias al formato GGUF, con velocidades razonables dado su tamaño reducido.
-- Opciones de despliegue: llama.cpp y Ollama (via GGUF), vLLM, TGI o los endpoints de Hugging Face (el modelo esta marcado como endpoints_compatible).
-- Latencia y throughput: no disponibles en la informacion proporcionada; al ser un modelo de 1,5B, se esperan latencias bajas y throughput alto incluso en hardware modesto.
+- VRAM estimada para inferencia: ~3 GB en FP16/BF16 (1,5B parámetros), ~1,5-2 GB en cuantización Q5_K_M, ~1 GB en Q4_K_M.
+- GPU recomendadas: cualquier GPU consumer con 4-8 GB VRAM (RTX 3050, RTX 4060, RTX 3060, GTX 1660) para cuantizaciones GGUF; A100/H100 no necesarias.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU modernas con al menos 4 GB VRAM.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (para safetensors), TGI, endpoints compatible (según tags).
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por tamaño, se espera alta velocidad en GPU consumer (decenas de tokens/s), pero sin datos confirmados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Particularidad |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| SonGT1/Qwen2.5-1.5B-Instruct-abliterated | 1.540 M | no disponible (base: 32.768 tokens) | Apache 2.0 | Abliterado con Heretic, tasa de rechazo 8/100 |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.540 M | 32.768 tokens | Apache 2.0 | Modelo base con guardrails intactos |
-| Qwen/Qwen2.5-1.5B | 1.540 M | 32.768 tokens | Qwen Research (no comercial por defecto) | Version base sin ajuste por instrucciones |
-| Otras versiones abliteradas de modelos pequeños (p. ej. variantes abliteradas de Llama 3.2 1B/3B) | 1.000-3.000 M | 128.000 tokens (Llama 3.2) | Licencia Llama | Alternativas abliteradas de la comunidad, con soporte de contexto mayor pero licencia mas restrictiva |
+| SonGT1/Qwen2.5-1.5B-Instruct-abliterated | 1,5B | 32K | Apache 2.0 | Sin guardarraíles, tasa rechazo 8/100 |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32K | Apache 2.0 | Modelo base con alineación estándar, rechazo 99/100 |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128K | Llama 3.2 Community License | Contexto mayor, pero licencia restrictiva para uso comercial |
+| google/gemma-2-2b-it | 2,6B | 8K | Gemma Terms of Use | Mayor tamaño, contexto menor, licencia con restricciones |
 
 ## Limitaciones y advertencias
-
-- Los guardrails de seguridad han sido eliminados deliberadamente: el modelo puede generar contenido ofensivo, peligroso o ilegal. La model card indica explicitamente que toda la responsabilidad legal recae en el usuario final, que debe respetar la legislacion local.
-- Riesgo de alucinacion: no se han publicado evaluaciones al respecto; al ser un modelo de 1,5B parametros, la fiabilidad factual es limitada y la abliteration puede agravar salidas indeseadas.
-- Soporte de idiomas restringido a chino e ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea inferior.
-- La longitud de contexto de esta version no esta documentada; aunque el modelo base soporta 32.768 tokens, conviene verificarlo en la configuracion del repo.
-- La abliteration puede degradar sutilmente las capacidades generales (la divergencia KL de 0,0759 indica desviacion respecto al modelo base, aunque moderada).
-- La licencia Apache 2.0 permite uso comercial del modelo, pero no exime de responsabilidad sobre el contenido generado ni de cumplir la normativa aplicable (RGPD, leyes de servicios digitales, etc.).
-- Es un modelo de comunidad con pocas descargas (1.124) y sin auditoria amplia: se recomienda evaluacion propia antes de cualquier uso en produccion.
+- Sesgos conocidos: hereda los sesgos del modelo base Qwen2.5, y la eliminación de guardarraíles puede amplificar respuestas sesgadas o tóxicas.
+- Riesgo de alucinación: elevado para un modelo de 1,5B, especialmente en tareas de razonamiento complejo o datos factuales.
+- Limitaciones de contexto o idioma: solo chino e inglés; contexto de 32K tokens, pero la calidad decae en ventanas muy largas para este tamaño.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero la ausencia de guardarraíles traslada toda responsabilidad legal al usuario; el autor exige cumplimiento de leyes locales.
+- Caveats para producción: no desplegar en aplicaciones orientadas al público sin capas de seguridad externas; la tasa de rechazo reducida no garantiza ausencia de contenido dañino; el modelo no ha sido evaluado con benchmarks estándar en esta variante.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/SonGT1/Qwen2.5-1.5B-Instruct-abliterated
+- Hugging Face: https://huggingface.co/SonGT1/Qwen2.5-1.5B-Instruct-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Herramienta de abliteration Heretic: https://github.com/p-e-w/heretic
+- Herramienta Heretic: https://github.com/p-e-w/heretic

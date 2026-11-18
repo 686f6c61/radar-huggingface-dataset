@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 4468,
+  "downloads_30d": 4452,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "KORRES Greek Natural Beauty and Greek Skincare",
-      "url": "https://www.korres.com/",
-      "snippet": "Natural Greek skincare and beauty products inspired by homeopathic remedies and formulated using innovative technology. Crafted …"
-    },
-    {
-      "title": "korres – KORRES",
-      "url": "https://www.korres.com/collections/korres",
-      "snippet": "Natural Greek skincare and beauty products inspired by homeopathic remedies and formulated using innovative technology. Crafted …"
-    },
-    {
-      "title": "KORRES",
-      "url": "https://www.korres.fr/",
-      "snippet": "Découvrez les soins naturels Korres inspirés par la Grèce, la Nature et la Recherche. Respectueux de la Peau. Visage, Corps, …"
-    },
-    {
-      "title": "KORRES Greece",
-      "url": "https://gr.korres.com/",
-      "snippet": "Nέο πρόγραμμα επιβράβευσης KORRES Circle Με την εγγραφή σου κερδίζεις τους πρώτους σου πόντους και με την πρώτη αγορά …"
-    },
-    {
-      "title": "Korres: Skincare Solutions - amazon.com",
-      "url": "https://www.amazon.com/stores/Korres/page/7F6F0D2E-19D7-404F-BC4F-8233DABEBE17",
-      "snippet": "Discover authentic Korres skincare solutions, rooted in Greek nature. Explore effective, clean formulas for a radiant, healthy …"
-    }
-  ]
+  "sources": []
 }

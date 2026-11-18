@@ -2,103 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-27B-Turbo-Brilliance-Power-35X-Reasoning-Instruct-modes-GGUF es una cuantizacion en formato GGUF publicada por el usuario DavidAU sobre el modelo base Qwen/Qwen3.8-27B, un transformer denso de 27.320.697.856 parametros (unos 27,3 mil millones). El repositorio ocupa 22,4 GB y esta pensado para su uso con motores de inferencia locales compatibles con GGUF, no con safetensors.
+Qwen3.8-27B-Turbo-Brilliance-Power-35X-Reasoning-Instruct-modes-GGUF es una cuantizacion GGUF, publicada por DavidAU, del modelo base Qwen/Qwen3.8-27B (26.895.998.464 parametros reales, ~27B). El autor anade un sistema propietario denominado Turbo-Brilliance que expone, mediante instrucciones en el propio prompt o por API, 27 modos de razonamiento, 27 modos de instruccion y 9 modos de razonamiento "xhigh", ademas de 15 "AI Constructs" (perfiles de comportamiento de 2000-4000+ tokens cada uno). El objetivo declarado es forzar al modelo a un enfoque de tarea antes de empezar a generar tokens, reduciendo consumo y mejorando la calidad de la respuesta.
 
-Su rasgo diferencial no es el entrenamiento adicional, sino el denominado sistema "Turbo Brilliance", que anade 23 modos de razonamiento y 12 modos de instruccion sobre el comportamiento del modelo base, ademas de un sistema de ayuda interactiva integrado directamente en el propio modelo. El autor afirma que este sistema aumenta de forma notable el rendimiento del nucleo original, aunque no se han publicado en la informacion disponible ni la receta de entrenamiento ni resultados de benchmarks propios de esta publicacion.
+El modelo conserva la pipeline image-text-to-text del base, por lo que mantiene capacidad multimodal de entrada imagen+texto, y cubre 16 idiomas, entre ellos el espanol. El repositorio es exclusivamente GGUF (489,7 GB en total, repartidos en multiples niveles de cuantizacion con y sin imatrix), lo que lo hace desplegable en llama.cpp, Ollama y otros runners compatibles GGUF, no en vLLM/TGI con pesos safetensors.
 
-La ficha resulta relevante ahora porque el modelo esta etiquetado como image-text-to-text en Hugging Face, cubre 16 idiomas (incluido el espanol) y se distribuye bajo licencia Apache 2.0, lo que lo hace atractivo para despliegues locales con GPU de consumo. Como contrapartida, el acceso esta restringido y requiere aceptar condiciones en Hugging Face, el repositorio registra cero descargas en el momento de la consulta y la documentacion tecnica publica es muy escasa.
+Su relevancia actual es practica: es una de las variantes GGUF mas descargadas de la familia Qwen 3.8 (1.021.349 descargas, 314 likes), con licencia Apache 2.0 y pesos ya cuantizados para consumo local. No obstante, las capacidades adicionales (modos, constructs) son tecnicas de prompting empaquetadas, no cambios en los pesos, y la model card no aporta datos de entrenamiento adicional ni benchmarks verificables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en la informacion proporcionada |
-| Parametros totales | 27.320.697.856 (27,3 mil millones) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | Transformer del modelo base Qwen/Qwen3.8-27B (detalle interno no disponible); cuantizacion GGUF con imatrix NEO / NEO MAX y variantes MTP y GSQ-RCO |
+| Parametros totales | 26.895.998.464 (~27B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; los niveles concretos no estan detallados en la informacion disponible (repositorio de 22,4 GB) |
-| Idiomas soportados | 16: arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita |
+| Tipos de cuantizacion | Multiples niveles GGUF (Q6 citado en ejemplos de la model card); variantes con y sin imatrix, NEO Imatrix, NEO Imatrix MAX, MTP Quants y GGUF GSQ-RCO |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (16 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
-
-Otros datos del repositorio: autor DavidAU, pipeline image-text-to-text, etiquetas endpoints_compatible y conversational, 12 likes, 0 descargas, creado y actualizado el 29 de septiembre de 2026, acceso restringido (gated).
+| Formato de pesos | GGUF (repositorio de 489,7 GB); no se distribuyen safetensors en este repo |
+| Pipeline | image-text-to-text (entrada multimodal imagen+texto) |
+| Modelo base | Qwen/Qwen3.8-27B |
+| Fecha de creacion / actualizacion | 2026-09-29 / 2026-11-10 |
 
 ## Arquitectura y entrenamiento
 
-No se detalla en la informacion disponible la arquitectura interna del modelo base Qwen/Qwen3.8-27B, ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si hubo fases de RLHF, DPO u otras tecnicas de alineamiento. Lo unico verificable es que esta publicacion es una derivada cuantizada en GGUF del modelo base, con 27.320.697.856 parametros, y que no se aportan pesos en safetensors.
+La arquitectura subyacente es la del transformer Qwen3.8-27B de Qwen; esta ficha no dispone de detalles sobre numero de capas, atencion, tipo de positional encoding ni composicion del dataset de preentrenamiento, por lo que esos datos se consideran no disponibles. El autor no documenta un reentrenamiento de los pesos: lo que anade es una capa de instrucciones y perfiles de sistema (Turbo-Brilliance y AI Constructs) que se activan desde el prompt o la API y que, segun la model card, "enfocan el modelo para tareas especificas antes de que empiece a razonar/generar tokens".
 
-La innovacion declarada por el autor es el sistema "Turbo Brilliance", que introduce 23 modos de razonamiento y 12 modos de instruccion sobre el comportamiento nativo del modelo, junto con un sistema de ayuda interactiva conectado directamente al modelo. Segun la documentacion del autor, este sistema amplia las capacidades del nucleo original. En resultados de busqueda relativos al modelo base Qwen 3.8 27B se menciona que este soporta tres modos de razonamiento: xhigh (por defecto), medium y low; no se confirma en la informacion disponible si los 23 modos de esta publicacion son variaciones de esos tres niveles ni como se implementan a nivel de prompt o de pesos.
+La innovacion tecnica declarada se limita, por tanto, al plano del prompting y de la cuantizacion: modos de razonamiento e instruccion seleccionables en caliente, un sistema de ayuda contextual integrado en el prompt y variantes de cuantizacion con imatrix (NEO, NEO MAX), MTP y GSQ-RCO. No se aportan datos sobre RLHF, DPO, numero de tokens de entrenamiento ni decodificacion especulativa. Cualquier ganancia de rendimiento atribuida a Turbo-Brilliance debe tratarse como afirmacion del autor, no como resultado medido de forma independiente.
 
 ## Capacidades
 
-- Generacion de texto conversacional y seguimiento de instrucciones, con la etiqueta conversational en Hugging Face.
-- Razonamiento en multiples modos: 23 modos de razonamiento declarados por el autor dentro del sistema Turbo Brilliance.
-- Modos de instruccion: 12 modos de instruccion declarados, orientados a distintos estilos de respuesta.
-- Procesamiento de imagen y texto: el pipeline declarado es image-text-to-text, lo que implica entrada multimodal de imagenes junto a texto.
-- Soporte multilingue en 16 idiomas, entre ellos espanol, ingles, chino, japones, coreano, arabe, hindi, ruso y portugues.
-- Sistema de ayuda interactiva integrado en el modelo, segun la descripcion del autor.
-- Compatibilidad declarada con endpoints (etiqueta endpoints_compatible).
-- Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
-- Soporte explicito de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking diferenciado y decodificacion especulativa: no disponible para esta publicacion concreta.
+- Generacion de texto conversacional multi-turno en 16 idiomas, incluido el espanol.
+- Entrada multimodal imagen+texto segun la pipeline declarada (image-text-to-text).
+- Razonamiento configurable: 27 modos de razonamiento, 9 modos "xhigh" y 27 modos de instruccion activables desde el prompt o la API.
+- 15 AI Constructs predefinidos (Brainstorm, Brainstorm Business, Universal Teacher, Agent, Coder, entre otros) que actuan como system prompts extensos de 2000-4000+ tokens.
+- Perfil Agent AI Construct orientado a flujos de agente y razonamiento multi-paso.
+- Perfil Coder AI Construct orientado a generacion y asistencia de codigo.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Capacidades de audio o vision generativa: no disponibles; solo se declara entrada image-text-to-text.
+- Despliegue compatible con endpoints (tag endpoints_compatible) y con el ecosistema GGUF.
 
 ## Casos de uso
 
-- Asistente conversacional local: al ser un GGUF de 27,3 mil millones de parametros, puede ejecutarse en una estacion de trabajo con una sola GPU de 24 GB en cuantizacion de 4 bits, lo que permite desplegar un asistente privado sin enviar datos a servicios externos.
-- Analisis de documentos con imagenes: gracias a la etiqueta image-text-to-text, el modelo puede recibir capturas, diagramas o paginas escaneadas junto a preguntas en texto, util para revision de documentacion tecnica o extraccion de informacion de graficos.
-- Generacion de codigo asistida en local: con los 12 modos de instruccion se pueden fijar estilos de respuesta concisos o detallados segun la tarea, integrándolo en editores o scripts de terminal mediante motores GGUF.
-- Atencion al cliente multilingue: al cubrir 16 idiomas, incluidos espanol, portugues, frances, aleman e italiano, puede gestionar consultas de usuarios de distintas regiones con un unico modelo desplegado.
-- Razonamiento paso a paso para analisis tecnico: los 23 modos de razonamiento permiten seleccionar el nivel de esfuerzo de pensamiento segun la complejidad de la consulta, reservando los modos mas costosos para problemas de analisis o matematicas.
-- Prototipado e investigacion sobre modos de prompt: el sistema Turbo Brilliance y su ayuda interactiva lo convierten en una plataforma de experimentacion para comparar estrategias de razonamiento e instruccion sobre un mismo modelo base.
-- Despliegue en entornos air-gapped: al distribuirse en GGUF y con licencia Apache 2.0, puede instalarse en redes aisladas con llama.cpp u Ollama, sin dependencia de servicios en la nube.
+- Asistencia conversacional multilingue: el modelo cubre 16 idiomas, incluido el espanol, y puede mantener dialogos multi-turno; los modos de instruccion permiten fijar tono y formato sin cambiar de modelo.
+- Generacion y revision de codigo en local: el Coder AI Construct y los modos de razonamiento permiten usarlo como asistente de programacion en un runner GGUF, sin enviar codigo a un servicio externo.
+- Analisis de documentos con imagenes: al declarar pipeline image-text-to-text, puede procesar capturas, diagramas o formularios junto con texto explicativo en un mismo prompt.
+- Prototipado de agentes: el Agent AI Construct y los modos de razonamiento multi-paso sirven para experimentar con bucles de planificacion y ejecucion antes de invertir en infraestructura mayor.
+- Docencia y explicacion tecnica: el Universal Teacher AI Construct esta disenado para descomponer conceptos y adaptar el nivel de explicacion al usuario.
+- Brainstorming de producto y negocio: los constructs Brainstorm y Brainstorm Business permiten sesiones estructuradas de ideacion con formato controlado por prompt.
+- Despliegue en hardware de consumo: al estar en GGUF, permite ejecutar un modelo de ~27B cuantizado en estaciones de trabajo con GPU consumer, algo inviable con los pesos completos en BF16.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta publicacion concreta. Los resultados de busqueda que mencionan cifras de ARC-C (735) y ARC-E (880) corresponden a otro fine-tune distinto del mismo autor, DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF, y no deben atribuirse a este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye ejemplos cualitativos de generacion (por ejemplo, un monologo de comedia en Q6 sin imatrix) y afirmaciones del autor sobre mejora de calidad y ahorro de tokens, pero no tablas de MMLU, HumanEval, GSM8K ni comparaciones numericas verificables.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que se indican a continuacion son estimaciones derivadas del numero de parametros (27,3 mil millones) y del tamano del repositorio (22,4 GB); no proceden de la documentacion del autor.
-
-- Cuantizacion de 4 bits (aproximadamente 4,8 bits por parametro): unos 16-17 GB de pesos; hay que sumar la cache KV, que depende de la longitud de contexto.
-- Cuantizacion de 5 bits: unos 19 GB de pesos.
-- Cuantizacion de 6 bits: unos 22 GB de pesos, coherente con el tamano total del repositorio (22,4 GB).
-- Cuantizacion de 8 bits: unos 29 GB de pesos.
-- Precision completa FP16: unos 55 GB de pesos.
-- GPU de consumo: cabe en una RTX 4090 o RTX 3090 de 24 GB en cuantizaciones de 4, 5 y 6 bits, con margen limitado para contexto largo; en tarjetas de 16 GB solo seria viable en cuantizaciones muy agresivas de 3 o 4 bits.
-- GPU profesionales: una A100 de 40 GB o una RTX 6000 Ada de 48 GB cubren comodamente 8 bits; una A100 o H100 de 80 GB es necesaria para FP16.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y llama-cpp-python son las rutas naturales para un GGUF. Para vLLM o TGI el soporte de GGUF es limitado o experimental y habitualmente requiere pesos en safetensors, que no se incluyen en este repositorio.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada: no disponible de forma oficial; para un modelo de ~27B en GGUF, los requisitos dependen del nivel de cuantizacion elegido (el autor cita Q6 en sus ejemplos, que es un nivel alto y por tanto mas exigente en memoria).
+- GPU recomendadas: no especificadas por el autor. Por tamano del modelo, son razonables GPUs de 24 GB o mas para cuantizaciones altas, y configuraciones multi-GPU o con offload a CPU para niveles Q6/Q8.
+- GPU consumer: viable en principio con cuantizaciones bajas o medias y offload parcial; el repositorio incluye multiples niveles, aunque la model card no publica una tabla de VRAM por quant.
+- Despliegue: llama.cpp y derivados (Ollama, LM Studio, koboldcpp) por el formato GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints estandar, pero vLLM/TGI no son la via natural para pesos GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Acceso |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| DavidAU/Qwen3.8-27B-Turbo-Brilliance-Power-35X-Reasoning-Instruct-modes-GGUF | 27,3 mil millones | no disponible | GGUF | Apache 2.0 | Restringido (gated) |
-| Qwen/Qwen3.8-27B (modelo base) | 27,3 mil millones (el fine-tune declara este mismo tamano) | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | 27,3 mil millones (mismo base) | no disponible | GGUF | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-
-No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia. La eleccion entre las dos publicaciones de DavidAU depende del caso de uso: esta variante prioriza el control mediante modos de razonamiento e instruccion, mientras que la variante Fable Cold Fusion se presenta orientada a generacion sin censura y a codigo.
+| DavidAU/Qwen3.8-27B-Turbo-Brilliance-Power-35X (este) | ~27B | no disponible | GGUF | Apache 2.0 | Modos y constructs anadidos por prompting; 1.021.349 descargas |
+| Qwen/Qwen3.8-27B (base) | ~27B | no disponible | safetensors (repo original) | Apache 2.0 | Sin capa Turbo-Brilliance; referencia de pesos originales |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF | ~27B | no disponible | GGUF | Apache 2.0 | Variante del mismo autor sin censura y con 50 modos |
+| DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF | ~40B | no disponible | GGUF | Apache 2.0 | Version mayor del mismo sistema, mas exigente en hardware |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
-- Documentacion muy escasa: no se publican arquitectura, contexto, dataset, receta de entrenamiento ni benchmarks, lo que dificulta evaluar su idoneidad para produccion.
-- Cero descargas registradas en el momento de la consulta, con solo 12 likes: la validacion por parte de la comunidad es practicamente nula.
-- Es una cuantizacion GGUF, no un modelo reentrenado: la mayor parte de sus capacidades y de sus sesgos proviene del modelo base Qwen/Qwen3.8-27B.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de esta escala; no se ha publicado ningun estudio de tasas de error para esta publicacion.
-- Los modos de razonamiento e instruccion son una capa de comportamiento anadida por el autor, sin evaluacion publica independiente que cuantifique la mejora que anuncian.
-- Idiomas: aunque se declaran 16 idiomas, no hay datos de calidad por idioma; el rendimiento en espanol no esta verificado.
-- Longitud de contexto desconocida: es un factor critico para planificar el consumo de memoria y no se indica en la informacion disponible.
-- Licencia: Apache 2.0 en el repositorio, lo que en principio permite uso comercial, pero conviene verificar las condiciones del modelo base y las condiciones aceptadas en el acceso restringido antes de un despliegue comercial.
-- Soporte multimodal declarado mediante la etiqueta image-text-to-text, sin documentacion adicional sobre resolucion de imagen soportada ni limites de entrada.
-- Aunque el repositorio se etiqueta como compatible con endpoints, no se detalla que backends ni versiones concretas estan soportados.
+- Los 27+27+9 modos y los 15 AI Constructs son tecnicas de prompting empaquetadas, no modificaciones de los pesos; su efecto depende de como el runner respete el prompt de sistema y de la ventana de contexto disponible.
+- No hay benchmarks publicados que respalden las afirmaciones de mejora de calidad o de ahorro de tokens del autor.
+- Riesgo de alucinacion inherente a un modelo de ~27B; los constructs con personalidad (comedia, rol) pueden aumentar la deriva creativa frente a la precision factual.
+- La longitud de contexto no esta documentada en esta ficha; prompts de sistema de 2000-4000+ tokens por construct consumen parte de la ventana disponible.
+- Soporte de tool calling no confirmado: no disenar pipelines de agente que dependan de function calling sin validarlo previamente.
+- La licencia Apache 2.0 del repositorio no exime de revisar los terminos del modelo base Qwen/Qwen3.8-27B y de las dependencias del runner.
+- El repositorio ocupa 489,7 GB: la descarga completa es inviable en muchos entornos; conviene bajar solo el archivo del nivel de cuantizacion necesario.
+- La model card contiene afirmaciones de marketing no verificadas ("consciencias", "AGI", "redline"); tratarlas como descripcion comercial, no como especificacion tecnica.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-Power-35X-Reasoning-Instruct-modes-GGUF
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Modelos del autor en tendencia: https://huggingface.co/models?sort=trending&search=DavidAU
+- FAQs y soporte: https://huggingface.co/DavidAU/support
+- Variante 27B Heretic v2: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
+- Variante 40B Heretic v2: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
+- Variante 180B QNext Heretic v1: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
+- Variante 180B QNext no heretic v1: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Otro fine-tune del mismo autor sobre el mismo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
-- Analisis de encaje en hardware (DGX Spark): https://howtospark.com/models/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
-- Ficha en abliteration.org: https://abliteration.org/models/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
-- Revision en HackerNoon: https://hackernoon.com/qwen38-27b-turbo-review-a-faster-thinking-uncensored-qwen-fine-tune

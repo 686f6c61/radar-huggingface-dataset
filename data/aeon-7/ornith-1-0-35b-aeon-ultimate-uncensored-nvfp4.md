@@ -2,116 +2,110 @@
 
 ## Resumen
 
-Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4 es una cuantización de 4 bits (NVFP4, W4A16) del modelo Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16, publicado por el usuario AEON-7. El modelo original procede de DeepReinforce (deepreinforce-ai/Ornith-1.0-35B), un MoE híbrido orientado a tareas agénticas y de generación de código, y esta variante aplica una "abliteración" (eliminación de rechazos) sobre él. La ficha actual empaqueta ese modelo abliterado en formato NVFP4 para su despliegue en GPUs Blackwell mediante vLLM y compressed-tensors.
+Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4 es una cuantización de 4 bits en formato NVFP4 del modelo Ornith-1.0-35B, un MoE híbrido orientado a tareas de codificación agéntica desarrollado originalmente por DeepReinforce. Esta versión concreta la publica AEON-7 y aplica dos transformaciones sobre el modelo base: por un lado, un proceso de "abliteration" que elimina los rechazos y el contenido censurado del modelo; por otro, una cuantización quirúrgica de solo pesos (W4A16) que reduce el tamaño del repositorio a 23,8 GB frente a los aproximadamente 70 GB que ocuparía en BF16.
 
-La arquitectura es un transformer MoE híbrido de tipo qwen3_5_moe con capas de atención completa combinadas con GatedDeltaNet (SSM/linear attention), 35.107.181.936 parámetros totales y soporte multimodal imagen-texto. El repo ocupa 23,8 GB, aproximadamente un 64 % menos que el BF16 del que deriva, y el autor afirma que la cuantización es "casi sin pérdida" al mantener en BF16 la atención, la torre visual, el router y las capas recurrentes.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: una arquitectura híbrida que mezcla atención completa con GatedDeltaNet (SSM) y capas MoE con 256 expertos, una modalidad multimodal de imagen-texto, y una cuantización NVFP4 optimizada para GPUs Blackwell que, según el autor, preserva la capacidad de razonamiento y codificación del modelo original. El modelo declara 35.107.181.936 parámetros totales y soporta un contexto máximo de 262.144 tokens en el despliegue recomendado.
 
-Su relevancia actual reside en que permite ejecutar un modelo de 35B con capacidades de razonamiento, código agéntico y visión en hardware Blackwell de gama relativamente contenida (por ejemplo, DGX Spark / GB10), con soporte de decodificación especulativa DFlash y un rendimiento medido de hasta 73,8 tok/s en single-stream según la model card.
+El modelo está pensado para despliegues en hardware Blackwell (B200, GB10/DGX Spark) mediante vLLM, con soporte de decodificación especulativa DFlash que el autor mide en torno a 1,9× de aceleración en un solo flujo. La licencia es MIT, lo que facilita su uso comercial, aunque la naturaleza "uncensored" del modelo exige controles de seguridad adicionales en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE híbrido (qwen3_5_moe) con GatedDeltaNet / SSM y atención completa |
-| Parametros totales | 35.107.181.936 |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens (según el comando de despliegue de la model card) |
-| Tipos de cuantizacion | NVFP4 W4A16 (pesos en FP4, activaciones en BF16); componentes críticos en BF16; también existe versión BF16 del modelo base |
+| Arquitectura | Transformer híbrido MoE con GatedDeltaNet (SSM) y atención completa; multimodal (image-text-to-text) |
+| Parámetros totales | 35.107.181.936 |
+| Parámetros activos | no disponible (MoE con 256 expertos; número de expertos activos no especificado) |
+| Longitud de contexto | 262.144 tokens (configuración de despliegue recomendada) |
+| Tipos de cuantización | NVFP4 (W4A16, solo pesos, 4 bits); modelo base en BF16; tags indican también 8-bit |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors con compressed-tensors (nvfp4-pack-quantized); compatible con transformers y vLLM |
+| Formato de pesos | safetensors con compressed-tensors (`nvfp4-pack-quantized`); compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un MoE híbrido que combina capas de atención completa con capas GatedDeltaNet (atención lineal recurrente de tipo SSM). Según la model card, contiene 256 expertos en las capas MoE más un experto compartido, y una torre visual para entrada multimodal imagen-texto. La cuantización NVFP4 aplica FP4 únicamente a los MLP de los expertos y al experto compartido (aproximadamente el 90 % de los pesos), manteniendo en BF16 la atención completa (q/k/v/o), las rutas GatedDeltaNet (`linear_attn.*`), la torre visual, los gates del router, embeddings, `lm_head` y normalizaciones.
+El modelo es un MoE híbrido que combina capas de atención completa con capas de GatedDeltaNet, un mecanismo de atención lineal de tipo SSM (state space model) que aporta un camino recurrente. La torre de visión (`model.visual.*`) está presente y se mantiene en BF16, lo que confirma la naturaleza multimodal. El modelo base es un post-entrenamiento ligero con RL sobre Qwen3.6-35B-A3B, según indica el autor, con dimensiones compatibles (hidden 2048, vocab 248320) que permiten usar un drafter DFlash de Qwen3.6-35B-A3B para decodificación especulativa.
 
-El modelo original es descrito por el autor como un "light RL post-train de Qwen3.6-35B-A3B", lo que sugiere un ajuste por refuerzo sobre una base Qwen3.6. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni los detalles del proceso de RLHF/DPO. La variante AEON añade una abliteración para eliminar rechazos, y la cuantización se realizó con llm-compressor sobre una B200 (Blackwell) y se validó en una DGX Spark (GB10, sm_120). La innovación técnica destacable es la cuantización weight-only W4A16, que evita la penalización de razonamiento asociada a las activaciones en FP4 (W4A4) y desquantiza en registro a BF16 en Blackwell.
+La cuantización es el elemento técnico más destacado: se aplica NVFP4 únicamente a los expertos MoE (los 256) y al MLP del experto compartido, que representan aproximadamente el 90 % de los pesos. Se preservan en BF16 la atención completa (q/k/v/o), las capas GatedDeltaNet/SSM, la torre de visión, los gates del router, los embeddings, el lm_head y las normas. La decisión de usar W4A16 (pesos en FP4, activaciones en BF16) evita la penalización de razonamiento asociada a las activaciones en FP4 (W4A4). La cuantización se realizó con llm-compressor en una B200 y se validó en una DGX Spark (GB10, sm_120). No se dispone de información sobre el número de tokens de entrenamiento ni la composición del dataset.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento con modo "thinking" explícito (cada turno abre con `<think>…</think>`).
-- Generación de código y tareas agénticas de ingeniería de software (tags `coding`, `agentic`, `swe-bench`, `terminal-bench`).
-- Razonamiento matemático.
-- Tool calling / function calling, con parsers `qwen3_coder` y `qwen3` en vLLM.
-- Capacidades multimodales de imagen-texto (visión), con límites configurables de imágenes y vídeo por prompt.
-- Soporte de agentes y razonamiento multi-paso.
-- Modelo abliterado: rechazos eliminados según la validación del autor (0 rechazos en prompts dañinos diversos).
-- Decodificación especulativa compatible con un drafter Qwen3.6-35B-A3B DFlash.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto conversacional y razonamiento con modo "thinking": cada turno abre un bloque `<think>…</think>`.
+- Codificación y tareas agénticas: los tags y la validación del autor apuntan a SWE-bench y Terminal-bench como dominios objetivo.
+- Tool calling y function calling: soporte mediante `--enable-auto-tool-choice` y parser `qwen3_coder` en vLLM.
+- Razonamiento multi-paso y uso como agente.
+- Capacidades multimodales de imagen a texto: la torre de visión se conserva en BF16; el despliegue recomendado limita a 4 imágenes y 2 vídeos por prompt.
+- Capacidades matemáticas (el autor incluye un benchmark de matemáticas en su tabla de velocidad, aunque el dato está truncado).
+- Multilingüe: no disponible.
+- Modelo "abliterated"/"uncensored": los rechazos se han eliminado mediante abliteration, que según el autor sobrevive intacta a la cuantización FP4.
 
 ## Casos de uso
 
-- Asistencia de código en producción: el modelo soporta tool calling y puede integrarse en pipelines de CI/CD o entornos de desarrollo para generar, revisar y corregir código, aprovechando su orientación a SWE-bench y terminal-bench.
-- Agentes autónomos de terminal: con 262.144 tokens de contexto y soporte de tool calling, puede gestionar sesiones multi-paso de resolución de tareas en entornos de línea de comandos.
-- Despliegue en hardware Blackwell de gama contenida: la cuantización NVFP4 de 23,8 GB permite servir el modelo en una DGX Spark (GB10) con memoria unificada, manteniendo coherencia y capacidades de código según las pruebas del autor.
-- Razonamiento matemático y analítico: el modo thinking y el rendimiento medido en cargas de matemáticas (119 tok/s con DFlash en DGX Spark) lo hacen adecuado para asistentes de análisis cuantitativo.
-- Procesamiento multimodal documento-imagen: la torre visual en BF16 permite tareas de imagen-texto, como extracción de información de capturas o diagramas, con hasta 4 imágenes y 2 vídeos por prompt.
-- Investigación sobre alineación y seguridad: al ser un modelo abliterado, sirve para estudiar comportamientos sin rechazos en entornos controlados de evaluación de riesgos.
-- Servicio de chat de alto throughput: con 539 tok/s agregados a concurrencia 32 en DGX Spark, es viable para atención al cliente o asistentes internos con múltiples usuarios concurrentes.
+- Codificación agéntica en producción: el modelo puede integrarse en pipelines de CI/CD como agente que resuelve tareas de SWE-bench y Terminal-bench, con tool calling nativo y contexto de 262.144 tokens para manejar repositorios completos.
+- Asistente de terminal y automatización de operaciones: con el parser `qwen3_coder` y tool calling, puede ejecutar comandos y encadenar pasos multi-paso en entornos controlados.
+- Análisis de documentación técnica con imágenes: la torre de visión permite procesar diagramas, capturas de pantalla y vídeos junto con texto, útil para soporte técnico o revisión de PRs con capturas.
+- Despliegue en hardware de borde Blackwell (DGX Spark/GB10): el tamaño de 23,8 GB y la cuantización NVFP4 permiten servir el modelo en un dispositivo de memoria unificada, con throughput medido de 39 tok/s a concurrencia 1 y 539 tok/s agregados a concurrencia 32.
+- Generación de código asistida en IDE: el modelo mantiene la capacidad de codificación del BF16 según la validación del autor (0,833 pass@1 en una sonda de 18 tareas), por lo que es adecuado para autocompletado y generación de parches.
+- Investigación sobre alineación y seguridad: al ser un modelo con rechazos eliminados y licencia MIT, sirve como base para estudiar comportamientos sin censura, aunque requiere salvaguardas externas en cualquier despliegue real.
+- Razonamiento matemático con modo thinking: el bloque `<think>` permite trazas de razonamiento explícitas, útil en tutoría o verificación de soluciones.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona datos de validación del autor (no benchmarks estándar publicados como MMLU o HumanEval):
+El autor publica una validación comparativa entre el modelo BF16 y esta cuantización NVFP4, medida sobre el modelo servido:
 
-| Metrica | BF16 parent | NVFP4 |
+| Métrica | BF16 parent | NVFP4 (esta versión) |
 |---|---|---|
-| Agentic/coding pass@1 (sonda propia de 18 tareas) | 0,833 (15/18) | 0,833 (15/18) |
+| Agentic/coding pass@1 (sonda de 18 tareas) | 0,833 (15/18) | 0,833 (15/18) |
 | Rechazos (prompts dañinos diversos) | 0 | 0 |
-| Coherencia (generación larga) | limpia | 0/10 degenerados |
+| Coherencia (generación larga, benigna y dañina) | limpia | 0/10 degenerados |
+| Carga con 0 pesos omitidos | — | sí |
 
-Rendimiento medido en DGX Spark (GB10), decodificación simple NVFP4:
+Rendimiento medido en DGX Spark (GB10), decodificación simple sin decodificación especulativa:
 
 | Concurrencia | c=1 | c=8 | c=16 | c=32 |
 |---|---|---|---|---|
 | tok/s agregados | 39 | 221 | 376 | 539 |
 
-Con decodificación especulativa DFlash (single-stream):
+Con decodificación especulativa DFlash (drafter Qwen3.6-35B-A3B), a c=1:
 
 | num_speculative_tokens | 4 | 6 | 8 | 11 |
 |---|---|---|---|---|
 | tok/s c=1 | 67,5 | 73,8 (1,89×) | 69,3 | 66,7 |
 
-Comparativa de cargas en DGX Spark (single-stream):
-
-| Carga | BF16 stock vLLM | NVFP4 stock vLLM | NVFP4 + DFlash AEON |
-|---|---|---|---|
-| Coding | 30,8 tok/s · 237 ms | 38,5 · 70 ms | 77,1 · 94 ms |
-| Reasoning | 30,6 · 247 ms | 38,4 · 77 ms | 107,0 · 93 ms |
-| Math | 30,5 · 221 ms | 38,3 · 72 ms | 119,0 · 88 ms |
-| Prose | 30,4 · 193 ms | 38,3 · 69 ms | 70,3 · 91 ms |
+Comparativa de velocidad por carga de trabajo (DGX Spark, un solo flujo): codificación 30,8 tok/s en BF16 con vLLM estándar, 38,5 tok/s en NVFP4 y 77,1 tok/s en NVFP4 + DFlash; razonamiento 30,6 tok/s en BF16, 38,4 tok/s en NVFP4 y 107,0 tok/s en NVFP4 + DFlash. El dato de matemáticas está truncado en la información disponible.
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repo pesa 23,8 GB, por lo que se requiere al menos ~24 GB de memoria para los pesos, más espacio para KV cache y activaciones.
-- GPU recomendadas: NVIDIA Blackwell exclusivamente para NVFP4 (B200 / sm_100 o GB10 / sm_120). No funciona en GPUs anteriores (Ampere, Hopper, Ada) para esta cuantización.
-- Cabe en consumer GPU: no disponible; las GPUs consumer actuales no son Blackwell con soporte NVFP4 según la información proporcionada.
-- Opciones de despliegue: vLLM con `--quantization compressed-tensors` (comando de la model card), compatible con transformers; decodificación especulativa DFlash con drafter Qwen3.6-35B-A3B.
-- Latencia y throughput: TTFT ≈ 65 ms a c=1 en DGX Spark; 39 tok/s a c=1 y 539 tok/s agregados a c=32; hasta 73,8 tok/s single-stream con DFlash n=6.
-- En memoria unificada (DGX Spark) se recomienda `--gpu-memory-utilization` entre 0,6 y 0,7; por encima de ~0,8 el pool compartido CPU+GPU provoca page thrashing.
+- VRAM estimada: el repositorio ocupa 23,8 GB en NVFP4; con caché KV en BF16 y contexto largo, el consumo crece por encima de esa cifra.
+- GPU recomendadas: NVIDIA B200 (sm_100) o GB10/DGX Spark (sm_120); NVFP4 requiere arquitectura Blackwell.
+- No cabe en GPUs consumer convencionales sin Blackwell; en DGX Spark (memoria unificada) funciona con `--gpu-memory-utilization` entre 0,6 y 0,7 para evitar page thrashing.
+- Despliegue: vLLM con `--quantization compressed-tensors`, `--mamba-cache-dtype float32`, `--attention-backend flash_attn`, `--enable-chunked-prefill` y `--enable-prefix-caching`. No se mencionan llama.cpp, Ollama ni TGI para este formato.
+- Latencia: TTFT ≈ 65 ms a c=1 en DGX Spark; throughput de 39 tok/s a c=1 y 539 tok/s agregados a c=32.
+- Decodificación especulativa DFlash opcional con drafter Qwen3.6-35B-A3B y `num_speculative_tokens=6` para el óptimo de 73,8 tok/s a c=1.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4 | 35,1B (MoE) | 262.144 | MIT | Hugging Face, vLLM Blackwell | Cuantización NVFP4 abliterada |
-| Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16 | 35,1B (MoE) | no disponible | MIT | Hugging Face | Modelo base BF16, mayor tamaño |
-| deepreinforce-ai/Ornith-1.0-35B | 35B (MoE) | no disponible | MIT (según license_link) | Hugging Face | Modelo original con alineación |
-| Qwen3.6-35B-A3B | 35B (MoE, 3B activos) | no disponible | no disponible | Hugging Face | Base del post-train; drafter DFlash compatible |
+| Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4 | 35,1 B (MoE) | 262.144 | NVFP4 W4A16 | MIT | Hugging Face |
+| Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16 | 35,1 B (MoE) | no disponible | BF16 | MIT | Hugging Face |
+| deepreinforce-ai/Ornith-1.0-35B | 35,1 B (MoE) | no disponible | BF16 | MIT | Hugging Face |
+| Qwen3.6-35B-A3B | no disponible | no disponible | BF16 | no disponible | Hugging Face (referenciado como base del drafter) |
 
-No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
+La comparativa con modelos de otros fabricantes no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterado: los rechazos han sido eliminados deliberadamente, lo que implica que puede generar contenido dañino o inapropiado; no es adecuado para despliegues públicos sin filtros externos.
-- Requiere hardware Blackwell (B200 o GB10) para NVFP4; no es ejecutable en GPUs anteriores.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado tasas de alucinación.
-- Idiomas soportados no especificados; el rendimiento multilingüe no está documentado.
-- La validación de capacidades se basa en una sonda propia de 18 tareas del autor, no en benchmarks estándar independientes.
-- En memoria unificada, una configuración de `--gpu-memory-utilization` superior a ~0,8 provoca page thrashing.
-- La licencia MIT se aplica según la model card, pero el `license_link` apunta al LICENSE de deepreinforce-ai/Ornith-1.0-35B; conviene verificar los términos antes de uso comercial.
-- El contexto de 262.144 tokens debe confirmarse en despliegue real; no se detalla en la información si es el máximo nativo del modelo base.
+- Modelo "uncensored" con rechazos eliminados: puede generar contenido dañino, sesgado o inapropiado; requiere filtros y salvaguardas externas en cualquier despliegue en producción.
+- Riesgo de alucinación inherente a los modelos de lenguaje, agravado por la eliminación de rechazos y por el modo thinking, que puede producir trazas de razonamiento plausibles pero incorrectas.
+- La cuantización NVFP4 exige hardware Blackwell; no es portable a GPUs Ampere, Ada o anteriores sin reconvertir el modelo.
+- El contexto de 262.144 tokens es una configuración de despliegue; no se especifica la longitud de contexto nativa del modelo base.
+- Idiomas soportados no disponibles: no se puede garantizar un rendimiento multilingüe equilibrado.
+- El número de parámetros activos del MoE no está disponible, lo que dificulta estimar el coste computacional real por token.
+- La validación del autor se basa en una sonda de 18 tareas y no en benchmarks estándar publicados; los resultados deben interpretarse con cautela.
+- La licencia MIT del modelo no exime del cumplimiento de las licencias del modelo base (DeepReinforce Ornith) ni de la normativa aplicable sobre contenido generado.
+- En DGX Spark, con memoria unificada, superar `--gpu-memory-utilization` de 0,8 provoca page thrashing.
 
 ## Enlaces
 
@@ -119,5 +113,6 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 - Modelo base BF16: https://huggingface.co/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16
 - Modelo original: https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B
 - Licencia: https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B/blob/main/LICENSE
-- Guía DGX Spark: https://github.com/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored/blob/main/QUICKSTART_DGX_SPARK.md
+- QuickStart DGX Spark: https://github.com/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored/blob/main/QUICKSTART_DGX_SPARK.md
 - llm-compressor: https://github.com/vllm-project/llm-compressor
+- Soporte del autor: https://lotusmake.com/support

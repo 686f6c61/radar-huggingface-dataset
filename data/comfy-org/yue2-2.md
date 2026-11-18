@@ -2,100 +2,95 @@
 
 ## Resumen
 
-Comfy-Org/YuE2 es un repositorio alojado en Hugging Face por la organizacion Comfy-Org, la misma que mantiene ComfyUI, el motor de workflows por nodos para generacion visual. El repositorio tiene un tamano de 12,0 GB, 28 "likes" y cero descargas en el momento de la consulta, con fecha de creacion y ultima actualizacion del 11 de septiembre de 2026. La etiqueta unica declarada es "region:us"; no se especifica pipeline, licencia ni idiomas en la informacion disponible.
+YuE2 es un modelo de generación de música a partir de texto (text-to-music) distribuido en formato empaquetado para ComfyUI por Comfy-Org. Se trata de un reempaquetado de los pesos originales de `m-a-p/YuE2-3B`, un modelo de 3.000 millones de parámetros desarrollado por el grupo m-a-p (Multimodal Art Projection), junto con `m-a-p/SheetSage2`, un codificador de audio empleado en el pipeline. El repositorio de Comfy-Org no entrena ni modifica el modelo: únicamente convierte los pesos a un único fichero safetensors en bf16 listo para cargarse en los nodos de audio de ComfyUI.
 
-La denominacion "YuE2" sugiere continuidad con la familia YuE de modelos fundacionales de generacion musical de codigo abierto, pero esta afirmacion no se puede confirmar con los datos proporcionados: la busqueda web no devuelve ninguna referencia especifica a YuE2 ni a su documentacion tecnica, y los resultados obtenidos se refieren exclusivamente a ComfyUI, Comfy Cloud y la web corporativa de Comfy. Por tanto, la naturaleza exacta del modelo (modalidad, arquitectura, tamano) queda sin verificar.
+El modelo resuelve la tarea de síntesis musical condicionada por descripción textual, así como la generación de versiones o *covers* a partir de una referencia musical. Su relevancia actual radica en que ComfyUI se ha convertido en el entorno de facto para pipelines generativos multimodales, y este reempaquetado permite integrar generación musical dentro de grafos que ya combinan imagen, vídeo y audio sin necesidad de montar un stack de inferencia separado.
 
-Es relevante ahora porque, si se confirma que es un paquete de pesos preparado para ComfyUI, facilitaria la integracion de un modelo grande (12 GB de pesos) en un flujo de trabajo local sin necesidad de conversion manual. No obstante, la ausencia de ficha tecnica, licencia e idiomas declarados implica que cualquier evaluacion de produccion debe posponerse hasta que el autor publique la documentacion.
+La información pública disponible sobre esta ficha es limitada: la model card del reempaquetado se limita a instrucciones de instalación y a dos workflows de ejemplo (text-to-music y music cover). Los detalles de arquitectura interna, datos de entrenamiento y benchmarks no están documentados en la información proporcionada y se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se ha confirmado que sea MoE) |
+| Arquitectura | no disponible (modelo base `m-a-p/YuE2-3B`; codificador de audio `m-a-p/SheetSage2`) |
+| Parametros totales | 3.000 millones (según el nombre del modelo base `YuE2-3B`) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | bf16 (único formato publicado en este repo: `yue2_3b_bf16.safetensors`, `sheetsage2_bf16.safetensors`) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (el repositorio ocupa 12,0 GB; el formato concreto no se especifica) |
-| Tamano del repositorio | 12,0 GB |
-| Modalidad | no disponible (la etiqueta declarada es unicamente "region:us") |
-| Autor / organizacion | Comfy-Org |
-| Fecha de creacion | 11 de septiembre de 2026 |
-| Ultima actualizacion | 11 de septiembre de 2026 |
-| Descargas | 0 |
-| Likes | 28 |
+| Licencia | cc-by-nc-4.0 (Creative Commons Atribución-NoComercial 4.0) |
+| Formato de pesos | safetensors (diffusion-single-file para ComfyUI) |
+| Tamaño del repositorio | 15,9 GB |
+| Modalidad | audio (generación musical) |
+| Modelo base | `m-a-p/YuE2-3B`, `m-a-p/SheetSage2` |
+| Descargas / likes | 272.669 / 336 |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La ficha de Hugging Face no declara pipeline, no incluye model card descriptiva y la busqueda web no devuelve papers, blogs tecnicos ni repositorios asociados a "YuE2". No se puede confirmar si se trata de un transformer, un modelo de difusion, un modelo autorregresivo de audio, un MoE o una arquitectura hibrida.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El tag `diffusion-single-file` sugiere un pipeline de difusión empaquetado en un único fichero, y el nombre del modelo base (`YuE2-3B`) indica un transformer de 3.000 millones de parámetros. El pipeline combina dos componentes: el modelo generativo principal (`yue2_3b_bf16.safetensors`, ubicado en `models/checkpoints/`) y un codificador de audio (`sheetsage2_bf16.safetensors`, ubicado en `models/audio_encoders/`) derivado de SheetSage2, presumiblemente empleado para la representación o el condicionamiento sobre audio de referencia en el flujo de *music cover*.
 
-Tampoco hay datos sobre volumen de entrenamiento, composicion del dataset, numero de tokens o ejemplos, ni sobre tecnicas de alineacion como RLHF, DPO o decodificacion especulativa. Cualquier afirmacion al respecto seria especulativa. El unico dato objetivo es el peso del repositorio (12,0 GB), que es compatible con pesos en precision de 16 bits de un modelo de varios miles de millones de parametros, pero esta inferencia no esta confirmada por el autor.
+Tampoco se documentan en la información disponible el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El repositorio de Comfy-Org es un reempaquetado, por lo que los detalles de entrenamiento corresponderían a la model card original de `m-a-p/YuE2-3B`, que no forma parte de los datos proporcionados. Cualquier afirmación sobre innovaciones técnicas concretas (decodificación especulativa, atención lineal, etc.) sería especulativa y no se incluye.
 
 ## Capacidades
 
-- No se ha publicado ninguna lista de capacidades en la informacion disponible.
-- No hay confirmacion de soporte de generacion de texto, razonamiento, codigo, matematicas o vision.
-- No hay confirmacion de tool calling ni function calling.
-- No hay confirmacion de soporte para agentes o razonamiento multi-paso.
-- No hay confirmacion de capacidades multilingues ni de los idiomas cubiertos.
-- No hay confirmacion de modos especiales (thinking mode, audio, video u otros).
-- El unico indicio funcional es contextual: el repositorio pertenece a Comfy-Org, lo que sugiere una posible integracion con el ecosistema ComfyUI, pero esto no esta declarado en la ficha.
+- Generación de música a partir de descripciones textuales (text-to-music), mediante el workflow `audio_yue2_text2music.json`.
+- Generación de *covers* musicales a partir de una referencia de audio, mediante el workflow `audio_yue2_music_cover.json`.
+- Producción de audio musical completo, no limitada a melodía o acompañamiento aislado, según los ejemplos publicados.
+- Integración nativa en ComfyUI como nodos dentro de grafos generativos, lo que permite encadenar la salida musical con otros modelos del mismo entorno.
+- Codificación de audio de referencia mediante SheetSage2 para condicionar la generación.
+- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje conversacional).
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible; la información no documenta el tratamiento de idiomas en los prompts.
+- Modo *thinking*, visión o audio de entrada conversacional: no disponible.
 
 ## Casos de uso
 
-Los siguientes casos son hipoteticos y condicionados a que se confirme la naturaleza del modelo. Se indican como escenarios plausibles, no como capacidades verificadas.
-
-- Integracion en flujos de ComfyUI: si el repositorio contiene pesos empaquetados para ComfyUI, un desarrollador podria cargarlos como nodo dentro de un grafo existente y encadenarlos con otros modelos sin escribir codigo de carga personalizado. Es adecuado por la procedencia del repositorio (Comfy-Org) y por el tamano manejable de 12 GB.
-- Generacion de activos musicales o de audio por lotes, en caso de que YuE2 sea un modelo de generacion musical: se podria ejecutar de forma desatendida sobre una lista de prompts para producir variaciones de una banda sonora, apoyandose en el modo por lotes de la herramienta de inferencia elegida.
-- Prototipado de herramientas creativas: un equipo podria envolver el modelo en una API interna para que diseñadores de sonido generen borradores rapidos, dado que 12 GB caben en GPUs profesionales de una sola placa.
-- Investigacion comparativa sobre generacion de audio: si se confirma la familia YuE, el modelo serviria como punto de comparacion frente a otros sistemas abiertos, siempre que el autor publique la licencia y los datos de entrenamiento.
-- Fine-tuning sobre dominios concretos: con 12 GB de pesos, un ajuste por LoRA en una GPU de 24-48 GB seria viable, pero requiere conocer la arquitectura, actualmente no disponible.
-- Despliegue en servicios cloud gestionados: Comfy Cloud aparece en los resultados de busqueda como opcion para ejecutar workflows sin hardware local, lo que permitiria probar el modelo sin aprovisionar GPUs.
-- Evaluacion interna previa a adopcion: dado que no hay benchmarks publicados, cualquier equipo interesado deberia construir su propio conjunto de evaluacion antes de integrarlo en produccion.
+- **Prototipado rápido de bandas sonoras en ComfyUI**: un desarrollador puede insertar el nodo YuE2 en un grafo existente y generar una pista musical a partir de un prompt descriptivo, reutilizando el mismo entorno donde ya produce imágenes o vídeo para un tráiler o demo.
+- **Generación de música de fondo para vídeo corto**: el workflow text-to-music permite producir pistas instrumentales ajustadas a una descripción de estilo y estado de ánimo, que después se mezclan con el vídeo generado en el mismo pipeline de ComfyUI.
+- **Creación de *covers* y variaciones**: el workflow `audio_yue2_music_cover.json` permite tomar una referencia musical y generar una nueva versión condicionada por ella, útil para explorar arreglos alternativos o adaptaciones de estilo sobre material propio.
+- **Iteración creativa en estudios pequeños**: al ser un modelo de 3.000 millones de parámetros en bf16, puede ejecutarse en hardware de gama alta de consumo o en una única GPU de datacenter, lo que facilita ciclos de prueba y error sin depender de APIs externas.
+- **Investigación en generación musical**: sirve como base reproducible para experimentos académicos sobre condicionamiento textual y de audio, dado que los pesos y los workflows están publicados abiertamente (con restricción no comercial).
+- **Educación y demostraciones**: la instalación en dos ficheros y los workflows predefinidos hacen viable montar talleres o demos de generación musical sin infraestructura compleja.
+- **Automatización de assets internos**: para equipos que producen contenido multimedia de forma iterativa, el modelo puede integrarse en scripts que invoquen ComfyUI por línea de comandos y generen variantes musicales de forma por lotes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-No se dispone de cifras de MMLU, HumanEval, GSM8K ni de metricas especificas de audio (FAD, CLAP score u otras), ni de comparaciones oficiales con modelos alternativos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamano del repositorio, 12,0 GB de pesos en precision de 16 bits requeririan del orden de 14-16 GB de VRAM contando activaciones y overhead, pero esta cifra es una estimacion derivada y no una especificacion del autor.
-- GPU recomendadas: no disponibles. Por el tamano indicado, serian razonables tarjetas profesionales tipo A100, H100 o L40S, asi como GPUs de consumo con 16 GB o mas (RTX 4080, 4090, 5070 Ti y superiores), siempre que la arquitectura lo permita.
-- Compatibilidad con GPU de consumo: probable si los pesos son de 16 bits y caben en 16-24 GB, pero no confirmada.
-- Opciones de despliegue: la ficha no menciona ninguna. Por la organizacion autora, ComfyUI es la via mas plausible; tambien aparecen Comfy Cloud y Comfy Desktop en los resultados de busqueda. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- **VRAM estimada para inferencia**: no se documenta de forma oficial. Como referencia orientativa basada en el tamaño de los pesos (3.000 millones de parámetros en bf16, aproximadamente 6 GB solo para el modelo principal, más el codificador SheetSage2 y los buffers de activación), se requiere previsiblemente una GPU con al menos 12-16 GB de VRAM; esta cifra es una estimación y no un dato confirmado por el autor.
+- **GPU recomendadas**: no disponibles en la documentación. Por tamaño, cabría esperar ejecución en RTX 4090 (24 GB), RTX 3090 (24 GB), A100 (40/80 GB) y H100; no se confirma compatibilidad con GPUs de 8 GB.
+- **¿Cabe en GPU de consumo?**: probablemente sí en modelos con 16 GB o más de VRAM, dado el tamaño del checkpoint en bf16; no confirmado oficialmente.
+- **Opciones de despliegue**: ComfyUI (soporte nativo mediante los workflows publicados). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que además no son adecuados para un modelo de difusión de audio.
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye benchmarks ni especificaciones que permitan establecer una comparacion fiable. Si se confirma que YuE2 pertenece a la familia YuE de generacion musical, los comparables naturales serian otros modelos abiertos de generacion de audio y musica, pero no se dispone de datos verificados de parametros, contexto, rendimiento o licencia para ninguno de ellos en esta consulta.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Comfy-Org/YuE2 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 12,0 GB |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| YuE2 (este repo) | 3.000 M | no disponible | Texto/audio a música | cc-by-nc-4.0 | Hugging Face, ComfyUI |
+| MusicGen (Meta) | 300 M – 3.300 M | no disponible | Texto a música | CC-BY-NC 4.0 (pesos) | Hugging Face, código abierto |
+| Stable Audio Open | ~1.200 M | no disponible | Texto a audio/música | Stability AI Community License | Hugging Face |
+| AudioLDM 2 | ~700 M | no disponible | Texto a audio/música | CC-BY-NC-SA | Hugging Face |
+
+La comparación se limita a categoría, tamaño y licencia; no se dispone de datos de benchmarks de YuE2 en la información proporcionada que permitan una comparación cuantitativa de calidad. Las cifras de los modelos alternativos corresponden a sus especificaciones públicas habituales y deben verificarse en sus respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay descripcion oficial de arquitectura, entrenamiento ni uso previsto.
-- Licencia no declarada: sin licencia explicita no se puede asumir permiso para uso comercial. En ausencia de licencia, el uso queda en una zona legal ambigua.
-- Idiomas no declarados: se desconoce la cobertura linguistica y la calidad por idioma.
-- Cero descargas registradas y 28 likes: el repositorio es practicamente nuevo y no ha sido validado por la comunidad. No hay evidencia de terceros sobre su funcionamiento.
-- Riesgo de alucinacion: no evaluable sin conocer la modalidad y los benchmarks; si el modelo genera contenido, debe asumirse que requiere verificacion humana.
-- Sesgos: no documentados. Cualquier modelo entrenado con datos web o musicales sin filtrado publicado hereda sesgos de su dataset.
-- Posibles limitaciones de contexto: se desconoce la ventana de contexto, lo que impide planificar cargas de trabajo con entradas largas.
-- Inconsistencia en las fechas: la fecha de creacion indicada (11 de septiembre de 2026) es posterior a la fecha habitual de consulta; conviene verificar la metadatos del repositorio antes de citarlos.
-- Resultados de busqueda no relacionados: los enlaces encontrados corresponden a ComfyUI y al sitio corporativo de Comfy, no a documentacion de YuE2. Un resultado adicional hace referencia a una marca de productos infantiles ajena al proyecto y debe descartarse.
-- Recomendacion para produccion: no desplegar sin antes confirmar licencia, formato de pesos, requisitos de VRAM y una evaluacion propia con datos representativos del caso de uso.
+- **Licencia no comercial**: cc-by-nc-4.0 prohíbe explícitamente el uso comercial del modelo y de sus derivados sin autorización adicional del titular. Cualquier producto, servicio o contenido monetizado requiere una licencia aparte.
+- **Información técnica incompleta**: la model card del reempaquetado no documenta arquitectura, datos de entrenamiento, contexto ni idiomas, lo que dificulta evaluar su idoneidad para producción sin consultar los repositorios originales.
+- **Riesgo de alucinación y artefactos**: no hay documentación sobre la fidelidad de la generación musical ni sobre la calidad subjetiva de las pistas; como todo modelo generativo de audio, puede producir artefactos, incoherencias rítmicas o resultados alejados del prompt.
+- **Sesgos de estilo y datos**: al desconocerse el dataset de entrenamiento, no es posible evaluar sesgos de género musical, representación cultural o calidad por idioma en las descripciones textuales.
+- **Dependencia del entorno ComfyUI**: los pesos están empaquetados para ComfyUI; su uso fuera de ese entorno requiere adaptar los ficheros y el pipeline, algo no documentado.
+- **Sin garantías de soporte**: es un reempaquetado de terceros (Comfy-Org), no una publicación oficial de m-a-p; la resolución de problemas depende de la comunidad.
+- **Tamaño del repositorio**: 15,9 GB, lo que exige espacio en disco y ancho de banda considerables para la descarga inicial.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/YuE2
-- Web de Comfy: https://comfy.org/
-- Descarga de Comfy Desktop: https://comfy.org/download
-- Comfy Cloud: https://cloud.comfy.org/
-- Repositorio de ComfyUI en GitHub: https://github.com/Comfy-Org/ComfyUI
+- Repositorio Hugging Face (este reempaquetado): https://huggingface.co/Comfy-Org/YuE2
+- Modelo base original: https://huggingface.co/m-a-p/YuE2-3B
+- Codificador de audio original: https://huggingface.co/m-a-p/SheetSage2
+- Workflow text-to-music: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/audio_yue2_text2music.json
+- Workflow music cover: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/audio_yue2_music_cover.json
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI

@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 27,
-  "downloads_30d": 21923,
+  "downloads_30d": 22400,
   "trending_score": 12,
   "parameters": 863744,
   "parameters_human": "863744",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AtomicChat (Atomic Chat)",
-      "url": "https://huggingface.co/AtomicChat",
-      "snippet": "Nemotron 3.5 Bolt E4B, Super VL and Bolt 74B with the refusal direction projected out, baked into Atomic Dynamic GGUF builds."
-    },
-    {
-      "title": "AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF · Hugging ...",
-      "url": "https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF",
-      "snippet": "Direction, edit, quantization and evaluation by AtomicChat. The method follows Arditi et al., Refusal in Language Models Is Mediated by a Single Direction (2024). ... Nemotron 3.5 Bolt E4B, Super VL and Bolt 74B with the refusal direction projected out, baked into Atomic Dynamic GGUF builds."
-    },
-    {
-      "title": "AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF",
-      "snippet": "Bolt E4B is NVIDIA's small reasoning and chat model, post-trained from Google's Gemma-4-E4B-it. Every file here was measured against the BF16 original on one stand, next to the other publishers' files."
-    },
-    {
-      "title": "NVIDIA Nemotron 3.5 Uncensored - a AtomicChat Collection",
-      "url": "https://huggingface.co/collections/AtomicChat/nvidia-nemotron-35-uncensored",
-      "snippet": "Nemotron 3.5 Super VL and Bolt with the refusal direction projected out, baked into Atomic Dynamic GGUF builds."
-    },
-    {
-      "title": "unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF",
-      "snippet": "The model was further post-trained from Gemma-4-E4B-it. ... The model underwent multi-environment reinforcement learning using GRPO (Group Relative Policy Optimization) across instruction following, multi-step tool use, multi-turn conversations, and structured output environments. It utilized an asynchronous RL architecture that decouples training from inference. Software used for reinforcement learning: NeMo RL, NeMo Gym · NVIDIA-Nemotron-3.5-Bolt-E4B-4GB is a result of the above work."
-    }
-  ]
+  "sources": []
 }

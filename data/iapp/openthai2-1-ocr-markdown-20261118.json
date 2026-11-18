@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "iapp/OpenThai2.1-OCR-Markdown-20261118",
+  "slug": "iapp-openthai2-1-ocr-markdown-20261118",
+  "author": "iapp",
+  "url": "https://huggingface.co/iapp/OpenThai2.1-OCR-Markdown-20261118",
+  "created_at": "2026-11-09T14:21:29.000Z",
+  "updated_at": "2026-11-18T03:34:31.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron_parse",
+    "OCR",
+    "Thai",
+    "document-parsing",
+    "markdown",
+    "tables",
+    "Nemotron",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "th",
+    "en",
+    "base_model:nvidia/Nemotron-3.5-Parse",
+    "base_model:finetune:nvidia/Nemotron-3.5-Parse",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 52,
+  "downloads_30d": 12448,
+  "trending_score": 38,
+  "parameters": 630800504,
+  "parameters_human": "630.8M",
+  "storage_bytes": 5238912019,
+  "storage_human": "5.2 GB",
+  "context_length": null,
+  "base_model": "nvidia/Nemotron-3.5-Parse",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IAPP",
+      "url": "https://iapp.org/",
+      "snippet": "The IAPP is a policy neutral, not-for-profit association founded in 2000 with a mission to define, promote and improve the professions …"
+    },
+    {
+      "title": "Certification | IAPP",
+      "url": "https://iapp.org/certify",
+      "snippet": "The IAPP offers six distinct CIPP designation concentrations, demonstrating mastery in privacy laws, regulations and frameworks for …"
+    },
+    {
+      "title": "MyIAPP",
+      "url": "https://myiapp.org/",
+      "snippet": "Manage your IAPP account"
+    },
+    {
+      "title": "Préparation à la Certification IAPP : Gouvernance et gestion des ...",
+      "url": "https://www.avocats.ey.com/fr_fr/formations/certification-iapp-gouvernance-et-gestion-des-risques-de-l-ia",
+      "snippet": "Préparation à la Certification IAPP : Gouvernance et gestion des risques de l’intelligence artificielle EY Société d’Avocats vous …"
+    },
+    {
+      "title": "IAPP Store",
+      "url": "https://store.iapp.org/",
+      "snippet": "Exclusive networking events and discounted pricing on all products, including our popular conferences, are just two of many valuable …"
+    }
+  ]
+}

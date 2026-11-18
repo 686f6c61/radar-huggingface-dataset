@@ -2,89 +2,93 @@
 
 ## Resumen
 
-MiniMax H3 Turbo GGUF es una versión cuantizada y optimizada del modelo de generación de vídeo MiniMax H3 (también conocido como Hailuo AI 3.0), desarrollado originalmente por MiniMax. Este repositorio, creado por ChrisColeTech, fusiona el DiT (Diffusion Transformer) FL2VA podado de MiniMax H3 con el LoRA Turbo de LightX2V de 8 pasos, de modo que el modelo resultante genera vídeo de alta calidad en solo 8 pasos de inferencia, frente a los 50 o más que requiere el modelo original. El resultado es una reducción drástica del tiempo de cómputo sin sacrificar calidad visual.
+MiniMax H3 Turbo GGUF es una versión cuantizada en formato GGUF del modelo de difusión MiniMax H3, publicada por el usuario ChrisColeTech. El repositorio empaqueta el DiT (Diffusion Transformer) FL2VA podado con el LoRA LightX2V Turbo de 8 pasos ya integrado en los pesos, y una variante REF2VA podada con el LoRA Turbo de 4 pasos. El objetivo es permitir la generación de vídeo a partir de texto e imagen en hardware de consumo, reduciendo el número de pasos de difusión necesarios de decenas a 4-8 y ofreciendo pesos cuantizados de 11,4 GB para el transformer.
 
-El modelo está disponible en formato GGUF, lo que permite su ejecución en hardware de consumo mediante herramientas como ComfyUI con el cargador GGUF actualizado. Admite modos de generación de texto a vídeo (txt2video), imagen a vídeo (img2video) y variantes FL2VA/T2VA/I2VA. El repositorio incluye además dos variantes de codificador de texto (Qwen3-VL de 4B y 8B) junto con sus respectivos proyectos de clip, lo que permite elegir entre velocidad y fidelidad semántica. Con un total de aproximadamente 20 100 millones de parámetros en el transformador principal, este modelo representa una opción práctica para creadores y desarrolladores que necesitan generar vídeo de alta resolución (hasta 1280×720) con audio sincronizado, sin depender de servicios en la nube.
+El modelo base es MiniMaxAI/MiniMax-H3, un modelo de generación de vídeo con audio de MiniMax. Esta versión turbo no es un modelo nuevo entrenado desde cero, sino un "merge" de destilación: los LoRA de aceleración de LightX2V se han horneado en los pesos del DiT podado y posteriormente se han cuantizado a GGUF. El repositorio incluye además los componentes auxiliares necesarios para la inferencia completa: text encoders Qwen3-VL de 4B y 8B en fp8, proyecciones ClipProj, VAE de vídeo en fp16 y VAE de audio en fp32.
 
-## Especificaciones técnicas
+La relevancia actual radica en que permite ejecutar un pipeline text-to-video e image-to-video con audio en una única GPU consumer de gama alta, como una RTX 5090 de 32 GB, con tiempos de generación de aproximadamente 2,3-2,5 minutos para 90 frames a 1280x720 y 8 pasos. El repositorio acumula 36.931 descargas y 24 likes desde su creación en agosto de 2026.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Diffusion Transformer (DiT) FL2VA podado, con LoRA Turbo fusionado |
-| Parámetros totales | 20 111 438 894 (transformador principal, safetensors) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo de vídeo, no de texto) |
-| Tipos de cuantización | GGUF Q4_K_M (principal), también disponible en otras precisiones según el repositorio |
-| Idiomas soportados | No disponible (el modelo acepta prompts en inglés, pero no se especifica lista oficial) |
-| Licencia | MiniMax H3 Community License Agreement (con exclusiones territoriales: UE, Reino Unido, Corea del Sur y EE. UU.) |
-| Formato de pesos | GGUF (transformador), safetensors (text encoders y VAEs) |
+| Arquitectura | DiT (Diffusion Transformer) con VAE de vídeo y VAE de audio; text encoder Qwen3-VL |
+| Parametros totales | 20.111.438.894 (según safetensors del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF Q4_K_M (transformer); fp8_scaled (text encoders); fp16 (VAE vídeo); fp32 (VAE audio) |
+| Idiomas soportados | no disponible |
+| Licencia | other |
+| Formato de pesos | GGUF, safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es MiniMax H3, un sistema generativo omni-modal que unifica comprensión y generación de texto, imagen, vídeo y audio. En esta versión turbo, el DiT principal (FL2VA) ha sido podado para reducir su tamaño y posteriormente fusionado con el LoRA LightX2V Turbo 8-step v1.0, que permite generar vídeo en solo 8 pasos de inferencia (NFE) en lugar de los 50 típicos. La fusión se realizó offline con fuerza 1.0 sobre las 208 claves del LoRA, y después se aplicó una re-cuantización estocástica a FP8 y una escalera de cuantización GGUF.
+El modelo sigue una arquitectura de difusión basada en transformer (DiT) para la generación conjunta de vídeo y audio. El pipeline se compone de un text encoder Qwen3-VL (disponible en variantes de 4B y 8B) que codifica el prompt, una proyección ClipProj que adapta la salida del encoder al espacio del DiT, el transformer de difusión propiamente dicho y dos VAE separados: uno de vídeo en fp16 (5,21 GB) y otro de audio en fp32 (605 MB). Esta separación de VAE permite generar vídeo con pista de audio de forma nativa.
 
-El entrenamiento del LoRA Turbo se realizó mediante destilación (distillation) sobre el modelo original, utilizando vídeo de 544p con relación de aspecto mixta y desplazamientos de vídeo/audio de 12 y 3 respectivamente. El modelo resultante recomienda 8 pasos de inferencia (aunque el LoRA original también soporta 4) y un CFG fijo de 1.0. El repositorio incluye dos codificadores de texto opcionales (Qwen3-VL de 4B y 8B) en FP8 escalado, junto con sus correspondientes proyectos de clip (ClipProj) necesarios para alinear las características del texto con el espacio latente del DiT.
+El repositorio no entrena un modelo nuevo: parte de los checkpoints FL2VA y REF2VA podados de MiniMax H3 y les integra los LoRA LightX2V Turbo (8 pasos para FL2VA, 4 pasos para REF2VA). La destilación por pasos es la innovación clave, ya que reduce el coste de inferencia de decenas de pasos a 4-8 con CFG 1.0, lo que hace viable la generación en GPUs consumer. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto (txt2video) con resolución máxima de 1280×720 y hasta 481 fotogramas (aproximadamente 20 segundos a 24 fps).
-- Generación de vídeo a partir de imagen (img2video) con las mismas capacidades de resolución y duración.
-- Audio nativo sincronizado: el modelo genera audio estéreo junto con el vídeo, gracias al VAE de audio incluido.
-- Modos FL2VA, T2VA e I2VA (variantes de condicionamiento según la entrada).
-- Inferencia rápida: solo 8 pasos (NFE) con CFG fijo de 1.0, lo que reduce el tiempo de generación a aproximadamente 2.3-2.5 minutos en una RTX 5090 de 32 GB.
-- Dos opciones de codificador de texto (4B y 8B) para equilibrar velocidad y calidad semántica.
-- Compatible con ComfyUI mediante el cargador GGUF actualizado (canal remoto).
-- El LoRA Turbo ya viene fusionado en los pesos, por lo que no es necesario cargarlo en tiempo de ejecución.
+- Generación de vídeo a partir de texto (txt2video) con pista de audio sincronizada.
+- Generación de vídeo a partir de imagen (img2video), usando la imagen como primer frame.
+- Modos FL2VA, T2VA, I2VA y REF2VA según la variante del DiT.
+- Generación de audio integrada mediante VAE de audio dedicado.
+- Control de resolución, número de frames, pasos de muestreo, CFG y semilla.
+- Compatible con flujos de trabajo de ComfyUI (se incluye un workflow de ejemplo para image-to-video).
+- Dos opciones de text encoder (4B y 8B) que permiten intercambiar calidad por VRAM.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, al no ser un modelo de lenguaje.
 
 ## Casos de uso
 
-- Producción de vídeo para redes sociales: generar clips cortos de 3-5 segundos con prompts descriptivos, ideales para contenido en plataformas como TikTok, Instagram Reels o YouTube Shorts. El modelo produce vídeo con audio sincronizado, lo que ahorra trabajo de postproducción.
-- Prototipado rápido de anuncios publicitarios: los equipos creativos pueden generar múltiples variaciones de un mismo concepto publicitario en minutos, cambiando el prompt y el seed, sin necesidad de rodajes costosos.
-- Creación de metraje de relleno (B-roll) para vídeos corporativos: generar secuencias de ambiente (paisajes urbanos, naturaleza, interiores) que complementen vídeos institucionales o formativos.
-- Desarrollo de storyboards animados: los cineastas pueden visualizar escenas clave de un guion convirtiendo descripciones textuales en vídeos de baja resolución para planificar encuadres, iluminación y movimiento de cámara.
-- Generación de efectos visuales para juegos o demos: crear vídeos de fondo para interfaces de juego, pantallas de carga o materiales promocionales sin depender de motores de render en tiempo real.
-- Investigación en generación de vídeo: el modelo sirve como base para experimentos de destilación, cuantización y ajuste fino, gracias a su formato GGUF y su licencia comunitaria (con restricciones territoriales).
+- Prototipado rápido de vídeo publicitario: generar clips de ~3,75 s a 1280x720 con 8 pasos en una RTX 5090 permite iterar sobre conceptos creativos en minutos, usando el modo txt2video con prompts cinematográficos.
+- Animación de imágenes fijas para redes sociales: el modo img2video con una imagen como primer frame permite animar retratos o productos (por ejemplo, "Make her fly. Full body shot") sin necesidad de rodaje.
+- Generación de vídeo con audio para demos de producto: el VAE de audio integrado permite producir clips con ambiente sonoro (motor, lluvia) descrito en el prompt, útil para maquetas y presentaciones.
+- Previsualización de storyboards en producción audiovisual: directores y guionistas pueden convertir descripciones textuales en clips de referencia antes de rodar, reduciendo costes de preproducción.
+- Creación de contenido para videojuegos y entornos sintéticos: generación de secuencias cortas con movimiento de cámara controlado por prompt para material de marketing o prototipos de cinemáticas.
+- Investigación en difusión de vídeo: la disponibilidad de pesos GGUF cuantizados y de variantes 4B/8B del text encoder facilita experimentos reproducibles sobre destilación por pasos y calidad de codificación textual en hardware asequible.
+- Automatización de contenido en pipelines de ComfyUI: el workflow JSON incluido permite integrar la generación en flujos nodales repetibles para producción de variantes a partir de una misma imagen o prompt.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio solo incluye muestras visuales comparativas entre los codificadores de texto de 4B y 8B, sin métricas numéricas (FVD, IS, CLIP score, etc.). Tampoco se proporcionan comparaciones con otros modelos de generación de vídeo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta tiempos de generación medidos: aproximadamente 2,3 minutos con text encoder de 4B y 2,5 minutos con text encoder de 8B, para 90 frames a 1280x720, 8 pasos, CFG 1.0 y semilla 42, sobre una RTX 5090 de 32 GB.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el transformador cuantizado Q4_K_M ocupa 11.4 GB, el codificador de texto de 4B en FP8 ocupa 5.24 GB y el de 8B ocupa 10.6 GB. Sumando los VAEs (vídeo 5.21 GB, audio 0.6 GB), el requisito mínimo está en torno a 22-28 GB según la variante de codificador elegida.
-- GPU recomendadas: el autor del repositorio utilizó una RTX 5090 de 32 GB para las muestras, con tiempos de generación de 2.3-2.5 minutos para 90 fotogramas a 1280×720. GPUs con 24 GB (RTX 4090) pueden ejecutar la variante de 4B con cuantización más agresiva, aunque con mayor riesgo de desbordamiento de memoria.
-- En GPU de consumo: sí, siempre que se disponga de al menos 24 GB de VRAM. Para GPUs de 16 GB (RTX 4080, 4070 Ti) es probable que se necesite reducir la resolución o el número de fotogramas, y usar el codificador de 4B.
-- Opciones de despliegue: ComfyUI con el cargador GGUF actualizado (canal remoto), o mediante el framework LightX2V (https://github.com/modeltc/lightx2v) que soporta los pesos fusionados.
-- Latencia: aproximadamente 2.3-2.5 minutos para 90 fotogramas a 1280×720 en una RTX 5090. El throughput no está especificado para otras configuraciones.
+- VRAM estimada: el transformer Q4_K_M ocupa 11,4 GB; el text encoder 4B en fp8 suma 5,24 GB y el 8B en fp8 suma 10,6 GB; el VAE de vídeo 5,21 GB y el de audio 605 MB. El total en memoria ronda los 22-28 GB según la variante de text encoder.
+- GPU recomendadas: RTX 5090 (32 GB) es la GPU usada en los ejemplos del autor; GPUs con 24 GB (RTX 4090) pueden requerir descarga parcial de módulos a RAM del sistema.
+- Cabe en GPU consumer de gama alta con 32 GB; en 24 GB es ajustado y depende de la variante de text encoder y de la gestión de memoria del runtime.
+- Opciones de despliegue: ComfyUI con nodos GGUF (se incluye workflow de ejemplo); el formato GGUF es compatible con runtimes basados en llama.cpp/ggml para difusión, aunque no se detallan otros backends en la información disponible.
+- Latencia y throughput: ~2,3-2,5 minutos por clip de 90 frames a 1280x720 con 8 pasos en RTX 5090.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Resolución máx. | Pasos de inferencia | Audio nativo | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| MiniMax H3 Turbo GGUF (este) | ~20.1B (DiT) | 1280×720 | 8 | Sí (estéreo) | Comunitaria (excluye UE, UK, Corea, EE. UU.) | GGUF |
-| MiniMax H3 original | ~20.1B (DiT) | 2K | 50+ | Sí (estéreo) | Comunitaria (excluye UE, UK, Corea, EE. UU.) | safetensors |
-| CogVideoX-5B | 5B | 720p | 50 | No | Apache 2.0 | safetensors |
-| Wan 2.1 T2V | 1.3B/14B | 720p/1080p | 50 | No | Apache 2.0 | safetensors |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax H3 Turbo GGUF (este) | 20,1 B (base) | no disponible | GGUF + safetensors | other | Hugging Face, 36.931 descargas |
+| MiniMaxAI/MiniMax-H3 (base) | 20,1 B | no disponible | safetensors | no disponible | Hugging Face |
+| Alternativas de text-to-video open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se basa en datos públicos de los repositorios oficiales. No se dispone de benchmarks comparativos numéricos entre estos modelos. La principal ventaja del modelo turbo es la reducción de pasos de 50 a 8, lo que multiplica por seis la velocidad de generación respecto al original, a costa de una ligera pérdida de calidad visual que el autor no cuantifica.
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada para establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: la MiniMax H3 Community License excluye explícitamente el uso en la Unión Europea, Reino Unido, Corea del Sur y Estados Unidos. Cualquier despliegue comercial o incluso de investigación en esos territorios podría violar los términos de la licencia.
-- Sesgos y alucinaciones visuales: como todo modelo generativo, puede producir artefactos visuales, incoherencias temporales o representaciones inexactas de objetos o personas, especialmente con prompts complejos o poco comunes.
-- Resolución limitada: la versión turbo está limitada a 1280×720, mientras que el modelo original soporta hasta 2K. No es adecuado para producción cinematográfica de alta resolución.
-- Dependencia del codificador de texto: se requiere el ClipProj correspondiente al tamaño del codificador (4B u 8B). Usar un codificador sin su ClipProj puede degradar significativamente la calidad.
-- Requisitos de VRAM elevados: incluso cuantizado, el modelo necesita al menos 22-28 GB de VRAM para funcionar con comodidad, lo que excluye a la mayoría de GPUs de consumo de gama media.
-- Documentación incompleta: no se especifican los idiomas soportados para los prompts, ni se ofrecen métricas de rendimiento cuantitativas. El autor tampoco detalla el proceso de poda del DiT original.
-- Riesgo de uso indebido: la generación de vídeo fotorrealista puede emplearse para crear contenido falso o engañoso. Se recomienda implementar mecanismos de verificación de autenticidad en entornos de producción.
+- La licencia es "other": es imprescindible revisar los términos del modelo base MiniMaxAI/MiniMax-H3 antes de cualquier uso comercial, ya que la licencia del derivado hereda restricciones del original.
+- Al ser un merge de LoRA destilado, la calidad puede degradarse respecto al modelo base con más pasos de muestreo; la reducción a 4-8 pasos es un compromiso entre velocidad y fidelidad.
+- El repositorio ocupa 146,3 GB, lo que implica una descarga considerable aunque solo se utilicen algunos componentes.
+- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinación o artefactos; en generación de vídeo es esperable la aparición de artefactos temporales, incoherencias físicas y desincronización audio-vídeo, pero no hay datos concretos en la información disponible.
+- Los clips generados son cortos (~3,75 s con 90 frames) y la resolución máxima documentada es 1280x720.
+- No hay información sobre el dataset de entrenamiento, por lo que no se pueden evaluar sesgos demográficos o culturales del modelo base.
+- El uso en producción requiere validar el workflow de ComfyUI y la gestión de VRAM, especialmente en GPUs de 24 GB.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF
-- Modelo base (MiniMax H3): https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Repositorio GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
-- LoRA Turbo (LightX2V): https://huggingface.co/lightx2v/Minimax-h3-Turbo
-- Código y documentación de Turbo: https://github.com/ModelTC/Minimax-H3-Turbo
-- Framework LightX2V: https://github.com/modeltc/lightx2v
-- Workflow de ejemplo (JSON): https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/blob/main/workflow_example/minimax_h3_turbo.json
-- Limitaciones conocidas de ClipProj: https://github.com/nicolab28/ComfyUI-ClipProj#known-limitations
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Transformer Q4_K_M: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/blob/main/split/diffusion_models/minimax_h3_fl2va_turbo_Q4_K_M.gguf
+- Text encoder 4B: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/blob/main/split/text_encoders/qwen3vl_4b_fp8_scaled.safetensors
+- ClipProj 4B: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/blob/main/split/text_encoders/mmh3-4b-ClipProj-v3-mlp.safetensors
+- Text encoder 8B: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/blob/main/split/text_encoders/qwen3vl_8b_fp8_scaled.safetensors
+- ClipProj 8B: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/blob/main/split/text_encoders/mmh3-8b-ClipProj-v3-mlp.safetensors
+- VAE de vídeo: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/blob/main/split/vae/minimax_h3_video_vae_fp16.safetensors
+- VAE de audio: https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/blob/main/split/vae/minimax_h3_audio_vae_fp32.safetensors
+- Workflow de ejemplo (image-to-video): https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF/resolve/main/workflow_example/minimax_h3_turbo_i2va.json

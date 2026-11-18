@@ -2,112 +2,110 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Bolt-Turbo-Brilliance-50x-74B-A9B-24GB-GGUF es una cuantización GGUF publicada por el usuario DavidAU sobre el modelo base nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF, a su vez derivado de la familia Nemotron 3.5 de NVIDIA. Se trata de un modelo de mezcla de expertos (MoE) de aproximadamente 74B parámetros totales con unos 9B parámetros activos por token, empaquetado en formato GGUF con el objetivo declarado de caber en el entorno de 24 GB de VRAM que sugiere el propio nombre del repositorio. La pipeline declarada es image-text-to-text, por lo que el modelo acepta entrada multimodal de imagen y texto.
+NVIDIA-Nemotron-3.5-Bolt-Turbo-Brilliance-50x-74B-A9B-24GB-GGUF es una cuantización GGUF de tipo IQ2 QAT (quantization-aware training) del modelo base nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16, publicada por el creador independiente DavidAU. El modelo original, desarrollado por NVIDIA, es un transformer de mezcla de expertos (MoE) con 74.042.720.848 parametros totales y 9.000 millones de parametros activos por token, disenado para tareas multimodales de imagen-texto a texto en ingles, espanol, frances, aleman, italiano y japones.
 
-El valor diferencial del repositorio no está en el modelo base, sino en la capa de personalización añadida por el autor: 27 modos de razonamiento, 15 «AI Constructs» y 5 «Super AI Constructs» (Brainstorm, Brainstorm Business, Universal Teacher, Agent y Coder), junto con el pipeline de cuantización NEO Imatrix y NEO Imatrix MAX. Estos modos y constructos son perfiles de comportamiento que se activan mediante prompts, orientados a distintos escenarios de uso: lluvia de ideas, docencia, agentes autónomos y generación de código.
+La propuesta de esta publicacion es comprimir un modelo de 74B en un repositorio de 24,8 GB manteniendo, segun el autor, una precision comparable al BF16 gracias al entrenamiento con quantizacion (QAT) y a la calibracion NEO Imatrix / NEO Imatrix MAX. Sobre esa base cuantizada, DavidAU superpone un sistema propietario denominado Turbo Brilliance que anade 27 modos de razonamiento y 27 modos de instruccion conmutables en el propio prompt o por API, ademas de 15 "AI Constructs" (perfiles de comportamiento de 2000-4000 tokens cada uno) orientados a tareas como agentes, programacion o ensenanza.
 
-Es relevante ahora porque combina tres tendencias simultáneas: arquitecturas MoE eficientes en cómputo, cuantizaciones agresivas que acercan modelos de gran tamaño a hardware de consumo y modelos multimodales con soporte multilingüe declarado en inglés, español, francés, alemán, italiano y japonés. El acceso está restringido en Hugging Face y el modelo se distribuye bajo licencia OpenMDW 1.1, lo que condiciona su uso comercial.
+Su relevancia practica es doble: por un lado demuestra que un MoE de 74B y contexto largo puede ejecutarse en una unica GPU de consumo con 24 GB de VRAM; por otro, ilustra una tendencia de la comunidad a envolver modelos base de laboratorio con capas de prompting estructurado empaquetadas dentro del propio artefacto de pesos. Conviene tratarlo como un derivado comunitario, no como una version oficial de NVIDIA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) transformer, según los metadatos del repositorio |
-| Parametros totales | 74B (según nomenclatura del repositorio) |
-| Parametros activos | 9B (A9B) |
+| Arquitectura | Transformer de mezcla de expertos (MoE), multimodal imagen-texto a texto |
+| Parametros totales | 74.042.720.848 |
+| Parametros activos | 9.000 millones (A9B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; variantes concretas y niveles de bits no detallados en la información disponible |
+| Tipos de cuantizacion | IQ2_S (IQ2 QAT), pesos GGUF; el repositorio tiene 24,8 GB |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | openmdw-1.1 (etiquetada también como «other» en los metadatos) |
-| Formato de pesos | GGUF |
-| Modalidad de entrada | Texto e imagen (pipeline image-text-to-text) |
-| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
-| Modelo base | nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF |
+| Licencia | openmdw-1.1 (etiquetada como "other" en la model card) |
+| Formato de pesos | GGUF (safetensors solo como referencia de parametros del modelo base) |
+| Modelo base | nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 |
+| Pipeline | image-text-to-text |
+| Dataset de referencia | nvidia/nemotron-pre-training-datasets, nvidia/nemotron-post-training-v3 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una mezcla de expertos con 74B parámetros totales y 9B activos, lo que implica que solo una fracción de los expertos se activa por token y que el coste de cómputo por token es comparable al de un modelo denso de ~9B, aunque la memoria necesaria para alojar los pesos sigue correspondiendo al total de 74B. El repositorio es una finetune/cuantización sobre el modelo base de NVIDIA, que a su vez fue entrenado sobre los datasets nvidia/nemotron-pre-training-datasets y nvidia/nemotron-post-training-v3 (etapas de preentrenamiento y postentrenamiento, respectivamente).
+La arquitectura subyacente es un transformer de mezcla de expertos con 74B parametros totales y activacion dispersa de aproximadamente 9B por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamano. El modelo es multimodal (entrada de imagen y texto, salida de texto) y fue entrenado por NVIDIA sobre sus propios conjuntos pre y post-entrenamiento (nemotron-pre-training-datasets y nemotron-post-training-v3), con etapas de ajuste posteriores no detalladas en la informacion disponible.
 
-No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni sobre el uso específico de RLHF, DPO u otras técnicas de alineamiento; los metadatos solo indican que existe una fase de postentrenamiento. La innovación técnica declarada en este repositorio concreto es doble: por un lado, el pipeline de cuantización NEO Imatrix y NEO Imatrix MAX, orientado a preservar la calidad del modelo durante la compresión a GGUF; por otro, la capa de comportamiento «Turbo-Brilliance», que agrupa 27 modos de razonamiento, 15 AI Constructs y 5 Super AI Constructs activables por prompt para especializar la respuesta del modelo en tareas concretas.
+La innovacion diferencial de esta publicacion no esta en el modelo base sino en la capa de cuantizacion y en el sistema Turbo Brilliance. La cuantizacion IQ2_S se apoya en quantization-aware training para minimizar la perdida de calidad a 2 bits por peso, calibrada con las matrices de importancia NEO Imatrix y NEO Imatrix MAX del autor. Sobre el modelo cuantizado se inyectan, antes de la fase de razonamiento, entre cientos y miles de tokens de instrucciones segun el modo seleccionado (27 modos de razonamiento y 27 de instruccion), junto con los 15 AI Constructs. El autor reporta 150 tokens por segundo en una RTX 5090 sin decodificacion especulativa, y menciona un decodificador especulativo propio ("LiLiCorr") alojado en su repositorio. No se especifican en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto en seis idiomas declarados: inglés, español, francés, alemán, italiano y japonés.
-- Razonamiento multi-modo: 27 modos de razonamiento distintos declarados en los metadatos del repositorio.
-- Entrada multimodal: la pipeline image-text-to-text indica soporte de imágenes como entrada junto a texto.
-- Constructos especializados de propósito general: Brainstorm AI Construct y Brainstorm Business AI Construct para generación de ideas y escenarios de negocio.
-- Universal Teacher AI Construct: perfil orientado a explicación y transmisión de conocimiento.
-- Agent AI Construct: perfil orientado a flujos agénticos y razonamiento multi-paso.
-- Coder AI Construct: perfil orientado a generación y asistencia de código.
-- Super AI Constructs: cinco constructos de nivel superior que combinan capacidades de los anteriores.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de audio o visión avanzada más allá de la entrada de imagen: no disponible.
+- Generacion de texto y razonamiento multi-paso, con modos de razonamiento conmutables (desde sin razonamiento hasta "xhigh" y combinaciones de alta intensidad).
+- Procesamiento de imagen y texto de entrada (pipeline image-text-to-text).
+- Generacion y asistencia en codigo, reforzada por el modo Coder AI Construct.
+- Comportamiento de agente y descomposicion de tareas mediante el Agent AI Construct.
+- Funciones de ensenanza y explicacion pedagogica mediante el Universal Teacher AI Construct.
+- Ideacion y lluvia de ideas, tanto general como de negocio, mediante los constructos Brainstorm y Brainstorm Business.
+- Multilingue en ingles, espanol, frances, aleman, italiano y japones.
+- Soporte de system prompts extensos inyectados dinamicamente por prompt o por API.
+- Compatibilidad declarada con endpoints estandar (tag endpoints_compatible) y con flujos de vLLM.
+- Capacidad conversacional multi-turno (tag conversational).
+- No se documenta en la informacion disponible soporte nativo de tool calling, function calling ni audio.
 
 ## Casos de uso
 
-- Generación de código en producción: el Coder AI Construct permite asistir en tareas de escritura, refactorización y revisión de código; al ser un MoE de 9B activos, el coste de inferencia por token es contenido para su tamaño total, lo que lo hace viable en pipelines con volumen alto de peticiones.
-- Atención al cliente automatizada: el Agent AI Construct y los modos de razonamiento múltiple permiten gestionar conversaciones multi-turno con cambio de registro y de objetivo; el soporte declarado de seis idiomas facilita despliegues multicountry sin modelos separados.
-- Asistencia docente y generación de material formativo: el Universal Teacher AI Construct está diseñado para explicar conceptos de forma progresiva, útil en plataformas de e-learning que necesitan adaptar el nivel de profundidad por alumno.
-- Lluvia de ideas y diseño de producto: el Brainstorm AI Construct y el Brainstorm Business AI Construct permiten sesiones estructuradas de ideación con restricciones de negocio, generando alternativas y evaluándolas dentro de la misma conversación.
-- Procesamiento de documentos con imagen: al aceptar entrada image-text-to-text, el modelo puede extraer y razonar sobre información contenida en capturas, diagramas o formularios escaneados, integrándose en flujos de digitalización.
-- Agentes autónomos de automatización interna: con el Agent AI Construct y el razonamiento multi-paso, el modelo puede encadenar subtareas (consultar, resumir, decidir, redactar) en herramientas de orquestación internas.
-- Despliegue en hardware de una sola GPU de 24 GB: el repositorio está empaquetado en GGUF con el objetivo de ajustarse a ese perfil, lo que permite ejecutar localmente un modelo MoE de 74B totales sin clúster, por ejemplo en estaciones de trabajo con RTX 4090 o A5000.
-- Traducción y localización entre los seis idiomas soportados: útil para equipos que necesitan mover contenido entre inglés, español, francés, alemán, italiano y japonés manteniendo terminología técnica.
+- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno en seis idiomas y alternar entre modo de respuesta directa y razonamiento segun la complejidad de la consulta, lo que permite ajustar latencia y coste por interaccion.
+- Despliegue en estacion de trabajo con GPU de consumo: al ocupar 24,8 GB en IQ2, cabe en tarjetas de 24 GB como la RTX 4090 o la RTX 5090, lo que habilita prototipado local de un MoE de 74B sin infraestructura de centro de datos.
+- Asistencia a programacion en local: el Coder AI Construct y los modos de instruccion permiten generar, revisar y explicar codigo dentro de un IDE o pipeline, con la ventaja de que los pesos no salen de la maquina.
+- Analisis de documentos con imagenes: al aceptar entrada imagen-texto, sirve para extraer y razonar sobre capturas, diagramas o formularios escaneados combinados con texto.
+- Generacion de material didactico: el Universal Teacher AI Construct esta disenado para explicar conceptos con progresion pedagogica, util en plataformas de formacion tecnica.
+- Ideacion de producto y negocio: los constructos Brainstorm permiten sesiones estructuradas de generacion de ideas con un marco de comportamiento predefinido, sin necesidad de escribir prompts largos cada vez.
+- Evaluacion comparativa de tecnicas de cuantizacion: investigadores pueden medir la degradacion real de un MoE de 74B a 2 bits QAT frente al BF16 original usando los mismos benchmarks del modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card incluye una imagen de "accuracy" que compara la cuantizacion QAT de 2 bits con BF16, pero no se proporcionan en la informacion disponible los valores numericos de MMLU, HumanEval, GSM8K ni de otros benchmarks. El autor afirma que los resultados de Turbo Brilliance seran iguales o mejores que los publicados por NVIDIA para el modelo base, pero no aporta cifras. El unico dato de rendimiento concreto es la velocidad de 150 tokens por segundo en una RTX 5090 sin decodificacion especulativa.
 
-El repositorio no incluye tablas de MMLU, HumanEval, GSM8K, MMLU-Pro ni de ninguna otra evaluación, y tampoco se han encontrado datos de evaluación en los resultados de búsqueda consultados. Cualquier cifra de rendimiento atribuida a este modelo concreto sería especulativa.
+| Benchmark | Resultado | Nota |
+|---|---|---|
+| MMLU | no disponible | no se publican cifras |
+| HumanEval | no disponible | no se publican cifras |
+| GSM8K | no disponible | no se publican cifras |
+| Throughput | 150 t/s | RTX 5090, sin decodificacion especulativa |
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que se indican a continuación son estimaciones derivadas del recuento de parámetros (74B totales) y de los bits por peso habituales en cada nivel de cuantización GGUF; no proceden de documentación oficial del repositorio y deben tratarse como orientativas.
-
-- VRAM estimada para inferencia (74B totales, todos los expertos residentes en memoria):
-  - Q8_0: en torno a 79 GB.
-  - Q6_K: en torno a 61 GB.
-  - Q5_K_M: en torno a 52 GB.
-  - Q4_K_M: en torno a 45 GB.
-  - Q3_K_M: en torno a 36 GB.
-  - Q2_K o inferiores: en torno a 27 GB o menos; es el rango que permitiría acercarse al objetivo de 24 GB que sugiere el nombre del repositorio.
-- GPU recomendadas: para cuantizaciones de 4 bits o superiores se necesitan A100 80 GB, H100 80 GB o configuraciones multi-GPU. Para cuantizaciones muy agresivas (2-3 bits) podría ser suficiente una GPU de 24 GB.
-- Cabe en GPU de consumo: previsiblemente solo en el rango Q2/Q3 y en tarjetas con 24 GB (RTX 3090, RTX 4090, RTX 5090) o con 32 GB (RTX 5090 en configuraciones de mayor memoria), asumiendo que la variante concreta del repositorio esté ajustada a ese tamaño. No hay confirmación documental de qué niveles exactos incluye el repositorio.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, kobold.cpp) son los entornos naturales para pesos GGUF. vLLM y TGI soportan GGUF de forma parcial y con limitaciones, por lo que no son la vía recomendada sin verificar compatibilidad.
-- Latencia y throughput estimados: no disponible. Al ser MoE con 9B activos, el throughput por token debería aproximarse al de un modelo denso de ~9B en la fase de cómputo, pero el ancho de banda de memoria necesario para recorrer los 74B de pesos en cada paso puede dominar el tiempo de decodificación en configuraciones con offload a CPU.
+- VRAM estimada: el repositorio GGUF ocupa 24,8 GB, por lo que la inferencia completa requiere al menos 24 GB de VRAM con margen minimo para cache KV; con contexto largo el consumo crece y puede superar esos 24 GB.
+- GPU de consumo compatibles: RTX 4090 (24 GB) y RTX 5090 (32 GB); en la primera el margen para contexto es muy ajustado.
+- GPU profesionales: A100 40/80 GB, H100 80 GB y L40S son adecuadas y dejan espacio para contextos amplios y mayor paralelismo.
+- Despliegue: llama.cpp y sus derivados (Ollama, LM Studio) para GGUF; vLLM esta mencionado por el autor para la conmutacion de modos por API, aunque la compatibilidad de vLLM con este GGUF concreto no esta verificada en la informacion disponible.
+- Throughput reportado: 150 tokens por segundo en RTX 5090 sin decodificacion especulativa; con el decodificador "LiLiCorr" del mismo autor no se aportan cifras.
+- Latencia: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de contexto de modelos comparables en la información proporcionada, por lo que la comparación se limita a características estructurales verificables.
-
-| Modelo | Parametros | Parametros activos | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| DavidAU/NVIDIA-Nemotron-3.5-Bolt-Turbo-Brilliance-50x-74B-A9B-24GB-GGUF | 74B | 9B | no disponible | GGUF | openmdw-1.1 | Restringida (gated) |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF (modelo base) | 74B | 9B | no disponible | GGUF | no disponible | no disponible |
-| Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Nemotron-3.5-Bolt-Turbo-Brilliance-50x (esta ficha) | 74B | 9B | no disponible | openmdw-1.1 | GGUF IQ2 QAT | Capa Turbo Brilliance y 15 constructos |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 | 74B | 9B | no disponible | openmdw-1.1 | safetensors BF16 | Modelo base oficial, sin capas adicionales, requiere ~148 GB en BF16 |
+| Otros MoE cuantizados de la comunidad DavidAU (familia Turbo Brilliance) | variable | variable | no disponible | variable | GGUF | Mismo sistema de modos aplicado a otras familias (Qwen, Gemma, Mistral, GLM, Llama) segun el autor |
+| Modelos densos de ~70B en 4 bits | ~70B | denso | no disponible | variable | GGUF | Mayor coste por token al no tener activacion dispersa; no se dispone de comparacion de rendimiento |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos; esto complica la automatización de despliegues y la reproducibilidad de entornos.
-- Licencia openmdw-1.1: es una licencia específica con condiciones propias; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que los metadatos la etiquetan simultáneamente como «other» y la licencia del modelo base puede imponer restricciones adicionales.
-- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad, lo que impide estimar su rendimiento frente a alternativas y obliga a evaluar el modelo por cuenta propia antes de usarlo en producción.
-- Riesgo de alucinación: no se documentan técnicas de mitigación ni tasas de error, por lo que debe asumirse el riesgo habitual de los modelos generativos, especialmente en dominios factuales y en los idiomas con menor presencia en los datos de entrenamiento.
-- Capa de personalización no validada: los 27 modos de razonamiento y los 15+5 AI Constructs son perfiles introducidos por el autor del repositorio y no cuentan con evaluación pública documentada; su comportamiento puede degradarse fuera de los prompts para los que fueron diseñados.
-- Longitud de contexto desconocida: al no especificarse la ventana de contexto, no es posible garantizar el comportamiento en conversaciones largas, análisis de documentos extensos ni tareas de recuperación sobre muchos tokens.
-- Idiomas: solo se declaran seis lenguas; no hay información sobre calidad relativa entre ellas ni sobre el resto de idiomas.
-- Requisitos de memoria elevados: aunque solo 9B parámetros se activen por token, es necesario tener disponibles los 74B parámetros, lo que mantiene la barrera de hardware muy por encima de la de un modelo denso de 9B.
-- Cuantización agresiva: si la variante orientada a 24 GB emplea 2-3 bits por peso, es previsible una pérdida de calidad apreciable frente al modelo base en tareas de razonamiento y código, aunque el pipeline NEO Imatrix está diseñado precisamente para reducir ese deterioro. No hay mediciones que lo confirmen.
-- Sin resultados relevantes en la búsqueda web: las búsquedas realizadas no devolvieron documentación técnica, papers ni discusiones sobre este modelo, por lo que toda la información de esta ficha procede exclusivamente de los metadatos del repositorio de Hugging Face.
+- Es un derivado comunitario no oficial: NVIDIA no avala ni mantiene esta cuantizacion ni la capa Turbo Brilliance.
+- La cuantizacion a 2 bits, incluso con QAT, implica perdida de fidelidad respecto al BF16; no se publican metricas numericas que cuantifiquen esa degradacion.
+- Los 27 modos de razonamiento y los 15 AI Constructs son mecanismos de prompting empaquetados, no capacidades entrenadas; su eficacia depende de la implementacion del autor y no ha sido validada de forma independiente.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, agravado en dominios especializados y en contextos muy largos.
+- La longitud de contexto no se documenta, lo que dificulta planificar despliegues con ventanas extensas.
+- El soporte multilingue declarado se limita a seis idiomas; el rendimiento fuera de ellos no esta caracterizado.
+- La licencia openmdw-1.1 debe revisarse antes de uso comercial; la model card la etiqueta como "other", lo que anade ambiguedad.
+- El margen de VRAM en GPUs de 24 GB es minimo; contextos largos o lotes mayores pueden provocar desbordamiento a memoria del sistema y caidas severas de rendimiento.
+- No hay evidencia publicada de soporte robusto de tool calling o function calling en esta variante.
+- El modelo base depende de pesos en BF16 para validacion; comparar resultados contra el original exige infraestructura muy superior a la de consumo.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/DavidAU/NVIDIA-Nemotron-3.5-Bolt-Turbo-Brilliance-50x-74B-A9B-24GB-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
-- Dataset de postentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
-- Dataset de preentrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
-- Referencia arXiv 2605.07182: https://arxiv.org/abs/2605.07182
-- Referencia arXiv 2601.20088: https://arxiv.org/abs/2601.20088
-- Referencia arXiv 2502.02631: https://arxiv.org/abs/2502.02631
-- Referencia arXiv 2502.05003: https://arxiv.org/abs/2502.05003
-
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los únicos enlaces listados proceden de los metadatos del repositorio de Hugging Face. No se dispone de demo, blog oficial ni repositorio de código adicionales.
+- Repositorio Hugging Face: https://huggingface.co/DavidAU/NVIDIA-Nemotron-3.5-Bolt-Turbo-Brilliance-50x-74B-A9B-24GB-GGUF
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
+- Dataset de post-entrenamiento: https://huggingface.co/datasets/nvidia/nemotron-post-training-v3
+- Datasets de pre-entrenamiento: https://huggingface.co/datasets/nvidia/nemotron-pre-training-datasets
+- Paper referenciado (arXiv 2605.07182): https://arxiv.org/abs/2605.07182
+- Paper referenciado (arXiv 2601.20088): https://arxiv.org/abs/2601.20088
+- Paper referenciado (arXiv 2502.02631): https://arxiv.org/abs/2502.02631
+- Paper referenciado (arXiv 2502.05003): https://arxiv.org/abs/2502.05003

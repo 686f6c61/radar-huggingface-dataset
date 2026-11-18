@@ -2,117 +2,118 @@
 
 ## Resumen
 
-Qwen3.8-27B-antislop es un ajuste fino del modelo Qwen/Qwen3.8-27B (27.356.728.560 parámetros) publicado por AlexWortega bajo licencia Apache 2.0. El objetivo del modelo no es mejorar capacidades de razonamiento o código, sino cambiar el registro de salida: responde en párrafos planos, sin encabezados, listas, negritas ni emojis, sin fórmulas de relleno y con un estilo que imita el habla humana. Se entrenó mediante destilación de prompts: se extrajeron direcciones de activación («format» y «prose») de las capas 29-36 y 48-53 del propio modelo base con EasySteer, se usaron para guiar a un profesor (el modelo base más las reglas del proyecto no-ai-slop) que generó 2.290 respuestas, y con las 2.266 respuestas válidas se entrenó un LoRA de rango 32 sobre todas las capas lineales del modelo de lenguaje (0,79 % de los parámetros), posteriormente fusionado en bf16.
+Qwen3.8-27B-antislop es un ajuste fino (post-entrenamiento) del modelo Qwen/Qwen3.8-27B, desarrollado por AlexWortega y publicado en Hugging Face. Su objetivo es corregir el denominado "AI slop": la tendencia de los modelos de lenguaje a producir prosa fluida pero genérica, con clichés, cierres motivacionales vacíos y abstracciones que imitan superficialmente la escritura humana sin aportar concreción. El modelo aplica una variante del trabajo unslop / RL-XAR de Meta FAIR, usando GRPO con recompensas basadas en rúbricas calibradas por dominio y un juez ciego a la longitud.
 
-El resultado es un reemplazo directo («drop-in») del modelo base: misma arquitectura Qwen3_5ForConditionalGeneration, mismo tokenizador y misma plantilla de chat, sin necesidad de system prompt. Según la model card, en 44 preguntas retenidas (inglés y ruso, temperatura 0,7) las marcas de markdown por respuesta pasan de 54 a 0 en inglés y de 45 a 0 en ruso, y el léxico típico de chatbot baja de 9,7-11,5 a 1,7 ocurrencias por cada 1.000 palabras.
+El modelo conserva la arquitectura del base (etiquetado internamente como `qwen3_5` en los tags de Hugging Face, con pipeline `image-text-to-text`), cuenta con 27.781.427.952 parámetros y se distribuye bajo licencia Apache 2.0. Está orientado a escritura creativa, ensayo, blogs y publicaciones breves, y su relevancia actual radica en que demuestra que el ajuste por RL con rúbricas expertas puede superar a jueces LLM convencionales, que a menudo prefieren texto generado por modelo frente a texto humano experto.
 
-Es relevante ahora porque ataca un problema poco cubierto por los ajustes habituales: el sesgo de formato de los modelos alineados con instrucciones. Frente a la edición directa de pesos (abliteration), que los autores probaron sin éxito, el enfoque de destilación con direcciones de activación sí funciona porque la señal de formato es un desplazamiento residual constante y no un componente variable. El repositorio acaba de publicarse (0 descargas y 0 likes en el momento de la consulta) y no se han publicado benchmarks estándar.
+El modelo se publica con resultados destacados en EQ-Bench 4 (puesto 4 de 29, Elo 1320,1) y una mejora sustancial en la calidad de prosa evaluada por rúbrica (q media de 6,31 en el base a 8,28 en el ajustado). El repo ocupa 181 GB e incluye pesos en safetensors; existe además una versión GGUF publicada por el mismo autor.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (transformer; la model card menciona una torre de visión que no fue modificada) |
-| Parámetros totales | 27.356.728.560 (27,36 mil millones) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no se documentan; pesos publicados en bf16 (el autor no lista GGUF ni cuantizaciones de terceros) |
+| Arquitectura | Transformer (modelo base Qwen3.8-27B; tag interno `qwen3_5`); detalles de atención y capas no disponibles |
+| Parámetros totales | 27.781.427.952 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la información proporcionada; el ejemplo de despliegue usa `--max-model-len 32768` |
+| Tipos de cuantización | no disponible en la información proporcionada; existe versión GGUF publicada aparte |
 | Idiomas soportados | en, ru |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (bf16, LoRA fusionado) |
-| Modelo base | Qwen/Qwen3.8-27B |
-| Método de ajuste | destilación de prompts + LoRA r=32 (0,79 % de parámetros), 2 épocas, lr 1e-4, pérdida solo en tokens de asistente, sin system prompt en la entrada |
-| Tamaño del repositorio | 54,7 GB |
-| Fecha de publicación | 23 de septiembre de 2026 (según los metadatos del repositorio) |
-| Descargas / likes | 0 / 0 |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (transformers); GGUF disponible en repo separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base, Qwen3_5ForConditionalGeneration, con la torre de visión intacta y sin cambios en tokenizador ni plantilla de chat. El entrenamiento se hizo en tres fases. Primero se extrajeron direcciones de guiado («steering directions») de las activaciones del propio Qwen3.8-27B mediante diferencias de medias por capa capturadas con EasySteer: una dirección de formato (respuestas por defecto en markdown frente a las respuestas en prosa del propio modelo a las mismas preguntas, capas 29-36) y una dirección de prosa (ficción de Qwen frente a pasajes del Project Gutenberg a partir del mismo brief, capas 48-53). Los controles con direcciones aleatorias no produjeron cambios, lo que indica que la señal efectiva es la dirección y no la magnitud de la perturbación.
+El modelo parte de Qwen/Qwen3.8-27B y se post-entrena sobre una porción de prosa solo texto. El método sigue la línea de RL-XAR de Meta FAIR: para cada extracto experto (tuits del Broad Twitter Corpus, resúmenes científicos de arXiv y ensayos de blog de PG, Sivers y sama) se genera una rúbrica congelada por ítem que permanece fija durante todo el entrenamiento, evitando la deriva de rúbricas. Un juez Claude Opus calibrado, con prompt de sistema ciego a la longitud, puntúa cada candidato contra su rúbrica en una escala de calidad de 0 a 10.
 
-En segundo lugar se construyó un profesor combinando el modelo base con esas direcciones restadas en tiempo de decodificación (hook de sglang) y las reglas del proyecto no-ai-slop como system prompt. Ese profesor respondió 2.290 prompts: 1.400 preguntas tipo ELI5 de Reddit, 700 preguntas de Яндекс.Кью, 150 briefs de ficción y 40 tareas genéricas; 2.266 respuestas pasaron los filtros (sin markdown, sin bucles, finalizadas). Por último, se entrenó un LoRA de rango 32 sobre todas las capas lineales del modelo de lenguaje durante 2 épocas con lr 1e-4, calculando la pérdida únicamente sobre los tokens del asistente y sin system prompt en la entrada, y se fusionó el adaptador en bf16. Los autores intentaron antes una edición directa de pesos (abliteration) y no funcionó para esta característica, porque la señal de formato es un desplazamiento residual constante y no un componente variable.
+La recompensa combina un factor de longitud respecto a la longitud objetivo del ítem y una normalización por dominio: `reward = L(words, target) · σ(a_d · (q − μ_d))`, donde `(μ_d, a_d)` se ajustan sobre la distribución de referencia de Qwen3.8-27B. El entrenamiento usa GRPO sobre el modelo base mediante verl, con batch de 128 (16 prompts × 8 muestras), 100 pasos, learning rate 2e-5, `kl_loss_coef` de 0,002 y thinking desactivado. La generación se sirve con vLLM colocado junto a FSDP. A lo largo de los 100 pasos la recompensa media subió de aproximadamente 0,35 a 0,55 y la entropía se estabilizó de 1,5 a cerca de 0,43, lo que indica convergencia hacia una voz consistente.
 
 ## Capacidades
 
-- Generación de texto en inglés y ruso con registro conversacional y prosa plana (sin encabezados, listas, negritas ni emojis por defecto).
-- Respuestas breves y concretas: unas 96 palabras en inglés y 71 en ruso de media en las 44 preguntas de evaluación, frente a 439 y 344 del modelo base.
-- Adaptación al registro del usuario («matches the user's register») según la model card.
-- Salida con formato cuando se solicita explícitamente: el estilo entrenado es un hábito, no una regla dura, por lo que una petición de tabla o lista sigue produciendo una tabla o una lista.
-- Escritura creativa y de ficción: parte del entrenamiento usó 150 briefs de ficción, y la dirección de prosa se derivó de pasajes del Project Gutenberg.
-- Funcionamiento sin system prompt: no necesita instrucciones de sistema para mantener el estilo.
-- Compatibilidad directa con sglang, vLLM y transformers (misma arquitectura, tokenizador y plantilla de chat).
-- Capacidades multimodales: la torre de visión está intacta, pero el uso multimodal no fue evaluado.
-- Tool calling / function calling, agentes, razonamiento multi-paso, matemáticas y código: no evaluados; la model card advierte explícitamente de que su comportamiento puede haberse desplazado respecto al modelo base.
-- Modo de pensamiento («thinking»): no se usó en el entrenamiento (enable_thinking=False).
+- Generación de texto en prosa: ensayos, blogs, tuits y resúmenes con estilo concreto y evitando clichés de modelo.
+- Escritura creativa y continuaciones de texto con voz propia, orientada a calidad literaria más que a exhaustividad.
+- Generación de resúmenes científicos y abstracts con control de longitud objetivo.
+- Conversación multi-turno (tag `conversational`).
+- Procesamiento de imagen y texto según el pipeline declarado (`image-text-to-text`), aunque el post-entrenamiento se realizó sobre una porción solo texto.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada; el entrenamiento se hizo con thinking desactivado.
+- Capacidades multilingües limitadas a inglés y ruso según la model card.
+- Modo thinking: el modelo base lo soporta, pero el ajuste y la evaluación se realizaron con `enable_thinking=false`; se recomienda servirlo con thinking desactivado y un parser de razonamiento.
 
 ## Casos de uso
 
-- Asistentes conversacionales integrados en producto: al responder en prosa y sin markdown, la salida es adecuada para interfaces de chat que renderizan texto plano o que se convierten a voz (TTS), donde los encabezados y asteriscos resultan molestos.
-- Atención al cliente en inglés y ruso: gestiona conversaciones multi-turno con respuestas cortas y directas, sin el preámbulo típico de chatbot ni listas numeradas, lo que reduce la longitud de la respuesta y el coste de generación.
-- Contenido editorial y blogs de estilo humano: para redactar borradores con párrafos naturales sin postprocesar la salida para eliminar negritas, encabezados o viñetas.
-- Escritura creativa y narrativa: el ajuste incluye 150 briefs de ficción y una dirección de prosa derivada de textos literarios, lo que lo hace utilizable para relatos y diálogo en inglés y ruso.
-- Generación de datos sintéticos de estilo: puede emplearse como generador de respuestas «humanas» para construir conjuntos de datos de destilación de estilo o para entrenar clasificadores que distingan texto humano de texto de chatbot.
-- Q&A de foro y comunidades: los datos de entrenamiento provienen de preguntas ELI5 de Reddit y de Яндекс.Кью, por lo que el modelo está ajustado al formato de pregunta-respuesta de foro, sin listas ni formato.
-- Sustitución directa en infraestructura existente: al compartir arquitectura, tokenizador y plantilla de chat con Qwen3.8-27B, se puede desplegar en un servicio sglang o vLLM ya configurado cambiando únicamente la ruta del modelo.
-- Módulos de texto dentro de agentes donde el formato markdown rompe el consumidor posterior (por ejemplo, un campo de texto libre que alimenta a otro sistema o a una base de datos).
+- Generación de contenido editorial y blogs: el modelo produce prosa concreta y en voz propia, adecuada para artículos de opinión, ensayos y newsletters donde se quiere evitar el tono genérico de LLM. Su entrenamiento con rúbricas de blogs (PG, Sivers, sama) lo hace especialmente indicado para este dominio.
+- Redacción de resúmenes científicos: entrenado con abstracts de arXiv y recompensado por calidad y longitud objetivo, puede generar resúmenes concisos sin el exceso de cifras y cobertura típico de los modelos base.
+- Comunicación en redes sociales: los tuits del Broad Twitter Corpus forman parte del entrenamiento, por lo que puede redactar publicaciones breves con tono humano y sin sonar a cuenta de marca.
+- Asistencia de escritura creativa: útil para continuar textos, proponer variantes de un párrafo o reescribir pasajes eliminando fórmulas vacías, gracias a su convergencia hacia una voz consistente.
+- Ficción y narrativa conversacional: con decodificación a temperatura 0,8 y thinking desactivado, puede mantener diálogos y escenas con registro natural, según los ejemplos de la model card.
+- Evaluación y filtrado de texto generado: puede emplearse como generador de referencia en pipelines que comparan calidad de prosa frente a otros modelos, dado su rendimiento en EQ-Bench 4.
+- Despliegue en entornos con vLLM: el autor documenta un comando de servicio con `--reasoning-parser qwen3` y `--max-model-len 32768`, lo que facilita su integración en infraestructura de inferencia estándar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card solo incluye la siguiente evaluación de estilo sobre 44 preguntas retenidas (inglés y ruso, temperatura 0,7), donde las «marcas de markdown» son encabezados más elementos de lista más pares de negritas por respuesta:
+Calidad de prosa en held-out, evaluada por el mismo juez Opus calibrado ciego a la longitud sobre las mismas rúbricas congeladas:
 
-| Métrica (44 preguntas retenidas, temperatura 0,7) | Qwen3.8-27B | Qwen3.8-27B-antislop |
-|---|---:|---:|
-| Marcas de markdown en inglés | 54 | 0 |
-| Bucles en inglés | 0 % | 0 % |
-| Palabras por respuesta en inglés | 439 | 96 |
-| Marcas de markdown en ruso | 45 | 0 |
-| Bucles en ruso | 0 % | 0 % |
-| Palabras por respuesta en ruso | 344 | 71 |
-| Léxico de «slop» por 1.000 palabras | 9,7–11,5 | 1,7 |
+| Modelo | q media (0-10) | Tuits | Artículos | Blogs |
+|---|---|---|---|---|
+| base Qwen3.8-27B | 6,31 | 7,18 | 5,75 | 5,53 |
+| Qwen3.8-27B-antislop | 8,28 | 8,76 | 6,94 | 8,03 |
+| Altworld/Hemmingway-1 | 7,10 | 7,66 | 7,06 | 6,56 |
 
-Latencia, throughput y resultados de tareas de razonamiento o código: no disponibles.
+Win-rate por ítem (mayor q): antislop vs base 50-0 (2 empates); antislop vs Hemmingway-1 43-6 (3 empates), un 82,7%.
+
+EQ-Bench 4 (configuración oficial del leaderboard, Elo con IC 95%):
+
+| Puesto | Modelo | Elo (IC 95%) |
+|---|---|---|
+| 1 | claude-opus-5 | 1382,9 (1366-1401) |
+| 2 | moonshotai/kimi-k3 | 1334,6 (1321-1349) |
+| 3 | claude-fable-5 | 1330,9 (1320-1342) |
+| 4 | Qwen3.8-27B-antislop | 1320,1 (1309-1332) |
+| 5 | openai/gpt-5.5 | 1314,4 (1304-1323) |
+| 6 | claude-opus-4-7 | 1307,9 (1298-1318) |
+| 7 | claude-opus-4-8 | 1277,8 (1265-1289) |
+| ... | 22 modelos más | hasta mistral-medium-3-5, 988,3 |
+
+No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM en bf16: los pesos ocupan aproximadamente 54,7 GB, a los que hay que sumar caché KV y activaciones; el presupuesto realista de inferencia se sitúa en torno a 64-80 GB según la longitud de contexto (dato de contexto no disponible, por lo que la estimación es conservadora).
-- GPU recomendadas en bf16: A100 80 GB, H100 80 GB o configuraciones multi-GPU equivalentes con paralelismo tensorial.
-- Con cuantización de 8 bits: unos 28-30 GB de pesos, por lo que cabe en A100 40 GB, RTX 6000 Ada 48 GB o L40S 48 GB.
-- Con cuantización de 4 bits: unos 14-18 GB de pesos, lo que permite ejecutarlo en GPUs de consumo como RTX 4090, RTX 3090 o RTX 5090 (24-32 GB). En bf16 no cabe en ninguna GPU de consumo actual.
-- Opciones de despliegue confirmadas por el autor: sglang, vLLM y transformers, sin cambios de arquitectura, tokenizador ni plantilla de chat.
-- llama.cpp, Ollama y TGI: no mencionados por el autor; requerirían conversión a GGUF o configuración específica, y no hay confirmación de que existan pesos GGUF publicados.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. Con 27.781 millones de parámetros, en FP16 se requieren aproximadamente 55,6 GB solo para pesos, más memoria para KV cache y activaciones.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, el modelo en FP16 requiere GPUs de 80 GB (A100, H100) o configuraciones multi-GPU; en cuantizaciones de 8 bits o 4 bits podría caber en GPUs de 40-48 GB.
+- ¿Cabe en GPU de consumo? No disponible en la información proporcionada; la existencia de una versión GGUF sugiere que puede ejecutarse en configuraciones de consumo con cuantización agresiva, pero no se detallan requisitos.
+- Opciones de despliegue: vLLM, con el comando documentado `vllm serve AlexWortega/Qwen3.8-27B-antislop --served-model-name antislop --reasoning-parser qwen3 --default-chat-template-kwargs '{"enable_thinking": false}' --max-model-len 32768`. También hay pesos en transformers y una versión GGUF para llama.cpp u Ollama, aunque no se documentan instrucciones específicas.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La información proporcionada solo permite comparar de forma documentada con el modelo base del que deriva. Los datos de estilo proceden de la model card; el resto de campos marcados como no disponibles no aparecen en el dossier.
-
-| Modelo | Parámetros | Contexto | Licencia | Estilo de salida | Disponibilidad |
+| Modelo | Parámetros | Contexto | EQ-Bench 4 (Elo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-antislop | 27,36 mil millones | no disponible | Apache 2.0 | Prosa plana, sin markdown, respuestas de ~96 palabras (EN) | Safetensors bf16, 54,7 GB, 0 descargas |
-| Qwen3.8-27B (base) | 27,36 mil millones (misma base) | no disponible | Apache 2.0 | Markdown por defecto, respuestas de ~439 palabras (EN) | Safetensors bf16 |
-| Otras alternativas de la misma franja (~27-32 mil millones) | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de datos de benchmarks ni de especificaciones de terceros dentro de la información proporcionada, por lo que no se incluye una comparativa cuantitativa con modelos de otros desarrolladores.
+| Qwen3.8-27B-antislop | 27,78 B | no disponible (ejemplo con 32768) | 1320,1 | Apache 2.0 | Hugging Face, GGUF, Space |
+| Qwen3.8-27B (base) | 27,78 B | no disponible | no figura en el top del leaderboard mostrado | según modelo base | Hugging Face |
+| Altworld/Hemmingway-1 | no disponible | no disponible | no figura en el top mostrado | no disponible | Hugging Face |
+| claude-opus-5 | no disponible (propietario) | no disponible | 1382,9 | propietaria | API |
+| openai/gpt-5.5 | no disponible (propietario) | no disponible | 1314,4 | propietaria | API |
 
 ## Limitaciones y advertencias
 
-- Las respuestas son cortas, aproximadamente una cuarta parte de la longitud de las del modelo base; si se necesita detalle hay que pedirlo explícitamente.
-- El formato plano es un hábito aprendido, no una regla dura: si se solicita una tabla o una lista, el modelo las genera.
-- El entrenamiento se hizo solo con prompts de pregunta-respuesta y de ficción; el comportamiento en código, matemáticas y uso de herramientas no fue evaluado y puede haberse desplazado respecto al modelo base.
-- El uso multimodal no fue evaluado aunque la torre de visión esté intacta.
-- El modo de pensamiento no se utilizó en el entrenamiento (enable_thinking=False), por lo que su activación podría degradar el estilo aprendido.
-- Solo se declaran inglés y ruso; no hay evidencia de comportamiento en otras lenguas.
-- No hay resultados de benchmarks estándar publicados, por lo que no se puede verificar que las capacidades del modelo base se mantengan.
-- El repositorio tiene 0 descargas y 0 likes: no existe validación independiente de la comunidad.
-- Riesgo de alucinación: no se ha evaluado ni medido; el modelo hereda el comportamiento del modelo base y no se han publicado pruebas de veracidad.
-- Sesgos: los datos de destilación provienen de preguntas ELI5 de Reddit y de Яндекс.Кью, con los sesgos propios de esas comunidades; no se documenta ningún análisis de sesgo.
-- Licencia Apache 2.0, por lo que el uso comercial está permitido, pero el autor no ofrece garantías y las condiciones del modelo base deben respetarse.
-- Para producción, tener en cuenta que el cambio de estilo afecta a la longitud de salida (menos tokens generados), lo que altera las estimaciones de coste y de latencia respecto al modelo base.
-- El pipeline de entrenamiento se documenta en el repositorio `capability-vectors/sep/antislop` (pasos `06_distill_data.py` y `07_lora_train.py`), sin URL pública confirmada en la información disponible.
+- El ajuste se realizó sobre una porción solo texto, aunque el pipeline declarado sea `image-text-to-text`; el rendimiento multimodal no está evaluado en la información disponible.
+- Idiomas soportados limitados a inglés y ruso; no se garantiza calidad en castellano.
+- Riesgo de alucinación inherente al modelo base; el ajuste no aborda explícitamente la veracidad factual, solo el estilo.
+- El modelo está optimizado para estilo de prosa; puede degradar el rendimiento en tareas de razonamiento, matemáticas o código respecto al base, aunque no se aportan datos al respecto.
+- Sesgos conocidos: no documentados en la información proporcionada; los datos de entrenamiento (Broad Twitter Corpus, arXiv, blogs de autores concretos) pueden introducir sesgos de dominio y de estilo.
+- La evaluación se basa en un juez Claude Opus calibrado y en EQ-Bench 4; los resultados pueden no generalizar a otros evaluadores o dominios.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B.
+- Para producción, es necesario servir el modelo con thinking desactivado y un parser de razonamiento; de lo contrario, los jueces y las personas pueden leer el razonamiento interno y falsear las evaluaciones.
+- El template de chat de Qwen abre `<think>` dentro del prompt, lo que produce un `</think>` huérfano en la respuesta; hay que comprobar que el contenido no incluya esa etiqueta antes de evaluar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AlexWortega/Qwen3.8-27B-antislop
+- Demo (Space): https://huggingface.co/spaces/AlexWortega/antislop-27b
+- Versión GGUF: https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-GGUF
+- rawmodels.ai: https://www.rawmodels.ai
+- Paper original unslop / RL-XAR (Meta FAIR): https://facebookresearch.github.io/RAM/blogs/unslop/
+- Entorno RL: https://huggingface.co/datasets/rawmodels/unslop-harbor
+- Reproducción: REPRODUCE.md (en el repositorio del modelo)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Reglas de estilo no-ai-slop usadas para construir el profesor: https://github.com/petergyang/no-ai-slop
-- Pipeline de extracción de direcciones, barridos y destilación: repositorio `capability-vectors/sep/antislop`, pasos `06_distill_data.py` y `07_lora_train.py` (sin URL proporcionada)
-- EasySteer (captura de activaciones): herramienta mencionada en la model card, sin URL proporcionada
+- EQ-Bench 4: https://github.com/EQ-bench/eqbench4

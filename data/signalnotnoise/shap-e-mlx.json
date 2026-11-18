@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "signalNotNoise/shap-e-mlx",
+  "slug": "signalnotnoise-shap-e-mlx",
+  "author": "signalNotNoise",
+  "url": "https://huggingface.co/signalNotNoise/shap-e-mlx",
+  "created_at": "2026-11-18T00:40:13.000Z",
+  "updated_at": "2026-11-18T00:40:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-3d",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "swift",
+    "apple-silicon",
+    "text-to-3d",
+    "image-to-3d",
+    "shap-e",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5142752165,
+  "storage_human": "5.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

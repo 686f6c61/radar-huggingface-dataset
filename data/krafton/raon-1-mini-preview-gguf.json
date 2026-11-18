@@ -45,5 +45,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "home | KRAFTON",
+      "url": "https://www.krafton.com/en/",
+      "snippet": "KRAFTON will further expand our original IPs and build immersive, virtual worlds, where our fans play together and share fun …"
+    },
+    {
+      "title": "KRAFTON",
+      "url": "https://accounts.krafton.com/",
+      "snippet": "Creating a KRAFTON Player Account opens up a world of opportunities. We use your KRAFTON Player Account as a vessel to …"
+    },
+    {
+      "title": "Krafton - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Krafton",
+      "snippet": "Krafton ... KRAFTON, Inc. (Korean: 주식회사 크래프톤) is a South Korean video game publisher and holding company based in …"
+    },
+    {
+      "title": "Krafton — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Krafton",
+      "snippet": "Krafton Inc. (anciennement Bluehole Studio et Bluehole) est une entreprise sud-coréenne de développement et d' édition de jeux …"
+    },
+    {
+      "title": "PUBG: BATTLEGROUNDS",
+      "url": "https://pubg.com/",
+      "snippet": "© 2026 KRAFTON, INC. PUBG IS A REGISTERED TRADEMARK OR SERVICE MARK OF KRAFTON, INC."
+    }
+  ]
 }

@@ -43,9 +43,9 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1101,
+  "likes": 1107,
   "downloads_30d": 4212417,
-  "trending_score": 60.199999999999996,
+  "trending_score": 61.599999999999994,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
   "storage_bytes": 221989360675,
@@ -64,31 +64,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?search=abliterate",
-      "snippet": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF. Image-Text-to-Text ... SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF. Image-Text-to-Text • 177B ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=quantization",
-      "snippet": "SC117/Spark-X2.5-4B-abliterated-FIT-GGUF. Text Generation • 4B • Updated 25 days ... pfeifferj/Qwen3.8-Flash-Next-GSQ-RCO-GGUF. Image-Text-to-Text • 125B ..."
-    },
-    {
-      "title": "Awesome tiny LLMs - a eipi1-0 Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/eipi1-0/awesome-tiny-llms",
-      "snippet": "vor 5 Tagen ... mradermacher/Huihui-GLM-4.7-Flash-abliterated-i1-GGUF. 30B ... ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF. Image-Text-to-Text ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=multimodal&p=2&sort=trending",
-      "snippet": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4 · neko-legends/GLM-5.3-Flash-Uncensored-EXL3 · stealth-model/space-bunny-alpha · SC117/occamy-1.0-abliterated-FIT-GGUF."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=long-context",
-      "snippet": "peonist-ai/halogen-qwen3.8-flash-next. Text Generation • Updated in 24 minutes ... Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF. Image-Text-to-Text • 27B ..."
-    }
-  ]
+  "sources": []
 }

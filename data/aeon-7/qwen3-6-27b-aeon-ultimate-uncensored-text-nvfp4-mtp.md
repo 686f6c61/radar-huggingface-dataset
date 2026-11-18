@@ -1,113 +1,103 @@
 # AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP
 
 ## Resumen
-Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP es una version cuantizada en NVFP4 y estrictamente textual del modelo abliterado AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16, publicado por el usuario AEON-7. Pese al "27B" del nombre, los pesos safetensors declaran 17.925.456.896 parametros (~17,9 B). El punto de partida es Qwen 3.6 27B, al que se aplica una abliteration (eliminacion de direcciones de rechazo) que el autor describe como sin perdida: divergencia KL de 0,000492 frente al modelo base y 0/100 rechazos en su evaluacion.
 
-La variante anade dos componentes tecnicos. Por un lado, el cuerpo se cuantiza a 4 bits en formato NVFP4 con nvidia-modelopt 0.43.0, que vLLM sirve mediante `--quantization modelopt`. Por otro, se injerta un cabezal MTP (multi-token prediction) procedente del modelo base, lo que habilita decodificacion especulativa nativa sin necesidad de un drafter externo. Las capas GatedDeltaNet/linear_attn se mantienen en BF16 para no degradar la recurrencia, y la torre de vision se elimina por completo (333 claves visuales, ~0,92 GB), dejando un build solo texto de menor huella.
+Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP es una variante cuantizada en formato NVFP4 del modelo abliterado AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16, que a su vez es una ablación de los mecanismos de rechazo (abliteration) sobre Qwen 3.6 de 27B. El autor, AEON-7, distribuye esta versión en formato modelopt compressed-tensors con la torre de visión eliminada, pensada para despliegues solo-texto en GPUs Blackwell con VRAM ajustada (RTX 5090 de 32 GB, RTX PRO 6000, B100/B200). Cuenta con 27.320.697.856 parámetros totales y un repositorio de 27,7 GB.
 
-Su interes actual es practico: documenta un flujo de cuantizacion NVFP4 + MTP funcional sobre GPUs Blackwell (sm_100/sm_120) con despliegue en vLLM y contenedores preparados para DGX Spark, RTX 5090 y RTX PRO 6000. No obstante, el propio autor marca esta ficha como superada por la linea Qwen3.8 y recomienda migrar para trabajo nuevo.
+La propuesta técnica principal es doble: por un lado, la cuantización NVFP4 (4 bits de coma flotante con escalas por bloque) que reduce el peso del modelo respecto a BF16 manteniendo la fidelidad; por otro, la incorporación de una cabeza MTP (multi-token prediction) que habilita decodificación especulativa nativa en vLLM mediante `--speculative-config '{"method":"qwen3_5_mtp","num_speculative_tokens":3}'`. La arquitectura subyacente es híbrida: combina atención lineal GatedDeltaNet (herencia tipo Mamba) con capas de atención clásica, lo que condiciona el esquema de cuantización.
+
+El modelo es relevante para quienes necesitan un 27B sin censura de rechazos, con licencia Apache 2.0 y un pipeline de despliegue medido sobre hardware Blackwell. No obstante, el propio autor marca esta ficha como superada por su línea Qwen3.8, y la mantiene en línea únicamente por razones históricas y de descargas existentes.
 
 ## Especificaciones tecnicas
+
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido: atencion + capas lineales GatedDeltaNet (SSM, estilo Mamba); 48 capas GDN |
-| Parametros totales | 17.925.456.896 (~17,9 B) segun safetensors |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 en el cuerpo (nvidia-modelopt 0.43.0, `NVFP4_DEFAULT_CFG`); BF16 en capas `linear_attn`/GatedDeltaNet; FP8 KV cache y TurboQuant K8V4 disponibles en los contenedores de referencia |
-| Idiomas soportados | en, zh, multilingue (segun tags del repositorio) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors en formato modelopt/compressed-tensors NVFP4 (el repositorio declara tambien el tag "8-bit") |
-| Tamano del repositorio | 27,7 GB en Hugging Face; la model card cifra esta variante solo texto en ~20 GB |
-| Pipeline | text-generation |
-| Entrada multimodal | no (torre de vision eliminada, `language_model_only: true`) |
-| Parametros totales del modelo base | no disponible |
-| Fecha de publicacion | 28/04/2026 (ultima actualizacion 12/09/2026) |
+| Arquitectura | Transformer híbrido: atención lineal GatedDeltaNet (Mamba) + capas de atención clásica; cabeza MTP nativa (`qwen3_5_mtp`) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantizacion | NVFP4 (formato modelopt compressed-tensors, `NVFP4_DEFAULT_CFG` de nvidia-modelopt 0.43.0); existe variante BF16 de referencia |
+| Idiomas soportados | en, zh, multilingual |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (modelopt NVFP4); variante BF16 en safetensors |
 
 ## Arquitectura y entrenamiento
-La arquitectura es un transformer hibrido que combina atencion con 48 capas lineales de tipo GatedDeltaNet (GDN), un mecanismo de espacio de estados con recurrencia controlada por puertas, en la linea de Mamba. El proceso de cuantizacion es selectivo: 432 claves correspondientes a `linear_attn` se excluyen explicitamente de la cuantizacion y se conservan en BF16, porque aplicar NVFP4 al estado recurrente de un SSM colapsa la recurrencia. El resto del cuerpo pasa a NVFP4 con la configuracion `NVFP4_DEFAULT_CFG` de nvidia-modelopt 0.43.0, con decisiones de cuantizacion por proyeccion. Sobre los pesos se injerta un cabezal MTP tomado del modelo base, expuesto en vLLM como `qwen3_5_mtp`, que actua como mecanismo de decodificacion especulativa nativa. La receta original (config de modelopt, eleccion por proyeccion y tecnica de injerto del cabezal MTP) procede de la serie Qwen3.6-27B-NVFP4-MTP de sakamakismile, adaptada aqui a los pesos abliterados de AEON-Ultimate.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de datos ni sobre fases de RLHF o DPO: esta publicacion es una derivada de cuantizacion e injerto sobre un modelo ya entrenado, no un entrenamiento nuevo. Los unicos datos de calidad declarados son los de la abliteration del modelo base (KL 0,000492 respecto al Qwen 3.6 27B original y 0/100 rechazos), aportados por el autor y no verificados de forma independiente.
+El modelo parte de Qwen 3.6 27B y aplica una abliteración descrita por el autor como sin pérdida (KL 0.000492 frente al base, 0/100 rechazos en la evaluación citada). La arquitectura conserva el stack híbrido del base: capas de atención lineal basadas en GatedDeltaNet combinadas con atención estándar, lo que exige un tratamiento específico en la cuantización (el autor menciona "hybrid GDN-aware quantization"). Sobre esa base se injerta una cabeza de predicción multi-token (MTP) que actúa como borrador nativo para decodificación especulativa.
+
+La cuantización se realizó con `nvidia-modelopt` 0.43.0 aplicando `NVFP4_DEFAULT_CFG`, con elecciones de cuantización por proyección. El pipeline de injerto MTP y la receta modelopt proceden del trabajo de sakamakismile sobre el base sin abliterar (serie Qwen3.6-27B-NVFP4-MTP); AEON-7 adaptó esa receta a sus pesos abliterados. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO posteriores al base.
 
 ## Capacidades
-- Generacion de texto conversacional en ingles, chino y otros idiomas declarados como multilingues.
-- Decodificacion especulativa nativa mediante el cabezal MTP (`qwen3_5_mtp`), con configuracion recomendada `num_speculative_tokens: 3`, o mediante un drafter DFlash.
-- Razonamiento y generacion de codigo y matematicas a nivel de modelo base, sin cifras de evaluacion publicadas en esta ficha.
-- Comportamiento "uncensored": la abliteration reduce drasticamente los rechazos (0/100 en la evaluacion del autor sobre el base).
-- Capacidades de vision: no disponibles en esta variante, la torre visual fue eliminada.
-- Modo "thinking" explicito: no disponible en la informacion proporcionada.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado especificamente; el repositorio GitHub asociado incluye un `AGENTS.md` orientado al operador del despliegue, no a capacidades agenticas del modelo.
+
+- Generación de texto conversacional y razonamiento en inglés, chino y otros idiomas (etiqueta `multilingual`).
+- Decodificación especulativa nativa mediante cabeza MTP (`qwen3_5_mtp`) con `num_speculative_tokens` configurable (3 en el ejemplo del autor).
+- Compatibilidad con decodificación especulativa alternativa basada en drafter DFlash.
+- Comportamiento sin rechazos: la abliteración elimina las negativas del modelo base (0/100 rechazos reportados).
+- Integración con vLLM mediante `--quantization modelopt`.
+- Solo texto: la torre de visión ha sido eliminada en esta variante concreta (la variante multimodal del mismo autor la conserva).
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible; el base Qwen 3.6 lo incorpora, pero la model card no lo detalla para esta variante.
 
 ## Casos de uso
-- Servicio de chat de alta concurrencia en GPU Blackwell de consumo: con ~20 GB de pesos, el modelo cabe con holgura en una RTX 5090 de 32 GB, y las mediciones del hermano multimodal cifran ~84 tok/s agregados en regimen estable con concurrencia x4.
-- Investigacion sobre alineacion y abliteration: la variante permite estudiar el comportamiento de un modelo sin direcciones de rechazo manteniendo una divergencia KL muy baja (0,000492) respecto al base, lo que facilita comparaciones controladas.
-- Generacion creativa sin restricciones de contenido: ficcion, guiones o narrativa para adultos donde los filtros de un modelo alineado bloquearian la salida; el operador asume la responsabilidad editorial.
-- Sintesis de datos para fine-tuning: al ser solo texto y admitir alta concurrencia, sirve para generar grandes volumenes de pares instruccion-respuesta en ingles y chino sin la penalizacion de VRAM de la torre visual.
-- Traduccion y procesamiento bilingue en/zh: los idiomas declarados cubren los dos mercados principales del modelo base, con salida multilingue adicional.
-- Despliegue en DGX Spark / GB10: el contenedor `ghcr.io/aeon-7/aeon-vllm-ultimate:latest` esta ajustado a ese hardware, con NVFP4 KV cache (PR #44389) que amplia la capacidad de cache aproximadamente x3.
-- Evaluacion comparativa de tecnicas de cuantizacion: util como referencia practica para medir el impacto de NVFP4 + MTP frente al BF16 (51 GB) o al formato `compressed-tensors` (26 GB) sobre el mismo modelo.
-- Base para experimentos de decodificacion especulativa: el cabezal MTP injertado permite comparar MTP nativo frente a drafter DFlash dentro de vLLM sin reentrenar nada.
+
+- Despliegue solo-texto en RTX 5090 (32 GB): el peso NVFP4 de 20 GB deja margen para caché KV y contexto, permitiendo servir el modelo en una GPU de consumo de gama alta con decodificación especulativa MTP activada.
+- Investigación sobre abliteración: útil para estudiar cómo afecta la eliminación de direcciones de rechazo a la calidad del modelo (el autor reporta KL 0.000492 frente al base), comparando contra el BF16 de referencia.
+- Generación de contenido creativo sin filtros de rechazo: escenarios donde el modelo base se negaría por políticas de seguridad y se requiere continuidad narrativa, con la advertencia de que la ausencia de rechazos no elimina la responsabilidad del operador.
+- Evaluación de cuantización NVFP4 en arquitecturas híbridas: sirve como caso de estudio de cómo se comporta el formato modelopt sobre capas GatedDeltaNet frente a atención clásica, con métricas de throughput publicadas por el autor (hasta ~45 tok/s en matemáticas y código, media de 34,7 tok/s con n_spec=15 en la variante hermana).
+- Servicio en clústeres Blackwell (B100/B200, RTX PRO 6000): el formato NVFP4 está pensado para estas GPUs, y la cabeza MTP reduce la latencia por token en cargas interactivas.
+- Despliegue multi-tenant con concurrencia: el autor reporta ~84 tok/s agregados con concurrencia ×4 en la variante hermana, lo que lo hace apto para endpoints con varias sesiones simultáneas en vLLM.
+- Base para fine-tuning posterior: la variante BF16 (51 GB) es la referencia para ajuste; esta NVFP4 no está pensada para entrenamiento.
 
 ## Benchmarks y rendimiento
-| Metrica | Valor | Contexto |
-|---|---|---|
-| Throughput pico en matematicas/codigo | ~45 tok/s | Greedy + n_spec=15; medido sobre el hermano Multimodal-NVFP4-MTP-XS, no sobre este repositorio |
-| Throughput medio global | 34,7 tok/s | Misma medicion, por categorias |
-| Throughput agregado con concurrencia x4 | ~84 tok/s | Regimen estable, misma medicion |
-| Divergencia KL de la abliteration base | 0,000492 | Frente a Qwen 3.6 27B, dato del autor |
-| Tasa de rechazos del base abliterado | 0/100 | Dato del autor |
 
-No se han publicado resultados de benchmarks de precision (MMLU, HumanEval, GSM8K ni equivalentes) en la informacion disponible. Las cifras de throughput corresponden al modelo hermano multimodal y el autor indica que esta variante "deberia servir de forma identica", pero no se aportan mediciones propias de este repositorio.
+No se han publicado resultados de benchmarks en la información disponible para esta variante concreta. El autor cita cifras de rendimiento de inferencia de la variante hermana `-Multimodal-NVFP4-MTP-XS` (misma receta, mismo formato y misma pila híbrida), medidas en modo greedy con n_spec=15:
+
+| Metrica | Valor reportado (variante hermana) |
+|---|---|
+| Throughput en matemáticas/código (pico) | ~45 tok/s |
+| Throughput medio global | 34,7 tok/s |
+| Throughput agregado con concurrencia ×4 | ~84 tok/s |
+
+No se dispone de MMLU, HumanEval, GSM8K ni otras métricas de calidad para esta ficha.
 
 ## Requisitos de hardware
-- Huella de pesos: ~20 GB segun la model card de esta variante solo texto; el repositorio completo ocupa 27,7 GB en disco.
-- NVFP4 exige hardware Blackwell: sm_100 (B100, B200), sm_120 (RTX 5090, RTX PRO 6000) y parches sm_121a para GB10/DGX Spark.
-- Cabe en GPU de consumo: si, en RTX 5090 de 32 GB, segun la propia model card ("fits comfortably"). No se documenta funcionamiento en GPUs anteriores a Blackwell.
-- GPUs de referencia citadas: RTX 5090, RTX PRO 6000, B100, B200 y DGX Spark / GB10.
-- Para el modelo BF16 del que deriva: A100/H100 de 80 GB, RTX PRO 6000 de 96 GB o configuraciones multi-GPU.
-- Despliegue: vLLM con `--quantization modelopt`; cabezal especulativo nativo con `--speculative-config '{"method":"qwen3_5_mtp","num_speculative_tokens":3}'` o drafter DFlash (recomendado en Spark). Contenedores `ghcr.io/aeon-7/aeon-vllm-ultimate:latest` (Spark/GB10), `ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest` (RTX discreta) y `vllm-aeon-ultimate-dflash:qwen36-v3` (produccion estable con FP8 KV + DFlash).
-- Detalle de cache KV: en la imagen vLLM 0.23.0, DFlash requiere `--kv-cache-dtype auto` (BF16); FP8 KV queda en la imagen v3.
-- No se documenta soporte para llama.cpp, Ollama, TGI ni pesos GGUF en la informacion disponible.
-- Latencia y throughput: ver la tabla de benchmarks (hasta ~45 tok/s por secuencia, ~84 tok/s agregados con concurrencia x4 en la variante hermana).
+
+- VRAM estimada: el repositorio ocupa 27,7 GB, pero el autor indica un peso desplegado de ~20 GB en NVFP4 (sin torre de visión); debe sumarse la caché KV según contexto y número de secuencias.
+- GPU recomendadas: RTX 5090 (32 GB), RTX PRO 6000 (96 GB), B100 y B200 (arquitecturas sm_120 y sm_100 respectivamente, según las etiquetas del modelo).
+- Cabe en GPU de consumo: sí, en RTX 5090 de 32 GB según el autor; no se garantiza en GPUs de 24 GB.
+- Opciones de despliegue: vLLM con `--quantization modelopt` y contenedores del autor (`ghcr.io/aeon-7/aeon-vllm-ultimate:latest` para Spark/GB10 o `ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest` para RTX discretas); la imagen v3 `ghcr.io/aeon-7/vllm-aeon-ultimate-dflash:qwen36-v3` se mantiene como objetivo estable con FP8 KV + DFlash.
+- Latencia y throughput: ver tabla de benchmarks; cifras medidas en la variante hermana, no en esta ficha.
+- Nota: en la imagen nueva, DFlash requiere `--kv-cache-dtype auto` (BF16).
 
 ## Comparativa con modelos similares
-| Modelo | Tamano | Cuantizacion / formato | Vision | Uso previsto |
-|---|---|---|---|---|
-| Este repositorio (Text-NVFP4-MTP) | ~20 GB | NVFP4 modelopt + MTP | no | Texto en VRAM ajustada, RTX 5090 32 GB |
-| AEON-7/...-Multimodal-NVFP4-MTP | 27 GB | NVFP4 modelopt + MTP | si | GPUs dedicadas de alto ancho de banda (RTX 5090, RTX PRO 6000, B100/B200) |
-| AEON-7/...-NVFP4 (compressed-tensors) | 26 GB | NVFP4 compressed-tensors + DFlash | si | DGX Spark / GB10, produccion validada |
-| AEON-7/...-BF16 (modelo base) | 51 GB | BF16 sin cuantizar | si | Referencia de precision, A100/H100 80 GB, fine-tuning |
-| sakamakismile/Qwen3.6-27B-Text-NVFP4-MTP | no disponible | NVFP4 modelopt + MTP | no | Receta original sobre el base no abliterado (22K+ descargas) |
-| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED | no disponible | NVFP4 + FP8 mixto | no disponible | Sucesor recomendado por el autor para trabajo nuevo |
 
-La comparativa con modelos de otras familias (por ejemplo, alternativas densas de ~20 B en el mismo rango de VRAM) no esta disponible en la informacion proporcionada: no se aportan parametros de contexto ni resultados de evaluacion que permitan una comparacion rigurosa.
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| Este modelo (Text-NVFP4-MTP) | 27,3 B | no disponible | NVFP4 modelopt + MTP, solo texto, ~20 GB | Apache 2.0 | Foco en VRAM ajustada y decodificación especulativa nativa |
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP | 27,3 B (estimado) | no disponible | NVFP4 modelopt + MTP, multimodal, 27 GB | Apache 2.0 | Misma receta con torre de visión; requiere más VRAM |
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16 | 27,3 B | no disponible | BF16, 51 GB | Apache 2.0 | Referencia de precisión completa; apto para fine-tuning |
+| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED | no disponible | no disponible | NVFP4 + FP8 mixto | no disponible | Sucesor recomendado por el autor; capacidad superior según la model card |
 
 ## Limitaciones y advertencias
-- Modelo abliterado y etiquetado como "uncensored": carece de salvaguardas de seguridad; puede producir contenido dañino, ilegal o explicitamente sexual. El operador es responsable del filtrado en produccion.
-- Riesgo de alucinacion: no cuantificado. No hay evaluaciones de veracidad ni de precision publicadas para esta variante.
-- Longitud de contexto no documentada, lo que impide planificar despliegues que dependan de ventanas largas o de RAG con muchos documentos.
-- Discrepancia de nomenclatura: el nombre indica "27B" pero los safetensors declaran 17.925.456.896 parametros (~17,9 B). Conviene verificar la cifra antes de dimensionar hardware.
-- El tag `image-text-to-text` del repositorio procede del modelo base y no aplica: esta variante es estrictamente textual.
-- Las cifras de throughput citadas provienen de la variante multimodal hermana, no de mediciones sobre este repositorio.
-- La afirmacion de abliteration "sin perdida" (KL 0,000492, 0/100 rechazos) es un dato autoinformado por el autor, sin verificacion independiente.
-- Requiere hardware Blackwell (sm_100/sm_120/sm_121a). No hay ruta documentada a GGUF, llama.cpp u Ollama, por lo que no es desplegable en GPUs anteriores ni en CPU.
-- El propio autor marca esta publicacion como superada por la linea Qwen3.8, que recomienda para trabajo nuevo; esta ficha se mantiene solo por historico.
-- La licencia declarada es apache-2.0, pero se trata de una obra derivada de Qwen 3.6; conviene verificar las condiciones de la licencia del modelo original antes de un uso comercial.
-- Adopcion muy baja en el momento de los datos (154 descargas, 1 like), lo que limita la evidencia de la comunidad sobre su comportamiento real.
-- Idiomas: solo en y zh estan explicitamente soportados; el resto de lenguas, incluido el castellano, no tienen validacion declarada.
+
+- Modelo abliterado: la eliminación de rechazos implica que puede generar contenido que el base rechazaría; el operador asume la responsabilidad del filtrado posterior.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual para esta variante; la cuantización NVFP4 puede introducir degradación adicional no medida.
+- Idiomas: la model card declara en, zh y multilingual, pero no se detalla la cobertura real del resto de idiomas, incluido el español.
+- Contexto: la longitud de contexto no se especifica en la información disponible; debe consultarse la configuración del tokenizador y del base Qwen 3.6 antes de dimensionar la caché KV.
+- Licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base Qwen 3.6 y de la receta de terceros (sakamakismile) deben verificarse por separado.
+- Ficha marcada como superada por el propio autor: recomienda migrar a la línea Qwen3.8 Ultimate Uncensored NVFP4-MIXED para trabajo nuevo.
+- Solo texto: si se necesita entrada de imagen, debe usarse la variante multimodal.
+- Dependencia de versiones concretas de vLLM y de parches propios (sm_121a, PR #44389); la reproducibilidad fuera de esos contenedores no está garantizada.
+- Sin resultados de benchmarks propios publicados para esta variante; las cifras citadas provienen de una variante hermana.
 
 ## Enlaces
-- Modelo en Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP
+
+- Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP
 - Modelo base BF16: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
-- Variante NVFP4 (compressed-tensors + DFlash): https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4
-- Variante multimodal NVFP4 + MTP: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP
-- Variante multimodal NVFP4 + MTP XS: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP-XS
-- Sucesor recomendado: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
-- Receta de referencia (sakamakismile): https://huggingface.co/sakamakismile/Qwen3.6-27B-Text-NVFP4-MTP
-- Perfil de sakamakismile: https://huggingface.co/sakamakismile
-- Repositorio de despliegue, benchmarks y AGENTS.md: https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash
-- Contenedor vLLM Ultimate (DGX Spark / GB10): https://github.com/AEON-7/vllm-ultimate-dgx-spark
-- Imagen de contenedor Spark: https://ghcr.io/aeon-7/aeon-vllm-ultimate:latest
-- Imagen de contenedor RTX: https://ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest
-- Imagen estable con DFlash y FP8 KV: ghcr.io/aeon-7/vllm-aeon-ultimate-dflash:qwen36-v3
+- Variante multimodal NVFP4-MTP: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP
+- Variante multimodal NVFP4-MTP-XS: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-NVFP4-MTP-XS
+- Variante NVFP4 con compressed-tensors + DFlash: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4
+- Sucesor recomendado (Qwen3.8 NVFP4-MIXED): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
+- Recetas de operador Qwen3.8: https://github.com/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED
+- Guía de despliegue y benchmarks: https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash
+- Contenedor vLLM Ultimate (DGX Spark): https://github.com/AEON-7/vllm-ultimate-dgx-spark
+- Receta de referencia NVFP4-MTP (sakamakismile): https://huggingface.co/sakamakismile/Qwen3.6-27B-Text-NVFP4-MTP

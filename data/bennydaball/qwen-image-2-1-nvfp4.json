@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 25,
-  "downloads_30d": 17676,
+  "downloads_30d": 16324,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Facebook",
-      "url": "https://upload.facebook.com/login/identify/",
-      "snippet": "Enter your mobile number or email. Mobile number or email"
-    },
-    {
-      "title": "Log into Facebook",
-      "url": "https://upload.facebook.com/login/",
-      "snippet": "Log into Facebook to connect and share with friends, family, and people you know."
-    },
-    {
-      "title": "How do you contact Facebook by phone? - Answers",
-      "url": "https://www.answers.com/law-and-legal-issues/How_do_you_contact_Facebook_by_phone",
-      "snippet": "2 days ago · How do I recover a hacked Facebook account UK call 0122-498-8977 How Can I Recover My Facebook Login If I Forgot …"
-    },
-    {
-      "title": "Clicking \"Login with Facebook\" does nothing on Firefox, works on Edge ...",
-      "url": "https://support.mozilla.org/en-US/questions/1256791",
-      "snippet": "Apr 19, 2019 · With Firefox, when I click on \"Login with Facebook\" on Zomato (zomato.com), nothing happens. However, if I click on …"
-    },
-    {
-      "title": "ตั้งค่า Firefox ใหม่ - วิธีการ ...",
-      "url": "https://support.mozilla.org/th/kb/%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%84%E0%B9%88%E0%B8%B2-firefox-%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-%E0%B9%81%E0%B8%81%E0%B9%89%E0%B9%84%E0%B8%82%E0%B8%9B%E0%B8%B1%E0%B8%8D%E0%B8%AB%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86",
-      "snippet": "ตั้งค่า Firefox ใหม่ - วิธีการง่ายๆ ในการแก้ไขปัญหาต่างๆ"
-    }
-  ]
+  "sources": []
 }

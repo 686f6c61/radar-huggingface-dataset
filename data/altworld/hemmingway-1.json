@@ -30,8 +30,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 903,
-  "downloads_30d": 3357,
+  "likes": 904,
+  "downloads_30d": 3345,
   "trending_score": 20,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -51,31 +51,5 @@
   "renamed_to": "HemmingwayAI/Hemmingway-1",
   "renamed_at": "2026-11-11T02:16:05.939Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Contact Us - Microsoft Support",
-      "url": "https://support.microsoft.com/en-gb/contactus",
-      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
-    },
-    {
-      "title": "Anmelden bei Hotmail | Microsoft Support",
-      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
-      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
-    },
-    {
-      "title": "Sign in to your account - techcommunity.microsoft.com",
-      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
-      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
-    },
-    {
-      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
-      "snippet": "Built for business: How Microsoft 365 Copilot keeps you in the flow of legal work Now the LegalZoom agent works inside Microsoft …"
-    },
-    {
-      "title": "Aktualisieren von Treibern über Geräte-Manager in Windows",
-      "url": "https://support.microsoft.com/de-de/windows/aktualisieren-von-treibern-%C3%BCber-ger%C3%A4te-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
-      "snippet": "Erfahren Sie, wie Sie Treiber in Windows mithilfe von Geräte-Manager aktualisieren oder neu installieren."
-    }
-  ]
+  "sources": []
 }

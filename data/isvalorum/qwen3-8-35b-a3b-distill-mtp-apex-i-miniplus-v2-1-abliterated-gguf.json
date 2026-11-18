@@ -64,8 +64,8 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 77,
-  "downloads_30d": 113981,
+  "likes": 79,
+  "downloads_30d": 115013,
   "trending_score": 12,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -85,31 +85,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Twin Autism: Can One Twin Have Autism and the Other Not?",
-      "url": "https://neurolaunch.com/can-one-twin-have-autism-and-the-other-not/",
-      "snippet": "Aug 11, 2024 · Can a Twin Be Autistic and the Other Twin Be Neurotypical Even With Identical DNA? Yes, and this is one of the …"
-    },
-    {
-      "title": "Can One Identical Twin Have Autism and the Other Not?",
-      "url": "https://biologyinsights.com/can-one-identical-twin-have-autism-and-the-other-not/",
-      "snippet": "Nov 26, 2025 · Identical twins share DNA, but not fate. Learn how epigenetics and non-shared environments explain autism …"
-    },
-    {
-      "title": "Why Can One Twin Be Autistic? Genes and More",
-      "url": "https://autisticnick.com/can-one-twin-be-autistic",
-      "snippet": "Aug 28, 2025 · For instance, consider a set of identical twins where one exhibits the characteristic social communication difficulties …"
-    },
-    {
-      "title": "Twin Study: Can Only One Identical Twin Be Autistic?",
-      "url": "https://autisticnick.com/can-one-identical-twin-be-autistic-and-not-the-other",
-      "snippet": "Sep 19, 2025 · Identical twins, originating from a single fertilized egg, share virtually identical genetic material. However, autism …"
-    },
-    {
-      "title": "Identical Twins and Autism Connection - NeuroLaunch.com",
-      "url": "https://neurolaunch.com/identical-twins-autism/",
-      "snippet": "Aug 11, 2024 · Explore the genetic link between identical twins and autism, including research findings and implications for families."
-    }
-  ]
+  "sources": []
 }

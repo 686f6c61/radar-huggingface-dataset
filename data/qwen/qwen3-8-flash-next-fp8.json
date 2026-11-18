@@ -24,9 +24,9 @@
     "fp8",
     "region:us"
   ],
-  "likes": 317,
+  "likes": 318,
   "downloads_30d": 206228,
-  "trending_score": 13,
+  "trending_score": 14,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
   "storage_bytes": 185553536918,
@@ -47,29 +47,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token."
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
     },
     {
-      "title": "Qwen/Qwen3.8-Flash-Next-FP8 · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
     },
     {
-      "title": "Qwen/Qwen3.8-Flash-Next · Upcoming release · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "A Preview of the Qwen4 Architecture Qwen3.8-Flash-Next Qwen3.8-Flash-Next"
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
     },
     {
-      "title": "Qwen3.8-Flash-Next 125B-A6B: MoE Drop Aug 26 (2026) | explainx.ai Blog",
-      "url": "https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026",
-      "snippet": "The listing described 125 billion total parameters, 6 billion active (125B-A6B), built on what Alibaba called \"next-generation Qwen4 architecture\", with expected repos Qwen/Qwen3.8-Flash-Next and an FP8 variant on ModelScope and Hugging Face around August 26, 2026 ~20:30 UTC+5:30."
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen combines chain-of-thought reasoning with creative idea generation to craft narratives, develop characters, and explore plots …"
     },
     {
-      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3.8",
-      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large …"
     }
   ]
 }

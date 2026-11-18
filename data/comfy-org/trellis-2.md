@@ -2,43 +2,48 @@
 
 ## Resumen
 
-TRELLIS.2 es un modelo de generación de objetos 3D desarrollado por Microsoft, cuyo repositorio original se encuentra en `microsoft/TRELLIS.2-4B`. Esta ficha corresponde al reempaquetado publicado por Comfy-Org, que adapta los pesos del modelo para su uso directo en ComfyUI, el popular entorno de generación de imágenes y 3D por nodos. El repositorio contiene los archivos necesarios para cargar el modelo en ComfyUI, incluyendo un codificador de visión (DINOv3 ViT-L), un modelo de difusión y dos autoencoders (VAE) para forma y textura.
+TRELLIS.2 es un modelo de generación 3D de Microsoft Research distribuido en formato de archivo único para ComfyUI por Comfy-Org. Concretamente, este repositorio (`Comfy-Org/TRELLIS.2`) es un reempaquetado de los pesos originales de `microsoft/TRELLIS.2-4B`, convertidos a safetensors y organizados según la estructura de carpetas que espera ComfyUI (`clip_vision`, `diffusion_models`, `vae`). No se trata de un modelo de lenguaje, sino de un pipeline de difusión para generar mallas 3D con textura a partir de imágenes de entrada.
 
-El modelo se distribuye bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. El tamaño total del repositorio es de 26,0 GB, lo que indica que se trata de un modelo de gran escala, probablemente con 4.000 millones de parámetros según el nombre del repositorio original. Sin embargo, la ficha proporcionada no incluye detalles técnicos adicionales, por lo que esta reseña se basa únicamente en la información disponible en la model card y en el conocimiento general de la familia TRELLIS.
+El modelo base tiene 4B parámetros y sigue la estirpe de TRELLIS, la familia de modelos de Microsoft para generación 3D estructurada. El pipeline se descompone en varios componentes: un codificador de visión DINOv3 ViT-L para extraer características de la imagen, un modelo de difusión principal (disponible en bf16 y en int8 con convrot), y dos VAE específicos, uno para la forma geométrica y otro para la textura. Esta separación permite generar geometría y apariencia por etapas.
+
+Su relevancia actual radica en que democratiza la generación imagen-a-3D dentro de ComfyUI, con licencia MIT y pesos ya empaquetados para su uso directo. El repositorio acumula más de 400.000 descargas y está integrado en las plantillas oficiales de workflows de Comfy-Org (Pixal3D & TRELLIS.2: Image to Model), lo que lo convierte en una de las vías más accesibles para producción de assets 3D asistida por IA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el nombre del repo original sugiere 4B, pero no se confirma) |
-| Parametros activos | no aplicable (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo contiene pesos en bf16, según el nombre de archivo `trellis_2_bf16.safetensors`) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Pipeline de difusión multi-etapa para generación 3D (modelo de difusión principal + VAE de forma + VAE de textura + codificador de visión DINOv3 ViT-L) |
+| Parametros totales | 4B (modelo base `microsoft/TRELLIS.2-4B`); desglose por componente no disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no es un modelo de lenguaje) |
+| Tipos de cuantizacion | bf16 e int8 (variante `trellis_2_int8_convrot.safetensors`); no se detallan otras |
+| Idiomas soportados | no disponible (modelo multimodal imagen-a-3D, sin interfaz de texto) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (archivos `.safetensors` en el repo) |
+| Formato de pesos | safetensors (archivos únicos para ComfyUI: `dino_v3_vit_l`, `trellis_2_bf16`, `trellis_2_int8_convrot`, `trellis_2_shape_vae_bf16`, `trellis_2_texture_vae_bf16`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento o las innovaciones técnicas del modelo en la ficha proporcionada. El repositorio original de Microsoft (`microsoft/TRELLIS.2-4B`) debería contener dichos detalles, pero no están incluidos en este reempaquetado. Basándose en el nombre y en la familia TRELLIS, se puede inferir que se trata de un modelo de difusión para generación 3D, pero no se pueden confirmar detalles como el tipo de transformer, el uso de atención lineal o técnicas de decodificación especulativa.
+La información disponible no detalla la arquitectura interna del modelo base más allá de su naturaleza de difusión y su tamaño de 4B parámetros. El pipeline se organiza en componentes diferenciados: un codificador de visión DINOv3 ViT-L (`dino_v3_vit_l.safetensors`) que procesa la imagen de entrada, un modelo de difusión principal (`trellis_2_bf16` o `trellis_2_int8_convrot`) y dos VAE separados para forma y textura (`trellis_2_shape_vae_bf16` y `trellis_2_texture_vae_bf16`). Esta separación entre geometría y apariencia es característica de los pipelines de generación 3D estructurada de la familia TRELLIS.
+
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF/DPO o preferencias humanas. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa o atención lineal. La variante `int8_convrot` sugiere una cuantización a 8 bits con alguna transformación de rotación de convoluciones, pero los detalles técnicos de esa conversión no están publicados en la información disponible.
 
 ## Capacidades
 
-- No se dispone de información específica sobre las capacidades del modelo en la ficha proporcionada.
-- El repositorio incluye un codificador de visión (DINOv3 ViT-L), lo que sugiere que el modelo acepta imágenes como entrada para generar objetos 3D.
-- La presencia de dos VAE (forma y textura) indica que el modelo genera tanto la geometría como la apariencia superficial de los objetos.
-- Se recomienda consultar el repositorio original de Microsoft para obtener una lista detallada de capacidades, como generación a partir de texto, edición 3D, o soporte para tool calling.
+- Generación de mallas 3D con textura a partir de una imagen de entrada (image-to-3D).
+- Generación de geometría y textura en etapas separadas mediante VAEs dedicados.
+- Integración nativa con ComfyUI mediante workflows oficiales (plantilla Pixal3D & TRELLIS.2: Image to Model).
+- Ejecución en dos precisiones: bf16 para máxima calidad e int8 para menor huella de memoria.
+- Codificación de imagen con DINOv3 ViT-L como extractor de características visuales.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de lenguaje natural.
 
 ## Casos de uso
 
-- No se dispone de información concreta sobre casos de uso en la ficha proporcionada. Sin embargo, al tratarse de un modelo de generación 3D, los usos típicos incluyen:
-- Creación de activos 3D para videojuegos y realidad virtual: el modelo puede generar mallas y texturas a partir de imágenes de referencia, acelerando el flujo de trabajo de artistas.
-- Prototipado rápido en diseño industrial: los diseñadores pueden convertir bocetos o fotos en modelos 3D explorables.
-- Generación de contenido para simulaciones y robótica: el modelo puede sintetizar objetos sintéticos para entrenar agentes en entornos simulados.
-- Reconstrucción 3D a partir de fotografías: útil en aplicaciones de fotogrametría y digitalización de patrimonio.
-- Integración en pipelines de ComfyUI: gracias al reempaquetado, los usuarios pueden combinar TRELLIS.2 con otros nodos de ComfyUI para flujos de trabajo complejos de generación y edición 3D.
-- Investigación en generación 3D: el modelo sirve como base para estudios sobre representaciones neuronales y difusión aplicada a geometría.
+- Prototipado rápido de assets 3D para videojuegos: a partir de un concept art o una foto de referencia, el pipeline genera una malla texturizada que sirve como base para retopología y ajuste manual en Blender o Maya.
+- Catalogación de producto en e-commerce: convertir fotografías de producto en modelos 3D visualizables en la web, usando la variante int8 para reducir requisitos de memoria en servidores modestos.
+- Previsualización arquitectónica: generar volúmenes 3D texturizados a partir de bocetos o renders 2D para iterar sobre propuestas antes de modelado detallado.
+- Creación de contenido para impresión 3D: obtener mallas base a partir de imágenes de referencia, que luego se reparan y preparan con herramientas de slicing.
+- Enriquecimiento de datasets 3D: generar variaciones de mallas texturizadas para entrenar otros modelos de visión o de reconstrucción 3D.
+- Flujos de trabajo en ComfyUI para artistas técnicos: encadenar el nodo de TRELLIS.2 con otros nodos de postprocesado (renderizado, comparación de vistas) dentro de un grafo reproducible y versionable.
 
 ## Benchmarks y rendimiento
 
@@ -46,22 +51,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de información sobre requisitos de VRAM, GPUs recomendadas o latencia en la ficha proporcionada.
-- Dado el tamaño del repositorio (26 GB), se estima que el modelo requiere al menos 16-24 GB de VRAM para inferencia en precisión bf16, pero este dato no está confirmado.
-- Para despliegue, al estar diseñado para ComfyUI, se espera que funcione en entornos con CUDA y suficiente memoria. No se mencionan opciones como vLLM u Ollama, ya que no es un modelo de lenguaje.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo de difusión de 4B en bf16 requiere del orden de 8-10 GB solo para los pesos, a los que se suman los VAEs y el codificador DINOv3 ViT-L; la variante int8 reduce esa cifra aproximadamente a la mitad para el modelo principal. Estas estimaciones son orientativas y no proceden de la documentación del autor.
+- GPU recomendadas: no disponible. Por tamaño, cabría esperar funcionamiento en GPUs consumer de gama alta (RTX 4090, 24 GB) y en GPUs de datacenter (A100, H100) para lotes mayores.
+- Compatibilidad con GPU consumer: probable en tarjetas con 16-24 GB de VRAM usando la variante int8; no confirmado por el autor.
+- Opciones de despliegue: ComfyUI (vía los archivos safetensors y los workflows oficiales de Comfy-Org). No se documentan otros backends como vLLM, llama.cpp, Ollama o TGI, que además no aplican a un modelo de difusión 3D.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos de generación 3D como Shap-E, Point-E o TripoSR. No se conocen los parámetros, contexto ni rendimiento relativo de TRELLIS.2 en esta ficha.
+| Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TRELLIS.2 (este repo) | 4B | Difusión image-to-3D | no aplica | MIT | Safetensors para ComfyUI |
+| microsoft/TRELLIS.2-4B | 4B | Difusión image-to-3D | no aplica | no disponible en la información | Repositorio original en Hugging Face |
+| Alternativas de image-to-3D de la familia TRELLIS previa | no disponible | Difusión image-to-3D | no aplica | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre sesgos, riesgos de alucinación o limitaciones de contexto en la ficha proporcionada.
-- El modelo es un reempaquetado para ComfyUI, por lo que su uso fuera de ese entorno puede requerir adaptaciones adicionales.
-- La licencia MIT permite uso comercial, pero se recomienda verificar los términos del modelo original en el repositorio de Microsoft, ya que podría haber condiciones adicionales no reflejadas en este reempaquetado.
-- Al ser un modelo de generación 3D, la calidad de los resultados puede depender de la calidad de las imágenes de entrada y de la capacidad de cómputo disponible.
+- Este repositorio es un reempaquetado para ComfyUI; la autoría del modelo corresponde a Microsoft. Los problemas de calidad del modelo deben reportarse contra `microsoft/TRELLIS.2-4B`.
+- No es un modelo de lenguaje: no procesa texto ni mantiene conversaciones; cualquier expectativa de uso como LLM es incorrecta.
+- La información disponible no documenta sesgos, tasas de alucinación geométrica ni limitaciones de idioma.
+- La licencia MIT permite uso comercial, pero conviene verificar la licencia del modelo base original de Microsoft, que no se detalla en la información disponible.
+- El repositorio ocupa 31,2 GB, lo que implica requisitos de almacenamiento considerables y descargas largas.
+- La variante int8 puede introducir pérdida de calidad en geometría o textura frente a bf16; no se documenta la magnitud de esa degradación.
+- No se documentan límites de resolución de imagen de entrada ni de complejidad de malla de salida.
 
 ## Enlaces
 
-- Repositorio de Hugging Face del reempaquetado: [Comfy-Org/TRELLIS.2](https://huggingface.co/Comfy-Org/TRELLIS.2)
-- Repositorio original de Microsoft (mencionado en la model card): [microsoft/TRELLIS.2-4B](https://huggingface.co/microsoft/TRELLIS.2-4B)
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/TRELLIS.2
+- Modelo base original: https://huggingface.co/microsoft/TRELLIS.2-4B
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
+- Workflow oficial Pixal3D & TRELLIS.2: Image to Model: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/3d_pixal3d_trellis2_image_to_model.json

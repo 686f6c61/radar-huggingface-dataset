@@ -19,8 +19,8 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 133,
-  "downloads_30d": 886709,
+  "likes": 134,
+  "downloads_30d": 895506,
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,
@@ -40,29 +40,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Comfy-Org/Pixal3D · Hugging Face",
-      "url": "https://huggingface.co/Comfy-Org/Pixal3D",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Comfy-Org/Pixal3D at main - Hugging Face",
-      "url": "https://huggingface.co/Comfy-Org/Pixal3D/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - PozzettiAndrea/ComfyUI-Pixal3D: ComfyUI nodes for Pixal3D ...",
-      "url": "https://github.com/PozzettiAndrea/ComfyUI-Pixal3D",
-      "snippet": "ComfyUI nodes for Pixal3D (SIGGRAPH 2026, TencentARC) - pixel-aligned image-to-3D. Academic-only model license. - PozzettiAndrea/ComfyUI-Pixal3D"
-    },
-    {
-      "title": "Models - Comfy",
-      "url": "https://comfy.org/models/",
-      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
-    },
-    {
-      "title": "GitHub - dreamrec/ComfyUI-Pixal3D: Pixal3D ComfyUI integration for ...",
-      "url": "https://github.com/dreamrec/ComfyUI-Pixal3D",
-      "snippet": "Pixal3D ComfyUI integration for Windows (RTX 30/40/50) — single image to textured PBR mesh in 3-5 min - dreamrec/ComfyUI-Pixal3D"
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
     }
   ]
 }

@@ -2,112 +2,105 @@
 
 ## Resumen
 
-Carbon-X-GGUF es la distribucion en formato GGUF de Carbon-X, un modelo de lenguaje abierto de 14.822.046.720 parametros (aproximadamente 14,8B) desarrollado por Hugging Face Bio dentro de la familia Carbon. El modelo esta especializado en ADN: lee secuencias crudas dentro de una conversacion de chat convencional y responde en ingles sobre si una mutacion es benigna o patogena, si una region controla la actividad de un gen, a que grupo de organismo pertenece una secuencia o cuales son las siguientes bases de una cadena, explicando su razonamiento.
+Carbon-X es un modelo de lenguaje de 14.822.046.720 parámetros (aproximadamente 14,8B) desarrollado por Hugging Face Bio, diseñado específicamente para la comprensión y generación de ADN. Forma parte de la familia **Carbon** y se distribuye en este repositorio como cuantizaciones GGUF para inferencia local con llama.cpp. El modelo resuelve un problema concreto de la genómica computacional: leer secuencias de ADN en bruto dentro de una conversación de chat convencional y responder en inglés, prediciendo si una mutación es benigna o patógena, identificando regiones reguladoras de la actividad génica, clasificando secuencias por grupo de organismo y prediciendo las siguientes bases de una secuencia.
 
-La relevancia de esta publicacion es doble. Por un lado, lleva un modelo genomico de 14,8B a inferencia local mediante llama.cpp, con cuantizaciones que van de 29,7 GB (BF16) a 9,6 GB (Q4_K_M), lo que permite ejecutarlo en una unica GPU de consumo. Por otro, introduce un tokenizador hibrido (`HybridDNATokenizer`) que mantiene un vocabulario BPE para el texto y codifica el ADN como 6-mers no solapados, integrado en llama.cpp a partir del build b11742.
+La innovación principal es su tokenizador híbrido `HybridDNATokenizer`, que mantiene un vocabulario BPE para texto y codifica el ADN como 6-mers no solapados. Esto permite que un transformer de propósito general procese ADN sin una arquitectura especializada, manteniendo la capacidad conversacional. El repositorio GGUF incluye cinco cuantizaciones (BF16, Q8_0, Q6_K, Q5_K_M y Q4_K_M) y está pensado para ejecutarse con llama.cpp a partir de la build b11742, la primera que soporta este tokenizador.
 
-El modelo esta pensado para investigacion y analisis genomico asistido, no como dispositivo diagnostico. Su licencia es Apache-2.0, solo declara ingles y su ventana de contexto es de 40.960 tokens.
+El modelo es relevante ahora porque democratiza el análisis genómico de variantes en hardware de consumo: la cuantización Q8_0 ocupa 15,8 GB con las mismas puntuaciones de benchmark que BF16, y Q4_K_M baja a 9,6 GB. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales, algo poco habitual en modelos de dominio científico.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de lenguaje de 14,8B; el autor no detalla la arquitectura en la informacion proporcionada) |
-| Parametros totales | 14.822.046.720 (14,8B) |
-| Parametros activos | no aplica (no se describe como MoE) |
-| Longitud de contexto | 40.960 tokens |
-| Tipos de cuantizacion | BF16, Q8_0 (recomendada), Q6_K, Q5_K_M, Q4_K_M |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (repo de 78,7 GB con todas las variantes) |
-
-Detalle de ficheros publicados:
-
-| Cuantizacion | Fichero | Tamano |
-|---|---|---:|
-| BF16 | `carbon-x-bf16.gguf` | 29,7 GB |
-| Q8_0 (recomendada) | `carbon-x-q8_0.gguf` | 15,8 GB |
-| Q6_K | `carbon-x-q6_k.gguf` | 12,6 GB |
-| Q5_K_M | `carbon-x-q5_k_m.gguf` | 11,1 GB |
-| Q4_K_M | `carbon-x-q4_k_m.gguf` | 9,6 GB |
-
-En todas las variantes K-quant, los tensores de embedding y de salida, que contienen los tokens de ADN, se mantienen en Q8_0.
+| Arquitectura | Transformer con tokenizador híbrido (`HybridDNATokenizer`: BPE para texto, 6-mers para ADN) |
+| Parámetros totales | 14.822.046.720 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M (formato GGUF) |
+| Idiomas soportados | Inglés (texto); ADN como secuencia de nucleótidos |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); el modelo base Carbon-X en safetensors |
 
 ## Arquitectura y entrenamiento
 
-Carbon-X es un modelo de lenguaje de 14,8B parametros del que el autor no especifica en la informacion disponible la arquitectura interna (transformer denso, MoE, hibrido u otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Lo que si se documenta es la pieza diferenciadora: un tokenizador hibrido que combina un vocabulario BPE para el texto con una codificacion del ADN en 6-mers no solapados. Esto permite meter secuencias biologicas crudas en el mismo turno de conversacion que la pregunta en lenguaje natural, sin preprocesado externo.
+Carbon-X es un transformer de aproximadamente 14,8B parámetros. Su rasgo arquitectónico distintivo es el tokenizador híbrido `HybridDNATokenizer`, que conmuta entre un vocabulario BPE para el texto y una codificación de ADN en 6-mers no solapados. Las secuencias de al menos 6 bases A/C/G/T se etiquetan automáticamente con `<dna>…</dna>` y se tokenizan como 6-mers; las secuencias con hasta un 20% de códigos IUPAC de ambigüedad (N, R, Y, etc.) y longitud mínima de 12 bases también se etiquetan. Los 6-mers que contienen caracteres no canónicos se colapsan en un único token `<oov>`. Las longitudes que no son múltiplo de 6 se completan con tokens de cola dedicados, de modo que la decodificación devuelve la secuencia original exacta.
 
-El modelo fue post-entrenado y evaluado con el modo de razonamiento (thinking) desactivado, y el autor recomienda mantener `enable_thinking: false` en produccion. Los ajustes de muestreo por defecto con los que se generaron todos los resultados reportados son temperatura 0,6, top-p 0,95, top-k 20 y min-p 0, distintos de los valores por defecto de llama.cpp (0,8 / 0,95 / 40 / 0,05). La integracion en llama.cpp es reciente y depende del soporte de `HybridDNATokenizer`, anadido en el PR #30825 y disponible desde el build b11742.
+El modelo fue post-entrenado y evaluado con el modo *thinking* desactivado, y se recomienda usar `--chat-template-kwargs '{"enable_thinking": false}'` para reproducir ese comportamiento. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. Los archivos GGUF llevan incorporada la plantilla de chat y los parámetros de muestreo por defecto de Carbon-X.
 
 ## Capacidades
 
-- Prediccion de efecto de variantes: clasifica mutaciones como benignas o patogenicas y justifica la decision en ingles.
-- Identificacion de regiones reguladoras: detecta regiones que controlan la actividad genica.
-- Clasificacion taxonomica: asigna secuencias a grupos de organismos.
-- Prediccion de siguientes bases: completa o continua una secuencia de ADN dada.
-- Razonamiento explicito: acompana la respuesta con el razonamiento biologico que la sustenta (por ejemplo, deteccion de codon de inicio ATG y ausencia de codones de parada en la pauta de lectura).
-- Entrada de ADN crudo en chat: el tokenizador hibrido acepta la secuencia directamente en el mensaje del usuario, sin herramientas externas.
-- Conversacion multi-turno: el template de chat esta embebido en el GGUF y se activa con `--jinja`.
-- Servicio compatible con la API de OpenAI mediante `llama-server`, consumible con el SDK de OpenAI o con `curl`.
-- No documentado en la informacion disponible: tool calling, function calling, capacidades de agente multi-paso, vision, audio o multimodalidad.
+- Predicción de efecto de variantes (VEP): clasifica variantes de un solo nucleótido como benignas o patógenas a partir de una secuencia de referencia larga.
+- Identificación de regiones reguladoras que controlan la actividad génica.
+- Clasificación de secuencias por grupo de organismo.
+- Predicción de las siguientes bases de una secuencia de ADN.
+- Razonamiento explicativo: el modelo explica su razonamiento en inglés junto a la respuesta.
+- Conversación multi-turno en inglés con secuencias de ADN embebidas en el mensaje del usuario.
+- Manejo de secuencias de cualquier longitud, incluidas longitudes no múltiplo de 6, con reconstrucción exacta al decodificar.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés para texto.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Triaje de variantes en genomica clinica: introducir una variante y su contexto de secuencia en el chat y obtener una clasificacion preliminar benigno/patogenico con la justificacion, para priorizar que variantes revisa un genetista. El contexto de 40.960 tokens permite incluir bastante secuencia flanqueante en el mismo prompt.
-- Anotacion de regiones reguladoras: usar el modelo para marcar candidatos de promotores y enhancers en fragmentos ensamblados, como paso de pre-anotacion antes de herramientas especializadas.
-- Clasificacion de secuencias por grupo de organismo: en metagenomica o control de calidad, pedir al modelo que asigne un Contig a un grupo taxonomico amplio como filtro rapido.
-- Completado y comprobacion de secuencias: predecir las siguientes bases para detectar discontinuidades en un ensamblaje o para generar hipotesis sobre extensiones de una secuencia parcial.
-- Asistente local con datos genomicos sensibles: al ejecutarse con llama.cpp en hardware propio, las secuencias no salen de la infraestructura del laboratorio ni pasan por una API externa, lo que facilita el cumplimiento en entornos con datos de pacientes.
-- Docencia y formacion: el modelo explica el razonamiento detras de cada prediccion en lenguaje natural, lo que sirve para ilustrar conceptos como pautas de lectura, codones de inicio y parada o regiones no codificantes.
-- Integracion en plataformas LIMS o pipelines internos: `llama-server` expone un endpoint compatible con OpenAI, de modo que un servicio existente puede cambiar la URL base y consumir el modelo sin reescribir el cliente.
-- Pre-filtrado en pipelines de secuenciacion: descartar rapidamente candidatos poco interesantes con un modelo local y barato antes de lanzar analisis mas costosos.
+- **Análisis de variantes en investigación genómica**: dado un alelo de referencia y una variante de un solo nucleótido, el modelo predice si la mutación es benigna o patógena (benchmark FrontierVEP, 70,4 de accuracy en el modelo original). Adecuado para triaje preliminar de variantes antes de validación experimental.
+- **Anotación de regiones reguladoras**: el modelo identifica regiones que controlan la actividad génica a partir de la secuencia en bruto, útil para priorizar candidatos en estudios de expresión génica.
+- **Clasificación taxonómica de secuencias**: clasifica secuencias de ADN por grupo de organismo, aplicable a la caracterización rápida de metagenomas o muestras ambientales.
+- **Predicción de secuencia (NextBase)**: predice las siguientes bases de una secuencia (39,4 de precisión por base en el modelo original), útil para tareas de completado y diseño de secuencias.
+- **Asistente de laboratorio en local**: con la cuantización Q4_K_M (9,6 GB) puede desplegarse en una estación de trabajo con GPU de consumo, permitiendo consultas sobre secuencias sin enviar datos genómicos a servicios externos, algo crítico por privacidad y cumplimiento.
+- **Docencia y formación en bioinformática**: el modelo explica su razonamiento en inglés, lo que lo hace útil para ilustrar cómo se razona sobre variantes y regiones reguladoras en un entorno interactivo.
+- **Integración en pipelines de análisis**: mediante `llama serve`, expone una API compatible con OpenAI que puede integrarse en flujos automatizados de anotación de variantes o clasificación de secuencias.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una seccion de evaluacion, pero no se han proporcionado sus cifras. El unico dato cuantitativo es cualitativo: el autor afirma que la cuantizacion Q8_0 obtiene las mismas puntuaciones de benchmark que BF16 con la mitad de tamano.
+Resultados de los dos benchmarks de ADN de la model card de Carbon-X, ejecutados sobre cada archivo GGUF con el servidor de llama.cpp, con *thinking* desactivado y una muestra por problema. La columna Carbon-X corresponde al modelo original servido con vLLM.
+
+| Benchmark | Problemas | Métrica | Carbon-X | BF16 | Q8_0 | Q6_K | Q5_K_M | Q4_K_M |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| FrontierVEP | 1.000 | Accuracy | 70,4 | 69,6 | 69,1 | 69,0 | 70,4 | 67,8 |
+| NextBase | 600 | Precisión por base | 39,4 | 40,1 | 39,7 | 39,5 | 39,6 | 38,6 |
+
+El error estándar es de aproximadamente 1,5 puntos en FrontierVEP y 1 punto en NextBase. BF16 hasta Q5_K_M quedan dentro de un error estándar del modelo original; Q4_K_M presenta una caída mayor en FrontierVEP (67,8 frente a 70,4). FrontierVEP evalúa la predicción benigno/patógeno sobre 500 variantes benignas y 500 patógenas; NextBase mide la fracción de bases predichas correctamente.
 
 ## Requisitos de hardware
 
-- VRAM para Q8_0: unos 16 GB de pesos, mas aproximadamente 0,16 MB de cache KV por token. A los 40.960 tokens de contexto completo esto anade unos 6,4 GB, es decir, en torno a 22-23 GB totales.
-- VRAM para Q4_K_M: 9,6 GB de pesos; con contexto completo, aproximadamente 16 GB en total.
-- VRAM para Q6_K y Q5_K_M: 12,6 GB y 11,1 GB de pesos respectivamente, mas la cache KV correspondiente.
-- VRAM para BF16: 29,7 GB, lo que exige una A100 40/80 GB, una H100 o reparto multi-GPU.
-- GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede cargar Q8_0 con `-ngl 99`, pero a contexto completo el margen es muy justo; Q6_K o Q5_K_M resultan mas comodos. Tarjetas de 16 GB pueden usar Q4_K_M con contexto reducido. Con 12 GB o menos conviene el offload parcial a CPU.
-- CPU: al ser GGUF y estar soportado por llama.cpp, el modelo puede ejecutarse solo con CPU, con latencia mucho mayor.
-- Despliegue: llama.cpp es la via documentada, con `llama-server` (API compatible con OpenAI, 4 slots paralelos por defecto, ajustables con `-np`) y `llama-cli` para terminal. Requiere el build b11742 o superior; construcciones anteriores cargan el modelo pero tokenizan mal el ADN. No se documentan en la informacion disponible opciones como vLLM, TGI u Ollama.
-- Parametros de servicio de referencia: `llama-server -hf HuggingFaceBio/Carbon-X-GGUF:Q8_0 -ngl 99 -c 40960 --jinja --chat-template-kwargs '{"enable_thinking": false}' --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0`.
-- Latencia y throughput: no disponible.
+- **VRAM estimada para inferencia**: BF16 requiere unos 29,7 GB; Q8_0 unos 15,8 GB; Q6_K unos 12,6 GB; Q5_K_M unos 11,1 GB; Q4_K_M unos 9,6 GB. Hay que sumar el espacio para el contexto KV.
+- **GPU recomendadas**: A100 40/80 GB o H100 para BF16; RTX 4090 (24 GB) para Q8_0 y cuantizaciones menores; GPUs de 16 GB para Q6_K y Q5_K_M; GPUs de 12 GB para Q4_K_M.
+- **Cabe en GPU de consumo**: sí. Q8_0 en RTX 4090; Q6_K y Q5_K_M en GPUs de 16 GB; Q4_K_M en GPUs de 12 GB (por ejemplo, RTX 3060 de 12 GB). En todos los K-quants, los tensores de embedding y salida que contienen los tokens de ADN se mantienen en Q8_0.
+- **Opciones de despliegue**: llama.cpp (recomendado, build b11742 o superior), `llama serve` (API compatible con OpenAI y UI web de chat), `llama cli`, la aplicación de escritorio de llama.cpp para macOS y Windows, o descarga directa desde Hugging Face con `-hf HuggingFaceBio/Carbon-X-GGUF:Q8_0`. No se menciona soporte de vLLM para los GGUF (vLLM se usó para servir el modelo original).
+- **Latencia y throughput**: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+No se dispone de datos de benchmarks ni especificaciones de modelos comparables de la misma categoría (modelos de lenguaje para genómica) en la información proporcionada. La model card solo compara las cuantizaciones GGUF entre sí y con el modelo original Carbon-X servido con vLLM.
+
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Carbon-X-GGUF (Q8_0) | 14,8B | 40.960 | GGUF, 15,8 GB | Apache-2.0 | Cuantizacion del modelo base; mismas puntuaciones que BF16 segun el autor; inferencia local con llama.cpp |
-| Carbon-X-GGUF (Q4_K_M) | 14,8B | 40.960 | GGUF, 9,6 GB | Apache-2.0 | Variante para entornos con poca memoria |
-| Carbon-X (modelo base) | 14,8B | no disponible en la informacion proporcionada | safetensors (relacion `quantized`) | Apache-2.0 | Version original sin cuantizar; la model card remite a ella para detalles y limitaciones |
-| Otros modelos genomicos (Evo, Nucleotide Transformer, GENA-LM, etc.) | no disponible | no disponible | no disponible | no disponible | La informacion proporcionada no incluye datos de rendimiento ni especificaciones que permitan una comparacion rigurosa |
+| Carbon-X (este, GGUF) | 14,8B | No disponible | Apache 2.0 | GGUF | Hugging Face |
+| Carbon-X (original) | 14,8B | No disponible | Apache 2.0 | Safetensors | Hugging Face |
+| Alternativas de genómica | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Solo admite ingles: las preguntas y respuestas estan en ese idioma; no hay soporte declarado de castellano.
-- Ventana de contexto de 40.960 tokens. Codificando ADN como 6-mers no solapados, eso equivale aproximadamente a unos 245.000 pares de bases si todos los tokens fueran de ADN (estimacion aritmetica propia, no publicada por el autor), muy lejos de un genoma completo.
-- Riesgo de alucinacion: es un modelo generativo que produce explicaciones biologicas plausibles; puede inventar interpretaciones, catalogos o funciones genicas. La respuesta de ejemplo de la propia model card matiza que la prediccion no prueba que la secuencia se traduzca ni establece su funcion biologica.
-- No es un dispositivo medico ni una herramienta diagnostica: no debe usarse para decisiones clinicas sin validacion independiente y revision por especialistas.
-- Dependencia estricta de la version de llama.cpp: por debajo del build b11742 el modelo carga pero tokeniza el ADN de forma incorrecta, un fallo silencioso que produce respuestas erroneas sin aviso.
-- El modo thinking debe permanecer desactivado; el modelo fue post-entrenado y evaluado asi, por lo que activarlo lo saca de su regimen previsto.
-- Sesgos potenciales hacia las especies, poblaciones y tipos de secuencia sobrerrepresentados en unos datos de entrenamiento que el autor no detalla; la ausencia de esa informacion impide auditar la cobertura.
-- Licencia Apache-2.0: permite uso comercial y modificacion, pero se distribuye sin garantias; conviene revisar la model card del modelo base Carbon-X para las limitaciones completas.
-- Validacion comunitaria muy baja en el momento de la ficha (2 descargas, 13 likes), lo que implica poca evidencia externa sobre su comportamiento en produccion.
-- El repositorio completo ocupa 78,7 GB; conviene descargar solo la cuantizacion necesaria con `hf download`.
+- **Riesgo de alucinación**: la model card advierte que, sin contexto adicional (gen, hebra, coordenadas o anotaciones), el modelo puede adivinar la identidad o función de una secuencia. Conviene aportar siempre el contexto disponible.
+- **Tokens `<oov>`**: cualquier 6-mer que contenga un carácter no canónico (por ejemplo, N) se colapsa en un único token `<oov>`, perdiendo resolución. Es necesario filtrar a bases canónicas antes de la inferencia si se quiere mantener la resolución completa.
+- **Idioma**: el soporte de texto se limita al inglés; no hay capacidades multilingües declaradas.
+- **Modo thinking**: el modelo fue post-entrenado y evaluado con *thinking* desactivado; usarlo activado puede degradar los resultados respecto a los benchmarks publicados.
+- **Dependencia de versión de llama.cpp**: los archivos requieren la build b11742 o superior. Versiones anteriores, incluida la v0.7.0, cargan los archivos pero tokenizan el ADN de forma incorrecta.
+- **Etiquetas `<dna>` en las respuestas**: el modelo escribe el ADN dentro de `<dna>…</dna>` y llama.cpp conserva las etiquetas en el texto devuelto; hay que eliminarlas si se necesita la secuencia desnuda.
+- **Variabilidad de los benchmarks**: las puntuaciones son ejecuciones únicas con muestreo; el error estándar es de unos 1,5 puntos en FrontierVEP y 1 punto en NextBase, por lo que diferencias menores entre cuantizaciones no son significativas.
+- **Licencia**: Apache 2.0 permite uso comercial, pero conviene revisar la model card del modelo base Carbon-X para limitaciones adicionales de uso científico.
+- **Validación experimental**: las predicciones de patogenicidad y de regiones reguladoras no sustituyen la validación experimental ni el criterio clínico.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/HuggingFaceBio/Carbon-X-GGUF
+- Repositorio GGUF: https://huggingface.co/HuggingFaceBio/Carbon-X-GGUF
 - Modelo base Carbon-X: https://huggingface.co/HuggingFaceBio/Carbon-X
-- Organizacion Hugging Face Bio: https://huggingface.co/HuggingFaceBio
-- Blog / Space de presentacion: https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release
-- Codigo (familia Carbon): https://github.com/huggingface/carbon/tree/main
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- PR de soporte de `HybridDNATokenizer`: https://github.com/ggml-org/llama.cpp/pull/30825
-- Release b11742 de llama.cpp: https://github.com/ggml-org/llama.cpp/releases/tag/b11742
-- Releases de llama.cpp (binarios precompilados): https://github.com/ggml-org/llama.cpp/releases
+- Evaluación del modelo base: https://huggingface.co/HuggingFaceBio/Carbon-X#evaluation
+- Blog / demo: https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release
+- Organización Hugging Face Bio: https://huggingface.co/HuggingFaceBio
+- Código: https://github.com/huggingface/carbon/tree/main
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Build b11742 de llama.cpp: https://github.com/ggml-org/llama.cpp/releases/tag/b11742
+- PR de soporte del HybridDNATokenizer: https://github.com/ggml-org/llama.cpp/pull/30825
+- Aplicación de escritorio de llama.cpp: https://llama.app

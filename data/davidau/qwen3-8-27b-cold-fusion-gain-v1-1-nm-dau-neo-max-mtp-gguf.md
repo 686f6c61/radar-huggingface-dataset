@@ -2,91 +2,98 @@
 
 ## Resumen
 
-Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF es un modelo de lenguaje de 27 000 millones de parámetros desarrollado por DavidAU, basado en el Qwen3.8-27B de Alibaba. Aplica el método de entrenamiento COLD FUSION, que combina la técnica propietaria GAIN (ajuste dinámico por muestra durante el entrenamiento) con la infraestructura de Unsloth. El objetivo principal es reducir drásticamente los tokens de razonamiento (hasta 1/10 en algunos casos) mientras se mantiene o mejora la calidad de salida, con un 99 % del rendimiento en BF16 tanto en cuantizaciones de 8 como de 4 bits.
+Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF es una cuantización GGUF publicada por DavidAU sobre su propio fine-tuning Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, que a su vez deriva de la familia Qwen 3.8 de 27B de Alibaba. El modelo resuelve un problema muy concreto detectado en la generación de modelos con modo de razonamiento: el exceso de tokens de "thinking" que encarece la inferencia y ralentiza la respuesta. La propuesta del autor es reducir el bloque de razonamiento entre la mitad y una décima parte (mediana aproximada de dos tercios) manteniendo la calidad.
 
-El modelo se distribuye exclusivamente en formato GGUF, con cuantizaciones NEO IMATRIX y variantes MTP (multi-token prediction). Soporta un contexto de 256 000 tokens, tres modos de razonamiento (xhigh, medium y low) y capacidades de visión mediante un archivo mmproj adicional. Está pensado para su uso en aplicaciones locales de inferencia como LM Studio, llama.cpp u Ollama, y se presenta como una alternativa optimizada a los Qwen 3.8, 3.6 y 3.5 de 27B, superando sus benchmarks núcleo según el autor.
+La relevancia actual viene de su adopción: más de 400.000 descargas y 347 "likes" en Hugging Face, con un repo de 390,9 GB que incluye múltiples niveles de cuantización GGUF, tanto "regulares" como variantes MTP (multi-token prediction). Está pensado para despliegue local y en servidores con llama.cpp y derivados, no para entrenamiento.
 
-La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas. Los idiomas declarados son inglés y chino. El repositorio tiene 4 likes y 0 descargas en el momento de la consulta, y el tamaño total es de 28,5 GB, coherente con un modelo de 27B en cuantizaciones GGUF.
+Arquitectura transformer con 26.895.998.464 parámetros totales (unos 26,9B), licencia Apache 2.0 y pipeline declarado image-text-to-text, lo que indica soporte de visión. El autor lo describe como un tune de "nivel 1 o 2" dentro de su propia escala, frente al nivel 7-8 de su modelo anterior Fable-Fusion-711.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (basado en Qwen3.8-27B, image-text-to-text) |
-| Parametros totales | 27 000 millones (denominacion del modelo; el archivo safetensors del repo muestra 460 730 096, posiblemente un archivo parcial) |
-| Parametros activos | no aplicable (modelo denso, no MoE) |
-| Longitud de contexto | 256 000 tokens |
-| Tipos de cuantizacion | GGUF NEO IMATRIX (regulares y MTP), con tensor de salida en 16 bits; MTP con tensores Q8_0. Lista completa de quants no disponible |
-| Idiomas soportados | ingles, chino |
+| Arquitectura | Transformer (familia Qwen 3.8, tag `qwen3_5`), con soporte MTP (multi-token prediction) |
+| Parametros totales | 26.895.998.464 (≈26,9B) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF en múltiples niveles: cuantizaciones "regulares" y cuantizaciones MTP; se mencionan explícitamente 8 bits y 4 bits, e "incluso las cuantizaciones más bajas" |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (16 idiomas declarados en la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Formato de pesos | GGUF (repo con safetensors del modelo base; este repo distribuye GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer denso con capacidad multimodal (texto e imagen). El entrenamiento aplica el metodo COLD FUSION, que integra dos componentes: el sistema GAIN, que modifica dinamicamente el entrenamiento por muestra en tiempo real mientras el modelo aprende, y los trainers de Unsloth. Este enfoque busca reducir el bloque de razonamiento (thinking tokens) a entre 1/10 y 1/2 del tamaño original en los tres modos de operacion (xhigh, medium, low), sin sacrificar la calidad de las respuestas.
+El modelo es un transformer de la familia Qwen 3.8 con aproximadamente 26,9B parámetros, afinado por DavidAU sobre su propia versión Cold-Fusion-GAIN-V1.1. La innovación declarada no está en la arquitectura sino en el método de entrenamiento, bautizado "COLD FUSION", que combina el componente propietario "GAIN" con los entrenadores de Unsloth. Según el autor, GAIN modifica dinámicamente el entrenamiento por muestra en tiempo real a medida que el modelo aprende, lo que permite mejorar métricas sin "sobrecocinar" el modelo y mantener el 99% del rendimiento de BF16 tanto en 8 bits como en 4 bits.
 
-Los datasets utilizados son DavidAU/Polar-STRICT-Datasets y DavidAU/Reasoning-STRICT-Datasets, ambos publicos en Hugging Face. El entrenamiento se realizo en varias etapas con pruebas intermedias, y la validacion final fue humana, comparando el modelo base con el afinado. Segun el autor, no se empleo "benchmaxing" (optimizacion especifica para benchmarks) para evitar danar el modelo. Las cuantizaciones NEO IMATRIX mejoran la precision entre un 2 % y un 4 % respecto a GGUF convencionales, y el tensor de salida se mantiene en precision completa de 16 bits en todos los quants.
+Los datos de entrenamiento provienen de los datasets DavidAU/Polar-STRICT-Datasets y DavidAU/Reasoning-STRICT-Datasets. El autor declara explícitamente que no ha hecho "benchmaxing" y que el ajuste se orientó a cuatro objetivos: aumentar la inteligencia general y la resolución de problemas, reducir el bloque de razonamiento, reformatearlo y acelerar la generación (especialmente con MTP). El proceso incluyó pruebas automáticas por etapa y, finalmente, pruebas humanas lado a lado contra el modelo base. No se especifican el número de tokens de entrenamiento ni la composición detallada del dataset, ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en tres modos: xhigh (por defecto), medium y low, con bloques de pensamiento reducidos.
-- Razonamiento y resolucion de problemas con menor consumo de tokens de pensamiento en comparacion con los Qwen 3.8, 3.6 y 3.5 de 27B.
-- Generacion de codigo y soporte para tareas de programacion, segun las capacidades del modelo base Qwen3.8-27B.
-- Escritura creativa, ficcion, storytelling y roleplaying, como se indica en los tags del modelo.
-- Vision por imagenes, activada mediante un archivo mmproj separado que debe descargarse y colocarse junto al GGUF.
-- Capacidad multilingue limitada a ingles y chino.
-- Soporte de decodificacion MTP (multi-token prediction) en las variantes MTP, que puede acelerar la generacion cuando la tasa de aceptacion es superior al 50 %.
-- Seguimiento de instrucciones mejorado respecto al modelo base, segun el autor.
+- Generación de texto y razonamiento en tres modos de pensamiento: `xhigh` (por defecto), `medium` y `low`, heredados de Qwen 3.8.
+- Reducción del bloque de razonamiento respecto al Qwen 3.8 original, con salida comprimida por defecto en muchos casos y detalle de salida alto pese a la reducción.
+- Capacidades de visión: el pipeline declarado es `image-text-to-text` y el autor lista "Vision" entre las características.
+- Escritura creativa, ficción, narrativa de todos los géneros y roleplaying, según los tags del repo.
+- Programación y tareas de código (tag `coder`).
+- Multilingüismo: 16 idiomas declarados en la model card (aunque el campo `language` del repo solo lista `en` y `zh`).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
+- Cuantizaciones MTP para decodificación multi-token con mayor velocidad.
+- No se documenta soporte explícito de tool calling ni de flujos de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Asistentes de codigo en entornos locales: el modelo puede integrarse en editores o CLIs para autocompletar y generar funciones, aprovechando su contexto de 256k para mantener visibilidad sobre proyectos grandes.
-- Chatbots de atencion al cliente con razonamiento eficiente: la reduccion de tokens de pensamiento permite respuestas mas rapidas y economicas en despliegues con VRAM limitada, manteniendo la calidad en conversaciones multi-turno.
-- Escritura creativa y narrativa: su afinamiento para ficcion y roleplaying lo hace adecuado para generar historias largas, dialogos y mundos narrativos con coherencia sostenida gracias al contexto amplio.
-- Analisis de documentos extensos: la ventana de 256k permite procesar manuales, contratos o informes completos en una sola pasada, extrayendo resumenes o respondiendo preguntas sobre el contenido.
-- Generacion de contenido bilingue (ingles-chino): util para traducciones, localizacion o redaccion de materiales en ambos idiomas, aunque con limitacion a esos dos.
-- Prototipado de agentes con razonamiento multi-paso: los tres modos de razonamiento permiten ajustar el equilibrio entre velocidad y profundidad analitica en pipelines de automatizacion.
-- Despliegue en hardware de consumo: con cuantizaciones de 4 bits y velocidades reportadas de ~75 t/s en una RTX 5090, es viable para aplicaciones en tiempo real en estaciones de trabajo.
+- Asistente de razonamiento con coste controlado: usar el modo `low` o `medium` para tareas de clasificación, extracción o resumen donde el bloque de pensamiento largo es innecesario; la reducción de tokens de razonamiento declarada (hasta 1/10 en algunos casos) abarata directamente el coste por consulta.
+- Escritura creativa y ficción por capítulos: el modelo está afinado para narrativa de todos los géneros y roleplaying, con salida detallada incluso en modo de razonamiento reducido, lo que encaja en pipelines de generación larga con contexto conversacional acumulado.
+- Despliegue local en estación de trabajo: las cuantizaciones GGUF de 4 bits permiten ejecutar un modelo de 26,9B en hardware de consumo, útil para prototipado sin coste de API.
+- Procesamiento de documentos con imagen: al declarar pipeline `image-text-to-text`, sirve para tareas de descripción de imágenes, extracción de información de capturas o documentos escaneados y respuesta sobre ellos.
+- Atención al cliente multilingüe: con 16 idiomas declarados, puede gestionar conversaciones multi-turno en varios idiomas desde un único despliegue, siempre que el contexto disponible sea suficiente (dato no publicado).
+- Generación de código asistida en local: el tag `coder` y la compatibilidad con endpoints permiten integrarlo en un servidor compatible con la API de OpenAI para autocompletado y revisión de código dentro de un flujo de desarrollo.
+- Aceleración de inferencia con MTP: en entornos con llama.cpp y variantes que soportan multi-token prediction, las cuantizaciones MTP están pensadas para reducir la latencia de generación respecto a las GGUF regulares.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card afirma que el modelo "supera todos los benchmarks criticos de Qwen 3.8, 3.6 y 3.5 27B", pero no proporciona tablas ni cifras concretas. Tampoco se ofrecen comparativas con otros modelos de tamano similar. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones con datos cuantitativos.
+El autor afirma que el modelo "supera todos los benchmarks críticos de los Qwen 3.8, 3.6 y 3.5 de 27B" y que mantiene el 99% del rendimiento de BF16 en 8 y 4 bits, pero no se incluyen cifras concretas en la información proporcionada (la model card remite a una sección de benchmarks no incluida en el extracto).
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para cuantizaciones de 4 bits (Q4_K_S) se requieren aproximadamente 16-18 GB de VRAM; para 8 bits, entre 28-32 GB. No se dispone de cifras exactas por quant.
-- GPU recomendadas: el autor reporta pruebas en una RTX 5090 (32 GB VRAM) con velocidades de ~75 t/s en Q4_K_S regular y >90 t/s en variantes MTP con tasa de aceptacion del 60 %. GPUs con 24 GB o mas (RTX 3090, RTX 4090, A6000) pueden ejecutar quants de 4 bits; para 8 bits se necesitan GPUs de 32 GB o mas (A100, H100, RTX 5090).
-- Compatibilidad con GPU de consumo: si, con cuantizaciones de 4 bits en GPUs de 24 GB; las de 8 bits requieren hardware de gama alta o profesional.
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama, y cualquier aplicacion compatible con GGUF. No se menciona soporte para vLLM o TGI en la informacion disponible.
-- Latencia y throughput: los datos reportados son de 75 t/s (Q4_K_S regular) y >90 t/s (MTP con aceptacion del 60 %) en una RTX 5090 con Windows 11 y LM Studio. En Linux o Mac los valores pueden ser superiores, segun el autor.
+- VRAM estimada: no disponible de forma oficial. Como referencia de orden de magnitud para 26,9B parámetros, una cuantización de 4 bits ocupa del orden de 15-18 GB y una de 8 bits del orden de 28-30 GB, más overhead de contexto; el autor no publica cifras por nivel de cuantización.
+- GPU recomendadas: no especificadas por el autor. Para 4 bits, una RTX 4090 (24 GB) es el límite práctico habitual para este tamaño; para 8 bits se necesita una A100 40 GB, H100 o similar.
+- Cabe en GPU de consumo: sí, en el nivel de 4 bits y cuantizaciones inferiores, en tarjetas con 24 GB o más.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio) por el formato GGUF; el tag `endpoints_compatible` sugiere compatibilidad con servidores de la API de OpenAI. vLLM y TGI no están confirmados para este repo GGUF.
+- Latencia y throughput: no disponibles como cifras. El autor afirma que la generación es más rápida que el Qwen 3.8 original, especialmente con MTP, pero sin datos medidos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF | 27B | 256k | Apache 2.0 | GGUF | Afinamiento con COLD FUSION, tokens de razonamiento reducidos |
-| Qwen3.8-27B (base) | 27B | 256k | Apache 2.0 | safetensors, GGUF | Modelo original de Alibaba, multimodal |
-| Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic | 27B | no disponible | Apache 2.0 | GGUF | Otro afinamiento de DavidAU con metodologia COLD FUSION, sin censura |
-| Qwen3.5-27B | 27B | no disponible | Apache 2.0 | safetensors, GGUF | Version anterior de Qwen, sin datos de contexto confirmados |
+| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF | 26,9B | no disponible | Apache 2.0 | GGUF | Fine-tune con reducción de tokens de razonamiento y cuantizaciones MTP |
+| Qwen 3.8 27B (original de Alibaba) | 27B (aprox.) | no disponible | no disponible en la informacion | safetensors | Modelo base de referencia; bloques de razonamiento más largos |
+| Qwen 3.6 27B | no disponible | no disponible | no disponible en la informacion | no disponible | Generación anterior, usada como referencia de benchmarks por el autor |
+| Qwen 3.5 27B | no disponible | no disponible | no disponible en la informacion | no disponible | Generación anterior, usada como referencia de benchmarks por el autor |
 
-No se dispone de resultados de benchmarks comparativos entre estos modelos. La afirmacion del autor de que supera a Qwen 3.8, 3.6 y 3.5 27B no esta respaldada por datos publicos en la informacion proporcionada.
+No se dispone de datos de rendimiento numéricos para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos de sesgos o alucinaciones; al ser un afinamiento de Qwen, hereda los riesgos del modelo base, que no estan documentados en esta ficha.
-- La reduccion de tokens de razonamiento puede afectar la calidad en tareas complejas que requieren pensamiento extenso; el autor recomienda probar el modelo para cada caso de uso.
-- El soporte de idiomas se limita a ingles y chino; no se garantiza un rendimiento adecuado en otros idiomas.
-- La funcion de vision requiere descargar un archivo mmproj adicional; sin el, el modelo no procesa imagenes.
-- Las variantes MTP pueden degradar el rendimiento con temperaturas superiores a 1 o con repeticion penalizada; si la tasa de aceptacion de tokens es inferior al 50 %, las versiones regulares son mas rapidas.
-- El dato de parametros totales del repositorio (460 730 096) es inconsistente con la denominacion de 27B; probablemente corresponde a un archivo safetensors parcial, no al modelo completo.
-- El modelo tiene 0 descargas y 4 likes, lo que indica una adopcion limitada y poca validacion externa.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base Qwen3.8-27B para confirmar compatibilidad.
+- El modelo es un fine-tune comunitario de un solo autor, no una versión oficial de Alibaba; la calidad y la estabilidad dependen de su pipeline y no han sido auditadas de forma independiente.
+- Las afirmaciones de rendimiento (99% de BF16 en 4 bits, superación de benchmarks) son del autor y no van acompañadas de cifras verificables en la información disponible.
+- Riesgo de alucinación: no cuantificado por el autor; al ser un modelo afinado para escritura creativa y roleplaying, la propensión a generar contenido plausible pero falso en contextos factuales debe asumirse y verificarse.
+- Sesgos: no se documenta ninguna evaluación de sesgos ni de seguridad.
+- Idiomas: la model card declara 16 idiomas, pero el campo `language` del repo solo lista inglés y chino; el soporte real del resto no está verificado.
+- Contexto: la longitud de contexto no se publica, lo que impide planificar despliegues con ventanas largas sin medirlo empíricamente.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen subyacente y de los datasets empleados antes de un despliegue en producción.
+- El autor advierte de que este tune es de "nivel 1 o 2" en su escala y que una versión más profunda (estilo Fable-Fusion-711) está planificada; es decir, el propio autor lo considera una iteración intermedia.
+- El repo ocupa 390,9 GB por acumular muchas cuantizaciones; la descarga debe hacerse seleccionando el archivo concreto.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF
-- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
-- Repositorio del Qwen3.8-27B original: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF
+- Modelo base (fine-tune): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Perfil del autor: https://huggingface.co/DavidAU
-- Ficha en FriendliAI: https://friendli.ai/models/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
-- Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Preguntas frecuentes y soporte: https://huggingface.co/DavidAU/support
+- Modelo previo de referencia (Fable-Fusion-711): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Variante Turbo con razonamiento reducido: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
+- Dataset Reasoning-STRICT: https://huggingface.co/datasets/DavidAU/Reasoning-STRICT-Datasets

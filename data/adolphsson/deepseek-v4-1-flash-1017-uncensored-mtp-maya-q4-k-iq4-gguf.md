@@ -2,104 +2,100 @@
 
 ## Resumen
 
-Este repositorio no es un modelo nuevo, sino una **requantización en GGUF de 4 bits** del checkpoint abliterado `dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8`, que a su vez deriva de `deepseek-ai/DeepSeek-V4.1-Flash-1017`. El autor, Adolphsson, publica un pack mixto Q4_K/IQ4 con mapas de tensores por grupo, un proyector visual y un drafter MTP opcional, empaquetado específicamente para el motor Project Maya (aunque los shards también cargan en llama.cpp). La model card describe el modelo base como un MoE de 552B parámetros con 8B activos en texto (16B con visión) y 1M tokens de contexto completo, sin ventana deslizante.
+DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF es una cuantización de 4 bits del checkpoint abliterado de DeepSeek-V4.1-Flash-1017, un modelo MoE multimodal de gran escala. El trabajo de abliteración (eliminación del circuito de rechazo a nivel de pesos) corresponde a dealignai sobre el modelo original de deepseek-ai; este repositorio, publicado por Adolphsson, es únicamente una release de cuantización empaquetada para el motor Project Maya. El modelo base se describe como un MoE de 552B parámetros totales con 8B activos en texto (16B activos con visión), ventana de contexto de 1M tokens sin ventaneo y soporte de visión y tool calling.
 
-Su relevancia es doble. Por un lado, permite ejecutar localmente un modelo de razonamiento multimodal de escala frontier en hardware de estación de trabajo (dos GPU, 256 GB de RAM y ~480 GB de NVMe) gracias a la gestión por capas de expertos del motor Maya. Por otro, conserva la abliteración a nivel de pesos de dealignai, que elimina los circuitos de rechazo manteniendo visión, MoE y normas; el autor mide un 98 % de cumplimiento en HarmBench-320 para verificar que la cuantización agresiva no reintroduce negativas.
+La relevancia de esta ficha es doble: por un lado documenta un caso de cuantización agresiva (Q4_K/IQ4_XS mixto) sobre un modelo enorme, con atención, indexer y shared experts fijados en 8 bits para preservar calidad; por otro, ilustra el ecosistema de motores alternativos (Project Maya) que gestionan expertos en una jerarquía GPU/RAM/NVMe para servir modelos que no caben en VRAM. El pack incluye además un drafter MTP (DSpark) opcional y un proyector de visión en dos formatos.
 
-Conviene señalar de entrada una **inconsistencia documental**: los metadatos de safetensors del repo declaran 485.273.600 parámetros, la model card habla de 552B y una fuente externa (SourceForge) cita 763B. Del mismo modo, el tamaño del repo aparece como 331 GB en los metadatos de Hugging Face y como 471,6 GB en la model card. Se reflejan ambos valores sin resolver el conflicto.
+Conviene tratar los datos de la model card con cautela: hay inconsistencias internas notables (el campo de parámetros del repo indica 485.273.600, mientras la card habla de 552B totales y 748B tensores; el tamaño del repo es 482,1 GB frente a los 471,6 GB declarados en la card). Esta ficha refleja ambos valores cuando difieren y señala la discrepancia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (base DeepSeek-V4.1-Flash) con encoder visual DeepSeek-ViT + proyector, tensores de indexer y cabeza MTP opcional (DSpark) |
-| Parametros totales | 552B según la model card; 485.273.600 según metadatos de safetensors del repo (inconsistente); 763B citado por SourceForge |
-| Parametros activos | 8B en texto, 16B con visión (según model card) |
-| Longitud de contexto | 1.048.576 tokens (1M, completo, sin ventana deslizante) |
-| Tipos de cuantizacion | Mezcla por grupo: IQ4_XS (expertos routed `w2`/`down`), Q4_K (`gate`/`up`), Q8_0 y F32 (atención, expertos compartidos, indexer), Q6_K (cabeza de salida), BF16 (embeddings, mmproj), F32 (normas). Solo se publica esta variante IQ4 |
-| Idiomas soportados | `en` (único idioma declarado en la model card); no se documentan otros |
-| Licencia | MIT (declarada en el repo); licencia del modelo base DeepSeek no disponible en la información proporcionada |
-| Formato de pesos | GGUF en 11 shards + `mmproj` BF16 GGUF; formato nativo Maya (`vision.bin`, `dspark.bin`, `ds4.txt`, `tensors.txt`); tokenizer con `chat_template.jinja` |
+| Arquitectura | Transformer MoE multimodal (texto + visión), con capas de atención, routed experts y shared experts; incluye indexer y drafter MTP (DSpark) |
+| Parametros totales | 552B según la model card (8B activos en texto, 16B activos con visión); el campo de parámetros del repo indica 485.273.600, discrepancia no resuelta |
+| Parametros activos | 8B (texto), 16B (con visión) |
+| Longitud de contexto | 1.000.000 tokens (contexto completo, sin ventaneo) |
+| Tipos de cuantizacion | Mixta: IQ4_XS en expertos routed `w2`/`down`, Q4_K en `gate`/`up`, Q8_0/F32 en atención, Q8_0 en shared experts, Q8_0/F32 en indexer, F32 en norms, BF16 en embeddings, Q6_K en output head; 5,04 bits efectivos por peso sobre 748B tensores |
+| Idiomas soportados | en (inglés) según los tags del repo |
+| Licencia | MIT |
+| Formato de pesos | GGUF (11 shards), más `mmproj` BF16 para visión, `vision.bin`/`vision.json` en formato nativo Maya, `dspark.bin`/`dspark.json` para MTP y metadatos `ds4.txt` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer de mezcla de expertos (MoE) con atención dispersa, encoder visual y una cabeza de decodificación especulativa multi-token (MTP). El pack incluye grupos de tensores bien diferenciados: 15.360 tensores IQ4_XS para las proyecciones `w2`/`down` de los expertos routed, 30.720 tensores Q4_K para `gate`/`up`, 487 tensores de atención en Q8_0 y 284 en F32, 120 tensores Q8_0 de expertos compartidos, 20 tensores de indexer (8 en Q8_0, 12 en F32) y 41 normas en F32. La decisión de diseño es clara: atención, indexer y expertos compartidos se fijan en 8 bits y las normas se mantienen en F32, mientras que solo las proyecciones de expertos bajan a 4 bits.
+La arquitectura es un transformer con mezcla de expertos (MoE) de gran escala. Según la model card, el modelo base DeepSeek-V4.1-Flash-1017 tiene 552B parámetros totales con 8B activos en texto y 16B activos cuando se activa la visión, e incorpora un tower de visión (DeepSeek-ViT) con proyector, además de un indexer y una cabeza de salida. El checkpoint fuente es la versión FP8 de dealignai (e4m3 con escalas de bloque FP8 y expertos routed en FP4), sobre la que se aplicó una abliteración a nivel de pesos ("CRACK") que elimina el circuito de rechazo preservando visión, MoE y normas. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en la información proporcionada.
 
-El pipeline de cuantización es FP8 (e4m3, escalas por bloque, expertos routed en FP4 en el original) → Q8_0 como puente de precisión completa → requantización IQ4-MAYA. La abliteración es obra de dealignai ("CRACK"), aplicada a nivel de pesos preservando visión, MoE y normas; este repositorio **solo publica la cuantización**. No se dispone de datos sobre el corpus de entrenamiento del modelo base (número de tokens, composición, fases de RLHF/DPO) en la información proporcionada. El componente MTP se distribuye como `dspark.bin`/`dspark.json` (8,5 GB) y es opcional: en las pruebas del autor aporta +2,7 % en prompts cortos y resulta un 11 % más lento a 1M de contexto, por lo que recomienda servirlo sin él.
+El pipeline de cuantización documentado es FP8 → Q8_0 (puente de precisión completa) → requantización IQ4-MAYA. La decisión técnica destacable es el mapa mixto: atención, indexer y shared experts se fijan en 8 bits y las normas permanecen en F32, mientras que los expertos routed bajan a 4 bits (IQ4_XS en `down`, Q4_K en `gate`/`up`), lo que da 5,04 bits efectivos. El pack incluye un drafter MTP (DSpark, 8,5 GB) que, según el autor, aporta +2,7 % en prompts cortos (dentro del ruido) y es un 11 % más lento a 1M de contexto, por lo que recomienda servirlo sin él. También se preservan los niveles de razonamiento (`low`/`high`/`max`) y los valores de muestreo sugeridos son `temperature=1.0`, `top_p=1.0` y `max_tokens ≥ 256K` para el razonador pesado.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con **tres niveles de esfuerzo** preservados: `low`, `high` y `max`.
-- Razonamiento multimodal image-text-to-text: encoder DeepSeek-ViT más proyector, verificado de extremo a extremo (imagen de entrada, descripción de salida).
-- Codificación y tareas agénticas, según las mejoras declaradas por DeepSeek para la versión 1017 frente a V4.1-Flash.
-- Soporte de **tool calling / function calling** a través de la API compatible con OpenAI y Anthropic que expone Project Maya.
-- Flujos agénticos multi-paso con contexto de hasta 1M tokens, sin ventanas deslizantes ni truncado.
-- Decodificación especulativa opcional mediante drafter MTP (DSpark), desactivable por configuración.
-- Comportamiento **abliterado**: se eliminan los rechazos a nivel de pesos, con un 98 % de cumplimiento medido en HarmBench-320.
-- Capacidades multilingües: no documentadas; la model card solo declara inglés.
+- Generación de texto conversacional multi-turno con contexto de hasta 1M tokens sin ventaneo.
+- Razonamiento con niveles configurables (`low`, `high`, `max`).
+- Capacidades multimodales de imagen a texto: el tower de visión y el proyector están verificados de extremo a extremo (imagen de entrada, descripción de salida).
+- Soporte de tool calling / function calling según la model card.
+- Capacidades de agente y razonamiento multi-paso (implícitas en el soporte de herramientas y en los niveles de razonamiento).
+- Modo "uncensored" por abliteración a nivel de pesos: el autor reporta un 98 % de cumplimiento en HarmBench-320 pese a la cuantización a 4 bits.
+- Multilingüe limitado: el repo declara únicamente inglés (`en`).
 
 ## Casos de uso
 
-- **Análisis de repositorios completos**: con 1M tokens de contexto se puede cargar un monorepo entero (código, tests, configuración y documentación) en una sola sesión y pedir auditorías de seguridad o refactorizaciones que cruzan módulos, sin recuperación por trozos.
-- **Agente de codificación en entorno air-gapped**: el pack corre sobre Project Maya con API compatible con OpenAI, de modo que se puede conectar un IDE o un pipeline de CI/CD en una red aislada donde no se permite enviar código a APIs externas.
-- **Procesamiento documental con visión**: introducir capturas de pantalla, diagramas de arquitectura o páginas escaneadas junto con texto y obtener descripciones estructuradas o extracción de datos, usando el proyector BF16 sin cuantizar.
-- **Investigación en seguridad y red teaming**: el comportamiento abliterado permite estudiar respuestas del modelo ante prompts que un modelo alineado rechazaría, sin necesidad de jailbreaks frágiles ni de modificar el prompt de sistema.
-- **Generación de datos sintéticos sin fricción**: producir grandes volúmenes de pares instrucción-respuesta sobre dominios sensibles (ficción violenta, debates éticos, contenido para adultos) donde los filtros de rechazo interrumpirían la generación por lotes.
-- **RAG sobre corpus masivos**: indexar manuales técnicos o expedientes de cientos de miles de tokens y mantener conversaciones multi-turno con el corpus completo en contexto, aprovechando que una segunda sesión paralela consume menos de 1 GB adicional.
-- **Sesiones agénticas de larga duración**: tareas que requieren decenas de llamadas a herramientas y acumulan historial, donde el coste de compactar contexto suele dominar; aquí el contexto de 1M evita esa compactación.
+- Asistente conversacional de contexto largo: con 1M tokens de ventana puede mantener conversaciones multi-turno sobre documentos extensos o historiales completos sin truncar, adecuado para atención al cliente con base de conocimiento adjunta.
+- Análisis de documentos e imágenes combinados: al aceptar image-text-to-text, sirve para extraer información de capturas, diagramas o documentos escaneados junto a texto de contexto.
+- Automatización de agentes con herramientas: el soporte de tool calling y los niveles de razonamiento permiten construir pipelines de agente multi-paso para tareas de investigación o extracción de datos.
+- Generación y revisión de código en pipelines: puede integrarse en flujos de CI/CD o asistentes de IDE, aunque el tamaño del modelo exige infraestructura dedicada y su licencia MIT facilita el uso comercial.
+- Investigación sobre alineación y seguridad: al ser un modelo abliterado, es útil para estudiar comportamiento sin rechazo, evaluación de sesgos y robustez de filtros, siempre con las salvaguardas externas adecuadas.
+- Procesamiento por lotes de corpus largos: la ventana de 1M y el servido vía API compatible con OpenAI/Anthropic permiten resumir, clasificar o extraer entidades de documentos muy largos en un solo paso.
+- Despliegue en hardware con VRAM limitada: el esquema de Project Maya (expertos activos en GPU, siguientes en RAM, resto en NVMe) permite servir un modelo de este tamaño con una GPU consumer o de gama profesional y ~256 GB de RAM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K, MMMU) en la información disponible. La model card menciona que las matemáticas son el área donde "se nota la falta de bits", pero la sección de benchmarks del documento está cortada. Los únicos datos cuantitativos aportados son:
+La model card solo reporta un resultado concreto: 98 % de cumplimiento en HarmBench-320 para esta cuantización de 4 bits. También indica que las matemáticas son el área donde se nota la pérdida de bits, pero no aporta cifras. No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
-| Metrica | Resultado | Contexto |
+| Benchmark | Resultado | Notas |
 |---|---|---|
-| HarmBench-320 (cumplimiento) | 98 % | Verificación de que la cuantización a 4 bits no reintroduce rechazos |
-| Delta del drafter MTP, prompts cortos | +2,7 % de velocidad | Dentro del ruido según el autor |
-| Delta del drafter MTP, contexto 1M | −11 % de velocidad | Motivo por el que se sirve sin MTP |
-| Throughput absoluto (tokens/s) | No disponible | No se publican cifras absolutas ni hardware exacto de las pruebas |
+| HarmBench-320 | 98 % compliant | Medido por el autor sobre esta cuantización IQ4 |
+| MMLU / HumanEval / GSM8K | no disponible | No publicados en la información proporcionada |
 
 ## Requisitos de hardware
 
-- **VRAM**: no se especifica un mínimo; el autor indica que "más VRAM es más rápido" y que Maya mantiene en GPU los expertos que la conversación usa, en RAM los siguientes y en NVMe el resto. Con 552B a 4 bits, un despliegue totalmente residente exigiría del orden de 280-300 GB de VRAM, cifra estimada a partir del tamaño del pack, no publicada por el autor.
-- **GPU**: NVIDIA con compute capability 7.0 o superior (V100, RTX 20xx y posteriores). La configuración de referencia usa `--tp 2` sobre dos GPU no identificadas.
-- **Memoria del sistema**: ~256 GB de RAM para el modelo; Maya reserva la RAM libre para el nivel de expertos y deja unos 6 GB para el resto del sistema.
-- **Almacenamiento**: NVMe rápido con ~480 GB libres.
-- **Software**: CUDA 12.x, Python con `jinja2`, `numpy` y `pillow`, y el binario `maya-ds4` compilado desde el repositorio de Project Maya.
-- **Consumer GPU**: no cabe. El modelo no es viable en una RTX 4090 ni en configuraciones de 24-48 GB, ni siquiera con offload parcial razonable.
-- **Opciones de despliegue**: Project Maya es el motor principal y el único para el que se documenta configuración completa (visión, niveles de razonamiento, tool calls, API OpenAI/Anthropic). Los shards son compatibles con llama.cpp, que también puede cargar el `mmproj` BF16; no se documenta soporte para vLLM, TGI u Ollama.
-- **Latencia y throughput**: solo se conocen los deltas relativos del drafter MTP (+2,7 % en corto, −11 % a 1M). No hay cifras absolutas.
+- VRAM estimada: no disponible de forma explícita; el autor indica que más VRAM implica más velocidad y que el motor mantiene en GPU los expertos que usa la conversación.
+- GPU recomendadas: NVIDIA con compute capability 7.0 o superior; el autor no especifica modelos concretos (A100, H100, RTX 4090, etc. no se mencionan).
+- RAM: aproximadamente 256 GB para el modelo; una segunda sesión paralela cuesta menos de 1 GB y quedan ~6 GB libres para el resto del sistema.
+- Almacenamiento: NVMe rápido con ~480 GB libres.
+- Software: CUDA 12.x, Python con `jinja2`, `numpy` y `pillow`; motor Project Maya (recomendado) o llama.cpp para los shards GGUF y el `mmproj`.
+- Despliegue: Project Maya expone API compatible con OpenAI y Anthropic con visión, niveles de pensamiento y tool calls; los shards también cargan en llama.cpp.
+- Latencia y throughput: no disponibles; el único dato es que el drafter MTP es un 11 % más lento a 1M de contexto y +2,7 % en prompts cortos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Precision | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| Este pack (Adolphsson IQ4-MAYA) | 552B MoE (8B/16B activos) según card; metadatos inconsistentes | 1M | Si | IQ4_XS / Q4_K / Q8_0 mixto | MIT | Requiere Maya o llama.cpp; 98 % HarmBench-320; pensado para streaming de expertos desde NVMe |
-| `dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8` | Idénticos al original | 1M | Si | FP8 e4m3 con expertos routed FP4 | No disponible | Fuente de esta cuantización; ocupa aproximadamente el doble y necesita más VRAM o más offload |
-| `deepseek-ai/DeepSeek-V4.1-Flash-1017` | 552B MoE según la cadena de derivación | 1M | Si | No disponible | No disponible en la información proporcionada | Modelo original con alineación intacta; rechaza peticiones dañinas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Este modelo (DeepSeek-V4.1-Flash-1017 UNCENSORED IQ4-MAYA) | 552B totales / 8B activos (texto) | 1M | MIT | GGUF, 11 shards, pack Maya | Cuantización de 4 bits de un abliterado FP8 |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 | 552B totales / 8B activos | 1M | no disponible en la información | Checkpoint original | Modelo base sin abliterar |
+| dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 | 552B totales / 8B activos | 1M | no disponible en la información | FP8 | Abliteración original de la que deriva este repo |
+| Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-Q8_0-GGUF | 552B totales / 8B activos | 1M | MIT | GGUF Q8_0 | Modelo base declarado de esta cuantización |
 
-No se dispone de datos de benchmarks ni de especificaciones verificables de otras familias comparables (por ejemplo, otros MoE abliterados de escala similar) en la información proporcionada, por lo que la comparación cruzada de rendimiento queda como no disponible.
+No se dispone de datos de benchmarks comparativos ni de alternativas de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Riesgo de seguridad elevado**: un 98 % de cumplimiento en HarmBench-320 implica que el modelo acepta prácticamente cualquier petición dañina. No es apto para exposición directa a usuarios finales sin una capa externa de moderación.
-- **Degradación en matemáticas**: el propio autor reconoce que la cuantización a 4 bits se nota en tareas matemáticas; no cuantifica la pérdida, pero conviene validar con evaluaciones propias antes de usarlo en dominios que dependan de cálculo exacto.
-- **Abliteración como fuente de sesgos**: eliminar los circuitos de rechazo a nivel de pesos puede alterar también la calibración y el tono en dominios sensibles; no se documentan evaluaciones de sesgo demográfico ni de toxicidad más allá de HarmBench.
-- **Idioma**: solo se declara inglés. El rendimiento en castellano no está verificado y no debería asumirse por herencia del modelo base.
-- **Inconsistencias de metadatos**: el recuento de parámetros (485,27 M en safetensors frente a 552B en la card frente a 763B en una fuente externa) y el tamaño del repo (331 GB frente a 471,6 GB) no cuadran. Verificar el contenido real de los shards antes de planificar el almacenamiento.
-- **Madurez**: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay validación independiente de la calidad del pack ni de su comportamiento en llama.cpp frente a Maya.
-- **Dependencia de un motor concreto**: el flujo documentado asume Project Maya. Fuera de él, ni los niveles de razonamiento ni la configuración de sampling están garantizados, y el drafter MTP no aporta nada en contexto largo.
-- **Licencia**: el repo declara MIT, pero al ser un derivado de pesos de DeepSeek conviene revisar los términos del modelo base, no disponibles en la información proporcionada, antes de un uso comercial.
-- **Requisitos de infraestructura**: 256 GB de RAM, ~480 GB de NVMe y dos GPU no identificadas lo sitúan fuera del alcance de estaciones de trabajo convencionales.
+- Inconsistencias en los metadatos: el campo de parámetros del repo (485.273.600) no cuadra con los 552B totales de la card, y el tamaño del repo (482,1 GB) difiere de los 471,6 GB declarados; conviene verificar antes de planificar almacenamiento.
+- La abliteración elimina el circuito de rechazo: el modelo puede producir contenido dañino o no solicitado; requiere salvaguardas externas en producción y revisión legal según el caso de uso.
+- El autor advierte que cuantizar a pocos bits un FP8 abliterado puede hacer regresar el cumplimiento; aunque mide 98 % en HarmBench-320, no hay garantía fuera de ese conjunto.
+- Pérdida de calidad en matemáticas por la cuantización a 4 bits, según reconoce el propio autor; no hay cifras publicadas.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está verificado.
+- Riesgo de alucinación: no cuantificado en la información disponible; es esperable en un modelo de este tipo y debe mitigarse con verificación.
+- El drafter MTP es opcional y puede empeorar la latencia a contexto largo; el autor recomienda servirlo sin él.
+- Requisitos de infraestructura elevados (~256 GB RAM, ~480 GB NVMe, CUDA 12.x) que limitan el despliegue a entornos dedicados.
+- Licencia MIT declarada, lo que en principio permite uso comercial, pero debe revisarse la licencia del modelo base original, no disponible en esta información.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF
-- Modelo base abliterado (FP8): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
-- Modelo original DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Espejo en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Espejo en SourceForge: https://sourceforge.net/projects/deepseek-v41-flash-1017.mirror/
-- Análisis en el blog de DeepSeek: https://deepseek.ai/blog/deepseek-v41-flash-1017-deepinfer-review
+- Modelo base declarado (Q8_0 GGUF): https://huggingface.co/Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-Q8_0-GGUF
+- Checkpoint abliterado FP8 de dealignai: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
+- Modelo original de deepseek-ai: deepseek-ai/DeepSeek-V4.1-Flash-1017 (referenciado en la card; sin URL directa en la información)
 - Project Maya (motor): https://github.com/mw00/project-maya
 - Documentación de instalación de Maya: https://github.com/mw00/project-maya/blob/main/docs/SETUP.md
-- Documentación de opciones de Maya: https://github.com/mw00/project-maya/blob/main/docs/SETTINGS.md
+- Documentación de ajustes de Maya: https://github.com/mw00/project-maya/blob/main/docs/SETTINGS.md
+- Repo del proyector de visión (GSQ-RCO de pfeifferj): referenciado en la card sin URL directa en la información

@@ -38,8 +38,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 159,
-  "downloads_30d": 9597,
+  "likes": 161,
+  "downloads_30d": 9985,
   "trending_score": 14,
   "parameters": 35259818545,
   "parameters_human": "35.26B",
@@ -66,24 +66,24 @@
       "snippet": "Join thousands of developers who've eliminated infrastructure complexity and deployed globally with Cloudflare. Start building for …"
     },
     {
-      "title": "Connectez, protégez et développez sur tous les fronts - Cloudflare",
-      "url": "https://www.cloudflare.com/fr-fr/",
-      "snippet": "Les agents sont l'avenir de l'IA et Cloudflare le meilleur point de départ. Utilisez notre framework pour agents et nos outils …"
-    },
-    {
       "title": "Cloudflare Dashboard | Manage Your Account",
       "url": "https://dash.cloudflare.com/login",
       "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer …"
     },
     {
-      "title": "Download Cloudflare One Client stable releases",
-      "url": "https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/",
-      "snippet": "Sep 28, 2026 · When enabled via MDM, the Cloudflare One Client blocks all Internet traffic from the moment the machine boots until …"
+      "title": "Connectez, protégez et développez sur tous les fronts - Cloudflare",
+      "url": "https://www.cloudflare.com/fr-fr/",
+      "snippet": "Les agents sont l'avenir de l'IA et Cloudflare le meilleur point de départ. Utilisez notre framework pour agents et nos outils …"
     },
     {
-      "title": "Cloudflare - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Cloudflare",
-      "snippet": "Cloudflare, Inc., is an American technology company headquartered in San Francisco, California, that provides a range of internet …"
+      "title": "个人 | Cloudflare",
+      "url": "https://www.cloudflare-cn.com/personal/",
+      "snippet": "为您的网站提供免费的防护和加速 Cloudflare 的使命是帮助构建更好的互联网。 我们认为每个网站和应用（无论是用于个人、专业还 …"
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge …"
     }
   ]
 }

@@ -2,85 +2,99 @@
 
 ## Resumen
 
-K2-Horizon-0.9B es un modelo de lenguaje compacto, denso y de tipo decoder-only, desarrollado por IFM (en colaboración con MBZUAI-IFM) como miembro de la familia K2-Horizon. Está diseñado para tareas de razonamiento, matemáticas, código, ciencia y uso de herramientas, con un enfoque en investigación de modelos de base transparente y despliegue práctico. Este repositorio concreto contiene las versiones GGUF del modelo para su uso con llama.cpp, manteniendo los tensores en precisión BF16 original e incluyendo el tokenizador y la plantilla de chat compatible.
+K2-Horizon-0.9B es un modelo de lenguaje de tipo decoder-only, denso y de clase 0,9B, desarrollado por IFM como el miembro compacto de la familia K2-Horizon. Se distribuye en este repositorio en formato GGUF para su uso con `llama.cpp`, con variantes de cuantización que van desde BF16 hasta Q4_K_M. Su rasgo diferencial es que combina un tamaño muy reducido con una ventana de contexto de 128K tokens (131.072) gracias al escalado YaRN de RoPE, algo poco habitual en modelos de esta escala.
 
-El modelo destaca por su ventana de contexto de 128K tokens (131.072) gracias a escalado YaRN RoPE, y por haber sido entrenado mediante destilación multi-profesor con especialistas en matemáticas/código, STEM y seguimiento de instrucciones. Con aproximadamente 1.078 millones de parámetros (clase 0.9B), se posiciona como una opción ligera para experimentación local, aunque su licencia es de uso interno exclusivo. Su relevancia actual radica en ofrecer capacidades de razonamiento en un tamaño reducido, comparable a modelos como Qwen3.5-0.8B o OpenBMB-1B, aunque con una ventana de contexto notablemente mayor.
+El modelo está orientado explícitamente al razonamiento y se ha entrenado mediante destilación de conocimiento con múltiples profesores especializados en matemáticas y código, STEM e instrucción general. Esto lo sitúa en la categoría de modelos pequeños con capacidades de razonamiento reforzadas, pensados para ejecutarse en hardware modesto, incluso en CPU o GPU de consumo, sin renunciar a contextos largos.
+
+Es relevante ahora porque la licencia es Apache 2.0, el autor anuncia la publicación del recetario de datos y del código de entrenamiento, y el soporte de la arquitectura K2 Horizon se integró en la rama principal de `llama.cpp` en la release b11454. Esto lo convierte en una opción práctica para despliegues locales, prototipado rápido y experimentación reproducible con presupuestos de cómputo mínimos.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso |
-| Parametros totales | 1.078.285.824 (≈1,08B, clase 0.9B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 131.072 tokens (128K) con escalado YaRN RoPE |
-| Tipos de cuantizacion | No especificados en la información disponible; los archivos GGUF mantienen tensores en BF16 original |
-| Idiomas soportados | Inglés (en), chino (zh) |
-| Licencia | internal-only (license: other) |
-| Formato de pesos | GGUF (con tensores BF16) |
+| Arquitectura | Transformer decoder-only denso (arquitectura K2 Horizon) |
+| Parámetros totales | 1.078.285.824 (≈1,08B; etiquetado comercial como 0,9B) |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | 131.072 tokens (128K) con escalado YaRN de RoPE |
+| Tipos de cuantización | BF16, Q8_0, Q6_K, Q5_K_M, Q5_0, Q4_K_M (GGUF) |
+| Idiomas soportados | Inglés (en) y chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only denso, sin componentes de mezcla de expertos (MoE). Su principal innovación es el uso de destilación multi-profesor: se entrenó utilizando profesores especializados en dominios distintos —matemáticas y código, STEM en general, y seguimiento de instrucciones— para transferir capacidades de razonamiento a un modelo compacto de 0.9B. La ventana de contexto de 128K se logra mediante escalado posicional YaRN sobre RoPE, lo que permite procesar documentos largos sin necesidad de entrenamiento adicional en longitudes extremas. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El entrenamiento es descrito como "totalmente abierto" en cuanto a que se publicarán los datos, la receta y el código de entrenamiento, aunque estos materiales no están disponibles en el repositorio actual.
+Se trata de un transformer decoder-only de tipo denso, sin mezcla de expertos, con aproximadamente 1,08B de parámetros totales. La innovación arquitectónica más destacable es la ventana de contexto de 128K tokens implementada mediante escalado YaRN de RoPE, que permite manejar documentos y conversaciones muy largas en un modelo de menos de 1,1B de parámetros. La arquitectura requiere una versión de `llama.cpp` con soporte específico para K2 Horizon, integrado en la release b11454.
+
+El entrenamiento se basa en destilación de conocimiento multi-profesor: se emplearon profesores de dominio especializados en matemáticas y código, en STEM y en seguimiento de instrucciones. La model card indica que el recetario de datos de entrenamiento y el código de entrenamiento se harán públicos, aunque en la información disponible no se detalla el número de tokens de entrenamiento ni la composición exacta del dataset. Tampoco se especifica si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-step, con evaluación en benchmarks de matemáticas, código, ciencia y uso de herramientas.
-- Ventana de contexto de 128K tokens, adecuada para tareas que requieren memoria a largo plazo o procesamiento de documentos extensos.
-- Soporte de tool-use (evaluado en benchmarks específicos), aunque no se confirma explícitamente si implementa function calling nativo.
-- Capacidades multilingües en inglés y chino, con plantilla de chat compatible con llama.cpp.
-- Naturaleza conversacional (etiquetado como "conversational"), apta para diálogos multi-turno.
-- No se mencionan capacidades de visión, audio ni modo de pensamiento explícito (thinking mode).
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento matemático, evaluado en benchmarks de matemáticas según la model card.
+- Generación y razonamiento sobre código, reforzado por un profesor de dominio específico.
+- Razonamiento científico y STEM, con un profesor de dominio dedicado.
+- Uso de herramientas (tool use), evaluado en benchmarks de tool-use según la model card.
+- Plantilla de chat compatible con `llama.cpp` incluida en todos los ficheros GGUF.
+- Capacidad de manejar contextos largos de hasta 128K tokens para documentos extensos o conversaciones multi-turno.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
 
 ## Casos de uso
 
-- Asistente de código en local: con su tamaño compacto, puede integrarse en entornos de desarrollo sin GPU dedicada, ayudando en generación de fragmentos, depuración y explicación de código, especialmente en Python y lenguajes populares.
-- Tutor de matemáticas y ciencia: su entrenamiento con profesores especializados en STEM lo hace adecuado para resolver problemas matemáticos paso a paso y explicar conceptos científicos en inglés o chino.
-- Análisis de documentos largos: la ventana de 128K permite procesar contratos, artículos de investigación o libros completos en una sola pasada, extrayendo resúmenes o respondiendo preguntas sobre el contenido.
-- Chatbot bilingüe en/zh: puede desplegarse como agente conversacional en aplicaciones de atención al cliente o asistentes personales que requieran soporte en ambos idiomas.
-- Prototipado rápido de agentes con herramientas: dado su soporte de tool-use, sirve para experimentar con pipelines de agentes que llaman APIs o ejecutan acciones simples, en entornos de desarrollo con recursos limitados.
-- Edge computing y dispositivos de baja potencia: al ser un modelo de ~1B, cabe en dispositivos con 4-8 GB de RAM, permitiendo inferencia en local sin conexión a la nube, por ejemplo en portátiles o mini-PCs.
-- Fine-tuning para tareas específicas: aunque no se documenta explícitamente, al ser un modelo denso pequeño, es factible ajustarlo con datasets propios para dominios concretos (legal, médico, etc.), siempre que la licencia lo permita.
+- Asistente local en el escritorio: al caber en cuantización Q4_K_M en menos de 1 GB de pesos, puede ejecutarse en CPU o en GPU de consumo integrada para asistentes personales sin conexión, con privacidad total de los datos.
+- Procesamiento de documentos largos: la ventana de 128K tokens permite resumir, extraer información o responder preguntas sobre contratos, informes o expedientes completos en una sola pasada, algo infrecuente en modelos de esta escala.
+- Generación de código en entornos con recursos limitados: útil para autocompletado, explicación de fragmentos y generación de tests en IDE o pipelines de CI/CD donde no es viable desplegar modelos de mayor tamaño.
+- Tutoría y resolución de problemas matemáticos: el entrenamiento con profesor de matemáticas lo hace adecuado para asistentes educativos que expliquen paso a paso ejercicios de nivel escolar y universitario básico.
+- Enrutamiento y clasificación en pipelines de agentes: por su baja latencia y su soporte de tool use, puede actuar como modelo de primera etapa que decide qué herramienta invocar o qué consulta derivar a un modelo mayor.
+- Prototipado e investigación reproducible: al anunciarse la publicación del recetario y el código de entrenamiento, sirve como banco de pruebas para estudiar destilación multi-profesor y escalado de contexto en modelos pequeños.
+- Despliegue en dispositivos edge o entornos air-gapped: su tamaño y formato GGUF permiten integración en aplicaciones de escritorio, robots o sistemas embebidos con requisitos estrictos de latencia y sin acceso a red.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una figura con resultados comparativos frente a modelos de referencia como Qwen3.5-0.8B, OpenBMB-1B y Qwen3.5-2B, pero no se han proporcionado valores numéricos en la información disponible. La tabla mostrada en el README está truncada y solo recoge parámetros y arquitectura, sin métricas de rendimiento (MMLU, HumanEval, GSM8K, etc.). Por tanto, no se pueden presentar datos cuantitativos verificables en esta ficha. Se recomienda consultar la imagen de benchmarks en el repositorio original para obtener los resultados visuales.
+La model card incluye una tabla comparativa frente a Qwen3.5-0.8B, OpenBMB-1B y Qwen3.5-2B, pero en la información proporcionada solo se muestran las filas de número de parámetros, parámetros activos y arquitectura; los valores numéricos de los benchmarks (matemáticas, código, ciencia, tool use) no están disponibles en el extracto. Por tanto, no se reproducen cifras que no se hayan podido verificar.
+
+| Modelo | Parámetros | Activos | Arquitectura |
+|---|---|---|---|
+| K2-Horizon-0.9B | 0,9B | 0,9B | Dense |
+| Qwen3.5-0.8B | 0,8B | 0,8B | Dense |
+| OpenBMB-1B | 1B | 1B | Dense |
+| Qwen3.5-2B | 2B | 2B | Dense |
+
+No se han publicado en la información disponible los resultados numéricos de los benchmarks citados (matemáticas, código, ciencia y tool use).
 
 ## Requisitos de hardware
 
-- El tamaño del repositorio es de 2,2 GB, lo que sugiere que los archivos GGUF incluyen varias cuantizaciones (posiblemente Q4, Q5, Q8, etc.), aunque no se especifican.
-- Con los pesos en BF16 (~2,2 GB), se requiere al menos 4 GB de VRAM para inferencia con contexto moderado (por ejemplo, 8K tokens).
-- Para aprovechar la ventana completa de 128K tokens, la memoria de la caché KV puede superar los 4 GB adicionales, por lo que se recomienda una GPU con 8 GB o más (RTX 3060, RTX 4060, etc.) o el uso de cuantizaciones más agresivas.
-- Compatible con llama.cpp, pero requiere una versión con soporte para la arquitectura K2 Horizon; el fork oficial de MBZUAI-IFM está disponible en GitHub.
-- También es compatible con vLLM según las recetas oficiales (recipes.vllm.ai), lo que permite despliegue en producción con alto throughput.
-- En CPU, con cuantización Q4, podría ejecutarse en equipos con 8 GB de RAM, aunque con latencia mayor (no se dispone de datos de throughput).
+- VRAM estimada para inferencia: aproximadamente 0,6-0,7 GB en Q4_K_M, en torno a 1 GB en Q8_0 y unos 2,2 GB en BF16 (pesos; hay que sumar la caché KV, que crece con el contexto).
+- La caché KV para 128K tokens puede ser considerable; con contextos muy largos conviene usar cuantización de caché o reducir la ventana efectiva.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM (RTX 3050, RTX 4060, RTX 4090) para contextos moderados; A100/H100 no son necesarias y estarían sobredimensionadas.
+- Cabe holgadamente en GPU de consumo e incluso en CPU: en Q4_K_M ocupa menos de 1 GB de pesos, por lo que es viable en portátiles y mini-PC.
+- Opciones de despliegue: `llama.cpp` (requiere versión con soporte K2 Horizon, release b11454 o posterior), Ollama y otros runners basados en GGUF; el modelo base es compatible con `transformers`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información completa sobre los modelos de referencia mencionados (Qwen3.5-0.8B, OpenBMB-1B, Qwen3.5-2B) en cuanto a contexto, licencia y rendimiento. La siguiente tabla resume lo conocido:
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| K2-Horizon-0.9B | 0,9B (1,08B reales) | 128K (YaRN) | Apache 2.0 | GGUF, safetensors | Destilación multi-profesor; contexto muy largo para su tamaño |
+| Qwen3.5-0.8B | 0,8B | No disponible en la información | No disponible en la información | No disponible en la información | Referencia de la model card |
+| OpenBMB-1B | 1B | No disponible en la información | No disponible en la información | No disponible en la información | Referencia de la model card |
+| Qwen3.5-2B | 2B | No disponible en la información | No disponible en la información | No disponible en la información | Referencia de la model card; el doble de parámetros |
 
-| Modelo | Params | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| K2-Horizon-0.9B | 1,08B | 128K | internal-only | GGUF, safetensors |
-| Qwen3.5-0.8B | 0,8B | no disponible | no disponible | no disponible |
-| OpenBMB-1B | 1B | no disponible | no disponible | no disponible |
-| Qwen3.5-2B | 2B | no disponible | no disponible | no disponible |
-
-Dado que no se han publicado métricas numéricas, no es posible realizar una comparativa de rendimiento objetiva. La licencia internal-only de K2-Horizon-0.9B es una desventaja frente a alternativas de código abierto con permisos comerciales.
+Los datos de contexto, licencia y formato de los modelos de referencia no figuran en la información proporcionada, por lo que se marcan como no disponibles. La comparación de rendimiento queda pendiente de los resultados numéricos de la model card.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: la licencia "internal-only" impide el uso comercial o la redistribución, limitando su aplicación a entornos internos de investigación.
-- Idiomas limitados: solo inglés y chino; no hay soporte para español ni otros idiomas.
-- Riesgo de alucinación: como todo modelo de lenguaje pequeño, puede generar respuestas plausibles pero incorrectas, especialmente en dominios no cubiertos por el entrenamiento.
-- Falta de transparencia en el entrenamiento: no se han publicado detalles sobre tokens de entrenamiento, composición del dataset ni metodología de destilación, a pesar de la promesa de apertura.
-- Dependencia de infraestructura específica: requiere un fork de llama.cpp con soporte para la arquitectura K2 Horizon, lo que puede dificultar su integración en entornos estándar.
-- La fecha de creación (2026) sugiere que es un modelo muy reciente; su ecosistema de herramientas aún está en desarrollo (PR de soporte en llama.cpp en curso).
+- Modelo de 0,9B: la capacidad de razonamiento y el conocimiento factual son limitados en comparación con modelos de mayor tamaño; es propenso a errores en tareas de razonamiento complejo y multietapa.
+- Riesgo de alucinación inherente a los modelos de lenguaje pequeños, especialmente en preguntas factuales y en contextos largos donde la información relevante queda diluida.
+- Idiomas soportados únicamente inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- El contexto de 128K depende del escalado YaRN; la calidad en ventanas muy largas puede degradarse y la caché KV incrementa el consumo de memoria.
+- Requiere una versión de `llama.cpp` con soporte de la arquitectura K2 Horizon (b11454 o posterior); versiones anteriores no cargarán los pesos.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero conviene verificar los términos de los datos de entrenamiento cuando el autor los publique.
+- No se documentan en la información disponible los sesgos conocidos ni las evaluaciones de seguridad del modelo.
+- La model card menciona que los checkpoints intermedios y el recetario se publicarán; hasta entonces, la reproducibilidad del entrenamiento no está garantizada.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF
-- Modelo original (safetensors): https://huggingface.co/IFM/K2-Horizon-0.9B
-- Recetas vLLM: https://recipes.vllm.ai/IFM/K2-Horizon-0.9B
-- Fork de llama.cpp con soporte K2 Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon
-- Familia K2 en Hugging Face: https://huggingface.co/IFM/K2
+- Repositorio GGUF en Hugging Face: https://huggingface.co/IFM/K2-Horizon-0.9B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/IFM/K2-Horizon-0.9B
+- Release de `llama.cpp` con soporte K2 Horizon (b11454): https://github.com/ggml-org/llama.cpp/releases?page=5#release-b11454
+- Repositorio de `llama.cpp`: https://github.com/ggml-org/llama.cpp

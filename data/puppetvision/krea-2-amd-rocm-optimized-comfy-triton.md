@@ -2,136 +2,113 @@
 
 ## Resumen
 
-PuppetVision/krea-2-amd-rocm-optimized-comfy-triton es una redistribución cuantizada en INT8 tensorwise del modelo de difusión Krea-2-Turbo, empaquetada específicamente para ComfyUI sobre GPUs AMD con ROCm. El repositorio, de 33,1 GB, contiene los checkpoints del modelo de difusión y del codificador de texto (Qwen3-VL INT8) más las instrucciones de configuración que el autor denomina "ruta óptima ROCm", combinando FlashAttention para ROCm, un VAE Qwen Image con kernel Triton W8A8 en modo Aggressive y una configuración de entorno por GPU.
+Krea 2 AMD ROCm Optimized Comfy Triton es un checkpoint de difusion de un solo archivo para generacion de imagenes (texto a imagen e imagen a imagen) derivado de Krea-2-Turbo, publicado por el usuario PuppetVision. Su proposito no es ofrecer un modelo nuevo, sino un empaquetado cuantizado en INT8 con esquema tensorwise, pensado para ejecutarse en GPU AMD mediante ROCm y Triton dentro de ComfyUI. El repositorio incluye los pesos de difusion y del codificador de texto, y esta disenado para combinarse con un nodo externo de VAE (Qwen VAE Triton W8A8) y con ROCm FlashAttention para alcanzar su maximo rendimiento.
 
-El problema que resuelve es de rendimiento y despliegue: la inferencia de Krea 2 Turbo en ComfyUI sobre hardware AMD era sustancialmente más lenta que en las rutas equivalentes, y este paquete documenta y distribuye checkpoints y ajustes que reducen el tiempo del primer flujo de trabajo un 64,9 % (de 242,4 s a 85,0 s) en el host Ubuntu probado, con mejoras del 8,2 % en generación en caliente y del 8,0 % en tiempo por iteración.
+La relevancia del proyecto es practica: el autor publica mediciones A/B sobre un host Ubuntu concreto en las que la ruta completamente optimizada reduce el primer flujo de trabajo de 242,4 s a 85,0 s (un 64,9 % menos) y mejora el tiempo por iteracion en caliente de 8,87 s/it a 8,16 s/it. Frente a los checkpoints oficiales de ComfyUI, el checkpoint INT8 tensorwise del proyecto queda un 21,3 % por debajo del BF16 oficial y un 31,5 % por debajo del FP8 escalado en generacion en caliente, aunque solo un 0,8 % mejor que el INT8 ConvRot oficial.
 
-Su relevancia es doble. Por un lado, ataca el cuello de botella histórico del ecosistema AMD en difusión de imágenes, donde el soporte de ROCm ha ido por detrás de CUDA. Por otro, se apoya en Krea 2 Turbo, la variante destilada de pocos pasos (8 pasos) del modelo fundacional de texto a imagen de Krea AI, publicado el 23 de junio de 2026, lo que permite generar a resoluciones como 1368×768 o 1280×720 con muy pocas iteraciones. La licencia es la krea-2-community-license, no una licencia de código abierto permisiva, lo que condiciona su uso comercial.
+El modelo base es Krea-2-Turbo, un modelo de difusion para generacion de imagenes. No se dispone de datos publicados en la informacion proporcionada sobre el numero de parametros, la arquitectura interna detallada ni la longitud de contexto del codificador de texto, por lo que esos campos se marcan como no disponibles. La licencia es la Krea 2 Community License, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion de texto a imagen; arquitectura interna detallada no disponible |
+| Arquitectura | Modelo de difusion (checkpoint de un solo archivo para ComfyUI); detalles internos no disponibles |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT8 tensorwise (INT8 TensorWise) en el modelo de difusion y el codificador de texto; VAE con Triton W8A8 (preset Aggressive) |
-| Idiomas soportados | no disponible |
-| Licencia | krea-2-community-license (etiquetada como other); enlace en https://www.krea.ai/krea-2-licensing |
-| Formato de pesos | Checkpoints para ComfyUI (no se especifica extension); repositorio de 33,1 GB |
+| Tipos de cuantizacion | INT8 tensorwise (checkpoint de difusion); codificador de texto Qwen3-VL INT8; VAE opcional en Triton W8A8 |
+| Idiomas soportados | no disponible (modelo de imagen; el codificador de texto es Qwen3-VL) |
+| Licencia | Krea 2 Community License (license: other) |
+| Formato de pesos | diffusion-single-file (pesos para ComfyUI); tamano del repo 33,1 GB |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base Krea-2-Turbo ni sobre su proceso de entrenamiento (numero de tokens, composicion del dataset, etapas de RLHF o DPO) en la informacion proporcionada. Lo que si se documenta es que se trata de un modelo de difusion de texto a imagen, que admite tambien el modo imagen a imagen, y que Krea 2 Turbo es una variante destilada de pocos pasos del modelo fundacional de Krea AI, orientada a la estetica y publicada el 23 de junio de 2026.
+El checkpoint es una cuantizacion INT8 con granularidad tensorwise de Krea-2-Turbo, un modelo de difusion orientado a generacion de imagenes. El autor no documenta en la model card la arquitectura del transformer de difusion, el numero de parametros ni los datos de entrenamiento originales; toda esa informacion corresponde al modelo base Krea-2-Turbo y no se incluye en la informacion proporcionada. El repositorio contiene ademas el codificador de texto en INT8, identificado como Qwen3-VL, lo que sugiere un pipeline de texto a imagen con codificador multimodal de la familia Qwen3-VL.
 
-La aportacion tecnica de este repositorio no es el entrenamiento, sino la cuantizacion y la integracion de kernels. El autor publica checkpoints en INT8 tensorwise junto con un codificador de texto Qwen3-VL INT8 y recomienda un VAE Qwen Image con kernel Triton W8A8 en preset Aggressive. La ruta optima medida combina esos pesos con ROCm FlashAttention a traves de su implementacion AMD en Triton/AITER (variable de entorno FLASH_ATTENTION_TRITON_AMD_ENABLE=TRUE) y ComfyUI lanzado con --use-flash-attention --disable-xformers. El autor senala explicitamente que --enable-triton-backend no es un requisito de rendimiento en esta release: su activacion adicional resulto neutra en la prueba A/B.
+La innovacion tecnica del proyecto es el empaquetado y la ruta de ejecucion en AMD ROCm. El autor recomienda combinar el checkpoint de difusion INT8 tensorwise, el codificador de texto INT8, el nodo Qwen VAE Triton W8A8 en preset `Aggressive`, ROCm FlashAttention con backend Triton/AITER (`FLASH_ATTENTION_TRITON_AMD_ENABLE=TRUE`) y ComfyUI lanzado con `--use-flash-attention --disable-xformers`. Segun sus mediciones, el cambio de atencion PyTorch a ROCm FlashAttention es el que aporta la mayor parte de la mejora: generacion en caliente de 82,5 s a 75,0 s (9,1 %) y muestreo de 71,0 s a 65,0 s (8,5 %). El flag `--enable-triton-backend` resulto neutro sobre la ruta de FlashAttention y el autor lo describe como un experimento opcional del backend comfy-kitchen. No se documentan datos de RLHF, DPO ni composicion del dataset.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (text-to-image) en 8 pasos, gracias a la naturaleza destilada de Krea 2 Turbo.
-- Generacion de imagen a imagen (image-to-image), segun el pipeline declarado en la model card.
-- Uso de referencias de estilo (Style-Reference LoRA en tiempo de ejecucion) en la ruta base de comparacion descrita por el autor.
-- Generacion a resoluciones de trabajo de 1368x768 en las pruebas del autor y de hasta 1280x720 en la receta publicada para RX 7800 XT.
-- Integracion nativa con ComfyUI mediante checkpoints de difusion y de codificador de texto.
-- Codificador de texto Qwen3-VL cuantizado a INT8, planteado como optimizacion de memoria y almacenamiento mas que de velocidad.
-- VAE Qwen Image con kernel Triton W8A8 en modo Aggressive, orientado a reducir el coste de carga, preparacion y decodificacion.
-- Aceleracion mediante ROCm FlashAttention con backend AMD Triton/AITER.
-- No se documentan capacidades de tool calling, function calling ni comportamiento agentico (no aplicables a un modelo de difusion de imagenes).
-- No se documenta soporte multilingue explicito mas alla de lo que herede el codificador de texto; no disponible.
+- Generacion de imagenes a partir de texto (text-to-image) en ComfyUI.
+- Edicion y transformacion de imagenes a partir de una referencia (image-to-image, style-reference).
+- Generacion con pocos pasos: las mediciones del autor usan 8 pasos a 1368x768, coherente con la variante Turbo del modelo base.
+- Cuantizacion INT8 tensorwise para reducir huella de memoria y almacenamiento en GPU AMD.
+- Integracion con ROCm FlashAttention y con el nodo Qwen VAE Triton W8A8 para acelerar carga y decodificacion del VAE.
+- No se documentan en la informacion disponible capacidades de tool calling, agentes, razonamiento multi-paso, audio o video.
 
 ## Casos de uso
 
-- Generacion de imagenes de produccion sobre GPUs AMD: el paquete esta disenado para sustituir la ruta CUDA por una ruta ROCm validada, con instrucciones concretas de instalacion y variables de entorno, lo que permite desplegar ComfyUI en flotas AMD sin reescribir los flujos de trabajo.
-- Arte conceptual e iteracion rapida: con 8 pasos de muestreo y tiempos en caliente de 35,16 s por generacion a 1368x768 en el modelo de difusion, un artista puede evaluar decenas de variaciones por sesion sobre una sola GPU.
-- Restilizado y edicion imagen a imagen: al soportar image-to-image, permite reutilizar bocetos o renders previos y regenerarlos con la estetica del modelo sin partir de cero.
-- Coherencia de estilo en branding: la ruta con Style-Reference LoRA en tiempo de ejecucion permite mantener una identidad visual consistente entre piezas generadas en distintas sesiones.
-- Despliegue en estaciones de trabajo de gama media: la receta publicada para RX 7800 XT (16 GB) con checkpoints GGUF demuestra que el modelo puede ejecutarse en GPU de consumo AMD, con generacion a 1280x720 en 8 pasos.
-- Reduccion de coste de inferencia: la combinacion de INT8 tensorwise, VAE Triton Agressive y FlashAttention reduce el tiempo por iteracion de 8,87 s/it a 8,16 s/it y el primer flujo de trabajo un 64,9 %, lo que abarata el coste por imagen en servicios con muchas peticiones en frio.
-- Servicios de generacion por lotes: los tiempos en caliente estables (75,0 s de generacion total de flujo frente a 85,0 s en la primera ejecucion) hacen viable encolar lotes manteniendo el proceso residente.
-- Sustitucion de checkpoints oficiales sin cambiar la interfaz: al ser checkpoints de ComfyUI, se puede intercambiar el checkpoint oficial INT8 ConvRot por el INT8 TensorWise con una ganancia medida del 0,8 % en generacion en caliente y del 21,3 % frente a BF16.
+- Generacion de imagenes por lotes en ComfyUI sobre GPU AMD: el checkpoint INT8 tensorwise permite ejecutar el pipeline en ROCm con un tiempo por iteracion en caliente de 3,765 s/it en el checkpoint de difusion, lo que facilita producir series de imagenes a 1368x768 y 8 pasos en estaciones de trabajo AMD.
+- Prototipado de flujos texto a imagen en equipos AMD de consumo o profesionales: al ser un archivo unico para ComfyUI, se carga directamente en el grafo y evita configuraciones multiarchivo, reduciendo el tiempo de puesta en marcha.
+- Flujos de referencia de estilo (style-reference): el autor mide esta ruta y reporta una reduccion del 21,4 % en el primer flujo tras el arranque gracias al VAE Triton W8A8 en preset agresivo, util para equipos que iteran sobre un mismo estilo visual.
+- Reduccion del coste de arranque en entornos contenerizados: con Docker, el parche de VAE reduce el primer flujo texto a imagen de 231,209 s a 182,355 s (21,1 %) y el primer flujo tras un cambio de resolucion de 223,064 s a 176,777 s (20,8 %), relevante en servicios que reinician contenedores con frecuencia.
+- Evaluacion comparativa de backends de atencion en AMD: el repositorio sirve como referencia reproducible para medir PyTorch cross-attention frente a ROCm FlashAttention en un mismo checkpoint y host.
+- Despliegue de generacion de imagenes en infraestructura AMD existente: al no requerir CUDA, permite reutilizar nodos con GPU AMD en lugar de aprovisionar hardware NVIDIA, siempre que se respete la licencia del modelo base.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son de rendimiento de inferencia en el host Ubuntu del autor (GPU no especificada en la informacion proporcionada), a 1368x768 y 8 pasos, con promedio de dos ejecuciones en caliente. No se han publicado resultados de benchmarks de calidad (FID, CLIP score u otros) en la informacion disponible.
+Mediciones del autor sobre un host Ubuntu concreto, a 1368x768 y 8 pasos, promediando dos ejecuciones en caliente tras la inicializacion:
 
-Comparativa de rutas completas:
-
-| Ruta en el host Ubuntu | Primera ejecucion | Generacion en caliente | Muestreo en caliente | s/it en caliente |
+| Ruta en Ubuntu | Primera ejecucion | Generacion en caliente | Muestreo en caliente | s/it en caliente |
 |---|---:|---:|---:|---:|
-| ComfyUI estilo stock INT8 + LoRA de referencia de estilo + cross-attention de PyTorch | 242,4 s | 81,7 s | 71,0 s | 8,87 |
-| Todas las optimizaciones: INT8 fusionado + codificador INT8 + Qwen VAE Triton Aggressive + ROCm FlashAttention | 85,0 s | 75,0 s | 65,0 s | 8,16 |
+| ComfyUI INT8 estilo oficial + LoRA Style-Reference en runtime + cross-attention PyTorch | 242,4 s | 81,7 s | 71,0 s | 8,87 |
+| Todas las optimizaciones: INT8 del proyecto + codificador INT8 + Qwen VAE Triton Aggressive + ROCm FlashAttention | 85,0 s | 75,0 s | 65,0 s | 8,16 |
 
-Ganancias declaradas: primera ejecucion de 242,4 s a 85,0 s (-64,9 %), generacion en caliente -8,2 %, muestreo en caliente -8,4 % y tiempo por iteracion -8,0 %.
+Comparativa de checkpoints de difusion con la ruta de atencion y el codificador de texto constantes:
 
-Eficiencia de checkpoints de difusion (misma ruta de atencion y codificador de texto):
-
-| Checkpoint de difusion | Generacion en caliente | Muestreo en caliente | s/it en caliente | Ganancia frente a INT8 del proyecto |
+| Checkpoint de difusion | Generacion en caliente | Muestreo en caliente | s/it en caliente | Mejora del INT8 del proyecto |
 |---|---:|---:|---:|---:|
 | INT8 TensorWise del proyecto | 35,16 s | 30,12 s | 3,765 | — |
 | INT8 ConvRot oficial de ComfyUI | 35,44 s | 30,54 s | 3,817 | 0,8 % |
 | BF16 oficial | 44,69 s | 38,55 s | 4,819 | 21,3 % |
-| FP8 scaled oficial | 51,34 s | 44,41 s | 5,551 | 31,5 % |
+| FP8 escalado oficial | 51,34 s | 44,41 s | 5,551 | 31,5 % |
 
-Impacto de la ruta de atencion (mismo checkpoint fusionado, codificador de proyecto y parche Agressive de Qwen VAE): pasar de cross-attention de PyTorch a ROCm FlashAttention redujo la generacion en caliente de 82,5 s a 75,0 s (-9,1 %), el muestreo de 71,0 s a 65,0 s (-8,5 %) y el tiempo por iteracion de 8,915 s/it a 8,160 s/it.
+Diagnostico Docker del VAE:
 
-Diagnostico del VAE en Docker (coste de carga, preparacion y decodificacion):
-
-| Medicion del VAE en Docker | Stock sin parche | Qwen VAE Triton W8A8 Aggressive | Reduccion |
+| Medicion | Sin parche | Qwen VAE Triton W8A8 Aggressive | Reduccion |
 |---|---:|---:|---:|
-| Primer flujo de trabajo texto a imagen | 231,209 s | 182,355 s | 21,1 % |
+| Primer flujo texto a imagen | 231,209 s | 182,355 s | 21,1 % |
 | Texto a imagen tras cambio de resolucion | 223,064 s | 176,777 s | 20,8 % |
-| Primer flujo de trabajo con referencia de estilo | 275,472 s | 216,590 s | 21,4 % |
-| Referencia de estilo tras cambio de resolucion | 223,750 s | 178,630 s | 20,2 % |
+| Primer flujo con referencia de estilo | 275,472 s | 216,590 s | 21,4 % |
+
+No se han publicado en la informacion disponible resultados de benchmarks de calidad de imagen (FID, CLIP score, evaluaciones humanas) ni comparaciones con otros modelos de difusion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. El repositorio completo ocupa 33,1 GB, cifra que conviene tener en cuenta para el almacenamiento en disco y para la carga de checkpoints.
-- GPU de consumo AMD: existe una receta publicada que ejecuta Krea 2 Turbo en una RX 7800 XT de 16 GB mediante ComfyUI sobre ROCm, con checkpoints en formato GGUF y generacion a 1280x720 en 8 pasos.
-- GPU profesionales: no se especifica el modelo de GPU utilizado en el host Ubuntu de referencia, por lo que no se pueden asociar los tiempos a un modelo concreto (A100, H100, MI300 u otros).
-- Compatibilidad de plataforma: el paquete esta orientado a ROCm sobre Linux (host Ubuntu en las pruebas) y existe un fork de ComfyUI con ROCm para Windows (comfyui-rocm en GitHub).
-- Opciones de despliegue: ComfyUI es la via documentada. No hay soporte declarado para vLLM, llama.cpp, Ollama o TGI, que ademas no son runners habituales para modelos de difusion de imagen.
-- Componentes necesarios: ROCm, PyTorch emparejado con la version de ROCm, ROCm/flash-attention con backend AMD Triton/AITER, y el nodo Qwen VAE Triton W8A8 disponible en el registro de ComfyUI.
-- Parametros de lanzamiento recomendados: --use-flash-attention --disable-xformers, con FLASH_ATTENTION_TRITON_AMD_ENABLE=TRUE.
-- Latencia observada en el host de referencia: 85,0 s en el primer flujo de trabajo completo optimizado, 75,0 s en regimen estable y 35,16 s de generacion del checkpoint de difusion en caliente a 1368x768 y 8 pasos.
-- Throughput: no disponible.
+- GPU AMD con soporte ROCm; el autor no especifica modelos concretos validados.
+- VRAM estimada: no disponible. El repositorio ocupa 33,1 GB en disco, pero no se desglosa el tamano de cada componente ni el pico de VRAM en inferencia.
+- GPU recomendadas: no disponible. El autor solo indica que la configuracion de ROCm, PyTorch y FlashAttention depende de la GPU y de las versiones.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible.
+- Despliegue: ComfyUI con `--use-flash-attention --disable-xformers`; ROCm FlashAttention con backend Triton/AITER; nodo Qwen VAE Triton W8A8 en preset `Aggressive`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion de este tipo.
+- Latencia y throughput: 8,16 s/it en caliente en el flujo completo medido (1368x768, 8 pasos) y 3,765 s/it para el checkpoint de difusion aislado en el host Ubuntu del autor. El primer flujo completo tarda 85,0 s con todas las optimizaciones.
 
 ## Comparativa con modelos similares
 
-La comparacion mas directa es entre los distintos formatos de checkpoint del propio Krea 2 Turbo, medidos por el autor en condiciones controladas:
+| Modelo | Parametros | Contexto | Rendimiento medido | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Krea 2 AMD ROCm Optimized (este) | no disponible | no disponible | 3,765 s/it en caliente (difusion, 1368x768, 8 pasos) | Krea 2 Community License | Hugging Face, 4164 descargas |
+| Krea-2-Turbo (base) | no disponible | no disponible | no disponible | Krea 2 Community License | Hugging Face (krea/Krea-2-Turbo) |
+| ComfyUI INT8 ConvRot oficial | no disponible | no disponible | 3,817 s/it en caliente | segun checkpoint oficial | ComfyUI |
+| ComfyUI BF16 oficial | no disponible | no disponible | 4,819 s/it en caliente | segun checkpoint oficial | ComfyUI |
 
-| Version | Cuantizacion | Generacion en caliente | s/it | Tamano aproximado | Licencia | Disponibilidad |
-|---|---|---:|---:|---|---|---|
-| INT8 TensorWise (este repositorio) | INT8 tensorwise | 35,16 s | 3,765 | repo de 33,1 GB | krea-2-community-license | Hugging Face, PuppetVision |
-| INT8 ConvRot oficial de ComfyUI | INT8 con rotacion de convolucion | 35,44 s | 3,817 | no disponible | krea-2-community-license | Comfy-Org |
-| BF16 oficial | BF16 | 44,69 s | 4,819 | no disponible | krea-2-community-license | Comfy-Org / Krea |
-| FP8 scaled oficial | FP8 | 51,34 s | 5,551 | no disponible | krea-2-community-license | Comfy-Org / Krea |
-
-Frente a otras alternativas del mismo nicho (por ejemplo, modelos fundacionales de texto a imagen con variantes destiladas de pocos pasos), no se dispone de datos comparativos de parametros, contexto ni calidad en la informacion proporcionada: no disponible.
+La comparacion se limita a variantes del mismo modelo base y a los checkpoints oficiales medidos por el autor; no se dispone de datos para comparar con otras familias de modelos de difusion.
 
 ## Limitaciones y advertencias
 
-- Licencia no abierta: se trata de la krea-2-community-license, etiquetada como other. Cualquier uso comercial debe revisarse contra los terminos de https://www.krea.ai/krea-2-licensing antes de desplegar en produccion.
-- El repositorio no declara un numero de parametros, contexto ni idiomas soportados, lo que dificulta dimensionar despliegues sin pruebas previas.
-- Los benchmarks proceden de un unico host Ubuntu cuya GPU no se especifica, con dos ejecuciones en caliente por configuracion; no son extrapolables a otras GPUs ni a otras versiones de ROCm.
-- Las cifras de arranque en frio (85,0 s y 182,355 s en Docker) incluyen trabajo de inicializacion y compilacion de kernels, por lo que no representan el estado estable.
-- La configuracion de ROCm, PyTorch y FlashAttention es dependiente de la GPU y de la version, tal como advierte el propio autor; una combinacion incorrecta puede degradar el rendimiento o impedir el arranque.
-- El autor senala que --enable-triton-backend no aporta mejora medible en esta release, por lo que activarlo no debe considerarse requisito.
-- El codificador de texto Qwen3-VL INT8 no aporta una mejora de velocidad material en esta carga; es una optimizacion de memoria y almacenamiento.
-- El coste del VAE domina el primer flujo tras el arranque y tras cada cambio de resolucion, incluso con el parche Agressive (-20,2 % a -21,4 %), lo que penaliza cargas de trabajo con resoluciones variables.
-- Riesgo de alucinacion y sesgos: no disponible en la informacion proporcionada. Al ser un modelo generativo de imagenes, la fidelidad al prompt y los sesgos visuales dependen del modelo base Krea-2-Turbo.
-- Popularidad y validacion de la comunidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe aun retroalimentacion independiente que confirme los resultados.
-- No hay soporte declarado de cuantizaciones GGUF dentro de este repositorio; las rutas GGUF citadas pertenecen a otras distribuciones.
+- Las mediciones proceden de un unico host Ubuntu y de una configuracion de GPU concreta; el autor advierte que ROCm, PyTorch y FlashAttention dependen de la GPU y de las versiones, por lo que los tiempos no son extrapolables sin validacion.
+- La mejora del checkpoint INT8 tensorwise frente al INT8 ConvRot oficial es marginal (0,8 %); la mayor parte de la ganancia proviene de FlashAttention y del parche de VAE, no del checkpoint en si.
+- El codificador de texto INT8 se describe como optimizacion de memoria y almacenamiento, no de velocidad: su tiempo en caliente queda practicamente empatado con los controles BF16 y FP8.
+- El flag `--enable-triton-backend` no aporta mejora sobre la ruta de FlashAttention segun el A/B del autor; tratarlo como requisito puede inducir a error.
+- La licencia Krea 2 Community License no es una licencia de codigo abierto estandar; es necesario revisar sus terminos en el enlace oficial antes de cualquier uso comercial.
+- No se documentan sesgos, tasas de alucinacion visual ni limitaciones de idioma del codificador de texto en la informacion disponible.
+- No se publican evaluaciones de calidad de imagen, por lo que no puede verificarse que la cuantizacion INT8 preserve la fidelidad respecto al modelo base en todos los casos.
+- El repositorio tiene 1 like y 4164 descargas; es un empaquetado de la comunidad, no un lanzamiento oficial del desarrollador del modelo base.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/PuppetVision/krea-2-amd-rocm-optimized-comfy-triton
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
-- Video de presentacion en YouTube: https://youtu.be/fD-J2CYetIg
 - Licencia Krea 2: https://www.krea.ai/krea-2-licensing
-- Nodo Qwen VAE Triton W8A8 en el registro de ComfyUI: https://registry.comfy.org/publishers/puppet-vision/nodes/qwen-vae-triton
-- ROCm/flash-attention en GitHub: https://github.com/ROCm/flash-attention
-- Fork de ComfyUI con ROCm (Windows): https://github.com/localhubs/comfyui-rocm
-- Implementacion de Krea 2 en comfyui-rocm: https://github.com/localhubs/comfyui-rocm/tree/master/comfy/ldm/krea2
-- Receta de Krea 2 Turbo en RX 7800 XT con ROCm: https://smeltcore.com/recipes/krea-2-rx-7800-xt/
-- Discusion sobre ejecucion con menos de 4 GB de VRAM (Comfy-Org/Krea-2): https://huggingface.co/Comfy-Org/Krea-2/discussions/21
+- Video de lanzamiento del proyecto: https://youtu.be/fD-J2CYetIg
+- Nodo Qwen VAE Triton W8A8: https://registry.comfy.org/publishers/puppet-vision/nodes/qwen-vae-triton
+- ROCm FlashAttention: https://github.com/ROCm/flash-attention

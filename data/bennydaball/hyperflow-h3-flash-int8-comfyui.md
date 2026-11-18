@@ -2,101 +2,115 @@
 
 ## Resumen
 
-HyperFlow H3 Flash es un modelo de generacion de video con audio estereo sincronizado, desarrollado por Video Rebirth como una version comprimida y de pocos pasos (few-step) del modelo MiniMax-H3. El modelo base tiene 14.000 millones de parametros y genera video a 768p en seis pasos de inferencia, lo que lo situa en el terreno de la generacion casi en tiempo real sobre hardware de gama alta y en un rango viable para GPU de consumo. La ficha que nos ocupa no es el modelo original, sino una conversion no oficial a INT8 realizada por el usuario BennyDaBall para su uso directo en ComfyUI.
+HyperFlow H3 Flash INT8 para ComfyUI es una cuantización no oficial en INT8 del modelo de generación de vídeo con audio sincronizado HyperFlow H3 Flash, desarrollado originalmente por Video Rebirth AI. La publica el usuario independiente BennyDaBall y está pensada para ejecutarse dentro de ComfyUI sobre los kernels INT8 nativos de ComfyUI, sin necesidad de convertir a GGUF ni de descomprimir a BF16. El modelo base es un sistema de difusión de vídeo (image-text-to-video) que genera clips con pista de audio estéreo sincronizada en tan solo 6 pasos de muestreo.
 
-Esta conversion, publicada como `BennyDaBall/HyperFlow-H3-Flash-INT8-ComfyUI`, incluye los dos checkpoints del modelo (`fl2va` para texto, primer fotograma y primer mas ultimo fotograma; `ref2va` para imagenes de referencia) convertidos a INT8 con los kernels nativos de ComfyUI, sin pasar por GGUF ni por desquantizacion a bf16. El paquete se completa con un nodo cargador propio (`comfyui_hyperflow_int8_nodes`) y una coleccion de flujos de trabajo listos para ejecutar.
+La relevancia de esta ficha radica en que se trata de una cuantización "de autor" que, según la model card, reduce el error frente al BF16 original respecto a la cuantización INT8 oficial, manteniendo el mismo tamaño y velocidad. Incluye dos transformadores: `fl2va` (texto, primer fotograma y primer+último fotograma a vídeo con audio) y `ref2va` (imágenes de referencia a vídeo con audio). Se distribuye junto con un nodo cargador propio y flujos de trabajo listos para usar.
 
-Su relevancia practica es clara: el autor reporta 46,1 s por clip de 5,2 s con audio en una unica RTX 5090 de 32 GB, frente a los 66,0 s del GGUF oficial `Q4_K_M` en la misma maquina y los 139,1 s del MiniMax H3 original a 20 pasos. Es, por tanto, una alternativa de despliegue orientada a reducir latencia y huella de memoria en entornos ComfyUI, no un modelo nuevo.
+El repositorio ocupa 96,7 GB y acumula unas 79.100 descargas y 35 likes en Hugging Face. No se dispone de información sobre el número de parámetros, la longitud de contexto (en el sentido de modelos de lenguaje) ni los idiomas soportados, ya que se trata de un modelo generativo de vídeo y no de un modelo de lenguaje.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion derivado de MiniMax-H3) |
-| Parametros totales | 14 000 millones (modelo base HyperFlow H3 Flash) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT8 (checkpoints `fl2va` y `ref2va`); el modelo base ofrece GGUF `Q4_K_M` y `Q8_0` |
+| Arquitectura | Difusión para generación de vídeo con audio (basada en MiniMax H3 / HyperFlow H3 Flash); no se detalla la arquitectura interna |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (modelo de vídeo, no de texto) |
+| Tipos de cuantización | INT8 (pesos y activaciones de 8 bits sobre kernels INT8 rotados de ComfyUI) |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax-H3 Community License Agreement |
-| Formato de pesos | safetensors INT8 para ComfyUI (sin GGUF) |
+| Licencia | minimax-h3-community-license-agreement (etiquetada como `other`) |
+| Formato de pesos | Checkpoints INT8 para ComfyUI (no GGUF, no safetensors BF16) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. Se sabe que HyperFlow H3 Flash es una version comprimida y de pocos pasos de MiniMax-H3, disenada para generar video y audio estereo sincronizado de forma conjunta, y que opera con 6 pasos de inferencia y CFG 1. El modelo base se describe como un modelo de 14B construido sobre MiniMax H3, capaz de generar 768p en tiempo real sobre cuatro GPU B200.
+El modelo es una cuantización INT8 de los transformadores de HyperFlow H3 Flash, un sistema de difusión de vídeo que genera clips con audio sincronizado en pocos pasos (6 en la configuración recomendada). La model card no detalla la arquitectura interna del transformer original (número de capas, dimensión, mecanismo de atención), pero sí indica que se ejecuta sobre los kernels INT8 de ComfyUI con atención rotada y que soporta tanto el modo `fl2va` como el `ref2va`.
 
-La innovacion principal de esta publicacion concreta no esta en el entrenamiento, sino en la conversion: los checkpoints se han transformado a INT8 aprovechando los kernels INT8 propios de ComfyUI, evitando la desquantizacion a bf16 en tiempo de ejecucion. El autor incluye en el pack de nodos el conversor y las comprobaciones necesarias para reproducir la conversion desde los ficheros originales. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
+La cuantización la realiza el autor a partir de la release BF16 de Video Rebirth, no a partir de los ficheros INT8 oficiales. Según la model card, esta "solución propia" reduce el error por llamada de muestreo y el LPIPS del clip final frente a la cuantización INT8 oficial (por ejemplo, LPIPS de 0,215 frente a 0,236 en `fl2va`). Los pesos se actualizaron el 2026-11-15 y ahora incluyen la entrada de cabecera `hyperflow` oficial, por lo que cargan tanto en el HyperFlow Loader oficial como en el HyperFlow INT8 Loader del autor. No se especifican datos de entrenamiento (tokens, composición del dataset, RLHF/DPO) porque se trata de una cuantización, no de un entrenamiento desde cero.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video) con audio estereo sincronizado.
-- Generacion de video a partir de una imagen (image-to-video) y con primer y ultimo fotograma (first + last frame).
-- Generacion de video a partir de imagenes de referencia (reference-to-video) mediante el checkpoint `ref2va`.
-- Generacion conjunta de audio y video en una sola pasada, con audio estereo.
-- Generacion en pocos pasos: 6 pasos de inferencia con CFG 1.
-- Soporte de resolucion 1344x768 y clips de hasta 243 fotogramas (unos 10 s a 24 fps) segun los ejemplos de la model card.
-- Integracion con ComfyUI mediante nodo cargador propio y flujos de trabajo preconfigurados.
-- Compatibilidad con el nodo Model Sparse Attention de ComfyUI (sol-attn, tau 1.25) para reducir aun mas el tiempo de inferencia.
-- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, por tratarse de un modelo generativo audiovisual.
+- Generación de vídeo a partir de texto (text-to-video) con audio estéreo sincronizado.
+- Generación de vídeo a partir de una imagen (image-to-video) y de primer + último fotograma.
+- Generación de vídeo a partir de imágenes de referencia (reference-to-video).
+- Generación de audio sincronizado con el vídeo en la misma pasada.
+- Muestreo en pocos pasos (6 pasos configurados por defecto).
+- Compatibilidad con LoRAs de MiniMax H3 a través del nodo HyperFlow LoRA del pack del autor.
+- Compatibilidad con el nodo de atención dispersa (Model Sparse Attention) de ComfyUI para acelerar la inferencia.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, al no ser un modelo de lenguaje.
 
 ## Casos de uso
 
-- Prototipado rapido de video generativo en ComfyUI: el paquete incluye flujos listos para texto a video, primer fotograma, primer mas ultimo fotograma y referencia a video, de modo que un equipo puede encadenar prompts y obtener clips de 5 s con audio en menos de un minuto sobre una RTX 5090.
-- Produccion de clips cortos para redes sociales: con 1344x768 y 124 fotogramas (5,2 s a 24 fps) y audio sincronizado, el modelo cubre el formato tipico de anuncios y piezas verticales u horizontales de duracion breve.
-- Generacion de video a partir de storyboards o referencias visuales: el checkpoint `ref2va` permite introducir imagenes de referencia y mantener coherencia de personaje o estilo entre planos, util en previsualizacion de anuncios y videoclips.
-- Iteracion creativa con control de primer y ultimo fotograma: util para transiciones y animaciones de producto donde se fija el estado inicial y final del plano.
-- Evaluacion comparativa de pipelines de cuantizacion: el repositorio documenta tiempos frente a GGUF `Q4_K_M`, `Q8_0` y MiniMax H3 original, lo que lo convierte en una referencia practica para medir el impacto de INT8 en calidad y latencia.
-- Despliegue en estaciones de trabajo con una sola GPU de 32 GB: con un pico de 23,6 GiB de VRAM en la ejecucion legacy, encaja en equipos con RTX 5090 sin necesidad de multi-GPU.
-- Generacion de audio y video en una sola etapa para doblaje o locucion provisional: al producir audio estereo junto al video, sirve para maquetas con sonido ambiente y efectos antes de la postproduccion final.
+- **Generación rápida de clips publicitarios**: con 46 s por clip de 5 s en una RTX 5090, permite iterar sobre variaciones de un anuncio corto con audio incluido sin salir de ComfyUI.
+- **Prototipado de vídeo para redes sociales**: el modo text-to-video a 1344×768 y 124 fotogramas (5,2 s a 24 fps) encaja en la generación de piezas verticales u horizontales de duración corta.
+- **Animación de imágenes fijas**: el modo image-to-video permite dar movimiento a ilustraciones o fotografías con una sola imagen de entrada, útil en motion graphics y contenido editorial.
+- **Interpolación guiada por primer y último fotograma**: el modo first+last frame sirve para crear transiciones controladas entre dos imágenes clave, útil en montaje y previsualización.
+- **Consistencia de personaje con reference-to-video**: el modo `ref2va` permite mantener la apariencia de un personaje a partir de imágenes de referencia, adecuado para series cortas o avatares animados.
+- **Previsualización en pipelines de producción**: al integrarse como nodo de ComfyUI, se puede encadenar con otros nodos (upscale, postproceso, composición) para generar borradores rápidos antes del render final.
+- **Generación de audio sincronizado para vídeo mudo**: el modelo produce pista de audio junto al vídeo, lo que simplifica la creación de contenido con sonido sin herramientas adicionales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. La model card si incluye mediciones de latencia sobre una RTX 5090 de 32 GB con 64 GB de RAM, ComfyUI con atencion CK, texto a video a 1344x768, 124 fotogramas (5,2 s a 24 fps) con audio, CFG 1, media de 5 semillas:
+La model card proporciona métricas de fidelidad frente al BF16 original y tiempos de inferencia, no benchmarks estándar de calidad (MMLU, HumanEval, etc.), que no aplican a un modelo de vídeo.
 
-| Configuracion | Pasos | s/it | Tiempo medio por clip |
+| Medida | INT8 oficial | Esta cuantización |
+|---|---:|---:|
+| `fl2va`, error de imagen por llamada de muestreo | 5,4 % | 4,2 % |
+| `fl2va`, error de sonido por llamada de muestreo | 3,4 % | 3,2 % |
+| `fl2va`, LPIPS del clip final (10 prompts) | 0,236 | 0,215 |
+| `ref2va`, error de imagen por llamada de muestreo | 4,0 % | 3,4 % |
+| `ref2va`, error de sonido por llamada de muestreo | 3,1 % | 2,8 % |
+| `ref2va`, LPIPS del clip final (8 prompts) | 0,237 | 0,216 |
+
+Tiempos de inferencia en una RTX 5090 (32 GB) con 64 GB de RAM, ComfyUI con atención CK, text-to-video a 1344×768, 124 fotogramas con audio, CFG 1:
+
+| Configuración | Pasos | s/it | Media por clip |
 |---|---:|---:|---:|
 | Este repo (`fl2va`), patcher legacy | 6 | 5,4 | 46,1 s |
-| Este repo + Model Sparse Attention (sol-attn, tau 1.25) | 6 | 4,2 | ~38 s |
-| GGUF oficial `Q4_K_M` + nodos oficiales | 6 | 8,6 | 66,0 s |
-| GGUF oficial `Q8_0` + nodos oficiales | 6 | 8,4 | 64,4 s |
-| MiniMax H3 original | 20 | 6,3 | 139,1 s |
+| Este repo + Model Sparse Attention (sol-attn, tau 1,25) | 6 | 4,2 | ~38 s |
+| GGUF `Q4_K_M` oficial + nodos HyperFlow oficiales | 6 | 8,6 | 66,0 s |
+| GGUF `Q8_0` oficial + nodos HyperFlow oficiales | 6 | 8,4 | 64,4 s |
+| MiniMax H3 estándar | 20 | 6,3 | 139,1 s |
 
-Pico de VRAM en la ejecucion legacy: 23,6 GiB (24 209 MiB medidos con nvidia-smi, incluyendo el escritorio). El autor senala que la cifra de Video Rebirth para el GGUF `Q4_K_M` en una 5090 es de 99 s, frente a los 66,0 s medidos en su equipo.
+Pico de VRAM en la ejecución legacy: 23,6 GiB (24.209 MiB, medido con nvidia-smi incluyendo el escritorio).
 
 ## Requisitos de hardware
 
-- VRAM estimada: 23,6 GiB de pico en la configuracion legacy medida (INT8, 6 pasos, 1344x768, 124 fotogramas con audio).
-- GPU recomendada segun la documentacion: NVIDIA RTX 5090 de 32 GB. El modelo base se presenta como capaz de generar 768p en tiempo real sobre cuatro B200.
-- Cabe en GPU de consumo de gama alta: si en una RTX 5090 con 32 GB; no se documenta su comportamiento en GPU con menos VRAM.
-- RAM del sistema: 64 GB en el equipo de referencia.
-- Opciones de despliegue: ComfyUI con el nodo `comfyui_hyperflow_int8_nodes` (HyperFlow INT8 Loader) y el pack oficial `ComfyUI-HyperFlow-Flash`; requiere el text encoder y los VAE de `Comfy-Org/MiniMax-H3`. No se distribuye en GGUF; el modelo base si ofrece GGUF `Q4_K_M` y `Q8_0` para llama.cpp-style runners.
-- Latencia y throughput: 46,1 s por clip de 5,2 s con el patcher legacy y aproximadamente 38 s con Model Sparse Attention; 5,4 y 4,2 s/it respectivamente.
+- **VRAM estimada**: pico de 23,6 GiB en la configuración legacy reportada por el autor (RTX 5090 de 32 GB).
+- **GPU recomendadas**: RTX 5090 (32 GB) es la referencia de las mediciones; no se documentan pruebas en A100, H100 ni otras GPU.
+- **¿Cabe en GPU de consumo?**: sí, en una RTX 5090 de 32 GB según la model card; no se confirma su funcionamiento en GPU con menos VRAM.
+- **Memoria del sistema**: 64 GB de RAM en la máquina de referencia.
+- **Opciones de despliegue**: ComfyUI con los kernels INT8 nativos, el nodo oficial ComfyUI-HyperFlow-Flash y el nodo `comfyui_hyperflow_int8_nodes` del autor; también funciona con el HyperFlow Loader oficial. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
+- **Latencia y throughput**: 46,1 s por clip de 5,2 s en RTX 5090 con patcher legacy; ~38 s con atención dispersa; 5,4 s/it y 4,2 s/it respectivamente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / duracion | Pasos | Tiempo por clip (RTX 5090) | Licencia | Formato |
-|---|---|---:|---:|---:|---|---|
-| HyperFlow H3 Flash INT8 (este repo) | 14B | 124 frames (5,2 s) a 1344x768 | 6 | 46,1 s (38 s con sparse attention) | MiniMax-H3 Community License | safetensors INT8 |
-| HyperFlow H3 Flash GGUF `Q4_K_M` oficial | 14B | 124 frames a 1344x768 | 6 | 66,0 s | MiniMax-H3 Community License | GGUF |
-| HyperFlow H3 Flash GGUF `Q8_0` oficial | 14B | 124 frames a 1344x768 | 6 | 64,4 s | MiniMax-H3 Community License | GGUF |
-| MiniMax H3 original | no disponible | 124 frames a 1344x768 | 20 | 139,1 s | no disponible | no disponible |
+| Modelo | Formato | Pasos | Tiempo por clip (RTX 5090) | Licencia | Disponibilidad |
+|---|---|---:|---:|---|---|
+| HyperFlow H3 Flash INT8 (este repo) | INT8 ComfyUI | 6 | 46,1 s | minimax-h3-community | Hugging Face (no oficial) |
+| HyperFlow H3 Flash GGUF `Q4_K_M` oficial | GGUF | 6 | 66,0 s | minimax-h3-community | Hugging Face (oficial) |
+| HyperFlow H3 Flash GGUF `Q8_0` oficial | GGUF | 6 | 64,4 s | minimax-h3-community | Hugging Face (oficial) |
+| MiniMax H3 estándar | BF16 | 20 | 139,1 s | minimax-h3-community | Hugging Face (oficial) |
+
+No se dispone de comparación con otros modelos de vídeo de la competencia (por ejemplo, modelos de otras familias) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Conversion no oficial: el repositorio esta marcado como `unofficial` y no lo mantiene Video Rebirth; la calidad y el soporte dependen del autor de la conversion.
-- La licencia es la MiniMax-H3 Community License Agreement, no una licencia open source estandar; es imprescindible revisar sus terminos antes de cualquier uso comercial.
-- El uso de Model Sparse Attention es una aproximacion: la propia model card advierte que su salida no es identica a la de atencion densa, por lo que puede introducir diferencias de calidad.
-- El rendimiento medido corresponde a una unica configuracion (RTX 5090, 64 GB de RAM, ComfyUI con atencion CK); no se documentan tiempos en otras GPU.
-- No se dispone de informacion sobre sesgos, tasas de alucinacion visual, idiomas soportados ni evaluaciones de calidad subjetiva.
-- Los clips de ejemplo son generaciones unicas con semilla 42; no constituyen una evaluacion sistematica.
-- Requiere instalar dos packs de nodos y descargar el text encoder y los VAE por separado desde `Comfy-Org/MiniMax-H3`; el repositorio por si solo no es suficiente para ejecutar el modelo.
-- El modelo esta orientado a generacion de video con audio; no es un modelo de lenguaje y no ofrece tool calling ni razonamiento textual.
+- **Cuantización no oficial**: no está publicada por Video Rebirth; el autor la distribuye como "unofficial". La calidad puede diferir de la versión oficial.
+- **Licencia restrictiva**: se rige por el `minimax-h3-community-license-agreement`; es necesario revisar sus términos antes de cualquier uso comercial.
+- **Sesgos**: no se documentan sesgos específicos, pero al ser un modelo generativo de vídeo puede heredar sesgos del dataset de entrenamiento original.
+- **Alucinación visual**: como todo modelo de difusión, puede generar contenido incoherente o no fiel al prompt; la cuantización INT8 añade un error adicional medible (LPIPS ~0,215 frente a BF16).
+- **Idiomas**: no se especifican los idiomas soportados en prompts de texto.
+- **Hardware**: las mediciones se limitan a una RTX 5090; no hay datos de rendimiento en otras GPU ni en configuraciones multi-GPU.
+- **Atención dispersa**: el uso de Model Sparse Attention acelera la inferencia pero aproxima la atención, por lo que la salida no es idéntica a la atención densa.
+- **Compatibilidad de LoRAs**: es necesario usar el nodo HyperFlow LoRA del pack del autor; un cargador de LoRAs estándar aplica las LoRAs a bloques incorrectos de este modelo podado.
+- **Actualización de pesos**: los pesos se actualizaron el 2026-11-15; es necesario volver a descargar los ficheros para obtener la nueva versión.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/BennyDaBall/HyperFlow-H3-Flash-INT8-ComfyUI
-- Modelo base: https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash
-- Pagina del producto HyperFlow H3 Flash: https://www.videorebirth.com/lp/hyperflow-flash
-- Nodos INT8 del autor: https://github.com/BennyDaBall930/comfyui_hyperflow_int8_nodes
-- Nodos oficiales de HyperFlow Flash: https://github.com/Video-Rebirth/ComfyUI-HyperFlow-Flash
-- Text encoder y VAE: https://huggingface.co/Comfy-Org/MiniMax-H3
+- [Hugging Face: BennyDaBall/HyperFlow-H3-Flash-INT8-ComfyUI](https://huggingface.co/BennyDaBall/HyperFlow-H3-Flash-INT8-ComfyUI)
+- [Modelo base: VideoRebirthAI/hyperflow-h3-flash](https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash)
+- [Repositorio del nodo: comfyui_hyperflow_int8_nodes](https://github.com/BennyDaBall930/comfyui_hyperflow_int8_nodes)
+- [Nodo oficial: ComfyUI-HyperFlow-Flash](https://github.com/Video-Rebirth/ComfyUI-HyperFlow-Flash)
+- [Revisión inicial de los pesos (`b5d22a34`)](https://huggingface.co/BennyDaBall/HyperFlow-H3-Flash-INT8-ComfyUI/tree/b5d22a34bfb159b0bc559458aac3412d0647f743)
+- [Perfil del autor en X: @BennyDaBall_OG](https://x.com/BennyDaBall_OG)
+- [Ko-fi del autor](https://ko-fi.com/bennydaball)

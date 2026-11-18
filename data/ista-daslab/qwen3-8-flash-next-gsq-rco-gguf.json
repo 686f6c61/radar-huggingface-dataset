@@ -32,7 +32,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1284,
+  "likes": 1287,
   "downloads_30d": 7236306,
   "trending_score": 50,
   "parameters": 176943899520,
@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Solutions de comptage individuel d’eau et de chauffage ... - ista",
-      "url": "https://www.ista.com/fr/",
-      "snippet": "Le 30 mars, à l'oc­ca­sion de l'édition 2026 de ChangeNOW, ista réunit les acteurs de l’eau pour une confé­rence dédiée à la maîtrise …"
-    },
-    {
-      "title": "Portail web ista",
-      "url": "https://www.ista.com/fr/portail-web/",
-      "snippet": "Accédez au portail web ista pour gérer facilement vos consommations d'énergie et accéder à vos données en ligne."
-    },
-    {
-      "title": "Portail client ista MonCompte",
-      "url": "https://portal.ista.com/fr/",
-      "snippet": "Contrôlez les consommations d’eau et de chauffage de votre parc, accédez à vos documents essentiels et consultez facilement vos …"
-    },
-    {
-      "title": "Mon espace ista : Suivez et maîtrisez vos consommations d'énergie",
-      "url": "https://monespaceista.fr/",
-      "snippet": "Pour commencer, nous avons besoin d'identifier votre logement. Pour cela, renseignez le numéro de série d'un de vos appareils ista …"
-    },
-    {
-      "title": "Installation from scratch BMW ISTA+ 4.50.12 - FORUM BMW.fr",
-      "url": "https://www.forum-bmw.fr/viewtopic.php?t=131507",
-      "snippet": "Dec 9, 2025 · J'ai suivi les instructions du post BMW ISTA+ 4.50.12 (Rheingold ISTA-D 4.50.11) [11.2024] FR-Complet pour installer …"
-    }
-  ]
+  "sources": []
 }

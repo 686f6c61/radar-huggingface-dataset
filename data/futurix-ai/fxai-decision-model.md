@@ -2,106 +2,113 @@
 
 ## Resumen
 
-FxAI Decision Model es un clasificador de decisiones experimental publicado por Futurix-AI sobre la arquitectura Qwen3.8-27B, un backbone multimodal de tipo transformer decoder. Su funcionamiento no es el de un modelo generativo: recibe un estado (texto o imagen), una pregunta y entre 2 y 255 opciones candidatas, y devuelve una distribución de probabilidad calibrada sobre esas opciones. El pipeline declarado en Hugging Face es `text-classification` y la salida es una decisión tipada (`choice`, `noul` o `score`), no texto libre.
+FxAI Decision Model es un clasificador de decisiones entrenado sobre la arquitectura Qwen3.8-27B y publicado por Futurix-AI. No es un modelo generativo al uso: dado un estado (texto o imagen), una pregunta y hasta 255 opciones candidatas, devuelve una distribución de probabilidad calibrada sobre esas opciones. Está pensado para tareas de enrutamiento, clasificación de intención, selección de herramientas y puntuación estructurada, no para generación libre de texto.
 
-El repositorio contiene un checkpoint fusionado completo de 54,4 GB: backbone en BF16, el bloque de lenguaje final (capa 63) ajustado a rango completo en FP32 y una cabeza de decisión de 255 vías también en FP32. Se han entrenado 373.560.832 parámetros (aproximadamente el 1,4 % de los 26,1 mil millones totales); no se emplean LoRA ni adaptadores PEFT, pero el autor aclara explícitamente que tampoco es un ajuste de todos los pesos del modelo. El contexto útil a través de la interfaz de decisión es de 8.192 tokens y la evaluación se ha hecho principalmente en inglés.
+El checkpoint completo tiene 26.085.330.160 parámetros (26,1B) y el repositorio ocupa 30,5 GB en safetensors. La interfaz de decisión incluida limita el contexto a 8.192 tokens y exige el SDK propietario `futurix_decision/`: `transformers.AutoModel` por sí solo no devuelve las probabilidades de decisión. El modelo está evaluado principalmente en inglés y se distribuye con licencia Apache 2.0.
 
-Su interés actual es que propone una interfaz autocontenida para enrutado, clasificación de intención, selección de herramientas y puntuación estructurada, con una puntuación pública de 62,26 en la suite pública Decision Index 0.3. El propio autor lo mantiene como experimental y desaconseja su uso en decisiones de alto riesgo sin evaluación específica y revisión humana.
+Su relevancia actual radica en que ofrece una alternativa especializada a los LLM generativos para tareas de decisión acotada, con una puntuación pública de 62,26 en el Decision Index 0.3 y un rendimiento destacado en la categoría de herramientas y automatización (79,68%). El widget de inferencia de Hugging Face está deshabilitado y el entrenamiento y las comprobaciones de benchmark fueron exclusivamente de texto.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Qwen3.8-27B) con atención completa no causal en las capas de atención completa, pooling de último token y cabeza de decisión de 255 vías |
-| Parámetros totales | 26.085.330.160 (26,1 B) |
-| Parámetros activos | No aplica: modelo denso, no es MoE |
-| Parámetros ajustados | 373.560.832 (bloque de texto final, capa 63, y readout de decisión, en FP32 a rango completo) |
-| Longitud de contexto | 8.192 tokens a través de la interfaz de decisión incluida, con error explícito si se supera (sin truncado silencioso) |
-| Opciones por pregunta | 2 a 255, mediante el SDK de decisión |
-| Tipos de cuantización | No disponible: solo se publica el checkpoint en BF16 con tensores de reemplazo en FP32; no hay GGUF, AWQ, GPTQ ni variantes cuantizadas |
-| Idiomas soportados | Inglés (evaluación principalmente en inglés) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (repositorio de 54,4 GB) más runtime propio `futurix_decision/` |
-| Temperatura de calibración | 1,00874176 (no reajustada en esta ejecución) |
-| Tipo de salida | Probabilidades calibradas por opción; decisiones `choice`, `noul` y `score` |
+| Arquitectura | Qwen3.8-27B (backbone multimodal, transformer con capas de atención completa no causal) |
+| Parametros totales | 26.085.330.160 (26,1B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 8.192 tokens a través de la interfaz de decisión incluida |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | inglés (evaluado principalmente en inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del backbone Qwen3.8-27B, que combina capas de atención completa con atención no causal y un codificador visual. Sobre ese backbone, Futurix-AI sustituye la parte final: el bloque de lenguaje 63 y una cabeza de decisión de 255 vías se reconstruyen en FP32 y se ajustan a rango completo, mientras el resto de bloques de lenguaje y todo el subsistema de visión permanecen congelados. La inferencia aplica una máscara de atención completa no causal y pooling sobre el último token para producir la distribución sobre las opciones, con una temperatura de calibración fija de 1,00874176.
+El modelo reutiliza el backbone multimodal Qwen3.8-27B con atención completa no causal en las capas de atención completa y pooling sobre el último token. La salida es una distribución de probabilidad calibrada sobre las opciones candidatas (entre 2 y 255 por pregunta), no texto generado. La estrategia de entrenamiento se inspira en Bosun, según indica la model card, y el modelo se presenta como un clasificador de decisiones entrenado sobre esa arquitectura.
 
-El ajuste se hizo con datos exclusivamente de entrenamiento: 3.000 filas de BANKING77 (PolyAI, CC BY 4.0), 1.118 filas de ARC-Challenge y 2.251 de ARC-Easy (AI2 ARC, CC BY-SA 4.0) y 3.000 filas sintéticas `yuri_v3` de SargeDev/jev-distill-corpus-v3 (Apache-2.0), lo que suma unas 9.369 muestras. La selección del checkpoint (selection step 192) se realizó con datos de desarrollo separados: 385 filas retenidas de BANKING77, 299 de validación de ARC-Challenge, 570 de validación de ARC-Easy y 512 filas sintéticas. No se documentan en la información disponible fases de RLHF o DPO, ni el desglose completo de tokens de entrenamiento del backbone original.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. Las comprobaciones de entrenamiento y benchmark fueron exclusivamente de texto; la precisión y seguridad con imágenes no se han evaluado de forma independiente. El SDK incluido soporta decisiones tipadas `choice`, `noul` y `score`, aplica el límite de 8.192 tokens sin truncamiento silencioso y admite entradas de imagen con un límite configurable de píxeles (`max_image_pixels`).
 
 ## Capacidades
 
-- Clasificación de decisión tipada: `choice` para elegir entre 2 y 255 opciones, `noul` para decisiones booleanas y `score` para puntuar en un rango `min_score`–`max_score`.
-- Salida de probabilidad calibrada por opción, lo que permite ranking de candidatos y umbrales de confianza en lugar de texto libre.
-- Soporte de descripciones de candidatos (`candidate_descriptions`) para desambiguar etiquetas cortas o ambiguas.
-- Entrada multimodal: el runtime admite imágenes con límite configurable (`max_image_pixels`, por ejemplo 512×512), aunque la precisión con imagen no se ha evaluado de forma independiente.
-- Contexto de 8.192 tokens con rechazo explícito de entradas más largas, útil en pipelines donde el truncado silencioso es inaceptable.
-- Enrutado y selección de herramientas: la model card cita `tool selection` y `routing` como usos previstos.
-- No incluye tool calling generativo, razonamiento multi-paso autónomo ni modo *thinking*: no emite llamadas a funciones ni cadenas de razonamiento, que deben orquestarse externamente.
-- Capacidades multilingües: no documentadas; solo se ha evaluado en inglés.
+- Clasificación de decisiones tipadas: `choice` (selección entre opciones), `noul` (decisión binaria sí/no) y `score` (puntuación en un rango definido).
+- Ranking y distribución de probabilidad calibrada sobre hasta 255 opciones candidatas.
+- Enrutamiento e identificación de intención a partir de un estado y una pregunta.
+- Selección de herramientas y soporte para automatización (categoría con mejor rendimiento en el Decision Index: 79,68%).
+- Procesamiento de entradas de imagen a través del runtime FxAI (aunque sin evaluación independiente de precisión).
+- Comprensión del lenguaje y recuperación/clasificación (67,43% y 61,20% respectivamente en el índice público).
+- No soporta generación libre de texto ni tool calling generativo: su salida es siempre una distribución sobre opciones predefinidas.
 
 ## Casos de uso
 
-- Enrutado de tickets a equipos: el ejemplo oficial usa un estado como "me han cobrado dos veces y necesito un reembolso" frente a las opciones *billing*, *support* y *sales*; el modelo devuelve la probabilidad de cada cola y permite fijar un umbral para escalar a revisión humana.
-- Clasificación de intención en banca: el ajuste con 3.000 filas de BANKING77 (77 intenciones) lo hace adecuado para etiquetar consultas de clientes dentro de un rango acotado de categorías conocidas.
-- Selección de herramienta en un agente: dado el estado de la conversación y la descripción de N herramientas disponibles, obtener la herramienta más probable y una puntuación de confianza antes de ejecutar la llamada.
-- Puntuación estructurada de calidad: la decisión `score` con rango 0–5 permite filtrar respuestas generadas por otro modelo en la construcción de datasets o en evaluación automática.
-- Verificación booleana en validación de datos: la decisión `noul` responde preguntas del tipo "¿está pagada esta factura?" sobre registros estructurados, con salida probabilística registrable.
-- Evaluación de opción múltiple: el ajuste con ARC-Challenge y ARC-Easy lo orienta a preguntas de ciencia con 4–5 alternativas, útil para *harness* internos de evaluación.
-- Triaje de documentos escaneados: el runtime acepta imágenes (por ejemplo, un justificante o una factura) y una pregunta de clasificación; requiere validación propia porque la precisión visual no está evaluada.
+- Enrutamiento de tickets de soporte: dado el texto de una incidencia y las opciones de equipo (facturación, soporte, ventas), el modelo devuelve la probabilidad de cada destino; encaja por su categoría de herramientas y automatización (79,68%) y su capacidad de clasificación multiopción.
+- Clasificación de intención en asistentes conversacionales: con un estado y una pregunta, se obtiene la intención más probable entre un conjunto acotado, gracias al soporte de 2 a 255 opciones por consulta.
+- Selección de herramientas en pipelines de agentes: el modelo puntúa qué herramienta o API debe invocarse a continuación, integrándose en flujos de automatización donde no se requiere generación de texto.
+- Puntuación estructurada de calidad: mediante el modo `score`, se evalúa la calidad de una respuesta en un rango definido (por ejemplo, 0 a 5), útil en sistemas de evaluación automática o moderación.
+- Decisiones binarias de verificación: el modo `noul` permite responder preguntas de sí/no sobre un estado (por ejemplo, si una factura está pagada), adecuado para validaciones en pipelines de datos.
+- Clasificación de documentos o consultas con contexto medio: con hasta 8.192 tokens de contexto, puede procesar conversaciones o documentos de longitud moderada para asignar categorías.
+- Enrutamiento multimodal incipiente: el runtime admite imágenes, aunque su precisión en esta modalidad no ha sido evaluada de forma independiente, por lo que su uso en producción con imágenes requiere validación propia.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Notas |
-|---|---|---|
-| Decision Index 0.3 (suite pública) | 62,26 | Puntuación pública declarada por el autor; no es el *Full score* privado ni un puesto en el *live board* |
-| MMLU, HumanEval, GSM8K y similares | No disponible | No se han publicado resultados de benchmarks en la información disponible |
+Resultados publicados en el Decision Index 0.3 (índice público de 62,26; 140.178 solicitudes puntuables sobre 43 benchmarks reportados, cero errores):
 
-No se han publicado resultados de benchmarks de latencia o throughput en la información disponible.
+| Resultado | FxAI-decision-model |
+|---|---:|
+| Índice público Decision Index | 62,26 |
+| Knowledge & Reasoning | 51,50% |
+| Language Understanding | 67,43% |
+| Retrieval & Classification | 61,20% |
+| Tools & Automation | 79,68% |
+| Arts & Human Taste | 47,01% |
+
+Comparativa publicada (instantánea del tablero del 20 de octubre de 2026, 14:13 UTC):
+
+| Modelo | Índice público | Knowledge | Language | Retrieval | Tools | Arts |
+|---|---:|---:|---:|---:|---:|---:|
+| **FxAI Decision Model** | **62,26** | **51,50** | **67,43** | **61,20** | **79,68** | **47,01** |
+| Darwin-27B-ZTC | 62,63 | 44,72 | 68,46 | 60,90 | 86,69 | 53,34 |
+| Sieve 31B | 62,52 | 49,91 | 65,59 | 69,55 | 78,72 | 43,50 |
+| Wald-26B-A4B | 62,30 | 44,71 | 64,25 | 69,05 | 83,28 | 50,86 |
+| OneJev1.6-4B | 61,95 | 45,00 | 64,40 | 68,92 | 81,50 | 49,75 |
+
+En un holdout independiente separado, la corrección esperada fue del 52,56% y la entropía cruzada con etiquetas suaves de 1,1454 (menor es mejor). En la ejecución secuencial de 9.192 solicitudes, la latencia mediana / media / p80 fue de 107,5 / 202,5 / 255,5 ms. Los tiempos del run completo son mediciones de throughput en lotes, no una latencia válida de una sola petición.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint ocupa unos 54,4 GB; solo los pesos en BF16 de los 26,1 B de parámetros suponen aproximadamente 52 GB. El autor recomienda un mínimo de 64 GiB de VRAM para entradas de texto cortas y 80–96 GiB para tener margen.
-- GPU recomendadas: A100 80 GB, H100 80 GB, H200 o GPUs con soporte de bfloat16 y 80 GB o más. No cabe en GPUs de consumo: una RTX 4090 con 24 GB no es viable, ni siquiera repartiendo el modelo, porque no se publican cuantizaciones.
-- Entorno: Linux, Python 3.12 y GPU NVIDIA CUDA con soporte de bfloat16. La inferencia en CPU está soportada técnicamente por el cargador incluido, pero el autor la describe como poco práctica.
-- Despliegue: el modelo no funciona con `transformers.AutoModel` ni con el widget de Hugging Face (deshabilitado, `inference: false`). Requiere clonar el repositorio con Git LFS e instalar el runtime `futurix_decision` incluido, que restaura los tensores FP32, la máscara no causal y el pooling de último token. No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama.
-- Latencia y throughput: no disponible.
+- VRAM estimada: el checkpoint ocupa aproximadamente 29 GB; se recomienda una GPU de 48 GB para entradas de hasta 8.192 tokens.
+- GPU recomendadas: NVIDIA con soporte de bfloat16; 48 GB de VRAM para contexto completo (por ejemplo, RTX PRO 6000, A6000, L40S; A100/H100 de 80 GB con holgura).
+- GPU de consumo: no cabe en GPUs de consumo típicas (8-24 GB) sin cuantización, y no se documentan tipos de cuantización disponibles.
+- Despliegue: exclusivamente mediante el SDK `futurix_decision/` incluido en el repositorio; `transformers.AutoModel` no devuelve las probabilidades de decisión. La inferencia en CPU es posible pero no práctica para un modelo de 27B.
+- Requisitos de entorno: Linux, Python 3.12 y CUDA con bfloat16.
+- Latencia: mediana de 107,5 ms, media de 202,5 ms y p80 de 255,5 ms en la ejecución secuencial de referencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Despliegue | Rendimiento |
+| Modelo | Parámetros | Contexto | Índice público | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FxAI Decision Model | 26,1 B totales; 373,6 M ajustados | 8.192 tokens | Apache-2.0 | safetensors + SDK propio `futurix_decision` | 62,26 en Decision Index 0.3 (suite pública) |
-| Qwen3.8-27B (backbone base citado por el autor) | 27 B (denominación del autor) | No disponible | No disponible | No disponible | No disponible |
-| Clasificador encoder supervisado (por ejemplo, ajuste de BERT o DeBERTa sobre BANKING77) | No disponible | No disponible | No disponible | No disponible | No disponible |
+| FxAI Decision Model | 26,1B | 8.192 tokens (interfaz de decisión) | 62,26 | Apache 2.0 | Hugging Face (pesos + SDK) |
+| Darwin-27B-ZTC | no disponible | no disponible | 62,63 | no disponible | tablero Decision Index |
+| Sieve 31B | 31B (según nombre) | no disponible | 62,52 | no disponible | tablero Decision Index |
+| Wald-26B-A4B | 26B (A4B, posible MoE) | no disponible | 62,30 | no disponible | tablero Decision Index |
+| OneJev1.6-4B | 4B (según nombre) | no disponible | 61,95 | no disponible | tablero Decision Index |
 
-No se dispone de datos de benchmarks comparables entre estas opciones en la información proporcionada. La diferencia funcional relevante es que FxAI devuelve una distribución calibrada sobre un conjunto dinámico de 2 a 255 opciones, mientras que un clasificador encoder requiere una cabeza con clases fijas y reentrenamiento para cambiar el conjunto de etiquetas.
+El modelo se sitúa en el rango medio-alto de los cuatro comparables publicados, con ventaja en Knowledge & Reasoning (51,50 frente a 44,71-49,91) pero por debajo en Tools & Automation (79,68 frente a 86,69 de Darwin-27B-ZTC) y en Retrieval & Classification (61,20 frente a 69,55 de Sieve 31B y 69,05 de Wald-26B-A4B).
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: el autor desaconseja explícitamente su uso en decisiones autónomas de alto riesgo, control de seguridad crítica, consejo médico o legal, o sin evaluación específica y revisión humana.
-- Solo inglés evaluado; no hay datos de rendimiento en castellano ni en otros idiomas.
-- Ventana de 8.192 tokens: insuficiente para documentos largos o historiales de conversación extensos.
-- No es un modelo generativo: no produce texto, no hace tool calling generativo y no razona en varios pasos por sí mismo.
-- Integración no estándar: `AutoModel` de transformers no devuelve probabilidades de decisión; es obligatorio usar el SDK incluido, lo que complica el despliegue en plataformas gestionadas.
-- Discrepancia entre la etiqueta de arquitectura del repositorio (`qwen3_5`) y el backbone citado en la model card (`Qwen/Qwen3.8-27B`); conviene verificar la correspondencia exacta antes de reutilizar el checkpoint.
-- La temperatura de calibración (1,00874176) no se reajustó para esta ejecución, por lo que la calibración observada puede no transferirse a dominios nuevos.
-- El subsistema de visión está presente pero congelado y sin evaluación independiente de precisión o seguridad.
-- El 62,26 corresponde a la suite pública Decision Index 0.3; no es un resultado privado ni un ranking en vivo. No hay resultados de MMLU, HumanEval, GSM8K ni de conjuntos estándar de clasificación.
-- Riesgo de alucinación acotado por el formato de salida, pero posible mala calibración fuera de distribución: una probabilidad alta no garantiza corrección.
-- No se documentan análisis de sesgo ni evaluaciones de robustez en la información disponible.
-- Licencia del modelo Apache-2.0 (permite uso comercial), pero los datos de entrenamiento incluyen ARC bajo CC BY-SA 4.0 y BANKING77 bajo CC BY 4.0: conviene revisar obligaciones de atribución y *share-alike* antes de un despliegue comercial.
-- Repositorio con 0 descargas y 0 *likes* en el momento de la consulta: sin validación externa de la comunidad.
+- No apto para decisiones autónomas de alto riesgo, control crítico de seguridad, consejo médico o legal, ni uso sin evaluación específica de la aplicación y revisión humana.
+- Riesgo de alucinación y calibración imperfecta: aunque devuelve probabilidades calibradas, la corrección esperada en el holdout independiente es del 52,56%, solo ligeramente por encima del azar en escenarios de dos opciones.
+- Idiomas: evaluado principalmente en inglés; no se documenta soporte multilingüe.
+- Contexto limitado a 8.192 tokens a través de la interfaz de decisión, con rechazo explícito (sin truncamiento silencioso) si se supera.
+- Precisión y seguridad con imágenes no evaluadas de forma independiente; el uso multimodal requiere validación propia.
+- Dependencia del SDK propietario incluido en el repositorio; no es compatible con el flujo estándar de `transformers` para obtener las probabilidades de decisión.
+- El widget de inferencia de Hugging Face está deshabilitado.
+- La licencia Apache 2.0 permite uso comercial, pero el autor restringe explícitamente los casos de alto riesgo indicados.
+- Las métricas de latencia del run completo son de throughput en lotes y no deben interpretarse como latencia de una sola petición.
 
 ## Enlaces
 
-- [Hugging Face: Futurix-AI/FxAI-decision-model](https://huggingface.co/Futurix-AI/FxAI-decision-model)
-- [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (backbone citado en la model card)
-- [BACKGROUND.md](https://huggingface.co/Futurix-AI/FxAI-decision-model/blob/main/BACKGROUND.md) (contexto de la release y atribuciones, referenciado en la model card)
-- [PolyAI-LDN/task-specific-datasets](https://github.com/PolyAI-LDN/task-specific-datasets) (origen de BANKING77, CC BY 4.0)
-- [allenai/ai2_arc](https://huggingface.co/datasets/allenai/ai2_arc) (ARC-Challenge y ARC-Easy, CC BY-SA 4.0)
-- [SargeDev/jev-distill-corpus-v3](https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3) (corpus sintético `yuri_v3`, Apache-2.0)
-
-La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: únicamente definiciones de diccionario del término inglés "practice", sin relación con FxAI Decision Model.
+- Modelo en Hugging Face: https://huggingface.co/Futurix-AI/FxAI-decision-model
+- Backbone base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Tablero Decision Index: https://huggingface.co/spaces/multimodalart/jev-decision-index
+- Resultados legibles por máquina: `BENCHMARKS.json` dentro del repositorio
+- SDK de decisión: directorio `futurix_decision/` dentro del repositorio

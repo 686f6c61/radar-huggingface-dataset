@@ -2,109 +2,92 @@
 
 ## Resumen
 
-Este repositorio contiene una variante cuantizada en formato GGUF del modelo base LiquidAI/LFM2.5-2.6B, publicada por el usuario DavidAU (David Belton), conocido por sus fusiones y ajustes finos de modelos abiertos. El nombre del repositorio (LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX) sigue la convención de nomenclatura habitual del autor para sus variantes modificadas, aunque en la informacion disponible no se documenta la composicion exacta de esa modificacion ni los datos de entrenamiento empleados.
+LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF es una cuantizacion GGUF del modelo LiquidAI/LFM2.5-2.6B, un transformer de 2.697.198.592 parametros (2,69B) desarrollado originalmente por LiquidAI para despliegue en el borde (edge). Sobre esa base, el usuario DavidAU ha anadido un sistema propietario denominado "Turbo Brilliance" que inyecta instrucciones de sistema en la fase previa al razonamiento, ofreciendo 12 modos de razonamiento y 12 modos de instruccion seleccionables en tiempo de ejecucion mediante etiquetas en el prompt, API o protocolos de palabras clave.
 
-El modelo subyacente, LFM2.5-2.6B, es un modelo denso de 2.697.198.592 parametros desarrollado por Liquid AI y disenado especificamente para cargas de trabajo agenticas en dispositivo (on-device), con una ventana de contexto de 128K tokens y soporte nativo de tool calling. Segun Liquid AI, el modelo es capaz de planificar, invocar herramientas y ejecutar tareas de multiples pasos a 220 tok/s con un consumo de memoria inferior a 2,5 GB, lo que lo situa en la categoria de modelos de borde (edge) para agentes locales.
+El modelo base es de proposito general, con entrenamiento para tool calling y comportamiento agentico, y soporta 16 idiomas (arabe, chino, ingles, frances, alemán, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita). La ventana de contexto maxima declarada es de 128k tokens (131.000), aunque el autor recomienda un minimo de 24k para el uso de los modos Turbo Brilliance.
 
-La relevancia de esta publicacion concreta es que ofrece el modelo en cuantizaciones GGUF optimizadas con imatrix, lo que facilita su despliegue en hardware de consumo y en entornos sin GPU dedicada mediante llama.cpp u Ollama. El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
+La relevancia de esta publicacion radica en dos factores: por un lado, demuestra una tecnica de "prompt priming" masivo (inyeccion de cientos a miles de tokens en milisegundos antes de la generacion) aplicada a un modelo pequeno; por otro, el repositorio incluye cuantizaciones "MAX" en las que el tensor de salida (10-20% del modelo) se mantiene en BF16, lo que segun el autor mejora notablemente el rendimiento de los modos de razonamiento mas complejos. La licencia es Apache 2.0 y el repositorio ocupa 38,7 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo denso (familia LFM2.5 de Liquid AI); composicion interna de bloques no disponible |
-| Parametros totales | 2.697.198.592 (2,7B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 128K tokens (segun documentacion del modelo base LFM2.5-2.6B) |
-| Tipos de cuantizacion | GGUF con imatrix; cuantizaciones concretas del repo no disponibles |
-| Idiomas soportados | Arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita (16 idiomas) |
+| Arquitectura | Transformer (modelo base LiquidAI/LFM2.5), con sistema de inyeccion de instrucciones Turbo Brilliance |
+| Parametros totales | 2.697.198.592 (2,69B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 128k / 131.000 tokens (maximo); minimo recomendado de 24.000 tokens |
+| Tipos de cuantizacion | GGUF en varios niveles, incluyendo "MAX" (tensor de salida en BF16) y BF16 completo |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (16 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo de 8,8 GB) |
-| Modelo base | LiquidAI/LFM2.5-2.6B |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Publicacion | Creado el 17 de septiembre de 2026; actualizado el 24 de septiembre de 2026 |
-| Descargas / likes | 4 descargas / 33 likes |
+| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la familia LFM2.5 de Liquid AI y se describe en su documentacion como un modelo denso de 2,6B parametros orientado a cargas agenticas, con contexto nativo de 128K tokens y tool calling integrado. Liquid AI lo presenta como un modelo de borde capaz de ejecutarse en menos de 2,5 GB de memoria, lo que implica un diseno optimizado para inferencia en dispositivos con recursos limitados (moviles, portatiles, equipos sin GPU dedicada).
+El modelo base LiquidAI/LFM2.5-2.6B es un transformer de 2,69B parametros orientado a despliegue en dispositivos de borde. La model card no detalla la composicion del dataset de entrenamiento, el numero de tokens ni si se aplicaron tecnicas de RLHF o DPO; esa informacion corresponde a la model card original de LiquidAI, que el autor cita pero no reproduce en detalle. El modelo base incluye entrenamiento especifico para tool calling y capacidades agenticas.
 
-Respecto a esta publicacion concreta de DavidAU, la informacion disponible no especifica el proceso de ajuste o fusion aplicado sobre el modelo base, ni el volumen o la composicion del dataset utilizado, ni si se emplearon tecnicas de RLHF, DPO u otras. Tampoco se documentan innovaciones tecnicas anadidas por encima de las del modelo base. El tag `imatrix` indica que las cuantizaciones GGUF se generaron utilizando una matriz de importancia (importance matrix) para reducir la perdida de calidad en precisiones bajas, una practica habitual en el ecosistema llama.cpp.
+La innovacion principal de esta publicacion no esta en los pesos del transformer, sino en el sistema Turbo Brilliance: un mecanismo que inyecta entre cientos y miles de tokens de instrucciones directamente en el modelo en la fase previa al razonamiento, en milisegundos. Segun el autor, esto reduce el tiempo que el modelo dedica a "descifrar" la tarea y aumenta la calidad de la primera o segunda generacion, evitando regeneraciones multiples. El sistema anade 12 modos de razonamiento y 12 modos de instruccion (el modelo base no tenia un modo instruct nativo) y un sistema de ayuda interactiva integrado en el modelo que sugiere el modo adecuado para cada caso de uso. Los modos se activan mediante etiquetas en el prompt, llamadas API o cambios de palabras clave compatibles con vLLM. El rendimiento de estos modos depende directamente del nivel de cuantizacion: el autor afirma que Q6 es aproximadamente el doble de potente que Q4/IQ4, y Q8 entre 1,5 y 2 veces mas que Q6.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el repositorio incluye el tag `conversational` y esta orientado a generacion de texto.
-- Flujos agenticos y multi-step reasoning: segun Liquid AI, el modelo base planifica, invoca herramientas y ejecuta tareas de multiples pasos.
-- Tool calling / function calling nativo en el modelo base LFM2.5-2.6B.
-- Capacidades multilingues en 16 idiomas: arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita.
-- Contexto largo: ventana de 128K tokens en el modelo base.
-- Inferencia en dispositivo: disenado para ejecutarse con menos de 2,5 GB de memoria en el modelo base.
-- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`.
-- No se documentan capacidades de vision, audio ni modo de razonamiento explicito (thinking mode) en la informacion disponible.
+- Generacion de texto de proposito general en 16 idiomas.
+- Razonamiento en multiples pasos mediante 12 modos de razonamiento seleccionables en tiempo de ejecucion.
+- 12 modos de instruccion anadidos sobre el modelo base, que carecia de modo instruct nativo.
+- Tool calling y function calling, heredados del entrenamiento del modelo base.
+- Comportamiento agentico y entrenamiento especifico para agentes.
+- Sistema de ayuda interactiva integrado que sugiere el modo de razonamiento o instruccion mas adecuado para cada caso de uso.
+- Control de longitud de salida: el modelo obedece instrucciones explicitas sobre la extension de la respuesta (rango tipico de 2k a 12k+ tokens segun el modo).
+- Capacidades multilingues en arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita.
+- Compatibilidad con endpoints estandar (tag `endpoints_compatible`).
 
 ## Casos de uso
 
-- Agentes locales en dispositivo: el modelo puede ejecutarse en portatiles o equipos de borde con menos de 2,5 GB de memoria (segun datos del base) e invocar herramientas para tareas como consultar APIs, leer ficheros o rellenar formularios, sin enviar datos a la nube.
-- Asistentes de atencion al cliente multi-turno: con 128K tokens de contexto puede mantener conversaciones largas con historial extenso y documentacion de producto inyectada en el prompt.
-- Automatizacion de tareas ofimaticas: generacion y resumen de correos, extraccion de datos de documentos largos y clasificacion de tickets, aprovechando el contexto extendido y el bajo coste de inferencia de un modelo de 2,7B.
-- Chatbot multilingue para producto global: los 16 idiomas soportados permiten desplegar una unica instancia para mercados europeos, latinoamericanos y asiaticos, reduciendo el coste frente a modelos mayores.
-- Prototipado rapido de pipelines de agentes: al estar en GGUF, se integra en llama.cpp u Ollama, lo que permite validar flujos de tool calling en local antes de escalar a un modelo mayor.
-- Generacion asistida de codigo y scripts: util para autocompletado ligero o generacion de fragmentos pequeños en entornos de desarrollo con recursos limitados, aunque no se han publicado benchmarks de codigo para esta variante.
-- Procesamiento de documentos extensos en local: informes, contratos o transcripciones que quepan en la ventana de 128K tokens y deban tratarse sin salir del equipo por motivos de privacidad.
-- Sistemas de respuesta con baja latencia: el modelo base reporta 220 tok/s, adecuado para interfaces conversacionales que requieren streaming fluido en hardware modesto.
+- Razonamiento especializado en el borde: con 2,69B parametros y cuantizaciones GGUF, el modelo puede ejecutarse en dispositivos con recursos limitados; los 12 modos de razonamiento permiten ajustar la profundidad del analisis segun la tarea sin cambiar de modelo.
+- Asistentes conversacionales multi-turno: con una ventana de hasta 128k tokens (y un minimo recomendado de 24k para conversaciones multiples), el modelo mantiene contexto extenso en dialogos largos.
+- Automatizacion de agentes con tool calling: el entrenamiento agentico del modelo base permite integrarlo en pipelines que requieren invocar funciones externas, APIs o herramientas, con modos de instruccion que fuerzan un formato de salida concreto.
+- Generacion de codigo asistida: los modos de razonamiento permiten al modelo explicar y descomponer problemas de programacion antes de emitir codigo, lo que resulta util en tareas de depuracion o generacion de fragmentos complejos.
+- Procesamiento multilingue: la cobertura de 16 idiomas permite usarlo en atencion al cliente o traduccion automatica sin necesidad de modelos especificos por idioma.
+- Despliegue en entornos con GPU de consumo: las cuantizaciones GGUF de un modelo de 2,69B caben en GPUs consumer, lo que facilita prototipado local y pruebas de concepto sin infraestructura dedicada.
+- Experimentacion con prompt priming: el sistema Turbo Brilliance sirve como banco de pruebas para investigar el efecto de la inyeccion masiva de instrucciones en la fase previa a la generacion sobre la calidad y la latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta variante concreta de DavidAU. El unico dato de rendimiento publicado corresponde al modelo base LFM2.5-2.6B segun Liquid AI:
-
-| Metrica | Valor | Fuente |
-|---|---|---|
-| Velocidad de generacion | 220 tok/s | Blog de Liquid AI (modelo base LFM2.5-2.6B) |
-| Huella de memoria | Menos de 2,5 GB | Blog de Liquid AI (modelo base LFM2.5-2.6B) |
-| MMLU, HumanEval, GSM8K y otros | No disponible | No publicados en la informacion proporcionada |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a la model card original de LiquidAI para los benchmarks del modelo base, pero no incluye cifras propias del sistema Turbo Brilliance ni comparaciones cuantitativas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de los 2,697B parametros; valores orientativos, no confirmados para este repo):
-  - F16: aproximadamente 5,4 GB
-  - Q8_0: aproximadamente 2,9 GB
-  - Q6_K: aproximadamente 2,2 GB
-  - Q5_K_M: aproximadamente 1,9 GB
-  - Q4_K_M: aproximadamente 1,7 GB
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en cuantizaciones Q4/Q5 (por ejemplo, RTX 3050, RTX 3060, RTX 4060, RTX 4090). El modelo es pequeno incluso para GPU de gama baja; en A100 o H100 queda muy sobredimensionado para uso individual y solo tendria sentido en despliegues con muchas peticiones concurrentes.
-- Cabe en GPU de consumo: si. En cuantizacion Q4_K_M cabria incluso en GPUs de 4 GB y en iGPU con memoria unificada; el modelo base se describe como apto para ejecucion en dispositivo por debajo de 2,5 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y otros runtimes compatibles con GGUF. Para el modelo base en safetensors, vLLM o TGI con el formato original.
-- Latencia y throughput: el modelo base reporta 220 tok/s y menos de 2,5 GB de memoria (Liquid AI). No hay mediciones publicadas para esta cuantizacion GGUF concreta ni para hardware especifico.
+- VRAM estimada: no disponible de forma exacta en la informacion proporcionada. Como referencia orientativa, un modelo de 2,69B parametros en cuantizacion Q4 ocupa aproximadamente 1,5-2 GB, en Q8 alrededor de 3 GB y en BF16 unos 5,4 GB; estas cifras son estimaciones genericas y no aparecen en la model card.
+- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, el modelo es apto para GPUs de consumo como RTX 3060, RTX 4060, RTX 4070 o superiores, asi como para A100/H100 en despliegues de mayor concurrencia.
+- Cabe en GPU consumer: si, por el tamano del modelo (2,69B) y las cuantizaciones GGUF disponibles.
+- Opciones de despliegue: llama.cpp, Ollama y vLLM (el autor menciona compatibilidad con protocolos de palabras clave de vLLM). El tag `endpoints_compatible` sugiere integracion con endpoints estandar.
+- Latencia y throughput: no disponibles en la informacion proporcionada. El autor afirma que la inyeccion de instrucciones Turbo Brilliance se produce en milisegundos y que el modelo "arranca" con poco o ningun tiempo de calentamiento, pero no aporta cifras de latencia ni tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DavidAU/LFM2.5-2.6B-...NEO-MAX (este) | 2,7B | 128K | Apache 2.0 | GGUF | Variante cuantizada con imatrix; acceso restringido; benchmarks no disponibles |
-| LiquidAI/LFM2.5-2.6B (base) | 2,6B | 128K | Apache 2.0 | Safetensors (original) | Tool calling nativo, 220 tok/s, menos de 2,5 GB segun Liquid AI |
-| Qwen2.5-3B-Instruct | 3,1B | No disponible en la informacion proporcionada | Apache 2.0 | Safetensors, GGUF | Alternativa habitual en la misma franja de tamano; datos de rendimiento comparativos no disponibles |
-| Llama-3.2-3B-Instruct | 3,2B | No disponible en la informacion proporcionada | Licencia comunitaria de Llama 3.2 | Safetensors, GGUF | Alternativa de tamano similar; datos de rendimiento comparativos y terminos de licencia no verificados en la informacion proporcionada |
+| LFM2.5-2.6B (Turbo Brilliance, esta ficha) | 2,69B | 128k | Apache 2.0 | GGUF | 12+12 modos de razonamiento/instruccion, tool calling, 16 idiomas |
+| LiquidAI/LFM2.5-2.6B (base) | 2,69B | no disponible | Apache 2.0 | safetensors | Modelo original sin modos Turbo Brilliance ni modo instruct nativo |
+| Qwen3.8-27B-Turbo-Brilliance-50X (mismo autor) | 27B | no disponible | no disponible | GGUF | Version superior del mismo sistema Turbo Brilliance, con 15 constructos de IA |
 
-No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de rendimiento entre estas opciones.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros, contexto, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Modelo de 2,7B parametros: la capacidad de razonamiento complejo, matematicas avanzadas y conocimiento factual es inherentemente limitada frente a modelos de mayor tamano; no se han publicado benchmarks que permitan acotar esa brecha.
-- Riesgo de alucinacion: no se documentan evaluaciones de veracidad ni tasas de alucinacion para esta variante.
-- Composicion de la variante no documentada: no se especifica que ajuste, fusion o datos adicionales ha aplicado DavidAU sobre el modelo base, lo que dificulta auditar el comportamiento real del modelo.
-- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar, lo que puede complicar la automatizacion de pipelines y el uso en entornos de CI.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene verificar si la variante derivada mantiene condiciones adicionales; la informacion disponible indica Apache 2.0 para este repositorio.
-- Idiomas: aunque se declaran 16 idiomas, no se publican datos de calidad por idioma; el rendimiento en idiomas distintos del ingles puede degradarse de forma desigual.
-- Contexto: los 128K tokens corresponden al modelo base, pero no se confirma que la variante GGUF conserve esa ventana completa ni como se comporta en precisiones bajas.
-- Uso en produccion: al tratarse de una publicacion con 4 descargas y sin benchmarks, se recomienda validacion propia antes de integrarla en sistemas criticos.
-- El nombre del repositorio referencia "Qwen3.8", termino que no aparece en la documentacion del modelo base LFM2.5-2.6B; la relacion real entre ambos no esta documentada en la informacion disponible.
+- El sistema Turbo Brilliance es una version BETA V1.0; el autor solicita reportar fallos en la pestana de comunidad.
+- El rendimiento de los modos de razonamiento depende criticamente de la cuantizacion: cuantizaciones bajas (Q4/IQ4) degradan notablemente los modos mas complejos.
+- El autor advierte que los parametros del modelo condicionan la potencia del sistema; en un modelo de 2,69B los resultados seran inferiores a los de versiones de 9B o 27B del mismo sistema.
+- La model card no documenta sesgos conocidos ni tasas de alucinacion; al ser un modelo pequeno, el riesgo de alucinacion en tareas de conocimiento factual es inherentemente mayor que en modelos de mayor tamano.
+- El contexto maximo es de 128k tokens, pero el autor recomienda no bajar de 24k para el uso de los modos Turbo Brilliance y fijar el contexto al maximo para conversaciones multi-turno.
+- Ajustes recomendados por el autor: temperatura 0,5-1, repetition penalty desactivada, TopK 64, min_p 0,05, top_p 0,95, sin caching. Los ajustes sugeridos por LiquidAI difieren (temperatura 0,1, top_k 50, repetition penalty 1,1).
+- La licencia Apache 2.0 permite uso comercial, pero el sistema Turbo Brilliance es una modificacion del autor sobre el modelo base; conviene verificar la procedencia y los terminos de los pesos cuantizados antes de un despliegue en produccion.
+- No hay datos publicos de benchmarks que respalden las afirmaciones de mejora de calidad del sistema Turbo Brilliance.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
-- Documentacion de Liquid AI sobre LFM2.5-2.6B: https://docs.liquid.ai/lfm/models/lfm25-2.6b
-- Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b
-- Perfil del autor en Hugging Face: https://huggingface.co/DavidAU
-- Ficha de otro modelo del autor (referencia de su linea de publicaciones): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
-- Ficha en Interfaze.ai del modelo anterior: https://interfaze.ai/models/davidauqwen38-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf
+- Version superior del sistema Turbo Brilliance (27B): https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Preguntas frecuentes del autor: https://huggingface.co/DavidAU/support
+- Paper referenciado (arxiv:2511.23404): https://arxiv.org/abs/2511.23404

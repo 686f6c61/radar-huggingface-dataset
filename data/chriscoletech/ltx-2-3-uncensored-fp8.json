@@ -25,8 +25,8 @@
     "license:unknown",
     "region:us"
   ],
-  "likes": 363,
-  "downloads_30d": 90508,
+  "likes": 366,
+  "downloads_30d": 93766,
   "trending_score": 0,
   "parameters": 21005004544,
   "parameters_human": "21.01B",
@@ -46,31 +46,5 @@
   "renamed_to": "ChrisColeTech/LTX-2.3-uncensored-v1.4-FP8",
   "renamed_at": "2026-11-11T02:30:17.003Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ChrisColeTech/LTX-2.3-uncensored-fp8 · Hugging Face",
-      "url": "https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ChrisColeTech/LTX-2.3-uncensored-fp8 at main - Hugging Face",
-      "url": "https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8/tree/main",
-      "snippet": "ChrisColeTech / LTX-2.3-uncensored-fp8 like 2 Text-to-Video GGUF image-to-video quantized ltx-video distilled imatrix conversational License:unknown Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "LTX 2.3 NSFW: Uncensored Fast Video Generation, Now on Siray",
-      "url": "https://blog.siray.ai/ltx-2-3-nsfw/",
-      "snippet": "Generate uncensored AI video with LTX 2.3, Lightricks&#x27; 22B open-source model with native 4K, synced audio, and 8-step fast generation. Available now on Siray."
-    },
-    {
-      "title": "LTX-2.3: Previous Generation AI Video Model | LTX",
-      "url": "https://ltx.io/model/ltx-2-3",
-      "snippet": "LTX-2.3 is the previous LTX release. Open weights, synchronized audio, and native portrait video. Still fully supported. LTX-2.5 is the current model."
-    },
-    {
-      "title": "GitHub - minflamingo/ltx-2.3-uc",
-      "url": "https://github.com/minflamingo/ltx-2.3-uc",
-      "snippet": "Reproducible ComfyUI workflows for running ChrisColeTech/LTX-2.3-uncensored-fp8 on a single 32 GB GPU. The repository contains workflows and orchestration code only; it does not contain model weights, reference photos, generated videos, credentials, or Hugging Face tokens."
-    }
-  ]
+  "sources": []
 }

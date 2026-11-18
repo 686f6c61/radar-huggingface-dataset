@@ -24,9 +24,9 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 3145,
+  "likes": 3146,
   "downloads_30d": 3945856,
-  "trending_score": 30,
+  "trending_score": 27,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
   "storage_bytes": 71921347477,
@@ -45,5 +45,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen combines chain-of-thought reasoning with creative idea generation to craft narratives, develop characters, and explore plots …"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large …"
+    }
+  ]
 }

@@ -2,102 +2,89 @@
 
 ## Resumen
 
-Ideogram4 es un repositorio publicado por el desarrollador DeepBeepMeep en Hugging Face que contiene los pesos del modelo de generacion de imagenes Ideogram 4 en un formato de archivo unico, pensado para ser usado con WanGP (Wan2GP), la interfaz de generacion de imagen y video del mismo autor. El repositorio declara como modelo base ideogram-ai/ideogram-4-fp8 y esta etiquetado como finetune de ese modelo, con la libreria diffusion-single-file. El tamano total del repositorio es de 69,4 GB, lo que es coherente con pesos de difusion de imagen en precision alta.
+Ideogram4 es un repositorio de pesos en formato de archivo único para los modelos de generación de imágenes Ideogram 4, publicado por DeepBeepMeep bajo el identificador `DeepBeepMeep/Ideogram4`. No se trata de un modelo entrenado desde cero por este autor, sino de una redistribución adaptada de los pesos originales de `ideogram-ai/ideogram-4-fp8`, empaquetados en el formato `diffusion-single-file` que consume la herramienta WanGP (Wan2GP) del mismo autor. El repositorio acumula 42.554 descargas y un tamaño de 70,5 GB, lo que refleja un uso orientado a la inferencia práctica más que a la investigación sobre el entrenamiento.
 
-La relevancia de esta publicacion no esta en un nuevo entrenamiento, sino en el empaquetado: WanGP esta disenado para ejecutar modelos generativos grandes en GPUs con poca VRAM (el autor afirma que 6 GB pueden ser suficientes para ciertos modelos) y con soporte para GPUs antiguas de las series RTX 10XX y 20XX. Esto convierte a este repositorio en una via de acceso practica a Ideogram 4 para equipos sin hardware de datacenter.
+El propósito del repositorio es facilitar la ejecución de Ideogram 4 en hardware modesto. WanGP, la aplicación que lo acompaña, está diseñada explícitamente para "GPU poor": soporta GPUs antiguas (series RTX 10XX y 20XX) y requiere tan solo 6 GB de VRAM para determinados modelos, además de ofrecer una interfaz web completa, descarga automática de pesos según la arquitectura del usuario, soporte de LoRAs y un sistema de colas de generación.
 
-La informacion publicada es muy escasa: la model card se limita a describir las capacidades de WanGP y no documenta parametros, arquitectura interna, datos de entrenamiento, licencia ni idiomas. Ademas, la busqueda web realizada no devolvio ningun resultado relevante sobre el modelo (unicamente enlaces genericos a Instagram), por lo que buena parte de los campos de esta ficha figuran como no disponibles.
+La relevancia actual del repositorio reside en que democratiza el acceso a un modelo de difusión de generación de imágenes de gama alta (Ideogram 4) mediante un formato de archivo único y una herramienta de inferencia optimizada. No obstante, la información pública disponible es muy limitada: la model card no documenta arquitectura, número de parámetros, licencia ni idiomas, y no se han publicado resultados de benchmarks en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | difusion (generacion de imagen); arquitectura interna no disponible |
+| Arquitectura | difusión (modelo de generación de imágenes); detalles no disponibles |
 | Parametros totales | no disponible |
-| Parametros activos | no aplicable (no se ha documentado que sea MoE) |
-| Longitud de contexto | no aplicable (modelo de difusion de imagen); no disponible |
-| Tipos de cuantizacion | no disponible; el modelo base declarado es una variante fp8 |
+| Parametros activos | no aplica (no consta que sea MoE) |
+| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
+| Tipos de cuantizacion | pesos base en FP8 (según `ideogram-ai/ideogram-4-fp8`); el repositorio distribuye archivos únicos, variantes adicionales no disponibles |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | archivo unico de difusion (libreria diffusion-single-file); extension concreta no disponible |
-| Desarrollador | DeepBeepMeep |
-| Modelo base | ideogram-ai/ideogram-4-fp8 |
-| Relacion con el modelo base | finetune |
-| Tamano del repositorio | 69,4 GB |
-| Descargas | 0 |
-| Likes | 2 |
-| Fecha de creacion | 2026-06-04 |
-| Ultima actualizacion | 2026-09-20 |
+| Formato de pesos | diffusion-single-file (archivos únicos para WanGP); no se indica safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna del modelo en el repositorio. Por la etiqueta de Hugging Face (diffusion-single-file) y por el modelo base declarado (ideogram-ai/ideogram-4-fp8), se trata de un modelo de difusion para generacion de imagenes distribuido como archivo unico, derivado mediante finetune de la variante en fp8 de Ideogram 4. El repositorio no incluye detalles sobre el tipo de backbone, el schedule de difusion, el uso de text encoder o VAE, ni sobre el numero de parametros.
+La información disponible no detalla la arquitectura interna del modelo. Por el identificador del modelo base (`ideogram-ai/ideogram-4-fp8`) y por la etiqueta `diffusion-single-file`, se trata de un modelo de difusión para generación de imágenes cuyos pesos se distribuyen en precisión FP8 y se reempaquetan en archivos únicos compatibles con WanGP. No se especifican el tipo de backbone (UNet, transformer de difusión o híbrido), el número de parámetros, el volumen de datos de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-Tampoco se documentan los datos de entrenamiento: no se indica el numero de tokens o pares imagen-texto utilizados, la composicion del dataset, ni si hubo etapas de ajuste por preferencias humanas (RLHF, DPO) o de alineacion. No se describe ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, destilacion de pasos, etc.) en la model card proporcionada. La unica informacion operativa es que los pesos estan adaptados para su uso con WanGP.
+Respecto a innovaciones técnicas, lo único documentado es el propio formato de empaquetado y la integración con WanGP: descarga automática de los pesos adaptada a la arquitectura del usuario, soporte de LoRAs para personalizar el modelo, editor de máscaras, potenciador de prompts y generación temporal y espacial. No se dispone de información sobre decodificación especulativa, atención lineal ni otras optimizaciones internas del modelo.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto: es la funcion implicita del modelo, dado que se distribuye como modelo de difusion derivado de Ideogram 4.
-- Integracion con WanGP: el repositorio esta pensado para cargarse desde esta interfaz, que ofrece descarga automatica del modelo adaptado a la arquitectura de la GPU del usuario.
-- Flujos de imagen a video: WanGP soporta generacion temporal y espacial, de modo que los pesos pueden emplearse como etapa de generacion de fotograma inicial o de imagen de referencia en pipelines de video.
-- Editor de mascaras: la interfaz de WanGP incluye un editor de mascaras, lo que habilita edicion localizada sobre imagenes generadas.
-- Prompt enhancer: WanGP incorpora herramientas de mejora de prompt integradas.
-- Soporte de LoRAs: la interfaz permite aplicar LoRAs para personalizar el modelo.
-- Sistema de cola de trabajos: permite encolar multiples generaciones y recuperarlas despues.
-- Soporte de texto en imagen, tool calling, agentes, razonamiento multistep, modo thinking, audio y capacidades multilingues: no disponible en la informacion proporcionada (no son capacidades esperables en un modelo de difusion de imagen, pero no se confirman ni se descartan por escrito).
+- Generación de imágenes a partir de prompts de texto, heredada del modelo base Ideogram 4.
+- Personalización mediante LoRAs, según la model card de WanGP.
+- Potenciación de prompts (prompt enhancer) integrada en la interfaz de WanGP.
+- Edición con máscaras (mask editor) para generación espacial o inpainting, según las herramientas descritas.
+- Generación temporal y espacial, orientada a la integración con flujos de vídeo de WanGP.
+- Ejecución en GPUs antiguas y de baja VRAM (desde 6 GB en ciertos modelos del ecosistema WanGP).
+- Soporte de tool calling, agentes, razonamiento, código, matemáticas, visión o audio: no disponible (es un modelo de generación de imágenes).
 
 ## Casos de uso
 
-- Generacion de imagenes para publicaciones de blog y documentacion tecnica: el modelo puede producir ilustraciones a partir de descripciones textuales desde la interfaz de WanGP, sin necesidad de contratar un servicio de generacion en la nube.
-- Creacion de material grafico para marketing y redes: encolado de lotes de imagenes con el sistema de cola de WanGP, util para producir variaciones de un mismo concepto en una sola sesion.
-- Prototipado visual en desarrollo de producto: generacion rapida de mockups y conceptos de interfaz o de packaging antes de pasar a diseno final.
-- Edicion localizada de imagenes: uso del editor de mascaras de WanGP para retocar regiones concretas sin regenerar la imagen completa, adecuado cuando ya se ha validado una composicion.
-- Personalizacion de estilo mediante LoRA: entrenamiento o aplicacion de LoRAs para fijar una identidad visual de marca y reutilizarla en toda la produccion grafica.
-- Generacion de imagenes base para pipelines de video: los fotogramas generados pueden alimentar los modelos de video que WanGP ya soporta (Wan y derivados, Hunyuan Video, LTX Video), reduciendo el coste de disenar la escena inicial.
-- Ejecucion en hardware de gama baja o antiguo: equipos con GPUs de las series RTX 10XX o 20XX pueden generar imagenes con este repositorio, algo inviable con muchos modelos de difusion de gran tamano.
-- Creacion de datasets sinteticos de imagenes: generacion controlada de imagenes etiquetadas por prompt para aumentar datos de entrenamiento en proyectos de vision por computador, siempre que la licencia del modelo lo permita.
+- Generación de ilustraciones para blogs y documentación técnica: el modelo produce imágenes a partir de prompts de texto y puede ejecutarse en una estación de trabajo con GPU de consumo, lo que permite iterar sobre ilustraciones sin depender de servicios en la nube.
+- Prototipado de conceptos visuales en estudios pequeños: con soporte de LoRAs y editor de máscaras, un equipo puede entrenar estilos propios y reutilizarlos en distintas composiciones sin infraestructura dedicada.
+- Creación de material gráfico para redes sociales: la interfaz web de WanGP y el sistema de colas permiten lanzar lotes de imágenes y recogerlos después, adecuado para flujos de producción por lotes.
+- Integración en pipelines de vídeo: WanGP soporta modelos de vídeo como Wan, Hunyuan Video o LTX Video, y la generación temporal y espacial permite usar Ideogram 4 como fuente de fotogramas o elementos dentro de esos flujos.
+- Experimentación académica con modelos de difusión: el formato de archivo único y la compatibilidad con GPUs de gama baja facilitan reproducir experimentos en laboratorios con recursos limitados.
+- Despliegue en entornos con GPUs heredadas: al soportar tarjetas RTX 10XX y 20XX y requerir desde 6 GB de VRAM en ciertos modelos, permite reutilizar hardware antiguo para tareas de generación de imágenes en pequeñas empresas.
+- Generación asistida con mejora de prompts: el potenciador de prompts integrado ayuda a usuarios con poca experiencia en ingeniería de prompts a obtener resultados utilizables sin ajustar manualmente el texto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye metricas objetivas (FID, CLIP score, evaluaciones de fidelidad de texto en imagen, etc.) ni comparaciones cuantitativas con otros modelos de difusion.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma especifica para este modelo. El autor de WanGP afirma que ciertos modelos soportados funcionan con tan solo 6 GB de VRAM; no se confirma que Ideogram 4 sea uno de ellos, dado que el repositorio ocupa 69,4 GB en disco.
-- GPUs recomendadas: no disponible. WanGP declara compatibilidad con GPUs antiguas (series RTX 10XX y 20XX) y un rendimiento muy alto en las GPUs mas recientes, pero no se publican modelos concretos ni cifras por GPU.
-- Viabilidad en GPU de consumo: no confirmada para este modelo concreto. La arquitectura de WanGP esta disenada para reducir requisitos de VRAM, pero el tamano del repositorio sugiere que se necesitara almacenamiento abundante y posiblemente offloading a RAM o disco.
-- Opciones de despliegue: WanGP (interfaz web oficial, https://github.com/deepbeepmeep/Wan2GP). No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni otros servidores de inferencia, que ademas no son aplicables a modelos de difusion de imagen.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma específica para Ideogram 4; WanGP declara que ciertos modelos del ecosistema funcionan con tan solo 6 GB de VRAM.
+- GPUs recomendadas: no disponible; WanGP menciona soporte para RTX 10XX y 20XX (antiguas) y un rendimiento "muy rápido" en GPUs recientes, sin modelos concretos.
+- Compatibilidad con GPU de consumo: sí, según el enfoque de WanGP en hardware modesto; no se detallan modelos exactos.
+- Opciones de despliegue: WanGP (interfaz web completa, descarga automática de pesos, colas, LoRAs). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusión de imagen.
+- Latencia y throughput: no disponibles.
+- Tamaño del repositorio: 70,5 GB, relevante para el espacio en disco necesario.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de parametros, contexto, rendimiento ni licencia de este repositorio, por lo que no es posible establecer una comparativa cuantitativa fiable. La model card de WanGP menciona otros modelos que la propia interfaz soporta y que ocuparian la misma categoria de uso (generacion de imagen y video en GPU de gama baja): Wan y modelos derivados, Hunyuan Video, Minimax H3, Krea-2, Flux 1 y 2, Qwen, Z-Image y LTX-2 y LTX Video.
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| DeepBeepMeep/Ideogram4 | no disponible | no aplica | no disponible | no disponible | Hugging Face, 42.554 descargas |
+| ideogram-ai/ideogram-4-fp8 (modelo base) | no disponible | no aplica | no disponible | no disponible | Hugging Face (referenciado como base) |
+| Otros modelos del ecosistema WanGP (Wan, Hunyuan Video, Flux 1 y 2, Qwen, Z-Image, LTX) | no disponible | no aplica | no disponible | no disponible | Soportados por WanGP |
 
-| Modelo | Parametros | Contexto | Licencia | Datos comparativos |
-|---|---|---|---|---|
-| DeepBeepMeep/Ideogram4 | no disponible | no aplicable | no disponible | no disponible |
-| Flux 1 / Flux 2 | no disponible | no aplicable | no disponible | no disponible |
-| Qwen (imagen) | no disponible | no aplicable | no disponible | no disponible |
-| Z-Image | no disponible | no aplicable | no disponible | no disponible |
+No se dispone de datos de parámetros, contexto ni rendimiento de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: la model card no describe arquitectura, parametros, datos de entrenamiento ni proceso de ajuste, lo que impide evaluar el modelo con criterios reproducibles.
-- Licencia no especificada: el repositorio no declara licencia. Antes de cualquier uso comercial es imprescindible verificar la licencia del modelo base ideogram-ai/ideogram-4-fp8, ya que los terminos de un finetune suelen heredar restricciones del modelo original.
-- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar elementos inexistentes, anatomia incorrecta, texto mal formado o detalles incoherentes con el prompt; no se han publicado evaluaciones que cuantifiquen este riesgo para esta version.
-- Sesgos: no hay informacion sobre la composicion del dataset de entrenamiento ni sobre sesgos demograficos, culturales o de representacion. Es previsible que herede los sesgos del modelo base, pero no hay datos que lo confirmen.
-- Idiomas: no se documenta que idiomas soporta el text encoder ni como afecta el idioma del prompt a la calidad del resultado.
-- Cero descargas registradas: el repositorio tiene 0 descargas y 2 likes, por lo que no existe una comunidad de usuarios que haya validado su funcionamiento ni reportado problemas.
-- Dependencia de una herramienta concreta: el uso previsto esta ligado a WanGP; no se garantiza que los pesos carguen en otros runners de difusion sin conversion previa.
-- Consumo de almacenamiento: 69,4 GB de repositorio exigen espacio en disco considerable y tiempos de descarga elevados, ademas de posible offloading de memoria durante la inferencia.
-- Busqueda web sin resultados utiles: las consultas realizadas no devolvieron documentacion tecnica, papers ni analisis independientes sobre este repositorio.
-- Fechas del repositorio: las marcas de creacion y actualizacion (2026) proceden directamente de los metadatos de Hugging Face y no se han podido contrastar con ninguna fuente externa.
+- La model card no documenta la licencia del modelo ni del repositorio; no se puede confirmar el uso comercial sin consultar la licencia del modelo base `ideogram-ai/ideogram-4-fp8`.
+- No se especifican los idiomas soportados en los prompts; el comportamiento multilingüe es desconocido.
+- No hay información sobre sesgos del modelo base ni sobre su comportamiento en dominios sensibles.
+- Riesgo de alucinación visual y de fidelidad limitada al prompt: no cuantificado en la información disponible.
+- El repositorio es una redistribución de pesos de terceros; la responsabilidad sobre el entrenamiento y sus datos recae en el autor original.
+- El tamaño de 70,5 GB exige espacio en disco considerable y una descarga larga, aunque WanGP automatiza la selección de variantes según la arquitectura.
+- Solo 3 likes frente a 42.554 descargas sugiere un uso mayoritariamente instrumental a través de WanGP, no una validación comunitaria amplia del repositorio en sí.
+- No se han publicado benchmarks que permitan verificar la calidad de las imágenes generadas frente a alternativas.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/DeepBeepMeep/Ideogram4
-- Modelo base declarado: https://huggingface.co/ideogram-ai/ideogram-4-fp8
-- WanGP (Wan2GP), herramienta de despliegue: https://github.com/deepbeepmeep/Wan2GP
-- Servidor de Discord de WanGP: https://discord.gg/g7efUW9jGV
-- Perfil del autor en X/Twitter: https://x.com/deepbeepmeep
-- Papers, blogs o demos adicionales: no disponible (la busqueda web no devolvio resultados relevantes)
+- Modelo base: https://huggingface.co/ideogram-ai/ideogram-4-fp8
+- WanGP (Wan2GP) en GitHub: https://github.com/deepbeepmeep/Wan2GP
+- Servidor de Discord: https://discord.gg/g7efUW9jGV
+- Twitter/X del autor: https://x.com/deepbeepmeep

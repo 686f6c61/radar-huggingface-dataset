@@ -2,99 +2,86 @@
 
 ## Resumen
 
-Esobold/EsoTest_GGUFs es un repositorio de pesos en formato GGUF publicado por el usuario Esobold. Segun la model card, su artefacto principal es `GhostShip-31b-Q4_K_M.gguf`, descrito como un merge de tipo «FM nearswap» construido a partir de dos variantes de la familia Gemma 4 31B: el modelo donante `Gemma4-Gutenberg-31B-Heretic` y el modelo base `gemma-4-31B-it-scotoma-2`. El merge aplica una fuerza nearswap con `t` creciente de forma lineal entre capas, desde 0,0001 hasta 0,0007 (media 4e-4), lo que el autor situa en torno a 4 veces la intensidad maxima de otros merges de la misma familia (Robinson, BenGunn).
+EsoTest_GGUFs es un repositorio de Hugging Face publicado por el usuario Esobold que contiene pesos en formato GGUF bajo la etiqueta "FM nearswap family". Segun la model card, el artefacto principal es `GhostShip-31b-Q4_K_M.gguf`, descrito como un merge de tipo nearswap entre los modelos Gemma4-Gutenberg-31B-Heretic y gemma-4-31B-it-scotoma-2, con una fuerza de nearswap lineal por capas que va de 0,0001 a 0,0007 (media 4e-4). El autor lo situa en la misma familia que Robinson y BenGunn, con una fuerza pico aproximadamente cuatro veces mayor.
 
-El dato de parametros del repositorio, obtenido de los safetensors, es de 30.697.345.596 parametros (aproximadamente 30,7 mil millones), coherente con la nomenclatura «31b» de los ficheros. El repositorio declara los tags `gguf`, `endpoints_compatible`, `region:us` y `conversational`, y acumula 26.149 descargas con 0 likes desde su creacion.
+El dato objetivo disponible es el recuento de parametros en safetensors: 30.697.345.596 parametros (unos 30,7 mil millones), coherente con la nomenclatura "31b" del archivo GGUF. El repositorio tiene un tamano de 1.854,7 GB, lo que sugiere la presencia de multiples cuantizaciones y posiblemente varios modelos mergeados dentro del mismo repo. El modelo acumula 73.748 descargas, aunque no cuenta con likes ni pipeline declarado.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card es un unico parrafo sin especificaciones, no se declara licencia, no se declaran idiomas y no hay benchmarks publicados. Ademas, el nombre del repositorio («EsoTest») sugiere un entorno de pruebas, y las fechas declaradas (creado el 27 de mayo de 2026, actualizado el 19 de octubre de 2026) son posteriores al calendario habitual de publicacion, lo que apunta a metadatos anomalos. Todo dato no confirmado se marca como «no disponible» a lo largo de la ficha.
+La relevancia de esta ficha es limitada desde el punto de vista de evaluacion tecnica: se trata de un merge experimental de la comunidad, sin model card detallada, sin licencia declarada, sin idiomas especificados y sin benchmarks publicados. Resulta util principalmente como referencia de un experimento de merging con la tecnica nearswap sobre la familia Gemma 4 de 31B, no como modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma explicita. El modelo base declarado es de la familia Gemma 4 31B, por lo que se infiere una arquitectura transformer decoder-only, sin confirmacion en la model card |
-| Parametros totales | 30.697.345.596 (dato real obtenido de safetensors) |
-| Parametros activos | No aplica: no hay indicios de arquitectura MoE en la informacion disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF; el fichero documentado es Q4_K_M. El resto de cuantizaciones del repo no estan detalladas |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (confirmado); el conteo de parametros del repo procede de safetensors, lo que sugiere que tambien se alojan pesos en ese formato |
-
-Otros datos del repositorio: tamano total de 1.445,1 GB, 26.149 descargas, 0 likes, pipeline no disponible y tags `gguf`, `endpoints_compatible`, `region:us`, `conversational`.
+| Arquitectura | no disponible (presumiblemente transformer denso, derivado de Gemma 4 31B; no confirmado en la informacion) |
+| Parametros totales | 30.697.345.596 (~30,7 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF; se menciona explicitamente Q4_K_M; el resto de cuantizaciones del repo no estan detalladas |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (repo con safetensors como fuente del recuento de parametros) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo. Lo unico documentado es el procedimiento de fusion: un merge «FM nearswap» entre `Gemma4-Gutenberg-31B-Heretic` (donante) y `gemma-4-31B-it-scotoma-2` (base), con una fuerza `t` que crece linealmente entre capas desde 0,0001 hasta 0,0007, con media de 4e-4. El autor indica que esta familia de merges incluye tambien los modelos Robinson y BenGunn, y que esta variante emplea una intensidad pico aproximadamente 4 veces mayor. No se detalla que capas se ven afectadas, ni la metrica de similitud usada en el nearswap, ni el metodo de seleccion de tensores.
+No hay informacion publicada sobre la arquitectura interna del modelo base ni sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, RLHF/DPO). Lo unico documentado es el procedimiento de merging: un nearswap entre `Gemma4-Gutenberg-31B-Heretic` y `gemma-4-31B-it-scotoma-2`, con una fuerza t que crece linealmente de 0,0001 a 0,0007 a lo largo de las capas, con media 4e-4. El autor indica que esta fuerza es aproximadamente cuatro veces la pico de otros merges de la misma familia (Robinson, BenGunn).
 
-No hay informacion sobre datos de entrenamiento: ni volumen de tokens, ni composicion del corpus, ni si hubo etapas de ajuste por refuerzo (RLHF, DPO) o instruccion. Tampoco se documentan innovaciones tecnicas de inferencia (decodificacion especulativa, atencion lineal, modos de razonamiento) mas alla de la propia receta de merge. Cualquier afirmacion sobre el pipeline de entrenamiento de los modelos de origen seria especulativa y no se incluye aqui.
+El nearswap es una tecnica de interpolacion de pesos que sustituye selectivamente tensores del modelo base por los del modelo donante cuando la diferencia supera un umbral, modulada por el parametro de fuerza. Al aplicarse por capas con una progresion lineal, el merge introduce el comportamiento del modelo donante de forma mas intensa en las capas profundas. No se documenta ninguna innovacion adicional en atencion, decodificacion especulativa ni entrenamiento posterior al merge.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` y el sufijo `-it` de los modelos de origen apuntan a un modelo ajustado para instrucciones y dialogo, aunque no hay evaluacion publicada que lo confirme.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que los pesos estan pensados para desplegarse detras de una API compatible con el esquema de endpoints de Hugging Face (por ejemplo, Text Generation Inference o un servidor equivalente).
-- Ejecucion en CPU y GPU mixta: al distribuirse en GGUF, el modelo puede ejecutarse con llama.cpp y con offload parcial de capas a CPU.
-- Herencia de capacidades del modelo base: al ser un merge de variantes de Gemma 4 31B, se espera que conserve las capacidades de dicha familia, pero no se especifica cuales en la informacion disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto conversacional: la etiqueta `conversational` del repo indica uso previsto como modelo de chat.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
+- Herencia de capacidades del modelo base Gemma 4 31B: al ser un merge de pesos, conserva las capacidades del modelo original (razonamiento, codigo, matematicas, multilingue), aunque no se documenta su magnitud ni se verifica en la model card.
+- Tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: no disponible en la informacion.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion.
 
 ## Casos de uso
 
-- Despliegue conversacional autoalojado: al estar en GGUF y pesar unos 18-19 GB en Q4_K_M, puede servirse en una unica GPU de 24 GB o en un servidor con offload a CPU, lo que encaja en escenarios de chat interno con requisitos de soberania de datos.
-- Evaluacion comparativa de merges: el caso de uso mas realista para este repositorio es la experimentacion; permite medir el efecto de una fuerza nearswap lineal (0,0001 a 0,0007) frente a los merges Robinson y BenGunn de la misma familia.
-- Pruebas de integracion de endpoints: gracias al tag `endpoints_compatible`, sirve para validar pipelines de despliegue (cliente HTTP, gestion de tokens, streaming) antes de pasar a un modelo con licencia clara.
-- Generacion de texto por lotes en local: con llama.cpp se puede procesar volumenes moderados de documentos en una estacion de trabajo, aceptando latencias mayores a cambio de no depender de APIs externas.
-- Base para cuantizaciones propias: al disponer de pesos GGUF y, segun los metadatos, safetensors, un equipo puede recuantizar a Q3_K_M o Q5_K_M segun su presupuesto de VRAM y validar la degradacion resultante.
-- Prototipado de asistentes de dominio: partiendo de un modelo de 31B ajustado a instrucciones, se puede iterar en prompts y plantillas de chat para un dominio concreto antes de decidir si se necesita un ajuste fino supervisado.
-- Analisis de calidad de merges en investigacion: permite estudiar como varia la perplexity y la coherencia al aumentar la intensidad del nearswap, un experimento habitual en la literatura de model merging.
+- Experimentacion con tecnicas de merging: el caso de uso principal es reproducir o evaluar el efecto del nearswap con fuerza lineal por capas sobre la familia Gemma 4 31B, comparando contra los merges Robinson y BenGunn de la misma familia.
+- Despliegue local en cuantizacion Q4_K_M: el archivo `GhostShip-31b-Q4_K_M.gguf` permite ejecutar un modelo de ~31B en hardware de consumo de gama alta mediante llama.cpp u Ollama, con la perdida de calidad asociada a 4 bits.
+- Chat conversacional autoalojado: la etiqueta `conversational` y la compatibilidad con endpoints permiten montar un asistente de texto sobre infraestructura propia, siempre que se valide previamente la calidad del merge.
+- Benchmarking comparativo de merges: util como punto de comparacion en estudios internos sobre el impacto de la fuerza de nearswap en la perplexity y en tareas de instruccion.
+- Pruebas de integracion en pipelines de inferencia: sirve para validar el soporte de GGUF en vLLM, llama.cpp o TGI antes de adoptar un modelo mergeado en un flujo de trabajo real.
+- Base para futuros merges de la comunidad: al estar publicado el procedimiento (fuerza t y rango por capas), otros autores pueden partir de el para explorar variantes con distinta intensidad o con otros donantes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra metrica, y la busqueda web no aporto resultados relacionados con este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de 30,7 mil millones de parametros; son estimaciones, no medidas publicadas):
-  - Q4_K_M: aproximadamente 18-19 GB de pesos, en torno a 20-22 GB con contexto moderado.
-  - Q5_K_M: aproximadamente 21-22 GB de pesos.
-  - Q8_0: aproximadamente 32-33 GB de pesos.
-  - FP16/BF16: aproximadamente 61 GB de pesos.
-- GPU recomendadas:
-  - Q4_K_M: RTX 3090 o RTX 4090 (24 GB) con contexto limitado; A6000 (48 GB) o L40S con margen amplio.
-  - Q8_0: A100 40 GB con contexto corto o A100 80 GB / H100 80 GB para contexto largo.
-  - FP16: dos A100 40 GB, o una H100 80 GB.
-- Cabe en GPU de consumo: si, en Q4_K_M y cuantizaciones inferiores dentro de 24 GB; en Q5_K_M de forma ajustada; Q8_0 y FP16 no.
-- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM y Text Generation Inference si se dispone de pesos safetensors y se acepta el formato; el tag `endpoints_compatible` sugiere compatibilidad con servidores de endpoints.
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
+- VRAM estimada para inferencia en Q4_K_M: aproximadamente 17-19 GB para los pesos, mas overhead de contexto KV; en la practica, unos 20-24 GB para ventanas de contexto moderadas.
+- Cuantizaciones de menor precision (Q3_K_M, Q2_K) reducirian el requisito a unos 13-15 GB, a costa de mayor degradacion; no se confirma su presencia en el repo.
+- GPU recomendadas: una RTX 4090 (24 GB) o RTX 3090 (24 GB) deberia poder cargar la Q4_K_M completa; para cuantizaciones mayores o contextos largos se recomienda A100 40/80 GB o H100.
+- Cabe en GPU de consumo: si, en modelos con 24 GB de VRAM para la cuantizacion Q4_K_M; en GPUs de 16 GB requeriria cuantizaciones mas agresivas o descarga parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (soporte GGUF), TGI y Hugging Face Inference Endpoints (por la etiqueta `endpoints_compatible`).
+- Latencia y throughput: no disponibles; dependeran del hardware y de la cuantizacion.
 
 ## Comparativa con modelos similares
 
-No hay datos verificables suficientes para una comparativa cuantitativa. La siguiente tabla recoge unicamente lo que la informacion proporcionada permite afirmar.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Esobold/EsoTest_GGUFs (GhostShip-31b) | 30,7 B | No disponible | No disponible | GGUF en Hugging Face | Merge nearswap de la familia Gemma 4 31B |
-| Gemma4-Gutenberg-31B-Heretic | No disponible | No disponible | No disponible | Citado como donante del merge | Sin ficha tecnica en la informacion disponible |
-| gemma-4-31B-it-scotoma-2 | No disponible | No disponible | No disponible | Citado como base del merge | Sin ficha tecnica en la informacion disponible |
-| Robinson / BenGunn (misma familia de merges) | No disponible | No disponible | No disponible | Citados en la model card | El autor indica que esta variante usa ~4x la intensidad pico |
+| EsoTest_GGUFs (GhostShip-31b-Q4_K_M) | ~30,7 B | no disponible | no disponible | GGUF | Merge nearswap experimental, sin benchmarks |
+| Robinson (misma familia FM nearswap) | no disponible | no disponible | no disponible | GGUF | Referenciado por el autor como miembro de la misma familia |
+| BenGunn (misma familia FM nearswap) | no disponible | no disponible | no disponible | GGUF | Referenciado por el autor; fuerza pico ~4x menor que GhostShip |
+| Gemma 4 31B (modelo base) | ~31 B | no disponible | no disponible | safetensors/GGUF | Modelo original sobre el que se construye el merge |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no hay ficha de arquitectura, contexto, tokenizador ni plantilla de chat, lo que impide garantizar un uso correcto en produccion.
-- Licencia no declarada: sin licencia explicita no se puede asumir permiso de uso comercial. Los modelos de origen de la familia Gemma tienen sus propias condiciones, que habria que verificar por separado antes de cualquier despliegue.
-- Riesgo de alucinacion: no cuantificado. No hay evaluaciones de fidelidad ni de tasas de error, algo especialmente relevante en un merge que modifica pesos de forma agresiva (hasta 4 veces la intensidad de otros merges de la familia).
-- Degradacion por merge: el procedimiento nearswap con fuerza creciente entre capas puede producir perdida de coherencia, repeticiones o colapso en contextos largos; no se han publicado pruebas que lo descarten.
-- Idiomas no declarados: se desconoce el soporte real del castellano y de otras lenguas; no debe asumirse calidad multilingue.
-- Contexto desconocido: sin longitud de contexto declarada, cualquier diseño que dependa de ventanas largas es arriesgado.
-- Metadatos anomalos: las fechas de creacion (2026-05-27) y actualizacion (2026-10-19) no son coherentes con un repositorio en uso normal, y el nombre «EsoTest» apunta a un entorno de pruebas. Tratar el repositorio como no estable.
-- Perfil de popularidad atipico: 26.149 descargas con 0 likes y sin pipeline declarado; un volumen alto de descargas no equivale a validacion por parte de la comunidad.
-- Tamano del repositorio de 1.445,1 GB: la descarga completa es costosa; conviene bajar solo el fichero GGUF necesario.
-- Sesgos: no documentados. Al no haber informacion sobre datos de entrenamiento ni evaluaciones, no es posible caracterizar sesgos de genero, raza, idioma o dominio.
+- Ausencia total de model card tecnica: no hay informacion sobre datos de entrenamiento, contexto, idiomas ni evaluacion, lo que impide garantizar un comportamiento fiable en produccion.
+- Licencia no declarada: no se puede confirmar si el uso comercial esta permitido; ademas, al derivar de Gemma 4, habria que verificar la licencia del modelo base, que no se detalla en la informacion.
+- Merge experimental sin validacion publicada: no hay benchmarks que confirmen que el nearswap con fuerza 4e-4 mejora al modelo base; el riesgo de degradacion en razonamiento o instruccion es real.
+- Riesgo de alucinacion: inherente a los modelos de ~31B sin evaluacion publicada; no se documenta ningun mecanismo de mitigacion.
+- Sesgos: no documentados; al heredarse del modelo base y del donante, no es posible auditarlos con la informacion disponible.
+- Repositorio de 1.854,7 GB: descargar el repo completo es costoso en almacenamiento y ancho de banda; conviene descargar solo el archivo GGUF necesario.
+- Sin likes ni pipeline declarado: indica escasa validacion por parte de la comunidad, lo que reduce la confianza en su calidad.
+- Fecha de creacion futura (2026-05-27) en los metadatos: conviene tratar las fechas del repo con cautela.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Esobold/EsoTest_GGUFs
-- Fichero documentado en la model card: `GhostShip-31b-Q4_K_M.gguf` (dentro del repositorio anterior)
-- No se han encontrado enlaces tecnicos relevantes (papers, blogs, repos de codigo o demos) en la busqueda web realizada; los resultados devueltos no guardaban relacion alguna con el modelo y se han descartado.
+- Repositorio Hugging Face: https://huggingface.co/Esobold/EsoTest_GGUFs
+- No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

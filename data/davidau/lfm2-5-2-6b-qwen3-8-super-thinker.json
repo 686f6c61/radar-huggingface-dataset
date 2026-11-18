@@ -64,7 +64,7 @@
     "conversational"
   ],
   "likes": 195,
-  "downloads_30d": 16182,
+  "downloads_30d": 15673,
   "trending_score": 23,
   "parameters": 2697198592,
   "parameters_human": "2.70B",
@@ -84,31 +84,5 @@
   "renamed_to": "DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF",
   "renamed_at": "2026-11-11T02:36:20.033Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "œuf poché - traduction - Dictionnaire Français-Anglais …",
-      "url": "https://www.wordreference.com/fren/%c5%93uf%20poch%c3%a9",
-      "snippet": "œuf poché - traduction français-anglais. Forums pour discuter de œuf poché, voir ses formes composées, des exemples et poser vos …"
-    },
-    {
-      "title": "Traduction OEUF POCHÉ en anglais - Reverso",
-      "url": "https://dictionnaire.reverso.net/francais-anglais/oeuf+poch%C3%A9",
-      "snippet": "Traduction de \"oeuf poché\" en anglais : poached egg. Nom, signification, prononciation, expressions idiomatiques en français, …"
-    },
-    {
-      "title": "œuf poché | Traduction anglais-français - anglais.com",
-      "url": "https://www.anglais.com/traduire/%C5%93uf%20poch%C3%A9",
-      "snippet": "Traduire œuf poché. Voir traductions fiables de œuf poché en français avec des phrases d'exemple et l'audio de la prononciation."
-    },
-    {
-      "title": "Traduction ŒUF POCHÉ en anglais - Reverso",
-      "url": "https://dictionnaire.reverso.net/francais-anglais/%c5%93uf+poch%c3%a9",
-      "snippet": "Explorez différentes traductions de \"œuf poché\" triées par fréquence et pertinence pour trouver l’adéquation parfaite à votre contexte. …"
-    },
-    {
-      "title": "Traduction de \"œuf poché\" en anglais - Dictionnaire Glosbe",
-      "url": "https://fr.glosbe.com/fr/en/%C5%93uf%20poch%C3%A9",
-      "snippet": "poached egg, dropped egg, poached egg sont les meilleures traductions de \"œuf poché\" en anglais."
-    }
-  ]
+  "sources": []
 }

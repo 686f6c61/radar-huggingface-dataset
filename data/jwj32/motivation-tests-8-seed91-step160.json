@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "jwj32/motivation-tests-8-seed91-step160",
+  "slug": "jwj32-motivation-tests-8-seed91-step160",
+  "author": "jwj32",
+  "url": "https://huggingface.co/jwj32/motivation-tests-8-seed91-step160",
+  "created_at": "2026-11-05T06:26:34.000Z",
+  "updated_at": "2026-11-18T00:24:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101386686,
+  "storage_human": "16.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,100 +2,94 @@
 
 ## Resumen
 
-TaoMate-H3-3Step-ComfyUI es la conversión a ComfyUI del LoRA oficial TaoMate-H3 3-Step, un adaptador de bajo rango diseñado para acelerar la generación con el modelo base MiniMax H3 hasta un régimen de 3 pasos de muestreo. El repositorio lo publica el usuario Robert1212star, mientras que el desarrollo y el entrenamiento original del LoRA corresponden al equipo TaoLive AIGC, y el modelo base a MiniMax (MiniMaxAI/MiniMax-H3). La relevancia de esta publicación es puramente práctica: adapta el formato de claves y parámetros del LoRA original al esperado por los cargadores de LoRA de MiniMax H3 en ComfyUI.
+TaoMate-H3-3Step-ComfyUI es un repositorio de adaptadores LoRA en formato ComfyUI derivados de MiniMax H3, el modelo base de generación de vídeo (y audio-vídeo) de MiniMax. El autor del repositorio, Robert1212star, no entrena ni ajusta nada: se limita a convertir a los layouts de claves y precisión que esperan los cargadores LoRA de ComfyUI dos checkpoints oficiales publicados por el equipo TaoLive AIGC de Alibaba, el adaptador original TaoMate-H3 y el más reciente TaoMate-H3-FL2VA.
 
-El artefacto distribuido es un único fichero `taomate_h3_3step_comfy.safetensors` de aproximadamente 2,48 GB, dentro de un repositorio de 2,5 GB. No incluye pesos del modelo base ni se ha realizado entrenamiento, ajuste fino, poda o fusión adicional: se trata exclusivamente de una conversión de formato. Las etiquetas del repositorio lo clasifican dentro de las categorías de vídeo y audio-vídeo, lo que sitúa el modelo base MiniMax H3 en el ámbito de la generación audiovisual.
+El interés del repositorio es práctico: permite probar los adaptadores de 3 pasos de TaoMate dentro de flujos de trabajo de ComfyUI sobre el modelo base MiniMax H3, sin necesidad de usar el runtime oficial de TaoMate. Incluye dos ficheros safetensors de distinto origen (no son dos precisiones del mismo checkpoint): el adaptador original de 3 pasos (2,48 GB) y el adaptador FL2VA convertido a BF16 (1,24 GB), orientado a generación condicionada por primer y último fotograma con audio y vídeo.
 
-El interés para un desarrollador es doble: por un lado, permite reducir drásticamente el número de pasos de inferencia (3 en lugar de los regímenes habituales de decenas de pasos) en flujos de trabajo de vídeo; por otro, evita tener que convertir manualmente el LoRA original para que funcione con los nodos personalizados de MiniMax H3 en ComfyUI. La licencia declarada es "other", heredada de los términos del LoRA original y del modelo base, por lo que su uso comercial requiere revisar dichos términos.
+No se dispone de información sobre arquitectura interna, número de parámetros del modelo base, longitud de contexto ni idiomas soportados en la información proporcionada. El repositorio ocupa 3,7 GB y acumula 11.587 descargas y 71 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo base MiniMax H3; arquitectura del modelo base no disponible en la informacion proporcionada |
-| Parametros totales | no disponible (fichero de pesos de ~2,48 GB en safetensors) |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | no disponible (adaptador LoRA sobre el modelo base MiniMax H3; arquitectura del base no especificada) |
+| Parametros totales | no disponible (adaptador: rango 128 / alpha 128, 208 pares LoRA A/B, 416 tensores) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el repositorio solo distribuye pesos en safetensors sin cuantizaciones documentadas |
+| Tipos de cuantizacion | BF16 (fichero FL2VA); el fichero original se distribuye en safetensors sin precisión declarada en la información disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (sujeta a los terminos del LoRA original TaoMate-H3 y del modelo base MiniMax H3) |
-| Formato de pesos | safetensors (`taomate_h3_3step_comfy.safetensors`) |
+| Licencia | MiniMax H3 Community License Agreement (license: other) |
+| Formato de pesos | safetensors (adaptadores LoRA para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base MiniMax H3 (si es un transformer de difusion, un modelo hibrido o una arquitectura audiovisual conjunta). Lo que si se documenta con claridad es la naturaleza del artefacto publicado: un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se aplican sobre los pesos del modelo base para modificar su comportamiento sin reentrenarlo por completo. El LoRA original fue entrenado por el equipo TaoLive AIGC con el objetivo de habilitar generacion acelerada en 3 pasos, tecnica habitual en modelos de difusion para video y audio.
+El repositorio no contiene un modelo entrenado, sino conversiones de formato de adaptadores LoRA. El adaptador FL2VA se convirtió de FP32 a BF16, reduciendo el almacenamiento de aproximadamente 2,48 GB a 1,24 GB, y conserva los 416 tensores de peso originales (208 pares LoRA A/B), incluidos los pesos de `token_refiner`, con rango 128 y alpha 128. La conversión mapea las claves `.lora_a` a `.lora_down.weight` y `.lora_b` a `.lora_up.weight`, añade el prefijo `diffusion_model.` y los valores de alpha por módulo para que ComfyUI los cargue, y preserva la orientación de las matrices sin fusionar, podar ni reentrenar.
 
-El repositorio de Robert1212star no aporta informacion sobre el numero de tokens, la composicion del dataset de entrenamiento, ni sobre el uso de RLHF, DPO u otras tecnicas de alineacion. La model card es explicita en este punto: "No additional training or fine-tuning was performed" y "No additional training, merging, pruning, or fine-tuning was performed beyond the format conversion required for ComfyUI compatibility". Por tanto, la unica intervencion tecnica documentada es la conversion del layout de parametros y claves al formato que esperan los cargadores de LoRA compatibles con MiniMax H3 en ComfyUI.
-
-Como innovacion destacable cabe senalar el propio objetivo del LoRA: la destilacion de trayectoria para reducir el muestreo a 3 pasos. La model card indica que "TaoMate-H3 is designed for accelerated 3-step generation" y recomienda configurar el muestreo con 3 pasos, lo que implica una reduccion sustancial del coste computacional por muestra frente a esquemas de decenas de pasos. No se documentan tecnicas adicionales como decodificacion especulativa o atencion lineal.
+No se realizó entrenamiento ni ajuste fino adicional. El adaptador original de 3 pasos se convirtió desde el checkpoint TaoMate-H3 al layout de parámetros y claves de los cargadores LoRA de MiniMax H3 en ComfyUI. El adaptador FL2VA proviene del release oficial TaoMate-H3-FL2VA, orientado a generación de audio-vídeo condicionada por primer y último fotograma, con un LoRA de 3 pasos y un runtime de streaming dedicado. El autor advierte que la conversión se verificó contra nombres y formas de tensores del checkpoint fuente con tensores sintéticos, pero la carga completa y la generación en ComfyUI no se han verificado de forma independiente.
 
 ## Capacidades
 
-- Generacion de video: el modelo base MiniMax H3 y las etiquetas del repositorio (`video`, `audio-video`) lo sitúan en el ambito de la sintesis de video.
-- Generacion audiovisual conjunta: la etiqueta `audio-video` sugiere capacidad de producir o procesar audio y video de forma coordinada, aunque no se detalla el alcance exacto.
-- Inferencia acelerada en 3 pasos: el LoRA esta especificamente disenado para generar con 3 pasos de muestreo, reduciendo el tiempo de inferencia frente a configuraciones de mas pasos.
-- Integracion con ComfyUI: el checkpoint esta convertido para funcionar con los nodos personalizados de MiniMax H3 y sus cargadores de LoRA.
-- Soporte de tool calling / function calling: no disponible (no es una capacidad declarada para este tipo de modelo).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se documentan idiomas soportados.
-- Modo de razonamiento o thinking: no disponible.
-- Otras capacidades (vision, edicion, control de movimiento, consistencia temporal): no disponibles en la informacion proporcionada.
+- Aplicación de adaptadores LoRA de 3 pasos sobre el modelo base MiniMax H3 para generación de vídeo.
+- Generación de audio-vídeo condicionada por primer y último fotograma (adaptador FL2VA), siempre que el flujo de trabajo de ComfyUI implemente ese condicionamiento.
+- Conversión de formato compatible con cargadores LoRA de MiniMax H3 en ComfyUI.
+- Conservación de los pesos de `token_refiner` en la conversión FL2VA.
+- No incluye el modelo base: no genera vídeo por sí solo.
+- No aporta tool calling, function calling, razonamiento multi-paso ni capacidades de agente.
+- No aporta capacidades multilingües propias.
+- No instala el runtime oficial de TaoMate, la caché KV persistente de audio-vídeo ni la generación en streaming.
 
 ## Casos de uso
 
-- Prototipado rapido de video en ComfyUI: al permitir 3 pasos de muestreo, el LoRA reduce el tiempo por iteracion durante la fase de exploracion de prompts y semillas, lo que acelera la busqueda de una configuracion valida antes de lanzar una generacion mas costosa.
-- Generacion de video en produccion con presupuesto de GPU limitado: un regimen de 3 pasos disminuye el numero de evaluaciones del modelo base por muestra, lo que abarata el coste por clip en entornos de inferencia por horas.
-- Creacion de storyboards animados: convertir guiones o secuencias de planos en clips cortos de previsualizacion para equipos de direccion, usando el flujo MiniMax H3 en ComfyUI con el LoRA cargado.
-- Contenido audiovisual para redes sociales: generacion de piezas cortas con audio y video asociados, aprovechando la etiqueta `audio-video` del modelo base y el bajo numero de pasos para producir multiples variantes.
-- Iteracion de artistas tecnicos y estudios de animacion: integracion del LoRA en grafos de ComfyUI ya existentes que usen MiniMax H3, como sustituto del LoRA original cuando este no carga correctamente en el cargador de LoRA del nodo personalizado.
-- Investigacion sobre destilacion de pasos: uso del LoRA como referencia para estudiar tecnicas de aceleracion por destilacion aplicadas a modelos de difusion audiovisual, comparando calidad y fidelidad con el muestreo completo del modelo base.
-- Suplemento en pipelines de postproduccion: generar planos de relleno o inserciones rapidas que despues se retocan en herramientas de edicion, dado que el coste por generacion es bajo al requerir solo 3 pasos.
+- Pruebas de adaptadores de 3 pasos en ComfyUI: cargar el safetensors en `ComfyUI/models/loras/`, seleccionarlo en un cargador LoRA compatible con MiniMax H3 y conectarlo a un flujo de trabajo existente para evaluar el efecto del adaptador sobre el modelo base.
+- Comparación controlada de adaptadores: fijar imagen de referencia, prompt, semilla, resolución, número de fotogramas, sampler y scheduler, y cambiar únicamente el adaptador seleccionado para aislar su impacto.
+- Prototipado de vídeo con audio condicionado por primer y último fotograma: usar el adaptador FL2VA en un flujo de ComfyUI que implemente el condicionamiento de fotogramas inicial y final, verificando previamente que los nodos y el cargador LoRA soportan ese caso.
+- Evaluación de la conversión BF16: comprobar en consola si aparecen claves LoRA no utilizadas o errores de forma de tensor al cargar el fichero de 1,24 GB frente al original.
+- Integración en pipelines de generación de vídeo existentes sobre MiniMax H3: sustituir el adaptador por defecto por el de 3 pasos para reducir el número de pasos de muestreo en pruebas de concepto.
+- Verificación de compatibilidad de nodos personalizados: usar los dos ficheros como banco de pruebas para validar que un cargador LoRA de MiniMax H3 en ComfyUI acepta el layout `diffusion_model.` con alpha por módulo.
+- Desarrollo de flujos de trabajo de audio-vídeo: emplear el adaptador FL2VA como punto de partida para construir un workflow que reproduzca, con limitaciones, el comportamiento del runtime oficial de TaoMate.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de calidad (FVD, CLIP score, IS, SSIM, etc.), ni comparaciones numericas frente al LoRA original o frente a la generacion con el numero de pasos completo. Tampoco se documentan mediciones de latencia, throughput ni ganancia exacta de velocidad respecto a la configuracion sin el adaptador. La busqueda web realizada no devolvio resultados tecnicos relacionados con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El LoRA no es un modelo autonomo: requiere cargar el modelo base MiniMax H3, de modo que el requisito de VRAM viene dominado por el modelo base, no por el adaptador.
-- El fichero del adaptador ocupa aproximadamente 2,48 GB en disco, cifra que se suma al espacio ocupado por los pesos del modelo base.
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada; depende del modelo base MiniMax H3 y de su cuantizacion.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Compatibilidad con GPU de consumo: no disponible; no se puede confirmar si el conjunto (base + LoRA) cabe en tarjetas de consumo como la RTX 4090.
-- Opciones de despliegue: ComfyUI con los nodos personalizados de MiniMax H3 y un cargador de LoRA compatible. La model card advierte que "Compatibility may depend on the exact MiniMax H3 custom nodes and LoRA loader implementation being used" y que, si el flujo de trabajo emplea otro formato de claves de LoRA, puede requerirse una conversion adicional.
-- Instalacion: colocar `taomate_h3_3step_comfy.safetensors` en `ComfyUI/models/loras/` y reiniciar ComfyUI si el fichero no aparece en el cargador de LoRA.
-- Configuracion de muestreo recomendada: modelo base MiniMax H3, LoRA `taomate_h3_3step_comfy.safetensors` y 3 pasos de muestreo.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible. El adaptador ocupa 2,48 GB (original) y 1,24 GB (FL2VA en BF16), pero el consumo real depende del modelo base MiniMax H3 y de la resolución y número de fotogramas.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; depende del modelo base y del flujo de ComfyUI.
+- Opciones de despliegue: ComfyUI con un cargador LoRA compatible con MiniMax H3; el runtime oficial de TaoMate no está incluido en este repositorio.
+- Latencia y throughput: no disponibles. El adaptador está pensado para 3 pasos de muestreo, pero el autor advierte que elegir 3 pasos no reproduce el procedimiento de denoising del runtime oficial.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificables para establecer una comparativa cuantitativa con otros adaptadores. Como alternativas conceptuales de la misma categoria (LoRA de aceleracion por reduccion de pasos en modelos de difusion) existirian los adaptadores de destilacion tipo LCM-LoRA, DMD, Lightning o Hyper-SD, pero no se han publicado en la informacion proporcionada sus parametros, contexto, licencia ni rendimiento aplicados al modelo base MiniMax H3, por lo que cualquier tabla comparativa seria especulativa.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TaoMate-H3-3Step-ComfyUI (esta ficha) | no disponible (~2,48 GB en safetensors) | no disponible | sin benchmarks publicados | other | Hugging Face, 0 descargas, 9 likes |
-| TaoMate-H3 (original, TaoLiveAIGC) | no disponible | no disponible | no disponible | no disponible en esta informacion | Hugging Face |
-| MiniMax H3 (modelo base) | no disponible | no disponible | no disponible | no disponible en esta informacion | Hugging Face |
+| TaoMate-H3-3Step-ComfyUI (este repo) | Adaptador LoRA convertido para ComfyUI | rango 128 / alpha 128 (208 pares A/B) | no disponible | MiniMax H3 Community License | Hugging Face, 11.587 descargas |
+| TaoMate-H3 (oficial, TaoLive AIGC) | Adaptador LoRA original | no disponible | no disponible | MiniMax H3 Community License | Hugging Face (TaoLiveAIGC/TaoMate-H3) |
+| TaoMate-H3-FL2VA (oficial, TaoLive AIGC) | Adaptador LoRA original con runtime de streaming | no disponible | no disponible | MiniMax H3 Community License | Hugging Face (TaoLiveAIGC/TaoMate-H3-FL2VA) |
+| MiniMax-H3 (base) | Modelo base de vídeo/audio-vídeo | no disponible | no disponible | MiniMax H3 Community License | Hugging Face (MiniMaxAI/MiniMax-H3) |
 
 ## Limitaciones y advertencias
 
-- No se ha realizado entrenamiento ni ajuste fino: el repositorio solo contiene una conversion de formato del LoRA original. Cualquier limitacion del LoRA de origen se hereda intacta.
-- Compatibilidad dependiente de la implementacion: el adaptador puede no cargar si los nodos personalizados de MiniMax H3 en ComfyUI esperan un layout de claves distinto; en ese caso se requiere una conversion adicional.
-- Ausencia total de benchmarks: no hay evidencia publicada de calidad, fidelidad temporal ni degradacion respecto a la generacion con mas pasos. La aceleracion a 3 pasos suele implicar compromisos de calidad que deberian validarse en cada caso de uso.
-- Licencia "other": el uso comercial, la redistribucion y la publicacion de resultados quedan sujetos a los terminos del LoRA original de TaoLive AIGC y del modelo base MiniMax H3, que deben revisarse antes de cualquier explotacion comercial.
-- Idiomas soportados no declarados: no se puede garantizar el comportamiento con prompts en castellano u otros idiomas distintos del ingles.
-- Riesgo de alucinacion y artefactos: no se documentan tasas de error ni de artefactos visuales o sonoros. En modelos generativos de video y audio los artefactos temporales, la incoherencia entre fotogramas y la desincronizacion audio-video son riesgos habituales que deben validarse empiricamente.
-- Sesgos: no se documenta ninguna evaluacion de sesgos, y el dataset de entrenamiento del LoRA original es desconocido.
-- Cifras de adopcion muy bajas: 0 descargas y 9 likes en el momento de la consulta, lo que reduce la base de usuarios que podrian haber reportado problemas de integracion.
-- Repositorio sin mantenimiento declarado: fue creado y actualizado el 13 de septiembre de 2026; no hay informacion sobre actualizaciones posteriores ni soporte del autor.
-- Resultados de busqueda web no relevantes: las consultas devolvieron sitios de contenido para adultos sin relacion con el modelo, por lo que no aportan informacion tecnica utilizable.
+- El repositorio contiene únicamente adaptadores LoRA; no incluye el modelo base MiniMax H3 y no puede generar vídeo por sí solo.
+- La conversión a BF16 reduce la precisión numérica; no es una copia sin pérdidas de los valores FP32.
+- La carga completa del checkpoint y la generación en ComfyUI no han sido verificadas de forma independiente por el autor de la conversión; las pruebas se hicieron con tensores sintéticos.
+- No se incluye el runtime oficial de TaoMate, la caché KV persistente de audio-vídeo ni la generación en streaming.
+- El condicionamiento por primer y último fotograma debe implementarlo el flujo de trabajo y los nodos de ComfyUI elegidos; cargar el adaptador no añade esa capacidad.
+- El adaptador FL2VA y el original son checkpoints de origen distinto, no dos precisiones del mismo modelo; no deben compararse como equivalentes.
+- No se declara una configuración universal de sampler, scheduler, guidance ni fuerza del adaptador; el comportamiento depende del flujo de trabajo.
+- La licencia MiniMax H3 Community License Agreement impone restricciones que deben revisarse antes de cualquier uso comercial; la conversión de formato no altera los términos.
+- Riesgo de alucinación y sesgos: no disponible en la información proporcionada.
+- Idiomas soportados: no disponible.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI
+- Descarga del adaptador original: https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI/resolve/main/taomate_h3_3step_comfy.safetensors
+- Descarga del adaptador FL2VA BF16: https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI/resolve/main/TaoMate-H3-FL2VA-3Step-ComfyUI-BF16.safetensors
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Repositorio oficial del LoRA original TaoMate-H3 (TaoLive AIGC): https://huggingface.co/TaoLiveAIGC/TaoMate-H3
-- Proyecto original en GitHub: https://github.com/TaoLiveAIGC/TaoMate-H3
-- Benchmarks: no disponible
-- Papers: no disponible
-- Demos: no disponible
+- Adaptador original TaoMate H3: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
+- Adaptador TaoMate H3 FL2VA: https://huggingface.co/TaoLiveAIGC/TaoMate-H3-FL2VA
+- Código oficial de TaoMate H3: https://github.com/TaoLiveAIGC/TaoMate-H3
+- Licencia del FL2VA: https://huggingface.co/TaoLiveAIGC/TaoMate-H3-FL2VA/blob/main/LICENSE
+- Aviso legal del FL2VA: https://huggingface.co/TaoLiveAIGC/TaoMate-H3-FL2VA/blob/main/NOTICE

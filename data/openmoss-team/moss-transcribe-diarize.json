@@ -38,8 +38,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 524,
-  "downloads_30d": 133834,
+  "likes": 525,
+  "downloads_30d": 140300,
   "trending_score": 10,
   "parameters": 908513280,
   "parameters_human": "908.5M",
@@ -59,31 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - OpenMOSS/MOSS-Transcribe-Diarize: MOSS-Transcribe-Diarize 0.9B ...",
-      "url": "https://github.com/OpenMOSS/MOSS-Transcribe-Diarize/tree/main/",
-      "snippet": "English | 中文 MOSS-Transcribe-Diarize 0.9B is an open-source SOTA end-to-end audio understanding model for long-form multi-speaker transcription, diarization, timestamps, and acoustic event awareness. MOSS-Transcribe-Diarize Pro is a stronger model with higher overall performance and is available through the online playground."
-    },
-    {
-      "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize · Hugging Face",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "OpenMOSS-Team/MOSS-Transcribe-Diarize | vLLM Recipes",
-      "url": "https://recipes.vllm.ai/OpenMOSS-Team/MOSS-Transcribe-Diarize",
-      "snippet": "MOSS-Transcribe-Diarize is a 0.9B end-to-end speech-to-text model for long-form multi-speaker transcription. ... For the latest nightly wheel, see the vLLM installation guide."
-    },
-    {
-      "title": "GitHub - OpenMOSS/MOSS-Transcribe-Diarize at taaft",
-      "url": "https://github.com/OpenMOSS/MOSS-Transcribe-Diarize?ref=taaft",
-      "snippet": "MOSS-Transcribe-Diarize MOSS-Transcribe-Diarize 0.9B is an open-source SOTA end-to-end audio understanding model for long-form multi-speaker transcription, diarization, timestamps, and acoustic event awareness. MOSS-Transcribe-Diarize Pro is a stronger model with higher overall performance and will be available through API access soon."
-    },
-    {
-      "title": "MOSS Transcribe - a OpenMOSS-Team Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/OpenMOSS-Team/moss-transcribe",
-      "snippet": "A unified multimodal large language model for end-to-end speaker-attributed, time-stamped transcription."
-    }
-  ]
+  "sources": []
 }

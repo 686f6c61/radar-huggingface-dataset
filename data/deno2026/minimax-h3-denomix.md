@@ -2,104 +2,98 @@
 
 ## Resumen
 
-MiniMax-H3-DenoMix es un modelo de difusión para generación de vídeo a partir de referencias (reference-to-video, R2V) y de imagen más texto (image-text-to-video), publicado por el usuario Deno2026 (DENO) como un único fichero safetensors de 20.967.647.432 bytes (aproximadamente 20,97 GB) en cuantización INT8 podada. No es un modelo de lenguaje: no procesa texto de forma autoregresiva ni tiene ventana de contexto, sino que genera fotogramas de vídeo condicionados por una o varias imágenes de referencia y una descripción textual.
+MiniMax-H3-DenoMix es un modelo de difusion para generacion de video condicionada por referencia (reference-to-video, R2V) derivado de MiniMax H3. Lo publica el usuario Deno2026 (DENO) y no es un modelo entrenado desde cero, sino un merge de pesos: parte de los pesos originales de MiniMax H3 R2V y fusiona en un unico archivo el fine-tune Singularity de WarmBloodAban junto con algunos pesos adicionales. El resultado se distribuye como un unico archivo safetensors en formato INT8 podado (ConvRot), pensado para sustituir directamente el modelo de difusion en flujos de trabajo de ComfyUI.
 
-El modelo se construye fusionando (merge) los pesos R2V de MiniMax H3, desarrollado por MiniMax, con el fine-tune Singularity de WarmBloodAban y algunos pesos adicionales, todo ello consolidado en un solo archivo listo para cargarse en ComfyUI mediante el nodo `UNETLoader` (Load Diffusion Model) en sustitución del modelo de difusión R2V pruned INT8 original. El codificador de texto y los VAE no cambian respecto al flujo de trabajo original de MiniMax H3.
+Su relevancia practica esta en el empaquetado: reduce el modelo a un solo archivo de aproximadamente 21 GB (20.967.647.432 bytes) en INT8 podado, lo que permite ejecutar generacion de video R2V en GPUs de consumo. El autor incluye flujos de trabajo que generan a 960x544 y escalan el latente x2 hasta 1920x1088, con un caso probado en una RTX 4060 Ti de 16 GB con 32 GB de RAM de sistema para un clip de 15 segundos a 24 fps.
 
-Su relevancia es práctica: reduce el despliegue de un modelo de vídeo de referencia a vídeo a un único fichero de ~21 GB con cuantización INT8, lo que simplifica su uso en entornos locales y en flujos de ComfyUI. Ahora bien, la ficha no aporta detalles de arquitectura interna, número de parámetros, datos de entrenamiento ni evaluaciones, y el repositorio no registra descargas ni valoraciones, por lo que debe tratarse como un artefacto experimental de la comunidad y no como un modelo validado.
+No es un modelo de lenguaje: no genera texto ni razona. Es un componente de difusion para video que se integra en un pipeline donde el text encoder y los VAE se mantienen y solo se cambia el UNet de difusion. La licencia es la MiniMax H3 Community License Agreement, heredada de los pesos base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión para vídeo (reference-to-video e image-text-to-video); el tipo de bloque interno (DiT, UNet u otro) no se detalla en la información disponible |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no se describe una arquitectura MoE) |
-| Longitud de contexto | no aplica / no disponible (modelo de difusión de vídeo, sin ventana de contexto textual) |
-| Tipos de cuantización | INT8 con poda y rotación para convoluciones (ConvRot); es el único formato publicado |
-| Idiomas soportados | no disponible (no se documenta el soporte multilingüe de los prompts) |
-| Licencia | MiniMax H3 Community License Agreement (pesos derivados); el componente Singularity se distribuye bajo Apache-2.0 |
-| Formato de pesos | safetensors, fichero único (`diffusion-single-file`), INT8 podado |
-| Nombre del fichero | `MiniMax-H3_DenoMix_ref2va_pruned_int8_v3.safetensors` |
-| Tamaño del fichero | 20.967.647.432 bytes (~20,97 GB) |
+| Arquitectura | Modelo de difusion para generacion de video (reference-to-video, R2V); pesos en formato INT8 podado (ConvRot) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | INT8 podado (ConvRot); un unico archivo |
+| Idiomas soportados | no disponible |
+| Licencia | MiniMax H3 Community License Agreement (license: other) |
+| Formato de pesos | safetensors (diffusion-single-file), archivo `MiniMax-H3_DenoMix_ref2va_pruned_int8_v3.safetensors` |
+| Tamano del archivo | 20.967.647.432 bytes (~21 GB) |
 | SHA-256 | `6fc735bb1d2e9e44951106b3ec6a4c063df1535c567bc7d44aaff4c9052add52` |
-| Resolución y duración de vídeo | no disponible |
-| Codificador de texto y VAE | no se distribuyen; se reutilizan los del flujo de trabajo MiniMax H3 R2V en ComfyUI |
-| Tamaño del repositorio | 21,0 GB |
-| Descargas / likes | 0 / 0 |
+| Modelos base | MiniMaxAI/MiniMax-H3 y WarmBloodAban/Minimax-h3_Singularity (merge) |
+| Resoluciones de trabajo | 960x544 (generacion) y 1920x1088 (tras upscale x2 del latente) |
+| Duracion de ejemplo | 15 segundos a 24 fps |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe el modelo como un modelo de difusión de MiniMax H3 en la variante R2V (reference-to-video), convertido a un formato de pesos INT8 podado con cuantización ConvRot y empaquetado en un solo fichero para su carga directa en ComfyUI. No se especifican el número de bloques, el tipo de atención, el tamaño de parche del VAE, la resolución nativa ni la longitud máxima de vídeo generado.
+El modelo es un merge de pesos, no un entrenamiento nuevo. Se construye sobre los pesos originales de MiniMax H3 en su variante reference-to-video, a los que se fusiona el fine-tune Singularity de WarmBloodAban (publicado bajo Apache-2.0) y algunos pesos adicionales, dando como resultado un unico archivo. La arquitectura subyacente es la de MiniMax H3, un modelo de difusion para video; la model card no detalla el numero de parametros, la composicion del dataset de entrenamiento ni si hubo etapas de RLHF o DPO, por lo que esos datos no estan disponibles.
 
-El proceso de construcción no es un entrenamiento desde cero, sino una fusión de pesos (merge): los pesos R2V originales de MiniMax H3 se combinan con el fine-tune Singularity de WarmBloodAban y con «unos pocos pesos adicionales» en un único fichero, según indica el autor. No se documentan tokens de entrenamiento (concepto no aplicable a un modelo de difusión), composición del dataset, uso de RLHF/DPO ni ninguna innovación técnica declarada más allá de la propia cuantización INT8 con poda y de la consolidación en un solo archivo. Tampoco se publica qué capas se han podado ni el impacto medido de esa poda en la calidad final.
+La innovacion destacable es el empaquetado: pesos podados y cuantizados a INT8 en formato ConvRot, distribuidos como un solo safetensors que sustituye al modelo de difusion original en ComfyUI. El autor proporciona dos flujos de trabajo. El primero usa el Pika LoRA a 6 pasos, genera a 960x544, escala el latente x2 con el upscaler latente integrado de ComfyUI y remata el ultimo paso DMD por teselas con el nodo DENO Tiled Sampler a 1920x1088. El segundo genera a baja resolucion con el LoRA turbo de Alibaba (8 pasos), escala el latente x2 y refina con el LoRA turbo DMD y el refiner de NVIDIA (extraccion ligera de Kijai) en los dos ultimos pasos.
 
 ## Capacidades
 
-- Generación de vídeo condicionada por una o varias imágenes de referencia (reference-to-video), orientada a mantener la identidad o apariencia del sujeto de referencia entre fotogramas.
-- Generación de vídeo a partir de imagen y texto (image-text-to-video), según el `pipeline_tag` del repositorio.
-- Integración nativa en ComfyUI: se carga con `UNETLoader` (Load Diffusion Model) en el flujo MiniMax H3 R2V, manteniendo el mismo codificador de texto y VAE.
-- Distribución en un único fichero safetensors, lo que simplifica el intercambio y el despliegue en comparación con repositorios multi-shard.
-- Cuantización INT8 con poda: menor huella en disco y en memoria frente a los pesos sin cuantizar del modelo base, a costa de una posible pérdida de fidelidad no cuantificada.
-- No se documentan soporte de tool calling, function calling, uso como agente, razonamiento multi-paso, comprensión de vídeo, audio, modo «thinking» ni capacidades multimodales de entrada distintas de la imagen de referencia.
-- No se documenta el comportamiento con prompts en castellano.
+- Generacion de video condicionada por referencia (reference-to-video): produce clips a partir de una referencia visual y una descripcion textual.
+- Generacion image-text-to-video, segun el pipeline declarado en Hugging Face.
+- Generacion a 960x544 con escalado posterior del latente x2 hasta 1920x1088.
+- Generacion de clips de hasta 15 segundos a 24 fps en el flujo de ejemplo.
+- Muestreo por teselas (tiled sampling) para resolver la ultima etapa DMD en resolucion alta con VRAM limitada.
+- Compatibilidad con LoRAs de aceleracion (Pika LoRA a 6 pasos, LoRA turbo de Alibaba a 8 pasos, LoRA turbo DMD).
+- Integracion en ComfyUI mediante el nodo UNETLoader, manteniendo el text encoder y los VAE del flujo original.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues de texto: es un componente de difusion de video.
 
 ## Casos de uso
 
-- Publicidad de producto con consistencia de sujeto: usar una o varias fotos del producto o del modelo como referencia R2V para generar planos de vídeo donde el objeto mantenga su apariencia entre tomas, evitando el coste de rodaje y de postproducción de cada variante.
-- Moda y prueba virtual (virtual try-on): emplear la prenda y la persona como referencias para producir clips cortos con distintas poses o ángulos, aprovechando que el modelo está entrenado específicamente para preservar la referencia.
-- Previsualización de storyboards y animáticas: convertir bocetos o fotogramas clave en clips de movimiento para validar ritmo y encuadre antes de pasar a producción 3D o rodaje real.
-- Series de contenido con personaje recurrente: mantener un personaje fijo como imagen de referencia para generar múltiples escenas coherentes en redes sociales o vídeo explicativo, reduciendo el trabajo manual de consistencia entre planos.
-- Prototipado e investigación en ComfyUI: sustituir el modelo R2V pruned INT8 de referencia por este merge en un flujo ya existente para comparar resultados, sin tocar codificador de texto ni VAE.
-- Integración en pipelines automatizados: cargar el fichero en un servidor con ComfyUI y disparar generaciones mediante su API para producir variaciones de vídeo a partir de un catálogo de imágenes de referencia.
-- Evaluación de cuantización y merges: comparar este INT8 podado frente a los pesos originales de MiniMax H3 y frente al fine-tune Singularity para medir la degradación introducida por la poda y por la fusión.
-- Generación local sin dependencia de servicios en la nube: al caber en un único fichero de ~21 GB, permite montar un entorno de generación de vídeo en hardware propio, siempre que la licencia comunitaria lo autorice para el uso previsto.
+- Generacion de video R2V en GPU de consumo: el flujo de 16 GB VRAM permite producir clips de 15 segundos a 24 fps en una RTX 4060 Ti 16 GB con 32 GB de RAM, usando el muestreador por teselas para la etapa final a 1920x1088.
+- Prototipado rapido de anuncios y contenido para redes: generar a 960x544 con el Pika LoRA a 6 pasos y escalar el latente x2 reduce el coste por iteracion frente a generar directamente en alta resolucion.
+- Integracion en pipelines de ComfyUI existentes: al ser un unico safetensors que sustituye al modelo de difusion en UNETLoader, se puede cambiar el modelo sin rehacer el grafo ni reinstalar el text encoder o los VAE.
+- Previsualizacion de storyboards con referencia visual: la condicion R2V permite mantener la identidad de un sujeto o el estilo de una imagen de referencia a lo largo del clip.
+- Refinado de video en dos etapas: el flujo turbo 8+2 combina una pasada rapida a baja resolucion con un refinado final mediante el refiner de NVIDIA, util para producir versiones de alta calidad solo cuando el borrador es valido.
+- Despliegue en estaciones de trabajo con una sola GPU: el formato INT8 podado reduce el peso del modelo a ~21 GB, lo que encaja en entornos con 16 GB de VRAM apoyados en RAM de sistema y muestreo por teselas.
+- Experimentacion con merges de la comunidad: sirve como base para probar combinaciones de LoRAs y fine-tunes sobre MiniMax H3 sin partir de los pesos completos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas objetivas (FVD, CLIP-score, consistencia de identidad, adherencia al prompt) ni comparaciones cuantitativas con el modelo base o con el fine-tune Singularity.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo aporta datos operativos del flujo de ejemplo: 960x544 de generacion, upscale x2 del latente a 1920x1088, clip de 15 segundos a 24 fps, probado en una RTX 4060 Ti de 16 GB con 32 GB de RAM de sistema.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos INT8 ocupan unos 20,97 GB, por lo que se necesita al menos esa cantidad solo para el modelo de difusión, más la memoria de activaciones, el codificador de texto y los VAE del flujo MiniMax H3. Estimación orientativa a partir del tamaño del fichero: 24 GB de VRAM es el mínimo ajustado y 32-48 GB es el rango recomendable; no hay cifras oficiales publicadas.
-- GPU recomendadas: A100 (40 u 80 GB) y H100 (80 GB) para ejecución holgada sin offloading; en el extremo consumer, RTX 4090 (24 GB) o RTX 5090 pueden intentarlo, pero con riesgo de quedarse sin memoria al aumentar resolución, duración o número de fotogramas.
-- ¿Cabe en GPU consumer? Sí en tarjetas de 24 GB o más, en el límite y probablemente requiriendo carga por etapas u offloading de módulos auxiliares; no se garantiza en tarjetas de 16 GB o menos.
-- Opciones de despliegue: ComfyUI es el único entorno documentado, con una versión que soporte el formato MiniMax H3 pruned INT8 (ConvRot). No se documenta compatibilidad con vLLM, TGI, llama.cpp, Ollama ni Diffusers, ni existencia de una versión GGUF.
-- Latencia y throughput: no disponibles. Dependen de la GPU, de la resolución y de la duración del clip, parámetros que la model card no especifica.
+- VRAM estimada: el flujo de referencia funciona con 16 GB de VRAM; el archivo pesa ~21 GB, por lo que en GPUs de 16 GB se requiere descarga por teselas y RAM de sistema.
+- RAM de sistema: 32 GB en la configuracion probada por el autor.
+- GPU probada: RTX 4060 Ti 16 GB.
+- GPU recomendadas: no disponibles en la informacion proporcionada; por tamano de VRAM, el flujo encaja en GPUs de 16 GB o mas, y con holgura en tarjetas de 24 GB o superiores.
+- Cabe en GPU de consumo: si, segun el autor, en una RTX 4060 Ti de 16 GB con el flujo de muestreo por teselas.
+- Opciones de despliegue: ComfyUI (v0.44.0 o superior) con soporte del formato MiniMax H3 pruned INT8 (ConvRot); nodos DENO Custom Nodes v0.7.126 o superior para el tiled sampler.
+- Latencia y throughput: no disponibles; solo se indica la duracion del clip de ejemplo (15 s a 24 fps), no el tiempo de generacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto / duración | Cuantización | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniMax-H3-DenoMix (este modelo) | Difusión R2V / image-text-to-video, merge | no disponible | no disponible | INT8 podado (ConvRot), fichero único de ~20,97 GB | MiniMax H3 Community License Agreement | Hugging Face, 0 descargas, 0 likes |
-| MiniMaxAI/MiniMax-H3 | Difusión R2V, modelo base | no disponible | no disponible | no disponible en la información proporcionada | MiniMax H3 Community License Agreement | Hugging Face (referenciado como base) |
-| WarmBloodAban/Minimax-h3_Singularity | Fine-tune de MiniMax H3 | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face (referenciado como base del merge) |
-| Otros modelos R2V de código abierto de la misma categoría | Difusión de vídeo | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
+| MiniMax-H3-DenoMix | Difusion video R2V (merge) | no disponible | no disponible | MiniMax H3 Community License | safetensors INT8 podado, ~21 GB | Hugging Face, 83.178 descargas |
+| MiniMaxAI/MiniMax-H3 | Difusion video R2V (base) | no disponible | no disponible | MiniMax H3 Community License | no disponible | Hugging Face |
+| WarmBloodAban/Minimax-h3_Singularity | Fine-tune de MiniMax H3 | no disponible | no disponible | Apache-2.0 | no disponible | Hugging Face |
 
-La comparación relevante es frente a sus dos antecesores: este modelo añade la fusión de Singularity y el empaquetado en un solo fichero INT8 podado, pero no publica métricas que permitan afirmar que supera al modelo base ni al fine-tune original.
+La informacion disponible no incluye datos de rendimiento ni especificaciones completas de los modelos base, por lo que la comparativa se limita a origen, licencia y formato de distribucion.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluaciones: no hay benchmarks, comparativas ni análisis de calidad frente al modelo base, de modo que la mejora atribuida al merge no está demostrada.
-- Validación comunitaria nula: 0 descargas y 0 likes en el momento de la consulta; es un artefacto recién publicado y sin contraste por terceros.
-- Cuantización con poda agresiva: la conversión a INT8 con poda y rotación ConvRot puede introducir pérdida de detalle fino, flicker temporal o degradación de la consistencia de identidad; el autor no cuantifica ese impacto.
-- Dependencia de versión: requiere una build de ComfyUI que soporte el formato MiniMax H3 pruned INT8 (ConvRot); en versiones anteriores el fichero no cargará.
-- Licencia restrictiva y encadenada: los pesos derivan del MiniMax H3 Community License Agreement, no de una licencia open source permisiva; es imprescindible revisar el texto de `LICENSE` y el `NOTICE` antes de cualquier uso comercial. El componente Singularity es Apache-2.0, pero la obra derivada queda sujeta a la licencia del modelo base.
-- Falta de documentación técnica: no se publican parámetros, resolución, duración máxima, pasos de muestreo recomendados, CFG ni guía de prompting, lo que obliga a experimentar por prueba y error.
-- Idioma: no se documenta el comportamiento con prompts en castellano ni en otros idiomas; conviene validar la adherencia al texto antes de usarlo en producción.
-- Riesgo de uso indebido: al ser un modelo de referencia a vídeo, permite generar clips con la apariencia de personas reales a partir de imágenes; es necesario disponer de consentimiento y aplicar medidas de trazabilidad y marcado de contenido sintético.
-- Sesgos: no documentados. Al no publicarse la composición del dataset de entrenamiento original ni del fine-tune, no es posible evaluar sesgos de representación demográficos o culturales.
-- Artefactos propios de la difusión de vídeo: incoherencias temporales, deformaciones anatómicas y desviaciones del prompt son esperables; no debe tratarse la salida como fiel sin revisión humana.
-- Sin soporte declarado para texto, código, matemáticas, tool calling ni agentes: cualquier expectativa en ese sentido es ajena a la naturaleza del modelo.
+- Es un merge de pesos de la comunidad, no un modelo oficial de MiniMax; el comportamiento puede diferir del modelo base y del fine-tune Singularity por separado.
+- La licencia MiniMax H3 Community License Agreement impone condiciones propias; hay que revisar el archivo LICENSE antes de cualquier uso comercial.
+- El flujo de trabajo incluido esta bajo GPL-3.0-only, mientras que los modelos y nodos que carga conservan sus propias licencias.
+- Requiere una version de ComfyUI que soporte el formato pruned INT8 (ConvRot); versiones anteriores no cargaran el archivo.
+- El flujo de 16 GB depende del nodo DENO Tiled Sampler (DENO Custom Nodes v0.7.126 o superior); sin el, el flujo no se reproduce tal cual.
+- No hay informacion sobre sesgos, idiomas soportados ni tasas de alucinacion visual; no se han publicado evaluaciones de calidad.
+- El rendimiento real (tiempo por clip, estabilidad) no esta documentado mas alla del caso probado por el autor en una RTX 4060 Ti 16 GB.
+- Al ser un modelo de difusion de video, no debe evaluarse con criterios de LLM (razonamiento, tool calling, contexto textual).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Deno2026/MiniMax-H3-DenoMix
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Fine-tune Singularity: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
-- Licencia del modelo (relativa al repositorio): https://huggingface.co/Deno2026/MiniMax-H3-DenoMix/blob/main/LICENSE
-- Aviso de modificaciones (relativo al repositorio): https://huggingface.co/Deno2026/MiniMax-H3-DenoMix/blob/main/NOTICE
-- Licencia Apache-2.0 del componente Singularity (relativa al repositorio): https://huggingface.co/Deno2026/MiniMax-H3-DenoMix/blob/main/LICENSE-Singularity-Apache-2.0.txt
-- Fichero de pesos: https://huggingface.co/Deno2026/MiniMax-H3-DenoMix/blob/main/MiniMax-H3_DenoMix_ref2va_pruned_int8_v3.safetensors
-- ComfyUI (entorno de despliegue documentado): https://github.com/comfyanonymous/ComfyUI
-- Paper, blog o demo oficiales del modelo: no disponible en la información proporcionada.
+- Nodos personalizados DENO para ComfyUI: https://github.com/Deno2026/comfyui-deno-custom-nodes
+- Flujo de trabajo 16 GB VRAM: workflows/Deno_MiniMax_H3_R2V_16GB_Tiled_Sampler.json (en el repositorio del modelo)
+- Flujo de trabajo turbo 8+2: workflows/Deno_MiniMax_H3_R2V_Turbo_8plus2.json (en el repositorio del modelo)
+- Licencia: LICENSE y NOTICE en el repositorio del modelo

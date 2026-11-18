@@ -5,7 +5,7 @@
   "author": "FlagRelease",
   "url": "https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-hygon-FlagOS-Express",
   "created_at": "2026-08-14T14:15:53.000Z",
-  "updated_at": "2026-08-16T02:56:13.000Z",
+  "updated_at": "2026-11-17T06:37:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

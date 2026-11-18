@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "iapp/OpenThai2.1-OCR-Text-20261118",
+  "slug": "iapp-openthai2-1-ocr-text-20261118",
+  "author": "iapp",
+  "url": "https://huggingface.co/iapp/OpenThai2.1-OCR-Text-20261118",
+  "created_at": "2026-10-02T14:51:01.000Z",
+  "updated_at": "2026-11-18T03:34:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "thai",
+    "openvino",
+    "text-recognition",
+    "text-detection",
+    "image-to-text",
+    "th",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 80,
+  "downloads_30d": 3216,
+  "trending_score": 52,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9031019,
+  "storage_human": "9 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IAPP",
+      "url": "https://iapp.org/",
+      "snippet": "The IAPP is a policy neutral, not-for-profit association founded in 2000 with a mission to define, promote and improve the professions …"
+    },
+    {
+      "title": "Certification | IAPP",
+      "url": "https://iapp.org/certify",
+      "snippet": "The IAPP offers six distinct CIPP designation concentrations, demonstrating mastery in privacy laws, regulations and frameworks for …"
+    },
+    {
+      "title": "MyIAPP",
+      "url": "https://myiapp.org/",
+      "snippet": "Manage your IAPP account"
+    },
+    {
+      "title": "Préparation à la Certification IAPP : Gouvernance et gestion des ...",
+      "url": "https://www.avocats.ey.com/fr_fr/formations/certification-iapp-gouvernance-et-gestion-des-risques-de-l-ia",
+      "snippet": "Préparation à la Certification IAPP : Gouvernance et gestion des risques de l’intelligence artificielle EY Société d’Avocats vous …"
+    },
+    {
+      "title": "IAPP Store",
+      "url": "https://store.iapp.org/",
+      "snippet": "Exclusive networking events and discounted pricing on all products, including our popular conferences, are just two of many valuable …"
+    }
+  ]
+}

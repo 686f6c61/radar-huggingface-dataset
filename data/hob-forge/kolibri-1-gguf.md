@@ -2,113 +2,109 @@
 
 ## Resumen
 
-Kolibri-1 GGUF es la conversion a formato GGUF del modelo Aleph-Alpha/Kolibri-1, un modelo de razonamiento de tipo mezcla de expertos (MoE) desarrollado por Aleph Alpha. El modelo original cuenta con 78.103.074.560 parametros totales y activa aproximadamente 3.460 millones por token, lo que permite un coste de inferencia mucho menor que el de un modelo denso del mismo tamano. Esta publicacion, obra del usuario Hob-forge, es una conversion independiente no afiliada ni respaldada por Aleph Alpha ni por el proyecto llama.cpp.
+Kolibri-1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Aleph Alpha, con 78.103.074.560 parametros totales y 3.460 millones de parametros activos por token. Esta disenado para generacion de texto, razonamiento y tool calling en aleman e ingles, y se distribuye bajo licencia Apache-2.0. La ficha que nos ocupa, `Hob-forge/Kolibri-1-GGUF`, es una conversion independiente a formato GGUF realizada por el usuario Hob-forge, no avalada por Aleph Alpha ni por el proyecto llama.cpp.
 
-El modelo esta disenado para generacion de texto, razonamiento y llamadas a herramientas en aleman e ingles, y se distribuye bajo licencia Apache-2.0. Su relevancia radica en que ofrece un MoE de gran tamano con soporte de modo de razonamiento configurable (none, low, medium, high) y plantilla de chat con tool calling, todo ello ejecutable en hardware de consumo mediante cuantizacion. El contexto configurable en el ejemplo de ejecucion es de 32.768 tokens, aunque el autor advierte que no se han verificado contextos por encima de 8.192 tokens.
+El modelo base emplea una arquitectura transformer con atencion GQA (48 cabezas de consulta y 4 de clave/valor, head_dim 128), 384 expertos enrutados con seleccion top-6 y un experto compartido sin compuerta en cada capa. Incorpora un modo de razonamiento configurable por peticion (`none`, `low`, `medium`, `high`) y plantilla de chat con soporte de tool calls. La relevancia de esta ficha radica en que permite ejecutar el modelo en hardware de consumo mediante cuantizacion, aunque requiere un parche especifico de llama.cpp porque la arquitectura `kolibri1` no esta soportada en la version upstream.
 
-Esta ficha se centra en la conversion GGUF; conviene tener presente que el modelo base subyacente es Kolibri-1 de Aleph Alpha.
+La conversion incluye seis niveles de cuantizacion (Q2_K a Q8_0) generados a partir de un GGUF BF16 intermedio obtenido del checkpoint FP8 original de Aleph Alpha. El repositorio ocupa 316,6 GB y acumula 14.316 descargas y 28 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer; atencion GQA con patron 4:1 (cuatro capas de ventana deslizante y una de atencion completa) |
+| Arquitectura | Transformer MoE con atencion GQA (48 cabezas Q, 4 KV, head_dim 128), patron 4:1 de capas sliding-window (ventana 513, RoPE) y atencion completa (sin codificacion posicional) |
 | Parametros totales | 78.103.074.560 |
-| Parametros activos | 3.460 millones por token (aproximado, indicado por el autor) |
-| Longitud de contexto | 32.768 tokens en el ejemplo de ejecucion; no verificado por encima de 8.192 tokens |
-| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q6_K y Q8_0 |
-| Idiomas soportados | Aleman (de) e ingles (en) |
+| Parametros activos | 3,46 mil millones por token |
+| Longitud de contexto | 32.768 tokens (valor usado en el ejemplo de ejecucion de la model card) |
+| Tipos de cuantizacion | Q2_K, Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | aleman (de), ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (origen FP8 e4m3 con escalas de bloque 128x128, convertido a BF16 y cuantizado) |
+| Formato de pesos | GGUF (llama.cpp); el checkpoint original es FP8 e4m3 con escalas de bloque 128x128 |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de mezcla de expertos con 384 expertos enrutados y seleccion top-6, mas un experto compartido sin puerta en cada capa. La atencion usa GQA con 48 cabezas de consulta y 4 cabezas de clave/valor, con dimension de cabeza 128 y RMSNorm por cabeza en q y k. Las capas siguen un patron de repeticion 4:1: cuatro capas de ventana deslizante (ventana 513, con RoPE) por cada capa de atencion completa (sin codificacion posicional). El bloque MoE se enruta seleccionando sobre logits + expert_bias y ponderando por sigmoid(logits) sin bias y sin renormalizacion, un modo de gating distinto del router sigmoide de DeepSeek-V3 que incorpora llama.cpp. Se aplican normas tipo sandwich alrededor de los bloques de atencion y MoE.
+El modelo base es un transformer MoE con 384 expertos enrutados y seleccion top-6, mas un experto compartido sin compuerta en cada capa. El enrutador selecciona expertos sobre `logits + expert_bias` y pondera con `sigmoid(logits)` sin renormalizacion, un comportamiento distinto del router sigmoide de DeepSeek-V3 que implementa llama.cpp de serie; por ello el parche anade un modo de gating nuevo. Las capas alternan en patron 4:1: cuatro capas de atencion con ventana deslizante de 513 tokens y RoPE, seguidas de una capa de atencion completa sin codificacion posicional. Se aplican sandwich norms alrededor de los bloques de atencion y de MoE, y normalizacion RMS por cabeza en q y k.
 
-Los pesos originales de Aleph Alpha estaban en FP8 e4m3 con escalas de bloque 128x128. El conversor los dequantiza a BF16, y tanto el Q4_K_M como los demas quants se generan a partir de ese GGUF BF16, por lo que ninguno es una recuantizacion. El Q4_K_M contiene 903 tensores: 426 Q4_K, 76 Q6_K y 401 F32 (normas, puertas del router y sesgos de expertos). No se aplico matriz de importancia ni entrenamiento adicional. No se dispone de informacion en el material proporcionado sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO del modelo original.
+La informacion disponible no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. La model card de esta conversion solo documenta el proceso de cuantizacion: los pesos se convirtieron desde el checkpoint FP8 de Aleph Alpha, se dequantizaron a BF16 y de ese GGUF BF16 se generaron todas las cuantizaciones, de modo que ninguna es una recuantizacion. Q4_K_M, Q5_K_M, Q6_K y Q8_0 no usan matriz de importancia; Q3_K_M y Q2_K (y tambien Q5_K_M) emplean una matriz de importancia calculada desde el Q8_0 sobre `calibration_datav3` (128 x 512 tokens), con cobertura parcial del 93-98 % en algunos expertos raramente enrutados. El Q4_K_M contiene 903 tensores: 426 Q4_K, 76 Q6_K y 401 F32 (normas, compuertas del router y sesgos de expertos).
 
 ## Capacidades
 
 - Generacion de texto conversacional en aleman e ingles.
-- Razonamiento configurable por peticion mediante `reasoning_effort` con valores `none`, `low`, `medium` y `high`; el modo de pensamiento se emite con la etiqueta `<think>`.
-- Llamada a herramientas y function calling: la plantilla de chat incluida en el GGUF gestiona las llamadas y los resultados de herramientas.
-- Razonamiento multi-paso orientado a agentes gracias al modo de razonamiento y al soporte de tool calling.
-- Resolucion de problemas aritmeticos verificables con el razonamiento activado.
-- Resumen de documentos largos (probado con un prompt de 1.393 tokens en aleman).
+- Razonamiento con esfuerzo configurable por peticion mediante `chat_template_kwargs`: `reasoning_effort` acepta `none`, `low`, `medium` y `high`, con bloques `<think>` en la plantilla de chat.
+- Tool calling / function calling: la plantilla embebida en el GGUF gestiona llamadas a herramientas y resultados de herramientas.
+- Razonamiento multi-paso orientado a agentes, segun las etiquetas del repositorio (`reasoning`, `tool-calling`).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
 - No se documentan capacidades de vision, audio ni otras modalidades en la informacion disponible.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno en aleman e ingles con una ventana de hasta 32.768 tokens, lo que permite incluir historial extenso y documentacion de soporte en el mismo contexto.
-- Agentes con acceso a herramientas: gracias al soporte nativo de tool calling en la plantilla de chat, se puede integrar en flujos que consulten APIs externas (por ejemplo, meteorologia, bases de datos o sistemas internos) y encadenen varios pasos de razonamiento.
-- Generacion y analisis de codigo asistido: aunque no se detallan benchmarks de codigo, el soporte de function calling permite integrarlo en asistentes de desarrollo que invoquen herramientas o ejecuten acciones dentro de un IDE.
-- Razonamiento sobre documentos en aleman: el modelo esta optimizado para este idioma, algo poco habitual en la mayoria de modelos abiertos, por lo que resulta util para resumen y extraccion de informacion en corpus germanoparlantes.
-- Procesamiento por lotes en servidores con CPU: al ejecutarse desde RAM del sistema, encaja en entornos donde no hay GPU disponible y se necesita procesar tareas de generacion a bajo throughput pero con coste de hardware reducido.
-- Asistentes de investigacion con control de esfuerzo de razonamiento: ajustando `reasoning_effort` se puede equilibrar latencia y profundidad segun la tarea, usando `low` para respuestas rapidas y `high` para analisis complejos.
-- Prototipado local de aplicaciones con MoE: sirve para evaluar el comportamiento de una arquitectura MoE de 78B en un equipo de consumo antes de desplegarla en infraestructura mayor.
+- Asistencia conversacional en aleman e ingles: el modelo puede mantener dialogos multi-turno con hasta 32.768 tokens de contexto, adecuado para soporte al cliente en empresas que operan en ambos idiomas.
+- Agentes con tool calling: integracion en flujos donde el modelo decide que funcion invocar (consultas a APIs, busquedas, operaciones sobre bases de datos) gracias al soporte nativo de la plantilla de chat para herramientas.
+- Razonamiento con coste controlado: el parametro `reasoning_effort` permite usar `low` o `none` en tareas simples y `high` en problemas complejos, ajustando latencia y consumo por peticion.
+- Despliegue en hardware de consumo: con Q4_K_M (47,5 GB) el modelo cabe en maquinas con 64 GB de RAM o en configuraciones hibridas GPU+RAM, lo que permite ejecutarlo en estaciones de trabajo sin aceleradores de datacenter.
+- Procesamiento de documentos largos en aleman: la ventana de 32.768 tokens permite resumir o extraer informacion de contratos, informes tecnicos o documentacion legal en aleman.
+- Generacion asistida en pipelines internos: al ser Apache-2.0, puede integrarse en herramientas corporativas sin restricciones de uso comercial, con llama.cpp como runtime.
+- Experimentacion e investigacion: las seis cuantizaciones permiten estudiar el impacto de la compresion en la calidad (la model card incluye comparativas de KL y acuerdo top-1 frente a una referencia en float64).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor si aporta verificaciones de fidelidad de la cuantizacion y mediciones de perplexidad sobre una muestra reducida:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. La model card si incluye verificaciones de fidelidad de la cuantizacion frente a una referencia independiente en PyTorch float64 (prompt de chat de 67 tokens, logits completos en cada posicion):
 
-| Prueba | Resultado |
-|---|---|
-| Fidelidad frente a referencia PyTorch float64 (67 tokens, logits completos) - Q8_0 | top-1 67/67, KL media 0.0048 |
-| Fidelidad - Q6_K | top-1 67/67, KL media 0.0037 |
-| Fidelidad - Q5_K_M | top-1 64/67, KL media 0.0065 |
-| Fidelidad - Q4_K_M | top-1 63/67, KL media 0.0129 |
-| Misma prueba con router estilo DeepSeek (control) | top-1 10/67, KL media 8.36 |
-| Perplexidad en muestra mixta de 7 KB (2 fragmentos de 512 tokens) - Q4_K_M | 6.70 ± 0.80 |
-| Perplexidad en la misma muestra - Q8_0 | 6.73 ± 0.81 |
+| Cuantizacion | Acuerdo top-1 | KL media vs referencia |
+|---|---|---|
+| Q8_0 | 67/67 | 0,0048 |
+| Q6_K | 67/67 | 0,0037 |
+| Q5_K_M | 64/67 | 0,0065 |
+| Q4_K_M | 63/67 | 0,0129 |
+| Q3_K_M | 66/67 | 0,0340 |
+| Q2_K | 64/67 | 0,1292 |
+| Mismo modelo con router estilo DeepSeek (control) | 10/67 | 8,36 |
 
-Pruebas funcionales en CPU (Q4_K_M, AMD Ryzen 7 7800X3D, 8 hilos, 128 GB RAM, sin GPU):
+Rendimiento medido con `llama-bench` el 2026-10-07 sobre AMD Ryzen 7 7800X3D, 128 GB DDR5-6400 (2 x 64 GB), RTX 5070 de 12 GB, 8 hilos y flash attention activado, con Q4_K_M:
 
-| Prueba | Resultado | Prompt t/s | Generacion t/s |
-|---|---|---|---|
-| Explicacion en aleman (por que el cielo es azul) | correcta, aleman fluido | 52.7 | 14.2 |
-| Poema en ingles | coherente | 39.4 | 14.9 |
-| Problema aritmetico con respuesta verificable (razonamiento activado) | correcto: 1.5 | 62.5 | 13.2 |
-| Llamada a herramienta (tiempo en Heidelberg) | llamada correcta `get_weather` con argumento `{"city": "Heidelberg"}` | 71.5 | 14.3 |
-| Prompt de 1.393 tokens en aleman | resumen coherente de cuatro temas | 75.7 | 11.9 |
-
-El autor advierte que la muestra de perplexidad es demasiado pequena para considerarse un benchmark y solo demuestra que el modelo no esta roto.
+| Configuracion | Prompt (512 tokens) | Generacion (128 tokens) |
+|---|---|---|
+| Solo CPU (GPU oculta) | 83 ± 13 tok/s | 12,3 ± 1,4 tok/s |
+| GPU para atencion y experto compartido, expertos enrutados en RAM | no disponible (dato truncado en la informacion) | no disponible (dato truncado en la informacion) |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada por cuantizacion: Q4_K_M 47.5 GB en disco y 46.6 GB de RAM en CPU; Q5_K_M 55.6 GB; Q6_K 64.2 GB; Q8_0 83.1 GB en disco y 81.6 GB de RAM en CPU.
-- No cabe en GPUs de consumo de gama alta de forma completa. El Q4_K_M de 47.5 GB excede los 24 GB de una RTX 4090 o los 16 GB de una RTX 4080, por lo que requiere CPU con mucha RAM o repartir el modelo entre VRAM y RAM.
-- Ejecucion en CPU: el autor probo Q4_K_M y Q8_0 sin GPU. Q4_K_M genero entre 11.9 y 14.9 t/s con procesamiento de prompt de 39 a 76 t/s. Q8_0 alcanzo 9-10 t/s de generacion y 30-52 t/s de prompt.
-- Tiempos de carga en CPU desde disco de red sin mmap: Q4_K_M tardo 478 s y Q8_0 638 s.
-- Requiere un parche de llama.cpp: la arquitectura `kolibri1` no esta soportada en la version estandar. Se debe aplicar `kolibri1-llama.cpp.patch` sobre el commit `836d571` y compilar `llama-server` y `llama-cli`.
-- Opciones de despliegue: llama.cpp (compilado con el parche). Ollama, LM Studio y otras aplicaciones basadas en llama.cpp no cargaran el archivo hasta que integren soporte para la arquitectura.
-- Comando de ejemplo: `./build/bin/llama-server -m Kolibri-1-Q4_K_M.gguf -c 32768 --jinja --temp 1.0 --top-p 0.97 --top-k 128`.
-- Para los archivos divididos (Q5_K_M, Q6_K, Q8_0) hay que apuntar llama.cpp a la primera parte; la segunda se carga automaticamente.
-- Aviso del autor: los indicadores de hardware de Hugging Face solo cuentan memoria de GPU; estos archivos funcionan desde RAM del sistema y, con GPU, llama.cpp puede mantener parte en VRAM y el resto en RAM.
+- VRAM/RAM estimada segun cuantizacion: Q2_K 28,6 GB; Q3_K_M 37,5 GB; Q4_K_M 47,5 GB; Q5_K_M 55,6 GB (2 partes); Q6_K 64,2 GB (2 partes); Q8_0 83,1 GB (2 partes).
+- Consumo de RAM medido en CPU sin mmap: Q4_K_M 46,6 GB; Q8_0 81,6 GB.
+- El modelo puede ejecutarse desde RAM del sistema; con GPU, llama.cpp puede mantener parte del modelo en VRAM y el resto en RAM (la model card advierte que el indicador de hardware de Hugging Face solo cuenta VRAM y por eso aparece en rojo).
+- Configuracion de referencia probada: RTX 5070 de 12 GB con atencion y experto compartido en GPU y expertos enrutados en RAM.
+- No cabe integro en GPUs de consumo de 12-24 GB en ninguna cuantizacion; requiere 32 GB o mas de VRAM para las cuantizaciones bajas, o bien configuracion hibrida.
+- Despliegue: llama.cpp con el parche `kolibri1-llama.cpp.patch` aplicado sobre el commit upstream `836d571`, o el binario precompilado `hob-b11434` (Windows CUDA/Vulkan/ROCm/CPU, Linux e Intel Mac). Ollama, LM Studio y otras aplicaciones basadas en llama.cpp no cargaran el archivo hasta que incluyan soporte de la arquitectura.
+- Comando de ejemplo: `llama-server -m Kolibri-1-Q4_K_M.gguf -c 32768 --jinja --temp 1.0 --top-p 0.97 --top-k 128`.
+- Throughput medido en CPU: 83 tok/s de prompt y 12,3 tok/s de generacion con Q4_K_M en el equipo de referencia.
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks comparativos verificados en la informacion proporcionada. El propio autor menciona el router sigmoide de DeepSeek-V3 como referencia arquitectonica (su modo de gating difiere), pero no se aportan cifras de rendimiento del modelo frente a alternativas. Se indica "no disponible" para los campos de rendimiento comparado.
+No se dispone de datos de benchmarks del modelo base ni de modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no esta disponible. A continuacion se comparan solo los datos estructurales conocidos frente al checkpoint original:
 
-| Modelo | Parametros | Contexto | Licencia | Rendimiento comparado |
-|---|---|---|---|---|
-| Kolibri-1 (via esta conversion GGUF) | 78.103 millones totales, 3.46 mil millones activos | 32.768 tokens en el ejemplo | Apache-2.0 | no disponible |
-| Alternativas MoE de razonamiento comparables | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Kolibri-1 (original, Aleph-Alpha) | 78,1 B | 3,46 B | no disponible | Apache-2.0 | FP8 e4m3 |
+| Kolibri-1-GGUF (esta ficha) | 78,1 B | 3,46 B | 32.768 (ejemplo de ejecucion) | Apache-2.0 | GGUF (Q2_K a Q8_0) |
+
+No se han identificado en la informacion disponible otros modelos MoE de tamano y licencia comparables para establecer una comparativa adicional.
 
 ## Limitaciones y advertencias
 
-- La arquitectura `kolibri1` no es compatible con llama.cpp estandar; sin aplicar el parche el archivo no carga. Ollama, LM Studio y aplicaciones similares no lo soportan todavia.
-- Los backends de GPU (CUDA, Vulkan y Metal) no fueron probados por el autor. En CUDA, el router nuevo deberia recurrir a la ruta MoE sin fusionar, correcta pero mas lenta.
-- El rendimiento en contextos superiores a 8.192 tokens no esta verificado.
-- La muestra de perplexidad usada es demasiado pequena para extraer conclusiones de calidad; no sustituye a un benchmark.
-- El modelo solo soporta aleman e ingles; no se documentan capacidades multilingues mas alla de estos dos idiomas.
-- No se dispone de informacion sobre sesgos, comportamiento en dominios sensibles ni tasas de alucinacion medidas.
-- Riesgo de alucinacion inherente a los modelos generativos; en tareas de tool calling conviene validar los argumentos antes de ejecutar acciones.
-- La conversion es independiente y no esta respaldada por Aleph Alpha ni por el proyecto llama.cpp; la responsabilidad de la fidelidad de los quants recae en el autor de la conversion.
-- Licencia Apache-2.0, que permite uso comercial, pero deben respetarse las condiciones de atribucion y las de los pesos originales del modelo base.
+- Solo soporta aleman e ingles; no se documenta cobertura de otros idiomas, incluido el espanol.
+- Requiere un parche especifico de llama.cpp: la version upstream no reconoce la arquitectura `kolibri1`, y Ollama, LM Studio y otras aplicaciones derivadas no podran cargar el modelo hasta que la incorporen.
+- La conversion es independiente y no esta avalada por Aleph Alpha ni por el proyecto llama.cpp; la responsabilidad de validacion recae en el usuario.
+- Q2_K muestra una divergencia notable frente a la referencia (KL media 0,1292 y 64/67 de acuerdo top-1), por lo que no es recomendable para produccion sensible a la calidad; Q4_K_M y superiores son practicamente sin perdida en la prueba realizada.
+- La matriz de importancia de Q2_K, Q3_K_M y Q5_K_M tiene cobertura parcial (93-98 %) en algunos expertos raramente enrutados, lo que puede afectar a dominios de nicho.
+- No se documentan sesgos conocidos ni tasas de alucinacion en la informacion disponible; como todo modelo generativo, existe riesgo de alucinacion, especialmente con `reasoning_effort: none`.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base y esta conversion se ofrecen sin garantias; conviene validar el comportamiento en el dominio de produccion antes de desplegarlo.
+- El contexto maximo documentado en el ejemplo es de 32.768 tokens; no se confirma si el modelo soporta ventanas mayores.
+- El repositorio ocupa 316,6 GB, por lo que la descarga y el almacenamiento requieren planificacion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Hob-forge/Kolibri-1-GGUF
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Binario precompilado con el parche: https://github.com/Seraphiel102/llama.cpp/releases/tag/hob-b11434
+- llama.cpp upstream: https://github.com/ggml-org/llama.cpp
 - Parche de arquitectura: `kolibri1-llama.cpp.patch` (incluido en el repositorio GGUF)

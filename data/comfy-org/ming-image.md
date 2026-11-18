@@ -2,98 +2,80 @@
 
 ## Resumen
 
-Comfy-Org/Ming-Image es un repositorio de redistribución de los pesos del modelo de difusión Ming-Image-0.1-Design, desarrollado originalmente por inclusionAI, empaquetados en ficheros únicos (single-file) en formato safetensors para su uso directo en ComfyUI. El repositorio no contiene una model card técnica del modelo original: se limita a indicar el origen de los pesos y la ubicación exacta de cada fichero dentro del árbol de directorios de ComfyUI.
+Ming-Image es un modelo de difusion para generacion y edicion de imagenes desarrollado originalmente por inclusionAI (familia Ming-Image 0.1 Design). El repositorio analizado, Comfy-Org/Ming-Image, no es el modelo original sino un reempaquetado de sus pesos en formato de fichero unico (diffusion-single-file) para su uso directo en ComfyUI. Incluye los pesos del modelo de difusion, del text encoder (Ling Mini 2.0) y del VAE, en variantes bf16, int8 y w4a8.
 
-El paquete incluye cuatro variantes del modelo de difusión (bf16 e int8, en versión estándar y en variante "Layer"), cinco variantes del codificador de texto (Ling-mini 2.0 en bf16, int8, w4a8 y sus equivalentes Layer) y un VAE en bf16. El tamaño total del repositorio es de 162,4 GB, lo que refleja la inclusión de todas las variantes de precisión en un mismo espacio.
+El modelo resuelve dos tareas principales: generacion de imagen a partir de texto (text-to-image) y edicion de imagen guiada por instrucciones (image edit). Su relevancia practica reside en que Comfy-Org publica los ficheros ya troceados y con workflows oficiales de referencia, lo que elimina el trabajo de conversion y permite cargarlos directamente en los directorios de ComfyUI.
 
-Su relevancia es fundamentalmente práctica: permite a usuarios de ComfyUI desplegar Ming-Image sin tener que convertir pesos ni resolver dependencias de formato, eligiendo entre precisión completa (bf16) y cuantizaciones int8/w4a8 para ajustar el consumo de VRAM. La licencia declarada es MIT. No se dispone de información sobre arquitectura interna, número de parámetros, datos de entrenamiento ni resultados de benchmarks.
+La informacion disponible no detalla el numero de parametros, la longitud de contexto del text encoder ni los datos de entrenamiento; el repositorio ocupa 162,4 GB e incluye variantes cuantizadas para reducir requisitos de VRAM. La licencia es MIT segun los metadatos del repositorio.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión (etiqueta `diffusion-single-file`); sin detalles técnicos publicados en este repositorio |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | no disponible (no aplica al modelo de difusión; no se documenta la del codificador de texto) |
-| Tipos de cuantización | bf16, int8 (`int8_convrot`) y w4a8 (esta última solo para el codificador de texto) |
+| Arquitectura | modelo de difusion (no se especifica el tipo exacto: transformer de difusion, UNet u otro) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16, int8 (convrot), w4a8 (solo text encoder) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (ficheros únicos para ComfyUI) |
-| Componentes incluidos | Modelo de difusión, codificador de texto Ling-mini 2.0 y VAE |
-| Tamaño del repositorio | 162,4 GB |
-| Modelos base | inclusionAI/Ming-Image-0.1-Design, inclusionAI/Ming-Image-0.1-Design-Layer |
+| Formato de pesos | safetensors (diffusion-single-file) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo en este repositorio. La etiqueta `diffusion-single-file` y la estructura de ficheros (modelo de difusión, codificador de texto y VAE como componentes separados) son compatibles con un pipeline de generación de imágenes condicionado por texto, pero no se detalla si emplea un transformer de difusión, una U-Net o un esquema híbrido, ni el número de parámetros de cada componente.
+No se dispone de informacion sobre la arquitectura interna del modelo de difusion (tipo de backbone, mecanismo de atencion, uso de cross-attention con el text encoder o de un esquema de condicionamiento alternativo). El repositorio incluye un text encoder identificado como Ling Mini 2.0, que actua como codificador de prompts, y un VAE independiente para el espacio latente. Se distribuyen dos variantes del modelo de difusion: `ming_image_0.1_design` y `ming_image_0.1_design_layer`, esta ultima presumiblemente orientada a edicion por capas, aunque la model card no describe la diferencia funcional.
 
-Tampoco se documentan los datos de entrenamiento (número de tokens o de pares imagen-texto, composición del dataset, resolución nativa), ni si hubo fases de alineación tipo RLHF, DPO o ajuste por preferencias humanas. El nombre del codificador de texto, Ling-mini 2.0, apunta al uso de un modelo de lenguaje de la familia Ling de inclusionAI como encoder, pero se trata de una inferencia a partir del nombre de fichero, no de un dato confirmado en la información disponible. La variante "Layer" del modelo base sugiere una versión con tratamiento por capas diferenciado, sin más detalle publicado.
+Tampoco se detallan los datos de entrenamiento (numero de imagenes, composicion del dataset, resolucion nativa) ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por preferencias. La cuantizacion int8 con "convrot" (rotacion de convoluciones) y la variante w4a8 del text encoder sugieren un esfuerzo deliberado por reducir el coste de inferencia manteniendo calidad, pero no hay documentacion tecnica publicada en la informacion disponible.
 
 ## Capacidades
 
-- Generación de imágenes a partir de texto: es la función implícita en la estructura del paquete (modelo de difusión más codificador de texto más VAE).
-- Dos variantes funcionales: la versión estándar y la variante "Layer", orientada presumiblemente a un control por capas del resultado, según el nombre del modelo base.
-- Cuantizaciones listas para producción: las variantes int8 y w4a8 permiten reducir huella de memoria y requisitos de VRAM respecto a bf16.
-- Integración nativa con ComfyUI: los ficheros single-file se cargan directamente en los nodos de `diffusion_models`, `text_encoders` y `vae`.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión de entrada, audio ni modo de pensamiento, capacidades que no aplican a un modelo de difusión de imagen.
-- Capacidades multilingües: no disponible. Se desconoce si el codificador de texto Ling-mini 2.0 admite prompts en castellano u otros idiomas.
+- Generacion de imagenes a partir de descripciones textuales (text-to-image), con workflow oficial de ComfyUI.
+- Edicion de imagenes guiada por instrucciones (image edit), con ejemplos antes/despues en la model card.
+- Variante `design_layer` que sugiere soporte de edicion o generacion por capas.
+- Codificacion de prompts mediante el text encoder Ling Mini 2.0, disponible en bf16, int8 y w4a8.
+- Uso directo en ComfyUI sin conversion previa de pesos.
+- No se documentan capacidades de tool calling, agentes, audio, video ni modos de razonamiento explicito, al tratarse de un modelo generativo de imagen.
 
 ## Casos de uso
 
-- Generación de imágenes para diseño gráfico: el modelo se presenta bajo la denominación "Design", por lo que su uso natural es la creación de piezas visuales a partir de descripciones textuales dentro de un flujo de ComfyUI, con control de cada componente del pipeline.
-- Exploración de conceptos y variaciones: al poder cargar el modelo y el codificador de texto por separado, es posible iterar prompts y semillas manteniendo fija la configuración del VAE para comparar resultados de forma reproducible.
-- Despliegue en equipos con VRAM limitada: las variantes int8 (`int8_convrot`) y w4a8 del codificador de texto permiten montar el pipeline en GPUs con menos memoria que la necesaria para bf16, a costa de una pérdida de fidelidad que debe validarse empíricamente.
-- Procesamiento por lotes en servidores propios: al ser ficheros safetensors autocontenidos, se pueden integrar en colas de trabajo sobre ComfyUI o Comfy Cloud para generar lotes de imágenes sin depender de scripts de conversión.
-- Base para ajuste fino o entrenamiento de adaptadores: al tratarse de un derivado (`base_model:finetune`) de Ming-Image-0.1-Design, sirve como punto de partida para quien quiera entrenar variantes o adaptadores sobre los pesos ya normalizados.
-- Prototipado de productos visuales: equipos que necesiten evaluar la calidad del modelo antes de comprometerse con la versión original pueden probarlo rápidamente gracias al empaquetado single-file.
-- Reproducción de flujos compartidos: los nombres de fichero fijos del repositorio permiten que un workflow de ComfyUI se comparta y se reproduzca en otra máquina sin ambigüedad de rutas ni de versiones de pesos.
+- Generacion de ilustraciones para prototipado de producto: el workflow text-to-image permite iterar rapidamente sobre conceptos visuales a partir de descripciones en lenguaje natural, cargando los pesos bf16 en ComfyUI sin pasos intermedios.
+- Edicion de imagenes existentes en flujos de diseno grafico: el workflow image edit permite aplicar transformaciones guiadas por texto sobre una imagen de entrada, util para variaciones de estilo o sustitucion de elementos.
+- Creacion de assets para videojuegos y entornos 3D: la variante `design_layer` puede emplearse para generar elementos por capas que luego se integren en pipelines de arte 2D.
+- Automatizacion de contenido visual en marketing: mediante la API de ComfyUI se pueden encadenar nodos de generacion y edicion para producir variantes de un creativo a partir de una plantilla.
+- Despliegue en estaciones de trabajo con VRAM limitada: las variantes int8 del modelo de difusion y del text encoder, junto con la w4a8, permiten ejecutar el modelo en GPUs de gama alta consumer reduciendo el consumo de memoria frente a bf16.
+- Investigacion en difusion aplicada: al ser un reempaquetado con licencia MIT y pesos en safetensors, sirve como base para experimentos de cuantizacion, comparativas de calidad entre precisiones o ajuste fino del text encoder.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de FID, CLIP score, GenEval, HPSv2 ni de ninguna otra métrica de evaluación de generación de imágenes, ni comparaciones con modelos alternativos. Tampoco se documentan tiempos de inferencia, número de pasos de muestreo recomendados ni resolución de salida.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. No se publican cifras de consumo de memoria para ninguna de las variantes.
-- Almacenamiento: el repositorio completo ocupa 162,4 GB; en la práctica solo es necesario descargar las variantes que se vayan a usar (bf16 o int8/w4a8), lo que reduce el espacio requerido.
-- GPU recomendadas: no disponible. No se especifican modelos de GPU compatibles ni mínimos.
-- GPU de consumo: no se puede confirmar. La existencia de variantes int8 y w4a8 indica que el autor contempla escenarios con memoria limitada, pero no hay confirmación de que quepan en GPUs de gama de consumo tipo RTX 4090 o RTX 3090.
-- Opciones de despliegue: ComfyUI (interfaz de nodos), ComfyUI Desktop y Comfy Cloud, tal y como se desprende del empaquetado y del ecosistema del repositorio. vLLM, llama.cpp, Ollama y TGI no aplican, ya que no es un modelo de lenguaje.
+- VRAM estimada para inferencia: no disponible de forma oficial. El repositorio completo ocupa 162,4 GB, pero ese tamano incluye todas las variantes (bf16, int8, w4a8) y los tres componentes; la huella en VRAM de una configuracion concreta depende de la variante elegida y no se documenta.
+- GPU recomendadas: no disponible. Por el perfil de las variantes cuantizadas, se orienta a GPUs consumer de gama alta y a GPUs de datacenter, pero no hay especificacion oficial.
+- Compatibilidad con GPU consumer: probable con las variantes int8 y w4a8, pero sin cifras confirmadas en la informacion disponible.
+- Opciones de despliegue: ComfyUI es el entorno de referencia (libreria `diffusion-single-file`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a modelos de difusion de este tipo.
 - Latencia y throughput: no disponibles.
-- Gestión de memoria: ComfyUI permite descargar componentes a RAM del sistema y cargarlos bajo demanda, lo que puede aliviar el requisito de VRAM a costa de velocidad.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos técnicos (parámetros, contexto, benchmarks) de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento. La única comparación documentada es la relación con los repositorios originales de los que deriva este empaquetado:
-
-| Repositorio | Desarrollador | Relación | Formato | Licencia | Tamaño |
-|---|---|---|---|---|---|
-| Comfy-Org/Ming-Image | Comfy-Org | Redistribución empaquetada para ComfyUI | safetensors single-file (bf16, int8, w4a8) | MIT | 162,4 GB |
-| inclusionAI/Ming-Image-0.1-Design | inclusionAI | Modelo original | no disponible | no disponible | no disponible |
-| inclusionAI/Ming-Image-0.1-Design-Layer | inclusionAI | Modelo original, variante Layer | no disponible | no disponible | no disponible |
-
-Comparación con otros modelos de difusión de imagen de propósito general (por ejemplo, familias alternativas de texto a imagen): no disponible en la información proporcionada.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- Este repositorio no es la publicación original del modelo, sino un reempaquetado: si se necesita información fiable sobre arquitectura, entrenamiento, sesgos o licencia, debe consultarse la documentación de inclusionAI.
-- Ausencia total de model card técnica: no hay datos de arquitectura, parámetros, dataset, ni evaluación, lo que dificulta cualquier decisión de adopción en producción.
-- Sin benchmarks publicados: no es posible estimar la calidad de generación frente a alternativas.
-- Licencia: el repositorio declara MIT, pero no se verifica si la licencia del modelo original impone condiciones adicionales. Conviene confirmarlo antes de un uso comercial.
-- Riesgo de sesgos y de alucinación visual: no documentado. Como en cualquier modelo de difusión entrenado con datos no especificados, pueden aparecer sesgos demográficos, estereotipos y errores de fidelidad respecto al prompt.
-- Idiomas: se desconoce si el codificador de texto Ling-mini 2.0 está optimizado para castellano o si el rendimiento con prompts en español es inferior al de otros idiomas.
-- Adopción muy baja: 0 descargas y 12 likes en el momento de la consulta, lo que implica poca validación por parte de la comunidad y escasez de flujos de trabajo de referencia.
-- Impacto en disco y en red: 162,4 GB de repositorio completo; conviene descargar únicamente las variantes necesarias.
-- Diferencias entre variantes: el comportamiento de las versiones int8 y w4a8 puede degradar la calidad final; se recomienda compararlas contra bf16 antes de fijarlas en un pipeline de producción.
+- No se documentan sesgos conocidos del modelo; al ser un generador de imagenes, es esperable que herede sesgos de su dataset de entrenamiento, pero no hay analisis publicado en la informacion disponible.
+- Riesgo de alucinacion visual: como todo modelo generativo, puede producir elementos incoherentes o no solicitados, especialmente en prompts ambiguos.
+- No se especifican los idiomas soportados por el text encoder Ling Mini 2.0; la calidad con prompts en castellano no esta verificada.
+- La licencia MIT del reempaquetado aplica a estos ficheros; conviene verificar la licencia de los pesos originales de inclusionAI antes de un uso comercial, ya que la model card no la detalla.
+- El repositorio es un reempaquetado de terceros (Comfy-Org), no la fuente original; para documentacion tecnica actualizada debe consultarse el repositorio de inclusionAI.
+- El gran tamano del repositorio (162,4 GB) exige planificar el almacenamiento y descargar solo las variantes necesarias.
+- No hay informacion sobre resolucion nativa de salida, limites de longitud de prompt ni restricciones de uso aceptable.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Ming-Image
 - Modelo original: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
-- Modelo original, variante Layer: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
-- ComfyUI en GitHub: https://github.com/Comfy-Org/ComfyUI
-- Sitio oficial de Comfy: https://comfy.org/
-- Descarga de Comfy Desktop: https://comfy.org/download
-- Portal de generación con ComfyUI: https://www.comfyai.org/
-- Comunidad francófona de ComfyUI: https://comfyui.fr/
+- Variante por capas: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
+- ComfyUI (repositorio): https://github.com/Comfy-Org/ComfyUI
+- Workflow text-to-image: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_ming_image_01_design_t2i.json
+- Workflow image edit: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_ming_image_01_design_image_edit.json

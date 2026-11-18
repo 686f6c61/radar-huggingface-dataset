@@ -2,70 +2,93 @@
 
 ## Resumen
 
-Este repositorio de Hugging Face, `MonsterMMORPG/Wan_GGUF`, contiene una colección de pesos en formato GGUF del modelo Wan, un sistema de generación de vídeo de la familia Wan desarrollado por Alibaba. El autor, MonsterMMORPG (Furkan Gözükara), es conocido por publicar cuantizaciones de modelos generativos para facilitar su ejecución en hardware de consumo. El repositorio acumula más de 107.000 descargas y 39 likes, lo que indica un uso activo por parte de la comunidad.
+Wan_GGUF es un repositorio de pesos cuantizados en formato GGUF del modelo de generación de vídeo Wan, publicado por el creador de contenido Furkan Gözükara (MonsterMMORPG) bajo su proyecto SECourses. No se trata de un modelo de lenguaje ni de un transformer autoregresivo de texto, sino de un modelo de difusión para texto-a-vídeo (text-to-video) cuyo pipeline se distribuye a través de la librería `diffusers`. El repositorio acumula más de 74.000 descargas y un tamaño total de 4,3 TB, lo que refleja la inclusión de múltiples variantes cuantizadas y archivos auxiliares.
 
-Los pesos incluidos suman aproximadamente 11.901 millones de parámetros (según el archivo safetensors de referencia), y el tamaño total del repositorio es de 3.424 GB, lo que sugiere que se ofrecen múltiples niveles de cuantización GGUF para adaptarse a distintas capacidades de VRAM. Aunque la model card del autor no proporciona especificaciones técnicas detalladas del modelo base, la etiqueta `diffusers` y la naturaleza del proyecto apuntan a que se trata de un modelo de difusión para generación de vídeo.
+El dato de "parámetros totales" reportado por la plataforma (11.901.408.320, es decir, unos 11,9 mil millones) corresponde a los tensores almacenados en los archivos safetensors del repositorio, y debe interpretarse con cautela: en modelos de difusión de vídeo este recuento suele agregar varios componentes (UNet/DiT, VAE, text encoder), no un único transformer monolítico. La model card no aporta especificaciones formales de arquitectura, contexto ni licencia, y está dominada por material promocional del autor (enlaces a YouTube, Patreon, Discord y tutoriales).
 
-La relevancia de este repositorio radica en que permite a desarrolladores e investigadores desplegar un modelo de generación de vídeo de gran tamaño en entornos locales con recursos limitados, gracias a la cuantización GGUF. Sin embargo, la falta de documentación técnica en la model card dificulta una evaluación exhaustiva de sus capacidades y requisitos.
+La relevancia de este repositorio es práctica: ofrece versiones GGUF de Wan pensadas para ejecución en hardware de consumo mediante herramientas de cuantización, lo que facilita el despliegue local de generación de vídeo sin depender de GPUs de datacenter. Al no existir una model card técnica, esta ficha se limita a lo verificable en los metadatos y advierte explícitamente de los datos no disponibles.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (se infiere modelo de difusión para vídeo por la etiqueta `diffusers`) |
-| Parametros totales | 11.901.408.320 |
-| Parametros activos | No aplicable (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF (se menciona en tags; no se especifican los niveles exactos) |
-| Idiomas soportados | No disponibles |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (también hay safetensors de referencia) |
+| Arquitectura | modelo de difusión para texto-a-vídeo (pipeline `diffusers`); detalles internos no disponibles |
+| Parámetros totales | 11.901.408.320 (según safetensors del repo; agregado de componentes, no verificado como transformer único) |
+| Parámetros activos | no aplica (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | GGUF (variantes concretas de bits no especificadas en la información disponible) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | safetensors, GGUF, ONNX |
+| Tamaño del repositorio | 4304,3 GB |
+| Librería | diffusers |
+| Descargas / likes | 74.819 / 47 |
+| Fecha de creación / actualización | 2025-04-29 / 2026-11-17 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base (Wan) en la model card proporcionada. El repositorio se centra exclusivamente en la distribución de pesos cuantizados en formato GGUF, sin detallar la arquitectura del transformer o del difusor, los datos de entrenamiento, el número de tokens procesados ni las técnicas de alineación empleadas. La etiqueta `diffusers` sugiere que el modelo se integra con la biblioteca de Hugging Face para pipelines de difusión, pero no se aportan más detalles técnicos.
+La información disponible no detalla la arquitectura interna del modelo base Wan. Por los tags (`diffusers`, `onnx`, `safetensors`, `gguf`) y por el nombre del repositorio, se trata de pesos de un modelo de difusión para generación de vídeo, distribuidos en varias representaciones: safetensors para uso con `diffusers`, ONNX para inferencia en entornos compatibles y GGUF para ejecución con runtimes de cuantización. El recuento de 11,9 mil millones de parámetros probablemente agrega los distintos submodelos del pipeline (denoiser, VAE y codificador de texto), pero esto no está confirmado en la model card.
+
+No se dispone de información sobre el corpus de entrenamiento, el número de tokens o frames procesados, la composición del dataset, ni sobre etapas de ajuste (RLHF, DPO u otras). Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos de compresión temporal. Cualquier afirmación al respecto sería especulativa y se omite.
 
 ## Capacidades
 
-- Generación de vídeo: el modelo base Wan está orientado a la síntesis de vídeo a partir de texto o imágenes, aunque no se confirma en la documentación del repositorio.
-- Inferencia local: al estar cuantizado en GGUF, el modelo puede ejecutarse en entornos con recursos limitados mediante motores como llama.cpp o similares.
-- Integración con diffusers: la etiqueta `diffusers` indica compatibilidad con el ecosistema de Hugging Face para pipelines de difusión.
-- No se documentan capacidades adicionales como tool calling, razonamiento multi-paso o soporte multilingüe.
+- Generación de vídeo a partir de descripciones textuales, según la naturaleza del pipeline `diffusers` referenciado.
+- Distribución en múltiples formatos (safetensors, ONNX, GGUF), lo que permite distintos backends de inferencia.
+- Ejecución local mediante cuantización GGUF, orientada a reducir requisitos de VRAM frente a los pesos completos.
+- No hay evidencia en la información disponible de soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modo "thinking".
+- No hay evidencia de capacidades multilingües documentadas ni de procesamiento de audio.
+- No se documentan capacidades de edición de vídeo, image-to-video ni control adicional más allá de lo que implique el pipeline base.
 
 ## Casos de uso
 
-- Generación de vídeo en local: los pesos GGUF permiten ejecutar el modelo en estaciones de trabajo con GPU de gama media, ideal para prototipado y experimentación sin depender de servicios en la nube.
-- Investigación académica: la disponibilidad de cuantizaciones facilita el estudio de la generación de vídeo con modelos de difusión en entornos universitarios con presupuesto limitado.
-- Desarrollo de aplicaciones de vídeo creativo: artistas y desarrolladores pueden integrar el modelo en herramientas de edición o generación automática de contenido visual.
-- Fine-tuning y adaptación: aunque no se documenta, los pesos GGUF pueden servir como base para ajustes posteriores si se dispone de los pesos originales en safetensors.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece múltiples variantes GGUF, lo que permite estudiar el impacto de la cuantización en la calidad del vídeo generado.
-- Despliegue en edge devices: con cuantizaciones agresivas, el modelo podría ejecutarse en dispositivos con VRAM reducida, habilitando aplicaciones de vídeo en tiempo real.
+- Generación de clips cortos para prototipado creativo: el modelo permite producir vídeo a partir de prompts de texto en un entorno local con `diffusers`, útil para equipos que necesitan iterar sobre conceptos visuales sin depender de APIs externas.
+- Pruebas de concepto en estudios de animación: las variantes GGUF permiten ejecutar el pipeline en estaciones de trabajo con GPU de consumo, facilitando la validación temprana de ideas antes de escalar a producción.
+- Investigación en modelos de difusión de vídeo: el repositorio reúne pesos en safetensors, ONNX y GGUF, lo que sirve para comparar el impacto de la cuantización en la calidad del vídeo generado.
+- Docencia y formación técnica: al estar vinculado a tutoriales del autor, es un recurso para aprender a desplegar pipelines de vídeo con `diffusers` y runtimes GGUF.
+- Integración en flujos de ComfyUI: el ecosistema del autor y los formatos publicados encajan con nodos de generación de vídeo en ComfyUI, permitiendo construir pipelines visuales.
+- Benchmarking de cuantización: comparar la fidelidad visual y el coste computacional entre los pesos completos y las variantes GGUF en un mismo prompt.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se proporcionan métricas objetivas como FVD, CLIP score o comparativas con otros modelos de generación de vídeo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. Dado que el modelo tiene ~11.9B parámetros, una cuantización Q4 típica requeriría aproximadamente 7-8 GB de VRAM, pero no se confirma.
-- GPU recomendadas: no disponible. Se espera compatibilidad con GPUs NVIDIA con al menos 8 GB de VRAM para cuantizaciones bajas, pero sin confirmación.
-- Opciones de despliegue: al ser GGUF, puede usarse con llama.cpp, Ollama o motores compatibles con GGUF. También se integra con diffusers según la etiqueta.
+- VRAM estimada: no disponible de forma oficial. Con 11,9 mil millones de parámetros agregados, los pesos completos en fp16 requerirían del orden de 24 GB solo para almacenar los tensores, antes de activaciones y buffers del pipeline de difusión; las variantes GGUF reducen esa cifra de forma proporcional al nivel de cuantización, pero no se especifican los bits por variante.
+- GPU recomendadas: no documentadas. Por el tamaño, cabría esperar GPUs de 24 GB o más (RTX 4090, A100 40 GB, H100) para los pesos completos, y GPUs de consumo con 8-16 GB para variantes GGUF agresivas, aunque esto no está confirmado en la información disponible.
+- Despliegue: `diffusers` para safetensors; runtimes compatibles con GGUF (por ejemplo llama.cpp u otros motores de cuantización, sin confirmación oficial); ONNX Runtime para los archivos ONNX.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (generación de vídeo con cuantización GGUF). No se pueden establecer comparaciones objetivas sin datos de rendimiento.
+| Modelo | Parámetros | Contexto / duración | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Wan_GGUF (este repo) | 11,9 mil millones (agregado) | no disponible | no disponible | Hugging Face, 74.819 descargas |
+| Modelo base Wan (upstream) | no disponible en esta información | no disponible | no disponible | no disponible |
+| Otras alternativas de texto-a-vídeo open source | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos suficientes para establecer una comparativa rigurosa con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: el uso comercial del modelo base puede estar restringido, pero no se indica en el repositorio.
-- Falta de documentación técnica: no se detallan arquitectura, entrenamiento ni capacidades específicas, lo que dificulta una evaluación rigurosa.
-- Riesgo de alucinación y sesgos: no se dispone de información sobre sesgos o comportamientos no deseados del modelo base.
-- Requisitos de hardware inciertos: sin especificaciones claras, los usuarios deben probar por su cuenta qué cuantización se adapta a su hardware.
-- Actualización del repositorio: la fecha de actualización (2026-08-17) es posterior a la creación, pero no se indica qué cambios se han realizado.
+- La model card no contiene especificaciones técnicas: no hay información sobre arquitectura, entrenamiento, licencia ni idiomas, lo que impide evaluar el modelo con rigor.
+- La licencia no está declarada, por lo que el uso comercial queda en un limbo legal hasta consultar el repositorio upstream del modelo Wan original.
+- El recuento de parámetros es un agregado de safetensors y no debe interpretarse como el tamaño de un único transformer.
+- El repositorio ocupa 4,3 TB, lo que implica costes de almacenamiento y descarga considerables; conviene descargar solo las variantes necesarias.
+- Al ser una republicación de pesos de terceros, la calidad y fidelidad respecto al modelo original no están garantizadas ni documentadas.
+- Riesgo de sesgos y alucinaciones visuales inherente a los modelos de difusión: no hay evaluación publicada en la información disponible.
+- No se documentan limitaciones de contexto, idioma ni duración de vídeo.
+- La model card está dominada por contenido promocional y enlaces externos; no debe tratarse como documentación técnica fiable.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/MonsterMMORPG/Wan_GGUF
-- GitHub del autor (tutoriales): https://github.com/FurkanGozukara/Stable-Diffusion
-- Canal de YouTube SECourses: https://www.youtube.com/@SECourses
+- Canal de YouTube del autor: https://www.youtube.com/@SECourses
+- Patreon: https://www.patreon.com/c/SECourses
+- Discord: https://discord.com/servers/software-engineering-courses-secourses-772774097734074388
+- GitHub del autor: https://github.com/FurkanGozukara/Stable-Diffusion
+- LinkedIn: https://www.linkedin.com/in/furkangozukara/
+- Twitter: https://twitter.com/GozukaraFurkan
+- Linktree: https://linktr.ee/FurkanGozukara
+- Google Scholar: https://scholar.google.com/citations?user=_2_KAUsAAAAJ&hl=en

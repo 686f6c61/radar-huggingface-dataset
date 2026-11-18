@@ -2,52 +2,49 @@
 
 ## Resumen
 
-LFM3-1.7B-GGUF es la distribucion en formato GGUF de LFM3-1.7B, un modelo de lenguaje de 1.728.801.600 parametros desarrollado por Liquid AI. Esta publicacion no contiene pesos nuevos: es una conversion del checkpoint original pensada para inferencia local en CPU y GPU mediante llama.cpp, lo que permite ejecutar el modelo en equipos sin acelerador dedicado o con GPU de consumo.
+LFM3-1.7B-GGUF es la versión en formato GGUF del modelo LFM3-1.7B desarrollado por Liquid AI, una empresa conocida por sus modelos basados en arquitecturas de tipo "liquid neural network". Este repositorio contiene los pesos cuantizados para inferencia local en CPU y GPU mediante llama.cpp y herramientas compatibles, lo que permite ejecutar el modelo en hardware de consumo sin necesidad de GPUs de datacenter. El modelo base cuenta con 1.728.801.600 parámetros y está diseñado para generación de texto conversacional.
 
-El modelo pertenece a la familia LFM3 de Liquid AI y se distribuye con licencia lfm1.0, con soporte declarado para 17 idiomas (entre ellos castellano, ingles, frances, aleman, arabe, chino, japones, coreano, portugues, hindi y ruso). La version GGUF incluye ademas un checkpoint especifico entrenado con Quantization-Aware Distillation (QAD) sobre Q4_0, cuyo objetivo es recuperar la precision perdida por la cuantizacion a 4 bits.
+La relevancia de esta versión GGUF radica en su accesibilidad: con solo 1,7 mil millones de parámetros y múltiples niveles de cuantización, puede desplegarse en portátiles, estaciones de trabajo modestas y dispositivos de borde. Además, incluye una variante NVFP4 optimizada para GPUs NVIDIA Blackwell (serie RTX 50 y DGX Spark), que aprovecha los tensor cores FP4 para acelerar la inferencia. El modelo soporta 16 idiomas, entre ellos el castellano, y está etiquetado como compatible con endpoints conversacionales.
 
-Su relevancia practica esta en el tramo de ~1.700 millones de parametros: es un tamano que cabe en cualquier portatil moderno con cuantizacion Q4 y que permite desplegar generacion de texto con contexto conversacional sin depender de API externa. La model card de esta publicacion es deliberadamente escueta y remite a la del modelo base para arquitectura y detalles de uso.
+El modelo se distribuye bajo licencia LFM1.0 (licencia propia de Liquid AI, catalogada como "other" en Hugging Face) y ha acumulado más de 377.000 descargas y 311 likes desde su publicación en octubre de 2026, lo que indica una adopción notable en la comunidad de inferencia local.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en la informacion proporcionada (el autor remite a la model card de LiquidAI/LFM3-1.7B) |
+| Arquitectura | No disponible (modelo base LFM3-1.7B; familia "liquid") |
 | Parametros totales | 1.728.801.600 |
-| Parametros activos | no aplica (no se declara como MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF en varias cuantizaciones; el repositorio referencia al menos Q4_K_M y un checkpoint QAD especifico en Q4_0 (`LFM3-1.7B-QAD-Q4_0.gguf`). Listado completo no disponible |
-| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF con múltiples niveles (se menciona Q4_K_M y NVFP4; el resto no especificado) |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
+| Licencia | lfm1.0 (catalogada como "other") |
+| Formato de pesos | GGUF (safetensors en el modelo base; NVFP4 GGUF para la variante Blackwell) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo: la model card de la version GGUF remite explicitamente a la del modelo base LFM3-1.7B para los detalles de arquitectura y uso. Las etiquetas del repositorio (`liquid`, `lfm3`) lo identifican como parte de la familia LFM3 de Liquid AI, pero no se especifica en esta publicacion si se trata de un transformer clasico, de una arquitectura hibrida o de un diseno propio de la casa, ni se indican numero de tokens de entrenamiento, composicion del corpus o si hubo fases de RLHF o DPO.
+La información disponible en esta ficha corresponde a la versión GGUF, que es una conversión del modelo base LiquidAI/LFM3-1.7B. No se detallan en la información proporcionada los pormenores de la arquitectura interna (si es transformer puro, híbrida o basada en capas líquidas), el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card remite explícitamente a la tarjeta del modelo original para obtener los detalles de arquitectura y uso.
 
-El unico detalle tecnico de entrenamiento documentado en esta publicacion es el proceso de Quantization-Aware Distillation aplicado al checkpoint Q4_0: el archivo `LFM3-1.7B-QAD-Q4_0.gguf` fue entrenado especificamente para recuperar la precision que se pierde al cuantizar a Q4_0. La model card incluye ademas recomendaciones de muestreo diferenciadas por tarea: `--temp 0.1 --top-k 50 --repeat-penalty 1.1` para uso conversacional general, y `--temp 1.0 --top-p 0.95 --top-k 20` para matematicas y ciencia, lo que sugiere que el autor ha calibrado el decode por dominio.
+Lo que sí se documenta es el proceso de cuantización: la mayoría de los archivos del repositorio se convierten desde LFM3-1.7B, mientras que el archivo `LFM3-1.7B-NVFP4.gguf` proviene de un checkpoint separado (LiquidAI/LFM3-1.7B-NVFP4) cuantizado con NVIDIA Model Optimizer. En esa variante, los pesos de las capas feed-forward conservan la cuantización NVFP4 y el resto de pesos están en Q8_0; en GPUs Blackwell (RTX 50 y DGX Spark) las capas NVFP4 se ejecutan sobre tensor cores FP4. El repositorio ocupa 16,2 GB en total, lo que refleja la suma de múltiples variantes de cuantización.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con ajuste de plantilla conversacional (etiqueta `conversational`).
-- Soporte multilingue declarado en 17 idiomas, incluido el castellano.
-- Razonamiento matematico y cientifico: la model card proporciona una configuracion de muestreo especifica para matematicas y ciencia (`--temp 1.0 --top-p 0.95 --top-k 20`), lo que indica que el modelo ha sido evaluado o ajustado en ese dominio.
-- Inferencia local en CPU y GPU mediante llama.cpp.
-- Compatible con endpoints (`endpoints_compatible` en las etiquetas del repositorio), es decir, desplegable detras de infraestructura de inferencia estandar.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Vision, audio u otras modalidades: no disponible; el pipeline declarado es unicamente `text-generation`.
+- Generación de texto conversacional multi-turno, con pipeline declarado `text-generation` y etiqueta `conversational`.
+- Soporte multilingüe en 16 idiomas: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
+- Ajuste de parámetros de muestreo recomendado por el autor: temperatura 0.1, top_k 50 y repeat penalty 1.1 para uso general; temperatura 1.0, top_p 0.95 y top_k 20 para matemáticas y ciencia, lo que sugiere capacidades específicas en razonamiento matemático y científico.
+- Compatibilidad con endpoints conversacionales (etiqueta `endpoints_compatible`).
+- Ejecución local en CPU y GPU mediante llama.cpp, LM Studio, Ollama y Llama.app.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, visión, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Asistente conversacional en local para escritorio: con ~1,7 B de parametros y cuantizacion Q4, el modelo se ejecuta integramente en un portatil sin conexion, lo que permite ofrecer un asistente de texto sin enviar datos a terceros.
-- Clasificacion y reescritura de textos en castellano dentro de pipelines internos: el soporte nativo de es, pt, fr, de e it lo hace util para normalizar, resumir o reformatear documentacion en varias lenguas europeas desde una sola instancia.
-- Generacion de codigo asistida en editores ligeros: al ser un modelo pequeno y compatible con llama.cpp, puede embeberse en plugins de autocompletado donde el coste por token y la latencia importan mas que la calidad punta.
-- Procesamiento por lotes en CPU para equipos sin GPU: al estar en GGUF, permite ejecutar tareas de extraccion o etiquetado sobre volumenes grandes de texto en servidores sin acelerador, con el checkpoint QAD Q4_0 como opcion de compromiso entre tamano y precision.
-- Chatbot de soporte de primer nivel con contexto limitado: adecuado para preguntas frecuentes y triaje, siempre que la longitud de contexto requerida encaje en la ventana del modelo (dato no disponible en esta publicacion) y se derive a un modelo mayor los casos complejos.
-- Prototipado e investigacion de tecnicas de cuantizacion: el checkpoint QAD Q4_0 sirve como caso de estudio reproducible de destilacion consciente de cuantizacion, comparando su comportamiento frente a una cuantizacion Q4_0 estandar del mismo modelo.
-- Traduccion y localizacion de soporte entre los 17 idiomas declarados, especialmente en combinaciones con el castellano como lengua de destino.
-- Despliegue en dispositivos de borde (edge) y entornos air-gapped donde no se permite tráfico saliente a APIs de terceros.
+- Asistente conversacional local en portátil: con 1,7 mil millones de parámetros y cuantización Q4_K_M, el modelo cabe en equipos de consumo y permite mantener conversaciones multi-turno sin conexión a la nube, útil para prototipos de atención al cliente o asistentes personales con requisitos de privacidad.
+- Generación de texto en dispositivos de borde: su tamaño reducido y el soporte de llama.cpp lo hacen apto para integrarse en aplicaciones de escritorio (macOS, Windows, Linux) mediante LM Studio u Ollama, por ejemplo para resúmenes o redacción asistida embebida en herramientas ofimáticas.
+- Razonamiento matemático y científico asistido: el autor recomienda parámetros de muestreo específicos (temperatura 1.0, top_p 0.95, top_k 20) para matemáticas y ciencia, lo que lo hace adecuado para tutoría o resolución de problemas en entornos educativos.
+- Procesamiento multilingüe ligero: con soporte para 16 idiomas, puede emplearse en tareas de traducción, clasificación o generación de contenido en aplicaciones que atiendan a usuarios de distintas regiones sin desplegar varios modelos.
+- Inferencia acelerada en GPUs Blackwell: la variante NVFP4 permite ejecutar el modelo sobre tensor cores FP4 en RTX 50 y DGX Spark, adecuada para aplicaciones de baja latencia en estaciones de trabajo con hardware NVIDIA reciente.
+- Filtrado y preprocesado en pipelines de datos: como modelo pequeño y rápido, puede utilizarse para tareas auxiliares de anonimización, etiquetado o generación de resúmenes previos a un modelo mayor, reduciendo coste computacional.
+- Desarrollo y evaluación de técnicas de cuantización: al ofrecer múltiples variantes GGUF (incluida NVFP4), sirve como banco de pruebas para comparar calidad y velocidad entre niveles de cuantización en hardware diverso.
 
 ## Benchmarks y rendimiento
 
@@ -55,47 +52,45 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (calculo a partir del numero de parametros; no son cifras publicadas por el autor): ~3,5 GB en FP16, ~1,8 GB en Q8, ~1,0-1,2 GB en Q4.
-- Cabe en GPU de consumo: si, en cualquier tarjeta con 4 GB o mas de VRAM para Q4/Q5; con 6-8 GB se puede usar Q8 e incluso FP16 en tarjetas de 8 GB ajustando el contexto.
-- Ejecucion en CPU: viable en exclusiva, es el escenario principal de esta publicacion GGUF; el rendimiento dependera del numero de nucleos y del ancho de banda de memoria.
-- GPU recomendadas: no hay recomendaciones oficiales en la informacion disponible. Por tamano, cualquier RTX 3060/4060 o superior es suficiente; A100/H100 solo tendrian sentido para servir muchas instancias en paralelo, no por requisito de memoria.
-- Opciones de despliegue: llama.cpp (soporte explicito, requiere una build compatible con LFM3), y por extension los runners que consumen GGUF (Ollama, llama-cpp-python, servidores basados en llama.cpp). vLLM y TGI no estan confirmados para este formato en la informacion disponible; para vLLM habria que partir del modelo base en safetensors.
-- Latencia y throughput estimados: no disponibles. No se han publicado cifras de tokens por segundo.
+- VRAM estimada: no disponible de forma explícita. Como referencia orientativa, un modelo de 1,7 mil millones de parámetros en Q4_K_M ocupa del orden de 1 GB de pesos; en Q8_0, alrededor de 1,8 GB; en NVFP4, aproximadamente 1 GB o menos. Estas cifras son estimaciones basadas en el número de parámetros y no en datos publicados por el autor.
+- GPUs recomendadas: no se especifican en la información disponible. La variante NVFP4 requiere GPUs NVIDIA Blackwell (RTX 50 series, DGX Spark) para aprovechar los tensor cores FP4.
+- Cabe en GPU de consumo: sí, por el tamaño del modelo; sin embargo, la información proporcionada no detalla modelos concretos ni requisitos mínimos verificados.
+- Opciones de despliegue: llama.cpp (versión b11960 / v0.8.0 o superior), LM Studio (motor llama.cpp 2.65.1 o superior), Ollama (v0.40.12 o superior) y Llama.app (macOS y Windows).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye datos de benchmarks ni especificaciones de contexto de este modelo, por lo que la comparacion se limita a parametros, licencia y formato. Los datos de los modelos alternativos son de referencia general del mercado y no han sido verificados contra la informacion de esta busqueda.
-
-| Modelo | Parametros | Contexto | Licencia | Formato GGUF | Datos en esta ficha |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| LFM3-1.7B-GGUF | 1.728.801.600 | no disponible | lfm1.0 | si (Q4_K_M, QAD Q4_0) | esta publicacion |
-| Qwen3-1.7B | ~1,7 B | no disponible en esta busqueda | Apache 2.0 (referencia de mercado) | si | no verificado |
-| SmolLM2-1.7B | ~1,7 B | no disponible en esta busqueda | Apache 2.0 (referencia de mercado) | si | no verificado |
-| Gemma 3 1B | ~1 B | no disponible en esta busqueda | Gemma Terms (referencia de mercado) | si | no verificado |
+| LFM3-1.7B-GGUF | 1,73 B | No disponible | 16 | lfm1.0 | GGUF |
+| Alternativas de ~1-2 B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-Diferenciador observable: LFM3-1.7B es el unico de la lista con licencia propia (lfm1.0) y con un checkpoint entrenado mediante destilacion consciente de cuantizacion, lo que puede traducirse en menor degradacion a 4 bits. Como contrapartida, la licencia lfm1.0 exige revisar terminos antes de uso comercial y el ecosistema de herramientas es menor que el de Qwen o SmolLM.
+No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos comparables de la misma categoría, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- La model card de esta publicacion no documenta sesgos, datos de entrenamiento ni evaluaciones de seguridad; no hay base para afirmar que el modelo este alineado o libre de sesgos.
-- Riesgo de alucinacion propio de un modelo de ~1,7 B: la capacidad de verificacion factografica es limitada y no debe usarse como fuente unica en dominios sensibles (medicina, legal, finanzas).
-- Longitud de contexto no documentada en la informacion disponible: no se puede garantizar el comportamiento en conversaciones largas ni en tareas de recuperacion sobre documentos extensos.
-- El rendimiento multilingue es declarado por el autor para 17 idiomas, pero no se aportan metricas por idioma; la calidad relativa entre lenguas es desconocida.
-- Licencia lfm1.0: no es una licencia de codigo abierto estandar. Antes de uso comercial hay que leer el archivo LICENSE del repositorio; los terminos pueden incluir restricciones de uso o de redistribucion.
-- Requiere una build de llama.cpp compatible con LFM3: las builds antiguas o genericas pueden no cargar el modelo correctamente.
-- El checkpoint QAD Q4_0 ha sido entrenado para una cuantizacion concreta; mezclar ese archivo con otros tipos de cuantizacion o reutilizarlo como base para re-cuantizar anula la ventaja del proceso QAD.
-- El repositorio pesa 15,7 GB, lo que implica descargar varias cuantizaciones si no se selecciona un archivo concreto con `--hf-file`.
-- Cifras de adopcion muy bajas en el momento de la consulta (17 descargas, 27 likes): el soporte comunitario y la documentacion de terceros son escasos.
+- La información disponible no detalla sesgos conocidos del modelo; al ser un modelo entrenado con datos web multilingües, es previsible que herede sesgos de esos corpus, pero no se documentan explícitamente.
+- Riesgo de alucinación inherente a los modelos generativos de este tamaño; no se han publicado evaluaciones de fidelidad en la información disponible.
+- La longitud de contexto no está especificada, lo que dificulta planificar casos de uso con documentos largos.
+- Aunque soporta 16 idiomas, no se documenta la calidad relativa por idioma; el rendimiento en castellano no está cuantificado.
+- La licencia LFM1.0 está catalogada como "other": es necesario revisar el archivo LICENSE del repositorio antes de un uso comercial, ya que puede contener restricciones específicas.
+- El rendimiento de la variante NVFP4 depende de hardware NVIDIA Blackwell; en GPUs anteriores no se aprovechan los tensor cores FP4.
+- Las versiones mínimas de las herramientas (llama.cpp b11960/v0.8.0, LM Studio 2.65.1, Ollama v0.40.12) son requisitos estrictos; versiones anteriores pueden no cargar el modelo correctamente.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Checkpoint QAD Q4_0: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/blob/main/LFM3-1.7B-QAD-Q4_0.gguf
-- Licencia: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/blob/main/LICENSE
-- Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3
-- Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Guia de despliegue con llama.cpp: https://docs.liquid.ai/deployment/on-device/llama-cpp
-- Consola/API: https://console.liquid.ai/dashboard
+- Checkpoint NVFP4: https://huggingface.co/LiquidAI/LFM3-1.7B-NVFP4
+- Archivo NVFP4 GGUF: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/blob/main/LFM3-1.7B-NVFP4.gguf
+- Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3
+- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
+- Guía de despliegue en llama.cpp: https://docs.liquid.ai/deployment/on-device/llama-cpp
+- Consola/API de Liquid AI: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Llama.app: https://llama.app
+- LM Studio: https://lmstudio.ai
+- Ollama: https://ollama.com
+- llama.cpp (release v0.8.0): https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0
+- llama.cpp (release b11960): https://github.com/ggml-org/llama.cpp/releases/tag/b11960
+- Ollama (release v0.40.12): https://github.com/ollama/ollama/releases/tag/v0.40.12

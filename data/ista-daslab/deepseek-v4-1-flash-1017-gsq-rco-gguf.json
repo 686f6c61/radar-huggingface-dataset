@@ -29,7 +29,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 676,
+  "likes": 677,
   "downloads_30d": 4322841,
   "trending_score": 21,
   "parameters": 196613849600,
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Solutions de comptage individuel d’eau et de chauffage ... - ista",
-      "url": "https://www.ista.com/fr/",
-      "snippet": "Découvrez Maî­tri­se­Conso, le nouvel outil innovant du portail client MonCompte ista. C'est votre allié pour une gestion efficace des …"
-    },
-    {
-      "title": "Portail web ista",
-      "url": "https://www.ista.com/fr/portail-web/",
-      "snippet": "Accédez au portail web ista pour gérer facilement vos consommations d'énergie et accéder à vos données en ligne."
-    },
-    {
-      "title": "Instagram",
-      "url": "https://platform.instagram.com/",
-      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
-    },
-    {
-      "title": "Portail client ista MonCompte",
-      "url": "https://portal.ista.com/fr/",
-      "snippet": "Contrôlez les consommations d’eau et de chauffage de votre parc, accédez à vos documents essentiels et consultez facilement vos …"
-    },
-    {
-      "title": "Mon espace ista : Suivez et maîtrisez vos consommations d'énergie",
-      "url": "https://monespaceista.fr/",
-      "snippet": "Pour commencer, nous avons besoin d'identifier votre logement. Pour cela, renseignez le numéro de série d'un de vos appareils ista …"
-    }
-  ]
+  "sources": []
 }

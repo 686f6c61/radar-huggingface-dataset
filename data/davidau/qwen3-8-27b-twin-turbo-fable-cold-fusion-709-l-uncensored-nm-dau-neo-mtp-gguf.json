@@ -71,7 +71,7 @@
     "imatrix"
   ],
   "likes": 241,
-  "downloads_30d": 47198,
+  "downloads_30d": 46426,
   "trending_score": 11,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -91,31 +91,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
-    },
-    {
-      "title": "ChatGPT",
-      "url": "https://chatgpt.com/pl-PL/",
-      "snippet": "Korzystaj z ChatGPT, by odpowiadać na pytania, pisać, tworzyć obrazy, realizować zadania i programować, a wszystko to w jednym …"
-    },
-    {
-      "title": "Introducing ChatGPT - OpenAI",
-      "url": "https://openai.com/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
-    },
-    {
-      "title": "Przedstawiamy ChatGPT | OpenAI",
-      "url": "https://openai.com/pl-PL/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · ChatGPT to model z serii GPT‑3.5 z konfiguracją precyzyjną, którego trening zakończył się na początku 2022 r. …"
-    },
-    {
-      "title": "ChatGPT",
-      "url": "https://chatgpt.com/features",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
-    }
-  ]
+  "sources": []
 }

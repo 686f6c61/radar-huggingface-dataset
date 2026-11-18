@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Felix92/onnxtr-lw-detr-m",
+  "slug": "felix92-onnxtr-lw-detr-m",
+  "author": "Felix92",
+  "url": "https://huggingface.co/Felix92/onnxtr-lw-detr-m",
+  "created_at": "2026-11-17T21:06:26.000Z",
+  "updated_at": "2026-11-17T21:06:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "onnxtr",
+    "layout",
+    "en",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105019358,
+  "storage_human": "105 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

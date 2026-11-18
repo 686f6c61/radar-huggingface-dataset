@@ -2,56 +2,50 @@
 
 ## Resumen
 
-Marigold v2 es un modelo de difusion para analisis de imagenes desarrollado por Huawei Bayer Lab, distribuido aqui por Comfy-Org como un paquete de ficheros "single-file" listo para usar en ComfyUI. El modelo resuelve tareas de vision densa a partir de una unica imagen de entrada: estimacion de profundidad (depth), estimacion de normales de superficie (normals) y descomposicion intrinseca en albedo. La version distribuida en este repositorio es un reempaquetado, no un entrenamiento nuevo: Comfy-Org reorganiza los pesos originales en ficheros compatibles con el cargador de ComfyUI.
+Marigold v2 es un conjunto de modelos de difusion para estimacion de propiedades intrinsecas de la imagen (profundidad, normales de superficie y albedo) desarrollado originalmente por Huawei Bayer Lab y reempaquetado por Comfy-Org para su uso directo en ComfyUI. El repositorio aqui descrito no contiene el modelo original en su formato de investigacion, sino una distribucion en ficheros unicos (single-file) con LoRAs, embeddings de condicionamiento y VAEs separados por tarea, lista para cargarse en nodos de ComfyUI.
 
-El repositorio ocupa 26,4 GB e incluye, ademas del modelo de difusion, tres LoRAs especificos (albedo, depth log stage2 y normals), tres embeddings de condicionamiento y tres VAEs, uno por cada tarea. Este diseno modular permite intercambiar la tarea cambiando el LoRA, el embedding y el VAE, manteniendo el mismo backbone de difusion. Es relevante ahora porque traslada un modelo de investigacion a un flujo de produccion visual (ComfyUI) sin necesidad de escribir codigo de inferencia a medida.
+La relevancia de este modelo radica en que adapta la formulacion de difusion a la prediccion de mapas geometricos y de reflectancia a partir de una sola imagen RGB, una tarea tradicionalmente resuelta con redes discriminativas especializadas. Al reutilizar un backbone de difusion (los ficheros incluyen `qwen_image_edit_2509_int8_convrot.safetensors` como modelo de difusion base), Marigold v2 aprovecha el conocimiento visual de un modelo generativo preentrenado y lo especializa mediante LoRAs por tarea.
 
-El modelo base declarado es `huawei-bayerlab/marigold-v2-0` y la licencia es Apache-2.0, lo que facilita su uso comercial. No se especifican en la informacion disponible el numero de parametros, la longitud de contexto (no aplica en el sentido de LLM, ya que es un modelo de vision) ni los idiomas soportados.
+El repositorio tiene un tamano de 38,1 GB, lo que refleja que empaqueta multiples componentes (tres LoRAs, tres VAEs, tres embeddings de condicionamiento y el modelo de difusion base). Es una opcion practica para pipelines de vision por computador en produccion dentro del ecosistema ComfyUI, con licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion para vision; ficheros "diffusion-single-file" para ComfyUI) |
+| Arquitectura | Modelo de difusion (backbone `qwen_image_edit_2509_int8_convrot`), con LoRAs y VAEs especificos por tarea |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de imagen, no de texto) |
-| Tipos de cuantizacion | no disponible (el listado de ficheros incluye un safetensors con sufijo `int8`) |
-| Idiomas soportados | no disponible (modelo de vision, no linguistico) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (libreria `diffusion-single-file`) |
-
-Datos adicionales del repositorio: ID `Comfy-Org/marigold-v2-0`, autor Comfy-Org, 772 descargas, 13 likes, tamano del repo 26,4 GB, creado el 2026-09-10 y actualizado el 2026-09-11.
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
+| Tipos de cuantizacion | Pesos en safetensors; el backbone se distribuye en int8 (`int8_convrot`) |
+| Idiomas soportados | no disponible (modelo de vision, sin interfaz de texto) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (single-file, compatible con ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna ni el proceso de entrenamiento del modelo original. Lo que se puede afirmar a partir del repositorio es que se trata de un modelo de difusion para analisis de imagen, estructurado en ComfyUI como un backbone de difusion mas adaptadores especificos por tarea: tres LoRAs (`marigold_v2_albedo`, `marigold_v2_depth_log_stage2`, `marigold_v2_normals`), tres embeddings de condicionamiento y tres VAEs. La existencia de un VAE y un LoRA dedicados a "depth log stage2" indica un pipeline de profundidad en dos etapas con prediccion en espacio logaritmico.
+Marigold v2 sigue un enfoque de difusion condicionada por imagen: se parte de un modelo de difusion de imagenes (en este empaquetado, la variante `qwen_image_edit_2509_int8_convrot`) y se especializa mediante LoRAs independientes para cada tarea de estimacion: profundidad (`marigold_v2_depth_log_stage2`), normales de superficie (`marigold_v2_normals`) y albedo (`marigold_v2_albedo`). Cada tarea cuenta ademas con su propio VAE y su propio embedding de condicionamiento, lo que permite cargar y descargar los componentes segun la tarea sin arrastrar el resto del conjunto.
 
-No se dispone en la informacion proporcionada de datos sobre el numero de tokens o imagenes de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste fino como RLHF o DPO (poco habituales en modelos de vision densa). Tampoco se documentan innovaciones tecnicas concretas mas alla de la modularidad por tarea.
-
-Advertencia de documentacion: el arbol de ficheros de la model card situa bajo `models/diffusion_models/` un fichero llamado `qwen_image_edit_2509_int8_convrot.safetensors`, un nombre que no corresponde a la nomenclatura de Marigold. Es probable que sea un error de la model card o un placeholder del empaquetado; conviene verificarlo antes de desplegar.
+El prefijo `log_stage2` en la LoRA de profundidad sugiere un entrenamiento en dos etapas con representacion logaritmica de la profundidad, un esquema habitual para estabilizar el rango dinamico en escenas con objetos cercanos y lejanos. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Estimacion de profundidad monoculo (depth) a partir de una imagen RGB.
-- Estimacion de normales de superficie (normals), con salida util para reconstruccion y shading.
-- Descomposicion intrinseca: separacion de albedo (reflectancia) y, por diseno del paquete, componentes asociados a la iluminacion.
-- Procesamiento de una sola imagen de entrada por inferencia (no se documenta soporte de video ni multi-frame).
-- Integracion nativa en ComfyUI mediante carga de LoRA, embedding y VAE especificos por tarea.
-- Salidas de tipo mapa denso (una prediccion por pixel), aptas para pipelines de vision 3D y post-proceso.
-
-No se documenta en la informacion disponible soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues, ya que no es un modelo de lenguaje.
+- Estimacion de profundidad monocular a partir de una imagen RGB, con salida en escala logaritmica en la etapa 2.
+- Estimacion de normales de superficie por pixel.
+- Estimacion de albedo (reflectancia difusa) por pixel.
+- Ejecucion como pipeline de difusion dentro de ComfyUI mediante nodos y workflows predefinidos.
+- Carga modular por tarea: solo se necesita el par LoRA + VAE + embedding de la tarea concreta.
+- Integracion con el grafo de nodos de ComfyUI, lo que permite encadenar la salida con otros modelos (por ejemplo, generacion condicionada por profundidad o normales).
+- No soporta tool calling, agentes ni procesamiento de lenguaje natural: es un modelo puramente visual.
 
 ## Casos de uso
 
-- Reconstruccion 3D y fotogrametria asistida: la prediccion de profundidad por pixel permite generar mapas de profundidad densos a partir de una sola fotografia, utiles como entrada para mallado o para inicializar pipelines de reconstruccion.
-- Relighting y edicion de iluminacion: al separar albedo y estimar normales, se puede recolorear o reiluminar una escena sin volver a capturarla, algo habitual en post-produccion publicitaria.
-- Composicion VFX: los mapas de normales y profundidad permiten integrar elementos CGI en placas reales respetando la geometria y la orientacion de las superficies.
-- Generacion de datasets sinteticos para entrenamiento: los mapas de profundidad y normales se emplean como etiquetas pseudo-ground-truth para entrenar otros modelos de vision densa cuando no hay datos anotados.
-- Realidad aumentada y virtual: la estimacion de normales y profundidad en tiempo de captura facilita la colocacion coherente de objetos virtuales sobre superficies reales.
-- Prototipado en ComfyUI: al estar empaquetado como ficheros single-file con LoRA, embedding y VAE, se puede montar un nodo de inferencia y encadenarlo con otros nodos (por ejemplo, generacion o inpainting) sin escribir codigo.
-- Analisis de escenas para automatizacion industrial: la profundidad relativa permite segmentar por distancia y detectar objetos cercanos o lejanos en lineas de inspeccion visual.
-- Preparacion de assets para impresion 3D: a partir de una imagen y su mapa de profundidad se puede generar un relieve o un modelo base para retoque manual.
+- Reconstruccion 3D y fotogrametria: la salida de profundidad y normales permite generar mapas de profundidad y mallas densas a partir de una unica fotografia, util en pipelines de escaneo de interiores o modelado de producto donde no se dispone de vistas estereo.
+- Reiluminacion y compositing: el mapa de albedo separa la reflectancia difusa de la iluminacion, lo que permite recolorear o reiluminar objetos en postproduccion sin recalcular la geometria de la escena.
+- Generacion de imagen condicionada por geometria: los mapas de profundidad y normales se pueden usar como ControlNet o como condicionamiento en modelos de difusion para mantener la estructura de una imagen de referencia al regenerarla con otro estilo.
+- Efectos de profundidad de campo y bokeh sintetico: el mapa de profundidad por pixel permite aplicar desenfoque selectivo realista en video o fotografia sin lentes fisicas.
+- Poblar escenas 3D y realidad aumentada: la combinacion de profundidad y normales facilita la oclusion y la colocacion de objetos virtuales sobre superficies reales en aplicaciones de AR.
+- Preprocesado para datasets de vision: generar anotaciones automaticas de profundidad, normales y albedo para entrenar otros modelos discriminativos o para aumentar datasets existentes.
+- Analisis de materiales y defectos: el albedo y las normales ayudan a detectar irregularidades superficiales en inspeccion industrial o en digitalizacion de patrimonio.
 
 ## Benchmarks y rendimiento
 
@@ -59,41 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se proporcionan cifras oficiales de VRAM. El repositorio completo ocupa 26,4 GB, pero ese tamano incluye el modelo de difusion, tres LoRAs, tres embeddings y tres VAEs; no equivale a la VRAM necesaria en un momento dado.
-- Estimacion orientativa (no oficial): para cargar un unico pipeline de tarea en precision fp16 hay que sumar el backbone de difusion, un VAE y un LoRA. Como orden de magnitud, una GPU con 12-16 GB de VRAM deberia ser suficiente para una tarea a la vez; para mantener las tres tareas cargadas simultaneamente se recomienda 24 GB o mas. Estas cifras son deducciones del tamano del repositorio, no datos publicados.
-- GPU recomendadas: se recomienda una GPU con al menos 12 GB de VRAM para uso individual (por ejemplo, RTX 3060 de 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090). Para despliegue multiusuario o carga simultanea de varias tareas, tarjetas de clase profesional (A100, H100, L40S) con 40-80 GB.
-- Compatibilidad con GPU de consumo: probable en GPUs de gama media-alta con 12 GB o mas, siempre que se cargue una sola tarea por vez. No confirmado por el autor.
-- Opciones de despliegue documentadas: ComfyUI (formato nativo del repositorio, libreria `diffusion-single-file`). No se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- VRAM estimada: no disponible de forma explicita; el repositorio completo ocupa 38,1 GB, pero la inferencia por tarea solo requiere el backbone mas la LoRA, el VAE y el embedding de esa tarea, por lo que el consumo real es inferior al tamano total del repo.
+- El backbone se distribuye en int8, lo que reduce el requisito de memoria frente a una version fp16 equivalente.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por el tamano del backbone de difusion, se espera que requiera GPU con al menos 8-12 GB de VRAM para resoluciones moderadas, pero este dato no esta confirmado.
+- Opciones de despliegue: ComfyUI (soporte nativo mediante los workflows oficiales); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a un modelo de difusion de imagen.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tareas | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Comfy-Org/marigold-v2-0 (este) | Difusion, empaquetado ComfyUI | Depth, normals, albedo | apache-2.0 | Hugging Face, single-file para ComfyUI | Reempaquetado del modelo de Huawei Bayer Lab; 772 descargas |
-| huawei-bayerlab/marigold-v2-0 | Difusion | Depth, normals, albedo | no disponible en la informacion proporcionada | Hugging Face | Modelo original del que deriva este repositorio |
-| Marigold v1 | Difusion | Depth (principalmente) | no disponible en la informacion proporcionada | Hugging Face | Version anterior orientada a profundidad monoculo |
-| Depth Anything V2 | Discriminativo (ViT) | Depth | no disponible en la informacion proporcionada | Hugging Face | Alternativa no generativa, habitualmente mas rapida en inferencia |
+| Modelo | Tipo | Tareas | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Marigold v2 (este repo) | Difusion + LoRAs | Profundidad, normales, albedo | Apache 2.0 | Hugging Face, ComfyUI |
+| Marigold v1 (huawei-bayerlab) | Difusion | Profundidad | no disponible en la informacion | Hugging Face |
+| Depth Anything | Discriminativo | Profundidad | no disponible en la informacion | Hugging Face |
+| Stable Normal | Difusion | Normales | no disponible en la informacion | Hugging Face |
 
-No se dispone de parametros, contexto ni resultados de benchmarks comparables en la informacion proporcionada, por lo que la comparativa se limita a tipo de modelo, tareas cubiertas y licencia.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Es un reempaquetado, no un modelo nuevo: la calidad final depende por completo de `huawei-bayerlab/marigold-v2-0`. Cualquier limitacion del original se hereda.
-- Inconsistencia en la documentacion: el arbol de carpetas de la model card referencia un fichero `qwen_image_edit_2509_int8_convrot.safetensors` bajo `diffusion_models`, nombre ajeno a Marigold. Verificar la composicion real del repositorio antes de usarlo en produccion.
-- Riesgo de alucinacion geometrica: al ser un modelo generativo de difusion, puede producir profundidades o normales plausibles pero incorrectas en regiones ambiguas (superficies reflectantes, cristales, cielos, texturas repetitivas). No debe usarse como ground-truth metrico sin validacion.
-- Ambiguedad de escala: no se documenta si la profundidad de salida es metrica o relativa. Para medidas reales hace falta calibracion externa.
-- Sesgos: no se documentan analisis de sesgo. Al ser un modelo basado en imagenes de entrenamiento no especificadas, puede degradarse en dominios poco representados (imagenes medicas, aereas, microscopicas).
-- Idiomas: irrelevante en sentido linguistico, pero la model card no especifica la distribucion geografica o cultural de las imagenes de entrenamiento.
-- Licencia Apache-2.0: permite uso comercial, pero conviene revisar los terminos del modelo original y de las dependencias de ComfyUI, que pueden tener condiciones propias.
-- Requisitos de hardware no documentados: el despliegue exige calcular a mano la VRAM necesaria segun los componentes que se carguen.
-- Sin soporte de texto, tool calling ni agentes: no es un modelo de lenguaje y no debe emplearse como tal.
+- Este repositorio es un reempaquetado para ComfyUI, no la publicacion original; para detalles de entrenamiento y evaluacion conviene consultar el repositorio `huawei-bayerlab/marigold-v2-0`.
+- El modelo estima propiedades intrinsecas a partir de una sola imagen, una tarea ambigua por naturaleza: la profundidad y el albedo pueden ser inconsistentes en escenas con iluminacion compleja, superficies especulares o transparencias.
+- No hay informacion sobre sesgos del dataset de entrenamiento; al ser un modelo visual, los sesgos se manifestarian en el rendimiento desigual segun tipo de escena, iluminacion o demografia de los sujetos.
+- Riesgo de artefactos y alucinacion geometrica en regiones ocluidas o con textura repetitiva.
+- El uso comercial esta permitido por la licencia Apache 2.0, pero se recomienda verificar las licencias de los componentes base (el backbone `qwen_image_edit_2509_int8_convrot`) antes de desplegar en produccion.
+- El modelo no procesa texto ni instrucciones en lenguaje natural; no debe confundirse con un modelo de lenguaje multimodal.
+- La estructura de carpetas de ComfyUI es obligatoria para que los nodos encuentren los ficheros; una instalacion incorrecta provoca fallos de carga.
 
 ## Enlaces
 
-- Repositorio Hugging Face de este empaquetado: https://huggingface.co/Comfy-Org/marigold-v2-0
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/marigold-v2-0
 - Modelo original: https://huggingface.co/huawei-bayerlab/marigold-v2-0
-- Comfy (sitio oficial): https://comfy.org/
-- Descarga de Comfy Desktop: https://comfy.org/download
-- Comfy Cloud: https://cloud.comfy.org/
-- Repositorio GitHub de ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Workflow de estimacion de profundidad: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_marigold_v2_depth_estimation.json
+- Workflow de estimacion de normales: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_marigold_v2_surface_normal_estimation.json
+- Workflow de estimacion de albedo: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_marigold_v2_albedo_estimation.json

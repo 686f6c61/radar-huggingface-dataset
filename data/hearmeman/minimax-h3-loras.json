@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 83,
-  "downloads_30d": 51065,
+  "downloads_30d": 52569,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "fal/MiniMax-H3-Realism-People-LoRA · Hugging Face",
-      "url": "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
-      "url": "https://design.minimax.io/h3",
-      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
-    },
-    {
-      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
-      "url": "https://github.com/ai-models-lab/minimax-h3",
-      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
-    },
-    {
-      "title": "iamgroot1212/minimax-h3-loras · Hugging Face",
-      "url": "https://huggingface.co/iamgroot1212/minimax-h3-loras",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "MiniMax-H3 - a MiniMaxAI Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/MiniMaxAI/minimax-h3",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

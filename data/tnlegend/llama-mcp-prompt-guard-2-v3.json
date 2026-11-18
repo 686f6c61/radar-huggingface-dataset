@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "tnlegend/Llama-MCP-Prompt-Guard-2-V3",
+  "slug": "tnlegend-llama-mcp-prompt-guard-2-v3",
+  "author": "tnlegend",
+  "url": "https://huggingface.co/tnlegend/Llama-MCP-Prompt-Guard-2-V3",
+  "created_at": "2026-11-17T19:31:30.000Z",
+  "updated_at": "2026-11-17T21:26:42.000Z",
+  "license": "llama4",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "prompt-injection",
+    "mcp",
+    "security-research",
+    "llama",
+    "text-classification",
+    "en",
+    "base_model:meta-llama/Llama-Prompt-Guard-2-86M",
+    "base_model:finetune:meta-llama/Llama-Prompt-Guard-2-86M",
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1131619553,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "meta-llama/Llama-Prompt-Guard-2-86M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

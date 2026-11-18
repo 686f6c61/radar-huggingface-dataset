@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 8330,
+  "downloads_30d": 8507,
   "trending_score": 0,
   "parameters": 176944046976,
   "parameters_human": "176.94B",
@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "A Google Chrome letöltése és telepítése",
-      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
-      "snippet": "A Chrome első indításakor el kell olvasnia és el kell fogadnia a Google Általános Szerződési Feltételeit. Tipp: Annak érdekében, hogy …"
-    },
-    {
-      "title": "Download and install Google Chrome",
-      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
-      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
-    },
-    {
-      "title": "Google Chrome をダウンロードしてインストールする",
-      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
-      "snippet": "Chrome を初めて起動する際は、 Google 利用規約 を確認して同意する必要があります。 ヒント: Chrome がパッケージ マネー …"
-    },
-    {
-      "title": "Descargar e instalar Google Chrome",
-      "url": "https://support.google.com/chrome/answer/95346?hl=es&co=GENIE.Platform%3DDesktop",
-      "snippet": "Instalar Chrome sin conexión Si tienes problemas al descargar Chrome en tu ordenador Windows, usa el enlace alternativo para …"
-    },
-    {
-      "title": "Fazer o download e instalar o Google Chrome",
-      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
-      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os …"
-    }
-  ]
+  "sources": []
 }

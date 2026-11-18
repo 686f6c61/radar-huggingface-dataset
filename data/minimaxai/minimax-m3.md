@@ -2,97 +2,108 @@
 
 ## Resumen
 
-MiniMax-M3 es un modelo multimodal nativo de código abierto desarrollado por MiniMax, diseñado para unificar comprensión de texto, imagen y vídeo en una única arquitectura. Es el primer modelo de pesos abiertos que combina capacidades de razonamiento agéntico, generación de código y comprensión multimodal con una ventana de contexto de 1 millón de tokens, lo que lo sitúa en la frontera de los modelos de propósito general para tareas complejas de larga duración.
+MiniMax-M3 es un modelo multimodal nativo desarrollado por MiniMaxAI, con aproximadamente 428.000 millones de parametros totales y unos 23.000 millones de parametros activos por token gracias a su arquitectura de mezcla de expertos (MoE). Su rasgo diferencial es una ventana de contexto de un millon de tokens gestionada mediante MiniMax Sparse Attention (MSA), un operador de atencion dispersa disenado especificamente para contextos de escala millonaria que, segun el autor, reduce el coste computacional por token a una veintesima parte respecto a la generacion anterior y ofrece aceleraciones de 9x en prefill y 15x en decodificacion frente a MiniMax-M2 a 1M de contexto.
 
-El modelo emplea una arquitectura de mezcla de expertos (MoE) con aproximadamente 427 000 millones de parámetros totales y unos 23 000 millones activos por token, lo que permite un rendimiento elevado con un coste computacional contenido. Su principal innovación es la atención dispersa MiniMax Sparse Attention (MSA), que reduce drásticamente el coste de atención en contextos largos: según sus autores, ofrece una aceleración de 9× en prefill y 15× en decodificación frente a su predecesor M2 a 1M de contexto, reduciendo el cómputo por token a una vigésima parte.
+El modelo se entrena con modalidades mixtas desde el primer paso, lo que permite fusion semantica entre texto, imagen y video en lugar de un acoplamiento tardio de un codificador visual externo. Esta orientado a tareas de agente de largo horizonte, programacion y trabajo colaborativo (cowork), y expone tres modos de razonamiento controlables mediante el parametro `thinking` (`enabled`, `adaptive`, `disabled`).
 
-La relevancia actual de M3 radica en su combinación inédita de multimodalidad nativa, contexto ultralargo y capacidades agénticas, orientada a casos de uso como automatización de flujos de trabajo, análisis de vídeo, programación asistida y agentes autónomos. Está disponible en Hugging Face con licencia comunitaria y puede desplegarse localmente mediante frameworks como SGLang, vLLM, Transformers o KTransformers.
+Es relevante ahora porque combina tres tendencias que estan definiendo la frontera de los modelos abiertos en 2026: multimodalidad nativa, contexto extremadamente largo con atencion eficiente y capacidades agenticas verificadas en benchmarks de horizonte largo. Su licencia es comunitaria (`minimax-community`, catalogada como `other`), no plenamente abierta, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (Mixture of Experts) con atención dispersa MSA |
-| Parametros totales | 427 040 140 160 (~427B) |
-| Parametros activos | ~23B por token (la model card indica ~23B; vLLM reporta ~26B) |
-| Longitud de contexto | 1 000 000 tokens (1M) |
-| Tipos de cuantizacion | BF16 nativo; MXFP8, NVFP4 (Blackwell), MXFP4 (AMD CDNA4) disponibles |
-| Idiomas soportados | No disponible (no especificado por el autor) |
-| Licencia | minimax-community (licencia comunitaria, no OSI) |
-| Formato de pesos | safetensors (tambien disponible en variantes cuantizadas) |
+| Arquitectura | Transformer MoE multimodal nativo con MiniMax Sparse Attention (MSA) |
+| Parametros totales | 427.040.140.160 (~427B) |
+| Parametros activos | ~23B |
+| Longitud de contexto | 1.000.000 tokens |
+| Tipos de cuantizacion | MXFP4 y MXFP8 documentados (guia ATOM/ROCm); otras no disponibles |
+| Idiomas soportados | no disponible |
+| Licencia | `minimax-community` (catalogada como `other`) |
+| Formato de pesos | safetensors (libreria transformers, `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-MiniMax-M3 es un modelo de lenguaje multimodal basado en una arquitectura Transformer con mezcla de expertos (MoE). A diferencia de modelos que añaden módulos de visión sobre un modelo de texto preentrenado, M3 se entrena de forma nativa con modalidades mixtas desde el primer paso, lo que permite una fusión semántica más profunda entre texto, imagen y vídeo. El modelo procesa entradas de vídeo e imagen directamente, sin necesidad de codificadores externos adicionales.
+MiniMax-M3 es un transformer de mezcla de expertos con unos 427B de parametros totales y aproximadamente 23B activos por token. La innovacion arquitectonica central es MiniMax Sparse Attention (MSA), un operador de atencion dispersa de alto rendimiento pensado para contextos de un millon de tokens. Frente a GQA, MSA reduce de forma marcada el computo y la huella de memoria de la atencion manteniendo la calidad del modelo; el autor reporta 9x de aceleracion en prefill y 15x en decodificacion a 1M de contexto respecto a M2, con un coste por token reducido a 1/20.
 
-La innovación central es la atención dispersa MiniMax Sparse Attention (MSA), un operador de atención de alto rendimiento diseñado para contextos de millón de tokens. Frente a la atención agrupada (GQA), MSA reduce el cómputo y el uso de memoria de la atención manteniendo la calidad del modelo. Según los datos publicados, M3 logra una aceleración de 9× en la fase de prefill y de 15× en decodificación comparado con M2 a 1M de contexto, y reduce el coste por token a 1/20. Los detalles técnicos completos se recogen en el informe arXiv 2606.13392.
-
-El entrenamiento combina datos de texto, imagen y vídeo desde el inicio, aunque no se han publicado cifras exactas sobre el número de tokens de entrenamiento ni la composición del dataset. El modelo soporta tres modos de razonamiento controlados por el parámetro `thinking`: `enabled` (razonamiento siempre activo), `adaptive` (el modelo decide cuándo razonar) y `disabled` (mínima latencia y máximo throughput). Los parámetros de inferencia recomendados son temperatura 1.0 y top_p 0.95.
+El entrenamiento es multimodal nativo: el modelo procesa texto, imagen y video de forma conjunta desde el primer paso de entrenamiento, lo que habilita una fusion semantica mas profunda que en enfoques de adaptador visual. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. Si se documenta un modo de razonamiento conmutable (`thinking`: `enabled`, `adaptive`, `disabled`), lo que sugiere etapas de post-entrenamiento orientadas a razonamiento y uso agentico. El informe tecnico esta disponible en arXiv:2606.13392.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo de múltiples pasos, con modo de razonamiento explícito configurable (`thinking`).
-- Comprensión multimodal nativa de imágenes y vídeo, incluyendo análisis de escenas, reconocimiento de objetos y seguimiento temporal en secuencias de vídeo.
-- Generación de código de nivel frontera, incluyendo lenguajes de programación populares, depuración y refactorización.
-- Capacidades agénticas: soporte de tool calling, planificación de tareas de larga duración y ejecución de flujos de trabajo complejos (cowork).
-- Ventana de contexto de 1M tokens, apta para procesar documentos extensos, libros completos, repositorios de código o vídeos largos.
-- Soporte de conversación multi-turno y diálogo contextual.
-- Capacidades multilingües (idiomas concretos no especificados por el autor).
-- Compatible con endpoints de API y despliegue local mediante múltiples frameworks de inferencia.
+- Generacion de texto y razonamiento con tres modos conmutables: razonamiento siempre activo, adaptativo (el modelo decide cuando razonar) y desactivado para minimizar latencia.
+- Comprension y generacion multimodal: entrada image-text-to-text, con soporte de imagen y video.
+- Programacion y tareas de codigo, con rendimiento declarado de nivel frontera en benchmarks agenticos de horizonte largo.
+- Capacidades agenticas y "cowork": ejecucion de tareas multi-paso y colaboracion en flujos de trabajo prolongados.
+- Contexto de hasta 1M de tokens, adecuado para documentos, repositorios o sesiones de agente extensas.
+- Integracion con frameworks de inferencia de produccion (SGLang, vLLM, Transformers, KTransformers, unsloth, ATOM).
+- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible.
+- Idiomas soportados: no disponible.
 
 ## Casos de uso
 
-- Automatización de flujos de trabajo agénticos: M3 puede actuar como agente autónomo que planifica, ejecuta y verifica tareas de larga duración (por ejemplo, gestión de incidencias en un repositorio, coordinación de pipelines de datos), gracias a su contexto de 1M tokens y su soporte de tool calling.
-- Análisis de vídeo y vigilancia inteligente: su multimodalidad nativa permite procesar secuencias de vídeo completas en una sola pasada, detectando eventos, transcribiendo diálogos y generando resúmenes temporales para aplicaciones de seguridad o revisión de contenido.
-- Asistente de programación en producción: integrable en IDEs o pipelines de CI/CD para generar código, revisar pull requests, detectar bugs y proponer parches, aprovechando su capacidad de razonamiento y su contexto largo para entender repositorios enteros.
-- Procesamiento de documentos legales y académicos extensos: con 1M de contexto, puede analizar contratos, tesis o expedientes completos, extraer cláusulas relevantes, comparar versiones y responder preguntas sobre el contenido sin necesidad de dividir el texto.
-- Atención al cliente multimodal: puede gestionar conversaciones que incluyan capturas de pantalla, vídeos de demostración o documentos adjuntos, manteniendo el contexto de la interacción completa y resolviendo consultas técnicas complejas.
-- Generación de contenido educativo y formativo: capaz de crear explicaciones, ejercicios y evaluaciones a partir de material de vídeo o imagen, adaptando el nivel de detalle según la petición del usuario.
-- Investigación en IA: sirve como plataforma de experimentación para técnicas de atención dispersa, eficiencia en contexto largo y entrenamiento multimodal nativo, gracias a su disponibilidad de pesos abiertos y su integración con frameworks como SGLang y vLLM.
+- Agentes de programacion de horizonte largo: el modelo puede mantener el estado de una tarea de refactorizacion o migracion a lo largo de miles de interacciones gracias al contexto de 1M tokens y a su rendimiento en benchmarks agenticos de codigo.
+- Analisis de repositorios completos: con 1M de tokens de contexto y MSA eficiente, es viable cargar un repositorio de tamano medio y razonar sobre dependencias, tests y cambios sin trocear el codigo.
+- Procesamiento de video y documentos largos: la multimodalidad nativa permite resumir o extraer informacion de videos y conjuntos de imagenes junto con texto en una sola pasada.
+- Asistentes de investigacion: ingesta de articulos, papers y notas en una ventana de contexto millonaria para sintesis y comparacion cruzada.
+- Automatizacion de flujos cowork: tareas colaborativas multi-paso donde el modo `thinking: adaptive` reduce coste en pasos triviales y activa razonamiento solo cuando aporta.
+- Atencion al cliente con contexto extenso: gestion de conversaciones multi-turno con historial largo e imagenes adjuntas (capturas, facturas) en el mismo contexto.
+- Pipelines de generacion de codigo en produccion: despliegue via vLLM o SGLang con cuantizacion MXFP4/MXFP8 en hardware AMD (ATOM) o NVIDIA para controlar coste por token.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que M3 alcanza "rendimiento de nivel frontera" en benchmarks agénticos de largo horizonte y en tareas de coding y cowork, pero no se proporcionan cifras concretas (MMLU, HumanEval, GSM8K, etc.) en los materiales revisados. Se recomienda consultar el informe técnico en arXiv (2606.13392) para obtener datos comparativos detallados.
+La model card referencia una figura de benchmarks (`figures/benchmark.jpeg`) y afirma rendimiento de nivel frontera en benchmarks agenticos de horizonte largo, pero no se han publicado en la informacion disponible los valores numericos concretos de MMLU, HumanEval, GSM8K u otros. Los unicos datos cuantitativos disponibles son de eficiencia: 9x de aceleracion en prefill y 15x en decodificacion frente a MiniMax-M2 a 1M de contexto, y coste por token de 1/20.
+
+No se han publicado resultados de benchmarks numericos en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo completo en BF16 ocupa aproximadamente 854 GB (427B × 2 bytes), por lo que no cabe en una sola GPU de consumo. Con cuantización MXFP8 (~427 GB) o NVFP4 (~214 GB) se reduce sustancialmente, pero sigue requiriendo múltiples GPUs de alta gama o nodos completos.
-- GPUs recomendadas: NVIDIA Hopper (H100), NVIDIA Blackwell (B200) y AMD CDNA4 (MI355X) para las variantes cuantizadas. Para despliegues con BF16 se necesitan clusters multi-GPU (por ejemplo, 8× H100 con 80 GB).
-- No es viable en GPUs de consumo (RTX 4090, etc.) a menos que se utilice una cuantización extrema (por ejemplo, 4 bits) y se acepte una degradación significativa de calidad; incluso así, la memoria de 24 GB es insuficiente para el modelo completo.
-- Opciones de despliegue: SGLang, vLLM, Transformers (con soporte nativo `minimax_m3_vl`), KTransformers, unsloth y ATOM (para AMD con MXFP4/MXFP8). Todos estos frameworks soportan la arquitectura MSA.
-- Latencia y throughput: no se han publicado cifras exactas. La aceleración declarada de 9× en prefill y 15× en decode frente a M2 a 1M de contexto sugiere un rendimiento muy superior en tareas de contexto largo, pero los valores absolutos dependen del hardware y la configuración.
+- Parametros totales de ~427B: el repo ocupa 1.708,4 GB en safetensors, por lo que la inferencia en precision completa requiere un cluster multi-GPU de alta gama.
+- Con ~23B parametros activos, el coste por token es propio de un modelo de ese orden, pero la memoria para pesos es la de los 427B totales (o su version cuantizada).
+- Cuantizacion MXFP4/MXFP8 documentada (guia ATOM/ROCm); el peso cuantizado a 4 bits se situaria en torno a 200-215 GB, aun fuera de una GPU de consumo individual.
+- GPU recomendadas: no especificadas en la informacion disponible; por tamano, se requiere hardware de clase H100/H200, MI300/MI325 o superior en configuracion multi-GPU.
+- No cabe en GPU de consumo (RTX 4090, 24 GB) ni en configuraciones de una sola tarjeta consumer.
+- Frameworks de despliegue soportados: SGLang, vLLM, Transformers, KTransformers, unsloth y ATOM (ROCm).
+- Parametros de inferencia recomendados: `temperature=1.0`, `top_p=0.95`.
+- Latencia y throughput absolutos: no disponibles; solo se conocen las aceleraciones relativas frente a M2.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos cuantitativos (benchmarks) con otros modelos en la información proporcionada. Cualitativamente, M3 compite con:
+| Modelo | Parametros | Activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| MiniMax-M3 | ~427B | ~23B | 1M | minimax-community | Multimodal nativo, MSA, agentico |
+| MiniMax-M2 | no disponible | no disponible | no disponible | no disponible | Generacion anterior; M3 reporta 9x/15x de mejora a 1M |
+| Alternativas de clase ~400B MoE | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia |
-|---|---|---|---|---|
-| MiniMax-M3 | 427B total / ~23B activos | 1M | Sí (texto, imagen, vídeo) | Comunitaria |
-| MiniMax-M2 (predecesor) | No disponible | No disponible | No (solo texto) | Comunitaria |
-| Qwen2.5-VL (referencia) | 72B (aprox.) | 128K | Sí (texto, imagen, vídeo) | Apache 2.0 |
-
-La comparación con M2 es la más directa: M3 introduce multimodalidad nativa y MSA, con aceleraciones de 9×/15× en prefill/decode a 1M de contexto. Frente a modelos como Qwen2.5-VL, M3 ofrece un contexto muy superior (1M frente a 128K) y un enfoque de entrenamiento nativo multimodal, aunque Qwen2.5-VL tiene una licencia más permisiva (Apache 2.0) y un tamaño total menor que facilita su despliegue. No se dispone de datos de rendimiento comparativo para una evaluación objetiva.
+No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa numerica con modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La licencia `minimax-community` no es una licencia OSI estándar; es necesario revisar sus términos específicos antes de un uso comercial, especialmente en lo relativo a redistribución, uso en servicios públicos y obligaciones de atribución.
-- No se han publicado resultados de benchmarks independientes ni evaluaciones de sesgos, por lo que se desconoce su comportamiento en tareas sensibles (toxicidad, estereotipos, sesgos de género o raza).
-- Riesgo de alucinación inherente a los modelos de lenguaje, particularmente en tareas de razonamiento de larga duración donde puede generar información plausible pero incorrecta.
-- La ventana de 1M tokens requiere hardware muy potente; su uso práctico está limitado a entornos con múltiples GPUs de alta gama o servicios en la nube especializados.
-- No se especifican los idiomas soportados; aunque probablemente cubre los principales idiomas mundiales, no hay confirmación oficial.
-- El tamaño del repositorio (1,7 TB) hace que la descarga y el almacenamiento sean costosos; se recomienda usar descargas parciales o cuantizaciones si solo se necesita una parte del modelo.
-- La documentación técnica (arXiv 2606.13392) es reciente y puede contener detalles que aún no han sido validados por la comunidad.
+- Licencia `minimax-community` (catalogada como `other`): no es una licencia de codigo abierto estandar; es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial.
+- Riesgo de alucinacion inherente a modelos de gran escala; no se documentan tasas ni mitigaciones especificas.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Idiomas soportados no declarados; el rendimiento fuera de los idiomas principales de entrenamiento no esta garantizado.
+- El contexto de 1M tokens depende de MSA y de los kernels especificos; el comportamiento con frameworks o cuantizaciones no soportadas puede degradarse.
+- El tamano (~427B parametros, 1,7 TB en safetensors) hace inviable el despliegue en hardware consumer y exige infraestructura multi-GPU.
+- El soporte de tool calling no esta confirmado explicitamente en la model card.
+- Los benchmarks solo se presentan como imagen sin valores numericos en el texto, lo que dificulta la verificacion independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-M3
-- Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-M3
-- Informe técnico (arXiv): https://arxiv.org/abs/2606.13392
-- Página del producto MiniMax: https://www.minimax.io/models/text/m3
-- Colección MiniMax-M3 en Hugging Face: https://huggingface.co/collections/MiniMaxAI/minimax-m3
-- Documentación de Transformers: https://huggingface.co/docs/transformers/model_doc/minimax_m3_vl
-- Receta de vLLM: https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3
-- Tutorial de KTransformers: https://github.com/kvcache-ai/ktransformers/blob/main/doc/en/kt-kernel/MiniMax-M3-Tutorial.md
-- Guía de uso de ATOM (AMD): https://github.com/ROCm/ATOM/blob/main/recipes/MiniMax-M3.md
-- Tutorial de unsloth: https://unsloth.ai/docs/models/minimax-m3
+- Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-M3
+- Licencia: https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE
+- Paper (arXiv): https://arxiv.org/abs/2606.13392
+- Paper en HF Papers: https://huggingface.co/papers/2606.13392
+- GitHub del modelo: https://github.com/MiniMax-AI/MiniMax-M3
+- Repositorio MSA: https://github.com/MiniMax-AI/MSA
+- MiniMax Code: https://agent.minimax.io/
+- MiniMax API: https://platform.minimax.io/
+- Documentacion API: https://platform.minimax.io/docs/guides/text-generation
+- Web oficial: https://www.minimax.io
+- ModelScope: https://modelscope.cn/organization/minimax
+- Discord: https://discord.com/invite/DPC4AHFCBw
+- SGLang cookbook: https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3
+- vLLM recipes: https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3
+- Transformers docs: https://huggingface.co/docs/transformers/model_doc/minimax_m3_vl
+- KTransformers tutorial: https://github.com/kvcache-ai/ktransformers/blob/main/doc/en/kt-kernel/MiniMax-M3-Tutorial.md
+- unsloth tutorial: https://unsloth.ai/docs/models/minimax-m3
+- ATOM (ROCm) guia: https://github.com/ROCm/ATOM/blob/main/recipes/MiniMax-M3.md
+- Contacto: model@minimax.io

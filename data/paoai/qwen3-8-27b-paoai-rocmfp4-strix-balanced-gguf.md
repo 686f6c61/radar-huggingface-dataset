@@ -2,128 +2,109 @@
 
 ## Resumen
 
-El Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED-GGUF es una cuantización de comunidad publicada por PaoAI sobre el modelo base Qwen/Qwen3.8-27B (27.320.697.856 parámetros). No es un modelo nuevo ni un ajuste fino: es un GGUF de 15,01 GB (13,98 GiB) en un único fichero, empaquetado específicamente para la iGPU AMD Strix Halo (Ryzen AI Max+ 395, gfx1151) y pensado para ejecutarse en llama.cpp sin reparto entre CPU y GPU y sin flags de offload.
+Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED-GGUF es una cuantización comunitaria de Qwen3.8-27B, un modelo de lenguaje de 27.320 millones de parámetros desarrollado originalmente por el equipo Qwen de Alibaba. Esta versión, publicada por PaoAI, no es un modelo nuevo sino una compilación de pesos en formato GGUF optimizada específicamente para la iGPU AMD Strix Halo (Ryzen AI Max+ 395, arquitectura gfx1151), empleando un esquema de cuantización mixto denominado ROCmFP4 que combina bloques de 4.25 y 4.5 bits con embeddings en Q6_K y normas en FP32.
 
-El interés está en la cuantización selectiva por componentes, en lugar de aplicar un único tipo a todo el modelo: la atención completa (16 capas) y el FFN denso se comprimen a ~4,5 bits por peso con una variante FP4 nativa de ROCm; las 48 capas de atención lineal usan ROCmFP4 con imatrix; los embeddings quedan en Q6_K; las normas en FP32; y la cabeza de borrador MTP se mantiene en Q8_0 + FP32 para preservar la tasa de aceptación de la decodificación especulativa.
+El interés de esta ficha radica en que demuestra un patrón de despliegue local poco habitual: un modelo de 27B con ventana de contexto completa de 262.144 tokens comprimido en un único archivo de 15,01 GB que cabe íntegramente en la memoria unificada de un sistema Strix Halo, sin necesidad de flags de offload. La cuantización se guió mediante una matriz de importancia (imatrix) y preserva las capas de atención completa en mayor precisión relativa que las capas de atención lineal, lo que refleja la arquitectura híbrida del modelo base.
 
-Es relevante ahora porque demuestra que un híbrido de 27B puede servir contexto largo (hasta 128K probados) en hardware de consumo con memoria unificada, manteniendo la decodificación especulativa operativa y sin caídas abruptas al llenar la ventana. La contrapartida es que exige un fork no oficial de llama.cpp y una arquitectura (`qwen3_5`) y un tipo de cuantización (tipo 105) que el árbol estándar no reconoce.
+La relevancia actual es doble: por un lado, permite ejecutar un modelo de clase 27B con contexto de 256K en hardware de consumo integrado; por otro, el autor publica mediciones de rendimiento y evaluaciones de código reproducibles (con mediana y dispersión de ejecuciones), algo poco frecuente en cuantizaciones comunitarias.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido `qwen3_5`: 48 capas de atención lineal con gated-delta (GDN) + 16 capas de atención completa + cabeza MTP para decodificación especulativa |
-| Parámetros totales | 27.320.697.856 (27,3 mil millones) |
-| Parámetros activos | No aplica (no es un modelo MoE según la información disponible) |
-| Longitud de contexto | Probado a 64K (`-c 65536`); barrido de profundidad ejecutado con `-c 262144` y datos medidos hasta 128K |
-| Tipos de cuantización | Mezcla por componente: Q4_0_ROCMFP4_STRIX (tipo 105, ~4,5 bpw) en atención completa Q/K/V/O; ROCmFP4 (tipo 100, ~4,5 bpw, con imatrix) en atención lineal y FFN denso; Q8_0 + FP32 en la cabeza de borrador; Q6_K en embeddings; FP32 en normas y gates |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (fichero único de 15,01 GB / 13,98 GiB; sha256 `3727594804afef8140165e36c0919c70a98b43751a3153d43dd10385c1f100fd`) |
+| Arquitectura | Transformer híbrido: 48 capas de atención lineal (gated delta) + 16 capas de atención completa, con cabeza MTP de decodificación especulativa |
+| Parámetros totales | 27.320.697.856 (27,3 B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens (256K), verificado de 8K a 256K según el autor |
+| Tipos de cuantización | Mixta: ROCmFP4-FAST (4,25 bits), ROCmFP4 (4,5 bits), Q6_K (6,56 bits) para embeddings, Q8_0 y FP32 en normas y estado pequeño; media de 4,40 bits por peso |
+| Idiomas soportados | en (inglés, según la model card y los tags) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
+| Tamaño del archivo | 15,01 GB (repo: 15,0 GB) |
+| Cuantización guiada por | imatrix (matriz de importancia) |
+| Hardware objetivo | AMD Strix Halo, gfx1151 (Ryzen AI Max+ 395) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un híbrido de atención: 48 capas de atención lineal con mecanismo gated-delta (estado en tiempo constante, pensadas para el "camino rápido") y solo 16 capas de atención completa, que son las que releen realmente el contexto. A esto se añade una cabeza de borrador MTP (blk.64) que habilita decodificación especulativa con `draft-mtp n4`. En llama.cpp la arquitectura se identifica como `qwen3_5`, y el fork de referencia la implementa junto con los tipos de cuantización ROCmFP4.
+El modelo base Qwen3.8-27B emplea una arquitectura híbrida en la que solo 16 de las 64 capas ejecutan atención completa sobre el contexto, mientras que las 48 restantes usan atención lineal con estado de tamaño constante (gated delta). Esta asimetría reduce el coste computacional del prefill y del decode con contextos largos, y explica la estrategia de cuantización por partes: el autor asigna el layout más fino (ROCmFP4, 4,5 bits) preferentemente a las claves y valores de atención y al qkv de la atención lineal, y el layout más rápido (ROCmFP4-FAST, 4,25 bits) al bloque FFN, que concentra 9,09 GB de los 15,01 GB totales.
 
-La receta de cuantización se aplica por órganos, con tamaños de tensor medidos: FFN gate/up 6,16 GB; FFN down 3,08 GB; atención lineal qkv 1,42 GB; operaciones de estado GDN 0,81 GB; embeddings de tokens 1,04 GB; salida 0,68 GB; atención completa 0,62 GB; cabeza de borrador 0,10 GB; normas por debajo de 0,01 GB; total 15,01 GB. No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si el modelo base pasó por RLHF, DPO u otras fases de alineación. PaoAI declara explícitamente que es una cuantización de comunidad y que no está afiliada a Alibaba ni al equipo de Qwen.
+El modelo incluye una cabeza de borrador (draft head, blk.64, MTP) de 0,25 GB que actúa como modelo especulativo integrado para decodificación especulativa. El autor no documenta en esta model card los datos de entrenamiento del modelo base (número de tokens, composición del corpus, fases de RLHF/DPO); esa información correspondería a la model card original de Qwen/Qwen3.8-27B y no se incluye aquí. La innovación técnica destacable de esta publicación es el esquema de cuantización por capas guiado por imatrix y la integración de tres perfiles de servicio (Chat, Code y Long) sobre el mismo archivo de pesos con idéntico sha256.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline declarado: text-generation; etiqueta conversational).
-- Escritura de código: el modelo card documenta tareas de implementación de autómatas con reglas nuevas y trazas exactas de estado.
-- Análisis de código: lectura de código "que miente" para trazarlo y localizar un bug plantado.
-- Concurrencia: implementación de un ring buffer thread-safe que supera un arnés de estrés de 5.000 operaciones.
-- Contexto largo: comportamiento medido y estable de 8K a 128K de contexto rellenado, incluida una pregunta aritmética de integridad (17×23) resuelta correctamente en los seis puntos del barrido.
-- Decodificación especulativa integrada mediante cabeza MTP, con tasa de aceptación entre 0,86 y 0,90 en todo el rango de contexto.
+- Generación de texto conversacional y de formato largo, con perfil Chat por defecto.
+- Razonamiento y trazado de código: el modelo resuelve tareas de lectura de código engañoso y localización de bugs plantados (tarea "Hunt").
+- Implementación de código: máquinas de estado novedosas y buffers circulares thread-safe sometidos a pruebas de estrés de 5.000 operaciones.
+- Contexto largo: ventana de 262.144 tokens verificada con prueba de aguja en pajar hasta 256K.
+- Decodificación especulativa integrada mediante cabeza MTP (4 conjeturas por paso) en el perfil Chat.
+- Perfil Code con modelo auxiliar externo (z-lab DFlash2, 2,1 GB) que conjetura de 3 a 7 tokens por paso, orientado a agentes de código hasta ~64K de contexto.
+- Perfil Long con memoria de contexto en f16 distribuida por todos los canales de memoria, para documentos y código largos (64K+).
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con el ecosistema llama.cpp.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; las tareas de análisis y planificación del chain-test sugieren cierta capacidad, pero no hay datos formales.
-- Capacidades multilingües: no disponibles; la model card solo declara inglés (`en`).
-- Capacidades especiales: modo thinking, visión o audio no documentados.
+- Capacidades multimodales (visión, audio): no disponibles; el pipeline es text-generation.
+- Multilingüismo: limitado a inglés según la model card.
 
 ## Casos de uso
 
-- Asistente de código en local: el modelo implementa estructuras de datos concurrentes (ring buffer) y algoritmos nuevos con trazas exactas, por lo que encaja en un flujo de trabajo de escritura y revisión de código sin depender de API externa.
-- Revisión de código heredado: la tarea "Hunt" mide la capacidad de leer código engañoso, trazarlo y localizar el bug plantado, que es exactamente lo que se necesita al auditar módulos antiguos o poco documentados.
-- Análisis de repositorios con contexto largo: con 128K de ventana y decodificación a ~10,6 t/s en ese punto, permite cargar varios ficheros fuente y trazar dependencias entre ellos en una sola pasada.
-- Generación de documentación técnica y resúmenes de código: el rendimiento sostenido de salida larga (21,6–24,3 t/s en la fase "Publish") lo hace adecuado para producir documentos extensos a partir de fuentes de código.
-- Prototipado en un equipo de sobremesa con iGPU: al caber en 15,01 GB sobre una única máquina Strix Halo con ~51,6 GB de GTT a 64K de contexto, sirve como entorno de desarrollo privado sin GPU dedicada.
-- Evaluación de cuantizaciones: sirve como referencia práctica para comparar recetas de compresión por componente frente a cuantizaciones homogéneas, usando el chain-test y el barrido de contexto como protocolo reproducible.
-- Servicio local de razonamiento sobre documentos largos: gracias a la tasa de aceptación MTP estable (0,86–0,90) incluso a 128K, la decodificación especulativa sigue aportando aceleración cuando la ventana está llena.
-- Pruebas de estrés de código concurrente en CI: se puede integrar en un pipeline que genere y ejecute candidatos de código multihilo contra un arnés de 5.000 operaciones.
+- Asistente de código en local para un desarrollador individual: con el perfil Code y el modelo auxiliar DFlash2, el modelo implementa estructuras concurrentes y traza código ajeno en una estación de trabajo con iGPU Strix Halo, sin depender de la nube.
+- Revisión de código en CI/CD: el perfil Chat o Code puede integrarse en un pipeline que analice diffs y detecte errores lógicos, dado que el modelo supera tareas de trazado de código deliberadamente engañoso.
+- Análisis de repositorios y documentación extensa: con el perfil Long y 262.144 tokens de contexto, es posible cargar varios módulos o un manual técnico completo y formular preguntas sobre él sin truncar.
+- Generación de documentación técnica a partir de código: el modelo puede leer un módulo y redactar explicaciones o comentarios, aprovechando su ventana larga y su capacidad de seguir instrucciones de formato.
+- Prototipado de agentes de código de múltiples pasos: la decodificación especulativa integrada y el perfil Code reducen la latencia en bucles de razonamiento y edición de archivos.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse íntegramente en una iGPU local con licencia Apache 2.0, permite procesar código propietario sin enviarlo a servicios externos.
+- Enseñanza y experimentación con modelos de contexto largo: sirve como banco de pruebas para estudiar el comportamiento de un modelo de 27B con 256K de contexto en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
-No hay resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos publicados son el "chain-test" propio del autor (mediana de 3 ejecuciones, septiembre de 2026) y mediciones de velocidad.
+El autor publica un examen de código ("chain test") con tres ejecuciones por perfil y servidor reiniciado en cada una, reportando medianas y dispersión. Las puntuaciones son sobre 100 por tarea.
 
-| Tarea del chain-test | Qué mide | Mediana de 3 | Ejecuciones |
+| Tarea | Chat — mediana (ejecuciones) | Code — mediana (ejecuciones) | Long — mediana (ejecuciones) |
 |---|---|---|---|
-| Automaton | Implementar reglas nuevas y trazar el estado exacto | 100 | 100 · 100 · 100 |
-| Hunt | Leer código que miente, trazarlo y hallar el bug plantado | 100 | 100 · 100 · 100 |
-| Ring buffer | Código multihilo bajo un arnés de estrés | 100 | 100 · 100 · 100 |
-| Mediana de tarea | — | 100/100 | — |
+| Hunt — trazar código engañoso y hallar el bug | 100 (100 · 100 · 40) | 100 (100 · 100 · 100) | 100 (100 · 100 · 100) |
+| Automaton — implementar reglas novedosas y trazar estado | 100 (100 · 100 · 100) | 100 (100 · 100 · 100) | 100 (100 · 100 · 100) |
+| Ring buffer — código multihilo bajo estrés | 20 (100 · 20 · 20) | 100 (100 · 100 · 100) | 100 (100 · 100 · 100) |
 
-Velocidad de decodificación por fase (contexto corto, servidor a 64K, draft-mtp n4, KV q8_0):
+El autor añade que, en 10 ejecuciones adicionales del perfil Chat, el ring buffer falló 3 veces (2 por `Condition.notify_one()`, método inexistente en Python, y 1 por notificar sin mantener el bloqueo). El modelo original en BF16, ejecutado en servidor cloud con 5 ejecuciones, reprodujo el mismo fallo de `notify_one()` en 1 ocasión según el texto disponible.
 
-| Fase | t/s (rango de 3 ejecuciones) |
-|---|---|
-| Spec (planificación) | 18,7 – 19,3 |
-| Hunt (análisis) | 20,8 – 21,9 |
-| Automaton (escritura de código) | 20,9 – 23,9 |
-| Ring buffer (escritura de código) | 18,6 – 21,6 |
-| Publish (salida larga) | 21,6 – 24,3 |
-
-Barrido de contexto profundo (una sola Strix Halo, flash attention, KV q8_0, `-c 262144`, draft-mtp n4):
-
-| Contexto rellenado | Decode t/s | Prefill t/s | Aceptación MTP | Integridad 391 |
-|---|---|---|---|---|
-| 8K | 21,9 | 229,9 | 0,90 | Correcto |
-| 16K | 22,4 | 211,7 | 0,86 | Correcto |
-| 32K | 20,5 | 186,9 | 0,87 | Correcto |
-| 64K | 17,5 | 150,1 | 0,89 | Correcto |
-| 96K | 16,5 | 125,0 | 0,90 | Correcto |
-| 128K | 10,6 | 102,9 | 0,87 | Correcto |
+Rendimiento medido en el motor paoai-strix-engine `strix-v4` sobre Strix Halo: lectura (prefill) de 101 a 410 t/s y escritura (decode) de 14,8 a 49,8 t/s, con variación según el llenado de la ventana, la petición y el perfil. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso del fichero: 15,01 GB (13,98 GiB) en un único GGUF.
-- Memoria total observada: carga completa en GPU con GTT ≈ 51,6 GB a 64K de contexto; la mayor parte corresponde a pesos, caché KV y buffers de trabajo.
-- Hardware de referencia: AMD Strix Halo (Ryzen AI Max+ 395, gfx1151), iGPU con memoria unificada.
-- Cabe en GPU de consumo: sí en el hardware de referencia (memoria unificada). No hay datos publicados para GPU dedicadas; por tamaño (15 GB) requeriría al menos ~16 GB de VRAM solo para pesos, más caché KV, pero los tipos ROCmFP4 son específicos de gfx1151 y no se documenta su comportamiento en otras arquitecturas.
-- Software obligatorio: fork kingjones30/ROCmFPX, rama `z13-main`, commit `dfeacaf2f`, compilado con `GGML_VULKAN=ON`. Con llama.cpp estándar falla con `unknown model architecture: 'qwen3_5'`; sin los tipos ROCmFP4 falla con `invalid ggml type 105` (mensaje truncado en la información disponible).
-- Opciones de despliegue: llama.cpp (fork ROCmFPX) con decodificación especulativa MTP (`draft-mtp n4`), flash attention y KV en q8_0. No se documenta compatibilidad con vLLM, TGI, Ollama u otros motores.
-- Throughput: 21,9 t/s de decodificación y 229,9 t/s de prefill a 8K; 10,6 t/s y 102,9 t/s respectivamente a 128K.
-- Latencia y throughput en otras configuraciones de hardware: no disponibles.
+- VRAM/memoria estimada: 15,01 GB para el archivo principal; el perfil Code añade 2,1 GB del modelo auxiliar DFlash2; el perfil Long requiere además memoria de contexto en f16, cuyo tamaño exacto no se detalla en la información disponible.
+- Hardware objetivo: AMD Strix Halo (Ryzen AI Max+ 395, gfx1151) con memoria unificada; el autor indica que el archivo cabe en la iGPU sin flags de offload.
+- GPU discretas: no se documenta compatibilidad ni rendimiento en A100, H100 o RTX 4090; el esquema ROCmFP4 está diseñado para gfx1151.
+- GPU de consumo: no hay datos sobre ejecución en RTX 4090 u otras GPU consumer; el formato GGUF permitiría en principio su uso con llama.cpp, pero sin cifras verificadas.
+- Opciones de despliegue: llama.cpp y el motor propio paoai-strix-engine (rama `strix-v4`, commit `e9b93d56a`). No se mencionan vLLM, TGI, Ollama ni otros backends.
+- Latencia y throughput: prefill de 101 a 410 t/s y decode de 14,8 a 49,8 t/s en Strix Halo con el motor del autor.
+- Incidencia conocida: en el motor PaoAI v1 y versiones antiguas de llama.cpp, una conversación puede detenerse a mitad de respuesta de forma esporádica; corregido en llama.cpp PR #29161.
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks comparativos ni de modelos alternativos en la información proporcionada, por lo que la comparación de rendimiento no está disponible.
+| Modelo | Parámetros | Contexto | Formato / licencia | Notas |
+|---|---|---|---|---|
+| Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED (esta ficha) | 27,3 B | 262.144 | GGUF, Apache 2.0 | Cuantización mixta 4,40 bits media, 15,01 GB, optimizada para gfx1151 |
+| Qwen/Qwen3.8-27B (modelo base) | 27,3 B | 262.144 | Safetensors, Apache 2.0 | Pesos originales en precisión completa; requiere mucha más memoria |
+| z-lab/Qwen3.8-27B-DFlash2-GGUF | no disponible | no disponible | GGUF | Modelo auxiliar de decodificación especulativa (2,1 GB) usado en los perfiles Code y Long |
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED (esta ficha) | 27,3 mil millones | Probado a 64K; medido hasta 128K | GGUF mixto de 15,01 GB, requiere fork ROCmFPX | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3.8-27B (modelo base) | 27,3 mil millones | No disponible | Pesos originales (formato no disponible en la información) | No disponible | Hugging Face |
-| Cuantizaciones GGUF homogéneas de 27B | No disponible | No disponible | GGUF estándar compatible con llama.cpp stock | Depende del autor | No disponible |
-| Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización de comunidad; PaoAI declara no estar afiliada a Alibaba ni al equipo de Qwen. El soporte y la validación dependen del autor del quant.
-- Requiere un fork no oficial de llama.cpp (ROCmFPX, rama `z13-main`, commit `dfeacaf2f`). Con el árbol estándar el modelo no carga: `unknown model architecture: 'qwen3_5'` o `invalid ggml type 105`.
-- Los tipos ROCmFP4 son nativos de gfx1151 (Strix Halo). No hay evidencia publicada de funcionamiento en otras GPU o plataformas.
-- Idiomas: solo se declara inglés (`en`). No hay datos de rendimiento en castellano u otros idiomas.
-- Variantes anteriores con compresión más agresiva de este mismo modelo obtuvieron 20 puntos en la tarea del ring buffer, según reconoce el propio autor; la degradación por sobrecuantización es un riesgo real en esta familia de quants.
-- El chain-test tiene N=3 por tarea y está diseñado por el mismo autor del quant, con tareas de dominio muy concreto (autómata, caza de bugs, ring buffer). No es un benchmark independiente ni estandarizado.
-- Rendimiento a contexto profundo: a 128K la decodificación cae a aproximadamente la mitad de la velocidad de 8K (10,6 frente a 21,9 t/s de forma lineal y sin cliff, pero con coste apreciable).
-- La caché KV se sirve en q8_0, lo que introduce una pérdida de precisión adicional en contextos muy largos respecto a KV en FP16.
-- No se han publicado evaluaciones de sesgos, tasas de alucinación ni robustez frente a prompts adversarios.
-- Licencia apache-2.0 para la cuantización, pero conviene verificar por separado los términos aplicables al modelo base antes de un uso comercial.
-- Riesgo de errores en tool calling y uso agéntico: no hay documentación ni validación de estas capacidades en la información disponible.
+- Sesgos conocidos: no documentados en la información disponible; al ser una cuantización, hereda los del modelo base.
+- Riesgo de alucinación: no cuantificado por el autor; el examen de código muestra fallos concretos (uso de `Condition.notify_one()` inexistente en Python) en el perfil Chat.
+- Estabilidad del perfil Chat: el ring buffer multihilo falló en 3 de 10 ejecuciones adicionales; para tareas de concurrencia se recomienda el perfil Code o Long.
+- Limitación de idioma: la model card declara únicamente inglés.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor aclara que es una cuantización comunitaria no afiliada a Alibaba ni al equipo Qwen; conviene verificar la licencia del modelo base.
+- Dependencia de hardware: el rendimiento medido corresponde exclusivamente a Strix Halo (gfx1151) con el motor del autor; no hay garantías en otras GPU.
+- Incidencia conocida de parada a mitad de respuesta en motores antiguos, corregida en llama.cpp PR #29161.
+- El perfil Long requiere memoria adicional para el contexto en f16 cuyo tamaño no se especifica.
+- No hay datos publicados de MMLU, HumanEval, GSM8K ni evaluaciones estándar de seguridad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/PaoAI/Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Fork de llama.cpp requerido (rama `z13-main`, commit `dfeacaf2f`): https://github.com/kingjones30/ROCmFPX
-- Paper del modelo base: no disponible
-- Blog o demo oficial: no disponible
-- Resultados de la búsqueda web: no se encontraron enlaces relevantes. Los resultados devueltos eran páginas en japonés sobre seguros de accidentes laborales, sin relación alguna con el modelo.
+- Motor paoai-strix-engine (rama strix-v4): https://github.com/guevae2/paoai-strix-engine/tree/strix-v4
+- Modelo auxiliar DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF
+- Paper referenciado en los tags (arXiv:2502.14856): https://arxiv.org/abs/2502.14856
+- Corrección en llama.cpp (PR #29161): https://github.com/ggml-org/llama.cpp/pull/29161

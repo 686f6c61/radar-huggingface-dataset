@@ -2,72 +2,94 @@
 
 ## Resumen
 
-DeepBeepMeep/MiniMax-H3 es un modelo de difusión para generación de imágenes y vídeo, publicado por el usuario DeepBeepMeep en Hugging Face. Según la model card, está diseñado para utilizarse con la herramienta WanGP (https://github.com/deepbeepmeep/Wan2GP), que permite ejecutar modelos generativos de vídeo en GPUs con poca memoria (hasta 6 GB de VRAM) y en tarjetas antiguas (RTX 10XX, 20XX). El repositorio contiene pesos en formato safetensors y GGUF, con un tamaño total de 591.2 GB y aproximadamente 25.75 mil millones de parámetros.
+MiniMax-H3 es un conjunto de pesos de modelos de generación de imagen y vídeo publicados por el desarrollador DeepBeepMeep bajo el identificador `DeepBeepMeep/MiniMax-H3` en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo multimodal conversacional, sino de un repositorio de artefactos de difusión (diffusion single-file) empaquetados para su uso con WanGP, la interfaz de generación de vídeo del mismo autor. El repositorio acumula 1.772.060 descargas y 92 likes, lo que lo convierte en uno de los paquetes de referencia para ejecutar modelos de vídeo MiniMax en hardware de consumo.
 
-La información técnica detallada (arquitectura, contexto, licencia, idiomas, datos de entrenamiento) no está disponible en la model card ni en la ficha de Hugging Face. El modelo parece ser una variante o adaptación de la familia MiniMax, pero no se especifican sus características internas. Su relevancia radica en su integración con WanGP para democratizar la generación de vídeo en hardware modesto, aunque se carece de documentación técnica pública.
+El dato de parámetros declarado en los safetensors asciende a 25.753.095.920 (aproximadamente 25,8 mil millones), aunque conviene interpretarlo con cautela: el repositorio contiene múltiples checkpoints (modelo base, adaptadores LoRA, VAE ligero y variantes de aceleración), por lo que esa cifra corresponde presumiblemente al checkpoint principal y no necesariamente a un único modelo monolítico. El tamaño total del repositorio es de 1266,8 GB, lo que refleja la convivencia de pesos en varias precisiones (BF16, INT8, GGUF, ONNX) y de varios submodelos.
+
+La relevancia actual del paquete radica en su orientación explícita a "GPU poor": WanGP permite ejecutar estos modelos con tan solo 6 GB de VRAM en determinados casos, con soporte para GPUs antiguas (RTX 10XX, 20XX) y una interfaz web completa. La actualización de octubre de 2026 incorpora un adaptador de rango 128 para aceleración en 3 pasos (TaoMate H3 FL2VA) y un decodificador VAE ligero de 12 capas en BF16 e INT8 ConvRot.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 25.753.095.920 (25.7B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible (modelo de difusion, no secuencial) |
-| Tipos de cuantizacion | GGUF (segun tags) |
+| Arquitectura | Modelo de difusión (diffusion single-file); arquitectura interna concreta no disponible |
+| Parametros totales | 25.753.095.920 (según safetensors del repo) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible (no es un modelo de contexto textual) |
+| Tipos de cuantizacion | BF16, INT8 ConvRot, GGUF, ONNX (según artefactos del repo) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors, GGUF (segun tags) |
+| Formato de pesos | safetensors, GGUF, ONNX, diffusion-single-file |
+| Tamano del repositorio | 1266,8 GB |
+| Fecha de creacion | 2026-08-02 |
+| Ultima actualizacion | 2026-11-15 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo (si es un transformer de difusión, un U-Net, un DiT, etc.), ni sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF o técnicas similares). La model card únicamente menciona que se trata de un modelo de difusión para imágenes y que se integra con WanGP, pero no ofrece detalles técnicos adicionales.
+La información disponible describe el paquete como una colección de checkpoints de difusión para generación de imagen y vídeo, distribuidos en formato single-file y compatibles con WanGP. El repositorio incluye al menos tres componentes diferenciados: el modelo principal H3 (con variantes FL2VA y Ref2VA, según se deduce de las notas de la model card), un adaptador LoRA de aceleración denominado TaoMate H3 FL2VA de rango 128 orientado a generación en 3 pasos, y un VAE ligero ("LightVAE Lite") de 12 capas que se combina con el codificador original y se ofrece en BF16 e INT8 ConvRot.
+
+No se dispone de información sobre el número de tokens o muestras de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de ajuste por preferencias (RLHF/DPO). Tampoco se detalla la arquitectura interna del denoiser (tipo de transformer de difusión, mecanismo de atención, uso de atención lineal o decodificación especulativa). Los únicos detalles técnicos verificables son la existencia de un adaptador de rango 128 para destilación de pasos y la sustitución del decodificador VAE por una versión de 12 capas cuantizable a INT8.
 
 ## Capacidades
 
-- Generación de imágenes y vídeo mediante difusión, según la descripción del autor.
-- Compatible con WanGP, lo que permite ejecutar el modelo en GPUs con tan solo 6 GB de VRAM y en tarjetas antiguas (RTX 10XX, 20XX).
-- Soporte para herramientas integradas de WanGP: edición de máscaras, mejora de prompts, generación temporal y espacial.
-- Soporte de LoRAs para personalizar el modelo.
-- No se dispone de información sobre capacidades de texto, razonamiento, código, tool calling, agentes o multimodalidad.
+- Generación de vídeo a partir de imagen (image-to-video) y de referencias visuales, según las variantes FL2VA y Ref2VA mencionadas en la model card.
+- Generación de imagen, de acuerdo con la descripción del repositorio ("MiniMax H3 image models").
+- Aceleración mediante LoRA de destilación: el adaptador TaoMate H3 FL2VA permite generar en 3 pasos, reduciendo el coste computacional frente a la sampling completa.
+- Decodificación VAE eficiente: el LightVAE Lite de 12 capas reduce los requisitos de memoria en la fase de decodificación.
+- Soporte de LoRAs adicionales para personalizar cada modelo, según las capacidades declaradas de WanGP.
+- Herramientas integradas en WanGP: editor de máscaras, potenciador de prompts y generación temporal y espacial.
+- Sistema de colas para encadenar generaciones y recuperarlas posteriormente.
+- Compatibilidad con GPUs antiguas (RTX 10XX, 20XX) y requisitos bajos de VRAM (hasta 6 GB en ciertos modelos).
+- No se declara soporte de tool calling, function calling, agentes ni razonamiento multi-paso, por tratarse de un modelo generativo visual y no de un LLM.
 
 ## Casos de uso
 
-- Generación de vídeo en hardware modesto: gracias a WanGP, el modelo puede ejecutarse en GPUs de gama baja (6 GB de VRAM) para crear vídeos sintéticos sin necesidad de servidores caros.
-- Producción de contenido creativo: artistas y diseñadores pueden generar clips cortos para proyectos personales o prototipos, usando la interfaz web de WanGP y su sistema de colas.
-- Personalización con LoRAs: usuarios avanzados pueden adaptar el modelo a estilos o dominios específicos (por ejemplo, animación, paisajes, personajes) mediante LoRAs.
-- Experimentación educativa: estudiantes e investigadores pueden explorar la generación de vídeo con difusión en entornos de bajo presupuesto.
-- Integración en flujos de trabajo existentes: al ser un modelo de difusión, puede incorporarse en pipelines de postproducción para generar metraje de relleno o efectos.
-- Uso en investigación de accesibilidad: el enfoque de WanGP en reducir requisitos de VRAM permite probar modelos de difusión en entornos sin GPUs de última generación.
+- Generación de vídeo a partir de una imagen fija en estaciones de trabajo con GPUs de gama media: el paquete permite ejecutar FL2VA con cuantización INT8 y el VAE ligero, manteniendo la VRAM por debajo de los 12 GB típicos de una RTX 3060.
+- Prototipado rápido de clips para previsualización de guiones: el adaptador de 3 pasos permite iterar sobre variaciones de prompt en cuestión de segundos en GPUs modernas, sin necesidad de una sampling completa.
+- Creación de contenido para redes sociales en equipos con RTX 20XX: WanGP declara soporte para GPUs antiguas, de modo que un estudio pequeño puede generar vídeo sin renovar hardware.
+- Integración en pipelines de postproducción mediante la interfaz web de WanGP: el editor de máscaras y la generación espacial permiten modificar regiones concretas de un clip sin regenerarlo por completo.
+- Personalización de estilo mediante LoRAs: un equipo de diseño puede entrenar o aplicar adaptadores para fijar una estética de marca y reutilizarla en todas las generaciones.
+- Generación por lotes en servidores con colas: el sistema de colas de WanGP permite encolar decenas de vídeos y recuperarlos después, adecuado para campañas con muchos assets.
+- Investigación en difusión aplicada a vídeo: la disponibilidad de pesos en GGUF y ONNX facilita experimentar con cuantizaciones y comparar el impacto del VAE ligero frente al original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: según WanGP, es posible ejecutar el modelo con tan solo 6 GB de VRAM, aunque no se especifica para este modelo concreto.
-- GPUs recomendadas: no se indica un modelo específico, pero WanGP soporta GPUs antiguas (RTX 10XX, 20XX) y modernas.
-- Compatibilidad con consumer GPUs: sí, siempre que tengan al menos 6 GB de VRAM (según WanGP).
-- Opciones de despliegue: WanGP (interfaz web), posiblemente también con herramientas como llama.cpp u Ollama si el formato GGUF es compatible, aunque no se confirma.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: WanGP declara que 6 GB de VRAM son suficientes para ciertos modelos del ecosistema; para H3 en concreto no se especifica una cifra exacta, pero el VAE ligero en INT8 y las variantes GGUF/ONNX apuntan a un rango viable de 8-16 GB según la variante y la resolución.
+- GPUs recomendadas: no se detalla una lista oficial; la model card menciona soporte para RTX 10XX y 20XX (antiguas) y un rendimiento "muy rápido" en las GPUs más recientes.
+- Cabe en GPU de consumo: sí, según la orientación explícita del proyecto a "GPU poor"; las variantes cuantizadas y el VAE ligero están pensadas para ello.
+- Opciones de despliegue: WanGP (interfaz web propia, https://github.com/deepbeepmeep/Wan2GP); los formatos GGUF y ONNX abren la puerta a otros runners, aunque no se documentan integraciones oficiales.
+- Latencia y throughput: no disponibles. El adaptador de 3 pasos sugiere una reducción drástica del número de evaluaciones del denoiser frente a la sampling estándar, pero no se publican tiempos medidos.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (difusión de vídeo con baja VRAM). No se puede realizar una comparativa fiable.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| MiniMax-H3 (este repo) | ~25,8 B (checkpoint principal) | no aplica | no disponible | Hugging Face, 1,77 M descargas | Paquete multi-formato para WanGP |
+| Wan (y derivados) | no disponible | no aplica | no disponible | Soportado por WanGP | Modelo de vídeo alternativo en el mismo ecosistema |
+| Hunyuan Video | no disponible | no aplica | no disponible | Soportado por WanGP | Alternativa de vídeo con soporte en la misma herramienta |
+| LTX-2 / LTX Video | no disponible | no aplica | no disponible | Soportado por WanGP | Otra familia de vídeo integrada en WanGP |
+
+No se dispone de datos de rendimiento comparativo entre estas familias en la información proporcionada; la comparación se limita a la disponibilidad dentro del ecosistema WanGP.
 
 ## Limitaciones y advertencias
 
-- No hay documentación técnica pública sobre arquitectura, entrenamiento o limitaciones específicas.
-- La licencia no está especificada, por lo que se desconoce si es apta para uso comercial o si tiene restricciones.
-- Al ser un modelo de difusión, puede presentar alucinaciones visuales o inconsistencias temporales en el vídeo, aunque no hay datos confirmados.
-- No se dispone de información sobre sesgos, riesgos de seguridad o comportamientos no deseados.
-- El repositorio es muy grande (591 GB), lo que puede dificultar la descarga y el almacenamiento local.
-- La fecha de creación (2026) es futura, lo que sugiere que la información puede ser experimental o no verificada.
+- La licencia no está declarada en la información disponible, lo que impide confirmar si el uso comercial está permitido; debe verificarse en el repositorio antes de cualquier despliegue en producción.
+- No se especifican los idiomas soportados ni la composición del dataset de entrenamiento, por lo que no es posible evaluar sesgos culturales o lingüísticos.
+- Al ser un modelo de difusión, existe riesgo de artefactos visuales, inconsistencias temporales entre fotogramas y alucinaciones de contenido en escenas complejas; no se documentan mitigaciones.
+- El tamaño del repositorio (1266,8 GB) implica que la descarga selectiva de artefactos es imprescindible; descargar el repo completo no es viable en la mayoría de entornos.
+- La cifra de 25,8 B parámetros corresponde presumiblemente a un único checkpoint y no al conjunto; no debe usarse para estimar la VRAM total necesaria para todas las variantes.
+- El soporte de GPUs antiguas (RTX 10XX, 20XX) se declara a nivel de WanGP, no específicamente para H3; el rendimiento real en esas tarjetas no está cuantificado.
+- No hay información sobre la procedencia de los pesos ni sobre posibles restricciones de redistribución de los adaptadores LoRA o del VAE ligero.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/DeepBeepMeep/MiniMax-H3
-- Repositorio WanGP: https://github.com/deepbeepmeep/Wan2GP
-- Discord del autor: https://discord.gg/g7efUW9jGV
-- Twitter/X del autor: https://x.com/deepbeepmeep
+- Repositorio Hugging Face: https://huggingface.co/DeepBeepMeep/MiniMax-H3
+- Proyecto WanGP: https://github.com/deepbeepmeep/Wan2GP
+- README del adaptador TaoMate H3 FL2VA: https://huggingface.co/DeepBeepMeep/MiniMax-H3/blob/main/loras/TaoMate-H3-FL2VA-README.md
+- README del LightVAE Lite: https://huggingface.co/DeepBeepMeep/MiniMax-H3/blob/main/minimax_h3/LightVAE-README.md
+- Servidor de Discord del proyecto: https://discord.gg/g7efUW9jGV
+- Perfil de Twitter/X del autor: https://x.com/deepbeepmeep

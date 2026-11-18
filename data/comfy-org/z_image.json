@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 288,
-  "downloads_30d": 280897,
+  "downloads_30d": 280000,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,5 +38,11 @@
   "renamed_to": "Comfy-Org/Z-Image",
   "renamed_at": "2026-11-11T02:32:37.216Z",
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    }
+  ]
 }

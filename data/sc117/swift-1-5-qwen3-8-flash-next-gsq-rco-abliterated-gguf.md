@@ -2,108 +2,93 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF es una edición "abliterated" (sin dirección de rechazo) publicada por el usuario SC117 sobre Swift 1.5, un derivado de Qwen3.8-Flash-Next optimizado para eficiencia de razonamiento. El modelo base de la cadena, desarrollado por UkisAI, es un transformer de tipo mezcla de expertos (MoE) con unos 176.943.899.520 parámetros totales (≈177.000 millones) distribuidos en 48 capas, y la variante aquí documentada es una cuantización GGUF en tres niveles orientada a ejecución local con llama.cpp.
+Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF es una cuantización GGUF de tipo "abliterated" (dirección de rechazo eliminada) publicada por el usuario SC117 sobre el modelo base ukisai/Swift1.5-Qwen3.8-Flash-Next, a su vez un derivado "reasoning-efficient" de Qwen3.8-Flash-Next. El modelo conserva la arquitectura Mixture-of-Experts del original, con 176.943.899.520 parámetros totales según los safetensors del repositorio, y se distribuye en formato GGUF para su uso con llama.cpp y entornos compatibles con endpoints.
 
-La relevancia de esta ficha está en el método de construcción: en lugar de reentrenar, el autor ha realizado un transplante de tensores a nivel de byte. Se sustituyen 144 tensores (los que escriben de vuelta en el flujo residual) con pesos abliterated ya existentes, capa por capa, mientras que los 1080 tensores restantes se conservan bit a bit. El tamaño del fichero se mueve menos del 0,2 % y, según la model card, la eficiencia de razonamiento de Swift 1.5 sobrevive al proceso, manteniéndose un 34,8 % por debajo del modelo base en consumo de tokens de pensamiento.
+La particularidad de esta release es el método de "tensor transplant": en lugar de reentrenar o aplicar abliteration sobre los pesos cuantizados, se sustituyen 144 tensores (los que escriben de vuelta en el residual stream) en las 48 capas del modelo por los correspondientes de una release abliterated ya existente, dejando intactos los valores y escalas GSQ aprendidos. Según la model card, el tamaño del archivo cambia menos del 0,2% y se preserva la eficiencia de razonamiento de Swift 1.5 (un 34,8% por debajo del base en tokens de pensamiento).
 
-Se publica bajo la licencia swift-open-license-1.0 (etiquetada como "other"), con soporte declarado de inglés y chino, pipeline image-text-to-text (entrada de imagen y texto) y etiquetas de contexto largo, red-teaming y uncensored. El repositorio acumula 8104 descargas y 11 "likes". El modelo está pensado para evaluación de seguridad, investigación sobre alineación y despliegue local en hardware de gama alta, no como sustituto directo de un modelo alineado en producción.
+El resultado es un modelo multimodal (image-text-to-text) sin censura, orientado a red-teaming y a despliegues donde se requiere eliminar los rechazos del modelo original, con soporte declarado de inglés y chino y licencia Swift Open License 1.0. Es relevante ahora por su volumen de descargas (453.744) y porque demuestra una técnica de modificación de pesos cuantizados sin recuantizar, algo poco habitual en el ecosistema GGUF.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE), 48 capas; derivado de Qwen3.8-Flash-Next |
-| Parametros totales | 176.943.899.520 (≈177B), dato de safetensors del modelo base |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (etiquetado como "long-context", sin cifra publicada) |
-| Tipos de cuantizacion | GGUF con tres niveles: Q2_0, IQ2_XS, IQ3_XXS; usa imatrix |
-| Idiomas soportados | en (ingles), zh (chino) |
-| Licencia | swift-open-license-1.0 (campo `license: other`) |
-| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors |
-
-Datos adicionales del repositorio: tamano del repo 217,2 GB, pipeline image-text-to-text, creado el 2026-10-03 y actualizado el 2026-10-04. Los tamanos de fichero declarados en la model card son 61,9 GB para Q2_0 y 70,6 GB para IQ3_XXS.
+| Arquitectura | Transformer Mixture-of-Experts (MoE), 48 capas |
+| Parámetros totales | 176.943.899.520 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible (etiquetado como "long-context") |
+| Tipos de cuantización | IQ3_S, IQ3_XXS, IQ2_XS, Q2_0 (cuatro niveles) |
+| Idiomas soportados | en, zh |
+| Licencia | swift-open-license-1.0 (license: other) |
+| Formato de pesos | GGUF (llama.cpp) |
+| Tamaño del repositorio | 307,1 GB |
+| Rango de tamaño por archivo | 61,9 GB (Q2_0) a 77,8 GB (IQ3_S) |
+| Pipeline | image-text-to-text |
+| Modelo base | ukisai/Swift-Qwen3.8-Flash-Next (relación: quantized) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer MoE, heredada de Qwen3.8-Flash-Next a traves de la cadena de derivados de UkisAI. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro tipo de alineacion. Tampoco se detalla el numero de expertos ni cuantos se activan por token, por lo que los parametros activos quedan como no disponibles.
+El modelo hereda la arquitectura del Qwen3.8-Flash-Next original: un transformer MoE de 48 capas con 176.943.899.520 parámetros totales. Sobre esa base, UkisAI aplicó un post-entrenamiento "anti-overthinking" que da lugar a Swift 1.5, un derivado que, según la model card, emplea aproximadamente un 52% menos de tokens de pensamiento en benchmarks de código manteniendo la calidad. El pipeline declarado es image-text-to-text, lo que indica capacidades multimodales de entrada imagen y texto.
 
-La innovacion tecnica de esta publicacion no esta en el entrenamiento sino en el post-procesado. El autor aplica un transplante de tensores por byte: solo se reemplazan los 144 tensores que escriben en el flujo residual, con los pesos correspondientes de una release abliterated ya preparada, mientras que los 1080 tensores no objetivo permanecen identicos bit a bit. Las proyecciones down de los expertos enrutados conservan las escalas de bloque del modelo original. Cada tensor se verifica con blake2b de forma individual. Sobre la cadena de cuantizacion, UkisAI aplica GSQ (cuantizacion aprendida) y RCO (asignacion de presupuesto de bits por capa), y la model card afirma que se conserva la eficiencia de razonamiento de Swift 1.5 (un 34,8 % por debajo del base), frente a la reduccion de aproximadamente el 52 % en tokens de pensamiento sobre benchmarks de codigo que se atribuye a Swift 1.5 respecto a su upstream.
+La release de SC117 no entrena el modelo: aplica una cuantización GSQ (learned quantization) con asignación de presupuesto RCO sobre los pesos de Swift 1.5 y, posteriormente, realiza un "tensor transplant" byte a byte. Se sustituyen 144 tensores en las 48 capas (los que escriben en el residual stream) por los de una release abliterated ya existente, sin tocar los valores ni las escalas GSQ. Cada tensor se verifica con hash blake2b por tensor. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en modo "thinking", con enfasis declarado en eficiencia de tokens de razonamiento (reasoning-efficient, token-efficient).
-- Generacion y asistencia en codigo, con benchmarks de codigo citados como referencia de la eficiencia de pensamiento.
-- Entrada multimodal de imagen y texto (pipeline image-text-to-text): el modelo puede procesar imagenes junto a instrucciones textuales.
-- Contexto largo: la etiqueta long-context esta presente, aunque no se publica la ventana concreta.
-- Multilingue limitado a ingles y chino; no hay soporte declarado de castellano.
-- Comportamiento "uncensored" / abliterated: se ha eliminado la direccion de rechazo, por lo que el modelo responde a peticiones que un modelo alineado rechazaria.
-- Orientado a red-teaming: su uso previsto incluye la generacion de contenido adversario para evaluar otros sistemas.
-- Soporte de tool calling / function calling: no documentado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado de forma explicita, aunque el modo de razonamiento puede habilitarlo de forma indirecta.
+- Generación de texto conversacional multi-turno.
+- Razonamiento con modo de pensamiento eficiente en tokens (reasoning-efficient, ~52% menos tokens de pensamiento en código según la model card).
+- Procesamiento de imagen y texto (pipeline image-text-to-text).
+- Capacidades multilingües limitadas a inglés y chino.
+- Comportamiento "uncensored": la dirección de rechazo ha sido eliminada mediante abliteration, por lo que el modelo no declina peticiones que el original rechazaría.
+- Orientado a red-teaming y evaluación de robustez.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte explícito de agentes y multi-step reasoning: no disponible en la información proporcionada (aunque el modo de razonamiento sugiere capacidad de cadena de pensamiento).
+- Contexto largo: etiquetado como "long-context", sin cifra concreta disponible.
 
 ## Casos de uso
 
-- Red-teaming y evaluacion de seguridad: el modelo sirve como generador adversario para producir prompts e intentos de jailbreak con los que probar los filtros de un modelo alineado, aprovechando que su direccion de rechazo ha sido eliminada.
-- Investigacion sobre abliteration: permite estudiar si el transplante de tensores a nivel de byte preserva las capacidades del modelo original, comparando sus salidas con las del upstream no abliterated y midiendo deriva en calidad y coherencia.
-- Analisis comparativo de cuantizacion: con tres niveles GGUF (Q2_0, IQ2_XS, IQ3_XXS) y verificacion blake2b por tensor, es util para medir la degradacion de un MoE de ~177B al bajar de 3 bits por peso en tareas de razonamiento y codigo.
-- Asistencia de codigo en local: con ~62-71 GB de pesos puede desplegarse en una estacion de trabajo con GPU de 80 GB o en configuracion multi-GPU mediante llama.cpp, generando codigo sin enviar datos a servicios externos.
-- Procesamiento de documentos con imagenes en entornos bilingues ingles-chino: capturas, diagramas o formularios escaneados acompanados de instrucciones en cualquiera de los dos idiomas.
-- Investigacion sobre contexto largo: si se confirma la ventana extendida, permite experimentar con resumen y recuperacion sobre documentos extensos, aunque el coste de KV cache en un MoE de 177B debe medirse caso por caso.
-- Fine-tuning y destilacion de datos: al ser un modelo sin restricciones de rechazo, es util para generar datasets sinteticos de dominios donde un modelo alineado se negaria a colaborar, siempre que la licencia lo permita.
-- Despliegue en air-gapped: al distribuirse en GGUF y ejecutarse con llama.cpp, puede operar en maquinas aisladas sin conexion, algo relevante en entornos de seguridad.
+- Red-teaming y evaluación de seguridad: el modelo sirve para generar respuestas que un modelo alineado rechazaría, permitiendo a equipos de seguridad probar filtros, clasificadores y salvaguardas frente a contenido sensible sin las fricciones de un modelo censurado.
+- Investigación sobre abliteration: al preservar los pesos GSQ y sustituir solo 144 tensores, es un caso de estudio reproducible para medir el impacto de la eliminación de la dirección de rechazo sobre la calidad y la eficiencia de razonamiento.
+- Generación de código en local: con cuantizaciones IQ3_S o IQ2_XS cabe en estaciones de trabajo con 48-80 GB de VRAM y permite ejecutar tareas de autocompletado y refactorización sin depender de APIs externas.
+- Procesamiento de documentos con imagen y texto: el pipeline image-text-to-text permite extraer y razonar sobre contenido de capturas, diagramas o documentos escaneados en flujos de enriquecimiento de datos.
+- Despliegue en llama.cpp con endpoints compatibles: la etiqueta endpoints_compatible facilita integrarlo en servidores OpenAI-compatible para prototipos internos.
+- Experimentación con cuantizaciones extremas: los cuatro niveles (Q2_0 a IQ3_S) permiten comparar degradación de calidad frente a ahorro de memoria en un MoE de 177B parámetros.
+- Análisis de contenido en inglés y chino: útil para equipos que trabajan con corpus bilingües en esos dos idiomas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Las unicas cifras de rendimiento que aparecen en la model card son relativas, no absolutas:
-
-| Metrica | Valor declarado | Fuente |
-|---|---|---|
-| Tokens de pensamiento en benchmarks de codigo (Swift 1.5 vs. base) | ~52 % menos | Model card |
-| Eficiencia de razonamiento tras la abliteration (vs. base) | 34,8 % por debajo del base | Model card |
-| Variacion del tamano de fichero tras el transplante | < 0,2 % | Model card |
-| Tensores sustituidos / conservados | 144 / 1080 | Model card |
-| Capas afectadas | 48 | Model card |
-
-No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra prueba estandar, ni comparaciones numericas con modelos de referencia.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente aporta la métrica relativa de eficiencia de razonamiento (34,8% por debajo del base en tokens de pensamiento, tras preservar la eficiencia de Swift 1.5) y el dato de que Swift 1.5 usa ~52% menos tokens de pensamiento en benchmarks de código, sin cifras absolutas de MMLU, HumanEval, GSM8K ni similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los tamanos de fichero declarados son 61,9 GB (Q2_0) y 70,6 GB (IQ3_XXS). Anadiendo KV cache y buffers de contexto, hay que presupuestar del orden de 66-80 GB en funcion del nivel de cuantizacion y de la longitud de contexto efectiva. IQ2_XS queda entre ambos, sin cifra publicada.
-- GPU recomendadas: una unica GPU de 80 GB (A100 80 GB, H100 80 GB, H200) es el escenario mas comodo para IQ3_XXS. Para Q2_0 tambien entraria en 80 GB con margen. La VRAM adicional del KV cache en contexto largo puede obligar a pasar a dos GPU.
-- Multi-GPU: dos GPU de 48 GB (RTX 6000 Ada, A6000, L40S) cubren ambas cuantizaciones con reparto de capas.
-- GPU de consumo: no cabe en una RTX 4090 ni en una RTX 5090 de 24-32 GB. Es obligatorio hacer offload de capas a CPU mediante llama.cpp, con la penalizacion de velocidad correspondiente.
-- Memoria unificada: los equipos Apple con 96 GB o 128 GB de memoria unificada (Mac Studio) pueden alojar Q2_0 o IQ3_XXS, con throughput modesto en decodificacion.
-- Opciones de despliegue: llama.cpp y sus interfaces asociadas (Ollama, LM Studio, koboldcpp) son el camino natural al ser un GGUF. El soporte de GGUF en vLLM y TGI es limitado; para maxima velocidad conviene valorar el modelo base en safetensors con vLLM, siempre que el hardware lo permita.
-- Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada: entre 62 GB (Q2_0) y 78 GB (IQ3_S) solo para los pesos; añadir overhead de contexto KV, que en un MoE de 48 capas con contexto largo puede ser considerable.
+- GPU recomendadas: A100 80 GB, H100 80 GB o configuraciones multi-GPU (2× RTX 4090 de 24 GB no bastan para IQ3_S; sí para Q2_0 con offload parcial).
+- Consumer GPU: no cabe en una única RTX 4090 (24 GB) ni en una RTX 3090; requiere offload a RAM/CPU o configuraciones multi-GPU.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama y servidores compatibles con endpoints OpenAI; vLLM y TGI no soportan GGUF de forma nativa para este formato.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (SC117, abliterated GSQ-RCO GGUF) | ~177B (MoE) | no disponible | GGUF | swift-open-license-1.0 | 144 tensores sustituidos; sin direccion de rechazo |
-| ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF (upstream) | ~177B (MoE) | no disponible | GGUF | swift-open-license-1.0 | Version alineada del mismo modelo; el abliterated parte de aqui |
-| ukisai/Swift-Qwen3.8-Flash-Next (base declarado) | ~177B (MoE) | no disponible | safetensors | swift-open-license-1.0 | Sin GSQ/RCO ni abliteration |
-| Otros MoE abliterados de ~177B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables para comparar |
-
-No se dispone de resultados de benchmarks del modelo ni de sus competidores en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia. La diferencia funcional principal frente al upstream es la eliminacion de la direccion de rechazo, no una mejora de capacidades.
+| SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF | 176,9B (MoE) | no disponible (long-context) | swift-open-license-1.0 | GGUF | Abliterated, multimodal, 4 cuantizaciones |
+| ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF | 176,9B (MoE) | no disponible | swift-open-license-1.0 | GGUF | Modelo base sin abliteration; misma eficiencia de razonamiento |
+| ukisai/Swift-Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible | Base de Swift 1.5, sin post-entrenamiento anti-overthinking |
+| Qwen3.8-Flash-Next (original) | no disponible | no disponible | no disponible | no disponible | Modelo de referencia del que deriva toda la familia |
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: la direccion de rechazo se ha eliminado de forma deliberada. Es previsible que genere contenido danino, ilegal o gravemente ofensivo si se le solicita. No debe exponerse a usuarios finales sin filtros externos.
-- Sesgos: no hay documentacion sobre sesgos del modelo base ni sobre como afecta la abliteration a los sesgos existentes. Se desconoce el efecto sobre estereotipos, toxicidad y equidad.
-- Alucinacion: al ser un derivado de un modelo de razonamiento con contexto largo y sin datos de evaluacion publicados, el riesgo de alucinacion no esta cuantificado y debe asumirse alto en tareas factuales.
-- Idiomas: solo ingles y chino. No hay soporte declarado de castellano, por lo que el rendimiento en espanol sera bajo o degradado.
-- Contexto: la etiqueta "long-context" no viene acompanada de una cifra. No se puede planificar un despliegue que dependa de una ventana concreta sin verificar el valor real en el config del modelo.
-- Licencia: swift-open-license-1.0 se declara como `license: other`, con el texto en un enlace externo. Hay que leerla antes de cualquier uso comercial; los terminos no estan resumidos en la informacion disponible.
-- Trazabilidad: los metadatos de la model card presentan referencias inconsistentes al modelo base (`ukisai/Swift1.5-Qwen3.8-Flash-Next`, `ukisai/Swift-Qwen3.8-Flash-Next` en el campo base_model y `ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF` como origen declarado en el texto). Conviene verificar la cadena exacta antes de reproducir resultados.
-- Compatibilidad de cuantizacion: Q2_0 e IQ2_XS son niveles muy agresivos para un MoE de 177B; la perdida de calidad frente a IQ3_XXS no esta documentada ni medida.
-- Produccion: no hay benchmarks, ni cifras de latencia, ni pruebas de robustez. No se recomienda su uso en produccion sin una evaluacion propia.
+- La abliteration elimina la dirección de rechazo: el modelo puede generar contenido dañino, ilegal o sensible sin filtros. No es apto para aplicaciones orientadas al público sin salvaguardas externas.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; al ser un modelo de razonamiento con modo de pensamiento, puede producir cadenas de razonamiento plausibles pero incorrectas.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea deficiente.
+- La licencia swift-open-license-1.0 es "other": es imprescindible revisar el texto completo en el enlace de licencia antes de cualquier uso comercial, ya que puede imponer restricciones adicionales.
+- El modelo solo se distribuye en GGUF y en cuantizaciones muy agresivas (Q2_0 a IQ3_S), lo que implica degradación de calidad respecto a los pesos originales en precisión completa.
+- El "tensor transplant" se verificó con blake2b por tensor, pero no hay benchmarks que confirmen que la calidad se mantiene tras la sustitución; la única métrica publicada es la de eficiencia de razonamiento.
+- No hay información sobre parámetros activos del MoE, longitud exacta de contexto ni soporte de tool calling, lo que dificulta planificar su integración en producción.
+- El tamaño del repositorio (307,1 GB) y de cada archivo (62-78 GB) exige infraestructura de almacenamiento y descarga considerable.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
-- Modelo base declarado: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
-- Upstream cuantizado (GSQ-RCO): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Modelo base (GGUF): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Modelo base original: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF/blob/main/LICENSE
-- README en chino: https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md
-- La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces obtenidos correspondian a tiendas y comparativas de portatiles con Linux (ubuntu.com/certified/laptops, linuxshop.fr, system76.com, techradar.com, linuxcertified.com) y no guardan relacion con el modelo. No se dispone de papers, blogs tecnicos, repositorios de codigo ni demos adicionales.
+- Model card en chino: https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md

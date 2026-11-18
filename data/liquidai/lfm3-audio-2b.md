@@ -2,104 +2,89 @@
 
 ## Resumen
 
-LFM3-Audio-2B es un modelo any-to-any de audio desarrollado por Liquid AI dentro de la familia LFM3, que incluye variantes base, texto, visión, audio, omni y de decisión. Acepta texto o audio como entrada y produce texto, habla a 24 kHz o una secuencia intercalada de ambos, con una longitud de contexto de 32K tokens compartida entre entrada y salida. Con 2.002.332.928 parámetros reales según los pesos en safetensors, está diseñado para ejecutarse localmente en portátiles y dispositivos edge, no solo en servidores con GPU de datacenter.
+LFM3-Audio-2B es un modelo de audio "any-to-any" desarrollado por Liquid AI dentro de la familia LFM3, que incluye variantes base, de texto, de visión, de audio, omni y de decisión. El modelo acepta texto o audio como entrada y produce texto, voz o ambos, con un enfoque explícito en despliegue local sobre portátiles y dispositivos edge. Con 2.002.332.928 parámetros totales (2B) y un repositorio de 4,2 GB en safetensors, se posiciona como una alternativa compacta frente a modelos de audio de mayor tamaño que requieren infraestructura de servidor.
 
-El modelo combina un backbone LFM3, un codificador de audio causal propio y el tokenizador de audio LiquidCodec, también desarrollado internamente, que según el autor mejora la calidad de voz respecto a LFM2.5-Audio. Cubre 18 idiomas (19 locales, al distinguir inglés británico y americano) y está orientado a conversación por voz, transcripción, síntesis y traducción de habla, comprensión y razonamiento sobre eventos sonoros, y tool calling a partir de peticiones habladas.
+La arquitectura combina un backbone LFM3, un codificador de audio causal propio y el tokenizador de audio LiquidCodec, ambos introducidos por Liquid AI como evolución respecto a LFM2.5-Audio, con mejoras declaradas en calidad de voz. El modelo cubre cuatro ejes funcionales: chat de voz con respuestas en streaming (solo en inglés), reconocimiento, síntesis y traducción de voz en 18 idiomas, comprensión y razonamiento sobre audio (voz, sonidos y eventos), y tool calling a partir de peticiones habladas.
 
-Su relevancia actual reside en la combinación de tres factores: tamaño reducido (2B), soporte nativo de streaming (codificación causal, prefill incremental y generación de voz en streaming) y cobertura multilingüe amplia en un único checkpoint. La contrapartida es que la información pública disponible no incluye resultados de benchmarks ni detalles de cuantización, lo que limita la evaluación comparativa antes de desplegarlo en producción.
+Su relevancia actual radica en la combinación de tres factores poco frecuentes en un mismo modelo: tamaño de 2B apto para hardware de consumo, cobertura multilingüe amplia (incluido castellano) y capacidades de agente mediante function calling. La licencia es LFM Open License v1.0 (lfm1.0), lo que condiciona el uso comercial y conviene revisar antes de integrarlo en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Backbone LFM3 con codificador de audio causal y tokenizador de audio LiquidCodec |
 | Parametros totales | 2.002.332.928 (2B) |
-| Parametros activos | No aplica (no se describe como MoE en la informacion disponible) |
-| Longitud de contexto | 32K tokens (entrada + salida) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada |
-| Idiomas soportados | 18 idiomas / 19 locales: arabe, danes, aleman, griego, ingles britanico, ingles americano, finlandes, frances, hebreo, italiano, japones, coreano, neerlandes, polaco, portugues, espanol, sueco, turco, chino |
-| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | safetensors (libreria transformers, requiere `custom_code`) |
-| Entrada | Texto o audio; el codificador de audio opera a 16 kHz |
-| Salida | Texto, voz a 24 kHz, o texto y voz intercalados |
-| Streaming | Codificacion de audio causal, prefill incremental y generacion de voz en streaming |
-| Pipeline declarado | any-to-any |
-| Descargas / likes | 156 descargas, 36 likes |
-| Tamano del repositorio | 52,5 GB |
-| Fechas | Creado el 2026-09-08, actualizado el 2026-10-27 |
+| Idiomas soportados | 18: en, ar, da, de, el, fi, fr, he, it, ja, ko, nl, pl, pt, es, sv, tr, zh |
+| Licencia | LFM Open License v1.0 (lfm1.0, "other") |
+| Formato de pesos | safetensors (libreria transformers, requiere custom_code) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es propia de la familia LFM3: un backbone de lenguaje al que se acoplan dos componentes de audio específicos, un codificador de audio causal y el tokenizador LiquidCodec. El codificador causal es lo que habilita el procesamiento de audio en streaming, ya que no necesita el segmento completo para empezar a producir representaciones. El tokenizador LiquidCodec convierte la salida de voz en tokens de audio que el backbone genera de forma autorregresiva, lo que permite intercalar texto y habla en una misma secuencia de salida. La entrada de audio se muestrea a 16 kHz y la salida de voz se sintetiza a 24 kHz.
+El modelo se construye sobre el backbone LFM3 de Liquid AI, al que se añaden dos componentes específicos de audio: un codificador de audio causal y el tokenizador LiquidCodec. El codificador causal permite procesar el audio de forma incremental, lo que habilita respuestas en streaming, y el tokenizador LiquidCodec convierte la señal de audio en tokens discretos que el backbone puede manejar junto con el texto. La model card describe esta combinación como una mejora de calidad de voz respecto a LFM2.5-Audio, aunque no se detalla la arquitectura interna del backbone (si es transformer puro, híbrido o basado en SSM).
 
-No se ha publicado en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. Tampoco se detalla la configuración de capas, dimensiones ocultas ni el mecanismo de atención del backbone. El autor sí señala explícitamente que el codificador y el tokenizador son internos y que sustituyen a los de LFM2.5-Audio con el objetivo de mejorar la calidad de voz. Para el entrenamiento reproducible y las recetas exactas, la referencia es el blog de release de la familia LFM3.
+No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. Tampoco se especifican innovaciones adicionales como decodificación especulativa o mecanismos de atención lineal. La etiqueta `custom_code` en el repositorio indica que la carga del modelo requiere código propio del autor más allá de la implementación estándar de transformers.
 
 ## Capacidades
 
-- Conversación por voz: responder a preguntas habladas con respuestas en texto y voz en streaming; en respuestas solo de texto el modelo puede razonar antes de contestar.
-- Reconocimiento automático de habla (ASR) en los 18 idiomas declarados.
-- Síntesis de voz (TTS) a 24 kHz, con salida intercalada de texto y habla.
-- Traducción de habla entre los idiomas soportados.
-- Comprensión de audio y razonamiento sobre eventos: interpretar grabaciones y responder preguntas sobre el habla, los sonidos y los eventos que contienen.
-- Tool calling / function calling a partir de peticiones habladas, con texto o voz acompañando a la llamada.
-- Procesamiento en streaming de audio de entrada y de salida.
-- Capacidad any-to-any: combinaciones texto→texto, texto→voz, audio→texto, audio→voz y mixtas.
-- Multilingüismo nativo en un único checkpoint, con distinción de locale para inglés británico y americano.
+- Chat de voz: entrada de audio y salida en texto y voz con streaming; las respuestas solo en texto pueden incluir razonamiento previo a la respuesta. El chat de voz está limitado actualmente al inglés.
+- Reconocimiento de voz (ASR) multilingüe en 18 idiomas, incluido el castellano.
+- Síntesis de voz (TTS) y traducción de voz entre los idiomas soportados.
+- Comprensión y razonamiento sobre audio: interpretación de grabaciones y respuesta a preguntas sobre la voz, los sonidos y los eventos contenidos en ellas.
+- Tool calling / function calling: conversión de peticiones habladas en llamadas a herramientas para controlar aplicaciones y dispositivos, con texto o voz acompañando a las llamadas.
+- Salida multimodal combinada: texto y habla de forma simultánea.
+- Cobertura multilingüe de 18 idiomas en las tareas de voz; el chat conversacional de voz queda restringido al inglés.
 
 ## Casos de uso
 
-- Atención al cliente telefónica: el modelo puede recibir audio del cliente, transcribirlo y responder con voz en streaming, manteniendo el contexto de la conversación dentro de la ventana de 32K tokens. La codificación causal permite empezar a responder sin esperar a que el usuario termine de hablar.
-- Asistentes de voz embebidos en dispositivos: al ser un modelo de 2B y estar pensado para portátiles y edge, se puede integrar en altavoces, wearables o sistemas de infoentretenimiento donde no hay conectividad o no se quiere enviar audio a la nube.
-- Transcripción y traducción de reuniones multilingües: ASR más traducción de habla en los 18 idiomas declarados, con salida de texto para actas y, opcionalmente, voz sintetizada para resúmenes.
-- Control de aplicaciones por voz con tool calling: convertir una petición hablada en una llamada a función (por ejemplo, abrir una incidencia, consultar un estado o encender un dispositivo) y confirmar la acción por voz.
-- Análisis de grabaciones y monitorización: responder preguntas sobre el contenido de un audio (quién habla, qué eventos se oyen, qué se ha dicho) en aplicaciones de compliance, auditoría de call centers o análisis de entornos industriales.
-- Accesibilidad: lectura de documentos en voz alta, dictado por voz y respuestas habladas para usuarios con discapacidad visual o motriz, con la ventaja de ejecución local para proteger datos personales.
-- Prototipado rápido de agentes de voz: al estar en `transformers` con `custom_code` y disponible vía API y playground de Liquid AI, sirve para validar flujos conversacionales antes de invertir en infraestructura propia.
+- Asistentes de voz en dispositivos edge: el modelo puede ejecutarse localmente en portátiles y dispositivos compactos, gestionando la entrada de voz y generando respuestas habladas en streaming sin depender de la nube, lo que reduce latencia y preserva la privacidad del audio.
+- Transcripción multilingüe de reuniones: con ASR en 18 idiomas, incluido el castellano, se puede transcribir audio de reuniones o entrevistas y, adicionalmente, traducir el resultado a otro de los idiomas soportados.
+- Control de aplicaciones por voz: gracias al tool calling, una petición hablada como encender una luz o consultar un calendario se transforma en una llamada a función estructurada, con confirmación en texto o voz.
+- Accesibilidad: conversión de texto a voz y de voz a texto para personas con discapacidad visual o motriz, ejecutándose en hardware local para evitar enviar audio sensible a servicios externos.
+- Análisis de contenido audiovisual: responder preguntas sobre grabaciones (quién habla, qué sonidos o eventos aparecen) en tareas de moderación, archivado o investigación.
+- Interfaces conversacionales embebidas: integración en electrodomésticos, vehículos o terminales de atención presencial donde el modelo actúa como capa de comprensión y respuesta de voz con soporte de herramientas para acciones concretas.
+- Generación de voces para contenido: síntesis de voz en varios idiomas para locuciones, audiolibros o avisos, con la ventaja de que el modelo corre en local y no requiere un servicio de TTS externo.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La información proporcionada no incluye cifras de MMLU, HumanEval, GSM8K, WER de ASR, MOS de síntesis ni comparaciones numéricas con otros modelos. El autor solo afirma una mejora cualitativa de la calidad de voz respecto a LFM2.5-Audio.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo a partir de 2.002 millones de parámetros, sin contar el codificador y el tokenizador de audio): aproximadamente 4 GB en BF16/FP16, unos 2,1 GB en INT8 y en torno a 1,2 GB en INT4. Añadir margen para caché KV con contexto de hasta 32K tokens y para los componentes de audio.
-- GPU de datacenter: A100, H100 o L40S para despliegues concurrentes con contexto largo y streaming; no son necesarias para una sola sesión.
-- GPU de consumo: cabe en tarjetas con 8 GB o más en BF16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090); con cuantización a 4-8 bits podría ejecutarse en GPUs integradas o en dispositivos con 2-4 GB dedicados, aunque no hay cifras oficiales de rendimiento en ese escenario.
-- CPU: el autor indica ejecución local en portátiles; no se especifican requisitos mínimos de CPU ni velocidades de inferencia.
-- Opciones de despliegue: la librería declarada es `transformers` con código personalizado (`custom_code`), lo que implica `trust_remote_code=True`. No se confirma en la información disponible soporte para vLLM, llama.cpp, Ollama o TGI, ni la existencia de pesos GGUF.
-- Latencia y throughput: no disponibles. La arquitectura causal y el prefill incremental están diseñados para reducir la latencia de primera respuesta en audio, pero no se publican mediciones.
+- VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. Como referencia orientativa por tamaño, un modelo de 2B parámetros en precisión completa (fp16/bf16) requiere del orden de 4 GB solo para los pesos, a los que hay que sumar la memoria del codificador de audio, el tokenizador LiquidCodec y las cachés de inferencia; las cifras exactas no están publicadas.
+- GPU recomendadas: no disponible. El modelo se presenta como ejecutable en portátiles y dispositivos edge, lo que sugiere que no requiere GPU de centro de datos, pero no se especifican modelos concretos (A100, H100, RTX 4090, etc.).
+- Compatibilidad con GPU de consumo: la model card afirma que corre localmente en portátiles y dispositivos edge, pero no se detalla qué GPUs de consumo concretas son suficientes ni con qué cuantización.
+- Opciones de despliegue: la librería indicada es transformers con `custom_code`; no se confirman en la información disponible integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formatos | Notas |
-|---|---|---|---|---|---|---|
-| LFM3-Audio-2B | 2,0B | 32K | 18 | lfm1.0 | safetensors | Codificador y LiquidCodec propios; streaming; tool calling |
-| LFM2.5-Audio (predecesor, Liquid AI) | No disponible | No disponible | No disponible | No disponible | No disponible | Referencia directa del autor; LFM3 mejora la calidad de voz según la model card |
-| Alternativas de audio any-to-any (Qwen2-Audio, MiniCPM-o, Moshi, entre otras) | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha | No verificado en esta ficha | No se dispone de datos comparativos en la informacion proporcionada |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| LFM3-Audio-2B | 2B | No disponible | 18 | LFM Open License v1.0 | Audio any-to-any con tool calling y enfoque edge |
+| LFM2.5-Audio | No disponible | No disponible | No disponible | No disponible | Predecesor directo citado por el autor; LFM3-Audio-2B declara mejor calidad de voz |
+| Otras alternativas de audio de tamano similar | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-No se han encontrado en la información proporcionada resultados de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría. Cualquier comparación de rendimiento debería hacerse con evaluaciones propias sobre el dominio objetivo (WER, MOS, latencia y tasa de acierto en tool calling).
+La comparación cuantitativa con modelos de audio de la competencia no está disponible en la información proporcionada; no se aportan cifras de benchmarks ni especificaciones de terceros que permitan una tabla rigurosa.
 
 ## Limitaciones y advertencias
 
-- Ausencia de benchmarks publicados: no hay métricas verificables de calidad de ASR, TTS, traducción o tool calling, lo que dificulta justificar su elección frente a alternativas en un proceso de evaluación formal.
-- Licencia lfm1.0: es una licencia propia (etiquetada como `other`), no una licencia open source estándar. Hay que revisar el archivo LICENSE del repositorio antes de cualquier uso comercial, ya que puede incluir restricciones de uso, de redistribución o de atribución.
-- Riesgo de alucinación en comprensión de audio: como cualquier modelo generativo, puede describir eventos o contenidos sonoros que no están presentes en la grabación, especialmente con audio ruidoso o solapamiento de hablantes.
-- Contexto compartido: los 32K tokens cubren entrada y salida, y el audio consume tokens, por lo que sesiones de voz largas o grabaciones extensas agotan la ventana antes de lo que sugiere la cifra.
-- Cobertura desigual por idioma: se declaran 18 idiomas, pero no se especifica el volumen de datos por lengua; el rendimiento en idiomas con pocos recursos (por ejemplo, finlandés, griego o hebreo) puede ser inferior al de inglés o español.
-- Ejecución con código remoto: requiere `custom_code` y `trust_remote_code=True`, lo que implica revisar y confiar en el código del repositorio antes de ejecutarlo en entornos de producción.
-- Repositorio de 52,5 GB: el tamaño del repo excede con creces el peso de un modelo de 2B en BF16, probablemente por múltiples artefactos; hay que planificar el almacenamiento y la descarga selectiva.
-- Sin datos de cuantización ni de rendimiento en edge: la afirmación de ejecución en portátiles no viene acompañada de cifras de latencia ni de requisitos mínimos, por lo que hay que validarla en el hardware objetivo.
-- Idiomas y locales: la calidad puede variar entre inglés británico y americano, y no se detalla el comportamiento en code-switching o en acentos no nativos.
+- El chat de voz conversacional está limitado actualmente al inglés; el resto de tareas de voz cubren 18 idiomas, pero no debe asumirse paridad funcional entre idiomas.
+- No se han publicado datos sobre sesgos, composición del dataset ni procesos de alineación, por lo que el riesgo de sesgos demográficos, acústicos o lingüísticos no puede evaluarse a priori.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente en tareas de razonamiento sobre audio y en la conversión de peticiones habladas a llamadas de herramientas, donde un error puede desencadenar acciones no deseadas.
+- La licencia LFM Open License v1.0 no es una licencia de código abierto estándar; es imprescindible revisar sus términos antes de cualquier uso comercial o redistribución.
+- No se especifica la longitud de contexto, lo que impide planificar con precisión casos de conversaciones largas o audios extensos.
+- El repositorio requiere `custom_code`, lo que puede complicar la integración con herramientas estándar y aumentar el coste de mantenimiento.
+- No se dispone de información sobre latencia, throughput ni comportamiento en producción bajo carga.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Audio-2B
-- Archivo de licencia: https://huggingface.co/LiquidAI/LFM3-Audio-2B/blob/main/LICENSE
-- Blog de release de la familia LFM3: https://www.liquid.ai/blog/lfm3
+- Blog de lanzamiento de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
-- Consola / API de Liquid AI: https://console.liquid.ai/dashboard
+- Consola de la API: https://console.liquid.ai/dashboard
 - Playground de voz: https://playground.liquid.ai/talk
 - Colección LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3
-- Modelo de referencia de la familia (texto): https://huggingface.co/LiquidAI/LFM3-1.7B
+- Modelo de referencia de la familia (banner): https://huggingface.co/LiquidAI/LFM3-1.7B

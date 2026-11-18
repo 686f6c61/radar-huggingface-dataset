@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 14659507200,
   "parameters_human": "14.66B",
@@ -52,8 +52,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "technicallyAnnoyed/Phi-4-reasoning",
+  "renamed_at": "2026-11-18T03:24:27.042Z",
   "benchmarks": [],
   "sources": [
     {

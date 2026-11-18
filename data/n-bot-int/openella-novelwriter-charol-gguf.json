@@ -14,12 +14,14 @@
   "tags": [
     "gguf",
     "q8_0",
+    "base_model:N-Bot-Int/OpenElla-NovelWriter-Charol",
+    "base_model:quantized:N-Bot-Int/OpenElla-NovelWriter-Charol",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 22,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",

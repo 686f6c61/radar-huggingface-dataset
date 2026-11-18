@@ -2,97 +2,92 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-FP8 es la variante cuantizada en FP8 del modelo Qwen3.6-35B-A3B, desarrollado por el equipo Qwen (Alibaba). Se trata de un modelo causal de lenguaje con encoder de visión (image-text-to-text) que combina una arquitectura de mezcla de expertos (MoE) híbrida con capas de Gated DeltaNet y Gated Attention. Con 35.953 millones de parámetros totales y solo 3.000 millones activos por token, ofrece un equilibrio entre capacidad y eficiencia computacional.
+Qwen3.6-35B-A3B-FP8 es la variante cuantizada en FP8 del modelo multimodal Qwen3.6-35B-A3B, desarrollado por el equipo Qwen de Alibaba. Se trata de un modelo de lenguaje causal con codificador de visión, construido sobre una arquitectura híbrida de atención lineal (Gated DeltaNet) y atención con compuertas (Gated Attention), combinada con una capa de mezcla de expertos (MoE) de 256 expertos. Con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones activos por token, ofrece un equilibrio entre capacidad y eficiencia computacional.
 
-La versión FP8 emplea cuantización de grano fino con bloque de tamaño 128, lo que mantiene un rendimiento casi idéntico al modelo original en precisión completa. El modelo soporta una longitud de contexto nativa de 262.144 tokens, extensible hasta aproximadamente 1.010.000, y está pensado para tareas de codificación agéntica, razonamiento sobre repositorios y flujos de trabajo de frontend. Se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones.
+La relevancia de esta versión FP8 radica en que reduce el peso del repositorio a 37,5 GB manteniendo, según el autor, métricas de rendimiento prácticamente idénticas a las del modelo original. La cuantización utiliza un esquema de bloques de 128 elementos, lo que permite desplegar el modelo en infraestructura más modesta sin renunciar a la calidad del modelo completo. Es compatible con Transformers, vLLM, SGLang y KTransformers.
 
-La relevancia de este lanzamiento radica en que es la primera variante open-weight de la serie Qwen3.6, diseñada a partir de la retroalimentación de la comunidad para priorizar estabilidad y utilidad real en entornos de desarrollo. El modelo es compatible con Hugging Face Transformers, vLLM, SGLang y KTransformers, lo que facilita su integración en pipelines de producción.
+El modelo está orientado a tareas de codificación agéntica y razonamiento a nivel de repositorio, con una ventana de contexto nativa de 262.144 tokens extensible hasta 1.010.000. Incorpora una opción de preservación del razonamiento (Thinking Preservation) que retiene el contexto de razonamiento de mensajes históricos, pensada para flujos de desarrollo iterativos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida con Gated DeltaNet y Gated Attention, con vision encoder |
-| Parametros totales | 35.953.925.552 (35B) |
-| Parametros activos | 3B (8 expertos enrutados + 1 compartido) |
-| Longitud de contexto | 262.144 tokens nativa, extensible hasta 1.010.000 |
-| Tipos de cuantizacion | FP8 (bloque de 128) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (FP8) |
+| Arquitectura | Causal LM con codificador de visión; híbrida Gated DeltaNet + Gated Attention + MoE |
+| Parametros totales | 35.951.822.704 |
+| Parametros activos | ~3B (8 expertos enrutados + 1 compartido de 256) |
+| Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.010.000 |
+| Tipos de cuantizacion | FP8 con cuantización de grano fino, tamaño de bloque 128 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura MoE con 256 expertos en total, de los cuales se activan 8 enrutados más 1 compartido por token. El layout interno es de 40 capas, organizadas como 10 bloques de `3 × (Gated DeltaNet → MoE) → 1 × (Gated Attention → MoE)`. La capa de Gated DeltaNet utiliza 32 cabezas de atención lineal para V y 16 para QK, con dimensión de cabeza de 128. La capa de Gated Attention usa 16 cabezas para Q y 2 para KV, con dimensión de cabeza de 256 y RoPE de dimensión 64. La dimensión oculta es de 2048 y la salida LM tiene un tamaño de 248320 (padded).
+El modelo emplea una disposición de 40 capas organizada como 10 bloques de la forma 3 × (Gated DeltaNet → MoE) seguidos de 1 × (Gated Attention → MoE). La dimensión oculta es de 2048 y el embedding de tokens de 248.320 (con padding). La Gated DeltaNet utiliza 32 cabezas de atención lineal para V y 16 para QK, con dimensión de cabeza 128. La Gated Attention emplea 16 cabezas para Q y 2 para KV, con dimensión de cabeza 256 y dimensión de RoPE de 64. La capa MoE contiene 256 expertos con dimensión intermedia de 512, activando 8 expertos enrutados más 1 compartido por token.
 
-El entrenamiento se realizó en dos etapas: pre-training y post-training. Se menciona el uso de MTP (multi-token prediction) entrenado con múltiples pasos, una técnica que permite predecir varios tokens futuros simultáneamente. La cuantización FP8 se aplicó de forma fina con bloque de tamaño 128, y según la documentación, las métricas de rendimiento son casi idénticas a las del modelo original. El modelo base es Qwen/Qwen3.6-35B-A3B, y esta versión FP8 es un checkpoint cuantizado post-entrenamiento.
+El entrenamiento comprende fases de pre-entrenamiento y post-entrenamiento. El modelo incorpora MTP (multi-token prediction) entrenado con múltiples pasos, una técnica que permite decodificación especulativa y mejora el throughput. La variante FP8 aquí descrita aplica cuantización de grano fino con bloques de 128 sobre los pesos del modelo post-entrenado; el autor indica que las métricas de rendimiento son casi idénticas a las del modelo original. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni el uso específico de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional de propósito general.
-- Codificación agéntica: manejo de flujos de trabajo de frontend y razonamiento a nivel de repositorio con fluidez y precisión.
-- Preservación del razonamiento: opción de retener el contexto de razonamiento de mensajes históricos, lo que agiliza el desarrollo iterativo y reduce la sobrecarga computacional.
-- Procesamiento multimodal: el pipeline es image-text-to-text, por lo que puede procesar entradas de imagen y texto (aunque no se detallan capacidades específicas de visión en la documentación).
-- Soporte de tool calling: no documentado explícitamente en la ficha, pero su orientación a agentes de codificación sugiere capacidad para integrar herramientas externas.
-- Extensión de contexto: hasta 1.010.000 tokens, útil para tareas que requieren ventanas muy largas, como análisis de repositorios completos.
+- Generación de texto y razonamiento multimodal: procesa entradas de imagen y texto (pipeline image-text-to-text) gracias a su codificador de visión.
+- Codificación agéntica: manejo fluido de flujos de trabajo de frontend y razonamiento a nivel de repositorio, según las notas del autor.
+- Preservación del razonamiento (Thinking Preservation): opción para retener el contexto de razonamiento de mensajes históricos, reduciendo la sobrecarga en desarrollo iterativo.
+- Razonamiento multi-paso y soporte para agentes.
+- Capacidades multilingües: no se especifican los idiomas concretos en la información disponible.
+- Decodificación especulativa mediante MTP entrenado con múltiples pasos.
+- Compatibilidad con tool calling / function calling: no confirmado explícitamente en la información disponible.
 
 ## Casos de uso
 
-- Desarrollo de software agéntico: el modelo puede actuar como agente autónomo que navega por un repositorio, comprende la estructura del código y propone cambios o correcciones. Su ventana de contexto de 262K tokens permite procesar proyectos completos sin fragmentación.
-- Asistente de programación en IDE: integrado en editores como VS Code, puede generar código, explicar fragmentos y refactorizar funciones. Su bajo número de parámetros activos (3B) reduce la latencia en comparación con modelos densos de tamaño similar.
-- Revisión de código automatizada: con la capacidad de preservar el razonamiento histórico, puede analizar pull requests y mantener el contexto de discusiones anteriores para sugerir mejoras coherentes.
-- Generación de documentación técnica: a partir de código fuente o especificaciones, puede redactar documentación detallada, comentarios y guías de uso.
-- Automatización de flujos de trabajo frontend: puede generar componentes de interfaz, estilos y lógica de interacción, apoyándose en su entrenamiento específico para tareas de frontend.
-- Análisis de repositorios y búsqueda semántica: su contexto extensible permite indexar y razonar sobre grandes volúmenes de código, facilitando la localización de funciones, dependencias o patrones.
-- Chatbot técnico con contexto largo: en soporte técnico o comunidades de desarrollo, puede mantener conversaciones multi-turno con historial extenso y documentos adjuntos.
+- Codificación agéntica en repositorios: el modelo puede razonar sobre la estructura completa de un repositorio y resolver tareas de modificación de código, apoyándose en su contexto de 262.144 tokens y en la preservación del razonamiento entre iteraciones.
+- Desarrollo frontend asistido: según las notas del autor, maneja flujos de trabajo de frontend con mayor fluidez, lo que permite generar y ajustar componentes de interfaz en conversaciones multi-turno.
+- Automatización de revisión de código en CI/CD: integrable mediante vLLM o SGLang para analizar pull requests y sugerir cambios con contexto amplio de múltiples ficheros.
+- Asistentes conversacionales con contexto largo: la ventana extensible hasta 1.010.000 tokens permite mantener conversaciones o documentos de referencia de gran extensión sin truncamiento.
+- Procesamiento de documentos con imagen y texto: al incluir codificador de visión, puede extraer información de capturas, diagramas o documentos escaneados combinados con instrucciones textuales.
+- Despliegue en infraestructura con memoria limitada: la cuantización FP8 reduce el peso a 37,5 GB, lo que facilita servir el modelo en GPUs de gama alta para consumidores o en nodos con menos VRAM que la versión completa.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados se centran en benchmarks de codificación agéntica. La siguiente tabla compara Qwen3.6-35B-A3B con modelos similares de la misma categoría. Los datos provienen de la model card oficial.
+Datos publicados por el autor en la model card (categoría Coding Agent):
 
-| Benchmark | Qwen3.5-27B | Gemma4-31B | Qwen3.5-35BA3B | Gemma4-26BA4B | Qwen3.6-35BA3B |
+| Benchmark | Qwen3.6-35B-A3B | Qwen3.5-35B-A3B | Qwen3.5-27B | Gemma4-31B | Gemma4-26B-A4B |
 |---|---|---|---|---|---|
-| SWE-bench Verified | 75.0 | 52.0 | 70.0 | 17.4 | 73.4 |
-| SWE-bench Multilingual | 69.3 | 51.7 | 60.3 | 17.3 | 67.2 |
-| SWE-bench Pro | 51.2 | 35.7 | 44.6 | 13.8 | No disponible |
+| SWE-bench Verified | 73,4 | 70,0 | 75,0 | 52,0 | 17,4 |
+| SWE-bench Multilingual | 67,2 | 60,3 | 69,3 | 51,7 | 17,3 |
+| SWE-bench Pro | no disponible (dato truncado) | 44,6 | 51,2 | 35,7 | 13,8 |
 
-Nota: el valor de SWE-bench Pro para Qwen3.6-35BA3B no está completo en la información proporcionada (el dato se corta en la tabla original). No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la documentación disponible.
+No se han publicado en la información disponible resultados de benchmarks de lenguaje general (MMLU, GSM8K, HumanEval) ni métricas específicas de la variante FP8 frente al modelo original.
 
 ## Requisitos de hardware
 
-- El repositorio FP8 ocupa 37.5 GB, por lo que se estima que los pesos del modelo requieren aproximadamente 36 GB de VRAM en FP8 (35.95B parámetros × 1 byte por parámetro).
-- Para inferencia sin offloading se recomienda una GPU con al menos 40 GB de VRAM, como A100 40GB/80GB, H100 o RTX 6000 Ada.
-- No cabe en GPUs de consumo típicas de 24 GB (RTX 4090) sin cuantización adicional o técnicas de offloading a CPU.
-- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang y KTransformers, según la documentación oficial.
-- No se proporcionan datos de latencia ni throughput en la información disponible.
+- VRAM estimada para inferencia: el repositorio FP8 pesa 37,5 GB, por lo que se requieren al menos ~40 GB de VRAM para cargar los pesos en FP8 sin offloading.
+- GPU recomendadas: A100 80 GB, H100 80 GB, H200 o GPUs con 48 GB o más para FP8 sin fragmentar.
+- GPU de consumidor: no cabe en GPUs de 24 GB (RTX 4090) en FP8 completo; requeriría cuantizaciones adicionales (p. ej. GGUF de menor precisión) no incluidas en este repositorio.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang y KTransformers, según el autor. Compatible con endpoints y despliegue en Azure (tag deploy:azure).
+- Latencia y throughput: no disponibles en la información proporcionada; el uso de MTP con decodificación especulativa está orientado a mejorar el throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | SWE-bench Verified | Licencia |
+| Modelo | Parámetros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B | 35B | 3B | 262K (ext. 1M) | 73.4 | Apache-2.0 |
-| Qwen3.5-35B-A3B | 35B | 3B | No disponible | 70.0 | Apache-2.0 |
-| Qwen3.5-27B | 27B | 27B (denso) | No disponible | 75.0 | Apache-2.0 |
-| Gemma4-26B-A4B | 26B | 4B | No disponible | 17.4 | No disponible |
-
-Qwen3.6-35B-A3B supera a su predecesor Qwen3.5-35B-A3B en SWE-bench Verified (73.4 vs 70.0) y en SWE-bench Multilingual (67.2 vs 60.3), aunque queda ligeramente por detrás de Qwen3.5-27B en Verified (73.4 vs 75.0). La ventaja principal del modelo MoE es su menor coste de inferencia por token activado.
+| Qwen3.6-35B-A3B-FP8 | 35,9B totales / ~3B activos | 262.144 (ext. 1.010.000) | 73,4 | Apache 2.0 | Hugging Face |
+| Qwen3.5-35B-A3B | ~35B / ~3B activos | no disponible | 70,0 | no disponible | Hugging Face |
+| Qwen3.5-27B | 27B | no disponible | 75,0 | no disponible | Hugging Face |
+| Gemma4-31B | 31B | no disponible | 52,0 | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos en la información disponible, pero como modelo entrenado con datos web, puede reflejar sesgos presentes en dichos datos.
-- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en tareas de razonamiento complejo o con contexto muy largo.
-- El soporte de idiomas no está especificado; la documentación no indica qué lenguas cubre.
-- La extensión de contexto hasta 1.010.000 tokens puede degradar la calidad del razonamiento en los extremos de la ventana, aunque no se proporcionan datos al respecto.
-- La cuantización FP8 puede introducir ligeras diferencias numéricas frente al modelo en BF16, aunque la documentación afirma que el rendimiento es casi idéntico.
-- No se detalla el comportamiento del encoder de visión en tareas específicas; solo se indica que el pipeline es image-text-to-text.
-- Aunque la licencia Apache-2.0 permite uso comercial, es recomendable verificar el cumplimiento de las condiciones de atribución.
+- Sesgos conocidos: no se documentan en la información proporcionada; como modelo entrenado con datos web a gran escala, es previsible que herede sesgos de esos datos.
+- Riesgo de alucinación: no cuantificado en la información disponible; debe validarse la salida en producción, especialmente en tareas de código y razonamiento factual.
+- Limitaciones de contexto o idioma: la lista de idiomas soportados no está disponible; el contexto nativo es de 262.144 tokens y la extensión a 1.010.000 puede degradar el rendimiento si no se gestiona adecuadamente.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar el fichero LICENSE del repositorio para confirmar términos exactos.
+- Caveat para producción: la cuantización FP8, aunque el autor la describe como de rendimiento casi idéntico, puede introducir divergencias numéricas en casos límite; se recomienda evaluar en el dominio concreto antes de desplegar. El peso de 37,5 GB limita el despliegue en GPUs de consumidor de 24 GB sin cuantización adicional.
 
 ## Enlaces
 
-- Modelo FP8 en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6
-- Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
-- Receta de vLLM para Qwen3.6-35B-A3B: https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B
-- Modelo en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3.6-35B-A3B-FP8
-- Discusión en foros de NVIDIA: https://forums.developer.nvidia.com/t/qwen-qwen3-6-35b-a3b-and-fp8-has-landed/366822
+- Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
+- Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Blog del autor: https://qwen.ai/blog?id=qwen3.6-35b-a3b
+- Qwen Chat: https://chat.qwen.ai
+- Plataforma Qwen: https://qwen.ai/home
+- Licencia: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8/blob/main/LICENSE

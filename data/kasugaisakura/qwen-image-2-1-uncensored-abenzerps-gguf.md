@@ -2,121 +2,93 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-Abenzerps-GGUF es una redistribución cuantizada en formato GGUF del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el usuario KasugaiSakura sobre una conversión previa del repositorio abenzerps. Se trata, por tanto, de un derivado de terceros y no de un lanzamiento oficial de Qwen: los pesos del transformer de difusión se han convertido a GGUF mediante stable-diffusion.cpp para poder ejecutarse en ComfyUI con el nodo ComfyUI-GGUF, mientras que el text encoder (Qwen3-VL 8B) y el VAE se distribuyen en safetensors dentro del mismo repositorio.
+Qwen-Image-2.1-Uncensored-Abenzerps-GGUF es una cuantización comunitaria del modelo de difusión texto-a-imagen Qwen/Qwen-Image-2.1, publicada por el usuario KasugaiSakura (con archivos alojados también bajo el espacio abenzerps). El modelo base lo desarrolla el equipo Qwen de Alibaba, y esta ficha cubre específicamente el paquete de pesos cuantizados en formato GGUF y safetensors preparado para su uso local en ComfyUI mediante el nodo ComfyUI-GGUF.
 
-El modelo resuelve un problema muy concreto: permitir la generación de imágenes texto-a-imagen con el modelo base Qwen-Image 2.1 en hardware de consumo, gracias a cuantizaciones que van de 7,59 GiB (Q8_0) a 4,05 GiB (Q4_0) para el transformer. La etiqueta "Uncensored" indica que la conversión elimina cualquier comprobador de seguridad o filtro de contenido incorporado, de modo que el modelo no rechaza prompts ni produce imágenes censuradas: el comportamiento depende exclusivamente del prompt y del entorno de ejecución.
+El interés de esta publicación radica en que empaqueta en un único repositorio todos los componentes necesarios para inferencia local: el transformer de difusión cuantizado en múltiples precisiones (BF16, FP8, INT8, NVFP4, MLX de 4/6/8 bits y GGUF Q4_0 a Q8_0), el text encoder Qwen3-VL de 8B en BF16 e INT8, y el VAE del modelo en BF16. Con 7.115.124.736 parámetros en el transformer y un repositorio de 136,6 GB, permite ejecutar generación de imágenes en GPUs de consumo eligiendo la cuantización adecuada.
 
-El transformer de difusión declarado tiene 7.115.124.736 parámetros (~7,1 mil millones), el repositorio completo ocupa 54,9 GB y acumula 263 descargas y 63 likes en el momento de la consulta. Su relevancia actual es doble: por un lado, acerca un modelo de generación de imágenes de la familia Qwen a GPUs con 8-12 GB de VRAM; por otro, plantea de forma explícita el debate sobre modelos sin alineación de seguridad en entornos locales.
+La variante "Uncensored" indica que se han retirado o relajado los filtros de contenido del modelo original, lo que cambia el perfil de uso y de responsabilidad respecto al modelo upstream. La licencia declarada es qwen-research, lo que restringe el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion para generacion de imagenes (la model card no detalla la arquitectura interna); acompanado de text encoder Qwen3-VL 8B y VAE propio |
-| Parametros totales | 7.115.124.736 (~7,1 mil millones), correspondientes al transformer de difusion |
-| Parametros activos | no aplica (no se describe como modelo MoE en la informacion disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: Q8_0, Q6_K, Q5_K_M, Q4_K_M (recomendada), Q4_0 |
-| Idiomas soportados | no disponible |
-| Licencia | qwen-research (campo `license: other`, `license_name: qwen-research`) |
-| Formato de pesos | GGUF para el transformer de difusion; safetensors para text encoder (BF16 e Int8) y VAE (BF16) |
-
-Tabla de ficheros GGUF publicados:
-
-| Cuantizacion | Tamano |
-|---|---:|
-| Q8_0 | 7,59 GiB |
-| Q6_K | 5,88 GiB |
-| Q5_K_M | 5,22 GiB |
-| Q4_K_M | 4,60 GiB |
-| Q4_0 | 4,05 GiB |
-
-Ficheros auxiliares:
-
-| Tipo | Fichero | Precision | Tamano |
-|---|---|---|---:|
-| Text encoder | qwen3vl_8b_bf16.safetensors | BF16 | 16,33 GiB |
-| Text encoder | qwen3vl_8b_int8_convrot.safetensors | Int8 | 8,71 GiB |
-| VAE | qwen_image_2.1_vae_bf16.safetensors | BF16 | 644 MiB |
+| Arquitectura | Modelo de difusión texto-a-imagen (transformer) con text encoder Qwen3-VL 8B y VAE propio; arquitectura concreta del backbone no disponible |
+| Parametros totales | 7.115.124.736 (transformer de difusión) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4-bit, MLX 6-bit, MLX 8-bit, GGUF Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
+| Idiomas soportados | No disponible (el pipeline es texto-a-imagen; el text encoder Qwen3-VL es multilingüe, pero no se documenta lista de idiomas) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF y safetensors (más MLX safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No hay información de entrenamiento en esta ficha: el repositorio es una conversión de pesos, no un modelo entrenado desde cero. Lo que se sabe es que parte del modelo base Qwen/Qwen-Image-2.1 (revisión `b3179ad355be050328e483a9dfdd9e60cd62adfa`), que el text encoder y el VAE proceden de Comfy-Org/Qwen-Image-2.1, y que la conversión a GGUF se realizó con stable-diffusion.cpp en el commit `1330cebae8f2ba99249df846cc0c9444fcbd4308`. No se documentan número de tokens de entrenamiento, composición del dataset, ni si hubo fases de RLHF o DPO.
+El modelo base Qwen-Image-2.1 es un generador texto-a-imagen de la familia Qwen, compuesto por un transformer de difusión de 7.115 millones de parámetros, un text encoder basado en Qwen3-VL de 8B y un VAE dedicado (qwen_image_2.1_vae_bf16). La model card de esta cuantización no detalla la arquitectura interna del backbone (tipo de atención, número de bloques, resolución nativa) ni los datos de entrenamiento del modelo original: número de tokens, composición del dataset, uso de RLHF/DPO o técnicas de alineación. Toda esa información corresponde al modelo upstream Qwen/Qwen-Image-2.1 y no se reproduce en esta publicación.
 
-La innovación técnica aquí es la propia cuantización: al mantener el transformer de difusión en GGUF se puede cargar en VRAM con precisión reducida, mientras que el text encoder se ejecuta en RAM del sistema. La model card señala que esta separación es óptima porque el text encoding solo se ejecuta una vez por prompt, de modo que se ahorran entre 9 y 17 GB de VRAM con un impacto prácticamente nulo en la velocidad de generación. Se incluyen workflows oficiales de Comfy-Org tanto para texto-a-imagen como para edición de imagen, lo que sugiere que el modelo base soporta ambas tareas.
+La contribución de esta ficha es exclusivamente de cuantización y empaquetado: se ofrecen pesos del transformer en precisiones que van de BF16 (14,23 GB) a Q4_0 (4,15 GB), además de variantes FP8, INT8 ConvRot, NVFP4 y MLX para Apple Silicon. El text encoder se distribuye en BF16 (17,53 GB) e INT8 ConvRot (9,35 GB), y el VAE en BF16 (676 MB). La variante "Uncensored" implica una modificación de los pesos o del comportamiento del modelo original para reducir el filtrado de contenido, sin que la model card documente la metodología empleada para ello.
 
 ## Capacidades
 
-- Generación de imágenes texto-a-imagen con quality suficiente para uso creativo local, en cuantizaciones que caben en GPUs de consumo.
-- Edición de imágenes: la model card enlaza un workflow oficial de image edit, por lo que el pipeline permite tareas de modificación guiada por prompt sobre una imagen de entrada.
-- Generación sin filtros de seguridad: no incorpora safety checker ni filtro de contenido, de modo que no rechaza prompts ni aplica censura sobre la salida.
-- Integración con ComfyUI mediante el nodo `Unet Loader (GGUF)`, el nodo `CLIPLoader` configurado con `type = qwen_image` y el nodo `VAELoader`.
-- Compatibilidad con los templates oficiales de Comfy-Org para Qwen-Image 2.1, sustituyendo el `UNETLoader` original por el cargador GGUF.
-- Capacidades multilingües: no disponible (no se documenta el soporte de idiomas en la model card).
-- Tool calling, function calling, agentes y razonamiento multi-paso: no aplicable, es un modelo de difusión para imágenes.
-- Modo "thinking", visión o audio como salida: no disponible; el text encoder es multimodal (Qwen3-VL 8B) pero la model card no documenta casos de uso de entrada de imagen al encoder.
+- Generación de imágenes a partir de prompts de texto (pipeline text-to-image).
+- Ejecución local en ComfyUI mediante el nodo Unet Loader (GGUF) y el ecosistema ComfyUI-GGUF.
+- Carga del text encoder Qwen3-VL 8B con el nodo CLIPLoader configurado con type `qwen_image`.
+- Variantes de cuantización para distintos presupuestos de VRAM, desde NVFP4/MLX 4-bit (4 GB) hasta BF16 (14,23 GB).
+- Compatibilidad con Apple Silicon mediante los pesos MLX de 4, 6 y 8 bits.
+- Generación sin los filtros de contenido del modelo original (variante "Uncensored").
+- No se documentan en la información disponible capacidades de edición de imagen, inpainting, tool calling, agentes ni modos de razonamiento.
 
 ## Casos de uso
 
-- Generación de imágenes en local con GPU de gama media: con la cuantización Q4_K_M el transformer ocupa unos 4,6 GiB de VRAM y el text encoder Int8 reside en RAM (8,7 GiB), lo que permite generar imágenes en equipos con 8-12 GB de VRAM sin depender de servicios en la nube.
-- Prototipado de concepto visual y moodboards: iteración rápida sobre ideas de diseño, paletas y composiciones antes de pasar a producción, aprovechando que el modelo no aplica filtros que bloqueen prompts legítimos de carácter artístico.
-- Edición de imagen guiada por prompt: usando el workflow de image edit de Comfy-Org, se puede modificar una imagen existente (retocar, recomponer o reestilizar) sin reentrenar nada, únicamente cambiando la entrada.
-- Pipelines de generación por lotes en estudio: automatizar la creación de variantes de un mismo prompt con ComfyUI en modo API, eligiendo la cuantización en función de la VRAM disponible por máquina.
-- Investigación sobre seguridad y alineación: al carecer de filtros, sirve como caso de estudio controlado para medir qué ocurre cuando se elimina la capa de moderación, comparando salidas frente al modelo base con salvaguardas.
-- Producción de contenido para adultos en jurisdicciones donde sea legal: generación de material NSFW sin bloqueos, siempre que se cumplan los requisitos legales de edad, consentimiento y etiquetado del contenido.
-- Despliegue en estaciones de trabajo sin conexión: al distribuirse todos los componentes (transformer, text encoder y VAE) en el mismo repositorio, un equipo aislado de la red puede quedar operativo descargando una sola vez los ficheros.
-- Integración en herramientas creativas de escritorio: al ser GGUF y funcionar dentro de ComfyUI, encaja en aplicaciones de escritorio que ya embeben ComfyUI como backend de generación.
+- Generación de ilustración y arte conceptual en local: con la cuantización Q4_K_M (4,60 GB) el modelo cabe en GPUs de consumo y permite iterar prompts en ComfyUI sin depender de servicios en la nube.
+- Prototipado de pipelines de imagen en estaciones de trabajo sin GPU de datacenter: la variante MLX 4-bit (4,00 GB) permite trabajar en Macs con memoria unificada.
+- Investigación sobre filtrado y alineación de modelos generativos: la variante "Uncensored" sirve para estudiar el comportamiento del modelo sin capas de rechazo, comparándolo con el upstream.
+- Producción de assets para entornos controlados donde el contenido sensible es legítimo (por ejemplo, narrativa de ficción o diseño de personajes), asumiendo la responsabilidad legal del contenido generado.
+- Despliegue por lotes en ComfyUI: el formato GGUF y el nodo Unet Loader facilitan automatizar la generación de imágenes con scripts de ComfyUI en un servidor con una sola GPU.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye la misma variante en Q4_0, Q4_K_M, Q5_K_M, Q6_K y Q8_0, lo que permite medir la degradación de calidad frente al tamaño de archivo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card incluye únicamente una imagen (`assets/Qwen-Image-2.1-Benchmark.png`) sin tabla de valores, por lo que no es posible extraer cifras verificables ni comparaciones cuantitativas con otros modelos.
+La model card incluye una imagen de referencia (`assets/Qwen-Image-2.1-Benchmark.png`) con los benchmarks del modelo base, pero no se proporcionan los valores numéricos en texto dentro de la información disponible.
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM del transformer de difusión: 4,05 GiB (Q4_0), 4,60 GiB (Q4_K_M, recomendada), 5,22 GiB (Q5_K_M), 5,88 GiB (Q6_K) y 7,59 GiB (Q8_0).
-- Memoria para el text encoder: 8,71 GiB en Int8 o 16,33 GiB en BF16, preferiblemente en RAM del sistema y no en VRAM (la model card indica que mantenerlo en CPU ahorra entre 9 y 17 GB de VRAM sin penalizar la velocidad).
-- VAE: 644 MiB en BF16.
-- Configuración recomendada por el autor: `qwen-image-2.1-Q4_K_M.gguf` en VRAM (~4,6 GiB) y `qwen3vl_8b_int8_convrot.safetensors` en RAM (~8,7 GiB).
-- ¿Cabe en GPU de consumo? Sí. Con Q4_K_M y el text encoder en RAM, el modelo es viable en GPUs de 8 GB de VRAM, y cómodo en 12-16 GB (por ejemplo RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB). En GPUs de 24 GB (RTX 4090, RTX 3090) se puede subir a Q8_0 y mantener más componentes en VRAM.
-- GPUs de datacenter: no se documentan requisitos ni configuraciones para A100 o H100; el modelo está pensado para inferencia local en ComfyUI.
-- Modo de bajo consumo: si se producen errores de VRAM agotada, el autor recomienda arrancar ComfyUI con el argumento `--lowvram`.
-- Opciones de despliegue: ComfyUI con la extensión ComfyUI-GGUF. La conversión se hizo con stable-diffusion.cpp. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un modelo de difusión de imagen con este formato.
-- Latencia y throughput: no disponible.
-- Espacio en disco: el repositorio completo ocupa 54,9 GB, aunque en la práctica solo hay que descargar una cuantización, un text encoder y el VAE.
+- VRAM estimada para el transformer: 4,00-4,20 GB en MLX 4-bit o NVFP4; 4,15-4,60 GB en Q4_0/Q4_K_M; 5,22 GB en Q5_K_M; 5,88 GB en Q6_K; 7,59 GB en Q8_0; 14,23 GB en BF16.
+- VRAM adicional para el text encoder: 9,35 GB en INT8 ConvRot o 17,53 GB en BF16, más 676 MB del VAE en BF16.
+- Presupuesto total orientativo: en torno a 15 GB con transformer Q4_K_M, text encoder INT8 y VAE; en torno a 32 GB con transformer BF16 y text encoder BF16.
+- GPU recomendadas: RTX 4090 (24 GB) para la configuración Q4_K_M + text encoder INT8 con margen; A100/H100 para BF16; GPUs de 8-12 GB pueden funcionar con Q4_0/NVFP4 y text encoder INT8, aunque no se documenta el mínimo exacto.
+- Apple Silicon: los pesos MLX de 4, 6 y 8 bits están pensados para memoria unificada de 16 GB o más.
+- Opciones de despliegue: ComfyUI con ComfyUI-GGUF (fork leejet/ComfyUI-GGUF, con soporte nativo de Qwen-Image 2.1); el fork antiguo city96/ComfyUI-GGUF puede fallar con "Unknown model architecture!".
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-Abenzerps-GGUF (este modelo) | ~7,1 mil millones (transformer) | GGUF + safetensors auxiliares | qwen-research | Repositorio publico en Hugging Face, 263 descargas, 63 likes |
-| Qwen/Qwen-Image-2.1 (modelo base) | no disponible en la informacion proporcionada | safetensors | qwen-research | Repositorio oficial de Qwen |
-| Comfy-Org/Qwen-Image-2.1 | no disponible en la informacion proporcionada | safetensors | no disponible en la informacion proporcionada | Repositorio de Comfy-Org, origen del text encoder y el VAE |
-| Otras alternativas de generacion de imagen (FLUX, SD3.5, etc.) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Qwen-Image-2.1-Uncensored-Abenzerps-GGUF | 7.115 M (transformer) | No disponible | qwen-research | GGUF, safetensors, MLX en HF | Cuantización comunitaria sin filtros |
+| Qwen/Qwen-Image-2.1 (upstream) | 7.115 M (transformer) | No disponible | qwen-research | Pesos originales en HF | Modelo base con filtros de contenido |
+| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la información proporcionada |
 
-La comparación cuantitativa con modelos de la misma categoría (FLUX, Stable Diffusion 3.5 u otros) no puede realizarse con rigor porque la información proporcionada no incluye sus especificaciones ni resultados de benchmarks. Lo único verificable aquí es que este derivado se distingue por su formato GGUF y por la ausencia de filtros de contenido.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada para establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documenta ninguna evaluación de sesgos. Al no existir capa de moderación, los sesgos presentes en los datos de entrenamiento del modelo base pueden aflorar sin atenuación en las imágenes generadas.
-- Alucinación visual: los modelos de difusión pueden producir anatomías incorrectas, texto ilegible dentro de la imagen, manos deformadas o elementos incoherentes con el prompt; no hay datos de evaluación publicados en esta ficha.
-- Contenido sensible: el repositorio elimina intencionadamente el safety checker. Esto implica riesgo real de generar contenido NSFW, violento o legalmente problemático según la jurisdicción, con implicaciones claras bajo normativas como el AI Act europeo si se despliega como servicio.
-- Licencia restrictiva: la licencia qwen-research no es una licencia de código abierto permisiva. Antes de cualquier uso comercial es imprescindible revisar los términos originales del modelo base; la ficha no confirma que el uso comercial esté permitido.
-- Trazabilidad de la conversión: el repositorio figura a nombre de KasugaiSakura, pero los enlaces de descarga de los ficheros GGUF apuntan al repositorio de abenzerps. Conviene verificar la integridad con el fichero SHA256SUMS antes de usar los pesos.
-- Dependencia de herramientas concretas: el uso documentado pasa exclusivamente por ComfyUI y la extensión ComfyUI-GGUF. El modelo no es directamente consumible desde bibliotecas estándar de difusión sin una ruta de conversión alternativa.
-- Idiomas y contexto: no se documenta soporte multilingüe ni longitud de contexto, por lo que el comportamiento con prompts en idiomas distintos del inglés o con descripciones muy largas no está garantizado.
-- Ausencia de benchmarks: no hay cifras publicadas que permitan estimar fidelidad al prompt, calidad estética o degradación por cuantización, más allá de la recomendación del autor de usar Q4_K_M.
-- Producción: al carecer de filtros y de evaluación de sesgos, su uso en servicios públicos exige moderación externa, registro de prompts y salidas, y control de edad.
+- La licencia qwen-research restringe el uso comercial; es imprescindible revisar los términos antes de cualquier despliegue en producción.
+- La variante "Uncensored" elimina o relaja los filtros de contenido: el operador asume la responsabilidad legal y ética del contenido generado, incluido el riesgo de generar material dañino o ilegal.
+- No se documenta la metodología de eliminación de filtros ni el impacto sobre la calidad de generación o la fidelidad al prompt.
+- La model card no detalla sesgos conocidos, datos de entrenamiento ni evaluación de seguridad del modelo original.
+- Riesgo de alucinación visual y de artefactos propios de los modelos de difusión, agravado potencialmente por las cuantizaciones más agresivas (Q4_0, NVFP4, MLX 4-bit).
+- El repositorio suma 136,6 GB; descargar todas las variantes no es necesario y conviene seleccionar una sola cuantización.
+- Requiere el fork leejet/ComfyUI-GGUF para evitar errores de arquitectura desconocida con versiones antiguas del nodo.
+- No se documentan idiomas soportados ni longitud de contexto del text encoder en esta publicación.
+- La fecha de creación del repositorio (2026-09-20) y su volumen de descargas (84.459) deben tratarse con cautela; verifique la integridad de los pesos antes de usarlos.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/KasugaiSakura/Qwen-Image-2.1-Uncensored-Abenzerps-GGUF
+- Repositorio Hugging Face: https://huggingface.co/KasugaiSakura/Qwen-Image-2.1-Uncensored-Abenzerps-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Repositorio de Comfy-Org con text encoder y VAE: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
-- Repositorio referenciado en los enlaces de descarga de los GGUF: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
+- Espacio de archivos alternativo: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
-- ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
-- stable-diffusion.cpp (herramienta de conversión): https://github.com/leejet/stable-diffusion.cpp
-- Workflow oficial texto-a-imagen: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_t2i.json
-- Workflow oficial de edición de imagen: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_image_edit.json
-- Sumas de verificación SHA256: https://huggingface.co/KasugaiSakura/Qwen-Image-2.1-Uncensored-Abenzerps-GGUF/blob/main/SHA256SUMS
-- Los resultados de la búsqueda web no contenían información relevante sobre este modelo (devolvieron páginas de ayuda de Windows en húngaro), por lo que no se han utilizado como fuente.
+- ComfyUI-GGUF (fork recomendado): https://github.com/leejet/ComfyUI-GGUF
+- ComfyUI-GGUF (fork original): https://github.com/city96/ComfyUI-GGUF

@@ -1,91 +1,72 @@
 # Comfy-Org/Ming-3.0-TTS
 
 ## Resumen
+Ming-3.0-TTS es un modelo de síntesis de voz (text-to-speech) publicado por Comfy-Org como un empaquetado (repackaging) de un único fichero de pesos orientado a su uso directo en ComfyUI. No se trata de un modelo entrenado desde cero por Comfy-Org, sino de una redistribución del modelo base `inclusionAI/Ming-3.0-tts-tiny`, desarrollado por inclusionAI, adaptada al formato `diffusion-single-file` que consume el nodo de checkpoints de ComfyUI. El repositorio ocupa 9,1 GB y contiene un fichero `ming3_tts_tiny_int8_convrot.safetensors` que se coloca en `ComfyUI/models/checkpoints/`.
 
-Ming-3.0-TTS (Comfy-Org) es un paquete de pesos reempaquetados para ComfyUI del modelo de sintesis de voz `inclusionAI/Ming-3.0-tts-tiny`, publicado por la organizacion Comfy-Org, el equipo que mantiene los repositorios de referencia de la comunidad ComfyUI en Hugging Face. No se trata de un modelo nuevo ni de un entrenamiento propio: es una conversion de los pesos originales a un unico archivo `safetensors` en formato `diffusion-single-file`, pensado para cargarse directamente desde la carpeta `models/checkpoints` de ComfyUI sin depender del codigo de inferencia del repositorio original.
+La relevancia de esta ficha es fundamentalmente práctica: permite a usuarios de ComfyUI disponer de un modelo TTS integrado en sus flujos de trabajo sin necesidad de gestionar el repositorio original ni sus dependencias de inferencia específicas. El nombre del fichero sugiere una cuantización a int8 (`int8`) y algún tipo de transformación de pesos (`convrot`), aunque la model card no documenta el procedimiento exacto de conversión.
 
-El interes practico reside en la integracion: el modelo original requiere su propio pipeline, mientras que este repack elimina esa dependencia y permite encadenar la sintesis de voz dentro de un grafo de ComfyUI junto a otros nodos (audio, video, LLM). El archivo incluido en la model card es `ming_tts_tiny_int8_convrot.safetensors`, lo que indica una cuantizacion a int8 de los pesos; el repositorio ocupa 9,1 GB.
+La información pública disponible es muy limitada: la model card se reduce a instrucciones de instalación, no se declaran idiomas soportados, no se publican benchmarks y no se detalla la arquitectura interna del modelo base. Todo lo que sigue se limita a lo verificable en la información proporcionada, marcando explícitamente como "no disponible" los datos ausentes.
 
-La informacion publicada es muy escasa: la model card se limita a instrucciones de instalacion, no declara arquitectura, numero de parametros, idiomas soportados ni resultados de evaluacion. Cualquier dato de rendimiento o de calidad de sintesis debe verificarse contra el repositorio original antes de usarlo en produccion.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag `diffusion-single-file` sugiere un modelo de difusion para sintesis de audio; no se detalla en la model card) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base `inclusionAI/Ming-3.0-tts-tiny`; el empaquetado se distribuye como `diffusion-single-file`) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica / no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int8 (segun el nombre del archivo `ming_tts_tiny_int8_convrot.safetensors`); no se documentan otros formatos en este repositorio |
+| Tipos de cuantización | int8 (según el nombre del fichero `ming3_tts_tiny_int8_convrot.safetensors`); no se documentan otras variantes |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors, archivo unico empaquetado para ComfyUI (`diffusion-single-file`) |
-| Tamano del repositorio | 9,1 GB |
-| Modelo base | inclusionAI/Ming-3.0-tts-tiny |
-| Descargas / likes | 1.353 descargas, 13 likes (a fecha de la informacion) |
-| Fecha de publicacion | 23 de octubre de 2026 |
+| Formato de pesos | safetensors (fichero único, `diffusion-single-file`) |
 
 ## Arquitectura y entrenamiento
+La model card no describe la arquitectura del modelo base `inclusionAI/Ming-3.0-tts-tiny`. El tag `diffusion-single-file` y la etiqueta de pipeline `text-to-speech` indican que se trata de un modelo generativo aplicado a síntesis de voz, pero no se especifica si emplea difusión, un transformer autorregresivo, un modelo acústico con vocoder separado u otra formulación. Tampoco se detallan el número de parámetros, la composición del dataset de entrenamiento, el número de tokens o pasos de entrenamiento, ni si hubo etapas de ajuste fino con preferencias (RLHF/DPO).
 
-No hay informacion publicada en este repositorio sobre la arquitectura interna del modelo: la model card no describe el backbone (transformer, diffusion transformer u otro), el tipo de representacion de audio (codec discreto, mel-espectrograma, flow matching), ni el proceso de sintesis. El tag `diffusion-single-file` y el nombre del archivo apuntan a un modelo de difusion para generacion de audio, y el sufijo `convrot` del checkpoint sugiere algun tipo de conversion o rotacion de pesos aplicada durante el reempaquetado, pero su significado exacto no esta documentado. Tampoco se detallan datos de entrenamiento, numero de tokens o horas de audio, composicion del corpus ni si hubo ajuste por RLHF/DPO.
-
-Lo unico verificable es el proceso de empaquetado: los pesos del modelo `inclusionAI/Ming-3.0-tts-tiny` se han convertido a un unico `safetensors` cargable desde `ComfyUI/models/checkpoints/`, lo que implica una conversion del formato nativo a la convencion de pesos de ComfyUI y, segun el nombre del archivo, una cuantizacion a 8 bits. Para conocer la arquitectura real y el regimen de entrenamiento hay que consultar el repositorio original de inclusionAI.
+El único dato técnico concreto del empaquetado es el nombre del fichero, `ming3_tts_tiny_int8_convrot.safetensors`, que apunta a una cuantización a 8 bits y a una transformación de pesos no documentada (`convrot`). No se dispone de información sobre innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos de control de prosodia.
 
 ## Capacidades
-
-- Sintesis de voz a partir de texto (text-to-speech): es la funcion declarada del modelo por su nombre y por el pipeline del repositorio base.
-- Integracion nativa en flujos de ComfyUI: al ser un archivo unico en `checkpoints`, se puede insertar como nodo dentro de un grafo junto a otros modelos.
-- Ejecucion cuantizada en int8: el checkpoint empaquetado esta pensado para reducir el espacio en memoria frente a los pesos originales.
-- Clonacion de voz, control de emocion, multilinguismo, streaming o tool calling: no disponible; no se documentan en la model card de este repositorio.
-- No se declaran capacidades de generacion de texto, razonamiento, codigo, vision ni agentes: es un modelo de audio.
+- Síntesis de voz a partir de texto (pipeline `text-to-speech`), ejecutable dentro de ComfyUI como nodo de checkpoint.
+- Integración nativa en flujos de trabajo de ComfyUI: el fichero se carga desde `ComfyUI/models/checkpoints/`.
+- Distribución en un único fichero safetensors, lo que simplifica el despliegue y evita la gestión de múltiples artefactos.
+- Capacidades multilingües: no disponibles (no se declaran idiomas en la model card).
+- Soporte de tool calling, agentes, razonamiento multi-paso, visión o audio de entrada: no disponible / no aplica a un modelo TTS.
+- Modo thinking, clonación de voz, control de emociones o prosodia: no disponible en la información proporcionada.
 
 ## Casos de uso
-
-- Narracion y audiolibros: generar locuciones largas a partir de texto plano dentro de un flujo de ComfyUI, encadenando el nodo de sintesis con limpieza de texto y post-procesado de audio. Adecuado por su empaquetado como archivo unico, que simplifica el despliegue; la calidad y naturalidad en textos largos deben validarse empiricamente.
-- Doblaje y localizacion de video: en un grafo que ya procesa video, generar la pista de voz por segmentos y sincronizarla despues con herramientas de edicion; util en prototipado rapido de versiones dobladas antes de contratar locucion humana.
-- Accesibilidad: lectura en voz alta de contenido web o documentos para usuarios con discapacidad visual, integrada en una aplicacion que llame al modelo mediante ComfyUI como servicio interno.
-- Generacion de datos sinteticos para entrenar ASR: producir corpus de audio etiquetado para aumentar la cobertura de un sistema de reconocimiento de voz, con la advertencia de que hay que controlar el sesgo de voz sintetica en el conjunto resultante.
-- Sistemas de respuesta interactiva por voz (IVR): sintetizar mensajes fijos y dinamicos en telefonia; requiere medir latencia real, dato que no esta publicado.
-- Contenido para podcast y redes: generacion de cuñas y fragmentos de voz en pipelines automatizados de creacion de contenido, donde la licencia MIT facilita el uso comercial.
-- Pruebas de integracion en pipelines de audio: usar el modelo como generador de referencia en tests de sistemas de transcripcion o de moderacion de audio.
+- Doblaje y narración para vídeo generado en ComfyUI: el modelo se carga como checkpoint dentro del mismo grafo que genera el vídeo o las imágenes, permitiendo añadir una pista de voz sin salir del entorno. Es adecuado por su formato de fichero único y su integración directa con los nodos de ComfyUI.
+- Prototipado rápido de interfaces de voz: al estar cuantizado a int8, el modelo reduce los requisitos de memoria frente a una versión en fp16, lo que facilita probar un pipeline TTS en una estación de trabajo con GPU de gama media.
+- Generación de audiolibros y contenido largo por lotes: un modelo TTS integrado en ComfyUI permite encadenar la generación de fragmentos de texto en un flujo automatizado, siempre que se valide previamente la calidad y la coherencia de la voz entre segmentos.
+- Accesibilidad y lectura de textos: conversión de documentos o artículos a audio para usuarios con dificultades de lectura, aprovechando la licencia MIT para uso interno sin restricciones comerciales.
+- Creación de contenido para redes y podcasts: generación de locuciones para vídeos cortos o episodios, con la ventaja de que la licencia MIT permite su uso comercial sin royalties adicionales.
+- Investigación en síntesis de voz: servir como punto de partida reproducible para experimentos de cuantización (int8) y de integración en pipelines de difusión, dado que el empaquetado expone una variante cuantizada concreta.
+- Pruebas de integración en CI: verificar que un flujo de ComfyUI con nodos TTS se ejecuta correctamente en un entorno de integración continua, usando el fichero safetensors como artefacto de prueba.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, el repositorio ocupa 9,1 GB y el checkpoint esta cuantizado a int8; cargar el archivo completo en GPU requiere del orden de 10-12 GB de VRAM, mas memoria para activaciones y buffers de audio. Es una estimacion a partir del tamano del repositorio, no un dato del autor.
-- GPU recomendadas: no disponible. Por tamano de archivo, una RTX 4090 (24 GB) o una A100/H100 (40-80 GB) deberian poder alojar el checkpoint con holgura; una RTX 3060 de 12 GB queda en el limite.
-- GPU de consumo: probablemente viable en tarjetas de 16-24 GB si la estimacion anterior se confirma; en tarjetas de 8 GB habria que recurrir a offload a CPU o a una cuantizacion adicional no publicada.
-- Opciones de despliegue: ComfyUI (via `models/checkpoints`), que es el unico metodo documentado en la model card. vLLM, llama.cpp, Ollama o TGI no aplican a este formato salvo que exista soporte especifico no documentado.
-- Latencia y throughput: no disponibles. Dependen del hardware, de la duracion del audio generado y del numero de pasos de muestreo del modelo de difusion, parametro que no se detalla.
+- VRAM estimada: no disponible de forma oficial. El repositorio ocupa 9,1 GB, pero el tamaño del fichero de pesos concreto no se detalla; una cuantización int8 de un modelo "tiny" sugiere un consumo de memoria moderado, aunque no puede confirmarse sin conocer el número de parámetros.
+- GPU recomendadas: no disponibles. Al tratarse de un modelo etiquetado como "tiny" y cuantizado a int8, es plausible que quepa en GPU de consumo, pero no hay datos publicados que lo confirmen.
+- Cabe en GPU de consumo: no confirmado.
+- Opciones de despliegue: ComfyUI (uso previsto, cargando el fichero desde `ComfyUI/models/checkpoints/`). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que además no son los entornos habituales para este tipo de empaquetado.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
-
-| Modelo | Parametros | Contexto / duracion | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| Comfy-Org/Ming-3.0-TTS | no disponible | no disponible | MIT | safetensors int8 para ComfyUI | Hugging Face, 1.353 descargas |
-| inclusionAI/Ming-3.0-tts-tiny (original) | no disponible | no disponible | MIT (segun tags del repack) | pesos originales, pipeline propio | Hugging Face |
-| Otras familias TTS open source (p. ej. Kokoro, XTTS-v2, F5-TTS) | no disponible en la informacion proporcionada | no disponible | varian (algunas no comerciales) | varian | Hugging Face / repos propios |
-
-No se dispone de datos de rendimiento ni de especificaciones verificadas de alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La comparacion natural es contra el repositorio original de inclusionAI, que conserva el pipeline de inferencia y presumiblemente los pesos sin cuantizar; este repack solo anade comodidad de integracion en ComfyUI a costa de una posible perdida de calidad por la cuantizacion int8.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (TTS de tamaño "tiny" empaquetados para ComfyUI) ni datos de rendimiento que permitan establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
-
-- Ausencia total de documentacion tecnica: no se publican parametros, arquitectura, idiomas, ni datos de entrenamiento, lo que impide evaluar el modelo antes de desplegarlo.
-- Riesgo de degradacion por cuantizacion: el checkpoint esta en int8; no hay evaluacion publicada que compare la calidad frente a los pesos originales en fp16/fp32.
-- Idiomas: no declarados. No se puede asumir soporte de castellano sin probarlo.
-- Alucinacion y artefactos de audio: en TTS, los fallos tipicos son pronunciacion incorrecta, saltos de texto, ruido o truncamientos; no hay tasas de error publicadas.
-- Sesgos: al no documentarse el corpus de entrenamiento, se desconocen los sesgos de acento, genero y variedad dialectal del modelo.
-- Uso comercial: la licencia es MIT, lo que permite uso comercial y modificacion, pero la procedencia de los datos de entrenamiento no esta documentada; conviene verificar la licencia del repositorio original y las implicaciones sobre derechos de voz si se usa para clonacion.
-- Riesgo de suplantacion de voz: si el modelo base admite clonacion, es obligatorio implementar consentimiento explicito y marcado de audio sintetico conforme a la normativa aplicable (AI Act en la UE).
-- Dependencia de ComfyUI: la carga esta pensada para el nodo correspondiente de ComfyUI; fuera de ese entorno el archivo unico puede no ser utilizable directamente.
-- Fecha de publicacion muy reciente (octubre de 2026) y pocas descargas: comunidad y soporte limitados.
+- La model card no documenta idiomas soportados; no debe asumirse cobertura multilingüe sin verificación previa.
+- No se publican benchmarks de calidad (naturalidad, inteligibilidad, MOS) ni de robustez, por lo que la evaluación debe hacerse empíricamente antes de usar el modelo en producción.
+- El nombre del fichero indica una cuantización int8; es esperable una degradación de calidad frente a los pesos originales en fp16/fp32, aunque no se cuantifica en la información disponible.
+- La transformación `convrot` aplicada a los pesos no está documentada, lo que dificulta la reproducibilidad y la auditoría del empaquetado.
+- Riesgo de alucinación y artefactos de pronunciación: no evaluado en la información disponible; en TTS esto se manifiesta como errores de pronunciación, entonación o saltos en el audio.
+- Sesgos de voz (género, acento, edad) no documentados; el modelo base podría reflejar los sesgos de su dataset de entrenamiento, que no se describe.
+- Licencia MIT: permite uso comercial y modificación, pero conviene conservar el aviso de copyright y verificar la licencia del modelo base `inclusionAI/Ming-3.0-tts-tiny`, ya que este empaquetado es una redistribución.
+- Dependencia de ComfyUI: el formato `diffusion-single-file` está pensado para ese entorno; su uso fuera de ComfyUI requeriría adaptar la carga de pesos.
+- Fecha de creación del repositorio (2026-10-23) y actualización (2026-10-28): verificar que la versión descargada coincide con la esperada, dado el corto intervalo entre ambas.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Ming-3.0-TTS
-- Modelo base original: https://huggingface.co/inclusionAI/Ming-3.0-tts-tiny
-- ComfyUI (repositorio oficial): https://github.com/comfyanonymous/ComfyUI
-- Organizacion Comfy-Org en Hugging Face: https://huggingface.co/Comfy-Org
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Ming-3.0-TTS
+- Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-tiny
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI

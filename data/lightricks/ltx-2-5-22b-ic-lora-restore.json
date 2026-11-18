@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 91,
-  "downloads_30d": 13313,
+  "downloads_30d": 13143,
   "trending_score": 14,
   "parameters": null,
   "parameters_human": null,
@@ -51,29 +51,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "GitHub - karthink/gptel-agent: Agent mode for gptel · GitHub",
-      "url": "https://github.com/karthink/gptel-agent",
-      "snippet": "Nov 12, 2025 · You can switch between an agent preset (gptel-agent) and a planning preset (gptel-plan) by applying them from …"
+      "title": "The AI Technology Company Empowering Creativity | Lightricks",
+      "url": "https://www.lightricks.com/",
+      "snippet": "Lightricks is a leading AI technology company transforming creative workflows with innovative tools; across web, mobile and open …"
     },
     {
-      "title": "gptel: A simple LLM client for Emacs - GitHub",
-      "url": "https://github.com/karthink/gptel",
-      "snippet": "A simple, extensible LLM client for Emacs. Contribute to karthink/gptel development by creating an account on GitHub."
+      "title": "About Lightricks | AI-Powered Creative Apps",
+      "url": "https://www.lightricks.com/about",
+      "snippet": "Lightricks, an AI-first company, is revolutionizing how visual content is created. With a mission to bridge the gap between imagination …"
     },
     {
-      "title": "gptel",
-      "url": "https://gptel.org/",
-      "snippet": "gptel is a simple Large Language Model chat client for Emacs, with support for many models and backends. It works in the spirit of …"
+      "title": "Lightricks (LTX.io) - Hugging Face",
+      "url": "https://huggingface.co/Lightricks",
+      "snippet": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control ... Lightricks/LTX-2.5-22b-LoRA-Cinemagraph ... Lightricks/LTX-2.5-22b-IC-LoRA …"
     },
     {
-      "title": "karthink/gptel-agent | DeepWiki",
-      "url": "https://deepwiki.com/karthink/gptel-agent",
-      "snippet": "Mar 15, 2026 · gptel-agent is an extension package for gptel that transforms standard LLM interactions into autonomous, tool-using …"
+      "title": "Lightricks - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Lightricks",
+      "snippet": "In the summer of 2022, with the emergence of generative artificial intelligence, Lightricks began incorporating GenAI flows in its apps, …"
     },
     {
-      "title": "Getting Started | karthink/gptel-agent | DeepWiki",
-      "url": "https://deepwiki.com/karthink/gptel-agent/2-getting-started",
-      "snippet": "Mar 15, 2026 · This page covers the installation of gptel-agent, initial configuration, and the two primary usage patterns. For detailed …"
+      "title": "Lightricks - GitHub",
+      "url": "https://github.com/Lightricks",
+      "snippet": "Bridging Imagination and Creation. Lightricks has 154 repositories available. Follow their code on GitHub."
     }
   ]
 }

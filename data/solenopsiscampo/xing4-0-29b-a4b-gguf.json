@@ -27,8 +27,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 791,
-  "downloads_30d": 26767,
+  "likes": 792,
+  "downloads_30d": 25529,
   "trending_score": 0,
   "parameters": 31215031088,
   "parameters_human": "31.22B",
@@ -49,31 +49,5 @@
   "renamed_to": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
   "renamed_at": "2026-11-11T03:55:11.079Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Vinted | Toute la seconde main dans une seule application",
-      "url": "https://www.vinted.fr/?msockid=34e62924e6426a4c34133ef3e7f16b91",
-      "snippet": "Vinted À propos de Vinted Le développement durable Presse Publicités Accessibilité Découvrir"
-    },
-    {
-      "title": "S'inscrire et se connecter | Vinted",
-      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=34e62924e6426a4c34133ef3e7f16b91",
-      "snippet": "S'inscrire sur Vinted Pourquoi mon adresse IP a-t-elle été bloquée ? J'essaie de m'inscrire sur Vinted, mais mon e-mail est bloqué …"
-    },
-    {
-      "title": "Vinted | Sell and buy clothes, shoes and accessories",
-      "url": "https://www.vinted.com/",
-      "snippet": "Vinted About us Sustainability Press Advertising Accessibility Discover How it works Mobile apps Infoboard"
-    },
-    {
-      "title": "Vinted Go - Emplacements",
-      "url": "https://vintedgo.com/fr/carrier-locations?region=europe",
-      "snippet": "© 2026 Vinted Go Relais Suivi Partenariats Obtenir de l'aide Politique de confidentialité Termes et conditions"
-    },
-    {
-      "title": "Items - Vinted",
-      "url": "https://www.vinted.com/brand/login",
-      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
-    }
-  ]
+  "sources": []
 }

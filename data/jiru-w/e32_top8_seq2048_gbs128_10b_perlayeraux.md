@@ -2,53 +2,54 @@
 
 ## Resumen
 
-e32_top8_seq2048_gbs128_10b_perlayeraux es un modelo de lenguaje Mixture-of-Experts (MoE) entrenado desde cero por el usuario de Hugging Face JIRU-W. Con 3.696.887.808 parámetros totales (3,7B), se trata de un modelo de investigación experimental cuyo objetivo es estudiar el efecto de una variante de la función de pérdida de balanceo de carga (load-balancing) calculada por capa en lugar de la forma estándar de OLMoE/Mixtral que agrupa las estadísticas del router de todas las capas por índice de experto.
+e32_top8_seq2048_gbs128_10b_perlayeraux es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) de 3.696.887.808 parametros totales, desarrollado por el usuario JIRU-W y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de investigacion entrenado desde cero sobre 10.000 millones de tokens, cuyo proposito principal no es el uso en produccion sino el estudio experimental del enrutamiento y del equilibrio de carga en arquitecturas MoE. Concretamente, el modelo es identico a su predecesor JIRU-W/e32_top8_seq2048_gbs128_10b salvo por un cambio: la funcion de perdida de balanceo de carga se calcula de forma independiente por capa y se promedia entre las 16 capas, en lugar de agregar las estadisticas de enrutamiento de todas las capas por indice de experto.
 
-El modelo es idéntico en código, pesos iniciales, datos, orden de datos, semilla e hiperparámetros al modelo gemelo JIRU-W/e32_top8_seq2048_gbs128_10b (la pérdida del paso 1 coincide con una tolerancia de 1e-9), salvo por el interruptor `router_aux_loss_per_layer=True`. Esto lo convierte en un experimento controlado tipo A/B para investigación en preentrenamiento de MoE.
+La arquitectura replica la de OLMoE (codigo copiado de `transformers` v5.20.1, con las clases renombradas a `MaskMoe*` y distribucion como custom code): 16 capas, dimension oculta 2048, 16 cabezas de atencion con QK-norm, RoPE con theta 10000, y 32 expertos SwiGLU por capa con top-8 activos. El vocabulario es de 50.304 tokens (tokenizer de OLMoE). El modelo no esta ajustado por instrucciones y su entrenamiento seguia en curso en el momento de redactar la model card (paso 20.030 de 38.139).
 
-El entrenamiento está en curso (en el momento de redactar la model card se encontraba en el paso 13.768 de 38.139) y los checkpoints se publican progresivamente en el repositorio. Es un modelo base pequeño, no instruido (no instruction-tuned), pensado para investigación y no para uso en producción.
+Su relevancia actual es fundamentalmente metodologica: permite comparar de forma controlada dos formulaciones de la perdida auxiliar de balanceo en MoE manteniendo fijos datos, orden de datos, semilla e hiperparametros, lo que aisla el efecto de la variante per-layer frente a la variante pooled de OLMoE/Mixtral.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | OLMoE (MoE, transformer decoder-only, código personalizado `MaskMoe*`) |
-| Parametros totales | 3.696.887.808 (≈3,7B) |
-| Parametros activos | no disponible (top-8 de 32 expertos por capa; no se publica el recuento exacto de parámetros activos) |
-| Longitud de contexto | 2048 tokens (según la longitud de secuencia del entrenamiento) |
-| Tipos de cuantizacion | no disponible (pesos en bf16) |
-| Idiomas soportados | no disponible (entrenado con OLMoE-mix-0924, predominantemente inglés) |
+| Arquitectura | Transformer MoE (OLMoE), 16 capas, hidden 2048, 16 cabezas, QK-norm, RoPE theta=10000 |
+| Parametros totales | 3.696.887.808 |
+| Parametros activos | no disponible (top-8 de 32 expertos; el numero exacto de parametros activos no se indica en la informacion) |
+| Longitud de contexto | 2048 tokens (longitud de secuencia de entrenamiento) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (checkpoints de DeepSpeed en ramas) |
+| Formato de pesos | safetensors (libreria transformers, custom code) |
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza la arquitectura OLMoE (código copiado de `transformers` v5.20.1, clase renombrada a `MaskMoe*` y distribuida como código personalizado). Consta de 16 capas, dimensión oculta de 2048, 16 cabezas de atención con QK-norm y RoPE con θ=10000. Cada capa contiene 32 expertos SwiGLU con dimensión intermedia de 1024 y enrutamiento top-8 con `norm_topk_prob=False`. El vocabulario es de 50.304 tokens, usando el tokenizador de OLMoE.
+El modelo sigue la arquitectura OLMoE: 16 capas transformer con atencion multi-cabeza de 16 cabezas, QK-norm y RoPE con theta 10000, dimension oculta 2048, y una capa MoE por capa con 32 expertos SwiGLU de dimension intermedia 1024, de los cuales se activan los top-8 por token con `norm_topk_prob=False`. El vocabulario es de 50.304 tokens con el tokenizer de OLMoE. El codigo se distribuye como custom code (`modeling_mask_moe.py`, `configuration_mask_moe.py`) y requiere `transformers>=5.20`.
 
-El entrenamiento usa 10.000 millones de tokens del dataset JIRU-W/olmoe-mix-0924-10b (una muestra de `allenai/OLMoE-mix-0924` con datos de arXiv de `EleutherAI/proof-pile-2`), en una sola pasada con orden de muestras fijo (`np.random.default_rng(1234).permutation(4881809)`). Se planifican 38.139 pasos con un batch de 128 secuencias × 2048 tokens = 262.144 tokens por paso. El optimizador es AdamW con lr 6e-4, 200 pasos de warmup, decay coseno hasta 6e-5 y weight decay 0.1. La precisión es bf16 en pesos con acumulación de gradientes en fp32, usando DeepSpeed ZeRO-2 en una sola GPU. La innovación central del experimento es la pérdida de balanceo de carga por capa (pérdida tipo Switch calculada independientemente en cada una de las 16 capas y promediada), con coeficiente 0,01 sin cambios respecto a la variante de referencia.
+El entrenamiento se realizo desde cero sobre el dataset JIRU-W/olmoe-mix-0924-10b, compuesto por 10.000 millones de tokens derivados de `allenai/OLMoE-mix-0924` (con arXiv procedente de `EleutherAI/proof-pile-2`), en una sola pasada y con orden de muestras fijado por `np.random.default_rng(1234).permutation(4881809)`. Se planificaron 38.139 pasos con batch de 128 secuencias de 2048 tokens (262.144 tokens por paso), optimizador AdamW con lr 6e-4, 200 pasos de warmup, decaimiento coseno hasta 6e-5 y weight decay 0.1. Se uso bf16 para pesos, acumulacion de gradientes en fp32, DeepSpeed ZeRO-2 y una unica GPU, con semilla 1234. La innovacion tecnica destacable es la perdida de balanceo de carga calculada por capa (Switch loss por capa, promediada sobre las 16 capas) con coeficiente 0.01, frente a la forma de OLMoE/Mixtral que agrega estadisticas de router de todas las capas por indice de experto. No se menciona RLHF ni DPO: es un modelo base de preentrenamiento.
 
 ## Capacidades
 
-- Generacion de texto en bruto (modelo base preentrenado, sin ajuste por instrucciones)
-- Modelado de lenguaje con enrutamiento MoE top-8 sobre 32 expertos por capa
-- Completado de texto técnico y científico, dado que el corpus incluye arXiv y proof-pile-2
-- Carga de checkpoints históricos por rama (`step100` a `step13000` y siguientes) para estudios de dinámica de entrenamiento
-- Comparación controlada contra el modelo gemelo con pérdida de balanceo agregada para investigar el efecto del balanceo por capa
-- No soporta tool calling, agentes, visión ni audio
-- No está instruido: no sigue instrucciones ni mantiene conversaciones de forma fiable
+- Generacion de texto autoregresiva como modelo base de lenguaje (no ajustado por instrucciones).
+- Razonamiento y modelado de lenguaje general derivado del preentrenamiento sobre OLMoE-mix-0924 (incluye contenido de arXiv).
+- Enrutamiento MoE con top-8 de 32 expertos por capa y 16 capas.
+- Capacidades multilingues: no disponibles (no se documentan idiomas soportados).
+- Tool calling / function calling: no disponible; no se documenta soporte.
+- Soporte de agentes y razonamiento multi-paso: no disponible; al no estar ajustado por instrucciones, no se documenta.
+- Capacidades especiales (thinking mode, vision, audio): no disponibles.
+- Uso como modelo de investigacion para estudiar balanceo de carga y enrutamiento en MoE.
 
 ## Casos de uso
 
-- Investigacion en funciones de balanceo de carga MoE: permite comparar directamente la pérdida por capa frente a la agregada por experto con un experimento controlado (misma semilla, datos e hiperparámetros), útil para papers y ablations.
-- Estudios de dinámica de enrutamiento: los checkpoints intermedios (cada 1.000 pasos y varios iniciales) permiten analizar cómo evoluciona la especialización de expertos a lo largo del preentrenamiento.
-- Investigacion en scaling laws de MoE pequeños: al ser un modelo de 3,7B entrenado con 10B tokens en una sola GPU, sirve como banco de pruebas económico para hipótesis de arquitectura MoE.
-- Completado de texto tecnico y cientifico: dado el corpus con arXiv y proof-pile-2, puede usarse para evaluar perplexidad y completado en texto matemático y académico.
-- Reproduccion de pipelines de preentrenamiento: el repositorio documenta semilla, orden de datos y configuración exacta, útil como referencia para reproducir experimentos de preentrenamiento con DeepSpeed ZeRO-2 en una GPU.
-- Evaluacion de checkpoints intermedios: los investigadores pueden estudiar curvas de pérdida (eval CE publicado por checkpoint) y compararlas con sus propios experimentos.
+- Investigacion sobre balanceo de carga en MoE: comparar directamente esta variante per-layer con JIRU-W/e32_top8_seq2048_gbs128_10b (variante pooled) manteniendo datos, semilla e hiperparametros, para aislar el efecto de la formulacion de la perdida auxiliar sobre la distribucion de expertos.
+- Estudio de enrutamiento por capa: analizar como se distribuyen los tokens entre los 32 expertos de cada una de las 16 capas y si la perdida per-layer reduce el colapso de expertos en capas concretas.
+- Reproducibilidad de experimentos de preentrenamiento: el autor documenta orden de datos, semilla, hiperparametros y checkpoints por paso (ramas `step<N>`), lo que permite reproducir curvas de entrenamiento y validar resultados.
+- Analisis de curvas de aprendizaje: los checkpoints intermedios (pasos 100, 200, 300, 500, 700, 1500, 2500, 3500, 4500 y cada 1000) permiten estudiar la evolucion de la cross-entropy de evaluacion a lo largo del entrenamiento.
+- Fine-tuning posterior como base de investigacion: al ser un modelo base Apache 2.0, puede servir como punto de partida para experimentos de ajuste supervisado o DPO en entornos academicos, aunque su tamano y estado de entrenamiento lo hacen poco adecuado para produccion.
+- Docencia y formacion: ilustrar en cursos o seminarios el funcionamiento interno de un MoE (top-k routing, perdida auxiliar, balanceo por capa) con un modelo de 3,7B parametros totales y codigo accesible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La única métrica publicada es la entropía cruzada de evaluación (CE media sobre 256 secuencias de 2048 tokens reservadas):
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor unicamente reporta cross-entropy de evaluacion (media sobre 256 secuencias retenidas de 2048 tokens):
 
 | Revision | Tokens vistos | Eval CE |
 |---|---|---|
@@ -59,40 +60,46 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 | step11000 | 2,88B | 3,0381 |
 | step12000 | 3,15B | 3,0184 |
 | step13000 | 3,41B | 3,0033 |
+| step14000 | 3,67B | 2,9856 |
+| step15000 | 3,93B | 2,9691 |
+| step16000 | 4,19B | 2,9552 |
+| step17000 | 4,46B | 2,9390 |
+| step18000 | 4,72B | 2,9256 |
+| step19000 | 4,98B | 2,9129 |
+| step20000 | 5,24B | 2,9005 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 3,7B de parámetros en bf16, aproximadamente 7,5 GB solo para pesos; en la práctica se recomienda una GPU con al menos 12-16 GB de VRAM para inferencia cómoda. No hay estimaciones oficiales publicadas.
-- El entrenamiento original se realiza en una sola GPU con DeepSpeed ZeRO-2, lo que indica que tanto entrenamiento como inferencia son viables en hardware de un solo nodo.
-- Cabe en GPUs consumer de gama alta (RTX 3090/4090 con 24 GB) con holgura en bf16; no se han publicado cuantizaciones (GGUF, AWQ, GPTQ), por lo que la inferencia en GPUs más modestas requiere cuantización propia.
-- Despliegue: requiere `transformers>=5.20` con `trust_remote_code=True` (código personalizado `modeling_mask_moe.py`). No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI; dado el código personalizado, la vía soportada es la librería `transformers` con PyTorch.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explicita en la informacion. Como referencia orientativa, los 3.696.887.808 parametros totales en bf16 ocupan aproximadamente 7,4 GB solo en pesos; a ello hay que sumar activaciones, cache KV y overhead del runtime, por lo que el requisito real es mayor.
+- GPU recomendadas: no disponible. El entrenamiento se realizo en una unica GPU con DeepSpeed ZeRO-2, pero el autor no especifica el modelo de GPU.
+- Cabe en consumer GPU: no disponible como dato confirmado; por el tamano de pesos en bf16 es plausible en GPUs consumer con 16 GB o mas de VRAM, pero no se documenta ni se garantiza.
+- Opciones de despliegue: el autor solo documenta uso con `transformers>=5.20` y `trust_remote_code=True`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, y al tratarse de custom code la compatibilidad con esos runtimes no esta disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Arquitectura | Contexto | Licencia | Notas |
-|---|---|---|---|---|---|
-| JIRU-W/e32_top8_seq2048_gbs128_10b_perlayeraux | 3,7B | OLMoE (32 expertos, top-8, 16 capas) | 2048 | Apache 2.0 | Experimento con pérdida de balanceo por capa; en entrenamiento |
-| JIRU-W/e32_top8_seq2048_gbs128_10b | 3,7B | OLMoE (idéntica) | 2048 | Apache 2.0 | Gemelo control con pérdida de balanceo agregada estándar |
-| allenai/OLMoE-1B-7B | 6,9B totales / 1,3B activos | OLMoE (64 expertos, top-8) | 4096 | Apache 2.0 | Modelo de referencia de AI2, entrenado con ~5B tokens (ablation) y modelo final más grande; instruido en su variante -instruct |
-
-El modelo es esencialmente una réplica a escala reducida de OLMoE de AllenAI, concebida para investigación sobre la pérdida de balanceo; su comparación relevante es con su gemelo de control y con OLMoE original.
+| Modelo | Parametros totales | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| e32_top8_seq2048_gbs128_10b_perlayeraux (este) | 3.696.887.808 | 2048 | Apache 2.0 | Perdida de balanceo per-layer; entrenamiento en curso |
+| JIRU-W/e32_top8_seq2048_gbs128_10b | 3.696.887.808 (misma arquitectura) | 2048 | Apache 2.0 | Perdida de balanceo pooled; misma semilla, datos e hiperparametros |
+| OLMoE (referencia de arquitectura) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Arquitectura base de la que se copia el codigo |
 
 ## Limitaciones y advertencias
 
-- No está instruido: es un modelo base preentrenado, por lo que no sigue instrucciones de forma fiable y no debe usarse como asistente sin un ajuste posterior.
-- Entrenamiento en curso: los checkpoints publicados son intermedios (el último descrito es el paso 13000 de 38139) y la calidad del modelo mejorará hasta la convergencia.
-- Contexto limitado a 2048 tokens, insuficiente para documentos largos.
-- Corpus de entrenamiento predominantemente en inglés (OLMoE-mix-0924); el rendimiento en español y otros idiomas no está evaluado y probablemente sea limitado.
-- Riesgo de alucinación típico de modelos base pequeños; no hay evaluaciones de veracidad ni de seguridad publicadas.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del autor; conviene revisar `modeling_mask_moe.py` antes de usarlo en entornos sensibles.
-- No hay soporte documentado para runtimes optimizados (vLLM, llama.cpp), lo que limita el throughput en producción.
-- Licencia Apache 2.0: sin restricciones para uso comercial, aunque al ser un modelo de investigación experimental no hay garantías de calidad ni soporte.
+- Modelo de investigacion: el autor lo describe explicitamente como "small research model" y no esta ajustado por instrucciones, por lo que no es adecuado para uso directo en produccion ni para conversacion.
+- Entrenamiento incompleto: en el momento de redactar la model card el entrenamiento estaba en el paso 20.030 de 38.139; los checkpoints publicados no corresponden al modelo final.
+- Ventana de contexto limitada a 2048 tokens, lo que restringe tareas que requieran contexto largo.
+- Idiomas soportados no documentados: no se puede garantizar un rendimiento adecuado fuera del ingles u otros idiomas presentes en OLMoE-mix-0924.
+- Riesgo de alucinacion: inherente a un modelo base de lenguaje sin alineamiento; no se documentan evaluaciones de fidelidad.
+- Sesgos conocidos: no documentados por el autor; al derivar de OLMoE-mix-0924 (que incluye arXiv de proof-pile-2) puede heredar sesgos de ese corpus.
+- Requiere `trust_remote_code=True` y `transformers>=5.20` por el uso de custom code, lo que implica ejecutar codigo del repositorio y revisar su procedencia antes de desplegarlo.
+- Licencia Apache 2.0: permite uso comercial, pero el estado de investigacion y la falta de benchmarks desaconsejan su uso en produccion sin evaluacion propia.
+- No se documentan cuantizaciones oficiales ni compatibilidad con runtimes de inferencia alternativos a transformers.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/JIRU-W/e32_top8_seq2048_gbs128_10b_perlayeraux
-- Modelo gemelo de control: https://huggingface.co/JIRU-W/e32_top8_seq2048_gbs128_10b
+- Modelo en Hugging Face: https://huggingface.co/JIRU-W/e32_top8_seq2048_gbs128_10b_perlayeraux
+- Modelo predecesor (variante pooled): https://huggingface.co/JIRU-W/e32_top8_seq2048_gbs128_10b
 - Dataset de entrenamiento: https://huggingface.co/datasets/JIRU-W/olmoe-mix-0924-10b
-- Dataset original de referencia: https://huggingface.co/allenai/OLMoE-mix-0924
-- Corpus matemático: https://huggingface.co/EleutherAI/proof-pile-2
+- Dataset origen: allenai/OLMoE-mix-0924 (referenciado en la model card; sin URL directa proporcionada)
+- Dataset origen de arXiv: EleutherAI/proof-pile-2 (referenciado en la model card; sin URL directa proporcionada)

@@ -2,85 +2,104 @@
 
 ## Resumen
 
-Qwen3.8-27B-QUASAR-NVFP4-NInfer es un artefacto de inferencia nativo para el motor NInfer, construido a partir del checkpoint QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4, una versión con entrenamiento de cuantización consciente (QAT) en formato NVFP4 del modelo Qwen/Qwen3.8-27B de Alibaba. El modelo base es un transformer denso de 27 000 millones de parámetros con capacidades de visión y razonamiento, ventana de contexto nativa de 262 144 tokens y licencia Apache-2.0. Este artefacto empaqueta los pesos NVFP4, el backbone de texto, la torre de visión, el modelo borrador MTP, el tokenizador, la plantilla de chat y los recursos de procesamiento multimedia en un único archivo `.ninfer` de 16,35 GiB.
+Qwen3.8-27B QUASAR NVFP4 para NInfer es un artefacto de inferencia empaquetado en formato propietario `ninfer` (contenedor v3), construido por MirkoCovizzi a partir de QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4, una versión del modelo Qwen3.8-27B de 27.000 millones de parámetros sometida a entrenamiento consciente de cuantización (QAT) en NVFP4. El paquete integra en un único fichero de 18,42 GiB los componentes de texto, visión, MTP (multi-token prediction) y DFlash2 (cabecera de decodificación especulativa), de modo que no es necesario descargar un modelo borrador separado en tiempo de inferencia.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo multimodal de 27B con cuantización NVFP4 en GPUs NVIDIA Blackwell de consumo, como la RTX 5090 Laptop de 24 GB, gracias a la optimización del motor NInfer y a la decodificación especulativa MTP. Es una opción para desarrolladores que necesitan desplegar un modelo de razonamiento y visión en un solo GPU sin recurrir a infraestructura multi-GPU, manteniendo la compatibilidad con APIs estilo OpenAI y Anthropic.
+El problema que resuelve es la brecha entre un checkpoint QAT en NVFP4 y un despliegue real de baja latencia: el autor ha fusionado y reorganizado los pesos cuantizados (256 padres NVFP4: 32 de atención, 96 de GDN y 128 de MLP) preservando los códigos E2M1 y las escalas de bloque E4M3FN originales, y ha añadido metadatos de configuración, enlaces lógicos y permisos de activación por entrada. El resultado es un artefacto listo para ejecutarse con el runtime NInfer v3 sobre GPU NVIDIA Blackwell con soporte FP4, validado en una RTX 5090 Laptop de 24 GiB.
 
-## Especificaciones tecnicas
+Su relevancia actual radica en que demuestra una ruta completa de cuantización FP4 nativa más decodificación especulativa integrada sobre hardware de consumo Blackwell, con 51.320 descargas acumuladas. No obstante, conviene subrayar que no es un checkpoint Transformers, ni una distribución Safetensors, ni un GGUF, ni un formato genérico de intercambio NVFP4: es específico de NInfer y requiere ese runtime.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atención completa y Gated DeltaNet (híbrido), más torre de visión |
-| Parametros totales | 27 000 millones (27B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262 144 tokens (256K) |
-| Tipos de cuantizacion | NVFP4 (códigos E2M1, escalas de bloque E4M3FN, divisores FP32) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | `.ninfer` (formato propietario del motor NInfer, no compatible con Transformers, GGUF o Safetensors) |
+| Arquitectura | Transformer con atención y capas GDN (clase `Qwen3_5ForCausalLM`), más módulos Vision, MTP y DFlash2 |
+| Parámetros totales | 27.000 millones (modelo base Qwen3.8-27B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible como máximo del modelo; los ejemplos de ejecución usan 4.096 y 8.192 tokens |
+| Tipos de cuantización | NVFP4 (E2M1 con escalas de bloque E4M3FN) en pesos; caché KV en BF16, INT8, FP8, NVFP4, K8V4 y KVarN; sufijo DFlash2 con 21 tensores Q8 groupwise y 45 BF16 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Contenedor propietario `.ninfer` v3, fichero único `qwen3_8_27b_nvfp4.ninfer` de 19.782.432.752 bytes (18,42 GiB), SHA-256 `29bd2a543dd779e28fa6cbc4ff532447e3f861018384b3c5e4a8b98ba4b2587b` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un modelo denso de visión-lenguaje que combina atención completa con capas Gated DeltaNet, una arquitectura híbrida que reduce el coste de atención para secuencias largas. El checkpoint QUASAR se obtuvo mediante entrenamiento de cuantización consciente (QAT) en NVFP4, lo que permite representar los pesos con 4 bits manteniendo la precisión mediante escalas de bloque y divisores globales. El artefacto NInfer conserva los códigos E2M1 empaquetados, las escalas E4M3FN y los divisores FP32 de las 400 matrices lineales de texto que soporta el motor, fusionando matrices en el límite de consumo para reducir el número de padres almacenados a 256. Las matrices de control de Gated DeltaNet (in_proj_a y in_proj_b) se decodifican a BF16 y se fusionan en un único padre de control, siendo esta la única conversión numérica aplicada a las matrices de texto. Los componentes fijos (vocabulario, etc.) provienen del checkpoint BF16 oficial de Qwen3.8.
+El modelo base es Qwen3.8-27B, un transformer de 27.000 millones de parámetros cuya implementación en este artefacto corresponde a la clase `Qwen3_5ForCausalLM`. La arquitectura combina capas de atención con capas GDN (Gated Delta Network), un mecanismo de atención lineal recurrente que reduce el coste de contexto largo. Sobre ese tronco se añaden tres componentes: un codificador de visión para entradas de imagen y vídeo, una cabeza MTP para predicción multi-token y el módulo DFlash2 de decodificación especulativa.
+
+El entrenamiento del checkpoint de origen fue un proceso QAT en NVFP4 sobre Qwen3.8-27B, es decir, los pesos se adaptaron a la cuantización de 4 bits durante el ajuste en lugar de cuantizarse a posteriori. La conversión al contenedor NInfer preservó los códigos E2M1 empaquetados, las escalas de bloque E4M3FN, los divisores de peso FP32 y los divisores de activación para 400 de las 496 matrices lineales de texto del origen; la fusión de grupos compatibles con palabras de escala global idénticas bit a bit produjo los 256 padres NVFP4. El artefacto contiene 1.334 objetos (1.328 tensores y 6 recursos de frontend), con 1.513 enlaces lógicos y 844 usos de entrada. La release v3 es una migración de formato, no un nuevo checkpoint QAT: los 1.328 tensores se conservan byte a byte y no se recuantizó ningún peso. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO.
+
+La innovación técnica destacable es la integración de la decodificación especulativa en el propio artefacto: MTP acepta de 1 a 5 tokens borrador y DFlash2 de 1 a 15, con una cabeza de propuesta optimizada seleccionable mediante `--lm-head-draft`. La especulación se fija al arrancar el runtime, no por petición. Además, el decodificado con CUDA Graphs y la reutilización de prefijos compatibles están activados por defecto.
 
 ## Capacidades
 
-- Generación de texto con y sin modo *thinking* (razonamiento explícito).
-- Procesamiento multimodal: imágenes, múltiples imágenes, vídeo y mensajes mixtos de texto e imagen.
-- Decodificación especulativa MTP (Multi-Token Prediction) con cabecera de propuesta optimizada.
-- Caché KV en BF16 e INT8 con agrupación de 64 canales.
-- Decodificación con CUDA Graph y reutilización de prefijos compatibles.
-- Servidor con API compatible con OpenAI Responses Core, OpenAI Chat Completions y Anthropic Messages.
-- Ejecución mediante CLI de NInfer o servidor concurrente acotado (máximo de peticiones activas fijado en el arranque).
+- Generación de texto y razonamiento general, heredados del modelo base Qwen3.8-27B.
+- Procesamiento de imagen y vídeo: el componente Vision se activa en el servidor con el flag `--vision`.
+- Decodificación especulativa integrada mediante MTP (1-5 tokens borrador) y DFlash2 (1-15 tokens borrador), sin modelo borrador externo.
+- Predicción multi-token (MTP) como cabeza auxiliar para acelerar la generación.
+- Servido compatible con las APIs de OpenAI y Anthropic a través de `ninfer-serve`.
+- Gestión de caché KV configurable en seis formatos (BF16, INT8, FP8, NVFP4, K8V4, KVarN) para ajustar memoria y precisión.
+- Concurrencia de 1 a 8 peticiones fijada en el arranque.
+- Soporte de tool calling y de agentes multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de chat con razonamiento en local: el modo *thinking* permite respuestas explicadas paso a paso, útil para depuración de código o resolución de problemas matemáticos en entornos sin conexión.
-- Análisis de documentos con imágenes: al aceptar imágenes y vídeo, puede extraer información de capturas, diagramas o vídeos cortos en tareas de revisión de informes técnicos.
-- Servicio de API interna compatible con OpenAI/Anthropic: el servidor `ninfer-serve` traduce las peticiones a los formatos estándar, facilitando la integración con aplicaciones existentes sin cambiar el cliente.
-- Generación de código asistida por visión: el modelo base destaca en tareas de codificación agéntica; con la entrada de capturas de pantalla de errores o diagramas, puede sugerir correcciones contextuales.
-- Prototipado de aplicaciones multimodales en hardware de consumo: una RTX 5090 Laptop de 24 GB puede ejecutar el modelo con contexto útil usando KV INT8, permitiendo desarrollar y probar sin acceso a clústeres.
-- Despliegue de un asistente de productividad ofimática: el modelo base está optimizado para tareas de oficina (resúmenes, redacción, extracción de datos de tablas en imágenes), y este artefacto lo hace ejecutable en un solo GPU Blackwell.
+- Despliegue de inferencia en estación de trabajo con GPU Blackwell de consumo: el artefacto de 18,42 GiB se ejecuta en una RTX 5090 Laptop de 24 GiB, lo que permite servir un modelo de 27.000 millones en FP4 sin infraestructura de centro de datos.
+- Servicio local compatible con OpenAI y Anthropic: `ninfer-serve` expone un endpoint HTTP en `127.0.0.1:18080` que permite sustituir llamadas a APIs comerciales en herramientas existentes sin reescribir el cliente.
+- Aceleración de generación interactiva: con DFlash2 y 7 tokens borrador se reduce el número de pasos de decodificación, adecuado para asistentes de chat donde la latencia por token es crítica.
+- Procesamiento de documentos con imágenes: activando `--vision`, el modelo atiende peticiones de imagen y vídeo, útil para extracción de información de capturas, gráficos o fotogramas.
+- Prototipado de pipelines de razonamiento multi-paso con contexto medio: con `--max-context 8192` y caché INT8 se pueden encadenar conversaciones o análisis de documentos de varias páginas en una sola GPU.
+- Evaluación de técnicas de cuantización FP4 y decodificación especulativa: al conservar los códigos E2M1 y las escalas originales, el artefacto sirve como referencia reproducible para medir el impacto de MTP frente a DFlash2 y de los distintos formatos de caché KV.
+- Investigación sobre atención lineal: las 96 capas GDN del contenedor permiten estudiar el comportamiento de mecanismos recurrentes lineales en tareas de contexto largo frente a atención clásica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni comparativas con otros modelos. Se recomienda evaluar el modelo en el caso de uso concreto antes de desplegarlo en producción.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- GPU NVIDIA Blackwell con soporte FP4 (por ejemplo, RTX 5090 Laptop de 24 GB o RTX 5090 Desktop de 32 GB).
-- CUDA Toolkit 13.1 o superior.
-- VRAM: 15,31 GiB para ejecución solo texto; 16,06 GiB con MTP materializado. La memoria de contexto se añade a estas cifras. Con KV INT8, una GPU de 24 GB permite contextos útiles; una de 32 GB ofrece más margen.
-- NInfer es un motor de un solo GPU: no admite offload CPU/GPU, multi-GPU, ni servidores distribuidos.
-- Despliegue: compilar NInfer desde el commit `93d7a613` del repositorio `MirkoCovizzi/ninfer-rtx5090-laptop` (rama `feat/quasar-nvfp4-converter`), o usar el binario precompilado si está disponible.
-- El artefacto se ejecuta mediante la CLI `ninfer` o el servidor `ninfer-serve`; no es compatible con vLLM, llama.cpp, Ollama ni TGI.
+- GPU NVIDIA Blackwell con soporte FP4; validado en una RTX 5090 Laptop con 24 GiB de VRAM.
+- Sistema operativo Linux de 64 bits, CUDA Toolkit 13.1 y CMake 3.28 o superior.
+- El tamaño del artefacto (18,42 GiB) no equivale a memoria GPU residente: el backend especulativo seleccionado, el formato y la capacidad de la caché KV, la concurrencia, la visión y los CUDA Graphs modifican el consumo real.
+- Los pesos de MTP y DFlash2 no seleccionados no se cargan en memoria para otro backend.
+- Una sola GPU por proceso: NInfer no ofrece offload CPU/GPU, ejecución multi-GPU ni batching continuo preventivo a gran escala.
+- Concurrencia fijada en el arranque entre 1 y 8 peticiones.
+- Despliegue mediante el runtime NInfer v3, compilado desde el fork `ninfer-rtx5090-mobile` en el commit `b53468fae6af160c3458bbe87e157b6201a4a12b`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, al no ser un checkpoint Transformers ni un GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Formato | Parametros | Contexto | VRAM estimada | Licencia |
-|---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (original) | Safetensors BF16 | 27B | 256K | ~54 GB | Apache-2.0 |
-| QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4 | Checkpoint NVFP4 (Transformers) | 27B | 256K | No disponible | Apache-2.0 |
-| MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4-NInfer | `.ninfer` NVFP4 | 27B | 256K | 15,31 GiB (texto) | Apache-2.0 |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Formato / runtime | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3.8-27B QUASAR NVFP4 NInfer (este) | 27.000 M | no disponible (ejemplos a 4.096-8.192) | NVFP4 QAT, caché KV en 6 formatos | Apache 2.0 | `.ninfer` v3, solo NInfer | Hugging Face, 51.320 descargas |
+| QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4 | 27.000 M | no disponible | NVFP4 QAT | no disponible | checkpoint de origen | Hugging Face |
+| Qwen/Qwen3.8-27B | 27.000 M | no disponible | BF16 (presumiblemente) | no disponible | Transformers / Safetensors | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2 | 27.000 M | no disponible | no disponible | no disponible | módulo de decodificación especulativa | Hugging Face |
 
-La principal diferencia frente al modelo original es el formato de pesos y la cuantización: el artefacto NInfer reduce el uso de VRAM a menos de un tercio del BF16, a costa de requerir hardware Blackwell y el motor NInfer. Frente al checkpoint QUASAR original, este artefacto añade la integración con el motor de inferencia optimizado, incluyendo MTP y caché KV INT8, pero pierde la portabilidad a otros frameworks.
+La comparación relevante es de empaquetado más que de calidad de modelo: las tres variantes derivan del mismo Qwen3.8-27B, y este artefacto se distingue por integrar visión, MTP y DFlash2 en un solo fichero ejecutable sobre Blackwell. No se dispone de datos de rendimiento comparativo entre ellas.
 
 ## Limitaciones y advertencias
 
-- El artefacto solo funciona con NInfer; no es un checkpoint de Transformers, Safetensors, GGUF ni un formato NVFP4 genérico. No se puede cargar con bibliotecas estándar.
-- Requiere hardware NVIDIA Blackwell con soporte FP4; no es compatible con GPUs Ampere, Ada Lovelace o anteriores.
-- NInfer es de un solo GPU: no hay escalado horizontal, offload a CPU ni ejecución multi-GPU. El número de peticiones activas se fija en el arranque y no se puede cambiar dinámicamente.
-- La cuantización NVFP4 puede introducir pérdida de precisión frente a BF16, especialmente en tareas de razonamiento largo o matemáticas complejas. Se recomienda validar la calidad en el dominio de uso.
-- No se dispone de información sobre sesgos, alucinaciones o comportamiento en idiomas distintos del inglés. El modelo base Qwen3.8 es multilingüe, pero este artefacto no documenta los idiomas soportados.
-- La compilación requiere una versión concreta de NInfer (commit `93d7a613`), lo que puede dificultar la reproducibilidad si el repositorio cambia.
-- El artefacto está pensado para un perfil de hardware específico (RTX 5090); su rendimiento en otras GPUs Blackwell no está garantizado.
+- Formato no portable: el fichero `.ninfer` solo lo carga el runtime NInfer v3; no es un checkpoint Transformers, ni Safetensors, ni GGUF, ni un formato genérico de intercambio NVFP4.
+- El runtime v2 anterior no puede cargar este artefacto; la release v3 exige el runtime actualizado.
+- La release v3 es una migración de formato: no mejora la calidad del modelo. La plantilla de chat actualizada (`tools/chat_templates/qwen3_8.jinja`) puede cambiar los prompts renderizados y la aritmética nueva del runtime puede alterar las continuaciones generadas, pese a la preservación byte a byte de los pesos.
+- Hardware restringido: requiere GPU NVIDIA Blackwell con FP4 y CUDA 13.1; no funciona en generaciones anteriores ni en CPU.
+- Sin multi-GPU ni offload: la concurrencia máxima es de 8 peticiones fijadas al arrancar, lo que limita el uso en producción de alto volumen.
+- El modo especulativo se elige al arrancar y no por petición, lo que impide adaptar la profundidad de borrador al tipo de carga en caliente.
+- Idiomas soportados no documentados; no se puede garantizar cobertura multilingüe.
+- Sesgos, tasa de alucinación y comportamiento en tool calling no documentados en la información disponible.
+- Licencia Apache 2.0 declarada, que permite uso comercial, pero el autor no detalla condiciones adicionales sobre los componentes derivados de terceros (Qwen, QUASAR-QAT, z-lab).
+- La validación se realizó en una única configuración de hardware (RTX 5090 Laptop, 24 GiB); el comportamiento en otras GPU Blackwell no está verificado.
 
 ## Enlaces
 
-- Artefacto en Hugging Face: https://huggingface.co/MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4-NInfer
-- Checkpoint QUASAR de origen: https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio NInfer: https://github.com/Neroued/ninfer
-- Repositorio con el perfil QUASAR y commit de referencia: https://github.com/MirkoCovizzi/ninfer-rtx5090-laptop/pull/19
-- Documentación de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
-- Guía de Qwen3.8-27B en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
+- Modelo en Hugging Face: https://huggingface.co/MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4-NInfer
+- Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Checkpoint QAT de origen: https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
+- Módulo DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Runtime NInfer (fork móvil RTX 5090): https://github.com/MirkoCovizzi/ninfer-rtx5090-mobile
+- Commit validado del runtime: https://github.com/MirkoCovizzi/ninfer-rtx5090-mobile/commit/b53468fae6af160c3458bbe87e157b6201a4a12b
+- Manifiesto del artefacto: https://huggingface.co/MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4-NInfer/blob/main/artifact-manifest.json
+- Verificación de migración v2 a v3: https://huggingface.co/MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4-NInfer/blob/main/qwen3_8_27b_nvfp4.ninfer.upgrade.json
+- Conversión original v2: https://huggingface.co/MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4-NInfer/blob/main/qwen3_8_27b_nvfp4.v2.conversion.json
+- Paper referenciado (arXiv:2608.13966): https://arxiv.org/abs/2608.13966

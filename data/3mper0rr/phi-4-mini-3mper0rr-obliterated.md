@@ -2,87 +2,100 @@
 
 ## Resumen
 
-El modelo `3MPER0RR/Phi-4-mini-3MPER0RR-obliterated` es una modificación no oficial del modelo `Phi-4-mini-instruct` de Microsoft, publicada por el usuario 3MPER0RR en Hugging Face. El término "obliterated" en la comunidad open source suele referirse a un proceso de eliminación de capas de rechazo (refusal) o de restricciones de seguridad mediante técnicas de ablación, aunque no se aporta documentación técnica que confirme el método empleado. El modelo base, Phi-4-mini, es un modelo de lenguaje compacto de 3.8 mil millones de parámetros, entrenado con datos sintéticos y web filtrada, con una ventana de contexto de 128K tokens, destacando en tareas de razonamiento, matemáticas y generación de código.
+Phi-4-mini-3MPER0RR-obliterated es una variante modificada del modelo Phi-4-mini-instruct de Microsoft, publicada por el usuario 3MPER0RR en Hugging Face. Se trata de una version "abliterated" (o "obliterated", segun la nomenclatura del autor), es decir, un ajuste experimental que elimina o atenua los mecanismos de rechazo del modelo original para que responda a peticiones que la version base declinaria. El autor declara 40 ensayos de modificacion y presenta el artefacto como material de investigacion, sin documentacion tecnica detallada sobre el metodo aplicado.
 
-La relevancia de este modelo reside en su tamaño reducido (3.8B parámetros) combinado con una capacidad de contexto larga, lo que lo hace atractivo para despliegues en entornos con recursos limitados. Sin embargo, al tratarse de una variante sin documentación oficial, su comportamiento exacto, el proceso de entrenamiento o fine-tuning y las garantías de calidad no están verificados. La licencia MIT permite uso comercial sin restricciones, pero el usuario debe asumir la responsabilidad de su uso.
+El modelo conserva la arquitectura del Phi-4-mini-instruct original: un transformer decoder-only de aproximadamente 3.836 millones de parametros (3,8B), con tokenizador phi3 y capacidades de generacion de texto y conversacion. El repositorio ocupa 7,7 GB en formato safetensors, lo que corresponde a pesos en precision alta (probablemente bf16). No se documentan en la informacion disponible la longitud de contexto, los idiomas soportados ni los detalles del proceso de entrenamiento o modificacion.
 
-El repositorio contiene únicamente los pesos en formato safetensors (7.7 GB) y una model card mínima con la licencia, sin información sobre el proceso de modificación, los datos de entrenamiento o las capacidades específicas de la variante. Por tanto, esta ficha se basa en las características conocidas del modelo original Phi-4-mini, indicando explícitamente los datos no disponibles de la versión modificada.
+Su relevancia es limitada y de caracter experimental: sirve como caso de estudio sobre tecnicas de abliteration aplicadas a modelos pequenos de la familia Phi-4, y como ejemplo de los riesgos de seguridad y gobernanza que introduce la redistribucion de pesos sin filtros de seguridad. No es un modelo recomendado para produccion ni para aplicaciones orientadas al usuario final.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (basado en Phi-4-mini) |
-| Parametros totales | 3.836.021.760 (3.8B) |
-| Parametros activos | no disponible (no se especifica si es MoE; el modelo base es denso) |
-| Longitud de contexto | no disponible (el modelo base Phi-4-mini soporta 128K tokens, pero no se confirma en esta variante) |
-| Tipos de cuantizacion | no disponible (el repositorio solo contiene safetensors sin cuantizar) |
-| Idiomas soportados | no disponible (el modelo base soporta principalmente inglés, aunque puede generalizar a otros idiomas) |
-| Licencia | MIT |
+| Arquitectura | Transformer decoder-only (familia Phi-3/Phi-4-mini, codigo custom `phi3`) |
+| Parametros totales | 3.836.021.760 (3,8B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (repo en safetensors; se asume compatible con cuantizacion estandar tipo GGUF/AWQ, pero no se documenta) |
+| Idiomas soportados | no disponible |
+| Licencia | MIT (heredada del modelo base, con atribucion a Microsoft) |
 | Formato de pesos | safetensors |
+| Modelo base | microsoft/Phi-4-mini-instruct |
+| Tamano del repositorio | 7,7 GB |
+| Tokenizador | phi3 (segun tag del repositorio) |
+| Pipeline | text-generation |
+| Fecha de creacion | 2026-08-30 |
+| Ultima actualizacion | 2026-11-02 |
+| Descargas | 1.353 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Phi-4-mini es un transformer decoder-only con atención causal, desarrollado por Microsoft. Pertenece a la familia Phi-4, que se caracteriza por entrenarse con una combinación de datos sintéticos de alta calidad y datos web filtrados, priorizando contenido denso en razonamiento. El modelo original tiene una arquitectura similar a Phi-3, con un vocabulario ampliado y una ventana de contexto de 128K tokens, lograda mediante técnicas de interpolación de posición rotatoria (RoPE). No se conocen detalles sobre el entrenamiento específico de la variante "obliterated": no se indica si se realizó un fine-tuning adicional, una ablación de capas de rechazo, o un ajuste por DPO/RLHF. La ausencia de documentación en la model card impide conocer el dataset utilizado, el número de tokens de entrenamiento o cualquier innovación técnica aplicada.
+La arquitectura subyacente es la de Phi-4-mini-instruct de Microsoft: un transformer decoder-only denso de 3,8B parametros con tokenizador phi3 y atencion estandar (no se documenta atencion lineal ni mecanismos hibridos en la informacion disponible). El modelo base fue entrenado por Microsoft con un pipeline que incluye datos sinteticos y filtrados de alta calidad, seguido de ajuste por instrucciones; sin embargo, los detalles concretos de ese entrenamiento no se reproducen en la model card de esta variante.
+
+Sobre el proceso de modificacion, la model card del autor es extremadamente escueta: indica "experimental modified / abliterated version", "Trials: 40" y "Status: Tested and saved". No se especifica la tecnica exacta (abliteration por direccion de rechazo, fine-tuning con datos sin censura, merging de capas, etc.), ni el numero de tokens de ajuste, ni si hubo RLHF, DPO o cualquier otra fase. Tampoco se documenta la composicion del dataset utilizado ni se publican evaluaciones de seguridad o de calidad tras la modificacion. Esta ausencia de trazabilidad es, en si misma, un dato relevante para cualquier evaluacion tecnica.
 
 ## Capacidades
 
-Dado que no se dispone de información específica de la variante, las capacidades listadas se refieren al modelo base Phi-4-mini, y no están confirmadas para esta modificación:
-
-- Generación de texto y razonamiento complejo: el modelo base destaca en tareas que requieren inferencia lógica y resolución de problemas matemáticos.
-- Generación de código: Phi-4-mini muestra un rendimiento sólido en benchmarks de programación como HumanEval y MBPP.
-- Comprensión de contexto largo: con 128K tokens de ventana, puede procesar documentos extensos y mantener coherencia en conversaciones largas.
-- Soporte de tool calling y function calling: el modelo instruct incluye entrenamiento para invocar funciones externas, aunque no se verifica en esta variante.
-- Capacidades multilingües: limitadas principalmente al inglés; no hay datos sobre otros idiomas.
-- No se confirma la existencia de modo "thinking" ni capacidades multimodales (visión, audio) en esta variante.
+- Generacion de texto y conversacion multi-turno, heredadas del modelo base Phi-4-mini-instruct.
+- Razonamiento basico y respuesta a instrucciones, presumiblemente con menor tasa de rechazos que el modelo original.
+- Capacidad de generar contenido que el modelo base filtraria, como consecuencia directa de la modificacion abliterated.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible para esta variante, aunque el modelo base lo soporta.
+- Capacidades multilingues: no documentadas en esta variante; el modelo base declara soporte multilingue, pero no se detalla aqui.
+- Modo "thinking" o razonamiento extendido: no disponible.
+- Vision o audio: no disponible; es un modelo exclusivamente de texto.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: gracias a su ventana de contexto larga (128K en el modelo base), el modelo puede gestionar conversaciones multi-turno con historial extenso. Sin embargo, al carecer de documentación sobre la variante, se recomienda validar su comportamiento en este escenario antes de producción.
-- Generación de código asistida: el modelo base tiene buen rendimiento en tareas de programación, por lo que podría integrarse en editores o pipelines de CI/CD para autocompletar o revisar código. La variante "obliterated" podría haber alterado estas capacidades.
-- Resumen de documentos largos: su contexto amplio permite resumir informes, artículos o libros completos de una sola pasada.
-- Análisis de datos y razonamiento matemático: útil para aplicaciones de análisis financiero, científico o educativo donde se requiera resolver problemas paso a paso.
-- Prototipado rápido de aplicaciones de NLP: su tamaño compacto (3.8B) permite ejecutarlo en GPUs de consumo medio, facilitando pruebas de concepto.
-- Investigación académica sobre alineación y seguridad: al ser una variante sin restricciones de rechazo (si el "obliterated" implica eso), puede servir para estudiar los efectos de la ablación en el comportamiento del modelo, aunque esto es especulativo.
+- Investigacion sobre tecnicas de abliteration: el modelo sirve como artefacto de estudio para comparar la tasa de rechazo y la coherencia antes y despues de la modificacion, en un entorno controlado y aislado.
+- Evaluacion de seguridad de modelos: util para probar sistemas de moderacion y clasificadores de contenido frente a un modelo que deliberadamente carece de filtros, midiendo la robustez de las defensas externas.
+- Pruebas de red teaming en laboratorio: permite generar respuestas que un modelo alineado rechazaria, para construir conjuntos de datos de evaluacion de guardrails.
+- Experimentos academicos de interpretabilidad: analizar que direcciones del espacio de activaciones se ven alteradas por el proceso de abliteration en un modelo de 3,8B.
+- Benchmarking de pipelines de inferencia locales: al ser un modelo pequeno en safetensors, sirve para medir throughput y latencia en vLLM, llama.cpp u Ollama, aunque sin garantias de calidad.
+- Docencia sobre riesgos de la cadena de suministro de modelos: caso practico de como un fine-tune no documentado puede heredar la licencia MIT del original y circular sin auditoria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo base Phi-4-mini reporta en su documentación oficial resultados superiores a otros modelos de tamaño similar (por ejemplo, supera a Llama-3.2-3B y Qwen-2.5-3B en tareas de matemáticas y código), pero no hay datos que confirmen que la variante "obliterated" mantenga o modifique ese rendimiento. Se recomienda consultar los benchmarks del modelo original en la página de Microsoft o en el paper arXiv:2503.01743 para referencia, aunque no son aplicables directamente a esta modificación.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 3.8B parámetros en precisión FP16, el modelo requiere aproximadamente 7.6 GB de VRAM solo para los pesos. Con cuantización a 4 bits (si se genera), se reduciría a unos 2 GB, pero no se proporcionan archivos cuantizados en el repositorio.
-- GPU recomendadas: para FP16, una GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3070, RTX 4060 Ti, A10) es suficiente. Para cuantización 4-bit, una GPU de 4 GB (como RTX 3050) podría ser suficiente, pero requiere generar los archivos GGUF o AWQ manualmente.
-- Compatibilidad con GPU de consumo: sí, cabe en GPUs de gama media y alta de consumo.
-- Opciones de despliegue: al disponer de pesos en safetensors, se puede utilizar con frameworks como vLLM, TGI, llama.cpp (convirtiendo a GGUF), o a través de Ollama (si se crea un Modelfile). No hay integraciones preconfiguradas.
-- Latencia y throughput: no hay datos medidos. Para un modelo de 3.8B en una GPU moderna (RTX 4090), se espera una velocidad de generación de entre 40 y 80 tokens por segundo con FP16, pero esto es una estimación general no verificada.
+- VRAM estimada para inferencia en bf16/fp16: aproximadamente 7,7 GB solo para pesos, mas overhead de KV cache y activaciones; en la practica, entre 8 y 10 GB para contexto moderado.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 4 GB.
+- VRAM estimada en cuantizacion de 4 bits: alrededor de 2,5 a 3 GB.
+- GPU recomendadas: A100, H100 o L40S para despliegue en servidor; RTX 4090, RTX 4080 o RTX 3090 para workstation.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en bf16 y en tarjetas con 4-6 GB en cuantizacion de 4 bits (RTX 3060, RTX 4060, etc.).
+- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama y transformers con `trust_remote_code=True` (el repositorio usa codigo custom `phi3`).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Phi-4-mini-instruct (original) | 3.8B | 128K | MIT | Hugging Face oficial |
-| 3MPER0RR/Phi-4-mini-3MPER0RR-obliterated | 3.8B | no disponible | MIT | Repositorio no oficial |
-| Llama-3.2-3B-Instruct | 3.2B | 128K (con interpolación) | Llama 3.2 Community License | Hugging Face oficial |
-| Qwen-2.5-3B-Instruct | 3.1B | 32K | Apache 2.0 | Hugging Face oficial |
+| 3MPER0RR/Phi-4-mini-3MPER0RR-obliterated | 3,8B | no disponible | MIT | Variante abliterated sin documentacion tecnica |
+| microsoft/Phi-4-mini-instruct | 3,8B | no disponible | MIT | Modelo base, alineado y documentado por Microsoft |
+| Meta Llama 3.2 3B Instruct | 3,2B | 128K (segun ficha oficial) | Llama 3.2 Community License | Alternativa de tamano similar con licencia restrictiva |
+| Qwen2.5-3B-Instruct | 3,1B | 32K (segun ficha oficial) | Apache 2.0 | Alternativa de tamano similar con licencia permisiva |
 
-La comparativa se basa en el modelo base, ya que la variante no aporta datos propios. El rendimiento relativo entre estos modelos depende de la tarea: Phi-4-mini suele superar a Llama-3.2-3B y Qwen-2.5-3B en razonamiento y código, según el paper original. No obstante, la modificación "obliterated" podría degradar o alterar estas capacidades, por lo que se recomienda evaluar directamente.
+La comparativa de rendimiento no puede completarse porque no hay benchmarks publicados para esta variante. Frente al modelo base, la diferencia principal es la ausencia de filtros de rechazo, no una mejora de capacidad.
 
 ## Limitaciones y advertencias
 
-- Falta de documentación: la model card no incluye información sobre el proceso de modificación, los datos utilizados ni las diferencias con el modelo base. Esto impide conocer los sesgos o riesgos introducidos.
-- Alucinación: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en temas especializados.
-- Sesgos del modelo base: Phi-4-mini hereda sesgos de sus datos de entrenamiento, y la modificación "obliterated" podría haber eliminado capas de seguridad que mitigaban ciertos sesgos o contenidos dañinos.
-- Riesgo de uso indebido: si la modificación elimina los rechazos de seguridad, el modelo podría generar contenido no deseado (violento, ilegal, etc.) sin filtros. El usuario es responsable de su uso.
-- Sin garantías de rendimiento: al no haber benchmarks ni validación, no se puede asegurar que el modelo funcione correctamente en tareas específicas.
-- Compatibilidad: el repositorio usa etiquetas `custom_code` y `phi3`; puede requerir código personalizado para cargar el modelo, lo que añade una capa de complejidad técnica.
-- Idiomas: no se especifican idiomas soportados; probablemente el rendimiento sea óptimo solo en inglés.
+- La modificacion abliterated elimina o reduce los mecanismos de rechazo, por lo que el modelo puede generar contenido danino, ilegal o sensible sin advertencia.
+- No hay documentacion del proceso de modificacion, del dataset ni de las 40 pruebas mencionadas; la reproducibilidad es nula.
+- Riesgo elevado de alucinacion y de degradacion de la coherencia tras el proceso de abliteration, aunque no se cuantifica en la informacion disponible.
+- No se documentan sesgos conocidos especificos de esta variante; hereda los del modelo base, no auditados aqui.
+- Longitud de contexto e idiomas soportados no documentados; no se debe asumir el contexto del modelo base sin verificacion.
+- Licencia MIT heredada: permite uso comercial, pero el autor no ofrece garantias y la responsabilidad legal del uso recae en el desplegador.
+- Uso no recomendado en produccion, atencion al cliente ni aplicaciones orientadas a usuarios finales sin guardrails externos robustos.
+- Requiere `trust_remote_code=True` por el codigo custom `phi3`, lo que implica ejecutar codigo no auditado del repositorio.
+- El modelo tiene 0 likes y un volumen de descargas moderado (1.353), lo que sugiere escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-obliterated
-- Modelo base Phi-4-mini-instruct: https://huggingface.co/microsoft/Phi-4-mini-instruct
-- Modelo base Phi-4 (no mini): https://huggingface.co/microsoft/phi-4
-- Página oficial de Microsoft Foundry Labs: https://labs.ai.azure.com/innovations/phi-4/
-- Paper de Phi-4-Mini y Phi-4-Multimodal (arXiv): https://arxiv.org/pdf/2503.01743v1
-- Página de Ollama para phi4-mini: https://ollama.com/library/phi4-mini
+- Modelo en Hugging Face: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-obliterated
+- Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
+- Licencia referenciada en la model card: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated/blob/main/License
+- Aviso de investigacion referenciado en la model card: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated/blob/main/Disclaimer.md
+- Paper de Phi-4 (familia): https://arxiv.org/abs/2412.08905
+- Repositorio de transformers (soporte phi3): https://github.com/huggingface/transformers

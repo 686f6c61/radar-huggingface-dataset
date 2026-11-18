@@ -2,98 +2,93 @@
 
 ## Resumen
 
-LFM3-1.7B-MLX-bf16 es la versión en formato MLX y precisión BF16 (sin cuantizar) del modelo LFM3-1.7B de Liquid AI, adaptada para su ejecución nativa en chips Apple Silicon (M1, M2, M3, M4). El modelo base, LFM3-1.7B, pertenece a la familia LFM (Liquid Foundation Models) de Liquid AI, caracterizada por arquitecturas basadas en unidades dinámicas lineales en lugar de transformers convencionales, orientadas a un despliegue eficiente en dispositivos de borde y portátiles.
+LFM3-1.7B-MLX-bf16 es la conversión a formato MLX en precisión BF16 del modelo LFM3-1.7B desarrollado por Liquid AI, una empresa surgida del MIT especializada en modelos de lenguaje de arquitectura no convencional. Este repositorio concreto no es un modelo nuevo, sino una distribución de los pesos originales empaquetada específicamente para su ejecución sobre Apple Silicon mediante la librería MLX, lo que permite inferencia nativa en chips de la serie M de Apple sin necesidad de CUDA.
 
-Este repositorio resuelve un problema concreto: permitir a desarrolladores del ecosistema Apple (Swift, Python con MLX) ejecutar un modelo de lenguaje conversacional multilingüe directamente en Mac, sin necesidad de GPU dedicada ni servidor remoto. Con 1.728.801.536 parámetros y un tamaño de pesos de 3,46 GB, es suficientemente ligero para funcionar en la memoria unificada de prácticamente cualquier Mac moderno.
+El modelo subyacente, LFM3-1.7B, cuenta con 1.728.801.536 parámetros totales (aproximadamente 1,73 mil millones) y está etiquetado por el autor con la familia "liquid" y "lfm3", lo que lo sitúa en la tercera generación de la saga Liquid Foundation Models. Soporta generación de texto y conversación en 16 idiomas, incluyendo castellano, y dispone de un modo de razonamiento ("thinking") que se activa explícitamente en tiempo de inferencia.
 
-Su relevancia actual radica en la tendencia hacia la inferencia on-device: Liquid AI apuesta por modelos pequeños pero capaces, con soporte oficial de MLX y documentación de despliegue en dispositivo. Es una opción interesante para asistentes locales, prototipado y aplicaciones que requieren privacidad de datos, aunque el soporte en mlx-lm aún estaba en desarrollo en el momento de publicación de la model card.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de 1,7B parámetros en hardware de consumo Apple con pesos sin cuantizar (BF16, 3,46 GB), manteniendo el modo de razonamiento opcional y una ventana de contexto amplia según la configuración de generación indicada por el autor (hasta 16.384 tokens de salida en el ejemplo de uso). La licencia es propietaria (LFM Open License v1.0, identificada como "lfm1.0"), lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM (Liquid Foundation Models); detalles en la model card del modelo base (no disponible en esta ficha) |
-| Parametros totales | 1.728.801.536 (~1,73 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible en esta model card (el ejemplo de generación usa hasta 16.384 tokens de salida) |
-| Tipos de cuantizacion | BF16 sin cuantizar (esta variante); el modelo base puede tener otras variantes |
+| Arquitectura | No disponible en la informacion proporcionada (familia "liquid", LFM3; detalles en la model card del modelo base) |
+| Parametros totales | 1.728.801.536 (~1,73B) |
+| Parametros activos | No disponible (no se indica que sea MoE) |
+| Longitud de contexto | No disponible de forma explícita; el ejemplo de uso fija `--max-tokens 16384` para la generación |
+| Tipos de cuantizacion | Este repositorio es BF16 sin cuantizar; el modelo base dispone de variantes cuantizadas (tag `base_model:quantized`) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
-| Licencia | LFM1.0 (licencia propia "other" de Liquid AI) |
-| Formato de pesos | safetensors (formato MLX) |
+| Licencia | lfm1.0 (LFM Open License v1.0, licencia propietaria "other") |
+| Formato de pesos | safetensors (MLX, BF16); 3,46 GB de pesos, 3,5 GB de repositorio |
 
 ## Arquitectura y entrenamiento
 
-Esta variante es una conversión a formato MLX en precisión BF16 del modelo base LiquidAI/LFM3-1.7B; la arquitectura subyacente es la de la familia LFM3 de Liquid AI. La model card de este repositorio remite explícitamente a la model card del modelo original para los detalles de arquitectura y uso, por lo que los datos específicos de la arquitectura (número de capas, dimensiones, mecanismos de atención) no están disponibles en la información proporcionada.
+La información disponible no detalla la arquitectura interna del modelo base LFM3-1.7B más allá de las etiquetas del autor ("liquid", "lfm3"), que remiten a la familia de Liquid Foundation Models de Liquid AI. La model card de esta conversión MLX delega explícitamente los detalles de arquitectura y entrenamiento a la model card del modelo original (LiquidAI/LFM3-1.7B), por lo que no se dispone aquí de datos sobre número de tokens de entrenamiento, composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-Tampoco se detallan en esta model card los datos de entrenamiento (número de tokens, composición del corpus) ni el proceso de alineación (RLHF, DPO). Lo que sí se indica es la relación con el modelo base (`base_model: LiquidAI/LFM3-1.7B`, relación `quantized`), es decir, se trata de un reempaquetado de pesos para el framework MLX de Apple, sin reentrenamiento ni modificación de los pesos originales, únicamente conversión de formato y precisión.
+Sí se documenta una innovación operativa relevante: el modelo incorpora un modo de razonamiento ("thinking") que permanece desactivado por defecto y se habilita mediante el flag `--enable-thinking` en MLX-VLM. El autor recomienda parámetros de muestreo distintos según la tarea: para uso general, temperatura 0,1, top-k 50 y penalización por repetición 1,1; para matemáticas y ciencia, temperatura 1,0, top-p 0,95, top-k 20 y penalización por repetición 1,0. Esta separación sugiere un comportamiento de generación diferenciado entre modo conversacional y modo razonamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline `text-generation`, etiqueta `conversational`).
-- Soporte multilingüe en 16 idiomas, incluido el castellano, árabe, chino, japonés, coreano, hindi, ruso, polaco y lenguas del sudeste asiático.
-- Ejecución nativa en Apple Silicon mediante MLX, con generación desde línea de comandos (`mlx_lm.generate`) o desde Python.
-- Configuraciones de muestreo recomendadas según tarea: `--temp 0.1 --top-k 50` para uso general y `--temp 1.0 --top-p 0.95 --top-k 20` para matemáticas y ciencias.
-- Generación de hasta 16.384 tokens de salida en el ejemplo documentado.
-- No se documentan en esta model card capacidades de visión, audio, tool calling ni thinking mode.
+- Generación de texto y conversación multi-turno (pipeline `text-generation`, tag `conversational`).
+- Modo de razonamiento opcional ("thinking"), activable en inferencia y desactivado por defecto.
+- Razonamiento matemático y científico, con parámetros de muestreo recomendados específicamente para estas tareas.
+- Soporte multilingüe en 16 idiomas: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
+- Ejecución nativa en Apple Silicon mediante MLX (MLX-VLM ≥ 0.7.11).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponible en la información proporcionada (aunque el ejemplo de uso emplea MLX-VLM, no se confirma modalidad visual).
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: el modelo se ejecuta íntegramente en la memoria unificada de Apple Silicon, lo que permite construir chatbots que procesan datos de usuario sin enviarlos a servicios externos, ideal para entornos con requisitos de privacidad.
-- Aplicaciones multilingües en dispositivo: con soporte de 16 idiomas, es adecuado para apps de escritorio que atienden usuarios en castellano, inglés, chino, japonés u otras lenguas cubiertas sin cambiar de modelo.
-- Prototipado rápido de LLM en entornos Apple: la integración con mlx-lm permite probar prompts y pipelines de generación desde la terminal o Python sin infraestructura adicional.
-- Generación de texto en tareas de matemáticas y ciencias: la model card recomienda parámetros de muestreo específicos (`--temp 1.0 --top-p 0.95 --top-k 20`) para estos dominios, señal de que se han ajustado para ese uso.
-- Generaciones largas: el ejemplo documentado usa `--max-tokens 16384`, lo que lo hace apto para redacción de documentos extensos o resúmenes largos en local.
-- Integración en apps nativas de macOS/iOS: el formato MLX está pensado para el ecosistema Apple, por lo que encaja en aplicaciones distribuidas que necesitan un LLM embebido sin dependencias de servidor.
-- Edge AI y despliegue on-device: con 3,46 GB de pesos, cabe en la memoria unificada de portátiles Mac con 8 GB de RAM, útil para automatización local de tareas de texto.
+- Asistente conversacional local en Mac: el modelo puede ejecutarse íntegramente en un equipo Apple Silicon con MLX-VLM, sin conexión a la nube, gestionando diálogos multi-turno con los pesos BF16 de 3,46 GB cargados en memoria unificada.
+- Razonamiento matemático y científico asistido: activando `--enable-thinking` y los parámetros de muestreo recomendados (temperatura 1,0, top-p 0,95, top-k 20), el modelo está pensado para resolver problemas paso a paso en entornos de investigación o docencia.
+- Prototipado rápido de aplicaciones de IA en macOS: al no requerir GPU NVIDIA ni CUDA, permite a desarrolladores validar flujos de generación de texto en portátiles Apple antes de migrar a infraestructura de servidor.
+- Procesamiento multilingüe: con 16 idiomas soportados, es adecuado para tareas de traducción, resumen o generación en español, francés, alemán, portugués, árabe, chino, japonés, entre otros, en un único modelo de 1,7B.
+- Generación de texto con control de estilo: los parámetros de muestreo diferenciados permiten alternar entre salidas deterministas (temperatura 0,1) para respuestas factuales y salidas más exploratorias para tareas creativas.
+- Evaluación comparativa de modelos pequeños: sirve como referencia de la familia LFM3 para benchmarking interno frente a otros modelos de ~1,7B, aprovechando su formato MLX para pruebas reproducibles en hardware de consumo.
+- Despliegue en entornos con restricciones de privacidad: al ejecutarse localmente en Apple Silicon, los datos no salen del dispositivo, lo que encaja en escenarios con requisitos de confidencialidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Para evaluaciones del modelo base, consultar la model card de LiquidAI/LFM3-1.7B y el blog de Liquid AI enlazados más abajo.
+No se han publicado resultados de benchmarks en la información disponible. La model card de esta conversión MLX no incluye métricas (MMLU, HumanEval, GSM8K u otras) y remite a la model card del modelo base, cuyos datos no forman parte de la información proporcionada.
 
 ## Requisitos de hardware
 
-- Los pesos ocupan 3,46 GB en BF16; para inferencia cómoda se recomienda disponer de al menos 6-8 GB de memoria unificada (el modelo está diseñado para Apple Silicon, no para GPU NVIDIA).
-- Compatible con cualquier Mac con chip Apple Silicon (M1, M2, M3, M4) que disponga de memoria suficiente; no requiere GPU dedicada.
-- No aplica a consumer GPU NVIDIA/AMD en este formato: MLX es exclusivo del ecosistema Apple. Para otras plataformas, usar el modelo base LiquidAI/LFM3-1.7B.
-- Despliegue mediante el framework MLX y la librería mlx-lm:
-
-```bash
-pip install mlx-lm
-mlx_lm.generate --model LiquidAI/LFM3-1.7B-MLX-bf16 \
-  --prompt "What is the capital of Australia?" \
-  --temp 0.1 --top-k 50 --max-tokens 16384
-```
-
-- Nota importante: en el momento de publicación de la model card, el soporte de LFM3 en mlx-lm estaba en desarrollo y pendiente de una versión estable; la model card se actualizará cuando haya una release compatible.
-- En Python, la penalización por repetición no está disponible como flag de CLI; debe pasarse `make_logits_processors(repetition_penalty=1.1)` a la función `generate`.
-- Latencia y throughput: no disponible (no se publican cifras de tokens/segundo).
+- VRAM / memoria unificada: los pesos BF16 ocupan 3,46 GB; se necesita memoria adicional para el contexto KV, por lo que se recomienda un mínimo de 8 GB de memoria unificada en Apple Silicon.
+- GPU recomendadas: chips Apple Silicon (serie M) compatibles con MLX; no se especifican modelos concretos en la información disponible.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con MLX; no se documenta soporte para GPUs NVIDIA en este repositorio (requeriría otras variantes del modelo base).
+- Opciones de despliegue: MLX-VLM ≥ 0.7.11 mediante `python -m mlx_vlm.generate`; el soporte en mlx-lm está en revisión (PR ml-explore/mlx-lm#2016), por lo que no hay release de mlx-lm que cargue LFM3 todavía. Otras opciones (vLLM, llama.cpp, Ollama, TGI) no están documentadas para esta conversión.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato/plataforma | Idiomas | Licencia |
-|---|---|---|---|---|
-| LFM3-1.7B-MLX-bf16 (este modelo) | 1,73 B | MLX BF16, Apple Silicon | 16 | LFM1.0 (propietaria) |
-| LFM3-1.7B (modelo base) | 1,73 B | Pesos originales, multiplataforma | 16 | LFM1.0 (propietaria) |
-| Qwen3-1.7B | 1,7 B | safetensors/GGUF, multiplataforma | ~100 | Apache 2.0 |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / plataforma |
+|---|---|---|---|---|---|
+| LFM3-1.7B-MLX-bf16 | ~1,73B | No disponible (ejemplo con 16.384 tokens de salida) | 16 | lfm1.0 (propietaria) | MLX BF16 (Apple Silicon) |
+| LFM3-1.7B (base) | ~1,73B | No disponible | 16 | lfm1.0 | safetensors, variantes cuantizadas |
+| Alternativas de ~1,7B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-Nota: los datos de Qwen3-1.7B se incluyen como referencia de categoría (modelo pequeño conversacional multilingüe); su rendimiento frente a LFM3-1.7B no está documentado en la información disponible. No hay más comparables publicados en los datos proporcionados.
+No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos comparables de otros fabricantes, por lo que la comparativa cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia LFM1.0: es una licencia propia ("other") de Liquid AI, no una licencia abierta estándar; conviene revisar las condiciones de uso comercial en el archivo LICENSE antes de desplegar en producción.
-- Soporte en mlx-lm incompleto: en el momento de la model card, el soporte de LFM3 estaba en desarrollo, por lo que puede requerir instalar desde la rama de desarrollo o esperar una release oficial.
-- Sin penalización de repetición desde la línea de comandos: hay que aplicarla programáticamente en Python, lo que puede afectar a la calidad de generaciones largas si no se configura.
-- La model card no documenta benchmarks, contexto máximo, capacidades de tool calling ni riesgos de alucinación específicos: no disponible en la información proporcionada.
-- Restringido al ecosistema Apple Silicon por el formato MLX; para despliegues en servidores Linux/GPU NVIDIA hay que usar el modelo base.
-- Como todo modelo de lenguaje de pequeño tamaño, cabe esperar limitaciones en razonamiento complejo y riesgo de alucinación, aunque la magnitud concreta no está cuantificada en los datos disponibles.
+- Licencia propietaria lfm1.0: no es una licencia open source; es necesario revisar los términos del archivo LICENSE antes de cualquier uso comercial.
+- Sesgos conocidos: no documentados en la información proporcionada; al ser un modelo entrenado con datos web, es previsible que herede sesgos, pero no hay evidencia específica disponible.
+- Riesgo de alucinación: no cuantificado; como modelo de 1,7B parámetros, su fiabilidad factual es limitada en comparación con modelos de mayor tamaño.
+- Limitaciones de contexto e idioma: la longitud de contexto no se especifica explícitamente; aunque soporta 16 idiomas, no se detalla el nivel de calidad por idioma.
+- Restricciones de plataforma: esta conversión está pensada exclusivamente para Apple Silicon con MLX-VLM ≥ 0.7.11; mlx-lm aún no la soporta en release estable.
+- Modo de razonamiento desactivado por defecto: requiere el flag `--enable-thinking`; sin él, el rendimiento en matemáticas y ciencia puede ser inferior al esperado.
+- Parámetros de muestreo sensibles a la tarea: usar los valores incorrectos (por ejemplo, temperatura 0,1 en matemáticas) puede degradar la calidad de las respuestas.
+- En producción: al ser una conversión de pesos y no un modelo nuevo, conviene validar el comportamiento frente al modelo base antes de desplegar.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-bf16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- API de Liquid AI: https://console.liquid.ai/dashboard
+- Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3
+- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
+- Guía de despliegue en MLX: https://docs.liquid.ai/deployment/on-device/mlx
+- Consola / API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- Documentación: https://docs.liquid.ai/lfm/getting-started/welcome
-- Blog de LFM3: https://www.liquid.ai/blog/lfm3
-- Guía MLX de Liquid AI: https://docs.liquid.ai/deployment/on-device/mlx
-- Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm
+- Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm
+- Pull request de soporte LFM3 en mlx-lm: https://github.com/ml-explore/mlx-lm/pull/2016

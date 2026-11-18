@@ -76,7 +76,7 @@
     "imatrix"
   ],
   "likes": 12,
-  "downloads_30d": 8720,
+  "downloads_30d": 9760,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -96,31 +96,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "NFL.com | Official Site of the National Football League",
-      "url": "https://www.nfl.com/",
-      "snippet": "Jul 30, 2007 · The official source for NFL news, video highlights, game-day coverage, schedules, stats, scores and more."
-    },
-    {
-      "title": "2026 NFL Division Standings",
-      "url": "https://www.nfl.com/standings/",
-      "snippet": "See the latest NFL Standings by Division, Conference and League. Find current or past season NFL standings by team."
-    },
-    {
-      "title": "NGS | NFL Next Gen Stats",
-      "url": "https://nextgenstats.nfl.com/",
-      "snippet": "NFL’s Next Gen Stats captures real time location data, speed and acceleration for every player, every play on every inch of the field. …"
-    },
-    {
-      "title": "NFL Rulebook – NFL",
-      "url": "https://support.nfl.com/hc/en-us/articles/35869773487764-NFL-Rulebook",
-      "snippet": "NFL Fantasy Football League Migration to ESPN Fantasy Football - Frequently Asked Questions"
-    },
-    {
-      "title": "Find a Youth Football League Near You | NFL Play Football | NFL …",
-      "url": "https://playfootball.nfl.com/find-a-league/",
-      "snippet": "Get in the game! Use NFL Play Football's league locator to find a youth tackle football or flag football league near you."
-    }
-  ]
+  "sources": []
 }

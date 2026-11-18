@@ -86,8 +86,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 5,
-  "downloads_30d": 7112,
+  "likes": 6,
+  "downloads_30d": 7092,
   "trending_score": 0,
   "parameters": 307531778,
   "parameters_human": "307.5M",
@@ -108,31 +108,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Horizons Le parti - Édouard Philippe",
-      "url": "https://horizonsleparti.fr/",
-      "snippet": "Participez à construire une nouvelle offre politique avec Edouard Philippe ! Vous partagez nos valeurs ? Rejoignez le parti Horizons !Read more"
-    },
-    {
-      "title": "Meta Horizon",
-      "url": "https://horizon.meta.com/",
-      "snippet": "Step into a universe of community created worlds, where you can play, explore, and connect with friends. Available on iOS, Android …Read more"
-    },
-    {
-      "title": "Horizon (video game series) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Horizon_(video_game_series)",
-      "snippet": "The franchise consists of two main games, Horizon Zero Dawn (2017) and Horizon Forbidden West (2022). The series also includes …Read more"
-    },
-    {
-      "title": "Meta Horizon",
-      "url": "https://horizon.meta.com/?locale=fr_FR",
-      "snippet": "Découvrez un ensemble d’univers créés par la communauté, où vous pouvez jouer, explorer et communiquer avec vos ami(e)s. …Read more"
-    },
-    {
-      "title": "Horizon Europe - Research and innovation - European Commission",
-      "url": "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en",
-      "snippet": "Horizon Europe supports European partnerships in which the EU, national authorities and/or the private sector jointly commit to …Read more"
-    }
-  ]
+  "sources": []
 }

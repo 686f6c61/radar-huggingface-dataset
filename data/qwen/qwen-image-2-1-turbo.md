@@ -2,106 +2,93 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Turbo es un checkpoint acelerado de Qwen-Image-2.1, el modelo de generación y edición de imágenes de la familia Qwen desarrollada por Alibaba. Emplea la misma arquitectura de generación visual de 7B del modelo base (~7,1 mil millones de parámetros contabilizados en los safetensors del repositorio) y está diseñado para producir imágenes con tan solo 8 pasos de denoising, con CFG=1 por defecto, en lugar de los esquemas de muestreo más largos habituales en modelos de difusión.
+Qwen-Image-2.1-Turbo es un checkpoint acelerado de Qwen-Image-2.1, el modelo de generación y edición de imágenes desarrollado por el equipo Qwen (Alibaba). Mantiene la misma arquitectura de generación visual de 7B parámetros que el modelo base, pero incorpora un esquema de muestreo optimizado que reduce el proceso de difusión a solo 8 pasos de denoising, lo que lo hace notablemente más rápido en inferencia sin necesidad de reconfigurar el scheduler manualmente.
 
-El checkpoint se distribuye en formato safetensors y se carga directamente con `QwenImage21Pipeline` de Diffusers, sin necesidad de configurar manualmente el scheduler, ya que incluye su propio calendario de muestreo recomendado. Incorpora además caché de prefijos KV, que reutiliza el contexto de texto y de la imagen de referencia entre pasos de denoising, reduciendo el cómputo redundante. Cubre tanto generación texto-a-imagen como edición de imágenes a partir de una referencia.
+El modelo está pensado para tareas de text-to-image e image-editing, y se carga directamente con `QwenImage21Pipeline` en Diffusers. Incluye su propio calendario de sigmas recomendado, usa CFG=1 por defecto y aprovecha el prefix KV caching para reutilizar el contexto de texto e imagen de referencia entre pasos de denoising, lo que reduce el coste computacional por iteración.
 
-Su relevancia práctica está en el coste de inferencia: al reducir el muestreo a 8 pasos con CFG desactivado, baja el número de evaluaciones del backbone generativo por imagen, lo que facilita despliegues con latencia contenida en GPU de gama alta de consumo. La licencia es `qwen-research`, un término personalizado que conviene revisar antes de cualquier uso comercial.
+Su relevancia actual radica en que ofrece una alternativa de generación de imágenes de alta calidad con un coste de inferencia muy reducido (8 pasos frente a los típicos 20-50 de los modelos de difusión estándar), lo que facilita su despliegue en producción. La licencia es `qwen-research`, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Generación visual de 7B (modelo de difusión; requiere `QwenImage21Pipeline` de Diffusers). Detalle interno de bloques no disponible |
-| Parametros totales | 7.115.124.736 (~7,1B) según los safetensors del repositorio |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (modelo texto-a-imagen; la model card no documenta límite de tokens de prompt ni resolución máxima) |
-| Tipos de cuantizacion | No disponible. No se publican variantes cuantizadas oficiales; el repositorio contiene safetensors de precisión completa |
-| Idiomas soportados | No disponible |
-| Licencia | `qwen-research` (campo `license: other`, `license_name: qwen-research`, `license_link: LICENSE`) |
-| Formato de pesos | safetensors (librería Diffusers) |
-| Modelo base | Qwen/Qwen-Image-2.1 (finetune) |
-| Tamano del repositorio | 32,5 GB |
-| Pipeline declarado | text-to-image |
-| Pasos de muestreo | 8 |
-| CFG por defecto | 1 |
-| Fecha de publicacion | 2026-10-09 (creación y última actualización) |
+| Arquitectura | Modelo de difusion para generacion de imagenes (arquitectura visual de 7B, pipeline `QwenImage21Pipeline`) |
+| Parametros totales | 7.115.124.736 (7B aprox.) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors, uso recomendado en bfloat16) |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-research (license: other) |
+| Formato de pesos | safetensors (libreria diffusers) |
 
 ## Arquitectura y entrenamiento
 
-La model card indica que Qwen-Image-2.1-Turbo reutiliza "la misma arquitectura de generación visual de 7B" que Qwen-Image-2.1 y que se trata de un checkpoint acelerado del modelo base, no de una arquitectura nueva. El pipeline asociado es `QwenImage21Pipeline`, propio de Diffusers, lo que confirma que se trata de un modelo de difusión para generación de imágenes. La información proporcionada no detalla la composición interna (número de bloques, tipo de atención, dimensiones ocultas) ni la configuración del codificador de texto o del VAE.
+Qwen-Image-2.1-Turbo es un checkpoint de difusion derivado por fine-tuning de Qwen-Image-2.1. Reutiliza la misma arquitectura de generacion visual de 7B parametros del modelo base, pero ha sido ajustado para funcionar con un esquema de muestreo acelerado de 8 pasos de denoising. El checkpoint incorpora su propio calendario de sigmas, de modo que el pipeline lo aplica automaticamente sin configuracion manual del scheduler.
 
-En el plano técnico, lo documentado es: (1) un calendario de muestreo propio incluido en el checkpoint, con 8 pasos de denoising y CFG=1 por defecto, de modo que no hace falta configurar el scheduler a mano; (2) caché de prefijos KV, que reutiliza el contexto del prompt de texto y de la imagen de referencia a lo largo de los pasos de denoising, evitando recalcularlo en cada iteración. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF/DPO u otros ajustes de alineamiento.
+Entre las innovaciones tecnicas destacadas en la model card figuran el uso de CFG=1 por defecto (eliminando la necesidad de classifier-free guidance con doble evaluacion) y el prefix KV caching, que reutiliza el contexto de texto y de imagen de referencia a lo largo de los pasos de denoising. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de imágenes a partir de descripciones textuales (text-to-image) mediante `QwenImage21Pipeline`.
-- Edición de imágenes: la model card menciona explícitamente la edición ("image editing") y la caché de prefijos KV reutiliza el contexto de la imagen de referencia, lo que confirma el uso de imágenes de entrada como condicionamiento.
-- Renderizado de texto denso dentro de la imagen: el ejemplo de la model card es un póster educativo con titulares, etiquetas, listas de la serie de reactividad y anotaciones tipográficas detalladas, lo que ilustra el caso de prompts con mucho contenido textual.
-- Seguimiento de prompts largos y altamente estructurados (composición, paleta, disposición espacial, tipografías y elementos gráficos descritos en el propio prompt).
-- Inferencia rápida: 8 pasos de denoising con CFG=1 y caché de prefijos KV.
-- Tool calling / function calling: no disponible (no es una capacidad aplicable a este tipo de modelo según la información proporcionada).
+- Generacion de texto a imagen (text-to-image) de alta fidelidad.
+- Edicion de imagenes (image-editing), incluyendo el uso de imagenes de referencia como contexto.
+- Generacion acelerada en 8 pasos de denoising, con CFG=1 por defecto.
+- Reutilizacion de contexto de texto e imagen mediante prefix KV caching.
+- Composición de escenas complejas con instrucciones de texto detalladas (tipografias, disposicion, elementos graficos).
+- Integracion nativa con Diffusers mediante `QwenImage21Pipeline`.
+- Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo "thinking", visión o audio: no disponible.
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- Generación de creatividades para campañas de marketing: el modelo produce imágenes a partir de prompts largos y muy especificados, con lo que se pueden describir paletas, composición y jerarquía visual en un único prompt y obtener variaciones cambiando solo fragmentos del texto.
-- Carteles y material educativo con texto integrado: el ejemplo documentado en la model card es precisamente un póster de química con ecuaciones, etiquetas, listas y anotaciones, un escenario donde la generación de texto legible dentro de la imagen es el requisito principal.
-- Catálogos de producto y fichas de e-commerce: con 8 pasos y CFG=1, el coste por imagen es bajo, lo que permite generar lotes grandes de variaciones de fondo o presentación sobre un mismo producto.
-- Edición de imágenes con referencia: dado que el pipeline reutiliza el contexto de la imagen de referencia, encaja en flujos de retoque, sustitución de fondos o adaptación de estilo de assets existentes sin regenerar desde cero.
-- Prototipado de mockups y material gráfico: generación rápida de bocetos visuales con texto placeholder para validar una dirección de diseño antes de invertir tiempo en producción manual.
-- Aumento de datos sintéticos: creación de imágenes etiquetadas para entrenar o evaluar modelos de visión, especialmente en dominios donde el contenido textual dentro de la imagen es relevante (documentos, señales, diagramas).
-- Integración en herramientas de diseño vía API o servicio interno: al cargarse con Diffusers, se puede envolver en un servicio de inferencia propio y conectarlo a un front-end de diseño, con control del calendario de muestreo incluido en el checkpoint.
-- Demostraciones interactivas de bajo coste: 8 pasos de denoising facilitan experiencias con respuesta casi inmediata en GPU de gama alta de consumo, útil para demos públicas o pruebas internas.
+- Generacion de ilustraciones y material grafico para marketing: el modelo puede producir piezas visuales complejas a partir de prompts descriptivos detallados, con 8 pasos de denoising que reducen el tiempo de generacion por imagen.
+- Creacion de posters educativos y material didactico: como se muestra en el ejemplo de la model card, es capaz de componer posters con texto estructurado, jerarquia visual y elementos graficos (ecuaciones, etiquetas, esquemas), adecuado para contenido formativo.
+- Edicion de imagenes con referencia: el soporte de image-editing y el prefix KV caching permiten modificar imagenes existentes manteniendo coherencia con el contexto de referencia, util en retoque y variaciones de diseno.
+- Prototipado rapido de conceptos visuales: la generacion en 8 pasos permite iterar rapidamente sobre bocetos y variaciones en flujos de diseno.
+- Generacion de imagenes en pipelines de produccion con requisitos de latencia: al reducir los pasos de difusion y usar CFG=1, el coste por inferencia baja, lo que encaja en servicios con alto volumen de peticiones.
+- Investigacion en modelos de difusion acelerados: sirve como referencia para estudiar tecnicas de destilacion o aceleracion de muestreo sobre un modelo base de 7B.
+- Integracion en aplicaciones creativas con Diffusers: al cargarse con `QwenImage21Pipeline`, puede incorporarse en herramientas Python que ya usan el ecosistema Diffusers.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de Qwen-Image-2.1-Turbo no incluye tablas comparativas (FID, CLIP score, GenEval, DPG-Bench u otras), ni datos de latencia o throughput medidos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos del repositorio suman 7.115.124.736 parámetros y el repositorio ocupa 32,5 GB, lo que sugiere pesos almacenados en precisión alta (fp32 serían ~28,4 GB solo para el bloque de 7,1B). En bf16, el bloque generativo ocuparía del orden de 14 GB, y habría que sumar codificador de texto y VAE; una horquilla orientativa de 16-24 GB de VRAM para inferencia en bf16 es una estimación derivada, no un dato oficial.
-- GPU recomendadas: A100 (40/80 GB) y H100 (80 GB) por margen y throughput. En gama de consumo, una RTX 4090 (24 GB) o RTX 5090 (32 GB) deberían ser suficientes en bf16 según la estimación anterior; en fp32 completo, 24 GB probablemente no basten para todos los componentes a la vez.
-- Cabe en GPU de consumo: probablemente sí en bf16 en tarjetas de 24 GB o más, siempre como estimación, ya que no hay cifras oficiales de consumo de memoria.
-- Opciones de despliegue: Diffusers con `QwenImage21Pipeline`, instalando Diffusers desde el repositorio (git) e incorporando el soporte de sigmas de muestreo configuradas por pipeline, añadido en el PR #14950, junto con `transformers>=5.17.0`, `accelerate` y `pillow`. No se documentan en la información disponible otras vías (ComfyUI, vLLM, TGI, llama.cpp, Ollama, TensorRT).
-- Latencia y throughput: no disponibles. El único dato relacionado es el número de pasos de denoising (8) con CFG=1, que reduce el número de evaluaciones del backbone por imagen respecto a esquemas de muestreo con decenas de pasos, pero sin cifras publicadas de tiempos.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 7.115 millones de parametros en bfloat16, el peso de los pesos ronda los 14,2 GB, por lo que se requiere una GPU con al menos ~16 GB de VRAM para cargar el modelo sin cuantizar (estimacion a partir del numero de parametros, no confirmada en la model card).
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; por tamano, encajaria en GPUs con 16-24 GB de VRAM (por ejemplo, RTX 4090), aunque no se detalla en la model card.
+- Opciones de despliegue: Diffusers con `QwenImage21Pipeline` (requiere la fuente mas reciente de Diffusers y `transformers>=5.17.0`, `accelerate` y `pillow`). Otras opciones como vLLM, llama.cpp, Ollama o TGI no estan indicadas.
+- Latencia y throughput estimados: no disponibles; la model card solo indica que la generacion se realiza en 8 pasos de denoising con CFG=1 y prefix KV caching.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Pasos de muestreo | CFG por defecto | Licencia | Disponibilidad |
+| Modelo | Parametros | Pasos de denoising | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Turbo | ~7,1B (safetensors del repositorio) | 8 | 1 | qwen-research | Hugging Face, ModelScope |
-| Qwen-Image-2.1 (base) | ~7B (misma arquitectura según la model card) | No disponible | No disponible | No confirmada en la información proporcionada | Hugging Face |
-| Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Qwen-Image-2.1-Turbo | 7,1B | 8 (CFG=1) | no disponible | qwen-research | Hugging Face, ModelScope |
+| Qwen-Image-2.1 (base) | 7B (misma arquitectura) | no disponible | no disponible | no disponible | Hugging Face |
+| Otros modelos de difusion de 7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la información proporcionada de datos de rendimiento, contexto o benchmarks que permitan una comparación cuantitativa con alternativas de terceros (por ejemplo, otros modelos de difusión de escala similar).
+No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la informacion proporcionada, por lo que la comparativa se limita al modelo base del que deriva.
 
 ## Limitaciones y advertencias
 
-- Licencia `qwen-research`: es un término personalizado, no una licencia permisiva estándar. Hay que leer el fichero `LICENSE` del repositorio antes de usar el modelo en producción o con fines comerciales; la información disponible no aclara si el uso comercial está permitido.
-- Riesgo de artefactos y errores en texto renderizado: como en cualquier modelo de difusión, la generación de tipografía densa puede producir caracteres deformados o palabras inventadas, algo crítico si el resultado se usa como material impreso.
-- Sesgos de los datos de entrenamiento: no se documenta la composición del dataset ni los filtros aplicados, por lo que no es posible evaluar sesgos demográficos, culturales o de representación. No hay información sobre mitigaciones.
-- Idiomas: no disponible. No se documenta qué lenguas entiende el codificador de texto, lo que impide garantizar el comportamiento con prompts en castellano u otras lenguas distintas del inglés.
-- Dependencia de versiones inestables: el checkpoint requiere Diffusers instalado desde el repositorio (git) con el soporte del PR #14950, y `transformers>=5.17.0`. Esto implica que una instalación estándar de Diffusers puede no cargar el modelo, y que la API puede cambiar entre versiones. Es un riesgo relevante para pipelines de producción.
-- Límites de resolución y de longitud de prompt: no documentados. No se indica resolución nativa, relación de aspecto soportada ni número máximo de tokens de texto.
-- Huella de almacenamiento: 32,5 GB de repositorio, lo que condiciona el despliegue en contenedores y el tiempo de descarga.
-- Madurez del despliegue: el modelo registra 0 descargas en el momento de los datos recogidos, con 135 "likes", lo que indica una adopción todavía muy limitada y poca validación externa documentada.
-- Sin benchmarks publicados: no hay métricas objetivas que permitan estimar la degradación de calidad que introduce la reducción a 8 pasos frente al modelo base.
+- Licencia `qwen-research`: restringe el uso comercial; es necesario revisar el archivo LICENSE antes de cualquier despliegue en produccion.
+- Riesgo de alucinacion visual: como todo modelo generativo de imagenes, puede producir elementos incoherentes, texto mal formado o detalles incorrectos en escenas complejas.
+- Sesgos conocidos: no se documentan en la informacion disponible; cabe esperar sesgos heredados de los datos de entrenamiento del modelo base.
+- Limitaciones de contexto o idioma: no disponibles; no se especifican los idiomas soportados ni la longitud de contexto.
+- Requisitos de version: necesita una version reciente de Diffusers con soporte de sigmas configuradas en el pipeline (PR #14950) y `transformers>=5.17.0`; versiones anteriores no funcionaran.
+- Dependencia de la configuracion del checkpoint: el calendario de sigmas esta incorporado, por lo que modificar manualmente el scheduler puede degradar la calidad de generacion.
+- No se detallan limitaciones de resolucion, numero maximo de imagenes de referencia ni restricciones de uso adicionales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1-Turbo
-- Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
+- GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Blog de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Pull request de Diffusers con soporte de sigmas configuradas por pipeline: https://github.com/huggingface/diffusers/pull/14950
-- Discord de Qwen: https://discord.gg/BEYSk3pkSu
-- QR de WeChat (asset del repositorio): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/assets/qr.png
-- Plataforma de chat de Qwen: https://chat.qwen.ai/
-- Web de Qwen: https://qwen.ai/home
-- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
-- Wikipedia (en): https://en.wikipedia.org/wiki/Qwen
-- Wikipedia (fr): https://fr.wikipedia.org/wiki/Qwen
+- Discord: https://discord.gg/BEYSk3pkSu
+- PR de Diffusers con soporte de sigmas: https://github.com/huggingface/diffusers/pull/14950
+- Plataforma Qwen: https://qwen.ai/home
+- Qwen Chat: https://chat.qwen.ai/

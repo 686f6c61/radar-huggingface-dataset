@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "bianyh8/bge-small-zh-v1.5",
+  "slug": "bianyh8-bge-small-zh-v1-5",
+  "author": "bianyh8",
+  "url": "https://huggingface.co/bianyh8/bge-small-zh-v1.5",
+  "created_at": "2026-11-18T03:09:39.000Z",
+  "updated_at": "2026-11-18T03:09:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bert",
+    "zh",
+    "arxiv:2310.07554",
+    "arxiv:2309.07597",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23954432,
+  "parameters_human": "24.0M",
+  "storage_bytes": 191670281,
+  "storage_human": "192 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

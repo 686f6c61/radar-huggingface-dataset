@@ -2,81 +2,95 @@
 
 ## Resumen
 
-LTX-2.5 es un modelo de generación de vídeo y audio desarrollado por Lightricks, la empresa responsable de aplicaciones como Videoleap. Se presenta como un modelo fundacional de tipo DiT (Diffusion Transformer) que integra en un único sistema capacidades de texto a vídeo, imagen a vídeo, vídeo a vídeo, audio a vídeo y generación sincronizada de audio y vídeo. El modelo está diseñado para producción, con soporte nativo de multishot (multi-toma), lo que permite mantener coherencia de escena a través de cortes, y un modo de renderizado denominado "Diffusion Fidelity Rendering" que concentra más cómputo en escenas complejas.
+LTX-2.5-Diffusers es un modelo generativo multimodal de Lightricks, distribuido en formato nativo para la librería `diffusers` y orientado a la síntesis y transformación de vídeo y audio. A diferencia de los modelos de vídeo puramente texto-a-vídeo, cubre un espacio amplio de modalidades de entrada y salida: texto, imagen, vídeo y audio, incluyendo combinaciones como imagen-texto-a-vídeo, vídeo-a-audio o audio-a-vídeo. El checkpoint publicado en Hugging Face contiene 18.987.859.200 parámetros en pesos `safetensors` y ocupa 185,4 GB en el repositorio.
 
-La versión alojada en Hugging Face bajo el identificador `Lightricks/LTX-2.5-Diffusers` es una integración para la librería `diffusers` con pipeline `text-to-video`. Los pesos en formato `safetensors` suman aproximadamente 19 000 millones de parámetros (18 987 859 200), aunque algunas fuentes citan 22 000 millones al incluir componentes adicionales. El repositorio ocupa 163,9 GB y el acceso está restringido (gated), por lo que es necesario aceptar la licencia comunitaria de Lightricks antes de descargarlo. El modelo soporta nueve idiomas: inglés, alemán, español, francés, japonés, coreano, chino, italiano y portugués.
+El modelo pertenece a la familia LTX-2 (también referenciada como LTX-Video o LTXV) y se publica bajo la licencia comunitaria `ltx-2.x-community-license-agreement`, con acceso restringido que exige aceptar las condiciones en Hugging Face. Soporta nueve idiomas declarados (inglés, alemán, español, francés, japonés, coreano, chino, italiano y portugués) y su pipeline principal en `diffusers` es `LTX2Pipeline`.
+
+Su relevancia actual radica en la unificación de generación audiovisual en un único modelo de difusión con control multimodal, lo que simplifica arquitecturas de producción que antes requerían encadenar modelos de vídeo y de audio por separado. La ficha se basa exclusivamente en los metadatos del repositorio y en la información pública disponible; los detalles de entrenamiento y benchmarks no están documentados en las fuentes consultadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Diffusion Transformer (DiT) con generación conjunta de audio y vídeo |
-| Parametros totales | 18 987 859 200 (aprox. 19B) en safetensors; fuentes externas citan 22B |
-| Parametros activos | no disponible (no se especifica si es MoE) |
+| Arquitectura | Modelo de difusión multimodal (familia LTX-2); detalles internos no disponibles |
+| Parametros totales | 18.987.859.200 (18,99 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio solo contiene safetensors) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, de, es, fr, ja, ko, zh, it, pt |
-| Licencia | ltx-2-community-license-agreement (licencia propia de Lightricks, acceso gated) |
-| Formato de pesos | safetensors (integración diffusers) |
+| Licencia | ltx-2.x-community-license-agreement (acceso restringido, gated) |
+| Formato de pesos | safetensors (librería diffusers) |
+| Tamano del repositorio | 185,4 GB |
+| Pipeline diffusers | LTX2Pipeline |
+| Modalidades | texto, imagen, vídeo, audio (entrada y salida combinables) |
+| Paper | arXiv:2601.03233 |
 
 ## Arquitectura y entrenamiento
 
-LTX-2.5 se basa en una arquitectura de Diffusion Transformer (DiT) que procesa simultáneamente señales de vídeo y audio. Según la documentación oficial de Lightricks, es el primer modelo fundacional de audio-vídeo basado en DiT que reúne todas las capacidades principales de la generación de vídeo moderna en un solo modelo: audio y vídeo sincronizados, alta fidelidad, múltiples modos de rendimiento y salidas listas para producción. El modelo incorpora un mecanismo de "Diffusion Fidelity Rendering" que asigna dinámicamente más pasos de cómputo a las regiones de la escena que lo requieren, mejorando la calidad en áreas complejas sin aumentar el coste global.
+La información disponible confirma que se trata de un modelo de difusión de la familia LTX-2 con 18,99 mil millones de parámetros, empaquetado para `diffusers` mediante el pipeline `LTX2Pipeline`. Los tags del repositorio revelan un diseño multimodal que abarca generación y transformación entre texto, imagen, vídeo y audio: text-to-video, image-to-video, video-to-video, image-text-to-video, audio-to-video, text-to-audio, video-to-audio, audio-to-audio, text-to-audio-video, image-to-audio-video e image-text-to-audio-video.
 
-El entrenamiento incluye datos multimodales de vídeo y audio, aunque no se han publicado cifras exactas sobre el número de tokens o la composición del dataset. Tampoco se especifica si se aplicaron técnicas de RLHF o DPO. El modelo admite fine-tuning y entrenamiento de LoRAs, como se indica en el repositorio oficial de LTX-2. La referencia al paper `arxiv:2601.03233` sugiere que existe una publicación técnica asociada, aunque no se ha podido acceder a su contenido en la información disponible.
+No se han publicado en las fuentes consultadas detalles sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas (atención lineal, decodificación especulativa, etc.). El paper referenciado en los metadatos es arXiv:2601.03233, que debería contener la descripción arquitectónica completa, pero su contenido no está incluido en la información proporcionada. Tampoco se documentan los detalles del tokenizador multimodal ni la resolución o duración máximas de vídeo.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto (text-to-video) y de imagen (image-to-video).
-- Generación de vídeo a partir de vídeo (video-to-video) y de audio (audio-to-video).
-- Generación de audio a partir de texto, vídeo o audio (text-to-audio, video-to-audio, audio-to-audio).
-- Generación conjunta de audio y vídeo sincronizados (text-to-audio-video, image-to-audio-video, image-text-to-audio-video).
-- Soporte nativo de multishot: mantiene coherencia de escena, personajes e iluminación a través de múltiples tomas o cortes.
-- Modo de renderizado adaptativo (Diffusion Fidelity Rendering) que concentra cómputo en escenas complejas.
-- Capacidades multilingües en nueve idiomas (en, de, es, fr, ja, ko, zh, it, pt).
-- Entrenable mediante LoRA y fine-tuning sobre datos propios.
-- Integración con la librería `diffusers` mediante el pipeline `LTX2Pipeline`.
+- Generación de vídeo a partir de texto (text-to-video).
+- Generación de vídeo a partir de imagen (image-to-video) y transformación de vídeo existente (video-to-video).
+- Generación condicionada por imagen y texto simultáneamente (image-text-to-video).
+- Generación de audio a partir de texto (text-to-audio) y conversión audio-a-audio.
+- Generación de audio condicionada por vídeo (video-to-audio) y generación de vídeo condicionada por audio (audio-to-video).
+- Generación conjunta de audio y vídeo desde texto o imagen (text-to-audio-video, image-to-audio-video, image-text-to-audio-video).
+- Soporte multilingüe en nueve idiomas: inglés, alemán, español, francés, japonés, coreano, chino, italiano y portugués.
+- Integración con el ecosistema `diffusers` mediante `LTX2Pipeline`.
+- Tool calling, function calling, agentes y razonamiento multi-paso: no disponible (no es un modelo de lenguaje conversacional).
 
 ## Casos de uso
 
-- Producción de vídeo publicitario: un equipo de marketing puede generar anuncios de producto con voz en off sincronizada a partir de un guion, reduciendo el tiempo de producción de días a horas. El modelo permite iterar sobre el texto y la imagen de referencia sin necesidad de rodar.
-- Doblaje automático de vídeos: dado un vídeo existente, LTX-2.5 puede generar audio sincronizado en varios idiomas, lo que facilita la localización de contenido para mercados internacionales sin estudio de doblaje.
-- Creación de storyboards animados: los directores y guionistas pueden convertir guiones escritos en secuencias de vídeo de baja resolución para previsualizar escenas antes del rodaje, gracias a la capacidad de multishot que mantiene la coherencia entre planos.
-- Generación de contenido para redes sociales: creadores de contenido pueden producir clips cortos con audio y vídeo sincronizados a partir de descripciones textuales, adaptados a formatos verticales u horizontales, sin necesidad de equipos de grabación.
-- Simulación de escenarios para entrenamiento: en entornos educativos o corporativos, el modelo puede generar vídeos de ejemplo con audio para simulaciones de atención al cliente, presentaciones o procedimientos, personalizables mediante fine-tuning con datos propios.
-- Restauración y mejora de vídeos: mediante la modalidad video-to-video, se pueden re-renderizar vídeos existentes con mayor fidelidad, cambiar el estilo visual o corregir defectos, manteniendo la pista de audio original o regenerándola.
+- Producción audiovisual automatizada: generar clips con pista de audio sincronizada a partir de un guion de texto usando text-to-audio-video, eliminando la necesidad de encadenar un modelo de vídeo y otro de audio por separado.
+- Doblaje y localización de vídeo: emplear video-to-audio y audio-to-audio para regenerar pistas de voz o ambiente en los nueve idiomas soportados, manteniendo el vídeo original como condición.
+- Animación de material gráfico: convertir ilustraciones o fotografías estáticas en vídeo mediante image-to-video, útil en marketing y creación de contenido para redes.
+- Posproducción y retoque de metraje: aplicar video-to-video para estilizar, restaurar o modificar secuencias existentes sin regrabar.
+- Generación de efectos de sonido y ambiente: usar text-to-audio o video-to-audio para producir pistas de audio coherentes con la escena visual en pipelines de edición.
+- Prototipado rápido en estudios creativos: iterar sobre storyboards combinando image-text-to-video para fijar composición y describir movimiento en una sola pasada.
+- Sincronización audio-vídeo para publicidad: generar variantes de un anuncio con audio adaptado a partir de una misma base visual mediante audio-to-video.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos oficiales de métricas como FVD, CLIP score o evaluaciones de sincronización audio-vídeo en las fuentes consultadas.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 163,9 GB en formato safetensors, lo que indica que el modelo completo en precisión fp32 o fp16 requiere un almacenamiento considerable.
-- Con aproximadamente 19 000 millones de parámetros, la inferencia en fp16 necesitaría al menos 38 GB de VRAM solo para los pesos, más los activos de atención y las salidas intermedias. En la práctica, se recomienda una GPU con 48 GB o más (por ejemplo, NVIDIA A6000, A100 80GB o H100).
-- Para cuantizaciones de 8 bits (int8) o 4 bits, la VRAM necesaria se reduciría a unos 19 GB y 10 GB respectivamente, lo que permitiría ejecutarlo en GPUs de consumo como la RTX 4090 (24 GB) con cuantización int8, aunque con posibles pérdidas de calidad.
-- No se han publicado requisitos oficiales de hardware por parte de Lightricks en la información disponible.
-- Opciones de despliegue: al ser una integración de `diffusers`, se puede ejecutar con el pipeline estándar de Hugging Face. Para producción, es probable que sea compatible con servidores de inferencia como vLLM o TGI, aunque no se ha confirmado oficialmente. También está disponible en plataformas cloud como fal.ai, que ofrece el modelo como servicio gestionado.
-- La latencia y el throughput dependen en gran medida del hardware y de la configuración de pasos de difusión. No se han publicado cifras oficiales.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 18,99 B de parámetros, los pesos en precisión de 16 bits requieren aproximadamente 38 GB solo para el modelo; en 8 bits, unos 19 GB, sin contar activaciones ni el codificador/decodificador de vídeo y audio.
+- GPU recomendadas: no disponible. Por el tamaño del checkpoint (185,4 GB de repositorio) y el cómputo típico de difusión de vídeo, se requiere hardware de centro de datos; no se documentan modelos concretos.
+- Compatibilidad con GPU de consumo: no confirmada. Los pesos completos en 16 bits no caben en GPUs de consumo de 24 GB; haría falta cuantización agresiva no documentada.
+- Opciones de despliegue: `diffusers` con `LTX2Pipeline` es la vía oficial indicada. Soporte para vLLM, llama.cpp, Ollama o TGI no está documentado y, dado que no es un modelo de lenguaje, no es de esperar.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para realizar una comparativa rigurosa con otros modelos de generación de vídeo y audio (como Sora de OpenAI, Veo de Google o Gen-3 de Runway), ya que no se han publicado benchmarks estandarizados ni especificaciones completas de estos modelos en las fuentes consultadas. La información disponible se limita a las características declaradas por Lightricks.
+No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones detalladas de modelos comparables de la misma categoría (difusión multimodal vídeo-audio). La comparación cuantitativa no está disponible.
+
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Acceso |
+|---|---|---|---|---|---|
+| LTX-2.5-Diffusers | 18,99 B | no disponible | texto, imagen, vídeo, audio | ltx-2.x-community-license-agreement | gated |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo está restringido (gated) y requiere aceptar la licencia comunitaria de Lightricks (`ltx-2-community-license-agreement`). Es necesario revisar los términos exactos de esta licencia antes de cualquier uso comercial, ya que puede imponer restricciones específicas.
-- No se han publicado detalles sobre sesgos del modelo ni sobre su comportamiento en escenarios de alto riesgo. Como todo modelo generativo, existe riesgo de alucinación visual o auditiva, especialmente en escenas complejas o con instrucciones ambiguas.
-- La generación de vídeo y audio sincronizados es una tarea computacionalmente intensiva; los tiempos de inferencia pueden ser largos incluso en GPUs de gama alta.
-- El modelo solo soporta los nueve idiomas listados; el rendimiento en otros idiomas no está garantizado.
-- No se ha confirmado la compatibilidad con cuantizaciones GGUF u otros formatos optimizados para CPU; el despliegue en hardware de consumo puede requerir cuantización manual.
-- La referencia al paper `arxiv:2601.03233` no ha podido verificarse; el número parece contener un error tipográfico (año 2601), por lo que la publicación técnica podría no estar disponible o ser incorrecta.
+- Acceso restringido: el repositorio es gated y requiere aceptar la licencia `ltx-2.x-community-license-agreement` en Hugging Face antes de descargar los pesos.
+- Licencia no estándar: las condiciones de uso comercial, redistribución y modificación vienen definidas por el acuerdo comunitario de LTX-2.x; deben revisarse antes de integrar el modelo en producción.
+- Riesgo de alucinación visual y sonora: como modelo generativo, puede producir contenido incoherente, artefactos temporales o audio desincronizado; no se documentan métricas de fidelidad.
+- Sesgos: no se documentan evaluaciones de sesgo en las fuentes consultadas.
+- Idiomas: aunque se declaran nueve idiomas, no se especifica el nivel de calidad por idioma ni si el audio generado cubre todos ellos con la misma fidelidad.
+- Requisitos de cómputo elevados: 18,99 B de parámetros y un repositorio de 185,4 GB implican infraestructura de GPU profesional; el despliegue en entornos limitados no está documentado.
+- Falta de documentación pública en las fuentes consultadas sobre cuantizaciones oficiales, límites de duración/resolución y latencias, lo que dificulta la planificación de capacidad.
+- No es un modelo de lenguaje: no soporta tool calling, agentes ni razonamiento textual multi-paso.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-Diffusers
-- Página del modelo LTX-2.5 en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5
-- Repositorio oficial LTX-Video en GitHub: https://github.com/Lightricks/LTX-Video
-- Repositorio oficial LTX-2 en GitHub: https://github.com/Lightricks/LTX-2
-- Guía en HackerNoon: https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model
-- Despliegue en fal.ai: https://fal.ai/ltx-2.5
+- Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-Diffusers
+- Organización Lightricks en Hugging Face: https://huggingface.co/Lightricks
+- Paper (referencia en metadatos): arXiv:2601.03233
+- Sitio corporativo: https://www.lightricks.com/
+- Sobre Lightricks: https://www.lightricks.com/about
+- GitHub de Lightricks: https://github.com/Lightricks
+- Wikipedia: https://en.m.wikipedia.org/wiki/Lightricks

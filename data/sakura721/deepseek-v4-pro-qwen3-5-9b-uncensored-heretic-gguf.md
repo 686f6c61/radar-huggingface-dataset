@@ -2,59 +2,52 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF es una conversión a formato GGUF del modelo `xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic`, publicada por el usuario Sakura721. Se trata de una cuantización Q4_K_M (5,02 bpw) pensada para su uso con llama.cpp, LM Studio, Ollama y llama-cpp-python, e incluye además un proyector visual independiente en F16 (mmproj) que preserva la ruta multimodal de imagen y vídeo.
+DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF es una conversión a formato GGUF del modelo xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic, publicada por el usuario Sakura721. Se trata de una destilación (SFT + RL) del modelo Qwen3.5-9B realizada por Jackrong, sobre la que posteriormente se aplicó una ablación ARA (Heretic) para eliminar los mecanismos de rechazo y censura, dando lugar a una variante "uncensored" o "abliterated". Esta versión concreta está cuantizada a Q4_K_M para su uso con llama.cpp, LM Studio, Ollama y llama-cpp-python, e incluye un proyector de visión F16 separado (mmproj) que preserva la capacidad multimodal.
 
-El modelo subyacente es el resultado de una cadena de destilación: parte de `Qwen3.5-9B`, se somete a un proceso de SFT y RL por parte de Jackrong (`Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B`) y posteriormente recibe una ablación ARA con la técnica Heretic, que elimina los mecanismos de rechazo y alineación (modelo "abliterated" o "uncensored"). La arquitectura es `qwen3_5` (etiquetada como `qwen35` en GGUF), un transformer híbrido con atención lineal y atención completa intercaladas, más una cabeza MTP (multi-token prediction).
+El modelo emplea la arquitectura `qwen3_5` (etiquetada como `qwen35` en GGUF), una arquitectura híbrida que combina capas de atención lineal con capas de atención completa en una proporción de 3 a 1. Cuenta con 8.954 mil millones de parámetros en el tronco más 0.249 mil millones en una cabeza MTP (Multi-Token Prediction), y un proyector visual de 0.456 mil millones. Su ventana de contexto nativa es de 262.144 tokens, lo que lo sitúa en la gama alta de modelos de ~9B para tareas de contexto largo.
 
-Con 8.954 millones de parámetros de texto y 456 millones en el proyector visual, el modelo ofrece una ventana de contexto nativa de 262.144 tokens. Su principal atractivo es la combinación de contexto largo, capacidades multimodales y ausencia de censura, todo ello en un paquete de 5,24 GiB que cabe en GPUs de consumo.
+La relevancia actual del modelo reside en tres factores: su naturaleza multimodal (texto, imagen y vídeo), su enorme contexto nativo y su condición de modelo "sin censura", que lo hace atractivo para investigación sobre alineación, red-teaming y aplicaciones donde los rechazos del modelo base resultan un obstáculo. La licencia Apache 2.0 facilita su uso comercial, aunque la ablación introduce caveats importantes de seguridad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen3_5` / `qwen35` (transformer híbrido: atención lineal + atención completa, 1 cabeza MTP) |
-| Parametros totales | 8.953.803.264 (texto) + 456 M (proyector visual mmproj) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 262.144 tokens nativos (rope_theta 10.000.000, MRoPE intercalado `[11, 11, 10, 0]`) |
-| Tipos de cuantizacion | Q4_K_M (5,02 bpw) en este repo; el modelo base admite otras cuantizaciones GGUF |
+| Arquitectura | `qwen3_5` / `qwen35` — transformer híbrido con atención lineal + atención completa (intervalo 4: 3 lineales + 1 completa) y 1 cabeza MTP |
+| Parametros totales | 9.197.093.888 (~9.2 B; 8.954 B tronco + 0.249 B MTP) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 262.144 tokens nativos (rope_theta 10.000.000, MRoPE intercalado `[11, 11, 10, 0]`, rotary parcial 0.25) |
+| Tipos de cuantizacion | Q4_K_M (5.02 bpw) en el tronco + cabeza MTP en F16; distribución: 217 tensores Q4_K, 33 Q6_K, 177 F32, 15 F16 |
 | Idiomas soportados | en, zh, ko, ja, es, ru |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (217 tensores Q4_K, 33 Q6_K, 177 F32); mmproj en F16 |
-| Tamano del repo | 12,2 GB |
-| Vocabulario | 248.320 tokens (BPE, `tokenizer.ggml.pre = qwen35`) |
-| Capas | 33 (32 transformer + 1 MTP) |
-| Hidden size | 4096 |
-| Cabezas Q / KV | 16 / 4, head_dim 256 |
-| FFN | SwiGLU, intermediate 12.288 |
-| Herramienta de conversion | llama.cpp build b12182 (`fd27b2034`) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp build b12182, commit fd27b2034); proyector de visión en GGUF F16 separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura `qwen3_5` es un transformer híbrido que intercala atención lineal (basada en SSM, con kernel de convolución 4, tamaño de estado 128, tamaño interno 4096, 16 grupos y rango de paso temporal 32) y atención completa en una proporción de 3 a 1: solo las capas con índices 3, 7, 11, 15, 19, 23, 27 y 31 mantienen caché KV creciente. Esto reduce drásticamente el coste del contexto largo: aproximadamente 32 KiB por token con caché KV en F16 (≈1 GiB a 32K, ≈8 GiB a 262K). El modelo incorpora además una cabeza MTP (multi-token prediction) que permite decodificación especulativa y acelera la generación.
+La arquitectura es un transformer híbrido de 33 capas (32 de transformer más 1 de MTP), con un tamaño oculto de 4096 y FFN SwiGLU con dimensión intermedia de 12.288. La innovación principal es la disposición de atención: por cada grupo de 4 capas, 3 usan atención lineal (modelo de espacio de estados, con kernel de convolución 4 y tamaño de estado 128) y 1 usa atención completa (capas en los índices 3, 7, 11, 15, 19, 23, 27 y 31). Esta combinación reduce el coste computacional en contextos largos manteniendo la capacidad de atención global. La atención completa usa 16 cabezas de consulta y 4 de clave/valor, con dimensión de cabeza 256, y RoPE MRoPE intercalado con secciones `[11, 11, 10, 0]` y theta de 10.000.000. El vocabulario es de 248.320 tokens con tokenizador BPE (`qwen35`).
 
-El entrenamiento del modelo base sigue una cadena de destilación: parte de Qwen3.5-9B, recibe SFT y RL por parte de Jackrong para aproximarse al comportamiento de DeepSeek-V4-Pro, y después se somete a una ablación ARA con la técnica Heretic que elimina las capas de rechazo. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni los detalles del proceso de RLHF/DPO en la información proporcionada.
+El entrenamiento sigue una cadena de destilación: parte de Qwen3.5-9B, sobre el que Jackrong aplicó SFT y RL para producir DeepSeek-V4-Pro-Qwen3.5-9B, y posteriormente xtools-at aplicó una ablación ARA (Heretic) para eliminar los comportamientos de rechazo. La model card no especifica el número de tokens de entrenamiento ni la composición exacta del dataset. La cabeza MTP (Multi-Token Prediction) permite decodificación especulativa nativa, prediciendo varios tokens por paso para acelerar la generación. Los tensores sensibles (`attn_v`, `ffn_down`, proyecciones de salida) se mantienen en Q6_K, mientras que normas, `ssm_dt`, `ssm_conv1d`, `A_log`, `dt_bias` y estados recurrentes permanecen en F32.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con razonamiento explícito (los tokens de razonamiento se devuelven en `reasoning_content`, separados de la respuesta visible tras `</think>`).
-- Razonamiento matemático y lógico (el modelo base se entrenó con RL para tareas de razonamiento).
-- Generación y análisis de código.
-- Procesamiento de imagen y vídeo mediante el proyector mmproj F16 (requiere ambos ficheros GGUF).
+- Generación de texto conversacional multi-turno con modo de razonamiento explícito (los tokens de razonamiento se devuelven en `reasoning_content`, visibles antes del token `</think>`).
+- Razonamiento matemático y resolución de problemas paso a paso (el modelo base se entrenó con RL para reasoning).
+- Comprensión de imágenes y vídeo mediante el proyector mmproj F16 (pipeline `image-text-to-text`).
 - Capacidades multilingües en inglés, chino, coreano, japonés, español y ruso.
-- Soporte de tool calling / function calling a través de la API compatible con OpenAI de llama-server.
-- Modo de razonamiento (thinking mode) con separación de tokens internos y respuesta final.
-- Comportamiento sin censura ni rechazos (modelo abliterated), lo que permite abordar temas que otros modelos alineados rechazarían.
-- Compatible con endpoints OpenAI (`/v1/chat/completions`).
+- Decodificación especulativa nativa mediante la cabeza MTP, que acelera la inferencia.
+- Contexto largo de hasta 262.144 tokens, adecuado para documentos extensos y conversaciones prolongadas.
+- Comportamiento "uncensored": la ablación Heretic elimina los rechazos del modelo base ante peticiones sensibles.
+- Plantilla de chat embebida en el GGUF, compatible con endpoints OpenAI (`/v1/chat/completions`).
+- Soporte de tool calling y function calling: no confirmado explícitamente en la model card; se indica como no disponible.
 
 ## Casos de uso
 
-- **Atención al cliente automatizada con contexto largo**: la ventana de 262.144 tokens y el bajo coste de caché KV (solo 8 capas con caché creciente) permiten mantener conversaciones multi-turno con historiales extensos o documentación de referencia adjunta sin degradación apreciable del rendimiento.
-- **Análisis de documentos e imágenes en un solo paso**: gracias al proyector visual F16, el modelo puede recibir capturas, diagramas o fotogramas de vídeo junto con texto y responder preguntas sobre ellos, útil para soporte técnico o extracción de información de capturas de pantalla.
-- **Asistente de programación local**: con 9B parámetros en Q4_K_M (5,24 GiB) cabe en una RTX 4090 o incluso en GPUs de 8 GB, y el soporte de tool calling permite integrarlo en pipelines de CI/CD para revisión de código, generación de tests o explicación de errores.
-- **Investigación en seguridad y alineación**: al ser un modelo abliterated, sirve para estudiar el comportamiento de modelos sin capas de rechazo, analizar sesgos residuales y comparar respuestas frente a versiones alineadas.
-- **Generación de contenido creativo sin restricciones**: escritura de ficción, guiones o material divulgativo sobre temas sensibles donde los modelos alineados aplican rechazos, con la ventaja de ejecución local y privacidad total.
-- **Despliegue en el borde (edge) con LM Studio u Ollama**: el formato GGUF y el tamaño reducido permiten ejecutar el modelo en portátiles con GPU de consumo o incluso en CPU con llama.cpp, sin depender de servicios en la nube.
-- **Procesamiento de vídeo para resumen automático**: la ruta multimodal admite vídeo a través de `llama-mtmd-cli`, lo que permite generar descripciones o resúmenes de clips cortos en local.
+- Investigación sobre alineación y red-teaming: el modelo, al carecer de mecanismos de rechazo, permite estudiar cómo responde un LLM ante prompts adversarios sin la interferencia de filtros, útil para evaluar robustez y diseñar salvaguardas.
+- Análisis de documentos largos: con 262.144 tokens de contexto nativo, puede procesar libros completos, expedientes legales o bases de código extensas en una sola pasada, resumiendo o extrayendo información sin truncar.
+- Asistencia multimodal en atención al cliente: combinando el tronco Q4_K_M con el proyector mmproj, el modelo puede analizar capturas de pantalla o fotos enviadas por usuarios y responder en varios idiomas (español, inglés, chino, etc.).
+- Generación y revisión de código en local: desplegado con llama.cpp o LM Studio, sirve para autocompletado, explicación de fragmentos y revisión en entornos sin conexión, con la ventaja de la licencia Apache 2.0 para uso comercial.
+- Procesamiento de vídeo para moderación de contenido: la ruta multimodal acepta vídeo, lo que permite clasificar o describir secuencias audiovisuales en pipelines de moderación, aunque la ausencia de censura exige supervisión humana.
+- Despliegue en hardware de consumo: al ocupar 5,7 GiB en Q4_K_M, cabe en GPUs de 8 GB de VRAM, lo que habilita prototipado y demos en estaciones de trabajo sin infraestructura de datacenter.
+- Experimentación con decodificación especulativa: la cabeza MTP permite medir ganancias de throughput en comparación con decodificación autoregresiva estándar, útil para investigación en optimización de inferencia.
 
 ## Benchmarks y rendimiento
 
@@ -62,39 +55,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: el fichero Q4_K_M ocupa 5,24 GiB; con caché KV en F16 a 16K de contexto se necesitan aproximadamente 0,5 GiB adicionales, por lo que el total ronda los 6-7 GiB. A 32K de contexto, unos 1 GiB extra de caché KV (≈7-8 GiB en total). A 262K de contexto, ≈8 GiB solo de caché KV, lo que exige GPUs de 24 GB o más.
-- **GPU recomendadas**: RTX 4090 (24 GB) para contexto completo; RTX 3090/4080 (16-24 GB) para contexto medio-alto; RTX 4060 Ti 16 GB o RTX 3060 12 GB para contexto moderado (16-32K).
-- **¿Cabe en GPU de consumo?**: sí. El modelo de texto solo (sin mmproj) cabe en GPUs de 8 GB con contexto reducido; con visión se recomienda al menos 12 GB.
-- **Opciones de despliegue**: llama.cpp (build b12182 o superior), LM Studio (detecta automáticamente el prefijo `mmproj-`), Ollama (solo texto, el proyector no es cargable actualmente), llama-cpp-python, llama-server con API compatible con OpenAI.
-- **Latencia y throughput**: no disponibles en la información proporcionada. La cabeza MTP y la atención lineal deberían mejorar el throughput frente a un transformer denso equivalente, pero no se aportan cifras concretas.
+- VRAM estimada para inferencia: ~5,7 GiB para el tronco Q4_K_M en solitario; ~6,6 GiB si se carga también el proyector mmproj F16 (875,6 MiB). Con contexto de 16.384 tokens hay que sumar la caché KV, que para 32 capas con 4 cabezas KV y dimensión 256 es moderada pero crece con el contexto.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 y H100 para despliegues de mayor concurrencia. Cualquier GPU con al menos 8 GB de VRAM puede ejecutar el modelo en Q4_K_M.
+- Cabe en GPU de consumo: sí, en tarjetas de 8 GB o más (RTX 3060, RTX 4060, RTX 3070, etc.). Para contexto muy largo (más de 32K tokens) conviene 12-16 GB.
+- Opciones de despliegue: llama.cpp (build b12182 o superior), llama-server con endpoint compatible con OpenAI, llama-mtmd-cli para visión, LM Studio (detección automática del prefijo `mmproj-`), Ollama (solo texto; el proyector no es cargable hoy), llama-cpp-python.
+- Latencia y throughput estimados: no disponibles en la información proporcionada. La cabeza MTP está diseñada para acelerar la decodificación mediante predicción multi-token, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidades | Licencia | Cuantización GGUF |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic (este) | 8,95 B | 262.144 | texto, imagen, vídeo | Apache 2.0 | Q4_K_M |
-| Qwen3.5-9B (base upstream) | ~9 B | no disponible | texto (posiblemente multimodal) | no disponible | no disponible |
-| Gemma 3 12B | ~12 B | 128.000 | texto, imagen | Gemma license | sí |
-| Llama 3.1 8B | 8 B | 128.000 | texto | Llama 3.1 license | sí |
+| DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic (este) | 9,2 B | 262.144 | Sí (texto, imagen, vídeo) | Apache 2.0 | Ablación Heretic, MTP, híbrido lineal/completa |
+| Qwen3.5-9B (base upstream) | ~9 B | no disponible | no disponible | no disponible | Modelo original sin destilación ni ablación; mantiene rechazos |
+| Modelos densos de ~9B con contexto largo (p. ej. familia Llama 3.1 8B) | ~8 B | 128.000 | No | Llama license | Sin capacidades multimodales ni MTP; contexto menor |
 
-La comparativa se limita a los datos disponibles; no se dispone de información sobre benchmarks comparativos entre estos modelos en la documentación proporcionada.
+La comparativa detallada con alternativas concretas no está disponible en la información proporcionada; los datos de la fila de Llama 3.1 8B se incluyen como referencia de categoría y deben verificarse en sus fichas oficiales.
 
 ## Limitaciones y advertencias
 
-- **Modelo abliterated**: la ablación Heretic elimina los mecanismos de rechazo, por lo que el modelo puede generar contenido sensible, ofensivo o inseguro sin filtros. No es adecuado para aplicaciones de cara al público sin moderación adicional.
-- **Riesgo de alucinación**: como todo modelo de 9B, puede inventar datos, especialmente en tareas de razonamiento complejo o con contexto muy largo.
-- **Idiomas**: aunque soporta seis idiomas, el rendimiento en español, ruso, coreano y japonés puede ser inferior al de inglés y chino, dado el sesgo típico de los datasets de entrenamiento.
-- **Contexto largo**: aunque la ventana nativa es de 262.144 tokens, el rendimiento en tareas de recuperación de información a distancias extremas puede degradarse; se recomienda validar con pruebas propias.
-- **Visión limitada en Ollama**: el proyector mmproj no es cargable a través de Ollama en la fecha de publicación, por lo que la ruta multimodal solo está disponible en llama.cpp y LM Studio.
-- **Licencia Apache 2.0**: permite uso comercial, pero el modelo base upstream puede tener restricciones adicionales no reflejadas en esta ficha; conviene verificar la licencia de `Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B` y de Qwen3.5-9B.
-- **Fecha de creación**: el repositorio data de noviembre de 2026; verificar que la build de llama.cpp utilizada (b12182) siga siendo compatible con versiones posteriores.
+- La ablación Heretic elimina los rechazos de seguridad del modelo base; el modelo puede generar contenido dañino, ilegal o éticamente problemático sin filtros. No es apto para despliegues orientados al público sin salvaguardas externas.
+- Riesgo de alucinación inherente a los modelos de ~9B, especialmente en tareas de razonamiento complejo o con contexto muy largo; la destilación y la cuantización Q4_K_M pueden acentuar imprecisiones.
+- La cuantización Q4_K_M introduce pérdida de precisión respecto al modelo en punto flotante; los tensores sensibles se mantienen en Q6_K, pero tareas de matemáticas finas o generación de código pueden degradarse.
+- El soporte de tool calling y function calling no está confirmado en la model card; conviene validarlo antes de usarlo en pipelines de agentes.
+- La capacidad de visión requiere cargar el archivo mmproj F16 junto al tronco; Ollama no soporta el proyector, por lo que en ese entorno el modelo es solo de texto.
+- El contexto nativo es de 262.144 tokens, pero la VRAM necesaria para la caché KV crece con el contexto; en GPUs de 8 GB hay que limitar `n_ctx` (la model card usa 8.192-16.384 en los ejemplos).
+- Idiomas soportados: seis (en, zh, ko, ja, es, ru); el rendimiento en español no está cuantificado y puede ser inferior al de inglés o chino.
+- Aunque la licencia es Apache 2.0, el modelo base upstream y la cadena de destilación pueden tener condiciones adicionales; conviene revisar las fichas de Jackrong y xtools-at antes de uso comercial.
+- El modelo se publicó en noviembre de 2026 y depende de un build específico de llama.cpp (b12182); versiones anteriores pueden no cargar correctamente la arquitectura `qwen35` ni la cabeza MTP.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Sakura721/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF
 - Modelo base (fp): https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
-- Modelo upstream (SFT+RL): https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- LM Studio: https://lmstudio.ai/
-- Ollama: https://ollama.com/
-- llama-cpp-python: https://github.com/abetlen/llama-cpp-python
+- Upstream de destilación: Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B (referenciado en la model card; sin URL directa en la información disponible)
+- llama.cpp: no se proporciona URL en la información disponible (build b12182, commit fd27b2034)
+- LM Studio: no se proporciona URL en la información disponible
+- Ollama: no se proporciona URL en la información disponible

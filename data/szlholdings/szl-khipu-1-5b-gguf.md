@@ -2,83 +2,104 @@
 
 ## Resumen
 
-SZL-Khipu-1.5B-GGUF es la versión cuantizada en formato GGUF del modelo SZL-Khipu-1.5B, un fine-tune QLoRA de Qwen2.5-1.5B-Instruct desarrollado por SZLHOLDINGS. El modelo está diseñado específicamente para la navegación de agentes gobernados dentro del "lago de recibos" (receipt lake) de SZL Holdings, una infraestructura de verificación documental con firmas Ed25519. Su propósito no es la generación de texto general, sino la toma de decisiones estructuradas: dado un prompt JSON con una consulta y una lista de candidatos (handles), el modelo devuelve un plan JSON indicando si debe navegar hacia uno de esos candidatos o abstenerse.
+SZL-Khipu-1.5B-GGUF es la versión cuantizada en formato GGUF del modelo SZL-Khipu-1.5B, un ajuste fino de Qwen/Qwen2.5-1.5B-Instruct desarrollado por SZL Holdings. El modelo está diseñado específicamente para una tarea acotada: proponer planes de recuperación (retrieval plans) en formato JSON sobre un conjunto de identificadores (handles) candidatos suministrados por un controlador externo. No ejecuta dichos planes, no accede a ningún grafo privado y no emite recibos firmados; su función es exclusivamente de propuesta.
 
-Con 1.543.714.304 parámetros (1.5B), es un modelo compacto que puede ejecutarse en CPU con cuantización Q4_K_M (~0.99 GB), lo que lo hace adecuado para entornos con recursos limitados. La relevancia actual radica en su enfoque en agentes auditables y verificables, donde la procedencia de los datos y la integridad de las decisiones son críticas. La cuantización GGUF permite su uso con llama.cpp, Ollama y LM Studio, facilitando su despliegue en producción.
+El artefacto se distribuye como cuantizaciones GGUF (F16, Q4_K_M, Q5_K_M y Q8_0) para su uso con llama.cpp, con un total de 1.543.714.304 parámetros y una licencia Apache 2.0. El modelo se encuentra en fase de investigación y su promoción a producción está explícitamente bloqueada por el autor, que documenta un fallo de abstención en la evaluación del modelo pre-cuantizado (2/6).
 
-## Especificaciones tecnicas
+La relevancia de esta ficha radica en su naturaleza deliberadamente limitada y en la trazabilidad documental que acompaña al artefacto: recibos de entrenamiento y evaluación firmados con Ed25519, identidades de fichero con SHA-256 y un contrato de prompt definido mediante esquema JSON. Es un ejemplo de publicación de artefacto de investigación con alcance restringido y evidencias verificables, más que un modelo de propósito general.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Qwen2.5-1.5B-Instruct) |
-| Parametros totales | 1.543.714.304 (1.5B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only (derivado de Qwen2.5-1.5B-Instruct) |
+| Parámetros totales | 1.543.714.304 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (0.99 GB), Q5_K_M (1.13 GB), Q8_0 (1.65 GB), F16 (3.09 GB) |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Tipos de cuantización | F16, Q4_K_M, Q5_K_M, Q8_0 |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base SZL-Khipu-1.5B es un fine-tune QLoRA de Qwen2.5-1.5B-Instruct, que a su vez es un transformer decoder-only con atención causal. El fine-tune se realizó con QLoRA (Quantized Low-Rank Adaptation), una técnica que reduce el coste de entrenamiento al congelar los pesos originales y entrenar adaptadores de bajo rango. No se han publicado detalles sobre el número de tokens de entrenamiento ni la composición exacta del dataset, pero el objetivo declarado es la navegación gobernada sobre el "lago de recibos" de SZL Holdings, un conjunto de documentos con firmas criptográficas.
+El modelo base es Qwen2.5-1.5B-Instruct (revisión upstream `989aa7980e4cf806f80c7fef2b1adb7bc71aa306`), sobre el que SZL Holdings realizó un ajuste fino supervisado para una tarea de planificación de recuperación. La revisión del modelo padre ajustado es `759c6112b1acae67f30351ef4e652e07671a42fb`. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada.
 
-La cuantización GGUF se generó con las herramientas de llama.cpp (`convert_hf_to_gguf.py` y `llama-quantize`) a partir del modelo en safetensors, produciendo las variantes Q4_K_M, Q5_K_M, Q8_0 y F16. El template de chat (ChatML de Qwen2.5) está incrustado en cada archivo. El modelo opera bajo un "contrato de prompt" estricto: la entrada es un objeto JSON con `query` y `candidates` (solo handles, nunca contenido), y la salida es un plan JSON con `decision=NAVIGATE` o `decision=ABSTAIN`, según el esquema `khipu.schema.json`.
+La innovación principal no reside en la arquitectura, sino en el contrato de uso: el modelo recibe una consulta y un conjunto de handles candidatos, y debe producir un plan JSON con una acción NAVIGATE o ABSTAIN, validable contra el esquema `khipu.schema.json`. El autor documenta recibos de entrenamiento y evaluación firmados con Ed25519 sobre JSON canónico (no envoltorios DSSE), con una clave pública declarada en el repositorio. La evaluación held-out del modelo pre-cuantizado reporta plan-validity 11/11, grounding 4/5 y abstención 2/6.
 
 ## Capacidades
 
-- Navegación estructurada: dado un conjunto de candidatos (handles con metadatos sintéticos), el modelo decide si navegar hacia uno de ellos o abstenerse, devolviendo una decisión en JSON.
-- Abstinencia controlada: puede emitir `ABSTAIN` con una razón, lo que permite evitar acciones cuando la información es insuficiente o ambigua.
-- Integración con agentes gobernados: diseñado para funcionar dentro de un sistema de verificación con recibos firmados, donde cada decisión puede ser auditada.
-- Generación de texto limitada: aunque es un modelo de lenguaje, su uso principal es la salida JSON estructurada, no la generación libre de texto.
-- Multilingüismo: solo soporta inglés (según la model card), aunque el modelo base Qwen2.5 soporta más idiomas, este fine-tune está restringido a inglés.
-- Compatibilidad con herramientas de inferencia: funciona con llama.cpp, Ollama y LM Studio, gracias al formato GGUF.
+- Generación de planes de recuperación en JSON sobre handles suministrados por un controlador.
+- Emisión de decisiones binarias NAVIGATE o ABSTAIN conforme al esquema del contrato de prompt.
+- Generación de texto conversacional heredada del modelo base Qwen2.5-1.5B-Instruct.
+- Capacidad de abstención (limitada: 2/6 en la evaluación registrada).
+- Soporte de tool calling: no disponible en la información proporcionada.
+- Soporte de agentes multi-paso: no disponible; el modelo solo propone, no ejecuta.
+- Capacidades multilingües: únicamente inglés declarado.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Auditoría de decisiones en agentes autónomos: el modelo puede integrarse en un pipeline donde un agente debe decidir qué documento (recibo) consultar basándose en metadatos, garantizando que la decisión sea trazable y verificable.
-- Navegación en bases de conocimiento estructuradas: en un sistema de gestión documental con nodos etiquetados, el modelo selecciona el nodo relevante para una consulta dada, reduciendo el espacio de búsqueda.
-- Filtrado de candidatos en recuperación de información: dado un conjunto de resultados de búsqueda, el modelo puede elegir cuál es el más pertinente o abstenerse si ninguno es adecuado, mejorando la precisión de sistemas RAG.
-- Verificación de integridad en cadenas de suministro: al operar sobre recibos firmados, el modelo puede asistir en la validación de transacciones, decidiendo si un recibo es relevante para una consulta de auditoría.
-- Demostraciones educativas de agentes gobernados: su pequeño tamaño permite ejecutarlo en portátiles para enseñar conceptos de agentes con procedencia verificable y decisiones auditables.
-- Despliegue en entornos con restricciones de hardware: al caber en ~1 GB con Q4_K_M, puede ejecutarse en dispositivos edge o servidores sin GPU, manteniendo una funcionalidad específica de navegación.
+- Planificación de recuperación en pipelines de búsqueda: el modelo recibe una consulta y un conjunto de handles candidatos y propone qué rutas navegar, integrándose como etapa de planificación previa a un ejecutor controlado que retiene la autorización.
+- Investigación sobre abstención selectiva: el fallo documentado de abstención (2/6) lo convierte en un artefacto útil para estudiar calibración y rechazo en modelos pequeños dentro de entornos de investigación.
+- Evaluación de contratos de prompt estructurados: sirve para experimentar con salidas JSON validables mediante esquema, midiendo validez de plan en pipelines con verificación posterior.
+- Demostraciones de trazabilidad de artefactos: su cadena de recibos firmados, digests SHA-256 y revisiones pinneadas lo hacen adecuado para prototipos de gobernanza de modelos y auditoría de linaje.
+- Pruebas de cuantización en llama.cpp: las cuatro variantes GGUF permiten estudiar el comportamiento de un modelo de 1,5B en distintos niveles de precisión, aunque el autor no establece comparativas de calidad post-cuantización.
+- Prototipos de enrutamiento en sistemas RAG con controlador externo: el modelo puede proponer rutas de navegación sobre un índice de handles en entornos de laboratorio donde la ejecución y la firma de recibos quedan fuera del modelo.
+- Despliegue en CPU para servicios de baja carga: el registro histórico de publicación menciona una sonda de servicio en CPU con latencia mediana de 1467,5 ms en dos ejecuciones, útil como referencia orientativa, no como SLA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se realiza ninguna evaluación post-cuantización ni se reclaman benchmarks independientes. El único artefacto de evaluación es un recibo firmado por el propietario que cubre el modelo pre-cuantizado, no los archivos GGUF.
+Los únicos resultados registrados corresponden a la evaluación held-out del modelo pre-cuantizado, no a los ficheros GGUF:
+
+| Métrica | Resultado (modelo pre-cuantizado) |
+|---|---|
+| Plan-validity | 11/11 |
+| Grounding | 4/5 |
+| Abstención | 2/6 |
+
+El autor indica explícitamente que no se ha establecido ningún resultado comparativo de calidad post-cuantización ni de memoria en tiempo de ejecución. La sonda histórica de servicio en CPU reporta una latencia mediana de 1467,5 ms en dos ejecuciones, sin datos de energía ni de memoria pico de proceso. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con Q4_K_M (~0.99 GB), el modelo puede ejecutarse en CPU sin GPU; con Q8_0 (~1.65 GB) también es viable en CPU. Para GPU, cualquier tarjeta con al menos 2 GB de VRAM puede cargar la versión F16 (3.09 GB) si se usa offloading parcial.
-- GPU recomendadas: no se requiere GPU específica; funciona en CPU. Si se usa GPU, una NVIDIA GTX 1650 o superior es suficiente para las cuantizaciones más pequeñas.
-- Compatibilidad con consumer GPU: sí, cualquier GPU moderna con soporte CUDA o Metal puede acelerar la inferencia, aunque no es necesario.
-- Opciones de despliegue: llama.cpp (CLI), Ollama (comando `ollama run hf.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF:Q4_K_M`), LM Studio (búsqueda por nombre), y servidores compatibles con GGUF como llama-server.
-- Latencia y throughput: no se han publicado datos. En CPU, se espera una latencia de unos pocos segundos por generación (dado el tamaño y la cuantización), pero no hay cifras oficiales.
+- VRAM estimada para inferencia: no disponible de forma oficial; según el tamaño de fichero, Q4_K_M ocupa 986.047.904 bytes (~0,92 GB), Q5_K_M 1.125.049.760 bytes (~1,05 GB), Q8_0 1.646.572.448 bytes (~1,53 GB) y F16 3.093.668.768 bytes (~2,88 GB). El tamaño de fichero no equivale al pico de memoria en ejecución.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, cualquier GPU consumer con al menos 4 GB de VRAM debería poder alojar las variantes cuantizadas, aunque el autor no lo certifica.
+- Cabe en GPU consumer: previsiblemente sí para Q4_K_M, Q5_K_M y Q8_0; sin validación oficial.
+- Opciones de despliegue: llama.cpp con una revisión pinneada y verificada; el autor exige seleccionar una revisión exacta del GGUF y un runtime compatible.
+- Latencia y throughput: solo se documenta una sonda histórica en CPU con mediana de 1467,5 ms en dos ejecuciones; no hay datos de throughput ni de latencia en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Enfoque |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| SZL-Khipu-1.5B-GGUF | 1.5B | no disponible | Apache-2.0 | GGUF | Navegación gobernada en receipt lake |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32K (no confirmado para este fine-tune) | Apache-2.0 | safetensors, GGUF | Chat general, código, razonamiento |
-| Phi-3.5-mini-instruct | 3.8B | 128K | MIT | safetensors, GGUF | Chat general, razonamiento |
+| SZL-Khipu-1.5B-GGUF | 1,54B | no disponible | Apache 2.0 | Planificación de retrieval, proposal-only | GGUF en Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54B | no disponible en esta ficha | Apache 2.0 | Instrucciones generales | safetensors y GGUF en Hugging Face |
+| no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a características generales porque no hay datos de rendimiento para SZL-Khipu-1.5B. El modelo se distingue por su especialización en tareas de navegación estructurada con verificación criptográfica, algo que no ofrecen los modelos generalistas. Su tamaño es menor que Phi-3.5-mini, pero su funcionalidad es mucho más restringida.
+La comparación directa con Qwen2.5-1.5B-Instruct es la más pertinente por linaje, pero no se dispone de resultados de benchmarks comparativos en la información proporcionada. No se identifican otras alternativas comparables en la documentación del artefacto.
 
 ## Limitaciones y advertencias
 
-- Especialización extrema: no es un modelo de propósito general; su uso fuera del contrato de prompt JSON (navegación de recibos) probablemente produzca resultados pobres o inesperados.
-- Idioma limitado: solo soporta inglés, lo que restringe su uso en entornos multilingües.
-- Dependencia del prompt contract: la entrada debe seguir estrictamente el esquema JSON; cualquier desviación puede romper la salida.
-- Verificación no independiente: los recibos firmados son del propietario (SZLHOLDINGS) y no constituyen una evaluación externa. La integridad de los pesos GGUF está garantizada por hashes SHA-256, pero no hay evaluación de calidad post-cuantización.
-- Riesgo de alucinación: aunque el modelo está entrenado para abstenerse, en situaciones ambiguas podría emitir una navegación incorrecta. No hay datos sobre su tasa de error.
-- Contexto no especificado: se desconoce la longitud de contexto efectiva tras el fine-tune, lo que puede afectar a tareas con entradas largas.
-- Sin benchmarks públicos: no se puede comparar objetivamente con otros modelos en tareas estándar.
+- Uso exclusivamente de propuesta: el controlador retiene la autorización, la ejecución y la firma de recibos de confianza; el modelo no accede a ningún grafo privado.
+- Promoción a producción bloqueada por el autor: el fallo de abstención 2/6 del modelo pre-cuantizado sigue siendo un bloqueante de release y la cuantización no lo resuelve.
+- Sin evaluación post-cuantización: no se ha establecido calidad, velocidad ni memoria comparativas para ninguno de los ficheros GGUF.
+- Sin recibo de release firmado que cubra los bytes GGUF: la firma del modelo padre no cubre los derivados salvo que el digest exacto esté incluido en el sujeto firmado.
+- Verificación de firmas no repetida por el revisor de la model card; la identidad externa del firmante no está establecida de forma independiente.
+- Solo inglés declarado; sin soporte multilingüe documentado.
+- Riesgo de alucinación inherente a un modelo de 1,5B en tareas de planificación estructurada; la validez de plan debe verificarse contra el esquema.
+- La latencia de 1467,5 ms corresponde a una sonda histórica en CPU de dos ejecuciones y no constituye un SLA ni una garantía de reproducibilidad tras reinicio.
+- Licencia Apache 2.0 permite uso comercial, pero el estado de investigación y el bloqueo de promoción desaconsejan su uso en producción sin evaluación propia.
+- Requiere pinneado exacto de revisión y runtime compatible; no se garantiza un build de cuantización reproducible.
 
 ## Enlaces
 
-- [Modelo GGUF en Hugging Face](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF)
-- [Modelo base SZL-Khipu-1.5B](https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B)
-- [Repositorio szl-forge en GitHub (Modelfile y espacios)](https://github.com/szl-holdings/szl-forge)
-- [Documentación de Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
-- [Página de SZL Holdings en Hugging Face](https://huggingface.co/SZLHOLDINGS)
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF
+- Revisión revisada del Hub: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF/tree/7c39154b22ccb5e2151b4dd53e0d36965dfbc920
+- Registro de publicación: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF/blob/7c39154b22ccb5e2151b4dd53e0d36965dfbc920/publication.json
+- Esquema del contrato de prompt: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF/blob/7c39154b22ccb5e2151b4dd53e0d36965dfbc920/khipu.schema.json
+- Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
+- Modelo upstream: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Repositorio Forge (build GGUF): https://github.com/szl-holdings/szl-forge/tree/main/khipu-gguf
+- Evidencia de la model card: https://github.com/szl-holdings/szl-forge/blob/2b4d7a0f69e68d60cb0f35f09c9bac837d66acdc/khipu-gguf/card/README.md
+- Árbol de currículo, esquema y recibos: https://github.com/szl-holdings/szl-forge/tree/cddba1ad9887211d6fd87386e98bb6707f16dbf5/khipu
+- Demo Command Lab: https://huggingface.co/spaces/SZLHOLDINGS/szl-command-lab

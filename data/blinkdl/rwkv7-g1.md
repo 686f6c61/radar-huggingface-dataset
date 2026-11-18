@@ -2,85 +2,106 @@
 
 ## Resumen
 
-RWKV7-G1 "GooseOne" es una familia de modelos de lenguaje base desarrollada por BlinkDL, basada en la arquitectura RWKV-7, una red neuronal recurrente (RNN) pura que combina las ventajas de los transformers (entrenamiento paralelizable) con la eficiencia de las RNN (tiempo lineal y espacio constante). El modelo resuelve el problema del coste cuadrático de la atención transformer, eliminando por completo el mecanismo de atención y el cache de claves/valores (kv-cache), lo que permite una inferencia con velocidad constante independientemente de la longitud de la secuencia y un consumo de memoria fijo. Está diseñado como modelo base, es decir, pensado para post-entrenamiento y fine-tuning, aunque también puede usarse directamente con los prompts adecuados.
+RWKV7-G1, también conocido como "GooseOne", es una familia de modelos base de lenguaje desarrollada por BlinkDL dentro del linaje RWKV. A diferencia de los transformers convencionales, RWKV-7 emplea una arquitectura recurrente pura (RNN) con atención linealizada, lo que permite inferencia con coste constante tanto en memoria como en tiempo por token, independientemente de la longitud de la secuencia. El modelo se distribuye como modelo base preentrenado con datos web, código, sintéticos e instrucciones/chat/razonamiento, pensado para post-entrenamiento y ajuste fino posterior.
 
-La familia incluye configuraciones desde 0.1B hasta 13.3B parámetros, con un vocabulario de 65 536 tokens y un tamaño de cabeza de 64. El modelo se ha entrenado con una mezcla de datos web, código, datos sintéticos y datos de instrucción, chat y razonamiento, lo que le confiere capacidades multilingües (12 idiomas) y de razonamiento. Su licencia Apache 2.0 permite uso comercial sin restricciones. La relevancia actual radica en su arquitectura alternativa a los transformers, que ofrece una eficiencia extrema en inferencia y la posibilidad de manejar contextos teóricamente infinitos, posicionándose como una opción atractiva para despliegues en hardware limitado o aplicaciones de baja latencia.
+La familia cubre varios tamaños (0.1B, 0.4B, 1.5B, 2.9B, 7.2B y 13.3B parámetros), con vocabulario de 65.536 tokens y tamaño de cabeza de 64 en todas las variantes actuales. El repositorio principal `BlinkDL/rwkv7-g1` agrupa los pesos en formato safetensors, mientras que las versiones GGUF y para móvil se publican en repositorios separados. La licencia es Apache 2.0, lo que facilita su uso comercial y su integración en productos.
 
-## Especificaciones técnicas
+Su relevancia actual radica en que ofrece una alternativa a los transformers con ventajas claras en despliegue: velocidad de decodificación constante, huella de VRAM estable y buen rendimiento en GPUs de consumo. Según el autor, la variante de 7.2B en fp16 alcanza más de 145 tokens/s en decodificación con batch 1 sobre una RTX 5090, y más de 11.000 tokens/s en prefill, lo que lo posiciona como candidato para inferencia local y aplicaciones móviles.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | RWKV-7 (RNN pura, sin atención transformer, sin kv-cache) |
-| Parametros totales | Múltiples variantes: 0.1B, 0.4B, 1.5B, 2.9B, 7.2B, 13.3B |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Infinito por diseño (sin límite de contexto gracias a la RNN) |
-| Tipos de cuantizacion | GGUF (varias precisiones, ver enlaces) y safetensors |
+| Arquitectura | RWKV-7 (RNN puro con atención linealizada) |
+| Parametros totales | Familia: 0.1B (L12-D768), 0.4B (L24-D1024), 1.5B (L24-D2048), 2.9B (L32-D2560), 7.2B (L32-D4096), 13.3B (L61-D4096) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (arquitectura recurrente de estado constante) |
+| Tipos de cuantizacion | GGUF disponible en repositorios separados; cuantizaciones concretas no disponibles |
 | Idiomas soportados | en, zh, fr, es, de, pt, ru, it, ja, ko, vi, ar |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF, pth (para entrenamiento) |
+| Formato de pesos | safetensors (principal), GGUF, pth (para conversión) |
 
 ## Arquitectura y entrenamiento
 
-RWKV-7 "Goose" es una arquitectura de red neuronal recurrente que se entrena de forma paralela como un transformer, pero que en inferencia opera como una RNN con estado oculto de tamaño fijo. Esto elimina la necesidad de almacenar el cache de atención, reduciendo la complejidad computacional de O(n²) a O(n) y el uso de memoria a O(1) respecto a la longitud de la secuencia. El modelo incorpora innovaciones como DeepEmbed (en la variante rwkv7a) y soporte nativo para relleno en medio (FIM) mediante tokens especiales. El entrenamiento se realizó con una mezcla de datasets públicos: FineWeb-Edu, DCLM-baseline, SlimPajama, The Pile, StarCoderData y OSCAR-2301, además de datos sintéticos y de instrucción/chat/razonamiento. No se especifica el número total de tokens de entrenamiento. La versión G1 corresponde a una iteración de datos más reciente que las versiones G0, con mejor calidad general.
+RWKV-7 es una arquitectura recurrente pura que sustituye la atención cuadrática de los transformers por un mecanismo de estado recurrente con atención linealizada. Esto implica que la generación token a token mantiene un estado de tamaño fijo, de modo que el consumo de VRAM y el tiempo por token son constantes sin importar la longitud del contexto. La familia usa un vocabulario de 65.536 tokens y un head size de 64 en todas las variantes; las dimensiones varían según el tamaño (por ejemplo, 7.2B corresponde a 32 capas y dimensión 4096, y 13.3B a 61 capas y dimensión 4096).
+
+El preentrenamiento combina datos web, código, sintéticos e instrucciones/chat/razonamiento, según indica el autor, con datasets como FineWeb-Edu, DCLM-baseline, SlimPajama-627B, The Pile, StarCoderData y OSCAR-2301. No se especifican en la información disponible el número exacto de tokens, la composición porcentual del dataset ni si se aplicaron fases de RLHF o DPO. La model card menciona que las variantes `rwkv7a` incorporan DeepEmbed y que las versiones `G1c` y posteriores soportan plantillas de FIM y estilos alternativos de "think".
 
 ## Capacidades
 
-- Generación de texto y razonamiento: modelo base con capacidad de razonamiento multi-paso, especialmente cuando se usan prompts de "thinking" (por ejemplo, `<think` o `(think)`).
-- Soporte de tool calling / function calling: mediante plantillas específicas de prompt, puede emitir llamadas a funciones en formato JSON, con parámetros tipados.
-- Soporte de agentes y multi-step reasoning: la documentación incluye guías para trabajo agéntico, con integración de herramientas y respuestas estructuradas.
-- Capacidades multilingües: entrenado en 12 idiomas (inglés, chino, francés, español, alemán, portugués, ruso, italiano, japonés, coreano, vietnamita y árabe).
-- Relleno en medio (FIM): soporta completado de código y texto con el formato `✿prefix✿✿suffix✿...✿middle✿`.
-- Contexto infinito: al ser una RNN, no hay límite teórico de longitud de secuencia; la memoria y la velocidad de inferencia son constantes.
-- Modo "thinking" explícito: se puede activar con prompts como `Assistant: <think` o `User: USER_PROMPT (think)` para forzar razonamiento antes de responder.
-- Inferencia eficiente: con el motor Albatross, alcanza 145+ tokens/s en decodificación con batch 1 para el modelo de 7.2B en una RTX 5090, y más de 10 000 tokens/s en prefill.
+- Generación de texto causal en 12 idiomas: inglés, chino, francés, español, alemán, portugués, ruso, italiano, japonés, coreano, vietnamita y árabe.
+- Razonamiento explícito mediante modo "think" con etiquetas `<think>` y estilos alternativos `(think)`, `(think a bit)` y `(think a lot)` para prompts difíciles.
+- Function calling / tool calling con salida JSON, soportado en modelos G1f de 1.5B en adelante según la model card.
+- Flujos agénticos multi-paso con plantillas de `<tool_call>` y `<tool_response>`.
+- Relleno de código y texto (FIM) con tokens especiales `✿prefix✿`, `✿suffix✿` y `✿middle✿` en modelos G1c y posteriores.
+- Generación creativa y de ficción con parámetros de decodificación específicos recomendados por el autor.
+- Inferencia local en móvil y escritorio mediante la app RWKV Chat y el repositorio rwkv-mobile.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: gracias a su contexto infinito y soporte multilingüe, puede gestionar conversaciones multi-turno largas sin pérdida de rendimiento, manteniendo un historial completo en el estado recurrente.
-- Generación de código en producción: con soporte FIM y function calling, puede integrarse en pipelines de CI/CD para autocompletar código, generar documentación o refactorizar, con latencia constante incluso en archivos muy largos.
-- Razonamiento y análisis de documentos extensos: su capacidad de procesar secuencias largas sin degradación lo hace adecuado para resumir contratos, informes o artículos científicos completos, sin necesidad de truncar el contexto.
-- Agentes autónomos: la combinación de tool calling y multi-step reasoning permite construir agentes que consultan APIs, ejecutan acciones y razonan sobre los resultados, con un coste de inferencia predecible.
-- Traducción automática multilingüe: entrenado en 12 idiomas, puede traducir entre ellos con calidad razonable, y su eficiencia permite despliegue en dispositivos móviles.
-- Fine-tuning para dominios específicos: al ser un modelo base, es ideal para ajustarse con datos propios (por ejemplo, legal, médico o financiero) mediante PEFT o entrenamiento completo, gracias a su licencia permisiva.
-- Asistente de escritura creativa: con los parámetros de decodificación recomendados (temp 0.6, topp 0.6-0.8), produce texto narrativo fluido, y su contexto infinito permite mantener tramas complejas a lo largo de capítulos.
+- Asistente conversacional local en dispositivos móviles: la app RWKV Chat y los modelos móviles permiten ejecutar el modelo sin conexión, aprovechando el coste constante de memoria de la arquitectura recurrente para conversaciones largas.
+- Generación de código en producción con FIM: los modelos G1c y posteriores soportan relleno de código con tokens `✿prefix✿`/`✿suffix✿`/`✿middle✿`, lo que permite integrarlos en editores e IDE para autocompletado en línea.
+- Automatización de agentes con tool calling: la plantilla JSON documentada permite que el modelo invoque funciones como `get_weather`, `get_stock_price` o `create_calendar_event` en pipelines de automatización, con temperatura 0 y top-p 0 para salidas deterministas.
+- Procesamiento de documentos largos: al mantener estado constante, el modelo puede procesar secuencias extensas sin el crecimiento cuadrático de VRAM de los transformers, útil para resúmenes y extracción sobre corpus largos.
+- Atención al cliente multilingüe: con soporte para 12 idiomas, puede gestionar conversaciones multi-turno en entornos donde se requiere cobertura lingüística amplia sin desplegar varios modelos.
+- Generación creativa y narrativa: el autor recomienda parámetros específicos (temp 0.6, top-p 0.6-0.8) para ficción, lo que lo hace adecuado para herramientas de escritura asistida.
+- Base para fine-tuning especializado: al ser modelos base preentrenados con datos de instrucción, sirven como punto de partida para post-entrenamiento con RWKV-PEFT en dominios concretos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona una herramienta de evaluación llamada "UncheatableEval" (https://huggingface.co/spaces/Jellyfish042/UncheatableEval) para comparar el rendimiento en modelado de lenguaje, pero no se proporcionan cifras concretas. Tampoco hay datos de MMLU, HumanEval, GSM8K u otros benchmarks estándar en la documentación accesible.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de inferencia del autor:
+
+| Metrica | Valor reportado |
+|---|---|
+| Decodificación 7.2B fp16 bsz1 @ RTX 5090 | 145+ tokens/s |
+| Decodificación 7.2B fp16 bsz960 @ RTX 5090 | 10.250+ tokens/s |
+| Decodificación 7.2B fp16 bsz320 @ RTX 5090 | 9.650+ tokens/s |
+| Prefill 7.2B fp16 bsz1 @ RTX 5090 | 11.289 tokens/s |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no especificada oficialmente. Para el modelo de 7.2B en fp16, se estima un mínimo de 16 GB de VRAM (sin cuantización). Con cuantización GGUF (por ejemplo, Q4_K_M), puede caber en 6-8 GB.
-- GPU recomendadas: se reporta inferencia eficiente en RTX 5090 (145+ tokens/s para 7.2B fp16). También funciona en GPUs consumer de gama media con cuantización, y en CPU mediante llama.cpp.
-- Compatibilidad con consumer GPU: sí, especialmente las variantes pequeñas (0.1B, 0.4B, 1.5B) pueden ejecutarse en cualquier GPU moderna o incluso en CPU. La variante 7.2B requiere una GPU con al menos 12-16 GB para fp16, o menos con cuantización.
-- Opciones de despliegue: motor Albatross (inferencia optimizada), paquete pip `rwkv`, llama.cpp (para GGUF), Ollama (colecciones de GGUF), y aplicaciones móviles (RWKV Chat).
-- Latencia y throughput: con Albatross en RTX 5090, se reportan 145+ tokens/s en decodificación con batch 1, 10 250+ tokens/s con batch 960, y 11 289 tokens/s en prefill con batch 1, todo para el modelo de 7.2B fp16. La velocidad es constante independientemente de la longitud de la secuencia.
+- VRAM estimada para inferencia: no disponible de forma oficial; para 7.2B en fp16 se requiere aproximadamente el tamaño de los pesos más el estado recurrente, y las versiones GGUF permiten reducir la huella.
+- GPU recomendadas: el autor reporta métricas sobre RTX 5090; por la naturaleza recurrente, GPUs de consumo como RTX 4090 o superiores son adecuadas para las variantes de 1.5B a 7.2B.
+- Cabe en GPU de consumo: sí, especialmente las variantes de 0.1B a 2.9B y las cuantizaciones GGUF de 7.2B.
+- Opciones de despliegue: paquete `rwkv` de PyPI, Albatross (GUI y motor de inferencia), llama.cpp/GGUF vía conversor `convert_rwkv_pth_to_gguf.py`, Ollama (repositorios `shoumenchougou` y `mollysama`), rwkv-mobile para Android/iOS.
+- Latencia y throughput: según el autor, 145+ tokens/s en decodificación bsz1 y 11.289 tokens/s en prefill para 7.2B fp16 en RTX 5090; velocidad y VRAM constantes independientemente de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks para comparar directamente con otros modelos. Sin embargo, a nivel arquitectónico, RWKV-7 compite con otras arquitecturas de estado oculto lineal como Mamba (SSM) y con transformers pequeños de tamaño similar (por ejemplo, Llama 3.2 3B, Qwen 2.5 7B). La principal diferencia es que RWKV-7 ofrece contexto infinito y velocidad de inferencia constante, mientras que los transformers tienen límites de contexto fijos y coste cuadrático. En cuanto a licencia, Apache 2.0 es más permisiva que las licencias de Llama (comunitaria) o Qwen (Apache 2.0 también). No se puede realizar una comparación cuantitativa de rendimiento sin datos de benchmarks.
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| RWKV7-G1 | 0.1B–13.3B | No disponible (estado constante) | RNN con atención linealizada | Apache 2.0 | Hugging Face, GGUF, Ollama, móvil |
+| Transformers densos de 7B (p. ej. Llama 3.1 8B) | ~8B | 128K | Transformer | Licencia comunitaria | Hugging Face, GGUF, Ollama |
+| Mamba-2 (familias disponibles) | Variable | Variable | SSM híbrido | Apache 2.0 en algunas variantes | Hugging Face |
+
+La comparación cuantitativa de rendimiento no está disponible en la información proporcionada; los benchmarks publicados por el autor se limitan a métricas de inferencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al entrenarse con datos web no filtrados exhaustivamente, puede heredar sesgos sociales, culturales o de género presentes en el corpus.
-- Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento complejo si no se usan los prompts de "thinking" adecuados.
-- Limitaciones de contexto: aunque el diseño permite contexto infinito, en la práctica puede haber degradación en la coherencia para secuencias extremadamente largas (más de decenas de miles de tokens), aunque no se documenta un límite concreto.
-- Sensibilidad al tokenizador: la model card advierte explícitamente que no debe haber espacios al final del prompt, ya que el tokenizador puede producir respuestas no deseadas o en otro idioma.
-- Modelo base no alineado: no está diseñado para uso conversacional directo sin ajuste; requiere prompts específicos (chat, think, function call) o fine-tuning para obtener respuestas útiles.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe mantener el aviso de copyright y las condiciones de la licencia en redistribuciones.
-- Requisitos de hardware para variantes grandes: el modelo de 13.3B requiere al menos 32 GB de VRAM en fp16, lo que limita su despliegue en hardware consumer.
+- Son modelos base: requieren post-entrenamiento o instrucciones adecuadas para uso conversacional fiable; no están alineados con RLHF de forma explícita según la información disponible.
+- Riesgo de alucinación inherente a modelos de lenguaje preentrenados, sin datos publicados sobre tasas de error.
+- El tokenizer es sensible a espacios finales en la entrada: el autor advierte que un espacio al final del prompt puede provocar respuestas en otro idioma.
+- La longitud de contexto efectiva no está documentada; aunque la arquitectura mantiene estado constante, la calidad en secuencias muy largas no se especifica.
+- No se detallan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte formal.
+- El repositorio principal ocupa 721,2 GB, lo que implica descargas pesadas si se clonan todos los pesos; conviene descargar solo la variante necesaria.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/BlinkDL/rwkv7-g1
-- Sitio web oficial: https://rwkv.com/
-- Repositorio RWKV-LM (entrenamiento): https://github.com/BlinkDL/RWKV-LM
-- Motor de inferencia Albatross: https://github.com/BlinkDL/Albatross
-- Aplicación RWKV Chat: https://rwkv.halowang.cloud/ y https://github.com/RWKV-APP/RWKV_APP
-- Pesos en safetensors: https://huggingface.co/RWKV
-- Colección GGUF: https://huggingface.co/collections/shoumenchougou/rwkv7-gxx-gguf
-- Ollama (GGUF): https://ollama.com/shoumenchougou
+- Safetensors oficiales: https://huggingface.co/RWKV
+- GGUF (colección): https://huggingface.co/collections/shoumenchougou/rwkv7-gxx-gguf
+- Pesos GGUF y móviles: https://huggingface.co/HaloWang/rwkv-weights y https://huggingface.co/mollysama/rwkv-mobile-models
+- Ollama: https://ollama.com/shoumenchougou y https://ollama.com/mollysama
+- Demo y web oficial: https://rwkv.com/
+- GUI Albatross: https://github.com/BlinkDL/Albatross/blob/main/faster3a_2607/app4b.py
+- App RWKV Chat: https://rwkv.halowang.cloud/ y https://github.com/RWKV-APP/RWKV_APP
+- Conversor pth a GGUF: https://github.com/MollySophia/rwkv-mobile/blob/master/converter/convert_rwkv_pth_to_gguf.py
+- Entrenamiento: https://github.com/BlinkDL/RWKV-LM y https://github.com/Joluck/RWKV-PEFT
+- Inferencia eficiente: https://github.com/BlinkDL/Albatross
+- Paquete pip: https://pypi.org/project/rwkv/
 - Inferencia móvil: https://github.com/MollySophia/rwkv-mobile
-- Guía de prompts y function calling: https://github.com/BlinkDL/RWKV-LM/blob/main/RWKV-v7/RWKV7-G1x-templates.txt
-- Herramienta de evaluación UncheatableEval: https://huggingface.co/spaces/Jellyfish042/UncheatableEval
-- Script de conversión pth a GGUF: https://github.com/MollySophia/rwkv-mobile/blob/master/converter/convert_rwkv_pth_to_gguf.py
+- Guía de prompts (function call y agentes): https://github.com/BlinkDL/RWKV-LM/blob/main/RWKV-v7/RWKV7-G1x-templates.txt
+- Buenas prácticas agénticas: https://agent.objects.rwkvos.com/en
+- Ejemplo de evaluación: https://github.com/BlinkDL/Albatross/blob/main/faster3a_2605/eval_gpqa_diamond.py
+- UncheatableEval: https://huggingface.co/spaces/Jellyfish042/UncheatableEval

@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "tencent/Hy4-flash",
+  "slug": "tencent-hy4-flash",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/Hy4-flash",
+  "created_at": "2026-11-17T03:44:46.000Z",
+  "updated_at": "2026-11-18T04:24:08.000Z",
+  "license": "tencent-hy-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hy_v4_flash",
+    "text-generation",
+    "hunyuan",
+    "hy4-flash",
+    "moe",
+    "multimodal",
+    "instruct",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 220251201958,
+  "parameters_human": "220.25B",
+  "storage_bytes": 440523542284,
+  "storage_human": "440.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Tencent",
+      "url": "https://www.tencent.com/",
+      "snippet": "Nov 2, 2026 · Tencent is improving quality of life around the world through innovative technology, products and services"
+    },
+    {
+      "title": "Tencent — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent ... La Tencent Tower, qui abrite le siège de Tencent. Tencent Holdings Limited est une entreprise chinoise créée en 1998, …"
+    },
+    {
+      "title": "Tencent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent",
+      "snippet": "Its twin-skyscraper headquarters, Tencent Seafront Towers (also known as Tencent Binhai Mansion) are based in the Nanshan …"
+    },
+    {
+      "title": "Tencent Games",
+      "url": "https://www.tencent.com/products/tencent-games/",
+      "snippet": "Tencent Games was launched in 2003, and has since grown into the leading global platform for game developer, publishing and …"
+    },
+    {
+      "title": "Home | Tencent Careers",
+      "url": "https://careers.tencent.com/en-us/home.html",
+      "snippet": "With electrifying appearances from Tencent founder and CEO Pony Ma, senior executives, celebrities and employees, as well as …"
+    }
+  ]
+}

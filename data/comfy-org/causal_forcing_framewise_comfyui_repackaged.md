@@ -2,75 +2,83 @@
 
 ## Resumen
 
-Causal Forcing Framewise es un modelo de difusión de un solo archivo (single-file) redistribuido por Comfy-Org, la organización responsable del popular framework de generación de imágenes y vídeo ComfyUI. El repositorio actúa como un paquete de instalación directa: los archivos están preparados para colocarse en la carpeta `models/diffusion_models/` de ComfyUI, eliminando la necesidad de conversiones o ajustes manuales.
+Causal Forcing Framewise es un modelo de generacion de video a partir de texto (text-to-video) publicado originalmente por zhuhz22 bajo el identificador `zhuhz22/Causal-Forcing`. El repositorio aqui descrito no es el modelo original, sino un reempaquetado realizado por Comfy-Org que redistribuye los pesos en un unico archivo `safetensors` compatible con el nodo de modelos de difusion de ComfyUI. El objetivo de este reempaquetado es puramente operativo: permitir cargar el modelo en ComfyUI sin depender del formato de pesos original del autor.
 
-El nombre del modelo sugiere una arquitectura de difusión con forzado causal aplicado fotograma a fotograma (framewise), lo que apunta a un uso orientado a la generación de secuencias temporales coherentes, como vídeo o animaciones. El repositorio tiene un tamaño de 5,7 GB, consistente con un modelo de difusión de tamaño medio-grande en precisión FP16 o BF16. La licencia declarada en el frontmatter del README es Apache 2.0, lo que permite uso comercial y modificación.
+El modelo pertenece a la familia de modelos de difusion para video, segun la etiqueta `diffusion-single-file` y el pipeline `text-to-video` declarados en el repositorio. El nombre "Causal Forcing" sugiere una formulacion autorregresiva o de forzamiento causal en el proceso de generacion, y el sufijo "framewise" indica que el modelo opera fotograma a fotograma. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto temporal, la composicion del dataset de entrenamiento ni los resultados de benchmarks.
 
-La relevancia actual de este modelo radica en su integración directa con ComfyUI, un ecosistema ampliamente adoptado por la comunidad de IA generativa. Al ser un repackaging oficial de Comfy-Org, los usuarios pueden confiar en que los pesos están correctamente formateados y son compatibles con las versiones recientes del framework. Sin embargo, la documentación es extremadamente escasa: no se proporcionan detalles sobre arquitectura interna, datos de entrenamiento ni benchmarks.
+La relevancia de este repositorio es practica para desarrolladores que ya trabajan con ComfyUI: ofrece un artefacto de 5,7 GB listo para colocar en `ComfyUI/models/diffusion_models/`, con licencia Apache 2.0, lo que facilita la experimentacion y el despliegue sin friccion de formato. Cualquier evaluacion tecnica profunda del modelo debe remitirse al repositorio original del autor.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusión, posiblemente con forzado causal por fotogramas) |
+| Arquitectura | modelo de difusion para video (text-to-video), variante "causal forcing" framewise; detalles internos no disponibles |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (no es un modelo de lenguaje) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible; el repositorio distribuye pesos en safetensors de un solo archivo |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (archivo `causal_forcing-framewise.safetensors`) |
+| Formato de pesos | safetensors (archivo unico `causal_forcing-framewise.safetensors`) |
+
+Otros datos del repositorio: tamanio de 5,7 GB, libreria `diffusion-single-file`, 8.009 descargas y 15 likes en el momento de la consulta, creado el 25 de marzo de 2026 y actualizado el 28 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo. El nombre "Causal Forcing Framewise" sugiere un mecanismo de forzado causal aplicado a cada fotograma, típico de modelos de difusión para vídeo que generan secuencias temporales manteniendo coherencia entre frames consecutivos. Sin embargo, no se especifica si se trata de un UNet, un DiT (Diffusion Transformer) o una arquitectura híbrida.
+La informacion disponible solo permite afirmar que se trata de un modelo de difusion para generacion de video a partir de texto, empaquetado como archivo unico para ComfyUI. La etiqueta `base_model: zhuhz22/Causal-Forcing` y `base_model:finetune: zhuhz22/Causal-Forcing` indica que este artefacto deriva del modelo original de zhuhz22, pero no se documenta en este repositorio si hubo un proceso de fine-tuning adicional, ni que tipo de ajuste se aplico.
 
-Tampoco hay datos sobre el dataset de entrenamiento, el número de tokens o pasos de entrenamiento, ni sobre técnicas de alineación como RLHF o DPO. El repositorio es únicamente un paquete de distribución de pesos, sin documentación técnica adicional.
+No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, etc.). El termino "causal forcing" y el sufijo "framewise" apuntan a una generacion condicionada fotograma a fotograma, pero la model card del reempaquetado no desarrolla la formulacion matematica ni los detalles del entrenamiento. Toda esta informacion debe consultarse en el repositorio original `zhuhz22/Causal-Forcing`.
 
 ## Capacidades
 
-- Generación de imágenes o vídeo mediante difusión, con posible coherencia temporal entre fotogramas (implícito en el nombre "framewise" y "causal forcing").
-- Integración directa con ComfyUI: los archivos están listos para usarse en el nodo de difusión estándar del framework.
-- Formato safetensors, lo que garantiza carga segura sin ejecución de código arbitrario.
-- Compatibilidad con el ecosistema ComfyUI, incluyendo nodos de muestreo, VAE y postprocesado.
-
-No se dispone de información sobre capacidades específicas como tool calling, agentes, razonamiento o soporte multilingüe, ya que no es un modelo de lenguaje.
+- Generacion de video a partir de prompts de texto (pipeline `text-to-video`).
+- Generacion fotograma a fotograma ("framewise"), orientada a secuencias de video.
+- Integracion nativa con ComfyUI mediante carga en `models/diffusion_models/`.
+- No se documentan capacidades de tool calling, function calling ni comportamiento agentico.
+- No se documentan modos de razonamiento explicito (thinking mode), vision, audio ni otras modalidades.
+- Cobertura multilingue: no disponible.
 
 ## Casos de uso
 
-- Generación de vídeo en ComfyUI: el modelo puede utilizarse en pipelines de difusión para crear secuencias de fotogramas coherentes, aprovechando el forzado causal para mantener consistencia temporal.
-- Animación de imágenes estáticas: mediante técnicas de frame interpolation o generación condicionada, el modelo puede producir transiciones suaves entre estados visuales.
-- Prototipado rápido de efectos visuales: los artistas pueden integrar el modelo en flujos de trabajo de ComfyUI para explorar estilos y movimientos sin necesidad de herramientas de vídeo tradicionales.
-- Investigación en difusión temporal: el modelo sirve como punto de partida para estudiar mecanismos de forzado causal en generación secuencial.
-- Educación en IA generativa: al estar empaquetado para ComfyUI, es un recurso didáctico para enseñar pipelines de difusión de vídeo.
-- Despliegue en producción creativa: estudios que ya usan ComfyUI pueden incorporar este modelo en sus pipelines existentes sin cambios de infraestructura.
+- Prototipado rapido de video generativo en ComfyUI: el archivo unico se coloca en `models/diffusion_models/` y queda disponible para grafos de nodos, lo que reduce el tiempo de puesta en marcha frente a conversiones manuales de pesos.
+- Generacion de clips para previsualizacion creativa: estudio de storyboards y animaticas a partir de descripciones textuales antes de producir material definitivo.
+- Iteracion de prompts en pipelines de diseno: al integrarse en ComfyUI, permite encadenar nodos de preprocesado, generacion y postprocesado en un mismo grafo reproducible.
+- Automatizacion de contenido de video a escala moderada: con licencia Apache 2.0, el artefacto puede incorporarse en flujos internos de generacion por lotes sin restricciones de uso comercial derivadas de la licencia.
+- Investigacion sobre modelos de difusion para video: sirve como punto de partida reproducible para comparar variantes framewise frente a otros modelos text-to-video cargados en el mismo entorno.
+- Despliegue en entornos de investigacion con GPU de gama alta: el tamanio de 5,7 GB del artefacto permite alojarlo en estaciones de trabajo con VRAM suficiente, aunque la VRAM exacta requerida no esta documentada.
+- Educacion y demos: al estar reempaquetado por Comfy-Org, facilita talleres y demostraciones de generacion de video sin necesidad de manejar el formato original del autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre métricas como FID, CLIP score, ni comparaciones con otros modelos de difusión.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo pesa 5,7 GB, por lo que en FP16 se necesitan al menos 8 GB de VRAM para cargar el modelo completo. Con cuantización a 8 bits o 4 bits, podría caber en GPUs de 6 GB, aunque no se proporcionan archivos cuantizados.
-- GPU recomendadas: RTX 3060 (12 GB) o superior para trabajar cómodamente en FP16. Para generación de vídeo con secuencias largas, se recomienda RTX 4090 o A100.
-- Compatibilidad con consumer GPU: sí, en GPUs con 8 GB o más de VRAM.
-- Opciones de despliegue: ComfyUI es el destino principal. También puede usarse con Diffusers si se convierten los pesos, aunque no se proporciona esa conversión.
-- Latencia y throughput: no disponibles. Dependerá de la resolución, número de pasos de muestreo y hardware.
+- VRAM estimada para inferencia: no disponible. El repositorio no documenta requisitos de memoria; el tamanio del artefacto (5,7 GB) es un limite inferior orientativo para los pesos, no para la VRAM total necesaria.
+- GPU recomendadas: no disponible. No se especifican modelos concretos (A100, H100, RTX 4090, etc.).
+- Viabilidad en GPU de consumo: no disponible; no hay datos que permitan confirmar si cabe en tarjetas consumer.
+- Opciones de despliegue: ComfyUI (entorno objetivo del reempaquetado). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que en cualquier caso estan orientados a modelos de lenguaje y no a difusion de video.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El modelo no tiene documentación pública sobre su arquitectura ni rendimiento, y no se conocen alternativas directas con el mismo enfoque de "causal forcing framewise" en el ecosistema ComfyUI. Modelos como Stable Video Diffusion o AnimateDiff podrían ser comparables en funcionalidad (generación de vídeo), pero no se dispone de datos objetivos para contrastarlos.
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria ni datos de rendimiento que permitan establecer una comparacion objetiva.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: no hay información sobre arquitectura, entrenamiento, ni limitaciones conocidas del modelo.
-- Riesgo de alucinación visual: como todo modelo de difusión, puede generar artefactos o inconsistencias en secuencias largas.
-- Sin garantías de calidad: al no haber benchmarks publicados, no se puede evaluar su rendimiento frente a alternativas establecidas.
-- Dependencia de ComfyUI: el formato de pesos está pensado para este framework; su uso en otros entornos requiere conversión manual no documentada.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar que los pesos originales (si provienen de otro autor) no tengan restricciones adicionales.
-- Tamaño del repositorio: 5,7 GB puede ser un inconveniente para despliegues en entornos con ancho de banda limitado.
+- Este repositorio es un reempaquetado de Comfy-Org, no el modelo original; para documentacion tecnica, citacion y soporte debe acudirse a `zhuhz22/Causal-Forcing`.
+- Ausencia total de datos sobre arquitectura interna, parametros, contexto y entrenamiento en la informacion disponible; no es posible evaluar calidad ni idoneidad con rigor.
+- Riesgo de alucinacion visual y artefactos propios de los modelos de difusion de video: no cuantificado por falta de benchmarks.
+- Sesgos conocidos: no documentados; los sesgos del dataset original son desconocidos en este repositorio.
+- Cobertura idiomatica no declarada; no se puede garantizar el comportamiento con prompts en castellano.
+- Licencia Apache 2.0: permite uso comercial y modificacion con las obligaciones habituales de atribucion y aviso de cambios; conviene verificar la licencia del modelo original antes de redistribuir.
+- El artefacto esta pensado exclusivamente para ComfyUI; su uso fuera de ese entorno requiere conversion de formato.
+- No se documentan limitaciones de contexto temporal (duracion maxima de clip, resolucion o tasa de fotogramas); deben consultarse en el repositorio original.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/causal_forcing_framewise_ComfyUI_repackaged
-- Sitio oficial de ComfyUI: https://www.comfyui.org/ (no verificado en la información proporcionada)
+- Repositorio reempaquetado: https://huggingface.co/Comfy-Org/causal_forcing_framewise_ComfyUI_repackaged
+- Modelo original: https://huggingface.co/zhuhz22/Causal-Forcing
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
+- Comfy Cloud: https://cloud.comfy.org/
+- ComfyUI France (comunidad francofona): https://comfyui.fr/

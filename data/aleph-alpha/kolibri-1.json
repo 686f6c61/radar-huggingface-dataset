@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 1014,
-  "downloads_30d": 10818,
+  "downloads_30d": 10744,
   "trending_score": 10,
   "parameters": 78103074560,
   "parameters_human": "78.10B",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Aleph | Vente de matériel pédagogique",
-      "url": "https://aleph.pro/",
-      "snippet": "La société Aleph Pro diffuse des outils pédagogiques, rapporteurs circulaires et « règle-équerres », qui favorisent l’apprentissage …"
-    },
-    {
-      "title": "Aleph (lettre) — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Aleph_(lettre)",
-      "snippet": "Aleph ou alef (hébreu : אָלֶף), א, est la première lettre de l' alphabet hébreu, où elle note le phonème / ʔ / (coup de glotte). Le …"
-    },
-    {
-      "title": "Aleph : symbolisme et signification spirituelle (Kabbale)",
-      "url": "https://www.jepense.org/aleph-symbolisme-signification/",
-      "snippet": "Feb 28, 2021 · Aleph est la première lettre de l’alphabet hébraïque, qui en comporte 22. Elle correspond à la lettre A de la plupart …"
-    },
-    {
-      "title": "Kolibri: A Sovereign European Model on the Pareto Frontier",
-      "url": "https://aleph-alpha.com/downloads/tech-report.pdf",
-      "snippet": "Scores taken from Tables 17, 28 and 29; eval description in Section 3.3.1; plot description in AppendixA. 1https://huggingface.co/Aleph-Alpha/kolibri-1. 1 ..."
-    },
-    {
-      "title": "Commander nos produits - Aleph",
-      "url": "https://aleph.pro/10-nos-produits",
-      "snippet": "Pour les commandes réglées par mandat administratif, merci de vous rendre sur la page chèques et mandats"
-    }
-  ]
+  "sources": []
 }

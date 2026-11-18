@@ -2,97 +2,89 @@
 
 ## Resumen
 
-Minimax-h3_Singularity-x-10Eros-Max_PRISM es un merge de pesos publicado por el usuario OliviaRossi en Hugging Face. Combina dos finetunes del modelo MiniMax-H3 etiquetados como ref2va: `WarmBloodAban/Minimax-h3_Singularity` (fichero `Minimax-h3_Singularity_ref2va_v2_bf16.safetensors`) y `TenStrip/10Eros-Max` (variante turbo de 8 pasos, `10Eros_Max_h3_8stepTURBO_beta6_bf16.safetensors`). El resultado se distribuye como un unico fichero safetensors en fp16 dentro de un repositorio de 102,4 GB.
+Minimax-h3_Singularity-x-10Eros-Max_PRISM es un merge de pesos publicado por el usuario OliviaRossi en Hugging Face. Combina dos finetunes del modelo base Minimax-H3 en su variante Ref2VA: `WarmBloodAban/Minimax-h3_Singularity` (fichero `Minimax-h3_Singularity_ref2va_v2_bf16.safetensors`) y `TenStrip/10Eros-Max` (fichero `10Eros_Max_h3_8stepTURBO_beta6/7.safetensors`, un turbo de 8 pasos). No se trata de un modelo entrenado desde cero, sino de una fusión de pesos orientada a generación de vídeo/imagen (por la naturaleza Ref2VA y por los ejemplos multimedia de la model card).
 
-El interes no esta en el modelo base, del que la model card no ofrece ningun detalle de arquitectura, tamano ni datos de entrenamiento, sino en el algoritmo de fusion que da nombre al merge: PRISM, un procedimiento en cuatro etapas que combina descomposicion SVD con separacion estructurada/ruidosa, interpolacion geodesica polar por filas, mediacion de conflictos de signo y reanclaje de magnitud. La card documenta ademas la proporcion de pesos del modelo B por bloque temporal, con una rampa de 0,45 en las capas tempranas a 0,65 en las tardias.
+El interés del artefacto reside en el algoritmo de fusión propietario que el autor denomina PRISM, que no utiliza mergekit. Según la model card, PRISM combina descomposición SVD aleatorizada con interpolación geodésica polar, mediación de conflictos de signo y reanclaje de magnitud por filas. El repositorio ocupa 447,9 GB y acumula más de 512.000 descargas, lo que sugiere un uso intensivo dentro de la comunidad de merges de Minimax-H3.
 
-Es relevante como caso de estudio de tecnicas de model merging sobre modelos generativos de gran tamano, no como modelo listo para produccion: acumula cero descargas, seis likes y ninguna evaluacion publicada en el momento de redactar esta ficha.
+La relevancia actual es doble: por un lado, documenta una técnica de merging alternativa a las habituales (TIES, DARE, SLERP, model stock); por otro, el autor publica variantes derivadas (PRISM+PIKA, PRISM-DMAD-PDMD) y afirma que la versión PRISM-DMAD-PDMD es la mejor "out-of-the-box" para texturas de piel realistas con 8 pasos, sin necesidad de LoRA Turbo. La licencia es "other" y hereda las condiciones de los modelos fuente.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (merge de pesos de dos finetunes de MiniMax-H3; la card no documenta la arquitectura subyacente) |
-| Parametros totales | No disponible (por el tamano del fichero fp16, estimacion no confirmada en el entorno de ~50 000 millones) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Solo fp16 publicado; no se distribuyen GGUF, int8, fp8 ni variantes de 4 bits |
-| Idiomas soportados | No disponible |
-| Licencia | other (sujeta a las licencias de los modelos base, que deben verificarse) |
-| Formato de pesos | safetensors (fp16), fichero unico `Minimax-h3_Singularity_x_10Eros-Max_PRISM_fp16.safetensors` |
-| Tarea declarada | ref2va (segun tags y libreria `minimax-h3`) |
-| Variante de muestreo | Turbo de 8 pasos heredada del modelo B |
-| Algoritmo de merge | PRISM (SVD espectral + geodesica polar + mediacion de signos + reanclaje) |
-| Tamano del repositorio | 102,4 GB |
-| Autor | OliviaRossi |
-| Descargas / likes | 0 / 6 |
-| Fecha de creacion | 2026-10-24 (actualizado el mismo dia) |
+| Arquitectura | no disponible (modelo base Minimax-H3, variante Ref2VA; arquitectura concreta no especificada en la información) |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | fp16 (fichero principal); int8 e int8HQ en variantes derivadas; w6a8_g32 en la variante de bajo VRAM |
+| Idiomas soportados | no disponible |
+| Licencia | other (sujeta a las licencias de los modelos fuente) |
+| Formato de pesos | safetensors (fp16) |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura del modelo subyacente MiniMax-H3: no hay datos de capas, atencion, tipo de transformer ni modalidad explicita. Los unicos indicios son el tag `ref2va`, la libreria declarada `minimax-h3`, la presencia de un video de demostracion (`TestMe.mp4`) y la existencia de un finetune "8-step turbo", patron habitual en modelos generativos con destilacion de pasos de muestreo. Cualquier afirmacion sobre si es difusion, transformer multimodal o hibrido seria especulacion: no disponible.
+El modelo no se entrena: es un merge de pesos. La model card describe el método PRISM en cuatro etapas. Primero, una "spectral denoise": se calcula la diferencia D = B − A y se descompone mediante SVD aleatorizada en una parte estructurada L (rango ≤ 64) y un remanente difuso R, reconstruyendo B' = A + L + gamma·R con gamma adaptativo en el intervalo [0,92, 1]. Segundo, una "polar geodesic": para cada fila de salida, la dirección se interpola por SLERP y la magnitud por interpolación geométrica en dominio logarítmico. Tercero, una "sign-conflict mediation" que empuja los elementos salientes de signo opuesto hacia el ganador ponderado. Cuarto, un "magnitude re-anchor" que reescala cada fila a la norma geométrica objetivo.
 
-Si esta documentado el proceso de fusion PRISM, aplicado sobre el par A = Singularity (v2 bf16) y B = 10Eros-Max (turbo 8 pasos): (1) separacion D = B - A mediante SVD aleatorizado en una parte estructurada L de rango <= 64 y un resto difuso R, con B' = A + L + gamma·R y gamma adaptativo en [0,92, 1]; (2) interpolacion geodesica polar por fila de salida, con direccion por SLERP y magnitud interpolada en dominio logaritmico; (3) mediacion de conflictos de signo, atrayendo los elementos salientes de signo opuesto hacia el ganador ponderado; (4) reanclaje de magnitud para devolver cada fila a la norma geometrica objetivo. La proporcion de B por bloque sigue `{'t_early': 0.45, 't_late': 0.65, 't_default': 0.55, 't_time': 0.75, 't_head': 0.7, 't_ref': 0.45}`, con rampa suave de capas tempranas a tardias y media aproximada de 0,55. No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni etapas de RLHF/DPO: el merge no entrena, solo recombina pesos ya ajustados.
+Los modelos fuente son dos finetunes de Minimax-H3 Ref2VA: Singularity (en bf16) y 10Eros-Max (un turbo de 8 pasos). No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en los finetunes originales. El repositorio incluye además variantes experimentales documentadas en la model card: 10Eros_Max_h3_8stepTURBO_beta7_SingularityV2_int8HQ, 10Eros_Max_h3_TURBO-hybrid_beta5_Singularity_v1.3_int8, 10Eros_Max_SingularityV2_PikaFlex_1.00_int8HQ, 10Eros_Max_SingularityV2_PikaFlex_0.85_int8HQ, 10Eros_Max_SingularityV2_PRISM2_PikaFlex_0.85_int8HQ, PRISM_DMAD_PDMD_int8 y PRISM_DMAD_PDMD_w6a8_g32.
 
 ## Capacidades
 
-- Generacion condicionada por referencia (`ref2va`): el tag y el video de demo apuntan a generacion audiovisual a partir de una referencia, aunque la card no especifica la modalidad exacta.
-- Muestreo rapido: hereda la variante turbo de 8 pasos del modelo B, pensada para reducir el coste de inferencia frente a schedules largos.
-- Mezcla de comportamientos: al integrar ~55 % de B de media, el merge persigue conservar el estilo del finetune 10Eros-Max sin perder la base de Singularity.
-- Soporte de tool calling / function calling: no documentado y no esperable en un merge de pesos de este tipo.
-- Soporte de agentes o razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentadas.
-- Modos especiales (thinking, vision, audio): no documentados salvo la etiqueta `ref2va`.
+- Generación de vídeo e imagen: la variante Ref2VA y los ejemplos multimedia de la model card (ficheros MP4 de muestra) apuntan a generación visual condicionada por referencia.
+- Inferencia rápida: el modelo fuente 10Eros-Max es un turbo de 8 pasos, por lo que el merge está pensado para pocos pasos de muestreo.
+- Texturas realistas: el autor afirma que la variante PRISM-DMAD-PDMD ofrece "texturas de piel ultrarrealistas y nítidas" con 8 pasos y sin LoRA Turbo.
+- Compatibilidad con samplers y schedulers: la model card recomienda Euler/Beta57 y un shift de 12/3 para la variante PRISM-DMAD-PDMD.
+- Variantes de bajo VRAM: existe una versión w6a8_g32 pensada para GPUs con poca memoria.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso, matemáticas ni multilingüismo textual.
 
 ## Casos de uso
 
-- Experimentacion en model merging: PRISM sirve como referencia reproducible para probar separacion espectral + geodesica polar sobre modelos de gran tamano; el `merge_report.json` permite auditar que tensores entraron en la ejecucion final.
-- Prototipado de generacion condicionada por referencia: si se confirma la modalidad ref2va, el modelo permitiria generar contenido audiovisual a partir de una imagen o clip de referencia en pocos pasos, util para pruebas de concepto de producto.
-- Investigacion sobre destilacion de pasos: comparar el resultado de mezclar un finetune turbo de 8 pasos con una variante bf16 estandar permite medir cuanto del comportamiento turbo se conserva tras la fusion.
-- Creacion de variantes de estilo: la rampa de proporciones por bloque (0,45 en capas tempranas, 0,65 en tardias) sugiere un control fino del grado de "estilo B" aplicado por profundidad, reutilizable para ajustar un merge propio.
-- Base para futuros finetunes: al estar en fp16 y safetensors, puede servir como punto de partida para LoRA o ajustes posteriores, siempre que la licencia de los modelos base lo permita.
-- Docencia y formacion tecnica: caso practico de tecnicas avanzadas de merging (SVD truncada, SLERP, resolucion de conflictos de signo) con hiperparametros publicados y trazabilidad de origenes.
-- Analisis forense de pesos: util para estudiar como se propaga el ruido de una SVD truncada a rango 64 sobre un modelo de ~100 GB.
+- Generación de retratos fotorrealistas: usar PRISM_DMAD_PDMD_int8 con 8 pasos, sampler Euler/Beta57 y shift 12/3 para obtener pieles detalladas sin LoRA Turbo adicional, según la recomendación del autor.
+- Prototipado rápido de vídeo condicionado por referencia: la variante Ref2VA permite partir de una imagen o clip de referencia y generar variaciones en pocos pasos, adecuado para equipos que iteran sobre storyboards.
+- Despliegue en GPUs de consumo: la variante PRISM_DMAD_PDMD_w6a8_g32 está pensada explícitamente para GPUs con VRAM limitada, lo que facilita pruebas locales en tarjetas de gama media.
+- Exploración de técnicas de merging: el método PRISM (SVD + SLERP + mediación de signos) sirve como referencia para investigadores que quieran reproducir o comparar estrategias de fusión frente a mergekit.
+- Producción de assets para videojuegos o publicidad: la combinación de turbo de 8 pasos y texturas realistas reduce el coste por iteración en pipelines de generación de material gráfico.
+- Comparación de variantes en A/B testing: el repositorio incluye múltiples merges (PIKA 1.00, PIKA 0.85, PRISM2+PIKA, DMAD-PDMD) que permiten evaluar el compromiso entre velocidad, realismo y consumo de VRAM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas objetivas (FID, CLIP score, MMLU, HumanEval ni similares), no hay evaluaciones de terceros y el repositorio acumula cero descargas, por lo que no existe evidencia empirica de calidad del merge frente a sus modelos base.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente incluye valoraciones cualitativas del autor y vídeos de muestra, sin métricas numéricas (FID, CLIP score, MMLU u otras).
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero fp16 ocupa practicamente todo el repositorio de 102,4 GB, de modo que la inferencia en fp16 requiere del orden de 100-110 GB de memoria, incluyendo overhead de activaciones.
-- GPU recomendadas: 2x A100 80 GB o 2x H100 80 GB en fp16 sin cuantizar; una unica H200 de 141 GB o B200 simplificarian el despliegue.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090 (32 GB). Solo seria viable con offload a RAM del sistema, a costa de una latencia muy superior.
-- Cuantizacion: no se publican ficheros GGUF, int8 ni fp8, por lo que no existe una ruta probada para reducir huella de memoria; habria que generarla a partir del safetensors original.
-- Despliegue: vLLM, TGI, llama.cpp u Ollama no son aplicables a priori (estan orientados a LLM y no hay formato compatible documentado). Se asume un runtime propio de la libreria `minimax-h3`, cuya documentacion no esta disponible.
-- Latencia y throughput: no disponibles. El esquema turbo de 8 pasos reduce el numero de evaluaciones por muestra frente a schedules de 20-50 pasos, pero no se aportan tiempos medidos.
+- VRAM estimada: no disponible de forma explícita. El repositorio completo ocupa 447,9 GB, lo que implica que el fichero fp16 principal es de gran tamaño; las variantes int8 e int8HQ reducen el requisito aproximadamente a la mitad, y la variante w6a8_g32 está diseñada para GPUs de baja VRAM.
+- GPU recomendadas: no disponibles en la información. Por el tamaño del repo y la existencia de una variante de bajo VRAM, se deduce que el fp16 requiere GPUs de datacenter (A100/H100) o varias consumer de gama alta, mientras que w6a8_g32 apunta a GPUs consumer con 8-12 GB.
+- ¿Cabe en GPU consumer? La variante w6a8_g32 está pensada para ello; el fp16 probablemente no en una sola tarjeta consumer.
+- Opciones de despliegue: no se especifican en la información disponible. La librería declarada es `minimax-h3`, lo que sugiere un runtime propio del ecosistema Minimax-H3 en lugar de vLLM, llama.cpp u Ollama.
+- Latencia y throughput: no disponibles. El autor menciona 8 pasos de muestreo como configuración recomendada, lo que reduce el coste frente a schedulers de 20-50 pasos, pero no aporta cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Rol | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Minimax-h3_Singularity-x-10Eros-Max_PRISM | Merge PRISM de A y B | no disponible | no disponible | no disponible | other | Publico, 0 descargas |
-| WarmBloodAban/Minimax-h3_Singularity | Modelo A (base ref2va v2, bf16) | no disponible | no disponible | no disponible | no disponible en la informacion | Publico |
-| TenStrip/10Eros-Max | Modelo B (finetune turbo 8 pasos) | no disponible | no disponible | no disponible | no disponible en la informacion | Publico |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Minimax-h3_Singularity-x-10Eros-Max_PRISM | Merge PRISM de dos finetunes Minimax-H3 Ref2VA | no disponible | no disponible | other | Hugging Face, 512.570 descargas |
+| WarmBloodAban/Minimax-h3_Singularity | Finetune base (bf16) | no disponible | no disponible | no disponible | Hugging Face |
+| TenStrip/10Eros-Max | Finetune turbo de 8 pasos | no disponible | no disponible | no disponible | Hugging Face |
+| PRISM_DMAD_PDMD (variante del mismo autor) | Merge derivado, int8 | no disponible | no disponible | other | Incluido en el mismo repo |
 
-No se identifican en la informacion proporcionada otros merges comparables de MiniMax-H3 con los que contrastar parametros, contexto o metricas. La comparacion cuantitativa queda pendiente de que alguno de los tres repositorios publique especificaciones o evaluaciones.
+No se dispone de datos de benchmarks ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluacion: sin benchmarks, sin demos mas alla del video de la card y sin descargas registradas; no hay evidencia de que el merge mejore a ninguno de sus dos origenes.
-- Documentacion insuficiente: no se declaran arquitectura, parametros, contexto, idiomas ni modalidad exacta, lo que impide planificar integraciones en produccion.
-- Licencia `other` heredada: los terminos concretos dependen de los modelos base y deben revisarse antes de cualquier uso comercial; la card lo indica explicitamente.
-- Riesgo de alucinacion y artefactos: en modelos generativos, la fusion de pesos sin validacion puede producir degradaciones dificiles de detectar, especialmente en modos turbo de pocos pasos.
-- Nomenclatura y procedencia: el nombre del finetune B (`10Eros-Max`) sugiere un ajuste orientado a contenido para adultos; conviene auditar el modelo y aplicar filtros de contenido antes de exponerlo a usuarios finales.
-- Sesgos: no documentados. Al combinar dos finetunes de origen desconocido, los sesgos de ambos pueden acumularse sin que exista un informe de evaluacion.
-- Reproducibilidad parcial: la card advierte de que el `merge_report.json` cubre los tensores de la ejecucion final si el trabajo se reanudo, por lo que el proceso puede no ser replicable paso a paso.
-- Metadatos dudosos: la fecha de creacion declarada (2026-10-24) es posterior a la de redaccion habitual de fichas; conviene verificar la trazabilidad del repositorio.
-- Restricciones de contexto e idioma: no aplicables por falta de datos, pero implican que no se puede garantizar un comportamiento multilingue ni ventanas largas.
+- Licencia "other": las condiciones concretas dependen de los modelos fuente (Singularity y 10Eros-Max); es imprescindible revisarlas antes de cualquier uso comercial.
+- Al ser un merge de pesos y no un modelo entrenado, no hay garantía de coherencia interna; el comportamiento puede degradarse en dominios no cubiertos por los finetunes originales.
+- La model card no documenta sesgos, tasas de alucinación ni limitaciones idiomáticas.
+- El método PRISM incluye pasos heurísticos (gamma adaptativo, mediación de signos) cuyos hiperparámetros no se detallan por completo, lo que dificulta la reproducibilidad exacta.
+- El tamaño del repositorio (447,9 GB) y la ausencia de información sobre cuantizaciones oficiales más allá de las variantes listadas complican el despliegue en entornos con almacenamiento limitado.
+- Las recomendaciones de uso (8 pasos, Euler/Beta57, shift 12/3) son empíricas y específicas de una variante; no deben extrapolarse a otras.
+- No hay información sobre el pipeline declarado (`pipeline: no disponible`), lo que puede complicar la integración con frameworks estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM
 - Modelo base A: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Modelo base B: https://huggingface.co/TenStrip/10Eros-Max
-- Informe de merge: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/blob/main/merge_report.json
-- Video de demostracion: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/resolve/main/TestMe.mp4
-- Fichero de pesos fp16: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/resolve/main/Minimax-h3_Singularity_x_10Eros-Max_PRISM_fp16.safetensors
+- Espejo en CivitAI: https://civitai.red/models/3019421/singularity-v2-x-10eros-max
+- Vídeo de muestra PRISM_DMAD_PDMD: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/resolve/main/PRISM_DMAD_PDMD.mp4
+- Vídeo de muestra Pika 0.85: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/resolve/main/Pika0.85Sample.mp4
+- Vídeo de muestra TestMe: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/resolve/main/TestMe.mp4
+- Vídeo de muestra TestOfBeta7: https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM/resolve/main/TestOfBeta7.mp4

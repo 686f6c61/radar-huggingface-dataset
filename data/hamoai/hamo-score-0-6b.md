@@ -2,96 +2,105 @@
 
 ## Resumen
 
-hamo-score-0.6b es un modelo de lenguaje de 596 millones de parámetros desarrollado por Hamo AI, especializado en puntuar cinco dimensiones psicológicas (AWEHB: Agency, Withdrawal, Extremity, Hostility, Boundary) a partir de un único mensaje de una conversación de bienestar mental. No es un chatbot: nunca genera respuestas, solo devuelve un objeto JSON con cinco puntuaciones en una escala de 0,0 a 3,0. Es el primer componente de producción destilado del motor de bienestar de Hamo AI, liberado para que herramientas supervisadas por profesionales puedan ejecutar la puntuación de estado de forma local, sin API ni salida de datos del entorno.
+hamo-score-0.6b es un modelo de 0,6 mil millones de parámetros desarrollado por HamoAI, derivado por destilación de conocimiento de Qwen3-0.6B. No es un modelo conversacional: su función es leer un único mensaje de una conversación de bienestar emocional (en chino o inglés) y devolver un objeto JSON con cinco puntuaciones entre 0,0 y 3,0 —Agency, Withdrawal, Extremity, Hostility y Boundary (AWEHB)— que alimentan código determinista para actualizar estrés, clasificar estados y decidir acciones. El modelo no genera respuestas al usuario.
 
-Construido mediante destilación de conocimiento desde un modelo propietario de escala frontier (DeepSeek) sobre la base Qwen/Qwen3-0.6B, el modelo se entrenó con un coste de aproximadamente siete dólares en presupuesto de API y alcanza un 85,6 % de precisión a nivel de dimensión y un 96,2 % a nivel de decisión clínica sobre 758 turnos reales de producción anonimizados. Su relevancia radica en que permite ejecutar puntuación de estado psicológico en un portátil en menos de un segundo, con formatos safetensors, GGUF y MLX disponibles.
+La relevancia del modelo está en su planteamiento de despliegue local: se distribuye como GGUF q8 de 0,64 GB y puede ejecutarse en CPU, de modo que los datos de conversación no salen de la máquina. Sustituye a un scorer LLM de mayor tamaño en la rúbrica de producción de Hamo AI, con un error absoluto medio de 0,122 frente a las puntuaciones de consejeros humanos en 978 ítems sintéticos reservados, un 27 % inferior al de la versión anterior (v10h).
 
-## Especificaciones tecnicas
+El modelo se acompaña de un toolkit (`pip install hamo-score`, licencia Apache-2.0) que incluye la plantilla de prompt, un filtro previo por palabras clave y un servidor Docker. La licencia del modelo es HAMO-RAIL-S 1.0, que permite uso comercial con restricciones, entre ellas la exigencia de un mecanismo independiente de gestión de crisis en despliegues de bienestar mental orientados a consumidor.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3-0.6B) |
-| Parametros totales | 596.049.920 (~0,6B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No especificada en la documentacion; el uso en produccion limita a 3 turnos previos × 200 caracteres + mensaje de 500 caracteres |
-| Tipos de cuantizacion | GGUF q8_0, bfloat16 (safetensors), MLX |
-| Idiomas soportados | Chino (zh), ingles (en) |
-| Licencia | hamo-rail-s-1.0 (licencia personalizada, no OSI) |
-| Formato de pesos | safetensors, GGUF, MLX |
+| Arquitectura | Transformer decoder-only (destilado de Qwen3-0.6B) |
+| Parámetros totales | 596.049.920 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | q8 GGUF (publicado); safetensors en el repo; formatos MLX |
+| Idiomas soportados | chino (zh) e inglés (en) |
+| Licencia | HAMO-RAIL-S 1.0 (uso comercial incluido, con restricciones) |
+| Formato de pesos | safetensors, GGUF (q8), MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-0.6B y se entrena mediante destilacion de conocimiento en tres etapas, usando como profesor un modelo propietario de escala frontier (DeepSeek) que actua como puntuador de referencia en el sistema de produccion de Hamo. El entrenamiento combina datos sinteticos generados por el profesor con 440 turnos reales de personal de Hamo con consentimiento explicito; los 758 turnos de evaluacion son datos reales de produccion anonimizados que nunca se utilizaron en el entrenamiento.
+El modelo parte de Qwen3-0.6B, un transformer decoder-only de 0,6 B de parámetros, y se obtiene mediante destilación de conocimiento para reproducir el comportamiento del scorer LLM de referencia que Hamo AI usa en su rúbrica de producción. El entrenamiento se realizó sobre conversaciones sintéticas de bienestar emocional que fueron revisadas y re-puntuadas por consejeros humanos contratados por Hamo en tres rondas; la versión v12 se entrenó con las puntuaciones de la tercera ronda. La model card no detalla el número de tokens de entrenamiento ni la composición exacta del dataset.
 
-La innovacion principal es el diseno de la tarea: el modelo se entrena con exactamente un formato de prompt fijo (su rubrica esta integrada en los pesos, no se deben anadir instrucciones de puntuacion), con el template de chat de Qwen3 con el modo thinking desactivado y temperatura 0. El contexto previo es opcional, acepta hasta 5 turnos, y el toolkit oficial recorta a los ultimos 3 turnos × 200 caracteres con un maximo de 500 caracteres por mensaje. La salida es un unico objeto JSON con las cinco dimensiones AWEHB. El blog de metodologia documenta un estancamiento en el rendimiento que no se resolvio con mas datos sino con una auditoria de datos y un cambio de configuracion de una linea, que aporto tres puntos de mejora.
+La innovación principal no es arquitectónica sino de proceso: la evaluación se congeló antes del entrenamiento con 15 comprobaciones operativas, de las que el modelo superó 13. Las dos no superadas (G6a y G6c) comparan las puntuaciones W, E y H con las etiquetas de referencia en un examen real de 453 turnos y fallaron por márgenes estrechos. El modelo está diseñado para inferencia con muestreo neutro obligatorio (temperatura 0, `repeat_penalty` 1.0, `top_k` 0, `top_p` 1.0); valores como el `repeat_penalty` 1.1 por defecto en versiones antiguas de ollama desplazan las puntuaciones lejos de cero.
 
 ## Capacidades
 
-- Puntuacion de cinco dimensiones psicologicas (AWEHB) en escala 0,0-3,0 con rejilla de 0,5: Agency (iniciativa propia), Withdrawal (abandono/evitacion), Extremity (catastrofismo/pensamiento todo-o-nada), Hostility (ataque a otros) y Boundary (expresion desde la posicion del "yo" con limites claros).
-- Salida exclusivamente en JSON estructurado con validez cercana al 100 % en evaluacion.
-- Distincion fina entre conceptos psicologicos proximos: la frustracion sin destinatario no puntua como hostilidad, la preocupacion realista acotada no puntua como extremidad, y los insultos puntuan como hostilidad, no como limite personal.
-- Bilingue chino-ingles, con formato de prompt principal en chino.
-- Compatible con inferencia local en CPU, GPU consumer y Apple Silicon (MLX).
-- Integracion con el toolkit oficial hamo-score-toolkit (Apache-2.0) que incluye formato de prompt, parsing tolerante, suavizado exponencial y gate de crisis obligatorio por licencia.
+- Puntuación de afecto en cinco dimensiones (AWEHB), cada una en el rango 0,0–3,0 en pasos de 0,5, devueltas como un único objeto JSON.
+- Lectura de un solo mensaje en contexto conversacional, en chino o en inglés.
+- Salida estructurada y parseable: cero salidas no interpretables en las seis pruebas de evaluación registradas.
+- Integración con código determinista posterior (actualización de estrés, buckets de estado, gating de acciones).
+- Ejecución local en CPU sin llamadas a API externas.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso.
+- No genera respuestas conversacionales ni texto libre dirigido al usuario.
+- No incluye modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Puntuacion de estado en aplicaciones de bienestar mental: el modelo procesa cada mensaje del usuario y devuelve las cinco puntuaciones AWEHB, que se combinan con un suavizado exponencial (0,8 × historial + 0,2 × mensaje) para reducir el ruido por mensaje antes de cualquier decision.
-- Supervicion humana de conversaciones de apoyo emocional: los profesionales pueden ejecutar el modelo localmente para priorizar conversaciones que requieren atencion, sin que los datos de los usuarios salgan del entorno clinico.
-- Triaje en plataformas de apoyo entre pares: puntuar automaticamente mensajes de foros o grupos de ayuda mutua para identificar patrones de retirada o catastrofismo que merezcan revision.
-- Investigacion en psicologia computacional: analizar corpus de conversaciones anonimizadas para estudiar la correlacion entre marcadores linguisticos de agencia, limites personales y resultados de intervenciones.
-- Monitorizacion de progreso en terapia: con datos consentidos, seguir la evolucion de las puntuaciones de Agency y Boundary a lo largo de sesiones para evaluar cambios en el lenguaje del paciente.
-- Herramientas de auto-reflexion para usuarios: integrar el modelo en aplicaciones de diario personal que devuelvan al usuario una lectura de su propio lenguaje (con supervisio profesional), fomentando la conciencia sobre patrones de pensamiento.
-- Evaluacion de intervenciones automatizadas: medir si las respuestas generadas por sistemas asistidos mejoran las puntuaciones de estado del usuario en turnos posteriores.
+- Puntuación de mensajes en una aplicación de bienestar emocional: el modelo recibe cada mensaje del usuario y devuelve las cinco puntuaciones que alimentan la lógica de actualización de estrés y de selección de acciones del sistema, sin que el contenido salga del dispositivo.
+- Despliegue con garantías de privacidad: al ejecutarse en CPU sobre un GGUF q8 de 0,64 GB, permite procesar conversaciones sensibles en infraestructura propia o en el dispositivo, requisito habitual en entornos clínicos y de salud mental.
+- Pre-filtrado y triaje en pipelines de atención: las puntuaciones de Withdrawal, Extremity y Hostility pueden usarse como señales para enrutar conversaciones hacia revisión humana, siempre que un mecanismo independiente gestione las crisis.
+- Investigación en psicología computacional: el modelo ofrece una rúbrica operacionalizada (AWEHB) con pasos de 0,5, útil para anotar corpus de diálogo de forma reproducible y a bajo coste.
+- Servicio interno de scoring: el toolkit incluye un servidor Docker que expone `POST /score` en `127.0.0.1:8080`, adecuado para integrarse en un backend existente con control de acceso propio por delante.
+- Evaluación comparativa de rúbricas: al ser un modelo pequeño y determinista con temperatura 0, sirve como baseline reproducible frente a scorers LLM de mayor tamaño en experimentos de anotación automática.
+- Procesamiento por lotes de transcripciones: con un tiempo mediano de 2,13 s por mensaje en CPU ARM vía ollama, es viable puntuar lotes de mensajes cortos en servidores sin GPU.
 
 ## Benchmarks y rendimiento
 
-Evaluacion sobre 758 turnos reales de produccion anonimizados (nunca usados en entrenamiento), con etiquetas del puntuador LLM de escala produccion al que sustituye:
-
-| Metrica | hamo-score-0.6b (v6.1) | Profesor (DeepSeek, examen de 440 preguntas) | Autoconsistencia del puntuador de referencia |
+| Medida | v12 | v10h | Conjunto de evaluación |
 |---|---|---|---|
-| Nivel de dimension, dentro de ±0,5 | **85,6 %** (A85 / W88 / E87 / H94 / B75) | 88,7 % | 94-98 % |
-| Nivel de decision (bucket de estado tras calculo deterministico de estres) | **96,2 %** | 97,5 % | — |
-| Validez JSON | ~100 % | — | — |
+| Error absoluto medio frente a la tercera ronda de consejeros | 0,122 | 0,167 | 978 ítems sintéticos reservados |
+| Mismo bucket de estado que las etiquetas de referencia | 440 de 453 turnos (97,1 %) | 440 | examen final real |
+| W, E y H dentro de ±0,5 de las etiquetas de referencia | 1.195 de 1.359 juicios | 1.210 | examen final real |
+| Pares A: el mensaje con mayor agency puntúa más alto | 147 de 154 pares | 150 | examen sintético A |
+| Pares B: el mensaje con mayor boundary puntúa más alto | 176 de 180 pares | 180 | exámenes sintéticos B |
+| Puntuaciones dentro de ±0,5 de la etiqueta (media de las cinco) | 84,7 % | 86,7 % | autocomprobación del toolkit, 195 preguntas sintéticas sobre etiquetas de v10 |
+| Salidas no interpretables | 0 | 0 | seis exámenes |
 
-Examen de auto-verificacion del toolkit: 195 preguntas sinteticas etiquetadas por profesor + 10 casos de gate escritos a mano, con banda de referencia oficial de JSON 100 %, nivel de dimension 84,0 % y gate 10/10. El blog de lanzamiento indica un acuerdo del 96,3 % con el puntuador cloud frontier en decisiones clinicas.
+El examen final real son 453 turnos pseudonimizados de tres miembros del personal interno que dieron su consentimiento; sus respuestas son las etiquetas de referencia, no puntuaciones de consejeros, y por tanto no son cifras de precisión para la población general. Los exámenes sintéticos son in-distribution. No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~1,2 GB en bfloat16 (safetensors) y ~0,6 GB en GGUF q8_0, calculado sobre los 596M de parametros.
-- GPU recomendadas: cualquier GPU consumer con 2 GB o mas de VRAM (RTX 3060, RTX 4090, etc.); tambien ejecutable en CPU con llama.cpp.
-- Compatible con Apple Silicon via formato MLX.
-- El blog oficial indica que se ejecuta en un portatil en menos de un segundo.
-- Opciones de despliegue: transformers (Python), llama.cpp / Ollama (GGUF q8_0 incluido en el repo), MLX, y servidor de referencia con Docker Compose que expone el pipeline completo gate → score → smooth → bucket como `POST /score`.
-- Parametros de inferencia recomendados: temperatura 0, max_new_tokens 80, stop en `<|im_end|>`, thinking desactivado.
+- Inferencia en CPU: el GGUF q8 ocupa 0,64 GB y está pensado para ejecutarse sin GPU.
+- VRAM estimada: no disponible para variantes en GPU; el peso q8 en memoria ronda los 0,64 GB, por lo que cualquier GPU consumer con 2 GB o más es suficiente en términos de memoria.
+- GPU recomendadas: no disponible; el modelo se distribuye y evalúa para CPU y para llama.cpp con Metal en Apple Silicon.
+- Cabe en cualquier GPU consumer y en CPU ARM; no requiere acelerador dedicado.
+- Opciones de despliegue: ollama, llama.cpp (con Metal), MLX, servidor Docker del toolkit (`POST /score` en el puerto 8080), y transformers mediante el snippet del registro técnico.
+- Latencia: mediana de 2,13 s por mensaje y máximo de 3,14 s en 138 ítems sintéticos cortos, con el modelo cargado, en un servidor CPU ARM vía ollama y con el recorte de prompt del toolkit. No es una medida de peor caso.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea | Precision dimension | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hamo-score-0.6b | 0,6B | Puntuacion AWEHB | 85,6 % (±0,5) | hamo-rail-s-1.0 (restrictiva) | Pesos abiertos |
-| Qwen3-0.6B (base, sin fine-tuning) | 0,6B | Generacion general | No aplica (no puntua) | Apache-2.0 | Pesos abiertos |
-| Profesor DeepSeek (escala frontier) | No publicado | Puntuacion AWEHB | 88,7 % (±0,5) | Propietaria | Solo API |
+| hamo-score-0.6b | 596 M | no disponible | Scoring AWEHB (JSON) | HAMO-RAIL-S 1.0 | Hugging Face, GGUF/MLX/safetensors |
+| Qwen3-0.6B (modelo base) | 0,6 B | no disponible | Generación de texto general | Apache-2.0 (según el modelo base) | Hugging Face |
+| Scorer LLM de referencia de Hamo AI | no disponible | no disponible | Scoring AWEHB (producción) | propietario | no disponible públicamente |
+| v10h (versión anterior de Hamo) | no disponible | no disponible | Scoring AWEHB | HAMO-RAIL-S 1.0 | no disponible en la información proporcionada |
 
-El blog de destilacion menciona que un modelo tres veces mayor (aproximadamente 1,8B) gano solo un punto de precision, mientras que una auditoria de datos y un cambio de configuracion aportaron tres puntos, lo que justifica la eleccion de un modelo de 0,6B. No se dispone de datos publicos de otros modelos especializados en puntuacion afectiva AWEHB para una comparativa mas amplia.
+No se dispone de datos publicados que permitan comparar este modelo con alternativas de terceros en la misma tarea de scoring psicológico.
 
 ## Limitaciones y advertencias
 
-- No es un detector de crisis ni de autolesiones: la licencia (§3c) exige reproducir el patron de produccion de Hamo, donde el contenido de crisis se intercepta con un mecanismo deterministico independiente aguas arriba del modelo, y nunca llega al puntuador.
-- No es un instrumento de diagnostico clinico ni debe usarse como tal; sus puntuaciones alimentan codigo deterministico aguas abajo (actualizacion de estres, buckets de estado, gating de acciones).
-- La dimension Boundary mide la huella linguistica de los limites personales en un mensaje individual, no diagnostica el nivel de diferenciacion de una relacion; el modelo no ve la relacion, solo el lenguaje.
-- Entrenado principalmente con datos en chino (el formato de prompt es chino); el rendimiento en ingles puede ser inferior al reportado.
-- Datos reales de entrenamiento limitados a 440 turnos consentidos del personal de Hamo; el resto son datos sinteticos del profesor, lo que puede introducir sesgos del modelo profesor.
-- Licencia hamo-rail-s-1.0 personalizada, no OSI, con restricciones para uso comercial que requieren revision legal antes de desplegar en produccion.
-- El modelo solo puntua, no genera respuestas; cualquier sistema que necesite redactar respuestas debe integrarlo con un componente generador separado.
-- Riesgo de alucinacion en el formato de salida: aunque la validez JSON es ~100 % en evaluacion, el modelo puede emitir un bloque `thinking` vacio antes del JSON, por lo que el parsing debe extraer el primer objeto `{...}`.
+- No es un chatbot, ni un instrumento diagnóstico, ni un detector de crisis. Ninguna de sus puntuaciones, incluida Withdrawal, es una señal de crisis.
+- No detecta ni gestiona crisis; esa función corresponde a la capa externa (el «spine» de Hamo), que se ejecuta antes del modelo.
+- El filtro por palabras clave del toolkit es un punto de partida, no un cribado completo.
+- La licencia HAMO-RAIL-S 1.0 exige, en su sección 3c, un mecanismo independiente de gestión de crisis como condición para despliegues de bienestar mental orientados a consumidor.
+- Las cifras de evaluación proceden de conjuntos sintéticos in-distribution y de un examen real de solo tres personas; no demuestran generalización a la población general.
+- Las puntuaciones no deben leerse en bruto: la rúbrica indica que, cuando las puntuaciones de los consejeros difieren, prevalece la revisión.
+- El muestreo debe ser neutro (temperatura 0, `repeat_penalty` 1.0, `top_k` 0, `top_p` 1.0); otros valores desplazan las puntuaciones.
+- Solo admite chino e inglés; no hay datos sobre otros idiomas.
+- El servidor Docker no incluye autenticación: requiere control de acceso propio antes de exponerlo en red.
+- Riesgo de alucinación y sesgos: no se han publicado análisis específicos en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/HamoAI/hamo-score-0.6b
-- Toolkit oficial (GitHub): https://github.com/HamoAI/hamo-score-toolkit
-- Blog de lanzamiento (EN): https://www.hamo.ai/blog/open-sourcing-hamo-score-0-6b/
-- Notas de metodologia de destilacion: https://www.hamo.ai/blog/distilling-hamo-score-0-6b/
-- Notas de lanzamiento del toolkit (EN): https://www.hamoai.tech/blog/open-sourcing-hamo-score-toolkit/
-- Notas de lanzamiento del toolkit (zh): https://www.hamo.ai/blog/open-sourcing-hamo-score-toolkit/
-- Guia de fine-tuning: https://github.com/HamoAI/hamo-score-toolkit/blob/main/docs/finetune.md
+- Licencia: https://huggingface.co/HamoAI/hamo-score-0.6b/blob/main/LICENSE
+- Registro técnico (plantilla de prompt, snippet de transformers, Modelfile): https://huggingface.co/HamoAI/hamo-score-0.6b/blob/main/TECHNICAL_RECORD.md
+- Toolkit: https://github.com/HamoAI/hamo-score-toolkit
+- Hamo AI: https://www.hamo.ai
+- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

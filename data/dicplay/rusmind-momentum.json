@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-Momentum",
   "created_at": "2026-10-11T01:47:06.000Z",
-  "updated_at": "2026-10-31T16:29:49.000Z",
+  "updated_at": "2026-11-17T21:39:36.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,13 +25,15 @@
     "text-generation",
     "ru",
     "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
     "license:other",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
   "likes": 16,
-  "downloads_30d": 68441,
+  "downloads_30d": 68189,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",
@@ -51,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Comic Art Fans - The Original Comic Art Gallery for Collectors and …",
-      "url": "https://www.comicartfans.com/",
-      "snippet": "Sep 24, 2026 · Discover Original Art Collecting with Comic Art Fans. Collect, Share and Sell Narrative Artworks. There are more than …"
-    },
-    {
-      "title": "Original Comic Art - CGC Comic Book Collectors Chat Boards",
-      "url": "https://boards.cgccomics.com/forum/41-original-comic-art/",
-      "snippet": "Dec 22, 2005 · A forum to discuss original art by comic artists."
-    },
-    {
-      "title": "Comic Art Fans - Spotlight Pieces - Original Comic Art - CGC Comic …",
-      "url": "https://boards.cgccomics.com/topic/519176-comic-art-fans-spotlight-pieces/",
-      "snippet": "Feb 25, 2023 · I was a 25 cent comic book box diver as a kid. Loved finding a gem that was overlooked. In that spirit, I do some deep …"
-    },
-    {
-      "title": "A *** Sold 2026 - Comic Art Fans",
-      "url": "https://www.comicartfans.com/galleryroom.asp?gsub=261480",
-      "snippet": "LOONEY TUNES #37 COVER ( I have The Comic Book ) 911 0 0 Darkchylde : Waiting for Stars – Burning Butterflies Alternate …"
-    },
-    {
-      "title": "Comic Art Fans | Terms & Conditions",
-      "url": "https://www.comicartfans.com/termsconditions.asp",
-      "snippet": "Artwork posted to the site should be Comic Book/Strip/Illustration related - Although many comic art collectors also collect other …"
-    }
-  ]
+  "sources": []
 }

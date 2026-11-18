@@ -5,7 +5,7 @@
   "author": "Synchopate",
   "url": "https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-32GB-GGUF",
   "created_at": "2026-11-16T18:10:58.000Z",
-  "updated_at": "2026-11-16T21:35:02.000Z",
+  "updated_at": "2026-11-18T00:15:48.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 248,
   "trending_score": 0,
   "parameters": 189206616704,
   "parameters_human": "189.21B",

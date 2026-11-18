@@ -2,139 +2,127 @@
 
 ## Resumen
 
-Silicon-based girlfriend v2 (矽基女友 v2) es un modelo de rol conversacional en chino tradicional (Taiwan) de 9B parametros, publicado en formato GGUF por el usuario RX5950XT. Parte del modelo base huihui-ai/Huihui-Qwen3.5-9B-abliterated (una version sin censura de Qwen3.5-9B) y se ha afinado especificamente para mantener la coherencia de un personaje a lo largo de conversaciones largas multirreno. El entrenamiento sigue un pipeline SFT (LoRA r16, alpha 16, 1 epoch, 576 pasos) seguido de dos rondas de GRPO (117 pasos cada una), con recompensas basadas en un juez LLM, penalizaciones anti-repeticion, anti-copia y preguntas verificables de matematicas e instrucciones.
+Silicon-based girlfriend v2 (矽基女友 v2) es un modelo de rol conversacional en chino tradicional (Taiwán) de 9B parámetros, publicado por el usuario RX5950XT. Parte del modelo base `huihui-ai/Huihui-Qwen3.5-9B-abliterated` (una variante "abliterated", es decir, con los rechazos desactivados, de Qwen3.5-9B) y se distribuye exclusivamente en formato GGUF cuantizado. El modelo está afinado mediante SFT y dos rondas de GRPO para sostener un personaje a lo largo de conversaciones largas y mantener la coherencia entre turnos.
 
-El repositorio no distribuye pesos completos, sino cuantizaciones GGUF listas para Ollama y llama.cpp: una version Q8_0 de 9,79 GB (calidad prioritaria) y una Q4_K_M de 5,78 GB con matriz de importancia (imatrix) recalculada por el propio autor (5,02 BPW, 223 tensores q4_K y 35 q6_K). Incluye tambien el modulo de vision mmproj en Q8_0 (624 MB), que es byte a byte el del repositorio de mradermacher y no ha sido modificado por el proyecto: la torre visual quedo congelada durante el entrenamiento y las capacidades de imagen son identicas a las del modelo base.
+La relevancia del proyecto no está en el rendimiento bruto, sino en la documentación del proceso: el autor publica el conjunto de datos sintético, la matriz de importancia (imatrix) calculada sobre el propio modelo, los registros de evaluación y una comparación ciega contra el modelo base sin afinar. Es un caso práctico de cómo el ajuste fino con RL (GRPO) puede recuperar y superar ligeramente la coherencia de un modelo base en una tarea concreta, y de cómo una cuantización calibrada con datos del dominio evita degradar el comportamiento deseado.
 
-Su relevancia es acotada y muy especializada: no compite en tareas de conocimiento general, sino en consistencia de personaje y adherencia al rol dentro de una ventana de conversacion larga. Frente al modelo base sin afinar, el autor reporta en evaluacion ciega con un juez externo (claude-opus-4-6-thinking) una mejora de 1,20x en Q4 y 1,21x en Q8, con ganancias concentradas en inmersion e in-personaje, y 0% de repeticion en texto largo. La ventana de contexto nativa no se especifica en la informacion disponible.
+El modelo tiene 9.197.093.888 parámetros, pipeline declarado `image-text-to-text` (incluye un módulo de visión heredado del base, sin modificar), licencia Apache-2.0 y un único idioma declarado: chino. Está pensado para rol adulto y el propio autor advierte que no sirve para consultas factuales ni como calculadora.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) derivado de Qwen3.5-9B; torre visual congelada + torre de lenguaje con LoRA. Detalle arquitectonico interno no disponible |
-| Parametros totales | 9.197.093.888 (9,2B) |
-| Parametros activos | no disponible (no se indica si la arquitectura es MoE) |
-| Longitud de contexto | no disponible (el autor no declara la ventana nativa; en una GPU de 8 GB con Q4 el limite practico es ~8K tokens, ampliable a 16K con cache KV de 8 bits) |
-| Tipos de cuantizacion | GGUF Q8_0 (9,79 GB) y Q4_K_M con imatrix (5,78 GB, 5,02 BPW); modulo de vision mmproj Q8_0 (624 MB) |
-| Idiomas soportados | zh (chino tradicional, variante de Taiwan) |
-| Licencia | Apache-2.0 (heredada del base huihui-ai/Huihui-Qwen3.5-9B-abliterated y de Qwen/Qwen3.5-9B) |
-| Formato de pesos | GGUF (llama.cpp / Ollama), con Modelfile incluido y parametros de muestreo preconfigurados |
-| Modelo base | huihui-ai/Huihui-Qwen3.5-9B-abliterated (relacion: quantized) |
-| Tamano del repositorio | 16,2 GB |
-| Fecha de publicacion | 2026-09-17 |
+| Arquitectura | Transformer (derivada de Qwen3.5-9B, con torre de visión congelada) |
+| Parametros totales | 9.197.093.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la model card; el autor indica que Q4 en GPU de 8 GB admite ~8K tokens, y 16K con caché KV de 8 bits |
+| Tipos de cuantizacion | Q8_0 (9,79 GB) e imatrix Q4_K_M (5,78 GB, 5,02 BPW: 223 tensores q4_K, 35 tensores q6_K) |
+| Idiomas soportados | chino (zh), con etiqueta `traditional-chinese` (Taiwán) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (más `mmproj` GGUF para visión, `imatrix.gguf` y `Modelfile.*` para Ollama) |
 
 ## Arquitectura y entrenamiento
 
-No se detalla la arquitectura interna mas alla de que es un modelo multimodal image-text-to-text construido sobre Qwen3.5-9B, con una torre de vision y una torre de lenguaje. Durante todo el entrenamiento la torre de vision permanecio congelada y solo se aplico LoRA sobre la torre de lenguaje, por lo que el autor afirma explicitamente que la capacidad visual es identica a la del modelo base, sin mejora ni degradacion. El pipeline de afinado fue SFT (LoRA r16, alpha 16, 1 epoch, 576 pasos) seguido de dos rondas de GRPO de 117 pasos cada una, usando TRL 0.24 y Unsloth sobre una RTX PRO 6000 de 96 GB en Vast.ai.
+El modelo es un transformer denso de 9B parámetros heredado de Qwen3.5-9B en su variante abliterated. El ajuste se realizó únicamente sobre la torre de lenguaje mediante LoRA (r16, alpha 16, 1 época, 576 pasos) con TRL 0.24 y Unsloth; la torre de visión permaneció congelada durante todo el entrenamiento, por lo que las capacidades visuales son idénticas a las del modelo base. El pipeline de entrenamiento es SFT seguido de dos rondas de GRPO de 117 pasos cada una, ejecutadas en una RTX PRO 6000 de 96 GB en Vast.ai.
 
-El corpus de entrenamiento es sintetico y generado por el propio autor: dialogos de rol en chino tradicional mezclados con un 10% de corpus general (medido por proporcion de loss) para mitigar el olvido catastrofico. Las recompensas de GRPO combinan un juez LLM con escala 0-10, penalizacion por rechazo, por relleno, por repeticion de clausulas, por copia literal y por copia de turnos anteriores, mas preguntas verificables de matematicas e instrucciones. El proceso de cuantizacion uso una imatrix calculada por el propio proyecto sobre la salida Q8_0 del modelo (`llama-imatrix -c 512 --chunks 200`) con unos 405.000 caracteres de calibracion mezclados en la misma proporcion que los datos de entrenamiento (516 problemas GSM8K en chino tradicional, tarjetas de personaje, dialogos de rol reales y tareas generales), en lugar de un corpus generico en ingles.
+El corpus de entrenamiento es sintético y propio: diálogos de rol en chino tradicional generados por el autor, mezclados con un 10% de corpus general (medido en proporción de loss) para mitigar el olvido catastrófico. La función de recompensa de GRPO combina un juez LLM con puntuación 0-10, penalizaciones por rechazo, por relleno, por repetición de cláusulas, por copiar el propio texto y por copiarse a sí mismo entre turnos, más tareas verificables de matemáticas e instrucciones. La cuantización Q4_K_M se calibró con una imatrix calculada sobre el propio modelo en Q8_0 (`llama-imatrix -c 512 --chunks 200`) usando ~405.000 caracteres de calibración mezclados según la proporción del corpus de entrenamiento (516 problemas GSM8K en chino tradicional, tarjetas de personaje, diálogos reales y tareas generales).
 
 ## Capacidades
 
-- Generacion de texto conversacional en chino tradicional (Taiwan), con registro coloquial y capacidad de mantener un personaje definido en el system prompt.
-- Mantenimiento de personaje en dialogos de varios turnos, con mejoras medidas en inmersion e in-personaje frente al modelo base.
-- Capacidad de rechazo muy baja: 0 rechazos en 7 pruebas reportadas, orientado a contenido adulto.
-- Ausencia de caracteres simplificados: 0 en las pruebas del autor, frente a 6-10 cada 30 turnos del modelo base.
-- Vision basica: reconocimiento de colores y formas a partir de imagenes, usando el modulo mmproj del modelo base (no reentrenado).
-- Razonamiento matematico limitado pero funcional: 85% en GSM8K con Q8 y 82% con Q4.
-- Capacidades generales preservadas por el entrenamiento anti-olvido: 92,2% en una sonda de 64 preguntas de 5 categorias con Q4 (frente al 76,6% de la linea base sin afinar).
-- Soporte de tool calling / function calling: no documentado en la informacion disponible.
-- Capacidades de agente y razonamiento multi-paso: no documentadas; el modelo esta orientado a roleplay, no a tareas agenticas.
-- Modo thinking explicito: no disponible.
+- Generación de texto conversacional multi-turno con mantenimiento de personaje definido en el system prompt.
+- Rol adulto explícito, sin mecanismos de rechazo (modelo abliterated).
+- Comprensión de imágenes básica: identifica colores y formas; falla al leer números de dos dígitos.
+- Razonamiento matemático moderado: 85% en GSM8K con Q8 y 82% con Q4 según la evaluación del autor.
+- Capacidades generales preservadas por la mezcla anti-olvido: 92,2% en una sonda de 64 preguntas de 5 categorías (frente a 76,6% del base sin afinar).
+- Sin marcadores de activación especiales: no requiere etiquetas tipo `[RPMode]`; el rol se define únicamente en el system prompt.
+- No se documenta soporte de tool calling ni de function calling.
+- No se documenta soporte de agentes ni de razonamiento multi-paso más allá de la conversación.
+- Multilingüe limitado: solo chino; el autor reporta 0 caracteres en chino simplificado en las pruebas (el base emitía 6-10 cada 30 turnos).
 
 ## Casos de uso
 
-- Personajes conversacionales para apps de entretenimiento en chino tradicional: el modelo puede sostener un personaje definido por un system prompt largo a lo largo de multiples turnos, con una tasa de repeticion de texto largo del 0,0% medido por el autor, lo que reduce la sensacion de robot en sesiones prolongadas.
-- Ficcion interactiva para adultos: plataformas de relatos ramificados o novelas visuales donde se necesita baja tasa de rechazo (0/7 en las pruebas) y contenido explicito, con la salvedad de que el autor restringe el uso a investigacion y mayores de edad.
-- Asistencia a guionistas y escritores de ficcion en chino tradicional: el modelo puede generar variaciones de dialogo para un personaje concreto sin salirse del registro, y la presencia de 0 caracteres simplificados evita correcciones manuales de conversion.
-- Generacion de dialogos sinteticos etiquetados: util para producir datasets de rol en chino tradicional con coherencia de personaje verificable, que es precisamente el caso del propio dataset publicado junto al modelo.
-- Simulacion de personajes en videojuegos narrativos con NPC persistentes: al no depender de marcadores de activacion tipo `[RPMode]` (el entrenamiento mezclo corpus general de forma deliberada), el mismo modelo puede alternar entre respuestas conversacionales y respuestas funcionales dentro del mismo hilo.
-- Pruebas de calidad de personaje en pipelines de evaluacion: la existencia de un Modelfile con parametros de muestreo fijos (temperature 0.7, top_p 0.8, top_k 20, presence_penalty 1.5) permite reproducir condiciones identicas entre ejecuciones, algo util para comparar versiones de un personaje.
-- Investigacion sobre mantenimiento de persona en dialogos largos: el autor documenta explicitamente una degradacion concreta (la coherencia multirreno baja de 4,50 a 4,44 frente al base) causada por un 9,9% de dialogos con copia literal en el corpus SFT, lo que lo convierte en un caso de estudio reproducible sobre higiene de datos.
-- Descripcion de imagenes con carga de personaje: el modulo de vision permite incorporar una imagen y comentarla en personaje, aunque el autor advierte que los numeros de dos cifras se leen mal.
+- Roleplay conversacional de larga duración: el modelo está entrenado específicamente para sostener un personaje a lo largo de muchos turnos; el autor reporta 0 casos de auto-copia entre turnos en 24 conversaciones de 5 turnos con personajes nuevos y una tasa de repetición en textos largos del 0,0%.
+- Personajes virtuales con ficha de personaje extensa: el calibrado de la imatrix incluye tarjetas de personaje precisamente para preservar la comprensión de system prompts largos tras la cuantización Q4.
+- Prototipado de experiencias conversacionales en chino tradicional: al ser Apache-2.0 y caber en GPUs de consumo, permite iterar sobre diseño de personajes sin coste de API.
+- Investigación sobre ajuste con GRPO: el repositorio publica el dataset, la imatrix, los registros de evaluación y las comparaciones ciegas, lo que lo convierte en un caso reproducible para estudiar recompensas basadas en juez LLM y penalizaciones anti-repetición.
+- Evaluación de cuantización consciente del dominio: el par Q8/Q4 con imatrix propia sirve para medir cuánto degrada una cuantización de 5 BPW una tarea subjetiva (el autor reporta 5,13 en Q4 frente a 5,18 en Q8 con juez Opus).
+- Despliegue local en Ollama: los `Modelfile` incluyen los parámetros de muestreo (temperature 0.7, top_p 0.8, top_k 20, presence_penalty 1.5), lo que permite levantar el modelo con un solo comando en equipos de 8 GB de VRAM en Q4.
+- Experimentos de visión conversacional de baja exigencia: al incluir el `mmproj` original, permite adjuntar imágenes en el diálogo, aunque solo para reconocimiento de color y forma.
 
 ## Benchmarks y rendimiento
 
-Evaluacion ciega con juez externo claude-opus-4-6-thinking, 6 personajes nuevos no presentes en el corpus de entrenamiento, 5 turnos cada uno y 3 semillas aleatorias.
+Evaluación ciega con juez `claude-opus-4-6-thinking`, 6 personajes nuevos no vistos en entrenamiento, 5 turnos cada uno, 3 semillas aleatorias:
 
-| Modelo | Puntuacion absoluta | Rango entre semillas | Relativo al base |
+| Modelo | Puntuación absoluta | Rango entre semillas | Relación con el base |
 |---|---|---|---|
-| Base sin afinar | 4,29 | 4,12-4,53 | 1,00x |
-| Solo SFT | 1,38 | una sola semilla | 0,32x |
-| GRPO ronda 1 | 3,73 | 3,60-3,87 | 0,87x |
-| Silicon-based girlfriend v2 Q4 | 5,13 | 5,07-5,23 | 1,20x |
-| Silicon-based girlfriend v2 Q8 | 5,18 | 4,82-5,55 | 1,21x |
+| Base sin afinar | 4,29 | 4,12–4,53 | 1,00× |
+| Solo SFT | 1,38 | una semilla | 0,32× |
+| GRPO ronda 1 | 3,73 | 3,60–3,87 | 0,87× |
+| Este modelo Q4 | 5,13 | 5,07–5,23 | 1,20× |
+| Este modelo Q8 | 5,18 | 4,82–5,55 | 1,21× |
 
-Desglose por dimension (sobre 10):
+Desglose por dimensión (juez Opus):
 
-| Modelo | Inmersion | Consistencia de personaje | Avance de trama | Coherencia multirreno | Calidad de texto |
+| Modelo | Inmersión | Consistencia de personaje | Avance de trama | Coherencia multi-turno | Calidad de texto |
 |---|---|---|---|---|---|
 | Base sin afinar | 4,89 | 4,50 | 4,50 | 4,50 | 3,08 |
 | Solo SFT | 2,25 | 2,42 | 1,00 | 0,42 | 0,83 |
-| Silicon-based girlfriend v2 Q8 | 6,17 | 6,22 | 5,11 | 4,44 | 3,94 |
+| Este modelo Q8 | 6,17 | 6,22 | 5,11 | 4,44 | 3,94 |
 
-Otras metricas reportadas por el autor:
+Otras métricas reportadas por el autor:
 
 | Prueba | Resultado |
 |---|---|
-| Comparacion ciega por pares contra el base | 6 victorias, 0 derrotas (Q8 y Q4) |
-| Copia del propio turno anterior (5 turnos x 24 casos) | 0 veces (la ronda 1 de GRPO registraba entre 1 y 7) |
-| Tasa de repeticion en texto largo | 0,0% (Q8 y Q4) |
+| Comparación pareada ciega contra el base | 6 victorias, 0 derrotas (Q8 y Q4) |
+| Auto-copia entre turnos (5 turnos × 24 conversaciones) | 0 casos |
+| Tasa de repetición en textos largos | 0,0% (Q8 y Q4) |
 | Tasa de rechazo | 0/7 (Q8 y Q4) |
-| GSM8K | 85% con Q8, 82% con Q4 |
-| Sonda de capacidades generales (64 preguntas, 5 categorias) | 92,2% con Q4, frente a 76,6% de la linea base sin afinar; McNemar bilateral exacto p=0,021 |
-| Caracteres simplificados emitidos | 0 (el base emite 6-10 cada 30 turnos) |
-| Vision | reconocimiento de colores y formas correcto; fallo en numeros de dos cifras |
-| Perplejidad de la cuantizacion imat-Q4_K_M | 7,50 +/- 0,09 |
+| GSM8K | 85% (Q8) / 82% (Q4) |
+| Sonda de capacidad general (64 preguntas, 5 categorías) | 92,2% en Q4 frente a 76,6% del base; McNemar bilateral exacto p=0,021 |
+| Caracteres en chino simplificado | 0 |
+| Comparación con Kimi K2.6 (mismo juez) | 54% de la puntuación de Kimi |
 
-Contexto importante aportado por el autor: las puntuaciones absolutas solo son comparables dentro del mismo juez. Las mismas respuestas evaluadas por Kimi K2.6 reciben 7,47 frente al 5,18 de opus, una diferencia de aproximadamente 2 puntos atribuida a la indulgencia del primero con modelos pequenos.
+Advertencia del autor: las puntuaciones absolutas solo son comparables dentro del mismo juez; con Kimi como juez el modelo obtiene 7,47 frente a 5,18 con Opus.
 
 ## Requisitos de hardware
 
-- Q4_K_M (imat): 5,78 GB de pesos mas 624 MB del modulo de vision, en torno a 6,0 GB en total. El autor indica unos 160 MiB adicionales por cada 1K tokens de contexto.
-- Q8_0: 9,79 GB de pesos mas 624 MB del modulo de vision, en torno a 10,4 GB antes de cache KV.
-- GPU de 8 GB: cabe el Q4_K_M con un limite practico de contexto de unos 8K tokens. Para llegar a 16K hay que activar cache KV de 8 bits.
-- GPU de 12-16 GB: Q4_K_M con contexto largo sin cuantizar el KV, o Q8_0 ajustado y con poco contexto.
-- GPU de 24 GB (RTX 3090, RTX 4090): Q8_0 con contexto holgado y vision activada. Es la configuracion mas razonable para produccion con calidad maxima.
-- GPU de 48-96 GB (A100, H100, RTX PRO 6000): necesarias solo si se trabaja con el modelo sin cuantizar o con lotes grandes; el propio autor uso una RTX PRO 6000 de 96 GB exclusivamente para el entrenamiento.
-- Opciones de despliegue: Ollama mediante los Modelfile incluidos (Q8_0 e imat-Q4_K_M, con parametros de muestreo ya incorporados) y llama.cpp. El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI, aunque no se detalla la configuracion.
-- Latencia y throughput estimados: no disponibles.
+- VRAM para Q8_0: 9,79 GB de pesos más el módulo de visión de 624 MB; requiere al menos 12 GB para contexto corto.
+- VRAM para Q4_K_M: 5,78 GB de pesos más 624 MB de visión, es decir, ~6,0 GB; el autor indica ~160 MiB adicionales por cada 1K tokens de contexto.
+- GPU de consumo: Q4 cabe en tarjetas de 8 GB con contexto de ~8K tokens; para 16K hace falta caché KV de 8 bits. Q8 requiere 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080).
+- GPU profesionales: el entrenamiento se hizo en RTX PRO 6000 de 96 GB; para inferencia son suficientes A100 40 GB, H100 o L40S, aunque están sobredimensionadas para un modelo de 9B.
+- Despliegue: Ollama mediante los `Modelfile` incluidos (Q8_0 e imat-Q4_K_M); al ser GGUF, también es compatible con llama.cpp y con servidores que acepten GGUF con `mmproj` para visión.
+- Throughput y latencia: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas publicadas contra otros modelos de rol de la misma categoria fuera de las realizadas por el propio autor. La tabla siguiente recoge las alternativas que si aparecen documentadas en la informacion proporcionada.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Silicon-based girlfriend v2 | 9,2B | no disponible (~8K en Q4 sobre 8 GB) | zh | Apache-2.0 | GGUF | Rol adulto en chino tradicional; evaluación publicada contra su base |
+| Huihui-Qwen3.5-9B-abliterated (base) | 9,2B | no disponible | multilingüe | Apache-2.0 | safetensors, GGUF | Sin afinar para rol; obtiene 4,29 en la evaluación del autor frente a 5,13-5,18 |
+| Silicon-based girlfriend v2.1 | 9B (según el autor) | no disponible | zh | Apache-2.0 (según el autor) | GGUF, adapter | Versión posterior del mismo autor; corrige el corpus de SFT con el 9,9% de diálogos con auto-copia |
+| Silicon-based girlfriend v1 | 4B (según el autor) | no disponible | zh | no disponible | no disponible | Primera iteración de la serie, de menor tamaño |
 
-| Modelo | Parametros | Contexto | Puntuacion ciega (juez opus) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Silicon-based girlfriend v2 Q8 | 9,2B | no disponible | 5,18 | Apache-2.0 | GGUF en este repositorio |
-| Silicon-based girlfriend v2 Q4 | 9,2B | no disponible | 5,13 | Apache-2.0 | GGUF en este repositorio |
-| huihui-ai/Huihui-Qwen3.5-9B-abliterated (base sin afinar) | 9,2B | no disponible | 4,29 | Apache-2.0 | modelo base, tambien en GGUF via mradermacher |
-| Solo SFT (etapa intermedia del entrenamiento) | 9,2B | no disponible | 1,38 | no aplica (no publicado) | no disponible |
-| GRPO ronda 1 (etapa intermedia) | 9,2B | no disponible | 3,73 | no aplica (no publicado) | no disponible |
-| Kimi K2.6 (referencia comercial empleada por el autor) | no disponible | no disponible | equivalente a 5,18 / 0,54, es decir ~9,6 en la misma escala | propietaria | API comercial |
-
-El propio autor situa el techo del modelo en su escala: con el mismo juez y las mismas preguntas, este modelo alcanza el 54% de Kimi K2.6, con la diferencia concentrada en memoria multirreno y variacion textual.
+No se dispone de comparaciones con modelos de rol de otros autores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La coherencia multirreno es la dimension mas debil y la unica que no supera al modelo base (4,50 en el base frente a 4,44 en este modelo). El autor atribuye la causa a que el 9,9% del corpus SFT contenia dialogos donde el personaje copiaba literalmente un turno anterior, lo que hundio esa capacidad hasta 0,42 en la etapa SFT; las dos rondas de GRPO solo la recuperaron hasta el nivel del base, no mas alla. El corpus se limpio el 2026-09-17, pero este modelo se entreno con el material previo a la limpieza, por lo que la mejora no estara hasta un reentrenamiento.
-- La vision hereda todos los defectos del modelo base, sin ninguna mejora. Reconoce colores y formas, pero lee mal los numeros de dos cifras (interpreta "42" como "4").
-- No es adecuado para consultas factuales ni como calculadora, pese al 85% en GSM8K. El autor lo advierte explicitamente.
-- Contenido adulto y explicito. El autor restringe el uso a investigacion, prohibe el uso por menores y desaconseja su empleo como herramienta de consulta. La licencia Apache-2.0 permite tecnicamente el uso comercial, pero hay que verificar la normativa local y las politicas de la plataforma de destino antes de desplegarlo.
-- Entrenamiento con datos sinteticos, no con datos humanos reales: los dialogos y las tarjetas de personaje son generados, lo que limita la diversidad linguistica y puede producir un registro repetitivo a escala.
-- Idiomas: unicamente chino tradicional de Taiwan. No hay soporte documentado de castellano ni de otros idiomas.
-- Cero descargas y cero likes en el momento de la consulta: no existe validacion independiente de los resultados mas alla de la documentacion del propio autor, que si incluye registros de evaluacion en la carpeta `evaluation/`.
-- Deriva del modelo base: al provenir de un modelo "abliterated" (sin censura), el filtrado de seguridad es practicamente inexistente. No debe usarse en canales de atencion al cliente ni en ningun flujo orientado al publico general sin una capa de moderacion externa.
-- Sensibilidad a los parametros de muestreo: el autor insiste en mantener `presence_penalty` en 1,5. Bajarlo reactiva la repeticion en conversaciones largas.
+- La coherencia multi-turno es la dimensión más débil y la única en la que el modelo no supera al base (4,44 frente a 4,50). El autor atribuye la causa a que el 9,9% del corpus de SFT contiene diálogos donde el personaje copia literalmente un turno anterior; el corpus se limpió el 2026-09-17, pero este modelo se entrenó con la versión previa.
+- Contenido adulto explícito: no apto para menores ni para plataformas con políticas de contenido restrictivas.
+- No es fiable para consultas factuales; el propio autor lo desaconseja para ese uso.
+- La aritmética, aunque obtiene un 85% en GSM8K, no es una capacidad utilizable en producción como calculadora.
+- La visión falla al leer números de dos dígitos ("42" se lee como "4").
+- Solo chino: no hay soporte documentado de castellano ni de otros idiomas, más allá de que el modelo base sea multilingüe.
+- Distancia considerable con modelos comerciales grandes: 54% de la puntuación de Kimi K2.6 con el mismo juez, con la brecha concentrada en memoria multi-turno y variación textual.
+- Las puntuaciones absolutas no son comparables entre jueces distintos.
+- Licencia Apache-2.0 heredada del base, pero el autor recomienda verificar el cumplimiento normativo y las políticas de la plataforma antes de usar el modelo, dado su contenido.
+- El corpus de entrenamiento es sintético y el autor lo declara solo para investigación.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2-GGUF
+- Versión v2.1 en GGUF: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2.1-GGUF
+- Adapter v2: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2
+- Adapter v2.1: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2.1
+- Dataset: https://huggingface.co/datasets/RX5950XT/silicon-based-girlfriend-dataset
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
-- Modelo original upstream: https://huggingface.co/Qwen/Qwen3.5-9B
-- Dataset de entrenamiento: https://huggingface.co/datasets/RX5950XT/silicon-based-girlfriend-v2-dataset
-- Repositorio de adaptadores y material de entrenamiento: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2
-- Cuantizaciones GGUF del modelo base y modulo de vision mmproj: https://huggingface.co/mradermacher/Huihui-Qwen3.5-9B-abliterated-GGUF
-
-No se han encontrado otros enlaces relevantes en la busqueda web realizada.
+- GGUF del base (origen del módulo de visión): https://huggingface.co/mradermacher/Huihui-Qwen3.5-9B-abliterated-GGUF

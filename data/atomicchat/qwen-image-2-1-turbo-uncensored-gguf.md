@@ -2,110 +2,106 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Turbo-Uncensored-GGUF es una publicacion del usuario AtomicChat que distribuye en formato GGUF el encoder de texto del pipeline de generacion de imagenes Qwen-Image 2.1 Turbo. Ese encoder no es otro que Qwen3-VL-8B-Instruct, un transformer denso de 8.190.735.360 parametros que en este repositorio aparece modificado mediante abliteracion: la direccion de rechazo del modelo se ha proyectado fuera de los pesos. El resultado es un fichero pensado para cargarse como `--llm` en stable-diffusion.cpp, junto a los denoisers Turbo del mismo autor.
+Qwen-Image-2.1-Turbo-Uncensored-GGUF es un encoder de texto cuantizado en formato GGUF, publicado por AtomicChat, que actúa como componente `--llm` dentro del pipeline de generación de imágenes Qwen-Image 2.1 ejecutado con stable-diffusion.cpp. No es un modelo de difusión ni un denoiser: es el codificador de prompts (Qwen3-VL-8B-Instruct, 8.190.735.360 parámetros) al que se le ha aplicado una técnica de *abliteration* que proyecta fuera de los pesos la dirección de rechazo (*refusal direction*) del modelo conversacional. El resultado es un encoder que, usado como chat, baja su tasa de negativas del 88,9 % al 1,2 % en prompts ingleses de retención, manteniendo MMLU en 77,35 %.
 
-La relevancia del trabajo es doble. Por un lado, el encoder sigue funcionando como modelo de chat y sus rechazos caen del 88,9% al 1,2% en ingles y del 38% al 0% en ruso sobre prompts reservados, sin degradar MMLU (77,35% antes y despues de la ablacion). Por otro, la model card documenta de forma explicita que el pipeline original de Qwen-Image no incorpora ningun filtro de contenido y que esta modificacion no altera mediblemente las imagenes: sobre 45 prompts sensibles, ninguno cambio de resultado frente al encoder original.
+La relevancia del release es doble. Por un lado, ofrece los ficheros GGUF del encoder en una escalera de cuantizaciones con importance matrix y layout por tensor propio (`AD-`), pensados para emparejarse con los denoisers Turbo del mismo autor. Por otro, el autor documenta con mediciones públicas (LPIPS, KLD, top-1) que el efecto de la ablación sobre las imágenes generadas es nulo en las 45 prompts sensibles probadas: el pipeline original ya dibujaba todas las categorías del probe set y este encoder dibuja exactamente las mismas, sin que ninguna prompt cambie de resultado.
 
-Se publica bajo licencia apache-2.0, con cuantizaciones documentadas en BF16 (16,39 GB) y Q8_0 (8,71 GB) dentro de un repositorio de 59,0 GB, y esta acompanada de un conjunto de datos publico con las metricas de la ablacion.
+El modelo está pensado para despliegue local en consumer GPU y en entornos de escritorio, con licencia Apache 2.0 y compatibilidad con endpoints. La ficha se centra en lo que el autor mide y declara; cualquier dato no publicado se marca como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only con capacidades vision-lenguaje (Qwen3-VL); actua como encoder de texto del pipeline Qwen-Image 2.1; ablacion por proyeccion de la direccion de rechazo |
-| Parametros totales | 8.190.735.360 (8,19 mil millones) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer (Qwen3-VL-8B-Instruct) como text encoder de un pipeline de difusion Qwen-Image 2.1; pesos con ablacion de refusal direction |
+| Parametros totales | 8.190.735.360 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; BF16 y Q8_0 documentados en la model card (el repositorio ocupa 59,0 GB, por lo que puede contener mas cuantizaciones no detalladas en la informacion disponible) |
-| Idiomas soportados | no disponibles (las mediciones de rechazo de la model card cubren ingles y ruso) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF, con importance matrix propia y layout por tensor identificado como `AD-` |
+| Tipos de cuantizacion | GGUF: BF16, Q8_0 y escalera completa del repo (tamano total del repo: 54,0 GB) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (compatible con stable-diffusion.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune del encoder de texto Qwen3-VL-8B-Instruct, la parte del pipeline Qwen-Image 2.1 que convierte el prompt en representaciones internas que consume el denoiser de 7B. La intervencion no es un reentrenamiento: se trata de una abliteracion, es decir, la proyeccion de la direccion de rechazo fuera de los pesos. La model card describe que, aunque el encoder dentro del pipeline no genera texto y por tanto no puede negarse a responder, la direccion asociada al rechazo si esta presente en los estados ocultos que lee el denoiser, hasta el punto de que prompts daninos e inofensivos se separan con AUROC 1.000 en la ultima capa. Sobre esa direccion se aplica la ablacion.
+El componente es el text encoder Qwen3-VL-8B-Instruct, un transformer de 8,19 mil millones de parámetros que en el pipeline Qwen-Image 2.1 convierte el prompt de texto en representaciones que lee el denoiser de 7B. Sobre ese encoder se aplica una ablación: se identifica la dirección de rechazo en los estados ocultos (el autor reporta que en la última capa las prompts dañinas y las inocuas se separan con AUROC 1.000) y se proyecta fuera de los pesos. El denoiser no se modifica.
 
-Los datos de entrenamiento no se detallan en la informacion disponible. La model card unicamente aporta mediciones del efecto de la ablacion: KLD frente a Qwen3-VL-8B-Instruct original de 0,0019 en BF16 (incluyendo la propia ablacion) y 0,0029 en Q8_0, con una coincidencia del token top-1 del 98,45% y 98,04% respectivamente. La evaluacion de imagenes se hizo sobre 45 prompts sensibles y 48 neutros, con la misma semilla y el mismo denoiser, comparando encoder original, este encoder en BF16 y este encoder en Q8_0.
+No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base. La innovación técnica destacable es el método de ablación con métricas de fidelidad publicadas: KLD medio frente al Qwen3-VL-8B-Instruct original y porcentaje de coincidencia en el top-1. En BF16, el KLD es 0,0019 y la coincidencia top-1 es del 98,45 %. El autor publica además un dataset de métricas y usa importance matrix y layout por tensor propio (`AD-`) para las cuantizaciones.
 
 ## Capacidades
 
-- Generacion de texto conversacional como Qwen3-VL-8B-Instruct, con la direccion de rechazo eliminada.
-- Codificacion de prompts para el pipeline de difusion Qwen-Image 2.1 Turbo, cargandose como `--llm` en stable-diffusion.cpp.
-- Reduccion drastica de falsos rechazos: del 88,9% al 1,2% en ingles y del 38% al 0% en ruso sobre prompts reservados, manteniendo MMLU en 77,35%.
-- Capacidades vision-lenguaje heredadas del modelo base (procesamiento de imagen y texto en la misma arquitectura).
-- Soporte conversacional multi-turno, segun la etiqueta `conversational` del repositorio.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en las etiquetas del repositorio).
-- Capacidad de generar imagenes de contenido sensible dentro de los limites que el denoiser haya aprendido; la model card mide 40 de 45 prompts sensibles dibujados correctamente, identicos al encoder original.
-- No se documenta soporte explicito de tool calling, function calling ni modo de razonamiento extendido en la informacion disponible.
+- Generación de imágenes vía pipeline Qwen-Image 2.1: el encoder alimenta al denoiser de 7B; no genera imágenes por sí mismo.
+- Uso como modelo conversacional: al ser Qwen3-VL-8B-Instruct abliterado, mantiene capacidad de chat y de razonamiento, con MMLU de 77,35 % antes y después de la ablación.
+- Reducción de rechazos en modo chat: del 88,9 % al 1,2 % en prompts ingleses de retención.
+- Codificación de prompts sensibles sin activar la dirección de rechazo en los estados ocultos que lee el denoiser.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags del repo).
+- Integración directa con stable-diffusion.cpp como `--llm`.
+- Capacidades multimodales heredadas del base Qwen3-VL (visión-lenguaje), si bien la información disponible no detalla su uso dentro de este pipeline.
+- Tool calling, function calling, agentes y modo thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Generacion de imagenes local con Qwen-Image 2.1 Turbo: el fichero se carga como `--llm` en stable-diffusion.cpp junto al denoiser Turbo correspondiente, lo que permite montar un pipeline text-to-image completo sin depender de APIs hospedadas.
-- Investigacion sobre alineamiento y seguridad: al publicarse KLD, coincidencia top-1 y metricas de rechazo antes y despues de la ablacion, sirve para estudiar como la proyeccion de la direccion de rechazo afecta a los estados ocultos y a la calidad de las representaciones.
-- Escritura creativa y ficcion con temas sensibles: como modelo de chat con un 1,2% de rechazos en ingles, resulta util en guiones, narrativa y ejercicios de estilo donde un filtro agresivo bloquea continuamente la tarea.
-- Experimentacion con tecnicas de cuantizacion: la model card publica KLD y coincidencia top-1 para BF16 y Q8_0, lo que permite evaluar el coste de la cuantizacion en un encoder de difusion con datos de referencia medidos.
-- Despliegue en entornos aislados o air-gapped: al ser GGUF y ejecutarse con stable-diffusion.cpp, no requiere conexion a servicios externos ni telemetria, algo relevante en sanidad, defensa o investigacion con datos restringidos.
-- Preprocesado de prompts multilingues para pipelines de difusion: con mediciones de rechazo en ingles y ruso, puede usarse para comparar el comportamiento del encoder entre idiomas en un mismo flujo de generacion.
-- Integracion en la aplicacion Atomic Chat: la model card indica que la app ejecuta stable-diffusion.cpp, el mismo motor con el que se construyeron y verificaron estos ficheros, de modo que el modelo es un reemplazo directo en ese entorno.
-- Auditoria de moderacion en produccion: dado que el pipeline original no incorpora filtro de contenido, este modelo sirve como punto de partida para construir una capa de moderacion externa y medir su efecto por separado del modelo.
+- Generación de imágenes local con stable-diffusion.cpp: se carga este GGUF como `--llm` junto a los denoisers Turbo del mismo autor para producir imágenes en escritorio sin depender de servicios alojados; encaja por el formato GGUF y por el layout `AD-` compartido con los denoisers.
+- Chat sin rechazos en local: usar el encoder como modelo conversacional de 8B en BF16 o Q8_0 para interacciones donde el filtrado del modelo original resulta limitante; el autor mide una caída de negativas del 88,9 % al 1,2 % con MMLU intacto.
+- Investigación sobre abliteration: reproducir y auditar la proyección de la dirección de rechazo con las métricas públicas (KLD 0,0019, top-1 98,45 %, LPIPS 0,088 en prompts sensibles y 0,084 en neutros) como línea base para comparar otras técnicas.
+- Evaluación de fidelidad de cuantizaciones: comparar la escalera GGUF (BF16 frente a Q8_0) usando LPIPS (0,037 para Q8_0 del encoder original) y KLD como indicadores de degradación en pipelines de imagen.
+- Prototipado de pipelines texto-a-imagen en consumer GPU: al ser un encoder de 8B en GGUF, cabe en GPUs de consumo con cuantización Q8_0, lo que permite montar un stack completo de generación de imágenes en una sola máquina.
+- Benchmarking de sesgo y seguridad en generación de imágenes: emplear el probe set de 45 prompts sensibles y 48 neutros del autor para medir si un cambio de encoder altera el contenido dibujado; el autor reporta 0 de 45 prompts que cambian de resultado.
+- Integración en aplicaciones de escritorio: el autor distribuye Atomic Chat, que ejecuta stable-diffusion.cpp, como entorno de referencia para estos ficheros.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Encoder original | Este encoder, BF16 | Este encoder, Q8_0 |
-|---|---:|---:|---:|
-| Rechazos en ingles sobre prompts reservados | 88,9% | 1,2% | no disponible |
-| Rechazos en ruso sobre prompts reservados | 38% | 0% | no disponible |
-| MMLU | 77,35% | 77,35% (sin cambios) | no disponible |
-| KLD frente a Qwen3-VL-8B-Instruct | – | 0,0019 | 0,0029 |
-| Coincidencia del token top-1 | – | 98,45% | 98,04% |
-| Prompts sensibles dibujados correctamente | 40 / 45 | 40 / 45 | 40 / 45 |
-| Prompts que cambian de resultado (45 sensibles) | – | 0 / 45 | 0 / 45 |
-| LPIPS frente al encoder BF16, prompts sensibles | – | 0,088 | no disponible |
-| LPIPS frente al encoder BF16, 48 prompts neutros | – | 0,084 | 0,090 |
-| LPIPS del encoder original cuantizado a Q8_0 | 0,037 | – | – |
+| Metrica | Valor |
+|---|---|
+| Rechazos como chat (prompts ingleses de retencion) | 88,9 % antes / 1,2 % despues |
+| MMLU | 77,35 % antes y despues |
+| KLD medio vs Qwen3-VL-8B-Instruct (BF16) | 0,0019 |
+| Coincidencia top-1 (BF16) | 98,45 % |
+| LPIPS vs BF16 en 48 prompts neutros | 0 (BF16); 0,090 en Q8_0 |
+| LPIPS en prompts sensibles (BF16) | 0,088 |
+| Prompts que cambian de resultado vs encoder original | 0 de 45 |
+| Referencia: LPIPS de un nuevo seed | 0,499 |
+| Referencia: LPIPS de Q8_0 del encoder original | 0,037 |
+| AUROC de separacion danino/inocuo en ultima capa | 1,000 |
 
-Referencia de escala aportada por el autor: cambiar la semilla mueve las imagenes 0,499 en LPIPS, de modo que la modificacion del encoder produce un desplazamiento de aproximadamente un sexto de ese valor y de magnitud similar en prompts neutros y sensibles.
+Resultados del probe set de 45 prompts sensibles (encoder original / este encoder BF16 / este encoder Q8_0): nudity y suggestive 4/4/4 cada uno; violence 5/5/5; weapons 5/5/5; drugs 4/4/4; profanity en imagen 4/4/4; medical anatomy 4/4/4; controles de smoking y alcohol 5/5/5; tattoos 5/5/5. No se han publicado resultados de MMLU, HumanEval o GSM8K para el pipeline de imagen en la información disponible.
 
 ## Requisitos de hardware
 
-- BF16 (16,39 GB): requiere aproximadamente 17-20 GB de VRAM solo para el encoder, segun contexto y overhead del runtime.
-- Q8_0 (8,71 GB): requiere aproximadamente 10-12 GB de VRAM para el encoder.
-- Hay que sumar la VRAM del denoiser de 7B, que se carga en paralelo dentro del pipeline de difusion; el consumo total es la suma de ambos.
-- GPU recomendadas para BF16: A100 (40/80 GB), H100, RTX 4090 (24 GB) al limite.
-- GPU recomendadas para Q8_0: RTX 3080 (12 GB), RTX 4070 Ti Super (16 GB), RTX 4080, RTX 4090.
-- Cabe en GPU de consumo: si, en Q8_0 sobre tarjetas de 12 GB o mas; en BF16 solo en tarjetas de 24 GB o superiores.
-- Opciones de despliegue documentadas: stable-diffusion.cpp como `--llm` y la aplicacion Atomic Chat. No se documenta en la informacion disponible el uso con vLLM, TGI, Ollama o llama.cpp para este fichero concreto.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: el fichero BF16 ocupa 16,39 GB en disco; Q8_0 y cuantizaciones inferiores reducen el requisito, aunque la información disponible no publica cifras exactas de VRAM por fichero.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, un encoder de 8B en BF16 requiere GPUs con al menos 16-24 GB de VRAM, y las cuantizaciones Q8_0 o inferiores permiten GPUs de consumo.
+- Cabe en consumer GPU: sí con cuantización Q8_0 o inferior, según el tamaño del fichero; el autor no detalla modelos concretos.
+- Opciones de despliegue: stable-diffusion.cpp (motor de referencia con el que se construyeron y verificaron los ficheros) y Atomic Chat como aplicación de escritorio; otros runners GGUF no se mencionan en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos (EN) | MMLU | Licencia | Formato |
-|---|---:|---|---:|---:|---|---|
-| Qwen-Image-2.1-Turbo-Uncensored (este, BF16) | 8,19 B | no disponible | 1,2% | 77,35% | apache-2.0 | GGUF |
-| Qwen-Image-2.1-Turbo-Uncensored (este, Q8_0) | 8,19 B | no disponible | no disponible | no disponible | apache-2.0 | GGUF |
-| Qwen3-VL-8B-Instruct (encoder original) | 8,19 B | no disponible | 88,9% | 77,35% | apache-2.0 | safetensors |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF | 8,19 B | no disponible | Encoder abliterado para Qwen-Image 2.1 en GGUF | Apache 2.0 | Hugging Face, GGUF |
+| Qwen/Qwen3-VL-8B-Instruct (base) | 8,19 B | no disponible | Encoder original sin ablacion | no disponible en la informacion | Hugging Face |
+| AtomicChat/Qwen-Image-2.1-Turbo-GGUF | no disponible | no disponible | Denoiser Turbo en GGUF, sin cambios de refusal | no disponible en la informacion | Hugging Face, GGUF |
 
-No se dispone de datos de otros encoders de texto alternativos (por ejemplo variantes de la familia Qwen-Image con otros text encoders) en la informacion proporcionada, por lo que no se incluye una comparativa adicional.
+La comparación con alternativas de la misma categoría (encoders abliterados para pipelines de difusión) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La ablacion no desbloquea contenido nuevo en las imagenes: el denoiser no aprendio a dibujar lo que Qwen filtro del pretraining, y la model card afirma explicitamente que no se midio ningun efecto de desbloqueo sobre los 45 prompts sensibles probados.
-- La modificacion si desplaza las imagenes: LPIPS de 0,088 en prompts sensibles y 0,084 en neutros frente al encoder BF16, y 0,031 para la version Q8_0. El propio autor lo describe como un cambio general, no dirigido a contenido rechazado.
-- Riesgo de generar contenido danino: al reducir los rechazos del 88,9% al 1,2% en ingles, el modelo como chat puede producir texto que el original bloquearia. No hay capa de moderacion en el pipeline; la responsabilidad recae en quien despliega.
-- La evaluacion con contenido sensible se realizo solo con adultos y sobre un conjunto reducido (45 prompts sensibles, 48 neutros); no es una evaluacion exhaustiva de seguridad.
-- Idiomas: las mediciones de rechazo solo cubren ingles y ruso. No hay datos de comportamiento en castellano ni en otros idiomas.
-- La cuantizacion Q8_0 introduce deriva adicional: KLD 0,0029 frente a 0,0019 en BF16, y coincidencia top-1 del 98,04% frente al 98,45%.
-- Riesgo de alucinacion del modelo base: no se han publicado mediciones de veracidad o factualidad en la informacion disponible.
-- Licencia: apache-2.0 permite uso comercial, pero no exime de las obligaciones legales sobre el contenido generado ni de las condiciones de uso del modelo base de Qwen.
-- El repositorio declara un pipeline `text-to-image`, aunque el artefacto es en realidad el encoder de texto; conviene no confundirlo con un modelo de difusion completo.
-- No se documentan limitaciones de contexto ni maximo de tokens en la informacion disponible.
+- La ablación no cambia el contenido de las imágenes: en las 45 prompts sensibles probadas, 0 cambian de resultado frente al encoder original; el pipeline original ya dibujaba todas las categorías del probe set.
+- El desplazamiento de las imágenes es general, no dirigido a contenido rechazado: LPIPS de 0,088 en prompts sensibles frente a 0,084 en neutros, aproximadamente un sexto del efecto de cambiar el seed (0,499).
+- El denoiser no se modifica y no aprende a dibujar lo que no estaba en sus datos de entrenamiento; ningún encoder puede añadir capacidad de dibujo ausente.
+- La reducción de rechazos se mide solo en prompts ingleses de retención; el comportamiento en otros idiomas no está documentado.
+- Riesgo de alucinación y sesgos del modelo base: no cuantificado en la información disponible.
+- El uso como chat sin rechazos implica que el modelo puede producir contenido dañino; el autor no incluye filtros ni salvaguardas en los pesos.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no detalla restricciones adicionales sobre el contenido generado ni sobre el uso del modelo base.
+- El repo pesa 54,0 GB por la escalera completa de cuantizaciones; conviene descargar solo el fichero necesario.
+- Los benchmarks publicados son del encoder como chat y de fidelidad de imagen; no hay datos de MMLU, HumanEval ni GSM8K del pipeline completo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - Denoiser Turbo del mismo autor: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-GGUF
-- Metricas publicas de la ablacion: https://huggingface.co/datasets/AtomicChat/Qwen-Image-2.1-Turbo-Abliterated-Uncensored-GGUF-metrics
+- Dataset de métricas: https://huggingface.co/datasets/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF-metrics
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
-- Repositorio de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
-- Aplicacion Atomic Chat: https://atomic.chat/
-- Servidor de Discord del autor: https://discord.gg/8wGSsvmg4V
+- Aplicación Atomic Chat: https://atomic.chat/
+- Repositorio GitHub: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
+- X (Twitter): https://x.com/atomic_chat_hq

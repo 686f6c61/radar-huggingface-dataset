@@ -31,8 +31,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 67,
-  "downloads_30d": 755034,
+  "likes": 68,
+  "downloads_30d": 765708,
   "trending_score": 11,
   "parameters": 51200245760,
   "parameters_human": "51.20B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ChatGPT MD - GitHub",
-      "url": "https://github.com/bramses/chatgpt-md",
-      "snippet": "ChatGPT MD Your AI writing companion, living inside Obsidian. Chat with AI directly in your notes. Reference your other notes with [ …"
-    },
-    {
-      "title": "chatgpt · GitHub Topics · GitHub",
-      "url": "https://github.com/topics/chatgpt",
-      "snippet": "5 days ago · ChatGPT is an AI assistant developed by OpenAI and released in November 2022. It uses generative AI models to …"
-    },
-    {
-      "title": "研究生如何利用 ChatGPT 帮助开展日常科研工作？ - 知乎",
-      "url": "https://www.zhihu.com/question/583232012",
-      "snippet": "ChatGPT搜索论文 举个例子，我们让ChatGPT搜索过去一年脉冲神经网络的文章。通过上图可以看出，ChatGPT不仅给出了脉冲神经 …"
-    },
-    {
-      "title": "ChatGPT - 知乎",
-      "url": "https://www.zhihu.com/topic/26691895",
-      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
-    },
-    {
-      "title": "How I write genuinely good cover letters with ChatGPT",
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1au2qx8/how_i_write_genuinely_good_cover_letters_with/",
-      "snippet": "Feb 18, 2024 · I've perfected the art of generating cover letters with ChatGPT and I want to share it with you. The mantra 'garbage in, …"
-    }
-  ]
+  "sources": []
 }

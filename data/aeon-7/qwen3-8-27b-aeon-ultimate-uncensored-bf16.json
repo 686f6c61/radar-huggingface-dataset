@@ -76,7 +76,7 @@
     "region:us"
   ],
   "likes": 230,
-  "downloads_30d": 45324,
+  "downloads_30d": 55256,
   "trending_score": 8,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -96,5 +96,26 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Aeon | a world of ideas",
+      "url": "https://aeon.co/",
+      "snippet": "Aeon is a magazine of ideas and culture. We publish in-depth essays from the world’s most incisive and ambitious thinkers, and a …"
+    },
+    {
+      "title": "AEON – Un domaine de montagne unique au monde",
+      "url": "https://www.aeon-montagnes.com/",
+      "snippet": "Découvrez AEON Une vision partagée, un fil rouge, un label de qualité qui se traduit dans chacune des expériences. Porté par les …"
+    },
+    {
+      "title": "Essays — Latest | Aeon",
+      "url": "https://aeon.co/essays",
+      "snippet": "The latest and most popular Essays from Aeon. Longform articles on philosophy, psychology, science, society, history and the arts, …"
+    },
+    {
+      "title": "Aeon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aeon",
+      "snippet": "Although the term aeon may be used in reference to a period of a billion years (especially in geology, cosmology and astronomy), its …"
+    }
+  ]
 }

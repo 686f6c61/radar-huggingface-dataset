@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 4322,
+  "downloads_30d": 4341,
   "trending_score": 0,
   "parameters": 2072896512,
   "parameters_human": "2.07B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Erog0291/stewmind-1.7b · Hugging Face",
-      "url": "https://huggingface.co/Erog0291/stewmind-1.7b",
-      "snippet": "Erog0291 / stewmind-1.7b Like 0 Text Generation Transformers Safetensors GGUF English Nigerian Pidgin qwen3 agentic router nigerian-ai mutyint stew conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Stewmind 1.7b - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/erog0291/stewmind-1.7b",
-      "snippet": "by Erog0291 erog0291/stewmind-1.7b Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 1.72Params 32.768KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=stew",
-      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: stew Clear all"
-    },
-    {
-      "title": "Big Models Cook for Everyone. This One Cooks for You: StewMind 1.7B",
-      "url": "https://dev.to/emmanuel_erogian/big-models-cook-for-everyone-this-one-cooks-for-you-stewmind-17b-2b7o",
-      "snippet": "StewMind 1.7B is live. A tiny agentic AI built in Nigeria 🇳🇬 that runs on YOUR machine. Big models cook for everyone. This one cooks for you. Most AI today is a vending machine: you pay per token, you rent someone else&#x27;s brain, and when the API bills spike, your product dies. We built the opposite. A small, sharp, agentic brain you download once and run forever. What it does → Agent ..."
-    },
-    {
-      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
-      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
-      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
-    }
-  ]
+  "sources": []
 }

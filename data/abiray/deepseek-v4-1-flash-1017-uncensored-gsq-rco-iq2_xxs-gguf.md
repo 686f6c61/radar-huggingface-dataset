@@ -2,105 +2,108 @@
 
 ## Resumen
 
-Este repositorio es una compilación GGUF del modelo DeepSeek-V4.1-Flash-1017 publicada por el usuario Abiray, que parte del trabajo de cuantización de ISTA-DASLab y le aplica una eliminación de la dirección de rechazo ("abliteration") de rango 1 en inglés y ruso. El resultado es un modelo de generación de texto sin los rechazos típicos del modelo original, con los 86 tensores que escriben en el flujo residual modificados directamente en los pesos: no requiere adaptadores LoRA en tiempo de ejecución. Se distribuye en 4 shards GGUF con cuantización mixta IQ2_XXS (2,00 bpw) y depende de un fichero Engram aparte en IQ4_NL para funcionar.
+DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF es una compilación GGUF cuantizada y "abliterated" (sin censura) del modelo ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF, publicada por el usuario Abiray en Hugging Face. Se trata de un modelo de lenguaje de gran escala (196.613.849.600 parámetros según los safetensors del modelo base) distribuido en formato GGUF con cuantización mixta IQ2_XXS, IQ1_M e IQ4_NL, pensado para ejecutarse con llama.cpp (build b11870 o superior) y con el runtime Strata.
 
-El interés técnico está en cómo se ha hecho la edición: se preservan intactas las 28 capas de expertos enrutados en 1 bit (`IQ1_M`) calibradas con GSQ y las dos proyecciones `engram_wkv` en `Q5_K`, de modo que la pérdida de conocimiento declarada es mínima (KL de 0,000002 nats frente al original y 97,0 % de acuerdo top-1 en un vocabulario de 129.280 tokens). El coste en tamaño es de solo +0,34 GB (+0,25 %) sobre el build de ISTA-DASLab.
+La particularidad de esta versión es que incorpora directamente en los pesos cuantizados las modificaciones de "abliteration" (eliminación del comportamiento de rechazo), sin necesidad de cargar adaptadores LoRA en tiempo de ejecución. El autor documenta que los 86 tensores residuales modificados se han horneado en los pesos, mientras que las 28 capas de expertos enrutados con cuantización de 1 bit IQ1_M y la tabla de búsqueda Engram de 110,6 GB permanecen intactas byte a byte respecto al modelo original.
 
-Es relevante ahora por dos motivos: por un lado, demuestra que la abliteración se puede hornear en pesos cuantizados de muy baja precisión sin requerir infraestructura extra; por otro, el despliegue práctico sigue siendo complicado, porque el backbone (138,58 GB) necesita el fichero Engram (110,60 GB) y llama.cpp todavía no soporta el modo "separate-engram" de DeepSeek 4.1. El modelo es de octubre de 2026 y no tiene descargas ni valoraciones.
+El modelo es relevante porque permite desplegar una variante sin censura de un modelo de ~196.000 millones de parámetros en hardware relativamente modesto gracias a la cuantización extrema (2 bits aproximados), manteniendo según el autor una correlación de perplejidad del 99,84 % respecto al original. La licencia es MIT y el pipeline declarado es text-generation, con soporte de visión mediante el proyector mmproj incluido.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts disperso (descrito por fuentes externas como "causal encoder-decoder"); 40 capas y 384 expertos por capa, con 6 activos por token según la documentación de Strata |
-| Parámetros totales | 196.613.849.600 (196,6 B) según los metadatos de safetensors del repo; la model card menciona "763B" y una fuente externa cita 552 B para el backbone base. Cifras discrepantes, no verificadas |
-| Parámetros activos | Aproximadamente 8 B en entrada y 16 B en salida (fuente externa, no verificada) |
-| Longitud de contexto | 1.000.000 tokens según una fuente externa para el modelo base; no verificado para este GGUF |
-| Tipos de cuantización | IQ2_XXS (2,00 bpw) mixta: IQ1_M, IQ2_XXS, IQ2_XS, Q5_K, Q6_K y Q8_0, más un fichero Engram auxiliar en IQ4_NL |
-| Idiomas soportados | no disponible (la dirección de rechazo ablacionada se calculó en inglés y ruso) |
-| Licencia | MIT, según la model card del repo; conviene verificar los términos del modelo base de DeepSeek e ISTA-DASLab |
-| Formato de pesos | GGUF, 4 shards de backbone más 1 fichero Engram |
+| Arquitectura | Transformer con mezcla de expertos (MoE) y capas Engram; arquitectura DeepSeek-V4.1 (familia deepseek41) |
+| Parametros totales | 196.613.849.600 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ2_XXS (cuerpo principal), IQ1_M (28 capas de expertos enrutados), IQ4_NL (tabla Engram), Q6_K (tensores abliterated), BF16 (proyector de visión mmproj) |
+| Idiomas soportados | no disponible |
+| Licencia | MIT |
+| Formato de pesos | GGUF (6 shards: 5 de backbone + 1 de Engram), safetensors para el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer con mezcla de expertos (MoE) de 40 capas y 384 expertos por capa, de los cuales 6 se activan por token según la documentación de Strata; una fuente externa la describe como "causal encoder-decoder" con 1 M de tokens de contexto y entrada multimodal de texto e imagen, y con 8 B de parámetros activos en entrada y 16 B en salida sobre un backbone de 552 B. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF o DPO del modelo original.
+El modelo base es un transformer con mezcla de expertos (MoE) de la familia DeepSeek-V4.1, con 40 capas de backbone identificadas en la documentación (blk.0 a blk.39). La arquitectura incluye componentes específicos: tensores attn_output_b, ffn_down_shexp (expertos compartidos) y ffn_down_exps (expertos enrutados), además de una tabla de búsqueda Engram de 110,6 GB en cuantización IQ4_NL que actúa como shard 6. El modelo incorpora metadatos deepseek41.attention.kv_source_layers y una plantilla de chat Jinja embebida. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
-La innovación de esta ficha no está en el entrenamiento, sino en la posproducción de los pesos. ISTA-DASLab cuantizó el modelo con su pipeline GSQ-RCO, preservando las capas de expertos enrutados en 1 bit (`IQ1_M`) y las proyecciones `engram_wkv` en `Q5_K`, y manteniendo según el autor el 100 % de la recuperación en AIME25 y GPQA-D del modelo sin cuantizar. Sobre esa base, Abiray aplica la dirección de rechazo de rango 1 (EN+RU) identificada por AtomicChat únicamente a los 86 tensores que escriben en el residual: 80 tensores densos (`attn_output_b` en `Q6_K`, `ffn_down_shexp` en `Q8_0`/`Q5_K` para las capas 0 a 39) y 6 capas de expertos de 2 bits exactos (`blk.7, 8, 10, 18` en `IQ2_XXS` y `blk.33, 39` en `IQ2_XS`). La verificación reportada cubre 1.008 de 1.008 tensores del backbone y una auditoría de divergencia KL frente al build original.
+La modificación principal de esta compilación es el "abliteration": se han modificado 86 tensores de escritura residual (80 densos más 6 capas de expertos exactas de 2 bits) para eliminar el comportamiento de rechazo, horneándolos directamente en los pesos cuantizados en lugar de aplicar un LoRA en tiempo de ejecución. Los 28 tensores de expertos enrutados en IQ1_M y la tabla Engram permanecen sin tocar byte a byte. El autor documenta una auditoría con llama-perplexity --kl-divergence (build b12017) sobre las 40 capas y los 129.280 logits del vocabulario: correlación de perplejidad logarítmica del 99,84 %, acuerdo Top-1 del 98,425 % ± 1,109 %, KL-divergencia mediana de 0,000421 nats y similitud coseno media del subespacio no-refusal de 0,999609.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredados del backbone DeepSeek-V4.1-Flash-1017.
-- Razonamiento matemático y científico: la model card cita AIME25 y GPQA-D como referencias de las capas GSQ preservadas.
-- Generación de código, con la salvedad de que el KL reportado de 0,000002 nats se mide sobre dominios de código, matemáticas y razonamiento.
-- Respuestas sin rechazos por contenido: la dirección de rechazo se ha proyectado fuera en los tensores residuales, sin necesidad de LoRA en runtime.
-- Soporte de tool calling y de razonamiento multi-paso: no confirmado explícitamente en la información disponible, aunque el modelo base se describe como multimodal y de contexto largo.
-- Capacidad multimodal de texto e imagen según una fuente externa sobre el modelo base; no verificada en esta compilación GGUF.
-- Capacidades multilingües: no disponibles en la información del repo; la abliteración se calibró en inglés y ruso.
-- Modo "thinking" o decodificación especulativa: no disponible.
+- Generación de texto y conversación multi-turno (pipeline text-generation, conversational).
+- Razonamiento explícito: soporta modo reasoning con control de esfuerzo mediante los parámetros --reasoning on y --reasoning-effort.
+- Capacidades de visión: incluye proyector mmproj-DeepSeek-V4.1-Flash-1017-BF16.gguf para entrada de imágenes en llama-server.
+- Comportamiento sin censura ("uncensored"/"abliterated"): se han eliminado los mecanismos de rechazo en los tensores residuales.
+- Ejecución nativa en llama.cpp (llama-cli y llama-server) y en el runtime Strata.
+- Soporte de plantilla de chat Jinja embebida (--jinja).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Red teaming y pentesting autorizado: el modelo permite generar cargas de prueba, escenarios de ataque y prompts adversarios sin los rechazos que limitan a los modelos alineados, integrándolo en un banco de pruebas interno con registro de actividad.
-- Análisis de malware e ingeniería inversa: útil para explicar fragmentos de código ofuscado, redactar hipótesis sobre comportamiento de binarios y documentar indicadores, dentro de un flujo de trabajo con revisión humana.
-- Investigación sobre alineación y abliteración: sirve como artefacto de comparación frente a ISTA-DASLab y AtomicChat para medir deriva de distribución (KL de 0,000002 nats declarada) y evaluar qué capacidades se conservan al eliminar la dirección de rechazo.
-- Generación de código en pipelines internos: con tool calling no confirmado, su uso realista es la autocompletación y refactorización por lotes sobre repositorios privados, donde el filtrado de contenido no aporta valor.
-- Escritura creativa y periodística sin fricción: narrativa de ficción con violencia, contenido sensible o temas controvertidos, donde el modelo no bloquea la petición; requiere revisión editorial posterior.
-- Extracción de información de documentación extensa: si se confirma la ventana de 1 M de tokens, permite resumir y cruzar referencias en expedientes completos, aunque en esta configuración de 2 bpw el caché KV hace que el contexto práctico sea mucho menor.
-- Despliegue en hardware modesto con Strata: según el autor, un único GPU NVIDIA de 12 GB o más puede lanzar el modelo mediante mmap del fichero Engram, lo que habilita pruebas de concepto en estaciones de trabajo sin clúster.
+- Investigación sobre alineación y censura: el modelo permite estudiar el efecto del abliteration sobre el comportamiento de rechazo con una métrica cuantificada (KL-divergencia mediana de 0,000421 nats, similitud coseno de 0,999609), útil para trabajos académicos sobre seguridad en LLM.
+- Despliegue en hardware de gama media: la cuantización IQ2_XXS permite ejecutar un modelo de ~196.000 millones de parámetros en configuraciones con GPU de 12 GB o más mediante Strata, algo inviable con pesos en BF16.
+- Generación de texto sin restricciones temáticas: para aplicaciones creativas o de investigación que requieran respuestas sin filtros de rechazo, como generación de ficción o análisis de contenido sensible.
+- Procesamiento de imágenes con visión: el proyector mmproj BF16 permite servir el modelo con entrada multimodal vía llama-server en el puerto 8080.
+- Inferencia local con llama.cpp: integración en pipelines existentes de llama-cli o llama-server para tareas de generación de texto y razonamiento con control de esfuerzo.
+- Evaluación comparativa de cuantizaciones extremas: el repositorio documenta métricas de perplejidad y KL-divergencia que permiten auditar la degradación de cuantizaciones de 1-2 bits frente al modelo original.
+- Experimentación con arquitecturas MoE y Engram: la separación en 6 shards (5 de backbone más 1 de Engram) facilita el estudio de los componentes de memoria externa del modelo.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Resultado | Contexto |
-|---|---|---|
-| Divergencia KL media (subespacio de inteligencia) | 0,000002 nats | Frente a ISTA-DASLab IQ2_XXS original |
-| Similitud coseno media en subespacio ortogonal de 5.119 D | 0,999609 | Frente al original |
-| Acuerdo top-1 / top-5 (vocabulario de 129.280) | 97,0 % / 100,0 % | Frente al original |
-| Tensores de backbone verificados | 1.008 / 1.008 | Cabecera y payload GGUF v3 alineados a 32 bytes |
-| Capas de expertos GSQ en 1 bit preservadas | 28 / 28 (100 %) | Sin recuantización degradante |
-| MMLU (variante abliterada de 1 bit de la familia, 500 preguntas) | 81,8 % frente a 85,6 % del original | Dato de la página de AtomicChat, no específico de este build |
-| AIME25 / GPQA-D | no disponible | La model card afirma recuperación del 100 % en las capas GSQ, sin cifras |
-| MMLU, HumanEval, GSM8K de este build concreto | no disponible | No publicados en la información proporcionada |
+El autor publica una auditoría de fidelidad de la cuantización frente al modelo base, no benchmarks de tareas estándar (MMLU, HumanEval, GSM8K):
+
+| Metrica | Resultado |
+|---|---|
+| Tensores verificados | 1.043 / 1.043 |
+| Tensores residuales abliterated | 86 (80 densos + 6 expertos de 2 bits) |
+| Capas IQ1_M GSQ preservadas | 28 / 28 (100 %) |
+| Correlación log-perplejidad | 99,84 % |
+| Acuerdo Top-1 de vocabulario (129.280) | 98,425 % ± 1,109 % |
+| KL-divergencia mediana | 0,000421 nats |
+| KL-divergencia media | 0,009546 ± 0,001921 nats |
+| Desplazamiento mediano de probabilidad | -0,003 % |
+| Similitud coseno del subespacio no-refusal | 0,999609 |
+| Perplejidad cuantizada | 2,4857 ± 0,5017 |
+| Perplejidad base | 2,3538 ± 0,4522 |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso total en disco: 249,2 GB (138,58 GB de backbone en 4 shards más 110,60 GB del fichero Engram IQ4_NL). Los 5 ficheros deben estar en el mismo directorio.
-- VRAM para residencia completa: por encima de 250 GB, lo que exige configuraciones multi-GPU (por ejemplo, 4× H100 80 GB o 8× A100 40 GB). No cabe en ninguna GPU de consumo.
-- Despliegue con Strata: el autor indica un único GPU NVIDIA de 12 GB o más, apoyándose en mmap del fichero Engram; el rendimiento dependerá del ancho de banda de disco y del subsistema de memoria.
-- llama.cpp: el comando proporcionado usa `-ngl 99`, `-lm mmap` y `--lazy-mode on`, pero el propio autor advierte que el soporte de "separate-engram" para DeepSeek 4.1 todavía no está disponible en la rama principal.
-- Otras opciones (vLLM, TGI, Ollama, TensorRT-LLM): no disponible en la información proporcionada.
-- Latencia y throughput: no disponible. Con cuantización de 2 bpw y mmap, es razonable esperar un throughput bajo y dependiente del almacenamiento, pero no hay mediciones publicadas.
-- Caché KV para 1 M de tokens: no disponible el cálculo exacto; en cualquier caso, sería inviable en configuraciones de 12 GB.
+- VRAM estimada para inferencia: el repositorio ocupa 250,1 GB en total; el backbone cuantizado pesa 138,58 GB y la tabla Engram 110,6 GB. Con Strata se indica un requisito mínimo de 1 GPU NVIDIA de 12 GB o más.
+- GPU recomendadas: no disponible de forma explícita; Strata menciona 1x 12 GB+ NVIDIA GPU como mínimo. Para llama.cpp con -ngl 99 se requiere descargar todas las capas a GPU, lo que implica VRAM agregada muy superior.
+- ¿Cabe en consumer GPU? Sí, según el autor, mediante Strata con una GPU de 12 GB o más; en llama.cpp dependerá de la distribución de shards y del offloading.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server, build b11870 o superior / v0.8.0+), Strata (versión 0.2.8, build 0.1.54, con --family deepseek41 --model ist-das-2.00bpw), y conexión de Strata a llama-server como cliente.
+- Latencia y throughput: no disponible.
+- Nota de despliegue: es necesario enlazar simbólicamente (Linux/macOS) o con hardlink (Windows) el archivo DeepSeek-V4.1-Flash-Engram-IQ4_NL.gguf como shard 6 (00006-of-00006.gguf). Strata 0.1.54 puede fallar en su comprobación de tamaño de archivo (138,58 GB frente a 138,24 GB del stock) y reportar "this is not a model size Strata knows".
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF | 196,6 B según safetensors (discrepancia con 552 B y 763 B de otras fuentes) | 1 M sin verificar | GGUF IQ2_XXS + Engram IQ4_NL | MIT declarada | Abliteración horneada en 86 tensores, sin LoRA en runtime; 0 descargas |
-| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | El mismo backbone | 1 M sin verificar | GGUF IQ2_XXS + Engram IQ4_NL | No indicada en la información | Modelo base sin abliterar; referencia de la auditoría KL |
-| AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF | El mismo backbone | No disponible | GGUF, variante 2,67 bpw IQ1_M | No indicada en la información | Abliteración aplicada como LoRA en runtime; MMLU 81,8 % frente a 85,6 % del original |
-| dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED | No disponible | 131 K según etiqueta del repo | EXL3, 2,9 bpw | No indicada en la información | Variante uncensored evaluada con MMLU 5-shot sobre 500 preguntas |
+| Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF | 196.613.849.600 | no disponible | IQ2_XXS / IQ1_M / IQ4_NL / Q6_K | MIT | Abliterated, sin LoRA en runtime |
+| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | no disponible | no disponible | IQ2_XXS (stock) | no disponible | Modelo base, con censura |
+| DeepSeek-V4.1-Flash (original) | no disponible | no disponible | BF16 (presumible) | no disponible | Modelo sin cuantizar |
+
+No se dispone de datos de benchmarks de tareas para comparar el rendimiento frente a alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La abliteración elimina la dirección de rechazo de forma deliberada: el modelo puede producir contenido dañino, ilegal o sexualmente explícito sin filtros. Su uso responsable exige controles externos y un marco legal claro, especialmente en la Unión Europea.
-- El riesgo de alucinación no se reduce con la abliteración y probablemente aumenta con la cuantización agresiva: los expertos enrutados están en 1 bit (`IQ1_M`) y las capas de 2 bits son las que concentran la edición.
-- Los datos de la familia indican una pérdida medible de conocimiento en variantes de 1 bit: MMLU cae de 85,6 % a 81,8 % (500 preguntas, p = 0,003) en el build de AtomicChat. No hay medición equivalente publicada para este build concreto.
-- Discrepancia no resuelta en el número de parámetros (196,6 B en safetensors frente a 552 B y 763 B en fuentes textuales). Cualquier estimación de hardware debe validarse contra el tamaño real de los ficheros.
-- Idiomas soportados no documentados; la calibración de la dirección de rechazo solo en inglés y ruso deja sin garantías el comportamiento en castellano.
-- Contexto de 1 M sin verificar y, en la práctica, inalcanzable con esta configuración de memoria; el caché KV para ventanas largas no cabe en 12 GB.
-- Dependencia de un fichero Engram externo de 110,60 GB: sin él, el modelo no funciona, y el soporte de llama.cpp para este modo sigue pendiente.
-- Estado del proyecto: 0 descargas y 0 valoraciones, creado el 24 de octubre de 2026. No hay validación independiente de los checksums ni de la auditoría KL más allá de lo declarado por el autor.
-- La licencia se declara como MIT, pero los pesos derivan de DeepSeek e ISTA-DASLab; conviene revisar los términos del modelo base antes de un uso comercial.
-- No se documentan sesgos específicos del modelo base en la información disponible.
+- La modificación "abliterated" elimina los mecanismos de rechazo, lo que puede producir contenido inapropiado, ofensivo o dañino sin filtro; no es apto para aplicaciones de cara al público sin moderación adicional.
+- La cuantización extrema (IQ2_XXS en el cuerpo, IQ1_M en 28 capas de expertos) implica una degradación de calidad respecto al modelo en BF16, aunque el autor documenta una correlación de perplejidad del 99,84 %.
+- El proceso de abliteration puede degradar capacidades de razonamiento o seguridad; la auditoría del autor mide fidelidad frente al modelo base, no calidad absoluta en tareas.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento multilingüe adecuado.
+- Longitud de contexto: no disponible.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, pero el modelo base ISTA-DASLab no declara licencia en la información proporcionada; conviene verificar los términos del modelo original.
+- El despliegue requiere pasos manuales (enlace del shard 6) y versiones concretas de llama.cpp (b11870+) o Strata (0.2.8), con posibles fallos de compatibilidad en Strata 0.1.54.
+- El repositorio es de 250,1 GB, lo que exige espacio de almacenamiento considerable y descarga completa antes de la inferencia.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF
-- Modelo base (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
-- Abliteración de referencia (AtomicChat): https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
-- Variante EXL3 uncensored (dealignai): https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED
-- Documentación de Strata para DeepSeek 4.1: https://github.com/Niko1221/Strata/blob/main/docs/DEEPSEEK41.md
-- Repositorio de Strata: https://github.com/Niko1221/Strata
-- Ficha del modelo base en AI Model Radar: https://aimodelradar.app/models/deepseek-v4-1-flash-1017
-- Guía de abliteración de DeepSeek Flash 1017: https://abliteration.ai/abliterated-deepseek-flash-1017
-- DeepSeek AI (organización): https://github.com/deepseek-ai
+- Repositorio Hugging Face: https://huggingface.co/Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF
+- Modelo base: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
+- llama.cpp: no disponible en la información proporcionada
+- Strata: no disponible en la información proporcionada
+- Paper o blog del modelo: no disponible en la información proporcionada

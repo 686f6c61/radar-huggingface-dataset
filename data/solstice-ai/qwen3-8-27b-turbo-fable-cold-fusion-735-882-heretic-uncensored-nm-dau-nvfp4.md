@@ -2,92 +2,105 @@
 
 ## Resumen
 
-Qwen3.8-27B-TURBO-Fable-Cold-Fusion es un modelo de lenguaje multimodal de 26.9 mil millones de parámetros desarrollado por Solstice-AI como release cuantizado NVFP4 del checkpoint original de DavidAU. Se trata de una versión optimizada para servidores NVIDIA Blackwell que combina una arquitectura híbrida de atención lineal con una ventana de contexto nativa de 262.144 tokens. El modelo está diseñado para tareas de razonamiento, generación de código y automatización de agentes, y según las evaluaciones empíricas presentadas por sus autores supera a Claude Opus 4.6 Max en nueve de nueve disciplinas de benchmark, incluyendo SWE-bench Pro, LiveCodeBench y ARC-C. Su relevancia radica en ofrecer un rendimiento de nivel frontera en un formato de cuantización de 4 bits apto para aceleración por hardware, junto con capacidades multimodales de visión espacial-temporal.
+Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4 es una release de servicio en formato NVFP4 (FP4 microscaling nativo de NVIDIA Blackwell) del modelo base DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU. El modelo original y el merge GAIN son obra de DavidAU; Solstice-AI se encarga de la cuantizacion downstream y del empaquetado. Se distribuye con licencia Apache 2.0 y esta pensado para despliegue de alta throughput en silicio Blackwell (B200, GB200, RTX 5090) y, segun la model card, tambien Ada Lovelace (RTX 4090).
 
-## Especificaciones técnicas
+El checkpoint declara una ventana de contexto nativa de 262.144 tokens, cabezas de decodificacion especulativa Multi-Token Prediction (MTP) integradas y multimodalidad de vision espaciotemporal 3D mediante el proyector `mmproj-BF16.gguf`. La model card afirma una superioridad empirica en 9 de 9 disciplinas de evaluacion frente a Claude Opus 4.6 Max bajo el harness de Claude Code, con 61,7% en SWE-bench Pro y 735 en ARC-C. Estos resultados proceden exclusivamente de la documentacion del autor y no han sido verificados de forma independiente.
 
-| Parámetro | Valor |
+El modelo deriva de la familia Qwen 3.8 (tag `qwen3_5` en Hugging Face) con 26.895.998.464 parametros reales en safetensors segun los metadatos, un repo de 20,7 GB y 51.367 descargas acumuladas. La combinacion de atencion lineal hibrida, merge GAIN y abliteration de alineamiento (Project Heretic) lo orienta a cargas de trabajo agenticas, de codigo y de sistemas donde los rechazos corporativos interfieren.
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 75% Gated Delta Recurrent Network (GDN) linear attention, 25% Grouped-Query Attention (GQA) |
-| Parámetros totales | 26.895.998.464 |
-| Longitud de contexto | 262.144 tokens (262K nativo) |
-| Tipos de cuantización | NVFP4 (Blackwell microscaling 4-bit), 8-bit y 4-bit (según benchmarks) |
-| Idiomas soportados | inglés (en), chino (zh) |
+| Arquitectura | Transformer hibrido Qwen 3.8: 75% de capas con atencion lineal Gated Delta Recurrent Network (GDN, complejidad O(1)) y 25% con Grouped-Query Attention global; merge de pesos GAIN de DavidAU |
+| Parametros totales | 26.895.998.464 (26,9B) |
+| Parametros activos | no disponible (no se declara arquitectura MoE) |
+| Longitud de contexto | 262.144 tokens (262K) nativos |
+| Tipos de cuantizacion | NVFP4 (FP4 microscaling de NVIDIA Blackwell, formato `compressed-tensors`), 8-bit; tambien se publican pesos GGUF y un proyector `mmproj-BF16.gguf` |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF (incluye mmproj-BF16.gguf para visión) |
+| Formato de pesos | safetensors (compressed-tensors NVFP4), GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo es híbrida: el 75% de las capas utilizan bloques de atención lineal Gated Delta Recurrent Network (GDN) con complejidad de memoria O(1), mientras que el 25% restante emplea Grouped-Query Attention (GQA) global. Esta combinación permite mantener un contexto largo de 262K tokens con un coste de memoria reducido. El checkpoint es el resultado de un merge GAIN (Guided Activation Interleaved Normalization) realizado por DavidAU sobre pesos de razonamiento de alto rendimiento, seguido de una alineación por abliteración (Project Heretic) que elimina los vectores de rechazo corporativos.
+La arquitectura es un transformer hibrido de la familia Qwen 3.8 en el que aproximadamente tres cuartas partes de las capas emplean atencion lineal Gated Delta Recurrent Network con complejidad de memoria O(1), mientras que el resto mantiene atencion global con Grouped-Query Attention. Esta mezcla permite sostener ventanas de 262K tokens con un coste de memoria subcuadratico en la mayoria de capas. El merge de pesos del modelo base utiliza la tecnica GAIN (Guided Activation Interleaved Normalization) de DavidAU, que segun la model card combina pesos de razonamiento punta sin degradacion, y se le aplica Project Heretic, una abliteration de alineamiento que elimina los vectores de rechazo corporativos.
 
-No se han publicado detalles sobre el corpus de entrenamiento, el número de tokens ni procesos de RLHF/DPO. Entre las innovaciones técnicas destacan la cuantización NVFP4 con microscaling de dos niveles, la predicción de múltiples tokens (MTP) con cabezas especulativas duales que generan dos tokens por paso (1.72x-2.20x de aceleración), y el módulo de visión espacial-temporal 3D (mmproj-BF16.gguf).
+La release anade cuantizacion NVFP4 con factores de microscaling de dos niveles sobre Tensor Cores de cuarta generacion, lo que segun el autor duplica el throughput de computo frente a GEMM INT4 convencional manteniendo rango dinamico de coma flotante. Incorpora ademas cabezas de drafting especulativo MTP de doble flujo que generan dos tokens por pasada forward, con una aceleracion declarada de 1,72x a 2,20x. No se documentan en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO sobre el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con cadena de pensamiento (CoT), destacando en tareas de abstracción científica (ARC-C 735, ARC-E 882).
-- Generación de código y resolución de problemas de programación en tiempo real (LiveCodeBench v6 90.3%).
-- Ingeniería de software agentic: resolución de issues en repositorios completos (SWE-bench Pro 61.7%, QwenSWEBench 79.0%).
-- Automatización de sistemas operativos y control de dispositivos (OSWorld-Verified 84.3%, AndroidWorld 81.9%).
-- Soporte de agentes y razonamiento multi-paso en workflows largos (CoWorkBench 70.7%).
-- Capacidades multimodales de visión: comprensión de esquemas arquitectónicos, interfaces de código y frames de vídeo mediante el proyector mmproj-BF16.gguf.
-- Contexto largo de 262K tokens para tareas que requieren memoria extensa.
-- Soporte de tool calling / function calling: no se especifica explícitamente en la documentación, aunque los benchmarks de agentes sugieren capacidades de uso de herramientas.
-- Modelo "uncensored": sin vectores de rechazo corporativos, orientado a desarrollo de seguridad y sistemas.
+- Generacion de texto y razonamiento con modo chain-of-thought (tags `cot`, `reasoning`).
+- Codigo y ingenieria de software agentica: resolucion de problemas en tiempo real, depuracion de repositorios completos y flujos multiarchivo de horizonte largo.
+- Control de sistemas operativos: escritorio (OSWorld-Verified) y autonomia en SO movil (AndroidWorld).
+- Seguimiento de restricciones complejas en instrucciones (IFBench).
+- Razonamiento cientifico de abstraccion frontier (ARC-C) y sentido comun basico (ARC-E).
+- Multimodalidad image-text-to-text con vision espaciotemporal 3D mediante `mmproj-BF16.gguf` (esquemas arquitectonicos, UI de codigo y fotogramas de video).
+- Decodificacion especulativa MTP integrada para acelerar la generacion.
+- Multilingue limitado a ingles y chino.
+- Ausencia de rechazos por alineamiento (uncensored), orientada a seguridad y desarrollo de sistemas.
 
 ## Casos de uso
 
-- Ingeniería de software agentic: el modelo puede gestionar repositorios completos y depurar código en múltiples archivos. Con SWE-bench Pro 61.7% y CoWorkBench 70.7%, es adecuado para integrarse en pipelines de CI/CD y asistentes de desarrollo.
-- Automatización de entornos de escritorio: gracias a OSWorld-Verified 84.3%, puede controlar sistemas operativos, ejecutar tareas administrativas y manipular interfaces gráficas.
-- Autonomía en dispositivos móviles: con AndroidWorld 81.9%, es capaz de operar aplicaciones Android de forma autónoma, útil para testing de apps y asistentes móviles.
-- Asistente de programación en tiempo real: LiveCodeBench v6 90.3% lo hace adecuado para entornos de desarrollo interactivo, generación de código y resolución de problemas de algoritmia.
-- Análisis de esquemas y documentación técnica: la capacidad de visión multimodal permite interpretar diagramas de arquitectura, capturas de interfaces de código y frames de vídeo en tareas de revisión de diseño.
-- Despliegue de inferencia de alta velocidad en hardware Blackwell: la cuantización NVFP4 y la predicción multi-token (MTP) permiten servir el modelo en RTX 5090, B200 o GB200 con alto throughput para aplicaciones de producción.
-- Investigación en razonamiento abstracto: con ARC-C 735 y ARC-E 882, puede utilizarse en estudios de razonamiento de sentido común y abstracción científica.
+- Ingenieria de software agentica en produccion: con 262K tokens de contexto y 61,7% declarado en SWE-bench Pro, el modelo puede recibir un repositorio completo, trazar dependencias entre modulos y emitir parches coherentes dentro de un pipeline de CI/CD con tool calling.
+- Depuracion de repositorios completos: la ventana de 262K permite cargar arboles de codigo extensos junto con trazas de error y logs de compilacion para localizar la causa raiz sin trocear el contexto.
+- Automatizacion de atencion al cliente multi-turno: conversaciones largas en ingles o chino con historial extenso caben en una sola ventana, reduciendo la perdida de contexto entre turnos.
+- Agentes de control de escritorio y movil: los resultados declarados en OSWorld-Verified (84,3%) y AndroidWorld (81,9%) lo hacen adecuado para automatizar tareas de GUI, pruebas de regresion de interfaz y RPA sobre sistemas operativos.
+- Analisis de documentacion tecnica multimodal: con el proyector de vision puede interpretar diagramas de arquitectura, capturas de interfaz y fotogramas de video junto al texto de especificaciones.
+- Asistencia a investigacion cientifica: el rendimiento declarado en ARC-C (735) lo situa como candidato para tareas de abstraccion cientifica y resolucion de problemas de nivel frontier.
+- Desarrollo de herramientas de seguridad ofensiva y defensiva: la abliteration elimina rechazos, lo que permite analisis de malware, red teaming y revision de codigo sensible sin bloqueos del modelo.
+- Servicio de alta throughput en Blackwell: con NVFP4 y MTP, indicado para despliegues vLLM o SGLang donde el coste por token y la latencia son criticos.
 
 ## Benchmarks y rendimiento
 
-| Evaluación | Qwen3.8-27B TURBO | Claude Opus 4.6 Max | Margen |
-|---|---|---|---|
-| SWE-bench Pro | 61.7% | 53.4% | +8.3% |
-| LiveCodeBench v6 | 90.3% | 88.8% | +1.5% |
-| QwenSWEBench | 79.0% | 63.8% | +15.2% |
-| OSWorld-Verified | 84.3% | 72.7% | +11.6% |
-| AndroidWorld | 81.9% | 62.0% | +19.9% |
-| IFBench | 79.5% | 62.5% | +17.0% |
-| CoWorkBench | 70.7% | 68.2% | +2.5% |
-| ARC-C (Challenge) | 735 (8-Bit) / 719 (4-Bit) | ~710-720 | Frontier Closed Tier |
-| ARC-E (Easy) | 882 | ~870 | Exceeds Closed Frontier |
+Resultados declarados por el autor bajo el harness de Claude Code, contexto de 256K, temperature=1.0 y top_p=0.95. No verificados de forma independiente.
 
-Los resultados son afirmaciones de los autores del modelo y no han sido verificados de forma independiente.
+| Suite | Enfoque | Modelo (segun autor) | Claude Opus 4.6 Max | Margen |
+|---|---|---|---|---|
+| SWE-bench Pro | Ingenieria de software agentica | 61,7% | 53,4% | +8,3% |
+| LiveCodeBench v6 | Resolucion de problemas en tiempo real | 90,3% | 88,8% | +1,5% |
+| QwenSWEBench | Depuracion de repositorio completo | 79,0% | 63,8% | +15,2% |
+| OSWorld-Verified | Control de ordenador | 84,3% | 72,7% | +11,6% |
+| AndroidWorld | Autonomia en SO movil | 81,9% | 62,0% | +19,9% |
+| IFBench | Seguimiento de restricciones complejas | 79,5% | 62,5% | +17,0% |
+| CoWorkBench | Flujos multiarchivo de horizonte largo | 70,7% | 68,2% | +2,5% |
+| ARC-C (Challenge) | Abstraccion cientifica frontier | 735 (8-bit) / 719 (4-bit) | ~710-720 | Tier frontier |
+| ARC-E (Easy) | Sentido comun basico | 882 | ~870 | Supera frontier cerrado |
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~14 GB para los pesos en NVFP4 (26.9B parámetros × 4 bits), más memoria para KV cache y activaciones. El repositorio ocupa 19.8 GB.
-- GPU recomendadas: NVIDIA Blackwell (B200, GB200, RTX 5090) y Ada Lovelace (RTX 4090).
-- Compatibilidad con consumer GPU: sí, con cuantización NVFP4 en RTX 5090 (32 GB) y RTX 4090 (24 GB), aunque el contexto máximo puede verse limitado por la VRAM disponible.
-- Opciones de despliegue: Anvil Engine (recomendado, con compresión TurboQuant de KV cache), vLLM, SGLang, llama.cpp (formato GGUF).
-- Latencia y throughput: la predicción multi-token (MTP) ofrece una aceleración estimada de 1.72x a 2.20x en comparación con la generación de un token por paso. No hay cifras absolutas de latencia.
+- VRAM estimada para inferencia: el repo pesa 20,7 GB en NVFP4, por lo que la inferencia en 4 bits requiere del orden de 21-24 GB de VRAM incluyendo overhead de KV cache; la variante 8-bit aproximadamente duplica esa cifra.
+- GPU recomendadas: NVIDIA Blackwell (B200, GB200, RTX 5090) para NVFP4 nativo; Ada Lovelace (RTX 4090) para la variante 8-bit segun la model card.
+- Cabe en GPU consumer: si, en RTX 5090 con NVFP4; en RTX 4090 con la variante 8-bit.
+- Opciones de despliegue: vLLM (deteccion automatica de `compressed-tensors` desde `config.json`, sin flag `--quantization`), SGLang, llama.cpp/Ollama con los pesos GGUF y `mmproj-BF16.gguf` para vision.
+- Latencia y throughput: no disponible de forma medida; el autor declara una aceleracion de 1,72x a 2,20x por las cabezas MTP.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | SWE-bench Pro | ARC-C |
+| Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B TURBO | 26.9B | 262K | Apache 2.0 | 61.7% | 735 |
-| Claude Opus 4.6 Max | no disponible | no disponible | propietaria | 53.4% | ~710-720 |
-
-No se dispone de información sobre otros modelos comparables open source en la documentación proporcionada.
+| Solstice-AI Qwen3.8-27B NVFP4 (este) | 26,9B | 262K | SWE-bench Pro 61,7%; ARC-C 735 | Apache 2.0 | Hugging Face, safetensors NVFP4 y GGUF |
+| DavidAU Qwen3.8-27B Cold Fusion (base) | 26,9B | 262K | Mismos resultados del merge, sin cuantizacion NVFP4 | Apache 2.0 | Hugging Face |
+| Claude Opus 4.6 Max | no disponible | no disponible | SWE-bench Pro 53,4% (referencia del autor) | Propietaria | API Anthropic |
+| Alternativas open source de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible.
-- Riesgo de alucinación: no disponible; al ser un modelo "uncensored" sin filtros de rechazo, puede generar contenido no deseado o inapropiado.
-- Limitaciones de idioma: solo inglés y chino; no hay soporte explícito para otros idiomas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero la naturaleza "uncensored" del modelo puede requerir políticas de uso responsables.
-- Advertencia importante: los benchmarks son afirmaciones de los autores y no han sido verificados de forma independiente. El modelo es un merge con abliteración, lo que puede afectar a la calidad y consistencia del output. El contexto de 262K es nativo, pero requiere hardware específico para aprovecharse plenamente.
+- Los benchmarks provienen unicamente de la model card del autor y no se han replicado de forma independiente; los margenes frente a Opus 4.6 deben tratarse como declaraciones, no como hechos verificados.
+- La abliteration de alineamiento (Project Heretic) elimina los rechazos, lo que incrementa el riesgo de generar contenido danino, codigo malicioso o afirmaciones inseguras; no es apto para despliegues orientados al publico sin filtros externos.
+- Riesgo de alucinacion no cuantificado en la informacion disponible, especialmente en tareas de horizonte largo con contexto de 262K.
+- Cobertura multilingue limitada a ingles y chino; el castellano no figura entre los idiomas declarados.
+- La cuantizacion NVFP4 introduce perdida de precision frente a los pesos originales; el propio autor reporta 719 frente a 735 en ARC-C en la variante 4-bit.
+- El formato NVFP4 depende de Tensor Cores Blackwell; en hardware anterior sera necesario recurrir a los pesos GGUF o 8-bit.
+- La licencia Apache 2.0 permite uso comercial, pero la cadena de derivacion (Qwen 3.8, merge GAIN, abliteration) conviene revisarse antes de produccion.
+- El pipeline declarado es image-text-to-text, pero la vision requiere el proyector `mmproj-BF16.gguf` adicional; sin el, el modelo funciona solo como texto.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
-- Anvil Runtime: https://github.com/Solstice-Labs/anvil
-- Variante 1M: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-1M
+- Organizacion Solstice-AI: https://huggingface.co/Solstice-AI
+- Perfil del autor original DavidAU: https://huggingface.co/DavidAU
+- vLLM: https://github.com/vllm-project/vllm
+- SGLang: https://github.com/sgl-project/sglang
+- Paper de referencia sobre atencion lineal GDN y arquitecturas hibridas: no disponible en la informacion proporcionada
+- Repositorio de Project Heretic: no disponible en la informacion proporcionada

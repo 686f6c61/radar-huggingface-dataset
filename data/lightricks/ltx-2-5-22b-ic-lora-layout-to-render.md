@@ -2,54 +2,49 @@
 
 ## Resumen
 
-LTX-2.5-22b-IC-LoRA-Layout-To-Render es un adaptador de tipo LoRA (concretamente una IC-LoRA, es decir, una LoRA de control por imagen o *in-context LoRA*) desarrollado por Lightricks para su modelo de generacion de video LTX-2.5. El adaptador se publica como un repositorio independiente en Hugging Face y esta pensado para la tarea *video-to-video*, anadiendo control de encuadre de camara y conversion de composiciones tipo *layout* a un render de video final. El identificador del repositorio incluye la etiqueta "22b", que apunta a un modelo base de aproximadamente 22.000 millones de parametros, si bien el repositorio distribuido aqui (1,3 GB) contiene unicamente los pesos del adaptador, no el modelo completo.
+LTX-2.5-22b-IC-LoRA-Layout-To-Render es un adaptador LoRA de tipo IC-LoRA (In-Context LoRA) desarrollado por Lightricks sobre el modelo base de generacion de video LTX-2.5, de 22.000 millones de parametros. El adaptador esta especializado en la tarea de layout-to-render: tomar una representacion de layout (composicion espacial de elementos) y convertirla en un render de video coherente, ademas de permitir control de camara. Se distribuye a traves de Hugging Face con acceso restringido (gated) y licencia comunitaria LTX-2.x.
 
-El problema que resuelve es el de dotar al modelo base LTX-2.5 de capacidades adicionales de control estructural y de camara sin necesidad de reentrenar el modelo completo: el usuario aplica el adaptador sobre LTX-2.5 para condicionar la generacion a partir de un *layout* previo, manteniendo la coherencia temporal del video. Es relevante ahora porque los flujos de trabajo de video generativo profesional exigen cada vez mas control explicito sobre la composicion y el movimiento de camara, y los adaptadores ligeros son la via mas eficiente de anadirlo.
+El modelo resuelve un problema concreto en pipelines de produccion audiovisual: dar control estructural sobre la generacion de video sin reentrenar el modelo base. Al ser un adaptador LoRA, se aplica sobre LTX-2.5 y anade condicionamiento espacial explicito, lo que resulta util para previsualizacion, storyboarding y generacion de planos con encuadre controlado. Su relevancia actual radica en que extiende las capacidades del modelo base con un coste de almacenamiento minimo (1,3 GB de repositorio) frente a los pesos completos del modelo de 22B.
 
-Se trata de un modelo de nicho, orientado a *pipeline* de video-to-video, con acceso restringido mediante *gating* en Hugging Face (hay que aceptar condiciones), licencia comunitaria propia de Lightricks (`ltx-2.x-community-license`), idioma declarado ingles y dependencia de la libreria `ltx`. No sustituye al modelo base: es un complemento que se carga junto a Lightricks/LTX-2.5.
+La informacion publica disponible sobre este adaptador es limitada: se conocen sus metadatos de Hugging Face (tags, pipeline, licencia, idioma y modelo base), pero no se han publicado en la informacion proporcionada detalles sobre arquitectura interna del LoRA, datos de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador IC-LoRA sobre el modelo base de generacion de video LTX-2.5 (arquitectura del adaptador no detallada en la informacion disponible) |
-| Parametros totales | No disponible para el adaptador; el identificador del repositorio sugiere un modelo base de ~22.000 millones de parametros |
-| Parametros activos | No aplica (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible (modelo de video, no de texto) |
-| Tipos de cuantizacion | No disponible |
+| Arquitectura | LoRA (IC-LoRA) sobre el modelo base LTX-2.5; arquitectura interna del adaptador no disponible |
+| Parametros totales | 22B en el modelo base LTX-2.5; numero de parametros del adaptador no disponible |
+| Parametros activos | no disponible (no se indica que el modelo base sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
-| Licencia | ltx-2.x-community-license (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | No disponible (el repositorio ocupa 1,3 GB) |
-| Tipo de pipeline | video-to-video |
-| Modelo base | Lightricks/LTX-2.5 |
-| Libreria | ltx |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Descargas / likes | 188 descargas, 13 likes |
-| Fecha de creacion / actualizacion | 2026-09-22 / 2026-10-01 |
+| Licencia | ltx-2.x-community-license (licencia "other" en Hugging Face) |
+| Formato de pesos | no disponible (repositorio de 1,3 GB; compatible con la libreria `ltx`) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del adaptador ni la del modelo base LTX-2.5 mas alla de tratarse de un sistema de generacion de video de Lightricks. Por las etiquetas del repositorio (`lora`, `ic-lora`, `video-to-video`, `layout-to-render`, `camera-control`) se deduce que es una LoRA de bajo rango aplicada sobre el transformer de difusion de video del modelo base, empleada como mecanismo de condicionamiento adicional (*in-context*) para introducir control de composicion y de trayectoria de camara.
+El adaptador se presenta como un IC-LoRA, es decir, un LoRA aplicado en contexto sobre el modelo base Lightricks/LTX-2.5. La etiqueta `video-to-video` y la tarea `layout-to-render` indican que el adaptador modifica el comportamiento del modelo base para aceptar un layout como condicionamiento y producir un video renderizado que respeta esa estructura, con soporte adicional de control de camara segun los tags del repositorio. La libreria asociada es `ltx`, lo que sugiere integracion con el ecosistema de inferencia de Lightricks.
 
-No se dispone de datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se emplearon tecnicas de alineacion como RLHF o DPO. Tampoco se detalla si el adaptador introduce innovaciones tecnicas especificas (por ejemplo, atencion lineal o decodificacion especulativa). Todos estos apartados deben considerarse "no disponibles" a partir de la informacion proporcionada.
+No se dispone en la informacion proporcionada de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas del adaptador (por ejemplo, mecanismos de atencion o decodificacion). El modelo base LTX-2.5 tampoco cuenta con ficha tecnica detallada en esta informacion mas alla de su tamano de 22B y su naturaleza de modelo de video.
 
 ## Capacidades
 
-- Conversion de *layout* a render: transformacion de una composicion o disposicion previa en un video renderizado coherente.
-- Video-to-video: re-generacion o transformacion de un video de entrada manteniendo la estructura temporal.
-- Control de camara: ajuste de encuadre y movimiento de camara sobre el video generado.
-- Condicionamiento in-context (IC-LoRA): aplicacion de control adicional sobre el modelo base sin reentrenarlo.
-- Integracion con el modelo base LTX-2.5 mediante la libreria `ltx`.
-- Idiomas: declarado unicamente ingles (`en`); el soporte multilingue no esta documentado.
+- Generacion de video condicionada por layout: transforma una representacion de layout en un render de video coherente con la composicion indicada.
+- Control de camara: los tags del repositorio incluyen `camera-control`, lo que indica capacidad de guiar el movimiento de camara en el video generado.
+- Video-to-video: el pipeline declarado es `video-to-video`, por lo que el adaptador opera sobre video de entrada ademas de sobre el layout.
+- Integracion como adaptador: se aplica sobre LTX-2.5 sin necesidad de cargar un modelo completo adicional, manteniendo el coste de almacenamiento bajo (1,3 GB).
+- Idioma: el modelo esta etiquetado unicamente para ingles (`en`).
+- Soporte de tool calling, agentes, vision, audio o modo thinking: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Previsualizacion de planos en produccion audiovisual: se introduce un *layout* de la escena (posiciones de sujetos y encuadre) y el adaptador genera un render de video preliminar para validar la puesta en escena antes del rodaje o del render final.
-- Control de movimiento de camara en VFX: aplicar trayectorias de camara definidas por el usuario sobre un video existente para integrar tomas generadas en un plano mayor.
-- Storyboarding animado: convertir bocetos de composicion en clips de video con movimiento controlado, agilizando la iteracion creativa frente a un storyboard estatico.
-- Prototipado de anuncios: generar variaciones de un anuncio cambiando el encuadre o la disposicion de elementos sobre el mismo video base, reutilizando el modelo compartido y solo recargando el adaptador.
-- Postproduccion de video para redes: reformatear planos existentes (por ejemplo, reencuadre a formatos verticales) mediante control de camara sobre el video original.
-- Investigacion en difusion de video: uso del adaptador como caso de estudio de IC-LoRA para condicionamiento estructural en pipelines video-to-video sobre LTX-2.5.
+- Previsualizacion de planos en produccion audiovisual: a partir de un layout de composicion (posicion de personajes, objetos y camara), el adaptador genera un render de video preliminar que permite validar el encuadre antes del rodaje o del render final.
+- Storyboarding automatizado: convertir bocetos de layout en clips de video con movimiento de camara controlado, acelerando la iteracion entre direccion de arte y equipo de produccion.
+- Generacion de video con encuadre controlado para publicidad: el control de layout y camara permite producir variaciones de un mismo plano manteniendo la composicion exigida por la marca.
+- Video-to-video para postproduccion: al operar en pipeline `video-to-video`, puede usarse para reestilizar o regenerar material existente respetando la estructura espacial del metraje original.
+- Prototipado rapido en estudios de animacion: generar animaticos a partir de layouts 2D con el modelo base LTX-2.5 y este adaptador, reduciendo el coste frente a un render completo.
+- Investigacion en control espacial de modelos de video: el adaptador sirve como referencia para estudiar como un IC-LoRA introduce condicionamiento de layout en un modelo de 22B, comparando con otras variantes LoRA publicadas por Lightricks (Slow-Motion-Control, Cinemagraph).
+- Integracion en pipelines con la libreria `ltx`: al declarar esa libreria como dependencia, encaja en flujos de inferencia ya construidos sobre el ecosistema de Lightricks.
 
 ## Benchmarks y rendimiento
 
@@ -57,30 +52,31 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El repositorio del adaptador ocupa 1,3 GB, por lo que el espacio en disco del adaptador en si es reducido; el requisito real de VRAM lo impone el modelo base LTX-2.5, cuyos requisitos no se detallan en la informacion disponible.
-- No se especifican GPU recomendadas, numero de GPUs ni configuraciones de memoria para el modelo base.
-- No se indica si el modelo cabe en GPU de consumo; dado que el identificador sugiere un base de ~22.000 millones de parametros, es previsible que requiera GPU de gama alta o profesional, pero esto no se confirma en la informacion proporcionada.
-- Opciones de despliegue: la unica referencia explicita es la libreria `ltx`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (estas herramientas estan orientadas a modelos de lenguaje y no necesariamente aplican aqui).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible para el adaptador; el modelo base LTX-2.5 es de 22B parametros, por lo que se requiere hardware de gama alta, pero no se dispone de cifras concretas en la informacion proporcionada.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no disponible; el tamano del modelo base (22B) hace improbable su ejecucion en GPU de consumo sin cuantizacion, pero no se confirma en la informacion.
+- Opciones de despliegue: la libreria declarada es `ltx`; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render | Adaptador IC-LoRA video-to-video | Adaptador (base sugerido ~22B) | No disponible | ltx-2.x-community-license | Gated en Hugging Face |
-| Lightricks/LTX-2.5 | Modelo base de generacion de video | ~22.000 millones (segun el identificador del adaptador) | No disponible | No disponible en la informacion | No disponible en la informacion |
+| LTX-2.5-22b-IC-LoRA-Layout-To-Render | 22B (base) + LoRA | no disponible | Layout-to-render, video-to-video | ltx-2.x-community-license | Gated en Hugging Face |
+| LTX-2.5-22b-LoRA-Slow-Motion-Control | 22B (base) + LoRA | no disponible | Control de camara lenta | no disponible | Hugging Face (Lightricks) |
+| LTX-2.5-22b-LoRA-Cinemagraph | 22B (base) + LoRA | no disponible | Cinemagraph | no disponible | Hugging Face (Lightricks) |
 
-No se dispone de informacion sobre otros adaptadores o modelos comparables de la misma categoria en los resultados de busqueda proporcionados. Cualquier comparacion adicional con alternativas de terceros se considera "no disponible".
+Las alternativas listadas pertenecen al mismo autor y al mismo modelo base, por lo que comparten tamano y ecosistema; la diferencia principal es la tarea especializada de cada adaptador. No se dispone de datos de rendimiento comparativo entre ellas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta *gated*, por lo que es obligatorio aceptar las condiciones en Hugging Face antes de descargarlo.
-- Licencia de comunidad: la `ltx-2.x-community-license` impone condiciones especificas de uso; es imprescindible revisarlas antes de cualquier uso comercial, ya que pueden incluir restricciones de atribucion, de escala o de finalidad.
-- No es un modelo autonomo: requiere cargar el modelo base Lightricks/LTX-2.5 ademas del adaptador.
-- Idiomas: unicamente ingles declarado; no hay evidencia de soporte multilingue.
-- No se han publicado datos de benchmarks, sesgos conocidos ni tasas de error, por lo que el riesgo de resultados imperfectos (artefactos visuales, incoherencia temporal o alucinacion visual en video) no puede cuantificarse con la informacion disponible.
-- No se documentan limitaciones de contexto, requisitos de hardware ni caveats de produccion especificos.
-- El numero de descargas (188) y de likes (13) es bajo, lo que sugiere un ecosistema de validacion limitado hasta la fecha de actualizacion (2026-10-01).
+- Acceso restringido: el repositorio es gated; es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
+- Licencia comunitaria: la licencia ltx-2.x-community-license puede imponer restricciones al uso comercial; debe revisarse antes de integrar el modelo en produccion.
+- Idioma: el modelo esta etiquetado solo para ingles, lo que limita su uso en flujos en castellano u otros idiomas.
+- Dependencia del modelo base: el adaptador no funciona de forma autonoma; requiere LTX-2.5, lo que implica los requisitos de hardware y licencia del modelo base.
+- Riesgo de alucinacion visual: como modelo generativo de video, puede producir contenido incoherente con el layout o artefactos en el render; no se dispone de datos de evaluacion al respecto.
+- Sesgos: no se dispone de informacion sobre sesgos conocidos del adaptador ni del modelo base.
+- Documentacion tecnica limitada: no hay informacion publica en esta ficha sobre datos de entrenamiento, cuantizaciones soportadas ni rendimiento medido, lo que dificulta la evaluacion previa a su adopcion.
 
 ## Enlaces
 
@@ -90,4 +86,4 @@ No se dispone de informacion sobre otros adaptadores o modelos comparables de la
 - Sitio web de Lightricks: https://www.lightricks.com/
 - Sobre Lightricks: https://www.lightricks.com/about
 - GitHub de Lightricks: https://github.com/Lightricks
-- Wikipedia de Lightricks: https://en.wikipedia.org/wiki/Lightricks
+- Wikipedia de Lightricks: https://en.m.wikipedia.org/wiki/Lightricks

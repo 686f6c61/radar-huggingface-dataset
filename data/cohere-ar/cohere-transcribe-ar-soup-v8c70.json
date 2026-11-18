@@ -26,6 +26,8 @@
     "telephony",
     "ar",
     "en",
+    "base_model:Cohere-AR/cohere-transcribe-ar-rl-v8ctrl",
+    "base_model:finetune:Cohere-AR/cohere-transcribe-ar-rl-v8ctrl",
     "endpoints_compatible",
     "region:us"
   ],

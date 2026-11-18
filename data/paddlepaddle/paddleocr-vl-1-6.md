@@ -2,97 +2,90 @@
 
 ## Resumen
 
-PaddleOCR-VL-1.6 es un modelo vision-language (VLM) ligero de 0.9B parámetros desarrollado por el equipo de PaddlePaddle, especializado en parsing de documentos. Es la tercera iteración de la serie PaddleOCR-VL y supone una mejora significativa sobre su predecesor, el 1.5, al que supera en 1.8 puntos porcentuales en el benchmark OmniDocBench (96.3% frente a 94.5%). El modelo está diseñado para convertir documentos en formato PDF o imagen en datos estructurados, cubriendo tareas como reconocimiento de texto, layout, tablas, fórmulas, gráficos, sellos y caracteres poco comunes.
+PaddleOCR-VL-1.6 es un modelo de visión-lenguaje especializado en el análisis y extracción de contenido de documentos, desarrollado por el equipo PaddlePaddle (Baidu). Resuelve el problema del *document parsing* de alta fidelidad: convertir imágenes de páginas (escaneos, capturas, PDF renderizados) en texto estructurado, preservando layout, tablas, fórmulas, gráficos y sellos. Es la evolución de la familia PaddleOCR-VL, en esta versión con mejoras en el refinamiento de regiones infraoptimizadas y un post-entrenamiento progresivo.
 
-La arquitectura se basa en ERNIE4.5, el modelo fundacional de Baidu, y está optimizada específicamente para tareas de comprensión documental. Su tamaño reducido (958 millones de parámetros) lo hace especialmente atractivo para despliegue en producción, ya que puede ejecutarse en GPUs de consumo con cuantización. El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, y soporta múltiples idiomas con especial énfasis en inglés, chino y capacidades multilingües.
+El modelo tiene 958.588.736 parámetros (~0,96 mil millones) y se distribuye en formato safetensors con un repositorio de 1,9 GB. Está construido sobre la base de ERNIE4.5 (según los tags del autor) y se expone con la librería PaddleOCR, con pipeline `image-text-to-text`. Su licencia Apache 2.0 y su tamaño compacto lo hacen relevante para despliegues en producción donde el coste por página importa, frente a alternativas de mayor tamaño.
 
-La relevancia actual de este modelo radica en que aborda el cuello de botella del parsing documental en la era de los LLMs: convertir documentos complejos (con tablas, fórmulas, sellos y layouts variados) en datos estructurados que puedan alimentar pipelines de RAG o fine-tuning. Su rendimiento supera a modelos generalistas mucho más grandes en tareas específicas de documentos, como se demuestra en los benchmarks publicados.
+Es relevante ahora porque el parsing documental de calidad es un cuello de botella en pipelines RAG, digitalización de archivos y automatización de back-office, y este modelo aborda tareas que tradicionalmente requerían varios modelos especializados (detección de layout, reconocimiento de tablas, OCR de fórmulas, detección de sellos) en un único modelo conversacional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ERNIE4.5 (vision-language transformer) |
-| Parametros totales | 958.588.736 (0.9B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Vision-lenguaje basada en ERNIE4.5 (transformer multimodal); detalles internos no disponibles |
+| Parametros totales | 958.588.736 (~0,96 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato safetensors; se espera compatibilidad con cuantizacion estandar) |
-| Idiomas soportados | ingles, chino, multilingue |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, zh, multilingual |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (tambien custom_code) |
 
 ## Arquitectura y entrenamiento
 
-PaddleOCR-VL-1.6 es un modelo denso basado en la arquitectura ERNIE4.5, que combina un encoder visual con un decoder de lenguaje para tareas image-to-text. A diferencia de los modelos MoE, todos los parámetros se activan en cada inferencia, lo que simplifica el despliegue y reduce la latencia. El modelo está construido sobre PaddleOCR, la librería de PaddlePaddle para OCR y parsing documental, y hereda la capacidad de su predecesor para manejar documentos complejos.
+El modelo es un sistema visión-lenguaje que combina un codificador de imagen con un modelo de lenguaje para generar texto estructurado a partir de imágenes de documentos. El autor lo etiqueta como basado en ERNIE4.5 y lo integra en la librería PaddleOCR bajo el pipeline `image-text-to-text`, lo que implica una interfaz conversacional (image-text-to-text, tag `conversational`). No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
-El entrenamiento se realizó mediante un proceso de post-entrenamiento progresivo que incluye dos fases principales. Primero, se aplicó un marco de optimización de datos consciente de la región (region-aware data optimization framework), que identifica y refuerza las áreas donde el modelo anterior (1.5) mostraba debilidades, como caracteres poco comunes, documentos antiguos, sellos y gráficos. Segundo, se empleó una receta de post-entrenamiento basada en selección curada de datos y reinforcement learning, lo que permitió mejorar la precisión sin aumentar significativamente el tamaño del modelo. El resultado es un modelo que alcanza 96.3% de precisión en OmniDocBench v1.6, superando a modelos generalistas mucho más grandes.
+La innovación declarada en el título de la model card es doble: *under-optimized region refinement* (refinamiento de regiones que el modelo base tiende a procesar peor) y *progressive post-training* (post-entrenamiento progresivo). No se proporcionan detalles técnicos adicionales sobre estos mecanismos en la información disponible.
 
 ## Capacidades
 
-- Reconocimiento de texto (OCR) en documentos escaneados y digitales, con soporte para caracteres latinos, chinos y multilingües.
-- Parsing de layout: identificación y estructuración de secciones, párrafos, columnas y otros elementos de diseño.
-- Reconocimiento de tablas: extracción de estructura tabular y contenido celular, incluyendo tablas complejas con celdas fusionadas.
-- Reconocimiento de fórmulas: conversión de fórmulas matemáticas impresas o manuscritas a formato LaTeX.
-- Reconocimiento de gráficos y diagramas: identificación de elementos visuales y su relación con el texto circundante.
-- Reconocimiento de sellos: detección y extracción de sellos y marcas de agua, útil en documentos oficiales.
-- Spotting: localización y reconocimiento simultáneo de texto y objetos en la imagen.
-- Capacidad conversacional: el modelo puede interactuar con el usuario sobre el contenido del documento, respondiendo preguntas sobre el texto, layout o estructura.
-- Soporte multilingüe: funciona en inglés, chino y otros idiomas, con especial fortaleza en documentos asiáticos.
-- Capacidades mejoradas en documentos antiguos, caracteres poco comunes y sellos, gracias al entrenamiento dirigido de la versión 1.6.
+- Reconocimiento óptico de caracteres (OCR) sobre imágenes de documentos.
+- Análisis de layout: identificación y ordenación de bloques de texto, títulos, párrafos y secciones.
+- Extracción y estructuración de tablas.
+- Reconocimiento de fórmulas matemáticas.
+- Interpretación de gráficos (chart).
+- Detección y transcripción de sellos (seal).
+- *Spotting*: localización de texto en la imagen además de su transcripción.
+- Parsing documental completo (`document-parse`).
+- Conversación multimodal image-text-to-text.
+- Soporte multilingüe (inglés, chino y otros idiomas).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso general: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Digitalización de documentos históricos: el modelo puede procesar documentos antiguos con caracteres poco comunes o degradados, extrayendo el texto y la estructura para su archivo digital. Su entrenamiento específico en este tipo de contenido lo hace especialmente adecuado para bibliotecas y archivos.
-- Automatización de procesos de back-office: extracción de datos de facturas, contratos y formularios para alimentar sistemas ERP o CRM. La combinación de OCR, layout y reconocimiento de tablas permite capturar campos estructurados sin intervención manual.
-- Pipeline RAG para documentación técnica: conversión de manuales, patentes y papers científicos en texto estructurado con tablas y fórmulas preservadas, listo para indexación vectorial y recuperación aumentada.
-- Análisis de documentos financieros: parsing de informes anuales, estados financieros y prospectos donde las tablas y los gráficos son tan importantes como el texto. El modelo puede extraer tanto los datos numéricos como su contexto visual.
-- Asistente conversacional sobre documentos: integración del modelo en chatbots que responden preguntas sobre el contenido de un documento específico, gracias a su capacidad image-text-to-text y su habilidad para mantener conversaciones contextuales.
-- Procesamiento de documentos oficiales con sellos: verificación y extracción de información de documentos gubernamentales, certificados o contratos donde los sellos son un elemento crítico. El modelo puede detectar y transcribir el contenido del sello junto con el resto del documento.
-- Generación de datos de entrenamiento: uso del modelo para crear datasets etiquetados de documentos estructurados, que luego pueden usarse para fine-tuning de modelos más pequeños o específicos.
+- Digitalización masiva de archivos escaneados: el modelo convierte páginas de PDF renderizadas en texto estructurado con layout preservado, adecuado para fondos documentales históricos o administrativos.
+- Construcción de pipelines RAG sobre documentos: al extraer tablas, fórmulas y estructura de sección, el texto resultante se puede trocear y indexar con coherencia semántica, mejorando la recuperación frente a OCR plano.
+- Procesamiento de facturas y formularios: la detección de layout y tablas permite extraer campos y líneas de detalle de documentos comerciales de forma estructurada.
+- Extracción de contenido científico y técnico: el reconocimiento de fórmulas y gráficos facilita la conversión de artículos y manuales a formatos legibles por máquina.
+- Verificación documental con sellos: la capacidad de detección de sellos sirve para validar la autenticidad o presencia de sellos en documentos oficiales.
+- Digitalización multilingüe: con soporte para inglés, chino y otros idiomas, cubre corpus mixtos habituales en comercio internacional y organismos multilaterales.
+- Anotación y enriquecimiento de datasets: el *spotting* (localización más transcripción) permite generar pares imagen-texto con coordenadas para entrenar otros modelos.
 
 ## Benchmarks y rendimiento
 
-Según la información publicada, PaddleOCR-VL-1.6 alcanza un 96.3% de precisión en el benchmark OmniDocBench v1.6, superando a su predecesor (94.5% en v1.5) y a modelos generalistas de mayor tamaño. No se han publicado resultados detallados para benchmarks estándar como MMLU, HumanEval o GSM8K, ya que el modelo está especializado en tareas de documento y no en razonamiento general.
-
-| Benchmark | PaddleOCR-VL-1.6 | PaddleOCR-VL-1.5 |
-|---|---|---|
-| OmniDocBench v1.6 | 96.3% | no aplica |
-| OmniDocBench v1.5 | no disponible | 94.5% |
-
-La documentación indica que el modelo lidera en reconocimiento de texto, fórmulas y tablas, con mejoras significativas en documentos antiguos, caracteres poco comunes, sellos y gráficos. No se dispone de comparativas públicas con otros modelos de la misma categoría (como MinerU o GOT-OCR) en los resultados de búsqueda.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2 GB en FP16 (considerando 0.9B parámetros), alrededor de 1 GB en INT8 y menos de 1 GB en INT4.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para FP16. Para producción con alta concurrencia, se recomienda RTX 4090, A100 o H100.
-- Compatibilidad con GPUs de consumo: sí, el modelo cabe en GPUs como RTX 3060 (12 GB), RTX 4060 (8 GB) o incluso en versiones cuantizadas en GPUs con 4 GB.
-- Opciones de despliegue: vLLM (con recetas disponibles en recipes.vllm.ai), PaddleOCR (librería nativa), y potencialmente llama.cpp u Ollama para cuantización GGUF (aunque no se confirma en la documentación).
-- Latencia y throughput: no se han publicado cifras oficiales. Dado el tamaño del modelo, se espera una latencia de decenas de milisegundos por imagen en GPUs modernas, con throughput de decenas de requests por segundo en configuraciones con batching.
+- VRAM estimada para inferencia: con ~0,96 B de parámetros, en FP16 requiere aproximadamente 2 GB de pesos; en FP32 unos 4 GB. La VRAM total depende del codificador de imagen y del coste de atención sobre imágenes de alta resolución, no cuantificado en la información disponible.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una GPU consumer de gama media-alta (por ejemplo, RTX 3060 12 GB o superior) debería ser suficiente para inferencia en FP16.
+- Cabe en GPU consumer: sí, previsiblemente, dado el tamaño del modelo; no confirmado explícitamente por el autor.
+- Opciones de despliegue: la librería oficial es PaddleOCR (PaddlePaddle). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | OmniDocBench | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PaddleOCR-VL-1.6 | 0.9B | no disponible | 96.3% (v1.6) | Apache 2.0 | Hugging Face, ModelScope |
-| PaddleOCR-VL-1.5 | 0.9B | no disponible | 94.5% (v1.5) | Apache 2.0 | Hugging Face, ModelScope |
-| PaddleOCR-VL-1.0 | no disponible | no disponible | inferior al 1.5 | Apache 2.0 | Hugging Face, ModelScope |
+| PaddleOCR-VL-1.6 | ~0,96 B | no disponible | Parsing documental multimodal (layout, tablas, fórmulas, sellos) | Apache 2.0 | Hugging Face, ModelScope |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información pública sobre comparativas directas con otros modelos de parsing documental como MinerU, GOT-OCR2.0 o Nougat en los resultados de búsqueda. La documentación menciona que supera a modelos generalistas grandes, pero no se especifican nombres ni cifras concretas.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Sesgos potenciales: al estar entrenado principalmente con documentos en inglés y chino, el rendimiento en otros idiomas puede ser inferior, especialmente en escrituras no latinas o con diacríticos poco comunes.
-- Riesgo de alucinación: como todo modelo generativo, puede inventar contenido en documentos ambiguos o de baja calidad. Es recomendable validar la salida en documentos críticos.
-- Limitaciones de contexto: no se ha publicado la longitud máxima de contexto, lo que puede limitar el procesamiento de documentos muy extensos en una sola pasada.
-- Dependencia de la calidad de imagen: el rendimiento degrada significativamente con imágenes de baja resolución, rotadas o con ruido. Se recomienda preprocesar las imágenes antes de la inferencia.
-- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones, pero es recomendable revisar los términos de la librería PaddleOCR y las dependencias asociadas.
-- Caveat de producción: aunque el modelo es ligero, el despliegue en producción requiere considerar la latencia de preprocesamiento de imágenes (resize, normalización) que puede dominar el tiempo total de respuesta en documentos grandes.
+- Sesgos conocidos: no documentados en la información disponible; cabe esperar sesgos derivados de la distribución de los datos de entrenamiento (predominio de inglés y chino).
+- Riesgo de alucinación: como modelo generativo, puede producir texto plausible ausente en la imagen, especialmente en regiones de baja calidad o degradadas.
+- Limitaciones de idioma: el soporte declarado se centra en inglés y chino; el rendimiento en otras lenguas (incluido el español) no está cuantificado.
+- Longitud de contexto: no especificada, lo que dificulta planificar el procesamiento de páginas densas o documentos de varias páginas.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las dependencias de PaddlePaddle y el código `custom_code` asociado.
+- Producción: al requerir `custom_code` y la librería PaddleOCR, la integración con stacks estándar de inferencia (vLLM, TGI) puede no ser directa; verificar compatibilidad antes de desplegar.
+- No se documentan requisitos de resolución de imagen ni límites de tamaño de entrada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
-- ModelScope: https://modelscope.cn/models/PaddlePaddle/PaddleOCR-VL-1.6
-- Repositorio GitHub: https://github.com/PaddlePaddle/PaddleOCR
-- Documentación oficial: https://www.paddleocr.ai/main/en/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.6.html
-- Recetas vLLM: https://recipes.vllm.ai/PaddlePaddle/PaddleOCR-VL-1.6
-- Paper (referencia en tags): arxiv:2606.03264
+- Modelo en Hugging Face: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
+- Modelo en ModelScope: https://modelscope.cn/models/PaddlePaddle/PaddleOCR-VL-1.6
+- Repositorio GitHub de PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
+- Paper (arXiv): https://arxiv.org/abs/2606.03264

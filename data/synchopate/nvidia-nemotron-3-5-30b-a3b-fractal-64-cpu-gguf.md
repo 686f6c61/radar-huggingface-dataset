@@ -2,94 +2,118 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización GGUF del modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16`, publicada por el usuario Synchopate bajo el nombre comercial "Nemotron-3.5-30B-A3B-Fractal-64-CPU-GGUF". Se trata de un modelo híbrido Mamba-2 + Mixture-of-Experts (MoE) de 30B parámetros totales con unos 3B activos por token, derivado de la familia Nemotron 3 Nano de NVIDIA. El autor no es NVIDIA: es un tercero que aplica una cuantización asimétrica propia ("Fractal-64") y empaqueta un motor de inferencia específico en su repositorio de GitHub.
+NVIDIA-Nemotron-3.5-30B-A3B-Fractal-64-CPU-GGUF es una cuantizacion GGUF del modelo base nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, publicada por el usuario Synchopate. Se trata de un checkpoint legacy (v3.0) que aplica una cuantizacion jerarquica no lineal de bloques de 64 elementos, denominada Fractal-64, sobre los tensores MoE del modelo original. El resultado es un fichero de 15.420.034.624 bytes (14,36 GiB) que conserva los 31.577.940.288 parametros del modelo base sin podar, con Top-6 activo en cada capa de mezcla de expertos.
 
-El objetivo declarado es ejecutar un modelo de 30B con contexto de 256K en CPU pura a velocidades comparables a GPU, aprovechando que la mayoría de capas son SSM recurrentes (memoria de estado O(1)) y solo unas pocas usan atención GQA. El autor reporta entre 25 y 111 tok/s según plataforma, con un peso en disco de 14,35 GiB. Es relevante para quienes quieran desplegar modelos grandes en hardware sin GPU o con GPU híbrida, aunque conviene tratar las cifras como afirmaciones del autor no verificadas de forma independiente.
+El modelo base es un transformer hibrido de NVIDIA que combina 23 bloques Mamba-2 SSM, 23 bloques Sparse MoE y 6 bloques de atencion GQA-2, sumando 52 bloques en total. Esta variante esta disenada especificamente para inferencia en CPU (AVX2, AVX-512) y Apple Silicon Metal (M1-M5), mediante el runtime modificado llama-modchip v3.0, que introduce un tipo de tensor propio (GGML_TYPE_FRACTAL_64 = 44) y decodificacion especulativa.
 
-La licencia declarada es MIT, heredada del modelo base. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 5 de noviembre de 2026, lo que indica que es una publicación muy reciente y sin validación comunitaria.
+Su relevancia actual radica en que permite ejecutar un modelo de 30B parametros en equipos sin GPU dedicada, con velocidades verificadas de hasta 111,62 tok/s en un Threadripper PRO 7985WX y 72,47 tok/s en un Apple M4 Max. No obstante, el propio autor lo marca como obsoleto y recomienda las variantes MaxQ v3.0 y VQ3-64 para nuevos despliegues.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-2 SSM + Mixture-of-Experts (MoE) con atención GQA-2 en 6 de 52 capas |
-| Parametros totales | 30B (aproximado, según nombre del modelo) |
-| Parametros activos | ~3B (A3B en el nombre; no confirmado en la información) |
-| Longitud de contexto | 256.000 tokens (declarado por el autor) |
-| Tipos de cuantizacion | GGUF asimétrica "Fractal-64": Q2_0 (expertos MoE en frío), Q4_K / Q8_0 / F32 (backbone Mamba-2, expertos compartidos y atención) |
+| Arquitectura | Transformer hibrido: 23 bloques Mamba-2 SSM + 23 bloques Sparse MoE + 6 bloques GQA-2 Attention (52 bloques) |
+| Parametros totales | 31.577.940.288 |
+| Parametros activos | Top-6 expertos activos por capa MoE (numero exacto de parametros activos no disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Fractal-64 (GGML_TYPE_FRACTAL_64 = 44), cuantizacion jerarquica no lineal de bloques de 64 elementos; 2 niveles |
 | Idiomas soportados | no disponible |
-| Licencia | MIT |
-| Formato de pesos | GGUF (14,35 GiB) |
+| Licencia | openmdw-1.1 |
+| Formato de pesos | GGUF (fichero unico de 15.420.034.624 bytes / 14,36 GiB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es híbrida: 52 capas en total, de las cuales 46 son capas SSM recurrentes Mamba-2 y solo 6 usan atención con GQA de 2 cabezas. El componente MoE enruta tokens hacia expertos dispersos, de los que solo se activa una fracción por token (~3B activos de 30B totales). Esta combinación reduce drásticamente el coste de memoria de la caché KV: según el autor, un contexto completo de 256K requiere solo 6,0 GiB de KV cache, frente a más de 64 GiB en un transformer estándar equivalente.
+El modelo base emplea una arquitectura hibrida que intercala capas Mamba-2 (modelos de espacio de estados) con capas de mezcla de expertos dispersa y un pequeno conjunto de capas de atencion con query grouping (GQA-2). Esta combinacion busca reducir el coste computacional de la atencion clasica manteniendo capacidad de modelado de secuencias largas. La variante aqui descrita no reentrena el modelo: solo modifica la representacion numerica de los pesos.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o instruction tuning en el modelo base. El modelo del que deriva es la variante "Base-BF16", lo que sugiere que no está afinado para instrucciones. La innovación técnica destacable de esta publicación no está en el entrenamiento sino en la cuantización: bloques de 64 pesos con escala y mínimo en FP16 para los expertos MoE (3,75 bits por peso), preservando precisión completa en el backbone SSM y la atención, más un drafter especulativo de 1,64 MB ("Stockfish-PVS" + "RouteCrack") que el autor afirma residente en L3 y con 94,5% de aceptación en tareas de código y tool use.
+La cuantizacion Fractal-64 aplica una codificacion jerarquica de dos niveles sobre bloques de 64 pesos, sustituyendo el esquema lineal habitual por una aproximacion no lineal. Segun la model card, los 46 tensores MoE afectados se migraron del enum legacy 42 al tipo 44 sin modificar un solo byte de payload (SHA256 del payload identico al commit v2.5.4). El autor reporta una perplejidad media de 6,6533 y una KLD media de 0,0688 nats frente a la referencia MXFP4 en la prueba ciega wiki-alt.txt (40 x 512), y una perplejidad de 7,3610 ± 0,2602 en WikiText-2 continuo frente a 6,9582 ± 0,2415 del BF16 real (+5,79%). No se dispone de informacion sobre el dataset de entrenamiento original, el numero de tokens ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto autoregresiva como modelo base (no instruction-tuned según el nombre del checkpoint).
-- Razonamiento y código: el autor reporta uso con Claude Code y tool schemas, aunque al ser un modelo base la calidad en instrucciones puede ser limitada.
-- Tool calling / function calling: el ecosistema del autor (`./modchip claude`) incluye 40 esquemas de herramientas, pero no se confirma que el modelo base esté entrenado específicamente para ello.
-- Decodificación especulativa integrada mediante drafter L3-resident.
-- Contexto largo de hasta 256K tokens con recuperación tipo needle-in-a-haystack al 100% según el autor.
-- Capacidades multilingües: no disponible.
-- No se declaran capacidades de visión, audio ni thinking mode.
+- Generacion de texto conversacional y respuestas multi-turno, con plantilla Jinja que activa por defecto el modo de razonamiento `<think>...</think>`.
+- Razonamiento explicito con presupuesto de tokens configurable: se recomienda `max_tokens >= 4096` cuando el thinking esta activo, o desactivarlo con `chat_template_kwargs={"enable_thinking": false}` o `--reasoning-budget 0` para respuestas directas o JSON.
+- Generacion de codigo, segun los benchmarks internos del autor (C++20, refactorizacion de codigo).
+- Inferencia en CPU pura con kernels AVX2 (`vpmaddwd`) y AVX-512 (VBMI, VNNI), y en Apple Silicon Metal mediante shader Fractal-64.
+- Decodificacion especulativa integrada en el runtime llama-modchip, con modos "cold" y "warm" reportados.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia en CPU sin GPU: desplegar un modelo de 30B en servidores sin acelerador, aprovechando los 14,35 GiB de peso y el bajo coste de KV cache para contexto largo en estaciones de trabajo con 32-64 GB de RAM.
-- Procesamiento de documentos extensos: análisis de contratos, informes o bases de código de cientos de miles de tokens gracias a la ventana de 256K con KV cache de solo 6 GiB.
-- Asistentes de código en local: integración con herramientas tipo Claude Code mediante el CLI `modchip claude` del autor, con decodificación especulativa orientada a tool use.
-- Despliegue en ARM64 en cloud: el autor reporta 44,97 tok/s en AWS Graviton3 `c7g.16xlarge`, útil para cargas batch en instancias ARM sin GPU.
-- Configuraciones híbridas GPU+CPU: con `-ngl 99 -ot exps=CPU` en llama.cpp se puede offload de expertos a CPU y mantener el resto en GPU, reportándose 80,80 tok/s en una RX 7900 GRE.
-- Experimentación en investigación: estudiar el comportamiento de modelos híbridos Mamba-2/MoE cuantizados agresivamente en entornos de recursos limitados.
-- Prototipado de pipelines de generación de texto con llama.cpp: al ser GGUF, se integra con el ecosistema estándar (llama.cpp, Ollama, etc.) sin necesidad de infraestructura propietaria.
+- Asistente de codigo en estaciones de trabajo sin GPU: con 14,36 GiB y velocidades de 19-25 tok/s en CPUs de escritorio (Ryzen 5 5600X, Ryzen 9 9955HX), el modelo puede gestionar refactorizaciones y generacion de C++20 en local, sin depender de servicios en la nube.
+- Servidor de inferencia en CPU para equipos de desarrollo: desplegado con `llama-server-modchip` en un Threadripper PRO 7985WX, alcanza 73,84 tok/s en prosa y 386 tok/s de prefill, suficiente para dar servicio a varios desarrolladores con una sola maquina.
+- Procesamiento por lotes en instancias cloud ARM: en AWS Graviton3 m7g.2xlarge (8 vCPU, 31 GB) rinde 41,05 tok/s en C++20, lo que permite tareas de generacion y refactorizacion a coste reducido frente a instancias con GPU.
+- Razonamiento con traza explicita para auditoria: el modo `<think>` permite obtener cadenas de razonamiento separadas de la respuesta final, util en entornos donde se requiere revisar el proceso deductivo antes de aceptar la salida.
+- Prototipado en portatiles Apple Silicon: con 57,65-78,60 tok/s en M1 Max a M3 Max, el modelo es viable para desarrollo iterativo local en macOS sin conexion.
+- Respuestas JSON estructuradas en pipelines: desactivando el thinking y usando el modo directo, el modelo puede integrarse en flujos automatizados que requieren salida JSON concisa sin la sobrecarga de tokens de razonamiento.
+- Evaluacion de tecnicas de cuantizacion: el checkpoint sirve como referencia reproducible (SHA256 publicados, scripts de evaluacion de perplejidad y KLD) para investigadores que comparan esquemas de compresion en modelos MoE hibridos.
 
 ## Benchmarks y rendimiento
 
-El autor publica una tabla de throughput por plataforma, no de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.). No se han publicado resultados de benchmarks de calidad en la información disponible.
+Rendimiento de inferencia reportado por el autor (tok/s):
 
-| Plataforma | Arquitectura | Decode (tok/s) | Stack |
+| Plataforma | Arquitectura | Tok/s | Configuracion |
 |---|---|---|---|
-| AMD Threadripper PRO 7985WX (64c) | x86_64 Zen 4 | 111,62 | CPU pura (AVX-512) |
-| Ryzen 9 9900X + RX 7900 GRE | Zen 5 + RDNA 3 | 80,80 | Híbrido Vulkan |
-| Ryzen 9 9950X / EPYC 4545P (16c) | x86_64 Zen 5 | 25,0–60,4 | CPU pura + drafter |
-| AWS Graviton3 c7g.16xlarge (64 vCPU) | ARM64 Neoverse-V1 | 44,97 | CPU pura (NEON) |
+| AMD Threadripper PRO 7985WX (64C/128T, DDR5 8 canales) | x86_64 Zen 4 | 73,84 prosa / 80,14 cold / 111,62 warm | CPU pura, `-t 32`, prefill 386,0 tok/s |
+| Apple M4 Max | Apple Silicon Metal | 72,47 | Shader Metal FRACTAL_64 |
+| Apple M3 Max | Apple Silicon Metal | 78,60 | Shader Metal FRACTAL_64 |
+| Apple M1 Max | Apple Silicon Metal | 57,65 | Shader Metal FRACTAL_64 |
+| AMD Ryzen 9 9955HX (16C/32T, DDR5 2 canales) | x86_64 Zen 5 | 25,02 | CPU pura, prefill 181,5-306,8 pp512 |
+| AWS Graviton3 m7g.2xlarge (8 vCPU, 31 GB) | ARM64 Neoverse-V1 | 41,05 C++20 / 44,97 refactor | CPU pura, prefill 101,7 tok/s |
+| AMD Ryzen 5 5600X (6C/12T, DDR4-3200) | x86_64 Zen 3 (AVX2) | 19,04 C++20 / 21,58 refactor | CPU pura, prefill 63,9 tok/s |
+
+Calidad de cuantizacion:
+
+| Metrica | Fractal-64 | VQ3-64 (13,30 GiB) | MaxQ-16GB (13,39 GiB) | Referencia |
+|---|---|---|---|---|
+| Perplejidad media wiki-alt.txt (40 x 512) | 6,6533 | 6,7614 | 7,3129 | MXFP4 6,5962 ± 0,1729 |
+| KLD media wiki-alt.txt (nats) | 0,0688 | 0,0871 | 0,1722 | - |
+| Perplejidad WikiText-2 continuo | 7,3610 ± 0,2602 | no disponible | no disponible | BF16 6,9582 ± 0,2415 (+5,79%) |
+| KLD de logits vs BF16 (nats) | 0,1254 / 0,0929 | no disponible | no disponible | - |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM: 14,35 GiB de pesos; para contexto completo de 256K se suman ~6,0 GiB de KV cache, por lo que se recomienda al menos 24-32 GB de RAM total.
-- GPU recomendadas: no requiere GPU; en modo híbrido el autor cita Radeon RX 7900 GRE. No hay datos para A100/H100/RTX 4090.
-- Cabe en GPU de consumo: sí, en GPUs con 16-24 GB de VRAM si se offload parcial de expertos a CPU.
-- Opciones de despliegue: llama.cpp (base del formato GGUF), motor propietario `llama-modchip` del autor, y potencialmente Ollama u otros frontends GGUF compatibles.
-- Latencia/throughput: 25,0-60,4 tok/s en CPU Zen 5 de 16 núcleos; 111,62 tok/s en Threadripper PRO; 44,97 tok/s en Graviton3. Cifras declaradas por el autor, no verificadas de forma independiente.
+- VRAM/RAM: el fichero GGUF ocupa 14,36 GiB; se recomienda al menos 16 GB de RAM libre para CPU y Metal. La variante de 32 GB del ecosistema (Qwen3.8-Flash-Next-MaxQ) se menciona como alternativa de mayor capacidad, no como requisito de este modelo.
+- GPU recomendadas: no se requiere GPU; el modelo esta optimizado para CPU. En Apple Silicon funciona con Metal (M1-M5). No se documenta soporte CUDA ni Vulkan para esta variante Fractal-64 (la MaxQ de 16 GB si lo ofrece).
+- Cabe en GPU consumer: no aplica directamente; el runtime objetivo es CPU y Metal. No se dispone de datos de ejecucion en RTX 4090 u otras GPU consumer con este formato.
+- Opciones de despliegue: llama-modchip v3.0 (runtime propietario del autor, con binarios estaticos libgomp GLIBC_2.30 para x86_64 AVX2 y AVX-512), instalacion via `./install.sh --preset nemotron-fractal`, y modo chat con `./modchip chat`. No es compatible con llama.cpp upstream, vLLM, TGI, Ollama ni LM Studio en esta variante.
+- Latencia y throughput: ver tabla de benchmarks; el prefill oscila entre 63,9 tok/s (Ryzen 5 5600X) y 386,0 tok/s (Threadripper PRO 7985WX).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este modelo (Fractal-64 GGUF) | 30B totales / ~3B activos | 256K | MIT | GGUF | Cuantización de tercero, orientada a CPU |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 | 30B / ~3B activos | no disponible | MIT (según este repo) | safetensors BF16 | Modelo base original de NVIDIA |
-| Modelos MoE de ~30B con contexto largo (p. ej. familia Qwen MoE) | ~30B | 32K-128K típicamente | variable | safetensors/GGUF | No disponible comparación directa de rendimiento |
+| NVIDIA-Nemotron-3.5-30B-A3B-Fractal-64 (este) | 31,58B totales, Top-6 activos | no disponible | GGUF Fractal-64, 14,36 GiB | openmdw-1.1 | Solo llama-modchip v3.0; CPU y Metal |
+| Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-MaxQ-16GB-GGUF | 31,58B totales | no disponible | GGUF estandar, 13,39 GiB | openmdw-1.1 | 100% ggml upstream; llama.cpp, Metal, CUDA, Vulkan, LM Studio |
+| Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-VQ3-64-CPU-GGUF | 31,58B totales | no disponible | GGUF VQ3-64, 13,30 GiB | openmdw-1.1 | AVX-512 VBMI; CPU turbo |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 31,58B totales | no disponible | safetensors BF16 | openmdw-1.1 | Modelo base sin cuantizar |
 
-No se dispone de datos de benchmarks que permitan una comparación cuantitativa fiable con alternativas de la misma categoría.
+La comparativa con modelos de otros autores de la misma categoria (por ejemplo, Qwen o Llama de ~30B) no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo base, no instruction-tuned: el rendimiento en instrucciones y tool calling puede ser inferior al de variantes chat/instruct.
-- Cifras de throughput y aceptación especulativa (94,5%) declaradas por el autor, sin verificación independiente.
-- Cuantización Q2_0 en expertos MoE: puede degradar calidad frente a Q4_K_M o superiores; el autor no publica evaluaciones de calidad (perplejidad, MMLU).
-- Repositorio con 0 descargas y 0 likes: sin validación comunitaria ni reportes de terceros.
-- Idiomas soportados no disponibles: no se puede garantizar calidad multilingüe.
-- Requiere el motor `llama-modchip` del autor para aprovechar el drafter especulativo; con llama.cpp estándar el rendimiento puede diferir.
-- Licencia MIT declarada, pero conviene verificar la licencia del modelo base de NVIDIA antes de uso comercial.
-- Riesgo de alucinación inherente a modelos base sin alineación; no apto para producción crítica sin evaluación previa.
-- Fecha de creación (noviembre de 2026) muy reciente: ecosistema y soporte aún sin madurar.
+- Checkpoint legacy: el autor lo marca explicitamente como superado por MaxQ v3.0 y recomienda las variantes de 16 GB (MaxQ o VQ3-64) para nuevos despliegues.
+- Compatibilidad restringida: requiere el runtime llama-modchip v3.0 con el tipo GGML_TYPE_FRACTAL_64 = 44; no funciona con llama.cpp upstream, vLLM, TGI, Ollama ni LM Studio.
+- Perdida de calidad medible: +5,79% de perplejidad en WikiText-2 frente a BF16 y KLD de logits de 0,1254/0,0929 nats; aceptable para uso general pero no para tareas que exijan fidelidad numerica alta.
+- Riesgo de alucinacion: inherente al modelo base; no se documentan evaluaciones de factualidad en la informacion disponible.
+- Sesgos: no se dispone de informacion sobre sesgos conocidos del modelo base ni de esta cuantizacion.
+- Idiomas: no se especifican los idiomas soportados; la plantilla de chat y los ejemplos estan en ingles.
+- Presupuesto de tokens: con el modo `<think>` activo por defecto, es necesario fijar `max_tokens >= 4096` o desactivarlo explicitamente para evitar respuestas truncadas o consumo excesivo.
+- Licencia openmdw-1.1: se debe revisar el texto completo en openmdw.ai para confirmar las condiciones de uso comercial, que no se detallan en la model card.
+- Hardware: los binarios incluidos son para Linux x86_64 (AVX2/AVX-512) con GLIBC 2.30; otras plataformas requieren compilar el runtime.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-Fractal-64-CPU-GGUF
-- Motor y CLI del autor: https://github.com/synchopate/llama-modchip
-- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16
+- Modelo en Hugging Face: https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-Fractal-64-CPU-GGUF
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Variante MaxQ 16 GB universal: https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-MaxQ-16GB-GGUF
+- Variante VQ3-64 CPU-Turbo: https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-VQ3-64-CPU-GGUF
+- Variante 32 GB RAM (Qwen3.8-Flash-Next-MaxQ): https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-32GB-GGUF
+- Repositorio del runtime llama-modchip: https://github.com/synchopate/llama-modchip
+- Script de evaluacion de perplejidad y KLD: https://github.com/synchopate/llama-modchip/blob/main/benchmarks/eval_perplexity_and_kld.py
+- Pull request del shader Metal FRACTAL_64: https://github.com/synchopate/llama-modchip/pull/24
+- Issue relacionado con Metal: https://github.com/synchopate/llama-modchip/issues/16
+- Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

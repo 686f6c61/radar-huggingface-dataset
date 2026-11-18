@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "volodyaDuckDuck/mini-llada",
+  "slug": "volodyaduckduck-mini-llada",
+  "author": "volodyaDuckDuck",
+  "url": "https://huggingface.co/volodyaDuckDuck/mini-llada",
+  "created_at": "2026-11-17T21:46:35.000Z",
+  "updated_at": "2026-11-17T21:47:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "diffusion",
+    "masked-diffusion",
+    "llada",
+    "tinystories",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2502.09992",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166050439,
+  "storage_human": "166 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

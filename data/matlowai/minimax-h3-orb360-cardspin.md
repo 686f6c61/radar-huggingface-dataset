@@ -2,104 +2,103 @@
 
 ## Resumen
 
-MiniMax-H3 ORB360 CardSpin es un adaptador LoRA de rango 32 publicado por MATLOWAI sobre el modelo base MiniMaxAI/MiniMax-H3 en su variante Ref2VA. El problema que resuelve es de control de cámara y de objeto en generación de vídeo a partir de una imagen de referencia: con un único fichero de pesos y cambiando solo el prompt, el adaptador activa dos comportamientos distintos, `ORB360_CARDSPIN` y `ORB360_CW`.
+MiniMax-H3-ORB360-CardSpin es una colección de LoRAs de rango 32 desarrolladas por MATLOWAI sobre el modelo base MiniMax-H3 de MiniMaxAI, orientadas a la generación de vídeo imagen-a-vídeo con control explícito de cámara. El adaptador principal (`minimax_h3_orb360_step1500.safetensors`) produce una órbita circular completa de 360 grados en sentido horario alrededor de un sujeto congelado a partir de una única fotografía de referencia. Los ficheros CardSpin añaden, además, la capacidad de girar la imagen en el espacio como si fuera una tarjeta física delgada.
 
-El modo `ORB360_CARDSPIN` convierte la fotografía de entrada en una tarjeta física fina que gira en el espacio; la persona o el animal retratado gira con ella, de modo que se ve el perfil en el canto de la tarjeta (con la nariz sobresaliendo del borde), la nuca en el reverso, el otro perfil en la vuelta y un aterrizaje limpio sobre la foto original tras exactamente 5,125 s. El modo `ORB360_CW` es la órbita de cámara circular completa, suave y en sentido horario, alrededor de un sujeto congelado, que termina en el plano inicial.
+El modelo resuelve un problema concreto en el pipeline de vídeo generativo: conseguir novedades de vista (novel view synthesis) con trayectorias de cámara controladas y estables, sin deriva del sujeto y manteniendo el detalle de la escena original. Frente a los LoRAs de órbita anteriores, el adaptador entrenado a 1500 pasos sobre renders de Blender en alta resolución casi duplica el detalle fino medido (varianza laplaciana de 56,1 frente a 30,2 del checkpoint de 750 pasos).
 
-El interés técnico del proyecto está en su origen: el efecto no se entrenó con un conjunto de datos, sino que se descubrió como un fallo de generalización al aplicar un LoRA de órbita entrenado con renders grises de Blender sobre un retrato histórico real, el retrato de Sir John Herschel de 1867 obra de Julia Margaret Cameron. El autor capturó ese clip, lo anotó con marcas temporales y añadió 50 pasos de entrenamiento sobre el LoRA de órbita de 750 pasos usando exclusivamente ese clip, lo que bastó para transferir el efecto a fotografías nunca vistas.
+Los adaptadores se distribuyen como safetensors independientes que se cargan sobre MiniMax-H3 mediante musubi-tuner o ComfyUI. El repositorio ocupa 1,8 GB y acumula más de 5200 descargas y 64 likes desde su publicación a finales de septiembre de 2026. La licencia es la MiniMax-H3 Community License Agreement, no una licencia open source estándar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA de rango 32 sobre el modelo base MiniMax-H3 Ref2VA; el pipeline de inferencia usa un DiT (`--dit`), un VAE de vídeo, un VAE de audio y un text encoder Qwen3-VL de 32B |
-| Parametros totales | no disponible (los pesos son un LoRA de rango 32 con 200 modulos; el repositorio ocupa 0,6 GB, assets incluidos) |
+| Arquitectura | LoRA (rango 32) sobre el modelo base MiniMax-H3 (arquitectura del base: no disponible) |
+| Parametros totales | no disponible (adaptadores LoRA; el modelo base no se detalla) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible para el adaptador (se distribuye sin cuantizar en safetensors); la receta oficial de uso emplea DiT en bf16, VAE de vídeo en fp16, VAE de audio en fp32 y text encoder Qwen3-VL en int8 |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license-agreement (campo `license: other`) |
-| Formato de pesos | safetensors, LoRA estilo kohya (`lora_unet_*`, `lora_down`/`lora_up`/`alpha`) |
+| Licencia | minimax-h3-community-license-agreement |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no contiene un modelo completo, sino un adaptador LoRA de rango 32 pensado para acoplarse a la variante Ref2VA de MiniMax-H3, que trabaja con vídeo y audio. El adaptador se compone de 200 módulos que, según el autor, mapean íntegramente sobre los pesos de MiniMax-H3 en ComfyUI. La inferencia completa encadena un DiT en bf16, un VAE de vídeo en fp16, un VAE de audio en fp32 y un text encoder Qwen3-VL de 32B en int8, con modos de atención sdpa y la opción `--prune_adaln`. Los prompts siguen la plantilla oficial de Ref2VA de MiniMax (`subject_definitions`, `summary`, `retention_analysis`, `detailed_description`, `overall_soundscape`, `non_diegetic_music`).
+El adaptador es un LoRA de rango 32 sobre MiniMax-H3 en su variante Ref2VA (referencia a vídeo con audio, según la nomenclatura del autor). El entrenamiento del ORB360 principal se realizó durante 1500 pasos sobre órbitas de Blender en alta resolución, con alturas de cámara que van desde por debajo del sujeto hasta por encima, y con entre una y cuatro imágenes de referencia etiquetadas. El entrenamiento se hizo exclusivamente sobre renders de Blender con fondo gris, aunque el adaptador generaliza a fotografías reales conservando la escena original alrededor del sujeto.
 
-El entrenamiento se hizo en dos etapas con musubi-tuner, según el autor. La primera es el proyecto ORB360: un LoRA de órbita entrenado sobre renders grises de Blender. Al probarlo sobre fotos reales en lugar de esos renders, el modelo trató la propia fotografía como el objeto a orbitar, lo que produjo un clip de partida no buscado. La segunda etapa partió de ese clip único: se escribió una caption descriptiva con marcas temporales y se entrenaron 50 pasos adicionales sobre el LoRA de órbita de 750 pasos, alrededor de media hora en una sola GPU. El efecto se transfirió a retratos de Cameron no vistos y a una foto en color de un gato con sombrero. El autor comprobó también 100 y 150 pasos, con bordes de tarjeta algo más nítidos, pero publicó la variante de 50 pasos por ser la más ligera sobre el comportamiento de órbita original.
+Los ficheros CardSpin se construyen en dos etapas: el checkpoint de órbita (el antiguo LoRA de 750 pasos en el caso de v1, o el de 1500 pasos en v2) más 50 pasos adicionales sobre un único clip de entrenamiento de card-spin. Esa segunda fase tiene un efecto colateral medible: los dos ficheros CardSpin conservan solo alrededor de un tercio del detalle fino del checkpoint de 1500 pasos y se alejan más de la fotografía original en el primer fotograma. El autor documenta esta degradación con estadísticas por fotograma (varianza laplaciana, energía de bordes de Tenengrad, proporción de alta frecuencia y PSNR/SSIM del primer fotograma frente a la foto).
 
 ## Capacidades
 
-- Generación de vídeo a partir de una única imagen de referencia (`--ref`), que actúa como primer y último fotograma.
-- Control de cámara: órbita circular completa, suave, en sentido horario, alrededor de un sujeto congelado, con retorno al plano inicial (`ORB360_CW`).
-- Efecto de tarjeta: la fotografía se comporta como una tarjeta física fina y gira sobre sí misma, con las caras del sujeto repartidas entre el canto, el reverso y la vuelta (`ORB360_CARDSPIN`).
-- Sincronización temporal guiada por prompt: el modo de tarjeta asume marcas concretas, con el canto a 1,0 s, el reverso desde 1,7 s, el otro perfil a 3,8 s y el regreso a la foto a 5,125 s.
-- Dos comportamientos desde un mismo fichero de pesos, seleccionados por el texto del prompt y no por el peso del LoRA.
-- Generación con pista de audio controlable: si las secciones `overall_soundscape` y `non_diegetic_music` se marcan como `N/A`, se solicita silencio y se evita que el modelo base invente una banda sonora.
-- Entrada en color y en impresiones sepia antiguas; el autor señala los retratos de personas y animales como el caso donde mejor funciona.
-- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multilingüe.
+- Generación de vídeo imagen-a-vídeo con órbita de cámara de 360 grados en sentido horario alrededor de un sujeto congelado a partir de una sola foto.
+- Control de altura de cámara en la órbita (desde ángulos por debajo del sujeto hasta por encima), según el rango visto en entrenamiento.
+- Soporte de una a cuatro imágenes de referencia etiquetadas en la entrada.
+- Efecto card-spin: rotación de la fotografía en el espacio como una tarjeta física delgada (solo con los ficheros CardSpin).
+- Conservación de la escena real de fondo al aplicar la órbita sobre fotografías (no solo sobre fondos neutros).
+- Integración con musubi-tuner y ComfyUI.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multilingüismo: es un adaptador de generación de vídeo, no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Catálogos de producto con giro de tarjeta: a partir de una foto de producto recortada, `ORB360_CARDSPIN` genera un clip donde el producto gira como una tarjeta física; útil para escaparates y fichas de e-commerce donde se busca un efecto de transición llamativo sin montaje manual.
-- Órbita de producto de 360 grados: con `ORB360_CW` sobre una foto de estudio del producto, se obtiene un giro completo de cámara con retorno al plano inicial, directamente encadenable en bucles de vídeo de ficha de producto.
-- Reels y contenido corto para redes sociales: la pieza dura 124 fotogramas a 24 fps (unos 5,17 s) y encaja con formatos verticales de 672 x 832 y 832 x 1024 que el autor confirma que funcionan.
-- Recuperación de archivo fotográfico histórico: el efecto nace de un retrato de Julia Margaret Cameron y el autor lo verificó sobre otras obras de la misma autora, por lo que resulta adecuado para animar retratos de archivo en sepia para exposiciones o publicaciones divulgativas.
-- Fotografía de mascotas y retratos personales: el autor identifica explícitamente los retratos de personas y animales como el punto óptimo, lo que permite ofrecer clips conmemorativos a partir de una sola foto del cliente.
-- Ilustración editorial y piezas de portada: el giro de tarjeta aporta un recurso visual reutilizable para cabeceras de artículo, portadas de podcast o cortinillas, partiendo de una única imagen y un prompt fijo de `prompts/cardspin_caption.txt`.
-- Previsualización de efectos en preproducción: dado que el adaptador se puede cargar y descargar como módulo en ComfyUI con el nodo Load LoRA, sirve para probar la viabilidad de un plano de giro antes de comprometer recursos de render en 3D.
-- Rotación en 360 grados de objetos para visores o tiendas interactivas: los clips de órbita generados pueden servir como capas intermedias en visores web donde se necesita una vuelta completa suave y con cierre sobre el plano inicial.
+- Novela de vista para fotografía de producto: a partir de una única imagen de un objeto se genera una órbita de 360 grados que permite al cliente inspeccionarlo desde todos los ángulos, usando el checkpoint de 1500 pasos por su mayor nitidez.
+- Creación de contenido para redes sociales: el efecto card-spin convierte un retrato o una foto plana en un clip llamativo donde la imagen gira en el espacio, adecuado para publicaciones de formato corto.
+- Previsualización de assets 3D: generar órbitas de referencia sobre renders de Blender con fondo neutro para validar encuadres y alturas de cámara antes de un render final costoso.
+- Restauración y animación de archivo fotográfico: aplicar la órbita sobre retratos históricos o fotografías antiguas, un escenario que el propio autor documenta con un retrato de 1867 de Sir John Herschel.
+- Turismo y patrimonio: orbitar alrededor de objetos o escenas fotografiadas para producir vídeos inmersivos de piezas de museo o monumentos con una sola captura.
+- E-commerce y catálogos: generar automáticamente vistas giratorias de artículos a partir del catálogo fotográfico existente, reduciendo la necesidad de sesiones de fotografía multivista.
+- Prototipado en pipelines de vídeo generativo: usar el adaptador como componente de control de cámara dentro de flujos musubi-tuner o ComfyUI para experimentar con trayectorias de órbita antes de integrarlas en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El autor publica métricas de calidad de imagen por fotograma sobre un mismo clip de órbita (misma foto, prompt, semilla, 1024 x 768, 124 fotogramas) comparando cuatro LoRAs. No son benchmarks estándar de la comunidad, sino estadísticas internas de nitidez y fidelidad.
 
-La model card sí recoge observaciones cualitativas del autor que conviene registrar como tales y no como métricas: el efecto se transfirió a fotografías no vistas tras 50 pasos; las variantes de 100 y 150 pasos producen bordes de tarjeta algo más nítidos pero actúan con más fuerza sobre el comportamiento de órbita; y la semilla influye en cuánto se compromete cada generación con el efecto de tarjeta, por lo que el autor recomienda probar varias.
+| Metrica (gato blanco, orbita 360) | Orbita 750 pasos (antiguo) | CardSpin v1 (750 + 50) | ORB360 1500 pasos | CardSpin v2 (1500 + 50) |
+|---|---|---|---|---|
+| Detalle fino (varianza laplaciana) | 30,2 | 19,8 | 56,1 | 20,7 |
+| Detalle relativo al paso 1500 | 0,54x | 0,34x | 1,00x | 0,35x |
+| Energia de bordes (Tenengrad) | 1098 | 809 | 1343 | 841 |
+| Proporcion de alta frecuencia | 0,0035 | 0,0028 | 0,0050 | 0,0029 |
+| Primer fotograma vs foto, PSNR / SSIM | 28,0 dB / 0,87 | 24,5 dB / 0,85 | 28,5 dB / 0,87 | 22,5 dB / 0,77 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, lo cual es esperable al tratarse de un adaptador de vídeo.
 
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa una fracción de los 0,6 GB del repositorio, pero no funciona de forma autónoma: requiere el modelo base MiniMax-H3 Ref2VA completo.
-- Componentes que deben residir en memoria durante la inferencia según la receta del autor: DiT en bf16 (`minimax_h3_ref2va_bf16.safetensors`), VAE de vídeo en fp16, VAE de audio en fp32 y text encoder Qwen3-VL de 32B cuantizado a int8.
-- El text encoder es un Qwen3-VL de 32B en int8, lo que por sí solo supone un requisito de memoria elevado; no se especifica la VRAM total necesaria en la información disponible.
-- GPU recomendadas: no disponible. La model card no indica GPU concretas ni para inferencia ni para entrenamiento.
-- Entrenamiento: 50 pasos adicionales sobre el LoRA de 750 pasos se completaron en aproximadamente media hora en una sola GPU, sin especificar el modelo.
-- ¿Cabe en GPU de consumo? no disponible.
-- Despliegue: ComfyUI mediante el nodo estándar Load LoRA (solo modelo, strength 1.0) sobre un modelo MiniMax-H3 Ref2VA; y musubi-tuner en versión 0.3.5 o posterior con `--lora_runtime_attach`.
-- Latencia y throughput: no disponible. La receta de referencia usa 20 pasos de inferencia, 124 fotogramas y 24 fps a resoluciones de 672 x 832, 832 x 1024, 1024 x 768 o 1152 x 768.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Depende del modelo base MiniMax-H3, cuyos requisitos no se detallan en la model card.
+- GPU recomendadas: no disponible. El autor no especifica hardware de referencia.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: musubi-tuner y ComfyUI, según las etiquetas y la documentación del autor.
+- Latencia y throughput: no disponible. Los clips de ejemplo se generan a 1024 x 768, 124 fotogramas y 20 pasos de muestreo, pero no se publican tiempos de ejecución.
+- Espacio en disco: el repositorio completo ocupa 1,8 GB, repartido entre los tres safetensors y los assets de ejemplo.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de terceros comparables en la informacion proporcionada. La comparación posible es interna, entre las variantes publicadas del propio adaptador y el modelo base sin él.
+| Modelo | Tipo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| MiniMax-H3-ORB360-CardSpin (este) | LoRA rango 32 sobre MiniMax-H3 | no disponible | no disponible | Órbita 360 y card-spin controlados | MiniMax-H3 Community License | Hugging Face |
+| MiniMax-H3-ORB360 paso 750 (versión anterior del mismo autor) | LoRA sobre MiniMax-H3 | no disponible | no disponible | Órbita 360 a menor resolución | MiniMax-H3 Community License | No incluido en este repositorio |
+| MiniMaxAI/MiniMax-H3 (base) | Modelo de vídeo generativo | no disponible | no disponible | Generación imagen-a-vídeo general | MiniMax-H3 Community License | Hugging Face |
 
-| Variante | Pesos | Efecto de tarjeta | Efecto sobre la orbita | Notas |
-|---|---|---|---|---|
-| CardSpin step 50 | un unico LoRA de rango 32 | si, con bordes algo menos nitidos | preservado, es la variante mas suave | version publicada en este repositorio |
-| CardSpin step 100 | no publicado | si, bordes mas nitidos | mayor impacto segun el autor | solo mencionado en la model card |
-| CardSpin step 150 | no publicado | si, bordes mas nitidos | mayor impacto segun el autor | solo mencionado en la model card |
-| MiniMax-H3 Ref2VA sin LoRA | modelo base | no | orbita no disponible por defecto | necesario como base para cualquier uso del adaptador |
-
-Frente a otros LoRA de control de cámara o de órbita, no hay información disponible sobre parámetros, contexto, rendimiento o licencia que permita una comparación rigurosa.
+No se dispone de información sobre otros adaptadores de órbita o control de cámara comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- El efecto de tarjeta se aprendió de un único clip generado y anotado por el autor, no de un conjunto de datos; se trata de un caso claro de ajuste sobre una muestra mínima, con la consiguiente variabilidad entre semillas.
-- La varianza por semilla es explícita: el autor indica que algunas semillas se comprometen con el efecto de tarjeta mucho más que otras y recomienda probar varias.
-- La sincronización temporal está fijada al prompt y asume 124 fotogramas a 24 fps; cambiar la longitud del vídeo rompe las marcas de 1,0 s, 1,7 s, 3,8 s y 5,125 s.
-- El autor solo ha verificado resoluciones concretas: 672 x 832 y 832 x 1024 en vertical, y 1024 x 768 y 1152 x 768 en horizontal. Otras resoluciones no están validadas.
-- El rendimiento es mejor en retratos de personas y animales; no hay evidencia de comportamiento en otras categorías de imagen.
-- En el modo de órbita, fórmulas como "clean studio" en el prompt arrastran algunas escenas hacia un fondo gris de estudio, según el autor, que recomienda usar la caption `orbit_realscene_caption.txt` para conservar el entorno real.
-- Si no se incluyen las secciones de audio `overall_soundscape` y `non_diegetic_music` marcadas como `N/A`, el modelo base tiende a inventar una banda sonora.
-- No se documentan idiomas soportados ni comportamiento multilingüe del adaptador.
-- Riesgo de alucinación: no evaluado en la información disponible; al ser un modelo generativo de vídeo, la fidelidad al sujeto de la fotografía de referencia no está cuantificada.
-- Sesgos: no documentados en la información disponible.
-- Licencia: se aplica la MiniMax-H3 Community License Agreement, no una licencia de código abierto permisiva. Antes de un uso comercial hay que revisar el fichero LICENSE del repositorio y los términos del modelo base, ya que el adaptador hereda las restricciones de MiniMax-H3.
-- El adaptador no es utilizable de forma aislada: sin el modelo base MiniMax-H3 Ref2VA y sus componentes auxiliares no genera nada.
-- El repositorio tiene 5 descargas y 0 likes en el momento de la consulta, por lo que no existe validación independiente de la comunidad.
+- Los ficheros CardSpin degradan notablemente el detalle: conservan aproximadamente un tercio del detalle fino del checkpoint de 1500 pasos y se alejan más de la foto original en el primer fotograma. El autor recomienda usarlos solo para el efecto de tarjeta, no para órbitas limpias.
+- El ORB360 principal se entrenó únicamente con renders de Blender de fondo gris; aunque generaliza a fotos reales, puede comportarse de forma imprevisible con escenas muy cargadas o sujetos ambiguos.
+- El efecto card-spin surgió de un comportamiento inesperado del modelo (interpretar la fotografía como objeto en lugar de orbitar al sujeto), lo que sugiere cierta fragilidad en el control semántico de la instrucción.
+- No hay información sobre sesgos, riesgo de alucinación visual (artefactos, deformaciones del sujeto) ni evaluación sistemática más allá de las métricas internas del autor.
+- Los idiomas soportados no están documentados; los prompts de ejemplo están en inglés.
+- La licencia es la MiniMax-H3 Community License Agreement, no una licencia open source estándar: es imprescindible revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales sobre el modelo base.
+- El adaptador requiere el modelo base MiniMax-H3 y herramientas específicas (musubi-tuner o ComfyUI); no es un modelo autónomo.
+- No se documentan requisitos de hardware ni latencias, lo que dificulta planificar el despliegue en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Licencia del repositorio: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/blob/main/LICENSE
-- Musubi-tuner (kohya-ss), v0.3.5 o posterior: https://github.com/kohya-ss/musubi-tuner
-- Clip de ejemplo del efecto de tarjeta: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/whitecat_cardspin_step50.mp4
-- Clip de ejemplo de la órbita normal: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/whitecat_orbit_step50.mp4
-- Clip original del fallo de generalización sobre el retrato de Herschel: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/herschel_origin_glitch_orbit750.mp4
+- Clip de ejemplo CardSpin v2: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/whitecat_cardspin_v2_step50.mp4
+- Clip de ejemplo órbita 1500 pasos: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/whitecat_orbit_step1500.mp4
+- Clip de ejemplo CardSpin v1: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/whitecat_cardspin_step50.mp4
+- Comparativa visual de detalle entre los cuatro LoRAs: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/resolve/main/assets/whitecat_orbit_detail_4way.jpg
+- Licencia: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/blob/main/LICENSE
+- musubi-tuner: no disponible enlace en la información proporcionada
+- ComfyUI: no disponible enlace en la información proporcionada

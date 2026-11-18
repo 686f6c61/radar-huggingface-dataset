@@ -42,9 +42,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 12380,
+  "likes": 12421,
   "downloads_30d": 2828071,
-  "trending_score": 392,
+  "trending_score": 389,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 298670920475,
@@ -63,29 +63,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "LTX-2.5: A Complete Guide to Lightricks&#x27; Audio-Video AI Model",
-      "url": "https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model",
-      "snippet": "Explore LTX-2.5, Lightricks&#x27; 22B AI model for multishot video with synchronized audio, including features, use cases, limits, and setup."
+      "title": "The AI Technology Company Empowering Creativity | Lightricks",
+      "url": "https://www.lightricks.com/",
+      "snippet": "Lightricks is a leading AI technology company transforming creative workflows with innovative tools; across web, mobile and open …"
     },
     {
-      "title": "Lightricks/LTX-2.5 · Hugging Face",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+      "title": "About Lightricks | AI-Powered Creative Apps",
+      "url": "https://www.lightricks.com/about",
+      "snippet": "Lightricks, an AI-first company, is revolutionizing how visual content is created. With a mission to bridge the gap between imagination …"
     },
     {
-      "title": "LTX-2.5 - Open-Weights AI Video Generation by Lightricks | fal",
-      "url": "https://fal.ai/ltx-2.5",
-      "snippet": "LTX-2.5The world model the world builds on. Lightricks&#x27; open-weights audio-video model, live on fal. Diffusion Fidelity Rendering puts more compute into complex scenes, native multishot holds a scene together across cuts, and synchronized audio comes built in. Open and customizable: train LoRAs, fine-tune on your own data, and adapt it to your domain. Try LTX-2.5 on fal.ai."
+      "title": "Lightricks (LTX.io) - Hugging Face",
+      "url": "https://huggingface.co/Lightricks",
+      "snippet": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control ... Lightricks/LTX-2.5-22b-LoRA-Cinemagraph ... Lightricks/LTX-2.5-22b-IC-LoRA …"
     },
     {
-      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
-      "url": "https://ltx.io/model/ltx-2",
-      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+      "title": "Lightricks - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Lightricks",
+      "snippet": "In the summer of 2022, with the emergence of generative artificial intelligence, Lightricks began incorporating GenAI flows in its apps, …"
     },
     {
-      "title": "Lightricks/LTX-2 · Hugging Face",
-      "url": "https://huggingface.co/Lightricks/LTX-2",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Lightricks - GitHub",
+      "url": "https://github.com/Lightricks",
+      "snippet": "Bridging Imagination and Creation. Lightricks has 154 repositories available. Follow their code on GitHub."
     }
   ]
 }

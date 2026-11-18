@@ -2,103 +2,95 @@
 
 ## Resumen
 
-Comfy-Org/Qwen-Image-2.1 es un repositorio de pesos reempaquetados para ComfyUI del modelo de generacion y edicion de imagenes Qwen/Qwen-Image-2.1, desarrollado originalmente por el equipo Qwen de Alibaba. No se trata de un modelo nuevo ni de un fine-tune propio de Comfy-Org: la model card indica explicitamente "Repackaged model files for ComfyUI" y declara como modelo base Qwen/Qwen-Image-2.1. Su proposito es facilitar la integracion del modelo en el ecosistema ComfyUI mediante archivos de difusion en un solo fichero (formato diffusion-single-file), evitando al usuario tener que convertir o dividir los pesos originales.
+Comfy-Org/Qwen-Image-2.1 es un repositorio de redistribución de los pesos del modelo de difusión Qwen-Image 2.1, empaquetados en formato de fichero único para su uso directo en ComfyUI. El modelo original lo desarrolla el equipo Qwen (Alibaba), y Comfy-Org se limita a reorganizar los ficheros, convertirlos a variantes int8 y w4a8, y publicar workflows de referencia para edición y generación de imágenes. El repositorio acumula más de 9,6 millones de descargas, lo que lo convierte en la vía práctica más habitual para ejecutar Qwen-Image 2.1 en un entorno local.
 
-El repositorio distribuye tres componentes diferenciados segun la estructura de carpetas que describe la model card: el modelo de difusion (qwen_image_2.1_bf16.safetensors y qwen_image_2.1_int8_convrot.safetensors), el codificador de texto (qwen3vl_8b_bf16.safetensors, qwen3vl_8b_int8_convrot.safetensors y qwen3vl_8b_w4a8.safetensors) y el VAE (qwen_image_2.1_vae_bf16.safetensors). El nombre del codificador de texto indica que se trata de un modelo Qwen3-VL de 8.000 millones de parametros. El tamano total del repositorio es de 77,5 GB, lo que agrupa todas las variantes de cuantizacion publicadas.
+Se trata de un modelo de difusión texto-a-imagen con capacidad de edición de imagen (image-to-image), acompañado de un text encoder basado en Qwen3-VL de 8B y de un módulo opcional de mejora de prompts (Qwen3.5 9B, en variantes T2I e I2I). El paquete incluye además variantes Turbo destiladas y LoRAs que reducen la inferencia a entre 5 y 8 pasos con CFG 1, así como un ControlNet Union para condicionamiento estructural.
 
-Es relevante ahora porque permite ejecutar localmente un pipeline de generacion texto-a-imagen y edicion de imagen de la familia Qwen-Image dentro de ComfyUI con distintos niveles de precision, incluyendo la variante w4a8 del codificador de texto, pensada para reducir requisitos de memoria. La licencia declarada es qwen-research, lo que condiciona su uso comercial y debe revisarse antes de cualquier despliegue en produccion.
+La relevancia actual reside en que concentra en un solo repositorio todos los artefactos necesarios (difusión, VAE, text encoders, LoRAs, parches) con cuantizaciones listas para GPUs de consumo, algo poco habitual en modelos de esta familia. No se dispone de información sobre la arquitectura interna, el número de parámetros del difusor ni los datos de entrenamiento en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion; el repositorio no detalla el tipo de backbone) |
-| Parametros totales | no disponible para el modelo de difusion; el codificador de texto es Qwen3-VL de 8.000 millones de parametros segun el nombre de fichero |
-| Parametros activos | no procede / no disponible (no se indica que sea MoE) |
+| Arquitectura | modelo de difusión texto-a-imagen (detalles internos no disponibles); text encoder basado en Qwen3-VL 8B |
+| Parametros totales | no disponible para el difusor; text encoder de 8B y módulo de prompt enhancement de 9B |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16, int8 (convrot) para el modelo de difusion; bf16, int8 (convrot) y w4a8 para el codificador de texto; el VAE solo en bf16 |
-| Idiomas soportados | no disponible (la model card no especifica idiomas) |
-| Licencia | qwen-research (license_name: qwen-research; enlace en https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE) |
-| Formato de pesos | safetensors, en ficheros unicos para difusion (diffusion-single-file); el VAE y el codificador de texto tambien se distribuyen en safetensors |
-| Tamano del repositorio | 77,5 GB |
-| Modelo base | Qwen/Qwen-Image-2.1 |
-| Autor del reempaquetado | Comfy-Org |
-| Libreria declarada | diffusion-single-file |
-| Fecha de creacion | 2026-09-15 |
-| Ultima actualizacion | 2026-09-20 |
-| Descargas / likes | 120 descargas, 58 likes |
+| Tipos de cuantizacion | bf16, int8 (convrot), w4a8 (text encoders) |
+| Idiomas soportados | no disponible (los prompts se procesan mediante Qwen3-VL, multilingüe, pero no se documenta la cobertura) |
+| Licencia | qwen-research (licencia "other" con nombre qwen-research) |
+| Formato de pesos | safetensors en fichero único para ComfyUI (diffusion-single-file) |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura interna del modelo de difusion, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card del repositorio de Comfy-Org es exclusivamente una guia de instalacion ("Repackaged model files for ComfyUI") y remite al repositorio original de Qwen para cualquier detalle tecnico. Por tanto, los detalles de arquitectura y entrenamiento deben consultarse en https://huggingface.co/Qwen/Qwen-Image-2.1, fuera del alcance de esta ficha.
+No se dispone de información sobre la arquitectura interna del difusor (tipo de backbone, número de parámetros, mecanismo de atención) ni sobre el volumen o composición del dataset de entrenamiento. La model card del repositorio de Comfy-Org es exclusivamente un documento de empaquetado: describe la ubicación de los ficheros dentro de la estructura de directorios de ComfyUI y enlaza a los repositorios originales de Qwen.
 
-Lo que si puede deducirse de la estructura de ficheros publicada es la organizacion del pipeline en tres piezas: un modelo de difusion que genera las imagenes, un codificador de texto basado en Qwen3-VL de 8.000 millones de parametros que transforma los prompts en embeddings multimodales, y un VAE que opera en el espacio latente. La sufijacion "convrot" en las variantes int8 sugiere una cuantizacion con rotacion aplicada a las convoluciones o proyecciones, aunque el autor no documenta el metodo en la informacion disponible. La existencia de una variante w4a8 en el codificador de texto apunta a pesos de 4 bits con activaciones de 8 bits, orientada a reducir el consumo de memoria del componente de texto.
+Lo que sí se documenta es la composición del ecosistema: un text encoder Qwen3-VL de 8B en bf16, int8 y w4a8; un VAE propio (qwen_image_2.1_vae_bf16); un ControlNet Union para condicionamiento estructural; y un módulo de prompt enhancement basado en Qwen3.5 9B con variantes separadas para texto-a-imagen y para imagen-a-imagen. Las variantes Turbo provienen de un proceso de destilación (repo PrunaAI/P-Q-Image-2.1-Comfy) que permite inferencia en 5, 6 u 8 pasos con CFG fijado a 1. No se detalla si el entrenamiento original incluyó RLHF, DPO ni qué innovaciones técnicas emplea el difusor.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (text-to-image): el repositorio incluye una plantilla de workflow especifica para esta tarea.
-- Edicion de imagenes (image edit): se publica una plantilla de workflow independiente para edicion, lo que implica soporte de entrada de imagen ademas de texto.
-- Uso como modelo base en ComfyUI: los pesos estan empaquetados en el formato de fichero unico que ComfyUI consume directamente.
-- Ejecucion local con distintos niveles de precision: variantes bf16, int8 y w4a8 permiten ajustar el equilibrio entre calidad y consumo de memoria.
-- Codificacion de texto multimodal mediante Qwen3-VL 8B: el codificador de texto es un modelo vision-lenguaje, orientado a interpretar prompts y referencias visuales.
-- Reutilizacion como punto de partida para fine-tunes: el repositorio esta etiquetado como base_model:finetune respecto a Qwen/Qwen-Image-2.1, lo que indica que se puede derivar de el.
-- No hay informacion disponible sobre soporte de tool calling, function calling, agentes, modo thinking, audio o capacidades multilingues explicitas. Se trata de un modelo de generacion de imagen, no de un modelo de lenguaje conversacional.
+- Generación de imágenes a partir de texto (text-to-image) con el workflow `image_qwen_image_2_1_t2i`.
+- Edición de imágenes (image-to-image) con el workflow `image_qwen_image_2_1_image_edit`.
+- Inferencia acelerada mediante modelos Turbo completos o LoRAs Turbo de 5, 6 y 8 pasos con CFG 1.
+- Condicionamiento estructural mediante ControlNet Union (pose, profundidad, bordes y otros modos habituales de un Union, aunque no se detalla la lista exacta).
+- Mejora automática de prompts con el módulo Qwen3.5 9B, en variantes específicas para T2I e I2I, integrable mediante el nodo `Generate Text`.
+- Cuantizaciones int8 y w4a8 para reducir huella de VRAM tanto en el difusor como en los text encoders.
+- No se documentan capacidades de tool calling, agentes, audio ni razonamiento multi-paso; es un modelo generativo de imagen, no un LLM de propósito general.
 
 ## Casos de uso
 
-- Generacion de ilustraciones para contenido editorial: el modelo puede producir imagenes a partir de descripciones textuales dentro de un workflow de ComfyUI, integrado en una redaccion que necesite material visual rapido sin depender de bancos de imagenes externos.
-- Edicion de imagenes existentes: la plantilla de image edit permite modificar imagenes de entrada, un caso util para retoque de producto, sustitucion de fondos o ajustes de estilo sin rehacer la toma original.
-- Creacion de assets para videojuegos y prototipado: generacion de concept art, iconos y texturas en lote mediante grafos de ComfyUI reutilizables, con la posibilidad de ejecutar el pipeline en local.
-- Generacion de mockups de producto y material de marketing: partiendo de un prompt controlado y de imagenes de referencia, se pueden producir variaciones de un mismo producto para campanas, manteniendo coherencia de estilo mediante el codificador de texto Qwen3-VL.
-- Produccion de imagenes con requisitos de privacidad: al ejecutarse en local, el pipeline evita enviar prompts o imagenes de referencia a servicios externos, lo que encaja en entornos con datos sensibles o regulados.
-- Base para fine-tuning especializado: dado que el repositorio esta etiquetado como finetune del modelo Qwen-Image-2.1, puede emplearse como punto de partida para adaptar el modelo a un dominio visual concreto (por ejemplo, ilustracion tecnica o un estilo de marca).
-- Automatizacion por lotes de catalogos: combinando la generacion y la edicion con un grafo programatico, se pueden producir cientos de variaciones de imagen de un catalogo de producto de forma desatendida.
-- Despliegue con restricciones de memoria: la variante w4a8 del codificador de texto y la variante int8 del modelo de difusion permiten montar el pipeline en equipos donde la version bf16 no cabria.
+- Generación de ilustraciones para prototipado de producto: el workflow T2I permite iterar sobre conceptos visuales en local sin depender de APIs, con la variante Turbo para reducir el coste por iteración a 5-8 pasos.
+- Edición de imágenes en flujos de retoque: el workflow image edit permite modificar una imagen existente manteniendo la composición, útil para variaciones de color, sustitución de objetos o ajustes de estilo en catálogos.
+- Creación de material gráfico para marketing: combinación de prompt enhancement (Qwen3.5 9B) con el difusor para convertir briefs cortos en prompts detallados y generar banners o piezas para redes con coherencia estilística.
+- Integración en pipelines de ComfyUI autoalojados: al ser ficheros single-file con rutas documentadas, encaja en despliegues por lotes sobre GPUs de consumo con cuantización int8 o w4a8.
+- Control estructural para diseño: el ControlNet Union permite guiar la generación con bocetos, mapas de profundidad o poses, adecuado para arquitectura, moda o storyboards.
+- Generación de datasets sintéticos: producción masiva de imágenes con parámetros controlados para entrenar o aumentar otros modelos de visión, usando las LoRAs Turbo para maximizar el throughput.
+- Restauración y variación de imágenes de referencia: el módulo I2I de mejora de prompts facilita describir una imagen de entrada y regenerarla con modificaciones controladas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de Comfy-Org no incluye metricas de calidad de imagen, FID, CLIP score ni comparaciones con otros modelos, y los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo (los resultados devueltos corresponden a sitios de la NFL y son ajenos al ambito de la ficha). Cualquier cifra de rendimiento deberia obtenerse del repositorio original Qwen/Qwen-Image-2.1 o de evaluaciones independientes.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no disponible como cifra oficial. El repositorio completo ocupa 77,5 GB, pero ese tamano agrupa todas las variantes de cuantizacion, por lo que no equivale al consumo en memoria de una ejecucion concreta.
-- Desglose por variantes: las combinaciones desplegables segun la model card son (a) difusion bf16 + texto bf16 + VAE bf16, la de mayor consumo; (b) difusion int8 convrot + texto int8 convrot o w4a8, la de menor consumo. La variante w4a8 del codificador de texto es la opcion indicada para reducir memoria.
-- GPU recomendadas: no disponible en la informacion proporcionada. No se documentan GPUs validadas por el autor.
-- Compatibilidad con GPU de consumo: no confirmada por el autor. Debe determinarse empiricamente cargando cada variante en la GPU objetivo, ya que el repositorio no publica requisitos minimos.
-- Opciones de despliegue: ComfyUI es el destino explicito del reempaquetado, con workflows oficiales de text-to-image y de image edit. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo de difusion.
-- Latencia y throughput: no disponible. No se publican mediciones de tiempo por imagen ni de imagenes por segundo.
-- Almacenamiento en disco: hay que prever espacio para los 77,5 GB del repositorio si se descarga completo, o unicamente para las variantes que se vayan a usar si se descargan de forma selectiva.
+- El repositorio completo ocupa 152,3 GB, pero la inferencia solo requiere un subconjunto: difusor, VAE y text encoder.
+- VRAM estimada: no disponible de forma oficial. Como referencia de orden de magnitud, un difusor en bf16 más un text encoder de 8B en bf16 requiere una GPU de gama alta; las variantes int8 y w4a8 reducen sustancialmente la huella y están pensadas para GPUs de consumo.
+- Los text encoders en w4a8 (qwen3vl_8b_w4a8, qwen3.5_9b_*_w4a8) son la opción para equipos con VRAM limitada.
+- No se especifican GPU recomendadas (A100, H100, RTX 4090) en la información disponible.
+- Despliegue: ComfyUI es el entorno de referencia; los ficheros son single-file safetensors y no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión en este formato).
+- Latencia y throughput: no disponibles. Las LoRAs Turbo de 5-8 pasos con CFG 1 reducen el número de evaluaciones del difusor frente a la inferencia estándar, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada solo permite comparar este reempaquetado con su modelo de origen. No se dispone de datos verificables de otras alternativas de generacion de imagen de la misma categoria en el material facilitado.
+No se dispone de datos de benchmarks ni de especificaciones del difusor que permitan una comparación cuantitativa rigurosa con alternativas como FLUX.1, Stable Diffusion 3.5 o Qwen-Image 1.0. La comparación se limita a aspectos de empaquetado y licencia.
 
-| Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato ComfyUI | Disponibilidad |
 |---|---|---|---|---|---|
-| Comfy-Org/Qwen-Image-2.1 | Reempaquetado para ComfyUI del modelo base; formato diffusion-single-file, incluye variantes bf16, int8 y w4a8 | No disponible (codificador de texto Qwen3-VL 8B) | No disponible | qwen-research (other) | Hugging Face, 120 descargas, 58 likes; repo de 77,5 GB |
-| Qwen/Qwen-Image-2.1 | Modelo original del que deriva el anterior; fuente de los pesos y de la licencia | No disponible en la informacion proporcionada | No disponible | qwen-research | Hugging Face (repositorio original) |
-
-Otras alternativas del segmento de generacion de imagen open source (por ejemplo modelos de la familia FLUX o Stable Diffusion) no aparecen en la informacion proporcionada, por lo que no se incluyen datos comparativos.
+| Qwen-Image 2.1 (este repo) | no disponible (difusor); text encoder 8B | no disponible | qwen-research | sí, single-file con int8/w4a8 y Turbo | Hugging Face, 9,6 M descargas |
+| Qwen-Image 2.1 original (Qwen/Qwen-Image-2.1) | no disponible | no disponible | qwen-research | pesos originales, requieren conversión | Hugging Face |
+| Alternativas de la misma categoría (FLUX.1, SD 3.5) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia qwen-research: es una licencia de investigacion, no una licencia permisiva estandar. Antes de cualquier uso comercial es obligatorio revisar el texto completo en https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE y, en su caso, solicitar autorizacion al titular.
-- Este repositorio no es un modelo original: es un reempaquetado de terceros. La responsabilidad sobre el comportamiento del modelo recae en el modelo de origen, y Comfy-Org no documenta cambios en los pesos mas alla del formato y la cuantizacion.
-- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar elementos plausibles pero incorrectos (texto ilegible, anatomias erroneas, objetos incoherentes) sin ninguna senal de incertidumbre.
-- Sesgos: no hay informacion disponible sobre la composicion del dataset de entrenamiento ni sobre evaluaciones de sesgo, por lo que no puede acotarse el sesgo demografico, cultural o estilistico del modelo.
-- Idiomas: no se especifica que idiomas soporta el pipeline ni la calidad de la comprension de prompts en castellano. Debe validarse empiricamente antes de usarlo en produccion con prompts en espanol.
-- Limites de contexto: no disponibles. Se desconoce la longitud maxima de prompt soportada.
-- Requisitos de hardware no documentados: el autor no publica VRAM minima ni GPUs validadas, lo que anade incertidumbre al dimensionar la infraestructura.
-- Trazabilidad de la cuantizacion: las variantes int8 "convrot" y w4a8 no vienen acompanadas de una descripcion del metodo de cuantizacion ni de datos sobre la degradacion de calidad frente a bf16. Es recomendable comparar las salidas antes de adoptar una variante comprimida.
-- Antiguedad y madurez: el repositorio se creo el 2026-09-15 y se actualizo el 2026-09-20; el numero de descargas (120) es bajo, lo que sugiere poca validacion por parte de la comunidad.
-- Uso responsable: al ser un modelo generativo de imagen, su empleo debe respetar la normativa aplicable sobre contenido sintetico y derechos de imagen.
+- Licencia qwen-research: no es una licencia permisiva estándar; es imprescindible revisar el texto enlazado antes de cualquier uso comercial. El uso en producción puede estar restringido.
+- Este repositorio es un reempaquetado de Comfy-Org, no el modelo oficial; para cuestiones de licencia, soporte o comportamiento del modelo, la referencia autorizada es Qwen/Qwen-Image-2.1.
+- No se documentan sesgos conocidos, tasas de alucinación visual ni limitaciones idiomáticas; la ausencia de esta información no implica ausencia de sesgos.
+- El tamaño del repositorio (152,3 GB) exige planificación de almacenamiento; descargar el repo completo no es necesario para inferencia, pero requiere seleccionar ficheros manualmente.
+- Las variantes Turbo y las LoRAs de pocos pasos con CFG 1 pueden degradar el detalle o la fidelidad al prompt respecto a la inferencia estándar; conviene validar la calidad por caso de uso.
+- No hay información sobre límites de resolución, relación de aspecto soportada ni estabilidad en prompts largos.
+- La integración está pensada para ComfyUI; otros entornos requerirían conversión de los ficheros single-file.
 
 ## Enlaces
 
-- Repositorio en Hugging Face (este reempaquetado): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
-- Repositorio del modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Licencia del modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
-- Workflow de texto a imagen: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_t2i.json
-- Workflow de edicion de imagen: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_image_edit.json
-
-Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo. Los unicos resultados obtenidos corresponden a sitios de la NFL (nfl.com, nextgenstats.nfl.com, media.nfl.com, support.nfl.com) y no guardan relacion con el contenido de esta ficha, por lo que se han descartado.
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
+- Modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Variante Turbo original: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Módulo de prompt enhancement T2I: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
+- Módulo de prompt enhancement I2I: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
+- Versión destilada Turbo para ComfyUI: https://huggingface.co/PrunaAI/P-Q-Image-2.1-Comfy
+- Licencia: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
+- ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Plantillas de workflows: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_t2i.json
+- Workflow de edición de imagen: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_image_edit.json
+- Workflow Turbo T2I: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_turbo_t2i.json
+- Workflow Turbo de edición: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_turbo_image_edit.json

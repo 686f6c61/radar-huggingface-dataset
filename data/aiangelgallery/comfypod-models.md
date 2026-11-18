@@ -2,122 +2,112 @@
 
 ## Resumen
 
-AiAngelGallery/ComfyPod-Models no es un modelo entrenado, sino un repositorio espejo (mirror) de 46,5 GB que replica, byte a byte, los archivos que descarga la plantilla gratuita AI Angel ComfyPod para RunPod. La disposicion del repositorio imita la carpeta `models/` de ComfyUI (`text_encoders/`, `vae/`, `loras/`, `diffusion_models/`, `clip_vision/`, `latent_upscale_models/`, `vae_approx/`), de modo que pueda montarse directamente en una instalacion de ComfyUI sin renombrar archivos.
+ComfyPod-Models no es un modelo de IA propiamente dicho, sino un repositorio espejo (mirror) que reempaqueta los ficheros de pesos que descarga la plantilla gratuita AI Angel ComfyPod para RunPod. Su autor, AiAngelGallery, mantiene copias byte a byte idénticas (verificadas por SHA-256) de modelos de terceros —MiniMax H3, Krea 2, SCAIL-2, Wan 2.1 y adaptadores derivados— organizadas con la estructura de carpetas de ComfyUI (`text_encoders/`, `vae/`, `loras/`, `diffusion_models/`, etc.). El objetivo es evitar que la plantilla deje de funcionar cuando un repositorio upstream mueva o elimine un fichero.
 
-El objetivo declarado es de resiliencia de la cadena de suministro: evitar que la plantilla se rompa cuando un repositorio upstream mueve o elimina un archivo. El autor afirma que cada fichero es identico a su origen (mismo SHA-256, verificado antes de cambiar la plantilla a este espejo) y que no se ha modificado nada. Los contenidos agregados cubren los modelos MiniMax H3 (video con audio, en variantes fl2va y ref2va), Krea 2 Turbo, SCAIL-2 sobre Wan 2.1 14B, ademas de text encoders (Qwen3-VL-32B en NVFP4 AWQ, Qwen3-VL-4B en fp8, UMT5-XXL en fp8), VAEs, LoRAs de destilacion de pasos y utilidades de decodificacion y escalado.
+El contenido abarca principalmente modelos generativos multimodales de vídeo e imagen: el modelo de difusión MiniMax H3 (con VAE de vídeo y de audio, y LoRAs de destilación turbo de 4 y 8 pasos), el modelo de imagen Krea 2 Turbo, el modelo de vídeo SCAIL-2 basado en Wan 2.1 de 14B, y codificadores de texto Qwen3-VL de 32B y 4B en cuantizaciones NVFP4/AWQ e FP8. El repositorio ocupa 166,1 GB y acumula cerca de 700.000 descargas, lo que refleja su uso como dependencia operativa de un flujo de trabajo concreto más que como modelo para evaluación individual.
 
-El repositorio se publico y actualizo el 17 de septiembre de 2026, acumula 0 descargas y 0 likes, y su licencia se declara como `mixed-see-readme` porque cada archivo conserva la licencia de su autor original. Es relevante ahora por dos motivos: centraliza pesos ya cuantizados (NVFP4 AWQ, int8 con `convrot`, fp8 escalado) listos para ComfyUI, y porque las licencias de MiniMax H3 y Krea 2 imponen restricciones territoriales y de uso comercial que condicionan cualquier despliegue en produccion.
+Es relevante ahora porque ejemplifica un patrón creciente en el ecosistema open source: la dependencia de artefactos alojados en Hugging Face dentro de pipelines de generación (ComfyUI + RunPod) y la necesidad de espejos estables ante la volatilidad de los repositorios upstream. Para un desarrollador o investigador, la ficha debe leerse como un índice de componentes con licencias heterogéneas, no como la de un modelo único con una licencia y unas capacidades homogéneas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Agregado heterogeneo: modelos de difusion (MiniMax H3, Krea 2 Turbo, SCAIL-2 sobre Wan 2.1 14B) + text encoders tipo transformer (Qwen3-VL-32B, Qwen3-VL-4B, UMT5-XXL) + VAEs + LoRAs de destilacion |
-| Parametros totales | No disponible. El repositorio agrupa multiples modelos; segun la nomenclatura de los archivos, Wan 2.1 14B (14 000 M) y Qwen3-VL-32B (32 000 M) son los unicos tamanos identificables |
-| Parametros activos | No aplica (no hay modelos MoE en el listado de archivos) |
+| Arquitectura | Repositorio espejo multi-modelo; contiene modelos de difusión (MiniMax H3, Krea 2, SCAIL-2/Wan 2.1), VAE de vídeo/audio/imagen, codificadores de texto Qwen3-VL y LoRAs |
+| Parametros totales | No disponible (repositorio agregado; el mayor componente es un codificador de texto Qwen3-VL de 32B y un modelo de difusión Wan 2.1 de 14B) |
+| Parametros activos | No disponible |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | NVFP4 AWQ, int8 con `convrot`, fp8 `e4m3fn` escalado, bf16, fp16, fp32 |
-| Idiomas soportados | No disponibles (no declarados en la model card) |
-| Licencia | Mixta (`mixed-see-readme`): MiniMax H3 Community License, Krea 2 Community License, MIT, Apache-2.0 y Meta SAM License en los archivos no espejados |
-| Formato de pesos | `safetensors` (todos los archivos listados) |
-| Tamano del repositorio | 46,5 GB |
-| Numero de archivos espejados | 23 (mas 2 no espejados, descargados desde su origen) |
-| Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 |
-| Descargas / likes | 0 / 0 |
-| Libreria declarada | `minimax-h3` |
+| Tipos de cuantizacion | int8 (convrot), fp8 (e4m3fn scaled), fp16, bf16, fp32, nvfp4 + awq |
+| Idiomas soportados | No disponible |
+| Licencia | Mixta (`mixed-see-readme`): MiniMax H3 Community License, Krea 2 Community License, MIT, Apache-2.0, Qwen Research License |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No existe entrenamiento propio: el autor del repositorio no entrena ni modifica pesos, sino que reempaqueta archivos existentes en la jerarquia de ComfyUI. La arquitectura efectiva es, por tanto, la suma de las arquitecturas de los modelos incluidos. El bloque principal son modelos de difusion: los `diffusion_models` de MiniMax H3 en variantes `ref2va` (referencia a video y audio) y `hybrid_fl2va_ref2va` (primer/ultimo fotograma y referencia), cuantizados a int8 con `convrot` y variantes truncadas; el modelo Krea 2 Turbo en int8 `convrot` para generacion y edicion de imagen; y el modelo SCAIL-2 (`wan2.1_14B_SCAIL_2_int8_convrot`), derivado de Wan 2.1 14B segun la tabla de origenes, con licencia MIT.
+El repositorio no entrena ningún modelo: agrega artefactos de inferencia ya entrenados por terceros. Los componentes principales son modelos de difusión para generación de vídeo e imagen. MiniMax H3 se distribuye con VAE de vídeo en fp16, VAE de audio en fp32, un codificador de texto Qwen3-VL de 32B cuantizado a NVFP4 con AWQ, y LoRAs de destilación turbo (4 y 8 pasos) para reducción de pasos de muestreo. Krea 2 Turbo se sirve en int8 con un codificador Qwen3-VL de 4B en FP8 y VAE de Qwen-Image. SCAIL-2 se basa en Wan 2.1 de 14B en int8, con LoRA DPO y LoRA de destilación de pasos de lightx2v, más el codificador UMT5-XXL en FP8 y CLIP Vision H.
 
-La capa de codificacion de texto la aportan tres modelos distintos: `qwen3vl_32b_minimax_h3_nvfp4_awq` (Qwen3-VL-32B, multimodal vision-language, cuantizado en NVFP4 con AWQ para MiniMax H3), `qwen3vl_4b_fp8_scaled` (Qwen3-VL-4B en fp8 escalado, empaquetado para Krea 2) y `umt5_xxl_fp8_e4m3fn_scaled` (UMT5-XXL en fp8, para la familia Wan). Los decodificadores son VAEs especificos por familia: `minimax_h3_video_vae_fp16` y `minimax_h3_audio_vae_fp32` (lo que confirma que el pipeline H3 genera audio ademas de video), `wan_2.1_vae` y `qwen_image_vae`.
-
-La innovacion tecnica del paquete esta en las optimizaciones de inferencia mas que en la arquitectura: LoRAs de destilacion de pasos que reducen la muestra a 4 pasos (MiniMax H3 ref2v turbo v0.1 y fl2v turbo v1.0 a 768p), 8 pasos (fl2v turbo v1.0), 3 pasos (TaoMate-H3 de Alibaba TaoLive AIGC) y 4 pasos (FastH3 de FastVideo); una LoRA DPO para SCAIL-2; LoRAs de destilacion de CFG y pasos de lightx2v para Wan 2.1 I2V 14B a 480p; un escalador latente 3D en bf16 (`minimax_h3_latent_upscaler_3d_bf16`, Apache-2.0); y un VAE aproximado (TAE, `taeh3.safetensors`, Apache-2.0) para decodificacion rapida de previsualizaciones. La LoRA `krea2_identity_edit_v1_2` apunta a edicion de imagen preservando identidad.
+Las innovaciones técnicas destacables son las cuantizaciones específicas para inferencia en GPU de consumo y servidor (int8 con "convrot", FP8 e4m3fn escalado, NVFP4+AWQ), las LoRAs de destilación que permiten muestrear en 3, 4 u 8 pasos, y los modelos híbridos de smhfacct que combinan los modos fl2va y ref2va de MiniMax H3 en un único checkpoint int8. No se dispone de información sobre composición del dataset, número de tokens de entrenamiento ni procesos de RLHF/DPO más allá de la LoRA DPO incluida para SCAIL-2.
 
 ## Capacidades
 
-- Generacion de video a partir de imagen, primer/ultimo fotograma y referencias (variantes `fl2va` y `ref2va` de MiniMax H3).
-- Generacion de audio sincronizado en el pipeline de video, evidenciada por la presencia de un VAE de audio especifico (`minimax_h3_audio_vae_fp32`).
-- Generacion y edicion de imagen con Krea 2 Turbo, incluida edicion de identidad mediante la LoRA `krea2_identity_edit_v1_2`.
-- Image-to-video sobre la familia Wan 2.1 con la LoRA de destilacion de lightx2v (480p).
-- Muestreo acelerado: 3, 4 y 8 pasos segun la LoRA seleccionada, frente a los muestreos largos habituales.
-- Escalado latente 3D para aumentar la resolucion de video tras la generacion.
-- Decodificacion aproximada de latentes (TAE) para previsualizacion rapida antes del decode completo.
-- Codificacion vision-lenguaje mediante Qwen3-VL-32B y Qwen3-VL-4B; codificacion de texto UMT5-XXL.
-- Codificacion visual auxiliar con CLIP Vision H (`clip_vision_h`), empleada en pipelines de video.
-- Tool calling, function calling, agentes, modo de razonamiento y capacidades multilingues: no aplica, el repositorio contiene pesos para generacion multimodal en ComfyUI, no un modelo de lenguaje conversacional.
+- Generación de vídeo a partir de texto e imagen: MiniMax H3 con modos fl2v (first-last frame to video) y ref2v (reference to video), más checkpoints híbridos fl2va/ref2va.
+- Generación de audio asociada al vídeo: el repositorio incluye un VAE de audio específico de MiniMax H3 (`minimax_h3_audio_vae_fp32`).
+- Generación de imagen: Krea 2 Turbo en int8 con LoRA de edición de identidad (`krea2_identity_edit_v1_2`).
+- Edición y adaptación de imagen sobre Qwen Image 2.1: LoRAs `bfs_head_v1.1_qwen_2.1` y `canon_qwen21`.
+- Destilación de pasos de muestreo: LoRAs turbo de 3, 4 y 8 pasos para MiniMax H3 y SCAIL-2, que reducen el coste de inferencia.
+- Codificación de texto multimodal: Qwen3-VL de 32B (NVFP4/AWQ) y de 4B (FP8), aptos para prompts largos y con entrada visual.
+- Upscaling latente 3D: `minimax_h3_latent_upscaler_3d_bf16` para aumentar la resolución de latentes de vídeo.
+- VAE aproximado rápido: `taeh3` (TAE) para decodificación acelerada durante previsualización.
+- Soporte de tool calling, agentes y razonamiento multi-paso: no disponible (el repositorio contiene modelos generativos, no LLM de propósito general).
 
 ## Casos de uso
 
-- Despliegue reproducible de ComfyUI en RunPod: la plantilla AI Angel ComfyPod descarga estos archivos directamente, de modo que un despliegue nuevo obtiene las versiones exactas sin depender de que los repositorios upstream sigan publicando los mismos ficheros.
-- Generacion de video con audio en produccion de contenido: el pipeline MiniMax H3 junto con el VAE de audio permite obtener clips con pista sonora en una sola pasada, usando la variante `fl2va` para animar un fotograma inicial o `ref2va` para condicionar por referencia.
-- Edicion de imagen con preservacion de identidad: Krea 2 Turbo mas `krea2_identity_edit_v1_2` sirve para retoques, cambios de vestuario o de fondo manteniendo el rostro de la persona, un flujo tipico en estudios de fotografia y marketing.
-- Prototipado rapido con destilacion de pasos: las LoRAs de 3 y 4 pasos permiten iterar sobre prompts y composiciones en segundos, y reservar el muestreo completo para el render final.
-- Escalado de video generado: el escalador latente 3D en bf16 permite pasar de una generacion rapida a resolucion de entrega sin reejecutar el pipeline completo desde cero.
-- Previsualizacion barata en granjas de render: el VAE aproximado TAE reduce el coste de decodificar latentes durante la exploracion, dejando el decode fp16/fp32 para el resultado definitivo.
-- Experimentacion con cuantizaciones: al convivir NVFP4 AWQ, int8 `convrot` y fp8 escalado, el repositorio sirve para comparar calidad y velocidad entre formatos sobre el mismo pipeline.
-- Archivado y auditoria de cadena de suministro: los SHA-256 verificados y la trazabilidad archivo-origen de la tabla permiten reconstruir de que repositorio y con que licencia proviene cada peso.
-- Ajuste fino ligero de estilo o movimiento: las LoRAs incluidas son un punto de partida para entrenar variantes propias sobre las mismas bases, siempre que la licencia de la base lo permita en la jurisdiccion del usuario.
+- Despliegue reproducible de un pipeline ComfyUI en RunPod: la plantilla AI Angel ComfyPod apunta a este espejo, de modo que los ficheros de `models/` se descargan siempre con el mismo SHA-256 y el flujo no se rompe si un upstream mueve o borra un peso.
+- Generación de vídeo corto a partir de una imagen de referencia: usar MiniMax H3 ref2v con la LoRA turbo de 4 pasos para producir clips con identidad consistente en pocos pasos de muestreo, adecuado para prototipado rápido.
+- Interpolación first-last frame: los checkpoints fl2v de MiniMax H3 permiten generar la transición entre dos fotogramas clave, útil en animática y previsualización de storyboards.
+- Generación de imagen comercial con Krea 2 Turbo: el checkpoint int8 más la LoRA de edición de identidad permiten iterar retratos o productos manteniendo el sujeto entre generaciones.
+- Restauración o adaptación estilística sobre Qwen Image 2.1: las LoRAs `bfs_head_v1.1_qwen_2.1` y `canon_qwen21` se aplican sobre el modelo base para ajustar el estilo de salida sin reentrenar.
+- Vídeo con audio sincronizado: combinar el modelo de difusión MiniMax H3 con su VAE de audio permite generar clips con pista sonora en el mismo pipeline.
+- Previsualización de bajo coste: el VAE aproximado `taeh3` y el upscaler latente 3D permiten validar composiciones antes de lanzar la decodificación completa, reduciendo el tiempo de iteración en GPU.
+- Replicación de un entorno de investigación: investigadores que necesiten comparar MiniMax H3, Krea 2 y SCAIL-2 pueden montar los tres desde un único repositorio con licencias documentadas por fichero.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de FVD, FID, CLIP score, SSIM ni comparativas de velocidad, y la busqueda web realizada no aporto datos tecnicos. Los unicos datos cuantitativos disponibles son el tamano del repositorio (46,5 GB), el numero de pasos de las LoRAs de destilacion (3, 4 y 8) y las cuantizaciones empleadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- La VRAM necesaria no esta publicada; las cifras siguientes son estimaciones derivadas del tamano de los pesos y del formato de cuantizacion, no datos del autor.
-- Text encoder Qwen3-VL-32B en NVFP4 AWQ: aproximadamente 16-18 GB de pesos por el formato de 4 bits mas escalas. NVFP4 requiere GPU Blackwell (serie RTX 50, B200) para ejecucion nativa; en generaciones anteriores exige de-cuantizacion y pierde la ventaja de rendimiento.
-- Modelos de difusion en int8 `convrot`: del orden de 1 byte por parametro mas sobrecarga, por lo que el Wan 2.1 14B ronda los 14-16 GB y el resto depende del tamano no publicado de MiniMax H3 y Krea 2.
-- El escalador latente 3D y el VAE de video en bf16/fp16 anaden varios GB en funcion de la resolucion y la longitud del clip.
-- GPU recomendadas: para el conjunto completo, H100 o A100 de 80 GB; para ejecuciones parciales con offloading, RTX 4090, RTX 5090 o RTX 6000 Ada de 24-48 GB. ComfyUI puede descargar a RAM los modelos no usados en cada paso, lo que reduce el pico de VRAM a costa de latencia.
-- Caben en GPU de consumo las variantes int8 de 14B y las LoRAs, siempre que se gestione el offloading; el text encoder de 32B es el componente mas exigente.
-- Opciones de despliegue: ComfyUI (nativo, para el que esta empaquetado) y la plantilla RunPod AI Angel ComfyPod. vLLM, llama.cpp, Ollama y TGI no aplican: no son pesos de un modelo de lenguaje con decodificacion autoregresiva estandar.
-- Latencia y throughput: no disponibles. Se sabe que las LoRAs permiten reducir el muestreo a 3, 4 u 8 pasos, lo que multiplica la velocidad frente a configuraciones de 20-50 pasos, pero sin cifras publicadas.
+- VRAM estimada: no disponible de forma agregada. El repositorio completo son 166,1 GB en disco; la VRAM necesaria depende del componente que se cargue en cada momento.
+- MiniMax H3: el codificador de texto Qwen3-VL de 32B en NVFP4/AWQ y el modelo de difusión en int8 requieren GPUs de clase servidor (A100 80 GB, H100 80 GB) para carga simultánea; con descarga secuencial de componentes puede reducirse el pico.
+- Krea 2 Turbo: el checkpoint int8 más el codificador Qwen3-VL de 4B en FP8 y el VAE de Qwen-Image son compatibles con GPUs de consumo de gama alta (RTX 4090 24 GB) si se gestiona la memoria por etapas.
+- SCAIL-2 / Wan 2.1 14B: el modelo de difusión en int8 más UMT5-XXL en FP8 y CLIP Vision H encajan en 24 GB con offloading; en 16 GB requiere cuantización adicional o carga por capas.
+- LoRAs y VAE: los ficheros bf16/fp16 de LoRA y VAE son ligeros y no determinan el requisito de VRAM.
+- Opciones de despliegue: ComfyUI es el entorno de referencia del repositorio; la plantilla RunPod es el mecanismo de despliegue previsto. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, ya que no son modelos de lenguaje.
+- Latencia y throughput: no disponibles. Las LoRAs turbo de 3, 4 y 8 pasos están diseñadas para reducir el número de evaluaciones del modelo de difusión, pero no se publican cifras de tiempo por clip.
 
 ## Comparativa con modelos similares
 
-No existen alternativas equivalentes como modelo, porque este repositorio es un espejo. La comparacion relevante es contra los repositorios de origen y otros reempaquetados para ComfyUI:
-
-| Repositorio | Contenido | Licencia | Enfoque | Disponibilidad |
+| Repositorio | Contenido | Tamano | Licencia | Enfoque |
 |---|---|---|---|---|
-| AiAngelGallery/ComfyPod-Models | 23 archivos espejados de 4 familias (MiniMax H3, Krea 2, SCAIL-2/Wan 2.1, utilidades) | Mixta (`mixed-see-readme`) | Espejo byte-identico con layout `models/` de ComfyUI | 0 descargas, 0 likes; publicado 2026-09-17 |
-| Comfy-Org/MiniMax-H3 | Modelos, VAEs y LoRAs oficiales empaquetados de MiniMax H3 | MiniMax H3 Community License | Fuente original del empaquetado | Repositorio upstream de referencia |
-| Comfy-Org/Krea-2 | Krea 2 Turbo y text encoder Qwen3-VL-4B empaquetados | Krea 2 Community License | Fuente original del empaquetado | Repositorio upstream de referencia |
-| Comfy-Org/Wan_2.1_ComfyUI_repackaged | UMT5-XXL fp8, VAE y CLIP Vision H | Apache-2.0 | Reempaquetado oficial de Wan 2.1 | Uso comercial sin restriccion territorial declarada |
-| Kijai/WanVideo_comfy | Extracciones de LoRAs, entre ellas la de lightx2v | Apache-2.0 | Extraccion y conversion de pesos | Comunidad de ComfyUI |
-| Comfy-Org/SCAIL-2 | SCAIL-2 sobre Wan 2.1 14B y LoRA DPO | MIT | Empaquetado de zai-org/SCAIL-2 | Licencia permisiva, la mas laxa del conjunto |
+| AiAngelGallery/ComfyPod-Models | Espejo multi-modelo (MiniMax H3, Krea 2, SCAIL-2, Wan 2.1, LoRAs) | 166,1 GB | Mixta | Dependencia operativa de una plantilla ComfyUI |
+| Comfy-Org/MiniMax-H3 | Modelo MiniMax H3 original empaquetado para ComfyUI | No disponible | MiniMax H3 Community License | Fuente upstream de los pesos de vídeo/audio |
+| Comfy-Org/Krea-2 | Krea 2 Turbo empaquetado para ComfyUI | No disponible | Krea 2 Community License | Fuente upstream del modelo de imagen |
+| Comfy-Org/SCAIL-2 | SCAIL-2 sobre Wan 2.1 14B | No disponible | MIT | Fuente upstream del modelo de vídeo |
+
+La comparativa relevante no es de rendimiento sino de función: ComfyPod-Models se distingue de los repositorios de Comfy-Org por agregar varios modelos bajo una estructura única y por garantizar inmutabilidad de los ficheros, a cambio de una licencia agregada mixta y de un tamaño de descarga muy superior al de cualquier componente individual.
 
 ## Limitaciones y advertencias
 
-- Restriccion territorial grave: la MiniMax H3 Community License no cubre la Union Europea, el Reino Unido, la Republica de Corea ni los Estados Unidos de America. La propia model card indica que no se descarguen ni usen esos archivos en esos territorios. Para un lector en Espana, esto afecta a la mayoria de los archivos del repositorio.
-- La Krea 2 Community License permite uso comercial libre de regalias solo por debajo de un umbral de facturacion que el README deja truncado ("below US"); hay que leer el PDF completo antes de cualquier uso comercial.
-- Obligacion de etiquetado: todo lo publicado a partir de los modelos MiniMax H3 debe identificarse como generado por IA.
-- Licencias heterogeneas dentro del mismo repositorio, lo que complica el cumplimiento: conviven MIT, Apache-2.0, MiniMax H3 Community License y Krea 2 Community License segun el archivo.
-- Riesgo legal en dos elementos concretos: `sam3.1_multiplex_fp16` no se espeja y esta tras un gate con Meta SAM License, y `minimax_h3_video_vae_int8_convrot` no declara licencia alguna.
-- Ausencia total de validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones que confirmen el comportamiento de los pesos.
-- No hay model card tecnica del modelo subyacente: no se publican parametros, contexto, idiomas, composicion del dataset ni proceso de entrenamiento. El repositorio no responde a esas preguntas.
-- Sin garantia de mantenimiento: el autor solo promete integridad byte a byte en el momento de la publicacion, no actualizaciones ni soporte.
-- Riesgo de alucinacion en generacion multimodal: como todo modelo de difusion, puede producir contenido fisicamente incoherente en video (artefactos entre fotogramas, desincronizacion labial o de audio) y en imagen (anatomia incorrecta, texto ilegible).
-- Calidad variable segun la cuantizacion: las variantes int8 con `convrot` y los modelos truncados (`pruned`) degradan la fidelidad respecto a los pesos completos, y las LoRAs de destilacion de pasos sacrifican calidad por velocidad.
-- Sesgos de los datos de entrenamiento heredados de cada modelo original, no documentados aqui.
-- Dependencia de hardware especifico: el text encoder NVFP4 AWQ no rinde igual fuera de GPU Blackwell.
-- Los archivos son un espejo; la responsabilidad de actualizar ante cambios de licencia upstream recae en quien despliega.
+- No es un modelo evaluable de forma unitaria: las capacidades, el contexto y los benchmarks dependen del componente concreto que se cargue.
+- Licencia mixta: cada fichero hereda la licencia de su autor original (MiniMax H3 Community License, Krea 2 Community License, MIT, Apache-2.0, Qwen Research License). El uso comercial exige revisar fichero a fichero; la Qwen Research License en particular restringe el uso comercial de los adaptadores sobre Qwen Image 2.1.
+- El repositorio se declara como espejo sin modificaciones; cualquier corrección o actualización debe llegar desde el upstream, y el autor advierte de que atenderá peticiones de retirada de autores originales.
+- Riesgo de desactualización: si un upstream publica una versión nueva, el espejo puede quedar anclado a una versión antigua por diseño.
+- Riesgo de alucinación y sesgos: aplicable a los modelos generativos subyacentes (MiniMax H3, Krea 2, SCAIL-2), no documentado en la información disponible.
+- Idiomas soportados: no disponibles; los codificadores Qwen3-VL y UMT5-XXL condicionan el multilingüismo de los prompts, pero no se especifica cobertura.
+- El fichero `sam3.1_multiplex_fp16` no está espejado por estar sujeto a Meta SAM License con acceso restringido, lo que introduce una dependencia externa en el pipeline.
+- El tamaño de 166,1 GB implica coste de almacenamiento y de transferencia relevante en entornos cloud; conviene descargar solo los componentes necesarios.
 
 ## Enlaces
 
-- Repositorio: https://huggingface.co/AiAngelGallery/ComfyPod-Models
-- Plantilla y guia AI Angel ComfyPod: https://www.thepexcel.com/aiangel-comfypod/
-- Codigo fuente de la plantilla: https://github.com/ThepExcel/AiAngelComfyPod
-- Origen MiniMax H3 empaquetado: https://huggingface.co/Comfy-Org/MiniMax-H3
-- Modelos hibridos fl2va/ref2va: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models
-- VAE aproximado TAE: https://huggingface.co/Kijai/MiniMax-H3-TAE
-- Escalador latente 3D: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler
-- TaoMate-H3 3 pasos: https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI y https://huggingface.co/TaoLiveAIGC/TaoMate-H3
-- FastH3 de FastVideo: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA y https://civitai.com/models/2898443
-- SCAIL-2: https://huggingface.co/Comfy-Org/SCAIL-2 y https://huggingface.co/zai-org/SCAIL-2
-- LoRA lightx2v para Wan 2.1 I2V: https://huggingface.co/Kijai/WanVideo_comfy y https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v
-- Reempaquetado Wan 2.1: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged
-- Krea 2: https://huggingface.co/Comfy-Org/Krea-2 y https://huggingface.co/krea/Krea-2-Turbo
-- VAE de imagen Qwen: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI
-- LoRA de edicion de identidad: https://huggingface.co/conradlocke/krea2-identity-edit
-- Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el repositorio (localizador de tiendas Walmart y enlaces a Google Maps), por lo que no se incluyen como fuentes.
+- Repositorio en Hugging Face: https://huggingface.co/AiAngelGallery/ComfyPod-Models
+- Plantilla y guía AI Angel ComfyPod: https://www.thepexcel.com/aiangel-comfypod/
+- Repositorio GitHub de la plantilla: https://github.com/ThepExcel/AiAngelComfyPod
+- Comfy-Org/MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3
+- smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models
+- Kijai/MiniMax-H3-TAE: https://huggingface.co/Kijai/MiniMax-H3-TAE
+- LBH-123-AI/Minimax_h3_latent_Upscaler: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler
+- Robert1212star/TaoMate-H3-3Step-ComfyUI: https://huggingface.co/Robert1212star/TaoMate-H3-3Step-ComfyUI
+- TaoLiveAIGC/TaoMate-H3: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
+- FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA
+- Civitai model 2898443: https://civitai.com/models/2898443
+- Comfy-Org/SCAIL-2: https://huggingface.co/Comfy-Org/SCAIL-2
+- zai-org/SCAIL-2: https://huggingface.co/zai-org/SCAIL-2
+- Kijai/WanVideo_comfy: https://huggingface.co/Kijai/WanVideo_comfy
+- lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v: https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v
+- Comfy-Org/Wan_2.1_ComfyUI_repackaged: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged
+- Comfy-Org/Krea-2: https://huggingface.co/Comfy-Org/Krea-2
+- krea/Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
+- Comfy-Org/Qwen-Image_ComfyUI: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI
+- conradlocke/krea2-identity-edit: https://huggingface.co/conradlocke/krea2-identity-edit
+- Civitai model 2027766: https://civitai.com/models/2027766?modelVersionId=3356102
+- Civitai model 2783143: https://civitai.com/models/2783143?modelVersionId=3352035
+- Civitai model 2838593: https://civitai.com/models/2838593?modelVersionId=3391975

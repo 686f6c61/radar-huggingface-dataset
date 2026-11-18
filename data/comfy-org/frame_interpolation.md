@@ -2,78 +2,98 @@
 
 ## Resumen
 
-El repositorio `Comfy-Org/frame_interpolation` es un paquete de modelos de interpolación de fotogramas (frame interpolation) reempaquetados específicamente para su uso en ComfyUI, el popular editor de flujos de trabajo basado en nodos. Incluye dos familias de modelos: RIFE (Real-Time Intermediate Flow Estimation) en sus versiones 4.25 y 4.26, con variantes lite, estándar y heavy, y FILM (Frame Interpolation for Large Motion) de Google Research, en su versión fp16. El repositorio no contiene los modelos originales, sino archivos convertidos al formato `safetensors` y organizados para que ComfyUI los cargue directamente desde la carpeta `models/frame_interpolation`.
+Frame interpolation es un repositorio de pesos empaquetados por Comfy-Org para su uso directo en ComfyUI. No se trata de un modelo generativo de lenguaje ni de un transformer multimodal, sino de una coleccion de redes neuronales especializadas en interpolacion de fotogramas de video: FILM (Google Research) y varias versiones de RIFE (Practical-RIFE). El repositorio resuelve el problema de aumentar la tasa de fotogramas de un video (por ejemplo, pasar de 24 a 60 fps) sintetizando fotogramas intermedios de forma coherente, sin necesidad de instalar dependencias externas ni clonar los repositorios originales de cada proyecto.
 
-Este paquete resuelve el problema de generar fotogramas intermedios entre dos imágenes o vídeos, lo que permite aumentar la tasa de fotogramas, crear efectos de cámara lenta o suavizar animaciones. Su relevancia actual radica en la creciente demanda de herramientas de postproducción de vídeo accesibles desde entornos de IA generativa, y en que ComfyUI se ha convertido en un estándar de facto para flujos de trabajo de imagen y vídeo. Al estar mantenido por Comfy-Org, garantiza compatibilidad con las versiones recientes del ecosistema.
+El paquete incluye seis archivos en formato safetensors: `film_net_fp16.safetensors` y cinco variantes de RIFE (v4.25, v4.25 heavy, v4.25 lite, v4.26 y v4.26 heavy). Su relevancia actual radica en que ComfyUI se ha consolidado como entorno de referencia para pipelines de generacion y postprocesado de video, y estos pesos permiten integrar interpolacion de fotogramas como un nodo mas dentro de un workflow, sin friccion de instalacion. El tamano total del repositorio es de 0,2 GB, lo que refleja que son redes compactas y ligeras en comparacion con modelos de difusion.
+
+La licencia es dual (MIT y Apache 2.0, segun el campo `license_name`), heredada de los proyectos originales. No hay informacion sobre idiomas porque la tarea no es linguistica: opera sobre pixeles de video.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Redes neuronales de interpolación de fotogramas (RIFE y FILM); detalles específicos no disponibles en el repositorio |
+| Arquitectura | Redes neuronales de interpolacion de fotogramas: FILM (Google Research) y RIFE (Practical-RIFE) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de visión/vídeo, no de texto) |
-| Tipos de cuantizacion | no disponible (los archivos están en fp16 para FILM; RIFE no especifica) |
-| Idiomas soportados | no aplica |
-| Licencia | MIT y Apache 2.0 (según el campo `license_name`; el tag `license:other` indica una licencia compuesta) |
-| Formato de pesos | safetensors |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (entrada de video, no texto) |
+| Tipos de cuantizacion | FP16 para FILM; variantes lite/heavy de RIFE segun el archivo (no se detallan niveles de cuantizacion adicionales) |
+| Idiomas soportados | no disponible (no es un modelo linguistico) |
+| Licencia | MIT y Apache 2.0 (campo `license_name: mit-and-apache-2.0`) |
+| Formato de pesos | safetensors (single-file para ComfyUI) |
+
+Archivos incluidos en el repositorio:
+
+| Archivo | Modelo base |
+|---|---|
+| `film_net_fp16.safetensors` | FILM (Google Research), precision FP16 |
+| `rife_v4.25.safetensors` | RIFE v4.25 |
+| `rife_v4.25_heavy.safetensors` | RIFE v4.25 variante heavy |
+| `rife_v4.25_lite.safetensors` | RIFE v4.25 variante lite |
+| `rife_v4.26.safetensors` | RIFE v4.26 |
+| `rife_v4.26_heavy.safetensors` | RIFE v4.26 variante heavy |
 
 ## Arquitectura y entrenamiento
 
-RIFE (Real-Time Intermediate Flow Estimation) es una arquitectura basada en estimación de flujo óptico que predice el flujo intermedio entre dos fotogramas y sintetiza el fotograma central mediante una red de fusión. Sus versiones 4.25 y 4.26 introducen mejoras en la calidad de interpolación para movimientos grandes y complejos, con variantes `lite` (menor coste computacional), estándar y `heavy` (mayor calidad). FILM (Frame Interpolation for Large Motion) es un modelo de Google Research diseñado específicamente para manejar movimientos amplios y desocultamiento de regiones, utilizando una arquitectura de pirámide de características y una etapa de fusión multi-escala. Los detalles exactos de entrenamiento (número de tokens, composición del dataset, técnicas de optimización) no se incluyen en este repositorio, ya que se trata de un reempaquetado para ComfyUI y no de la publicación original de los modelos.
+Los pesos proceden de dos lineas de investigacion distintas. FILM (Frame Interpolation for Large Motion) es un modelo de Google Research disenado para manejar movimiento de gran magnitud entre fotogramas, con una arquitectura basada en redes convolucionales multi-escala y un modulo de estimacion de flujo optico. RIFE (Real-time Intermediate Flow Estimation) es un modelo de Practical-RIFE orientado a inferencia en tiempo real, que estima el flujo intermedio de forma directa y jerarquica, lo que le permite generar fotogramas intermedios con latencia baja. Las variantes lite y heavy de RIFE ajustan el coste computacional y la calidad del resultado, mientras que v4.25 y v4.26 corresponden a iteraciones sucesivas del mismo modelo.
+
+No se dispone de informacion sobre el numero de tokens, la composicion del dataset de entrenamiento ni sobre si se aplicaron tecnicas de RLHF o DPO; estos conceptos no aplican a un modelo de interpolacion de video. La innovacion tecnica relevante es el empaquetado en safetensors para ComfyUI, que elimina la necesidad de instalar los repositorios originales y permite cargar los pesos como nodos nativos del grafo.
 
 ## Capacidades
 
-- Interpolación de fotogramas entre dos imágenes estáticas o entre fotogramas consecutivos de un vídeo.
-- Generación de vídeo en cámara lenta mediante la inserción de múltiples fotogramas intermedios.
-- Soporte para diferentes resoluciones y calidades según la variante elegida (lite, estándar, heavy).
-- Integración nativa con ComfyUI a través de nodos de interpolación de fotogramas.
-- Compatibilidad con flujos de trabajo de generación de vídeo, como la conversión de secuencias de imágenes a vídeo fluido.
-- Capacidad de procesamiento por lotes (batch) para vídeos completos, aunque la gestión de memoria depende del hardware.
+- Interpolacion de fotogramas de video: sintetiza fotogramas intermedios entre dos fotogramas consecutivos para aumentar la tasa de fotogramas.
+- Dos familias de modelos: FILM para movimiento de gran magnitud y RIFE para inferencia rapida en tiempo real.
+- Variantes de calidad/velocidad en RIFE: lite, estandar y heavy, para ajustar el compromiso entre latencia y fidelidad.
+- Integracion nativa en ComfyUI como nodo de video-to-video dentro de un workflow.
+- Procesamiento por lotes de secuencias de video (sujeto a la implementacion del nodo en ComfyUI).
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues, al no ser un modelo de lenguaje.
+- No dispone de modo thinking, vision semantica ni audio; su entrada y salida son fotogramas de imagen.
 
 ## Casos de uso
 
-- Postproducción de vídeo en cámara lenta: el modelo puede insertar fotogramas intermedios en secuencias grabadas a baja tasa de fps, generando un efecto de cámara lenta suave sin artefactos visibles. Es adecuado para clips de acción, deportes o naturaleza.
-- Aumento de fps en animación 2D: al interpolar entre fotogramas clave de animaciones tradicionales, se puede elevar la fluidez de 12 fps a 24 o 30 fps, mejorando la experiencia visual sin redibujar manualmente.
-- Suavizado de vídeo generado por IA: en flujos de ComfyUI que producen vídeo mediante modelos de difusión (p. ej., Stable Video Diffusion), la interpolación reduce el parpadeo entre fotogramas y produce un resultado más estable.
-- Creación de transiciones fluidas entre imágenes: se pueden interpolar entre dos fotografías para generar una transición animada, útil en presentaciones, montajes o contenido para redes sociales.
-- Restauración de vídeo antiguo: al aumentar la tasa de fotogramas de grabaciones históricas de baja calidad, se mejora la percepción de movimiento y se facilita el análisis forense o documental.
-- Generación de vídeo a partir de pares de imágenes en producción audiovisual: los equipos de VFX pueden usar estos modelos para crear tomas intermedias entre dos keyframes, reduciendo el trabajo manual de animación.
+- Conversion de 24 a 60 fps en postproduccion: se carga `rife_v4.26.safetensors` en el nodo de interpolacion y se procesa la secuencia para generar fotogramas intermedios, obteniendo movimiento mas fluido en material grabado a 24 fps.
+- Suavizado de animacion tradicional: las animaciones a 12 fps pueden elevarse a 24 o 48 fps con RIFE, reduciendo el efecto de saltos entre dibujos sin necesidad de reanimar los fotogramas intermedios.
+- Restauracion de metraje antiguo: FILM maneja mejor el movimiento de gran magnitud, por lo que es adecuado para secuencias con camara en movimiento o cambios bruscos entre fotogramas.
+- Generacion de video con IA: los pipelines de texto-a-video suelen producir clips cortos a baja tasa de fotogramas; la interpolacion con RIFE permite alargar la duracion efectiva y suavizar el resultado antes de la exportacion final.
+- Previsualizacion rapida en produccion: la variante `rife_v4.25_lite` permite generar una previsualizacion interpolada en pocos segundos para validar el ritmo de una secuencia antes del render final con la variante heavy.
+- Efectos de camara lenta: a partir de metraje grabado a 60 fps se puede interpolar hasta 120 o 240 fps para obtener camara lenta fluida sin grabar a alta velocidad.
+- Automatizacion de pipelines de video en ComfyUI: al ser pesos single-file, se pueden encadenar con nodos de upscaling o de difusion dentro del mismo grafo, sin scripts externos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas comparativas (PSNR, SSIM, LPIPS, etc.) ni comparaciones con otros modelos de interpolación. Para datos de rendimiento, se recomienda consultar las publicaciones originales de RIFE y FILM.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en el repositorio. Dado el tamaño total del paquete (0.2 GB) y que los modelos son relativamente ligeros, se espera que quepan en GPUs con 4 GB o más, pero no se puede confirmar sin pruebas.
-- GPU recomendadas: no especificadas. Los modelos RIFE y FILM están diseñados para ejecutarse en tiempo real en GPUs consumer (serie RTX 20/30/40), pero la versión `heavy` puede requerir más memoria.
-- Compatibilidad con consumer GPU: probablemente sí, dado el tamaño reducido de los archivos, pero no hay datos oficiales.
-- Opciones de despliegue: exclusivamente a través de ComfyUI, ya que los archivos están reempaquetados para ese entorno. No se proporcionan integraciones con vLLM, llama.cpp u otros motores.
+- VRAM estimada: no disponible de forma explicita; al tratarse de redes compactas (repositorio total de 0,2 GB), la huella de memoria es reducida en comparacion con modelos de difusion.
+- GPU recomendadas: no disponible en la informacion proporcionada; por el perfil de RIFE (orientado a tiempo real) se espera funcionamiento en GPU consumer, pero no se confirma con datos del repositorio.
+- Compatibilidad con GPU consumer: no confirmada con cifras; el tamano de los pesos sugiere que cabe en GPU de gama media, pero no se aporta medicion.
+- Opciones de despliegue: ComfyUI (entorno para el que estan empaquetados los pesos); no se documentan otros backends como vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tamaño | Calidad | Velocidad | Licencia |
-|---|---|---|---|---|---|
-| RIFE (v4.25/4.26) | Interpolación basada en flujo óptico | Ligero (variantes lite/standard/heavy) | Alta para movimientos moderados | Muy rápida (tiempo real) | MIT |
-| FILM (Google) | Interpolación multi-escala | Medio | Muy alta para movimientos grandes | Media | Apache 2.0 |
-| DAIN (Depth-Aware Video Frame Interpolation) | Interpolación con profundidad | Pesado | Alta | Lenta | MIT (no incluido en este repo) |
+| Modelo | Familia | Enfoque | Variantes | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Este repositorio (Comfy-Org) | FILM + RIFE | Interpolacion de fotogramas | 6 archivos (FILM FP16, RIFE v4.25/v4.26 lite/heavy) | safetensors para ComfyUI | MIT y Apache 2.0 | Hugging Face, integrado en ComfyUI |
+| Practical-RIFE (hzwer) | RIFE | Interpolacion en tiempo real | Multiples versiones del repositorio original | Pesos originales (no safetensors single-file) | Segun repositorio original | GitHub |
+| Google Research frame-interpolation | FILM | Movimiento de gran magnitud | Modelo FILM original | Pesos originales | Segun repositorio original | GitHub |
 
-La comparativa se basa en conocimiento general de los modelos originales, no en datos del repositorio. No se dispone de métricas cuantitativas para una comparación rigurosa.
+La ventaja de este repositorio frente a los originales es el empaquetado single-file y la integracion directa en ComfyUI; la desventaja es que no incluye herramientas de entrenamiento ni scripts de evaluacion propios.
 
 ## Limitaciones y advertencias
 
-- Los archivos son reempaquetados por Comfy-Org; no se garantiza que sean idénticos a los pesos originales publicados por los autores de RIFE y FILM.
-- La licencia es compuesta (MIT y Apache 2.0), pero el campo `license:other` sugiere que puede haber condiciones adicionales no documentadas en el repositorio. Se recomienda revisar las licencias de los repositorios originales antes de uso comercial.
-- No se incluyen instrucciones de entrenamiento ni fine-tuning; el paquete está pensado solo para inferencia.
-- La calidad de interpolación depende en gran medida del contenido: movimientos muy rápidos, oclusiones complejas o cambios de iluminación bruscos pueden producir artefactos.
-- No hay soporte para otros formatos de pesos (GGUF, ONNX, etc.); solo safetensors para ComfyUI.
-- El repositorio no proporciona documentación sobre el rendimiento en diferentes hardware, por lo que el usuario debe validar la viabilidad en su propio equipo.
+- No es un modelo de lenguaje: no procesa texto, no responde a prompts y no tiene capacidades de razonamiento, codigo ni matematicas.
+- La calidad de la interpolacion depende del contenido: oclusiones, movimiento no rigido complejo y cambios de iluminacion bruscos pueden producir artefactos.
+- Las variantes lite sacrifican fidelidad por velocidad; no son adecuadas para render final de alta calidad.
+- No se documentan sesgos, riesgos de alucinacion ni limitaciones de contexto o idioma, porque la tarea no es linguistica.
+- Licencia dual MIT y Apache 2.0: conviene verificar las condiciones de cada proyecto original (Practical-RIFE y Google Research frame-interpolation) antes de un uso comercial, ya que el campo `license` del repositorio figura como `other`.
+- No se proporcionan datos de benchmarks ni de latencia; cualquier estimacion de rendimiento en produccion debe medirse sobre el hardware objetivo.
+- El repositorio depende de ComfyUI para su uso previsto; fuera de ese entorno requiere adaptar la carga de los safetensors.
 
 ## Enlaces
 
-- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/frame_interpolation
-- Repositorio original de RIFE: https://github.com/hzwer/Practical-RIFE
-- Repositorio original de FILM: https://github.com/google-research/frame-interpolation
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/frame_interpolation
+- Practical-RIFE (modelo original RIFE): https://github.com/hzwer/Practical-RIFE
+- Google Research frame-interpolation (modelo original FILM): https://github.com/google-research/frame-interpolation
+- ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Plantilla de workflow de interpolacion de fotogramas: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/utility_video_frame_interpolation.json

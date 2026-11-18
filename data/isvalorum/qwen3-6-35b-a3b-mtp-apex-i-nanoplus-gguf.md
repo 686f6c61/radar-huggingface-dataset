@@ -2,118 +2,96 @@
 
 ## Resumen
 
-IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-NanoPlus-GGUF es una cuantización en formato GGUF del modelo Qwen/Qwen3.6-35B-A3B, publicada por el usuario IsValorum bajo licencia Apache-2.0. No es un modelo entrenado desde cero, sino una receta de compresión tensor a tensor (denominada APEX-I-NanoPlus) aplicada sobre un transformer de mezcla de expertos (MoE) dispersa con 35.505.251.456 parámetros totales y aproximadamente 3.000 millones activos por token, según la nomenclatura A3B del modelo base.
+Qwen3.6-35B-A3B-MTP APEX-I-NanoPlus GGUF es una cuantización artesanal del modelo base Qwen/Qwen3.6-35B-A3B, un transformer disperso de tipo Mixture-of-Experts (MoE) desarrollado por el equipo Qwen de Alibaba. El modelo original cuenta con 35.505.251.456 parámetros totales, de los cuales solo una fracción se activa por token gracias a su arquitectura de 256 micro-expertos distribuidos en 40 capas principales, más un bloque MTP (Multi-Token Prediction) integrado en `blk.40`. Esta versión GGUF, publicada por IsValorum, comprime el modelo hasta un envoltorio de aproximadamente 13 GB manteniendo la fidelidad de enrutamiento y razonamiento.
 
-El problema que resuelve es el de la huella de memoria: el modelo base en BF16 ocupa unos 71,05 GB, mientras que esta release ocupa 13,03 GB en disco y 12,14 GiB en RAM/VRAM con 2,93 BPW medios, a cambio de un incremento de perplejidad en WikiText-2 del 3,84 % (5,5244 frente a 5,32 del BF16). El autor la posiciona como una alternativa calibrada frente a las cuantizaciones sub-3-bit genéricas de la comunidad, que según su comparativa degradan la perplejidad por encima de 5,85.
+La relevancia de esta ficha radica en su enfoque de cuantización selectiva: en lugar de aplicar codebooks uniformes de 2 bits a todos los tensores, el autor preserva los 80 routers principales en `F32` sin comprimir, los dos routers MTP en `BF16`, la cabeza de salida en `Q6_K` y las puertas de atención en `Q8_0`, restringiendo la compresión agresiva a las proyecciones redundantes de gating/up. El resultado es un archivo de 13,03 GB con 2,93 BPW y una perplejidad WikiText-2 de 5,5244, equivalente a un tier Q4_K_M/Q4_K_L, que cabe íntegramente en GPUs de 16 GB de VRAM.
 
-Su relevancia práctica es que permite ejecutar un MoE de 35B con contexto nativo de hasta 256K tokens en GPUs de 24 GB, con 32K-64K en tarjetas de 16 GB, o incluso total o parcialmente en RAM del sistema con velocidades declaradas de 20 a 45 tok/s. Además incorpora archivos MTP (Multi-Token Prediction) opcionales para decodificación especulativa.
+El modelo es multimodal (image-text-to-text), soporta razonamiento, código, capacidades agénticas y 13 idiomas, y se distribuye bajo licencia Apache 2.0, lo que lo hace apto para uso comercial. Está pensado para despliegue en llama.cpp y servidores compatibles con la API de OpenAI, con soporte para streaming desde RAM del sistema cuando la VRAM es insuficiente.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE) dispersa; 40 capas y 256 micro-expertos según la model card del autor |
-| Parametros totales | 35.505.251.456 (35,5 mil millones) |
-| Parametros activos | Aproximadamente 3.000 millones según la nomenclatura A3B del modelo base (dato no confirmado en la información disponible) |
-| Longitud de contexto | Hasta 256K tokens nativos en GPU de 24 GB; 32K-64K en GPU de 16 GB (según la model card) |
-| Tipos de cuantizacion | GGUF APEX-I-NanoPlus, 2,93 BPW medios; existen otras variantes del mismo autor (APEX-I-MiniPlus V2.1, 3,43 BPW) y el base en BF16 (16 BPW) |
-| Idiomas soportados | 13: inglés, chino, español, francés, alemán, portugués, italiano, ruso, japonés, coreano, vietnamita, tailandés y árabe |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (repo de 30,9 GB, que incluye el archivo principal de 13,03 GB y archivos MTP companion opcionales); el modelo base se distribuye en safetensors |
-| Pipeline declarado | image-text-to-text (entrada multimodal de imagen y texto, según el pipeline_tag del repositorio) |
-| Calibración | imatrix (matriz de importancia) del modelo base |
-| Fecha de publicación | 23 de septiembre de 2026 |
+| Arquitectura | Transformer MoE disperso (Qwen3.5-MoE), 40 capas principales, 256 micro-expertos, bloque MTP integrado en `blk.40` |
+| Parametros totales | 35.505.251.456 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF APEX-I-NanoPlus (2,93 BPW promedio); tensores mixtos: routers `F32`/`BF16`, output head `Q6_K`, attention gates `Q8_0`, `ffn_down_exps` en `IQ3_XXS` (3,06 bpw), gating/up en 2 bits guiados por imatrix |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp), con proyector de visión |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE disperso con 40 capas y 256 micro-expertos, con expertos compartidos (shared expert) y capas de atención completa intercaladas. La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens vistos ni si hubo fases de RLHF, DPO o ajuste por preferencias: esos datos corresponden al modelo base Qwen/Qwen3.6-35B-A3B y no se reproducen en la model card de la cuantización.
+El modelo base es un transformer MoE con 40 capas principales y 256 micro-expertos, más un bloque MTP (Multi-Token Prediction) que permite decodificación especulativa interna y predicción de múltiples tokens por paso. La cuantización APEX-I-NanoPlus aplica una asignación tensor por tensor: los 80 tensores `gate_inp`/`gate_inp_shexp` de enrutamiento permanecen en `F32` sin comprimir, los dos routers MTP de `blk.40` en `BF16`, la cabeza de salida en `Q6_K`, las puertas de atención en `Q8_0` y el flujo residual crítico `ffn_down_exps` en `IQ3_XXS` (3,06 bpw). Solo las proyecciones redundantes de gating/up se comprimen a 2 bits, guiadas por la imatrix oficial.
 
-La innovación de esta release es exclusivamente la receta de cuantización APEX-I-NanoPlus, aplicada tensor a tensor en lugar de con una precisión uniforme. Los enrutadores (`gate_inp` y `gate_shexp`) se mantienen en F32 sin comprimir para evitar deriva de routing; la cabeza de salida (`output.weight`) se protege en Q6_K; las puertas de atención se fijan en Q8_0; el flujo residual crítico de la MoE (`ffn_down_exps`) se cuantiza en IQ3_XXS (3,06 bpw); y la compresión agresiva a 2 bits (IQ2_S en gate, IQ2_XXS en up) se restringe a proyecciones redundantes de los expertos centrales (capas 2-37). Los expertos de borde (capas 0-1 y 38-39) reciben un tratamiento más conservador: Q3_K en la proyección down e IQ3_XXS en gate y up. El experto compartido queda en Q4_K y las proyecciones de atención q/k/v en Q4_K, elegidas por su mejor comportamiento en descompresión SIMD sobre CPU.
-
-No se documenta en la información disponible ningún reentrenamiento, ajuste fino ni modificación de los pesos más allá de la cuantización. Los archivos MTP permiten decodificación especulativa con múltiples predicciones de token por paso, aunque el autor no detalla la tasa de aceptación.
+El autor declara que el proceso se realizó con clústeres de cómputo en la nube financiados de su propio bolsillo, e incluye verificación empírica de fidelidad mediante perplejidad WikiText-2 y ARC-Challenge. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF/DPO en el modelo base dentro de la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con etiqueta `conversational` en el repositorio.
-- Razonamiento (etiqueta `reasoning`), con especial atención declarada a la precisión en modo `<think>` y a la ausencia de errores de sintaxis en tareas de código.
-- Generación y edición de código, ámbito donde el autor justifica el reparto de precisión para evitar corchetes y sangrías rotas.
-- Capacidad multimodal de entrada: el pipeline_tag `image-text-to-text` indica soporte de entrada de imagen junto a texto, aunque la model card no detalla el codificador visual.
-- Capacidades multilingües declaradas en 13 idiomas, incluido el español.
-- Decodificación especulativa mediante archivos MTP companion opcionales.
-- Inferencia híbrida CPU/GPU con streaming desde RAM del sistema, con contexto largo.
-- Soporte de tool calling o function calling: no documentado en la información disponible.
-- Modo de razonamiento explícito tipo thinking: mencionado de forma indirecta a través de la etiqueta `reasoning` y de las referencias a la etiqueta `<think>`, sin especificación técnica completa.
-- Soporte de audio o visión de vídeo: no disponible.
+- Generación de texto conversacional multi-turno en 13 idiomas.
+- Razonamiento explícito (modo thinking) y razonamiento multi-paso.
+- Generación y edición de código, con soporte para tareas tipo SWE-bench.
+- Capacidades agénticas: tool calling, function calling y ejecución de flujos multi-paso.
+- Procesamiento multimodal image-text-to-text mediante proyector de visión integrado.
+- Predicción multi-token (MTP) para acelerar la decodificación.
+- Compatibilidad con endpoints tipo OpenAI a través de servidores llama.cpp.
+- Plantilla de chat endurecida para uso agéntico y control del esfuerzo de razonamiento.
 
 ## Casos de uso
 
-- Despliegue local en GPU de 16 GB: con `-ngl 99` en una RTX 4080 o RTX 4070 Ti Super, la release deja más de 3 GB de VRAM libre para contexto, lo que permite trabajar con ventanas de 32K tokens sin recurrir a offload parcial.
-- Contextos muy largos en GPU de 24 GB: en RTX 3090, 4090 o 5090 se declara soporte nativo de 256K tokens, adecuado para análisis de documentación extensa, auditoría de repositorios completos o resumen de expedientes largos.
-- Inferencia en RAM del sistema: en equipos sin GPU suficiente, el modelo puede ejecutarse total o parcialmente desde RAM DDR4 o DDR5 (6000+ MT/s) a 20-45 tok/s, gracias a las proyecciones de atención en Q4_K y a la preservación de las down-projections en IQ3_XXS, que reducen los bloqueos de descompresión AVX2.
-- Sustitución del modelo base en entornos con memoria restringida: pasar de 71,05 GB en BF16 a 13,03 GB permite alojar el modelo en un único nodo de desarrollo o en un servidor pequeño, aceptando una pérdida medida de perplejidad del 3,84 %.
-- Asistencia de programación en local: la receta preserva la cabeza de salida en Q6_K y las puertas de atención en Q8_0, lo que según el autor reduce los errores de sintaxis y el código mal indentado típicos de las cuantizaciones sub-3-bit uniformes. Encaja en flujos de trabajo de autocompletado o revisión de código offline.
-- Atención al cliente multilingüe: con 13 idiomas declarados y etiqueta conversacional, puede gestionar diálogos multi-turno en español, inglés, francés o alemán, aunque la cobertura real por idioma no está medida.
-- Procesamiento de documentos con imagen y texto: el pipeline declarado es image-text-to-text, lo que abre la puerta a tareas de extracción o descripción sobre capturas, formularios escaneados o gráficos acompañados de instrucciones textuales.
-- Servicio de baja latencia con decodificación especulativa: los archivos MTP permiten acelerar la generación en escenarios de batch pequeño donde la latencia por token es crítica, por ejemplo asistentes interactivos.
+- Asistente de código en producción: el modelo puede integrarse en pipelines de CI/CD para revisión de parches y generación de tests, aprovechando su soporte de tool calling y su entrenamiento orientado a SWE-bench, con un footprint de 13 GB que cabe en un runner con GPU de 16 GB.
+- Agente autónomo de resolución de incidencias: la combinación de razonamiento multi-paso, MTP y plantilla agéntica permite encadenar llamadas a herramientas y mantener estado entre pasos sin salir de la ventana de contexto del servidor local.
+- Atención al cliente multilingüe: al cubrir 13 idiomas (incluido español, catalán no listado, pero sí fr/de/pt/it/ru/ja/ko/vi/th/ar), puede gestionar conversaciones multi-turno en centros de soporte con requisitos de soberanía de datos, ejecutándose on-premise.
+- Análisis de documentos con imagen: al ser image-text-to-text, permite extraer información de capturas, diagramas y formularios escaneados en flujos de back-office, con el proyector de visión cargado vía `llama-cli` o servidor compatible.
+- Despliegue en estaciones de trabajo con 16 GB de VRAM: gracias a los 12,14 GiB de huella en memoria, es viable en RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080 o GPUs de portátil con 16 GB, manteniendo contexto amplio en VRAM según el autor.
+- Streaming desde RAM del sistema: para equipos sin GPU dedicada suficiente, el diseño permite inferencia completa o parcial en RAM DDR4/DDR5, útil en laboratorios y entornos educativos con hardware heterogéneo.
+- Evaluación de investigación en cuantización: sirve como referencia reproducible para estudiar el impacto de la compresión selectiva de tensores en modelos MoE, con métricas publicadas de perplejidad y ARC-Challenge.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos cuantitativos publicados en la información disponible son de perplejidad en WikiText-2, facilitados por el propio autor de la cuantización:
-
-| Cuantización | Tamano en disco | Huella RAM/VRAM | BPW medio | Perplejidad WikiText-2 | Equivalencia de calidad |
+| Modelo / cuantización | Tamano disco | Huella RAM/VRAM | BPW medio | Perplejidad WikiText-2 | Tier de calidad |
 |---|---|---|---|---|---|
-| Base sin cuantizar BF16 | ~71,05 GB | ~66,18 GiB | 16,00 | ~5,32 | Línea base de precisión completa |
-| APEX-I-MiniPlus V2.1 | 15,23 GB | 14,18 GiB | 3,43 | 5,3693 ± 0,12528 (+0,93 %) | Equivalente a Q6_K casi sin pérdida |
-| APEX-I-NanoPlus (esta release) | 13,03 GB | 12,14 GiB | 2,93 | 5,5244 ± 0,12916 (+3,84 %) | Equivalente a Q4_K_M sólido |
-| IQ2_S comunitaria genérica | ~12,2 GB | ~11,4 GiB | 2,56 | > 5,85 (degradada) | Inestable, con picos de sintaxis |
+| BF16 sin cuantizar (base) | ~71,05 GB | ~66,18 GiB | 16,00 | ~5,32 | Referencia completa |
+| APEX-I-MiniPlus V2.1 | 15,23 GB | 14,18 GiB | 3,43 | 5,3693 ± 0,12528 (+0,93%) | Q5_K_L (rozando Q6_K) |
+| APEX-I-NanoPlus (esta ficha) | 13,03 GB | 12,14 GiB | 2,93 | 5,5244 ± 0,12916 (+3,84%) | Q4_K_M / Q4_K_L |
+| IQ2_S comunitario genérico | ~12,2 GB | ~11,4 GiB | 2,56 | > 5,85 (degradado) | Inestable / picos de sintaxis |
 
-No se han publicado resultados de benchmarks en la información disponible para MMLU, HumanEval, GSM8K ni otras evaluaciones de capacidades. Tampoco hay métricas de throughput medidas de forma independiente sobre esta release concreta: los valores de 20-45 tok/s proceden del propio autor y los de 80 tok/s en 12 GB de VRAM corresponden a un artículo externo sobre el modelo base con decodificación especulativa MTP, no a esta cuantización específica.
+ARC-Challenge (0-shot, 1.172 preguntas): aproximadamente 95,75% para APEX-I-NanoPlus.
 
 ## Requisitos de hardware
 
-- Huella de memoria: 13,03 GB en disco y 12,14 GiB en RAM/VRAM para el archivo principal, según la model card.
-- GPU de 16 GB (RTX 4080, RTX 4070 Ti Super): offload completo con `-ngl 99` y contexto nativo de 32K a 64K; el autor indica que quedan más de 3 GB de VRAM libres para 32K de contexto.
-- GPU de 24 GB (RTX 3090, RTX 4090, RTX 5090): contexto nativo de hasta 256K tokens.
-- GPU de 12 GB: no hay datos de esta release, pero un artículo externo sobre el modelo base reporta 80 tok/s en 12 GB de VRAM usando decodificación especulativa MTP; el dato no está verificado para APEX-I-NanoPlus.
-- Ejecución en CPU y RAM del sistema: soportada de forma completa o parcial, con 20-45 tok/s según procesador y ancho de banda de memoria (DDR4 de doble canal o DDR5 a 6000+ MT/s).
-- Opciones de despliegue: llama.cpp es el runtime de referencia por el formato GGUF y la etiqueta `llama.cpp`; el repositorio incluye la etiqueta `endpoints_compatible`. El uso de vLLM, TGI u Ollama no está documentado en la información disponible para esta release, aunque el formato GGUF permite su uso en el ecosistema basado en llama.cpp. La decodificación especulativa requiere un runtime con soporte de MTP y los archivos companion correspondientes.
-- Latencia y throughput estimados: 20-45 tok/s en streaming desde RAM del sistema; el autor afirma que con memoria DDR5 rápida el rendimiento puede acercarse al de la ejecución íntegra en VRAM. No hay cifras de time-to-first-token ni de throughput en batch.
+- VRAM estimada: 12,14 GiB de huella en memoria; el archivo en disco ocupa 13,03 GB. Con contexto amplio y caché KV, se recomienda planificar 14-16 GB de VRAM para uso cómodo.
+- GPU recomendadas: RTX 4060 Ti 16 GB, RTX 4070 Ti Super 16 GB, RTX 4080/4080 Super 16 GB, RTX 4090 24 GB, RTX 5090, A100 40/80 GB, H100.
+- Cabe en GPU consumer de 16 GB y superiores; en GPUs de 12 GB requerirá offload parcial a RAM del sistema.
+- Opciones de despliegue: llama.cpp (`llama-cli` con proyector de visión, `llama-server` con API compatible OpenAI), y cualquier frontend que consuma GGUF vía llama.cpp. No se menciona soporte nativo en vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponible de forma numérica; el autor indica que dependen del procesador, el ancho de banda de memoria y la configuración DDR4/DDR5 en inferencia por RAM, y publica una sección de benchmarks de throughput con offload para RTX 30/40/50 sin cifras en el extracto disponible.
 
 ## Comparativa con modelos similares
 
-La comparación más directa es entre variantes de cuantización del mismo modelo base, ya que no se dispone de datos de otros modelos de la misma categoría en la información proporcionada:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.6-35B-A3B (base) | 35,5 B totales | no disponible | Apache 2.0 | safetensors | Referencia BF16, ~71 GB |
+| APEX-I-MiniPlus V2.1 (misma familia) | 35,5 B totales | no disponible | Apache 2.0 | GGUF | 15,23 GB, 3,43 BPW, perplejidad 5,3693 |
+| APEX-I-NanoPlus (esta ficha) | 35,5 B totales | no disponible | Apache 2.0 | GGUF | 13,03 GB, 2,93 BPW, perplejidad 5,5244 |
+| IQ2_S comunitario genérico | 35,5 B totales | no disponible | Apache 2.0 | GGUF | ~12,2 GB, 2,56 BPW, perplejidad >5,85, inestable |
 
-| Modelo o variante | Parametros | Contexto | Perplejidad WikiText-2 | Tamano | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| APEX-I-NanoPlus (esta release) | 35,5B totales / ~3B activos | Hasta 256K | 5,5244 | 13,03 GB (2,93 BPW) | Apache-2.0 | GGUF en Hugging Face |
-| APEX-I-MiniPlus V2.1 | 35,5B totales / ~3B activos | Hasta 256K | 5,3693 | 15,23 GB (3,43 BPW) | Apache-2.0 | GGUF en Hugging Face |
-| Qwen3.6-35B-A3B BF16 (base) | 35,5B totales / ~3B activos | Hasta 256K | ~5,32 | ~71,05 GB (16 BPW) | Apache-2.0 | safetensors en Hugging Face |
-| IQ2_S comunitaria genérica | No disponible | No disponible | > 5,85 | ~12,2 GB (2,56 BPW) | No disponible | No disponible |
-| Qwen3.6-35B-A3B-APEX-MTP (mudler) | No disponible | No disponible | No disponible | 20,7 GB | No disponible | GGUF en ModelScope |
-
-Existen otras builds APEX del mismo modelo base publicadas por terceros (por ejemplo, la variante heretic de SC117), pero la información disponible no incluye sus especificaciones ni métricas comparables.
+No se dispone de datos de benchmarks comparativos frente a otros modelos de la misma categoría (por ejemplo, otros MoE de ~35 B) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Pérdida de calidad medible: el propio autor reporta un aumento del 3,84 % en la perplejidad de WikiText-2 frente al BF16, con una desviación de ±0,12916. En tareas de razonamiento de cadena larga o de código, esa pérdida puede manifestarse de forma no lineal.
-- Compresión agresiva en partes del modelo: aunque los enrutadores quedan en F32 y la cabeza de salida en Q6_K, los expertos centrales se comprimen con IQ2_S e IQ2_XXS, los más agresivos del estándar llama.cpp.
-- Los datos de calidad y rendimiento proceden del autor de la cuantización, no de una evaluación independiente. La evaluación independiente mencionada en los resultados de búsqueda (investigador zephel01 en una RTX 5090 con llama.cpp CUDA b11027 y FlashAttention) corresponde a APEX-I-MiniPlus, no a esta release NanoPlus.
-- Adopción muy limitada en el momento del registro: 0 descargas y 1 like, lo que implica ausencia de validación comunitaria y de reportes de fallos.
-- Riesgo de alucinación: inherente al modelo base, agravado por la cuantización y no cuantificado en la información disponible. No hay evaluaciones de veracidad, sesgo o toxicidad.
-- Cobertura multilingüe no medida: aunque se declaran 13 idiomas, no existe ninguna evaluación por idioma; el comportamiento real en español, árabe o tailandés es desconocido.
-- Contexto largo declarado pero no evaluado: el soporte de 256K tokens se afirma por capacidad del modelo base y de la VRAM disponible, sin datos de degradación de calidad en ventanas muy largas sobre esta cuantización.
-- Soporte de tool calling, function calling y uso agéntico no documentado: si el pipeline depende de estas capacidades, deben validarse antes de llevarlo a producción.
-- Licencia: Apache-2.0, que permite uso comercial, pero conviene verificar los términos del modelo base Qwen/Qwen3.6-35B-A3B y cualquier condición adicional del repositorio.
-- Dependencia del runtime: el uso de las ventajas declaradas (streaming en RAM sin bloqueos AVX2, MTP, gestión de contexto) depende de la versión de llama.cpp y de la configuración de flags; el autor no especifica una versión mínima en el fragmento disponible.
-- Formato de pesos no estándar en el ecosistema: la nomenclatura APEX-I-NanoPlus es propia del autor y puede dificultar comparaciones directas con cuantizaciones estándar como Q4_K_M o IQ3_XXS puras.
+- La cuantización a 2,93 BPW introduce una degradación medible: +3,84% de perplejidad frente al BF16, aceptable para generación general pero no para tareas que exijan máxima fidelidad numérica o de código crítico.
+- El autor advierte de que las cuantizaciones sub-3-bit genéricas provocan picos de perplejidad, errores de sintaxis y corchetes de código roto; aunque esta versión mitiga el problema con asignación selectiva, persiste riesgo en generación de código complejo.
+- Riesgo de alucinación inherente a los modelos de razonamiento; no se publican tasas de alucinación específicas.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Limitaciones de contexto e idioma: la longitud de contexto no se especifica; los 13 idiomas listados no incluyen variantes regionales ni lenguas minoritarias.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el modelo base ni sobre la cuantización.
+- El autor incluye un aviso crítico sobre sintaxis de código y repeat penalty para evitar el intercambio de caracteres; es necesario ajustar los parámetros de generación recomendados por Qwen para evitar degradación.
+- El despliegue en RAM del sistema puede degradar sustancialmente el throughput según el ancho de banda de memoria; no se publican cifras de latencia en el extracto disponible.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-NanoPlus-GGUF
+- Hugging Face: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Colección APEX-I-NanoPlus del autor: https://huggingface.co/collections/IsValorum/apex-i-nanoplus-6ab41467c988a1b1cb9b83bc
-- Release previa del mismo autor (APEX-I-MiniPlus V2.1): https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
-- Variante APEX de terceros sobre el mismo base (SC117): https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF
-- Ficha en local-ai-zone: https://local-ai-zone.github.io/models/qwen3-6-35b-a3b-apex-mtp.html
-- Mirror en ModelScope (mudler): https://www.modelscope.cn/models/mudler/Qwen3.6-35B-A3B-APEX-MTP-GGUF
-- Artículo sobre MTP y decodificación especulativa: https://dasroot.net/posts/2026/05/qwen-36-35b-a3b-80-tok-s-12gb-vram-mtp-speculative-decoding/
+- Versión de mayor precisión APEX-I-MiniPlus V2.1: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
+- Apoyo al autor: https://ko-fi.com/isvalorum

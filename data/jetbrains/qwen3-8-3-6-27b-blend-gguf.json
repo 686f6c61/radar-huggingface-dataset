@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 43,
-  "downloads_30d": 15913,
+  "downloads_30d": 15579,
   "trending_score": 11,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -53,9 +53,9 @@
       "snippet": "JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the …"
     },
     {
-      "title": "JetBrains : Des outils essentiels pour les équipes et les développeurs ...",
-      "url": "https://www.jetbrains.com/fr-fr/",
-      "snippet": "JetBrains est un éditeur de logiciels innovant, spécialisé dans la création d'outils de développement intelligents, tels qu'IntelliJ IDEA, …"
+      "title": "JetBrains: 软件开发者和团队的必备工具",
+      "url": "https://www.jetbrains.com/zh-cn/",
+      "snippet": "经过验证的合规性与安全性 JetBrains 工具遵循行业领先的安全标准，包括 SOC 2 认证，确保贵组织的数据得到保护，并且我们的产 …"
     },
     {
       "title": "JetBrains - Wikipedia",
@@ -68,9 +68,9 @@
       "snippet": "JetBrains Account provides easy access to your JetBrains products and makes upgrades and migration to new hardware smooth."
     },
     {
-      "title": "JetBrains — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/JetBrains",
-      "snippet": "Historique La société est née de l'association de Sergey Dmitriev, Eugeny Belyaev et Valentin Kipiatkov en février 20006. En 2012, …"
+      "title": "JetBrains_百度百科",
+      "url": "https://baike.baidu.com/item/JetBrains/7502758",
+      "snippet": "JetBrains是一家总部位于捷克的私人持股软件开发公司，成立于2000年，由Sergey Dmitriev、Eugene Belyaev和Valentin Kipiatkov共 …"
     }
   ]
 }

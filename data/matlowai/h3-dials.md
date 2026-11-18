@@ -2,104 +2,91 @@
 
 ## Resumen
 
-H3-Dials es un conjunto de ficheros de steering («dials») creados por MATLOWAI para el modelo de generación de vídeo MiniMax H3 de MiniMaxAI. No se trata de un modelo nuevo ni de un fine-tune tradicional: cada dial es un fichero de unos 14 KB, calculado sin entrenamiento a partir de pares de prompts, que define una dirección en el espacio de prompts procesados de H3. Al aplicarlo con una intensidad positiva o negativa, desplaza cada generación hacia uno u otro lado del par (por ejemplo, de «escena congelada» a «movimiento enérgico», o hacia distintos tonos de villanía).
+H3-Dials es una colección de archivos de direccionamiento (steering) de aproximadamente 14 KB cada uno, diseñados para el modelo de generación de vídeo MiniMax-H3. No se trata de un modelo en sí, sino de un conjunto de "dials" que permiten modificar el comportamiento de MiniMax-H3 en tiempo de inferencia sin necesidad de reentrenamiento. Cada dial representa una dirección en el espacio de prompts procesados del modelo base y actúa como un control deslizante: valores negativos empujan la generación hacia un extremo del par de prompts, mientras que los positivos la empujan hacia el otro.
 
-El problema que resuelve es la falta de control fino en MiniMax H3: al ser un modelo destilado de guidance (sin CFG), los prompts negativos no funcionan, y los LoRA exigen entrenamiento. Los dials devuelven ese control bidireccional en ambos sentidos, sin entrenar nada y en alrededor de un minuto de cómputo por dial. Son compatibles con el modelo base de H3 y con Pika H3 Flex (6 pasos), y se aplican mediante los nodos de ComfyUI del repositorio ComfyUI-Dials.
+El desarrollo corre a cargo de MATLOWAI y se integra en el ecosistema ComfyUI a través de los paquetes ComfyUI-MAINodes y ComfyUI-Dials. La propuesta resuelve un problema práctico: ajustar el estilo, el movimiento o el tono de un vídeo generado sin reentrenar el modelo ni modificar los pesos originales, simplemente cargando un archivo de pocos kilobytes y aplicándolo con una fuerza ajustable. Los dials se construyen a partir de pares de prompts contrastados y no requieren entrenamiento, lo que reduce drásticamente el coste de personalización.
 
-El repositorio incluye un dial de movimiento (freeze ↔ zoomies), una versión LoRA equivalente y un pack de ocho dials de «villanía» (siniestro, inquietante, frío, desquiciado, seductor, corrupto, amenazante y pícaro). Es una herramienta creativa de nicho, relevante para quien ya genere vídeo con H3 en ComfyUI y quiera modular atmósfera y movimiento de forma determinista y reproducible.
+El modelo base, MiniMax-H3, es un generador de vídeo de MiniMaxAI con capacidad de audio integrado, y H3-Dials actúa como una capa de control sobre él. La relevancia actual reside en que ofrece control fino y barato sobre la generación de vídeo, con soporte para curvas temporales que modulan la fuerza del dial a lo largo del clip.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Ficheros de steering (direcciones en el espacio de prompts procesados de MiniMax H3), no un modelo |
-| Parametros totales | ~14 KB por dial (diferencia de sesgo sobre `condition_proj` en la variante LoRA) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (depende del modelo base MiniMax H3) |
-| Tipos de cuantizacion | no aplicable (no son pesos de modelo) |
-| Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license-agreement (heredada de MiniMaxAI/MiniMax-H3) |
-| Formato de pesos | safetensors (dials y variante LoRA) |
+| Arquitectura | Archivos de direccionamiento (steering) sobre MiniMax-H3; no es un modelo independiente |
+| Parámetros totales | No disponible (los dials pesan ~14 KB cada uno; el modelo base no declara parámetros en la información disponible) |
+| Parámetros activos | No disponible |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | No disponible |
+| Licencia | minimax-h3-community-license-agreement |
+| Formato de pesos | safetensors (dials y hooks); también archivos LoRA (`condition_proj` bias diff) |
 
 ## Arquitectura y entrenamiento
 
-Un dial es un vector de dirección con signo que se suma a cada token del prompt en el punto donde el DiT de H3 lee el texto. Se calcula a partir de pares de prompts (por ejemplo, «sujeto quieto/posando/congelado» frente a «sujeto corriendo/saltando/moviéndose con energía») sin ningún paso de entrenamiento ni gradiente. El dial de movimiento se construyó con 24 pares (8 sujetos × 3 formulaciones), con un acuerdo entre pares de 0,78. Existen dos formatos: dial tipo hook (se aplica tras el text refiner de H3, mediante los nodos Load Dial → Apply Dial de ComfyUI-Dials) y variante LoRA (diferencia de sesgo en `condition_proj`, cargable con el nodo estándar Load LoRA en modo model-only, con aproximadamente 0,6× del efecto por unidad, por lo que se recomienda usar ~1,6× de intensidad).
+Los dials no son un transformer ni un modelo generativo autónomo. Son vectores de dirección calculados a partir de pares de prompts contrastados (por ejemplo, "quieto/posando/congelado" frente a "corriendo/saltando/moviéndose con energía") en el espacio de prompts procesados de MiniMax-H3. No hay entrenamiento: la dirección se extrae directamente de la diferencia entre las representaciones de ambos prompts. Cada dial se aplica como un hook posterior al refinador de texto de H3 o, en el caso de `h3_motion_lora.safetensors`, como un archivo LoRA que modifica el sesgo de `condition_proj`.
 
-El pack de villanía se generó con «debias» activado, de modo que cada sabor es una dirección propia independiente del movimiento. En cuanto al modelo base, MiniMax H3 es un sistema de generación de vídeo con DiT y generación de audio, guidance-distilled (sin CFG), lo que explica por qué los prompts negativos no operan y por qué los dials recuperan ese tipo de control. Los dials también funcionan sobre Pika H3 Flex (6 pasos) sin cambios, y el repositorio incluye flujos de trabajo con «de-rope» (re-renderizado ralentizado de tramos que se mueven demasiado rápido para el frame rate, manteniendo el audio original).
+La innovación principal es el control temporal: en ComfyUI-MAINodes, cada dial puede seguir una curva de tiempo a lo largo del clip, de modo que su fuerza varíe fotograma a fotograma. El ejemplo documentado de `h3_impact_frame` a fuerza 4.5 muestra que mantener el valor constante durante todo el clip transforma la escena en un dibujo a tinta, mientras que aplicarlo como un pulso de 0.5 s en el momento del impacto produce unos seis fotogramas de siluetas negras en un estallido de tinta y luego devuelve la escena al dojo. Los pares de prompts están disponibles en `example_pairs/` y algunos dials declaran métricas de concordancia entre pares (por ejemplo, 0.78 para el dial de movimiento construido con 24 pares).
 
 ## Capacidades
 
-- Steering sin entrenamiento del estilo y la atmósfera de vídeos generados con MiniMax H3, con intensidad ajustable como un deslizador (valores negativos y positivos).
-- Control de movimiento: de escenas casi congeladas tipo cinemagraph (0,05× del movimiento base en −2) a escenas con zoom acelerado (≈2,7× en +2).
-- Ocho direcciones de «villanía» independientes: siniestro, inquietante, frío, desquiciado, seductor, corrupto, amenazante y pícaro, con rango útil de +1 a +2 y extremo en +4.
-- Compatibilidad con Pika H3 Flex (6 pasos) sin modificación, conservando prompt y personajes; rango útil allí de +0,5 a +1.
-- Integración con ComfyUI mediante los nodos ComfyUI-Dials (Load Dial → Apply Dial) o carga como LoRA estándar.
-- Creación de dials propios a partir de pares de prompts en aproximadamente un minuto, con los pares de ejemplo incluidos en `example_pairs/`.
-- Flujos de trabajo preparados con de-rope para Pika H3 Flex, con y sin de-rope.
+- Control de movimiento: el dial `h3_motion` permite desde un movimiento casi congelado (valor −2, aproximadamente 0.05× del movimiento base) hasta un zoom generalizado (valor +2, aproximadamente 2.7× del movimiento base).
+- Control de estilo y tono: el paquete "Villainy" ofrece ocho direcciones de maldad (siniestro, inquietante, frío, desquiciado, seductor, entre otras) con punto óptimo entre +1 y +2.
+- Control de bordes en movimiento: `h3_blur_moving_edges_hook` permite pasar de bordes duros y nítidos (negativo) a bordes suaves y difuminados (positivo) en elementos en movimiento.
+- Modulación temporal: cada dial puede seguir una curva de tiempo sobre el clip mediante el Dial Rack de MAINodes.
+- Compatibilidad con LoRA: la variante `h3_motion_lora` se carga con el nodo estándar Load LoRA (model only) y produce aproximadamente 0.6× del efecto por unidad, requiriendo ~1.6× de fuerza para igualar al hook.
+- Integración con ComfyUI: los dials se colocan en `ComfyUI/models/loras/dials/` y se aplican con Load Dial → Apply Dial o con una fila del Dial Rack.
+- No requiere entrenamiento ni ajuste de pesos del modelo base.
 
 ## Casos de uso
 
-- Cinemagraphs y planos casi estáticos: aplicando el dial de movimiento en −2 se obtienen escenas con un 0,05× del movimiento base, útil para fondos animados sutiles o retratos congelados.
-- Secuencias de acción intensa: con el dial de movimiento en +1 a +2 (≈2,7× de movimiento en el modelo base) se generan escenas con mucha actividad manteniendo el mismo prompt y semilla.
-- Dirección de arte de villanos: los ocho dials del pack permiten modular la atmósfera de un personaje (menaza con sombras, sonrisas inquietantes, frialdad calculadora, seducción siniestra) sin reescribir el prompt.
-- Generación rápida de borradores con Pika H3 Flex: en 6 pasos y con de-rope, un clip a 1280x704 tarda unos 5,5–6 minutos en una RTX PRO 6000 Max-Q, comparable a un render de 25 pasos del modelo base.
-- Recuperación del control tipo prompt negativo: como H3 no tiene CFG, los dials ofrecen control bidireccional equivalente para suprimir o reforzar cualidades.
-- Prototipado de dials personalizados: un equipo puede crear direcciones propias (por ejemplo, «épico» frente a «cotidiano») a partir de sus pares de prompts en un minuto, sin GPU de entrenamiento.
-- Comparativas A/B reproducibles: al depender solo de la semilla y la intensidad, los dials permiten aislar el efecto de una dirección con el mismo prompt y semilla.
+- Ajuste de intensidad de movimiento en clips generados: aplicar `h3_motion` con valores negativos para obtener cinemagraphs o planos casi estáticos, o con valores positivos para escenas de acción con mayor dinamismo, sin regenerar el vídeo desde cero.
+- Dirección de arte en postproducción: usar el dial de bordes (`h3_blur_moving_edges_hook`) para suavizar o endurecer los contornos de elementos en movimiento según el look deseado, con control fino mediante el valor del dial.
+- Creación de atmósferas narrativas: aplicar los dials del paquete Villainy para inclinar una escena hacia tonos siniestros, inquietantes o fríos en proyectos de ficción, ajustando la fuerza entre +1 y +2 para evitar extremos.
+- Efectos puntuales sincronizados: emplear curvas temporales con `h3_impact_frame` para insertar un estallido visual de pocos fotogramas en el momento de un impacto, manteniendo la escena original en el resto del clip.
+- Iteración rápida en flujos ComfyUI: cargar varios dials en una misma fila del Dial Rack para combinar direcciones (por ejemplo, movimiento y tono) sobre un mismo render, reduciendo el número de generaciones necesarias para explorar variantes.
+- Prototipado de estilos para clientes: generar una misma toma con distintos valores de un dial para presentar opciones de estilo o intensidad sin reentrenar ni duplicar el modelo base, gracias al reducido tamaño de los archivos (~14 KB).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) por no ser aplicables a este artefacto. Los datos cuantitativos del propio repositorio son:
-
-| Metrica | Valor |
-|---|---|
-| Acuerdo entre pares del dial de movimiento | 0,78 |
-| Movimiento relativo en dial −2 | 0,05× del base |
-| Movimiento relativo en dial +2 | ≈2,7× del base |
-| Efecto de la variante LoRA | ≈0,6× por unidad (usar ~1,6× de intensidad) |
-| Movimiento extra en Pika con dial +0,5 / +1,0 | +20 % / +23 % (movimiento de cámara eliminado) |
-| Whisper WER del audio con dial `evil_sinister` a +2 | 0,84 (frente a 0,00 en base) |
-| Tiempo de render, Pika con de-rope, 1280x704 | ≈5,5–6 min (RTX PRO 6000 Max-Q) |
-| Tiempo de render, base 25 pasos sin de-rope, 1280x704 | ≈5,5 min |
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye métricas cualitativas y de medición interna: el dial de movimiento declara una concordancia entre pares de 0.78 sobre 24 pares; el dial siniestro reporta un error de palabra de Whisper de 0.84 a fuerza +2 frente a 0.00 en base; y se documenta que un clip de Pika H3 Flex con de-rope tarda aproximadamente lo mismo que un render base de 25 pasos (unos 6 minutos a 1280×704 en una RTX PRO 6000 Max-Q).
 
 ## Requisitos de hardware
 
-- No requieren entrenamiento ni GPU dedicada para crearse: un dial se calcula en aproximadamente un minuto.
-- Para inferencia, los requisitos son los del modelo base MiniMax H3 o Pika H3 Flex en ComfyUI; no disponible un detalle de VRAM específico para los dials (ocupan ~14 KB).
-- Referencia del autor: renders a 1280x704 en una RTX PRO 6000 Max-Q, con clips de Pika con de-rope en unos 5,5–6 minutos.
-- Despliegue: ComfyUI con los nodos ComfyUI-Dials (github.com/matlowai/ComfyUI-Dials); la variante LoRA se carga con el nodo estándar Load LoRA (model only).
-- Latencia y throughput: no disponible más allá de los tiempos de render indicados arriba.
+- VRAM estimada para inferencia: no disponible para los dials (son archivos de ~14 KB); depende del modelo base MiniMax-H3, cuyos requisitos no se detallan en la información proporcionada.
+- GPU recomendadas: la model card menciona una RTX PRO 6000 Max-Q para renders de ejemplo a 1280×704; no se especifican otras GPU.
+- ¿Cabe en GPU de consumo? No disponible.
+- Opciones de despliegue: ComfyUI con los paquetes ComfyUI-MAINodes o ComfyUI-Dials; los dials se colocan en `ComfyUI/models/loras/dials/`.
+- Latencia y throughput: se documenta un render de Pika H3 Flex (6 pasos) con de-rope de aproximadamente 6 minutos a 1280×704 en una RTX PRO 6000 Max-Q, comparable a un render base de 25 pasos.
 
 ## Comparativa con modelos similares
 
-| Caracteristica | H3-Dials (steering) | LoRA entrenado | Prompt negativo (modelos con CFG) |
-|---|---|---|---|
-| Entrenamiento | Ninguno (calculado de pares de prompts) | Requiere entrenamiento | No aplica |
-| Tamano | ~14 KB por dial | Decenas–cientos de MB | No aplica |
-| Control bidireccional | Sí (signo del dial) | Sí, vía intensidad | Solo supresión |
-| Compatible con H3 (sin CFG) | Sí | Sí | No (H3 es guidance-distilled) |
-| Requiere referencias visuales | No | No | No |
-| Ecosistema | ComfyUI-Dials | Cargadores LoRA estándar | Nativos del sampler |
-
-No hay otros repositorios de dials comparables publicados; no disponible una comparativa con artefactos equivalentes de terceros.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (archivos de steering para generación de vídeo).
 
 ## Limitaciones y advertencias
 
-- Los dials del pack de villanía se han verificado solo en un conjunto reducido de escenas; el propio autor los presenta como herramientas creativas, no como controles fiables en producción.
-- El dial `evil_sinister` degrada gravemente el audio: Whisper WER de 0,84 a +2 frente a 0,00 en base; conviene mantenerlo bajo si hay diálogo.
-- El dial `evil_unhinged` produce gritos y gestos de intimidación agresiva incluso a +2 (sin gore observado), lo que exige revisión de contenido.
-- En Pika H3 Flex, intensidades altas degradan la fidelidad: +1,5/+2 restagean la escena y morfan personajes, y +3 pierde el prompt.
-- La variante LoRA tiene ≈0,6× del efecto por unidad; hay que compensar la intensidad (~1,6×).
-- Licencia: hereda la minimax-h3-community-license-agreement de MiniMax H3; revisar sus términos antes de cualquier uso comercial.
-- Algunos vídeos de demostración usaron una redacción anterior del prompt de ejemplo; re-renderizados con la redacción actual están pendientes.
-- Riesgo de sesgo/alucinación: no disponible (no es un modelo de lenguaje); los efectos sobre contenido fuera de los escenarios probados no están documentados.
+- Los dials son experimentales y no están calibrados como controles precisos: el dial de bordes se describe explícitamente como "no un control calibrado de desenfoque de movimiento".
+- Valores extremos pueden alterar la identidad del sujeto o desplazar el estilo hacia un render pictórico.
+- El dial `h3_evil_sinister` tiende a romper el audio: la voz se degrada (error de palabra de Whisper de 0.84 a +2 frente a 0.00 en base).
+- El dial `h3_evil_unhinged` inclina la escena hacia agresividad e intimidación incluso a +2; la model card advierte de su comportamiento.
+- La pose, el tiempo y el estilo pueden cambiar con la aplicación de un dial, incluso en valores moderados.
+- La licencia es la minimax-h3-community-license-agreement, cuyos términos para uso comercial no se detallan en la información disponible; es necesario consultar el enlace de licencia.
+- No se declaran idiomas soportados ni sesgos conocidos en la información proporcionada.
+- La fuerza recomendada es específica de cada dial y de cada configuración; los valores probados (como −6 en el dial de bordes) son sondas de prueba, no recomendaciones universales.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/MATLOWAI/H3-Dials
+- Hugging Face: https://huggingface.co/MATLOWAI/H3-Dials
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
-- Nodos de ComfyUI: https://github.com/matlowai/ComfyUI-Dials
-- Workflows de Pika H3 Flex + Dials: https://github.com/matlowai/ComfyUI-Dials#pika-h3-flex--dials
-- Comparativa «qué es un dial»: https://github.com/matlowai/ComfyUI-Dials#what-a-dial-is-and-what-it-is-not
+- Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- Repositorio ComfyUI-MAINodes: https://github.com/matlowai/ComfyUI-MAINodes
+- Directorio de dials en MAINodes: https://github.com/matlowai/ComfyUI-MAINodes/tree/main/dials
+- Guía de Dials: https://github.com/matlowai/ComfyUI-MAINodes/blob/main/dials/README.md
+- Ejemplo simple: https://github.com/matlowai/ComfyUI-MAINodes/blob/main/examples/dials/dials_simple_pika_derope.json
+- ComfyUI-Dials: https://github.com/matlowai/ComfyUI-Dials
+- Páginas de Dials: https://matlowai.github.io/ComfyUI-Dials/
+- Dials on a Curve: https://matlowai.github.io/ComfyUI-Dials/curves.html
+- Lab: https://matlowai.github.io/ComfyUI-Dials/lab.html
+- Word Dials: https://matlowai.github.io/ComfyUI-Dials/words.html
+- First Frame: https://matlowai.github.io/ComfyUI-Dials/firstframe.html
+- MOSS-Image: https://matlowai.github.io/ComfyUI-Dials/moss.html
 - Pika H3 Flex: https://huggingface.co/Pika-Labs/Pika-H3-Flex

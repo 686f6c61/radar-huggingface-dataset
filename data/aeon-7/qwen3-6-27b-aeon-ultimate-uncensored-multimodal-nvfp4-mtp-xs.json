@@ -56,7 +56,7 @@
     "region:us"
   ],
   "likes": 63,
-  "downloads_30d": 41385,
+  "downloads_30d": 51283,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -78,14 +78,24 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Iriun - Webcam",
-      "url": "https://iriun.com/",
-      "snippet": "Iriun Apps Use your phone's camera as a wireless webcam in PC or Mac. Install Webcam for Windows, Mac or Linux, download Iriun …"
+      "title": "Aeon | a world of ideas",
+      "url": "https://aeon.co/",
+      "snippet": "Aeon is a magazine of ideas and culture. We publish in-depth essays from the world’s most incisive and ambitious thinkers, and a …"
     },
     {
-      "title": "Iriun",
-      "url": "https://iriun.com/webcam-privacy.txt",
-      "snippet": "PRIVACY POLICY This privacy policy governs your use of the software application \"Iriun Webcam\" (\"Application\") for mobile devices, …"
+      "title": "AEON – Un domaine de montagne unique au monde",
+      "url": "https://www.aeon-montagnes.com/",
+      "snippet": "Découvrez AEON Une vision partagée, un fil rouge, un label de qualité qui se traduit dans chacune des expériences. Porté par les …"
+    },
+    {
+      "title": "Essays — Latest | Aeon",
+      "url": "https://aeon.co/essays",
+      "snippet": "The latest and most popular Essays from Aeon. Longform articles on philosophy, psychology, science, society, history and the arts, …"
+    },
+    {
+      "title": "Aeon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aeon",
+      "snippet": "Although the term aeon may be used in reference to a period of a billion years (especially in geology, cosmology and astronomy), its …"
     }
   ]
 }

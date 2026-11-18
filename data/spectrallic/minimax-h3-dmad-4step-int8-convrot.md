@@ -2,90 +2,93 @@
 
 ## Resumen
 
-MiniMax-H3-DMAD-4step-int8-convrot es un checkpoint derivado del transformer de generacion de video-audio MiniMax-H3, publicado por el usuario Spectrallic. Se trata de la variante pruned FL2VA (frame-to-video-with-audio) del modelo base de MiniMaxAI, repaquetada por Comfy-Org, a la que se le ha fusionado la destilacion DMAD de 4 pasos del repositorio ZhengmingYu/DMAD y posteriormente se ha cuantizado a INT8 con rotacion Hadamard por grupos (ConvRot). El resultado es un unico fichero safetensors de 21 GB listo para cargar en ComfyUI sin necesidad de un nodo LoRA adicional.
+MiniMax-H3-DMAD-4step-int8-convrot es una versión destilada y cuantizada de los transformadores de difusión MiniMax-H3 en sus variantes FL2VA (first-last frame to video-audio) y Ref2VA (reference to video-audio), publicada por el usuario Spectrallic. Sobre los pesos podados en bf16 de Comfy-Org/MiniMax-H3 se ha fusionado a rango completo el LoRA de destilación DMAD del repositorio ZhengmingYu/DMAD, y el resultado se ha cuantizado a INT8 con la técnica ConvRot. El objetivo es reducir drásticamente el número de pasos de muestreo —de los habituales en un modelo de difusión completo a solo 4 u 8 pasos— manteniendo la calidad, y a la vez recortar el peso y el coste de inferencia mediante la cuantización INT8.
 
-El modelo resuelve un problema practico: el MiniMax-H3 original requiere decenas de pasos de muestreo con classifier-free guidance, lo que encarece enormemente la inferencia. Con la destilacion DMAD horneada, el modelo opera en 4 pasos con CFG 1.0, reduciendo el coste de generacion de forma drastica. La cuantizacion INT8 de las capas lineales de los 50 bloques del transformer reduce ademas el peso en VRAM en comparacion con el checkpoint BF16.
+El paquete incluye cuatro ficheros: FL2VA y Ref2VA, cada uno en variante de 4 pasos (estudiante `full_critic`) y de 8 pasos (estudiante `8step_full_critic`). Todos comparten la misma estructura de tensores que los ficheros originales de Comfy-Org, de modo que son intercambiables en el mismo pipeline de ComfyUI sin necesidad de cargar un LoRA aparte, ya que la destilación está incorporada en los pesos. El repositorio ocupa 83,9 GB en total y acumula más de 7000 descargas.
 
-La relevancia actual radica en que combina tres tecnicas de compresion (poda, destilacion few-step y cuantizacion INT8 con rotacion) manteniendo exactamente el layout de tensores del fichero oficial de Comfy-Org, lo que facilita su integracion en pipelines existentes. La licencia es la MiniMax H3 Community License Agreement, con restricciones territoriales explicitas.
+La relevancia actual es doble: por un lado, la destilación few-step hace viable generar vídeo con audio en hardware de consumo en lugar de requerir clústeres; por otro, la cuantización INT8 tensorwise con ConvRot reduce el peso del modelo sin cambiar los descriptores `.comfy_quant` que espera el ecosistema ComfyUI. Es, en la práctica, un artefacto de despliegue listo para usar en flujos de trabajo de generación de vídeo-audio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (MiniMax-H3 FL2VA pruned), con capas de atencion y MLP en 50 bloques mas 2 bloques token_refiner |
+| Arquitectura | Transformer de difusión (MiniMax-H3), variantes FL2VA y Ref2VA, con destilación DMAD fusionada |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT8 tensorwise con ConvRot (grupo 256) en 200 lineales de bloque; resto en dtypes originales (BF16 para token_refiner) |
-| Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license-agreement (con restricciones territoriales) |
-| Formato de pesos | safetensors (single-file, diffusion-single-file) |
+| Longitud de contexto | no disponible (modelo de difusión, no de lenguaje) |
+| Tipos de cuantizacion | INT8 tensorwise con ConvRot (grupo de 256) en los lineales de cada bloque; resto de tensores en el dtype original de Comfy-Org |
+| Idiomas soportados | no disponible (prompts de texto; el modelo card no declara lista de idiomas) |
+| Licencia | minimax-h3-community-license-agreement |
+| Formato de pesos | safetensors (single-file, librería `diffusion-single-file`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de difusion para generacion conjunta de video y audio (pipeline text-to-video / text-to-audio-video). Parte del checkpoint `minimax_h3_fl2va_pruned_bf16` de Comfy-Org, que es una version podada del MiniMax-H3 original de MiniMaxAI. Sobre esa base se fusiona la LoRA `full_critic` de 4 pasos de DMAD, de rango 128, con q/k/v fusionados en adaptadores `attn.qkv_proj` de rango 384. La fusion se aplica a 208 objetivos: `attn.{qkv_proj,out_proj}` y `mlp.{fc1,fc2}` en los 50 bloques y en los 2 bloques `token_refiner`, calculando `W' = W + (alpha/rank) · up @ down` en FP32 con fuerza 1.0.
+El modelo base es un transformer de difusión de MiniMax-H3 en sus particiones FL2VA y Ref2VA, ya podadas (`pruned`) respecto al release original. Sobre esos pesos en bf16 se fusiona a rango completo el LoRA de DMAD, un método de destilación que produce estudiantes capaces de muestrear en muy pocos pasos. La variante de 4 pasos usa el estudiante `full_critic` y la de 8 pasos el `8step_full_critic`, entrenado específicamente para 8 pasos de muestreo. Tras la fusión, cada lineal de bloque (`blocks.N.attn.{qkv_proj,out_proj}` y `blocks.N.mlp.{fc1,fc2}`) se cuantiza a INT8 con ConvRot y se le añade un tensor `.comfy_quant` con el descriptor `{"format": "int8_tensorwise", "convrot": true, "convrot_groupsize": 256}` junto a un `weight_scale` F32 por fila. Los nombres, orden, dtypes, formas y offsets de tensores coinciden con los ficheros de Comfy-Org, lo que garantiza compatibilidad directa.
 
-Tras la fusion, los 200 lineales de bloque se rotan con una Hadamard ConvRot de grupo 256 y se cuantizan a INT8 con escalas por fila (`weight_scale` F32), directamente desde el resultado de la fusion en FP32. Los 8 pesos fusionados de `token_refiner` se devuelven a BF16 porque esa capa permanece sin cuantizar en el fichero de Comfy-Org. El resto de tensores no tocados por la LoRA se copian bit a bit del fichero de referencia. La verificacion byte a byte confirma que los 932 tensores coinciden en nombre, orden, dtype, forma y offset con el fichero INT8 oficial; solo 408 tensores difieren en bytes (los 200 pesos INT8, sus 200 escalas y los 8 pesos de token_refiner). La proyeccion del delta LoRA sobre el cambio respecto a la base da 0.9977 global, con 205 de 208 capas dentro de 1 ± 0.1.
+Un detalle técnico relevante: DMAD se entrenó sobre el transformador text-to-audio-video, y los pesos de Ref2VA difieren de ese transformador. Los autores del LoRA indican que este carga sobre la partición Ref2VA pero no publican resultados para ella, por lo que la calidad de la variante Ref2VA destilada es una extrapolación, no una validación publicada. No se dispone de información sobre el número de tokens, composición del dataset ni si hubo RLHF/DPO en el entrenamiento original.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video) con resoluciones como 1344×768 y 124 frames a 24 fps en el ejemplo publicado.
-- Generacion conjunta de audio y video (text-to-audio-video), con shifts de tiempo independientes para video (12) y audio (2).
-- Muestreo few-step: 4 pasos con CFG 1.0, sin classifier-free guidance.
-- Compatibilidad de layout con ComfyUI: mismos nombres, orden, dtypes, formas y descriptores `.comfy_quant` que el fichero oficial.
-- Soporte de atencion dispersa (SageAttention con sparse attention a densidad 0.15, primer paso denso) segun el ejemplo del autor.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-step ni soporte multilingue explicito; es un modelo generativo de medios, no un LLM.
+- Generación de vídeo con audio sincronizado a partir de texto (text-to-audio-video).
+- Generación condicionada por primer y último fotograma (FL2VA): el prompt define la escena y el modelo interpola el movimiento entre ambos extremos.
+- Generación condicionada por referencias (Ref2VA): permite referirse a `<Picture i>`, `<Video k>` y `<Audio j>` dentro del prompt para reutilizar elementos visuales o sonoros.
+- Muestreo few-step: 4 pasos en los ficheros de 4 pasos y 8 pasos en los de 8 pasos, con CFG 1.0 (sin classifier-free guidance).
+- Resolución de salida de 1344×768 y 124 fotogramas a 24 fps en los ejemplos publicados.
+- Control de time shift independiente para vídeo (12) y audio (2).
+- Compatibilidad con SageAttention y atención dispersa (densidad 0.15, primer paso denso) para acelerar el render.
+- No soporta tool calling, function calling ni razonamiento multi-step: es un modelo generativo de medios, no un LLM.
 
 ## Casos de uso
 
-- Generacion de clips cinematograficos cortos: el modelo produce video de 124 frames a 24 fps en 1344×768 con 4 pasos, adecuado para prototipado rapido de escenas conceptuales en estudios de animacion o previsualizacion.
-- Previsualizacion de storyboards con audio: al generar video y audio conjuntamente, permite validar ritmo y atmosfera sonora de una secuencia antes de producirla en alta calidad.
-- Iteracion creativa en ComfyUI: al mantener el layout exacto del fichero oficial, se puede sustituir el checkpoint INT8 de Comfy-Org por este sin cambiar el grafo, anadiendo la destilacion few-step sin nodo LoRA.
-- Generacion de material para redes sociales: clips de pocos segundos con resolucion 1344×768 y coste de inferencia reducido por los 4 pasos y la cuantizacion INT8.
-- Investigacion en destilacion de modelos de difusion: sirve como referencia reproducible de como fusionar una LoRA DMAD full-rank y cuantizar a INT8 conservando el layout, con metricas de fidelidad publicadas (0.9977).
-- Despliegue en hardware con VRAM limitada: la cuantizacion INT8 de las 200 capas lineales de bloque reduce el peso respecto al BF16, permitiendo ejecutar el modelo en GPUs de gama alta de consumo con los 21 GB del repo como referencia de tamano en disco.
-- Pruebas de pipelines de atencion dispersa: el ejemplo usa SageAttention con densidad 0.15, util para evaluar tecnicas de aceleracion sobre un modelo few-step ya destilado.
+- Previsualización rápida de storyboards: con 4 pasos y CFG 1 el coste por iteración es mínimo, lo que permite generar decenas de variantes de una escena para elegir dirección artística antes de un render final de más calidad.
+- Generación de clips con audio para redes sociales: el modelo produce vídeo y sonido en una sola pasada a 1344×768 y 24 fps, suficiente para formatos verticales u horizontales de publicación directa.
+- Interpolación de fotogramas clave en animación: la variante FL2VA toma primer y último fotograma y rellena la transición, útil para completar animáticas con movimiento coherente entre poses dibujadas.
+- Consistencia de personajes entre planos: la variante Ref2VA permite fijar un personaje o escenario mediante `<Picture i>` y reutilizarlo en prompts distintos, lo que sirve para mantener continuidad en una secuencia de varios clips.
+- Prototipado de anuncios y vídeo promocional: a partir de un brief de texto se generan borradores con audio ambiente y efectos, que luego se editan en un pipeline tradicional.
+- Render en hardware de consumo: al estar cuantizado a INT8 y destilado a pocos pasos, un usuario con una GPU de gama alta puede ejecutar el modelo en local dentro de ComfyUI sin depender de servicios en la nube.
+- Investigación en destilación de modelos de difusión: el artefacto sirve como referencia reproducible de fusión de LoRA DMAD más cuantización ConvRot sobre un transformer de vídeo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente documenta los parámetros de muestreo de los ejemplos (4 u 8 pasos, CFG 1.0, 1344×768, 124 fotogramas a 24 fps, semilla 42, shift 12/2) y el uso de SageAttention con atención dispersa a densidad 0.15, sin métricas cuantitativas de calidad (FVD, CLIP score, etc.) ni comparación numérica con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el repo ocupa 21.0 GB en disco, lo que da una cota inferior orientativa del peso de los pesos, a la que hay que sumar activaciones y buffers de video/audio.
-- GPU recomendadas: no disponible en la informacion proporcionada. El ejemplo se renderizo en Nox con SageAttention y atencion dispersa, sin especificar GPU.
-- Compatibilidad con GPU de consumo: no confirmada; el tamano del checkpoint (21 GB) sugiere que requiere GPUs con al menos 24 GB de VRAM para cargar los pesos, pero no hay dato oficial.
-- Opciones de despliegue: ComfyUI (con sampler `lcm` y scheduler `simple`, o nodos DMAD Sampler y DMAD Sigmas); el autor indica que el fichero no se ha probado en ComfyUI y que el ejemplo se genero en Nox.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma explícita. El repositorio completo pesa 83,9 GB, pero cada fichero individual corresponde a una sola variante; el peso en INT8 de un transformador de este tamaño sitúa la inferencia en el rango de GPUs de 24 GB o más, aunque el dato exacto no está publicado.
+- GPU recomendadas: no disponibles en la información proporcionada. Por el formato y el ecosistema (ComfyUI, SageAttention), es esperable que funcione en GPUs NVIDIA con soporte de kernels INT8 y atención optimizada, pero no se confirma ningún modelo concreto.
+- ¿Cabe en GPU de consumo? No confirmado. La cuantización INT8 y la destilación few-step están diseñadas precisamente para acercar el modelo a hardware de consumo, pero la model card no especifica requisitos mínimos.
+- Opciones de despliegue: ComfyUI es el entorno de referencia (estructura de tensores y descriptores `.comfy_quant` idénticos a los ficheros de Comfy-Org). Los ejemplos se renderizaron en Nox con el sampler DMAD. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusión de este tipo.
+- Latencia y throughput: no disponibles. Solo se indica que el render de ejemplo usa 4 u 8 pasos con atención dispersa, lo que reduce el coste frente a un muestreo completo, pero sin cifras de tiempo por clip.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Pasos de muestreo | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| MiniMax-H3-DMAD-4step-int8-convrot (este) | no disponible | no disponible | 4 (CFG 1.0) | INT8 ConvRot | MiniMax H3 Community License | Hugging Face, single-file |
-| Comfy-Org/MiniMax-H3 (INT8 convrot oficial) | no disponible | no disponible | sin destilacion few-step | INT8 ConvRot | MiniMax H3 Community License | Hugging Face |
-| Comfy-Org/MiniMax-H3 (bf16 pruned) | no disponible | no disponible | sin destilacion few-step | BF16 | MiniMax H3 Community License | Hugging Face |
-| ZhengmingYu/DMAD (LoRA) | no disponible | no disponible | 4 (via LoRA) | requiere cargador LoRA | no disponible | Hugging Face |
+| Modelo | Tipo | Pasos de muestreo | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax-H3-DMAD-4step-int8-convrot (este) | Difusión vídeo+audio, FL2VA/Ref2VA | 4 u 8 | INT8 ConvRot | minimax-h3-community-license-agreement | Hugging Face, single-file para ComfyUI |
+| Comfy-Org/MiniMax-H3 (base) | Difusión vídeo+audio, FL2VA/Ref2VA | Muestreo completo | bf16 (y variantes int8_convrot sin destilar) | minimax-h3-community-license-agreement | Hugging Face |
+| ZhengmingYu/DMAD (LoRA) | LoRA de destilación sobre MiniMax-H3 | 4 u 8 (según estudiante) | bf16, requiere loader de LoRA | no disponible en la información | Hugging Face |
+
+La comparación con alternativas de otros fabricantes (por ejemplo, modelos de vídeo de otros laboratorios) no está disponible en la información proporcionada, por lo que no se incluye.
 
 ## Limitaciones y advertencias
 
-- El autor indica explicitamente que el fichero no se ha probado en ComfyUI; el ejemplo publicado se genero en Nox.
-- Los pesos difieren del release oficial de MiniMax-H3 por la fusion de la LoRA DMAD y la cuantizacion; no es un checkpoint identico al original.
-- La fidelidad de la LoRA no es perfecta: tres capas de `token_refiner` quedan por debajo del umbral (0.647, 0.896 y 0.899), lo que puede introducir diferencias sutiles frente a la destilacion original.
-- La licencia MiniMax H3 Community License Agreement incluye restricciones territoriales; es imprescindible revisar `LICENSE` y `NOTICE` antes de uso comercial.
-- Riesgo de alucinacion visual y artefactos propios de modelos de difusion few-step, no cuantificado en la informacion disponible.
-- Sesgos conocidos: no documentados.
-- Limitaciones de idioma: no disponibles; el modelo es generativo de medios, no de texto.
-- El uso de atencion dispersa (densidad 0.15) en el ejemplo puede degradar la calidad si se aplica de forma agresiva; el autor indica primer paso denso.
-- No hay datos publicados de latencia, throughput ni requisitos minimos de VRAM.
+- La variante Ref2VA no fue entrenada con DMAD: los pesos de Ref2VA difieren del transformador text-to-audio-video sobre el que se entrenó el LoRA, y los autores no publican resultados para esa partición. La calidad de Ref2VA destilada no está validada.
+- Licencia `minimax-h3-community-license-agreement`: es una licencia comunitaria con posibles restricciones de uso comercial. Hay que revisar el fichero LICENSE antes de cualquier despliegue en producción.
+- Riesgo de alucinación visual y sonora: como todo modelo generativo, puede producir artefactos, incoherencias temporales o audio mal sincronizado, especialmente en los pasos mínimos (4).
+- Los ejemplos publicados usan una única semilla (42) y un único par de prompts; no hay evidencia de robustez ante prompts diversos.
+- El modelo está pensado para el punto de operación exacto de cada estudiante (4 pasos para los ficheros de 4, 8 para los de 8). Usar otro número de pasos o CFG distinto de 1.0 puede degradar la calidad.
+- No se declara lista de idiomas soportados para los prompts; no hay garantía de comportamiento multilingüe más allá del inglés de los ejemplos.
+- El tamaño del repositorio (83,9 GB) y la ausencia de requisitos de VRAM publicados obligan a validar el despliegue en el hardware objetivo antes de comprometerse.
+- No hay métricas de benchmarks ni comparaciones cuantitativas publicadas, lo que impide evaluar la pérdida de calidad frente al modelo base sin destilar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-4step-int8-convrot
-- Modelo base (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
-- Modelo base original (MiniMaxAI): https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Destilacion DMAD: https://huggingface.co/ZhengmingYu/DMAD
-- Paper DMAD: https://arxiv.org/abs/2610.02188
-- Codigo DMAD: https://github.com/Yzmblog/DMAD
-- Blog sobre atencion dispersa (Nox): https://noxengine.dev/blog/sparse/
-- Ejemplo de video: https://huggingface.co/Spectrallic/MiniMax-H3-FL2VA-DMAD-4step-int8-convrot/resolve/main/samples/floating_city_1344x768_seed42.mp4
+- Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
+- LoRA de destilación DMAD: https://huggingface.co/ZhengmingYu/DMAD
+- Paper referenciado (arXiv:2610.02188): https://arxiv.org/abs/2610.02188
+- Blog sobre atención dispersa y SageAttention: https://noxengine.dev/blog/sparse/
+- Ejemplo FL2VA 4 pasos: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-int8-convrot/resolve/main/samples/floating_city_1344x768_seed42.mp4
+- Ejemplo Ref2VA 4 pasos: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-int8-convrot/resolve/main/samples/stormy_boat_1344x768_seed42.mp4
+- Ejemplo FL2VA 8 pasos: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-int8-convrot/resolve/main/samples/floating_city_8step_1344x768_seed42.mp4
+- Ejemplo Ref2VA 8 pasos: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-int8-convrot/resolve/main/samples/stormy_boat_8step_1344x768_seed42.mp4

@@ -2,118 +2,105 @@
 
 ## Resumen
 
-AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4 es una exportación cuantizada en formato MLX de un modelo multimodal de 27.356.728.560 parámetros (≈27,36 mil millones), derivada del checkpoint BF16 AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16. El autor es AEON-7 y la ficha se publica bajo licencia "other". La arquitectura declarada en las etiquetas es un transformer híbrido con componentes Gated DeltaNet, Mamba/SSM y atención lineal, además de una torre de visión para entrada image-text-to-text y una cabeza MTP (multi-token prediction) destinada a decodificación especulativa.
+Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4 es una cuantización de 4 bits para Apple Silicon de un modelo multimodal de 27.356 millones de parámetros derivado de la familia Qwen3.6, publicada por el usuario independiente AEON-7. El modelo base es una versión "abliterated" (eliminación de rechazos) del checkpoint BF16 del mismo autor, y esta variante emplea una mezcla de precisión: `mxfp4` en la mayor parte del decodificador híbrido, islas afines de 8 bits en las proyecciones k/v de GQA, embeddings y cabeza de salida, y bf16 en la torre de visión, la dinámica de estado de Gated-DeltaNet y la cabeza MTP (Multi-Token Prediction).
 
-El modelo resuelve el problema de ejecutar inferencia multimodal de 27B en memoria unificada de Apple Silicon: ocupa 16 GB en disco y alcanza unos 17 GB de pico en memoria, con un mínimo declarado de 24 GB de memoria unificada en chips M1 o posteriores. Se distribuye como una cuantización mixta: mxfp4 real de 4 bits en el grueso del decodificador híbrido, islas afines de 8 bits en las proyecciones k/v de GQA, embeddings y cabeza de salida, y bf16 en la dinámica de estado de Gated DeltaNet, la torre de visión y la cabeza MTP.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso de cuantización agresiva orientada a hardware de consumo: 16,7 GB en disco y unos 17 GB de pico en memoria unificada, lo que permite ejecutar un modelo de 27B multimodal en un Mac con 24 GB. Por otro, incorpora decodificación especulativa nativa mediante una cabeza MTP que actúa como drafter, con una aceleración declarada de 1,78× sin pérdida de calidad (verificación de cada token contra el modelo objetivo).
 
-Es relevante ahora porque combina tres elementos poco habituales en un mismo paquete: multimodalidad completa (texto e imagen), decodificación especulativa nativa mediante MTP sin pérdida de calidad y un ajuste de tipo abliterated/uncensored con los rechazos eliminados. El rendimiento declarado es de 15,2 tok/s en flujo único y 26,5 tok/s con autospeculación MTP (1,78× sin pérdida). La propia model card indica que esta ficha ha sido superada por la línea Qwen3.8 del mismo autor y que se mantiene en línea por motivos históricos.
+El autor marca esta release como obsoleta en su propia model card y recomienda migrar a la línea Qwen3.8 Ultimate Uncensored NVFP4-MIXED para nuevos desarrollos. Se mantiene publicada por razones históricas y para descargas existentes. La licencia es "other", heredada del modelo base, y el único idioma declarado es el inglés.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con Gated DeltaNet (SSM/atención lineal) y atención GQA, más torre de visión y cabeza MTP para decodificación especulativa |
-| Parametros totales | 27.356.728.560 (≈27,36 mil millones) |
-| Parametros activos | No aplica; no se indica arquitectura MoE en la información disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mixta: mxfp4 de 4 bits en el grueso del decodificador híbrido; islas afines de 8 bits en k/v de GQA, embeddings y cabeza; bf16 en la dinámica de estado de Gated DeltaNet, la torre de visión y la cabeza MTP. Existe un hermano MLX-8bit casi sin pérdida |
-| Idiomas soportados | Inglés (en), según metadatos y model card |
-| Licencia | other (los términos concretos no se detallan en la información disponible) |
-| Formato de pesos | safetensors en formato MLX (librería mlx); el drafter MTP se distribuye como repositorio aparte |
-
-Otros datos: repositorio de 16,7 GB, 345 descargas y 2 likes en el momento de la consulta, creado el 23 de junio de 2026 y actualizado el 12 de septiembre de 2026. Pipeline declarado: image-text-to-text.
+| Arquitectura | Transformer híbrido con atención lineal Gated-DeltaNet (SSM/Mamba), atención GQA clásica, torre de visión y cabeza MTP para decodificación especulativa |
+| Parametros totales | 27.356.728.560 (27,36 B) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantizacion | mxfp4 (4 bits) en el grueso del decodificador; afín de 8 bits en k/v GQA, embeddings y cabeza; bf16 en Gated-DeltaNet, torre de visión y cabeza MTP |
+| Idiomas soportados | en (inglés) |
+| Licencia | other |
+| Formato de pesos | safetensors (formato MLX, librería `mlx`) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe un decodificador híbrido: junto a capas de atención con GQA (agrupación de consultas) conviven mecanismos de estado recurrente del tipo Gated DeltaNet y componentes Mamba/SSM con atención lineal, orientados a reducir el coste de memoria del contexto largo respecto a un transformer denso convencional. El modelo incorpora además una cabeza MTP que actúa como borrador nativo para decodificación especulativa: los tokens propuestos se verifican contra el modelo objetivo, por lo que el resultado es idéntico en bytes a la decodificación sin MTP y la ganancia es puramente de velocidad. La torre de visión corresponde a `qwen3_5_vision` y se conserva en bf16, de modo que la modalidad de imagen no se degrada con la cuantización.
+La arquitectura es un transformer híbrido: combina capas de atención lineal basadas en Gated-DeltaNet (una variante de espacio de estados tipo Mamba/SSM) con capas de atención clásica con GQA. Sobre ese tronco se añaden dos componentes: una torre de visión que habilita la modalidad image-text-to-text y una cabeza MTP que permite decodificación especulativa autoinducida. El modelo base declara el tag `qwen3_5`, lo que sugiere que el linaje arquitectónico proviene de la generación Qwen3.5 antes del rebranding comercial a Qwen3.6.
 
-No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. La model card sí identifica el modelo como abliterated, uncensored y refusal-removed, lo que implica una intervención de postentrenamiento orientada a eliminar comportamientos de rechazo. La distribución de precisión es una innovación de despliegue destacable: 4 bits en la mayor parte de la matriz de pesos, 8 bits en los puntos sensibles a la cuantización (k/v de GQA, embeddings y cabeza) y bf16 exacto en las dinámicas de estado del bloque híbrido y en los módulos multimodales, una estrategia de precisión mixta que busca preservar la coherencia del texto largo sin disparar el uso de memoria.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO en el modelo original de Qwen. Lo que sí documenta el autor es el proceso de post-entrenamiento propio: una abliteración (eliminación de direcciones de rechazo) aplicada sobre el checkpoint BF16, que se propaga intacta a esta cuantización. La innovación técnica destacable de esta release es la metodología de cuantización mixta: se preserva en bf16 la dinámica de estado del SSM (sensible a la precisión por su naturaleza recurrente), la torre de visión (para no degradar la modalidad) y la cabeza MTP (para que el drafter siga siendo fiable), mientras que el resto del decodificador se comprime a mxfp4. Las islas de 8 bits en k/v y embeddings actúan como salvaguarda de calidad en los puntos de mayor impacto.
 
 ## Capacidades
 
 - Generación de texto conversacional multi-turno en inglés.
-- Comprensión de imagen y texto (pipeline image-text-to-text): acepta contenido `image_url` en formato OpenAI y también la ruta `--image` en `mlx_vlm.generate`.
-- Decodificación especulativa mediante cabeza MTP nativa, con un drafter de 821 MB y tamaño de bloque 3 como punto óptimo declarado.
-- Modelo abliterated: los comportamientos de rechazo han sido eliminados, lo que cambia el perfil de respuesta respecto al modelo base original.
-- Razonamiento y generación de código: no se documentan con benchmarks ni evaluaciones específicas en la información disponible.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la información disponible.
-- Capacidades multilingües: limitadas a inglés según los metadatos del repositorio.
-- Capacidades especiales: visión integrada, modo de precisión mixta con islas de 8 bits y bf16, y despliegue local en Apple Silicon.
+- Razonamiento y respuesta a instrucciones, heredado del modelo base Qwen3.6.
+- Comprensión de imágenes (image-text-to-text): la torre de visión se mantiene en bf16, por lo que la modalidad no se degrada por la cuantización.
+- Decodificación especulativa mediante cabeza MTP con drafter separado (`--draft-kind mtp`), sin pérdida de calidad respecto a la inferencia sin especulación.
+- Ejecución en memoria unificada de Apple Silicon con Metal, orientada a inferencia on-device.
+- Comportamiento "uncensored": se han eliminado los rechazos del modelo base, de modo que responde a peticiones que el original declinaría.
+- Soporte de servidor compatible con la API de OpenAI (`/v1/chat/completions`) mediante `mlx_vlm.server`.
+- No se documenta soporte explícito de tool calling, function calling ni flujos de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: el modelo se sirve con `mlx_vlm.server` y expone un endpoint compatible con OpenAI (`POST /v1/chat/completions`), de modo que puede sustituir a una API en la nube en aplicaciones de chat que deban funcionar sin conexión y con 16 GB de disco.
-- Análisis de imágenes en el dispositivo: al conservar la torre de visión en bf16 y aceptar entradas `image_url`, permite describir, clasificar o extraer información de capturas, diagramas y fotografías sin enviar los datos a un tercero.
-- Procesamiento por lotes de documentos escaneados: combinando entrada de imagen y generación de texto se pueden digitalizar y resumir facturas, formularios o notas manuscritas en un flujo local; el coste es de 15,2 tok/s en flujo único, por lo que conviene dimensionar los lotes en consecuencia.
-- Prototipado e investigación en interpretabilidad: al ser un modelo abliterated con arquitectura híbrida Gated DeltaNet/Mamba, resulta útil para estudiar cómo se comportan los mecanismos de rechazo y las dinámicas de estado recurrente en un modelo multimodal de 27B.
-- Evaluación de estrategias de cuantización mixta: la comparación entre este export FP4 y su hermano MLX-8bit permite medir el impacto real de bajar de 8 a 4 bits en tareas concretas, con la misma arquitectura y los mismos pesos de origen.
-- Despliegue de bajo consumo en portátil: con 17 GB de pico en memoria unificada, un MacBook Pro M4 Pro de 48 GB puede ejecutar el modelo y el drafter MTP a la vez y mantener conversaciones interactivas con latencias aceptables gracias a los 26,5 tok/s autospeculativos.
-- Generación asistida en editores y herramientas de escritorio: el endpoint local y la decodificación especulativa hacen viable integrar el modelo como backend de autocompletado o redacción en aplicaciones nativas de macOS.
-- Experimentación con decodificación especulativa sin pérdida: el drafter MTP permite reproducir un esquema de borrador-verificador real sobre un modelo de 27B, útil para comparar metodologías de aceleración en hardware de consumo.
+- Asistente conversacional local en un Mac: el modelo cabe en 24 GB de memoria unificada y se sirve con `mlx_vlm.server` exponiendo un endpoint compatible con OpenAI, lo que permite sustituir una API remota por inferencia local sin cambiar el código cliente.
+- Procesamiento de documentos con imágenes en local: al conservar la torre de visión en bf16, puede describir, resumir o extraer información de capturas, diagramas y fotografías sin enviar datos a un tercero, algo relevante para material confidencial.
+- Generación de texto de alta velocidad en un solo flujo: con 26,5 tok/s gracias a la especulación MTP, es adecuado para dictado, autocompletado o chat interactivo donde la latencia percibida importa más que el throughput agregado.
+- Prototipado de aplicaciones multimodales en Apple Silicon: sirve como banco de pruebas para pipelines image-text-to-text antes de escalar a hardware de servidor, con la ventaja de que la API es la misma que en producción.
+- Investigación sobre cuantización mixta: el esquema mxfp4 con islas de 8 bits y capas bf16 selectivas es un caso de estudio reproducible para medir el impacto de la precisión por tipo de capa en modelos híbridos SSM/atención.
+- Evaluación de seguridad y alineamiento: al ser una variante abliterated, es útil para estudiar cómo se comporta un modelo sin rechazos en tareas de red teaming y análisis de sesgos, siempre en un entorno controlado.
+- Inferencia offline en portátil: con 16,7 GB en disco y unos 17 GB de pico, funciona sin conexión en un MacBook Pro M4 Pro de 48 GB y, según el autor, también en equipos de 24 GB.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos cuantitativos de rendimiento son medidas de velocidad declaradas por el autor:
+El autor no publica resultados de benchmarks académicos (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos de rendimiento declarados son de velocidad de inferencia:
 
 | Metrica | Valor declarado |
 |---|---|
-| Throughput en flujo único (sin MTP) | 15,2 tok/s |
-| Throughput con autospeculación MTP | 26,5 tok/s (1,78× sin pérdida, bloque de 3) |
-| Throughput del hermano MLX-8bit | 8,2 tok/s (el export FP4 es ≈3,2× más rápido) |
-| Memoria de pico | ≈17 GB en memoria unificada |
-| Tamano en disco | 16 GB |
-| Tamano del drafter MTP | 821 MB |
-| Memoria adicional sin MTP | ≈1,6 GB menos de memoria unificada |
-
-No se dispone de comparaciones de calidad (perplejidad, tasas de acierto en tareas) frente al checkpoint BF16 o al export de 8 bits.
+| Throughput sin especulación | 15,2 tok/s (single-stream) |
+| Throughput con MTP (block size 3) | 26,5 tok/s (single-stream) |
+| Aceleración MTP | 1,78× sin pérdida |
+| Comparación con el hermano MLX-8bit | ~3,2× más rápido (8,2 tok/s en 8 bits) |
+| Hardware de validación | MacBook Pro M4 Pro, 48 GB |
+| Memoria mínima declarada | 24 GB de memoria unificada |
 
 ## Requisitos de hardware
 
-- Memoria unificada mínima: 24 GB en Apple Silicon (M1 o posterior); validado en un MacBook Pro M4 Pro de 48 GB.
-- Uso de memoria en inferencia: ≈17 GB de pico con el modelo cargado y 16 GB en disco; prescindir del MTP reduce el consumo en aproximadamente 1,6 GB.
-- GPU: no se soportan GPU NVIDIA ni el stack CUDA en este repositorio; el objetivo es Metal en Apple Silicon. El autor redirige a un contenedor vLLM (`ghcr.io/aeon-7/aeon-vllm-ultimate` y `ghcr.io/aeon-7/aeon-vllm-ultimate-rtx`) únicamente para la línea sucesora Qwen3.8.
-- Cabe en GPU de consumo equivalente por memoria (tarjetas de 24 GB o más), pero no hay soporte de pesos para ese entorno en este export.
-- Opciones de despliegue: `python -m mlx_vlm.server` con endpoint compatible con OpenAI; `python -m mlx_vlm.generate` para una sola generación; instalación mediante `uv` con Python 3.12 y `mlx-vlm` desde `main` de GitHub (la visión `qwen3_5_vision` no está en la versión 0.6.1).
-- El drafter MTP se carga con `--draft-model AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter --draft-kind mtp --draft-block-size 3`.
-- Latencia y throughput: 15,2 tok/s en flujo único y 26,5 tok/s con MTP, según las medidas del autor.
-- Parámetros de muestreo recomendados: `temperature: 1.0`, `top_p 0.95`, `top_k ~64`. El servidor MLX usa decodificación voraz por defecto (`temperature 0`), lo que puede provocar bucles en prompts largos.
+- VRAM/memoria unificada: unos 17 GB de pico en inferencia; el autor indica que funciona en equipos con 24 GB de memoria unificada.
+- Disco: 16,7 GB para el modelo, más 821 MB adicionales si se descarga el drafter MTP.
+- GPU compatibles: Apple Silicon M1 o superior con Metal. El autor valida en M4 Pro de 48 GB. No hay soporte para GPU NVIDIA ni AMD en este formato MLX.
+- Cabe en GPU de consumo: sí, en el sentido de que cabe en Macs de consumo con 24 GB o más de memoria unificada. No es ejecutable en tarjetas gráficas discretas convencionales por el formato MLX.
+- Despliegue: `mlx-vlm` desde `main` (la visión `qwen3_5_vision` no está en la 0.6.1), servidor `mlx_vlm.server` con endpoint compatible con OpenAI, y `mlx_vlm.generate` para inferencia puntual. No aplica vLLM, llama.cpp, Ollama ni TGI en este formato.
+- Latencia y throughput: 15,2 tok/s en un solo flujo sin especulación y 26,5 tok/s con MTP y block size 3, medidos en M4 Pro. El autor señala que `--draft-block-size 3` es el punto óptimo.
+- Parámetros de muestreo: el autor recomienda `temperature 1.0`, `top_p 0.95` y `top_k ~64`; advierte de que el servidor MLX usa decodificación greedy por defecto y que esta puede entrar en bucles con prompts largos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Rendimiento declarado |
+| Modelo | Parámetros | Contexto | Formato / hardware | Licencia | Notas |
 |---|---|---|---|---|---|
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4 (este) | 27,36 mil millones | no disponible | MLX, mxfp4 4 bits + islas de 8 bits + bf16 | other | 15,2 tok/s; 26,5 tok/s con MTP |
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-8bit | 27,36 mil millones (mismo origen) | no disponible | MLX de 8 bits, casi sin pérdida | other | 8,2 tok/s |
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16 | 27,36 mil millones (checkpoint base) | no disponible | safetensors bf16 | other | no disponible |
-| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED | 27 mil millones (denominación del autor) | no disponible | NVFP4 mixto con retícula FP8, orientado a vLLM/GPU | other | no disponible; el autor lo declara superior en capacidad |
-
-La model card posiciona explícitamente la línea Qwen3.8 como sucesora y recomienda este export de Qwen3.6 solo si se necesita inferencia local en Apple Silicon desde el árbol anterior.
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4 | 27,36 B | no disponible | MLX mxfp4, Apple Silicon | other | 16,7 GB, 26,5 tok/s con MTP en M4 Pro |
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-8bit | 27,36 B (mismo base) | no disponible | MLX 8 bits, Apple Silicon | other | Casi sin pérdida respecto a BF16; 8,2 tok/s según el autor |
+| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED | no disponible | no disponible | NVFP4 + FP8, orientado a NVIDIA (Spark/GB10, RTX) | other | Sucesor recomendado por el autor; no ejecutable en Apple Silicon |
+| Qwen3.6-27B original (familia Qwen) | ~27 B | no disponible | safetensors BF16, múltiples runtimes | no disponible | Modelo base alineado; esta release deriva de una versión abliterated |
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: los rechazos han sido eliminados deliberadamente, por lo que puede generar contenido que el modelo original bloquearía. Es responsabilidad del integrador aplicar sus propias salvaguardas.
-- Sesgos conocidos: no se documenta ninguna evaluación de sesgos en la información disponible.
-- Riesgo de alucinación: no se han publicado métricas de veracidad ni de fidelidad; el ajuste uncensored puede aumentar la confianza en respuestas no verificadas.
-- Idioma: solo inglés declarado en los metadatos; el rendimiento en castellano u otros idiomas no está documentado.
-- Longitud de contexto: no disponible, lo que impide planificar cargas de trabajo con documentos largos sin una prueba previa.
-- Licencia "other": los términos exactos no se detallan, por lo que el uso comercial requiere revisar la ficha original y contactar con el autor si es necesario.
-- Ciclo de vida: el autor marca esta ficha como superada y recomienda la línea Qwen3.8 para trabajos nuevos; no se garantizan actualizaciones.
-- Compatibilidad: solo MLX/Metal en Apple Silicon; no hay pesos GGUF ni soporte CUDA en este export.
-- Dependencia de la rama `main` de `mlx-vlm` para la visión; la versión publicada 0.6.1 no incluye `qwen3_5_vision`.
-- Decodificación voraz por defecto en el servidor MLX: sin fijar `temperature: 1.0` pueden aparecer bucles en prompts largos.
-- El repositorio puede requerir autenticación (`hf auth login`) mientras permanezca privado.
-- Los datos de velocidad (15,2 y 26,5 tok/s) son medidas del autor en un M4 Pro de 48 GB y no se han replicado de forma independiente.
+- Modelo abliterated: se han eliminado los rechazos, por lo que puede generar contenido que el modelo original declinaría. No es adecuado para aplicaciones dirigidas al público sin filtros adicionales.
+- Licencia "other": no es una licencia estándar y las condiciones exactas de uso comercial no están detalladas en la información disponible. Es imprescindible revisar los términos del modelo base Qwen antes de desplegarlo en producción.
+- Solo inglés declarado: no hay soporte multilingüe documentado, a diferencia de otras variantes de la familia Qwen.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual para esta cuantización; la compresión a 4 bits puede degradar sutilmente tareas de razonamiento frente al BF16, aunque el autor no aporta mediciones.
+- Decodificación greedy problemática: el servidor MLX usa greedy por defecto y el autor advierte de bucles en prompts largos; hay que forzar `temperature 1.0` en cada petición.
+- Dependencia de `mlx-vlm` desde `main`: la visión no está en la versión estable 0.6.1, lo que introduce riesgo de roturas por cambios en la rama principal.
+- Ecosistema restringido: el formato MLX solo se ejecuta en Apple Silicon; no hay pesos GGUF, ONNX ni safetensors estándar para vLLM o TGI.
+- Release obsoleta según el autor: la model card recomienda migrar a la línea Qwen3.8 NVFP4-MIXED para nuevos proyectos.
+- Longitud de contexto no documentada: no se puede planificar el uso en tareas de contexto largo sin verificar el límite real del modelo base.
+- Procedencia: es una cuantización de un tercero independiente, no una release oficial de Qwen; no ha pasado por los procesos de evaluación y alineamiento del equipo original.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-FP4
 - Modelo base BF16: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
-- Hermano MLX de 8 bits: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-8bit
+- Hermano MLX 8 bits: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-8bit
 - Drafter MTP: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter
-- Sucesor recomendado por el autor: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
-- Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
-- Documentación de uv: https://docs.astral.sh/uv/
-- Contenedores vLLM referenciados para la línea sucesora: ghcr.io/aeon-7/aeon-vllm-ultimate y ghcr.io/aeon-7/aeon-vllm-ultimate-rtx
-
-La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos resultados obtenidos fueron páginas corporativas de Microsoft sin relación con la ficha.
+- Sucesor recomendado (Qwen3.8 NVFP4-MIXED): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
+- Repositorio de recetas del autor: https://github.com/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED
+- mlx-vlm (librería de inferencia): https://github.com/Blaizzy/mlx-vlm
+- uv (gestor de Python usado en el quickstart): https://docs.astral.sh/uv/
+- Contenedor de despliegue en NVIDIA: `ghcr.io/aeon-7/aeon-vllm-ultimate:latest` (Spark / GB10) y `ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest` (RTX discretas)

@@ -2,90 +2,90 @@
 
 ## Resumen
 
-Este repositorio contiene los pesos GGUF del modelo Qwen3.6-35B-A3B en su variante decensurada, cuantizados con la técnica APEX (Adaptive Precision EXplorer). El modelo base es `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved`, que a su vez deriva de `Qwen/Qwen3.6-35B-A3B` de Alibaba, un modelo de arquitectura MoE con 35.100 millones de parámetros totales y aproximadamente 3.000 millones de parámetros activos por token. La versión decensurada se ha obtenido mediante el pipeline Heretic v1.3.0 + MPOA (abliteración y desbloqueo de rechazos), reduciendo los rechazos del modelo en un 88 % (10/100 frente a 83/100 en el original) con una divergencia KL de solo 0,0015 respecto al modelo base, lo que indica una mínima pérdida de calidad.
+Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF es una cuantización en formato GGUF del modelo llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved, a su vez derivado del Qwen3.6-35B-A3B de Alibaba. El autor de esta publicación es SC117, que aplica la técnica de cuantización APEX, una estrategia de precisión mixta consciente de la arquitectura MoE que clasifica cada tensor según su rol (experto enrutado, experto compartido o atención) y aplica un gradiente de precisión por capas.
 
-La relevancia de este repositorio radica en dos aspectos: por un lado, ofrece una versión sin censura de un modelo MoE de alto rendimiento, adecuada para experimentación en entornos donde los guardarraíles del modelo original interfieren; por otro, aplica la cuantización APEX, una técnica específica para arquitecturas MoE que clasifica cada tensor según su función (experto enrutado, experto compartido o atención) y asigna una precisión por capa, logrando según el autor una perplejidad inferior a Q8_0 con la mitad del tamaño e incluso superando a F16 en algunos casos. El modelo conserva la predicción multi-token (MTP) nativa y una ventana de contexto de hasta 262.144 tokens. Se distribuye bajo licencia Apache 2.0 y el repositorio acumula más de 96.000 descargas.
+El modelo base es un transformer MoE de tipo qwen3_5_moe con capacidades multimodales (pipeline image-text-to-text). La variante "uncensored"/"heretic" implica que se ha aplicado un proceso de abliteration o decensurado para reducir los rechazos del modelo ante peticiones que el modelo original rechazaría. La variante "MTP Preserved" indica que se conserva el mecanismo de Multi-Token Prediction nativo del modelo original, y "Native" sugiere que no se ha alterado esa capacidad durante el proceso de modificación.
+
+La relevancia de esta ficha radica en que combina tres elementos poco habituales: un modelo MoE de gran tamaño con capacidades de visión, una modificación de alineación (uncensored) y una cuantización optimizada para MoE (APEX) que, según el autor, supera la perplejidad de Q8_0 con la mitad del tamaño e incluso supera a F16. El repositorio tiene 149 GB y acumula 45.300 descargas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) con atención y MTP nativo (Qwen 3.6) |
-| Parametros totales | 35.100 millones (35,1B) |
-| Parametros activos | ~3.000 millones (~3B) |
-| Longitud de contexto | 262.144 tokens (258K nativo) |
-| Tipos de cuantizacion | APEX (perfiles I-Compact, I-Balanced, I-Quality) |
+| Arquitectura | Transformer MoE (qwen3_5_moe), multimodal image-text-to-text |
+| Parametros totales | 446.571.248 según safetensors del repo; el nombre indica 35B-A3B (35B totales, 3B activos) |
+| Parametros activos | 3B (según nomenclatura A3B del nombre del modelo) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF con perfiles APEX: I-Compact (15,85 GB), I-Balanced (24,18 GB), I-Quality (21,90 GB) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizacion APEX) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo con librería transformers declarada) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B emplea una arquitectura MoE con un total de 35,1B parámetros, de los cuales se activan aproximadamente 3B en cada paso de inferencia. Incorpora predicción multi-token (MTP) nativa, lo que permite predecir varios tokens futuros simultáneamente y mejora la velocidad de decodificación. La ventana de contexto alcanza los 262.144 tokens, lo que habilita el procesamiento de documentos muy extensos.
+El modelo base es un transformer con arquitectura Mixture-of-Experts (MoE) de la familia Qwen3.5, con 35B parámetros totales y 3B activos por token, lo que permite un coste de inferencia muy inferior al de un modelo denso del mismo tamaño. Incorpora capacidades multimodales de entrada imagen-texto, y conserva el mecanismo Native MTP (Multi-Token Prediction) del modelo original, que permite predecir varios tokens por paso y acelerar la decodificación.
 
-Sobre esta base, el autor `llmfan46` aplicó el proceso Heretic v1.3.0 combinado con MPOA (Multi-Parameter Optimization Alignment) para eliminar los comportamientos de rechazo y los filtros de seguridad del modelo original, produciendo la variante "uncensored-heretic". Según los datos publicados, esta intervención reduce los rechazos de 83/100 a 10/100 en una prueba de 100 prompts sensibles, con una divergencia KL de 0,0015 respecto al modelo original, lo que sugiere que las capacidades generales se mantienen prácticamente intactas.
-
-Posteriormente, el repositorio actual aplica la cuantización APEX, desarrollada por mudler. APEX es una técnica de cuantización mixta de precisión consciente de la arquitectura MoE: clasifica cada tensor según su rol (experto enrutado, experto compartido o atención) y aplica un gradiente de precisión por capa, otorgando mayor precisión a las capas de borde más sensibles y comprimiendo con mayor agresividad las capas intermedias redundantes. El resultado son tres perfiles de cuantización con tamaños de 15,85 GB (I-Compact), 24,18 GB (I-Balanced) y 21,90 GB (I-Quality), según la actualización de junio de 2026.
+Sobre el modelo base se aplicó un proceso de "abliteration"/"heretic" para eliminar o atenuar los comportamientos de rechazo, y posteriormente SC117 aplicó la cuantización APEX. Esta técnica, descrita en el repositorio github.com/mudler/apex-quant, asigna precisión diferenciada por tensor: mayor precisión en las capas extremas (más sensibles) y compresión más agresiva en las capas intermedias redundantes. El autor afirma que APEX supera la perplejidad de Q8_0 con la mitad del tamaño e incluso supera a F16. No se dispone de datos sobre el número de tokens de entrenamiento, composición del dataset ni detalles de RLHF/DPO del modelo original en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto, razonamiento, codigo y matematicas, heredadas del modelo Qwen 3.6 base.
-- Prediccion multi-token (MTP) nativa, que acelera la decodificacion y mejora la coherencia en generaciones largas.
-- Ventana de contexto de 262.144 tokens, apta para analisis de documentos extensos y conversaciones de multiples turnos.
-- Sin filtros de censura ni rechazos: responde a prompts sensibles sin los guardarrailes del modelo original (comportamiento "uncensored").
-- Soporte de tool calling y function calling, tipico de la familia Qwen 3.6 (no confirmado explicitamente en la documentacion del repositorio, pero esperable por la base).
-- Capacidades de agente y razonamiento multi-paso, derivadas del modelo base.
-- El pipeline del modelo base se etiqueta como image-text-to-text, aunque la version GGUF aqui publicada es exclusivamente de texto; la capacidad de vision no esta disponible en estos pesos.
+- Generación de texto y razonamiento multi-turno.
+- Procesamiento de imagen y texto combinados (pipeline image-text-to-text).
+- Generación de código y matemáticas (capacidad esperable en la familia Qwen, aunque no confirmada explícitamente en la información disponible).
+- Multi-Token Prediction nativo (MTP) para acelerar la decodificación.
+- Comportamiento "uncensored": menor tasa de rechazos ante peticiones que el modelo original rechazaría.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible (el repo incluye documentación en inglés y chino, pero no se detallan idiomas soportados).
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: la ventana de contexto de 262K tokens permite gestionar conversaciones multi-turno con historial completo y documentos de referencia extensos, manteniendo el estado de la conversacion sin truncamientos.
-- Generacion de codigo en produccion: con soporte de tool calling, puede integrarse en pipelines de CI/CD para autogenerar pruebas, documentacion o parches, aprovechando su capacidad de razonamiento para tareas complejas de refactorizacion.
-- Analisis de documentos legales o academicos: el contexto largo posibilita procesar contratos, tesis o expedientes completos en una sola pasada, extrayendo resumenes, clausulas relevantes o inconsistencias.
-- Creacion de contenido creativo sin restricciones: escritura de ficcion, guiones o dialogos con tematicas adultas o controvertidas, donde el modelo original rechazaria la peticion.
-- Simulacion de roles y chatbots de personaje: al no tener filtros de rechazo, puede mantener personajes con personalidades extremas o temas delicados sin interrumpir la interaccion.
-- Investigacion en seguridad y alineacion de modelos: permite estudiar el comportamiento de un modelo sin guardarrailes, analizando sesgos, riesgos de alucinacion y estrategias de mitigacion.
-- Despliegue en hardware consumer: gracias a la cuantizacion APEX I-Compact (15,85 GB), puede ejecutarse en GPUs de 16-24 GB como la RTX 4080/4090, facilitando prototipos locales.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar el efecto del proceso de abliteration comparando respuestas con el modelo original, útil para equipos que analizan mecanismos de rechazo y sesgos.
+- Generación creativa sin restricciones: escritura de ficción, guiones o contenido narrativo que requiera temáticas que los modelos alineados suelen rechazar, con la ventaja de un MoE de 3B activos que reduce el coste por token.
+- Despliegue en hardware de consumo: con el perfil I-Compact de 15,85 GB, puede ejecutarse en GPUs de 24 GB (RTX 3090/4090) mediante llama.cpp u Ollama, lo que facilita prototipado local de un modelo de 35B totales.
+- Procesamiento de documentos con imágenes: al ser image-text-to-text, puede extraer y razonar sobre información de capturas, diagramas o documentos escaneados en pipelines de digitalización.
+- Evaluación de cuantizaciones MoE: sirve como banco de pruebas para comparar APEX frente a Q8_0, Q4_K_M y otras técnicas en términos de perplejidad y calidad, dado que el autor publica varios perfiles del mismo modelo.
+- Generación de código en entornos controlados: con 3B activos y contexto MoE, puede integrarse en asistentes de programación locales donde no se desea enviar código a APIs externas, aunque la ausencia de datos de benchmarks obliga a validar la calidad empíricamente.
+- Fine-tuning y experimentación: al estar bajo licencia Apache 2.0 y en formato GGUF, puede servir de base para investigación, aunque el fine-tuning directo sobre GGUF requiere conversión previa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible para esta version cuantizada. El autor del repositorio afirma que la cuantizacion APEX supera a Q8_0 en perplejidad con la mitad del tamano e incluso supera a F16, pero no se proporcionan cifras concretas. El modelo base Qwen3.6-35B-A3B deberia presentar resultados competitivos dentro de su categoria, pero no se dispone de datos verificables en esta ficha.
+No se han publicado resultados de benchmarks en la información disponible. El autor únicamente afirma, sin cifras concretas, que APEX supera la perplejidad de Q8_0 con la mitad del tamaño y supera a F16, pero no se proporcionan valores numéricos de perplejidad ni resultados de MMLU, HumanEval, GSM8K u otras evaluaciones.
 
 ## Requisitos de hardware
 
-- Perfil I-Compact: 15,85 GB de tamano de archivo; requiere aproximadamente 16-18 GB de VRAM para inferencia en FP16 de activaciones. Cabe en una RTX 4080/4090 (16-24 GB) o en una RTX 3090 (24 GB).
-- Perfil I-Balanced: 24,18 GB; requiere unos 26-28 GB de VRAM. Necesita una GPU profesional como A100 40GB o RTX 4090 con cuantizacion adicional de activaciones.
-- Perfil I-Quality: 21,90 GB; similar al anterior, recomendado para A100 o H100.
-- Segun la busqueda web, a Q4_K_M el modelo necesita aproximadamente 21,45 GB de VRAM, lo que lo situa en el rango de GPUs de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM puede cargar GGUF mediante el backend de llama.cpp, aunque con menor rendimiento que los formatos nativos.
-- Latencia y throughput: no disponibles en la documentacion. Como referencia, un MoE con 3B activos suele ofrecer velocidades de decodificacion de 30-60 tokens/s en una RTX 4090 con cuantizacion 4-bit, pero no hay mediciones oficiales.
+- VRAM estimada: aproximadamente 16 GB para el perfil I-Compact (15,85 GB de pesos), 22 GB para I-Quality (21,90 GB) y 24-25 GB para I-Balanced (24,18 GB), más overhead de contexto KV cache.
+- GPU recomendadas: RTX 3090/4090 (24 GB) para I-Compact e I-Quality; A100 40/80 GB o H100 para I-Balanced con contextos largos y mayor throughput.
+- Cabe en GPU de consumo: sí, los perfiles I-Compact e I-Quality caben en GPUs de 24 GB; I-Balanced requiere ajustar el contexto o usar offloading parcial.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el repo declara compatibilidad con transformers y endpoints_compatible.
+- Latencia y throughput: no disponibles. La arquitectura MoE con 3B activos y el MTP nativo deberían ofrecer un throughput notablemente superior a un denso de 35B, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B (base) | 35,1B | ~3B | 262K | Apache 2.0 | Modelo original con guardarrailes |
-| Qwen3.6-35B-A3B-uncensored-heretic | 35,1B | ~3B | 262K | Apache 2.0 | Version decensurada (Heretic + MPOA) |
-| Este repositorio (APEX GGUF) | 35,1B | ~3B | 262K | Apache 2.0 | Cuantizacion APEX del modelo decensurado |
-| Qwen3-32B (generacion anterior) | 32,8B | ~3B | 131K | Apache 2.0 | MoE similar, sin MTP nativo, contexto menor |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| SC117/Qwen3.6-35B-A3B-uncensored-heretic-APEX-GGUF | 35B (nombre) | 3B | no disponible | Apache 2.0 | GGUF APEX | Cuantización MoE-aware, uncensored, MTP |
+| llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved | 35B (nombre) | 3B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar del que deriva |
+| Qwen/Qwen3.6-35B-A3B | 35B (nombre) | 3B | no disponible | Apache 2.0 | safetensors | Modelo original alineado de Alibaba |
 
-No se dispone de datos comparativos de rendimiento entre estas variantes en la informacion proporcionada. La comparativa se limita a caracteristicas arquitectonicas y de licencia.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de guardarrailes: al ser una version decensurada, el modelo puede generar contenido ofensivo, ilegal, peligroso o moralmente cuestionable. No es apto para aplicaciones orientadas al publico general sin un sistema de moderacion externo.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede inventar hechos, citas o datos. La ausencia de filtros no reduce este riesgo y puede amplificarlo en contextos delicados.
-- Sesgos conocidos: el modelo base puede presentar sesgos de genero, raza o ideologia; la eliminacion de rechazos no corrige estos sesgos, sino que los expone sin atenuacion.
-- Limitaciones de idioma: no se han publicado los idiomas soportados; aunque Qwen 3.6 es multilingue, no hay garantia de cobertura uniforme.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero el despliegue de un modelo sin censura puede incurrir en responsabilidades legales o de plataforma (violacion de terminos de servicio de proveedores cloud).
-- La cuantizacion APEX, aunque optimizada, introduce perdida de precision respecto al modelo en FP16; en tareas de razonamiento complejo o generacion de codigo, los perfiles mas agresivos (I-Compact) pueden degradar la calidad.
-- El formato GGUF no soporta la modalidad de vision del modelo base; si se necesita procesamiento de imagenes, debe usarse el modelo original en safetensors.
-- El pipeline se etiqueta como image-text-to-text, pero los pesos GGUF aqui publicados son exclusivamente de texto; cualquier uso multimodal requerira el modelo base sin cuantizar.
+- El proceso "uncensored"/"heretic" elimina barreras de seguridad: el modelo puede generar contenido dañino, ilegal o éticamente problemático sin filtros, lo que desaconseja su uso en aplicaciones orientadas al público sin capas de moderación adicionales.
+- Riesgo elevado de alucinación: no hay benchmarks publicados que validen la calidad tras el proceso de abliteration y la cuantización; la modificación de pesos puede degradar capacidades de razonamiento.
+- La cuantización GGUF, aunque APEX afirme superar a Q8_0 y F16, introduce pérdida de precisión no cuantificada con métricas públicas en esta ficha.
+- Idiomas soportados no documentados: no se puede garantizar un rendimiento multilingüe equilibrado.
+- Longitud de contexto no disponible: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
+- Aunque la licencia es Apache 2.0, el uso comercial de un modelo decensurado conlleva riesgos legales y reputacionales según la jurisdicción y el contenido generado.
+- El tamaño del repo (149 GB) y la presencia de múltiples perfiles de cuantización exigen seleccionar cuidadosamente el archivo antes de descargar.
+- No se documentan sesgos específicos, pero la modificación de alineación puede amplificar sesgos presentes en los datos originales.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF
-- Modelo base decensurado: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
-- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Repositorio de APEX: https://github.com/mudler/apex-quant
-- Guia de ejecucion en 12GB VRAM (referencia externa): https://github.com/shiqikuangsan31/Qwen3.6-35B-12GB-VRAM-Guide
+- Hugging Face: https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF
+- Modelo base: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
+- Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Licencia: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
+- Documentación en chino: https://huggingface.co/SC117/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-APEX-GGUF/blob/main/README_zh.md
+- Repositorio APEX: https://github.com/mudler/apex-quant

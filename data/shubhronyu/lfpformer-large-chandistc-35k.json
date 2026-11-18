@@ -5,7 +5,7 @@
   "author": "Shubhronyu",
   "url": "https://huggingface.co/Shubhronyu/LFPformer-large-ChanDistc-35k",
   "created_at": "2026-11-08T21:40:58.000Z",
-  "updated_at": "2026-11-16T19:53:56.000Z",
+  "updated_at": "2026-11-17T21:37:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 317380864,
   "parameters_human": "317.4M",

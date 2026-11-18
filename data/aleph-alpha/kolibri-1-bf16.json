@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 70,
-  "downloads_30d": 2639,
+  "downloads_30d": 2660,
   "trending_score": 14,
   "parameters": 78103074560,
   "parameters_human": "78.10B",
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Aleph | Vente de matériel pédagogique",
-      "url": "https://aleph.pro/",
-      "snippet": "La société Aleph Pro diffuse des outils pédagogiques, rapporteurs circulaires et « règle-équerres », qui favorisent l’apprentissage …"
-    },
-    {
-      "title": "Aleph (lettre) — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Aleph_(lettre)",
-      "snippet": "Aleph ou alef (hébreu : אָלֶף), א, est la première lettre de l' alphabet hébreu, où elle note le phonème / ʔ / (coup de glotte). Le …"
-    },
-    {
-      "title": "Aleph : symbolisme et signification spirituelle (Kabbale)",
-      "url": "https://www.jepense.org/aleph-symbolisme-signification/",
-      "snippet": "Feb 28, 2021 · Aleph est la première lettre de l’alphabet hébraïque, qui en comporte 22. Elle correspond à la lettre A de la plupart …"
-    },
-    {
-      "title": "Commander nos produits - Aleph",
-      "url": "https://aleph.pro/10-nos-produits",
-      "snippet": "Pour les commandes réglées par mandat administratif, merci de vous rendre sur la page chèques et mandats"
-    },
-    {
-      "title": "Aleph - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Aleph",
-      "snippet": "Aleph (also spelled alef or alif, transliterated ʾ) is the first letter of the Semitic abjads, including Phoenician ʾālep 𐤀, Hebrew ʾālef א, …"
-    }
-  ]
+  "sources": []
 }

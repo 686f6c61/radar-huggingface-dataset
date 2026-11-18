@@ -2,88 +2,127 @@
 
 ## Resumen
 
-Minimax H3 Latent Upscaler es un modelo de upscaling espacial en espacio latente, desarrollado por LBH-123-AI, diseñado específicamente para acelerar la generación de vídeo de alta resolución con el modelo de generación de vídeo MiniMax H3. En lugar de decodificar los latentes de baja resolución a píxeles, aplicar un upscale tradicional y volver a codificar (un proceso costoso que implica el VAE de ~5B parámetros de H3), este modelo opera directamente sobre los latentes de 24 canales del VAE de H3, aumentando la resolución espacial (H×W) mientras preserva la dimensión temporal.
+Minimax H3 Latent Upscaler es un modelo neuronal de superresolución que opera directamente en el espacio latente del VAE de Minimax H3, un modelo de generación de vídeo. Lo desarrolla el usuario LBH-123-AI y se distribuye bajo licencia Apache 2.0. Su función es ampliar la resolución espacial (alto × ancho) de los latentes de 24 canales que produce el VAE de Minimax H3, preservando la dimensión temporal, de modo que se pueda generar vídeo a baja resolución y refinarlo después sin pasar por el costoso ciclo de decodificación, escalado en píxeles y recodificación a través del VAE de aproximadamente 5.000 millones de parámetros.
 
-El modelo se presenta como una solución para evitar los artefactos de "ghosting" o doble imagen que introduce la interpolación bilineal o bicúbica naive sobre latentes, y para reducir significativamente el tiempo de generación. Está pensado para integrarse en flujos de trabajo de ComfyUI mediante un nodo personalizado complementario, y ofrece tres checkpoints en distintas precisiones (bfloat16, float16 y float32) que comparten la misma arquitectura de convolución 3D. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones significativas.
+El repositorio contiene dos variantes. La versión 3D original (3D_Conv_v1) tiene 345.280.216 parámetros y emplea convoluciones 3D con componente temporal. La versión 2D publicada el 10 de noviembre de 2026 (2D_Conv_v1) reduce el cómputo a 182.140.312 parámetros, la mitad aproximadamente, y mejora la calidad en la mayoría de escalas, además de incorporar seis niveles ajustables de nitidez.
 
-## Especificaciones tecnicas
+El modelo es relevante porque elimina la necesidad de interpolar latentes con métodos ingenuos (bilineal o bicúbico), que introducen artefactos de doble imagen y ghosting, y porque acelera de forma sustancial la generación de vídeo en alta resolución al evitar el cuello de botella del VAE. Está pensado para integrarse en flujos de trabajo de ComfyUI.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Red de convolucion 3D con convolucion temporal e interpolacion trilineal |
-| Parametros totales | no disponible (los checkpoints pesan ~691 MB en bf16/fp16 y ~1.38 GB en fp32) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (opera sobre latentes de video, no sobre texto) |
-| Tipos de cuantizacion | bfloat16, float16, float32 (según checkpoint) |
-| Idiomas soportados | no disponible (modelo de vision/video, no textual) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | SafeTensors (bf16, fp16) y PyTorch .pth (fp32) |
+| Arquitectura | Red convolucional en espacio latente (3D_Conv_v1: convoluciones 3D con convolución temporal; 2D_Conv_v1: convoluciones 2D) |
+| Parámetros totales | 3D_Conv_v1: 345.280.216; 2D_Conv_v1: 182.140.312 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica; opera sobre latentes de vídeo) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible (modelo no lingüístico) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de convolucion 3D con convolucion temporal e interpolacion trilineal. Segun la model card, se inspira en el upscaler espacial LTX 2.3 (`ltx-2.3-spatial-upscaler-x2-1.1.safetensors`) y en el enfoque de upscaling neuronal en espacio latente de Ttl (`ComfyUi_NNLatentUpscale`). La red opera directamente sobre los latentes de 24 canales del VAE de MiniMax H3, preservando la dimension temporal mientras modifica la resolucion espacial.
+El modelo es un upscaler convolucional que trabaja sobre latentes de 24 canales del VAE de Minimax H3. La variante 3D_Conv_v1 utiliza convoluciones 3D, con una convolución temporal explícita que mantiene la coherencia entre fotogramas a lo largo del eje temporal. La variante 2D_Conv_v1 prescinde de esa componente temporal y opera con convoluciones 2D, lo que reduce a la mitad el número de parámetros (182,1 M frente a 345,3 M) y el tamaño de los checkpoints.
 
-El entrenamiento se realizo sobre aproximadamente 80.000 pares de muestras (latente de baja resolucion + objetivo de alta resolucion), con un equilibrio entre modalidades y factores de escala para maximizar la generalizacion. La distribucion aproximada es: ~70.000 pares de video y ~8.000 pares de imagenes 2K. La distribucion de factores de escala es: 40% a 2x, 10% a 1.5x, 10% a 2.5x, 10% a 3x, 10% a 4x y 10% a factores decimales arbitrarios entre 1.0x y 4.0x. No se menciona el uso de RLHF, DPO ni otras tecnicas de alineacion, ya que se trata de un modelo de regresion puramente visual.
+El entrenamiento se realizó sobre un conjunto de validación congelado de 2.500 pares, el mismo split usado durante el entrenamiento, y la cobertura de evaluación abarca 36 escalas entre 1,1× y 4,0×. La versión 3D se entrenó de forma nativa en cuatro escalas concretas (2×, 2,25×, 2,5× y 4×), lo que explica que solo supere a la 2D en esas cuatro escalas. La versión 2D incorpora seis niveles de nitidez ajustables (tier 1 a tier 6), donde el tier 1 es el más fiel y el tier 6 el más nítido; la versión 3D no dispone de este control y su nitidez equivale aproximadamente al tier 1 de la 2D. No se detalla en la información disponible la composición exacta del dataset de entrenamiento ni si se emplearon técnicas de RLHF o DPO, algo por otra parte poco habitual en modelos de superresolución.
 
 ## Capacidades
 
-- Upscaling espacial en espacio latente para latentes de video de MiniMax H3 (formato [B, 24, T, H/16, W/16]).
-- Soporte de factores de escala continuos entre 1.0x y 4.0x, con paso de 0.1 (por defecto 2.0x).
-- Preservacion de la dimension temporal: el upscaling se aplica solo a la resolucion espacial, no al numero de fotogramas.
-- Compatibilidad con los nodos ComfyUI dedicados "Minimax H3 Latent Upscaler (2D)" y "Minimax H3 Latent Upscaler (3D)".
-- Tres precisiones de checkpoint (bf16, fp16, fp32) para adaptarse a diferentes GPUs y requisitos de precision numerica.
-- Generalizacion a factores de escala intermedios gracias al entrenamiento con escalas arbitrarias.
+- Superresolución en espacio latente de vídeo: amplía la resolución espacial (H×W) de los latentes de 24 canales del VAE de Minimax H3 manteniendo intacta la dimensión temporal.
+- Soporte de escalas de 1,1× a 4,0×, con mejor comportamiento en el rango alto (3,1×–4,0×) en la variante 2D.
+- Control de nitidez en seis niveles (solo 2D_Conv_v1), desde el más fiel hasta el más nítido.
+- Preservación de la coherencia temporal en la variante 3D gracias a la convolución temporal.
+- Reducción de artefactos de ghosting y doble imagen respecto a la interpolación bilineal o bicúbica.
+- Integración con ComfyUI como nodo de upscaling latente.
+- No soporta tool calling, agentes, razonamiento multi-step ni capacidades multilingües: es un componente de un pipeline de generación de vídeo, no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Generacion de video de alta resolucion acelerada: el flujo tipico consiste en generar el video a baja resolucion (menos tokens de latente, mas rapido), aplicar el upscaler en el espacio latente y luego muestrear/refinar a la resolucion objetivo. Esto evita el costoso ciclo decode → upscale en pixeles → encode.
-- Post-procesado en ComfyUI: integrado como nodo personalizado, permite a los usuarios de ComfyUI aplicar upscaling latente a videos generados con MiniMax H3 sin salir del grafo de nodos.
-- Reduccion de artefactos de interpolacion: al ser un modelo aprendido, evita el ghosting y las dobles imagenes que producen los metodos clasicos (bilinear/bicubico) sobre latentes.
-- Ahorro de VRAM en generacion de video: al trabajar a baja resolucion durante el muestreo y upscalar despues, se reduce la memoria necesaria para el proceso de generacion completo.
-- Prototipado rapido de videos: los creadores pueden generar borradores de baja resolucion rapidamente y upscalearlos solo cuando el resultado final sea aceptable, ahorrando tiempo de computo.
-- Refinamiento de videos 2K a partir de imagenes: los ~8.000 pares de imagenes 2K del entrenamiento sugieren que el modelo tambien puede aplicarse a latentes de imagenes estaticas, aunque su diseno principal es para video.
+- Aceleración de generación de vídeo en alta resolución: se genera el vídeo a baja resolución (muchos menos tokens latentes y por tanto mucho más rápido), se aplica este upscaler sobre el latente y se vuelve a muestrear a la resolución objetivo para recuperar detalle. Evita el ciclo decodificar-escalar-codificar a través del VAE de unos 5.000 millones de parámetros.
+- Refinado iterativo en pipelines de difusión de vídeo: el upscaler permite encadenar pasos de baja y alta resolución dentro de un mismo flujo de muestreo, reduciendo el coste total frente a generar directamente en la resolución final.
+- Integración en ComfyUI: se usa como nodo dentro de grafos de generación de vídeo con Minimax H3, lo que facilita su adopción por parte de artistas y estudios que ya trabajan con esa herramienta.
+- Restauración y ampliación de material ya generado: dado un latente de baja resolución, se puede ampliar hasta 4× con la variante 2D en el rango 3,1×–4,0×, donde la mejora de MSE latente sobre trilineal alcanza el 87,1 %.
+- Sustitución de interpolación ingenua en producción: en pipelines existentes que hoy usan bilineal o bicúbico, el cambio a este upscaler reduce el chroma shift del 28,3 % al 16,4 % y eleva el PSNR decodificado de 23,54 a 30,47.
+- Escalado controlado con nitidez ajustable: en la variante 2D, el operador puede elegir el tier de nitidez según el contenido (tier 1 para máxima fidelidad, tier 6 para material que requiere más definición), algo útil en flujos de posproducción.
+- Investigación en upscaling latente: sirve como referencia reproducible para estudiar superresolución en espacio latente de VAEs de vídeo, dado que el autor publica un informe comparativo detallado con 36 escalas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas como PSNR, SSIM, LPIPS ni comparaciones de velocidad frente a metodos alternativos. Tampoco se proporcionan datos de latencia o throughput.
+Resultados publicados por el autor sobre 2.500 pares de validación, 36 escalas de 1,1× a 4,0×. Las métricas latentes se calculan sobre latentes normalizados; las de píxel se decodifican a través del VAE real de Minimax H3.
+
+| Métrica | Trilineal (base) | 3D_Conv_v1 | 2D_Conv_v1 |
+|---|---:|---:|---:|
+| MSE latente (mejora media sobre trilineal, 36 escalas) | base | +61,1 % | +84,7 % |
+| PSNR decodificado (media, mayor es mejor) | 23,54 | 29,30 | 30,47 |
+| Nitidez (ratio de gradiente, 1,0 = referencia) | 1,429 | 0,869 | 0,897 |
+| Desviación de croma (menor es mejor) | 28,3 % | 17,9 % | 16,4 % |
+| Parámetros | — | 345.280.216 | 182.140.312 (52,8 %) |
+| Niveles de nitidez ajustables | — | ninguno | 6 (t1–t6) |
+
+Mejora de MSE latente sobre trilineal por rango de escala:
+
+| Rango de escala | Escalas | 3D_Conv_v1 | 2D_Conv_v1 |
+|---|---:|---:|---:|
+| 1,1× – 1,4× | 5 | +28,1 % | +80,3 % |
+| 1,5× – 2,0× | 7 | +60,9 % | +83,1 % |
+| 2,1× – 3,0× | 12 | +64,3 % | +85,6 % |
+| 3,1× – 4,0× | 12 | +70,3 % | +87,1 % |
+
+Las únicas cuatro escalas donde la variante 3D supera a la 2D son exactamente las de su entrenamiento nativo:
+
+| Escala | Ventaja de 3D sobre 2D |
+|---|---:|
+| 2× | 11,0 % mejor |
+| 2,25× | 7,5 % mejor |
+| 2,5× | 12,5 % mejor |
+| 4× | 30,5 % mejor |
+
+Escalera de nitidez de 2D_Conv_v1 (datos parciales en la información disponible):
+
+| Tier | MSE latente | PSNR | Nitidez (ratio de gradiente) | Desviación de croma |
+|---|---:|---:|---:|---:|
+| t1 (más fiel) | 0,06835 | 31,18 | 0,947 | no disponible |
 
 ## Requisitos de hardware
 
-- El checkpoint bf16 (~691 MB) esta optimizado para GPUs Ampere o Ada (serie RTX 30/40, A100, etc.) gracias a la aceleracion nativa de bfloat16.
-- El checkpoint fp16 (~691 MB) ofrece un equilibrio entre velocidad y memoria y es compatible con la mayoria de GPUs modernas.
-- El checkpoint fp32 (~1.38 GB) es el mas preciso numericamente y puede ejecutarse en cualquier GPU, aunque con mayor consumo de memoria.
-- La VRAM necesaria para el upscaler en si es reducida (menos de 2 GB en fp32), pero el flujo completo de generacion de video con MiniMax H3 requiere mucha mas memoria; el upscaler esta disenado para reducir ese requisito al permitir generar a baja resolucion.
-- El despliegue se realiza principalmente a traves de ComfyUI con el nodo personalizado `Comfyui_Minimax_h3_latent_Upscaler` (repositorio de GitHub). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
-- No se proporcionan datos de latencia o throughput estimados.
+- Tamaño del repositorio: 4,2 GB, lo que incluye los checkpoints de ambas variantes y los ejemplos.
+- VRAM estimada: no disponible de forma explícita. Al tratarse de un modelo de 182 M (2D) o 345 M (3D) parámetros, los pesos ocupan del orden de 0,4–0,7 GB en fp16/fp32, pero el consumo real depende sobre todo del tamaño de los latentes de vídeo de entrada y del VAE de Minimax H3 con el que se combine.
+- GPU recomendadas: no disponible. Cabe esperar que quepa en GPU de consumo (RTX 3060 en adelante) para los pesos del upscaler, pero el VAE de ~5.000 millones de parámetros del pipeline completo condiciona el requisito real de memoria.
+- Cabe en GPU de consumo: sí para el upscaler en sí; el pipeline completo depende del VAE y del modelo de difusión de Minimax H3.
+- Opciones de despliegue: ComfyUI (integración nativa indicada en la model card), PyTorch con safetensors. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles. La model card indica que el pipeline ahorra tiempo de generación al evitar el round-trip por el VAE, pero no publica cifras concretas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos cuantitativos de comparacion. Sin embargo, existen alternativas en el ecosistema de MiniMax H3:
+No se dispone de información sobre modelos comparables de upscaling latente para Minimax H3 en la información proporcionada. La comparación más directa disponible es interna, entre las dos variantes del propio modelo y frente a la interpolación trilineal:
 
-| Modelo | Enfoque | Licencia | Formato |
+| Criterio | Trilineal | 3D_Conv_v1 | 2D_Conv_v1 |
 |---|---|---|---|
-| Minimax H3 Latent Upscaler (LBH-123-AI) | Upscaler latente aprendido (convolucion 3D) | Apache-2.0 | SafeTensors / .pth |
-| Mamad8 2x Latent Upscaler | Upscaler latente limpio 2x, dos nodos ComfyUI | no disponible | no disponible |
-| ComfyUI-MiniMaxH3_LatentUpscaler (Tr1dae) | Nodo ComfyUI que usa el upscaler stock de ComfyUI (no aprendido) | no disponible | no disponible |
-
-La diferencia principal es que el modelo de LBH-123-AI es un upscaler neuronal entrenado, mientras que el de Tr1dae utiliza el upscaler stock de ComfyUI (basado en interpolacion) y el de Mamad8 parece ser tambien un upscaler latente, pero no se dispone de detalles tecnicos. El modelo de LBH-123-AI ofrece factores de escala continuos hasta 4x y tres precisiones, lo que le da flexibilidad frente a soluciones fijas de 2x.
+| Tipo | Interpolación clásica | Red convolucional 3D | Red convolucional 2D |
+| Parámetros | — | 345,3 M | 182,1 M |
+| Mejora MSE latente | base | +61,1 % | +84,7 % |
+| PSNR decodificado | 23,54 | 29,30 | 30,47 |
+| Nitidez ajustable | no | no | sí (6 tiers) |
+| Licencia | — | Apache 2.0 | Apache 2.0 |
 
 ## Limitaciones y advertencias
 
-- El modelo esta disenado exclusivamente para los latentes de MiniMax H3 (24 canales, formato especifico). No funcionara con otros VAE o modelos de video sin adaptacion.
-- No se han publicado evaluaciones de calidad perceptual ni metricas objetivas; el rendimiento real en terminos de fidelidad visual no esta verificado de forma independiente.
-- El entrenamiento se basa en ~80.000 pares, una cantidad moderada; puede haber sesgos hacia los factores de escala mas frecuentes (2x) y hacia los tipos de contenido del dataset de entrenamiento.
-- La model card no especifica la resolucion maxima de salida soportada ni el comportamiento con videos de duracion extrema.
-- Aunque la licencia es Apache-2.0, el modelo depende de MiniMax H3, cuyo modelo base puede tener su propia licencia y restricciones de uso; es necesario verificar la licencia de H3 antes de usar este upscaler en produccion.
-- No se proporcionan garantias de ausencia de artefactos en todos los casos; el upscaler puede fallar en contenido muy alejado de la distribucion de entrenamiento.
+- La variante 3D solo es superior en 2×, 2,25×, 2,5× y 4×; en el resto de escalas conviene usar la 2D, que además tiene la mitad de parámetros.
+- La variante 3D degrada de forma notable por debajo de 1,5× según el informe del autor.
+- La nitidez de la variante 3D equivale aproximadamente al tier 1 de la 2D; no permite ajuste fino.
+- El modelo está acoplado al VAE de 24 canales de Minimax H3: no es un upscaler genérico y no funcionará con otros VAEs sin reentrenamiento.
+- Los resultados publicados proceden del propio autor y de un split de validación congelado del entrenamiento, no de una evaluación independiente.
+- No se documentan sesgos, riesgos de alucinación ni limitaciones idiomáticas porque el modelo no procesa texto ni lenguaje; los sesgos del pipeline final dependerán del modelo de generación de vídeo de Minimax H3.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Minimax H3 con el que se combine.
+- No se especifican tipos de cuantización soportados ni requisitos de VRAM del pipeline completo, lo que dificulta planificar el despliegue en producción sin pruebas propias.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler
-- Nodo de ComfyUI complementario: https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler
-- Referencia de arquitectura LTX 2.3: no disponible directamente, pero se menciona el archivo `ltx-2.3-spatial-upscaler-x2-1.1.safetensors`
-- Referencia de upscaling latente de Ttl: https://github.com/Ttl/ComfyUi_NNLatentUpscale
-- Coleccion MiniMax H3 en Hugging Face: https://huggingface.co/collections/MiniMaxAI/minimax-h3
-- Guia de instalacion local de MiniMax H3: https://kingy.ai/ai/ai-guides/minimax-h3-local-installation-hardware-guide/
-- Repositorio oficial de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
-- Articulo sobre upscaler de Mamad8: https://comfyui-wiki.com/en/news/2026-08-08-minimax-h3-latent-upscaler
+- README en inglés: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/blob/main/README.md
+- README en chino: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/blob/main/README_zh.md
+- Informe comparativo completo 3D vs 2D (HTML, 9,3 MB): https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/blob/main/examples/3D_Conv_v1_vs_2D_Conv_v1.html
+- Ejemplo de vídeo comparativo: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/examples/Minimax_h3_latent_Upscaler_001.mp4
+- Ejemplo de imagen comparativa: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/examples/Minimax_h3_latent_Upscaler_002.jpg
+- Gráfico de MSE latente por escala: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/examples/3D_Conv_v1_vs_2D_Conv_v1.png

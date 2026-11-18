@@ -2,74 +2,87 @@
 
 ## Resumen
 
-Pixal3D es un modelo de generacion de objetos tridimensionales a partir de una imagen unica, desarrollado por TencentARC y presentado en SIGGRAPH 2026. Este repositorio de Comfy-Org contiene los ficheros del modelo reempaquetados para su uso directo en ComfyUI, lo que facilita su integracion en flujos de trabajo de generacion de activos 3D sin necesidad de configuraciones complejas. El modelo es de tipo difusion, especializado en la reconstruccion de mallas con texturas PBR a partir de una sola fotografia.
+Pixal3D es un modelo de difusión para generación de contenido 3D desarrollado por TencentARC (repositorio original) y reempaquetado por Comfy-Org para su uso directo en ComfyUI. El modelo resuelve el problema de la reconstrucción y generación de activos 3D a partir de imágenes: convierte una sola imagen o un conjunto de vistas múltiples en una malla 3D con textura, apoyándose en los VAE de forma y textura de TRELLIS.2 y en un codificador visual DINOv3 para la extracción de características.
 
-La relevancia actual radica en la demanda de herramientas open source para la creacion de contenido 3D para juegos, realidad virtual y diseno. El modelo ofrece un equilibrio entre calidad y velocidad, siendo capaz de generar una malla texturizada en aproximadamente 3 a 5 minutos en hardware de consumo. La licencia MIT del repositorio permite un uso amplio, aunque el modelo original de TencentARC tiene una licencia academica, lo que debe tenerse en cuenta en entornos comerciales.
+La relevancia actual del modelo radica en su integración con el ecosistema ComfyUI mediante archivos de pesos en un solo fichero (`diffusion-single-file`), lo que elimina la necesidad de gestionar pipelines complejos de Python. El repositorio reúne los pesos en precisión bf16 e int8 con rotación de convoluciones (`convrot`), además de los componentes auxiliares (VAE de forma, VAE de textura y CLIP vision) necesarios para ejecutar los flujos de trabajo de imagen a modelo y de múltiples vistas a 3D.
+
+No se dispone de información pública sobre el número de parámetros, la longitud de contexto (no aplica a un modelo de difusión 3D) ni los datos de entrenamiento en la información proporcionada. El repositorio ocupa 36,4 GB e incluye variantes bf16 e int8, lo que sugiere un modelo de tamaño considerable orientado a inferencia en GPU.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Difusion (imagen a 3D, pixel-aligned) |
+| Arquitectura | modelo de difusión para generación 3D (single-file para ComfyUI); componentes auxiliares basados en TRELLIS.2 (VAE de forma y textura) y DINOv3 (CLIP vision) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (no aplica a modelos de difusion) |
-| Tipos de cuantizacion | bf16 (pixal3d_bf16.safetensors), int8_convrot (pixal3d_int8_convrot.safetensors) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible (no aplica a un modelo de difusión 3D) |
+| Tipos de cuantizacion | bf16 e int8 con rotación de convoluciones (`int8_convrot`) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (en este repositorio) / academica (modelo base original) |
-| Formato de pesos | safetensors (diffusion_models, clip_vision, vae) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (`pixal3d_bf16.safetensors`, `pixal3d_int8_convrot.safetensors`, `pixal3d_multiview_bf16.safetensors`, `pixal3d_multiview_int8_convrot.safetensors`, `dino_v3_L_naf_fp32.safetensors`, `trellis_2_shape_vae_bf16.safetensors`, `trellis_2_texture_vae_bf16.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles tecnicos especificos sobre la arquitectura interna o el proceso de entrenamiento en la informacion disponible. Sin embargo, los ficheros incluidos revelan componentes clave: un modelo de difusion principal (pixal3d_bf16.safetensors), un encoder de vision CLIP (dino_v3_L_naf) y dos autoencoders variacionales (VAE) para la forma y la textura (trellis_2_shape_vae y trellis_2_texture_vae). Esto sugiere un pipeline que extrae caracteristicas de la imagen de entrada mediante CLIP y luego genera una malla 3D y su textura mediante difusion latente, con los VAE encargandose de la decodificacion final a una representacion de forma y color.
+Pixal3D es un modelo de difusión orientado a la generación de geometría y textura 3D. La arquitectura se apoya en dos componentes diferenciados: un modelo de difusión principal para la generación de la forma y un modelo de difusión multivista (`pixal3d_multiview_*`) para la coherencia entre vistas. La decodificación de la geometría y de la textura se realiza mediante los VAE de TRELLIS.2 (`trellis_2_shape_vae_bf16` y `trellis_2_texture_vae_bf16`), mientras que la extracción de características visuales de las imágenes de entrada recae en un codificador DINOv3 de tamaño L (`dino_v3_L_naf_fp32`).
 
-El entrenamiento probablemente se realizo sobre un conjunto de datos de objetos 3D con sus correspondientes imagenes, aunque no se han publicado detalles sobre la cantidad de tokens, composicion del dataset ni tecnicas de alineacion como RLHF o DPO.
+El reempaquetado de Comfy-Org incluye variantes en bf16 y en int8 con rotación de convoluciones, una técnica de cuantización que reduce el error numérico en capas convolucionales y permite ejecutar el modelo con menor huella de VRAM manteniendo una calidad razonable. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO, ya que la model card del repositorio reempaquetado no detalla el proceso de entrenamiento del modelo original.
 
 ## Capacidades
 
-- Generacion de mallas 3D texturizadas (con mapas PBR) a partir de una imagen unica.
-- Integracion con ComfyUI mediante ficheros listos para usar en los directorios diffusion_models, clip_vision y vae.
-- Soporte de cuantizacion int8 para la capa de convolucion rotatoria, que reduce el uso de memoria sin perdida significativa de calidad.
-- Compatibilidad con flujos de trabajo de generacion de activos para videojuegos, animacion y visualizacion arquitectonica.
-- No se han documentado capacidades adicionales como generacion de video, audio o texto.
+- Generación de mallas 3D con textura a partir de una única imagen (flujo imagen a modelo).
+- Generación de 3D a partir de múltiples vistas de entrada (flujo multivista a 3D), con un modelo de difusión específico para garantizar coherencia entre vistas.
+- Decodificación separada de forma y textura mediante VAE dedicados de TRELLIS.2.
+- Extracción de características visuales con DINOv3-L para condicionar la generación.
+- Integración nativa con ComfyUI mediante archivos de pesos en un solo fichero y flujos de trabajo predefinidos.
+- Ejecución en bf16 e int8 cuantizado con rotación de convoluciones para ajustar el consumo de VRAM.
+- No se ha documentado soporte de tool calling, agentes, razonamiento multi-paso ni capacidades de audio o lenguaje natural.
 
 ## Casos de uso
 
-- Creacion de activos para videojuegos: un desarrollador puede generar una malla 3D con textura PBR a partir de un concepto dibujado o una fotografia, acelerando la fase de prototipado.
-- Realidad aumentada y virtual: los disenadores pueden convertir objetos reales en modelos 3D utilizables en entornos inmersivos, con texturas realistas listas para renderizado.
-- Comercio electronico: las tiendas online pueden generar modelos 3D de productos a partir de fotografias para ofrecer visualizacion interactiva a los clientes.
-- Arquitectura y diseno de interiores: a partir de una foto de un mueble o elemento decorativo, se obtiene un modelo 3D para integrarlo en maquetas o simulaciones.
-- Animacion y efectos visuales: los artistas pueden generar modelos 3D de props o personajes a partir de bocetos o fotografias, reduciendo el tiempo de modelado manual.
-- Educacion y documentacion: generar modelos 3D de piezas de museo o componentes tecnicos a partir de imagenes para su visualizacion en entornos educativos.
+- Prototipado rápido de activos 3D para videojuegos: a partir de un concepto 2D o una foto de referencia, el flujo imagen a modelo genera una malla texturizada que sirve como base para el modelado posterior en Blender o Maya.
+- Reconstrucción de objetos a partir de fotografías: el flujo multivista a 3D permite introducir varias vistas de un objeto físico y obtener una representación 3D coherente, útil en catalogación de productos o patrimonio.
+- Generación de assets para entornos de realidad aumentada: el modelo produce mallas con textura que pueden importarse en motores como Unity o Unreal para escenas AR.
+- Iteración de diseño industrial: los diseñadores pueden introducir bocetos o renders y obtener variantes 3D rápidas para evaluar volumetría y proporciones antes de comprometerse con un modelo CAD.
+- Creación de contenido para impresión 3D: el flujo imagen a modelo permite convertir una ilustración en una malla imprimible, con la textura como referencia de color para el postprocesado.
+- Automatización de pipelines de contenido en ComfyUI: al ser un fichero único compatible con ComfyUI, se puede encadenar con nodos de generación de imagen (por ejemplo, para generar la imagen de entrada y convertirla a 3D en el mismo grafo).
+- Docencia y demostraciones de generación 3D: la licencia MIT y la disponibilidad de pesos en bf16 e int8 facilitan su uso en entornos académicos y talleres prácticos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de evaluacion comparativa con otros modelos de imagen a 3D como TripoSR o Hunyuan3D en la documentacion proporcionada.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no se especifica, pero el repositorio de ComfyUI y las referencias a RTX 30/40/50 sugieren un minimo de 8 GB de VRAM para la cuantizacion int8, y posiblemente mas para la version bf16.
-- GPU recomendadas: NVIDIA RTX 30, 40 o 50 series (para Windows), con soporte para CUDA. Tambien puede funcionar en Linux con GPUs equivalentes.
-- Compatibilidad con consumer GPU: si, especialmente con la version int8_convrot que reduce el consumo de memoria.
-- Opciones de despliegue: ComfyUI (integracion directa), posiblemente via TGI o vLLM si se adapta, aunque no se documenta. Tambien se puede usar en entornos de inferencia personalizados.
-- Latencia: se estima entre 3 y 5 minutos para generar una malla texturizada PBR completa en hardware de gama media (RTX 3080 o similar), segun la informacion de la integracion de ComfyUI-Pixal3D.
+- VRAM estimada para inferencia: no disponible de forma explícita. El repositorio ocupa 36,4 GB e incluye variantes bf16 e int8; la variante int8 con rotación de convoluciones reduce la huella respecto a bf16, pero no se especifica la VRAM mínima.
+- GPU recomendadas: no disponible. Por el tamaño del repositorio y la presencia de variantes bf16, se requiere una GPU con suficiente VRAM para cargar los pesos del modelo de difusión, los dos VAE y el codificador DINOv3-L; no se confirma compatibilidad con GPU de consumo.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible.
+- Opciones de despliegue: ComfyUI (flujos de trabajo oficiales `3d_pixal3d_trellis2_image_to_model.json` y `3d_pixal3d_multi_views.json`). No se documentan opciones para vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo de lenguaje.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion comparativa con otros modelos de imagen a 3D en la informacion proporcionada. Se recomienda consultar la documentacion de TencentARC y los repositorios de integraciones para comparaciones informales.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Pixal3D (Comfy-Org) | difusión 3D imagen/multivista a malla | no disponible | no aplica | MIT | Hugging Face, ComfyUI |
+| TRELLIS.2 (Tencent) | generación 3D | no disponible | no aplica | no disponible en la información proporcionada | referenciado como componente VAE en este repositorio |
+| Modelos de generación 3D comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Licencia: el modelo base original (TencentARC/Pixal3D) tiene una licencia de uso exclusivamente academico, aunque el repositorio de Comfy-Org declara MIT. Es imprescindible verificar la licencia aplicable segun el uso previsto.
-- Sesgos y alucinaciones: como cualquier modelo de generacion, puede producir geometrias o texturas erroneas o incompletas, especialmente con imagenes poco claras o angulos poco comunes.
-- Dependencia de la calidad de la imagen de entrada: la precision de la malla generada depende de la resolucion, iluminacion y angulo de la fotografia.
-- Limitaciones de contexto: no aplicable, al ser un modelo de difusion.
-- Riesgo de sobreajuste a ciertos tipos de objetos: puede funcionar mejor con objetos comunes (muebles, vehiculos, etc.) que con formas muy abstractas.
-- Restricciones de hardware: requiere GPU NVIDIA con soporte CUDA para un rendimiento optimo; no se documenta compatibilidad con hardware AMD o Apple Silicon.
+- No se documentan sesgos conocidos del modelo; al ser un modelo de generación 3D, los sesgos potenciales estarían en la distribución de los datos de entrenamiento originales, no detallados en la información disponible.
+- Riesgo de alucinación geométrica: como modelo generativo, puede producir geometrías plausibles pero incorrectas respecto a la imagen de entrada, especialmente con vistas oclusivas o entradas ambiguas.
+- No se especifican limitaciones de idioma porque el modelo no procesa texto de forma nativa; la entrada es visual.
+- La licencia MIT permite uso comercial, pero el modelo se basa en TencentARC/Pixal3D y en componentes de TRELLIS.2 y DINOv3; conviene verificar las licencias de los modelos base originales antes de un despliegue comercial.
+- El repositorio reempaquetado no incluye información sobre el proceso de entrenamiento, los datos utilizados ni evaluaciones de calidad, lo que dificulta estimar su robustez en producción.
+- La integración está pensada para ComfyUI; no se documentan APIs de servidor ni soporte para otros frameworks de inferencia.
+- El tamaño del repositorio (36,4 GB) y la ausencia de datos de VRAM mínima obligan a validar el hardware antes de desplegar.
 
 ## Enlaces
 
-- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/Pixal3D
-- Modelo original de TencentARC: https://huggingface.co/TencentARC/Pixal3D
-- Nodos ComfyUI para Pixal3D (PozzettiAndrea): https://github.com/PozzettiAndrea/ComfyUI-Pixal3D
-- Integracion ComfyUI-Pixal3D para Windows (dreamrec): https://github.com/dreamrec/ComfyUI-Pixal3D
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Pixal3D
+- Modelo original: https://huggingface.co/TencentARC/Pixal3D
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
+- Flujo de trabajo imagen a modelo: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/3d_pixal3d_trellis2_image_to_model.json
+- Flujo de trabajo multivista a 3D: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/3d_pixal3d_multi_views.json

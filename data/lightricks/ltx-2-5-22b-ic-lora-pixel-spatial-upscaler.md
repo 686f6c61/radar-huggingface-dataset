@@ -2,72 +2,89 @@
 
 ## Resumen
 
-LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler es un adaptador LoRA de control de imagen (IC-LoRA) desarrollado por Lightricks sobre el modelo base LTX-2.5, un modelo de difusión de vídeo de 22 mil millones de parámetros. Este adaptador está diseñado específicamente para tareas de upscaling espacial de píxeles y super-resolución en vídeo, permitiendo mejorar la resolución de vídeos generados o procesados mediante el pipeline de LTX-2.5.
+LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler es un adaptador LoRA de tipo IC-LoRA (In-Context LoRA) publicado por Lightricks sobre el modelo base de difusión de vídeo LTX-2.5, de 22.000 millones de parámetros. Su función concreta es el reescalado espacial de vídeo (superresolución y upscaling de resolución espacial) dentro del pipeline video-to-video de LTX-2.5: recibe un vídeo de baja resolución y genera una versión de mayor resolución manteniendo coherencia temporal entre fotogramas, algo crítico en vídeo generativo donde el upscaling fotograma a fotograma produce parpadeo y artefactos.
 
-El modelo se distribuye como un archivo único (single-file) y se integra en flujos de trabajo de vídeo-a-vídeo. Su relevancia actual radica en que ofrece una solución específica para aumentar la calidad espacial de vídeos sintéticos, un paso habitual en la postproducción de contenidos generados por IA. Al ser un LoRA, no requiere reentrenar el modelo base, sino que se añade como un adaptador ligero, lo que facilita su uso en entornos de producción.
+El adaptador no es un modelo autónomo: requiere el checkpoint base Lightricks/LTX-2.5 y se distribuye como archivo único de difusión (diffusion-single-file) con un peso de repositorio de aproximadamente 0,3 GB, coherente con un LoRA de rango bajo sobre un transformer de difusión de gran tamaño. La relevancia práctica está en que permite elevar la resolución de salidas de vídeo generado sin reentrenar el modelo base ni ejecutar un pipeline de superresolución independiente, integrándose en el mismo grafo de difusión.
 
-La licencia es la ltx-2-community-license, que permite uso comunitario con ciertas restricciones. No se han publicado detalles sobre el entrenamiento del adaptador ni sobre los idiomas soportados, por lo que la información disponible se limita a su propósito y arquitectura declarada.
+El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. La licencia es la LTX-2.x Community License, que no es una licencia de código abierto estándar y establece condiciones específicas para uso comercial, por lo que conviene revisarla antes de integrarlo en producción. El repositorio acumula unas 13.500 descargas y 163 likes desde su creación en agosto de 2026.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA de control de imagen (IC-LoRA) sobre LTX-2.5 (modelo de difusión de vídeo) |
-| Parámetros totales | No disponible (el modelo base LTX-2.5 tiene 22B; el tamaño del LoRA no se especifica) |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | No disponible |
-| Licencia | ltx-2-community-license |
-| Formato de pesos | No disponible (se distribuye como archivo único, probablemente safetensors) |
+| Arquitectura | LoRA (IC-LoRA) sobre transformer de difusión de vídeo LTX-2.5 |
+| Parametros totales | 22.000 millones (modelo base); parámetros del adaptador no disponibles |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el repo contiene un archivo de difusión único; no se listan variantes GGUF/FP8) |
+| Idiomas soportados | ingles (tag `en`); cobertura multilingüe no disponible |
+| Licencia | ltx-2.x-community-license (acceso restringido, requiere aceptar condiciones) |
+| Formato de pesos | diffusion-single-file (archivo único para pipeline de difusión) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en el modelo LTX-2.5, un modelo de difusión de vídeo de 22B parámetros desarrollado por Lightricks. El LoRA de control de imagen (IC-LoRA) es un mecanismo de adaptación que permite condicionar la generación o el procesamiento del vídeo mediante señales de control espacial, en este caso orientado a la super-resolución de píxeles. No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens procesados ni si se emplearon técnicas de RLHF o DPO. Tampoco se especifican innovaciones técnicas adicionales más allá de su función como upscaler espacial.
+El adaptador se construye sobre LTX-2.5, un modelo de difusión para generación y edición de vídeo con 22.000 millones de parámetros en el checkpoint base. La técnica IC-LoRA (In-Context LoRA) consiste en un adaptador de bajo rango que condiciona al modelo base mediante contexto adicional en lugar de modificar sus pesos principales, lo que permite añadir una tarea nueva —en este caso el upscaling espacial de píxeles— conservando intactas las capacidades originales del transformer de difusión. El resultado es un módulo que se aplica en el pipeline video-to-video del modelo base.
+
+No se dispone de información publicada sobre el volumen de datos de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones específicas de decodificación o atención para este adaptador. El tamaño del repositorio (0,3 GB) sugiere un adaptador compacto, pero no se detallan el rango, los módulos objetivo ni la estrategia de fusión.
 
 ## Capacidades
 
-- Upscaling espacial de píxeles en vídeo: mejora la resolución de vídeos generados o existentes.
-- Super-resolución: aumenta la nitidez y el detalle de las imágenes en movimiento.
-- Vídeo-a-vídeo: se integra en pipelines de transformación de vídeo, permitiendo procesar secuencias completas.
-- Compatible con el ecosistema LTX-2.5: funciona como un adaptador ligero sobre el modelo base, sin necesidad de reentrenamiento.
-- No se han documentado capacidades adicionales como tool calling, agentes o razonamiento multi-paso, ya que se trata de un adaptador especializado en una tarea concreta.
+- Upscaling espacial de vídeo: aumenta la resolución espacial de un vídeo de entrada dentro del pipeline video-to-video de LTX-2.5.
+- Superresolución con coherencia temporal: al operar dentro del modelo de difusión de vídeo, mantiene consistencia entre fotogramas en lugar de tratar cada frame de forma aislada.
+- Integración como IC-LoRA: se combina con el checkpoint base LTX-2.5 sin sustituirlo, permitiendo encadenar otras LoRAs del ecosistema (movimiento, cinemagraph, etc.).
+- Condicionamiento por contexto: la naturaleza In-Context permite guiar la generación con la señal de vídeo de entrada.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, audio, visión general ni modo thinking; es un adaptador especializado en una única tarea de vídeo.
 
 ## Casos de uso
 
-- Postproducción de vídeo generado por IA: los creadores pueden aplicar este LoRA para aumentar la resolución de vídeos sintéticos antes de su publicación, mejorando la calidad visual sin regenerar el contenido desde cero.
-- Restauración de vídeo de baja resolución: en archivos históricos o grabaciones antiguas, el adaptador puede escalar el vídeo manteniendo la coherencia temporal, útil en proyectos de preservación digital.
-- Mejora de vídeo en tiempo real para streaming: aunque requiere el modelo base de 22B, con la cuantización adecuada podría integrarse en flujos de streaming para mejorar la calidad de vídeo en directo.
-- Generación de vídeo de alta resolución para publicidad: las agencias pueden usar el adaptador para producir vídeos promocionales con mayor detalle, partiendo de vídeos generados a menor resolución.
-- Aumento de resolución en entornos de investigación: laboratorios que trabajan con vídeo sintético pueden emplear el upscaler para estandarizar la resolución de sus datasets generados.
-- Integración en herramientas de edición de vídeo: desarrolladores pueden incorporar este LoRA en software de edición (por ejemplo, mediante ComfyUI o interfaces similares) para ofrecer una opción de super-resolución a los usuarios finales.
+- Remasterización de vídeo generado: tomar salidas de LTX-2.5 a resolución baja o media y elevarlas a 1080p o superior dentro del mismo grafo de difusión, evitando un pipeline de superresolución separado y el consiguiente parpadeo temporal.
+- Previsualización rápida y entrega final: generar borradores a baja resolución (más rápidos y baratos en cómputo) y aplicar el upscaler solo a los clips aprobados, reduciendo el coste total de GPU por proyecto.
+- Producción de contenido para redes sociales y publicidad: escalar clips cortos generados por IA a la resolución exigida por plataformas (vertical u horizontal) manteniendo detalle en texto y bordes.
+- Postproducción de material de archivo: aumentar la resolución espacial de metraje antiguo o de baja calidad antes de insertarlo en una timeline junto a material nativo en alta definición.
+- Integración en herramientas creativas de Lightricks: el adaptador encaja en flujos tipo LTX Studio donde el usuario genera, edita y exporta vídeo en una sola interfaz, usando el upscaler como paso final del pipeline.
+- Prototipado de investigación en vídeo generativo: servir de base para estudiar superresolución condicionada por difusión y comparar IC-LoRA frente a upscalers discriminativos clásicos (ESRGAN, Real-ESRGAN) en métricas temporales.
+- Renderizado por etapas en estudios pequeños: separar la fase de generación (menor resolución) de la de escalado permite distribuir el trabajo entre distintas GPUs y ajustar el presupuesto de VRAM por etapa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos de upscaling.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos oficiales de hardware en la información proporcionada.
-- Dado que el modelo base LTX-2.5 tiene 22B parámetros, se estima que la inferencia requiere al menos 24 GB de VRAM en cuantización de 8 bits, y más de 40 GB en precisión completa. Sin embargo, estos valores son orientativos y no están confirmados.
-- El adaptador LoRA en sí es ligero, pero su uso depende del modelo base, por lo que se necesitan GPUs de gama alta como A100, H100 o RTX 4090 (esta última con cuantización).
-- Opciones de despliegue: no se documentan integraciones específicas con vLLM, llama.cpp u Ollama. Dado que es un modelo de difusión, es probable que se use con librerías como Diffusers o ComfyUI, pero no se confirma.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Al requerir el checkpoint base de 22.000 millones de parámetros, la inferencia en precisión completa (BF16) exige del orden de 44 GB solo para pesos, más memoria para activaciones y latents de vídeo, por lo que se necesita hardware de clase数据中心 o cuantización agresiva.
+- GPU recomendadas: A100 80 GB, H100 80 GB o múltiples GPU de 24-48 GB con paralelización; no se documentan configuraciones validadas por el autor.
+- GPU de consumo: no cabe en una RTX 4090 (24 GB) en BF16 sin técnicas de offloading o cuantización; no se confirma soporte en GPUs de 8-16 GB.
+- Opciones de despliegue: el repo es diffusion-single-file, por lo que se integra con runners de difusión compatibles con LTX-2.5 (Diffusers y el ecosistema de Lightricks); no se listan instrucciones para vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponibles. Dependen fuertemente de la resolución de entrada y salida, la longitud del clip y el número de pasos de muestreo.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (upscalers espaciales para vídeo basados en LoRA). No se puede establecer una comparativa fiable sin datos adicionales.
+| Modelo | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler | LoRA de upscaling sobre difusión de vídeo | 22B (base) | no disponible | LTX-2.x Community License | Gated en Hugging Face |
+| LTX-2.5 (base) | Difusión de vídeo | 22B | no disponible | LTX-2.x Community License | Gated en Hugging Face |
+| Otras LoRAs LTX-2.5 (Slow-Motion-Control, Cinemagraph) | LoRA de control sobre el mismo base | 22B (base) | no disponible | LTX-2.x Community License | Hugging Face |
+| Real-ESRGAN | Superresolución de imagen (no vídeo) | no disponible | por imagen | BSD-3-Clause | Abierto |
+
+La comparación directa con upscalers de imagen clásicos no es equivalente: este adaptador opera dentro de un modelo de difusión de vídeo y preserva coherencia temporal, mientras que los upscalers por imagen requieren post-procesado temporal adicional. No se dispone de métricas comparativas publicadas (PSNR, SSIM, LPIPS, FVD) para este adaptador.
 
 ## Limitaciones y advertencias
 
-- Licencia ltx-2-community-license: puede imponer restricciones al uso comercial o a la redistribución. Es necesario revisar los términos completos antes de su uso en producción.
-- Dependencia del modelo base: el adaptador no funciona de forma autónoma; requiere el modelo LTX-2.5 completo, lo que implica un coste computacional elevado.
-- Sin información sobre sesgos: al no publicarse detalles del entrenamiento, no se pueden evaluar posibles sesgos en los resultados.
-- Riesgo de alucinación visual: como todo modelo generativo, puede introducir artefactos o detalles incorrectos al aumentar la resolución, especialmente en zonas de alta frecuencia.
-- Idiomas no especificados: no se garantiza un comportamiento multilingüe, aunque el upscaling es una tarea visual y no depende del lenguaje.
-- Sin benchmarks publicados: no hay evidencia objetiva de su rendimiento frente a otras soluciones de super-resolución.
+- Dependencia del modelo base: no funciona de forma autónoma; requiere descargar y cargar Lightricks/LTX-2.5, con el coste de VRAM y almacenamiento asociado.
+- Acceso restringido: la descarga exige aceptar la licencia en Hugging Face; la automatización en CI/CD requiere gestionar tokens de acceso.
+- Licencia no open source: la LTX-2.x Community License impone condiciones específicas para uso comercial; es imprescindible revisar umbrales de facturación, atribución y restricciones de redistribución antes de desplegarlo.
+- Riesgo de artefactos: como todo upscaler generativo, puede inventar detalle inexistente (alucinación visual), especialmente en texturas finas, texto pequeño y caras; conviene validar visualmente las salidas.
+- Sesgos: no se documentan sesgos específicos, pero hereda los del modelo base en cuanto a representación demográfica y estilos visuales.
+- Idiomas: el tag del repositorio indica únicamente inglés; el comportamiento con texto en pantalla en otros idiomas no está documentado.
+- Ausencia de métricas: no hay benchmarks publicados que permitan estimar la ganancia real de calidad frente a alternativas, lo que dificulta una decisión de adopción basada en datos.
+- Documentación escasa: no se detallan parámetros de inferencia recomendados (pasos, guidance, escala de fuerza de la LoRA), lo que obliga a experimentar.
 
 ## Enlaces
 
-- [Hugging Face: Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler](https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler)
-- No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler
+- Modelo base: https://huggingface.co/Lightricks/LTX-2.5
+- Organización Lightricks en Hugging Face: https://huggingface.co/Lightricks
+- Sitio web de Lightricks: https://www.lightricks.com/
+- Sobre Lightricks: https://www.lightricks.com/about
+- GitHub de Lightricks: https://github.com/Lightricks
+- Wikipedia (Lightricks): https://en.m.wikipedia.org/wiki/Lightricks

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "DanielSuncost/tiny-voca-fr",
+  "slug": "danielsuncost-tiny-voca-fr",
+  "author": "DanielSuncost",
+  "url": "https://huggingface.co/DanielSuncost/tiny-voca-fr",
+  "created_at": "2026-11-17T20:53:19.000Z",
+  "updated_at": "2026-11-17T21:47:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "tts",
+    "tiny",
+    "text-to-speech",
+    "fr",
+    "base_model:n4ze3m/tiny-voca",
+    "base_model:quantized:n4ze3m/tiny-voca",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41232916,
+  "storage_human": "41 MB",
+  "context_length": null,
+  "base_model": "n4ze3m/tiny-voca",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

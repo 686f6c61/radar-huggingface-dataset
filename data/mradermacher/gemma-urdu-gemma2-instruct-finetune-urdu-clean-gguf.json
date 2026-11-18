@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gemma-urdu-gemma2-Instruct-Finetune-urdu-clean-GGUF",
+  "slug": "mradermacher-gemma-urdu-gemma2-instruct-finetune-urdu-clean-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-urdu-gemma2-Instruct-Finetune-urdu-clean-GGUF",
+  "created_at": "2024-12-22T14:07:36.000Z",
+  "updated_at": "2026-11-17T23:42:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Xhaheen/gemma-urdu-gemma2-Instruct-Finetune-urdu-clean",
+    "base_model:quantized:Xhaheen/gemma-urdu-gemma2-Instruct-Finetune-urdu-clean",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 103,
+  "trending_score": 0,
+  "parameters": 2506172416,
+  "parameters_human": "2.51B",
+  "storage_bytes": 23374928256,
+  "storage_human": "23.4 GB",
+  "context_length": 8192,
+  "base_model": "Xhaheen/gemma-urdu-gemma2-Instruct-Finetune-urdu-clean",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

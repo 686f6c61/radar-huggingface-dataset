@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/TON-3B-Math-GGUF",
+  "slug": "mradermacher-ton-3b-math-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TON-3B-Math-GGUF",
+  "created_at": "2025-05-22T09:34:16.000Z",
+  "updated_at": "2026-11-17T23:42:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:kolerk/TON-Math-SFT",
+    "base_model:kolerk/TON-3B-Math",
+    "base_model:quantized:kolerk/TON-3B-Math",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32778697856,
+  "storage_human": "32.8 GB",
+  "context_length": 128000,
+  "base_model": "kolerk/TON-3B-Math",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,122 +2,106 @@
 
 ## Resumen
 
-Occamy-1.0 es un modelo agéntico de 35.000 millones de parámetros totales con 3.000 millones activos, desarrollado por Accio-Lab sobre el checkpoint post-entrenado Qwen3.6-35B-A3B. Su objetivo declarado no es competir en conocimiento general, sino especializarse en "co-work": tareas profesionales de horizonte largo y con estado persistente, en las que el modelo debe coordinar de forma sostenida búsqueda web, ejecución de código, llamadas a herramientas, gestión de ficheros y APIs estructuradas. La arquitectura es una mezcla de expertos (MoE) causal con codificador visual, 40 capas, 256 expertos de los que se activan 8 enrutados más 1 compartido.
+Occamy-1.0 es un modelo de lenguaje multimodal de tipo image-text-to-text desarrollado por Accio-Lab, un fine-tune del modelo base Qwen/Qwen3.6-35B-A3B. Con 35.107 millones de parámetros totales y una arquitectura de mezcla de expertos (MoE), está diseñado específicamente para tareas de "co-work" agéntico: uso de herramientas, razonamiento multi-paso, generación de código y contextos largos. Se distribuye bajo licencia Apache 2.0, lo que facilita su adopción comercial.
 
-El modelo parte de una ventana de contexto de 262.144 tokens en la arquitectura base, aunque el ajuste supervisado se realizó con secuencias de 131.072 tokens. Es relevante ahora porque combina una huella de inferencia contenida (3B activos por token) con capacidades de agente y de visión, lo que abarata el despliegue de flujos agénticos de larga duración frente a modelos densos de tamaño comparable. Se distribuye con licencia Apache 2.0 y pesos en safetensors.
+El modelo se posiciona como una alternativa compacta en la frontera de Pareto para inteligencia de 35B orientada a agentes, compitiendo en un segmento donde el equilibrio entre tamaño, capacidades agénticas y coste de despliegue es crítico. Su pipeline multimodal (texto e imagen) y su integración con frameworks de entrenamiento propios (Dressage) lo convierten en una opción relevante para equipos que construyen asistentes autónomos y pipelines de código en producción.
 
-Accio-Lab publica además el stack de entrenamiento utilizado, denominado Dressage, basado en aprendizaje por refuerzo multi-harness, junto con un informe técnico. El modelo acumulaba 1.507 descargas y 16 "likes" en Hugging Face en el momento de la consulta.
+La relevancia actual de Occamy-1.0 radica en su ecosistema de checkpoints: desde BF16 hasta múltiples cuantizaciones (GGUF, FP8, NVFP4, MLX de 3 a 8 bits), lo que permite desplegarlo desde un servidor H200 hasta un Mac con Apple Silicon. El modelo acumula 241 likes y 1790 descargas en Hugging Face, con actualizaciones recientes que incluyen una cabeza MTP experimental para decodificación especulativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) causal con codificador visual |
-| Parametros totales | 35.107.181.936 (~35B) |
-| Parametros activos | ~3B (8 expertos enrutados + 1 compartido, de un total de 256) |
-| Longitud de contexto | 262.144 tokens (arquitectura base); 131.072 tokens de secuencia en SFT |
-| Tipos de cuantizacion | no disponible (el repositorio publica pesos en safetensors; no se documentan cuantizaciones oficiales) |
+| Arquitectura | Mezcla de expertos (MoE) basada en Qwen3.6-35B-A3B |
+| Parametros totales | 35.107.181.936 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (etiquetado como long-context) |
+| Tipos de cuantizacion | BF16, FP8, NVFP4, GGUF (IQ2_M a Q8_0, 17 variantes), APEX GGUF, MLX 3/4/5/6/8-bit, MLX MXFP4, MXFP8, NVFP4 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
-| Numero de capas | 40 |
-| Numero de expertos | 256 (8 enrutados + 1 compartido activados) |
-| Post-entrenamiento | SFT de parametros completos, HDPO, model merging y SAO |
-| Checkpoint de partida | Qwen/Qwen3.6-35B-A3B |
-| Pipeline declarado | image-text-to-text |
-| Tamano del repositorio | 70,2 GB |
-| Descargas / likes | 1.507 / 16 |
-| Fecha de creacion | 2026-08-13 |
-| Ultima actualizacion | 2026-09-10 |
-| ID en Hugging Face | Accio-Lab/occamy-1.0 |
+| Formato de pesos | safetensors (BF16, FP8, NVFP4), GGUF, MLX |
 
 ## Arquitectura y entrenamiento
 
-Occamy-1.0 mantiene sin cambios la arquitectura del checkpoint de partida: un transformer causal con mezcla de expertos, 40 capas, 256 expertos y 8 expertos enrutados más 1 compartido activados por token, lo que da lugar a unos 3B parámetros activos sobre 35B totales. Incorpora además un codificador visual y un proyector multimodal, lo que explica su pipeline image-text-to-text. Durante el SFT, el backbone de lenguaje se entrena a parámetros completos mientras el codificador visual y el proyector permanecen congelados, de modo que las capacidades visuales heredadas son las del modelo base y no se especializan en las tareas de co-work.
+Occamy-1.0 emplea una arquitectura transformer de mezcla de expertos (MoE) heredada de Qwen3.6-35B-A3B, con 35.107 millones de parámetros totales. El modelo base es un MoE multimodal que procesa entradas de imagen y texto, y ha sido ajustado mediante el framework de entrenamiento Dressage de Accio-Lab. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-El post-entrenamiento combina cuatro etapas: SFT de parámetros completos sobre datos que cubren trabajo agéntico general, interacción de horizonte largo, ingeniería de software y fundamentación de llamadas a herramientas; HDPO (una variante de optimización por preferencias); fusión de modelos (model merging); y SAO. La longitud de secuencia empleada en el SFT es de 131.072 tokens, la mitad del contexto máximo soportado por la arquitectura base. El entrenamiento se realizó con Dressage, un framework de aprendizaje por refuerzo multi-harness que Accio-Lab ha liberado públicamente. La model card no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset ni la distribución de idiomas.
+La innovación técnica destacable es la inclusión de una cabeza MTP (Multi-Token Prediction) experimental de 1,69 GB que se suma al modelo base para decodificación especulativa, aunque su velocidad final (MTP3) no ha sido medida. El ecosistema de checkpoints incluye cuantizaciones calibradas (APEX GGUF) y variantes para Apple Silicon (MLX), con validaciones que cubren texto, código, JSON, tool calls e imágenes en un chequeo de nueve casos sobre una H200.
 
 ## Capacidades
 
-- Generación de texto conversacional y seguimiento de instrucciones en flujos multi-turno.
-- Llamada a herramientas y function calling, con fundamentación de las llamadas como objetivo explícito de entrenamiento (tag tool-use).
-- Ejecución agéntica sostenida: cadenas largas de pasos con estado persistente, recuperación de errores y continuación del trabajo tras reescrituras de historial como la compactación de contexto.
-- Delegación de subtareas a ejecuciones secundarias y coordinación entre ellas.
-- Codificación agéntica, incluyendo trabajo en terminal y tareas de ingeniería de software.
-- Comprensión de imagen y texto (pipeline image-text-to-text), con codificador visual y proyector heredados del modelo base.
-- Contexto largo: hasta 262.144 tokens según la configuración de la arquitectura base, con SFT realizado a 131.072 tokens.
-- Capacidades multilingües: no disponible (la model card no declara el conjunto de idiomas soportados).
-- Modo de razonamiento explícito ("thinking mode"): no disponible en la información proporcionada.
+- Generación de texto y razonamiento multi-paso orientado a agentes.
+- Generación de código y soporte para tareas de programación.
+- Procesamiento de imagen y texto (pipeline image-text-to-text).
+- Soporte de tool calling y function calling, validado en chequeos de compatibilidad con vLLM.
+- Capacidades agénticas y de "co-work" para flujos de trabajo autónomos.
+- Manejo de contextos largos (etiquetado como long-context).
+- Salida estructurada en JSON, validada en los chequeos de compatibilidad.
+- Capacidades multilingües: no disponible.
+- Modo de razonamiento explícito (thinking mode): no disponible.
 
 ## Casos de uso
 
-- Asistente de co-work de larga duración: el modelo puede mantener un hilo de trabajo profesional durante horas o días, conservando el estado entre llamadas a herramientas y sobreviviendo a la compactación del historial, algo que los modelos orientados a pregunta-respuesta aislada no cubren bien.
-- Automatización de flujos con APIs estructuradas: gracias al entrenamiento específico en fundamentación de tool calls, encaja en pipelines que encadenan peticiones REST, validación de respuestas y reintentos ante errores de formato.
-- Ingeniería de software agéntica en producción: puede integrarse en herramientas de terminal o CI/CD para aplicar refactors multi-archivo, ejecutar tests y corregir fallos de forma iterativa, con la ventaja de que solo 3B parámetros activos reducen el coste por paso.
-- Investigación y recuperación aumentada: con 262.144 tokens de contexto en la arquitectura base puede ingerir documentación extensa, expedientes o bases de código y razonar sobre ellos sin trocear en exceso. La propia model card advierte, no obstante, que las tareas intensivas en recuperación son el punto con más margen de mejora.
-- Atención al cliente multi-turno: la continuidad de estado permite gestionar conversaciones largas con historial compactado y derivar a herramientas internas (consulta de pedidos, modificación de datos) sin perder el hilo.
-- Extracción estructurada de documentos con imagen: al ser un modelo image-text-to-text, puede procesar capturas de facturas, formularios o pantallazos y devolver campos estructurados, aunque sin interacción visual nativa con navegador o escritorio.
-- Coordinación de subagentes: el modelo está diseñado para delegar ejecuciones y posteriormente integrar sus resultados, lo que permite usarlo como orquestador en arquitecturas multi-agente.
-- Productividad ofimática: automatización de hojas de cálculo, correo y documentos dentro de un flujo de trabajo profesional, un escenario alineado con el objetivo declarado de "co-work".
+- **Atención al cliente automatizada**: el modelo puede gestionar conversaciones multi-turno con seguimiento de contexto y tool calling para consultar sistemas internos (pedidos, incidencias), gracias a su etiquetado long-context y su validación en tool calls y follow-up.
+- **Generación de código en producción**: integrable en pipelines de CI/CD para revisión de código, generación de tests y corrección de errores, con salida JSON estructurada validada en los chequeos de vLLM.
+- **Agentes autónomos de investigación**: el modelo puede encadenar pasos de razonamiento, invocar herramientas externas y sintetizar resultados, adecuado por su orientación explícita a agentic y co-work.
+- **Asistente multimodal de documentación**: al procesar imagen y texto, puede extraer información de capturas, diagramas o documentación escaneada y responder preguntas sobre ellos.
+- **Automatización de soporte técnico interno**: con tool calling puede consultar bases de conocimiento, abrir tickets y escalar incidencias en un flujo multi-paso.
+- **Despliegue en estaciones de trabajo Apple Silicon**: las variantes MLX de 3 a 8 bits (15,18–36,83 GB) permiten ejecutar el modelo en Mac con mlx-lm para prototipado y tareas de texto.
+- **Prototipado rápido en GPU de consumo**: las cuantizaciones GGUF (11,66–36,90 GB) permiten ejecución local con llama.cpp para pruebas de concepto y evaluación de calidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. La model card incluye una sección de evaluación con una tabla comparativa frente a Qwen3.6-35B-A3B, Agents-A1, Nex-N2-mini, BigBang-1.0 y Ornith-1.5 dentro de la categoría de modelos 35B-A3B, y frente a GPT-5.6 Sol, Qwen3.8-Max, DeepSeek V4 Pro (0813) y GLM-5.2 en la categoría de modelos a gran escala, con bloques de co-work, tool-use, coding y benchmarks de negocio. Sin embargo, los valores de dicha tabla no estaban disponibles en la extracción consultada, por lo que no se reproducen aquí.
-
-No se dispone tampoco de cifras verificables de MMLU, HumanEval, GSM8K ni de ninguna otra prueba estandarizada para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM siguientes son estimaciones derivadas del número de parámetros y del tamaño del repositorio, no datos publicados por el autor.
-
-- Pesos en BF16: en torno a 70 GB, coherente con el tamaño de repositorio de 70,2 GB. Requiere una GPU de 80 GB (H100, A100 80GB) o reparto en varias GPU.
-- Pesos en FP8: aproximadamente 35-36 GB. Cabe en A100 40GB, L40S 48GB o H100 80GB con margen para caché KV.
-- Pesos en INT4: aproximadamente 18-20 GB. Cabe en GPU de consumo, como RTX 4090 (24 GB), RTX 3090 (24 GB) o RTX 5090.
-- GPU recomendadas: H100 o A100 80GB para BF16; A100 40GB, L40S o H100 para FP8; RTX 4090/3090 o superiores para cuantizaciones de 4 bits.
-- Caché KV: no cuantificado en la información disponible. Con contextos cercanos a los 262.144 tokens el consumo adicional de caché KV puede ser determinante y debe medirse empíricamente antes de dimensionar el despliegue.
-- Opciones de despliegue: al publicarse en transformers y safetensors, es compatible con vLLM, SGLang y TGI, y la etiqueta endpoints_compatible sugiere compatibilidad con endpoints gestionados de Hugging Face. No se han publicado pesos GGUF oficiales, por lo que llama.cpp u Ollama requerirían una conversión propia.
-- Latencia y throughput: no disponibles. Como referencia estructural, los 3B parámetros activos por token sitúan el coste de decodificación en el rango de un modelo denso de ~3B, con la penalización de memoria de tener que alojar los 35B de pesos.
+- **VRAM estimada para inferencia**: BF16 requiere 70,22 GB de pesos; FP8 36,61 GB; NVFP4 23,93 GB; GGUF desde 11,66 GB (IQ2_M) hasta 36,90 GB (Q8_0); APEX GGUF 13,47–25,34 GB; MLX 3-bit 15,18 GB hasta MLX 8-bit 36,83 GB. A estos tamaños hay que sumar KV cache, buffers de runtime y, en su caso, el proyector de visión F16 de 0,90 GB para GGUF.
+- **GPU recomendadas**: H200 validada para BF16, FP8 y NVFP4 (chequeo de nueve casos con vLLM); B200 usada para muestras de GGUF y APEX GGUF; hardware compatible con FP4 nativo para NVFP4.
+- **GPU de consumo**: las variantes GGUF de menor tamaño (IQ2_M a Q4) y MLX de 3–4 bits (15,18–19,51 GB) podrían caber en GPUs consumer de 24 GB, aunque la model card no confirma validación en esas tarjetas.
+- **Opciones de despliegue**: Transformers, SGLang, vLLM (texto + visión), llama.cpp (GGUF y APEX GGUF), mlx-lm (solo texto, Apple Silicon). La cabeza MTP requiere SGLang parcheado.
+- **Latencia y throughput**: no disponibles. La velocidad de la decodificación especulativa MTP3 no ha sido medida.
 
 ## Comparativa con modelos similares
 
-La model card sitúa a Occamy-1.0 en dos categorías. No se dispone de datos de rendimiento ni de especificaciones verificadas de los modelos alternativos, por lo que la comparación se limita a lo declarado.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Contexto | Licencia | Multimodal | Formatos |
 |---|---|---|---|---|---|
-| Occamy-1.0 | 35B totales / 3B activos | 262.144 tokens (base); SFT a 131.072 | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face |
-| Qwen3.6-35B-A3B | 35B totales / 3B activos (modelo base) | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face |
-| Agents-A1 | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Nex-N2-mini | no disponible | no disponible | no disponible | no disponible | no disponible |
-| BigBang-1.0 | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Ornith-1.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
-| GPT-5.6 Sol | no disponible | no disponible | no disponible | Propietaria | API |
-| Qwen3.8-Max | no disponible | no disponible | no disponible | no disponible | no disponible |
-| DeepSeek V4 Pro (0813) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| GLM-5.2 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Occamy-1.0 | 35,1B (MoE) | no disponible | Apache 2.0 | Si (imagen+texto) | safetensors, GGUF, MLX, FP8, NVFP4 |
+| Qwen3.6-35B-A3B (base) | 35B (MoE) | no disponible | no disponible | Si | safetensors |
+| Alternativas de 30-40B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación más significativa es contra el propio checkpoint de partida, Qwen3.6-35B-A3B: Occamy-1.0 conserva íntegramente su arquitectura y sus pesos iniciales, de modo que la diferencia entre ambos reside exclusivamente en el post-entrenamiento orientado a co-work, agencia y uso de herramientas.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría. La comparación con el modelo base Qwen3.6-35B-A3B se limita a la relación de fine-tune declarada por el autor.
 
 ## Limitaciones y advertencias
 
-- La propia model card advierte de que Occamy-1.0 está optimizado para cargas de co-work habituales y no sustituye a modelos frontera en todas las tareas.
-- Tareas intensivas en recuperación (retrieval-heavy) y de usuario simulado presentan margen de mejora reconocido por el autor.
-- La interacción visual nativa con navegador o escritorio no forma parte de la interfaz de entrenamiento actual del modelo.
-- El codificador visual y el proyector permanecen congelados durante el SFT: las capacidades de visión no se especializan y quedan limitadas a las heredadas del modelo base.
-- No se declaran los idiomas soportados, lo que impide garantizar un rendimiento homogéneo fuera del inglés sin evaluación previa.
-- Riesgo de alucinación: no se documentan tasas ni mitigaciones específicas, un aspecto crítico cuando el modelo opera sobre APIs reales o ficheros de producción.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- La licencia Apache 2.0 permite uso comercial, modificación y redistribución sin restricciones adicionales, pero el usuario debe verificar las condiciones del modelo base Qwen3.6-35B-A3B si redistribuye derivados.
-- Los datos de evaluación publicados en la model card no estaban disponibles en la extracción consultada, por lo que cualquier afirmación de rendimiento basada en ella no puede reproducirse sin acudir a la fuente original.
-- Al ser un modelo con 35B parámetros en memoria, el ahorro de cómputo por los 3B activos no se traduce en un ahorro equivalente de VRAM.
+- **Sesgos conocidos**: no disponibles en la información proporcionada; al ser un fine-tune de Qwen3.6, hereda los sesgos del modelo base, no documentados aquí.
+- **Riesgo de alucinación**: no cuantificado; no se han publicado evaluaciones de fidelidad factual.
+- **Limitaciones de contexto e idioma**: la longitud de contexto no está especificada y los idiomas soportados no están documentados.
+- **Licencia**: Apache 2.0 permite uso comercial, pero deben respetarse las condiciones del modelo base Qwen3.6-35B-A3B.
+- **Validación parcial**: los chequeos de compatibilidad son de nueve casos sobre una H200 y no establecen igual calidad de benchmark ni un ranking general de velocidad entre formatos.
+- **MLX sin aceptación en Mac Metal**: las variantes MLX han pasado chequeos en Linux nativo, pero la aceptación en Mac Metal está pendiente.
+- **MTP experimental**: la cabeza MTP tiene paridad greedy limitada y su velocidad final no se ha medido.
+- **Memoria**: los tamaños indicados son GB decimales de archivos de pesos, no pico de RAM/VRAM; el KV cache y la concurrencia requieren memoria adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0
-- Modelo en Hugging Face (variante en mayúsculas referenciada en la model card): https://huggingface.co/Accio-Lab/Occamy-1.0
-- Sitio web del proyecto: https://accio-lab.github.io/occamy/
+- Web del proyecto: https://accio-lab.github.io/occamy/
+- Informe técnico (arXiv): https://arxiv.org/pdf/2609.11977
 - Framework de entrenamiento Dressage: https://github.com/Accio-Lab/Dressage
-- Informe técnico: https://github.com/Accio-Lab/occamy/blob/main/report/occamy1.0.pdf
-- Repositorio del proyecto: https://github.com/Accio-Lab/occamy
-- Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-
-La búsqueda web realizada no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden exclusivamente de la información de Hugging Face y de la model card.
+- Colección Occamy 1.0: https://huggingface.co/collections/Accio-Lab/occamy-10-6ac00729659e8a86ec11e216
+- Explorador de checkpoints: https://huggingface.co/spaces/Accio-Lab/Occamy-Explorer
+- Modelo en ModelScope: https://www.modelscope.cn/models/Accio-Lab/occamy-1.0
+- Checkpoint GGUF: https://huggingface.co/Accio-Lab/occamy-1.0-GGUF
+- Checkpoint APEX GGUF: https://huggingface.co/Accio-Lab/occamy-1.0-APEX-GGUF
+- Checkpoint FP8: https://huggingface.co/Accio-Lab/occamy-1.0-FP8
+- Checkpoint NVFP4: https://huggingface.co/Accio-Lab/occamy-1.0-NVFP4
+- Checkpoint MLX 8-bit: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-8bit
+- Checkpoint MLX 6-bit: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-6bit
+- Checkpoint MLX 5-bit: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-5bit
+- Checkpoint MLX 4-bit: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-4bit
+- Checkpoint MLX 3-bit: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-3bit
+- Checkpoint MLX MXFP4: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-mxfp4
+- Checkpoint MLX MXFP8: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-mxfp8
+- Checkpoint MLX NVFP4: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-nvfp4
+- Cabeza MTP: https://huggingface.co/Accio-Lab/occamy-1.0-MTP
+- Colección MLX: https://huggingface.co/collections/Accio-Lab/occamy-10-mlx-6ac0072a7c1cdbc5e418e90b

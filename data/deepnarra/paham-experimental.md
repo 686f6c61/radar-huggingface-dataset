@@ -2,101 +2,88 @@
 
 ## Resumen
 
-DeepNarra Paham-Experimental es la variante experimental de investigación de DeepNarra/Paham, un modelo de generación de texto conversacional de aproximadamente 951,7 millones de parámetros (dato real de safetensors) diseñado para aprendizaje continuo en el borde (edge). Su rasgo distintivo es el sistema de "3-Tier Awake/Sleep Continuum": en lugar de modificar los pesos cuantizados durante la inferencia, separa la interacción con el usuario (fase "despierto") de la consolidación de conocimiento (fase "sueño"), inspirándose en la consolidación hipocampal de la memoria biológica.
+Paham-Experimental es un modelo de lenguaje experimental desarrollado por DeepNarra, presentado como la variante de investigación de su modelo Paham. Se describe como un motor de aprendizaje continuo ("lifelong learning") orientado a despliegue en el borde ("edge"), con una arquitectura que combina atención recurrente con compuertas tipo GLA (gated linear attention), una mezcla de expertos de 92 sub-expertos y un esquema de cuantización ternaria de 1,58 bits (TQ1_0). El modelo tiene 951.701.100 parámetros totales según los pesos en safetensors, aunque la model card menciona una estructura MoE con 92 expertos cuyo número de parámetros activos no se detalla.
 
-El problema que resuelve es el olvido catastrófico y la degradación del rendimiento en modelos que intentan aprender de forma continua durante la inferencia. Paham-Experimental lo aborda con tres niveles: pesos rápidos recurrentes en tiempo real (Tier 1), adaptadores QLoRA laterales entrenados en reposo (Tier 2) y ajuste del enrutado MoE sobre 92 sub-expertos (Tier 3), con una consolidación nocturna que re-cuantiza el modelo a un GGUF ternario nativo de 1,58 bits (TQ1_0).
+La propuesta central del autor es un ciclo de aprendizaje en dos fases ("awake" y "sleep"): durante la inferencia, los pesos base permanecen congelados y solo se actualizan buffers de estado recurrente ("fast-weights", menos de 5 MB); durante periodos de inactividad, se entrena un adaptador QLoRA lateral (r=8) y se ajustan las prioridades del router MoE, tras lo cual los deltas se consolidan y el modelo se recuantiza a GGUF ternario. Este enfoque busca evitar el olvido catastrófico y mantener el rendimiento de generación sin mutar los pesos cuantizados durante la inferencia.
 
-Es relevante porque combina cuantización extrema (BitNet b1.58), arquitectura híbrida MoE con recurrencia GLA y un pipeline de entrenamiento autónomo sin dependencias de APIs externas, orientado a despliegues soberanos en dispositivos de borde. El repo pesa 2.259,1 GB y acumula más de 5.700 descargas. El modelo está licenciado bajo Apache-2.0.
+El modelo está publicado bajo licencia Apache-2.0, declara soporte para inglés y multilingüe, y se distribuye tanto en safetensors como en GGUF. Su relevancia actual radica en la exploración de técnicas de aprendizaje continuo en el borde con cuantización extrema, un área activa de investigación para despliegues con recursos limitados. No obstante, se trata de un modelo experimental con escasa validación externa publicada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida: recurrencia GLA (gated linear attention) con MoE de 92 sub-expertos y cuantización ternaria BitNet b1.58 |
-| Parametros totales | 951.701.100 (dato real de safetensors) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer con atención recurrente GLA (gated linear attention) y mezcla de expertos (MoE) de 92 sub-expertos; capas de cuantización ternaria BitNet b1.58 |
+| Parámetros totales | 951.701.100 |
+| Parámetros activos | no disponible (MoE de 92 expertos, sin desglose de activación) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | TQ1_0 (ternaria nativa de 1,58 bits); Tier 2 usa QLoRA (r=8, alpha=16) |
-| Idiomas soportados | Ingles y multilingue (etiquetas "en" y "multilingual"; lista concreta de idiomas no disponible) |
+| Tipos de cuantización | TQ1_0 (ternaria, 1,58 bits), GGUF; QLoRA (r=8, alpha=16) para adaptación |
+| Idiomas soportados | inglés, multilingüe |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (ternario TQ1_0) y safetensors |
+| Formato de pesos | safetensors, GGUF (incluye `model-TQ1_0.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina varios componentes poco habituales. En fase despierta, el modelo base en GGUF se ejecuta congelado, mientras el Tier 1 mantiene un estado de pesos rapidos recurrentes en buffers de la pasada hacia adelante (S_t, con menos de 5 MB de coste de memoria), actualizado mediante una recurrencia tipo GLA (S_{t+1} = decay * S_t + k_t v_t) sin retropropagacion. Las interacciones de alto valor y las correcciones del usuario se encolan en un buffer no bloqueante para su uso posterior.
+La arquitectura combina atención recurrente con un mecanismo GLA (gated linear attention) que mantiene un estado recurrente \(S_t\) actualizado en el forward pass mediante \(S_{t+1} = \text{decay} \cdot S_t + k_t v_t\), sin retropropagación. Sobre esta base se sitúa una mezcla de expertos con 92 sub-expertos y un router con compuertas softmax. La cuantización ternaria BitNet b1.58 se aplica en el formato TQ1_0 para GGUF, lo que reduce drásticamente el tamaño de los pesos y permite inferencia en hardware modesto.
 
-En fase de sueño (sistema inactivo o conectado a corriente), se ejecuta la consolidacion: un replay hipocampal con proporcion 75 % de "anclas doradas" de pre-entrenamiento y 25 % de interacciones reales; el Tier 2 entrena adaptadores Sidecar-QLoRA de rango 8 (r=8, alpha=16) con inicializacion B=0 para derivada cero ("zero-drift"); y el Tier 3 ajusta los priors de gating del enrutador MoE sobre los 92 sub-expertos sin alterar los cuerpos de los expertos. Finalmente, los deltas QLoRA se pliegan en las representaciones principales y se re-cuantiza un GGUF ternario nativo (model-TQ1_0.gguf) que se usa en el siguiente arranque.
-
-Los datos de entrenamiento referenciados en la model card incluyen HuggingFaceFW/fineweb-edu (texto educativo web), CohereForAI/aya_collection (multilingue), m-a-p/CodeFeedback-Filtered-Instruction (codigo) y HuggingFaceH4/no_robots (instrucciones conversacionales). El numero total de tokens de pre-entrenamiento no esta disponible. El pipeline de entrenamiento autonomo incluye un "gym" de auto-juego con 7 pilares: sandbox de codigo Python con validacion AST, matematicas formales con SymPy, dinamica hamiltoniana simpléctica (verificacion de conservacion de energia con Delta E < 10^-13), psicologia cognitiva y desescalada empatica, metacognicion epistemica y planificacion estrategica con DAGs. No se detalla si hubo RLHF o DPO.
+El entrenamiento se organiza en tres niveles ("tiers"): (1) fast-weights recurrentes actualizados durante la inferencia en buffers de menos de 5 MB; (2) un adaptador QLoRA lateral con r=8 y alpha=16, inicializado en cero para evitar deriva; y (3) ajuste de las prioridades del router MoE sobre los 92 expertos. La consolidación ("sleep") recombina un 75% de anclas de preentrenamiento ("golden anchors") con un 25% de interacciones en vivo, pliega los deltas QLoRA en las representaciones primarias y recuantiza a TQ1_0. Los datasets declarados incluyen FineWeb-Edu, Aya Collection, CodeFeedback-Filtered-Instruction y No Robots, lo que sugiere una mezcla de texto educativo, multilingüe, código e instrucciones. No se especifican el número de tokens de entrenamiento ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline text-generation, etiqueta "conversational").
-- Aprendizaje continuo en el dispositivo: el modelo incorpora conocimiento nuevo de las interacciones sin reentrenamiento completo, mediante el ciclo despierto/sueno.
-- Adaptacion en tiempo real mediante pesos rapidos recurrentes (Tier 1) con menos de 5 MB de estado adicional.
-- Razonamiento matematico formal: el entrenamiento autonomo incluye resolucion de EDOs no lineales, integrales multivariable y sistemas lineales con verificacion simbolica (SymPy).
-- Generacion y validacion de codigo Python en sandbox con verificacion de salida en tiempo de ejecucion.
-- Planificacion multi-paso: generacion de DAGs de prerequisitos con validacion de orden topologico, util para razonamiento de agentes.
-- Metacognicion epistemica: calibracion de umbrales de confianza para marcar salidas inciertas.
-- Capacidades multilingues (dataset Aya Collection), aunque la lista concreta de idiomas no esta disponible.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Vision y audio: no disponibles; el modelo es de solo texto.
+- Generación de texto conversacional y de instrucciones.
+- Razonamiento simbólico y matemático, incluyendo resolución de EDOs no lineales, integrales de cálculo multivariable y sistemas lineales mediante un CAS SymPy en el pipeline de entrenamiento.
+- Generación y validación de código Python con sandbox AST y ejecución en entorno aislado.
+- Capacidades multilingües declaradas (inglés y multilingüe).
+- Aprendizaje continuo en el borde: actualización de fast-weights en inferencia y consolidación por QLoRA y router MoE.
+- Ajuste de calibración epistémica para marcar salidas inciertas y reducir alucinaciones (según la model card).
+- Planificación estratégica mediante DAGs de prerrequisitos y validación de orden topológico.
+- No se documenta soporte explícito de tool calling, function calling ni agentes multi-paso.
 
 ## Casos de uso
 
-- Asistentes personales en dispositivos de borde con memoria persistente: el ciclo despierto/sueno permite que el asistente incorpore correcciones y preferencias del usuario durante la noche y arranque al dia siguiente con el GGUF re-cuantizado, sin enviar datos a la nube.
-- Atencion al cliente en local: la interaccion activa se ejecuta con el modelo base congelado a alta velocidad, mientras las correcciones de los agentes humanos se consolidan en background, mejorando el modelo de forma continua sin despliegues manuales.
-- Despliegues soberanos y privados: el entrenamiento autonomo funciona 100 % offline y en memoria, sin dependencias de APIs comerciales (sin OpenAI, Anthropic ni Google), adecuado para entornos con restricciones de datos.
-- Dispositivos con recursos limitados: la cuantizacion ternaria de 1,58 bits reduce drasticamente el tamano del GGUF, permitiendo inferencia en hardware modesto.
-- Generacion de codigo con validacion: el sandbox AST con verificacion de stdout permite integrarlo en flujos de prototipado de codigo donde la ejecucion verificada importa.
-- Razonamiento matematico y cientifico: la verificacion simbolica con SymPy y la dinamica hamiltoniana simpléctica lo orientan a tareas de calculo y fisica computacional.
-- Planificacion de tareas multi-paso para agentes: la generacion y validacion de DAGs de prerequisitos sirve para descomponer objetivos complejos en pasos ejecutables en orden topologico.
-- Aplicaciones de bienestar y psicologia: el entrenamiento incluye reframing de distorsiones cognitivas TCC (catastrofismo, lectura de mente, pensamiento blanco y negro), util para chatbots de desescalada empatica (con las cautelas eticas propias del caso).
+- Asistente conversacional en el borde: el modelo puede desplegarse en dispositivos con recursos limitados gracias a la cuantización ternaria TQ1_0 y a un estado recurrente de menos de 5 MB, manteniendo conversaciones multi-turno sin conexión a la nube.
+- Personalización continua por usuario: el ciclo awake/sleep permite adaptar el modelo a correcciones y preferencias del usuario mediante QLoRA lateral y consolidación nocturna, sin reentrenar los pesos base.
+- Generación de código asistida en entornos aislados: el entrenamiento con sandbox AST y ejecución validada sugiere uso en pipelines de generación y verificación de código Python, aunque la validación en producción no está documentada.
+- Tutoría matemática simbólica: la integración de SymPy en el gym de entrenamiento apunta a aplicaciones de resolución y verificación de problemas de cálculo y álgebra.
+- Apoyo en salud mental y reencuadre cognitivo: la model card menciona entrenamiento en reencuadre de distorsiones cognitivas (TCC) y desescalada empática, orientado a aplicaciones de apoyo conversacional.
+- Planificación de tareas multi-paso: la generación de DAGs de prerrequisitos con validación topológica puede emplearse en asistentes de planificación y gestión de proyectos.
+- Despliegue soberano y offline: al no depender de APIs comerciales externas, encaja en escenarios con requisitos de privacidad o aislamiento de red.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card menciona cifras de rendimiento operativo (mas de 1.000 tokens/s en inferencia con el GGUF congelado y "Fallback Drift 0.00e+00" en la consolidacion), pero no especifica el hardware de medicion ni la metodologia, por lo que deben tomarse con cautela.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible como cifra exacta; con 951,7 millones de parametros y cuantizacion ternaria de 1,58 bits, el GGUF resultante ocuparia del orden de cientos de MB, lo que sugiere que cabe en GPUs de consumo modestas e incluso en CPUs. Esta estimacion no esta confirmada en la model card.
-- GPU recomendadas: no disponible; el proyecto esta orientado a edge, por lo que no requiere necesariamente GPUs de centro de datos.
-- Consumer GPU: probablemente compatible dada la cuantizacion TQ1_0, aunque no hay requisitos oficiales publicados.
-- Opciones de despliegue: GGUF ternario nativo (compatible con ecosistemas tipo llama.cpp/Ollama en principio, aunque no se confirma explicitamente); el pipeline de entrenamiento autonomo se distribuye como notebook de 3 celdas (Paham_Experimental_GGUF_Trainer.ipynb) con checkpointing atomico y auto-commit de artefactos al repositorio.
-- Latencia y throughput: la model card afirma mas de 1.000 tokens/s en fase despierta con el GGUF congelado; no se especifica hardware de referencia.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 951,7 M de parámetros en cuantización ternaria TQ1_0, el peso de los pesos sería del orden de 0,2 GB, aunque el estado recurrente, el router MoE y los buffers añaden overhead no cuantificado.
+- GPU recomendadas: no disponible. Por tamaño, cabría en GPUs de consumo como RTX 3060, RTX 4060 o superiores, pero no hay confirmación del autor.
+- Cabe en GPU de consumo: probablemente sí, dado el tamaño del modelo, aunque no está verificado.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM y TGI no están confirmados para esta arquitectura híbrida.
+- Latencia y throughput: la model card afirma más de 1.000 tok/s en la fase awake, pero no se especifica el hardware de referencia; debe tratarse como una cifra no verificada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Arquitectura | Contexto | Cuantizacion | Aprendizaje continuo | Licencia |
-|---|---|---|---|---|---|---|
-| DeepNarra Paham-Experimental | 951,7 M (dato safetensors) | Hibrida GLA + MoE (92 expertos) | no disponible | Ternaria TQ1_0 (1,58 bits) | Si (3-tier awake/sleep) | Apache-2.0 |
-| DeepNarra Paham (variante base) | no disponible | Similar (variante no experimental) | no disponible | TQ1_0 | no disponible | Apache-2.0 |
-| Qwen2.5-0.5B-Instruct | 494 M | Transformer denso | 32.768 tokens (128k con YaRN) | multiples (GGUF, AWQ, etc.) | No | Apache-2.0 |
-| Llama 3.2 1B Instruct | 1.240 M | Transformer denso | 128.000 tokens | multiples (GGUF, etc.) | No | Licencia Llama 3.2 |
-
-Paham-Experimental se diferencia de los modelos densos comparables de tamano similar en su enfoque de aprendizaje continuo y cuantizacion ternaria nativa; a cambio, no publica benchmarks estandarizados ni longitud de contexto, lo que dificulta la comparacion directa de calidad.
+No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría (aprendizaje continuo en el borde con cuantización ternaria y MoE de 92 expertos) con especificaciones públicas verificables.
 
 ## Limitaciones y advertencias
 
-- Es un modelo experimental de investigacion: no hay benchmarks estandarizados publicados, por lo que su calidad de generacion no puede contrastarse con modelos de referencia.
-- La cifra de mas de 1.000 tokens/s no incluye hardware ni metodologia de medicion; verificarla en el entorno propio antes de tomar decisiones.
-- El tamano del repositorio (2.259,1 GB) es muy superior al de los pesos del modelo (~1 GB), probablemente por el historial de checkpoints auto-commiteados del entrenamiento autonomo; la clonacion completa puede ser costosa.
-- Riesgo de alucinacion: aunque el entrenamiento incluye metacognicion epistemica para calibrar confianza, no hay evaluaciones publicadas que cuantifiquen este riesgo.
-- Sesgos: entrenado con fineweb-edu, Aya Collection, CodeFeedback y no_robots; puede heredar los sesgos de esos corpus. No se publican evaluaciones de sesgo.
-- Idiomas: etiquetado como ingles y multilingue, pero la lista concreta de idiomas soportados no esta disponible; el castellano no esta garantizado explicitamente.
-- El ciclo de re-cuantizacion y auto-commit al repositorio implica que los pesos pueden cambiar con el tiempo sin versionado semantico evidente; fijar revisiones concretas en produccion.
-- Licencia Apache-2.0: permite uso comercial, pero el proyecto declara un ecosistema "sovereign" con marcas y badges propios; revisar cualquier termino adicional antes de uso comercial serio.
-- Capacidades de tool calling, vision y audio: no disponibles o no documentadas.
+- Modelo experimental: la propia denominación "Experimental" indica que no está validado para producción.
+- Ausencia de benchmarks publicados: no hay datos verificables de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar.
+- Longitud de contexto no documentada, lo que impide evaluar su idoneidad para tareas de contexto largo.
+- Riesgo de alucinación: aunque la model card menciona calibración epistémica, no hay evidencia externa de su eficacia.
+- Sesgos: no se documentan análisis de sesgo; los datasets de entrenamiento (FineWeb-Edu, Aya, No Robots) pueden introducir sesgos propios de su composición.
+- Cifras de rendimiento no verificadas: la afirmación de más de 1.000 tok/s no especifica hardware ni metodología.
+- Licencia Apache-2.0 permite uso comercial, pero la falta de validación y la naturaleza experimental desaconsejan su uso en producción sin evaluación previa.
+- El repo ocupa 2.470,6 GB, lo que puede dificultar la descarga y el despliegue en entornos con almacenamiento limitado.
+- La documentación mezcla terminología de marketing ("soberano", "omniversal") con detalles técnicos, lo que dificulta distinguir afirmaciones verificables de promesas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/DeepNarra/Paham-Experimental
-- Variante base DeepNarra/Paham: https://huggingface.co/DeepNarra/Paham
-- Organizacion DeepNarra: https://huggingface.co/DeepNarra
-- Notebook de entrenamiento autonomo: https://github.com/DeepNarra (repositorio referenciado en la model card; URL exacta del notebook no disponible)
-- Datasets de entrenamiento:
-  - https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-  - https://huggingface.co/datasets/CohereForAI/aya_collection
-  - https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction
-  - https://huggingface.co/datasets/HuggingFaceH4/no_robots
-- Paper tecnico, demo y blog: no disponibles en la informacion proporcionada.
+- Hugging Face: https://huggingface.co/DeepNarra/Paham-Experimental
+- Modelo base referenciado: https://huggingface.co/DeepNarra/Paham
+- Organización en Hugging Face: https://huggingface.co/DeepNarra
+- Repositorio GitHub (referenciado en la model card): https://github.com/DeepNarra
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset Aya Collection: https://huggingface.co/datasets/CohereForAI/aya_collection
+- Dataset CodeFeedback-Filtered-Instruction: https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction
+- Dataset No Robots: https://huggingface.co/datasets/HuggingFaceH4/no_robots
+- Licencia Apache-2.0: https://opensource.org/licenses/Apache-2.0

@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 58,
-  "downloads_30d": 68417,
+  "downloads_30d": 66878,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
@@ -39,26 +39,6 @@
   "renamed_at": null,
   "benchmarks": [],
   "sources": [
-    {
-      "title": "Comfy - Professional Control of Visual AI",
-      "url": "https://comfy.org/",
-      "snippet": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output."
-    },
-    {
-      "title": "Download Comfy Desktop - Run AI on Your Hardware",
-      "url": "https://comfy.org/download",
-      "snippet": "Need more power? TRY COMFY CLOUD Powerful GPUs, same workflow, same results, from anywhere."
-    },
-    {
-      "title": "COMFY®",
-      "url": "https://comfy.eu/fr/comfy/",
-      "snippet": "Notre gamme diversifiée de produits COMFY® regroupent des jouets intérieurs et extérieurs pour enfants, des aides à la natation, …"
-    },
-    {
-      "title": "ComfyUI",
-      "url": "https://cloud.comfy.org/",
-      "snippet": "Bring your creative ideas to life with Comfy Cloud. Build and run your workflows to generate stunning images and videos instantly …"
-    },
     {
       "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
       "url": "https://github.com/Comfy-Org/ComfyUI",

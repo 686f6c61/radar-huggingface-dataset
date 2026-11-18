@@ -22,6 +22,8 @@
     "json",
     "text-generation",
     "fr",
+    "base_model:DavidJLN/merge-or-mix-1.5b",
+    "base_model:quantized:DavidJLN/merge-or-mix-1.5b",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

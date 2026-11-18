@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 32,
-  "downloads_30d": 5286,
+  "downloads_30d": 5075,
   "trending_score": 11,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Welcome to Steam",
-      "url": "https://store.steampowered.com/",
-      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
-    },
-    {
-      "title": "Steam, The Ultimate Online Game Platform",
-      "url": "https://store.steampowered.com/about",
-      "snippet": "Steam Broadcast Stream your gameplay live with the click of a button, and share your game with friends or the rest of the community."
-    },
-    {
-      "title": "Create Your Account - Steam",
-      "url": "https://store.steampowered.com/join/completesignup",
-      "snippet": "© 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries. …"
-    },
-    {
-      "title": "Save 50% on Grand Theft Auto V Enhanced on Steam",
-      "url": "https://store.steampowered.com/app/3240220/Grand_Theft_Auto_V_Enhanced/",
-      "snippet": "Mar 4, 2025 · Experience entertainment blockbusters Grand Theft Auto V and Grand Theft Auto Online — now upgraded for a new …"
-    },
-    {
-      "title": "RuneScape: Dragonwilds on Steam",
-      "url": "https://store.steampowered.com/app/1374490/RuneScape_Dragonwilds/",
-      "snippet": "5 days ago · On RuneScape's forgotten continent of Ashenfall, dragons have awoken. Gather, build, skill and craft in this co-operative …"
-    }
-  ]
+  "sources": []
 }

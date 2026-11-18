@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 4509,
+  "downloads_30d": 5172,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SZLHOLDINGS/SZL-Khipu-1.5B at main - Hugging Face",
-      "url": "https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=brain-navigator",
-      "snippet": "SZLHOLDINGS/SZL-Khipu-1.5B-GGUF Text Generation • 2B•Updated about 18 hours ago• 584"
-    },
-    {
-      "title": "szl-forge/khipu/Modelfile.khipu.gguf at main · szl-holdings ... - GitHub",
-      "url": "https://github.com/szl-holdings/szl-forge/blob/main/khipu/Modelfile.khipu.gguf",
-      "snippet": "SYSTEM \"\"\"You are SZL-Khipu-1.5B-BrainNavigator, a governed retrieval agent. You are given a QUERY and a set of candidate Brain node HANDLES (ids + synthetic metadata only — NEVER node content)."
-    },
-    {
-      "title": "szl-forge/spaces/szl-model-inference-lab at main · szl-holdings/szl ...",
-      "url": "https://github.com/szl-holdings/szl-forge/tree/main/spaces/szl-model-inference-lab",
-      "snippet": "A public, zero-secret, bounded CPU demonstration for the exact SZLHOLDINGS/SZL-Khipu-1.5B-Q4_K_M.gguf bytes at immutable model commit 67d60ec577730747055491640cfb91fc4a4b5d25."
-    },
-    {
-      "title": "SZLHOLDINGS / SZL-Khipu-1.5B - insights-db.paloaltonetworks.com",
-      "url": "https://insights-db.paloaltonetworks.com/models/SZLHOLDINGS/SZL-Khipu-1.5B/537c349289d940087b212cbb66542216bae9911e/overview",
-      "snippet": "Discover potential threats in the SZLHOLDINGS / SZL-Khipu-1.5B model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
-    }
-  ]
+  "sources": []
 }

@@ -29,8 +29,6 @@
     "mlx-my-repo",
     "text-generation",
     "en",
-    "base_model:ReadyArt/Dark-Craving-26B-A4B-v0.1",
-    "base_model:quantized:ReadyArt/Dark-Craving-26B-A4B-v0.1",
     "license:apache-2.0",
     "8-bit",
     "region:us",

@@ -2,95 +2,94 @@
 
 ## Resumen
 
-Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 es una variante abliterada del modelo Qwen/Qwen3.8-27B, desarrollada por el usuario AEON-7. El objetivo es eliminar los mecanismos de rechazo (refusal) del modelo base manteniendo la coherencia y la calidad de las respuestas, sin caer en una sobre-abliteración que degrade el modelo. El resultado es un modelo que responde de forma directa a peticiones que el modelo original rechazaría, incluyendo contenido sensible o potencialmente dañino.
+Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 es un ajuste fino del modelo Qwen/Qwen3.8-27B publicado por el usuario AEON-7 bajo licencia Apache 2.0. Se trata de una variante "abliterated" (con las capas de rechazo eliminadas mediante manipulación de direcciones de activación) que conserva intactos el torreón de visión y la cabeza MTP nativa del modelo base. Con 27.781.427.952 parámetros en precisión BF16 y un repositorio de 55,6 GB, está pensado como maestro de precisión completa desde el que se derivan otras variantes cuantizadas (NVFP4-MIXED, MXFP4-MXFP6-ROCm).
 
-El modelo conserva la arquitectura híbrida del base: atención con gated-deltanet (GDN), torre de visión sin modificar y cabezal MTP (multi-token prediction) nativo. Se distribuye en BF16 como referencia de precisión completa, con un peso de unos 55,6 GB y 27.781 millones de parámetros. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales. Está pensado para entornos de inferencia con vLLM y soporta razonamiento, tool calling, visión y ventanas de contexto de hasta 262k tokens.
+El modelo hereda del base Qwen3.8 una arquitectura híbrida con atención lineal (Gated DeltaNet, "GDN"), componentes tipo Mamba, atención híbrida, decodificación especulativa con cabeza MTP y capacidades multimodales (image-text-to-text). El autor lo posiciona como un "Early Access Draft": funciona correctamente en tareas ordinarias, pero en respuestas extremadamente largas pueden aparecer bucles y repeticiones por los huecos que deja la eliminación de las capas de rechazo.
+
+Es relevante ahora porque combina el rendimiento de un modelo de 27B con contexto largo, tool calling, razonamiento y visión, en una versión sin filtros de rechazo, algo que interesa a desarrolladores que necesitan respuestas sin sermones en entornos controlados. No obstante, su estado de borrador y las advertencias del propio autor sobre degradación en contexto largo deben tenerse muy en cuenta antes de usarlo en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con gated-deltanet (GDN) y atencion hibrida, torre de vision y cabezal MTP |
-| Parametros totales | 27.781.427.952 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens nativos (validado con 16.384 en la prueba de referencia) |
-| Tipos de cuantizacion | BF16 (master), NVFP4 planeado para Blackwell/DGX Spark |
-| Idiomas soportados | Ingles, chino, multilingue |
-| Licencia | Apache-2.0 |
+| Arquitectura | Transformer híbrido con atención lineal (Gated DeltaNet), componentes Mamba, atención híbrida y cabeza MTP; multimodal (image-text-to-text) |
+| Parametros totales | 27.781.427.952 (27,78B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (etiquetado como long-context, sin cifra concreta) |
+| Tipos de cuantizacion | BF16 (este repo); variantes derivadas: NVFP4-MIXED (ModelOpt NVFP4 + FP8 + BF16), MXFP4-MXFP6 (AMD Quark, OCP MX) |
+| Idiomas soportados | en, zh, multilingual |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, que emplea una arquitectura hibrida que combina atencion tradicional con capas gated-deltanet (GDN), una variante de state-space model (SSM) con convolucion 1D. Sobre el base se aplico una reparacion del outlier de conv1d (FernflowerAI) y posteriormente una abliteracion con la herramienta abliterix 1.12.2. El proceso utilizo 50 ensayos de Optuna con un juez basado en Google Gemini 3.1 Flash Lite para evaluar si las respuestas eran rechazos o respuestas utiles. El ensayo ganador (trial 48) logro reducir la tasa de rechazo del juez de ~100/100 a 36/100 en el conjunto de validacion, manteniendo una divergencia KL de 0.0991 nats/token respecto al modelo original. No se optimizo para KL cero, sino para coherencia y utilidad de las respuestas.
+El modelo base Qwen3.8-27B emplea una arquitectura híbrida que combina atención lineal del tipo Gated DeltaNet (GDN) con componentes Mamba y capas de atención estándar, lo que permite manejar contexto largo con menor coste computacional que un transformer denso puro. Incluye una cabeza MTP (Multi-Token Prediction) nativa que habilita decodificación especulativa, y un torreón de visión para entrada image-text-to-text. El ajuste de AEON-7 parte del checkpoint oficial Qwen3.8-27B y aplica técnicas de abliteración (abliterix) orientadas a eliminar las capas de rechazo manteniendo la coherencia, según declara el autor: "abliterated for coherence and better answers, not for a vanity KL of zero". El torreón de visión y la cabeza MTP no se modifican.
 
-La torre de vision y el cabezal MTP no fueron modificados (333/333 y 15 tensores con hash-match respectivamente). El modelo conserva el modo de razonamiento (thinking) activado por defecto, con soporte para `reasoning_effort` y `enable_thinking`. El entrenamiento de abliteracion se realizo sobre un split fijo de 400 prompts de entrenamiento y 100 de evaluacion, mas un conjunto sexual de 50 prompts.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el ajuste. El autor describe el proceso como una "primera pasada" por las capas de rechazo y anuncia una versión GA con una abliteración "más quirúrgica" que preserve la estructura instructiva. Se menciona también un drafter de decodificación especulativa (AEON DFlash2) entrenado específicamente para esta familia, con mejoras medidas de +21% en tok/s a T=0.6 y +35% a T=1.0 sobre el DFlash2 estándar en una DGX Spark, y 3,2× frente a no usar drafter, manteniendo la verificación de cada token por parte del modelo de 27B.
 
 ## Capacidades
 
-- Generacion de texto y chat conversacional multilingue (ingles, chino, otros).
-- Razonamiento explicito con modo "thinking" activable por peticion, con niveles de esfuerzo configurables.
-- Tool calling y function calling nativo, compatible con el parser `qwen3_coder` y `enable-auto-tool-choice`.
-- Capacidades multimodales: entrada de imagen a traves de la torre de vision no modificada (vision-language).
-- Prediccion multi-token (MTP) para acelerar la decodificacion especulativa (3 tokens especulativos por paso).
-- Ventana de contexto larga de 262k tokens, util para documentos extensos o conversaciones multi-turno.
-- Respuesta sin rechazos: el modelo no muestra negativas explicitas ("I won't") en los conjuntos probados, incluso ante peticiones delicadas.
-- Soporte de agentes y razonamiento multi-paso gracias a la combinacion de thinking, tool calling y contexto largo.
+- Generación de texto conversacional e instructivo en inglés, chino y multilingüe.
+- Razonamiento con modo "thinking" (etiqueta thinking en los tags).
+- Generación de código y asistencia a programación (tags coding, instruct).
+- Capacidades multimodales de visión: entrada image-text-to-text mediante torreón de visión sin modificar.
+- Tool calling y function calling, con compatibilidad con endpoints estilo OpenAI (openai-compatible).
+- Comportamiento agéntico y razonamiento multi-paso (tags agentic, agentic workflows).
+- Contexto largo (long-context) gracias a la atención lineal GDN y componentes Mamba.
+- Decodificación especulativa mediante cabeza MTP nativa y drafter externo DFlash2.
+- Respuestas sin rechazo ni monólogo de seguridad (refusal-removed, uncensored), orientado a entornos donde se requiere cumplimiento directo.
+- Compatibilidad de despliegue con vLLM y transformers; tags específicos para DGX Spark (GB10), RTX 5090, RTX PRO 6000 y H200.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo (hasta 262k tokens) y responder de forma directa sin rechazos, adecuado para soporte tecnico o reclamaciones donde se necesita informacion completa.
-- Generacion de codigo en produccion: soporta tool calling y puede integrarse en pipelines de CI/CD para autocompletar o revisar codigo, aprovechando el modo thinking para razonar sobre requisitos complejos.
-- Analisis de documentos legales o financieros: gracias a la ventana de 262k tokens, puede procesar contratos completos o informes extensos y extraer clausulas, riesgos o datos relevantes sin truncar.
-- Asistentes de investigacion: el modo razonamiento permite desglosar problemas cientificos o tecnicos paso a paso, mientras que el soporte multilingue facilita el trabajo con fuentes en ingles y chino.
-- Creacion de contenido editorial: el modelo puede redactar articulos, guiones o material de marketing sin las restricciones de censura tipicas de otros modelos, manteniendo coherencia y estilo.
-- Simulacion de escenarios de seguridad o etica: al no rechazar peticiones, permite generar ejemplos de contenido peligroso o delicado (por ejemplo, planes de contingencia, analisis de vulnerabilidades) en entornos controlados de investigacion.
-- Integracion en agentes autonomos: con tool calling y MTP, puede ejecutar tareas multi-paso como busqueda web, calculo o interaccion con APIs, manteniendo un hilo de razonamiento explicito.
+- **Asistencia conversacional sin filtros en entornos controlados**: el modelo mantiene conversaciones multi-turno con contexto largo y responde sin monólogos de seguridad, adecuado para prototipos internos donde el equipo asume la responsabilidad del contenido generado.
+- **Generación de código en pipelines de CI/CD**: gracias al soporte de tool calling y function calling y a su compatibilidad con endpoints OpenAI, puede integrarse en flujos automatizados de revisión, generación de tests o documentación técnica.
+- **Análisis de documentos e imágenes**: el torreón de visión permite procesar capturas, diagramas o documentos escaneados junto con texto, útil para extracción de información en herramientas internas.
+- **Razonamiento multi-paso y agentes autónomos**: la combinación de modo thinking, tool calling y contexto largo lo hace apto para agentes que planifican y ejecutan tareas encadenadas con verificación intermedia.
+- **Investigación sobre alineación y abliteración**: al ser un maestro BF16 de una variante abliterated, sirve como objeto de estudio para comparar comportamiento antes y después de eliminar capas de rechazo, y como base para derivar cuantizaciones.
+- **Despliegue en estaciones de trabajo con GPU de gran memoria**: pensado para H200, RTX PRO 6000 o configuraciones multi-GPU donde se quiere el maestro de precisión completa como teacher para destilación o generación de datos.
+- **Generación de datos sintéticos y evaluación interna**: su naturaleza sin filtros permite generar respuestas variadas para conjuntos de evaluación, con la advertencia de revisar la calidad en respuestas largas por riesgo de bucles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. Los datos de rendimiento se limitan a metricas del proceso de abliteracion:
-
-| Metrica | Valor |
-|---|---|
-| KL de divergencia (full distribution, 100 prompts) | 0.0991 nats/token |
-| Tasa de rechazo del juez (Flash Lite) en conjunto harmful | 36/100 (29 en el mejor ensayo) |
-| Tasa de rechazo del juez en conjunto sexual | 5/50 |
-| Tasa de rechazo del juez en conjunto harmless | 1/100 |
-| Rechazos explicitos ("I won't") | 0 en todos los conjuntos |
-| Aceptacion de MTP en inferencia | 40-66% |
+No se han publicado resultados de benchmarks en la informacion disponible. El autor únicamente reporta métricas de velocidad del drafter DFlash2 asociado (+21% tok/s a T=0.6, +35% a T=1.0 sobre el DFlash2 estándar en una DGX Spark, y 3,2× frente a no usar drafter), sin tablas de MMLU, HumanEval, GSM8K ni comparaciones de calidad con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo en BF16 ocupa aproximadamente 55,6 GB de pesos, por lo que requiere al menos 80 GB de VRAM para inferencia con contexto moderado (16k). Para la ventana completa de 262k se necesita una GPU de 140 GB (como la H200) o memoria distribuida.
-- GPUs recomendadas: NVIDIA H200 (validada), A100 80GB, H100 80GB, o configuraciones multi-GPU con 2x48GB.
-- No cabe en GPUs de consumo (RTX 4090, 3090, etc.) en BF16. Para consumer se necesitaria cuantizacion de menor precision, no disponible en este repo.
-- Despliegue: validado con vLLM 0.27.1 (torch 2.13.0+cu130) usando `--gdn-prefill-backend triton` y `--speculative-config` con MTP. No se menciona compatibilidad con llama.cpp u Ollama.
-- Latencia y throughput: no se han publicado mediciones formales. La decodificacion especulativa con MTP (3 tokens) mostro una aceptacion del 40-66%, lo que reduce el numero de pasos de autoatencion.
+- **VRAM estimada para BF16**: el repositorio ocupa 55,6 GB, por lo que la inferencia en BF16 requiere al menos ~56-60 GB de VRAM (pesos más caché KV y overhead).
+- **GPU recomendadas para este maestro BF16**: H200 (141 GB), RTX PRO 6000 (96 GB) o configuraciones multi-GPU. El autor menciona H200 y multi-GPU como destino del maestro.
+- **Consumer GPU**: no cabe en RTX 4090 (24 GB) ni en RTX 5090 (32 GB) en BF16. Para esas tarjetas el autor remite a la variante NVFP4-MIXED (~23 GB), que sí está pensada para DGX Spark, RTX 5090 y RTX PRO 6000.
+- **Opciones de despliegue**: vLLM (el autor publica recetas `aeon-vllm-ultimate:latest` para Spark y `aeon-vllm-ultimate-rtx:latest` para RTX en la tarjeta del modelo NVFP4-MIXED), transformers, y endpoints compatibles con OpenAI.
+- **Latencia y throughput**: no disponibles para este BF16; las únicas cifras publicadas son las del drafter DFlash2 en DGX Spark (ver sección de benchmarks).
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa formal con otros modelos abliterados de la misma categoria (por ejemplo, Dolphin, Midnight Miqu, etc.). La unica referencia directa es el modelo base Qwen3.8-27B:
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 | 27,78B | no disponible (long-context) | Apache 2.0 | Hugging Face, 55.256 descargas | Variante abliterated, estado Early Access Draft |
+| Qwen/Qwen3.8-27B (base) | 27B (no se detalla) | no disponible | Apache 2.0 | Hugging Face oficial | Modelo original con capas de rechazo intactas; referencia de calidad |
+| AEON NVFP4-MIXED (misma familia) | ~27B (cuantizado) | no disponible | Apache 2.0 | Hugging Face | ~23 GB, orientado a DGX Spark, RTX 5090 y RTX PRO 6000 |
+| AEON MXFP4-MXFP6-ROCm (misma familia) | ~27B (cuantizado) | no disponible | Apache 2.0 | Hugging Face (gated) | ~23,7 GB, para AMD ROCm (R9700, MI350/MI355) |
 
-| Modelo | Parametros | Contexto | Licencia | Refusal |
-|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,8B | 262k | Apache-2.0 | Si |
-| Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED | 27,8B | 262k | Apache-2.0 | No (abliterado) |
-
-Ambos comparten arquitectura, vision y MTP. La diferencia principal es la ausencia de rechazos en la version abliterada, con una divergencia KL de ~0.1 nats/token respecto al base.
+No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de otros desarrolladores; la comparativa se limita a la familia Qwen3.8 y sus derivados cuantizados.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido abliterado especificamente para eliminar rechazos; puede generar contenido ilegal, peligroso o eticamente cuestionable sin filtro. Su uso en produccion requiere controles externos y supervisio humana.
-- No se han publicado evaluaciones de sesgos, alucinaciones o toxicidad. La ausencia de rechazo no implica ausencia de errores facticos.
-- La ventana de 262k tokens es nativa, pero la validacion oficial se realizo con 16k. El uso de contextos muy largos puede degradar la calidad o requerir ajustes de memoria.
-- La cuantizacion NVFP4 anunciada no esta disponible aun; el unico formato es BF16, que exige hardware de alta gama.
-- El proceso de abliteracion se optimizo con un juez especifico (Gemini Flash Lite); otros jueces pueden clasificar respuestas de forma diferente.
-- La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre la idoneidad del modelo para aplicaciones sensibles.
-- No se ha comprobado el rendimiento en tareas de vision mas alla de una prueba basica (escena ficticia de lockpick).
+- **Estado de borrador**: el propio autor lo califica como "Early Access Draft", no GA. La abliteración es una primera pasada y puede degradar la coherencia en respuestas muy largas, con aparición de bucles y repeticiones.
+- **Riesgo de alucinación**: no se han publicado evaluaciones de fidelidad factual; al eliminar las capas de rechazo se pierde parte de la estructura que sostenía el razonamiento, lo que puede aumentar respuestas plausibles pero incorrectas.
+- **Sesgos**: no hay información sobre evaluación de sesgos; un modelo sin filtros de rechazo puede reproducir contenido sesgado o inapropiado sin advertencia.
+- **Contexto e idioma**: aunque se etiqueta como long-context, no se especifica la longitud exacta; los idiomas declarados son en, zh y multilingual, sin garantías de calidad en castellano.
+- **Licencia**: Apache 2.0 permite uso comercial, pero el autor advierte que no se debe hacer dequant-edit-requant sobre la retícula NVFP4 de las variantes derivadas; este BF16 es el maestro desde el que se generan.
+- **Producción**: no se recomienda su uso en producción sin validación propia, dado el estado de borrador y la ausencia de benchmarks de calidad publicados.
+- **Dependencia de hardware**: el BF16 no cabe en GPU de consumo; para RTX 5090 o DGX Spark hay que usar las variantes cuantizadas de la misma familia.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Paper de gated-deltanet: https://arxiv.org/abs/2406.11717
-- Paper de Qwen3 (arquitectura general): https://arxiv.org/abs/2503.00555
+- Hugging Face del modelo: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Variante NVFP4-MIXED: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
+- Variante MXFP4-MXFP6-ROCm: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MXFP4-MXFP6-ROCm
+- Drafter DFlash2: https://huggingface.co/AEON-7/AEON-DFlash2-Qwen3.8-27B
+- Acceso anticipado en LotusMake: https://lotusmake.com/c/aeon-forge
+- Soporte al autor: https://lotusmake.com/support
+- Papers referenciados en los tags: arxiv:2406.11717, arxiv:2503.00555

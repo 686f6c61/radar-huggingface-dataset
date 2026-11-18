@@ -5,7 +5,7 @@
   "author": "UdeSA",
   "url": "https://huggingface.co/UdeSA/coconut-0.2B-gsm8k-aug",
   "created_at": "2026-10-05T13:37:48.000Z",
-  "updated_at": "2026-10-05T13:39:34.000Z",
+  "updated_at": "2026-11-13T21:53:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

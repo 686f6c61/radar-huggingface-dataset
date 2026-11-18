@@ -2,52 +2,59 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-GGUF es una colección de cuantizaciones GGUF del modelo DeepSeek-V4-Flash-0731, publicada por AtomicChat. El modelo original, desarrollado por DeepSeek, es un mixture of experts (MoE) de 284 mil millones de parámetros con 13 mil millones activos por token, 43 capas, 256 expertos enrutados con 6 activos y un experto compartido, una ventana de contexto de 1 millón de tokens y un vocabulario de 129.280 entradas. Está entrenado con quantization-aware training (QAT), lo que significa que el checkpoint oficial ya almacena los expertos en MXFP4 y el resto de pesos en FP8 o BF16.
+DeepSeek-V4-Flash-0731-GGUF es la cuantización en formato GGUF del modelo DeepSeek-V4-Flash-0731, publicada por AtomicChat. Se trata de un modelo de mezcla de expertos (MoE) de 284.334.567.511 parámetros totales, con 13.000 millones de parámetros activos por token, 43 capas, 256 expertos enrutados (6 activos) más un experto compartido, una longitud de contexto de 1 millón de tokens y un vocabulario de 129.280 entradas. El modelo base lo desarrolla DeepSeek y esta publicación se limita a ofrecer pesos cuantizados listos para llama.cpp.
 
-La relevancia de esta publicación es que permite ejecutar localmente un modelo de gran tamaño con cuantizaciones que van desde la copia bit-exacta del original (AD-BF16, 162,1 GB) hasta versiones extremadamente comprimidas de 1,81 bits por peso de experto (AD-IQ1_M, 70,2 GB). AtomicChat mide la degradación de cada cuantización con métricas propias (perplejidad, divergencia KL, coincidencia top-1) y las compara con las de otros publicadores como unsloth. El modelo está pensado para cargas de trabajo de razonamiento, código, agentes y contexto largo.
+La particularidad técnica de esta publicación es que el checkpoint oficial ya está entrenado con quantization-aware training (QAT): los expertos enrutados se almacenan en MXFP4 y el resto de pesos en FP8 o BF16. Por tanto, la variante `AD-BF16` no es una cuantización de alta precisión, sino los pesos originales empaquetados en un contenedor GGUF verificados byte a byte. El resto de la escalera de cuantizaciones intercambia bits de los expertos por tamaño, con métricas de perplejidad, divergencia KL y coincidencia top-1 medidas por el autor.
+
+El interés actual de esta ficha reside en que permite ejecutar localmente un modelo de 284B parámetros con ventana de 1M tokens en hardware de gama alta, incluyendo cuantizaciones de 1 y 2 bits que reducen el peso hasta 70,2 GB. La licencia MIT del modelo base y de la cuantización facilita su uso comercial, si bien el tamaño del repositorio (1.236,4 GB) y los requisitos de memoria siguen siendo considerables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), transformer, 43 capas, 256 expertos enrutados con 6 activos y 1 experto compartido |
-| Parametros totales | 284 mil millones |
-| Parametros activos | 13 mil millones por token |
+| Arquitectura | Transformer de mezcla de expertos (MoE) con 43 capas, 256 expertos enrutados (6 activos) y 1 experto compartido |
+| Parametros totales | 284.334.567.511 |
+| Parametros activos | 13.000 millones por token |
 | Longitud de contexto | 1.000.000 tokens |
 | Tipos de cuantizacion | AD-BF16, AD-MXFP4, AD-IQ3_M_XL, AD-IQ3_M, AD-IQ3_S, AD-IQ3_XS, AD-IQ3_XXS, AD-IQ2_M, AD-IQ2_S_XL, AD-IQ2_S, AD-IQ2_XS, AD-IQ2_XXS, AD-IQ1_M_XL, AD-IQ1_M |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | GGUF (safetensors en el modelo base original) |
+| Formato de pesos | GGUF (llama.cpp); el checkpoint original usa MXFP4 para expertos enrutados y FP8/BF16 para el resto |
+| Vocabulario | 129.280 tokens |
+| Tamano del repositorio | 1.236,4 GB |
+| Cuantizacion del autor | AtomicChat (imatrix, QAT) |
+| Modelo base | deepseek-ai/DeepSeek-V4-Flash-0731 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base DeepSeek-V4-Flash-0731 es un MoE con 43 capas y 256 expertos enrutados, de los cuales se activan 6 por token junto con un experto compartido. La característica más destacable es que fue entrenado con quantization-aware training: los expertos, que representan el 96 % del modelo, ya se almacenan en MXFP4 (4,25 bits por peso), mientras que el resto de los pesos están en FP8 o BF16. Esto implica que no hay ganancia de precisión al repaquear los expertos en formatos más anchos, y que las cuantizaciones por debajo de 3 bits degradan la calidad más rápido que en modelos entrenados en BF16, porque el modelo no tiene precisión sobrante que sacrificar.
+El modelo es un transformer de mezcla de expertos con 43 capas y 256 expertos enrutados, de los cuales se activan 6 por token, más un experto compartido. Con 284.334.567.511 parámetros totales y 13.000 millones activos, la relación de activación es de aproximadamente el 4,6 %, lo que permite un coste de cómputo por token muy inferior al de un modelo denso del mismo tamaño. La ventana de contexto alcanza 1.000.000 de tokens y el vocabulario es de 129.280 entradas.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. La arquitectura de atención se describe en la documentación como "compressed sparse attention" para soportar la ventana de 1 millón de tokens, aunque no se ofrecen más detalles técnicos al respecto.
+El entrenamiento del modelo base incorpora quantization-aware training: los pesos de los expertos enrutados se almacenan directamente en MXFP4 (4,25 bits efectivos) y el resto en FP8 o BF16. Esta decisión implica que el modelo no dispone de precisión sobrante por debajo de 3 bits, de modo que los errores de cuantización crecen más rápido que en un modelo entrenado en BF16. La publicación de AtomicChat documenta esta degradación con métricas medidas sobre wikitext-2: perplejidad, divergencia KL media, coincidencia top-1 y desviación RMS de probabilidad. No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens ni las etapas de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multistep, con un modo de razonamiento que admite niveles de esfuerzo `high` y `max` (el parámetro `reasoning_effort`).
-- Generación de código, según la documentación oficial del modelo para cargas de trabajo de coding.
-- Soporte de bucles agénticos y tool calling: el aviso de la model card menciona explícitamente que en bucles agénticos los resultados de herramientas (tool results) se insertan en el contexto, lo que implica soporte de function calling.
-- Capacidad de contexto largo de 1 millón de tokens, adecuada para análisis de documentos extensos.
-- Multilingüe en inglés y chino.
-- Ejecución local mediante cuantizaciones GGUF, con tamaños que van desde 70,2 GB hasta 162,1 GB.
+- Generación de texto conversacional en inglés y chino, con soporte de plantilla de chat integrada (`chat_template.jinja` en la raíz del repositorio).
+- Modo de razonamiento con parámetro `reasoning_effort`: la plantilla actualizada del 28 de octubre de 2026 permite que el razonamiento de turnos anteriores permanezca en el prompt a través de llamadas a herramientas, replicando el codificador de referencia de DeepSeek.
+- Soporte de tool calling y function calling, con preservación del razonamiento entre llamadas encadenadas.
+- Procesamiento de contexto largo de hasta 1.000.000 de tokens, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
+- Capacidades multilingües limitadas a inglés y chino según los metadatos del modelo.
+- No se documentan capacidades de visión, audio ni otras modalidades en la información disponible.
 
 ## Casos de uso
 
-- Ejecución local de un modelo de razonamiento de gran tamaño: con cuantizaciones como AD-IQ3_M_XL (143,6 GB) o AD-MXFP4 (154,5 GB) se puede desplegar en una estación de trabajo con 192 GB o 160 GB de RAM, manteniendo una calidad casi indistinguible del original.
-- Agentes autónomos con tool calling: el modelo puede mantener razonamiento de múltiples turnos mientras recibe resultados de herramientas, siempre que se use el chat template corregido que AtomicChat proporciona en el repositorio.
-- Análisis de documentos largos: su ventana de 1 millón de tokens permite procesar libros técnicos completos, bases de código extensas o expedientes legales en una sola pasada.
-- Generación de código en entornos sin conexión: al ser un modelo de 13B activos, el coste de cómputo por token es bajo, y las cuantizaciones permiten ejecutarlo en hardware de gama alta sin depender de APIs externas.
-- Soporte multilingüe inglés-chino: útil para traducción, localización o generación de contenido bilingüe en empresas con operaciones en ambos idiomas.
-- Investigación sobre cuantización: las métricas detalladas de perplejidad, divergencia KL y coincidencia top-1 para cada rung de cuantización permiten estudiar empíricamente la degradación de calidad en modelos entrenados con QAT.
+- Análisis de documentación técnica extensa: con 1M de tokens de contexto, el modelo puede ingerir repositorios completos, especificaciones o expedientes y responder preguntas sobre ellos sin fragmentación ni recuperación externa.
+- Asistente de código en local: la variante `AD-IQ2_M` (104 GB) permite desplegar un modelo de 284B parámetros en estaciones de trabajo con varias GPU, integrable en flujos de revisión de código y generación de parches.
+- Atención al cliente multi-turno: la ventana de 1M tokens y la conservación del razonamiento entre llamadas a herramientas permiten mantener conversaciones largas con historial completo y consultas a sistemas externos.
+- Agentes con tool calling: el soporte de function calling y la persistencia del razonamiento entre llamadas facilitan pipelines de varios pasos con verificación intermedia, por ejemplo orquestación de APIs o automatización de tareas administrativas.
+- Despliegue en entornos aislados: al ser pesos GGUF ejecutables con llama.cpp y licencia MIT, encaja en infraestructuras sin conectividad externa donde no se permite enviar datos a servicios en la nube.
+- Investigación sobre cuantización extrema: la escalera publicada, con métricas de perplejidad y KL por nivel, sirve como referencia para estudiar el impacto de cuantizaciones de 1 y 2 bits en modelos entrenados con QAT.
+- Generación de contenido bilingüe inglés-chino: traducción y redacción asistida entre ambos idiomas, los únicos declarados por el modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. AtomicChat proporciona en su lugar métricas de calidad de cuantización medidas por ellos mismos sobre wikitext-2, comparando cada cuantización contra la referencia lossless (AD-BF16). Los valores absolutos no son comparables con los de otros publicadores porque dependen del corpus y la longitud de contexto, pero los relativos dentro de la tabla sí lo son.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor publica métricas de calidad de cuantización medidas sobre wikitext-2, que se recogen a continuación.
 
-| Quant | Tamano | Bits por experto | PPL | KLD media | Coincidencia top-1 | Δp RMS |
+| Cuantizacion | Tamano | Bits por experto | PPL | KLD media | Coincidencia top-1 | Δp RMS |
 |---|---:|---:|---:|---:|---:|---:|
 | AD-BF16 | 162,1 GB | 4,25 | 4,5289 | 0 | 100,000 % | 0,000 % |
 | AD-MXFP4 | 154,5 GB | 4,25 | 4,5446 | 0,1564 | 87,369 % | 12,686 % |
@@ -64,27 +71,14 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 | AD-IQ1_M_XL | 72,8 GB | 1,89 | 6,1786 | 0,5351 | 75,162 % | 24,695 % |
 | AD-IQ1_M | 70,2 GB | 1,81 | 6,3813 | 0,5641 | 74,547 % | 25,253 % |
 
-La comparativa con unsloth, también medida por AtomicChat con el mismo harness, muestra que en los rangos de 96,8 GB y 104 GB sus cuantizaciones están más cerca de la referencia que las equivalentes de unsloth, y que por debajo de 82 GB no hay rung de otros publicadores.
-
-## Requisitos de hardware
-
-- Tamaño de archivo de las cuantizaciones: desde 70,2 GB (AD-IQ1_M) hasta 162,1 GB (AD-BF16). Se necesita memoria adicional para el contexto y el runtime.
-- Recomendaciones de AtomicChat según RAM disponible: 192 GB o más para AD-BF16; 160 GB para AD-MXFP4; 144 GB para AD-IQ3_M_XL; 128 GB para el siguiente escalón (AD-IQ3_S).
-- En la práctica, el rango de memoria necesario está entre 70 y 162 GB antes de overhead de runtime y contexto, según el blog de AtomicChat.
-- No se especifican GPUs concretas. Un modelo de este tamaño no cabe en GPUs de consumo (RTX 4090 con 24 GB); requiere configuraciones multi-GPU con memoria agregada de al menos 80-100 GB, o ejecución en CPU con mucha RAM usando llama.cpp.
-- Opciones de despliegue: llama.cpp y llama-server (el aviso de la model card muestra el comando con `llama-server`), y Ollama según el blog de AtomicChat. No se menciona vLLM ni TGI en la información disponible.
-- El blog indica que el modelo está diseñado para ejecutarse localmente en hardware profesional, no en equipos de consumo.
-
-## Comparativa con modelos similares
-
-La comparativa directa publicada por AtomicChat enfrenta sus cuantizaciones con las de unsloth para el mismo modelo base DeepSeek-V4-Flash-0731, medida con el mismo harness y la misma referencia lossless.
+Comparación con otro publicador (unsloth), medida por AtomicChat con el mismo harness y la misma referencia:
 
 | Tamano | AtomicChat | KLD | unsloth | KLD |
 |---:|---|---:|---|---:|
 | 155 GB | AD-MXFP4 | 0,1564 | UD-Q4_K_XL | 0,1557 |
 | 136 GB | AD-IQ3_M | 0,1798 | UD-IQ4_XS | 0,1779 |
-| 128-131 GB | AD-IQ3_S | 0,1891 | UD-Q3_K_XL | 0,1981 |
-| 116-118 GB | AD-IQ3_XS | 0,2065 | UD-IQ3_S | 0,2565 |
+| 128–131 GB | AD-IQ3_S | 0,1891 | UD-Q3_K_XL | 0,1981 |
+| 116–118 GB | AD-IQ3_XS | 0,2065 | UD-IQ3_S | 0,2565 |
 | 104 GB | AD-IQ2_M | 0,2567 | UD-IQ3_XXS | 0,2610 |
 | 96,8 GB | AD-IQ2_S_XL | 0,3187 | UD-Q2_K_XL | 0,3216 |
 | 91 GB | — | — | UD-IQ2_M | 0,3700 |
@@ -92,21 +86,43 @@ La comparativa directa publicada por AtomicChat enfrenta sus cuantizaciones con 
 | 78,5 GB | AD-IQ2_XXS | 0,4544 | — | — |
 | 70,2 GB | AD-IQ1_M | 0,5641 | — | — |
 
-En los rangos donde ambos publicadores coinciden en tamaño, AtomicChat gana en 128-131 GB, 116-118 GB, 104 GB y 96,8 GB. Por encima de 135 GB la diferencia está dentro del error de medición, y por debajo de 82 GB solo AtomicChat ofrece cuantizaciones. No hay datos comparativos con otros modelos de la misma categoría (otros MoE de 284B) en la información disponible.
+El autor advierte que los valores absolutos no son comparables con métricas publicadas por terceros, ya que distintos corpus y longitudes de contexto los desplazan decenas de puntos porcentuales; las comparaciones relativas dentro de la tabla sí lo son.
+
+## Requisitos de hardware
+
+- VRAM estimada para inferencia: entre 70,2 GB (AD-IQ1_M) y 162,1 GB (AD-BF16) solo para pesos; hay que añadir la caché KV, que con 1M de tokens de contexto resulta considerable y no está cuantificada en la información disponible.
+- GPU recomendadas: para las cuantizaciones de 1 y 2 bits, configuraciones multi-GPU con 2×A100 80 GB o 2×H100 80 GB; para AD-MXFP4 y AD-BF16, al menos 2×H100 80 GB con margen para caché, o 4×A100 80 GB.
+- No cabe en GPU de consumo individual: incluso la variante más pequeña (70,2 GB) supera los 24 GB de una RTX 4090. Sería necesario repartir entre varias GPU o usar offload a RAM del sistema.
+- Opciones de despliegue: llama.cpp es el runtime de referencia (formato GGUF, etiqueta `llama.cpp`); también es compatible con herramientas que consumen GGUF como Ollama o LM Studio. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia, aunque no se detalla en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
+
+## Comparativa con modelos similares
+
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato | Notas |
+|---|---:|---:|---:|---|---|---|
+| DeepSeek-V4-Flash-0731 (AtomicChat GGUF) | 284,3 B | 13 B | 1M | MIT | GGUF | Cuantizaciones de 1 a 4,25 bits con métricas publicadas |
+| DeepSeek-V4-Flash-0731 (unsloth GGUF) | 284,3 B | 13 B | 1M | MIT | GGUF | Escalera UD-Q/UD-IQ; KLD comparable, ligeramente mejor en 155 GB y 136 GB, peor en 118 GB y 104 GB |
+| DeepSeek-V4-Flash-0731 (modelo base) | 284,3 B | 13 B | 1M | MIT | safetensors (MXFP4/FP8/BF16) | Pesos originales con QAT; requiere infraestructura propia |
+
+No se dispone de información sobre otros modelos de la misma categoría (MoE de ~280B con contexto de 1M) en los datos proporcionados.
 
 ## Limitaciones y advertencias
 
-- El chat template embebido en los archivos GGUF está desactualizado y degrada silenciosamente el razonamiento: en bucles agénticos, el razonamiento de turnos anteriores se descarta cuando llegan resultados de herramientas, y el parámetro `reasoning_effort` nunca llega al modelo. Es necesario pasar el template corregido (`chat_template.jinja`) explícitamente con `--chat-template-file` y `--chat-template-kwargs`.
-- El parámetro `reasoning_effort` solo acepta `high` y `max`; los clientes que mapean todos los niveles a `high` nunca alcanzarán `max`.
-- Las cuantizaciones por debajo de 3 bits por peso de experto degradan la calidad más rápido que en modelos entrenados en BF16, porque el modelo fue entrenado a 4 bits y no tiene precisión sobrante. Para uso en producción se recomienda no bajar de AD-IQ3_M_XL (3,94 bits) si la memoria lo permite.
-- Los idiomas soportados son solo inglés y chino; no hay garantía de buen rendimiento en otros idiomas.
-- No se ha publicado información sobre sesgos conocidos, riesgo de alucinación o comportamiento en dominios específicos.
-- La licencia MIT permite uso comercial sin restricciones, pero el modelo base puede tener sus propias condiciones; se debe verificar la licencia del checkpoint original de DeepSeek antes de un despliegue comercial.
+- Idiomas: solo inglés y chino declarados; el rendimiento en castellano no está documentado y previsiblemente será inferior.
+- Cuantización agresiva: por debajo de 3 bits los errores crecen más rápido que en modelos entrenados en BF16, según advierte el propio autor. AD-IQ1_M cae a 74,547 % de coincidencia top-1 y 6,3813 de perplejidad frente a 4,5289 de la referencia.
+- AD-BF16 no aporta precisión adicional: es el checkpoint original reempaquetado, no una versión de mayor calidad.
+- Riesgo de alucinación: no se han publicado evaluaciones específicas de fidelidad factual en la información disponible.
+- Sesgos: no documentados en la información proporcionada.
+- Contexto largo: aunque la ventana es de 1M tokens, no se aportan mediciones de rendimiento ni de calidad en contextos cercanos al límite, y la caché KV asociada puede exceder la memoria disponible.
+- Licencia MIT: permite uso comercial, pero conviene verificar las condiciones del modelo base (deepseek-ai/DeepSeek-V4-Flash-0731) y las licencias de los componentes de terceros incluidos en el repositorio.
+- Tamaño del repositorio: 1.236,4 GB en total; la descarga selectiva de una sola variante es imprescindible en la práctica.
+- Plantilla de chat: la actualización del 28 de octubre de 2026 requiere volver a descargar el primer archivo de cada nivel (`*-00001-of-*`); las versiones anteriores no propagan `reasoning_effort` correctamente.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantización: https://huggingface.co/AtomicChat/DeepSeek-V4-Flash-0731-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
-- Blog de AtomicChat sobre ejecución local: https://atomic.chat/blog/guides/how-to-run-deepseek-v4-flash-locally
-- Releases de GitHub (aplicación de escritorio): https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731/releases
-- Documentación en DeepWiki: https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/DeepSeek-V4-Flash-0731-GGUF
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Atomic Chat: https://atomic.chat/?utm_source=huggingface&utm_medium=referral&utm_campaign=hf_deepseek_v4_flash_0731&utm_content=btn_atomic
+- Discord de AtomicChat: https://discord.gg/8wGSsvmg4V
+- GitHub de Atomic-Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- X (Twitter) de AtomicChat: https://x.com/atomic_chat_hq

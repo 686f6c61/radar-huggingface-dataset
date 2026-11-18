@@ -2,89 +2,93 @@
 
 ## Resumen
 
-K2-Horizon-0.9B es un modelo de lenguaje compacto de tipo decoder-only, desarrollado por IFM como parte de la familia K2 Horizon, que incluye seis modelos de diferentes tamaños, desde 0.9B hasta 375B-A23B. Este modelo en concreto es la versión densa más pequeña de la flota, con 1.078.285.824 parámetros (≈1.08B, comercializado como 0.9B) y una ventana de contexto de 128K tokens (131.072) mediante escalado YaRN RoPE. Su objetivo es ofrecer capacidades de razonamiento, matemáticas, código y uso de herramientas en un formato ligero, apto para despliegue en entornos con recursos limitados. La relevancia del modelo radica en que IFM publica tanto el código de entrenamiento como los datos, lo que lo convierte en una opción abierta para investigación y aplicaciones de bajo coste. Según el autor, el modelo está entrenado mediante destilación multi-teacher con especialistas en matemáticas, código, STEM y seguimiento de instrucciones.
+K2-Horizon-0.9B es un modelo de lenguaje decoder-only de tipo denso desarrollado por IFM (Integrated Foundation Models), con 1.078.285.824 parámetros reales según los pesos en safetensors (etiquetado comercialmente como "0.9B"). Forma parte de la familia K2-Horizon y está orientado explícitamente al razonamiento compacto: matemáticas, código, ciencia y uso de herramientas. Su ventana de contexto alcanza los 131.072 tokens (128K) mediante escalado YaRN de RoPE, lo que lo sitúa en una franja poco habitual para su tamaño.
 
-## Especificaciones técnicas
+El modelo se entrena mediante destilación multi-profesor (multi-teacher distillation), con profesores especializados por dominio para matemáticas y código, STEM, y seguimiento de instrucciones. IFM publica junto al modelo el código de entrenamiento, el código de evaluación y el conjunto de datos de entrenamiento, lo que lo convierte en una propuesta "fully open" dentro de la categoría de modelos pequeños.
+
+Es relevante ahora porque combina tres factores poco frecuentes en la franja sub-1B: contexto de 128K, entrenamiento orientado a razonamiento y trazabilidad completa del pipeline de datos y entrenamiento. Su licencia Apache 2.0 elimina fricción para uso comercial, y su tamaño permite despliegue en hardware de consumo.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decoder-only transformer denso |
-| Parametros totales | 1.078.285.824 (≈1.08B, comercializado como 0.9B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 131.072 tokens (128K) con escalado YaRN RoPE |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (en), chino (zh) |
-| Licencia | Contradictoria: el model card indica Apache-2.0, pero el campo license_name de Hugging Face indica internal-only |
-| Formato de pesos | Safetensors (transformers) |
+| Arquitectura | Transformer decoder-only denso |
+| Parametros totales | 1.078.285.824 (1,08B) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 131.072 tokens (128K), con escalado YaRN de RoPE |
+| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se detallan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | ingles (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (libreria transformers, requiere `custom_code` / `trust_remote_code`) |
 
 ## Arquitectura y entrenamiento
 
-K2-Horizon-0.9B es un transformer decoder-only de arquitectura densa, sin mezcla de expertos. La ventana de contexto de 128K se consigue mediante escalado YaRN de las posiciones rotatorias (RoPE), lo que permite manejar secuencias largas sin necesidad de reentrenar por completo. El entrenamiento se basa en destilación multi-teacher: según el model card, se utilizan profesores especializados en dominios de matemáticas y código, STEM y seguimiento de instrucciones. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El autor indica que el código de entrenamiento y los datos se harán públicos, pero no se detallan en la información disponible.
+La arquitectura es un transformer decoder-only denso, sin mezcla de expertos: todos los parámetros (1,08B) se activan en cada token. La extensión de contexto hasta 131.072 tokens se consigue mediante escalado YaRN sobre RoPE. El identificador de arquitectura en el repo es `k2_horizon`, con código personalizado, por lo que la carga requiere `trust_remote_code=True` en transformers.
+
+El entrenamiento se basa en destilación de conocimiento multi-profesor: distintos profesores especializados cubren matemáticas y código, STEM y seguimiento de instrucciones. La model card indica que tanto la receta de entrenamiento como los datos y el código son públicos, lo que permite reproducir o auditar el proceso. No se especifican en la información disponible el número exacto de tokens de entrenamiento, la composición porcentual del dataset ni si se aplicaron fases de RLHF o DPO; estos datos deben consultarse en el repositorio de datos enlazado por el autor.
 
 ## Capacidades
 
-- Razonamiento matemático: evaluado en AIME 2025 con una puntuación de 41.7, lo que indica capacidad para resolver problemas de matemáticas de nivel competitivo.
-- Generación de código y capacidades científicas: el modelo está evaluado en benchmarks de coding y science, aunque no se ofrecen resultados específicos en la información disponible.
-- Uso de herramientas (tool-use): el model card menciona benchmarks de tool-use, lo que sugiere capacidad de integración con funciones y APIs externas.
-- Contexto largo: soporta hasta 131.072 tokens, útil para procesar documentos extensos o conversaciones multi-turno.
-- Multilingüe: entrenado para inglés y chino, con soporte de generación de texto en ambos idiomas.
-- Sin capacidades de visión o audio: no se mencionan en la información disponible.
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento matemático orientado a problemas de competición (la model card referencia AIME 2025 entre sus evaluaciones).
+- Generación y razonamiento sobre código, con profesor de destilación específico de dominio.
+- Razonamiento científico y de conocimiento STEM.
+- Uso de herramientas (tool use), evaluado explícitamente según la model card.
+- Ventana de contexto larga de 128K tokens para documentos extensos y conversaciones multi-turno prolongadas.
+- Seguimiento de instrucciones entrenado mediante profesor específico de instruction following.
+- No se documentan capacidades de visión, audio ni modo "thinking" explícito en la información disponible.
 
 ## Casos de uso
 
-- Asistente de código en entornos con recursos limitados: gracias a su tamaño compacto, puede ejecutarse en CPUs o GPUs modestas y generar o revisar código en inglés y chino, con contexto suficiente para archivos de proyecto grandes.
-- Procesamiento de documentos largos: la ventana de 128K permite analizar contratos, informes técnicos o expedientes completos sin fragmentar el texto, especialmente en dominios bilingües.
-- Agentes conversacionales en dispositivos edge: el soporte de tool-use permite integrar el modelo en sistemas de agentes que llaman a APIs o herramientas externas, con bajo coste de inferencia.
-- Tutoría de matemáticas: la puntuación en AIME 2025 lo hace adecuado para aplicaciones educativas que necesitan resolver problemas de matemáticas paso a paso.
-- Extracción de información en textos largos: puede clasificar o extraer entidades de documentos extensos de una sola pasada, aprovechando el contexto de 128K.
-- Prototipado rápido de aplicaciones de IA en local: al ser un modelo de ~1B con licencia potencialmente abierta, es útil para experimentar en entornos de desarrollo sin depender de APIs externas.
+- Razonamiento matemático asistido: resolución de problemas paso a paso en entornos educativos o de validación, aprovechando el entrenamiento con profesor específico de matemáticas y su evaluación en pruebas tipo competición.
+- Asistencia de código en local: autocompletado, explicación y refactorización en un IDE o pipeline de CI/CD, con despliegue en una sola GPU de consumo gracias a su tamaño sub-1B.
+- Procesamiento de documentos largos: análisis y resumen de contratos, informes o expedientes de hasta 128K tokens sin fragmentación, útil en back-office documental.
+- Agentes con tool calling: orquestación de llamadas a APIs y funciones en flujos multi-paso, donde el bajo coste por token permite iteraciones frecuentes.
+- Atención al cliente en inglés y chino: conversaciones multi-turno con contexto largo y coste de inferencia reducido, adecuado para volúmenes altos.
+- Clasificación y extracción de información estructurada sobre textos extensos: pipelines de enriquecimiento de datos con ventanas de 128K.
+- Prototipado e investigación en destilación: al publicarse datos, receta y código, sirve como base reproducible para estudiar cambios de capacidad entre checkpoints (la model card menciona checkpoints intermedios, aunque esa línea aparece comentada en el texto extraído).
 
 ## Benchmarks y rendimiento
 
-Se ha publicado un resultado parcial en la información disponible, correspondiente al benchmark AIME 2025. La tabla del model card incluye comparaciones con Qwen3.5-0.8B, OpenBMB-1B y Qwen3.5-2B, pero los valores de estos modelos no se proporcionan en el extracto disponible.
+La model card incluye una tabla comparativa frente a Qwen3.5-0.8B, OpenBMB-1B y Qwen3.5-2B, con secciones de matemáticas (AIME 2025) y otras categorías. Sin embargo, los valores numéricos de esa tabla no están disponibles en la información proporcionada (el HTML aparece truncado). Por tanto:
 
-| Benchmark | K2-Horizon-0.9B | Qwen3.5-0.8B | OpenBMB-1B | Qwen3.5-2B |
-|---|---|---|---|---|
-| AIME 2025 | 41.7 | No disponible | No disponible | No disponible |
-
-El model card menciona una figura con más resultados, pero no es accesible en la información proporcionada. No se han publicado resultados de MMLU, HumanEval, GSM8K u otros benchmarks en los datos disponibles.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (teórica, sin contar overhead de KV cache ni activaciones):
-  - FP32: ~4.3 GB
-  - FP16/BF16: ~2.2 GB
-  - INT8: ~1.1 GB
-  - INT4: ~0.6 GB
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16, como RTX 3060, RTX 4060 o equivalentes. Para despliegue a escala, A100 o H100.
-- Compatibilidad con GPUs de consumo: sí, el modelo es apto para ejecutarse en hardware de gama media.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, y transformers (según la librería indicada en Hugging Face).
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada en FP16/BF16: aproximadamente 2,2 GB solo para pesos, más caché KV; con 128K de contexto la caché KV crece de forma significativa y puede dominar el consumo en secuencias largas.
+- VRAM estimada en cuantización de 8 bits: en torno a 1,1-1,3 GB para pesos.
+- VRAM estimada en cuantización de 4 bits: en torno a 0,6-0,8 GB para pesos.
+- GPU recomendadas para producción: A100, H100 o L40S para servir contexto de 128K con concurrencia; RTX 4090 y RTX 3090 sobradas para el modelo en BF16 a contextos moderados.
+- Cabe holgadamente en GPU de consumo: RTX 4090, RTX 4080, RTX 3090, RTX 4070 Ti e incluso GPUs de 8 GB en cuantización de 4 bits para contextos cortos.
+- Opciones de despliegue: transformers (requiere `trust_remote_code` por el código `k2_horizon`); vLLM, TGI y llama.cpp/Ollama son opciones plausibles, pero no se confirma en la información disponible soporte oficial en esos motores ni la existencia de pesos GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La comparación se basa únicamente en los datos disponibles en el model card. No se dispone de resultados de rendimiento para los modelos de referencia.
+| Modelo | Parametros | Arquitectura | Contexto | Licencia | Idiomas | Notas |
+|---|---|---|---|---|---|---|
+| K2-Horizon-0.9B | 1,08B | Densa | 128K (YaRN) | Apache 2.0 | en, zh | Destilación multi-profesor; datos y código públicos |
+| Qwen3.5-0.8B | 0,8B | Densa | no disponible | no disponible | no disponible | Modelo de referencia usado en la comparativa del autor |
+| OpenBMB-1B | 1B | Densa | no disponible | no disponible | no disponible | Modelo de referencia usado en la comparativa del autor |
+| Qwen3.5-2B | 2B | Densa | no disponible | no disponible | no disponible | Modelo de referencia usado en la comparativa del autor |
 
-| Parametro | K2-Horizon-0.9B | Qwen3.5-0.8B | OpenBMB-1B | Qwen3.5-2B |
-|---|---|---|---|---|
-| Parametros | 0.9B (1.08B reales) | 0.8B | 1B | 2B |
-| Parametros activos | 0.9B | 0.8B | 1B | 2B |
-| Arquitectura | Densa | Densa | Densa | Densa |
-| Longitud de contexto | 128K | No disponible | No disponible | No disponible |
-| Licencia | Contradictoria (Apache-2.0 / internal-only) | No disponible | No disponible | No disponible |
-| Rendimiento (AIME 2025) | 41.7 | No disponible | No disponible | No disponible |
+Los datos de rendimiento comparado (AIME 2025 y resto de categorías) están referenciados en la model card pero sus valores no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ambigüedad de licencia: el model card declara Apache-2.0, pero el campo license_name de Hugging Face indica internal-only. Esto genera incertidumbre sobre el uso comercial y debe resolverse consultando la licencia oficial antes de usar el modelo en producción.
-- Idiomas limitados: solo soporta inglés y chino, lo que restringe su uso en otros idiomas sin adaptación adicional.
-- Riesgo de alucinación: al ser un modelo de ~1B, es más propenso a errores y alucinaciones que modelos más grandes, especialmente en tareas de razonamiento complejo.
-- Contexto largo con degradación potencial: el uso de YaRN RoPE para extender el contexto a 128K puede implicar una pérdida de rendimiento en secuencias muy largas en comparación con el entrenamiento nativo a esa longitud.
-- Sin datos de sesgos: no se han publicado análisis de sesgos ni evaluaciones de seguridad en la información disponible.
-- Datos de entrenamiento no divulgados: no se especifica la composición del dataset ni el número de tokens, lo que limita la evaluación de riesgos de contaminación o sesgos.
+- Idiomas: solo inglés y chino declarados; el rendimiento en castellano no está garantizado ni evaluado.
+- Riesgo de alucinación: como todo modelo generativo de 1B, la tasa de error factual en conocimiento abierto es alta; conviene usarlo con verificación externa o como componente de un pipeline con herramientas.
+- Capacidad limitada por tamaño: pese al entrenamiento en razonamiento, 1,08B de parámetros acotan la profundidad de razonamiento frente a modelos de mayor escala; los benchmarks de matemáticas de competición deben interpretarse con cautela.
+- Contexto largo: aunque soporta 128K tokens, la calidad efectiva de recuperación en ventanas muy largas no está documentada en la información disponible, y la caché KV a esa longitud encarece la inferencia.
+- Código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar la implementación `k2_horizon` antes de desplegar en producción.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero no exime de las obligaciones habituales de atribución y de las responsabilidades sobre sesgos y contenido generado.
+- Sesgos: no se documentan evaluaciones de sesgo, toxicidad ni seguridad en la información disponible.
+- Repo de 77,6 GB: el tamaño del repositorio es muy superior al de los pesos, probablemente por checkpoints intermedios u otros artefactos; conviene descargar solo los archivos necesarios.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/IFM/K2-Horizon-0.9B
-- Blog de IFM sobre K2 Horizon: https://ifm.ai/blog/k2
-- Página de producto K2 Horizon: https://ifm.ai/k2/
+- Modelo en Hugging Face: https://huggingface.co/IFM/K2-Horizon-0.9B
+- Código de entrenamiento (xllm): https://github.com/ifm-ai/xllm
+- Código de evaluación (Eval360): https://github.com/ifm-ai/Eval360
+- Datos de entrenamiento (DATA_NAVIGATOR): https://github.com/ifm-ai/DATA_NAVIGATOR

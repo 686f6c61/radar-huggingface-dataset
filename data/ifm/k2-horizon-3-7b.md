@@ -2,85 +2,102 @@
 
 ## Resumen
 
-K2-Horizon-3.7B es el miembro pequeño de arquitectura densa de la familia K2 Horizon, desarrollada por IFM. Se trata de un modelo decoder-only de 3.7B núcleo (aunque los pesos reales en safetensors suman 5.058.255.360 parámetros) con una ventana de contexto nativa de 512K tokens, implementada desde las etapas de midtraining. La familia completa incluye seis modelos que van desde 0.9B hasta 375B-A23B, y este modelo se posiciona como una opción ligera pero competitiva para tareas de razonamiento, código y agentes.
+K2-Horizon-3.7B es un modelo de lenguaje decoder-only de tipo denso desarrollado por IFM, presentado como el miembro pequeno de la familia K2-Horizon. Segun la model card, se trata de un modelo con un nucleo de 3.700 millones de parametros y una ventana de contexto nativa de 524.288 tokens (512K), disponible desde las etapas de midtraining. El modelo se distribuye con pesos abiertos bajo licencia Apache 2.0 y esta disenado para generacion de texto conversacional en ingles.
 
-La relevancia de este modelo radica en su carácter completamente abierto: IFM publica los datos de preentrenamiento y midtraining, la receta de entrenamiento, el código y los recursos de evaluación. Además, se liberan checkpoints intermedios para estudiar la evolución de capacidades a lo largo del entrenamiento. Según el fabricante, K2-Horizon-3.7B establece un nuevo estado del arte en su clase de tamaño, compitiendo con modelos densos de 3B a 4B en benchmarks agénticos, de programación y razonamiento.
+La propuesta de valor del modelo reside en combinar un tamano reducido con un contexto extremadamente largo, algo poco habitual en modelos densos de esta escala. IFM acompana la publicacion con recursos de entrenamiento abiertos: receta y datos de preentrenamiento y midtraining, codigo de entrenamiento (xllm), codigo de evaluacion (Eval360) y checkpoints intermedios para estudiar la evolucion de capacidades a lo largo del entrenamiento.
+
+Es relevante ahora porque se posiciona como una linea base pequena evaluada en los mismos benchmarks agenticos, de codigo y razonamiento que el resto de la familia, y porque su caracter completamente abierto (datos, receta, codigo y evaluacion) facilita la reproducibilidad y el estudio academico. Nota importante: la model card indica 3.7B, pero el dato real de los safetensors del repositorio es de 5.058.255.360 parametros, discrepancia que el desarrollador no explica en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decoder-only denso (Transformer) |
-| Parametros totales | 5.058.255.360 (5.06B) según safetensors; la model card indica 3.7B como núcleo |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 524.288 tokens (512K) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer decoder-only denso |
+| Parametros totales | 3.7B segun model card; 5.058.255.360 segun safetensors del repo (dato real) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 524.288 tokens (512K), nativa desde midtraining |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
-| Pipeline | text-generation |
-| Libreria | Transformers |
-| Tamano del repositorio | 586.8 GB |
+| Formato de pesos | safetensors (libreria transformers, custom_code) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Transformer decoder-only de tipo denso, sin mezcla de expertos (MoE). La principal característica técnica destacada es la ventana de contexto de 512K tokens, que se activa desde las etapas de midtraining. El modelo se entrenó sobre dos datasets públicos: IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data. IFM no ha publicado detalles sobre el número total de tokens de entrenamiento, la composición exacta del corpus ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card menciona que se liberan checkpoints intermedios y que la receta de entrenamiento es pública, lo que permite analizar la evolución de las capacidades a lo largo del proceso.
+El modelo es un transformer decoder-only de tipo denso, sin mezcla de expertos. La model card no detalla el numero de capas, dimensiones ocultas, cabezas de atencion ni el mecanismo exacto que permite la ventana de 512K tokens; unicamente confirma que el contexto nativo de 524.288 tokens esta disponible desde las etapas de midtraining en adelante. El repositorio requiere `custom_code`, lo que implica que la implementacion de la arquitectura no es la estandar de transformers y necesita cargar codigo propio del autor.
+
+En cuanto a datos, se referencian dos conjuntos publicos: `IFM/K2-Horizon-Pretrain-Data` y `IFM/K2-Horizon-Midtrain-Data`, ademas de un repositorio `DATA_NAVIGATOR` con todos los datos de entrenamiento. No se especifica en la informacion disponible el numero total de tokens, la composicion del dataset ni si hubo etapas de RLHF, DPO u otro ajuste por preferencias. La publicacion de checkpoints intermedios es una innovacion destacable para el estudio de la evolucion de capacidades durante el entrenamiento.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, con rendimiento destacado en benchmarks de lógica y matemáticas según el fabricante.
-- Generación de código, evaluada en benchmarks específicos de programación.
-- Tareas agénticas, con soporte para razonamiento multi-paso y uso de herramientas, según lo indicado en la presentación de la familia K2 Horizon.
-- Contexto largo de 512K tokens, lo que permite procesar documentos extensos, bases de conocimiento completas o conversaciones de muchos turnos.
-- Capacidades multilingües limitadas: el modelo está entrenado principalmente en inglés, sin evidencia de soporte robusto en otros idiomas.
-- No se ha documentado soporte de visión, audio ni otros modos multimodales en la información disponible.
+- Generacion de texto conversacional en ingles.
+- Razonamiento y tareas de codigo, evaluado en los mismos benchmarks agenticos y de codigo que el resto de la familia K2-Horizon.
+- Procesamiento de contexto largo: ventana nativa de 524.288 tokens, adecuada para documentos extensos y conversaciones multi-turno prolongadas.
+- Capacidades agenticas: la model card menciona evaluacion en benchmarks agenticos, aunque no detalla soporte explicito de tool calling o function calling.
+- Capacidades multilingues: limitadas al ingles segun los metadatos del modelo.
+- No se documentan capacidades de vision, audio ni modos de razonamiento extendido (thinking mode) en la informacion disponible.
 
 ## Casos de uso
 
-- Análisis de documentos legales extensos: gracias a la ventana de contexto de 512K tokens, el modelo puede procesar contratos completos, expedientes judiciales o normativas enteras en una sola pasada, facilitando la extracción de cláusulas y la comparación entre secciones.
-- Asistentes de programación integrados en IDE: su capacidad de generación de código y razonamiento multi-paso permite usarlo como copiloto para autocompletar funciones, refactorizar código o explicar fragmentos complejos.
-- Agentes de automatización de tareas: al soportar razonamiento agéntico, puede encadenar llamadas a herramientas, consultar APIs o ejecutar flujos de trabajo en pipelines de CI/CD, aunque no se especifica explícitamente function calling.
-- Investigación académica en NLP: al ser un modelo completamente abierto con datos de entrenamiento públicos, es adecuado para estudiar la evolución de capacidades, realizar ablaciones o comparar estrategias de midtraining.
-- Generación de documentación técnica: puede resumir manuales de usuario, especificaciones de productos o documentación de APIs, manteniendo coherencia a lo largo de textos de varios miles de tokens.
-- Análisis de logs y telemetría en producción: la ventana larga permite ingerir grandes volúmenes de logs para detectar patrones de error o anomalías, aunque se requeriría una fase de prompting o fine-tuning específica.
-- Fine-tuning en dominios especializados: al ser un modelo denso de tamaño medio, es viable ajustarlo en GPUs de consumo para tareas concretas como clasificación de tickets, extracción de entidades o traducción especializada.
+- Analisis de documentos extensos: el modelo puede ingerir libros tecnicos, expedientes legales o bases de codigo completas de hasta 512K tokens en una sola pasada, evitando estrategias de troceado y recuperacion.
+- Revision de repositorios de codigo: con contexto de 512K, es posible cargar modulos enteros o multiples ficheros y solicitar refactorizaciones o auditorias de coherencia entre ellos.
+- Atencion al cliente automatizada: conversaciones multi-turno con historial largo gracias a la ventana de contexto, manteniendo coherencia en sesiones extensas en ingles.
+- Investigacion sobre entrenamiento de modelos: los checkpoints intermedios y los datos publicos permiten estudiar la aparicion de capacidades a lo largo del entrenamiento, un caso de uso academico directo.
+- Generacion de resumenes de documentacion tecnica: procesamiento de manuales y especificaciones extensas sin perdida de contexto.
+- Linea base para evaluacion comparativa: al ser un modelo denso pequeno con contexto largo, sirve como referencia en pipelines de evaluacion propios (Eval360) frente a modelos mayores de la misma familia.
+- Prototipado en entornos con recursos limitados: su tamano reducido permite desplegarlo en una sola GPU, lo que facilita experimentacion rapida en ingles.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una gráfica comparativa con modelos de referencia, pero no se han extraído los valores numéricos en la información proporcionada. La tabla de resultados se muestra de forma incompleta en el texto disponible. Por tanto, no se pueden presentar cifras concretas de benchmarks como MMLU, HumanEval o GSM8K. Los modelos de comparación mencionados en la model card son Qwen3.5-4B, G9v3-3B, Granite 4.2-3B y Nemotron 3 Nano-4B, todos ellos de arquitectura densa y tamaño similar, pero no se dispone de sus resultados detallados.
+La model card incluye una tabla comparativa frente a Qwen3.5-4B, G9v3-3B, Granite 4.2-3B y Nemotron 3 Nano-4B. Sin embargo, en el fragmento de informacion proporcionado solo se recogen las filas de parametros, parametros activos y arquitectura; los valores numericos de los benchmarks (MMLU, HumanEval, GSM8K, etc.) no estan disponibles en el texto extraido.
+
+| Modelo | Parametros | Arquitectura |
+|---|---|---|
+| K2-Horizon-3.7B | 3.7B (card) / 5.06B (safetensors) | Dense |
+| Qwen3.5-4B | 4B | Dense |
+| G9v3-3B | 3B | Dense |
+| Granite 4.2-3B | 3B | Dense |
+| Nemotron 3 Nano-4B | 4B | Dense |
+
+Los resultados numericos de los benchmarks no estan disponibles en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- No se han publicado datos específicos de VRAM estimada, GPUs recomendadas ni latencia/throughput en la información proporcionada.
-- Al tratarse de un modelo de aproximadamente 5.06B parámetros en formato safetensors, es probable que pueda ejecutarse en GPUs de consumo como RTX 4090 (24 GB) con cuantización, pero esto es una estimación no verificada.
-- El modelo se distribuye a través de Hugging Face y se puede cargar con la librería Transformers.
-- No se ha confirmado la compatibilidad con vLLM, TGI, llama.cpp u Ollama. Estas herramientas podrían funcionar tras una conversión o adaptación, pero no se ha verificado en la documentación disponible.
+- VRAM estimada en FP16/BF16: aproximadamente 10-11 GB solo para pesos (5.06B parametros), mas memoria para KV cache; con contexto de 512K la KV cache puede ser muy elevada y requerir tecnicas de atencion eficiente o cuantizacion de cache.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 5-6 GB para pesos.
+- VRAM estimada en cuantizacion de 4 bits: alrededor de 3 GB para pesos, aunque la disponibilidad de pesos GGUF no esta confirmada.
+- GPU recomendadas: A100 40/80 GB o H100 para explotar el contexto completo de 512K; RTX 4090 (24 GB) suficiente para inferencia en precision reducida con contextos moderados.
+- Cabe en GPU de consumo: si, en tarjetas con 16-24 GB para precision reducida y contextos no maximos; el contexto completo de 512K exige hardware profesional.
+- Opciones de despliegue: transformers (con `custom_code`), vLLM y TGI previsiblemente previa integracion; llama.cpp y Ollama solo si se publican pesos GGUF, no confirmado.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-Los modelos mencionados como comparables en la model card son Qwen3.5-4B, G9v3-3B, Granite 4.2-3B y Nemotron 3 Nano-4B. No se dispone de especificaciones detalladas de estos modelos en la información proporcionada, por lo que la comparación se limita a los datos conocidos de K2-Horizon-3.7B.
-
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| K2-Horizon-3.7B | 3.7B (core) / 5.06B (safetensors) | 512K | Apache 2.0 | Hugging Face, abierto |
-| Qwen3.5-4B | No disponible | No disponible | No disponible | No disponible |
-| G9v3-3B | No disponible | No disponible | No disponible | No disponible |
-| Granite 4.2-3B | No disponible | No disponible | No disponible | No disponible |
-| Nemotron 3 Nano-4B | No disponible | No disponible | No disponible | No disponible |
+| K2-Horizon-3.7B | 3.7B (card) / 5.06B (safetensors) | 524.288 tokens | Apache 2.0 | Hugging Face, pesos abiertos, datos y codigo publicos |
+| Qwen3.5-4B | 4B | no disponible en la informacion | no disponible en la informacion | referenciado en la model card |
+| G9v3-3B | 3B | no disponible en la informacion | no disponible en la informacion | referenciado en la model card |
+| Granite 4.2-3B | 3B | no disponible en la informacion | no disponible en la informacion | referenciado en la model card |
+| Nemotron 3 Nano-4B | 4B | no disponible en la informacion | no disponible en la informacion | referenciado en la model card |
+
+Los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada; la model card remite a una imagen de benchmarks no incluida en el texto extraido.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgo en la información proporcionada, por lo que no se conocen sesgos específicos del modelo.
-- El riesgo de alucinación no está documentado. Como en cualquier modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en dominios especializados.
-- El modelo está entrenado principalmente en inglés, lo que limita su rendimiento en otros idiomas. La etiqueta de idioma en Hugging Face es solo "en".
-- La discrepancia entre los 3.7B indicados en la model card y los 5.06B reales en safetensors debe tenerse en cuenta a la hora de dimensionar recursos y expectativas de rendimiento.
-- La licencia Apache 2.0 permite uso comercial, pero exige incluir el aviso de licencia y las atribuciones correspondientes en las redistribuciones.
-- No se ha confirmado la compatibilidad con herramientas de despliegue populares como vLLM o llama.cpp, por lo que la integración en producción requiere validación previa.
-- Al ser un modelo de tamaño medio, su rendimiento en tareas muy complejas puede ser inferior al de modelos más grandes de la misma familia, como K2-Horizon-36B-A4B o 375B-A23B.
+- Discrepancia de parametros: la model card declara 3.7B pero los safetensors suman 5.058.255.360 parametros; conviene verificar el conteo real antes de dimensionar infraestructura.
+- Solo ingles: los metadatos indican `language: en`, por lo que el rendimiento en castellano no esta garantizado ni documentado.
+- Riesgo de alucinacion: no se documentan evaluaciones de factualidad ni tasas de alucinacion.
+- Sesgos: no se proporciona informacion sobre sesgos conocidos ni sobre la composicion del dataset de entrenamiento mas alla de los repositorios referenciados.
+- Contexto largo: aunque la ventana es de 512K tokens, no se documenta la degradacion del rendimiento en el extremo de la ventana; el coste de KV cache puede ser prohibitivo en produccion.
+- Requiere `custom_code`: la carga con transformers necesita confiar en el codigo remoto del autor, lo que implica riesgos de seguridad y compatibilidad.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo no incluye garantias ni indemnizaciones; revisar terminos de los datasets referenciados.
+- Tamano del repositorio: 688 GB, lo que incluye probablemente checkpoints intermedios y pesos en varias precisiones; la descarga completa es costosa en almacenamiento.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/IFM/K2-Horizon-3.7B
-- Blog de IFM (presentación de K2 Horizon): https://ifm.ai/blog/k2
-- Página del producto K2 Horizon: https://ifm.ai/k2/
-- Datasets públicos: IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data (disponibles en Hugging Face)
+- Codigo de entrenamiento (xllm): https://github.com/ifm-ai/xllm
+- Codigo de evaluacion (Eval360): https://github.com/ifm-ai/Eval360
+- Navegador de datos de entrenamiento: https://github.com/ifm-ai/DATA_NAVIGATOR
+- Dataset de preentrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
+- Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data

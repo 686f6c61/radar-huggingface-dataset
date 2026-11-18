@@ -2,117 +2,107 @@
 
 ## Resumen
 
-Open-H3-Regenerate-2K es un paquete de pesos para `diffusers` publicado por Efficient-Large-Model (equipo detrás del proyecto Sana/Sol-Engine de NVlabs) que reproduce en abierto la funcionalidad de la API cerrada H3-Regenerate-2K: un pase de refinado de tres pasos sobre MiniMax-H3 que regenera un borrador en 768P (1344×768, 121 fotogramas) a 2560×1440. No es un modelo de lenguaje ni un generador desde cero, sino un adaptador LoRA fusionado más un upsampler latente y un decodificador VAE rápido, empaquetados junto a una copia sin modificar de los componentes base de MiniMax-H3 (revisión `6818f6c`).
+Open-H3-Regenerate-2K es un paquete de refinamiento de vídeo construido sobre MiniMax-H3, el modelo de generación de vídeo de MiniMax. Lo publica el equipo Efficient-Large-Model (vinculado al proyecto Sana de NVIDIA) como reemplazo abierto de la API cerrada H3-Regenerate-2K. Su función es tomar un borrador de vídeo generado por H3 a 768P (1344×768, 121 fotogramas, unos 5 segundos) y regenerarlo a 2560×1440 mediante un upscaling latente seguido de un refinamiento de tres pasos.
 
-El interés técnico está en dos frentes. Por un lado, la receta de fusión: tres adaptadores (refiner Open-H3 step 5000 EMA, LightX2V FL2VA Turbo v1.2 y LMS Sharp v1.0) se concatenan en el eje de rango y se pliegan en un único LoRA FP32 de rango 576 sobre 312 capas lineales, con un error relativo de 2,2e-8 frente a los adaptadores separados. Por otro, la optimización de inferencia: la ruta `sol_engine_fwd` (atención Sol-Attn, MXFP8 y CUDA graphs) más un VAE decodificador no causal de 24 capas y 1,62 mil millones de parámetros reduce un clip de 5 segundos de 87,26 s a 22,45 s en una sola B200, un 3,89× de aceleración.
+El repositorio no contiene un modelo completo entrenado desde cero, sino un conjunto de componentes: una LoRA fusionada (FP32, rango 576 sobre 312 capas lineales) que combina tres adaptadores (refiner Open-H3, LightX2V FL2VA Turbo v1.2 y LMS Sharp v1.0), un upscaler latente 3D convolucional en BF16, un decodificador VAE rápido no causal de 24 capas (1,62B parámetros, destilado de StreamRender-H3) y una copia sin modificar de los componentes Diffusers de MiniMax-H3 en la revisión `6818f6c`.
 
-Es relevante ahora porque ofrece una alternativa abierta y medible a un servicio propietario de reescalado/refinado de vídeo, con el código y los números por módulo publicados. La contrapartida es que el bundle no está cubierto por una licencia única: el LoRA del refinador, el VAE rápido y `base_model/` siguen la MiniMax H3 Community License, mientras que el upsampler latente y los LoRA de terceros fusionados mantienen sus propias licencias.
+Su relevancia es doble: por un lado ofrece una ruta de superresolución de vídeo de alta calidad sin depender de una API propietaria; por otro, incorpora el motor Sol-Engine (Sol-Attn, MXFP8, CUDA graphs) que acelera el pipeline hasta 3,89× en una B200, reduciendo un clip de 5 s a 2560×1440 de 87,26 s a 22,45 s. El repositorio ocupa 164,9 GB e incluye los pesos base necesarios para ejecutarlo de forma autocontenida.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión vídeo a vídeo sobre el transformer de MiniMax-H3, con LoRA fusionado (rango 576 en 312 capas lineales), upsampler latente 3D-conv y VAE decodificador no causal de 24 capas |
-| Parámetros totales | No disponible para el transformer base (se incluye sin modificar y la model card no da su recuento). El VAE rápido aporta 1,62 mil millones de parámetros; el LoRA se especifica por rango, no por número de parámetros |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible / no aplica (modelo de vídeo; trabaja con 121 fotogramas por clip) |
-| Tipos de cuantización | BF16 (componentes base y upsampler latente), FP32 (LoRA fusionado y ramas AdaLN), MXFP8 en la ruta `sol_engine_fwd`. No se documentan GGUF, INT8 ni INT4 |
-| Idiomas soportados | No disponibles (el pipeline es de vídeo; el codificador de texto proviene de MiniMax-H3 y no se detalla cobertura lingüística) |
-| Licencia | `minimax-h3-community` (MiniMax H3 Community License), con componentes de terceros bajo licencias propias |
-| Formato de pesos | `safetensors` (estructura `diffusers`) |
-| Resolución de entrada | 1344×768 (768P), 121 fotogramas |
-| Resolución de salida | 2560×1440 |
-| Pasos de muestreo | 3 pasos Euler sobre sigmas [0,909375; 0,857143; 0,666667; 0], CFG 1 |
-| Estado inicial | `(1 - 0,909375) * upscaled + 0,909375 * noise`, tiempo de modelo `1 - sigma` |
-| Tamaño del repositorio | 164,9 GB |
+| Arquitectura | Transformer de difusion (MiniMax-H3) con LoRA fusionada; VAE rapido no causal de 24 capas; upscaler latente 3D convolucional |
+| Parametros totales | no disponible (pesos base MiniMax-H3 + LoRA rango 576 + VAE rapido de 1,62B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de vídeo; entrada 121 fotogramas a 1344×768) |
+| Tipos de cuantizacion | BF16 (transformer y upscaler), FP32 (LoRA y ramas AdaLN), MXFP8 en el motor Sol-Engine |
+| Idiomas soportados | no disponible |
+| Licencia | minimax-h3-community (con componentes de terceros bajo sus propias licencias) |
+| Formato de pesos | safetensors (LoRA, VAE rapido, base_model en Diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El pipeline es una cadena de refinado, no un modelo único. Se parte de un borrador latente de MiniMax-H3 a 768P; un upsampler latente 3D-conv (BF16, de autoría externa) eleva la resolución; el transformer de MiniMax-H3, con el LoRA fusionado aplicado, ejecuta tres pasos Euler con CFG 1; y un VAE decodificador no causal de 24 capas, destilado del VAE original de H3 y procedente de StreamRender-H3, convierte el latente en vídeo 2560×1440.
+El componente central es una LoRA fusionada que se aplica sobre el transformer de MiniMax-H3. La fusión concatena los factores de tres adaptadores a lo largo del eje de rango: el refiner Open-H3 (paso 5000 EMA, rango/alpha 384/384), LightX2V FL2VA Turbo v1.2 (rango 128, alpha 8) y LMS Sharp v1.0 (rango 64). Las fuerzas y el alpha/rango de Turbo se pliegan en la matriz `B`, de modo que `B @ A` equivale exactamente a la suma de los tres deltas escalados; la verificación de fusión (`MERGE_VERIFY.json`) reporta un error relativo de 2,2e-8 sobre las 312 capas lineales. Las 50 ramas AdaLN de la curva LMS Sharp se mantienen como módulos separados porque reciben una curva de timesteps de 8 dimensiones en lugar de la entrada de capa.
 
-La fusión del LoRA es el punto técnico central. Los tres adaptadores de referencia son el refiner Open-H3 (step 5000 EMA, rango 384, alpha 384), LightX2V FL2VA Turbo v1.2 (rango 128, alpha 8) y LMS Sharp v1.0 (rango 64). Se concatenan los factores en el eje de rango y se pliegan las intensidades (incluida la relación alpha/rango de Turbo) en la matriz `B`, de modo que `B @ A` equivale exactamente a la suma de los tres deltas escalados; la verificación (`MERGE_VERIFY.json`) reporta un error relativo de 2,2e-8 en las 312 capas lineales. Las 50 ramas AdaLN de la curva Sharp reciben una curva de timestep de 8 dimensiones en lugar de la entrada de capa, por lo que se mantienen como módulos separados (`sharp_curve_branches.safetensors`). También se incluye un `adaln_t_table` de 1025×8 derivado del modelo base y leído por rango de bytes desde `Comfy-Org/MiniMax-H3`.
-
-No se documentan en la información disponible el volumen de tokens, la composición del dataset ni si hubo RLHF o DPO; el único dato de entrenamiento es que el refiner corresponde al checkpoint step 5000 con EMA. La innovación declarada es de inferencia: atención Sol-Attn, precisión MXFP8 y CUDA graphs en `sol_engine_fwd`, más el VAE rápido que decodifica el clip 2560×1440 en 1,6 s frente a los 15 s del VAE publicado.
+El pipeline de inferencia consta de upscaling latente, refinamiento de tres pasos Euler con sigmas `[0.909375, 0.857143, 0.666667, 0]`, CFG 1 y estado inicial `(1 - 0.909375) * upscaled + 0.909375 * noise`, con tiempo de modelo `1 - sigma`, seguido de decodificación VAE. El decodificador VAE rápido proviene de StreamRender-H3: es no causal, de 24 capas y 1,62B parámetros, destilado del VAE original de H3, y decodifica el clip a 2560×1440 en 1,6 s frente a los 15 s del VAE publicado. La aceleración adicional procede del motor Sol-Engine, que combina atención Sol-Attn, precisión MXFP8 y CUDA graphs. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Refinado vídeo a vídeo: convierte un borrador MiniMax-H3 de 1344×768 y 121 fotogramas en un clip de 2560×1440.
-- Re escalado latente: el upsampler 3D-conv opera en el espacio latente antes del refinado, no sobre píxeles.
-- Refinado en tres pasos con CFG 1, lo que reduce el coste frente a muestreos largos con guiado por clasificador.
-- Decodificación rápida opcional mediante un VAE no causal de 24 capas destilado del VAE de H3 (1,6 s por clip 2560×1440 en B200).
-- Ejecución acelerada con Sol-Attn, MXFP8 y CUDA graphs en la ruta `sol_engine_fwd` (2,33× solo en el forward; 3,89× con el VAE rápido).
-- Compatibilidad con el ecosistema `diffusers` y con componentes del ecosistema ComfyUI (upsampler latente, LoRA Turbo y Sharp, tabla AdaLN).
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi paso.
-- No ofrece capacidades multilingües de chat ni generación de texto.
-- No incorpora modo thinking, audio ni entrada de imagen adicional más allá del vídeo de partida.
+- Refinamiento de vídeo vídeo-a-vídeo: regenera un borrador de 768P (1344×768, 121 fotogramas) a 2560×1440.
+- Upscaling latente 3D convolucional previo al refinamiento, en BF16.
+- Refinamiento en tres pasos con CFG 1, lo que reduce coste computacional frente a muestreos más largos.
+- Decodificación VAE rápida opcional (1,6 s por clip a 2560×1440) para acelerar el pipeline completo.
+- Aceleración por hardware mediante Sol-Engine: Sol-Attn, MXFP8 y CUDA graphs.
+- Compatibilidad con Diffusers para los componentes base (transformer, VAE, VAE de audio, text encoder, tokenizer, processor, schedulers).
+- Integración con ComfyUI a través de los componentes base y de las LoRA de origen (LightX2V, LMS Sharp).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni comprensión multilingüe; es un modelo de generación y refinamiento de vídeo.
 
 ## Casos de uso
 
-- Re masterización de borradores generados: generar clips baratos a 768P con MiniMax-H3 y aplicar este pase de tres pasos solo a las tomas aprobadas, reduciendo el cómputo de generación frente a producir directamente en 1440p.
-- Sustitución interna de la API cerrada H3-Regenerate-2K: el bundle replica la misma operación (borrador 1344×768 de 121 fotogramas a 2560×1440) y puede desplegarse en infraestructura propia con el código de Sol-Engine.
-- Postproducción en flujos ComfyUI: el upsampler latente, los LoRA Turbo y Sharp y la tabla AdaLN provienen de nodos y repositorios de ese ecosistema, de modo que el refinado se puede insertar como etapa final de un grafo existente.
-- Previz y VFX de clips cortos: con 5 segundos y 121 fotogramas por pasada, encaja en la generación de planos de prueba que luego se revisan a resolución final.
-- Servicio de re escalado por lotes: al usar 3 pasos Euler y CFG 1, el coste por clip es acotado y predecible; con el VAE rápido el total medido en B200 es de 22,45 s por clip de 5 s.
-- Investigación en inferencia eficiente: la separación entre `standard_fwd` y `sol_engine_fwd`, con números por módulo en el README del código, permite reproducir y comparar técnicas de atención y precisión reducida sobre un caso real de vídeo.
-- Evaluación de recetas de fusión de LoRA: el bundle incluye configuración, hashes, rangos por módulo y verificación de fusión, lo que sirve como referencia para estudiar la concatenación en el eje de rango de adaptadores con escalas distintas.
+- Postproducción de vídeo generado: partiendo de clips H3 a 768P, el pipeline los regenera a 2560×1440 en un solo paso de refinamiento de tres etapas, útil para entregables de mayor resolución sin reentrenar el modelo base.
+- Pipelines de generación de vídeo en producción: con el motor Sol-Engine y el VAE rápido, un clip de 5 s se procesa en 22,45 s en una B200, lo que permite integrar el refinamiento como etapa final de un flujo automatizado de creación de contenido.
+- Restauración y mejora de borradores: el refiner Open-H3 corrige artefactos y detalle del borrador mientras el upscaler latente aumenta la resolución, adecuado para material generado con modelos más ligeros.
+- Flujos de trabajo en ComfyUI: los componentes base y las LoRA de origen (LightX2V Turbo, LMS Sharp) están pensados para nodos de ComfyUI, lo que facilita prototipado e iteración por artistas técnicos.
+- Investigación en superresolución de vídeo: el paquete incluye la receta completa (LoRA fusionada, verificación de merge, configuración de muestreo) para reproducir y comparar variantes de refinamiento.
+- Evaluación de aceleración de inferencia: sirve como banco de pruebas reproducible de Sol-Attn, MXFP8 y CUDA graphs frente a atención densa en BF16, con cifras medidas en B200.
+- Generación de vídeo con audio: los componentes base incluyen VAE de audio y text encoder, lo que permite construir pipelines de vídeo con audio sincronizado sobre la misma base MiniMax-H3.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica medidas de latencia, no métricas de calidad (FVD, PSNR, SSIM u otras). Mediciones sobre un clip de 5 s, latente 768P a vídeo 2560×1440, en caliente, mediana de 3 ejecuciones, una NVIDIA B200:
+Rendimiento medido en una B200 para un clip de 5 s, latente 768P a vídeo 2560×1440 (upscaling latente + refinamiento de 3 pasos + decodificación VAE, en caliente, mediana de 3 ejecuciones):
 
-| Forward | Decodificador VAE | Total | Aceleración |
+| Forward | VAE decoder | Total | Aceleracion |
 |---|---|---:|---:|
-| `standard_fwd` (atención densa, BF16) | VAE de H3 publicado | 87,26 s | 1,00× |
-| `sol_engine_fwd` (Sol-Attn, MXFP8, CUDA graphs) | VAE de H3 publicado | 37,39 s | 2,33× |
-| `sol_engine_fwd` (Sol-Attn, MXFP8, CUDA graphs) | VAE rápido de H3 | 22,45 s | 3,89× |
+| `standard_fwd` (atencion densa, BF16) | VAE H3 publicado | 87,26 s | 1,00× |
+| `sol_engine_fwd` (Sol-Attn, MXFP8, CUDA graphs) | VAE H3 publicado | 37,39 s | 2,33× |
+| `sol_engine_fwd` (Sol-Attn, MXFP8, CUDA graphs) | VAE rapido H3 | 22,45 s | 3,89× |
 
-Desglose adicional aportado: el upsampler latente más el refinado pasan de 73,11 s a 20,46 s (3,57×), y el VAE rápido decodifica el clip 2560×1440 en 1,6 s frente a 15 s del VAE publicado. No se han publicado resultados de benchmarks de calidad en la información disponible.
+El upscaling latente y el refinamiento por sí solos pasan de 73,11 s a 20,46 s (3,57×). El VAE rápido decodifica el clip a 2560×1440 en 1,6 s frente a 15 s del VAE publicado. No se han publicado resultados de benchmarks de calidad (PSNR, SSIM, FVD u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. La model card no publica consumo de memoria para ninguna configuración.
-- GPU recomendadas: la única referencia medida es una NVIDIA B200, en la que se obtienen los 22,45 s por clip. No hay datos para A100, H100, L40S ni RTX 4090.
-- GPU de consumo: no se puede confirmar que quepa en tarjetas de consumo; el pipeline mantiene latentes de 121 fotogramas a 2560×1440 y el repositorio ocupa 164,9 GB en disco, pero no se documenta el pico de VRAM.
-- Opciones de despliegue: `diffusers` con los componentes de `base_model/`; código de referencia en el repositorio `NVlabs/Sana` (rama `sol-engine`, carpeta `models/Open-H3-Regenerate-2K`); integración con nodos de ComfyUI para el upsampler latente y los LoRA de origen. No aplica vLLM, llama.cpp, Ollama ni TGI (no es un modelo de lenguaje).
-- Latencia y throughput: 22,45 s por clip de 5 s en B200 con la ruta acelerada y VAE rápido; 87,26 s con forward estándar y VAE publicado. El throughput agregado no se documenta.
-- Descarga: `download.py` del repositorio de código obtiene todos los archivos, además del adaptador opcional HyperFlow de 8 pasos y la tabla `adaln_t_table` de Sharp.
+- El rendimiento publicado se midió en una NVIDIA B200; no se documentan cifras para otras GPU.
+- El repositorio completo ocupa 164,9 GB, por lo que se necesita almacenamiento amplio además de la VRAM.
+- El transformer base de MiniMax-H3 se ejecuta en BF16 y el motor Sol-Engine usa MXFP8; el VAE rápido tiene 1,62B parámetros.
+- No se especifica la VRAM mínima ni si el pipeline cabe en GPU de consumo (RTX 4090 u otras); dato no disponible.
+- Opciones de despliegue documentadas: Diffusers para los componentes base, ComfyUI para los flujos con LoRA, y el código de Sol-Engine en el repositorio NVlabs/Sana (rama `sol-engine`).
+- El script `download.py` descarga los pesos de este repositorio, el adaptador opcional HyperFlow de 8 pasos y la tabla `adaln_t_table` de 1025×8 desde `Comfy-Org/MiniMax-H3`.
+- Latencia y throughput: 22,45 s por clip de 5 s a 2560×1440 con Sol-Engine y VAE rápido en B200; 87,26 s con atención densa en BF16 y VAE publicado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Open-H3-Regenerate-2K | Refinado vídeo a vídeo 768P → 2560×1440, 3 pasos | No disponible el transformer base; VAE rápido de 1,62 mil millones | No aplica (121 fotogramas) | MiniMax H3 Community + licencias de terceros | Pesos abiertos en Hugging Face, 0 descargas y 22 likes en el momento de la consulta |
-| H3-Regenerate-2K (API cerrada) | Misma tarea, servicio propietario | No disponible | No disponible | Propietaria | Solo vía API; sin pesos |
-| MiniMax-H3 (modelo base) | Generación vídeo/audio desde texto y referencia | No disponible en la información proporcionada | No disponible | MiniMax H3 Community | Pesos abiertos, revisión `6818f6c` |
-| StreamRender-H3 | VAE decodificador rápido no causal de 24 capas | 1,62 mil millones (el decodificador) | No aplica | MiniMax H3 Community | Componente liberado dentro del proyecto Sol-Engine |
+| Modelo | Tipo | Resolucion de salida | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Open-H3-Regenerate-2K | Refinamiento vídeo-a-vídeo sobre MiniMax-H3 | 2560×1440 | no disponible (LoRA rango 576 + VAE 1,62B) | 121 fotogramas | minimax-h3-community | Hugging Face, código en NVlabs/Sana |
+| H3-Regenerate-2K (API cerrada) | Refinamiento vídeo-a-vídeo propietario | 2560×1440 | no disponible | no disponible | propietaria | solo API |
+| MiniMax-H3 (base) | Generación de vídeo | 768P (1344×768) | no disponible | 121 fotogramas | minimax-h3-community | Hugging Face |
+| StreamRender-H3 | Decodificador VAE rápido | no aplica | 1,62B (VAE) | no aplica | no disponible | NVlabs/Sana |
 
-La comparación cuantitativa de calidad frente a la API cerrada o frente a generar directamente en alta resolución no está disponible: no se publican métricas de fidelidad ni comparaciones perceptuales.
+La comparación directa con alternativas de superresolución de vídeo de código abierto no está disponible en la información proporcionada. La referencia más cercana es el propio H3-Regenerate-2K cerrado, del que este paquete es reemplazo abierto, y el modelo base MiniMax-H3, del que hereda arquitectura y licencia.
 
 ## Limitaciones y advertencias
 
-- Licencia no unificada: el LoRA del refinador, el VAE rápido y `base_model/` siguen la MiniMax H3 Community License, con sus términos de territorio, uso y redistribución; el upsampler latente, LightX2V FL2VA Turbo y LMS Sharp mantienen licencias propias. El bundle no está cubierto por una licencia global y la licencia del código de ejecución no sustituye a las de los modelos.
-- Restricciones territoriales y de uso comercial derivadas de la MiniMax H3 Community License: hay que revisar el texto enlazado antes de cualquier despliegue en producción.
-- Configuración de muestreo fija: 3 pasos Euler, sigmas concretas y CFG 1 dejan poco margen de ajuste; no se documenta comportamiento con otros valores.
-- Resolución y duración fijas en la práctica: el pipeline está descrito para 1344×768 de entrada, 121 fotogramas y 2560×1440 de salida, sin datos sobre otras combinaciones.
-- Ausencia de métricas de calidad: no se publican FVD, PSNR ni SSIM, por lo que el riesgo de artefactos o de deriva respecto al borrador original no está cuantificado.
-- Dependencia de tensores derivados: el `adaln_t_table` se lee por rango de bytes desde `Comfy-Org/MiniMax-H3`, lo que introduce un paso frágil para la reproducibilidad si ese repositorio cambia.
-- Riesgo de alucinación y sesgos: no hay información disponible sobre sesgos del modelo base ni sobre cómo el refinado afecta al contenido semántico del clip.
-- Validación comunitaria escasa: 0 descargas y 22 likes en el momento de la consulta, con un repositorio de 164,9 GB, lo que limita la evidencia independiente sobre su comportamiento.
-- Requisitos de infraestructura altos: las únicas medidas publicadas son sobre B200; no hay guía de VRAM para GPUs más modestas.
-- No es un modelo de lenguaje: no admite tool calling, agentes, chat multilingüe ni razonamiento textual, pese a que el nombre del autor pueda sugerir un modelo de propósito general.
+- El paquete no está cubierto por una licencia única: la LoRA del refiner, el VAE rápido y `base_model/` siguen la MiniMax H3 Community License (con sus términos de territorio, uso y redistribución), mientras que el upscaler latente, LightX2V FL2VA Turbo y LMS Sharp mantienen sus propias licencias. Es obligatorio revisar cada componente antes de uso comercial.
+- La licencia del código de ejecución no sustituye las licencias de los modelos.
+- Es un modelo especializado en refinamiento de vídeo: no ofrece generación de texto, código, matemáticas ni tool calling.
+- No se documentan sesgos, tasas de alucinación ni evaluación de calidad objetiva del vídeo generado; no hay datos de PSNR, SSIM o FVD en la información disponible.
+- El pipeline asume una entrada concreta (borrador H3 de 1344×768 y 121 fotogramas); no se documenta comportamiento con otras resoluciones o duraciones.
+- Las cifras de rendimiento proceden de una única GPU (B200) en condiciones en caliente; no hay datos de latencia en otras GPU ni de consumo de VRAM.
+- El repositorio incluye una copia de los pesos base de MiniMax-H3 en la revisión `6818f6c`, lo que fija la compatibilidad a esa revisión.
+- El VAE rápido es una destilación del VAE original; puede introducir diferencias de calidad respecto a la decodificación con el VAE publicado, aunque no se cuantifican en la información disponible.
+- No se especifican los idiomas soportados por el text encoder incluido.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K
 - Página del proyecto: https://nvlabs.github.io/Sana/Open-H3-Regenerate-2K/
-- Código (Sol-Engine, carpeta del modelo): https://github.com/NVlabs/Sana/tree/sol-engine/models/Open-H3-Regenerate-2K
+- Código (rama sol-engine): https://github.com/NVlabs/Sana/tree/sol-engine/models/Open-H3-Regenerate-2K
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Revisión exacta del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/tree/6818f6c32d12b210915e44ad56a4228c2608f160
 - Licencia MiniMax H3 Community: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/6818f6c32d12b210915e44ad56a4228c2608f160/LICENSE
-- VAE rápido StreamRender-H3: https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/
-- Upsampler latente (comunidad): https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler
-- LightX2V FL2VA Turbo v1.2: https://huggingface.co/lightx2v/Minimax-h3-Turbo/tree/3ec17a324ced54151364f24f8b5fb6bf7e26414f
+- Revisión base fijada: https://huggingface.co/MiniMaxAI/MiniMax-H3/tree/6818f6c32d12b210915e44ad56a4228c2608f160
+- StreamRender-H3: https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/
+- Upscaler latente (ComfyUI): https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler
+- LightX2V FL2VA Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo/tree/3ec17a324ced54151364f24f8b5fb6bf7e26414f
 - LMS Sharp v1.0: https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/blob/main/loras/minimax_h3_lms_v1.0_r64.safetensors
-- Repositorio Comfy-Org MiniMax-H3 (origen de `adaln_t_table`): https://huggingface.co/Comfy-Org/MiniMax-H3
-- Nota sobre la búsqueda web: los resultados devueltos fueron definiciones del término francés «efficient» y no aportaron información técnica sobre el modelo.
+- Tensor `adaln_t_table` (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3

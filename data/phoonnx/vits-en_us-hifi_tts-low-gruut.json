@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-en_us-hifi_tts-low-gruut",
   "created_at": "2026-11-15T16:13:37.000Z",
-  "updated_at": "2026-11-16T11:42:23.000Z",
+  "updated_at": "2026-11-17T16:45:09.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

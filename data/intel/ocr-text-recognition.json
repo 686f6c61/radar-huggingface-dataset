@@ -5,7 +5,7 @@
   "author": "Intel",
   "url": "https://huggingface.co/Intel/ocr-text-recognition",
   "created_at": "2026-08-05T22:04:08.000Z",
-  "updated_at": "2026-11-10T22:36:27.000Z",
+  "updated_at": "2026-11-18T00:35:49.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 77,
+  "downloads_30d": 78,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

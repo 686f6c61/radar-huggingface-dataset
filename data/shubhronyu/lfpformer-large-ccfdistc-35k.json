@@ -5,7 +5,7 @@
   "author": "Shubhronyu",
   "url": "https://huggingface.co/Shubhronyu/LFPformer-large-CCFDistc-35k",
   "created_at": "2026-11-08T21:41:15.000Z",
-  "updated_at": "2026-11-16T19:53:37.000Z",
+  "updated_at": "2026-11-17T21:37:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 317380864,
   "parameters_human": "317.4M",

@@ -1,122 +1,97 @@
 # Altworld/Hemmingway-1
 
 ## Resumen
+Hemmingway-1 es un modelo de lenguaje de 27.000 millones de parámetros desarrollado por The Commons Lab (Altworld), con sede en Bülach, Suiza. Se trata de un fine-tuning de Qwen/Qwen3.8-27B orientado específicamente a la escritura cotidiana: mensajes, correos electrónicos, notas a colegas y comunicación interpersonal en general. El modelo se distribuye con pesos abiertos bajo licencia CC BY-NC 4.0 y está pensado para producir texto directo, sin preámbulos ni listas de opciones que el usuario tenga que descartar.
 
-Hemmingway-1 es un modelo de lenguaje de 26.895.998.464 parametros (aproximadamente 27B) desarrollado por Altworld, publicado bajo licencia Apache-2.0 y construido como ajuste fino sobre Qwen/Qwen3.8-27B. Su propuesta no es competir en razonamiento generico ni en codigo, sino en un nicho muy concreto: la escritura cotidiana (mensajes, correos, notas dificiles, negociaciones informales) con un registro que suena humano y sin el aparato de preambulos, listas de opciones y explicaciones que rodea las respuestas de los asistentes generalistas. El modelo se distribuye en formato safetensors para transformers y con una ventana de contexto declarada de 262.144 tokens.
+La propuesta diferencial no es el rendimiento bruto en tareas de razonamiento o código, sino la naturalidad y la concisión en comunicación breve. El autor publica comparativas propias (CommunicationBench, Human-Likeness, StoryBench) en las que el modelo supera a alternativas de mayor tamaño, además de un resultado en EQ-Bench 4, benchmark ajeno al desarrollador, donde queda tercero. El contexto declarado alcanza los 262.144 tokens, lo que permite gestionar hilos conversacionales largos o documentos extensos como referencia.
 
-El modelo se presenta acompanado de tres benchmarks propios (CommunicationBench, Human-Likeness y StoryBench) en los que el autor afirma que supera a modelos de mayor tamano como Fable 5.1, GPT-6 Astra, Kimi K3, GLM-5.3, DeepSeek V4 Pro y Qwen3.8-Max. Ademas cita el benchmark publico EQ-Bench 4, donde situa al modelo en tercera posicion. Todos estos resultados son autodeclarados por el autor y deben tratarse como tales, especialmente los tres primeros, que son de diseno propio.
+Es relevante ahora porque ocupa un nicho poco cubierto: modelos afinados explícitamente para "sonar humano" en textos breves, en lugar de optimizar para benchmarks académicos. No obstante, la licencia no comercial y la ausencia de benchmarks estándar publicados limitan su adopción en producción sin una evaluación propia.
 
-Su relevancia practica esta en el segmento de modelos abiertos de ~27B con licencia permisiva y contexto muy largo, orientados a generacion de texto de estilo conversacional y creativo en ingles. Es un modelo de nicho: no compite en tareas de codigo, agentes o razonamiento multi-paso, y el propio autor declara que pierde frente a modelos especializados en narrativa hostil y tramos largos de historia.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder derivado de Qwen/Qwen3.8-27B (tag de arquitectura: qwen3_5_text); no se detallan mas particularidades |
-| Parametros totales | 26.895.998.464 (aproximadamente 27B) |
-| Parametros activos | No aplica / no disponible: no se indica que sea un modelo MoE |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3.8-27B); detalles internos no disponibles |
+| Parámetros totales | 26.895.998.464 (≈26,9B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | No disponible: no se documentan cuantizaciones oficiales; el repositorio publica pesos safetensors completos |
-| Idiomas soportados | Ingles (declarado "English-first") |
-| Licencia | Apache-2.0 (uso comercial permitido) |
-| Formato de pesos | safetensors (libreria transformers) |
+| Tipos de cuantización | no disponible (pesos publicados en safetensors; cuantizaciones GGUF/AWQ no confirmadas) |
+| Idiomas soportados | inglés (english-first según el autor) |
+| Licencia | CC BY-NC 4.0 (uso no comercial; uso comercial mediante acuerdo) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+El modelo parte de Qwen/Qwen3.8-27B, un transformer decoder-only de aproximadamente 27.000 millones de parámetros. No se han publicado detalles sobre la arquitectura interna (número de capas, dimensiones ocultas, tipo de atención, uso de atención lineal o decodificación especulativa) ni sobre el proceso de entrenamiento del modelo base. El tag `qwen3_5_text` en Hugging Face sugiere una variante textual de la familia Qwen3.8, pero no se especifica la configuración exacta.
 
-No se proporciona informacion detallada sobre la arquitectura interna mas alla de que se trata de un modelo de la familia Qwen3.8 y que la libreria de referencia es transformers, con etiquetas que apuntan a qwen3_5_text y a text-generation. El tamano de pesos (26,9B parametros) y el tamano del repositorio (54,7 GB) son consistentes con pesos en precision bf16/fp16. La ventana de contexto declarada es de 262.144 tokens.
-
-Tampoco se detallan los datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si hubo etapas de RLHF, DPO u otro tipo de alineamiento. Lo unico documentado es que es un ajuste (finetune) sobre Qwen/Qwen3.8-27B y que el objetivo de entrenamiento se centro en estilo de escritura cotidiana y en la ausencia de relleno conversacional (la metrica "wrapped" del autor mide con que frecuencia el modelo entierra el texto util en comentarios y opciones). No se documentan innovaciones tecnicas de inferencia como decodificacion especulativa o atencion lineal.
+Respecto al fine-tuning, la model card no documenta el volumen de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o preferencias sintéticas. Tampoco se detalla el método de ajuste (SFT, LoRA fusionado, etc.). La única información técnica verificable es el tamaño del repositorio (54,7 GB), coherente con pesos en precisión de 16 bits para un modelo de este tamaño, y la recomendación de despliegue con `vllm serve ... --max-model-len 262144`.
 
 ## Capacidades
-
-- Generacion de texto conversacional y de escritura cotidiana: mensajes, correos, notas a companeros de trabajo, recordatorios y comunicaciones administrativas.
-- Escritura orientada a "pedir algo dificil" o persuadir, categoria que el autor destaca como su punto mas fuerte en su benchmark propio.
-- Inteligencia emocional conversacional: el autor lo situa en tercera posicion en EQ-Bench 4.
-- Escritura creativa y narrativa: StoryBench lo situa a la altura de Kimi K3 y por delante de Qwen3.8-Max y DeepSeek V4 Pro segun el autor.
-- Formato de respuesta directo: tendencia a devolver el texto solicitado sin preambulos, opciones multiples ni notas explicativas.
-- Soporte multi-turno: interfaz de chat mediante apply_chat_template en transformers.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponibles; el pipeline declarado es text-generation.
-- Modo "thinking" explicito: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun la model card; el autor lo describe como "English-first".
-- Despliegue en servidor de inferencia: compatible con vLLM segun el ejemplo de la model card.
+- Generación de texto conversacional breve: mensajes, correos, notas y respuestas directas sin preámbulos ni opciones múltiples.
+- Escritura creativa y narrativa: la model card reporta resultados en StoryBench, con rendimiento cercano a Kimi K3 en su propia evaluación.
+- Razonamiento emocional y adecuación social: tercer puesto en EQ-Bench 4 según el autor, por delante de GPT-5.5, Opus 4.7 y Opus 4.8.
+- Comunicación persuasiva y resolución de conflictos interpersonales: categorías destacadas en su heatmap propio (dinero y administración, trabajo, peticiones difíciles, convencer a alguien).
+- Capacidad multilingüe limitada: el modelo está declarado como English-first y solo lista inglés en sus metadatos.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
-
-- Redaccion de comunicaciones cotidianas: el modelo esta ajustado especificamente para generar el texto final de un mensaje (por ejemplo, avisar al casero de una averia en la caldera) sin anadir opciones ni explicaciones, lo que reduce la edicion posterior por parte del usuario.
-- Asistencia de escritura en herramientas de productividad: integrado en un cliente de correo o de mensajeria para reescribir, acortar o cambiar el tono de un borrador manteniendo un registro humano.
-- Atencion al cliente por escrito: gestion de conversaciones multi-turno en ingles apoyandose en la ventana de 262.144 tokens para conservar historial largo de incidencias sin truncar contexto.
-- Generacion de respuestas sensibles emocionalmente: reclamaciones, cancelaciones, disculpas o peticiones delicadas, donde el autor mide buen rendimiento en EQ-Bench 4 y en la categoria de "pedir algo dificil".
-- Escritura creativa de formato corto: relatos breves, dialogos y escenas, con la salvedad de que el propio autor reconoce peor rendimiento en tramos largos de historia y narrativa hostil.
-- Reescritura y adaptacion de tono en documentacion interna: convertir notas tecnicas o mensajes internos en comunicaciones claras para audiencias no tecnicas dentro de una organizacion en ingles.
-- Despliegue autoalojado con contexto largo: tareas de resumen o reescritura sobre documentos extensos en ingles (hasta 262.144 tokens) en infraestructura propia gracias a la licencia Apache-2.0.
-- Experimentacion e investigacion en estilo y naturalidad: uso como modelo base de comparacion en estudios sobre deteccion de texto generado, dado que el autor reclama ventaja en "human-likeness".
+- Redacción de correos administrativos y reclamaciones: el modelo genera el texto final directamente, sin opciones ni explicaciones, lo que encaja en flujos donde el usuario quiere copiar y enviar. Su contexto de 262.144 tokens permite incluir el hilo completo de una conversación previa como referencia.
+- Comunicación laboral delicada: notas a colegas, respuestas a feedback o mensajes de escalado. El ajuste orientado a "leer la sala" y el resultado en EQ-Bench 4 lo hacen adecuado para textos donde el tono importa tanto como el contenido.
+- Asistencia en atención al cliente de tono humano: generación de respuestas personalizadas en lugar de plantillas, manteniendo coherencia en conversaciones multi-turno gracias a la ventana de contexto extendida.
+- Escritura creativa de relatos cortos y diálogos: la model card reporta resultados en StoryBench, aunque el propio autor reconoce que pierde frente a modelos especializados en narrativa hostil y turnos largos de historia.
+- Herramienta de reescritura y simplificación: transformar borradores técnicos o densos en mensajes claros y directos, aprovechando la preferencia del modelo por la concisión.
+- Prototipado de asistentes de escritura personales: aplicaciones de escritorio o móvil (el autor distribuye apps para Mac y Android) que sugieren texto en el momento, con despliegue local o en servidor mediante vLLM.
+- Investigación sobre naturalidad textual: evaluación de sesgos de "voz humana" en modelos afinados, usando el modelo como caso de estudio de fine-tuning orientado a estilo.
 
 ## Benchmarks y rendimiento
+Los únicos datos disponibles provienen de la model card del autor. CommunicationBench, Human-Likeness y StoryBench son benchmarks propios de The Commons Lab; EQ-Bench 4 es externo. No se publican cifras numéricas absolutas en el texto de la model card, solo posiciones relativas y diferencias en puntos porcentuales o de puntuación.
 
-Los datos disponibles son cualitativos: la model card describe resultados en graficos (imagenes) sin publicar cifras numericas en el texto. Se reproduce a continuacion unicamente lo afirmado por el autor.
-
-| Benchmark | Naturaleza | Resultado declarado |
+| Benchmark | Resultado reportado | Naturaleza |
 |---|---|---|
-| CommunicationBench | Propio del autor (80 peticiones reales, comparacion ciega por pares, orden invertido y juez distinto) | Primer puesto segun el autor; supera a Fable 5.1 y a GPT-6 Astra "por cincuenta puntos"; por delante de Kimi K3, GLM-5.3, Grok 4.6 y DeepSeek V4 Pro |
-| Human-Likeness | Propio del autor | "Veintiseis puntos por delante" del siguiente modelo |
-| Wrapped (texto vs. memo) | Propio del autor | Menor tasa de respuestas con comentarios envolventes; Fable 5, GLM-5.3 y Kimi K3 superan las nueve respuestas de cada diez con relleno |
-| Categoria "hard asks" | Propio del autor | Hemmingway-1: 72 por ciento; GPT-6 Astra: 9 por ciento |
-| StoryBench | Propio del autor | A la par de Kimi K3, por delante de Qwen3.8-Max y DeepSeek V4 Pro, y 504 puntos por encima del modelo base |
-| EQ-Bench 4 | Benchmark publico, harness propio del benchmark | Tercera posicion; por delante de GPT-5.5, Opus 4.7 y Opus 4.8; a menos de doce puntos del mejor modelo de la tabla |
+| CommunicationBench | Primero; supera a Fable 5.1 y a GPT-6 Astra por 50 puntos | Propio del autor |
+| Human-Likeness | 26 puntos por delante del siguiente modelo | Propio del autor |
+| Categoría "hard asks" | 72% frente al 9% de GPT-6 Astra | Propio del autor |
+| EQ-Bench 4 | Tercero; por delante de GPT-5.5, Opus 4.7 y Opus 4.8; a 12 puntos del primero | Externo |
+| StoryBench | Nivel de Kimi K3; +504 puntos respecto al modelo base Qwen3.8-27B | Propio del autor |
 
-No se han publicado resultados de benchmarks en la informacion disponible para MMLU, HumanEval, GSM8K ni otras pruebas estandar de razonamiento, codigo o matematicas. Tampoco se publican cifras absolutas de los benchmarks propios, solo comparaciones relativas y graficos referenciados como imagenes.
+No se han publicado resultados en MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
-
-Las cifras de memoria siguientes son estimaciones derivadas del numero de parametros (26,9B) y no estan publicadas por el autor.
-
-- Pesos en bf16/fp16: aproximadamente 54 GB. Requiere GPU de 80 GB (A100 80 GB, H100 80 GB, H200) o reparto en varias GPU. El repositorio ocupa 54,7 GB.
-- Pesos en int8: aproximadamente 27 GB, mas cache KV. Encaja en A100 40 GB, L40S 48 GB, RTX 6000 Ada 48 GB o dos RTX 4090 de 24 GB.
-- Pesos en int4: aproximadamente 14-15 GB, mas cache KV. Encaja en una RTX 4090, RTX 3090 o RTX 4080, con margen limitado.
-- Cache KV: con 262.144 tokens de contexto la cache KV puede dominar el consumo de memoria y superar ampliamente el tamano de los pesos; en despliegues reales conviene reducir max-model-len o usar cuantizacion de cache KV, aunque el autor no documenta estas opciones.
-- GPU de consumo: si, en cuantizacion de 4 bits y con longitudes de contexto reducidas; en bf16 no cabe en ninguna GPU de consumo actual.
-- Opciones de despliegue: vLLM (comando documentado en la model card con --max-model-len 262144) y transformers con device_map="auto" y dtype="auto". No se documenta soporte de llama.cpp, Ollama, TGI ni otros motores, ni la existencia de pesos GGUF.
-- Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni tiempos de primera respuesta.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 54 GB solo para pesos, más overhead de KV cache. Con contexto de 262.144 tokens, la caché puede requerir decenas de GB adicionales según el lote y la implementación.
+- GPU recomendadas: A100 80 GB, H100 80 GB o H200 para FP16 con contexto largo. Para contexto reducido, una RTX 6000 Ada (48 GB) queda al límite y no cubre la ventana completa.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) en FP16. Sería necesaria cuantización a 8 bits (≈27 GB, aún por encima de 24 GB) o a 4 bits (≈14-15 GB), aunque no se confirman versiones GGUF o AWQ publicadas.
+- Opciones de despliegue: vLLM es el método documentado por el autor (`vllm serve Altworld/Hemmingway-1 --max-model-len 262144`). También es compatible con transformers (`AutoModelForCausalLM`). No se confirma soporte en llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo permite comparar en terminos de resultados relativos declarados por el autor, no en especificaciones de los rivales.
-
-| Modelo | Parametros | Contexto | Licencia | Rendimiento segun el autor |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Hemmingway-1 | 26,9B | 262.144 tokens | Apache-2.0 | Referencia de la comparacion; primero en CommunicationBench y Human-Likeness (benchmarks propios); tercero en EQ-Bench 4 |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible | no disponible | no disponible | 504 puntos por debajo en StoryBench segun el autor |
-| Fable 5.1 | no disponible | no disponible | no disponible | Por debajo de Hemmingway-1 en CommunicationBench segun el autor |
-| GPT-6 Astra | no disponible | no disponible | Propietaria | 50 puntos por debajo en CommunicationBench y 9 por ciento en "hard asks" frente al 72 por ciento de Hemmingway-1 |
-| Kimi K3 | no disponible | no disponible | no disponible | Por debajo en CommunicationBench; a la par en StoryBench |
-| GLM-5.3, Grok 4.6, DeepSeek V4 Pro, Qwen3.8-Max | no disponible | no disponible | no disponible | Por debajo de Hemmingway-1 en CommunicationBench segun el autor |
-| GPT-5.5, Opus 4.7, Opus 4.8 | no disponible | no disponible | Propietaria | Por debajo de Hemmingway-1 en EQ-Bench 4 |
+| Hemmingway-1 | ≈26,9B | 262.144 | CC BY-NC 4.0 | Fine-tuning de Qwen3.8-27B orientado a escritura cotidiana |
+| Qwen3.8-27B (base) | ≈27B | no disponible | según Qwen | Modelo base; Hemmingway-1 reporta +504 puntos en StoryBench propio |
+| Kimi K3 | no disponible | no disponible | no disponible | Comparable en StoryBench propio; por detrás en CommunicationBench |
+| GPT-6 Astra | no disponible (propietario) | no disponible | propietario | Superado por 50 puntos en CommunicationBench propio; 9% vs 72% en "hard asks" |
 
-No hay datos publicos en la informacion proporcionada sobre parametros, contexto, licencia ni disponibilidad de los modelos comparados, por lo que la comparativa en esas dimensiones figura como no disponible.
+Las comparaciones con modelos propietarios y con Kimi K3 provienen exclusivamente de benchmarks del autor y no son verificables de forma independiente. No se dispone de comparativas en benchmarks estándar.
 
 ## Limitaciones y advertencias
-
-- Resultados autodeclarados: tres de los cuatro benchmarks citados (CommunicationBench, Human-Likeness y StoryBench) son disenados y ejecutados por el propio autor. Solo EQ-Bench 4 es externo. Las afirmaciones de superioridad deben verificarse de forma independiente.
-- Sin cifras absolutas publicadas: los resultados se presentan como graficos y comparaciones relativas, sin puntuaciones numericas completas, lo que dificulta la reproducibilidad.
-- Idioma: modelo orientado al ingles ("English-first"). El rendimiento en castellano u otros idiomas no esta documentado y no deberia asumirse.
-- Alucinacion: el propio autor advierte de que el modelo "puede equivocarse y aun asi sonar seguro". El estilo fluido y confiado no garantiza veracidad.
-- Uso no recomendado: el autor prohibe explicitamente su uso para decisiones medicas, legales o financieras.
-- Debilidades reconocidas: peor rendimiento en narrativa hostil y en tramos largos de historia frente a modelos especializados en narrativa.
-- Cobertura funcional limitada: no hay evidencia documentada de tool calling, function calling, capacidades de agente, razonamiento multi-paso, vision ni audio. No es un modelo adecuado como sustituto de un asistente generalista en esos ambitos.
-- Contexto largo en la practica: aunque se declaran 262.144 tokens, no se documenta el rendimiento real a esa longitud ni el coste de memoria de la cache KV, que puede hacer inviable el contexto maximo en hardware de gama media.
-- Licencia: Apache-2.0 permite uso comercial, pero conviene verificar las condiciones heredadas del modelo base Qwen/Qwen3.8-27B, no detalladas en la informacion proporcionada.
-- Madurez del proyecto: el modelo tiene 0 descargas y 14 "likes" en Hugging Face, con creacion y ultima actualizacion el 2026-09-20. Es un lanzamiento muy reciente y con adopcion practicamente nula, sin ecosistema de herramientas ni cuantizaciones de terceros verificadas.
-- Dependencia de servicios externos: la demo y las aplicaciones para Mac y Android se ofrecen en hemmingway.io, fuera del repositorio de pesos.
+- Licencia CC BY-NC 4.0: el uso comercial requiere un acuerdo separado con The Commons Lab (contacto: luka@hemmingway.io). Esto excluye su uso directo en productos de pago sin negociación.
+- Sesgos conocidos: no documentados por el autor. Al ser un fine-tuning sobre Qwen3.8-27B, puede heredar sesgos del modelo base, no evaluados en la model card.
+- Riesgo de alucinación: el propio autor advierte que "puede equivocarse y aun así sonar seguro". No debe usarse para decisiones médicas, legales o financieras.
+- Limitación idiomática: English-first y solo inglés declarado en metadatos. El rendimiento en castellano u otros idiomas no está evaluado y probablemente sea inferior.
+- Benchmarks no independientes: CommunicationBench, Human-Likeness y StoryBench son propiedad del desarrollador. Solo EQ-Bench 4 es externo, y no se publican las puntuaciones numéricas completas.
+- Rendimiento narrativo: el autor reconoce que pierde en "hostile storytelling" y turnos largos de historia frente a modelos especializados.
+- Contexto largo no verificado: se declara 262.144 tokens, pero no se documenta la degradación de rendimiento en ventanas extremas ni pruebas de "needle in a haystack".
+- Sin datos de entrenamiento: no se especifica dataset, número de tokens ni método de alineación, lo que dificulta evaluar reproducibilidad y sesgos.
+- Producción: la falta de cuantizaciones publicadas y de soporte confirmado en llama.cpp/Ollama limita el despliegue en hardware de consumo.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/Altworld/Hemmingway-1
-- Sitio del proyecto y demo: https://hemmingway.io
-- Descarga de aplicaciones para Mac y Android: https://hemmingway.io/download
-- Codigo fuente: https://github.com/lukeckprobierts/Hemmingway-1
+- Demo / producto: https://hemmingway.io
+- Descargas de apps (Mac y Android): https://hemmingway.io/download
+- Repositorio de código: https://github.com/lukeckprobierts/Hemmingway-1
+- Product Hunt: https://www.producthunt.com/products/hemmingway-ai
+- Página del desarrollador: https://hemmingway.io/about/
+- Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Paper, blog tecnico o informe de evaluacion independiente: no disponible en la informacion proporcionada.
-- EQ-Bench 4 (benchmark externo citado, referencia no incluida en la informacion): no disponible.
-- La busqueda web realizada no devolvio enlaces relevantes al modelo; los resultados obtenidos correspondian a paginas de soporte de Microsoft ajenas al contenido solicitado.

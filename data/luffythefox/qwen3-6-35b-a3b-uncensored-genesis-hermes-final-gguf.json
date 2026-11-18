@@ -39,7 +39,7 @@
     "imatrix"
   ],
   "likes": 732,
-  "downloads_30d": 285866,
+  "downloads_30d": 273947,
   "trending_score": 19,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -59,31 +59,5 @@
   "renamed_to": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-MTP-GGUF",
   "renamed_at": "2026-11-11T03:14:19.016Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Anmelden bei Hotmail | Microsoft Support",
-      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
-      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
-    },
-    {
-      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF - Hugging Face",
-      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF",
-      "snippet": "Instructions to use LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
-      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
-    },
-    {
-      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF · Hugging ...",
-      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF",
-      "snippet": "Instructions to use LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
-      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
-      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
-    }
-  ]
+  "sources": []
 }

@@ -2,79 +2,87 @@
 
 ## Resumen
 
-Comfy-Org/Cosmos_Predict2_repackaged es un repositorio creado por Comfy-Org que contiene los archivos de modelo de la familia Cosmos Predict 2 de NVIDIA, reempaquetados en formato `safetensors` para su uso directo en ComfyUI. El conjunto incluye variantes de 2B y 14B parámetros para generación de imagen a partir de texto (Text2Image) y de vídeo a partir de vídeo o imagen (Video2World), con resoluciones de 480p y 720p y velocidades de 10 y 16 fotogramas por segundo.
+Cosmos_Predict2_repackaged es un repositorio de pesos reempaquetados para ComfyUI de la familia Cosmos Predict 2, desarrollada originalmente por NVIDIA. No se trata de un modelo nuevo, sino de una redistribución de los pesos oficiales de cuatro variantes (2B y 14B, en modalidades Text2Image y Video2World) en formato de archivo único `safetensors` compatible con el nodo de difusión de ComfyUI. El repositorio lo mantiene Comfy-Org, la organización detrás del propio ComfyUI.
 
-Este paquete no introduce un modelo nuevo, sino que facilita la integración de los modelos oficiales de NVIDIA en el ecosistema ComfyUI, evitando al usuario tener que convertir o adaptar los pesos manualmente. El repositorio tiene un tamaño total de 324,4 GB, lo que refleja la magnitud de los pesos de los modelos de difusión incluidos. Su relevancia actual radica en que permite a la comunidad de ComfyUI acceder a los modelos de predicción de mundo de NVIDIA de forma inmediata, sin fricciones de formato.
+La familia Cosmos Predict 2 es un conjunto de modelos generativos de difusión orientados a la síntesis de imagen a partir de texto y a la predicción de vídeo (world models), con variantes que generan vídeo a 480p y 720p a 10 o 16 fps. El empaquetado incluye diez archivos que cubren las combinaciones de tamaño (2B y 14B), modalidad (Text2Image y Video2World) y resolución/frecuencia de fotogramas para las variantes de vídeo.
 
-La licencia es `nvidia-open-model-license`, que permite uso comercial con ciertas restricciones, y el repositorio está orientado exclusivamente a su uso dentro de ComfyUI, tal como indica su README.
+Su relevancia práctica es que permite ejecutar estos modelos dentro de ComfyUI sin necesidad de convertir pesos manualmente ni de gestionar la estructura de directorios del repositorio original de NVIDIA. El repositorio tiene un tamaño de 324,4 GB, lo que refleja que contiene todas las variantes empaquetadas en un único lugar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelos de difusion, variantes Text2Image y Video2World) |
-| Parametros totales | 2B y 14B (dos tamanos, segun el archivo) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, precision no especificada) |
+| Arquitectura | modelo de difusion (no se especifica el detalle interno en la informacion disponible) |
+| Parametros totales | 2B y 14B (segun variante) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no es un modelo de lenguaje) |
+| Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors de precision completa; no se documentan variantes cuantizadas) |
 | Idiomas soportados | no disponible |
 | Licencia | nvidia-open-model-license |
-| Formato de pesos | safetensors (single-file) |
+| Formato de pesos | safetensors (archivo unico, `diffusion-single-file`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna de los modelos Cosmos Predict 2 en la informacion proporcionada. Se sabe que son modelos de difusion, pero no se especifica si utilizan arquitectura de transformer, U-Net, DiT u otra variante. Tampoco hay datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas de RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna de Cosmos Predict 2 mas alla de que se trata de modelos de difusion para generacion de imagen y prediccion de video. El repositorio reempaquetado no aporta detalles sobre el entrenamiento, la composicion del dataset, el numero de tokens de entrenamiento ni si se emplearon tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas en la model card de este repositorio.
 
-El repositorio se limita a empaquetar los pesos en archivos individuales por variante (2B y 14B, T2I y Video2World, distintas resoluciones y FPS). La unica innovacion tecnica destacable es el propio empaquetado para ComfyUI, que simplifica el despliegue local.
+Lo que si se conoce por la estructura de archivos es la organizacion de las variantes: modelos Text2Image (2B y 14B) y modelos Video2World (2B y 14B) con salidas a 480p y 720p a 10 fps y 16 fps. Los pesos se distribuyen como archivos `safetensors` individuales pensados para cargarse directamente en los nodos de difusion de ComfyUI, en lugar de la estructura multiarchivo del repositorio original de NVIDIA.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (Text2Image) en resoluciones de 480p y 720p.
-- Generacion de video a partir de video o imagen (Video2World) a 10 y 16 FPS, con resoluciones de 480p y 720p.
-- Dos tamanos de modelo: 2B (mas ligero, adecuado para hardware moderado) y 14B (mayor calidad, requiere GPU de gama alta).
-- Integracion nativa con ComfyUI: los archivos se colocan en el directorio `models/diffusion_models/` y se usan directamente desde el grafo de nodos.
-- No se indican capacidades adicionales como tool calling, agentes o razonamiento multimodal fuera del ambito de generacion visual.
+- Generacion de imagen a partir de texto (Text2Image) en variantes de 2B y 14B parametros.
+- Prediccion de video a partir de una imagen inicial (Video2World) en variantes de 2B y 14B.
+- Generacion de video a 480p y 720p, con opciones de 10 fps y 16 fps.
+- Integracion nativa con ComfyUI mediante el formato `diffusion-single-file`.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio, al no tratarse de un modelo de lenguaje.
+- No se documentan capacidades multilingues especificas.
 
 ## Casos de uso
 
-- Generacion de imagenes conceptuales en flujos de diseno: un artista puede usar el modelo T2I de 14B para crear bocetos de alta calidad a partir de prompts textuales, integrándolo en un pipeline de ComfyUI con postprocesado.
-- Prototipado rapido de storyboards: el modelo Video2World permite generar secuencias de video cortas a partir de una imagen inicial, util para previsualizar escenas antes de produccion real.
-- Aumento de datos para entrenamiento de modelos de vision: generando videos sinteticos de 480p o 720p se pueden ampliar datasets para tareas de seguimiento de objetos o prediccion de movimiento.
-- Creacion de contenido para videojuegos: los desarrolladores pueden generar cutscenes o fondos animados a baja resolucion y luego escalarlos, aprovechando la variante de 16 FPS para mayor fluidez.
-- Investigacion en modelos de mundo: los modelos Video2World de 14B son adecuados para experimentos academicos sobre prediccion de estados futuros en entornos visuales.
-- Automatizacion de contenido para redes sociales: generando clips cortos de 10 FPS a partir de imagenes fijas, se pueden producir videos de baja carga computacional para plataformas como Instagram o TikTok.
+- Generacion de imagenes conceptuales para preproduccion audiovisual: la variante Text2Image de 14B permite crear fotogramas de referencia a partir de descripciones textuales dentro de un flujo de ComfyUI, util para storyboards y moodboards.
+- Prototipado de escenas de video: la variante Video2World toma una imagen inicial y genera una secuencia de video a 480p o 720p, adecuada para previsualizar movimientos de camara o continuidad de escena antes de producir el metraje final.
+- Creacion de contenido para redes sociales: la variante de 2B ofrece una relacion calidad/coste mas favorable para generar clips cortos a 10 o 16 fps en hardware mas modesto.
+- Investigacion en world models: las variantes Video2World permiten experimentar con prediccion de dinamica de escenas a partir de un fotograma, un area activa de investigacion en robotica y simulacion.
+- Iteracion rapida en pipelines de diseno: al estar empaquetado para ComfyUI, se puede encadenar la generacion de imagen con otros nodos (upscaling, inpainting, control) sin salir del grafo.
+- Generacion de material de referencia para animacion: los clips a 16 fps de las variantes de 14B sirven como base para interpolacion posterior o como referencia de movimiento.
+- Evaluacion comparativa de modelos generativos: disponer de las cuatro variantes en un mismo repositorio facilita comparar calidad y coste computacional entre 2B y 14B y entre 480p y 720p en un mismo entorno.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se incluyen metricas como FID, IS, CLIP score u otras comparativas con modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible oficialmente, pero por el tamano de los pesos (14B en safetensors supera los 28 GB en FP16) se requiere al menos 32 GB de VRAM para la variante 14B sin cuantizacion; la variante 2B puede caber en GPUs con 12-16 GB si se usa FP16.
-- GPU recomendadas: para 14B, NVIDIA RTX 4090 (24 GB) puede ser insuficiente en FP16; se recomienda A100 (40/80 GB) o H100. Para 2B, RTX 3090/4090 o A10G son viables.
-- Consumer GPU: la variante 2B puede ejecutarse en RTX 3080/3090 con cuantizacion (aunque no se proporcionan pesos cuantizados); la 14B no es practica en hardware de consumo sin cuantizacion.
-- Opciones de despliegue: exclusivamente ComfyUI segun el README; no se mencionan vLLM, llama.cpp u otros runtime.
+- VRAM estimada para inferencia: no disponible de forma oficial en la informacion proporcionada. Como referencia orientativa, una variante de 14B en precision completa requiere del orden de decenas de GB de VRAM, mientras que la de 2B es sustancialmente mas ligera; no se confirman cifras exactas.
+- GPU recomendadas: no se documentan oficialmente. Por tamano, las variantes de 14B apuntan a GPU de datacenter (A100, H100) o consumer de gama alta con suficiente VRAM; las de 2B podrian ejecutarse en GPU consumer de gama media-alta, sin confirmacion en la informacion disponible.
+- Compatibilidad con GPU consumer: no confirmada en la informacion disponible.
+- Opciones de despliegue: ComfyUI (destino principal de este reempaquetado). No se documentan otras opciones como vLLM, llama.cpp, Ollama o TGI, que ademas no aplican a modelos de difusion de este tipo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para comparar con modelos similares como Stable Video Diffusion o W.A.L.T. de Google. Los datos de rendimiento y arquitectura de Cosmos Predict 2 no estan publicados en este repositorio, por lo que la comparativa no esta disponible.
+| Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Cosmos_Predict2_repackaged (este) | 2B y 14B | Text2Image y Video2World | no aplica | nvidia-open-model-license | Hugging Face (Comfy-Org) |
+| nvidia/Cosmos-Predict2-2B-Text2Image | 2B | Text2Image | no aplica | nvidia-open-model-license | Hugging Face (NVIDIA) |
+| nvidia/Cosmos-Predict2-14B-Video2World | 14B | Video2World | no aplica | nvidia-open-model-license | Hugging Face (NVIDIA) |
+
+La comparativa con modelos de otras familias (por ejemplo, generadores de video o imagen de otros laboratorios) no esta disponible en la informacion proporcionada. La diferencia principal de este repositorio frente a los originales de NVIDIA es el formato de pesos: archivos unicos `safetensors` listos para ComfyUI en lugar de la estructura multiarchivo original.
 
 ## Limitaciones y advertencias
 
-- El repositorio no incluye documentacion tecnica detallada; los usuarios deben consultar los repositorios originales de NVIDIA para conocer limitaciones especificas.
-- La licencia `nvidia-open-model-license` impone restricciones de uso comercial que deben revisarse antes de desplegar en produccion.
-- Los modelos son de difusion y pueden presentar artefactos visuales, especialmente en generacion de video a 10 FPS.
-- No hay informacion sobre sesgos o alucinaciones; se recomienda validar los resultados en aplicaciones criticas.
-- El tamano total del repositorio (324,4 GB) implica requisitos de almacenamiento y descarga considerables.
-- El uso esta limitado a ComfyUI; no se proporcionan scripts de inferencia independientes ni API.
+- El repositorio es un reempaquetado, no un modelo original: cualquier limitacion de las variantes oficiales de NVIDIA aplica igualmente aqui.
+- No se documentan sesgos conocidos, tasas de alucinacion ni limitaciones de idioma en la informacion disponible.
+- La licencia es `nvidia-open-model-license`, no una licencia de codigo abierto estandar; es imprescindible revisar sus terminos antes de cualquier uso comercial.
+- El tamano del repositorio (324,4 GB) implica requisitos de almacenamiento considerables; conviene descargar solo los archivos de la variante que se vaya a usar.
+- La informacion sobre requisitos de hardware, cuantizacion y rendimiento es escasa o inexistente; cualquier despliegue en produccion requiere validacion propia.
+- No se documentan capacidades de texto, razonamiento ni tool calling: es un modelo de difusion, no un modelo de lenguaje.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged
-- Modelos originales de NVIDIA:
-  - https://huggingface.co/nvidia/Cosmos-Predict2-2B-Text2Image
-  - https://huggingface.co/nvidia/Cosmos-Predict2-2B-Video2World
-  - https://huggingface.co/nvidia/Cosmos-Predict2-14B-Text2Image
-  - https://huggingface.co/nvidia/Cosmos-Predict2-14B-Video2World
-- Licencia NVIDIA Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged
+- Modelo base 2B Text2Image: https://huggingface.co/nvidia/Cosmos-Predict2-2B-Text2Image
+- Modelo base 2B Video2World: https://huggingface.co/nvidia/Cosmos-Predict2-2B-Video2World
+- Modelo base 14B Text2Image: https://huggingface.co/nvidia/Cosmos-Predict2-14B-Text2Image
+- Modelo base 14B Video2World: https://huggingface.co/nvidia/Cosmos-Predict2-14B-Video2World
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license

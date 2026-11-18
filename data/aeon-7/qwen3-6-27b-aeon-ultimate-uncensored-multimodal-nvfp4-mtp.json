@@ -53,7 +53,7 @@
     "region:us"
   ],
   "likes": 38,
-  "downloads_30d": 41004,
+  "downloads_30d": 50940,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -75,29 +75,24 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "ACPI\\HPIC0003\\3&11583659&0 - HP Support Community - 8185929",
-      "url": "https://h30434.www3.hp.com/t5/Notebook-Operating-System-and-Recovery/ACPI-HPIC0003-3-amp-11583659-amp-0/td-p/8185929",
-      "snippet": "Oct 10, 2021 · I have an error of unknown device ACPI\\\\HPIC0003\\\\3&11583659&0 on my notebook - HP 340S G7, s/n (personal …"
+      "title": "Aeon | a world of ideas",
+      "url": "https://aeon.co/",
+      "snippet": "Aeon is a magazine of ideas and culture. We publish in-depth essays from the world’s most incisive and ambitious thinkers, and a …"
     },
     {
-      "title": "Unable to find drivers for Device ACPI\\HPIC0003\\3&11583659&0",
-      "url": "https://h30434.www3.hp.com/t5/Notebook-Software-and-How-To-Questions/Unable-to-find-drivers-for-Device-ACPI-HPIC0003-3-amp/td-p/8964072",
-      "snippet": "Jan 12, 2024 · Tried to find drivers for 'Device ACPI\\\\HPIC0003\\\\3&11583659&0' but failed to do so. Checked with HP Support by …"
+      "title": "AEON – Un domaine de montagne unique au monde",
+      "url": "https://www.aeon-montagnes.com/",
+      "snippet": "Découvrez AEON Une vision partagée, un fil rouge, un label de qualité qui se traduit dans chacune des expériences. Porté par les …"
     },
     {
-      "title": "Solved: What driver installs driver ACPI\\HPIC0003\\2&DABA3FF&0 for H ...",
-      "url": "https://h30434.www3.hp.com/t5/Notebook-Operating-System-and-Recovery/What-driver-installs-driver-ACPI-HPIC0003-2-amp-DABA3FF-amp/td-p/7231647",
-      "snippet": "Sep 9, 2019 · What driver installs driver ACPI\\\\HPIC0003\\\\2&DABA3FF&0 for HP Notebook - 15-bs028cl M# HP Notebook - 15 …"
+      "title": "Essays — Latest | Aeon",
+      "url": "https://aeon.co/essays",
+      "snippet": "The latest and most popular Essays from Aeon. Longform articles on philosophy, psychology, science, society, history and the arts, …"
     },
     {
-      "title": "Missing driver ACPI\\INT3400\\2&DABA3FF&0 - HP Support Community",
-      "url": "https://h30434.www3.hp.com/t5/Notebook-Operating-System-and-Recovery/Missing-driver-ACPI-INT3400-2-amp-DABA3FF-amp-0/td-p/8468554",
-      "snippet": "Aug 29, 2022 · Your account also allows you to connect with HP support faster, access a personal dashboard to manage all of your …"
-    },
-    {
-      "title": "ACPI\\HPIC0003\\3&11583659&0 Error message - HP Support Community",
-      "url": "https://h30434.www3.hp.com/t5/Desktops-Archive-Read-Only/ACPI-HPIC0003-3-amp-11583659-amp-0-Error-message/td-p/8047274",
-      "snippet": "Apr 24, 2021 · ACPI\\\\HPIC0003\\\\3&11583659&0 Error message I upgraded my HP Slim Desktop - S01-PF0308il. The Device …"
+      "title": "Aeon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aeon",
+      "snippet": "Although the term aeon may be used in reference to a period of a billion years (especially in geology, cosmology and astronomy), its …"
     }
   ]
 }

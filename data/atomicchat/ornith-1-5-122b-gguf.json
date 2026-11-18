@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 13,
-  "downloads_30d": 26650,
+  "downloads_30d": 26716,
   "trending_score": 13,
   "parameters": 124635206144,
   "parameters_human": "124.64B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.com/?hl=ar",
-      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.iq/index.html",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com/?hl=fr",
-      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com.nf/?hl=ar-US",
-      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
-    },
-    {
-      "title": "Google Arabia - YouTube",
-      "url": "https://www.youtube.com/googlearabia",
-      "snippet": "مرحبًا وأهلاً بكم في قناتنا التي نشارك من خلالها آخر الأخبار عن منتجاتنا وخدماتنا ولمحات عما يحدث وراء ..."
-    }
-  ]
+  "sources": []
 }

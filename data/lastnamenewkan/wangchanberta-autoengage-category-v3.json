@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "lastnamenewkan/wangchanberta-autoengage-category-v3",
+  "slug": "lastnamenewkan-wangchanberta-autoengage-category-v3",
+  "author": "lastnamenewkan",
+  "url": "https://huggingface.co/lastnamenewkan/wangchanberta-autoengage-category-v3",
+  "created_at": "2026-11-18T03:36:53.000Z",
+  "updated_at": "2026-11-18T03:37:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 422176750,
+  "storage_human": "422 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

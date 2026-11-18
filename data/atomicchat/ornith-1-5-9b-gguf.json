@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 83,
-  "downloads_30d": 34198,
+  "downloads_30d": 34323,
   "trending_score": 8,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AtomicChat/ornith-9b-GGUF · Hugging Face",
-      "url": "https://huggingface.co/AtomicChat/ornith-9b-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ornith-ai/Ornith-1.5-9B · Hugging Face",
-      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
-      "url": "https://ornith.ai/ornith_1_5.html",
-      "snippet": "Ornith-1.5 spans three model scales: 397B MoE, 35B MoE and 9B dense. Designed for strong general-purpose intelligence across reasoning, agentic, and coding tasks, Ornith-1.5 achieves state-of-the-art performance among open-source models of comparable size across a broad range of benchmarks."
-    },
-    {
-      "title": "Ornith AI - Open-Source Agentic Coding Models",
-      "url": "https://ornith.online/",
-      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
-    },
-    {
-      "title": "Ornith on X: \"Ornith-1.5-35B significantly outperforms its similar ...",
-      "url": "https://x.com/ornith_/status/2090075048812118352",
-      "snippet": "Ornith-1.5-9B, with its quantized Ornith-1.5-9B-Mobile version, can be readily deployed on iPhone and Android devices while substantially outperforming larger models such as Gemma 4-31B and Qwen 3.6-35B. In addition to performance gains, we developed cutting-edge model Show more"
-    }
-  ]
+  "sources": []
 }

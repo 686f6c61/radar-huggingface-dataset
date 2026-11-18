@@ -2,93 +2,102 @@
 
 ## Resumen
 
-Qwen3.8-35B-A3B-Distill APEX-I-MiniPlus-V2.1 GGUF es una cuantizacion artesanal, publicada por el usuario IsValorum, del modelo empero-ai/Qwen3.8-35B-A3B-Distill. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) disperso con 40 capas, 256 micro-expertos de grano fino (dimension intermedia 512) y 8 expertos activos por token, sobre una arquitectura hibrida que combina 30 capas Gated DeltaNet (SSM) con 10 capas de atencion completa. El resultado es un modelo de 35B parametros totales con aproximadamente 3,2B parametros activos por token, lo que le permite ofrecer latencias propias de un modelo pequeno con la capacidad de razonamiento de uno grande. La nomenclatura "A3B" del nombre hace referencia a esos 3B activos.
+Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF es una cuantización GGUF del checkpoint empero-ai/Qwen3.8-35B-A3B-Distill, un modelo de arquitectura MoE (Mixture of Experts) de tipo Qwen3.5-MoE con aproximadamente 34.660 millones de parámetros totales y unos 3.000 millones de parámetros activos por token. La release la firma IsValorum, un cuantizador independiente que publica bajo la marca APEX-I-MiniPlus y que, según su propia model card, calcula las imatrix y los tensores en clústeres cloud privados financiados de su bolsillo. El modelo base procede de empero-ai y conserva la licencia Apache 2.0.
 
-El modelo base es una destilacion de las trazas de razonamiento y chain-of-thought (`<think>`) de Qwen3.8 sobre la arquitectura MoE dispersa de 35B, e incluye soporte de tool calling y un proyector de vision separado (`mmproj`) para entrada de imagenes y analisis de interfaces graficas. El repositorio distribuye unicamente pesos en formato GGUF para llama.cpp, con un peso de 14,64 GB (13,64 GiB) y 3,38 bits por peso (BPW) de media, disenado explicitamente para no agotar la memoria en GPUs de 16 GB y 24 GB de VRAM, incluyendo la afirmacion de ejecutar la ventana completa de 256K tokens en una GPU de 24 GB.
+El interés de esta ficha está en la combinación de tres factores: un MoE de 35B con solo 3B activos, un contexto nativo declarado de 256K tokens y una cuantización quirúrgica tensor a tensor que, según el autor, permite ejecutar el contexto completo en estaciones de trabajo de 24 GB de VRAM mediante offload selectivo a RAM del sistema. Frente a las cuantizaciones planas convencionales, el autor reporta mejoras de perplejidad en WikiText-2 respecto a GSQ-RCO IQ3_S, aunque esas cifras se refieren a la línea hermana de 27B y no a este checkpoint de 35B.
 
-La relevancia de esta ficha radica en que no es un modelo nuevo, sino una receta de cuantizacion: el autor sostiene que las cuantizaciones automaticas planas degradan los modelos con micro-expertos y bloques de razonamiento continuo, provocando colapso del router, degeneracion de tokens y sintaxis JSON/matematica rota. Su propuesta mantiene los routers sin comprimir en F32, la cabeza de salida en Q6_K y los expertos nucleares en IQ3_XXS calibrado. Es importante senalar que el modelo no tiene descargas ni valoraciones en el momento de redactar esta ficha y que las cifras de rendimiento son afirmaciones del autor, no verificaciones independientes.
+Es relevante ahora porque el ecosistema llama.cpp ha madurado lo suficiente para servir MoE con expertos offloaded, y porque la familia Qwen3.x se ha convertido en la referencia open source para razonamiento, agentes y tool calling multilingüe. Esta release concreta incluye además MTP (multi-token prediction) integrado y una plantilla de chat endurecida para flujos agénticos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5MoeForConditionalGeneration: MoE disperso hibrido con 40 capas (30 Gated DeltaNet SSM + 10 capas de atencion completa), 256 micro-expertos de grano fino con dimension intermedia 512 y 8 expertos activos por token |
-| Parametros totales | 35B (segun la nomenclatura del modelo; no se desglosa el total exacto en la informacion disponible) |
-| Parametros activos | Aproximadamente 3,2B por token |
-| Longitud de contexto | 256K tokens (el autor afirma que se ejecuta completo en GPUs de 24 GB) |
-| Tipos de cuantizacion | Build unico GGUF APEX-I-MiniPlus-V2.1 a 3,38 BPW global; por componente: experto compartido en Q5_K + imatrix, capas frontera en Q3_K + imatrix, expertos nucleares en IQ3_XXS calibrado, routers en F32 sin comprimir y cabeza de salida en Q6_K; proyector de vision en Q8_0 |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (para llama.cpp); el repositorio no publica safetensors |
+| Arquitectura | Transformer MoE (tipo Qwen3.5-MoE / qwen35moe), con MTP integrado |
+| Parametros totales | 34.660.610.688 (~34,7B) |
+| Parametros activos | ~3B por token (designación A3B) |
+| Longitud de contexto | 256K tokens (declarado en la model card) |
+| Tipos de cuantizacion | GGUF con esquema APEX-I-MiniPlus (fidelidad clase Q5 a Q6, sin techo fijo de tamaño); imatrix propia |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar (13 idiomas declarados) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer MoE hibrido: 40 capas en las que 30 son capas Gated DeltaNet (un modelo de espacio de estados, SSM, con mecanismo de puerta) y 10 son capas de atencion completa. El componente MoE usa 256 micro-expertos de grano fino con dimension intermedia 512 y activa 8 por token, lo que da lugar a los aproximadamente 3,2B parametros activos sobre un total de 35B. La presencia mayoritaria de capas SSM reduce el coste de memoria de la cache KV respecto a un transformer de atencion completa equivalente, algo coherente con la afirmacion de poder servir 256K tokens de contexto en 24 GB de VRAM.
+El modelo base es un transformer con mezcla de expertos en el que cada token activa aproximadamente 3.000 millones de parámetros de un total de 34.660 millones, lo que sitúa la ratio de activación en torno al 8,7 %. La nomenclatura de la release indica soporte de MTP (multi-token prediction), una técnica de decodificación especulativa integrada que permite proponer varios tokens por paso y verificarlos en paralelo, con la ganancia de throughput asociada. El tag `qwen35moe` confirma la familia arquitectónica, derivada de la línea Qwen3.5.
 
-El modelo base (empero-ai/Qwen3.8-35B-A3B-Distill) es una destilacion de las capacidades de razonamiento y de las trazas de chain-of-thought de Qwen3.8 en la arquitectura MoE dispersa de 35B. La model card describe tambien soporte de tool calling y de bloques de pensamiento `<think>`, ademas de un proyector de vision independiente en Q8_0 (610 MB / 582 MiB) para parsing de interfaces y entrada de imagenes de alta resolucion. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. La innovacion tecnica que aporta este repositorio concreto no esta en el entrenamiento, sino en la asignacion de bits por tensor: routers en F32 para evitar derivas de enrutamiento, cabeza de salida en Q6_K para preservar la clasificacion del tokenizer y una mezcla de codebooks no lineales (IQ3_XXS) con bloques lineales para permitir streaming AVX2 en CPU en un solo ciclo.
+El checkpoint base es un destilado (Distill) de empero-ai sobre el que no se documentan en la información disponible el número exacto de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. La model card del autor de la cuantización no reproduce esos detalles del upstream y se centra en el proceso de cuantización: cálculo de imatrix, asignación quirúrgica de bits por tensor (con un mapa auditable extraído del propio GGUF) y verificación empírica de fidelidad. La innovación destacable de esta release no está en el entrenamiento sino en el esquema de compresión: el autor afirma que el enfoque tensor a tensor prioriza fidelidad de clase Q5–Q6 sin imponer un límite fijo de tamaño de archivo, y que el resultado cabe en 18,5 GB de repositorio.
 
 ## Capacidades
 
-- Generacion de texto en ingles y razonamiento profundo con bloques de chain-of-thought explicitos (`<think>`).
-- Razonamiento multi-paso y descomposicion de problemas, segun la descripcion de destilacion de trazas de razonamiento de Qwen3.8.
-- Tool calling / function calling, mencionado de forma explicita en la model card.
-- Vision: entrada de imagenes de alta resolucion y parsing de interfaces graficas mediante el proyector `mmproj` en Q8_0.
-- Estabilidad sintactica reforzada en salidas estructuradas (JSON, matematicas, indentacion de codigo) gracias a la cabeza de salida en Q6_K y a los routers sin comprimir.
-- Capacidades multilingues: el unico idioma declarado en los metadatos es el ingles.
-- Inferencia eficiente en CPU y GPU hibrida, con soporte de ejecucion de bloques lineales en un ciclo AVX2.
+- Generación de texto conversacional multi-turno con contexto largo (hasta 256K tokens declarados).
+- Razonamiento explícito: el modelo emite bloques `<think>` y admite control del esfuerzo de razonamiento mediante la plantilla de chat endurecida que incluye la release.
+- Tool calling y function calling, con plantilla agéntica adaptada para flujos de varios pasos.
+- Razonamiento multi-paso y uso como agente autónomo con llamadas encadenadas a herramientas.
+- Capacidades multilingües en 13 idiomas, con especial solidez esperada en inglés y chino por la familia de origen.
+- MTP para decodificación especulativa, que acelera la generación en llama.cpp cuando está soportado.
+- Capacidad multimodal: la model card menciona tareas multimodales al describir la línea MoE de 35B, pero no se detalla en la información disponible si este checkpoint concreto conserva proyección de visión.
 
 ## Casos de uso
 
-- Razonamiento asistido en local sobre portatil: con 13,64 GiB de huella de memoria, el modelo puede ejecutarse en un portatil con GPU de 8-12 GB (por ejemplo RTX 4050) descargando parte de las capas a CPU, con velocidades declaradas por el autor de 25 a 28+ tokens/s.
-- Atencion al cliente multi-turno: la ventana de 256K tokens permite mantener historiales de conversacion muy largos y documentacion de producto en contexto sin truncar, algo util en sistemas de soporte con base de conocimiento adjunta.
-- Analisis de interfaces y automatizacion de escritorio: el proyector de vision permite interpretar capturas de pantalla o interfaces graficas, lo que habilita agentes que interpretan la UI y emiten acciones a traves de tool calling.
-- Pipelines de codigo asistido: la cabeza de salida en Q6_K y los routers en F32 estan orientados a preservar indentacion, llaves y sintaxis, lo que reduce errores en generacion de parches y diffs dentro de flujos de CI/CD.
-- Razonamiento matematico con salida verificable: el modelo esta disenado para emitir bloques `<think>` seguidos de respuesta final, lo que facilita separar el razonamiento de la solucion y validar el resultado con un checker externo.
-- Despliegue en estacion de trabajo de 24 GB: segun el autor, permite servir el contexto completo de 256K tokens integramente en VRAM, habilitando tareas de resumen de repositorios o corpus extensos en una sola GPU consumer de gama alta.
-- Prototipado de agentes con llama.cpp: al distribuirse solo en GGUF, encaja directamente en el ecosistema llama.cpp y en herramientas compatibles para construir agentes locales sin dependencia de APIs en la nube.
+- Asistentes de atención al cliente con historial largo: los 256K tokens de contexto permiten mantener conversaciones con decenas de turnos y documentación de producto adjunta sin truncar, algo inviable en modelos de 8K–32K.
+- Agentes de automatización con tool calling: la plantilla agéntica endurecida y el soporte de function calling permiten encadenar consultas a APIs, lectura de ficheros y ejecución de acciones en pipelines de back-office.
+- Análisis de repositorios y documentación extensa: con contexto de 256K se puede ingerir un conjunto amplio de ficheros y hacer preguntas cruzadas, útil para onboarding técnico y auditoría de código.
+- Razonamiento asistido en investigación: el modo `<think>` con esfuerzo configurable sirve para tareas de análisis donde interesa ver la traza de razonamiento y ajustar el coste computacional.
+- Despliegue en estaciones de trabajo de 24 GB: según el autor, el contexto completo cabe en VRAM en GPUs de 24 GB mediante offload de expertos a RAM, lo que habilita prototipado local de agentes sin clúster.
+- Servicio multilingüe de resúmenes y traducción: los 13 idiomas declarados cubren los mercados habituales de Europa, Asia oriental y Oriente Medio para generación de contenido y localización.
+- Extracción de información estructurada de documentos largos: contratos, informes o expedientes que superan la ventana de modelos densos pequeños.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra suite estandar, y los resultados de busqueda web obtenidos no son relevantes para este modelo (corresponden a predicciones de precio de criptomonedas y no deben tenerse en cuenta).
+No se han publicado resultados de benchmarks en la información disponible para este checkpoint de 35B. La model card incluye cifras de perplejidad WikiText-2 comparadas con GSQ-RCO IQ3_S (PPL 7,07), pero corresponden a la línea hermana de 27B (MiniPlus V3 y NanoPlus V3) y no son trasladables a este modelo. Tampoco se aportan datos de MMLU, HumanEval, GSM8K ni de evaluaciones agénticas.
 
-Las unicas cifras de rendimiento presentes son afirmaciones del autor sobre velocidad de generacion: 25 a 28+ tokens/s en portatiles de consumo con GPU (Intel Core / AMD Ryzen + RTX 4050) y una seccion de proyecciones de throughput para RTX 30/40/50 que no se detalla en la informacion extraida. No se aportan metodologias de medida, longitudes de prompt ni tamanos de lote, por lo que estas cifras no deben considerarse reproducibles sin verificacion independiente.
+| Benchmark | Resultado | Nota |
+|---|---|---|
+| MMLU | no disponible | — |
+| HumanEval | no disponible | — |
+| GSM8K | no disponible | — |
+| WikiText-2 PPL (35B) | no disponible | Las cifras publicadas son de la línea 27B |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 13,64 GiB para el modelo completo en la cuantizacion APEX-I-MiniPlus-V2.1 (3,38 BPW), mas 582 MiB si se carga el proyector de vision Q8_0.
-- El autor indica que la huella esta disenada especificamente para evitar OOM en hardware de 16 GB y 24 GB de VRAM.
-- Afirmacion destacada: el contexto completo de 256K tokens se ejecuta en VRAM de una GPU de 24 GB.
-- GPUs objetivo declaradas: RTX 4050 en portatiles de consumo y GPUs de gama alta de 24 GB; la model card menciona proyecciones para familias RTX 30, 40 y 50.
-- Configuracion hibrida CPU + GPU: soportada, con ejecucion de bloques lineales en un solo ciclo AVX2 sobre CPU Intel Core o AMD Ryzen.
-- Opciones de despliegue: llama.cpp es el runtime principal (formato GGUF); no se mencionan vLLM, TGI, Ollama ni otros backends en la informacion disponible.
-- Latencia y throughput: 25 a 28+ tokens/s en portatiles de consumo segun el autor; no se proporcionan cifras de time-to-first-token ni de throughput en GPUs de 24 GB.
+- VRAM estimada: el repositorio ocupa 18,5 GB, de modo que la inferencia completa requiere al menos ~19–20 GB de VRAM si se carga todo; con offload parcial de expertos a RAM del sistema se puede operar con 24 GB de VRAM y contexto completo, según el autor.
+- GPU recomendadas: RTX 4090 / RTX 5090 (24–32 GB) para el escenario de contexto completo con offload; A100 40/80 GB y H100 para servicio sin offload y mayor throughput.
+- Cabe en GPU de consumo: sí, en RTX 3090, 4090 y 5090 de 24 GB o más, con offload de expertos a RAM; en GPUs de 12–16 GB el offload necesario degrada notablemente el throughput.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-server) son el soporte natural por ser GGUF; vLLM y TGI no consumen GGUF de forma nativa y requerirían el checkpoint en safetensors.
+- Latencia y throughput: la model card incluye una sección de benchmarks de throughput y offload para RTX 30/40/50 y streaming desde RAM, pero las cifras concretas no están recogidas en la información disponible. La activación de solo ~3B parámetros por token sitúa el rendimiento esperado muy por encima de un modelo denso de 35B.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Peso en disco | Licencia | Notas |
-|---|---|---|---|---|---|
-| APEX-I-MiniPlus-V2.1 (este repositorio) | 35B totales / ~3,2B activos | 256K | 14,64 GB (13,64 GiB), 3,38 BPW | Apache-2.0 | Expertos nucleares en IQ3_XXS, routers en F32, output en Q6_K, experto compartido en Q5_K |
-| APEX-I-Mini (receta generica) | 35B totales / ~3,2B activos | 256K | Aproximadamente 12,5 GB | Apache-2.0 | Expertos nucleares rebajados a IQ2_S y `output.weight` en Q3_K_M; segun el autor, con penalizacion notable de perplejidad en razonamiento complejo |
-| Quant plano de 3 bits (Q3_K_S / IQ3_S) | 35B totales / ~3,2B activos | 256K | Aproximadamente 15,6 GB | Apache-2.0 | Reduccion de bits uniforme por tensor; segun el autor, provoca colapso del router y degeneracion de tokens en modelos de micro-expertos |
-| empero-ai/Qwen3.8-35B-A3B-Distill (modelo base) | 35B totales / ~3,2B activos | 256K | No disponible | No disponible | Modelo original sin cuantizar del que derivan las tres builds anteriores |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Qwen3.8-35B-A3B-Distill APEX-I-MiniPlus V2.1 (este) | ~34,7B | ~3B | 256K | Apache 2.0 | GGUF | Cuantización quirúrgica con imatrix e MTP |
+| Qwen3.6-35B-A3B MTP APEX-I-MiniPlus V2.1 | ~35B | ~3B | no disponible | Apache 2.0 | GGUF | Release hermana del mismo autor, orientada a razonamiento general, agentes y tool calling |
+| Ornith 1.5 35B-A3B APEX-I-MiniPlus V2.1 | ~35B | ~3B | no disponible | no disponible | GGUF | Release hermana enfocada a ingeniería de software y agentes de código a escala de repositorio |
+| Tiel Coder 35B-A3B APEX-I-MiniPlus V2.1 | ~35B | ~3B | no disponible | no disponible | GGUF | Release hermana especializada en programación agéntica y depuración iterativa |
+
+Las tres alternativas son releases del mismo cuantizador sobre familias base distintas, no variantes intercambiables del mismo modelo. No se dispone de datos de benchmarks comparativos entre ellas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara ingles como idioma soportado; el rendimiento en castellano u otras lenguas no esta documentado.
-- No hay resultados de benchmarks publicados; todas las afirmaciones de calidad y velocidad provienen del autor de la cuantizacion y no han sido verificadas de forma independiente.
-- El repositorio tiene 0 descargas y 0 valoraciones en el momento de redactar esta ficha, por lo que no existe retroalimentacion de la comunidad sobre su comportamiento real.
-- La cuantizacion a 3,38 BPW implica perdida de precision inevitable respecto a los pesos originales, incluso con la asignacion selectiva de bits; los expertos nucleares en IQ3_XXS son el componente mas agresivamente comprimido.
-- Riesgo de alucinacion inherente al modelo base y a los modelos de razonamiento destilados, especialmente en tareas de conocimiento factual y en contextos muy largos.
-- El modelo base es una destilacion de Qwen3.8 sobre una arquitectura de 35B con solo ~3,2B parametros activos; es esperable un rendimiento inferior al de modelos densos de tamano similar en tareas que requieren conocimiento amplio.
-- La licencia Apache-2.0 se aplica a esta cuantizacion, pero conviene verificar las condiciones del modelo base (empero-ai/Qwen3.8-35B-A3B-Distill) y de Qwen3.8 antes de un uso comercial.
-- No se documentan sesgos especificos ni la composicion del dataset de entrenamiento, lo que impide evaluar riesgos de sesgo por idioma, genero o dominio.
-- El formato GGUF limita el despliegue a llama.cpp y herramientas compatibles; no hay versiones publicadas para vLLM, TGI u otros servidores de inferencia de alto rendimiento.
-- Las fechas de creacion y actualizacion del repositorio (17 de septiembre de 2026) son posteriores a la fecha de los resultados de busqueda disponibles, lo que impide contrastar informacion externa.
+- Limitación conocida del upstream: el checkpoint BF16 original puede entrar en bucles de repetición en respuestas muy largas, incluso después del bloque `<think>`. EmperoAI reconoce el problema y trabaja en un Distill V2; la cuantización no lo corrige.
+- Advertencia específica del autor sobre sintaxis de código y repeat penalty: aplicar penalizaciones de repetición agresivas puede provocar intercambio de caracteres en código generado. Es un caveat relevante para pipelines de generación de código en producción.
+- Riesgo de alucinación: no hay evaluaciones publicadas de factualidad para este checkpoint; como todo modelo generativo, puede producir afirmaciones plausibles pero falsas, especialmente con contexto muy largo.
+- Sesgos: no se documentan análisis de sesgo en la información disponible. La composición del dataset de destilado es desconocida, lo que impide evaluar sesgos de origen.
+- Contexto e idioma: los 256K son un dato declarado por el autor de la cuantización; la calidad efectiva en ventanas extremas no está verificada con benchmarks publicados. El campo `language` de los metadatos de Hugging Face lista solo `en`, aunque la model card declara 13 idiomas.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del checkpoint base en empero-ai/Qwen3.8-35B-A3B-Distill antes de desplegar, ya que las obligaciones de atribución pueden recaer en el upstream.
+- Producción: al ser una cuantización GGUF de un tercero independiente, no hay garantías de soporte ni de paridad exacta con el BF16 original más allá de las verificaciones de fidelidad que reporta el autor. Para servicio a gran escala, evaluar el checkpoint en safetensors con vLLM.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
-- llama.cpp (runtime mencionado en las etiquetas del modelo): no se proporciona enlace directo en la informacion disponible
-- Paper, blog de anuncio, repositorio de codigo o demo: no disponibles en la informacion proporcionada
-- Resultados de busqueda web: no relevantes para este modelo (corresponden a predicciones de precio de Bitcoin)
+- Colección APEX-I MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-standard-moe-6acfee77961c8c0cf5a083b5
+- Release hermana Qwen3.6-35B-A3B MTP V2.1: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-GGUF
+- Release hermana Qwen3.6-35B-A3B MTP V2.1 Abliterated: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Release hermana Ornith 1.5: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Release hermana Tiel Coder: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Qwen3.8 27B MiniPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
+- Qwen3.8 27B NanoPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
+- Swift-1.5 Qwen3.8 27B Uncensored MTP MiniPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-MiniPlus-V3-GGUF
+- Swift-1.5 Qwen3.8 27B Uncensored MTP NanoPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-NanoPlus-V3-GGUF
+- Apoyo al autor: https://ko-fi.com/isvalorum

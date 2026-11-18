@@ -1,85 +1,99 @@
 # LiquidAI/LFM3-VL-2B-MLX-4bit
 
 ## Resumen
-LFM3-VL-2B-MLX-4bit es la versión cuantizada a 4 bits en formato MLX del modelo multimodal LFM3-VL-2B de Liquid AI, optimizada específicamente para inferencia en Apple Silicon. Se trata de un modelo de imagen-a-texto (image-text-to-text) de aproximadamente 1.918 millones de parámetros que combina comprensión visual con generación de lenguaje, empaquetado en un repositorio de 1,6 GB con pesos que ocupan 1,59 GB.
 
-La relevancia de esta variante reside en su estrategia de cuantización: emplea cuantización afín de 4 bits con grupos de 32 y mantiene los embeddings de tokens en 8 bits, aplicando además destilación con conciencia de cuantización (QAD, quantization-aware distillation) para recuperar buena parte del rendimiento del modelo original en 8 bits. Esto permite desplegar un modelo visión-lenguaje en hardware de consumo Apple sin renunciar en exceso a la calidad.
+LFM3-VL-2B-MLX-4bit es la versión cuantizada a 4 bits en formato MLX del modelo multimodal LFM3-VL-2B de Liquid AI, optimizada para ejecución en Apple Silicon (chips M-series). Se trata de un modelo de imagen-a-texto (image-text-to-text) que combina comprensión visual con generación de lenguaje, empaquetado en aproximadamente 1,59 GB de pesos, lo que permite su despliegue en hardware de consumo con memoria unificada.
 
-El modelo cubre 16 idiomas (incluido el español) y se distribuye bajo licencia LFM1.0 (lfm1.0), lo que condiciona su uso comercial. Requiere MLX-VLM 0.7.11 o superior para su ejecución.
+El modelo base es LFM3-VL-2B, un transformer multimodal de 2B parámetros (1.918.181.888 parámetros reales según safetensors) que forma parte de la familia LFM3 de Liquid AI. La cuantización emplea cuantización afín de 4 bits con grupos de 32, manteniendo los embeddings de tokens en 8 bits, y se ha entrenado mediante destilación con conciencia de cuantización (QAD), lo que permite recuperar buena parte del rendimiento del modelo en 8 bits.
+
+Su relevancia actual radica en que ofrece capacidades multimodales y de razonamiento (thinking mode opcional) en un paquete lo bastante pequeño para ejecutarse localmente en un Mac, con soporte para 16 idiomas y una ventana de contexto amplia (según el modelo original). Es una opción interesante para prototipado on-device de asistentes visuales, OCR y descripción de imágenes sin depender de la nube.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo multimodal imagen-texto de la familia LFM3; detalles en la model card del modelo base) |
-| Parametros totales | 1.918.181.888 (~1,92 mil millones) |
+| Arquitectura | Transformer multimodal (image-text-to-text), familia LFM3; detalles completos en la model card del modelo base |
+| Parametros totales | 1.918.181.888 (~1,92B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits afín con grupos de 32; embeddings de tokens en 8 bits; entrenado con quantization-aware distillation (QAD) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | 4-bit afín con grupos de 32; embeddings de tokens en 8-bit; entrenado con QAD (quantization-aware distillation) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
-| Licencia | lfm1.0 (license: other, license_name: lfm1.0) |
-| Formato de pesos | safetensors (MLX), 4-bit |
+| Licencia | lfm1.0 (license: other) |
+| Formato de pesos | safetensors (MLX), ~1,59 GB |
+| Libreria | mlx |
+| Pipeline | image-text-to-text |
+| Modelo base | LiquidAI/LFM3-VL-2B |
+| Tamano del repo | 1,6 GB |
 
 ## Arquitectura y entrenamiento
-No se dispone en la información proporcionada de detalles sobre la arquitectura interna del modelo base LFM3-VL-2B (tipo de transformer, mecanismos de atención, composición del dataset de entrenamiento, número de tokens o si hubo RLHF/DPO). La model card de esta variante remite explícitamente a la model card del modelo original para los detalles de arquitectura y uso.
 
-Lo que sí se documenta es el proceso de cuantización: los pesos usan cuantización afín de 4 bits con grupos de 32, los embeddings de tokens permanecen en 8 bits, y el modelo cuantizado se entrena mediante destilación con conciencia de cuantización (QAD), de modo que recupera buena parte del rendimiento del modelo en 8 bits. El resultado son pesos de 1,59 GB pensados para Apple Silicon y ejecutables con MLX-VLM.
+El modelo es una cuantización del LFM3-VL-2B de Liquid AI, un modelo multimodal de tipo image-text-to-text. La model card de esta versión remite a la del modelo original para los detalles de arquitectura, por lo que la información específica sobre el backbone visual, el proyector multimodal y la configuración exacta del transformer no está disponible en la información proporcionada. Los pesos usan cuantización afín de 4 bits con grupos de 32, con embeddings de tokens en 8 bits.
+
+El aspecto técnico destacable es el uso de destilación con conciencia de cuantización (QAD): los pesos cuantizados se entrenan para aproximarse al comportamiento del modelo de mayor precisión, recuperando gran parte del rendimiento del modelo en 8 bits. El modelo soporta un modo de razonamiento (thinking) que permanece desactivado por defecto y se activa mediante el flag `--enable-thinking` en MLX-VLM. Los detalles sobre volumen de tokens de entrenamiento, composición del dataset y uso de RLHF/DPO no están disponibles en la información proporcionada.
 
 ## Capacidades
-- Comprensión de imágenes y generación de texto a partir de ellas (pipeline image-text-to-text).
-- Conversación multimodal multi-turno (etiqueta conversational).
-- Generación de descripciones de imágenes y respuestas a preguntas visuales.
-- Soporte multilingüe en 16 idiomas, incluido el español.
-- Ejecución en dispositivo (on-device) sobre Apple Silicon mediante MLX.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, modo thinking, audio ni otras modalidades más allá de imagen y texto.
+
+- Generación de texto y razonamiento multimodal a partir de imágenes (image-text-to-text).
+- Modo de razonamiento opcional (thinking mode) activable con `--enable-thinking`; por defecto está desactivado.
+- Comprensión de imágenes: descripción, respuesta a preguntas visuales y tareas image-to-text en general.
+- Soporte multilingüe en 16 idiomas: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
+- Ejecución on-device en Apple Silicon mediante MLX-VLM (>= 0.7.11).
+- Parámetros de muestreo configurables (temperature, top-p, top-k, min-p, repetition-penalty) y hasta 16.384 tokens de generación por invocación según el ejemplo de la model card.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes multi-step: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
-- Descripción automática de imágenes en local: el modelo puede generar descripciones textuales de fotografías ejecutándose íntegramente en un Mac con Apple Silicon, sin enviar datos a la nube, gracias a sus pesos de 1,59 GB en MLX.
-- Asistentes de accesibilidad: conversión de contenido visual (capturas, documentos escaneados, imágenes) en texto para lectores de pantalla, aprovechando la modalidad imagen-texto y el soporte multilingüe.
-- Etiquetado y catalogación de imágenes: generación de metadatos descriptivos para bibliotecas fotográficas o catálogos de producto en un flujo por lotes sobre hardware Apple.
-- Prototipado rápido de aplicaciones visión-lenguaje: al ser una variante 4-bit ligera, permite iterar en local con MLX-VLM antes de escalar a un modelo mayor o a la API de Liquid AI.
-- Atención al cliente con soporte de imágenes: un usuario puede adjuntar una captura o foto y el modelo responde en su idioma (16 idiomas soportados) describiendo o interpretando el contenido visual.
-- Procesamiento de documentos con componentes visuales en entornos con requisitos de privacidad: al ejecutarse on-device, los datos no salen del equipo, lo que encaja en escenarios con datos sensibles.
-- Investigación y evaluación de cuantización: útil para estudiar el impacto de QAD y de la cuantización 4-bit en modelos multimodales pequeños sobre Apple Silicon.
+
+- Descripción automática de imágenes en本地 en Mac: el modelo puede generar descripciones de fotografías o capturas ejecutándose íntegramente en un Apple Silicon, sin enviar datos a la nube, gracias a sus ~1,59 GB de pesos.
+- Asistente visual personal on-device: integración en aplicaciones de escritorio para Mac que respondan preguntas sobre imágenes cargadas por el usuario (por ejemplo, interpretar gráficos o diagramas), usando MLX-VLM como runtime.
+- Prototipado rápido de pipelines image-to-text: investigadores pueden validar ideas de VQA o captioning con un modelo de 2B parámetros antes de escalar a modelos mayores, con coste de hardware mínimo.
+- Extracción de información de documentos escaneados: lectura y resumen de contenido visual (facturas, capturas, formularios) en flujos locales, aprovechando el soporte de 16 idiomas para documentos multilingües.
+- Accesibilidad: generación de descripciones de imágenes para personas con discapacidad visual en aplicaciones locales, con latencia baja al ejecutarse en el propio dispositivo.
+- Evaluación de modelos multimodales pequeños: referencia para comparar el impacto de la cuantización 4-bit con QAD frente al modelo base, útil en investigación sobre eficiencia de modelos.
+- Procesamiento por lotes offline: generación de metadatos y etiquetas para bibliotecas de imágenes en local, sin depender de APIs externas.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible.
+
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-- VRAM/memoria: los pesos ocupan 1,59 GB en 4 bits; el repositorio completo pesa 1,6 GB. La memoria unificada necesaria para inferencia será algo superior a esa cifra por el estado de activaciones y caché, pero el dato exacto no está disponible.
-- Hardware objetivo: Apple Silicon (MLX). No está pensado para GPU NVIDIA ni para ejecución CUDA.
-- Cabe en equipos de consumo Apple: con 1,59 GB de pesos, es viable en Macs con memoria unificada modesta (el mínimo concreto no está especificado en la información disponible).
-- Despliegue: MLX-VLM 0.7.11 o superior, mediante `python -m mlx_vlm.generate`. No se documentan opciones para vLLM, llama.cpp, Ollama ni TGI en esta variante.
-- Latencia y throughput: no disponibles.
 
-Parámetros de generación sugeridos en la model card: temperature 0.1, top-p 1.0, top-k 50, min-p 0.0, repetition-penalty 1.1, max-tokens 16384.
+- VRAM/memoria: los pesos ocupan ~1,59 GB; con overhead de runtime MLX se recomienda al menos 4 GB de memoria unificada libre.
+- Hardware objetivo: Apple Silicon (chips M-series). El formato MLX no está pensado para GPU NVIDIA/AMD.
+- Cabe en GPU de consumo: no aplica en el sentido tradicional; está diseñado para Macs con memoria unificada (M1, M2, M3, M4 y variantes Pro/Max/Ultra).
+- Despliegue: MLX-VLM >= 0.7.11 (`python -m mlx_vlm.generate`). No se indica soporte para vLLM, llama.cpp, Ollama o TGI en esta versión MLX.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Parámetros de generación recomendados (según model card): temperature 0.1, top-p 1.0, top-k 50, min-p 0.0, repetition-penalty 1.1, max-tokens 16384.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-MLX-4bit | ~1,92 mil millones | no disponible | MLX 4-bit (safetensors) | lfm1.0 | Hugging Face (2.323 descargas) |
-| LFM3-VL-2B (base) | ~1,92 mil millones | no disponible | safetensors (precisión original) | lfm1.0 | Hugging Face |
-| Otras alternativas de visión-lenguaje de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LFM3-VL-2B-MLX-4bit (este) | ~1,92B | no disponible | MLX safetensors 4-bit | lfm1.0 | Hugging Face |
+| LiquidAI/LFM3-VL-2B (base) | ~1,92B | no disponible | safetensors (precisión completa) | lfm1.0 | Hugging Face |
+| Otros modelos multimodales pequeños (p. ej. Qwen2-VL-2B, SmolVLM) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 
-La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos competidores que permitan una comparación cuantitativa fiable. La comparación directa más relevante es con el propio modelo base LFM3-VL-2B, del que esta variante es una cuantización 4-bit para MLX.
+La comparación con alternativas de la misma categoría no puede completarse con los datos proporcionados; solo se dispone de la relación con el modelo base, del que esta versión es una cuantización MLX 4-bit.
 
 ## Limitaciones y advertencias
-- Restricciones de licencia: la licencia LFM1.0 (license: other) puede imponer condiciones al uso comercial; es necesario revisar el archivo LICENSE antes de desplegar en producción.
-- Exclusividad de plataforma: al estar en formato MLX, solo se ejecuta en Apple Silicon; no es portable a CUDA ni a otros backends sin conversión.
-- Pérdida de precisión por cuantización: aunque QAD recupera buena parte del rendimiento del modelo en 8 bits, persiste una degradación respecto al modelo base en precisión completa.
-- Riesgo de alucinación: inherente a los modelos generativos; en tareas visuales puede describir elementos ausentes o malinterpretar imágenes ambiguas.
-- Sesgos: no se documentan sesgos específicos en la información disponible; cabe esperar los sesgos presentes en los datos de entrenamiento del modelo base.
-- Limitaciones de contexto e idioma: la longitud de contexto no está disponible; aunque se listan 16 idiomas, la calidad relativa por idioma no se especifica.
-- Capacidades no documentadas: no se confirma soporte de tool calling, agentes ni otras modalidades; no asumir estas funciones en producción sin verificación.
-- Requiere MLX-VLM 0.7.11 o superior; versiones anteriores pueden no cargar el modelo correctamente.
+
+- Es una cuantización a 4 bits: aunque QAD recupera parte del rendimiento, puede haber degradación frente al modelo base en tareas exigentes.
+- Formato específico para Apple Silicon (MLX); no es portable directamente a otros runtimes sin conversión.
+- Riesgo de alucinación inherente a modelos generativos de 2B parámetros, especialmente en descripciones detalladas de imágenes o texto pequeño.
+- Sesgos: no se documentan sesgos específicos en la información proporcionada; cabe esperar los sesgos de los datos de entrenamiento del modelo base.
+- Licencia lfm1.0 (license: other): es necesario revisar los términos del archivo LICENSE antes de uso comercial; no se garantiza uso comercial libre.
+- El modo de razonamiento está desactivado por defecto; debe activarse explícitamente con `--enable-thinking`.
+- No se dispone de información sobre tool calling, agentes o límites exactos de contexto; conviene consultar la model card del modelo base.
+- Requiere MLX-VLM >= 0.7.11; versiones anteriores pueden no cargar el modelo correctamente.
 
 ## Enlaces
-- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit
+
+- Hugging Face (este modelo): https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
+- Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm
+- Documentación MLX de Liquid AI: https://docs.liquid.ai/deployment/on-device/mlx
 - Blog de LFM3: https://www.liquid.ai/blog/lfm3
-- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Guía de despliegue en MLX: https://docs.liquid.ai/deployment/on-device/mlx
+- Documentación general: https://docs.liquid.ai/lfm/getting-started/welcome
 - Consola/API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "jun-ai/Rusa-1-Small",
+  "slug": "jun-ai-rusa-1-small",
+  "author": "jun-ai",
+  "url": "https://huggingface.co/jun-ai/Rusa-1-Small",
+  "created_at": "2026-11-18T03:25:04.000Z",
+  "updated_at": "2026-11-18T03:36:19.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "ternary",
+    "quantization-aware-training",
+    "text-generation",
+    "en",
+    "base_model:jun-ai/Rusa-1",
+    "base_model:quantized:jun-ai/Rusa-1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 293128297,
+  "storage_human": "293 MB",
+  "context_length": 128000,
+  "base_model": "jun-ai/Rusa-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

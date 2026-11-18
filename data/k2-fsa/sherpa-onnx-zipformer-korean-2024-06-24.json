@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "k2-fsa/sherpa-onnx-zipformer-korean-2024-06-24",
+  "slug": "k2-fsa-sherpa-onnx-zipformer-korean-2024-06-24",
+  "author": "k2-fsa",
+  "url": "https://huggingface.co/k2-fsa/sherpa-onnx-zipformer-korean-2024-06-24",
+  "created_at": "2024-06-24T06:09:06.000Z",
+  "updated_at": "2026-11-18T03:54:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 359085211,
+  "storage_human": "359 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

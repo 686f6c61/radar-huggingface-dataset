@@ -2,105 +2,97 @@
 
 ## Resumen
 
-Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP-XS es una cuantizacion NVFP4 del modelo AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16, publicada por el usuario AEON-7. Se trata de un derivado "abliterated" (sin censura) de la familia Qwen3.6, con torre de vision eliminada, orientado exclusivamente a generacion de texto. Su rasgo distintivo es una cuantizacion mixta deliberada: las proyecciones matriciales de GatedDeltaNet bajan a NVFP4, mientras que el kernel `linear_attn.conv1d` y los vectores de estado del SSM se preservan en BF16 para no degradar la recurrencia en contextos largos.
+Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP-XS es una cuantización NVFP4 de un modelo de lenguaje de 27.320.697.856 parámetros derivado de la familia Qwen3.6, publicada por el usuario AEON-7 sobre su propio checkpoint BF16 «AEON-Ultimate-Uncensored». El modelo parte de una arquitectura híbrida que combina atención con GatedDeltaNet (SSM tipo Mamba) y ha sido sometida a un proceso de *abliteration* para eliminar los mecanismos de rechazo, además de incorporar una cabeza MTP (*multi-token prediction*) para decodificación especulativa. La variante «Text» elimina la torre de visión del modelo original, por lo que solo procesa texto.
 
-El modelo sigue una arquitectura hibrida de atencion (etiquetas `hybrid-attention`, `mamba`, `gated-deltanet`), en la linea de los disenos que combinan capas de atencion clasica con capas de estado recurrente para reducir el coste de inferencia en secuencias largas. Incorpora una cabeza MTP (multi-token prediction) injertada desde el modelo base y verificada bit a bit, lo que habilita decodificacion especulativa. El objetivo del autor es ofrecer una version de huella reducida que quepa en GPUs consumer Blackwell de 24-32 GB (RTX 5090), con unos 21 GB de VRAM en tiempo de ejecucion frente a los ~27 GB de la variante regular.
+El interés técnico de esta ficha reside en su estrategia de cuantización: las proyecciones matriciales del bloque `linear_attn` se reducen a NVFP4 (aproximadamente 3 GB frente a los 11 GB en BF16), mientras que la convolución 1D `linear_attn.conv1d` y los vectores de estado SSM (`A_log`, `dt_bias`, `norm.weight`) se preservan en BF16 por problemas documentados de estabilidad numérica en la recurrencia de contexto largo. El resultado es un checkpoint de aproximadamente 20 GB en disco y unos 21 GB de VRAM en ejecución, pensado para GPUs Blackwell de 24–32 GB (RTX 5090, RTX PRO 6000) y aceleradores SM_100/SM_120.
 
-La relevancia de esta ficha es doble: por un lado ilustra una practica de cuantizacion selectiva por capas criticas; por otro, el propio autor ha marcado el modelo como obsoleto ("superseded") en favor de Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED, por lo que su interes es principalmente historico y de referencia metodologica. Los pesos ocupan 15.145.419.776 parametros segun safetensors, pese a la nomenclatura comercial "27B".
+La relevancia actual es doble: por un lado, demuestra una receta de cuantización selectiva que evita el colapso de los modelos híbridos SSM al reducir precisión; por otro, la propia model card indica que esta línea ha sido superada por Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED, por lo que se mantiene principalmente por compatibilidad e histórico de descargas (50.511 descargas y 14 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con atencion lineal/SSM: GatedDeltaNet + Mamba (etiquetas `hybrid-attention`, `gated-deltanet`, `mamba`, `qwen3_5`) |
-| Parametros totales | 15.145.419.776 (~15,1 B) segun safetensors; la nomenclatura comercial indica 27B |
-| Parametros activos | no aplica (no se declara que sea MoE) |
+| Arquitectura | Transformer híbrido con atención y GatedDeltaNet (SSM tipo Mamba), cabeza MTP para decodificación especulativa |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (proyecciones GDN) + BF16 preservado (`linear_attn.conv1d`, vectores de estado SSM `A_log`, `dt_bias`, `norm.weight`, cabeza MTP) |
-| Idiomas soportados | en, zh, multilingue |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (compatible con transformers) |
+| Tipos de cuantizacion | NVFP4 (proyecciones `linear_attn`) + BF16 (conv1d, vectores de estado SSM, cabeza MTP); formato ModelOpt |
+| Idiomas soportados | en, zh, multilingual |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 19,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla el proceso de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO), ya que se trata de un derivado cuantizado de un modelo base publicado por separado. Lo que si se especifica es la arquitectura: un diseno hibrido con mecanismos de atencion lineal basados en GatedDeltaNet y componentes tipo Mamba, junto con atencion clasica. La parte GatedDeltaNet incluye `linear_attn.conv1d`, una convolucion 1D critica para la recurrencia del SSM, y vectores de estado (`A_log`, `dt_bias`) que el autor preserva en BF16 por motivos de estabilidad numerica.
+El modelo es un transformer híbrido que intercala capas de atención con capas GatedDeltaNet, un mecanismo de espacio de estados con recurrencia lineal y convolución 1D, en la línea de las arquitecturas Mamba. La variante XS aplica una cuantización NVFP4 selectiva mediante ModelOpt: las proyecciones `in_proj_qkv`, `in_proj_z`, `in_proj_a/b` y `out_proj` del bloque `linear_attn` pasan a FP4, mientras que `linear_attn.conv1d`, los vectores de estado (`A_log`, `dt_bias`, `norm.weight`) y la cabeza `mtp.*` se conservan en BF16. La cabeza MTP se injerta desde el modelo base con verificación de coincidencia bit a bit, según la model card.
 
-La innovacion tecnica principal de esta publicacion es la receta de cuantizacion, adaptada de la serie Qwen3.6-27B-NVFP4-MTP de sakamakismile. Se cuantizan a NVFP4 las proyecciones `in_proj_qkv`, `in_proj_z`, `in_proj_a/b` y `out_proj` (que pasan de ~11 GB a ~3 GB), mientras que `linear_attn.conv1d` y el estado del SSM permanecen en BF16. El autor justifica la decision indicando que FP4 sobre `conv1d` provoca deriva observable en inferencia de contexto largo, mientras que las proyecciones son matmuls limitadas por ancho de banda donde FP4 rinde bien. Adicionalmente se injerta una cabeza MTP en bf16 desde el modelo base, verificada bit a bit, que permite decodificacion especulativa. La torre de vision del modelo base se elimina por completo.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni la existencia de fases de RLHF o DPO. El proceso de *abliteration* aplicado al checkpoint base BF16 elimina las capas de rechazo, pero la model card no detalla la metodología concreta ni los datos utilizados para ello. La receta de cuantización y el injerto de la cabeza MTP se atribuyen en la propia card al trabajo previo de sakamakismile en su serie Qwen3.6-27B-NVFP4-MTP.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en ingles, chino y otros idiomas (etiqueta `multilingual`).
-- Razonamiento con modos diferenciados: el material proporcionado menciona explicitamente configuraciones con "thinking on" y "thinking off".
-- Decodificacion especulativa mediante cabeza MTP injertada, y soporte de decodificacion especulativa DFlash como alternativa.
-- Modelo "abliterated"/"uncensored": se ha eliminado el comportamiento de rechazo del modelo base, orientado a uso sin filtros.
-- Capacidad de tool calling / function calling: no confirmada explicitamente en la informacion disponible.
-- Capacidades de agente y razonamiento multi-paso: no confirmadas explicitamente, aunque existen referencias a un fichero `AGENTS.md` en el repositorio de despliegue.
-- Vision: no soportada. La torre de vision fue eliminada del modelo base (etiqueta `text-only`).
-- Audio: no soportado segun la informacion disponible.
+- Generación de texto conversacional multi-turno en inglés, chino y otros idiomas.
+- Razonamiento de varios pasos con modo *thinking* activable y desactivable (la card reporta métricas separadas para ambos modos).
+- Decodificación especulativa mediante cabeza MTP injertada, que acelera la generación en despliegues compatibles.
+- Procesamiento exclusivamente de texto: la torre de visión ha sido eliminada del checkpoint.
+- Comportamiento sin rechazos (*uncensored*), orientado a escenarios donde el modelo base aplicaría negativas.
+- Compatibilidad declarada con *endpoints* y con el stack de transformers.
 
 ## Casos de uso
 
-- Inferencia local en GPU consumer: con ~21 GB de VRAM en tiempo de ejecucion, esta variante esta pensada para RTX 5090 y tarjetas de 24-32 GB donde la version regular de ~27 GB no deja margen para cache KV. Se usaria como asistente local sin conexion a APIs externas.
-- Despliegue en estaciones de trabajo con Blackwell: el autor cita RTX PRO 6000, B100 y B200 (sm_100/sm_120) como plataformas objetivo, aprovechando el soporte nativo de NVFP4 en hardware Blackwell.
-- Generacion de texto de alto rendimiento en DGX Spark / GB10: con la imagen v3 y decodificacion DFlash se miden 38,5 tok/s de mediana y 71,3 tok/s de pico, lo que lo hace adecuado para servir cargas interactivas en un unico nodo compacto.
-- Investigacion sobre cuantizacion selectiva: sirve como caso de estudio reproducible de que capas toleran FP4 y cuales conviene preservar en BF16 en arquitecturas hibridas SSM/atencion.
-- Experimentacion con decodificacion especulativa: el injerto de la cabeza MTP permite comparar el rendimiento de estrategias MTP frente a DFlash en la misma familia de pesos.
-- Aplicaciones de texto sin requisitos de moderacion: dado su caracter uncensored y abliterated, encaja en entornos de investigacion y generacion creativa donde los filtros estandar son un obstaculo.
-- Sustituir la variante regular en GPUs de 24 GB: cualquier pipeline ya escrito para Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP puede migrarse a este XS para liberar unos 6 GB de VRAM.
+- Despliegue en GPU de consumo de gama alta: con ~21 GB de VRAM en ejecución, cabe en una RTX 5090 de 24 GB o en una RTX PRO 6000 de 32 GB, lo que permite servir un modelo de 27B en una sola tarjeta sin *offloading* a CPU.
+- Generación de texto creativo sin filtros editoriales: el proceso de *abliteration* permite producir narrativa, guiones o diálogo sin las negativas del modelo base, útil en entornos de escritura profesional controlados.
+- Investigación sobre cuantización de arquitecturas híbridas: el checkpoint sirve como referencia reproducible de la receta «proyecciones a NVFP4, conv1d en BF16» para estudiar la degradación de modelos SSM bajo cuantización agresiva.
+- Evaluación de decodificación especulativa: la cabeza MTP injertada permite medir el *speedup* frente a decodificación autoregresiva estándar en vLLM con el contenedor `ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest`.
+- Asistentes conversacionales en chino e inglés: el soporte declarado de ambos idiomas y el modo multilingüe lo hacen apto para prototipos de atención al cliente en esos mercados, siempre con revisión humana por el riesgo de alucinación.
+- *Benchmarking* de hardware Blackwell: la card reporta 38,5 tok/s de mediana y 71,3 tok/s de pico en DGX Spark con DFlash y modo *thinking* activo, lo que lo convierte en una carga de referencia para comparar SM_100 y SM_120.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor solo reporta mediciones de throughput en DGX Spark con la imagen v3 y decodificacion especulativa DFlash:
+La model card no publica resultados de MMLU, HumanEval, GSM8K ni métricas de calidad equivalentes. Solo se reportan cifras de rendimiento de inferencia en DGX Spark con la imagen v3 y DFlash:
 
-| Configuracion | tok/s mediana | tok/s pico | Modo |
-|---|---|---|---|
-| XS + DFlash spec decode, imagen v3 | 38,5 | 71,3 | thinking on |
-| XS + DFlash spec decode, imagen v3 | 38,1 | 68,4 | thinking off |
+| Configuracion | Tokens/s mediana | Tokens/s pico |
+|---|---|---|
+| Thinking on | 38,5 | 71,3 |
+| Thinking off | 38,1 | 68,4 |
 
-Segun la model card, esta configuracion supone una mejora del +17 % al +26 % frente a la produccion anterior (`-NVFP4` con DFlash antiguo e imagen v2.1). El autor indica que se trata de la configuracion de mayor throughput medida en Spark hasta la fecha.
+La card indica una mejora del +17–26 % frente a la configuración `-NVFP4` original con DFlash antiguo y la imagen v2.1. No se han publicado resultados de benchmarks de calidad en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM en tiempo de ejecucion: ~21 GB para la variante XS (frente a ~27 GB de la variante regular).
-- Espacio en disco: ~20 GB para XS (frente a ~26 GB de la variante regular).
-- GPUs objetivo declaradas: RTX 5090 (etiquetas `rtx-5090`, `24gb`), RTX PRO 6000 (`32gb`), B100 y B200 (`sm_100`), DGX Spark / GB10. Se requiere hardware Blackwell con soporte NVFP4 (`sm_120` para consumer, `sm_100` para datacenter).
-- GPU consumer: si, cabe en RTX 5090 (24 GB) y en tarjetas de 32 GB. El autor recomienda explicitamente esta variante para el rango de 24-32 GB.
-- Opciones de despliegue: vLLM mediante los contenedores oficiales `ghcr.io/aeon-7/aeon-vllm-ultimate:latest` (Spark / GB10) y `ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest` (RTX discreta), o `ghcr.io/aeon-7/vllm-aeon-ultimate-dflash:qwen36-v3` para la configuracion con decodificacion DFlash. No se menciona soporte de llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 38,5 tok/s de mediana y 71,3 tok/s de pico en DGX Spark con thinking activado; 38,1 / 68,4 con thinking desactivado.
+- VRAM estimada en ejecución: ~21 GB con la cuantización NVFP4 + BF16 selectiva (frente a ~27 GB de la variante regular y ~26 GB en disco de esta).
+- GPU recomendadas: RTX 5090 (24 GB), RTX PRO 6000 (32 GB), B100 y B200 (SM_100), y DGX Spark / GB10 para el contenedor unificado.
+- Cabe en GPU de consumo: sí, en RTX 5090 de 24 GB; no se garantiza en tarjetas de 16 GB.
+- Opciones de despliegue: vLLM con las imágenes `ghcr.io/aeon-7/aeon-vllm-ultimate:latest` (Spark/GB10) y `ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest` (RTX discreta); también es compatible con transformers. No se menciona soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 38,5 tok/s de mediana y 71,3 tok/s de pico en DGX Spark con DFlash y modo *thinking* activo, según la card.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Disco | VRAM runtime | `conv1d` | Vision | Licencia |
-|---|---|---|---|---|---|---|
-| Este modelo (XS) | 15,1 B (base) | ~20 GB | ~21 GB | BF16 preservado | eliminada | apache-2.0 |
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP (regular) | 15,1 B (base) | ~26 GB | ~27 GB | BF16 preservado | eliminada | apache-2.0 |
-| sakamakismile/Qwen3.6-27B-Text-NVFP4-MTP | no disponible | no disponible | no disponible | BF16 preservado (receta original) | no disponible | no disponible |
-| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED (sucesor) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Cuantizacion | VRAM | Licencia |
+|---|---|---|---|---|---|
+| Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP-XS | 27,3B | no disponible | NVFP4 + BF16 selectiva | ~21 GB | Apache 2.0 |
+| Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP (regular) | 27,3B | no disponible | NVFP4 + BF16 en proyecciones | ~27 GB | Apache 2.0 |
+| Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED | no disponible | no disponible | NVFP4 + FP8 mixta | no disponible | no disponible |
+| Qwen3.6-27B-NVFP4-MTP (sakamakismile) | 27B | no disponible | NVFP4 + BF16 en conv1d | no disponible | no disponible |
 
-Diferencias clave: el XS se distingue de la variante regular unicamente por cuantizar a NVFP4 las proyecciones de `linear_attn` (unos 8 GB menos de pesos), manteniendo en ambos casos `conv1d` y el estado del SSM en BF16. El autor posiciona el sucesor Qwen3.8 como "muy superior en capacidad", con una metodologia de cuantizacion mixta NVFP4 + FP8 mas refinada.
+La comparativa se limita a variantes de la misma familia porque la información disponible no incluye modelos de otros desarrolladores con los que confrontar parámetros y rendimiento de forma rigurosa.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como obsoleto por su propio autor: la model card recomienda usar Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED para trabajo nuevo. Esta ficha se mantiene por razones historicas y de compatibilidad con despliegues existentes.
-- Modelo abliterated/uncensored: no aplica filtros de rechazo, por lo que puede generar contenido inapropiado, ofensivo o peligroso sin salvaguardas. Requiere evaluacion y contencion externa en produccion.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual ni de calibracion para esta cuantizacion.
-- Deriva en contexto largo: el autor documenta que cuantizar `conv1d` a FP4 provoca inestabilidad en la recurrencia con contextos largos; la solucion adoptada preserva esa capa en BF16, pero no se cuantifica el impacto residual de cuantizar el resto de proyecciones del SSM.
-- Discrepancia de nomenclatura: el nombre comercial indica 27B, mientras que el recuento real de parametros safetensors es de 15,14 B. Conviene verificar antes de dimensionar recursos.
-- Longitud de contexto no documentada en la informacion disponible, lo que impide garantizar el comportamiento en ventanas extensas.
-- Requiere hardware Blackwell con soporte NVFP4; no es desplegable en GPUs Ampere o Ada sin conversion previa de pesos.
-- Idiomas: aunque la etiqueta es multilingue, solo se declaran explicitamente ingles y chino.
-- Licencia apache-2.0: permite uso comercial, pero al ser un derivado de Qwen conviene revisar las condiciones de la licencia del modelo base original.
-- Dependencia de infraestructura propietaria: las recetas de despliegue y los benchmarks remiten a repositorios e imagenes de contenedor del propio autor.
+- Modelo *uncensored* y *abliterated*: no aplica negativas de seguridad, por lo que puede generar contenido dañino, ilegal o explícitamente sesgado. No es apto para exposición directa al público sin filtros externos.
+- Riesgo de alucinación inherente a un modelo de 27B sin datos de benchmarks de calidad publicados; no hay evidencia en la información disponible sobre su fiabilidad factual.
+- La model card indica que esta línea ha sido superada por Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED, con mejor capacidad y una metodología de cuantización mixta NVFP4 + FP8 más refinada. Para nuevos desarrollos se recomienda migrar.
+- Sin torre de visión: no procesa imágenes pese a que los tags originales incluyan `image-text-to-text`.
+- Longitud de contexto no documentada en la información disponible; la preservación de `conv1d` en BF16 sugiere que la estabilidad en contexto largo es un punto sensible.
+- Compatibilidad limitada a hardware Blackwell (SM_100/SM_120) para el formato NVFP4; no se mencionan rutas de despliegue en GPUs Ampere o Ada.
+- Licencia Apache 2.0 permite uso comercial, pero la ausencia de filtros de seguridad traslada al operador toda la responsabilidad legal y ética sobre las salidas.
+- El repositorio depende de imágenes Docker propias del autor; no se documenta soporte en el ecosistema estándar (llama.cpp, Ollama, TGI).
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP-XS
+- Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP-XS
 - Modelo base BF16: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
-- Variante regular (no XS): https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP
+- Variante regular NVFP4-MTP: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP
 - Sucesor recomendado: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
-- Receta de referencia de sakamakismile: https://huggingface.co/sakamakismile/Qwen3.6-27B-Text-NVFP4-MTP
-- Repositorio de despliegue, configuracion y benchmarks: https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash
-- Contenedor Spark / GB10: ghcr.io/aeon-7/aeon-vllm-ultimate:latest
-- Contenedor RTX discreta: ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest
-- Contenedor con decodificacion DFlash: ghcr.io/aeon-7/vllm-aeon-ultimate-dflash:qwen36-v3
-- No se han encontrado otros enlaces relevantes en la busqueda web realizada.
+- Repositorio de despliegue y benchmarks: https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash
+- Receta original de cuantización (sakamakismile): https://huggingface.co/sakamakismile/Qwen3.6-27B-Text-NVFP4-MTP
+- Contenedor vLLM para Spark/GB10: ghcr.io/aeon-7/aeon-vllm-ultimate:latest
+- Contenedor vLLM para RTX: ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest

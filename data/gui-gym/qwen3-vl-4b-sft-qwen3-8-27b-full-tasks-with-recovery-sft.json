@@ -5,24 +5,15 @@
   "author": "GUI-Gym",
   "url": "https://huggingface.co/GUI-Gym/Qwen3-VL-4B-sft-qwen3.8-27b-full-tasks-with-recovery-sft",
   "created_at": "2026-10-27T08:36:53.000Z",
-  "updated_at": "2026-10-27T08:38:00.000Z",
+  "updated_at": "2026-11-18T02:10:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "safetensors",
     "qwen3_vl",
-    "image-text-to-text",
-    "gui-agent",
-    "mobileweave",
-    "recovery-sft",
-    "conversational",
-    "base_model:Qwen/Qwen3-VL-4B-Instruct",
-    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -37,14 +28,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "GUI-Gym/MobileWeave-4B",
+  "renamed_at": "2026-11-18T03:04:32.380Z",
   "benchmarks": [],
   "sources": [
     {

@@ -5,7 +5,7 @@
   "author": "OPTML-Group",
   "url": "https://huggingface.co/OPTML-Group/ResWAM-RoboDojo",
   "created_at": "2026-11-03T16:08:36.000Z",
-  "updated_at": "2026-11-14T18:42:13.000Z",
+  "updated_at": "2026-11-17T12:51:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -19,6 +19,7 @@
     "flow-matching",
     "robodojo",
     "bimanual-manipulation",
+    "arxiv:2611.19559",
     "license:mit",
     "region:us"
   ],

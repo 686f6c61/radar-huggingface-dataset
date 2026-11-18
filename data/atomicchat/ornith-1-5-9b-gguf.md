@@ -2,92 +2,112 @@
 
 ## Resumen
 
-Ornith-1.5-9B-GGUF es la conversión a formato GGUF del modelo Ornith-1.5-9B, realizada por AtomicChat (el equipo detrás de la aplicación Atomic Chat). El modelo base, desarrollado por Ornith AI, es un transformer denso de 8.950 millones de parámetros de lenguaje más 460 millones de parámetros de visión, diseñado específicamente para tareas de razonamiento, agente y codificación. Esta versión cuantizada permite ejecutar el modelo localmente con llama.cpp y otras herramientas compatibles con GGUF, manteniendo capacidades multimodales gracias a un proyector de visión independiente.
+Ornith-1.5-9B-GGUF es la distribución en formato GGUF del modelo multimodal Ornith-1.5-9B, desarrollado originalmente por ornith-ai y cuantizado por AtomicChat con una matriz de importancia propia (imatrix) calibrada específicamente para este modelo. El modelo base es un transformer denso de 8.953.803.264 parámetros (aproximadamente 9B) con capacidad de procesamiento de imagen y texto, orientado a tareas conversacionales y de codificación agéntica. La relevancia de esta ficha radica en que AtomicChat no se limita a publicar los presets estándar de llama.cpp, sino que mide la divergencia KL frente a la referencia BF16 y publica los registros de evaluación, lo que permite elegir el archivo con criterio cuantitativo y no por intuición.
 
-La relevancia actual de este lanzamiento radica en que Ornith-1.5-9B se posiciona como un modelo competitivo frente a alternativas mucho más grandes (como Gemma 4-31B o Qwen 3.6-35B, según afirmaciones del propio equipo), y su disponibilidad en GGUF facilita su despliegue en hardware de consumo, incluso en dispositivos móviles mediante la versión Mobile mencionada por el desarrollador. El repositorio incluye por ahora el archivo BF16 de referencia y el proyector de visión, mientras que la escalera de cuantización se publica progresivamente con métricas de divergencia KL.
+El repositorio incluye 14 archivos de pesos más un proyector de visión independiente (mmproj) de 0,92 GB. La licencia es MIT, lo que facilita el uso comercial sin restricciones adicionales, y el pipeline declarado es image-text-to-text. El tamaño total del repositorio es de 92,7 GB, aunque cada archivo individual ocupa entre 2,81 GB y 17,9 GB según el nivel de cuantización.
+
+El punto diferencial del trabajo de AtomicChat es la publicación de métricas de fidelidad por archivo: divergencia KL media y acuerdo top-1 frente a la referencia BF16 sobre el corpus held-out `eval_neutral` con contexto de 4096 tokens. Esto convierte al repositorio en una referencia útil para decidir qué cuantización desplegar en función de la VRAM disponible, con datos medidos en lugar de estimaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con proyector de vision |
-| Parametros totales | 9.410.000.000 (8.950 M lenguaje + 460 M vision) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 8192 tokens (valor usado en el quick start; maximo no confirmado) |
-| Tipos de cuantizacion | BF16 (disponible); quants adicionales en proceso de publicacion |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer denso multimodal (texto + visión), no disponible el detalle exacto de capas y atención |
+| Parametros totales | 8.953.803.264 (aproximadamente 9B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la información proporcionada; las mediciones de cuantización se realizaron a 4096 tokens |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ3_M, IQ3_S, IQ3_XXS, IQ2_S, IQ2_XS, IQ2_XXS, IQ1_M, además de layouts propios AD (per-tensor) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (safetensors disponible en el repo base) |
+| Formato de pesos | GGUF (llama.cpp), más proyector de visión mmproj en F16 |
 
 ## Arquitectura y entrenamiento
 
-Ornith-1.5-9B es un transformer denso con un proyector de visión multimodal (mmproj) que permite procesar imágenes, gráficos, capturas de pantalla y escritura manual. El modelo base fue entrenado por Ornith AI, que describe su enfoque como "self-scaffolding" y "self-improvement", una metodología que combina generación de datos sintéticos con refinamiento iterativo para mejorar el razonamiento y las capacidades de agente. Aunque no se han publicado detalles completos sobre el dataset de entrenamiento (número de tokens, composición, uso de RLHF/DPO), el modelo está optimizado para tareas de codificación agéntica, razonamiento multi-paso y seguimiento de instrucciones.
+El modelo base es un transformer denso de aproximadamente 9B parámetros con capacidad multimodal de entrada imagen-texto, según declara el pipeline `image-text-to-text` y la presencia del proyector `mmproj-Ornith-1.5-9B-F16.gguf` de 0,92 GB. No se dispone en la información proporcionada de detalles sobre el número de capas, dimensión oculta, mecanismo de atención, composición del dataset de entrenamiento, número de tokens vistos ni si se aplicaron fases de RLHF, DPO o ajuste por preferencias. Tampoco se documentan innovaciones arquitectónicas específicas como decodificación especulativa o atención lineal.
 
-La conversión a GGUF realizada por AtomicChat incluye una matriz de importancia propia (imatrix) basada en un corpus de calibración público. El archivo BF16 sirve como referencia de precisión completa contra la cual se medirán todas las cuantizaciones futuras mediante divergencia KL sobre el mismo corpus y en el mismo hardware.
+La contribución técnica documentada en esta ficha es el proceso de cuantización de AtomicChat. Se construyó una matriz de importancia propia a partir de un corpus de calibración público (`AtomicChat/calib-corpora`) y se generaron dos familias de archivos: los presets estándar de llama.cpp y los layouts `AD` con asignación de bits por tensor ajustada a este modelo concreto. La comparación entre ambas familias aísla el efecto del layout, ya que ambos se construyen con la misma imatrix. Las mediciones se realizaron con llama.cpp `b10505` sobre una única RTX 5090, con contexto de 4096 tokens y el corpus held-out `eval_neutral`.
+
+El hallazgo principal del análisis es que el ajuste por tensor solo aporta ventajas en tipos base gruesos: por encima de seis bits los presets estándar ya son prácticamente sin pérdida y el layout ajustado no compensa. Por debajo de ese umbral, la mejora es sustancial: `AD-Q5_K-Q4_K` ocupa 5,93 GB con KLD 0,0255 frente a los 6,47 GB y KLD 0,0299 de `Q5_K_M` estándar, y `AD-Q4_K-IQ4_XS` logra 0,0344 frente a 0,0500 de `Q4_K_M` estándar a tamaño equivalente, una reducción de divergencia de aproximadamente un tercio.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso con "thinking mode" visible (el modelo puede mostrar su razonamiento intermedio).
-- Comprensión de imágenes: gráficos, capturas de pantalla, diagramas y escritura manual (demostrado con transcripción de caligrafía).
-- Codificación agéntica: soporte para flujos de trabajo de agente que requieren planificación y ejecución de múltiples pasos.
-- Tool calling: no confirmado explícitamente en la documentación, pero la orientación a "agentic coding" sugiere compatibilidad con llamadas a herramientas.
-- Multilingüismo: no especificado en la información disponible.
-- Integración con llama.cpp: funciona con llama-server, llama-mtmd-cli y otras herramientas del ecosistema GGUF.
+- Generación de texto conversacional multi-turno, con soporte declarado para el formato de chat de llama.cpp.
+- Procesamiento de imágenes junto con texto (image-text-to-text) mediante el proyector mmproj en F16, que puede omitirse si solo se necesita texto.
+- Codificación agéntica: la etiqueta `agentic-coding` del repositorio indica orientación a tareas de código con uso de herramientas, aunque no se detallan los formatos de tool calling soportados.
+- Modo de razonamiento conmutable (thinking): la aplicación Atomic Chat ofrece toggles para activar o desactivar el modo thinking, lo que sugiere que el modelo base expone un modo de razonamiento extendido.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de endpoints de Hugging Face.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documentan capacidades de audio, vídeo ni otras modalidades adicionales.
 
 ## Casos de uso
 
-- Asistente de programación con visión: el modelo puede analizar capturas de pantalla de código, diagramas de arquitectura o errores de compilación, y generar soluciones o explicaciones. Su capacidad de razonamiento multi-paso lo hace adecuado para depuración compleja.
-- Transcripción de escritura manual: gracias al proyector de visión, puede leer notas manuscritas, cartas o documentos escaneados y convertirlos en texto digital estructurado, como se demostró con la transcripción de una pieza de caligrafía.
-- Análisis de gráficos y tablas: puede interpretar visualizaciones de datos (gráficos de barras, líneas, dispersión) y extraer conclusiones o responder preguntas sobre ellos, útil en entornos de análisis de negocio o investigación.
-- Chat local con razonamiento visible: al ejecutarse en local con llama.cpp, permite conversaciones con un asistente que muestra su proceso de pensamiento, útil para educación, depuración de lógica o transparencia en decisiones automatizadas.
-- Despliegue en dispositivos móviles: la versión Mobile del modelo base (mencionada por Ornith AI) permite ejecutar el modelo en iPhone y Android, habilitando asistentes personales offline con capacidades de razonamiento.
-- Automatización de documentación técnica: puede generar documentación a partir de capturas de pantalla de interfaces, diagramas de flujo o especificaciones visuales, reduciendo el trabajo manual en equipos de desarrollo.
+- Asistente de código en local sobre GPU de consumo: con el archivo `AD-Q5_K-Q4_K` (5,93 GB) el modelo cabe en una GPU de 8 GB junto con el proyector de visión y overhead de runtime, permitiendo autocompletado, explicación y refactorización de código sin enviar el código a un servicio externo. La licencia MIT elimina fricción para integrarlo en herramientas internas de desarrollo.
+- Atención al cliente con contexto visual: gracias al pipeline image-text-to-text, el modelo puede recibir capturas de pantalla o fotos de producto junto con la consulta del usuario, lo que resulta útil en soporte técnico de software o en asistencia postventa donde el cliente adjunta una imagen del problema.
+- Agente de automatización de tareas de desarrollo: la etiqueta `agentic-coding` y el modo thinking conmutable permiten usarlo en bucles de razonamiento multi-paso para resolver issues, generar parches o navegar repositorios, activando el modo thinking en tareas complejas y desactivándolo en respuestas rápidas para reducir latencia.
+- Despliegue en estaciones de trabajo sin GPU dedicada de gama alta: los archivos de 3,38 GB y 2,81 GB permiten ejecución en CPU o en GPU integrada, aunque con la advertencia de que el acuerdo top-1 cae al 71,17 % y 53,74 % respectivamente, por lo que solo son adecuados para tareas tolerantes a error como borradores o clasificación aproximada.
+- Procesamiento por lotes en servidor con vLLM o llama.cpp server: el archivo BF16 o Q8_0 en una GPU de 24 GB o más permite servir peticiones concurrentes con fidelidad prácticamente de referencia (97,94 % de acuerdo top-1 en Q8_0), adecuado para pipelines de generación de documentación técnica o resumen de informes.
+- Evaluación comparativa de cuantizaciones en investigación: el repositorio publica los registros de evaluación y el corpus de calibración, lo que permite reproducir el análisis de divergencia KL y estudiar el impacto de layouts por tensor en modelos multimodales de 9B, un caso de estudio útil para quienes investigan compresión de modelos.
+- Herramienta de accesibilidad o asistencia visual en local: el modelo puede describir imágenes y responder preguntas sobre ellas sin conexión a internet, lo que encaja en entornos con requisitos de privacidad estrictos como sanidad o administración pública, donde enviar imágenes a la nube no es viable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El tweet del equipo de Ornith afirma que Ornith-1.5-9B supera a Gemma 4-31B y Qwen 3.6-35B, pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros tests estandarizados. Las métricas de rendimiento medidas por AtomicChat en el build GGUF son:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. Lo que sí se publica son métricas de fidelidad de cuantización frente a la referencia BF16, medidas sobre el corpus held-out `eval_neutral` con contexto de 4096, una RTX 5090 y llama.cpp `b10505`:
 
-| Test | Resultado |
-|---|---|
-| Prompt processing (512 tokens) | 9047 t/s |
-| Generacion (128 tokens) | 94.3 t/s |
-
-Estas mediciones se realizaron en una RTX 5090 con llama.cpp, flash attention activada y CUDA 13.0.
+| Archivo | Tamano | KLD media | Top-1 |
+|---|---|---|---|
+| BF16 | 17,9 GB | referencia | 100 % |
+| Q8_0 | 9,53 GB | 0,002249 | 97,94 % |
+| AD-Q8_0-Q6_K | 8,55 GB | 0,003473 | 97,46 % |
+| Q6_K | 7,36 GB | 0,006045 | 96,54 % |
+| Q5_K_M | 6,47 GB | 0,029883 | 92,80 % |
+| AD-Q5_K-Q4_K | 5,93 GB | 0,025493 | 93,10 % |
+| AD-Q4_K-IQ4_XS | 5,61 GB | 0,034426 | 91,93 % |
+| AD-IQ4_XS | 5,52 GB | 0,037752 | 91,54 % |
+| IQ4_XS | 5,20 GB | 0,044856 | 90,76 % |
+| IQ3_M | 4,42 GB | 0,131672 | 84,18 % |
+| AD-IQ3_S-IQ3_XXS | 4,29 GB | 0,144132 | 83,44 % |
+| AD-IQ3_XXS-IQ2_S | 3,84 GB | 0,258554 | 77,98 % |
+| AD-IQ2_S-IQ2_XS | 3,38 GB | 0,441580 | 71,17 % |
+| AD-IQ2_XXS-IQ1_M | 2,81 GB | 1,122010 | 53,74 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo BF16 ocupa 17.9 GB, por lo que se necesita al menos una GPU con 24 GB de VRAM (RTX 4090, RTX 5090, A5000) para ejecutarlo sin offloading. Los quants futuros (Q8, Q6, Q4) reducirán este requisito de forma aproximadamente lineal con el tamaño del archivo.
-- GPU recomendadas: RTX 5090 (probada), RTX 4090, A100, H100. En GPUs con menos VRAM se puede usar offloading parcial a CPU, aunque con penalización de rendimiento.
-- Compatibilidad con consumer GPU: sí, en GPUs de 24 GB o más. Para GPUs de 12-16 GB se necesitarán los quants de menor precisión cuando estén disponibles.
-- Opciones de despliegue: llama.cpp (llama-server, llama-mtmd-cli), Ollama, LM Studio, y cualquier runtime compatible con GGUF.
-- Latencia y throughput: 94.3 t/s de generación en BF16 sobre RTX 5090, limitado por ancho de banda de memoria (1792 GB/s). Los quants más pequeños escalarán casi linealmente con el tamaño del archivo.
+- VRAM estimada según el archivo elegido, incluyendo el proyector de visión de 0,9 GB y aproximadamente 1 GB de overhead de runtime a contexto de 8k: 24 GB o más para BF16, 16 GB para Q8_0, 12 GB para AD-Q8_0-Q6_K, 8 GB para AD-Q5_K-Q4_K o AD-Q4_K-IQ4_XS, 6 GB para AD-IQ3_S-IQ3_XXS y 4 GB para AD-IQ2_S-IQ2_XS en modo solo texto.
+- GPU recomendadas: RTX 5090 (utilizada por el autor para las mediciones), A100 o H100 para BF16 y despliegue concurrente, RTX 4090 para Q8_0 y Q6_K, RTX 4080 o 4070 Ti para los archivos de 8 GB, y GPUs de 6-8 GB para las cuantizaciones intermedias.
+- Cabe en GPU de consumo: sí, desde una RTX 3060 de 12 GB con AD-Q8_0-Q6_K hasta una RTX 4060 Ti de 8 GB con AD-Q5_K-Q4_K. Los archivos de 4 GB o menos permiten ejecución en CPU o GPU integrada, con la pérdida de calidad indicada en la tabla.
+- Opciones de despliegue: llama.cpp (llama-server, llama-cli) es el runtime de referencia y el usado en las mediciones; también es compatible con Ollama y con cualquier frontend que consuma GGUF. Para el modo multimodal hay que cargar el mmproj junto con el archivo de pesos. El formato GGUF no es compatible con vLLM ni TGI, que requieren safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada. Las mediciones publicadas son de divergencia KL, no de velocidad de generación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Licencia | Formato |
-|---|---|---|---|---|---|
-| Ornith-1.5-9B (este) | 9.4B (con vision) | 8192+ | Si | MIT | GGUF |
-| Gemma 4-31B | ~31B | No disponible | No disponible | Gemma license | Safetensors |
-| Qwen 3.6-35B | ~35B | No disponible | No disponible | Apache 2.0 | Safetensors |
+No se dispone en la información proporcionada de datos de rendimiento en tareas del modelo base ni de modelos comparables de la misma categoría, por lo que la comparación se limita a los parámetros estructurales conocidos:
 
-Según el tweet de Ornith AI, Ornith-1.5-9B supera a Gemma 4-31B y Qwen 3.6-35B en rendimiento, pero no se aportan datos de benchmarks comparativos en la información disponible. No se dispone de más detalles sobre estos modelos para una comparación técnica exhaustiva.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Ornith-1.5-9B (este) | 8,95B | no disponible | MIT | GGUF + safetensors (base) | Multimodal imagen-texto, etiqueta agentic-coding, imatrix propia |
+| Modelos densos de 8-9B de la competencia | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
+
+No se han identificado en la información disponible alternativas concretas con las que comparar parámetros, contexto, rendimiento y licencia de forma rigurosa, por lo que no se presentan cifras que no puedan contrastarse.
 
 ## Limitaciones y advertencias
 
-- El repositorio GGUF contiene solo el archivo BF16 y el proyector de visión en el momento de la publicación. La escalera de cuantización está en proceso y los usuarios que necesiten quants de menor tamaño deben esperar a su publicación o convertirlos manualmente.
-- No se ha confirmado la longitud máxima de contexto. El quick start usa 8192 tokens, pero no se indica si el modelo soporta más mediante interpolación de posición o ventanas extendidas.
-- El modelo no incluye un archivo `generation_config.json`, por lo que llama.cpp usa sus valores de muestreo por defecto, que no son los óptimos para este modelo. Es necesario configurar manualmente `--temp 0.6 --top-p 0.95 --top-k 20` para obtener resultados acordes al ajuste del modelo.
-- No se han publicado evaluaciones de sesgos, riesgos de alucinación o limitaciones idiomáticas. La información disponible no permite evaluar estos aspectos.
-- La licencia MIT permite uso comercial sin restricciones, pero el modelo base puede tener dependencias o componentes con licencias diferentes (no especificadas).
-- El rendimiento de visión depende del parámetro `--image-min-tokens 1024`; sin él, el modelo puede ignorar detalles visuales densos y responder basándose en conocimiento previo en lugar de la imagen mostrada.
+- Las cuantizaciones por debajo de 4 GB no son recomendables: AD-IQ2_S-IQ2_XS alcanza solo un 71,17 % de acuerdo top-1 y AD-IQ2_XXS-IQ1_M un 53,74 %, lo que según el propio autor equivale a «un modelo distinto» y no a una pérdida de calidad menor. Si un modelo de 9B no cabe en la VRAM disponible, es preferible usar un modelo más pequeño en mayor precisión.
+- El ajuste de layout por tensor solo mejora los presets estándar en tipos base gruesos; por encima de seis bits no aporta y el repositorio distribuye presets estándar en esa franja.
+- No se documentan sesgos conocidos, comportamiento multilingüe ni tasas de alucinación en la información proporcionada; deben evaluarse empíricamente antes de un despliegue en producción.
+- La longitud máxima de contexto del modelo base no se especifica; las mediciones se hicieron a 4096 tokens y no hay garantía documentada de comportamiento más allá de esa ventana.
+- El proyector de visión debe cargarse por separado (mmproj) y añade 0,92 GB al presupuesto de VRAM; si se omite, se pierde la capacidad multimodal.
+- El formato GGUF limita el despliegue a llama.cpp y derivados; no es compatible con vLLM, TGI ni TensorRT-LLM, lo que puede ser un obstáculo en infraestructuras de servido de alto throughput.
+- La licencia MIT permite uso comercial sin restricciones adicionales, pero conviene verificar la licencia del modelo base original enlazada en la model card por si hubiera condiciones adicionales no reflejadas en las etiquetas.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/AtomicChat/Ornith-1.5-9B-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Blog de Ornith sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
-- Sitio web de Ornith AI: https://ornith.online/
-- Tweet de anuncio: https://x.com/ornith_/status/2090075048812118352
-- Corpus de calibracion: https://huggingface.co/datasets/AtomicChat/calib-corpora
-- Metricas de cuantizacion: https://huggingface.co/datasets/AtomicChat/Ornith-1.5-9B-GGUF-metrics
-- Aplicacion Atomic Chat: https://atomic.chat/
+- Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B/blob/main/LICENSE
+- Corpus de calibración: https://huggingface.co/datasets/AtomicChat/calib-corpora
+- Registros de evaluación: https://huggingface.co/datasets/AtomicChat/Ornith-1.5-9B-GGUF-metrics
+- Guía de ejecución local: https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally
+- Aplicación Atomic Chat: https://atomic.chat/
+- Repositorio GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
+- X (Twitter): https://x.com/atomic_chat_hq

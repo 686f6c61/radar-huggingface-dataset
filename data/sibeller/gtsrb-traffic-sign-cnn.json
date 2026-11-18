@@ -5,7 +5,7 @@
   "author": "Sibeller",
   "url": "https://huggingface.co/Sibeller/gtsrb-traffic-sign-cnn",
   "created_at": "2026-11-17T09:04:44.000Z",
-  "updated_at": "2026-11-17T09:09:53.000Z",
+  "updated_at": "2026-11-17T11:09:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

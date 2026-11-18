@@ -2,85 +2,90 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF es un derivado experimental del modelo Ornith-1.5-35B-A3B, desarrollado por DeepReinforce (Ornith AI) y cuantizado por SC117. El modelo base es un MoE agéntico de código basado en la arquitectura Qwen3.5, con 35.000 millones de parámetros totales y 3.000 millones activos por token. Este derivado fusiona el LoRA Heretic 1.4.0 Trial 62 en los pesos BF16 originales y reemplaza la cabeza MTP (Multi-Token Prediction) nativa, que venía sin entrenar, por una versión entrenada mediante destilación KL de 12.000 pasos procedente de shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY.
+Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF es una distribucion cuantizada en formato GGUF del modelo Ornith-1.5-35B-A3B, un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por DeepReinforce y publicado en Hugging Face bajo el identificador ornith-ai/Ornith-1.5-35B-A3B. La variante aqui descrita ha sido producida por el usuario SC117 y aplica tres modificaciones sobre el modelo base: la fusion del LoRA del Trial 62 de Heretic 1.4.0 (una tecnica de ablacion de rechazos), la sustitucion de la cabeza MTP nativa por una cabeza fusionada de 19 tensores procedente de shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY, y la cuantizacion con el esquema APEX en formato GGUF.
 
-La relevancia de este modelo radica en su licencia MIT, su ventana de contexto de 262.144 tokens y su formato GGUF, que permite ejecutarlo en hardware de consumo con herramientas como llama.cpp u Ollama. Al ser un modelo agéntico de código, está orientado a tareas de generación y razonamiento de código en flujos de trabajo de agentes autónomos. No obstante, al tratarse de una fusión experimental con modificaciones en el comportamiento de rechazo, se recomienda evaluar su rendimiento antes de usarlo en producción.
+El modelo resuelve tareas de generacion de texto, razonamiento y codigo agentico, con un diseno orientado a despliegues de inferencia eficientes: aunque declara 35B parametros totales, solo activa 3B por token gracias a una arquitectura MoE con 256 expertos y 8 activos. Esa relacion permite ejecutar el modelo con requisitos de computo cercanos a los de un modelo denso de 3B, manteniendo la calidad de un modelo de mayor capacidad. El contexto declarado alcanza los 262.144 tokens.
 
-## Especificaciones técnicas
+La relevancia actual de esta ficha radica en que combina una licencia permisiva (MIT), soporte multimodal (incluye proyector mmproj), una ventana de contexto muy amplia y un formato GGUF listo para llama.cpp y derivados. No obstante, se trata de una modificacion experimental: la card advierte explicitamente de que los modelos con rechazos modificados pueden comportarse de forma distinta al original y deben evaluarse antes de su despliegue en produccion.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 MoE multimodal |
-| Parámetros totales | 35.000 millones |
-| Parámetros activos | 3.000 millones (256 expertos, 8 activos) |
+| Arquitectura | Qwen3.5 MoE, multimodal (transformer con mezcla de expertos) |
+| Parametros totales | 35B (declarado por el autor); el campo de parametros del repo safetensors indica 446.571.248, dato no coherente con la card |
+| Parametros activos | 3B por token (256 expertos, 8 activos) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantización | GGUF (niveles no especificados en la ficha; incluye Q8_0 para la cabeza MTP) |
+| Tipos de cuantizacion | GGUF con esquema APEX (cabeza MTP en Q8_0); niveles concretos no disponibles |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (el modelo base usa safetensors) |
+| Formato de pesos | GGUF (repo de 82,1 GB); modelo base en safetensors/BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-35B-A3B emplea una arquitectura de mezcla de expertos (MoE) con 40 capas transformer y 256 expertos, de los cuales se activan 8 por token. Esta configuración permite mantener una inferencia eficiente a pesar de los 35.000 millones de parámetros totales. El modelo base fue entrenado con un proceso de auto-mejora que optimiza conjuntamente la generación de tareas, la construcción de scaffolds y los rollouts de solución mediante aprendizaje por refuerzo, extendiendo el marco de auto-scaffolding introducido en Ornith-1.0.
+El modelo base es un transformer de tipo Mixture of Experts con 40 capas y 256 expertos, de los cuales se activan 8 por token, lo que resulta en 3B parametros activos sobre 35B totales. Sobre esa pila se anade una capa MTP (multi-token prediction) fusionada que comprende 19 tensores y que en esta distribucion se cuantiza en Q8_0. La capa MTP nativa del modelo original estaba sin entrenar (estadisticas propias de una inicializacion), por lo que el autor la sustituye por la cabeza de shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY, descrita como un injerto sobre Qwen3.6 con destilacion KL de 12K. Esta sustitucion es relevante porque habilita la decodificacion especulativa basada en MTP, que puede mejorar el throughput de generacion.
 
-El derivado presentado aquí fusiona el LoRA Heretic 1.4.0 Trial 62 en los pesos BF16 del modelo base. La cabeza MTP nativa, que no estaba entrenada, se sustituye por una cabeza fusionada de 19 tensores (en Q8_0 en la versión APEX) procedente de shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY, entrenada mediante destilación KL con 12.000 pasos. Esta cabeza adicional predice múltiples tokens futuros en paralelo, lo que puede acelerar la decodificación. La fusión altera el comportamiento de rechazo del modelo, por lo que su comportamiento puede diferir del original.
+En cuanto al entrenamiento, la informacion disponible no detalla el volumen de tokens, la composicion del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base. Lo que si se documenta es el post-entrenamiento aplicado en esta variante: la fusion del LoRA del Trial 62 (de un total de 80) del pipeline Heretic 1.4.0 sobre los pesos BF16, una tecnica de ablacion de direcciones de rechazo. Ademas, el modelo incorpora un proyector multimodal (mmproj) en el paquete GGUF, lo que sugiere capacidad de entrada de imagenes, aunque la card no detalla la arquitectura de vision ni los datos multimodales empleados.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo en lenguaje natural.
-- Generación, reparación y refactorización de código, orientada a flujos de trabajo agénticos.
-- Soporte de tool calling y function calling, necesario para agentes que interactúan con APIs o herramientas.
-- Capacidad multimodal (según las etiquetas del modelo), aunque no se detallan las modalidades específicas.
-- Ventana de contexto de 262.144 tokens, adecuada para repositorios de código extensos o conversaciones de múltiples turnos.
-- Predicción de múltiples tokens (MTP) mediante la cabeza reemplazada, que puede mejorar la velocidad de generación.
-- Soporte de razonamiento de múltiples pasos, adecuado para tareas de planificación y ejecución de agentes.
+- Generacion de texto y razonamiento general, con etiqueta explicita de reasoning en el modelo base.
+- Codigo agentico (agentic-coding): el modelo base esta orientado a tareas de programacion con uso de herramientas y multiples pasos.
+- Soporte multimodal: el repo incluye un proyector mmproj, lo que habilita entrada de imagenes junto con texto.
+- Decodificacion especulativa mediante la cabeza MTP fusionada, orientada a reducir la latencia de generacion.
+- Ventana de contexto de 262.144 tokens, adecuada para documentos largos y sesiones prolongadas.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que facilita su despliegue en infraestructuras de inferencia gestionadas.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Soporte explicito de tool calling y function calling: no documentado en la informacion disponible.
 
 ## Casos de uso
 
-- **Agente de programación autónomo**: el modelo puede gestionar tareas de desarrollo de código complejas, como escribir funciones completas, corregir errores y sugerir refactorizaciones, gracias a su capacidad de tool calling y su contexto largo para analizar archivos de proyecto.
-- **Asistente de revisión de código**: con 262.144 tokens de contexto, puede procesar repositorios enteros y proporcionar comentarios sobre estilo, eficiencia o posibles bugs, integrándose en pipelines de CI/CD.
-- **Generación de documentación técnica**: a partir de código fuente o especificaciones, el modelo puede redactar documentación detallada, comentarios y guías de uso.
-- **Chatbot de soporte con contexto extendido**: su ventana de 262.144 tokens permite mantener historiales de conversación muy largos, útil para atención al cliente con múltiples interacciones.
-- **Automatización de tareas de datos**: mediante tool calling, puede conectarse a bases de datos o APIs para extraer, transformar y resumir información, generando informes o respuestas.
-- **Prototipado rápido de scripts**: desarrolladores pueden usar el modelo para generar scripts de automatización, consultas SQL o configuraciones de infraestructura, con la ventaja de una licencia MIT que permite uso comercial sin restricciones.
+- Asistencia a la programacion en repositorios grandes: con 262.144 tokens de contexto, el modelo puede recibir varios ficheros y el historial de cambios en una sola ventana, lo que resulta util para revisiones de codigo y refactorizaciones que requieren vision global del proyecto.
+- Agentes de codigo multi-paso: la orientacion agentic-coding del modelo base y la cabeza MTP permiten construir bucles de planificacion, edicion y verificacion con menor latencia por token generado.
+- Procesamiento de documentacion tecnica extensa: informes, manuales o expedientes que superan ampliamente los 100K tokens pueden analizarse sin troceado agresivo, preservando el contexto entre secciones.
+- Analisis de capturas y diagramas: gracias al proyector mmproj incluido, es posible enviar imagenes de interfaces, diagramas de arquitectura o graficos junto con instrucciones textuales para su interpretacion.
+- Despliegue en hardware de gama alta para consumo: al ser GGUF y activar solo 3B parametros por token, puede ejecutarse en estaciones de trabajo con GPU consumer de gran capacidad de VRAM o en configuraciones con offload parcial a CPU mediante llama.cpp.
+- Prototipado e investigacion sobre alineacion: al incorporar la ablacion de rechazos de Heretic, sirve como material de estudio para analizar como cambia el comportamiento del modelo al modificar sus direcciones de rechazo, siempre con evaluacion previa.
+- Servicios de generacion de texto autoalojados: la licencia MIT y el formato GGUF permiten integrar el modelo en productos comerciales sin las restricciones de licencias copyleft o de uso limitado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo base Ornith-1.5-35B-A3B no incluye métricas detalladas en la documentación proporcionada, y la fusión experimental no presenta evaluaciones adicionales.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo tiene 35.000 millones de parámetros totales, pero solo 3.000 millones activos por token, lo que reduce significativamente la memoria necesaria durante la inferencia.
-- El tamaño del repositorio es de 82.1 GB, lo que sugiere que el archivo GGUF completo (probablemente en BF16 o FP16) requiere alrededor de 70 GB de almacenamiento. Una cuantización Q4_K_M típica de un modelo de 35B podría ocupar entre 20 y 25 GB, aunque no se especifican los niveles de cuantización disponibles en este repositorio.
-- Para ejecutar el modelo con GGUF en llama.cpp, se recomienda una GPU con al menos 16 GB de VRAM para cuantizaciones bajas (Q4/Q5), y 32 GB o más para cuantizaciones superiores o para aprovechar completamente el contexto de 262K tokens.
-- GPUs recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), A100 (40/80 GB), H100 (80 GB).
-- El modelo es compatible con llama.cpp, Ollama, vLLM y otras herramientas que soporten GGUF. No se proporcionan datos de latencia o throughput.
-- Dado que solo se activan 3B parámetros por token, la inferencia es significativamente más rápida que un modelo denso de 35B, lo que lo hace viable en hardware de consumo.
+- VRAM estimada para inferencia: el repo GGUF ocupa 82,1 GB, por lo que una cuantizacion de alta calidad requiere del orden de 80 GB de VRAM o una combinacion de VRAM y memoria del sistema. Con cuantizaciones mas agresivas el requisito baja proporcionalmente, aunque los niveles APEX concretos no estan documentados.
+- GPU recomendadas: A100 de 80 GB o H100 para ejecutar el modelo completo en VRAM; configuraciones multi-GPU para servir con paralelismo tensorial.
+- GPU consumer: no cabe en tarjetas de 24 GB en cuantizaciones altas; es viable en GPUs de 48 GB o mediante offload parcial a CPU en llama.cpp, a costa de latencia.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio) por el formato GGUF; vLLM y TGI no soportan GGUF de forma nativa para este tipo de arquitectura, por lo que requeririan los pesos safetensors del modelo base.
+- Latencia y throughput: no disponibles. La sustitucion de la cabeza MTP por una entrenada sugiere mejoras en decodificacion especulativa, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (base) | 35B | 3B | 262.144 | MIT | safetensors |
-| Qwen3-30B-A3B (base) | 30B | 3B | 262.144 | Apache 2.0 | safetensors |
-| DeepSeek-R3-Lite (base) | 33B | 3B | 262.144 | MIT | safetensors |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF | 35B | 3B | 262.144 | MIT | GGUF | Variante experimental con ablacion de rechazos y MTP fusionada |
+| ornith-ai/Ornith-1.5-35B-A3B | 35B | 3B | 262.144 | MIT | safetensors/BF16 | Modelo base sin modificaciones; referencia para comparar el efecto de Heretic |
+| shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY | 35B | 3B | no disponible | no disponible | no disponible | Aporta la cabeza MTP fusionada usada en esta variante |
 
-Nota: los datos de Qwen3-30B-A3B y DeepSeek-R1-Lite son aproximados y pueden variar; no se dispone de información verificada de estos modelos en la búsqueda realizada. La comparación se basa en características generales de modelos MoE de tamaño similar, pero no se han encontrado referencias concretas en la documentación proporcionada.
+No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un modelo experimental, derivado de una fusión de LoRA no oficial. El comportamiento de rechazo se ha modificado, por lo que puede producir respuestas que no se alineen con los valores del modelo original.
-- La cabeza MTP reemplazada proviene de un entrenamiento de destilación KL de solo 12.000 pasos, lo que puede afectar la calidad de la predicción de tokens futuros y la coherencia general en comparación con el modelo base.
-- No se han publicado evaluaciones de sesgos o alucinaciones para esta versión específica. Como cualquier modelo de lenguaje, existe riesgo de generar información falsa o sesgada.
-- El contexto de 262.144 tokens es muy amplio, pero la memoria requerida para procesar secuencias completas puede ser prohibitiva en hardware de consumo, incluso con cuantización.
-- La licencia MIT permite uso comercial sin restricciones, pero se recomienda revisar la licencia del modelo base original (Ornith-1.5-35B-A3B) para asegurar que la fusión cumple con los términos.
-- No se proporcionan instrucciones de instalación o despliegue específicas para esta variante, ni ejemplos de uso.
+- Modelo experimental: la card advierte de que los modelos con rechazos modificados pueden comportarse de forma distinta al original y deben evaluarse antes de desplegarse.
+- La cabeza MTP nativa estaba sin entrenar; la sustitucion procede de un tercero (shisa-ai) y su comportamiento en esta combinacion concreta no esta validado de forma independiente.
+- Riesgo de alucinacion inherente a los modelos generativos; no se documentan evaluaciones de factualidad para esta variante.
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento adecuado fuera del ingles sin evaluacion previa.
+- La ablacion de rechazos puede reducir las negativas del modelo ante solicitudes problematicas, lo que exige filtros y politicas de uso adicionales en produccion.
+- Incoherencia en los metadatos: el campo de parametros del repo safetensors indica 446.571.248, muy alejado de los 35B declarados; conviene verificar los pesos antes de usarlos en pipelines automatizados.
+- El tamano del repo (82,1 GB) implica requisitos de almacenamiento y de ancho de banda considerables para su descarga y despliegue.
+- Aunque la licencia es MIT, la procedencia de componentes de terceros (Heretic, shisa-ai, Qwen3.6) debe revisarse para confirmar el cumplimiento en uso comercial.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF)
-- [Modelo base Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
-- [Cabeza MTP de shisa-ai](https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY)
-- [Página del proyecto Ornith-1.5](https://ornith.ai/ornith_1_5.html)
-- [Guía de Ornith AI](https://ornith.online/)
-- [Repositorio Heretic](https://github.com/p-e-w/heretic)
+- Repositorio Hugging Face: https://huggingface.co/SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
+- Cabeza MTP fusionada: https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY
+- Proyecto Heretic: https://github.com/p-e-w/heretic
+- Documentacion en chino: https://huggingface.co/SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF/blob/main/README_zh.md

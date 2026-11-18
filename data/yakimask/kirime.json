@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Yakimask/kirime",
+  "slug": "yakimask-kirime",
+  "author": "Yakimask",
+  "url": "https://huggingface.co/Yakimask/kirime",
+  "created_at": "2026-11-18T01:23:40.000Z",
+  "updated_at": "2026-11-18T01:25:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "turn-taking",
+    "end-of-turn",
+    "streaming",
+    "full-duplex",
+    "spoken-dialogue",
+    "ja",
+    "dataset:espnet/yodas2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 463233,
+  "parameters_human": "463233",
+  "storage_bytes": 1853956,
+  "storage_human": "2 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

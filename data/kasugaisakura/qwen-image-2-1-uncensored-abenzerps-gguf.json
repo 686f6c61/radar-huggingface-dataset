@@ -23,8 +23,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 298,
-  "downloads_30d": 82207,
+  "likes": 299,
+  "downloads_30d": 84459,
   "trending_score": 17,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Segítségkérés a Windowsban - A Microsoft ügyfélszolgálata",
-      "url": "https://support.microsoft.com/hu-hu/windows/seg%C3%ADts%C3%A9gk%C3%A9r%C3%A9s-a-windowsban-711b6492-0435-0038-8706-7c6b0feb200a",
-      "snippet": "Súgótartalmakat kereshet a tálcán, használhatja a Tippek alkalmazást, a Gépház alkalmazás Segítség kérése hivatkozására …"
-    },
-    {
-      "title": "Tudnivalók a Segítség kéréséről | Microsoft Support",
-      "url": "https://support.microsoft.com/hu-hu/support/get-help/about-get-help",
-      "snippet": "A Windows Segítség kérése alkalmazás egy központi hely, ahonnan elérhető a források széles köre, beleértve az oktatóanyagokat, a …"
-    },
-    {
-      "title": "Hogyan kérhetsz segítséget Windows 10 rendszerben ... - Mundowin",
-      "url": "https://mundowin.com/hu/Hogyan-k%C3%A9rhet-seg%C3%ADts%C3%A9get-Windows-10-rendszerben%3A-az-%C3%B6sszes-lehet%C5%91s%C3%A9g-ismertet%C3%A9se/",
-      "snippet": "Nov 22, 2025 · Fedezze fel a Windows 10-ben elérhető összes segítséget: F1, Súgó alkalmazás, online támogatás, csevegés és …"
-    },
-    {
-      "title": "Hogyan kérhetsz segítséget Windows 10 rendszerben lépésről lépésre",
-      "url": "https://mundowin.com/hu/Hogyan-k%C3%A9rhet-seg%C3%ADts%C3%A9get-a-Windows-10-rendszerben%3A-az-%C3%B6sszes-el%C3%A9rhet%C5%91-lehet%C5%91s%C3%A9g/",
-      "snippet": "Nov 22, 2025 · Fedezze fel a Windows 10-ben elérhető összes segítséget: F1, Súgó alkalmazás, Cortana, online támogatás, …"
-    },
-    {
-      "title": "Gyors segítség – Ingyenes letöltés és telepítés Windows rendszeren ...",
-      "url": "https://apps.microsoft.com/detail/9p7bp5vnwkx5?hl=hu-HU",
-      "snippet": "Segíthet családtagjainak és barátainak a PC-jükön, vagy segítséget kérhet tőlük a Gyors segítséggel. Távoli kapcsolat használatával …"
-    }
-  ]
+  "sources": []
 }

@@ -60,7 +60,7 @@
     "imatrix"
   ],
   "likes": 12,
-  "downloads_30d": 4582,
+  "downloads_30d": 4518,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
@@ -80,31 +80,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "CBSE | Academics Unit : Curriculum/Syllabus",
-      "url": "https://cbseacademic.nic.in/curriculum_2026.html",
-      "snippet": "Curriculum for the Academic Year 2025-26 Secondary Curriculum (IX-X) Initial Pages (Please read initial pages before downloading …"
-    },
-    {
-      "title": "Syllabus - NCERT",
-      "url": "https://ncert.nic.in/syllabus.php?ln=en",
-      "snippet": "Click Here for download of Syllabus at Secondary and Higher Secondary Level Following past convention, NCERT textbooks based …"
-    },
-    {
-      "title": "MATHEMATICS (IX-X) (CODE NO. 041) Session 2024-25",
-      "url": "https://cbseacademic.nic.in/web_material/CurriculumMain25/Sec/Maths_Sec_2024-25.pdf",
-      "snippet": "The present revised syllabus has been designed in accordance with National Curriculum Framework 2005 and as per guidelines …"
-    },
-    {
-      "title": "Class 9 Maths Ganita Manjari — CBSE 2026-27 Syllabus & NCERT …",
-      "url": "https://www.boundlessmaths.com/class-9-maths-science/class-9-maths-ganita-manjari/",
-      "snippet": "Class 9 Maths — Ganita Manjari CBSE 2026-27 — Syllabus & NCERT Solutions Class 9 Maths for 2026-27 follows a significantly …"
-    },
-    {
-      "title": "Class 9 Syllabus 2026-27: CBSE Subject-wise Breakdown",
-      "url": "https://www.learncbse.net/cbse-syllabus/class-9/",
-      "snippet": "Jul 28, 2026 · Find the official Class 9 syllabus 2026-27 for all CBSE subjects. Access verified course structure, marks distribution, …"
-    }
-  ]
+  "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-4.7-Momentum",
   "created_at": "2026-10-22T22:40:51.000Z",
-  "updated_at": "2026-10-31T16:30:26.000Z",
+  "updated_at": "2026-11-17T21:39:23.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,20 +25,22 @@
     "text-generation",
     "ru",
     "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
     "license:other",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 7749,
+  "downloads_30d": 8749,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",
   "storage_bytes": 20217060736,
   "storage_human": "20.2 GB",
   "context_length": 131072,
-  "base_model": null,
+  "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf"
   ],
@@ -51,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Bangweather - Channel page - XVIDEOS.COM",
-      "url": "https://www.xvideos.com/channels/bangweather",
-      "snippet": "Nigeria No.1 adult movie production ( bangweather), we produce unique and best erotic porn of its kind, we are the original content …"
-    },
-    {
-      "title": "Bangweather - Porn Maker - XNXX.COM",
-      "url": "https://www.xnxx.com/porn-maker/bangweather",
-      "snippet": "Natural African curvy beauty with her super ass got fucked by a huge cock 456.6k 12min - 1080p Bangweather"
-    },
-    {
-      "title": "Bangweather Porn Videos: Bangweather XXX Hot Nude Sex Model …",
-      "url": "https://xhamster.com/creators/bangweather",
-      "snippet": "Find nude Bangweather (aka Bangweather) porn videos featuring the sex model fucking in XXX scenes, including african, anal, BBC. …"
-    },
-    {
-      "title": "BANGWEATHER - 98 videos - HQ Porn Search",
-      "url": "https://hqpornsearch.com/videos/bangweather",
-      "snippet": "Free porn: BANGWEATHER - 98 videos. Homemade Bbc Missionary, Huge Black Dick Mature, Amateur Wife Bbc Cheating, Skinny …"
-    },
-    {
-      "title": "BANGWEATHER - Porn videos @ ePornz",
-      "url": "https://epornz.com/videos/bangweather",
-      "snippet": "Collection of free porn: BANGWEATHER - 104 videos. Popular videos: Homemade bbc missionary, Amateur wife bbc cheating, …"
-    }
-  ]
+  "sources": []
 }

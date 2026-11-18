@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 175,
-  "downloads_30d": 109066,
+  "downloads_30d": 110021,
   "trending_score": 0,
   "parameters": 21004025600,
   "parameters_human": "21.00B",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.com.eg/index.html",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com/?hl=ar-EG",
-      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com/#!%20/=",
-      "snippet": "We would like to show you a description here but the site won’t allow us."
-    },
-    {
-      "title": "Share your personal porn workflow : r/comfyui - Reddit",
-      "url": "https://www.reddit.com/r/comfyui/comments/1wfh062/share_your_personal_porn_workflow/",
-      "snippet": "vor 4 Stunden ... https://huggingface.co/ChrisColeTech/LTX-2.5-uncensored-v1.1-FP8. its ... Which video model do you use? If you use Minimax H3, there are ..."
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com.nf/?hl=ar-US",
-      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
-    }
-  ]
+  "sources": []
 }

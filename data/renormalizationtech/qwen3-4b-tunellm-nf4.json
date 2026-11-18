@@ -5,7 +5,7 @@
   "author": "RenormalizationTech",
   "url": "https://huggingface.co/RenormalizationTech/Qwen3-4B-tuneLLM-NF4",
   "created_at": "2026-11-13T03:58:14.000Z",
-  "updated_at": "2026-11-17T03:55:21.000Z",
+  "updated_at": "2026-11-17T05:13:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

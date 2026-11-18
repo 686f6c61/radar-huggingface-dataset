@@ -2,89 +2,121 @@
 
 ## Resumen
 
-AtomicChat/Qwen3.8-27B-GGUF es una cuantización en formato GGUF del modelo Qwen3.8-27B, desarrollada por AtomicChat a partir de los pesos originales de Qwen, utilizando una matriz de importancia (imatrix) propia. El objetivo es permitir la ejecución local eficiente de un modelo de 27 mil millones de parámetros en hardware de consumo, mediante la compresión de los pesos a formatos de menor precisión compatibles con llama.cpp y otros motores de inferencia.
+Qwen3.8-27B es un modelo multimodal (texto e imagen) desarrollado por Qwen (Alibaba). AtomicChat publica en este repositorio una familia completa de cuantizaciones GGUF del modelo original, construidas con matrices de importancia (imatrix) propias y un esquema de asignación de tipos por tensor denominado Atomic Dynamic (AD). El modelo resuelve el problema de ejecutar localmente un modelo denso de 27.320 millones de parámetros con visión en hardware de consumo, ofreciendo 16 variantes de cuantización desde 8,5 GB hasta 28,9 GB.
 
-El modelo base, Qwen3.8-27B, es un modelo denso de visión-lenguaje (VLM) construido sobre la arquitectura Qwen3.5, con una ventana de contexto nativa de 262 000 tokens (según fuentes externas como LM Studio y Yottalabs). Destaca por su rendimiento en tareas de codificación, trabajo profesional, investigación y agentes de larga duración, con control flexible del razonamiento (modo thinking). Esta cuantización GGUF hace posible desplegar el modelo en una sola GPU de gama media o incluso en CPU, ampliando su accesibilidad para desarrolladores e investigadores que necesitan ejecutar el modelo localmente sin depender de infraestructura en la nube.
+La relevancia de esta publicación está en la transparencia metodológica: el autor mide cada fichero contra los pesos originales con divergencia KL y tasa top-1 sobre texto reservado, y publica los registros brutos. Además, el modelo incorpora una cabeza de predicción multi-token (MTP) integrada en todos los ficheros, lo que habilita decodificación especulativa sin descargas adicionales.
 
-La relevancia de esta ficha radica en que, aunque el modelo base es reciente (publicado en 2026), la cuantización de AtomicChat ofrece una vía práctica para su adopción en entornos con recursos limitados, manteniendo un equilibrio entre calidad y eficiencia. El repositorio incluye múltiples archivos GGUF (el tamaño total del repo es de 532,4 GB, lo que sugiere varias variantes de cuantización), aunque no se especifican los tipos exactos en la información disponible.
+La arquitectura, la longitud de contexto nativa, los idiomas y la licencia del modelo base no se detallan en la información disponible; esta ficha se limita a lo documentado en el repositorio de cuantizaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con encoder de visión (VLM) |
-| Parametros totales | 27 320 697 856 (27,32 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262 000 tokens (según fuentes externas; no confirmado en la ficha de HF) |
-| Tipos de cuantizacion | No listados explícitamente; el repo de 532,4 GB sugiere múltiples variantes GGUF (probablemente Q4_K_M, Q5_K_M, Q6_K, Q8_0, etc.) |
-| Idiomas soportados | No disponibles (el modelo base Qwen3.8 soporta múltiples idiomas, pero no se detalla) |
-| Licencia | No disponible en la ficha de HF; según fuentes externas (Yottalabs) el modelo base es Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base original) |
+| Arquitectura | no disponible (modelo base Qwen/Qwen3.8-27B; transformer multimodal con proyector de visión) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en el modelo base; los ejemplos de despliegue usan 8k y 32k tokens |
+| Tipos de cuantizacion | Q8_0, AD-Q6_K, AD-Q6_K-Q5_K, AD-Q5_K_M, AD-Q5_K_M-Q4_K_M, AD-Q4_K_M, AD-IQ4_XS, AD-IQ4_XS-IQ3_S, AD-IQ3_S, AD-IQ3_S-IQ3_XXS, AD-IQ3_XXS, AD-IQ2_S, AD-IQ2_S-IQ2_XS, AD-IQ2_XS, AD-IQ2_XXS, AD-IQ1_M |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (llama.cpp); proyector de visión separado en `mmproj-Qwen3.8-27B-F16.gguf` o `mmproj-Qwen3.8-27B-BF16.gguf` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso con un encoder de visión integrado, lo que le permite procesar tanto texto como imágenes. Está construido sobre la arquitectura Qwen3.5, que incorpora innovaciones en atención y eficiencia de contexto. Según la documentación de Unsloth, el modelo tiene una ventana de contexto de 256 000 tokens (otras fuentes citan 262 000), lo que lo hace adecuado para tareas de razonamiento de largo alcance y agentes multi-paso.
+El repositorio no documenta la arquitectura interna del modelo base ni su proceso de entrenamiento (número de tokens, composición del dataset, RLHF/DPO). Lo que sí se detalla es el proceso de cuantización: AtomicChat construye sus ficheros a partir de los pesos originales de Qwen usando matrices de importancia propias, con corpus de calibración públicos en el dataset `AtomicChat/calib-corpora`.
 
-El entrenamiento del modelo base incluye una fase de preentrenamiento con un corpus masivo de datos multilingües y multimodales, seguida de un ajuste fino supervisado y un alineamiento con preferencias humanas (probablemente RLHF o DPO, aunque no se detalla en la información disponible). El modelo soporta un modo "thinking" configurable, que permite activar o desactivar el razonamiento explícito según la tarea.
-
-La cuantización de AtomicChat se realiza sobre los pesos originales de Qwen, utilizando una matriz de importancia (imatrix) calculada con un corpus de calibración público (disponible en Hugging Face). Este enfoque busca minimizar la pérdida de calidad en tareas específicas, a diferencia de las cuantizaciones genéricas que no consideran la importancia relativa de cada tensor.
+El esquema Atomic Dynamic nombra cada fichero según los tipos asignados a los dos grupos de tensores más grandes, `ffn_down` y `ffn_up`, colapsando el nombre cuando ambos coinciden. La innovación operativa destacable es la inclusión de una cabeza de predicción multi-token (MTP) dentro de todos los ficheros, que permite decodificación especulativa con `--spec-type draft-mtp` en llama.cpp sin artefactos adicionales. El modelo es multimodal: la lectura de imágenes requiere el proyector de visión aparte, compartido entre todas las cuantizaciones.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base es capaz de realizar tareas complejas de razonamiento, incluyendo matemáticas, lógica y análisis, con un modo "thinking" que puede activarse para problemas que requieren pasos intermedios.
-- Codificación: destaca en generación, revisión y depuración de código, con soporte para múltiples lenguajes de programación.
-- Visión y lenguaje: al ser un VLM, puede procesar imágenes y responder preguntas sobre su contenido, aunque la cuantización GGUF puede afectar ligeramente a esta capacidad.
-- Agentes y tool calling: el modelo base está optimizado para tareas de agente de larga duración, con manejo de feedback del entorno y planificación autónoma. Soporta function calling, lo que permite integrarlo en pipelines de automatización.
-- Multilingüe: el modelo base soporta múltiples idiomas, aunque la lista exacta no está disponible en la información proporcionada.
-- Contexto largo: con una ventana de 262 000 tokens, puede manejar documentos extensos, conversaciones multi-turno y análisis de código de gran tamaño.
+- Generación de texto conversacional con formato de chat ChatML (`<|im_start|>`/`<|im_end|>`) y modo de razonamiento activable mediante `<think>`.
+- Comprensión de imágenes (pipeline `image-text-to-text`) mediante el proyector `mmproj`; el autor menciona también vídeo en la sección de imágenes.
+- Decodificación especulativa nativa gracias a la cabeza MTP incluida en los pesos.
+- Ejecución local en llama.cpp con soporte de offload parcial de capas a CPU.
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags del repositorio).
+- Soporte de tool calling, agentes, matemáticas o capacidades multilingües específicas: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de codigo en local: un desarrollador puede ejecutar la cuantizacion GGUF en una estacion de trabajo con una GPU de 24 GB (por ejemplo, RTX 3090 o 4090) para obtener sugerencias de codigo, refactorizacion y explicaciones sin enviar datos a la nube. La cuantizacion Q4_K_M reduce la VRAM necesaria a unos 16-18 GB, lo que la hace viable en hardware de consumo.
-- Analisis de documentos extensos: gracias a su contexto de 262 000 tokens, el modelo puede resumir informes largos, contratos o articulos cientificos completos en una sola pasada, sin necesidad de dividir el texto en fragmentos.
-- Agente de automatizacion de tareas: con soporte para tool calling, el modelo puede orquestar flujos de trabajo como la gestion de correos, la programacion de citas o la interaccion con APIs, ejecutandose localmente para garantizar la privacidad de los datos.
-- Educacion y tutoria: el modelo puede actuar como tutor personalizado en matematicas, programacion o ciencias, explicando conceptos paso a paso y adaptando sus respuestas al nivel del estudiante, gracias a su modo de razonamiento configurable.
-- Prototipado rapido de aplicaciones de IA: los desarrolladores pueden integrar el modelo en aplicaciones de chat o asistentes virtuales mediante llama.cpp o Ollama, probando funcionalidades sin necesidad de una GPU de alta gama.
-- Investigacion academica: para estudios que requieren reproducibilidad y control total sobre el modelo, la cuantizacion GGUF permite ejecutar experimentos en hardware local, comparando el rendimiento con el modelo original en tareas especificas.
+- Asistente conversacional local con razonamiento visible: el modo `<think>` permite separar el razonamiento interno de la respuesta final, útil en entornos de escritorio donde el usuario quiere auditar el proceso de deducción.
+- Análisis de documentos escaneados y capturas: con el proyector `mmproj` y `--image-min-tokens 1024`, el modelo puede transcribir y describir imágenes; el autor valida esta vía con una muestra de caligrafía gótica manuscrita, un caso más exigente que una fotografía convencional.
+- Despliegue en estaciones de trabajo de 24 GB: con `AD-Q5_K_M-Q4_K_M` (18,6 GB) y unos 16k de contexto, cabe en una RTX 4090 o similar, permitiendo asistentes de código y análisis de texto sin conexión.
+- Servicio de inferencia con decodificación especulativa: usando `llama-server` con la cabeza MTP se obtienen 77 t/s de generación a 8k de contexto en 2x RTX 5090, adecuado para prototipos de atención al usuario con latencia interactiva.
+- Procesamiento por lotes de prompts largos: los 5244 t/s de prefill a 32k de contexto medidos por el autor lo hacen viable para tareas de resumen o extracción sobre documentos extensos en hardware de gama alta.
+- Evaluación comparativa de cuantizaciones: los datos de KL y top-1 publicados permiten elegir el punto de la curva tamaño/calidad adecuado para cada restricción de VRAM, desde 12 GB (`AD-IQ2_S`) hasta 48 GB o más (`Q8_0`).
+- Investigación sobre cuantización: la publicación de los corpus de calibración y de los registros de métricas permite reproducir y auditar el impacto de cada esquema de tipos por tensor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye métricas de rendimiento, y las fuentes externas (LM Studio, Unsloth, Yottalabs) mencionan capacidades generales pero no proporcionan números concretos de MMLU, HumanEval o GSM8K para esta cuantizacion especifica. Se recomienda consultar la documentacion del modelo base Qwen3.8-27B para obtener datos de referencia, aunque no estan disponibles en esta ficha.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible. El autor sí publica métricas de fidelidad de cuantización frente a los pesos originales:
+
+| Fichero | Tamano | Divergencia KL | top-1 |
+|---|---:|---:|---:|
+| Q8_0 | 28,9 GB | 0,00064 | 98,92% |
+| AD-Q6_K | 25,0 GB | 0,00107 | 98,67% |
+| AD-Q6_K-Q5_K | 23,1 GB | 0,00252 | 97,94% |
+| AD-Q5_K_M | 20,2 GB | 0,00419 | 97,34% |
+| AD-Q5_K_M-Q4_K_M | 18,6 GB | 0,00730 | 96,43% |
+| AD-Q4_K_M | 17,1 GB | 0,01126 | 95,59% |
+| AD-IQ4_XS | 16,5 GB | 0,01248 | 95,39% |
+| AD-IQ4_XS-IQ3_S | 14,4 GB | 0,02660 | 93,15% |
+| AD-IQ3_S | 13,8 GB | 0,03247 | 92,41% |
+| AD-IQ3_S-IQ3_XXS | 13,0 GB | 0,04337 | 91,33% |
+| AD-IQ3_XXS | 12,1 GB | 0,06972 | 89,13% |
+| AD-IQ2_S | 11,1 GB | 0,09832 | 87,18% |
+| AD-IQ2_S-IQ2_XS | 10,2 GB | 0,13807 | 84,77% |
+| AD-IQ2_XS | 9,9 GB | 0,16170 | 83,48% |
+| AD-IQ2_XXS | 9,0 GB | 0,25663 | 79,44% |
+| AD-IQ1_M | 8,5 GB | 0,34212 | 76,34% |
+
+Rendimiento medido por el autor con `AD-Q4_K_M` y offload completo en 2x RTX 5090:
+
+| Contexto | Prefill | Generación |
+|---|---:|---:|
+| 8k | 363 t/s | 77 t/s |
+| 32k | 5244 t/s | 72 t/s |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para una cuantizacion Q4_K_M (tamano aproximado de 16-18 GB), se necesitan al menos 20 GB de VRAM para cargar el modelo y los estados intermedios. Con Q5_K_M (unos 20-22 GB), se requieren 24 GB o mas. La cuantizacion Q8_0 (unos 28-30 GB) necesita una GPU de 32 GB o mas.
-- GPU recomendadas: RTX 3090 (24 GB), RTX 4090 (24 GB), A100 (40 GB o 80 GB), H100 (80 GB). En CPU, se puede ejecutar con 32 GB de RAM, aunque la velocidad sera mucho menor.
-- Compatibilidad con consumer GPU: si, con cuantizaciones Q4_K_M o Q5_K_M en GPUs de 24 GB. Para GPUs de 16 GB (como RTX 4080), se puede usar Q3_K_M o Q4_0, aunque con mayor perdida de calidad.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM (con soporte GGUF), TGI (con adaptadores). AtomicChat tambien ofrece su propia aplicacion (Atomic Chat) con controles para el modo thinking.
-- Latencia y throughput: no se han publicado mediciones especificas para esta cuantizacion. En una RTX 4090, un modelo de 27B en Q4_K_M suele generar entre 20 y 40 tokens por segundo, dependiendo de la longitud de la secuencia y el uso de atencion con contexto largo.
+- Caché de atención: 256 KB por token, es decir, 2 GB a 8k de contexto y 8 GB a 32k. Debe presupuestarse junto con el peso del fichero.
+- 12 GB de VRAM: `AD-IQ2_S` (11,1 GB), solo con contexto corto o moviendo capas a CPU.
+- 16 GB de VRAM: `AD-IQ3_S` (13,8 GB), en torno a 8k de contexto.
+- 24 GB de VRAM: `AD-Q5_K_M-Q4_K_M` (18,6 GB), en torno a 16k de contexto; encaja en RTX 4090/3090.
+- 32 GB de VRAM: `AD-Q6_K` (25,0 GB), en torno a 24k de contexto.
+- 48 GB o más: `Q8_0` (28,9 GB) con contexto completo; válido para A100 80 GB, H100, RTX A6000 o configuraciones multi-GPU.
+- Despliegue: llama.cpp (`llama-server`, `llama-cli`, `llama-mtmd-cli` para multimodal). No se documentan otras opciones como vLLM, TGI u Ollama en la información disponible.
+- Throughput de referencia: 77 t/s de generación a 8k y 72 t/s a 32k en 2x RTX 5090 con `AD-Q4_K_M`; el prefill escala de 363 t/s (8k) a 5244 t/s (32k).
+- Recomendación del autor: entre dos ficheros contiguos, elegir el mayor; el salto cuesta uno o dos gigabytes y reduce notablemente la tasa de palabras erróneas, especialmente por debajo de 14 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27,32 B | 262 000 | Apache 2.0 (segun fuentes) | safetensors | Modelo base completo, requiere GPU de 40 GB+ para FP16 |
-| AtomicChat/Qwen3.8-27B-GGUF | 27,32 B | 262 000 | No disponible (Apache 2.0 segun fuentes) | GGUF | Cuantizacion con imatrix, ejecucion local eficiente |
-| Qwen3.6-27B-GGUF (AtomicChat) | 27 B (aprox.) | No disponible | No disponible | GGUF | Version anterior de la misma familia, tambien cuantizada por AtomicChat |
-| Llama 3.1 8B (GGUF) | 8 B | 128 000 | Llama 3.1 License | GGUF | Mucho menor, pero con contexto largo; no tiene vision |
+No se dispone de datos de modelos comparables en la información proporcionada. El propio autor incluye en la model card una comparación gráfica de todas las cuantizaciones disponibles del modelo (propias y de terceros) frente a los pesos originales sobre el mismo texto reservado, con una línea discontinua que marca el mejor fichero de cada tamaño ajeno a AtomicChat, pero los valores numéricos de esa comparación externa no se detallan en el texto.
 
-La comparativa se basa en datos publicos de las fuentes citadas. No se dispone de benchmarks comparativos directos entre estas opciones.
+| Modelo | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Qwen3.8-27B (AtomicChat GGUF) | 27,3 B | no disponible | no disponible | GGUF |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La cuantizacion GGUF introduce una perdida de precision respecto al modelo original en FP16, que puede manifestarse en una menor exactitud en tareas de razonamiento complejo o en la generacion de codigo. La magnitud de esta perdida depende del tipo de cuantizacion elegido.
-- La licencia del modelo no esta especificada en la ficha de Hugging Face. Aunque fuentes externas indican que el modelo base es Apache 2.0, se recomienda verificar los terminos antes de un uso comercial.
-- El modelo base es multimodal (vision y lenguaje), pero la cuantizacion GGUF puede no incluir el encoder de vision completo o puede degradar su rendimiento. Es necesario probar la capacidad de procesamiento de imagenes en la cuantizacion concreta.
-- La ventana de contexto de 262 000 tokens requiere una gestion cuidadosa de la memoria durante la inferencia; en GPUs con menos de 24 GB, el uso de contexto largo puede provocar desbordamiento de VRAM.
-- No se han publicado evaluaciones de sesgos o alucinaciones para esta cuantizacion especifica. Como cualquier modelo de lenguaje, puede generar contenido incorrecto o sesgado, especialmente en temas delicados.
-- El repositorio de AtomicChat no incluye informacion detallada sobre los tipos de cuantizacion disponibles ni instrucciones de uso especificas, lo que puede dificultar la seleccion del archivo adecuado.
+- La licencia del modelo base no está indicada en la información disponible; antes de un uso comercial debe verificarse en el repositorio de Qwen/Qwen3.8-27B.
+- La cuantización introduce degradación medible: incluso `Q8_0` presenta una divergencia KL de 0,00064 y un 98,92% de top-1, por lo que no es idéntico a los pesos originales. Por debajo de 14 GB la curva se vuelve pronunciada (`AD-IQ2_XXS` cae al 79,44% de top-1).
+- La lectura de imágenes exige `--image-min-tokens 1024`; el propio llama.cpp advierte de que por debajo de ese umbral la información posicional se vuelve poco fiable.
+- El proyector de visión es un fichero adicional obligatorio para tareas multimodales; no está incluido en los ficheros de cuantización.
+- El consumo de caché de atención (256 KB por token) limita el contexto efectivo mucho antes que el tamaño del fichero; a 32k se necesitan 8 GB adicionales solo para caché.
+- No se documentan idiomas soportados ni sesgos conocidos del modelo base.
+- El riesgo de alucinación no está cuantificado en la información disponible; como en cualquier modelo generativo, debe validarse la salida en producción.
+- Las cifras de velocidad proceden de una configuración concreta (2x RTX 5090, offload completo, `AD-Q4_K_M`) y no son extrapolables a otro hardware.
+- El repositorio ocupa 253,3 GB en total; descargar la familia completa no es necesario, basta con un fichero de cuantización y el `mmproj`.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B (referencia)
-- Corpus de calibracion de AtomicChat: https://huggingface.co/datasets/AtomicChat/calib-corpora
-- Pagina del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
-- Guia de ejecucion local en Yottalabs: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
-- Documentacion de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
-- Repositorio de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Corpus de calibración: https://huggingface.co/datasets/AtomicChat/calib-corpora
+- Métricas y registros brutos: https://huggingface.co/datasets/AtomicChat/Qwen3.8-27B-GGUF-metrics
+- Guía de ejecución local: https://atomic.chat/blog/guides/how-to-run-qwen-3-8-locally
+- Aplicación Atomic Chat: https://atomic.chat/
+- Repositorio GitHub: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
+- X (Twitter): https://x.com/atomic_chat_hq

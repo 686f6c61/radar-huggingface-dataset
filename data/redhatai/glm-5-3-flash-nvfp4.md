@@ -2,83 +2,113 @@
 
 ## Resumen
 
-RedHatAI/GLM-5.3-Flash-NVFP4 es una versión cuantizada del modelo GLM-5.3-Flash de Z.ai, desarrollada por Red Hat AI. El modelo base, presentado en 2026, es el primer GLM de la línea 5 nativamente multimodal, con arquitectura de mezcla de expertos (MoE) que combina atención dispersa y lineal, y una ventana de contexto de 1 millón de tokens. Esta variante cuantiza los pesos y activaciones de los operadores lineales de los bloques transformer a precisión NVFP4 (FP4 con grupo de 16), manteniendo la torre de visión, los embeddings y la capa de salida en su precisión original, lo que permite una inferencia más eficiente en memoria y cómputo con vLLM.
+GLM-5.3-Flash-NVFP4 es una versión cuantizada a NVFP4 (FP4 de NVIDIA) del modelo multimodal zai-org/GLM-5.3-Flash, desarrollada por RedHatAI. El modelo original pertenece a la familia GLM (Z-AI) y emplea una arquitectura `Glm5NextForConditionalGeneration` con mezcla de expertos (MoE), capaz de aceptar entradas de texto e imagen y generar texto. Esta variante mantiene las capas MTP (multi-token prediction) en FP8, igual que el checkpoint fuente, y cuantiza únicamente los pesos y activaciones de los operadores lineales de los expertos MoE a FP4.
 
-El modelo está diseñado para servir con vLLM en entornos multi-GPU, con soporte para tool calling y razonamiento estructurado. Con aproximadamente 180,7 mil millones de parámetros en los safetensors cuantizados (el modelo base declara 320B), ofrece capacidades de generación de texto, razonamiento, código, matemáticas y comprensión de imágenes, posicionándose como una alternativa competitiva frente a modelos cerrados como Claude Opus 4.8. Su relevancia radica en combinar multimodalidad, contexto largo y eficiencia de cuantización en un paquete de código abierto, aunque la licencia exacta no está especificada en la información disponible.
+El problema que resuelve es el coste de memoria y disco de un modelo de 169.120.127.838 parámetros (unos 169,1 mil millones). Al pasar los pesos cuantizados de 8 a 4 bits, se reduce aproximadamente un 50 % el tamaño en disco y los requisitos de VRAM de las capas cuantizadas, lo que permite servir el modelo con vLLM en 4 GPU mediante tensor parallelism. El repositorio ocupa 197,9 GB y está publicado bajo licencia MIT, lo que facilita su uso comercial.
+
+Es relevante ahora porque combina tres elementos poco habituales en un mismo artefacto: cuantización FP4 lista para producción con vLLM, capacidades multimodales (image-text-to-text) y decodificación especulativa mediante MTP. La ficha se centra en esta variante cuantizada; los datos de arquitectura interna, composición del dataset de entrenamiento y proceso de alineación del modelo base no están disponibles en la información proporcionada.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (atención dispersa y lineal) con MLA, 45 capas, hidden size 4096, 288 expertos (8 activos por token + 1 siempre activo) |
-| Parametros totales | 180.712.958.846 (según safetensors del repo cuantizado); 320B en el modelo base según fuentes externas |
-| Parametros activos | 18B (según fuentes externas del modelo base) |
-| Longitud de contexto | 1.000.000 tokens (según fuentes externas) |
-| Tipos de cuantizacion | NVFP4 (FP4 con grupo de 16, activaciones FP4 con escalado local por grupo) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors, compatible con vLLM |
+| Arquitectura | Glm5NextForConditionalGeneration (MoE, transformer multimodal) |
+| Parametros totales | 169.120.127.838 (169,1 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 (FP4) en pesos y activaciones de expertos MoE; MTP en FP8; etiqueta 8-bit en metadatos |
+| Idiomas soportados | en, zh |
+| Licencia | MIT |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
+| Entrada / salida | Texto e imagen / texto |
+| Modo de cuantización | Solo operadores lineales de expertos MoE |
+| Herramienta de cuantización | LLM Compressor (vllm-project) |
+| Fecha de publicación | 2026-08-27 |
+| Desarrollador de la cuantización | RedHatAI |
+| Modelo base | zai-org/GLM-5.3-Flash |
+| Tamano del repositorio | 197,9 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3-Flash emplea una arquitectura de mezcla de expertos (MoE) con 288 expertos en las capas feed-forward, de los cuales 8 se activan por token más un experto siempre activo. Combina atención multi-head latente (MLA) con un mecanismo de atención lineal y dispersa, una innovación que reduce el coste computacional en contextos largos. La versión cuantizada RedHatAI/GLM-5.3-Flash-NVFP4 aplica cuantización NVFP4 únicamente a los pesos y activaciones de los operadores lineales dentro de los bloques transformer, utilizando LLM Compressor. La torre de visión, los embeddings y la capa de salida se mantienen en precisión original (presumiblemente BF16) para preservar la calidad en tareas multimodales y de generación.
+La arquitectura es `Glm5NextForConditionalGeneration`, un transformer con mezcla de expertos y capacidad multimodal de entrada (texto e imagen). La información disponible confirma que el modelo contiene capas MTP (multi-token prediction) y que la cuantización se aplica exclusivamente a los operadores lineales de los expertos MoE, dejando el resto de componentes (atención, capas MTP, embeddings) en su precisión original o en FP8. No se dispone de detalles sobre el número de capas, dimensión oculta, número de expertos, tamaño del contexto nativo ni proporción de parámetros activos por token.
 
-No se dispone de información detallada sobre el entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO) en la información proporcionada. El proceso de cuantización se realizó con LLM Compressor, una herramienta del ecosistema vLLM, y el resultado está listo para servir con vLLM mediante el contenedor oficial `vllm/vllm-openai:glm53-flash`.
+Respecto al entrenamiento, no hay información en la documentación proporcionada sobre el número de tokens, la composición del corpus, el uso de RLHF/DPO ni las etapas de alineación del modelo base. La innovación técnica documentada de esta variante es la cuantización NVFP4 con LLM Compressor y el formato compressed-tensors, junto con el soporte de decodificación especulativa mediante MTP con 5 tokens especulativos, que acelera la generación al permitir proponer varios tokens por paso y validarlos en paralelo.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-step, con soporte de modo de razonamiento estructurado (parámetro `--reasoning-parser glm45` en vLLM).
-- Comprensión de imágenes (pipeline `image-text-to-text`), lo que permite entrada multimodal.
-- Tool calling y function calling, habilitado mediante `--tool-call-parser glm47` y `--enable-auto-tool-choice` en vLLM.
-- Soporte para agentes autónomos con múltiples pasos de razonamiento y uso de herramientas.
-- Contexto largo de hasta 1 millón de tokens, adecuado para documentos extensos y conversaciones prolongadas.
-- Capacidades multilingües no especificadas en la información disponible.
-- Eficiencia de inferencia gracias a la cuantización NVFP4, que reduce el uso de memoria y acelera el cómputo en GPUs compatibles.
+- Generación de texto conversacional en inglés y chino, con soporte de plantillas de chat.
+- Entrada multimodal: procesamiento de imágenes junto con texto (pipeline image-text-to-text).
+- Razonamiento matemático de varios pasos, evidenciado por los resultados en GSM8K Platinum, MATH-500 y AIME 2025.
+- Razonamiento científico y de nivel experto, medido con GPQA Diamond.
+- Tool calling / function calling: el despliegue en vLLM incluye `--tool-call-parser glm47` y `--enable-auto-tool-choice`.
+- Modo de razonamiento explícito: el servidor se configura con `--reasoning-parser glm45`, lo que indica separación entre traza de razonamiento y respuesta final.
+- Decodificación especulativa con MTP (`num_speculative_tokens: 5`) para reducir latencia.
+- Compatible con endpoints OpenAI (`endpoints_compatible` en los metadatos).
+- No se documentan capacidades de audio, vídeo ni generación de imágenes.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: con 1M de tokens de contexto, el modelo puede gestionar conversaciones multi-turno extensas, manteniendo el historial completo y resolviendo consultas complejas con acceso a documentación amplia.
-- Generación de código en producción: soporta tool calling, lo que permite integrarlo en pipelines de CI/CD para revisión de código, generación de tests o autocompletado en IDEs, con la ventaja de procesar repositorios completos gracias al contexto largo.
-- Análisis de documentos con imágenes: al ser multimodal, puede extraer información de PDFs escaneados, diagramas o capturas de pantalla, combinando texto e imagen en tareas de resumen o extracción de datos.
-- Agentes autónomos de razonamiento: con el modo de razonamiento y tool calling, puede planificar y ejecutar tareas multi-paso, como búsqueda de información, cálculo y generación de informes, en entornos de automatización.
-- Asistente de investigación científica: procesa artículos largos, compara resultados y genera resúmenes con citas, aprovechando el contexto de 1M tokens para mantener referencias completas.
-- Traducción y localización: aunque los idiomas no están especificados, su naturaleza multilingüe probable (por ser un modelo GLM) permite traducción de textos largos con coherencia contextual, aunque se recomienda verificar la licencia antes de uso comercial.
+- Asistencia matemática y tutoría automatizada: el modelo obtiene 97,74 % en GSM8K Platinum y 94,87 % en MATH-500, por lo que puede resolver problemas de aritmética y álgebra paso a paso y explicar el procedimiento al usuario.
+- Razonamiento científico en herramientas de investigación: con 90,57 % en GPQA Diamond, es adecuado para responder preguntas de nivel posgrado en física, química y biología dentro de un asistente de consulta documental.
+- Agentes con tool calling en producción: la combinación de `--tool-call-parser glm47` y `--enable-auto-tool-choice` en vLLM permite conectarlo a APIs externas (búsqueda, calculadoras, bases de datos) y orquestar flujos multi-paso.
+- Análisis de documentos con imágenes: al aceptar entrada image-text-to-text, puede procesar capturas, diagramas o páginas escaneadas junto con instrucciones textuales para extraer y resumir información.
+- Despliegue en infraestructura limitada a 4 GPU: la cuantización NVFP4 reduce a la mitad el peso de las capas MoE, de modo que el modelo se sirve con `--tensor-parallel-size 4` en lugar de requerir un clúster mayor.
+- Servicio de chat bilingüe inglés-chino: útil para atención al cliente o soporte interno en organizaciones con operaciones en ambos mercados.
+- Generación de código asistida dentro de pipelines: aunque no se publican resultados de HumanEval, el soporte de tool calling y de razonamiento permite integrarlo en asistentes de IDE que consultan documentación o ejecutan tests.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir la pérdida de precisión de FP4 frente al checkpoint original en tareas de razonamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Fuentes externas indican que el modelo base GLM-5.3-Flash compite con Claude Opus 4.8, pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros. Se recomienda consultar la documentación oficial de Z.ai para datos de rendimiento.
+Resultados publicados por el autor de la cuantización, promediados sobre 3 semillas (8 semillas en AIME 2025), servidos con vLLM mediante API compatible con OpenAI:
+
+| Categoria | Benchmark | GLM-5.3-Flash-NVFP4 |
+|---|---|---|
+| Razonamiento | GSM8K Platinum (strict-match) | 97,74 % |
+| Razonamiento | MATH-500 (pass@1) | 94,87 % |
+| Razonamiento | AIME 2025 (pass@1) | 86,67 % |
+| Razonamiento | GPQA Diamond (pass@1) | 90,57 % |
+
+No se han publicado en la información disponible resultados del modelo base sin cuantizar, ni métricas de MMLU, HumanEval, throughput o latencia, por lo que no es posible cuantificar la degradación introducida por FP4 ni comparar directamente con alternativas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 180,7B parámetros cuantizados a FP4 (0,5 bytes por parámetro), el tamaño en memoria es de aproximadamente 90 GB, más overhead de activaciones y KV cache. Se recomienda un mínimo de 4 GPUs con 80 GB de VRAM cada una (A100, H100) para servir con tensor parallelism 4, como indica el comando de ejemplo.
-- GPU recomendadas: NVIDIA A100 80GB, H100 80GB, o superiores. No se recomienda su uso en GPUs de consumo (RTX 4090, etc.) por la memoria necesaria, aunque con cuantizaciones adicionales podría intentarse, pero no está soportado oficialmente.
-- Opciones de despliegue: vLLM (con el contenedor `vllm/vllm-openai:glm53-flash`), compatible con el formato safetensors. También podría usarse con otras herramientas que soporten NVFP4, pero vLLM es la opción recomendada por el autor.
-- Latencia y throughput: no disponible en la información proporcionada. Dependerá del hardware y la configuración de tensor parallelism.
+- VRAM estimada: el repositorio pesa 197,9 GB, de modo que en FP4 se necesita del orden de 200 GB de memoria de GPU para los pesos, más espacio para caché KV y activaciones. La configuración de referencia usa 4 GPU con tensor parallelism y `--gpu-memory-utilization 0.85`.
+- GPU recomendadas: el despliegue oficial se basa en la imagen `vllm/vllm-openai:glm53-flash` con 4 GPU. NVFP4 requiere hardware con soporte nativo de FP4 (familia Blackwell, como B200); no se documenta compatibilidad con generaciones anteriores.
+- GPU de consumo: no cabe en GPU de consumo. Con 169,1 mil millones de parámetros y ~200 GB de pesos, se necesitan varias GPU de centro de datos.
+- Opciones de despliegue: vLLM es la vía soportada y documentada. No se mencionan llama.cpp, Ollama ni TGI; el formato compressed-tensors y NVFP4 limitan las alternativas.
+- Flags relevantes de serving: `--tensor-parallel-size 4`, `--no-enable-flashinfer-autotune`, `--tool-call-parser glm47`, `--enable-auto-tool-choice`, `--reasoning-parser glm45`, `VLLM_ENGINE_READY_TIMEOUT_S=3600`.
+- Para decodificación especulativa: añadir `--disable-custom-all-reduce`, `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True` y `--speculative-config '{"method":"mtp","num_speculative_tokens":5}'`.
+- Latencia y throughput: no disponibles. El uso de MTP con 5 tokens especulativos está orientado a mejorar la velocidad de decodificación, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Cuantización |
-|---|---|---|---|---|---|
-| GLM-5.3-Flash (base) | 320B (18B activos) | 1M | Sí | no disponible | BF16 |
-| RedHatAI/GLM-5.3-Flash-NVFP4 | 180,7B (repo) | 1M | Sí | no disponible | NVFP4 |
-| GLM-4.5 (referencia) | ~355B (MoE) | 128K | No | MIT | BF16/FP8 |
+| Modelo | Parametros | Contexto | Cuantizacion | Multimodal | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| RedHatAI/GLM-5.3-Flash-NVFP4 | 169,1 mil M | no disponible | NVFP4 (expertos MoE), MTP en FP8 | Si (imagen + texto) | MIT | Hugging Face, vLLM |
+| zai-org/GLM-5.3-Flash (base) | no disponible | no disponible | Original (sin cuantizar) | Si (imagen + texto) | MIT | Hugging Face |
+| Otras cuantizaciones del mismo base | no disponible | no disponible | no disponible | Si | MIT (heredada) | no disponible |
 
-No se dispone de datos de rendimiento comparativos. La comparativa se basa en parámetros y características arquitectónicas. Otros modelos comparables podrían ser Qwen2.5-VL o DeepSeek-V3, pero no se dispone de información suficiente para una comparación rigurosa.
+No se dispone de información sobre modelos alternativos de tamaño y categoria comparables (por ejemplo, otras variantes FP4 de modelos MoE multimodales) en la documentación proporcionada, por lo que la comparación cuantitativa de rendimiento queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: el uso comercial puede estar restringido; se debe contactar con Red Hat AI o Z.ai para aclarar los términos.
-- Sesgos y alucinaciones: al ser un modelo de lenguaje grande, puede generar contenido incorrecto o sesgado; se recomienda validación humana en aplicaciones críticas.
-- Limitaciones de idioma: no se han publicado los idiomas soportados, por lo que el rendimiento en lenguas minoritarias es incierto.
-- Requisitos de hardware elevados: necesita múltiples GPUs de alta gama, lo que limita su despliegue en entornos con recursos reducidos.
-- Cuantización NVFP4: aunque reduce memoria, puede degradar ligeramente la calidad en tareas de precisión; se recomienda evaluar en el caso de uso específico.
-- Dependencia de vLLM: el modelo está optimizado para vLLM; otras herramientas de inferencia pueden no ser compatibles o requerir adaptaciones.
+- La cuantización FP4 puede degradar la precisión frente al modelo base; no se publican resultados del base sin cuantizar, así que el impacto real no es verificable con los datos disponibles.
+- Solo se cuantizan los operadores lineales de los expertos MoE; el resto de capas mantiene otra precisión, lo que implica un perfil de memoria heterogéneo y menos predecible.
+- NVFP4 exige hardware con soporte FP4; en GPU sin esa capacidad el modelo no es desplegable o requiere conversión adicional.
+- Idiomas documentados únicamente inglés y chino; el rendimiento en castellano no está evaluado ni garantizado.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente en dominios científicos y matemáticos donde el formato de respuesta puede parecer correcto sin serlo.
+- No hay información sobre sesgos, filtros de seguridad ni evaluación de toxicidad del modelo base ni de esta variante.
+- Los benchmarks publicados cubren solo razonamiento (matemáticas y ciencia); no hay datos de código, seguimiento de instrucciones, tareas multimodales ni robustez ante prompts adversarios.
+- La licencia MIT permite uso comercial, pero se heredan las condiciones del modelo base; conviene verificar la licencia y los términos de zai-org/GLM-5.3-Flash antes de un despliegue en producción.
+- El tamaño del repositorio (197,9 GB) y la necesidad de 4 GPU implican un coste de infraestructura elevado y tiempos de carga considerables (`VLLM_ENGINE_READY_TIMEOUT_S=3600` sugiere arranques lentos).
+- No se documentan límites de contexto ni estrategias de truncado, lo que dificulta dimensionar la caché KV en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Repositorio de LLM Compressor: https://github.com/vllm-project/llm-compressor
-- Guía de GLM-5.3-Flash (fuente externa): https://glm-ai.chat/models/glm-5-3-flash/
-- Artículo sobre benchmarks (fuente externa): https://officechai.com/ai/glm-5-3-flash-benchmarks/
-- Variante BF16-NVFP4: https://huggingface.co/RedHatAI/GLM-5.3-Flash-BF16-NVFP4
+- README del repositorio: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4/blob/main/README.md
+- LLM Compressor: https://github.com/vllm-project/llm-compressor
+- lm-evaluation-harness (fork Neural Magic): https://github.com/neuralmagic/lm-evaluation-harness
+- lighteval (fork Neural Magic): https://github.com/neuralmagic/lighteval
+- Licencia MIT: https://choosealicense.com/licenses/mit/

@@ -41,7 +41,7 @@
   ],
   "likes": 579,
   "downloads_30d": 92081,
-  "trending_score": 13,
+  "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 244832022,
@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Cactus : variétés, plantation, entretien et association - Jardiland",
-      "url": "https://www.jardiland.com/conseils-idees/cactus-qui-es-tu",
-      "snippet": "Sep 13, 2023 · Quelles sont les différentes variétés de cactus ? Quel cactus d'intérieur choisir ? Comment les entretenir ? Avec …"
-    },
-    {
-      "title": "Cactaceae — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Cactaceae",
-      "snippet": "Cactus et succulentes sont distinctes : toutes les plantes succulentes ne sont pas des Cactus. Ce sont des familles de plantes qui …"
-    },
-    {
-      "title": "Liste de tous les cactus – Découvrez nos fiches et conseils d'entretien",
-      "url": "https://cactus-passion.com/fr/plantes/categories/cactus.php",
-      "snippet": "Explorez notre liste complète de cactus avec fiches détaillées, photos et conseils d'entretien pour chaque espèce. Idéal pour …"
-    },
-    {
-      "title": "Photos et noms des cactus ️ identifiez vos cactus – Cactus Encyclo",
-      "url": "https://www.cactus-encyclo.com/identification-cactus/",
-      "snippet": "Vous avez un cactus et souhaitez savoir son nom ou son genre facilement ? Découvrez une liste complète des différents cactus, …"
-    },
-    {
-      "title": "Cactus - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Cactus",
-      "snippet": "In tropical regions, other cacti grow as forest climbers and epiphytes (plants that grow on trees). Their stems are typically flattened, …"
-    }
-  ]
+  "sources": []
 }

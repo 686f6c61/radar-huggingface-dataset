@@ -2,106 +2,107 @@
 
 ## Resumen
 
-Winnow-E4B es un ajuste fino (fine-tune) del modelo multimodal Gemma 4 E4B IT, desarrollado por el usuario EldanRing, orientado a la toma de decisiones tipadas (typed decisions). Su funcion principal no es generar explicaciones, sino recibir un estado compartido y un conjunto de preguntas con respuestas candidatas conocidas, y devolver la probabilidad asignada a cada candidata leyendo directamente los logits de esas respuestas. Sirve para enrutar peticiones, elegir acciones, comprobar condiciones o puntuar urgencia.
+Winnow-E4B es un ajuste fino (fine-tune) del modelo multimodal Gemma 4 E4B IT de Google, desarrollado por EldanRing. Su particularidad es que no es un modelo generativo al uso: está especializado en emitir decisiones tipadas (typed decisions). El usuario le proporciona un estado compartido y una pregunta con opciones de respuesta conocidas, y el modelo puntúa cada candidata sin generar una explicación en lenguaje natural. Esto lo convierte en una pieza orientada a sistemas de enrutamiento, selección de acciones y clasificación condicionada.
 
-El modelo mantiene, ademas, las capacidades habituales de chat generativo, con head de generacion completo, plantilla de chat y soporte de entrada de imagen mediante el proyector de vision correspondiente. Tecnicamente es un LoRA de rango 32 y alpha 64 sobre los tensores de lenguaje del modelo base; los modulos de vision y audio permanecieron congelados durante el entrenamiento. El adaptador se fusiono en FP32 antes de convertirse a GGUF Q8_0 y BF16.
+El modelo se distribuye exclusivamente en formato GGUF (Q8_0 y BF16) junto con un proyector de visión F16 separado, lo que facilita la inferencia local. El repositorio ocupa 24,2 GB e incluye tanto los pesos del modelo de lenguaje como el proyector multimodal. La arquitectura subyacente es la de Gemma 4 E4B IT, con aproximadamente 78 millones de parámetros según los datos de safetensors, aunque el tamaño del repositorio y de los ficheros GGUF (8,01 GB en Q8_0, 15,05 GB en BF16) sugiere que la cifra de parámetros publicada no refleja el total real del modelo.
 
-Es relevante ahora porque propone un patron de inferencia distinto al chat clasico: un servidor dedicado que comparte el prefill del estado entre preguntas, reutiliza prefijos cacheados y evalua unicamente los tokens candidatos verificados, lo que reduce coste frente a generar texto libre. El repositorio acumula 28.414 descargas y 9 likes, con licencia Apache 2.0, lo que facilita su uso comercial. La model card no detalla la longitud de contexto ni el numero de tokens de entrenamiento.
+La relevancia actual de Winnow-E4B radica en su enfoque: separar la toma de decisiones de la generación de texto permite obtener latencias muy bajas (147,8 decisiones por segundo en una RTX 5070 Ti con carga de 8K) y probabilidades calibradas sobre opciones discretas. Está pensado para integrarse en pipelines de agentes y sistemas de enrutamiento donde la explicación textual es coste innecesario.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Gemma 4 E4B IT), multimodal texto-imagen, con head de generacion y proyeccion de candidatas |
-| Parametros totales | 77.993.732 segun los safetensors reportados por Hugging Face (ver advertencia en Limitaciones) |
+| Arquitectura | Transformer multimodal (base Gemma 4 E4B IT), ajuste fino para decisiones tipadas |
+| Parametros totales | 77.993.732 (dato de safetensors; no coherente con el tamano de los GGUF) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q8_0 y BF16 (segun la model card); adaptador fusionado en FP32 antes de la conversion |
+| Longitud de contexto | hasta 65.023 posiciones observadas en pruebas con imagen; 64K en sondas de vision y chat |
+| Tipos de cuantizacion | Q8_0, BF16 (pesos); cache K/V en F16 por defecto, Q8_0 opcional |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q8_0 y BF16); safetensors para el adaptador/LoRA |
+| Formato de pesos | GGUF (Q8_0 y BF16) + proyector de vision F16 (mmproj) |
 
 ## Arquitectura y entrenamiento
 
-Winnow-E4B parte del modelo instructivo google/gemma-4-E4B-it y se construye mediante un LoRA de rango 32 y alpha 64 aplicado sobre los tensores de lenguaje. Los modulos de vision y audio no se entrenaron y permanecen congelados, de modo que el modelo conserva la entrada de imagen a traves del proyector de vision asociado al modelo base. El adaptador se fusiono en precision FP32 y despues se convirtio a GGUF en Q8_0 y BF16. La head de generacion de chat se mantiene intacta, mientras que el servidor de decisiones proyecta unicamente las filas correspondientes a las respuestas candidatas de cada peticion.
+Winnow-E4B es un fine-tune del modelo base google/gemma-4-E4B-it, que combina un modelo de lenguaje con un codificador visual para entrada image-text-to-text. El ajuste no añade un adaptador separado: los GGUF publicados contienen el fine-tune ya fusionado, de modo que no es necesario descargar el modelo base ni un adaptador adicional. Para entrada de imagen se utiliza el proyector de visión correspondiente (mmproj-Winnow-E4B.gguf, F16, 990 MB).
 
-El conjunto de entrenamiento es privado y no se ha publicado ni los datos ni el pipeline. La model card describe que combina decisiones contrastivas sinteticas, etiquetas verificadas, distribuciones de un modelo teacher cuando procedia, tareas semanticas y casos dificiles especificos, con separacion entre entrenamiento, desarrollo, calibracion y tests reservados. No se menciona el uso de RLHF ni DPO. La innovacion tecnica destacable es el modo de decision: el servidor comparte el prefill del estado entre preguntas, reutiliza un prefijo cacheado cuando coincide y evalua solo los tokens candidatos verificados, pudiendo procesar preguntas en ramas o waves paralelas sin cargar otra copia del modelo.
+El entrenamiento está orientado a un formato de decisión tipado con tres tipos de pregunta: `noul` (pregunta sí/no, devuelve probabilidad de `true`), `choice` (opciones nombradas con descripciones opcionales, devuelve opción seleccionada, probabilidades y confianza) y `score` (niveles ordenados, devuelve probabilidades por nivel, puntuación esperada y confianza). Las preguntas comparten un prefijo de estado que puede reutilizarse desde caché. El autor menciona etiquetas de profesor sintéticas para el panel de decisiones tipadas y un proceso de calibración de temperatura (1,2574172017327816 para Q8 y 1,3331553765162731 para BF16, ajustadas sobre 778 preguntas). También existe un modo de razonamiento adaptativo que genera contexto antes de repuntuar la pregunta, con mejora de Brier de 0,524807 a 0,481402 y de NLL de 1,591870 a 1,385153 en una evaluación calibrada 50:50. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Decisiones tipadas en tres formatos: `noul` (pregunta de si/no, devuelve probabilidad de verdadero), `choice` (opciones con nombre y descripcion opcional, devuelve opcion elegida, probabilidades por opcion y confianza) y `score` (lista ordenada de niveles, devuelve probabilidades por nivel, puntuacion esperada y confianza).
-- Generacion de texto conversacional mediante `/v1/chat/completions`, con vocabulario y plantilla de chat completos, incluido streaming.
-- Entrada de imagen a traves del proyector de vision cuando esta cargado (pipeline image-text-to-text).
-- Procesamiento conjunton de varias preguntas sobre un mismo estado compartiendo el prefill y reutilizando prefijos cacheados.
-- Procesamiento de preguntas en ramas o waves paralelas sin duplicar el modelo en memoria.
-- Proyeccion selectiva sobre filas de tokens candidatos para las preguntas, en lugar de generar explicaciones.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte explicito de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada (aunque el enrutamiento de decisiones puede integrarse en flujos de agente).
-- Capacidades multilingues: no disponible.
-- Capacidades de audio: los modulos de audio del modelo base permanecieron congelados; el fine-tune no entrena esa parte. No se declara soporte de audio en la model card.
+- Decisiones tipadas: puntuación de opciones discretas (`noul`, `choice`, `score`) con probabilidades y medida de confianza.
+- Enrutamiento de peticiones y selección de acciones a partir de un estado compartido.
+- Verificación de condiciones y clasificación de urgencia.
+- Chat conversacional ordinario mediante el endpoint `/v1/chat/completions`, con streaming.
+- Entrada de imagen a través del proyector de visión (pipeline image-text-to-text).
+- Reutilización de prefijo de estado en caché para múltiples preguntas sobre el mismo contexto.
+- Razonamiento adaptativo opcional: genera contexto antes de repuntuar una decisión.
+- Decodificación especulativa con un asistente MTP fijado que comparte la caché K/V del modelo objetivo.
+- Compatibilidad con endpoints estilo OpenAI (`/v1/systemone` para decisiones, `/v1/chat/completions` para chat).
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: una misma peticion puede preguntar si el cliente solicita un reembolso (`noul`) y a que equipo debe ir el ticket (`choice` con criterios billing/technical), devolviendo probabilidades por opcion y confianza para decidir el destino.
-- Clasificacion de urgencia: usando el tipo `score` con una escala ordenada de niveles, el modelo devuelve la distribucion de probabilidad por nivel y la puntuacion esperada, util para priorizar colas de atencion.
-- Seleccion de acciones en agentes: dado un estado y un conjunto cerrado de acciones posibles, el modelo asigna probabilidades a cada accion, lo que permite construir politicas de decision deterministas con umbrales de confianza.
-- Comprobacion de condiciones en pipelines: preguntas de si/no sobre un estado permiten implementar validaciones (por ejemplo, si un texto cumple una politica) sin generar texto adicional.
-- Etiquetado automatico de datos: el modo de decisiones permite asignar etiquetas verificadas a grandes volumenes de ejemplos aprovechando que solo se evaluan los tokens candidatos, con menor coste que la generacion libre.
-- Chat multimodal asistido: mediante `/v1/chat/completions` con streaming, el modelo puede mantener conversaciones multi-turno e incorporar imagenes cuando el proyector de vision esta cargado.
-- Moderacion y triaje de contenido: combinando preguntas de condicion y clasificacion de categorias para derivar cada caso al flujo adecuado.
+- Enrutamiento de peticiones en sistemas multiagente: dado un estado de conversación y un conjunto de rutas posibles, el modelo devuelve la ruta seleccionada con probabilidades, lo que permite umbrales de confianza y derivación a un humano cuando la concentración es baja.
+- Selección de acciones en agentes: con las acciones disponibles como opciones nombradas, el modelo puntúa cada una sin generar texto, reduciendo la latencia en bucles de decisión donde se encadenan muchas elecciones por segundo.
+- Verificación de condiciones en pipelines: preguntas sí/no (`noul`) sobre un estado compartido para decidir si se cumple una precondición antes de ejecutar un paso, con probabilidad de `true` como señal.
+- Clasificación de urgencia: uso del tipo `score` con niveles ordenados para asignar prioridad a tickets o alertas, con puntuación esperada y confianza por nivel.
+- Procesamiento de documentos con imagen: gracias al proyector de visión y la ventana de hasta 65K posiciones, se puede cargar una imagen de documento como estado y lanzar múltiples preguntas tipadas reutilizando el prefijo en caché (129–131 ms por pregunta tras un primer request de 11,59 s).
+- Chat local con soporte de imagen: despliegue en estación de trabajo con GGUF Q8_0 para conversación y consultas visuales, con generación de 512 tokens a 71,2 tokens/s en un prompt multimodal de 62.431 posiciones.
+- Calibración de políticas de decisión: el modelo expone probabilidades y confianza, lo que permite ajustar umbrales y comparar contra etiquetas de referencia en paneles propios.
 
 ## Benchmarks y rendimiento
 
-Evaluacion sobre el GGUF Q8 descargable frente a Winnow-12B Q8 en las mismas preguntas. Se reporta exactitud de primera opcion, salvo el panel local tipado, que mide acuerdo con etiquetas sinteticas del teacher.
-
 | Evaluacion | Winnow-E4B Q8 | Winnow-12B Q8 |
 |---|---:|---:|
-| JevBench subset publico, 231 preguntas | 80,52% (186/231) | 85,71% (198/231) |
+| JevBench subconjunto publico, 231 preguntas | 80,52% (186/231) | 85,71% (198/231) |
 | Kev v9 clean, 1.046 preguntas | 72,66% | 81,45% |
 | Kev v9 additional, 390 preguntas | 55,90% | 68,97% |
 | Decisiones tipadas locales, 2.000 decisiones | 72,30% | 70,10% |
 
-Rendimiento declarado, medido en una RTX 5070 Ti de 16 GB, con carga de texto de 8K, pesos Q8 y KV cache, mediana de diez peticiones en caliente: 147,8 decisiones/s con 64 preguntas por peticion, frente a 67,2 decisiones/s de Winnow-12B Q8. La model card indica que la tabla de tiempos incluye lotes mas pequenos y uso de memoria. El comparador de 12B usa 852/1.046 en Kev-clean, distinto del 853/1.046 de otra campana, por lo que esos comparadores historicos no son intercambiables. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+Rendimiento medido en RTX 5070 Ti 16 GB: 147,8 decisiones/s para E4B Q8 frente a 67,2 decisiones/s para 12B Q8, con 64 preguntas por petición, mediana de diez peticiones en caliente con pesos Q8 y caché K/V Q8. Memoria pico observada: 8,56 GiB en carga de decisión de texto de 8K (se sugiere GPU de 10 GB o más) y 10,72 GiB en sondas de visión y chat de 64K (se sugiere 12 GB o más). En un prompt multimodal de 62.431 posiciones se generaron 512 tokens a 71,2 tokens/s.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma exacta; el modelo se probo en una RTX 5070 Ti de 16 GB con pesos Q8 y KV cache.
-- GPU recomendadas: no disponibles mas alla de la RTX 5070 Ti de 16 GB mencionada como plataforma de prueba.
-- Cabe en GPU de consumo: si, al menos en RTX 5070 Ti 16 GB con Q8.
-- Tamano del repositorio: 24,2 GB (incluye los GGUF Q8_0 y BF16).
-- Opciones de despliegue: llama.cpp y Ollama para los ficheros GGUF; el servidor de inferencia winnow-inference, que expone `/v1/systemone` para decisiones y `/v1/chat/completions` compatible con la API de OpenAI (tag endpoints_compatible). No se confirma soporte de vLLM ni TGI en la informacion proporcionada.
-- Latencia y throughput: 147,8 decisiones/s a 64 preguntas por peticion (texto, 8K, Q8, RTX 5070 Ti 16 GB). La latencia de decision individual y el uso de memoria aparecen en la tabla de tiempos del informe de benchmarks, no reproducida aqui en detalle.
+- VRAM estimada: 8,56 GiB para carga de decisión de texto de 8K con Q8; 10,72 GiB para sondas de visión y chat de 64K con Q8.
+- GPU recomendadas: RTX 5070 Ti 16 GB (mediciones publicadas); se sugiere capacidad de 10 GB o más para texto y 12 GB o más para visión y chat.
+- Cabe en GPU de consumo: sí, con Q8_0 en tarjetas de 12 GB o más para uso multimodal; BF16 requiere más memoria (fichero de 15,05 GB).
+- Opciones de despliegue: servidor de inferencia propio del autor (winnow-inference) con endpoints `/v1/systemone` y `/v1/chat/completions`; formato GGUF compatible con el ecosistema llama.cpp. No se detallan integraciones con vLLM, TGI u Ollama.
+- Latencia: 129–131 ms por pregunta en caché sobre un estado de imagen de 65.023 posiciones tras un primer request de 11,59 s; tiempo medio HTTP directo de 37 ms y 234 ms para el router completo en un flujo histórico concreto.
+- Throughput: 147,8 decisiones/s con 64 preguntas por petición en RTX 5070 Ti.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento en decisiones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Winnow-E4B | 77.993.732 (safetensors reportados) | no disponible | JevBench 80,52%; Kev clean 72,66%; panel local 72,30% | Apache 2.0 | GGUF Q8_0 y BF16 en Hugging Face |
-| Winnow-12B | no disponible | no disponible | JevBench 85,71%; Kev clean 81,45%; panel local 70,10% | no disponible | referenciado como comparador |
-| Gemma 4 E4B IT (base) | no disponible | no disponible | no disponible | no disponible | modelo base en Hugging Face |
+| Winnow-E4B | 77,99 M (segun safetensors) | hasta 65.023 posiciones observadas | 80,52% JevBench; 72,66% Kev clean; 72,30% typed local | Apache 2.0 | GGUF en Hugging Face |
+| Winnow-12B | no disponible | no disponible | 85,71% JevBench; 81,45% Kev clean; 70,10% typed local | no disponible | referenciado por el autor |
+| Gemma 4 E4B IT | no disponible | no disponible | no disponible | no disponible | modelo base en Hugging Face |
 
-No se dispone de datos de benchmarks estandar para Winnow-E4B frente a otros modelos de proposito general, por lo que la comparacion se limita al comparador interno Winnow-12B y al modelo base.
+No se dispone de datos de otros modelos comparables de la misma categoría (modelos de decisión tipada) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La confianza devuelta describe cuan concentrada esta la distribucion de probabilidad; no garantiza que la respuesta sea correcta.
-- Las probabilidades de las candidatas son condicionales a las opciones incluidas en cada peticion, de modo que la calidad depende de que las opciones esten bien definidas.
-- El conjunto de entrenamiento y el pipeline son privados y no se han publicado, lo que impide reproducir el entrenamiento o auditar los datos.
-- Los resultados publicados corresponden a una comparacion de modelos ya desplegados, no a una estimacion fresca sobre tareas no vistas.
-- El panel local de decisiones tipadas mide acuerdo con etiquetas sinteticas del teacher, no con verdad verificada de forma independiente para cada item.
-- La cifra de JevBench es exactitud sobre un subset publico, no la puntuacion oficial compuesta del leaderboard.
-- La cifra de parametros totales (77.993.732) procede de los safetensors reportados por Hugging Face y probablemente no refleja el modelo multimodal completo con todos sus tensores; conviene verificarla contra el modelo base.
-- No se dispone de informacion sobre idiomas soportados ni sobre sesgos conocidos.
-- No se declara soporte de tool calling ni de audio, y los modulos de vision y audio no fueron entrenados durante el fine-tune.
-- Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, sujeto a los terminos de la propia licencia y a los del modelo base Gemma 4 E4B IT.
-- Para produccion, la dependencia del servidor winnow-inference para el endpoint `/v1/systemone` implica acoplarse a una implementacion concreta.
+- El modelo puntúa opciones condicionadas al conjunto suministrado: la confianza mide concentración de probabilidad, no corrección garantizada.
+- Los paneles Jev, Kev y Typed son conjuntos congelados usados durante el desarrollo, por lo que las cifras pueden estar optimizadas respecto a esos datos.
+- El resultado de JevBench es precisión sobre el subconjunto público, no la puntuación compuesta del leaderboard.
+- El modo de razonamiento adaptativo mejora la calibración pero puede degradar el acuerdo con etiquetas de profesor: una receta histórica no calibrada perdió 57 acuerdos tipados (1.447 a 1.390 sobre 2.000).
+- La cifra de parámetros publicada (77,99 M) no es coherente con el tamaño de los ficheros GGUF; conviene verificar el total real antes de planificar memoria.
+- No se especifican los idiomas soportados; el comportamiento multilingüe no está documentado.
+- No se detallan sesgos conocidos ni tasas de alucinación en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Gemma 4 E4B IT puede tener sus propias condiciones que conviene revisar.
+- La temperatura de calibración está ajustada por perfil de ejecución (Q8 y BF16 tienen valores distintos); usar el valor de otro perfil altera las probabilidades.
+- El despliegue depende del servidor de inferencia del autor; no se documentan integraciones con otros runtimes más allá del formato GGUF.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/EldanRing/Winnow-E4B
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
+- Quickstart: https://github.com/EldanRing/winnow-inference/blob/main/docs/QUICKSTART.md
 - Codigo de inferencia: https://github.com/EldanRing/winnow-inference
-- Referencia de la API: https://github.com/EldanRing/winnow-inference/blob/main/docs/API.md
-- Quickstart del servidor: docs/QUICKSTART.md#build-the-server (dentro del repositorio de inferencia)
-- Detalles de evaluacion: docs/BENCHMARKS.md (dentro del repositorio de inferencia)
-- Paper: no disponible
+- Referencia de API: https://github.com/EldanRing/winnow-inference/blob/main/docs/API.md
+- Benchmarks: docs/BENCHMARKS.md (en el repositorio del modelo)
+- Evaluaciones de razonamiento: docs/REASONING.md (en el repositorio del modelo)
+- Perfiles de ejecucion: docs/RUNTIME-PROFILES.md (en el repositorio del modelo)
+- Sumas de verificacion: https://huggingface.co/EldanRing/Winnow-E4B/blob/main/SHA256SUMS
+- Descarga Q8_0: https://huggingface.co/EldanRing/Winnow-E4B/resolve/main/gguf/Winnow-E4B-Q8_0.gguf?download=true
+- Descarga BF16: https://huggingface.co/EldanRing/Winnow-E4B/resolve/main/gguf/Winnow-E4B-BF16.gguf?download=true
+- Proyector de vision: https://huggingface.co/EldanRing/Winnow-E4B/resolve/main/gguf/mmproj-Winnow-E4B.gguf?download=true

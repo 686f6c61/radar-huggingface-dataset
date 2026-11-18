@@ -2,100 +2,89 @@
 
 ## Resumen
 
-LFM3-Omni-2B-GGUF es la versión cuantizada en formato GGUF de LFM3-Omni-2B, un modelo ómnimodal desarrollado por Liquid AI que comprende texto, imágenes, vídeo y audio, y responde tanto en texto como en voz sintetizada. Su orientación explícita es la inferencia en dispositivo (*on-device*), y esta variante GGUF existe para ejecutarlo localmente en CPU y GPU mediante llama.cpp, sin depender de infraestructura de servidor.
+LFM3-Omni-2B es un modelo omni-modal desarrollado por Liquid AI que comprende texto, imágenes, vídeo y audio, y responde tanto en texto como en voz. Esta ficha corresponde a su versión GGUF, publicada por el propio autor para inferencia local en CPU y GPU mediante llama.cpp y sus derivados (LM Studio, Ollama, Llama.app). El modelo base cuenta con aproximadamente 1.728 millones de parámetros (1,7 B) y está diseñado para ejecución on-device, lo que lo sitúa en la gama de modelos pequeños capaces de correr en hardware de consumo.
 
-El modelo forma parte de la familia LFM3 de Liquid AI y se distribuye con licencia LFM1.0 (*other*). Aunque la nomenclatura comercial lo denomina "2B", el recuento real de parámetros en safetensors es de 1.728.801.600 (aproximadamente 1,73 mil millones), un tamaño que lo sitúa en la gama de modelos pequeños capaces de correr en hardware de consumo.
+La relevancia de esta versión radica en que empaqueta capacidades any-to-any (entrada de audio, imagen, vídeo y texto; salida de texto y habla) en un único artefacto GGUF compatible con el ecosistema llama.cpp, incluyendo conversaciones de voz en tiempo real con tool calls a través de la API WebSocket `/v1/realtime`. Liquid AI lo presenta como un modelo no razonador (non-reasoning), pensado para respuestas directas con decodificación greedy en texto.
 
-Su relevancia actual radica en la combinación de tres factores: modalidad de entrada amplia (audio, imagen y vídeo además de texto), salida de voz además de texto, y un pipeline `any-to-any` empaquetado en GGUF para llama.cpp. No obstante, el soporte en llama.cpp de LFM3-Omni depende todavía de la fusión del *pull request* ggml-org/llama.cpp#31257, por lo que a fecha de la información disponible requiere compilar desde esa rama.
+La licencia es LFM1.0 (lfm1.0, marcada como "other" en Hugging Face), y el modelo declara soporte para 23 idiomas, entre ellos el español. Con más de 500.000 descargas y 186 likes en el momento de la consulta, es una de las propuestas más visibles dentro de la categoría de modelos omni-modales pequeños y abiertos para despliegue local.
 
 ## Especificaciones técnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo ómnimodal de la familia LFM3; la model card remite a la ficha del modelo base para los detalles de arquitectura) |
-| Parámetros totales | 1.728.801.600 (≈1,73 B) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | GGUF con varios niveles de cuantización; se documenta Q4_K_M para el modelo y Q8_0 para el proyector multimodal (`mmproj-LFM3-Omni-2B-Q8_0.gguf`) |
-| Idiomas soportados | 23: en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr |
-| Licencia | LFM1.0 (`license: other`, `license_name: lfm1.0`) |
-| Formato de pesos | GGUF (este repositorio); el modelo base es LiquidAI/LFM3-Omni-2B |
-
-Otros datos del repositorio: tamaño total de 13,4 GB (incluye varias cuantizaciones y el proyector multimodal), pipeline `any-to-any`, etiquetas `llama.cpp`, `audio`, `vision`, `omni`, y compatibilidad declarada con endpoints.
+| Arquitectura | no disponible (modelo omni-modal any-to-any; detalles en la model card del modelo base) |
+| Parametros totales | 1.728.801.600 (≈1,7 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (el ejemplo de la model card usa Q4_K_M; no se enumeran todas las variantes) |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (23 idiomas) |
+| Licencia | lfm1.0 (license: other) |
+| Formato de pesos | GGUF (repo de 16,1 GB; incluye proyectores de visión y audio) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna: la model card de esta variante GGUF remite explícitamente a la ficha del modelo base (LiquidAI/LFM3-Omni-2B) para los detalles de arquitectura y uso. Lo que sí se documenta es el comportamiento funcional: se trata de un modelo ómnimodal que acepta texto, imagen, vídeo y audio como entrada, y produce texto y habla como salida, con un diseño orientado a ejecución local en dispositivo.
+La información disponible no detalla la arquitectura interna del modelo base más allá de su naturaleza omni-modal: procesa texto, imágenes, vídeo y audio como entrada y genera texto y habla como salida. La model card de esta versión GGUF remite explícitamente a la model card de LiquidAI/LFM3-Omni-2B para los detalles de arquitectura y uso, por lo que no se dispone aquí de datos sobre tipo de transformer, capas, atención o mecanismos híbridos.
 
-Tampoco se especifican en la información proporcionada el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Un dato relevante de configuración es que LFM3-Omni-2B se define como modelo *no razonador* (*non-reasoning*): en `llama-server` debe lanzarse con `--reasoning off`. En el plano técnico, el empaquetado incluye un proyector multimodal separado (vision/audio projector) que llama.cpp descarga automáticamente al usar `-hf`, y los parámetros de muestreo de audio del modelo original quedan almacenados dentro del propio GGUF.
+Tampoco se han publicado en la información proporcionada datos sobre volumen de tokens de entrenamiento, composición del dataset, ni si hubo fases de RLHF o DPO. Lo que sí se documenta es su condición de modelo no razonador (non-reasoning), el uso recomendado de decodificación greedy (temperatura 0) para salida de texto y, para salida de voz, temperatura de audio 0,4 con penalización de repetición de audio 1,2. La integración con llama.cpp desde la build b11960 (v0.8.0) incluye soporte de conversaciones de voz en tiempo real con tool calls sobre la API `/v1/realtime` de `llama serve`.
 
 ## Capacidades
 
-- Comprensión de texto en 23 idiomas, con generación de respuestas en texto.
-- Comprensión de imágenes: descripción y análisis de fotos mediante entrada `--image`.
-- Comprensión de audio: reconocimiento de voz (ASR) invocando el *system prompt* `Perform ASR in <language>.`
-- Comprensión de vídeo en el modelo base; en llama.cpp el vídeo todavía no está soportado.
-- Síntesis de voz (*text-to-speech*) mediante `llama-tts`, con selección de idioma (`--tts-lang`, por defecto `en`) y de voz (`--tts-voice`: `female` por defecto, o `male`).
-- Salida multimodal: responde en texto y en habla.
-- Ejecución local en CPU y GPU a través de llama.cpp, con cuantizaciones GGUF.
-- Modelo *no razonador*: no incluye modo de razonamiento explícito (se debe desactivar con `--reasoning off` en `llama-server`).
-- Soporte de *tool calling* / *function calling*: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Comprensión de texto, imágenes, vídeo y audio en un único modelo (any-to-any).
+- Generación de respuestas en texto y en voz (speech output).
+- Reconocimiento automático del habla (ASR) mediante el system prompt `Perform ASR in <language>.`
+- Conversaciones de voz en tiempo real con tool calls a través de la API WebSocket `/v1/realtime` de `llama serve`.
+- Soporte multilingüe declarado en 23 idiomas, incluido el español.
+- Ejecución local en CPU y GPU mediante llama.cpp, LM Studio, Ollama y Llama.app.
+- Modelo no razonador: orientado a respuestas directas, sin cadena de pensamiento explícita (con `llama serve` debe usarse `--reasoning off`).
+- No se documenta en la información disponible soporte específico de function calling en texto más allá de las tool calls en el flujo de voz en tiempo real.
 
 ## Casos de uso
 
-- Transcripción de reuniones y notas de voz: usando el *system prompt* `Perform ASR in <language>.` con `llama-mtmd-cli` y `--audio`, el modelo convierte audio en texto localmente, sin enviar grabaciones a un servicio externo, lo que resulta adecuado para entornos con requisitos de privacidad.
-- Asistentes de voz en dispositivo: la combinación de ASR y TTS en el mismo modelo permite construir un bucle de conversación por voz (entrada de audio, respuesta hablada con `llama-tts`) en hardware de gama media, sin depender de la nube.
-- Accesibilidad: lectura en voz alta de contenido y descripción de imágenes para personas con discapacidad visual, aprovechando la entrada de imagen y la salida de habla con voces `female`/`male`.
-- Descripción y etiquetado de imágenes en lotes: procesar fotos con `--image` y una instrucción como "Describe this image." con `--temp 0` para generar metadatos descriptivos deterministas en catálogos o archivos fotográficos.
-- Lectura de documentos escaneados y capturas: al aceptar imagen y texto, puede extraer y resumir información de capturas o fotos de documentos en cualquiera de los 23 idiomas soportados.
-- Prototipado e investigación en modelos ómnimodales: al ser un GGUF de 1,73 B parámetros ejecutable en llama.cpp, sirve como banco de pruebas de bajo coste para experimentos de fusión de modalidades, evaluación de ASR/TTS o comparación de cuantizaciones.
-- Aplicaciones offline en el borde: despliegue en equipos sin conectividad (kioscos, dispositivos de campo, portátiles) donde se requiere comprensión de imagen y audio sin conexión.
-- Traducción con entrada multimodal: transcripción de audio en un idioma y generación de la respuesta en otro, dentro del conjunto de 23 idiomas declarados.
+- Transcripción de audio multilingüe: usando el system prompt de ASR en el idioma deseado, el modelo convierte ficheros de voz en texto; encaja en pipelines de subtitulado o actas de reuniones por su soporte de 23 idiomas y su ejecución local sin depender de la nube.
+- Asistentes de voz en tiempo real: la API `/v1/realtime` de `llama serve` permite conversaciones habladas bidireccionales con tool calls, adecuada para interfaces manos libres en escritorio o dispositivos locales.
+- Descripción y análisis de imágenes en local: con entrada de imagen vía LM Studio, Llama.app u Ollama, sirve para etiquetado, accesibilidad (texto alternativo) o revisión de capturas en flujos de trabajo internos.
+- Análisis de vídeo para resúmenes: al aceptar vídeo como entrada, puede emplearse para generar descripciones o resúmenes de clips cortos en herramientas de documentación o archivo.
+- Procesamiento de documentos escaneados y capturas: combinando visión y texto, útil para extraer información de facturas, formularios o pantallazos en aplicaciones de escritorio.
+- Prototipado y demos on-device: al ser un GGUF de ~1,7 B parámetros ejecutable en CPU y GPU de consumo, es idóneo para pruebas de concepto de asistentes multimodales sin infraestructura de servidor dedicada.
+- Atención al cliente con voz: integrado en un servicio local compatible con OpenAI, puede gestionar interacciones habladas con llamadas a herramientas (por ejemplo, consultar un pedido) en entornos con requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de esta variante GGUF no incluye tablas de MMLU, HumanEval, GSM8K ni métricas de ASR/TTS, y remite a la ficha del modelo base para cualquier dato adicional. Tampoco se proporcionan cifras de latencia o *throughput*.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo aproximado a partir de los 1,73 B parámetros, no son cifras publicadas por el autor): en torno a 1,0–1,2 GB para los pesos en Q4_K_M, unos 1,9 GB en Q8_0 y unos 3,5 GB en FP16, a los que hay que sumar el proyector multimodal (`mmproj` en Q8_0) y la caché KV.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, el modelo entra holgadamente en GPUs de consumo con 8 GB o más de VRAM; no se documentan pruebas en A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier tarjeta con 8 GB o más de VRAM en cuantizaciones Q4_K_M o Q8_0, y también en CPU gracias al formato GGUF.
-- Opciones de despliegue: llama.cpp (`llama-mtmd-cli` para audio e imagen, `llama-server` para servidor, `llama-tts` para síntesis de voz). La API `/v1/realtime` (conversación de voz en tiempo real por WebSocket) en `llama-server` está anunciada como "coming soon". No se documentan vLLM, TGI ni Ollama en la información disponible.
-- Requisito crítico: el soporte de LFM3-Audio y LFM3-Omni en llama.cpp está pendiente de la fusión de ggml-org/llama.cpp#31257; hasta entonces hay que compilar llama.cpp desde esa rama.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: no disponible de forma oficial; el repo GGUF ocupa 16,1 GB e incluye los proyectores de visión y audio, pero el peso de cada cuantización individual no se detalla. Con cuantizaciones de 4 bits, un modelo de ~1,7 B parámetros suele situarse en el rango de 1-2 GB, aunque esta cifra no está confirmada en la información proporcionada.
+- GPU recomendadas: no disponible en la información. El modelo está pensado para inferencia local en CPU y GPU.
+- GPU de consumo: el diseño on-device y el tamaño de ~1,7 B parámetros sugieren viabilidad en GPUs de consumo, pero no se especifican modelos concretos.
+- Opciones de despliegue: llama.cpp (build b11960 / v0.8.0 o superior), LM Studio (motor llama.cpp 2.65.1 o superior), Ollama (v0.40.12 o superior), Llama.app (macOS y Windows), y `llama serve` con API compatible con OpenAI en `http://localhost:8080`.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible. La única referencia documentada es el modelo base del que deriva esta variante:
-
-| Modelo | Parámetros | Contexto | Modalidades | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|---|
-| LFM3-Omni-2B-GGUF (este) | 1,73 B | No disponible | Texto, imagen, vídeo (no en llama.cpp), audio; salida texto y voz | LFM1.0 | GGUF | Hugging Face, requiere llama.cpp con PR #31257 |
-| LFM3-Omni-2B (base) | 1,73 B | No disponible | Texto, imagen, vídeo, audio; salida texto y voz | LFM1.0 | No disponible | Hugging Face |
-| Otras alternativas ómnimodales | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+No disponible. La información proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Estado de soporte en llama.cpp: el modelo no funciona con versiones estables de llama.cpp hasta que se fusione el PR ggml-org/llama.cpp#31257; es necesario compilar desde esa rama, lo que complica el despliegue en producción.
-- El vídeo no está soportado en llama.cpp, pese a que el modelo base lo acepta como entrada.
-- La API `/v1/realtime` para voz en tiempo real sobre WebSocket en `llama-server` aún no está disponible.
-- Es un modelo *no razonador*: no debe esperarse razonamiento multi-paso explícito; en `llama-server` hay que usar `--reasoning off`.
-- Riesgo de alucinación: no cuantificado en la información disponible; como todo modelo generativo de 1,73 B parámetros, es esperable una fiabilidad limitada en tareas de conocimiento factual, pero no se aportan evaluaciones al respecto.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- Idiomas: se declaran 23, pero no se especifica la calidad relativa por idioma ni si el castellano está a la par del inglés en ASR y TTS; el idioma por defecto de síntesis es `en`.
-- Licencia LFM1.0 (`license: other`): no se detallan en la información disponible las condiciones concretas de uso comercial; es imprescindible revisar el archivo LICENSE del repositorio antes de un despliegue comercial.
-- Longitud de contexto no publicada: no es posible planificar casos de uso con documentos largos o conversaciones multi-turno extensas sin verificarlo en la ficha del modelo base.
-- Para ASR es necesario usar exactamente el *system prompt* documentado (`Perform ASR in <language>.`); no se documentan otras fórmulas.
+- Es un modelo no razonador: no genera cadenas de pensamiento explícitas y con `llama serve` requiere `--reasoning off`; puede rendir peor en tareas que exijan razonamiento multi-paso complejo.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan evaluaciones de fidelidad en la información disponible.
+- No se especifica la longitud de contexto, lo que impide planificar con precisión cargas de conversaciones largas o documentos extensos.
+- El soporte de idiomas se declara para 23 lenguas, pero no se aportan métricas por idioma; el rendimiento real en español no está cuantificado.
+- La licencia LFM1.0 (marcada como "other") puede imponer restricciones al uso comercial; es necesario revisar el fichero LICENSE del repositorio antes de desplegar en producción.
+- Las capacidades multimodales dependen de la versión del runtime: se exigen versiones mínimas de llama.cpp, LM Studio u Ollama, y la entrada de vídeo o audio no está disponible en todos los clientes (por ejemplo, LM Studio solo imagen según la model card).
+- No se detallan sesgos conocidos ni evaluaciones de seguridad en la información proporcionada.
+- El tamaño del repo (16,1 GB) incluye múltiples cuantizaciones y proyectores; conviene descargar solo el fichero necesario.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
+- Hugging Face (esta versión GGUF): https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3
-- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Guía de despliegue en llama.cpp: https://docs.liquid.ai/deployment/on-device/llama-cpp
-- Consola / API: https://console.liquid.ai/dashboard
+- Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3
+- Documentación: https://docs.liquid.ai/lfm/getting-started/welcome
+- Consola/API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- Pull request de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31257
-- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Llama.app: https://llama.app
+- LM Studio: https://lmstudio.ai
+- Ollama: https://ollama.com
+- llama.cpp (release v0.8.0): https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0
+- llama.cpp (build b11960): https://github.com/ggml-org/llama.cpp/releases/tag/b11960

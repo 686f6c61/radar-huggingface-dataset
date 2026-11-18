@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 235093634560,
   "parameters_human": "235.09B",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "technicallyAnnoyed/Qwen3-235B-A22B",
+  "renamed_at": "2026-11-18T03:24:27.795Z",
   "benchmarks": [],
   "sources": [
     {

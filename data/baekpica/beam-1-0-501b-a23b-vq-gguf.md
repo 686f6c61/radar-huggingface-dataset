@@ -1,100 +1,106 @@
 # Baekpica/Beam-1.0-501B-A23B-VQ-GGUF
 
 ## Resumen
-Beam-1.0-501B-A23B-VQ-GGUF es una conversión cuantizada del modelo Beam-1.0-501B-A23B de Reflection, un modelo de lenguaje de arquitectura mixture-of-experts (MoE) con 501.000 millones de parámetros totales y 23.000 millones de parámetros activos por token. El modelo original parte de un checkpoint en BF16 de aproximadamente 1 TB, y esta conversión lo reduce a unos 99,9 GB de partes GGUF mediante vector quantization (VQ) de 8 dimensiones aplicada a los expertos enrutados, manteniendo el resto de componentes en Q4_K o en la precisión del modelo fuente. El objetivo declarado es poder servir el modelo con su contexto completo de 1.048.576 tokens en un único dispositivo DGX Spark (GB10) con 128 GB de memoria unificada.
 
-La relevancia de esta ficha radica en que demuestra una ruta de compresión agresiva para modelos MoE de gran tamaño sin degradar de forma catastrófica las capacidades de razonamiento: según el autor, la conversión conserva entre el 96% y el 98% de las puntuaciones del modelo original en GPQA Diamond, AIME 2026 e IFBench, aunque pierde bastante en recuperación factual (índice AA-Omniscience de −4,7 frente a 10,8 del original). El modelo base incluye un drafter de decodificación especulativa (DFlash2) y una plantilla de chat Harmony modificada con canales de análisis y final, además de soporte de tool calling tipado.
+Beam-1.0-501B-A23B-VQ-GGUF es una cuantización vectorial (VQ) del modelo Reflection Beam-1.0-501B-A23B, un transformer de mezcla de expertos (MoE) desarrollado por Reflection. El modelo original, en BF16, ocupa aproximadamente 1 TB y está diseñado para contexto de 1.048.576 tokens. Esta conversión reduce el checkpoint a unos 99,9 GB de partes GGUF, pensadas para ejecutarse en una única DGX Spark con 128 GB de memoria unificada.
 
-El repositorio está publicado bajo licencia Apache 2.0, solo declara inglés como idioma soportado y requiere un runtime específico, ds4-dfm-rs, con kernels CUDA propios para los expertos GVQ y para la decodificación especulativa. No es, por tanto, un GGUF estándar cargable en llama.cpp u Ollama sin trabajo adicional.
+La innovación principal es el uso de cuantización vectorial de 8 dimensiones sobre los expertos enrutados (12 bits, y 13 bits en las ocho capas MoE inferiores), con libros de códigos, asignaciones y ganancias por fila ajustados a las estadísticas de activación de un corpus de calibración. Todo lo que el modelo lee en cada token (atención, router, normas, capas densas) se mantiene en Q4_K o en precisión de origen. El resultado es un modelo de 501B con contexto de 1M que cabe en hardware de una sola máquina.
 
-## Especificaciones técnicas
+El autor incluye además el drafter DFlash2 de Reflection (1,93B parámetros) convertido a Q8_0 para decodificación especulativa, y publica un runtime propio (ds4-dfm-rs) con kernels CUDA para los expertos GVQ, GQA con sliding-window y KV FP8, y salida Harmony con tool calls tipadas. La ficha refleja los datos publicados por el autor, incluidas las advertencias sobre revisiones cambiantes de los ficheros.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE disperso (sparse mixture-of-experts), con capas de atención completa NoPE y capas de atención de ventana deslizante |
-| Parámetros totales | 501B (modelo base); el dato de safetensors del repo indica 7.239.549.632 |
-| Parámetros activos | 23B (modelo base) |
-| Longitud de contexto | 1.048.576 tokens (9 capas de atención completa NoPE + 43 capas de ventana deslizante de 512; sin escalado RoPE) |
-| Tipos de cuantización | VQ de 8 dimensiones para expertos enrutados (12 bits en capas 11–51, 13 bits en capas 3–10), Q4_K para atención y FFN denso, BF16 para tabla de tokens y componentes sensibles, Q8_0 para el drafter DFlash2 |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (partes separadas; tabla de tokens BF16 en parte propia leída desde SSD) |
+| Arquitectura | Transformer MoE con 49 capas MoE, 9 capas de atención completa NoPE y 43 capas de sliding-window de 512 tokens |
+| Parametros totales | 501B (según nombre del modelo; el dato de safetensors del repo cuantizado indica 7.239.549.632, correspondiente a la parte densa/visible, no al total) |
+| Parametros activos | 23B (según nombre del modelo) |
+| Longitud de contexto | 1.048.576 tokens |
+| Tipos de cuantizacion | VQ 8-dimensional 12-bit (capas 11–51, K=4096) y 13-bit (capas 3–10, K=8192); Q4_K para atención, FFN densa y cabeza de salida; BF16 para tabla de embeddings y pesos sensibles |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (partes), con tabla de embeddings BF16 separada leída desde SSD; drafter en Q8_0 |
 
 ## Arquitectura y entrenamiento
-El modelo base Beam-1.0-501B-A23B es un transformer MoE con 501B parámetros totales y 23B activos. La arquitectura combina 9 capas de atención completa sin RoPE (NoPE) con 43 capas de atención de ventana deslizante de 512 tokens, lo que permite alcanzar un contexto de 1.048.576 tokens sin recurrir a escalado RoPE. Los expertos enrutados se distribuyen en 49 capas MoE, cada una con 256 expertos y matrices gate/up/down.
 
-La conversión a GGUF aplica vector quantization de 8 dimensiones sobre los expertos enrutados: un codebook E4M3 por capa compartido por todos los expertos y las tres matrices, más una ganancia F16 por fila. Las capas 3–10 usan 13 bits (K=8192, flujo de 12 bits más un plano de 1 bit) y las capas 11–51 usan 12 bits (K=4096). Los codebooks, asignaciones y ganancias se ajustaron con estadísticas de activación de un corpus de calibración ejecutado sobre el original BF16 (una importance matrix para VQ) mediante Lloyd ponderado por calibración. La atención, el FFN denso de las capas 0–2 y la cabeza de salida se cuantizan a Q4_K con el codificador de referencia GGML. Los pesos del router, el sesgo de corrección de puntuaciones, los sesgos de compuerta de atención, las normas q/k, las cuatro normas sandwich por capa y la norma final se mantienen en la precisión del modelo fuente. La tabla de tokens se conserva en BF16 en una parte separada que se lee por filas desde SSD, no residente en memoria.
+El modelo base es un transformer MoE con 49 capas de mezcla de expertos (256 expertos por capa, con matrices gate/up/down), 9 capas de atención completa sin RoPE (NoPE) y 43 capas con atención de ventana deslizante de 512 tokens, lo que permite alcanzar 1.048.576 tokens de contexto sin escalado de RoPE. La cuantización aplica VQ de 8 dimensiones a los expertos enrutados: un libro de códigos E4M3 por capa, compartido por todos los expertos y las tres matrices, con una ganancia F16 por fila. Las capas 3–10 usan 13 bits (K=8192, flujo de 12 bits más un plano de 1 bit) y las capas 11–51 usan 12 bits (K=4096), lo que equivale a 1,625 y 1,5 bits de índice por peso respectivamente.
+
+El proceso de calibración emplea Lloyd ponderado por importancia (columnas por experto y ganancias por fila por mínimos cuadrados ponderados), ajustado sobre estadísticas de activación de un corpus ejecutado a través del original BF16. La revisión del 2026-10-21 reconvirtió las 49 partes de expertos enrutados con este método, reduciendo a la mitad la KL respecto al original. Los pesos de router, sesgos de corrección, normas y capas densas se mantienen en Q4_K o en precisión de origen. El autor no detalla en la información disponible el volumen de tokens de entrenamiento ni la composición del dataset del modelo base.
 
 ## Capacidades
-- Generación de texto y razonamiento multi-paso, con modo de análisis explícito (canal `analysis`) y respuesta final (canal `final`).
-- Razonamiento matemático y científico de nivel competitivo, según los benchmarks reportados frente al original.
-- Tool calling tipado mediante plantilla Harmony modificada con llamadas XML y `reasoning_effort` configurable entre 8 y 512.
-- Soporte de agentes y razonamiento multi-paso a través de la plantilla Harmony y del soporte de tool use del runtime.
-- Contexto largo de hasta 1.048.576 tokens, útil para documentos extensos o conversaciones prolongadas.
-- Decodificación especulativa con el drafter DFlash2 incluido, que acelera la generación en modo greedy.
-- Capacidades multilingües limitadas: la model card solo declara inglés.
+
+- Generación de texto y razonamiento multi-paso, con modo de reflexión (canales `analysis` / `final` en la plantilla Modified Harmony).
+- Razonamiento matemático y científico (evaluado en AIME 2026, GPQA Diamond, SciCode).
+- Generación de código (LiveCodeBench) e instrucciones complejas (IFBench).
+- Tool calling y function calling con llamadas XML tipadas bajo la plantilla Harmony.
+- Soporte de agentes y razonamiento multi-paso con `reasoning_effort` configurable de 8 a 512.
+- Contexto largo de hasta 1.048.576 tokens (evaluado en AA-LCR).
+- Decodificación especulativa mediante el drafter DFlash2 incluido (1,93B parámetros, Q8_0).
+- Capacidades multilingües limitadas al inglés según la model card.
+- No se documentan capacidades de visión ni audio en la información disponible.
 
 ## Casos de uso
-- Análisis de documentos extensos: con 1.048.576 tokens de contexto, el modelo puede ingerir libros técnicos, expedientes o bases de código completas en una sola pasada sin truncamiento, algo inviable en modelos con ventanas de 32K o 128K.
-- Asistentes de razonamiento científico: el rendimiento reportado en GPQA Diamond (88,6 frente a 90,6 del original) lo hace adecuado para preguntas de nivel posgrado en física, química y biología, con la salvedad de la pérdida en recuperación factual.
-- Agentes con tool calling: la plantilla Harmony con llamadas XML tipadas y `reasoning_effort` ajustable permite integrarlo en pipelines de agentes que necesitan decidir cuándo invocar herramientas y con qué profundidad de razonamiento.
-- Generación de código asistida en entornos con memoria limitada: al caber en un DGX Spark de 128 GB, puede desplegarse en estaciones de trabajo locales para autocompletado y revisión de código sin depender de la nube.
-- Investigación sobre cuantización: el repositorio documenta receta, calibración y métricas de fidelidad (KL 0,144, 87,7% de coincidencia en el siguiente token), lo que lo convierte en un caso de estudio reproducible para técnicas de VQ en MoE.
-- Despliegue en hardware de borde con memoria unificada: el runtime ds4-dfm-rs y los kernels CUDA para GVQ permiten servir el modelo en un único GB10, útil para prototipos y demostraciones sin clúster.
-- Evaluación comparativa de fidelidad de cuantización: los benchmarks frente al original (GPQA, AIME, IFBench, AA-Omniscience) permiten medir el coste real de la compresión en distintas tareas.
+
+- Análisis de repositorios completos: con 1.048.576 tokens de contexto, el modelo puede ingerir un proyecto entero y razonar sobre dependencias, cambios y pruebas en una sola pasada, sin trocear el código.
+- Agentes de código autónomos: la plantilla Harmony con tool calls tipadas y `reasoning_effort` ajustable permite construir bucles de agente que invocan herramientas, verifican resultados y corrigen errores en varios pasos.
+- Asistencia científica y matemática: los resultados en GPQA Diamond (88,6) y AIME 2026 (93,8) lo hacen adecuado para resolución de problemas técnicos con razonamiento explícito en el canal `analysis`.
+- Despliegue en una sola DGX Spark: el tamaño de 99,9 GB y el runtime ds4-dfm-rs permiten servir el modelo en una GB10 con 128 GB, útil para laboratorios con hardware limitado que necesitan un modelo de 501B.
+- Generación de código en pipelines de CI/CD: la decodificación especulativa con DFlash2 (de 26,2 a 32,0 tok/s en chat greedy) y el tool calling permiten integrar el modelo en revisiones automáticas y generación de parches.
+- Evaluación de instrucciones largas y documentos extensos: AA-LCR de 77,0 sobre el original de 78,2 indica que conserva capacidad de razonamiento sobre contextos largos, útil para resumen y extracción sobre contratos o informes.
+- Investigación en cuantización: la receta publicada (`beam1-vq8-mix8r13-41r12-q4k-embssd-v1`) y los datos de fidelidad (87,7% mismo siguiente token, KL 0,144) sirven como referencia para estudiar VQ aplicada a MoE a gran escala.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Original BF16 | Esta conversión | Retención |
+Resultados publicados por el autor, comparando la versión cuantizada con el original BF16 en GB10 con ds4-dfm-rs:
+
+| Benchmark | Cuantizado | Original BF16 | Retención |
 |---|---|---|---|
-| GPQA Diamond | 90,6 | 88,6 | 97,8% |
-| AIME 2026 | 97,7 | 93,8 | 96,0% |
-| IFBench | 79,6 | 78,0 | 98,0% |
-| AA-Omniscience (índice) | 10,8 | −4,7 | no disponible |
+| GPQA Diamond | 88,6 | 90,6 | 97,8% |
+| AIME 2026 | 93,8 | 97,7 | 96,0% |
+| IFBench | 78,0 | 79,6 | 98,0% |
+| AA-LCR | 77,0 | 78,2 | 98,5% |
+| LiveCodeBench | 84,0 | 88,3 | 95,1% |
+| SciCode | 43,3 | 49,2 | 88,0% |
+| AA-Omniscience (índice) | −4,7 | 10,8 | no disponible |
 
-| Métrica de fidelidad | Valor |
-|---|---|
-| Coincidencia en el siguiente token (5.491 tokens reservados) | 87,7% |
-| KL medio frente al BF16 | 0,144 |
-| NLL (original → conversión) | 1,244 → 1,340 |
+Fidelidad de la conversión (forward de referencia, bytes de la release frente a BF16): 87,7% de mismo siguiente token, KL 0,144, NLL de 1,244 a 1,340 sobre 5.491 tokens reservados. La primera build obtenía 82,9% y KL 0,295.
 
-| Rendimiento en DGX Spark (GB10, ds4-dfm-rs) | Valor |
-|---|---|
-| Prefill (2K–64K) | 1.241,2 tok/s |
-| Decode (2K–64K) | 25,23 tok/s (26,6 a 2K, 23,7 a 64K) |
-| Decode greedy con DFlash2 | 32,0 tok/s (frente a 26,2 sin drafter) |
+Rendimiento medido en DGX Spark (GB10) entre 2K y 64K de contexto: 1.241,2 tok/s de prefill y 25,23 tok/s de decode (26,6 a 2K, 23,7 a 64K); antes de la optimización era 830,4 y 15,86. DFlash2 eleva el chat greedy de 26,2 a 32,0 tok/s. El contexto completo de 1M planifica en un banco (115,4 de 117,2 GiB), aunque no se han realizado ejecuciones de más de 64K.
 
 ## Requisitos de hardware
-- VRAM/memoria estimada: unos 99,9 GB en total (98,3 GB residentes más 1,56 GB de tabla de tokens leída desde SSD); el plan de contexto completo de 1M ocupa 115,4 de 117,2 GiB en un solo banco de memoria.
-- GPU recomendadas: DGX Spark (GB10) con 128 GB de memoria unificada, que es el objetivo declarado del autor. No se documentan otras GPU en la información disponible.
-- ¿Cabe en GPU de consumo? No hay datos que lo confirmen; el tamaño residente de 98,3 GB excede la VRAM de cualquier GPU de consumo actual (RTX 4090, 24 GB).
-- Opciones de despliegue: runtime ds4-dfm-rs (rama `main` desde `d70afd6a`) con kernels CUDA para expertos GVQ, GQA con ventana deslizante y KV FP8 en capas completas, salida Harmony con tool calls tipados y decodificación especulativa DFlash2. No se indica compatibilidad con llama.cpp, Ollama, vLLM ni TGI.
-- Latencia y throughput: 1.241,2 tok/s de prefill y 25,23 tok/s de decode en el rango 2K–64K; 32,0 tok/s en greedy con DFlash2. No se han realizado ejecuciones superiores a 64K.
+
+- VRAM/memoria: aproximadamente 99,9 GB de partes GGUF (98,3 GB residentes más 1,56 GB de tabla de embeddings BF16 leída desde SSD). El contexto completo de 1M requiere FP8 KV en las capas de atención completa y planifica en 115,4 de 117,2 GiB.
+- GPU recomendada: DGX Spark (GB10) con 128 GB de memoria unificada, el objetivo declarado del autor.
+- No cabe en GPU de consumo convencionales (RTX 4090, 24 GB) ni en configuraciones multi-GPU estándar sin particionado adicional; la información disponible no documenta alternativas.
+- Despliegue: runtime ds4-dfm-rs (kernels CUDA para expertos GVQ, GQA con sliding-window y KV FP8, Harmony con tool calls, decodificación especulativa DFlash2). No se documenta soporte en vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 1.241,2 tok/s de prefill y 25,23 tok/s de decode medidos en GB10 entre 2K y 64K; 32,0 tok/s en chat greedy con DFlash2.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Beam-1.0-501B-A23B-VQ-GGUF (esta ficha) | 501B / 23B | 1.048.576 | Apache 2.0 | GGUF (VQ + Q4_K) | Optimizado para DGX Spark; runtime propio |
-| Beam-1.0-501B-A23B (original Reflection) | 501B / 23B | 1.048.576 | Apache 2.0 | BF16, FP8, NVFP4 | Checkpoint de referencia; ~1 TB en BF16 |
-| unsloth/Beam-1.0-501B-A23B-GGUF | 501B / 23B | no disponible en la información | Apache 2.0 | GGUF | Conversión alternativa del mismo modelo base |
+No se dispone de datos de modelos comparables en la información proporcionada. El autor solo compara la versión cuantizada con el original BF16 del mismo modelo (Reflection Beam-1.0-501B-A23B), sin referencias a alternativas de la misma categoría.
 
-No se dispone de datos de benchmarks de las alternativas en la información proporcionada, por lo que la comparación de rendimiento se limita a la tabla de benchmarks frente al original.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Beam-1.0-501B-A23B-VQ-GGUF | 501B (23B activos) | 1.048.576 | apache-2.0 | GGUF en HF, runtime ds4-dfm-rs |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
-- Pérdida notable en recuperación factual: el índice AA-Omniscience cae de 10,8 a −4,7, lo que indica mayor riesgo de alucinación en preguntas de conocimiento factual.
-- Fidelidad imperfecta: solo el 87,7% de coincidencia en el siguiente token frente al BF16 y KL medio de 0,144; el autor advierte que los archivos pueden cambiar y recomienda fijar una revisión concreta.
-- Idiomas: solo se declara inglés; no hay soporte multilingüe documentado.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base y el runtime deben verificarse por separado; el runtime ds4-dfm-rs es un proyecto del mismo autor.
-- Requiere hardware específico (DGX Spark GB10) y un runtime no estándar; no hay evidencia de compatibilidad con llama.cpp, Ollama, vLLM o TGI.
-- El contexto completo de 1M no se ha ejecutado más allá de 64K; el plan de memoria ocupa 115,4 de 117,2 GiB, dejando un margen muy ajustado.
-- Los números de velocidad se midieron con la primera build; la reconstrucción posterior no ha sido re-medida en GB10.
-- El modelo está pensado para texto; no se documentan capacidades de visión ni audio.
+
+- Los ficheros pueden cambiar: el autor advierte que la línea de conversiones está en investigación y que cualquier fichero puede reemplazarse por una nueva revisión. Para fijar una build hay que descargar un commit concreto.
+- Pérdida de fidelidad: 87,7% de mismo siguiente token y KL 0,144 frente al BF16; el rendimiento en SciCode cae al 88,0% y el índice AA-Omniscience pasa de 10,8 a −4,7, lo que indica mayor degradación en código científico y recuerdo factual.
+- Contexto: aunque el modelo soporta 1M tokens, el autor no ha realizado ejecuciones de más de 64K; el comportamiento más allá de ese límite no está verificado empíricamente.
+- Idiomas: solo inglés según la model card; no se documenta soporte multilingüe.
+- Hardware: requiere una DGX Spark (GB10) o equivalente con 128 GB de memoria unificada; no cabe en GPU de consumo.
+- Runtime: depende de ds4-dfm-rs, un runtime propio del autor; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Licencia apache-2.0 permite uso comercial, pero las condiciones del modelo base deben verificarse en su propia model card.
+- Riesgo de alucinación inherente a modelos de lenguaje; el autor no publica evaluaciones específicas de sesgo.
+- Las cifras de velocidad en GB10 se midieron con la primera build y no se han vuelto a medir tras la reconversión, aunque el formato y los bits se mantienen.
 
 ## Enlaces
-- Repositorio Hugging Face: https://huggingface.co/Baekpica/Beam-1.0-501B-A23B-VQ-GGUF
+
+- Hugging Face: https://huggingface.co/Baekpica/Beam-1.0-501B-A23B-VQ-GGUF
 - Modelo base: https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Drafter DFlash2: https://huggingface.co/reflection/Beam-1.0-501B-A23B-DFlash2
 - Runtime ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
-- Conversión alternativa de unsloth: https://huggingface.co/unsloth/Beam-1.0-501B-A23B-GGUF
-- Tabla de discusión del repositorio: https://huggingface.co/Baekpica/Beam-1.0-501B-A23B-VQ-GGUF/discussions
+- Receta de cuantización: RECIPE.md y recipe.json en el repositorio de HF
+- Discusiones: https://huggingface.co/Baekpica/Beam-1.0-501B-A23B-VQ-GGUF/discussions

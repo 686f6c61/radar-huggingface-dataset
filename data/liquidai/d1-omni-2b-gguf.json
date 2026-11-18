@@ -66,8 +66,8 @@
     "region:us",
     "conversational"
   ],
-  "likes": 28,
-  "downloads_30d": 95886,
+  "likes": 29,
+  "downloads_30d": 105273,
   "trending_score": 12,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
@@ -87,31 +87,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Liquid Foundation Models | Liquid AI",
-      "url": "https://www.liquid.ai/models",
-      "snippet": "One API call returns calibrated probabilities across a fixed set of outcomes. d1-2B. Blog. d1-Omni-2B ... Liquid AI, Inc. Terms · Privacy · Press; Your Privacy ..."
-    },
-    {
-      "title": "LiquidAI (Liquid AI) - Hugging Face",
-      "url": "https://huggingface.co/LiquidAI",
-      "snippet": "updated a model in about 19 hours. LiquidAI/LFM3-Omni-2B-GGUF · samuelstevens updated a model in about 19 hours. LiquidAI/LFM3-VL-2B-NVFP4 · samuelstevens ..."
-    },
-    {
-      "title": "Liquid AI | Device-native foundation models.",
-      "url": "https://www.liquid.ai/",
-      "snippet": "Liquid AI builds efficient Liquid Foundation Models (LFMs) for on-device, edge, and cloud AI with low latency, privacy, and hardware …"
-    },
-    {
-      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
-      "url": "https://github.com/Liquid4All/cookbook",
-      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook."
-    },
-    {
-      "title": "Liquid Ai – Next Gen AI Applications",
-      "url": "https://liquidai.net/",
-      "snippet": "We are researching and developing tools that leverage artificial intelligence to improve creative workflows."
-    }
-  ]
+  "sources": []
 }

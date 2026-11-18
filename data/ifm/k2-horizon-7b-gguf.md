@@ -1,88 +1,88 @@
 # IFM/K2-Horizon-7B-GGUF
 
 ## Resumen
+K2-Horizon-7B es un modelo de lenguaje denso, decoder-only, desarrollado por IFM como miembro intermedio de la familia K2-Horizon. Con 8.999.178.240 parametros reales (etiquetado comercialmente como "7B"), se distribuye en formato GGUF para su uso con `llama.cpp` y deriva del checkpoint base `IFM/K2-Horizon-7B`. Su rasgo diferencial es una ventana de contexto nativa de 524.288 tokens (512K) fijada desde las etapas de midtraining, algo poco habitual en modelos de esta escala.
 
-K2-Horizon-7B es un modelo de lenguaje denso (dense) del tipo decoder-only, desarrollado por IFM, que se publica con pesos abiertos bajo licencia Apache 2.0. Forma parte de la familia K2-Horizon y se presenta como el miembro medio de la gama, con un núcleo de 7B que en la práctica se traduce en aproximadamente 9.000 millones de parámetros totales según los safetensors publicados. Su característica más destacada es una ventana de contexto nativa de 524.288 tokens (512K), mantenida desde las etapas intermedias de entrenamiento.
+El modelo se presenta como un baseline denso evaluado en tareas agénticas, de código, contexto largo y razonamiento. IFM publica además los checkpoints intermedios del entrenamiento, la receta y los datos de preentrenamiento y midtraining, lo que lo convierte en un artefacto interesante tanto para despliegue en producción como para investigación sobre dinámica de entrenamiento.
 
-El modelo está diseñado para sobresalir en tareas de razonamiento, programación, matemáticas y uso en agentes, tal como reflejan los benchmarks publicados en su model card. Además, IFM libera de forma completa los datos de entrenamiento (Pretrain y Midtrain), la receta de entrenamiento, el código y los recursos de evaluación, lo que lo convierte en una opción atractiva para investigación y desarrollo reproducible. La versión GGUF aquí descrita está pensada para su uso con llama.cpp, aunque requiere una versión con soporte específico para la arquitectura K2 Horizon, actualmente disponible en un fork de MBZUAI-IFM.
+La relevancia actual reside en la combinación de licencia Apache 2.0, contexto de 512K y un rendimiento declarado en SWE-bench Verified (70,6) muy por encima de las referencias de su categoría que aparecen en la model card. La distribución GGUF con múltiples cuantizaciones facilita el despliegue en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (arquitectura K2 Horizon) |
-| Parametros totales | 8.999.178.240 (aprox. 9B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 524.288 tokens (512K) |
-| Tipos de cuantizacion | No disponible (los pesos GGUF se almacenan en BF16 original; no se listan cuantizaciones en la informacion) |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer denso, decoder-only (arquitectura "K2 Horizon" con soporte propio en llama.cpp) |
+| Parametros totales | 8.999.178.240 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 524.288 tokens (512K), nativa desde midtraining |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q5_0, Q4_K_M |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (tambien safetensors en el repositorio principal) |
+| Formato de pesos | GGUF (repo de cuantizaciones); pesos originales en el repo base `IFM/K2-Horizon-7B` |
 
 ## Arquitectura y entrenamiento
+K2-Horizon-7B es un transformer denso decoder-only, no un modelo MoE ni híbrido SSM. La model card no detalla el número exacto de capas, dimensión oculta ni configuración de atención; sí confirma que la ventana de 524.288 tokens es nativa y se establece a partir de las etapas de midtraining, lo que implica una fase de entrenamiento específica para extender contexto más allá de la longitud inicial.
 
-K2-Horizon-7B es un modelo denso decoder-only basado en la arquitectura K2 Horizon, que requiere soporte especifico en llama.cpp. El entrenamiento se realizo en dos fases documentadas mediante los datasets publicos IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data. La ventana de contexto de 512K tokens se mantiene desde la etapa de midtraining en adelante.
-
-No se proporcionan en la informacion disponible detalles sobre el numero total de tokens de entrenamiento, la composicion exacta de los datasets ni la presencia de tecnicas como RLHF o DPO. Tampoco se describen innovaciones tecnicas concretas mas alla de la arquitectura propia y la ventana de contexto amplia. IFM libera el codigo de entrenamiento y los recursos de evaluacion, pero estos no se detallan en la model card de esta version GGUF.
+El entrenamiento se apoya en dos conjuntos de datos publicados: `IFM/K2-Horizon-Pretrain-Data` y `IFM/K2-Horizon-Midtrain-Data`. No se especifica en la información disponible el número total de tokens, la composición del dataset ni si hubo fases de RLHF, DPO o similares. La familia se distribuye con checkpoints intermedios para estudiar la evolución de capacidades a lo largo del entrenamiento, y tanto la receta como el código de entrenamiento y los recursos de evaluación son públicos según el autor.
 
 ## Capacidades
-
-- Razonamiento matematico de nivel competitivo: obtiene 73.3 en HMMT Feb 2026, superando a modelos de referencia como Gemma 4-12B (63.1) o Qwen3.5-9B (65.7).
-- Programacion y resolucion de problemas de software: alcanza 70.6 en SWE-bench Verified, con una ventaja notable frente a modelos de tamano similar.
-- Manejo de contexto largo: la ventana nativa de 512K tokens permite procesar documentos extensos, repositorios de codigo completos o conversaciones de multiples turnos sin perder informacion.
-- Uso en agentes: el modelo fue evaluado en benchmarks de tipo agentico, segun la model card, aunque no se detallan los resultados concretos.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia estandar, aunque no se especifica el soporte de tool calling o function calling.
-- Capacidad conversacional: incluye una plantilla de chat compatible con llama.cpp en los archivos GGUF.
+- Generación de texto conversacional en inglés, con plantilla de chat compatible con `llama.cpp` incluida en los ficheros GGUF.
+- Razonamiento matemático de competición: evaluado en HMMT Feb 2026 con 73,3.
+- Ingeniería de software y resolución de issues: evaluado en SWE-bench Verified con 70,6.
+- Procesamiento de contexto largo: ventana nativa de 512K tokens, adecuada para documentos extensos, repositorios completos o historiales de conversación prolongados.
+- Capacidades agénticas y de razonamiento multi-paso, según la evaluación declarada en benchmarks agénticos.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Capacidades multimodales (visión, audio): no disponibles; el modelo es solo texto.
+- Multilingüismo: limitado a inglés según la model card.
 
 ## Casos de uso
-
-- Analisis de repositorios de codigo completos: gracias a la ventana de 512K tokens, el modelo puede ingerir un proyecto entero y responder preguntas sobre su estructura, funciones o dependencias sin necesidad de dividir el contexto.
-- Asistente de programacion en entornos de desarrollo integrado: su rendimiento en SWE-bench Verified lo hace adecuado para sugerir parches, detectar errores o refactorizar codigo en pipelines de CI/CD.
-- Resolucion de problemas matematicos avanzados: el resultado en HMMT Feb 2026 indica que puede utilizarse como apoyo en plataformas educativas o de preparacion de competiciones, generando explicaciones paso a paso.
-- Procesamiento de documentos legales o tecnicos extensos: la ventana de contexto permite analizar contratos, expedientes o manuales de cientos de paginas y extraer clausulas o requisitos especificos.
-- Investigacion reproducible en NLP: al estar publicados los datos de entrenamiento, el modelo sirve como base para estudios de ablacion, analisis de capacidades emergentes o comparaciones entre checkpoints intermedios.
-- Despliegue en entornos locales con llama.cpp: al existir versiones GGUF, puede ejecutarse en maquinas de consumo mediante el fork de llama.cpp con soporte K2 Horizon, ideal para prototipado sin dependencias de la nube.
+- Análisis de repositorios completos: con 512K tokens de contexto, el modelo puede ingerir varios ficheros de código y su historial de cambios en una sola pasada para tareas de revisión, refactorización o explicación de arquitectura.
+- Resolución automática de issues en CI/CD: su resultado en SWE-bench Verified (70,6) lo hace candidato para pipelines que reciben un issue, localizan el código relevante y proponen un parche, con revisión humana posterior.
+- Asistencia matemática y tutoría técnica: el 73,3 en HMMT Feb 2026 indica capacidad para resolver problemas de competición, útil en herramientas de verificación de demostraciones o generación de ejercicios resueltos.
+- Agentes de navegación y automatización multi-paso: la ventana larga permite mantener el estado de una tarea agéntica extensa sin truncar el historial de observaciones y acciones.
+- Procesamiento de documentación legal o técnica extensa: resumen, extracción de cláusulas y preguntas sobre contratos o manuales de cientos de páginas en una única ventana.
+- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en GPU de gama alta para consumidores o en CPU con `llama.cpp`, habilitando prototipos locales sin infraestructura cloud.
+- Investigación sobre entrenamiento: los checkpoints intermedios y la receta pública permiten estudiar la aparición de capacidades y el efecto de la extensión de contexto durante el midtraining.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles en la model card son parciales y se limitan a dos benchmarks. No se incluyen resultados completos en la informacion proporcionada.
-
 | Benchmark | K2-Horizon-7B | Gemma 4-12B | Qwen3.5-9B | Granite 4.2-8B |
 |---|---|---|---|---|
-| HMMT Feb 2026 (matematicas) | 73.3 | 63.1 | 65.7 | 66.5 |
-| SWE-bench Verified (software) | 70.6 | 30.6 | No disponible | 47.7 |
+| HMMT Feb 2026 (matemáticas) | 73,3 | 63,1 | 65,7 | 66,5 |
+| SWE-bench Verified (código) | 70,6 | 30,6 | no disponible | 47,7 |
+
+Los datos proceden de la tabla publicada en la model card del repositorio GGUF. La información disponible se interrumpe en la fila de SWE-bench Verified para la referencia Qwen3.5-9B y no incluye el resto de benchmarks agénticos y de contexto largo mencionados en el gráfico del autor; no se han transcrito cifras adicionales para no inferir valores no publicados.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: el modelo tiene 8.999.178.240 parametros. En precision BF16, el peso ocupa aproximadamente 18 GB, por lo que se necesitan al menos 20-24 GB de VRAM para inferencia sin cuantizar.
-- Con cuantizaciones GGUF (por ejemplo, Q4_K_M), el peso se reduce a unos 6-7 GB, lo que permitiria ejecutarlo en GPUs de consumo con 8-12 GB de VRAM, aunque no se han publicado los archivos de cuantizacion en esta version.
-- GPU recomendadas: RTX 4090 (24 GB) para BF16, A100 40/80 GB o H100 para despliegues de produccion con contexto largo.
-- Opciones de despliegue: llama.cpp (requiere el fork de MBZUAI-IFM con soporte K2 Horizon). No se mencionan vLLM, TGI u otros servidores en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 5,5-6 GB en Q4_K_M, 6,5-7 GB en Q5_K_M, 9,5-10 GB en Q8_0 y unos 18 GB en BF16, incluyendo overhead de contexto (el contexto de 512K requiere KV cache adicional considerable según la configuración).
+- GPU recomendadas: RTX 4090 (24 GB) para BF16 o Q8_0 con contexto amplio; RTX 4080/4070 Ti Super (16 GB) para Q8_0 o Q6_K; RTX 4060 Ti 16 GB o RTX 3060 12 GB para Q4_K_M y Q5_K_M.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones Q4 y Q5 con 8 GB o más de VRAM; BF16 requiere 24 GB o reparto entre GPU y CPU.
+- Opciones de despliegue: `llama.cpp` (requiere versión con soporte de arquitectura K2 Horizon, integrado en mainline desde la release b11454), Ollama y otros frontends basados en llama.cpp. vLLM y TGI no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La comparativa se basa unicamente en los benchmarks publicados en la model card, ya que no se dispone de especificaciones tecnicas completas de los modelos de referencia.
-
-| Modelo | Parametros | Contexto | HMMT Feb 2026 | SWE-bench Verified | Licencia |
+| Modelo | Parametros | Contexto | Licencia | HMMT Feb 2026 | SWE-bench Verified |
 |---|---|---|---|---|---|
-| K2-Horizon-7B | 9B (aprox.) | 512K | 73.3 | 70.6 | Apache 2.0 |
-| Gemma 4-12B | No disponible | No disponible | 63.1 | 30.6 | No disponible |
-| Qwen3.5-9B | No disponible | No disponible | 65.7 | No disponible | No disponible |
-| Granite 4.2-8B | No disponible | No disponible | 66.5 | 47.7 | No disponible |
+| K2-Horizon-7B | 8,99B (denso) | 512K | Apache 2.0 | 73,3 | 70,6 |
+| Gemma 4-12B | 12B (no confirmado) | no disponible | no disponible | 63,1 | 30,6 |
+| Qwen3.5-9B | 9B (no confirmado) | no disponible | no disponible | 65,7 | no disponible |
+| Granite 4.2-8B | 8B (no confirmado) | no disponible | no disponible | 66,5 | 47,7 |
+
+Las especificaciones de contexto y licencia de los modelos de referencia no aparecen en la información proporcionada y se marcan como no disponibles. En los dos benchmarks publicados, K2-Horizon-7B supera a las tres referencias, con una diferencia especialmente amplia en SWE-bench Verified frente a Gemma 4-12B y Granite 4.2-8B.
 
 ## Limitaciones y advertencias
-
-- La informacion disponible no incluye analisis de sesgos ni pruebas de seguridad, por lo que se desconocen posibles sesgos del modelo.
-- El modelo solo soporta ingles, lo que limita su uso en aplicaciones multilingues.
-- Al no documentarse el soporte de tool calling o function calling, su integracion en sistemas de agentes complejos requiere verificacion previa.
-- La version GGUF exige una version de llama.cpp con soporte K2 Horizon; el soporte oficial aun esta en proceso de integracion (PR en curso).
-- La ventana de contexto de 512K tokens es amplia, pero no se especifica la calidad de la recuperacion de informacion en los extremos de la ventana ni la degradacion del rendimiento con contextos muy largos.
-- Los benchmarks publicados son parciales y no incluyen pruebas de alucinacion, razonamiento de sentido comun ni tareas de seguridad.
-- Aunque la licencia Apache 2.0 permite uso comercial, la dependencia de un fork de llama.cpp puede suponer un riesgo de mantenimiento si el soporte no se integra en el proyecto principal.
+- Idioma: solo inglés declarado; el rendimiento en castellano no está evaluado y probablemente sea inferior.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; al ser un modelo entrenado principalmente con datos en inglés, cabe esperar sesgos culturales y lingüísticos propios de ese corpus.
+- Alucinación: no hay datos publicados de tasas de alucinación ni de calibración; en tareas de código y matemáticas conviene verificar las salidas.
+- Contexto largo: aunque la ventana es de 512K tokens, no se documenta el rendimiento en tareas de recuperación en el extremo de la ventana (needle-in-a-haystack); el coste de KV cache crece de forma significativa con la longitud.
+- Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales conocidas, pero conviene revisar los términos de los datasets de entrenamiento publicados.
+- Dependencia de versión: los GGUF requieren `llama.cpp` con soporte de la arquitectura K2 Horizon (mainline desde b11454); versiones anteriores fallarán al cargar el modelo.
+- Tool calling: no confirmado; si se necesita en producción, debe validarse empíricamente antes de integrarlo en agentes.
 
 ## Enlaces
-
-- Repositorio GGUF en Hugging Face: https://huggingface.co/IFM/K2-Horizon-7B-GGUF
-- Repositorio principal del modelo: https://huggingface.co/IFM/K2-Horizon-7B
-- Fork de llama.cpp con soporte K2 Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon
+- Repositorio GGUF: https://huggingface.co/IFM/K2-Horizon-7B-GGUF
+- Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
+- Dataset de preentrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
+- Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data
+- Release de llama.cpp con soporte K2 Horizon (b11454): https://github.com/ggml-org/llama.cpp/releases?page=5#release-b11454

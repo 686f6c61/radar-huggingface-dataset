@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 7012,
+  "downloads_30d": 7051,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -40,16 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Sadanie/pellav2-audio-deepfake-detector · Hugging Face",
-      "url": "https://huggingface.co/Sadanie/pellav2-audio-deepfake-detector",
-      "snippet": "Binary real/fake speech classifier built on a large self supervised speech backbone (300M parameters) with learned layer weighting and a lightweight classification head. Trained on a curated private dataset: real speech plus synthetic speech spanning a broad range of modern TTS systems across ..."
-    },
-    {
-      "title": "Sadanie/pellav2-audio-deepfake-detector at main - Hugging Face",
-      "url": "https://huggingface.co/Sadanie/pellav2-audio-deepfake-detector/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

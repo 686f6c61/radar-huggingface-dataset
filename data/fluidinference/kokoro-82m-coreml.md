@@ -2,85 +2,103 @@
 
 ## Resumen
 
-FluidInference/kokoro-82m-coreml es una conversión a CoreML del modelo de síntesis de voz Kokoro-82M, desarrollado por FluidInference para su SDK Swift FluidAudio. Kokoro-82M es un modelo de texto a voz (TTS) ligero de 82 millones de parámetros, originalmente creado por hexgrad, que produce voz natural en inglés con múltiples voces. Esta versión CoreML está optimizada para ejecutarse completamente en el Neural Engine (ANE) de Apple, lo que reduce el uso de memoria y ofrece una inferencia más rápida en dispositivos Apple (macOS, iOS, iPadOS) en comparación con las implementaciones en PyTorch o MLX.
+Kokoro-82M-CoreML es una conversión a Apple Core ML del modelo de síntesis de voz Kokoro-82M, desarrollado originalmente por hexgrad y convertido por FluidInference para su ejecución optimizada en el ecosistema Apple (macOS, iOS, silicio de Apple). El modelo original es un TTS ligero de 82 millones de parámetros que destaca por su relación calidad-tamaño, y esta versión empaqueta los grafos en formato Core ML (.mlmodelc/.mlpackage) con enrutamiento híbrido entre CPU, GPU y Neural Engine (ANE).
 
-El modelo resuelve el problema de la síntesis de voz de alta calidad y baja latencia en dispositivos locales sin conexión a internet. Su relevancia actual radica en que permite integrar TTS en aplicaciones nativas de Apple con un consumo de recursos muy bajo (pico de 1,5 GB de memoria en proceso), algo crítico para aplicaciones móviles y de escritorio. La licencia Apache 2.0 facilita su uso comercial. El repositorio incluye el modelo en formato CoreML (`.mlmodel`) junto con herramientas de benchmark y el código de inferencia en Swift.
+El repositorio incluye tres variantes lingüísticas: inglés y japonés (a partir de hexgrad/Kokoro-82M) y mandarín (a partir de hexgrad/Kokoro-82M-v1.1-zh). La versión ANE v3, opt-in, incorpora buckets fijos para Albert/decoder, DSP nativo en origen y un generador adaptado a GPU. El SDK FluidAudio v0.17.6 expone estas variantes mediante `KokoroAneManager`.
+
+Su relevancia actual radica en que permite inferencia TTS de baja latencia en dispositivos Apple sin depender de la nube: mediciones locales en un M5 Pro reportan 49,45 ms (inglés), 35,85 ms (japonés) y 53,97 ms (mandarín) por llamada en modo híbrido, frente a los 511,40/474,45/584,19 ms del enrutamiento CPU+ANE completo. La licencia Apache 2.0 facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Kokoro-82M (basada en StyleTTS2, adaptada para TTS) |
-| Parametros totales | 82 millones |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no aplica (modelo de audio, sin ventana de contexto textual) |
-| Tipos de cuantizacion | CoreML (modelo compilado para ANE, precisión FP16/FP32 según capa) |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | Red neuronal TTS (Kokoro-82M) convertida a Core ML; pipeline con módulos Albert, PostAlbert, Alignment, Prosody, decoder enmascarado, generador y vocoder |
+| Parametros totales | 82 M (modelo base Kokoro-82M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo TTS; procesa texto de entrada por utterance) |
+| Tipos de cuantizacion | Pesos fp32 en módulos críticos (Prosody_v2, Tail_v2, Vocoder_v2); fp16 en rutas previas; conversión Core ML (mlmodelc/mlpackage) |
+| Idiomas soportados | Inglés, japonés, mandarín (chino); cachés de léxico adicionales para español y francés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | CoreML `.mlmodel` (compilado), compatible con Swift |
+| Formato de pesos | Core ML (.mlmodelc, .mlpackage) |
 
 ## Arquitectura y entrenamiento
 
-Kokoro-82M es un modelo de síntesis de voz basado en la arquitectura StyleTTS2, que emplea un codificador de texto, un predictor de duración y un decodificador de audio. El modelo original fue entrenado por hexgrad con datos de voz en inglés (no se especifica el corpus exacto en la informacion disponible). La version CoreML de FluidInference es una conversion del modelo original a formato CoreML, optimizado para el Neural Engine de Apple. La conversion mantiene los pesos originales y los encapsula en un grafo CoreML que puede ejecutarse via `MLModel` en Swift. No se han realizado cambios en los pesos ni en el entrenamiento; la innovacion principal reside en la adaptacion a CoreML y la integracion en el SDK FluidAudio, que gestiona la carga, compilacion y ejecucion del modelo con un warm-up inicial de aproximadamente 2 segundos en hardware Apple.
+El modelo subyacente Kokoro-82M es una arquitectura de síntesis de voz de 82 millones de parámetros, diseñada para generar audio de alta calidad con un coste computacional reducido. La conversión a Core ML descompone el pipeline en módulos diferenciados: Albert y PostAlbert (procesamiento textual/contextual), Alignment (alineamiento texto-audio), Prosody (prosodia y F0), un decoder enmascarado, un generador rápido y un vocoder de respaldo, además de etapas de ruido y cola (Noise/Tail). El SDK enruta cada módulo a un destino de cómputo específico: Albert, PostAlbert, Alignment, Prosody y el decoder enmascarado solicitan `.cpuAndNeuralEngine`; el generador rápido solicita `.cpuAndGPU`; el DSP nativo y la STFT se ejecutan en CPU/Accelerate.
+
+No se dispone de información sobre el dataset de entrenamiento original, el número de tokens o el uso de RLHF/DPO en la información proporcionada. La innovación técnica destacable de esta conversión es el enrutamiento híbrido de cómputo entre ANE y GPU, junto con correcciones de precisión: los módulos Prosody_v2 y Vocoder_v2 se migraron a fp32 porque la ruta fp16 en CPU Core ML corrompía el inicio de utterances largas (F0/N corruptos con T_a ≥ ~400 y arranque robótico en el primer segundo). El repositorio mantiene versiones fijas (`_v2`) junto a las originales para preservar compatibilidad con releases antiguos de FluidAudio.
 
 ## Capacidades
 
-- Sintesis de voz en ingles a partir de texto, con multiples voces predefinidas (por ejemplo, la voz `af_heart` usada en los benchmarks).
-- Generacion de audio de duracion variable, desde fragmentos cortos (1 segundo) hasta clips largos (mas de 4 minutos).
-- Ejecucion completamente local en dispositivos Apple, sin conexion a internet.
-- Bajo uso de memoria (pico de 1,5 GB en proceso durante inferencia).
-- Integracion con el SDK FluidAudio para Swift, que proporciona una API de alto nivel para TTS, transcripcion, VAD y diarizacion.
-- Compatibilidad con el Neural Engine (ANE) de Apple, lo que reduce la carga de la CPU/GPU y el consumo energetico.
+- Síntesis de voz (text-to-speech) en inglés, japonés y mandarín.
+- Generación de audio de alta calidad con prosodia controlada mediante estilos/voces predefinidas.
+- Soporte de voces nativas por variante lingüística (incluye voces británicas con caché de léxico `gb_lexicon_cache.json`).
+- Procesamiento de texto nativo con DSP en origen y STFT en CPU/Accelerate.
+- Ejecución en dispositivo (on-device) en macOS 15 / iOS 18 mediante el SDK FluidAudio.
+- Enrutamiento configurable de cómputo (híbrido ANE+GPU, CPU+ANE, etc.) a través de la API del SDK.
+- No se documenta soporte de tool calling, agentes, visión, audio de entrada ni modo thinking; es un modelo exclusivamente TTS.
 
 ## Casos de uso
 
-- **Audiolibros y lectura de textos largos**: el modelo puede sintetizar capitulos completos (hasta 4.600 caracteres en una sola pasada) con un factor de tiempo real (RTFx) de 27x en hardware Apple, lo que permite generar minutos de audio en segundos.
-- **Asistentes de voz en aplicaciones macOS/iOS**: al ejecutarse localmente con baja latencia (inferencia de 0,4 segundos para frases cortas), es adecuado para respuestas de voz en tiempo real en asistentes personales o aplicaciones de productividad.
-- **Accesibilidad para personas con discapacidad visual**: la integracion en apps nativas de Apple permite leer contenido de pantalla o documentos sin depender de servicios en la nube.
-- **Doblaje y generacion de contenido multimedia**: creadores de contenido pueden generar locuciones en ingles para videos, presentaciones o podcasts, con control sobre la voz y la velocidad.
-- **Sistemas de respuesta interactiva (IVR)**: empresas pueden desplegar menus de voz automaticos en aplicaciones de telefonia IP usando el modelo en un servidor macOS, con un throughput de 27x tiempo real.
-- **Prototipado rapido de aplicaciones con voz**: desarrolladores de Swift pueden integrar TTS en sus apps con pocas lineas de codigo gracias al SDK FluidAudio, ideal para hackathons o MVPs.
+- Lectura por voz en aplicaciones iOS/macOS: el modelo se integra mediante `KokoroAneManager` y genera audio en menos de 60 ms por utterance en modo híbrido, adecuado para interfaces de accesibilidad y lectores de pantalla.
+- Asistentes conversacionales on-device: al ejecutarse localmente en el Neural Engine, permite respuestas habladas sin enviar texto a la nube, útil en escenarios de privacidad.
+- Doblaje y locución automatizada en inglés, japonés y mandarín: las tres variantes cubren mercados principales con la misma API y licencia Apache 2.0.
+- Generación de audiolibros y contenido largo: el pipeline procesa utterances de varios segundos (3,05–3,68 s en las mediciones) con correcciones específicas para el onset de utterances largas.
+- Prototipado rápido de productos de voz: el formato Core ML y el SDK Swift reducen la fricción de integración en apps nativas Apple.
+- Investigación en TTS eficiente: el repositorio documenta protocolos de medición, issues y commits, lo que facilita reproducir y comparar enrutamientos de cómputo.
+- Aplicaciones de aprendizaje de idiomas: pronunciación sintética en inglés, japonés y mandarín con voces y léxicos específicos por variante.
 
 ## Benchmarks y rendimiento
 
-Los benchmarks publicados en la model card se realizaron en un MacBook Pro con M4 Pro y 48 GB de RAM, comparando cuatro pipelines: PyTorch en CPU, PyTorch en MPS, MLX y CoreML (Swift). Se midio el tiempo de inferencia para textos de 6 a 4.615 caracteres, con warm-up previo. Los resultados clave:
+Mediciones locales del SDK (Apple M5 Pro, 24 GiB, macOS 27.0; mediana de cinco llamadas tras dos warmups, una entrada de demo por idioma):
 
-| Pipeline | RTFx medio (total) | Pico de memoria (GB) |
-|---|---|---|
-| PyTorch CPU | 16,99x | 4,85 |
-| PyTorch MPS | 9,96x (solo 2 tests, fallo en textos largos) | 1,54 |
-| MLX | 23,80x | 3,37 |
-| CoreML (Swift) | 23,23x | 1,50 |
+| Política de cómputo | Inglés | Japonés | Mandarín |
+|---|---:|---:|---:|
+| Híbrido actual | 49,45 ms | 35,85 ms | 53,97 ms |
+| CPU+ANE en todo | 511,40 ms | 474,45 ms | 584,19 ms |
+| `.all` en todo | SIGABRT | SIGABRT | SIGABRT |
+| CPU+GPU en todo | SIGABRT | SIGABRT | SIGABRT |
 
-El modelo CoreML ofrece un factor de tiempo real similar al de MLX (23x), pero con un consumo de memoria significativamente menor (1,5 GB frente a 3,37 GB). En textos largos (test 11), CoreML alcanza un RTFx de 27,2x, superando a MLX (25,8x). PyTorch en CPU es el mas lento y con mayor uso de memoria, y MPS falla en secuencias largas. El warm-up inicial de CoreML es de ~2,3 segundos, frente a 0,17 segundos en PyTorch CPU.
+El temporizador cubre desde tokens/estilo preparados hasta PCM completo, excluyendo procesamiento de texto, carga y E/S de WAV. Las salidas medidas fueron de 3,350 / 3,050 / 3,675 segundos. Son comprobaciones exploratorias locales, no resultados de corpus ni entre dispositivos. Las capturas de la demo en vivo reportaron 57,8–79,8 ms en texto crudo a audio completo, con aceleraciones de 1,88× / 5,29× / 2,25× frente a legacy, que son observaciones individuales y no promedios. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible, ya que no aplican a un modelo TTS.
 
 ## Requisitos de hardware
 
-- **VRAM/ memoria**: el pico de memoria del proceso es de 1,5 GB en un MacBook Pro M4 Pro, por lo que cabe en cualquier dispositivo Apple con al menos 8 GB de RAM unificada.
-- **GPU/ANE**: requiere Apple Silicon (M1 o posterior) para usar el Neural Engine. En Macs con Intel no funcionara correctamente (CoreML puede usar CPU pero no ANE).
-- **Dispositivos compatibles**: macOS 13+ (Ventura o posterior), iOS 16+ y iPadOS 16+.
-- **Despliegue**: integrado en el SDK Swift FluidAudio (https://github.com/FluidInference/FluidAudio). No se proporcionan opciones para vLLM, llama.cpp u otros motores, ya que es especifico de Apple.
-- **Latencia**: warm-up inicial de ~2 segundos en el primer uso; inferencia de 0,4 segundos para frases cortas y 9 segundos para textos de ~4.000 caracteres.
-- **Throughput**: RTFx de 23x en media, llegando a 27x en textos largos.
+- Ejecución en dispositivos Apple con Neural Engine y GPU integrada; requiere macOS 15 / iOS 18 para la API v3.
+- La inferencia física en iOS no está validada según la model card.
+- Memoria: el repositorio ocupa 6,8 GB; el modelo base es de 82 M de parámetros, por lo que la huella en ejecución es reducida (no se detalla cifra exacta de VRAM/RAM).
+- Hardware de referencia medido: Apple M5 Pro con 24 GiB.
+- Despliegue mediante el SDK FluidAudio (Swift) y Core ML; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI (no aplicables a Core ML).
+- Latencia: 35,85–53,97 ms por utterance en modo híbrido en el hardware de referencia; el throughput no se especifica en la información disponible.
+- Advertencia: `.all` y CPU+GPU en todo abortan con `GPURNNOps: JIT not supported` durante Prosody; CPU+ANE permite fallback a CPU y no es ANE-only.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos con otros modelos TTS en la informacion proporcionada. Kokoro-82M es conocido por su calidad de voz y eficiencia, pero no se han publicado benchmarks estandarizados (como MOS o WER) en esta model card. Como referencia, otros TTS ligeros como Piper (de Rhasspy) o Coqui TTS (modelos como VITS) son alternativas para CPU, pero no tienen versiones nativas CoreML con soporte ANE. La comparacion con la version original de Kokoro-82M en PyTorch (misma arquitectura) muestra que esta conversion CoreML reduce la memoria en un 69% y mantiene un rendimiento similar al de MLX, siendo la opcion mas eficiente en memoria para Apple.
+| Modelo | Parámetros | Idiomas | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Kokoro-82M-CoreML (este) | 82 M | en, ja, zh | Core ML | Apache 2.0 | Conversión optimizada para Apple; latencias de decenas de ms en M5 Pro |
+| hexgrad/Kokoro-82M (original) | 82 M | en, ja | safetensors/PyTorch | Apache 2.0 | Modelo base sin conversión Core ML; requiere runtime distinto |
+| hexgrad/Kokoro-82M-v1.1-zh | 82 M | zh | safetensors/PyTorch | Apache 2.0 | Base de la variante mandarín de este repositorio |
+
+No se dispone de datos de benchmarks comparativos con otros modelos TTS en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Solo ingles**: el modelo no soporta otros idiomas, lo que limita su uso en aplicaciones multilingues.
-- **Sesgos de voz**: las voces predefinidas pueden reflejar sesgos de genero o acentos del corpus de entrenamiento; no se documenta la diversidad de voces.
-- **Riesgo de alucinacion**: aunque es un modelo TTS, puede producir pronunciaciones incorrectas para nombres propios o terminos tecnicos poco frecuentes.
-- **Dependencia de Apple**: el formato CoreML solo es utilizable en ecosistema Apple; no es portable a Linux o Windows sin reconversion.
-- **Compilacion inicial**: el primer uso del modelo requiere ~15 segundos de compilacion (segun la model card), aunque los usos posteriores son mas rapidos (~2 segundos de carga).
-- **Licencia**: Apache 2.0 permite uso comercial, pero hay que mantener el aviso de copyright y atribucion.
-- **Bug de memoria en PyTorch**: la model card menciona un leak de memoria en la version original de PyTorch (https://github.com/hexgrad/kokoro/issues/152); la conversion CoreML no lo sufre.
+- Modelo exclusivamente TTS: no realiza razonamiento, código, matemáticas ni tool calling.
+- La inferencia física en iOS permanece sin validar según la model card.
+- El enrutamiento híbrido es fijo en la API pública v3; los overrides globales solo se aplicaron en un arnés local.
+- Las mediciones son exploratorias, de un solo dispositivo y una sola entrada por idioma; no constituyen un benchmark representativo.
+- Riesgo de artefactos de audio en rutas fp16: documentados y corregidos en Prosody_v2 y Vocoder_v2 con fp32; versiones antiguas pueden presentar onset robótico o F0/N corruptos.
+- `.all` y CPU+GPU en todo no son viables (SIGABRT por limitación de JIT en Apple).
+- Cobertura lingüística limitada a en/ja/zh en el modelo; los léxicos es/fr son cachés auxiliares y no implican soporte completo de síntesis en esos idiomas.
+- Licencia Apache 2.0 permite uso comercial, pero se debe conservar la atribución a hexgrad y FluidInference.
+- No se documentan sesgos específicos del modelo en la información disponible; al ser TTS, los sesgos se manifestarían en voces y pronunciación.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/FluidInference/kokoro-82m-coreml
-- Repositorio FluidAudio (Swift SDK): https://github.com/FluidInference/FluidAudio
-- Documentacion DeepWiki sobre KokoroModel y TTS Manager: https://deepwiki.com/FluidInference/FluidAudio/3.4.1-kokoro-model-and-synthesis
-- Repositorio original de Kokoro: https://github.com/hexgrad/kokoro
-- Repositorio de laishere para Kokoro ANE (fuente de inspiracion): https://github.com/laishere/kokoro-coreml
+- Hugging Face: https://huggingface.co/FluidInference/kokoro-82m-coreml
+- Modelo base inglés/japonés: https://huggingface.co/hexgrad/Kokoro-82M
+- Modelo base mandarín: https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh
+- Repositorio FluidAudio: https://github.com/FluidInference/FluidAudio
+- Documentación TTS KokoroAne: https://github.com/FluidInference/FluidAudio/blob/d7931323eebea4e39874b0d2e75d1b0e90e13084/Documentation/TTS/KokoroAne.md
+- Benchmarks: https://github.com/FluidInference/FluidAudio/blob/d7931323eebea4e39874b0d2e75d1b0e90e13084/Documentation/TTS/Benchmarks.md
+- Perfilado ANE: https://github.com/FluidInference/FluidAudio/blob/d7931323eebea4e39874b0d2e75d1b0e90e13084/Documentation/ANE_Profiler.md
+- Repositorio mobius (conversión): https://github.com/FluidInference/mobius

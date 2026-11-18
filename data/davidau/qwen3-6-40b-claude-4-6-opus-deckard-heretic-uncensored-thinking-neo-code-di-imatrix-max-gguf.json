@@ -59,7 +59,7 @@
     "conversational"
   ],
   "likes": 810,
-  "downloads_30d": 103600,
+  "downloads_30d": 102709,
   "trending_score": 8,
   "parameters": 39072596736,
   "parameters_human": "39.07B",
@@ -79,31 +79,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO ...",
-      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF/discussions/13",
-      "snippet": "The training methodology of this listing definitely made Qwen3.6 27B into something smart enough to be usable day-to-day, and I&#x27;m curious to see if it would work even better on medium sized models...."
-    },
-    {
-      "title": "Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO ...",
-      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
-      "snippet": "Ultimate NEO GGUF QUANTS: Custom built DUAL Imatrix NEO-CODER quants that exceed all other quants in terms of quality, stability, precision and long convo usage. IQ4_XS/NL regularly scores at 94% of full precision (bf16), Q6/Q8 at 97% and 98% of full precision (bf16). WARNING: This model has character and intelligence."
-    },
-    {
-      "title": "DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
-      "url": "https://innoai.space/model/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
-      "snippet": "Model Deployment Guide DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking Hardware, Architecture, and Deployment Guide Qwen 3 models are strong general-purpose open models with useful coverage across multilingual, coding, agentic, and structured-output workloads. At roughly 40B parameters this is a large model: expect a 24-48 GB GPU in quantized form, or a data-center ..."
-    },
-    {
-      "title": "DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking ...",
-      "url": "https://innoai.space/model/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
-      "snippet": "DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF should be compared against nearby models in the same family and against adjacent open families."
-    },
-    {
-      "title": "Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO ...",
-      "url": "https://aiappdex.com/models/davidau-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking-neo-code-di-imatrix-max-gguf/",
-      "snippet": "A 40B Qwen3.6 GGUF fine-tune from DavidAU&#x27;s Heretic series, blending coding capability with extended thinking mode and abliterated safety filters. The imatrix quantization and &#x27;Deckard&#x27; suffix suggest alignment distillation from a larger teacher model. Last reviewed 2026-07-25 Share: X Reddit HN LinkedIn"
-    }
-  ]
+  "sources": []
 }

@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 63,
-  "downloads_30d": 90524,
+  "downloads_30d": 91023,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -40,5 +40,11 @@
   "renamed_to": "Comfy-Org/Frame-Interpolation",
   "renamed_at": "2026-11-11T02:32:29.706Z",
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    }
+  ]
 }

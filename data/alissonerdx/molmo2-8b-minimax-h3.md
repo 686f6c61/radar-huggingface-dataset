@@ -2,84 +2,91 @@
 
 ## Resumen
 
-Molmo2-8B-Minimax-H3 es una cuantización INT8 comunitaria del modelo multimodal Molmo2-8B de Allen Institute for AI (Ai2), publicada por el usuario Alissonerdx en Hugging Face. No se trata de una versión oficial de Ai2 ni de MiniMax: es una redistribución modificada que aplica cuantización INT8 con rotaciones ConvRot (bloques Hadamard) a 302 capas lineales del modelo base, añadiendo además un proyector experimental que mapea estados ocultos de Molmo hacia el espacio de condicionamiento de MiniMax H3.
+Molmo2-8B-Minimax-H3 es un paquete comunitario publicado por el usuario Alissonerdx que adapta el modelo multimodal Molmo2-8B de Ai2 (Allen Institute for AI) para dos cometidos distintos: servir como codificador de texto y vision experimental para el modelo de generacion de video MiniMax H3, y ofrecer variantes cuantizadas del modelo MolmoPoint-8B para seguimiento de puntos en video. No es un lanzamiento oficial ni de Ai2 ni de MiniMax, sino un empaquetado de terceros construido sobre los pesos base de `allenai/Molmo2-8B`.
 
-El problema que aborda es doble: por un lado, reducir a la mitad aproximadamente el footprint de memoria del modelo original (de unos 19 GB del repositorio base a unos 9,65 GB con el proyector incluido), permitiendo su ejecución en GPUs con menos VRAM; por otro, explorar la integración de Molmo2 como selector de identidad o condición visual en flujos de generación de vídeo basados en MiniMax H3, un caso de uso relevante para pipelines de edición y generación de vídeo con control de persona.
+El nucleo del paquete es un fichero de pesos INT8 ConvRot de 9,29 GB (unos 9,65 GB con el proyector incluido) que cuantiza 302 capas lineales elegibles con rotaciones block-Hadamard y activaciones INT8 dinamicas por token, manteniendo embeddings, normalizaciones, sesgos y formas no soportadas en BF16. El repositorio incluye ademas dos variantes separadas de MolmoPoint-8B (INT8 ConvRot y NVFP4 AWQ) para tareas de seguimiento de puntos con identidad de objeto, pensadas para integrarse en flujos de segmentacion de video junto a SAM 3.1.
 
-El modelo base es un modelo image-text-to-text conversacional, y esta variante conserva pesos de lenguaje y visión, adaptador multimodal, tokenizador, procesador y código original. Cabe destacar que el paquete incluye su propio cargador en Python (convrot_runtime.py) y no es compatible con el método estándar from_pretrained de Transformers, lo que es importante a la hora de planificar su despliegue.
+Su relevancia actual es practica: reduce el peso de un modelo multimodal de 8B a un rango manejable en GPUs de consumo y workstation, y proporciona cargadores personalizados y nodos de ComfyUI para que el modelo pueda ejecutarse dentro de pipelines de generacion de video sin descargar los pesos BF16 originales. La contrapartida es que se trata de un paquete experimental, con validacion limitada a pruebas de humo y con una proyeccion hacia H3 que el propio autor reconoce como incompleta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Multimodal (visión + lenguaje) basada en allenai/Molmo2-8B, con proyector experimental hacia MiniMax H3 |
-| Parametros totales | no disponible (pesos completos incluidos en un fichero de 9,29 GB en INT8) |
-| Parametros activos | no aplicable (no es MoE) |
+| Arquitectura | Transformer multimodal (vision + lenguaje) con adaptador multimodal; base Molmo2-8B |
+| Parametros totales | 8B (modelo base Molmo2-8B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT8 simétrico por canal de salida (pesos) con rotaciones ConvRot por bloques Hadamard de 256, 64 o 16; activaciones INT8 dinámicas por token; embeddings, normalizaciones, sesgos y formas no soportadas en BF16 |
+| Tipos de cuantizacion | INT8 simetrica per-output-channel con ConvRot block-Hadamard (bloques 256, 64 o 16) y activaciones INT8 dinamicas por token; NVFP4 AWQ (solo en la variante MolmoPoint) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (molmo2_8b_int8_convrot.safetensors, 9,29 GB; paquete completo ~9,65 GB) |
+| Formato de pesos | safetensors (`molmo2_8b_int8_convrot.safetensors`, 9,29 GB decimal; paquete completo ~9,65 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Molmo2-8B de Ai2, es un modelo multimodal de tipo image-text-to-text que combina un codificador de visión, un adaptador multimodal y un modelo de lenguaje. Esta variante comunitaria no introduce cambios de entrenamiento: es una cuantización post-entrenamiento (PTQ). Las 302 capas lineales elegibles se cuantizan a INT8 simétrico por canal de salida, aplicando rotaciones regulares por bloques Hadamard (ConvRot) de tamaño 256, 64 o 16 para mitigar la pérdida de precisión, junto con cuantización dinámica INT8 por token de las activaciones. Los componentes no cuantizables (embeddings, capas de normalización, sesgos) permanecen en BF16.
+El modelo base Molmo2-8B es un transformer multimodal que combina un backbone de vision con un modelo de lenguaje y un adaptador multimodal que proyecta representaciones visuales al espacio del lenguaje. Sobre esa base, este paquete no reentrena el modelo: aplica cuantizacion post-entrenamiento a 302 capas lineales elegibles, usando pesos INT8 simetricos por canal de salida con rotaciones block-Hadamard ConvRot (tamano de bloque 256, 64 o 16) y activaciones INT8 dinamicas calculadas por token. Las capas no elegibles (embeddings, normalizaciones, sesgos y formas no soportadas) permanecen en BF16, y el proyector H3 conserva su precision original.
 
-El elemento más experimental es el proyector H3 (`molmo2-8b-h3-tap24-phaseb-pilot.safetensors`), que toma los estados ocultos de la capa 24 de Molmo y los proyecta como condicionamiento para MiniMax H3, un modelo de generación de vídeo independiente. Este proyector fue calibrado con el Molmo original en coma flotante, por lo que su compatibilidad con la versión cuantizada requiere evaluación. No hay datos sobre datos de entrenamiento, número de tokens ni ajuste fino con RLHF/DPO para el modelo base en la información disponible.
+El paquete incluye el codigo original del modelo, tokenizer, processor y un cargador propio (`convrot_runtime.py`) porque `from_pretrained` estandar de Transformers no interpreta estos pesos cuantizados. Para las variantes MolmoPoint, la version INT8 ConvRot cuantiza 144 capas lineales del lenguaje y mantiene el backbone visual y la cabeza de prediccion de puntos en BF16; la version NVFP4 AWQ emplea calibracion activation-aware de ModelOpt sobre prompts de video, con pesos NVFP4 nativos y escalas AWQ pre-cuantizadas. No se dispone de informacion sobre el dataset de entrenamiento ni sobre fases de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Comprensión de imagen y texto (pipeline image-text-to-text) heredada de Molmo2-8B, con generación conversacional.
-- Procesamiento potencial de vídeo, sujeto a las dependencias de vídeo del modelo original.
-- Extracción de estados ocultos intermedios (capa 24) para condicionar modelos de generación de vídeo vía el proyector H3 experimental.
-- Selección de intérpretes en vídeo mediante descripciones textuales explícitas (validado de forma limitada en un clip de prueba, tanto en BF16 como en INT8).
-- Carga con soporte de hardware INT8 GEMM en GPUs NVIDIA CUDA.
-- No hay evidencia en la documentación de soporte de tool calling, agentes ni modo de razonamiento explícito.
+- Generacion de texto y razonamiento multimodal a partir de entradas imagen-texto (pipeline `image-text-to-text`).
+- Comprension de imagenes y video mediante el backbone visual de Molmo2.
+- Condicionamiento texto/visual para generacion de video a traves de la proyeccion H3 (experimental, orientada a fl2va y t2v).
+- Seguimiento de puntos en video con identidad de objeto mediante las variantes MolmoPoint-8B, que generan tokens de punto nativos y metadatos de pointing.
+- Integracion con segmentacion por frame: los puntos y mascaras de MolmoPoint alimentan a SAM 3.1 para producir segmentacion densa.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Ejecución de Molmo2-8B en GPUs con VRAM limitada: la cuantización INT8 con ConvRot reduce el peso del modelo a ~9,65 GB, permitiendo alojarlo en GPUs de 16-24 GB que no podrían cargar cómodamente la versión BF16 completa.
-- Condicionamiento de generación de vídeo con MiniMax H3: el proyector experimental permite usar representaciones de Molmo como condición para pipelines de generación de vídeo, útil en flujos de trabajo de creación de contenido audiovisual.
-- Selección de personas en vídeo mediante texto: en un flujo de edición de vídeo multi-persona, se puede usar la descripción explícita de prendas o rasgos (por ejemplo, "el intérprete con pantalones cortos y guantes") para seleccionar al sujeto deseado.
-- Integración con ComfyUI: el paquete incluye un servidor Molmo para ComfyUI que detecta automáticamente convrot_config.json, lo que lo hace adecuado para creadores que ya trabajan con este entorno de generación visual.
-- Verificación de provenance y reproducibilidad: los scripts incluidos (verificación SHA256 de shards originales, mapa de módulos, checks de inferencia) lo hacen útil como referencia técnica para estudios de cuantización ConvRot.
-- Investigación sobre compatibilidad de proyectores calibrados en FP con modelos cuantizados: el propio autor señala que la compatibilidad del proyector con la versión INT8 requiere evaluación, lo que constituye un caso de estudio abierto.
+- Generacion de video condicionada por texto en ComfyUI: el nodo "Molmo2 as H3 encoder" descarga el paquete, localiza el proyector en `projections/` y devuelve un objeto `CLIP` que se conecta donde el flujo H3 espera su codificador de texto, permitiendo usar Molmo2 como encoder dentro del proceso de ComfyUI.
+- Segmentacion de video asistida por puntos: se conecta `point_model` con `MolmoPoint-8B` como metodo de propagacion, se selecciona un sujeto y se aplica "Apply fix"; MolmoPoint aporta puntos dispersos con identidad y SAM 3.1 los convierte en mascaras por frame.
+- Edicion y rotoscopia semiautomatica: en postproduccion, el seguimiento de puntos con ID de objeto permite mantener la identidad de un sujeto a lo largo de un plano y corregir derivas tras cortes de camara seleccionando anclas correctas.
+- Despliegue en GPUs de consumo para prototipado multimodal: el fichero INT8 de 9,29 GB reduce el requisito de memoria frente a los pesos BF16, lo que facilita probar Molmo2 en estaciones de trabajo sin descargar el modelo original completo.
+- Experimentacion con cuantizacion INT8 ConvRot: el paquete sirve como referencia reproducible para evaluar rotaciones block-Hadamard y activaciones dinamicas por token en un modelo multimodal de 8B.
+- Tracking de bajo consumo en Blackwell: la variante NVFP4 AWQ (6,9 GiB) esta pensada para seguimiento de puntos con menor huella de memoria, con cargador que adapta el orden de nibbles de ModelOpt al layout nativo de ComfyUI.
+- Investigacion en generacion de video con referencias: la proyeccion H3 puede probarse en modo experimental para t2v y fl2va, aunque el autor advierte que la consistencia de identidad aun no es satisfactoria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor incluye únicamente una validación cualitativa de seguimiento (tracking) en un clip concreto, en la que una descripción corta del objetivo falló en la selección, mientras que descripciones explícitas de prendas seleccionaron correctamente al intérprete solicitado tanto en BF16 como en INT8. Se advierte explícitamente que esta comprobación aislada no establece equivalencia general de tracking ni sustituye a un benchmark completo de vídeo.
+No se han publicado resultados de benchmarks del paquete cuantizado en la informacion disponible. El autor solo reporta una prueba de humo local: ambas variantes de MolmoPoint cargaron y generaron los mismos cinco puntos de seguimiento con un ID de objeto consistente en un clip de ocho frames de un pinguino; la variante NVFP4 paso inferencia por 144 capas cuantizadas nativas de ComfyUI en una RTX PRO 5000 Blackwell. Respecto a MolmoPoint original, Ai2 reporta +5,7 J&F en Molmo2-Track frente a Molmo 2 (8B) y resultados estado del arte en MeViS, pero son resultados del modelo en precision completa, no de estas variantes cuantizadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible como cifra oficial; el paquete de pesos completo ocupa ~9,65 GB en disco, por lo que en INT8 con activaciones dinámicas se recomienda una GPU con al menos 12-16 GB de VRAM (estimación, no dato publicado).
-- GPU recomendadas: GPUs NVIDIA con soporte de GEMM INT8 en CUDA; no se promete mejora de throughput respecto al original (el runtime es una implementación eager de PyTorch, no un motor optimizado).
-- Consumer GPUs: no hay datos publicados; por tamaño de pesos, una RTX 3090/4090 (24 GB) debería alojarlo con holgura, y una GPU de 16 GB podría hacerlo con margen ajustado (estimación).
-- Despliegue: mediante el cargador incluido (convrot_runtime.py con PyTorch, transformers==4.57.1, accelerate, safetensors, pillow, numpy, einops y molmo_utils); no compatible con from_pretrained estándar de Transformers, vLLM, TGI ni llama.cpp. Incluye servidor Molmo para ComfyUI con detección automática de convrot_config.json. Ollama no aparece mencionado.
-- Latencia y throughput: no disponibles; el autor indica expresamente que no se promete mejora de rendimiento por la cuantización.
+- VRAM estimada: el fichero INT8 ConvRot ocupa 9,29 GB y el paquete completo con proyector unos 9,65 GB; se necesita margen adicional para activaciones, cache y contexto. La variante MolmoPoint INT8 ocupa aproximadamente 9,8 GiB y la NVFP4 AWQ unos 6,9 GiB.
+- GPU recomendadas: el autor valida ejecucion en RTX PRO 5000 Blackwell para la variante NVFP4; para INT8 se asume una GPU NVIDIA con soporte CUDA y suficiente VRAM, sin modelo concreto especificado.
+- Cabe en GPU de consumo: si, en tarjetas con 12-16 GB o mas de VRAM para la variante INT8, y con mayor holgura para NVFP4 (6,9 GiB), aunque no se detallan modelos concretos.
+- Opciones de despliegue: cargador propio `convrot_runtime.py` con PyTorch, transformers 4.57.1 o superior (probado con 4.57.1, 5.17 y 5.22.1), accelerate, safetensors, pillow, numpy, einops y molmo_utils; integracion en ComfyUI mediante el nodo `alisson-anjos/ComfyUI-Molmo2-H3`. vLLM, llama.cpp, Ollama y TGI no estan soportados segun la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alissonerdx/Molmo2-8B-Minimax-H3 | no disponible | INT8 ConvRot (comunitaria) | no disponible | Apache 2.0 | Requiere cargador propio; proyector H3 experimental |
-| allenai/Molmo2-8B (base) | no disponible | BF16 (original) | no disponible | Apache 2.0 | Versión oficial de Ai2, carga estándar con Transformers |
-| MiniMax H3 | no disponible | no disponible | no disponible | no disponible | Modelo de generación de vídeo independiente; recibe el condicionamiento del proyector |
+| Molmo2-8B-Minimax-H3 (este paquete) | 8B | no disponible | INT8 ConvRot; NVFP4 AWQ en MolmoPoint | Apache 2.0 | Hugging Face, ComfyUI |
+| allenai/Molmo2-8B (base) | 8B | no disponible | BF16 original | Apache 2.0 | Hugging Face |
+| allenai/MolmoPoint-8B | 8B | no disponible | BF16 original | no disponible en la informacion | Hugging Face |
+| Molmo 2 (8B) | 8B | no disponible | BF16 original | no disponible en la informacion | Referenciado por Ai2 |
+
+La comparativa se limita a la familia Molmo porque la informacion proporcionada no incluye datos de modelos alternativos de otros desarrolladores. Las diferencias clave son el nivel de cuantizacion (INT8 o NVFP4 frente a BF16), el empaquetado con cargador propio y la proyeccion H3 anadida, que no existe en los modelos base.
 
 ## Limitaciones y advertencias
 
-- No es una versión oficial de Ai2 ni de MiniMax: es una redistribución comunitaria modificada, con los riesgos de soporte y mantenimiento que ello implica.
-- El cargador propio rompe la compatibilidad con el ecosistema estándar de Transformers, vLLM y TGI; la integración en producción requiere adaptaciones.
-- El proyector H3 es experimental: fue calibrado con Molmo en coma flotante y su compatibilidad con la versión INT8 no ha sido evaluada. No hay garantía de selección fiable de una persona arbitraria en vídeo multi-persona ni de precisión de tracking preservada.
-- La validación realizada se limita a checks básicos de inferencia y una comparación de tracking en un único clip; no sustituye a un benchmark completo de vídeo o de capacidades multimodales.
-- El runtime es una implementación eager de PyTorch sin optimizaciones de fusión; la cuantización INT8 no garantiza mejora de throughput.
-- Sesgos conocidos, riesgo de alucinación y limitaciones de idioma: no disponibles en la documentación (heredados en principio del modelo base Molmo2-8B).
-- La licencia es Apache 2.0, sin restricciones de uso comercial, aunque al tratarse de una distribución modificada conviene revisar LICENSE y NOTICE incluidos en el repositorio.
-- El procesador requiere trust_remote_code=True (custom code), lo que implica ejecutar código del repositorio y los riesgos de seguridad asociados.
-- Con 0 descargas registradas, no existe historial de uso comunitario que respalde su estabilidad.
+- No es un lanzamiento oficial de Ai2 ni de MiniMax; es un empaquetado comunitario sin validacion independiente.
+- La proyeccion Molmo2 a H3 es experimental: funciona de forma intermitente en ref2va y el autor reconoce que la identidad y la calidad de video aun no son consistentes; requiere entrenamiento adicional con multiples imagenes de referencia y videos objetivo emparejados.
+- Los pesos cuantizados no se cargan con `from_pretrained` estandar de Transformers; es obligatorio usar el cargador incluido, lo que limita la portabilidad a otros frameworks.
+- La validacion reportada es una prueba de humo de cinco puntos en un clip de ocho frames, no un benchmark de precision de seguimiento; no hay garantias de calidad frente al modelo BF16.
+- Riesgo de alucinacion y sesgos: no se documentan en la informacion proporcionada, pero al derivar de un modelo multimodal de lenguaje son aplicables los riesgos habituales de generacion no verificada.
+- Idiomas soportados no documentados; no se puede garantizar cobertura multilingue.
+- El repositorio ocupa 72,3 GB, muy por encima del peso del fichero principal, por lo que la descarga completa requiere planificacion de almacenamiento; el autor sugiere ignorar los patrones `molmopoint_*/**` cuando solo se necesita el encoder H3.
+- La licencia Apache 2.0 del paquete se hereda del modelo base, pero conviene verificar las condiciones de los componentes de terceros (SAM 3.1, ModelOpt) antes de uso comercial.
+- El rendimiento en produccion no esta medido: no hay datos de latencia ni throughput.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Alissonerdx/Molmo2-8B-Minimax-H3
-- Modelo base (allenai/Molmo2-8B): https://huggingface.co/allenai/Molmo2-8B
-- Validación de tracking nativo: validation/tracking/README.md (dentro del repositorio del modelo)
-- No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la informacion disponible.
+- Modelo base: https://huggingface.co/allenai/Molmo2-8B
+- MolmoPoint-8B original: https://huggingface.co/allenai/MolmoPoint-8B
+- Nodos de ComfyUI: https://github.com/alisson-anjos/ComfyUI-Molmo2-H3
+- Blog tecnico de Ai2 sobre MolmoPoint: https://allenai.org/blog/molmopoint

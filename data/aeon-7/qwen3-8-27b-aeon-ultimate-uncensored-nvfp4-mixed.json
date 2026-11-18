@@ -83,8 +83,8 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 54,
-  "downloads_30d": 2772,
+  "likes": 56,
+  "downloads_30d": 2819,
   "trending_score": 11,
   "parameters": 19869895920,
   "parameters_human": "19.87B",
@@ -106,29 +106,24 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "edge浏览器不能播放网页视频怎么解决-百度经验",
-      "url": "https://jingyan.baidu.com/article/5d6edee24615aad8eadeecdd.html",
-      "snippet": "Feb 8, 2020 · edge浏览器不能播放网页视频怎么解决,我们的EDGE浏览器如果不能正常播放视频的话可能是权限没有开启，下面分享 …"
+      "title": "Aeon | a world of ideas",
+      "url": "https://aeon.co/",
+      "snippet": "Aeon is a magazine of ideas and culture. We publish in-depth essays from the world’s most incisive and ambitious thinkers, and a …"
     },
     {
-      "title": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED · Hugging Face",
-      "url": "https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED",
-      "snippet": "Instructions to use AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+      "title": "AEON – Un domaine de montagne unique au monde",
+      "url": "https://www.aeon-montagnes.com/",
+      "snippet": "Découvrez AEON Une vision partagée, un fil rouge, un label de qualité qui se traduit dans chacune des expériences. Porté par les …"
     },
     {
-      "title": "Win10系统如何调整屏幕亮度【三种方法】-百度经验",
-      "url": "https://jingyan.baidu.com/article/fcb5aff7507306edab4a715d.html",
-      "snippet": "Dec 22, 2016 · Win10系统是微软推出的最新一代操作系统，相信很多网友已经使用上了。 从Win8开始，微软就有把PC操作系统向移 …"
+      "title": "Essays — Latest | Aeon",
+      "url": "https://aeon.co/essays",
+      "snippet": "The latest and most popular Essays from Aeon. Longform articles on philosophy, psychology, science, society, history and the arts, …"
     },
     {
-      "title": "AEON-7 (Aeon Forge) - Hugging Face",
-      "url": "https://huggingface.co/AEON-7",
-      "snippet": "The GPU hums, the coffee's on, and the door's open. Recent Activity newactivityabout 3 hours ago AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16:Suggest optimizing for agent tool calling scenarios newactivityabout 19 hours ago AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16:waiting for Aeon-qwen 3.8 27b -Ultimate-bf16 updateda model1 day ago"
-    },
-    {
-      "title": "Telegram v6.9.3 繁體中文 手機版、電腦版下載 (Android,iPhone,Wi.",
-      "url": "https://123.briian.com/forum.php?mod=viewthread&tid=10226",
-      "snippet": "Jan 2, 2020 · Telegram v6.9.3 繁體中文 手機版、電腦版下載 (Android,iPhone,Wi... brian當前離線"
+      "title": "Aeon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aeon",
+      "snippet": "Although the term aeon may be used in reference to a period of a billion years (especially in geology, cosmology and astronomy), its …"
     }
   ]
 }

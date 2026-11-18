@@ -2,135 +2,112 @@
 
 ## Resumen
 
-Ternary Bonsai 2 27B Abliterated (PTQ1_0 GGUF) es una version del modelo Ternary Bonsai 2 27B de PrismML a la que se le ha eliminado la direccion de rechazo (abliteracion) directamente sobre la retícula ternaria, sin recuantizar, sin hornear en BF16 y sin vectores de control en tiempo de inferencia. Lo publica el usuario BoldingBuilds en Hugging Face bajo licencia Apache 2.0, con 26.895.998.464 parametros (~26,9 B) y un unico archivo GGUF de 5.946.648.928 bytes, exactamente del mismo tamano que la release oficial PTQ1_0. El modelo base es prism-ml/Ternary-Bonsai-2-27B-gguf y comparte linaje con la familia Qwen3.8 (etiqueta qwen35 en el repo), de la que se transfiere la direccion de rechazo.
+Ternary Bonsai 2 27B Abliterated (PTQ1_0 GGUF) es una variante del modelo Ternary Bonsai 2 27B de PrismML, publicada por el usuario BoldingBuilds en Hugging Face. Se trata de un checkpoint ternario (pesos con valores en `{-s, 0, +s}` por grupo de 128) al que se le ha aplicado una "abliteración" de rechazo, es decir, una edición quirúrgica de los pesos para eliminar la dirección de rechazo del modelo base. El resultado es un modelo sin censura conductual que mantiene prácticamente intactas sus capacidades de razonamiento y código.
 
-El interes tecnico esta en el metodo: en un checkpoint ternario, donde cada grupo de 128 pesos toma valores en {−s, 0, +s}, la proyeccion clasica de la direccion de rechazo no cambia ni un solo digito (0 de 89.128.960 tras reempaquetar a λ=1,0). El autor, en su lugar, voltea digitos de forma selectiva en los tensores que escriben en el residual (`ffn_down`, `ssm_out`, `attn_output`), gastandolos donde |r_i| es mayor, y declara un 99,1-99,3% de componente de rechazo eliminado con solo un 0,24% de digitos modificados.
+La innovación técnica principal no es la abliteración en sí, sino el método para aplicarla sobre una malla ternaria: la proyección clásica de la dirección de rechazo (`W ← W − λ·r·(rᵀW)`) no funciona en pesos ternarios porque el paso de cuantización redondea los pesos a su valor original. En su lugar, el autor voltea dígitos ternarios selectivamente en 98 tensores "writer" (`ffn_down`, `ssm_out`, `attn_output`) de los bloques 15 a 63, consiguiendo eliminar entre el 99,1% y el 99,3% de la componente de rechazo.
 
-El resultado declarado es un modelo que responde al 99% de las peticiones de SimpleSafetyTests (frente al 83% de rechazo del original) sin degradacion medible en codigo: 0,805 pass@1 en HumanEval-164 frente a 0,811 del stock (McNemar exacto, p = 1,000), y con sobre-rechazo reducido a 0,0% en XSTest-safe (250/250 respuestas completas). Requiere el fork de llama.cpp de PrismML para funcionar.
+El modelo tiene 26.895.998.464 parámetros (aproximadamente 26,9 mil millones), se distribuye en formato GGUF de 5,9 GB y requiere el fork de llama.cpp de PrismML para funcionar. Está publicado bajo licencia Apache 2.0 y etiquetado como `uncensored`, `conversational` y compatible con endpoints. Es relevante ahora porque demuestra que la edición de comportamiento es viable en el espacio de pesos ternarios, un terreno donde las técnicas convencionales de abliteración fallan silenciosamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida, con tensores de espacio de estados (`ssm_out`, `ssm_alpha`, `ssm_beta`) y de atencion (`attn_output`); linaje Qwen3.8-27B segun la model card. No se detalla el numero de capas ni la configuracion exacta |
+| Arquitectura | Transformer hibrido con capas SSM (derivada de Qwen3.8-27B; detalles completos no disponibles) |
 | Parametros totales | 26.895.998.464 (~26,9 B) |
-| Parametros activos | no disponible (la model card no indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | PTQ1_0 (ternario, 3 valores por grupo de 128: {−s, 0, +s}) para la mayoria de tensores; bf16 en los 96 tensores `ssm_alpha`/`ssm_beta`. No se publican otras variantes de cuantizacion en esta ficha |
-| Idiomas soportados | no disponible (la etiqueta qwen35 apunta a herencia Qwen, pero la model card no documenta idiomas) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (un unico archivo de 5.946.648.928 bytes; requantizacion con `llama-quantize`) |
-| Tamano del repositorio | 5,9 GB |
-| Tensor modificados | 98 de 851 (los otros 753 son byte a byte identicos al stock, incluidos `token_embd` y `output`) |
-| Descargas / likes | 1.680 / 8 |
-| Fecha de creacion | 2026-09-18 |
+| Parametros activos | no disponible (no consta que sea MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | PTQ1_0 ternario nativo (1 bit por peso ternario, grupo de 128); existe variante PQ2_0 (2,13 bpw) con decodificacion especulativa MTP |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (5.946.648.928 bytes) |
+| Modelo base | prism-ml/Ternary-Bonsai-2-27B-gguf |
+| Runtime requerido | Fork de llama.cpp de PrismML (PrismML-Eng/llama.cpp) |
+| Tensores editados | 98 de 851 (753 byte-identicos al release oficial) |
+| Digitos ternarios modificados | 0,24% de los tensores editados; 0,052% del total del modelo |
 
 ## Arquitectura y entrenamiento
 
-No hay entrenamiento implicado: se trata de una edicion post-entrenamiento sobre un checkpoint ya cuantizado en ternario. Los pesos del modelo base toman tres valores por grupo de 128 ({−s, 0, +s}) con escalas por grupo, de modo que cualquier correccion debe expresarse como cambios discretos de digito o como reajuste de escala. El autor documenta que reajustar las escalas por grupo con los digitos congelados solo elimina un 1,1% de la componente de rechazo, porque una escala puede escalar pero no variar dentro del grupo de 128 pesos.
+El modelo hereda la arquitectura del Qwen3.8-27B, que combina capas de atencion con capas de estado espacial (SSM), segun se deduce de la presencia de tensores `ssm_out` entre los tensores editados. Los pesos se almacenan en formato ternario: cada grupo de 128 pesos comparte una escala `s` y cada peso toma uno de tres valores `{-s, 0, +s}`. Esta representacion reduce el checkpoint a 5,9 GB para 26,9 mil millones de parametros, lo que equivale a aproximadamente 1,77 bits por peso.
 
-El metodo efectivo consiste en editar la suma de fila `c = rᵀW` (un valor por columna) volteando digitos en los tensores escritores del residual: `ffn_down`, `ssm_out` y `attn_output`, 98 tensores en total. La direccion de rechazo se recupera del padre Qwen3.8-27B mediante descomposicion rank-1 (σ₁/σ₂ ≈ 23) a partir de los pesos publicados por huihui. La edicion es greedy, en una sola pasada por filas en orden descendente de |r_i|, con λ = 1,0, las 512 filas superiores por tensor y solo los bloques 15-63 (los bloques tempranos se dejan intactos deliberadamente porque incluirlos destruye la capacidad de programacion). El coste declarado es |dW|/|W| = 0,071, aproximadamente 5 veces el de una proyeccion sobre un modelo en precision completa, porque una retícula gruesa no permite correcciones pequenas.
+No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, ni si hubo fases de RLHF o DPO en el modelo base. La contribucion de esta ficha es exclusivamente la edicion post-entrenamiento: la abliteracion se aplica directamente sobre la malla ternaria, sin recuantizacion ni bake a BF16. La direccion de rechazo se transfiere desde el modelo padre Qwen3.8-27B, recuperada por descomposicion de rango 1 a partir de los pesos publicados por huihui (relacion de valores singulares σ₁/σ₂ ≈ 23). El algoritmo recorre las filas en orden descendente de `|r_i|` y voltea digitos de forma codiciosa, con recorte para mantener cada digito en `{-1, 0, +1}` y sin tocar las escalas de grupo.
 
-No se dispone de informacion sobre datos de preentrenamiento, numero de tokens, composicion del dataset ni sobre fases de RLHF o DPO: esos datos corresponden al modelo base de PrismML y no se documentan en esta ficha. La unica innovacion reproducible documentada es el propio procedimiento de abliteracion sobre retícula ternaria y la receta de cuantizacion (`--output-tensor-type PTQ1_0 --token-embedding-type PTQ1_0 --tensor-type ssm_alpha=bf16 --tensor-type ssm_beta=bf16 ... PTQ1_0 16`), que por defecto no se reproduce con `llama-quantize` (la configuracion por defecto produce 7,11 GB porque `output.weight` y `token_embd.weight` caen a Q6_K/Q4_K).
+La edicion se limita a los bloques 15 a 63 y a los tensores que escriben en el flujo residual (`ffn_down`, `ssm_out`, `attn_output`). Los bloques tempranos (0 a 14) se dejan intactos deliberadamente: el autor documenta que incluirlos destruye la capacidad de codigo, con evidencia de tres fuentes independientes (la receta de huihui para Qwen3.8 omite los bloques 0 a 14, un brazo experimental con todos los bloques colapso a 0,233 de calidad de respuesta, y Hikari07jp recupero la capacidad de codigo en Bonsai 1 restaurando las capas 0 a 7). El parametro λ es 1,0 y se editan las 512 filas superiores por tensor.
 
 ## Capacidades
 
-- Generacion de texto conversacional: pipeline declarado `text-generation` y etiqueta `conversational`.
-- Generacion de codigo: 132/164 en HumanEval-164 en modo greedy (pass@1 = 0,805), con una mediana de 113 tokens por completion y un 8,5% de respuestas truncadas por limite de tokens.
-- Razonamiento con modo thinking: la evaluacion se hace con `enable_thinking: false` en ambos brazos, lo que implica que el modelo dispone de un modo de pensamiento. El autor advierte que el pensamiento puede consumir el presupuesto de tokens antes de emitir la respuesta.
-- Cumplimiento de instrucciones benignas: 250/250 respuestas completas en XSTest-safe, con 0,0% de sobre-rechazo.
-- Ausencia efectiva de rechazo: 1,0% de rechazo juzgado en SimpleSafetyTests (n=100) y 0,0% segun el prefix grader, sin completions vacias (0 de 100) y sin respuestas no parseables por el juez.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` figura en el repo, aunque no se detalla el alcance.
-- Tool calling / function calling: no disponible (no se menciona en la informacion proporcionada).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no se menciona).
-- Capacidades multilingues: no disponible.
-- Vision o audio: no disponible.
+- Generacion de texto conversacional multi-turno, con etiqueta `conversational` en el repositorio.
+- Razonamiento y conocimiento general: MMLU de 0,7814 en 0-shot sobre las 14.042 preguntas del conjunto completo.
+- Generacion de codigo: HumanEval pass@1 de 0,860 (141/164) con decodificacion greedy.
+- Respuesta sin rechazo conductual: 0% de rechazo juzgado en SimpleSafetyTests (n=100), frente al 83% del modelo base.
+- Baja sobre-negativa: 0,0% de sobre-rechazo en XSTest-safe (n=250), frente al 1,6% del modelo base.
+- Modo "thinking" (razonamiento extendido): el autor advierte que la version v1 tiene un problema en modo thinking y recomienda la v2 para uso con thinking activado.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Vision o audio: no disponible; el pipeline es exclusivamente `text-generation`.
 
 ## Casos de uso
 
-- Asistente de generacion de codigo en local: con 0,805 pass@1 en HumanEval-164 y un archivo de 5,9 GB, se puede ejecutar sobre una GPU de consumo para autocompletado y refactorizacion sin enviar codigo a un servicio externo.
-- Despliegue en hardware de gama media: al ocupar aproximadamente 5,5 GiB en disco y no necesitar precision completa, cabe en GPUs de 8-12 GB de VRAM, algo imposible para el modelo en BF16 (~54 GB).
-- Investigacion sobre alineacion y rechazo: sirve como brazo abliterado emparejado con la release stock de PrismML (misma model card, mismo runtime, mismas flags, misma semilla), lo que permite aislar el efecto de la edicion sobre el comportamiento de rechazo.
-- Evaluacion de seguridad y red teaming controlado: con 1,0% de rechazo juzgado, es util para generar respuestas a prompts adversarios en un entorno de laboratorio y estudiar como se degradan los filtros de un modelo cuantizado.
-- Generacion creativa sin filtros editoriales: ficcion, guiones o dialogos donde los rechazos del modelo base interrumpen el flujo, con la advertencia de que la responsabilidad editorial pasa integramente al operador.
-- Investigacion sobre cuantizacion ternaria: el repositorio documenta el trampa de la "proyeccion y reempaquetado" (un modelo que pasa las comprobaciones de tamano y de reproducibilidad del cuantizador sin contener abliteracion alguna), por lo que es material de referencia para quien construya variantes PTQ1_0.
-- Generacion sintetica de datos y destilacion: por su cumplimiento casi total en XSTest-safe (250/250) y su coste de inferencia bajo, puede actuar como generador de instrucciones y respuestas en pipelines de destilacion hacia modelos mas pequenos.
+- **Investigacion sobre alineacion y edicion de pesos**: el modelo sirve como caso de estudio reproducible de abliteracion en espacio ternario. Un investigador puede comparar los 98 tensores editados contra el release oficial de PrismML y verificar que la edicion existe realmente, algo que un modelo proyectado y recuantizado no permitiria detectar por tamano de fichero.
+- **Evaluacion de robustez de salvaguardas**: con 0% de rechazo en SimpleSafetyTests y 0,776 de calidad de respuesta segun StrongReject, es util para medir hasta que punto las politicas de seguridad de un modelo dependen de una unica direccion en el espacio residual y como de fragiles son frente a ediciones de bajo coste (0,052% de los digitos).
+- **Generacion de codigo en pipelines internos**: con HumanEval pass@1 de 0,860 y un checkpoint de solo 5,9 GB, cabe en entornos con VRAM limitada donde un modelo de 27B en BF16 (unos 54 GB) no seria viable. Adecuado para autocompletado, generacion de tests y refactorizacion en herramientas internas donde la moderacion de contenido no es un requisito.
+- **Despliegue en hardware de gama consumer**: el tamano de 5,9 GB permite cargar el modelo en GPUs con 8-12 GB de VRAM, algo impensable para el mismo numero de parametros en precision completa. Util para prototipado local y experimentacion sin acceso a cluster.
+- **Analisis de sesgos y contenido sensible en entornos controlados**: al no rechazar peticiones, permite a equipos de seguridad rojo (red team) generar y estudiar respuestas a prompts que el modelo base declinaria, siempre dentro de un marco de evaluacion etico y con las salvaguardas externas adecuadas.
+- **Sustitucion de modelos censurados en aplicaciones creativas**: escritura de ficcion, guiones o narrativa que requieran tratar temas dificiles sin que el modelo interrumpa la generacion con negativas, manteniendo la calidad de razonamiento del modelo base (MMLU practicamente identico, +0,12 pp).
+- **Base para experimentos de cuantizacion ternaria**: como ejemplo funcional de PTQ1_0 con decodificacion estandar, sirve para medir latencia y throughput en el fork de PrismML y comparar contra la variante PQ2_0 con cabeza MTP (que segun el autor es aproximadamente un 37% mas rapida en decodificacion, mientras que MTP no aporta a este PTQ1_0, solo un +1,6%).
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son comparativas emparejadas contra la release stock de PrismML, con el mismo runtime, flags y semilla, y `enable_thinking: false` en ambos brazos. El juez es Qwen3.8-27B-OBLITERATED-Q8_0 con rubrica StrongReject.
+Los datos proceden de la comparacion del autor (23 de septiembre de 2026) entre el release oficial de PrismML PTQ1_0 y esta version abliterada, con el mismo runtime, mismos flags, decodificacion greedy, thinking desactivado y respuestas de 2.048 tokens. El juez es Qwen3.8-27B-OBLITERATED-Q8_0 con la rubrica StrongReject.
 
-Rechazo (SimpleSafetyTests, n=100):
+| Benchmark | Modelo base (stock) | Abliterado | Cambio | p (McNemar exacto) |
+|---|---|---|---|---|
+| SimpleSafetyTests, rechazo juzgado (n=100) | 83% | 0% | −83 pp | no disponible |
+| SimpleSafetyTests, calidad de respuesta StrongReject (0–1) | 0,163 | 0,776 | +0,613 | no disponible |
+| SimpleSafetyTests, completaciones vacias | 0 | 0 | 0 | no disponible |
+| XSTest-safe, sobre-rechazo (n=250) | 1,6% | 0,0% | −1,6 pp | no disponible |
+| XSTest-safe, rechazo parcial | 0,4% | 0,0% | −0,4 pp | no disponible |
+| MMLU 0-shot (14.042 preguntas) | 0,7802 | 0,7814 | +0,12 pp | 0,51 |
+| HumanEval-164, greedy pass@1 | 0,890 (146/164) | 0,860 (141/164) | −3,0 pp | 0,18 |
 
-| Metrica | Stock | Abliterado |
-|---|---|---|
-| Rechazo juzgado | 83,0% | 1,0% |
-| Rechazo por prefijo | 78,0% | 0,0% |
-| Puntuacion media de rubrica | 0,158 | 0,696 |
-| Completions vacias | 0 | 0 |
-| No parseadas por el juez | 0 | 0 |
-
-Sobre-rechazo en prompts benignos (XSTest-safe, n=250; menor es mejor):
-
-| Metrica | Stock | Abliterado |
-|---|---|---|
-| Sobre-rechazo | 1,6% | 0,0% |
-| Cumplimiento total | 242 / 250 | 250 / 250 |
-| Rechazo parcial | 4 | 0 |
-| Rechazo total | 4 | 0 |
-
-Capacidad (HumanEval-164, greedy, emparejado por problema):
-
-| Metrica | Stock | Abliterado |
-|---|---|---|
-| pass@1 | 0,811 (133/164) | 0,805 (132/164) |
-| Truncado por limite de tokens | 11,6% | 8,5% |
-| Mediana de tokens de completion | 141 | 113 |
-
-Desglose por problema: 129 pasan en ambos, 28 fallan en ambos, 3 ganados y 4 perdidos; McNemar exacto bilateral p = 1,000 (n discordante = 7), sin cambio de capacidad detectable. No hay resultados publicados de MMLU, GSM8K ni otros benchmarks en la informacion disponible.
+Desglose por problema en HumanEval: 139 pasan en ambos, 16 fallan en ambos, 2 ganan y 7 pierden con la abliteracion. El autor senala que ningun cambio es estadisticamente significativo, pero que HumanEval apunta en direccion negativa y que con n=164 no se puede descartar una caida real de unos pocos puntos. Tambien documenta una correccion: una ejecucion anterior reportaba 0,811 → 0,805 porque limitaba cada peticion a 512 tokens de contexto (`-c 4096` repartido en 8 slots), de modo que muchos fallos del modelo base eran respuestas truncadas, no incorrectas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: unos 5,5 GiB, segun el tamano del archivo (5.946.648.928 bytes). Con cache KV, buffers de contexto y overhead del runtime, la cifra practica estimada es de 7-10 GB, dependiendo de la longitud de contexto (no publicada). Es una estimacion derivada del tamano del archivo, no un dato del autor.
-- Cabe en GPU de consumo: si, en tarjetas de 8 GB con contexto corto, y con holgura en 12 GB (RTX 3060 12 GB, RTX 4070) y en 24 GB (RTX 3090, RTX 4090, RTX 5090).
-- GPU profesionales: A100, H100 o L40S no aportan ventaja por capacidad de pesos, pero si para contextos muy largos o lotes grandes; el modelo es pequeno para ese hardware.
-- Opciones de despliegue: requiere el fork de llama.cpp de PrismML (`https://github.com/PrismML-Eng/llama.cpp`), que implementa PTQ1_0. No hay constancia en la informacion disponible de soporte en vLLM, TGI, Ollama u otros runtimes.
-- Requisito adicional: llama.cpp upstream no reproduce la release por defecto; la receta documentada usa `llama-quantize` con `--output-tensor-type PTQ1_0`, `--token-embedding-type PTQ1_0` y `ssm_alpha`/`ssm_beta` en bf16.
-- Latencia y throughput: no disponibles. Los kernels ternarios de PTQ1_0 son especificos del fork y no se publican cifras de tokens por segundo.
+- **VRAM estimada para inferencia**: aproximadamente 6-7 GB para el checkpoint PTQ1_0 (5,9 GB de pesos mas overhead de contexto y cache KV). La variante PQ2_0 (2,13 bpw) ocupa mas, en torno a 7-8 GB.
+- **GPU recomendadas**: cualquier GPU con al menos 8 GB de VRAM para el modelo en solitario; RTX 3060 Ti, RTX 4060 Ti, RTX 4070 y superiores son suficientes. Para servicio concurrente con contexto largo, se recomienda RTX 4090 (24 GB), A100 (40/80 GB) o H100 (80 GB) para alojar multiples slots.
+- **Cabe en GPU consumer**: si, en la mayoria de GPUs consumer modernas con 8 GB o mas. Es una de las principales ventajas del formato ternario frente al mismo modelo en BF16.
+- **Opciones de despliegue**: exclusivamente el fork de llama.cpp de PrismML (`PrismML-Eng/llama.cpp`). No se garantiza compatibilidad con llama.cpp upstream, vLLM, TGI ni Ollama, ya que el formato PTQ1_0 es nativo de PrismML y el checkpoint no es un GGUF convencional.
+- **Latencia y throughput**: no disponibles de forma absoluta. El autor indica que la cabeza MTP de la variante PQ2_0 aporta aproximadamente un 37% de mejora en decodificacion, pero que en este PTQ1_0 el beneficio es solo del +1,6%, por lo que no compensa para esta version.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Rechazo (SimpleSafetyTests) | HumanEval pass@1 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | MMLU | HumanEval | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| Ternary Bonsai 2 27B Abliterated (este) | 26,9 B | PTQ1_0 GGUF, 5.946.648.928 bytes | 1,0% | 0,805 | apache-2.0 | Hugging Face, 1.680 descargas |
-| Ternary Bonsai 2 27B (stock, PrismML) | 26,9 B | PTQ1_0 GGUF, mismo tamano exacto | 83,0% | 0,811 | no disponible en la informacion proporcionada | Hugging Face (repo base citado) |
-| Qwen3.8-27B-OBLITERATED-Q8_0 | no disponible | Q8_0 | no disponible (usado como juez con rubrica StrongReject) | no disponible | no disponible | no disponible |
-| Qwen3.8-27B (padre, referencia de direccion) | ~27 B segun la model card | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ternary Bonsai 2 27B Abliterated PTQ1_0 (este) | 26,9 B | no disponible | 0,7814 | 0,860 | Apache 2.0 | GGUF ternario (5,9 GB) |
+| PrismML Ternary Bonsai 2 27B (stock) | 26,9 B | no disponible | 0,7802 | 0,890 | Apache 2.0 | GGUF ternario (5,9 GB) |
+| Ternary Bonsai 2 27B Abliterated PQ2_0 MTP | 26,9 B | no disponible | no disponible | no disponible | Apache 2.0 | GGUF 2,13 bpw |
+| Qwen3.8-27B (modelo padre) | ~27 B | no disponible | no disponible | no disponible | no disponible | BF16 / safetensors |
 
-No hay datos publicados que permitan comparar con alternativas de terceros (por ejemplo abliteraciones de la familia Qwen3.8 realizadas por otros autores): la model card solo menciona las recetas de huihui y el trabajo de Hikari07jp sobre Bonsai 1 (recuperacion de codigo de 16/20 a 19/20 al restaurar las capas L0-7) como corroboracion cualitativa, sin cifras comparables.
+La comparacion mas directa es contra el release oficial de PrismML, del que este modelo difiere en exactamente 98 tensores y comparte byte a byte los otros 753, incluidos `token_embd` y `output`. Frente al modelo padre Qwen3.8-27B, la diferencia fundamental es la cuantizacion ternaria: reduce el peso a aproximadamente 1,77 bits por parametro a costa de una perdida de calidad que el autor cuantifica en +0,12 pp en MMLU y −3,0 pp en HumanEval (no significativos). La variante PQ2_0 con MTP es la alternativa recomendada si se prioriza velocidad de decodificacion.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterado sin filtros de rechazo: no es apto para exposicion publica directa sin una capa externa de moderacion. La practica totalidad de los prompts de SimpleSafetyTests obtiene respuesta.
-- Evaluacion de seguridad limitada: solo se reportan SimpleSafetyTests (n=100) y XSTest-safe (n=250). No hay medicion de sesgos, toxicidad ni de generalizacion a otras categorias de rechazo.
-- El juez de las evaluaciones es a su vez un modelo abliterado (Qwen3.8-27B-OBLITERATED-Q8_0) con rubrica StrongReject; el autor aporta el prefix grader como segunda opinion, pero el sesgo del evaluador no es despreciable.
-- Riesgo de alucinacion: no medido en la informacion disponible.
-- Idioma: no se documenta ningun idioma soportado; el rendimiento multilingue es desconocido.
-- Limite de tokens: en HumanEval, el 8,5% de las completions se truncan; con el modo thinking activado el presupuesto puede agotarse antes de responder, un fallo que en ejecuciones anteriores produjo 82 respuestas vacias y un falso 0% de rechazo.
-- Coste de la edicion: |dW|/|W| = 0,071, aproximadamente 5 veces el coste de una proyeccion en precision completa; la retícula ternaria no permite correcciones finas.
-- Reproducibilidad parcial: los 96 tensores `ssm_alpha`/`ssm_beta` no se pueden reproducir desde el F16 liberado (se empaquetan a BF16 de 7 bits de mantisa frente a los 10 del F16, con un truncado de ~0,4%) y se empalman literalmente desde la release base.
-- Dependencia de un fork: el modelo solo funciona con el fork de llama.cpp de PrismML, lo que introduce riesgo de mantenimiento y de compatibilidad futura.
-- Licencia: la ficha de este derivado es Apache 2.0, que permite uso comercial, pero la licencia del modelo base (prism-ml/Ternary-Bonsai-2-27B-gguf) no se documenta en la informacion proporcionada; conviene verificarla antes de un despliegue comercial.
-- Trazabilidad: la fecha de creacion del repositorio figura como 2026-09-18, posterior a la fecha de actualizacion habitual de los repos de referencia; conviene validar la procedencia de los pesos antes de usarlos en produccion.
-- La model card disponible esta truncada en la seccion de uso, por lo que las instrucciones completas de compilacion e inferencia no se han podido verificar integramente.
+- **Eliminacion deliberada de salvaguardas**: el modelo responde a practicamente cualquier peticion (0% de rechazo en SimpleSafetyTests). No es apto para aplicaciones orientadas al publico sin una capa de moderacion externa. La licencia Apache 2.0 permite uso comercial, pero eso no exime de responsabilidad legal sobre el contenido generado.
+- **Riesgo de alucinacion**: no se han publicado mediciones especificas de veracidad o factualidad. Como cualquier modelo de ~27B, puede generar afirmaciones falsas con seguridad. La abliteracion no modifica la tendencia a alucinar, pero al eliminar las negativas, el modelo puede presentar contenido inventado sobre temas sensibles sin advertir de su incertidumbre.
+- **Modo thinking defectuoso en v1**: el autor advierte explicitamente que esta version tiene un problema en modo thinking y recomienda la v2 para uso con razonamiento extendido. El fallo documentado es que el pensamiento consume el presupuesto de tokens antes de llegar a la respuesta, produciendo completaciones vacias que un evaluador por prefijo contaria erroneamente como cumplimiento.
+- **Dependencia de un fork no estandar**: requiere el fork de llama.cpp de PrismML. Esto limita la portabilidad, complica el mantenimiento a largo plazo y excluye el despliegue en vLLM, TGI u Ollama. La integracion en produccion exige fijar una version concreta del fork.
+- **Idiomas no documentados**: no se especifica que idiomas soporta. El modelo base deriva de Qwen3.8, lo que sugiere buen soporte de ingles y chino, pero no hay confirmacion oficial ni evaluacion multilingue.
+- **Contexto no documentado**: se desconoce la longitud de contexto nativa. El autor menciona ejecuciones con `-c 4096` repartido en 8 slots (512 tokens por peticion), pero eso es configuracion de evaluacion, no la ventana del modelo.
+- **Perdida de capacidad de codigo**: HumanEval cae 3,0 pp (0,890 → 0,860) y 7 de 164 problemas pasan de correctos a incorrectos. Aunque no es significativo con n=164, el autor reconoce que no se puede descartar una caida real. Los bloques tempranos se dejan intactos precisamente para mitigar este efecto.
+- **Trampa de verificacion**: el autor advierte que un modelo proyectado y recuantizado pasaria una comprobacion de tamano de fichero y de reproducibilidad del cuantizador sin contener abliteracion alguna. Para auditar este checkpoint hay que comparar tensores contra el release oficial, no fiarse del tamano.
+- **Sesgos del modelo base**: no se han publicado evaluaciones de sesgo para este modelo ni para el base. La abliteracion no elimina sesgos de genero, raza o religion; solo elimina la direccion de rechazo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF
-- Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
-- Fork de llama.cpp requerido (PrismML): https://github.com/PrismML-Eng/llama.cpp
-- Recetas de abliteracion de referencia citadas por el autor (huihui y Hikari07jp): sin URL publicada en la informacion disponible.
-- Paper o blog tecnico del metodo: no disponible.
-- Demo o space: no disponible.
-
-Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo (unicamente paginas de ayuda de YouTube y foros sin relacion), por lo que no se han podido anadir enlaces externos verificados adicionales.
+- Variante v2 (recomendada para thinking): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PTQ1_0-GGUF
+- Variante PQ2_0 con MTP: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF
+- Modelo base (PrismML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
+- Fork de llama.cpp de PrismML: https://github.com/PrismML-Eng/llama.cpp

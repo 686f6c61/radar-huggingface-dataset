@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "YossifSamy99/arabic-nlp-models",
+  "slug": "yossifsamy99-arabic-nlp-models",
+  "author": "YossifSamy99",
+  "url": "https://huggingface.co/YossifSamy99/arabic-nlp-models",
+  "created_at": "2026-11-17T18:31:40.000Z",
+  "updated_at": "2026-11-17T20:30:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109082882,
+  "parameters_human": "109.1M",
+  "storage_bytes": 537381707,
+  "storage_human": "537 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "edgarmoreau/walrus-heart",
+  "renamed_at": "2026-11-18T02:58:39.119Z",
   "benchmarks": [],
   "sources": [
     {

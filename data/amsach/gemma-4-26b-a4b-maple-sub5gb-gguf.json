@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 9,
-  "downloads_30d": 2560,
+  "downloads_30d": 2825,
   "trending_score": 0,
   "parameters": 10952640446,
   "parameters_human": "10.95B",
@@ -53,16 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Gemma 4 26B-A4B - Amazon Bedrock",
-      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-26b-a4b.html",
-      "snippet": "Google — Gemma 4 26B-A4B Model Details Gemma 4 26B-A4B is Google's mixture-of-experts model with 25.2 billion total parameters and 3.8 billion active per token, delivering cost-efficient inference with instruction tuning, built-in reasoning, native function calling, and multimodal input across text and image, supporting a 256K token context ..."
-    },
-    {
-      "title": "Gemma 4 — Google DeepMind",
-      "url": "https://deepmind.google/models/gemma/gemma-4/",
-      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
-    }
-  ]
+  "sources": []
 }

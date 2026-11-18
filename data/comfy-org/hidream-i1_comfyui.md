@@ -2,88 +2,106 @@
 
 ## Resumen
 
-HiDream-I1 es un modelo de generación de imágenes a partir de texto (text-to-image) desarrollado por HiDream-ai y publicado el 7 de abril de 2025. Con 17.000 millones de parámetros, se distribuye bajo licencia MIT, lo que permite su uso en proyectos personales, investigación científica y aplicaciones comerciales. El repositorio Comfy-Org/HiDream-I1_ComfyUI no contiene el modelo original, sino un reempaquetado de sus pesos y componentes auxiliares (text encoders y VAE) preparado para su uso directo en ComfyUI, el popular entorno de generación de imágenes por nodos.
+HiDream-I1_ComfyUI es un repositorio de redistribución de pesos del modelo de difusión texto-a-imagen HiDream-I1, empaquetados en formato single-file para su uso directo en ComfyUI. No se trata de un modelo nuevo ni de un desarrollo propio de Comfy-Org: es un repackaging de los pesos originales publicados por HiDream-ai (variantes I1-Dev, I1-Fast, I1-Full y E1-1, E1-Full), reorganizados en archivos `.safetensors` autónomos que eliminan la necesidad de gestionar múltiples subcarpetas y configuraciones del repositorio original.
 
-El repositorio incluye múltiples variantes del modelo: HiDream-I1-Dev (versión de desarrollo), HiDream-I1-Fast (optimizada para velocidad), HiDream-I1-Full (versión completa) y las variantes E1-1 y E1-Full (anteriores o alternativas). Además, ofrece cuantizaciones en BF16, FP16 y FP8, lo que permite ajustar el consumo de memoria según el hardware disponible. Su relevancia actual radica en que es uno de los pocos modelos de texto a imagen de gran tamaño con licencia permisiva y soporte nativo en ComfyUI, lo que facilita su adopción tanto en entornos de investigación como en flujos de producción creativa.
+El repositorio cubre tanto generación texto-a-imagen (familia I1) como edición de imagen (familia E1), e incluye los text encoders necesarios (CLIP-G, CLIP-L, T5-XXL y Llama 3.1 8B Instruct) y el VAE. Su relevancia práctica radica en que simplifica el despliegue en ComfyUI: el usuario descarga los ficheros y los coloca en carpetas estandarizadas, con workflows oficiales ya publicados para cada variante.
 
-## Especificaciones técnicas
+El tamaño del repositorio (310,3 GB) refleja que contiene múltiples variantes y precisiones (bf16, fp8, fp16) de varios modelos, no un único checkpoint. La licencia declarada es MIT. No se dispone de información sobre arquitectura interna, número de parámetros ni datos de entrenamiento en la información proporcionada.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusión para texto a imagen) |
-| Parametros totales | 17.000 millones (17B) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (no aplica directamente; depende del text encoder) |
-| Tipos de cuantizacion | BF16, FP16, FP8 (según archivos incluidos) |
-| Idiomas soportados | no disponible (probablemente multilingüe, pero no especificado) |
+| Arquitectura | no disponible (modelo de difusion texto-a-imagen; detalles internos no disponibles) |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (no aplica directamente; los text encoders incluyen T5-XXL y Llama 3.1 8B Instruct) |
+| Tipos de cuantizacion | bf16, fp16, fp8 (según nombres de ficheros: `_bf16`, `_fp16`, `_fp8`) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (single-file para ComfyUI) |
+
+Variantes incluidas en el repositorio:
+
+| Fichero | Variante | Precision |
+|---|---|---|
+| `hidream_e1_1_bf16.safetensors` | E1-1 (edición) | bf16 |
+| `hidream_e1_full_bf16.safetensors` | E1-Full (edición) | bf16 |
+| `hidream_i1_dev_bf16.safetensors` | I1-Dev | bf16 |
+| `hidream_i1_dev_fp8.safetensors` | I1-Dev | fp8 |
+| `hidream_i1_fast_bf16.safetensors` | I1-Fast | bf16 |
+| `hidream_i1_fast_fp8.safetensors` | I1-Fast | fp8 |
+| `hidream_i1_full_fp16.safetensors` | I1-Full | fp16 |
+| `hidream_i1_full_fp8.safetensors` | I1-Full | fp8 |
+
+Text encoders y VAE requeridos: `clip_g_hidream.safetensors`, `clip_l_hidream.safetensors`, `llama_3.1_8b_instruct_fp8_scaled.safetensors`, `t5xxl_fp8_e4m3fn_scaled.safetensors`, `ae.safetensors`.
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en los datos proporcionados. Se sabe que es un modelo de difusión para generación de imágenes a partir de texto, con 17.000 millones de parámetros, y que existen varias variantes (Dev, Fast, Full, E1) que probablemente difieren en el número de pasos de inferencia, la calidad y la velocidad. El repositorio de Comfy-Org se limita a empaquetar los pesos en formato safetensors y a organizar los componentes necesarios para su ejecución en ComfyUI.
+No se dispone de información sobre la arquitectura interna del modelo en la documentación proporcionada. Por los componentes requeridos (cuatro text encoders: CLIP-G, CLIP-L, T5-XXL y Llama 3.1 8B Instruct, más un VAE) se deduce que HiDream-I1 utiliza un esquema de codificación de texto múltiple y combinada, pero no se detalla el tipo de backbone de difusión (UNet, DiT u otro), el número de parámetros ni la estrategia de entrenamiento.
 
-En cuanto al entrenamiento, no se han publicado datos sobre el número de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO. El modelo incluye varios text encoders: CLIP-L, CLIP-G, T5-XXL y Llama 3.1 8B instruct (este último en versión FP8), lo que sugiere que el sistema de codificación de texto es híbrido y combina representaciones de distintos niveles semánticos. La presencia de Llama 3.1 como encoder adicional es una innovación notable, ya que permite una mejor comprensión de instrucciones complejas en lenguaje natural.
+Tampoco se han publicado en la información disponible datos sobre volumen de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas concretas (decodificación especulativa, atención lineal, etc.). El repositorio es exclusivamente un repackaging de pesos; para detalles de entrenamiento debe consultarse el repositorio original de HiDream-ai.
 
 ## Capacidades
 
-- Generación de imágenes fotorrealistas o artísticas a partir de descripciones textuales (text-to-image).
-- Soporte nativo en ComfyUI, lo que permite construir flujos de trabajo visuales mediante nodos.
-- Múltiples variantes del modelo para equilibrar velocidad y calidad: Dev (desarrollo), Fast (rápido) y Full (completo).
-- Cuantizaciones FP8 y BF16 para adaptarse a distintos requisitos de memoria.
-- Incluye text encoders avanzados (T5-XXL y Llama 3.1 8B) que mejoran la adherencia al prompt y la comprensión de instrucciones complejas.
-- Capacidad de uso comercial gracias a la licencia MIT.
+- Generación de imágenes a partir de descripciones textuales (pipeline `text-to-image`), en las variantes I1-Dev, I1-Fast e I1-Full.
+- Edición de imágenes guiada por texto, en las variantes E1-1 y E1-Full (workflows "before/after" publicados).
+- Tres regímenes de calidad/velocidad: Fast (iteraciones reducidas), Dev (equilibrado) y Full (máxima calidad), según la nomenclatura de las variantes.
+- Integración nativa con ComfyUI mediante ficheros single-file y workflows oficiales.
+- Soporte de cuantización fp8 para reducir requisitos de VRAM en las variantes Dev y Fast; fp16 para Full.
+- Codificación de prompts multiencoder (CLIP-G, CLIP-L, T5-XXL, Llama 3.1 8B Instruct), lo que en principio permite prompts largos y detallados.
+- No se documentan en la información disponible capacidades de tool calling, agentes, audio, vídeo ni modo "thinking".
 
 ## Casos de uso
 
-- Generación de concept art y storyboards: el modelo permite crear imágenes de alta calidad a partir de descripciones detalladas, útil para preproducción en cine, animación y videojuegos. La variante Fast acelera la iteración durante la fase de exploración creativa.
-- Creación de assets para diseño gráfico y publicidad: con la licencia MIT, las imágenes generadas pueden utilizarse en campañas comerciales sin restricciones de atribución, lo que reduce costes en la producción de materiales visuales.
-- Prototipado rápido en diseño de producto: los diseñadores pueden generar múltiples variaciones de un concepto (color, textura, entorno) en minutos, gracias a la integración con ComfyUI y a la variante Fast.
-- Investigación en generación de imágenes: el acceso a los pesos completos y a la arquitectura (a través de los repositorios originales de HiDream-ai) permite estudiar el comportamiento del modelo, compararlo con otros sistemas y desarrollar técnicas de ajuste fino.
-- Generación de imágenes para documentación técnica y educativa: ilustraciones de diagramas, ejemplos visuales o esquemas explicativos pueden generarse automáticamente a partir de texto, acelerando la elaboración de manuales y cursos.
-- Integración en pipelines de automatización creativa: mediante ComfyUI y su API, es posible integrar el modelo en sistemas de generación masiva de imágenes (por ejemplo, para catálogos de productos o bancos de imágenes), aprovechando la cuantización FP8 para reducir el coste de hardware.
+- Generación de ilustraciones para prototipado de producto: usar la variante I1-Fast en ComfyUI para iterar rápidamente sobre conceptos visuales antes de fijar un diseño, gracias a su menor coste computacional frente a Full.
+- Edición de imágenes en flujos de retoque: la variante E1-1 permite modificar una imagen existente con instrucciones textuales (workflow "before/after"), útil para cambiar fondos, estilos o elementos concretos sin rehacer la composición.
+- Creación de assets para videojuegos o contenido editorial: I1-Dev con cuantización fp8 ofrece un equilibrio entre calidad y VRAM, adecuado para generar lotes de imágenes en una estación de trabajo con GPU de gama alta de consumo.
+- Generación de imágenes de alta fidelidad para impresión o marketing: I1-Full en fp16, orientado a máxima calidad cuando el coste por imagen no es crítico.
+- Automatización de pipelines creativos dentro de ComfyUI: al ser ficheros single-file con workflows JSON oficiales, se pueden encadenar nodos (upscaling, segmentación, postproceso) y ejecutar por lotes de forma reproducible.
+- Investigación y experimentación con modelos de difusión: el repositorio facilita comparar variantes (Fast/Dev/Full) y precisiones (fp8/bf16/fp16) sobre el mismo pipeline sin gestionar el repo original.
+- Edición asistida en estudios de diseño: E1-Full para ediciones de mayor calidad sobre imágenes de referencia, integrado en un flujo ComfyUI compartido por el equipo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos comparativos de métricas como FID, CLIP score o preferencia humana frente a otros modelos de texto a imagen.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El modelo tiene 17.000 millones de parámetros. En BF16, solo los pesos del modelo ocupan aproximadamente 34 GB de VRAM. En FP8, se reducen a unos 17 GB.
-- Además del modelo de difusión, hay que cargar los text encoders: Llama 3.1 8B (en FP8, ~8 GB), T5-XXL (en FP8, ~10 GB) y los CLIP (juntos ~2 GB). El VAE añade unos 200 MB.
-- Para ejecutar la variante Full en BF16 con todos los encoders, se necesitan al menos 50 GB de VRAM. Con cuantización FP8 en todo, el requisito baja a unos 30 GB, lo que permite usar GPUs como la RTX 4090 (24 GB) si se utiliza la variante Dev o Fast y se descargan algunos encoders.
-- GPUs recomendadas: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB, con FP8), RTX 6000 Ada (48 GB). No se recomienda su uso en GPUs de consumo con menos de 24 GB de VRAM.
-- Opciones de despliegue: ComfyUI es el entorno principal. También puede ejecutarse mediante la API de ComfyUI o exportando los pesos a otros formatos (aunque no se proporcionan en este repositorio). No se mencionan integraciones con vLLM, llama.cpp u otros servidores de inferencia, ya que es un modelo de difusión, no un LLM.
+- VRAM estimada: no disponible de forma oficial. Como referencia cualitativa, las variantes fp8 están pensadas para reducir huella de VRAM frente a bf16/fp16, pero no se proporcionan cifras concretas.
+- Los text encoders incluyen T5-XXL y Llama 3.1 8B Instruct, lo que añade requisitos de memoria adicionales en tiempo de inferencia; el uso de sus versiones `fp8_scaled` sugiere que el pipeline completo necesita planificación de VRAM cuidadosa.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Viabilidad en GPU de consumo: no confirmada con datos; la existencia de variantes fp8 y Fast sugiere que el objetivo es acercar el modelo a hardware de gama alta de consumo, pero no se aportan cifras.
+- Opciones de despliegue: ComfyUI (soporte nativo mediante `diffusion-single-file`); otros backends (vLLM, TGI, llama.cpp, Ollama) no están documentados para este repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Licencia | Cuantizaciones | Contexto / Extras |
-|---|---|---|---|---|
-| HiDream-I1 (este repo) | 17B | MIT | BF16, FP16, FP8 | Text encoders: CLIP-L, CLIP-G, T5-XXL, Llama 3.1 8B |
-| Stable Diffusion XL | 3.5B | CreativeML Open RAIL++-M | FP16, FP8 | Text encoder: CLIP ViT-L, OpenCLIP ViT-bigG |
-| FLUX.1 [dev] | 12B | FLUX.1 [dev] Non-Commercial License | FP8, BF16 | Text encoder: T5-XXL, CLIP |
-| FLUX.1 [schnell] | 12B | Apache 2.0 | FP8, BF16 | Text encoder: T5-XXL, CLIP |
-
-HiDream-I1 destaca por su mayor número de parámetros (17B frente a 12B de FLUX y 3.5B de SDXL) y por su licencia MIT, que es más permisiva que la de FLUX.1 [dev] (no comercial) y que la de SDXL (requiere atribución y tiene restricciones de uso). La inclusión de Llama 3.1 como text encoder es una diferencia arquitectónica frente a los otros modelos, que usan únicamente CLIP y T5.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables (por ejemplo, otros modelos texto-a-imagen de difusión) que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre sesgos conocidos, riesgo de alucinación visual o limitaciones idiomáticas específicas. Es necesario consultar la documentación oficial de HiDream-ai para obtener una evaluación completa.
-- El repositorio es un reempaquetado técnico para ComfyUI; no incluye el código de entrenamiento ni los detalles de la arquitectura original. Para fines de investigación avanzada, se debe acceder a los repositorios originales de HiDream-ai.
-- El tamaño del modelo (17B) y la necesidad de múltiples text encoders implican requisitos de hardware elevados. En GPUs de consumo (menos de 24 GB VRAM) no es viable sin cuantización agresiva y sacrificando calidad.
-- La licencia MIT cubre el uso del modelo, pero es recomendable verificar si los pesos originales o los text encoders (por ejemplo, Llama 3.1, que tiene su propia licencia) imponen restricciones adicionales. Llama 3.1 está bajo la licencia de Meta, que permite uso comercial pero con condiciones específicas.
-- No se han publicado benchmarks oficiales, por lo que la comparación objetiva con otros modelos de texto a imagen es limitada.
+- Este repositorio no es el modelo original: es un repackaging de Comfy-Org. Para soporte, documentación técnica y actualizaciones conviene acudir a los repositorios de HiDream-ai.
+- No se documentan sesgos conocidos, tasas de alucinación visual ni limitaciones de idioma en la información disponible; deben evaluarse empíricamente antes de usos sensibles.
+- El tamaño total del repositorio (310,3 GB) implica un coste de almacenamiento y descarga considerable; conviene descargar solo las variantes y precisiones necesarias.
+- La licencia MIT se declara en la model card, pero al tratarse de pesos derivados de HiDream-ai conviene verificar las condiciones de la licencia del modelo original antes de uso comercial.
+- Los pesos están empaquetados específicamente para ComfyUI; su uso en otros frameworks requerirá conversión o adaptación no documentada aquí.
+- No hay información sobre resolución nativa, número de pasos recomendado ni parámetros de muestreo; deben consultarse los workflows oficiales enlazados.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Comfy-Org/HiDream-I1_ComfyUI
-- Guía de ejemplo en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/hidream/
-- Tutorial de ComfyUI Docs: https://docs.comfy.org/tutorials/image/hidream/hidream-i1
-- Blog de Comfy sobre soporte nativo: https://blog.comfy.org/p/hidream-i1-native-support-in-comfyui
-- Repositorios originales de HiDream-ai:
-  - https://huggingface.co/HiDream-ai/HiDream-E1-1
-  - https://huggingface.co/HiDream-ai/HiDream-E1-Full
-  - https://huggingface.co/HiDream-ai/HiDream-I1-Dev
-  - https://huggingface.co/HiDream-ai/HiDream-I1-Fast
-  - https://huggingface.co/HiDream-ai/HiDream-I1-Full
+- Modelo original E1-1: https://huggingface.co/HiDream-ai/HiDream-E1-1
+- Modelo original E1-Full: https://huggingface.co/HiDream-ai/HiDream-E1-Full
+- Modelo original I1-Dev: https://huggingface.co/HiDream-ai/HiDream-I1-Dev
+- Modelo original I1-Fast: https://huggingface.co/HiDream-ai/HiDream-I1-Fast
+- Modelo original I1-Full: https://huggingface.co/HiDream-ai/HiDream-I1-Full
+- Guía de uso en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/hidream/
+- Workflow E1.1 Image Editing: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/hidream_e1_1.json
+- Workflow I1 Dev: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/hidream_i1_dev.json
+- Workflow E1 Full: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/hidream_e1_full.json
+- Workflow I1 Fast: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/hidream_i1_fast.json
+- Workflow I1 Full: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/hidream_i1_full.json
+- Repositorio ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Comfy Cloud: https://cloud.comfy.org/
+- Comunidad francófona ComfyUI: https://comfyui.fr/

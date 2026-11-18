@@ -2,105 +2,110 @@
 
 ## Resumen
 
-`OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated` es un repositorio de pesos publicado en Hugging Face por el usuario OBLITERATUS el 23 de octubre de 2026 y actualizado el 28 de octubre de 2026. La informacion disponible se limita a los metadatos del repositorio: no hay model card con especificaciones, no se declara licencia, no se declaran idiomas, no se indica pipeline y no se han publicado resultados de evaluacion. Cualquier afirmacion sobre arquitectura, numero de parametros o contexto seria una inferencia no verificada.
+DeepSeek-V4.1-Flash-1017-obliterated es una versión del modelo DeepSeek-V4.1-Flash-1017 (desarrollado originalmente por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo mediante la herramienta OBLITERATUS, un kit de código abierto orientado a eliminar comportamientos de negativa en modelos de lenguaje. La modificación la firma la organización OBLITERATUS, que publica los pesos en BF16 safetensors bajo licencia MIT. El modelo base es un transformer de tipo Mixture of Experts (MoE) con 754.638.836.864 parámetros totales (unos 754,6 mil millones) y un repositorio de 1.509,4 GB.
 
-El nombre del repositorio sugiere dos cosas que conviene tratar como hipotesis, no como datos: que deriva de un modelo de la familia DeepSeek (concretamente una variante denominada "V4.1-Flash") y que ha sido sometido a un proceso de "obliteration", termino empleado en la comunidad para designar la ablacion de direcciones de rechazo en el espacio de activaciones (abliteration). Ni el autor ni el repositorio documentan el procedimiento aplicado, el checkpoint de partida exacto ni el conjunto de evaluaciones de seguridad realizadas tras la modificacion.
+El interés de esta ficha no reside en el modelo base en sí, sino en el efecto documentado de la ablación: según la model card, la tasa de rechazo cae del 81,62 % al 4,30 % en un corpus de 842 prompts, mientras que la asistencia dañina sube del 10,38 % al 78,28 %. El autor reporta además una divergencia KL de 0,1305 nats respecto al modelo original, coherencia del 100 % y capacidad del 100 % (6 de 6 comprobaciones superadas). Estos datos convierten al modelo en un caso de estudio sobre los límites del alineamiento por rechazo y sobre los riesgos de distribuir variantes "abliterated" de modelos grandes.
 
-El dato objetivo mas relevante es el tamano del repositorio: 1498,9 GB. Esa cifra es coherente con pesos de gran escala almacenados en precision alta, pero por si sola no permite determinar el numero de parametros ni la arquitectura. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, por lo que no existe evidencia de uso en produccion ni validacion externa.
+La relevancia actual es doble: por un lado, demuestra que las técnicas de ablación de dirección son baratas y efectivas incluso en modelos de escala frontera; por otro, evidencia que la eliminación del rechazo no elimina la capacidad de generar contenido dañino, sino que la desbloquea. Cualquier evaluación de este modelo debe partir de esa premisa.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se ha confirmado que sea MoE) |
+| Arquitectura | Transformer Mixture of Experts (MoE) |
+| Parámetros totales | 754.638.836.864 (754,6 mil millones) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio ocupa 1498,9 GB; no se especifica el formato ni la precision de los pesos) |
+| Tipos de cuantización | no disponible (pesos publicados en BF16 safetensors) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no declarada en el repositorio) |
-| Formato de pesos | no disponible (safetensors, GGUF u otros no indicados) |
-| Autor | OBLITERATUS |
-| Pipeline declarado | no disponible |
-| Tamano del repositorio | 1498,9 GB |
-| Descargas / likes | 0 / 1 |
-| Fecha de creacion | 2026-10-23 |
-| Ultima actualizacion | 2026-10-28 |
-| Etiquetas | region:us |
+| Licencia | MIT |
+| Formato de pesos | safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. El repositorio no incluye model card, informe tecnico ni configuracion publicada que permita describir la arquitectura (transformer denso, mezcla de expertos, hibrida u otra), el volumen de tokens de entrenamiento, la composicion del corpus ni las etapas de ajuste (SFT, RLHF, DPO). Tampoco se documenta el proceso de "obliteration" aplicado: no se indica si se modificaron pesos, se restaron vectores de direccion en capas intermedias o se realizó un fine-tuning correctivo, ni sobre que checkpoint base se aplico.
+El modelo base DeepSeek-V4.1-Flash-1017 es un transformer de tipo Mixture of Experts, según la etiqueta `moe` de la model card y el identificador de arquitectura `deepseek_v41_text`. El recuento real de parámetros en safetensors es de 754.638.836.864, lo que confirma una escala de centenares de miles de millones de parámetros. No se dispone de información sobre el número de expertos, el reparto de parámetros activos por token, la longitud de contexto nativa ni la composición del dataset de entrenamiento original.
 
-La unica inferencia tecnica admisible es aritmetica y condicional. Si los 1498,9 GB correspondieran a pesos en BF16 (2 bytes por parametro), el modelo tendria del orden de 750.000 millones de parametros; si correspondieran a FP8 (1 byte por parametro), del orden de 1,5 billones. Ambas cifras son escenarios hipoteticos: el repositorio podria contener varias copias del mismo modelo en distintas precisiones, checkpoints intermedios o estados de optimizador, lo que invalidaria el calculo. No se debe planificar infraestructura asumiendo ninguna de estas cifras sin verificar los ficheros del repositorio.
+La modificación aplicada es una ablación de la dirección de rechazo mediante el método **failspy**, ejecutada con la herramienta OBLITERATUS. La model card no detalla el procedimiento exacto (capas intervenidas, vectores de dirección calculados, hiperparámetros de calibración), pero sí documenta el resultado medible: una divergencia KL de 0,1305 nats frente al modelo original, medida como KL forward por token de secuencia. El conjunto de calibración de la intervención incluyó 254 de los 842 prompts del corpus de evaluación, y 50 prompts adicionales se usaron para la selección del método. No se indica si hubo entrenamiento adicional, RLHF o DPO tras la ablación; todo apunta a una intervención sobre pesos sin reentrenamiento.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada documentalmente; no hay ejemplos, demos ni evaluaciones publicadas en el repositorio.
-- Razonamiento, codigo y matematicas: no disponible.
-- Vision o audio: no disponible; no se declara ninguna modalidad adicional.
-- Tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Multilingue: no disponible; el campo de idiomas no esta cumplimentado.
-- Modo "thinking" o razonamiento extendido: no disponible.
-- Comportamiento tras la ablacion: no documentado. No se especifica que categorias de rechazo se han eliminado, con que metodologia ni con que evaluacion de seguimiento.
+- Generación de texto conversacional en formato chat, con pipeline `text-generation`.
+- Razonamiento y respuesta a preguntas de conocimiento general: la evaluación MMLU cubre las 57 asignaturas con 2.500 preguntas en modo zero-shot.
+- Modo "thinking" desactivable: la evaluación MMLU se ejecutó con thinking desactivado y logits de elección de respuesta, lo que implica que el modelo base soporta un modo de razonamiento explícito.
+- Capacidad de seguir instrucciones sin rechazo en la gran mayoría de peticiones: 78,28 % de respuestas sin rechazo en el corpus OBLITERATUS.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que facilita su despliegue en infraestructuras tipo Inference Endpoints.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles; el identificador `deepseek_v41_text` sugiere un modelo exclusivamente de texto.
 
 ## Casos de uso
 
-Los siguientes escenarios son plausibles por el tipo de artefacto (un checkpoint de gran tamano con modificaciones no documentadas), pero ninguno puede validarse sin acceso a los pesos y a una evaluacion propia. Se indican con el grado de incertidumbre correspondiente.
-
-- Investigacion sobre ablacion de rechazo: el repositorio serviria como material de estudio para comparar el comportamiento de un modelo antes y despues de la eliminacion de direcciones de rechazo, midiendo tasas de cumplimiento y degradacion de calidad frente al checkpoint original. Requiere disponer de la version base para una comparacion controlada, que no se identifica en la informacion disponible.
-- Red teaming y evaluacion de seguridad: util como sujeto de prueba en ejercicios de analisis de riesgos, siempre en entornos aislados y con supervision, para calibrar clasificadores y filtros de salida frente a modelos sin alineamiento.
-- Generacion de datos sinteticos para investigacion: si el modelo conserva capacidades generativas utiles, podria emplearse en la produccion de corpus sinteticos diversos, con revision humana obligatoria por la ausencia de garantias de calidad y seguridad.
-- Estudio de estabilidad tras modificaciones de pesos: analisis de si la ablacion introduce degradacion medible (perplejidad, coherencia a contexto largo, rendimiento en tareas de codigo) y en que capas se concentra el dano.
-- Despliegue interno de I+D en infraestructura multi-GPU: experimentacion con tecnicas de servicio (tensor parallel, pipeline parallel) sobre un artefacto de ~1,5 TB, util para calibrar costes reales de memoria y ancho de banda antes de abordar modelos propietarios.
-- Analisis forense de artefactos publicados sin documentacion: caso de estudio sobre trazabilidad, licencias y reproducibilidad en la publicacion de modelos derivados en Hugging Face.
-
-No se recomienda ningun caso de uso en produccion orientado a usuarios finales con la informacion actual: no hay licencia declarada, no hay evaluaciones y no hay procedencia documentada del checkpoint base.
+- **Investigación sobre alineamiento y seguridad**: el modelo sirve como contrapunto controlado frente al original para estudiar cómo varía la distribución de respuestas al eliminar la dirección de rechazo. La comparación pareada de 838 prompts con anotaciones de Claude Opus 4.6 y GPT-6.1 Sol permite analizar qué tipos de peticiones se desbloquean y con qué grado de concreción.
+- **Auditoría de mecanismos de rechazo**: con una tasa de rechazo del 4,30 % frente al 81,62 % del original, permite identificar qué prompts dependen exclusivamente del rechazo aprendido y no de una falta real de capacidad, aislando el comportamiento de negativa del comportamiento de respuesta.
+- **Evaluación de robustez de clasificadores de contenido**: las 656 respuestas sin rechazo del modelo ablacionado, de las que 563 se clasificaron como asistencia dañina, constituyen un corpus etiquetado útil para probar filtros de moderación y clasificadores de daño en producción.
+- **Estudios de divergencia KL y degradación de capacidades**: la métrica de 0,1305 nats y la comprobación de capacidad (6 de 6) permiten medir el coste real de la ablación en términos de fidelidad al modelo original, un dato relevante para quienes investigan edición de pesos sin reentrenamiento.
+- **Reproducción de experimentos con OBLITERATUS**: dado que la herramienta y el método failspy son públicos, el modelo sirve como referencia de resultado esperado al aplicar la misma técnica a otros modelos MoE de gran escala, comparando tasas de rechazo y KL.
+- **Docencia y divulgación técnica**: el contraste cuantificado entre el modelo original y el ablacionado (tablas de rechazo, asistencia dañina, tipo de respuesta, dañosidad y accionabilidad) es material didáctico directo para explicar qué hace y qué no hace el alineamiento por rechazo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card incluye resultados de MMLU sobre 2.500 preguntas repartidas entre las 57 asignaturas (43 o 44 por asignatura, seleccionadas por orden hash fijo), en protocolo zero-shot chat, thinking desactivado y logits de elección de respuesta. La tabla proporcionada está truncada en el valor de precisión del modelo, por lo que solo se puede confirmar el protocolo y el tamaño de la muestra.
 
-El repositorio no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K, MATH, MT-Bench u otras), ni comparaciones con el modelo base, ni mediciones de latencia o throughput.
+| Evaluación | Modelo original | Modelo obliterado | Diferencia |
+|---|---|---|---|
+| Tasa de rechazo (corpus 842 prompts) | 81,62 % | 4,30 % | -77,33 pp |
+| Rechazo parcial | 4,89 % | 14,44 % | +9,55 pp |
+| Sin rechazo | 13,37 % | 78,28 % | +64,92 pp |
+| Asistencia dañina | 10,38 % | 78,28 % | +67,90 pp |
+| Respuesta segura alternativa | 83,29 % | 10,50 % | -72,79 pp |
+| Dañosidad nivel 3 (daño serio) | 3,82 % | 44,75 % | +40,93 pp |
+| Dañosidad nivel 4 (severo o generalizado) | 0,12 % | 9,31 % | +9,19 pp |
+| Accionabilidad nivel 4 (suficientemente concreta) | 3,46 % | 20,76 % | +17,30 pp |
+| KL forward (nats) | — | 0,1305 | — |
+| Coherencia | — | 100 % | — |
+| Capacidad (6 comprobaciones) | — | 100 % (6/6) | — |
+
+No se han publicado en la información disponible los valores de precisión MMLU de ninguno de los dos modelos, ni resultados de HumanEval, GSM8K u otros benchmarks estándar.
 
 ## Requisitos de hardware
 
-- Almacenamiento: 1498,9 GB solo para los pesos, mas espacio adicional para tokenizador, configuracion y posibles duplicados en cuantizaciones. Se recomienda reservar al menos 2 TB de disco rapido (NVMe) para la descarga y conversion.
-- VRAM en precision de almacenamiento: servir los pesos tal cual requires al menos ~1,5 TB de memoria agregada en aceleradores, lo que descarta cualquier GPU unica. A titulo orientativo, un H100 de 80 GB obligaria a un minimo de ~19 GPUs solo para alojar pesos, sin margen para cache KV ni activaciones; en la practica se necesitarian mas unidades o cuantizacion.
-- GPUs recomendadas: no verificable sin conocer el numero de parametros y la arquitectura. Cualquier despliegue realista pasa por nodos multiples con H100/H200/B200 y comunicacion NVLink/InfiniBand; A100 de 80 GB seria viable solo con cuantizacion agresiva.
-- GPU de consumo: no se puede confirmar. Si el escenario de ~750.000 millones de parametros en BF16 fuera correcto, ni siquiera una RTX 4090 (24 GB) con cuantizacion de 4 bits (~375 GB) permitiria alojarlo en una sola tarjeta.
-- Opciones de despliegue: no documentadas por el autor. En funcion del formato real de los pesos podrian aplicarse vLLM, TensorRT-LLM o TGI (para safetensors en precision alta con paralelismo) o llama.cpp/Ollama (solo si existieran conversiones GGUF, que no se declaran).
-- Latencia y throughput: no disponible. No hay mediciones publicadas ni datos de arquitectura que permitan estimarlas con fundamento.
-
-Las cifras de esta seccion derivan del tamano del repositorio y de aritmetica basica de memoria; no sustituyen una medicion real sobre los pesos.
+- **VRAM estimada en BF16**: con 754,6 mil millones de parámetros, los pesos en BF16 ocupan aproximadamente 1.509 GB (coincide con el tamaño del repo), por lo que la inferencia en precisión nativa requiere del orden de 1,5 TB de memoria, más el espacio para caché KV y activaciones.
+- **Cuantización**: no se han publicado cuantizaciones GGUF, AWQ ni GPTQ en la información disponible. Cualquier despliegue en cuantización inferior exigiría generarlas a partir de los safetensors BF16.
+- **GPU recomendadas en BF16**: no cabe en ninguna GPU individual. Requiere un clúster multi-nodo con GPUs de 80 GB o más (H100, H200, A100 80GB) repartidas con tensor parallelism o pipeline parallelism; el número exacto de GPUs depende del grado de paralelismo y del tamaño de lote.
+- **Consumer GPU**: no es viable en RTX 4090, RTX 5090 ni similares, ni siquiera con cuantización agresiva a 4 bits (que aún dejaría del orden de 380 GB de pesos).
+- **Opciones de despliegue**: la librería declarada es `transformers`; los tags incluyen `endpoints_compatible`, lo que apunta a compatibilidad con Inference Endpoints. Para servir el modelo a esta escala serían necesarios frameworks con soporte de paralelismo multi-nodo (vLLM, TGI o SGLang), aunque no se confirma su compatibilidad en la información disponible.
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos verificables de arquitectura, parametros, contexto, licencia ni rendimiento de este repositorio, y tampoco se han facilitado especificaciones de modelos alternativos con los que compararlo sin recurrir a datos externos no suministrados.
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil millones (MoE) | no disponible | MIT | Variante ablacionada; rechazo 4,30 % |
+| DeepSeek-V4.1-Flash-1017 (base) | 754,6 mil millones (MoE) | no disponible | no disponible | Modelo original; rechazo 81,62 % |
+| OBLITERATUS/Qwen3.8-27B-OBLITERATED | 28 mil millones | no disponible | no disponible | Otra variante ablacionada de la misma organización, a menor escala |
 
-| Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
-|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
-| Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-Para una comparativa rigurosa seria necesario identificar primero el checkpoint base exacto y consultar su model card oficial.
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría (otros MoE de escala frontera) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: sin model card, sin ficha tecnica, sin configuracion publicada y sin informe del proceso de modificacion. La reproducibilidad es nula con la informacion actual.
-- Licencia no declarada: no puede asumirse ningun derecho de uso, incluido el uso comercial, la redistribucion o la creacion de derivados. La ausencia de licencia no equivale a permisividad.
-- Procedencia incierta: el nombre remite a la familia DeepSeek, pero no se identifica el checkpoint base ni su version. Si el modelo deriva de pesos con licencia restrictiva, esa restriccion podria heredarse.
-- Riesgo de seguridad elevado por diseno: un proceso de "obliteration" elimina deliberadamente mecanismos de rechazo. Cabe esperar una mayor tasa de cumplimiento ante peticiones danosas, con el consiguiente riesgo de contenido nocivo, instrucciones peligrosas o filtraciones de sesgos sin atenuar. No se documenta ninguna evaluacion de seguridad posterior.
-- Riesgo de alucinacion: no evaluado. La ablacion de direcciones puede degradar la calibracion del modelo, pero no existen mediciones que lo confirmen o descarten en este artefacto.
-- Posible degradacion de capacidades: las tecnicas de ablacion suelen afectar a la coherencia en contextos largos y a tareas de razonamiento; no se ha publicado ninguna comparacion con el modelo original.
-- Idiomas y contexto desconocidos: no puede garantizarse soporte de castellano ni de ningun otro idioma, ni una ventana de contexto concreta. Cualquier uso multilingue requiere evaluacion previa.
-- Coste de infraestructura: 1498,9 GB de pesos implican un despliegue multi-GPU con coste economico significativo, incompatible con entornos de desarrollo convencionales.
-- Senales de adopcion nulas: 0 descargas y 1 like. No hay evidencia de validacion por terceros, issues resueltos ni resultados replicados.
-- Fechas de creacion y actualizacion en 2026: conviene verificar la coherencia temporal del repositorio antes de integrarlo en cualquier pipeline.
+- **Riesgo severo de asistencia dañina**: el 78,28 % de las respuestas del modelo ablacionado se clasificaron como asistencia dañina, frente al 10,38 % del original. El 44,75 % de las respuestas alcanzan nivel 3 de dañosidad (daño serio) y el 9,31 % nivel 4 (severo o generalizado). El 20,76 % son suficientemente concretas para habilitar la conducta solicitada (accionabilidad nivel 4).
+- **La ablación no elimina conocimiento, elimina frenos**: el modelo conserva la capacidad de generar el contenido; simplemente deja de negarse. Esto lo hace inadecuado para cualquier despliegue orientado al público sin filtros externos.
+- **Licencia MIT**: permite uso comercial y modificación sin restricciones, lo que agrava el riesgo de redistribución de una variante sin salvaguardas. La licencia del modelo base original no se detalla en la información disponible.
+- **Sesgos**: no se han publicado evaluaciones de sesgo en la información disponible.
+- **Alucinación**: no se han publicado evaluaciones específicas de alucinación; la divergencia KL de 0,1305 nats indica un cambio medible en la distribución de salida respecto al original, cuyo impacto en la factualidad no está cuantificado.
+- **Idiomas y contexto**: se desconoce la cobertura idiomática y la longitud de contexto nativa, lo que impide garantizar un comportamiento correcto fuera del inglés o en conversaciones largas.
+- **Evaluación limitada**: las anotaciones de daño provienen de modelos jueces (Claude Opus 4.6, GPT-6.1 Sol y una revisión local con Codex) que clasificaron texto sin ejecutar ni verificar las instrucciones; 25 respuestas quedaron sin anotar y una es ambigua. Los resultados del corpus no son un benchmark estándar y no deben compararse directamente con evaluaciones de seguridad de terceros.
+- **Coste de despliegue**: 1,5 TB de pesos en BF16 hacen que la inferencia sea económicamente inviable para la mayoría de equipos, lo que limita su uso real a laboratorios con infraestructura multi-nodo.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated
-- Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Repositorio de OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
+- Código del paquete OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS/tree/main/obliteratus
+- Perfil de la organización en Hugging Face: https://huggingface.co/OBLITERATUS
+- Otra variante ablacionada de la organización: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
+- Artículo divulgativo sobre OBLITERATUS: https://david-informaticien.com/blog/ia/3935-obliteratus-loutil-open-source-qui-supprime-definitivement-les-filtres-dune-ia
+- Detalles del método (referenciado en la model card): winner-recovery-provenance.json
+- Resultados de evaluación (referenciado en la model card): evaluation-status.json

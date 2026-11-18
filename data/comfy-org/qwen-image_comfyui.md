@@ -2,67 +2,98 @@
 
 ## Resumen
 
-Qwen-Image es un modelo de generación de imágenes por difusión, distribuido en este repositorio por Comfy-Org como un empaquetado optimizado para su uso directo en ComfyUI. El repositorio incluye los pesos del modelo de difusión en múltiples formatos de cuantización (bf16, fp8 y nvfp4), el codificador de texto Qwen2.5-VL-7B y el VAE correspondiente, todo en formato safetensors.
+Qwen-Image_ComfyUI es un repositorio de redistribución de pesos del modelo de difusión Qwen-Image, empaquetados en formato de archivo único (diffusion-single-file) para su uso directo en ComfyUI. Lo publica la organización Comfy-Org, responsable del desarrollo del propio ComfyUI, y no constituye un modelo original: los pesos proceden de Qwen/Qwen-Image, Qwen/Qwen-Image-2512 y DiffSynth-Studio/Qwen-Image-Distill-Full, a los que este repositorio añade variantes cuantizadas y una estructura de carpetas compatible con el cargador de ComfyUI.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. Con más de 1,5 millones de descargas y 466 likes, es uno de los modelos de generación de imágenes más utilizados en el ecosistema ComfyUI. Incluye variantes destiladas (distill) y una variante etiquetada como "2512", además de múltiples opciones de cuantización para adaptarse a distintos requisitos de hardware.
+El modelo subyacente es un generador texto-a-imagen de la familia Qwen (Alibaba), distribuido bajo licencia Apache 2.0. El repositorio incluye los pesos del modelo de difusión en varias precisiones (bf16, fp8_e4m3fn, fp8_hq, fp8mixed, nvfp4), el text encoder Qwen 2.5 VL 7B en tres variantes y el VAE específico del modelo. El tamaño total del repositorio es de 301,6 GB, aunque el usuario descarga únicamente los archivos que necesita.
 
-## Especificaciones técnicas
+Su relevancia práctica es alta: con más de 2,6 millones de descargas, se ha convertido en la vía estándar para ejecutar Qwen-Image dentro de ComfyUI sin tener que convertir manualmente los pesos originales. La actualización de septiembre de 2026 incorpora los pesos de la revisión Qwen-Image-2512 y la variante destilada, lo que amplía las opciones de inferencia rápida.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión (diffusion-single-file) |
-| Parámetros totales | no disponible |
-| Longitud de contexto | no aplica (generación de imágenes) |
-| Tipos de cuantización | bf16, fp8_e4m3fn, fp8_hq, fp8mixed, nvfp4 |
-| Idiomas soportados | no disponible |
+| Arquitectura | modelo de difusion (texto-a-imagen); detalles internos no disponibles en la informacion proporcionada |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16, fp8_e4m3fn, fp8 hq, fp8 mixed, nvfp4 (pesos de difusion); text encoder en bf16, fp8_scaled y nvfp4 |
+| Idiomas soportados | no disponible (el prompt se procesa mediante Qwen 2.5 VL 7B, multilingue, pero no se documenta cobertura oficial) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (archivo unico para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio contiene un modelo de difusión para generación de imágenes que utiliza Qwen2.5-VL-7B como codificador de texto, lo que permite una comprensión semántica avanzada de las instrucciones en lenguaje natural. El modelo incluye un VAE propio (qwen_image_vae.safetensors) para la codificación y decodificación latente.
+El repositorio no documenta la arquitectura interna del modelo de difusión; la model card se limita a indicar que son "repackaged model files for ComfyUI" y a especificar la ubicación de cada archivo dentro del árbol de directorios de ComfyUI. Los pesos derivan de tres fuentes: el modelo base Qwen/Qwen-Image, la revisión Qwen/Qwen-Image-2512 y la variante destilada DiffSynth-Studio/Qwen-Image-Distill-Full. Esta última sugiere un proceso de destilación orientado a reducir el número de pasos de muestreo, aunque no se detallan ni el número de pasos objetivo ni la metodología de destilación.
 
-Se ofrecen dos variantes principales: el modelo completo y una versión destilada (distill_full), así como una variante etiquetada como "2512", posiblemente relacionada con una resolución de generación superior. Los detalles exactos del entrenamiento (número de tokens, dataset, técnicas de alineación) no están disponibles en la información proporcionada.
+El pipeline completo combina tres componentes: el modelo de difusión (en `models/diffusion_models/`), el text encoder Qwen 2.5 VL 7B (en `models/text_encoders/`) y el VAE propio del modelo (en `models/vae/`). No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La innovación práctica del repositorio es el reempaquetado: ofrece los mismos pesos en múltiples precisiones (incluida nvfp4 para GPUs Blackwell) con nombres de archivo normalizados que el nodo cargador de ComfyUI reconoce directamente.
 
 ## Capacidades
 
-- Generación de imágenes a partir de descripciones textuales (text-to-image).
-- Codificador de texto Qwen2.5-VL-7B para comprensión avanzada de prompts en lenguaje natural.
-- Múltiples formatos de cuantización (bf16, fp8, nvfp4) para adaptarse a diferentes GPUs.
-- Variante destilada para inferencia más rápida.
-- Variante etiquetada como "2512", posiblemente de mayor resolución.
-- Integración nativa con ComfyUI mediante archivos empaquetados listos para colocar en los directorios correspondientes.
+- Generación de imágenes a partir de prompts de texto, con el modelo de difusión Qwen-Image como base.
+- Variante destilada (`qwen_image_distill_full`) pensada para inferencia con menos pasos de muestreo.
+- Revisión 2512 (`qwen_image_2512`) como versión actualizada del modelo base.
+- Edición e inpainting mediante ControlNet: la model card enlaza workflows de InstantX Inpainting ControlNet y de Union ControlNet.
+- Control estructural adicional mediante el workflow "ControlNet Model Patch".
+- Aceleración con LoRA de 2 pasos: workflow "Qwen-Image 2512 Turbo" con LoRA de dos pasos.
+- Comprensión multilingüe del prompt a través del text encoder Qwen 2.5 VL 7B, que es un modelo visión-lenguaje.
+- Ejecución en ComfyUI con soporte para pesos bf16, fp8 y nvfp4 según la GPU disponible.
 
 ## Casos de uso
 
-- Generación artística en ComfyUI: el modelo se integra directamente en flujos de trabajo de ComfyUI, permitiendo a artistas y diseñadores generar imágenes de alta calidad sin necesidad de código adicional.
-- Prototipado rápido de conceptos visuales: equipos de diseño pueden generar múltiples variaciones de un concepto a partir de prompts textuales, acelerando el proceso de ideación.
-- Generación de imágenes para contenido editorial: la variante "2512" permite crear ilustraciones de gran tamaño para publicaciones impresas o digitales, si se confirma su mayor resolución.
-- Experimentación con cuantizaciones: los múltiples formatos de pesos permiten probar el equilibrio entre calidad y requisitos de memoria en diferentes configuraciones de hardware.
-- Desarrollo de pipelines de generación: al estar empaquetado para ComfyUI, es adecuado para construir flujos de trabajo complejos que combinen generación, postprocesado y otros nodos.
-- Uso comercial: la licencia Apache 2.0 permite integrar el modelo en productos y servicios comerciales sin restricciones de licencia.
+- Generación de ilustraciones para producción editorial: el flujo estándar de ComfyUI con `qwen_image_bf16.safetensors` permite integrar la generación en un grafo reproducible y versionable, con el VAE y el text encoder cargados una sola vez.
+- Iteración rápida en fase de concepto: la variante destilada junto con el workflow Turbo de 2 pasos reduce el coste por imagen, lo que la hace adecuada para explorar decenas de variaciones de un prompt antes de fijar una dirección artística.
+- Edición localizada de imágenes existentes: el workflow de InstantX Inpainting ControlNet permite sustituir o reparar regiones concretas de una imagen manteniendo el resto intacto, útil para retoque de material fotográfico.
+- Control de pose y estructura: el workflow de Union ControlNet admite condicionamiento estructural, lo que sirve para generar variaciones de un personaje o producto con la misma composición.
+- Despliegue en GPUs de consumo: las variantes fp8 y nvfp4 reducen el peso de los archivos y permiten ejecutar el modelo en tarjetas con menos VRAM que la versión bf16, facilitando estaciones de trabajo locales.
+- Prototipado de pipelines creativos en equipo: al ser un repositorio de archivos únicos con nombres normalizados, se puede distribuir internamente y cargar en ComfyUI sin conversiones adicionales.
+- Automatización por lotes de material gráfico: la combinación de ComfyUI con la API del servidor permite lanzar generaciones masivas con prompts parametrizados para catálogos o banners.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El tamaño total del repositorio es de 301,6 GB, que incluye todas las variantes de cuantización y el codificador de texto.
-- La variante bf16 del modelo de difusión requiere una GPU con gran cantidad de VRAM; los requisitos exactos no están disponibles en la información proporcionada.
-- Las variantes fp8 y nvfp4 están diseñadas para reducir los requisitos de memoria, siendo adecuadas para GPUs con menos VRAM.
-- El codificador de texto Qwen2.5-VL-7B en bf16 requiere aproximadamente 14 GB de VRAM adicionales (estimación basada en el tamaño de 7B parámetros).
-- Se recomienda el uso de ComfyUI como plataforma de inferencia, ya que el modelo está empaquetado específicamente para este entorno.
-- No se dispone de datos de latencia o throughput en la información proporcionada.
+- VRAM estimada: no disponible de forma oficial. Como referencia de orden de magnitud, los pesos de difusión en bf16 y el text encoder Qwen 2.5 VL 7B en bf16 requieren bastante memoria; las variantes fp8 y nvfp4 reducen el peso de los archivos y, por tanto, la VRAM necesaria, pero no se publican cifras concretas.
+- GPU recomendadas: no disponible. La existencia de pesos nvfp4 sugiere soporte para GPUs con esa precisión (generación Blackwell); los pesos fp8 apuntan a GPUs con soporte FP8.
+- GPU de consumo: no se confirma qué modelos concretos son suficientes. La disponibilidad de cuantizaciones fp8 y nvfp4 está pensada para ampliar el rango de GPUs compatibles, pero sin cifras publicadas no se puede afirmar que quepa en una tarjeta específica.
+- Opciones de despliegue: ComfyUI (nativo, es el destino de este repositorio). No se documentan otros runners (vLLM, llama.cpp, TGI) para este modelo de difusión.
+- Latencia y throughput: no disponibles. El workflow Turbo de 2 pasos implica una reducción del número de pasos de muestreo respecto al flujo estándar, pero no se publican tiempos medidos.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos en la información proporcionada. Como referencia general, Qwen-Image compite en el espacio de modelos de difusión texto-a-imagen de código abierto, junto a alternativas como Stable Diffusion 3.x o FLUX, aunque no se dispone de datos de rendimiento específicos para establecer una comparación cuantitativa.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Qwen-Image_ComfyUI (este repo) | difusion texto-a-imagen, repack | no disponible | no disponible | Apache 2.0 | safetensors (single-file) | Incluye bf16, fp8, nvfp4 y variante destilada; integrado en ComfyUI |
+| Qwen/Qwen-Image | difusion texto-a-imagen, original | no disponible | no disponible | Apache 2.0 | safetensors | Repositorio fuente; requiere conversion para ComfyUI |
+| Qwen/Qwen-Image-2512 | difusion texto-a-imagen, revision | no disponible | no disponible | Apache 2.0 | safetensors | Revision actualizada incluida en este repo |
+| DiffSynth-Studio/Qwen-Image-Distill-Full | difusion destilada | no disponible | no disponible | no disponible en la informacion | safetensors | Variante destilada incluida en este repo |
+
+No se dispone de datos de benchmarks ni de especificaciones de parámetros que permitan una comparación cuantitativa con alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- No se dispone de información sobre sesgos conocidos o riesgos de alucinación en la información proporcionada.
-- El repositorio es un empaquetado de pesos para ComfyUI; no incluye documentación sobre el entrenamiento del modelo original.
-- La variante "2512" puede requerir hardware significativamente más potente si efectivamente genera a mayor resolución.
-- Aunque la licencia es Apache 2.0, se recomienda revisar los términos de uso del modelo original de Qwen para confirmar cualquier restricción adicional.
-- El uso en producción requiere validar la calidad de
+- No es un modelo original: es un reempaquetado. Cualquier limitación del modelo Qwen-Image subyacente se hereda sin cambios.
+- La model card no documenta sesgos, tasas de alucinación visual ni limitaciones idiomáticas; no hay información oficial al respecto.
+- El repositorio pesa 301,6 GB en total; es necesario descargar selectivamente los archivos, no clonar el repositorio completo.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los repositorios fuente (Qwen, DiffSynth-Studio) por si añaden restricciones adicionales.
+- No se documentan requisitos mínimos de hardware ni cifras de VRAM; el despliegue en producción requiere validación propia.
+- El pipeline en Hugging Face figura como "no disponible"; el uso previsto es mediante ComfyUI, no mediante la librería `transformers`.
+- Los idiomas soportados no están declarados oficialmente; el comportamiento multilingüe depende del text encoder y no está garantizado.
+- La información de la model card está parcialmente truncada en la fuente consultada, por lo que podrían existir workflows o notas adicionales no recogidos aquí.
+
+## Enlaces
+
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI
+- Modelo base Qwen-Image: https://huggingface.co/Qwen/Qwen-Image
+- Revisión Qwen-Image-2512: https://huggingface.co/Qwen/Qwen-Image-2512
+- Variante destilada: https://huggingface.co/DiffSynth-Studio/Qwen-Image-Distill-Full
+- Ejemplos de ComfyUI para Qwen-Image: https://comfyanonymous.github.io/ComfyUI_examples/qwen_image/
+- Repositorio ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Plantillas de workflows: https://github.com/Comfy-Org/workflow_templates
+- Workflow Qwen Image 2512: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_Image_2512.json
+- Workflow InstantX Inpainting ControlNet: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_instantx_inpainting_controlnet.json
+- Workflow Turbo de 2 pasos: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2512_with_2steps_lora.json
+- Workflow ControlNet Model Patch: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_controlnet_patch.json
+- Workflow InstantX Union ControlNet: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_instantx_controlnet.json
+- Comfy Cloud: https://cloud.comfy.org/

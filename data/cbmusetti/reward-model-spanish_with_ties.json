@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "cbmusetti/reward-model-spanish_with_ties",
+  "slug": "cbmusetti-reward-model-spanish_with_ties",
+  "author": "cbmusetti",
+  "url": "https://huggingface.co/cbmusetti/reward-model-spanish_with_ties",
+  "created_at": "2026-11-17T21:49:43.000Z",
+  "updated_at": "2026-11-17T21:50:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "reward-model",
+    "humor",
+    "pairwise-preference",
+    "thesis",
+    "es",
+    "base_model:bertin-project/bertin-roberta-base-spanish",
+    "base_model:finetune:bertin-project/bertin-roberta-base-spanish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498600532,
+  "storage_human": "499 MB",
+  "context_length": null,
+  "base_model": "bertin-project/bertin-roberta-base-spanish",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Same-Day Delivery Powered by Instacart FAQs - Costco Customer …",
+      "url": "https://customerservice.costco.com/app/answers/answer_view/a_id/8150/~/same-day-delivery-powered-by-instacart-faqs",
+      "snippet": "Apr 8, 2026 · WILL MY SAME-DAY DELIVERY SHOPPING COUNT TOWARDS MY EXECUTIVE 2% REWARD OR 2% CASH …"
+    }
+  ]
+}

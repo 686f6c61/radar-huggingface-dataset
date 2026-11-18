@@ -12,11 +12,14 @@
   "library": "diffusers",
   "languages": [],
   "tags": [
+    "diffusers",
     "onnx",
+    "safetensors",
+    "gguf",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 420,
+  "downloads_30d": 428,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
@@ -26,7 +29,9 @@
   "base_model": null,
   "formats": [
     "diffusers",
-    "onnx"
+    "gguf",
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

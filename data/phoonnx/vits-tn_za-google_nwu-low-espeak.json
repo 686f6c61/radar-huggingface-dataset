@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-tn_za-google_nwu-low-espeak",
   "created_at": "2026-11-16T18:01:58.000Z",
-  "updated_at": "2026-11-16T18:02:07.000Z",
+  "updated_at": "2026-11-17T16:45:41.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

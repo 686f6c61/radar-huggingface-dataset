@@ -2,110 +2,111 @@
 
 ## Resumen
 
-decider-0.8b es un modelo de decision desarrollado por Mapika que no genera texto: recibe un estado (una cadena o cualquier valor JSON) y un conjunto de preguntas tipadas, y devuelve en una unica pasada forward una distribucion de probabilidad calibrada para cada pregunta. Admite tres tipos de pregunta: Choice (entre 2 y 255 opciones, opcionalmente descritas), Score (entre 2 y 10 niveles descritos) y Noul (probabilidad de que la respuesta sea si). No hay decodificacion ni parseo posterior, y la salida nunca puede caer fuera de las opciones definidas por el usuario.
+decider-0.8b es un modelo de decisión tipada desarrollado por Mapika, derivado por fine-tuning de Qwen/Qwen3.5-0.8B-Base. A diferencia de un modelo generativo convencional, no produce texto: recibe un estado (una cadena o cualquier valor JSON) y un conjunto de preguntas tipadas, y devuelve en una única pasada forward una distribución de probabilidad calibrada para cada pregunta. Soporta tres tipos de pregunta: Choice (entre 2 y 255 opciones, opcionalmente descritas), Score (entre 2 y 10 niveles descritos) y Noul (probabilidad de sí).
 
-Es el hermano pequeno de decider-2b, con el que comparte receta de entrenamiento, formato de cable y codigo de inferencia. Se obtiene con un unico epoch de ajuste supervisado sobre Qwen/Qwen3.5-0.8B-Base, con una mezcla de 1,47 millones de ejemplos y 455 millones de tokens, entrenada en 4,5 horas sobre una GH200. Los pesos en bf16 ocupan 1,5 GB y el modelo tiene 752.393.024 parametros.
+El modelo pertenece a la familia decider, que comparte una única interfaz (`decider.infer.Decider`, endpoint `POST /v1/systemone`) y un mismo mecanismo de lectura: los logits de las letras en una posición de respuesta, aplicados softmax sobre las opciones definidas. Con 752 millones de parámetros en safetensors y pesos bf16 de 1,4 GB, es la variante más pequeña de la familia y está pensada para routing, clasificación, juicios sí/no y consultas sobre estados cortos, con una precisión a 1-4 puntos del decider-2b y aproximadamente 1,5 veces más rápida.
 
-Su relevancia practica esta en sustituir clasificadores ad hoc y llamadas a LLM generativos por una unica pasada determinista, con probabilidades calibradas (ECE de 0,032 en tareas vistas y 0,096 en tareas no vistas) y coste de inferencia muy bajo. Esta publicado con licencia Apache 2.0 y solo soporta ingles.
+Su relevancia actual radica en el paradigma "system-one": eliminar la decodificación autoregresiva y el parseo de salida en tareas de decisión estructurada, garantizando que la respuesta siempre pertenezca al conjunto de opciones definido por el usuario y que las probabilidades estén calibradas (ECE de 0,032 en tareas in-task). Está publicado bajo licencia Apache 2.0 y solo declara soporte para inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso, derivado de Qwen/Qwen3.5-0.8B-Base (tag de arquitectura: qwen3_5_text); cabezas de decision sobre el estado y las preguntas tipadas |
-| Parametros totales | 752.393.024 (0,75 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible de forma oficial; el modelo resuelve la tarea QuALITY con articulos completos de 5.000 a 8.000 tokens, lo que indica capacidad de manejar al menos esa longitud |
-| Tipos de cuantizacion | No se documentan cuantizaciones publicadas; los pesos distribuidos estan en bf16 (1,5 GB). No hay GGUF ni variantes de 4/8 bits en la informacion disponible |
-| Idiomas soportados | Ingles (en). El modelo es monolingue |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bf16) |
+| Arquitectura | Transformer denso (fine-tuning de Qwen3.5-0.8B-Base), lectura de logits en slot de respuesta |
+| Parámetros totales | 752.393.024 |
+| Parámetros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (evaluado con artículos de 5-8k tokens en QuALITY) |
+| Tipos de cuantización | bf16 (pesos publicados); otras cuantizaciones no disponibles |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen/Qwen3.5-0.8B-Base (familia Qwen3.5, transformer decoder-only denso de 0,75 B de parametros), sobre la que se anaden cabezas de decision. En lugar de autoregresion, el modelo procesa conjuntamente el estado y la definicion de las preguntas tipadas y emite, en una sola pasada forward, una distribucion de probabilidad por pregunta. Las tres familias de pregunta son Choice (2 a 255 opciones, con criterios descriptivos opcionales), Score (2 a 10 niveles descritos) y Noul (probabilidad de si). El formato de cable es el de TypeSafe Jev, expuesto como `POST /v1/systemone`.
+El modelo parte de Qwen/Qwen3.5-0.8B-Base, un transformer denso de 752 millones de parámetros, y se entrena con la misma receta que el resto de la familia decider: una época sobre la mezcla completa de 1,47 millones de ejemplos (455 millones de tokens), ejecutada con `scripts/train.sh full` en 4,5 horas sobre una única GH200. El entrenamiento no incluye etapa de RL; la calibración se obtiene mediante un ajuste de temperatura sobre datos in-task, que resultó en 1,03 para este modelo (idéntico al del 2b), lo que indica que la receta calibra a cualquier escala.
 
-El entrenamiento consiste en un solo epoch de `scripts/train.sh full` sobre la mezcla completa: 1,47 millones de ejemplos y 455 millones de tokens, con un coste de 4,5 horas en una GH200. Los datos de entrenamiento son generados por un profesor (Qwen3.5-27B) e incluyen preguntas escritas por el profesor, tareas de clasificacion publicas, enrutado por buckets y lookups sobre estados JSON. No se documenta una fase de RLHF o DPO: la calibracion proviene de la propia receta, con una temperatura ajustada sobre datos de la propia tarea que resulto ser 1,03, identica a la del modelo de 2 B. La innovacion tecnica central es la calibracion sistematica a todas las escalas y la ausencia total de decodificacion, lo que elimina el parseo de salidas y garantiza que el resultado pertenezca siempre al conjunto de opciones definido.
+La innovación técnica central es el mecanismo de decisión en una sola pasada: en lugar de generar texto y parsearlo, el modelo lee los logits de las letras en una posición de respuesta fija y aplica softmax sobre las opciones definidas. Esto elimina la decodificación, el parseo y cualquier salida fuera del conjunto de opciones, y produce directamente una distribución de probabilidad. La interfaz admite dos disposiciones de la pregunta (schema-first, que es cacheable, y otras), y el mismo formato de cable (`POST /v1/systemone`, formato de TypeSafe Jev) que el resto de la familia.
 
 ## Capacidades
 
-- Decision tipada en una sola pasada: Choice (2-255 opciones), Score (2-10 niveles descritos) y Noul (probabilidad de si), con distribucion de probabilidad calibrada por pregunta.
-- Clasificacion de texto multi-etiqueta y multi-clase sobre conjuntos amplios de etiquetas (64, 50, 70 y 219 etiquetas evaluadas simultaneamente sobre HWU64, TREC-fine, DBpedia L2 y L3).
-- Enrutado por buckets: clasificacion generica, especifica y catch-all sobre dominios no vistos.
-- Comprension de estados JSON: identificacion de un registro concreto entre 16 o 64 registros, nombrado por ruta, incluidos indices.
-- Preguntas personalizadas escritas por el profesor sobre dominios no vistos, con precision de 0,94 en Noul, 0,95 en Choice y 0,81 en Score.
-- Razonamiento sobre documentos largos: respuesta a preguntas sobre articulos completos de 5.000-8.000 tokens (QuALITY, 0,63 de precision).
-- Calibracion de probabilidades apta para umbrales de decision y derivacion a revision humana.
-- No genera texto libre, por lo que no soporta tool calling, function calling, agentes multi-paso ni modo de razonamiento explicito en el sentido convencional.
-- No soporta vision, audio ni ninguna otra modalidad.
-- Solo ingles.
+- Clasificación y routing con opciones tipadas: Choice de 2 a 255 opciones, con descripciones opcionales por opción.
+- Puntuación ordinal: Score con 2 a 10 niveles descritos, con probabilidades que suman aproximadamente 1 (1,02 en la evaluación reportada).
+- Juicios binarios: Noul devuelve la probabilidad de sí para una pregunta dada.
+- Estados de entrada flexibles: cadenas de texto o cualquier valor JSON, incluyendo consultas por ruta sobre registros JSON.
+- Salida estructurada garantizada: la respuesta siempre pertenece al conjunto de opciones definido, sin decodificación ni parseo.
+- Probabilidades calibradas: ECE de 0,032 en tareas in-task y 0,096 en held-out.
+- Soporte de lotes: `decide_batch` y caché del conjunto de preguntas mediante `schema`.
+- Despliegue como servicio: `decider.serve` con el formato de petición de TypeSafe.
+- No soporta generación de texto libre, tool calling, agentes multi-paso ni visión (la variante con visión es decider-2b-vision).
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: definiendo un Choice con criterios por equipo (facturacion, tecnico, otros), el modelo devuelve la probabilidad de cada equipo en una sola inferencia sobre el texto del ticket. Es adecuado porque la salida nunca sale del conjunto de opciones y la calibracion permite derivar a un humano los casos con probabilidad baja.
-- Deteccion de intencion binaria en pipeline de atencion al cliente: con preguntas de tipo Noul ("pide el cliente un reembolso"), se obtiene la probabilidad de si sin necesidad de decodificacion ni expresiones regulares, lo que simplifica el mantenimiento del pipeline.
-- Puntuacion de sentimiento y frustracion con niveles descritos: con un Score de tres niveles ("calmado", "frustrado", "muy frustrado") se obtiene una distribucion sobre los niveles, util para priorizar colas de atencion o disparar escalados.
-- Clasificacion multietiqueta de documentos: el modelo resuelve conjuntos amplios de etiquetas de una sola vez (219 etiquetas evaluadas en DBpedia L3 con 0,83 de precision), lo que permite taxonomias jerarquicas de temas, categorias de noticias o clasificaciones internas sin entrenar un clasificador por etiqueta.
-- Resolucion de registros sobre estados JSON: dado un objeto JSON con 64 registros, el modelo identifica el registro nombrado por ruta con 0,58-0,62 de precision; sirve para tareas de seleccion y verificacion de entidades en sistemas con paylads estructurados.
-- Verificacion de respuestas sobre documentos largos: en tareas tipo QuALITY, con articulos de 5.000-8.000 tokens, selecciona la opcion correcta entre varias con 0,63 de precision, lo que permite usarlo como filtro previo en sistemas de question answering documental.
-- Politicas de decision en agentes simples: el modelo aprende enrutado por buckets (generico, especifico, catch-all) con 0,87-0,93 de precision en dominios no vistos, adecuado para seleccionar acciones de una lista cerrada en entornos con politica discreta (Pong y Breakout mantienen el nivel del profesor guionizado).
-- Control de calidad con umbral de confianza: gracias a un ECE de 0,032 en tareas vistas y 0,096 en no vistas, las probabilidades pueden usarse directamente para fijar umbrales de autoaprobacion y enrutar el resto a revision manual.
+- Triaje de tickets de soporte: clasificar cada ticket en un equipo (billing, technical, other) y estimar la probabilidad de que el cliente solicite un reembolso y su nivel de frustración, todo en una sola pasada y con salida tipada que se inserta directamente en el sistema de ticketing.
+- Routing de consultas en pipelines RAG: decidir a qué índice o herramienta dirigir una consulta entre hasta 255 opciones descritas, con probabilidad calibrada para aplicar un umbral de derivación a un humano cuando la confianza sea baja.
+- Moderación y políticas: evaluar si un contenido incumple una política mediante preguntas Noul encadenadas y niveles Score de gravedad, sin riesgo de que el modelo genere texto fuera de las categorías permitidas.
+- Extracción de campos de registros JSON: localizar por ruta un registro entre 16 o 64 candidatos (precisión de 0,58 y 0,52 respectivamente, 0,62 con índices escritos) para tareas de enlazado de entidades o selección de documentos.
+- Clasificación multietiqueta de intenciones: asignar simultáneamente conjuntos amplios de etiquetas (64 etiquetas HWU64 con 0,81 de precisión, 50 etiquetas TREC-fine con 0,63, 70 etiquetas DBpedia L2 con 0,66 y 219 etiquetas L3 con 0,83) en asistentes conversacionales o sistemas de análisis de logs.
+- Decisión en agentes de navegador o videojuegos simples: elegir la siguiente acción entre opciones predefinidas a partir de un estado textual; rinde al nivel del profesor scriptado en Pong y Breakout, aunque falla en CliffWalking y obtiene 0 en Freeway held-out.
+- Enrutamiento de bajo coste en producción: con un coste de inferencia inferior al del decider-2b y 1,5 veces más rápido en el conjunto de regresión, es adecuado como primera etapa de filtrado antes de modelos mayores.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, comparados con decider-2b bajo la misma receta y protocolo. "Held-out" significa que no se entreno ningun ejemplo de ese conjunto de datos.
+Resultados reportados por el autor con el mismo protocolo de una sola ejecución y temperatura ajustada (1,03) sobre 93 tareas públicas, comparados con decider-2b bajo la misma receta:
 
-| Metrica | decider-0.8b | decider-2b |
+| Métrica | decider-0.8b | decider-2b |
 |---|---|---|
-| Precision / ECE en tarea, 69 tareas | 0,776 / 0,032 | 0,809 / 0,030 |
-| Precision / ECE held-out, 24 tareas | 0,707 / 0,096 | 0,739 / 0,086 |
-| Layout schema-first (cacheable), en tarea / held-out | 0,770 / 0,699 | 0,790 / 0,707 |
-| Preguntas personalizadas del profesor, dominios held-out: Noul / Choice / Score | 0,94 / 0,95 / 0,81 | 0,98 / 0,97 / 0,83 |
-| Enrutado terse-bucket, dominios held-out: generico / especifico / catch-all | 0,87 / 0,93 / 0,84 | 0,91 / 0,94 / 0,92 |
-| Estado JSON, 1 de 16 / 1 de 64 registros por ruta (64 con indices) | 0,58 / 0,52 (0,62) | 0,59 / 0,53 (0,63) |
-| 64 / 50 / 70 / 219 etiquetas a la vez: HWU64, TREC-fine, DBpedia L2, L3 (held-out) | 0,81 / 0,63 / 0,66 / 0,83 | 0,85 / 0,76 / 0,72 / 0,86 |
-| QuALITY, articulo completo (5-8k tokens) | 0,63 | 0,68 |
-| Score aislado frente a listwise (profesor, dominios held-out) | 0,83 frente a 0,82, suma 1,02 | 0,84 frente a 0,84 |
-| Bateria manual: opcion generica correcta / catch-all correcto | 0,95 / 0,95 | 0,90 / 0,85 |
+| Precisión / ECE in-task (69 tareas) | 0,776 / 0,032 | 0,809 / 0,030 |
+| Precisión / ECE held-out (24 tareas) | 0,707 / 0,096 | 0,739 / 0,086 |
+| Schema-first, in-task / held-out | 0,770 / 0,699 | 0,790 / 0,707 |
+| Preguntas personalizadas del profesor, held-out: noul / choice / score | 0,94 / 0,95 / 0,81 | 0,98 / 0,97 / 0,83 |
+| Routing por buckets tersos, held-out: genérico / específico / catch-all | 0,87 / 0,93 / 0,84 | 0,91 / 0,94 / 0,92 |
+| Estado JSON, 1 de 16 / 1 de 64 registros por ruta (64 con índices) | 0,58 / 0,52 (0,62) | 0,59 / 0,53 (0,63) |
+| HWU64 (64 etiquetas, held-out) | 0,81 | 0,85 |
+| TREC-fine (50 etiquetas, held-out) | 0,63 | 0,76 |
+| DBpedia L2 (70 etiquetas, held-out) | 0,66 | 0,72 |
+| DBpedia L3 (219 etiquetas, held-out) | 0,83 | 0,86 |
+| QuALITY, artículo completo (5-8k tokens) | 0,63 | 0,68 |
+| Score aislado vs listwise (held-out) | 0,83 vs 0,82, suma 1,02 | 0,84 vs 0,84 |
+| Batería manual: opción genérica correcta / catch-all correcto | 0,95 / 0,95 | 0,90 / 0,85 |
 
-Diferencias notables en conocimiento: TruthfulQA 0,41 frente a 0,55; OpenBookQA 0,67 frente a 0,81; HellaSwag 0,76 frente a 0,88; ARC 0,74 frente a 0,86. En entornos de agente, Pong y Breakout se mantienen al nivel del profesor guionizado, CliffWalking falla y Freeway held-out obtiene 0. El conjunto de regresion se ejecuta aproximadamente 1,5 veces mas rapido que en el modelo de 2 B.
+Pérdidas de conocimiento frente al 2b: TruthfulQA 0,41 frente a 0,55; OpenBookQA 0,67 frente a 0,81; HellaSwag 0,76 frente a 0,88; ARC 0,74 frente a 0,86.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: alrededor de 1,5 GB solo para los pesos en bf16; con activaciones y overhead del runtime, el consumo realista se situa en el rango de 2 a 3 GB (estimacion a partir del tamano de pesos, no es un dato publicado por el autor).
-- GPU recomendadas: cualquier GPU con al menos 3-4 GB de VRAM. El modelo se entreno en una GH200, pero su tamano lo hace apto para hardware muy inferior.
-- Cabe en GPU de consumo: si, en practicamente toda la gama actual (RTX 3060, RTX 4060, RTX 4090, etc.) e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: la via documentada es la libreria oficial `decider` (instalable con `pip install git+https://github.com/Mapika/decider`) y el endpoint HTTP `POST /v1/systemone` con el formato de TypeSafe Jev. No hay soporte documentado para vLLM, TGI, llama.cpp u Ollama, y no se publican pesos en GGUF.
-- Latencia y throughput: el autor indica que el conjunto de regresion se ejecuta aproximadamente 1,5 veces mas rapido que en decider-2b; no se publican cifras absolutas de latencia ni de tokens por segundo.
+- VRAM estimada: aproximadamente 1,5-2 GB en bf16 para pesos e inferencia básica; el repositorio ocupa 1,5 GB.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; el autor reporta entrenamiento en una GH200 y uso de CUDA graphs para reducir latencia en el 2b (4 ms por petición), aunque no se publican cifras de latencia específicas para el 0.8b.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares con 8 GB o más.
+- Opciones de despliegue: paquete `decider` (`decider.infer.Decider`, `decider.serve`) instalable desde GitHub; el resto de opciones (vLLM, llama.cpp, Ollama, TGI) no están documentadas para este modelo.
+- Rendimiento: el conjunto de regresión corre aproximadamente 1,5 veces más rápido que en el decider-2b; no se publican cifras absolutas de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Precision / ECE (en tarea / held-out) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| decider-0.8b | 0,75 B | No disponible oficialmente (QuALITY con 5-8k tokens) | 0,776 / 0,032 y 0,707 / 0,096 | Apache 2.0 | Hugging Face, pesos safetensors |
-| decider-2b | 2 B | No disponible | 0,809 / 0,030 y 0,739 / 0,086 | No disponible en la informacion | Hugging Face, mismo codigo y formato de cable |
-| Qwen/Qwen3.5-0.8B-Base | 0,75 B | No disponible | No es un modelo de decision; base del ajuste | No disponible en la informacion | Hugging Face |
-
-No se dispone de datos de otros modelos comparables de clasificacion calibrada en la informacion proporcionada. La comparacion relevante es con decider-2b: el modelo de 0,8 B pierde sobre todo conocimiento (TruthfulQA, OpenBookQA, HellaSwag, ARC) y etiquetas amplias que requieren distinciones finas (TREC-fine), mientras que en enrutado, clasificacion, juicios si/no y lookups JSON sobre estados cortos se mantiene a uno o cuatro puntos del 2 B.
+| Modelo | Base | Parámetros | Pesos | Licencia | Precisión in-task / held-out | Notas |
+|---|---|---|---|---|---|---|
+| decider-0.8b | Qwen3.5-0.8B-Base | 752 M | 1,4 GB bf16 | apache-2.0 | 0,776 / 0,707 | El más pequeño y rápido de la familia; pierde conocimiento |
+| decider-2b | Qwen3.5-2B-Base | no disponible | 3,5 GB bf16 | no disponible | 0,809 / 0,739 | Predeterminado de la familia; 4 ms por petición con CUDA graphs |
+| decider-4b | Qwen3.5-4B-Base | no disponible | 8,4 GB bf16 | no disponible | 0,834 / 0,788 | Punto medio; supera al 2b en 87 de 95 tareas; sin etapa RL |
+| decider-35b-a3b | Qwen3.5-35B-A3B-Base (3B activos) | no disponible | 65 GB bf16 | no disponible | 0,855 / 0,810 | Máxima precisión; supera al 2b en 93 de 95 tareas |
 
 ## Limitaciones y advertencias
 
-- Es un modelo pequeno sin capacidad de razonamiento; su conocimiento enciclopedico esta cerca del modelo base y baja notablemente frente a decider-2b en pruebas de conocimiento.
-- Solo soporta ingles. No hay soporte multilingue, lo que descarta su uso directo en castellano sin un ajuste adicional.
-- No genera texto libre ni sigue instrucciones complejas: las reglas escritas dentro de la pregunta ("rellenar si esta vacio, si no omitir") no se siguen de forma fiable. La decision debe formularse como una pregunta simple con opciones descritas.
-- El modelo puede fallar en tareas que dependen de conocimiento del mundo; en seleccion multiple con carga de conocimiento se comporta de forma similar al modelo base.
-- La calibracion esta medida sobre conjuntos de datos publicos y sondas etiquetadas por el profesor, no sobre el trafico real de produccion. Los valores de ECE pueden no trasladarse al dominio propio sin recalibrar.
-- Los datos de entrenamiento los genero Qwen3.5-27B y arrastran sus sesgos, que se heredan en las decisiones del modelo.
-- Riesgo de alucinacion estructuralmente bajo: al no generar texto y restringir la salida a las opciones definidas, el modelo no puede inventar respuestas fuera del conjunto. Aun asi, puede asignar probabilidad alta a la opcion equivocada, especialmente en etiquetas finas o estados JSON largos, donde la precision baja hasta 0,52-0,62.
-- En entornos de agente, su comportamiento es desigual: CliffWalking falla y Freeway held-out obtiene 0, por lo que no es apto como politica general en entornos continuos o no vistos.
-- La licencia Apache 2.0 permite uso comercial sin restricciones adicionales conocidas, pero no se documenta nada sobre las condiciones de los datos generados por el profesor ni sobre las tareas publicas empleadas en el entrenamiento.
-- No hay soporte publicado para vLLM, TGI, llama.cpp, Ollama ni cuantizaciones GGUF, lo que limita las opciones de despliegue a la libreria oficial y al endpoint HTTP documentado.
+- Solo admite inglés; no se declara soporte multilingüe.
+- No genera texto libre: únicamente responde a preguntas tipadas dentro del conjunto de opciones definido.
+- Debilidad en conocimiento factual y razonamiento: caídas notables en TruthfulQA, OpenBookQA, HellaSwag y ARC frente al 2b.
+- Bajo rendimiento en conjuntos amplios de etiquetas que requieren distinciones finas (TREC-fine: 0,63 frente a 0,76 del 2b).
+- Consultas por ruta sobre registros JSON limitadas: 0,52 de precisión con 64 registros sin índices.
+- En tareas de decisión secuencial en entornos, falla en CliffWalking y obtiene 0 en Freeway held-out; en Pong y Breakout se mantiene al nivel del profesor scriptado.
+- Calibración peor en dominios held-out (ECE 0,096) que in-task (0,032); conviene validar umbrales de confianza en el dominio de producción.
+- Licencia Apache 2.0 permite uso comercial, pero no se documentan garantías ni evaluaciones de sesgo.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí de calibración errónea cuando el estado de entrada queda fuera de la distribución de entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Mapika/decider-0.8b
-- Modelo hermano decider-2b: https://huggingface.co/Mapika/decider-2b
-- Repositorio de codigo, entrenamiento e inferencia: https://github.com/Mapika/decider
+- Repositorio y scripts de entrenamiento: https://github.com/Mapika/decider
+- decider-2b: https://huggingface.co/Mapika/decider-2b
+- decider-4b: https://huggingface.co/Mapika/decider-4b
+- decider-35b-a3b: https://huggingface.co/Mapika/decider-35b-a3b
+- decider-35b-a3b-nvfp4: https://huggingface.co/Mapika/decider-35b-a3b-nvfp4
+- decider-2b-vision: https://huggingface.co/Mapika/decider-2b-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces verificables son los citados en la model card y en la informacion de Hugging Face. No se dispone de paper, blog tecnico ni demo publica adicionales.

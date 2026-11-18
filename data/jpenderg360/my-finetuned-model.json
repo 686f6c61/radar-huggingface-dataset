@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "jpenderg360/my-finetuned-model",
+  "slug": "jpenderg360-my-finetuned-model",
+  "author": "jpenderg360",
+  "url": "https://huggingface.co/jpenderg360/my-finetuned-model",
+  "created_at": "2025-05-08T17:50:58.000Z",
+  "updated_at": "2026-11-17T21:02:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sentiment-analysis",
+    "distilbert",
+    "lora",
+    "pytorch",
+    "text-classification",
+    "en",
+    "dataset:fancyzhx/amazon_polarity",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:adapter:distilbert/distilbert-base-uncased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2962192,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

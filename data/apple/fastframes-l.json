@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "apple/FastFrames-L",
+  "slug": "apple-fastframes-l",
+  "author": "apple",
+  "url": "https://huggingface.co/apple/FastFrames-L",
+  "created_at": "2026-11-16T17:21:04.000Z",
+  "updated_at": "2026-11-17T21:20:44.000Z",
+  "license": "apple-amlr",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-T2V-14B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-14B",
+    "license:apple-amlr",
+    "region:us"
+  ],
+  "likes": 80,
+  "downloads_30d": 0,
+  "trending_score": 80,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173549625696,
+  "storage_human": "173.5 GB",
+  "context_length": null,
+  "base_model": "Wan-AI/Wan2.1-T2V-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple (France)",
+      "url": "https://www.apple.com/fr/",
+      "snippet": "Tout l’univers Apple, avec les iPhone, iPad, Apple Watch, Mac et Apple TV. Ainsi que les accessoires, le divertissement et notre …"
+    },
+    {
+      "title": "Apple",
+      "url": "https://www.apple.com/",
+      "snippet": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore …"
+    },
+    {
+      "title": "Gérer le compte Apple",
+      "url": "https://appleid.apple.com/fr/",
+      "snippet": "Your Apple Account is the account you use for all Apple services."
+    },
+    {
+      "title": "account.apple.com",
+      "url": "https://account.apple.com/sign-in",
+      "snippet": ""
+    },
+    {
+      "title": "iCloud",
+      "url": "https://www.icloud.com/",
+      "snippet": "Log in to iCloud to access your photos, mail, notes, documents and more. Sign in with your Apple Account or create a new account …"
+    }
+  ]
+}

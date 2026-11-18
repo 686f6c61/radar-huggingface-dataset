@@ -2,114 +2,101 @@
 
 ## Resumen
 
-BUNNY H3 Semantic Bridge V1 es un adaptador de acondicionamiento semantico (conditioning adapter) para el modelo de generacion de video texto-a-video MiniMax H3, publicado por el usuario JOKER141 en Hugging Face bajo la licencia minimax-h3-community-license-agreement. No es un modelo generativo autonomo: es un puente residual que se inserta en la ruta `CONDITIONING` de un flujo de ComfyUI basado en MiniMax H3 y modifica la representacion condicionante antes de que llegue a los nodos posteriores.
+BUNNY-H3-Semantic-Bridge es un adaptador de condicionamiento (conditioning adapter) para el modelo de generación de vídeo MiniMax-H3, desarrollado por el usuario JOKER141. No es un modelo generativo independiente, sino un "puente semántico" que se inserta en la ruta de `CONDITIONING` de MiniMax-H3 dentro de ComfyUI para mejorar la coherencia semántica de las secuencias generadas, especialmente en escenas de alta dinámica con múltiples actores, combate y movimiento complejo.
 
-Su proposito es corregir relaciones complejas de sujeto-accion-estado en escenas de alta dinamica: quien ejecuta cada accion, quien interactua con quien, a quien pertenece cada objeto o arma, y como debe continuar el estado de la escena tras un movimiento, un intercambio de posiciones o una oclusion. El autor lo presenta como una evolucion del proyecto previo MiniMax-H3-Semantic-Bridge, desplazando el foco desde la semantica general (composicion, materiales, reflejos, transparencia) hacia la logica de accion y las escenas con multiples personajes.
+El adaptador aborda un problema concreto de los modelos text-to-video: la pérdida de atribución de acciones y estados cuando la escena implica movimiento rápido, oclusiones, intercambio de posiciones o interacción entre varios personajes. BUNNY V2 se ha reentrenado desde cero con un conjunto de 133.200 registros que cubren 29 familias semánticas de alta dinámica (persecuciones, derribos, rebotes, herencia de momento, recuperación de armas, relaciones vehículo-ocupante, etc.), de las cuales 26 se usan para entrenamiento y 3 se excluyen por su naturaleza causal-secuencial.
 
-El modelo se distribuye como un unico fichero `BUNNY_H3_ActionLogic_Bridge_V1.safetensors` (repositorio de 0,1 GB) acompanado de un nodo personalizado de ComfyUI. En el momento de la consulta registra 0 descargas y 0 likes, y no se han publicado especificaciones de arquitectura interna, numero de parametros ni resultados de benchmarks cuantitativos.
+El resultado es un componente ligero (repo de 0,2 GB) que se aplica con un valor de `alpha` bajo (0,10-0,15) sobre el modelo base MiniMax-H3, sin sustituirlo. Su relevancia radica en que permite ajustar el comportamiento semántico del generador de vídeo sin reentrenar el modelo completo, integrándose directamente en el flujo de trabajo de ComfyUI mediante un nodo personalizado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador de acondicionamiento residual (semantic bridge) sobre MiniMax H3; estructura interna no disponible |
+| Arquitectura | Adaptador de condicionamiento (conditioning adapter) sobre MiniMax-H3; no es un transformer generativo independiente |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no se describe como MoE) |
-| Longitud de contexto | no disponible (depende de MiniMax H3; no aplica como contexto de texto) |
-| Tipos de cuantizacion | no disponible; se distribuye unicamente en safetensors (el autor no documenta versiones cuantizadas) |
-| Idiomas soportados | no disponible (la model card esta redactada en ingles y chino; los idiomas de prompt dependen de MiniMax H3) |
-| Licencia | minimax-h3-community-license-agreement (etiquetada como `license: other`) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos distribuidos en safetensors) |
+| Idiomas soportados | no disponible |
+| Licencia | minimax-h3-community-license-agreement (license: other) |
 | Formato de pesos | safetensors (`BUNNY_H3_ActionLogic_Bridge_V1.safetensors`) |
-
-Otros datos operativos documentados:
-
-| Parametro | Valor |
-|---|---|
 | Modelo base | MiniMaxAI/MiniMax-H3 |
-| Tipo de entrada/salida del nodo | `CONDITIONING` en ambos extremos |
-| Fuerza residual recomendada (alpha) | 0,10 a 0,15 |
-| Modo de magnitud | `magnitude_match = per_token` |
-| Tamano del repositorio | 0,1 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-13 |
-| Ultima actualizacion | 2026-09-13 |
+| Pipeline | text-to-video |
+| Tamano del repositorio | 0,2 GB |
+| Libreria | minimax-h3 |
+| Entorno de ejecucion | ComfyUI (nodo personalizado) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe el componente como un bridge que se inserta en la ruta de acondicionamiento existente de H3: la entrada y la salida son del mismo tipo (`CONDITIONING`), y el efecto se controla mediante una fuerza residual pequena (`alpha` entre 0,10 y 0,15) con correspondencia de magnitud por token (`magnitude_match = per_token`). El autor advierte explicitamente que un `alpha` mas alto no implica mejores resultados, lo que es coherente con un diseno de adaptador residual que debe perturbar minimamente la representacion original. No se publican detalles sobre el numero de capas, dimensionalidad, tipo de atencion ni el mecanismo exacto de proyeccion.
+BUNNY-H3-Semantic-Bridge no es un modelo de difusión ni un transformer completo, sino un adaptador que opera sobre el espacio de condicionamiento de MiniMax-H3. Se inserta entre la salida de condicionamiento de H3 y el nodo downstream original, recibiendo y devolviendo tensores de tipo `CONDITIONING`. Su funcionamiento se controla mediante los parametros `alpha` (intensidad de la modulacion, recomendado 0,10-0,15), `magnitude_match` (configurado como `per_token`) y un flag `enabled`.
 
-En cuanto al entrenamiento, la model card indica que durante la fase de entrenamiento se utilizo SenseNova U1.5 como "teacher" semantico externo, y que una etapa de cribado (screening) evaluo 576 pares de entrenamiento, 144 pares de validacion y 30 combinaciones de capas SenseNova a H3. El objetivo de ese cribado fue encontrar mapeos de representacion que funcionasen mejor para relaciones de accion, en lugar de fijar una unica proyeccion de capas. No se especifican el numero total de tokens o pares de video empleados, la composicion del dataset, ni si hubo etapas de RLHF o DPO; en el contexto de un adaptador de acondicionamiento, esos terminos no aplican de forma directa. El proyecto declara basarse en la direccion de investigacion abierta por `speach1sdef178/MiniMax-H3-Semantic-Bridge`.
+El entrenamiento de V2 se reconstruyo por completo respecto a V1. El conjunto de datos contiene 133.200 registros: 109.200 casos duros de alta dinamica y 24.000 anclas de preservacion (preservation anchors) destinadas a evitar que el adaptador degrade el comportamiento base del modelo. Cubre 29 familias semanticas de alta dinamica, con 26 usadas en entrenamiento y 3 familias de tipo Sequence-Causal excluidas deliberadamente. Los conceptos cubiertos incluyen persecucion, adelantamiento, frenada y recuperacion, perdida y recuperacion de arma, reidentificacion tras oclusion, herencia de momento, derribo, rebote, captura, orientacion relativa, geometria de rebote de proyectiles, fusion de rutas, relevo entre multiples actores, relaciones de cobertura, herencia de estado de combate, rutas de parkour, aterrizaje vertical, relaciones vehiculo-pasajero, interception aerea, rebote en pared y ordenacion de acciones multi-actor.
+
+Durante el desarrollo se realizo una fase de cribado (screening) con 576 pares de entrenamiento, 144 pares de validacion y 30 combinaciones de capas SenseNova → H3, con el objetivo de encontrar mapeos de capas que funcionaran mejor para relaciones de accion en lugar de reutilizar directamente una unica configuracion. El proyecto se basa en la direccion de investigacion abierta por speach1sdef178 / MiniMax-H3-Semantic-Bridge, que exploraba composicion, relaciones espaciales, conteo, materiales, reflexion, transparencia y oclusion; BUNNY V1 desplaza el foco hacia logica de accion de alta dinamica y escenas multijugador complejas.
 
 ## Capacidades
 
-- Acondicionamiento semantico de generacion de video texto-a-video: no genera video por si mismo, sino que modifica las condiciones que recibe MiniMax H3.
-- Correccion de errores de atribucion personaje-accion (evitar que el personaje equivocado ejecute la accion descrita).
-- Correccion de confusion entre atacante y objetivo en escenas de combate.
-- Correccion de pertenencia de armas y objetos (que objeto corresponde a que personaje).
-- Mejora de la continuidad espacial despues de movimientos o intercambios de posicion.
-- Mejora de la coherencia de identidad y estado tras oclusiones.
-- Mejora del seguimiento del prompt y de la continuidad del entorno durante secuencias de accion.
-- Escenas multitudinarias: la model card cita un caso de cinco personajes con ropa diferenciada moviendose e interactuando de forma continua.
-- Integracion en ComfyUI mediante un nodo personalizado con parametros ajustables (`adapter`, `alpha`, `magnitude_match`, `enabled`).
-- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Mejora de la atribucion sujeto-accion-estado en escenas complejas: ayuda a H3 a distinguir quien hace que, quien interactua con quien y a quien pertenece cada objeto.
+- Correccion de errores de propiedad de accion: reduce la confusion entre atacante y objetivo.
+- Correccion de propiedad de armas y objetos: mantiene la asignacion de utileria entre personajes a lo largo de la secuencia.
+- Continuidad espacial tras movimientos e intercambios de posicion: preserva la coherencia de ubicacion relativa entre actores.
+- Recuperacion de identidad y estado tras oclusion: mantiene la identidad del personaje y su estado cuando desaparece temporalmente del plano.
+- Continuidad de entorno y seguimiento de prompt: mejora la adherencia al texto descriptivo en escenas de alta dinamica.
+- Razonamiento de cadena causal larga: herencia de momento, rebotes, derribos, capturas y relevos entre multiples actores.
+- Logica de proyectiles: geometria de rebote y trayectorias balisticas.
+- Relaciones vehiculo-ocupante y aterrizaje vertical.
+- Integracion como nodo de ComfyUI con entrada y salida `CONDITIONING`.
+- No soporta tool calling, function calling ni razonamiento multi-paso en el sentido de un LLM; su dominio es exclusivamente la generacion de video.
 
 ## Casos de uso
 
-- Postproduccion de escenas de combate cuerpo a cuerpo: insertar el bridge en la ruta de acondicionamiento para que el modelo mantenga estable quien ataca y quien recibe el golpe a lo largo de los fotogramas, un problema habitual cuando hay mas de dos personajes en cuadro.
-- Escenas de multitud con interacciones cruzadas: en planos con cuatro o cinco personajes con vestuario diferenciado, el adaptador ayuda a conservar la relacion entre cada figura y su accion, reduciendo el intercambio involuntario de identidades.
-- Continuidad tras intercambio de posiciones: cuando dos personajes se cruzan o se mueven rapido por el encuadre, el bridge trabaja la continuidad espacial posterior al desplazamiento, evitando saltos de posicion o de estado.
-- Recuperacion de escenas con oclusion: en planos donde un personaje queda parcialmente tapado por otro elemento, el adaptador trata de preservar su identidad y su estado cuando vuelve a ser visible.
-- Prototipado de planos de accion en ComfyUI: al ser un nodo que se conecta en serie en la ruta `CONDITIONING`, permite comparar A/B el mismo prompt con el bridge activado o desactivado sin reentrenar nada, ajustando solo `alpha`.
-- Iteracion artistica con control fino: al funcionar como residuo de baja intensidad (alpha 0,10-0,15), permite suavizar fallos de logica de accion en lugar de reescribir por completo el prompt o regenerar desde cero.
-- Tuberias de generacion de video por lotes: al integrarse como nodo de ComfyUI, puede incorporarse a flujos automatizados donde se procesan multiples prompts con las mismas condiciones de puente semantico.
+- Generacion de escenas de combate cuerpo a cuerpo: el adaptador mantiene la atribucion de atacante y objetivo y la continuidad de estado (quien esta derribado, quien se recupera) a lo largo de la secuencia, un escenario donde el modelo base tiende a confundir roles.
+- Coreografias de persecucion y adelantamiento: con los conceptos de pursuit, overtaking y braking-retaking entrenados, permite generar secuencias donde los vehiculos o personajes mantienen posiciones relativas coherentes tras maniobras de alta velocidad.
+- Escenas de parkour y rutas verticales: el adaptador ayuda a preservar la ruta de movimiento y el aterrizaje vertical entre planos, reduciendo saltos de continuidad espacial.
+- Recuperacion de identidad tras oclusion en escenas multijugador: util para planos con multiples personajes que se cruzan o se ocultan, donde el modelo base pierde la identidad o el estado de cada uno.
+- Logica de proyectiles y rebotes: genera trayectorias con geometria de ricochet y rebote en pared coherentes, util para escenas de accion con disparos o impactos.
+- Relaciones vehiculo-ocupante: mantiene la asignacion entre un vehiculo y sus pasajeros durante maniobras, relevante en secuencias de accion con transporte.
+- Prototipado rapido en ComfyUI: al ser un adaptador ligero (0,2 GB) con `alpha` ajustable, permite iterar sobre la coherencia semantica de un pipeline de text-to-video existente sin reentrenar el modelo base ni cambiar de flujo de trabajo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. El autor unicamente aporta tres videos de comparacion A/B (assets/1.mp4, assets/2.mp4 y assets/3.mp4) que ilustran, respectivamente, la correccion de atribucion personaje-accion y continuidad espacial, una escena multitudinaria de cinco personajes y la estabilidad de seguimiento de prompt y entorno. No hay metricas objetivas como FVD, CLIP score, VBench ni comparaciones cuantitativas con otros adaptadores.
+No se han publicado resultados de benchmarks cuantitativos (FVD, CLIP score, VBench u otros) en la informacion disponible. La model card describe mejoras cualitativas en atribucion de acciones, continuidad espacial y recuperacion tras oclusion, pero no aporta metricas numericas comparativas.
 
 ## Requisitos de hardware
 
-- El adaptador en si ocupa aproximadamente 0,1 GB en disco, por lo que su coste de memoria adicional es marginal frente al modelo base.
-- La VRAM necesaria para la inferencia viene determinada casi por completo por MiniMax H3; no se dispone de cifras oficiales de VRAM para ese modelo base en la informacion proporcionada.
-- No cabe considerar este componente como un modelo autonomo: sin MiniMax H3 instalado y sin ComfyUI no es utilizable.
-- Despliegue: ComfyUI con el nodo personalizado `BUNNY_H3_Conditioning_Bridge`, colocado en `ComfyUI/custom_nodes/`, y el fichero `BUNNY_H3_ActionLogic_Bridge_V1.safetensors` en la subcarpeta `models/`.
-- No se documentan opciones de despliegue alternativas (vLLM, llama.cpp, Ollama, TGI), ya que no es un modelo de lenguaje.
-- No se publican datos de latencia ni de throughput; el impacto en tiempo de inferencia de un adaptador residual de esta naturaleza deberia ser pequeno, pero no esta cuantificado por el autor.
-- No se indica que GPU concretas (A100, H100, RTX 4090 u otras) se han utilizado para las pruebas.
+- VRAM estimada para inferencia: no disponible de forma aislada; el adaptador (0,2 GB) se suma a los requisitos del modelo base MiniMax-H3, que no se detallan en la informacion proporcionada.
+- GPU recomendadas: no disponible. Depende enteramente de los requisitos de MiniMax-H3.
+- Compatibilidad con GPU de consumo: no disponible. El adaptador es ligero, pero el modelo base condiciona el requisito total.
+- Opciones de despliegue: ComfyUI con el nodo personalizado `BUNNY_H3_Conditioning_Bridge` (o `bunny-h3-semantic-bridge` si se instala via ComfyUI Manager). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un pipeline text-to-video de este tipo.
+- Latencia y throughput: no disponible. El adaptador anade una modulacion sobre el condicionamiento, pero no se publican cifras de sobrecoste.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Tamano de repo | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JOKER141/BUNNY-H3-Semantic-Bridge | Adaptador de acondicionamiento (logica de accion) | MiniMaxAI/MiniMax-H3 | 0,1 GB | minimax-h3-community-license-agreement | 0 descargas, 0 likes |
-| speach1sdef178/MiniMax-H3-Semantic-Bridge | Adaptador de acondicionamiento (semantica general: composicion, materiales, reflejos, transparencia, oclusion) | MiniMaxAI/MiniMax-H3 | no disponible | no disponible | proyecto original citado como referencia |
-| MiniMaxAI/MiniMax-H3 | Modelo texto-a-video completo | no aplica | no disponible | minimax-h3-community-license-agreement | modelo base del que dependen ambos adaptadores |
+| BUNNY-H3-Semantic-Bridge (este) | Adaptador de condicionamiento para MiniMax-H3 | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face, ComfyUI |
+| MiniMax-H3 (base) | Modelo text-to-video | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
+| speach1sdef178 / MiniMax-H3-Semantic-Bridge | Adaptador de condicionamiento para MiniMax-H3 (proyecto original) | no disponible | no disponible | no disponible | Hugging Face |
 
-No se dispone de datos de parametros, contexto ni rendimiento para ninguno de los tres, por lo que la comparacion se limita al tipo de componente, el modelo base y la licencia.
+No se dispone de datos de benchmarks ni de especificaciones numericas de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a tipo, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo: requiere MiniMax H3 y un entorno ComfyUI con el nodo personalizado para funcionar.
-- No se han publicado especificaciones tecnicas internas (parametros, capas, dimensionalidad) ni resultados de benchmarks; la evaluacion publica se limita a videos A/B seleccionados por el autor.
-- El propio autor advierte que subir `alpha` no mejora necesariamente el resultado; el rango recomendado es estrecho (0,10-0,15) y salirse de el puede degradar la generacion.
-- El enfoque esta sesgado hacia escenas de accion y combate con multiples personajes; su utilidad en otros dominios (paisajes, naturaleza, escenas sin figuras humanas) no esta documentada.
-- Los ejemplos de la model card se centran en escenas de confrontacion; no se detalla como se comporta con contenido violento ni si existen filtros asociados al modelo base.
-- La licencia es `minimax-h3-community-license-agreement`, no una licencia de codigo abierto estandar; es imprescindible revisar el texto enlazado antes de cualquier uso comercial, ya que puede imponer restricciones de atribucion, de uso o de redistribucion.
-- No se documentan sesgos demograficos, culturales ni linguisticos del adaptador; al depender de MiniMax H3, heredara en gran medida los sesgos del modelo base.
-- Riesgo de alucinacion y de incoherencia temporal: la mejora es probabilistica, no garantizada, y el autor la presenta como una ayuda para "problemas que ni siquiera la reparacion de movimiento puede resolver", lo que implica que persisten fallos no cubiertos.
-- El repositorio tiene 0 descargas y 0 likes, sin historial de uso independiente ni validacion por terceros.
-- No hay informacion sobre idiomas de prompt soportados; la documentacion esta en ingles y chino, lo que puede indicar un sesgo hacia prompts en esos idiomas.
-- No se documentan versiones cuantizadas ni soporte para backends distintos de ComfyUI.
+- El adaptador no es un modelo autonomo: requiere MiniMax-H3 y ComfyUI para funcionar. No puede evaluarse de forma aislada.
+- Un valor de `alpha` mas alto no implica mejor resultado; la model card advierte explicitamente que 0,10-0,15 es el rango recomendado y que valores superiores pueden degradar la generacion.
+- Las 3 familias Sequence-Causal se excluyeron del entrenamiento, por lo que el comportamiento en esos casos no esta cubierto por el adaptador.
+- Riesgo de sobreajuste a los 29 dominios semanticos entrenados: escenas fuera de ese espacio (persecuciones, combate, rebotes, parkour, vehiculos) pueden no beneficiarse o incluso sufrir interferencias.
+- No hay informacion sobre sesgos demograficos, culturales o de representacion en los datos de entrenamiento.
+- Riesgo de alucinacion visual inherente al modelo base MiniMax-H3; el adaptador mitiga errores de atribucion pero no elimina la generacion de contenido incoherente.
+- La licencia es la MiniMax-H3 Community License Agreement, no una licencia open source estandar; es imprescindible revisar sus terminos antes de cualquier uso comercial.
+- No se especifican idiomas soportados ni limitaciones de contexto; el adaptador opera sobre condicionamiento y no sobre texto de entrada de forma directa.
+- El proyecto se basa en la direccion de investigacion de un tercero (speach1sdef178); conviene verificar la cadena de licencias y atribuciones.
+- Repositorio pequeno (0,2 GB) y autor individual: menor garantia de mantenimiento a largo plazo que un proyecto corporativo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge
-- Nodo personalizado de ComfyUI (GitHub): https://github.com/aa335615543-ux/BUNNY-H3-Semantic-Bridge
-- Proyecto original de referencia: https://huggingface.co/speach1sdef178/MiniMax-H3-Semantic-Bridge
-- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Texto de la licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
-- Video de comparacion 01 (atribucion personaje-accion y continuidad espacial): https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge/resolve/main/assets/1.mp4
-- Video de comparacion 02 (escena multitudinaria, 1 contra 4): https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge/resolve/main/assets/2.mp4
-- Video de comparacion 03 (seguimiento de prompt y estabilidad del entorno): https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge/resolve/main/assets/3.mp4
-
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card del autor.
+- Hugging Face: https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge
+- Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- Nodo ComfyUI (GitHub): https://github.com/aa335615543-ux/BUNNY_H3_Conditioning_Bridge
+- Proyecto de investigacion original (speach1sdef178 / MiniMax-H3-Semantic-Bridge): no disponible como URL directa en la informacion proporcionada

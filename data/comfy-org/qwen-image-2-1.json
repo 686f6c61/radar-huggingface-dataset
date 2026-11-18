@@ -20,9 +20,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1339,
+  "likes": 1341,
   "downloads_30d": 9607028,
-  "trending_score": 28,
+  "trending_score": 27,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 152260782441,
@@ -41,29 +41,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "NFL.com | Official Site of the National Football League",
-      "url": "https://www.nfl.com/",
-      "snippet": "Jul 30, 2007 · The official source for NFL news, video highlights, game-day coverage, schedules, stats, scores and more."
-    },
-    {
-      "title": "2026 NFL Division Standings",
-      "url": "https://www.nfl.com/standings/",
-      "snippet": "See the latest NFL Standings by Division, Conference and League. Find current or past season NFL standings by team."
-    },
-    {
-      "title": "NGS | NFL Next Gen Stats",
-      "url": "https://nextgenstats.nfl.com/",
-      "snippet": "NFL’s Next Gen Stats captures real time location data, speed and acceleration for every player, every play on every inch of the field. …"
-    },
-    {
-      "title": "Pepsi Rookie of the Week - Week 1 Winner Announced",
-      "url": "https://media.nfl.com/",
-      "snippet": "3 days ago · State of Texas, Three South Florida High Schools Produce Most NFL Players On Kickoff Weekend Rosters Burna Boy …"
-    },
-    {
-      "title": "NFL Rulebook – NFL",
-      "url": "https://support.nfl.com/hc/en-us/articles/35869773487764-NFL-Rulebook",
-      "snippet": "NFL and the NFL shield design are registered trademarks of the National Football League.The team names, logos and uniform …"
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
     }
   ]
 }

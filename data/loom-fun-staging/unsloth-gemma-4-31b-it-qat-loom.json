@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "loom-fun-staging/unsloth-gemma-4-31B-it-qat-loom",
+  "slug": "loom-fun-staging-unsloth-gemma-4-31b-it-qat-loom",
+  "author": "loom-fun-staging",
+  "url": "https://huggingface.co/loom-fun-staging/unsloth-gemma-4-31B-it-qat-loom",
+  "created_at": "2026-11-17T23:19:42.000Z",
+  "updated_at": "2026-11-17T23:19:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "radeon-r9700",
+    "base_model:unsloth/gemma-4-31B-it-qat-GGUF",
+    "base_model:finetune:unsloth/gemma-4-31B-it-qat-GGUF",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15147891,
+  "storage_human": "15 MB",
+  "context_length": null,
+  "base_model": "unsloth/gemma-4-31B-it-qat-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …"
+    },
+    {
+      "title": "Log in to Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "Loom | Messagerie vidéo professionnelle | Atlassian",
+      "url": "https://www.atlassian.com/fr/software/loom",
+      "snippet": "Loom aide toutes les équipes à gagner du temps et à mener à bien leurs projets plus rapidement grâce à des notes de réunion et …"
+    }
+  ]
+}

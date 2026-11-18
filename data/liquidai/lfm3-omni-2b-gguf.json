@@ -75,9 +75,9 @@
     "region:us",
     "conversational"
   ],
-  "likes": 185,
+  "likes": 186,
   "downloads_30d": 500012,
-  "trending_score": 21,
+  "trending_score": 20,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
   "storage_bytes": 16052032032,
@@ -96,31 +96,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Trouvez et réservez des vols pas chers – Google Flights",
-      "url": "https://www.google.fr/travel/",
-      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
-    },
-    {
-      "title": "Google Books: Find, Preview, and Read Books Online.",
-      "url": "https://books.google.fr/",
-      "snippet": "Effectuez des recherches dans l'index de livres complets le plus fourni au monde. Votre bibliothèque"
-    },
-    {
-      "title": "Google Trends",
-      "url": "https://trends.google.fr/trends/",
-      "snippet": "Créé avec Trends Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations …"
-    },
-    {
-      "title": "Google Videos",
-      "url": "https://www.google.fr/videohp",
-      "snippet": "Search millions of videos from across the web."
-    },
-    {
-      "title": "Google Traduction",
-      "url": "https://translate.google.fr/details",
-      "snippet": "Traduisez des textes instantanément avec Google Translate."
-    }
-  ]
+  "sources": []
 }

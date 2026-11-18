@@ -2,83 +2,82 @@
 
 ## Resumen
 
-Groot-19B-A3B-261023 APEX-I MiniPlus V2.1 es una cuantización GGUF comunitaria, creada por IsValorum dentro de su serie APEX Quantization, del modelo base Groot-19B-A3B-261023 publicado por GrootTeam. El modelo base es un modelo de mezcla de expertos (MoE) multimodal con unos 19.000 millones de parametros totales, de los cuales aproximadamente 3.000 millones se activan por token (como indica el sufijo A3B), con una ventana de contexto de 262.144 tokens y soporte de imagen-texto-a-texto.
+Groot-19B-A3B-261023 APEX-I MiniPlus V2.1 es una cuantización GGUF del modelo multimodal Groot-19B-A3B-261023, desarrollado por GrootTeam y cuantizado por IsValorum bajo su serie APEX. El modelo base es un Mixture of Experts (MoE) de aproximadamente 19.000 millones de parámetros totales con arquitectura híbrida: 30 capas de atención lineal/SSM combinadas con 10 capas de atención completa, más un bloque MTP (multi-token prediction) para decodificación especulativa. Está orientado a tareas de imagen-texto-a-texto, lo que lo sitúa en la categoría de modelos multimodales con capacidad de visión.
 
-La relevancia de esta ficha radica en el enfoque de cuantización: en lugar de aplicar una precisión uniforme, la variante MiniPlus V2.1 emplea una asignación heterogénea de tipos de cuantización por tensor (Q3_K, IQ3_XXS, Q4_K, Q5_K, Q6_K, Q8_0 y F32), guiada por una matriz de importancia (iMatrix) calculada de forma independiente. El resultado es un fichero de 8,42 GB con 3,55 bits por peso de media, pensado para ejecutarse en hardware de consumo mediante llama.cpp. El GGUF incluye además el bloque MTP (multi-token prediction) para decodificación especulativa y proyectores de visión como ficheros complementarios.
+La relevancia de esta ficha concreta reside en la cuantización: el archivo principal ocupa 8,42 GB con 3,5472 bits por peso, lo que permite ejecutar un modelo MoE de 19B con visión en hardware de consumo mediante llama.cpp. La receta MiniPlus V2.1 emplea una matriz de importancia (imatrix) pública de bartowski y mantiene en F32 los tensores críticos del bloque SSM (coeficientes recurrentes, convoluciones y normalizaciones), una decisión técnica que busca preservar la estabilidad del estado recurrente tras la cuantización agresiva.
+
+El modelo se distribuye con licencia Apache-2.0, incluye proyectores de visión separados (F16 y Q8_0) y soporta decodificación especulativa mediante el bloque MTP integrado. Está pensado para despliegue local en estaciones de trabajo y equipos de consumo, con integración directa en llama.cpp y en el agente de escritorio V-Agent del mismo autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE hibrido con 30 capas de atencion lineal/SSM y 10 capas de atencion completa, mas 1 bloque MTP |
+| Arquitectura | MoE híbrida: 30 capas de atención lineal/SSM + 10 capas de atención completa + 1 bloque MTP; 40 capas de lenguaje |
 | Parametros totales | 18.985.723.008 (~19B) |
-| Parametros activos | ~3B (8 expertos enrutados activos por token de 128 totales, mas 1 experto compartido; dato inferido del sufijo A3B) |
+| Parametros activos | 8 expertos enrutados de 128 + 1 experto compartido por token (no se especifica el total de parámetros activos) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | Mixta: Q3_K, IQ3_XXS, Q4_K, Q4_0, Q5_K, Q6_K, Q8_0 y F32 (media de 3,5472 bits por peso) |
+| Tipos de cuantizacion | GGUF con mezcla de precisión: F32, Q8_0, Q6_K, Q5_K, Q4_K, Q4_0, Q3_K, IQ3_XXS (3,5472 bits por peso en el archivo MiniPlus V2.1) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (cuantizado desde safetensors del modelo base) |
+| Formato de pesos | GGUF (llama.cpp); proyectores de visión en GGUF F16 y Q8_0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base combina una arquitectura MoE con un diseño hibrido de atencion: 40 capas de lenguaje en total, de las cuales 30 usan atencion lineal/SSM (state space model) y 10 usan atencion completa tradicional. Esto reduce significativamente el coste de memoria KV en contextos largos, algo coherente con su ventana de 262.144 tokens. El componente MoE cuenta con 128 expertos enrutados mas 1 experto compartido, activandose 8 expertos por token, con un tamaño oculto de 2.048 y un tamaño intermedio de experto de 512. Incluye ademas un bloque MTP (multi-token prediction) como bloque 40, que permite decodificacion especulativa en llama.cpp (version b12017 o posterior, con `--spec-type draft-mtp`).
+El modelo base emplea una arquitectura MoE híbrida con 40 capas de lenguaje más un bloque MTP adicional. De las 40 capas, 30 son de atención lineal/SSM (state space model) y 10 son de atención completa, una combinación que busca reducir el coste computacional y de memoria del contexto largo manteniendo capacidad de atención global en capas seleccionadas. El componente MoE consta de 128 expertos enrutados más 1 experto compartido, con 8 expertos enrutados activos por token, tamaño oculto de 2048 y tamaño intermedio de experto de 512. El bloque MTP (capa 40) habilita decodificación especulativa mediante `--spec-type draft-mtp` en llama.cpp b12017 o superior.
 
-Sobre los datos de entrenamiento del modelo base (numero de tokens, composicion del dataset, RLHF/DPO) no hay informacion disponible. En cuanto a la cuantizacion en si, IsValorum calculo una iMatrix independiente usando la matriz publica de bartowski (`GrootTeam_Groot-19B-A3B-261023-imatrix.gguf`), con 573 fragmentos de 512 tokens del dataset `calibration-v6` y 510 entradas, cubriendo 400 de los 413 tensores cuantizados. Los 13 tensores restantes (`output.weight`, `token_embd.weight` y el bloque MTP) usan K-quants o Q4_0 sin necesidad de matriz de importancia. Como medida de proteccion numerica, todos los parametros sensibles de las capas SSM (`ssm_alpha`, `ssm_a`, `ssm_dt.bias`, `ssm_conv1d`) y todas las RMSNorm se mantienen en F32.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. La cuantización APEX-I MiniPlus V2.1 utiliza una imatrix pública de bartowski (`GrootTeam_Groot-19B-A3B-261023-imatrix.gguf`) calculada con 573 fragmentos de 512 tokens del conjunto `calibration-v6`, con 510 entradas que cubren 400 de los 413 tensores cuantizados. Los 13 tensores no cubiertos son `output.weight`, `token_embd.weight` y el bloque MTP, que usan K-quants o Q4_0. Como innovación técnica destacable, la receta mantiene en F32 todos los tensores del bloque SSM (`ssm_alpha`, `ssm_a`, `ssm_dt.bias`, `ssm_conv1d`) y las RMSNorm, además de los logits del router (`ffn_gate_inp`), para evitar degradación del estado recurrente y del enrutamiento de expertos.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline image-text-to-text, tags `conversational`).
-- Comprension de imagenes (multimodal, vision): requiere uno de los dos proyectores companion (`mmproj-...-f16.gguf` o `mmproj-...-q8_0.gguf`, este ultimo de 610,7 MB).
-- Decodificacion especulativa mediante el bloque MTP incluido en el GGUF principal.
-- Contexto largo: hasta 262.144 tokens, favorecido por las 30 capas de atencion lineal/SSM.
-- Soporte de tool calling / function calling: no disponible.
-- Capacidades agentes y multi-step reasoning: no disponible.
-- Capacidades multilingues: no disponible (el modelo base no documenta idiomas soportados en la informacion proporcionada).
+- Generación de texto conversacional multi-turno con ventana de contexto de 262.144 tokens.
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`) mediante proyectores de visión separados en F16 o Q8_0.
+- Razonamiento multi-paso y soporte de agentes, con integración en el agente de escritorio V-Agent (herramientas de ficheros, búsqueda web, navegador y servidores MCP).
+- Decodificación especulativa nativa mediante el bloque MTP integrado en el GGUF principal.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Modo de razonamiento explícito (thinking): no disponible.
 
 ## Casos de uso
 
-- Chatbot local multimodal en hardware de consumo: con 8,42 GB de fichero, cabe en GPUs de 12 GB o incluso en equipos sin GPU dedicada, permitiendo conversar con el modelo y enviarle imagenes usando llama.cpp con el mmproj correspondiente.
-- Analisis de documentos con imagenes extensos: la ventana de 262.144 tokens y el peso reducido de las capas SSM en memoria KV lo hacen adecuado para procesar documentos largos que combinan texto e imagenes.
-- Generacion de texto con alta velocidad de inferencia: el bloque MTP habilita decodificacion especulativa, util cuando se necesita reducir la latencia percibida en aplicaciones interactivas locales.
-- Experimentacion con cuantizaciones heterogeneas: la ficha audita el mapa completo de tensores (753 tensores, 0 discrepancias), lo que la convierte en una buena referencia para estudiar como distribuir precision por capa en modelos hibridos MoE+SSM.
-- Despliegue edge o en portatil: el tamaño de 8,42 GB y la dependencia de llama.cpp permiten ejecutar el modelo en portatiles con GPU modesta o en CPU con RAM suficiente, sin dependencias de frameworks pesados.
-- Prototipado de asistentes con vision sin coste de API: al ser Apache-2.0 y ejecutable localmente, permite integrar comprension de imagenes en aplicaciones sin enviar datos a servicios externos.
+- Asistencia conversacional local con contexto largo: la ventana de 262.144 tokens permite mantener conversaciones o documentos completos en memoria sin truncamiento, adecuado para análisis de expedientes, contratos o bases de conocimiento extensas en un equipo de sobremesa.
+- Análisis de documentos con imágenes: al ser un modelo image-text-to-text, puede procesar capturas, diagramas o páginas escaneadas junto a texto de instrucciones, útil para extracción de información de informes técnicos o facturas.
+- Agente de escritorio con herramientas: mediante V-Agent, el modelo puede ejecutar tareas de sistema de ficheros, búsqueda web y navegación con aprobaciones por acción, en un entorno aislado por chat y sin telemetría.
+- Prototipado de pipelines multimodales en llama.cpp: el GGUF con mezcla de cuantizaciones permite validar flujos de visión y texto en hardware de consumo antes de escalar a infraestructura mayor.
+- Generación asistida en local para desarrollo: con 8,42 GB de peso, cabe en GPUs de consumo de 12 GB o más, lo que permite usarlo como asistente de código y documentación sin dependencia de la nube.
+- Evaluación de cuantizaciones: la documentación exhaustiva del mapa de tensores y de las métricas de bits por peso lo convierte en un caso de estudio para comparar recetas de cuantización en arquitecturas SSM/MoE híbridas.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse íntegramente en local con licencia Apache-2.0, encaja en escenarios donde no se permite enviar datos a servicios externos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica ademas que la calidad de la vision no fue reevaluada tras la cuantizacion de los proyectores.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas de la cuantización (tamaño de archivo, bits por peso, recuento de tensores y coincidencia del mapa de tensores con la cabecera GGUF), no métricas de calidad del modelo.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el fichero ocupa 8,42 GB (7,84 GiB); a esto hay que sumar el KV cache y el overhead de ejecucion. Una GPU de 12 GB de VRAM deberia alojar el modelo completo con contexto moderado; con contextos muy grandes (hacia 262K tokens) puede ser necesario offload parcial a RAM.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4070/4080, RTX 4090; en el entorno cloud, cualquier GPU con 16 GB o mas (por ejemplo A10, A100).
-- Consumer GPUs: cabe en GPUs de 12 GB para inferencia con contexto razonable; en GPUs de 8 GB sera necesario offload parcial de capas a CPU.
-- Despliegue: llama.cpp (version b12017 o posterior para MTP con `--spec-type draft-mtp`); compatibilidad con Ollama y LM Studio es plausible al ser GGUF estandar, aunque no esta documentada explicitamente.
-- Latencia y throughput: no disponible. La activacion de ~3B parametros por token y el MTP sugieren buen throughput, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente 8,42 GB solo para los pesos del modelo principal; hay que sumar el proyector de visión (610,7 MB en Q8_0 o el equivalente F16) y la caché KV, que con 262.144 tokens de contexto puede crecer de forma significativa.
+- GPU recomendadas: no se especifican modelos concretos en la información disponible. Por tamaño de pesos, una GPU con 12 GB o más permite cargar el modelo principal; para contexto largo conviene 16-24 GB.
+- Cabe en GPU de consumo: sí, en tarjetas con al menos 12 GB de VRAM para el modelo principal; el autor indica que V-Agent marca los archivos que "caben en GPU".
+- Opciones de despliegue: llama.cpp (CUDA, Vulkan o CPU) y el agente V-Agent; el bloque MTP requiere llama.cpp b12017 o superior con `--spec-type draft-mtp`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Groot-19B-A3B-261023 APEX-I MiniPlus V2.1 (cuantizado) | ~19B | ~3B | 262.144 | Apache-2.0 | GGUF |
-| Qwen3-30B-A3B | 30B | 3B | 32.768 (128K con YaRN) | Apache-2.0 | safetensors, GGUF |
-| DeepSeek-V2-Lite | 16B | 2,4B | 32.768 | Modelo propio (restricciones comerciales) | safetensors, GGUF |
-
-Comparado con Qwen3-30B-A3B, Groot ofrece un tamaño de fichero menor en cuantizacion y un contexto nativo mucho mayor gracias a sus capas SSM, pero carece del ecosistema y de la validacion de benchmarks de Qwen. Frente a DeepSeek-V2-Lite, Groot tiene licencia Apache-2.0 sin restricciones comerciales y arquitectura hibrida mas eficiente en contexto largo. No hay datos de rendimiento publicados que permitan comparar calidad de salida.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (MoE multimodal de ~19B con contexto de 262K) ni datos de rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- La calidad de la vision no fue reevaluada tras la cuantizacion de los proyectores mmproj; para maxima fidelidad de imagen conviene usar el proyector F16.
-- La cuantizacion media de 3,55 bits por peso (con expertos en Q3_K/IQ3_XXS) puede degradar la calidad respecto al modelo base en FP16, especialmente en tareas de razonamiento fino; no hay evaluaciones cuantitativas publicadas.
-- No hay benchmarks publicados ni del modelo base ni de esta cuantizacion en la informacion disponible, por lo que su calidad relativa es desconocida.
-- Idiomas soportados, soporte de tool calling y capacidades de agente no estan documentados.
-- Es una cuantizacion comunitaria de un tercero (IsValorum), no oficial de GrootTeam; los problemas de compatibilidad deben reportarse al cuantizador.
-- La licencia Apache-2.0 del modelo base y de la cuantizacion permite uso comercial sin restricciones destacables.
-- El uso del MTP requiere llama.cpp b12017 o posterior; versiones anteriores no podran aprovechar la decodificacion especulativa.
-- Siendo un modelo hibrido con componentes SSM, la compatibilidad con runtimes distintos de llama.cpp (vLLM, TGI) no esta documentada y probablemente sea limitada.
+- La cuantización a 3,5472 bits por peso introduce pérdida de precisión; el autor mantiene en F32 los tensores SSM y de normalización para mitigarla, pero no se ha re-evaluado la calidad tras el proceso.
+- La calidad de visión no fue re-evaluada después de la cuantización, según indica la propia model card.
+- No hay información sobre sesgos, idiomas soportados ni comportamiento en dominios sensibles.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan evaluaciones de fidelidad.
+- El contexto de 262.144 tokens exige memoria adicional para la caché KV; en GPUs de 12 GB el contexto práctico será mucho menor.
+- El bloque MTP solo funciona con versiones recientes de llama.cpp (b12017 o superior); versiones anteriores ignorarán la decodificación especulativa.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base y los proyectores deben verificarse por separado en sus repositorios de origen.
+- La cuantización fue financiada y calculada de forma independiente por el autor; no hay validación externa publicada de la receta MiniPlus V2.1.
 
 ## Enlaces
 
-- Ficha de la cuantizacion: https://huggingface.co/IsValorum/Groot-19B-A3B-261023-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Groot-19B-A3B-261023-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
-- Soporte del cuantizador (Ko-fi): https://ko-fi.com/isvalorum
+- Agente V-Agent (GitHub): https://github.com/IsValorum/V-Agent
+- Descargas de V-Agent: https://github.com/IsValorum/V-Agent/releases/latest
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

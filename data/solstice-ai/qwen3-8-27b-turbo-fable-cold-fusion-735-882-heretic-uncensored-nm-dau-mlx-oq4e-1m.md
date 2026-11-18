@@ -2,94 +2,110 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e-1M** es una cuantización MLX de 4 bits mixta (oQ4e-mtp) desarrollada por **Solstice-AI** sobre el modelo base **DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU**, que a su vez deriva del modelo **Qwen3.8-27B** de Alibaba. Está diseñado específicamente para ejecutarse en hardware Apple Silicon con aceleración Metal, aprovechando la memoria unificada para ofrecer una inferencia rápida y eficiente en equipos con 16 GB o 24 GB de RAM.
+Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e-1M es la release de servicio en precisión mixta para Apple Silicon del modelo base de DavidAU, un merge de la familia Qwen 3.8 de 27B orientado a razonamiento, código y contextos ultralargos. Solstice-AI se encarga de la cuantización downstream, del escalado YaRN hasta 1.048.576 tokens y del empaquetado para MLX. El checkpoint pesa 17,0 GB y está pensado para ejecutarse de forma nativa en MacBooks de 16 GB y 24 GB de memoria unificada mediante el runtime Anvil o MLX-LM.
 
-La cuantización oQ4e-mtp reduce el tamaño del modelo a 17,0 GB (frente a los 54,0 GB del BF16 original) y consigue una velocidad de generación 2,20 veces superior a la línea base, gracias a la incorporación de cabezas de predicción multi-token (MTP) para decodificación especulativa. El modelo mantiene un contexto de hasta 1.000.000 de tokens y conserva capacidades multimodales de visión, lo que lo hace adecuado para tareas de razonamiento visual, codificación agéntica y procesamiento de documentos largos. Su licencia Apache 2.0 permite uso comercial sin restricciones.
+El modelo parte de una arquitectura híbrida Qwen 3.8 con atención lineal GDN en el 75 % de las capas y GQA global en el 25 % restante, lo que reduce la complejidad de memoria del contexto largo. Incluye además una cabeza de predicción multi-token (MTP) para decodificación especulativa y ha sido sometido a un proceso de abliteration (Project Heretic) que elimina los vectores de rechazo, de ahí la etiqueta "uncensored". La licencia declarada es Apache 2.0 y los idiomas soportados son inglés y chino.
+
+Su relevancia actual reside en dos factores: por un lado, ofrece contexto de un millón de tokens en hardware de consumo Apple, algo poco habitual en modelos de 27B; por otro, el autor publica una comparativa en la que el modelo supera a Claude Opus 4.6 Max en 9 de 9 disciplinas evaluadas bajo el harness de Claude Code. Conviene tratar esas cifras con cautela, ya que proceden de la propia model card y no de una evaluación independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con atencion hibrida (lineal en 48 de 64 capas) y torre de vision |
-| Parametros totales | 27.781.427.952 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 1.000.000 tokens (contexto nativo del modelo base: 262.000 tokens, extensible) |
-| Tipos de cuantizacion | oQ4e-mtp (4-bit mixto), oQ6e-mtp (6-bit), oQ8e-mtp (8-bit), BF16 (sin cuantizar) |
-| Idiomas soportados | Ingles (en), Chino (zh) |
+| Arquitectura | Transformer híbrido Qwen 3.8: 75 % capas de atención lineal GDN (Gated Delta Recurrent Network) y 25 % GQA global |
+| Parametros totales | 27.781.427.952 (27,78 B) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | 1.048.576 tokens (1 M) mediante YaRN con factor 4.0 sobre 262.144 tokens originales |
+| Tipos de cuantizacion | MLX oQ4e (4 bits mixto calibrado con importance matrix); el modelo base admite otras cuantizaciones no detalladas |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (MLX), tambien disponible en GGUF en otras variantes |
+| Formato de pesos | safetensors en formato MLX (librería mlx); repo de 17,0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base **Qwen3.8-27B** es un transformer denso de 27.000 millones de parametros con una arquitectura hibrida de atencion: 48 de sus 64 capas utilizan atencion lineal, mientras que las restantes emplean atencion por softmax completa. Incluye una torre de vision integrada que permite procesamiento multimodal de imagenes y video, y un cabezal de prediccion multi-token (MTP) que actua como modelo de draft para decodificacion especulativa. El contexto nativo es de 262.000 tokens, ampliable hasta 1.000.000 mediante tecnicas de extension.
+La arquitectura es un transformer híbrido de la familia Qwen 3.8. El 75 % de las capas emplea atención lineal GDN, con complejidad de memoria O(1) respecto a la longitud de secuencia, mientras que el 25 % restante usa atención global con Grouped-Query Attention. Esta combinación busca mantener calidad de recuperación en contexto largo sin el coste cuadrático de un transformer denso convencional. El contexto se extiende a 1.048.576 tokens mediante escalado YaRN (factor 4.0, `beta_fast` 32.0, `beta_slow` 1.0, `attention_factor` 1.0) sobre una ventana original de 262.144 tokens.
 
-La variante **Cold Fusion** (desarrollada por DavidAU) reduce significativamente los tokens de pensamiento en los modos de razonamiento, llegando a usar entre 1/5 y 1/2 de los tokens que emplea el Qwen3.8-27B estandar, lo que mejora la velocidad y la eficiencia sin sacrificar precision. El proceso de cuantizacion oQ4e-mtp de Solstice-AI aplica precision mixta por capas, manteniendo las capas criticas en mayor precision y cuantizando el resto a 4 bits, lo que minimiza la perdida de calidad. No se han publicado detalles completos sobre el dataset de entrenamiento ni el proceso de alineacion (RLHF/DPO) del modelo base.
+El modelo base es un merge de pesos de DavidAU denominado Cold Fusion, que aplica una técnica propia llamada GAIN (Guided Activation Interleaved Normalization) para combinar checkpoints de razonamiento sin degradación. Sobre esa base se aplicó Project Heretic, un proceso de abliteration que elimina los vectores de rechazo del alignment. La cuantización oQ4e de Solstice-AI es no uniforme: usa un informe de importance matrix (`oq_imatrix_report.json`) para mantener cabezas de atención y proyecciones de router en mayor profundidad de bits, preservando así el rendimiento en ARC-C (719 en 4 bits frente a 735 en 8 bits). Se integra además una cabeza MTP de doble flujo para decodificación especulativa, con una aceleración declarada de 1,72x a 2,20x en Apple Silicon. No se especifican en la información disponible el volumen de tokens de entrenamiento ni la composición del dataset.
 
 ## Capacidades
 
-- **Generacion de texto y razonamiento**: soporta modos de pensamiento configurable (thinking mode) con presupuesto de tokens ajustable.
-- **Codificacion**: genera y depura codigo en multiples lenguajes, con soporte para tool calling y agentic coding.
-- **Vision multimodal**: procesa imagenes y video, permite razonamiento visual, analisis de UI y comprension de documentos escaneados.
-- **Contexto largo**: maneja hasta 1.000.000 de tokens, adecuado para analisis de libros completos, repositorios de codigo o conversaciones extensas.
-- **Decodificacion especulativa MTP**: genera multiples tokens por pasada, reduciendo la latencia en hardware Apple Silicon.
-- **Multilingue**: fluido en ingles y chino, con capacidades limitadas en otros idiomas.
-- **Tool calling y agentes**: integrable en pipelines de agentes multi-paso, con soporte para llamadas a funciones y APIs externas.
+- Generación de texto y razonamiento multi-paso con cadena de pensamiento (CoT) explícita.
+- Generación y depuración de código, con soporte declarado para tareas de ingeniería de software agéntica (SWE-bench Pro, LiveCodeBench, QwenSWEBench).
+- Control de sistemas operativos y automatización de escritorio y móvil (OSWorld-Verified, AndroidWorld).
+- Seguimiento de restricciones complejas en instrucciones (IFBench) y flujos de trabajo multiarchivo de largo horizonte (CoWorkBench).
+- Procesamiento de imagen y texto: el pipeline declarado es `image-text-to-text`, aunque la model card no detalla la arquitectura de visión.
+- Contexto ultralargo de hasta 1.048.576 tokens para recuperación y razonamiento sobre documentos extensos.
+- Decodificación especulativa mediante cabeza MTP integrada.
+- Multilingüe limitado a inglés y chino.
+- Modo sin censura (abliterated): no aplica rechazos por política de contenido.
+- No se documenta en la información disponible soporte explícito de tool calling ni de function calling.
 
 ## Casos de uso
 
-- **Asistente de codigo en entornos Apple Silicon**: desarrolladores que trabajan en Mac pueden ejecutar el modelo localmente con 16 GB de RAM, usandolo para autocompletado, revision de codigo y generacion de tests dentro de IDEs como VS Code o Xcode, gracias a su velocidad 2,2x y su soporte de tool calling.
-- **Analisis de documentos largos**: con su contexto de 1M tokens, el modelo puede resumir informes anuales, expedientes legales o libros completos en una sola pasada, sin necesidad de dividir el texto en fragmentos.
-- **Razonamiento visual sobre capturas de pantalla**: la vision multimodal permite al modelo interpretar interfaces de usuario, diagramas o graficos, util para automatizar pruebas de UI o generar descripciones accesibles.
-- **Agente conversacional para atencion al cliente**: empresas con infraestructura en Mac pueden desplegar un chatbot multilingue (en/zh) que mantiene conversaciones de larga duracion y consulta bases de conocimiento externas mediante function calling.
-- **Generacion de documentacion tecnica**: el modelo puede redactar guias, manuales y comentarios de codigo a partir de repositorios completos, aprovechando su capacidad de razonamiento y su ventana de contexto amplia.
-- **Prototipado rapido de aplicaciones de IA**: investigadores y estudiantes pueden experimentar con un modelo de 27B en hardware de consumo (Mac mini, MacBook Pro) sin necesidad de GPUs dedicadas, gracias a la cuantizacion oQ4e y al runtime Anvil.
+- Análisis de repositorios completos: con 1 M de tokens de contexto, el modelo puede ingerir un monorepo mediano y responder preguntas de arquitectura, dependencias o impacto de cambios sin trocear el código en fragmentos.
+- Automatización de ingeniería de software: integrado en un agente que lee issues, localiza el fichero afectado, aplica el parche y ejecuta los tests, aprovechando sus resultados declarados en SWE-bench Pro y QwenSWEBench.
+- Auditoría de seguridad y análisis de malware: la abliteration elimina los rechazos, lo que permite analizar payloads, técnicas de evasión y código ofensivo sin bloqueos del modelo; útil en equipos de red team y respuesta a incidentes.
+- Asistencia legal o documental de gran volumen: procesamiento de contratos, expedientes o transcripciones de cientos de miles de tokens en una sola pasada, con preguntas de seguimiento sobre el mismo contexto.
+- Automatización de escritorio y RPA: control de aplicaciones mediante agentes que interpretan la pantalla y ejecutan acciones, respaldado por los resultados declarados en OSWorld-Verified y AndroidWorld.
+- Inferencia local en portátil: despliegue en un MacBook de 16 GB o 24 GB para desarrollo offline, prototipado y tareas de razonamiento sin depender de APIs externas ni enviar datos a terceros.
+- Generación de código en pipelines de CI/CD: revisión automática de pull requests y generación de tests sobre diffs largos, siempre que se valide el soporte real de tool calling en el runtime elegido.
 
 ## Benchmarks y rendimiento
 
-La model card del autor proporciona los siguientes resultados empiricos para distintas precisiones (datos del autor, no verificados de forma independiente):
+Los datos proceden exclusivamente de la model card del autor; no se han verificado de forma independiente.
 
-| Precision | Tamano | MMLU | MMLU_Pro | HumanEval | Velocidad relativa | Hardware minimo |
-|---|---|---|---|---|---|---|
-| BF16 (sin cuantizar) | 54,0 GB | 87,3% | 68,7% | 89,0% | 1,00x | 64 GB+ Mac Studio / A100 |
-| oQ8e-mtp (8-bit) | 30,0 GB | 87,0% | 68,7% | 89,6% | 1,45x | 36-48 GB Mac / A10G |
-| oQ6e-mtp (6-bit) | 23,7 GB | 86,0% | 70,0% | 88,4% | 1,72x | 32 GB+ memoria unificada |
-| **oQ4e-mtp (4-bit)** | **17,0 GB** | **86,3%** | **66,3%** | **86,6%** | **2,20x** | **16/24 GB Mac (M-series)** |
+| Suite | Enfoque | Modelo (Solstice-AI x DavidAU) | Claude Opus 4.6 Max | Margen |
+|---|---|---|---|---|
+| SWE-bench Pro | Ingeniería de software agéntica | 61,7 % | 53,4 % | +8,3 % |
+| LiveCodeBench v6 | Resolución de problemas en tiempo real | 90,3 % | 88,8 % | +1,5 % |
+| QwenSWEBench | Depuración de repositorio completo | 79,0 % | 63,8 % | +15,2 % |
+| OSWorld-Verified | Control de SO | 84,3 % | 72,7 % | +11,6 % |
+| AndroidWorld | Autonomía en SO móvil | 81,9 % | 62,0 % | +19,9 % |
+| IFBench | Seguimiento de restricciones | 79,5 % | 62,5 % | +17,0 % |
+| CoWorkBench | Flujos multiarchivo de largo horizonte | 70,7 % | 68,2 % | +2,5 % |
+| ARC-C (Challenge) | Abstracción científica | 735 (8 bits) / 719 (4 bits) | ~710–720 | Tier frontier |
+| ARC-E (Easy) | Razonamiento de sentido común | 882 | ~870 | Por encima del frontier cerrado |
 
-No se han publicado resultados de benchmarks en la informacion disponible para comparar directamente con otros modelos de la misma categoria.
+Condiciones declaradas: harness oficial de Claude Code, temperatura 1.0, top_p 0.95, evaluado en límites de contexto de 256k y 1 M tokens.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: 15,2 GB de memoria unificada para la version oQ4e-mtp (cabe en Macs de 16 GB y 24 GB).
-- **GPU recomendadas**: Apple Silicon (M1, M2, M3, M4) con 16 GB o mas de memoria unificada. Para la version BF16 se requieren 64 GB+ o una GPU NVIDIA A100.
-- **Compatibilidad con GPU de consumo**: no esta pensado para GPUs NVIDIA convencionales; el formato MLX esta optimizado para Metal en Apple Silicon. Existen variantes GGUF para otros entornos, pero no se han verificado en este repo.
-- **Opciones de despliegue**: runtime **Anvil** (binario unico, con soporte OpenAI-compatible) y **MLX-LM** (libreria Python con servidor integrado). Tambien se puede usar con vLLM o TGI si se convierte a otros formatos, aunque no es el flujo recomendado.
-- **Latencia y throughput**: la velocidad de generacion es 2,20x respecto al BF16 en el mismo hardware, gracias a la decodificacion especulativa MTP. No se proporcionan cifras absolutas de tokens/segundo.
+- VRAM/RAM unificada: 17,0 GB para el checkpoint oQ4e completo; requiere al menos 18–20 GB efectivos contando overhead del runtime y caché KV.
+- Cabe en MacBook de 16 GB (con presión de memoria) y de 24 GB (holgado); el autor lo posiciona explícitamente para ambos.
+- GPU recomendadas: Apple Silicon (M-series) con memoria unificada; no está pensado para CUDA.
+- No es compatible de forma nativa con GPUs NVIDIA (A100, H100, RTX 4090) sin reconversión previa del formato MLX a otro formato, algo no documentado en la información disponible.
+- Despliegue: runtime Anvil (Metal, recomendado por el autor) y MLX-LM.
+- Aceleración: cabeza MTP con speedup declarado de 1,72x–2,20x en Apple Silicon.
+- Latencia y throughput absolutos: no disponibles. El contexto de 1 M tokens con atención lineal en el 75 % de capas reduce el coste de memoria, pero el tiempo de prefill sobre secuencias de esa longitud no se documenta.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato/hardware | Notas |
 |---|---|---|---|---|---|
-| **Qwen3.8-27B (original)** | 27B | 262K (ext. 1M) | Apache 2.0 | BF16, GGUF, etc. | Modelo base sin cuantizar, requiere 64 GB+ para inferencia local |
-| **Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit** | 27B | 1M | Apache 2.0 | MLX 6-bit | Variante Cold Fusion con cuantizacion de 6 bits, menor velocidad que oQ4e |
-| **Solstice-AI oQ4e-mtp (este modelo)** | 27B | 1M | Apache 2.0 | MLX 4-bit mixto | Optimizado para Apple Silicon, 2,2x velocidad, 15,2 GB de memoria |
+| Qwen3.8-27B TURBO Cold Fusion (este) | 27,78 B | 1.048.576 | Apache 2.0 | MLX oQ4e, Apple Silicon | Abliterated, MTP, 17 GB |
+| Modelo base DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion | 27,78 B (presumible) | no disponible | Apache 2.0 | safetensors sin cuantizar | Sin cuantización MLX ni escalado YaRN a 1 M |
+| Claude Opus 4.6 Max | no disponible | no disponible | propietaria | API | Referencia de comparación del autor; superado en 9/9 según la model card |
+| Otros Qwen 3.8 de ~27B en MLX | no disponible | no disponible | Apache 2.0 | MLX | No se dispone de datos concretos en la información proporcionada |
 
-La comparativa se basa en los datos publicados por el autor y en la informacion del modelo base. No se dispone de datos de rendimiento independientes para otros modelos de 27B como Llama 3.1 27B o Gemma 2 27B en este contexto.
+La comparación con alternativas de código abierto del mismo tamaño no puede completarse con rigor porque la información disponible no incluye sus especificaciones. La única referencia cuantitativa es Claude Opus 4.6 Max, un modelo propietario de otra categoría de despliegue.
 
 ## Limitaciones y advertencias
 
-- **Sesgos y alucinaciones**: al ser un modelo derivado de Qwen3.8-27B, puede presentar sesgos presentes en los datos de entrenamiento originales. El nombre "Uncensored" sugiere que no se aplicaron filtros de seguridad adicionales, lo que aumenta el riesgo de generar contenido inapropiado o falso.
-- **Riesgo de alucinacion**: en tareas de razonamiento complejo o con contexto muy largo, el modelo puede inventar hechos o citas. Se recomienda validar las salidas en entornos de produccion.
-- **Limitaciones de idioma**: solo soporta ingles y chino de forma nativa; otros idiomas pueden producir resultados de menor calidad.
-- **Restricciones de licencia**: la licencia Apache 2.0 permite uso comercial sin restricciones, pero el modelo base puede tener condiciones adicionales (no se han verificado).
-- **Dependencia de hardware**: la cuantizacion oQ4e-mtp esta optimizada exclusivamente para Apple Silicon; en otros hardware (NVIDIA, AMD) no funcionara sin conversion previa.
-- **Perdida de precision**: la cuantizacion a 4 bits introduce una degradacion de aproximadamente 1 punto porcentual en MMLU y 2,4 puntos en HumanEval respecto al BF16, segun los datos del autor.
-- **Sin garantias de produccion**: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad. Se recomienda realizar pruebas exhaustivas antes de usarlo en entornos criticos.
+- Los benchmarks son autoinformados por el autor y no han sido replicados de forma independiente; los márgenes frente a Claude Opus 4.6 Max deben tomarse como indicativos.
+- La abliteration elimina los rechazos de seguridad: el modelo puede generar contenido dañino, código malicioso o instrucciones peligrosas sin filtro. No es apto para aplicaciones de cara al público sin una capa de moderación externa.
+- Riesgo de alucinación inherente a los modelos de 27B, especialmente en tareas de recuperación factual sobre contextos de un millón de tokens, donde la precisión del recall a distancias extremas no está documentada.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está evaluado y previsiblemente será inferior.
+- El contexto efectivo de 1 M tokens depende de que el runtime aplique correctamente el escalado YaRN; una configuración incorrecta degrada la calidad de forma silenciosa.
+- Formato MLX exclusivo: requiere conversión para su uso en CUDA o en servidores convencionales, con posible pérdida de la calibración oQ4e.
+- El nombre del modelo acumula múltiples merges y modificaciones (Cold Fusion, GAIN, Heretic, TURBO); la trazabilidad exacta del linaje de pesos más allá del base_model declarado no está documentada.
+- Licencia Apache 2.0 permite uso comercial, pero el usuario asume toda la responsabilidad legal sobre las salidas de un modelo sin alignment.
+- El pipeline `image-text-to-text` sugiere capacidades multimodales, pero la model card no describe el encoder de visión ni benchmarks de imagen; no debe asumirse un rendimiento visual equiparable al textual.
 
 ## Enlaces
 
-- [Hugging Face - Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e-1M](https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e-1M)
-- [Modelo base - DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU)
-- [Qwen3.8-27B original - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [Runtime Anvil - GitHub](https://github.com/Solstice-Labs/anvil)
-- [Sitio web de Solstice-AI](https://solstice-ai.co)
-- [Benchmark de la variante 6-bit en omlx.ai](https://omlx.ai/benchmarks/performance/e20zx4qx)
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e-1M
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Runtime Anvil: https://github.com/Solstice-Labs/anvil
+- Perfil del autor de la cuantización: https://huggingface.co/Solstice-AI
+- Perfil del autor del modelo base: https://huggingface.co/DavidAU
+- Banner del proyecto: https://cdn-uploads.huggingface.co/production/uploads/67c2e844e0921a5410eec10a/Y5M42dCag2f7Fc6fDtV0Z.jpeg

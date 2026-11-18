@@ -2,93 +2,91 @@
 
 ## Resumen
 
-El modelo DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF es un ajuste fino (fine-tune) de la comunidad sobre el modelo base Qwen/Qwen3-Flash-Next, publicado por el usuario DavidAU en Hugging Face. Se distribuye exclusivamente en formato GGUF, lo que lo orienta a inferencia local mediante llama.cpp, Ollama, LM Studio o koboldcpp, y no a despliegues con GPUs en datacenter. El autor lo presenta como un modelo con 27 modos de razonamiento, 27 modos de instruccion y 15 "AI Constructs" (mas 5 "Super AI Constructs"), etiquetas que describen perfiles de comportamiento preconfigurados mas que cambios arquitectonicos.
+Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF es una cuantización GGUF publicada por DavidAU sobre el modelo base ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF, a su vez derivado de la familia Qwen 3.8. Se trata de un modelo de arquitectura MoE con visión (pipeline image-text-to-text) que, según los datos reales de safetensors, cuenta con 176.943.899.520 parámetros totales (aproximadamente 177 mil millones), aunque la model card del autor lo describe de forma redundante como "120B" y "180B" en distintos puntos. El repositorio ocupa 84,5 GB en formato GGUF con cuantización mixta.
 
-El problema que pretende resolver es el de un asistente local capaz de alternar entre estilos de respuesta muy distintos (razonamiento profundo, profesor, agente, programador, lluvia de ideas, negocio) sin necesidad de cambiar de modelo, algo habitual en los fine-tunes orientados a rol y productividad de la escena GGUF. La licencia declarada es Apache 2.0, coherente con la del modelo base de la familia Qwen, y el soporte de idiomas cubre 16 lenguas, incluido el castellano.
+El valor diferencial de esta ficha no está en el modelo base, sino en la capa de "Turbo Brilliance" que el autor superpone: 27 modos de razonamiento, 27 modos instruct y 9 modos "xhigh", más 15 "AI Constructs" (perfiles de comportamiento preinyectados de 2.000 a 4.000 tokens cada uno) que se activan mediante palabras clave en el prompt, la API o configuraciones de vLLM. El autor afirma que estos constructos reducen el consumo de tokens de razonamiento y precargan instrucciones a más de 1.000 tokens por segundo.
 
-La relevancia actual es limitada y muy especifica: el modelo tiene 0 descargas y 9 likes en el momento de redactar esta ficha, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo. No se ha publicado en la informacion disponible ni el numero de parametros, ni la longitud de contexto, ni los tipos exactos de cuantizacion, ni resultados de benchmarks, por lo que su evaluacion practica exige pruebas propias.
+Es relevante ahora por dos motivos: primero, porque demuestra una práctica creciente de fine-tuning comunitario sobre modelos MoE multimodales de gran tamaño con cuantizaciones mixtas (GSQ-RCO de ISTA-DASLab) que buscan preservar el rendimiento BF16 en IQ3_S; segundo, porque su popularidad (más de 300.000 descargas) evidencia demanda de despliegues locales de modelos de ~180B en hardware consumer mediante offload. No obstante, buena parte de las afirmaciones de rendimiento de la model card no están respaldadas por benchmarks publicados.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de Qwen/Qwen3-Flash-Next; no se especifica en la informacion proporcionada) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | MoE (mixture of experts), multimodal image-text-to-text, transformer con atención estándar (no se especifica híbrida) |
+| Parametros totales | 176.943.899.520 (según safetensors); la model card menciona "120B" y "180B" de forma inconsistente |
+| Parametros activos | 10 expertos activados por token de un total de 512 expertos (según model card) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; tipos concretos (Q4_K_M, Q5_K_M, Q8_0, etc.) no disponibles en la informacion proporcionada |
-| Idiomas soportados | arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, castellano, tailandes, vietnamita |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (acceso restringido, requiere aceptar condiciones en Hugging Face) |
-
-Datos adicionales declarados en la ficha de Hugging Face, sin traduccion tecnica confirmada: 27 modos de razonamiento, 27 modos de instruccion, 15 AI Constructs, 5 Super AI Constructs, etiqueta "Turbo-Brilliance" y 9 modos de razonamiento Xhigh. El identificador incluye ademas las siglas GSQ, RCO y MTP, cuyo significado no se documenta en la informacion disponible.
+| Tipos de cuantizacion | GGUF con cuantización mixta (GSQ-RCO); se menciona explícitamente IQ3_S con rendimiento equivalente a BF16 según el autor; el resto de niveles no detallados |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (16 idiomas) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo de 84,5 GB); existen safetensors del modelo base con los parámetros reales |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento. El modelo es un fine-tune del checkpoint Qwen/Qwen3-Flash-Next declarado como `base_model:finetune`, y se distribuye unicamente en GGUF, lo que implica que los pesos originales en precision completa (safetensors) no se publican en este repositorio. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado.
+La arquitectura subyacente es un transformer MoE multimodal con 512 expertos y 10 activos por token, según la model card. El pipeline declarado es image-text-to-text, lo que confirma capacidad de entrada de imágenes junto con texto. El modelo base es ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF, una cuantización GGUF del Qwen3.8-Flash-Next original producida por ISTA-DASLab con su técnica GSQ-RCO (quantization tuning que, según el autor, supera a QAT y mantiene rendimiento BF16 en IQ3_S). DavidAU añade sobre esa base la capa "Turbo Brilliance" y los AI Constructs.
 
-La innovacion que el autor destaca es de tipo funcional y no arquitectonica: el empaquetado de multiples "modos" (razonamiento, instruccion y constructos de comportamiento) dentro del mismo conjunto de pesos, presumiblemente activados mediante plantillas de prompt o system prompts especificos. Las siglas MTP del nombre sugieren una posible relacion con multi-token prediction, pero no hay confirmacion en la informacion disponible, por lo que debe tratarse como una hipotesis no verificada.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO o cualquier etapa de alineación posterior en el modelo base. La model card tampoco detalla el proceso de entrenamiento de los AI Constructs más allá de afirmar que fueron construidos con "precisión tuned AIs" y que el sistema se usó recursivamente (Alpha para construir Beta, Beta para construir el motor de constructos). La innovación técnica declarada es la inyección de instrucciones de sistema de 2.000 a 4.000 tokens en la fase previa al razonamiento, con el objetivo de reducir tokens de pensamiento y mejorar la calidad de respuesta; no hay evidencia independiente de estos beneficios.
 
 ## Capacidades
 
-- Generacion de texto conversacional en 16 idiomas, con castellano incluido.
-- Razonamiento multi-paso mediante modos dedicados, incluidos 9 modos etiquetados como "Xhigh".
-- Modos de instruccion diferenciados: el autor declara 27 variantes de comportamiento instructivo.
-- Constructos de comportamiento predefinidos: Brainstorm, Brainstorm Business, Universal Teacher, Agent y Coder, entre otros.
-- Generacion y asistencia en codigo, a traves del constructo "Coder AI Construct".
-- Soporte declarado para flujos de tipo agente mediante el "Agent AI Construct"; no se especifica si existe soporte nativo de tool calling o function calling con esquema JSON.
-- Capacidades de lluvia de ideas y de negocio mediante constructos especificos.
-- No hay indicios de capacidades multimodales (vision, audio) en las etiquetas del repositorio.
+- Generación de texto y razonamiento multi-step, con modos de razonamiento conmutables (27 modos estándar, 9 "xhigh" y combinaciones).
+- Modo instruct puro sin tokens de razonamiento (0 thinking tokens según el autor).
+- Procesamiento de imágenes junto con texto (image-text-to-text), incluyendo descripción, análisis y respuesta sobre contenido visual.
+- 15 AI Constructs predefinidos: Brainstorm, Brainstorm Business, Universal Teacher, Agent, Coder y otros, cada uno con un perfil de comportamiento y habilidades inyectado.
+- Soporte multilingüe en 16 idiomas (árabe, chino, inglés, francés, alemán, hindi, indonesio, italiano, japonés, coreano, polaco, portugués, ruso, español, tailandés y vietnamita).
+- Compatibilidad con endpoints y con el protocolo de palabras clave de vLLM para cambiar de modo en tiempo de ejecución.
+- No se documenta explícitamente soporte de tool calling o function calling en la información disponible; la etiqueta "Agent AI Construct" sugiere uso agéntico, pero sin especificación técnica.
+- Capacidad de ejecución con offload parcial en GPUs de 12 GB en adelante, según el autor.
 
 ## Casos de uso
 
-- Asistente local de proposito general en escritorio: ejecutado con Ollama o LM Studio sobre una GPU de consumo, sirve como chat privado sin enviar datos a la nube, aprovechando los modos de instruccion para alternar entre respuestas concisas y explicaciones extensas.
-- Generacion y revision de codigo en local: el constructo "Coder" permite usarlo como asistente de programacion dentro de un IDE con backend compatible con GGUF, util en entornos con restricciones de confidencialidad del codigo.
-- Docencia y explicacion de conceptos: el "Universal Teacher AI Construct" esta pensado para reformular material tecnico a distintos niveles de detalle, adecuado para generar apuntes o explicaciones graduadas.
-- Lluvia de ideas de producto y negocio: los constructos Brainstorm y Brainstorm Business permiten sesiones divergentes de ideacion y su posterior conversion en listas accionables.
-- Prototipado de agentes: el "Agent AI Construct" permite probar bucles de decision multi-paso en local antes de migrar a un modelo mayor con soporte formal de tool calling.
-- Traduccion y atencion multilingue: con 16 idiomas declarados, puede emplearse para traduccion aproximada y para atender consultas de usuarios en idiomas distintos del ingles, con revision humana en produccion.
-- Generacion de documentacion tecnica: a partir de fragmentos de codigo o especificaciones, producir borradores de README, docstrings o guias de uso.
-- Experimentacion en investigacion sobre prompting: la existencia de 27 modos de razonamiento lo convierte en un banco de pruebas para comparar plantillas de razonamiento sobre un mismo modelo base.
+- Asistencia técnica y atención al cliente multilingüe: el modelo cubre 16 idiomas y puede mantener conversaciones multi-turno; los modos instruct permiten respuestas inmediatas sin coste de razonamiento en consultas simples, reservando los modos de razonamiento para casos complejos.
+- Generación y revisión de código en pipelines de CI/CD: el AI Construct "Coder" inyecta un perfil especializado en programación; la licencia Apache 2.0 permite integrarlo en herramientas comerciales sin restricciones de atribución adicionales.
+- Análisis de documentos con imágenes (facturas, capturas, diagramas): al ser image-text-to-text, puede extraer información de capturas y combinarla con texto para resúmenes y validaciones.
+- Despliegue local en estaciones de trabajo con una o dos GPUs: el autor reporta 46 GB en 2 GPUs con offload a RAM a 17 t/s, y 60-90 t/s con offload completo a GPU, lo que permite prototipado en hardware de gama alta consumer.
+- Generación de planes de negocio y documentos estratégicos: el AI Construct "Brainstorm Business" está diseñado para este escenario, con inyección de contexto de 2.000 a 4.000 tokens que orienta el tono y la estructura.
+- Docencia y explicación adaptada: el AI Construct "Universal Teacher" permite generar explicaciones con nivel ajustable, útil en plataformas educativas que necesitan respuestas pedagógicas consistentes.
+- Investigación sobre prompting y control de razonamiento: los 27+27+9 modos permiten experimentar con distintos niveles de esfuerzo cognitivo sin cambiar de modelo, útil para estudiar el trade-off entre tokens de pensamiento y calidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye únicamente cifras de velocidad declaradas por el autor (46 GB en 2 GPUs con offload a RAM: 17 t/s; offload completo a GPU: 60-90 t/s; RTX 6000 de 96 GB: 150 t/s estimados) y la afirmación de que IQ3_S alcanza rendimiento BF16, sin tablas de MMLU, HumanEval, GSM8K ni comparaciones numéricas verificables.
 
 ## Requisitos de hardware
 
-- No es posible dar cifras de VRAM en GB porque no se especifica el numero de parametros ni los tamanos de fichero GGUF publicados. La regla practica para modelos GGUF es que la VRAM necesaria equivale aproximadamente al tamano del fichero de cuantizacion mas entre 1 y 2 GB adicionales para el KV cache y el overhead del runtime en contextos moderados.
-- GPU recomendadas: no disponible. La eleccion depende del tamano de cuantizacion finalmente publicado; en general, las cuantizaciones Q4_K_M de modelos de 7-9B caben en GPUs de 8-12 GB, las de 13-14B en 12-16 GB y las de 30B o superiores requieren 24 GB o mas.
-- Cabe en GPU de consumo: no confirmable sin el dato de parametros. Los formatos GGUF estan disenados precisamente para permitir ejecucion en GPU de consumo y en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier runtime con soporte GGUF. vLLM y TGI no estan pensados para GGUF, por lo que un despliegue en servidor de alto rendimiento requeriria los pesos originales en safetensors, que no se publican en este repositorio.
-- Latencia y throughput: no disponible.
+- VRAM estimada: el repo GGUF ocupa 84,5 GB; la cuantización IQ3_S mencionada por el autor ronda los 46 GB, lo que permite ejecución con offload parcial en configuraciones de 2 GPUs.
+- GPU recomendadas: RTX 6000 (96 GB) para ejecución completa a ~150 t/s estimados; configuraciones multi-GPU (2×24 GB o superior) para IQ3_S con offload a RAM.
+- Cabe en GPU consumer: sí, según el autor, en tarjetas de 12 GB en adelante, aunque con offload a RAM y velocidades reducidas (~17 t/s en el escenario reportado).
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; vLLM para el cambio de modos vía protocolo de palabras clave; endpoints compatibles según la etiqueta del repo.
+- Latencia y throughput: 17 t/s con offload parcial a RAM; 60-90 t/s con offload completo a GPU; ~150 t/s estimados en RTX 6000 de 96 GB. Cifras declaradas por el autor, no verificadas de forma independiente.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de parametros, contexto ni benchmarks para este modelo ni para alternativas de la misma categoria dentro de la informacion proporcionada. La comparativa siguiente es estructural (categoria y disponibilidad), no de rendimiento:
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF | no disponible | no disponible | Apache 2.0 | GGUF, acceso restringido | no disponible |
-| Modelo base Qwen/Qwen3-Flash-Next | no disponible | no disponible | no disponible en la informacion proporcionada | pesos originales | no disponible |
-| Otros fine-tunes GGUF de la comunidad sobre la misma familia | no disponible | no disponible | variable | repositorios publicos | no disponible |
+| Qwen3.8-Flash-Next-Turbo-Brilliance (este) | ~177B totales, 10/512 expertos activos | no disponible | Apache 2.0 | GGUF | Capa Turbo Brilliance y 15 AI Constructs añadidos por DavidAU |
+| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF (base) | ~177B totales | no disponible | Apache 2.0 | GGUF | Cuantización GSQ-RCO sin la capa de constructos ni modos |
+| Qwen3.8-Flash-Next original | ~177B totales | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar; referencia de rendimiento BF16 |
+
+No se dispone de datos de benchmarks para establecer comparaciones de rendimiento con alternativas de la misma categoría. La comparación se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de datos tecnicos verificables: sin numero de parametros, contexto ni benchmarks, no es posible estimar rendimiento ni coste de despliegue antes de descargar y probar.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la evaluacion y a la reproducibilidad.
-- Adopcion practicamente nula: 0 descargas y 9 likes en la fecha de creacion de la ficha, por lo que no existe validacion independiente de la comunidad.
-- Las etiquetas de "27 modos de razonamiento", "AI Constructs" y similares son terminologia del autor y no implican capacidades certificadas ni cambios en la arquitectura. Los modos se activan por prompt y su comportamiento puede degradarse fuera de las plantillas previstas.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; no se ha publicado ninguna evaluacion de fidelidad factual para este fine-tune.
-- Riesgo de sobreajuste a estilos conversacionales y de rol propios del fine-tune, lo que puede reducir la precision en tareas tecnicas estrictas frente al modelo base.
-- Limitaciones de contexto e idioma: la ventana de contexto no esta documentada, y aunque se declaran 16 idiomas, no hay datos sobre calidad relativa por idioma; el castellano figura en la lista pero sin evaluacion publicada.
-- Licencia Apache 2.0 declarada, que en principio permite uso comercial, pero se recomienda verificar las condiciones asociadas al acceso gated y la licencia efectiva del modelo base antes de un despliegue en produccion.
-- Idoneidad para produccion no demostrada: se trata de un fine-tune de autor individual, sin soporte, sin versionado estable y sin garantias de mantenimiento.
-- Los resultados de la busqueda web realizada no contienen informacion tecnica sobre este modelo; los enlaces devueltos son contenido no relacionado y han sido descartados.
+- La model card contiene afirmaciones no verificadas (rendimiento BF16 en IQ3_S, reducción extrema de tokens, velocidades de 1.000+ t/s en precarga) sin benchmarks ni metodología publicada; deben tratarse como marketing del autor.
+- Inconsistencia en el tamaño declarado: la model card dice "120B" y "180B" en distintos puntos, mientras que safetensors indica ~177B; conviene verificar antes de dimensionar hardware.
+- No se documenta la longitud de contexto, lo que impide planificar casos de uso con documentos largos o conversaciones extensas.
+- Los AI Constructs inyectan entre 2.000 y 4.000 tokens de sistema por invocación, lo que consume ventana de contexto y puede desplazar instrucciones del usuario si el contexto es limitado.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de factualidad ni de sesgos para esta variante.
+- La licencia Apache 2.0 permite uso comercial, pero las modificaciones de DavidAU y los AI Constructs no cuentan con documentación sobre su proceso de creación, lo que dificulta auditar su comportamiento en producción.
+- El modelo base es una cuantización GGUF de un tercero (ISTA-DASLab); la cadena de responsabilidad sobre el entrenamiento original recae en el modelo Qwen3.8-Flash-Next, del que no se detallan datos de alineación.
+- El soporte de tool calling y uso agéntico no está especificado técnicamente, pese a la etiqueta "Agent AI Construct"; no debe asumirse compatibilidad con protocolos de function calling sin pruebas.
+- El rendimiento en GPUs de 12 GB depende de offload a RAM y puede degradarse notablemente con contextos largos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF
-- Modelo base declarado: https://huggingface.co/Qwen/Qwen3-Flash-Next
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF
+- Modelo base (GGUF): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Perfil del autor: https://huggingface.co/DavidAU
-- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- FAQs del autor: https://huggingface.co/DavidAU/support
+- No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

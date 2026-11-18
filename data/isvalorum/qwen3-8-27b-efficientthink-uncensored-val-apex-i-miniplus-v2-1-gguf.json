@@ -43,7 +43,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 5588,
+  "downloads_30d": 5540,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -63,31 +63,5 @@
   "renamed_to": "IsValorum/Qwen3.8-27B-EfficientThink-VAL-APEX-I-MiniPlus-V3-GGUF",
   "renamed_at": "2026-11-11T02:58:27.039Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
-      "url": "https://www.msn.com/",
-      "snippet": "Your personalized and curated collection of the best in trusted news, weather, sports, money, travel, entertainment, gaming, and …"
-    },
-    {
-      "title": "MSN | Actualités personnalisées, Gros titres, Mises à jour en direct etc",
-      "url": "https://www.msn.com/fr-fr",
-      "snippet": "Accédez à l'actualité, sport, météo, infos people et vidéos tout en restant connecté à Hotmail, Outlook et Skype sur MSN France."
-    },
-    {
-      "title": "MSN | Actualités personnalisées, Gros titres, Mises à jour en direct etc",
-      "url": "https://g.msn.com/1cl91enus/931",
-      "snippet": "Votre collection personnalisée et curée des meilleurs contenus d’actualités, de météo, de sports, d’argent, de voyage, de …"
-    },
-    {
-      "title": "Outlook Log In | Microsoft 365",
-      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=0f4c1017bfe6633e3e1407fdbe836287",
-      "snippet": "Outlook security features apply to @outlook.com, @hotmail.com, @live.com, or @msn.com email addresses. …"
-    },
-    {
-      "title": "MSN",
-      "url": "https://www.msn.com/%20/",
-      "snippet": ""
-    }
-  ]
+  "sources": []
 }

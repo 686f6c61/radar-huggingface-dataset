@@ -2,121 +2,103 @@
 
 ## Resumen
 
-AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF es una redistribución en GGUF del modelo NVIDIA Nemotron 3.5 Bolt E4B (post-entrenamiento de NVIDIA sobre Gemma-4-E4B-it) a la que se le ha proyectado fuera la dirección de rechazo mediante técnicas de *abliteration*, siguiendo el método de Arditi et al. (2024). No es un modelo nuevo: es el mismo conjunto de pesos con una edición quirúrgica en 126 matrices, empaquetada tanto en cuantizaciones "Atomic Dynamic" listas para usar como en un adaptador LoRA de rango 1 de solo 3,5 MB.
+NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF es una versión modificada del modelo nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, publicada por AtomicChat. El modelo original es un post-entrenamiento de NVIDIA sobre Gemma-4-E4B-it, con 42 bloques, tamaño oculto de 2560 y embeddings por capa. Esta variante aplica una técnica de "abliteration" que proyecta fuera de los pesos la dirección de rechazo del modelo, de modo que deja de negarse a responder ante peticiones que el modelo original rechazaría.
 
-El interés práctico está en que el autor publica la medición del coste de la edición: la tasa de rechazo cae del 93,8% al 1,2% en JailbreakBench y del 76% al 0% en prompts de red teaming en ruso, mientras MMLU pasa de 68,50% a 67,85% (2000 preguntas, McNemar p = 0,21), es decir, sin degradación estadísticamente significativa. La divergencia KL frente al BF16 original es 0,163 en AD-Q6_K y 0,241 en AD-Q4_K_M sobre texto neutro de retención.
+La modificación se distribuye en dos formatos: builds GGUF con la edición ya horneada (AD-Q6_K y AD-Q4_K_M) y un adaptador LoRA de rango 1 (126 matrices, 3,5 MB) que se carga sobre cualquier cuantización del modelo original. Según la model card, en prompts de JailbreakBench los rechazos caen del 93,8 % al 1,2 %, mientras que MMLU pasa del 68,50 % al 67,85 % (2000 preguntas, McNemar p = 0,21), lo que sugiere que la capacidad general se mantiene en gran medida.
 
-Arquitectónicamente hereda las particularidades de Gemma 4: 42 bloques, dimensión oculta 2560, *per-layer embeddings* y tres escrituras al *residual stream* por bloque, lo que obliga a adaptar las recetas habituales de abliteración. Los ficheros se ejecutan con llama.cpp estándar (soporte `gemma4`) sin parches y con una ventana de ejemplo de 32.768 tokens.
+El interés actual de esta ficha radica en que documenta una técnica de edición de pesos aplicada a un modelo multimodal de NVIDIA con arquitectura Gemma 4, incluyendo detalles poco habituales sobre cómo se calcula la dirección de rechazo a través de las normas del residual stream. Es relevante para quienes investigan alineación, edición de modelos y despliegue local de LLM sin restricciones de rechazo.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso tipo Gemma 4 (linaje Gemma-4-E4B-it): 42 bloques, dimensión oculta 2560, *per-layer embeddings* y tres escrituras al *residual stream* por bloque |
-| Parámetros totales | 863.744 según el campo de safetensors del repo (unidad no indicada); la nomenclatura E4B implica unos 4B efectivos sobre un total de ~8B |
-| Parámetros activos | No aplica: no es un MoE. El diseño E4B/*per-layer embeddings* deja aproximadamente 4B parámetros efectivos |
-| Longitud de contexto | 32.768 tokens en los comandos de ejemplo del autor (`-c 32768`); máximo soportado no disponible |
-| Tipos de cuantización | AD-Q6_K (7,38 GB), AD-Q4_K_M (5,06 GB); LoRA rank-1 en GGUF de 3,5 MB pensado para escala 1,25 |
-| Idiomas soportados | No disponible (evaluación publicada solo en inglés y ruso; el modelo base es multilingüe) |
-| Licencia | openmdw-1.1 (OpenMDW 1.1); en Hugging Face aparece con el tag `other` |
-| Formato de pesos | GGUF para llama.cpp; el adaptador también en GGUF (`--lora-scaled`) |
-| Modelo base | nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 (finetune) |
-| Tamaño del repo | 12,4 GB |
-| Modalidades | Texto; visión y audio requieren el proyector de los cuants originales (no incluido ni probado en estos ficheros) |
+| Arquitectura | Transformer de Gemma 4 (42 bloques, hidden size 2560, embeddings por capa, tres escrituras al residual stream por bloque) |
+| Parámetros totales | 863.744 (dato de safetensors del modelo base); el nombre "E4B" sugiere aproximadamente 4B efectivos, no confirmado en la información disponible |
+| Parámetros activos | no disponible |
+| Longitud de contexto | 32.768 tokens (valor usado en los comandos de ejemplo de la model card) |
+| Tipos de cuantización | GGUF AD-Q6_K (7,38 GB), GGUF AD-Q4_K_M (5,06 GB), LoRA GGUF de rango 1 (3,5 MB) |
+| Idiomas soportados | no disponible |
+| Licencia | openmdw-1.1 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (safetensors en el modelo base BF16) |
 
 ## Arquitectura y entrenamiento
 
-La base es Nemotron 3.5 Bolt E4B, un post-entrenamiento de NVIDIA sobre Gemma-4-E4B-it. Según la documentación del cuantizador y de terceros, NVIDIA aplicó aprendizaje por refuerzo multi-entorno con GRPO (NeMo RL y NeMo Gym) sobre entornos de seguimiento de instrucciones, uso de herramientas multi-paso, conversaciones multi-turno y salida estructurada, con una arquitectura de RL asíncrona que desacopla entrenamiento e inferencia. La arquitectura subyacente no es un transformer convencional: cada bloque escribe tres veces en el *residual stream* y Gemma 4 normaliza cada escritura con sus propios pesos antes de sumarla, además de usar *per-layer embeddings*.
+El modelo base es NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, un post-entrenamiento de NVIDIA sobre Gemma-4-E4B-it. La arquitectura es un transformer de 42 bloques con tamaño oculto de 2560, embeddings por capa y, de forma destacable, tres escrituras al residual stream por bloque. Esta particularidad obliga a adaptar las recetas habituales de abliteration, que asumen un transformer estándar y solo consideran una escritura por bloque.
 
-La edición de AtomicChat parte de 416 prompts dañinos y 416 inocuos en inglés (`harmful_behaviors`, `harmless_alpaca`) más 128 y 128 en ruso (Aya red-teaming, Russian Alpaca), todos con la plantilla de chat del modelo y *thinking* desactivado, con conjuntos de validación y test separados. La dirección de rechazo se calcula por profundidad como la media de los prompts dañinos menos la media de los inocuos, agrupando inglés y ruso y eliminando la componente alineada con la media de los inocuos; la dirección se computa atravesando las normas de Gemma 4, de modo que cada matriz deja de escribir la dirección tal como llega al *stream*. El resultado se materializa como un adaptador de rango 1 sobre 126 matrices (3,5 MB, escala 1,25) y se hornea en las builds AD-Q6_K y AD-Q4_K_M.
+La edición se realizó identificando la dirección de rechazo en el residual stream (Arditi et al., 2024) mediante 544 prompts dañinos y 544 prompts inocuos de entrenamiento (416 + 416 provenientes de `harmful_behaviors` y `harmless_alpaca`), cada uno en la plantilla de chat del modelo y con el modo thinking desactivado. Los conjuntos de validación y test se mantuvieron separados. La innovación técnica clave es que, dado que Gemma 4 normaliza cada escritura al residual stream con sus propios pesos antes de sumarla, la edición se calcula a través de esas normas: cada matriz deja de escribir la dirección de rechazo tal como llega al stream, no antes de la normalización. El resultado se empaqueta como adaptador LoRA de rango 1 (126 matrices) que se puede cargar sobre cualquier cuantización del modelo original con `--lora-scaled` a escala 1,25.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento con modo *thinking* opcional, activable con `--chat-template-kwargs '{"enable_thinking": true}'`.
-- Uso de herramientas y *function calling*: el autor afirma que las llamadas a herramientas no se ven afectadas por la edición; el modelo base fue entrenado con RL específicamente en uso de herramientas multi-paso y salida estructurada.
-- Razonamiento multi-paso y comportamiento agéntico, heredado del entrenamiento en entornos de NVIDIA.
-- Conversaciones multi-turno con contexto de hasta 32.768 tokens en la configuración publicada.
-- Capacidades multimodales (imagen y audio) teóricamente presentes vía el proyector del modelo original, aunque no verificadas en estos ficheros.
-- Multilingüismo heredado del modelo base, con evaluación explícita en inglés y ruso.
-- Comportamiento sin rechazos: 1 rechazo de 81 prompts ingleses, 0 de 100 rusos y 1 de 250 XSTest en los ficheros horneados, sin respuestas vacías ni degeneradas.
+- Generación de texto y razonamiento conversacional, heredados del modelo base Nemotron 3.5 Bolt E4B.
+- Modo thinking opcional, activable con `--chat-template-kwargs '{"enable_thinking": true}'`; desactivado por defecto.
+- Soporte de tool calling y function calling, según la model card ("tool calls and long context are unaffected").
+- Capacidades multimodales de imagen y audio en el modelo base, aunque la model card indica que no se probaron en estos archivos y que debe usarse el proyector de las cuantizaciones originales.
+- Contexto largo de hasta 32.768 tokens en los ejemplos de despliegue.
+- Comportamiento sin rechazos: la edición elimina la dirección de rechazo del residual stream, por lo que el modelo no se niega a responder ante prompts que el original rechazaría.
+- Compatibilidad con llama.cpp upstream con soporte `gemma4`, sin necesidad de parches.
 
 ## Casos de uso
 
-- Investigación sobre alineación y *refusal directions*: banco de pruebas controlado para estudiar cómo una edición de rango 1 sobre 126 matrices altera el comportamiento de rechazo con una pérdida de MMLU de solo 0,65 puntos porcentuales y un KL medido de forma explícita.
-- Evaluación de robustez y *red teaming* propio: al eliminar el rechazo, permite medir la facilidad con la que un modelo de ~4B efectivos produce contenido dañino, útil para calibrar clasificadores y filtros de salida externos.
-- Generación creativa y ficción sin fricción: escritura de narrativa con violencia, temas adultos o lenguaje explícito donde un modelo alineado interrumpiría la respuesta, manteniendo coherencia multi-turno con 32.768 tokens de contexto.
-- Asistente local de escritura técnica y brainstorming: despliegue en llama.cpp con AD-Q4_K_M (5,06 GB) sobre una única GPU de consumo, con *tool calling* para consultar documentación o ejecutar cálculos.
-- Preprocesado de datos y *data augmentation*: generación de diálogos sintéticos y pares instrucción-respuesta en dominios sensibles (seguridad, medicina legal, análisis de contenido abusivo) donde el rechazo del modelo base bloquearía el pipeline.
-- Análisis de contenido y moderación asistida: usar el modelo como generador de casos límite para entrenar o validar sistemas de moderación, apoyándose en la tasa de rechazo medida (1,2% en JailbreakBench) como línea base.
-- Prototipado de agentes multi-paso en local: con salida estructurada y uso de herramientas heredados del RL de NVIDIA, sobre un modelo que cabe en 8-12 GB de VRAM.
+- Investigación en alineación y edición de modelos: permite estudiar cómo se representa el rechazo en el residual stream de un transformer con múltiples escrituras por bloque, comparando el modelo editado con el original mediante las métricas KLD y top-1 reportadas.
+- Despliegue local en estaciones de trabajo: con 7,38 GB en AD-Q6_K o 5,06 GB en AD-Q4_K_M, cabe en GPUs de consumo y permite ejecutar un modelo de ~4B efectivos con contexto de 32K mediante llama.cpp.
+- Generación de texto creativo sin restricciones: útil para escritura de ficción, guiones o contenido narrativo donde los rechazos del modelo alineado interrumpen el flujo, con la advertencia de que el contenido generado es responsabilidad del usuario.
+- Evaluación comparativa de robustez: el par de modelos (original y editado) permite medir el impacto de la edición en benchmarks como MMLU (68,50 % vs 67,85 %) y en tasas de rechazo sobre JailbreakBench y XSTest.
+- Integración en pipelines con tool calling: al no verse afectadas las llamadas a herramientas, puede usarse en agentes que requieran function calling y contexto largo, con la ventaja de un tamaño reducido para despliegue en local.
+- Experimentación con adaptadores LoRA: el adaptador de 3,5 MB puede cargarse sobre cualquier cuantización del modelo original, lo que facilita probar la edición con distintas precisiones sin descargar builds completos.
 
 ## Benchmarks y rendimiento
 
-Comportamiento tras la edición frente al original (datos del autor):
+| Métrica | Original | Editado |
+|---|---|---|
+| Rechazos en JailbreakBench (held-out) | 93,8 % | 1,2 % |
+| Rechazos en XSTest (prompts seguros) | 9,2 % | 0,4 % |
+| Rechazos con thinking activado | 29 de 30 | 0 de 30 |
+| MMLU (2000 preguntas) | 68,50 % | 67,85 % (McNemar p = 0,21) |
 
-| Métrica | Antes (BF16 original) | Después (edición) |
-|---|---:|---:|
-| Rechazos en JailbreakBench (held-out) | 93,8% | 1,2% |
-| Rechazos en prompts de red teaming en ruso | 76% | 0% |
-| Rechazos en XSTest (prompts seguros) | 9,2% | 0,4% |
-| Rechazos con *thinking* activado | 29 de 30 | 0 |
-| MMLU (2000 preguntas) | 68,50% | 67,85% |
-
-Fidelidad frente al BF16 original en texto neutro de retención (24 fragmentos de 4096 tokens):
-
-| Build | Tamaño en disco | KLD media | Mismo top-1 |
+| Build | Tamaño en disco | KLD medio | Mismo top-1 |
 |---|---:|---:|---:|
-| AD-Q6_K | 7,38 GB | 0,163 | 87,14% |
-| AD-Q4_K_M | 5,06 GB | 0,241 | 85,28% |
+| AD-Q6_K | 7,38 GB | 0,163 | 87,14 % |
+| AD-Q4_K_M | 5,06 GB | 0,241 | 85,28 % |
 | LoRA sobre BF16 | 3,5 MB | 0,159 | no disponible |
-| AD-Q6_K sin edición (solo cuantización) | no disponible | 0,026 | no disponible |
-| AD-Q4_K_M sin edición (solo cuantización) | no disponible | 0,091 | no disponible |
 
-No se han publicado resultados de HumanEval, GSM8K, MMLU-Pro ni de benchmarks de *tool calling* en la información disponible. La significación estadística del cambio en MMLU es nula según McNemar (p = 0,21).
+Las métricas KLD y top-1 se midieron contra el modelo BF16 original sin modificar sobre 24 fragmentos de 4096 tokens de texto neutro. La edición por sí sola sobre BF16 tiene un KLD de 0,159; la cuantización AD-Q6_K del original sin editar tiene 0,026 y AD-Q4_K_M 0,091, por lo que en AD-Q6_K casi toda la distancia corresponde a la edición. En los archivos horneados con thinking desactivado, cada uno rechazó 1 de los 81 prompts ingleses y 1 de los 250 de XSTest, sin respuestas vacías ni degeneradas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 8,5-10 GB para AD-Q4_K_M con contexto moderado (5,06 GB de pesos más caché KV); unos 11-13 GB para AD-Q6_K (7,38 GB de pesos). El contexto de 32.768 tokens incrementa la caché KV de forma apreciable.
-- GPU de consumo: AD-Q4_K_M cabe en tarjetas de 12 GB (RTX 3060 12 GB, RTX 4070) con contexto reducido; AD-Q6_K encaja mejor en 16-24 GB (RTX 4070 Ti Super, RTX 4080, RTX 4090). Para 32.768 tokens completos conviene partir de 16 GB.
-- GPU de datacenter: A100 40/80 GB, H100 y L40S sin problema; sobredimensionadas para este tamaño salvo que se busque alto *throughput* con batching.
-- Despliegue: llama.cpp / `llama-server` con `-ngl 99 -c 32768 --jinja`; requiere soporte `gemma4` en llama.cpp upstream (sin parche). El LoRA se carga con `--lora-scaled ... 1.25`, no con `--lora`. No se documenta soporte verificado en vLLM ni TGI para estos GGUF.
-- Latencia y *throughput*: no disponibles (el autor no publica mediciones).
-- Almacenamiento: 12,4 GB para el repo completo; 5,06 GB o 7,38 GB si se descarga una sola build mediante `hf download --include`.
+- VRAM estimada: aproximadamente 7,4 GB para AD-Q6_K y 5,1 GB para AD-Q4_K_M, más overhead de contexto KV cache para 32K tokens.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para AD-Q4_K_M; 12 GB o más para AD-Q6_K con contexto largo. Funciona en RTX 3060, RTX 4060 Ti, RTX 4070, RTX 4090, A100 y H100.
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM para la cuantización Q4_K_M.
+- Opciones de despliegue: llama.cpp (`llama-server`), con soporte `gemma4` en upstream sin parches. El adaptador LoRA se carga con `--lora-scaled` a escala 1,25.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Estado de rechazo | Calidad medida | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| AtomicChat Nemotron 3.5 Bolt E4B Uncensored (este) | ~4B efectivos | 32.768 (ejemplo) | 1,2% en JailbreakBench; MMLU 67,85% | KLD 0,163 (Q6_K) frente a BF16 | openmdw-1.1 | GGUF + LoRA |
-| AtomicChat NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF | ~4B efectivos | no disponible | Sin editar (rechazos intactos); MMLU 68,50% | KLD 0,026 (Q6_K) y 0,091 (Q4_K_M) | no disponible en la información | GGUF |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | ~4B efectivos | no disponible | Sin editar | Referencia de todas las métricas | no disponible en la información | safetensors (BF16) |
-| unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF | ~4B efectivos | no disponible | Sin editar | No disponible | no disponible en la información | GGUF |
-| Gemma-4-E4B-it (ancestro) | ~4B efectivos | no disponible | Alineado | No disponible | no disponible en la información | no disponible |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored (este) | 863.744 (safetensors del base) | 32.768 | openmdw-1.1 | GGUF + LoRA | Edición de rechazo, tool calling intacto |
+| NVIDIA-Nemotron-3.5-Bolt-E4B (original) | 863.744 | 32.768 | openmdw-1.1 | BF16, GGUF | Modelo alineado con rechazos; base de esta variante |
+| Gemma-4-E4B-it | no disponible | no disponible | no disponible | no disponible | Modelo base sobre el que NVIDIA post-entrena |
 
-Las alternativas abliteradas de otros autores para este mismo modelo base no aparecen en la información proporcionada.
+No se dispone de datos de benchmarks de modelos alternativos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Un *release gate* del propio autor no se cumple: en prompts inocuos el primer token se aleja del original más de lo permitido (KL 0,141 frente al límite de 0,10). El autor señala que, en este modelo, incluso una dirección aleatoria editada del mismo modo mueve el texto neutro de forma perceptible.
-- La eliminación de la dirección de rechazo es deliberada y afecta a la seguridad: el modelo producirá contenido que el original rechazaba. Requiere filtros externos y responsabilidad plena del desplegador; no debe exponerse sin moderación a usuarios finales.
-- La evaluación multilingüe se limita a inglés y ruso; el comportamiento en castellano u otros idiomas no está medido.
-- La evaluación con *thinking* activado (29 de 30 rechazos a 0) se realizó sobre la edición, no sobre los ficheros horneados; los ficheros AD-Q6_K y AD-Q4_K_M solo se validaron con *thinking* desactivado.
-- La KLD se midió sobre 24 fragmentos de 4096 tokens de texto neutro; es una ventana estrecha y no cubre razonamiento, código ni matemáticas.
-- El adaptador LoRA se calibró a escala 1,25: cargarlo con `--lora` (escala 1,0) produce un comportamiento distinto del documentado.
-- Visión y audio no se probaron en estos ficheros y el proyector no está incluido; hay que tomarlo de los cuants originales.
-- Licencia openmdw-1.1 más las posibles condiciones derivadas del modelo base de NVIDIA/Gemma: conviene revisar los términos aplicables antes de un uso comercial, ya que la ficha no detalla la compatibilidad de licencias del derivado.
-- Riesgo de alucinación y deriva de coherencia no cuantificado más allá de MMLU y KLD; no hay datos de sesgos demográficos ni de toxicidad medidos en esta edición.
+- La edición no cumple uno de los criterios de release del autor: en prompts inocuos el primer token se aleja más del original que el límite de 0,10 (KL 0,141). Según la model card, incluso una dirección aleatoria editada de la misma forma altera el texto neutro de forma notable en este modelo.
+- El modelo elimina deliberadamente los rechazos de seguridad, lo que puede producir contenido dañino, ilegal o inapropiado. El usuario asume la responsabilidad del uso.
+- Riesgo de alucinación inherente al modelo base; la edición no lo mitiga.
+- Las capacidades multimodales (imagen y audio) no fueron probadas en estos archivos; debe usarse el proyector de las cuantizaciones originales.
+- Los números de la edición se midieron con el adaptador sobre pesos BF16; sobre base cuantizada no se midieron por separado.
+- La licencia openmdw-1.1 debe revisarse para uso comercial; la model card la etiqueta como "other" y enlaza a los términos en openmdw.ai.
+- Idiomas soportados no documentados en la información disponible.
+- El adaptador LoRA requiere `--lora-scaled` con escala 1,25; usar `--lora` (escala 1,0) aplicaría una edición distinta a la prevista.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF
-- Cuants originales sin editar del mismo autor: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF
-- Colección "NVIDIA Nemotron 3.5 Uncensored": https://huggingface.co/collections/AtomicChat/nvidia-nemotron-35-uncensored
-- Perfil del autor: https://huggingface.co/AtomicChat
-- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
-- Cuants alternativos de terceros: https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF
-- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-- Repositorio de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
-- Discord del proyecto: https://discord.gg/8wGSsvmg4V
-- Sitio del proyecto: https://atomic.chat/
-- Método de referencia: Arditi et al., "Refusal in Language Models Is Mediated by a Single Direction" (2024), arXiv:2406.11717
+- Hugging Face: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF
+- Cuantizaciones originales del modelo base: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF
+- Modelo base en NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Licencia openmdw-1.1: https://openmdw.ai/license/1-1/
+- Atomic Chat: https://atomic.chat/
+- Discord de Atomic Chat: https://discord.gg/8wGSsvmg4V
+- GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- X de Atomic Chat: https://x.com/atomic_chat_hq

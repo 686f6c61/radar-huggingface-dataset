@@ -2,87 +2,90 @@
 
 ## Resumen
 
-Cohere Transcribe (cohere-transcribe-03-2026) es un modelo de reconocimiento automático del habla (ASR) desarrollado por Cohere Labs, liberado como código abierto bajo licencia Apache 2.0. Se trata de un modelo dedicado de audio a texto con 2.065.804.048 parámetros (aproximadamente 2,07 mil millones), diseñado para ofrecer transcripción precisa en 14 idiomas. El modelo se publicó en marzo de 2026 y ha acumulado más de 500.000 descargas en Hugging Face, lo que refleja un interés considerable por parte de la comunidad.
+Cohere Transcribe 03-2026 es un modelo de reconocimiento automático del habla (ASR) desarrollado por CohereLabs, publicado en Hugging Face bajo licencia Apache 2.0. Con aproximadamente 2.066 millones de parámetros (2,07 B) y un repositorio de 4,1 GB, se distribuye en formato safetensors con código propio (`custom_code`) y se integra en la librería `transformers` mediante la arquitectura `cohere_asr`. Está diseñado específicamente para transcripción de audio multilingüe y cubre 14 idiomas: árabe, alemán, griego, inglés, español, francés, italiano, japonés, coreano, neerlandés, polaco, portugués, vietnamita y chino.
 
-El modelo resuelve el problema de la transcripción automática de voz con un equilibrio entre precisión y eficiencia. Según la información oficial, Cohere Transcribe presenta un factor de tiempo real hasta tres veces más rápido que otros modelos ASR dedicados del mismo rango de tamaño, lo que lo hace adecuado para cargas de trabajo de producción. Su arquitectura concreta no se ha detallado públicamente, pero se sabe que es un modelo de 2B parámetros con entrada de audio y salida de texto, integrable con el ecosistema de Hugging Face Transformers y compatible con despliegue en vLLM para inferencia en línea.
+El modelo resuelve el problema de la transcripción automática de voz en entornos multilingües con una única arquitectura, evitando la necesidad de mantener pipelines separados por idioma. Su tamaño de 2 B parámetros lo sitúa en un rango manejable para despliegue en servidores con aceleradores de gama alta, y su licencia permisiva (Apache 2.0) facilita la integración en productos comerciales sin las restricciones habituales de otros modelos ASR propietarios.
 
-La relevancia de este lanzamiento radica en que Cohere, conocida por sus modelos de lenguaje, entra en el espacio ASR con una propuesta abierta y eficiente, compitiendo directamente con alternativas como Whisper de OpenAI. El acceso al modelo es restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo, aunque la licencia base es Apache 2.0.
+Su relevancia actual radica en la combinación de cobertura lingüística amplia (incluyendo idiomas habitualmente infrarrepresentados en ASR como griego, vietnamita o polaco), licencia abierta y compatibilidad con el ecosistema `transformers` y con endpoints desplegables en Azure. El acceso está restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del repositorio antes de la descarga.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo de audio a texto, sin detalle público de la arquitectura interna) |
-| Parametros totales | 2.065.804.048 (2,07B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (no se especifica la duración máxima de audio soportada) |
-| Tipos de cuantizacion | No disponible (no se han publicado versiones cuantizadas oficiales) |
-| Idiomas soportados | 14: árabe, alemán, griego, inglés, español, francés, italiano, japonés, coreano, neerlandés, polaco, portugués, vietnamita y chino |
-| Licencia | Apache 2.0 (con acceso gated en Hugging Face) |
-| Formato de pesos | Safetensors |
+| Arquitectura | `cohere_asr` (implementación propia sobre `transformers`, con `custom_code`) |
+| Parametros totales | 2.065.804.048 (~2,07 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | ar, de, el, en, es, fr, it, ja, ko, nl, pl, pt, vi, zh (14 idiomas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
+| Tamano del repositorio | 4,1 GB |
+| Pipeline | automatic-speech-recognition |
+| Acceso | restringido (gated), requiere aceptar condiciones |
+| Compatibilidad de despliegue | endpoints compatibles, despliegue en Azure |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna del modelo. Cohere Transcribe se describe como un modelo dedicado de reconocimiento del habla con entrada de audio y salida de texto, pero no se especifica si se basa en un transformer estándar, una arquitectura tipo encoder-decoder, o si incorpora innovaciones como atención lineal o decodificación especulativa. Tampoco se han revelado los datos de entrenamiento, el número de tokens de audio utilizados, ni si se aplicaron técnicas de alineamiento como RLHF o DPO. La documentación oficial se limita a indicar que el modelo está optimizado para inferencia offline mediante un método `transcribe()` que gestiona automáticamente el troceado de audio de formato largo, y que para inferencia en línea se recomienda la integración con vLLM.
+La información disponible no detalla la arquitectura interna del modelo más allá de la etiqueta `cohere_asr` y del uso de `custom_code` en `transformers`. No se especifica si se trata de un transformer encoder-decoder clásico, de un modelo híbrido con componentes convolucionales, ni si emplea técnicas de atención lineal o decodificación especulativa. Tampoco se han publicado datos sobre el número de tokens de audio utilizados en el entrenamiento, la composición del dataset, ni si hubo etapas de ajuste fino supervisado, RLHF o DPO.
+
+Lo que sí se puede afirmar es que el modelo se distribuye con pesos en safetensors de aproximadamente 4,1 GB, coherente con un modelo de 2,07 B parámetros en precisión de 16 bits (2,07 B × 2 bytes ≈ 4,14 GB). La arquitectura está registrada en el ecosistema `transformers` mediante código propio, lo que implica que los usuarios deben confiar en la implementación publicada por CohereLabs para cargar y ejecutar el modelo.
 
 ## Capacidades
 
-- Transcripción de voz a texto en 14 idiomas: árabe, alemán, griego, inglés, español, francés, italiano, japonés, coreano, neerlandés, polaco, portugués, vietnamita y chino.
-- Manejo de audio de formato largo mediante troceado automático, sin necesidad de segmentación manual por parte del usuario.
-- Eficiencia computacional: factor de tiempo real hasta tres veces más rápido que otros modelos ASR dedicados del mismo rango de tamaño, según la información oficial.
-- Optimización para inferencia offline a través del método `transcribe()`, que también permite controlar el batching para un uso eficiente de los recursos.
-- Compatibilidad con despliegue en línea mediante vLLM, lo que facilita su integración en servicios de transcripción en tiempo real.
-- Integración con el ecosistema Hugging Face Transformers, lo que permite su uso con las herramientas estándar de la librería.
+- Reconocimiento automático del habla (ASR) y transcripción de audio a texto.
+- Cobertura multilingüe de 14 idiomas: árabe, alemán, griego, inglés, español, francés, italiano, japonés, coreano, neerlandés, polaco, portugués, vietnamita y chino.
+- Integración con el pipeline `automatic-speech-recognition` de `transformers`.
+- Compatibilidad con endpoints desplegables y despliegue en Azure.
+- Evaluación publicada en el leaderboard de ASR de Hugging Face (`hf-asr-leaderboard`), lo que indica que el modelo ha sido sometido a evaluaciones comparativas dentro del ecosistema.
+- No se dispone de información sobre soporte de tool calling, capacidades de agente, modo de razonamiento explícito, visión, audio de salida u otras capacidades especiales más allá de la transcripción.
 
 ## Casos de uso
 
-- Transcripción de reuniones y videollamadas: el modelo puede procesar grabaciones de audio de larga duración gracias a su troceado automático, generando actas textuales de reuniones de equipos distribuidos. Su eficiencia (hasta 3 veces más rápido que alternativas similares) reduce el tiempo de procesamiento en lote.
-- Generación de subtítulos para vídeo: creadores de contenido y plataformas de vídeo pueden transcribir pistas de audio para producir subtítulos en 14 idiomas, lo que amplía el alcance de sus publicaciones. La precisión del modelo en múltiples lenguas evita correcciones manuales extensas.
-- Análisis de llamadas de atención al cliente: centros de contacto pueden transcribir conversaciones telefónicas para su posterior análisis de sentimiento o detección de problemas recurrentes. El soporte multilingüe permite atender a clientes de distintas regiones sin cambiar de modelo.
-- Asistentes de voz y comandos por voz: el modelo puede servir como backend de transcripción para asistentes virtuales, convirtiendo la entrada de audio en texto que luego procesa un modelo de lenguaje. Su baja latencia relativa lo hace viable para interacciones interactivas.
-- Transcripción de podcasts y contenido multimedia: empresas de medios y podcasters pueden convertir episodios completos en texto para crear resúmenes, notas de programa o contenido SEO. La capacidad de manejar audio largo sin segmentación manual simplifica el flujo de trabajo.
-- Accesibilidad para personas con discapacidad auditiva: organizaciones pueden ofrecer transcripciones en tiempo real o diferido de eventos, clases o conferencias, mejorando la inclusión de personas con problemas de audición. El soporte de 14 idiomas cubre una amplia base de usuarios.
-- Archivado y búsqueda de audio: bibliotecas y empresas pueden indexar archivos de audio históricos transcribiéndolos, lo que permite búsquedas por texto dentro de grabaciones de reuniones, entrevistas o material de archivo.
+- Transcripción de reuniones y videoconferencias multilingües: el modelo puede convertir audio de sesiones de trabajo en texto para actas y resúmenes, cubriendo equipos distribuidos que hablan español, inglés, francés o alemán sin necesidad de cambiar de pipeline por idioma.
+- Subtitulado automático de contenido audiovisual: generación de pistas de subtítulos para vídeos en los 14 idiomas soportados, con la ventaja de una licencia Apache 2.0 que permite su uso en plataformas comerciales de streaming o educación.
+- Atención al cliente basada en voz: transcripción de llamadas entrantes en centros de contacto para su análisis posterior, indexación y cumplimiento normativo, integrándose en flujos desplegados en Azure mediante endpoints compatibles.
+- Documentación clínica dictada: conversión de notas de voz de profesionales sanitarios en texto estructurado, aprovechando el soporte de idiomas europeos como español, italiano, neerlandés o polaco.
+- Accesibilidad y transcripción en directo: generación de texto en tiempo real para personas con discapacidad auditiva en eventos, clases o retransmisiones, con la posibilidad de desplegar el modelo en infraestructura propia al ser de pesos abiertos.
+- Análisis de encuestas y entrevistas de investigación: transcripción por lotes de grabaciones cualitativas en múltiples idiomas para su posterior codificación y análisis temático, con coste controlado al no depender de APIs propietarias.
+- Indexación y búsqueda de archivos de audio: conversión de archivos históricos de audio a texto para construir índices de búsqueda semántica sobre archivos de radio, podcast o archivos institucionales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Aunque el modelo aparece en el leaderboard de ASR de Hugging Face (hf-asr-leaderboard) y la documentación oficial afirma una precisión "de primer nivel" en 14 idiomas, no se proporcionan cifras concretas de métricas como WER (Word Error Rate) o comparaciones numéricas con otros modelos. Tampoco se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GSM8K, que no son aplicables a un modelo de transcripción. Se recomienda consultar el leaderboard de ASR de Hugging Face para obtener datos de evaluación actualizados.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye la etiqueta `eval-results` y figura en el `hf-asr-leaderboard`, pero los valores concretos de WER (word error rate) u otras métricas no se detallan en la información proporcionada.
 
 ## Requisitos de hardware
 
-- El modelo tiene 2.065.804.048 parámetros, lo que en precisión FP32 ocuparía aproximadamente 8,3 GB de memoria. Con cuantización a 8 bits, el peso se reduciría a unos 2,1 GB, y a 4 bits a unos 1 GB, aunque no se han publicado versiones cuantizadas oficiales.
-- No se dispone de información oficial sobre la VRAM mínima requerida. Sin embargo, por su tamaño, es plausible que pueda ejecutarse en GPUs de consumo con al menos 8 GB de VRAM si se aplica cuantización, aunque no hay garantías.
-- No se han especificado GPUs recomendadas por el fabricante. Para inferencia en línea, se menciona la integración con vLLM, que suele requerir GPUs con suficiente memoria, como A100, H100 o RTX 4090, dependiendo del tamaño del lote y la longitud del audio.
-- Opciones de despliegue: el modelo es compatible con Hugging Face Transformers, lo que permite su uso en pipelines estándar. Para inferencia offline, se recomienda el método `transcribe()` incluido en el repositorio. Para inferencia en línea, se sugiere la integración con vLLM. No se mencionan otras herramientas como llama.cpp u Ollama, que están orientadas a modelos de lenguaje y no a ASR.
-- No se han publicado datos de latencia o throughput específicos. La afirmación de un factor de tiempo real hasta tres veces superior a otros modelos del mismo tamaño sugiere un rendimiento competitivo, pero sin cifras concretas.
+- VRAM estimada para inferencia: los pesos en safetensors ocupan aproximadamente 4,1 GB, por lo que se necesita al menos esa cantidad de memoria más el overhead de activaciones y del procesador de audio. En la práctica, se recomienda un mínimo de 8 GB de VRAM para inferencia en FP16.
+- GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 para despliegues de producción; RTX 3090 o RTX 4080 para desarrollo y pruebas.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM en FP16 (RTX 3070/4060 Ti en adelante), siempre que se gestione el tamaño de lote de audio.
+- Opciones de despliegue: `transformers` con `custom_code` (requiere `trust_remote_code=True`), endpoints compatibles y despliegue en Azure según las etiquetas del repositorio. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de comparación directa con otros modelos ASR en la información proporcionada. Sin embargo, se puede establecer una comparación cualitativa con alternativas conocidas:
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa rigurosa. Como referencia cualitativa, se puede señalar que el modelo compite en la categoría de ASR multilingüe de pesos abiertos, donde alternativas habituales son Whisper (OpenAI) y sus variantes, pero no se han proporcionado cifras de WER, parámetros ni contexto para contrastar.
 
-| Modelo | Parámetros | Idiomas | Licencia | Acceso |
+| Modelo | Parametros | Idiomas | Licencia | Formato |
 |---|---|---|---|---|
-| Cohere Transcribe (2026) | 2,07B | 14 | Apache 2.0 | Gated en Hugging Face |
-| Whisper large-v3 (OpenAI) | 1,55B | 99 | MIT | Abierto |
-| Whisper large-v2 (OpenAI) | 1,55B | 99 | MIT | Abierto |
-| Wav2Vec2-XLSR (Meta) | 0,3B | 128 | Apache 2.0 | Abierto |
-
-Cohere Transcribe se sitúa en un rango de tamaño similar a Whisper large, pero con un número de idiomas significativamente menor (14 frente a 99). Su ventaja declarada es la eficiencia (hasta 3 veces más rápido que otros modelos del mismo tamaño), aunque no se han publicado benchmarks que lo confirmen. La licencia Apache 2.0 es permisiva para uso comercial, pero el acceso gated en Hugging Face añade un paso adicional. Whisper, por su parte, tiene una cobertura lingüística mucho más amplia y una comunidad de usuarios más extensa, aunque su eficiencia puede ser inferior en algunos escenarios.
+| Cohere Transcribe 03-2026 | ~2,07 B | 14 | Apache 2.0 | safetensors |
+| Alternativas de la categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como "gated" en Hugging Face, lo que obliga a los usuarios a aceptar condiciones específicas antes de poder descargarlo. Esto puede suponer una barrera para su adopción en entornos corporativos que requieran revisión legal previa.
-- Cobertura lingüística limitada: aunque soporta 14 idiomas, no cubre todos los dialectos ni variantes regionales. La precisión puede degradarse con acentos no estándar o ruido de fondo intenso, aunque no se han publicado estudios al respecto.
-- Riesgo de alucinación: como todo modelo ASR, puede generar texto que no corresponde al audio original, especialmente en segmentos con baja calidad de sonido o solapamiento de voces. No se han documentado tasas de error específicas.
-- Sin información sobre entrenamiento: la falta de detalles sobre los datos de entrenamiento impide evaluar posibles sesgos demográficos o culturales en el reconocimiento del habla. Es recomendable realizar pruebas en el dominio de uso previsto.
-- Limitaciones de contexto de audio: no se especifica la duración máxima de audio que el modelo puede procesar en una sola pasada. Aunque el método `transcribe()` maneja troceado automático, puede haber límites prácticos en función de la memoria disponible.
-- Dependencia de la integración: para inferencia en línea, la documentación recomienda vLLM, lo que implica una dependencia adicional de esa herramienta y de la infraestructura asociada.
-- Sin cuantizaciones oficiales: no se han publicado versiones cuantizadas (GGUF, AWQ, etc.), por lo que el despliegue en hardware con poca memoria puede requerir trabajo adicional de optimización.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga, lo que puede añadir fricción en pipelines automatizados.
+- Dependencia de `custom_code`: la carga del modelo requiere `trust_remote_code=True`, lo que implica ejecutar código publicado por CohereLabs; conviene auditar la implementación antes de usarla en producción.
+- Idiomas limitados a 14: no cubre lenguas como hindi, ruso, turco o lenguas cooficiales de España distintas del español, lo que restringe su uso en determinados mercados.
+- Riesgo de alucinación en ASR: como todo modelo generativo de transcripción, puede producir texto plausible pero incorrecto en segmentos de audio con ruido, acentos marcados o solapamiento de hablantes; se recomienda validación humana en contextos críticos.
+- Sesgos: no se han publicado análisis de sesgo por acento, género o dialecto; es esperable un rendimiento desigual entre variantes dialectales de un mismo idioma.
+- Sin datos de benchmarks públicos en la información disponible: la ausencia de cifras de WER verificables dificulta la comparación objetiva con alternativas.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero conviene revisar las condiciones del acceso gated y las obligaciones de atribución.
+- No se especifican requisitos de contexto de audio ni duración máxima de segmento, lo que obliga a validar empíricamente el comportamiento con audios largos.
 
 ## Enlaces
 
-- Página del modelo en Hugging Face: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
-- Blog de anuncio de Cohere: https://cohere.com/blog/transcribe
-- Documentación oficial de Cohere Transcribe: https://docs.cohere.com/docs/transcribe
-- Repositorio de ejemplo (no oficial) en GitHub: https://github.com/jasonclaw001/cohere-transcribe-03-2026
-- DOI del modelo: 10.57967/hf/8653
+- Hugging Face: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
+- DOI: https://doi.org/10.57967/hf/8653
+- Leaderboard ASR de Hugging Face: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- Documentación de `transformers` para modelos de audio: https://huggingface.co/docs/transformers/main/en/tasks/asr
+- Configuración de Teams Phone en canal de voz (Microsoft Learn): https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel

@@ -2,117 +2,109 @@
 
 ## Resumen
 
-Ornith-1.5-9B-DFlash-Paretrix es un repositorio de cuantizaciones GGUF publicadas por el usuario Soulfate24 sobre el modelo base ornith-ai/Ornith-1.5-9B, junto con el modulo draft DFlash (ornith-ai/Ornith-1.5-9B-DFlash) pensado para decodificacion especulativa. No es un modelo entrenado desde cero, sino una distribucion de pesos comprimidos: el repo aplica la suite Paretrix, un esquema de cuantizacion hibrida con asignacion de bits por clase de tensor basada en sensibilidades de activacion medidas con llama-imatrix.
+Ornith-1.5-9B-DFlash-Paretrix es un conjunto de cuantizaciones GGUF del modelo base ornith-ai/Ornith-1.5-9B, publicado por el usuario Soulfate24 bajo el paraguas de su suite Paretrix. No se trata de un modelo entrenado desde cero, sino de una distribución de pesos cuantizados en formato GGUF para su uso con llama.cpp, acompañada de un módulo de decodificación especulativa DFlash (draft) y de una variante MTP (multi-token prediction). El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 9B) y está etiquetado como compatible con pipelines de generación de texto y visión.
 
-El modelo subyacente tiene 8.953.803.264 parametros (unos 8,95 mil millones), licencia MIT y pipeline text-generation. El repo ocupa 49,0 GB e incluye las etiquetas vision, conversational, gguf, llama.cpp, imatrix, pareto, speculative-decoding y draft. En el momento de la consulta acumula 0 descargas y 0 likes, y las fechas de creacion y actualizacion son el 8 de octubre de 2026.
+La aportación principal de esta ficha no es el modelo en sí, sino el método de cuantización. Paretrix es una suite de cuantización empírica y sensible a las activaciones que, en lugar de aplicar un único ancho de bits uniforme a toda la red, mide la respuesta de cada clase de tensor a cada tipo de cuantización y planifica cada nivel (rung) mediante una mochila exacta (knapsack) que maximiza la fidelidad bajo una restricción de tamaño. El resultado son variantes con nombres como Fidelity-48pc, Quality-36pc, Nano-27pc o Femto-21pc, cada una con su propio equilibrio entre tamaño en disco, perplejidad (PPL), divergencia KL (KLD) y coincidencia top-p respecto a los logits en BF16.
 
-Su interes practico esta en el catalogo de niveles de compresion: ocho tiers Paretrix (de Fidelity-48pc a Femto-21pc) que buscan un equilibrio medido entre tamano en disco y divergencia respecto a la distribucion original (KLD, RMS Δp, top-p), en lugar de recetas uniformes. Esto permite desplegar un modelo de ~9B en GPUs de consumo con perdidas cuantificadas, algo relevante para inferencia local y para pipelines con restricciones de VRAM.
+El modelo es relevante ahora porque demuestra que es posible obtener cuantizaciones de ~4,8 GB (Nano-27pc) con una KLD de 0,0648, mejor que la del IQ4_XS-imx estándar (0,0729) pese a ocupar menos espacio, y porque incluye un draft DFlash para decodificación especulativa y una versión MTP que funciona de forma autónoma. La licencia MIT y la disponibilidad en GGUF lo hacen directamente desplegable en entornos de producción con llama.cpp.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (no se describe en la informacion proporcionada) |
-| Parametros totales | 8.953.803.264 (segun safetensors del repo) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; tiers Paretrix: Fidelity-48pc, Precision-42pc, Quality-36pc, Compact-33pc, Mini-30pc, Nano-27pc, Pico-24pc, Femto-21pc; y quants uniformes de referencia: Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx |
+| Arquitectura | no disponible (modelo base transformer; la model card no detalla la arquitectura interna) |
+| Parámetros totales | 8.953.803.264 (~9B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (la model card menciona que la configuración MTP con KV cache q5_1 y draft cache q8_0 maximiza la ventana de contexto, pero no da la cifra) |
+| Tipos de cuantizacion | GGUF: Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx (stock) y variantes Paretrix Fidelity-48pc, Precision-42pc, Quality-36pc, Compact-33pc, Mini-30pc, Nano-27pc, Pico-24pc, Femto-21pc |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (license_link apunta a la licencia del modelo base ornith-ai/Ornith-1.5-9B) |
-| Formato de pesos | GGUF para llama.cpp; el repo declara library_name: transformers y expone un recuento de parametros en safetensors |
+| Licencia | MIT |
+| Formato de pesos | GGUF (llama.cpp); el repo también declara compatibilidad con transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Ornith-1.5-9B (si es transformer denso, MoE, hibrido o SSM), ni sobre el volumen o la composicion de sus datos de entrenamiento, ni sobre si se aplicaron etapas de RLHF, DPO u otras tecnicas de alineamiento. La model card del repositorio no cubre esos extremos; solo describe el proceso de cuantizacion.
+La información disponible no describe la arquitectura interna del modelo base Ornith-1.5-9B (tipo de atención, número de capas, composición del dataset o si hubo RLHF/DPO). Lo que sí se documenta es la capa de cuantización y el mecanismo de decodificación especulativa. El repositorio incluye un draft DFlash (ornith-ai/Ornith-1.5-9B-DFlash) para decodificación especulativa y una versión MTP (multi-token prediction) que, según la model card, funciona de forma autónoma y no debe ejecutarse simultáneamente con un draft DFlash o DSpark.
 
-Lo que si se documenta es el metodo de compresion. Paretrix se presenta como una suite empirica y sensible a activaciones para modelos GGUF y modulos de decodificacion especulativa. Mide la sensibilidad real de cada clase de tensor a traves de llama-imatrix (ΔKLD por MiB), aprende tablas de tasa a partir de campanas entre arquitecturas (denominadas THE MATRIX) y reparte el presupuesto de bits bajo objetivos exactos: recetas planas cuando la uniformidad es lo mejor y mochila calibrada por tasa cuando la heterogeneidad compensa. La innovacion declarada es que, en lugar de aplicar una misma familia de bits a toda la red, se lee el campo de activaciones del propio modelo para gastar el presupuesto donde la medicion indica mayor retorno.
-
-El repositorio incorpora ademas el modulo DFlash como draft para decodificacion especulativa, lo que en teoria acelera la generacion al proponer tokens que el modelo principal verifica en paralelo. No se aportan mediciones de la aceleracion obtenida.
+La innovación técnica destacable es el método Paretrix. Partiendo de tres bases estándar (Q8_0, Q6_K-imx e IQ4_XS-imx), el proceso mueve cada clase de tensor de forma aislada a cada tipo de cuantización y mide el resultado contra los logits en BF16. Con esas mediciones, una mochila exacta planifica cada nivel, y un duelo en el régimen de veredicto decide si el plan sustituye al campeón. La model card afirma que lo que mide un modelo se hereda al siguiente modelo de la misma familia. El resultado se refleja en la tabla de niveles: por ejemplo, Nano-27pc ocupa 4.794 MiB con PPL 8,8194 y KLD 0,0648, frente a IQ4_XS-imx con 4.956 MiB, PPL 9,2451 y KLD 0,0729.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta conversational y el pipeline text-generation.
-- Inferencia local en llama.cpp y runtimes compatibles con GGUF.
-- Cuantizacion selectiva por clase de tensor, con metricas publicadas de KLD, RMS Δp y top-p por tier.
-- Decodificacion especulativa mediante el draft DFlash incluido como modelo base secundario.
-- Etiqueta vision presente en el repositorio, aunque no se detalla en la informacion disponible que tipo de entrada visual admite ni con que modulo.
-- No se documenta soporte de tool calling, function calling, uso agentico ni multi-step reasoning.
-- No se documentan capacidades multilingues ni lista de idiomas.
-- No se documenta modo thinking ni capacidades de audio.
+- Generación de texto conversacional (pipeline text-generation, tag conversational).
+- Capacidades de visión declaradas en los tags del repositorio (vision), aunque la model card no detalla su alcance.
+- Decodificación especulativa mediante el draft DFlash, orientada a reducir la latencia de generación.
+- Variante MTP (multi-token prediction) autónoma, que predice varios tokens por paso.
+- Compatibilidad con llama.cpp y con el ecosistema transformers.
+- Cuantización híbrida por clases de tensor con niveles calibrados empíricamente (Paretrix).
+- Soporte de endpoints compatibles (tag endpoints_compatible).
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes multi-paso, matemáticas o modo thinking.
 
 ## Casos de uso
 
-- Inferencia local en GPU de consumo: los tiers de menor tamano (Pico-24pc con 4.070 MiB, Femto-21pc con 3.601 MiB) permiten ejecutar un modelo de ~9B en GPUs con 6-8 GB de VRAM, manteniendo una divergencia medida de KLD 0,1540 y 0,2524 respectivamente.
-- Asistentes conversacionales offline: al ser un GGUF ejecutable con llama.cpp u Ollama, encaja en aplicaciones de escritorio o embebidas sin conectividad, donde la licencia MIT facilita la redistribucion.
-- Servicio de generacion de texto con VRAM limitada: los tiers intermedios (Mini-30pc con 5.368 MiB, Compact-33pc con 5.787 MiB) ofrecen el mejor equilibrio declarado en la tabla, con KLD de 0,0679 y 0,0610 frente a quants uniformes de tamano comparable.
-- Aceleracion de inferencia mediante decodificacion especulativa: el repositorio incluye el draft DFlash especificamente para este fin; se usaria emparejando el draft con el quant principal en llama.cpp para reducir el coste por token en cargas de generacion larga.
-- Despliegue en entornos con presupuesto de disco estricto: el tier Quality-36pc ocupa 6.234 MiB frente a los 9.086 MiB de Q8_0, con una perdida declarada de calidad cuantificada en la propia tabla.
-- Investigacion en compresion de modelos: la tabla de tiers, con PPL, ΔPPL, KLD, RMS Δp y top-p por nivel, sirve como material de referencia para estudiar el compromiso entre tasa de bits y fidelidad distribucional.
-- Sustitucion de recetas uniformes en pipelines existentes: al mantener el formato GGUF, un tier Paretrix puede reemplazar a un Q5_K_M-imx o IQ4_XS-imx sin cambiar el runtime de inferencia.
+- Despliegue en CPU o GPU de gama media con llama.cpp: las variantes Compact-33pc (5.792 MiB) y Mini-30pc (5.281 MiB) permiten ejecutar un modelo de ~9B en equipos con 8 GB de VRAM o en CPU con RAM suficiente, manteniendo una KLD de 0,0362 y 0,0542 respectivamente.
+- Inferencia de baja latencia con decodificación especulativa: el draft DFlash acelera la generación al proponer tokens que el modelo principal verifica, útil en asistentes interactivos donde el tiempo por token es crítico.
+- Servicio conversacional con presupuesto de memoria ajustado: la variante Nano-27pc (4.794 MiB, KLD 0,0648) supera en fidelidad al IQ4_XS-imx estándar ocupando menos espacio, lo que la hace adecuada para instancias con VRAM limitada.
+- Evaluación comparativa de métodos de cuantización: los 13 niveles publicados con métricas de PPL, KLD, RMS Δp y top-p permiten reproducir experimentos sobre el compromiso tamaño-fidelidad en modelos de ~9B.
+- Procesamiento de imágenes y texto en un mismo pipeline: el tag vision sugiere uso en tareas multimodal (descripción de imágenes, extracción de información), aunque la model card no detalla el soporte.
+- Prototipado rápido en transformers: el repo declara library_name transformers y pesos safetensors, lo que facilita cargar el modelo en Python para pruebas antes de pasar a GGUF.
+- Contexto largo con caché cuantizada: la configuración recomendada para MTP (KV cache q5_1, draft cache q8_0) maximiza la ventana de contexto con velocidad igual o mejor cuando el contexto está muy cargado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. La model card solo aporta metricas internas del proceso de cuantizacion: perplejidad (PPL), delta de perplejidad (ΔPPL), divergencia KL (KLD), RMS Δp y top-p, comparando cada tier Paretrix con quants uniformes de referencia.
+La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K). Sí publica métricas de fidelidad de cuantización frente a BF16, que se reproducen a continuación.
 
 | Modelo | MiB | PPL | ΔPPL | KLD | RMS Δp | top-p | Pareto |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: | :--- |
-| Q8_0 (stock) | 9086 | 8,9544 | +0,0325 | 0,0118 | 2,67% | 97,7% | ★ |
-| Fidelity-48pc | 8232 | 8,9700 | +0,0481 | 0,0167 | 3,13% | 97,0% | ≈ Precision-42pc (−0,0011 · −854 MiB) |
-| Precision-42pc | 7378 | 8,9365 | +0,0146 | 0,0156 | 3,24% | 96,6% | ★ |
-| Q6_K-imx (stock) | 7018 | 8,7000† | −0,2219 | 0,0251 | 3,83% | 95,9% | ★ |
-| Quality-36pc | 6234 | 8,5716† | −0,3503 | 0,0449 | 4,88% | 93,5% | ★ |
-| Q5_K_M-imx (stock) | 6168 | 8,2043† | −0,7176 | 0,1013 | 7,29% | 90,2% | < Compact-33pc |
-| Compact-33pc | 5787 | 8,4619† | −0,4600 | 0,0610 | 6,07% | 92,0% | ★ |
-| Mini-30pc | 5368 | 8,6772† | −0,2447 | 0,0679 | 6,42% | 91,1% | ★ |
-| IQ4_XS-imx (stock) | 4956 | 9,2939 | +0,3720 | 0,0794 | 7,08% | 90,8% | ★ |
-| Nano-27pc | 4586 | 8,6546† | −0,2673 | 0,1223 | 8,73% | 86,5% | ★ |
-| IQ3_M-imx (stock) | 4211 | 9,1809 | +0,2590 | 0,1807 | 11,04% | 84,5% | < Pico-24pc |
-| Pico-24pc | 4070 | 8,5303† | −0,3916 | 0,1540 | 10,08% | 84,7% | ★ |
-| Femto-21pc | 3601 | 8,3140† | −0,6079 | 0,2524 | 12,37% | 80,6% | ★ |
+|---|---:|---:|---:|---:|---:|---:|:---|
+| Q8_0 (stock) | 9086 | 8,9461 | +0,0247 | 0,0100 | 2,78% | 97,7% | ★ |
+| Fidelity-48pc | 8212 | 8,9078† | −0,0136 | 0,0118 | 2,81% | 97,3% | ★ |
+| Precision-42pc | 7325 | 8,8886† | −0,0328 | 0,0149 | 3,08% | 96,3% | ★ |
+| Q6_K-imx (stock) | 7018 | 8,6805† | −0,2409 | 0,0240 | 3,85% | 95,7% | ★ |
+| Quality-36pc | 6306 | 8,8666† | −0,0548 | 0,0254 | 3,98% | 94,4% | ★ |
+| Q5_K_M-imx (stock) | 6168 | 8,6950† | −0,2264 | 0,0309 | 4,09% | 94,7% | ★ |
+| Compact-33pc | 5792 | 8,9295 | +0,0081 | 0,0362 | 4,89% | 93,5% | ★ |
+| Mini-30pc | 5281 | 8,7179† | −0,2035 | 0,0542 | 5,88% | 91,5% | ★ |
+| IQ4_XS-imx (stock) | 4956 | 9,2451 | +0,3237 | 0,0729 | 6,81% | 91,0% | < Nano-27pc |
+| Nano-27pc ⭐ | 4794 | 8,8194† | −0,1020 | 0,0648 | 6,58% | 90,5% | ★ |
+| Pico-24pc | 4306 | 8,9726 | +0,0512 | 0,1248 | 8,81% | 86,5% | ★ |
+| IQ3_M-imx (stock) | 4211 | 9,1407 | +0,2193 | 0,1768 | 10,87% | 84,7% | ★ |
+| Femto-21pc | 3802 | 9,3947 | +0,4733 | 0,1784 | 11,19% | 83,5% | ★ |
 
-El significado del simbolo † empleado en varias filas no se define en la informacion proporcionada; el autor lo usa en las entradas de PPL de los tiers Paretrix y de algunos quants uniformes.
+El símbolo † indica, según la model card, valores de PPL inferiores a la base de referencia; no se detalla el método de medición ni el corpus de evaluación.
 
 ## Requisitos de hardware
 
-- VRAM estimada (solo pesos, a partir del tamano en MiB declarado): Femto-21pc ~3,5 GB; Pico-24pc ~4,0 GB; Nano-27pc ~4,5 GB; IQ4_XS-imx ~4,8 GB; Mini-30pc ~5,2 GB; Compact-33pc ~5,7 GB; Quality-36pc ~6,1 GB; Q6_K-imx ~6,9 GB; Precision-42pc ~7,2 GB; Fidelity-48pc ~8,0 GB; Q8_0 ~8,9 GB.
-- A esas cifras hay que anadir el cache KV, cuyo tamano depende de la longitud de contexto y de la configuracion de atencion; la longitud de contexto no se especifica en la informacion disponible, por lo que no puede darse una cifra de VRAM total fiable.
-- GPU consumer: los tiers de 3,5 a 6,2 GB caben en tarjetas de 8 GB (RTX 3060 Ti, 4060, 2070) y con holgura en 12 GB (RTX 3060 12 GB, 4070); los tiers de 7,2 a 8,9 GB requieren 12-16 GB para dejar margen al cache KV (RTX 4080, 4060 Ti 16 GB, 4070 Ti Super).
-- GPU profesional: A100 40/80 GB, H100 y L40S permiten servir varias instancias o contextos largos con los tiers de mayor fidelidad; para Q8_0 con contexto amplio es recomendable 16 GB o mas.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio y koboldcpp por el formato GGUF; vLLM admite GGUF de forma experimental; transformers figura como libreria declarada, aunque no carga GGUF de forma nativa.
-- Para decodificacion especulativa hay que desplegar conjuntamente el draft DFlash y el quant principal en llama.cpp.
-- Latencia y throughput: no disponibles. No se aportan mediciones de tokens por segundo ni de factor de aceleracion del draft.
+- VRAM estimada según el nivel de cuantización: desde ~3,8 GB (Femto-21pc) hasta ~9,1 GB (Q8_0). Los niveles intermedios más usados rondan 4,8 GB (Nano-27pc), 5,3 GB (Mini-30pc) y 5,8 GB (Compact-33pc).
+- GPU recomendadas: no especificadas en la información disponible. Por tamaño, los niveles de 4-6 GB caben en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores; los niveles de 8-9 GB requieren 12 GB o más de VRAM (RTX 4070 Ti Super, RTX 4080, RTX 4090, A100, H100).
+- Cabe en GPU de consumo: sí, al menos las variantes Compact-33pc, Mini-30pc, Nano-27pc, Pico-24pc y Femto-21pc en tarjetas de 8-12 GB.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), Ollama (a través de GGUF), transformers (pesos safetensors del repo), y endpoints compatibles según el tag endpoints_compatible. No se confirma soporte de vLLM ni TGI en la información disponible.
+- Latencia y throughput: no disponibles. La model card solo indica que la configuración MTP con KV cache q5_1 y draft cache q8_0 ofrece velocidad igual o mejor con contexto muy cargado, sin cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos externos comparables en los datos proporcionados. La unica comparacion posible es interna, entre los tiers Paretrix y los quants uniformes de referencia del propio autor:
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Ornith-1.5-9B-DFlash-Paretrix (Nano-27pc) | ~9B | no disponible | GGUF | MIT | KLD 0,0648, 4.794 MiB, incluye draft DFlash y MTP |
+| Ornith-1.5-9B (base) | ~9B | no disponible | safetensors | MIT (según license_link) | Modelo sin cuantizar de referencia |
+| IQ4_XS-imx (stock) del mismo modelo | ~9B | no disponible | GGUF | MIT | KLD 0,0729, 4.956 MiB, cuantización uniforme estándar |
+| Q4_K_M de modelos ~9B comparables | ~9B | no disponible | GGUF | variable | No se dispone de datos medidos en la misma escala para comparar |
 
-| Tier | MiB | KLD | Comparacion declarada |
-| :--- | ---: | ---: | :--- |
-| Quality-36pc | 6234 | 0,0449 | Pareto sobre Q6_K-imx (7018 MiB, KLD 0,0251) en tamano |
-| Compact-33pc | 5787 | 0,0610 | Supera a Q5_K_M-imx (6168 MiB, KLD 0,1013) con 381 MiB menos |
-| Mini-30pc | 5368 | 0,0679 | Se situa en la frontera Pareto por debajo de Compact-33pc |
-| Pico-24pc | 4070 | 0,1540 | Supera a IQ3_M-imx (4211 MiB, KLD 0,1807) con 141 MiB menos |
-| Femto-21pc | 3601 | 0,2524 | Tier mas comprimido del catalogo |
+La comparativa se limita a variantes del propio modelo porque la información proporcionada no incluye resultados de otros modelos de ~9B medidos con las mismas métricas (PPL, KLD, RMS Δp, top-p) sobre el mismo corpus.
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion de terceros, no una publicacion oficial de ornith-ai; el repositorio tiene 0 descargas y 0 likes, por lo que no cuenta con validacion de la comunidad.
-- Toda cuantizacion introduce degradacion. Los tiers bajos muestran KLD creciente (0,1540 en Pico-24pc y 0,2524 en Femto-21pc) y top-p decreciente (84,7% y 80,6%), lo que indica desviacion apreciable respecto a la distribucion del modelo original.
-- El simbolo † de la tabla no esta definido en la informacion disponible, lo que impide interpretar con rigor las comparaciones de PPL entre tiers marcados y no marcados.
-- No se especifican los idiomas soportados, de modo que no puede garantizarse un rendimiento adecuado en castellano ni en otros idiomas distintos del ingles.
-- La etiqueta vision aparece en los tags, pero no se documenta que modulo visual acompana al modelo ni como se activa; no debe asumirse soporte multimodal sin verificacion.
-- No hay informacion sobre sesgos del modelo base, datos de entrenamiento ni procesos de alineamiento, por lo que no pueden evaluarse sesgos ni riesgos especificos.
-- Riesgo de alucinacion: inherente a los modelos generativos; no se aportan tasas de factualidad ni evaluaciones de veracidad.
-- Licencia MIT, que en principio permite uso comercial, modificacion y redistribucion; conviene revisar la licencia del modelo base enlazada en la model card por si impone condiciones adicionales.
-- El rendimiento real depende del runtime, del contexto efectivo y del hardware; los tamaños en MiB solo cubren los pesos, no el cache KV ni el overhead de inferencia.
-- No se publican mediciones de latencia, throughput ni de la aceleracion esperada con el draft DFlash, asi que su beneficio practico no esta cuantificado.
+- No se han publicado datos sobre sesgos del modelo base; se desconoce su comportamiento en dominios sensibles.
+- Riesgo de alucinación no cuantificado: no hay benchmarks de veracidad ni evaluaciones de factualidad en la información disponible.
+- Los niveles de cuantización agresiva (Pico-24pc, Femto-21pc) degradan la fidelidad de forma notable: KLD 0,1248 y 0,1784 respectivamente, frente a 0,0100 de Q8_0. No se recomiendan para tareas que exijan precisión alta.
+- La model card advierte que la versión MTP no debe ejecutarse junto con un draft DFlash o DSpark; hacerlo puede provocar un comportamiento incorrecto.
+- El repositorio ocupa 231,1 GB, lo que exige planificar la descarga y el almacenamiento; conviene descargar solo el nivel GGUF necesario.
+- La longitud de contexto y los idiomas soportados no están documentados, lo que impide garantizar su comportamiento en contextos largos o en castellano.
+- El soporte de visión aparece solo como tag, sin documentación de resolución, tipos de imagen ni evaluación; no debe asumirse en producción sin validación previa.
+- La licencia MIT permite uso comercial, pero se hereda del modelo base; conviene verificar el LICENSE enlazado en ornith-ai/Ornith-1.5-9B por si hubiera condiciones adicionales.
+- El modelo lo publica un usuario individual (Soulfate24), no el equipo de ornith-ai; la trazabilidad y el mantenimiento no están garantizados.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Soulfate24/Ornith-1.5-9B-DFlash-Paretrix
+- Repositorio Hugging Face: https://huggingface.co/Soulfate24/Ornith-1.5-9B-DFlash-Paretrix
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Draft DFlash: https://huggingface.co/ornith-ai/Ornith-1.5-9B-DFlash
-- Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B/blob/main/LICENSE
-- llama-imatrix (herramienta de calibracion citada): no disponible como enlace en la informacion proporcionada
-- Paper o blog tecnico de Paretrix: no disponible en la informacion proporcionada
+- Suite de cuantización Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite

@@ -2,125 +2,108 @@
 
 ## Resumen
 
-decider-2b es un modelo de decisión desarrollado por Mapika, un ajuste fino completo de Qwen/Qwen3.5-2B-Base (1.881.825.088 parámetros, ~1,9B) que no genera texto libre. Su función es leer un contexto más una o varias preguntas tipadas, cada una con su lista explícita de opciones, y devolver en una única pasada hacia delante (one-pass) una distribución de probabilidad calibrada sobre las opciones de cada pregunta, sin decodificación autoregresiva, sin parseo de JSON y sin posibilidad de violar un esquema.
+decider-2b es un modelo de decisión tipada desarrollado por Mapika, construido sobre la arquitectura de Qwen3.5-2B-Base. No es un modelo generativo en el sentido habitual: no produce texto libre, sino que recibe un estado (texto y, desde la versión v12, también imágenes) junto con una o varias preguntas tipadas, cada una con su lista explícita de opciones, y devuelve en una única pasada forward una distribución de probabilidad calibrada sobre las opciones de cada pregunta. Está pensado para ser invocado desde software, no para conversar.
 
-El modelo se presenta como una replicación abierta de la idea de "System One model": en lugar de un LLM conversacional, es un componente invocable desde software. Adopta la forma de petición de la API de TypeSafe (Jev, `POST /v1/systemone`) y es compatible con el `typesafe-sdk` oficial apuntando a un servidor local, con tipos de pregunta de elección (2 a 255 opciones), un tipo de respuesta sí/no y un tipo Score con niveles ordenados. Está entrenado sobre una mezcla de 64 conjuntos de datos públicos de decisión y ejemplos situación-a-acción, e incluye modos de abstención por umbral de confianza para derivar casos dudosos a revisión humana.
+El modelo se enmarca en la familia decider de Mapika, que incluye variantes de 4B, 12B, 31B y 35B-A3B con una interfaz común (`POST /v1/systemone`). La versión actual del repositorio es la v12 (20 de octubre de 2026), que añade soporte de imágenes mediante la torre visual de Qwen3.5-2B-Base y mejora el rendimiento en el Decision Index de 28,05 a 38,17 sobre una muestra de 4.500 peticiones.
 
-Es relevante porque ataca un problema distinto al de los LLM generativos habituales: el enrutado y la clasificación estructurada de baja latencia y alta reproducibilidad en producción. En lugar de pedir a un modelo generativo que escriba la etiqueta correcta y validar su salida, decider-2b expone directamente una probabilidad por opción, lo que simplifica el control de calidad, el establecimiento de umbrales y la integración en pipelines. La model card describe la versión v8; el repositorio ocupa 15,1 GB, muy por encima de lo que ocuparía un único checkpoint, lo que sugiere que aloja varias versiones del modelo además del código auxiliar.
+Con 1.881.825.088 parámetros y licencia Apache 2.0, decider-2b se posiciona como la variante más rápida de la familia, orientada a enrutamiento, clasificación y juicios automatizados donde la latencia importa. La filosofía es "system-one": una sola pasada, sin cadena de pensamiento ni generación iterativa, lo que lo hace adecuado para integrarse en pipelines como componente de decisión de baja latencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Qwen3.5 con capas de atención lineal (tag `qwen3_5_text`); ajuste fino completo para decisión de una pasada |
-| Parametros totales | 1.881.825.088 (~1,9B) |
-| Parametros activos | No procede: no es MoE |
-| Longitud de contexto | Hasta 32k tokens incluyendo el estado y las preguntas (según model card); contexto nativo del modelo base: no disponible |
-| Tipos de cuantizacion | No disponible (no se documenta ningún formato cuantizado; el tag declara safetensors sin especificar precisión, se usa `bfloat16` en los ejemplos de la model card) |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer denso (Qwen3.5-2B-Base) con torre visual para entrada de imágenes |
+| Parametros totales | 1.881.825.088 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16 (pesos publicados); builds GGUF disponibles según la model card |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (carga con `transformers`); incluye el paquete Python `decider/` en el propio repositorio |
-| Modelo base | Qwen/Qwen3.5-2B-Base |
-| Pipeline declarado | text-classification |
-| Tamaño del repositorio | 15,1 GB |
-| Descargas / likes | 111 / 10 |
-| Fechas | Creado 2026-09-16, actualizado 2026-09-18 |
+| Formato de pesos | safetensors (modelo de texto en raíz, 3,8 GB bf16); torre visual en `vision/` (0,6 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-2B-Base, un transformer denso de ~1,9B parámetros con capas de atención lineal propias de la familia Qwen3.5. El repositorio exige `flash-linear-attention` para usar los kernels Triton de esas capas: el modelo funciona sin ellos, pero varias veces más lento. El ajuste no es un LoRA ni un adaptador, sino un fine-tuning completo durante una época sobre 942.000 ejemplos (183M tokens), entrenado en 2,5 horas en una única NVIDIA GH200 con entropía cruzada, elegida explícitamente como regla de puntuación propia (proper scoring rule) para obtener probabilidades calibradas en lugar de etiquetas argmax. El corpus de esa primera época es una mezcla de 64 conjuntos de datos públicos de decisión.
+decider-2b parte de Qwen3.5-2B-Base, un transformer denso de aproximadamente 1,88 mil millones de parámetros. La innovación no está en la arquitectura base sino en la cabeza de decisión y el readout: el modelo recibe preguntas tipadas (`choice`, `noul`, `score`) con opciones explícitas y emite una distribución de probabilidad sobre ellas en una sola pasada forward, sin decodificación autoregresiva. Para imágenes, la v12 incorpora la torre visual de Qwen3.5-2B-Base sin modificar (0,6 GB) y reutiliza los pesos del modelo de texto para el camino imagen-texto; la imagen se coloca delante del prompt, como en entrenamiento.
 
-Sobre esa base se encadenan fases adicionales: una segunda época con 45.000 ejemplos situación-a-acción (trayectorias de agente, elección de elementos web, situaciones sintéticas y estados de juego) con replay de la mezcla general (v4); y las iteraciones v6 a v8, que continúan el entrenamiento sobre las formas de entrada de la API Jev de TypeSafe (opciones descritas, hasta 255 opciones, estados JSON con referencias por ruta, entradas largas y preguntas puntuadas de forma independiente), sobre preguntas personalizadas escritas por un profesor (sí/no libres, opciones nombradas por el usuario, una opción genérica junto a un catch-all), sobre una segunda disposición de prompt cacheable y sobre niveles Score aislados. La model card describe v8.
+El entrenamiento de la v12 parte de la v11. Los pesos de texto se insertaron en el modelo imagen-texto de Qwen3.5-2B-Base y después se aplicó una etapa LoRA (rango 64, learning rate 1e-4, 2 épocas, 56 minutos en una B300) solo sobre el modelo de lenguaje. Los datos de texto suman 39,5k filas de la mezcla de entrenamiento de decider-31b (splits de train de CLINC150, iSarcasmEval, VAST, ACOS, POP909-CL, GSM8K y NLI4CT, decontaminados contra las suites del Decision Index 0.3, más peticiones de domótica generadas, decisiones de seguimiento de estado, preguntas documentales de Qwen3.6-27B y filas públicas etiquetadas) más 6,7k filas replicadas de los datos de decider-4b v2.1. Los datos de imagen suman 18.129 filas de splits de train de siete subconjuntos de the_cauldron: AI2D, A-OKVQA, Hateful Memes, IconQA, RAVEN, ScienceQA y TQA. Visual7W y VSR se reservaron como evaluación (nunca vistos en entrenamiento).
 
-Dos detalles de diseño son destacables. Primero, cada pregunta se puntúa en su propia fila, de modo que la respuesta a una pregunta no depende de qué otras preguntas se formulen; la opción `independent=False` las empaqueta en una sola fila y reduce la latencia aproximadamente a la mitad para estados cortos. Segundo, el método `schema(questions)` precalcula el prefijo de preguntas fijo y permite que cada petición ejecute solo el estado, con una ganancia de 1,2 a 2,4 veces por petición y hasta 19 veces por lote, a cambio de una pérdida de precisión que el autor cuantifica en unos 1,5 puntos en conjuntos de etiquetas fijos y unos 5 puntos con opciones por ejemplo, y mayor aún con más de 50 opciones y estados de varios miles de tokens.
+Una decisión de calibración destacable: la v12 usa temperatura 0,05 para respuestas sí/no (`noul`), de modo que las probabilidades salen cerca de 0 o 1. Esto mejora la puntuación en JevBench (que cuenta como errónea una probabilidad sí/no entre 0,2 y 0,8) pero sacrifica calibración: ECE 0,341 en lugar de 0,095. Para probabilidades sí/no calibradas hay que usar `temperature_by_type={"choice": 2.465, "noul": 3.185, "score": 2.833}`.
 
 ## Capacidades
 
-- Clasificación con opciones explícitas: devuelve una distribución de probabilidad sobre las opciones de cada pregunta en una sola pasada, con `choice` y `confidence` por pregunta.
-- Multi-pregunta en una pasada: varias preguntas sobre el mismo contexto, puntuadas de forma independiente (cada una en su propia fila) para que las respuestas no se condicionen entre sí.
-- Rango de opciones amplio: de 2 a 255 opciones por pregunta; por encima de 10 opciones utiliza un token de etiqueta por opción (según `decider/prompt.py`).
-- Tipos de pregunta estructurados: `choice` (elección entre opciones descritas, con criterios y campo `not_for`), `noul` (sí/no) y `score` (niveles ordenados con leyenda).
-- Puntuación de niveles aislada: cada nivel Score se evalúa en su propia fila, sin su número ni sus vecinos, y los ajustes por nivel se normalizan; la respuesta informa `level_fit` y su suma `fit_mass`.
-- Estados ricos: el estado puede ser una cadena, un objeto o un array, con referencias por ruta desde las instrucciones (por ejemplo `ticket.messages[0].text`), hasta 32k tokens junto con las preguntas.
-- Instrucciones y descripciones de opción como cadena o cualquier valor JSON; los identificadores de pregunta nunca se muestran al modelo.
-- Procesamiento por lotes: `decide_batch` puntúa muchos contextos con muchas preguntas en una sola llamada.
-- Abstención calibrada: `abstain_below=t` devuelve `None` en las decisiones con confianza inferior a `t`, pensado para derivar a un humano.
-- Salida sin parseo: no hay decodificación de texto ni validación de esquema, por lo que no existen violaciones de formato.
-- Servidor HTTP opcional: `decider.serve` expone `POST /v1/systemone` y el `typesafe-sdk` oficial funciona contra él sin cambios configurando `TYPESAFE_BASE_URL`.
-- Modo de compatibilidad con `transformers` puro: la misma computación se puede reproducir leyendo los logits en la posición del paréntesis de cada bloque `Answer k: (`.
+- Clasificación y enrutamiento tipado: devuelve distribuciones de probabilidad sobre listas de opciones explícitas para preguntas `choice`.
+- Juicios booleanos (`noul`): respuestas sí/no con temperatura configurable (0,05 por defecto en v12, o calibrada).
+- Puntuación (`score`): preguntas con escala de puntuación tipada.
+- Decisión multi-pregunta en una sola pasada: varias preguntas sobre el mismo estado se resuelven en un único forward.
+- Entrada de imágenes (v12): hasta 4 imágenes por petición (`DECIDER_MAX_IMAGES`), en PNG y JPEG, referenciadas por clave desde el estado.
+- Salida estructurada y calibrada: probabilidades por opción, aptas para consumo programático.
+- Multilingüe: no disponible; la model card declara únicamente inglés (`en`).
+- Tool calling / function calling: no disponible como capacidad declarada; el modelo se invoca vía API propia (`/v1/systemone`), no como generador de llamadas.
+- Agentes multi-paso: no disponible; el diseño es explícitamente "system-one", de una sola pasada sin razonamiento iterativo.
+- Modo thinking: no; el modelo no genera texto.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: el ejemplo de la propia model card clasifica una incidencia ("me han cobrado dos veces") en `billing`, `technical support` o `sales` con confianza asociada, y permite encadenar una segunda pregunta sobre si requiere reembolso; el tamaño de 1,9B y la pasada única lo hacen viable a alto volumen.
-- Triaje con derivación a humano: combinando `abstain_below` con las probabilidades por clase, un equipo puede automatizar solo los casos de alta confianza y enviar el resto a un agente, algo que un modelo generativo no ofrece de forma nativa.
-- Elección de elementos en automatización web y agentes: la fase de entrenamiento situación-a-acción incluye elección de elementos web y trayectorias de agente, por lo que el modelo puede seleccionar entre opciones descritas (botones, enlaces, acciones) sin generar texto intermedio.
-- Etiquetado masivo de conjuntos de datos: `decide_batch` puntúa muchos contextos con muchas preguntas en una llamada, útil para asignar categorías, intenciones o atributos a corpus grandes de forma reproducible.
-- Extracción estructurada sobre estados JSON: con estados como objetos y referencias por ruta (`ticket.messages[0].text`), se pueden resolver preguntas booleanas o de elección directamente sobre los campos de un payload sin escribir expresiones de extracción ni parsear la salida del modelo.
-- Encuestas y voz del cliente con escala: el tipo `score` con niveles (`calm`, `frustrated`, `very frustrated`) permite convertir texto libre en una puntuación ordenada y normalizada, con `fit_mass` como indicador de coherencia del ajuste.
-- Evaluación de estados en agentes de refuerzo o juegos: el entrenamiento incluye estados de juego, de modo que el modelo puede actuar como política de decisión discreta sobre representaciones textuales o JSON del estado.
-- Conmutación de política en sistemas de decisión existentes: al replicar la forma de petición de la API Jev de TypeSafe y ser compatible con `typesafe-sdk`, puede actuar como backend local sustituible por servicio remoto cambiando una variable de entorno.
+- Enrutamiento de tickets de soporte: clasificar una queja entrante en departamentos (facturación, soporte técnico, ventas) con una pregunta `choice` y obtener la distribución de probabilidad para decidir asignación o escalado automático; la latencia de una sola pasada lo hace viable en línea.
+- Moderación de contenido en imágenes: usar la entrada visual para preguntas tipadas sobre memes o capturas (por ejemplo, Hateful Memes está en su mezcla de entrenamiento) y obtener un juicio sí/no o una categoría con probabilidad asociada.
+- Triaje documental: responder preguntas `noul` sobre documentos y estados estructurados (el entrenamiento incluye NLI4CT y preguntas documentales) para decidir si un caso requiere revisión humana.
+- Control de domótica: interpretar peticiones de smart home generadas durante el entrenamiento y decidir acciones tipadas sobre el estado del hogar.
+- Evaluación de gráficos en informes: con la ruta de imagen, preguntar si un gráfico de resultados trimestrales exige escalado según un criterio textual, como en el ejemplo de la model card.
+- Clasificación de sentimiento e ironía: las mezclas incluyen iSarcasmEval y VAST, lo que permite usarlo como clasificador de sarcasmo o sentimiento con salida probabilística calibrada.
+- Filtro previo en pipelines generativos: como componente de decisión barato (2B, bf16, 3,8 GB) que enruta o descarta casos antes de invocar un modelo generativo mayor, reduciendo coste y latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Benchmark | v11 | v12 |
+|---|---|---|
+| Decision Index 0.3 (muestra de 4.500 peticiones) | 28,05 | 38,17 |
+| Preguntas de imagen (media de 11 conjuntos) | 0,780 | 0,847 |
+| Visual7W (no entrenado) | 0,863 | 0,863 |
+| VSR (no entrenado) | 0,713 | 0,717 |
+| JevBench, ítems públicos, tier difícil | 0,577 | 0,595 |
+| JevBench, ítems públicos, tier estándar | 0,889 | 0,917 |
+| Conjunto held-out sí/no (puntuado como JevBench) | −27,9 | 29,6 |
 
-La model card no incluye tablas de MMLU, HumanEval, GSM8K ni métricas equivalentes, y tampoco se han encontrado evaluaciones independientes. Los únicos datos cuantitativos publicados son de ingeniería, no de calidad de decisión:
-
-| Dato aportado por el autor | Valor |
-|---|---|
-| Ejemplos de la primera época de ajuste | 942.000 (183M tokens) |
-| Ejemplos de la segunda época (situación-a-acción) | 45.000 |
-| Conjuntos de datos públicos de decisión en la mezcla | 64 |
-| Tiempo de entrenamiento (1 época, 1x NVIDIA GH200) | 2,5 horas |
-| Coste de precisión del layout questions-first (etiquetas fijas) | ~1,5 puntos |
-| Coste de precisión del layout questions-first (opciones por ejemplo) | ~5 puntos (mayor con 50+ opciones y estados largos) |
-| Aceleración por petición con `schema()` | 1,2 a 2,4 veces |
-| Aceleración por lote con `schema()` | hasta 19 veces |
-| Reducción de latencia con `independent=False` | ~la mitad (estados cortos) |
+No se han publicado en la información disponible resultados de MMLU, HumanEval ni GSM8K para este modelo; los datos anteriores son los únicos benchmarks reportados en la model card.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en `bfloat16`: aproximadamente 3,8 GB solo de pesos (1.881.825.088 parámetros x 2 bytes), más activaciones y caché de claves/valores, que crece con la longitud del estado y las preguntas (hasta 32k tokens). Estimación calculada a partir del recuento de parámetros, no publicada por el autor.
-- VRAM en `float32`: unos 7,5 GB de pesos; no se documenta ningún formato cuantizado oficial, por lo que los valores de 8 o 4 bits solo serían aplicables mediante cuantización externa (por ejemplo `bitsandbytes`) y no están validados.
-- GPU de consumo: cabe en tarjetas de 8-12 GB o superiores (RTX 3060 12 GB, RTX 4070/4080, RTX 4090) en `bfloat16`, con margen dependiente de la longitud de contexto.
-- GPU de centro de datos: A100, H100 y GH200; el autor realizó el fine-tuning completo en una única NVIDIA GH200.
-- Software obligatorio: `torch`, `transformers>=5` y `flash-linear-attention` (kernels Triton para las capas de atención lineal de Qwen3.5). Sin ese paquete el modelo funciona, pero varias veces más lento. Se recomienda Python 3.11+ para que los kernels usen `torch.compile`.
-- Opciones de despliegue documentadas: `transformers` con `AutoModelForCausalLM`, el paquete `decider` incluido en el repositorio (clase `Decider`, `decide`, `decide_batch`, `schema`), y `decider.serve` como servidor HTTP `POST /v1/systemone`. Compatible con el `typesafe-sdk` oficial.
-- Despliegue con vLLM, llama.cpp, Ollama, TGI o GGUF: no disponible; la model card no menciona ninguno de estos motores ni publica pesos en GGUF.
-- Latencia y throughput absolutos: no disponible. Solo se publican cifras relativas (aceleraciones de `schema()` y de `independent=False`), sin valores en milisegundos ni peticiones por segundo.
-- El repositorio pesa 15,1 GB, muy por encima del peso de un único checkpoint en `bfloat16`; conviene comprobar qué archivos de pesos se descargan antes de desplegar.
+- VRAM estimada para inferencia: los pesos de texto en bf16 ocupan 3,8 GB; la torre visual añade 0,6 GB. Con overhead de activaciones y runtime, se puede asumir un rango aproximado de 6-10 GB en bf16 para texto, y algo más con imágenes (estimación, no dato publicado).
+- GPU recomendadas: no hay recomendaciones explícitas en la model card. El entrenamiento LoRA se hizo en una B300. Por tamaño, cabe en GPUs consumer modernas (RTX 4090 de 24 GB, RTX 3090 de 24 GB) y en GPUs de datacenter (A100, H100).
+- Cabe en consumer GPU: sí, por tamaño de pesos (3,8 GB bf16 + 0,6 GB visión); una GPU de 8-12 GB debería bastar para texto en bf16, aunque no se publica cifra oficial.
+- Opciones de despliegue: `decider.infer.Decider` (Python), servidor `decider.serve` con endpoint `POST /v1/systemone`, y builds GGUF mencionados en la model card. Requiere `torch`, `transformers>=5` y `flash-linear-attention`; para imágenes, `pillow` y decider-ai 1.10.0 (el texto funciona desde 1.4.0).
+- Latencia y throughput: no disponibles como cifras publicadas. La model card indica que las filas de imagen se leen de una en una, sin batching ni CUDA graphs, lo que limita el throughput en el camino visual.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de evaluaciones comparativas publicadas en la informacion disponible, por lo que no es posible establecer una comparación de rendimiento con alternativas. La comparación se limita a los datos verificables del propio modelo y de su base:
+| Modelo | Base | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
+|---|---|---|---|---|---|---|
+| decider-2b v12 | Qwen3.5-2B-Base | 1,88B | no disponible | en | Apache 2.0 | Decisión tipada, texto e imagen |
+| decider-4b v3 | Qwen3.5-4B-Base | no disponible | no disponible | no disponible | no disponible | Punto medio, texto e imagen |
+| decider-12b v2 | Gemma-4-12B-it | no disponible | no disponible | no disponible | no disponible | Modelo JevBench, texto |
+| decider-31b v2 | Gemma-4-31B-it, NVFP4 | no disponible | no disponible | no disponible | no disponible | El más potente, texto e imagen, vLLM en Blackwell |
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Estado |
-|---|---|---|---|---|---|
-| Mapika/decider-2b | 1,9B | hasta 32k tokens (estado + preguntas) | Decisión/clasificación con opciones, salida probabilística en una pasada | Apache 2.0 | Publicado en Hugging Face (111 descargas, 10 likes) |
-| Qwen/Qwen3.5-2B-Base | ~1,9B | no disponible | Modelo base generativo | no disponible en la informacion proporcionada | Publicado en Hugging Face (referenciado como base) |
-| Alternativas de clasificación con LLM generativo | no disponible | no disponible | Generación de etiqueta + validación de esquema | no disponible | no disponible |
-| Alternativas de enrutado tipo "System One" | no disponible | no disponible | Decisión de una pasada | no disponible | no disponible |
-
-El autor menciona la API Jev de TypeSafe (`POST /v1/systemone`) como el servicio con cuya forma de petición es compatible el modelo, pero no se aportan cifras comparativas entre ambos.
+La comparación relevante es dentro de la propia familia decider: decider-2b es la variante más rápida y ligera, decider-4b el punto medio, decider-12b el modelo de referencia para JevBench y decider-31b el de mayor capacidad. No se dispone de datos de benchmarks cruzados entre estas variantes en la información proporcionada, salvo que la mezcla de entrenamiento de decider-31b se reutilizó para la v12 de decider-2b.
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto: fuera de ámbitos de decisión con opciones explícitas no es utilizable. No sirve para redacción, resumen, diálogo abierto ni generación de código.
-- Idioma: solo inglés declarado (`language: [en]`). El comportamiento con entradas en castellano u otros idiomas no está documentado ni evaluado.
-- Sin benchmarks publicados: no hay métricas de precisión, calibración real (ECE, Brier) ni evaluación independiente; las confianzas devueltas deben validarse en el dominio concreto antes de confiar en los umbrales de abstención.
-- Riesgo de calibración sobreestimada: el ejemplo de la model card devuelve confianzas de 0,99 en un caso trivial; no debe interpretarse como garantía de acierto. Conviene calibrar con datos propios y usar `abstain_below`.
-- Sensibilidad al formato: el layout questions-first, útil para cachear, cuesta precisión (unos 1,5 puntos con etiquetas fijas y unos 5 con opciones por ejemplo, más con 50+ opciones o estados de miles de tokens). Las cifras de latencia y precisión dependen de la configuración elegida.
-- Límite práctico de contexto: 32k tokens incluyendo estado y preguntas; estados más largos quedan fuera. No se documenta degradación por longitud dentro del límite.
-- Poca adopción y escasa validación externa: 111 descargas y 10 likes en el momento de la consulta, con una model card extensa que describe varias iteraciones (v4 a v8) y es fácil equivocarse sobre qué checkpoint se está sirviendo.
-- Ambigüedad del repositorio: 15,1 GB para un modelo de 1,9B implica contenido adicional (código `decider/` y posiblemente varios checkpoints); revisar los archivos antes de producción.
-- Dependencia de kernels Triton: sin `flash-linear-attention` el rendimiento cae varias veces; esto condiciona el hardware y el stack (GPU con soporte Triton, Python 3.11+).
-- Sesgos: no se documenta ninguna evaluación de sesgos, toxicidad ni equidad. Al derivar de un corpus de 64 conjuntos públicos de decisión, puede heredar sesgos de anotación y de dominio de esos datos.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; si se usa la compatibilidad con la API Jev de TypeSafe, revisar las condiciones del servicio de terceros por separado.
-- No hay pesos cuantizados oficiales ni soporte declarado para GGUF, vLLM, Ollama o TGI, lo que limita las opciones de despliegue de bajo coste sin trabajo adicional.
+- No es un modelo generativo: no produce texto libre ni mantiene conversaciones; solo emite distribuciones sobre opciones predefinidas.
+- Idioma: solo inglés declarado; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Calibración sacrificada en sí/no: con la temperatura por defecto de 0,05, las probabilidades sí/no no están calibradas (ECE 0,341 frente a 0,095 con la temperatura ajustada). Para uso donde la probabilidad importe, hay que configurar `temperature_by_type`.
+- Sesgos: no se documentan sesgos específicos, pero los datos de entrenamiento incluyen subconjuntos como Hateful Memes e iSarcasmEval, cuyos sesgos de anotación pueden propagarse. No hay evaluación de sesgo publicada.
+- Alucinación: al no generar texto, el riesgo de alucinación textual es bajo, pero las probabilidades pueden ser erróneas o sobreconfiadas en dominios fuera de la distribución de entrenamiento.
+- Límites de imagen: máximo 4 imágenes por petición; no se admiten referencias a imágenes en el texto de la pregunta ni respuestas en forma de caja (box answers); sin batching ni CUDA graphs en el camino visual.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las licencias de los modelos base (Qwen3.5-2B-Base) y de los datasets de entrenamiento.
+- Contaminación: la model card indica decontaminación contra las suites del Decision Index 0.3, pero el entrenamiento usa splits de train de benchmarks que el índice también evalúa, lo que puede inflar la métrica del Decision Index.
+- Longitud de contexto no publicada: limita la planificación para estados largos o documentos extensos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Mapika/decider-2b
-- Modelo base Qwen/Qwen3.5-2B-Base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
-- Paquete de inferencia incluido en el repositorio: carpeta `decider/` del propio repositorio (clases `Decider`, `decider.serve`, módulo `decider/prompt.py`)
-- Los resultados de la búsqueda web realizada no contienen ningún enlace relevante al modelo, a su paper ni a repositorios asociados; no se dispone de URL de paper, blog técnico ni demo.
+- Hugging Face: https://huggingface.co/Mapika/decider-2b
+- Repositorio de código: https://github.com/Mapika/decider
+- decider-4b: https://huggingface.co/Mapika/decider-4b
+- decider-12b: https://huggingface.co/Mapika/decider-12b
+- decider-12b-vision: https://huggingface.co/Mapika/decider-12b-vision
+- decider-31b: https://huggingface.co/Mapika/decider-31b
+- decider-35b-a3b: https://huggingface.co/Mapika/decider-35b-a3b
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base

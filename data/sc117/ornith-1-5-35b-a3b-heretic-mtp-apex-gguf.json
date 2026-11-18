@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 51,
-  "downloads_30d": 15838,
+  "downloads_30d": 15860,
   "trending_score": 9,
   "parameters": 446571248,
   "parameters_human": "446.6M",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF · Hugging Face",
-      "url": "https://huggingface.co/SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
-      "snippet": "Ornith-1.5-35B-A3B is DeepReinforce&#x27;s Qwen3.5 MoE agentic coding model. This experimental derivative merges the selected Heretic 1.4.0 Trial 62 LoRA into BF16 weights. The shipped native MTP head is untrained (initializer-like statistics). It is replaced here with the 19-tensor fused BF16 head from shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY (Qwen3.6 graft + 12K KL distillation). Refusal-modified ..."
-    },
-    {
-      "title": "SC117/Ornith-1.5-35B-A3B-MTP-APEX-GGUF · Hugging Face",
-      "url": "https://huggingface.co/SC117/Ornith-1.5-35B-A3B-MTP-APEX-GGUF",
-      "snippet": "Ornith-1.5-35B-A3B is a self-improving agentic coding model from the Ornith Team. It extends Ornith-1.0 by expanding the self-improvement loop from scaffold and rollout optimization to jointly optimizing task generation, scaffold construction, and solution rollouts — continuously generating new training tasks, discovering effective strategies, and improving the policy through reinforcement ..."
-    },
-    {
-      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
-      "url": "https://ornith.ai/ornith_1_5.html",
-      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
-    },
-    {
-      "title": "Ornith 1.5 35b A3b Mtp Apex Gguf - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/sc117/ornith-1.5-35b-a3b-mtp-apex-gguf",
-      "snippet": "Registry entry for model Ornith 1.5 35b A3b Mtp Apex Gguf; source metadata pending."
-    },
-    {
-      "title": "Ornith AI - Open-Source Agentic Coding Models",
-      "url": "https://ornith.online/",
-      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
-    }
-  ]
+  "sources": []
 }

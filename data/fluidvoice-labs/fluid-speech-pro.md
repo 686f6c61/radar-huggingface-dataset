@@ -2,89 +2,104 @@
 
 ## Resumen
 
-Fluid Speech Pro es un modelo de reconocimiento automático del habla (ASR) desarrollado por FluidVoice-Labs, el equipo detrás de la aplicación de dictado FluidVoice. Se trata de un ajuste fino (finetune) construido sobre NVIDIA Parakeet TDT 0.6B v3 y Moondream Parakeet Ultra, ambos bajo licencia CC BY 4.0, y orientado a la transcripción de voz a texto en inglés y otras 24 lenguas europeas.
+Fluid Speech Pro es un modelo de reconocimiento automático del habla (ASR) de 627 millones de parámetros desarrollado por FluidVoice-Labs, el equipo detrás del producto FluidVoice. Se construye sobre el checkpoint NVIDIA Parakeet TDT 0.6B v3 y conserva su cobertura de 25 lenguas europeas, con detección automática de idioma sin necesidad de indicar el idioma en el prompt. Su propósito es ofrecer transcripción precisa y muy rápida para dictado, subtitulado, notas de reunión y análisis de llamadas.
 
-El modelo emplea la arquitectura FastConformer con decodificación TDT (Token-and-Duration Transducer), una variante de los transductores que predice simultáneamente tokens y duraciones, lo que permite una decodificación más rápida y eficiente que los transductores tradicionales. Con aproximadamente 0,6 mil millones de parámetros, se sitúa en la gama de modelos ASR ligeros que pueden ejecutarse en hardware modesto.
+La arquitectura es un FastConformer-TDT (encoder FastConformer con decoder token-and-duration transducer), con un bloque adicional pequeño insertado entre el subsampling del encoder y su primera capa Conformer. El modelo se distribuye en cinco formatos (NeMo + Transformers, ONNX, MLX, GGUF y Core ML) para cubrir servidores con GPU NVIDIA, CPUs, Apple Silicon y aplicaciones Swift nativas.
 
-Su relevancia actual radica en la cobertura multilingüe (25 idiomas europeos) combinada con una licencia permisiva (CC BY 4.0) que permite uso comercial con atribución. Además, incorpora un modo "clean" que elimina palabras repetidas y muletillas, una funcionalidad práctica para transcripción de reuniones y dictado. El modelo se distribuye a través de la librería NVIDIA NeMo y requiere un script propio (`fluid_speech.py`) incluido en el repositorio para su carga.
+El modelo se posiciona como el segundo mejor modelo abierto en el Open ASR Leaderboard con un WER medio de 6,06, y como el más preciso por debajo de 1B de parámetros. Incluye puntuación y capitalización, timestamps a nivel de palabra y de segmento (vía NeMo) y un modo "clean" opcional que elimina repeticiones y muletillas. La licencia CC BY 4.0 permite uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | FastConformer con decodificador TDT (Token-and-Duration Transducer) |
-| Parametros totales | aproximadamente 0,6 mil millones (heredado de Parakeet TDT 0.6B v3) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | 25: búlgaro, croata, checo, danés, neerlandés, inglés, estonio, finlandés, francés, alemán, griego, húngaro, italiano, letón, lituano, maltés, polaco, portugués, rumano, eslovaco, esloveno, español, sueco, ruso y ucraniano |
+| Arquitectura | FastConformer-TDT (encoder FastConformer + decoder token-and-duration transducer) |
+| Parámetros totales | 627.057.286 (0,63B) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo ASR; procesa audio de entrada, no texto) |
+| Tipos de cuantización | no disponible en la información proporcionada (existen variantes GGUF, ONNX, MLX y Core ML) |
+| Idiomas soportados | 25 lenguas europeas: bg, hr, cs, da, nl, en, et, fi, fr, de, el, hu, it, lv, lt, mt, pl, pt, ro, sk, sl, es, sv, ru, uk |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | NeMo (`.nemo`), cargable mediante `fluid_speech.load()`; tamano del repo 2,6 GB |
+| Formato de pesos | safetensors (NeMo + Transformers); variantes ONNX, MLX, GGUF y Core ML en repos separados |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura FastConformer, una variante eficiente del Conformer que reduce la longitud de secuencia mediante downsampling por capas, combinada con un decodificador TDT (Token-and-Duration Transducer). El decodificador TDT predice conjuntamente el token de salida y su duración, lo que permite saltos de emisión variables y acelera la inferencia frente a los transductores RNN-T clásicos. El modelo base es NVIDIA Parakeet TDT 0.6B v3, con aproximadamente 600 millones de parámetros.
+El modelo sigue la arquitectura Parakeet TDT de NVIDIA: un encoder FastConformer (variante de Conformer con subsampling agresivo para reducir la secuencia de entrada) acoplado a un decoder TDT (token-and-duration transducer), que predice conjuntamente tokens y duraciones, lo que permite decodificación no autoregresiva por bloques y un throughput muy alto. Respecto al checkpoint base, FluidVoice-Labs añade un bloque pequeño entre el subsampling del encoder y la primera capa Conformer; es la única modificación estructural declarada.
 
-Según la model card, Fluid Speech Pro es un finetune sobre Parakeet TDT 0.6B v3 y Moondream Parakeet Ultra, ambos bajo licencia CC BY 4.0. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO (poco habituales en ASR). Tampoco se detallan innovaciones adicionales más allá del modo "clean", que postprocesa la salida para eliminar palabras repetidas y muletillas.
+El modelo se presenta como un fine-tune sobre `nvidia/parakeet-tdt-0.6b-v3` y `moondream/parakeet-ultra`. La model card no detalla el volumen de datos de entrenamiento, la composición del dataset ni si se emplearon técnicas de alineación como RLHF o DPO. La entrada es audio mono a 16 kHz en formatos como `.wav` o `.flac`; la salida es texto con puntuación y capitalización, con timestamps opcionales a nivel de palabra y segmento en la versión NeMo. La decodificación en Transformers es greedy y omite el bloque adicional, con resultados descritos como "casi idénticos" a los de NeMo.
 
 ## Capacidades
 
-- Transcripción de voz a texto (ASR) en 25 idiomas europeos, incluido el español.
-- Reconocimiento multilingüe con un único modelo, sin necesidad de cargar un modelo por idioma.
-- Modo "clean" (`clean_mode=True`) que elimina palabras repetidas y muletillas de la transcripción.
-- Decodificación TDT eficiente, adecuada para inferencia de baja latencia.
-- Integración con el ecosistema NVIDIA NeMo.
-- No se documentan capacidades de diarización de hablantes, traducción, identificación de idioma explícita ni salida con marcas de tiempo en la información disponible.
+- Transcripción de voz a texto con puntuación y capitalización automáticas.
+- Detección automática de idioma entre 25 lenguas europeas, sin prompt de idioma.
+- Timestamps a nivel de palabra y de segmento (solo en la versión NeMo).
+- Modo "clean" opcional: elimina repeticiones ("I I think") y muletillas ("um", "uh"); disponible en NeMo, ONNX y MLX.
+- Robustez ante ruido: segundo mejor modelo abierto en el conjunto URGENT 2024 del leaderboard.
+- Throughput muy alto: aproximadamente 3.700× tiempo real en una GPU (una hora de audio en torno a un segundo).
+- Despliegue multiplataforma: GPU NVIDIA y servidores (NeMo/Transformers), CPU (ONNX con onnx-asr o sherpa-onnx), Apple Silicon (MLX con parakeet-mlx), C++ sin Python (GGUF con parakeet.cpp) y Neural Engine en apps Swift (Core ML con FluidAudio).
+- No se documentan capacidades de tool calling, agentes, visión ni audio generativo; es un modelo exclusivamente ASR.
 
 ## Casos de uso
 
-- Dictado por voz en aplicaciones de productividad: el modelo transcribe en tiempo real el habla del usuario en cualquiera de los 25 idiomas soportados, y el modo "clean" elimina repeticiones y muletillas típicas del habla espontánea, produciendo texto más legible.
-- Transcripción de reuniones y videoconferencias: con soporte para español, inglés, francés, alemán y otras lenguas europeas, permite generar actas automáticas en entornos corporativos multilingües.
-- Subtitulado de contenido audiovisual: la baja latencia de la decodificación TDT y el tamaño reducido (0,6B) permiten generar subtítulos casi en tiempo real en emisiones o vídeos.
-- Atención al cliente basada en voz: transcripción de llamadas para análisis de calidad, búsqueda de texto en grabaciones y generación de resúmenes posteriores, con cobertura para clientes de distintos países europeos.
-- Accesibilidad: conversión de voz a texto para personas con discapacidad auditiva o motriz, desplegable en local gracias al tamaño contenido del modelo.
-- Investigación lingüística y corpus: generación de transcripciones a gran escala de material oral en lenguas europeas menos representadas (estonio, maltés, esloveno, etc.) bajo una licencia permisiva.
-- Integración en pipelines de datos: transcripción por lotes de archivos de audio para indexación y búsqueda semántica, usando NeMo para el procesamiento por lotes.
+- Dictado por voz en aplicaciones de escritorio y móvil: el modelo transcribe audio de 16 kHz con puntuación y capitalización, y el modo clean elimina muletillas para producir texto listo para publicar.
+- Generación de subtítulos y captions: los timestamps a nivel de palabra y segmento de la versión NeMo permiten alinear subtítulos con precisión en pipelines de vídeo.
+- Notas de reunión automáticas: con ~3.700× tiempo real, una reunión de una hora se transcribe en aproximadamente un segundo en una sola GPU, lo que hace viable el procesamiento por lotes de archivos largos.
+- Análisis de llamadas y atención al cliente: la detección automática de idioma entre 25 lenguas europeas permite enrutar y analizar conversaciones multilingües sin preprocesar el idioma.
+- Servicios de transcripción en CPU: la variante ONNX con onnx-asr o sherpa-onnx permite desplegar transcripción en servidores sin GPU, útil para volúmenes moderados o entornos con restricciones de hardware.
+- Aplicaciones nativas en Apple: la variante Core ML con FluidAudio ejecuta la inferencia en el Neural Engine para dictado y transcripción local en apps Swift, sin depender de la nube.
+- Investigación en ASR: al ser el modelo abierto más preciso por debajo de 1B de parámetros según el leaderboard, sirve como baseline reproducible y como punto de partida para fine-tuning en dominios específicos bajo CC BY 4.0.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Benchmark | Resultado | Contexto |
+|---|---|---|
+| Open ASR Leaderboard (WER medio) | 6,06 | Segundo mejor modelo abierto del leaderboard |
+| URGENT 2024 (WER, habla con ruido) | 9,83 | Segundo mejor modelo abierto en el conjunto ruidoso |
+| Throughput | ~3.700× tiempo real en una GPU | Una hora de audio en torno a un segundo |
+| Comparación bajo 1B | 10% menos errores que el siguiente modelo abierto <1B | Datos declarados por el autor |
+
+No se han publicado en la información disponible resultados desglosados por dataset (por ejemplo, LibriSpeech, Common Voice o FLEURS) ni comparativas numéricas directas con modelos concretos más allá de las afirmaciones agregadas del leaderboard.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de un modelo de aproximadamente 0,6B parámetros, los pesos en precisión FP16 ocupan alrededor de 1,2 GB; el repositorio completo pesa 2,6 GB. La VRAM real dependerá del backend y del tamaño de lote.
-- GPU recomendadas: cualquier GPU NVIDIA con al menos 4 GB de VRAM debería ser suficiente para inferencia en FP16; se recomiendan A100, H100 o L40S para despliegues de alto throughput por lotes.
-- GPU de consumo: cabe en tarjetas consumer como RTX 3060, RTX 4060, RTX 4070 y RTX 4090, así como en GPUs integradas modestas con suficiente memoria.
-- Opciones de despliegue: NVIDIA NeMo es el entorno oficial; el modelo se carga con `fluid_speech.load()` desde el repositorio. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles en la información proporcionada; la decodificación TDT está diseñada para reducir la latencia frente a RNN-T, pero no se aportan cifras.
+- VRAM estimada: no disponible de forma explícita; con 0,63B de parámetros, los pesos en precisión completa ocupan del orden de 1,2-2,5 GB, y las variantes cuantizadas reducen esa cifra, pero la model card no publica cifras de VRAM.
+- GPU recomendadas: NVIDIA GPUs para la versión NeMo/Transformers (la referencia); el autor cita ejecución a ~3.700× tiempo real "en una GPU" sin especificar modelo.
+- GPU de consumo: no se confirma qué GPUs consumer son suficientes; por tamaño de parámetros es plausible en RTX 4090 y similares, pero no hay dato oficial en la información proporcionada.
+- Apple Silicon: soporte vía MLX (parakeet-mlx) y Core ML (Neural Engine, FluidAudio).
+- CPU: soporte vía ONNX (onnx-asr, sherpa-onnx) y GGUF (parakeet.cpp, CPU o GPU, sin Python).
+- Opciones de despliegue: NeMo (`nemo_toolkit[asr]`), Transformers 5.22 o superior, ONNX Runtime, MLX, parakeet.cpp y Core ML.
+- Latencia y throughput: ~3.700× tiempo real en una GPU según el autor; no se detallan latencias por fragmento ni throughput en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Fluid Speech Pro | ~0,6B | 25 europeos | no disponible | CC BY 4.0 | Hugging Face (NeMo) |
-| NVIDIA Parakeet TDT 0.6B v3 | ~0,6B | 25 europeos | no disponible | CC BY 4.0 | Hugging Face (NeMo) |
-| Moondream Parakeet Ultra | no disponible | no disponible | no disponible | CC BY 4.0 | Hugging Face |
-| OpenAI Whisper large-v3 | ~1,55B | ~99 | 30 s de audio | MIT | Hugging Face, múltiples backends |
+| Modelo | Parámetros | Idiomas | Licencia | Notas |
+|---|---|---|---|---|
+| Fluid Speech Pro | 0,63B | 25 europeas | CC BY 4.0 | #2 abierto en Open ASR Leaderboard (WER 6,06); 5 formatos de despliegue |
+| NVIDIA Parakeet TDT 0.6B v3 | 0,6B | 25 europeas | no disponible en la información | Modelo base; Fluid Speech Pro declara mejoras sobre él |
+| moondream/parakeet-ultra | no disponible | no disponible | no disponible | Modelo base declarado; sin datos de rendimiento en la información |
+| Resto de modelos abiertos del Open ASR Leaderboard | variable | variable | variable | El autor afirma que Fluid Speech Pro es el más preciso por debajo de 1B y el segundo global |
 
-Fluid Speech Pro comparte arquitectura y tamaño con Parakeet TDT 0.6B v3, del que deriva mediante finetune, por lo que su principal diferenciación es el postprocesado "clean" y el ajuste específico del equipo. Frente a Whisper large-v3, ofrece un tamaño menor (0,6B frente a 1,55B) y una licencia CC BY 4.0 (frente a MIT), pero una cobertura lingüística mucho más reducida (25 idiomas frente a ~99) y un ecosistema de despliegue más limitado (NeMo frente a la amplia compatibilidad de Whisper). No se dispone de datos de benchmarks que permitan comparar la precisión relativa.
+No se dispone de cifras comparativas detalladas (WER por modelo) en la información proporcionada más allá de las posiciones en el leaderboard.
 
 ## Limitaciones y advertencias
 
-- Cobertura lingüística limitada a 25 idiomas europeos; no soporta lenguas asiáticas, africanas ni americanas indígenas.
-- No se han publicado métricas de precisión (WER) ni benchmarks, por lo que el rendimiento real frente a Parakeet v3 o Whisper no puede evaluarse con datos.
-- La model card está incompleta ("full model card is coming soon"), lo que dificulta conocer el proceso de entrenamiento y los posibles sesgos.
-- Riesgo de alucinación inherente a los modelos ASR, especialmente con audio ruidoso, acentos no representados en el entrenamiento o solapamiento de hablantes.
-- El modo "clean" puede eliminar repeticiones legítimas del habla (por ejemplo, énfasis deliberado) además de muletillas.
-- Requiere cargar el script `fluid_speech.py` incluido en el repositorio; no es un modelo NeMo estándar cargable directamente con la API convencional.
-- Licencia CC BY 4.0: permite uso comercial, pero exige atribución explícita ("Fluid Speech Pro by FluidVoice") y mantener la misma licencia en obras derivadas.
-- Al derivar de modelos de NVIDIA y Moondream, las condiciones de atribución de ambos deben respetarse en cascada.
-- No se documentan capacidades de diarización, marcas de tiempo ni detección de idioma automática, lo que limita su uso en algunos pipelines.
+- Cobertura limitada a 25 lenguas europeas; no se documenta soporte de otras lenguas (asiáticas, africanas, etc.).
+- No hay información publicada sobre sesgos por acento, dialecto, edad o género; el rendimiento puede degradarse en variedades no representadas en el entrenamiento.
+- Riesgo de alucinación y errores de transcripción, especialmente en audio ruidoso, solapamiento de hablantes o dominio muy específico; el WER de 9,83 en URGENT 2024 indica margen de error en condiciones ruidosas.
+- El modo clean altera el texto eliminando repeticiones y muletillas: no debe usarse cuando se requiere un registro literal (por ejemplo, transcripciones forenses o legales).
+- La versión Transformers omite el bloque adicional del modelo y decodifica de forma greedy, por lo que los resultados pueden diferir ligeramente de la referencia NeMo.
+- Los timestamps solo están disponibles en la versión NeMo; GGUF no soporta modo clean y Core ML aún no lo implementa.
+- Licencia CC BY 4.0: permite uso comercial con atribución; es necesario citar al autor y conservar el aviso de licencia.
+- No se documentan requisitos de VRAM ni rendimiento en CPU, lo que dificulta el dimensionamiento previo de infraestructura.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FluidVoice-Labs/fluid-speech-pro
-- FluidVoice (sitio del equipo): https://fluidvoice.com
+- Variante ONNX: https://huggingface.co/FluidVoice-Labs/fluid-speech-pro-onnx
+- Variante MLX: https://huggingface.co/FluidVoice-Labs/fluid-speech-pro-mlx
+- Variante GGUF: https://huggingface.co/FluidVoice-Labs/fluid-speech-pro-gguf
+- Variante Core ML: https://huggingface.co/FluidVoice-Labs/fluid-speech-pro-coreml
 - Modelo base NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Modelo base Moondream Parakeet Ultra: https://huggingface.co/moondream/parakeet-ultra
-- Librería NVIDIA NeMo: https://github.com/NVIDIA/NeMo
+- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- FluidVoice (producto del equipo): https://fluidvoice.com
+- Paper FastConformer (arXiv:2305.05084): https://arxiv.org/abs/2305.05084
+- Paper TDT (arXiv:2304.06795): https://arxiv.org/abs/2304.06795

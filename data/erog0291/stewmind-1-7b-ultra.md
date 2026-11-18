@@ -2,108 +2,102 @@
 
 ## Resumen
 
-`Erog0291/stewmind-1.7b-ultra` es un checkpoint publicado en Hugging Face por el usuario Erog0291 el 26 de octubre de 2026. Por el nombre del repositorio se infiere que se trata de una variante «ultra» de la familia StewMind, un proyecto de modelos agénticos pequeños desarrollado en Nigeria y distribuido con la filosofía de ejecución local. Sin embargo, la model card del repositorio es la plantilla automática de Hugging Face y no contiene ni un solo dato cumplimentado: autor, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluación aparecen todos como «More Information Needed».
+StewMind 1.7B ULTRA es un modelo de lenguaje derivado de Qwen/Qwen3-1.7B y publicado por el desarrollador Erog0291 bajo la marca MUTYINT (Nigeria). Se trata de un fine-tune que parte de la arquitectura Qwen3 y que ha sido modificado estructuralmente: las capas FFN se han ensanchado en sitio de 6144 a 8192 dimensiones mediante duplicación preservadora de salida, lo que eleva el recuento de parámetros desde los ~1.7B del modelo base hasta 2.072.896.512 parámetros reales (2,07B). El objetivo declarado es construir un asistente multimodal y offline orientado a lenguas nigerianas (hausa, yoruba, igbo, pidgin) y a tareas de percepción 3D y visión.
 
-La relevancia de este tipo de publicaciones está en el nicho de los modelos de ~1,7B parámetros orientados a agentes y tool calling que caben en hardware de consumo, un segmento en el que la comunidad busca alternativas a los modelos propietarios por coste y privacidad. No obstante, en el momento de redactar esta ficha no existe documentación técnica verificable del checkpoint «ultra»: los metadatos solo confirman la librería (`transformers`), el formato (safetensors), la compatibilidad con endpoints y un tamaño de repositorio de 0,1 GB.
+El modelo se presenta como una propuesta de despliegue en local, sin dependencia de servicios en la nube, y con soporte declarado de ASR y TTS para varias lenguas nigerianas. La ventana de contexto anunciada es de 40.960 tokens con rope plano, tras eliminar YaRN porque, según el autor, degradaba la recuperación en contexto largo. La licencia es "other", sin términos comerciales explicitados en la información disponible.
 
-Ese tamaño de repositorio es la principal bandera roja: un modelo de 1,7B parámetros en bf16 pesa aproximadamente 3,4 GB, y en fp8 unos 1,7 GB. Un repositorio de 0,1 GB resulta consistente con un checkpoint incompleto, un conjunto de pesos podado en exceso o un fallo de subida, no con un modelo de 1,7B utilizable. Hasta que el autor publique la model card definitiva o los pesos completos, la ficha debe tratarse como provisional.
+La relevancia actual del modelo es limitada pero singular: cubre un nicho poco atendido (lenguas de Nigeria y tareas multimodales offline) y lo hace sobre una base compacta de 2B parámetros. No obstante, los propios datos medidos por el autor muestran fallos en recuperación de contexto largo y en identidad, y no se han publicado resultados en benchmarks estándar como MMLU, GSM8K o MMMU.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Por el nombre del repositorio se presume un transformer decoder-only de la familia StewMind (base Qwen3 según la ficha del modelo hermano), sin confirmar |
-| Parametros totales | No disponible en la model card. El identificador sugiere ~1,7B, no confirmado |
-| Parametros activos | No aplica (no hay indicios de arquitectura MoE); no disponible |
-| Longitud de contexto | No disponible para este checkpoint. El modelo hermano `stewmind-1.7b` declara 32.768 tokens |
-| Tipos de cuantizacion | No disponible. El repositorio solo contiene safetensors; no se publican GGUF ni cuantizaciones de terceros |
-| Idiomas soportados | No disponible. El modelo hermano declara inglés y pidgin nigeriano |
-| Licencia | No disponible. El modelo hermano declara Apache 2.0 |
-| Formato de pesos | safetensors (confirmado por los tags del repositorio) |
-
-Nota: los datos del modelo hermano `Erog0291/stewmind-1.7b` proceden de los resultados de búsqueda y **no son transferibles** a esta variante «ultra» sin confirmación del autor. Se incluyen solo como contexto de la familia.
+| Arquitectura | Transformer decoder-only derivado de Qwen3, con FFN ensanchada de 6144 a 8192 |
+| Parametros totales | 2.072.896.512 (2,07B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 40.960 tokens (rope plano, sin YaRN) |
+| Tipos de cuantizacion | no disponible (el repo solo contiene safetensors) |
+| Idiomas soportados | en, ha, ig, yo, pcm (segun tags de la model card) |
+| Licencia | other |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura de este checkpoint. La model card no describe capa, atención, tokenizador ni configuración alguna, y los metadatos de Hugging Face no incluyen un `config.json` consultable en la información disponible. Si se confirma la hipótesis de que deriva de `stewmind-1.7b`, cabría esperar un transformer decoder-only de ~1,7B parámetros con atención de tipo GQA y un contexto de 32.768 tokens, con algún mecanismo de enrutamiento orientado a uso agéntico mencionado en la documentación del modelo base («agentic router»); todo ello es conjetura y debe verificarse.
+El modelo parte de Qwen/Qwen3-1.7B, un transformer decoder-only. La modificación principal descrita por el autor consiste en ensanchar las capas feed-forward en sitio, pasando de 6144 a 8192 dimensiones, mediante una técnica de "duplicación preservadora de salida" (output-preserving duplication), que permite aumentar la capacidad del FFN sin romper la función aprendida original. Posteriormente se realizó un fine-tune sobre datos de identidad de MUTYINT. El resultado es un modelo de 2,07B parámetros, algo mayor que su base.
 
-Tampoco se documentan datos de entrenamiento: ni número de tokens, ni composición del corpus, ni si hubo ajuste supervisado, RLHF o DPO, ni hiperparámetros, ni infraestructura de cómputo. El único enlace técnico presente en la model card es la referencia a Lacoste et al. (2019), que es la cita estándar de la calculadora de impacto medioambiental de Hugging Face y no un paper del modelo. En consecuencia, no es posible evaluar la procedencia de los datos ni los posibles sesgos de entrenamiento.
+La ventana de contexto se fija en 40.960 tokens con rope plano. El autor indica explícitamente que se eliminó YaRN tras comprobar que degradaba la recuperación. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similar. Tampoco se detalla el mecanismo exacto de la duplicación preservadora de salida ni cómo se integraron las capacidades multimodales (visión, ASR, TTS) en la arquitectura, más allá de las etiquetas de la model card.
 
 ## Capacidades
 
-- Generación de texto: no documentada para este checkpoint; no hay ejemplos de uso ni resultados de evaluación.
-- Razonamiento y matemáticas: no documentado.
-- Generación de código: no documentada.
-- Tool calling / function calling: no documentado. La familia StewMind se comercializa como «agentic», pero no hay confirmación de soporte de esquemas de herramientas en esta variante.
-- Agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas. El modelo hermano declara inglés y pidgin nigeriano, lo que no implica cobertura de castellano.
-- Modo «thinking» o razonamiento extendido: no documentado.
-- Visión o audio: no documentado; no hay tags de modalidad que lo sugieran.
-- Despliegue como endpoint: el tag `endpoints_compatible` indica que el repositorio es susceptible de servirse vía Hugging Face Inference Endpoints con la librería `transformers`.
+- Generación de texto en inglés y en lenguas nigerianas (hausa, yoruba, igbo, pidgin).
+- Reconocimiento automático de habla (ASR) para hausa, yoruba e igbo, con mejoras sustanciales de WER respecto al modelo base según mediciones del autor.
+- Síntesis de voz (TTS) offline con voces en hausa, yoruba y pidgin; la voz en igbo aún no está entrenada.
+- Percepción de formas 3D: el autor reporta 100% de acierto en formas limpias, rotadas 90 grados y con la mitad de puntos, y 17,8% bajo ruido 25x.
+- Visión general: 58,5% en CIFAR-10 según medición del autor.
+- Capacidad multimodal y orientación a uso offline, según los tags del repositorio.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-Los siguientes escenarios son hipótesis de uso razonables para un modelo agéntico de ~1,7B, **condicionadas a que el checkpoint se confirme como funcional y con pesos completos**:
-
-- Asistente local de escritorio con privacidad total: un modelo de 1,7B cuantizado a 4 bits ocupa alrededor de 1 GB, por lo que puede ejecutarse en el portátil del usuario sin enviar datos a una API externa. Adecuado para dictado, resumen de documentos y corrección de texto sobre material confidencial.
-- Enrutador de intenciones en un pipeline de agentes: por su tamaño, encaja como clasificador o router que decide a qué herramienta o modelo mayor derivar cada petición, reduciendo el coste por consulta frente a invocar siempre un modelo grande.
-- Extracción de datos estructurados: convertir correos, tickets o facturas en JSON con un esquema fijo, una tarea repetitiva donde el coste por token y la latencia importan más que el razonamiento profundo.
-- Automatización de tareas de soporte de primer nivel: respuestas a preguntas frecuentes con contexto recuperado (RAG) sobre una base documental pequeña, con escalado a un humano cuando la confianza sea baja.
-- Prototipado e investigación de ajuste fino: al ser un modelo pequeño con licencia potencialmente permisiva, sirve como banco de pruebas para LoRA/QLoRA en una única GPU de consumo antes de escalar a modelos mayores.
-- Generación de código en entornos con restricciones de red: autocompletado y generación de fragmentos en IDE sobre hardware local, en organizaciones que no permiten enviar código a servicios en la nube.
-- Filtrado y etiquetado de datos a gran escala: clasificación de corpus para curación de datasets, donde el throughput por GPU es el factor determinante.
+- Transcripción de audio en lenguas nigerianas: el modelo puede emplearse para ASR de hausa, yoruba e igbo en entornos sin conectividad, aprovechando las reducciones de WER reportadas (de 108,9 a 49,0 en hausa, de 105,2 a 73,2 en yoruba y de 105,7 a 60,1 en igbo).
+- Síntesis de voz offline para accesibilidad: generación de voces en hausa, yoruba y pidgin en dispositivos locales, útil para interfaces de voz en zonas con conectividad limitada.
+- Procesamiento de formas 3D en pipelines de visión: clasificación de geometrías limpias o rotadas con alta fiabilidad declarada (100% en las pruebas del autor), adecuado para tareas de inspección o preprocesado.
+- Clasificación de imágenes de baja resolución: con un 58,5% en CIFAR-10, puede servir como base para experimentos de visión embebida o prototipos educativos, no para producción crítica.
+- Asistente conversacional multilingüe local: generación de texto en inglés y lenguas nigerianas para atención básica o divulgación, siempre con revisión humana por los fallos de identidad y contexto reportados.
+- Investigación sobre ensanchamiento de FFN: el modelo sirve como caso de estudio reproducible de la técnica de duplicación preservadora de salida sobre Qwen3-1.7B, útil para quienes investigan modificaciones arquitectónicas post-hoc.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Datos medidos por el autor sobre esta build concreta:
 
-La model card no incluye sección de evaluación cumplimentada, no hay resultados de MMLU, HumanEval, GSM8K ni de evaluaciones agénticas (por ejemplo, tareas tipo tool-use), y no existe comparación con otros modelos del mismo tamaño.
+| Prueba | Resultado |
+|---|---|
+| Identidad (responde como MUTYINT) | 0/5 prompts |
+| Recuperación en contexto largo (4000, 8000, 16000, 32000) | fallo en todos |
+| ASR hausa (WER) | 49,0 (base 108,9) |
+| ASR yoruba (WER) | 73,2 (base 105,2) |
+| ASR igbo (WER) | 60,1 (base 105,7) |
+| Formas 3D limpias / rotadas 90 / media puntos | 100% / 100% / 100% |
+| Formas 3D con ruido 25x | 17,8% |
+| Visión CIFAR-10 | 58,5% |
+| TTS offline | hausa, yoruba, pidgin (igbo no entrenada) |
+
+No se han publicado resultados de MMLU, GSM8K ni MMMU en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son **estimaciones calculadas a partir del tamaño nominal de 1,7B parámetros**, no datos medidos sobre este checkpoint:
-
-- VRAM para los pesos: ~3,4 GB en bf16/fp16, ~1,7 GB en int8 y ~0,9-1,1 GB en cuantización de 4 bits.
-- Memoria KV cache: con una arquitectura tipo Qwen3 de 28 capas, 8 cabezas KV y dimensión de cabeza 128, el coste sería de unos 57 KB por token en fp16; a 32.768 tokens de contexto, alrededor de 1,8 GB adicionales. A 8.192 tokens, unos 0,45 GB.
-- VRAM total orientativa: 6-8 GB para inferencia en fp16 con contexto moderado; 2-3 GB con cuantización de 4 bits y contexto corto.
-- GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090. Cabe holgadamente en cualquier GPU con 8 GB o más, incluso en fp16 con contexto reducido.
-- GPU de datacenter: A100 40/80 GB, H100, L40S; sobredimensionadas para un modelo de este tamaño salvo que se busque throughput masivo por batching.
-- Opciones de despliegue: `transformers` (confirmado por la librería declarada), vLLM y TGI para servicio con batching continuo, Hugging Face Inference Endpoints (tag `endpoints_compatible`). Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, ya que el repositorio solo contiene safetensors.
-- Advertencia: con un repositorio de 0,1 GB, es probable que los pesos no estén completos y que la carga del modelo falle. Verificar el contenido de la pestaña «Files and versions» antes de planificar cualquier despliegue.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia en fp16: en torno a 4,2 GB solo para pesos (2,07B × 2 bytes), más overhead de activaciones y caché KV para 40.960 tokens.
+- En cuantización de 8 bits: aproximadamente 2,1 GB de pesos; en 4 bits, alrededor de 1,1 GB, aunque no se distribuyen pesos cuantizados en el repo.
+- GPU recomendadas: una RTX 4090 (24 GB) permite fp16 con contexto largo; una RTX 3060 de 12 GB es suficiente para fp16 con contexto moderado o para cuantizaciones de 8/4 bits.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más en cuantización de 8 bits, y en 6-8 GB en 4 bits.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp/Ollama si se generan GGUF a partir de los safetensors, y vLLM o TGI para servir con mayor throughput.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento de este checkpoint, por lo que la comparación se limita a características declaradas. Los datos de los modelos alternativos no proceden de la información proporcionada y deben verificarse en sus fichas oficiales antes de usarse.
-
-| Modelo | Parametros | Contexto | Licencia | Estado de la documentacion |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Erog0291/stewmind-1.7b-ultra` | ~1,7B (por el nombre, no confirmado) | No disponible | No disponible | Model card vacía (plantilla automática) |
-| `Erog0291/stewmind-1.7b` (modelo hermano) | 1,72B | 32.768 tokens | Apache 2.0 | Ficha con contenido; declara Inglés y pidgin nigeriano, base Qwen3 |
-| Qwen3-1.7B | No disponible en las fuentes consultadas | No disponible en las fuentes consultadas | No disponible en las fuentes consultadas | Requiere verificación en la ficha oficial |
-| Llama 3.2 1B | No disponible en las fuentes consultadas | No disponible en las fuentes consultadas | No disponible en las fuentes consultadas | Requiere verificación en la ficha oficial |
-| SmolLM2-1.7B | No disponible en las fuentes consultadas | No disponible en las fuentes consultadas | No disponible en las fuentes consultadas | Requiere verificación en la ficha oficial |
+| StewMind 1.7B ULTRA | 2,07B | 40.960 | other | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | ~1,7B | no disponible en la información | no disponible en la información | Hugging Face |
+| Alternativas de ~2B para lenguas africanas | no disponible | no disponible | no disponible | no disponible |
+
+La comparación con otros fine-tunes de Qwen3-1.7B orientados a lenguas nigerianas no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face sin ninguna sección completada. No es posible verificar arquitectura, tokenizador, datos de entrenamiento ni evaluación.
-- Tamaño de repositorio anómalo: 0,1 GB frente a los ~3,4 GB esperables para 1,7B parámetros en bf16. Alta probabilidad de checkpoint incompleto, pesos no subidos o modelo podado. No debe asumirse que el modelo es cargable.
-- Licencia no declarada: sin licencia explícita, el uso comercial es jurídicamente incierto. No se puede asumir la Apache 2.0 del modelo hermano.
-- Idiomas sin especificar: no hay garantía de rendimiento en castellano; si hereda del modelo base, el soporte estaría centrado en inglés y pidgin nigeriano.
-- Riesgo de alucinación: en modelos de ~1,7B parámetros es estructuralmente alto, especialmente en razonamiento multi-paso y en la invocación de herramientas con argumentos complejos.
-- Sesgos: desconocidos, al no documentarse la composición del corpus de entrenamiento ni los procesos de alineación.
-- Sin métricas de seguridad ni evaluaciones de robustez publicadas.
-- Popularidad nula: 0 descargas y 0 likes en el momento del análisis, lo que implica ausencia de validación por parte de la comunidad y de informes de errores.
-- Fecha de creación anómala (2026-10-26) y ausencia de historial de versiones visible: conviene comprobar la trazabilidad de la publicación.
-- Para producción: no recomendable en su estado actual. Requiere verificación de pesos, licencia y evaluación previa en un entorno de pruebas.
+- Identidad no aprendida: el autor reporta 0/5 aciertos al responder como MUTYINT, por lo que el fine-tune de identidad no ha funcionado según su propia medición.
+- Recuperación en contexto largo fallida en todas las longitudes probadas (4000, 8000, 16000 y 32000 tokens), a pesar de anunciar 40.960 tokens de contexto.
+- WER de ASR todavía alto: 49,0 en hausa, 60,1 en igbo y 73,2 en yoruba, insuficiente para muchas aplicaciones de producción sin postprocesado.
+- Robustez 3D limitada: cae al 17,8% con ruido 25x.
+- Visión débil: 58,5% en CIFAR-10, por debajo de lo esperable en producción.
+- Licencia "other" sin términos comerciales explícitos: es necesario contactar con el autor antes de un uso comercial.
+- Sin benchmarks estándar (MMLU, GSM8K, MMMU) publicados, lo que impide comparar su calidad general.
+- Riesgo de alucinación no cuantificado; al ser un fine-tune pequeño, es previsible en tareas abiertas.
+- TTS en igbo no disponible.
+- El repo ocupa 28,5 GB, desproporcionado para 2,07B parámetros, lo que sugiere artefactos adicionales o duplicados que conviene revisar antes de descargar.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Erog0291/stewmind-1.7b-ultra
-- Modelo hermano (familia StewMind, con ficha documentada): https://huggingface.co/Erog0291/stewmind-1.7b
-- Artículo del autor sobre StewMind 1.7B en dev.to: https://dev.to/emmanuel_erogian/big-models-cook-for-everyone-this-one-cooks-for-you-stewmind-17b-2b7o
-- Ficha de terceros con metadatos de StewMind 1.7B: https://free2aitools.com/model/erog0291/stewmind-1.7b
-- Búsqueda de modelos con el tag «stew» en Hugging Face: https://huggingface.co/models?other=stew
-- Lista de modelos de seguridad ofensiva (referencia cruzada, no específica de este modelo): https://github.com/JoasASantos/Offensive-Security-AI-Models
-- Referencia citada en la model card (calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
-- Calculadora ML Impact: https://mlco2.github.io/impact#compute
+- Hugging Face: https://huggingface.co/Erog0291/stewmind-1.7b-ultra
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
+- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

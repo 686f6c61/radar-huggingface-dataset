@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "sayurilinwane/WanTransformer3DModel-sm120-cu130-raa",
+  "slug": "sayurilinwane-wantransformer3dmodel-sm120-cu130-raa",
+  "author": "sayurilinwane",
+  "url": "https://huggingface.co/sayurilinwane/WanTransformer3DModel-sm120-cu130-raa",
+  "created_at": "2026-11-18T00:45:21.000Z",
+  "updated_at": "2026-11-18T00:45:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "ahead-of-time",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5204214,
+  "storage_human": "5 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

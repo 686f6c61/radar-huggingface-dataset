@@ -2,94 +2,93 @@
 
 ## Resumen
 
-`OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF` es una cuantización GGUF de precisión mixta no uniforme del modelo `sensenova/SenseNova-6.8-Code2Video`, publicada por un tercero (usuario OliviaRossi) y no por el equipo de SenseNova. El artefacto empaqueta los 26.895.998.464 parámetros reales del modelo base (≈26,9B, pese al «6.8» del nombre) en un único fichero de unos 10,2 GB, lo que permite ejecutarlo con llama.cpp en hardware de consumo. La técnica empleada, GSQ + RCO (Riemannian Constrained Optimization), asigna un tipo de cuantización distinto a cada tensor en lugar de aplicar uno uniforme a toda la red.
+SenseNova-6.8-Code2Video es un modelo de la familia SenseNova de SenseTime, orientado a la generación de vídeo a partir de código y a tareas de razonamiento multimodal. El repositorio analizado es una cuantización GGUF no uniforme del modelo original, publicada por el usuario OliviaRossi, que aplica la metodología GSQ + RCO (Riemannian Constrained Optimization) para asignar un tipo de cuantización distinto a cada tensor del modelo. El resultado es un fichero GGUF de perfil IQ3_S que busca preservar las capacidades de razonamiento y recuperación mientras reduce agresivamente las capas feed-forward, donde la redundancia de parámetros es mayor.
 
-El interés de esta ficha es doble: por un lado, documenta una forma relativamente nueva de cuantización por tensor que está apareciendo en el ecosistema GGUF; por otro, sirve como caso de estudio de los riesgos de las cuantizaciones no oficiales, ya que el mapa de asignación de tensores y la importance matrix utilizados provienen de un modelo distinto (Qwen3.8-27B), no del modelo objetivo. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, y su model card es exclusivamente una tarjeta de cuantización: no aporta información sobre entrenamiento, idiomas, contexto nativo ni evaluación de calidad.
+El modelo base cuenta con 26.895.998.464 parámetros reales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 27B. La cuantización está pensada para su uso con llama.cpp y transformers, con compatibilidad declarada con endpoints. La licencia del modelo es Apache 2.0, lo que facilita su uso comercial y su integración en pipelines de producción.
 
-La relevancia práctica es limitada pero concreta: si el modelo base funciona para tu caso de uso, este GGUF es la vía más barata (en VRAM) para probarlo en local, a costa de una pérdida de precisión agresiva en las capas feed-forward y de una validación empírica pendiente.
+La relevancia de esta ficha radica en que documenta una técnica de cuantización no uniforme poco habitual en el ecosistema GGUF, inspirada en el trabajo de ISTA-DASLab sobre modelos Qwen, y en que ofrece una vía para ejecutar un modelo de ~27B en hardware más modesto sin degradar de forma uniforme todas las capas. No obstante, la información publicada sobre el modelo base y sobre el proceso de cuantización es limitada, por lo que muchos datos técnicos deben marcarse como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con capas SSM (según repos de terceros, «hybrid qwen35 architecture»; no confirmado en la model card de este repo) |
-| Parametros totales | 26.895.998.464 (≈26,9B) |
-| Parametros activos | No disponible (no se describe como MoE en la información proporcionada) |
-| Longitud de contexto | No disponible (el ejemplo de servido de la model card usa `-c 32768`, pero es un parámetro de llama-server, no el contexto de entrenamiento) |
-| Tipos de cuantizacion | GGUF mixta no uniforme, perfil `GSQ-RCO-IQ3_XXS`: `IQ4_XS`/`Q5_K`/`Q6_K` en proyecciones de atención (`attn_qkv`, `attn_gate`), `IQ2_S`/`IQ2_XXS` en `ffn_down`/`ffn_up`, `BF16`/`F32` en capas SSM y normalización |
-| Idiomas soportados | No disponible |
-| Licencia | apache-2.0 (declarada en este repo de cuantización; la licencia del modelo base no se detalla en la información disponible) |
-| Formato de pesos | GGUF (llama.cpp), fichero único de ≈10,2 GB; el repo no incluye proyector multimodal ni cabeza MTP |
+| Arquitectura | no disponible (el modelo base es de la familia SenseNova; la model card no detalla transformer, MoE o SSM) |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible en la model card; el ejemplo de llama-server usa `-c 32768` |
+| Tipos de cuantizacion | GGUF no uniforme, perfil GSQ-RCO-IQ3_S; mezcla de IQ4_XS, Q5_K, Q6_K en proyecciones de atención, IQ2_S e IQ2_XXS en capas feed-forward, y BF16/F32 en capas SSM y de normalización |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de 23,0 GB); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe el entrenamiento del modelo base: no hay número de tokens, composición del dataset, ni mención a RLHF, DPO o fases de post-entrenamiento. Lo único inferible es la arquitectura, y de forma indirecta: repositorios de terceros sobre el mismo modelo base lo describen como «27B hybrid qwen35 architecture», y la propia model card de esta cuantización menciona capas SSM preservadas en BF16/F32 junto a proyecciones de atención convencionales. Eso apunta a un diseño híbrido que combina atención con capas de espacio de estados (del estilo Mamba o atención lineal), lo que explicaría la sensibilidad numérica de esas capas y su conservación en alta precisión.
+La model card del repositorio cuantizado no describe la arquitectura interna del modelo base SenseNova-6.8-Code2Video: no se especifica si se trata de un transformer denso, un MoE o una arquitectura híbrida con capas SSM. La única pista arquitectónica es la mención explícita a capas SSM y de normalización, que en el esquema GSQ-RCO se mantienen en BF16 y F32 respectivamente, lo que sugiere que el modelo base incorpora componentes de tipo state space. Tampoco se detallan los datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO.
 
-La innovación técnica relevante aquí no está en el modelo, sino en el método de cuantización. GSQ-RCO asigna tipos de cuantización por tensor resolviendo un problema de optimización con restricciones riemannianas: las proyecciones de atención se mantienen en `IQ4_XS`–`Q6_K` para preservar recuperación y razonamiento, las capas feed-forward se comprimen hasta `IQ2_XXS`/`IQ2_S` aprovechando su redundancia, y SSM y normalización quedan en coma flotante. Es un enfoque cualitativamente distinto de las recetas escalares tipo Q4_K_M, pero con dos caveats importantes documentados en la propia card: el mapa de asignación de tensores se deriva de `ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF` y la importance matrix es `imatrix-qwen3.8-27b.gguf`, es decir, ambos provienen de otra familia de modelos, no de `SenseNova-6.8-Code2Video`.
+La innovación técnica destacable de este repositorio no está en el modelo en sí, sino en el procedimiento de cuantización. GSQ-RCO aplica optimización con restricciones riemannianas para asignar a cada tensor un tipo de cuantización adaptado: las proyecciones de atención (`attn_qkv`, `attn_gate`) reciben mayor precisión (IQ4_XS, Q5_K, Q6_K) para proteger el razonamiento y la recuperación de información, mientras que las capas feed-forward (`ffn_down`, `ffn_up`) se cuantizan de forma más agresiva (IQ2_S, IQ2_XXS) al concentrar mayor redundancia. El mapa de asignación de tensores se deriva del modelo `ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF` y la matriz de importancia utilizada es `imatrix-qwen3.8-27b.gguf`, un detalle relevante porque implica que la imatrix no fue calculada específicamente sobre el modelo SenseNova, lo que puede afectar a la calidad final de la cuantización.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general: capacidad esperable de un modelo de ~27B, sin evaluación publicada en la información disponible.
-- Orientación a código: el nombre del modelo (`Code2Video`) y su etiqueta `code2video` sugieren un uso principal de generación de código para producir vídeo (por ejemplo, animaciones programáticas), aunque la model card de esta cuantización no lo documenta ni lo verifica.
-- Multimodalidad: repos de terceros sobre el mismo modelo base incluyen un proyector de visión F16 (`mmproj-F16.gguf`), lo que indica que el modelo base es multimodal; este repo GGUF no incluye ese proyector ni lo menciona.
-- Decodificación especulativa: repos de terceros preservan una cabeza MTP (Multi-Token Prediction, `blk.64`/NextN) en Q8_0; este repo no la incluye, por lo que la decodificación especulativa no está disponible aquí.
-- Tool calling / function calling: no disponible en la información proporcionada.
+- Generación de texto y razonamiento general, heredadas del modelo base SenseNova-6.8-Code2Video.
+- Generación de vídeo a partir de código (code2video), que da nombre al modelo y constituye su especialidad declarada.
+- Razonamiento y recuperación de información reforzados por la asignación de mayor precisión a las proyecciones de atención.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; la model card no enumera idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
+- Ejecución local mediante llama.cpp y llama-server, con compatibilidad con endpoints de tipo OpenAI.
 
 ## Casos de uso
 
-- Prueba local de bajo coste del modelo base: cargar el GGUF con `llama-cli` o `llama-server -ngl 99` permite evaluar el comportamiento de un modelo de ~27B en una GPU de 24 GB antes de comprometerse con los ≈54 GB en BF16 del repo oficial.
-- Generación de código para animación y vídeo programático: si se confirma la orientación `code2video`, el modelo encajaría en pipelines que convierten una descripción en un script (Manim, Processing, SVG animado) que luego se renderiza con ffmpeg; conviene validar la calidad real, ya que las capas FFN están en IQ2.
-- Prototipado de asistentes de código en local: integración vía endpoint compatible con OpenAI (`llama-server --port 8080`) para autocompletado y refactorización sin enviar código a la nube, con la advertencia de que la cuantización agresiva puede degradar la fidelidad sintáctica.
-- Exploración de arquitecturas híbridas SSM + atención: útil en investigación para observar cómo se comporta un modelo híbrido cuantizado a ~3 bits en tareas de contexto largo frente a un transformer denso equivalente.
-- Evaluación comparativa de métodos de cuantización: este repo sirve como punto de comparación directo frente a las cuantizaciones GGUF convencionales del mismo modelo base publicadas por terceros, midiendo la degradación atribuible a GSQ-RCO.
-- Despliegue en entornos sin GPU: con 10,2 GB de pesos, el modelo cabe en RAM de un portátil de 16 GB y puede ejecutarse en CPU con llama.cpp, a costa de una latencia alta y del coste de descompresión de los tensores IQ2.
-- Generación de guiones técnicos y documentación de vídeo: uso genérico de generación de texto con contexto medio, adecuado para redactar guiones, descripciones y storyboards a partir de código o especificaciones.
+- Generación de vídeo a partir de código en entornos de desarrollo: el modelo puede recibir código o especificaciones y producir guiones o secuencias de vídeo, que es la tarea para la que fue diseñado el modelo base; la versión GGUF permite ejecutarlo en estaciones de trabajo sin GPU de datacenter.
+- Prototipado rápido en local con llama.cpp: gracias al perfil IQ3_S y al tamaño del repo (23,0 GB), un equipo puede desplegar el modelo con `llama-server` en una máquina con GPU de consumo y exponer una API compatible con OpenAI en el puerto 8080.
+- Asistencia a la generación de código y razonamiento técnico: las proyecciones de atención en IQ4_XS/Q5_K/Q6_K preservan mejor la recuperación de contexto, lo que resulta útil en tareas de análisis de repositorios y explicación de código.
+- Integración en pipelines de CI/CD para documentación audiovisual: el modelo puede generar descripciones o guiones de vídeo a partir de artefactos de código en un flujo automatizado, siempre que se valide la salida antes de publicarla.
+- Experimentación académica con cuantización no uniforme: el repositorio sirve como caso de estudio para comparar GSQ-RCO frente a cuantizaciones uniformes en un modelo de ~27B, midiendo la degradación por capa.
+- Despliegue en entornos con VRAM limitada: al reducir las capas feed-forward a IQ2_S/IQ2_XXS, el modelo puede caber en GPUs de 24 GB, algo inviable con los pesos originales en BF16.
+- Evaluación de modelos code2video en investigación: permite reproducir experimentos de generación de vídeo desde código sin depender de infraestructura de gran escala.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta cuantización no incluye MMLU, HumanEval, GSM8K ni ninguna métrica de perplejidad o de degradación respecto al modelo base, y tampoco se han encontrado en los resultados de búsqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni de calidad de vídeo generado, ni comparaciones con el modelo base sin cuantizar.
 
 ## Requisitos de hardware
 
-- VRAM para pesos: ≈10,2 GB (tamaño real del fichero GGUF). Estimación a partir del tamaño del repo, no de medición propia.
-- VRAM total recomendada: 16 GB para offload completo con contexto moderado; 24 GB (RTX 3090/4090, A10G, L4 con menos holgura) para offload completo con contexto largo y KV cache amplia. Los ejemplos de la card usan `-c 32768`, lo que añade varios GB de caché según la arquitectura híbrida.
-- GPU de 12 GB (RTX 3060 12GB, RTX 4070): no cabe entero; requiere offload parcial con `-ngl` y reducción de contexto.
-- Cabe en GPU de consumo: sí, en 16–24 GB con offload completo; en 12 GB, parcialmente.
-- CPU: viable con 16 GB de RAM o más; los tensores IQ2 requieren descompresión en tiempo de ejecución, lo que reduce el throughput frente a Q4_K_M.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), y por compatibilidad de formato cualquier frontend basado en llama.cpp; no se ha verificado funcionamiento en vLLM ni en TGI con este fichero.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo.
+- VRAM estimada para inferencia: el repo GGUF ocupa 23,0 GB, por lo que se necesita al menos esa cantidad de VRAM para cargar todos los tensores en GPU; con offloading parcial a CPU puede ejecutarse con menos VRAM a costa de latencia.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para carga completa en GPU; RTX 4090 (24 GB) queda al límite y probablemente requiera offloading parcial de capas.
+- GPU de consumo: cabe en RTX 4090 de forma ajustada; en GPUs de 16 GB o menos será necesario offloading a CPU o reducir el contexto.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), y por extensión entornos compatibles con GGUF como Ollama o LM Studio; la model card solo documenta llama.cpp.
+- Contexto: el ejemplo de la model card usa `-c 32768`, pero no se confirma que esa sea la longitud máxima soportada por el modelo base.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización / formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este repo (OliviaRossi, GSQ-RCO-IQ3_XXS) | 26,9B | No disponible | GGUF mixta IQ3_XXS, ≈10,2 GB | apache-2.0 | 0 descargas, 1 like; sin validación comunitaria |
-| `sensenova/SenseNova-6.8-Code2Video` (base) | 26,9B | No disponible | Safetensors (BF16) | No disponible en la información recogida | Repo oficial del autor del modelo |
-| `Abiray/SenseNova-6.8-Code2Video-GGUF` | 26,9B | No disponible | GGUF + `mmproj-F16.gguf` + cabeza MTP en Q8_0 | No disponible | Repo de terceros con soporte multimodal y decodificación especulativa |
-| `ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF` | 27B | No disponible | GGUF GSQ-RCO mixta | No disponible | Origen de la metodología y del mapa de tensores usado aquí |
+| SenseNova-6.8-Code2Video GSQ-RCO-IQ3_S (este) | ~26,9B | no disponible | Apache 2.0 | GGUF | Cuantización no uniforme con imatrix de Qwen3.8-27B |
+| ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF | ~27B (según nombre) | no disponible | no disponible | GGUF | Referencia metodológica de GSQ-RCO; su mapa de tensores e imatrix se reutilizan aquí |
+| sensenova/SenseNova-6.8-Code2Video (base) | ~26,9B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar; requiere mucha más VRAM |
 
-Diferencias relevantes: frente al repo de Abiray, esta cuantización no incluye proyector de visión ni cabeza MTP, por lo que pierde capacidades multimodales y de decodificación especulativa; a cambio ofrece un fichero único más simple de desplegar. Frente al modelo base, sacrifica aproximadamente tres cuartas partes del tamaño en disco a cambio de una pérdida de precisión no cuantificada públicamente.
+No se dispone de datos de rendimiento comparado entre estas opciones en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cuantización no oficial: publicada por un tercero, no por SenseNova; el modelo base puede tener una licencia o condiciones distintas de la apache-2.0 declarada aquí, que conviene verificar en su repositorio original antes de un uso comercial.
-- Importance matrix y mapa de asignación de tensores procedentes de Qwen3.8-27B: al no haberse calculado sobre el modelo objetivo, la asignación de precisión por tensor puede no reflejar la sensibilidad real de las capas de `SenseNova-6.8-Code2Video`, especialmente en las capas SSM de la arquitectura híbrida.
-- Capas feed-forward en `IQ2_XXS`/`IQ2_S`: es una compresión muy agresiva (≈2 bits) que típicamente degrada tareas de fidelidad alta como generación de código, matemáticas y seguir instrucciones largas. No hay medición publicada de esa degradación.
-- Nombre engañoso: el identificador «6.8» no corresponde al tamaño real (26,9B), lo que puede inducir a error al planificar hardware.
-- Sin datos de benchmarks, idiomas, contexto de entrenamiento ni evaluación humana: no es posible estimar su calidad frente al modelo base o frente a otras cuantizaciones.
-- Riesgo de alucinación: no cuantificado en la información disponible; en un modelo de ~27B cuantizado a 3 bits es esperable un aumento respecto al BF16.
-- Repositorio sin tracción: 0 descargas y 1 like en la fecha de creación, sin issues ni discusión pública que permitan detectar problemas de carga o de calidad.
-- Ausencia de proyector multimodal y de cabeza MTP: si el caso de uso requiere visión o decodificación especulativa, este repo no las ofrece; hay que recurrir a las variantes de Abiray.
-- El contexto real de entrenamiento no está documentado; usar `-c 32768` no garantiza que el modelo haya sido entrenado para esa ventana.
+- La imatrix utilizada (`imatrix-qwen3.8-27b.gguf`) y el mapa de asignación de tensores provienen de un modelo distinto (Qwen3.8-27B), no del propio SenseNova; esto puede degradar la calidad de la cuantización respecto a una imatrix calculada específicamente.
+- Las capas feed-forward cuantizadas a IQ2_S e IQ2_XXS son agresivas y pueden producir pérdida de precisión en tareas que dependan de conocimiento factual o de cálculo.
+- No hay benchmarks publicados que cuantifiquen la degradación frente al modelo base; cualquier uso en producción debería ir precedido de una evaluación propia.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan mitigaciones específicas.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento adecuado en castellano sin evaluación previa.
+- Longitud de contexto máxima: no confirmada; el valor de 32768 aparece solo como ejemplo de arranque de llama-server.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos de entrenamiento originales.
+- El repositorio tiene pocas descargas y likes (13.896 descargas, 9 likes en el momento de la consulta), lo que sugiere una validación comunitaria limitada.
+- La fecha de creación del repositorio (2026-10-28) y su actualización (2026-10-29) deben tenerse en cuenta para evaluar su vigencia.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video
-- Cuantizaciones GGUF de terceros con proyector de visión F16 y cabeza MTP (Abiray): https://huggingface.co/Abiray/SenseNova-6.8-Code2Video-GGUF
-- Variante MTP de Abiray: https://huggingface.co/Abiray/SenseNova-6.8-Code2Video-MTP-GGUF
-- Origen de la metodología GSQ-RCO y del mapa de tensores: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
-- Repositorio GSQ-RCO de ISTA-DASLab para coder: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
-- Artículo sobre SenseNova-U1-8B GGUF en ComfyUI (contexto del ecosistema SenseNova, no de este modelo): https://hackernoon.com/sensenova-u1-8b-gguf-run-multimodal-ai-on-8gb-vram
+- Referencia metodológica GSQ-RCO: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
+- ISTA-DASLab (organización): https://huggingface.co/ISTA-DASLab
+- llama.cpp (repositorio del runtime): no disponible en la información proporcionada
+- Paper o blog de GSQ-RCO: no disponible en la información proporcionada

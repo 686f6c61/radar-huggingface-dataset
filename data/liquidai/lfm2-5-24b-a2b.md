@@ -2,116 +2,107 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B es un modelo de razonamiento de tipo Mixture of Experts (MoE) desarrollado por Liquid AI, con 24.000 millones de parametros totales y solo 2.450 millones de parametros activos por token. Es el modelo mas grande y el ultimo de la familia LFM2.5, que abarca desde LFM2.5-230M hasta esta variante de 24B, y esta disenado especificamente para ejecutar agentes rapidos y privados en dispositivo (on-device), no solo en servidores.
+LFM2.5-24B-A2B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Liquid AI, disenado especificamente para tareas de razonamiento y uso de herramientas en entornos de agente. Con 24.000 millones de parametros totales pero solo 2.450 millones activos por token, el modelo busca ofrecer capacidad de razonamiento de un modelo grande con el coste computacional de uno pequeno. Es el modelo mas grande y el ultimo de la familia LFM2.5, que abarca desde 230M hasta estos 24B.
 
-El modelo resuelve el problema de desplegar razonamiento de calidad en hardware limitado: al activar unicamente 2.450 millones de parametros por token, cada token de razonamiento es computacionalmente barato, lo que permite velocidades de hasta 184 tok/s en un Apple M5 Max y hasta 21K tokens de salida por segundo en una sola GPU NVIDIA B300. Su ventana de contexto es de 131.072 tokens y soporta 16 idiomas, entre ellos el espanol.
+La arquitectura combina 30 bloques de convolucion corta con doble compuerta (double-gated short convolution) y 10 bloques de atencion con query agrupada (GQA), organizados en 40 capas. Cada bloque MoE contiene 64 expertos con enrutamiento top-4. El modelo fue entrenado con 36 billones de tokens y dispone de una ventana de contexto de 131.072 tokens, con un vocabulario de 128.000 tokens y soporte para 16 idiomas.
 
-Es relevante ahora porque combina razonamiento explicito (siempre genera un bloque de pensamiento antes de responder) con capacidades de uso de herramientas y agentes, y lo hace con un presupuesto de entrenamiento de 36 billones de tokens. Segun el autor, compite con Qwen3.6-35B-A3B en tareas agénticas pese a tener alrededor de un 50 por ciento menos de parametros totales y activos.
+Su relevancia actual radica en que es un modelo de razonamiento puro: siempre genera un bloque `<think>` antes de responder, pero con solo 2.450 millones de parametros activos por token, lo que abarata cada token de razonamiento. Liquid AI lo posiciona como un modelo competitivo en tareas de agente y tool calling frente a modelos con aproximadamente un 50% mas de parametros totales y activos, como Qwen3.6-35B-A3B. La licencia es lfm1.0 (categorizada como "other" en Hugging Face).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE hibrida (lfm2_moe): 30 bloques de convolucion corta de doble puerta + 10 bloques GQA |
+| Arquitectura | MoE hibrida: 30 bloques de convolucion corta con doble compuerta + 10 bloques GQA (40 capas) |
 | Parametros totales | 23.971.585.280 (24,0B) |
 | Parametros activos | 2,45B |
 | Longitud de contexto | 131.072 tokens |
-| Tipos de cuantizacion | FP8 (block-wise), GGUF (llama.cpp), MLX 4-bit, ONNX; checkpoint nativo |
-| Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, thai, indonesio, hindi, ruso, polaco |
-| Licencia | lfm1.0 (license: other) |
-| Formato de pesos | safetensors (transformers); variantes FP8, GGUF, ONNX y MLX |
-| Numero de capas | 40 (30 de convolucion corta + 10 GQA) |
-| Expertos | 64 por bloque MoE, enrutamiento top-4 |
-| Tamano de vocabulario | 128.000 |
-| Presupuesto de entrenamiento | 36 billones de tokens |
-| Parametros de generacion | temperature 0,1; top_k 50; repetition_penalty 1,05 |
+| Tipos de cuantizacion | FP8 (checkpoint oficial), GGUF (llama.cpp), MLX-4bit (Apple Silicon), ONNX |
+| Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso, polaco |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | safetensors (nativo), FP8, GGUF, ONNX, MLX-4bit |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una MoE hibrida identificada como `lfm2_moe`. Combina 30 bloques de convolucion corta de doble puerta (double-gated short convolution) con 10 bloques de atencion de consultas agrupadas (GQA), sumando 40 capas. Cada bloque MoE contiene 64 expertos con enrutamiento top-4, de modo que en cada paso solo se activan 2.450 millones de parametros de los 24.000 millones totales. Esta combinacion de convoluciones cortas y atencion busca reducir el coste por token manteniendo la capacidad de modelado de secuencias largas.
+El modelo emplea una arquitectura hibrida que combina bloques de convolucion corta con doble compuerta (30 de las 40 capas) y bloques de atencion con query agrupada (GQA, 10 capas). Esta mezcla busca reducir el coste de atencion manteniendo capacidad de modelado de secuencias largas. La capa MoE cuenta con 64 expertos por bloque y enrutamiento top-4, lo que resulta en 2,45B parametros activos sobre 24B totales. El vocabulario es de 128.000 tokens y el presupuesto de entrenamiento alcanza los 36 billones de tokens.
 
-El modelo fue entrenado con un presupuesto de 36 billones de tokens. La version publicada aqui es la post-entrenada para cargas de trabajo agénticas, derivada del modelo base `LiquidAI/LFM2.5-24B-A2B-Base`. Se trata de un modelo puro de razonamiento: segun el autor, siempre piensa antes de responder e inserta la etiqueta `<think>` directamente en la plantilla de chat. Utiliza un formato tipo ChatML y una plantilla de chat basada en `tokenizer.apply_chat_template()`. El autor menciona un modelo draft DSpark para decodificacion especulativa con SGLang, anunciado como proximo. No se detalla en la informacion disponible la composicion exacta del dataset ni si se emplearon tecnicas concretas de RLHF o DPO.
+El modelo es un "reasoning model" puro: el chat template inserta directamente la etiqueta `<think>` y el modelo siempre razona antes de responder. Se distribuye un checkpoint base (LFM2.5-24B-A2B-Base) para fine-tuning y un checkpoint post-entrenado para cargas de trabajo agenticas. Liquid AI menciona un modelo draft DSpark para decodificacion especulativa con SGLang (marcado como "coming soon"), lo que apunta a optimizacion de latencia en generacion. No se detalla en la informacion disponible la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento explicito: el modelo siempre genera un bloque `<think>` antes de la respuesta final.
-- Uso de herramientas y function calling: el autor lo posiciona como mejor en su clase en tareas agénticas y de uso de herramientas.
-- Soporte para agentes y razonamiento multi-paso.
-- Capacidades multilingues en 16 idiomas, incluidos espanol, portugues, frances, aleman, italiano, chino, japones, coreano, arabe, hindi, ruso, polaco, vietnamita, thai e indonesio.
-- Ejecucion en dispositivo (edge) gracias a su bajo numero de parametros activos.
-- Modelo exclusivamente de texto: no se declaran capacidades de vision ni de audio.
-- Soporte de decodificacion especulativa mediante el modelo draft DSpark (anunciado, no disponible aun).
+- Generacion de texto y razonamiento explicito: siempre genera un bloque `<think>` antes de la respuesta final.
+- Uso de herramientas y function calling, optimizado para cargas de trabajo agenticas.
+- Razonamiento multi-paso y ejecucion de agentes, con buen rendimiento declarado en tareas de tool use.
+- Soporte multilingue en 16 idiomas, incluido el espanol.
+- Capacidad de razonamiento con coste reducido por token gracias a los 2,45B parametros activos.
+- Formato de chat tipo ChatML con etiquetas `<|im_start|>`, `<|im_end|>` y `<|startoftext|>`.
+- Modelo solo texto: no se declaran capacidades de vision ni audio.
+- Parametros de generacion recomendados: temperature 0.1, top_k 50, repetition_penalty 1.05.
 
 ## Casos de uso
 
-- Agentes locales en portatil o estacion de trabajo: al activar solo 2,45B de parametros, el modelo puede ejecutarse en un Mac con Apple Silicon (MLX 4-bit) y razonar en local sin enviar datos a la nube, util para entornos con requisitos de privacidad.
-- Automatizacion de atencion al cliente: gestiona conversaciones multi-turno con hasta 131.072 tokens de contexto, lo que permite mantener historiales largos de interaccion y documentacion de soporte en la misma ventana.
-- Pipelines de generacion de codigo: con soporte de tool calling puede integrarse en flujos que invocan linters, compiladores o APIs de repositorios para tareas de asistencia de programacion.
-- Razonamiento paso a paso en analisis de datos: el bloque de pensamiento explicito ayuda en tareas de descomposicion de problemas y verificacion de resultados antes de emitir una conclusion.
-- Orquestacion de agentes con recuperacion (RAG): el autor recomienda emparejarlo con recuperacion o busqueda web para tareas con alta carga de conocimiento, aprovechando su fortaleza en invocacion de herramientas.
-- Asistentes multilingues para mercados hispanohablantes y europeos: cubre espanol, portugues, frances, aleman e italiano, adecuado para productos con usuarios en varias regiones.
-- Procesamiento de documentos largos en el borde: con contexto de 131.072 tokens puede resumir o extraer informacion de contratos, informes o transcripciones en hardware local.
-- Despliegue de alto rendimiento en servidor: con la variante FP8 y vLLM o SGLang puede servir cargas concurrentes en GPU de centro de datos.
+- Agentes de razonamiento en dispositivo: el modelo puede ejecutar bucles de razonamiento y llamadas a herramientas localmente, con 184 tok/s en un Apple M5 Max y solo 2,45B parametros activos, lo que lo hace viable en portatiles de gama alta.
+- Asistentes con tool calling y recuperacion: Liquid AI recomienda emparejarlo con retrieval o busqueda web para tareas intensivas en conocimiento, aprovechando su fortaleza en llamadas a herramientas en lugar de depender de conocimiento parametrico.
+- Automatizacion de atencion al cliente multi-turno: con 131.072 tokens de contexto puede gestionar conversaciones largas y mantener el hilo, aunque para datos factuales conviene combinarlo con RAG.
+- Generacion y revision de codigo en pipelines: el soporte de function calling permite integrarlo en flujos de CI/CD para invocar herramientas de linting, tests o despliegue.
+- Despliegue de alta concurrencia en servidor: el checkpoint FP8 y el soporte de vLLM y SGLang permiten servir hasta 21K tokens de salida por segundo en una unica GPU NVIDIA B300.
+- Razonamiento en el borde (edge) y movil: los formatos ONNX y MLX-4bit habilitan inferencia acelerada por hardware en entornos de borde y en Mac con Apple Silicon.
+- Fine-tuning especifico de dominio: el checkpoint base LFM2.5-24B-A2B-Base esta pensado para adaptacion a tareas concretas con datos propios.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos de benchmark publicados en la informacion disponible corresponden a la tarea agéntica LiveClaw, donde el modelo se compara con Qwen3.6-35B-A3B:
+Los unicos datos numericos publicados en la informacion disponible son los siguientes:
 
-| Benchmark | LFM2.5-24B-A2B | Qwen3.6-35B-A3B |
+| Benchmark / metrica | LFM2.5-24B-A2B | Qwen3.6-35B-A3B |
 |---|---|---|
 | LiveClaw | 48,09 | 38,19 |
+| Throughput en Apple M5 Max | 184 tok/s | no disponible |
+| Throughput en NVIDIA B300 (salida) | hasta 21K tok/s | no disponible |
+| Aceleracion frente a MoEs comparables en dispositivo | hasta 1,7x | no disponible |
 
-No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar.
-
-Datos de rendimiento declarados por el autor:
-- Hasta 1,7 veces mas rapido que MoE comparables en dispositivo.
-- 184 tok/s en un Apple M5 Max.
-- Hasta 21.000 tokens de salida por segundo en una sola GPU NVIDIA B300.
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar. La model card incluye una imagen de benchmarks (`figures/LFM2.5-24B-A2B-benchmark.png`) cuyo contenido numerico no se detalla en el texto proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (estimacion a partir del numero de parametros; no confirmada por el autor):
-  - BF16/FP16: aproximadamente 48 GB de pesos.
-  - FP8: aproximadamente 24 GB.
-  - Cuantizacion 4-bit (MLX/GGUF Q4): aproximadamente 12-14 GB.
-- GPU de centro de datos: el autor cita rendimiento en NVIDIA B300; por tamano, GPU como A100 80 GB, H100 80 GB o B200 son adecuadas para servir el modelo en FP8 o BF16.
-- GPU de consumo: en cuantizacion 4-bit el modelo puede caber en tarjetas con 16 GB o mas de VRAM, como RTX 4090 o RTX 5090; el espacio de pesos es menor que el de un modelo denso de 24B gracias a los 2,45B parametros activos, aunque la memoria esta dominada por los pesos totales.
-- Apple Silicon: existe una variante MLX 4-bit optimizada para Mac; el autor reporta 184 tok/s en un Apple M5 Max.
-- Opciones de despliegue: Transformers, vLLM, SGLang, llama.cpp (via GGUF), ONNX Runtime y MLX.
-- Latencia y throughput: el autor reporta hasta 21K tok/s de salida en B300 y 184 tok/s en Apple M5 Max; no se detallan latencias por consulta ni throughput para otras configuraciones.
+- VRAM estimada para inferencia: el repo nativo ocupa 48,0 GB, por lo que en precision nativa (bf16/fp16) requiere aproximadamente 48 GB o mas de memoria. El checkpoint FP8 reduce el requisito a la mitad aproximadamente (unos 24 GB). Las cuantizaciones GGUF y MLX-4bit reducen aun mas el consumo, aunque el dato exacto no esta disponible.
+- GPU recomendadas: NVIDIA B300 para alto rendimiento (hasta 21K tok/s de salida en una sola GPU). Para despliegue en servidor con FP8, GPU con 24 GB o mas de VRAM (A100 40/80GB, H100, L40S). El modelo no cabe en una RTX 4090 de 24 GB en precision nativa; si en FP8 o cuantizaciones de 4 bits.
+- Cabe en GPU de consumo: si, en configuraciones cuantizadas (GGUF Q4/Q5, MLX-4bit) sobre GPUs de 16-24 GB y en Apple Silicon de gama alta.
+- Opciones de despliegue: Transformers, vLLM, SGLang (incluye soporte de decodificacion especulativa con el modelo draft DSpark), llama.cpp (GGUF), ONNX Runtime y MLX en Apple Silicon.
+- Latencia y throughput: 184 tok/s en Apple M5 Max; hasta 21K tok/s de salida en una NVIDIA B300; hasta 1,7x mas rapido que MoEs comparables en dispositivo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | LiveClaw | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| LFM2.5-24B-A2B | 24,0B | 2,45B | 131.072 | 48,09 | lfm1.0 | Hugging Face (safetensors, FP8, GGUF, ONNX, MLX) |
-| Qwen3.6-35B-A3B | aproximadamente 35B | aproximadamente 3B | no disponible | 38,19 | no disponible | no disponible |
-| LFM2.5-230M | 230M | no aplica (denso) | no disponible | no disponible | lfm1.0 | Hugging Face |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| LFM2.5-24B-A2B | 24B / 2,45B | 131.072 | lfm1.0 | LiveClaw 48,09; razonamiento puro; multilingue (16 idiomas) |
+| Qwen3.6-35B-A3B | 35B / 3B (aprox.) | no disponible | no disponible | LiveClaw 38,19; ~50% mas parametros totales y activos segun Liquid AI |
+| LFM2.5-230M | 230M | no disponible | lfm1.0 | Miembro menor de la misma familia; no comparable en capacidad |
 
-Los datos de Qwen3.6-35B-A3B provienen de la comparacion ofrecida por el propio autor del modelo. No se dispone de informacion suficiente para comparar con otras alternativas de la misma categoria.
+La informacion proporcionada solo permite comparar directamente con Qwen3.6-35B-A3B en el benchmark LiveClaw. No se dispone de datos de otros modelos comparables (por ejemplo, otros MoE de 20-30B) en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- El autor desaconseja su uso para tareas con alta carga de conocimiento sin apoyo externo: recomienda combinarlo con recuperacion o busqueda web, lo que implica un riesgo de alucinacion mayor si se usa de forma aislada.
-- Es un modelo puro de razonamiento que siempre genera un bloque de pensamiento, lo que incrementa el numero de tokens de salida y puede aumentar la latencia percibida frente a modelos que no razonan.
-- Solo procesa texto: no hay soporte declarado de vision ni de audio.
-- La licencia es `lfm1.0` (etiquetada como `license: other`), por lo que las condiciones exactas de uso comercial deben consultarse en el archivo LICENSE del repositorio antes de un despliegue en produccion.
-- No se detallan en la informacion disponible los sesgos conocidos, la composicion del dataset de entrenamiento ni posibles limitaciones por idioma mas alla de la lista de idiomas soportados.
-- La variante DSpark para decodificacion especulativa esta anunciada pero no disponible, por lo que las mejoras de velocidad asociadas no pueden aprovecharse todavia.
-- No se han publicado en la informacion disponible resultados en benchmarks estandar de conocimiento o codigo, lo que dificulta la comparacion objetiva con alternativas en esas areas.
+- Modelo solo texto: no soporta vision ni audio.
+- No recomendado para tareas intensivas en conocimiento por si solo; Liquid AI recomienda combinarlo con retrieval o busqueda web para mitigar alucinaciones factuales.
+- Es un modelo de razonamiento puro: siempre genera un bloque `<think>` antes de responder, lo que incrementa el numero de tokens generados y puede no ser deseable en aplicaciones de baja latencia o respuestas triviales.
+- Licencia lfm1.0 (etiquetada como "other"): es necesario revisar los terminos del archivo LICENSE antes de un uso comercial; no se detallan en la informacion disponible las restricciones concretas.
+- Riesgo de sesgos y alucinaciones inherente a los modelos de lenguaje; no se documentan en la informacion disponible evaluaciones de sesgo.
+- Cobertura multilingue declarada en 16 idiomas, pero no se aportan metricas de calidad por idioma; el rendimiento en idiomas distintos del ingles puede variar.
+- El modelo draft DSpark para decodificacion especulativa esta marcado como "coming soon", por lo que esa optimizacion de latencia aun no esta disponible.
+- El tamano nativo (48 GB) exige cuantizacion para desplegarse en hardware de consumo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-Base
-- Variante FP8: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8
-- Variante GGUF: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF
-- Variante ONNX: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-ONNX
-- Variante MLX 4-bit: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit
-- Modelo LFM2.5-230M: https://huggingface.co/LiquidAI/LFM2.5-230M
-- Blog del modelo: https://www.liquid.ai/blog/lfm2-5-24b-a2b
-- Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome
-- Documentacion de la plantilla de chat: https://docs.liquid.ai/lfm/key-concepts/chat-template
+- Checkpoint FP8: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8
+- Checkpoint GGUF: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF
+- Checkpoint ONNX: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-ONNX
+- Checkpoint MLX-4bit: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit
+- Modelo draft DSpark: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-DSpark
+- Modelo menor de la familia: https://huggingface.co/LiquidAI/LFM2.5-230M
+- Blog de Liquid AI: https://www.liquid.ai/blog/lfm2-5-24b-a2b
 - Playground: https://playground.liquid.ai/
+- Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome
+- Documentacion del chat template: https://docs.liquid.ai/lfm/key-concepts/chat-template
 - Discord: https://discord.com/invite/liquid-ai
-- Paper (referencia arXiv): arxiv:2511.23404
+- Paper (arXiv): https://arxiv.org/abs/2511.23404

@@ -2,102 +2,101 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED** es una variante cuantizada del modelo base **AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16**, desarrollada por **AEON-7 (Aeon Forge)** como una version de despliegue para entornos con presupuesto de VRAM limitado. Esta version utiliza una combinacion tecnica de mezcla de precisiones (NVFP4, FP8 y BF16) optimizada para GPUs Blackwell, como NVIDIA DGX Spark/GB10, RTX 5090 y RTX PRO 6000. El objetivo es ofrecer un modelo funcional para agentes, codificacion y razonamiento multimodal sin sacrificar demasiada calidad en tareas de programacion.
+Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED es una versión cuantizada en precisión mixta del modelo AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16, un derivado "abliterated" (eliminación de rechazos) de la familia Qwen3.8 de 27B. Lo publica el usuario AEON-7 y combina una arquitectura híbrida con atención completa y capas de atención lineal de tipo GDN (gated delta net), además de torre de visión y cabeza MTP (multi-token prediction) para decodificación especulativa. El resultado es un modelo multimodal imagen-texto orientado a generación de texto, razonamiento, código y uso agéntico.
 
-Aunque el nombre comercial indica 27B, los pesos reales en safetensors suman **19.869.895.920 parametros** (~19.9B). La arquitectura es hibrida, combinando **atencion lineal de tipo gated-deltanet (GDN)** con **mecanismos de atencion completa** y componentes de tipo Mamba. Incluye un **head de MTP (multi-token prediction)** para decodificacion especulativa y una torre de vision intacta, lo que lo convierte en un modelo multimodal.
+La relevancia de esta ficha está en la receta de cuantización: no es un volcado uniforme a NVFP4, sino una mezcla deliberada de NVFP4 (capas MLP 0-55), FP8 (capas MLP 56-63 y escritores de atención/GDN) y BF16 (torre de visión, cabeza MTP, embeddings, lm_head y el interior de GDN). Según la model card, esta mezcla busca preservar la fidelidad en código en las últimas capas, donde una receta FP8 parcial degradó la puntuación de pruebas unitarias de 0,833 a 0,694.
 
-La relevancia del modelo radica en su enfoque de **cuantizacion mixta pragmática**, que evita los problemas de la cuantizacion uniforme (que degrada la codificacion) al mantener capas criticas en FP8 o BF16. Segun el autor, la puntuacion AEON Bench Coding es de **0.833**, muy superior a la version cuantizada anterior (0.694) y por delante de la version stock de Unsloth NVFP4 (0.806).
+El modelo está pensado para despliegue en hardware Blackwell (DGX Spark/GB10, RTX 5090, RTX PRO 6000) con imágenes vLLM específicas del autor. El repositorio ocupa 24,7 GB y declara 19.869.895.920 parámetros reales en safetensors, aunque la nomenclatura comercial lo etiqueta como 27B. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con atencion lineal (GDN), atencion completa y componentes estilo Mamba |
-| Parametros totales | 19.869.895.920 |
-| Parametros activos | No procede (modelo denso, no es MoE) |
-| Longitud de contexto | No disponible (el autor menciona configuraciones de hasta 131k tokens en pruebas locales) |
-| Tipos de cuantizacion | NVFP4 (W4A4), FP8 y BF16 (cuantizacion mixta) |
-| Idiomas soportados | Ingles, chino y otros (multilingual) |
+| Arquitectura | Transformer híbrido con atención completa + atención lineal GDN (gated delta net), torre de visión y cabeza MTP |
+| Parametros totales | 19.869.895.920 (según safetensors); etiquetado comercial como 27B |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible (la model card menciona "long-context" como tag, sin cifra) |
+| Tipos de cuantizacion | Mixta: NVFP4 W4A4 (MLP 0-55), FP8 (MLP 56-63, atención softmax, escritores GDN), BF16 (visión, MTP, embeddings, lm_head, interior GDN) |
+| Idiomas soportados | en, zh, multilingual |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, compatible con vLLM |
+| Formato de pesos | safetensors (4 shards, ~23,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un modelo textual-multimodal de tipo **hybrid-attention**, que combina capas de **gated-deltanet** con **atencion completa** y componentes de **atencion lineal/Mamba**. El modelo base BF16 fue sometido a un proceso de **abliteration** para eliminar rechazos y producir respuestas "uncensored", manteniendo coherencia y utilidad. Esta variante NVFP4-MIXED se ha cuantizado con la herramienta **NVIDIA ModelOpt**, aplicando una cuadricula de precision que asigna:
+La arquitectura es un transformer híbrido que combina capas de atención completa con capas de atención lineal GDN (gated delta net), una variante de atención lineal con compuertas que el autor etiqueta también como "mamba" y "hybrid-attention" en los tags. Incluye una torre de visión para entrada imagen-texto y una cabeza MTP (multi-token prediction) destinada a decodificación especulativa. El modelo base BF16 es un derivado abliterated del Qwen3.8-27B, con la torre de visión y la cabeza MTP intactas según la model card.
 
-- **Capas MLP 0–55**: NVFP4 (W4A4)
-- **Capas MLP 56–63**: FP8 (gate, up, down)
-- **Atencion softmax y escritores GDN**: FP8
-- **Torre de vision, head MTP, embeddings y lm_head**: BF16
-
-El **head MTP** se incorporo despues de la exportacion mediante ModelOpt, usando 15 tensores BF16 del modelo base, ya que la cuantizacion lo habia eliminado. El autor indica que la calibracion se realizo con 1024x2048 muestras y que el proceso de exportacion verifico que todos los tensores estuvieran presentes. No se han publicado detalles sobre los datos de preentrenamiento originales, pero el modelo hereda las capacidades de la familia Qwen3.8.
+El proceso de cuantización usa NVIDIA ModelOpt con calibración de 1024x2048 y una puerta de exportación que verifica `found=168 missing=0 last8_mlp_fp8=24`. La receta se refinó empíricamente: una primera versión (Mix B) aplicó FP8 solo a `down_proj` de las últimas 8 capas y dejó `gate`/`up` en NVFP4, lo que hizo caer la puntuación de pruebas unitarias de código a 0,694; la versión final aplica FP8 a las tres proyecciones (`gate`, `up`, `down`) de las capas 56-63, recuperando 0,833. Tras la exportación se injertó la cabeza MTP desde el BF16 maestro (15 tensores, 0,791G) porque ModelOpt la había descartado. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- **Generacion de texto y razonamiento**: soporta modos de pensamiento ("thinking") y respuestas directas.
-- **Codificacion**: alto rendimiento en tareas de programacion segun benchmarks propios (AEON Bench Coding 0.833).
-- **Tool calling / function calling**: soportado de forma nativa, con marcadores en los tags.
-- **Soporte de agentes y razonamiento multi-step**: puntuaciones de 0.918 en Hermes y 0.818 en OpenCode.
-- **Vision / multimodal**: integra torre de vision y preprocesador de video, permitiendo entradas imagen-texto.
-- **Uncensored**: respuestas sin "rechazos" morales o filtros de seguridad, tal como indica el nombre.
-- **Multilingue**: soporta ingles, chino y otros idiomas.
-- **Decodificacion especulativa nativa**: gracias al head MTP, optimizada para GPUs RTX.
+- Generación de texto conversacional e instruct, con modo de razonamiento ("thinking") según los tags `reasoning` y `thinking`.
+- Generación de código: la receta de cuantización se diseñó explícitamente para preservar la fidelidad en pruebas unitarias (puntuación 0,833 en AEON Bench).
+- Capacidades de visión: pipeline `image-text-to-text` y torre de visión en BF16.
+- Tool calling y function calling, con tags `tool-calling`, `function-calling` y `agentic`.
+- Razonamiento multi-paso y flujos agénticos.
+- Multilingüe: inglés, chino y otros idiomas (tag `multilingual`).
+- Decodificación especulativa mediante cabeza MTP nativa y drafter externo DFlash2 opcional.
+- Compatibilidad con API compatible con OpenAI (`openai-compatible`) y despliegue en vLLM con chunked-prefill.
+- Comportamiento "uncensored" / "refusal-removed": el autor indica que se eliminaron los rechazos manteniendo coherencia.
 
 ## Casos de uso
 
-- **Asistente de codificacion en local**: se puede desplegar en una RTX 5090 o DGX Spark para generar, revisar y depurar codigo sin conexion. La cuantizacion mixta mantiene la fidelidad en las capas criticas, lo que reduce las probabilidades de fallos en tests unitarios.
-- **Chatbot de atencion al cliente con tool calling**: gestiona conversaciones multi-turno y ejecuta herramientas externas (consultas de pedidos, devoluciones) mediante function calling, aprovechando el contexto largo.
-- **Agente autor**: usado en entornos OpenCode o OpenClaw para automatizar tareas como revision de pull requests, generacion de parches o ejecucion de scripts. El modelo puede razonar paso a paso y llamar a funciones de forma fiable.
-- **Analisis multimodal de imagenes tecnicas**: gracias a la torre de vision intacta, interpreta capturas de pantalla, diagramas de arquitectura o fotos de errores hardware, combinando la informacion visual con instrucciones textuales.
-- **Generacion de contenido creativo sin filtros**: aplicaciones de escritura narrativa o roleplay donde se requiere evitar rechazos o restricciones automaticas. El proceso de abliteration elimina los mecanismos de negacion, lo que facilita respuestas ininterrumpidas.
-- **Pipeline de CI/CD**: integracion con frameworks compatibles con OpenAI (vLLM) para generar codigo de pruebas automaticas o documentacion tecnica. El soporte de tool calling permite conectarlo con repositorios y ejecutar comandos en un sandbox.
-- **Investigacion local de agentes**: prototipado de sistemas multiagente en GPUs de consumo (RTX 5090) donde la VRAM esta limitada a 24-32 GB, gracias al tamaño final de ~23.8 GB.
+- Generación de código en producción: el modelo conserva las últimas 8 capas MLP en FP8 precisamente para mantener la tasa de acierto en pruebas unitarias, lo que lo hace adecuado para pipelines de CI/CD que generan y validan código automáticamente.
+- Asistentes de programación con contexto largo: la combinación de atención híbrida y chunked-prefill en vLLM permite procesar repositorios o archivos extensos en una sola sesión.
+- Agentes autónomos con tool calling: los tags `agentic` y `function-calling` indican soporte para invocar herramientas externas en bucles multi-paso, útil para automatización de tareas.
+- Análisis de documentos con imágenes: la torre de visión en BF16 permite extraer información de capturas, diagramas o formularios combinados con texto.
+- Despliegue en estación de trabajo Blackwell: con ~23,8 GB en 4 shards, encaja en una RTX 5090 o RTX PRO 6000 para inferencia local de un modelo de 27B con visión.
+- Servicio de chat sin filtros para investigación: el carácter abliterated lo hace adecuado para estudios sobre comportamiento de modelos y evaluación de sesgos, no para atención al cliente con requisitos de moderación.
+- Aceleración de inferencia con decodificación especulativa: el drafter DFlash2 permite aumentar el throughput manteniendo la verificación del modelo de 27B.
 
 ## Benchmarks y rendimiento
 
-Los resultados presentados por el autor corresponden a la suite local **AEON Bench** ejecutada en un GB10 con vLLM. No se han publicado benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Se incluye la comparativa con la version anterior (Mix B):
-
-| Benchmark local | This MIXED | Prior Mix B |
+| Benchmark | Resultado | Contexto |
 |---|---|---|
-| Text mean | 0.782 | 0.759 |
-| Coding | 0.833 | 0.694 |
-| Hermes | 0.918 | ~0.917 |
-| OpenClaw | 0.707 | 0.733 |
-| OpenCode | 0.818 | 0.793 |
+| AEON Bench (pruebas unitarias de código), receta Mix B | 0,694 | FP8 solo en `down_proj` de últimas 8 capas |
+| AEON Bench (pruebas unitarias de código), receta final | 0,833 | FP8 en `gate`/`up`/`down` de capas 56-63 |
+| Aceleración con drafter DFlash2 (T=0,6) | +21 % tok/s vs DFlash2 estándar | Medido en una DGX Spark con etapa lk3 |
+| Aceleración con drafter DFlash2 (T=1,0) | +35 % tok/s vs DFlash2 estándar | Medido en una DGX Spark con etapa lk3 |
+| Aceleración con drafter DFlash2 (sin drafter) | 3,2× más rápido | Medido en una DGX Spark |
 
-El autor tambien menciona que la version stock de Unsloth NVFP4 obtuvo **0.806** en Coding, mientras que este modelo alcanza 0.833. No obstante, el propio autor reconoce que la inteligencia general (matematicas, razonamiento, prosa) queda por detras del Qwen stock, con un composite de 84.5.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: ~23.8 GB (4 shards), por lo que se requiere una GPU con al menos 24 GB de VRAM dedicada.
-- **GPUs recomendadas**: NVIDIA DGX Spark / GB10 (sm_121a, arquitectura aarch64), RTX 5090 (sm_120) y RTX PRO 6000 (sm_120/amd64).
-- **No apto para**: GPUs con menos de 24 GB de VRAM ni tarjetas de arquitecturas distintas a Blackwell (no se menciona compatibilidad con Ampere o Hopper).
-- **Opciones de despliegue**: vLLM mediante imagenes Docker de **`ghcr.io/aeon-7/aeon-vllm-ultimate:latest`** (para Spark/GB10) y **`ghcr.io/aeon-7/aeon-vllm-ultimate-rtx:latest`** (para RTX). No se recomienda cruzar ambas imagenes entre hardware distinto.
-- **Latencia y throughput**: no disponible en la informacion proporcionada.
-- **Compatibilidad con librerias**: transformers, vLLM (endpoint compatible con OpenAI).
+- VRAM estimada: ~23,8 GB de pesos en 4 shards; se recomienda al menos 24 GB de VRAM efectiva, con margen adicional para caché KV y contexto.
+- GPU objetivo declaradas: DGX Spark / GB10, RTX 5090, RTX PRO 6000 (arquitectura Blackwell, SM 120/121a).
+- El BF16 maestro (~54 GB) requiere H200, multi-GPU o RTX PRO 6000.
+- Cabe en GPU de consumo: RTX 5090 (32 GB) es el objetivo principal; no se indica compatibilidad con generaciones anteriores (Ampere/Ada) por la dependencia de NVFP4.
+- Despliegue: imágenes vLLM "AEON vLLM Ultimate" del autor, con soporte de chunked-prefill y API compatible con OpenAI. No se mencionan llama.cpp, Ollama ni TGI.
+- Throughput: el drafter DFlash2 reporta +21 % a T=0,6, +35 % a T=1,0 y 3,2× frente a no usar drafter en una DGX Spark; no se publican cifras absolutas de tok/s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Peso aproximado | AEON Bench Coding | Licencia |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 | 19.869.895.920 | BF16 | ~54 GB | No benchmarked (fuente de verdad) | Apache 2.0 |
-| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED | 19.869.895.920 | NVFP4+FP8+BF16 | ~23.8 GB | 0.833 | Apache 2.0 |
-| Unsloth Qwen3.8 27B NVFP4 (referencia no oficial) | No disponible | NVFP4 | No disponible | 0.806 | No disponible |
+| Este modelo (MIXED NVFP4) | 19,87B reales (~27B nominal) | no disponible | NVFP4 + FP8 + BF16 | Apache 2.0 | Blackwell (DGX Spark, RTX 5090, PRO 6000) |
+| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 | ~54 GB | no disponible | BF16 | Apache 2.0 | H200, multi-GPU, PRO 6000 |
+| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MXFP4-MXFP6-ROCm | ~23,7 GB | no disponible | MXFP4 + MXFP6 + BF16 | Apache 2.0 | AMD ROCm (R9700, MI350/MI355) |
+| AEON DFlash2 drafter | ~1,9 GB NVFP4 / ~3,85 GB BF16 | no disponible | NVFP4 W4A16 / BF16 | no disponible | DGX Spark, RTX 5090 |
 
-La comparacion con el modelo BF16 es especialmente relevante: el BF16 es el maestro de precision completa, mientras que esta variante MIXED busca ofrecer un perfil de despliegue mas ligero. Los datos de Unsloth provienen de una comparativa citada por el autor y no se dispone de una ficha publica de ese modelo.
+No se dispone de datos de benchmarks comparativos con modelos de otras familias en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Sesgos y alucinaciones**: no se han documentado sesgos concretos, pero al ser un modelo "uncensored" y abliterado, puede ser incapaz de rechazar peticiones perjudiciales. El riesgo de generacion de contenido nocivo es mayor que en modelos con filtros de seguridad.
-- **Rendimiento cognitivo**: el autor admite que la inteligencia general (matematicas, razonamiento y prosa) va por detras del modelo Qwen stock. No es un modelo de maxima capacidad academica, sino orientado a tareas agil y de codificacion.
-- **Puntos debiles**: OpenClaw es significativamente mas debil (0.707) que otras tareas agilicas, lo que puede limitar su uso en flujos que dependan de esa herramienta.
-- **Restricciones de despliegue**: las imagenes vLLM para Spark y RTX son incompatibles entre si. Usar una imagen en el hardware equivocado puede provocar errores de carga (por ejemplo, el error `'MergedColumnParallelLinear' object has no attribute 'data'` en RTX con imagenes antiguas).
-- **Compatibilidad**: la cuantizacion mixta con MTP requiere un stack de software especifico. Fuera de las imagenes oficiales de AEON, el despliegue puede fallar o perder el soporte de decodificacion especulativa.
-- **Licencia**: Apache 2.0 permite uso comercial, pero el caracter "uncensored" puede ser problematico en entornos con regulaciones de seguridad o politicas corporativas.
+- Modelo "uncensored" / "refusal-removed": no aplica salvaguardas de contenido, por lo que no es adecuado para producción orientada al público sin moderación externa.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de factualidad.
+- La cuantización mixta puede introducir degradaciones no medidas en tareas distintas del código; solo se reporta AEON Bench.
+- Dependencia de hardware Blackwell: NVFP4 requiere SM 120/121a, lo que excluye GPU Ampere, Ada y anteriores.
+- No se especifica la longitud de contexto efectiva ni el impacto de la cuantización en contextos largos.
+- La model card indica que las notas de despliegue completas están en LotusMake y que el acceso al drafter DFlash2 está restringido a suscriptores.
+- La licencia Apache 2.0 permite uso comercial, pero el carácter abliterated traslada al usuario la responsabilidad legal y ética del contenido generado.
+- El autor advierte que "un bucle de contexto largo no es la última palabra" sobre esta línea, lo que sugiere posibles problemas no resueltos en contextos extensos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: <https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED>
-- Modelo base BF16: <https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16>
-- Publicacion oficial en Patreon: <https://www.patreon.com/AeonForge7/posts/official-release-168877910>
-- Perfil de la organizacion AEON-7: <https://huggingface.co/AEON-7>
+- Repositorio Hugging Face: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
+- Modelo base BF16: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
+- Variante ROCm MXFP4-MXFP6: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MXFP4-MXFP6-ROCm
+- Drafter DFlash2: https://huggingface.co/AEON-7/AEON-DFlash2-Qwen3.8-27B
+- Página del autor en LotusMake: https://lotusmake.com/c/aeon-forge
+- Soporte/suscripción: https://lotusmake.com/support

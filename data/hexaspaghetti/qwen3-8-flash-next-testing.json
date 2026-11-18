@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 177392830576,
   "parameters_human": "177.39B",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "HexaSpaghetti/Qwen3.8-Flash-Next-Testing-WIP",
+  "renamed_at": "2026-11-18T03:12:11.051Z",
   "benchmarks": [],
   "sources": []
 }

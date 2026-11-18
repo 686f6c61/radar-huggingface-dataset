@@ -24,7 +24,7 @@
     "diffusers:QwenImage21Pipeline",
     "region:us"
   ],
-  "likes": 3668,
+  "likes": 3670,
   "downloads_30d": 286817,
   "trending_score": 52,
   "parameters": 7115124736,
@@ -48,14 +48,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qwen Studio",
+      "title": "Qwen",
       "url": "https://chat.qwen.ai/",
-      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s …"
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
     },
     {
       "title": "Qwen",
       "url": "https://qwen.ai/home",
-      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
     },
     {
       "title": "Qwen — Wikipédia",
@@ -63,14 +63,14 @@
       "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
     },
     {
-      "title": "Qwen - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Qwen",
-      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large …"
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen combines chain-of-thought reasoning with creative idea generation to craft narratives, develop characters, and explore plots …"
     },
     {
-      "title": "Qwen (Qwen) - Hugging Face",
-      "url": "https://huggingface.co/Qwen",
-      "snippet": "Nov 27, 2024 · Qwen/Qwen3.8-Flash-Next ... Qwen/Qwen3.8-Flash-Next-FP8 ... Qwen/Qwen3.8-2.4T-A95B ... Qwen/Qwen3.8-2.4T …"
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large …"
     }
   ]
 }

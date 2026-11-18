@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 40,
-  "downloads_30d": 81071,
+  "downloads_30d": 83178,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Docs : connexion",
-      "url": "https://docs.google.com/document/create?hl=fr",
-      "snippet": "Accédez à Google Docs avec un compte Google personnel ou un compte Google Workspace (à usage professionnel)."
-    },
-    {
-      "title": "Google Docs",
-      "url": "https://docs.google.com/",
-      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
-    },
-    {
-      "title": "MLA Template - Google Docs",
-      "url": "https://docs.google.com/document/d/19B-yXT9h9A1hXPugvvmo_X2esoLNWJU5ycqK6Fr65gA/edit",
-      "snippet": "Your Name Your Teacher’s Name Class Name and Period Date Title of Your Paper Press tab, and begin typing your paper here. As …"
-    },
-    {
-      "title": "Google Docs: Sign-in",
-      "url": "https://docs.google.com/document/?rswr=true",
-      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
-    },
-    {
-      "title": "CCC APA 7th ed. Student Paper Template - Google Docs",
-      "url": "https://docs.google.com/document/d/1cv_MjQVKnGc9sbaYiOUna2155jMEvUxACwyDax-XYWI/edit",
-      "snippet": "This template provides a guide for students to format their papers in APA 7th edition style."
-    }
-  ]
+  "sources": []
 }

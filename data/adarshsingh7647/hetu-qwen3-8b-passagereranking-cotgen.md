@@ -2,73 +2,104 @@
 
 ## Resumen
 
-HETU-Qwen3-8B-PassageReranking-CotGen es un modelo de lenguaje fine-tuneado a partir de Qwen3-8B, desarrollado por AdarshSingh7647 como parte de la suite HETU (Hints Enable True Understanding). Su propósito específico es la reranking de pasajes (passage reranking), una tarea de recuperación de información en la que se ordenan documentos candidatos según su relevancia para una consulta. El modelo está entrenado para generar una cadena de razonamiento completa (chain-of-thought) antes de emitir su salida, una técnica denominada CotGen, que mejora la interpretabilidad y la precisión en la decisión de relevancia.
+HETU-Qwen3-8B-PassageReranking-CotGen es un ajuste fino de Qwen3-8B orientado a la reordenación de pasajes (passage reranking) en un pipeline de recuperación de información, concretamente dentro de la familia de experimentos que el autor publica bajo el nombre `eklav`. El modelo se entrena con una variante de supervisión fina denominada Std-SFT en la que la función de pérdida se aplica tanto al razonamiento del profesor como a la respuesta final, de modo que el modelo aprende a emitir una cadena de razonamiento antes de concluir si un pasaje es relevante para una consulta.
 
-El modelo se presenta como un checkpoint final fusionado (pesos base + adaptador LoRA) en precisión bf16, con un total de 8.190.735.360 parámetros, lo que coincide con la arquitectura densa de Qwen3-8B. Está diseñado para ser evaluado en los benchmarks BRIGHT y NevIR, aunque no se han publicado resultados numéricos en la información disponible. Su relevancia radica en que aborda la reranking con razonamiento explícito, una aproximación que puede superar a los rerankers puramente discriminativos en escenarios donde la justificación de la relevancia es compleja.
+El uso previsto es el de un reranker puntual (pointwise), al estilo de Rank1: dado un par consulta-pasaje, el modelo genera su razonamiento y termina con el token `true` o `false`, y la puntuación de relevancia se obtiene como la probabilidad normalizada del token `true` en ese último paso. Esto lo convierte en una pieza intermedia de sistemas RAG que necesitan reordenar candidatos recuperados por un retriever de primera fase.
 
-## Especificaciones tecnicas
+El modelo base Qwen3-8B aporta 8.190.735.360 parámetros y una ventana de contexto nativa amplia, lo que resulta adecuado para reranking de pasajes largos. La relevancia actual del modelo es la de un checkpoint especializado y experimental, con más de 5.000 descargas, pero con documentación y metadatos incompletos (sin licencia ni idiomas declarados), lo que limita su adopción en producción sin una evaluación propia.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Qwen3-8B) |
-| Parametros totales | 8.190.735.360 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible (el modelo base Qwen3-8B soporta 32K, pero no se confirma para este fine-tune) |
-| Tipos de cuantizacion | bf16 (formato original); cuantizaciones adicionales no especificadas |
-| Idiomas soportados | no disponible (el modelo base Qwen3 soporta multiples idiomas, pero no se detalla para este checkpoint) |
+| Arquitectura | transformer decoder-only (base Qwen3-8B), ajuste fino para reranking con razonamiento |
+| Parámetros totales | 8.190.735.360 |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible en la información proporcionada (el ejemplo de uso configura `max_model_len=16000`) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Modelo base | Qwen/Qwen3-8B |
+| Tamaño del repositorio | 16,4 GB |
+| Librería | transformers |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-8B, un transformer denso con 8 mil millones de parametros, y se fine-tunea mediante adaptadores LoRA que posteriormente se fusionan en los pesos completos. La innovacion principal es el metodo CotGen: el modelo se entrena para generar una cadena de razonamiento explicita antes de producir la puntuacion o decision de relevancia. Esto convierte la reranking en una tarea generativa con justificacion, en lugar de un clasificador binario o de puntuacion directa. El entrenamiento se realiza sobre datos de reranking, probablemente con pares consulta-documento y anotaciones de relevancia, aunque no se especifican el volumen de datos ni la composicion exacta del dataset. Tampoco se detalla si se emplearon tecnicas de RLHF o DPO; la informacion disponible solo menciona el metodo CotGen y la evaluacion en BRIGHT y NevIR.
+El modelo parte de Qwen3-8B, un transformer decoder-only denso de aproximadamente 8.200 millones de parámetros, y se ajusta mediante un procedimiento que el autor denomina Std-SFT. En este esquema, la pérdida se calcula sobre el razonamiento del modelo profesor y sobre la respuesta final, de forma que el estudiante aprende a producir una traza de razonamiento que desemboca en una decisión binaria de relevancia (`true`/`false`). El autor publica una variante adicional, Eklav-Passage-8B, entrenada con el método Eklav, que mejora los resultados de Std-SFT según la model card.
+
+El entrenamiento está orientado a la tarea BRIGHT de reranking de pasajes, un benchmark de recuperación en dominios intensivos en razonamiento. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO. La innovación principal es la formulación del reranking como generación de razonamiento seguida de una decisión binaria, con extracción de la probabilidad del token final para producir una puntuación continua en lugar de un ranking directo.
 
 ## Capacidades
 
-- Reranking de pasajes: ordena documentos candidatos segun su relevancia para una consulta dada, generando una explicacion razonada antes de la decision.
-- Razonamiento de cadena de pensamiento: produce un CoT explicito que puede auditarse para entender por que un documento es relevante o no.
-- Generacion de texto: al estar basado en Qwen3-8B, conserva las capacidades generativas del modelo base, aunque su uso principal es la reranking.
-- Soporte de tool calling: no confirmado para este fine-tune especifico; el modelo base Qwen3-Instruct lo soporta, pero no se indica en la model card.
-- Capacidades multilingues: no especificadas para este checkpoint; el modelo base Qwen3 es multilingue, pero no se garantiza que el fine-tune mantenga ese soporte.
-- Integracion con pipelines de recuperacion: puede usarse como componente de reranking en sistemas RAG o de busqueda.
+- Reordenación puntual de pasajes: dada una consulta y un pasaje, emite razonamiento y una decisión `true`/`false`, con puntuación derivada de la probabilidad del token final.
+- Razonamiento explícito en cadena antes de la decisión de relevancia (bloque ` thinking`).
+- Generación de texto conversacional, heredada del modelo base Qwen3-8B.
+- Capacidad de operar en modo batch mediante vLLM con `max_model_len=16000`, según el ejemplo de la model card.
+- Soporte de `text-generation-inference` y `endpoints_compatible` según los tags del repositorio.
+- Extracción de logprobs para scoring calibrado (el ejemplo usa `logprobs=20`).
 
 ## Casos de uso
 
-- Recuperacion aumentada por generacion (RAG): el modelo puede rerankear los pasajes recuperados por un primer sistema de busqueda (por ejemplo, BM25 o embeddings) antes de pasarlos al generador, mejorando la precision de las respuestas finales.
-- Busqueda empresarial: en motores de busqueda internos, puede ordenar documentos corporativos segun su relevancia para consultas de empleados, con explicaciones que facilitan la depuracion del sistema.
-- Sistemas de preguntas y respuestas sobre dominios especificos: al generar CoT, permite verificar si la relevancia asignada es correcta, util en entornos regulados donde se requiere trazabilidad.
-- Evaluacion de calidad de recuperacion: puede usarse como juez automatico para comparar la relevancia de resultados de diferentes sistemas de recuperacion, generando justificaciones que ayudan a identificar sesgos.
-- Asistentes de investigacion academica: para ordenar articulos cientificos candidatos segun su pertinencia a una pregunta de investigacion, con razonamiento explicito sobre la conexion entre consulta y documento.
-- Chatbots con contexto largo: aunque no es su uso principal, puede integrarse en un pipeline donde el chatbot necesita seleccionar los fragmentos mas relevantes de un historial largo antes de responder.
+- Reranking en pipelines RAG: tras una primera fase de recuperación con un retriever denso o BM25, el modelo reordena los 20-100 candidatos superiores puntuando cada par consulta-pasaje con la probabilidad de `true`, mejorando la precisión del contexto entregado al generador.
+- Búsqueda en dominios técnicos y científicos: el entrenamiento sobre BRIGHT está orientado a consultas que requieren razonamiento sobre el pasaje, útil en documentación médica, legal o de ingeniería donde la coincidencia léxica falla.
+- Filtrado de contexto antes de la generación: en lugar de pasar todos los fragmentos recuperados al LLM generador, se usa este modelo para descartar pasajes irrelevantes y reducir coste de tokens y latencia del paso final.
+- Evaluación de relevancia con justificación: al emitir razonamiento, permite auditar por qué un pasaje se consideró relevante, útil en sistemas con requisitos de explicabilidad.
+- Reordenación multilingüe de documentación: siempre que se valide el comportamiento en idiomas distintos del inglés, puede reordenar pasajes en corpus mixtos; la información disponible no confirma los idiomas soportados.
+- Construcción de datasets de preferencia para rerankers: las trazas de razonamiento generadas pueden usarse como datos de destilación para modelos de reranking más pequeños.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que el modelo se evalua en BRIGHT y NevIR, pero no proporciona tablas de resultados ni comparaciones con otros modelos. Por tanto, no es posible presentar datos numericos de rendimiento.
+Resultados BRIGHT nDCG@10 publicados en la model card:
+
+| Modelo | Método | BRIGHT nDCG@10 |
+|---|---|---|
+| Qwen3-4B | Eklav | 31,5 |
+| Qwen3-4B | Std-SFT | 29,3 |
+| Qwen3-8B | Std-SFT | 31,5 |
+| Qwen3-8B | Eklav | 34,2 |
+| GLM-Z1-9B | Std-SFT | 30,1 |
+| GLM-Z1-9B | Eklav | 33,2 |
+| Qwen3-14B | Std-SFT | 32,5 |
+| Qwen3-14B | Eklav | 34,7 |
+
+El checkpoint de este repositorio corresponde a la variante Std-SFT sobre Qwen3-8B, con 31,5 nDCG@10 en BRIGHT. No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales para este ajuste.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos en bf16, el modelo ocupa aproximadamente 16,4 GB (tamano del repo). Para inferencia con cuantizacion de 8 bits, se estiman unos 8-9 GB; con 4 bits, unos 5-6 GB.
-- GPU recomendadas: para bf16 completo, una GPU con al menos 20 GB de VRAM (por ejemplo, RTX 4090, A100 40GB, H100). Con cuantizacion 4 bits, puede ejecutarse en GPUs consumer de 8-12 GB (RTX 3080, RTX 4070).
-- Si cabe en consumer GPU: si, con cuantizacion 4 bits o 8 bits en GPUs de gama alta consumer.
-- Opciones de despliegue: al ser un modelo transformers, puede servirse con vLLM, TGI, o mediante llama.cpp con pesos convertidos a GGUF (no se proporcionan conversiones oficiales). Tambien es compatible con Ollama si se convierte.
-- Latencia y throughput: no disponibles; dependen del hardware y del metodo de cuantizacion. Para un modelo de 8B en una GPU moderna, se espera una latencia de decodificacion de decenas de milisegundos por token, pero no hay datos medidos.
+- Inferencia en precisión completa (BF16): aproximadamente 16,4 GB de pesos, más KV cache; se recomienda al menos 24 GB de VRAM para contexto moderado y 40-80 GB para contexto largo.
+- Cuantización a 8 bits: en torno a 9-10 GB de VRAM, viable en RTX 4090 (24 GB) y A6000 (48 GB).
+- Cuantización a 4 bits: en torno a 5-6 GB de VRAM, viable en RTX 3090/4090 y en GPUs consumer de 12-16 GB con contexto reducido; no se confirman los formatos de cuantización soportados por el autor.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB para serving con vLLM y alto throughput; RTX 4090 para desarrollo y evaluación.
+- Despliegue: vLLM es la opción documentada en la model card (con `logprobs` y cadenas de parada para ` true` y ` false`); también es compatible con text-generation-inference y transformers.
+- Throughput y latencia: no disponibles. El modelo genera hasta 8.192 tokens de razonamiento por par consulta-pasaje según el ejemplo, lo que implica un coste computacional elevado por candidato y recomienda batch y límites de tokens ajustados.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa rigurosa. El modelo se posiciona como un reranker generativo basado en Qwen3-8B, pero no hay datos de rendimiento publicados. Como referencia, el modelo base Qwen3-8B-Instruct es un LLM generalista, mientras que este checkpoint esta especializado en reranking. Otros rerankers conocidos como BGE-Reranker-v2-M3 o Cohere Rerank no son directamente comparables por su naturaleza discriminativa y su tamano menor. Se recomienda consultar los benchmarks BRIGHT y NevIR para futuras comparaciones, pero no se incluyen aqui por falta de datos.
+| Modelo | Parámetros | Contexto | BRIGHT nDCG@10 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| HETU-Qwen3-8B-PassageReranking-CotGen (Std-SFT) | 8,19 B | no disponible | 31,5 | no disponible | Hugging Face |
+| Eklav-Passage-8B | 8,19 B (base Qwen3-8B) | no disponible | 34,2 | no disponible | Hugging Face |
+| GLM-Z1-9B (ajustado, Eklav) | ~9 B | no disponible | 33,2 | no disponible | Hugging Face |
+| Qwen3-14B (ajustado, Eklav) | ~14 B | no disponible | 34,7 | no disponible | Hugging Face |
+| Rank1-7B (referencia de formato) | ~7 B | no disponible | no disponible | no disponible | Hugging Face (jhu-clsp) |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se han documentado sesgos especificos para este modelo, pero al derivar de Qwen3-8B, puede heredar sesgos presentes en los datos de entrenamiento del modelo base.
-- Riesgo de alucinacion: al generar cadenas de razonamiento, el modelo puede producir justificaciones plausibles pero incorrectas, especialmente en dominios fuera de su distribucion de entrenamiento.
-- Limitaciones de contexto: no se confirma la longitud de contexto efectiva tras el fine-tune; si se reduce respecto al modelo base, podria afectar a consultas o documentos muy largos.
-- Restricciones de licencia: la licencia no esta disponible, lo que impide conocer si el uso comercial esta permitido. Se recomienda contactar al autor antes de usar en produccion.
-- Caveat de produccion: al ser un modelo de investigacion con cero descargas y sin benchmarks publicados, su robustez en entornos reales no esta validada. Es necesario evaluarlo en el dominio de aplicacion antes de desplegarlo.
+- La licencia no está declarada en la información disponible; no debe asumirse uso comercial permitido sin verificar la licencia del modelo base Qwen3-8B y la del ajuste.
+- No se declaran idiomas soportados; el comportamiento fuera del inglés no está validado y la evaluación publicada se limita a BRIGHT.
+- El modelo es un checkpoint de investigación con documentación mínima (sin ficha de sesgos, sin datos de entrenamiento ni evaluación de seguridad).
+- El coste de inferencia es alto para un reranker: genera cadenas de razonamiento de hasta 8.192 tokens por par, lo que lo hace inviable para reordenar cientos de candidatos sin filtrado previo.
+- Riesgo de alucinación en el razonamiento: la traza puede justificar una decisión incorrecta; la puntuación debe calibrarse por umbral sobre un conjunto de validación propio.
+- La extracción de la probabilidad del token final depende de detalles de tokenización y de las cadenas de parada de vLLM; el propio autor advierte de un posible desfase de un token, por lo que conviene verificar la implementación de scoring.
+- El repositorio corresponde a la variante Std-SFT, no a la variante Eklav, que obtiene mejores resultados; conviene comprobar cuál se está desplegando.
+- No hay información sobre cuantizaciones oficiales ni sobre rendimiento en GPUs consumer.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AdarshSingh7647/HETU-Qwen3-8B-PassageReranking-CotGen
-- Paper tecnico de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388
-- Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
-- Repositorio TabRanker del mismo autor (GitHub): https://github.com/AdarshSingh7647/TabRanker
-- Coleccion TabRank Qwen3 8B (Hugging Face): https://huggingface.co/collections/AdarshSingh7647/tabrank-qwen3-8b-table-rerankers
+- Variante Eklav: https://huggingface.co/AdarshSingh7647/Eklav-Passage-8B
+- Código del proyecto: https://github.com/AdarshSingh7647/Eklavya
+- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
+- Referencia de formato Rank1: https://huggingface.co/jhu-clsp/rank1-7b

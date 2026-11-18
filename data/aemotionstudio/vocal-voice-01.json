@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "AEmotionStudio/vocal-voice-01",
+  "slug": "aemotionstudio-vocal-voice-01",
+  "author": "AEmotionStudio",
+  "url": "https://huggingface.co/AEmotionStudio/vocal-voice-01",
+  "created_at": "2026-11-18T03:08:17.000Z",
+  "updated_at": "2026-11-18T03:21:00.000Z",
+  "license": "proprietary-voice-cc0-training-data",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "singing-voice-synthesis",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434308873,
+  "storage_human": "434 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

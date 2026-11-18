@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 32,
-  "downloads_30d": 23666,
+  "downloads_30d": 23675,
   "trending_score": 11,
   "parameters": 1078285824,
   "parameters_human": "1.08B",
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ifm electronic - spécialiste des capteurs et solutions d’automatismes ...",
-      "url": "https://www.ifm.com/fr/fr",
-      "snippet": "ifm vous accompagne dans toutes les phases de vos projets ou demandes : de la préconisation de solutions jusqu’à la mise en …"
-    },
-    {
-      "title": "IFM/K2-Horizon-0.9B | vLLM Recipes",
-      "url": "https://recipes.vllm.ai/IFM/K2-Horizon-0.9B",
-      "snippet": "K2-Horizon is an open-weight IFM model family built for transparent foundation-model research, staged checkpoint analysis, and practical deployment. The series spans compact dense models such as K2-Horizon-0.9B for local experimentation, dense mid-size and large models for high-quality research workloads, and mixture-of-expert (MoE) models for higher-capacity serving."
-    },
-    {
-      "title": "Institut Français de la Mode | Ecole mode Paris",
-      "url": "https://www.ifmparis.fr/fr",
-      "snippet": "L’Institut Français de la Mode, issu de l'union de l'Ecole de la chambre syndicale de la couture parisienne et de l'IFM, est un …"
-    },
-    {
-      "title": "IFM/K2 · Hugging Face",
-      "url": "https://huggingface.co/IFM/K2",
-      "snippet": "IFM / K2 like 99 Follow IFM 594 Text Generation Transformers Safetensors English llama nlp llm text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community 5 Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Programs | Institut Français de la Mode",
-      "url": "https://www.ifmparis.fr/en/programs",
-      "snippet": "The Doctoral Studies Program in Fashion Design (DFD) is a practice-based program developed by IFM in collaboration with various …"
-    }
-  ]
+  "sources": []
 }

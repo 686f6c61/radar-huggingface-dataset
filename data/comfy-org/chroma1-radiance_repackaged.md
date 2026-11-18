@@ -2,72 +2,85 @@
 
 ## Resumen
 
-Chroma1-Radiance es un modelo de generacion de imagenes a partir de texto (text-to-image) desarrollado por LodestoneRock y distribuido originalmente en Hugging Face bajo el identificador `lodestones/Chroma1-Radiance`. Esta version concreta, `Comfy-Org/Chroma1-Radiance_Repackaged`, es un reempaquetado oficial de Comfy-Org para facilitar su uso directo en ComfyUI, con los archivos de pesos ya organizados en el formato esperado por el flujo de trabajo de ese entorno.
+Chroma1-Radiance_Repackaged es un empaquetado de los pesos del modelo de difusion text-to-image Chroma1-Radiance, preparado por Comfy-Org para su uso directo en ComfyUI. No se trata de un modelo nuevo, sino de una redistribucion en formato de fichero unico (`diffusion-single-file`) de los pesos originales publicados por el usuario `lodestones` en el repositorio `lodestones/Chroma1-Radiance`. El objetivo es facilitar la integracion en el ecosistema ComfyUI sin necesidad de convertir o recomponer checkpoints.
 
-La caracteristica mas destacada del modelo es que genera imagenes directamente en espacio de píxeles, en lugar de hacerlo en un espacio latente con posterior decodificacion mediante un VAE. Este enfoque elimina la perdida de aproximacion tipica de los modelos latentes y permite una fidelidad visual mayor, especialmente en terminos de iluminacion y efectos de "radiancia". El modelo esta licenciado bajo Apache-2.0, lo que permite uso comercial sin restricciones adicionales. El archivo de pesos tiene un tamano de 19 GB y se distribuye como un unico safetensors.
+El modelo subyacente es un modelo de difusion condicionado por texto (pipeline `text-to-image`), orientado a la generacion de imagenes a partir de prompts en lenguaje natural. La informacion disponible no detalla la arquitectura interna concreta (tipo de backbone, dimensiones de atencion, numero de parametros), mas alla de su naturaleza como modelo de difusion. El repositorio repackaged ocupa 19,0 GB, lo que da una idea del orden de magnitud de los pesos en precision alta.
+
+Su relevancia es practica: permite a usuarios de ComfyUI descargar un unico fichero safetensors, colocarlo en `models/diffusion_models/` y ejecutar un flujo text-to-image con el workflow oficial publicado por Comfy-Org. La licencia Apache 2.0 facilita su uso comercial, aunque conviene revisar la ficha del modelo base original para conocer los detalles de entrenamiento y las condiciones completas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion, generacion en espacio de pixeles) |
+| Arquitectura | modelo de difusion text-to-image (detalle interno no disponible) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplicable (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
-| Tipos de cuantizacion | no disponible (se distribuye como safetensors de precision completa) |
-| Idiomas soportados | no disponible (presumiblemente ingles, sin confirmacion oficial) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (archivo unico, 19 GB) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no aplica a modelos de difusion en el sentido de LLM) |
+| Tipos de cuantizacion | no disponible (el repo contiene pesos en formato single-file safetensors) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (diffusion-single-file) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles tecnicos sobre la arquitectura interna del modelo (numero de capas, tipo de atencion, funcion de activacion, etc.). Lo unico confirmado es que se trata de un modelo de difusion que opera directamente en el espacio de pixeles, sin depender de un VAE para codificar y decodificar latentes. Esta decision de diseno implica que el proceso de generacion produce directamente la imagen RGB, lo que puede reducir errores de reconstruccion y mejorar la coherencia de detalles finos como texturas y gradientes de luz.
+El modelo base es Chroma1-Radiance, un modelo de difusion para generacion de imagenes condicionada por texto. La informacion proporcionada no incluye detalles sobre el tipo de backbone (por ejemplo, si emplea una arquitectura U-Net o un transformer de difusion), el numero de parametros, la composicion del dataset de entrenamiento ni si se aplicaron tecnicas de ajuste fino como RLHF o DPO. Tampoco se documenta el proceso de destilacion o las innovaciones tecnicas empleadas durante el entrenamiento.
 
-Tampoco se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens de texto procesados, ni si se aplicaron tecnicas de ajuste como RLHF o DPO. El modelo se presenta como un checkpoint de difusion listo para inferencia, sin documentacion adicional sobre su proceso de entrenamiento.
+El repositorio de Comfy-Org no aporta informacion adicional sobre el entrenamiento: se limita a reempaquetar los pesos originales en un fichero unico compatible con ComfyUI. Para obtener detalles sobre la arquitectura y el proceso de entrenamiento seria necesario consultar la model card del repositorio original `lodestones/Chroma1-Radiance`, que no forma parte de la informacion disponible en esta ficha.
 
 ## Capacidades
 
-- Generacion de imagenes fotorrealistas a partir de descripciones textuales, con especial enfasis en iluminacion y efectos de resplandor ("radiance").
-- Generacion en espacio de pixeles, lo que elimina la necesidad de VAE y evita la perdida de calidad asociada a la decodificacion latente.
-- Compatible con ComfyUI mediante el archivo `chroma-radiance-x0.safetensors`, que debe colocarse en el directorio `models/diffusion_models/`.
-- No se han documentado capacidades adicionales como edicion de imagenes, inpainting, control de pose o soporte multimodal mas alla de texto a imagen.
+- Generacion de imagenes a partir de descripciones textuales (text-to-image).
+- Integracion nativa con ComfyUI mediante el nodo de carga de modelos de difusion en formato single-file.
+- Ejecucion de workflows oficiales publicados por Comfy-Org, como el template "Chroma1 Radiance Text to Image".
+- Compatibilidad con el ecosistema de nodos y utilidades de ComfyUI (samplers, schedulers, upscalers, etc.).
+- No se documentan capacidades de edicion de imagen, inpainting, control estructural (ControlNet) ni generacion de video en la informacion disponible.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, al no tratarse de un modelo de lenguaje.
 
 ## Casos de uso
 
-- Ilustracion y arte digital: el modelo puede generar imagenes de alta fidelidad para portadas, concept art o ilustraciones editoriales, aprovechando su capacidad para reproducir iluminacion compleja y efectos de luz.
-- Diseno de producto y visualizacion arquitectonica: gracias a su generacion en espacio de pixeles, puede producir renders con calidad fotografica sin necesidad de postprocesado adicional.
-- Generacion de imagenes para campanas publicitarias: la licencia Apache-2.0 permite uso comercial, por lo que agencias pueden integrarlo en flujos de produccion de anuncios o materiales de marketing.
-- Creacion de contenido para videojuegos: util para generar texturas, fondos o assets visuales con alta coherencia de iluminacion, directamente integrable en pipelines de desarrollo.
-- Prototipado rapido en diseno UX/UI: permite generar mockups visuales de interfaces o escenarios de uso a partir de descripciones textuales.
-- Investigacion en generacion de imagenes: al estar disponible el codigo y los pesos, puede servir como base para experimentos sobre generacion en pixel space y comparaciones con modelos latentes.
+- Generacion de ilustraciones conceptuales: el modelo recibe un prompt descriptivo y produce una imagen coherente con la escena, util para bocetos rapidos en fases de diseno.
+- Creacion de assets para videojuegos o prototipos: permite generar variaciones de personajes, entornos o props a partir de descripciones textuales dentro de un pipeline de ComfyUI.
+- Exploracion de estilos visuales: al integrarse en ComfyUI, se puede combinar con nodos de postprocesado y comparar resultados entre distintos samplers y schedulers.
+- Generacion de material para marketing: produccion de imagenes de apoyo para campanas o mockups, con la ventaja de la licencia Apache 2.0 para uso comercial.
+- Prototipado de interfaces y wireframes visuales: generacion rapida de imagenes de referencia para equipos de producto.
+- Docencia y experimentacion en difusion: al ser un fichero unico y ligero de gestionar (19 GB), resulta adecuado para talleres y entornos de aprendizaje centrados en ComfyUI.
+- Automatizacion de flujos creativos: mediante la API de ComfyUI, se puede invocar el modelo desde scripts para generar lotes de imagenes de forma programatica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre metricas como FID, CLIP score o comparaciones con otros modelos de difusion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. Dado el tamano del archivo (19 GB), se recomienda al menos 24 GB de VRAM para cargar el modelo en precision completa (fp16 o fp32). Una cuantizacion a 8 bits podria reducir el requisito a unos 10-12 GB, pero no se proporcionan versiones cuantizadas.
-- GPU recomendadas: tarjetas con 24 GB o mas, como NVIDIA RTX 4090, A100, H100 o equivalentes. Para uso en produccion, se sugieren GPUs de centro de datos.
-- Compatibilidad con GPUs de consumo: posible con cuantizacion o usando precision mixta, pero no garantizado por falta de documentacion.
-- Opciones de despliegue: el modelo esta pensado para ComfyUI, por lo que se ejecuta localmente con ese entorno. No se mencionan soportes para vLLM, Ollama, TGI u otros servidores de inferencia, ya que no es un modelo de lenguaje.
+- VRAM estimada: no disponible de forma oficial. El repositorio ocupa 19,0 GB, lo que sugiere que los pesos en precision alta requieren al menos esa cantidad de memoria si se cargan completos; en la practica, ComfyUI puede descargar parcialmente a VRAM segun la GPU.
+- GPU recomendadas: no disponible. Por el tamano del checkpoint, se recomienda una GPU con 24 GB o mas de VRAM (RTX 3090, RTX 4090, A100, H100) para cargar los pesos sin offloading agresivo.
+- Cabe en GPU de consumo: probablemente en RTX 3090/4090 (24 GB) y modelos con 16 GB solo con offloading o cuantizacion, aunque no se confirma en la informacion disponible.
+- Opciones de despliegue: ComfyUI (soporte nativo del formato `diffusion-single-file`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de caracteristicas tecnicas detalladas para comparar directamente con otros modelos de difusion. A modo orientativo, se pueden considerar alternativas como SDXL (generacion en espacio latente, ~3.5B parametros) o FLUX.1 (tambien latente, ~12B parametros), pero Chroma1-Radiance se diferencia por su generacion en pixel space. Sin informacion cuantitativa, no es posible establecer una comparativa rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Chroma1-Radiance_Repackaged | no disponible | no aplica | Apache 2.0 | Hugging Face (Comfy-Org) |
+| Chroma1-Radiance (original) | no disponible | no aplica | Apache 2.0 (segun repo base) | Hugging Face (lodestones) |
+| Otros modelos text-to-image para ComfyUI | no disponible | no aplica | variable | Hugging Face / ComfyUI |
+
+No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- No se ha publicado informacion sobre sesgos, alucinaciones o limitaciones de contenido. Al ser un modelo de imagen, puede reflejar sesgos presentes en los datos de entrenamiento, aunque estos no se han documentado.
-- Riesgo de alucinacion visual: como cualquier modelo generativo, puede producir detalles inconsistentes o artefactos en regiones complejas, especialmente con prompts ambiguos.
-- Limitaciones de idioma: no se confirma el soporte multilingue; probablemente este optimizado para ingles.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero se debe revisar el aviso legal del modelo original para confirmar que no hay restricciones adicionales sobre el uso de los pesos.
-- Para produccion, se recomienda probar exhaustivamente la calidad de salida en el dominio especifico, ya que no hay benchmarks publicados que garanticen un rendimiento consistente.
-- El modelo solo genera imagenes; no soporta tareas de texto, audio ni video.
+- La informacion disponible no detalla sesgos conocidos del modelo base; al ser un modelo de difusion entrenado con datos web a gran escala, es probable que herede sesgos de representacion, pero no se confirma en la documentacion.
+- Riesgo de alucinacion visual: como todo modelo generativo, puede producir imagenes plausibles pero factualmente incorrectas (anatomias erroneas, texto ilegible, inconsistencias espaciales).
+- Limitaciones de idioma: no se especifican los idiomas soportados en los prompts; la efectividad puede variar y no esta documentada.
+- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero conviene verificar la ficha del modelo base original para confirmar condiciones y atribuciones.
+- El repositorio es un reempaquetado, no el modelo original; para soporte, actualizaciones o documentacion detallada debe consultarse el repositorio de `lodestones/Chroma1-Radiance`.
+- No se documentan requisitos minimos de hardware ni recomendaciones oficiales de VRAM, lo que puede complicar el dimensionamiento en produccion.
+- Al ser un fichero unico de 19 GB, la descarga y el almacenamiento requieren planificacion en entornos con ancho de banda o disco limitados.
 
 ## Enlaces
 
-- Repositorio original: https://huggingface.co/lodestones/Chroma1-Radiance
-- Repositorio reempaquetado (este modelo): https://huggingface.co/Comfy-Org/Chroma1-Radiance_Repackaged
-- Articulo de soporte en ComfyUI: https://comfyui.org/en/humo-and-chroma1-radiance-support
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Chroma1-Radiance_Repackaged
+- Modelo base original: https://huggingface.co/lodestones/Chroma1-Radiance
+- Repositorio ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Workflow oficial text-to-image: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_chroma1_radiance_text_to_image.json

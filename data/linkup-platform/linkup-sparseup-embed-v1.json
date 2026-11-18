@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 63,
-  "downloads_30d": 5328,
+  "downloads_30d": 4475,
   "trending_score": 12,
   "parameters": 188391300,
   "parameters_human": "188.4M",
@@ -55,29 +55,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "École de coaching #1 : RNCP 6, financement CPF, 4000 alumni",
-      "url": "https://www.linkup-coaching.com/",
-      "snippet": "Devenez coach professionnel certifié RNCP 6 avec Linkup Coaching, école #1 en France. 96% de réussite, 4000+ alumni formés, …"
-    },
-    {
-      "title": "Formation coach professionnel RNCP 6 : 96% de réussite, CPF",
-      "url": "https://www.linkup-coaching.com/formations/devenir-coach-professionnel",
-      "snippet": "Jul 3, 2015 · Linkup Coaching propose trois voies d'accès pour intégrer notre formation coach professionnel certifiante. Chaque …"
-    },
-    {
       "title": "Sage LinkUp Experts",
       "url": "https://www.linkup-sage.com/index.html",
       "snippet": "Tableau de bord Achats Factures fournisseurs Documents achats Fournisseurs Ventes Factures clients Documents ventes Clients …"
     },
     {
-      "title": "Sage LinkUp Experts",
-      "url": "https://admin.linkup-sage.com/fr-FR/Account/LogOn",
-      "snippet": "Bienvenue Votre portail collaboratif pour une relation à valeur ajoutée. Vous bénéficiez d'un espace de travail partagé entre le …"
+      "title": "École de coaching #1 : RNCP 6, financement CPF, 4000 alumni",
+      "url": "https://www.linkup-coaching.com/",
+      "snippet": "Devenez coach professionnel certifié RNCP 6 avec Linkup Coaching, école #1 en France. 96% de réussite, 4000+ alumni formés, …"
     },
     {
       "title": "Linkup — Wikipédia",
       "url": "https://fr.wikipedia.org/wiki/Linkup",
       "snippet": "Linkup est un boys band français, aujourd'hui dissous, vainqueur de la troisième saison de Popstars (intitulée Popstars, le duel), une …"
+    },
+    {
+      "title": "Linkup | The Web Search API for AI",
+      "url": "https://www.linkup.so/",
+      "snippet": "Integrate in one line of code Linkup works with the OpenAI SDK wrapper, LangChain, CrewAI, and dozens of other frameworks. Drop …"
+    },
+    {
+      "title": "Linkup - RSE, RSM et changements de comportements",
+      "url": "https://linkupfactory.com/",
+      "snippet": "LinkUp, société à mission Depuis 2022, notre définition juridique intègre pleinement nos enjeux sociétaux et environnementaux."
     }
   ]
 }

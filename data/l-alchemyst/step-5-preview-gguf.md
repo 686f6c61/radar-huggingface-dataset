@@ -1,99 +1,70 @@
 # L-Alchemyst/Step-5-Preview-GGUF
 
 ## Resumen
+Step-5-Preview es un modelo de lenguaje de gran escala desarrollado por StepFun (aunque la model card del repositorio no lo especifica explícitamente, el nombre "Step" y la arquitectura remiten a la familia Step de dicho laboratorio). Se trata de un transformer con arquitectura Mixture-of-Experts (MoE) de 600.100 millones de parámetros totales y 27.000 millones activos por token, con una ventana de contexto de 1.048.576 tokens. El repositorio aquí documentado es una recopilación de cuantizaciones GGUF con matrices de importancia (imatrix) publicada por el usuario L-Alchemyst, orientada específicamente al fork `ik_llama.cpp`.
 
-L-Alchemyst/Step-5-Preview-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario L-Alchemyst en Hugging Face. Por el nombre del repositorio, se trata de una redistribucion cuantizada del modelo base denominado "Step-5 Preview" (nomenclatura asociada habitualmente a la familia Step de StepFun), pero la informacion proporcionada no incluye la ficha del modelo original ni confirma autoría, arquitectura o procedencia. El repositorio se limita a alojar los ficheros de pesos convertidos a GGUF para su uso con motores de inferencia local como llama.cpp u Ollama.
+El modelo resuelve el problema de ejecutar inferencia de un LLM de 600B parámetros en hardware de gama alta mediante cuantización agresiva (esquemas IQ3/IQ4) y un indexador GQA disperso que reduce el coste de atención sobre contextos muy largos. Su relevancia actual radica en que permite desplegar localmente un modelo de contexto millón con un subconjunto de expertos activos relativamente pequeño (27B), lo que abarata el coste computacional por token frente a un modelo denso equivalente.
 
-El repositorio tiene un tamano de 297,5 GB, lo que indica que contiene varias cuantizaciones del mismo modelo base en un unico espacio (probablemente desde Q2/Q3 hasta Q8_0 y posiblemente F16). La licencia declarada es "other" y el acceso esta restringido: requiere aceptar condiciones en Hugging Face antes de poder descargar los ficheros. En el momento de la consulta acumula 48 descargas y 0 likes, con fecha de creacion en octubre de 2026.
-
-La relevancia de esta ficha es limitada por ausencia de documentacion: no hay model card del autor, no hay benchmarks y la busqueda web no ha devuelto ninguna fuente tecnica relacionada (los resultados obtenidos corresponden a paginas sobre la letra "L" y no guardan relacion con el modelo). Cualquier dato de arquitectura, contexto o rendimiento debe considerarse no disponible hasta que se consulte el repositorio original del modelo base.
+La ficha se centra en el artefacto GGUF distribuido en Hugging Face, no en el modelo original en precisión completa, del cual no se dispone de información en la documentación proporcionada.
 
 ## Especificaciones tecnicas
-
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (depende del modelo base "Step-5 Preview", no documentado en la informacion proporcionada) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible con detalle; el formato del repo es GGUF y el tamano total de 297,5 GB sugiere multiples niveles de cuantizacion, sin confirmar |
+| Arquitectura | Transformer MoE (352 expertos × 8 activos + 1 compartido, indexador GQA disperso) |
+| Parametros totales | 600.991.912.608 |
+| Parametros activos | 27.000 millones |
+| Longitud de contexto | 1.048.576 tokens |
+| Tipos de cuantizacion | GGUF IQ4_KS-mix-B, IQ3_KS-mix-B, smol-IQ3_KS-mix-B (con imatrix `step-preview-B.imatrix`) |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido, requiere aceptar condiciones) |
-| Formato de pesos | GGUF |
-| Autor del repositorio | L-Alchemyst |
-| Tamano del repositorio | 297,5 GB |
-| Descargas | 48 |
-| Likes | 0 |
-| Fecha de creacion | 2026-10-02 |
-| Ultima actualizacion | 2026-10-03 |
-| Acceso | restringido (gated) |
+| Licencia | other (no especificada en detalle) |
+| Formato de pesos | GGUF (shards), repo de 1473,6 GB |
 
 ## Arquitectura y entrenamiento
+La arquitectura es un transformer MoE con 92 capas (3 densas y 89 MoE) más 3 capas de Multi-Token Prediction (MTP). Cada capa MoE dispone de 352 expertos, de los cuales 8 se activan por token más 1 experto compartido. La atención usa 64 cabezas de consulta y 4 de clave/valor con dimensión de cabeza 192, y un patrón de atención deslizante de 512 tokens combinado con atención completa cada tres capas, repetido 92 veces. El vocabulario es de 128.896 tokens.
 
-No se dispone de informacion sobre la arquitectura del modelo base. Al tratarse de un repositorio de conversion a GGUF, el autor del repositorio no ha publicado detalles sobre el transformer subyacente, el numero de capas, el mecanismo de atencion ni la posible naturaleza MoE del modelo original. Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) o tecnicas de optimizacion.
-
-El unico dato tecnico verificable es el proceso de cuantizacion implicito: los pesos han sido convertidos al formato GGUF, lo que habilita la ejecucion en CPU y GPU con soporte para cuantizaciones de bloque (Q4_K_M, Q5_K_M, Q8_0, etc.). El tamano total del repositorio, 297,5 GB, es coherente con un modelo de gran tamano (del orden de decenas de miles de millones de parametros) distribuido en varios niveles de cuantizacion, pero esta afirmacion es una inferencia a partir del tamano del repo y no un dato confirmado en la documentacion disponible.
+El modelo incorpora un indexador GQA disperso que selecciona qué regiones de la caché de claves atienden, siguiendo la semántica de referencia oficial con bloques CSA. Las capas MTP permiten decodificación especulativa nativa. No se dispone en la información proporcionada de datos sobre volumen de tokens de entrenamiento, composición del dataset ni si se aplicaron RLHF/DPO.
 
 ## Capacidades
-
-- No se dispone de informacion verificada sobre capacidades especificas del modelo.
-- Generacion de texto: presumiblemente soportada por tratarse de un modelo de lenguaje, sin confirmacion documental.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades multimodales (vision, audio): no disponible.
-- Modo "thinking" o razonamiento explicito: no disponible.
+- Generación de texto conversacional (el tag del repo indica "conversational").
+- Razonamiento multi-paso y contexto extremadamente largo (1M tokens).
+- Decodificación especulativa mediante capas MTP, que acelera la generación.
+- Atención dispersa sobre caché de claves para contextos largos.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agentes: no disponible.
+- Capacidades multilingües: no disponible (los idiomas soportados no se especifican).
+- Capacidades de visión o audio: no disponible.
 
 ## Casos de uso
-
-Dado que no hay documentacion tecnica del modelo base, los casos de uso solo pueden plantearse de forma generica para un modelo de lenguaje cuantizado en GGUF. Se indican como escenarios plausibles, no como capacidades verificadas:
-
-- Inferencia local en estaciones de trabajo sin GPU de datacenter: el formato GGUF permite ejecutar el modelo con llama.cpp u Ollama aprovechando RAM del sistema y VRAM disponible, lo que facilita el despliegue en equipos de desarrollo sin depender de APIs externas.
-- Prototipado de asistentes conversacionales en local: util para validar prompts y flujos de dialogo antes de pasar a un despliegue en servidor, siempre que el modelo base tenga una ventana de contexto suficiente (dato no disponible).
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse en infraestructura propia, los datos no salen de la organizacion, lo que encaja en sectores regulados.
-- Experimentacion academica con cuantizacion: el repositorio puede servir para estudiar la degradacion de calidad entre niveles de cuantizacion de un mismo modelo base.
-- Evaluacion comparativa de motores de inferencia: al ser GGUF, permite medir throughput y latencia en llama.cpp, Ollama y otros backends compatibles.
-- Fine-tuning o adaptacion posterior: solo si la licencia "other" del repositorio lo permite, extremo que debe verificarse en la pagina del modelo antes de cualquier uso comercial.
+- Análisis de repositorios completos: con 1M tokens de contexto, el modelo puede ingerir bases de código extensas y responder preguntas transversales sobre múltiples ficheros sin trocear el contexto.
+- Procesamiento de documentación legal o contractual: permite cargar contratos completos y realizar extracción de cláusulas y comparaciones entre documentos largos, aprovechando la ventana de un millón de tokens.
+- Resumen de corpus científicos: agregar decenas de papers en una sola ventana para generar síntesis comparativas con referencias cruzadas.
+- Asistencia conversacional de largo alcance: mantener diálogos multi-turno con historial extenso sin perder coherencia, gracias al contexto de 1M y a las capas MTP que reducen latencia.
+- Despliegue local en estaciones de trabajo de gama alta: las cuantizaciones IQ3/IQ4 permiten ejecutar el modelo con `ik_llama.cpp` en equipos con suficiente memoria, evitando depender de APIs en la nube para datos sensibles.
+- Generación de código en pipelines internos: integrar el GGUF en herramientas de desarrollo local para autocompletado y refactorización, siempre que se valide la calidad de las cuantizaciones agresivas.
+- Investigación sobre eficiencia MoE: servir como banco de pruebas para estudiar el impacto de cuantizaciones IQ3/IQ4 con imatrix en la calidad de un modelo de 600B.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tabla de evaluaciones (MMLU, HumanEval, GSM8K, MT-Bench u otras) y la busqueda web no ha devuelto ninguna fuente tecnica asociada al modelo o al repositorio.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM/RAM estimada: no disponible de forma exacta al desconocerse el numero de parametros. Como referencia general para GGUF, el requisito de memoria es aproximadamente igual al tamano del fichero de cuantizacion mas un margen de overhead para el contexto (entre 1 y 4 GB adicionales segun la longitud de contexto configurada).
-- El repositorio completo ocupa 297,5 GB, pero no es necesario descargarlo entero: basta con el fichero de la cuantizacion elegida.
-- GPU recomendadas: no disponible. Con modelos GGUF de gran tamano, los perfiles habituales son RTX 3090/4090 (24 GB) para cuantizaciones bajas con offload parcial, y A100/H100 (40-80 GB) para cuantizaciones medias y altas o para repartir el modelo con tensor split.
-- Cabe en GPU consumer: no confirmado. Depende del tamano del fichero de cuantizacion seleccionado y del uso de offload de capas a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, LM Studio y servidores compatibles con GGUF. vLLM y TGI no trabajan con GGUF de forma nativa en todos sus modos, por lo que requeririan los pesos originales en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma explícita; el repo completo ocupa 1473,6 GB, pero cada conjunto de cuantización concreto (IQ4_KS-mix-B, IQ3_KS-mix-B, smol-IQ3_KS-mix-B) tiene un tamaño menor que no se detalla en la información proporcionada.
+- GPU recomendadas: no disponible. Por el tamaño del modelo (600B totales, 27B activos), se requiere hardware de centro de datos o configuraciones multi-GPU; no se especifican modelos concretos (A100, H100, etc.).
+- Consumer GPU: no disponible; el tamaño del artefacto y del modelo hacen improbable que quepa en una GPU de consumo, pero no se confirma en la información.
+- Opciones de despliegue: `ik_llama.cpp` (fork específico referenciado en la model card); otras opciones (vLLM, Ollama, TGI) no se mencionan.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| L-Alchemyst/Step-5-Preview-GGUF | no disponible | no disponible | other | GGUF | gated en Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de informacion suficiente para establecer una comparativa fiable. No se conocen los parametros, el contexto ni la licencia efectiva del modelo base, y la busqueda web no ha identificado modelos equivalentes de la misma familia o categoria.
+No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan establecer una comparación fundamentada.
 
 ## Limitaciones y advertencias
-
-- Ausencia total de model card: no hay documentacion del autor sobre arquitectura, datos de entrenamiento, licencia efectiva ni limitaciones conocidas.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje generativo; no cuantificado por falta de evaluaciones.
-- Sesgos: no evaluados ni documentados.
-- Limitaciones de contexto e idioma: no disponibles; se desconoce que idiomas y que longitud de contexto soporta el modelo base.
-- Licencia "other" con acceso restringido: el uso comercial, la redistribucion y la creacion de derivados deben verificarse expresamente en la pagina del repositorio y en la licencia del modelo base. No debe asumirse permiso de uso comercial.
-- Trazabilidad dudosa: el repositorio es una conversion de terceros (L-Alchemyst), no una publicacion oficial del desarrollador del modelo base. Conviene verificar la integridad de los pesos y comparar con la fuente original si esta existe.
-- Compatibilidad: al ser GGUF, no es directamente utilizable con frameworks que esperan safetensors (vLLM, axolotl, transformers sin adaptador), lo que limita su uso en pipelines de entrenamiento o servicio de alta concurrencia.
-- Estado del repositorio: 48 descargas y 0 likes indican una adopcion muy baja, sin validacion por parte de la comunidad.
+- Licencia "other": no se detallan los términos, por lo que el uso comercial requiere consultar la licencia original del modelo base antes de desplegarlo.
+- Los conjuntos `IQ3_KS-mix/` e `IQ4_KS-mix/` originales y la imatrix `step-preview-A.imatrix` están marcados como obsoletos; usar los `-B`.
+- Las cuantizaciones IQ3 son especialmente agresivas y pueden degradar la calidad respecto al modelo en precisión completa; no se han publicado evaluaciones comparativas.
+- Las descargas legacy requieren reparación manual con `gguf_meta_patch.py` y `qnorm_fix.py`.
+- Idiomas soportados no especificados: riesgo de comportamiento deficiente en castellano u otras lenguas no confirmadas.
+- Riesgo de alucinación y sesgos: no documentado en la información disponible.
+- Dependencia de un fork específico (`ik_llama.cpp`) para la implementación del indexador GQA disperso; otros runners pueden no soportar la arquitectura correctamente.
 
 ## Enlaces
-
 - Repositorio Hugging Face: https://huggingface.co/L-Alchemyst/Step-5-Preview-GGUF
-- Modelo base "Step-5 Preview": no disponible en la informacion proporcionada
-- Paper, blog o repositorio oficial: no disponible
-- Demos o espacios asociados: no disponible
-- Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (corresponden a paginas sobre la letra "L" y a contenidos deportivos), por lo que no se incluyen como fuentes tecnicas.
+- PR de `ik_llama.cpp` referenciado: https://github.com/ikawrakow/ik_llama.cpp/pull/2737

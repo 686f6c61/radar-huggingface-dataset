@@ -2,71 +2,96 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B es un modelo de lenguaje multimodal desarrollado por el equipo Qwen de Alibaba, presentado en abril de 2026. Se trata de una variante de arquitectura de mezcla de expertos (MoE) con 35 000 millones de parámetros totales y 3 000 millones de parámetros activos por token, lo que lo sitúa en la categoría de modelos eficientes para inferencia con recursos moderados. Su pipeline de `image-text-to-text` indica que acepta tanto imágenes como texto como entrada y genera texto, lo que lo habilita para tareas de visión y lenguaje combinadas.
+Qwen3.6-35B-A3B es la primera variante de pesos abiertos de la familia Qwen3.6, publicada por el equipo Qwen de Alibaba en abril de 2026 como evolucion del Qwen3.5 lanzado en febrero del mismo ano. Se trata de un modelo causal con codificador de vision, orientado a tareas de razonamiento, generacion de codigo y flujos de trabajo agenticos, y entrenado con especial enfasis en la experiencia de desarrollo de software real: razonamiento a nivel de repositorio, flujos de frontend y llamadas a herramientas. Su formato es una mezcla de expertos (MoE) con 35.951.822.704 parametros totales y aproximadamente 3.000 millones activos por token, lo que permite un coste de inferencia muy inferior al de un modelo denso de tamano equivalente.
 
-El modelo se distribuye a través de Hugging Face con más de 5,6 millones de descargas y cerca de 2 700 likes, lo que refleja una adopción temprana significativa. Aunque la ficha oficial no detalla la licencia ni los idiomas soportados, los metadatos del repositorio incluyen la etiqueta `license:apache-2.0`, lo que sugiere una licencia permisiva de código abierto. Su relevancia actual radica en combinar un tamaño de parámetros activos reducido (3B) con capacidades multimodales, una combinación poco frecuente que puede interesar a desarrolladores que buscan desplegar modelos de visión y lenguaje en entornos con limitaciones de hardware.
+La arquitectura combina capas de atencion lineal (Gated DeltaNet) con capas de atencion completa (Gated Attention) en un patron hibrido, lo que le permite sostener una longitud de contexto nativa de 262.144 tokens, extensible hasta 1.010.000. La licencia Apache 2.0 y la compatibilidad con Transformers, vLLM, SGLang y KTransformers lo convierten en una opcion atractiva para despliegues en produccion sin restricciones de uso comercial.
+
+Su relevancia actual radica en dos innovaciones concretas: la mejora del razonamiento agentico en entornos de repositorio y la denominada "Thinking Preservation", una opcion que conserva el contexto de razonamiento de mensajes historicos para reducir la sobrecarga en iteraciones de desarrollo. Con cerca de 4 millones de descargas y mas de 3.100 likes en Hugging Face, se posiciona como una de las referencias abiertas para tareas de codificacion asistida y agentes autonomos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) con atención multimodal (imagen-texto) |
-| Parametros totales | 35 000 millones (35B) |
-| Parametros activos | 3 000 millones (3B) |
-| Longitud de contexto | no disponible |
+| Arquitectura | Transformer hibrido con Gated DeltaNet (atencion lineal) y Gated Attention, Mixture of Experts, y codificador de vision |
+| Parametros totales | 35.951.822.704 (35B) |
+| Parametros activos | 3B (8 expertos enrutados + 1 compartido de 256 totales) |
+| Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.010.000 |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (indicada en etiquetas del repositorio, no confirmada en la ficha) |
-| Formato de pesos | safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (Transformers); compatible con vLLM, SGLang y KTransformers |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se detalla en la información disponible, pero el nombre del modelo y la etiqueta `qwen3_5_moe` indican que se basa en la familia Qwen 3.5 con una estructura de mezcla de expertos. En un MoE, solo una fracción de los parámetros se activa por token (en este caso 3B de 35B), lo que reduce el coste computacional por inferencia manteniendo una capacidad de conocimiento amplia. El pipeline `image-text-to-text` sugiere que el modelo incorpora un codificador visual (posiblemente similar a los usados en otros modelos Qwen-VL) y un decodificador de lenguaje que procesa secuencias intercaladas de tokens de imagen y texto.
+El modelo sigue un diseno de transformer hibrido con 40 capas organizadas en un patron de 10 bloques, cada uno compuesto por tres secuencias de Gated DeltaNet seguido de una capa de Gated Attention, todas ellas intercaladas con capas de mezcla de expertos. La Gated DeltaNet emplea 32 cabezas de atencion lineal para V y 16 para QK con dimension de cabeza 128, mientras que la Gated Attention usa 16 cabezas para Q y 2 para KV con dimension de cabeza 256 y dimension de embedding rotatorio de 64. La dimension oculta es de 2048 y el embedding de tokens (con padding) es de 248.320. El MoE cuenta con 256 expertos, de los cuales se activan 8 enrutados mas 1 compartido, con dimension intermedia de experto de 512.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se mencionan innovaciones técnicas específicas como decodificación especulativa o atención lineal. La ausencia de estos datos en la ficha pública limita el análisis, aunque la etiqueta `endpoints_compatible` sugiere que el modelo está preparado para su despliegue en plataformas de inferencia gestionada.
+El modelo fue entrenado en dos fases, preentrenamiento y postentrenamiento, e incorpora entrenamiento con multiples pasos de MTP (multi-token prediction), lo que habilita decodificacion especulativa y acelera la generacion. Incluye un codificador de vision que lo capacita para tareas de imagen-texto. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada. La model card menciona que la version se construyo a partir del feedback directo de la comunidad, priorizando estabilidad y utilidad practica, y destaca la preservacion del razonamiento (Thinking Preservation) como una opcion nueva para mantener el contexto de razonamiento entre mensajes historicos.
 
 ## Capacidades
 
-- Generación de texto a partir de entradas que combinan imágenes y texto (pipeline `image-text-to-text`).
-- Comprensión de imágenes y respuesta a preguntas visuales (VQA), descripción de imágenes y razonamiento sobre contenido visual.
-- Generación de lenguaje natural en tareas conversacionales, según la etiqueta `conversational`.
-- Capacidades de razonamiento y conocimiento general propias de la familia Qwen, aunque no se especifican detalles concretos.
-- Soporte para herramientas y funciones (tool calling) no confirmado explícitamente, pero probable dado el ecosistema Qwen.
-- Capacidades multilingües no documentadas en la ficha; se desconoce el alcance idiomático.
+- Generacion de texto y razonamiento multi-paso con modo de pensamiento (thinking mode) preservable entre turnos.
+- Generacion de codigo orientada a flujos de trabajo de frontend y razonamiento a nivel de repositorio, con mejoras especificas en tareas agenticas de programacion.
+- Comprension de imagenes y texto (pipeline image-text-to-text) gracias al codificador de vision integrado.
+- Soporte de tool calling y function calling, adecuado para agentes que interactuan con APIs y entornos.
+- Razonamiento agentico multi-paso y ejecucion de tareas en terminales y entornos de linea de comandos.
+- Capacidades multilingues: no se detallan los idiomas soportados en la informacion disponible, aunque el modelo reporta resultados en SWE-bench Multilingual.
+- Decodificacion especulativa mediante MTP entrenado con multiples pasos.
 
 ## Casos de uso
 
-- Asistencia visual para personas con discapacidad: el modelo puede describir escenas, leer texto en imágenes o identificar objetos, ayudando en aplicaciones de accesibilidad.
-- Moderación de contenido visual: análisis de imágenes para detectar contenido inapropiado o sensible, generando informes textuales automáticos.
-- Automatización de atención al cliente con soporte de capturas de pantalla: el usuario envía una imagen de un error o producto y el modelo genera una respuesta contextualizada.
-- Generación de descripciones para catálogos de comercio electrónico: a partir de fotos de productos, el modelo produce textos descriptivos y etiquetas.
-- Análisis de documentos escaneados: extracción de información de facturas, formularios o recibos mediante OCR y razonamiento multimodal.
-- Asistentes de programación con contexto visual: interpretación de diagramas, esquemas o capturas de código para ayudar en tareas de desarrollo.
+- Agente de codificacion en repositorios: el modelo puede razonar sobre la estructura completa de un repositorio y resolver issues de forma autonoma, con un 73,4 en SWE-bench Verified, lo que lo hace adecuado para integrarse en pipelines de CI/CD que abren pull requests automaticamente.
+- Asistente de desarrollo en IDE: con contexto nativo de 262.144 tokens, puede mantener en memoria varios archivos y el historial de conversacion, y la opcion de Thinking Preservation reduce la latencia en iteraciones sucesivas de refactorizacion.
+- Automatizacion de tareas en terminal: su rendimiento en Terminal-Bench 2.0 y el soporte de tool calling permiten construir agentes que ejecutan comandos, interpretan la salida y corrigen errores en bucle.
+- Atencion al cliente multimodal: al aceptar entrada de imagen y texto, puede gestionar conversaciones multi-turno donde el usuario adjunta capturas de pantalla o documentos, con contexto largo para historiales extensos.
+- Analisis de documentacion tecnica con imagenes: la combinacion de vision y contexto largo permite procesar manuales, diagramas de arquitectura y capturas de pantalla en una sola pasada para generar resumenes o responder preguntas.
+- Migracion y traduccion de codigo entre lenguajes: su resultado de 67,2 en SWE-bench Multilingual sugiere capacidad para trabajar con bases de codigo en varios idiomas, util en tareas de modernizacion de sistemas legacy.
+- Generacion de interfaces de usuario: las mejoras en flujos de frontend lo hacen adecuado para prototipado rapido de componentes y maquetacion a partir de descripciones o imagenes de referencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de puntuaciones en MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo concreto.
+Resultados publicados en la model card para la categoria de agente de codificacion:
+
+| Benchmark | Qwen3.5-27B | Gemma4-31B | Qwen3.5-35BA3B | Gemma4-26BA4B | Qwen3.6-35BA3B |
+|---|---|---|---|---|---|
+| SWE-bench Verified | 75,0 | 52,0 | 70,0 | 17,4 | 73,4 |
+| SWE-bench Multilingual | 69,3 | 51,7 | 60,3 | 17,3 | 67,2 |
+| SWE-bench Pro | 51,2 | 35,7 | 44,6 | 13,8 | 49,5 |
+| Terminal-Bench 2.0 | no disponible (truncado) | no disponible | no disponible | no disponible | no disponible |
+
+No se han publicado en la informacion disponible resultados de benchmarks de lenguaje general (MMLU, GSM8K, HumanEval) ni de vision; la model card solo incluye la tabla de agente de codificacion, parcialmente truncada.
 
 ## Requisitos de hardware
 
-- VRAM estimada: al tener solo 3B parámetros activos, la inferencia es considerablemente más ligera que un modelo denso de 35B. Con cuantización de 4 bits, podría ejecutarse en GPUs con 8-12 GB de VRAM, aunque no hay datos oficiales.
-- GPU recomendadas: tarjetas de gama media como RTX 3060/4060 (12 GB) o superiores; para despliegues de producción, A10, A100 o H100.
-- Compatibilidad con GPUs de consumo: probablemente sí, gracias al bajo número de parámetros activos, pero depende de la cuantización y la longitud de contexto.
-- Opciones de despliegue: compatible con el ecosistema Transformers de Hugging Face; la etiqueta `endpoints_compatible` sugiere soporte para vLLM, TGI u otros servidores de inferencia. No se confirma compatibilidad con llama.cpp u Ollama.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 35B parametros totales, en precision de 16 bits los pesos ocupan aproximadamente 72 GB, lo que exige multiples GPU o una GPU de gran memoria. En cuantizacion de 8 bits se reduce a unos 36 GB y en 4 bits a unos 18-20 GB, aunque los tipos de cuantizacion oficiales no estan disponibles en la informacion proporcionada.
+- GPU recomendadas: para precision completa, H100 80 GB, A100 80 GB o configuraciones multi-GPU. Para cuantizacion 4 bits, una RTX 4090 de 24 GB podria albergar los pesos, aunque el contexto largo y el codificador de vision incrementan los requisitos de memoria KV.
+- Cabe en GPU de consumo: si, en cuantizaciones agresivas (4 bits) y con longitudes de contexto moderadas; el contexto nativo de 262.144 tokens requiere planificacion cuidadosa de memoria.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang y KTransformers, segun la model card. Tambien aparece como compatible con endpoints (SageMaker, Azure) en los tags de Hugging Face.
+- Latencia y throughput: no disponibles en la informacion proporcionada; el uso de solo 3B parametros activos y la decodificacion especulativa via MTP deberian reducir el coste por token frente a modelos densos de 35B, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros modelos. Aunque existen otros MoE multimodales (por ejemplo, variantes de Mixtral o modelos de la familia Qwen-VL), no se conocen datos de rendimiento ni especificaciones detalladas de este modelo para contrastar. Se recomienda consultar la documentación oficial de Qwen para comparaciones actualizadas.
+| Modelo | Parametros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.6-35B-A3B | 35B totales / 3B activos | 262.144 (ext. 1.010.000) | 73,4 | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Qwen3.5-35B-A3B | 35B totales / 3B activos | no disponible | 70,0 | no disponible | Pesos abiertos |
+| Qwen3.5-27B | 27B densos | no disponible | 75,0 | no disponible | Pesos abiertos |
+| Gemma4-31B | 31B | no disponible | 52,0 | no disponible | Pesos abiertos |
+| Gemma4-26B-A4B | 26B totales / 4B activos | no disponible | 17,4 | no disponible | Pesos abiertos |
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: al ser un modelo generativo, puede producir contenido inexacto o inventado, especialmente en tareas visuales complejas.
-- Limitaciones de idioma: no se documentan los idiomas soportados; es posible que el rendimiento varíe significativamente fuera del inglés y el chino.
-- Contexto limitado: se desconoce la longitud máxima de contexto, lo que puede afectar a tareas que requieran secuencias largas.
-- Licencia: aunque la etiqueta sugiere Apache 2.0, no está confirmada en la ficha oficial; se debe verificar antes de un uso comercial.
-- Documentación incompleta: la falta de especificaciones técnicas detalladas (contexto, cuantización, benchmarks) dificulta la evaluación rigurosa para producción.
+- Sesgos conocidos: no se documentan en la informacion proporcionada; como modelo entrenado con datos web a gran escala, es previsible que herede sesgos de esos corpus, pero no hay evaluacion publicada al respecto.
+- Riesgo de alucinacion: no se aportan tasas de alucinacion ni evaluaciones de fidelidad; en tareas de codigo y agenticas conviene validar las salidas con tests automatizados antes de aplicarlas en produccion.
+- Limitaciones de contexto o idioma: el contexto nativo es amplio (262.144 tokens), pero la extension a 1.010.000 tokens puede degradar la calidad y dispara el consumo de memoria; los idiomas soportados no estan detallados, por lo que el rendimiento fuera de ingles y chino no esta garantizado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero conviene revisar el archivo LICENSE del repositorio para confirmar terminos exactos.
+- Caveats para produccion: la model card esta parcialmente truncada en la informacion disponible (faltan resultados de Terminal-Bench 2.0 y posiblemente otras secciones); los tipos de cuantizacion oficiales no se detallan, lo que obliga a validar el comportamiento en cuantizaciones de terceros antes de desplegar.
 
 ## Enlaces
 
-- [Hugging Face: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
+- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
+- Licencia: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
+- Qwen Chat: https://chat.qwen.ai/
+- Portal de Qwen: https://qwen.ai/home
+- Articulo de Wikipedia sobre Qwen: https://en.wikipedia.org/wiki/Qwen
+- Articulo de Wikipedia en frances sobre Qwen: https://fr.wikipedia.org/wiki/Qwen

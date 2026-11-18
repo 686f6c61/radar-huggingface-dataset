@@ -43,7 +43,7 @@
     "imatrix"
   ],
   "likes": 62,
-  "downloads_30d": 29724,
+  "downloads_30d": 28051,
   "trending_score": 11,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -62,75 +62,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": null,
-      "dataset": "gpqa-diamond",
-      "metric": "accuracy",
-      "value": 75.25
-    },
-    {
-      "task": null,
-      "dataset": "wikitext-2",
-      "metric": "perplexity",
-      "value": 6.17
-    },
-    {
-      "task": null,
-      "dataset": "ifeval",
-      "metric": "prompt-strict-accuracy",
-      "value": 70.24
-    },
-    {
-      "task": null,
-      "dataset": "ifeval",
-      "metric": "instruction-strict-accuracy",
-      "value": 76.26
-    },
-    {
-      "task": null,
-      "dataset": "truthfulqa",
-      "metric": "mc1",
-      "value": 77.6
-    },
-    {
-      "task": null,
-      "dataset": "truthfulqa",
-      "metric": "mc2",
-      "value": 81.98
-    },
-    {
-      "task": null,
-      "dataset": "xstest-safe",
-      "metric": "over-refusal-rate",
-      "value": 0
-    }
-  ],
-  "sources": [
-    {
-      "title": "Is Whatsapp web down? - Lowyat.NET",
-      "url": "https://forum.lowyat.net/topic/5538738",
-      "snippet": "Sep 8, 2025 · Lowyat.NET -> Kopitiam Bump Topic Add Reply RSS Feed Bottom Outline · [ Standard ] · Linear+ Is Whatsapp web …"
-    },
-    {
-      "title": "those use ipon watsapp web browser - Lowyat.NET",
-      "url": "https://forum.lowyat.net/topic/5556449",
-      "snippet": "Feb 27, 2026 · Bump TopicAdd ReplyRSS Feed Bottom 0new posts since last visit! Read latest posts Outline· [ Standard] · Linear+ …"
-    },
-    {
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/security-issue-im-moving-out-of-microsoft/b0c5dce4-4465-436a-8cdc-09daf77a70c8",
-      "snippet": ""
-    },
-    {
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/file-did-not-get-saved-on-one-drive/59024bed-1dca-46ff-a4ab-dc0d1db704aa",
-      "snippet": ""
-    },
-    {
-      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
-      "url": "https://forum.lowyat.net/topic/5556445",
-      "snippet": "Male QUOTE(aneppp @ Feb 27 2026, 12:40 PM) same problem as me according to reddit, whatsapp web is down for ios Same …"
-    }
-  ]
+  "benchmarks": [],
+  "sources": []
 }

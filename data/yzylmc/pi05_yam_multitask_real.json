@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "YzyLmc/pi05_yam_multitask_real",
+  "slug": "yzylmc-pi05_yam_multitask_real",
+  "author": "YzyLmc",
+  "url": "https://huggingface.co/YzyLmc/pi05_yam_multitask_real",
+  "created_at": "2026-11-17T20:38:09.000Z",
+  "updated_at": "2026-11-17T21:11:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "yam",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473119188,
+  "storage_human": "7.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA (NVDA) Stock Price & Overview",
+      "url": "https://stockanalysis.com/stocks/nvda/",
+      "snippet": "6 hours ago · A detailed overview of NVIDIA Corporation (NVDA) stock, including real-time price, chart, key statistics, news, and more."
+    }
+  ]
+}

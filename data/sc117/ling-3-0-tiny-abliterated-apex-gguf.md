@@ -2,93 +2,93 @@
 
 ## Resumen
 
-Ling-3.0-tiny-abliterated-APEX-GGUF es una versión cuantizada y "abliterada" del modelo Ling-3.0-tiny de InclusionAI, preparada por SC117. Se trata de un modelo MoE de 7,9B parámetros totales con solo 1,3B activos por token, diseñado con arquitectura de razonamiento híbrido y 128 expertos enrutados de los cuales únicamente 8 se activan por token. La abliteración se realizó con la herramienta abliterix mediante búsqueda de steering con LoRA sobre un modelo cargado en 4 bits, explorando más de 130 configuraciones y fusionando la receta seleccionada por Pareto en los pesos BF16. El resultado es una reducción del 85% en rechazos (de 98/100 a 15/100) con una divergencia KL de 0,0677 y sin degradación observada en comprobaciones de matemáticas, lógica, código, traducción y conocimiento.
+Ling-3.0-tiny-abliterated-APEX-GGUF es una cuantización comunitaria del modelo base inclusionAI/Ling-3.0-tiny, publicada por el usuario SC117 en Hugging Face. Se trata de un modelo de lenguaje de tipo Mixture of Experts (MoE) con 7.893.392.800 parámetros totales y aproximadamente 1.300 millones de parámetros activos por token, según indica la model card del autor. El modelo base pertenece a la familia Ling de inclusionAI y está etiquetado como "hybrid-reasoning MoE", lo que sugiere un modo de razonamiento híbrido, aunque la información disponible no detalla su funcionamiento interno.
 
-La cuantización APEX es una técnica novedosa de precisión mixta específica para arquitecturas MoE que clasifica cada tensor según su rol (experto enrutado, experto compartido o atención) y aplica un gradiente de precisión por capas, otorgando mayor precisión a las capas de borde más sensibles y comprimiendo más agresivamente las capas intermedias redundantes. Según el autor, APEX supera la perplejidad de Q8_0 a la mitad del tamaño e incluso supera a F16. El modelo se distribuye bajo licencia MIT y está disponible en formato GGUF para llama.cpp, con compatibilidad con endpoints de inferencia.
+Esta variante incorpora dos modificaciones principales sobre el modelo original. La primera es una "abliteración" (eliminación de la dirección de rechazo) realizada con la herramienta abliterix mediante búsqueda de configuración de steering con LoRA sobre una carga en bnb-4bit, con más de 130 configuraciones candidatas evaluadas y una receta seleccionada por criterio de Pareto e integrada en los pesos BF16. La segunda es el uso de APEX, una técnica de cuantización de precisión mixta consciente de MoE que clasifica cada tensor según su rol (experto enrutado, experto compartido o atención) y aplica un gradiente de precisión por capas.
+
+El resultado es un conjunto de ficheros GGUF orientados a llama.cpp, con licencia MIT, pensados para inferencia local y despliegue ligero. Su relevancia actual radica en que combina un modelo MoE de tamaño moderado con una cuantización que, según el autor, supera la perplejidad de Q8_0 a la mitad de tamaño e incluso la de F16, lo que lo hace atractivo para entornos con recursos limitados. No obstante, al tratarse de una modificación no oficial, conviene tratar sus afirmaciones de rendimiento con cautela.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE híbrido con razonamiento, 128 expertos enrutados, 8 activos por token |
-| Parametros totales | 7.893.392.800 (7,9B) |
-| Parametros activos | 1,3B |
+| Arquitectura | MoE (Mixture of Experts) tipo transformer, etiquetada como "hybrid-reasoning MoE"; 128 expertos enrutados con 8 activos por token |
+| Parámetros totales | 7.893.392.800 (7,9B) |
+| Parámetros activos | ~1,3B (aproximadamente 1.300 millones) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | APEX (precisión mixta consciente de MoE), GGUF con calibración imatrix |
-| Idiomas soportados | no disponible |
+| Tipos de cuantización | GGUF con cuantización APEX (precisión mixta consciente de MoE, con gradiente de precisión por capas); niveles concretos de cuantización no detallados en la información disponible |
+| Idiomas soportados | no disponible (la model card está en inglés y chino, pero no se especifica el conjunto de idiomas del modelo) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (para llama.cpp); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Ling-3.0-tiny de InclusionAI, es un MoE (Mixture of Experts) con 128 expertos enrutados de los cuales solo 8 se activan por token, lo que lo hace extremadamente eficiente en inferencia: 7,9B parámetros totales pero solo 1,3B activos por token. La etiqueta "bailing-moe" sugiere una variante específica de la arquitectura MoE, aunque los detalles exactos no están documentados en la información disponible. El modelo incorpora capacidades de razonamiento híbrido, lo que implica un modo de razonamiento explícito antes de generar la respuesta final.
+El modelo base Ling-3.0-tiny es un MoE con 7,9B parámetros totales y aproximadamente 1,3B activos, con 128 expertos enrutados de los cuales 8 se activan por token. La model card lo describe como "hybrid-reasoning MoE", término que sugiere la combinación de generación directa y razonamiento explícito, aunque no se aportan detalles sobre el mecanismo concreto ni sobre la composición del dataset de entrenamiento, el número de tokens, ni si se emplearon técnicas de RLHF o DPO. Tampoco se especifica la longitud de contexto nativa del modelo base.
 
-La versión abliterada se obtuvo con abliterix, que utiliza búsqueda de steering con LoRA sobre un modelo cargado con bitsandbytes en 4 bits. Se exploraron más de 130 configuraciones candidatas de steering y la receta seleccionada por Pareto se fusionó en los pesos BF16. El proceso logró reducir los rechazos de 98/100 a 15/100 (85% menos) con una divergencia KL de solo 0,0677, y las comprobaciones posteriores de capacidades (matemáticas, lógica, código, traducción, conocimiento) pasaron sin degradación observada.
+Sobre esta base, el autor aplica una abliteración mediante abliterix: se explora un espacio de más de 130 configuraciones de steering con LoRA sobre una carga en bnb-4bit, se selecciona una receta por criterio de Pareto y se fusiona en los pesos BF16. El autor reporta una reducción del 85% en rechazos (15/100 frente a 98/100 en la línea base) con una divergencia KL de 0,0677, y afirma que las comprobaciones posteriores de capacidades (matemáticas, lógica, código, traducción y conocimiento) no muestran degradación. Estas cifras proceden exclusivamente del autor y no han sido verificadas de forma independiente.
 
-La cuantización APEX clasifica cada tensor del modelo por su rol funcional y aplica una estrategia de precisión por capas. Para Ling-3.0-tiny, con sus 128 expertos enrutados y solo 8 activos por token, esta técnica resulta especialmente adecuada, ya que permite comprimir los expertos redundantes sin penalizar la calidad de los expertos críticos ni las capas de atención.
+La cuantización APEX, desarrollada en el repositorio mudler/apex-quant, clasifica cada tensor por su rol y aplica mayor precisión a las capas extremas (más sensibles) y mayor compresión a las capas intermedias redundantes. El autor afirma que APEX supera la perplejidad de Q8_0 a la mitad de tamaño e incluso la de F16, si bien no se proporcionan tablas de perplejidad ni metodología de evaluación en la información disponible.
 
 ## Capacidades
 
-- Generación de texto con razonamiento híbrido, combinando modos de respuesta directa y razonamiento explícito.
-- Razonamiento matemático y lógico, verificado mediante spot-checks post-abliteración.
-- Generación de código, verificada en spot-checks sin degradación tras la abliteración.
-- Traducción entre idiomas, verificada en spot-checks.
-- Modelo "uncensored" / "decensored" gracias a la abliteración, con 85% menos rechazos que el modelo base.
-- Eficiencia MoE: solo 1,3B parámetros activos por token, lo que permite inferencia rápida incluso en hardware de consumo.
-- Compatible con pipelines de text-generation y despliegue mediante endpoints.
+- Generación de texto conversacional: el pipeline declarado es text-generation y el modelo está etiquetado como conversacional.
+- Razonamiento híbrido: la etiqueta "hybrid-reasoning MoE" del modelo base sugiere soporte de modos de razonamiento, aunque no se detalla su funcionamiento.
+- Capacidades matemáticas, lógicas, de código y traducción: el autor afirma haber realizado comprobaciones puntuales de estas capacidades tras la abliteración sin degradación observada.
+- Generación sin rechazos: la abliteración elimina en gran medida la dirección de rechazo, con una reducción reportada del 85% en respuestas de rechazo.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; la model card está en inglés y chino, pero no se especifica el soporte idiomático del modelo.
+- Capacidades especiales (visión, audio, thinking mode explícito): no disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales sin restricciones temáticas: el modelo puede mantener conversaciones sobre temas que el modelo base rechazaría sistemáticamente, gracias a la abliteración que reduce los rechazos del 98% al 15%, siendo útil para aplicaciones de rol, escritura creativa o debate abierto.
-- Generación de código en entornos de desarrollo: con capacidades de código verificadas y eficiencia MoE, puede integrarse en asistentes de programación locales o en pipelines de CI/CD para autocompletado y revisión de código.
-- Razonamiento y análisis lógico: su arquitectura de razonamiento híbrido lo hace adecuado para tareas de resolución de problemas complejos, planificación y análisis estructurado.
-- Traducción automática: verificado en spot-checks post-abliteración, puede usarse como motor de traducción en aplicaciones de escritorio o servicios ligeros.
-- Despliegue en hardware de consumo: con solo 1,3B parámetros activos y cuantización APEX, es viable en GPUs de gama media e incluso en CPU mediante llama.cpp, lo que lo hace apto para aplicaciones edge o sin conexión.
-- Investigación sobre abliteración y alineación: sirve como modelo de referencia para estudiar los efectos de eliminar la dirección de rechazo en modelos MoE y comparar metodologías de steering.
-- Experimentación con cuantización MoE-aware: permite evaluar el impacto de APEX frente a métodos de cuantización estándar (Q8_0, F16) en la calidad de salida y el rendimiento.
+- Inferencia local en equipos de consumo: al ser un MoE de 7,9B con solo ~1,3B parámetros activos y estar cuantizado en GGUF con APEX, puede ejecutarse en llama.cpp sobre GPU de gama media o incluso CPU con suficiente memoria RAM, lo que lo hace adecuado para prototipado y uso personal sin infraestructura dedicada.
+- Despliegue en entornos con memoria limitada: la cuantización APEX comprime las capas intermedias de forma agresiva, permitiendo ajustar el tamaño del fichero al presupuesto de VRAM disponible; el autor afirma que supera a Q8_0 en perplejidad con la mitad de tamaño.
+- Generación de texto creativo sin restricciones temáticas: la abliteración reduce los rechazos, lo que puede interesar en aplicaciones de escritura de ficción, guiones o contenido donde los filtros estándar resultan limitantes.
+- Experimentación en investigación sobre alineación y seguridad: el modelo sirve como caso de estudio para analizar el efecto de la abliteración sobre las capacidades y los sesgos, comparándolo con el modelo base original.
+- Chat conversacional autoalojado: su naturaleza conversacional y su formato GGUF permiten integrarlo en interfaces de chat locales (por ejemplo, mediante llama.cpp server u Ollama) para uso privado.
+- Evaluación de técnicas de cuantización: al estar disponible junto al modelo base, permite comparar el impacto de APEX frente a cuantizaciones estándar en tareas de generación y razonamiento.
+- Filtrado y clasificación de texto por lotes: con un coste de cómputo activo bajo (~1,3B parámetros), puede procesar grandes volúmenes de texto en pipelines offline donde la latencia no es crítica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks formales (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor únicamente menciona:
-
-- Spot-checks cualitativos post-abliteración (matemáticas, lógica, código, traducción, conocimiento) que pasan sin degradación observada.
-- Reducción de rechazos del 85% (15/100 frente a 98/100 en el modelo base) con divergencia KL de 0,0677.
-- Afirmación de que APEX supera la perplejidad de Q8_0 a la mitad del tamaño e incluso supera a F16, aunque no se proporcionan cifras concretas.
+No se han publicado resultados de benchmarks en la información disponible. El autor únicamente reporta métricas internas del proceso de abliteración (15/100 rechazos frente a 98/100 de la línea base, con divergencia KL de 0,0677) y afirmaciones cualitativas sobre la perplejidad de APEX frente a Q8_0 y F16, sin tablas de resultados ni comparaciones con MMLU, HumanEval, GSM8K u otros benchmarks estándar.
 
 ## Requisitos de hardware
 
-- VRAM estimada: al ser un MoE de 7,9B parámetros totales, la inferencia requiere cargar todos los pesos en memoria. Con cuantización APEX de alta compresión, los archivos GGUF individuales deberían caber en 4-8 GB de VRAM, aunque el repositorio completo ocupa 35,0 GB.
-- GPU recomendadas: el modelo cuantizado debería ejecutarse en GPUs de consumo como RTX 3060 (12 GB), RTX 4070 (12 GB) o RTX 4090 (24 GB), dependiendo del nivel de cuantización elegido. También es viable en Apple Silicon con suficiente memoria unificada.
-- Despliegue: compatible con llama.cpp, Ollama y otros runners compatibles con GGUF. La etiqueta "endpoints_compatible" indica que puede desplegarse tras un endpoint de inferencia.
-- Al ser un MoE con solo 8 de 128 expertos activos por token, el throughput de inferencia es considerablemente mayor que un modelo denso del mismo tamaño total, aunque los datos exactos de latencia no están disponibles.
+- VRAM estimada para inferencia: no disponible de forma exacta; depende del fichero GGUF elegido. Como referencia, un modelo de 7,9B parámetros en cuantizaciones de 4-5 bits por peso ocupa aproximadamente entre 4 y 5 GB, y en 8 bits en torno a 8 GB, si bien el tamaño real de cada fichero APEX no se detalla en la información proporcionada (el repositorio completo ocupa 35 GB e incluye varias cuantizaciones).
+- GPU recomendadas: no disponibles de forma específica. Por tamaño, el modelo debería caber en GPU de consumo como RTX 3060 (12 GB), RTX 4070, RTX 4080 y RTX 4090 en cuantizaciones de 4-8 bits; para las cuantizaciones de mayor precisión serían recomendables GPU profesionales como A100 o H100.
+- ¿Cabe en GPU de consumo? Sí, previsiblemente en la mayoría de cuantizaciones, dado el tamaño total de 7,9B parámetros y los ~1,3B activos.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), y por compatibilidad de formato, servidores compatibles con GGUF como llama.cpp server; el uso con vLLM, TGI u Ollama no se confirma en la información disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Licencia | Notas |
-|---|---|---|---|---|
-| Ling-3.0-tiny (base) | 7,9B | 1,3B | MIT | Modelo original de InclusionAI sin abliterar |
-| Ling-lite (InclusionAI) | 16,8B | 2,75B | MIT | Hermano mayor de la familia Ling, misma arquitectura MoE |
-| Ling-plus (InclusionAI) | 290B | 28,8B | MIT | Modelo flagship de la familia Ling |
-| SC117/Ling-3.0-tiny-abliterated-APEX-GGUF | 7,9B | 1,3B | MIT | Versión abliterada y cuantizada con APEX de Ling-3.0-tiny |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| SC117/Ling-3.0-tiny-abliterated-APEX-GGUF | 7,9B | ~1,3B | no disponible | MIT | GGUF | Abliterado, cuantización APEX |
+| inclusionAI/Ling-3.0-tiny (base) | 7,9B | ~1,3B | no disponible | MIT | safetensors | Modelo original sin abliterar |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados de modelos comparables en la información proporcionada |
 
-No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
+La comparación más directa y fiable es con el propio modelo base, del que esta variante deriva. No se dispone de información suficiente para comparar con otras familias de modelos de tamaño y arquitectura similares sin recurrir a datos no verificados.
 
 ## Limitaciones y advertencias
 
-- La abliteración elimina la dirección de rechazo del modelo, lo que implica que puede generar contenido que el modelo original rechazaría, incluido material potencialmente dañino, ofensivo o inapropiado. El uso debe ser responsable y considerar las implicaciones éticas y legales.
-- No se han publicado benchmarks formales, por lo que el rendimiento real en tareas estándar (MMLU, HumanEval, GSM8K) no está verificado de forma independiente.
-- Los idiomas soportados no están documentados en la información disponible.
-- La longitud de contexto no está documentada en la información disponible, lo que dificulta planificar despliegues que requieran ventanas largas.
-- Aunque el autor afirma que los spot-checks post-abliteración no muestran degradación, la abliteración puede afectar sutilmente el comportamiento del modelo en casos no cubiertos por esas comprobaciones.
-- La cuantización APEX es una técnica relativamente nueva y poco validada por la comunidad; su comportamiento en producción a largo plazo no está ampliamente contrastado.
-- El modelo está diseñado para ser "uncensored", lo que puede no ser adecuado para aplicaciones comerciales que requieran moderación de contenido integrada o cumplimiento normativo.
+- La abliteración elimina la dirección de rechazo, lo que implica que el modelo puede generar contenido que el modelo original rechazaría; esto supone un riesgo para despliegues públicos sin filtros adicionales.
+- Las afirmaciones del autor sobre la reducción de rechazos (85%), la divergencia KL (0,0677) y la ausencia de degradación de capacidades no han sido verificadas de forma independiente.
+- Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala; no se han publicado evaluaciones específicas de fidelidad factual.
+- Sesgos conocidos: no se documentan en la información disponible; la abliteración puede alterar el comportamiento del modelo en temas sensibles y no se ha evaluado su efecto sobre sesgos sociales.
+- Longitud de contexto e idiomas soportados no especificados, lo que dificulta planificar su uso en tareas que requieran ventanas largas o cobertura multilingüe.
+- Las afirmaciones sobre la cuantización APEX (superar a Q8_0 y F16 en perplejidad) carecen de tablas de resultados y metodología pública en la información disponible.
+- Licencia MIT: permite uso comercial, pero al tratarse de una modificación no oficial del modelo base, conviene revisar también la licencia del modelo original (enlazada por el autor a inclusionAI/Ling-3.0-tiny).
+- El repositorio ocupa 35 GB e incluye múltiples cuantizaciones; es necesario seleccionar el fichero adecuado según el hardware disponible.
+- Al ser una publicación comunitaria, no hay garantías de mantenimiento, soporte ni actualizaciones por parte del desarrollador original.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF
+- Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
+- Licencia del modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny/blob/main/LICENSE
 - Documentación en chino: https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF/blob/main/README_zh.md
-- Modelo base (inclusionAI/Ling-3.0-tiny): https://huggingface.co/inclusionAI/Ling-3.0-tiny
-- Repositorio abliterix: https://github.com/wuwangzhang1216/abliterix
-- Repositorio APEX: https://github.com/mudler/apex-quant
-- Repositorio Ling (InclusionAI): https://github.com/inclusionAI/Ling
-- Repositorio Ling-V2 (InclusionAI): https://github.com/inclusionAI/Ling-V2
+- Herramienta de abliteración abliterix: https://github.com/wuwangzhang1216/abliterix
+- Herramienta de cuantización APEX: https://github.com/mudler/apex-quant

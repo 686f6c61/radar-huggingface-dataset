@@ -92,8 +92,6 @@
     "base_model:merge:google/gemma-4-26B-A4B-it",
     "base_model:haster/Gemma-4-26BA4B-Sonnet-3.7-Distilled-v2",
     "base_model:merge:haster/Gemma-4-26BA4B-Sonnet-3.7-Distilled-v2",
-    "base_model:khazic/gemma4-26b-a4b-sft-v5",
-    "base_model:merge:khazic/gemma4-26b-a4b-sft-v5",
     "base_model:nbeerbower/Gemma4-Gutenberg-26B-A4B-lora",
     "base_model:merge:nbeerbower/Gemma4-Gutenberg-26B-A4B-lora",
     "base_model:zerofata/G4-MeroMero-26B-A4B",

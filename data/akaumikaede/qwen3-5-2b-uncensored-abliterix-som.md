@@ -2,99 +2,93 @@
 
 ## Resumen
 
-Qwen3.5-2B-Uncensored-Abliterix-SOM es un derivado del modelo Qwen/Qwen3.5-2B publicado por el usuario AkaumiKaede, en el que se han eliminado los mecanismos de rechazo mediante la tecnica de abliteration implementada en la herramienta Abliterix v1.12.2, en su variante denominada SOM (steering of models). El modelo conserva la naturaleza multimodal del original (pipeline image-text-to-text), es decir, acepta texto e imagen como entrada, y cuenta con 2.213.241.664 parametros (aproximadamente 2,2 mil millones).
+Qwen3.5-2B-Uncensored-Abliterix-SOM es una variante "decensurada" del modelo Qwen/Qwen3.5-2B, publicada por el usuario AkaumiKaede en Hugging Face. El modelo conserva la arquitectura y los pesos del original (2.213.241.664 parámetros) pero ha sido modificado mediante la herramienta Abliterix v1.12.2 con el método SOM para eliminar los mecanismos de rechazo de peticiones. El resultado, según el autor, es un modelo con 0 rechazos sobre 408 pruebas, frente a 394/408 del modelo base.
 
-El problema que aborda es el de los rechazos y la censura de contenido: el autor reporta 0 rechazos sobre 408 peticiones de prueba, frente a 394/408 del modelo original. La intervencion no consiste en un reentrenamiento, sino en la modificacion dirigida de pesos de las proyecciones de atencion (q_proj, k_proj, v_proj, o_proj) y de la capa mlp.down_proj, con vectores de direccion calculados por capa y optimizados mediante un optimizador TPE.
+El modelo mantiene la modalidad image-text-to-text del original (procesa texto e imágenes) y está pensado para generación de texto, escritura creativa y roleplay sin las restricciones de seguridad habituales. La relevancia de esta ficha es doble: por un lado, documenta una técnica concreta de "abliteration" (modificación de direcciones de activación en las capas de atención) aplicada a un modelo multimodal pequeño; por otro, sirve de advertencia sobre los riesgos de desplegar modelos sin alineación de seguridad.
 
-Es relevante ahora por dos motivos: por un lado, alimenta la linea de trabajo sobre modelos sin censura orientados a escritura creativa, roleplay y generacion de ficcion para adultos; por otro, sirve como material de estudio para investigacion en seguridad y alineacion, ya que cuantifica el coste de la abliteration en terminos de divergencia KL (0,2096) respecto al modelo base. El repositorio es muy reciente (creado el 14 de octubre de 2026) y tiene una validacion externa practicamente nula (0 descargas, 1 like).
+El modelo se distribuye con licencia Apache 2.0 (heredada del base) y soporta inglés y chino. El autor indica que existe una versión más reciente (AkaumiKaede/Qwen3.5-2B-Abliterix-SOM) y que los archivos GGUF requieren un flag especial (`--no-mtp`) durante la conversión.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen3.5-2B; no se detalla la arquitectura interna exacta en la informacion disponible |
-| Parametros totales | 2.213.241.664 (unos 2,2 mil millones) |
-| Parametros activos | No aplica: no hay indicios de que sea un modelo MoE |
+| Arquitectura | Transformer (derivada de Qwen3.5-2B; detalles internos no disponibles) |
+| Parámetros totales | 2.213.241.664 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el repo solo publica pesos en safetensors (4,4 GB, compatible con fp16/bf16) |
-| Idiomas soportados | en (ingles), zh (chino) |
+| Tipos de cuantización | safetensors (fp); GGUF (mencionado en tags y en la model card, con requisito de `--no-mtp`) |
+| Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors, libreria transformers |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-2B y aplica una intervencion de abliteration, no un reentrenamiento. Segun la model card, el proceso consistio en ejecutar un barrido inicial de 120 lotes de configuracion, seleccionar las 3 mejores soluciones como parametros de ablacion de preinyeccion soportados por TOML, inyectarlas y dejar que un optimizador TPE refinase los parametros en sucesivas rondas de ablacion. La direccion de intervencion (vector_index) se calcula por capa. Los parametros publicados afectan a las proyecciones de atencion y a una capa MLP: por ejemplo, attn.k_proj.max_weight = 0,82 con posicion 16,38; attn.o_proj.max_weight = 0,80 con posicion 20,39; attn.q_proj.max_weight = 0,83 con posicion 17,46; attn.v_proj.max_weight = 1,18 con posicion 22,02; y mlp.down_proj.max_weight = 0,00, con lo que la intervencion sobre esa capa MLP queda practicamente anulada.
+El modelo es una modificación post-entrenamiento del Qwen3.5-2B original. No se ha reentrenado desde cero: se aplica una técnica de "abliteration" mediante Abliterix v1.12.2 con el método SOM (Steering of Model Activations o similar; el autor no detalla el acrónimo). La técnica identifica direcciones de activación asociadas a comportamientos de rechazo en las proyecciones de atención (`attn.k_proj`, `attn.q_proj`, `attn.v_proj`, `attn.o_proj`) y las modifica con parámetros de steering por capa (`max_weight`, `min_weight`, `max_weight_position`, `min_weight_distance`). El autor publica la tabla completa de parámetros de steering en la model card.
 
-No hay informacion sobre volumen de tokens de entrenamiento, composicion del dataset, ni sobre fases de RLHF o DPO: el modelo no se ha reentrenado, solo se han modificado pesos. Tampoco se documenta la estrategia de entrenamiento multimodal original ni los detalles de vision del modelo base. La unica innovacion tecnica descrita explicitamente es el metodo SOM con preinyeccion de parametros y busqueda con optimizador TPE, que el autor presenta como superior a alternativas como SRA o RDO. No se mencionan tecnicas de decodificacion especulativa, atencion lineal ni variantes de atencion eficiente.
+El proceso de reproducción descrito incluye una búsqueda de hiperparámetros con optimizador TPE: se ejecutan 120 lotes de prueba, se seleccionan las 3 mejores soluciones como parámetros de ablación pre-inyectados vía TOML, y se repite el proceso varias rondas. El autor afirma que el conjunto de prompts utilizado es original y cubre contenido R18, anti-humano, crímenes reales y material ilegal/no ético. No se dispone de información sobre el número de tokens de entrenamiento, composición del dataset ni si hubo RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles y chino.
-- Entrada multimodal: acepta imagen y texto (pipeline image-text-to-text), lo que permite tareas de descripcion y comprension visual.
-- Escritura creativa y roleplay, incluido contenido para adultos (R18), sin rechazos segun las pruebas del autor.
-- Generacion de dialogo en formato chat y soporte de conversaciones de personaje (tags rp, rep, writing).
-- Etiquetado como compatible con agentes (tag agent) y con endpoints (endpoints_compatible), aunque no se documenta explicitamente soporte de tool calling o function calling.
-- Ausencia de filtros de rechazo: el autor reporta 0/408 rechazos, sin rechazos duros ni suaves en pruebas con peticiones extremas.
-- Idiomas distintos del ingles y el chino: no disponible, y no declarados por el autor.
+- Generación de texto conversacional en inglés y chino.
+- Procesamiento de imagen y texto (pipeline image-text-to-text): el modelo acepta entradas visuales junto a texto.
+- Escritura creativa y roleplay, incluyendo contenido adulto (R18/ERP según los tags del autor).
+- "Zero-refusal": según el autor, 0 rechazos en 408 pruebas de prompts extremos.
+- Soporte de chat multi-turno (tag `conversational`).
+- Capacidades de agente y tool calling (tags `agent`), aunque no se detalla el formato exacto de function calling.
+- No se documentan capacidades de audio ni modo "thinking" explícito.
 
 ## Casos de uso
 
-- Escritura de ficcion para adultos y roleplay: el modelo genera narrativa y dialogo sin rechazos ni advertencias morales, lo que lo hace util en plataformas de entretenimiento conversacional orientadas a publico adulto. El pipeline multimodal permite ademas incorporar imagenes de referencia en la conversacion.
-- Investigacion en seguridad y alineacion: sirve como sujeto de estudio para medir cuanto contenido nocivo tolera un modelo abliterado, comparar metodos de intervencion (SOM frente a SRA o RDO) y analizar la relacion entre divergencia KL y perdida de rechazos.
-- Red teaming de sistemas de moderacion: al producir contenido que otros modelos rechazan, resulta util para generar casos adversarios con los que probar clasificadores y filtros de contenido de terceros.
-- Generacion de datos sinteticos de dialogo para entrenamiento: permite crear corpus conversacionales en dominios donde los modelos alineados se niegan a generar, por ejemplo guiones de ficcion con tematicas sensibles.
-- Prototipado local de bajo coste: con unos 2,2 mil millones de parametros, se puede desplegar en GPU de consumo para iterar sobre prompts, plantillas de personaje o flujos conversacionales sin coste de API.
-- Punto de partida para fine-tuning de dominio: al carecer de sesgo de rechazo, sirve como base para ajustar un asistente especializado en un nicho concreto (ficcion interactiva, guiones, narrativa serializada) sin tener que eliminar primero los filtros.
-- Analisis y anotacion de imagenes en flujos editoriales: la capacidad image-text-to-text permite generar descripciones o metadatos de imagenes, incluidas aquellas que un modelo alineado podria rechazar por su contenido.
+- **Investigación sobre alineación y seguridad**: el modelo sirve como caso de estudio de abliteration; permite medir el impacto de eliminar rechazos sobre la utilidad y la seguridad en un modelo de 2B. Adecuado por su tamaño reducido y su documentación de parámetros de steering.
+- **Generación de ficción adulta y roleplay**: el modelo está diseñado para escribir narrativa sin censura, con contexto conversacional multi-turno. Adecuado para plataformas de ficción interactiva que operen con verificación de edad y cumplan la legalidad aplicable.
+- **Prototipado rápido de asistentes multimodales**: al ser un modelo de 2B con entrada de imagen, cabe en GPUs de consumo y permite iterar en prototipos de descripción de imágenes o diálogo sobre capturas.
+- **Red teaming de pipelines de moderación**: se puede usar como generador adversario para probar clasificadores de contenido y filtros de salida en sistemas de producción.
+- **Generación de datos sintéticos para dominios sin restricciones**: útil para crear datasets de diálogo en dominios donde los modelos alineados se niegan a responder (por ejemplo, guiones de ficción violenta), siempre con revisión humana.
+- **Despliegue local en hardware modesto**: con 2.2B parámetros y cuantización GGUF, puede ejecutarse en portátiles con GPU integrada o CPU para tareas de escritura offline.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor solo reporta dos metricas propias:
-
-| Metrica | Este modelo | Modelo original (Qwen/Qwen3.5-2B) |
+| Métrica | Este modelo | Qwen/Qwen3.5-2B (original) |
 |---|---|---|
-| Divergencia KL | 0,2096 | 0 (por definicion) |
+| Divergencia KL | 0.2096 | 0 (por definición) |
 | Rechazos | 0/408 | 394/408 |
 
-La divergencia KL de 0,2096 indica una desviacion apreciable respecto a la distribucion del modelo base, aunque el autor no aporta una evaluacion de como afecta eso a tareas de razonamiento, codigo o conocimiento factual. Tampoco se publica la composicion exacta del conjunto de 408 peticiones: el autor indica que el prompt set es original, cubre R18, contenido antihumano, crimenes reales y material poco etico o ilegal, y que se distribuye cifrado, por lo que la medicion no es verificable de forma independiente.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: en torno a 5-6 GB solo para pesos (2,2 mil millones de parametros a 2 bytes), mas cache KV y overhead, lo que situa el total practico en unos 6-8 GB con contexto moderado. Estimacion propia a partir del numero de parametros, no publicada por el autor.
-- Cuantizacion a 8 bits: aproximadamente 2,5-3,5 GB de VRAM total estimada. A 4 bits: aproximadamente 1,5-2,5 GB. El repositorio no publica pesos cuantizados, por lo que habria que generarlos.
-- GPU recomendadas: cabe holgadamente en GPU de consumo como RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070 o RTX 4090 de 24 GB. Para despliegue en servidor, cualquier A100, H100, L40S o L4 es sobredimensionada para este tamano y permitiria un batching muy alto.
-- Despliegue: la libreria declarada es transformers, y el tag endpoints_compatible sugiere compatibilidad con servicios de inferencia tipo vLLM, TGI o SGLang. No hay pesos GGUF en el repositorio, por lo que su uso directo en llama.cpp u Ollama requeriria una conversion previa. Tampoco se documentan pesos en MLX, AWQ o GPTQ.
-- Latencia y throughput: no disponible. El autor no publica mediciones de tokens por segundo, latencia de primera token ni rendimiento con batching.
+- VRAM estimada para inferencia en fp16: aproximadamente 4,4 GB solo para pesos (2,21B × 2 bytes), más overhead de activaciones y KV cache.
+- Cuantización GGUF Q4_K_M: aproximadamente 1,3–1,5 GB de VRAM, apto para GPUs de consumo.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para fp16 con contexto largo; A100/H100 no son necesarias por el tamaño.
+- Cabe en GPUs de consumo: sí, en la mayoría de GPUs con 6 GB o más en cuantización 4-bit.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp/Ollama vía GGUF (requiere `--no-mtp` en la conversión y `mtp_num_hidden_layers: 0` en config.json), vLLM (compatibilidad no verificada para esta variante).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos | Divergencia KL | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Qwen3.5-2B-Uncensored-Abliterix-SOM | 2,21 B | no disponible | 0/408 | 0,2096 | apache-2.0 | safetensors en Hugging Face |
-| Qwen/Qwen3.5-2B (base) | 2,2 B aprox. | no disponible | 394/408 | 0 (por definicion) | apache-2.0 | safetensors en Hugging Face |
-| AkaumiKaede/Qwen3.5-2B-Abliterix-SOM | no disponible | no disponible | no disponible | no disponible | no disponible | referenciado como new_version |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.5-2B-Uncensored-Abliterix-SOM | 2,21B | no disponible | texto + imagen | Apache 2.0 | 0/408 rechazos, KL 0.2096 |
+| Qwen/Qwen3.5-2B (base) | 2,21B | no disponible | texto + imagen | Apache 2.0 | 394/408 rechazos |
+| AkaumiKaede/Qwen3.5-2B-Abliterix-SOM | no disponible | no disponible | no disponible | no disponible | Versión más reciente indicada por el autor |
 
-No se dispone de datos verificables de otros modelos abliterados de tamano similar (por ejemplo variantes sin censura de la familia Qwen2.5 o Llama 3.2) en la informacion proporcionada, por lo que la comparacion cuantitativa con alternativas queda como no disponible.
+No se dispone de datos de benchmarks comparativos con otros modelos de 2B en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Eliminacion deliberada de rechazos: el modelo genera contenido R18, antihumano, relativo a crimenes reales y a actividades ilegales o poco eticas sin oponer resistencia. Es un riesgo directo si se expone a usuarios finales sin moderacion externa.
-- Implicaciones legales: aunque la licencia apache-2.0 permite uso comercial, la responsabilidad sobre el contenido generado recae integramente en quien despliega el modelo. La ausencia de filtros puede entrar en conflicto con normativas de servicios digitales y de proteccion de menores.
-- Degradacion potencial de capacidades: la divergencia KL de 0,2096 respecto al modelo base indica un cambio apreciable en la distribucion de salida, pero no hay evaluacion publicada de razonamiento, codigo o conocimiento factual que permita cuantificar el dano.
-- Alucinacion: no se ha publicado ninguna evaluacion de fidelidad factual ni de tendencia a inventar informacion, ni en el modelo base ni en este derivado.
-- Idiomas: solo ingles y chino estan declarados. El castellano no figura entre los idiomas soportados oficialmente, por lo que el rendimiento en espanol es impredecible.
-- Longitud de contexto: no disponible, lo que impide planificar casos de uso que dependan de ventanas largas.
-- Capacidades multimodales sin detalle: se declara pipeline image-text-to-text, pero no se especifica resolucion de imagen soportada, numero de tokens visuales ni tareas de vision evaluadas.
-- Trazabilidad limitada: 0 descargas y 1 like en el momento de la consulta; no hay validacion independiente de la comunidad. El prompt set de evaluacion se distribuye cifrado y su contenido no es verificable.
-- Procedencia de los pesos: al ser una modificacion de pesos sin reentrenamiento, la calidad depende por completo del modelo base Qwen3.5-2B, cuyas limitaciones hereda.
-- Recomendacion operativa: si se va a usar en produccion, conviene anadir una capa de moderacion externa, registro de conversaciones y un filtro de temas prohibidos por politica de producto.
+- **Ausencia total de rechazos**: el modelo responderá a peticiones dañinas, ilegales o no éticas sin filtros. No debe desplegarse en aplicaciones de cara al público sin una capa externa de moderación.
+- **Riesgo de alucinación**: al ser un modelo de 2B, la tasa de alucinación es inherentemente alta; la abliteration puede agravar la confianza en respuestas incorrectas.
+- **Sesgos**: no se documentan evaluaciones de sesgo; el modelo base Qwen3.5-2B puede arrastrar sesgos de sus datos de entrenamiento.
+- **Idiomas limitados**: solo inglés y chino; el rendimiento en castellano no está garantizado.
+- **Licencia**: Apache 2.0 permite uso comercial, pero el despliegue de contenido generado sin moderación puede incumplir normativas locales (por ejemplo, la Ley de Servicios Digitales de la UE o legislación sobre contenido de abuso infantil).
+- **Conversión a GGUF**: requiere `--no-mtp` y editar `mtp_num_hidden_layers` a 0 en config.json; de lo contrario el modelo falla al arrancar.
+- **Contexto desconocido**: no se especifica la longitud de contexto, lo que dificulta planificar despliegues con conversaciones largas.
+- **Dataset de prompts no público**: el ZIP de prompts está cifrado y requiere contactar al autor; la reproducibilidad completa no está garantizada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM
+- Hugging Face: https://huggingface.co/AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
-- Herramienta Abliterix: https://github.com/wuwangzhang1216/abliterix
 - README en chino: https://huggingface.co/AkaumiKaede/Qwen3.5-2B-abliterix-som/blob/main/README_ZH.md
-- Nueva version referenciada por el autor: AkaumiKaede/Qwen3.5-2B-Abliterix-SOM (sin URL directa en la informacion disponible)
-- Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente sitios de contenido para adultos sin relacion tecnica con el modelo.
+- Herramienta Abliterix: https://github.com/wuwangzhang1216/abliterix
+- Versión más reciente indicada por el autor: https://huggingface.co/AkaumiKaede/Qwen3.5-2B-Abliterix-SOM

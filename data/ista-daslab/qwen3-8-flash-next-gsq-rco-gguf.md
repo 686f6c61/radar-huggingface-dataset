@@ -2,113 +2,100 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-GSQ-RCO-GGUF es un repositorio de cuantizaciones GGUF de precision mixta no uniforme del modelo Qwen/Qwen3.8-Flash-Next, publicado por el Deep Algorithms and Systems Lab (DASLab) del Institute of Science and Technology Austria (ISTA). No se trata de un modelo entrenado desde cero, sino de una distribucion de pesos comprimidos: cada tensor del transformer recibe un tipo de cuantizacion distinto, asignado mediante una busqueda basada en gradientes que reparte la precision segun la sensibilidad de cada tensor sujeto a un presupuesto de tamano total. El resultado son ficheros GGUF estandar que se ejecutan sin modificaciones en llama.cpp, Ollama y LM Studio.
+Qwen3.8-Flash-Next es un modelo de lenguaje multimodal de tipo mezcla de expertos (MoE) desarrollado por Qwen, con 176.943.899.520 parametros totales y 512 expertos enrutados por capa a lo largo de 48 capas, de los cuales 10 se activan por token. Esta ficha describe la publicacion de cuantizaciones GGUF no uniformes realizadas por el ISTA-DASLab (Institute of Science and Technology Austria) bajo las tecnicas GSQ y RCO, que asignan un tipo de cuantizacion distinto a cada tensor segun su sensibilidad, sujeto a un presupuesto de tamano total. El resultado son ficheros GGUF estandar que funcionan sin modificaciones en llama.cpp, Ollama y LM Studio.
 
-El modelo base es un MoE disperso de 176.943.899.520 parametros (unos 176,9 B), con 512 expertos enrutados por capa a lo largo de 48 capas, de los que 10 se activan por token. Incluye un proyector de vision en BF16 (0,91 GB) que habilita el uso multimodal (image-text-to-text). El repositorio ofrece tres variantes: Q2_0 (2,40 bpw, 66,4 GB), IQ2_XS (2,50 bpw, 68,0 GB) e IQ3_XXS (3,00 bpw, 75,8 GB), todas divididas en dos shards, donde el segundo shard es una tabla de embeddings n-gram por capa de 51,2 B de parametros cuantizada a IQ4_NL de forma fija.
+La relevancia de esta publicacion radica en que hace desplegable un MoE de gran tamano en hardware de consumo: las cuatro variantes publicadas ocupan entre 66,4 GB y 83,6 GB, con anchos de bits medios de 2,40 a 3,50 bpw sobre los pesos del transformer. Ademas se distribuye el proyector de vision (`mmproj`) en BF16, lo que habilita el uso multimodal (image-text-to-text) de las versiones cuantizadas. El modelo base es Qwen/Qwen3.8-Flash-Next y la licencia es Apache 2.0.
 
-Su relevancia actual es doble. Por un lado, permite ejecutar un MoE multimodal de casi 177 B de parametros en hardware muy por debajo de lo que exigiria el modelo en BF16. Por otro, es una demostracion practica de dos tecnicas de cuantizacion post-entrenamiento, GSQ (arXiv:2604.18556) y RCO (arXiv:2605.00649), aplicadas a un modelo de produccion. La variante Q2_0 prioriza el rendimiento (3,4x el throughput de prompt y 1,9x menos latencia extremo a extremo que IQ2_XS) e IQ3_XXS es la recomendada por el autor, ya que iguala al modelo base en AIME25.
+La publicacion acumula 7.236.306 descargas y 1287 likes, lo que la situa entre las cuantizaciones de referencia para este modelo. Frente a la cuantizacion uniforme, el enfoque GSQ-RCO concentra la precision en los tensores mas sensibles y la reduce en los menos criticos, manteniendo el presupuesto de tamano exacto sin ajuste manual de hiperparametros por restriccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) dispersa con proyector de vision; 48 capas, 512 expertos enrutados por capa, 10 activos por token |
-| Parametros totales | 176.943.899.520 (~176,9 B) |
-| Parametros activos | no disponible como cifra exacta; se activan 10 de 512 expertos por capa y token |
+| Arquitectura | Mezcla de expertos (MoE) dispersa, 48 capas, 512 expertos enrutados por capa, 10 activos por token; transformer con proyector de vision |
+| Parametros totales | 176.943.899.520 |
+| Parametros activos | 10 de 512 expertos enrutados por token (numero exacto de parametros activos no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF de precision mixta no uniforme por tensor: Q2_0 (2,40 bpw), IQ2_XS (2,50 bpw), IQ3_XXS (3,00 bpw); tabla n-gram en IQ4_NL (4,5 bpw) fija en todas las variantes; mmproj en BF16 |
+| Tipos de cuantizacion | Q2_0 (2,40 bpw), IQ2_XS (2,50 bpw), IQ3_XXS (3,00 bpw), IQ3_S (3,50 bpw); tabla de embeddings n-gram en IQ4_NL (4,5 bpw); mmproj en BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF, con cada modelo dividido en dos shards |
+| Formato de pesos | GGUF (dos shards por variante cuantizada; `mmproj` en BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer de mezcla de expertos dispersa. Cada una de las 48 capas contiene 512 expertos enrutados, de los que 10 se activan por token, lo que da un ratio de esparsidad muy alto y explica que el coste computacional por token sea muy inferior al que sugeriria el recuento total de parametros. Las matrices de expertos concentran aproximadamente el 95% de los pesos susceptibles de cuantizacion, por lo que tambien dominan el presupuesto de tamano. Adicionalmente, el modelo incorpora una tabla de embeddings n-gram por capa (`per_layer_token_embd`) de 51,2 B de parametros; al tratarse de una tabla de busqueda y no de un peso de multiplicacion matricial, se mantiene a 4,5 bpw (IQ4_NL) de forma fija en todas las variantes y queda excluida de la busqueda de precision.
+El modelo base es un transformer de mezcla de expertos dispersa con 48 capas y 512 expertos enrutados por capa, de los que se activan 10 por token. Los expertos enrutados dominan el recuento de parametros y, por tanto, el presupuesto de tamano: el 95 % de los pesos sujetos a busqueda de cuantizacion reside en los expertos. Una particularidad estructural es la tabla de embeddings n-gram por capa (`per_layer_token_embd`, 51,2 mil millones de parametros), que es una tabla de busqueda y no un peso de matmul; se mantiene fija en IQ4_NL (4,5 bpw) en todas las variantes y queda excluida de la busqueda de precision.
 
-Este repositorio no entrena el modelo: solo lo cuantiza. El proceso combina dos metodos desarrollados en DASLab. GSQ (Gumbel-Softmax Quantization) es una cuantizacion escalar post-entrenamiento que aprende conjuntamente las asignaciones de rejilla por coordenada y las escalas por grupo mediante una relajacion Gumbel-Softmax; segun el autor, cierra buena parte de la brecha entre cuantizacion escalar y vectorial en regimenes de 2 a 3 bits, manteniendose desplegable en formatos escalares estandar como GGUF. RCO (Riemannian Constrained Optimization) resuelve la asignacion de uno de K tipos de cuantizacion a cada uno de los N tensores bajo un presupuesto de tamano total: reformula la restriccion de presupuesto como una variedad riemanniana suave en el espacio de logits, lo que permite optimizar directamente sobre la perdida de tarea imponiendo el presupuesto de forma exacta y sin hiperparametros especificos de la restriccion. En este modelo, la asignacion se hace por capa en el caso de los expertos, no por experto, porque GGUF no puede expresar esa granularidad.
-
-No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens, ni si hubo RLHF o DPO en la informacion proporcionada.
+Sobre el proceso de cuantizacion, GSQ (Gumbel-Softmax Quantization, arXiv:2604.18556) es un metodo de cuantizacion escalar post-entrenamiento que aprende conjuntamente las asignaciones de rejilla por coordenada y las escalas por grupo mediante una relajacion Gumbel-Softmax; cierra buena parte de la brecha entre cuantizacion escalar y vectorial a 2-3 bits manteniendose en formatos escalares desplegables como GGUF. RCO (Riemannian Constrained Optimization, arXiv:2605.00649) asigna uno de K tipos de cuantizacion a cada uno de N tensores bajo un presupuesto de tamano total, reformulando la restriccion como una variedad riemanniana suave en el espacio de logits, lo que permite optimizar directamente sobre la perdida de tarea con cumplimiento exacto del presupuesto y sin hiperparametros especificos de la restriccion. La asignacion de tipos se hace por capa (no por experto, algo que GGUF no puede expresar). No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` y el pipeline `image-text-to-text` confirman el uso como modelo de chat.
-- Vision e imagen-texto: incluye un proyector de vision (`mmproj`) en BF16 de 0,91 GB, lo que permite entrada de imagenes junto a texto.
-- Razonamiento matematico: el autor indica que la variante IQ3_XXS iguala al modelo base en AIME25, un benchmark de competicion matematica.
-- Compresion extrema con calidad preservada: el task average de las variantes de 2 bits se situa en 89,07 (Q2_0) y 89,16 (IQ2_XS) puntos.
-- Throughput de prompt elevado: Q2_0 ofrece 3,4x el throughput de prompt de IQ2_XS y 1,9x menos latencia extremo a extremo, con una tasa de decodificacion estable independiente del contenido.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de endpoints compatibles con las interfaces habituales.
-- Tool calling / function calling: no se documenta explicitamente en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no se documenta explicitamente en la informacion disponible.
-- Capacidades multilingues: no disponible; el repositorio no declara lista de idiomas.
+- Generacion de texto conversacional multi-turno (tag `conversational` en la model card).
+- Procesamiento multimodal image-text-to-text mediante el fichero `mmproj` en BF16, que incluye codificador de vision y proyector.
+- Razonamiento y resolucion de tareas evaluadas en benchmarks (AIME25 se menciona explicitamente como referencia de calidad para IQ3_XXS).
+- Capacidades de codigo: existe una variante especializada publicada por separado, Qwen3.8-Flash-Next-GSQ-RCO-Coder, que retiene 256 de los 512 expertos enrutados por capa a 1,89 bpw efectivos sobre los parametros originales, con 58,4 GB totales.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con el ecosistema llama.cpp, Ollama y LM Studio sin modificaciones.
+- Capacidades multilingues: no disponible.
+- Soporte de tool calling y de agentes multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente multimodal autoalojado en un solo nodo: con 66,4 GB (Q2_0) o 75,8 GB (IQ3_XXS) de pesos mas 0,91 GB de proyector de vision, el modelo cabe en servidores con una o dos GPU de 80 GB, lo que permite ofrecer chat con imagenes sin depender de APIs externas.
-- Analisis de documentos escaneados: el proyector de vision permite pasar facturas, formularios o capturas y obtener texto estructurado o respuestas sobre su contenido, manteniendo los datos dentro de la infraestructura propia.
-- Etiquetado y clasificacion de imagenes a gran escala: la variante Q2_0 esta optimizada para throughput de prompt (3,4x respecto a IQ2_XS) y su tasa de decodificacion no varia con el contenido, lo que la hace adecuada para pipelines por lotes donde el coste por item es el factor limitante.
-- Razonamiento matematico y asistencia tecnica: IQ3_XXS iguala al modelo base en AIME25, por lo que es la variante indicada para tareas que requieren precision aritmetica y de razonamiento, como tutoria o verificacion de calculos.
-- Servicio de chat con latencia critica: Q2_0 reduce la latencia extremo a extremo a 1,9x menos que IQ2_XS, lo que resulta util en aplicaciones interactivas donde el tiempo hasta el primer token condiciona la experiencia.
-- Reproduccion de investigacion en cuantizacion: los ficheros permiten medir el efecto de GSQ y RCO frente a cuantizacion uniforme del mismo tamano, usando el task average publicado (89,07 / 89,16) como linea base.
-- Despliegue en equipos de desarrollo con GPU de consumo mediante offload parcial: con 24 o 32 GB de VRAM no es posible descargar el modelo completo, pero llama.cpp, Ollama y LM Studio permiten repartir capas entre GPU y CPU, habilitando pruebas funcionales y prototipado local.
+- Despliegue local de un MoE de gran tamano en estaciones de trabajo con GPU de consumo: la variante Q2_0 (66,4 GB) permite ejecutar el modelo en configuraciones con memoria unificada o multiples GPU consumer, manteniendo el formato GGUF estandar y funcionando en llama.cpp u Ollama sin parches.
+- Servicio de inferencia con latencia critica: Q2_0 ofrece 3,4 veces el throughput de prompt y 1,9 veces menos latencia extremo a extremo que IQ2_XS con un tamano de fichero ligeramente menor, y su tasa de decodificacion se mantiene plana entre cargas de trabajo, lo que lo hace adecuado para backends interactivos donde el tiempo hasta el primer token importa.
+- Calidad maxima en hardware limitado: IQ3_S (83,6 GB) iguala o supera al modelo base en todas las tareas evaluadas y es la variante recomendada por el autor; sirve para pipelines de evaluacion y generacion donde la fidelidad respecto al modelo original es prioritaria.
+- Tareas de razonamiento matematico: IQ3_XXS (75,8 GB) iguala al modelo base en AIME25, por lo que resulta apropiada para entornos de resolucion de problemas matematicos con presupuesto de memoria ajustado.
+- Aplicaciones multimodales: combinando cualquiera de las variantes cuantizadas con el `mmproj` BF16 (0,91 GB) se obtiene un pipeline image-text-to-text completo, util para descripcion de imagenes, respuesta a preguntas sobre documentos escaneados o asistencia visual en local.
+- Generacion de codigo asistida: la variante Coder (58,4 GB, 1,89 bpw efectivos, 256 expertos retenidos) esta pensada para entornos de desarrollo con GPU unica donde se necesita un modelo de codigo de gran capacidad sin infraestructura de centro de datos.
+- Investigacion en cuantizacion: los ficheros y los repositorios GSQ y RCO permiten reproducir la busqueda de precision por tensor y comparar el comportamiento de formatos escalares frente a vectoriales a 2-3 bits.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos cuantitativos publicados en la informacion disponible son el task average por variante y las cifras relativas de throughput. No se han publicado resultados por benchmark individual (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible, salvo la mencion cualitativa a AIME25.
+La model card incluye una grafica de "task average vs bit-width" y afirmaciones cualitativas sobre calidad relativa al modelo base, pero no se presentan tablas con valores numericos de MMLU, HumanEval, GSM8K u otros benchmarks en la informacion disponible.
 
-| Variante | bpw medio | Tamano total | Task average | Notas de rendimiento |
-|---|---|---|---|---|
-| Q2_0 | 2,40 | 66,4 GB | 89,07 | 3,4x throughput de prompt y 1,9x menos latencia que IQ2_XS; decodificacion estable |
-| IQ2_XS | 2,50 | 68,0 GB | 89,16 | La mas pequena a igual calidad |
-| IQ3_XXS | 3,00 | 75,8 GB | no disponible (3,5 puntos por encima de Q2_0) | Recomendada; iguala al modelo base en AIME25 |
-| mmproj BF16 | 16 | 0,91 GB | no aplica | Codificador de vision y proyector, comun a todas las variantes |
+| Variante | bpw | Afirmacion de calidad recogida en la model card |
+|---|---|---|
+| Q2_0 | 2,40 | La mas rapida; evita formatos con tablas de busqueda grandes |
+| IQ2_XS | 2,50 | La mas pequena a igual calidad |
+| IQ3_XXS | 3,00 | Iguala al modelo base en AIME25 |
+| IQ3_S | 3,50 | Recomendada; iguala o supera al modelo base en todas las tareas |
+
+No se han publicado resultados numericos de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM minima teorica igual al tamano de los pesos: 66,4 GB (Q2_0), 68,0 GB (IQ2_XS) o 75,8 GB (IQ3_XXS), mas 0,91 GB del proyector de vision si se usa el modo multimodal.
-- A esa cifra hay que sumar la cache KV y las activaciones, cuyo tamano depende de la longitud de contexto, que no esta disponible en la informacion proporcionada.
-- GPU recomendadas para descarga completa: A100 80 GB o H100 80 GB, en configuracion de una sola unidad para Q2_0 e IQ2_XS en funcion del contexto, o de dos unidades en configuraciones multi-GPU para mayor margen.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090 (32 GB). Es posible ejecutarlo con offload parcial de capas a CPU y RAM mediante llama.cpp, con penalizacion de latencia.
-- El segundo shard (tabla n-gram, 28,8 GB) es identico en las tres variantes y debe estar disponible en memoria o en almacenamiento rapido durante la inferencia.
-- Opciones de despliegue confirmadas por el autor: llama.cpp, Ollama y LM Studio, sin modificaciones sobre el GGUF estandar.
-- vLLM, TGI y otros servidores orientados a safetensors no estan confirmados para estos ficheros GGUF en la informacion disponible.
-- Latencia y throughput absolutos: no disponibles. Solo se publican cifras relativas entre variantes.
+- VRAM/memoria estimada para inferencia: entre 66,4 GB (Q2_0) y 83,6 GB (IQ3_S) para los pesos cuantizados, mas 0,91 GB del `mmproj` en BF16 si se usa el modo multimodal. Hay que anadir la memoria para KV cache y buffers de inferencia, cuyo tamano depende de la longitud de contexto (no disponible).
+- GPU recomendadas: no disponibles de forma explicita en la informacion proporcionada. Por volumen de memoria, las variantes requieren configuraciones multi-GPU o GPU con 80 GB o mas (A100 80 GB, H100) para caber en VRAM; en una unica GPU de 80 GB solo entran las variantes de menor tamano y con margen limitado para KV cache.
+- GPU de consumo: ninguna GPU consumer individual dispone de memoria suficiente para alojar los pesos completos; es necesario repartir entre varias GPU o usar memoria unificada (por ejemplo, sistemas Apple Silicon de gama alta o configuraciones multi-GPU).
+- Opciones de despliegue: llama.cpp, Ollama y LM Studio de forma nativa (GGUF estandar); el autor indica compatibilidad con endpoints. No se menciona soporte de vLLM ni TGI para estos ficheros en la informacion disponible.
+- Latencia y throughput: Q2_0 presenta 3,4 veces el throughput de prompt y 1,9 veces menos latencia extremo a extremo que IQ2_XS, con tasa de decodificacion plana entre cargas de trabajo. No se publican valores absolutos de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-La comparacion mas directa es entre las tres variantes del propio repositorio y frente al modelo base sin cuantizar.
-
-| Modelo | Parametros | bpw / precision | Tamano | Task average | Licencia |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base, BF16) | 176,9 B | 16 | no disponible | no disponible | Apache 2.0 |
-| Qwen3.8-Flash-Next GSQ-RCO Q2_0 | 176,9 B | 2,40 | 66,4 GB | 89,07 | Apache 2.0 |
-| Qwen3.8-Flash-Next GSQ-RCO IQ2_XS | 176,9 B | 2,50 | 68,0 GB | 89,16 | Apache 2.0 |
-| Qwen3.8-Flash-Next GSQ-RCO IQ3_XXS | 176,9 B | 3,00 | 75,8 GB | no disponible | Apache 2.0 |
+| Qwen3.8-Flash-Next (base) | 176,9 B totales, MoE 512 expertos, 10 activos | no disponible | safetensors | Apache 2.0 | Referencia de calidad; requiere mucha mas memoria que las versiones cuantizadas |
+| Qwen3.8-Flash-Next GSQ-RCO IQ3_S (esta publicacion) | 176,9 B totales (cuantizado a 3,50 bpw) | no disponible | GGUF, 83,6 GB | Apache 2.0 | Iguala o supera al base en todas las tareas segun el autor |
+| Qwen3.8-Flash-Next GSQ-RCO Q2_0 (esta publicacion) | 176,9 B totales (cuantizado a 2,40 bpw) | no disponible | GGUF, 66,4 GB | Apache 2.0 | Variante mas rapida; 3,4x throughput de prompt frente a IQ2_XS |
+| Qwen3.8-Flash-Next GSQ-RCO-Coder | 256 de 512 expertos retenidos, 1,89 bpw efectivos | no disponible | GGUF, 58,4 GB | Apache 2.0 | Variante especializada en codigo, publicada por separado |
 
-No se dispone de datos sobre otras cuantizaciones del mismo modelo base (por ejemplo, builds uniformes de terceros) ni sobre modelos alternativos de tamano comparable con los que contrastar rendimiento, contexto o licencia. La busqueda web realizada no devolvio resultados relevantes: los enlaces obtenidos corresponden a la empresa de contabilidad energetica ista y al software de diagnostico BMW ISTA, sin relacion con este modelo.
+No se dispone de datos de benchmarks ni de especificaciones de modelos de terceros comparables en la informacion proporcionada, por lo que la comparativa se limita a variantes del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- El repositorio contiene unicamente pesos cuantizados; no aporta informacion sobre el dataset de entrenamiento del modelo base, por lo que los sesgos heredados no estan documentados aqui.
-- Riesgo de alucinacion inherente a los modelos generativos; no se publican evaluaciones de veracidad ni de tasa de alucinacion.
-- Las variantes de 2 bits pierden calidad de forma medible: Q2_0 se situa 3,5 puntos de task average por debajo de IQ3_XXS. Para tareas sensibles a la precision, IQ3_XXS es la opcion recomendada por el propio autor.
-- La asignacion de precision se realiza por capa y no por experto, porque GGUF no puede expresar granularidad por experto; esto limita el optimo alcanzable dentro del presupuesto de tamano.
-- La tabla n-gram de 51,2 B de parametros se mantiene a un 4,5 bpw fijo y queda excluida de la busqueda de precision, por lo que representa un 28,8 GB constante que no se puede comprimir mas con este metodo.
-- Longitud de contexto e idiomas soportados no estan declarados; no debe asumirse ninguna capacidad multilingue ni de contexto largo sin verificacion empirica.
-- El modelo base pertenece a la familia Qwen y el prefijo de version (3.8) no coincide con nomenclaturas publicas conocidas; conviene verificar la ficha del modelo base antes de integrarlo en produccion.
-- La licencia Apache 2.0 permite uso comercial, pero se aplica al artefacto publicado; deben respetarse las condiciones del modelo base Qwen/Qwen3.8-Flash-Next.
-- El repositorio tiene 0 descargas y 15 likes en el momento de la consulta, con creacion el 7 de septiembre de 2026 y ultima actualizacion el 15 de septiembre de 2026: es un artefacto reciente y con poca validacion externa.
-- La model card consultada esta truncada, por lo que podria existir informacion adicional no reflejada en esta ficha.
+- La cuantizacion a 2,40-3,50 bpw introduce degradacion respecto al modelo base; el autor solo garantiza paridad o mejora en IQ3_S, y paridad en AIME25 para IQ3_XXS. Las variantes de 2 bits no tienen garantia de paridad en el resto de tareas.
+- La asignacion de tipos de cuantizacion se hace por capa, no por experto, porque GGUF no puede expresar precision por experto; esto limita la granularidad de la busqueda.
+- La tabla de embeddings n-gram (`per_layer_token_embd`, 51,2 B de parametros) se mantiene fija en IQ4_NL y representa 28,8 GB en todas las variantes, lo que impone un suelo de tamano dificil de reducir.
+- Los formatos con tablas de busqueda grandes (IQ2_XS, IQ3_XXS, IQ3_S) penalizan la velocidad de decodificacion en este modelo; el autor advierte que ese coste domina la inferencia, de ahi la existencia de Q2_0.
+- No hay informacion sobre sesgos, tasas de alucinacion, cobertura idiomatica ni restricciones adicionales de uso comercial mas alla de la licencia Apache 2.0.
+- El modelo base es de septiembre de 2026 y la cuantizacion se actualizo por ultima vez el 29 de septiembre de 2026; conviene verificar si existen revisiones posteriores.
+- El uso multimodal exige cargar ademas el fichero `mmproj` en BF16, lo que anade memoria y complejidad al despliegue.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Paper de GSQ: https://arxiv.org/abs/2604.18556
-- Paper de RCO: https://arxiv.org/abs/2605.00649
-- Codigo de GSQ: https://github.com/IST-DASLab/GSQ
-- Codigo de RCO: https://github.com/IST-DASLab/RCO
-- Organizacion DASLab en GitHub: https://github.com/IST-DASLab
-- Banner del repositorio: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF/resolve/main/assets/banner.png
-- Grafica de task average frente a bit-width: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF/resolve/main/assets/plots/Qwen3.8-Flash-Next-task_avg_vs_avg_bit_width.png
-
-Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a dominios ajenos (ista.com, portales de contabilidad energetica y foros sobre el software de diagnostico BMW ISTA+).
+- Variante Coder: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
+- Paper GSQ: https://arxiv.org/abs/2604.18556
+- Paper RCO: https://arxiv.org/abs/2605.00649
+- Codigo GSQ: https://github.com/IST-DASLab/GSQ
+- Codigo RCO: https://github.com/IST-DASLab/RCO
+- Organizacion DASLab: https://github.com/IST-DASLab

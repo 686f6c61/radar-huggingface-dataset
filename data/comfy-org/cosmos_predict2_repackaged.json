@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 32,
-  "downloads_30d": 4673,
+  "downloads_30d": 4891,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -41,29 +41,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Comfy-Org/Cosmos_Predict2_repackaged · Hugging Face",
-      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Comfy-Org/Cosmos_Predict2_repackaged at main - Hugging Face",
-      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "README.md · Comfy-Org/Cosmos_Predict2_repackaged at main",
-      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged/blob/main/README.md",
-      "snippet": "Comfy-Org / Cosmos_Predict2_repackaged like 0 Follow Comfy Org 2.02k License:nvidia-open-model-license Model card FilesFiles and versions Community main Cosmos_Predict2_repackaged /README.md ComfyUI-Wiki Create README.md 66fe9a1 verifiedabout 3 hours ago preview code | raw Copy download link history blame contribute delete 391 Bytes metadata"
-    },
-    {
-      "title": "cosmos_predict2_2B_video2world_480p_16fps.safetensors · Comfy-Org ...",
-      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged/blob/main/cosmos_predict2_2B_video2world_480p_16fps.safetensors",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "cosmos_predict2_14B_video2world_720p_10fps.safetensors · Comfy-Org ...",
-      "url": "https://huggingface.co/Comfy-Org/Cosmos_Predict2_repackaged/blob/main/cosmos_predict2_14B_video2world_720p_10fps.safetensors",
-      "snippet": "License:nvidia-open-model-license Model card FilesFiles and versions Community main Cosmos_Predict2_repackaged /cosmos_predict2_14B_video2world_720p_10fps.safetensors ComfyUI-Wiki Upload cosmos_predict2_14B_video2world_720p_10fps.safetensors with huggingface_hub 425c21c verifiedabout 6 hours ago download Copy download link history blame ..."
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
     }
   ]
 }

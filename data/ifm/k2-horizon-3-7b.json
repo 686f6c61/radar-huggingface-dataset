@@ -31,8 +31,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 117,
-  "downloads_30d": 14718,
+  "likes": 118,
+  "downloads_30d": 14656,
   "trending_score": 11,
   "parameters": 5058255360,
   "parameters_human": "5.06B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open - ifm.ai",
-      "url": "https://ifm.ai/blog/k2",
-      "snippet": "Today IFM is releasing K2 Horizon, a connected fleet of six models: 375B-A23B, 36B-A4B, 32B, 7B, 3.7B, and 0.9B. Across reasoning, mathematics, coding, agentic tasks, and general capabilities, K2 Horizon delivers top-tier performance in every size class—with the 0.9B, 3.7B, and 7B models setting new state of the art at their respective scales. K2 Horizon is also our most comprehensive open ..."
-    },
-    {
-      "title": "ifm electronic - spécialiste des capteurs et solutions d’automatismes ...",
-      "url": "https://www.ifm.com/fr/fr",
-      "snippet": "ifm vous accompagne dans toutes les phases de vos projets ou demandes : de la préconisation de solutions jusqu’à la mise en …"
-    },
-    {
-      "title": "IFM/K2-Horizon-3.7B · Hugging Face",
-      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Institut Français de la Mode | Ecole mode Paris",
-      "url": "https://www.ifmparis.fr/fr",
-      "snippet": "L’Institut Français de la Mode, issu de l'union de l'Ecole de la chambre syndicale de la couture parisienne et de l'IFM, est un …"
-    },
-    {
-      "title": "K2 Horizon: Open-Source AI Models for Every Scale | IFM",
-      "url": "https://ifm.ai/k2/",
-      "snippet": "Meet K2 Horizon: The largest fully open-source model launch in AI history, spanning six models that give you greater choice in capabilities, scale and deployment options, along with open access to training code and data."
-    }
-  ]
+  "sources": []
 }

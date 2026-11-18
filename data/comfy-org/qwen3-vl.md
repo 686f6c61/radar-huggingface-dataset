@@ -2,71 +2,88 @@
 
 ## Resumen
 
-El repositorio `Comfy-Org/Qwen3-VL` no contiene un modelo original, sino un reempaquetado de los pesos de los modelos Qwen3-VL-4B-Instruct y Qwen3-VL-8B-Instruct, preparados específicamente para su uso como *text encoders* dentro del ecosistema ComfyUI. El objetivo es facilitar la integración de estos modelos de visión-lenguaje en flujos de generación de imágenes o vídeo, donde actúan como codificadores de texto para guiar la síntesis.
+Comfy-Org/Qwen3-VL es un repositorio de redistribución de los pesos de los modelos Qwen3-VL-4B-Instruct y Qwen3-VL-8B-Instruct de Alibaba Qwen, reempaquetados en formato `diffusion-single-file` para su uso como codificadores de texto (text encoders) dentro de ComfyUI. No se trata de un modelo nuevo ni de un fine-tune: es un repack de los pesos originales en ficheros `.safetensors` listos para colocarse en `ComfyUI/models/text_encoders/`, con variantes de cuantización (bf16, fp8, int8, w4a8 y nvfp4) orientadas a reducir el consumo de VRAM en el pipeline de difusión.
 
-El repositorio incluye cinco archivos en formato `safetensors` con diferentes cuantizaciones: `bf16` y `fp8_scaled` para las versiones de 4B y 8B, y `nvfp4` para la versión de 8B. La licencia es Apache 2.0, lo que permite uso comercial y modificación. El tamaño total del repositorio es de 39.7 GB, lo que refleja la presencia de múltiples variantes de pesos.
+El modelo subyacente, Qwen3-VL, es una familia multimodal de tipo vision-language (comprensión de imagen y vídeo más generación de texto) construida sobre la arquitectura transformer de Qwen3. La variante 4B-Instruct y la 8B-Instruct son las versiones densas de instrucciones, con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-Al tratarse de un reempaquetado, no se proporcionan detalles técnicos adicionales sobre la arquitectura, el entrenamiento o las capacidades del modelo original. Para obtener información completa, es necesario consultar los repositorios originales de Qwen en Hugging Face.
+Su relevancia actual radica en dos factores: por un lado, la adopción masiva del repo (más de 1,2 millones de descargas) refleja que ComfyUI se ha convertido en la vía estándar para integrar codificadores de texto de última generación en flujos de generación de imagen y vídeo; por otro, las variantes cuantizadas a 4 y 8 bits permiten ejecutar un codificador de 8B en GPUs de consumo, algo impensable con los pesos en bf16.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de visión-lenguaje de la familia Qwen3-VL) |
-| Parametros totales | 4B y 8B (según el archivo) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16, fp8_scaled, nvfp4 |
+| Arquitectura | Transformer denso multimodal (vision-language) de la familia Qwen3-VL |
+| Parametros totales | 4B (variante 4B-Instruct) y 8B (variante 8B-Instruct) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | bf16, fp8 scaled, int8 convrot, w4a8, nvfp4 (solo variantes 8B para las tres ultimas; 4B en bf16 y fp8) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (single-file, layout ComfyUI) |
+| Tamano del repo | 64,2 GB (incluye todas las variantes) |
+| Modelos base | Qwen/Qwen3-VL-4B-Instruct, Qwen/Qwen3-VL-8B-Instruct |
+| Libreria declarada | diffusion-single-file |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados o las innovaciones técnicas del modelo original. El repositorio solo contiene los pesos reempaquetados para ComfyUI. Para conocer estos detalles, se debe consultar la documentación oficial de Qwen3-VL en los repositorios originales.
+El repositorio no entrena ni modifica el modelo: redistribuye los pesos de Qwen3-VL-4B-Instruct y Qwen3-VL-8B-Instruct, que son transformers densos multimodales de la familia Qwen3. La capa de visión procesa imágenes y vídeo y proyecta las representaciones al espacio del decoder de lenguaje, que genera texto condicionado por el prompt y el contenido visual. La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el modelo original.
+
+La innovación relevante de este repo es de empaquetado e inferencia, no de arquitectura: los pesos se han convertido a ficheros únicos `.safetensors` compatibles con el cargador de text encoders de ComfyUI, y se ofrecen variantes cuantizadas (fp8 con escalado, int8 con rotación de canales, w4a8 y nvfp4) que reducen el footprint de memoria a costa de precisión numérica. No se documentan técnicas como decodificación especulativa ni atención lineal en la información proporcionada.
 
 ## Capacidades
 
-- Al ser un modelo de visión-lenguaje (VL), se espera que sea capaz de procesar y comprender tanto texto como imágenes, aunque no se detallan capacidades específicas en este repositorio.
-- Su uso principal en ComfyUI es como *text encoder*, es decir, para convertir instrucciones textuales en representaciones vectoriales que guían la generación de imágenes o vídeo.
-- No se especifican capacidades de *tool calling*, razonamiento multi-paso, ni soporte para agentes.
-- No se indica el soporte multilingüe ni modos especiales como *thinking mode*.
+- Comprensión de imagen y vídeo combinada con generación de texto (modelo vision-language).
+- Generación de texto e instrucciones en modo chat (variantes `-Instruct`).
+- Actúa como codificador de texto/condicionamiento en pipelines de ComfyUI para modelos de difusión.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada para estas variantes.
+- Razonamiento multi-paso y modo agentes: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- **Generación de imágenes en ComfyUI**: el modelo se utiliza como *text encoder* en flujos de difusión, permitiendo que las indicaciones de texto se traduzcan en embeddings que condicionan la generación visual.
-- **Generación de vídeo**: integrado en pipelines de ComfyUI para vídeo, donde el texto guía la síntesis de secuencias temporales.
-- **Edición de imágenes basada en instrucciones**: al combinar el encoder de texto con modelos de difusión, se pueden realizar modificaciones dirigidas por lenguaje natural.
-- **Prototipado de aplicaciones multimodales**: desarrolladores que usan ComfyUI como backend pueden aprovechar estos pesos para experimentar con modelos VL sin necesidad de configurar el entorno original.
-- **Investigación en condicionamiento multimodal**: el acceso a cuantizaciones variadas (bf16, fp8, nvfp4) permite probar diferentes equilibrios entre precisión y uso de memoria en entornos de investigación.
-- **Despliegue en entornos con recursos limitados**: las versiones cuantizadas (fp8_scaled y nvfp4) pueden ejecutarse en GPUs con menor VRAM, aunque no se especifican requisitos exactos.
+- Codificador de texto en flujos de generación de imagen en ComfyUI: se coloca el `.safetensors` en `models/text_encoders/` y se conecta al nodo de condicionamiento del pipeline de difusión; las variantes fp8 e int8 reducen la VRAM necesaria frente a bf16.
+- Generación de vídeo en ComfyUI con condicionamiento textual enriquecido: el modelo aporta representaciones semánticas de mayor calidad que codificadores más pequeños, útil en pipelines de vídeo donde el prompt describe escenas complejas.
+- Prototipado rápido en estaciones de trabajo con GPU de consumo: la variante `qwen3vl_8b_nvfp4` o `qwen3vl_8b_w4a8` permite cargar un codificador de 8B en GPUs con 16-24 GB de VRAM.
+- Investigación en edición de imagen guiada por lenguaje: al ser un VLM, puede emplearse para generar descripciones o instrucciones intermedias que alimenten etapas posteriores del pipeline.
+- Evaluación comparativa de cuantizaciones: el repo ofrece cinco formatos numéricos del mismo modelo, lo que facilita medir el impacto de fp8, int8, w4a8 y nvfp4 en la calidad final de la imagen generada.
+- Integración en flujos automatizados de ComfyUI vía API: el formato single-file simplifica el despliegue en contenedores y la reproducibilidad de entornos, al no depender de múltiples shards.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de rendimiento ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se proporcionan requisitos de VRAM específicos para cada archivo.
-- El tamaño total del repositorio (39.7 GB) sugiere que los archivos individuales son grandes; las versiones bf16 de 4B y 8B probablemente requieran al menos 8 GB y 16 GB de VRAM respectivamente, pero esto es una estimación no confirmada.
-- Las versiones cuantizadas (fp8_scaled y nvfp4) podrían reducir los requisitos de memoria, pero no hay datos oficiales.
-- Para su uso en ComfyUI, se recomienda una GPU con al menos 12 GB de VRAM para la versión de 4B y 24 GB para la de 8B, aunque esto es orientativo.
-- Opciones de despliegue: ComfyUI (local), y potencialmente otros frameworks que soporten safetensors, pero no se documentan en este repositorio.
+- VRAM estimada: no disponible de forma oficial; orientativamente, un 8B en bf16 ronda los 16 GB de pesos, en fp8 unos 8 GB, y en w4a8/nvfp4 alrededor de 4-5 GB, más el overhead de activaciones y del resto del pipeline de ComfyUI.
+- GPU recomendadas: no especificadas por el autor. Para bf16 se requiere una GPU de 24 GB o superior (RTX 3090/4090, A100, H100); para fp8, GPUs con soporte nativo (H100, RTX 40xx); para w4a8/nvfp4, GPUs Ada o Blackwell.
+- GPU de consumo: las variantes cuantizadas del 8B y las bf16/fp8 del 4B son las opciones realistas en GPUs de 8-24 GB.
+- Despliegue: ComfyUI (librería declarada `diffusion-single-file`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos. El repositorio no incluye datos de rendimiento ni referencias a alternativas. Se recomienda consultar los repositorios originales de Qwen3-VL para obtener comparativas con otros modelos de visión-lenguaje.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Comfy-Org/Qwen3-VL (este repo) | 4B / 8B | no disponible | Apache 2.0 | safetensors single-file (bf16, fp8, int8, w4a8, nvfp4) | Repack para ComfyUI de Qwen3-VL |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible | Apache 2.0 | safetensors (formato original) | Modelo original, no orientado a ComfyUI |
+| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible | Apache 2.0 | safetensors (formato original) | Modelo original, requiere conversión para ComfyUI |
+
+No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Al ser un reempaquetado, no se garantiza que los archivos funcionen correctamente en todos los entornos; se recomienda verificar la compatibilidad con la versión de ComfyUI utilizada.
-- No se proporciona información sobre sesgos, alucinaciones o limitaciones de contexto del modelo original.
-- La licencia Apache 2.0 permite uso comercial, pero se debe revisar si los modelos originales de Qwen tienen restricciones adicionales (por ejemplo, términos de uso específicos).
-- Los archivos están pensados exclusivamente para su uso como *text encoders* en ComfyUI; no se incluyen pesos completos del modelo de difusión ni otros componentes.
-- No hay garantía de soporte técnico por parte de Comfy-Org para este repositorio.
+- Es un repack, no un modelo entrenado por Comfy-Org: cualquier limitación del Qwen3-VL original aplica íntegramente.
+- Las cuantizaciones (fp8, int8, w4a8, nvfp4) pueden degradar la calidad del condicionamiento y, por tanto, la fidelidad de la imagen o vídeo generado; conviene validar cada variante en el pipeline concreto.
+- No se documentan sesgos, tasas de alucinación ni cobertura idiomática en la información disponible.
+- Licencia Apache 2.0 permite uso comercial, pero debe verificarse que los términos del modelo base se mantienen y citarse adecuadamente.
+- El repo pesa 64,2 GB; descargar solo la variante necesaria para evitar consumo innecesario de disco.
+- Depende de una versión de ComfyUI que soporte el cargador de text encoders de Qwen3-VL; versiones antiguas pueden no reconocer los ficheros.
+- No hay garantía de compatibilidad con frameworks fuera de ComfyUI sin conversión adicional.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: [Comfy-Org/Qwen3-VL](https://huggingface.co/Comfy-Org/Qwen3-VL)
-- Modelo original 4B: [Qwen/Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
-- Modelo original 8B: [Qwen/Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Qwen3-VL
+- Modelo base 4B: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+- Modelo base 8B: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI

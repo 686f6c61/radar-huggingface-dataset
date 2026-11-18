@@ -2,80 +2,94 @@
 
 ## Resumen
 
-El modelo **DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU** es un fine-tuning del modelo base **Qwen/Qwen3.8-27B**, desarrollado por el usuario DavidAU. Se trata de una variante "uncensored" y "heretic" que elimina las restricciones de contenido del modelo original, manteniendo las capacidades multimodales (entrada de imagen y texto) propias de la familia Qwen3.8. El nombre incluye la técnica **Cold Fusion**, que combina **GAIN Training** y **Unsloth** para reducir el número de tokens de razonamiento interno y mejorar el seguimiento de instrucciones, manteniendo el rendimiento de la base.
+Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU es un ajuste fino (finetune) del modelo base Qwen/Qwen3.8-27B, publicado por el usuario DavidAU en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a conversacion, con licencia Apache 2.0 y un unico idioma declarado (ingles). El autor lo presenta como la "release #1" de una familia de variantes construidas sobre Qwen 3.8 27B, con un pipeline de ajuste por etapas que combina tecnicas que denomina "Cold Fusion", "GAIN Training" y "Multi-stage tuning", e incluye un proceso de "heretic" (eliminacion de rechazos y censura) que da lugar a la etiqueta "uncensored".
 
-Con aproximadamente **27,8 mil millones de parámetros**, este modelo está diseñado para tareas de conversación, generación de texto, razonamiento y visión. Su licencia **Apache 2.0** permite uso comercial, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. Es relevante ahora porque ofrece una alternativa sin censura y optimizada para eficiencia de razonamiento sobre una base sólida como Qwen3.8-27B, con soporte de visión integrado.
+El modelo cuenta con 27.781.427.952 parametros segun los pesos en safetensors, lo que lo situa en la categoria de modelos densos de ~28B. El repositorio ocupa 55,6 GB, coherente con pesos en precision completa o semi-precision. La model card menciona de forma explicita mejoras en "reduccion de tokens de razonamiento" (de 1/2 a 1/10) y la existencia de modos de razonamiento e instruccion, aunque no se aportan especificaciones formales de longitud de contexto ni de arquitectura interna mas alla del tag `qwen3_5` en los metadatos.
+
+La relevancia de esta ficha es doble: por un lado, documenta un ejemplo de la practica de finetunes comunitarios sobre modelos Qwen, con tecnicas de "decensura" y ajuste multi-etapa; por otro, sirve de advertencia sobre la escasa verificabilidad de muchas de las afirmaciones de rendimiento en este tipo de publicaciones, donde los benchmarks citados son internos y no reproducibles de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (basado en Qwen3.8-27B) |
-| Parametros totales | 27.781.427.952 (~27,8B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (las variantes GGUF del mismo autor indican compatibilidad con 256k) |
-| Tipos de cuantizacion | No disponible (repo en safetensors, presumiblemente BF16/FP16) |
-| Idiomas soportados | Inglés (tag "en") |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer denso (derivado de Qwen/Qwen3.8-27B; tag de libreria `qwen3_5`); detalles internos no disponibles |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible en esta repo; el autor publica GGUFs (NEO-CODER MAX DiMatrix) en repos separados |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (repo principal); GGUF en repos derivados |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de **Qwen3.8-27B**, un transformer decoder-only denso con capacidades multimodales (procesa imágenes y texto). El fine-tuning aplica el método **Cold Fusion**, que combina **GAIN Training** (una técnica para reducir el "overthinking" y los tokens de razonamiento interno) con **Unsloth** (optimización de entrenamiento). Según la documentación del autor, este método mantiene el 99% del rendimiento BF16 incluso en cuantizaciones de 8 y 4 bits, y reduce el número de tokens de razonamiento hasta en 1/5 o 1/10 en algunos casos. El entrenamiento es multi-etapa (multi-stage tuning) y el nombre "Heretic-Uncensored" indica que se ha eliminado la censura del modelo base. El pipeline declarado es **image-text-to-text**, confirmando que conserva la capacidad de procesar imágenes.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer denso de aproximadamente 27,8 mil millones de parametros. El autor no detalla la arquitectura interna (numero de capas, dimensiones, tipo de atencion, uso de RoPE, etc.) ni la composicion del dataset de ajuste. La model card describe un proceso de ajuste en multiples etapas ("Multi-stage tuning", "Cold Fusion", "GAIN Training") sobre el que no se aportan hiperparametros, numero de tokens de entrenamiento ni mezcla de datos. Se menciona la participacion de "Nightmedia" en las tres primeras etapas y el uso de finetunes propios y de terceros como material de partida, sin que se enumeren.
+
+La innovacion declarada mas concreta es la reduccion de tokens de razonamiento (entre 1/2 y 1/10, segun el autor) y la existencia de modos de razonamiento e instruccion, ademas de un proceso de "heretic" destinado a reducir los rechazos del modelo base. No se documenta si hubo RLHF, DPO o un pipeline de preferencias, ni se especifican las tecnicas de decodificacion (especulativa, atencion lineal, etc.). Toda la informacion tecnica procede de la model card del autor y no ha sido verificada de forma independiente.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés.
-- Razonamiento y resolución de problemas con menor uso de tokens de razonamiento interno (gracias a Cold Fusion).
-- Soporte de entrada de imágenes (visión) para tareas de image-text-to-text.
-- Capacidad de tool calling / function calling, heredada de Qwen3.8-27B.
-- Soporte de agentes y razonamiento multi-paso.
-- Sin censura de contenido (uncensored), lo que permite generar respuestas sobre temas sensibles o controvertidos.
-- Modos de esfuerzo de razonamiento (xhigh/medium/low) disponibles en variantes GGUF del mismo autor, aunque no se confirma para este checkpoint safetensors.
+- Generacion de texto conversacional multi-turno en ingles.
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`), aunque no se detallan las capacidades de vision mas alla del tag.
+- Razonamiento con modos diferenciados (el autor menciona "3 nuevos modos de razonamiento" de Qwen 3.8 y, en releases hermanas, 5 modos de razonamiento y 5 de instruccion).
+- Reduccion de tokens de razonamiento declarada (1/2 a 1/10) para abaratar la inferencia en tareas de thinking.
+- Generacion de codigo: el autor lo promociona bajo la etiqueta "NEO-CODER" en los GGUFs asociados.
+- Comportamiento "uncensored": menor tasa de rechazos ante peticiones que el modelo base declinaria.
+- Soporte de tool calling / function calling: no disponible (no se documenta explicitamente).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta explicitamente).
+- Capacidades multilingues: limitadas al ingles segun los metadatos.
 
 ## Casos de uso
 
-- **Generación creativa sin restricciones**: el modelo puede producir narrativa, poesía o guiones sobre temas que otros modelos censuran, gracias a su naturaleza uncensored. Es adecuado para escritores que necesitan explorar contenido adulto o controvertido.
-- **Asistente de programación**: con soporte de tool calling y razonamiento eficiente, puede integrarse en entornos de desarrollo para generar código, depurar o explicar fragmentos, reduciendo la latencia por menos tokens de razonamiento.
-- **Análisis de imágenes con texto**: al ser image-text-to-text, puede describir imágenes, responder preguntas visuales o extraer información de capturas, útil en automatización de documentación o accesibilidad.
-- **Roleplay y personajes conversacionales**: su falta de censura y buena capacidad de diálogo lo hacen idóneo para chatbots de rol sin filtros, tanto en entretenimiento como en investigación de interacción humano-máquina.
-- **Investigación en alineación y seguridad**: al ser un modelo sin censura, sirve como caso de estudio para analizar comportamientos no alineados y desarrollar técnicas de mitigación.
-- **Prototipado rápido de agentes**: con razonamiento multi-paso y tool calling, se puede usar para construir agentes que ejecutan tareas complejas (búsqueda, cálculo, llamadas a APIs) con menor coste computacional por consulta.
+- Generacion creativa y ficcion: el ajuste "Fable" y la reduccion de censura permiten producir narrativa sin los rechazos tipicos del modelo base; adecuado para escritura de relatos, guiones y dialogos donde el modelo base aplicaria filtros.
+- Asistente conversacional en ingles para prototipos: con 27,8B parametros y pesos safetensors, se puede desplegar en un endpoint compatible con la API de transformers para pruebas de producto en fase temprana.
+- Analisis de imagenes con descripcion textual: el pipeline image-text-to-text permite construir flujos de captioning o respuesta a preguntas sobre imagenes, siempre que se validen las capacidades reales de vision del modelo base.
+- Generacion de codigo en entornos controlados: la etiqueta "NEO-CODER" sugiere uso para autocompletado y explicacion de codigo; conviene validar con tests propios antes de integrarlo en CI/CD.
+- Investigacion sobre alineacion y censura: util como objeto de estudio para comparar el comportamiento del modelo base frente al finetune "heretic" en tareas sensibles, midiendo tasas de rechazo y deriva de estilo.
+- Experimentacion con reduccion de tokens de razonamiento: si las cifras del autor se confirman, sirve para estudiar el coste/calidad de cadenas de pensamiento mas cortas en tareas de matematicas y logica.
+- Base para nuevos finetunes comunitarios: al ser Apache 2.0 y estar en safetensors, se puede reentrenar con LoRA o QLoRA sin restricciones de licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para este checkpoint en la información disponible. La documentación de variantes GGUF del mismo autor afirma que "el modelo supera todos los benchmarks críticos de Qwen 3.8, 3.6 y 3.5 27B", pero no se proporcionan cifras concretas. Por tanto, no se incluyen tablas numéricas para evitar inventar datos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona cifras internas (por ejemplo, "640 ARC-C" para un modelo hermano de 9B y afirmaciones genericas de superar a "todos los modelos Qwen 27B"), pero no se aportan tablas con MMLU, HumanEval, GSM8K ni comparaciones reproducibles para este modelo concreto.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: en FP16/BF16, el modelo requiere aproximadamente **61 GB** de VRAM (según datos de una variante similar del mismo autor). Con cuantización INT4, se reduce a unos **15 GB**, lo que permite ejecutarlo en una GPU de consumo como la RTX 4090 (24 GB).
-- **GPU recomendadas**: para FP16 se necesitan GPUs de centro de datos (A100 80GB, H100 80GB) o múltiples GPUs. Para cuantización INT4, una RTX 4090, RTX 3090 o similar es suficiente.
-- **Opciones de despliegue**: al ser un modelo transformers, puede servirse con **vLLM**, **TGI** o **llama.cpp** (si se convierte a GGUF). El autor publica variantes GGUF compatibles con 256k de contexto y soporte de visión mediante mmproj.
-- **Latencia y throughput**: no se dispone de datos medidos. Se espera que la reducción de tokens de razonamiento mejore la latencia percibida frente al modelo base, pero no hay cifras oficiales.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 55,6 GB de pesos, mas overhead de activaciones y cache KV; se recomienda un minimo de 64-80 GB de VRAM.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 28-30 GB; cabe en una A100 40GB o en dos RTX 4090.
+- VRAM estimada en cuantizacion de 4 bits: en torno a 15-18 GB; cabe en una RTX 4090 (24 GB) o RTX 3090.
+- GPU recomendadas: A100 80GB o H100 para BF16; A100 40GB o 2x RTX 4090 para 8 bits; RTX 4090/3090 para 4 bits.
+- Cabe en GPU de consumo: si, en cuantizaciones de 4-5 bits (GGUF) en tarjetas de 24 GB; en 8 bits requiere 24 GB con holgura limitada o configuraciones multi-GPU.
+- Opciones de despliegue: transformers (formato nativo del repo), vLLM y TGI para safetensors; llama.cpp y Ollama para los GGUFs publicados en repos derivados del autor.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Visión | Censura |
-|---|---|---|---|---|---|
-| Qwen3.8-27B (base) | ~27,8B | 256k (según familia) | Apache 2.0 | Sí | Parcial |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion... (este) | ~27,8B | No disponible | Apache 2.0 | Sí | Sin censura |
-| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF | ~27,8B | 256k (GGUF) | Apache 2.0 | Sí (mmproj) | Sin censura |
-
-La comparativa se limita a variantes del mismo autor y al modelo base, ya que no se dispone de datos de otros modelos de 27B con características equivalentes (visión + sin censura). El modelo base Qwen3.8-27B es la referencia principal; la variante aquí descrita añade la eliminación de censura y la optimización de razonamiento.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU | 27,8B | no disponible | Apache 2.0 | Finetune comunitario "uncensored" con modos de razonamiento; benchmarks no verificados |
+| Qwen/Qwen3.8-27B (base) | ~27B | no disponible | Apache 2.0 | Modelo original, con filtros de seguridad y sin ajuste "heretic" |
+| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (mismo autor) | ~27B | no disponible | Apache 2.0 | Release #2 del mismo autor; 5 modos de razonamiento y 5 de instruccion conmutables |
+| Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU (mismo autor) | ~27B | no disponible | Apache 2.0 | Generacion anterior de la familia; el autor reporta mas de 4 millones de descargas |
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones en Hugging Face antes de descargar los pesos.
-- **Idioma limitado**: solo se declara soporte para inglés; no se garantiza un rendimiento adecuado en otros idiomas.
-- **Riesgo de alucinación**: como cualquier modelo generativo, puede producir información falsa o inventada, especialmente en temas especializados.
-- **Sesgos y contenido ofensivo**: al ser uncensored, puede generar contenido discriminatorio, violento o ilegal. El uso en producción debe contemplar filtros adicionales y responsabilidad legal.
-- **Sin garantías de producción**: es un fine-tuning de un usuario independiente, no un modelo oficial de Qwen. No hay documentación de evaluación exhaustiva ni soporte técnico.
-- **Contexto no confirmado**: aunque las variantes GGUF del autor indican 256k, este checkpoint safetensors no especifica la longitud de contexto; se recomienda verificar antes de usarlo con ventanas largas.
+- Sesgos conocidos: no documentados por el autor; al ser un finetune "uncensored" sobre datos no especificados, es esperable una mayor propension a generar contenido sesgado, ofensivo o inseguro.
+- Riesgo de alucinacion: no cuantificado; las afirmaciones de rendimiento del autor no son verificables de forma independiente.
+- Limitaciones de idioma: solo ingles declarado; el rendimiento en castellano no esta garantizado.
+- Limitaciones de contexto: la longitud de contexto no se especifica en la informacion disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el contenido generado por un modelo "uncensored" puede incumplir normativas sectoriales o de plataforma; la responsabilidad recae en el desplegador.
+- Caveats para produccion: la model card contiene afirmaciones promocionales no contrastadas, enlaces a multiples releases y avisos de fechas futuras; conviene tratar el modelo como experimental y validar calidad, seguridad y estabilidad antes de cualquier despliegue.
+- Trazabilidad: se desconoce la composicion exacta del dataset de ajuste y de los finetunes de terceros utilizados, lo que dificulta auditorias de licencia y de sesgo.
 
 ## Enlaces
 
-- [Hugging Face - DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU)
-- [Hugging Face - Variante sin sufijo NM-DAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored)
-- [Página de la variante GGUF (aiany.app)](https://aiany.app/item/davidau-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf)
-- [Recomendador de GPU (Spheron) para variante stage1](https://www.spheron.network/tools/gpu-recommender/DavidAU/Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1)
-- [Toolify - Descripción de la variante GGUF](https://www.toolify.ai/ai-model/davidau-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf)
+- Repositorio Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- GGUFs de la release #1: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Release #2 (TWIN-TURBO, fuente): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
+- Release #2 (GGUFs): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF
+- Release #2 ULTRA HERETIC: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
+- Release #3 (rama "from scratch"): https://huggingface.co/DavidAU/Qwen3.8-27B-UltimateDetails2-stage1__The-Harley-Pelican
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

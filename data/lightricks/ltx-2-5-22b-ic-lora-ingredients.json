@@ -28,9 +28,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 128,
+  "likes": 129,
   "downloads_30d": 16572,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1353058820,
@@ -49,29 +49,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "MyDATEV",
-      "url": "https://apps.datev.de/mydatev/",
-      "snippet": "MyDATEV bietet einen zentralen Zugang zu DATEV-Diensten und -Tools für eine effiziente Verwaltung und Nutzung von DATEV …"
+      "title": "The AI Technology Company Empowering Creativity | Lightricks",
+      "url": "https://www.lightricks.com/",
+      "snippet": "Lightricks is a leading AI technology company transforming creative workflows with innovative tools; across web, mobile and open …"
     },
     {
-      "title": "Arbeitnehmer online - DATEV",
-      "url": "https://apps.datev.de/ano/",
-      "snippet": "Ein Konto, viele Möglichkeiten Sie haben mehrere Arbeitgeber? Auch das ist möglich. Fügen Sie einfach mehrere Arbeitgeber Ihrem …"
+      "title": "About Lightricks | AI-Powered Creative Apps",
+      "url": "https://www.lightricks.com/about",
+      "snippet": "Lightricks, an AI-first company, is revolutionizing how visual content is created. With a mission to bridge the gap between imagination …"
     },
     {
-      "title": "DATEV | Führend in Software, Service & Wissen.",
-      "url": "https://www.datev.de/web/de/",
-      "snippet": "Sie sind Steuerberaterin oder Steuerberater, Wirtschaftsprüferin oder Wirtschaftsprüfer und möchten mit DATEV starten. Modern und …"
+      "title": "Lightricks (LTX.io) - Hugging Face",
+      "url": "https://huggingface.co/Lightricks",
+      "snippet": "Lightricks/LTX-2.5-22b-LoRA-Slow-Motion-Control ... Lightricks/LTX-2.5-22b-LoRA-Cinemagraph ... Lightricks/LTX-2.5-22b-IC-LoRA …"
     },
     {
-      "title": "DATEV Unternehmen online",
-      "url": "https://www.datev.de/web/de/berufsgruppenuebergreifend/mydatev/cloud-anwendungen/datev-unternehmen-online",
-      "snippet": "Hilfe-Center DATEV Unternehmen online Hier finden Sie Antworten auf Ihre Fragen zu DATEV Unternehmen online - unabhängig …"
+      "title": "Lightricks - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Lightricks",
+      "snippet": "In the summer of 2022, with the emergence of generative artificial intelligence, Lightricks began incorporating GenAI flows in its apps, …"
     },
     {
-      "title": "MyDATEV Portal",
-      "url": "https://mydatev-portal.apps.datev.de/",
-      "snippet": "MyDATEV Portal ... MyDATEV Portal"
+      "title": "Lightricks - GitHub",
+      "url": "https://github.com/Lightricks",
+      "snippet": "Bridging Imagination and Creation. Lightricks has 154 repositories available. Follow their code on GitHub."
     }
   ]
 }

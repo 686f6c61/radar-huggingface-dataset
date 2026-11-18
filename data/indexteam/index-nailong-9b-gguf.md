@@ -1,108 +1,86 @@
 # IndexTeam/Index-Nailong-9B-GGUF
 
 ## Resumen
+Index-Nailong-9B-GGUF es la conversión oficial a formato GGUF del modelo IndexTeam/Index-Nailong-9B, un modelo de traducción multilingüe de 8.953.803.264 parámetros (aproximadamente 9B) desarrollado por el equipo Index (vinculado a bilibili). Forma parte de la familia Index-Translate, orientada a traducción en 150 idiomas con soporte para restricciones de terminología, preservación de formato y traducción controlada por sílabas para doblaje. Esta versión GGUF, publicada en noviembre de 2026, actualiza todas las variantes a la versión v1.1 del modelo base.
 
-Index-Nailong-9B-GGUF es la conversión oficial al formato GGUF del modelo IndexTeam/Index-Nailong-9B, desarrollado por el equipo Index (IndexTeam) y publicado como parte de la familia Index-Translate, orientada a traducción multilingüe. El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 8,95 mil millones), lo que lo sitúa en la gama de 9B, y su pipeline declarado en Hugging Face es `translation`.
+El modelo resuelve el problema de la traducción automática de alta calidad con control fino sobre el resultado: permite imponer glosarios terminológicos obligatorios, preservar estructuras JSON/CSV/código/placeholders y adaptar el registro o el sentido según el dominio. Está pensado para pipelines de traducción profesionales, localización de software y doblaje, donde la fidelidad terminológica y de formato es crítica.
 
-La relevancia de esta publicación está en que traslada un modelo de traducción especializado al ecosistema llama.cpp, con cuantizaciones estáticas de posentrenamiento (post-training quantization) que van desde 2 bits hasta f16 en un único repositorio de 81,4 GB. Esto permite ejecutar traducción con restricciones de terminología y formato en hardware de consumo, sin depender de infraestructura de GPU de datacenter.
+La relevancia actual radica en su empaquetado en múltiples cuantizaciones GGUF (desde Q2_K hasta f16) que permiten desplegarlo en hardware de consumo, junto con un formato de prompting estructurado (instTrans) documentado y verificado. El repositorio ocupa 162,9 GB e incluye todas las anchuras de bits en un único lugar, con checksums SHA-256 para validación.
 
-La familia Index-Translate cubre 150 idiomas y añade un formato de traducción restringida denominado instTrans, que permite imponer glosarios obligatorios, preservar estructuras JSON/CSV/código y adaptar registro o estilo. El informe técnico de la familia está disponible en arXiv (2609.40181) y el código en el repositorio github.com/bilibili/Index-Translate. La licencia es Apache 2.0.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no se detalla en la información proporcionada) |
-| Parámetros totales | 8.953.803.264 (≈8,95B) |
-| Parámetros activos | no disponible (no se ha confirmado que sea MoE) |
+| Arquitectura | no disponible (modelo base transformer, detalles no especificados) |
+| Parametros totales | 8.953.803.264 (~9B) |
+| Parametros activos | no aplica (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | 150 idiomas según la familia Index-Translate (la metadata de Hugging Face no los lista) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | 150 idiomas (según la familia Index-Translate) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors/BF16 |
+| Formato de pesos | GGUF (convertido con llama.cpp, commit 0fb8f157702702f33f4e018de8701b2569a1bc28) |
 
 ## Arquitectura y entrenamiento
+No se dispone de detalles sobre la arquitectura interna del modelo base en la información proporcionada; se trata de un modelo de la familia Index-Translate orientado a traducción, con aproximadamente 9B de parámetros. La model card no especifica si emplea un transformer denso convencional u otra variante, ni detalla el volumen de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de RLHF/DPO.
 
-La información proporcionada no incluye detalles sobre la arquitectura interna del modelo base (tipo de transformer, número de capas, mecanismo de atención o configuración de cabezas). El repositorio únicamente describe el proceso de conversión: se realizó con llama.cpp (rama master, octubre de 2026) mediante cuantización estática de posentrenamiento, y todas las anchuras de bits se publican en un solo repositorio. Tampoco se detallan los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
-
-Lo que sí se documenta es el proceso de validación de las cuantizaciones: cada nivel fue comprobado en GPU (NVIDIA A100) contra la conversión F16, usando divergencia KL por token y delta-p RMS mediante `llama-perplexity`, además de comprobaciones puntuales de generación greedy contra los pesos BF16 originales de referencia en transformers. Según el autor, las salidas de Q4_K_M coincidieron casi literalmente con la referencia. La innovación funcional destacable no está en la arquitectura, sino en el formato instTrans de traducción restringida que el modelo es capaz de seguir.
+La innovación técnica destacable no reside en la arquitectura sino en el formato de prompting instTrans, que permite traducción restringida mediante la estructura canónica `【源文】<text>` seguida de restricciones duras numeradas (`1. 【硬性要求】`) y restricciones suaves (`2. 【注意】`). Las restricciones duras son binarias (glosarios terminológicos estrictos, preservación de formato JSON/CSV/código/placeholders) y las suaves son graduadas (tono y estilo, desambiguación de sentido por dominio, consistencia entre frases, preservación de LaTeX). Además, los checkpoints Index-Homura (2B y 9B) permiten traducción con control estricto de presupuesto silábico para doblaje.
 
 ## Capacidades
-
-- Traducción multilingüe en 150 idiomas, con el modelo base Index-Nailong-9B como referencia.
-- Traducción con restricciones duras (hard constraints) de cumplimiento binario: aplicación estricta de glosarios terminológicos, por ejemplo `碳纤维:carbon fiber, 抗裂缝:crack resistance`.
-- Preservación de formato y estructura en JSON, CSV, código y marcadores de posición (placeholders).
-- Restricciones blandas (soft constraints) de cumplimiento gradual: adaptación de tono y estilo (por ejemplo, registro formal de correo empresarial), desambiguación de dominio y sentido (por ejemplo, *plant* traducido como 工厂 en contexto industrial), consistencia entre frases y preservación de LaTeX.
-- Traducción de documentos largos, según la descripción de la familia Index-Translate.
-- Traducción controlada por sílabas para doblaje: esta capacidad corresponde a los checkpoints Index-Homura (IndexTeam/Index-Homura-2B e IndexTeam/Index-Homura-9B), no al checkpoint Nailong.
-- Formato conversacional: el repositorio está etiquetado como `conversational` y admite plantilla de chat con `enable_thinking` configurable.
-- Decodificación recomendada: greedy con temperatura 0 y `enable_thinking: false` según la model card.
+- Traducción multilingüe en 150 idiomas, con foco documentado en chino-inglés y chino-japonés en las pruebas de validación.
+- Traducción con restricciones duras: aplicación obligatoria de glosarios terminológicos y preservación de estructuras (JSON, CSV, código, placeholders).
+- Traducción con restricciones suaves: adaptación de tono y registro (por ejemplo, correo comercial formal), desambiguación de sentido por dominio (por ejemplo, *plant* como fábrica en contexto industrial), consistencia entre frases y preservación de LaTeX.
+- Traducción controlada por sílabas para doblaje mediante los checkpoints Index-Homura, combinable con glosarios.
+- Traducción de documentos largos (según la descripción de la familia Index-Translate).
+- Modo conversacional con plantilla de chat; se recomienda desactivar el modo thinking (`enable_thinking: false`) y usar decodificación greedy (temperature=0).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Visión o audio: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles en la información proporcionada.
 
 ## Casos de uso
-
-- Traducción de documentación técnica con glosario impuesto: usando instTrans se pueden fijar términos obligatorios para que el modelo no alterne entre sinónimos a lo largo de un manual completo, algo crítico en documentación de producto y normativa.
-- Localización de ficheros estructurados: al preservar JSON, CSV y marcadores de posición, el modelo puede traducir ficheros de recursos de internacionalización sin romper claves, variables de plantilla ni rutas de código.
-- Traducción de contenido legal o médico con terminología fija: las restricciones duras permiten garantizar que un término regulatorio se traduzca siempre igual, reduciendo el riesgo de inconsistencias en documentos con valor contractual.
-- Adaptación de registro para comunicación corporativa: con restricciones blandas de estilo se puede traducir correspondencia comercial forzando un registro formal, útil para atención al cliente internacional por escrito.
-- Traducción de artículos científicos con LaTeX: la preservación de LaTeX permite procesar borradores con fórmulas sin que se degrade el marcado matemático.
-- Despliegue en local para datos sensibles: al distribuirse en GGUF y con licencia Apache 2.0, se puede ejecutar en estaciones de trabajo sin enviar contenido confidencial a APIs externas, algo relevante en sectores regulados.
-- Procesamiento por lotes de corpus multilingües: con las cuantizaciones Q4_K_M o Q5_K_M se puede montar un pipeline de traducción masiva en una sola GPU de consumo, manteniendo la coherencia terminológica entre documentos.
-- Traducción asistida en herramientas de edición: integrable vía `llama serve` como endpoint compatible con la API de OpenAI, lo que facilita conectarlo a editores o CMS existentes.
+- Localización de software y documentación técnica: el modelo puede traducir cadenas y ficheros preservando placeholders, estructuras JSON/CSV y bloques de código gracias a las restricciones duras del formato instTrans, lo que evita romper la sintaxis en pipelines automatizados de CI/CD.
+- Traducción jurídica o técnica con glosario obligatorio: permite imponer terminología corporativa o normativa (por ejemplo, `碳纤维:carbon fiber`) de forma binaria, garantizando consistencia terminológica en contratos, manuales o patentes.
+- Doblaje y subtitulado con control de sílabas: combinando el modelo con los checkpoints Index-Homura, se puede respetar un presupuesto silábico por segmento para que la traducción encaje en la duración del audio original, manteniendo además glosarios de personajes o marcas.
+- Traducción de documentación científica con LaTeX: la preservación de expresiones LaTeX y la consistencia entre frases permiten traducir artículos y preprints sin corromper fórmulas ni referencias cruzadas.
+- Atención al cliente multilingüe: el modelo puede gestionar conversaciones multi-turno en 150 idiomas con adaptación de registro formal, adecuado para respuestas de soporte en correo o chat.
+- Traducción de correo comercial y comunicación corporativa: las restricciones suaves de tono y estilo permiten generar versiones formales adaptadas al registro de cada mercado.
+- Despliegue en hardware de consumo para traducción on-premise: las cuantizaciones Q4_K_M (5,63 GB) y Q5_K_M (6,47 GB) permiten ejecutar el modelo en GPUs de consumo o incluso CPU, útil para organizaciones que no pueden enviar texto sensible a la nube.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta validaciones internas de fidelidad de las cuantizaciones frente a F16 (divergencia KL por token, delta-p RMS con `llama-perplexity` y comprobaciones de generación greedy), sin cifras concretas ni comparaciones con otros modelos de traducción.
+No se han publicado resultados de benchmarks en la información disponible. La model card remite a la model card del modelo base para los resultados de evaluación, pero no incluye cifras concretas. La única validación reportada es cualitativa: cada variante v1.1 se cargó con llama.cpp y se comprobó con cuatro ejemplos cortos de traducción (chino-inglés y chino-japonés en ambas direcciones, incluida una instrucción de terminología); las 48 generaciones completaron con normalidad y las 12 variantes respetaron la terminología especificada.
 
 ## Requisitos de hardware
-
-Las cifras siguientes son estimaciones derivadas del tamaño de los ficheros publicados; no proceden de mediciones oficiales del autor.
-
-- Q2_K (3,83 GB): cabe en GPU de 6 GB, con pérdida de calidad significativa según el propio autor.
-- Q3_K_S / Q3_K_M / Q3_K_L (4,26–4,93 GB): aptas para GPU de 6–8 GB, con pérdida de calidad perceptible.
-- IQ4_XS (5,23 GB) y Q4_K_S (5,35 GB): opciones de 4 bits para GPU de 8 GB.
-- Q4_K_M (5,63 GB): cuantización recomendada por el autor; con caché KV y contexto moderado, el consumo total se sitúa aproximadamente en 7–9 GB de VRAM, por lo que encaja en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y superiores.
-- Q5_K_S / Q5_K_M (6,31–6,47 GB): requieren del orden de 8–10 GB de VRAM según contexto; viables en RTX 4070 Ti, RTX 4080 o RTX 3090.
-- Q6_K (7,36 GB) y Q8_0 (9,53 GB): recomendables en GPU de 12–16 GB o más, por ejemplo RTX 4090, RTX 4080 o A100.
-- f16 (17,92 GB): requiere alrededor de 20 GB de VRAM o más; adecuada para A100 40/80 GB, H100 o RTX 4090 con offload parcial.
-- Ejecución en CPU: al ser GGUF y estar pensado para llama.cpp, el modelo puede correr total o parcialmente en CPU con RAM suficiente (aproximadamente igual al tamaño del fichero más el contexto); el rendimiento dependerá del número de núcleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp (`llama serve`, `llama cli`), y cualquier runtime compatible con GGUF (Ollama, LM Studio, servidores basados en llama.cpp). No se menciona compatibilidad con vLLM o TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia según cuantización: Q2_K ~3,83 GB; Q3_K_M ~4,62 GB; Q4_K_M ~5,63 GB (recomendada); Q5_K_M ~6,47 GB; Q6_K ~7,36 GB; Q8_0 ~9,53 GB; f16 ~17,92 GB. Añadir margen para la ventana de contexto y el estado KV.
+- GPU recomendadas: para f16, GPU con 24 GB o más (RTX 4090, A100, H100); para Q4_K_M y Q5_K_M, GPUs de consumo con 8-12 GB (RTX 3060 12 GB, RTX 4070, RTX 4060 Ti 16 GB).
+- Cabe en GPU de consumo: sí, en las cuantizaciones Q2_K a Q6_K; Q8_0 requiere ~10 GB y f16 requiere ~18 GB, por lo que f16 no cabe en GPUs de 16 GB.
+- Opciones de despliegue: llama.cpp (librería oficial del repo), con `llama serve` y `llama cli`; compatible con endpoints (`endpoints_compatible`). Otras opciones como vLLM, TGI u Ollama no se mencionan en la información disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada. La familia Index-Translate incluye otros modelos (Index-Homura-2B e Index-Homura-9B para doblaje), pero no se detallan sus parámetros, contexto ni rendimiento comparativo.
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|---|
-| IndexTeam/Index-Nailong-9B-GGUF | ≈8,95B | no disponible | 150 (familia) | Apache 2.0 | GGUF (2–16 bits) | Público en Hugging Face, 96 descargas |
-| IndexTeam/Index-Nailong-9B | ≈8,95B (según el GGUF derivado) | no disponible | 150 (familia) | Apache 2.0 | safetensors / BF16 | Público en Hugging Face |
-| IndexTeam/Index-Homura-9B | 9B (según nombre) | no disponible | no disponible | no disponible | no disponible | Público en Hugging Face; orientado a doblaje con control de sílabas |
-| IndexTeam/Index-Translate-35B-A3B-preview-GGUF | 36B (etiqueta de Hugging Face) | no disponible | no disponible | no disponible | GGUF | Público en Hugging Face; variante MoE de mayor tamaño |
-
-No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Index-Nailong-9B-GGUF | ~9B | no disponible | Apache 2.0 | GGUF | Traducción 150 idiomas, instTrans |
+| Index-Homura-9B | no disponible | no disponible | no disponible | no disponible | Doblaje con control silábico |
+| Index-Homura-2B | no disponible | no disponible | no disponible | no disponible | Doblaje con control silábico |
 
 ## Limitaciones y advertencias
-
-- No hay datos publicados de benchmarks de traducción, por lo que no es posible verificar la calidad real frente a alternativas comerciales o abiertas.
-- Las cuantizaciones Q2_K, Q3_K_S, Q3_K_M y Q3_K_L presentan pérdida de calidad reconocida explícitamente por el autor; no son recomendables para producción con requisitos de fidelidad.
-- La longitud de contexto no está documentada, lo que impide planificar con precisión tareas de traducción de documentos largos o conversaciones multi-turno extensas.
-- La lista concreta de los 150 idiomas no se detalla en la metadata de Hugging Face ni en la información proporcionada; el rendimiento por idioma es desconocido.
-- No hay evaluación de sesgos publicada; como modelo de traducción, es esperable que reproduzca sesgos presentes en los corpus de entrenamiento, pero no hay datos que lo cuantifiquen.
-- Riesgo de alucinación en traducción: aunque instTrans impone restricciones duras de terminología y formato, no se documenta ningún mecanismo que garantice la ausencia de contenido añadido o de omisiones.
-- La model card recomienda decodificación greedy con temperatura 0 y `enable_thinking: false`; usar otros ajustes puede degradar la calidad y no está validado.
-- El formato de prompt documentado está en chino, con marcadores como 【源文】, 【硬性要求】 y 【注意】; conviene respetarlo para aprovechar las capacidades de traducción restringida.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar el cumplimiento de las condiciones de atribución y de cualquier dependencia del modelo base.
-- El repositorio ocupa 81,4 GB porque contiene todas las cuantizaciones; descargar el modelo completo no es necesario si solo se usa una variante.
-- El modelo tiene 96 descargas y 0 likes en el momento de la consulta, por lo que la validación por parte de la comunidad es todavía muy limitada.
+- La cuantización Q2_K presenta "pérdida de calidad significativa" según la propia model card; Q3_K_S, Q3_K_M y Q3_K_L tienen "pérdida de calidad notable". Para producción se recomienda Q4_K_M o superior.
+- No se han publicado resultados de benchmarks cuantitativos, por lo que el rendimiento real frente a alternativas no está verificado de forma independiente.
+- La validación reportada es cualitativa y limitada a cuatro ejemplos cortos de traducción chino-inglés y chino-japonés; no cubre los 150 idiomas anunciados.
+- Riesgo de alucinación y de deriva terminológica en textos largos no cuantificado en la información disponible.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Limitaciones de contexto: la longitud de contexto no está especificada, lo que impide planificar el troceado de documentos largos con precisión.
+- El uso comercial está permitido por la licencia Apache 2.0, pero conviene revisar las condiciones del modelo base y de los checkpoints derivados.
+- El formato de prompting instTrans requiere seguir la estructura canónica documentada; un prompting incorrecto puede degradar el cumplimiento de restricciones.
+- Se recomienda decodificación greedy (temperature=0) y desactivar el modo thinking para traducción; otros ajustes pueden alterar la fidelidad.
 
 ## Enlaces
-
-- Repositorio GGUF en Hugging Face: https://huggingface.co/IndexTeam/Index-Nailong-9B-GGUF
+- Repositorio GGUF: https://huggingface.co/IndexTeam/Index-Nailong-9B-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Nailong-9B
+- Versión v1.1 del modelo base: https://huggingface.co/IndexTeam/Index-Nailong-9B/tree/v1.1
 - Informe técnico (arXiv): https://arxiv.org/abs/2609.40181
 - Código: https://github.com/bilibili/Index-Translate
-- Index-Homura-2B: https://huggingface.co/IndexTeam/Index-Homura-2B
-- Index-Homura-9B: https://huggingface.co/IndexTeam/Index-Homura-9B
-- llama.cpp (motor de conversión e inferencia): https://github.com/ggml-org/llama.cpp
-- Página del equipo IndexTeam en Hugging Face: https://huggingface.co/IndexTeam
+- Checkpoint de doblaje 2B: https://huggingface.co/IndexTeam/Index-Homura-2B
+- Checkpoint de doblaje 9B: https://huggingface.co/IndexTeam/Index-Homura-9B
+- llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "Roboflow/rf-detr-large",
+  "slug": "roboflow-rf-detr-large",
+  "author": "Roboflow",
+  "url": "https://huggingface.co/Roboflow/rf-detr-large",
+  "created_at": "2026-05-11T09:01:48.000Z",
+  "updated_at": "2026-05-20T16:47:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rf_detr",
+    "object-detection",
+    "vision",
+    "dataset:coco",
+    "arxiv:2511.09554",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 2791,
+  "trending_score": 10,
+  "parameters": 33933218,
+  "parameters_human": "33.9M",
+  "storage_bytes": 135795376,
+  "storage_human": "136 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roboflow: AI for the physical world",
+      "url": "https://roboflow.com/",
+      "snippet": "Turn images, videos, and streams into intelligence. Roboflow is the vision AI platform for companies that run in the physical world."
+    },
+    {
+      "title": "Sign in to Roboflow",
+      "url": "https://app.roboflow.com/login",
+      "snippet": "Even if you're not a machine learning expert, you can use Roboflow train a custom, state-of-the-art computer vision model on your …"
+    },
+    {
+      "title": "Roboflow Universe: Free Computer Vision Datasets and Models",
+      "url": "https://universe.roboflow.com/",
+      "snippet": "On Roboflow Universe, you can search for pre-trained RF-DETR and YOLO models, browse the projects by industry and get started …"
+    },
+    {
+      "title": "Roboflow - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Roboflow",
+      "snippet": "Roboflow is a software platform that allows developers to build computer vision into products. [7] Developers can upload images and …"
+    },
+    {
+      "title": "Roboflow Annotate: Label Images Faster Than Ever",
+      "url": "https://roboflow.com/annotate",
+      "snippet": "Quickly label training data and export to any format. Roboflow Annotate is designed for ultra fast labeling, real-time teamwork, and …"
+    }
+  ]
+}

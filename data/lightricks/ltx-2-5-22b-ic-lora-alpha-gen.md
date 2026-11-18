@@ -2,100 +2,83 @@
 
 ## Resumen
 
-LTX-2.5-22b-IC-LoRA-Alpha-Gen es un adaptador LoRA de tipo IC-LoRA (In-Context LoRA) publicado por Lightricks sobre su modelo base LTX-2.5, orientado a la generacion de mattes alfa (canales de transparencia) en video. El adaptador resuelve una tarea concreta dentro del pipeline de postproduccion: separar el sujeto del fondo en secuencias de video y producir una mascara alfa temporalmente coherente, apta para composicion VFX, en lugar de depender de rotoscopia manual o de herramientas de matting por fotograma.
+LTX-2.5-22b-IC-LoRA-Alpha-Gen es un adaptador LoRA de tipo IC-LoRA (In-Context LoRA) desarrollado por Lightricks sobre el modelo base de generación de vídeo LTX-2.5 (22.000 millones de parámetros). Su función específica es la generación de mattes alfa (canales de transparencia) a partir de vídeo, lo que permite aislar sujetos y extraer el fondo en flujos de posproducción y efectos visuales. Se distribuye como un adaptador ligero de aproximadamente 1,3 GB, no como un modelo completo.
 
-El modelo se distribuye como adaptador de video-a-video (pipeline video-to-video) y se apoya en el modelo base Lightricks/LTX-2.5, de aproximadamente 22.000 millones de parametros segun la nomenclatura del repositorio. El tamano del repositorio del adaptador es de 1,3 GB, coherente con un LoRA de bajo rango: no contiene los pesos completos del modelo base, que el usuario debe obtener por separado. El adaptador esta etiquetado para la generacion de alpha mattes, eliminacion de fondo y flujos de trabajo VFX.
+El adaptador se integra en el pipeline `video-to-video` de la librería `ltx` y está pensado para tareas de matting y eliminación de fondo sobre secuencias de vídeo, un paso crítico en composición VFX, rotoscopia asistida y edición profesional. Al ser un IC-LoRA, aprovecha el contexto del modelo base para condicionar la generación del matte sobre el clip de entrada en lugar de entrenar un modelo dedicado desde cero.
 
-Su relevancia actual radica en que la coherencia temporal del alfa es historicamente el cuello de botella de la composicion con IA: los mattes generados fotograma a fotograma parpadean y producen bordes inestables. Un IC-LoRA entrenado especificamente sobre el modelo de video permite heredar la coherencia temporal del generador subyacente. El acceso al repositorio esta restringido (gated) y requiere aceptar la licencia comunitaria LTX-2.x; el idioma soportado declarado es unicamente ingles.
+Su relevancia actual radica en que traslada capacidades de segmentación temporal consistente a un adaptador pequeño y desplegable sobre una infraestructura ya existente de LTX-2.5, con acceso restringido (gated) y licencia comunitaria propia. La información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada; los apartados correspondientes lo indican explícitamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador IC-LoRA sobre Lightricks/LTX-2.5 (arquitectura del modelo base no detallada en la informacion disponible) |
-| Parametros totales | No disponible para el adaptador; el modelo base se denomina "22b" (aprox. 22.000 millones de parametros) |
-| Parametros activos | No aplica (no se indica que sea un modelo MoE) |
+| Arquitectura | Adaptador IC-LoRA sobre el modelo de vídeo LTX-2.5 (transformer de difusión, detalles internos no disponibles) |
+| Parametros totales | No disponible para el adaptador; el modelo base se denomina "22b" (22.000 millones) |
+| Parametros activos | No disponible (no se indica que el modelo base sea MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (en) |
-| Licencia | ltx-2.x-community-license (licencia comunitaria, no de codigo abierto aprobada por OSI) |
-| Formato de pesos | No disponible |
-| Tipo de tarea | Video-to-video: generacion de alpha matte / eliminacion de fondo |
-| Modelo base | Lightricks/LTX-2.5 |
-| Libreria | ltx |
-| Tamano del repositorio | 1,3 GB |
-| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | `ltx-2.x-community-license` (licencia comunitaria propia, no OSI) |
+| Formato de pesos | No disponible (repo de 1,3 GB; pesos compatibles con la librería `ltx`) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un IC-LoRA, es decir, un modulo de bajo rango insertado sobre el modelo base LTX-2.5 y condicionado por contexto. La tarea declarada es video-a-video con salida de matte alfa: el modelo toma una secuencia de video de entrada y produce un canal de transparencia por fotograma. No se ha publicado en la informacion disponible la arquitectura interna del modelo base, el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de ajuste por preferencias (RLHF/DPO).
+El modelo es un adaptador IC-LoRA (In-Context LoRA) acoplado al modelo base Lightricks/LTX-2.5, un generador de vídeo de 22.000 millones de parámetros. La técnica IC-LoRA condiciona la generación sobre pares de contexto dentro del propio modelo base, de modo que el adaptador aprende a producir un canal alfa coherente temporalmente a partir del clip de vídeo de entrada, en lugar de requerir un modelo de matting independiente. El adaptador se carga sobre el pipeline `video-to-video` de la librería `ltx`.
 
-Los detalles del entrenamiento del adaptador (resolucion de entrenamiento, duracion de los clips, composicion del dataset de matting, si se uso supervision sintetica o datos reales con alfa conocido) no estan disponibles en la informacion proporcionada. La innovacion tecnica declarada implicitamente es el propio enfoque IC-LoRA aplicado al matting: en lugar de un modelo dedicado a segmentacion, se reutiliza la coherencia temporal del generador de video LTX-2.5 y se anade una capacidad especifica mediante un adaptador de bajo rango. El repositorio pertenece a una familia de IC-LoRAs de Lightricks que incluye variantes como Layout-To-Render y SDR, lo que sugiere una estrategia de adaptadores especializados sobre una misma base.
+No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas del adaptador. Tampoco se detalla si emplea decodificación especulativa, atención lineal u otras optimizaciones en el modelo base. Estos datos deben considerarse "no disponibles" en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de alpha mattes para video: produce un canal de transparencia a partir de una secuencia de entrada, apto para composicion.
-- Eliminacion de fondo en video con coherencia temporal entre fotogramas (objetivo declarado por las etiquetas del repositorio).
-- Flujo de trabajo video-to-video: transforma un video de entrada en una salida de matting.
-- Integracion en pipelines VFX y de postproduccion como paso previo a la composicion.
-- Aplicacion sobre el modelo base LTX-2.5, del que hereda el resto de capacidades de generacion de video; no se detallan capacidades adicionales del adaptador.
-- Soporte de tool calling / function calling: no disponible (no es una capacidad propia de un modelo de difusion de video).
-- Soporte de agentes y razonamiento multi-paso: no disponible / no aplica.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
-- Capacidades especiales (thinking mode, vision, audio): no disponibles.
+- Generación de mattes alfa (canal de transparencia) a partir de vídeo, orientada a matting y eliminación de fondo.
+- Procesamiento video-to-video con coherencia temporal del matte sobre la secuencia de entrada.
+- Aislamiento de sujetos y extracción de fondo para composición en posproducción.
+- Integración con el ecosistema de la librería `ltx` y el modelo base LTX-2.5.
+- Soporte de idioma: inglés (etiqueta `en`).
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso, visión general, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Composicion VFX en postproduccion: el adaptador genera el matte alfa del sujeto para insertarlo sobre un nuevo fondo; es adecuado porque evita la rotoscopia manual fotograma a fotograma y mantiene la coherencia temporal entre fotogramas.
-- Sustitucion de fondo en publicidad y contenido de marca: se procesa el clip original, se obtiene el alfa y se compone sobre un plato o escenario virtual, reduciendo el coste frente a un rodaje con croma.
-- Rotoscopia asistida: el matte generado por el modelo se usa como primera pasada que el artista de VFX refina, acelerando el trabajo en planos complejos como pelo, movimiento o bordes semitransparentes.
-- Efectos de transparencia y desintegracion: el canal alfa permite animar la desaparicion o aparicion progresiva de sujetos en un plano sin mascaras dibujadas a mano.
-- Limpieza y aislamiento de sujeto para datasets: se extrae el sujeto con fondo transparente para reutilizarlo en materiales posteriores, catalogos o montajes.
-- Integracion en pipelines automatizados de edicion: al ser un adaptador sobre el modelo base LTX-2.5 y usar la libreria ltx, puede encadenarse en un flujo de procesamiento por lotes de clips con salida alfa estandar.
-- Previz y prototipado rapido: generacion de mattes de baja fidelidad para validar una composicion antes de invertir en una rotoscopia manual de alta calidad.
+- Rotoscopia asistida en VFX: el adaptador genera un matte alfa temporalmente coherente sobre el clip, reduciendo el trabajo manual de recorte fotograma a fotograma en planos complejos.
+- Composición y keying en posproducción: permite extraer el fondo de secuencias para integrar elementos CGI o sustituciones de fondo con bordes limpios.
+- Eliminación de fondo en vídeo para publicidad y contenido social: aplicable a piezas cortas donde se requiere separar al sujeto del entorno de forma automatizada.
+- Previsualización rápida en pipelines de edición: al ser un adaptador ligero (1,3 GB) sobre LTX-2.5, se puede insertar en flujos existentes sin desplegar un modelo de matting adicional.
+- Limpieza de metraje de archivo: separación de sujetos para restauración o recomposición de material antiguo.
+- Generación de máscaras para herramientas de edición y composición: el canal alfa resultante puede alimentar software de composición como entrada de máscara.
+- Prototipado de efectos visuales: evaluación rápida de ideas de composición antes de invertir en rotoscopia manual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El adaptador pesa 1,3 GB, pero la inferencia requiere ademas el modelo base Lightricks/LTX-2.5 (denominado "22b"), que domina el consumo de memoria.
-- VRAM estimada para el modelo base de ~22.000 millones de parametros: estimacion orientativa no confirmada por el fabricante, del orden de 45-50 GB en precision de 16 bits, alrededor de 22-25 GB en cuantizacion de 8 bits y en torno a 12-16 GB en cuantizacion de 4 bits. Estas cifras son estimaciones derivadas del tamano del modelo base, no datos oficiales.
-- GPU recomendadas: no disponible. Para un modelo de 22B en 16 bits serian necesarias GPUs de clase profesional (A100, H100, L40S) o configuraciones multi-GPU; en consumer, una RTX 4090 (24 GB) quedaria por debajo de los requisitos en 16 bits.
-- Compatibilidad con GPU de consumo: probable solo con cuantizacion agresiva (4 bits) y siempre que la libreria ltx lo permita, condicion no confirmada en la informacion disponible.
-- Opciones de despliegue: la libreria declarada es ltx. Compatibilidad con vLLM, llama.cpp, Ollama o TGI no disponible (no son herramientas orientadas a este tipo de modelo de video).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma específica; al ejecutarse sobre LTX-2.5 (22.000 millones de parámetros) requiere la VRAM del modelo base, no indicada en la información.
+- GPU recomendadas: no disponible.
+- ¿Cabe en GPU de consumo? No disponible; el adaptador pesa 1,3 GB, pero el modelo base de 22B condiciona el requisito real.
+- Opciones de despliegue: librería `ltx` (pipeline `video-to-video`); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-Alpha-Gen | IC-LoRA | Lightricks/LTX-2.5 | Alpha matte / eliminacion de fondo en video | ltx-2.x-community-license | Hugging Face, acceso restringido |
-| LTX-2.5-22b-IC-LoRA-Layout-To-Render | IC-LoRA | Lightricks/LTX-2.5 | Layout a render | ltx-2.x-community-license | Hugging Face |
-| LTX-2.5-22b-IC-LoRA-SDR | IC-LoRA | Lightricks/LTX-2.5 | Conversion SDR | ltx-2.x-community-license | Hugging Face |
-| IC-LoRA HDR (beta) | IC-LoRA | LTX-2.5 | Salida EXR / HDR | ltx-2.x-community-license | Hugging Face (beta) |
-
-No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
+No disponible. La información proporcionada no incluye modelos comparables de matting o generación de alfa sobre vídeo con datos verificables de parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles. Al estar entrenado predominantemente o exclusivamente sobre datos en ingles, el comportamiento ante prompts en otros idiomas no esta garantizado.
-- Riesgo de alucinacion: como modelo generativo de video, puede producir bordes de matte incorrectos, mezclar sujeto y fondo o inventar siluetas en oclusiones y movimientos rapidos; se recomienda revision humana antes de la composicion final.
-- Limitaciones de idioma: solo ingles segun las etiquetas del repositorio.
-- Limitaciones de contexto: la longitud de contexto y la duracion maxima de clip soportada no estan disponibles.
-- Licencia: ltx-2.x-community-license, una licencia comunitaria con posibles restricciones de uso comercial, umbrales de facturacion o atribucion. Es imprescindible revisar los terminos completos antes de un uso en produccion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que impide su descarga anonima o su uso en entornos automatizados sin gestion de credenciales.
-- Dependencia del modelo base: el adaptador no es autonomo; su rendimiento y sus requisitos de hardware dependen por completo de Lightricks/LTX-2.5.
-- Madurez y adopcion: con 2 descargas y 13 me gusta en el momento de la consulta, la validacion por parte de la comunidad es muy limitada.
-- Ausencia de benchmarks: no hay datos publicos de calidad del matte (error de alfa, estabilidad temporal, IoU) en la informacion disponible.
+- Acceso restringido (gated): requiere aceptar las condiciones en Hugging Face antes de descargar.
+- Licencia `ltx-2.x-community-license`: no es una licencia de código abierto OSI; deben revisarse las restricciones de uso comercial antes de producción.
+- Solo idioma inglés según la etiqueta del modelo; el rendimiento en otros idiomas no está documentado.
+- Dependencia obligatoria del modelo base Lightricks/LTX-2.5 y de la librería `ltx`; no es un modelo autónomo.
+- Riesgo de artefactos en bordes y de inconsistencia temporal en secuencias complejas: no documentado en la información disponible.
+- Sesgos conocidos: no disponible.
+- Riesgo de alucinación: no disponible para esta tarea de matting.
+- Falta de benchmarks públicos que permitan validar la calidad del matte frente a alternativas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen
-- Organizacion de Lightricks en Hugging Face: https://huggingface.co/Lightricks
+- Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
-- Sitio de Lightricks: https://www.lightricks.com/
+- Organización Lightricks en Hugging Face: https://huggingface.co/Lightricks
+- Web corporativa: https://www.lightricks.com/
+- Sobre Lightricks: https://www.lightricks.com/about
 - GitHub de Lightricks: https://github.com/Lightricks
-- Wikipedia de Lightricks: https://en.wikipedia.org/wiki/Lightricks
-- Hilo sobre el IC-LoRA HDR en Reddit: https://www.reddit.com/r/StableDiffusion/comments/1stlrer/ltx_just_dropped_an_hdr_iclora_beta_exr_output/
+- Wikipedia: https://en.m.wikipedia.org/wiki/Lightricks

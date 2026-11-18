@@ -5,7 +5,7 @@
   "author": "Karasumikura",
   "url": "https://huggingface.co/Karasumikura/Ying-K1.6-Lite",
   "created_at": "2026-11-09T07:02:31.000Z",
-  "updated_at": "2026-11-09T13:11:02.000Z",
+  "updated_at": "2026-11-17T19:29:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 347,
+  "downloads_30d": 349,
   "trending_score": 0,
   "parameters": 210210560,
   "parameters_human": "210.2M",

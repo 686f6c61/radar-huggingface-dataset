@@ -2,66 +2,85 @@
 
 ## Resumen
 
-Stable Audio Open 1.0 es un modelo de generación de audio desarrollado por Stability AI, cuyo repositorio ha sido reempaquetado por Comfy-Org para su integración directa en ComfyUI. Este reempaquetado simplifica el despliegue del modelo en flujos de trabajo de generación de audio, permitiendo a los usuarios colocarlo en la carpeta `models/checkpoints` de ComfyUI sin necesidad de conversiones adicionales. La relevancia de esta versión radica en que facilita el uso de un modelo de audio de última generación dentro de un ecosistema de nodos visuales, reduciendo la fricción técnica para desarrolladores y artistas que trabajan con pipelines de generación de contenido.
+Stable Audio Open 1.0 es un modelo de generación de audio mediante difusión desarrollado originalmente por Stability AI. Este repositorio concreto, publicado por Comfy-Org, no es un modelo nuevo ni un ajuste fino: se trata de un reempaquetado de los pesos originales en formato `safetensors` de archivo único, listo para colocarse en la carpeta `models/checkpoints` de ComfyUI y usarse con las plantillas de flujo de trabajo oficiales de Comfy-Org. Su función es la síntesis texto-a-audio: a partir de una descripción textual genera clips de audio (efectos de sonido, ambientes, texturas, bucles instrumentales), no voz cantada ni locución de alta fidelidad.
 
-El repositorio contiene un único archivo en formato `safetensors` de aproximadamente 4,9 GB, junto con la licencia correspondiente. No se proporcionan detalles sobre la arquitectura interna, el número de parámetros ni la longitud de contexto en la información disponible, ya que se trata de un reempaquetado y no de la documentación técnica original del modelo.
+El modelo resuelve el problema de disponer de un generador de audio abierto y ejecutable en local sin depender de servicios en la nube, integrándolo en el ecosistema de nodos de ComfyUI. Es relevante ahora porque ComfyUI se ha convertido en el estándar de facto para pipelines de difusión modulares, y esta versión reempaquetada elimina la fricción de convertir los pesos originales. La información disponible no detalla la arquitectura interna ni el tamaño en parámetros; el repositorio ocupa 4,9 GB y se distribuye bajo la licencia Stable Audio Community.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | difusión (modelo generativo de audio); detalles internos no disponibles |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | stable-audio-community (Stability AI Community License) |
-| Formato de pesos | safetensors |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (genera clips de audio; duración máxima no especificada en la información proporcionada) |
+| Tipos de cuantizacion | no disponible; se distribuye en un único archivo `safetensors` |
+| Idiomas soportados | no disponible (el condicionamiento es textual; idioma de los prompts no especificado) |
+| Licencia | Stable Audio Community License (uso comercial permitido por debajo de 1 M USD de ingresos anuales; por encima requiere licencia enterprise) |
+| Formato de pesos | `safetensors` de archivo único (`diffusion-single-file`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo, los datos de entrenamiento ni las técnicas de optimización empleadas. La model card del repositorio solo indica que se trata de un reempaquetado de Stable Audio Open 1.0, sin detalles adicionales sobre su diseño interno o proceso de entrenamiento. Para obtener especificaciones técnicas completas, se recomienda consultar la documentación oficial de Stability AI.
+No se dispone de información detallada sobre la arquitectura interna, el número de parámetros, la composición del dataset de entrenamiento ni las etapas de ajuste (RLHF, DPO u otras) en los datos proporcionados. El modelo se enmarca en la familia de modelos de difusión para audio de Stability AI, y este repositorio es un reempaquetado de `stabilityai/stable-audio-open-1.0`, por lo que las características técnicas coinciden con las del modelo original.
+
+La innovación relevante de este repositorio no es algorítmica sino de integración: empaqueta todos los pesos en un solo archivo `safetensors` compatible con el cargador de checkpoints de ComfyUI, y Comfy-Org publica plantillas de flujo de trabajo (por ejemplo, `audio_stable_audio_example.json`) para texto-a-audio. Cualquier detalle sobre el codificador de texto, el scheduler de difusión o el decodificador de audio debe consultarse en el repositorio original de Stability AI.
 
 ## Capacidades
 
-- Generación de audio: el modelo está diseñado para la síntesis de audio, presumiblemente música y efectos de sonido, aunque no se especifican las capacidades exactas en la documentación proporcionada.
-- Integración con ComfyUI: el reempaquetado está optimizado para ser cargado como checkpoint en ComfyUI, lo que permite su uso dentro de grafos de nodos.
-- No se han documentado otras capacidades como tool calling, razonamiento multi-paso o soporte multilingüe en la información disponible.
+- Generación de audio a partir de prompts de texto (texto-a-audio).
+- Producción de efectos de sonido, ambientes, texturas y bucles instrumentales.
+- Integración nativa en ComfyUI mediante nodos y plantillas de flujo de trabajo oficiales.
+- Carga desde un único archivo `safetensors` en `models/checkpoints`.
+- No se documenta en la información disponible soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio de entrada ni modo de razonamiento explícito.
+- No se documenta soporte multilingüe ni lista de idiomas.
+- No se documenta generación de voz cantada ni locución.
 
 ## Casos de uso
 
-- Generación de música y efectos de sonido en ComfyUI: el modelo puede integrarse en flujos de trabajo visuales para producir pistas de audio a partir de descripciones textuales o parámetros de control, aprovechando la flexibilidad de ComfyUI para combinar nodos de generación, post-procesado y exportación.
-- Prototipado rápido de contenido sonoro: al ser un checkpoint listo para usar, permite a desarrolladores y diseñadores generar muestras de audio sin necesidad de configurar entornos complejos de inferencia.
-- Automatización de pipelines creativos: su formato de archivo único facilita la incorporación en sistemas de generación por lotes dentro de ComfyUI, ideal para proyectos que requieren múltiples iteraciones de audio.
-- Investigación en síntesis de audio: aunque no se documentan detalles técnicos, el modelo puede servir como base para experimentos de generación de audio en entornos académicos, siempre que se cumpla con la licencia.
-- Creación de contenido para videojuegos: los efectos de sonido y ambientes generados pueden integrarse en motores de juego mediante pipelines de ComfyUI.
-- Educación y demostraciones: su facilidad de instalación lo hace adecuado para talleres y tutoriales sobre generación de audio con IA.
+- Diseño de sonido para videojuegos: generar efectos de sonido y ambientes (pasos, lluvia, maquinaria) a partir de descripciones textuales dentro de un flujo de ComfyUI, iterando variaciones sin salir del editor de nodos.
+- Producción musical y maquetas: crear bucles instrumentales y texturas de fondo que se puedan exportar y montar en un DAW para prototipos rápidos.
+- Postproducción de vídeo y podcast: generar camas sonoras y ambientes que cubran transiciones o silencios, con la ventaja de ejecución local y sin coste por llamada a API.
+- Prototipado de experiencias interactivas: usar el modelo como generador de audio bajo demanda en demos de instalaciones o aplicaciones creativas, aprovechando la integración con ComfyUI para encadenar nodos de audio.
+- Investigación en generación de audio: servir de línea base reproducible en formato `safetensors` para experimentos de difusión de audio, con la ventaja de que los pesos se cargan directamente en ComfyUI.
+- Automatización de assets para contenido digital: generar lotes de efectos de sonido para catálogos, vídeos cortos o material educativo, integrando el flujo en scripts que invoquen la API de ComfyUI.
+- Educación y talleres: demostrar pipelines de difusión de audio en un entorno visual, sin necesidad de escribir código de inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas como MMLU, HumanEval o GSM8K, dado que el modelo está orientado a audio y no a texto o código. Tampoco se ofrecen comparativas con otros modelos de generación de audio.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos de VRAM en la documentación proporcionada.
-- El tamaño del archivo (4,9 GB) sugiere que el modelo necesita una GPU con al menos 8-12 GB de VRAM para inferencia en precisión completa, aunque esto es una estimación no confirmada.
-- No se indican GPUs recomendadas ni opciones de despliegue como vLLM, llama.cpp u Ollama, ya que el modelo está diseñado para ComfyUI y probablemente se ejecuta mediante su propio backend de difusión.
-- Se desconoce la latencia y el throughput esperados.
+- VRAM estimada: no disponible en la información proporcionada. El repositorio ocupa 4,9 GB, lo que orienta sobre el espacio en disco necesario, pero no sobre la VRAM de inferencia.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible; no se especifica si cabe en tarjetas de 8, 12 o 16 GB.
+- Opciones de despliegue: ComfyUI (soporte nativo mediante el cargador de checkpoints y las plantillas de Comfy-Org). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente a este modelo de difusión de audio).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Dado que se trata de un reempaquetado sin datos técnicos, no es posible realizar una comparación objetiva con alternativas como AudioLDM, MusicGen o otros modelos de generación de audio.
+No se dispone en la información proporcionada de datos de parámetros, contexto ni rendimiento de modelos alternativos de generación de audio, por lo que no es posible establecer una comparativa cuantitativa fiable.
+
+| Modelo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Comfy-Org/stable-audio-open-1.0_repackaged | no disponible | no disponible | Stable Audio Community | Hugging Face (este repo) |
+| stabilityai/stable-audio-open-1.0 | no disponible | no disponible | Stable Audio Community | Hugging Face (repo original) |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: la Stable Audio Community License permite uso comercial solo hasta 1 millón de dólares de ingresos anuales. Superar ese umbral requiere una licencia empresarial de Stability AI.
-- Atribución obligatoria: cualquier uso del modelo debe incluir la mención "Powered by Stability AI".
-- Reempaquetado no oficial: este repositorio es mantenido por Comfy-Org, no por Stability AI, por lo que puede haber diferencias con la versión original o falta de soporte técnico.
-- Sin información sobre sesgos o alucinaciones: no se documentan posibles sesgos en los datos de entrenamiento ni riesgos de generar contenido no deseado.
-- Limitaciones de idioma: no se especifican los idiomas soportados, lo que puede afectar a la generación de audio basada en texto si el modelo no es multilingüe.
+- Sesgos conocidos: no documentados en la información disponible; al ser un modelo generativo entrenado con datos de audio, puede reproducir sesgos de estilo y de representación del dataset original.
+- Riesgo de alucinación: no aplica en el sentido de texto factual, pero el modelo puede generar audio que no corresponda fielmente al prompt; no se documentan métricas de fidelidad.
+- Limitaciones de contexto o idioma: no se especifica el idioma de los prompts ni la duración máxima de los clips generados.
+- Licencia: Stable Audio Community License. El uso comercial está permitido por debajo de 1 M USD de ingresos anuales; por encima se requiere licencia enterprise de Stability AI. Es necesario revisar el texto completo de la licencia antes de un despliegue en producción.
+- Este repositorio es un reempaquetado de terceros (Comfy-Org), no la distribución oficial de Stability AI; para cuestiones de soporte, trazabilidad o versión canónica debe consultarse el repositorio original.
+- No se documenta soporte de voz cantada ni locución; no debe asumirse esa capacidad.
+- No se dispone de información sobre requisitos de VRAM, latencia o calidad objetiva, lo que impide garantizar un rendimiento concreto en producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/stable-audio-open-1.0_repackaged
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/stable-audio-open-1.0_repackaged
+- Modelo original: https://huggingface.co/stabilityai/stable-audio-open-1.0
 - Licencia: https://huggingface.co/Comfy-Org/stable-audio-open-1.0_repackaged/blob/main/LICENSE.md
+- Plantilla de flujo de trabajo texto-a-audio: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/audio_stable_audio_example.json
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI

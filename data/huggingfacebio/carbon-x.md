@@ -2,102 +2,100 @@
 
 ## Resumen
 
-Carbon-X es un modelo de lenguaje de 14.800 millones de parámetros (14.822.046.720 exactos según los pesos en safetensors) desarrollado por Hugging Face Bio, la división de biología de Hugging Face. Se trata de un fine-tuning del modelo base Qwen3-14B entrenado de forma conjunta sobre secuencias de ADN y texto en lenguaje natural, con el objetivo de cubrir tareas de genómica que hasta ahora requerían modelos propietarios de frontera: predicción de efectos de variantes (benigno frente a patógeno), identificación de regiones reguladoras, clasificación taxonómica de secuencias y predicción del siguiente par de bases.
+Carbon-X es un modelo de lenguaje decoder-only de 14.800 millones de parametros desarrollado por Hugging Face Bio, dentro de la familia Carbon, especializado en comprension y generacion de ADN. Se construye como un ajuste fino de Qwen/Qwen3-14B y se entrena de forma conjunta sobre secuencias de ADN y texto en lenguaje natural, de modo que el usuario introduce ADN crudo dentro de una conversacion de chat convencional y el modelo responde en ingles: predice si una variante es benigna o patogena, identifica regiones reguladoras, clasifica secuencias por grupo de organismo, predice las siguientes bases y explica su razonamiento.
 
-La innovación principal es la integración nativa del ADN en el flujo de tokens del propio decoder: no hay codificador de ADN separado ni adaptadores, sino un tokenizador híbrido que mantiene el vocabulario BPE de Qwen3 para texto y codifica el ADN como 6-mers no solapados, de modo que cada token de ADN cubre 6 pares de bases. El modelo se sirve como un chat convencional: se pega una secuencia en el mensaje y responde en inglés, con razonamiento explicado y, si procede, con ADN generado en la propia respuesta.
+La innovacion principal es el tokenizador hibrido: mantiene el vocabulario BPE de Qwen3 para texto y anade 5.515 tokens de ADN (4.096 6-mers, 1.364 tokens de cola para secuencias cuya longitud no es multiplo de 6 y los marcadores `<dna>`, `</dna>` y `<oov>`). Un unico token de ADN cubre 6 pares de bases, y no existe un encoder de ADN separado: todo comparte un unico flujo de tokens en un unico decoder. El modelo promedia 66,7% en cinco benchmarks de ADN con el modo de razonamiento desactivado, 27 puntos por encima de Qwen3-14B, y sus pesos caben en una sola GPU de 80 GB en bfloat16, lo que permite mantener secuencias sensibles en infraestructura propia.
 
-Su relevancia práctica es económica y de privacidad. Según la model card, Carbon-X promedia 66,7 % en cinco benchmarks de ADN con el modo de razonamiento desactivado, frente a los 67,5 % de GPT-6.1 Sol, pero a aproximadamente 1/1.800 del coste de inferencia por problema. Además, los pesos caben en una única GPU de 80 GB en bfloat16, lo que permite procesar secuencias sensibles o no publicadas en infraestructura propia.
+La relevancia actual es economica y practica: el autor estima que analizar las 2,4 millones de variantes de significado incierto de ClinVar costaria unos 300 dolares con Carbon-X, frente a los 32.000 a 4 millones de dolares de los modelos frontera evaluados, con una puntuacion cercana a GPT-6.1 Sol (67,5%) a aproximadamente 1/1.800 del coste de inferencia por problema.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (causal LM estándar), 40 capas, hidden size 5120, GQA con 40 cabezas de consulta y 8 de clave/valor, SwiGLU, RMSNorm con QK-norm |
-| Parámetros totales | 14.822.046.720 (14,8B) |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer decoder-only (causal LM), 40 capas, hidden size 5120, GQA (40 cabezas de consulta, 8 de KV), SwiGLU, RMSNorm con QK-norm |
+| Parametros totales | 14.822.046.720 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 40.960 tokens |
-| Tipos de cuantización | No disponibles en la información proporcionada; los pesos se publican en safetensors bfloat16. No se documentan versiones GGUF, AWQ ni GPTQ |
-| Idiomas soportados | Inglés (en); las secuencias de ADN se procesan como tokens propios |
+| Tipos de cuantizacion | no disponible (la model card solo documenta bfloat16) |
+| Idiomas soportados | Ingles (texto) y ADN (secuencias) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repositorio de 29,7 GB); requiere `trust_remote_code=True` para el tokenizador y Transformers v5 o superior |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-Carbon-X parte de Qwen3-14B y conserva su arquitectura de transformer decoder-only: 40 capas, dimensión oculta de 5120, atención con 40 cabezas de consulta y 8 de clave/valor (GQA), activación SwiGLU y RMSNorm con normalización aplicada a Q y K (QK-norm). No hay codificador de ADN separado ni módulo de fusión multimodal: el ADN y el texto comparten un único flujo de tokens dentro del mismo decoder. El tokenizador híbrido mantiene el vocabulario BPE de Qwen3 para el lenguaje natural y añade 5.515 tokens de ADN: 4.096 6-mers, 1.364 tokens de cola para secuencias cuya longitud no es múltiplo de 6 y los marcadores `<dna>`, `</dna>` y `<oov>`. El ADN presente en el prompt se detecta y etiqueta de forma automática.
+Carbon-X es un transformer decoder-only estandar de 40 capas con hidden size 5120, atencion GQA con 40 cabezas de consulta y 8 de clave-valor, activacion SwiGLU y RMSNorm con QK-norm. No incorpora encoder de ADN ni atencion lineal: el modelo procesa ADN y texto en un unico flujo de tokens mediante un tokenizador hibrido que alterna el vocabulario BPE de Qwen3 para lenguaje natural y 6-mers no solapados para ADN, con tokens de cola para longitudes no multiples de 6. El ADN presente en el prompt se detecta y etiqueta automaticamente.
 
-El entrenamiento consta de una fase de mid-training de 302.000 millones de tokens sobre ADN, texto de biología, inglés y datos de instrucciones, seguida de ajuste supervisado (SFT) y aprendizaje por refuerzo con recompensas verificables (RLVR) sobre tareas de ADN. El modelo se post-entrena y se evalúa con el modo de pensamiento desactivado (`enable_thinking=False`), y el autor recomienda mantenerlo así: las respuestas son directas, sin cadenas de razonamiento extendidas, lo que reduce el número de tokens de salida por problema y explica en parte el coste por consulta declarado. Los valores de muestreo por defecto de `generation_config.json` son temperatura 0,6, top-p 0,95 y top-k 20.
+El entrenamiento consta de 302.000 millones de tokens de mid-training sobre ADN, texto de biologia, ingles y datos de instrucciones, seguido de supervised fine-tuning y aprendizaje por refuerzo con recompensas verificables (RLVR) sobre tareas de ADN. El modelo se post-entrena y evalua con el modo de razonamiento (`enable_thinking`) desactivado, y el autor recomienda mantenerlo asi. El modelo base es Qwen/Qwen3-14B.
 
 ## Capacidades
 
-- Predicción de efectos de variantes: clasifica mutaciones concretas como benignas o patógenas y justifica la decisión en inglés.
-- Comprensión de secuencias: identifica regiones que controlan la actividad génica y describe qué codifica una secuencia.
-- Clasificación por grupo de organismos a partir de la secuencia.
-- Predicción del siguiente par de bases (next-base prediction) dentro de una secuencia dada.
-- Generación de ADN: produce secuencias nuevas dentro de la respuesta, combinando texto y nucleótidos en la misma salida.
-- Razonamiento explicado en lenguaje natural sobre la evidencia biológica que sustenta cada predicción.
-- Conversación multi-turno dentro de una ventana de 40.960 tokens, suficiente para introducir secuencias largas junto con instrucciones.
-- Integración como herramienta de un agente: la model card incluye una sección específica sobre el uso de Carbon-X como tool para un agente.
-- Compatibilidad con la API de OpenAI a través de vLLM (`/v1/chat/completions`) y con text-generation-inference según los tags del repositorio.
-- Capacidad multilingüe limitada al inglés; no se declaran otros idiomas.
+- Generacion de texto y razonamiento en ingles con explicacion del razonamiento detras de cada prediccion.
+- Prediccion de efecto de variantes (variant-effect prediction): clasificacion de mutaciones como benignas o patogenas.
+- Identificacion de regiones que controlan la actividad genica (elementos reguladores).
+- Clasificacion de secuencias por grupo de organismo.
+- Prediccion de las siguientes bases de una secuencia de ADN.
+- Generacion de secuencias que pueden contener tanto ADN como lenguaje natural en la respuesta.
+- Conversacion multi-turno en formato chat con plantilla de chat propia.
+- Uso como herramienta de un agente (documentado en la model card en la seccion "Using Carbon-X as a tool for an agent").
+- Capacidad de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponibles.
+- Capacidades multilingues: solo ingles documentado.
 
 ## Casos de uso
 
-- Triaje de variantes de significado incierto en investigación genómica: el modelo evalúa variantes de ClinVar y las clasifica como benignas o patógenas con una justificación textual. La model card estima que analizar los 2,4 millones de variantes de significado incierto de ClinVar costaría unos 300 dólares con Carbon-X, frente a entre 32.000 y 4 millones con modelos de frontera.
-- Priorización de variantes en diagnóstico genético: uso como primer filtro en un pipeline clínico-genómico para ordenar candidatos antes de la revisión por un genetista, manteniendo las secuencias de pacientes en infraestructura propia gracias a que los pesos caben en una sola GPU de 80 GB.
-- Anotación de regiones reguladoras: dado un fragmento no codificante, el modelo describe si contiene elementos con actividad reguladora y qué tipo de evidencia lo respalda.
-- Clasificación taxonómica de secuencias metagenómicas: asignación de fragmentos a grandes grupos de organismos en entornos donde no se dispone de acceso a bases de datos curadas o se quiere una comprobación cruzada rápida.
-- Diseño de secuencias en biología sintética: generación de ADN candidato con explicación de las elecciones de diseño, útil como borrador previo a la validación húmeda.
-- Asistente conversacional para bioinformáticos: interfaz de chat que responde preguntas sobre una secuencia concreta pegada en el mensaje, sin necesidad de escribir código de análisis.
-- Herramienta dentro de un agente de laboratorio: Carbon-X expuesto vía vLLM con API compatible con OpenAI, invocado como función desde un orquestador que automatiza el análisis de lotes de variantes.
+- Triaje de variantes de significado incierto en entornos clinicos y de investigacion: el modelo recibe pares referencia/variante y devuelve una clasificacion benigna/patogena con razonamiento, lo que permite priorizar las 2,4 millones de variantes de ClinVar a un coste estimado de unos 300 dolares.
+- Analisis de variantes en genes de codificacion: el autor reporta que Carbon-X lidera entre los modelos evaluados en efectos de variantes codificantes, por lo que es adecuado para pipelines de anotacion funcional en laboratorios de genomica.
+- Anotacion de regiones reguladoras: identificacion de regiones que controlan la actividad genica dentro de secuencias largas, aprovechando la ventana de 40.960 tokens para procesar contextos genomicos extensos.
+- Clasificacion taxonomica de secuencias: asignacion de secuencias desconocidas a grupos de organismos en flujos de metagenomica o control de calidad de muestras.
+- Prediccion de siguientes bases: tareas de completado de secuencias y modelado de lenguaje genomico, donde el autor reporta liderazgo frente a los modelos evaluados.
+- Despliegue on-premise con datos sensibles: al caber en una sola GPU de 80 GB en bfloat16 y servirse con vLLM, permite analizar secuencias no publicadas o bajo confidencialidad sin enviarlas a APIs externas.
+- Integracion como herramienta de un agente bioinformatico: la model card documenta su uso como tool dentro de un agente, de modo que un orquestador puede delegar en Carbon-X las consultas de ADN y recibir respuestas en lenguaje natural.
 
 ## Benchmarks y rendimiento
 
-La model card reporta el promedio agregado de cinco benchmarks de ADN que cubren predicción de efectos de variantes, comprensión de secuencias y predicción del siguiente par de bases. No se desglosan los resultados por benchmark individual en la información disponible, aunque el autor afirma que Carbon-X lidera entre los modelos evaluados en efectos de variantes codificantes y en predicción del siguiente par de bases. Tampoco se publican resultados de benchmarks generalistas (MMLU, HumanEval, GSM8K) para este modelo.
+| Benchmark / metrica | Carbon-X | Qwen3-14B (base) | GPT-6.1 Sol | Otros modelos abiertos |
+|---|---|---|---|---|
+| Media en cinco benchmarks de ADN (thinking desactivado) | 66,7% | 39,7% (27 puntos menos) | 67,5% | Por debajo de Carbon-X segun el autor |
+| Efectos de variantes codificantes | Lidera entre los modelos evaluados | no disponible | no disponible | no disponible |
+| Prediccion de siguientes bases | Lidera entre los modelos evaluados | no disponible | no disponible | no disponible |
+| Coste de inferencia por problema (relativo) | 1x | no disponible | ~1.800x | no disponible |
 
-| Modelo | Promedio en 5 benchmarks de ADN | Coste relativo por problema | Notas |
-|---|---|---|---|
-| Carbon-X (14,8B) | 66,7 % (thinking desactivado) | 1x (referencia; medido en throughput por hora de H200 a 5 USD/h) | Peso abierto, Apache 2.0 |
-| GPT-6.1 Sol | 67,5 % | ~1.800x | Modelo propietario de frontera |
-| Qwen3-14B (base) | ~39,7 % (derivado: 27 puntos por debajo de Carbon-X) | No disponible | Modelo de partida del fine-tuning |
+Los benchmarks individuales (MMLU, HumanEval, GSM8K u otros) no se detallan en la informacion proporcionada. Los resultados de la tabla de evaluacion completa no estan disponibles en el texto extraido.
 
 ## Requisitos de hardware
 
-- Pesos en bfloat16: el repositorio ocupa 29,7 GB y, según la model card, cabe en una única GPU de 80 GB. En la práctica se necesitan aproximadamente 30 GB solo para pesos, más caché KV y activaciones.
-- GPU de 80 GB recomendadas: H100, H200 o A100 80 GB para bfloat16 con contexto largo. El autor mide el coste usando H200 a 5 USD/hora.
-- GPU de 40-48 GB (A100 40 GB, L40S, RTX A6000): viables solo con cuantización a 8 bits (estimación de unos 15-16 GB de pesos) o con contexto recortado.
-- GPU de consumo: no se documenta soporte en la información disponible. Por tamaño, una cuantización a 4 bits (estimación de 8-10 GB de pesos) cabría en tarjetas de 16-24 GB (RTX 4090, RTX 5090), pero no hay artefactos GGUF ni AWQ/GPTQ publicados y el tokenizador requiere código remoto, lo que complica el despliegue en llama.cpp u Ollama.
-- Despliegue soportado: vLLM (`vllm serve HuggingFaceBio/Carbon-X --trust-remote-code`), exponiendo una API compatible con OpenAI; también Transformers v5 o superior con `trust_remote_code=True`. La presencia del tag `text-generation-inference` sugiere compatibilidad con TGI, aunque no se detalla en la información disponible.
-- Latencia y throughput: no se publican valores absolutos de tokens por segundo. La model card solo expresa el rendimiento como coste relativo (1/1.800 frente a los modelos de frontera evaluados) y atribuye la eficiencia a que el modelo responde sin cadenas de razonamiento largas.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 29,7 GB de pesos, mas overhead de activaciones y cache KV; los pesos caben en una sola GPU de 80 GB segun el autor.
+- GPU recomendadas: H200 (el autor mide throughput por hora de H200 a 5 dolares/hora) y cualquier GPU de 80 GB como A100 80 GB o H100 80 GB.
+- GPU de consumo: no se documenta soporte en GPUs de consumo; con 14,8B parametros en bfloat16 no cabe en tarjetas de 24 GB sin cuantizacion, y no se publican pesos cuantizados.
+- Opciones de despliegue: vLLM (`vllm serve HuggingFaceBio/Carbon-X --trust-remote-code`), transformers v5 o superior con `trust_remote_code=True`; compatible con text-generation-inference y endpoints segun los tags.
+- Latencia y throughput: no se publican cifras absolutas; el autor reporta que el modelo responde directamente sin razonamiento extendido, por lo que cada problema consume pocos tokens de salida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Pesos abiertos | Rendimiento en ADN |
+| Modelo | Parametros | Contexto | Media en benchmarks de ADN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Carbon-X | 14,8B | 40.960 tokens | Apache 2.0 | Sí (safetensors) | 66,7 % de promedio en 5 benchmarks |
-| Qwen3-14B | 14,8B (misma base) | No disponible en la información proporcionada | Apache 2.0 | Sí | ~39,7 % (27 puntos por debajo) |
-| GPT-6.1 Sol | No disponible | No disponible | Propietaria | No | 67,5 % de promedio |
+| Carbon-X | 14,8B | 40.960 | 66,7% | Apache 2.0 | Hugging Face, pesos abiertos |
+| Qwen3-14B | 14B | no disponible | 39,7% | no disponible | Hugging Face |
+| GPT-6.1 Sol | no disponible | no disponible | 67,5% | propietaria | API |
+| Otros modelos abiertos evaluados por el autor | no disponible | no disponible | por debajo de Carbon-X | no disponible | no disponible |
 
-No se han identificado en la información proporcionada otros modelos abiertos especializados en ADN con los que establecer una comparación cuantitativa directa; la model card menciona que Carbon-X supera a "todos los demás modelos abiertos evaluados", pero no enumera cuáles ni sus cifras.
+La model card no identifica por nombre a los demas modelos abiertos evaluados ni a los modelos frontera comparados, aparte de GPT-6.1 Sol.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo declara soporte de inglés. Las respuestas y el razonamiento se generan en inglés aunque la pregunta se formule en castellano, y no hay garantía de calidad en otros idiomas.
-- Uso clínico: se trata de un modelo de investigación. Ninguna predicción de patogenicidad debe usarse como diagnóstico sin validación por personal clínico cualificado y confirmación experimental.
-- Alucinación: como modelo generativo, puede producir justificaciones biológicas plausibles pero incorrectas, o inventar elementos reguladores y referencias. La model card incluye una sección de limitaciones cuyo contenido completo no está disponible en el extracto consultado.
-- Tokenizador personalizado: requiere `trust_remote_code=True` y Transformers v5 o superior, lo que añade una dependencia de código remoto y complica la integración en herramientas que no lo soportan.
-- Modo de razonamiento: el modelo se post-entrenó y evaluó con `enable_thinking=False`. Activar el modo de pensamiento no está validado y puede degradar la calidad o el coste.
-- Sesgos: no se documenta en la información disponible un análisis de sesgos en la composición del dataset de 302.000 millones de tokens (ADN, texto de biología, inglés e instrucciones); la representación taxonómica y geográfica de las secuencias de entrenamiento es desconocida.
-- Cobertura de benchmarks: las cifras publicadas son un promedio de cinco benchmarks de ADN; no hay resultados desglosados por tarea ni evaluación en benchmarks generalistas, lo que limita la comparación con modelos de propósito general.
-- Licencia: Apache 2.0 permite uso comercial, pero la licencia del modelo base (Qwen3-14B, también Apache 2.0) y las condiciones de los datos de entrenamiento no se detallan en la información disponible.
-- Longitud de contexto: 40.960 tokens pueden resultar insuficientes para genomas completos o regiones extensas; los fragmentos largos deben trocearse, lo que rompe la coherencia de variantes que afectan a regiones distantes.
+- El modelo solo esta documentado para ingles y ADN; no se garantiza comportamiento en castellano ni en otros idiomas.
+- Se post-entreno y evaluo con `enable_thinking=False`; el autor recomienda mantener el razonamiento desactivado, por lo que el modo thinking no esta validado.
+- Riesgo de alucinacion inherente a un modelo generativo: las predicciones de patogenicidad no deben usarse como diagnostico clinico sin validacion experimental o por expertos.
+- No se publican datos sobre sesgos, composicion del dataset de mid-training ni procedencia de las secuencias, lo que limita la evaluacion de sesgos genomicos (por ejemplo, sobrerrepresentacion de poblaciones o organismos).
+- La cuantizacion no esta documentada; el despliegue en GPUs de consumo requeriria cuantizar por cuenta propia sin garantias de calidad.
+- Requiere Transformers v5 o superior y `trust_remote_code=True` por el tokenizador personalizado, lo que implica ejecutar codigo del repositorio.
+- Licencia Apache 2.0 permite uso comercial, pero no se ofrecen garantias ni soporte del autor.
+- El contexto de 40.960 tokens limita el analisis de secuencias genomicas muy largas en una sola pasada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/HuggingFaceBio/Carbon-X
-- Demo / blog de lanzamiento (Space): https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release
-- Organización Hugging Face Bio: https://huggingface.co/HuggingFaceBio
-- Código en GitHub: https://github.com/huggingface/carbon/tree/main
-- Cobertura en Business Insider: https://www.businessinsider.com/hugging-face-ai-model-carbon-x-dna-sequences-gene-therapies-2026-10
-- Análisis en explainx.ai: https://explainx.ai/blog/hugging-face-carbon-x-14b-open-dna-chat-model-variant-effects-1800x-cheaper-claimed-vs-verified-2026
-- Cobertura en Digg: https://digg.com/tech/kvc0iuud
-- Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
+- Organizacion Hugging Face Bio: https://huggingface.co/HuggingFaceBio
+- Blog / Space de lanzamiento: https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release
+- Codigo: https://github.com/huggingface/carbon/tree/main
+- Modelo base: https://huggingface.co/Qwen/Qwen3-14B

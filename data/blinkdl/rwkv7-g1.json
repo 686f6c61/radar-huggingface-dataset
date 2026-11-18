@@ -50,8 +50,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 255,
-  "downloads_30d": 9955,
+  "likes": 257,
+  "downloads_30d": 10207,
   "trending_score": 7,
   "parameters": null,
   "parameters_human": null,
@@ -69,31 +69,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "BlinkDL/rwkv7-g1 · Hugging Face",
-      "url": "https://huggingface.co/BlinkDL/rwkv7-g1",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - BlinkDL/RWKV-LM: RWKV (pronounced RwaKuv) is an RNN with great ...",
-      "url": "https://github.com/BlinkDL/RWKV-LM",
-      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding. - BlinkDL/RWKV-LM"
-    },
-    {
-      "title": "rwkv7-g1: Text-to-Text model — overview, use cases, alternatives",
-      "url": "https://www.aimodels.fyi/models/huggingFace/rwkv7-g1-blinkdl",
-      "snippet": "Overview rwkv7-g1 is a base reasoning model built on pure RNN architecture by BlinkDL, designed for post-training and fine-tuning rather than direct use. The model uses RWKV&#x27;s linear complexity approach instead of traditional transformer attention, enabling constant-speed inference regardless of sequence length and consistently low memory consumption. It processes text input and generates text ..."
-    },
-    {
-      "title": "BlinkDL/rwkv7-g1 at main - Hugging Face",
-      "url": "https://huggingface.co/BlinkDL/rwkv7-g1/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "RWKV-LM/Research/rwkv7-g0-7.2b.md at main - GitHub",
-      "url": "https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md",
-      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it's combining ..."
-    }
-  ]
+  "sources": []
 }

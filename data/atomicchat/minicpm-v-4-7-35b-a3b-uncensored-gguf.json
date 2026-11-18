@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 51,
-  "downloads_30d": 439515,
+  "downloads_30d": 456738,
   "trending_score": 12,
   "parameters": 34659889792,
   "parameters_human": "34.66B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Quiz on Ha Long Bay and Cultural Heritage: 11 Questions",
-      "url": "https://wayground.com/admin/quiz/67d92a50d77789353d7d01ff/quiz-on-ha-long-bay-and-cultural-heritage",
-      "snippet": "Quiz on Ha Long Bay and Cultural Heritage: 11 English questions for Grade 5. Practice with instant feedback or assign it to your …"
-    },
-    {
-      "title": "Quiz: Ha Long Bay - Quizzly.ai",
-      "url": "https://quizzly.ai/play/ha-long-bay",
-      "snippet": "Identify Ha Long Bay’s location in northeastern Vietnam and its UNESCO World Heritage status. Explain how thousands of limestone …"
-    },
-    {
-      "title": "22 Ha Long Bay Trivia Questions: Karsts, Dragons, and UNESCO Status",
-      "url": "https://uponpaper.com/22-ha-long-bay-trivia-questions-karsts-dragons-and-unesco-status/",
-      "snippet": "Jun 13, 2026 · This quiz looks at the science behind these rock formations, the legends of dragons that shape the bay’s history, and …"
-    },
-    {
-      "title": "VỊNH HẠ LONG - Quiz - Wordwall",
-      "url": "https://wordwall.net/resource/106318533/v%E1%BB%8Bnh-h%E1%BA%A1-long",
-      "snippet": "1. Where is Ha Long Bay located?, A. In the south of Vietnam, B. In Quang Ninh Province, northeast of Vietnam, C. In central …"
-    },
-    {
-      "title": "Ha Long Bay - Quiz - Wordwall",
-      "url": "https://wordwall.net/resource/93441946/ha-long-bay",
-      "snippet": "Quiz is an open-ended template. It does not generate scores for a leaderboard. You haven't set any assignments yet. To start …"
-    }
-  ]
+  "sources": []
 }

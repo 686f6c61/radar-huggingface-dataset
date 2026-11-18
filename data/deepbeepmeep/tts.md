@@ -2,69 +2,76 @@
 
 ## Resumen
 
-El repositorio DeepBeepMeep/TTS, alojado en Hugging Face, contiene los modelos de síntesis de voz (text-to-speech) utilizados por WanGP, una herramienta de generación de vídeo de código abierto desarrollada por DeepBeepMeep. WanGP permite ejecutar modelos generativos de vídeo como Wan, Hunyuan Video, Flux, Qwen, Z-Image y LTV con requisitos de VRAM muy reducidos (hasta 6 GB en algunos casos) y soporte para GPUs antiguas (series RTX 10XX, 20XX). El repositorio TTS se integra en ese ecosistema para añadir locución o audio a los vídeos generados, aunque no se publican detalles técnicos sobre los modelos de voz en sí.
+DeepBeepMeep/TTS es un repositorio de Hugging Face que agrupa los modelos de síntesis de voz (text-to-speech) utilizados por WanGP, la interfaz de generación de vídeo desarrollada por DeepBeepMeep. No se trata de un modelo único con una arquitectura propia documentada, sino de una colección de pesos empaquetados en formato diffusion-single-file pensados para ser consumidos directamente por la herramienta Wan2GP (WanGP). El repositorio está etiquetado como `diffusion-single-file`, lo que indica que los archivos siguen el formato de checkpoint único empleado por los pipelines de difusión de esa familia de herramientas.
 
-El repositorio ocupa 204.2 GB y está etiquetado como `diffusion-single-file`, lo que sugiere que los pesos se distribuyen en archivos únicos para cada modelo, posiblemente en formato safetensors. No se especifica la licencia, los idiomas soportados ni el pipeline de uso. A pesar de tener más de 33.000 descargas, la documentación es escasa y se limita a la descripción de WanGP, sin información sobre arquitectura, entrenamiento o rendimiento de los modelos TTS.
+La relevancia del repositorio radica en su función práctica: permite a los usuarios de WanGP incorporar capacidades de narración y doblaje sobre los vídeos generados sin tener que gestionar manualmente los distintos modelos TTS. El tamaño del repositorio, 347,5 GB, sugiere que contiene múltiples variantes de modelos y probablemente pesos en varias precisiones, aunque la model card no detalla su composición interna.
 
-## Especificaciones técnicas
+La información pública disponible es muy limitada: no se especifican parámetros, contexto, idiomas soportados ni licencia. Cualquier evaluación técnica debe hacerse por tanto con cautela y verificando directamente el contenido del repositorio y la documentación de Wan2GP.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | no disponible (repositorio de modelos TTS para WanGP; etiquetado `diffusion-single-file`) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (los checkpoints single-file suelen incluir varias precisiones, pero no se detalla) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (inferido por la etiqueta `diffusion-single-file`) |
+| Formato de pesos | safetensors (checkpoint unico, `diffusion-single-file`) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura de los modelos TTS incluidos en este repositorio. Tampoco se detallan los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. La única referencia es que están diseñados para funcionar con WanGP, que a su vez es un framework de generación de vídeo, pero los detalles técnicos de los modelos de voz no están documentados en la model card.
+No se dispone de información sobre la arquitectura interna de los modelos TTS alojados. El tag `diffusion-single-file` indica únicamente el formato de empaquetado: un único archivo de pesos compatible con los cargadores de la familia de herramientas de difusión usadas por WanGP, no una arquitectura concreta. No se documentan datos de entrenamiento, número de tokens, composición del dataset ni procesos de alineación como RLHF o DPO.
+
+El contexto técnico relevante es el ecosistema WanGP, que soporta modelos de vídeo como Wan y derivados, Hunyuan Video, Flux 1 y 2, Qwen, Z-Image y LTV, con requisitos de VRAM tan bajos como 6 GB para ciertos modelos y compatibilidad con GPUs antiguas (RTX 10XX, 20XX). Los modelos TTS de este repositorio se integran en ese pipeline para añadir audio a las generaciones de vídeo.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) integrada en el flujo de generación de vídeo de WanGP.
-- Posiblemente soporte para múltiples voces o estilos, aunque no se especifica.
-- No se documentan capacidades adicionales como clonación de voz, control de emociones o multilingüismo.
+- Síntesis de voz (text-to-speech) para narración de vídeos generados con WanGP.
+- Integración con el pipeline de generación de vídeo de Wan2GP, incluyendo herramientas de edición de máscara, mejora de prompt y generación temporal y espacial.
+- Soporte de LoRAs para personalizar los modelos del ecosistema WanGP (no se confirma que aplique específicamente a los TTS).
+- Descarga automática de los pesos adaptados a la arquitectura del usuario dentro de la interfaz de WanGP.
+- No se documentan capacidades de clonación de voz, multilingüismo, control de prosodia ni tool calling.
 
 ## Casos de uso
 
-- Doblaje automático de vídeos generados con WanGP: el modelo TTS permite añadir narración o diálogos a los vídeos producidos, lo que resulta útil para creadores de contenido que necesitan locución sin grabar audio manualmente.
-- Generación de vídeos educativos o explicativos: al combinar la generación de vídeo con voz sintetizada, se pueden producir materiales didácticos de forma automatizada.
-- Prototipado rápido de anuncios o presentaciones: los equipos de marketing pueden generar vídeos con voz en off para evaluar conceptos antes de producir el contenido final.
-- Accesibilidad: los vídeos generados pueden incluir audio descriptivo o lectura de texto, mejorando la accesibilidad para personas con discapacidad visual.
-- Automatización de contenido para redes sociales: la integración con WanGP permite crear vídeos cortos con voz para plataformas como TikTok o Instagram Reels.
-- Investigación en generación multimodal: el repositorio puede servir como referencia para estudiar la integración de TTS en pipelines de generación de vídeo de código abierto.
+- Doblaje y narración de vídeos generados: el modelo se usa dentro de WanGP para añadir una pista de voz a los clips producidos por los modelos de vídeo, evitando un paso externo de postproducción.
+- Prototipado rápido de contenido audiovisual: creadores que generan vídeos cortos con la interfaz web de WanGP pueden obtener audio narrado en el mismo flujo de trabajo.
+- Generación por lotes con cola: el sistema de colas de WanGP permite encolar varias generaciones de vídeo con voz y recuperarlas más tarde, útil para producción de contenido en serie.
+- Pruebas de concepto en hardware limitado: al estar integrado en una herramienta que funciona con 6 GB de VRAM en ciertos modelos, permite experimentar con TTS en GPUs de consumo.
+- Educación y demostraciones: generación de material audiovisual narrado para presentaciones o clases sin depender de servicios de TTS en la nube.
+- Investigación sobre pipelines multimodales: punto de partida para estudiar la integración de TTS en flujos de difusión de vídeo y evaluar su calidad frente a soluciones dedicadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos concretos de VRAM para los modelos TTS. WanGP menciona que algunos modelos de vídeo pueden funcionar con 6 GB de VRAM, pero esto no se traslada directamente a los modelos de voz.
-- El tamaño del repositorio (204.2 GB) sugiere que los modelos son grandes, posiblemente requieran GPUs con al menos 16-24 GB de VRAM para cargarlos en memoria, aunque sin datos oficiales no se puede confirmar.
-- No se indican opciones de despliegue específicas (vLLM, llama.cpp, etc.) para estos modelos TTS.
-- Dado que la etiqueta es `diffusion-single-file`, es probable que se carguen mediante librerías de difusión, pero no hay documentación al respecto.
+- VRAM estimada para inferencia: no disponible para los modelos TTS; el ecosistema WanGP declara funcionamiento con tan solo 6 GB de VRAM para ciertos modelos de vídeo.
+- GPUs recomendadas: no disponible de forma específica; WanGP soporta GPUs antiguas (RTX 10XX, 20XX en adelante) y es más rápido en GPUs recientes.
+- Compatibilidad con GPU de consumo: sí, según las afirmaciones de la model card sobre requisitos bajos de VRAM.
+- Opciones de despliegue: interfaz web de Wan2GP (https://github.com/deepbeepmeep/Wan2GP); no se documentan otros servidores de inferencia como vLLM, TGI o llama.cpp.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se proporcionan datos de modelos comparables en la misma categoría.
+No disponible. La información proporcionada no identifica los modelos TTS concretos incluidos ni ofrece datos que permitan compararlos con alternativas como XTTS, Bark, Piper o Coqui TTS.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: el uso comercial o la redistribución pueden estar restringidos, pero no se indica claramente.
-- Documentación insuficiente: no hay información sobre arquitectura, entrenamiento, idiomas soportados o calidad de la síntesis.
-- Tamaño del repositorio: 204.2 GB es un volumen considerable que requiere almacenamiento y ancho de banda para su descarga.
-- Dependencia de WanGP: los modelos están pensados para funcionar con esa herramienta, por lo que su uso fuera de ese ecosistema puede ser complicado.
-- Riesgo de alucinación o errores de pronunciación: sin datos de entrenamiento, no se puede evaluar la calidad de la voz generada.
-- Sin garantías de soporte: el proyecto parece mantenido por un solo desarrollador, lo que puede implicar actualizaciones irregulares.
+- La model card no documenta licencia, lo que impide confirmar si el uso comercial está permitido; debe verificarse antes de cualquier despliegue en producción.
+- No se especifican los idiomas soportados ni la calidad por idioma.
+- No hay información sobre sesgos, riesgo de alucinación en el audio generado ni robustez ante textos largos o dominios especializados.
+- El repositorio es una colección de pesos vinculada a una herramienta concreta (WanGP); su uso fuera de ese ecosistema no está documentado y puede requerir adaptaciones.
+- El tamaño de 347,5 GB implica un coste de almacenamiento y descarga considerable; conviene descargar solo las variantes necesarias mediante la descarga automática de WanGP.
+- Solo 1 like frente a más de 206.000 descargas sugiere un uso instrumental (descargas automáticas de la herramienta) más que una adopción comunitaria documentada; la validación técnica independiente es escasa.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/DeepBeepMeep/TTS
-- GitHub de WanGP: https://github.com/deepbeepmeep/Wan2GP
-- Discord de la comunidad: https://discord.gg/g7efUW9jGV
+- Repositorio en Hugging Face: https://huggingface.co/DeepBeepMeep/TTS
+- Wan2GP (GitHub): https://github.com/deepbeepmeep/Wan2GP
+- Servidor de Discord de WanGP: https://discord.gg/g7efUW9jGV
 - Twitter/X de DeepBeepMeep: https://x.com/deepbeepmeep

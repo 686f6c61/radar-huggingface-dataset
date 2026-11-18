@@ -2,85 +2,104 @@
 
 ## Resumen
 
-El modelo `RedHatAI/Qwen3.8-27B-NVFP4` es una cuantización de 4 bits en formato NVFP4 (NVIDIA Floating Point 4) del modelo Qwen3.8-27B, desarrollado por Red Hat AI en colaboración con Unsloth. Qwen3.8-27B es la última generación de la familia Qwen de código abierto, un modelo denso de 27 mil millones de parámetros con arquitectura híbrida (atención lineal Gated DeltaNet + atención con RoPE) y un encoder de visión nativo para comprender imágenes y vídeos. Esta cuantización reduce el tamaño del modelo a aproximadamente 19,87 mil millones de parámetros en safetensors (23,4 GB en disco), manteniendo la mayor parte de las capacidades del original, y está optimizada para inferencia en vLLM con GPUs NVIDIA que soporten FP4.
+Qwen3.8-27B-NVFP4 es una versión cuantizada del modelo multimodal Qwen/Qwen3.8-27B, publicada por RedHatAI (equipo vinculado a Neural Magic y a la iniciativa de compresión de modelos de Red Hat). El modelo original, desarrollado por Qwen (Alibaba), es un transformer multimodal de tipo `Qwen3_5ForConditionalGeneration` que acepta texto e imagen como entrada y genera texto. Esta variante aplica una cuantización de precisión mixta FP4/FP8 sobre los pesos y activaciones, reduciendo el checkpoint de aproximadamente 54 GB en BF16 a unos 24,7 GB en disco, lo que supone una reducción de en torno al 70 % en requisitos de almacenamiento y memoria de GPU.
 
-La relevancia de este modelo radica en que ofrece un rendimiento cercano al de modelos mucho más grandes en tareas de razonamiento, código y agentes autónomos, pero con un footprint de memoria reducido que permite desplegarlo en hardware más asequible. Además, su contexto nativo de 262 144 tokens (extensible a 1 millón) lo hace adecuado para tareas de largo horizonte, como análisis de documentos extensos o comprensión de vídeos de larga duración. La cuantización NVFP4 es una técnica reciente que aprovecha el hardware Blackwell de NVIDIA, y esta versión concreta solo es compatible con vLLM, no con SGLang.
+La relevancia de esta ficha radica en que permite desplegar un modelo de gran tamaño con capacidades de razonamiento, matemáticas, código y visión en hardware más modesto, manteniendo una recuperación de precisión muy alta respecto al original en los benchmarks publicados (por encima del 98 % en la mayoría de las tareas de razonamiento evaluadas). El modelo está pensado para servirse con vLLM y aprovecha el formato `compressed-tensors` de LLM Compressor, además de ofrecer soporte para decodificación especulativa mediante un modelo draft dedicado.
+
+El checkpoint real en safetensors declara 20.294.595.344 parámetros, aunque el nombre comercial del modelo haga referencia a 27B; esta discrepancia debe tenerse en cuenta al planificar el despliegue. La licencia es Apache 2.0 y la fecha de publicación indicada es el 21 de septiembre de 2026.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida: Gated DeltaNet (atención lineal) + Gated Attention (RoPE) + FFN, con vision encoder |
-| Parametros totales | 27B (modelo base); 19 869 895 952 en safetensors (cuantización NVFP4) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262 144 tokens nativo, extensible a 1 000 000 |
-| Tipos de cuantizacion | NVFP4 (4 bits) para la mayoría de capas; `lm_head` cuantizado a FP8 |
-| Idiomas soportados | No disponible (el modelo base Qwen suele ser multilingüe, pero no se especifica) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (compressed-tensors) |
+| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal, entrada texto/imagen, salida texto) |
+| Parámetros totales | 20.294.595.344 (según safetensors); nombre comercial 27B |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | FP4 y FP8 (pesos y activaciones); KV cache en FP8; cabeza LM sin cuantizar |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors con `compressed-tensors` (vLLM, llm-compressor) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-27B presenta una arquitectura híbrida innovadora que combina dos mecanismos de atención. Por un lado, utiliza **Gated DeltaNet**, una atención lineal eficiente que reduce la complejidad computacional en secuencias largas, con 48 cabezas lineales para V y 16 para QK (dimensión de cabeza 128). Por otro lado, incorpora **Gated Attention** con 24 cabezas para Q y 4 para KV (dimensión de cabeza 256) y RoPE de 64 dimensiones, lo que permite capturar dependencias posicionales de forma precisa. El modelo está organizado en 64 capas con un layout de 16 bloques, cada uno compuesto por 3 sub-bloques de Gated DeltaNet seguidos de FFN, y un sub-bloque de Gated Attention seguido de FFN. El FFN tiene una dimensión intermedia de 17 408.
+El modelo base es un transformer multimodal de la familia Qwen3.5 que procesa entradas de texto e imagen y genera texto. La versión NVFP4 conserva la arquitectura del original y solo cuantiza los operadores lineales dentro de los bloques del transformer: las proyecciones MLP se cuantizan a FP4, mientras que las proyecciones de atención (incluidas las de atención lineal) y las capas MLP finales (bloques 56 a 63) se cuantizan a FP8. La KV cache también se cuantiza a FP8 y la cabeza del modelo de lenguaje (`lm_head`) se mantiene en precisión completa para preservar la calidad de salida. El módulo visual queda excluido de la cuantización.
 
-El entrenamiento se realizó en dos etapas: pre-entrenamiento y post-entrenamiento, e incluye **Multi-Token Prediction (MTP)** con múltiples pasos, lo que mejora la velocidad de inferencia y la coherencia del texto generado. No se han publicado detalles sobre el volumen de tokens de entrenamiento ni sobre técnicas de alineación como RLHF o DPO en la información disponible. La cuantización NVFP4 fue realizada por Unsloth con su tecnología Dynamic V3.0 (preview), que optimiza la asignación de bits por capa para minimizar la pérdida de precisión. El `lm_head` se cuantiza a FP8, lo que requiere soporte específico en el framework de inferencia.
+La receta de cuantización combina AWQ y GPTQ mediante LLM Compressor, con calibración sobre un subconjunto de 512 muestras del dataset `perfectblend`, longitud máxima de secuencia de 4096 y calibración de todos los expertos MoE (`moe_calibrate_all_experts=True`), lo que sugiere que el modelo base emplea una arquitectura con mezcla de expertos, aunque el número de parámetros activos no se detalla. Las escalas de cuantización se recalibraron respecto a versiones anteriores (versión 2.0 del checkpoint). No se especifican en la información disponible el número de tokens de entrenamiento del modelo base ni si se aplicaron etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto avanzada con razonamiento complejo, especialmente en tareas de programación, trabajo profesional e investigación.
-- Comprensión de imágenes y vídeos de forma nativa (modelo de visión-lenguaje), incluyendo diagramas STEM, documentos escaneados y vídeos de hasta una hora de duración.
-- Modo de pensamiento flexible: el modo "thinking" está activado por defecto, pero puede desactivarse por petición; la profundidad del razonamiento se ajusta con el parámetro `reasoning_effort` y se puede conservar el contexto de razonamiento histórico con `preserve_thinking`.
-- Soporte de tool calling / function calling mejorado, con parsing de objetos anidados para una mayor tasa de éxito en llamadas a herramientas.
-- Capacidades agénticas: planificación autónoma y manejo de feedback del entorno para tareas de múltiples pasos, compatible con herramientas como Codex.
-- Multilingüe (no especificado oficialmente, pero la familia Qwen tradicionalmente soporta decenas de idiomas).
-- MTP (Multi-Token Prediction) para generación más rápida y coherente.
+- Generación de texto y razonamiento multi-paso, con soporte de modo de razonamiento (`--reasoning-parser qwen3` en vLLM).
+- Resolución de problemas matemáticos y tareas de razonamiento científico (evaluado en GSM8K Platinum, MATH-500, AIME 2025 y GPQA Diamond).
+- Generación y modificación de código, con evaluación en SWE Bench mediante Inspect AI.
+- Seguimiento de instrucciones (IFEval).
+- Entrada multimodal de imagen y texto (`image-text-to-text`), aunque el módulo visual no está cuantizado.
+- Soporte de tool calling / function calling, con parser `qwen3_xml` y `--enable-auto-tool-choice` en vLLM.
+- Compatibilidad con decodificación especulativa mediante el modelo draft `RedHatAI/Qwen3.8-27B-speculator.dspark` (método `dspark`, hasta 7 tokens especulativos) o mediante MTP (`num_speculative_tokens=3`).
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- **Agentes de código autónomos**: el modelo puede integrarse en entornos como Codex o IDEs para generar, revisar y corregir código de forma autónoma, gracias a su soporte de tool calling y su capacidad de razonamiento multi-paso. Su contexto de 262K tokens permite mantener el estado completo del repositorio.
-- **Análisis de documentos técnicos con imágenes**: al ser un modelo de visión-lenguaje, puede procesar informes científicos, manuales o patentes que contengan figuras, tablas y diagramas, extrayendo información y respondiendo preguntas complejas sobre ellos.
-- **Comprensión de vídeos largos**: su capacidad de entender vídeos de hasta una hora permite crear resúmenes automáticos, detectar eventos clave o realizar búsquedas semánticas en grabaciones de vigilancia, conferencias o material educativo.
-- **Asistencia en investigación científica**: el razonamiento profundo y el contexto extenso permiten al modelo analizar literatura, formular hipótesis y ayudar en la redacción de artículos, manteniendo coherencia a lo largo de documentos muy largos.
-- **Automatización de atención al cliente**: con 262K tokens de contexto, puede gestionar conversaciones multi-turno con historial completo, integrarse con APIs de CRM y resolver incidencias complejas mediante tool calling, reduciendo la intervención humana.
-- **Procesamiento de contratos y documentos legales**: su capacidad de manejar textos largos y razonar sobre cláusulas, combinada con la comprensión de imágenes (escaneos), permite extraer obligaciones, detectar riesgos y generar resúmenes ejecutivos.
+- Razonamiento matemático asistido: el modelo obtiene un 96,72 % en GSM8K Platinum y un 84,27 % en MATH-500, por lo que es adecuado para tutores automáticos o verificación de cálculos en entornos educativos y financieros.
+- Generación y revisión de código en pipelines de CI/CD: su evaluación en SWE Bench y el soporte de tool calling permiten integrarlo como agente que propone parches o resuelve issues acotadas.
+- Agentes con uso de herramientas: la configuración de vLLM con `--enable-auto-tool-choice` y el parser `qwen3_xml` permiten construir asistentes que invocan APIs externas en flujos multi-paso.
+- Análisis de documentos con imagen: al aceptar entradas image-text-to-text, puede extraer información de capturas, diagramas o formularios combinándola con razonamiento textual.
+- Asistencia técnica especializada: su rendimiento en GPQA Diamond (89,22 %) lo hace útil para responder consultas de dominio científico-técnico con razonamiento explícito.
+- Despliegue en infraestructura con memoria limitada: el checkpoint de 24,7 GB frente a los 54 GB en BF16 permite servirlo en GPUs con menos VRAM, manteniendo la precisión del original.
+- Servicio de inferencia de baja latencia: con decodificación especulativa DSpark o MTP en vLLM, se reduce el coste por token en cargas conversacionales de alto volumen.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del modelo base Qwen3.8-27B no incluye tablas de rendimiento comparativo, y la cuantización NVFP4 tampoco proporciona métricas de evaluación. Se recomienda consultar la documentación oficial de Qwen para obtener datos de MMLU, HumanEval, GSM8K u otros benchmarks.
+Resultados publicados en la model card, ejecutados con vLLM sobre 1 GPU B200, comparando el modelo cuantizado con el BF16 original:
+
+| Categoría | Benchmark | Qwen/Qwen3.8-27B (BF16) | RedHatAI/Qwen3.8-27B-NVFP4 | Recuperación |
+|---|---|---|---|---|
+| Razonamiento | GSM8K Platinum | 96,25 % | 96,72 % | 100,49 % |
+| Razonamiento | MATH-500 | 83,67 % | 84,27 % | 100,72 % |
+| Razonamiento | AIME 2025 | 96,67 % | 95,00 % | 98,27 % |
+| Razonamiento | GPQA Diamond | 89,56 % | 89,22 % | 99,62 % |
+| Instrucciones | IFEval | no disponible en el extracto | no disponible en el extracto | no disponible |
+| Código | SWE Bench | no disponible en el extracto | no disponible en el extracto | no disponible |
+
+No se han publicado en la información disponible resultados detallados de IFEval ni de SWE Bench, aunque la model card indica que se evaluaron.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: con 19,87 mil millones de parámetros en NVFP4 (4 bits), el peso del modelo ocupa aproximadamente 10 GB (19,87 × 0,5 bytes). Sumando el `lm_head` en FP8 y los estados de la atención, se estima un consumo de entre 12 y 16 GB de VRAM para inferencia con contexto estándar. Para contextos de 262K tokens, la memoria de caché KV puede aumentar significativamente, requiriendo más VRAM.
-- **GPUs recomendadas**: GPUs NVIDIA con soporte FP4 (arquitectura Blackwell, como B200, RTX 5090, etc.) o con soporte FP8 para el `lm_head`. En GPUs sin soporte FP4 nativo, vLLM podría emularlo con pérdida de rendimiento, pero no está garantizado.
-- **Compatibilidad con GPUs de consumo**: una RTX 4090 (24 GB) podría ejecutar el modelo con cuantización NVFP4 en contextos cortos, pero no es oficialmente compatible con FP4. Se recomienda una GPU Blackwell para un rendimiento óptimo.
-- **Opciones de despliegue**: exclusivamente vLLM (la model card advierte que no funciona en SGLang). No se menciona soporte para llama.cpp, Ollama o TGI en esta cuantización específica.
-- **Latencia y throughput**: no hay datos publicados. El modelo base incorpora MTP, que puede acelerar la generación, pero la cuantización NVFP4 puede introducir overhead adicional.
+- VRAM estimada para inferencia: el checkpoint ocupa unos 24,7 GB en disco; en inferencia con vLLM se requiere espacio adicional para KV cache (cuantizada a FP8) y activaciones, por lo que se recomienda al menos 32-40 GB de VRAM para contextos moderados.
+- GPU recomendadas: NVIDIA B200 (usada en la evaluación oficial), H100 y GPUs con soporte de FP4/FP8 nativo. El formato NVFP4 requiere hardware compatible con FP4 para aprovechar la aceleración.
+- GPU de consumo: no disponible de forma explícita; el tamaño del checkpoint hace inviable su ejecución en GPUs de consumo con menos de 24 GB, y las RTX 4090 (24 GB) quedarían al límite sin margen para KV cache.
+- Opciones de despliegue: vLLM es el runtime de referencia (`vllm serve`), con soporte de `--reasoning-parser qwen3`, `--tool-call-parser qwen3_xml` y decodificación especulativa MTP o DSpark. No se indica soporte de llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no se proporcionan cifras concretas; la model card menciona una sección de evaluación de rendimiento y el uso de decodificación especulativa para mejorar el throughput, pero sin números en el extracto disponible.
 
 ## Comparativa con modelos similares
 
-La siguiente tabla compara Qwen3.8-27B (base) con otros modelos densos de tamaño similar. Los datos de rendimiento no están disponibles para Qwen3.8, por lo que la comparación se basa en características técnicas.
-
-| Modelo | Parámetros | Contexto | Arquitectura | Licencia | Visión |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27B | 262K (ext. 1M) | Híbrida DeltaNet + Attention | Apache-2.0 | Sí (imagen y vídeo) |
-| Qwen3.5-27B | 27B | 262K (ext. 1M) | Híbrida (similar) | Apache-2.0 | No especificado |
-| Qwen3-32B | 32B | 262K (ext. 1M) | Transformer denso | Apache-2.0 | No |
-| DeepSeek-R1-Distill-Qwen-32B | 32B | 128K | Transformer denso | MIT | No |
+| RedHatAI/Qwen3.8-27B-NVFP4 | 20,29 B (safetensors) | no disponible | FP4/FP8 mixta | Apache 2.0 | Hugging Face, vLLM |
+| Qwen/Qwen3.8-27B (BF16) | 27 B (nominal) | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| Otros modelos de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La cuantización NVFP4 de Red Hat AI ofrece una ventaja en tamaño (23,4 GB en disco) frente a las versiones FP16/BF16 de los modelos comparables (que superan los 60 GB), manteniendo una licencia permisiva Apache-2.0.
+No se dispone de información sobre alternativas comparables en la documentación proporcionada; la comparación principal es con el modelo base BF16, del que esta versión es una cuantización con recuperación de precisión superior al 98 % en la mayoría de benchmarks.
 
 ## Limitaciones y advertencias
 
-- **Compatibilidad restringida**: la cuantización NVFP4 solo funciona en vLLM. No es compatible con SGLang, y probablemente tampoco con otros frameworks como llama.cpp o TensorRT-LLM, lo que limita las opciones de despliegue.
-- **Requisito de hardware específico**: el formato NVFP4 está diseñado para GPUs NVIDIA Blackwell. En hardware más antiguo, la inferencia puede fallar o ser extremadamente lenta.
-- **Pérdida de precisión por cuantización**: al ser una cuantización de 4 bits, puede haber una degradación en tareas de razonamiento complejo o generación de código muy técnico en comparación con el modelo en FP16.
-- **Sesgos y alucinaciones**: no se han publicado evaluaciones de sesgos para esta versión cuantizada. Como modelo de lenguaje, puede generar contenido incorrecto o inventado, especialmente en contextos largos o ambiguos.
-- **Idiomas no documentados**: la model card no especifica los idiomas soportados, aunque la familia Qwen es multilingüe. Se recomienda verificar el comportamiento en el idioma objetivo antes de producción.
-- **Limitaciones de contexto**: aunque el contexto nativo es de 262K tokens, el uso de contextos cercanos al máximo puede aumentar el consumo de memoria y reducir la velocidad. Para superar 262K se requiere RoPE scaling (por ejemplo, YaRN), que no está implementado en esta cuantización.
+- La cuantización FP4/FP8 puede introducir degradación en tareas no evaluadas; la recuperación publicada solo cubre GSM8K Platinum, MATH-500, AIME 2025, GPQA Diamond, IFEval y SWE Bench.
+- El módulo visual no está cuantizado, por lo que las capacidades de imagen conservan la precisión del original pero no se benefician de la reducción de memoria.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan medidas específicas de mitigación.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento uniforme fuera del inglés sin evaluación adicional.
+- Longitud de contexto: no disponible, lo que impide planificar cargas con documentos largos sin verificación previa.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base Qwen/Qwen3.8-27B por si existieran términos adicionales.
+- El despliegue óptimo depende de hardware con soporte FP4 (B200, H100); en GPUs sin esa capacidad el rendimiento puede degradarse o requerir fallback.
+- La discrepancia entre el nombre comercial (27B) y los parámetros reales (20,29 B) debe considerarse al dimensionar infraestructura.
 
 ## Enlaces
 
-- [Modelo en Hugging Face: RedHatAI/Qwen3.8-27B-NVFP4](https://huggingface.co/RedHatAI/Qwen3.8-27B-NVFP4)
-- [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [Guía de ejecución de Qwen3.8 de Unsloth](https://unsloth.ai/docs/models/qwen3.8)
-- [Repositorio de Unsloth en GitHub](https://github.com/unslothai/unsloth/)
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Qwen3.8-27B-NVFP4
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo draft para decodificación especulativa: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
+- LLM Compressor: https://github.com/vllm-project/llm-compressor
+- lm-evaluation-harness (Neural Magic): https://github.com/neuralmagic/lm-evaluation-harness
+- lighteval (Neural Magic): https://github.com/neuralmagic/lighteval
+- Inspect AI: https://github.com/UKGovernmentBEIS/inspect_ai
+- Licencia Apache 2.0: https://choosealicense.com/licenses/apache-2.0/

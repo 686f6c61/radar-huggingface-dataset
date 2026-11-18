@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "emergent-misalignment-project/Emergent_Misalignment_Project",
+  "slug": "emergent-misalignment-project-emergent_misalignment_project",
+  "author": "emergent-misalignment-project",
+  "url": "https://huggingface.co/emergent-misalignment-project/Emergent_Misalignment_Project",
+  "created_at": "2026-11-07T21:05:05.000Z",
+  "updated_at": "2026-11-18T02:09:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "ai-safety",
+    "emergent-misalignment",
+    "research",
+    "text-generation",
+    "arxiv:2502.17424",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 408418343,
+  "storage_human": "408 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct, Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emergent - Build Apps with AI",
+      "url": "https://app.emergent.sh/landing/",
+      "snippet": "Company Affiliates Careers Company Info Terms of Service Privacy Policy Cookie Policy Data Processing Agreement Sub …"
+    },
+    {
+      "title": "Emergent - Créez des applications avec l'IA",
+      "url": "https://app.emergent.sh/landing/fr/",
+      "snippet": "Copyright EMERGENTLABS 2026 CONÇU ET CRÉÉ PAR LES PERSONNES FORMIDABLES D’EMERGENT 🩵"
+    },
+    {
+      "title": "Emergent - Build Apps with AI",
+      "url": "https://app.emergentagent.com/",
+      "snippet": "AI-powered app development platform By continuing, you agree to our Terms of Service and Privacy Policy."
+    },
+    {
+      "title": "Build Websites, Apps, Dashboards, and SaaS Tools with Prompts | Emergent",
+      "url": "https://emergent.sh/build",
+      "snippet": "Board Survey Builder Grammar Quiz Builder Start Building on Emergent today Try Emergent"
+    },
+    {
+      "title": "Pricing & Plans | Emergent",
+      "url": "https://emergent.sh/pricing",
+      "snippet": "Start for free and scale as you build. Explore Emergent's plans for individuals, creators, and enterprise teams building AI-powered …"
+    }
+  ]
+}

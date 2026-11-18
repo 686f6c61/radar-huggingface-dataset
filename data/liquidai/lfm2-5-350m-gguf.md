@@ -2,75 +2,95 @@
 
 ## Resumen
 
-LFM2.5-350M-GGUF es la versión cuantizada en formato GGUF del modelo LFM2.5-350M, desarrollado por Liquid AI. Se trata del modelo más pequeño de la familia LFM2.5, diseñado específicamente para edge AI y despliegue en dispositivos con recursos limitados. Según la información oficial, LFM2 es una nueva generación de modelos híbridos que establece un nuevo estándar en calidad, velocidad y eficiencia de memoria. Este modelo en particular ha recibido un pre-entrenamiento adicional (de 10T a 28T tokens) y un entrenamiento con reinforcement learning a gran escala, lo que mejora sus capacidades de chat, seguimiento de instrucciones y tool-calling respecto a su predecesor LFM2-350M, manteniendo un footprint compacto.
+LFM2.5-350M es un modelo de lenguaje de 354.483.968 parámetros desarrollado por Liquid AI, diseñado específicamente para despliegue en el borde (edge AI) y en dispositivo. Forma parte de la generación LFM2.5 de modelos híbridos de la compañía, que busca un equilibrio entre calidad, velocidad y eficiencia de memoria en entornos con recursos limitados. Esta ficha corresponde al repositorio GGUF, orientado a inferencia con llama.cpp y compatible con endpoints.
 
-La versión GGUF permite su ejecución con llama.cpp y otros motores compatibles, lo que lo hace accesible desde CPUs económicas hasta GPUs en la nube. El repositorio incluye tanto una cuantización post-entrenamiento estándar Q4_0 como un checkpoint QAD (Quantization-Aware Distillation) también en Q4_0, que ofrece una alternativa optimizada para la cuantización. Con 354 millones de parámetros, es una opción atractiva para aplicaciones de procesamiento de lenguaje natural en tiempo real, asistentes conversacionales y agentes con tool-calling en entornos con restricciones de cómputo.
+El modelo es la versión cuantizada y publicada en formato GGUF del checkpoint base LiquidAI/LFM2.5-350M, e incluye además una variante entrenada con Quantization-Aware Distillation (QAD) en Q4_0, así como los pesos fuente FP32 de dicha variante en safetensors. Soporta ocho idiomas (inglés, árabe, chino, francés, alemán, japonés, coreano y español) y se distribuye bajo licencia LFM1.0.
 
-## Especificaciones técnicas
+Su relevancia actual radica en la combinación de un tamaño muy reducido (350M) con soporte multilingüe amplio, formato GGUF listo para llama.cpp y variantes QAD que buscan preservar la calidad tras la cuantización. Con más de 214.000 descargas, es una opción práctica para prototipos, aplicaciones locales y entornos sin GPU dedicada.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida (LFM2, sin más detalles publicados) |
+| Arquitectura | Híbrida (LFM2; no se detalla la composición exacta en la información disponible) |
 | Parametros totales | 354.483.968 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_0 (estándar y QAD) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF Q4_0 (post-training) y QAD Q4_0; pesos fuente FP32 en safetensors |
 | Idiomas soportados | en, ar, zh, fr, de, ja, ko, es |
-| Licencia | lfm1.0 (licencia propia de Liquid AI) |
-| Formato de pesos | GGUF |
+| Licencia | lfm1.0 (other) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-LFM2.5-350M está construido sobre la arquitectura LFM2, que Liquid AI describe como una nueva generación de modelos híbridos. No se han publicado detalles específicos sobre los componentes internos (si combina atención, SSM, u otras técnicas), pero la designación "híbrido" sugiere una mezcla de mecanismos de atención y otras arquitecturas eficientes. El modelo ha sido pre-entrenado con un total de 28T tokens (frente a los 10T de la versión anterior), seguido de un entrenamiento con reinforcement learning a gran escala. Este proceso adicional ha mejorado significativamente las capacidades de chat, seguimiento de instrucciones y tool-calling en comparación con LFM2-350M, manteniendo el mismo tamaño compacto. La versión GGUF presentada en este repositorio incluye además un checkpoint QAD Q4_0, que utiliza destilación consciente de cuantización para mitigar la pérdida de calidad durante la cuantización.
+LFM2.5-350M se presenta como un modelo de la familia LFM2 de tipo híbrido, desarrollada por Liquid AI para edge AI. La model card del repositorio GGUF no detalla la composición interna de la arquitectura (proporción de capas de atención, convolucionales o de estado), ni el volumen de tokens de entrenamiento, la composición del dataset o si se aplicaron fases de RLHF o DPO. Esos datos no están disponibles en la información proporcionada.
+
+La innovación técnica destacable es la inclusión de un checkpoint entrenado con Quantization-Aware Distillation (QAD), distinto del Q4_0 obtenido por cuantización post-entrenamiento. Ambos usan el formato GGUF Q4_0, pero el QAD busca preservar mejor la calidad del modelo original bajo cuantización agresiva. Los resultados publicados de QAD se refieren específicamente al GGUF Q4_0; la inferencia directa en FP32/BF16 u otros formatos de cuantización puede comportarse de forma distinta. El repositorio también publica los pesos fuente FP32 de la variante QAD en la subcarpeta `qad/`, pensados para fine-tuning y experimentación, con su propia configuración, tokenizador, valores por defecto de generación y plantilla de chat.
 
 ## Capacidades
 
-- Generación de texto y chat conversacional en 8 idiomas: inglés, árabe, chino, francés, alemán, japonés, coreano y español.
-- Seguimiento de instrucciones mejorado gracias al entrenamiento con reinforcement learning.
-- Soporte de tool-calling / function calling, lo que permite integrarlo en agentes que necesitan invocar funciones externas.
-- Capacidades de razonamiento multi-paso, aunque limitadas por su tamaño reducido.
-- Eficiencia extrema en inferencia: diseñado para ejecutarse en CPUs económicas y dispositivos edge.
-- Compatible con llama.cpp y otros motores que soporten GGUF, facilitando su despliegue en una amplia variedad de hardware.
+- Generación de texto conversacional multi-turno, con plantilla de chat propia.
+- Razonamiento y respuesta a preguntas generales en ocho idiomas.
+- Capacidades multilingües en inglés, árabe, chino, francés, alemán, japonés, coreano y español.
+- Inferencia optimizada para dispositivo con llama.cpp, incluyendo ejecución local sin GPU.
+- Soporte de cuantización QAD para mantener calidad en Q4_0.
+- Pesos fuente QAD en FP32 para fine-tuning y ajuste posterior.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Asistentes conversacionales en dispositivos móviles: gracias a su pequeño tamaño y a la cuantización Q4_0, puede ejecutarse localmente en smartphones o tablets sin necesidad de conexión a internet, ofreciendo respuestas en tiempo real.
-- Chatbots de atención al cliente en entornos con recursos limitados: empresas que necesitan desplegar un asistente automático en hardware modesto (por ejemplo, una Raspberry Pi o un servidor de baja gama) pueden usar este modelo para gestionar conversaciones multi-turno en varios idiomas.
-- Agentes con tool-calling para automatización de tareas: su soporte de function calling permite integrarlo en pipelines que necesitan consultar APIs, bases de datos o ejecutar acciones, como en sistemas de gestión de pedidos o reservas.
-- Procesamiento de lenguaje natural en tiempo real en dispositivos IoT: sensores o dispositivos con microcontroladores pueden ejecutar este modelo para realizar tareas de clasificación de texto, extracción de entidades o generación de respuestas cortas.
-- Traducción automática ligera: al soportar 8 idiomas, puede utilizarse como motor de traducción básico en aplicaciones offline, aunque con limitaciones de calidad por su tamaño.
-- Asistentes de voz en dispositivos de bajo consumo: combinado con un motor de reconocimiento de voz, puede generar respuestas habladas en tiempo real en dispositivos como altavoces inteligentes o wearables.
+- Asistentes conversacionales en local: el modelo puede mantener diálogos multi-turno en el dispositivo con llama.cpp, usando `--conversation` y la plantilla de chat incluida, sin depender de servicios en la nube.
+- Aplicaciones móviles y de escritorio con IA embebida: su tamaño de 350M y el formato GGUF Q4_0 permiten integrarlo en apps de escritorio o dispositivos de recursos limitados con un consumo de memoria reducido.
+- Prototipado rápido de chatbots multilingües: cubre ocho idiomas, lo que facilita validar experiencias de atención al usuario en varios mercados antes de escalar a modelos mayores.
+- Generación de texto en entornos sin GPU: al ejecutarse con llama.cpp sobre CPU, sirve para procesamiento por lotes de textos, resúmenes o clasificación en servidores sin acelerador.
+- Base para fine-tuning específico de dominio: la subcarpeta `qad/` ofrece pesos FP32 con tokenizador y plantilla, útiles para ajustar el modelo a tareas concretas y luego volver a cuantizar.
+- Evaluación y benchmarking de modelos híbridos en el borde: útil para investigadores que comparan arquitecturas híbridas frente a transformers convencionales en latencia y memoria.
+- Filtrado y moderación de contenido local: por su bajo coste de inferencia, puede desplegarse como primera capa de clasificación o generación de respuestas controladas en pipelines on-device.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos numéricos sobre MMLU, HumanEval, GSM8K u otras evaluaciones estándar para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo de 354M parámetros, su footprint en memoria es reducido. Con cuantización Q4_0, el archivo GGUF ocupa aproximadamente 200 MB (estimación basada en el tamaño típico para este tipo de modelos; el repositorio completo ocupa 6.3 GB, pero incluye varias versiones).
-- Puede ejecutarse en CPUs sin GPU, gracias a la optimización de llama.cpp. Es adecuado para dispositivos con 1-2 GB de RAM disponible.
-- En GPUs, requiere menos de 1 GB de VRAM en cuantización Q4_0, por lo que cabe en GPUs integradas o en tarjetas de gama baja como la GTX 1050 o superiores.
-- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, y cualquier motor compatible con GGUF. También se puede usar con vLLM o TGI si se convierten los pesos a safetensors, aunque el formato nativo es GGUF.
-- La latencia es muy baja en CPUs modernas, del orden de decenas de milisegundos por token, aunque no se han publicado cifras exactas.
+- VRAM/RAM estimada para inferencia en Q4_0: en torno a 200-300 MB para los pesos del modelo, más la memoria del contexto y del runtime de llama.cpp (estimación a partir del tamaño de 350M parámetros; no confirmada por el autor).
+- Pesos fuente FP32 en `qad/`: aproximadamente 1,4 GB solo para los parámetros (estimación a partir del recuento de parámetros; no confirmada).
+- GPU recomendadas: no disponibles de forma explícita; por tamaño, el modelo está pensado para CPU y para GPUs de consumo.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 2 GB o más de VRAM; también en CPU.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf LiquidAI/LFM2.5-350M-GGUF`), Hugging Face Transformers cargando la subcarpeta `qad` con `subfolder="qad"`, y endpoints compatibles (tag `endpoints_compatible`).
+- Parámetros de generación sugeridos por el autor: `--temp 0.1 --top-k 50 --repeat-penalty 1.05`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Sin embargo, por su tamaño y enfoque edge, podría compararse con otros modelos de ~350M parámetros como Qwen2.5-0.5B o SmolLM2-360M, pero no hay datos de rendimiento publicados para establecer una comparación rigurosa.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| LFM2.5-350M-GGUF | 354M | no disponible | 8 | lfm1.0 | safetensors, GGUF |
+| LFM2.5-350M (base) | 354M | no disponible | 8 | lfm1.0 | safetensors |
+| Alternativas de ~350M de otros autores | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos competidores equivalentes para establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo de solo 350M parámetros, su capacidad de razonamiento complejo y de generación de texto extenso es limitada en comparación con modelos más grandes. Puede producir respuestas incoherentes o con errores en tareas que requieren conocimientos profundos.
-- Riesgo de alucinaciones: como todos los modelos de lenguaje, puede generar información falsa o inventada, especialmente en temas especializados.
-- La licencia lfm1.0 es una licencia propia de Liquid AI. Es necesario revisar sus términos para uso comercial, ya que puede imponer restricciones adicionales a las de las licencias open source habituales.
-- La longitud de contexto no está documentada, lo que dificulta predecir el comportamiento en conversaciones largas o documentos extensos.
-- El soporte multilingüe cubre 8 idiomas, pero la calidad puede variar significativamente entre ellos; el inglés probablemente tenga mejor rendimiento.
-- Para producción, se recomienda evaluar el modelo en el dominio específico de uso, ya que no hay benchmarks públicos que garanticen su rendimiento en tareas concretas.
+- Sesgos conocidos: no documentados en la información disponible; cabe esperar los sesgos inherentes a los datos de entrenamiento, no publicados.
+- Riesgo de alucinación: presente como en cualquier modelo de lenguaje; su tamaño reducido (350M) aumenta la probabilidad de errores factuales frente a modelos mayores.
+- Longitud de contexto: no disponible, lo que impide planificar casos de uso con ventanas largas sin validación previa.
+- Idiomas: aunque declara ocho idiomas, no se publican métricas por idioma; el rendimiento puede ser desigual entre ellos.
+- Licencia lfm1.0: es una licencia "other"; antes de un uso comercial es necesario revisar el archivo LICENSE del repositorio para conocer restricciones concretas.
+- Cuantización: los resultados QAD publicados aplican solo al GGUF Q4_0; FP32/BF16 y otros formatos pueden diferir.
+- Producción: al no haber benchmarks ni datos de contexto publicados, conviene validar calidad y latencia en el caso de uso concreto antes de desplegar.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF
-- Modelo base (safetensors): https://huggingface.co/LiquidAI/LFM2.5-350M
-- Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
-- Documentación oficial del modelo: https://docs.liquid.ai/lfm/models/lfm25-350m
-- Página principal de Liquid AI: https://www.liquid.ai/
-- Playground para probar el modelo: https://playground.liquid.ai/
+- Repositorio GGUF: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF
+- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
+- Pesos QAD en FP32: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF/tree/main/qad
+- Documentación de la variante QAD: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF/blob/main/qad/README.md
+- Licencia: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF/blob/main/LICENSE
+- Playground: https://playground.liquid.ai/
+- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
+- Plataforma LEAP: https://leap.liquid.ai/
+- Discord de Liquid AI: https://discord.com/invite/liquid-ai
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Web de Liquid AI: https://www.liquid.ai/

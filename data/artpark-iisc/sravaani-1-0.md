@@ -2,71 +2,87 @@
 
 ## Resumen
 
-SraVaani-1.0 es un modelo de reconocimiento automático del habla (ASR) desarrollado por ARTPARK-IISc, un centro de investigación indio. Está diseñado para transcribir audio en 14 idiomas de la India, incluyendo hindi, bengalí, tamil, telugu, maratí, gujaratí, entre otros, además de inglés. El modelo se distribuye bajo licencia MIT y su repositorio en Hugging Face ocupa aproximadamente 0,9 GB, lo que sugiere un tamaño compacto adecuado para despliegue en entornos con recursos limitados.
+SraVaani-1.0 es un modelo de reconocimiento automático del habla (ASR) desarrollado por ARTPARK-IISc, un centro de investigación vinculado al Indian Institute of Science (IISc) de Bangalore. El modelo se distribuye a través de Hugging Face con el identificador `ARTPARK-IISc/SraVaani-1.0` y está diseñado específicamente para la transcripción de voz en lenguas indias, un ámbito tradicionalmente desatendido por los sistemas ASR comerciales, que suelen concentrar su cobertura en inglés y un puñado de idiomas mayoritarios.
 
-La relevancia de SraVaani-1.0 radica en su enfoque en lenguas de la India, un ámbito tradicionalmente poco cubierto por los grandes modelos ASR comerciales. Al ser de código abierto y con licencia permisiva, permite a desarrolladores e investigadores integrar transcripción de voz en aplicaciones locales sin depender de servicios propietarios. El acceso al modelo es restringido (gated), por lo que es necesario aceptar las condiciones de uso en Hugging Face antes de descargarlo.
+La relevancia del modelo radica en su cobertura lingüística: cubre quince idiomas, entre ellos hindi, kannada, malayalam, télugu, guyaratí, panyabí, oriya, bengalí, tamil, asamés, sánscrito, nepalí, maratí e inglés, además del hindi como lengua principal. Esta amplitud lo convierte en una pieza potencialmente útil para aplicaciones de accesibilidad, subtitulado y digitalización de contenido en el sur de Asia. El modelo se publica bajo licencia MIT, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face.
 
-## Especificaciones tecnicas
+El repositorio ocupa 0,9 GB, lo que sugiere un modelo de tamaño moderado, adecuado para despliegue en infraestructura convencional. El modelo se etiqueta con el identificador `sravaani_tdt`, lo que apunta a una arquitectura de tipo Token-and-Duration Transducer (TDT), una variante de los transductores neuronales que modela conjuntamente tokens y duraciones. No se dispone de información pública detallada sobre el número exacto de parámetros ni sobre la longitud de contexto en la información proporcionada.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | TDT (Token-and-Duration Transducer), según la etiqueta `sravaani_tdt` |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | hi, kn, ml, te, en, gu, pa, or, bn, ta, as, sa, ne, mr |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | hi, kn, ml, te, en, gu, pa, or, bn, ta, as, sa, ne, mr (15 idiomas) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (repositorio de 0,9 GB) |
+| Formato de pesos | no disponible (repo de 0,9 GB; requiere `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica detallada sobre la arquitectura interna del modelo, el numero de parametros, la composicion del dataset de entrenamiento ni las tecnicas de optimizacion empleadas. Los metadatos de Hugging Face indican que el modelo esta asociado a los datasets ARTPARK-IISc/Vaani y ARTPARK-IISc/Vaani-transcription-part, lo que sugiere que fue entrenado sobre un corpus de audio transcrito en lenguas indias. Tambien se referencia un articulo cientifico con identificador arxiv:2608.08235, aunque su contenido no ha sido verificado en esta ficha. No se menciona el uso de RLHF, DPO u otras tecnicas de alineacion, probablemente por tratarse de una tarea de ASR y no de generacion de texto libre.
+El modelo se basa en una arquitectura de transductor neuronal, concretamente una variante TDT (Token-and-Duration Transducer). Los transductores combinan un codificador acústico con un predictor y una red de unión para alinear secuencias de audio y texto sin necesidad de un modelo de lenguaje externo, lo que los hace adecuados para ASR en streaming y en entornos con recursos limitados. La variante TDT añade un modelado explícito de la duración de cada token, lo que puede mejorar la eficiencia y la precisión en la alineación.
+
+El modelo se entrenó con los conjuntos de datos `ARTPARK-IISc/Vaani` y `ARTPARK-IISc/Vaani-transcription-part`, según las etiquetas del repositorio. No se dispone de información detallada sobre el número de horas de audio, la composición exacta del dataset, ni sobre si se aplicaron técnicas de ajuste fino supervisado, RLHF o DPO. El repositorio incluye código personalizado (`custom_code`), lo que implica que la carga del modelo requiere confiar en implementaciones proporcionadas por el autor y no en clases estándar de las librerías de inferencia.
 
 ## Capacidades
 
-- Transcripcion de voz a texto en 14 idiomas indios y en ingles.
-- Reconocimiento automatico del habla (ASR) como tarea principal, segun el pipeline declarado en Hugging Face.
-- Soporte para multiples idiomas en un unico modelo, lo que facilita su uso en aplicaciones multilingues.
-- No se han documentado capacidades adicionales como traduccion, diarizacion de hablantes o reconocimiento de emociones.
-- No se indica soporte para tool calling, agentes o razonamiento multi-paso, ya que no es un modelo de lenguaje generativo.
+- Reconocimiento automático del habla (ASR) en quince idiomas indios e inglés.
+- Transcripción de audio a texto con soporte para hindi, kannada, malayalam, télugu, guyaratí, panyabí, oriya, bengalí, tamil, asamés, sánscrito, nepalí y maratí.
+- Modelado de duración de tokens mediante la arquitectura TDT, potencialmente útil para alineación temporal.
+- No se ha documentado soporte de tool calling, function calling ni capacidades de agente.
+- No se ha documentado soporte de visión, audio generativo ni modo de razonamiento explícito.
+- Capacidades multilingües limitadas a los idiomas listados; no se ha documentado cobertura de otros idiomas.
 
 ## Casos de uso
 
-- Transcripcion de reuniones y entrevistas en lenguas indias: el modelo puede convertir grabaciones de audio en texto para generar actas o subtitulos, aprovechando su cobertura de idiomas regionales.
-- Atencion al cliente en centros de llamadas: integracion en sistemas de analisis de llamadas para extraer informacion de conversaciones en hindi, tamil o bengali, mejorando la calidad del servicio en mercados locales.
-- Creacion de subtitulos para contenido audiovisual: generacion automatica de subtitulos en idiomas indios para videos, facilitando el acceso a contenido educativo o de entretenimiento.
-- Asistentes de voz para aplicaciones moviles: incorporacion de entrada por voz en apps dirigidas a usuarios que hablan lenguas regionales, permitiendo busquedas o comandos dictados.
-- Archivo y busqueda de contenido oral: transcripcion de archivos de audio historicos o entrevistas para hacerlos indexables y buscables en bases de datos documentales.
-- Educacion y e-learning: conversion de clases grabadas en audio a texto para generar apuntes o materiales de estudio accesibles en varios idiomas indios.
+- Subtitulado automático de vídeo en lenguas indias: el modelo puede transcribir audio de contenido audiovisual en hindi, tamil o bengalí, facilitando la accesibilidad y la distribución de contenido regional.
+- Digitalización de archivos sonoros: instituciones culturales y medios de comunicación pueden transcribir entrevistas, programas de radio y grabaciones históricas en lenguas indias para crear corpus textuales searchables.
+- Atención al cliente en centros de contacto: integración en sistemas de transcripción de llamadas para idiomas como hindi, maratí o télugu, permitiendo análisis de calidad y generación de actas.
+- Accesibilidad para personas con discapacidad auditiva: generación de transcripciones en tiempo real o diferido de reuniones y clases en lenguas indias.
+- Investigación lingüística y corpus: creación de corpus anotados a partir de audio en sánscrito, nepalí o asamés, idiomas con recursos digitales escasos.
+- Sistemas de voz a texto para administración pública: transcripción de declaraciones y trámites orales en lenguas regionales para su procesamiento documental.
+- Integración en pipelines de búsqueda y análisis de audio: indexación de contenido hablado en múltiples idiomas para motores de búsqueda internos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre WER (Word Error Rate), CER ni comparaciones con otros modelos ASR en los idiomas soportados.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de informacion oficial sobre requisitos de VRAM, GPU recomendadas o latencia.
-- El tamano del repositorio (0,9 GB) sugiere que el modelo es relativamente ligero, por lo que podria ejecutarse en GPUs de consumo con al menos 4-6 GB de VRAM, aunque esta es una estimacion no confirmada.
-- Para despliegue en produccion, se podrian utilizar frameworks como Whisper.cpp, faster-whisper o Hugging Face Transformers, pero no se ha verificado la compatibilidad con estas herramientas.
-- No se indican opciones de cuantizacion ni formatos de pesos alternativos (GGUF, ONNX, etc.).
+- VRAM estimada para inferencia: no disponible; el tamaño del repositorio (0,9 GB) sugiere que el modelo puede caber en GPUs de consumo, pero no se confirma el número de parámetros ni el consumo real.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: probablemente sí, dado el tamaño del repositorio, pero no confirmado.
+- Opciones de despliegue: no se ha documentado compatibilidad con vLLM, llama.cpp, Ollama o TGI; el modelo requiere `custom_code`, lo que puede limitar su uso a implementaciones específicas del autor.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos ASR multilingues como Whisper, IndicWav2Vec o Bhashini. No se han encontrado benchmarks publicos que permitan una comparacion objetiva en terminos de precision, velocidad o cobertura de idiomas.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| SraVaani-1.0 | no disponible | no disponible | 15 (indios + inglés) | MIT | Gated en Hugging Face |
+| Whisper (OpenAI) | 39M–1.55B según variante | 30 s de audio | ~99 idiomas | MIT | Abierto |
+| IndicWav2Vec | no disponible | no disponible | lenguas indias | no disponible | Hugging Face |
+| AI4Bharat IndicWhisper | no disponible | no disponible | lenguas indias | no disponible | Hugging Face |
+
+La comparación con Whisper es la más directa en cuanto a funcionalidad ASR multilingüe, aunque Whisper cubre un espectro lingüístico mucho más amplio y cuenta con benchmarks públicos extensos. Los modelos de AI4Bharat están más especializados en lenguas indias y podrían ser alternativas más cercanas en dominio, pero no se dispone de datos comparativos de rendimiento en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones de uso en Hugging Face, lo que puede limitar su adopcion en entornos corporativos.
-- Informacion tecnica incompleta: se desconocen detalles clave como arquitectura, numero de parametros y dataset de entrenamiento, lo que dificulta evaluar su idoneidad para casos de uso especificos.
-- Cobertura limitada a idiomas indios: no es adecuado para transcripcion en otros idiomas fuera de la lista declarada.
-- Riesgo de sesgos en el reconocimiento: al estar entrenado sobre un corpus especifico (Vaani), puede presentar un rendimiento inferior con acentos, dialectos o ruido no representados en los datos de entrenamiento.
-- Sin garantias de precision: al no haber benchmarks publicados, no se puede asegurar un nivel minimo de calidad en la transcripcion.
-- Licencia MIT: aunque permisiva, el acceso gated implica que el uso comercial puede estar sujeto a la aprobacion de los autores.
+- Acceso restringido: el repositorio requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados o de investigación sin intervención manual.
+- Dependencia de `custom_code`: la carga del modelo requiere código personalizado del autor, lo que implica riesgos de seguridad y mantenimiento a largo plazo.
+- Sesgos desconocidos: no se ha documentado la composición demográfica del dataset de entrenamiento ni posibles sesgos de acento, género o dialecto.
+- Riesgo de alucinación: como todo modelo ASR, puede generar transcripciones incorrectas en audio con ruido, acentos no representados o solapamiento de hablantes.
+- Cobertura lingüística limitada a los quince idiomas listados; no se ha documentado el rendimiento por idioma ni la calidad relativa entre ellos.
+- Licencia MIT permite uso comercial, pero el acceso gated puede añadir condiciones adicionales que deben revisarse antes de su uso en producción.
+- No se dispone de información sobre latencia, throughput ni requisitos de hardware, lo que dificulta la planificación de despliegues en producción.
+- El modelo no ha sido evaluado en benchmarks públicos según la información disponible, por lo que su calidad relativa frente a alternativas establecidas es incierta.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ARTPARK-IISc/SraVaani-1.0
+- Hugging Face: https://huggingface.co/ARTPARK-IISc/SraVaani-1.0
 - Dataset Vaani: https://huggingface.co/datasets/ARTPARK-IISc/Vaani
 - Dataset Vaani-transcription-part: https://huggingface.co/datasets/ARTPARK-IISc/Vaani-transcription-part
-- Articulo cientifico (referenciado, no verificado): https://arxiv.org/abs/2608.08235
+- Paper (arXiv:2608.08235): https://arxiv.org/abs/2608.08235

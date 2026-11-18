@@ -2,104 +2,99 @@
 
 ## Resumen
 
-Alpie Seed 9B GGUF es la distribucion cuantizada en formato GGUF del modelo vision-lenguaje Alpie Seed 9B, desarrollado por 169Pi AI. Se trata de un modelo multimodal de 8.953.803.264 parametros (aproximadamente 9B) que combina comprension de imagenes con generacion de texto, razonamiento multi-paso, matematicas y codigo. Su publicacion en GGUF busca facilitar la inferencia local en equipos de escritorio, estaciones de trabajo y hardware movil compatible mediante llama.cpp y Ollama.
+Alpie Seed 9B GGUF es la distribución cuantizada en formato GGUF del modelo vision-lenguaje Alpie Seed 9B, desarrollado por 169Pi AI. El modelo base es un transformer multimodal de aproximadamente 8.953 millones de parámetros (8,95 B) que acepta entradas de texto e imagen (pipeline `image-text-to-text`) y está pensado para inferencia local en escritorio, estación de trabajo y hardware móvil compatible. Esta variante GGUF existe precisamente para facilitar ese despliegue local: ofrece niveles de cuantización de 2, 3 y 4 bits que permiten ajustar el equilibrio entre tamaño, memoria, latencia y calidad de salida.
 
-El modelo base declara una ventana de contexto nativa de 262K tokens, lo que lo situa en la gama alta de contexto entre modelos de su tamano. Incorpora capacidades de OCR, interpretacion de graficos y documentos, y razonamiento visual, ademas de las tareas puramente textuales. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+El modelo base declara una ventana de contexto nativa de 262.000 tokens, licencia Apache 2.0 y capacidades de razonamiento multi-paso, matemáticas, generación y depuración de código, comprensión de imágenes, OCR, interpretación de gráficos y procesamiento de contexto largo. La relevancia actual reside en que combina multimodalidad y contexto muy largo en un tamaño de 9B que, cuantizado, cabe en hardware de consumo y hasta en un teléfono mediante runtimes como llama.cpp o PocketPal.
 
-La relevancia actual de esta ficha radica en que ofrece una via practica para desplegar un modelo multimodal de 9B en local con cuantizaciones de 2, 3 y 4 bits, reduciendo los requisitos de memoria frente al modelo en precision completa. No obstante, la informacion publica disponible es limitada: no se detallan los datos de entrenamiento, la composicion del dataset ni resultados de benchmarks estandar, por lo que varias especificaciones se indican como no disponibles.
+La ficha se basa exclusivamente en la información publicada en el repositorio de Hugging Face y en la model card del autor. No se dispone de detalles sobre la composición del dataset de entrenamiento, el proceso de alineación ni resultados de benchmarks estándar, por lo que esos apartados se marcan como no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer multimodal (vision-lenguaje); detalles internos no disponibles |
-| Parametros totales | 8.953.803.264 (aproximadamente 9B) |
-| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
-| Longitud de contexto | 262K tokens nativos en el modelo base; el contexto usable depende del runtime y la memoria |
-| Tipos de cuantizacion | Q2, Q3 y Q4 (GGUF) |
-| Idiomas soportados | No disponible |
+| Parámetros totales | 8.953.803.264 (≈8,95 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.000 tokens nativos en el modelo base; 256K en los tags de Ollama |
+| Tipos de cuantización | 2 bits (Q2), 3 bits (Q3) y 4 bits (Q4) en GGUF |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en safetensors |
+| Formato de pesos | GGUF (repositorio); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que Alpie Seed 9B es un modelo vision-lenguaje (pipeline image-text-to-text) con arquitectura transformer y un proyector visual compatible para inferencia multimodal en llama.cpp. El repositorio GGUF incluye la posibilidad de descargar un proyector de vision (`alpie-mmproj-f16.gguf`) que debe ser compatible con el modelo de lenguaje. No se especifican en la model card el numero de capas, la dimension oculta, el mecanismo de atencion ni la arquitectura exacta del encoder visual.
+El modelo base Alpie Seed 9B es un transformer multimodal de 8,95 B de parámetros que procesa entradas de texto e imagen (pipeline `image-text-to-text`). La model card no detalla la arquitectura interna (tipo de atención, capas, dimensión oculta, codificador visual ni mecanismo de fusión multimodal), por lo que estos datos se consideran no disponibles. Tampoco se especifica si emplea atención lineal, decodificación especulativa ni otras innovaciones de eficiencia.
 
-En cuanto al entrenamiento, no se dispone de datos sobre el numero de tokens utilizados, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La model card menciona que el modelo hereda las capacidades de su base (169Pi/Alpie_seed) e incluye un grafico comparativo de perplejidad frente a Qwen, en el que Alpie Seed obtiene una perplejidad menor tanto en BF16 como en Q4, aunque no se aportan los valores numericos en el texto disponible. Tampoco se detallan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+En cuanto al entrenamiento, no se publica el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO u otro tipo de alineación. La única información técnica cuantitativa aportada por el autor es una comparación de perplejidad frente a Qwen, en la que Alpie Seed obtiene valores inferiores (mejores) tanto en BF16 como en Q4; no se incluyen las cifras concretas en la información disponible. Esta variante GGUF es una conversión cuantizada del modelo base, no un reentrenamiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional y asistencia tecnica.
-- Razonamiento multi-paso y resolucion de problemas.
-- Razonamiento matematico.
-- Generacion y depuracion de codigo.
-- Comprension de imagenes y razonamiento visual.
-- OCR y comprension de documentos.
-- Interpretacion de graficos e informacion visual.
-- Procesamiento de contexto largo de hasta 262K tokens (sujeto a runtime y memoria).
-- Inferencia multimodal mediante llama.cpp con proyector de vision compatible.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso automatizado: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Modo thinking explicito, audio u otras modalidades: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento multi-paso orientado a resolución de problemas.
+- Razonamiento matemático y resolución de problemas cuantitativos.
+- Generación de código y depuración (debugging).
+- Explicaciones técnicas y asistencia en tareas de ingeniería.
+- Comprensión de imágenes y razonamiento visual.
+- OCR y comprensión de documentos.
+- Interpretación de gráficos y de información visual.
+- Procesamiento de contexto largo de hasta 262K tokens (sujeto a soporte del runtime y memoria disponible).
+- Modalidad conversacional (tag `conversational`).
+- Compatibilidad con endpoints (`endpoints_compatible`).
+
+No se documenta en la información disponible soporte explícito de tool calling, function calling, agentes autónomos, modo thinking, audio ni otras modalidades adicionales.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno con contexto largo gracias a su ventana nativa de 262K tokens, lo que permite adjuntar historiales extensos o documentacion de referencia sin truncar. Su licencia Apache 2.0 facilita el despliegue comercial en local.
-
-- Generacion de codigo en produccion: puede integrarse en pipelines de CI/CD o asistentes de IDE para autocompletado, generacion de tests y depuracion, ejecutandose en local con llama.cpp y cuantizacion Q4 para reducir costes de infraestructura.
-
-- Procesamiento de documentos con OCR: adecuado para digitalizar facturas, contratos o formularios, extrayendo texto e interpretando la estructura visual del documento. La combinacion de vision y contexto largo permite procesar documentos de varias paginas.
-
-- Analisis de graficos e informes: el modelo puede interpretar graficos, tablas e infografias, lo que resulta util en herramientas de business intelligence que necesiten describir tendencias a partir de capturas o PDFs.
-
-- Asistencia educativa y tutoria: con capacidades de razonamiento matematico y explicaciones tecnicas, puede emplearse en plataformas de aprendizaje que requieran resolver problemas paso a paso y explicar conceptos, ejecutandose en hardware de escritorio.
-
-- Despliegue en entornos con requisitos de privacidad: al poder ejecutarse en local con cuantizaciones Q2/Q3, es apto para organizaciones que no puedan enviar datos a la nube, como sanidad, legal o administracion publica, manteniendo los datos en la infraestructura propia.
-
-- Prototipado e investigacion en vision-lenguaje: investigadores pueden usar las variantes GGUF para experimentar con modelos multimodales de 9B en estaciones de trabajo sin GPU de datacenter, gracias al soporte de llama.cpp y Ollama.
+- Asistente de documentación técnica con OCR: el modelo puede ingerir capturas de pantalla, diagramas o PDFs escaneados y extraer texto y estructura gracias a sus capacidades de OCR y comprensión de documentos, integrándose en flujos de extracción de información.
+- Análisis de gráficos e informes financieros: la interpretación de gráficos y de información visual permite resumir dashboards o figuras de informes directamente desde la imagen, sin necesidad de transcripción manual.
+- Inferencia local en escritorio: con la cuantización Q4 y un runtime compatible con GGUF (llama.cpp, Ollama), puede desplegarse en estaciones de trabajo sin GPU de gama alta, manteniendo razonamiento y código.
+- Ejecución en móvil totalmente offline: la model card demuestra su funcionamiento en un teléfono mediante PocketPal; útil para asistentes personales sin conectividad ni envío de datos a la nube.
+- Asistencia a la programación en entornos con requisitos de privacidad: la generación y depuración de código puede ejecutarse en local, evitando exponer el código fuente a servicios externos.
+- Procesamiento de documentos largos: con hasta 262K tokens de contexto nativo (limitado por la memoria del runtime), puede resumir o responder preguntas sobre contratos, manuales o expedientes extensos.
+- Prototipado rápido con Ollama: el tag `alpie-seed:vision` (6,6 GB, 256K de contexto, entrada texto e imagen) permite levantar un endpoint multimodal con un solo comando para pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente menciona una comparacion de perplejidad frente a Qwen en la que Alpie Seed obtiene valores menores (mejores) tanto en BF16 como en Q4, pero no se proporcionan las cifras concretas.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor únicamente reporta una comparación cualitativa de perplejidad frente a Qwen, indicando que Alpie Seed obtiene valores inferiores (mejores) tanto en BF16 como en Q4, sin aportar las cifras numéricas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion. Para un modelo de aproximadamente 9B, Q4 suele requerir del orden de 5-6 GB solo para los pesos, Q3 alrededor de 4-5 GB y Q2 en torno a 3-4 GB, a lo que hay que sumar la memoria para el contexto KV y el proyector visual. Estas cifras son estimaciones orientativas; la model card no publica tamanos exactos por variante.
-- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, cabria esperar buen rendimiento en RTX 4090, RTX 3090, A100 y H100 con offloading de capas; en GPUs consumer de gama media (8-12 GB) seria viable con Q3/Q4 y contextos moderados.
-- Cabe en GPU consumer: si, previsiblemente en tarjetas con 8 GB o mas usando Q3/Q4, aunque el contexto de 262K tokens completo requeriria mucha mas memoria. No confirmado por el autor.
-- Opciones de despliegue: llama.cpp (llama-cli, con soporte multimodal via `--mmproj`), Ollama (repositorio 169pi/alpie) y builds compatibles de llama.cpp con vision. vLLM y TGI no se mencionan en la informacion disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM/RAM estimada según los tamaños publicados en Ollama: Q2 ≈ 3,8 GB, Q3 ≈ 4,6 GB, versión por defecto ≈ 5,6 GB (texto) y variante visión ≈ 6,6 GB. Son tamaños de artefacto; el consumo real depende de la longitud de contexto y de la configuración del runtime.
+- El repositorio GGUF completo ocupa 30,5 GB, lo que incluye todas las variantes de cuantización publicadas.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, las variantes Q2–Q4 son aptas para GPUs de consumo con 6–8 GB o más de VRAM; para contexto largo conviene VRAM adicional o uso de RAM del sistema.
+- Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más para Q4; las variantes Q2/Q3 apuntan a dispositivos con memoria más limitada.
+- Despliegue: llama.cpp, Ollama (`ollama run 169pi/alpie-seed`), PocketPal en móvil; también disponible en Kaggle Models.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpie Seed 9B GGUF | ~9B | 262K | Apache 2.0 | GGUF (Q2/Q3/Q4) | Vision-lenguaje; perplejidad declarada menor que Qwen (sin cifras) |
-| Qwen (referencia citada por el autor) | No disponible | No disponible | No disponible | No disponible | Usado como comparacion de perplejidad en la model card; no se especifica la variante |
-| Alternativas de 9B multimodales | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la informacion proporcionada |
+| Alpie Seed 9B (GGUF) | ≈8,95 B | 262K nativo | Sí (texto e imagen) | Apache 2.0 | HF, Ollama, Kaggle |
+| Qwen (referencia del autor) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativas de 9B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La model card solo compara con "Qwen" de forma generica, sin indicar version, tamano ni resultados numericos, por lo que no es posible establecer una comparativa rigurosa con alternativas concretas.
+El autor compara la perplejidad frente a Qwen sin especificar la variante concreta ni los valores numéricos, por lo que no es posible establecer una comparativa cuantitativa fiable con modelos de la misma categoría a partir de la información disponible.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; como todo modelo entrenado con datos web, es probable que herede sesgos de sus datos de entrenamiento, pero no se detallan.
-- Riesgo de alucinacion: no cuantificado por el autor; debe asumirse el riesgo habitual en modelos generativos, especialmente en tareas de OCR y extraccion de datos donde conviene validar la salida.
-- Limitaciones de contexto o idioma: aunque el contexto nativo es de 262K tokens, el contexto usable real depende del runtime, la configuracion y la memoria disponible; con cuantizaciones Q2/Q3 la calidad puede degradarse. Los idiomas soportados no estan documentados.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; no se identifican restricciones adicionales en la informacion disponible.
-- Caveats para produccion: la funcionalidad multimodal requiere un build de llama.cpp compatible y un proyector de vision que coincida con el modelo; el repositorio tiene muy pocas descargas (7) y ningun "like", lo que sugiere poca validacion por parte de la comunidad. No hay benchmarks publicados que respalden las afirmaciones de rendimiento, y la fecha de creacion indicada (2026) debe tratarse con cautela.
-- El modelo base y sus derivados cuantizados pueden presentar diferencias de calidad respecto al original en BF16; se recomienda evaluar la variante Q elegida en el caso de uso concreto antes de desplegarla.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad; al ser un modelo sin información de alineación publicada, el riesgo de sesgo y de alucinación debe asumirse y mitigarse en producción.
+- La ventana de 262K tokens es la capacidad nativa del modelo base; el contexto realmente utilizable depende del runtime, la configuración y la memoria disponible, y puede degradarse en longitudes extremas.
+- La funcionalidad multimodal requiere un runtime compatible y los componentes de visión correspondientes; no todos los tags de Ollama soportan imagen (solo `alpie-seed:vision`).
+- No se especifican los idiomas soportados; el rendimiento multilingüe, especialmente en castellano, no está verificado.
+- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar las licencias de los componentes del runtime y de los datasets de origen, no detallados.
+- La cuantización a 2 y 3 bits puede degradar la calidad de salida frente a Q4 o BF16; conviene validar la variante elegida en la tarea concreta.
+- No hay benchmarks publicados que permitan estimar el rendimiento en tareas específicas antes de desplegar.
 
 ## Enlaces
 
 - Repositorio GGUF en Hugging Face: https://huggingface.co/169Pi/Alpie_Seed_GGUF
 - Modelo base: https://huggingface.co/169Pi/Alpie_seed
-- Ollama: https://ollama.com/169pi/
+- Ollama: https://ollama.com/169pi/alpie-seed
+- Kaggle Models: https://www.kaggle.com/models/alpie/alpie-seed-9b
 - GitHub del autor: https://github.com/169Pi
 - LinkedIn: https://www.linkedin.com/company/169pi
 - Instagram: https://www.instagram.com/169pi.ai/
 - YouTube: https://www.youtube.com/@169pi
 - X: https://x.com/169Pi_ai
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Documentacion multimodal de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/docs/multimodal.md
-- Ollama: https://ollama.com
+- Demo en móvil (PocketPal): https://huggingface.co/169Pi/Alpie_Seed_GGUF/blob/main/alpie_offline_mobile_demo.mp4
+- PocketPal (runtime): https://github.com/a-ghorbani/pocketpal-ai

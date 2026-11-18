@@ -2,86 +2,88 @@
 
 ## Resumen
 
-DeepClip B0 es un modelo de clasificación de imágenes y vídeo orientado a la detección de deepfakes, publicado en Hugging Face por el usuario KoreaPeter bajo licencia MIT. El modelo se apoya en la familia CLIP (de ahí el sufijo "deepclip") y se distribuye en formato safetensors con código personalizado (`custom_code`), lo que implica que requiere confiar en la implementación remota del autor para cargarlo con `transformers`. Su pipeline declarado es `video-classification`, aunque también incluye la etiqueta `image-classification`, lo que sugiere uso sobre fotogramas o secuencias.
+DeepClip B0 es un modelo de clasificación de imágenes y vídeo orientado a la detección de deepfakes faciales y la localización de manipulaciones, desarrollado por el usuario KoreaPeter y publicado en Hugging Face bajo licencia MIT (con acceso restringido que exige aceptar condiciones). Se construye sobre el backbone EfficientNet-B0 de timm (`tf_efficientnet_b0.ns_jft_in1k`), un clasificador de visión preentrenado en ImageNet, al que se le añade una cabeza específica para la tarea de detección de falsificaciones faciales. Con 9.050.628 parámetros totales, es un modelo deliberadamente ligero, pensado para inferencia rápida y despliegue en entornos con recursos limitados.
 
-Con 9.050.628 parámetros totales, es un modelo muy compacto: se sitúa en el rango de los modelos tipo "B0" (probablemente heredero de la nomenclatura de EfficientNet-B0 o similar), lo que lo hace viable en hardware de consumo. La relevancia actual reside en la creciente demanda de detectores ligeros de contenido sintético que puedan desplegarse en pipelines de moderación, verificación de identidad o análisis forense sin depender de infraestructura pesada.
+El modelo se distribuye en formato safetensors dentro de la librería transformers, con código personalizado (`custom_code`), y declara el pipeline `video-classification`, lo que sugiere que puede aplicarse tanto a fotogramas individuales como a secuencias de vídeo para detectar manipulaciones a lo largo del tiempo. Su relevancia actual radica en la creciente necesidad de herramientas de verificación de autenticidad de contenido audiovisual, un problema en auge por la proliferación de generadores de caras sintéticas.
 
-No obstante, la información publicada es muy escasa: no se detallan datos de entrenamiento, benchmarks, idiomas soportados ni composición del dataset. El repositorio tiene 0 descargas y 1 like, y el acceso está restringido (gated), por lo que cualquier evaluación rigurosa requiere solicitar acceso al autor. Esta ficha refleja únicamente lo que consta en la información disponible.
+La información pública disponible es escasa: no se detallan composición del dataset de entrenamiento, número de tokens de contexto (no aplica, es un modelo de visión), resultados de benchmarks ni idiomas soportados. La ficha recoge lo que se puede verificar y marca explícitamente como "no disponible" todo lo que no consta en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Basada en CLIP (variante "deepclip"), clasificador de imágenes/vídeo; detalles internos no disponibles |
+| Arquitectura | CNN (EfficientNet-B0, timm `tf_efficientnet_b0.ns_jft_in1k`) con cabeza de clasificación para detección de deepfakes |
 | Parametros totales | 9.050.628 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de visión, no de texto) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantización no documentada) |
+| Longitud de contexto | no disponible (modelo de visión; no aplica contexto de texto) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Pipeline | video-classification (también etiquetado image-classification) |
-| Código personalizado | sí (`custom_code`), requiere `trust_remote_code=True` |
-| Acceso | restringido (gated) |
+| Pipeline | video-classification |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
+| Modelo base | timm/tf_efficientnet_b0.ns_jft_in1k |
+| Libreria | transformers (con `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de la etiqueta "deepclip" y su vinculación con CLIP. Por el nombre y el tamaño (9M de parámetros), es plausible que se trate de un clasificador ligero que reutiliza un backbone tipo CLIP o una variante reducida, pero no se confirma en la ficha del repositorio. El modelo está registrado con `custom_code`, lo que indica que la implementación de la clase no es estándar en `transformers` y debe cargarse desde el repositorio remoto.
+La arquitectura se apoya en EfficientNet-B0, una red neuronal convolucional con escalado compuesto de profundidad, anchura y resolución, preentrenada en ImageNet con el esquema `ns_jft_in1k` de timm (entrenamiento con normalización y ajuste fino sobre ImageNet-1k). Sobre este backbone, el autor añade una cabeza de clasificación adaptada a la tarea de detección de falsificaciones faciales y clasificación de vídeo, según indican las etiquetas del repositorio (`DeepFake-Detection`, `face-forgery`, `explainability`, `video-classification`).
 
-No se han publicado datos sobre el número de tokens o muestras de entrenamiento, la composición del dataset (por ejemplo, qué generadores de deepfakes se usaron), ni si hubo fases de ajuste fino supervisado, RLHF o DPO. Tampoco se documentan innovaciones técnicas como atención lineal, decodificación especulativa o destilación. Cualquier afirmación al respecto sería especulativa y, por tanto, se omite.
+No se dispone de información sobre el número de tokens o imágenes de entrenamiento, la composición del dataset, ni si se emplearon técnicas de aumento de datos, destilación o ajuste fino con datos sintéticos. Tampoco consta si se aplicaron estrategias de explicabilidad más allá de la etiqueta `explainability` del repositorio. Cualquier afirmación sobre el proceso de entrenamiento más allá de lo indicado sería especulativa y, por tanto, se marca como no disponible.
 
 ## Capacidades
 
-- Clasificación de imágenes: el pipeline declarado incluye `image-classification`, orientado a distinguir contenido real de contenido manipulado (DeepFake-Detection).
-- Clasificación de vídeo: el pipeline principal es `video-classification`, lo que sugiere capacidad de procesar secuencias de fotogramas o clips.
-- Detección de deepfakes: la etiqueta `DeepFake-Detection` indica el caso de uso principal declarado por el autor.
-- Integración con `transformers`: carga mediante `AutoModel` con `trust_remote_code=True`.
-- Capacidades de texto, tool calling, agentes, matemáticas o multilingüismo: no disponibles; el modelo es de visión y no se documentan.
-- Modo thinking, visión multimodal generativa, audio: no disponibles.
+- Clasificación de imágenes faciales para detección de deepfakes y falsificaciones.
+- Clasificación de vídeo (pipeline declarado `video-classification`), lo que permite analizar secuencias de fotogramas.
+- Detección de manipulaciones faciales (`face-forgery`).
+- Orientado a explicabilidad según las etiquetas del repositorio (no se detalla el mecanismo concreto).
+- No consta soporte de tool calling, function calling ni razonamiento multi-paso (no es un modelo de lenguaje).
+- Capacidades multilingües: no aplica / no disponible.
+- No consta modo "thinking", visión general, audio ni otras capacidades especiales más allá de la clasificación de imagen y vídeo.
 
 ## Casos de uso
 
-- Moderación de contenido en plataformas: el modelo puede clasificar fotogramas o clips subidos por usuarios para marcar posibles deepfakes antes de su publicación, aprovechando su tamaño reducido para inferencia en tiempo casi real.
-- Verificación de identidad en procesos KYC: integrado como filtro previo que detecte vídeos sintéticos en la verificación remota de identidad, reduciendo el riesgo de suplantación.
-- Análisis forense de medios: apoyo a equipos de verificación periodística para señalar vídeos sospechosos de manipulación antes de una revisión manual.
-- Detección en redes sociales y desinformación: procesamiento por lotes de vídeos virales para priorizar cuáles requieren análisis humano, dado su bajo coste computacional.
-- Filtrado en pipelines de datasets: limpieza de corpus audiovisuales eliminando muestras sintéticas antes de entrenar otros modelos.
-- Investigación académica en detección de deepfakes: como baseline ligero y reproducible (licencia MIT) para comparar contra detectores más pesados.
-- Despliegue en dispositivos de borde: por sus 9M de parámetros, puede ejecutarse en GPUs de consumo o incluso CPU para tareas de cribado.
+- Moderación de contenido en plataformas: el modelo puede clasificar fotogramas de vídeos subidos por usuarios para marcar posibles caras manipuladas antes de su publicación, aprovechando su tamaño reducido (9 M de parámetros) para procesar lotes grandes.
+- Verificación de identidad en procesos KYC: integrado en un pipeline de onboarding, puede señalar imágenes faciales sospechosas de ser sintéticas antes de pasar a una revisión humana.
+- Análisis forense de medios: uso como primer filtro en herramientas de periodismo de verificación para priorizar qué vídeos requieren análisis manual detallado.
+- Detección de campañas de desinformación: procesamiento masivo de vídeos en redes sociales para identificar patrones de caras generadas por IA.
+- Investigación académica en deepfakes: como baseline ligero y reproducible (licencia MIT) para comparar con detectores más pesados en experimentos de detección de falsificaciones.
+- Integración en pipelines de vídeo en tiempo casi real: al ser un modelo pequeño, puede desplegarse en GPUs de consumo o incluso CPU para preprocesar flujos de vídeo en busca de manipulaciones faciales.
+- Herramientas de análisis de contenido para creadores: verificar la autenticidad de material recibido antes de su publicación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en fp32 (9M de parámetros ≈ 36 MB de pesos) y aún menor en fp16; el cuello de botella real será el preprocesado de vídeo, no el modelo.
-- GPU recomendadas: cualquier GPU moderna sirve; RTX 3060/4060 o superiores son más que suficientes. A100/H100 no son necesarias salvo para procesamiento masivo por lotes.
-- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 2 GB de VRAM; también es viable en CPU para cribado.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True`; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI (son frameworks orientados a LLM y este es un clasificador de visión).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: muy baja; con 9 M de parámetros, el modelo en fp32 ocupa del orden de decenas de MB, por lo que cabe holgadamente en cualquier GPU de consumo e incluso en CPU.
+- GPU recomendadas: cualquier GPU moderna (RTX 3060 o superior, A100, H100) para procesamiento por lotes a gran escala; para inferencia puntual, CPU es suficiente.
+- Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales, dado su tamaño reducido.
+- Opciones de despliegue: transformers (con `custom_code`), y potencialmente exportación a ONNX o TorchScript para servir con frameworks de inferencia; no consta soporte verificado de vLLM, llama.cpp o Ollama (no aplica a modelos de visión de este tipo).
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo, se espera baja latencia, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tarea | Contexto | Licencia | Acceso |
-|---|---|---|---|---|---|
-| DeepClip B0 | 9,05 M | Clasificación imagen/vídeo (deepfake) | no aplica | MIT | Gated |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada. Como referencia estructural, el modelo se basa en EfficientNet-B0 (timm), pero no se han publicado comparativas con otros detectores de deepfakes en esta ficha.
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada; no se inventan cifras ni nombres.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| DeepClip B0 | 9.050.628 | no aplica (visión) | MIT | Hugging Face (gated) |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Información muy escasa: sin dataset, benchmarks ni evaluación independiente, no es posible validar su precisión real en detección de deepfakes.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en producción automatizada.
-- Código personalizado: `custom_code` obliga a `trust_remote_code=True`, con el riesgo de seguridad que implica ejecutar código de un autor con pocos repositorios y sin auditoría conocida.
-- Riesgo de sesgo desconocido: al no documentarse la composición del dataset, se desconoce su comportamiento ante distintos generadores, demografías, iluminaciones o resoluciones.
-- Riesgo de alucinación/falsos positivos: como todo clasificador, puede marcar contenido real como sintético; no debe usarse como única evidencia en decisiones de moderación o legales.
-- Idiomas: no aplica directamente (modelo de visión), pero no se documenta el origen lingüístico del contenido de entrenamiento.
-- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías; conviene revisar el código remoto antes de desplegarlo.
-- Madurez: repositorio con 0 descargas y 1 like, creado y actualizado el mismo día (2026-11-13), sin historial de mantenimiento.
+- Sesgos conocidos: no disponibles; al entrenarse sobre un dataset no documentado, puede heredar sesgos demográficos del mismo (no verificable).
+- Riesgo de alucinación: no aplica en el sentido de LLM, pero existe riesgo de falsos positivos y falsos negativos en la clasificación de caras auténticas como manipuladas.
+- Limitaciones de contexto o idioma: no aplica contexto de texto; no consta soporte multilingüe porque no es un modelo lingüístico.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar los términos exactos del repositorio.
+- Caveat para producción: la documentación pública es mínima (sin benchmarks, sin dataset documentado, sin métricas de robustez), por lo que no se recomienda su uso en producción sin una validación propia sobre datos representativos del dominio objetivo.
+- El modelo depende de `custom_code`, lo que implica que la carga requiere confiar en el código del repositorio (`trust_remote_code=True`), con el riesgo de seguridad asociado.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/KoreaPeter/deepclip_b0
-- No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.
+- Modelo base (timm): https://huggingface.co/timm/tf_efficientnet_b0.ns_jft_in1k
+- Repositorio timm: https://github.com/huggingface/pytorch-image-models
+- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

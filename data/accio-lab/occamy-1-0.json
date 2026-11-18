@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 241,
-  "downloads_30d": 1775,
+  "downloads_30d": 1790,
   "trending_score": 10,
   "parameters": 35107181936,
   "parameters_human": "35.11B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Traduction",
-      "url": "https://translate.google.com/?hl=fr",
-      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
-    },
-    {
-      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
-      "url": "https://www.deepl.com/fr/translator",
-      "snippet": "Traduisez des textes et des documents complets en un instant. Des traductions précises accessibles aux utilisateurs uniques et aux …"
-    },
-    {
-      "title": "Reverso | Traduction gratuite, dictionnaire",
-      "url": "https://www.reverso.net/traduction-texte",
-      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
-    },
-    {
-      "title": "Google Translate",
-      "url": "https://translate.google.ca/",
-      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
-    },
-    {
-      "title": "Dictionnaire anglais-français | Traduction français | Reverso",
-      "url": "https://dictionnaire.reverso.net/anglais-francais/",
-      "snippet": "Dictionnaire Reverso anglais-français : des millions de mots et expressions en anglais avec leur traductions en français, exemples en …"
-    }
-  ]
+  "sources": []
 }

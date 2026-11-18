@@ -65,7 +65,7 @@
     "conversational"
   ],
   "likes": 2515,
-  "downloads_30d": 342048,
+  "downloads_30d": 338950,
   "trending_score": 10,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -85,31 +85,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions/9",
-      "snippet": "DavidAU/Qwen3.6-27B MTP Q8_0 GGUF Tested >200k context on 2 RTX 3090&#x27;s (48GB VRAM)"
-    },
-    {
-      "title": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf-davidau",
-      "snippet": "Overview Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF is a fine-tuned variant of Qwen3.6-27B maintained by DavidAU that achieves an ARC-C score of 0.711 in 8-bit quantization and 0.701 in 4-bit quantization—the first open-source model of its class to break the 700 threshold that previously belonged only to OpenAI, Claude, and Gemini. The model contains 27 billion ..."
-    },
-    {
-      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX ...",
-      "url": "https://howtospark.com/models/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "snippet": "Spark fit analysis for DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF: memory footprint, quantization options, and optimization recommendations for DGX Spark."
-    },
-    {
-      "title": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "url": "https://www.a2zai.ai/models/qwen3-6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf",
-      "snippet": "GitHub-native Checks: scorecards + shareable benchmark cards. Builder radar for launches, APIs, and outages."
-    }
-  ]
+  "sources": []
 }

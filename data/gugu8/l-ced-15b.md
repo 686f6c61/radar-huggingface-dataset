@@ -2,95 +2,87 @@
 
 ## Resumen
 
-L-CED-15B es un modelo publicado en Hugging Face por el usuario Gugu8 bajo identificador `Gugu8/L-CED-15B`. Según su propia model card, se trata de un modelo de arquitectura novedosa orientada a "agentic coding", descrita como un encoder-decoder causal con decodificador en bucle (recurrent depth) y enrutamiento tipo mezcla de expertos, con 15.000 millones de parámetros totales y entre 2.000 y 3.500 millones activos por token, y una ventana de contexto declarada de 1 millón de tokens "por etapas".
+L-CED-15B es un modelo de lenguaje publicado por el usuario Gugu8 en Hugging Face, presentado por su autor como una arquitectura híbrida de tipo encoder-decoder causal con mezcla de expertos (MoE) y decodificador con profundidad recurrente ("looped decoder"). El modelo se posiciona explícitamente como orientado a "agentic coding", es decir, tareas de generación de código y razonamiento multi-paso dentro de agentes, con un objetivo declarado de rendimiento en SWE-bench, Terminal-Bench y DeepSWE.
 
-La información disponible es extremadamente escasa: la model card apenas ocupa unas pocas líneas, remite a un fichero `ARCHITECTURE.md` que no se ha proporcionado y no incluye resultados de benchmarks, licencia, idiomas soportados ni formatos de pesos. El repositorio ocupa 36,5 GB y acumula 62 descargas y 0 likes en la fecha de consulta (metadatos fechados el 22 y el 23 de septiembre de 2026). No hay pipeline declarado.
+La model card describe una combinación de técnicas que el autor atribuye a una supuesta familia "DeepSeek V4.1-Flash": CED (causal encoder-decoder), CSA2, Engram, "Single-Pass mHC" y "DSpark", además de un enrutado denominado "Mixture-of-Recursions". El modelo declara 15.000 millones de parámetros totales, entre 2.000 y 3.500 millones activos, y un contexto escalonado de hasta 1 millón de tokens. La licencia es Apache 2.0 y el único idioma declarado es el inglés.
 
-Por tanto, esta ficha describe las afirmaciones del autor tal como aparecen, marcando explícitamente todo lo que no puede verificarse. No debe considerarse una evaluación independiente del modelo: no se ha confirmado que los pesos sean funcionales, que la arquitectura descrita exista tal cual ni que los objetivos de rendimiento declarados (SWE-bench, Terminal-Bench, DeepSWE) se hayan alcanzado.
+La información disponible es muy limitada: no hay pipeline declarado, no se publican resultados de benchmarks en la model card, no hay detalle del dataset de entrenamiento y el repositorio ocupa 3,3 TB, lo que sugiere pesos en precisión alta o múltiples checkpoints. La ficha siguiente refleja exclusivamente lo que el autor declara y marca como "no disponible" todo aquello que no se puede verificar con la información proporcionada.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Causal encoder-decoder con decodificador en bucle (recurrent depth) y enrutamiento MoE (Mixture-of-Recursions), según el autor; no verificable con la información disponible |
-| Parámetros totales | 15B (dato declarado por el autor) |
-| Parámetros activos | ~2-3,5B (dato declarado por el autor, rango no cerrado) |
-| Longitud de contexto | 1M tokens "staged" (declarado, sin detalle de implementación) |
+| Arquitectura | Encoder-decoder causal con MoE y decodificador recurrente ("looped decoder"); enrutado "Mixture-of-Recursions" |
+| Parámetros totales | 15B |
+| Parámetros activos | ~2-3,5B (según model card) |
+| Longitud de contexto | 1M tokens (declarado como "staged") |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de Hugging Face no la especifica) |
-| Formato de pesos | no disponible (el repositorio ocupa 36,5 GB, compatible con pesos en 16 bits, pero no se confirma el formato) |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | no disponible (repo de 3.337,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe una combinación de componentes con nombres propios que no se detallan en la información proporcionada: "DeepSeek V4.1-Flash CED + CSA2 + Engram + Single-Pass mHC + DSpark", además de un "decodificador en bucle" (recurente en profundidad) y un enrutamiento denominado "Mixture-of-Recursions". No hay especificación de si se trata de un transformer estándar modificado, de un híbrido con atención lineal o de un esquema de recurrencia sobre capas. El autor remite a un documento `ARCHITECTURE.md` que no forma parte de la información disponible, por lo que no es posible describir con rigor el mecanismo de atención, el número de capas, la dimensión oculta ni la composición exacta de los expertos.
+El autor describe una arquitectura que combina un encoder-decoder causal (CED) con atención CSA2, un componente denominado "Engram", un mecanismo "Single-Pass mHC" y "DSpark", junto con un decodificador con profundidad recurrente ("looped decoder") y un enrutado MoE llamado "Mixture-of-Recursions". Se trata de una propuesta de arquitectura "smartness-first", es decir, priorizar capacidad de razonamiento por parámetro activo frente a eficiencia pura de inferencia. No se especifica el número de capas, dimensión oculta, número de expertos, tamaño de los expertos ni la distribución de activaciones.
 
-Tampoco hay datos sobre el entrenamiento: no se indica el número de tokens, la composición del dataset, si hubo fases de ajuste por instrucciones, RLHF, DPO u otras técnicas de alineamiento, ni si se aplicaron métodos de decodificación especulativa. Los términos "CED", "CSA2", "Engram", "mHC" y "DSpark" no están documentados en la información disponible y no corresponden a componentes de uso común identificables, por lo que no se puede confirmar su significado técnico.
+No hay información sobre el volumen de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF, DPO o RL con verificación, ni sobre técnicas de decodificación especulativa. La model card remite a un archivo `ARCHITECTURE.md` para la especificación completa, pero su contenido no está incluido en la información proporcionada.
 
 ## Capacidades
 
-Todas las capacidades que se listan a continuación proceden de las afirmaciones del autor o de la orientación declarada del modelo, y no han podido verificarse:
-
-- Generación de código y razonamiento orientado a tareas de ingeniería de software ("agentic coding").
-- Ejecución de tareas multi-paso propias de agentes (resolución de issues, navegación de repositorios).
-- Ventana de contexto declarada de 1M tokens, útil para codebases extensos, aunque sin detalles de cómo se gestiona la memoria.
-- Enrutamiento MoE con pocos parámetros activos, lo que en teoría reduce el coste de inferencia por token.
+- Generación de texto y razonamiento en inglés, según el único idioma declarado.
+- Generación y edición de código orientada a tareas de ingeniería de software ("agentic coding").
+- Razonamiento multi-paso para agentes, con contexto declarado de hasta 1M tokens.
+- Enrutado MoE con activación parcial (~2-3,5B de 15B), lo que reduce el coste computacional por token frente a un modelo denso del mismo tamaño.
+- Profundidad recurrente ("looped decoder"), que en teoría permite reutilizar bloques para aumentar el cómputo efectivo por token.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponible.
-- Capacidades multilingües: no disponible.
-- Modo de razonamiento explícito ("thinking mode"): no disponible.
+- Capacidades de visión o audio: no disponibles.
+- Modo "thinking" explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-Los siguientes escenarios son aplicaciones plausibles dado el enfoque declarado del modelo, pero deben considerarse hipotéticos hasta que existan pesos funcionales verificados y licencia conocida:
-
-- Resolución automática de incidencias en repositorios: un agente podría leer el código del proyecto, localizar el fallo y proponer un parche, aprovechando la ventana de 1M tokens para mantener el contexto del repositorio. Es el escenario objetivo declarado (SWE-bench).
-- Agente de terminal orientado a tareas de administración y scripting: interpretaría instrucciones en lenguaje natural y ejecutaría comandos de forma iterativa, con verificación del resultado en cada paso. Corresponde al objetivo declarado en Terminal-Bench.
-- Refactorización de módulos extensos: con contexto largo, el modelo podría reescribir ficheros completos manteniendo coherencia entre dependencias internas.
-- Revisión de código en pipelines de CI/CD: integrado como paso de revisión automática en pull requests para detectar errores, malas prácticas o problemas de seguridad.
-- Generación de pruebas unitarias: a partir del código fuente y de la cobertura existente, producir tests que cubran rutas no ejercitadas.
-- Migración de dependencias y actualización de frameworks: aplicar cambios repetitivos a lo largo de un repositorio siguiendo reglas de transformación.
-- Documentación técnica automática: generar docstrings y documentación de API a partir del código y de su historial de cambios.
+- Agentes de ingeniería de software: el modelo está entrenado y posicionado para resolver issues y parchear repositorios; su contexto de 1M tokens permitiría cargar árboles de proyecto completos y trazas de ejecución en una sola ventana.
+- Asistente de revisión de código en CI/CD: con activación MoE de ~2-3,5B, el coste por token es bajo, lo que lo hace viable para analizar diffs y PRs en pipelines automatizados.
+- Reparación de tests fallidos: el objetivo declarado en Terminal-Bench sugiere uso en bucles de ejecución de comandos, lectura de errores y generación de parches iterativos.
+- Migración de código legacy: la ventana de 1M tokens permite procesar módulos completos y mantener coherencia entre ficheros durante refactorizaciones.
+- Generación de documentación técnica a partir de código: el modelo puede resumir APIs y generar guías a partir de repositorios extensos.
+- Automatización de tareas de terminal: dado su enfoque en Terminal-Bench, encaja en agentes que ejecutan comandos y validan resultados.
+- Exploración de arquitecturas MoE recurrentes en investigación: su combinación de decoder recurrente y enrutado por recursión es un caso de estudio para quienes investigan eficiencia por parámetro activo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona como objetivo "frontier reasoning per active param on SWE-bench / Terminal-Bench / DeepSWE", pero no incluye ninguna puntuación numérica, configuración de evaluación ni comparación con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona SWE-bench, Terminal-Bench y DeepSWE como objetivos de evaluación, pero no incluye cifras.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones derivadas del recuento de parámetros declarado (15B) y de cálculos estándar de tamaño de pesos; no proceden de mediciones sobre el modelo:
-
-- Pesos en BF16/FP16: aproximadamente 30 GB, más estados de activación y caché KV. Requiere GPU de 40-80 GB (A100 80 GB, H100 80 GB) para una ejecución holgada.
-- Pesos en INT8: aproximadamente 15 GB. Cabe en una RTX 4090 (24 GB) con margen limitado para caché KV.
-- Pesos en INT4: aproximadamente 7,5-8 GB. Cabe en GPUs de consumo como RTX 3090, RTX 4090 o RTX 4080.
-- Nota sobre MoE: aunque solo se activen 2-3,5B parámetros por token, en una implementación estándar todos los parámetros deben residir en memoria (o aplicarse offloading), por lo que el requisito de memoria viene marcado por los 15B totales, no por los activos.
-- Nota sobre contexto: una ventana de 1M tokens implicaría una caché KV muy grande si se usa atención densa; la arquitectura declarada (en bucle, MoE) no permite estimar su coste real.
-- Opciones de despliegue: no disponible. No se confirma compatibilidad con vLLM, TGI, llama.cpp u Ollama, ni la existencia de pesos en formato GGUF. Una arquitectura no estándar (decodificador recurrente, enrutamiento MoE específico) requeriría presumiblemente kernels personalizados y podría no ser soportada por los frameworks habituales sin adaptación.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en FP16/BF16: ~30 GB solo para pesos (15B × 2 bytes), más overhead de KV cache; con contexto de 1M tokens la caché puede ser muy grande y requerir técnicas de atención eficiente.
+- VRAM estimada en cuantización de 8 bits: ~15-16 GB para pesos; en 4 bits: ~8-9 GB, aunque no se confirman formatos GGUF/AWQ/GPTQ en la información disponible.
+- GPU recomendadas: A100 80 GB o H100 para contexto largo sin cuantizar; RTX 4090 (24 GB) podría ejecutar el modelo en 8 bits con contexto moderado, no con 1M tokens.
+- Cabe en GPU de consumo: probablemente en RTX 4090 o RTX 3090 con cuantización de 8/4 bits y contexto reducido, siempre que existan pesos cuantizados, cosa que no se confirma.
+- Opciones de despliegue: no disponible; no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable. No se dispone de datos de rendimiento del modelo y los componentes de arquitectura referenciados (incluido "DeepSeek V4.1-Flash") no están documentados en la información proporcionada, por lo que no puede identificarse una familia de modelos realmente equivalente.
-
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Gugu8/L-CED-15B | 15B totales, ~2-3,5B activos (declarado) | 1M (declarado, "staged") | no disponible | no disponible | Repositorio Hugging Face, 62 descargas |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| L-CED-15B | 15B | ~2-3,5B | 1M (declarado) | Apache 2.0 | no disponibles |
+| Modelos MoE de ~15B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información suficiente para establecer una comparativa fiable con alternativas concretas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Model card mínima: no incluye datos de entrenamiento, evaluación, licencia, idiomas ni formato de pesos. La evaluación de idoneidad para producción es imposible con esta información.
-- Afirmaciones no verificadas: la arquitectura descrita y los objetivos de rendimiento son declaraciones del autor sin evidencia publicada. Los nombres de componentes técnicos no están documentados y no pueden comprobarse.
-- Licencia indefinida: al no especificarse licencia, no puede asumirse permiso para uso comercial ni redistribución. Cualquier uso en producción queda sujeto a aclaración previa con el autor.
-- Riesgo de alucinación: no evaluado; no hay datos de fiabilidad ni de tasas de error.
-- Adopción muy baja: 62 descargas y 0 likes, sin pipeline declarado, lo que indica ausencia de validación por parte de la comunidad.
-- Sin datos de sesgo ni de comportamiento multilingüe.
-- Posible incompatibilidad con toolchains estándar: si la arquitectura es tan singular como se describe, es probable que requiera código de inferencia específico no incluido en los frameworks habituales.
-- Fechas de los metadatos inusuales (creación el 22 de septiembre de 2026, actualización el 23 de septiembre de 2026), que conviene verificar antes de dar por buena la cronología del repositorio.
-- El repositorio ocupa 36,5 GB, pero no se confirma que contenga pesos utilizables ni que el modelo sea cargable.
+- Solo se declara inglés como idioma; el rendimiento en castellano no está garantizado.
+- No hay benchmarks publicados que respalden las afirmaciones de rendimiento en SWE-bench, Terminal-Bench o DeepSWE.
+- La model card es escasa y remite a documentación no incluida; no se detallan datos de entrenamiento, sesgos ni procesos de alineación.
+- Riesgo de alucinación no evaluado; sin datos de RLHF/DPO no se puede estimar el grado de alineación.
+- El contexto de 1M tokens se describe como "staged", lo que sugiere que puede no estar plenamente operativo o requerir configuración adicional.
+- El repositorio ocupa 3,3 TB, lo que implica un coste de almacenamiento y descarga elevado y dificulta su uso en entornos con recursos limitados.
+- La licencia Apache 2.0 permite uso comercial, pero al no haber evaluación independiente conviene validar el modelo en el dominio objetivo antes de producción.
+- El autor solicita explícitamente seguidores y "likes" en la model card, lo que no afecta a la licencia pero indica un proyecto en fase temprana y con poca validación comunitaria (1 like, 24.161 descargas en la fecha de los datos).
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Gugu8/L-CED-15B
-- `ARCHITECTURE.md`: referenciado en la model card, no disponible en la información proporcionada.
-- Paper, blog, repositorio de código o demo: no disponibles.
+- ARCHITECTURE.md: referenciado en la model card, no disponible en la información proporcionada.
+- Paper, blog, repositorio o demo: no disponibles.

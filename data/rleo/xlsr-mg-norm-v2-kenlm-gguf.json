@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "rleo/xlsr-mg-norm-v2-kenlm-GGUF",
+  "slug": "rleo-xlsr-mg-norm-v2-kenlm-gguf",
+  "author": "rleo",
+  "url": "https://huggingface.co/rleo/xlsr-mg-norm-v2-kenlm-GGUF",
+  "created_at": "2026-11-18T04:04:30.000Z",
+  "updated_at": "2026-11-18T04:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "wav2vec2-rs",
+  "languages": [
+    "mg"
+  ],
+  "tags": [
+    "wav2vec2-rs",
+    "gguf",
+    "wav2vec2",
+    "xls-r",
+    "malagasy",
+    "ctc",
+    "kenlm",
+    "automatic-speech-recognition",
+    "mg",
+    "base_model:malagasy-asr/xlsr-mg-norm-v2-kenlm",
+    "base_model:quantized:malagasy-asr/xlsr-mg-norm-v2-kenlm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1114936192,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "malagasy-asr/xlsr-mg-norm-v2-kenlm",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 5660,
+  "downloads_30d": 5635,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Content Security Policy: The page's settings blocked the loading of …",
-      "url": "https://stackoverflow.com/questions/37298608/content-security-policy-the-pages-settings-blocked-the-loading-of-a-resource",
-      "snippet": "May 18, 2016 · One reason for \"Content Security Policy: The page’s settings blocked the loading of a resource\" is if JavaScript is not …"
-    },
-    {
-      "title": "Content Security Policy: The page's settings blocked the loading of …",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP/Errors/CSPViolation",
-      "snippet": "Jul 4, 2025 · The warning \"Content Security Policy: The page's settings blocked the loading of a resource: xyz\" occurs when the …"
-    },
-    {
-      "title": "Content Security Policy errors and warnings - HTTP | MDN",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP/Errors",
-      "snippet": "Dec 15, 2025 · When you see any of the following messages logged in the browser devtools console, it indicates that a problem …"
-    },
-    {
-      "title": "Loading of a resource blocked by Content Security Policy",
-      "url": "https://stackoverflow.com/questions/56386307/loading-of-a-resource-blocked-by-content-security-policy",
-      "snippet": "Content Security Policy (CSP) is a mechanism to help prevent Cross-Site Scripting (XSS) and is best handled at server side; please …"
-    },
-    {
-      "title": "CSP Allow Inline Scripts - Content-Security-Policy",
-      "url": "https://content-security-policy.com/examples/allow-inline-script/",
-      "snippet": "One of the easiest ways to allow inline scripts when using CSP is to use a nonce. A nonce is just a random, single use string value …"
-    }
-  ]
+  "sources": []
 }

@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 17443,
+  "downloads_30d": 17655,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AriaVale2/my-safetensors-backup · Hugging Face",
-      "url": "https://huggingface.co/AriaVale2/my-safetensors-backup",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "AriaVale2/my-safetensors-backup at main - Hugging Face",
-      "url": "https://huggingface.co/AriaVale2/my-safetensors-backup/blob/main/ntrnetorare.safetensors",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "SSD Failure and AI Model Files: Recovery After Drive Failure 2026",
-      "url": "https://ritridata.com/ai-tool-recovery/ssd-failure-ai-model-files-recovery",
-      "snippet": "SSD failed and you lost AI model files? Learn how to recover .safetensors, .gguf, .pkl, and checkpoint files after SSD failure in 2026."
-    },
-    {
-      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
-      "url": "https://civitaiarchive.com/",
-      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
-    },
-    {
-      "title": "TensorDrive — Store and Share AI Models",
-      "url": "https://tensordrive.app/",
-      "snippet": "The simplest way to store and share .safetensors AI models. No quotas, no rate limits, no AWS setup."
-    }
-  ]
+  "sources": []
 }

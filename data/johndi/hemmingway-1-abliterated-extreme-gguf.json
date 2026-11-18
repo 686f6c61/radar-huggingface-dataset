@@ -20,15 +20,15 @@
     "creative-writing",
     "roleplay",
     "text-generation",
-    "base_model:Altworld/Hemmingway-1",
-    "base_model:quantized:Altworld/Hemmingway-1",
+    "base_model:HemmingwayAI/Hemmingway-1",
+    "base_model:quantized:HemmingwayAI/Hemmingway-1",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
   "likes": 11,
-  "downloads_30d": 4113,
+  "downloads_30d": 4162,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.de/",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com/",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com/?hl=de",
-      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com.nf/?hl=de-US",
-      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com"
-    },
-    {
-      "title": "Google Übersetzer",
-      "url": "https://translate.google.de/",
-      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
-    }
-  ]
+  "sources": []
 }

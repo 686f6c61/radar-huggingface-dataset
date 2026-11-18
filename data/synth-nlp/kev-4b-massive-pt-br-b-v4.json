@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Synth-NLP/kev-4b-massive-pt-br-B-v4",
+  "slug": "synth-nlp-kev-4b-massive-pt-br-b-v4",
+  "author": "Synth-NLP",
+  "url": "https://huggingface.co/Synth-NLP/kev-4b-massive-pt-br-B-v4",
+  "created_at": "2026-11-15T22:37:13.000Z",
+  "updated_at": "2026-11-15T22:37:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "kev",
+    "decision-model",
+    "intent-classification",
+    "massive",
+    "pt-br",
+    "lora",
+    "pt",
+    "base_model:jaredpalmer/kev-4b",
+    "base_model:adapter:jaredpalmer/kev-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155162316,
+  "storage_human": "155 MB",
+  "context_length": null,
+  "base_model": "jaredpalmer/kev-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

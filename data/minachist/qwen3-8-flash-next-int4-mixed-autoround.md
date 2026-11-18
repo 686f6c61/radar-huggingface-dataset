@@ -2,112 +2,127 @@
 
 ## Resumen
 
-Minachist/Qwen3.8-Flash-Next-INT4-Mixed-AutoRound es una cuantizacion comunitaria de precision mixta del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Minachist. No es un modelo entrenado desde cero, sino una conversion de pesos a 4,21 bits por peso (bpw) de media mediante AutoRound, con el objetivo explicito de ejecutar un modelo de mezcla de expertos de gran tamano en tres tarjetas graficas de consumo RTX 3090 de 24 GB.
+Qwen3.8-Flash-Next-INT4-Mixed-AutoRound es una cuantización de precisión mixta (INT4/INT6) del modelo multimodal Qwen3.8-Flash-Next, publicada por el usuario Minachist. El trabajo combina AutoRound para la calibración de pesos con una asignación heterogénea de bits por capa (media de 4,178 bits por peso en el cuerpo del modelo), orientada a reducir el uso de VRAM sin degradar de forma apreciable la fidelidad respecto al modelo original en BF16. El resultado es un checkpoint de aproximadamente 139.700 millones de parámetros y 349,7 GB en el repositorio, empaquetado en safetensors con el formato `compressed-tensors`.
 
-El modelo base es un MoE de 125B-A6B (512 expertos enrutados por capa, top-10) con atencion dispersa Qwen Sparse Attention (QSA) en 12 capas de atencion completa, una tabla de embeddings PLE de n-gramas de 51,2B de parametros que se consulta una vez por token en la capa 2, un modulo MTP de prediccion multi-token y una torre de vision. El checkpoint cuantizado ocupa 175,3 GB en disco y declara 139.734.687.635 parametros segun los metadatos de safetensors.
+La relevancia de esta publicación no reside solo en la cuantización, sino en el parche de vLLM que la acompaña: permite ejecutar un modelo de este tamaño con contexto de 262.144 tokens sobre tres GPU de 24 GB (RTX 3090 en la medición del autor), e incluso sobre dos tarjetas recurriendo a RAM del host para parte de los expertos. Esto rebaja sustancialmente la barrera de hardware para un modelo de clase frontera con entrada de imagen y texto.
 
-Su relevancia es practica: demuestra que un modelo de este tamano puede servirse con 262.144 tokens de contexto y 4 peticiones concurrentes sobre 72 GB de VRAM consumer, a costa de paralelismo de pipeline, offload de la cache K/V de QSA a memoria del host y lectura de la tabla PLE por mmap desde NVMe. El repositorio incluye ademas un parche de vLLM necesario para que todo esto funcione.
+El modelo base es multimodal (`image-text-to-text`), con arquitectura de mezcla de expertos según se deduce del uso de "expertos en RAM del host" y del soporte de decodificación especulativa MTP. La licencia es `qwen-community-1.0`, distinta de las licencias permisivas habituales, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con Qwen Sparse Attention (QSA) en 12 capas de atencion completa, capas de atencion lineal, hyper-connections, tabla de embeddings PLE de n-gramas, modulo MTP y torre de vision |
-| Parametros totales | 139.734.687.635 segun metadatos de safetensors; la model card describe el modelo como 125B-A6B mas una tabla PLE de 51,2B (las cifras no cuadran exactamente entre si) |
-| Parametros activos | ~6B (denominacion A6B del modelo base); 512 expertos enrutados por capa con enrutado top-10 |
-| Longitud de contexto | 262.144 tokens (objetivo de diseno de la cuantizacion) |
-| Tipos de cuantizacion | Precision mixta AutoRound: INT4 gs128 (expertos enrutados MoE), INT6 gs64 (linear_attn, proyecciones q/k/v/o de QSA, experto compartido), INT8 gs64 (mixers de baja dimension de hyper-connections), INT8 gs128 (lm_head, embed_tokens, key_proj y value_proj de PLE, index_qk_proj). BF16 sin cuantizar: tabla PLE, modulo MTP, torre de vision y router (mlp.gate). Media global 4,21 bpw; cuerpo 4,205 bpw |
+| Arquitectura | Transformer multimodal con mezcla de expertos (MoE), según se deduce del despliegue por expertos; detalles completos no disponibles |
+| Parametros totales | 139.734.687.635 |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (hasta 524.288 con YaRN en la build de 2x24 GB) |
+| Tipos de cuantizacion | INT4/INT6 mixto con AutoRound; media de 4,178 bits por peso en el cuerpo |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (license_name: qwen-community-1.0, license: other) |
-| Formato de pesos | safetensors con compressed-tensors en modo pack-quantized y cuantizacion simetrica por grupos |
+| Licencia | qwen-community-1.0 (etiquetada como `other`) |
+| Formato de pesos | safetensors con `compressed-tensors`; existen GGUF de terceros (Unsloth) y EXL3 (Turboderp) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es una derivacion cuantizada, no un modelo entrenado, por lo que no hay informacion sobre tokens de entrenamiento, composicion del dataset ni etapas de RLHF o DPO. Lo que si detalla la model card es la arquitectura del modelo base: un MoE de 125B-A6B con 512 expertos enrutados por capa y enrutado top-10, en el que la mayor parte del peso (58,0 GiB, el 92% del cuerpo) corresponde a los expertos enrutados. La atencion combina capas de atencion lineal con 12 capas de atencion completa basadas en QSA (Qwen Sparse Attention). El modelo incorpora ademas un modulo MTP para prediccion multi-token, una torre de vision (pipeline image-text-to-text) y una tabla de embeddings PLE de n-gramas de 51,2B de parametros en BF16 que se consulta una unica vez por token en la capa 2.
+El checkpoint es una cuantización, no un entrenamiento desde cero. La arquitectura subyacente corresponde a Qwen3.8-Flash-Next, un modelo multimodal de tipo mezcla de expertos: el autor distribuye pesos por GPU y coloca parte de los expertos en RAM del host cuando no caben en VRAM, lo que confirma el enrutamiento por expertos. El proceso de cuantización emplea AutoRound con asignación mixta de bits (INT4 e INT6) y calibración específica; la rama `new-main` regenera los datos de calibración con una versión de mayor precisión del propio modelo, lo que reduce el KLD medio de 0,014705 a 0,011680 y la mediana de 0,000872 a 0,000620 frente a la referencia BF16.
 
-La innovacion tecnica de este repositorio esta en la cuantizacion y en el parche de vLLM que la acompana. La cuantizacion usa cuatro esquemas distintos segun la sensibilidad de cada bloque, dejando en BF16 el router, la tabla PLE, el modulo MTP y la torre de vision. El parche anade un backend mmap para la tabla PLE (95,37 GiB que se leen desde disco con accesos aleatorios de 4 KiB y nunca residen en memoria), coloca la K/V principal de QSA en memoria del host fijada (pinned) tras una vista UVA, implementa prefill por etapas para esa K/V alojada en host, corrige allocate_kv_cache en vLLM y habilita PP>1 para modelos con PLE.
+El parche de vLLM incluido es una innovación destacable en sí misma: implementa caché de prefijo, entrada de imágenes, soporte de MTP (decodificación especulativa multi-token) y un pool de K/V fijado en memoria del host (67,8 GiB en la build de 3x24 GB). No se dispone de información sobre el volumen de tokens de entrenamiento del modelo base, la composición del dataset ni las etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno (pipeline conversacional declarado).
-- Comprension de imagen y texto (image-text-to-text) mediante la torre de vision, disponible solo en la build de cuatro tarjetas.
-- Contexto largo de hasta 262.144 tokens, con decodificacion plana medida de 3,6k a 248k tokens.
-- Prediccion multi-token (MTP) mediante cabecera draft, solo en la build de 4x RTX 3090, que segun el autor aun no ha sido probada.
-- Procesamiento concurrente: la cache K/V medida admite 1.067.300 tokens, equivalente a 4,07 veces el contexto maximo, lo que permite 4 peticiones simultaneas de contexto completo.
-- Atribucion de tokens a la tabla PLE de n-gramas como mecanismo de memoria de secuencia larga.
-- Soporte de tool calling / function calling: no disponible en la informacion.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
-- Capacidades multilingues: no disponible en la informacion.
+- Generación de texto y razonamiento de varios pasos, con modo de razonamiento explícito (los benchmarks se puntúan tras eliminar la traza de razonamiento).
+- Entrada multimodal de imagen y texto (`image-text-to-text`), con soporte de imágenes en las tres builds del parche.
+- Generación de código: LiveCodeBench v6 pass@1 de 92,4 en esta cuantización.
+- Razonamiento científico y matemático de nivel experto: GPQA Diamond de 90,4.
+- Seguimiento de instrucciones complejas: IFBench prompt-level loose de 81,0.
+- Contexto largo real: hasta 262.144 tokens por petición con cuatro peticiones concurrentes en 3x24 GB.
+- Decodificación especulativa MTP opcional, que acelera un único flujo entre un 18 % y un 43 %.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de documentos extensos en local: con 262.144 tokens de contexto, el modelo puede ingerir libros tecnicos, expedientes o auditorias completas en una sola pasada sin troceado ni recuperacion externa, algo viable porque la decodificacion se mantiene plana a 60 tok/s incluso a 248k tokens de contexto.
-- Servicio de inferencia multiusuario en hardware de consumo: con 4 peticiones concurrentes y un rendimiento agregado de 150-156 tok/s sobre 3x RTX 3090, resulta adecuado para equipos pequenos que necesitan un endpoint interno sin depender de GPUs de datacenter.
-- Asistencia sobre repositorios de codigo grandes: el contexto de 262k tokens permite cargar modulos completos o varios ficheros de un monorepo y responder preguntas de arquitectura o refactorizacion, siempre que la build de tres tarjetas se use como modelo solo de texto.
-- Procesamiento de documentos con imagen: en la build de 4x RTX 3090, con la torre de vision activada, el modelo puede abordar OCR, extraccion de tablas y preguntas sobre capturas o PDFs escaneados combinando imagen y texto en el mismo prompt.
-- Despliegue en entornos aislados (air-gapped): todo el stack (pesos, parche de vLLM, Dockerfile y compose.yaml) es local y no requiere servicios externos, lo que encaja en organizaciones con requisitos de confidencialidad estrictos.
-- Indexacion y resumen de corpus masivos con RAG: la tabla PLE y el contexto largo reducen la necesidad de trocear el corpus, permitiendo concatenar muchos fragmentos recuperados en un unico prompt sin perder coherencia.
-- Experimentacion en investigacion sobre cuantizacion: el repositorio documenta con detalle esquema por esquema (INT4 gs128, INT6 gs64, INT8 gs64, INT8 gs128) y medidas reales de VRAM, RAM y throughput, lo que lo convierte en una referencia para estudiar el impacto de la precision mixta en MoE grandes.
+- Análisis de documentación técnica extensa: con 262.144 tokens de contexto se pueden cargar manuales completos, repositorios de código o expedientes y formular preguntas sobre ellos sin fragmentación, manteniendo cuatro conversaciones simultáneas en tres RTX 3090.
+- Procesamiento de documentos con imágenes: la entrada `image-text-to-text` permite extraer y razonar sobre diagramas, capturas de pantalla, tablas escaneadas y figuras dentro de un mismo flujo, útil en auditoría documental o extracción de datos de informes.
+- Asistencia a la investigación científica: el rendimiento en GPQA Diamond (90,4) lo hace adecuado para responder preguntas de posgrado en física, química y biología, por ejemplo en triaje de literatura o generación de hipótesis preliminares.
+- Generación de código en pipelines internos: con 92,4 en LiveCodeBench v6 puede emplearse para resolver problemas de programación y autocompletar funciones en un entorno de integración continua, siempre que se valide la salida con tests automáticos.
+- Despliegue en laboratorios con hardware de consumo: la build de 2x24 GB permite servir el modelo en dos RTX 3090 con parte de los expertos en RAM del host, a 81-90 tok/s de decodificación, lo que hace viable la experimentación académica con un modelo de 139.700 millones de parámetros.
+- Agentes de contexto largo con caché de prefijo: al soportar prefix caching, un mismo system prompt extenso (por ejemplo, políticas de empresa o especificaciones de producto) se reutiliza entre peticiones, reduciendo el coste de prefill en asistentes conversacionales multi-turno.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye datos de KLD y benchmarks frente a BF16, lo que lo convierte en una referencia práctica para estudiar el impacto de la cuantización mixta en modelos MoE multimodales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor unicamente reporta medidas de rendimiento de inferencia sobre 3x RTX 3090 con 125 GiB de RAM:
+Resultados de tarea de la rama `main`, comparados con las cifras oficiales en BF16:
 
-| Metrica | Valor medido |
-|---|---|
-| Pesos residentes en GPU | 65,05 GiB (21,6 GiB x 3; cuerpo a 4,205 bpw) |
-| Cache K/V | 1.067.300 tokens (4,07 x 262.144) |
-| RAM del host | ~63 GiB (47,5 GiB de ellos el pool fijado de K/V de QSA) |
-| Tabla PLE de n-gramas | 95,37 GiB, leida desde disco, nunca residente |
-| Decodificacion, 1 peticion | 60 tok/s, plana de 3,6k a 248k de contexto |
-| Decodificacion, 4 peticiones | 150-156 tok/s totales |
-| Prefill a 248k | ~3.700 tok/s |
+| Benchmark | Esta cuantizacion | Oficial (BF16) | ± 1 SE |
+|---|---|---|---|
+| IFBench, prompt-level loose | 81,0 | 81,3 | 2,3 |
+| GPQA Diamond | 90,4 | 91,7 | 2,1 |
+| LiveCodeBench v6, pass@1 | 92,4 | 91,9 | 2,3 |
 
-El parche de decodificacion incluido en el repositorio se describe como una mejora de 45 a 80 tok/s, cifra que no coincide con los 60 tok/s de la tabla anterior.
+Desglose por dominio y dificultad: GPQA Diamond física 95,3, química 87,1, biología 84,2. LiveCodeBench v6 fácil 100, medio 94,9, difícil 86,9 (131 problemas entre 2025-02-01 y 2025-04-06). IFBench estricto: 73,3 prompt-level y 76,2 instruction-level; loose instruction-level 83,4.
+
+Fidelidad frente a BF16 (KLD, menor es mejor):
+
+| Cuantizacion | Bits por peso | KLD medio | KLD mediana |
+|---|---|---|---|
+| AutoRound `main` | 4,178 | 0,014705 | 0,000872 |
+| AutoRound `new-main` | 4,178 | 0,011680 | 0,000620 |
+
+Rendimiento medido en 3x RTX 3090 (PCIe 4.0 x16) con 125 GiB de RAM:
+
+| Metrica | 3x24GB | 3x24GB+MTP | 2x24GB |
+|---|---|---|---|
+| VRAM por GPU (pesos, con torre de visión) | 21,20 / 20,44 / 21,05 GiB | 21,20 / 21,71 / 21,18 GiB | 18,8 / 18,6 GiB + 13 GiB de expertos en RAM por tarjeta |
+| Contexto | 262.144 x 4 peticiones | 262.144 x 2 peticiones | 262.144 x 2, o 524.288 x 2 con YaRN |
+| RAM del host | ~85 GiB (67,8 GiB de pool K/V fijado) | 41,2 GiB de pool K/V | ~77 GiB (40,0 GiB de pool, 26 GiB de expertos) |
+| Disco | 95,37 GiB de tabla en NVMe | igual | igual |
+| Decodificación, 1 petición, prompt corto | 95-99 tok/s | 117-141 tok/s | 81-90 tok/s |
+| Decodificación, 1 petición, contexto 8k-160k | 83-96 tok/s | 110-116 tok/s | 84-87 tok/s |
+| Decodificación, 2 peticiones | 188 tok/s total | 190 tok/s total | 150 tok/s total (135 con dos prompts de 224k) |
+| Decodificación, 4 peticiones | 243-245 tok/s total | 188 tok/s total | 2 simultáneas tal como se distribuye |
+| Prefill | ~3.700 tok/s a 248k; 5.913-5.947 tok/s a 39k | 5.613-5.809 tok/s a 39k | ~2.000 tok/s a 516k; ~2.300 a 256k; 2.494-2.499 a 39k |
 
 ## Requisitos de hardware
 
-- VRAM: 72 GB o mas. Los pesos ocupan 65 GB, por lo que no caben en menos de tres tarjetas. La configuracion medida usa 3x RTX 3090 de 24 GB.
-- La VRAM es demasiado ajustada para tensor parallelism; el autor emplea pipeline parallelism, con cada tarjeta alojando un conjunto distinto de capas.
-- Una cuarta tarjeta no amplia el contexto: anade la cabecera draft de MTP y la torre de vision. Con 4x 3090, TP=4 con PP=1 podria funcionar, pero requeriria parches propios.
-- RAM del host: 65 GB libres o mas para el pool de K/V de QSA descargado a memoria; unos 70 GB con cuatro tarjetas, porque la cabecera draft anade una decimotercera capa de atencion dispersa con su propio pool.
-- Almacenamiento: 96 GB o mas de almacenamiento local rapido para el fichero de la tabla PLE. El parche realiza accesos aleatorios de 4 KiB, por lo que requiere NVMe; no es viable en disco duro ni en NFS.
-- Software: vLLM 0.29.1rc1.dev47+gdc36fcce9 o un nightly cercano. El parche aplica contra vllm/vllm-openai@sha256:43f13b4c624ab9e9e6753d0eeb5953268bff334f2a826239e6f4a2197d47bb96. El repositorio incluye Dockerfile y compose.yaml para construir la imagen parcheada.
-- GPU de datacenter: no disponible en la informacion (el autor solo documenta RTX 3090).
-- Opciones de despliegue: exclusivamente vLLM parcheado. No se documentan llama.cpp, Ollama, TGI ni otros runners; el formato compressed-tensors pack-quantized y las dependencias del parche lo limitan a este stack.
-- Latencia y throughput: 60 tok/s por peticion y 150-156 tok/s agregados con 4 peticiones en 3x RTX 3090; prefill de ~3.700 tok/s a 248k tokens.
+- VRAM: 21,20 / 20,44 / 21,05 GiB por GPU en la configuración de tres tarjetas de 24 GB; 18,8 / 18,6 GiB por tarjeta en la de dos, más 13 GiB de expertos en RAM del host por tarjeta.
+- GPU recomendadas: RTX 3090 (medición real del autor); la build `2x32GB` está pensada para RTX 5090 y similares; no se han publicado pruebas en A100 ni H100.
+- Cabe en GPU de consumo: sí, en tres RTX 3090 de 24 GB, o en dos RTX 3090 con 125 GiB de RAM de sistema; en dos RTX 5090 de 32 GB según la build `2x32GB`.
+- RAM del host: ~85 GiB en 3x24GB, ~77 GiB en 2x24GB, 41,2 GiB de pool K/V en 3x24GB+MTP; el autor usó un sistema con 125 GiB.
+- Almacenamiento: 95,37 GiB de fichero de tabla en NVMe, además de los pesos; el repositorio completo ocupa 349,7 GB.
+- Despliegue: exclusivamente vLLM con el parche incluido en el repositorio (`vllm-patch/3x24GB/`, `vllm-patch/3x24GB+MTP/`, `vllm-patch/2x24GB/`, `vllm-patch/2x32GB/`). Para llama.cpp u Ollama existen GGUF de terceros (Unsloth); para EXL3, la publicación de Turboderp.
+- Throughput: 243-245 tok/s agregados con cuatro peticiones en 3x24GB; prefill de hasta 5.947 tok/s a 39k tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | VRAM necesaria | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Minachist/Qwen3.8-Flash-Next-INT4-Mixed-AutoRound | 139,7B (A6B activos) | 262.144 tokens | Precision mixta 4,21 bpw (INT4/INT6/INT8 + BF16 parcial) | 72 GB+ (3x RTX 3090) | qwen-community-1.0 | Publicado en Hugging Face; requiere parche propio de vLLM |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | 125B-A6B declarados | no disponible | BF16 | no disponible (estimado en torno a 260 GiB solo para los pesos, calculado a partir de los parametros declarados) | qwen-community-1.0 | Publicado en Hugging Face |
-| Otras cuantizaciones del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-INT4-Mixed-AutoRound (este) | 139.734.687.635 | 262.144 (524.288 con YaRN) | INT4/INT6 AutoRound, 4,178 bits medios | qwen-community-1.0 | safetensors + parche vLLM |
+| Qwen3.8-Flash-Next (BF16) | no disponible | 262.144 | BF16 | qwen-community-1.0 | safetensors |
+| Qwen3.8-Flash-Next-GGUF (Unsloth) | no disponible | no disponible | GGUF | qwen-community-1.0 | GGUF |
+| Qwen3.8-Flash-Next-exl3 (Turboderp) | no disponible | no disponible | EXL3 | qwen-community-1.0 | EXL3 |
 
-No se dispone de informacion sobre cuantizaciones alternativas del mismo modelo base ni sobre modelos comparables de otros autores, por lo que la comparativa se limita al modelo original sin cuantizar.
+No se dispone de datos de benchmarks de las alternativas GGUF y EXL3 en la información proporcionada; solo se citan como puntos de referencia de KLD en la gráfica de qbench, que no equivale a una comparación de puntuaciones de tareas.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion introduce perdida de precision no cuantificada: no se han publicado evaluaciones de calidad que comparen esta version con el modelo base en BF16, por lo que se desconoce la degradacion real en tareas de razonamiento, codigo o matematicas.
-- Es una cuantizacion no oficial, realizada por un tercero (Minachist) y no por el equipo de Qwen. No debe asumirse el mismo comportamiento que el checkpoint oficial.
-- Requiere un parche especifico de vLLM aplicado contra un commit concreto. Actualizar vLLM a otra version puede romper la compatibilidad.
-- El despliegue solo funciona con pipeline parallelism; se descarta tensor parallelism por falta de VRAM.
-- Dependencia critica de almacenamiento NVMe para la tabla PLE (95,37 GiB leidos con accesos aleatorios de 4 KiB). Un disco lento degradara gravemente el rendimiento.
-- La build de tres tarjetas es solo texto: omite la torre de vision mediante --language-model-only. Las capacidades de imagen requieren cuatro tarjetas.
-- La build de cuatro tarjetas, con MTP y vision, esta marcada como no probada por el propio autor.
-- La cabecera MTP y la torre de vision no se recuantizan: permanecen en BF16 tal cual estan en el checkpoint.
-- Riesgo de alucinacion: inherente a los modelos generativos; no se aportan evaluaciones de fidelidad ni tasas de error medidas.
-- Idiomas soportados: no declarados en la model card; se desconoce la cobertura multilingue efectiva.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Licencia qwen-community-1.0: es una licencia "other" con nombre propio; es imprescindible revisar el texto completo (LICENSE) antes de cualquier uso comercial, ya que las condiciones no estan resumidas en la model card.
-- El repositorio (175,3 GB) incluye tambien ficheros de parches bajo LICENSE, NOTICE y LICENSE.MIT, con condiciones potencialmente distintas a las de los pesos.
-- Cifras inconsistentes en la propia documentacion: los 125B-A6B declarados no cuadran con los 139.734.687.635 parametros de safetensors, y el rendimiento de decodificacion aparece como 45 -> 80 tok/s en un apartado y como 60 tok/s en la tabla de medidas.
+- Licencia `qwen-community-1.0` (etiquetada como `other`): no es una licencia permisiva; es imprescindible revisar el fichero LICENSE antes de cualquier uso comercial.
+- El modelo es una cuantización: introduce una divergencia medible respecto a BF16 (KLD medio de 0,011680 en `new-main`), con posibles degradaciones en tareas sensibles a la precisión numérica.
+- La rama `new-main` contiene solo pesos; los parches y ficheros de compilación deben descargarse de `main`, lo que añade pasos manuales al despliegue.
+- El despliegue depende de un parche de vLLM no oficial: actualizaciones de vLLM pueden romper la compatibilidad y no hay garantía de mantenimiento.
+- La build de 2x24GB requiere ~77 GiB de RAM del host y 125 GiB en el sistema medido; no es un despliegue de escritorio convencional.
+- El contexto de 524.288 tokens solo está disponible con YaRN en la build de 2x24GB y con una única petición simultánea.
+- No hay información sobre idiomas soportados, sesgos conocidos ni tasas de alucinación; deben evaluarse empíricamente antes de producción.
+- Los benchmarks publicados son de la rama `main`, no de `new-main`, y las cifras oficiales de referencia provienen de la model card del modelo base.
+- El tamaño del repositorio (349,7 GB) y la necesidad de NVMe para el fichero de tabla de 95,37 GiB condicionan la infraestructura de almacenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Minachist/Qwen3.8-Flash-Next-INT4-Mixed-AutoRound
+- Rama `new-main`: https://huggingface.co/Minachist/Qwen3.8-Flash-Next-INT4-Mixed-AutoRound/tree/new-main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Articulo del autor sobre el despliegue: https://minamism.com/posts/flash-next-vllm/
-- Imagen de vLLM de referencia para el parche: vllm/vllm-openai@sha256:43f13b4c624ab9e9e6753d0eeb5953268bff334f2a826239e6f4a2197d47bb96
-- Paper, repositorio o demo adicionales: no disponible en la informacion proporcionada.
+- Artículo del autor: https://minamism.com/posts/flash-next-vllm/
+- Segundo artículo (optimización): https://minamism.com/posts/flash-next-vllm-optimization/
+- GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- EXL3 de Turboderp: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3
+- qbench (exllamav3): https://github.com/turboderp-org/exllamav3/tree/master/eval/qbench
+- Código de trazado de qbench: https://github.com/turboderp-org/exllamav3/blob/master/eval/qbench/plot.py

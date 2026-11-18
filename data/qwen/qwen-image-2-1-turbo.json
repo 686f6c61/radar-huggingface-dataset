@@ -24,8 +24,8 @@
     "diffusers:QwenImage21Pipeline",
     "region:us"
   ],
-  "likes": 1143,
-  "downloads_30d": 33586,
+  "likes": 1145,
+  "downloads_30d": 32447,
   "trending_score": 10,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
@@ -63,14 +63,14 @@
       "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
     },
     {
-      "title": "Qwen (Qwen) - Hugging Face",
-      "url": "https://huggingface.co/Qwen",
-      "snippet": "Dec 27, 2024 · Qwen/Qwen3.8-Flash-Next ... Qwen/Qwen3.8-Flash-Next-FP8 ... Qwen/Qwen3.8-2.4T-A95B ... Qwen/Qwen3.8-2.4T …"
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen combines chain-of-thought reasoning with creative idea generation to craft narratives, develop characters, and explore plots …"
     },
     {
       "title": "Qwen - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Qwen",
-      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large …"
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large …"
     }
   ]
 }

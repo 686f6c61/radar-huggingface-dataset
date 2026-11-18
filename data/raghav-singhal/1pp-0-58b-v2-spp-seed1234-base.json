@@ -5,7 +5,7 @@
   "author": "Raghav-Singhal",
   "url": "https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-spp-seed1234-base",
   "created_at": "2026-11-16T22:16:04.000Z",
-  "updated_at": "2026-11-16T22:16:27.000Z",
+  "updated_at": "2026-11-17T12:35:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 159,
   "trending_score": 0,
   "parameters": 580447872,
   "parameters_human": "580.4M",

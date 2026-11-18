@@ -2,44 +2,49 @@
 
 ## Resumen
 
-Este repositorio contiene un conjunto de archivos de modelo reempaquetados para su uso directo en ComfyUI. Se trata de tres ControlNets (canny, depth e inpaint) y un LoRA (union) derivados del proyecto DiffSynth, adaptados para el modelo de generación de imágenes Qwen-Image. El paquete está publicado por Comfy-Org, la organización responsable de ComfyUI, lo que garantiza compatibilidad con el ecosistema de nodos de esta herramienta.
+Comfy-Org/Qwen-Image-DiffSynth-ControlNets es un repositorio de empaquetado para ComfyUI que redistribuye los ControlNets de DiffSynth-Studio para el modelo de generacion de imagenes Qwen-Image. No se trata de un modelo nuevo, sino de una conversion de los pesos originales al formato `diffusion-single-file` que ComfyUI consume directamente, con el objetivo de evitar conversiones manuales y facilitar su uso en flujos de trabajo de nodos. El repositorio agrupa tres ControlNets (Canny, Depth e Inpaint) mas una LoRA union, derivados de los repositorios originales de DiffSynth-Studio.
 
-La relevancia de este paquete radica en que simplifica la instalación de estos adaptadores: el usuario solo tiene que copiar los archivos en las carpetas correspondientes de ComfyUI. No se proporciona información sobre la arquitectura interna, el número de parámetros o el pipeline de difusión original, ya que se trata de una redistribución de pesos, no de un modelo completo. La licencia Apache 2.0 permite uso comercial y modificación.
+La relevancia es practica: Qwen-Image es un modelo de difusion texto-a-imagen de Alibaba y los ControlNets permiten condicionar la generacion con estructura (bordes Canny, mapas de profundidad) o realizar inpainting. Al estar empaquetados para ComfyUI, los desarrolladores pueden integrarlos en pipelines de generacion de imagen sin escribir codigo de conversion. El repositorio ocupa 7,7 GB y acumula mas de 23.000 descargas, lo que indica una adopcion considerable en la comunidad de ComfyUI.
+
+Es importante subrayar que esta ficha describe un repositorio de artefactos (pesos de ControlNet y una LoRA) y no un modelo de lenguaje. Por tanto, las secciones sobre arquitectura de transformer, contexto, benchmarks de razonamiento o tool calling no aplican y se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (adaptadores ControlNet y LoRA para Qwen-Image) |
+| Arquitectura | no disponible (ControlNet para modelo de difusion Qwen-Image; no es un transformer de lenguaje) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (archivos safetensors de precisión completa) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de imagen) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (`diffusion-single-file` para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna de estos ControlNets o del LoRA. El nombre "DiffSynth" sugiere que provienen del framework DiffSynth-Studio, pero no se detallan los datos de entrenamiento, el número de tokens o el proceso de optimización. Tampoco se indica si se usó RLHF, DPO u otras técnicas. Al ser un reempaquetado, la documentación técnica original no se incluye en este repositorio.
+El repositorio contiene los pesos de tres ControlNets de DiffSynth-Studio para Qwen-Image: `qwen_image_canny_diffsynth_controlnet.safetensors`, `qwen_image_depth_diffsynth_controlnet.safetensors` y `qwen_image_inpaint_diffsynth_controlnet.safetensors`, ademas de la LoRA `qwen_image_union_diffsynth_lora.safetensors`. Los ControlNets se basan en la variante "Blockwise" de DiffSynth-Studio, que inyecta la condicion en bloques del modelo base en lugar de un unico adaptador global. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO, ya que no es aplicable a un modelo de difusion en este contexto.
+
+La innovacion tecnica relevante es el empaquetado: los pesos originales se convierten al formato `diffusion-single-file` que ComfyUI carga sin scripts de conversion, y se separan en dos ubicaciones segun su funcion (LoRA en `models/loras/`, ControlNets en `models/model_patches/`). No hay datos sobre la arquitectura interna de los bloques de control ni sobre el proceso de entrenamiento de los ControlNets originales.
 
 ## Capacidades
 
-- Control de generación de imágenes mediante mapas de bordes (Canny).
-- Control de generación mediante mapas de profundidad (Depth).
-- Inpainting (relleno de regiones enmascaradas).
-- LoRA de "unión" (union) que probablemente combina múltiples condiciones de control, aunque no se especifica su funcionamiento exacto.
-- Integración nativa con ComfyUI: los archivos están preparados para colocarse en las carpetas `models/loras` y `models/model_patches`.
-- No se indican capacidades de texto, razonamiento, tool calling o agentes, ya que es un modelo de difusión de imágenes.
+- Generacion de imagenes condicionada por bordes Canny (ControlNet Canny).
+- Generacion de imagenes condicionada por mapas de profundidad (ControlNet Depth).
+- Inpainting: relleno de regiones enmascaradas de una imagen (ControlNet Inpaint).
+- Control union mediante LoRA (`qwen_image_union_diffsynth_lora`), que combina condiciones en un unico adaptador.
+- Integracion nativa con ComfyUI mediante nodos y plantillas de flujo de trabajo.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Edición de imágenes con control de bordes: usar el ControlNet Canny para generar imágenes que respeten los contornos de un boceto o de una imagen existente. En ComfyUI, se conecta el nodo ControlNet al sampler y se proporciona la imagen de entrada.
-- Generación con control de profundidad: emplear el ControlNet Depth para mantener la estructura espacial de una escena, útil en tareas de reiluminación o cambio de estilo manteniendo la geometría.
-- Inpainting de regiones específicas: usar el ControlNet Inpaint para rellenar zonas enmascaradas de una imagen, por ejemplo para eliminar objetos no deseados o restaurar partes dañadas.
-- Composición de múltiples condiciones: el LoRA union podría permitir combinar varios tipos de control en una sola pasada, aunque su uso exacto requiere experimentación en ComfyUI.
-- Prototipado rápido de flujos de generación: al ser archivos listos para ComfyUI, los desarrolladores pueden integrarlos en pipelines visuales sin escribir código.
-- Investigación en control fino de difusión: los adaptadores permiten estudiar el efecto de diferentes señales de control sobre el modelo base Qwen-Image, aunque no se dispone de documentación adicional.
+- Edicion de imagenes con inpainting en ComfyUI: cargar `qwen_image_inpaint_diffsynth_controlnet.safetensors` en `models/model_patches/` y usar la plantilla de ControlNet Model Patch para rellenar objetos eliminados en una fotografia, aprovechando que el ControlNet respeta la mascara y el contexto circundante.
+- Control de estructura en generacion de producto: usar el ControlNet Canny para generar variaciones de un diseno manteniendo los contornos exactos del boceto, util en catalogos de e-commerce donde la silueta debe ser fiel.
+- Generacion de escenas con coherencia de profundidad: emplear el ControlNet Depth para producir imagenes de interiores o paisajes donde la disposicion espacial de los objetos siga un mapa de profundidad de referencia, util en previsualizacion arquitectonica.
+- Reconstruccion de imagenes historicas o danadas: combinar inpainting con Canny para restaurar zonas perdidas respetando los bordes de la estructura original.
+- Prototipado rapido en estudios de diseno: los flujos de trabajo de ComfyUI permiten encadenar el ControlNet union LoRA para alternar entre condiciones sin recargar modelos, agilizando iteraciones de concepto.
+- Pipelines de aumento de datos para vision por computador: generar imagenes sinteticas condicionadas por profundidad o bordes para entrenar detectores, con la ventaja de que la condicion estructura la salida y reduce la aleatoriedad.
+- Automatizacion de variaciones de imagen en produccion: al estar en formato single-file, se puede desplegar en servidores ComfyUI con la API de nodos para generar lotes condicionados por mascaras o mapas de profundidad.
 
 ## Benchmarks y rendimiento
 
@@ -47,24 +52,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos de VRAM en la información proporcionada.
-- Al ser ControlNets y LoRA, el consumo adicional de memoria es relativamente bajo en comparación con el modelo base Qwen-Image, pero se necesita una GPU con suficiente VRAM para ejecutar el modelo de difusión completo.
-- Para orientación general: modelos de difusión de imágenes de tamaño similar suelen requerir al menos 8-12 GB de VRAM en cuantización FP16, y más si se usa precisión completa.
-- El despliegue se realiza a través de ComfyUI, que gestiona la carga de los archivos. No se mencionan alternativas como vLLM u Ollama, ya que no es un modelo de lenguaje.
-- No se proporcionan datos de latencia o throughput.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El repositorio pesa 7,7 GB, lo que da una idea del espacio en disco necesario para los pesos, pero no de la VRAM requerida por el modelo base Qwen-Image.
+- GPU recomendadas: no disponible. Dependera del modelo base Qwen-Image y de la resolucion de generacion, datos no incluidos en la informacion.
+- Cabe en consumer GPU: no disponible.
+- Opciones de despliegue: ComfyUI (formato nativo `diffusion-single-file`); no se documentan otras opciones como vLLM, llama.cpp o TGI, que no aplican a modelos de difusion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se proporciona información sobre otros ControlNets o LoRA comparables en este repositorio.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Comfy-Org/Qwen-Image-DiffSynth-ControlNets | ControlNets + LoRA empaquetados para ComfyUI | no disponible | no aplica | Apache 2.0 | Hugging Face, 23.455 descargas |
+| DiffSynth-Studio/Qwen-Image-Blockwise-ControlNet-Canny | ControlNet original (Canny) | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| DiffSynth-Studio/Qwen-Image-Blockwise-ControlNet-Depth | ControlNet original (Depth) | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+
+No se dispone de datos de rendimiento para comparar numericamente; la diferencia principal entre el repositorio empaquetado y los originales es el formato (single-file para ComfyUI frente a los pesos de DiffSynth-Studio).
 
 ## Limitaciones y advertencias
 
-- Falta de documentación técnica: al ser un reempaquetado, no se incluyen detalles sobre el entrenamiento, arquitectura o limitaciones específicas de estos adaptadores.
-- Dependencia de ComfyUI: los archivos están diseñados para funcionar dentro de ComfyUI; su uso fuera de este entorno requeriría adaptaciones manuales.
-- Posible incompatibilidad con versiones futuras de Qwen-Image o de ComfyUI, ya que no se especifica la versión exacta del modelo base.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base Qwen-Image si se utiliza en producción.
-- No se garantiza la ausencia de sesgos o alucinaciones visuales, ya que no hay información sobre los datos de entrenamiento.
+- No es un modelo autonomo: requiere el modelo base Qwen-Image y ComfyUI para funcionar; los pesos por si solos no generan imagenes.
+- Sesgos conocidos: no disponibles en la informacion proporcionada; al depender de Qwen-Image, heredaria los sesgos de ese modelo base, no documentados aqui.
+- Riesgo de alucinacion: no aplica en el sentido de texto; en imagen, puede generar contenido incoherente o no fiel a la condicion si los pesos no coinciden con la version del modelo base.
+- Limitaciones de contexto o idioma: no aplica; no hay soporte de texto ni de idiomas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia de los repositorios originales de DiffSynth-Studio y del modelo base Qwen-Image, no detalladas en la informacion.
+- Caveat de produccion: la fecha de actualizacion del repositorio (2026-09-23) es posterior a la de creacion (2025-08-21); verificar que los pesos corresponden a la version esperada del modelo base antes de desplegar.
 
 ## Enlaces
 
-- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/Qwen-Image-DiffSynth-ControlNets
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Qwen-Image-DiffSynth-ControlNets
+- ControlNet Canny original: https://huggingface.co/DiffSynth-Studio/Qwen-Image-Blockwise-ControlNet-Canny
+- ControlNet Depth original: https://huggingface.co/DiffSynth-Studio/Qwen-Image-Blockwise-ControlNet-Depth
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
+- Plantilla de flujo ControlNet Model Patch: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_controlnet_patch.json
+- Plantilla de flujo Union Control LoRA: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_union_control_lora.json

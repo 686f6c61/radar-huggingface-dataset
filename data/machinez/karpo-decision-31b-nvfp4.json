@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "machinez/karpo-decision-31B-NVFP4",
+  "slug": "machinez-karpo-decision-31b-nvfp4",
+  "author": "machinez",
+  "url": "https://huggingface.co/machinez/karpo-decision-31B-NVFP4",
+  "created_at": "2026-11-18T03:16:13.000Z",
+  "updated_at": "2026-11-18T03:18:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "decision-model",
+    "decision-index",
+    "system-one",
+    "text-classification",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18460143972,
+  "parameters_human": "18.46B",
+  "storage_bytes": 20485736859,
+  "storage_human": "20.5 GB",
+  "context_length": null,
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "Decision Index 0.4.1, private tests (60% same skills, 40% new domains)",
+      "metric": "Decision Index 0.4.1, Full score (leaderboard, 12 November 2026; rank #1, the highest score)",
+      "value": 73.86
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "Decision Index 0.3 public suite (140,178 scored requests; the index averages 37 benchmarks)",
+      "metric": "Decision Index 0.3, public index (chance-corrected; own run of the official kit, same value on the leaderboard)",
+      "value": 75.05
+    }
+  ],
+  "sources": []
+}

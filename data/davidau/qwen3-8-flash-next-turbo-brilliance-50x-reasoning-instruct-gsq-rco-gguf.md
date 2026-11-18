@@ -2,95 +2,93 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF es una cuantizacion GGUF publicada por DavidAU (David Belton) sobre el modelo base ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF. Se trata de un modelo de gran tamano con arquitectura de mezcla de expertos (MoE) y capacidad multimodal (image-text-to-text), con aproximadamente 177.000 millones de parametros totales y un repositorio de 84,5 GB en formato GGUF. La ficha se publica bajo licencia Apache 2.0 y da soporte a 16 idiomas.
+Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF es una cuantización GGUF publicada por DavidAU sobre el modelo base ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF, a su vez derivado de la familia Qwen 3.8 Flash-Next. Se trata de un modelo multimodal de tipo image-text-to-text con arquitectura Mixture-of-Experts (MoE) de 176.943.899.520 parámetros totales (aproximadamente 180 mil millones), 512 expertos y 10 activados por token, según los datos de la model card. El autor lo presenta como un modelo de 120B en su comunicación, aunque el recuento real de safetensors lo sitúa en 176,9B.
 
-El autor anade sobre el modelo base una capa de "Turbo-Brilliance" orientada al razonamiento, con un conjunto declarado de 27 modos de razonamiento, 27 modos de instruccion y varios "AI Constructs" (personas o modos especializados de operacion, entre ellos cinco "Super AI Constructs" destinados a tareas de brainstorming, ensenanza, agentes y generacion de codigo). El modelo esta pensado para despliegue local en cuantizacion de precision mixta con calibracion imatrix, algo relevante para equipos que quieren ejecutar un modelo de ~177B sin depender exclusivamente de infraestructura cloud.
+El valor diferencial del modelo no está en los pesos base, sino en la capa de "Turbo Brilliance" que DavidAU superpone: 27 modos de razonamiento, 27 modos de instrucción y 9 modos de razonamiento "xhigh", más 15 "AI Constructs" (incluidos cinco "Super AI Constructs" como Brainstorm, Brainstorm Business, Universal Teacher, Agent y Coder). Estos constructos son bloques de 2.000 a 4.000 tokens que se inyectan en el prompt para condicionar el comportamiento del modelo antes de que empiece a razonar.
 
-Su relevancia actual radica en la combinacion de tres factores: un tamano de parametros en la gama alta, naturaleza MoE (que permite activar solo una fraccion de los expertos por token) y empaquetado GGUF listo para llama.cpp y derivados. No obstante, el acceso al repositorio esta restringido (gated) y no se han publicado resultados de benchmarks en la informacion disponible, por lo que la evaluacion de su rendimiento real queda pendiente de validacion independiente.
+Es relevante ahora porque combina tres tendencias del ecosistema open source: cuantizaciones GGUF de precisión mixta con imatrix (método GSQ-RCO de ISTA-DASLab), modelos MoE multimodales de gran tamaño y sistemas de prompting estructurado que intentan reducir el consumo de tokens de razonamiento. El autor afirma que la cuantización IQ3_S mantiene un rendimiento cercano a BF16 y que el modelo puede ejecutarse en GPUs de 12 GB mediante offload.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) con capacidad multimodal (image-text-to-text) |
-| Parametros totales | 176.943.899.520 (~177B) |
-| Parametros activos | no disponible |
+| Arquitectura | Mixture-of-Experts (MoE) multimodal, transformer; 512 expertos, 10 activados por token |
+| Parametros totales | 176.943.899.520 (176,9B) |
+| Parametros activos | 10 expertos por token (número exacto de parámetros activos no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con esquemas GSQ y RCO, precision mixta y calibracion imatrix; rangos especificos (Q2/Q4/Q8, etc.) no disponibles |
-| Idiomas soportados | Arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita (16 idiomas) |
+| Tipos de cuantizacion | GGUF con cuantización de precisión mixta GSQ-RCO e imatrix; IQ3_S citado como referencia de calidad |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repositorio de 84,5 GB) |
+| Formato de pesos | GGUF (repo de 84,5 GB) |
+| Pipeline | image-text-to-text |
+| Modelo base | ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF |
+| Creado / actualizado | 2026-10-13 / 2026-11-09 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que el modelo base es una arquitectura MoE (tag explicito `moe`) con soporte multimodal de tipo imagen-texto-a-texto, lo que implica un codificador visual acoplado a la torre de lenguaje. El pipeline declarado en Hugging Face es `image-text-to-text`, de modo que el modelo acepta imagenes junto a texto como entrada y genera texto. No se detalla en la informacion proporcionada el numero de expertos, los expertos activos por token, la profundidad de la red ni la dimension del estado oculto.
+La arquitectura subyacente es un transformer MoE multimodal con 512 expertos y 10 expertos activados por token, lo que implica un cómputo por token muy inferior al de un modelo denso de 176,9B. El pipeline image-text-to-text indica que el modelo acepta imágenes además de texto, aunque la model card no detalla el codificador visual ni la estrategia de fusión multimodal. Tampoco se especifican la longitud de contexto, el número de tokens de entrenamiento ni la composición del dataset.
 
-Respecto al entrenamiento, la informacion disponible no especifica el numero de tokens utilizados, la composicion del dataset ni si se emplearon tecnicas de alineacion como RLHF o DPO. El autor hace referencia a un proceso de cuantizacion de precision mixta (GSQ, RCO) con calibracion imatrix sobre el modelo base de ISTA-DASLab, asi como a un ajuste de comportamiento denominado "Turbo-Brilliance" con modos de razonamiento e instruccion predefinidos. Estos detalles de ajuste se describen a nivel de etiquetas, sin especificaciones tecnicas publicadas sobre el procedimiento.
+La innovación técnica destacable no está en el entrenamiento base, sino en dos capas añadidas por la comunidad. La primera es la cuantización GSQ-RCO de ISTA-DASLab, un esquema de precisión mixta con imatrix que, según la model card, permite que la variante IQ3_S rinda a nivel de BF16 con un tuning de cuantización más fuerte que QAT. La segunda es el sistema Turbo Brilliance: un conjunto de plantillas de prompt inyectadas en la fase previa al razonamiento que, según el autor, se precargan a más de 1.000 tokens por segundo y reducen el gasto de tokens de pensamiento. No se documenta ningún proceso de RLHF, DPO o fine-tuning supervisado sobre los pesos base más allá de la cuantización y del empaquetado de plantillas.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en multiples pasos, con modos de razonamiento declarados (27 modos de razonamiento y 9 modos catalogados como "Xhigh").
-- Modos de instruccion especializados (27 modos de instruccion) que permiten alternar entre distintos estilos de respuesta y niveles de detalle.
-- Capacidad multimodal: entrada de imagenes junto a texto (pipeline image-text-to-text), lo que habilita tareas de descripcion, analisis y respuesta sobre contenido visual.
-- Soporte multilingue en 16 idiomas (arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita).
-- Modos de agente y razonamiento multi-paso a traves del "Agent AI Construct" declarado por el autor.
-- Generacion de codigo mediante el "Coder AI Construct".
-- Modos de ensenanza y explicacion ("Universal Teacher AI Construct") y de generacion de ideas ("Brainstorm AI Construct", "Brainstorm Business AI Construct").
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Modo de pensamiento explicito (thinking mode): no disponible como especificacion formal; el autor lo describe indirectamente a traves de los modos de razonamiento.
+- Generación de texto conversacional multi-turno en 16 idiomas, incluidos español, inglés, chino, árabe, hindi y tailandés.
+- Razonamiento con modos conmutables: 27 modos de razonamiento, 9 modos "xhigh" y 27 modos de instrucción, seleccionables mediante el propio prompt o la API.
+- Procesamiento de imagen y texto (image-text-to-text), con capacidad de responder preguntas sobre imágenes.
+- "AI Constructs": 15 perfiles predefinidos (Brainstorm, Brainstorm Business, Universal Teacher, Agent, Coder y otros) con instrucciones de 2.000 a 4.000 tokens por constructo.
+- Modo de instrucción directa sin tokens de razonamiento, útil para respuestas de baja latencia.
+- Compatibilidad con endpoints y con protocolos de cambio de palabra clave de vLLM, según la model card.
+- Capacidad de agente y razonamiento multi-paso inferida del "Agent AI Construct", aunque no se documentan herramientas nativas de function calling en la información disponible.
+- Generación de código y tareas de análisis de negocio a través de los constructos Coder y Business.
 
 ## Casos de uso
 
-- Asistencia multimodal en atencion al cliente: el modelo puede recibir capturas de pantalla o fotos de producto junto a la consulta del usuario y generar respuestas contextualizadas, aprovechando la entrada image-text-to-text.
-- Revision y descripcion de documentacion tecnica escaneada: introducir imagenes de diagramas o esquemas y obtener explicaciones textuales, utiles en equipos de soporte e ingenieria.
-- Generacion de codigo asistida en entornos locales: gracias al "Coder AI Construct" y al empaquetado GGUF, puede integrarse en estaciones de trabajo sin conexion para autocompletado y refactorizacion.
-- Agentes autonomos de investigacion: el "Agent AI Construct" permite encadenar pasos de razonamiento sobre multiples fuentes antes de sintetizar una conclusion.
-- Creacion de contenido multilingue: con 16 idiomas soportados, es adecuado para localizar material de marketing o documentacion a distintos mercados desde un unico modelo.
-- Formacion y tutoria automatizada: el "Universal Teacher AI Construct" esta orientado a explicar conceptos paso a paso, con modos de instruccion que ajustan la profundidad explicativa.
-- Analisis exploratorio de imagenes en investigacion: combinar entrada visual con razonamiento textual para clasificar, describir o resumir conjuntos de imagenes.
-- Asistencia a la decision en negocio: el "Brainstorm Business AI Construct" esta pensado para sesiones de ideacion estructurada y contraste de escenarios.
+- Atención al cliente multilingüe: el modelo cubre 16 idiomas y puede mantener conversaciones multi-turno; el modo de instrucción sin razonamiento reduce la latencia en respuestas rutinarias.
+- Análisis de documentos con imágenes: al ser image-text-to-text, permite extraer información de capturas, formularios o diagramas y responder preguntas sobre ellos en el mismo hilo.
+- Generación de código asistida: el constructo Coder empaqueta instrucciones específicas de programación que se inyectan antes del razonamiento, lo que resulta adecuado para tareas de refactorización o revisión en pipelines de CI/CD.
+- Planificación de negocio: el constructo Brainstorm Business está diseñado para generar planes, análisis competitivos y propuestas; la model card incluye un ejemplo de plan de negocio.
+- Docencia y explicaciones técnicas: el constructo Universal Teacher orienta al modelo a estructurar explicaciones pedagógicas, útil en plataformas de formación.
+- Investigación y lluvia de ideas: el constructo Brainstorm y los modos de razonamiento "xhigh" permiten explorar hipótesis con cadenas de pensamiento largas cuando se necesita profundidad.
+- Despliegue en hardware limitado: gracias a la cuantización IQ3_S y al offload, el autor afirma que puede ejecutarse en GPUs de 12 GB, lo que habilita prototipos en estaciones de trabajo consumer.
+- Procesamiento por lotes en servidores: con vLLM y los modos de instrucción se puede servir a throughput alto reduciendo el coste por token de razonamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente aporta cifras de velocidad: 17 t/s con 46 GB repartidos en 2 GPUs más offload a RAM, 60-90 t/s con offload completo a GPUs, y una estimación de 150 t/s en una RTX 6000 de 96 GB de VRAM. No se incluyen resultados de MMLU, HumanEval, GSM8K ni comparaciones numéricas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con un repositorio de 84,5 GB, la cuantizacion principal ronda los 4 bits sobre ~177B de parametros. Se necesitan aproximadamente 85-95 GB de memoria para los pesos, mas el margen para cache KV y contexto.
-- En GPUs de datacenter: 2x A100 80 GB o 2x H100 80 GB son el minimo realista para cargar los pesos en VRAM con contexto moderado. Una sola GPU de 80 GB no es suficiente para esta cuantizacion.
-- En GPUs de consumo: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090. Requiere reparto entre varias GPUs o volcado a memoria del sistema.
-- Despliegue en CPU / memoria unificada: es viable con llama.cpp sobre equipos con 128 GB de RAM unificada o mas (por ejemplo, Apple Silicon de gama alta), con latencias altas.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio) por el formato GGUF. vLLM y TGI no consumen GGUF de forma nativa y requeririan conversion a safetensors.
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM estimada: el repo GGUF ocupa 84,5 GB; la variante IQ3_S citada ronda los 46 GB según el ejemplo de la model card.
+- GPU recomendadas: RTX 6000 (96 GB) para inferencia completa a alta velocidad; configuraciones multi-GPU para repartir los 46 GB; A100 y H100 no se mencionan explícitamente pero son compatibles por tamaño.
+- GPU consumer: el autor afirma que puede ejecutarse en tarjetas de 12 GB o más mediante offload a RAM, con la penalización de velocidad correspondiente.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM para servir con los protocolos de cambio de palabra clave; endpoints compatibles según los tags.
+- Latencia y throughput: 17 t/s con 2 GPUs y offload a RAM; 60-90 t/s con offload completo a GPU; aproximadamente 150 t/s estimados en RTX 6000 de 96 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF | ~177B (MoE) | no disponible | no disponible | Apache 2.0 | GGUF, acceso restringido |
-| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF (modelo base) | no disponible | no disponible | no disponible | no disponible | GGUF |
-| DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-MTP-GGUF (variante MTP) | no disponible | no disponible | no disponible | no disponible | GGUF |
-| DavidAU/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF (variante sin censura) | no disponible | no disponible | no disponible | no disponible | GGUF |
+| Qwen3.8-Flash-Next-Turbo-Brilliance-50x (este) | 176,9B MoE, 10 expertos activos | no disponible | Apache 2.0 | GGUF | Multimodal, 27+27+9 modos, 15 constructos |
+| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF (base) | 176,9B MoE | no disponible | Apache 2.0 | GGUF | Cuantización GSQ-RCO sin la capa Turbo Brilliance |
+| Qwen3.8-Flash-Next (original, no cuantizado) | 176,9B MoE | no disponible | Apache 2.0 | safetensors | Pesos base sin cuantizar ni constructos |
 
-No se dispone de datos de rendimiento publicados ni de terceros comparables con especificaciones verificables en la informacion proporcionada.
+No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- No se han publicado benchmarks independientes, por lo que no es posible validar el rendimiento real declarado ni los "27 modos de razonamiento".
-- El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; no hay datos de evaluacion de fidelidad en la informacion disponible.
-- Sesgos conocidos: no disponible. Al tratarse de un ajuste comunitario sobre un modelo base, puede heredar sesgos del entrenamiento original no documentados aqui.
-- Limitaciones de contexto: la longitud de contexto no se especifica, lo que impide planificar despliegues con requisitos de contexto largo.
-- Requisitos de hardware elevados: ~85 GB de pesos en la cuantizacion incluida en el repositorio, fuera del alcance de GPUs de consumo individuales.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar que el modelo base de ISTA-DASLab mantiene las mismas condiciones, ya que la informacion disponible no lo confirma.
-- Etiquetas del autor no verificadas: terminos como "Turbo-Brilliance", "Super AI Constructs" o "50x" son nomenclatura de marketing del publicador, no metricas tecnicas contrastadas.
-- Fecha de publicacion avanzada (octubre de 2026) y contador de descargas a cero en el momento de la consulta: la adopcion y el soporte de la comunidad son, por ahora, minimos.
-- Compatibilidad de despliegue limitada a llama.cpp y derivados, dado el formato GGUF.
+- La model card mezcla cifras: anuncia "120B parameters" mientras que el recuento real de safetensors es de 176,9B; conviene verificar el tamaño antes de planificar el hardware.
+- No se documentan sesgos conocidos, pero al ser un modelo multilingüe entrenado con datos no especificados, es probable que presente sesgos culturales y de género no cuantificados.
+- Riesgo de alucinación inherente a los modelos generativos; los constructos y modos de razonamiento no eliminan este riesgo y pueden aumentar la confianza aparente de respuestas incorrectas.
+- La longitud de contexto no está publicada, lo que impide planificar cargas de trabajo con documentos largos.
+- Los "AI Constructs" y los modos Turbo Brilliance son plantillas de prompt, no cambios en los pesos; su eficacia depende del prompt y no está validada con benchmarks independientes.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y la cuantización intermedia deben verificarse por separado para cumplir sus términos.
+- El rendimiento declarado en t/s procede del autor y no de una evaluación independiente; las cifras de 150 t/s son estimaciones.
+- El tamaño del repo (84,5 GB) y la necesidad de offload en configuraciones consumer implican latencias altas y posible inestabilidad en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
-- Perfil del autor en Hugging Face: https://huggingface.co/DavidAU
-- Listado de modelos del autor: https://huggingface.co/DavidAU/models
-- Actividad del autor: https://huggingface.co/DavidAU/activity/all
-- Galeria de modelos de LocalAI (referencia de despliegue GGUF): https://localai.io/docs/gallery.html
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Modelo base: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Preguntas frecuentes del autor: https://huggingface.co/DavidAU/support

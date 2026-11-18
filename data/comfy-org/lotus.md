@@ -2,85 +2,81 @@
 
 ## Resumen
 
-Lotus es un modelo de difusión diseñado para tareas de percepción visual rápida, concretamente estimación de profundidad monocular y predicción de normales de superficie. Desarrollado originalmente por jingheya y empaquetado por Comfy-Org para su uso directo en ComfyUI, este modelo ofrece salidas geométricas de alta calidad con un coste computacional significativamente menor que los estimadores basados en difusión tradicionales, lo que lo hace adecuado para pipelines de visión en tiempo real.
+Lotus es un modelo de estimacion de profundidad (depth estimation) monocular basado en difusion, desarrollado originalmente por jingheya y reempaquetado por Comfy-Org para su uso directo en ComfyUI. El repositorio `Comfy-Org/lotus` no contiene un modelo de lenguaje ni un modelo generativo de texto, sino los pesos en formato `safetensors` de un modelo de difusion de un solo fichero (diffusion-single-file) derivado de `jingheya/lotus-depth-d-v1-1`, listo para colocarse en la carpeta `models/diffusion_models/` de ComfyUI. Su proposito es generar mapas de profundidad densos a partir de una imagen RGB de entrada.
 
-El repositorio Comfy-Org/lotus es un reempaquetado del modelo base `jingheya/lotus-depth-d-v1-1`, presentado como un único archivo `safetensors` de 1,7 GB listo para colocar en la carpeta `models/diffusion_models` de ComfyUI. La licencia Apache-2.0 permite uso comercial sin restricciones adicionales. Aunque la información técnica detallada (parámetros, arquitectura interna, datos de entrenamiento) no está disponible en la documentación pública, la naturaleza del modelo y su integración en ComfyUI lo convierten en una opción práctica para desarrolladores que necesitan estimación de profundidad y normales en flujos de trabajo visuales.
+El modelo se distribuye bajo licencia Apache 2.0, con un tamano de repositorio de 1,7 GB, lo que sugiere un modelo de difusion de escala media (compatible con GPUs de consumo). Es relevante porque simplifica el despliegue: evita al usuario tener que convertir o adaptar los pesos originales, y proporciona un workflow oficial de ComfyUI (`image_lotus_depth_v1_1.json`) que conecta la entrada de imagen con la salida de profundidad.
+
+La informacion publica disponible es limitada: la model card del repackaging no incluye detalles de arquitectura, datos de entrenamiento ni benchmarks. Los datos tecnicos que se detallan a continuacion provienen del repositorio de Hugging Face y de la model card citada; cualquier dato no presente en esas fuentes se marca como "no disponible".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion para estimacion de profundidad y normales (detalles especificos no disponibles) |
-| Parametros totales | No disponible |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (modelo de vision) |
-| Tipos de cuantizacion | No especificado (probablemente FP16/FP32 en safetensors) |
-| Idiomas soportados | No aplica (procesa imagenes) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (diffusion-single-file) |
+| Arquitectura | modelo de difusion (diffusion-single-file); detalles internos no disponibles |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no es un modelo de texto; procesa imagenes) |
+| Tipos de cuantizacion | no disponible (pesos distribuidos en `safetensors`; el repo ocupa 1,7 GB) |
+| Idiomas soportados | no disponible (tarea de vision, sin procesamiento de lenguaje) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (single-file para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El modelo Lotus pertenece a la familia de modelos de difusion aplicados a tareas de percepcion visual. A diferencia de los modelos de difusion generativos que producen imagenes, Lotus condiciona el proceso de difusion en una imagen de entrada para generar mapas de profundidad o normales de superficie. Esta aproximacion permite obtener resultados geometricamente precisos con una fraccion del coste computacional de los metodos tradicionales basados en difusion, segun la descripcion del repositorio original.
+El modelo base es `jingheya/lotus-depth-d-v1-1`, un estimador de profundidad monocular formulado como un proceso de difusion. El repackaging de Comfy-Org no modifica la arquitectura ni los pesos: unicamente reorganiza el fichero para que ComfyUI lo cargue como `diffusion_models/lotus-depth-d-v1-1.safetensors`. La model card no especifica el tipo de backbone (por ejemplo, UNet o DiT), el numero de parametros, la resolucion nativa de entrenamiento ni el esquema de ruido utilizado.
 
-No se dispone de informacion publica sobre el numero de parametros, la arquitectura interna exacta (si usa UNet, transformer o una combinacion), la composicion del dataset de entrenamiento ni el proceso de optimizacion (RLHF, DPO, etc.). El repositorio original `jingheya/lotus-depth-d-v1-1` podria contener mas detalles, pero no estan disponibles en la informacion proporcionada. El reempaquetado de Comfy-Org no anade modificaciones tecnicas al modelo, solo lo adapta al formato de archivo unico para ComfyUI.
+No se dispone de informacion sobre el dataset de entrenamiento (numero de imagenes, fuentes como NYU Depth V2, KITTI u otros conjuntos de profundidad), ni sobre tecnicas de refinamiento, destilacion o ajuste fino. Tampoco se documenta si emplea decodificacion iterativa estandar de difusion o alguna variante de muestreo acelerado. Todos estos datos deben considerarse "no disponibles" en la informacion proporcionada.
 
 ## Capacidades
 
-- Estimacion de profundidad monocular a partir de una sola imagen.
-- Prediccion de normales de superficie para la misma imagen de entrada.
-- Salidas de alta calidad geometrica con coste computacional reducido, apto para pipelines en tiempo real.
-- Integracion nativa con ComfyUI mediante el nodo de difusion estandar, sin necesidad de codigo adicional.
-- Soporte para procesamiento por lotes si el hardware lo permite, al ser un modelo de difusion clasico.
-- No incluye capacidades de texto, tool calling, agentes ni razonamiento multimodal mas alla de la tarea especifica de percepcion geometrica.
+- Estimacion de profundidad monocular densa a partir de una imagen RGB de entrada.
+- Generacion de mapas de profundidad en un solo paso de inferencia dentro de un grafo de ComfyUI, mediante el workflow oficial `Depth Estimation: Lotus`.
+- Integracion nativa con ComfyUI como nodo de modelo de difusion single-file.
+- No soporta generacion de texto, razonamiento, codigo ni matematicas: no es un modelo de lenguaje.
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- Capacidades multilingues: no aplica (modelo de vision).
+- Capacidades especiales: profundidad relativa/absoluta (no especificado en la model card), uso como preprocesado para pipelines de imagen (control de profundidad, composicion, reconstruccion 3D).
 
 ## Casos de uso
 
-- **Reconstruccion 3D a partir de video**: el modelo puede estimar profundidad en cada fotograma de un video para generar nubes de puntos o mallas 3D, util en fotogrametria o captura de entornos.
-- **Robotica y navegacion autonoma**: la estimacion de profundidad en tiempo real permite a robots y drones evitar obstaculos y mapear su entorno con una sola camara.
-- **Realidad aumentada**: las normales de superficie calculadas por el modelo permiten colocar objetos virtuales con iluminacion y sombras coherentes sobre superficies reales en aplicaciones AR.
-- **Edicion de imagenes con conciencia de profundidad**: en herramientas como Photoshop o GIMP, la profundidad estimada permite aplicar desenfoque de lente, reiluminacion o separacion de planos de forma automatica.
-- **Preprocesado para modelos de generacion 3D**: los mapas de profundidad generados pueden servir como entrada para modelos de texturizado o generacion de mallas en pipelines de creacion de contenido.
-- **Inspeccion industrial y control de calidad**: la deteccion de anomalias en superficies mediante normales puede integrarse en sistemas de vision artificial para fabricacion.
+- Preprocesado para ControlNet de profundidad: el mapa generado por Lotus se usa como condicion para modelos de difusion de imagen (Stable Diffusion, Flux) en flujos de generacion controlada por estructura, dentro del mismo grafo de ComfyUI.
+- Reconstruccion 3D y fotogrametria ligera: a partir de la profundidad estimada de una o varias imagenes se puede generar una nube de puntos o un mapa de disparidad para visualizacion o modelado, sin necesidad de hardware especializado.
+- Efectos de desenfoque de profundidad (depth of field) en postproduccion: el mapa de profundidad permite aplicar desenfoque selectivo realista en funcion de la distancia estimada de cada pixel.
+- Segmentacion asistida por profundidad: separar primer plano y fondo en imagenes para tareas de recorte, composicion o edicion por capas.
+- Robotica y navegacion asistida: estimacion de distancia relativa a obstaculos a partir de una camara monocular, como modulo de percepcion en prototipos de bajo coste.
+- Realidad aumentada: anclaje de objetos virtuales con oclusion correcta usando la profundidad estimada de la escena capturada por la camara del dispositivo.
+- Automatizacion de pipelines de imagen en ComfyUI: integracion del nodo de profundidad en flujos batch para procesar lotes de imagenes y generar mapas de profundidad de forma reproducible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio original `jingheya/lotus-depth-d-v1-1` podria incluir metricas como RMSE o delta1 en datasets estandar (por ejemplo, NYUv2 o KITTI), pero estos datos no estan presentes en la documentacion de Comfy-Org/lotus ni en los resultados de busqueda web. Se recomienda consultar el repositorio original para obtener evaluaciones cuantitativas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repackaging no incluye metricas (RMSE, AbsRel, delta1) ni comparaciones con otros estimadores de profundidad.
 
 ## Requisitos de hardware
 
-- El archivo de pesos pesa 1,7 GB, lo que sugiere un modelo de tamano medio (estimacion orientativa: entre 500 millones y 1.500 millones de parametros, sin confirmar).
-- VRAM estimada para inferencia: al menos 4 GB para resoluciones bajas (256x256) y 8 GB o mas para resoluciones de 512x512 o superiores, dependiendo de la implementacion de difusion (numero de pasos, scheduler, etc.).
-- GPU recomendadas: NVIDIA RTX 3060 (12 GB) o superior para uso interactivo en ComfyUI; para produccion a gran escala, A100 o H100 con multiples instancias.
-- Es posible ejecutar en GPU de consumo como RTX 4090 o incluso RTX 4060 con cuantizacion a FP16, aunque no se ha confirmado la disponibilidad de versiones cuantizadas.
-- Opciones de despliegue: ComfyUI como interfaz principal; tambien puede usarse con la libreria `diffusers` de Hugging Face si se carga el modelo original, o con vLLM si se adapta (no es el caso estandar).
-- Latencia y throughput: no disponibles; dependen del numero de pasos de difusion y la resolucion. Al ser un modelo de difusion, la latencia tipica puede oscilar entre 0,5 y 2 segundos por imagen en GPU moderna, pero esto es una estimacion sin datos confirmados.
+- VRAM estimada para inferencia: no disponible de forma oficial; el tamano del repositorio (1,7 GB en `safetensors`) sugiere que los pesos caben holgadamente en GPUs de consumo, aunque el consumo real depende de la resolucion de entrada y del backend de difusion.
+- GPU recomendadas: no especificadas. Por tamano de pesos, es plausible su uso en RTX 3060/4060 en adelante, pero no hay confirmacion oficial en la informacion disponible.
+- Cabe en GPU de consumo: probablemente si, segun el tamano del fichero; sin confirmacion oficial.
+- Opciones de despliegue: ComfyUI (soporte nativo mediante `diffusion_models`); otros backends (diffusers, vLLM, llama.cpp, Ollama, TGI) no estan documentados para este repackaging.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion comparativa directa con otros modelos de estimacion de profundidad. Los modelos alternativos en el mismo espacio incluyen:
-
-| Modelo | Tipo | Tamano | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| MiDaS | Red neuronal convolucional | ~100M | MIT | Amplia, multiples formatos |
-| Depth Anything | Transformer (DINOv2) | ~300M | Apache-2.0 | Amplia, safetensors |
-| Lotus (este modelo) | Difusion | No disponible | Apache-2.0 | ComfyUI, safetensors |
-
-La ventaja principal de Lotus frente a MiDaS o Depth Anything es su naturaleza generativa, que puede producir mapas de profundidad mas detallados y coherentes, aunque a costa de mayor latencia. Sin embargo, sin benchmarks publicos no es posible cuantificar esta diferencia.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de estimacion de profundidad (por ejemplo, Depth Anything, MiDaS o Marigold), por lo que no es posible establecer una comparacion rigurosa sin inventar cifras.
 
 ## Limitaciones y advertencias
 
-- No se dispone de informacion sobre sesgos en los datos de entrenamiento; como todo modelo de vision, puede fallar en condiciones extremas de iluminacion, texturas repetitivas o superficies transparentes.
-- Riesgo de alucinacion geometrica: al ser un modelo generativo, puede inventar profundidades o normales en regiones ambiguas de la imagen, lo que requiere validacion en aplicaciones criticas.
-- Limitaciones de resolucion: el modelo puede degradarse en resoluciones muy altas o muy bajas; no se especifican rangos recomendados.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero se recomienda revisar los terminos del modelo base original por si hubiera clausulas adicionales.
-- No es un modelo multimodal: no procesa texto ni audio, solo imagenes.
-- Dependencia de ComfyUI: el reempaquetado esta disenado exclusivamente para ComfyUI; su uso fuera de este entorno requiere adaptacion manual.
+- La model card no documenta sesgos del modelo; al ser un estimador de profundidad entrenado con datos desconocidos, puede heredar sesgos de los conjuntos de imagenes utilizados (escenas urbanas, interiores, iluminacion, etc.).
+- Riesgo de estimaciones incorrectas en escenas con superficies reflectantes, transparentes, texturas repetitivas o iluminacion atipica, comportamiento comun en estimadores monoculares; no cuantificado en la informacion disponible.
+- No es un modelo de lenguaje: no procesa texto ni mantiene conversaciones; cualquier uso en ese sentido es invalido.
+- Limitaciones de contexto o idioma: no aplica, pero la resolucion de entrada soportada no esta documentada.
+- Licencia Apache 2.0: permite uso comercial y modificacion, con obligacion de conservar el aviso de licencia y el archivo NOTICE si existe; conviene verificar la licencia del modelo original `jingheya/lotus-depth-d-v1-1` antes de redistribuir.
+- Es un repackaging: la calidad y el comportamiento dependen enteramente del modelo original; Comfy-Org no documenta cambios funcionales.
+- Para produccion, faltan datos de latencia, consumo de VRAM y precision (metricas de error) que permitan dimensionar el despliegue.
 
 ## Enlaces
 
-- Repositorio de Comfy-Org: https://huggingface.co/Comfy-Org/lotus
-- Repositorio original del modelo: https://huggingface.co/jingheya/lotus-depth-d-v1-1
-- Web de Comfy: https://comfy.org/
-- Modelos soportados en Comfy: https://comfy.org/models/
-- Noticia sobre el modelo (AICHINA): https://aichina.news/models/Comfy-Org/lotus/
+- Repositorio Hugging Face del repackaging: https://huggingface.co/Comfy-Org/lotus
+- Modelo original: https://huggingface.co/jingheya/lotus-depth-d-v1-1
+- Workflow oficial de ComfyUI (Depth Estimation: Lotus): https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_lotus_depth_v1_1.json
+- Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI

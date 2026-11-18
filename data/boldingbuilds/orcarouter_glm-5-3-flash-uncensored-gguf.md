@@ -2,107 +2,107 @@
 
 ## Resumen
 
-GLM-5.3-Flash-Uncensored es una version modificada del modelo GLM-5.3-Flash de Zhipu AI (Z.ai), a la que OrcaRouter ha aplicado una tecnica de "abliteration" para eliminar los mecanismos de rechazo de peticiones dañinas, dando lugar a un modelo sin censura. Este repositorio de BoldingBuilds ofrece cuantizaciones GGUF de esa version, construidas con una matriz de importancia (imatrix) personalizada y medidas de rendimiento realizadas directamente sobre los pesos cuantizados, no sobre el modelo original en FP8.
+GLM-5.3-Flash-Uncensored es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 320.759.404.382 parámetros totales y aproximadamente 18B parámetros activos por token, según los datos publicados por el autor de la cuantización. Deriva del checkpoint FP8 publicado por OrcaRouter, que a su vez parte de la familia GLM y ha sido modificado para eliminar los mecanismos de rechazo (abliteration). Esta ficha describe la distribución GGUF publicada por el usuario BoldingBuilds, que incluye cuantizaciones IQ3_XXS, IQ2_S e IQ2_XXS generadas con una importance matrix propia, además de un proyector multimodal (mmproj) para entrada de imagen y texto.
 
-El modelo base es un MoE (mezcla de expertos) de 320 mil millones de parametros totales, con 18 mil millones activos por token, 288 expertos enrutados de los que se seleccionan 8, y una ventana de contexto de 1 millon de tokens. Es un modelo multimodal con capacidad de vision nativa, aunque el proyector de vision incluido en este repositorio aun no ha sido probado de extremo a extremo. Su relevancia radica en ser una de las pocas opciones de codigo abierto con licencia MIT, contexto de 1M y un rendimiento en codigo y tareas de largo horizonte que, segun Z.ai, supera en un 50% a GLM-5.2 en su propio benchmark interno.
+El modelo resulta relevante por tres motivos. Primero, ofrece una ventana de contexto declarada de 1M tokens sobre una arquitectura MoE con 288 expertos enrutados y top-8, lo que lo sitúa en la categoría de modelos de contexto largo con activación dispersa. Segundo, la distribución GGUF está pensada para ejecutarse en llama.cpp mainline (a partir de la build b11279), lo que permite desplegarlo en hardware de gama alta sin depender de un fork. Tercero, el autor documenta de forma inusualmente transparente los fallos de las primeras compilaciones, el proceso de reconstrucción y las puertas de coherencia aplicadas, algo poco habitual en el ecosistema de cuantizaciones.
 
-La version cuantizada IQ3_XXS (128.6 GB) muestra una tasa de rechazo de solo el 4% en JailbreakBench, frente al 93% del modelo original sin abliterar, y alcanza un pass@1 de 0.927 en HumanEval, lo que indica que la cuantizacion no ha degradado significativamente las capacidades del modelo. Es importante destacar que se trata de un modelo sin censura, liberado para investigacion en red-teaming y estudio de mecanismos de rechazo, no para uso general en produccion.
+La licencia es MIT, lo que facilita el uso comercial, pero el propio autor advierte de que se trata de un modelo sin censura, liberado para investigación en red-teaming y estudio de mecanismos de rechazo. El repositorio ocupa 1017,3 GB e incluye tres shards por cuantización más el proyector multimodal.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE), transformer con atencion por ventanas, 288 expertos enrutados top-8 |
-| Parametros totales | 320.759.404.382 (320.8 mil millones) |
-| Parametros activos | 18 mil millones (18B) |
-| Longitud de contexto | 1.000.000 tokens (1M) |
-| Tipos de cuantizacion | FP8 (modelo base), IQ3_XXS (128.6 GB), IQ2_S (100.4 GB), IQ2_XXS (90.2 GB) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer MoE (arquitectura `glm5-next` en llama.cpp), con bloques MTP (`blk.45`) y proyector multimodal `glm5v` |
+| Parametros totales | 320.759.404.382 (320B) |
+| Parametros activos | ~18B por token (288 expertos enrutados, top-8) |
+| Longitud de contexto | 1.000.000 tokens (declarado por el autor) |
+| Tipos de cuantizacion | IQ3_XXS, IQ2_S, IQ2_XXS (GGUF, con importance matrix propia de 10 chunks) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (con shards), safetensors para el modelo base FP8 |
+| Formato de pesos | GGUF (3 shards por cuantización) + mmproj para visión |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3-Flash es un transformer de mezcla de expertos con 320 mil millones de parametros totales y 18 mil millones activos por token. Utiliza 288 expertos enrutados de los que se activan 8 por token, un diseno que permite mantener un alto rendimiento con un coste computacional relativamente bajo. La ventana de contexto es de 1 millon de tokens, lo que permite procesar repositorios de codigo completos o conversaciones muy largas. El modelo incluye un bloque MTP (Multi-Token Prediction) o NextN, que en la cuantizacion se fuerza a q8_0 para evitar problemas de convergencia.
+La arquitectura es un transformer con mezcla de expertos: 288 expertos enrutados con enrutamiento top-8, lo que da lugar a unos 18B parámetros activos sobre un total de 320B. El checkpoint incluye además un bloque MTP (multi-token prediction) identificado como `blk.45`, cuyos tensores se mantuvieron en alta precisión en todas las compilaciones. La implementación de referencia en llama.cpp denomina a esta arquitectura `glm5-next`; el autor construyó originalmente los ficheros con el fork del PR #27754 (que la llamaba `glm5next`), cerrado sin fusionar, y posteriormente renombró los metadatos para que funcionaran en mainline tras el merge del PR #27773. Los tensores son idénticos entre ambas implementaciones: mismo nombre, forma y transformaciones de conversión, por lo que el cambio fue de cabecera y no de cuantización.
 
-El proceso de entrenamiento de GLM-5.3 se basa en el mismo modelo base que GLM-5.2, con todas las mejoras provenientes de la fase de post-entrenamiento. Segun Z.ai, esto incluye refuerzo con preferencias humanas y tecnicas de optimizacion especificas para tareas de codificacion y agenticas. OrcaRouter aplico posteriormente una tecnica de abliteration, que consiste en identificar y eliminar la direccion de rechazo en el espacio de activaciones del modelo, dando como resultado un modelo que no se niega a responder peticiones dañinas. La cuantizacion GGUF se realizo convirtiendo el modelo FP8 a BF16 y luego aplicando una matriz de importancia calculada sobre un corpus de 1.24 MB con 60 fragmentos intercalados.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni la existencia de RLHF o DPO en el modelo base. Lo que sí está documentado es el proceso de cuantización: se generó una importance matrix con 10 chunks (el autor corrige una versión anterior de la model card que afirmaba 60; la ejecución hizo checkpoint en 10 y se detuvo, con una fila de experto sin cubrir en `blk.29`). La receta corregida mantiene en `q8_0` los tensores que se ejecutan en cada token —atención, expertos compartidos, los tres bloques FFN densos y los embeddings—, en lugar de cuantizarlos junto con los expertos enrutados, lo que añade unos 7 GB al tamaño de IQ2_S. El autor verificó la equivalencia numérica entre mainline y el fork antiguo: divergencia KL de 0,020 en prosa y 0,017 en matemáticas, con 94–96% de acuerdo top-1 y determinismo exacto de cada build consigo mismo.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento complejo en tareas de largo horizonte, con soporte para planificacion multi-paso.
-- Codificacion de software a nivel de repositorio completo, con mejora del 50% sobre GLM-5.2 en el benchmark interno de Z.ai.
-- Soporte de vision nativa mediante un proyector multimodal (mmproj) que procesa imagenes de 448x448 píxeles con 24 bloques y patch size 14, aunque en esta cuantizacion aun no ha sido probado de extremo a extremo.
-- Capacidad de procesamiento de video (la torre de vision del modelo base lo soporta, aunque no se ha verificado en esta version).
-- Soporte de tool calling y function calling, habilitado por el formato de chat con jinja.
-- Capacidades multilingues, aunque no se han documentado los idiomas concretos.
-- Modo de pensamiento (thinking) siempre activo, segun la model card, que permite razonamiento interno antes de responder.
-- Sin mecanismos de rechazo de contenido dañino (uncensored), por lo que puede generar respuestas a peticiones peligrosas.
+- Generación de texto conversacional multi-turno, con plantilla de chat propia de ZAI.
+- Razonamiento y matemáticas, con un modo de decodificación medido en la puerta de coherencia sobre tareas de código y matemáticas.
+- Generación de código, evaluada con HumanEval en la compilación IQ3_XXS original.
+- Entrada de imagen y texto (pipeline `image-text-to-text`) mediante el proyector `mmproj` incluido en el repositorio.
+- Contexto largo de hasta 1M tokens declarados, adecuado para documentos extensos y conversaciones con historial amplio.
+- Capacidad multilingüe: no disponible en la información proporcionada.
+- Soporte de tool calling y function calling: no documentado en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; el bloque MTP existe en los pesos pero mainline todavía no lo conecta (el PR #27917 lo añade).
+- Modo "uncensored": se han eliminado los rechazos de seguridad, por lo que el modelo cumple con peticiones dañinas, poco éticas o ilegales.
 
 ## Casos de uso
 
-- Investigacion en seguridad y red-teaming: el modelo es idoneo para estudiar como funcionan los mecanismos de rechazo en LLMs, evaluar la robustez de los sistemas de seguridad y desarrollar contramedidas. Su alta tasa de cumplimiento (96% en JailbreakBench) permite analizar patrones de comportamiento en escenarios adversarios.
-- Evaluacion de la degradacion de capacidades tras cuantizacion: los datos medidos sobre los pesos cuantizados (HumanEval pass@1 de 0.927) lo convierten en un caso de estudio valioso para comparar la perdida de rendimiento entre FP8 y cuantizaciones de 3 bits.
-- Desarrollo de sistemas de moderacion de contenido: al ser un modelo sin censura, se puede utilizar como generador de ejemplos adversarios para entrenar clasificadores de contenido dañino o sistemas de guardarrailes.
-- Pruebas de robustez de pipelines de agentes: con su contexto de 1M de tokens y soporte de tool calling, se puede usar para estresar arquitecturas de agentes con tareas de largo recorrido y detectar fallos en la gestion de memoria o en el seguimiento de instrucciones.
-- Analisis de alucinacion en modelos cuantizados: la combinacion de cuantizacion agresiva (IQ3_XXS) y un modelo sin filtros permite estudiar como la precision reducida afecta a la veracidad de las respuestas en escenarios de alta exigencia.
-- Benchmarking de hardware para inferencia de modelos MoE: al requerir 128.6 GB solo para los pesos, es un banco de pruebas realista para evaluar el rendimiento de servidores con multiples GPUs y sistemas de memoria unificada.
+- Red-teaming y evaluación de seguridad: el modelo sirve como sujeto de prueba para medir la eficacia de mecanismos de rechazo y estudiar qué se pierde al aplicar abliteration, comparando sus respuestas con las del checkpoint original. Es el uso que el propio autor declara como prioritario.
+- Estudio de mecanismos de rechazo: al disponer de una versión sin censura y de su base, permite analizar en qué capas y direcciones se codifica la negativa a responder, con experimentos de activaciones y probing.
+- Evaluación de robustez frente a jailbreaks: su comportamiento permisivo lo convierte en un banco de pruebas para clasificadores de contenido y filtros de salida, midiendo falsos negativos de los sistemas de moderación.
+- Procesamiento de documentos largos: con 1M tokens de contexto declarados, puede ingerir contratos, expedientes o bases de código completas en una sola pasada, aunque el coste computacional de esa ventana en hardware local es prohibitivo y conviene reservarlo a despliegues con GPU de 80 GB o superiores.
+- Análisis de imágenes con texto asociado: el proyector multimodal permite describir capturas, extraer texto de figuras o responder preguntas sobre diagramas en flujos de documentación técnica.
+- Investigación sobre cuantización extrema: la distribución incluye tres niveles (IQ2_XXS, IQ2_S, IQ3_XXS) con datos de coherencia medidos, lo que la hace útil para estudiar la degradación de modelos MoE de 320B a 2–3 bits y validar recetas de importance matrix.
+- Generación de código en entornos controlados: HumanEval fue medido sobre IQ3_XXS; puede usarse para tareas de completado y refactorización en pipelines internos donde no haya requisitos de moderación, siempre con revisión humana.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona mediciones realizadas directamente sobre la cuantizacion IQ3_XXS, no sobre el modelo FP8 original. Se utilizo un clasificador de prefijos basado en reglas para evaluar el rechazo, con una configuracion de generacion greedy y max_tokens de 8192.
+Los únicos datos publicados en la información disponible son los de la puerta de coherencia del autor, medida sobre un H200 alquilado con 12 tareas × 2 semillas × 2 samplers, y las cifras de JailbreakBench y HumanEval de la compilación IQ3_XXS original. No se proporcionan los valores numéricos de JailbreakBench ni de HumanEval, solo la mención de que fueron medidos.
 
-| Benchmark | Metrica | Resultado |
-|---|---|---|
-| JailbreakBench harmful (n=100) | Tasa de rechazo | 0.040 (4%) |
-| JailbreakBench harmful (n=100) | Cumplimiento con descargo | 0.270 (27%) |
-| JailbreakBench harmful (n=100) | Cumplimiento limpio | 0.600 (60%) |
-| JailbreakBench harmful (n=100) | Respuestas vacias | 0.090 (9%) |
-| JailbreakBench benign (n=100) | Tasa de rechazo | 0.010 (1%) |
-| AdvBench derivado (n=120) | Tasa de rechazo | 0.033 (3.3%) |
-| AdvBench derivado (n=120) | Respuestas vacias | 0.075 (7.5%) |
-| HumanEval (n=164) | pass@1 | 0.927 |
-| HumanEval (n=164) | capped | 0.055 |
-| HumanEval (n=164) | cond_acc | 0.981 |
-| HumanEval (n=164) | mediana de tokens | 556 |
+| Prueba | IQ2_S original | IQ2_S reconstruido | IQ3_XXS |
+|---|---|---|---|
+| Tareas de código superadas (de 48) | 45 (falló 3 de 8 tareas de código por agotar el límite de salida sin responder) | 48 | 48 |
+| Repetición con `repeat_penalty 1.1` | 21/24 → 21/24 (sin cambio en el modo de fallo) | no disponible | no disponible |
+| KL mainline vs fork (prosa) | no aplica | no disponible | 0,020 |
+| KL mainline vs fork (matemáticas) | no aplica | no disponible | 0,017 |
+| Acuerdo top-1 mainline vs fork | no aplica | no disponible | 94–96% |
 
-Comparativa con el modelo base sin abliterar (mediciones de OrcaRouter sobre FP8): el modelo base tiene una tasa de rechazo de 0.930 en JailbreakBench, mientras que el modelo abliterado FP8 baja a 0.120 y esta cuantizacion IQ3_XXS a 0.040. No se dispone de comparativas con otros modelos de la misma categoria en benchmarks estandar como MMLU o GSM8K.
+No se han publicado resultados de MMLU, GSM8K ni de benchmarks estándar de razonamiento en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los archivos GGUF pesan entre 90.2 GB (IQ2_XXS) y 128.6 GB (IQ3_XXS). Con overhead de contexto y calculos, se necesita al menos 120-160 GB de VRAM para la cuantizacion mas pequeña y 160-200 GB para la recomendada.
-- GPU recomendadas: la model card menciona una H200 para las pruebas (141 GB de VRAM), que es suficiente para IQ3_XXS. Alternativas: 2x A100 80GB en paralelo, 2x H100 80GB, o sistemas con memoria unificada como Apple Silicon con 192 GB unificados.
-- No cabe en GPUs de consumo (RTX 4090, 3090, etc.) por su tamano; se requiere hardware de servidor o multiples GPUs.
-- Opciones de despliegue: llama.cpp con llama-server (indicado en la model card), compatible con vLLM si se convierte a safetensors, y potencialmente con TGI u Ollama (aunque el tamano lo hace poco practico).
-- Latencia: no se proporcionan datos de latencia. Con 18B parametros activos, la velocidad de generacion dependera del ancho de banda de memoria; en una H200 se estiman entre 20-40 tokens/segundo, pero no hay mediciones publicadas.
+- VRAM estimada: el repositorio completo ocupa 1017,3 GB, repartido entre tres cuantizaciones y el proyector. Para una sola cuantización de 320B a 2–3 bits hay que contar con el tamaño de los tres shards más el contexto KV; el autor menciona que la receta corregida de IQ2_S añade 7 GB respecto a la original por mantener atención, expertos compartidos, FFN densos y embeddings en `q8_0`.
+- GPU recomendadas: el autor midió en una H200 alquilada. Para 320B en 2–3 bits se necesita un nodo multi-GPU; una sola A100 de 80 GB o una H100 no bastan para alojar los pesos completos de una cuantización IQ2, salvo con offload parcial a RAM.
+- GPU de consumo: no cabe en ninguna GPU consumer (RTX 4090 de 24 GB, RTX 5090 de 32 GB) sin offload masivo a memoria del sistema, lo que degrada el throughput de forma severa en un MoE de este tamaño.
+- Opciones de despliegue: llama.cpp mainline build b11279 o superior (obligatorio; builds anteriores fallan con `unknown model architecture: 'glm5next'`). LM Studio funciona tras la corrección de plantilla del 2026-10-07, que reescribe `x.0.type` como `x[0].type` en cuatro puntos. El soporte de MTP en mainline está pendiente del PR #27917.
+- Latencia y throughput: no disponibles. El autor solo reporta que mainline y el fork difieren en KL 0,020/0,017 con 94–96% de acuerdo top-1, sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas directas publicadas con otros modelos de la misma categoria (MoE de 300B+ con contexto 1M). Los unicos datos comparables provienen del propio GLM-5.3-Flash sin abliterar:
+No se dispone de datos de benchmarks comparativos en la información proporcionada, por lo que la comparación se limita a parámetros y licencia.
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | JailbreakBench (refusal) |
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| zai-org/GLM-5.3-Flash | 320B | 18B | 1M | MIT | 0.930 |
-| orcarouter/GLM-5.3-Flash-Uncensored-FP8 | 320B | 18B | 1M | MIT | 0.120 |
-| BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF (IQ3_XXS) | 320B | 18B | 1M | MIT | 0.040 |
+| GLM-5.3-Flash-Uncensored (esta ficha) | 320B | ~18B (MoE top-8) | 1M | MIT | GGUF, FP8 (base) |
+| orcarouter/GLM-5.3-Flash-Uncensored-FP8 | 320B | ~18B | no disponible | no disponible | FP8 |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Otros modelos MoE de tamano comparable, como Mixtral 8x22B (141B totales, 39B activos) o DeepSeek-V3 (671B totales, 37B activos), no tienen la misma combinacion de contexto, licencia y capacidades de vision, pero no hay datos de benchmarks comparables en las fuentes disponibles.
+No se han identificado en la información disponible modelos comparables de 320B MoE con contexto de 1M y licencia MIT sobre los que existan datos públicos de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo sin censura: los mecanismos de rechazo han sido eliminados deliberadamente. Puede generar contenido dañino, ilegal o poco etico, incluyendo instrucciones para violencia, explotacion sexual o actividades criminales. No debe desplegarse en entornos de produccion sin guardarrailes externos.
-- Riesgo de alucinacion: al ser una cuantizacion de 3 bits (IQ3_XXS), la precision numerica reducida puede aumentar la frecuencia de respuestas incorrectas o inventadas, especialmente en tareas de razonamiento complejo.
-- Sesgos no mitigados: no se han documentado evaluaciones de sesgo para esta version; el proceso de abliteration puede afectar a los sesgos existentes del modelo base.
-- Vision no verificada: el proyector de vision se ha construido correctamente segun la metadata, pero no se ha probado con imagenes reales. Usar la funcion multimodal en produccion es arriesgado.
-- Respuestas vacias: en las pruebas, un porcentaje significativo de peticiones (hasta 26.7% con max_tokens=2048) devuelve contenido vacio, lo que puede indicar problemas de truncamiento o loops internos.
-- Limitaciones de contexto: aunque la ventana es de 1M tokens, el rendimiento en contextos muy largos no ha sido evaluado en esta cuantizacion.
-- Restricciones de licencia: la licencia MIT permite uso comercial, pero la naturaleza del modelo (uncensored) puede generar responsabilidades legales o de reputacion para quien lo despliegue.
-- Requisitos de hardware: el tamano de los pesos (minimo 90 GB) limita su uso a entornos con multiples GPUs o hardware especializado, lo que excluye la mayoria de estaciones de trabajo de consumo.
+- Modelo sin censura: los rechazos de seguridad fueron eliminados por OrcaRouter. Cumplirá peticiones dañinas, poco éticas o ilegales. El autor lo libera para investigación y red-teaming, y la responsabilidad de uso recae en el usuario.
+- Riesgo de alucinación: no cuantificado en la información disponible; en un modelo de 320B cuantizado a 2 bits la degradación de fidelidad es esperable, y el propio autor documenta fallos de coherencia en la versión IQ2_S original.
+- Fallos de coherencia conocidos: IQ2_XXS está marcado como pendiente de reconstrucción y de superar la misma puerta de coherencia que IQ2_S; hasta entonces no debe usarse en producción. La compilación IQ2_S original falló 3 de 8 tareas de código por razonamiento hasta el límite de salida.
+- La `repeat_penalty 1.1` incluida en los metadatos no corrige el modo de fallo de emisión de literales; solo ayuda con la repetición de n-gramas.
+- Importance matrix incompleta: 10 chunks en lugar de 60, con una fila de experto sin cubrir en `blk.29`.
+- Compatibilidad: requiere llama.cpp b11279 o superior. En LM Studio hay que re-descargar el shard 1 de cada cuantización o editar la plantilla manualmente.
+- MTP no conectado en mainline: el bloque `blk.45` está en los pesos pero no se aprovecha todavía, por lo que la decodificación especulativa multi-token no está activa en la implementación de referencia.
+- Idiomas soportados no documentados: no hay garantía de calidad fuera de los idiomas del modelo base, que no se especifican.
+- Licencia MIT: permite uso comercial, pero eso no exime de cumplir la legislación aplicable sobre contenido generado ni de las obligaciones de moderación en productos dirigidos al público.
+- Repositorio de 1017,3 GB: la descarga completa es costosa; conviene bajar solo la cuantización necesaria y verificar los sha256 publicados, dado el historial de reemplazos de shards.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF
-- Modelo base FP8 de OrcaRouter: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
-- Pagina de OrcaRouter: https://www.orcarouter.ai/
-- Pagina de GLM-5.3 en OrcaRouter: https://www.orcarouter.ai/models/z-ai/glm-5.3
-- Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5
-- Pagina de GLM-5.3 en OpenLM: https://openlm.ai/glm-5.5/
+- Repositorio Hugging Face: https://huggingface.co/BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF
+- Modelo base FP8: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
+- Discusión #1 (fallo de bucle en IQ2_S): https://huggingface.co/BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF/discussions/1
+- Discusión #2 (error de arquitectura en mainline): https://huggingface.co/BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF/discussions/2
+- Discusión #4 (plantilla Jinja en LM Studio): https://huggingface.co/BoldingBuilds/orcarouter_GLM-5.3-Flash-Uncensored-GGUF/discussions/4
+- PR #27754 de llama.cpp (fork `glm5next`, cerrado sin fusionar): https://github.com/ggml-org/llama.cpp/pull/27754
+- PR #27773 de llama.cpp (arquitectura `glm5-next` en mainline): https://github.com/ggml-org/llama.cpp/pull/27773
+- PR #27917 de llama.cpp (soporte de MTP): https://github.com/ggml-org/llama.cpp/pull/27917

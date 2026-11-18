@@ -19,8 +19,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 176,
-  "downloads_30d": 15877,
+  "likes": 179,
+  "downloads_30d": 16456,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
@@ -38,31 +38,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/?gl=FR&hl=fr",
-      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/",
-      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
-    },
-    {
-      "title": "YouTube - YouTube",
-      "url": "https://www.youtube.com/YouTube/fr-fr",
-      "snippet": "Today, she’s YouTube royalty, holding the crown as one of the most-followed female gaming creators on the platform."
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/?lang=fr",
-      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
-    },
-    {
-      "title": "YouTube - Google Accounts",
-      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
-      "snippet": "Share your videos with friends, family, and the world."
-    }
-  ]
+  "sources": []
 }

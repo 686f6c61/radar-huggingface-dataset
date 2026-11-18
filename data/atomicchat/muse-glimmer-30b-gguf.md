@@ -2,68 +2,69 @@
 
 ## Resumen
 
-Muse Glimmer 30B es un modelo multimodal (imagen-texto) desarrollado por Meta, con 27.854.794.240 parámetros (~27,85 mil millones) y licencia Apache 2.0. Este repositorio, publicado por AtomicChat, ofrece una colección de cuantizaciones GGUF del modelo original, optimizadas para ejecutarse con llama.cpp en hardware de consumo. La versión GGUF se construyó a partir de los pesos BF16 originales, verificados bit a bit, e incorpora una matriz de importancia calibrada (imatrix) y una selección de tipos de cuantización por tensor para maximizar la calidad en cada tamaño.
+Muse Glimmer 30B es un modelo multimodal de tipo image-text-to-text desarrollado por Meta, distribuido bajo licencia Apache 2.0. Este repositorio concreto, publicado por AtomicChat, ofrece una coleccion de cuantizaciones GGUF optimizadas para su uso con llama.cpp, generadas a partir de los pesos originales en BF16 mediante una matriz de importancia calibrada y una seleccion de tipos por tensor basada en mediciones empiricas de divergencia (KLD).
 
-La relevancia de esta publicación radica en que permite ejecutar un modelo multimodal de ~30B en GPUs de 24 GB o incluso 12 GB con cuantización extrema, incluyendo soporte para visión (proyector multimodal) y decodificación especulativa (drafter) que acelera la generación hasta 1,8 veces. El modelo también admite tool calling y un nivel de razonamiento ajustable mediante el system prompt, lo que lo hace adecuado para aplicaciones de agentes y asistentes conversacionales.
+El modelo resuelve el problema de desplegar un modelo multimodal de aproximadamente 27.850 millones de parametros en hardware de consumo, incluyendo tarjetas graficas de 24 GB como la RTX 5090. La cuantizacion recomendada (AD-IQ4_XS, 15,95 GB) permite ejecutar vision, tool calling y decodificacion especulativa simultaneamente dentro de 24,6 GB de VRAM, con una generacion de 71,8 tokens por segundo.
 
-El repositorio incluye múltiples archivos GGUF con diferentes niveles de cuantización (desde Q8_0 hasta IQ2_XXS), así como el proyector de visión (mmproj) y el drafter (dflash) en formato BF16. Se requiere una compilación de llama.cpp desde master, ya que el soporte se incorporó en el commit `62bf73d` del PR #26841.
+La relevancia actual del repositorio reside en el rigor del proceso de cuantizacion: el autor publica matrices de importancia, mapas de tipos por tensor, builds de control y registros completos de metricas, ademas de verificar que el GGUF de referencia BF16 es bit-identico a los pesos originales mediante UUID y hashes de los 731 tensores. El soporte para este modelo se integro en llama.cpp master a traves del PR #26841.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo multimodal transformer, sin detalles publicados) |
-| Parametros totales | 27.854.794.240 (~27,85B) |
-| Parametros activos | no disponible (no se indica si es MoE; probablemente denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ3_M, IQ3_XXS, IQ2_M, IQ2_XXS (algunas con variante AD) |
-| Idiomas soportados | no disponible (la documentacion menciona pruebas en 30 idiomas) |
+| Arquitectura | no disponible (modelo base multimodal image-text-to-text; detalles no publicados en la informacion disponible) |
+| Parametros totales | 27.854.794.240 (27,85 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la model card; los ejemplos de ejecucion usan `-c 16384` |
+| Tipos de cuantizacion | BF16, Q8_0, AD-Q8_0, AD-Q6_K, AD-Q5_K_M, AD-Q4_K_M, AD-IQ4_XS, AD-IQ3_M, AD-IQ3_XXS, AD-IQ2_M, AD-IQ2_XXS |
+| Idiomas soportados | no disponible (el corpus de evaluacion de cuantizacion cubre 30 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con archivos BF16 de referencia y proyectores) |
+| Formato de pesos | GGUF (llama.cpp); BF16 de referencia incluido en el repo |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura interna del modelo base `meta-models/Muse-Glimmer-30B`. Se sabe que es un modelo multimodal (image-text-to-text) con aproximadamente 27,85 mil millones de parámetros, desarrollado por Meta. La documentación del repositorio no proporciona información sobre la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna del modelo base (meta-models/Muse-Glimmer-30B): no se especifica si emplea un transformer denso, MoE o una variante hibrida, ni se documentan el numero de tokens de entrenamiento, la composicion del dataset o las fases de alineacion (RLHF/DPO). Lo que si se conoce es su caracter multimodal: el pipeline es image-text-to-text y requiere un proyector de vision (`mmproj`, 3,9 GB en BF16) para procesar imagenes.
 
-La versión GGUF se generó a partir de los pesos BF16 originales, verificados como bit-idénticos mediante UUID y hash de los 731 tensores. Se utilizó una matriz de importancia calibrada (imatrix) y un diseño de tipos de cuantización por tensor (layout) elegido mediante mediciones. El repositorio incluye también un proyector de visión (`mmproj`) y un drafter para decodificación especulativa (`dflash`), ambos en BF16.
+La innovacion tecnica documentada en este repositorio no reside en el entrenamiento sino en el proceso de cuantizacion. AtomicChat genera los GGUF desde los pesos BF16 originales usando una importance matrix calibrada y un layout de tipos por tensor elegido por medicion, con builds de control en el directorio `experiments/`. Ademas, el repositorio incluye un drafter de decodificacion especulativa (`dflash`, 5,1 GB en BF16) que acelera la generacion 1,8 veces sin alterar la calidad bajo muestreo greedy: el modelo completo verifica cada token propuesto. El modelo soporta un parametro de profundidad de razonamiento (`low`, `medium`, `high`, `xhigh`) configurable mediante una linea del system prompt, con `high` como valor por defecto.
 
 ## Capacidades
 
-- Multimodal: procesa imágenes y texto, permitiendo responder preguntas sobre contenido visual.
-- Tool calling: soporta llamadas a funciones, lo que permite integrarlo en pipelines de agentes.
-- Razonamiento ajustable: el nivel de razonamiento se configura mediante una línea en el system prompt (`Reasoning strength: low|medium|high|xhigh`), con `high` como valor por defecto.
-- Decodificación especulativa: el drafter propone tokens y el modelo principal los verifica, acelerando la generación hasta 1,8 veces sin pérdida de calidad bajo muestreo greedy.
-- Multilingüe: las pruebas de calidad se realizaron sobre texto neutro en 30 idiomas, aunque no se especifica la lista completa.
-- Conversacional: diseñado para diálogos multi-turno con plantilla de chat nativa.
+- Generacion de texto conversacional y razonamiento con profundidad ajustable (`Reasoning strength: low|medium|high|xhigh`).
+- Procesamiento de imagenes (image-text-to-text) mediante el proyector multimodal `mmproj`.
+- Tool calling y function calling, con parseo de llamadas a herramientas integrado en la plantilla de chat (requiere `--jinja`).
+- Dialogo agentico multi-turno, segun el corpus de evaluacion "agentic dialogue" con llamadas a herramientas empleado por el autor.
+- Generacion de codigo, prosa y tareas de razonamiento (categorias de prompt usadas en las mediciones de rendimiento).
+- Decodificacion especulativa mediante drafter dedicado, con aceptacion medida de 0,177.
+- Capacidades multilingues: el corpus de evaluacion de cuantizacion cubre texto neutro en 30 idiomas, aunque no se publica la lista oficial de idiomas soportados.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags del repositorio).
 
 ## Casos de uso
 
-- Asistente virtual con visión: el modelo puede analizar imágenes enviadas por el usuario y responder preguntas sobre su contenido, por ejemplo, identificar objetos, leer texto en fotografías o describir escenas. Su ventana de contexto y soporte multimodal lo hacen adecuado para aplicaciones de ayuda visual en tiempo real.
-- Agente autónomo con tool calling: gracias a su capacidad para invocar funciones, puede integrarse en sistemas que necesitan realizar acciones externas, como consultar APIs, gestionar calendarios o interactuar con bases de datos, ejecutando razonamiento multi-paso.
-- Generación de descripciones de imágenes para accesibilidad: puede generar texto alternativo detallado para imágenes en sitios web o documentos, mejorando la accesibilidad para personas con discapacidad visual.
-- Chatbot multilingüe de atención al cliente: con soporte para 30 idiomas, puede atender consultas en varios idiomas, manteniendo el contexto de la conversación y derivando a herramientas externas cuando sea necesario.
-- Análisis de documentos con capturas: los usuarios pueden subir capturas de pantalla de informes, gráficos o tablas y obtener resúmenes o respuestas a preguntas específicas sobre el contenido.
-- Prototipado rápido de aplicaciones multimodales en local: al poder ejecutarse en una GPU de 24 GB con cuantización IQ4_XS y drafter, permite desarrollar y probar aplicaciones de visión y lenguaje sin depender de servicios cloud.
-- Razonamiento de varios pasos en tareas complejas: con el nivel de razonamiento configurable, puede abordar problemas que requieren encadenar deducciones, como resolución de problemas matemáticos o planificación de tareas.
+- Asistente multimodal en estacion de trabajo local: con AD-IQ4_XS (15,95 GB) mas el proyector de vision, el modelo cabe en una GPU de 24 GB y permite analizar capturas, diagramas o documentos escaneados junto a texto, sin enviar datos a la nube.
+- Agente con tool calling en produccion: la plantilla de chat nativa incluye parseo de llamadas a herramientas, lo que permite integrar el modelo en pipelines que consulten APIs, bases de datos o sistemas internos mediante function calling.
+- Atencion al cliente automatizada: el modo de razonamiento ajustable permite usar `low` para respuestas rapidas de bajo coste y `high` o `xhigh` para casos complejos, equilibrando latencia y calidad en la misma instancia.
+- Generacion de codigo asistida en IDE: con 39,6 t/s de generacion (o 71,8 t/s con drafter) en una RTX 5090, el modelo es viable para autocompletado y explicacion de codigo en local, manteniendo el codigo fuente fuera de servicios externos.
+- Procesamiento de documentacion tecnica con imagenes: el pipeline image-text-to-text permite extraer y razonar sobre diagramas de arquitectura, tablas escaneadas y figuras dentro de flujos de documentacion automatizada.
+- Despliegue en hardware de gama media: las variantes IQ2_XXS (9,3 GB) e IQ2_M (11,2 GB) permiten ejecutar el modelo, con vision incluida, en GPUs de 12 GB y 16 GB respectivamente, habilitando prototipado en equipos de consumo.
+- Evaluacion e investigacion de cuantizaciones: el repositorio publica importance matrix, mapas de tipos por tensor, builds de control y logs completos, lo que lo convierte en material de referencia para estudiar el impacto de la cuantizacion en modelos multimodales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El repositorio proporciona métricas de calidad de cuantización basadas en la divergencia de Kullback-Leibler (KLD) y precisión top-1 frente a los pesos BF16 de referencia, medidas sobre dos corpus: texto neutro en 30 idiomas y diálogo agentico con tool calls. Valores más bajos de KLD indican mayor fidelidad.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor publica metricas de fidelidad de cuantizacion (KLD y top-1) frente al BF16 de referencia, sobre dos corpus: texto neutro en 30 idiomas y dialogo agentico con tool calls.
 
-| Build | Tamano | KLD neutral | top-1 neutral | KLD agentico | top-1 agentico |
-|---|---|---|---:|---:|---:|---:|
-| AD-Q8_0 | 32,13 GB | 0,000819 | 98,99 % | 0,018382 | 98,58 % |
-| Q8_0 | 29,61 GB | 0,000861 | 98,95 % | 0,019968 | 98,58 % |
-| AD-Q6_K | 28,26 GB | 0,001247 | 98,71 % | 0,023174 | 98,36 % |
-| AD-Q5_K_M | 22,67 GB | 0,003136 | 97,82 % | 0,039615 | 97,57 % |
-| AD-Q4_K_M | 19,06 GB | 0,008866 | 96,27 % | 0,065472 | 96,39 % |
-| AD-IQ4_XS | 15,95 GB | 0,019418 | 94,55 % | 0,091624 | 95,41 % |
-| AD-IQ3_M | 14,92 GB | 0,026290 | 93,60 % | 0,121391 | 94,68 % |
-| AD-IQ3_XXS | 12,22 GB | 0,064353 | 89,97 % | 0,168065 | 92,90 % |
-| AD-IQ2_M | 11,16 GB | 0,104788 | 87,31 % | 0,236144 | 92,00 % |
-| AD-IQ2_XXS | 9,31 GB | 0,266591 | 79,66 % | 0,333133 | 87,90 % |
+| Build | Tamano (GB) | KLD neutro | top-1 neutro | KLD agentico | top-1 agentico |
+|---|---:|---:|---:|---:|---:|
+| AD-Q8_0 | 32,13 | 0,000819 | 98,99 % | 0,018382 | 98,58 % |
+| Q8_0 | 29,61 | 0,000861 | 98,95 % | 0,019968 | 98,58 % |
+| AD-Q6_K | 28,26 | 0,001247 | 98,71 % | 0,023174 | 98,36 % |
+| AD-Q5_K_M | 22,67 | 0,003136 | 97,82 % | 0,039615 | 97,57 % |
+| AD-Q4_K_M | 19,06 | 0,008866 | 96,27 % | 0,065472 | 96,39 % |
+| AD-IQ4_XS | 15,95 | 0,019418 | 94,55 % | 0,091624 | 95,41 % |
+| AD-IQ3_M | 14,92 | 0,026290 | 93,60 % | 0,121391 | 94,68 % |
+| AD-IQ3_XXS | 12,22 | 0,064353 | 89,97 % | 0,168065 | 92,90 % |
+| AD-IQ2_M | 11,16 | 0,104788 | 87,31 % | 0,236144 | no disponible |
 
-Rendimiento medido en una RTX 5090 con `-c 16384 -fa on`, nueve prompts de código, prosa y razonamiento, muestreo greedy:
+Rendimiento medido en una RTX 5090 con `-c 16384 -fa on`, nueve prompts de codigo, prosa y razonamiento, muestreo greedy:
 
 | Configuracion | VRAM | Generacion | Prompt | Aceptacion |
 |---|---:|---:|---:|---:|
@@ -72,29 +73,49 @@ Rendimiento medido en una RTX 5090 con `-c 16384 -fa on`, nueve prompts de códi
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: desde 9,3 GB (IQ2_XXS con visión) hasta 32,1 GB (AD-Q8_0). La configuración recomendada para una experiencia completa (visión + drafter) es AD-IQ4_XS, que ocupa 24,6 GB.
-- GPU recomendadas: la RTX 5090 se utilizó en las pruebas; también puede ejecutarse en RTX 4090 (24 GB) con cuantizaciones como AD-Q4_K_M o AD-IQ4_XS, y en GPUs de 16 GB con AD-IQ3_M (sin visión) o AD-IQ3_XXS (con visión).
-- Opciones de despliegue: llama.cpp (llama-server, llama-mtmd-cli) con una compilación desde master (commit `62bf73d` o posterior). No se mencionan otros backends como vLLM u Ollama.
-- Latencia y throughput: en RTX 5090, 39,6 t/s de generación sin drafter y 71,8 t/s con drafter, con una velocidad de prompt de 242,6 t/s (sin drafter) y 198,5 t/s (con drafter). El drafter consume 5,5 GB adicionales de VRAM y reduce la velocidad de procesamiento del prompt en un 18 %.
-- El archivo BF16 de referencia ocupa 55,7 GB y requiere 64 GB de VRAM; los proyectores mmproj y dflash añaden 3,7 GB y 5,5 GB respectivamente.
+- VRAM estimada segun cuantizacion: 9,3 GB (IQ2_XXS, con vision en 12 GB), 11,2 GB (IQ2_M, con vision en 16 GB), 12,2 GB (IQ3_XXS, con vision en 16 GB), 15,95 GB (IQ4_XS, recomendada), 19,06 GB (Q4_K_M), 22,67 GB (Q5_K_M), 28,26 GB (Q6_K), 29,61 GB (Q8_0), 32,13 GB (AD-Q8_0), 55,7 GB (BF16).
+- Proyector de vision: 3,9 GB adicionales (3,7 GB de VRAM) obligatorios para procesar imagenes.
+- Drafter de decodificacion especulativa: 5,1 GB adicionales (5,5 GB de VRAM), opcional.
+- Configuracion recomendada por el autor: AD-IQ4_XS + mmproj + dflash ocupa 24,6 GB, cabe en una unica RTX 5090 y ofrece multimodalidad completa con tool calling.
+- GPU recomendadas: RTX 5090 (24 GB) para la configuracion completa con vision y drafter; GPUs de 16 GB para IQ3_XXS o IQ2_M con vision; GPUs de 12 GB para IQ2_XXS con vision; 32 GB o mas para Q8_0 sin vision; 64 GB para BF16.
+- Despliegue: llama.cpp compilado desde master (el soporte se integro en el PR #26841, commit `62bf73d`; la ultima release etiquetada es anterior). Se requieren los binarios `llama-server` y `llama-mtmd-cli` y el flag `--jinja` para la plantilla de chat y el parseo de tool calls.
+- Throughput medido en RTX 5090: 39,6 t/s de generacion y 242,6 t/s de prompt sin drafter; 71,8 t/s de generacion y 198,5 t/s de prompt con drafter (coste del 18 % en procesamiento de prompt).
+- El repositorio completo ocupa 390,9 GB, pero solo es necesario descargar el archivo GGUF concreto y, en su caso, `mmproj` y `dflash`.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de la misma categoría (por ejemplo, otros modelos multimodales de ~30B como LLaVA-NeXT o Qwen-VL). La documentación incluye una comparación interna entre las cuantizaciones de este repositorio y las de otro editor no identificado, mostrando que por debajo de 16 GB las versiones de AtomicChat presentan una KLD entre un 12 % y un 41 % menor a igual tamaño. Sin embargo, no se proporcionan nombres de los modelos comparados ni resultados de benchmarks estándar, por lo que la comparativa con alternativas externas no está disponible.
+No se dispone de datos de modelos comparables en la informacion proporcionada. La model card no incluye comparaciones con alternativas de la misma categoria, y no se han publicado resultados de benchmarks de tareas que permitan un emparejamiento riguroso. Como referencia interna, la comparativa mas directa es entre las propias cuantizaciones del repositorio:
+
+| Build | Tamano | KLD agentico | Uso recomendado |
+|---|---:|---:|---|
+| Q8_0 | 29,61 GB | 0,019968 | Maxima fidelidad en 32 GB sin vision |
+| AD-Q6_K | 28,26 GB | 0,023174 | Descartable frente a Q8_0 (1,3 GB mayor y 31 % mas preciso) |
+| AD-Q4_K_M | 19,06 GB | 0,065472 | Equilibrio en 24 GB |
+| AD-IQ4_XS | 15,95 GB | 0,091624 | Recomendada: 24 GB con vision y drafter |
+| AD-IQ2_XXS | 9,3 GB | no disponible | Minima huella, 12 GB con vision |
 
 ## Limitaciones y advertencias
 
-- Requiere una compilación de llama.cpp desde master; las versiones etiquetadas no incluyen el soporte necesario.
-- El parámetro `--jinja` es obligatorio; sin él, la plantilla de chat y el análisis de tool calls no funcionan.
-- El drafter de decodificación especulativa consume 5,5 GB de VRAM y reduce la velocidad de procesamiento del prompt en un 18 %, aunque no afecta a la calidad bajo muestreo greedy.
-- El nivel de razonamiento por defecto (`high`) puede hacer que respuestas cortas agoten todo el presupuesto de tokens dentro del bloque de razonamiento; se recomienda ajustar `max_tokens` o reducir el nivel a `low` para respuestas rápidas.
-- La calidad de la cuantización se degrada significativamente en tamaños pequeños: la KLD en el corpus agentico aumenta de 0,018 (Q8_0) a 0,333 (IQ2_XXS), lo que puede afectar a tareas que requieren alta precisión.
-- No se han publicado detalles sobre sesgos, riesgos de alucinación o limitaciones idiomáticas específicas del modelo base. Al ser un modelo multimodal, puede heredar sesgos visuales de sus datos de entrenamiento.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar los términos del modelo base `meta-models/Muse-Glimmer-30B` si se utiliza en producción.
+- No se han publicado datos sobre sesgos del modelo base en la informacion disponible.
+- Riesgo de alucinacion inherente a los modelos generativos; no se documentan evaluaciones de factualidad en la model card.
+- Con `Reasoning strength: high` (valor por defecto), las respuestas cortas pueden consumir todo el presupuesto de tokens dentro del bloque de razonamiento; es necesario aumentar `max_tokens` o bajar a `low` para respuestas rapidas.
+- La longitud de contexto no se especifica en la model card; los ejemplos usan 16.384 tokens, por lo que no hay garantia documentada de ventanas mayores.
+- La lista oficial de idiomas soportados no esta disponible; el dato de 30 idiomas corresponde unicamente al corpus de evaluacion de cuantizacion.
+- Requiere una build de llama.cpp desde master: la ultima release etiquetada no incluye el soporte del modelo.
+- El flag `--jinja` es obligatorio; sin el no funcionan ni la plantilla de chat ni el parseo de tool calls.
+- La decodificacion especulativa consume 5,5 GB de VRAM adicionales y reduce un 18 % la velocidad de procesamiento de prompt; la aceptacion medida es baja (0,177), por lo que la ganancia depende del tipo de tarea.
+- Las cuantizaciones de 2 y 3 bits presentan divergencia notable (KLD agentico de 0,236 en IQ2_M, top-1 del 87,31 % en neutro), lo que las hace inadecuadas para tareas sensibles a la precision.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base `meta-models/Muse-Glimmer-30B` en su repositorio original.
+- El repositorio pesa 390,9 GB en total; conviene descargar solo los archivos necesarios.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Muse-Glimmer-30B-GGUF
-- Dataset de métricas: https://huggingface.co/datasets/AtomicChat/Muse-Glimmer-30B-GGUF-metrics
-- Pull request de llama.cpp con el soporte: https://github.com/ggml-org/llama.cpp/pull/26841
-- Modelo base (referencia): https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Repositorio GGUF: https://huggingface.co/AtomicChat/Muse-Glimmer-30B-GGUF
+- Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Metricas y logs de cuantizacion: https://huggingface.co/datasets/AtomicChat/Muse-Glimmer-30B-GGUF-metrics
+- PR de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/26841
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Atomic Chat: https://atomic.chat/
+- GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
+- X (Twitter): https://x.com/atomic_chat_hq

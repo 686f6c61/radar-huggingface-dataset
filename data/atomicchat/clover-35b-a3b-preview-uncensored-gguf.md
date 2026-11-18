@@ -2,118 +2,114 @@
 
 ## Resumen
 
-Clover-35B-A3B-Preview-Uncensored-GGUF es una versión cuantizada y "abliterada" del modelo Clover-35B-A3B-Preview de DiffuSpace, publicada por AtomicChat. El modelo base es un híbrido de difusión/transformer con mezcla de expertos (MoE) que reutiliza el cuerpo de Qwen3.6-35B-A3B: 34,66 mil millones de parámetros totales de los cuales unos 3 mil millones están activos por token, con 40 bloques donde tres de cada cuatro usan atención lineal (Gated DeltaNet) y 256 expertos enrutados más un experto compartido por bloque.
+Clover-35B-A3B-Preview-Uncensored-GGUF es una versión cuantizada en formato GGUF del modelo Diffuspace/Clover-35B-A3B-Preview, un transformer de mezcla de expertos (MoE) de 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token. AtomicChat aplica sobre los pesos originales una técnica de "abliteration" basada en la proyección de la dirección de rechazo del flujo residual (Arditi et al., 2024), eliminando el comportamiento de negativa del modelo sin reentrenar. El resultado se distribuye en tres builds GGUF pre-cuantizados y un adaptador LoRA de rango 1 de 110 MB.
 
-La particularidad de esta versión es que AtomicChat ha proyectado fuera de los pesos la "dirección de rechazo" (refusal direction) identificada según la metodología de Arditi et al. (2024), eliminando el comportamiento de negativa del modelo. El resultado se distribuye tanto en archivos GGUF con la edición integrada ("baked") como en un LoRA de rango 1 de solo 110 MB que puede aplicarse sobre los cuants originales. Según el autor, los rechazos caen del 93,8 % al 0 % en prompts de JailbreakBench, manteniendo MMLU prácticamente intacto (80,8 % a 80,7 %).
+El modelo hereda el cuerpo de Qwen3.6-35B-A3B: 40 bloques, tres de cada cuatro con atención lineal Gated DeltaNet y uno con atención completa, 256 expertos enrutados más un experto compartido por bloque. La edición elimina las negativas tanto en prompts de jailbreak como en prompts seguros, manteniendo MMLU prácticamente intacto (80,8 % antes frente a 80,7 % después sobre 2.000 preguntas, McNemar p = 0,92). Es relevante para quienes necesitan un modelo local de gran tamaño con contexto largo, sin restricciones de rechazo y con licencia Apache 2.0.
 
-Es relevante porque demuestra que la abliteración mediante edición de pesos puede aplicarse a arquitecturas híbridas novedosas (difusión + MoE + atención lineal) con una degradación medible y mínima del rendimiento, y porque ofrece cuants dinámicos Atomic (AD) optimizados con imatrix para ejecución local en llama.cpp.
+Los archivos requieren llama.cpp b12052 o superior y se distribuyen con el chat template embebido. La variante con mayor calidad, AD-Q6_K-Q5_K, ocupa 26,3 GB en disco con una divergencia KL de 0,062 frente al BF16 original. El autor reconoce que una de las puertas de calidad no se cumple: en prompts inocuos el primer token se aleja más de lo previsto del modelo original (KL 0,170 frente al límite de 0,10).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrido transformer + difusion, MoE, atencion lineal Gated DeltaNet (3 de cada 4 bloques) |
-| Parametros totales | 34.661.350.848 (≈34,66 B) |
-| Parametros activos | ≈3 B (indicado por la convencion A3B; MoE con 256 expertos enrutados + 1 compartido por bloque) |
-| Longitud de contexto | 32.768 tokens (valor usado en los ejemplos de ejecucion; maximo oficial no disponible) |
-| Tipos de cuantizacion | AD-Q6_K-Q5_K, AD-Q4_K-IQ4_XS, AD-IQ3_S-IQ3_XXS (cuants dinamicos Atomic con imatrix); LoRA rank-1 aparte |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer MoE híbrido con atención lineal Gated DeltaNet (3 de cada 4 bloques) y atención completa (1 de cada 4); 40 bloques |
+| Parametros totales | 34.660.610.688 |
+| Parametros activos | Aproximadamente 3.000 millones (256 expertos enrutados + 1 compartido por bloque) |
+| Longitud de contexto | 32.768 tokens (valor de `-c` en los ejemplos de ejecución); máximo nativo no disponible |
+| Tipos de cuantizacion | AD-Q6_K-Q5_K (26,3 GB), AD-Q4_K-IQ4_XS (20,1 GB), AD-IQ3_S-IQ3_XXS (15,5 GB); LoRA rango 1 en GGUF (110 MB) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); modelo base en safetensors (BF16) |
+| Formato de pesos | GGUF (llama.cpp b12052 o superior); LoRA en GGUF |
 
 ## Arquitectura y entrenamiento
 
-Clover hereda el cuerpo de Qwen3.6-35B-A3B: 40 bloques, de los cuales tres de cada cuatro emplean atención lineal tipo Gated DeltaNet en lugar de atención softmax estándar, y cada bloque contiene 256 expertos enrutados más un experto compartido. Cada bloque escribe en el flujo residual a través de tres caminos: la salida de atención (`attn_output` o `ssm_out`), los expertos enrutados (`ffn_down_exps`) y el experto compartido (`ffn_down_shexp`). Los tags del repositorio indican que se trata de un modelo de difusión, lo que sugiere un enfoque de decodificación no autorregresivo puro, aunque no se publican detalles adicionales en la model card.
+El modelo base es un transformer de mezcla de expertos con 40 bloques. Tres de cada cuatro bloques emplean atención lineal Gated DeltaNet y el cuarto atención completa, una arquitectura híbrida que reduce el coste computacional del contexto largo. Cada bloque contiene 256 expertos enrutados más un experto compartido, y escribe en el flujo residual a través de tres proyecciones: la salida de atención (`attn_output` o `ssm_out`), los expertos enrutados (`ffn_down_exps`) y el experto compartido (`ffn_down_shexp`).
 
-Sobre el modelo base no se ha publicado información sobre el corpus de entrenamiento, número de tokens ni fases de RLHF/DPO. Lo que sí documenta AtomicChat es la edición de abliteración: se identifica una dirección de rechazo por bloque comparando la media de activaciones ante prompts dañinos frente a inocuos (eliminando la componente a lo largo de la media de los inocuos, para evitar rechazos en falsos positivos), y luego se modifica cada uno de los tres escritores de cada bloque con `W' = W - s · r_l r_lᵀ W`, suprimiendo la escritura en esa dirección. La edición se distribuye integrada en los GGUF o como LoRA rank-1 de 120 matrices (110 MB) diseñada para escala 1.0.
+La edición de AtomicChat sigue el método de dirección de rechazo de Arditi et al. (2024): localizar la dirección en el flujo residual que determina la negativa y proyectarla fuera de los pesos de escritura de cada bloque. El adaptador resultante es de rango 1 sobre 120 matrices, con escala 1,0. Los builds GGUF incorporan además los ajustes de llama.cpp: clave `expert_shared_count` añadida, 120 tensores de difusión por bloques eliminados y `ssm_a` plegado según el formato actual. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional, con plantilla de chat incluida en cada archivo GGUF.
-- Modo thinking activado por defecto; desactivable con `--chat-template-kwargs '{"enable_thinking": false}'`.
-- Razonamiento general: MMLU de 80,7 % tras la edicion (80,8 % antes), medido sobre 2.000 preguntas.
-- Sin rechazos: 0 % de negativas en 81 prompts de JailbreakBench y 250 de XSTest (thinking desactivado), y eliminacion del thinking-triggered refusal (29 de 30 a 0).
-- Recuperacion en contexto largo sin cambios segun el autor.
-- Ejecucion en llama.cpp (requiere build del PR #31306, commit `4838ffb`, aun sin fusionar).
-- Compatibilidad con endpoints tipo OpenAI via `llama-server` con `--jinja`.
-- No hay informacion sobre vision, audio, tool calling ni capacidades agenticas.
+- Generación de texto conversacional multi-turno con chat template embebido en cada archivo GGUF.
+- Modo de razonamiento ("thinking") activado por defecto; se desactiva con `--chat-template-kwargs '{"enable_thinking": false}'`.
+- Razonamiento de varios pasos y matemáticas (MMLU 80,7 % tras la edición).
+- Recuperación en contexto largo sin degradación según el autor ("long-context retrieval is unchanged").
+- Comportamiento sin rechazos: 0 negativas sobre 81 prompts de JailbreakBench y 250 de XSTest con thinking desactivado; con thinking activado, 0 de 30.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de visión o audio: no disponible; la arquitectura descrita es solo de texto.
 
 ## Casos de uso
 
-- Investigacion en seguridad de modelos: el release documenta con detalle la metodologia de abliteration, las metricas de divergencia KL y los limites de calidad, lo que lo hace util como caso de estudio para investigadores que estudian direcciones de rechazo y edicion de pesos.
-- Experimentacion con arquitecturas hibridas de difusion: permite probar en hardware local un modelo que combina MoE, atencion lineal Gated DeltaNet y difusion, algo poco habitual en el ecosistema GGUF.
-- Escritura creativa sin filtros: al eliminar los rechazos, el modelo puede abordar temas que los modelos alineados suelen bloquear, util para ficcion con contenido sensible donde el autor controla el resultado.
-- Red teaming y evaluacion de robustez: al responder a prompts de JailbreakBench sin rechazar, sirve como objetivo para probar defensas y clasificadores externos de seguridad.
-- Despliegue local offline: los cuants dinamicos (desde 15,5 GB) permiten ejecutar un modelo de 35B en una sola GPU consumer o incluso en CPU con offload parcial, gracias a los ~3B de parametros activos.
-- Comparativa de impacto de cuantizacion: el release publica KL y coincidencia top-1 por cuant frente al BF16 original, util para calibrar que nivel de cuantizacion es aceptable en produccion.
-- Prototipado de asistentes con thinking mode: el modo thinking por defecto permite evaluar cadenas de razonamiento en un modelo MoE ligero por token.
+- Asistente conversacional local sin filtros: el modelo mantiene conversaciones multi-turno con 32.768 tokens de contexto y no rechaza temas sensibles, adecuado para entornos de investigación que requieren respuestas sin negativas.
+- Investigación sobre alineación y seguridad: la comparación entre el modelo original y esta edición (MMLU 80,8 % frente a 80,7 %, KL 0,058 en BF16) permite estudiar el efecto de eliminar la dirección de rechazo con una línea base medible.
+- Procesamiento de documentos largos: con 32.768 tokens de contexto y atención lineal en la mayoría de bloques, puede resumir o extraer información de contratos, informes o transcripciones extensas en local.
+- Despliegue en estación de trabajo con GPU de consumo: el build AD-IQ3_S-IQ3_XXS ocupa 15,5 GB, lo que permite ejecutarlo en GPUs de 16-24 GB de VRAM mediante llama.cpp.
+- Generación creativa sin restricciones: escritura de ficción, guiones o contenido editorial donde los rechazos del modelo base interrumpen el flujo, con la variante AD-Q6_K-Q5_K para máxima fidelidad.
+- Fine-tuning con adaptadores: el LoRA de 110 MB puede cargarse sobre cualquiera de los quants del modelo base mediante `--lora-scaled`, sirviendo como punto de partida para ajustes posteriores sin redistribuir los pesos completos.
+- Evaluación de robustez frente a jailbreaks: útil como modelo de referencia "sin rechazo" para calibrar clasificadores de seguridad o medir la eficacia de filtros externos.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor (edicion vs. modelo original):
-
-| Metrica | Original | Editado |
-|---|---:|---:|
+| Metrica | Original BF16 | Editado (LoRA / baked) |
+|---|---|---|
 | MMLU (2.000 preguntas) | 80,8 % | 80,7 % (McNemar p = 0,92) |
-| Rechazos en JailbreakBench | 93,8 % | 0 % |
-| Rechazos en XSTest (prompts seguros) | 4,4 % | 0 % |
-| Rechazos con thinking activado | 29 de 30 | 0 |
+| Negativas en JailbreakBench (81 prompts, thinking off) | 93,8 % | 0 % |
+| Negativas en XSTest (250 prompts seguros, thinking off) | 4,4 % | 0 % |
+| Negativas con thinking on | 29 de 30 | 0 de 30 |
+| Divergencia KL en texto neutro (BF16, solo edición) | — | 0,058 |
+| Divergencia KL en prompts inocuos (primer token) | — | 0,170 (límite del autor: 0,10) |
 
-Calidad de los cuants respecto al BF16 original (edicion + cuantizacion conjuntas, sobre 24 chunks de 4.096 tokens):
+Calidad de cuantización frente al BF16 original (edición + cuantización):
 
-| Build | Tamano | KL divergence | Coincidencia top-1 |
+| Build | Tamano en disco | KL divergence | Mismo top-1 |
 |---|---:|---:|---:|
 | AD-Q6_K-Q5_K | 26,3 GB | 0,062 | 89,11 % |
 | AD-Q4_K-IQ4_XS | 20,1 GB | 0,071 | 88,28 % |
 | AD-IQ3_S-IQ3_XXS | 15,5 GB | 0,128 | 84,26 % |
-| LoRA (sobre BF16) | 110 MB | 0,058 | - |
+| LoRA sobre quants del autor | 110 MB | 0,058 (sobre BF16) | — |
 
-Advertencia del propio autor: en prompts inocuos, el primer token se aleja del original mas alla de su limite de 0,10 (KL 0,170 frente a 0,068 de una direccion aleatoria editada igual). No se han publicado resultados de benchmarks estandar adicionales (HumanEval, GSM8K, etc.) en la informacion disponible.
+Como referencia, los mismos layouts AD aplicados al modelo original arrojan KL de 0,029, 0,048 y 0,112 respectivamente, por lo que en AD-Q6_K-Q5_K la mayor parte de la distancia corresponde a la edición y no a la cuantización. No se han publicado resultados de MMLU, HumanEval o GSM8K para los builds GGUF concretos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (GGUF completo en GPU):
-  - AD-Q6_K-Q5_K: 26,3 GB — cabe en una RTX 3090/4090 de 24 GB solo con offload parcial; comoda en A100 40 GB o 2x RTX 4090.
-  - AD-Q4_K-IQ4_XS: 20,1 GB — cabe en una RTX 4090 de 24 GB con contexto moderado.
-  - AD-IQ3_S-IQ3_XXS: 15,5 GB — cabe en una RTX 4080/4090 o en Mac con 24 GB+ de memoria unificada.
-- Gracias a los ~3B de parametros activos (MoE), el throughput por token es comparable al de un modelo denso de 3B, con requisitos de memoria del modelo completo.
-- Ejemplo recomendado por el autor: `llama-server -hf AtomicChat/Clover-35B-A3B-Preview-Uncensored-GGUF:AD-Q4_K-IQ4_XS --jinja -c 32768 --presence-penalty 0.9 --repeat-penalty 1.05` con `-ngl 99` para offload completo.
-- Despliegue: unicamente llama.cpp compilado desde el PR #31306 (commit `4838ffb`, sin fusionar); no compatible con vLLM, TGI, Ollama ni llama.cpp estable hasta que el PR se integre.
-- No se ha medido la edicion con decodificacion especulativa (`--spec-type draft-self`): solo decodificacion estandar.
-- No se han publicado cifras de latencia ni throughput.
+- VRAM estimada: unos 16 GB para AD-IQ3_S-IQ3_XXS, 21 GB para AD-Q4_K-IQ4_XS y 27 GB para AD-Q6_K-Q5_K, más overhead de contexto KV.
+- GPU recomendadas: A100 40/80 GB o H100 para el build Q6 con contexto completo; RTX 4090 (24 GB) para Q4 y, con contexto reducido, Q6; RTX 3090/4080 (16-24 GB) para IQ3.
+- Cabe en GPU de consumo: sí, el build IQ3 en tarjetas de 16 GB y el Q4 en tarjetas de 24 GB.
+- Opciones de despliegue: llama.cpp b12052 o superior (`llama-server`, `llama-cli`); compatible con endpoints estilo OpenAI mediante `llama-server`. No hay confirmación de soporte en vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponibles. El autor indica que la decodificación especulativa (`--spec-type draft-self`) no está disponible en llama.cpp upstream.
+- Parámetros de muestreo sugeridos por el autor: `--presence-penalty 0.9 --repeat-penalty 1.05`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Clover-35B-A3B-Preview-Uncensored (este) | 34,66 B | ≈3 B | 32.768 (en ejemplos) | Apache 2.0 | GGUF, requiere llama.cpp con PR #31306 |
-| Qwen3-30B-A3B (referencia de cuerpo) | ≈30 B | ≈3 B | 32.768 | Apache 2.0 | GGUF, vLLM, TGI, amplio soporte |
-| Qwen3.6-35B-A3B (cuerpo heredado) | ≈35 B | ≈3 B | no disponible | no disponible | no disponible |
-| DiffuSpace/Clover-35B-A3B-Preview (base) | 34,66 B | ≈3 B | no disponible | no disponible | safetensors BF16, con rechazos intactos |
+| Clover-35B-A3B-Preview-Uncensored (este) | 34,7 B / ~3 B | 32.768 (config. ejemplo) | Apache 2.0 | GGUF + LoRA | Sin rechazos; MMLU 80,7 % |
+| Diffuspace/Clover-35B-A3B-Preview (base) | 34,7 B / ~3 B | No disponible | Apache 2.0 | Safetensors / GGUF | Rechazos 93,8 % en JailbreakBench; MMLU 80,8 % |
+| AtomicChat/Clover-35B-A3B-Preview-GGUF | 34,7 B / ~3 B | No disponible | Apache 2.0 | GGUF | Quants sin edición; KL 0,029-0,112 según build |
+| Qwen3.6-35B-A3B (cuerpo original) | ~35 B / ~3 B | No disponible | No disponible | No disponible | Arquitectura de referencia del cuerpo |
 
-Nota: la comparativa se limita a los modelos mencionados en la model card; no hay datos de rendimiento comparativo publicados entre ellos.
+No se dispone de datos de benchmarks comparativos con otras familias de modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad o alucinacion; al tratarse de un modelo "uncensored", no hay capa de seguridad que frene respuestas incorrectas o peligrosas.
-- Sin filtros de seguridad: el modelo responde a prompts daninos sin rechazar (0 % en JailbreakBench). Su uso para generar contenido ilegal, danino o enganoso es responsabilidad exclusiva del usuario; en muchos contextos su despliegue puede tener implicaciones legales.
-- Deriva en prompts inocuos: el propio autor reconoce que el primer token se aleja del original mas de lo deseado (KL 0,170 > limite 0,10), lo que indica un posible impacto sutil en la calidad de las respuestas benignas.
-- Deriva de Clover incluso sin editar en esta build de llama.cpp: el autor recomienda comparar los archivos entre si, ya que existe un suelo de ruido propio del modelo.
-- Compatibilidad muy limitada: requiere llama.cpp compilado desde un PR no fusionado; no funciona con Ollama, LM Studio, vLLM ni otras herramientas hasta que el soporte se integre.
-- Thinking mode: la verificacion con thinking activado se hizo sobre la edicion BF16, no sobre los archivos integrados ("baked").
-- Sin decodificacion especulativa verificada: no se ha medido la edicion con `--spec-type draft-self`.
-- Idiomas soportados, datos de entrenamiento del modelo base y limites exactos de contexto: no disponibles en la informacion publicada.
-- Licencia Apache 2.0 tanto del cuant como del modelo base, sin restricciones comerciales conocidas, aunque el modelo base es un "Preview" y su calidad puede cambiar en versiones finales.
-- Proyecto de muy baja adopcion (32 descargas y 1 like en el momento de la ficha): escasa validacion comunitaria.
+- Una puerta de calidad del propio autor no se cumple: en prompts inocuos el primer token diverge del original con KL 0,170, por encima del límite de 0,10 (una dirección aleatoria editada igual daría 0,068).
+- El modelo está diseñado explícitamente para no rechazar peticiones; puede generar contenido dañino, ilegal o sexualmente explícito. No debe desplegarse en aplicaciones de cara al público sin filtros externos.
+- Riesgo de alucinación no cuantificado en la información disponible; como todo modelo de 35 B, puede inventar hechos y citas.
+- Idiomas soportados no declarados; el comportamiento multilingüe no está verificado.
+- El modelo base Clover presenta deriva incluso sin edición en esta build de llama.cpp; las comparaciones deben hacerse entre archivos del mismo repositorio.
+- Requiere llama.cpp b12052 o superior; los archivos publicados originalmente para el PR #31306 están en la revisión `96a291c` y no son compatibles con el formato actual.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el contenido generado ni sobre el cumplimiento normativo en jurisdicciones que regulan contenido generado.
+- Contexto máximo nativo no documentado; los ejemplos usan 32.768 tokens y no se confirma que el modelo soporte más.
 
 ## Enlaces
 
-- Ficha del modelo (GGUF uncensored): https://huggingface.co/AtomicChat/Clover-35B-A3B-Preview-Uncensored-GGUF
-- Cuants originales de Clover (sin editar, para usar con el LoRA): https://huggingface.co/AtomicChat/Clover-35B-A3B-Preview-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/Clover-35B-A3B-Preview-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
-- PR de llama.cpp necesario: https://github.com/ggml-org/llama.cpp/pull/31306
-- Atomic Chat (aplicacion del equipo): https://atomic.chat/
-- GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
-- Discord de la comunidad: https://discord.gg/8wGSsvmg4V
+- Quants sin edición del mismo autor: https://huggingface.co/AtomicChat/Clover-35B-A3B-Preview-GGUF
+- Revisión con los archivos originales para el PR: https://huggingface.co/AtomicChat/Clover-35B-A3B-Preview-Uncensored-GGUF/tree/96a291c97e74e9470d530a29f2039ad23e89eadc
+- Pull request de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31306
+- Aplicación Atomic Chat: https://atomic.chat/
+- Repositorio GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
 - X (Twitter): https://x.com/atomic_chat_hq
-- Paper de referencia citado (Arditi et al., 2024, refusal direction): no disponible enlace directo en la model card
+- Referencia del método de dirección de rechazo: Arditi et al., 2024 (enlace no disponible en la información proporcionada)

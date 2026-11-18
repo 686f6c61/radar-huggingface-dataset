@@ -2,76 +2,68 @@
 
 ## Resumen
 
-Underdog Saluki 27B 1.0 es una cuantización de 2 bits del modelo Qwen3.8-27B, publicada por ConwayResearch (Underdog) bajo licencia Apache 2.0. El objetivo declarado por el autor es claro: comprimir un modelo de aproximadamente 26.900 millones de parámetros en un único fichero GGUF de 7,89 GB sin destruir la capacidad de tool calling, que es históricamente lo primero que se degrada en cuantizaciones agresivas. Para conseguirlo parte del GGUF GSQ-RCO de ISTA-DASLab y aplica un proceso de calibración con imatrix y un ajuste posterior orientado a preservar el formato de llamadas a funciones.
+Underdog Saluki 27B 1.0 es una cuantizacion agresiva a 2 bits del modelo Qwen3.8-27B, publicada por ConwayResearch bajo la marca Underdog. El objetivo declarado es comprimir un modelo de 27.000 millones de parametros (26.895.998.464 exactamente) en un fichero GGUF de 7,89 GB, frente a los 54 GB del modelo completo, preservando de forma prioritaria la capacidad de tool calling y function calling, que suele ser lo primero que se degrada en cuantizaciones de muy baja precision.
 
-El resultado, según los datos de la model card, es un modelo que retiene en torno al 96 % de media en nueve benchmarks respecto al modelo completo, y que incluso supera al Qwen3.8-27B sin cuantizar en tareas de tool calling (88 frente a 84 sobre 120 tareas de BFCL v4) y en llamadas paralelas (42 frente a 35). El coste es una pérdida clara en matemáticas de competición (AIME 2025: 79,2 frente a 96,7) y en razonamiento multietapa (MuSR: 67,5 frente a 79,6).
+El modelo se distribuye como GGUF para llama.cpp estandar, con soporte de plantilla de chat Qwen3.8 via `--jinja`, lo que habilita tool calling y modo de razonamiento (thinking) directamente sobre la API de chat compatible con OpenAI que expone `llama-server`. Incluye ademas un add-on de vision opcional en dos precisiones (F16 de 928 MB y Q8_0 de 629 MB) que anade entrada de imagenes al modelo base, que es solo de texto.
 
-Se distribuye exclusivamente en formato GGUF para llama.cpp y derivados, con modo thinking activado por defecto y desactivable por petición. La entrada principal es solo texto, pero existe un add-on de visión opcional (mmproj) de entre 0,6 y 0,9 GB. El soporte de idiomas declarado se limita al inglés. Es, por tanto, una pieza pensada para desplegar agentes con function calling en hardware de gama media, no un modelo de propósito general multilingüe.
+Su relevancia practica radica en que permite ejecutar un modelo de clase 27B con capacidades de agente en hardware de consumo (menos de 8 GB de pesos), un escenario historicamente reservado a modelos mucho mas pequenos. La contrapartida es una licencia CC BY-NC 4.0 que prohibe el uso comercial sin licencia separada, y una perdida medible en razonamiento matematico y en tareas de agente complejas respecto al modelo completo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen3.8-27B; no se detallan capas ni atencion en la informacion disponible) |
-| Parametros totales | 26.895.998.464 (~26,9 B) |
-| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
-| Longitud de contexto | 32.768 tokens en la configuracion de ejemplo del autor; maximo oficial no disponible |
-| Tipos de cuantizacion | IQ2-mix (2 bits, fichero principal de 7,89 GB); add-on de vision en F16 (928 MB) y Q8_0 (629 MB) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Arquitectura | Transformer denso (heredada de Qwen3.8-27B; detalles internos no disponibles) |
+| Parametros totales | 26.895.998.464 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens en el ejemplo de despliegue de la model card; limite maximo nativo no disponible |
+| Tipos de cuantizacion | IQ2-mix (2 bits, fichero principal); vision add-on en F16 y Q8_0 |
+| Idiomas soportados | Ingles (unico idioma declarado) |
+| Licencia | CC BY-NC 4.0 (uso comercial requiere licencia aparte) |
+| Formato de pesos | GGUF (llama.cpp); vision add-on en GGUF mmproj |
+| Tamano del fichero principal | 7,89 GB |
+| Tamano del repo | 9,5 GB |
 | Modelo base | Qwen/Qwen3.8-27B; ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF |
-| Relacion con el modelo base | quantized |
-| Tamano del repositorio | 9,5 GB |
-| Modalidad | texto; vision opcional mediante mmproj |
-| Modo thinking | activado por defecto, desactivable por peticion |
-| Descargas / likes | 142 / 67 |
+| Runtime | llama.cpp estandar y aplicaciones construidas sobre el; Ollama 0.40.4 probado en Apple silicon |
+| Metodo de cuantizacion | imatrix (tag declarado por el autor) |
 
 ## Arquitectura y entrenamiento
 
-Saluki no es un modelo entrenado desde cero, sino una derivacion cuantizada. La model card declara `base_model_relation: quantized` y dos referencias: el Qwen3.8-27B original de Qwen y el GGUF GSQ-RCO publicado por ISTA-DASLab. Sobre esa base, el autor indica que el modelo esta "tuned to keep tool calling intact" y que se ha utilizado imatrix como parte del proceso, lo que sugiere una calibracion con estadisticas de activacion para decidir como repartir el presupuesto de bits en un esquema de 2 bits mixto. No se especifican en la informacion disponible ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si hubo etapas de RLHF o DPO.
+La model card no documenta la arquitectura interna del modelo base mas alla de su procedencia (Qwen3.8-27B, de la familia Qwen). Lo relevante desde el punto de vista tecnico es el proceso de cuantizacion: se parte de una cuantizacion previa de ISTA-DASLab (Qwen3.8-27B-GSQ-RCO-GGUF) y se genera un fichero IQ2-mix de 2 bits con calibracion mediante imatrix. El autor no detalla la composicion exacta de la mezcla de tipos dentro del esquema IQ2-mix ni los datos de calibracion empleados.
 
-Arquitectonicamente hereda lo que sea que implemente Qwen3.8-27B: un transformer decoder-only con plantilla de chat propia, gestion nativa de tool calls y modo thinking. El autor no documenta innovaciones propias de arquitectura (ni atencion lineal, ni decodificacion especulativa, ni hibridaciones SSM); la contribucion esta en el pipeline de cuantizacion y en el ajuste posterior para no romper el formato de function calling. La plantilla de chat se activa con `--jinja` en llama.cpp, que es lo que permite que el servidor interprete correctamente las llamadas a herramientas y el bloque de razonamiento. La cuantizacion a 2 bits explica tanto la compresion (7,89 GB frente a unos 54 GB del modelo completo) como el patron de degradacion observado: las tareas que dependen de precision numerica fina o de memoria de contexto larga caen mas, mientras que las tareas de formato e instrucciones se mantienen o incluso mejoran.
+El ajuste declarado se orienta a preservar el comportamiento de tool calling y function calling tras la compresion, asi como el modo thinking heredado de Qwen3.8, que viene activado por defecto y es conmutable por peticion mediante `chat_template_kwargs` (`enable_thinking: false`). No se menciona entrenamiento adicional con RLHF o DPO especifico para esta version; el trabajo descrito es de cuantizacion y calibracion, no de post-entrenamiento. La plantilla de chat Qwen3.8, activada con `--jinja`, es la que gestiona tanto las llamadas a herramientas como el razonamiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con plantilla de chat compatible con la API de OpenAI.
-- Tool calling y function calling, con soporte de llamadas en paralelo (el autor reporta 42 aciertos sobre 100 tareas paralelas de BFCL v4).
-- Flujos de agente y razonamiento multietapa, con bucle de herramienta integrado en la plantilla.
-- Modo thinking activado por defecto y conmutables por peticion mediante `chat_template_kwargs: {"enable_thinking": false}`.
-- Generacion de codigo, con buen resultado relativo en MBPP+ (78,0) aunque por debajo del modelo completo.
-- Seguimiento de instrucciones, con resultados por encima del modelo completo en IFEval (93,5) e IFBench (72,7).
-- Vision opcional mediante add-on mmproj, que habilita el envio de imagenes a traves de la API de chat de llama.cpp.
-- Capacidad matematica de competicion, notablemente degradada respecto al modelo completo.
-- Sin soporte declarado de audio ni de otros idiomas distintos del ingles.
+- Generacion de texto conversacional multi-turno en ingles.
+- Tool calling y function calling con la plantilla de chat Qwen3.8; el autor reporta 88 de 120 tareas superadas en su Underdog Bench (BFCL v4 congelado).
+- Llamadas paralelas a herramientas: 42 de 100 tareas BFCL v4 paralelas con el checker oficial.
+- Modo thinking activado por defecto y desactivable por peticion, heredado de Qwen3.8.
+- Razonamiento y matematicas de competicion (AIME 2025 y 2026), con retencion parcial respecto al modelo completo.
+- Generacion de codigo y resolucion de issues (SWE-bench Verified, MBPP+).
+- Seguimiento de instrucciones (IFEval, IFBench).
+- Vision opcional mediante add-on mmproj: entrada de imagenes a traves de la API de chat OpenAI de `llama-server`.
+- Compatibilidad con endpoints compatibles con OpenAI (tag `endpoints_compatible`).
+- Capacidades de agente multi-paso segun los benchmarks de agente reportados; sin soporte declarado de audio.
 
 ## Casos de uso
 
-- Agentes de tool calling en produccion: el modelo esta especificamente calibrado para mantener el formato de llamadas a funciones en 2 bits, con una puntuacion de 88/120 en BFCL v4 y soporte de llamadas paralelas, lo que permite integrarlo como capa de decision en pipelines de automatizacion con multiples herramientas.
-- Asistentes de atencion al cliente multi-turno en ingles: con 32.768 tokens de contexto en la configuracion recomendada, puede mantener historiales largos de conversacion junto con el estado de herramientas invocadas.
-- Ejecucion local en portatiles y equipos de gama media: el fichero de 7,89 GB cabe en GPUs de consumo con 8-12 GB de VRAM o incluso en CPU con RAM suficiente, lo que facilita prototipado y demos sin infraestructura cloud.
-- Clasificacion y extraccion de campos con salida estructurada: al conservar el formato de function calling, se puede usar para forzar salidas JSON validadas en pipelines de ingesta de datos.
-- Automatizacion de tareas de oficina con herramientas externas: consulta de calendarios, envio de correos o actualizacion de tickets mediante llamadas encadenadas, aprovechando la retencion del 96 % medida por el autor.
-- Analisis de documentos con imagenes: usando el add-on de vision Q8_0 (629 MB) o F16 (928 MB) se pueden procesar capturas, diagramas o formularios escaneados junto con texto, manteniendo el mismo servidor llama.cpp.
-- Evaluacion y benchmarking de cuantizaciones agresivas: sirve como referencia practica de cuanto se puede comprimir un modelo de 27B antes de que el tool calling se rompa, ya que el autor publica comparativas directas contra el modelo completo.
-- Inferencia en el borde o entornos con restricciones de memoria: cuando el presupuesto de VRAM es inferior a 10 GB, es una de las pocas opciones viables para un modelo de casi 27B con capacidades de agente.
+- Agentes locales de tool calling en estaciones de trabajo: con 7,89 GB de pesos, el modelo cabe en GPU de consumo y puede gestionar bucles de llamadas a funciones (APIs internas, consultas a bases de datos, automatizacion de tareas) sin depender de la nube, manteniendo un 88/120 en el benchmark de tool calling del autor frente a 84/120 del modelo completo.
+- Asistentes de codigo en IDE con privacidad de datos: el modelo resuelve issues y genera parches (30 de 50 en SWE-bench Verified) y puede integrarse en flujos de revision o generacion de tests, ejecutandose en local para evitar enviar codigo propietario a terceros.
+- Automatizacion de soporte tecnico multi-turno: con 32.768 tokens de contexto en la configuracion recomendada, admite conversaciones largas con historial extenso y llamadas a herramientas de consulta de estado o creacion de tickets.
+- Procesamiento de documentos con imagenes: usando el add-on de vision (629 MB en Q8_0 o 928 MB en F16) puede extraer informacion de capturas, formularios o diagramas y encadenar esa extraccion con tool calling para registrar los datos.
+- Prototipado e investigacion de agentes: su tamano reducido permite levantar varias instancias en paralelo o iterar rapido sobre disenos de agentes con llama.cpp y Ollama, comparando configuraciones de thinking on/off y temperatura.
+- Despliegue en Apple silicon: probado con Ollama 0.40.4 en hardware Apple, sirve para asistentes personales locales con chat, razonamiento y herramientas sin GPU dedicada.
+- Evaluacion de tecnicas de cuantizacion: como referencia de hasta donde llega una cuantizacion IQ2 con imatrix en tareas de instrucciones y agentes, util para decidir el nivel de compresion aceptable en produccion.
 
 ## Benchmarks y rendimiento
 
-Tool calling, sobre 120 tareas de BFCL v4 congeladas antes de las pruebas, thinking off y temperatura 0:
+Resultados reportados por el autor, ejecutados en llama.cpp estandar. Underdog Bench son 120 tareas de BFCL v4 congeladas antes de probar ningun modelo, con thinking desactivado y temperatura 0. Las puntuaciones publicas del modelo completo provienen de un harness distinto.
 
-| Modelo | Tamano | Aciertos (de 120) |
+| Benchmark | Saluki (7,89 GB) | Qwen3.8-27B completo (54 GB) |
 |---|---|---|
-| Underdog Saluki 27B 1.0 | 7,89 GB | 88 |
-| Qwen3.8-27B (completo) | 54 GB | 84 |
-| Bonsai 2 | 5,95 GB | 70 |
-
-Llamadas paralelas: 100 tareas paralelas de BFCL v4 con el checker oficial, thinking off; Saluki 42 frente a 35 del modelo completo.
-
-Otros benchmarks, con la comparacion entre Saluki y el modelo completo:
-
-| Benchmark | Saluki | Qwen3.8-27B completo |
-|---|---|---|
+| Tool calling (Underdog Bench, de 120) | 88 | 84 |
+| Llamadas paralelas (BFCL v4, de 100) | 42 | 35 |
+| Bonsai 2 (tool calling, de 120) | 70 (5,95 GB) | no aplica |
 | SWE-bench Verified (50 issues) | 30 | 33 |
 | IFEval (prompt-loose) | 93,5 | 91,5 (publico) |
 | IFBench (prompt-loose) | 72,7 | 71,0 (publico) |
@@ -80,51 +72,49 @@ Otros benchmarks, con la comparacion entre Saluki y el modelo completo:
 | AIME 2025 (avg@4) | 79,2 | 96,7 (publico) |
 | AIME 2026 (avg@4) | 80,0 | 94,6 (publico) |
 
-El autor indica que las puntuaciones publicas provienen de un harness distinto al suyo y que la retencion media es del 96 % en nueve benchmarks. Advierte ademas de que 120 tareas son una muestra modesta y que diferencias de pocas tareas entran dentro de la variacion entre ejecuciones.
+Retencion media declarada: 96% en 9 benchmarks. El propio autor advierte que 120 tareas es una prueba modesta y que parte de la diferencia puede ser variacion entre ejecuciones.
 
 ## Requisitos de hardware
 
-- VRAM para los pesos: 7,89 GB para el fichero IQ2-mix. El add-on de vision anade 629 MB (Q8_0) o 928 MB (F16).
-- Cache KV: a 32.768 tokens en FP16 la cache anade varios GB adicionales, con un tamano exacto que depende de la configuracion de capas y cabezas del modelo base (no disponible en la informacion proporcionada). Se recomienda cuantizar la cache (por ejemplo con `-ctk` y `-ctv` en llama.cpp) para reducir este coste.
-- GPUs de consumo: cabe en tarjetas con 12 GB de VRAM (RTX 3060 12 GB, RTX 4070) y, con cache KV recortada o cuantizada, en modelos de 8 GB. Es una de las configuraciones objetivo del autor ("Qwen3.8-27B in under 8 GB").
-- GPUs profesionales: funciona sobradamente en RTX 4090, A100, H100 y similares; en estos casos el cuello de botella pasa a ser el ancho de banda mas que la capacidad.
-- CPU y RAM: al ser GGUF para llama.cpp, puede ejecutarse en CPU con RAM suficiente para el fichero y la cache, aunque con latencias mucho mayores.
-- Opciones de despliegue: llama.cpp (`llama-server`) y cualquier aplicacion construida sobre el. El autor indica que el modelo esta pensado para llama.cpp estandar, no para builds modificadas. La API de chat expuesta es compatible con la de OpenAI en el puerto 8080. No se mencionan vLLM, TGI u Ollama en la informacion disponible.
-- Parametros de ejecucion recomendados por el autor: `llama-server -m <fichero> --jinja -ngl 99 -fa on -c 32768`; para vision, anadir `--mmproj <fichero>`.
-- Ajustes de muestreo: temperatura 0,6, top_p 0,95 y top_k 20 para uso general y razonamiento; temperatura 0 con thinking desactivado para tool calling rapido y directo.
-- Latencia y throughput: no se publican cifras concretas en la informacion disponible.
+- VRAM estimada para inferencia: aproximadamente 8 GB solo para los pesos en IQ2-mix; con cache KV para 32.768 tokens de contexto y overhead de llama.cpp, el consumo real es superior y depende del numero de capas descargadas a GPU (`-ngl 99` descarga todas).
+- Con vision: sumar 0,6 GB (Q8_0) o 0,9 GB (F16) del add-on mmproj.
+- GPU recomendadas: cualquier GPU con 12 GB o mas de VRAM permite cargar el modelo completo con contexto razonable; RTX 4090 (24 GB) deja margen amplio para contexto largo y vision. Para despliegues multiusuario, A100 o H100 permiten mayor paralelismo y contexto, aunque el modelo esta disenado para hardware modesto.
+- Cabe en GPU de consumo: si, en tarjetas de 8-12 GB con cuantizacion IQ2 y contexto moderado; en 8 GB estrictos puede requerir reducir contexto o descargar algunas capas a CPU.
+- Apple silicon: probado con Ollama 0.40.4 en hardware Apple.
+- Opciones de despliegue: llama.cpp (`llama-server` con `--jinja -ngl 99 -fa on -c 32768`), Ollama (creando un Modelfile a partir del GGUF), y cualquier aplicacion construida sobre llama.cpp. No se mencionan vLLM ni TGI, que no consumen GGUF de esta forma.
+- Ajustes recomendados: uso general y razonamiento con thinking activado, temperatura 0,6, top_p 0,95, top_k 20; tool calling rapido con thinking desactivado y temperatura 0.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tamano en disco | Contexto | Tool calling (BFCL v4, 120 tareas) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Underdog Saluki 27B 1.0 | ~26,9 B | 7,89 GB (IQ2-mix) | 32.768 tokens en la config de ejemplo | 88 | Apache 2.0 | GGUF en Hugging Face |
-| Qwen3.8-27B (completo) | ~26,9 B | 54 GB | maximo no disponible | 84 | Apache 2.0 | modelo base original |
-| Bonsai 2 | no disponible | 5,95 GB | no disponible | 70 | no disponible | no disponible |
+| Modelo | Parametros | Tamano en disco | Contexto | Tool calling (Underdog Bench) | Licencia |
+|---|---|---|---|---|---|
+| Underdog Saluki 27B 1.0 | 26,9 B (denso) | 7,89 GB (IQ2) | 32.768 en config. recomendada | 88/120 | CC BY-NC 4.0 |
+| Qwen3.8-27B (completo) | 26,9 B (denso) | 54 GB | no disponible | 84/120 | Apache 2.0 |
+| Bonsai 2 | no disponible | 5,95 GB | no disponible | 70/120 | no disponible |
 
-Bonsai 2 aparece unicamente citado por el autor como referencia de tamano y puntuacion en BFCL v4; no se dispone de mas datos sobre el (arquitectura, licencia ni contexto) en la informacion proporcionada.
+La comparacion con el modelo completo es la mas informativa: Saluki reduce el peso un 85% y, segun el autor, mejora ligeramente en tool calling y llamadas paralelas, mientras pierde en matematicas de competicion (AIME: 79-80 frente a 94-97), MuSR (67,5 frente a 79,6) y MBPP+ (78,0 frente a 83,9). Bonsai 2 aparece unicamente como referencia de tool calling en un tamano similar. No se dispone de datos para comparar con otras familias de modelos de 27B en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Retiene aproximadamente entre el 82 % y el 85 % de la puntuacion del modelo completo en matematicas de competicion (AIME 2025: 79,2 frente a 96,7; AIME 2026: 80,0 frente a 94,6).
-- Es especialmente debil en acertijos de instrucciones a nivel de letra: palindromos, reglas de vocales y orden alfabetico.
-- Alrededor de una quinta parte de las respuestas con llamadas paralelas presentan pequenos errores de formato.
-- Con el modo thinking activado tiende a razonar de forma extensa antes de responder, lo que incrementa la latencia y el consumo de tokens.
-- La vision no viene incluida: el fichero principal es solo texto y requiere descargar aparte el add-on mmproj de 0,6 a 0,9 GB.
-- El unico idioma declarado es el ingles; no hay soporte multilingue documentado.
-- La cuantizacion a 2 bits implica degradacion adicional no cuantificada en todos los dominios; los benchmarks publicados cubren nueve tareas y el propio autor advierte de que la muestra de 120 tareas es modesta y que parte de las diferencias entra dentro de la variacion entre ejecuciones.
-- Las puntuaciones del modelo completo marcadas como "publicas" provienen de un harness distinto, por lo que la comparacion directa no es estrictamente homogenea.
-- Requiere llama.cpp con soporte de `--jinja` para que la plantilla de chat gestione correctamente tool calls y thinking; no se documenta compatibilidad con otros runtimes.
-- Licencia Apache 2.0, sin restricciones declaradas para uso comercial, pero el aviso NOTICE del repositorio debe conservarse por la procedencia de los datos de BFCL y de los modelos base.
-- Riesgo de alucinacion: no cuantificado en la model card; aplican los riesgos habituales de un modelo generativo de este tamano, agravados por el nivel de cuantizacion.
+- Licencia CC BY-NC 4.0: el uso comercial esta prohibido sin licencia separada, que debe solicitarse a license@conway.tech. Esto descarta su uso en produccion comercial sin acuerdo previo.
+- Solo ingles declarado; el rendimiento en castellano u otros idiomas no esta documentado y no deberia asumirse.
+- Retiene aproximadamente el 82-85% de la puntuacion en matematicas de competicion del modelo completo (AIME 2025: 79,2 frente a 96,7).
+- Punto debil en puzzles de instrucciones a nivel de letra: palindromos, reglas de vocales y orden alfabetico.
+- Alrededor de una quinta parte de las respuestas con llamadas paralelas presentan pequenos errores de formato, lo que exige validacion del lado del cliente.
+- Con thinking activado tiende a razonar de forma extensa antes de responder, lo que incrementa latencia y consumo de tokens.
+- La vision es un add-on separado; el fichero principal es solo texto y sin el mmproj no procesa imagenes.
+- Riesgo de alucionacion inherente a un modelo de 27B cuantizado a 2 bits; no se documentan evaluaciones de factualidad ni de sesgos.
+- La cuantizacion IQ2 es agresiva: los benchmarks del autor se centran en tool calling e instrucciones, por lo que el comportamiento en dominios no evaluados (traduccion, resumen largo, extraccion estructurada) es incierto.
+- Los benchmarks de tool calling se basan en 120 tareas, muestra pequena segun el propio autor, y las comparaciones con puntuaciones publicas usan harness distintos.
+- Depende de llama.cpp con soporte de `--jinja` para la plantilla Qwen3.8; otros runtimes pueden no reproducir el comportamiento de tool calling.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- GGUF de cuantizacion GSQ-RCO del que deriva: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
-- Fichero principal: `Underdog-Saluki-27B-1.0-IQ2-mix.gguf` (7,89 GB) en el repositorio anterior
-- Add-on de vision: `mmproj-Underdog-Saluki-27B-1.0-F16.gguf` (928 MB) y `mmproj-Underdog-Saluki-27B-1.0-Q8_0.gguf` (629 MB)
-- Berkeley Function Calling Leaderboard (origen de las tareas de Underdog Bench): no se proporciona URL en la informacion disponible
-- Paper, blog o repositorio adicional del autor: no disponible
-- Demo publica: no disponible
+- Pagina del proyecto: https://underdog.ai/saluki
+- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Cuantizacion de partida de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
+- Berkeley Function Calling Leaderboard (origen de las tareas de Underdog Bench): https://gorilla.cs.berkeley.edu/leaderboard.html
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com

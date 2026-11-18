@@ -5,7 +5,7 @@
   "author": "SQuADDS",
   "url": "https://huggingface.co/SQuADDS/QCap",
   "created_at": "2026-10-30T04:26:23.000Z",
-  "updated_at": "2026-11-16T21:42:53.000Z",
+  "updated_at": "2026-11-18T03:49:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,6 +20,7 @@
     "graph-neural-network",
     "squadds",
     "dataset:SQuADDS/SQuADDS_PlanarCapacitance",
+    "arxiv:2611.22057",
     "license:mit",
     "region:us"
   ],

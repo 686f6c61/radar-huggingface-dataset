@@ -2,87 +2,103 @@
 
 ## Resumen
 
-LTX-2.5 22B distilled NVFP4 para ComfyUI es una cuantización en punto flotante de 4 bits (NVFP4) del transformer de difusión destilado LTX-2.5 de Lightricks, adaptada por BennyDaBall para que cargue correctamente en ComfyUI. El modelo original de Lightricks se distribuye en dos formatos oficiales: una versión int8 preparada para ComfyUI (21,5 GB) y un export NVFP4 crudo de TensorRT-ModelOpt que no es compatible con el cargador de ComfyUI debido a la ausencia de los marcadores internos que identifican las capas cuantizadas. Este repositorio resuelve ese problema añadiendo un tensor marcador `{"format": "nvfp4"}` a las 1176 capas cuantizadas, sin retocar los pesos, logrando un archivo de 18,7 GB que funciona directamente en las plantillas nativas de LTX-2.5 de ComfyUI.
+LTX-2.5 22B Distilled NVFP4 Comfy es una cuantización en NVFP4 del transformer de difusión (DiT) LTX-2.5 22B en variante *distilled*, publicada por el usuario BennyDaBall sobre los pesos oficiales de Lightricks. El modelo resuelve un problema práctico de interoperabilidad: el export NVFP4 original de Lightricks es una salida cruda de TensorRT-ModelOpt que ComfyUI no puede cargar porque carece de las marcas `.comfy_quant` por capa que el loader usa para detectar pesos cuantizados. Esta versión añade únicamente esa marca a las 1.176 capas cuantizadas, sin recuantizar ni alterar los bytes de los pesos.
 
-La relevancia de esta versión radica en que reduce el uso de VRAM en aproximadamente 2,8 GB respecto al oficial int8, lo que proporciona margen adicional para generar clips más largos sin caer en el intercambio a memoria del sistema. Las pruebas del autor muestran que, con la misma semilla y prompt, los resultados son prácticamente idénticos a los del int8, tanto en composición como en detalle y movimiento. El modelo soporta generación de vídeo a partir de texto y de imagen, con audio sincronizado nativo, y requiere una GPU Blackwell (serie RTX 50) para ejecutar los kernels FP4.
+El resultado es un fichero de 18,7 GB —unos 2,8 GB más ligero que el pack oficial `comfy-int8-convrot` de 21,5 GB— que se carga directamente en las plantillas nativas de LTX-2.5 Text to Video e Image to Video de ComfyUI. Es relevante para quien quiera ejecutar generación de vídeo con audio sincronizado a 22B de parámetros en GPUs Blackwell (RTX 50-series), donde los kernels FP4 nativos están disponibles y el ahorro de VRAM en pesos libera margen frente al desbordamiento a memoria del sistema en clips largos.
 
-## Especificaciones técnicas
+El modelo base es un sistema de difusión texto-a-vídeo e imagen-a-vídeo con generación de audio nativa, distribuido bajo la licencia comunitaria LTX-2.x de Lightricks. Esta ficha describe la cuantización de BennyDaBall; las capacidades y el comportamiento generativo subyacentes corresponden a LTX-2.5 de Lightricks.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (DiT) para generacion de video, cuantizado NVFP4 |
-| Parametros totales | 22 mil millones (segun denominacion del modelo) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible (modelo de video, sin contexto de texto definido) |
-| Tipos de cuantizacion | NVFP4, grupo 16, escalas ModelOpt |
-| Idiomas soportados | No disponible |
-| Licencia | LTX-2.x Community License |
-| Formato de pesos | Archivo unico para ComfyUI (diffusion-single-file), formato no especificado |
+| Arquitectura | Transformer de difusion (DiT) para video, variante distilled |
+| Parametros totales | 22B (según denominación del modelo base) |
+| Parametros activos | no disponible (no es MoE según la informacion proporcionada) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 (grupo 16, escalas ModelOpt); referencia comparativa int8 en el pack oficial |
+| Idiomas soportados | no disponible |
+| Licencia | ltx-2.x-community-license |
+| Formato de pesos | Fichero unico de difusion para ComfyUI (`diffusion-single-file`), pesos NVFP4 con marcas `.comfy_quant` |
+| Tamano del repositorio | 18,7 GB |
+| Capas cuantizadas | 1.176 |
+| Modelo base | Lightricks/LTX-2.5 (`ltx-2.5-22b-distilled-transformer-nvfp4`) |
+| Requisito de software | ComfyUI >= v0.32.0 |
+| Requisito de hardware | GPU Blackwell (RTX 50-series) para kernels FP4 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es LTX-2.5 22B distilled, un transformer de difusion desarrollado por Lightricks para generacion de video con audio sincronizado. La version destilada reduce el coste computacional respecto al modelo completo manteniendo una calidad visual alta. Este repositorio no modifica la arquitectura ni los pesos; se limita a aplicar una cuantizacion NVFP4 (4 bits) con agrupacion de 16 elementos y escalas calculadas con ModelOpt, sobre las 1176 capas lineales del transformer. La intervencion de BennyDaBall consiste en anadir un tensor marcador `.comfy_quant` con el formato `nvfp4` a cada capa cuantizada, que es el mecanismo que ComfyUI utiliza para detectar y desempaquetar correctamente los pesos de 4 bits. No hay informacion publica sobre el dataset de entrenamiento del modelo base ni sobre el proceso de destilacion.
+La arquitectura subyacente es un transformer de difusión (DiT) de 22B parámetros en variante distilled, orientado a la generación conjunta de vídeo y audio. La informacion proporcionada no detalla la composición del dataset de entrenamiento, el número de tokens, ni si hubo fases de RLHF/DPO; estos datos corresponden al modelo base de Lightricks y no se documentan en esta ficha de cuantización.
+
+La innovación técnica de esta publicación no reside en el entrenamiento sino en el empaquetado: el export NVFP4 oficial de Lightricks emplea escalas por capa (`weight_scale`, `weight_scale_2`, `input_scale`) cuyos nombres ya coinciden con la especificación nvfp4 de ComfyUI, pero falta el tensor marcador `.comfy_quant` que el loader usa para identificar capas cuantizadas. Sin él, ComfyUI interpreta un peso empaquetado de 4 bits como bytes crudos y falla con un error de dimensiones (`mat1 and mat2 shapes cannot be multiplied (6820x4096 and 2048x4096)`). Esta versión estampa `{"format": "nvfp4"}` en las 1.176 capas cuantizadas sin tocar la matemática de los pesos. La cuantización usa grupos de 16 con escalas generadas por ModelOpt.
 
 ## Capacidades
 
-- Generacion de video a partir de prompts de texto (text-to-video).
-- Generacion de video a partir de una imagen inicial (image-to-video), manteniendo coherencia con el fotograma de partida.
-- Audio sincronizado nativo: los clips generados incluyen pista de audio coherente con el contenido visual.
-- Compatibilidad directa con ComfyUI mediante las plantillas oficiales LTX-2.5 Text to Video e Image to Video, sin nodos personalizados.
-- Cuantizacion NVFP4 que reduce el peso del modelo a 18,7 GB, liberando VRAM para secuencias mas largas o resoluciones mayores.
-- Reproducibilidad: con la misma semilla y prompt, los resultados son muy cercanos a los de la version int8 oficial, lo que facilita la comparacion entre cuantizaciones.
+- Generación de vídeo a partir de texto (text-to-video) con audio sincronizado nativo.
+- Generación de vídeo a partir de una imagen clave (image-to-video), manteniendo coherencia de composición y detalle respecto al fotograma de entrada.
+- Generación de audio nativo asociado al clip, incluida música en los ejemplos mostrados por el autor.
+- Preservación de texto legible en escena: el autor documenta que el texto de un cartel permanece legible a lo largo del clip en image-to-video a 50 fps.
+- Ejecución en las plantillas nativas de ComfyUI para LTX-2.5, sin nodos personalizados.
+- Soporte de flujo de trabajo con escalador de latentes oficial para ampliación de resolución.
+- No se documentan en la informacion proporcionada capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multilingüe explícito.
 
 ## Casos de uso
 
-- Produccion de video creativo: generar clips de 10 segundos a 1280x736 con audio sincronizado a partir de descripciones textuales, util para moodboards, storyboards o contenido para redes sociales.
-- Animacion de imagenes fijas: convertir una fotografia o ilustracion en un clip animado con movimiento natural, aplicable en diseno de producto, publicidad o arte digital.
-- Creacion de contenido con banda sonora integrada: el audio sincronizado evita el paso adicional de postproduccion, agilizando la generacion de videos cortos para plataformas como TikTok o Instagram Reels.
-- Prototipado rapido en estudios de diseno: los creadores pueden generar variaciones de una misma escena en menos de un minuto por clip (50 segundos en una RTX 5090), acelerando la exploracion de ideas.
-- Generacion de material de relleno para edicion: producir tomas de transicion o clips de ambiente que complementen secuencias grabadas, reduciendo costes de produccion.
-- Investigacion en eficiencia de cuantizacion: este modelo sirve como caso de estudio para evaluar el impacto de NVFP4 en la calidad de video generado, comparando con int8 y otras precisiones.
+- Prototipado rápido de vídeo publicitario: cargar el fichero en `ComfyUI/models/diffusion_models/`, seleccionarlo como `unet_name` en la plantilla T2V y generar clips de 10 s a 1280x736 con audio en aproximadamente 50 s en una RTX 5090, lo que permite iterar sobre variaciones de prompt en una sola sesión.
+- Animación de keyframes para storyboards: usar image-to-video con un fotograma dibujado o renderizado para obtener movimiento coherente y audio asociado, útil en previsualización de secuencias antes de producción final.
+- Generación de contenido para redes sociales con texto en pantalla: la conservación de legibilidad de rótulos permite producir clips con carteles o marquesinas sin regeneración manual del texto.
+- Pruebas de concepto en estaciones con GPU Blackwell: el ahorro de 2,8 GB de VRAM en pesos respecto al pack int8 amplía el margen frente al desbordamiento a memoria del sistema en clips de larga duración, lo que facilita ejecutar secuencias más largas sin paginación.
+- Evaluación comparativa de cuantizaciones: al compartir semilla y prompt con el pack oficial int8, sirve para medir diferencias perceptuales entre NVFP4 e int8 en el mismo pipeline de ComfyUI.
+- Integración en pipelines de generación por lotes: al ser un fichero único compatible con las plantillas nativas, se puede encadenar en scripts de ComfyUI que encolen múltiples prompts sin gestión de nodos personalizados.
+- Demostración de audio-vídeo conjunto: generar clips con pista musical propia para pruebas de sincronización en herramientas de edición posteriores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (como FVD, CLIP score u otros) en la informacion disponible. El autor proporciona datos empiricos de rendimiento:
+No se han publicado resultados de benchmarks en la informacion disponible. El autor aporta métricas de inferencia cualitativas y de tiempo:
 
 | Metrica | Valor |
 |---|---|
-| Duracion del clip generado | 10 segundos |
-| Resolucion | 1280x736 |
-| Tiempo de generacion (incluyendo carga inicial) | ~50 segundos en RTX 5090 |
-| Peso del archivo | 18,7 GB |
-| Reduccion de peso frente a int8 oficial | ~2,8 GB |
+| Resolucion y duracion del ejemplo | 10 s a 1280x736 con audio sincronizado |
+| Tiempo de generacion | ~50 s en RTX 5090, incluida la primera carga del modelo |
+| Tamano del fichero | 18,7 GB (vs 21,5 GB comfy-int8-convrot) |
+| Ahorro de VRAM en pesos | ~2,8 GB |
+| Fidelidad respecto a int8 | No identico pixel a pixel (ruido de cuantizacion distinto); misma composicion, nivel de detalle y tiempos de movimiento según el autor |
 
 ## Requisitos de hardware
 
-- GPU obligatoria: arquitectura Blackwell (serie RTX 50) para ejecutar los kernels FP4. No funciona en GPUs de generaciones anteriores (Ampere, Ada Lovelace, etc.).
-- VRAM estimada: 18,7 GB para los pesos, mas el overhead de activaciones y el modelo de texto y VAE. En una RTX 5090 (32 GB) funciona con margen para clips largos.
-- Software: ComfyUI version 0.32.0 o superior.
-- Despliegue: el modelo se carga como `unet_name` en las plantillas LTX-2.5 nativas de ComfyUI. No se menciona soporte para otros motores como vLLM o llama.cpp, ya que es un modelo de difusion.
-- Latencia: aproximadamente 50 segundos para un clip de 10 segundos a 1280x736 en RTX 5090, incluyendo la primera carga del modelo.
+- VRAM estimada para inferencia: no disponible de forma explícita. El fichero de pesos ocupa 18,7 GB, por lo que se requiere al menos esa cantidad de VRAM para mantener los pesos residentes, más el text encoder, los VAE y el escalador de latentes, que se cargan desde el repositorio oficial.
+- GPU recomendadas: RTX 5090 (medición reportada por el autor) y, en general, GPUs Blackwell de la serie RTX 50 para disponer de kernels FP4 nativos.
+- Compatibilidad con GPUs consumer: sí, en tarjetas Blackwell con VRAM suficiente; en GPUs sin soporte FP4 el modelo no aprovecha los kernels nativos y el autor no documenta su funcionamiento en ellas.
+- Opciones de despliegue: ComfyUI >= v0.32.0 mediante el nodo `UNETLoader` y las plantillas nativas LTX-2.5 Text to Video e Image to Video. No se documentan otros runners (vLLM, llama.cpp, Ollama, TGI) para este fichero.
+- Latencia y throughput: ~50 s para 10 s de vídeo a 1280x736 con audio en RTX 5090, incluida la carga inicial del modelo.
+- Flujo de trabajo de ejemplo incluido: `ltx-2.5-nvfp4-t2v-example-workflow.json`, plantilla T2V oficial con este modelo preseleccionado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tamano | VRAM | Formato | Compatibilidad ComfyUI | Requisito GPU |
-|---|---|---|---|---|---|
-| LTX-2.5 22B distilled NVFP4 (este repo) | 18,7 GB | ~19 GB + overhead | NVFP4 | Si (con marcadores anadidos) | Blackwell |
-| LTX-2.5 22B distilled comfy-int8-convrot (oficial) | 21,5 GB | ~22 GB + overhead | INT8 | Si | Cualquier GPU con soporte int8 |
-| LTX-2.5 22B distilled NVFP4 (export oficial de Lightricks) | ~18,7 GB | ~19 GB + overhead | NVFP4 | No (falla al cargar) | Blackwell |
+| Modelo | Parametros | Formato / cuantizacion | Tamano | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|---|
+| LTX-2.5 22B Distilled NVFP4 Comfy (esta ficha) | 22B | NVFP4, fichero unico ComfyUI | 18,7 GB | no disponible | ltx-2.x-community-license | Requiere ComfyUI >= v0.32.0 y GPU Blackwell para FP4 |
+| LTX-2.5 comfy-int8-convrot (oficial) | 22B | int8, pack ComfyUI | 21,5 GB | no disponible | ltx-2.x-community-license | Referencia oficial; ~2,8 GB mas pesado |
+| LTX-2.5 22B distilled transformer NVFP4 (export oficial Lightricks) | 22B | NVFP4 ModelOpt crudo | no disponible | no disponible | ltx-2.x-community-license | No carga en ComfyUI sin las marcas `.comfy_quant` |
 
-La diferencia clave entre las tres versiones es la compatibilidad con ComfyUI y el requisito de hardware. La version NVFP4 de este repo ofrece el menor peso y mantiene compatibilidad, pero exige una GPU Blackwell. La version int8 oficial funciona en hardware mas variado a costa de un mayor uso de VRAM. No se dispone de comparativas con otros modelos de generacion de video como Sora, Runway o Kling en la informacion proporcionada.
+No se dispone de datos de benchmarks comparativos entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Requiere hardware Blackwell: no es ejecutable en GPUs consumer de generaciones anteriores, lo que limita su uso a equipos con RTX 50-series.
-- No es pixel-idéntico a la version int8: aunque las diferencias son minimas, existe un ruido de cuantizacion distinto que puede ser perceptible en ciertos casos.
-- Licencia comunitaria LTX-2.x: incluye restricciones de uso comercial que deben revisarse en el archivo de licencia incluido en el repositorio.
-- Riesgo de alucinacion visual: como todo modelo generativo, puede producir contenido inconsistente o no deseado; el autor advierte que el uso es bajo responsabilidad del usuario.
-- Sin informacion sobre sesgos: no se han publicado evaluaciones de sesgo o seguridad para esta cuantizacion especifica.
-- Dependencia de ComfyUI: el marcador `.comfy_quant` esta disenado para esta plataforma; no se garantiza su funcionamiento en otros entornos de inferencia.
+- La salida no es idéntica pixel a pixel a la del pack int8: el ruido de cuantización difiere, aunque el autor indica que la composición, el detalle y los tiempos de movimiento se mantienen.
+- Requiere ComfyUI >= v0.32.0 y una GPU Blackwell para aprovechar los kernels FP4; en hardware sin soporte FP4 el rendimiento y la viabilidad no están documentados.
+- El consumo de VRAM total no se especifica: los 18,7 GB corresponden solo a los pesos del transformer, y hay que sumar text encoder, VAE y escalador de latentes.
+- El autor advierte de un "long-duration offload cliff": en clips largos, el margen de VRAM puede agotarse y provocar paginación a memoria del sistema; el ahorro de 2,8 GB mitiga el riesgo pero no lo elimina.
+- Licencia LTX-2.x Community License: no es una licencia de código abierto permisiva; es necesario revisar el texto incluido en `LICENSE.txt` antes de cualquier uso comercial.
+- No se documentan sesgos, comportamiento multilingüe ni tasas de alucinación específicas para esta cuantización.
+- El modelo genera audio y vídeo sintéticos; el autor declina responsabilidad sobre el contenido producido ("what you generate is on you").
+- Al ser una modificación de un export oficial, la trazabilidad de los pesos depende de la integridad del proceso de estampado descrito; el autor afirma que los bytes de los pesos no se han alterado.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy
-- Modelo base (Lightricks/LTX-2.5): https://huggingface.co/Lightricks/LTX-2.5
-- Archivo de licencia: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy/blob/main/LICENSE.txt
-- Autor en X: https://x.com/BennyDaBall_OG
+- Repositorio en Hugging Face: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy
+- Modelo base: https://huggingface.co/Lightricks/LTX-2.5
+- Licencia (copia en el repo): https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy/blob/main/LICENSE.txt
+- Flujo de trabajo de ejemplo T2V: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy/blob/main/ltx-2.5-nvfp4-t2v-example-workflow.json
+- Perfil del autor en X: https://x.com/BennyDaBall_OG
+- Ko-fi del autor: https://ko-fi.com/bennydaball

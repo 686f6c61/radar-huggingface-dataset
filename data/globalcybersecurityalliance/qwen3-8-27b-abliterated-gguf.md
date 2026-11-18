@@ -2,84 +2,88 @@
 
 ## Resumen
 
-Este modelo es una versión "abliterated" (sin censura) del Qwen3.8-27B, un LLM multimodal denso de 27 mil millones de parámetros desarrollado originalmente por el equipo Qwen de Alibaba. La publicación corre a cargo de GlobalCybersecurityAlliance y se distribuye exclusivamente en formato GGUF cuantizado, pensado para su uso con motores como llama.cpp, Ollama o LM Studio.
+Qwen3.8-27B-Abliterated-GGUF es una derivación no oficial del modelo denso multimodal Qwen/Qwen3.8-27B, publicada por la organización GlobalCybersecurityAlliance (también referenciada como GCSA-AiLab) en formato GGUF para su uso con llama.cpp. El modelo conserva la arquitectura del original (transformer denso con capacidad vision-language, pipeline image-text-to-text) e incorpora dos modificaciones de la comunidad: un proceso de "abliteration" orientado a reducir el comportamiento de rechazo y la inclusión opcional de MTP (multi-token prediction) para decodificación especulativa.
 
-La abliteration consiste en eliminar la "dirección de rechazo" de los pesos del modelo, de modo que deja de negarse a responder a peticiones que el modelo original consideraría prohibidas o peligrosas. Según el blog de MindStudio, el proceso emplea una metodología basada en KL-drift y pruebas de rechazo con un juez automático. Esto convierte al modelo en una opción atractiva para quienes necesitan generar contenido sin filtros, aunque con importantes riesgos éticos y de seguridad que se detallan más adelante.
+El modelo cuenta con 26.895.998.464 parámetros totales (aproximadamente 26,9 mil millones) y un repositorio de 91 GB que incluye varias cuantizaciones GGUF (Q4_K_M, Q4_K_S, Q6_K y Q8_0). Está pensado para despliegues locales y en servidores con llama.cpp, manteniendo las capacidades multimodales del modelo base: entrada de imagen y texto con salida de texto.
 
-El modelo base Qwen3.8-27B es un transformer denso con capacidades nativas de visión y texto, optimizado para tareas de codificación, flujos de trabajo agénticos y automatización de oficina. Al estar abliterated, conserva esas capacidades pero sin las restricciones de seguridad habituales. No se han publicado datos sobre la longitud de contexto ni sobre los idiomas soportados en la información disponible.
+Su relevancia actual radica en dos factores. Por un lado, ofrece una vía práctica de ejecutar un modelo multimodal de ~27B en hardware de consumo mediante cuantización GGUF. Por otro, el ajuste de comportamiento de rechazo lo hace atractivo para investigación sobre alineamiento y seguridad, aunque también introduce riesgos que deben evaluarse antes de cualquier uso en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (vision + texto) |
-| Parametros totales | 27 mil millones (27B) |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer denso multimodal (vision-language), derivado de Qwen/Qwen3.8-27B; soporte opcional de MTP (multi-token prediction) |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF (varias, p. ej. Q4_K_M, Q5_K_M, Q8_0), AWQ (W4A16) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (tambien safetensors en el modelo base original) |
+| Tipos de cuantizacion | Q4_K_M, Q4_K_S, Q6_K, Q8_0 (GGUF) |
+| Idiomas soportados | Multilingüe (sin listado explícito de idiomas en la información disponible) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (repositorio de 91 GB); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso con atención completa, diseñado para procesar tanto texto como imágenes de forma nativa (multimodal). Alibaba lo ha entrenado con un pipeline que incluye instrucciones y probablemente RLHF/DPO, aunque los detalles exactos del entrenamiento no se han publicado en la información disponible. El modelo está orientado a tareas de codificación, razonamiento y automatización de agentes.
+La información disponible indica que se trata de un derivado denso multimodal del modelo Qwen3.8-27B, con pipeline image-text-to-text y capacidad de procesar entradas de imagen y texto. El modelo incorpora soporte opcional de MTP (multi-token prediction), una técnica de decodificación especulativa que permite predecir varios tokens por paso para acelerar la inferencia en llama.cpp.
 
-La versión abliterated se obtiene mediante una técnica que identifica y elimina la "dirección de rechazo" en el espacio de activaciones del modelo. Según el artículo de MindStudio, el proceso utiliza una metodología de KL-drift para minimizar la divergencia con el modelo original y un juez automático para verificar que el modelo ya no rechaza peticiones. El resultado es un modelo que mantiene las capacidades generales del original pero sin los mecanismos de seguridad que bloquean contenido dañino o controvertido.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si el modelo base empleó RLHF, DPO u otras técnicas de alineamiento. La modificación "abliterated" implica una alteración experimental del comportamiento de rechazo del modelo original, pero la información proporcionada no detalla la metodología exacta empleada (por ejemplo, dirección de ablación, capas afectadas o datos de calibración).
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: mantiene las capacidades del modelo base para tareas de lenguaje natural, incluyendo razonamiento complejo y generacion de codigo.
-- Procesamiento de imagenes: al ser multimodal, puede recibir y comprender imagenes junto con texto (no se especifica si el formato GGUF conserva esta capacidad, pero el modelo base si la tiene).
-- Tool calling y agentes: el modelo base está optimizado para flujos de trabajo agénticos, por lo que es probable que soporte function calling y multi-step reasoning (no confirmado en esta version).
-- Ausencia de rechazos: la abliteration elimina la direccion de rechazo, por lo que el modelo responde a peticiones que el original bloquearia (con los riesgos asociados).
-- Multilingue: no se ha especificado la cobertura de idiomas, aunque los modelos Qwen suelen tener buen soporte para ingles y chino.
+- Generación de texto conversacional multi-turno.
+- Comprensión de imágenes y texto combinados (image-text-to-text), incluyendo descripción de imágenes y respuesta a preguntas visuales.
+- Razonamiento y respuesta a instrucciones heredadas del modelo base Qwen3.8-27B.
+- Soporte multilingüe (el tag `multilingual` está presente, aunque no se especifica la lista de idiomas).
+- Decodificación especulativa mediante MTP opcional, orientada a reducir latencia en llama.cpp.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- Comportamiento de rechazo reducido por el proceso de abliteration (capacidad experimental, no una funcionalidad de producto).
 
 ## Casos de uso
 
-- Generacion de contenido creativo sin restricciones: escritores y creadores pueden usar el modelo para producir ficcion, guiones o dialogos con tematicas adultas o controvertidas que otros modelos rechazarian. Su capacidad multimodal permite ademas trabajar con imagenes como referencia.
-- Investigacion en seguridad de IA: equipos de red team pueden emplear este modelo para estresar sistemas de moderacion, probar defensas contra jailbreaks o estudiar el comportamiento de modelos sin alineacion.
-- Simulacion de conversaciones dificiles: en entornos controlados, se puede utilizar para generar interacciones de usuario hostiles o provocadoras y evaluar la robustez de sistemas de atencion al cliente.
-- Automatizacion de oficina: el modelo base es adecuado para redactar correos, resumir documentos o generar informes, y la version abliterated puede usarse en contextos donde se requiera un tono mas directo o sin filtros.
-- Analisis de datos y codigo: con soporte para tool calling, puede integrarse en pipelines de analisis de datos, generacion de scripts o automatizacion de tareas de programacion.
-- Creacion de contenido para nichos especificos: por ejemplo, generacion de dialogos para videojuegos con tematica adulta, o redaccion de materiales educativos sobre temas sensibles (siempre con supervisión humana).
+- Asistencia visual en local: el modelo puede describir imágenes, responder preguntas sobre capturas de pantalla o documentos escaneados y mantener conversaciones multi-turno sobre el contenido visual, ejecutándose en estaciones de trabajo con GPU de consumo gracias a las cuantizaciones Q4.
+- Investigación sobre alineamiento y seguridad: la variante abliterated permite estudiar cómo cambia el comportamiento de rechazo respecto al modelo original, comparando respuestas ante prompts sensibles en entornos controlados.
+- Prototipado de agentes multimodales: con soporte de endpoints compatibles, puede integrarse en pipelines de agentes que reciben imágenes y texto y ejecutan razonamiento multi-paso, usando MTP para reducir la latencia en producción.
+- Procesamiento de documentación técnica con imágenes: extracción de información de diagramas, tablas e ilustraciones en manuales, combinando la entrada visual con el contexto textual en una sola pasada.
+- Despliegue en entornos con requisitos de privacidad: al ser GGUF y ejecutarse con llama.cpp, permite inferencia totalmente local sin enviar imágenes o texto a servicios externos, adecuado para datos sensibles.
+- Evaluación comparativa de cuantizaciones: los cuatro niveles publicados (Q4_K_S, Q4_K_M, Q6_K, Q8_0) permiten medir el compromiso entre calidad y VRAM para un mismo modelo multimodal en hardware limitado.
+- Generación de descripciones accesibles: producción de texto alternativo para imágenes en catálogos o repositorios, con la ventaja de ejecución local y coste marginal nulo por inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni otras metricas para esta version abliterated. El modelo base Qwen3.8-27B ha mostrado buen rendimiento en tareas de codificacion y agentes, segun la documentacion de Cloudflare, pero no se ofrecen cifras concretas.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para una cuantizacion Q4_K_M (aproximadamente 16 GB de pesos) se necesitan al menos 16-20 GB de VRAM; para Q8_0 (unos 27 GB) se requieren 28-32 GB. La cuantizacion AWQ W4A16 reduce el peso a unos 14 GB, pero requiere soporte especifico.
-- GPU recomendadas: RTX 3090/4090 (24 GB) para cuantizaciones bajas, A100 40 GB o H100 para cuantizaciones altas y mayor velocidad. Con 2x RTX 3090 se puede ejecutar la version AWQ, como se documenta en el proyecto de Todd Wolven.
-- En consumer GPU: si, con cuantizaciones Q4 o Q5 en GPUs de 24 GB. Para GPUs de 16 GB (RTX 4080, 3080) se puede intentar con Q4 pero con limitaciones de velocidad.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, vLLM (con soporte para AWQ), TGI (si se convierte a safetensors).
-- Latencia y throughput: no se dispone de datos medidos. Como referencia, un modelo de 27B en Q4 en una RTX 4090 suele generar entre 20 y 40 tokens por segundo, pero depende de la implementacion y el hardware.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamaño del modelo (26,9B parámetros), las cuantizaciones Q4 rondarían el rango de 15-17 GB, Q6_K en torno a 22-24 GB y Q8_0 cerca de 28-29 GB, sin contar el overhead del contexto y del codificador visual; estas cifras no están confirmadas en la información proporcionada.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, un modelo de ~27B en Q4 requiere GPUs con 24 GB o más (RTX 3090/4090, A10G, L4 con cuantizaciones menores) o configuraciones multi-GPU; Q8_0 requiere probablemente A100 40 GB, H100 o dos GPU de 24 GB.
+- ¿Cabe en GPU de consumo? Las cuantizaciones Q4_K_S y Q4_K_M son las candidatas para GPUs de consumo de 24 GB, siempre que el contexto se mantenga moderado; no hay confirmación oficial.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), servidores compatibles con endpoints, y potencialmente Ollama u otros frontends basados en llama.cpp. No se menciona soporte de vLLM o TGI para esta variante GGUF.
+- Latencia y throughput: no disponibles. El soporte opcional de MTP (decodificación especulativa) está orientado a mejorar el throughput, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Abliterated | Licencia |
-|---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | No disponible | Si | No | Apache 2.0 |
-| Qwen3.8-27B-Abliterated (este) | 27B | No disponible | Si (base) | Si | Apache 2.0 |
-| Llama-3.1-8B-Instruct-abliterated | 8B | 128K | No | Si | Llama 3.1 Community License |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3.8-27B-Abliterated-GGUF (este) | ~26,9B | No disponible | Sí (image-text-to-text) | Apache-2.0 | GGUF | Hugging Face, 5.575 descargas |
+| Qwen/Qwen3.8-27B (base) | ~26,9B | No disponible | Sí | Apache-2.0 | Safetensors (y derivados) | Hugging Face, modelo oficial |
+| Alternativas de ~27B denso multimodal | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone de benchmarks comparativos entre estas opciones. La principal diferencia entre el modelo original y el abliterated es la eliminacion de la direccion de rechazo, que no afecta al rendimiento en tareas estandar pero elimina las salvaguardas. Frente a modelos abliterated mas pequeños como Llama-3.1-8B, este ofrece mayor capacidad (27B) y multimodalidad, aunque con mayores requisitos de hardware.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Riesgo de contenido dañino: al eliminar la direccion de rechazo, el modelo puede generar contenido violento, ilegal, sexualmente explicito o perjudicial. Su uso en produccion debe restringirse a entornos controlados y con supervisión humana.
-- Alucinaciones: como cualquier LLM, puede inventar informacion, especialmente en temas de actualidad o datos especificos. La ausencia de rechazos no mejora la veracidad.
-- Sesgos: el modelo base puede heredar sesgos de los datos de entrenamiento; la abliteration no los corrige y podria amplificarlos al no filtrar respuestas.
-- Limitaciones de contexto e idioma: no se ha confirmado la longitud de contexto ni la cobertura de idiomas. Es probable que el rendimiento fuera de ingles y chino sea inferior.
-- Restricciones de licencia: aunque la licencia es Apache 2.0, el proceso de abliteration puede entrar en conflicto con los terminos de uso del modelo base de Alibaba (no confirmado). Se recomienda revisar la politica de uso de Alibaba antes de un despliegue comercial.
-- Compatibilidad: la version GGUF puede no conservar todas las capacidades multimodales del modelo original; es necesario verificar si el procesamiento de imagenes funciona correctamente en el motor elegido.
+- La modificación "abliterated" altera experimentalmente el comportamiento de rechazo del modelo; esto puede reducir salvaguardas de seguridad y aumentar la probabilidad de generar contenido inapropiado o dañino. El propio autor advierte de que deben validarse las salidas y las medidas de seguridad antes de su uso.
+- Riesgo de alucinación inherente a los modelos de lenguaje de esta escala; no se han publicado evaluaciones de fidelidad para esta variante.
+- No se dispone de información sobre la longitud de contexto soportada, lo que impide planificar despliegues con ventanas largas sin verificación empírica.
+- La lista de idiomas soportados no está detallada; el tag `multilingual` no garantiza un rendimiento uniforme en castellano u otros idiomas.
+- El proceso de abliteration puede degradar capacidades generales (razonamiento, instrucciones) respecto al modelo base; no hay benchmarks que cuantifiquen esa posible pérdida.
+- Aunque la licencia es Apache-2.0, se trata de una derivación no oficial; conviene revisar los términos del modelo base y las obligaciones de atribución.
+- El repositorio tiene 91 GB y solo 1 like, con 5.575 descargas: es un proyecto de comunidad con poca validación externa; no hay garantías de mantenimiento ni de calidad de las cuantizaciones.
+- El soporte de MTP es opcional y su comportamiento en llama.cpp puede variar según la versión del runtime; requiere pruebas específicas antes de confiar en la aceleración.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-GGUF
-- Repositorio GitHub del modelo base (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Articulo sobre abliteration de Qwen3.8-27B (MindStudio): https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration
-- Version abliterated en ModelScope: https://www.modelscope.cn/models/douyamv/Qwen3.8-27B-abliterated-GGUF
-- Documentacion de Cloudflare sobre Qwen3.8-27B: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/
-- Proyecto de cuantizacion AWQ con MTP (Todd Wolven): https://toddwolven.com/projects/qwen38-awq-quantization
+- [Modelo en Hugging Face](https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-GGUF)
+- [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Licencia del modelo base](https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE)
+- [Documentación en inglés (referenciada en la model card)](https://huggingface.co/GCSA-AiLab/Qwen3.8-27B-Abliterated-MTP-GGUF/blob/main/docs/en.md)
+- [Detalles técnicos en inglés (referenciados en la model card)](https://huggingface.co/GCSA-AiLab/Qwen3.8-27B-Abliterated-MTP-GGUF/blob/main/docs/technical-en.md)

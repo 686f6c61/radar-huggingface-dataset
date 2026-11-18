@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 326,
-  "downloads_30d": 33911,
+  "downloads_30d": 35688,
   "trending_score": 14,
   "parameters": 873438784,
   "parameters_human": "873.4M",
@@ -56,31 +56,5 @@
   "renamed_to": "xiaomi-research/Xiaomi-OCR-0",
   "renamed_at": "2026-11-11T03:51:02.034Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - SeerRay-Lab/Xiaomi-OCR-0",
-      "url": "https://github.com/SeerRay-Lab/Xiaomi-OCR-0",
-      "snippet": "Xiaomi-OCR- is a unified 0.8B vision-language model for document parsing and OCR-centric understanding. Starting from Qwen3.5-0.8B, it is trained on an approximately 170M-sample OCR-centric corpus with Q-Mask text anchoring, continued pretraining (CPT), and mixed-task reinforcement learning (Mix-RL)."
-    },
-    {
-      "title": "SeerRay-Lab/Xiaomi-OCR-0 · Hugging Face",
-      "url": "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "SeerRay-Lab · GitHub",
-      "url": "https://github.com/SeerRay-Lab",
-      "snippet": "Python 7 1 0 0 Updated 3 days ago Xiaomi-GUI- Public [Technical Report] An End-to-End Multimodal GUI Agent for Real Mobile Environments Python 87 Apache-2.0 2 2 0 Updated 2 weeks ago Unitranslator Public [2026-ECCV] UniTranslator: A Unified Multi-modal Framework for End-to-end In-Image Machine Translation Python 5 Apache-2.0 0 1 0 Updated 2 ..."
-    },
-    {
-      "title": "Xiaomi-OCR-0 — Read. Parse. Understand.",
-      "url": "https://seerray-lab-xiaomi-ocr-0.static.hf.space/index.html",
-      "snippet": "SEERRAY LAB / 0.8B OCR MODEL Xiaomi-OCR -0 Read. Parse. Understand. Document parsing and OCR-centric understanding, together in a compact 0.8B vision-language model."
-    },
-    {
-      "title": "Xiaomi-OCR-0 Technical Report - arXiv.org",
-      "url": "https://arxiv.org/pdf/2609.36136",
-      "snippet": "Abstract Compact OCR-specific vision-language models achieve strong document parsing performance, but often rely on costly supervision and focus primarily on visual-text reconstruction. We introduce Xiaomi-OCR-0, a unified 0.8B model for document parsing and OCR-centric understanding. We build an approximately 170M-sample OCR-centric corpus using an automated data engine that combines expert ..."
-    }
-  ]
+  "sources": []
 }

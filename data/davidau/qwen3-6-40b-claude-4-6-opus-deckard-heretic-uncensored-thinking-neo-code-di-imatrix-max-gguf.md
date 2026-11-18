@@ -2,86 +2,108 @@
 
 ## Resumen
 
-El modelo `DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF` es un fine-tune de la serie Qwen 3.6, desarrollado por DavidAU, que parte de un Qwen 3.6 de 27B parámetros y lo expande a 40B parámetros densos (96 capas, 1275 tensores) mediante un proceso de entrenamiento multi-etapa. El resultado es un modelo de propósito general con énfasis en razonamiento, escritura creativa, generación de código y ausencia de censura (etiquetado como "uncensored" y "abliterated"). La versión GGUF aquí descrita incorpora una cuantización personalizada "NEO-CODE-Di-IMatrix-MAX" basada en una doble matriz de importancia (imatrix) calibrada contra el modelo en bf16.
+Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF es una cuantizacion GGUF de un modelo denso de 40 000 millones de parametros derivado del Qwen 3.6 de 27B, desarrollado por DavidAU. El modelo parte de una expansion arquitectonica del Qwen 3.6 27B hasta 39 072 596 736 parametros (96 capas, 1275 tensores, un 50 % mas que el modelo base), seguida de un proceso de "abliteration" via Heretic (eliminacion de rechazos y censura), un ajuste fino multietapa con Unsloth sobre datasets propios (Deckard/PkDick) y, finalmente, una destilacion del dataset de razonamiento de Claude 4.6 Opus High Reasoning.
 
-El modelo destaca por su ventana de contexto de 256K tokens, soporte de visión (requiere un archivo `mmproj` adicional) y un modo de razonamiento de longitud variable: menos complejo para tareas simples, más extenso para problemas difíciles. Está pensado para desarrolladores e investigadores que buscan un modelo local potente, sin restricciones de contenido y con buen rendimiento en tareas de codificación y escritura. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+El objetivo del autor es combinar capacidad de razonamiento (herencia del dataset de Claude Opus), creatividad y escritura de ficcion (datasets Deckard), codigo (los cuantizados NEO-CODE) y ausencia de filtros de seguridad. La ficha corresponde especificamente a los cuantizados GGUF "NEO-CODE-Di-IMatrix-MAX", construidos con dos datasets imatrix combinados y ajustes de tensores medidos por benchmarks, con el fin de preservar calidad en contexto largo, conversaciones multiples, codigo y matematicas.
+
+Es relevante ahora por su elevada adopcion (mas de 102 000 descargas y 810 likes), por su ventana de contexto de 256K y por su enfoque en casos de uso creativos y de rol sin restricciones, un nicho muy demandado en la comunidad open source. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (no MoE), 96 capas, 1275 tensores |
-| Parametros totales | 40B (expandido desde 27B base) |
+| Arquitectura | Transformer denso (no MoE), expandido desde Qwen 3.6 27B; 96 capas, 1275 tensores |
+| Parametros totales | 39 072 596 736 (~40B) |
 | Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 256K tokens |
-| Tipos de cuantizacion | IQ2_M, IQ4_XS, Q6_K, Q8_0 (con componentes BF16), entre otros |
-| Idiomas soportados | Inglés (en), chino (zh) |
+| Longitud de contexto | 256K tokens (segun model card) |
+| Tipos de cuantizacion | GGUF: IQ2_M, IQ4_XS, Q6, Q8_0 (entre otros; "NEO-CODE-Di-IMatrix-MAX") |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con archivo `mmproj` para visión) |
+| Formato de pesos | GGUF (repo de 259,9 GB); modelo base en bfloat16 |
+| Pipeline | image-text-to-text |
+| Dataset de entrenamiento | TeichAI/claude-4.5-opus-high-reasoning-250x; DavidAU/PkDick-Deckard-5-Datasets |
+| Modelo base | DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking |
+| Fecha de creacion | 2026-05-01 |
+| Ultima actualizacion | 2026-11-09 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de un Qwen 3.6 de 27B parámetros, que se expande a 40B (50% más capas que el base) para dar "espacio para pensar". El entrenamiento se realiza en varias etapas: primero se aplica "Heretic" (eliminación de censura y alineación de seguridad), luego se entrena con cinco datasets internos "Deckard/PDK" orientados a carácter, inteligencia, profundidad, observación y punto de vista, y finalmente se entrena con un dataset de destilación de Claude 4.6 Opus (TeichAI/claude-4.5-opus-high-reasoning-250x) para acortar y estabilizar el razonamiento. El proceso se realiza con Unsloth en hardware local.
+El modelo es un transformer denso de 40B construido mediante expansion de parametros a partir del Qwen 3.6 27B: pasa de la arquitectura original a 96 capas y 1275 tensores, lo que supone un 50 % mas de tensores que el modelo base. El pipeline de entrenamiento descrito por el autor es secuencial: primero se aplica "abliteration" con Heretic para eliminar los comportamientos de rechazo; despues se ajusta con Unsloth sobre cinco datasets internos (Deckard/PkDick) orientados a caracter, inteligencia, profundidad, observacion y punto de vista; a continuacion se expande a 40B ("room to think"); y por ultimo se vuelve a entrenar con Unsloth sobre el dataset de destilacion de Claude 4.6 Opus para acortar y estabilizar el razonamiento.
 
-La cuantización GGUF usa una doble imatrix (NEO y NEO-CODE) fusionada para obtener lo mejor de cada una, con ajustes de tensores adicionales calibrados mediante pruebas. Según el autor, IQ4_XS alcanza el 94% de la precisión del modelo en bf16, Q6_K el 97% y Q8_0 el 98.4%. El modelo soporta visión mediante un archivo `mmproj` separado, y su pipeline se etiqueta como `image-text-to-text`.
+Una innovacion destacable es el razonamiento de longitud variable: el modelo genera cadenas de pensamiento mas cortas para problemas simples y mas largas para los complejos. Los cuantizados de esta ficha usan una tecnica propia ("NEO-CODE-Di-IMatrix-MAX") que combina dos datasets imatrix (estadisticas crudas de ambos, fusionadas) y ajustes de tensores medidos con benchmarks, con el objetivo de preservar precision en contexto largo, conversaciones multi-turno, codigo y matematicas. El autor reporta que IQ4_XS alcanza el 94 % de la precision de bf16, Q6 el 97 % y Q8_0 el 98,4 %, mientras que IQ2_M se queda en el 83-84 %.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de longitud variable: respuestas cortas para tareas simples, razonamiento extenso para problemas complejos.
-- Escritura creativa y ficción: el autor destaca su carácter y "brutal honestidad" en la crítica de textos, con ejemplos de narrativa y desarrollo de tramas.
-- Generación de código: entrenado específicamente con el dataset NEO-CODE, con ajustes de temperatura recomendados para tareas de desarrollo web (temperatura 0.6).
-- Sin censura: modelo "uncensored" y "abliterated", capaz de generar contenido NSFW si se solicita.
-- Soporte de visión: puede procesar imágenes si se descarga el archivo `mmproj` correspondiente.
-- Soporte multilingüe limitado: inglés y chino principalmente.
-- Modo thinking y modo instruct: se pueden alternar mediante configuración de temperatura y top_p.
-- Tool calling y funciones de agente: no se menciona explícitamente, pero al ser un fine-tune de Qwen 3.6, hereda las capacidades de la familia Qwen (aunque no se confirma en la documentación).
+- Generacion de texto y razonamiento con modo "thinking" de longitud variable (cadenas mas cortas o largas segun la complejidad).
+- Escritura creativa y de ficcion: generacion de tramas, subtramas, escenas, continuacion de escenas, storytelling y prosa vivida en todos los generos (ciencia ficcion, romance, etc.).
+- Roleplaying y conversacion multi-turno con contexto de hasta 256K tokens.
+- Generacion de codigo y resolucion de problemas matematicos (los cuantizados NEO-CODE estan optimizados explicitamente para codigo y matematicas).
+- Capacidad multimodal declarada por el pipeline image-text-to-text (entrada de imagen y texto), aunque la model card no detalla el modulo de vision.
+- Multilinguee limitado a ingles y chino.
+- Sin censura ni filtros de rechazo (uncensored/abliterated): responde a peticiones NSFW si se le solicitan.
+- No se documenta soporte explicito de tool calling, function calling ni uso como agente multi-paso en la informacion disponible.
 
 ## Casos de uso
 
-- Escritura creativa y novelas: el modelo puede actuar como colaborador en el desarrollo de tramas, personajes y diálogos, ofreciendo críticas directas y sugerencias de mejora gracias a su entrenamiento en datasets de ficción y su tono "sin filtros".
-- Generación de código en producción: con la cuantización NEO-CODE y los ajustes de temperatura recomendados (0.6 para tareas precisas), puede integrarse en pipelines de desarrollo para generar código, revisar implementaciones o documentar APIs.
-- Asistente de razonamiento para investigación: su modo de razonamiento variable y su entrenamiento con datasets de alto razonamiento (Claude 4.6 Opus) lo hacen adecuado para tareas de análisis, planificación y resolución de problemas complejos.
-- Chat sin restricciones para adultos: al ser uncensored, puede utilizarse en aplicaciones de rolplay o entretenimiento para adultos donde otros modelos rechazan contenido explícito.
-- Análisis de imágenes con contexto largo: gracias a su soporte de visión y ventana de 256K, puede procesar documentos escaneados, diagramas o capturas de pantalla junto con instrucciones extensas.
-- Desarrollo de agentes conversacionales con personalidad: su entrenamiento en "carácter" e "inteligencia" permite crear asistentes con un estilo distintivo, útil en juegos de rol o narrativa interactiva.
+- Escritura de ficcion asistida: el modelo puede generar tramas, subtramas y continuaciones de escenas coherentes con un contexto de 256K tokens, lo que permite mantener consistencia en novelas largas y sagas con decenas de capitulos.
+- Roleplaying y narrativa interactiva: su entrenamiento en caracter y su ausencia de filtros lo hacen adecuado para personajes con personalidad marcada y conversaciones multi-turno prolongadas sin degradacion.
+- Generacion de codigo en local: los cuantizados NEO-CODE estan optimizados para codigo y matematicas; con Q6 o Q8_0 puede integrarse en flujos de autocompletado o generacion de funciones en entornos sin conexion.
+- Razonamiento paso a paso en problemas complejos: el modo thinking variable permite usarlo para analisis tecnico, planificacion o resolucion de problemas matematicos donde se necesita una cadena de razonamiento explicita.
+- Analisis de documentos largos: con 256K de contexto puede resumir o extraer informacion de contratos, informes o libros completos en una sola pasada.
+- Prototipado de asistentes sin restricciones: para investigacion sobre seguridad, red teaming o estudio de comportamientos de modelos sin alineacion, en entornos controlados.
+- Generacion de contenido creativo en ingles y chino: marketing, guiones, dialogos y material editorial en ambos idiomas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona que el modelo "excede todos los benchmarks críticos para Qwen 3.6 27B y Qwen 3.6 35B-A3B" y que supera al modelo base en 6 de 7 benchmarks, pero no se proporcionan cifras concretas (MMLU, HumanEval, GSM8K, etc.). Tampoco se indican métricas específicas de rendimiento en latencia o throughput. Se recomienda consultar los repositorios vinculados del autor para métricas detalladas de las cuantizaciones.
+El autor afirma que el modelo supera al modelo base en 6 de 7 benchmarks y que los cuantizados alcanzan los siguientes porcentajes de precision respecto a bf16:
+
+| Cuantizacion | Precision respecto a bf16 |
+|---|---|
+| IQ2_M | 83-84 % |
+| IQ4_XS | 94 % |
+| Q6 | 97 % |
+| Q8_0 HIGH | 98,4 % |
+
+No se han publicado en la informacion disponible resultados numericos de benchmarks estandar (MMLU, HumanEval, GSM8K, ARC-C) para este modelo concreto. El autor remite a la pestana "community" y a repositorios adicionales para pruebas de terceros, pero no se incluyen cifras en la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada: según la guía de despliegue de innoai.space, se espera un uso de 24-48 GB de VRAM en forma cuantizada, dependiendo del nivel de cuantización elegido.
-- GPU recomendadas: para cuantizaciones bajas (IQ2_M, IQ4_XS) puede funcionar en GPUs de consumo como RTX 3090/4090 (24 GB); para Q6_K y Q8_0 se necesitan GPUs de datacenter (A100 40/80GB, H100) o múltiples GPUs.
-- Compatibilidad con GPU de consumo: sí, con cuantizaciones IQ2_M o IQ4_XS en GPUs de 24 GB, aunque con menor fidelidad (83-94% de precisión bf16).
-- Opciones de despliegue: al ser formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y servidores como vLLM (con adaptador GGUF) o TGI. También se puede usar el modelo base bf16 con frameworks estándar.
-- Latencia y throughput: no disponibles en la documentación proporcionada.
+- VRAM estimada para inferencia (40B denso): IQ2_M ~12-14 GB; IQ4_XS ~22-24 GB; Q6 ~32-34 GB; Q8_0 ~42-44 GB (estimaciones segun el numero de parametros y bits por peso; no confirmadas en la model card).
+- GPU recomendadas: A100 80GB o H100 para Q8_0 y contexto largo; RTX 4090 (24 GB) para IQ4_XS; RTX 3090/4090 o equivalentes para IQ2_M.
+- Cabe en GPU de consumo: si, en IQ2_M e IQ4_XS con GPUs de 16-24 GB; Q6 y Q8_0 requieren 32 GB o mas (A100, H100, o configuraciones multi-GPU).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; vLLM y TGI no soportan GGUF de forma nativa sin conversion.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic (este) | 40B denso | 256K | Apache 2.0 | Fine-tune uncensored con razonamiento extendido |
-| Qwen 3.6 27B (base) | 27B denso | 128K (estimado) | Apache 2.0 | Modelo base sin fine-tune |
-| Qwen 3.6 35B-A3B | 35B total (3B activos, MoE) | 256K (estimado) | Apache 2.0 | Variante MoE más eficiente |
+| Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic (este) | 40B denso | 256K | Apache 2.0 | Sin censura, orientado a ficcion y codigo, GGUF optimizado |
+| Qwen 3.6 27B (base) | 27B denso | no disponible | Apache 2.0 | Modelo original sin expansion ni abliteration |
+| Qwen3.6-27B-Fable-Fusion-711 (DavidAU) | 27B denso | no disponible | Apache 2.0 | Variante del mismo autor, 2200+ likes y 3M+ descargas |
+| Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor (DavidAU) | 40B denso | no disponible | Apache 2.0 | Version "expanded" y de mayor IQ del mismo modelo base |
 
-Según el autor, este modelo supera a ambos en benchmarks críticos, pero no se aportan datos numéricos. La comparativa se basa en las menciones de la model card, no en mediciones independientes. No hay información sobre otros modelos de la misma categoría (por ejemplo, Llama 3.3 70B o Mistral Large) en los resultados de búsqueda.
+No se dispone de datos de benchmarks comparativos verificados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Contenido sin censura: al ser uncensored y abliterated, puede generar contenido ofensivo, NSFW o inapropiado. No es adecuado para aplicaciones que requieran moderación de contenido.
-- Idiomas limitados: solo soporta inglés y chino; no se garantiza buen rendimiento en otros idiomas, incluido el español.
-- Riesgo de alucinación: como todo modelo generativo, puede inventar información, especialmente en tareas de razonamiento complejo o con contextos largos.
-- Requisitos de hardware elevados: incluso cuantizado, necesita al menos 24 GB de VRAM para un uso razonable, lo que excluye GPUs de gama baja.
-- Dependencia del archivo `mmproj`: para usar visión es necesario descargar un archivo adicional; sin él, el modelo no procesa imágenes.
-- Sesgos no documentados: no se han publicado evaluaciones de sesgos o toxicidad. Dado su entrenamiento sin censura, es probable que reproduzca estereotipos o lenguaje dañino si se le solicita.
-- Reproducibilidad: el proceso de entrenamiento (datasets internos "Deckard/PDK") no está completamente documentado, lo que dificulta la replicación o auditoría del modelo.
+- Modelo sin censura (abliterated/heretic): puede generar contenido NSFW, ofensivo o inapropiado; no es apto para despliegues publicos sin moderacion adicional.
+- Riesgo de alucinacion: como todo modelo generativo, puede inventar hechos, especialmente en contexto largo; no se han publicado evaluaciones de factualidad.
+- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- La expansion de 27B a 40B y el ajuste fino sobre datasets propios no han sido validados de forma independiente con benchmarks estandar en la informacion disponible.
+- El pipeline declarado es image-text-to-text, pero la model card no detalla el modulo de vision ni su calidad; conviene verificar antes de usarlo en tareas multimodales.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado sin filtros puede incumplir politicas de plataformas o normativa local; la responsabilidad recae en el desplegador.
+- El repo GGUF ocupa 259,9 GB; el almacenamiento y la gestion de versiones requieren planificacion.
+- No se documenta soporte de tool calling ni de agentes; para pipelines con function calling conviene validar manualmente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
-- Modelo base (bf16): https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
-- Repositorio de métricas de cuantización (Qwen3.6-27B NEO-CODE): https://huggingface.co/DavidAU/Qwen3.6-27B-NEO-CODE-Di-IMatrix-MAX-GGUF
-- Repositorio de métricas (versión Heretic): https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF
-- Guía de despliegue en innoai.space: https://innoai.space/model/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
-- Discusión sobre el modelo: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF/discussions/13
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- Variante Fable-Fusion-711 (27B): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Variante Fable-Fusion-6-Core-Deckard-Eleanor (40B): https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF
+- Dataset de destilacion: https://huggingface.co/datasets/TeichAI/claude-4.5-opus-high-reasoning-250x
+- Dataset Deckard: https://huggingface.co/datasets/DavidAU/PkDick-Deckard-5-Datasets
+- FAQs y soporte del autor: https://huggingface.co/DavidAU/support

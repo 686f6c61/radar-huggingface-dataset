@@ -1,87 +1,99 @@
 # BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy-v2
 
 ## Resumen
+LTX-2.5 22B Distilled NVFP4 ComfyUI-ready V2 es una cuantización en NVFP4 (4 bits de punto flotante, formato nativo de las GPU Blackwell) del transformer de difusión LTX-2.5 de Lightricks, reempaquetada por el usuario independiente BennyDaBall para que ComfyUI la cargue sin errores. El modelo base es un generador de vídeo con audio nativo que trabaja en modo texto-a-vídeo, imagen-a-vídeo y con keyframes de primer y último fotograma (flf2v), con 22.000 millones de parámetros en el transformer de difusión.
 
-LTX-2.5 22B Distilled NVFP4 ComfyUI-ready V2 es una versión cuantizada a 4 bits (NVFP4) del transformer de difusión LTX-2.5 de Lightricks, preparada específicamente para cargarse en ComfyUI. El autor, BennyDaBall, ha añadido marcadores `.comfy_quant` por capa al export oficial de Lightricks, que originalmente fallaba al cargar en ComfyUI con un error de forma en `mat2`. Esta versión V2 restaura además el soporte de keyframes (`keyframes_abs_pos_embedding`), que se había perdido en el re-export oficial del 16 de agosto de 2026.
+El problema que resuelve este repositorio es puramente de empaquetado: el export oficial NVFP4 de Lightricks no incluía las marcas por capa `.comfy_quant` que ComfyUI necesita para interpretar los pesos FP4 empaquetados, lo que provocaba un error de forma `mat2` al cargar. Esta V2 añade esas marcas sobre el re-export oficial del 16 de agosto de 2026 y restaura el embedding posicional de keyframes (`keyframes_abs_pos_embedding`), ausente en la V1.
 
-El modelo base es Lightricks/LTX-2.5, un modelo de generación de vídeo de 22 000 millones de parámetros, destilado y con capacidad para texto-a-vídeo, imagen-a-vídeo y puente entre keyframes. La cuantización NVFP4 reduce el peso del archivo a 18,7 GB, unos 3 GB menos que la versión int8 oficial (21,5 GB), manteniendo una calidad visual similar según las pruebas del autor. Está pensado para usuarios de ComfyUI que quieran ejecutar LTX-2.5 en GPUs de consumo con requisitos de VRAM reducidos.
+Es relevante ahora porque permite ejecutar un modelo de vídeo de 22B en 4 bits dentro de ComfyUI con un peso de 18,7 GB, unos 3 GB menos que el cuantizado int8 oficial, y porque el autor documenta tiempos de render verificados en una RTX 5090 (70 s para 1920×1088 en t2v, 55 s para un puente de keyframes de 5 s a 1280×736 con SageAttention 3).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion para video (basado en Lightricks/LTX-2.5) |
-| Parametros totales | 22 000 millones (22B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo de video, no de texto) |
-| Tipos de cuantizacion | NVFP4 (4 bits); existe version int8 oficial de Lightricks |
-| Idiomas soportados | No disponible |
-| Licencia | ltx-2.x-community-license |
-| Formato de pesos | safetensors (diffusion single file) |
+| Arquitectura | Transformer de difusion (modelo base Lightricks/LTX-2.5, variante distilled) |
+| Parametros totales | 22B (segun nombre del modelo y modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de difusion; ventana de texto no especificada) |
+| Tipos de cuantizacion | NVFP4 (4 bits float, escalas por bloque), 1.176 capas cuantizadas de 7.877 tensores |
+| Idiomas soportados | no disponible |
+| Licencia | ltx-2.x-community-license (other) |
+| Formato de pesos | safetensors de archivo unico para difusion (`diffusion-single-file`), con marcas `.comfy_quant` por capa |
+| Tamano del repositorio | 18,7 GB |
+| Pipeline | text-to-video (tambien image-to-video y keyframes flf2v) |
+| Libreria | ltx |
+| Modelo base | Lightricks/LTX-2.5 (relacion: quantized) |
+| Descargas / likes | 7.117 / 8 |
 
 ## Arquitectura y entrenamiento
+El modelo es un transformer de difusion para generacion conjunta de video y audio, en su variante *distilled* del LTX-2.5 de Lightricks. Esta ficha no dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF/DPO o destilacion por destilacion de pasos; esos datos corresponden a la model card del modelo base y no se han proporcionado.
 
-El modelo es una cuantizacion NVFP4 del transformer de difusion LTX-2.5 de Lightricks, que genera video a partir de texto, imagenes o keyframes. El archivo contiene 7.877 tensores, de los cuales 1.176 capas cuantizadas llevan el marcador `{"format": "nvfp4"}` necesario para que ComfyUI interprete correctamente los pesos FP4 empaquetados. El autor no modifica los pesos ni las escalas, solo anade los marcadores de cuantizacion por capa.
-
-No se dispone de informacion detallada sobre el entrenamiento del modelo base (composicion del dataset, numero de tokens, uso de RLHF o DPO). Se sabe que es una version destilada (distilled) de LTX-2.5, lo que implica un proceso de destilacion para reducir el coste de inferencia. La cuantizacion NVFP4 es posterior al entrenamiento y no requiere reentrenamiento.
+La innovacion tecnica de este repositorio concreto es el reempaquetado: se parte del export oficial `ltx-2.5-22b-distilled-transformer-nvfp4.safetensors` (re-export del 16 de agosto de 2026 con soporte de keyframes) y se le anaden marcas por capa `{"format": "nvfp4"}` en el tensor `.comfy_quant`, sin tocar pesos, escalas ni metadatos de licencia. Respecto a la V1, la diferencia critica es la presencia del tensor `keyframes_abs_pos_embedding`, que habilita la interpolacion entre primer y ultimo fotograma. El autor verifica la carga y el render en ComfyUI 0.33 sobre RTX 5090, incluyendo flf2v, t2v e i2v con el grafo estandar de LTX-2.5 y `UNETLoader`.
 
 ## Capacidades
-
-- Generacion de video texto-a-video (t2v) a resoluciones de hasta 1920x1088 con audio nativo.
-- Generacion de video imagen-a-video (i2v) a partir de una imagen inicial.
-- Puente entre keyframes (flf2v): dadas una primera y una ultima imagen, el modelo genera los fotogramas intermedios manteniendo identidad, vestuario y escenario.
-- Soporte de audio nativo en el video generado (mencionado en las pruebas del autor).
-- Integracion directa con ComfyUI mediante `UNETLoader` en los grafos de plantilla LTX-2.5.
-- Compatible con SageAttention 3 para acelerar la atencion durante la inferencia.
+- Generacion de video a partir de texto (t2v), con audio nativo segun el autor (ejemplo de 1920×1088).
+- Generacion de video a partir de imagen (i2v).
+- Generacion con keyframes de primer y ultimo fotograma (flf2v): se aportan dos fotogramas y el modelo rellena la secuencia intermedia (ejemplo verificado de 5 s a 1280×736).
+- Salida de audio nativo junto al video (etiqueta `audio-video` del repositorio).
+- Ejecucion dentro de ComfyUI mediante `UNETLoader` en las plantillas estandar de LTX-2.5.
+- Compatibilidad con SageAttention 3 para acelerar el render (usado en la verificacion del autor).
+- Soporte de flujos de API de ComfyUI (se incluye un workflow t2v de ejemplo en el repositorio).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni comprension de audio de entrada; es un modelo generativo de video, no un LLM.
 
 ## Casos de uso
-
-- Previsualizacion de escenas para produccion audiovisual: un director puede generar un clip de 5-10 segundos a 1280x736 o 1920x1088 a partir de un prompt de texto para evaluar la composicion, iluminacion y movimiento antes de rodar.
-- Animacion de storyboards con keyframes: el artista dibuja el primer y ultimo fotograma de una secuencia y el modelo rellena los intermedios, manteniendo la coherencia de personajes y decorados.
-- Creacion de contenido para redes sociales: generacion rapida de clips cortos con audio para plataformas como TikTok o Instagram Reels, sin necesidad de equipos de captura.
-- Prototipado de ideas para videojuegos: los disenadores pueden generar cinemáticas aproximadas a partir de prompts para comunicar la intencion artistica al equipo.
-- Generacion de material de relleno para edicion: el modelo puede crear transiciones o clips de ambiente que se intercalan en una edicion de video existente.
-- Pruebas de concepto para clientes en agencias de publicidad: se genera un video de muestra a partir de un brief textual para validar la direccion creativa antes de la produccion final.
+- Prototipado rapido de video generativo en estaciones con GPU Blackwell: al ocupar 18,7 GB, el checkpoint se carga en una RTX 5090 y permite iterar en t2v a 1920×1088 en torno a 70 s por clip con carga en frio incluida.
+- Interpolacion de keyframes en postproduccion: se aportan el primer y el ultimo fotograma de un plano y el modelo genera los 5 s intermedios manteniendo identidad, vestuario y decorado, lo que sirve para cubrir transiciones o planos de continuidad.
+- Generacion de video con audio para prototipos de anuncios: la salida con audio nativo reduce el trabajo de sincronizacion en fases tempranas de conceptualizacion.
+- Animacion de stills de producto o personaje: flujo i2v para convertir una imagen fija en un clip corto sin reentrenar nada, util en catalogo y marketing.
+- Pruebas A/B de prompts y semillas dentro de ComfyUI: el autor compara misma semilla y prompt entre NVFP4 e int8, lo que facilita evaluar el impacto de la cuantizacion en un pipeline propio antes de fijar una version.
+- Integracion en pipelines automatizados de ComfyUI via API: el repositorio incluye un workflow t2v de ejemplo que se puede invocar desde scripts para generar variantes por lotes.
+- Evaluacion de cuantizacion 4 bits frente a 8 bits: sirve como referencia para medir perdida de calidad y ahorro de VRAM (3 GB menos) antes de decidir el checkpoint de produccion.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks en la informacion disponible.
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo proporciona mediciones de tiempo de inferencia en una RTX 5090 con ComfyUI 0.33:
+Los unicos datos de rendimiento aportados por el autor son mediciones de tiempo de render en una RTX 5090 con ComfyUI 0.33:
 
-- Texto-a-video a 1920x1088 con audio nativo: aproximadamente 70 segundos (incluyendo carga en frio).
-- Puente de keyframes (flf2v) de 5 segundos a 1280x736: aproximadamente 55 segundos con SageAttention 3.
-
-No hay datos comparativos con otros modelos de generacion de video.
+| Prueba | Configuracion | Tiempo |
+|---|---|---|
+| Texto a video | 1920×1088, audio nativo, carga en frio incluida | ~70 s |
+| Puente de keyframes (flf2v) | 5 s a 1280×736, SageAttention 3 | ~55 s |
+| Comparativa de cuantizacion | 10 s a 1280×736, semilla 910090, NVFP4 vs int8-convrot | resultado similar, no identico |
 
 ## Requisitos de hardware
-
-- Verificado en una RTX 5090 (32 GB VRAM) con ComfyUI 0.33.
-- El archivo pesa 18,7 GB, por lo que se recomienda una GPU con al menos 24 GB de VRAM para cargar el modelo y generar video sin intercambio a memoria del sistema.
-- GPUs compatibles: RTX 4090 (24 GB), RTX 5090 (32 GB), A6000 (48 GB) o superiores. En GPUs con menos VRAM podria ser necesario usar cuantizaciones mas agresivas o reducir la resolucion de salida.
-- Opciones de despliegue: ComfyUI (principal), con soporte para SageAttention 3. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, ya que es un modelo de difusion, no un LLM.
-- Latencia estimada: 55-70 segundos por clip de 5-10 segundos en RTX 5090, dependiendo de la resolucion y el uso de SageAttention.
+- VRAM estimada para inferencia: el archivo pesa 18,7 GB; se necesita al menos esa cantidad mas el overhead de activaciones, latents y el VAE/text encoder del pipeline LTX-2.5. No se dispone de una cifra oficial de VRAM total; en la practica requiere GPU de 24 GB o superior, y el autor lo ejecuta en una RTX 5090 (32 GB).
+- GPU recomendadas: RTX 5090 (verificada por el autor); GPU Blackwell en general para aprovechar el formato NVFP4 de forma nativa. No hay datos de rendimiento en A100, H100 ni RTX 4090 en la informacion disponible.
+- Cabe en GPU de consumo: si, en RTX 5090 segun la verificacion del autor. En GPUs sin soporte nativo de FP4 (por ejemplo, Ada o Ampere) el rendimiento y la compatibilidad no estan documentados.
+- Opciones de despliegue: ComfyUI (ruta prevista: `models/diffusion_models/`, cargado con `UNETLoader` en las plantillas LTX-2.5). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion de este tipo.
+- Aceleracion: SageAttention 3 empleada en las pruebas de flf2v del autor.
+- Latencia y throughput: ~70 s por clip t2v de 1920×1088 y ~55 s por puente flf2v de 5 s a 1280×736 en RTX 5090; no hay datos de throughput agregado ni de otras GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Tamano archivo | Keyframes | Compatibilidad ComfyUI |
-|---|---|---|---|---|---|
-| LTX-2.5 22B Distilled NVFP4 V2 (este) | 22B | NVFP4 (4 bits) | 18,7 GB | Si | Si (con marcadores anadidos) |
-| LTX-2.5 22B Distilled NVFP4 V1 | 22B | NVFP4 (4 bits) | ~18,7 GB | No | Si (con marcadores anadidos) |
-| LTX-2.5 22B Distilled int8 oficial | 22B | int8 | 21,5 GB | Si | No (falla al cargar) |
+| Modelo | Parametros | Cuantizacion | Tamano | Contexto / duracion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Este repo (LTX-2.5 22B distilled NVFP4 V2) | 22B | NVFP4 con marcas ComfyUI | 18,7 GB | clips de 5-10 s documentados | ltx-2.x-community-license | Hugging Face, listo para ComfyUI |
+| LTX-2.5 22B distilled NVFP4 V1 (BennyDaBall) | 22B | NVFP4 con marcas ComfyUI | no disponible | sin keyframes | ltx-2.x-community-license | Hugging Face |
+| LTX-2.5 comfy-int8-convrot (oficial) | 22B | int8 | 21,5 GB | no disponible | ltx-2.x-community-license | Hugging Face |
+| Lightricks/LTX-2.5 (base) | 22B | pesos originales | no disponible | no disponible | ltx-2.x-community-license | Hugging Face |
 
-La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de otros modelos de generacion de video comparables en la informacion proporcionada. La ventaja principal de esta version frente a la int8 oficial es que funciona en ComfyUI y pesa unos 3 GB menos, con una calidad visual similar segun las pruebas del autor.
+La comparativa se limita a variantes del mismo modelo base porque la informacion proporcionada no incluye datos de otros generadores de video comparables (parametros, contexto, benchmarks ni licencia).
 
 ## Limitaciones y advertencias
-
-- Es una cuantizacion de 4 bits: puede haber una ligera perdida de calidad respecto al modelo original en precision completa, aunque el autor indica que los resultados son "similares y cercanos, no identicos" a la version int8.
-- La licencia es `ltx-2.x-community-license`, que es una licencia comunitaria de Lightricks. Es necesario revisar los terminos completos en el archivo LICENSE.txt para confirmar si permite uso comercial y que restricciones impone.
-- Depende de ComfyUI: el modelo esta disenado para cargarse con `UNETLoader` en ComfyUI. No se garantiza su funcionamiento en otros entornos de inferencia.
-- No se dispone de informacion sobre sesgos, alucinaciones o limitaciones de idioma del modelo base. Al ser un modelo de video, los riesgos de alucinacion se manifiestan en la generacion de contenido visual incoherente o no deseado.
-- El autor es un miembro de la comunidad, no Lightricks. Este repositorio es un arreglo no oficial del export de Lightricks, por lo que no hay garantia de soporte a largo plazo.
-- La generacion de video es computacionalmente intensiva: incluso con cuantizacion 4 bits, se necesita una GPU de gama alta para tiempos de inferencia razonables.
+- Es una cuantizacion no oficial: el repositorio lo mantiene un tercero (BennyDaBall), no Lightricks. Los pesos y escalas son los del export oficial, pero las marcas `.comfy_quant` son anadidas.
+- Requiere ComfyUI: el checkpoint esta pensado para cargarse con `UNETLoader` en las plantillas LTX-2.5; fuera de ese entorno no hay garantia de compatibilidad.
+- Dependencia de hardware Blackwell para NVFP4: no hay datos de comportamiento en GPUs sin soporte nativo de FP4.
+- Diferencias de calidad frente a int8: el propio autor indica que el resultado con la misma semilla y prompt es "similar y cercano, no identico"; no hay metricas objetivas de la perdida por cuantizacion.
+- Licencia `ltx-2.x-community-license`: es una licencia comunitaria con condiciones especificas (texto en `LICENSE.txt` del repositorio). No se dispone del detalle de restricciones comerciales en la informacion proporcionada; debe revisarse antes de uso en produccion.
+- Idiomas soportados: no disponibles; no se documenta el comportamiento multilingue de los prompts.
+- Riesgo de alucinacion visual y artefactos: inherente a los modelos de difusion de video; no se aportan evaluaciones de fidelidad, coherencia temporal ni sincronizacion audio-video mas alla de las muestras cualitativas del autor.
+- Sin benchmarks publicados: no hay MMLU, HumanEval, GSM8K ni metricas de video (FVD, CLIP-score) en la informacion disponible; la evaluacion se limita a tiempos de render y muestras visuales.
+- Fechas y contexto del repositorio: el autor documenta incidencias repetidas de empaquetado en los exports oficiales; conviene verificar la version del archivo antes de fijar un pipeline.
 
 ## Enlaces
-
 - Repositorio Hugging Face: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy-v2
 - Version V1 (sin keyframes): https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy
-- Modelo base Lightricks/LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
-- Licencia: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy-v2/blob/main/LICENSE.txt
+- Modelo base: https://huggingface.co/Lightricks/LTX-2.5
+- Licencia (LICENSE.txt del repositorio): https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy-v2/blob/main/LICENSE.txt
+- Perfil del autor en X: https://x.com/BennyDaBall_OG
+- Ko-fi del autor: https://ko-fi.com/bennydaball

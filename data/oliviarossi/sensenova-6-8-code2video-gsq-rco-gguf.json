@@ -28,7 +28,7 @@
     "imatrix"
   ],
   "likes": 9,
-  "downloads_30d": 13893,
+  "downloads_30d": 13896,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF · Hugging Face",
-      "url": "https://huggingface.co/OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF",
-      "snippet": "Non-uniform mixed-precision GGUF quantization of sensenova/SenseNova-6.8-Code2Video following the GSQ + RCO methodology pioneered by ISTA-DASLab."
-    },
-    {
-      "title": "Abiray/SenseNova-6.8-Code2Video-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Abiray/SenseNova-6.8-Code2Video-GGUF",
-      "snippet": "GGUF quantizations of sensenova/SenseNova-6.8-Code2Video (27B hybrid qwen35 architecture), complete with the F16 Multimodal Vision Projector (mmproj-F16.gguf) and a grafted 1-layer Multi-Token Prediction (blk.64 / NextN) speculative decoding head preserved at Q8_0."
-    },
-    {
-      "title": "Abiray/SenseNova-6.8-Code2Video-MTP-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Abiray/SenseNova-6.8-Code2Video-MTP-GGUF",
-      "snippet": "GGUF quantizations of sensenova/SenseNova-6.8-Code2Video (27B hybrid qwen35 architecture), complete with the F16 Multimodal Vision Projector (mmproj-F16.gguf) and a grafted 1-layer Multi-Token Prediction (blk.64 / NextN) speculative decoding head preserved at Q8_0."
-    },
-    {
-      "title": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF · Hugging Face",
-      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
-      "snippet": "Non-uniform GGUF quantizations via GSQ + RCO: per-tensor mixed precision in standard GGUF form • 4 items • Updated 3 days ago • 85"
-    },
-    {
-      "title": "SenseNova-U1-8B GGUF: Run Multimodal AI on 8GB VRAM | HackerNoon",
-      "url": "https://hackernoon.com/sensenova-u1-8b-gguf-run-multimodal-ai-on-8gb-vram",
-      "snippet": "Download the GGUF model file (Q6 recommended for quality, Q4 for minimum VRAM usage) and place it in your ComfyUI models directory. Load ComfyUI and create a workflow using the SenseNova nodes:"
-    }
-  ]
+  "sources": []
 }

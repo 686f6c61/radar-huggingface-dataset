@@ -2,68 +2,85 @@
 
 ## Resumen
 
-Comfy-Org/Bernini-R es un repositorio que redistribuye los pesos del modelo Bernini-R de ByteDance, empaquetados específicamente para su uso directo en ComfyUI. El modelo original, alojado en ByteDance/Bernini-R, es un modelo de difusión de imagen o vídeo (según los nombres de archivo, parece orientado a vídeo, con variantes de ruido alto y bajo). Este repackaging no modifica el modelo en sí, sino que organiza los archivos en el formato de directorios que ComfyUI espera, facilitando la carga del modelo sin conversiones adicionales.
+Bernini-R es un modelo de difusion para generacion y edicion de video texto-a-video, desarrollado originalmente por ByteDance y redistribuido por Comfy-Org como un paquete de pesos en formato single-file para su uso directo en ComfyUI. El repositorio de Comfy-Org no contiene el modelo original, sino una reempaquetado de los pesos de `ByteDance/Bernini-R` en variantes fp16, fp8_scaled, int8_convrot y mxfp8, tanto para el componente de alto ruido como para el de bajo ruido, ademas de una variante ligera de 1.3B parametros basada en la arquitectura Wan 2.1.
 
-La relevancia de este repositorio radica en que simplifica la integración de Bernini-R en flujos de trabajo de ComfyUI, una de las interfaces más populares para generación de medios con modelos de difusión. Incluye múltiples cuantizaciones (fp16, fp8, int8, mxfp8) para adaptarse a diferentes capacidades de hardware. Sin embargo, la información técnica detallada del modelo (arquitectura, parámetros, contexto) no está disponible en esta model card, ya que se limita a instrucciones de instalación.
+El modelo se apoya en la familia Wan 2.2, como indican los nombres de fichero (`wan2.2_bernini_r_high_noise_*` y `wan2.2_bernini_r_low_noise_*`), lo que sugiere una arquitectura de difusion de video con dos etapas de ruido y un transformer de difusion como columna vertebral. La licencia Apache 2.0 facilita su adopcion comercial, y su integracion en ComfyUI mediante workflows predefinidos de edicion de video y de imagen lo convierte en una opcion practica para pipelines creativos.
+
+El repositorio acumula 68.935 descargas y 81 likes, con un tamano total de 150,1 GB, lo que refleja un modelo pesado orientado a produccion de video de alta fidelidad. La informacion publica disponible no detalla la longitud de contexto, los idiomas soportados ni los resultados de benchmarks, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusión, según tag `diffusion-single-model`) |
-| Parametros totales | no disponible (el archivo `wan2.1_bernini_1.3B_fp16.safetensors` sugiere 1.3B, pero no es confirmado) |
-| Parametros activos | no disponible |
+| Arquitectura | Difusion texto-a-video basada en Wan 2.2 (dos etapas de ruido, high/low noise); variante ligera basada en Wan 2.1 |
+| Parametros totales | no disponible (variante ligera: 1.3B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | fp16, fp8_scaled, int8_convrot, mxfp8 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (single-file para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados o las innovaciones técnicas del modelo Bernini-R en esta model card. El repositorio es únicamente un reempaquetado para ComfyUI. Los nombres de archivo (`wan2.1_bernini_1.3B`, `wan2.2_bernini_r_high_noise`, `wan2.2_bernini_r_low_noise`) sugieren que se trata de un modelo de difusión de vídeo basado en la familia Wan, con un mecanismo de dos etapas (ruido alto y bajo) típico de los modelos de vídeo de ByteDance, pero esto es una inferencia a partir de los nombres y no está confirmado en la documentación.
+La informacion disponible no describe en detalle la arquitectura interna ni el proceso de entrenamiento. Los nombres de los ficheros indican que Bernini-R se construye sobre la familia Wan 2.2 con un esquema de dos modelos de ruido (high noise y low noise), un patron habitual en modelos de difusion de video que separan la generacion de estructura global y el refinado de detalle. Tambien se incluye una variante `wan2.1_bernini_1.3B_fp16` de menor tamano, probablemente destinada a prototipado o a hardware mas modesto.
+
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. El repositorio de Comfy-Org es exclusivamente un reempaquetado de pesos para ComfyUI; la model card original de ByteDance no se ha incluido en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de imágenes o vídeo mediante difusión (según la naturaleza del modelo original, no confirmada).
-- Soporte para múltiples cuantizaciones (fp16, fp8, int8, mxfp8) que permiten ejecución en hardware con diferentes capacidades de VRAM.
-- Integración directa con ComfyUI, lo que permite usarlo en flujos de trabajo visuales sin necesidad de conversión de formatos.
-- No se documentan capacidades adicionales como tool calling, agentes, razonamiento o multilingüismo, ya que no es un modelo de lenguaje.
+- Generacion de video a partir de texto (text-to-video) mediante difusion.
+- Edicion de video guiada por prompt, con workflow especifico (`video_bernini_r_video_editing.json`).
+- Edicion de imagen guiada por prompt, con workflow especifico (`video_bernini_r_image_editing.json`).
+- Soporte de dos etapas de ruido (high noise / low noise) para mejorar la coherencia temporal y el detalle.
+- Multiples precisiones (fp16, fp8_scaled, int8_convrot, mxfp8) para adaptarse a distintos presupuestos de VRAM.
+- Integracion nativa con ComfyUI mediante ficheros single-file en `models/diffusion_models/`.
+- No se ha documentado soporte de tool calling, agentes, razonamiento multi-paso ni modo thinking, al tratarse de un modelo generativo de difusion y no de un LLM.
 
 ## Casos de uso
 
-- Generación de vídeo en ComfyUI: el modelo puede cargarse directamente en el nodo `UNETLoader` de ComfyUI usando los archivos `wan2.2_bernini_r_high_noise` y `wan2.2_bernini_r_low_noise` para generar secuencias de vídeo con el flujo de dos pasos (ruido alto y bajo).
-- Prototipado rápido de efectos visuales: al estar empaquetado para ComfyUI, permite experimentar con prompts y parámetros de muestreo sin escribir código, ideal para artistas y diseñadores.
-- Despliegue en entornos con VRAM limitada: las versiones cuantizadas (fp8, int8, mxfp8) permiten ejecutar el modelo en GPUs de consumo como RTX 3060 o RTX 4060 con menor consumo de memoria.
-- Investigación en generación de vídeo: los investigadores pueden comparar el comportamiento de Bernini-R con otros modelos de difusión de vídeo usando ComfyUI como plataforma de pruebas.
-- Integración en pipelines de postproducción: mediante la API de ComfyUI, se puede automatizar la generación de clips para proyectos de vídeo.
-- Fine-tuning o adaptación: aunque no se documenta, al ser un modelo de difusión, podría adaptarse con técnicas como LoRA, y el formato safetensors facilita su uso con herramientas de entrenamiento.
+- Edicion de video en postproduccion: el workflow `video_bernini_r_video_editing.json` permite modificar un clip existente mediante prompt, util para retoques de vestuario, entorno o estilo sin regrabar.
+- Edicion de imagen en flujos creativos: el workflow `video_bernini_r_image_editing.json` permite transformar imagenes (por ejemplo, cambios de estilo o de elementos) dentro de ComfyUI, con pares antes/despues documentados.
+- Generacion de clips para redes sociales: la variante de 1.3B en fp16 permite iterar rapidamente en GPUs de consumo antes de pasar a la variante completa de alta fidelidad.
+- Prototipado de anuncios y storyboards: la licencia Apache 2.0 y la integracion en ComfyUI facilitan generar variantes de video para revision creativa sin coste de licencia.
+- Previsualizacion de VFX en produccion audiovisual: el modelo puede generar plates o referencias animadas para equipos de efectos antes del render final.
+- Investigacion en difusion de video: la disponibilidad de pesos en fp16, fp8, int8 y mxfp8 permite estudiar el impacto de la cuantizacion en la calidad de generacion y edicion.
+- Automatizacion de contenido en pipelines ComfyUI: al ser single-file, se puede orquestar mediante la API de ComfyUI para generar lotes de clips o ediciones de forma programatica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni métricas de calidad de vídeo (FVD, IS, etc.) en esta model card.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. El archivo fp16 de 1.3B parámetros (si se confirma) requeriría aproximadamente 2.6 GB solo de pesos, pero el modelo de vídeo completo con dos ramas podría necesitar más. Las versiones cuantizadas reducen el consumo.
-- GPU recomendadas: no disponible. Por el tamaño del repo (150.1 GB) y las cuantizaciones, se espera que funcione en GPUs con al menos 8-12 GB de VRAM para las versiones fp8/int8, y más para fp16.
-- Compatibilidad con consumer GPU: probablemente sí, especialmente con las cuantizaciones int8 y mxfp8, pero no está confirmado.
-- Opciones de despliegue: ComfyUI (principal), y potencialmente otros frameworks que soporten safetensors de difusión, aunque no se documenta.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma oficial. El repositorio ocupa 150,1 GB e incluye variantes fp16, fp8_scaled, int8_convrot y mxfp8, lo que sugiere que la variante fp16 completa requiere GPUs de datacenter o workstations de gama alta, mientras que las variantes fp8/int8/mxfp8 reducen el requisito.
+- La variante `wan2.1_bernini_1.3B_fp16.safetensors` es la mas ligera y la mas probable para GPUs de consumo, aunque no se especifica la VRAM exacta.
+- GPU recomendadas: no disponible. Por el tamano del modelo, se espera que las variantes completas requieran A100, H100 o RTX 4090/5090 con 24 GB o mas; las variantes cuantizadas podrian caber en GPUs de 16-24 GB.
+- Opciones de despliegue: ComfyUI (soporte nativo mediante `models/diffusion_models/`). No se documenta soporte oficial de vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar Bernini-R con otros modelos de difusión de vídeo (como Wan 2.1, CogVideoX, etc.) en términos de parámetros, rendimiento o calidad. La model card no proporciona datos de referencia.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Bernini-R (Comfy-Org) | no disponible (variante 1.3B) | no disponible | Apache 2.0 | Hugging Face, ComfyUI | Difusion texto-a-video con edicion de video e imagen |
+| Wan 2.1 / Wan 2.2 (ByteDance) | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face | Familia base sobre la que se construye Bernini-R |
+| Alternativas texto-a-video | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- No hay información sobre sesgos, alucinaciones o limitaciones de contenido del modelo original.
-- El repositorio es solo un reempaquetado; la documentación técnica del modelo debe consultarse en ByteDance/Bernini-R.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo original por si hubiera restricciones adicionales.
-- El tamaño del repositorio (150.1 GB) implica un gran consumo de almacenamiento y ancho de banda para la descarga.
-- No se garantiza que las cuantizaciones int8 y mxfp8 mantengan la calidad del modelo original; es necesario validar en cada caso de uso.
+- No se dispone de informacion sobre sesgos conocidos del modelo.
+- Riesgo de alucinacion visual: como todo modelo generativo de difusion, puede producir contenido incoherente o no fiel al prompt, especialmente en escenas complejas o con muchos objetos.
+- No se documentan limitaciones de contexto ni de idioma; los idiomas soportados figuran como no disponibles.
+- El repositorio de Comfy-Org es un reempaquetado; la calidad y el comportamiento dependen del modelo original `ByteDance/Bernini-R`.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base original de ByteDance antes de desplegarlo en produccion.
+- El tamano del repositorio (150,1 GB) implica requisitos de almacenamiento y ancho de banda considerables para su descarga y despliegue.
+- No se han publicado benchmarks ni metricas de latencia, por lo que no es posible garantizar un rendimiento concreto en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Bernini-R
-- Repositorio original del modelo: https://huggingface.co/ByteDance/Bernini-R
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Bernini-R
+- Modelo base original: https://huggingface.co/ByteDance/Bernini-R
+- ComfyUI (GitHub): https://github.com/Comfy-Org/ComfyUI
+- Workflow de edicion de video: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_bernini_r_video_editing.json
+- Workflow de edicion de imagen: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_bernini_r_image_editing.json

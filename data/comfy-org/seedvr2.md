@@ -2,76 +2,84 @@
 
 ## Resumen
 
-SeedVR2 es un modelo de restauración y ampliación de imágenes y vídeo desarrollado por ByteDance Seed, presentado en el artículo arXiv:2506.05301. Se trata de un modelo de difusión de un solo paso que emplea entrenamiento adversarial contra datos reales para recuperar y mejorar la fidelidad de vídeos e imágenes, preservando la estructura original y añadiendo detalle. El repositorio Comfy-Org/SeedVR2 reempaqueta los pesos originales (variantes de 3B y 7B parámetros) en formatos optimizados para su uso directo en ComfyUI, incluyendo múltiples cuantizaciones y el VAE asociado.
+SeedVR2 es un modelo de restauración y superresolución de vídeo e imagen basado en difusión, desarrollado originalmente por ByteDance Seed. El repositorio `Comfy-Org/SeedVR2` no contiene el modelo original, sino una redistribución de los pesos convertidos al formato de archivo único que consume ComfyUI, herramienta de generación visual modular. La conversión se realizó con el script `seedvr2_convert.py` del repositorio `Comfy-Org/comfy-model-tools`.
 
-La relevancia actual del modelo radica en su capacidad de restauración de vídeo en un solo paso, lo que reduce drásticamente el coste computacional frente a los métodos de difusión multi-paso tradicionales. Al estar licenciado bajo Apache 2.0 y tener soporte nativo en ComfyUI, permite integrar restauración de alta calidad en flujos de trabajo de generación y postproducción de vídeo sin necesidad de infraestructura especializada.
+El modelo se publica en dos variantes de tamaño, 3B y 7B parámetros, y en una variante adicional de la familia 7B denominada `sharp`. Su función es tomar vídeo o imagen de baja calidad o baja resolución y reconstruir detalle de alta frecuencia mediante un proceso de difusión, lo que lo sitúa en la categoría de modelos de upscaling y restauración, no en la de modelos de lenguaje.
+
+La relevancia actual del repositorio radica en su empaquetado práctico: incluye los pesos en múltiples precisiones (fp16, fp8, int8, mxfp8 y nvfp4) y un VAE asociado, además de plantillas de workflow listas para usar. Con más de 835.000 descargas y licencia Apache 2.0, es una opción accesible para pipelines de postproducción y restauración de material audiovisual dentro del ecosistema ComfyUI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Diffusion Transformer (DiT) de un solo paso, con entrenamiento adversarial |
-| Parametros totales | 3B y 7B (dos variantes) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de vision, no de texto) |
+| Arquitectura | modelo de difusion para restauracion y superresolucion (detalles internos no disponibles) |
+| Parametros totales | 3B (variante 3B) y 7B (variantes 7B y 7B sharp) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (modelo de imagen/video, no de texto) |
 | Tipos de cuantizacion | fp16, fp8_e4m3fn, int8_convrot, mxfp8, nvfp4 |
-| Idiomas soportados | no aplicable (modelo de vision) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (archivo unico para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-SeedVR2 es un modelo de difusión de un solo paso diseñado para restauración de vídeo e imágenes. Emplea una arquitectura basada en Diffusion Transformer (DiT) y se entrena con un objetivo adversarial contra datos reales, lo que le permite generar resultados de alta fidelidad sin necesidad de múltiples pasos de denoising. El modelo acepta como entrada un vídeo o imagen degradada y produce una versión restaurada y ampliada, conservando la estructura semántica original mientras añade detalle de alta frecuencia.
+La informacion disponible no detalla la arquitectura interna del modelo mas alla de su naturaleza de difusion para restauracion de imagen y video. El repositorio redistribuye los pesos del modelo base `ByteDance-Seed/SeedVR2-3B` y `ByteDance-Seed/SeedVR2-7B`, convertidos a archivos safetensors de un solo fichero compatibles con ComfyUI. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
 
-Los detalles específicos del conjunto de datos de entrenamiento, el número de tokens procesados o el uso de técnicas como RLHF o DPO no se han publicado en la información disponible. El artículo técnico (arXiv:2506.05301) contiene la descripción completa del método, aunque no se ha accedido a su contenido en esta recopilación.
+El empaquetado incluye un VAE (`ema_vae_fp16.safetensors` y `seedvr2_ema_vae_fp16.safetensors`, que apuntan al mismo modelo) y quince archivos de pesos de difusion: cinco variantes de precision para el 3B, cinco para el 7B y cinco para el 7B sharp. La existencia de variantes int8 con rotacion de convolucion (`int8_convrot`), mxfp8 y nvfp4 indica un esfuerzo deliberado por ofrecer opciones de despliegue con distinto equilibrio entre calidad y consumo de VRAM. No se han documentado innovaciones tecnicas adicionales en la informacion disponible.
 
 ## Capacidades
 
-- Restauración de vídeo e imágenes: recupera contenido degradado, con ruido, borroso o de baja resolución.
-- Ampliación (upscaling) de alta fidelidad: aumenta la resolución manteniendo la estructura original.
-- Inferencia en un solo paso: reduce significativamente el coste computacional frente a métodos multi-paso.
-- Conservación de la estructura: el entrenamiento adversarial garantiza que la salida respete la composición y los detalles originales.
-- Integración nativa con ComfyUI: disponible como nodo estándar en la interfaz, con soporte para cuantizaciones variadas.
-- No es un modelo de lenguaje: no ofrece generación de texto, tool calling ni capacidades de agente.
+- Superresolucion de video: reconstruccion de detalle y aumento de resolucion en secuencias de video, con workflows especificos para la variante 3B en int8.
+- Superresolucion de imagen: aumento de resolucion de imagenes individuales, con workflows dedicados para las variantes 3B y 7B en int8.
+- Restauracion de detalle: el sufijo `sharp` en la familia 7B sugiere una variante orientada a una reconstruccion mas nitida, aunque no se documentan formalmente sus diferencias en la informacion disponible.
+- Multiples precisiones de inferencia: soporte de fp16, fp8, int8, mxfp8 y nvfp4 para adaptarse a distinta VRAM.
+- Integracion con ComfyUI: los pesos estan empaquetados para su uso directo en el nodo de difusion de ComfyUI, con plantillas de workflow incluidas.
+- No se dispone de informacion sobre tool calling, capacidades de agente, razonamiento multi-paso ni capacidades multilingues, ya que no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Restauración de archivos de vídeo antiguos: SeedVR2 puede limpiar y ampliar grabaciones históricas de baja calidad, eliminando ruido y artefactos de compresión, lo que resulta útil para archivos digitales y documentales.
-- Mejora de vídeo en producción audiovisual: en flujos de postproducción, el modelo permite upscaling de material grabado en resoluciones bajas a 4K o superior, manteniendo la coherencia temporal y el detalle.
-- Restauración de imágenes para fotografía: ampliación de fotografías antiguas o dañadas, con recuperación de texturas y reducción de grano.
-- Preprocesamiento para análisis de vídeo: antes de aplicar algoritmos de visión por computador (detección, seguimiento), SeedVR2 puede mejorar la calidad de la entrada, aumentando la precisión de los sistemas posteriores.
-- Mejora de vídeo generado por IA: los vídeos producidos por modelos de generación suelen tener baja resolución o artefactos; SeedVR2 los restaura y amplía para su uso en aplicaciones finales.
-- Integración en pipelines de ComfyUI: al ser un nodo nativo, puede combinarse con otros modelos de generación o edición para crear flujos completos de restauración y mejora de contenido visual.
+- Restauracion de archivo audiovisual: aplicar la variante 7B en fp16 sobre metraje historico o de baja resolucion para recuperar detalle antes de un remasterizado, usando el workflow de upscaling de video de ComfyUI.
+- Reescalado de material de produccion: subir de resolucion planos rodados a 1080p para entregas a 4K, eligiendo la variante int8 o fp8 si la VRAM de la estacion de trabajo es limitada.
+- Postproduccion de imagen fija: ampliar fotografias o renders de baja resolucion con el workflow de imagen 7B int8, util para ilustracion, concept art o material de marketing.
+- Previsualizacion en tiempo casi real: usar la variante 3B en int8 o nvfp4 en GPUs de consumo para generar previews de upscaling antes de lanzar el render final con el 7B.
+- Pipelines automatizados de contenido: integrar el nodo de SeedVR2 en flujos de ComfyUI que procesen lotes de imagenes o clips de forma desatendida, aprovechando que los pesos son de archivo unico y carga directa.
+- Restauracion de video generado por IA: corregir artefactos y baja resolucion en salidas de modelos de generacion de video, encadenando el modelo generador y SeedVR2 en el mismo grafo de ComfyUI.
+- Investigacion en restauracion con difusion: comparar el comportamiento de las variantes 3B, 7B y 7B sharp, y de las distintas precisiones, sobre un mismo conjunto de validacion, gracias a la disponibilidad de todos los pesos en un unico repositorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El articulo arXiv:2506.05301 podria contener evaluaciones cuantitativas, pero no se ha accedido a su contenido en esta recopilacion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no se han publicado cifras oficiales. Como referencia orientativa, un modelo de 7B parámetros en fp16 requiere aproximadamente 14-16 GB de VRAM solo para los pesos, más el VAE y los tensores intermedios. Las versiones cuantizadas (fp8, int8, nvfp4) reducen el consumo, pudiendo situarse en torno a 8-10 GB para la variante de 7B y menos para la de 3B.
-- GPU recomendadas: para la variante de 7B en fp16 se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090/4090, A5000). Las cuantizaciones fp8 o int8 pueden ejecutarse en GPUs de 16 GB (RTX 4080, A4000). La variante de 3B es más accesible y puede funcionar en GPUs de 12 GB.
-- En consumer GPU: la variante de 3B cuantizada puede ejecutarse en GPUs de gama media (RTX 3060 12GB o superior). La de 7B requiere GPUs de gama alta.
-- Opciones de despliegue: ComfyUI es el entorno principal, con soporte nativo. También puede integrarse mediante el script de conversión de Comfy-Org/comfy-model-tools para otros frameworks, aunque no se documentan alternativas como vLLM u Ollama (al ser un modelo de difusión, no un LLM).
-- Latencia y throughput: no se han publicado datos concretos. Al ser un modelo de un solo paso, la latencia es significativamente menor que la de métodos multi-paso, pero depende de la GPU y la resolución de entrada.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa por tamano de pesos, el 3B en fp16 ocupa aproximadamente 6 GB solo en pesos, y el 7B en fp16 aproximadamente 14 GB; a ello hay que sumar el VAE y las activaciones, por lo que el consumo real sera superior.
+- Variantes de baja precision: las versiones fp8, int8, mxfp8 y nvfp4 reducen el peso de los pesos a la mitad o menos, lo que permite ajustar el modelo a GPUs con menos memoria.
+- GPUs recomendadas: no especificadas en la informacion disponible. Por tamano, el 3B en precisiones reducidas es candidato a GPUs de consumo tipo RTX 4090; el 7B en fp16 requiere GPUs de mayor memoria (A100, H100 o similares).
+- Cabe en GPU de consumo: probable para el 3B en int8/fp8/nvfp4 segun el tamano de pesos, aunque no hay confirmacion oficial de VRAM pico.
+- Opciones de despliegue: ComfyUI es el entorno previsto, con workflows oficiales para video e imagen. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para establecer una comparativa rigurosa con otros modelos de restauración de vídeo. Se recomienda consultar el articulo arXiv:2506.05301 para obtener evaluaciones frente a alternativas como Real-ESRGAN, BasicVSR o modelos de difusión multi-paso.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de restauracion o superresolucion con los que establecer una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos, pero al ser un modelo entrenado con datos visuales, puede presentar artefactos en contenidos atípicos o de baja representación.
-- Riesgo de alucinación visual: aunque el entrenamiento adversarial reduce la invención de detalles, en entradas muy degradadas el modelo podría generar texturas o elementos no presentes en el original.
-- Limitaciones de resolución: el modelo está diseñado para un rango de ampliación determinado; ampliaciones extremas pueden degradar la calidad.
-- Dependencia de ComfyUI: el repositorio reempaquetado está orientado a ComfyUI; su uso fuera de este entorno requiere conversión adicional.
-- Requisitos de hardware: las variantes de 7B en fp16 exigen GPUs de alta gama, lo que limita su uso en entornos sin recursos suficientes.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero es recomendable revisar los términos del repositorio original de ByteDance-Seed para confirmar que no hay restricciones adicionales.
+- Es un modelo de restauracion y superresolucion, no un modelo de lenguaje: no genera texto, no soporta tool calling ni razonamiento multi-paso.
+- No se documentan sesgos conocidos, pero al ser un modelo de difusion entrenado con datos no especificados, puede introducir detalle inventado o artefactos en zonas de baja informacion.
+- Riesgo de alucinacion visual: la difusion puede reconstruir texturas o rasgos que no estaban en la imagen original, algo critico en contextos forenses o de archivo documental.
+- No se especifican los idiomas soportados ni limitaciones de contexto, ya que no aplica al ser un modelo de imagen y video.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los modelos base originales de ByteDance Seed antes de un despliegue en produccion.
+- El repositorio es una redistribucion de terceros (Comfy-Org), no la publicacion oficial del autor del modelo; para detalles de entrenamiento y limitaciones conviene consultar los repositorios originales.
+- El tamano del repositorio es de 129,4 GB, lo que exige planificar el almacenamiento y descargar solo las variantes de precision necesarias.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/SeedVR2
-- Repositorio original (ByteDance-Seed): https://huggingface.co/ByteDance-Seed/SeedVR2-3B y https://huggingface.co/ByteDance-Seed/SeedVR2-7B
-- Articulo tecnico: https://arxiv.org/abs/2506.05301
-- Documentacion de ComfyUI: https://docs.comfy.org/tutorials/utility/seedvr2
-- Herramienta de conversion: https://github.com/Comfy-Org/comfy-model-tools
+- Modelo base 3B: https://huggingface.co/ByteDance-Seed/SeedVR2-3B
+- Modelo base 7B: https://huggingface.co/ByteDance-Seed/SeedVR2-7B
+- Herramientas de conversion: https://github.com/Comfy-Org/comfy-model-tools
+- ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Workflow de upscaling de video 3B int8: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/utility_seedvr2_3b_int8_upscale_video.json
+- Workflow de upscaling de imagen 7B int8: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/utility_seedvr2_7b_int8_upscale_image.json
+- Workflow de upscaling de imagen 3B int8: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/utility_seedvr2_3b_int8_upscale_image.json

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "JASON-LUO-1/whisper-small.en",
+  "slug": "jason-luo-1-whisper-small-en",
+  "author": "JASON-LUO-1",
+  "url": "https://huggingface.co/JASON-LUO-1/whisper-small.en",
+  "created_at": "2026-11-18T02:09:10.000Z",
+  "updated_at": "2026-11-18T02:09:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "whisper",
+    "audio",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "en",
+    "arxiv:2212.04356",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734144,
+  "parameters_human": "241.7M",
+  "storage_bytes": 3868521822,
+  "storage_human": "3.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

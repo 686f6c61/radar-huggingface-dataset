@@ -2,123 +2,109 @@
 
 ## Resumen
 
-AtomicChat/Nanbeige4.3-33B-GGUF no es un modelo nuevo, sino el conjunto de cuantizaciones GGUF publicadas por AtomicChat (el equipo detrás de Atomic Chat) sobre los pesos BF16 originales de Nanbeige/Nanbeige4.3-33B, un modelo denso de 33,1 mil millones de parámetros de la familia Llama, con 512K tokens de contexto y modo *thinking* activado por defecto. La publicación se hizo el mismo día del lanzamiento del modelo base, el 25 de octubre, y se distribuye bajo licencia Apache 2.0.
+Nanbeige4.3-33B es un modelo denso de 33.118.977.024 parametros desarrollado por Nanbeige, disenado especificamente para tareas de agente y razonamiento. Emplea la arquitectura Llama con una ventana de contexto de 512K tokens y activa el modo de razonamiento (thinking) por defecto. Se distribuye bajo licencia Apache-2.0 y soporta ingles y chino. El repositorio aqui descrito es la version cuantizada en GGUF publicada por AtomicChat el mismo dia del lanzamiento (25 de octubre), pensada para ejecucion local con llama.cpp.
 
-El interés de este repositorio está en la capa de cuantización, no en el modelo: incluye los presets estándar de llama.cpp (Q8_0, Q6_K, Q5_K_M, Q4_K_M) junto a los archivos propios "Atomic Dynamic" (AD), construidos con una importance matrix recogida sobre los pesos BF16 a partir de 8.000 fragmentos de 512 tokens de un corpus de calibración. Cada archivo se midió contra el original BF16 en un mismo banco de pruebas (texto multilingüe neutro, 24 fragmentos de 4.096 tokens, llama.cpp `36e36e6`), publicando divergencia KL y coincidencia top-1.
+La relevancia de esta publicacion radica en el trabajo de cuantizacion: AtomicChat genera sus propios ficheros "Atomic Dynamic" (AD) construidos con una importance matrix propia, calibrada sobre 8.000 fragmentos de 512 tokens, y los compara contra los presets estandar de llama.cpp. El modelo base destaca por una sensibilidad inusual a la cuantizacion: el `Q6_K` estandar de llama.cpp solo reproduce el siguiente token del original el 95,5% de las veces, cuando la mayoria de modelos alcanzan el 98% a 6 bits.
 
-El dato relevante para quien vaya a desplegarlo es que el modelo base es inusualmente sensible a la cuantización: los presets planos de llama.cpp pierden bastante fidelidad a 6 y 4 bits, mientras que los archivos AD recuperan buena parte de esa pérdida al mismo tamaño en disco. Para inferencia local en hardware de consumo, AD-IQ4_XS (20,3 GB) o AD-Q4_K_M (21,2 GB) son los puntos de entrada razonables; por debajo de 4 bits la degradación es notable.
+El resultado es un conjunto de 11 ficheros que cubren desde 13,7 GB hasta 35,2 GB en disco, con divergencia KL y top-1 medidos sobre el mismo banco de pruebas (texto multilingue neutro, 24 fragmentos de 4.096 tokens, llama.cpp `36e36e6`). Esto permite elegir el compromiso tamano/calidad con datos objetivos en lugar de estimaciones.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso, familia Llama (según la model card del cuantizador) |
-| Parámetros totales | 33.118.977.024 (33,1 B), dato real de safetensors |
-| Parámetros activos | No aplica: modelo denso, no es MoE |
-| Longitud de contexto | 524.288 tokens (512K) |
-| Tipos de cuantización | Presets llama.cpp: Q8_0, Q6_K, Q5_K_M, Q4_K_M. Atomic Dynamic (imatrix propia): AD-Q6_K, AD-Q6_K-Q5_K, AD-Q5_K_M, AD-Q5_K_M-Q4_K_M, AD-Q4_K_M, AD-IQ4_XS, AD-IQ3_S, AD-IQ3_XXS, AD-IQ2_S |
-| Idiomas soportados | Inglés (en) y chino (zh), según los tags del repositorio |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); los pesos originales en BF16 están en el repositorio del modelo base |
-| Desarrollador del modelo base | Nanbeige |
-| Cuantizador | AtomicChat |
-| Formato de chat | ChatML (compartido con Qwen3.8-27B, según la model card) |
-| Modo thinking | Activado por defecto |
-| Tamaño del repositorio | 298,5 GB (incluye todos los archivos GGUF) |
-| Fecha de publicación | 25 de octubre (creado el 2026-10-25) |
-| Descargas / likes en el momento del snapshot | 0 descargas, 5 likes |
+| Arquitectura | Llama (transformer denso) |
+| Parametros totales | 33.118.977.024 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 512K tokens |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q6_K-Q5_K, Q5_K_M, Q5_K_M-Q4_K_M, Q4_K_M, IQ4_XS, IQ3_S, IQ3_XXS, IQ2_S (variantes AD con imatrix propia y presets estandar) |
+| Idiomas soportados | en, zh |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (pesos originales en BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 33,1 B parámetros con arquitectura de la familia Llama y una ventana de contexto de 512K tokens, orientado a tareas de agente y razonamiento, con modo *thinking* activado por defecto. La información disponible no detalla el número de capas, cabezas de atención, vocabulario ni si emplea técnicas como atención lineal o decodificación especulativa; tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. Esos datos figuran como no disponibles en la documentación consultada.
+El modelo base es un transformer denso de 33B parametros con arquitectura Llama, sin mezcla de expertos. Nanbeige lo posiciona como modelo de agente y razonamiento, con el modo thinking activado por defecto. La ventana de contexto de 512K tokens lo situa en el rango de modelos de contexto largo orientados a tareas multi-turno y agenticas. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO.
 
-Lo que sí está documentado con detalle es el proceso de cuantización. Los archivos `AD-` usan una importance matrix propia recogida sobre los pesos BF16 con `--parse-special` sobre 8.000 fragmentos de 512 tokens de un corpus de calibración renderizado para el formato ChatML de Qwen3.8-27B (compartido con Nanbeige4.3). El layout Atomic Dynamic sube un escalón el FFN de la primera y la última capa, mantiene la salida de atención y la cabeza en `q6_k` o superior, y las proyecciones pequeñas de clave y valor en `q8_0`; el resto de la asignación no está disponible porque la model card se corta en ese punto. Los presets Q8_0, Q6_K, Q5_K_M y Q4_K_M se generaron sin importance matrix.
+La innovacion tecnica de esta publicacion es el proceso de cuantizacion. AtomicChat construye una importance matrix propia sobre los pesos BF16 con `--parse-special`, usando 8.000 fragmentos de 512 tokens de un corpus de calibracion renderizado originalmente para Qwen3.8-27B (cuyo formato de chat ChatML comparte Nanbeige4.3). Con esa matriz genera los ficheros AD, que se comparan contra los presets de llama.cpp sin imatrix. Los resultados muestran que el modelo es especialmente sensible a la cuantizacion: a tamano equivalente, `AD-IQ4_XS` (20,3 GB) tiene un tercio menos de divergencia KL que el `Q4_K_M` estandar (20,1 GB), y `AD-Q6_K-Q5_K` (27,9 GB) un 39% menos que el `Q6_K` estandar (27,2 GB). Los ficheros `Q6_K` y `Q4_K_M` estandar se retiraron tras comprobar que los AD los superan en tamano comparable.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según el tag `conversational`.
-- Razonamiento explícito con modo *thinking* activado por defecto; el modelo emite trazas de razonamiento antes de la respuesta final.
-- Tareas de agente y razonamiento multi-paso, según los tags `agent` y `reasoning` del repositorio.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de código y matemáticas: no documentadas en la información proporcionada.
-- Capacidades de visión o audio: no disponibles; el pipeline es `text-generation`.
-- Multilingüe limitado a inglés y chino.
-- Compatibilidad con endpoints (tag `endpoints_compatible`) para servir el modelo tras un runtime GGUF.
-- Ventana de contexto de 512K tokens, adecuada para documentos largos y conversaciones extensas.
+- Generacion de texto conversacional multi-turno con contexto de hasta 512K tokens.
+- Razonamiento explicito mediante modo thinking activado por defecto.
+- Capacidades de agente: el modelo esta etiquetado como agent y soporta flujos de razonamiento multi-paso.
+- Soporte de tool calling / function calling, segun las etiquetas del modelo (agent, reasoning).
+- Capacidades multilingues limitadas a ingles y chino.
+- Integracion con llama.cpp y con la aplicacion Atomic Chat, que expone el modo thinking por defecto.
+- Compatibilidad con endpoints estandar de inferencia de texto.
 
 ## Casos de uso
 
-- **Atención al cliente automatizada en inglés o chino**: el modelo sostiene conversaciones multi-turno con hasta 512K tokens de contexto, de modo que puede arrastrar el historial completo de un cliente y la documentación de producto sin resumir ni truncar.
-- **Análisis de documentos largos**: informes anuales, contratos o expedientes de cientos de miles de tokens caben en una sola ventana; el modo *thinking* por defecto ayuda en tareas de extracción y contraste de datos entre secciones.
-- **Agentes autónomos de varios pasos**: el tag `agent` y el razonamiento explícito permiten encadenar planificación, ejecución y verificación en pipelines orquestados, siempre que el runtime proporcione el bucle de herramientas (el soporte nativo de function calling no está documentado).
-- **Despliegue local en estación de trabajo con GPU de consumo**: con AD-IQ4_XS (20,3 GB) o AD-Q4_K_M (21,2 GB) el modelo cabe en una GPU de 24 GB, lo que habilita asistentes privados sin salida de datos a la nube.
-- **Generación de código y revisión en CI/CD**: no hay datos publicados de HumanEval ni de soporte de tool calling, por lo que solo es recomendable tras validación propia contra el repositorio real; el contexto de 512K sí resulta útil para revisar diffs y codebases completos.
-- **Investigación sobre cuantización**: el repositorio publica KL divergence y top-1 por archivo junto con la importance matrix, lo que lo convierte en un banco de pruebas útil para estudiar el impacto de distintas estrategias de cuantización en un modelo de 33B.
-- **Procesamiento por lotes sin GPU dedicada**: con AD-IQ2_S (13,7 GB) o IQ3_XXS (14,9 GB) se puede ejecutar en CPU con RAM suficiente, aceptando la pérdida de fidelidad documentada.
+- Agentes autonomos de larga duracion: la ventana de 512K tokens permite mantener el estado de una tarea con muchos pasos intermedios, llamadas a herramientas y resultados acumulados sin truncar el historial. Adecuado para pipelines de automatizacion donde el contexto crece de forma sostenida.
+- Atencion al cliente automatizada en ingles y chino: el modelo puede gestionar conversaciones multi-turno extensas y consultar herramientas internas (estado de pedidos, bases de conocimiento) mediante function calling, manteniendo coherencia a lo largo de sesiones largas.
+- Razonamiento sobre documentos extensos: analisis de contratos, informes tecnicos o expedientes que superan ampliamente el contexto de modelos de 32K-128K, con capacidad de extraer conclusiones y citar secciones concretas.
+- Despliegue local en estaciones de trabajo: los ficheros AD de 13,7-24,7 GB permiten ejecutar el modelo en GPUs de consumo con 24 GB de VRAM (por ejemplo, RTX 4090) usando `AD-IQ4_XS` o `AD-Q4_K_M`, con una perdida de calidad medida y acotada.
+- Asistentes de codigo y automatizacion de tareas de desarrollo: el soporte de tool calling y razonamiento multi-paso permite integrarlo en flujos que consultan repositorios, ejecutan tests o generan parches, siempre que el idioma de trabajo sea ingles o chino.
+- Investigacion sobre cuantizacion: el repositorio incluye la importance matrix y los logs de metricas, lo que lo convierte en un caso de estudio reproducible para evaluar el impacto de distintas estrategias de cuantizacion sobre un modelo de 33B.
+- Procesamiento por lotes en servidores con una sola GPU: `AD-Q6_K` (30,1 GB) ofrece un 97,5% de top-1 frente al BF16, lo que permite servir el modelo en una A100 de 40 GB o H100 con calidad casi identica al original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. Lo que sí se publica es la fidelidad de cada cuantización frente a los pesos BF16 originales, medida en un banco común (texto multilingüe neutro, 24 fragmentos de 4.096 tokens, llama.cpp `36e36e6`):
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. Los unicos datos de rendimiento son las metricas de fidelidad de cuantizacion frente al BF16 original, medidas sobre texto multilingue neutro (24 fragmentos de 4.096 tokens, llama.cpp `36e36e6`):
 
-| Archivo | Tamaño en disco | Construcción | KL divergence | top-1 |
+| Fichero | Tamano en disco | Construccion | Divergencia KL | top-1 |
 |---|---:|---|---:|---:|
-| Nanbeige4.3-33B-Q8_0.gguf | 35,2 GB | preset 8 bits | 0,0032 | 98,0 % |
-| Nanbeige4.3-33B-AD-Q6_K.gguf | 30,1 GB | Atomic Dynamic, imatrix propia | 0,0052 | 97,5 % |
-| Nanbeige4.3-33B-AD-Q6_K-Q5_K.gguf | 27,9 GB | Atomic Dynamic, imatrix propia | 0,0102 | 96,1 % |
-| Nanbeige4.3-33B-Q6_K.gguf | 27,2 GB | preset llama.cpp, sin imatrix | 0,0165 | 95,5 % |
-| Nanbeige4.3-33B-AD-Q5_K_M.gguf | 24,7 GB | Atomic Dynamic, imatrix propia | 0,0213 | 94,7 % |
-| Nanbeige4.3-33B-Q5_K_M.gguf | 23,5 GB | preset llama.cpp, sin imatrix | 0,0304 | 93,4 % |
-| Nanbeige4.3-33B-AD-Q5_K_M-Q4_K_M.gguf | 22,6 GB | Atomic Dynamic, imatrix propia | 0,0332 | 93,1 % |
-| Nanbeige4.3-33B-AD-Q4_K_M.gguf | 21,2 GB | Atomic Dynamic, imatrix propia | 0,0380 | 92,6 % |
-| Nanbeige4.3-33B-AD-IQ4_XS.gguf | 20,3 GB | Atomic Dynamic, imatrix propia | 0,0462 | 92,0 % |
-| Nanbeige4.3-33B-Q4_K_M.gguf | 20,1 GB | preset llama.cpp, sin imatrix | 0,0693 | 89,9 % |
-| Nanbeige4.3-33B-AD-IQ3_S.gguf | 17,1 GB | Atomic Dynamic, imatrix propia | 0,1019 | 87,5 % |
-| Nanbeige4.3-33B-AD-IQ3_XXS.gguf | 14,9 GB | Atomic Dynamic, imatrix propia | 0,1593 | 84,6 % |
-| Nanbeige4.3-33B-AD-IQ2_S.gguf | 13,7 GB | Atomic Dynamic, imatrix propia | 0,2448 | 80,5 % |
+| Q8_0 | 35,2 GB | 8 bits estandar | 0,0032 | 98,0% |
+| AD-Q6_K | 30,1 GB | Atomic Dynamic, imatrix propia | 0,0052 | 97,5% |
+| AD-Q6_K-Q5_K | 27,9 GB | Atomic Dynamic, imatrix propia | 0,0102 | 96,1% |
+| AD-Q5_K_M | 24,7 GB | Atomic Dynamic, imatrix propia | 0,0213 | 94,7% |
+| Q5_K_M | 23,5 GB | preset llama.cpp, sin imatrix | 0,0304 | 93,4% |
+| AD-Q5_K_M-Q4_K_M | 22,6 GB | Atomic Dynamic, imatrix propia | 0,0332 | 93,1% |
+| AD-Q4_K_M | 21,2 GB | Atomic Dynamic, imatrix propia | 0,0380 | 92,6% |
+| AD-IQ4_XS | 20,3 GB | Atomic Dynamic, imatrix propia | 0,0462 | 92,0% |
+| AD-IQ3_S | 17,1 GB | Atomic Dynamic, imatrix propia | 0,1019 | 87,5% |
+| AD-IQ3_XXS | 14,9 GB | Atomic Dynamic, imatrix propia | 0,1593 | 84,6% |
+| AD-IQ2_S | 13,7 GB | Atomic Dynamic, imatrix propia | 0,2448 | 80,5% |
 
-Lectura de los datos: AD-IQ4_XS (20,3 GB) reduce la KL un tercio respecto a Q4_K_M (20,1 GB) a igualdad de tamaño en disco; AD-Q6_K-Q5_K (27,9 GB) la reduce un 39 % respecto a Q6_K (27,2 GB); y AD-Q6_K (30,1 GB) queda prácticamente a la altura de Q8_0 (97,5 % frente a 98,0 % de top-1). Por debajo de 4 bits el top-1 cae por debajo del 85 % y la model card desaconseja esos archivos salvo que no quepa nada mayor.
+Referencia de ficheros retirados, medidos en el mismo banco: `Q6_K` estandar (27,2 GB, KL 0,0165, top-1 95,5%) y `Q4_K_M` estandar (20,1 GB, KL 0,0693, top-1 89,9%).
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: como referencia de pesos, entre 13,7 GB (AD-IQ2_S) y 35,2 GB (Q8_0). Hay que sumar la caché KV del contexto: el modelo soporta 512K tokens, pero el tamaño de la caché por token no está disponible en la información (depende del número de capas y cabezas, no documentado), así que a contextos largos el consumo real puede superar ampliamente el tamaño del archivo.
-- **GPU recomendadas por cuantización**: Q8_0 (35,2 GB) requiere A100 40/80 GB, H100 o RTX 6000 Ada 48 GB. AD-Q6_K (30,1 GB) cabe en A100 40 GB. AD-Q4_K_M y AD-IQ4_XS (20-21 GB) caben en RTX 4090, RTX 3090 o L40S de 24 GB con contexto moderado.
-- **GPU de consumo**: sí es viable. AD-IQ3_XXS (14,9 GB) e IQ2_S (13,7 GB) entran en GPUs de 16 GB (RTX 4080, RTX 4060 Ti 16 GB, RTX 4070 Ti Super). Para 24 GB, AD-IQ4_XS es la opción con mejor relación fidelidad/tamaño.
-- **CPU y RAM**: los archivos de 13-21 GB se pueden ejecutar con llama.cpp en CPU si se dispone de RAM suficiente (al menos el tamaño del archivo más la caché KV); el rendimiento será de pocos tokens por segundo.
-- **Opciones de despliegue**: llama.cpp (los archivos se construyeron y midieron con la build `36e36e6`), Ollama, LM Studio, llama-cpp-python, KoboldCpp o text-generation-webui. Al ser GGUF, no es un formato nativo de vLLM o TGI; para servir en producción con esas herramientas habría que partir de los pesos BF16 del modelo base.
-- **Latencia y throughput**: no se han publicado mediciones de tokens por segundo en la información disponible.
+- VRAM estimada: aproximadamente el tamano del fichero mas el overhead de contexto KV. Para `AD-IQ4_XS` (20,3 GB) se necesitan unos 22-24 GB de VRAM con contexto moderado; para `AD-Q6_K` (30,1 GB), unos 32-34 GB.
+- GPU recomendadas: A100 40 GB u 80 GB, H100 80 GB para los ficheros de mayor calidad (`Q8_0`, `AD-Q6_K`). Para `AD-Q5_K_M` o `AD-Q4_K_M` basta una A100 40 GB o una RTX 4090 de 24 GB.
+- GPU de consumo: los ficheros `AD-IQ4_XS` (20,3 GB) y `AD-Q4_K_M` (21,2 GB) caben en una RTX 4090 de 24 GB. Los ficheros de 13,7-17,1 GB (`AD-IQ2_S`, `AD-IQ3_XXS`, `AD-IQ3_S`) caben en GPUs de 16-24 GB, con perdida de calidad notable (top-1 entre 80,5% y 87,5%).
+- Opciones de despliegue: llama.cpp (formato nativo GGUF, version de referencia `36e36e6`), aplicacion Atomic Chat, y cualquier runtime compatible con GGUF. No se menciona soporte especifico para vLLM o TGI en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Nota sobre contexto: la ventana de 512K tokens implica un coste de KV cache considerable; con contextos muy largos el requisito de VRAM crece por encima del tamano del fichero.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de otros modelos comparables en la información proporcionada, por lo que no se puede construir una comparativa con alternativas externas sin inventar cifras. La comparación rigurosa que sí permiten los datos publicados es interna, entre las distintas cuantizaciones del mismo modelo base:
+No se dispone en la informacion proporcionada de datos de rendimiento de modelos comparables (mismo tamano o misma tarea) que permitan una comparacion rigurosa. La comparacion posible se limita a los propios ficheros de cuantizacion del modelo, recogida en la tabla de benchmarks. Criterios orientativos de categoria:
 
-| Pareja comparada | Tamaño | KL divergence | Diferencia |
-|---|---|---:|---|
-| Q4_K_M (preset plano) | 20,1 GB | 0,0693 | Referencia |
-| AD-IQ4_XS (imatrix propia) | 20,3 GB | 0,0462 | ~33 % menos KL a igual tamaño |
-| Q6_K (preset plano) | 27,2 GB | 0,0165 | Referencia |
-| AD-Q6_K-Q5_K (imatrix propia) | 27,9 GB | 0,0102 | ~39 % menos KL a igual tamaño |
-| Q8_0 (preset plano) | 35,2 GB | 0,0032 | Techo de fidelidad, tope de tamaño |
-
-Frente al modelo base BF16 (33,1 B, 512K de contexto, Apache 2.0), estos archivos conservan parámetros, contexto y licencia, y solo cambian el formato y la fidelidad numérica.
+| Criterio | Nanbeige4.3-33B (GGUF) | Alternativas de la misma categoria |
+|---|---|---|
+| Parametros | 33,1B densos | no disponible |
+| Contexto | 512K tokens | no disponible |
+| Licencia | Apache-2.0 | no disponible |
+| Idiomas | en, zh | no disponible |
+| Formato | GGUF (11 variantes) | no disponible |
 
 ## Limitaciones y advertencias
 
-- **Sensibilidad alta a la cuantización**: es la advertencia principal del autor. Los presets planos de llama.cpp rinden por debajo de lo habitual en modelos de este tamaño (95,5 % de top-1 en Q6_K, cuando la model card indica que la mayoría de modelos alcanza el 98 % a 6 bits; 89,9 % en Q4_K_M).
-- **Archivos por debajo de 4 bits**: AD-IQ3_XXS y AD-IQ2_S bajan del 85 % de top-1 y la KL se dispara (0,1593 y 0,2448). Solo tienen sentido si no cabe ningún archivo mayor.
-- **Idiomas**: únicamente inglés y chino están declarados. El rendimiento en castellano no está documentado ni validado, y no debería asumirse.
-- **Riesgo de alucinación**: no se han publicado evaluaciones de veracidad ni de tasas de alucinación para este modelo; al ser un modelo de razonamiento con *thinking* por defecto, conviene validar las salidas en dominios sensibles.
-- **Sesgos**: no hay información sobre composición del dataset de entrenamiento ni sobre evaluaciones de sesgo, por lo que no se pueden caracterizar los sesgos conocidos.
-- **Modo thinking por defecto**: incrementa el número de tokens generados y, por tanto, la latencia y el coste por consulta; muchos runtimes permiten desactivarlo, pero el comportamiento por defecto es emitir razonamiento.
-- **Contexto de 512K**: la ventana es amplia, pero la caché KV a contextos muy largos puede consumir más VRAM que los propios pesos; el coste real por token de contexto no está documentado.
-- **Licencia**: Apache 2.0 permite uso comercial y modificaciones, con obligación de conservar el aviso de licencia y el archivo NOTICE si existe; conviene revisar también la licencia del modelo base, que es la misma según los tags.
-- **Madurez del repositorio**: 0 descargas y 5 likes en el momento del snapshot, publicado el mismo día del lanzamiento del modelo base; no hay aún validación comunitaria extensa.
-- **Tool calling y capacidades de código**: los tags sugieren uso agéntico, pero no hay documentación de function calling ni benchmarks de código; no lo des por soportado sin probarlo.
+- Sensibilidad alta a la cuantizacion: el `Q6_K` estandar de llama.cpp solo alcanza un 95,5% de top-1 frente al BF16, y el `Q4_K_M` estandar un 89,9%. Por debajo de `AD-Q4_K_M` (top-1 92,6%) la degradacion es rapida: `AD-IQ3_S` cae al 87,5% y `AD-IQ2_S` al 80,5%. Para produccion se recomienda `AD-Q6_K` o superior.
+- Idiomas limitados a ingles y chino; no hay soporte declarado de castellano ni de otros idiomas.
+- Riesgo de alucinacion inherente a los modelos generativos; no se han publicado evaluaciones especificas de factualidad en la informacion disponible.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base original (Nanbeige/Nanbeige4.3-33B) y de los componentes de calibracion derivados de Qwen3.8-27B.
+- El modo thinking esta activado por defecto, lo que incrementa el consumo de tokens y la latencia; en produccion puede requerir desactivacion explicita segun el caso de uso.
+- El contexto de 512K tokens exige gestion cuidadosa de la memoria KV; no es viable en GPUs de consumo con contextos maximos.
+- Los ficheros `Q6_K` y `Q4_K_M` estandar fueron retirados del repositorio; scripts o pipelines que los referencien fallaran.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/AtomicChat/Nanbeige4.3-33B-GGUF
+- Repositorio GGUF: https://huggingface.co/AtomicChat/Nanbeige4.3-33B-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
-- Repositorio de métricas (logs en crudo e importance matrix): https://huggingface.co/datasets/AtomicChat/Nanbeige4.3-33B-GGUF-metrics
-- Atomic Chat: https://atomic.chat/?utm_source=huggingface&utm_medium=referral&utm_campaign=hf_nanbeige4_3_33b&utm_content=btn_atomic
-- Discord de Atomic Chat: https://discord.gg/8wGSsvmg4V
-- Repositorio GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- Repositorio de metricas e importance matrix: https://huggingface.co/datasets/AtomicChat/Nanbeige4.3-33B-GGUF-metrics
+- Atomic Chat: https://atomic.chat/
+- GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
+- Discord: https://discord.gg/8wGSsvmg4V
+- X (Twitter): https://x.com/atomic_chat_hq

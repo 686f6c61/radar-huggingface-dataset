@@ -2,104 +2,102 @@
 
 ## Resumen
 
-MAPLE: Gemma 4 26B-A4B Sub-5GB es una compresión extrema del modelo multimodal Gemma 4 26B-A4B de Google DeepMind, publicada por AmSach (Aman Sachan, Independent Systems Research) bajo licencia Apache 2.0. El checkpoint distribuido en formato GGUF ocupa 4,75 GB y aplica una técnica propia de poda de expertos en modelos MoE denominada MAPLE (Manifold-Activated Pruning of Latent Experts), que reduce el modelo original de 128 expertos por capa a 48, eliminando 80 expertos considerados dormidos para el dominio objetivo.
+MAPLE (Manifold-Activated Pruning of Latent Experts) es una técnica de compresión estructural para modelos de mezcla de expertos (MoE) desarrollada por Aman Sachan (Independent Systems Research). Esta ficha describe la implementación de referencia publicada sobre `google/gemma-4-26B-A4B-it`, que reduce el modelo original de 9,92 GB a 4,75 GB mediante la poda de 80 de sus 128 expertos, seleccionados a partir del perfil de activación empírico sobre un corpus técnico (algoritmos en Python, estructuras de datos y lógica STEM). El resultado es un GGUF IQ2_XXS que cabe íntegramente en la VRAM de una GPU de portátil de 6 GB (RTX 4050) y alcanza 45,4 tokens por segundo.
 
-El propósito declarado es permitir la ejecución al 100 % en VRAM de GPUs de consumo con 6 GB (RTX 4050, RTX 3060) sin paginación a CPU, logrando según el autor 45,4 tokens/s frente a 6,9 tokens/s del contenedor original en la misma GPU. El modelo está perfilado específicamente para razonamiento técnico, síntesis de código Python, estructuras de datos y STEM, a costa de sacrificar capacidades multilingües y conversacionales generales.
+El modelo base Gemma 4 26B-A4B es un transformer MoE con 25,6B parámetros físicos y 4B activos por token, con 128 expertos de grano fino. MAPLE no es una cuantización convencional: es una poda de expertos que enmascara los logits del router de los expertos eliminados a -inf para mantener la estabilidad numérica del softmax. El contenedor físico resultante tiene 10,95B parámetros (los parámetros reportados en safetensors), lo que equivale a 3,47 bits por peso en el contenedor y 1,48 bits efectivos por parámetro respecto al modelo sin podar.
 
-Es relevante porque demuestra una vía práctica de despliegue de un MoE de gran tamaño en hardware de gama baja mediante poda guiada por el manifold de activación, aunque el checkpoint publicado es un artefacto experimental con cero descargas y cero likes en el momento de la consulta, y la model card no documenta benchmarks estándar de calidad.
+La relevancia de esta publicación es doble. Por un lado, demuestra que es posible ejecutar un MoE de 26B en hardware de consumo con fidelidad funcional del 100% en tareas de código dentro del dominio de calibración. Por otro, presenta MAPLE como una formulación portable a otras familias MoE (Mixtral, DeepSeek, Qwen 2.5 MoE, LFM-24B), lo que la convierte en una metodología de compresión reutilizable más que en un artefacto aislado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), poda de 128 a 48 expertos por capa |
-| Parámetros totales | 10.952.640.446 (según safetensors del repo); el modelo base Google declara 25,2 B totales |
-| Parámetros activos | 3,8 B por token en el modelo base (dato de Google); no disponible para el checkpoint podado |
-| Longitud de contexto | 256K tokens en el modelo base (dato de Google); la model card usa `-c 2048` en el ejemplo de llama.cpp, sin especificar contexto máximo del GGUF |
-| Tipos de cuantización | GGUF a 1,48 bits por parámetro efectivos (sub-2-BPW); no se listan otras variantes |
-| Idiomas soportados | Inglés (etiqueta `language: en`); el autor indica que se han eliminado expertos multilingües |
+| Arquitectura | Transformer MoE (mixture-of-experts) de grano fino, 128 expertos, top-k routing (base Gemma 4 26B-A4B) |
+| Parametros totales | 10.952.640.446 en el contenedor podado (25,6B en el modelo base sin podar) |
+| Parametros activos | 4B por token (heredado del modelo base A4B) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF IQ2_XXS (3,47 BPW en el contenedor; 1,48 bits efectivos por parámetro respecto al base) |
+| Idiomas soportados | en (inglés); el autor advierte de mayor perplejidad fuera de dominio en tareas multilingües |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (`gemma_4_26b_sub5gb_insitu.gguf`), con calibración imatrix |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE de Google DeepMind con 25,2 B de parámetros totales y 3,8 B activos por token, entrenado con ajuste de instrucciones, razonamiento integrado, function calling nativo y entrada multimodal texto-imagen. MAPLE no reentrena el modelo: parte de los pesos de `google/gemma-4-26b-a4b-it` y aplica una poda estructurada de expertos guiada por perfilado de activaciones con `llama-imatrix` sobre un corpus técnico propio (`custom-technical-calibration`).
+El modelo base es un transformer MoE con 128 expertos de grano fino y 4B parámetros activos por token sobre un total de 25,6B. MAPLE no reentrena el modelo: aplica una poda estructural sobre el espacio de expertos. El procedimiento perfilá la manifold de activación empírica sobre un corpus de calibración específico de dominio (síntesis de algoritmos en Python, estructuras de datos y razonamiento lógico-STEM), identifica 80 expertos inactivos para ese dominio y los elimina, conservando 48. Los logits del router correspondientes a los expertos eliminados se enmascaran a -inf para que el softmax siga siendo numéricamente estable tras la poda.
 
-La puntuación de importancia de cada experto combina la frecuencia empírica de activación (`C`) y la energía media de activación de canales de entrada (`σ̄`), con un suelo de estabilidad numérica de 10⁻⁶. Los 48 expertos retenidos por capa capturan, según el autor, el 79,88 % de la masa de activación del forward pass, y el contenedor resultante se empaqueta en GGUF sin desquantización intermedia. La fidelidad semántica declarada frente al modelo original en el dominio objetivo es del 93,8 %, métrica definida por el autor y no verificable con los datos disponibles.
+El resultado es un modelo de dominio estrecho pero funcional: el autor reporta 100% de fidelidad de ejecución en pruebas unitarias de código Python dentro del dominio de calibración, con un margen de generación de 512 tokens. El trade-off explícito es un aumento de la perplejidad fuera de dominio, especialmente en tareas multilingües y de conocimiento general, donde los expertos podados sí tenían carga funcional. La metodología se presenta como determinista y reproducible, pero dependiente del corpus de calibración: calibrar sobre diálogo multilingüe retendría entre 88 y 108 expertos (ahorro del 15-30%), y calibrar sobre corpus especializados (biomédico, financiero, legal) preservaría subconjuntos distintos. La formulación matemática se declara portable a Mixtral, DeepSeek-V2/V3, Qwen 2.5 MoE y LFM-24B.
 
 ## Capacidades
 
-- Generación de texto y razonamiento técnico orientado a STEM.
-- Síntesis de código, en particular Python: funciones, algoritmos y estructuras de datos.
-- Razonamiento deductivo dentro del dominio de calibración.
-- Conversación multi-turno mediante plantilla de turnos (`<|turn>user` / `<|turn>model`).
-- Inferencia al 100 % en VRAM en GPUs de 6 GB con llama.cpp.
-- Capacidades multimodal (texto e imagen) y function calling nativo del modelo base: no confirmadas en este checkpoint podado.
-- Capacidades multilingües: explícitamente degradadas por la poda de expertos multilingües.
+- Generación de texto conversacional en inglés, orientada a dominio técnico.
+- Generación de código Python: síntesis de algoritmos, estructuras de datos y lógica de resolución de problemas, con fidelidad de ejecución del 100% en el benchmark de calibración según el autor.
+- Razonamiento deductivo y STEM dentro del dominio de calibración.
+- Compatible con endpoints de inferencia estándar (tag `endpoints_compatible`) y con el ecosistema llama.cpp.
+- Capacidades multilingües degradadas: el modelo está etiquetado solo para `en` y el autor advierte de mayor perplejidad fuera de dominio.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode) para esta variante podada.
 
 ## Casos de uso
 
-- Asistencia de código en local para desarrolladores con portátil de 6 GB de VRAM: generación de funciones Python y algoritmos sin conexión a la nube, aprovechando la residencia total en GPU.
-- Autocompletado y refactorización en IDE sobre hardware de gama baja: el modelo cabe en una RTX 4050 o RTX 3060 y evita la latencia de paginación a CPU (22,0 ms/token declarados).
-- Prototipado de pipelines de CI/CD con verificación de código: puede integrarse vía llama.cpp en scripts de revisión estática o generación de tests para repositorios Python.
-- Enseñanza de algoritmia y estructuras de datos: respuestas multi-turno con contexto suficiente para explicaciones encadenadas, en inglés.
-- Entornos aislados o air-gapped: al ser un GGUF local de 4,75 GB con licencia Apache 2.0, es desplegable sin dependencia de APIs externas.
-- Investigación en compresión de modelos: sirve como referencia reproducible del pipeline MAPLE para experimentar con poda de expertos en otros dominios (medicina, finanzas, legal) usando el motor open source del autor.
-- Evaluación comparativa de cuantizaciones extremas: útil para medir el compromiso entre velocidad (45,4 tokens/s) y fidelidad semántica (93,8 % declarado) en GPUs de consumo.
+- Inferencia en GPU de portátil de 6 GB: el caso de uso central de la publicación. El modelo cabe al 100% en VRAM de una RTX 4050 de 6 GB y entrega 45,4 tokens por segundo, frente a los 6,9 TPS que se obtienen al hacer offload por PCIe con el modelo sin comprimir. Adecuado para asistentes de código locales sin conexión.
+- Asistencia de programación en el borde: generación de funciones Python, estructuras de datos y algoritmos en un portátil sin GPU dedicada de gama alta. La fidelidad del 100% en pruebas unitarias dentro del dominio de calibración lo hace viable para autocompletado y generación de snippets verificables.
+- Prototipado y demostraciones en hardware restringido: útil para investigadores que necesitan evaluar el comportamiento de un MoE de 26B en equipos de consumo, sin acceso a A100/H100, aceptando la restricción de dominio.
+- Educación y entornos docentes: despliegue local de un modelo de razonamiento lógico y algorítmico en aulas con portátiles de 6 GB, donde el coste de infraestructura cloud es un factor limitante.
+- Prueba de concepto de la metodología MAPLE: el artefacto sirve como referencia reproducible para validar la técnica de poda sobre otros MoE (Mixtral, DeepSeek, Qwen) antes de aplicarla a corpus propios.
+- Compresión de dominio para pipelines embebidos: en escenarios donde el tráfico es predeciblemente técnico (generación de código, parsing lógico), el modelo podado puede integrarse en servicios de borde con latencia baja y sin dependencia de red.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo aporta métricas de sistema medidas por el autor en una NVIDIA RTX 4050 6 GB:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor reporta métricas propias de despliegue y fidelidad funcional:
 
-| Métrica | Base 128 expertos | MAPLE 48 expertos | Mejora |
-|---|---|---|---|
-| Tamaño del contenedor | 9,92 GB | 4,75 GB | 2,09x menor |
-| Bitrate efectivo | ~2,1 BPW | 1,48 BPW | Sub-1,5 BPW |
-| Residencia en GPU | Parcial (16/30 capas) | 100 % (30/30 capas) | Sin paginación a CPU |
-| Velocidad de generación | 6,9 tokens/s | 45,4 tokens/s | 6,57x |
-| Latencia por token | 144,9 ms | 22,0 ms | 6,58x |
-| Fidelidad semántica | 100 % | 93,8 % | Casi sin pérdida en dominio |
+| Metrica | Valor reportado |
+|---|---|
+| Tamano del modelo base (sin podar) | 9,92 GB |
+| Tamano tras poda MAPLE | 4,75 GB |
+| Bits por peso en el contenedor | 3,47 BPW |
+| Bits efectivos por parámetro (vs. base 25,6B) | 1,48 |
+| Throughput en RTX 4050 6 GB (100% VRAM) | 45,4 tokens/s |
+| Throughput con offload por PCIe (modelo sin comprimir) | 6,9 tokens/s |
+| Fidelidad en pruebas unitarias Python (dominio de calibración, -n 512) | 100% |
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 6 GB para el checkpoint completo (4,75 GB de pesos más overhead de contexto).
-- GPU objetivo declarada: NVIDIA RTX 4050 6 GB (laptop) y RTX 3060 6 GB; ejecución al 100 % en VRAM.
-- GPU recomendadas: cualquier GPU con 6 GB o más de VRAM; no se documentan pruebas en A100, H100 o RTX 4090.
-- Cabe en GPU de consumo: sí, en modelos con 6 GB o más.
-- Despliegue: llama.cpp (`llama-cli` con `-ngl 99`); compatible con endpoints según los tags del repo; no se documenta soporte de vLLM, TGI u Ollama.
-- Latencia y throughput declarados: 22,0 ms/token y 45,4 tokens/s en RTX 4050 6 GB con contexto de 2048 tokens.
+- VRAM estimada: 4,75 GB para el GGUF IQ2_XXS, más overhead de contexto y KV cache; cabe en GPUs de 6 GB.
+- GPU objetivo declarada: NVIDIA RTX 4050 Laptop de 6 GB, con ejecución 100% en VRAM.
+- Cabe en GPUs de consumo de 6 GB o más (RTX 4050, 3060, 4060, 4070, etc.); no requiere A100 ni H100.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), y por extensión cualquier frontend compatible como Ollama o LM Studio; no se documenta soporte nativo en vLLM o TGI para esta variante.
+- Latencia y throughput: 45,4 tokens/s en RTX 4050 6 GB; 6,9 tokens/s con offload PCIe del modelo sin comprimir (referencia comparativa del autor).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| MAPLE Gemma 4 26B-A4B Sub-5GB | 10,95 B en safetensors del repo; 25,2 B totales / 3,8 B activos en el base | 256K en el base; no especificado en el GGUF | GGUF 1,48 BPW | Apache 2.0 | Hugging Face, 0 descargas |
-| Gemma 4 26B-A4B (Google) | 25,2 B totales / 3,8 B activos | 256K | Safetensors y otros | Términos de Gemma | Google DeepMind, Amazon Bedrock |
-| Otras cuantizaciones GGUF del mismo base | 25,2 B totales | 256K | GGUF 4-8 BPW típicos | Apache 2.0 / términos del base | Comunidad en Hugging Face |
-
-No se dispone de datos de rendimiento comparativo en benchmarks entre estas alternativas en la información proporcionada.
+| MAPLE Gemma-4-26B-A4B (esta ficha) | 10,95B en contenedor (25,6B base, 4B activos) | no disponible | GGUF IQ2_XXS | Apache 2.0 | Poda de expertos de dominio técnico; 4,75 GB; 45,4 TPS en 6 GB VRAM |
+| google/gemma-4-26B-A4B-it (base) | 25,6B (4B activos) | no disponible | safetensors y GGUF | Apache 2.0 | Modelo sin podar; 9,92 GB; requiere offload o GPU de mayor VRAM |
+| Cuantizaciones GGUF convencionales del base (Q4_K_M, Q5_K_M, etc.) | 25,6B (4B activos) | no disponible | GGUF | Apache 2.0 | Reducción por cuantización, no por poda estructural; no disponibles los detalles en la información proporcionada |
+| Otros MoE podados con MAPLE (Mixtral, DeepSeek, Qwen) | no disponible | no disponible | no disponible | no disponible | El autor declara portabilidad metodológica, pero no se publican artefactos en la información disponible |
 
 ## Limitaciones y advertencias
 
-- La poda elimina 80 de 128 expertos por capa: las capacidades multilingües y conversacionales generales quedan degradadas por diseño.
-- Fidelidad semántica del 93,8 % declarada por el autor; no hay validación independiente ni benchmarks estándar publicados.
-- Riesgo de alucinación no cuantificado; el modelo base incluye razonamiento integrado, pero la poda puede afectar a la coherencia en dominios fuera de la calibración.
-- El checkpoint está perfilado para Python y STEM; su uso en otros dominios (medicina, legal, finanzas) no está validado.
-- Idioma: solo inglés etiquetado; el castellano no está soportado de forma fiable.
-- La discrepancia entre los 10,95 B de parámetros en safetensors del repo y los 25,2 B del modelo base no está explicada en la model card.
-- El ejemplo de llama.cpp usa contexto de 2048 tokens pese a que el base soporta 256K; el contexto efectivo del GGUF no está documentado.
-- Repositorio con 0 descargas y 0 likes: artefacto experimental sin validación comunitaria.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la compatibilidad con los términos del modelo base de Google.
-- El pipeline MAPLE y la métrica de fidelidad son contribuciones del propio autor, sin revisión por pares confirmada en la información disponible.
+- Modelo de dominio estrecho: la poda se calibró sobre código Python y lógica STEM; el rendimiento fuera de ese dominio (conocimiento general, diálogo abierto, otras lenguas) se degrada y el autor lo reconoce explícitamente.
+- Multilingüe degradado: la model card solo declara `en`; el autor advierte de mayor perplejidad fuera de dominio en tareas multilingües, y los expertos podados incluían clusters especializados en idiomas no ingleses y traducción.
+- No es una cuantización reversible: la poda elimina expertos de forma estructural; no se puede recuperar la capacidad completa sin volver al modelo base.
+- Dependencia del corpus de calibración: los resultados son deterministas pero específicos del manifold usado; calibrar sobre otro corpus produce un modelo distinto con subconjuntos de expertos diferentes.
+- Riesgo de alucinación: no se documentan evaluaciones de factualidad ni de alucinación en la información disponible; al ser un modelo podado de dominio, el riesgo fuera de dominio es presumiblemente mayor.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; hereda los del modelo base Gemma 4 26B-A4B, no evaluados aquí.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base (`google/gemma-4-26B-A4B-it`) y sus términos de uso, que pueden imponer condiciones adicionales.
+- No se documentan capacidades de tool calling, agentes, visión ni audio para esta variante; no asumir paridad funcional con el modelo base.
+- El rendimiento de 45,4 TPS y la fidelidad del 100% son cifras reportadas por el autor en su hardware y benchmark; no hay validación independiente en la información disponible.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/AmSach/Gemma-4-26B-A4B-MAPLE-Sub5GB-GGUF
-- GGUF directo: https://huggingface.co/AmSach/Gemma-4-26B-A4B-MAPLE-Sub5GB-GGUF/resolve/main/gemma_4_26b_sub5gb_insitu.gguf?download=true
-- Repositorio GitHub MAPLE: https://github.com/AmSach/maple
-- Licencia en GitHub: https://github.com/AmSach/maple/blob/master/LICENSE
-- llama.cpp: https://github.com/ggerganov/llama.cpp
-- Modelo base: https://huggingface.co/google/gemma-4-26b-a4b-it
-- Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
-- Gemma 4 26B-A4B en Amazon Bedrock: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-26b-a4b.html
-- Paper citado (referencia bibtex, sin URL): Sachan, A. (2026), *MAPLE: Manifold-Activated Pruning of Latent Experts for Sub-2-BPW Mixture-of-Experts Language Models*
+- Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Repositorio GitHub: https://github.com/AmSach/maple
+- Sitio oficial: https://amsach.github.io/maple/
+- DOI Zenodo: https://doi.org/10.5281/zenodo.24042480
+- DOI Kaggle: https://doi.org/10.34740/KAGGLE/M/786779
+- Discusión llama.cpp: https://github.com/ggml-org/llama.cpp/discussions/31894
+- PitchHut: https://www.pitchhut.com/project/maple-moe-pruning
+- LaunchNest: https://launchnest.io/p/maple
+- Google Scholar del autor: https://scholar.google.com/citations?user=dfgiWLYAAAAJ&hl=en
+- Descarga directa GGUF: https://huggingface.co/AmSach/Gemma-4-26B-A4B-MAPLE-Sub5GB-GGUF/resolve/main/gemma-4-26B-A4B-MAPLE-IQ2_XXS.gguf?download=true

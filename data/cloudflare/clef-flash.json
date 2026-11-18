@@ -37,7 +37,7 @@
   ],
   "likes": 929,
   "downloads_30d": 34016,
-  "trending_score": 14,
+  "trending_score": 13,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
   "storage_bytes": 19083248461,
@@ -60,7 +60,7 @@
     {
       "title": "Cloudflare: Build for the agent era",
       "url": "https://www.cloudflare.com/",
-      "snippet": "Welcome to Cloudflare - Powering the next generation of applications"
+      "snippet": "Join thousands of developers who've eliminated infrastructure complexity and deployed globally with Cloudflare. Start building for …"
     },
     {
       "title": "Cloudflare Dashboard | Manage Your Account",
@@ -70,17 +70,17 @@
     {
       "title": "Connectez, protégez et développez sur tous les fronts - Cloudflare",
       "url": "https://www.cloudflare.com/fr-fr/",
-      "snippet": "Rendez vos collaborateurs, vos applications et vos réseaux plus rapides et plus sûrs, partout dans le monde, tout en réduisant la …"
+      "snippet": "Les agents sont l'avenir de l'IA et Cloudflare le meilleur point de départ. Utilisez notre framework pour agents et nos outils …"
     },
     {
-      "title": "Cloudflare - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Cloudflare",
-      "snippet": "Cloudflare, Inc., is an American technology company headquartered in San Francisco, California, that provides a range of internet …"
+      "title": "个人 | Cloudflare",
+      "url": "https://www.cloudflare-cn.com/personal/",
+      "snippet": "为您的网站提供免费的防护和加速 Cloudflare 的使命是帮助构建更好的互联网。 我们认为每个网站和应用（无论是用于个人、专业还 …"
     },
     {
-      "title": "Download Cloudflare One Client stable releases",
-      "url": "https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/",
-      "snippet": "3 days ago · Reference information for Download Cloudflare One Client stable releases in Zero Trust."
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge …"
     }
   ]
 }

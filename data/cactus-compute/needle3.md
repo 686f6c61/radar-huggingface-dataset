@@ -2,108 +2,85 @@
 
 ## Resumen
 
-Needle 3 es un modelo de lenguaja de proposito especifico desarrollado por Cactus-Compute, disenado para ejecutarse integramente en el dispositivo (on-device) en moviles, wearables, robots, domotica, automocion y microcontroladores. No es un modelo de chat general: el autor declara explicitamente que renuncia a capacidad conversacional generica para superar a modelos diez veces mas grandes en llamadas a herramientas (tool calling) sobre movil y para igualar a modelos dos o tres veces mayores en extraccion de informacion estructurada. El modelo completo se distribuye como un unico fichero de entre 9 y 35 MB.
+Needle 3 es un modelo de lenguaje de Cactus-Compute disenado especificamente para ejecutarse en dispositivo (on-device) y orientado a tres tareas: tool calling o function calling, extraccion estructurada de datos y generacion de embeddings de texto. Su propuesta central es ofrecer capacidades de "inteligencia" util para agentes en dispositivos de consumo, con un enfasis explicito en el tamano reducido (el autor lo promociona como "sub-50 MB") y en la cuantizacion, lo que lo aleja de los LLM de gran escala y lo acerca al despliegue en movil, navegador o hardware de borde.
 
-La arquitectura se denomina Laddered Simple Attention Network (LSAN), una receta para modelos pequenos que sustituye la FFN por un MLP Monarch Hadamard, emplea atencion GQA con derivaciones convolucionales causales, una memoria de n-gramas (engram) leida mediante gather y conexiones hipervinculadas multicarril. La mayoria de los parametros residen en el engram, de modo que la variante de 121 millones de parametros realiza la aritmetica de una de 50 millones. El modelo base cuenta con 20 capas, pero esta entrenado para que cada profundidad entre 2 y 20 capas sea un modelo desplegable, lo que permite recortar subredes para dispositivos mas limitados.
+El modelo se distribuye con la libreria `cactus-compute` y un artefacto propietario de pesos (`needle3.cact`) acompanado de un checkpoint en `safetensors`. La integracion con Python es directa mediante decoradores de herramientas, lo que sugiere un diseno centrado en pipelines de agentes con llamadas a funciones. El repositorio pesa 4,9 GB, aunque esa cifra corresponde al conjunto de artefactos y no necesariamente al tamano de los pesos en inferencia.
 
-Needle 3 realiza tres tareas: llamadas a herramientas a partir de las funciones que expone la aplicacion, extraccion estructurada de campos tipados desde texto desordenado y generacion de embeddings de frases para busqueda o enrutado local. Los pesos se comprimen a CQ2-bit mediante Cactus Quants (2,125 bits por peso) y una gramatica a nivel de byte compilada a partir de los esquemas del usuario restringe cada token generado, garantizando que la salida sea parseable. Cada respuesta incluye una puntuacion de confianza calibrada procedente de una cabeza aprendida.
+Es relevante ahora porque cubre un nicho concreto: modelos pequenos, cuantizados y ejecutables en local para tareas de orquestacion de herramientas y extraccion de datos, donde no se necesita un LLM generalista grande. Su licencia Apache 2.0 y la disponibilidad de runtime en WebAssembly lo hacen atractivo para integraciones en produccion con requisitos de privacidad y baja latencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Laddered Simple Attention Network (LSAN): MLP Monarch Hadamard en lugar de FFN, atencion GQA con derivaciones convolucionales causales, memoria engram de n-gramas por gather, hiperconexiones multicarril |
-| Parametros totales | 121 millones (variante de 20 capas); subredes desplegables desde 2 hasta 20 capas, con un minimo citado de 29 millones tras fine-tuning |
-| Parametros activos | no disponible (no es un modelo MoE) |
+| Arquitectura | no disponible |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | CQ2-bit mediante Cactus Quants (2,125 bits por peso); exportacion a 4 bits con `needle build` |
+| Tipos de cuantizacion | cuantizacion (soportada por el runtime `cactus-compute`; niveles concretos no disponibles) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.cact` (formato propietario mapeado en memoria), `safetensors` (checkpoint para fine-tuning), exportacion `.cact` a 4 bits |
-
-Otros datos de interes: tamano del repositorio 4,3 GB; tamano del modelo desplegado entre 9 y 35 MB; motor por plataforma inferior a 1 MB; 47 descargas y 10 likes en Hugging Face; creado el 16 de septiembre de 2026 y actualizado el 17 de septiembre de 2026; libreria `cactus-needle`.
+| Formato de pesos | `needle3.cact` (formato propietario del runtime) y `checkpoints/needle3.safetensors` |
 
 ## Arquitectura y entrenamiento
 
-Needle 3 se basa en la arquitectura LSAN (Laddered Simple Attention Network), una receta propia de Cactus-Compute para modelos pequenos. En lugar de la red feed-forward convencional emplea un MLP Monarch Hadamard, lo que reduce el coste computacional de esa capa. La atencion es de tipo GQA (Grouped Query Attention) e incorpora derivaciones convolucionales causales. Ademas incorpora una memoria engram de n-gramas que se lee mediante operaciones de gather, donde reside la mayor parte de los parametros; esto explica que el modelo de 121 millones de parametros rinda aritmeticamente como uno de 50 millones. Completan la arquitectura las hiperconexiones multicarril (multi-lane hyper-connections).
+La informacion disponible no detalla la arquitectura interna (transformer, MoE, SSM u otra), el numero de parametros ni la composicion del dataset de entrenamiento. El autor describe el modelo como orientado a tool calling, extraccion estructurada y embeddings, y lo comercializa bajo el lema "Sub-50 MB Super Intelligence For Consumer Devices", lo que indica un diseno priorizando el tamano reducido y la eficiencia en inferencia.
 
-El entrenamiento tiene un caracter de escalera: cada profundidad entre 2 y 20 capas constituye un modelo desplegable de forma nativa, de modo que se puede seleccionar la subred adecuada segun el dispositivo objetivo. El paquete de Python permite afinar con LoRA sobre la base congelada a las 20 capas completas y despues, mediante `needle build --layers N`, fusionar el adaptador, recortar cualquier subred de 2 a 20 capas y exportar un `.cact` de 4 bits que funciona sobre el mismo motor. No se especifica en la informacion disponible el numero de tokens de entrenamiento ni la composicion del dataset, mas alla de que la cuantizacion a 2 bits posterior al entrenamiento se enriquece con datasets propios de Cactus en la Cactus Platform. Tampoco se detalla si hubo RLHF o DPO. Como innovaciones destacables figuran la gramatica a nivel de byte compilada desde los esquemas del usuario, que restringe la decodificacion, y la cabeza de confianza calibrada que acompana cada respuesta.
+Tampoco se documentan en la informacion proporcionada el numero de tokens de entrenamiento, el uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica innovacion implicita es el formato de pesos `.cact` y el runtime asociado, con soporte de WebAssembly y despliegue en dispositivos de consumo. Para detalles de arquitectura y benchmarks, el autor remite a la web oficial de Needle.
 
 ## Capacidades
 
-- Llamadas a herramientas (tool calling): dado el conjunto de funciones que expone la aplicacion, el modelo selecciona las correctas y rellena todos los argumentos a partir de lo dicho por el usuario. Si se piden dos cosas, devuelve dos llamadas en orden; si se pide algo que ninguna herramienta cubre, devuelve una lista vacia en lugar de inventar.
-- Extraccion estructurada: declarada una forma de salida, el modelo devuelve campos tipados a partir de texto desordenado (facturas, reservas, notificaciones, formularios). La gramatica de decodificacion garantiza que la salida sea parseable, y la extraccion generaliza a clasificacion mediante enumerados.
-- Embeddings de texto: el mismo modelo devuelve un vector para una frase, lo que permite busqueda, emparejamiento y enrutado local.
-- Razonamiento por turno: cada turno devuelve un unico objeto JSON con `function_calls`, el razonamiento del modelo y una confianza calibrada.
-- Salida estructurada garantizada: la gramatica a nivel de byte compilada desde los esquemas restringe cada token generado.
-- Confianza calibrada: cada respuesta incorpora una puntuacion procedente de una cabeza aprendida que permite enrutar entre actuar, confirmar o rechazar.
+- Tool calling y function calling: el modelo esta disenado para invocar herramientas definidas por el usuario mediante decoradores en Python.
+- Extraccion estructurada: orientado a convertir texto libre en datos estructurados.
+- Generacion de embeddings de texto: el modelo declara capacidad de producir representaciones vectoriales.
+- Ejecucion on-device: pensado para dispositivos de consumo y entornos de borde.
+- Soporte de WebAssembly: el runtime permite despliegue en navegador.
+- Cuantizacion: el modelo se distribuye en formatos cuantizados para reducir huella de memoria.
 - Capacidades multilingues: no disponible.
-- Capacidades de vision, audio o modo de pensamiento explicito: no disponibles.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Asistentes de voz en movil: el modelo recibe la transcripcion del usuario y las funciones expuestas por la aplicacion (enviar mensaje, poner una alarma, reproducir musica) y devuelve la llamada correcta con los argumentos rellenos. Su tamano de 9 a 35 MB permite ejecutarlo sin conexion en el propio telefono.
-- Extraccion de facturas y recibos: declarando la forma del documento se obtienen campos tipados (importe, fecha, emisor, numero de factura) desde texto OCR desordenado, con salida JSON garantizada por la gramatica de decodificacion.
-- Procesamiento de reservas y notificaciones: convertir correos o mensajes de reserva en registros estructurados, o clasificar notificaciones mediante enumerados, aprovechando que la extraccion generaliza a clasificacion.
-- Automocion y domotica: interpretar ordenes como "baja el salon al 30" y mapearlas a las funciones del sistema domotico, con la lista vacia como respuesta ante peticiones fuera de catalogo para evitar acciones erroneas.
-- Robotica y microcontroladores: desplegar subredes recortadas (desde 2 capas) en dispositivos con recursos muy limitados, manteniendo las mismas capacidades de llamada a herramientas sobre un motor inferior a 1 MB.
-- Busqueda y enrutado local de contenido: usar los embeddings del propio modelo para indexar notas o mensajes y dirigir consultas al modulo o herramienta correspondiente sin salir del dispositivo.
-- Atencion al cliente con confirmacion: aprovechar la confianza calibrada para decidir si se ejecuta la accion directamente, se pide confirmacion al usuario o se rechaza la peticion cuando la puntuacion es baja.
-- Pipelines de agentes en el borde: encadenar varias llamadas a herramientas en un flujo multi-paso (por ejemplo, consultar disponibilidad y despues reservar) manteniendo el orden solicitado por el usuario.
+- Agentes locales de tool calling: el modelo puede orquestar llamadas a funciones definidas por el desarrollador (por ejemplo, consultas meteorologicas, APIs internas) sin salir del dispositivo, lo que reduce latencia y evita enviar datos a la nube.
+- Extraccion estructurada en movil: conversion de texto libre (correos, mensajes, formularios) en JSON u otras estructuras, ejecutandose en el propio telefono para preservar la privacidad de los datos del usuario.
+- Asistentes en navegador: gracias al runtime WebAssembly, puede integrarse en aplicaciones web que necesitan clasificacion o extraccion de datos sin backend.
+- Enrutamiento de intenciones en pipelines de agentes: uso del modelo como capa ligera que decide que herramienta invocar antes de llamar a un LLM mayor, reduciendo coste y latencia.
+- Busqueda semantica local: generacion de embeddings para indexar y recuperar documentos en dispositivos con recursos limitados.
+- Automatizacion de formularios y back-office: extraccion de campos desde documentos o correos en entornos de borde, con la ventaja de no requerir GPU dedicada.
+- Preprocesado en pipelines de CI/CD o herramientas de desarrollo: clasificacion y estructuracion de logs o issues en local antes de enviarlos a sistemas centrales.
 
 ## Benchmarks y rendimiento
 
-El autor publica resultados en seis benchmarks de tool calling (exact-match accuracy sobre los conjuntos de test completos) y de extraccion (field micro-F1 sobre los conjuntos de test completos), pero las cifras se presentan unicamente en forma de figura (`assets/benchmarks.svg`) y en el grafico interactivo de la pagina de release. No se han facilitado los valores numericos en la informacion disponible.
-
-| Benchmark | Metrica | Resultado numerico |
-|---|---|---|
-| Tool calling (6 benchmarks) | exact-match accuracy | no disponible (solo figura) |
-| Extraccion estructurada | field micro-F1 | no disponible (solo figura) |
-
-Dato de fine-tuning citado por el autor: el ajuste sobre DroidCall mejora cada subred entre 18 y 36 puntos, y a partir de 4 capas la subred afinada supera a DeepSeek V4 Flash partiendo de 29 millones de parametros.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor remite a la web oficial de Needle para consultar benchmarks y la demo en navegador.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo completo en CQ2-bit ocupa entre 9 y 35 MB, por lo que la memoria necesaria es de decenas de megabytes, muy por debajo de cualquier GPU convencional. La exportacion a 4 bits con `needle build` ocuparia mas espacio que la variante de 2 bits, pero no se especifica la cifra.
-- GPU recomendadas: no aplica en el sentido habitual; el modelo esta pensado para CPU, moviles, wearables, robots y microcontroladores. No se indican GPU concretas.
-- Cabe en GPU de consumo: si, cualquier GPU de consumo puede alojarlo con holgura dado su tamano, aunque el objetivo declarado es la inferencia en dispositivo sin GPU.
-- Opciones de despliegue: cada carpeta de plataforma del repositorio contiene un motor inferior a 1 MB que carga `needle3.cact` al arrancar; `needle build --platform <folder> [--layers N]` descarga el motor y la cabecera y coloca los pesos junto a ellos. Se ofrece ejecutable de linea de comandos (`./needle --model needle3.cact --tools tools.json --prompt "..."`), modo servidor (`--serve`), API en C, componente WASI, ejecucion en navegador y configuracion para entornos aislados (air-gapped). El paquete de Python se instala con `pip install cactus-needle`.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: no disponible con precision; el autor promociona un tamano inferior a 50 MB, lo que sugiere un consumo de memoria muy bajo en inferencia cuantizada.
+- GPU recomendadas: no disponible; el enfoque on-device y WebAssembly sugiere ejecucion en CPU y hardware de borde, sin requerir GPU dedicada.
+- Compatibilidad con GPU de consumo: previsiblemente si, dado el tamano reducido, aunque no se confirman modelos concretos (RTX 4090, etc.) en la informacion disponible.
+- Opciones de despliegue: runtime `cactus-compute` (Python), con soporte de WebAssembly; binarios y plataformas en el repositorio Cactus. No se documenta soporte de vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo menciona explicitamente una comparacion, con DeepSeek V4 Flash, y lo hace en el contexto del fine-tuning sobre DroidCall. No se ofrecen cifras de benchmark comparativas en formato numerico.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Needle 3 | 121 M (subredes desde 29 M) | no disponible | Apache 2.0 | Hugging Face (Cactus-Compute/needle3) | Modelo on-device para tool calling, extraccion y embeddings |
-| DeepSeek V4 Flash | no disponible | no disponible | no disponible | no disponible | Citado por el autor: las subredes afinadas de 4 capas o mas lo superan en DroidCall |
-| Modelos 10x mayores en tool calling movil | no disponible | no disponible | no disponible | no disponible | Afirmacion generica del autor, sin identificacion de modelos concretos |
-| Modelos 2-3x mayores en extraccion | no disponible | no disponible | no disponible | no disponible | Afirmacion generica del autor, sin identificacion de modelos concretos |
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (tool calling on-device) ni datos de rendimiento que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- El propio autor declara que el modelo renuncia a capacidad de chat general: no debe emplearse como asistente conversacional de proposito general.
-- Sesgos conocidos: no disponible.
-- Riesgo de alucinacion: el diseno lo mitiga parcialmente devolviendo una lista vacia cuando ninguna herramienta cubre la peticion y restringiendo la salida mediante gramatica, pero no se documentan tasas de error.
-- Idiomas soportados: no disponibles; se desconoce el comportamiento fuera del idioma o idiomas de entrenamiento.
-- Longitud de contexto: no disponible, lo que impide evaluar su idoneidad para conversaciones o documentos largos.
-- Restricciones de licencia: Apache 2.0, lo que en principio permite uso comercial, pero la cuantizacion a 2 bits y parte de los datos de entrenamiento se generan en la Cactus Platform y no se detalla si existen condiciones adicionales sobre esos artefactos.
-- La puntuacion de confianza es una cabeza aprendida; su fiabilidad fuera de la distribucion de entrenamiento no esta documentada.
-- El formato principal de pesos es propietario (`.cact`), por lo que la portabilidad a otros motores de inferencia distintos de los proporcionados por Cactus-Compute no esta garantizada.
-- El modelo es muy reciente (creado el 16 de septiembre de 2026), con 47 descargas y 10 likes, por lo que existe poca validacion independiente.
-- No se han publicado cifras numericas de benchmarks en la informacion disponible, solo figuras.
+- No se documentan sesgos conocidos del modelo.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; como modelo pequeno orientado a tareas concretas, su uso fuera de tool calling y extraccion estructurada puede degradar la calidad.
+- Idiomas soportados: no disponibles, lo que impide garantizar un rendimiento multilingue adecuado.
+- Longitud de contexto: no disponible; puede limitar conversaciones o documentos largos.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del runtime `cactus-compute` y de los binarios distribuidos por separado.
+- Formato de pesos propietario (`.cact`): la portabilidad a otros runtimes puede requerir conversion desde `safetensors`, cuyas herramientas no se detallan.
+- Para produccion, verificar en la web oficial los benchmarks y el soporte de plataformas antes de comprometerse con el modelo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Cactus-Compute/needle3
-- Pagina de release, arquitectura y plot interactivo: https://cactuscompute.com/needle
-- Repositorio GitHub: https://github.com/cactus-compute/needle
-- Guia de diseno de herramientas: https://cactuscompute.com/blog/designing-tools-for-needle
-- Guia sobre la confianza del modelo: https://cactuscompute.com/blog/needle-confidence
-- Guia de extraccion estructurada JSON: https://cactuscompute.com/blog/structured-extraction-with-needle
-- Guia de fine-tuning: https://cactuscompute.com/blog/finetuning-needle
-- Documentacion del paquete de Python: https://cactuscompute.com/blog/needle-python-docs
-- Dispositivos soportados: https://cactuscompute.com/blog/needle-supported-devices
-- Formato `.cact`: https://cactuscompute.com/blog/cact-format
-- Cactus Platform (cuantizacion y datasets propios): https://cactuscompute.com/dashboard
+- [Hugging Face: Cactus-Compute/needle3](https://huggingface.co/Cactus-Compute/needle3)
+- [Web oficial de Needle](https://cactuscompute.com/needle)
+- [Repositorio Cactus (runtime y binarios)](https://github.com/cactus-compute/cactus)
+- [Runtime en Hugging Face: Cactus-Compute/cactus](https://huggingface.co/Cactus-Compute/cactus)
+- [Guia: Python API](https://cactuscompute.com/blog/needle-python-docs)
+- [Guia: diseno de herramientas](https://cactuscompute.com/blog/designing-tools-for-needle)
+- [Guia: extraccion estructurada](https://cactuscompute.com/blog/structured-extraction-with-needle)
+- [Guia: fine-tuning](https://cactuscompute.com/blog/finetuning-needle)

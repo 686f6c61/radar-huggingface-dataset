@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Eureka-COM/Transformer-134M-BabiStories",
+  "slug": "eureka-com-transformer-134m-babistories",
+  "author": "Eureka-COM",
+  "url": "https://huggingface.co/Eureka-COM/Transformer-134M-BabiStories",
+  "created_at": "2026-11-18T00:29:52.000Z",
+  "updated_at": "2026-11-18T01:59:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "memory-mosaics",
+    "from-scratch",
+    "babistories",
+    "research",
+    "en",
+    "arxiv:2507.03285",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134105856,
+  "parameters_human": "134.1M",
+  "storage_bytes": 536545017,
+  "storage_human": "537 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

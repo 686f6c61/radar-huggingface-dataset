@@ -2,76 +2,88 @@
 
 ## Resumen
 
-El repositorio `Arki05/Qwen3.8-27B-GGUF-shards` no contiene un único archivo GGUF, sino un **almacén de cuantizaciones byte-addressable** (formato `qalloc store-v2`) para el modelo base `Qwen/Qwen3.8-27B`, desarrollado por el equipo Qwen de Alibaba. Este modelo es un transformer denso multimodal (visión y lenguaje) de 27 000 millones de parámetros, orientado a tareas de codificación, flujos de trabajo agénticos y automatización de oficina. El repositorio ofrece alrededor de 41 tipos de cuantización GGUF (familias mainline de llama.cpp e ik_llama.cpp), cada uno como un archivo directamente ejecutable, además de un manifiesto que permite ensamblar asignaciones de precisión mixta mediante solicitudes HTTP Range.
+Arki05/Qwen3.8-27B-GGUF-shards es un repositorio de artefactos de cuantización para el modelo Qwen/Qwen3.8-27B, publicado por el usuario Arki05 bajo licencia Apache-2.0. No se trata de un modelo entrenado de forma independiente, sino de un almacén de tensores cuantizados en formato GGUF organizado por tipo de cuantización, pensado para ensamblar ficheros GGUF con un tipo distinto por tensor mediante la herramienta qalloc del propio autor. El repositorio incluye los pesos en BF16 de origen (procedentes de unsloth/Qwen3.8-27B-GGUF) y variantes de cada tensor lineal de bloque en 18 tipos de llama.cpp, desde IQ1_M hasta Q8_0, pasando por IQ4_NL, MXFP4 y NVFP4.
 
-La relevancia de este repositorio radica en su enfoque innovador: en lugar de publicar un único quant, proporciona un índice de bytes por tensor y tipo, lo que permite a clientes como `qalloc` construir mezclas de precisión personalizadas sin necesidad de procesamiento en el servidor. Esto facilita la ejecución local del modelo en hardware variado, optimizando el equilibrio entre calidad y uso de memoria. El modelo base, Qwen3.8-27B, destaca por su rendimiento en tareas de programación y productividad, y su licencia Apache 2.0 permite uso comercial sin restricciones.
+El modelo base Qwen3.8-27B pertenece a la familia Qwen3 y, según los metadatos del repositorio, incorpora capas de atención lineal con tensores `ssm_alpha` y `ssm_beta`, además de una capa de predicción multi-token (MTP). La model card no detalla la arquitectura completa ni el número de parámetros activos, por lo que esos datos deben consultarse en el repositorio del modelo original.
 
-## Especificaciones tecnicas
+La relevancia de este repositorio es fundamentalmente práctica: permite a desarrolladores que trabajan con llama.cpp construir GGUFs con asignación heterogénea de tipos por tensor (por ejemplo, mayor precisión en capas sensibles y menor en el resto) sin tener que recuantizar desde cero. El tamaño del repositorio, 1.872,6 GB, refleja que almacena múltiples copias del modelo a distintos tipos. El dato de parámetros totales registrado en safetensors (2.671.616) es incoherente con el nombre del modelo y con el tamaño del repositorio, por lo que se marca como no fiable.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (visión-lenguaje) |
-| Parametros totales | 27B (modelo base Qwen3.8-27B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | ~41 tipos GGUF (Q2, Q3, Q4, Q5, Q6, Q8 y variantes ik_llama.cpp) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivos por tipo + manifiesto para precisión mixta) |
+| Arquitectura | Transformer con atención lineal (tensores `ssm_alpha`/`ssm_beta`) y capa de predicción multi-token; detalles completos no disponibles |
+| Parámetros totales | No disponible (el nombre indica 27B; el campo safetensors del repo, 2.671.616, es inconsistente) |
+| Parámetros activos | No disponible |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | 18 tipos de llama.cpp: IQ1_M … Q8_0, IQ4_NL, MXFP4, NVFP4; y Q2_K … Q8_0 para embeddings, output, MTP y tensores `ssm_alpha`/`ssm_beta` |
+| Idiomas soportados | No disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (shards por tipo de tensor), más `manifest.json` (`qcore-store/1`), `skeleton.gguf`, `store.json` y `records/` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso que integra un codificador visual para procesar imágenes junto con texto. Según la descripción oficial de QwenCloud, se construye sobre la versión 3.6-27B e incorpora mejoras específicas en codificación y productividad de oficina, tanto en modalidad textual como visual. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset o los métodos de alineación (RLHF/DPO) en los datos proporcionados.
+El repositorio no documenta el entrenamiento del modelo base; se limita a distribuir artefactos de cuantización derivados de Qwen/Qwen3.8-27B. La información disponible indica que el modelo incorpora atención lineal (presencia de tensores `ssm_alpha` y `ssm_beta` en el grafo GGUF) y una capa de predicción multi-token, lo que sugiere una arquitectura híbrida orientada a eficiencia en contexto largo y decodificación especulativa. No se especifican tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO.
 
-El repositorio de Arki05 añade una capa técnica destacable: el formato `qalloc store-v2` organiza los tensores cuantizados en archivos por tipo, con un manifiesto que indexa los rangos de bytes de cada tensor para cada tipo. Esto permite a herramientas externas ensamblar modelos de precisión mixta (por ejemplo, cuantizar solo ciertas capas) mediante peticiones HTTP Range, sin necesidad de descargar el modelo completo. Los archivos `types/<TYPE>.gguf` son cuantizaciones uniformes y directamente ejecutables con llama.cpp (o ik_llama.cpp para los tipos ik).
+La innovación técnica del repositorio es el proceso de cuantización: cada tensor lineal de bloque se reconstruye a partir de los pesos BF16 mediante cuantización Hessiana, generando ficheros `types/<T>-hq.gguf` con el tipo plano `T` de llama.cpp, compatibles con llama.cpp estándar. Los tensores de embeddings, salida, MTP y los pequeños de atención lineal se distribuyen en ficheros `types/<T>.gguf` con la cuantización propia de llama.cpp. El manifest incluye offset y sha256 de cada tensor, lo que permite ensamblados reproducibles y verificables.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo en múltiples dominios.
-- Comprensión de imágenes: el modelo acepta entradas visuales y puede responder preguntas sobre ellas, describir contenido o extraer información.
-- Generación de código: soporta tareas de programación, depuración y explicación de código, con mejoras específicas frente a versiones anteriores.
-- Flujos de trabajo agénticos: puede encadenar múltiples pasos de razonamiento y utilizar herramientas externas (tool calling) para completar tareas.
-- Automatización de oficina: procesamiento de documentos, generación de informes, resúmenes y extracción de datos de capturas o PDFs.
-- Conversación multimodal: mantiene diálogos multi-turno combinando texto e imágenes.
+- Generación de texto y razonamiento: heredadas del modelo base Qwen3.8-27B, sin detalle específico en la model card.
+- Codificación y matemáticas: no se documentan explícitamente en la información disponible.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponibles (los idiomas no están declarados en el repo).
+- Capacidades especiales: predicción multi-token (MTP) presente en el grafo; no se confirman modos de pensamiento, visión ni audio.
+- Ensamblado GGUF con tipo por tensor: capacidad operativa del repositorio, no del modelo en sí.
 
 ## Casos de uso
 
-- Asistente de programación con soporte visual: el desarrollador puede subir una captura de pantalla de un error o un diagrama de arquitectura y el modelo sugiere correcciones o explica el flujo, gracias a su capacidad de visión y generación de código.
-- Automatización de tareas administrativas: procesar facturas o formularios escaneados, extraer campos clave y generar resúmenes estructurados, reduciendo el trabajo manual en entornos de oficina.
-- Agente de atención al cliente multimodal: gestionar consultas que incluyen imágenes (fotos de productos, capturas de pantalla) y mantener conversaciones contextuales de varios turnos, desplegado localmente con cuantización GGUF para proteger la privacidad.
-- Análisis técnico de diagramas y esquemas: interpretar diagramas de red, planos o gráficos científicos a partir de imágenes, y producir explicaciones o código asociado.
-- Generación de documentación a partir de capturas: convertir capturas de pantalla de interfaces o logs en documentación técnica detallada, integrable en pipelines de CI/CD.
-- Despliegue en edge con precisión mixta: gracias al almacén de cuantizaciones, un equipo puede seleccionar una combinación de tipos (por ejemplo, Q4 para capas de atención y Q8 para embeddings) para ejecutar el modelo en GPUs de consumo con memoria limitada, manteniendo una calidad aceptable.
+- Evaluación de cuantizaciones heterogéneas: usar qalloc y los ficheros `types/<T>-hq.gguf` para construir GGUFs con precisión distinta por capa y medir el impacto en perplejidad y calidad respecto a una cuantización uniforme.
+- Despliegue en llama.cpp con presupuesto de memoria ajustado: seleccionar tipos más agresivos (IQ1_M, IQ2) en capas menos sensibles y Q6_K/Q8_0 en capas críticas, reduciendo el tamaño total frente a una cuantización uniforme alta.
+- Investigación en cuantización: comparar la cuantización Hessiana del autor con la de llama.cpp estándar sobre los mismos tensores, usando los hashes del manifest para garantizar reproducibilidad.
+- Reproducibilidad de artefactos: verificar integridad de pesos descargados mediante sha256 de `records/` antes de integrarlos en pipelines de producción.
+- Servicio de inferencia local: desplegar una variante GGUF del modelo base en estaciones de trabajo con llama.cpp u Ollama, siempre que el tamaño elegido quepa en la VRAM disponible.
+- Archivado y distribución de variantes: emplear los shards como fuente única para regenerar cualquier combinación de tipos sin volver a cuantizar desde BF16, útil en equipos con ancho de banda limitado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye carpetas `calib/` y `eval/` con corpus de calibración y evaluación utilizados por el programa de daño que guía la asignación de precisión, pero no se proporcionan métricas numéricas comparativas.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para un modelo de 27B en GGUF, los requisitos dependen del tipo de cuantización. Como orientación, una cuantización Q4_K_M suele ocupar entre 16 y 18 GB, mientras que Q8 puede superar los 27 GB. Estos valores son estimaciones basadas en el tamaño del modelo y no se han verificado con datos oficiales.
-- GPU recomendadas: para ejecutar el modelo completo en Q4, se necesitan GPUs con al menos 16-20 GB de VRAM, como RTX 4090, A6000 o A100 (40 GB). Para Q8, se recomienda A100 80 GB o H100.
-- En consumer GPU: es posible ejecutar cuantizaciones Q2 o Q3 en GPUs de 12 GB (por ejemplo, RTX 3080/4070), aunque con pérdida de calidad.
-- Opciones de despliegue: los archivos GGUF son compatibles con llama.cpp, Ollama, LM Studio y servidores como vLLM (con adaptador GGUF). El manifiesto permite usar herramientas del proyecto `qalloc` para ensamblar precisiones mixtas.
-- Latencia y throughput: no se proporcionan datos específicos. Dependerán del hardware, la cuantización y la longitud de contexto.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo de ~27B, una cuantización de 4 bits ronda los 15-17 GB de pesos, y una de 8 bits en torno a 27-29 GB; estas cifras son estimaciones generales, no datos del repositorio.
+- GPU recomendadas: no especificadas. Para variantes de 4 bits, GPUs consumer de 24 GB (RTX 3090, RTX 4090) podrían alojar el modelo; las variantes de 8 bits requerirían A100 40 GB, H100 o configuraciones multi-GPU.
+- Cabe en GPU consumer: probablemente para tipos IQ2/IQ3/IQ4 en GPUs de 16-24 GB; no confirmado.
+- Opciones de despliegue: llama.cpp (destino principal, dado que los tipos son planos de llama.cpp), y por extensión Ollama o servidores compatibles con GGUF. vLLM y TGI no consumen GGUF de forma nativa.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros modelos de la misma categoría. El modelo base Qwen3.8-27B podría compararse con otros modelos densos multimodales de ~30B (como Qwen2.5-32B o Llama-3.2-30B), pero no se han encontrado datos de rendimiento en las fuentes consultadas. Se indica "no disponible".
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Arki05/Qwen3.8-27B-GGUF-shards | ~27B (según nombre; dato safetensors inconsistente) | No disponible | GGUF por tipo de tensor | Apache-2.0 | Hugging Face, 10.798 descargas |
+| Qwen/Qwen3.8-27B | No disponible | No disponible | Safetensors (BF16) | Apache-2.0 (según repo derivado) | Hugging Face |
+| unsloth/Qwen3.8-27B-GGUF | ~27B | No disponible | GGUF (fuente BF16) | Apache-2.0 | Hugging Face |
+| Arki05/Qwen3.8-27B-GGUF | ~27B | No disponible | GGUF preensamblado | Apache-2.0 | Hugging Face |
+
+No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El repositorio es un almacén de cuantizaciones, no el modelo original. Para usos que requieran los pesos originales, debe acudirse al repositorio base `Qwen/Qwen3.8-27B`.
-- No se dispone de información sobre sesgos específicos del modelo. Como todo LLM multimodal, puede presentar alucinaciones visuales o textuales, especialmente en imágenes ambiguas o de baja calidad.
-- La longitud de contexto no está documentada en la información proporcionada; se recomienda verificar la ficha del modelo base antes de usarlo en tareas que requieran ventanas largas.
-- Los tipos de cuantización de la familia `ik_llama.cpp` requieren una versión modificada de llama.cpp; usar el archivo equivocado con el runtime estándar puede provocar errores.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base puede tener condiciones adicionales (consultar la documentación oficial de Qwen).
-- El tamaño del repositorio (908 GB) implica que la descarga completa no es práctica; se recomienda usar el manifiesto y las peticiones HTTP Range para obtener solo los tensores necesarios.
+- El repositorio no es un modelo autónomo: requiere ensamblado con qalloc o uso de los GGUFs preconstruidos del repo hermano; descargarlo y cargarlo directamente en llama.cpp no funcionará.
+- El tamaño de 1.872,6 GB hace inviable la descarga completa en la mayoría de entornos; conviene descargar solo los shards del tipo deseado.
+- El campo de parámetros totales en safetensors (2.671.616) es incompatible con un modelo de 27B y con el tamaño del repo; no debe usarse como referencia.
+- No se declaran idiomas soportados ni se documentan sesgos, riesgos de alucinación o limitaciones de contexto del modelo base en esta ficha.
+- La licencia Apache-2.0 permite uso comercial, pero las obligaciones de atribución y las posibles restricciones del modelo base deben verificarse en Qwen/Qwen3.8-27B.
+- Los pesos cuantizados son versiones modificadas de los originales; la cuantización Hessiana puede introducir degradaciones no caracterizadas en la model card.
+- No hay resultados de benchmarks publicados para estas variantes, por lo que la calidad relativa frente a cuantizaciones estándar de llama.cpp no está cuantificada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
-- GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Página de QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
-- Blog sobre cuantizaciones de Qwen3.8-27B: https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/
+- Repositorio de shards: https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards
+- Repositorio GGUF preensamblado: https://huggingface.co/Arki05/Qwen3.8-27B-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- GGUF BF16 de origen: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Herramienta qalloc: https://arki05.com/projects/qalloc/
+- Revisión anterior del store (41 tipos): https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards/tree/0090490f

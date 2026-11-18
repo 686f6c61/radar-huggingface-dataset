@@ -2,86 +2,99 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF** es una colección de cuantizaciones GGUF de una variante modificada del modelo Qwen3.8-27B, publicada por el usuario 0bserverx en Hugging Face. Esta variante, basada en los pesos de `trohrbaugh/Qwen3.8-27B-heretic`, ha sido sometida a técnicas de *abliteration* y *uncensoring* para eliminar los mecanismos de rechazo y filtrado del modelo original, ofreciendo una versión "sin restricciones" del modelo base.
+Qwen3.8-27B RVN Heretic Abliterated Uncensored (GGUF) es una variante "abliterada" del modelo Qwen3.8-27B de Alibaba, publicada por el usuario 0bserverx. El proceso de abliteración elimina quirúrgicamente el comportamiento de rechazo (refusal) del modelo base mediante la técnica ARA (Arbitrary-Rank Ablation), implementada en la herramienta open source heretic. El resultado es un modelo que conserva los conocimientos del original pero responde a categorías de peticiones que el modelo base rechazaría.
 
-El repositorio incluye un espectro completo de cuantizaciones, desde BF16/F16 (referencia de máxima calidad) hasta formatos ternarios experimentales (TQ1_0, TQ2_0), todas ellas optimizadas con *activation imatrix* para las versiones de menor bit. Esto permite ejecutar un modelo de 27 000 millones de parámetros en hardware de consumo, desde GPUs de 8 GB hasta 64 GB, con distintos equilibrios entre calidad y uso de memoria.
+La arquitectura subyacente es `qwen3_5_text` de la familia Qwen3.8, un transformer híbrido con Gated DeltaNet: 64 capas, de las cuales 16 son atención estándar y 48 son atención lineal DeltaNet. Con 26.895.998.464 parámetros totales, hidden size de 5120, GQA con 24 cabezas de atención y 4 cabezas KV, y un vocabulario de 248.320 tokens, el modelo ofrece una ventana de contexto de 262.144 tokens.
 
-La relevancia de este modelo radica en su carácter *uncensored* y en la flexibilidad de despliegue que ofrecen las cuantizaciones GGUF, pensadas para su uso con llama.cpp y otros motores compatibles. No obstante, la documentación proporcionada es escasa: no se detallan la arquitectura interna, el proceso de entrenamiento ni los benchmarks, por lo que gran parte de las especificaciones técnicas deben considerarse no disponibles.
+La relevancia de esta ficha radica en que documenta un caso de uso muy específico: la modificación de pesos de un modelo de gran tamaño para eliminar restricciones de seguridad, con métricas de daño conductual (KL ≈ 0,0085) y de reducción de rechazos (de 3/100 a 0–1/100) declaradas por el autor. El repositorio acumula más de 1,1 millones de descargas y 900 likes, y se distribuye principalmente en formato GGUF para llama.cpp, con soporte de decodificación especulativa MTP.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (basado en Qwen3.8-27B) |
-| Parametros totales | 27.320.697.856 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (en el ejemplo de uso se emplea 32768, pero no es un dato oficial) |
-| Tipos de cuantizacion | BF16, F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_NL, IQ4_XS, Q3_K_L, Q3_K_M, IQ3_M, IQ3_S, Q3_K_S, IQ3_XS, IQ3_XXS, Q2_K_S, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, IQ1_S, IQ1_M, TQ1_0, TQ2_0 |
-| Idiomas soportados | no disponibles |
-| Licencia | other (misma que el modelo fuente, sin especificar) |
-| Formato de pesos | GGUF |
+| Arquitectura | `qwen3_5_text` (familia Qwen3.8), transformer híbrido con Gated DeltaNet |
+| Parametros totales | 26.895.998.464 (≈27B) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | 262.144 tokens (262K) |
+| Tipos de cuantizacion | GGUF; se mencionan Q4_K_M y familia `*-multilingual*.gguf`; no se detalla la lista completa de niveles |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); el repo también incluye safetensors según los tags de Hugging Face |
+
+Otros datos técnicos declarados por el autor: hidden size 5120, 64 capas (16 de atención estándar + 48 de Gated DeltaNet), 24 cabezas de atención, 4 cabezas KV (GQA), head_dim 256, vocabulario de 248.320 tokens. Los ficheros base excluyen MTP/NextN; los ficheros `*-mtp.gguf` incluyen la cabeza draft MTP oficial de Qwen3.8.
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo. Al ser una variante de Qwen3.8-27B, se puede asumir que comparte la arquitectura base del modelo original (probablemente un transformer decoder-only), pero no se confirma en la documentación. El autor indica que los pesos provienen de `trohrbaugh/Qwen3.8-27B-heretic`, que a su vez es una modificación de Qwen3.8-27B. Las técnicas de *abliteration* y *uncensoring* aplicadas sobre los pesos originales buscan eliminar los comportamientos de rechazo y las restricciones de contenido, pero no se proporcionan detalles sobre el proceso exacto, los datos de entrenamiento ni el número de tokens utilizados.
+El modelo base Qwen3.8-27B emplea una arquitectura híbrida que combina 16 capas de atención transformer estándar con 48 capas de Gated DeltaNet (atención lineal con estado recurrente), lo que reduce el coste computacional en contextos largos frente a un transformer denso equivalente. Usa GQA con 24 cabezas de consulta y 4 cabezas KV, head_dim de 256 y un vocabulario de 248.320 tokens. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+
+Sobre esta base, el autor original (trohrbaugh) aplicó una primera pasada de ARA (Arbitrary-Rank Ablation) mediante la herramienta heretic, obteniendo el modelo `Qwen3.8-27B-heretic-ara` con KL 0,0535 y 3/100 rechazos. 0bserverx aplicó dos pasadas adicionales de ARA a peso completo con los parámetros start 26, end 56, preserve 0,9432, steer 0,0009, overcorrect 0,5038 y neighbor 10, dando lugar a la variante RVN con KL ≈ 0,0085 y 0–1/100 rechazos. ARA trata la abliteración como un problema de optimización matricial: para cada módulo objetivo (out-projection de atención y down-projection de MLP) recoge activaciones sobre prompts "buenos" y "malos" y usa un optimizador LBFGS para reescribir la matriz de pesos, preservando la salida en prompts buenos, redirigiendo la de los malos hacia la variedad de salidas buenas y empujándola además lejos de las salidas malas originales. Los ficheros `*-mtp.gguf` incorporan la cabeza draft MTP oficial de Qwen3.8 para decodificación especulativa.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (etiqueta `conversational`).
-- Compatibilidad con llama.cpp y motores compatibles con GGUF (llama-server, llama-cli, etc.).
-- Soporte de cuantizaciones de muy baja precisión (IQ1, TQ) para entornos con recursos limitados.
-- Posible soporte de visión si se descargan los archivos `mmproj-*.gguf` del repositorio original, aunque no se confirma para esta variante.
-- No se documentan capacidades específicas como tool calling, razonamiento avanzado o multilingüismo.
+- Generación de texto conversacional y de rol (roleplay), con plantilla de chat oficial de Qwen3.8 embebida en los GGUF.
+- Respuesta a categorías de peticiones que el modelo base rechaza, por diseño del proceso de abliteración.
+- Tool calling / function calling compatible con la API de OpenAI: todos los artefactos multilingües pasaron una verificación real por fichero de tool-call y control de thinking.
+- Control de modo thinking (thinking-control) mediante la plantilla de chat oficial.
+- Decodificación especulativa mediante cabeza draft MTP en los ficheros `*-mtp.gguf`.
+- Contexto largo de hasta 262.144 tokens para conversaciones multi-turno y documentos extensos.
+- Capacidades multilingües: el autor distribuye una familia `*-multilingual*.gguf`, aunque no se detalla la lista de idiomas.
+- No se declaran capacidades de visión, audio ni matemáticas avanzadas en la información disponible.
 
 ## Casos de uso
 
-- **Despliegue local en estaciones de trabajo**: gracias a las cuantizaciones Q4_K_M o IQ4_NL, el modelo puede ejecutarse en GPUs de 16 GB (RTX 4080, RTX 3080, etc.) con un equilibrio razonable entre calidad y uso de memoria.
-- **Servidor de chat privado**: usando `llama-server` con el comando indicado en la documentación, se puede montar un endpoint de chat local sin depender de servicios en la nube.
-- **Experimentación con cuantizaciones extremas**: las versiones IQ1_S, IQ1_M y TQ permiten probar el comportamiento del modelo en hardware de 8 GB, aunque con una degradación notable de calidad.
-- **Generación de contenido creativo sin restricciones**: al ser una variante *uncensored*, puede utilizarse en aplicaciones donde se requiera evitar los filtros de contenido del modelo base, como escritura creativa o roleplay.
-- **Integración en pipelines de inferencia con llama.cpp**: el formato GGUF es directamente compatible con bindings de Python, Rust y otros lenguajes, facilitando su integración en aplicaciones existentes.
-- **Evaluación de calidad por cuantización**: el repositorio ofrece múltiples niveles de precisión, lo que permite comparar el impacto de la cuantización en la calidad de las respuestas para un mismo modelo.
+- Roleplay y ficción interactiva para adultos: el modelo está ajustado para sostener personajes y narrativas sin los rechazos del base, con contexto de 262K tokens que permite mantener arcos argumentales largos y consistentes.
+- Escritura creativa sin restricciones temáticas: útil para autores que necesitan explorar violencia, contenido adulto o temas sensibles en borradores, donde el modelo base interrumpiría la generación.
+- Investigación sobre seguridad y alineación: sirve como sujeto de estudio para medir cómo la abliteración ARA afecta al comportamiento (KL bajo, reducción de rechazos) y para evaluar la robustez de los guardarraíles de Qwen3.8.
+- Evaluación de técnicas de abliteración: el repositorio documenta tres pasadas ARA con parámetros concretos, lo que permite reproducir y comparar el efecto de cada pasada sobre rechazos y daño conductual.
+- Despliegue local con llama.cpp: los GGUF cuantizados permiten ejecutar un modelo de 27B en hardware de consumo, con tool calling y plantilla de chat oficial listos para usar en asistentes personales.
+- Generación de contenido para audiencias adultas en plataformas con verificación de edad: el autor lo declara explícitamente para mayores de 18 años en investigación, escritura creativa y roleplay.
+- Integración en pipelines compatibles con OpenAI: los artefactos pasaron una verificación de tool-call compatible con la API de OpenAI, lo que facilita sustituir el endpoint en aplicaciones existentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. El autor únicamente reporta métricas del proceso de abliteración:
+
+| Metrica | Modelo fuente (`heretic-ara`) | Variante RVN |
+|---|---|---|
+| KL divergence | 0,0535 | ≈0,0085 |
+| Rechazos (sobre 100 prompts dañinos) | 3/100 | 0–1/100 |
+| Pasadas ARA totales | 1 | 3 |
+
+No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de otras evaluaciones estándar.
 
 ## Requisitos de hardware
 
-La siguiente tabla resume los requisitos de VRAM estimados para cada cuantización, según la documentación del autor:
-
-| Cuantizacion | Tamano (GB) | VRAM necesaria (offload completo) | GPU recomendada |
-|---|---|---|---|
-| BF16 / F16 | ~55.7 / ~54.7 | 64 GB | GPUs de 64 GB (A100, H100) |
-| Q8_0 | ~29.1 | 32 GB | GPUs de 32 GB (A100, V100) |
-| Q6_K | ~22.4 | 24 GB | RTX 3090, RTX 4090 |
-| Q5_K_M / Q5_K_S | ~19.8 / ~19.3 | 24 GB | RTX 3090, RTX 4090 |
-| Q4_K_M / Q4_K_S | ~16.9 / ~16.1 | 16-20 GB | RTX 4080, RTX 3080, RTX 4070 Ti |
-| IQ4_NL / IQ4_XS | ~16.1 / ~15.3 | 16 GB | RTX 4080, RTX 3080 |
-| Q3_K_L / Q3_K_M | ~14.7 / ~13.7 | 16 GB | RTX 3060, RTX 4060 |
-| IQ3_M / IQ3_S / Q3_K_S / IQ3_XS | ~12.8 / ~12.5 / ~12.5 / ~12.0 | 16 GB | RTX 3060, RTX 4060 |
-| IQ3_XXS | ~7.3 | 8-12 GB | RTX 3060 Ti, RTX 4060 |
-| Q2_K_S / IQ2_M / IQ2_S / IQ2_XS / IQ2_XXS | ~10.0 / ~9.9 / ~9.1 / ~8.7 / ~8.0 | 8-12 GB | RTX 3060, RTX 4060 |
-| IQ1_S / IQ1_M / TQ1_0 / TQ2_0 | ~6.5 / ~7.1 / ~7.2 / ~8.4 | 8 GB | GPUs de 8 GB (RTX 3050, GTX 1080) |
-
-- **Opciones de despliegue**: llama.cpp (llama-server, llama-cli), así como cualquier motor compatible con GGUF (Ollama, LM Studio, etc.).
-- **Latencia y throughput**: no se proporcionan datos específicos; dependerán de la cuantización, la GPU y la configuración de contexto.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo de 27B en GGUF, las cuantizaciones Q4 requieren del orden de 16–18 GB y las Q8 del orden de 28–30 GB, aunque el autor no publica cifras.
+- GPU recomendadas: no especificadas. Por tamaño, cabría esperar uso en A100, H100 o RTX 4090 para cuantizaciones bajas, pero no hay confirmación del autor.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; depende del nivel de cuantización elegido.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo); los tags incluyen `endpoints_compatible` y `transformers`, lo que sugiere compatibilidad con endpoints estilo OpenAI y con la librería transformers para los safetensors.
+- Latencia y throughput: no disponibles.
+- Tamaño del repositorio: 3.991,7 GB, lo que refleja la gran cantidad de cuantizaciones y ficheros publicados (53 rutas GGUF legacy más la familia multilingüe).
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa con otros modelos de la misma categoría. El modelo es una variante modificada de Qwen3.8-27B, pero no se han publicado datos comparativos de rendimiento ni de calidad frente a alternativas como Llama 3.1 27B o Mistral 27B.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B RVN Heretic Abliterated (este) | ≈27B | 262.144 | Apache-2.0 | GGUF, safetensors | Abliteración ARA de 3 pasadas, KL ≈0,0085, 0–1/100 rechazos |
+| Qwen/Qwen3.8-27B (base) | ≈27B | 262.144 | Apache-2.0 | safetensors | Modelo original con guardarraíles intactos |
+| trohrbaugh/Qwen3.8-27B-heretic-ara | ≈27B | 262.144 | Apache-2.0 | no disponible | Primera pasada ARA, KL 0,0535, 3/100 rechazos |
+| Otras variantes abliteradas de la familia Qwen3.8 | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- **Licencia**: la licencia se indica como `other`, y el autor remite a la del modelo fuente. No se especifican los términos exactos, por lo que se recomienda revisar la licencia de Qwen3.8-27B antes de un uso comercial.
-- **Contenido sin filtrar**: al ser una variante *uncensored*, el modelo puede generar contenido inapropiado, ofensivo o peligroso. No se recomienda su uso en aplicaciones orientadas al público general sin medidas de moderación adicionales.
-- **Sesgos y alucinaciones**: no se ha documentado ningún análisis de sesgos ni de tasas de alucinación. Al ser un modelo modificado, estos riesgos pueden verse incrementados.
-- **Calidad de cuantizaciones extremas**: las versiones IQ1 y TQ presentan una degradación severa de calidad y solo son adecuadas para pruebas o casos muy específicos.
-- **Soporte de producción**: no hay evidencia de pruebas exhaustivas en entornos de producción; se recomienda validar el comportamiento del modelo antes de un despliegue crítico.
-- **Contexto**: no se ha confirmado la longitud de contexto nativa del modelo; el valor de 32768 usado en el ejemplo es una configuración de llama.cpp, no un dato oficial.
+- Modelo con guardarraíles reducidos por diseño: responde a peticiones dañinas que el base rechazaría. El autor lo restringe explícitamente a mayores de 18 años y a investigación, escritura creativa y roleplay.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual; la abliteración no garantiza mejora ni degradación de la veracidad, pero no hay datos al respecto.
+- Sesgos conocidos: no documentados en la información disponible.
+- Idiomas: no se detalla la lista de idiomas soportados, aunque existe una familia multilingüe de GGUF.
+- Licencia: Apache-2.0 permite uso comercial, pero el propio autor advierte de que el uso debe respetar la legislación local; el contenido generado puede ser ilegal en algunas jurisdicciones.
+- Historial del repositorio: los ficheros legacy corresponden a una variante de abliteración anterior y están superados por los ficheros RVN; el autor recomienda usar RVN para nuevos despliegues.
+- Compatibilidad de plantilla: la plantilla de chat oficial está embebida en los GGUF multilingües y en las 53 rutas legacy reparadas; usar plantillas externas puede romper el tool calling y el control de thinking.
+- Ficheros MTP: solo los `*-mtp.gguf` incluyen la cabeza draft para decodificación especulativa; los ficheros base la excluyen.
+- No hay datos publicados de rendimiento en benchmarks estándar, latencia ni requisitos de hardware verificados por el autor.
 
 ## Enlaces
 
-- [Repositorio Hugging Face del modelo](https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF)
-- [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [Pesos heretic de trohrbaugh](https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic)
+- Repositorio Hugging Face: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Fuente de abliteración ARA: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
+- Herramienta heretic (implementación de ARA): https://github.com/p-e-w/heretic

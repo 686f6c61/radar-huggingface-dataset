@@ -22,9 +22,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1399,
+  "likes": 1400,
   "downloads_30d": 29059,
-  "trending_score": 17,
+  "trending_score": 18,
   "parameters": 2446182725504,
   "parameters_human": "2446.18B",
   "storage_bytes": 4892378458656,
@@ -45,29 +45,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qwen3.8 - openlm.ai",
-      "url": "https://openlm.ai/qwen3.8/",
-      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
     },
     {
-      "title": "Qwen (Qwen) - Hugging Face",
-      "url": "https://huggingface.co/Qwen",
-      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
     },
     {
-      "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable ...",
-      "url": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
-      "snippet": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open ecosystem. It has 2.4T total parameters with 95B activated per token. It has 2.4T total parameters with 95B activated per token. It&#x27;s a fine-grained mixture of experts (MoE) architecture with a hybrid of full and linear attention, a context ..."
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
     },
     {
-      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
-      "snippet": "Qwen3.8 is Qwen&#x27;s new family of models, including Qwen3.8-27B, Qwen3.8- 2.4T-A95B and Qwen3.8 -Max. Qwen3.8 has thinking capabilities and a 256K context window (up to 1M tokens). Qwen3.8-27B, the upcoming 27B parameter model will be released this week. Qwen3.8-2.4T-A95B is a 2.4T parameter open-weight model (95B active) that rivals GPT-5.6 Sol."
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen combines chain-of-thought reasoning with creative idea generation to craft narratives, develop characters, and explore plots …"
     },
     {
-      "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable ...",
-      "url": "https://forums.developer.nvidia.com/t/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/379956",
-      "snippet": "Originally published at: Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72 | NVIDIA Technical Blog Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open ecosystem. It has 2.4T total parameters with 95B activated per token. It has 2.4T total parameters ..."
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large …"
     }
   ]
 }

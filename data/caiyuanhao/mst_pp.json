@@ -5,7 +5,7 @@
   "author": "CaiYuanhao",
   "url": "https://huggingface.co/CaiYuanhao/MST_pp",
   "created_at": "2026-11-07T21:48:38.000Z",
-  "updated_at": "2026-11-10T22:18:51.000Z",
+  "updated_at": "2026-11-17T07:17:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 29,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 4505,
+  "downloads_30d": 4547,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
@@ -45,26 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "IndexTeam (Index Team) - Hugging Face",
-      "url": "https://huggingface.co/IndexTeam",
-      "snippet": "Research papers behind Index-Translate: the model family technical report, HOMURA, and RIVAL. ... IndexTeam/Index-Nailong-9B-GGUF. Translation • 9B • Updated in ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=qwen3_5_text",
-      "snippet": "IndexTeam/Index-Nailong-9B. Translation • 9B • Updated 1 day ago • 193 • 8 ... prithivMLmods/JEV-9B-GGUF. Text Classification • 9B • Updated 6 days ago ..."
-    },
-    {
-      "title": "Translation Models - Hugging Face",
-      "url": "https://huggingface.co/models?pipeline_tag=translation",
-      "snippet": "IndexTeam/Index-Nailong-9B. Translation • 9B • Updated 1 day ago • 208 • 8 ... IndexTeam/Index-Translate-35B-A3B-preview-GGUF. Translation • 36B ..."
-    },
-    {
-      "title": "Past three days - Hype - ML/AI News - Replicate",
-      "url": "http://hype.replicate.dev/?filter=past_three_days&sources=GitHub%2CHuggingFace%2CReddit%2CReplicate",
-      "snippet": "IndexTeam/Index-Echo-S2ST-9B 9. Online demo · GitHub · Technical report ... **OpenJev decisions on Apple silicon, in about 15 GB. 248. NU-World-Model-Embodied- ..."
-    }
-  ]
+  "sources": []
 }

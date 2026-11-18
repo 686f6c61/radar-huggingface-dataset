@@ -23,11 +23,10 @@
     "license:apache-2.0",
     "text-embeddings-inference",
     "endpoints_compatible",
-    "deploy:azure",
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 237471,
+  "downloads_30d": 241607,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -49,29 +48,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qdrant/all_miniLM_L6_v2_with_attentions · Hugging Face",
-      "url": "https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Qdrant - Vector Search Engine",
+      "url": "https://qdrant.tech/",
+      "snippet": "Qdrant is an Open-Source Vector Search Engine written in Rust. It provides fast and scalable vector similarity search service with …"
     },
     {
-      "title": "Qdrant/all_miniLM_L6_v2_with_attentions at main - Hugging Face",
-      "url": "https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions/tree/main",
-      "snippet": "License:apache-2.0 Model card FilesFiles and versions Community 3 Train Deploy Use this model main all_miniLM_L6_v2_with_attentions 2 contributors History:4 commits generall93 Anush008 Added model card (#1) 7dab1a1 verified8 months ago .gitattributes Safe 1.52 kBinitial commit11 months ago README.md Safe 1.19 kBAdded model card (#1)8 months ago ..."
+      "title": "GitHub - qdrant/qdrant: Qdrant - High-performance, massive-scale …",
+      "url": "https://github.com/qdrant/qdrant",
+      "snippet": "Qdrant (read: quadrant) is a vector similarity search engine and vector database. It provides a production-ready service with a …"
     },
     {
-      "title": "all_miniLM_L6_v2_with_attentions · Model · Inferix",
-      "url": "https://inferix.co/models/Qdrant/all_miniLM_L6_v2_with_attentions",
-      "snippet": "ONNX port of sentence transformers/all MiniLM L6 v2 adjusted to return attention weights. This model is intended to be used for BM42 searches. Usage Here&#x27;s an example of performing inference using the model with FastEmbed. Note: This model is supposed to be used with Qdrant. Vectors have to be configured with Modifier.IDF. Inferix Network operational all_miniLM_L6_v2_with_attentions PUBLIC ..."
+      "title": "Documentation - Qdrant",
+      "url": "https://qdrant.tech/documentation/",
+      "snippet": "Official Qdrant documentation for vector search and retrieval — quickstarts, deployment guides, integrations, and references for self …"
     },
     {
-      "title": "Qdrant/all_miniLM_L6_v2_with_attentions - Endor Labs",
-      "url": "https://www.endorlabs.com/ai-model/qdrant-all-minilm-l6-v2-with-attentions",
-      "snippet": "Qdrant/all_miniLM_L6_v2_with_attentions AI model with 234491 downloads"
+      "title": "Qdrant - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/data-science/qdrant/",
+      "snippet": "Apr 1, 2026 · Qdrant is an open source vector database that stores embeddings and enables fast similarity search based on …"
     },
     {
-      "title": "Architecture graph for Qdrant/all_miniLM_L6_v2_with_attentions.",
-      "url": "https://hfviewer.com/Qdrant/all_miniLM_L6_v2_with_attentions",
-      "snippet": "Qdrant/all_miniLM_L6_v2_with_attentions neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model Qdrant/all_miniLM_L6_v2_with_attentions. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges ..."
+      "title": "Qdrant (Qdrant) - Hugging Face",
+      "url": "https://huggingface.co/Qdrant",
+      "snippet": "Qdrant/PubMed-MV ... Qdrant/FineWeb-10B ... Qdrant/Coyo-VE ... Qdrant/gte-multilingual-product-ads-1M ... Qdrant/gte-multilingual …"
     }
   ]
 }

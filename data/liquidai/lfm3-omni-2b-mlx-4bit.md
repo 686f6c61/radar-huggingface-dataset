@@ -2,50 +2,52 @@
 
 ## Resumen
 
-LFM3-Omni-2B-MLX-4bit es la versión cuantizada a 4 bits, optimizada para Apple Silicon mediante el framework MLX, del modelo omnimodal LFM3-Omni-2B desarrollado por Liquid AI. Se trata de un modelo any-to-any que combina capacidades de lenguaje, visión y audio en un único modelo compacto de unos 2.100 millones de parámetros, capaz de realizar reconocimiento de voz (ASR), síntesis de voz (TTS) con salida de audio, y preguntas y respuestas sobre imágenes.
+LFM3-Omni-2B-MLX-4bit es la variante cuantizada a 4 bits en formato MLX del modelo multimodal LFM3-Omni-2B de Liquid AI, pensada para ejecución en Apple Silicon. Se trata de un modelo "any-to-any" que procesa y genera texto, audio e imágenes, incluyendo reconocimiento de voz (ASR), síntesis de voz (TTS) y respuesta a preguntas sobre imágenes, todo dentro de un único modelo de aproximadamente 2.166 millones de parámetros.
 
-El modelo original pertenece a la familia LFM3 (Liquid Foundation Models) de Liquid AI, basada en arquitecturas propias de la compañía. Esta variante cuantizada reduce el peso de los parámetros del lenguaje a 4 bits (con partes críticas a 6 bits), manteniendo la torre de visión, el codificador de audio y el códec de audio en BF16, lo que permite ejecutar el modelo completo en portátiles y escritorios Mac con Apple Silicon ocupando unos 2,1 GB de memoria.
+El modelo base pertenece a la familia LFM3 de Liquid AI, una generación de modelos diseñada por la empresa para despliegue eficiente en dispositivos. Esta versión concreta aplica cuantización de 4 bits al backbone lingüístico mientras mantiene en BF16 la torre de visión, los proyectores, el codificador de audio, el decodificador de profundidad y el códec de audio, lo que permite un consumo de pesos de 1,96 GB más 0,15 GB para el códec.
 
-Su relevancia reside en ofrecer capacidades omnimodales (voz a voz, imagen a texto, texto a voz) en un formato ligero ejecutable localmente en hardware de consumo, algo poco habitual en modelos de este tamaño. La propia Liquid AI recomienda, no obstante, la versión de 8 bits como mejor equilibrio entre calidad y tamaño, ya que esta variante de 4 bits pierde algo de precisión al ser el modelo más pequeño de la familia.
+Su relevancia actual radica en que ofrece capacidades omnicanal (audio, visión y texto) en un tamaño que cabe en memoria unificada de equipos Apple, con licencia LFM 1.0 y soporte para 23 idiomas. La model card del autor advierte que esta variante de 4 bits pierde algo de precisión y recomienda la versión de 8 bits como compromiso óptimo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM3 (Liquid Foundation Models), omnimodal any-to-any con torre de visión, codificador de audio y códec de audio; detalles completos no disponibles |
-| Parametros totales | 2.166.928.384 (≈2,17 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | no disponible (modelo omnicanal con backbone lingüístico, torre de visión, codificador de audio y decodificador de profundidad; detalles en la model card del modelo base) |
+| Parametros totales | 2.166.928.384 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits afín con grupos de 64 en el backbone de lenguaje; 6 bits en token embedding (capa de salida), proyecciones value y feed-forward down; BF16 en torre de visión, proyectores, codificador de audio, depth decoder y códec de audio |
-| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (22 idiomas) |
-| Licencia | LFM Open License v1.0 (lfm1.0, licencia propia de Liquid AI, "other") |
-| Formato de pesos | safetensors (formato MLX) |
+| Tipos de cuantizacion | 4 bits (afín, grupos de 64) en el backbone lingüístico; 6 bits en embeddings de tokens, proyecciones de valor y down de feed-forward; BF16 en visión, audio y códec |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr |
+| Licencia | lfm1.0 (other) |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo deriva de LFM3-Omni-2B, un modelo omnimodal de la familia LFM3 de Liquid AI. La arquitectura integra varios componentes: un backbone de lenguaje, una torre de visión con su proyector, un codificador de audio con proyector, un depth decoder y un códec de audio (en el directorio `audio_tokenizer/`) que permite generar salida de voz. El pipeline etiquetado como any-to-any indica que acepta y genera múltiples modalidades: texto, imagen y audio.
+La información disponible no detalla la arquitectura interna del modelo base más allá de que se trata de un modelo omnicanal que integra un backbone lingüístico, una torre de visión con su proyector, un codificador de audio con su proyector, un decodificador de profundidad y un códec de audio separado en el directorio `audio_tokenizer/`. Esta variante MLX cuantiza el backbone a 4 bits con cuantización afín y grupos de 64, elevando a 6 bits el embedding de tokens (que también actúa como capa de salida), las proyecciones de valor y las proyecciones down de feed-forward en las capas que llama.cpp Q4_K_M mejora. El resto de componentes (visión, audio, decodificador de profundidad y códec) permanecen en BF16.
 
-En cuanto a la cuantización, el backbone de lenguaje usa cuantización afín de 4 bits con grupos de 64, excepto el embedding de tokens (que también actúa como capa de salida) y las proyecciones value y feed-forward down en las capas que llama.cpp actualizaría a Q4_K_M, que usan 6 bits. Los componentes de visión, audio y el códec permanecen en BF16 para preservar la calidad de las modalidades no textuales. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. Tampoco se detallan innovaciones técnicas específicas más allá de la propia naturaleza omnicanal del modelo y la estrategia de cuantización mixta descrita.
 
 ## Capacidades
 
-- Reconocimiento de voz (ASR): transcribe audio a texto, configurable por idioma mediante el system prompt (por ejemplo, "Perform ASR in English").
-- Texto a voz (TTS): genera audio de salida en formato WAV a 24 kHz, con selección de voz e idioma vía system prompt (por ejemplo, voz femenina en inglés americano).
-- Comprensión de imágenes: responde preguntas sobre imágenes, con instrucciones para basar las respuestas exclusivamente en el contenido visual.
-- Generación de texto: capacidades conversacionales y de lenguaje del backbone LFM3.
-- Capacidades multilingües: soporte declarado para 22 idiomas, incluido el castellano.
-- Pipeline any-to-any: combinación de entradas y salidas multimodales (voz a voz, imagen a texto, texto a voz).
-- No se dispone de información sobre soporte de tool calling, agentes, ni capacidades de razonamiento extendido.
+- Generación de texto y razonamiento general.
+- Reconocimiento automático de voz (ASR) en múltiples idiomas.
+- Síntesis de voz (TTS) con salida en WAV a 24 kHz, con selección de voz y acento mediante prompts de sistema.
+- Respuesta a preguntas sobre imágenes (VQA) basada en el contenido visual.
+- Conversión voz a voz (speech-to-speech) al combinar ASR y TTS en un mismo modelo.
+- Procesamiento any-to-any: entrada y salida en combinaciones de texto, audio e imagen.
+- Soporte multilingüe en 23 idiomas, incluido el español.
+- Capacidad de controlar la modalidad de salida mediante parámetros (`--output-modality audio`).
+- Decodificación greedy para respuestas de texto y muestreo con `audio_temperature=0.4` y `audio_repetition_penalty=1.2` para audio.
 
 ## Casos de uso
 
-- Transcripción local de notas de voz: ejecutando el modelo con MLX-VLM en un Mac, se puede transcribir audio a texto sin enviar datos a la nube, útil para flujos con requisitos de privacidad.
-- Generación de locuciones y narraciones: el modo TTS produce WAV a 24 kHz con voces configurables, adecuado para prototipado de asistentes de voz o generación de audio para contenidos.
-- Asistente visual local: preguntas sobre capturas de pantalla, fotografías o documentos escaneados directamente en el dispositivo, aprovechando la torre de visión en BF16.
-- Prototipado de agentes de voz speech-to-speech: combina ASR, generación de texto y TTS en un solo modelo para construir demos de conversación por voz sin orquestar varios servicios.
-- Aplicaciones on-device en Apple Silicon: con unos 2,1 GB de pesos, cabe en Macs con 8 GB o más de memoria unificada, ideal para apps nativas con MLX.
-- Procesamiento multilingüe: soporte de 22 idiomas permite construir herramientas de transcripción y diálogo para equipos internacionales, incluido el castellano.
-- Evaluación y comparación de cuantizaciones: útil como referencia para medir la pérdida de calidad de 4 bits frente a la variante de 8 bits recomendada por el fabricante.
+- Transcripción de reuniones y notas de voz: el modelo puede realizar ASR directamente sobre archivos WAV con el prompt de sistema adecuado, lo que permite transcribir audio en cualquiera de los 23 idiomas soportados sin depender de servicios externos.
+- Asistentes de voz locales en macOS: combinando ASR y TTS, se puede construir un asistente que escuche, razone y responda por voz en el propio dispositivo Apple, sin enviar audio a la nube.
+- Accesibilidad para personas con discapacidad visual: dado que responde preguntas sobre imágenes, puede describir el contenido de una fotografía o leer señales y texto visible en una escena.
+- Lectura de documentos y carteles: con la entrada de imagen, el modelo puede extraer y responder preguntas sobre texto presente en capturas o fotografías, útil en aplicaciones de digitalización.
+- Generación de audiolibros y locuciones: la salida TTS a 24 kHz permite convertir texto en audio con distintas voces, adecuado para prototipos de narración o contenido accesible.
+- Traducción multimodal: al soportar 23 idiomas y múltiples modalidades, puede transcribir audio en un idioma y generar respuesta hablada o escrita en otro, útil en atención al cliente multilingüe.
+- Prototipado de agentes conversacionales en Apple Silicon: al ejecutarse con MLX-VLM en equipos Apple, sirve para validar flujos de voz e imagen antes de desplegar en infraestructura mayor.
 
 ## Benchmarks y rendimiento
 
@@ -53,40 +55,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Memoria estimada: 1,96 GB de pesos del modelo más 0,15 GB del códec de audio en `audio_tokenizer/`; el repo completo ocupa 2,1 GB. Con overhead de inferencia, conviene disponer de al menos 4 GB de memoria unificada.
-- Hardware: diseñado específicamente para Apple Silicon (Mac con chips M1/M2/M3/M4); no es adecuado para GPUs NVIDIA en este formato MLX.
-- Consumer hardware: sí, cabe en prácticamente cualquier Mac moderno con Apple Silicon, incluidos portátiles con 8 GB de memoria unificada.
-- Despliegue: MLX mediante MLX-VLM (soporte en progreso según la model card, pendiente de una release que lo incluya). Los comandos de ejemplo usan `python -m mlx_vlm.generate` con opciones `--audio`, `--image` y `--output-modality audio`. No aplica llama.cpp, vLLM, TGI u Ollama en este formato.
-- Decodificación: las respuestas de texto usan greedy decoding (temperature 0); la salida de voz muestrea con `audio_temperature=0.4` y `audio_repetition_penalty=1.2` por defecto. No hay datos de latencia o throughput publicados.
+- Pesos del modelo: 1,96 GB en 4 bits, más 0,15 GB del códec de audio en `audio_tokenizer/`, lo que suma aproximadamente 2,1 GB de almacenamiento.
+- VRAM/memoria unificada estimada: al tratarse de un formato MLX, requiere memoria unificada de Apple Silicon; con 2,1 GB de pesos, cabe holgadamente en equipos con 8 GB o más de memoria unificada, aunque el consumo real durante la inferencia será superior por activaciones y buffers.
+- GPU recomendadas: Apple Silicon (series M1, M2, M3, M4 y superiores) con memoria unificada suficiente.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon; no está pensado para GPU NVIDIA en este formato (para ello habría que usar otras variantes del modelo base).
+- Opciones de despliegue: MLX-VLM 0.7.11 o superior mediante `python -m mlx_vlm.generate`; el modelo base puede desplegarse con otras herramientas según su model card original.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Modalidades | Cuantizacion | Licencia |
-|---|---|---|---|---|
-| LFM3-Omni-2B-MLX-4bit | ≈2,17 B | texto, imagen, audio (any-to-any) | 4/6 bits + BF16 | LFM Open License v1.0 |
-| LFM3-Omni-2B-MLX-8bit | ≈2,17 B | texto, imagen, audio (any-to-any) | 8 bits + BF16 (recomendada por Liquid AI) | LFM Open License v1.0 |
-| LFM3-Omni-2B (original) | ≈2,17 B | texto, imagen, audio (any-to-any) | sin cuantizar | LFM Open License v1.0 |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Formato |
+|---|---|---|---|---|---|
+| LFM3-Omni-2B-MLX-4bit | 2.166 M | no disponible | texto, audio, imagen | lfm1.0 | MLX safetensors 4 bits |
+| LFM3-Omni-2B-MLX-8bit | no disponible | no disponible | texto, audio, imagen | lfm1.0 | MLX safetensors 8 bits |
+| LFM3-Omni-2B (base) | no disponible | no disponible | texto, audio, imagen | lfm1.0 | safetensors |
 
-No se dispone de datos de rendimiento comparados con modelos omnimodales de otros fabricantes de tamaño similar (por ejemplo, variantes pequeñas de Qwen-Omni o Gemma audio) en la informacion proporcionada.
+La información disponible solo permite comparar con las variantes del mismo modelo de Liquid AI. No se dispone de datos de benchmarks ni de especificaciones de modelos competidores de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Pérdida de precisión: la propia Liquid AI indica que esta variante de 4 bits, al ser la más pequeña y cuantizada, pierde algo de exactitud y recomienda la versión de 8 bits como mejor compromiso.
-- Soporte en MLX-VLM aún en progreso: la model card señala que el soporte de LFM3-Omni en MLX-VLM no está incluido todavía en una release estable, lo que puede complicar la instalación.
-- Restricción de licencia: usa la LFM Open License v1.0 (licencia propia, etiquetada como "other"), no una licencia estándar permisiva; conviene revisar los términos antes de uso comercial.
-- Restricción de plataforma: el formato MLX solo funciona en Apple Silicon; para otras plataformas hay que recurrir al modelo base.
-- Idiomas: aunque se declaran 22 idiomas, no hay datos publicados sobre la calidad relativa de cada uno; el castellano está soportado pero sin métricas de referencia.
-- Datos no disponibles: longitud de contexto, benchmarks, tasas de alucinación y sesgos conocidos no están documentados en la informacion proporcionada.
-- Uso de `custom_code`: el modelo está etiquetado con `custom_code`, lo que implica ejecutar código del repositorio al cargarlo; revisar el código antes de usarlo en entornos sensibles.
+- La model card advierte explícitamente que esta variante de 4 bits pierde precisión respecto al modelo base y que la versión de 8 bits es el compromiso recomendado.
+- El formato MLX está orientado a Apple Silicon; no es directamente utilizable en GPU NVIDIA u otras plataformas sin conversión.
+- No se dispone de información sobre sesgos conocidos, tasas de alucinación ni evaluación de seguridad en la información proporcionada.
+- La longitud de contexto no está documentada en la información disponible, lo que limita la planificación de aplicaciones con ventanas largas.
+- La licencia LFM 1.0 es de tipo "other"; es necesario revisar el archivo LICENSE para conocer las restricciones de uso comercial antes de desplegar en producción.
+- El rendimiento en idiomas distintos del inglés puede variar; la model card no ofrece métricas por idioma.
+- Para TTS y ASR se depende de prompts de sistema específicos; un uso incorrecto puede degradar la calidad de la salida.
+- Requiere MLX-VLM 0.7.11 o superior; versiones anteriores no son compatibles.
 
 ## Enlaces
 
-- Modelo cuantizado (esta ficha): https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- Variante 8 bits recomendada: https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-8bit
-- MLX-VLM (repositorio): https://github.com/Blaizzy/mlx-vlm
-- Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Guia de despliegue MLX: https://docs.liquid.ai/deployment/on-device/mlx
+- Variante 8 bits: https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-8bit
+- Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm
 - Blog de LFM3: https://www.liquid.ai/blog/lfm3
-- Playground de Liquid AI: https://playground.liquid.ai/
-- Consola/API de Liquid AI: https://console.liquid.ai/dashboard
+- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
+- Guía de despliegue MLX: https://docs.liquid.ai/deployment/on-device/mlx
+- Consola de Liquid AI: https://console.liquid.ai/dashboard
+- Playground: https://playground.liquid.ai/

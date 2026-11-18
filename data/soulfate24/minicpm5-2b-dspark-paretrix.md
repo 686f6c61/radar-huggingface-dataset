@@ -2,116 +2,122 @@
 
 ## Resumen
 
-MiniCPM5-2B-DSpark-Paretrix es una coleccion de cuantizaciones GGUF del modelo openbmb/MiniCPM5-2B, un transformer denso de aproximadamente 2,52 mil millones de parametros desarrollado por OpenBMB. La ficha la publica el usuario Soulfate24 bajo el paraguas de su suite Paretrix Quantization Suite, cuyo objetivo es generar recetas de cuantizacion optimizadas segun el principio de Pareto en lugar de aplicar un bitwidth uniforme a toda la red. El paquete incorpora ademas el draft checkpoint openbmb/MiniCPM5-2B-DSpark, pensado para decodificacion especulativa.
+MiniCPM5-2B-DSpark-Paretrix es una familia de cuantizaciones GGUF del modelo MiniCPM5-2B, desarrollado originalmente por OpenBMB y publicado por el usuario Soulfate24. El modelo base es un transformer denso de 2.516.756.480 parámetros (aproximadamente 2,5 mil millones), orientado a generación de texto, contexto largo, tool calling y despliegue en dispositivos de borde. Esta variante no modifica los pesos originales: redistribuye el presupuesto de bits por clase de tensor mediante la suite Paretrix para obtener un mejor compromiso entre tamaño, perplejidad y divergencia KL respecto a la referencia BF16.
 
-El modelo base pertenece a la serie MiniCPM5 de OpenBMB, orientada a despliegue on-device y en entornos con recursos limitados. Segun el repositorio GitHub de OpenBMB, MiniCPM5-2B es el segundo modelo de la serie tras MiniCPM5-1B y esta construido sobre una arquitectura densa de tipo LlamaForCausalLM, alcanzando lo que el autor describe como SOTA en la clase de 2B de codigo abierto. La relevancia de esta ficha concreta es practica: ofrece variantes cuantizadas con presupuestos de tamano calibrados (desde 2556 MiB hasta 1016 MiB) y metricas de degradacion medidas por el propio autor.
+La relevancia de esta publicación radica en su enfoque de cuantización empírica y activación-consciente. En lugar de aplicar una familia de bitwidth uniforme a toda la red, Paretrix mide la respuesta de cada clase de tensor a cada tipo de cuantización contra los logits BF16 y planifica cada escalón mediante una mochila exacta. El resultado son variantes con nombres como Fidelity-48pc, Precision-42pc, Quality-36pc, Compact-33pc, Mini-30pc, Nano-27pc, Pico-24pc y Femto-21pc, cada una con métricas de PPL, KLD y RMS Δp publicadas.
 
-La aportacion diferenciadora no es el modelo en si, sino el metodo de cuantizacion. Paretrix mide la sensibilidad real de activaciones por clase de tensor mediante `llama-imatrix`, aprende tablas de tasa a partir de campanas cruzadas entre arquitecturas y asigna bitwidths bajo objetivos exactos de presupuesto, en lugar de recetas planas. El resultado son tiers con un compromiso calidad/compresion que, segun los datos publicados, supera a las cuantizaciones stock equivalentes de llama.cpp en varios puntos de la curva.
+El repositorio incluye además el módulo de decodificación especulativa DSpark del modelo base, lo que permite acelerar la inferencia en llama.cpp. Con licencia Apache 2.0, idiomas inglés y chino, y un tamaño de repo de 30,7 GB que alberga todas las variantes, está pensado para desarrolladores que necesitan ejecutar un modelo de 2,5B con contexto largo en hardware modesto sin renunciar a una calidad medible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (LlamaForCausalLM), con draft checkpoint DSpark para decodificacion especulativa |
-| Parametros totales | 2.516.756.480 (aproximadamente 2,52 mil millones) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 131.072 tokens (131K) segun fuentes secundarias; no confirmado en la model card |
-| Tipos de cuantizacion | GGUF Paretrix: Fidelity-48pc, Precision-42pc, Quality-36pc, Compact-33pc, Mini-30pc, Nano-27pc, Pico-24pc, Femto-21pc. Referencias stock: Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx |
-| Idiomas soportados | ingles (en), chino (zh) |
+| Arquitectura | Transformer denso (familia MiniCPM5, tag `llama` en GGUF) |
+| Parametros totales | 2.516.756.480 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | Contexto largo segun tags (`long-context`); valor exacto no disponible |
+| Tipos de cuantizacion | GGUF híbridos Paretrix: Fidelity-48pc, Precision-42pc, Quality-36pc, Compact-33pc, Mini-30pc, Nano-27pc, Pico-24pc, Femto-21pc; bases stock Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx |
+| Idiomas soportados | Inglés (en) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones Paretrix) y safetensors (pesos base; el repositorio ocupa 13,4 GB) |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
+| Modelo base | openbmb/MiniCPM5-2B y openbmb/MiniCPM5-2B-DSpark |
+| Tamano del repo | 30,7 GB (todas las variantes) |
+| Libreria | transformers, llama.cpp |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer denso de tipo LlamaForCausalLM, sin capas MoE ni mecanismos de atencion lineal o hibridos SSM, segun lo indicado en la evaluacion de Spark Arena. La serie MiniCPM5 de OpenBMB se posiciona explicitamente para despliegue local y en dispositivos con recursos restringidos. El checkpoint DSpark que acompania a estas cuantizaciones es un modulo de decodificacion especulativa independiente: la evaluacion de Spark Arena lo configura con `num_speculative_tokens=7`, valor que coincide con el `block_size` del propio draft, y con muestreo greedy en el draft para preservar la paridad de verificacion sin perdida con el modelo objetivo a temperatura cero.
+El modelo subyacente es un transformer denso de la familia MiniCPM5 con 2.516.756.480 parámetros. Los tags del repositorio indican compatibilidad con la arquitectura `llama` en el ecosistema GGUF y capacidades de contexto largo, tool calling y decodificación especulativa. La información disponible no detalla el número exacto de capas, dimensiones ocultas ni la longitud máxima de contexto, por lo que esos datos deben consultarse en la model card del modelo base openbmb/MiniCPM5-2B.
 
-Respecto a los datos de entrenamiento, las etiquetas de la ficha referencian los datasets de OpenBMB Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code y las colecciones de SFT y RL (UltraData-SFT-2605, UltraData-SFT-Agent-2609, UltraData-RL-2609). No se especifica en la informacion disponible el numero total de tokens, la composicion exacta del dataset ni los detalles del pipeline de alineamiento (RLHF/DPO/RL) mas alla de la existencia de esos conjuntos.
+Los datos de entrenamiento del modelo base, según los datasets declarados, incluyen openbmb/Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609. Esta composición sugiere un pipeline que cubre preentrenamiento web y de código/matemáticas, seguido de ajuste supervisado y una fase de aprendizaje por refuerzo orientada a agentes. No se especifican en la información proporcionada el número total de tokens, la mezcla exacta ni si se emplearon DPO o RLHF con preferencias humanas.
 
-La innovacion tecnica de esta publicacion concreta es el metodo Paretrix. Segun la propia suite, cada tier se calcula midiendo la sensibilidad de activaciones por clase de tensor con `llama-imatrix`, aprendiendo tablas de tasa de campanas cruzadas y resolviendo la asignacion de bitwidths como un problema de mochila calibrado por tasa cuando la heterogeneidad compensa, o con recetas planas cuando la uniformidad es suficiente. La suite se presenta como aplicable tanto a modelos GGUF como a modulos de decodificacion especulativa.
+La innovación técnica de esta publicación concreta es la cuantización Paretrix. El método parte de tres bases stock (Q8_0, Q6_K-imx e IQ4_XS-imx), mueve cada clase de tensor de forma aislada a cada tipo de cuantización y mide la desviación frente a los logits BF16. Con esas celdas, una mochila exacta planifica cada escalón y un duelo en el régimen de veredicto decide si el plan sustituye al campeón. También se incluye el módulo DSpark de decodificación especulativa, que actúa como draft para acelerar la generación.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y chino.
-- Procesamiento de contexto largo, con ventanas de hasta 131K tokens segun fuentes secundarias, adecuado para documentos extensos sin truncado.
-- Tool calling y function calling, segun las etiquetas declaradas por el autor.
-- Soporte de flujos de agente y razonamiento multi-paso, reflejado en el uso del dataset UltraData-SFT-Agent-2609.
-- Decodificacion especulativa mediante el draft DSpark, con verificacion sin perdida respecto al modelo objetivo en modo greedy.
-- Despliegue on-device y en el edge, con variantes que caben por debajo de 1,1 GiB.
-- Capacidades multilingues limitadas a en y zh; no se declaran otros idiomas.
-- No se declaran capacidades de vision, audio ni modo de razonamiento explicito (thinking mode) en la informacion disponible.
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento de múltiples pasos y soporte de agentes, según los datasets de SFT-Agent y RL declarados.
+- Tool calling / function calling, indicado explícitamente en los tags del modelo.
+- Contexto largo, útil para documentos extensos y conversaciones multi-turno.
+- Capacidades de código y matemáticas, respaldadas por los datasets UltraData-Code y UltraData-Math.
+- Decodificación especulativa mediante el módulo DSpark, que acelera la inferencia en llama.cpp.
+- Despliegue en dispositivo y edge AI, gracias a su tamaño de 2,5B y a las variantes GGUF de bajo peso.
+- Cuantización híbrida por clase de tensor con métricas de fidelidad publicadas (PPL, KLD, RMS Δp, top-p).
+- No se documentan capacidades de visión, audio ni un modo de pensamiento explícito en la información disponible.
 
 ## Casos de uso
 
-- Asistente local en dispositivos de gama baja: la variante Femto-21pc ocupa 1016 MiB, lo que permite ejecutar el modelo integramente en RAM o VRAM de portatiles, mini-PC y telefonos de gama alta sin conexion a red.
-- Procesamiento de documentos largos en el edge: con una ventana de hasta 131K tokens, el modelo puede resumir o extraer informacion de contratos, informes o expedientes completos sin fragmentacion previa, manteniendo todo el contexto en una sola pasada.
-- Atencion al cliente automatizada multilingue (en/zh): el modelo puede gestionar conversaciones multi-turno dentro de un presupuesto de memoria reducido, lo que abarata el coste por sesion en despliegues con muchas instancias concurrentes.
-- Agentes con tool calling en pipelines de automatizacion: el soporte declarado de function calling permite integrarlo como planificador ligero que invoca APIs, bases de datos o scripts externos en flujos multi-paso.
-- Servicio de inferencia con decodificacion especulativa: desplegando el modelo objetivo en BF16 con vLLM junto al draft DSpark y `num_speculative_tokens=7`, se puede reducir la latencia por token en cargas interactivas sin alterar la salida.
-- Generacion de codigo asistida en IDE: el modelo base se entrena con UltraData-Code, de modo que puede emplearse para autocompletado y explicacion de fragmentos en editores locales, con la variante Precision-42pc como equilibrio entre calidad y huella.
-- Clasificacion y etiquetado de texto a gran escala: al ser un modelo pequeno y cuantizable a partir de 1 GiB, es viable ejecutar lotes masivos de clasificacion, extraccion de entidades o moderacion en hardware modesto.
-- Investigacion en cuantizacion: la tabla de tiers Paretrix sirve como banco de pruebas reproducible para estudiar el compromiso entre PPL, KLD y tamano en modelos de 2B, comparando recetas empiricas frente a las stock de llama.cpp.
+- Asistente conversacional en local: con variantes Mini-30pc (1.487 MiB) o Nano-27pc (1.350 MiB) puede ejecutarse en portátiles y estaciones de trabajo sin GPU dedicada, gestionando diálogos multi-turno en inglés o chino.
+- Agente con tool calling en pipelines de automatización: los tags de tool calling y los datasets SFT-Agent permiten integrarlo como planificador que invoca APIs y funciones en flujos multi-paso.
+- Procesamiento de documentos largos: el soporte de contexto largo lo hace adecuado para resumir contratos, informes o hilos de correo extensos en una sola pasada, siempre que se confirme la ventana exacta en la model card del base.
+- Generación y revisión de código en entornos con recursos limitados: las variantes Quality-36pc o Compact-33pc ofrecen un equilibrio razonable para autocompletado y explicación de fragmentos en IDE locales.
+- Despliegue en dispositivos de borde: con Femto-21pc (1.072 MiB) o Pico-24pc (1.210 MiB) puede embeberse en routers, mini-PC o sistemas industriales para clasificación y generación de texto de baja latencia.
+- Aceleración de inferencia con draft especulativo: el módulo DSpark puede usarse como modelo borrador junto a un modelo mayor en llama.cpp para reducir la latencia de decodificación.
+- Prototipado rápido de aplicaciones NLP en investigación: la licencia Apache 2.0 y el formato GGUF facilitan experimentos reproducibles sin coste de licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible (no hay datos de MMLU, HumanEval, GSM8K ni similares). Lo que si se publica es una tabla de calidad de cuantizacion medida por el autor, con perplexity (PPL), divergencia KL (KLD), variacion RMS de probabilidad y cobertura top-p:
+La model card publica métricas de fidelidad de cuantización frente a BF16 (PPL, ΔPPL, KLD, RMS Δp y top-p), no benchmarks de tareas estándar como MMLU o HumanEval:
 
-| Modelo | MiB | PPL | Delta PPL | KLD | RMS dp | top-p | Pareto |
-|---|---:|---:|---:|---:|---:|---:|---|
-| Q8_0 (stock) | 2556 | 11,9393 | +0,0181 | 0,0015 | 0,99% | 97,8% | si |
-| Fidelity-48pc | 2309 | 11,9598 | +0,0386 | 0,0033 | 1,47% | 96,8% | si |
-| Q6_K-imx (stock) | 1974 | 11,9724 | +0,0512 | 0,0059 | 1,91% | 95,9% | equivalente a Precision-42pc (-0,0002, -1 MiB) |
-| Precision-42pc | 1973 | 11,9678 | +0,0466 | 0,0057 | 1,89% | 96,0% | si |
-| Q5_K_M-imx (stock) | 1724 | 12,0905 | +0,1693 | 0,0195 | 3,58% | 92,8% | inferior a Quality-36pc |
-| Quality-36pc | 1723 | 12,1180 | +0,1968 | 0,0175 | 3,43% | 93,3% | si |
-| Compact-33pc | 1593 | 12,2219 | +0,3007 | 0,0427 | 5,12% | 89,2% | si |
-| Mini-30pc | 1446 | 12,3731 | +0,4519 | 0,0672 | 6,53% | 86,7% | si |
-| IQ4_XS-imx (stock) | 1358 | 12,3977 | +0,4765 | 0,0722 | 6,69% | 86,9% | si |
-| Nano-27pc | 1306 | 12,6530 | +0,7318 | 0,0848 | 7,26% | 85,7% | si |
-| IQ3_M-imx (stock) | 1170 | 13,9101 | +1,9889 | 0,2027 | 11,74% | 78,6% | inferior a Pico-24pc |
-| Pico-24pc | 1154 | 13,9155 | +1,9943 | 0,1719 | 10,52% | 79,3% | si |
-| Femto-21pc | 1016 | 15,2794 | +3,3582 | 0,2918 | 14,25% | 73,9% | si |
+| Variante | MiB | PPL | ΔPPL | KLD | RMS Δp | top-p |
+|---|---:|---:|---:|---:|---:|---:|
+| Q8_0 (stock) | 2556 | 11.9747 | +0.0145 | 0.0015 | 1.02% | 97.8% |
+| Fidelity-48pc | 2309 | 11.9989 | +0.0387 | 0.0026 | 1.32% | 97.3% |
+| Precision-42pc | 2060 | 12.0119 | +0.0517 | 0.0040 | 1.59% | 96.6% |
+| Q6_K-imx (stock) | 1974 | 12.0129 | +0.0526 | 0.0059 | 1.92% | 95.8% |
+| Quality-36pc | 1772 | 12.0388 | +0.0785 | 0.0103 | 2.57% | 94.6% |
+| Q5_K_M-imx (stock) | 1724 | 12.1174 | +0.1571 | 0.0171 | 3.41% | 93.3% |
+| Compact-33pc | 1628 | 12.1418 | +0.1815 | 0.0166 | 3.35% | 93.2% |
+| Mini-30pc | 1487 | 12.3175 | +0.3573 | 0.0347 | 4.77% | 90.3% |
+| IQ4_XS-imx (stock) | 1358 | 12.4567 | +0.4965 | 0.0712 | 6.72% | 87.0% |
+| Nano-27pc | 1350 | 12.3951 | +0.4349 | 0.0546 | 5.88% | 88.4% |
+| Pico-24pc | 1210 | 12.9000 | +0.9398 | 0.1025 | 8.11% | 84.1% |
+| IQ3_M-imx (stock) | 1169 | 13.9382 | +1.9779 | 0.2027 | 11.87% | 78.5% |
+| Femto-21pc | 1072 | 14.1474 | +2.1871 | 0.2003 | 11.66% | 77.0% |
 
-Lectura de los datos: los tiers Paretrix mejoran a las cuantizaciones stock en el punto de comparacion correspondiente (Precision-42pc frente a Q6_K-imx, Quality-36pc frente a Q5_K_M-imx y Pico-24pc frente a IQ3_M-imx), sobre todo en KLD. No se dispone de comparaciones contra otros modelos en tareas downstream.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Huella de pesos segun tier GGUF: Femto-21pc 1016 MiB, Pico-24pc 1154 MiB, IQ3_M-imx 1170 MiB, Nano-27pc 1306 MiB, IQ4_XS-imx 1358 MiB, Mini-30pc 1446 MiB, Compact-33pc 1593 MiB, Quality-36pc 1723 MiB, Q5_K_M-imx 1724 MiB, Precision-42pc 1973 MiB, Q6_K-imx 1974 MiB, Fidelity-48pc 2309 MiB, Q8_0 2556 MiB.
-- VRAM estimada: sumar el contexto y los buffers KV al tamano de pesos. Para BF16 nativo del modelo base se necesitan aproximadamente 5 GB solo en pesos, mas cache KV. Con los tiers GGUF, la inferencia es viable en GPUs con 4 GB o incluso 2 GB en las variantes mas comprimidas.
-- GPU recomendadas: RTX 4090, A100 y H100 para servir el modelo en BF16 con vLLM y decodificacion especulativa a maxima concurrencia; RTX 3060, RTX 4060, RTX 2060 o GTX 1650 para los tiers GGUF en local.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada moderna y en muchas integradas, con las variantes Compact-33pc o inferiores. Las variantes Fidelity-48pc y Precision-42pc tambien caben con holgura en GPUs de 8 GB o mas.
-- Opciones de despliegue: llama.cpp, Ollama y derivados para los GGUF; vLLM para el modelo objetivo en BF16 junto al draft DSpark en decodificacion especulativa; tambien es compatible con la libreria transformers segun el campo `library_name`.
-- Latencia y throughput: no disponible. El unico dato operativo conocido es la configuracion de decodificacion especulativa con `num_speculative_tokens=7` y muestreo greedy del draft para paridad sin perdida con el objetivo.
+- VRAM estimada para inferencia: desde aproximadamente 1,1 GB (Femto-21pc, 1.072 MiB) hasta unos 2,5 GB (Q8_0, 2.556 MiB) para los pesos; hay que sumar el espacio de contexto KV.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 12 GB, RTX 4060, RTX 4090) puede alojar todas las variantes con contexto amplio; en A100/H100 el modelo queda sobredimensionado para uso individual, pero permite lotes grandes y servicio concurrente.
+- Cabe en GPU consumer: sí, en todas las variantes, incluso en GPUs con 4-6 GB de VRAM usando las variantes Mini o Nano.
+- Cabe en CPU: sí, las variantes de 1-1,5 GB son aptas para inferencia en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (importando el GGUF), transformers para el modelo base en safetensors; no se documenta soporte explícito de vLLM o TGI en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada. La decodificación especulativa con DSpark está pensada para reducir la latencia en llama.cpp, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Soulfate24/MiniCPM5-2B-DSpark-Paretrix | 2,52B | 131K (segun fuente secundaria) | GGUF + safetensors | Apache 2.0 | Tiers Paretrix con metricas PPL/KLD por tier; incluye draft DSpark |
-| openbmb/MiniCPM5-2B | 2,52B | no disponible en la informacion | safetensors | Apache 2.0 (heredada) | Modelo base denso; SOTA declarado en la clase 2B de OpenBMB |
-| openbmb/MiniCPM5-2B-DSpark | 2,52B + draft | no disponible | safetensors | Apache 2.0 (heredada) | Variante con checkpoint draft de decodificacion especulativa, sin cuantizar |
-| openbmb/MiniCPM5-1B | no disponible | no disponible | no disponible | no disponible | Primer modelo de la serie MiniCPM5, misma receta de entrenamiento a menor escala |
-| Soulfate24/MiniCPM5-2B-DSpark-ASHQ1-Remix-GGUF | 2,52B | no disponible | GGUF | Apache 2.0 (heredada) | Cuantizaciones alternativas del mismo autor bajo otra receta (ASHQ1 Remix) |
+| MiniCPM5-2B-DSpark-Paretrix | 2,52B | Largo (valor no disponible) | Apache 2.0 | GGUF | Cuantización híbrida por clase con métricas de fidelidad publicadas |
+| openbmb/MiniCPM5-2B (base) | 2,52B | Largo (valor no disponible) | Apache 2.0 | Safetensors | Referencia BF16, sin cuantizar |
+| openbmb/MiniCPM5-2B-DSpark (base) | 2,52B | Largo (valor no disponible) | Apache 2.0 | Safetensors | Incluye módulo draft especulativo |
+| Qwen2.5-3B | 3,09B | 32.768 tokens (referencia pública) | Apache 2.0 | Safetensors, GGUF | Alternativa de tamaño similar; datos de contexto según documentación pública de Qwen |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes mas alla de la tabla de calidad de cuantizacion del propio autor.
+No se dispone de comparativas de rendimiento en tareas entre estos modelos dentro de la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documentan analisis de sesgo en la informacion disponible. Al entrenarse principalmente con corpus en ingles y chino (Ultra-FineWeb y derivados), es previsible un sesgo de representacion hacia esos dominios.
-- Alucinacion: al ser un modelo de 2B parametros, la tasa de alucinacion en tareas de conocimiento factual sera superior a la de modelos grandes. ThinkLLM advierte explicitamente de que no igualara a modelos mayores en razonamiento complejo.
-- Limitaciones de idioma: solo se declaran ingles y chino. El rendimiento en castellano no esta verificado y probablemente sea degradado.
-- Limitaciones de contexto: la ventana de 131K tokens proviene de una fuente secundaria y no esta confirmada en la model card; conviene validarla antes de disenar un sistema que dependa de ella. Ademas, la calidad de recuperacion en ventanas muy largas no esta medida.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datasets de OpenBMB antes de un despliegue en produccion, ya que la ficha no reproduce los terminos completos.
-- Degradacion por cuantizacion: los tiers agresivos conllevan perdidas medibles. Femto-21pc incrementa la PPL en +3,3582 y el KLD hasta 0,2918, con una caida del top-p al 73,9%. No son adecuados para tareas sensibles a la fidelidad de la distribucion.
-- Naturaleza del repositorio: se trata de una publicacion de terceros (Soulfate24) sobre un modelo de OpenBMB. Los datos de calidad de la tabla los genera el propio autor y no han sido replicados de forma independiente hasta la fecha. El repositorio no registra descargas ni likes en el momento de la consulta.
-- Decodificacion especulativa: la paridad sin perdida con el modelo objetivo se declara para muestreo greedy del draft a temperatura cero; con otros metodos de muestreo del draft no se garantiza esa equivalencia.
+- Solo se declaran idiomas inglés y chino; el rendimiento en castellano u otras lenguas no está garantizado ni documentado.
+- Riesgo de alucinación inherente a modelos de 2,5B: menor fiabilidad factual que modelos de mayor tamaño en tareas de conocimiento abierto.
+- Las variantes de menor peso (Pico-24pc, Femto-21pc) muestran degradación notable: ΔPPL de +0,94 y +2,19 respectivamente, y top-p del 84,1% y 77,0%, lo que puede afectar a la coherencia en generaciones largas.
+- La cuantización Paretrix está optimizada para las métricas declaradas (PPL/KLD sobre logits BF16); el comportamiento en tareas específicas puede diferir y no se han publicado evaluaciones por tarea.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base openbmb/MiniCPM5-2B y de los datasets empleados.
+- El repositorio es una publicación de un tercero (Soulfate24), no del equipo original de OpenBMB; la procedencia y reproducibilidad de las cuantizaciones dependen del autor.
+- No se documentan salvaguardas específicas, filtros de contenido ni evaluaciones de sesgo en la información disponible.
+- El tamaño del repo (30,7 GB) obliga a descargar solo los archivos GGUF necesarios; descargar el repo completo es innecesario para la mayoría de despliegues.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/Soulfate24/MiniCPM5-2B-DSpark-Paretrix
-- Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
-- Cuantizaciones alternativas del mismo autor: https://huggingface.co/Soulfate24/MiniCPM5-2B-DSpark-ASHQ1-Remix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Soulfate24/MiniCPM5-2B-DSpark-Paretrix
+- Suite de cuantización Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
-- Checkpoint draft DSpark: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark
-- Repositorio GitHub de OpenBMB MiniCPM: https://github.com/OpenBMB/MiniCPM
-- Benchmark de servicio con vLLM y DSpark en Spark Arena: https://spark-arena.com/benchmark/sub1788851012419
-- Ficha divulgativa en ThinkLLM: https://thinkllm.dev/models/minicpm5-2b-dspark
+- Modelo base con draft DSpark: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark
+- Dataset Ultra-FineWeb: https://huggingface.co/datasets/openbmb/Ultra-FineWeb
+- Dataset UltraX-Preview: https://huggingface.co/datasets/openbmb/UltraX-Preview
+- Dataset Ultra-FineWeb-L3: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3
+- Dataset UltraData-Math: https://huggingface.co/datasets/openbmb/UltraData-Math
+- Dataset UltraData-Code: https://huggingface.co/datasets/openbmb/UltraData-Code
+- Dataset UltraData-SFT-2605: https://huggingface.co/datasets/openbmb/UltraData-SFT-2605
+- Dataset UltraData-SFT-Agent-2609: https://huggingface.co/datasets/openbmb/UltraData-SFT-Agent-2609
+- Dataset UltraData-RL-2609: https://huggingface.co/datasets/openbmb/UltraData-RL-2609

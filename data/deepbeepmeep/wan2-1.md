@@ -2,89 +2,88 @@
 
 ## Resumen
 
-DeepBeepMeep/Wan2.1 es un repositorio de modelos de generación de vídeo basados en la familia Wan 2.1 de Alibaba, publicados por el desarrollador DeepBeepMeep para su uso con el framework Wan2GP. Este proyecto está diseñado específicamente para democratizar la generación de vídeo por IA en hardware modesto, con requisitos de VRAM que pueden bajar hasta 6 GB y soporte para GPUs antiguas de la serie RTX 10XX y 20XX. El repositorio incluye pesos en formatos safetensors, GGUF y ONNX, lo que permite desplegar los modelos en diferentes entornos de inferencia.
+Wan2.1 es una familia de modelos generativos de vídeo desarrollada originalmente por Alibaba (Wan-AI) y redistribuida en este repositorio por DeepBeepMeep como parte del ecosistema WanGP (Wan2GP). El repositorio agrupa los pesos de los distintos modelos Wan 2.1 (texto-a-vídeo, imagen-a-vídeo y sus variantes) empaquetados en formato de archivo único para su uso directo con la interfaz web y el motor de inferencia de WanGP. El modelo base declarado es Wan-AI/Wan2.1-T2V-1.3B, un modelo de difusión para generación de vídeo a partir de texto.
 
-El modelo base es Wan-AI/Wan2.1-T2V-1.3B, un modelo de difusión texto-a-vídeo de 1.300 millones de parámetros, pero el repositorio contiene versiones con un total de 4.841.450.496 parámetros (aproximadamente 4,84 mil millones), lo que sugiere que se incluyen variantes adicionales como image-to-video (i2v) o versiones de mayor capacidad. La relevancia de este proyecto radica en que permite ejecutar modelos de vídeo de última generación en equipos de consumo, algo que hasta ahora estaba reservado a clústeres con GPUs de alta gama.
+El objetivo principal de esta redistribución no es proponer una arquitectura nueva, sino hacer accesibles los modelos Wan 2.1 a hardware modesto: WanGP está diseñado explícitamente para "GPU poor", con requisitos de VRAM que pueden bajar hasta 6 GB en determinados modelos, soporte para GPUs antiguas (series RTX 10XX y 20XX) y descarga automática de los pesos adaptados a la arquitectura del usuario. Esto lo convierte en una puerta de entrada práctica a la generación de vídeo open source sin necesidad de clústeres de GPUs de datacenter.
 
-El repositorio acumula más de 473.000 descargas y 47 likes, lo que indica una adopción considerable en la comunidad. Wan2GP, la herramienta asociada, ofrece una interfaz web completa, soporte para LoRAs, edición de máscaras, mejora de prompts y un sistema de colas para generar múltiples vídeos de forma asíncrona.
+El repositorio tiene un tamaño de 1784,8 GB, lo que refleja que contiene múltiples variantes del modelo (distintas resoluciones, tareas y cuantizaciones) en un único espacio. El recuento de parámetros de los safetensors principales es de 4.841.450.496, correspondiente a la variante de mayor tamaño presente en el repo, no necesariamente al modelo base de 1.3B. La licencia y los idiomas no están declarados en la información disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion latente para video (basado en Wan 2.1 T2V) |
-| Parametros totales | 4.841.450.496 (4,84 B) |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no disponible (modelo de video, no de texto) |
-| Tipos de cuantizacion | GGUF, ONNX, safetensors (full precision y cuantizados) |
-| Idiomas soportados | no disponible (presumiblemente multilingue, sin confirmar) |
-| Licencia | no disponible |
-| Formato de pesos | safetensors, GGUF, ONNX (single-file) |
+| Arquitectura | Modelo de difusión para generación de vídeo (no disponible el detalle exacto del backbone) |
+| Parámetros totales | 4.841.450.496 (safetensors principales del repo); modelo base declarado: Wan2.1-T2V-1.3B |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | Pesos en safetensors, GGUF y ONNX; el ecosistema WanGP descarga automáticamente la variante adaptada al hardware, incluyendo versiones de bajo VRAM |
+| Idiomas soportados | No disponibles |
+| Licencia | No disponible |
+| Formato de pesos | Safetensors, GGUF, ONNX (diffusion-single-file) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Wan 2.1 de Alibaba, un modelo de difusion latente para generacion de video. Wan 2.1 T2V-1.3B es la variante de 1.300 millones de parametros orientada a texto-a-video. El repositorio DeepBeepMeep/Wan2.1 incluye esta version base junto con posibles derivados (como i2v) que suman un total de 4,84 B de parametros, aunque no se especifica si se trata de un unico modelo o de una coleccion de variantes.
+No se dispone en la información proporcionada de detalles sobre la arquitectura interna (tipo de backbone, mecanismo de atención, número de pasos de difusión, uso de VAE o tokenizador de vídeo) ni sobre el proceso de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO). Lo que sí se documenta es que se trata de modelos de difusión para vídeo, con variantes de texto-a-vídeo (T2V) e imagen-a-vídeo (I2V), y que el repositorio redistribuye los pesos en formato de archivo único para su uso con WanGP.
 
-No se dispone de informacion detallada sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF o DPO) en la documentacion publica del repositorio. Se sabe que el modelo original de Wan 2.1 fue entrenado por Alibaba con un enfoque en generacion de video de alta calidad, pero los detalles especificos no estan disponibles en la informacion proporcionada.
-
-La innovacion principal de este repositorio no reside en la arquitectura del modelo en si, sino en la optimizacion para ejecucion en hardware limitado. Wan2GP implementa tecnicas de cuantizacion y gestion de memoria que permiten ejecutar estos modelos en GPUs con tan solo 6 GB de VRAM, algo inusual para modelos de difusion de video de este tamano.
+La innovación destacable de esta distribución es de ingeniería de despliegue, no de modelado: WanGP implementa carga adaptativa según la arquitectura de GPU, soporte para GPUs antiguas, una interfaz web completa, editor de máscaras, mejora de prompts, generación temporal y espacial, soporte de LoRAs y un sistema de colas para lotes de generación. El modelo base Wan2.1-T2V-1.3B es la variante ligera de la familia Wan 2.1, pensada para inferencia en hardware de consumo.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (T2V) con resoluciones y duraciones configurables.
-- Generacion de video a partir de imagen (I2V), segun el tag del repositorio.
-- Soporte para LoRAs, permitiendo personalizar el estilo y contenido de los videos generados.
-- Edicion de video mediante mascaras (mask editor) para modificar regiones especificas de un fotograma.
-- Mejora de prompts integrada (prompt enhancer) para optimizar las descripciones de texto.
-- Generacion temporal y espacial, permitiendo controlar la evolucion del video en el tiempo y el espacio.
-- Sistema de colas para encolar multiples generaciones y procesarlas de forma asincrona.
-- Compatibilidad con otros modelos de video e imagen como Hunyuan Video, LTX Video, Flux 1/2 y Qwen Image, todos a traves de Wan2GP.
+- Generación de vídeo a partir de texto (T2V) mediante el modelo base Wan2.1-T2V-1.3B.
+- Generación de vídeo a partir de imagen (I2V), según los tags del repositorio.
+- Soporte de LoRAs para personalizar el estilo o el contenido generado.
+- Editor de máscaras para generación espacial y temporal (inpainting/outpainting sobre vídeo).
+- Mejora de prompts (prompt enhancer) integrada en la interfaz.
+- Generación por lotes mediante sistema de colas.
+- Compatibilidad con GPUs antiguas (RTX 10XX, 20XX) y requisitos de VRAM reducidos (hasta 6 GB en ciertos modelos).
+- No se documenta soporte de tool calling, agentes, razonamiento multi-paso ni capacidades de audio en la información disponible.
 
 ## Casos de uso
 
-- Creacion de contenido para redes sociales: los creadores pueden generar clips cortos de video a partir de descripciones textuales sin necesidad de equipos costosos. Con 6 GB de VRAM, un portatil gaming con RTX 2060 es suficiente para producir videos de calidad aceptable.
-- Prototipado rapido en produccion audiovisual: directores y editores pueden generar storyboards animados a partir de guiones para previsualizar escenas antes de rodar. La integracion con LoRAs permite mantener una estetica consistente entre iteraciones.
-- Generacion de material educativo: profesores y divulgadores pueden crear animaciones explicativas de conceptos complejos (por ejemplo, procesos cientificos o historicos) sin depender de software de animacion profesional.
-- Publicidad personalizada: agencias pueden generar multiples variantes de anuncios en video a partir de diferentes textos de campaña, probando rapidamente enfoques creativos. El sistema de colas facilita la generacion por lotes.
-- Desarrollo de videojuegos: los equipos de arte pueden usar el modelo para generar cinemáticas de bajo coste o texturas animadas para entornos. La edicion por mascaras permite modificar elementos especificos sin regenerar el video completo.
-- Investigacion en vision por computador: el modelo sirve como banco de pruebas para estudiar la generacion de video condicionada a texto, y su bajo requisito de hardware permite a laboratorios con recursos limitados experimentar con generacion de video sintetico.
+- Generación de clips de vídeo para prototipado creativo: un estudio pequeño puede producir borradores de vídeo a partir de descripciones textuales usando Wan2.1-T2V-1.3B en una GPU de consumo, sin depender de servicios en la nube.
+- Animación de imágenes fijas para contenido de redes sociales: la variante I2V permite dar movimiento a ilustraciones o fotografías, útil para creadores que necesitan piezas cortas de forma recurrente.
+- Previsualización de storyboards en producción audiovisual: el modelo genera versiones animadas de escenas descritas en guion, acelerando la validación antes del rodaje.
+- Edición localizada de vídeo mediante el editor de máscaras: sustitución o extensión de regiones concretas de un clip sin regenerar la secuencia completa.
+- Investigación en generación de vídeo con recursos limitados: el soporte para GPUs antiguas y VRAM baja permite a grupos académicos sin clúster experimentar con modelos de difusión de vídeo.
+- Personalización de estilo con LoRAs: integración de estilos visuales propios (marca, estética concreta) entrenando o cargando LoRAs compatibles con el modelo base.
+- Automatización de pipelines de contenido: el sistema de colas y la interfaz web permiten lanzar lotes de generación y recogerlos después, integrándose en flujos de trabajo de marketing o medios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos comparativos de calidad (como FVD, CLIP score o metricas de consistencia temporal) para este repositorio especifico. Se recomienda consultar la documentacion del modelo original Wan-AI/Wan2.1-T2V-1.3B para obtener metricas de referencia, aunque no estan incluidas en la informacion proporcionada.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM minima: 6 GB para los modelos mas cuantizados (GGUF), segun la documentacion de Wan2GP.
-- GPUs compatibles: cualquier GPU NVIDIA con al menos 6 GB de VRAM, incluyendo series antiguas como GTX 10XX y RTX 20XX. Se requiere CUDA.
-- GPUs recomendadas: RTX 3060 (12 GB) o superior para generar videos de mayor resolucion y duracion con cuantizacion moderada. Para full precision, se recomienda al menos 16 GB de VRAM.
-- Opciones de despliegue: Wan2GP ofrece una interfaz web local. Tambien es posible usar los archivos single-file con herramientas como ComfyUI o difusores personalizados, aunque la integracion principal es con Wan2GP.
-- Latencia y throughput: no se proporcionan datos concretos. La velocidad depende de la GPU, la cuantizacion y la resolucion del video. En GPUs modernas (RTX 4090) se reporta generacion "muy rapida", mientras que en GPUs antiguas el proceso es mas lento pero factible.
+- VRAM estimada: el ecosistema WanGP declara requisitos tan bajos como 6 GB de VRAM para determinados modelos de la familia; para la variante de mayor tamaño del repo (4.841 M de parámetros en safetensors) se requiere más VRAM, aunque no se especifica la cifra exacta.
+- GPUs recomendadas: no se detallan modelos concretos; se indica compatibilidad con GPUs antiguas (RTX 10XX, 20XX) y rendimiento "muy rápido" en GPUs recientes.
+- GPU de consumo: sí, el proyecto está diseñado explícitamente para hardware de consumo; el límite inferior documentado es de 6 GB de VRAM en ciertos modelos.
+- Opciones de despliegue: WanGP (interfaz web propia con motor de inferencia integrado), con descarga automática de pesos adaptados a la arquitectura; formatos safetensors, GGUF y ONNX disponibles en el repo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Requisitos VRAM | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| DeepBeepMeep/Wan2.1 (este repo) | 4,84 B (total repo) | 6 GB minimo (cuantizado) | GGUF, ONNX, safetensors | no disponible | Hugging Face |
-| Hunyuan Video (Tencent) | ~13 B | 12-24 GB (full precision) | safetensors | licencia propia (uso no comercial restringido) | Hugging Face, GitHub |
-| LTX Video (Lightricks) | ~2 B | 8-12 GB | safetensors | Apache 2.0 | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Wan2.1 (este repo, DeepBeepMeep) | 4.841 M en safetensors principales; base T2V-1.3B | No disponible | No disponible | Hugging Face, integrado en WanGP |
+| Hunyuan Video | No disponible en la información | No disponible | No disponible | Soportado por WanGP |
+| Flux 1 y 2 | No disponible en la información | No disponible | No disponible | Soportado por WanGP |
+| Z-Image | No disponible en la información | No disponible | No disponible | Soportado por WanGP |
 
-Nota: los datos de Hunyuan Video y LTX Video son aproximados y provienen de informacion publica general, no de los resultados de busqueda de este repositorio. La comparativa se centra en accesibilidad de hardware y formato, ya que no hay datos de rendimiento objetivo disponibles para este repo.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no esta especificada en el repositorio. Esto genera incertidumbre legal para uso comercial, especialmente porque el modelo base Wan 2.1 de Alibaba tiene su propia licencia (posiblemente con restricciones). Se recomienda consultar la licencia del modelo original antes de cualquier uso en produccion.
-- No se dispone de informacion sobre sesgos o alucinaciones especificas del modelo. Como todo modelo generativo de video, puede producir contenido visualmente plausible pero incorrecto o inconsistente con la realidad.
-- El repositorio tiene un tamano de 1909,6 GB, lo que implica una descarga masiva si se desea acceder a todas las variantes. Se recomienda descargar solo los archivos necesarios para el caso de uso.
-- La generacion de video con modelos de difusion puede producir artefactos visuales, especialmente en escenas con movimiento rapido o interacciones complejas entre objetos.
-- No hay informacion sobre la calidad de los subtitulos o el soporte multilingue. El modelo base de Wan 2.1 soporta principalmente ingles y chino, pero no se confirma en este repositorio.
-- El proyecto Wan2GP esta en desarrollo activo; los cambios en el framework pueden afectar la compatibilidad con versiones anteriores de los modelos.
+- La licencia no está declarada en la información disponible; antes de un uso comercial es imprescindible verificar la licencia del modelo base original (Wan-AI/Wan2.1-T2V-1.3B) y de los pesos redistribuidos.
+- El repositorio mezcla múltiples variantes y cuantizaciones en un espacio de 1784,8 GB; el recuento de parámetros de los safetensors no corresponde necesariamente al modelo base de 1.3B, por lo que hay que seleccionar cuidadosamente la variante adecuada.
+- No se documentan sesgos conocidos, tasas de alucinación ni limitaciones idiomáticas en la información disponible.
+- Los modelos de difusión de vídeo pueden generar contenido visual incoherente en escenas complejas, con movimiento rápido o con múltiples sujetos; no hay datos publicados que cuantifiquen esta limitación.
+- El rendimiento depende fuertemente de la GPU: en GPUs antiguas o con poca VRAM la generación será más lenta y puede requerir variantes cuantizadas.
+- La información sobre arquitectura interna, entrenamiento y benchmarks es escasa; para evaluación rigurosa conviene consultar la documentación del modelo base original en Wan-AI.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/DeepBeepMeep/Wan2.1
-- GitHub Wan2GP: https://github.com/deepbeepmeep/Wan2GP
-- Perfil GitHub de DeepBeepMeep: https://github.com/deepbeepmeep
-- Documentacion DeepWiki sobre modelos Wan: https://deepwiki.com/deepbeepmeep/Wan2GP/7.1-wan-models
-- Servidor Discord de soporte: https://discord.gg/g7efUW9jGV
-- Twitter/X de DeepBeepMeep: https://x.com/deepbeepmeep
+- Repositorio en Hugging Face: https://huggingface.co/DeepBeepMeep/Wan2.1
+- Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
+- Repositorio WanGP en GitHub: https://github.com/deepbeepmeep/Wan2GP
+- Servidor de Discord: https://discord.gg/g7efUW9jGV
+- Twitter/X del autor: https://x.com/deepbeepmeep

@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 1099,
-  "downloads_30d": 5081,
+  "downloads_30d": 5417,
   "trending_score": 11.9,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -57,31 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
-      "url": "https://www.amazon.de/",
-      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
-    },
-    {
-      "title": "Anmeldung bei Amazon Business",
-      "url": "https://business.amazon.de/de/login",
-      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
-    },
-    {
-      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
-      "url": "https://music.amazon.de/",
-      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
-    },
-    {
-      "title": "Amazon.de",
-      "url": "https://www.amazon.de/gp/css/homepage.html",
-      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
-    },
-    {
-      "title": "Seller Central DE – Werden Sie Noch Heute Amazon-Verkäufer!",
-      "url": "https://sellercentral.amazon.de/",
-      "snippet": "Werden Sie Amazon-Verkaufspartner und profitieren Sie von potenziellen Vorteilen im Wert von über 45,000 €! Starten Sie noch …"
-    }
-  ]
+  "sources": []
 }

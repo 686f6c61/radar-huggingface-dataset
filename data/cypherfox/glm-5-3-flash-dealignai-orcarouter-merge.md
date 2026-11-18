@@ -2,103 +2,95 @@
 
 ## Resumen
 
-GLM-5.3-Flash-dealignai-orcarouter-merge es un derivado de pesos (merge) publicado por el usuario Cypherfox a partir del modelo base zai-org/GLM-5.3-Flash, etiquetado en el repositorio como mezcla de expertos (MoE). El resultado combina dos "abliteraciones" independientes del mismo modelo base —dealignai/GLM-5.3-Flash-ABLITERATED-FP8 (ablit) y orcarouter/GLM-5.3-Flash-Uncensored-FP8 (orca)— con el objetivo de eliminar de forma mas completa el comportamiento de rechazo que cada una deja por separado, sin ningun paso de fine-tuning ni de gradiente.
+GLM-5.3-Flash-dealignai-orcarouter-merge es una fusión en el espacio de pesos de dos ablaciones independientes del mismo modelo base, `zai-org/GLM-5.3-Flash`. Los dos modelos padre (dealignai y orcarouter) aplicaron técnicas distintas para eliminar el comportamiento de rechazo: dealignai mediante una edición permanente por capas denominada "CRACK" y orcarouter mediante la ablación de una única dirección de rechazo según Arditi et al. (2024). El autor del merge, Cypherfox, combina ambas ediciones argumentando que operan en direcciones casi ortogonales, de modo que la combinación elimina los rechazos residuales que cada padre deja por separado, sin fine-tuning ni pasos de gradiente.
 
-El interes tecnico del merge es que las dos ediciones ocupan direcciones casi ortogonales en el espacio de pesos. La de orca es una unica direccion global de rechazo, estimada en la capa 22 con el metodo de Arditi et al. (2024) y proyectada fuera de todas las capas; la de ablit es un conjunto de direcciones por capa aplicadas parcialmente (escala alfa aproximada de 0,5 a 0,8) sobre capas intermedias (aproximadamente de la 12 a la 43). Como el producto escalar entre ambas direcciones es cercano a cero, las ediciones conmutan y sus eliminaciones se suman en lugar de anularse.
+El modelo es un transformer de tipo mezcla de expertos (MoE) con 320.759.404.382 parámetros totales, según los datos de safetensors del repositorio. Se distribuye exclusivamente en formato GGUF, con builds Q8_0 (~341 GB) e IQ4_XS con imatrix (~171 GB), además de un proyector de visión opcional (~1,2 GB). La arquitectura declarada en los metadatos es `glm5-next` con proyector de visión `glm5v`, soportada de forma nativa por llama.cpp a partir del build 11585.
 
-Se distribuye unicamente en formato GGUF, con dos cuantizaciones (Q8_0, ~341 GB, e IQ4_XS con imatrix, ~171 GB) y un proyector visual opcional (mmproj, ~1,2 GB). No se han publicado resultados de benchmarks de capacidades ni evaluaciones de capacidades dañinas, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+La relevancia del modelo es doble: por un lado, demuestra una técnica de fusión de ablaciones que produce un decensurado más completo que cualquiera de los padres; por otro, mantiene la arquitectura multimodal y el modo de razonamiento del base GLM-5.3-Flash. La licencia es MIT y todos los upstreams están verificados como MIT, lo que permite el uso comercial del derivado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio solo la etiqueta como "moe") |
-| Parametros totales | no disponible |
+| Arquitectura | Transformer MoE, arquitectura `glm5-next` (metadatos GGUF); proyector de visión `glm5v` |
+| Parametros totales | 320.759.404.382 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (~341 GB, base de alta precision para recuantizar) e IQ4_XS con imatrix (~171 GB, lista para inferencia); proyector visual mmproj.gguf (~1,2 GB) |
+| Tipos de cuantizacion | Q8_0 (~341 GB), IQ4_XS con imatrix (~171 GB); se puede recuantizar desde Q8_0 con `llama-quantize` |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp / gguf-py) |
-| Numero de tensores | 1412 (identico en los dos modelos padre) |
-| Tamaño del repositorio publicado | no disponible (solo se declara el tamaño de cada fichero) |
+| Formato de pesos | GGUF (Q8_0, IQ4_XS); proyector de visión GGUF; padres originales en FP8 (e4m3) |
 
 ## Arquitectura y entrenamiento
 
-El modelo no ha sido entrenado: es una combinacion en el espacio de pesos de dos ediciones de un mismo modelo base. Ambos padres comparten arquitectura y formas tensoriales (1412 tensores identicos). El analisis tensor a tensor, de cuantizado a fp32, muestra que 852 de los 1412 tensores son byte a byte identicos entre los dos padres: ninguna de las dos abliteraciones los toco (expertos `ffn_gate/up`, proyecciones Q/K de atencion, todas las normalizaciones y los routers). Las ediciones se concentran en los tensores que escriben en el flujo residual: `attn_output`, `ffn_down` / `ffn_down_exps` / `ffn_down_shexp`, `token_embd` y `nextn.eh_proj`. `output.weight` no fue editado por ninguno de los dos, y las diferencias en `attn_q/k/v` se atribuyen a ruido de recuantizacion, no a una edicion direccional.
+El modelo es una combinación en el espacio de pesos de dos ablaciones del mismo base, GLM-5.3-Flash. No hay entrenamiento ni pasos de gradiente: la fusión se construye derivando una dirección global `g` a partir de las dos ediciones parentales y proyectándola sobre los pesos. El padre dealignai aplica direcciones por capa, parcialmente (escala α ≈ 0,5–0,8), en capas medias y tardías (aproximadamente 12–43). El padre orcarouter aplica una única dirección de rechazo estimada en la capa 22 mediante media de diferencias entre activaciones dañinas e inofensivas, con máscara de activaciones masivas, y la proyecta por completo en todas las capas (`W' = W − r·rᵀW`). Las mediciones del autor corroboran ambas descripciones: la edición de orca se recupera como una dirección única con consistencia de coseno por capa de 0,995–1,000, mientras que las de dealignai son por capa e independientes entre sí.
 
-Formalmente, cada abliteracion es una aplicacion lineal sobre esos tensores. Si `g` es la direccion unitaria global de orca y `v_l` las direcciones por capa de ablit, el merge aplica `(I - g gᵀ)(I - α_l v_l v_lᵀ) W`, tomando los pesos de ablit y aplicando encima la proyeccion de orca sobre exactamente el mismo conjunto de tensores que orca edito originalmente. La direccion `g` se recupero a precision Q8 a partir de las matrices de diferencia de los propios padres (el primer vector singular por la izquierda de `W_orca - W_ablit` en los tensores que ablit dejo intactos). Las mediciones del autor recuperan la edicion de orca como una unica direccion con coherencia coseno por capa de 0,995 a 1,000, mientras que las de ablit son por capa e independientes entre si. El termino cruzado de la composicion, `α (gᵀv_l) g v_lᵀW`, resulta despreciable porque `gᵀv_l ≈ 0`.
-
-Se usaron `llama.cpp` y `gguf-py` parcheados. La cadena de conversion incluye la correccion del fallo de perdida de signo de NumPy 1.x en la cuantizacion de `gguf-py` (ggml-org/llama.cpp#28438): sin ese parche, los tensores anchos cuantizados bajo NumPy 1.x en CPython 3.14 o superior pierden silenciosamente los bits de signo. La model card explica tambien por que Q8_0 es la base correcta para recuantizar: ambos padres son FP8 (e4m3) nativos y Q8_0 (int8 con una escala fp16 por cada 32 pesos) preserva esos valores de ~3 bits de mantisa practicamente sin perdida, mejor que un upcast a BF16, que solo rellenaria los valores FP8 en un contenedor mas ancho sin recuperar precision.
+El repositorio incluye los scripts `derive_g.py`, `project_q8.py` y `g_q8.npy` para reproducir el merge. El autor justifica usar Q8_0 como base de recuantización porque los padres son FP8 nativos y Q8_0 (int8 con una escala fp16 por cada 32 pesos) preserva los valores FP8 de forma prácticamente sin pérdida, a diferencia de un upcast a BF16, que solo rellenaría los valores en un contenedor más ancho sin recuperar precisión. Los archivos de `main` son los originales del fork de llama.cpp de unsloth (rama `glm5next`) con una reescritura solo de metadatos: cada tensor es idéntico byte a byte y solo cambian los nombres de arquitectura/proyector y algunas claves de metadatos. La verificación en mainline frente a los originales del fork reporta el mismo token superior en el 96 % de los casos, divergencia KL media de 0,016 y perplejidad en CPU sobre un texto fijo de 3,11 (IQ4_XS) y 2,87 (Q8_0). Los archivos originales en formato del fork quedan en la etiqueta `glm5next-unsloth-fork`. El directorio `patches/` incluye parches de llama.cpp para entrada de vídeo nativa (pares de fotogramas a 2 fps con marcas de tiempo por par): `0004` para mainline y `0003` para el fork.
 
 ## Capacidades
 
-- Generacion de texto condicional (`pipeline_tag: text-generation`).
-- Razonamiento con modos configurables: la model card describe el comportamiento del modelo con razonamiento en "off", "low" y "max", lo que confirma la existencia de niveles de razonamiento en la familia base. No se detalla en que consiste cada nivel.
-- Capacidad multimodal opcional: el fichero `mmproj.gguf` (~1,2 GB) es un proyector de vision que habilita entrada de imagenes en llama.cpp. La model card no documenta el alcance ni la calidad de esta capacidad.
-- Comportamiento de rechazo sustancialmente eliminado: la edicion de orca se proyecta a nivel de pesos, por lo que se aplica en todos los ajustes de razonamiento; la de ablit conserva por diseño algunos rechazos en el ajuste "low" para preservar calidad. El autor afirma que la combinacion esta mas completamente "decensurada" que cualquiera de los dos padres.
-- Capacidades de codigo, matematicas, tool calling, function calling, uso de agentes y razonamiento multi-paso: no disponibles en la informacion proporcionada. No se documentan ni se evaluan en este repositorio.
-- Capacidades multilingues: no disponibles; el repositorio no declara idiomas.
+- Generación de texto conversacional con modo de razonamiento configurable (el modelo base soporta ajustes de razonamiento; el padre dealignai documenta comportamiento en `off`, `low` y `max`).
+- Capacidades multimodales de visión mediante el proyector `*-mmproj.gguf` (~1,2 GB).
+- Entrada de vídeo nativa mediante los parches de llama.cpp incluidos (2 fps, pares de fotogramas con marcas de tiempo).
+- Razonamiento multi-paso y matemáticas, heredados del base GLM-5.3-Flash.
+- Generación de código, al ser un modelo de la familia GLM orientada a texto y código.
+- Comportamiento decensurado: rechazos sustancialmente eliminados en todos los ajustes de razonamiento, con mayor cobertura que cualquiera de los dos padres por separado.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente: no disponible en la información proporcionada.
+- Idiomas soportados: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigacion en seguridad y alineacion: el modelo sirve como sujeto de estudio controlado para medir como interactuan dos tecnicas de eliminacion de rechazos (abliteracion por direcciones por capa frente a proyeccion de una unica direccion global). La model card aporta la metodologia y las mediciones de ortogonalidad necesarias para reproducir el experimento.
-- Reproduccion y auditoria de merges en el espacio de pesos: dado que la card documenta que 852 de 1412 tensores son identicos entre padres y que las ediciones se limitan a los tensores que escriben en el flujo residual, resulta un caso practico para validar herramientas de comparacion tensorial y de deteccion de ediciones direccionales.
-- Generacion creativa sin filtros de rechazo: escritura de ficcion, guiones o narrativa con tematicas adultas, donde los rechazos del modelo base interrumpen la generacion. El modelo esta etiquetado como `not-for-all-audiences`.
-- Despliegue local o on-premise con datos sensibles: al distribuirse en GGUF y ejecutarse con llama.cpp u Ollama, puede correr en infraestructura propia sin llamadas a APIs externas, lo que resulta relevante cuando la politica de la organizacion prohibe enviar datos a terceros.
-- Recuantizacion a medida: el fichero Q8_0 (~341 GB) esta pensado explicitamente como base para generar cuantizaciones menores con `llama-quantize` (por ejemplo, K-quants mas agresivas o una imatrix distinta) en lugar de rehacer el merge, lo que permite ajustar el compromiso entre calidad y memoria a la GPU disponible.
-- Analisis de documentos con componente visual: usando el proyector `mmproj.gguf`, el modelo puede procesar imagenes junto a texto en la misma sesion de llama.cpp, util para extraccion de informacion de capturas, diagramas o documentos escaneados. La calidad de esta via no esta documentada.
-- Estudio comparativo de abliteraciones: al existir los dos padres por separado, el merge permite medir experimentalmente si dos ediciones ortogonales de rechazo producen una degradacion acumulativa o no en tareas de capacidades generales (medicion que, segun la propia card, aun no se ha realizado).
-- Pruebas de estres de filtros de seguridad en productos propios: util para equipos que necesitan verificar si sus propias capas de moderacion aguantan entradas adversarias, usando un modelo con los rechazos eliminados a nivel de pesos.
+- Investigación sobre alineación y decensurado: el modelo sirve como caso de estudio reproducible de fusión de ablaciones ortogonales, con scripts incluidos (`derive_g.py`, `project_q8.py`) para replicar el merge y medir el efecto de cada dirección parental.
+- Evaluación de robustez de salvaguardas: permite a equipos de seguridad estudiar qué rechazos residuales dejan las ablaciones individuales y cómo se combinan, usando los builds IQ4_XS y Q8_0 como referencia cruzada.
+- Procesamiento de documentos con imágenes: el proyector de visión permite extraer y razonar sobre contenido de capturas, diagramas o páginas escaneadas en un pipeline local con llama.cpp.
+- Análisis de vídeo por muestreo de fotogramas: con los parches de `patches/`, se pueden procesar clips a 2 fps con marcas de tiempo para resumen o descripción de escenas.
+- Generación de texto creativo sin restricciones temáticas: el decensurado profundo lo hace adecuado para ficción o guiones donde los modelos alineados rechazan contenido sensible, siempre bajo responsabilidad del usuario.
+- Despliegue local de un MoE de gran tamaño: el build IQ4_XS (~171 GB) permite ejecutar el modelo en servidores con suficiente memoria unificada o VRAM agregada, usando llama.cpp mainline desde el build 11585.
+- Recuantización a medida: el Q8_0 (~341 GB) sirve como fuente para generar K-quants más pequeños o imatrix propios con `llama-quantize`, sin rederivar el merge.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica de forma explicita que no se han ejecutado benchmarks de capacidades estandar (MMLU, etc.) y que no se reportan evaluaciones de capacidades dañinas. La unica cifra de rendimiento publicada es interna al merge: la coherencia coseno por capa de la direccion de orca recuperada, entre 0,995 y 1,000. El texto de la model card proporcionado esta truncado en la seccion de direccionalidad ("cosine similarit"), por lo que podria existir informacion adicional no disponible aqui.
+La model card menciona evaluaciones en dos ejes (decensurado y capacidad general) con razonamiento activado y comparación en ajustes idénticos, pero los resultados numéricos no están incluidos en la información proporcionada. Los únicos datos numéricos disponibles son las métricas de verificación del formato: mismo token superior en el 96 % de los casos frente a los originales del fork, divergencia KL media de 0,016, y perplejidad en CPU de 3,11 (IQ4_XS) y 2,87 (Q8_0) sobre un texto fijo.
+
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, HarmBench) en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones derivadas del tamaño de fichero declarado en la model card, no medidas publicadas por el autor.
-
-- IQ4_XS (~171 GB de pesos): requiere al menos 3 GPU de 80 GB (A100 80 GB, H100 80 GB) para los pesos, mas margen para cache KV y activaciones. Dos H100 de 80 GB (160 GB) no son suficientes. Dos H200 de 141 GB (282 GB) dejan margen comodo.
-- Q8_0 (~341 GB de pesos): requiere del orden de 5 aceleradores de 80 GB (A100/H100, 400 GB) o 3 H200 de 141 GB (423 GB).
-- Proyector visual: `mmproj.gguf` ocupa ~1,2 GB, un coste marginal frente a los pesos.
-- GPU de consumo: no cabe en ninguna GPU de consumo. Una RTX 4090 (24 GB) queda muy lejos del minimo de 171 GB de la cuantizacion mas pequeña.
-- Opciones de despliegue: llama.cpp (herramienta con la que se construyo y probo el modelo), Ollama y LM Studio para GGUF. vLLM y TGI tienen soporte limitado o nulo de GGUF directo; en esos casos habria que convertir o usar el modelo base en safetensors, que no se distribuye en este repositorio.
-- Latencia y throughput: no disponibles. Al ser presumiblemente un MoE y estar limitado por ancho de banda de memoria al repartir los pesos entre varias GPU, el rendimiento dependera fuertemente del numero de GPU y del tipo de interconexion (NVLink frente a PCIe).
-- Almacenamiento: conviene prever mas de 350 GB libres si se descarga el Q8_0 y se recuantiza in situ, o unos 175 GB para el IQ4_XS.
+- VRAM/memoria estimada: IQ4_XS ~171 GB; Q8_0 ~341 GB; proyector de visión ~1,2 GB adicional.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, el IQ4_XS requiere agregados de memoria de clase servidor (múltiples A100/H100 o memoria unificada), y el Q8_0 exige configuraciones aún mayores.
+- GPU de consumo: el modelo no cabe en ninguna GPU de consumo individual (RTX 4090 con 24 GB, etc.) en ninguno de los builds publicados.
+- Opciones de despliegue: llama.cpp mainline desde el build 11585 (commit `9d7d50498`), arquitectura `glm5-next`; el fork de unsloth (rama `glm5next`) para los archivos originales en la etiqueta `glm5next-unsloth-fork`. vLLM, TGI u Ollama no se mencionan en la información disponible.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Relacion | Metodo de edicion | Licencia | Formato distribuido | Benchmarks publicados |
+| Modelo | Parámetros | Contexto | Decensurado | Licencia | Formato |
 |---|---|---|---|---|---|
-| Este merge (Cypherfox) | Merge de los dos siguientes sobre el base | Proyeccion de orca `(I - ggᵀ)` aplicada sobre los pesos de ablit | MIT | GGUF (Q8_0, IQ4_XS, mmproj) | No |
-| dealignai/GLM-5.3-Flash-ABLITERATED-FP8 | Abliteracion independiente del base | "CRACK": edicion permanente por capa incrustada en los shards FP8, aplicada parcialmente (α ≈ 0,5-0,8) en capas ~12-43 | MIT | FP8 (e4m3) | No disponible en la informacion proporcionada; la card del padre cita 0% en HarmBench-320 |
-| orcarouter/GLM-5.3-Flash-Uncensored-FP8 | Abliteracion independiente del base | Ablacion de la direccion de rechazo de Arditi et al. (2024): un unico vector estimado en la capa 22 con media-diferencia enmascarada por activaciones masivas, proyectado fuera de todas las capas | MIT | FP8 (e4m3) | No disponible en la informacion proporcionada |
-| zai-org/GLM-5.3-Flash | Modelo base original | No aplica | MIT (segun verificacion del autor del merge, 2026-09-17) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
-
-No se dispone de datos de parametros, contexto ni rendimiento del modelo base, por lo que no es posible una comparativa cuantitativa con alternativas de la misma categoria.
+| GLM-5.3-Flash-dealignai-orcarouter-merge | 320,8 B (MoE) | no disponible | Fusión de dos ablaciones ortogonales; más completo que cada padre según el autor | MIT | GGUF (Q8_0, IQ4_XS) |
+| dealignai/GLM-5.3-Flash-ABLITERATED-FP8 | no disponible | no disponible | CRACK por capas, parcial (α ≈ 0,5–0,8); conserva rechazos en `low` por diseño | MIT | FP8 |
+| orcarouter/GLM-5.3-Flash-Uncensored-FP8 | no disponible | no disponible | Dirección única de rechazo (capa 22) proyectada en todas las capas | MIT | FP8 |
+| zai-org/GLM-5.3-Flash (base) | no disponible | no disponible | Alineado, con rechazos | MIT | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modelo decensurado: el comportamiento de rechazo se ha eliminado sustancialmente a nivel de pesos. El propio autor advierte de que la responsabilidad de uso y del cumplimiento de la licencia del modelo base y de la legislacion aplicable recae en el usuario.
-- Etiquetado `not-for-all-audiences`: el repositorio lo marca explicitamente como no apto para todas las audiencias.
-- Ausencia total de evaluaciones: no hay benchmarks de capacidades (MMLU ni similares) ni evaluaciones de capacidades dañinas. Se desconoce si el merge degrada el rendimiento en tareas generales respecto a los padres o al modelo base.
-- Riesgo de alucinacion: no cuantificado. No hay datos publicados sobre tasas de alucinacion ni sobre fiabilidad factual.
-- Idiomas y contexto: no disponibles. No se puede planificar un despliegue en produccion que dependa de una ventana de contexto concreta o de cobertura multilingue sin verificacion previa.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 2026-09-17. No hay comunidad que haya validado el resultado.
-- Model card truncada: el texto disponible se corta en la seccion sobre direccionalidad, por lo que parte de la evidencia del autor (las "directionality data") no esta accesible aqui.
-- Requisitos de memoria muy altos: incluso la cuantizacion mas pequeña (~171 GB) excluye cualquier despliegue en hardware de consumo o en una unica GPU de 80 GB.
-- Detalles de la licencia: la licencia declarada es MIT y el autor afirma haber verificado que los tres ascendientes tambien lo son, pero se trata de una verificacion del propio publicador y no de una confirmacion por parte de zai-org, dealignai ni OrcaRouter.
-- Caveat de herramienta: la conversion depende de un parche no upstream para el fallo de perdida de signo de NumPy 1.x en `gguf-py` (llama.cpp#28438). Recuantizar con una cadena de herramientas sin ese parche puede producir pesos corruptos.
-- Uso comercial: la licencia MIT lo permite en principio, pero el caracter decensurado del modelo puede entrar en conflicto con las politicas de plataformas de despliegue, con las condiciones de proveedores de nube o con normativa sectorial. Requiere revision legal previa.
-- Naturaleza del artefacto: es un merge de pesos sin entrenamiento adicional, por lo que hereda cualquier sesgo, limitacion o defecto presente en los dos padres y en el modelo base.
+- Modelo decensurado: el comportamiento de rechazo de seguridad ha sido sustancialmente eliminado; el usuario es responsable del uso y del cumplimiento de la ley aplicable.
+- Etiquetado `not-for-all-audiences`: puede generar contenido sensible, ofensivo o inapropiado.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos de lenguaje.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Idiomas soportados y longitud de contexto: no disponibles; conviene verificar ambos antes de desplegar en producción.
+- El modelo no cabe en GPUs de consumo; el despliegue requiere infraestructura de memoria de clase servidor.
+- Los archivos de `main` requieren llama.cpp mainline desde el build 11585; versiones anteriores no soportan la arquitectura `glm5-next`.
+- La entrada de vídeo nativa requiere aplicar los parches de `patches/`; no está disponible en llama.cpp sin ellos.
+- Aunque la licencia es MIT, el uso comercial de un modelo decensurado puede contravenir términos de servicio de plataformas intermediarias o normativa sectorial.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/Cypherfox/GLM-5.3-Flash-dealignai-orcarouter-merge
-- Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Padre ablit: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
-- Padre orca: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
-- Incidencia de llama.cpp sobre la perdida de signo en la cuantizacion de gguf-py: https://github.com/ggml-org/llama.cpp/issues/28438
-- Referencia metodologica citada por el autor (sin enlace en la informacion proporcionada): Arditi et al., 2024, "Refusal in Language Models Is Mediated by a Single Direction".
-- No se han encontrado otros enlaces relevantes en la busqueda web realizada.
+- Modelo en Hugging Face: https://huggingface.co/Cypherfox/GLM-5.3-Flash-dealignai-orcarouter-merge
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Padre dealignai: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
+- Padre orcarouter: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
+- Etiqueta con los archivos originales del fork: `glm5next-unsloth-fork` (mismo repositorio)
+- Parches de vídeo nativo: directorio `patches/` del repositorio
+- Scripts de reproducción del merge: `scripts/derive_g.py`, `scripts/project_q8.py`, `scripts/g_q8.npy`
+- Método de ablación de rechazo (Arditi et al. 2024): no disponible como enlace en la información proporcionada

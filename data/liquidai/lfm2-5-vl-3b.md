@@ -2,77 +2,110 @@
 
 ## Resumen
 
-LFM2.5-VL-3B es un modelo de visión-lenguaje (VLM) de 3.100 millones de parámetros desarrollado por Liquid AI, presentado el 12 de agosto de 2026. Está diseñado específicamente para ejecutarse en el edge: teléfonos, portátiles y GPUs individuales, evitando la dependencia de centros de datos. El modelo destaca por sus capacidades de grounding (localización de objetos en imágenes), comprensión de pantallas y documentos, y function calling, todo ello con una latencia reducida al ser un modelo no razonador que responde directamente sin cadenas de pensamiento explícitas.
+LFM2.5-VL-3B es un modelo multimodal (imagen-texto-a-texto) desarrollado por Liquid AI, diseñado especificamente para despliegue en dispositivos edge. Se construye sobre el modelo de lenguaje LFM2.5-2.6B como backbone y anade un codificador visual SigLIP2 NaFlex de 400M de parametros, alcanzando un total de aproximadamente 3.120 millones de parametros. Es una evolucion del anterior LFM2-VL-3B con entrenamiento intermedio y posterior adicional, orientada a mejorar el grounding, la deteccion de objetos y el OCR.
 
-Es la evolución del LFM2-VL-3B, con mejoras significativas en tareas de interfaz de usuario, grounding, function calling y soporte de múltiples imágenes. Su licencia es de código abierto (aunque el tipo exacto no se especifica en la información disponible), y los pesos están disponibles en formato safetensors. El modelo está orientado a desarrolladores que necesitan capacidades multimodales en dispositivos con recursos limitados, manteniendo un rendimiento competitivo en tareas de comprensión visual y ejecución de acciones.
+El modelo resuelve el problema de la inferencia multimodal eficiente en hardware limitado: procesa texto e imagenes con un contexto de 32.768 tokens y, segun el autor, alcanza 228 tok/s en un Apple M5 Max y 116 tok/s en un AMD Ryzen AI Max+ 395 con menos de 3,3 GB de memoria. Esta orientado a tareas de un solo turno, alto throughput y baja latencia, no a razonamiento complejo de contexto largo.
+
+Su relevancia actual reside en la combinacion de capacidades visuales (OCR con anotacion de layout, deteccion de objetos mediante consultas en lenguaje natural) con un consumo de memoria muy reducido y soporte de 16 idiomas, lo que lo posiciona como candidato para aplicaciones moviles, automocion y procesamiento por lotes de documentos escaneados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 3.1 mil millones (3.1B) |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (los tags de Hugging Face sugieren ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi, pero no hay confirmacion oficial) |
-| Licencia | no disponible (tag "license:other" en Hugging Face) |
-| Formato de pesos | safetensors |
+| Arquitectura | Hibrida (backbone de lenguaje LFM2.5 + codificador visual SigLIP2 NaFlex) |
+| Parametros totales | 3.123.483.888 (~3,12 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 32.768 tokens |
+| Tipos de cuantizacion | GGUF (llama.cpp), ONNX cuantizado, MLX 8-bit; otras no disponibles |
+| Idiomas soportados | Arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes, vietnamita |
+| Licencia | lfm1.0 (licencia propia, "other") |
+| Formato de pesos | safetensors (checkpoint nativo); GGUF, ONNX y MLX en repositorios derivados |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles técnicos sobre la arquitectura interna del modelo en la informacion disponible. Se sabe que es un modelo de vision-lenguaje de 3.1B parametros, no razonador, lo que significa que genera respuestas directas sin un modo de "thinking" explicito, priorizando la baja latencia para aplicaciones en tiempo real. Es una evolucion del LFM2-VL-3B, con mejoras en comprension de pantallas, grounding, function calling y entrada de multiples imagenes.
+El modelo combina un backbone de lenguaje LFM2.5-2.6B, que pertenece a la familia de modelos hibridos de Liquid AI (arquitectura no transformer pura, segun la denominacion "liquid" del autor), con un codificador visual SigLIP2 NaFlex de 400M de parametros en su variante shape-optimized. El procesamiento de imagenes usa la resolucion nativa de SigLIP2 NaFlex: las imagenes grandes se dividen en parches no solapados de 512x512 junto con una miniatura reescalada de la imagen completa. El vocabulario es de 128.000 tokens y la plantilla de chat sigue un formato tipo ChatML.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se utilizaron tecnicas como RLHF o DPO. Tampoco se conocen innovaciones arquitectonicas especificas mas alla de las mencionadas en las capacidades.
+El entrenamiento parte del checkpoint LFM2-VL-3B y aplica fases adicionales de mid-training y post-training. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. Las mejoras declaradas por el autor se centran en grounding y deteccion de objetos con consultas en lenguaje natural, y en OCR de pagina completa con anotacion de layout.
 
 ## Capacidades
 
-- Comprension de imagenes y documentos: puede extraer informacion de imagenes, diagramas, capturas de pantalla y documentos escaneados.
-- Grounding visual: localiza y referencia objetos especificos dentro de una imagen, devolviendo coordenadas o regiones.
-- Comprension de pantallas (screen understanding): interpreta interfaces de usuario, elementos de UI y su disposicion, util para automatizacion de tareas.
-- Function calling: puede invocar funciones externas o APIs, integrándose en flujos de trabajo agénticos.
-- Entrada de multiples imagenes: acepta varias imagenes en una misma consulta, permitiendo comparaciones o analisis conjunto.
-- No razonador: responde directamente sin cadenas de pensamiento, lo que reduce la latencia en comparacion con modelos que generan razonamiento intermedio.
-- Multilingue: aunque no hay confirmacion oficial, los tags de Hugging Face indican soporte para mas de 15 idiomas, incluyendo español, ingles, frances, aleman, chino, japones, etc.
+- Generacion de texto e interaccion conversacional multimodal (imagen + texto).
+- Comprension de imagenes: descripcion, respuesta a preguntas visuales y analisis de contenido.
+- OCR de pagina completa con anotacion de layout, orientado a convertir documentos escaneados en texto estructurado.
+- Grounding y deteccion de objetos mediante consultas en lenguaje natural, con visualizacion de bounding boxes.
+- Soporte de tool calling / function calling, segun la demo oficial del modelo.
+- Capacidades multilingues en 16 idiomas, incluyendo espanol.
+- Procesamiento a resolucion nativa de imagen mediante parches de 512x512.
+- Optimizado para tareas de un solo turno con alta eficiencia; no orientado a razonamiento intensivo ni contexto largo.
 
 ## Casos de uso
 
-- Automatizacion de interfaces de usuario: el modelo puede interpretar capturas de pantalla y generar acciones (clics, relleno de formularios) mediante function calling, permitiendo construir agentes que operan aplicaciones moviles o web de forma autonoma.
-- Asistente de soporte tecnico con imagenes: un usuario envia una captura de pantalla de un error; el modelo identifica el problema, localiza el elemento relevante y sugiere una solucion, todo en el dispositivo sin conexion a la nube.
-- Analisis de documentos en movil: escanear facturas, recibos o contratos y extraer campos clave (fechas, importes, nombres) gracias a su comprension de documentos, funcionando en un telefono con recursos limitados.
-- Accesibilidad para personas con discapacidad visual: describir el contenido de una imagen o escena capturada con la camara del dispositivo, con grounding para senalar objetos especificos ("hay una taza a la izquierda").
-- Agente de compras por imagen: el usuario fotografia un producto y el modelo identifica el articulo, busca informacion en una base de datos mediante function calling y responde con detalles o recomendaciones.
-- Moderacion de contenido visual: analizar imagenes en tiempo real en un dispositivo edge para detectar contenido inapropiado, con capacidad de localizar la region problematica.
+- Deteccion de objetos casi en tiempo real en automocion: el modelo acepta consultas en lenguaje natural para localizar objetos en imagenes y su bajo consumo (menos de 3,3 GB) permite integrarlo en sistemas embebidos de vehiculos con latencia reducida.
+- Digitalizacion de documentos escaneados: el OCR con anotacion de layout permite procesar PDFs por lotes y convertirlos en texto buscable conservando la estructura de la pagina, adecuado por su alto throughput en modo batch.
+- Traduccion en dispositivo de menus y senales de trafico: con soporte de 16 idiomas y ejecucion local, puede traducir texto capturado por camara en moviles sin conexion a la nube.
+- Asistencia visual accesible: descripcion de imagenes en tiempo real para aplicaciones de accesibilidad en telefonos, aprovechando la inferencia en CPU/GPU de consumo.
+- Automatizacion de inventario o inspeccion visual: consultas en lenguaje natural sobre fotografias para identificar y localizar productos o defectos, con salida de bounding boxes.
+- Chat multimodal en navegador o webcam: la demo WebGPU permite desplegar interaccion con imagenes capturadas en directo, util para prototipos de asistentes visuales.
+- Clasificacion y etiquetado de imagenes a gran escala: procesamiento por lotes con bajo coste de memoria para anotar conjuntos de datos o moderar contenido visual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos comparativos con otros modelos en tareas como MMLU, HumanEval, GSM8K o benchmarks especificos de vision-lenguaje (VQAv2, TextVQA, etc.). La unica referencia cualitativa es la afirmacion de Liquid AI de que supera a su predecesor LFM2-VL-3B en comprension de pantallas, grounding, function calling y multi-imagen, pero sin cifras concretas.
+El autor publica una grafica de medias por grupo de tareas (lfm2_5_vl_3b_task_group_averages) en la model card, pero no se proporcionan cifras numericas de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+
+Datos de rendimiento declarados por el autor:
+
+| Metrica | Valor |
+|---|---|
+| Throughput en Apple M5 Max | 228 tok/s |
+| Throughput en AMD Ryzen AI Max+ 395 | 116 tok/s |
+| Memoria en inferencia | menos de 3,3 GB |
+
+No se han publicado resultados de benchmarks numericos comparables en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al ser un modelo de 3.1B parametros, en precision FP16 ocuparia aproximadamente 6.2 GB de VRAM. Con cuantizacion INT8 se reduciria a ~3.1 GB, y con INT4 a ~1.6 GB, aunque no se han publicado cuantizaciones oficiales.
-- GPU recomendadas: puede ejecutarse en GPUs consumer como NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores. Tambien es compatible con Apple Silicon (M1/M2/M3) y CPUs modernas mediante frameworks de inferencia optimizados.
-- Si cabe en consumer GPU: si, en GPUs con al menos 4 GB de VRAM si se usa cuantizacion, y en 8 GB sin cuantizar.
-- Opciones de despliegue: al ser un modelo con pesos en safetensors, es compatible con frameworks como vLLM, llama.cpp, Ollama, TGI y Transformers de Hugging Face. Para edge, se puede usar ONNX Runtime o Core ML para dispositivos moviles.
-- Latencia y throughput: no se han publicado datos oficiales. Dado su tamano y diseño no razonador, se espera una latencia de decenas de milisegundos en GPUs modernas, pero no hay cifras confirmadas.
+- VRAM estimada: menos de 3,3 GB en la configuracion de inferencia reportada por el autor; el checkpoint nativo en safetensors ocupa 6,3 GB en el repositorio.
+- GPU recomendadas: el autor cita Apple M5 Max y AMD Ryzen AI Max+ 395 como plataformas de referencia; para servidor se puede usar cualquier GPU con suficiente memoria (A100, H100) mediante vLLM o SGLang, aunque no se detallan cifras especificas.
+- Cabe en GPU de consumo: si, gracias a los exports GGUF, ONNX cuantizado y MLX 8-bit, con consumo por debajo de 3,3 GB en el caso reportado.
+- Opciones de despliegue: HF Transformers, vLLM, SGLang (checkpoint nativo); llama.cpp (GGUF); ONNX Runtime para cloud, edge y movil; mlx-vlm para Apple Silicon.
+- Latencia y throughput: 228 tok/s en Apple M5 Max y 116 tok/s en AMD Ryzen AI Max+ 395, segun el autor.
 
 ## Comparativa con modelos similares
 
-No se dispone de una comparativa oficial con otros modelos de la misma categoria. Como referencia cualitativa, se puede comparar con su predecesor LFM2-VL-3B y con otros VLMs de tamano similar como Phi-3.5-vision (4.2B) o MiniCPM-V 2.6 (8B), pero no hay datos de rendimiento publicados para establecer una tabla comparativa fiable. La informacion disponible solo indica que LFM2.5-VL-3B mejora a LFM2-VL-3B en las areas mencionadas.
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| LFM2.5-VL-3B | ~3,12B | 32.768 | Imagen-texto | lfm1.0 | Hugging Face (safetensors, GGUF, ONNX, MLX) |
+| LFM2-VL-3B (predecesor) | no disponible | no disponible | Imagen-texto | no disponible | Hugging Face |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone en la informacion proporcionada de datos de benchmarks ni especificaciones de modelos competidores de la misma categoria para establecer una comparacion cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo de 3.1B parametros, su capacidad de razonamiento complejo y conocimiento general es limitada en comparacion con modelos mucho mas grandes (70B+). Puede fallar en tareas que requieren inferencia profunda o conocimiento especializado.
-- Riesgo de alucinacion visual: como todos los VLMs, puede generar descripciones incorrectas o inventar detalles de una imagen, especialmente en escenas complejas o con objetos poco comunes.
-- No se ha publicado informacion sobre sesgos o evaluaciones de seguridad. Se recomienda realizar pruebas especificas antes de desplegar en produccion.
-- La licencia exacta no esta especificada (tag "license:other" en Hugging Face). Es necesario verificar los terminos de uso antes de utilizarlo comercialmente.
-- No se conocen los idiomas soportados de forma oficial, aunque los tags sugieren una amplia cobertura. La calidad puede variar entre idiomas.
-- No se dispone de informacion sobre la longitud de contexto, lo que limita la planificacion de aplicaciones que requieran dialogos largos o documentos extensos.
+- No recomendado para tareas de contexto largo ni de razonamiento intensivo, como diseno web visual o preguntas tecnicas complejas sobre planos, segun el propio autor.
+- Orientado a tareas de un solo turno; el rendimiento en conversaciones multi-turno complejas no esta documentado.
+- Riesgo de alucinacion inherente a los modelos generativos; no se documentan tasas especificas de error.
+- No se detallan sesgos conocidos ni la composicion del dataset de entrenamiento, lo que dificulta evaluar sesgos demograficos o culturales.
+- La licencia lfm1.0 es una licencia propia ("other") distinta de las licencias open source estandar; es necesario revisar el archivo LICENSE antes de un uso comercial.
+- El contexto de 32.768 tokens limita el procesamiento de documentos muy extensos o conversaciones largas.
+- El rendimiento en idiomas distintos del ingles no esta cuantificado en la informacion disponible, aunque se declaren 16 idiomas soportados.
+- La resolucion de imagen se procesa mediante parches de 512x512, lo que puede afectar a detalles muy finos en imagenes de gran tamano.
 
 ## Enlaces
 
-- [Hugging Face - LiquidAI/LFM2.5-VL-3B](https://huggingface.co/LiquidAI/LFM2.5-VL-3B)
-- [Blog oficial de Liquid AI](https://www.liquid.ai/blog/lfm2-5-vl-3b)
-- [Documentacion de Liquid AI](https://docs.liquid.ai/lfm/models/lfm25-vl-3b)
-- [Articulo en Unite.ai](https://www.unite.ai/liquid-ai-ships-lfm2-5-vl-3b-for-faster-vision-language-ai-on-the-edge/)
-- [Analisis en LLM Stats](https://llm-stats.com/blog/research/lfm-2.5-vl-3b-launch)
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
+- GGUF: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-GGUF
+- ONNX: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-ONNX
+- MLX 8-bit: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-8bit
+- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B-Base
+- Nota de lanzamiento: https://www.liquid.ai/blog/lfm2-5-vl-3b
+- Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome
+- Plantilla de chat: https://docs.liquid.ai/lfm/key-concepts/chat-template#vision-models
+- Documentacion de inferencia: https://docs.liquid.ai/lfm/inference/transformers
+- Playground: https://playground.liquid.ai/
+- LEAP: https://leap.liquid.ai/
+- Discord: https://discord.com/invite/liquid-ai
+- Demo WebGPU: https://huggingface.co/spaces/LiquidAI/LFM2.5-VL-3B-WebGPU
+- Demo en playground: http://playground.liquid.ai/chat?model=lfm2.5-vl-3b
+- Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Paper de referencia (arXiv:2305.03393): https://arxiv.org/abs/2305.03393

@@ -2,102 +2,79 @@
 
 ## Resumen
 
-Qwen-Image-2.1 es un modelo de difusion de la familia Qwen, desarrollado por el equipo Qwen (Alibaba), que unifica generacion de imagen a partir de texto y edicion de imagen en un unico modelo de pesos abiertos. Su componente de generacion visual cuenta con aproximadamente 7.000 millones de parametros distribuidos en 32 capas Single-Stream DiT, con un total real de 7.115.124.736 parametros en los pesos safetensors publicados. El repositorio ocupa 47,4 GB y se distribuye a traves de la libreria diffusers mediante la clase `QwenImage21Pipeline`.
+Qwen-Image-2.1 es un modelo unificado de generación de imágenes a partir de texto y de edición de imágenes desarrollado por el equipo Qwen (Alibaba). Se distribuye con pesos abiertos en Hugging Face bajo la licencia Qwen Research License Agreement y se integra en la librería diffusers mediante la clase `QwenImage21Pipeline`. El componente de generación visual cuenta con 7.115.124.736 parámetros (aproximadamente 7B) distribuidos en 32 capas DiT single-stream, lo que sitúa al modelo en un rango de tamaño compacto para tareas de difusión de alta resolución.
 
-La propuesta del modelo se apoya en cuatro ejes: eficiencia computacional (atencion de granularidad mixta y reutilizacion de cache KV de prefijo), generacion nativa de transparencia en RGBA, edicion versatil con hasta 10 imagenes de referencia y soporte de mascaras o anotaciones locales, y una mejora declarada en texturas, tipografia e iluminacion de retratos. Resuelve el problema de tener que encadenar varios modelos especializados (generacion, segmentacion, recorte, edicion) para producir material grafico listo para produccion, especialmente cuando se necesita canal alfa real y no un recorte posterior.
+El modelo resuelve dos problemas en una sola arquitectura: la síntesis de imágenes fotorrealistas con renderizado tipográfico mejorado y la edición controlada de imágenes existentes, incluyendo la generación nativa de imágenes con canal alfa (RGBA) y la extracción de sujetos a partir de fotografías. Admite hasta 10 imágenes de referencia en una misma operación de edición y permite especificar regiones locales mediante círculos, anotaciones pintadas o máscaras separadas, preservando la identidad de personas y productos.
 
-Es relevante ahora porque la generacion de imagen con transparencia nativa y la edicion multi-referencia con preservacion de identidad son dos de las demandas mas habituales en flujos profesionales de diseno, publicidad y comercio electronico, y este modelo las integra en un unico checkpoint de tamano contenido (7B) que puede ejecutarse con tecnicas de offload en GPU de consumo. La licencia es de investigacion (Qwen Research License Agreement), lo que condiciona su uso comercial.
+Su relevancia actual radica en la combinación de eficiencia computacional (atención de granularidad mixta y reutilización de caché KV de prefijo) con capacidades poco habituales en modelos de su tamaño, como la transparencia nativa y la edición multi-referencia. El repositorio ocupa 47,4 GB y acumula 286.817 descargas y 3.670 likes en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Diffusion Transformer (DiT) de un solo flujo, 32 capas Single-Stream DiT, con atencion de granularidad mixta y reutilizacion de cache KV de prefijo |
-| Parametros totales | 7.115.124.736 (aproximadamente 7,1 mil millones), segun los pesos safetensors publicados |
-| Parametros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | No disponible (modelo de difusion; la model card no documenta longitud maxima de prompt) |
-| Tipos de cuantizacion | No disponible. Los ejemplos oficiales usan exclusivamente `torch.bfloat16` |
-| Idiomas soportados | No disponible |
-| Licencia | Qwen Research License Agreement (`license_name: qwen-research`, `license: other`) |
-| Formato de pesos | safetensors, integrados en diffusers (`QwenImage21Pipeline`) |
-| Modalidad | text-to-image y edicion de imagen (image-to-image), con salida RGBA opcional |
-| Resoluciones soportadas | 1:1 (2048x2048), 4:3 (2400x1792), 3:4 (1792x2400), 3:2 (2528x1696), 2:3 (1696x2528), 16:9 (2752x1536), 9:16 (1536x2752) |
-| Pasos de inferencia por defecto | 40 |
-| Tamano del repositorio | 47,4 GB |
-| Descargas / likes en Hugging Face | 183 descargas, 136 likes (en el momento de la consulta) |
+| Arquitectura | DiT (Diffusion Transformer) single-stream, 32 capas, con atención de granularidad mixta y caché KV de prefijo |
+| Parametros totales | 7.115.124.736 (componente de generación visual) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de difusión; no aplica ventana de contexto de texto) |
+| Tipos de cuantizacion | no disponible (la model card solo documenta uso en bfloat16) |
+| Idiomas soportados | no disponible |
+| Licencia | Qwen Research License Agreement (license_name: qwen-research) |
+| Formato de pesos | safetensors (repo de 47,4 GB), integración diffusers |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura DiT (Diffusion Transformer) de un solo flujo con 32 capas, es decir, un transformer que procesa de forma conjunta las representaciones de texto e imagen en lugar de mantener ramas separadas. La model card destaca dos innovaciones tecnicas concretas: atencion de granularidad mixta, orientada a reducir el coste computacional manteniendo calidad, y reutilizacion de cache KV de prefijo, que evita recalcular la parte fija de la condicion durante el proceso de difusion. El objetivo declarado es equilibrar calidad de generacion, eficiencia de inferencia y versatilidad en un componente visual de 7B de parametros.
+Qwen-Image-2.1 emplea una arquitectura de Diffusion Transformer (DiT) con 32 capas en configuración single-stream, es decir, texto e imagen comparten el mismo flujo de procesamiento en lugar de mantener ramas separadas. Incorpora atención de granularidad mixta, que combina distintos niveles de resolución de atención para reducir coste computacional, y reutilización de caché KV de prefijo, técnica que evita recalcular las representaciones de las condiciones de entrada en pasos sucesivos. El resultado es un modelo de aproximadamente 7B parámetros que mantiene calidad de imagen con menor carga de cómputo que alternativas de mayor tamaño.
 
-No se especifican en la informacion proporcionada el numero de tokens o imagenes de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF, DPO u otro tipo de ajuste por preferencias. Tampoco se detalla la arquitectura del codificador de texto, del VAE o del modulo de transparencia RGBA, ni se cuantifica por separado el tamano de cada subcomponente. La unica cifra desglosada que aporta el autor es la de 32 capas Single-Stream DiT para el componente de generacion visual.
+El modelo unifica en una sola red la generación desde texto, la edición de imágenes y la síntesis de capas transparentes RGBA, además de la extracción de sujetos desde fotografías. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO; esa información no está disponible en la documentación proporcionada. Las mejoras declaradas por el autor se centran en cuatro ejes: eficiencia arquitectónica, transparencia nativa, versatilidad de edición (hasta 10 referencias y control local por máscaras) y refinamiento de texturas, tipografía e iluminación de retratos.
 
 ## Capacidades
 
-- Generacion de imagen a partir de texto con soporte de resoluciones de hasta 2752x1536 pixeles y siete relaciones de aspecto predefinidas.
-- Generacion nativa de imagenes con canal alfa (RGBA), sin necesidad de un recorte posterior. La model card recomienda un formato de prompt explicito que declare la transparencia.
-- Edicion de imagenes mediante prompt (por ejemplo, cambiar el fondo por una playa al atardecer).
-- Edicion localizada mediante circulos, anotaciones pintadas o mascaras independientes.
-- Soporte de hasta 10 imagenes de referencia en una misma generacion o edicion.
-- Preservacion de identidad de personas y productos entre la referencia y el resultado.
-- Composicion de escenas complejas, como fotografias de grupo generadas a partir de seis retratos de referencia (ejemplo mostrado por el autor).
-- Extraccion de sujetos a partir de fotografias.
-- Renderizado de texto y tipografia mejorado respecto a versiones anteriores de la familia.
-- Mejora declarada en iluminacion de retratos y detalle fino.
-- Compatibilidad con `enable_model_cpu_offload()` de diffusers para reducir el pico de memoria en GPU.
-- No se documenta soporte de tool calling, function calling ni uso como agente multi-paso: es un modelo de difusion, no un modelo de lenguaje conversacional.
-- No se documentan capacidades de audio, video ni voz.
+- Generación de imágenes a partir de texto en resoluciones de hasta 2048x2048 y ratios predefinidos (1:1, 4:3, 3:4, 3:2, 2:3, 16:9, 9:16).
+- Edición de imágenes existentes mediante instrucciones en lenguaje natural, con preservación de identidad de personas y productos.
+- Generación nativa de imágenes con transparencia (canal alfa, RGBA) y edición de capas transparentes.
+- Extracción de sujetos a partir de fotografías para composición sobre fondos transparentes.
+- Edición multi-referencia con hasta 10 imágenes de entrada en una misma operación (por ejemplo, fotografías de grupo generadas a partir de retratos individuales).
+- Control de edición local mediante círculos, anotaciones pintadas o máscaras separadas.
+- Renderizado tipográfico mejorado para carteles, rótulos y texto integrado en la imagen.
+- Mejora declarada en iluminación de retratos y detalles finos.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso; no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Generacion de stickers y assets con transparencia: el modelo produce RGBA nativo, por lo que un equipo de marketing puede generar pegatinas, iconos o elementos superpuestos directamente sin pasar por un pipeline de segmentacion y recorte.
-- Edicion de fotografia de producto en comercio electronico: dado un catalogo de imagenes de producto, se pueden sustituir fondos o contextos manteniendo la identidad del articulo, lo que reduce el coste de sesiones fotograficas adicionales.
-- Retoque localizado con mascaras: un retocador puede marcar una region concreta (un circulo o una mascara pintada) y pedir un cambio puntual, preservando el resto de la imagen intacta.
-- Extraccion de sujetos para composicion publicitaria: el modelo aisla al sujeto de una fotografia existente y permite recomponerlo sobre nuevos fondos en alta resolucion, util para campanas que reutilizan material de archivo.
-- Creacion de creatividades con texto legible: gracias a la mejora en tipografia se pueden generar carteles, banners o mockups con texto renderizado, aunque conviene validar el resultado por el riesgo de errores tipograficos.
-- Composicion de imagenes corporativas o de equipo: a partir de retratos individuales de referencia se puede generar una fotografia de grupo coherente, util para materiales corporativos cuando no es posible reunir a todos los participantes.
-- Prototipado de interfaces y piezas graficas multi-formato: las relaciones de aspecto predefinidas (16:9, 9:16, 3:2, etc.) permiten producir variantes para web, movil e impresion desde un mismo prompt.
-- Automatizacion de pipelines de diseno con diffusers: al integrarse en la libreria diffusers como `QwenImage21Pipeline`, se puede invocar desde scripts de Python en un flujo de generacion por lotes.
+- Diseño de material gráfico con transparencia: generación directa de stickers, logotipos y elementos superpuestos en RGBA, evitando el paso posterior de recorte y eliminación de fondo en herramientas externas.
+- Comercio electrónico y catálogo de producto: edición de fotografías de producto con preservación de identidad, cambio de fondo o de contexto y generación de variantes a partir de varias referencias del mismo artículo.
+- Producción audiovisual y previsualización: generación de imágenes en ratios panorámicos (16:9, 2752x1536) para storyboards y concept art con control de composición.
+- Fotografía de retrato y composición de grupos: creación de fotografías de grupo a partir de retratos individuales de referencia, útil en estudios fotográficos y agencias.
+- Marketing y cartelería: generación de carteles con texto legible integrado gracias al renderizado tipográfico mejorado, en resoluciones de hasta 2048x2048.
+- Edición localizada en flujos de retoque: sustitución de objetos o regiones concretas mediante máscaras o anotaciones, sin regenerar la totalidad de la imagen.
+- Automatización de pipelines de contenido: integración vía `QwenImage21Pipeline` en servicios de generación por lotes, con `enable_model_cpu_offload()` para reducir el consumo de VRAM en despliegues ajustados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card, el repositorio de GitHub y los resultados de busqueda consultados no incluyen metricas cuantitativas (FID, CLIP score, GenEval, DPG-Bench ni similares) ni comparaciones numericas con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye la etiqueta `eval-results` y referencias a un blog y a un repositorio de GitHub, pero los valores numéricos no se recogen en la documentación proporcionada.
 
 ## Requisitos de hardware
 
-- Peso de los parametros en bfloat16: aproximadamente 14,2 GB solo para los 7.115.124.736 parametros (calculo derivado del recuento de parametros, no confirmado por el autor). El repositorio completo ocupa 47,4 GB, por lo que incluye material adicional no desglosado.
-- VRAM estimada para inferencia: no disponible de forma oficial. Como estimacion derivada del tamano del modelo, cabria esperar un rango de 16 a 24 GB en bfloat16 para resoluciones de 1024-2048 px contando pesos, VAE y memoria de activaciones, dependiendo de la resolucion y del numero de pasos.
-- GPU de datacenter: A100 (40/80 GB) y H100 son adecuadas para inferencia en bfloat16 a resolucion completa sin necesidad de offload.
-- GPU de consumo: si cabe en tarjetas de 24 GB como la RTX 4090 o la RTX 3090 en bfloat16; en tarjetas de 16 GB o menos es previsible necesitar `enable_model_cpu_offload()` o cuantizacion, que no esta documentada por el autor.
-- Opciones de despliegue: diffusers (`QwenImage21Pipeline`), con `torch>=2.4.0`, `transformers>=5.17`, `accelerate` y `pillow` segun las instrucciones de instalacion de la model card. Existe una demo oficial en Hugging Face Spaces.
-- No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI; estas herramientas estan orientadas a modelos de lenguaje y no aplican directamente a un modelo de difusion.
-- Latencia y throughput: no disponibles. El unico parametro de rendimiento indicado es el valor por defecto de 40 pasos de inferencia.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 7.115.124.736 parámetros en bfloat16 (2 bytes por parámetro), los pesos del componente de generación ocupan aproximadamente 14,2 GB, a los que hay que sumar activaciones y buffers de atención; el consumo real supera esa cifra.
+- El repositorio completo ocupa 47,4 GB, por lo que se recomienda almacenamiento local amplio o descarga selectiva.
+- GPU recomendadas: no disponible en la información proporcionada. Por el tamaño en bfloat16, se requiere una GPU con al menos 16-24 GB de VRAM para ejecución completa sin offload; para GPUs de consumo con menos memoria es necesario `enable_model_cpu_offload()`.
+- Opciones de despliegue: diffusers con `QwenImage21Pipeline` (requiere `torch>=2.4.0`, `transformers>=5.17` y diffusers desde el repositorio Git), `accelerate` y `pillow`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (son herramientas orientadas a modelos de lenguaje).
+- Latencia y throughput: no disponibles. La model card emplea 40 pasos de inferencia (`num_inference_steps=40`) en los ejemplos, lo que da una referencia del coste por imagen, pero sin cifras de tiempo.
 
 ## Comparativa con modelos similares
 
-No se incluyen en la informacion proporcionada datos verificables sobre modelos comparables. La tabla siguiente recoge referencias de caracter general sobre modelos de generacion de imagen de pesos abiertos de tamano similar; estos valores no proceden de las fuentes consultadas en esta busqueda y deberian verificarse antes de usarse en una decision tecnica.
-
-| Modelo | Parametros | Transparencia RGBA nativa | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Qwen-Image-2.1 | 7,1 mil millones (32 capas DiT) | Si | Qwen Research License Agreement (uso de investigacion) | Hugging Face, ModelScope, demo en Spaces |
-| FLUX.1-dev (referencia general, no verificada en esta busqueda) | 12 mil millones | No documentada en la fuente | Licencia no comercial de FLUX.1 [dev] | Pesos abiertos en Hugging Face |
-| Stable Diffusion 3.5 Large (referencia general, no verificada en esta busqueda) | 8 mil millones | No documentada en la fuente | Stability AI Community License | Pesos abiertos en Hugging Face |
-
-No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la informacion consultada.
+No disponible. La información proporcionada no incluye datos de benchmarks ni especificaciones de modelos comparables de la misma categoría (generación y edición de imágenes con difusión), por lo que no es posible establecer una comparación rigurosa con parámetros, contexto, rendimiento y licencia.
 
 ## Limitaciones y advertencias
 
-- Licencia de investigacion: la Qwen Research License Agreement (`license_name: qwen-research`) no es una licencia de codigo abierto permisiva y restringe el uso comercial. Es imprescindible revisar el fichero LICENSE antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion visual: como cualquier modelo de difusion, puede generar elementos incoherentes, anatomia incorrecta o detalles que no existen en la imagen de referencia, especialmente con prompts ambiguos.
-- Texto renderizado: aunque la model card declara mejoras en tipografia, la generacion de texto largo o poco frecuente sigue siendo un punto debil habitual en este tipo de modelos y requiere verificacion manual.
-- Preservacion de identidad: la capacidad de mantener la identidad de personas a partir de referencias abre riesgos de suplantacion y de generacion de contenido no consentido. No se documentan en la informacion disponible filtros, clasificadores de seguridad ni politicas de uso asociadas.
-- Idiomas soportados: no disponibles. No se puede confirmar el comportamiento con prompts en castellano ni en idiomas distintos del ingles.
-- Longitud de prompt: no documentada, lo que dificulta planificar prompts largos o con muchas restricciones.
-- Resoluciones limitadas a las relaciones de aspecto predefinidas por el autor; no se documenta soporte de resoluciones arbitrarias.
-- Rendimiento y calidad no verificables: al no haber benchmarks publicados en la informacion disponible, la evaluacion depende de pruebas propias.
-- Coste de inferencia: 40 pasos por defecto y resoluciones de hasta 2752x1536 implican un coste computacional alto por imagen; no se proporcionan cifras de latencia ni de throughput.
-- Sesgos: no se documenta la composicion del dataset de entrenamiento, por lo que no es posible evaluar sesgos demograficos, culturales o de representacion.
-- Madurez del ecosistema: el modelo se publico el 14 de septiembre y se actualizo el 20 de septiembre, con 183 descargas registradas, lo que indica una adopcion todavia baja y poca base de usuarios que hayan reportado problemas en produccion.
+- Licencia Qwen Research License Agreement: es una licencia de investigación, no una licencia permisiva estándar; el uso comercial puede estar restringido o sujeto a condiciones adicionales que deben revisarse en el archivo LICENSE del repositorio.
+- No se documentan los sesgos del modelo ni la composición del dataset de entrenamiento, lo que impide evaluar riesgos de representación demográfica o cultural.
+- Riesgo de alucinación visual inherente a los modelos de difusión: el modelo puede generar texto ilegible, anatomías incorrectas o detalles inconsistentes con el prompt, especialmente en escenas complejas.
+- Idiomas soportados no disponibles: no se especifica qué lenguas admiten los prompts de texto, lo que limita la planificación de despliegues multilingües.
+- No se documentan tipos de cuantización soportados; el uso en bfloat16 es el único escenario descrito, lo que condiciona el despliegue en hardware limitado.
+- El requisito de `transformers>=5.17` y de diffusers desde el repositorio Git implica dependencias en versiones recientes o no publicadas, con riesgo de incompatibilidades en entornos de producción estables.
+- No es un modelo de lenguaje: no soporta tool calling, agentes ni razonamiento multi-paso; su uso debe limitarse a tareas de imagen.
+- La información sobre rendimiento cuantitativo es inexistente en la documentación disponible, por lo que cualquier decisión de producción basada en calidad comparativa requiere evaluación propia.
 
 ## Enlaces
 
@@ -106,8 +83,8 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
-- Discord de Qwen: https://discord.gg/CV4E9rpNSD
-- Portal de Qwen: https://qwen.ai/home
-- Qwen Studio: https://chat.qwen.ai/
-- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
+- Discord: https://discord.gg/BEYSk3pkSu
+- Formulario de feedback: https://alidocs.dingtalk.com/notable/share/form/v01WgZOZA5DaVQPeqLX_dv19yqvsgs3oebp3pcjys_1qX0QQ0?source=link
+- Plataforma Qwen: https://qwen.ai/home
+- Qwen Chat: https://chat.qwen.ai/
 - Wikipedia (familia Qwen): https://en.wikipedia.org/wiki/Qwen
