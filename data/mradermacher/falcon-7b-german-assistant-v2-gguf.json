@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/falcon-7b-german-assistant-v2-GGUF",
+  "slug": "mradermacher-falcon-7b-german-assistant-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/falcon-7b-german-assistant-v2-GGUF",
+  "created_at": "2025-02-26T21:01:06.000Z",
+  "updated_at": "2026-11-18T16:54:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "de",
+    "dataset:flozi00/conversations",
+    "base_model:flozi00/falcon-7b-german-assistant-v2",
+    "base_model:quantized:flozi00/falcon-7b-german-assistant-v2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 255,
+  "trending_score": 0,
+  "parameters": 7217335168,
+  "parameters_human": "7.22B",
+  "storage_bytes": 70355151744,
+  "storage_human": "70.4 GB",
+  "context_length": 2048,
+  "base_model": "flozi00/falcon-7b-german-assistant-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

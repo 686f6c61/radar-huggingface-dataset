@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/llama3-diverce-ver1.6-GGUF",
+  "slug": "mradermacher-llama3-diverce-ver1-6-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama3-diverce-ver1.6-GGUF",
+  "created_at": "2025-08-31T23:31:04.000Z",
+  "updated_at": "2026-11-18T18:04:43.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:sel303/llama3-diverce-ver1.6",
+    "base_model:quantized:sel303/llama3-diverce-ver1.6",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820228096,
+  "storage_human": "71.8 GB",
+  "context_length": 8192,
+  "base_model": "sel303/llama3-diverce-ver1.6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

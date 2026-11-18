@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "alphaedge-ai/whisper-large-v3-turbo-mlt-16384",
+  "slug": "alphaedge-ai-whisper-large-v3-turbo-mlt-16384",
+  "author": "alphaedge-ai",
+  "url": "https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-mlt-16384",
+  "created_at": "2026-06-01T15:17:02.000Z",
+  "updated_at": "2026-11-18T13:50:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "mt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "trimmed",
+    "mt",
+    "dataset:lbourdois/fineweb-2-trimming",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 763461120,
+  "parameters_human": "763.5M",
+  "storage_bytes": 1526990824,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

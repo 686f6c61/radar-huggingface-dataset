@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Glazkov/MARS-omission-checkpoints",
+  "slug": "glazkov-mars-omission-checkpoints",
+  "author": "Glazkov",
+  "url": "https://huggingface.co/Glazkov/MARS-omission-checkpoints",
+  "created_at": "2026-11-18T12:50:26.000Z",
+  "updated_at": "2026-11-18T12:50:33.000Z",
+  "license": "component-specific",
+  "license_family": "unknown",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "summarization",
+    "reproducibility",
+    "en",
+    "base_model:google/long-t5-tglobal-base",
+    "base_model:finetune:google/long-t5-tglobal-base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16696361374,
+  "storage_human": "16.7 GB",
+  "context_length": null,
+  "base_model": "microsoft/deberta-large-mnli, google/long-t5-tglobal-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

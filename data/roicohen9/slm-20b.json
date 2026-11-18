@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "roicohen9/slm-20b",
+  "slug": "roicohen9-slm-20b",
+  "author": "roicohen9",
+  "url": "https://huggingface.co/roicohen9/slm-20b",
+  "created_at": "2026-11-18T13:02:46.000Z",
+  "updated_at": "2026-11-18T13:08:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1677297664,
+  "parameters_human": "1.68B",
+  "storage_bytes": 3354620504,
+  "storage_human": "3.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

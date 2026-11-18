@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "alimudassir21/hifz-quran-model",
+  "slug": "alimudassir21-hifz-quran-model",
+  "author": "alimudassir21",
+  "url": "https://huggingface.co/alimudassir21/hifz-quran-model",
+  "created_at": "2026-11-18T14:15:51.000Z",
+  "updated_at": "2026-11-18T14:15:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "quran",
+    "webgpu",
+    "ar",
+    "base_model:tarteel-ai/whisper-base-ar-quran",
+    "base_model:quantized:tarteel-ai/whisper-base-ar-quran",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 460367271,
+  "storage_human": "460 MB",
+  "context_length": null,
+  "base_model": "tarteel-ai/whisper-base-ar-quran",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

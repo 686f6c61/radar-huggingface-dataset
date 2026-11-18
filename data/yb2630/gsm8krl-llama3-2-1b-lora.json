@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "yb2630/gsm8krl-llama3.2-1B-lora",
+  "slug": "yb2630-gsm8krl-llama3-2-1b-lora",
+  "author": "yb2630",
+  "url": "https://huggingface.co/yb2630/gsm8krl-llama3.2-1B-lora",
+  "created_at": "2026-11-18T12:43:14.000Z",
+  "updated_at": "2026-11-18T12:45:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107446768,
+  "storage_human": "107 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

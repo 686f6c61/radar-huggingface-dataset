@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "codebucketsolutions/edge-punct-casing-en-onnx",
+  "slug": "codebucketsolutions-edge-punct-casing-en-onnx",
+  "author": "codebucketsolutions",
+  "url": "https://huggingface.co/codebucketsolutions/edge-punct-casing-en-onnx",
+  "created_at": "2026-11-18T18:51:58.000Z",
+  "updated_at": "2026-11-18T18:51:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "punctuation",
+    "truecasing",
+    "sherpa-onnx",
+    "en",
+    "base_model:frankyoujian/Edge-Punct-Casing",
+    "base_model:quantized:frankyoujian/Edge-Punct-Casing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7490500,
+  "storage_human": "7 MB",
+  "context_length": null,
+  "base_model": "frankyoujian/Edge-Punct-Casing",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

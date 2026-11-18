@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "Einzeln/home-brief-gemma-4-e2b-litertlm",
+  "slug": "einzeln-home-brief-gemma-4-e2b-litertlm",
+  "author": "Einzeln",
+  "url": "https://huggingface.co/Einzeln/home-brief-gemma-4-e2b-litertlm",
+  "created_at": "2026-11-18T15:02:26.000Z",
+  "updated_at": "2026-11-18T15:03:46.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma-4",
+    "on-device-ai",
+    "android",
+    "flutter",
+    "lora",
+    "text-generation",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:adapter:google/gemma-4-E2B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2750159552,
+  "storage_human": "2.8 GB",
+  "context_length": null,
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACHETER MAISON TOUL Achat appartement, studio et terrain",
+      "url": "https://www.myhome-france.com/",
+      "snippet": "Présentation de notre agence immobilière MY HOME à Toul L'agence MY HOME agence immobilière à TOUL, vous accompagne …"
+    },
+    {
+      "title": "ACHETER MAISON TOUL Achat appartement, studio et terrain",
+      "url": "https://www.myhome-france.com/vente-immobilier-XXXXX.asp",
+      "snippet": "Vente maison et appartement autour de TOUL et ses environs. Appartements et maisons à vendre vers TOUL, GONDREVILLE, …"
+    },
+    {
+      "title": "Sélection de biens immobilier en vente - myhome-france.com",
+      "url": "http://www.myhome-france.com/searchvilles.asp?v=nancy",
+      "snippet": "Vente appartement à NANCY 129 300€ Très bel appartement T3 avec jardin, au premier étage d'un petit immeuble.Vous serez …"
+    },
+    {
+      "title": "Notre agence immobilière à Toul - myhome-france.com",
+      "url": "https://www.myhome-france.com/agence-immobiliere-XXXXX",
+      "snippet": "Notre agence vous accompagne dans tous vos projets immobiliers. Vous souhaitez faire estimer votre bien, le vendre ou vous …"
+    },
+    {
+      "title": "Vente maisons et appartements, studios et terrains à vendre dans la ...",
+      "url": "http://www.myhome-france.com/vendus.asp",
+      "snippet": "vente de maisons, appartements, studios et terrains dans la région de Toul, agence immobilière MY HOME"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "OpenMed/ModernBERT-BiomedicalSections-Base-v1",
+  "slug": "openmed-modernbert-biomedicalsections-base-v1",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/ModernBERT-BiomedicalSections-Base-v1",
+  "created_at": "2026-10-26T13:34:05.000Z",
+  "updated_at": "2026-11-18T13:51:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "medical",
+    "biomedical",
+    "sentence-classification",
+    "abstract-sections",
+    "evidence-based-medicine",
+    "pubmed",
+    "openmed",
+    "en",
+    "arxiv:2508.01630",
+    "arxiv:2412.13663",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 149608709,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598449012,
+  "storage_human": "598 MB",
+  "context_length": null,
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Biomedical abstract sentence classification",
+      "dataset": "Held-out sentences from PubMed abstracts of randomized controlled trials (5,976 sentences, 500 abstracts)",
+      "metric": "Macro-F1 (five sections)",
+      "value": 80.3
+    },
+    {
+      "task": "Biomedical abstract sentence classification",
+      "dataset": "Held-out sentences from PubMed abstracts of randomized controlled trials (5,976 sentences, 500 abstracts)",
+      "metric": "Accuracy",
+      "value": 86.3
+    }
+  ],
+  "sources": []
+}

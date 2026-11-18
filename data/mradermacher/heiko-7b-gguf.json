@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/heiko-7b-GGUF",
+  "slug": "mradermacher-heiko-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/heiko-7b-GGUF",
+  "created_at": "2024-12-17T13:14:22.000Z",
+  "updated_at": "2026-11-18T16:54:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:eriksu/heiko-7b",
+    "base_model:quantized:eriksu/heiko-7b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929806976,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "eriksu/heiko-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

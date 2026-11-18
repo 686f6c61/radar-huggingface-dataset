@@ -1,0 +1,89 @@
+{
+  "schema": 2,
+  "id": "Meridian21Lab/concept-memory-140m-11.5bt",
+  "slug": "meridian21lab-concept-memory-140m-11-5bt",
+  "author": "Meridian21Lab",
+  "url": "https://huggingface.co/Meridian21Lab/concept-memory-140m-11.5bt",
+  "created_at": "2026-11-18T14:14:01.000Z",
+  "updated_at": "2026-11-18T14:17:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "perceiver_ar",
+    "mrcogito",
+    "meridian21",
+    "concept-memory",
+    "size-140m",
+    "budget-11.5bt",
+    "long-context",
+    "base-model",
+    "research",
+    "pytorch",
+    "e38",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:nvidia/Nemotron-CC-v2",
+    "dataset:nvidia/Nemotron-CC-Math-v1",
+    "dataset:nvidia/Nemotron-Pretraining-Specialized-v1",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "dataset:common-pile/stackv2_edu_filtered",
+    "dataset:common-pile/project_gutenberg_filtered",
+    "dataset:common-pile/arxiv_papers_filtered",
+    "dataset:common-pile/doab_filtered",
+    "dataset:common-pile/usgpo_filtered",
+    "dataset:common-pile/uk_hansard_filtered",
+    "dataset:allenai/dolma3_longmino_pool",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 141506176,
+  "parameters_human": "141.5M",
+  "storage_bytes": 566562118,
+  "storage_human": "567 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Grammar (BLiMP",
+      "dataset": "BLiMP",
+      "metric": "accuracy (%)",
+      "value": 80.56
+    },
+    {
+      "task": "Science quiz (ARC-Easy",
+      "dataset": "ARC-Easy",
+      "metric": "accuracy (%)",
+      "value": 48.95
+    },
+    {
+      "task": "Language modelling (WikiText-2)",
+      "dataset": "WikiText-2",
+      "metric": "byte perplexity (lower is better)",
+      "value": 1.95
+    }
+  ],
+  "sources": []
+}

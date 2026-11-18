@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Gunkat/whisper-small-cgn-onnx",
+  "slug": "gunkat-whisper-small-cgn-onnx",
+  "author": "Gunkat",
+  "url": "https://huggingface.co/Gunkat/whisper-small-cgn-onnx",
+  "created_at": "2026-11-18T14:40:03.000Z",
+  "updated_at": "2026-11-18T14:40:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "nl",
+    "base_model:kul-speech-lab/whisper_small_CGN",
+    "base_model:quantized:kul-speech-lab/whisper_small_CGN",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 900255746,
+  "storage_human": "900 MB",
+  "context_length": null,
+  "base_model": "kul-speech-lab/whisper_small_CGN",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

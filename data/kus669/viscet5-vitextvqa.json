@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Kus669/ViSceT5-ViTextVQA",
+  "slug": "kus669-viscet5-vitextvqa",
+  "author": "Kus669",
+  "url": "https://huggingface.co/Kus669/ViSceT5-ViTextVQA",
+  "created_at": "2026-11-10T04:10:26.000Z",
+  "updated_at": "2026-11-18T16:15:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "visual-question-answering",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvivqa",
+    "visual-question-answering",
+    "scene-text-vqa",
+    "vietnamese",
+    "ocr",
+    "t5",
+    "vi",
+    "base_model:VietAI/vit5-base",
+    "base_model:finetune:VietAI/vit5-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 345630410,
+  "parameters_human": "345.6M",
+  "storage_bytes": 17308612532,
+  "storage_human": "17.3 GB",
+  "context_length": null,
+  "base_model": "VietAI/vit5-base, openai/clip-vit-base-patch16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

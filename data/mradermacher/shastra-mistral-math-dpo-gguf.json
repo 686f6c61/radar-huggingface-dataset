@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Shastra-Mistral-Math-DPO-GGUF",
+  "slug": "mradermacher-shastra-mistral-math-dpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Shastra-Mistral-Math-DPO-GGUF",
+  "created_at": "2025-03-11T07:54:45.000Z",
+  "updated_at": "2026-11-18T19:16:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:shastraai/Shastra-Mistral-Math-DPO",
+    "base_model:quantized:shastraai/Shastra-Mistral-Math-DPO",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 126,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929810432,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "shastraai/Shastra-Mistral-Math-DPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

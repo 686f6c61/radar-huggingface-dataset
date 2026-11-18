@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "curia007/Qwen2.5-7B-1M-4bit-mlx",
+  "slug": "curia007-qwen2-5-7b-1m-4bit-mlx",
+  "author": "curia007",
+  "url": "https://huggingface.co/curia007/Qwen2.5-7B-1M-4bit-mlx",
+  "created_at": "2026-11-18T17:31:39.000Z",
+  "updated_at": "2026-11-18T17:34:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct-1M",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct-1M",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4295768620,
+  "storage_human": "4.3 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct-1M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

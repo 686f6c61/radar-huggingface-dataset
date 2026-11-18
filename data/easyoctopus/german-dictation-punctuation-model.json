@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "EasyOctopus/german-dictation-punctuation-model",
+  "slug": "easyoctopus-german-dictation-punctuation-model",
+  "author": "EasyOctopus",
+  "url": "https://huggingface.co/EasyOctopus/german-dictation-punctuation-model",
+  "created_at": "2026-11-18T17:33:44.000Z",
+  "updated_at": "2026-11-18T17:34:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "experimental",
+    "german-support",
+    "de",
+    "dataset:EasyOctopus/german-dictation-punctuation-data",
+    "base_model:distilbert/distilbert-base-german-cased",
+    "base_model:finetune:distilbert/distilbert-base-german-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66812165,
+  "parameters_human": "66.8M",
+  "storage_bytes": 267261004,
+  "storage_human": "267 MB",
+  "context_length": null,
+  "base_model": "distilbert/distilbert-base-german-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

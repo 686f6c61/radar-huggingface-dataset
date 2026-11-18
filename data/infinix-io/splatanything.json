@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Infinix-io/SplatAnything",
+  "slug": "infinix-io-splatanything",
+  "author": "Infinix-io",
+  "url": "https://huggingface.co/Infinix-io/SplatAnything",
+  "created_at": "2026-11-18T16:26:03.000Z",
+  "updated_at": "2026-11-18T16:26:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16564154446,
+  "storage_human": "16.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SplatAnything",
+      "url": "http://go/v1/AS9VrooAOXufav3RmAFhNqI4zDDCkKtl82buI9zqghjVJ1JzHFcBmlGjtECjl0fvP6InowiCTPjX6isL-nWGYTzQ_huGXYs95Mdw524Z6PlU4ROOgEzqR2nPBeGFKLd7f-ApeY6ZLZq6OLJaxTiVLt_RvJQSSc3LOEt9bTofZrltPQ2DtAwsiUYGhw34lTQFlX1gvFQBZeBvCA",
+      "snippet": "Architecture of SplatAnything. Given N input images and optional camera parameters, a frozen geometry foundation model first estimates multi-view geometry."
+    }
+  ]
+}

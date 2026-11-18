@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "qzrzz/qfmt-models",
+  "slug": "qzrzz-qfmt-models",
+  "author": "qzrzz",
+  "url": "https://huggingface.co/qzrzz/qfmt-models",
+  "created_at": "2026-11-18T17:04:30.000Z",
+  "updated_at": "2026-11-18T17:11:40.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "coreml",
+    "image-processing",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 501266642,
+  "storage_human": "501 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

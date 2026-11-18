@@ -1,0 +1,87 @@
+{
+  "schema": 2,
+  "id": "nardi/LFM3-TS",
+  "slug": "nardi-lfm3-ts",
+  "author": "nardi",
+  "url": "https://huggingface.co/nardi/LFM3-TS",
+  "created_at": "2026-11-18T12:57:19.000Z",
+  "updated_at": "2026-11-18T13:52:39.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3_ts",
+    "text-generation",
+    "time-series",
+    "anomaly-detection",
+    "time-series-question-answering",
+    "multimodal",
+    "lfm3",
+    "liquid",
+    "chatts",
+    "custom_code",
+    "conversational",
+    "en",
+    "dataset:ChatTSRepo/ChatTS-Training-Dataset",
+    "dataset:databricks/databricks-dolly-15k",
+    "arxiv:2412.03104",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1781433088,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3580818665,
+  "storage_human": "3.6 GB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mobilier de jardin italien, maison & professionnels ‹ Nardi Outdoor",
+      "url": "https://www.nardioutdoor.com/fr/",
+      "snippet": "Nardi fabrique des meubles de jardin et d’extérieur : chaises, tables, lits, canapés, tabourets et accessoires. Venez découvrir le …"
+    },
+    {
+      "title": "Agence Cabinet Nardi",
+      "url": "https://www.cabinetnardi.com/",
+      "snippet": "Présents depuis 1977 dans les métiers de l'immobilier, le Cabinet D. NARDI et ses collaborateurs vous accueillent pour réaliser vos …"
+    },
+    {
+      "title": "Nardi Group - Nardi Group | Agricultural Machinery",
+      "url": "https://www.nardigroup.com/fr/",
+      "snippet": "De la préparation du sol à la fertilisation, Nardi conçoit et fabrique des outils fiables et performants pour chaque étape du cycle …"
+    },
+    {
+      "title": "Home - Nardi",
+      "url": "https://www.nardi.it/fr/",
+      "snippet": "Nardi est donc l’investissement sûr pour ceux qui recherchent la qualité, les performances élevées et un service complet. Grâce à …"
+    },
+    {
+      "title": "Salon de jardin et meubles d'extérieur pour la maison ‹ Nardi Outdoor",
+      "url": "https://www.nardioutdoor.com/fr/produits/exterieur-residentiel.htm",
+      "snippet": "Meubles d’extérieur : chaises, tables, lits, tabourets et canapés d’extérieur, parfaits pour les jardins et les espaces en plein air. …"
+    }
+  ]
+}

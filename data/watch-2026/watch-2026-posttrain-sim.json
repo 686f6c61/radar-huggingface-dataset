@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "watch-2026/watch-2026-posttrain-sim",
+  "slug": "watch-2026-watch-2026-posttrain-sim",
+  "author": "watch-2026",
+  "url": "https://huggingface.co/watch-2026/watch-2026-posttrain-sim",
+  "created_at": "2026-11-18T17:31:51.000Z",
+  "updated_at": "2026-11-18T17:34:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15692857521,
+  "storage_human": "15.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple Watch - Apple (FR)",
+      "url": "https://www.apple.com/fr/watch/",
+      "snippet": "Familiarisez-vous avec votre nouvelle Apple Watch. Découvrez comment profiter au maximum de votre nouvelle Apple Watch grâce …"
+    },
+    {
+      "title": "Découvrez l’univers des montres Swatch | Swatch® France",
+      "url": "https://www.swatch.com/fr-fr/",
+      "snippet": "Plongez dans l’univers tendance des montres Swatch pour tous les styles. Parcourez notre boutique de montres en ligne."
+    },
+    {
+      "title": "Apple Watch - Apple",
+      "url": "https://www.apple.com/watch/",
+      "snippet": "Apple Watch is the ultimate device for a healthy life. Available in three models: Apple Watch Series 12, Apple Watch Ultra 4, and …"
+    },
+    {
+      "title": "Chrono24: The World's Leading Watch Market",
+      "url": "https://www.chrono24.com/",
+      "snippet": "Every month, 9 million watch enthusiasts search for their next watch on Chrono24 – perhaps they’re looking for your watch? Create a …"
+    },
+    {
+      "title": "The Watch Gallery - Montres indépendantes & abordables",
+      "url": "https://www.thewatchgallery.fr/",
+      "snippet": "Montres de marques indépendantes & abordables, neuves et d'occasion, à Paris et Lille. Behrens, Awake, Agelocer, Citizen, Alpina, …"
+    }
+  ]
+}

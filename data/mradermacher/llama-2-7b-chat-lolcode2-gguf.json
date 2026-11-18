@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "mradermacher/llama-2-7b-chat-lolcode2-GGUF",
+  "slug": "mradermacher-llama-2-7b-chat-lolcode2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama-2-7b-chat-lolcode2-GGUF",
+  "created_at": "2025-03-09T14:24:10.000Z",
+  "updated_at": "2026-11-18T16:53:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564804864,
+  "storage_human": "59.6 GB",
+  "context_length": 4096,
+  "base_model": "spyrok/llama-2-7b-chat-lolcode2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

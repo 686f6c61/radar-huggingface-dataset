@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "PlantNet/mobilenetv4-hybrid-m-plantclef2024",
+  "slug": "plantnet-mobilenetv4-hybrid-m-plantclef2024",
+  "author": "PlantNet",
+  "url": "https://huggingface.co/PlantNet/mobilenetv4-hybrid-m-plantclef2024",
+  "created_at": "2026-11-18T13:51:13.000Z",
+  "updated_at": "2026-11-18T14:01:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "onnx",
+    "safetensors",
+    "image-classification",
+    "plants",
+    "plantnet",
+    "plantclef",
+    "biodiversity",
+    "southwestern-europe",
+    "knowledge-distillation",
+    "mobilenetv4",
+    "mobile",
+    "edge-ai",
+    "onnxruntime",
+    "arxiv:2604.27178",
+    "base_model:PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+    "base_model:quantized:PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19868974,
+  "parameters_human": "19.9M",
+  "storage_bytes": 158876601,
+  "storage_human": "159 MB",
+  "context_length": null,
+  "base_model": "timm/mobilenetv4_hybrid_medium.ix_e550_r384_in1k, PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Pl@ntNet",
+      "url": "https://plantnet.org/",
+      "snippet": "Avec l'application Pl@ntNet, identifiez une plante à partir d'une photo, et rejoignez un projet de sciences participatives sur la …"
+    },
+    {
+      "title": "Pl@ntNet identify",
+      "url": "https://identify.plantnet.org/fr",
+      "snippet": "Pl@ntnet est un outil pour vous aider à identifier des plantes à partir d'images."
+    },
+    {
+      "title": "Pl@ntNet identify",
+      "url": "https://identify.plantnet.org/",
+      "snippet": "Organization Plantnet.org Team Resources Documentation Open data API Stats Translations Release notes Legal About Terms of …"
+    },
+    {
+      "title": "Home - Pl@ntNet",
+      "url": "https://plantnet.org/en/",
+      "snippet": "With the Pl@ntNet app, identify one plant from a picture, and be part of a citizen science project on plant biodiversity"
+    },
+    {
+      "title": "Commencer | Pl@ntNet doc",
+      "url": "https://docs.plantnet.org/fr/get-started/",
+      "snippet": "Pl@ntNet : identifiez des plantes facilement via l'appli mobile (Android & iOS) ou le web. Créez un compte, activez la géolocalisation, …"
+    }
+  ]
+}

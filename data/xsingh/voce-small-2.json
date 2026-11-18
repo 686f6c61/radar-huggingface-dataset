@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "xsingh/Voce-small",
+  "slug": "xsingh-voce-small-2",
+  "author": "xsingh",
+  "url": "https://huggingface.co/xsingh/Voce-small",
+  "created_at": "2026-11-18T11:02:15.000Z",
+  "updated_at": "2026-11-18T11:02:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "gguf",
+    "text-to-speech",
+    "en",
+    "dataset:n4ze3m/tiny-voca",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101271441,
+  "storage_human": "101 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

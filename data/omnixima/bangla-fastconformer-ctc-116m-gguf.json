@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "omnixima/bangla-fastconformer-ctc-116m-gguf",
+  "slug": "omnixima-bangla-fastconformer-ctc-116m-gguf",
+  "author": "omnixima",
+  "url": "https://huggingface.co/omnixima/bangla-fastconformer-ctc-116m-gguf",
+  "created_at": "2026-11-18T14:20:11.000Z",
+  "updated_at": "2026-11-18T14:33:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "gguf",
+    "transcribe.cpp",
+    "fastconformer",
+    "bengali",
+    "bangla",
+    "kothon",
+    "automatic-speech-recognition",
+    "bn",
+    "base_model:kazalbrur/Bangla-asr-fastconformer-116m-dialects",
+    "base_model:quantized:kazalbrur/Bangla-asr-fastconformer-116m-dialects",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115618817,
+  "parameters_human": "115.6M",
+  "storage_bytes": 600815680,
+  "storage_human": "601 MB",
+  "context_length": null,
+  "base_model": "kazalbrur/Bangla-asr-fastconformer-116m-dialects",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

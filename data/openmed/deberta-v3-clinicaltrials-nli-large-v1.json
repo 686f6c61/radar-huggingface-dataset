@@ -1,0 +1,88 @@
+{
+  "schema": 2,
+  "id": "OpenMed/DeBERTa-v3-ClinicalTrials-NLI-Large-v1",
+  "slug": "openmed-deberta-v3-clinicaltrials-nli-large-v1",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/DeBERTa-v3-ClinicalTrials-NLI-Large-v1",
+  "created_at": "2026-10-27T13:13:14.000Z",
+  "updated_at": "2026-11-18T13:51:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "medical",
+    "clinical",
+    "clinical-trials",
+    "oncology",
+    "breast-cancer",
+    "nli",
+    "natural-language-inference",
+    "deberta-v3",
+    "openmed",
+    "en",
+    "arxiv:2508.01630",
+    "arxiv:2111.09543",
+    "base_model:MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "base_model:finetune:MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 435064835,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1742773164,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical trial natural language inference",
+      "dataset": "Expert-labeled statement and trial-report pairs (196 pairs, 98 breast-cancer trials)",
+      "metric": "Macro F1 (entailment and contradiction, three-way argmax)",
+      "value": 83.65
+    },
+    {
+      "task": "Clinical trial natural language inference",
+      "dataset": "Expert-labeled statement and trial-report pairs (196 pairs, 98 breast-cancer trials)",
+      "metric": "Accuracy",
+      "value": 83.67
+    },
+    {
+      "task": "Clinical trial natural language inference",
+      "dataset": "Expert-labeled statement and trial-report pairs (196 pairs, 98 breast-cancer trials)",
+      "metric": "F1 entailment",
+      "value": 84.31
+    },
+    {
+      "task": "Clinical trial natural language inference",
+      "dataset": "Expert-labeled statement and trial-report pairs (196 pairs, 98 breast-cancer trials)",
+      "metric": "F1 contradiction",
+      "value": 82.98
+    }
+  ],
+  "sources": []
+}

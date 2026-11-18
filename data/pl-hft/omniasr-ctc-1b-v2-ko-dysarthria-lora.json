@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "id": "PL-HFT/omniasr-ctc-1b-v2-ko-dysarthria-lora",
+  "slug": "pl-hft-omniasr-ctc-1b-v2-ko-dysarthria-lora",
+  "author": "PL-HFT",
+  "url": "https://huggingface.co/PL-HFT/omniasr-ctc-1b-v2-ko-dysarthria-lora",
+  "created_at": "2026-11-18T14:09:41.000Z",
+  "updated_at": "2026-11-18T14:23:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "automatic-speech-recognition",
+    "asr",
+    "speech-recognition",
+    "korean",
+    "dysarthria",
+    "lora",
+    "fairseq2",
+    "omnilingual-asr",
+    "ctc",
+    "ko",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283195248,
+  "storage_human": "283 MB",
+  "context_length": null,
+  "base_model": "omniASR_CTC_1B_v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Pooled Internal Test (AI-Hub 013 + 109)",
+      "metric": "CER (%)",
+      "value": 8.1
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Pooled Internal Test (AI-Hub 013 + 109)",
+      "metric": "WER (%)",
+      "value": 25.68
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Dysarthria Speech Test (AI-Hub 013)",
+      "metric": "CER (%)",
+      "value": 1.48
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Dysarthria Speech Test (AI-Hub 013)",
+      "metric": "WER (%)",
+      "value": 5.02
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Typical Speech Test (AI-Hub 109)",
+      "metric": "CER (%)",
+      "value": 12.35
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Typical Speech Test (AI-Hub 109)",
+      "metric": "WER (%)",
+      "value": 38.56
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "External Korean Lecture Speech Test (AI-Hub 71627)",
+      "metric": "CER (%)",
+      "value": 19.22
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "External Korean Lecture Speech Test (AI-Hub 71627)",
+      "metric": "WER (%)",
+      "value": 48.62
+    }
+  ],
+  "sources": []
+}

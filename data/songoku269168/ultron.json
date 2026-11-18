@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Songoku269168/Ultron",
+  "slug": "songoku269168-ultron",
+  "author": "Songoku269168",
+  "url": "https://huggingface.co/Songoku269168/Ultron",
+  "created_at": "2026-10-22T21:30:41.000Z",
+  "updated_at": "2026-11-18T19:23:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "agent",
+    "Task",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 322,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 5534229632,
+  "storage_human": "5.5 GB",
+  "context_length": 1024000,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

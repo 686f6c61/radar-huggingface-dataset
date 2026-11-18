@@ -1,0 +1,105 @@
+{
+  "schema": 2,
+  "id": "martinkorelic/rudar-gliner2-sl-coref",
+  "slug": "martinkorelic-rudar-gliner2-sl-coref",
+  "author": "martinkorelic",
+  "url": "https://huggingface.co/martinkorelic/rudar-gliner2-sl-coref",
+  "created_at": "2026-11-15T15:24:47.000Z",
+  "updated_at": "2026-11-16T12:17:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "sl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "extractor",
+    "coreference-resolution",
+    "gliner2",
+    "slovenian",
+    "information-extraction",
+    "token-classification",
+    "custom_code",
+    "sl",
+    "base_model:martinkorelic/rudar-gliner2-sl-base",
+    "base_model:finetune:martinkorelic/rudar-gliner2-sl-base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 307098645,
+  "parameters_human": "307.1M",
+  "storage_bytes": 1255045522,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": "martinkorelic/rudar-gliner2-sl-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Coreference resolution",
+      "dataset": "SloBench Slovenian coreference resolution (hidden test, 81 documents)",
+      "metric": "CoNLL score",
+      "value": 46.59
+    },
+    {
+      "task": "Coreference resolution",
+      "dataset": "SloBench Slovenian coreference resolution (hidden test, 81 documents)",
+      "metric": "MUC F1",
+      "value": 51.2
+    },
+    {
+      "task": "Coreference resolution",
+      "dataset": "SloBench Slovenian coreference resolution (hidden test, 81 documents)",
+      "metric": "B³ F1",
+      "value": 42.56
+    },
+    {
+      "task": "Coreference resolution",
+      "dataset": "SloBench Slovenian coreference resolution (hidden test, 81 documents)",
+      "metric": "CEAF-e F1",
+      "value": 45.99
+    },
+    {
+      "task": "Coreference resolution",
+      "dataset": "SloBench Slovenian coreference resolution (hidden test, 81 documents)",
+      "metric": "CEAF-m F1",
+      "value": 50.33
+    },
+    {
+      "task": "Coreference resolution",
+      "dataset": "SloBench Slovenian coreference resolution (hidden test, 81 documents)",
+      "metric": "BLANC F1",
+      "value": 36.63
+    },
+    {
+      "task": "Coreference resolution",
+      "dataset": "SloBench Slovenian coreference resolution (hidden test, 81 documents)",
+      "metric": "LEA F1",
+      "value": 37.71
+    },
+    {
+      "task": "Coreference resolution",
+      "dataset": "SloBench Slovenian coreference resolution (hidden test, 81 documents)",
+      "metric": "MOR F1",
+      "value": 67.01
+    }
+  ],
+  "sources": []
+}

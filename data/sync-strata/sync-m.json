@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "sync-strata/Sync-M",
+  "slug": "sync-strata-sync-m",
+  "author": "sync-strata",
+  "url": "https://huggingface.co/sync-strata/Sync-M",
+  "created_at": "2026-11-16T09:37:43.000Z",
+  "updated_at": "2026-11-18T13:55:58.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3.8-flash-next",
+    "moe",
+    "sync-strata",
+    "experimental",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34588284416,
+  "storage_human": "34.6 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Secure Cloud Storage & Internet Storage Services | Sync",
+      "url": "https://www.sync.com/",
+      "snippet": "We started Sync in 2011 with the goal of creating a secure cloud storage platform designed to protect your privacy. Sync has grown …"
+    },
+    {
+      "title": "Sync | Stockage cloud sécurisé, partage de fichiers et collaboration ...",
+      "url": "https://www.sync.com/fr-ca/",
+      "snippet": "Sync est une plateforme de stockage de fichiers et de collaboration documentaire qui permet aux équipes de travailler en toute …"
+    },
+    {
+      "title": "Sync | Stockage cloud sécurisé, partage de fichiers et collaboration ...",
+      "url": "https://www10.sync.com/ca-fr/",
+      "snippet": "Sync est une plateforme de stockage de fichiers et de collaboration documentaire qui permet aux équipes de travailler en toute …"
+    },
+    {
+      "title": "MISES À JOUR DE SYNC® ET DES CARTES - Ford FR",
+      "url": "https://www.ford.fr/support/mises-a-jour-cartes-sync",
+      "snippet": "Vérifiez si vous avez besoin de mettre à jour le système SYNC ou les cartes Nous souhaitons vous tenir informé (e) de la dernière …"
+    },
+    {
+      "title": "Sync – Sauvegarde, Restauration & Synchronisation Cloud ...",
+      "url": "https://apps.microsoft.com/detail/9wzdncrdj8bn?hl=fr-FR&gl=FR",
+      "snippet": "Sync est l'application de sauvegarde multi-cloud qui sauvegarde, restaure et synchronise vos fichiers sur votre PC, clés USB et …"
+    }
+  ]
+}

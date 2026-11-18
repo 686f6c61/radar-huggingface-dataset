@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "ovis-community/ovis-2.5-9B",
+  "slug": "ovis-community-ovis-2-5-9b",
+  "author": "ovis-community",
+  "url": "https://huggingface.co/ovis-community/ovis-2.5-9B",
+  "created_at": "2026-09-23T10:03:22.000Z",
+  "updated_at": "2026-11-18T20:02:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ovis2_5",
+    "text-generation",
+    "multimodal",
+    "image-to-text",
+    "video-to-text",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ATH-MaaS/Ovis2.5-9B",
+    "base_model:finetune:ATH-MaaS/Ovis2.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 9174807784,
+  "parameters_human": "9.17B",
+  "storage_bytes": 18361151133,
+  "storage_human": "18.4 GB",
+  "context_length": null,
+  "base_model": "ATH-MaaS/Ovis2.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ovis — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ovis",
+      "snippet": "On trouve aussi des chercheurs fusionnant Ovis aries et les mouflons de Chypre, de Sardaigne et de Corse (descendants probables …"
+    },
+    {
+      "title": "Ovis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ovis",
+      "snippet": "Ovis is a genus of mammals, part of the Caprinae subfamily of the ruminant family Bovidae. [1] Its seven species, including its type …"
+    },
+    {
+      "title": "Ovis gmelinii — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ovis_gmelinii",
+      "snippet": "Ovis gmelinii (variante orthographique : Ovis gmelini, syn. Ovis orientalis), le Mouflon d'Arménie ou simplement Mouflon, est une …"
+    },
+    {
+      "title": "Ovis - fr-academic.com",
+      "url": "https://fr-academic.com/dic.nsf/frwiki/1278416",
+      "snippet": "Le nom de ovis ammon a aussi été utilisé, mais le nombre de chromosomes de Ovis ammon et du mouflon occidental étant différent, …"
+    },
+    {
+      "title": "Ovis - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Ovis",
+      "snippet": "Ovis es un género de mamíferos artiodáctilos de la familia Bovidae. 1 En él se incluye la oveja doméstica y diversas especies …"
+    }
+  ]
+}

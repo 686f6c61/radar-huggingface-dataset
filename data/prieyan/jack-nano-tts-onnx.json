@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Prieyan/jack-nano-tts-onnx",
+  "slug": "prieyan-jack-nano-tts-onnx",
+  "author": "Prieyan",
+  "url": "https://huggingface.co/Prieyan/jack-nano-tts-onnx",
+  "created_at": "2026-11-18T16:20:49.000Z",
+  "updated_at": "2026-11-18T16:23:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "tts",
+    "kitten-tts",
+    "text-to-speech",
+    "en",
+    "base_model:KittenML/kitten-tts-2-nano",
+    "base_model:quantized:KittenML/kitten-tts-2-nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171640666,
+  "storage_human": "172 MB",
+  "context_length": null,
+  "base_model": "KittenML/kitten-tts-2-nano",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

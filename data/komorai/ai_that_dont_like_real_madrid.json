@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "KomorAI/Ai_that_dont_like_real_madrid",
+  "slug": "komorai-ai_that_dont_like_real_madrid",
+  "author": "KomorAI",
+  "url": "https://huggingface.co/KomorAI/Ai_that_dont_like_real_madrid",
+  "created_at": "2026-11-18T15:17:52.000Z",
+  "updated_at": "2026-11-18T15:17:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "custom-vocab",
+    "pl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 104448,
+  "parameters_human": "104448",
+  "storage_bytes": 420416,
+  "storage_human": "420416 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    }
+  ]
+}

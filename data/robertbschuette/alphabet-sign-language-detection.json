@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "robertbschuette/Alphabet-Sign-Language-Detection",
+  "slug": "robertbschuette-alphabet-sign-language-detection",
+  "author": "robertbschuette",
+  "url": "https://huggingface.co/robertbschuette/Alphabet-Sign-Language-Detection",
+  "created_at": "2026-11-18T12:56:00.000Z",
+  "updated_at": "2026-11-18T12:56:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "image-classification",
+    "sign-language-detection",
+    "alphabet",
+    "en",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:finetune:google/siglip2-base-patch16-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92904218,
+  "parameters_human": "92.9M",
+  "storage_bytes": 1058365790,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "google/siglip2-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Übersicht der ehemaligen Teammitglieder (Staff) | Seite 30 | Forum ...",
+      "url": "https://www.gommehd.net/forum/threads/uebersicht-der-ehemaligen-teammitglieder-staff.419482/page-30",
+      "snippet": "Feb 10, 2016 · Liste wurde vong Design her bereits überarbeitet vor einer Woche. Dank Klaus ist sie nun auch übersichtlicher, da …"
+    }
+  ]
+}

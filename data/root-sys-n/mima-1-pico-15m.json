@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "root-sys-n/Mima-1-Pico-15m",
+  "slug": "root-sys-n-mima-1-pico-15m",
+  "author": "root-sys-n",
+  "url": "https://huggingface.co/root-sys-n/Mima-1-Pico-15m",
+  "created_at": "2026-10-23T12:37:55.000Z",
+  "updated_at": "2026-11-18T14:24:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mima",
+    "text-generation",
+    "turkish",
+    "small-language-model",
+    "causal-lm",
+    "conversational",
+    "custom_code",
+    "tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 381,
+  "trending_score": 0,
+  "parameters": 15537792,
+  "parameters_human": "15.5M",
+  "storage_bytes": 62155928,
+  "storage_human": "62 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

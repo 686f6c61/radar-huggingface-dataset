@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "gamug/deberta-v3-news-category-12",
+  "slug": "gamug-deberta-v3-news-category-12",
+  "author": "gamug",
+  "url": "https://huggingface.co/gamug/deberta-v3-news-category-12",
+  "created_at": "2026-11-15T20:48:59.000Z",
+  "updated_at": "2026-11-15T20:52:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "finance",
+    "news-classification",
+    "natural-language-inference",
+    "deberta-v3",
+    "zero-shot-classification",
+    "en",
+    "base_model:MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+    "base_model:finetune:MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737719272,
+  "storage_human": "738 MB",
+  "context_length": null,
+  "base_model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,110 @@
+{
+  "schema": 2,
+  "id": "martinkorelic/rudar-gliner2-sl-ner-conll",
+  "slug": "martinkorelic-rudar-gliner2-sl-ner-conll",
+  "author": "martinkorelic",
+  "url": "https://huggingface.co/martinkorelic/rudar-gliner2-sl-ner-conll",
+  "created_at": "2026-11-15T13:10:49.000Z",
+  "updated_at": "2026-11-16T12:17:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "sl",
+    "hr",
+    "sr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "extractor",
+    "named-entity-recognition",
+    "ner",
+    "gliner2",
+    "slovenian",
+    "information-extraction",
+    "token-classification",
+    "custom_code",
+    "sl",
+    "hr",
+    "sr",
+    "base_model:martinkorelic/rudar-gliner2-sl-base",
+    "base_model:finetune:martinkorelic/rudar-gliner2-sl-base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 307098645,
+  "parameters_human": "307.1M",
+  "storage_bytes": 1249064342,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "martinkorelic/rudar-gliner2-sl-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named entity recognition",
+      "dataset": "SloBench Slovenian named entity recognition (hidden test, 81 documents)",
+      "metric": "F1",
+      "value": 98.15
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "SloBench Slovenian named entity recognition (hidden test, 81 documents)",
+      "metric": "Precision",
+      "value": 97.95
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "SloBench Slovenian named entity recognition (hidden test, 81 documents)",
+      "metric": "Recall",
+      "value": 98.35
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "SloBench Slovenian named entity recognition (hidden test, 81 documents)",
+      "metric": "F1 (PER)",
+      "value": 99.54
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "SloBench Slovenian named entity recognition (hidden test, 81 documents)",
+      "metric": "F1 (DERIV-PER)",
+      "value": 98.97
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "SloBench Slovenian named entity recognition (hidden test, 81 documents)",
+      "metric": "F1 (LOC)",
+      "value": 99.05
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "SloBench Slovenian named entity recognition (hidden test, 81 documents)",
+      "metric": "F1 (ORG)",
+      "value": 97.07
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "SloBench Slovenian named entity recognition (hidden test, 81 documents)",
+      "metric": "F1 (MISC)",
+      "value": 83.48
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "ksiminyu/whisper-large-v2-finetuned-mcv-sw",
+  "slug": "ksiminyu-whisper-large-v2-finetuned-mcv-sw",
+  "author": "ksiminyu",
+  "url": "https://huggingface.co/ksiminyu/whisper-large-v2-finetuned-mcv-sw",
+  "created_at": "2026-11-18T12:38:22.000Z",
+  "updated_at": "2026-11-18T13:01:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "sw"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "sw",
+    "dataset:mozilla-foundation/common_voice_26_0",
+    "base_model:openai/whisper-large-v2",
+    "base_model:finetune:openai/whisper-large-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543304960,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6173370152,
+  "storage_human": "6.2 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-large-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

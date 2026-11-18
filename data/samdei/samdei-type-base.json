@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "samdei/samdei-type-base",
+  "slug": "samdei-samdei-type-base",
+  "author": "samdei",
+  "url": "https://huggingface.co/samdei/samdei-type-base",
+  "created_at": "2026-11-18T13:08:09.000Z",
+  "updated_at": "2026-11-18T15:06:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "blenderbot",
+    "text2text-generation",
+    "transliteration",
+    "romanization",
+    "romanized-khmer",
+    "khmer",
+    "character-level",
+    "pytorch",
+    "int8",
+    "translation",
+    "km",
+    "dataset:samdei/samdei-type-pretraining-data",
+    "dataset:samdei/samdei-type-finetuning-data",
+    "base_model:samdei/samdei-type-base-pretrained",
+    "base_model:finetune:samdei/samdei-type-base-pretrained",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18627132,
+  "parameters_human": "18.6M",
+  "storage_bytes": 246328146,
+  "storage_human": "246 MB",
+  "context_length": null,
+  "base_model": "samdei/samdei-type-base-pretrained",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Romanized Khmer to Khmer script",
+      "dataset": "Samdei Type Bench",
+      "metric": "CER (beam 5, char LM + word LM + OOV + channel rerank, 8-word pieces)",
+      "value": 0.052
+    },
+    {
+      "task": "Romanized Khmer to Khmer script",
+      "dataset": "Samdei Type Bench",
+      "metric": "Exact match",
+      "value": 0.303
+    }
+  ],
+  "sources": []
+}

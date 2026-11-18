@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "caspar/smolvla_so101_pickplace_sim_150_rtx5090_20261118",
+  "slug": "caspar-smolvla_so101_pickplace_sim_150_rtx5090_20261118",
+  "author": "caspar",
+  "url": "https://huggingface.co/caspar/smolvla_so101_pickplace_sim_150_rtx5090_20261118",
+  "created_at": "2026-11-18T14:19:24.000Z",
+  "updated_at": "2026-11-18T14:19:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "imitation-learning",
+    "so101",
+    "dataset:caspar/so101_pickplace_sim_150",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "context_length": null,
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caspar | Expert en stores, pergolas, vérandas et fermetures",
+      "url": "https://casparstores.com/",
+      "snippet": "Nov 3, 2026 · Depuis sa création, il y a 60 ans, Caspar met le conseil au cœur de son métier et fait de votre satisfaction une priorité. …"
+    },
+    {
+      "title": "Magasin et Showroom | Vivez l'expérience de vos Envies | Caspar",
+      "url": "https://casparstores.com/showroom-caspar/",
+      "snippet": "Caspar, c’est le sur-mesure absolu dans le strict respect de vos moyens. Nos conseillers, présents sur place et spécialisés dans les …"
+    },
+    {
+      "title": "Caspar — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Caspar",
+      "snippet": "Prénom Caspar est un prénom masculin équivalent de Gaspard. Pour l'ensemble des articles sur les personnes portant ce prénom, …"
+    },
+    {
+      "title": "Caspar à Duppigheim - Stores (adresse, horaires, avis)",
+      "url": "https://www.pagesjaunes.fr/pros/00308933",
+      "snippet": "Plus d'infos sur Caspar : Notre entreprise intervient sur toute l’Alsace pour la conception, la fabrication et l’installation de solutions de …"
+    },
+    {
+      "title": "CONTROLE TECHNIQUE CASPAR, 67230, HUTTENHEIM",
+      "url": "https://www.ct-huttenheim.fr/",
+      "snippet": "CONTROLE TECHNIQUE CASPAR - Votre sécurité routière garantie. Confiez-nous votre véhicule pour une expertise …"
+    }
+  ]
+}

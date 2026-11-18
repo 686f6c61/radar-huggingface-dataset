@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "OreX/Models2",
+  "slug": "orex-models2",
+  "author": "OreX",
+  "url": "https://huggingface.co/OreX/Models2",
+  "created_at": "2025-07-02T21:26:32.000Z",
+  "updated_at": "2026-11-18T18:40:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 59430464050,
+  "storage_human": "59.4 GB",
+  "context_length": 40960,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orex France - Expertise comptable",
+      "url": "https://www.orex-france.com/",
+      "snippet": "Orex France - Cabinet d'expertise comptable accompagne, conseille, oriente et simplifie le quotidien de ses clients depuis plus de 40 …"
+    },
+    {
+      "title": "Expert-Comptable Orléans - Orex France",
+      "url": "https://www.orex-france.com/expert-comptable-orleans/",
+      "snippet": "Reconnu pour son exigence de qualité, OREX, cabinet d’expert-comptable accompagne et conseille ses clients de tous secteurs …"
+    },
+    {
+      "title": "Propreté industrielle à Paris et Ile de France – Groupe Orex",
+      "url": "https://www.groupe-orex.com/",
+      "snippet": "Le Groupe OREX met tout en œuvre pour satisfaire les besoins des entreprises et des professionnels pour leurs besoins en hygiène, …"
+    },
+    {
+      "title": "orexpa.orex-france.com - MyUnisoft",
+      "url": "https://orexpa.orex-france.com/",
+      "snippet": "orexpa.orex-france.com - MyUnisoft ... MyUnisoft"
+    },
+    {
+      "title": "OREX, 125 mg, granulé pour suspension buvable, boîte d’un flacon …",
+      "url": "https://asafar.net/fiche/orex-125-mg-1-flac-60-ml/",
+      "snippet": "Jun 5, 2026 · Médicaments équivalents (dosage différent) OREX, 250 mg, granulé pour suspension buvable, boîte d’un flacon de 60 ml"
+    }
+  ]
+}

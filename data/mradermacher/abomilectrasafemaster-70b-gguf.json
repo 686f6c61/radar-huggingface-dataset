@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Abomilectrasafemaster-70B-GGUF",
+  "slug": "mradermacher-abomilectrasafemaster-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Abomilectrasafemaster-70B-GGUF",
+  "created_at": "2025-03-23T06:51:48.000Z",
+  "updated_at": "2026-11-18T16:53:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:ReadyArt/Abomilectrasafemaster-70B",
+    "base_model:quantized:ReadyArt/Abomilectrasafemaster-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 70553821248,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303930112,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "ReadyArt/Abomilectrasafemaster-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

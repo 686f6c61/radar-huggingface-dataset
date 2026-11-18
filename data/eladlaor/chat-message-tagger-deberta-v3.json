@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "id": "eladlaor/chat-message-tagger-deberta-v3",
+  "slug": "eladlaor-chat-message-tagger-deberta-v3",
+  "author": "eladlaor",
+  "url": "https://huggingface.co/eladlaor/chat-message-tagger-deberta-v3",
+  "created_at": "2026-04-08T15:00:46.000Z",
+  "updated_at": "2026-11-18T16:16:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "multi-label-classification",
+    "chat",
+    "message-enrichment",
+    "group-chat",
+    "deberta-v3",
+    "community-analytics",
+    "en",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 184363023,
+  "parameters_human": "184.4M",
+  "storage_bytes": 368750574,
+  "storage_human": "369 MB",
+  "context_length": null,
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-Label Text Classification",
+      "dataset": "chat-message-multilabel",
+      "metric": "Mean F1 (macro)",
+      "value": 0.5979
+    },
+    {
+      "task": "Multi-Label Text Classification",
+      "dataset": "chat-message-multilabel",
+      "metric": "Hamming Loss",
+      "value": 0.1231
+    },
+    {
+      "task": "Multi-Label Text Classification",
+      "dataset": "chat-message-multilabel",
+      "metric": "Mean AUC-ROC",
+      "value": 0.8826
+    }
+  ],
+  "sources": []
+}

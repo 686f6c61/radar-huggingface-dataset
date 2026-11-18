@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "s1nju/zaki-livekit-wakeword-onnx",
+  "slug": "s1nju-zaki-livekit-wakeword-onnx",
+  "author": "s1nju",
+  "url": "https://huggingface.co/s1nju/zaki-livekit-wakeword-onnx",
+  "created_at": "2026-11-18T20:08:11.000Z",
+  "updated_at": "2026-11-18T20:08:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "ar",
+    "arq"
+  ],
+  "tags": [
+    "onnx",
+    "livekit_stateful_wakeword_conformer",
+    "wake-word",
+    "keyword-spotting",
+    "audio",
+    "livekit",
+    "algerian-darija",
+    "ar",
+    "arq",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7405242,
+  "storage_human": "7 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
