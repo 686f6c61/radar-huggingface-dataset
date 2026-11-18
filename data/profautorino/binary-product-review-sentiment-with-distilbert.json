@@ -45,9 +45,9 @@
   "is_conversational": false,
   "gated": false,
   "disabled": false,
-  "removed": false,
-  "removed_at": null,
-  "removal_pattern": null,
+  "removed": true,
+  "removed_at": "2026-11-18T09:34:55.409Z",
+  "removal_pattern": "isolated",
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [

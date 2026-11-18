@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "GoForceX/body-locator-small-v1",
+  "slug": "goforcex-body-locator-small-v1",
+  "author": "GoForceX",
+  "url": "https://huggingface.co/GoForceX/body-locator-small-v1",
+  "created_at": "2026-11-18T05:40:03.000Z",
+  "updated_at": "2026-11-18T05:55:31.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "transition-span-locator",
+    "body-locator",
+    "span-extraction",
+    "text-span",
+    "roleplay",
+    "modernbert",
+    "other",
+    "zh",
+    "base_model:alphaedge-ai/mmBERT-small-zho-32768",
+    "base_model:finetune:alphaedge-ai/mmBERT-small-zho-32768",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 441911934,
+  "storage_human": "442 MB",
+  "context_length": null,
+  "base_model": "alphaedge-ai/mmBERT-small-zho-32768",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl autour de moi – adresses, horaires et itinéraire",
+      "url": "https://storelocatortool.com/v3/fr/recherche.php?enseigne=lidl&pays=france",
+      "snippet": "Trouvez le magasin Lidl le plus proche de chez vous : saisissez une ville ou utilisez votre position. Pour chaque adresse, nous …"
+    }
+  ]
+}

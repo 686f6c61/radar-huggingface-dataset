@@ -34,8 +34,8 @@
     "region:us"
   ],
   "likes": 997,
-  "downloads_30d": 1243266,
-  "trending_score": 17,
+  "downloads_30d": 1251687,
+  "trending_score": 16,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 199831171046,
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Career | PT. Petrosea, Tbk",
-      "url": "https://career.petrosea.com/",
-      "snippet": "Having hard time on your job? Don't worry, Petrosea support you by giving an inspiring spaces to work in."
-    },
-    {
-      "title": "WarmBloodAban/Minimax-h3_Singularity · Hugging Face",
-      "url": "https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity",
-      "snippet": "Minimax-h3_Singularity like0 License:apache-2.0 Model cardFilesFiles and versions xet Community Copy to bucket new"
-    },
-    {
-      "title": "Lowongan Kerja PT Petrosea Tbk - DISNAKERJA.COM",
-      "url": "https://www.disnakerja.com/pt-petrosea-tbk/",
-      "snippet": "Aug 16, 2026 · PT Petrosea Tbk. merupakan Perusahaan multi-disiplin yang bergerak di bidang pertambangan, infrastruktur, dan …"
-    },
-    {
-      "title": "WarmBloodAban/Minimax-h3_Singularity at main - Hugging Face",
-      "url": "https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity/tree/main",
-      "snippet": "Minimax-h3_Singularity like0 License:apache-2.0 Model cardFilesFiles and versions xet Community Copy to bucket new"
-    },
-    {
-      "title": "Lowongan Kerja PT Petrosea Tbk - DISNAKERJA.COM",
-      "url": "https://www.disnakerja.com/lowongan-kerja-pt-petrosea-tbk-indika-energy-group/",
-      "snippet": "Aug 11, 2026 · Petrosea telah tercatat di Bursa Efek Indonesia (IDX: PTRO) sejak tahun 1990, dan merupakan Perusahaan terbuka …"
-    }
-  ]
+  "sources": []
 }

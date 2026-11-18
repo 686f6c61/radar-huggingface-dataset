@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/wayfinder-glimmer-30b-i1-GGUF",
   "created_at": "2026-11-06T03:07:10.000Z",
-  "updated_at": "2026-11-06T06:00:05.000Z",
+  "updated_at": "2026-11-18T07:20:13.000Z",
   "license": "apache-2.0-and-muse-model-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
     "lora-merged",
     "muse",
     "en",
-    "base_model:hweller1/wayfinder-glimmer-30b",
-    "base_model:quantized:hweller1/wayfinder-glimmer-30b",
+    "base_model:MongoDB/wayfinder-glimmer-30b",
+    "base_model:quantized:MongoDB/wayfinder-glimmer-30b",
     "license:other",
     "endpoints_compatible",
     "region:us",
@@ -39,7 +39,7 @@
   "storage_bytes": 303387290880,
   "storage_human": "303.4 GB",
   "context_length": 131072,
-  "base_model": "hweller1/wayfinder-glimmer-30b",
+  "base_model": "MongoDB/wayfinder-glimmer-30b",
   "formats": [
     "gguf"
   ],

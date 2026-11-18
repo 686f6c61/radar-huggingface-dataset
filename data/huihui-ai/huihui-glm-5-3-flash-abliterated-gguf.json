@@ -33,9 +33,9 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 415,
-  "downloads_30d": 42440,
-  "trending_score": 16.099999999999998,
+  "likes": 421,
+  "downloads_30d": 42421,
+  "trending_score": 18.2,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
   "storage_bytes": 1560161388123,
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "huihui-ai (huihui.ai) - Hugging Face",
-      "url": "https://huggingface.co/huihui-ai",
-      "snippet": "We are committed to the study of model ablations and collaborate with the open-source community to advance natural language …"
-    },
-    {
-      "title": "https://www.huihui.ink/ Collection for Wuthering Waves | WuWa …",
-      "url": "https://gamebanana.com/collections/169682",
-      "snippet": "https://www.huihui.ink/ - A Collection for Wuthering Waves. Wuthering Waves Collections https://www.huihui.ink/ Collection Overview …"
-    },
-    {
-      "title": "huihui_ai",
-      "url": "https://ollama.com/huihui_ai",
-      "snippet": "Huihui 3.5 is a family of models created by remixing and merging multiple Qwen3.5 models of the same size."
-    },
-    {
-      "title": "辉辉的七月时光的个人空间-辉辉的七月时光个人主页-哔哩哔哩视频",
-      "url": "https://space.bilibili.com/431125794",
-      "snippet": "哔哩哔哩辉辉的七月时光的个人空间，提供辉辉的七月时光分享的视频、音频、文章、动态、收藏等内容，关注辉辉的七月时光账 …"
-    },
-    {
-      "title": "Hui (ethnie) — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Hui_(ethnie)",
-      "snippet": "Avant le XXe siècle, ils s'appelaient eux-mêmes Huihui ou Huimin, ce groupe comprenait alors non seulement les Hui d'aujourd'hui, …"
-    }
-  ]
+  "sources": []
 }

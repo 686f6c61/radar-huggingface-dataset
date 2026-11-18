@@ -27,8 +27,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 791,
-  "downloads_30d": 26767,
+  "likes": 792,
+  "downloads_30d": 25529,
   "trending_score": 14,
   "parameters": 31215031088,
   "parameters_human": "31.22B",
@@ -49,11 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=custom_code&p=1&sort=trending",
-      "snippet": "Venastine-Research/Xing4.0-29B-A4B-GGUF. Text Generation • 31B • Updated 2 ... huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated. Text Generation • 31B ..."
-    }
-  ]
+  "sources": []
 }

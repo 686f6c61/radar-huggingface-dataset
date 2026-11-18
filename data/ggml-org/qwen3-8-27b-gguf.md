@@ -2,77 +2,89 @@
 
 ## Resumen
 
-Qwen3.8-27B-GGUF es la versión cuantizada en formato GGUF del modelo Qwen3.8-27B, desarrollada por el equipo de ggml-org (mantenedores de llama.cpp) mediante una conversión automática. El modelo base, creado por Alibaba Cloud, es un modelo multimodal de 26.895 millones de parámetros que acepta entradas de imagen y texto, con capacidades de razonamiento y una ventana de contexto de 256.000 tokens. Esta conversión a GGUF permite ejecutar el modelo en hardware de consumo mediante motores como llama.cpp, Ollama o llama.app, democratizando el acceso a un modelo de esta escala sin necesidad de infraestructura de servidor.
+Qwen3.8-27B-GGUF es la conversión a formato GGUF del modelo multimodal Qwen3.8-27B, publicada por la organización ggml-org, el equipo detrás de llama.cpp. El modelo base, desarrollado por el equipo Qwen de Alibaba, es un transformer denso de aproximadamente 26.900 millones de parámetros (26,896 mil millones según los pesos en safetensors) con capacidad de entrada de imagen y texto, orientado a tareas conversacionales y de razonamiento multimodal. Esta versión GGUF existe para permitir la inferencia local eficiente mediante llama.cpp y sus derivados, algo imposible con los pesos originales en safetensors sin infraestructura de GPU dedicada.
 
-La relevancia actual de esta ficha radica en que Qwen3.8-27B representa la nueva generación de la familia Qwen, con mejoras en tareas de agente, codificación y visión, y su disponibilidad en GGUF facilita su integración en aplicaciones locales y edge. El repositorio contiene múltiples cuantizaciones (el tamaño total del repo es de 113,7 GB), lo que permite elegir el equilibrio entre precisión y requisitos de memoria según el hardware disponible.
+La relevancia de esta publicación radica en que acerca un modelo de casi 27.000 millones de parámetros al ecosistema de inferencia local: con cuantizaciones agresivas puede ejecutarse en GPUs de consumo con suficiente VRAM, o incluso en configuraciones multi-GPU y CPU+GPU. El repositorio acumula cerca de un millón de descargas, lo que indica una adopción amplia por parte de la comunidad. La licencia Apache 2.0 del modelo base facilita el uso comercial sin restricciones adicionales.
 
-## Especificaciones tecnicas
+No se dispone de información publicada sobre la longitud de contexto, la composición del dataset de entrenamiento ni los resultados de benchmarks en la documentación proporcionada; la model card del repositorio GGUF es mínima y se limita a instrucciones de ejecución y referencias al modelo original.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con vision encoder (detalles no disponibles) |
-| Parametros totales | 26.895.998.464 (26,9 B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 256.000 tokens (segun documentacion de Unsloth; otras fuentes citan 262.144) |
-| Tipos de cuantizacion | Multiples (no se especifican en la model card; el repo incluye varios archivos GGUF) |
+| Arquitectura | Transformer denso multimodal (image-text-to-text); detalles internos no disponibles |
+| Parámetros totales | 26.895.998.464 (~26,9 mil millones) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | GGUF cuantizado (niveles concretos no especificados en la información disponible); el repo incluye múltiples variantes |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de 352,5 GB con múltiples cuantizaciones); pesos originales del modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base Qwen3.8-27B en la documentacion proporcionada. Se sabe que es un modelo denso (no MoE) de 26,9 B parametros, con un vision encoder que le permite procesar imagenes ademas de texto. La familia Qwen3.8 incluye tambien variantes MoE (Qwen3.8-2.4T-A95B) y una version Max de 2,4 billones de parametros, pero este modelo concreto es la version de 27 B.
+El modelo base Qwen3.8-27B es un transformer denso de aproximadamente 26,9 mil millones de parámetros con pipeline `image-text-to-text`, lo que implica un codificador visual integrado que permite aceptar imágenes junto con texto como entrada. No se dispone de información detallada sobre el número de capas, dimensiones ocultas, mecanismo de atención (si emplea atención lineal, GQA u otras variantes) ni sobre la estrategia de entrenamiento (número de tokens, composición del corpus, fases de RLHF o DPO).
 
-El proceso de cuantizacion a GGUF se realizo mediante la herramienta automatica de conversion de ggml-org (https://github.com/ggml-org/convert), que transforma los pesos originales en safetensors a formato GGUF con diferentes niveles de cuantizacion. No se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO.
+La contribución específica de este repositorio es la conversión automática a GGUF mediante la herramienta `ggml-org/convert`, que produce pesos optimizados para llama.cpp. Esta conversión preserva la arquitectura del modelo pero reorganiza los tensores y aplica esquemas de cuantización por bloques, lo que permite reducir el espacio en disco y la VRAM necesaria a costa de una pérdida controlada de precisión. La model card menciona también una variante derivada, `incoai/Qwen3.8-27B-DFlash2`, como modelo fuente adicional, aunque no se detalla en qué consiste dicha variante.
 
 ## Capacidades
 
-- Procesamiento multimodal: acepta entradas de imagen y texto, lo que permite tareas de vision-lenguaje como descripcion de imagenes, respuesta a preguntas visuales y analisis de documentos escaneados.
-- Razonamiento avanzado: el modelo base incorpora capacidades de razonamiento paso a paso, util para problemas de logica, matematicas y planificacion.
-- Codificacion agente: segun la documentacion de Unsloth, Qwen3.8-27B destaca en tareas de codificacion agente, incluyendo generacion, depuracion y refactorizacion de codigo en multiples lenguajes.
-- Ventana de contexto larga: 256.000 tokens, adecuada para procesar documentos extensos, libros completos o conversaciones de multiples turnos con historial amplio.
-- Chat conversacional: optimizado para interacciones de dialogo natural, con soporte para instrucciones complejas.
-- Ejecucion local: al estar cuantizado en GGUF, puede ejecutarse en hardware de consumo (GPU con 16-24 GB de VRAM o incluso CPU con suficiente RAM).
+- Generación de texto conversacional multi-turno, con soporte para diálogos extensos.
+- Comprensión de imágenes combinadas con texto (image-text-to-text): descripción de imágenes, respuesta a preguntas visuales y razonamiento sobre contenido gráfico.
+- Razonamiento general y resolución de problemas expresados en lenguaje natural.
+- Capacidades multilingües: no se especifica la lista exacta de idiomas soportados, aunque la familia Qwen suele incluir un amplio soporte multilingüe.
+- Ejecución local mediante llama.cpp, con soporte para `llama serve` y la aplicación Llama.
+- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repositorio), lo que facilita su integración en servicios con API compatible con OpenAI.
+- No se ha confirmado en la información disponible soporte explícito de tool calling, function calling, modo thinking o agentes multi-paso.
 
 ## Casos de uso
 
-- Asistente de codigo local: un desarrollador puede ejecutar el modelo en su estacion de trabajo con Ollama o llama.cpp para obtener sugerencias de codigo, explicaciones de fragmentos y deteccion de errores sin enviar datos a la nube. Su capacidad de razonamiento y contexto largo permite trabajar con repositorios completos.
-- Analisis de documentos con imagenes: gracias al vision encoder, puede extraer informacion de capturas de pantalla, diagramas o documentos escaneados, por ejemplo para automatizar la lectura de facturas o formularios en una aplicacion de gestion.
-- Chatbot de atencion al cliente con memoria extendida: la ventana de 256K tokens permite mantener conversaciones de larga duracion con historial completo, ideal para soporte tecnico donde el usuario repite contexto o se retoman temas anteriores.
-- Procesamiento de libros y articulos cientificos: el modelo puede resumir, extraer citas o responder preguntas sobre textos de cientos de paginas, gracias a su contexto largo, sin necesidad de dividir el documento.
-- Generacion de informes a partir de imagenes: en entornos de investigacion, puede combinar la entrada visual con instrucciones de texto para producir descripciones tecnicas o informes estructurados a partir de graficos o fotografias.
-- Prototipado de agentes autonomos: su capacidad de razonamiento multi-paso y codificacion lo hace adecuado para experimentar con agentes que planifican y ejecutan tareas en un entorno controlado, como la automatizacion de pruebas de software.
+- Asistente conversacional local con privacidad de datos: al ejecutarse íntegramente en hardware propio mediante llama.cpp, el modelo permite desplegar un chatbot que nunca envía información a servidores externos, adecuado para entornos sanitarios, legales o corporativos con requisitos estrictos de confidencialidad.
+- Análisis de documentos con imágenes: el pipeline image-text-to-text permite procesar capturas de pantalla, diagramas, facturas escaneadas o gráficos y generar descripciones o respuestas textuales sobre ellos, integrándose en flujos de digitalización y extracción de información.
+- Prototipado rápido en estaciones de trabajo: gracias al formato GGUF y a la herramienta `llama serve -hf ggml-org/Qwen3.8-27B-GGUF`, un desarrollador puede levantar un endpoint compatible con la API de OpenAI en minutos para probar prompts, evaluar calidad y validar casos de uso antes de invertir en infraestructura.
+- Generación y revisión de contenido técnico: el tamaño de 27.000 millones de parámetros proporciona una calidad de redacción y coherencia superior a modelos de 7-8 mil millones, útil para redactar documentación, resumir informes largos o reescribir textos técnicos.
+- Educación y tutoría interactiva: el modelo puede mantener conversaciones multi-turno explicando conceptos, resolviendo dudas y adaptando el nivel de detalle, con la ventaja de que puede recibir imágenes de ejercicios o diagramas como entrada.
+- Investigación en IA open source: investigadores pueden estudiar el comportamiento de un modelo de 27B cuantizado, comparar la degradación de calidad entre niveles de cuantización o evaluar técnicas de prompting sin depender de APIs comerciales.
+- Despliegue en entornos con conectividad limitada: al no requerir acceso a internet una vez descargados los pesos, el modelo es viable en instalaciones aisladas, vehículos, laboratorios de campo o sistemas embebidos de gama alta con GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye metricas, y las fuentes web consultadas (yottalabs.ai, Unsloth, OpenLM) tampoco proporcionan numeros concretos de MMLU, HumanEval u otros tests estandar. Se recomienda consultar la documentacion oficial de Qwen para obtener datos de rendimiento del modelo base.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: segun Unsloth, el modelo puede ejecutarse en configuraciones de 17 GB de RAM/VRAM, lo que sugiere que una cuantizacion Q4_K_M o similar cabe en GPUs de 16-24 GB (por ejemplo, RTX 4080, RTX 4090, A5000).
-- GPUs recomendadas: para una cuantizacion Q4, una GPU con 16 GB de VRAM es suficiente; para Q8 o mayor precision, se necesitan 24 GB o mas (RTX 3090/4090, A100 40GB).
-- Ejecucion en CPU: con cuantizaciones bajas (Q2_K, Q3_K) y suficiente RAM (32 GB o mas), puede ejecutarse en CPU, aunque con latencia mayor.
-- Opciones de despliegue: llama.cpp (incluido llama.app), Ollama, LM Studio, o servidores compatibles con la API de OpenAI mediante el servidor de llama.cpp.
-- Latencia y throughput: no se han publicado datos especificos. En una RTX 4090 con cuantizacion Q4, se espera una velocidad de generacion de entre 30 y 60 tokens por segundo, dependiendo de la implementacion y el tamaño de contexto.
+- VRAM estimada para inferencia: como referencia orientativa para un modelo denso de ~27B, una cuantización Q4_K_M requiere aproximadamente 16-17 GB de VRAM, Q5_K_M en torno a 19-20 GB y Q8_0 cerca de 29 GB; los pesos en FP16 ocuparían unos 54 GB. Estas cifras son estimaciones basadas en el tamaño del modelo, no datos publicados en la información disponible.
+- GPU recomendadas: para cuantizaciones altas (Q8_0 o FP16) se necesitan GPUs profesionales como A100 80 GB, H100 o configuraciones multi-GPU. Para cuantizaciones Q4-Q5, una RTX 4090 (24 GB) o RTX 3090 (24 GB) pueden alojar el modelo completo en VRAM.
+- ¿Cabe en GPU de consumo? Sí, en GPUs con 24 GB de VRAM usando cuantizaciones Q4 o Q5. En GPUs con 12-16 GB es posible el offloading parcial a CPU mediante llama.cpp, con penalización de velocidad.
+- Opciones de despliegue: llama.cpp (recomendado, con `llama serve`), Ollama (importando el GGUF), y servidores compatibles con la API de OpenAI a través de llama.cpp. vLLM y TGI no son opciones nativas para GGUF, aunque existen soportes parciales.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del hardware, del nivel de cuantización y del grado de offloading a CPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa rigurosa con alternativas de la misma categoria. El modelo base Qwen3.8-27B compite con otros modelos abiertos de ~27 B como Llama 3.1 8B (menor tamano) o Mistral Large 2 (123 B, mayor tamano), pero no se han publicado benchmarks comparativos en las fuentes consultadas. La principal ventaja de esta version GGUF es su licencia Apache-2.0 y su capacidad multimodal, poco comun en modelos de este tamano. Se recomienda consultar el leaderboard de Open LLM para comparaciones actualizadas.
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-GGUF (este) | ~26,9 B | No disponible | Sí (imagen-texto) | Apache 2.0 | GGUF |
+| Qwen2.5-VL-32B | ~32 B | No disponible en esta ficha | Sí | Apache 2.0 (según familia Qwen) | Safetensors, GGUF comunitario |
+| Gemma 3 27B | ~27 B | No disponible en esta ficha | Sí | Términos Gemma | Safetensors, GGUF |
+| Llama 3.3 70B | ~70 B | No disponible en esta ficha | No | Licencia comunitaria Llama | Safetensors, GGUF |
+
+La comparación se ofrece a título orientativo por categoría y tamaño; no se dispone de datos de benchmarks que permitan comparar rendimiento real entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion introduce perdida de precision: los modelos GGUF, especialmente en cuantizaciones bajas (Q2, Q3), pueden degradar la calidad de las respuestas en tareas de razonamiento complejo o generacion de codigo.
-- No se han publicado evaluaciones de sesgos o alucinaciones para este modelo especifico. Como cualquier LLM, puede generar informacion falsa o inventada, especialmente en dominios especializados.
-- El modelo base es multimodal, pero la version GGUF puede tener limitaciones en el procesamiento de imagenes de alta resolucion o en la combinacion de multiples imagenes, dependiendo de la implementacion del runtime.
-- La licencia Apache-2.0 permite uso comercial sin restricciones, pero se debe verificar que las dependencias del runtime (llama.cpp, etc.) tambien cumplan con los requisitos de la organizacion.
-- El contexto de 256K tokens es teorico; en la practica, el uso de contextos muy largos aumenta el consumo de memoria y puede ralentizar la inferencia. Se recomienda probar con contextos menores (32K-64K) para la mayoria de aplicaciones.
-- No se ha confirmado el soporte de tool calling o function calling en esta version GGUF; aunque el modelo base probablemente lo soporte, la implementacion depende del motor de inferencia utilizado.
+- La cuantización introduce pérdida de precisión respecto a los pesos originales en FP16; las cuantizaciones más agresivas (Q2, Q3) pueden degradar notablemente la calidad en tareas de razonamiento y matemáticas.
+- Riesgo de alucinación inherente a los modelos de lenguaje de esta escala; no debe usarse como fuente de verdad sin verificación en dominios críticos.
+- No se dispone de información sobre sesgos específicos del modelo ni sobre la composición de su dataset de entrenamiento, lo que dificulta evaluar riesgos de sesgo demográfico, cultural o lingüístico.
+- La longitud de contexto no está documentada en la información disponible; planificar los despliegues sin asumir ventanas largas hasta verificarlo con el modelo base.
+- Los idiomas soportados no están especificados; la calidad en castellano no está garantizada sin evaluación empírica.
+- La licencia Apache 2.0 del modelo base permite uso comercial, pero conviene verificar los términos del modelo original Qwen/Qwen3.8-27B y de la variante DFlash2 referenciada.
+- El repositorio ocupa 352,5 GB, por lo que la descarga completa de todas las cuantizaciones requiere espacio en disco considerable; descargar solo la variante necesaria.
+- La model card del repositorio GGUF es mínima y no documenta limitaciones específicas de la conversión.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Herramienta de conversion: https://github.com/ggml-org/convert
-- Guia de ejecucion local (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
-- Documentacion de Unsloth: https://unsloth.ai/docs/models/qwen3.8
-- Articulo de OpenLM: https://openlm.ai/qwen3.8/
+- Variante DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
+- Herramienta de conversión: https://github.com/ggml-org/convert
+- Aplicación Llama: https://llama.app

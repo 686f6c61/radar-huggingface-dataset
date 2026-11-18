@@ -26,8 +26,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 6032,
-  "downloads_30d": 165081,
+  "likes": 6043,
+  "downloads_30d": 187989,
   "trending_score": 909,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
@@ -48,31 +48,5 @@
   "renamed_to": "abenzerps/Qwen-Image-2.1-Turbo-Quantized",
   "renamed_at": "2026-11-11T04:17:37.523Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Pixel orten, sperren oder Daten darauf löschen - Pixel-Hilfe",
-      "url": "https://support.google.com/pixelphone/answer/9338680?hl=de",
-      "snippet": "Wenn du dein Android-Gerät oder deine Wear OS-Smartwatch verlierst, kannst du dein Gerät aus der Ferne orten, sperren oder die …"
-    },
-    {
-      "title": "How do I create a second Gmail account without deleting the old one ...",
-      "url": "https://support.google.com/mail/thread/4938966/how-do-i-create-a-second-gmail-account-without-deleting-the-old-one?hl=en",
-      "snippet": "Apr 26, 2019 · I am interested in creating a second Gmail account for a flyer I made. The flyer is for a job, but I do not want to put my …"
-    },
-    {
-      "title": "Kebijakan monetisasi channel YouTube",
-      "url": "https://support.google.com/youtube/answer/1311392?hl=id",
-      "snippet": "3 Maret 2022: Sehubungan dengan adanya perang yang terjadi di Ukraina, kami akan menjeda sementara penayangan iklan Google …"
-    },
-    {
-      "title": "Non riesco a liberare spazio nella mail nonostante le cancelli.",
-      "url": "https://support.google.com/mail/thread/48194025/non-riesco-a-liberare-spazio-nella-mail-nonostante-le-cancelli?hl=it",
-      "snippet": "May 21, 2020 · Ho cancellato vecchie mail ma lo spazio occupato al 97% rimane sempre invariato"
-    },
-    {
-      "title": "Export bookmarks google chrome android",
-      "url": "https://support.google.com/chrome/thread/27304190/export-bookmarks-google-chrome-android?hl=en",
-      "snippet": "Jan 31, 2020 · I want to export my google chrome mobile bookmarks is there is a way to do that thanks in advance."
-    }
-  ]
+  "sources": []
 }

@@ -2,92 +2,100 @@
 
 ## Resumen
 
-LFM3-VL-2B-MLX-bf16 es la version en formato MLX y precision BF16 sin cuantizar del modelo multimodal LFM3-VL-2B de Liquid AI, optimizada para inferencia en Apple Silicon. Se trata de un modelo de imagen-a-texto (image-text-to-text) que combina un codificador visual con un transformer de lenguaje de aproximadamente 1.900 millones de parametros, pensado para ejecutarse en local en equipos Mac con chip de la serie M. El repositorio contiene unicamente los pesos convertidos a MLX (3,84 GB en BF16) y remite a la model card original para los detalles de arquitectura y entrenamiento.
+LFM3-VL-2B-MLX-bf16 es la conversión a formato MLX en precisión BF16 del modelo multimodal LFM3-VL-2B de Liquid AI, pensada específicamente para inferencia en chips de Apple Silicon. Liquid AI es una empresa surgida del MIT que diseña lo que denomina "Liquid Foundation Models", una familia de modelos con arquitecturas propias orientadas a eficiencia en despliegue on-device. Este repositorio no introduce pesos nuevos: reproduce en MLX los pesos del modelo base con 1.918.181.888 parámetros (aproximadamente 1,9 mil millones) en BF16 sin cuantizar, ocupando 3,84 GB en disco.
 
-La relevancia de esta publicacion es practica: permite desplegar un modelo vision-lenguaje de tamano contenido en hardware de consumo Apple sin necesidad de GPU dedicada, usando la libreria MLX-VLM. Frente a la version original en safetensors, esta variante facilita el prototipado en portatiles y equipos de sobremesa Mac, manteniendo la precision completa del modelo base. El modelo soporta 17 idiomas, entre ellos el castellano, y se distribuye bajo la licencia propietaria LFM1.0 de Liquid AI.
+El modelo resuelve la tarea image-text-to-text, es decir, recibe imágenes y texto y genera respuestas en lenguaje natural, con soporte de razonamiento explícito opcional (modo thinking). Su relevancia actual radica en que permite ejecutar un modelo visión-lenguaje de casi 2B parámetros en un Mac con memoria unificada, sin GPU dedicada ni servidores en la nube, lo que facilita prototipado local, procesamiento de documentos sensibles sin salida de datos y aplicaciones de escritorio.
 
-Al ser una conversion de formato y no un modelo nuevo, sus capacidades, limitaciones y comportamiento son los del LFM3-VL-2B original; esta ficha documenta lo que se puede verificar a partir de la informacion disponible y marca explicitamente como "no disponible" cualquier dato que no figure en las fuentes.
+La ficha cubre la variante MLX-BF16; la arquitectura, el entrenamiento y los benchmarks corresponden al modelo base LiquidAI/LFM3-VL-2B, del cual esta versión es una conversión de formato. La licencia es LFM1.0 (etiquetada como "other" en Hugging Face), con 17 idiomas declarados y más de 3.000 descargas en el momento de la consulta.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (codificador visual + modelo de lenguaje); variante LFM3, no disponible el detalle exacto de capas |
-| Parametros totales | 1.918.181.888 (~1,92 B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (familia LFM3 de Liquid AI; el repo usa `custom_code` y la etiqueta `lfm3_vl`) |
+| Parámetros totales | 1.918.181.888 (≈1,9 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Esta version es BF16 sin cuantizar; el modelo base dispone de otras variantes de cuantizacion (no detalladas en la informacion disponible) |
+| Tipos de cuantización | BF16 sin cuantizar en este repo; el modelo base dispone de variantes cuantizadas (etiqueta `base_model:quantized`) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (17 idiomas) |
-| Licencia | lfm1.0 (licencia propietaria de Liquid AI, marcada como "other") |
-| Formato de pesos | safetensors en formato MLX (BF16) |
+| Licencia | LFM1.0 (license_name: lfm1.0, license: other) |
+| Formato de pesos | safetensors en MLX (BF16), 3,84 GB |
+| Pipeline | image-text-to-text |
+| Librería | mlx (requiere mlx-vlm >= 0.7.11) |
+| Modalidad de entrada | imagen + texto |
+| Modelo base | LiquidAI/LFM3-VL-2B |
+| Tamaño del repo | 3,9 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema imagen-a-texto construido sobre la familia LFM3 de Liquid AI, que combina un modulo de procesamiento visual con un modelo de lenguaje de tipo transformer. La informacion disponible no detalla el numero de capas, la dimension oculta, el mecanismo de atencion ni la composicion exacta del dataset de entrenamiento; la model card de esta variante remite explicitamente a la model card del modelo base (LiquidAI/LFM3-VL-2B) para esos datos. Tampoco se especifican el volumen de tokens de entrenamiento ni si se aplicaron fases de RLHF o DPO.
+No se dispone en la información proporcionada de detalles sobre la arquitectura interna del modelo base (tipo de transformer, mecanismos de atención, composición del dataset de entrenamiento, número de tokens, ni si se aplicaron RLHF, DPO u otras etapas de alineación). La model card de esta conversión remite explícitamente a la model card original de LiquidAI/LFM3-VL-2B para los detalles de arquitectura y uso, y no los reproduce. Las etiquetas del repositorio (`liquid`, `lfm3`, `lfm3_vl`) confirman que pertenece a la familia LFM3 de Liquid AI, pero no aportan especificaciones técnicas concretas.
 
-La innovacion tecnica de esta publicacion concreta es la conversion a MLX con pesos BF16 sin cuantizar, lo que preserva la precision numerica original y permite aprovechar la memoria unificada de los chips Apple. El repositorio incluye codigo personalizado (tag `custom_code`), lo que implica que la carga del modelo requiere la implementacion especifica de MLX-VLM en lugar de un transformer estandar de Hugging Face.
+Lo que sí es verificable es el proceso de esta variante: se trata de una conversión de los pesos del modelo base a BF16 en el formato MLX, sin cuantización adicional, para su ejecución en Apple Silicon mediante la librería mlx-vlm. El repositorio incluye código personalizado (`custom_code`) necesario para cargar la arquitectura específica del modelo. No se documenta en esta información ninguna innovación técnica adicional (decodificación especulativa, atención lineal, etc.) más allá del modo de razonamiento opcional que se activa con `--enable-thinking`.
 
 ## Capacidades
 
-- Generacion de texto condicionada por imagen (image-text-to-text): descripcion de imagenes, respuesta a preguntas visuales y conversacion sobre el contenido de una imagen.
-- Conversacion multi-turno en modo chat (pipeline `conversational`).
-- Cobertura multilingue en 17 idiomas, incluido el castellano.
-- Generacion de texto general y razonamiento, heredados del modelo de lenguaje subyacente.
-- Capacidades de codigo y matematicas: no confirmadas de forma explicita en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo "thinking", vision adicional (video, audio) u otras capacidades especiales: no disponible.
+- Generación de texto e imagen-a-texto: describe, analiza y responde preguntas sobre imágenes.
+- Modo de razonamiento (thinking) opcional: desactivado por defecto; se activa con `--enable-thinking`. Adecuado para tareas que requieren pasos intermedios de razonamiento.
+- Conversación multi-turno: la etiqueta `conversational` indica soporte de diálogo.
+- Multilingüismo: 17 idiomas declarados, incluidos español, inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, vietnamita, tailandés, indonesio, hindi, ruso y polaco.
+- Ejecución on-device en Apple Silicon mediante MLX.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible explícitamente; el modo thinking sugiere capacidad de razonamiento por pasos, pero no se documenta integración de agentes.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Descripcion automatica de imagenes en local: con MLX-VLM se puede generar texto descriptivo de fotografias o capturas directamente en un Mac, sin enviar datos a la nube, lo que resulta adecuado para flujos con requisitos de privacidad.
-- Asistencia visual para accesibilidad: transcripcion y descripcion de imagenes para lectores de pantalla o interfaces de voz, aprovechando el soporte multilingue y la ejecucion en dispositivo.
-- Extraccion de informacion de documentos escaneados: preguntas sobre capturas, recibos o formularios en formato imagen, con la ventaja de procesar el contenido localmente en hardware Apple.
-- Prototipado rapido de aplicaciones vision-lenguaje en Apple Silicon: el formato MLX y la instalacion via `mlx-vlm` permiten iterar sobre demos y pruebas de concepto sin infraestructura GPU dedicada.
-- Clasificacion y etiquetado asistido de imagenes en lotes pequenos: uso del modelo para generar descripciones o categorias preliminares que luego se revisan manualmente, adecuado por su tamano reducido (~1,9 B parametros).
-- Chat multimodal en castellano para soporte interno: conversaciones multi-turno sobre imagenes (por ejemplo, diagnosticos visuales basicos o soporte tecnico con capturas) gracias a la cobertura del espanol.
-- Evaluacion comparativa de modelos pequenos: util como referencia de un VLM de ~2 B en BF16 para medir calidad frente a alternativas cuantizadas en el mismo hardware.
+- Descripción y etiquetado de imágenes en local: procesar lotes de imágenes en un Mac sin enviar datos a la nube, usando el pipeline image-text-to-text con prompts de descripción; adecuado por el tamaño reducido (3,84 GB) y la ejecución en memoria unificada.
+- Asistente de accesibilidad: generar descripciones textuales de imágenes para usuarios con discapacidad visual, aprovechando el modo conversacional y el soporte multilingüe para adaptar la salida al idioma del usuario.
+- Extracción de información de documentos escaneados: formular preguntas sobre capturas, facturas o formularios y obtener respuestas en texto; el modelo base es multimodal y este formato permite integrarlo en una app de escritorio macOS.
+- Prototipado rápido de aplicaciones visión-lenguaje: validar ideas de producto con mlx-vlm antes de migrar a un despliegue en servidor con el modelo base, reduciendo costes de infraestructura durante la fase de desarrollo.
+- Análisis de imágenes en investigación con datos sensibles: trabajar con imágenes médicas, industriales o personales que no pueden salir del dispositivo, gracias a la inferencia totalmente local.
+- Automatización de tareas de razonamiento visual: usar `--enable-thinking` para tareas que requieren pasos intermedios, como interpretar gráficos, comparar imágenes o resolver preguntas de varios saltos sobre una imagen.
+- Soporte multilingüe en atención al cliente basada en imágenes: un usuario envía una foto de un producto o error y el modelo responde en su idioma (17 idiomas disponibles), con temperatura baja (0,1) para respuestas deterministas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: los pesos en BF16 ocupan 3,84 GB; el repositorio completo pesa 3,9 GB. Hay que sumar la memoria del codificador visual, el cache KV y el overhead de MLX, por lo que se recomienda disponer de al menos 8 GB de memoria unificada, y 16 GB para contextos largos o generacion extensa.
-- GPU recomendadas: chips Apple Silicon (series M1, M2, M3, M4 y posteriores) con memoria unificada suficiente. No esta pensado para GPU NVIDIA/AMD en este formato.
-- Cabe en hardware de consumo: si, en equipos Mac con 8-16 GB de memoria unificada; el modelo esta disenado precisamente para ejecucion en dispositivo.
-- Opciones de despliegue: MLX-VLM 0.7.11 o superior mediante `python -m mlx_vlm.generate`; para otros runtimes (vLLM, llama.cpp, Ollama, TGI) seria necesario usar el modelo base en otro formato, no esta version MLX.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM/memoria: los pesos BF16 ocupan 3,84 GB; se necesita memoria adicional para el contexto y las activaciones, por lo que conviene disponer de al menos 8 GB de memoria unificada, y 16 GB para contextos largos o prompts con imágenes de alta resolución.
+- Plataforma: exclusivamente Apple Silicon (MLX); no funciona en GPU NVIDIA ni en CPU x86 con esta librería.
+- GPU recomendadas: chips Apple M-series (M1, M2, M3, M4 y variantes Pro/Max/Ultra). No aplica a A100, H100 ni RTX 4090 con este repositorio.
+- ¿Cabe en GPU de consumo? Sí, en cualquier Mac con Apple Silicon y memoria unificada suficiente; no está pensado para GPU de consumo NVIDIA en este formato.
+- Opciones de despliegue: mlx-vlm >= 0.7.11 (`python -m mlx_vlm.generate`); para otros entornos, usar el modelo base LiquidAI/LFM3-VL-2B con sus formatos correspondientes.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-MLX-bf16 | ~1,92 B | no disponible | MLX safetensors BF16 | lfm1.0 | Version para Apple Silicon; requiere MLX-VLM |
-| LFM3-VL-2B (base) | ~1,92 B | no disponible | safetensors (formato original) | lfm1.0 | Modelo original del que deriva esta conversion; incluye variantes de cuantizacion |
-| Alternativas de ~2 B con vision | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
+| LFM3-VL-2B-MLX-bf16 (este) | 1,9 B | no disponible | imagen + texto | LFM1.0 | Hugging Face, MLX |
+| LiquidAI/LFM3-VL-2B (base) | 1,9 B | no disponible | imagen + texto | LFM1.0 | Hugging Face |
+| Alternativas de ~2B visión-lenguaje | no disponible | no disponible | imagen + texto | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparado con otros modelos en la informacion proporcionada.
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos competidores de la misma categoría, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Alucinacion: como todo modelo de lenguaje y vision-lenguaje, puede generar descripciones o respuestas que no se correspondan con la imagen; no se han publicado tasas de error.
-- Sesgos: no se documentan en la informacion disponible; cabe esperar los sesgos presentes en los datos de entrenamiento del modelo base.
-- Contexto e idioma: la longitud de contexto no esta publicada; aunque se listan 17 idiomas, el rendimiento relativo por idioma no se especifica y puede ser inferior en los menos representados.
-- Licencia: la licencia LFM1.0 es propietaria y marcada como "other"; es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial, ya que puede imponer restricciones.
-- Dependencia de runtime: el modelo usa `custom_code` y requiere MLX-VLM >= 0.7.11; no es cargable con transformers estandar ni con runtimes CUDA.
-- Plataforma: esta variante solo funciona en Apple Silicon; para otros entornos hay que usar el modelo base en otro formato.
-- Produccion: al ser una conversion de formato, cualquier limitacion del modelo base (precision en tareas complejas, robustez ante imagenes dificiles) se mantiene; conviene validar con datos propios antes de desplegar.
+- Solo Apple Silicon: este repositorio usa MLX y no puede desplegarse en GPU NVIDIA, TPU ni CPU x86; para esos entornos hay que usar el modelo base en otro formato.
+- Licencia LFM1.0: es una licencia "other" que puede imponer restricciones al uso comercial; es imprescindible revisar el archivo LICENSE antes de integrarlo en producción.
+- Riesgo de alucinación: como todo modelo generativo, puede producir descripciones o respuestas inventadas sobre imágenes, especialmente con imágenes ambiguas o de baja calidad; conviene validar en dominios críticos.
+- Contexto: no se documenta la longitud máxima de contexto, lo que dificulta planificar conversaciones largas o prompts con muchas imágenes.
+- Idiomas: aunque se declaran 17 idiomas, no se especifica el nivel de calidad por idioma; el rendimiento en idiomas distintos del inglés puede ser inferior.
+- Sin benchmarks publicados: no hay datos verificables de MMLU, HumanEval, GSM8K ni métricas multimodales, lo que limita la evaluación objetiva frente a alternativas.
+- Tool calling y agentes: no se documenta soporte, por lo que no debe asumirse en diseños de producción.
+- Modelo de 1,9 B: capacidad limitada para razonamiento complejo, matemáticas avanzadas o generación de código extensa en comparación con modelos de mayor tamaño.
+- Temperatura recomendada baja (0,1): la configuración de ejemplo prioriza determinismo sobre creatividad; ajustar según el caso de uso.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-bf16
+- Hugging Face (este repositorio): https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-bf16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Blog de LFM3: https://www.liquid.ai/blog/lfm3
-- Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Guia de despliegue en MLX: https://docs.liquid.ai/deployment/on-device/mlx
+- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
+- Guía de despliegue en MLX: https://docs.liquid.ai/deployment/on-device/mlx
 - Consola/API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- MLX-VLM (repositorio): https://github.com/Blaizzy/mlx-vlm
-- Licencia: LICENSE (incluido en el repositorio de Hugging Face)
+- Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm
+- Licencia LFM1.0: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-bf16/blob/main/LICENSE

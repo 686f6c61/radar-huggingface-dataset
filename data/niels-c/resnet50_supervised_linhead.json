@@ -5,13 +5,15 @@
   "author": "niels-c",
   "url": "https://huggingface.co/niels-c/resnet50_supervised_linhead",
   "created_at": "2026-11-09T09:23:30.000Z",
-  "updated_at": "2026-11-09T10:43:07.000Z",
+  "updated_at": "2026-11-17T13:07:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "arxiv:1512.03385",
+    "arxiv:2110.00476",
     "license:mit",
     "region:us"
   ],

@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3696,
+  "downloads_30d": 3698,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
@@ -56,31 +56,5 @@
   "renamed_to": "hendrimardani/fine-tuned-model-indonesian-2",
   "renamed_at": "2026-11-11T05:32:37.105Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ICC.tv | ICC - International Cricket Council",
-      "url": "https://www.icc-cricket.com/icc-tv",
-      "snippet": "Watch the latest cricket videos, match highlights, exclusive interviews, and live streams on ICC.tv. Your official destination for world …"
-    },
-    {
-      "title": "ICC.tv | About ICC Cricket | ICC",
-      "url": "https://www.icc-cricket.com/about/broadcast/icc-tv",
-      "snippet": "The host broadcast production rights from all ICC major events from 2015-2023 have been retained by ICC. As such, the ICC …"
-    },
-    {
-      "title": "ICC.tv - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.icc.tv.app&hl=en-US",
-      "snippet": "Welcome to the official ICC app, your one-stop destination for all things cricket in the comfort of your own home. Dive into the world of …"
-    },
-    {
-      "title": "A conceptual framework for multi-component summative ... - Frontiers",
-      "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1656092/full",
-      "snippet": "15.09.2025 ... ... fine-tuned LLM evaluated against a meta-evaluator, supervised by ... Table 2. Stage, Elements at modeling levels. Model, Method. Meta-meta-model ..."
-    },
-    {
-      "title": "ICC TV - YouTube",
-      "url": "https://www.youtube.com/channel/UCpXkf62lGMzTwLivjELiVFA",
-      "snippet": "\"Welcome to ICC TV, your ultimate destination for everything cricket! Dive into the exhilarating world of bat and ball with us as we …"
-    }
-  ]
+  "sources": []
 }

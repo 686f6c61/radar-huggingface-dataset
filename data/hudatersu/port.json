@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "HudatersU/port",
+  "slug": "hudatersu-port",
+  "author": "HudatersU",
+  "url": "https://huggingface.co/HudatersU/port",
+  "created_at": "2026-08-12T00:29:40.000Z",
+  "updated_at": "2026-11-18T04:37:04.000Z",
+  "license": "gpl-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 403439471,
+  "storage_human": "403 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

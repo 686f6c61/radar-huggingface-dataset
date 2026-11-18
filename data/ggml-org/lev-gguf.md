@@ -2,99 +2,90 @@
 
 ## Resumen
 
-lev-GGUF es la version cuantizada en formato GGUF del modelo interfaze-ai/lev, publicada por la organizacion ggml-org, el equipo que mantiene la libreria ggml y el motor de inferencia llama.cpp. Se trata de un "decision model" (modelo de decision) disenado para ejecutarse a traves del endpoint `/v1/systemone` de la API de llama.cpp, y su pipeline declarado en Hugging Face es `zero-shot-classification`, por lo que su proposito principal es emitir decisiones o etiquetas sobre entradas de texto sin necesidad de reentrenamiento especifico por tarea.
+Lev es un modelo de decisión (decision model) de 4.205.751.296 parámetros (~4,2 mil millones) desarrollado por interfaze-ai y publicado en formato GGUF cuantizado por ggml-org. Se trata de una conversión automática del modelo base `interfaze-ai/lev`, construido a partir de Qwen3.5-4B según indica la model card, y está pensado para su uso a través de la API `/v1/systemone` de llama.cpp, no como un modelo generativo convencional.
 
-El modelo base declarado es interfaze-ai/lev, que a su vez se apoya en Qwen/Qwen3.5-4B como modelo fuente. Cuenta con 4.205.751.296 parametros reales (aproximadamente 4,2 mil millones), lo que lo situa en la gama de modelos compactos aptos para despliegue local. El repositorio ocupa 15,9 GB, coherente con un paquete GGUF que agrupa varias cuantizaciones.
+El modelo se distribuye bajo licencia Apache 2.0 y su pipeline declarado es `zero-shot-classification`, lo que orienta su uso hacia tareas de clasificación y toma de decisiones en lugar de generación libre de texto. La model card lo etiqueta explícitamente como "decision-model" y recomienda ejecutarlo con `llama serve -hf ggml-org/lev-GGUF` o desde la aplicación Llama.
 
-Su relevancia actual radica en dos factores: por un lado, la licencia Apache 2.0 permite uso comercial sin restricciones adicionales; por otro, al estar convertido a GGUF es compatible con el ecosistema llama.cpp, lo que facilita su ejecucion en CPU, GPU de consumo y entornos con recursos limitados. La conversion se realizo automaticamente con la herramienta ggml-org/convert.
+Su relevancia actual radica en que ejemplifica una categoría emergente de modelos especializados en decisiones dentro del ecosistema llama.cpp, con integración directa en el endpoint `/v1/systemone` (PR 29818). El repositorio ocupa 31,9 GB e incluye múltiples cuantizaciones GGUF. La información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No especificada en la informacion disponible; modelo base interfaze-ai/lev, derivado de Qwen/Qwen3.5-4B |
-| Parametros totales | 4.205.751.296 (aprox. 4,2 mil millones) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Formato cuantizado GGUF; niveles concretos de cuantizacion no especificados en la informacion disponible |
-| Idiomas soportados | No disponible |
+| Arquitectura | no disponible (modelo base derivado de Qwen3.5-4B) |
+| Parametros totales | 4.205.751.296 (~4,2 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF cuantizado (variantes concretas no disponibles) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se detalla en la informacion disponible la arquitectura interna del modelo base interfaze-ai/lev. El unico dato estructural confirmado es que deriva de Qwen/Qwen3.5-4B, un modelo de la familia Qwen de aproximadamente 4 mil millones de parametros, y que el recuento real de parametros del modelo publicado es de 4.205.751.296. No se especifica si emplea atencion completa, atencion lineal u otro esquema, ni el tamano de su ventana de contexto.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la información proporcionada. La model card indica que `interfaze-ai/lev` se construye a partir de Qwen3.5-4B, lo que sugiere una base transformer de ~4 mil millones de parámetros, pero no se confirma la arquitectura exacta ni si incorpora modificaciones específicas para la tarea de decisión.
 
-Tampoco se documentan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de ajuste por RLHF, DPO u otras tecnicas de alineacion. El elemento diferencial mas destacado es su naturaleza de "decision model": el modelo card indica explicitamente que debe usarse a traves del endpoint `/v1/systemone`, una ruta de API introducida en el pull request 29818 de llama.cpp. La conversion a GGUF se realizo de forma automatica mediante la herramienta ggml-org/convert a partir de los modelos fuente, sin que se documenten pasos adicionales de destilacion o fine-tuning.
+Tampoco se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. La única innovación técnica documentada es su integración con la API `/v1/systemone` de llama.cpp, un endpoint específico para modelos de decisión introducido en el PR 29818 del repositorio ggml-org/llama.cpp. El proceso de conversión a GGUF se realizó automáticamente mediante la herramienta ggml-org/convert.
 
 ## Capacidades
 
-- Clasificacion zero-shot: el pipeline declarado es `zero-shot-classification`, por lo que puede asignar etiquetas a textos sin ejemplos de entrenamiento previos.
-- Toma de decisiones: el modelo esta disenado como "decision model" y se invoca mediante el endpoint `/v1/systemone`.
-- Naturaleza conversacional: incluye la etiqueta `conversational`, lo que sugiere soporte de interaccion en formato de dialogo.
-- Compatibilidad con endpoints: lleva la etiqueta `endpoints_compatible`, orientada a su integracion en servicios de inferencia.
-- Despliegue local: al estar en GGUF, puede ejecutarse con llama.cpp y con el comando `llama serve -hf ggml-org/lev-GGUF`.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades especiales (thinking mode, vision, audio): no disponible en la informacion proporcionada.
+- Clasificación zero-shot: el pipeline declarado es `zero-shot-classification`, orientado a asignar etiquetas a entradas sin entrenamiento específico por clase.
+- Toma de decisiones: la model card lo define como "decision model", pensado para su uso a través de la API `/v1/systemone`.
+- Conversación: la etiqueta `conversational` sugiere soporte de interacción conversacional.
+- Compatibilidad con endpoints: etiquetado como `endpoints_compatible`.
+- Capacidades multilingües: no disponible.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Clasificacion zero-shot de documentos: el modelo puede asignar categorias a textos entrantes sin necesidad de ejemplos etiquetados, aprovechando su pipeline `zero-shot-classification` para triaje de contenido en pipelines de procesamiento por lotes.
-- Moderacion de contenido automatizada: al funcionar como modelo de decision, puede emitir juicios binarios o por categorias sobre textos generados por usuarios, integrándose via `/v1/systemone` en un servicio de moderacion en tiempo real.
-- Enrutamiento de consultas (routing): en un sistema con varios modelos especializados, lev-GGUF puede decidir a que modelo o flujo derivar cada peticion, gracias a su bajo coste de inferencia (4,2 mil millones de parametros).
-- Clasificacion de tickets de soporte: etiquetar automaticamente tickets por area, urgencia o intencion, reduciendo el trabajo manual de triaje en mesas de ayuda.
-- Filtrado y curaduria de datos: clasificar grandes volumenes de texto para descartar, priorizar o agrupar registros antes de alimentar un pipeline de datos o un proceso de entrenamiento.
-- Sistemas de decision de baja latencia: su reducido tamano y su formato GGUF permiten ejecutarlo en hardware modesto, idoneo para decisiones rapidas en el borde o en servicios con requisitos de latencia estrictos.
-- Etiquetado dinamico en buscadores internos: asignar temas o etiquetas a documentos de una base de conocimiento sin esquema predefinido, facilitando la recuperacion posterior.
-- Integracion en agentes como subsistema de decision: usar el endpoint `/v1/systemone` como componente rapido de "sistema 1" que resuelve decisiones inmediatas antes de recurrir a un modelo mayor.
+- Clasificación automática de tickets de soporte: el modelo puede asignar categorías a incidencias entrantes mediante clasificación zero-shot, sin necesidad de un conjunto de entrenamiento etiquetado por categoría.
+- Enrutamiento de decisiones en pipelines: integrado vía `/v1/systemone`, puede actuar como componente de decisión binaria o multiclase dentro de un flujo mayor gestionado por llama.cpp.
+- Filtrado de contenido: uso como clasificador para decidir si un texto cumple determinadas políticas, aprovechando el pipeline zero-shot.
+- Moderación de conversaciones: la etiqueta `conversational` permite emplearlo para evaluar turnos de diálogo y decidir acciones posteriores.
+- Prototipado rápido en local: al distribuirse en GGUF, se puede desplegar con llama.cpp u Ollama en estaciones de trabajo sin infraestructura GPU dedicada de gran escala.
+- Evaluación comparativa de modelos de decisión: sirve como referencia para experimentar con el endpoint `/v1/systemone` y comparar su comportamiento frente a clasificadores tradicionales.
+- Integración en aplicaciones de escritorio: la model card menciona la app Llama, lo que facilita su uso en herramientas de escritorio con inferencia local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las siguientes cifras son estimaciones derivadas del recuento de parametros (4,2 mil millones) y del formato GGUF, no datos oficiales del modelo:
-
-- VRAM estimada para inferencia (aproximada, solo pesos):
-  - Cuantizacion Q4: en torno a 2,5-3 GB.
-  - Cuantizacion Q5: en torno a 3-3,5 GB.
-  - Cuantizacion Q8: en torno a 4,5-5 GB.
-  - Precision FP16: en torno a 8,5-9 GB.
-- GPU recomendadas: tarjetas de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090 pueden alojar el modelo con holgura; para precision completa se recomienda al menos 8-10 GB de VRAM.
-- Compatibilidad con GPU de consumo: si, el modelo cabe en practicamente cualquier GPU moderna de consumo al cuantizarse a Q4 o Q5, e incluso puede ejecutarse en CPU solo.
-- Opciones de despliegue: llama.cpp (el formato nativo aqui es GGUF), llama.app mediante `llama serve -hf ggml-org/lev-GGUF`, y otras herramientas compatibles con GGUF como Ollama o servidores basados en ggml. La compatibilidad con vLLM o TGI no esta confirmada, ya que estas suelen consumir pesos safetensors.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: con ~4,2 B parámetros, una cuantización Q4_K_M requeriría aproximadamente 2,5-3 GB de VRAM; Q8_0 en torno a 4,5 GB; FP16 alrededor de 8,4 GB. Estas cifras son estimaciones por tamaño, no datos publicados.
+- GPU recomendadas: no disponible en la documentación. Por tamaño, cabría en RTX 3060 12 GB, RTX 4070, RTX 4090, A100 y H100.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 6 GB o más en cuantizaciones bajas.
+- Opciones de despliegue: llama.cpp (`llama serve -hf ggml-org/lev-GGUF`), app Llama, y potencialmente Ollama por compatibilidad GGUF.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| ggml-org/lev-GGUF | 4,2 mil millones | No disponible | GGUF | Apache 2.0 | Version cuantizada y especializada como modelo de decision |
-| interfaze-ai/lev (base) | No disponible | No disponible | No disponible | No disponible | Modelo fuente; pipeline `zero-shot-classification` |
-| Qwen/Qwen3.5-4B | No disponible | No disponible | No disponible | No disponible | Modelo fuente de la familia Qwen, misma clase de tamano |
+| ggml-org/lev-GGUF | ~4,2 B | no disponible | Apache 2.0 | GGUF | Modelo de decisión vía `/v1/systemone` |
+| interfaze-ai/lev | ~4,2 B | no disponible | Apache 2.0 | safetensors | Modelo base del que deriva esta conversión |
+| Qwen/Qwen3.5-4B | ~4 B | no disponible | no disponible | safetensors | Modelo fuente citado en la model card |
 
-No se dispone de datos de rendimiento ni de contexto de los modelos comparados en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa. La diferencia principal de lev-GGUF frente a sus fuentes es el formato GGUF y su orientacion especifica a decisiones mediante `/v1/systemone`.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se documentan sesgos conocidos del modelo en la informacion proporcionada.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero aplicable a cualquier modelo generativo de esta familia.
-- No se especifican los idiomas soportados, por lo que el rendimiento fuera del ingles (o del idioma de entrenamiento) es incierto.
-- No se detalla la longitud de contexto, lo que impide garantizar el manejo de entradas largas.
-- El modelo es una conversion automatica a GGUF del modelo base, sin que se documenten validaciones adicionales de calidad o fidelidad numerica tras la cuantizacion.
-- Restricciones de licencia: la licencia es Apache 2.0, que permite uso comercial, pero conviene verificar las condiciones del modelo base interfaze-ai/lev y del modelo fuente Qwen3.5-4B antes de un despliegue en produccion.
-- Uso especifico de API: el modelo card indica que debe usarse mediante el endpoint `/v1/systemone`; su comportamiento fuera de ese canal puede no estar garantizado.
-- Caveat de despliegue: al no confirmarse compatibilidad con motores distintos de llama.cpp, la integracion en servidores como vLLM o TGI requeriria conversion previa.
+- Información muy limitada: la model card no documenta arquitectura, contexto, idiomas ni datos de entrenamiento, lo que dificulta evaluar su idoneidad en producción.
+- Modelo especializado: está diseñado como modelo de decisión para el endpoint `/v1/systemone`; usarlo como modelo generativo convencional puede producir resultados no previstos.
+- Conversión automática: el GGUF se generó con ggml-org/convert, por lo que pueden existir diferencias de comportamiento respecto al modelo base en safetensors.
+- Riesgo de alucinación: no evaluado en la información disponible.
+- Sesgos conocidos: no documentados.
+- Limitaciones de contexto e idioma: no disponibles.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base `interfaze-ai/lev` y de Qwen3.5-4B antes de desplegarlo.
+- Madurez: el repositorio se creó en octubre de 2026 y la API `/v1/systemone` es reciente (PR 29818), por lo que la estabilidad de la integración puede ser limitada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ggml-org/lev-GGUF
+- Hugging Face (GGUF): https://huggingface.co/ggml-org/lev-GGUF
 - Modelo base: https://huggingface.co/interfaze-ai/lev
-- Modelo fuente Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
-- Pull request de llama.cpp con el endpoint `/v1/systemone`: https://github.com/ggml-org/llama.cpp/pull/29818
-- Herramienta de conversion: https://github.com/ggml-org/convert
-- Sitio de llama.app: https://llama.app
-- Organizacion ggml-org en GitHub: https://github.com/ggml-org/
-- Organizacion ggml-org en Hugging Face: https://huggingface.co/ggml-org
+- Modelo fuente Qwen: https://huggingface.co/Qwen/Qwen3.5-4B
+- PR de llama.cpp con la API `/v1/systemone`: https://github.com/ggml-org/llama.cpp/pull/29818
+- Herramienta de conversión: https://github.com/ggml-org/convert
+- App Llama: https://llama.app

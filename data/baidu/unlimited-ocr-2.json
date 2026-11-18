@@ -31,8 +31,8 @@
     "region:us"
   ],
   "likes": 708,
-  "downloads_30d": 584570,
-  "trending_score": 32,
+  "downloads_30d": 598226,
+  "trending_score": 28,
   "parameters": 3343978497,
   "parameters_human": "3.34B",
   "storage_bytes": 7119584517,
@@ -53,29 +53,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "baidu（Leader mondial des moteurs de recherche en langue chinoise ...",
-      "url": "https://baike.baidu.com/fr/item/baidu/1544311",
-      "snippet": "Le 13 novembre, Baidu a annoncé le lancement officiel du moteur IA \"Baidu Orion\", ouvrant pour la première fois pleinement au …"
+      "title": "百度一下，你就知道",
+      "url": "https://www.baidu.com/",
+      "snippet": "百度是全球领先的中文搜索引擎，致力于让用户便捷获取信息，找到所需。"
     },
     {
-      "title": "Baidu",
-      "url": "https://www.baidu.com/\"",
-      "snippet": "Baidu ... ."
+      "title": "百度一下，你就知道",
+      "url": "https://global.baidu.com/",
+      "snippet": "百度是全球领先的中文搜索引擎，致力于帮助用户便捷获取信息并找到所需内容。"
     },
     {
-      "title": "Baidu — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Baidu",
-      "snippet": "En mai 2006, Baidu a lancé une encyclopédie collaborative en ligne inspirée de Wikipédia, la version chinoise faisant à l'époque …"
+      "title": "百度一下",
+      "url": "https://wap.baidu.com/",
+      "snippet": "全球最大的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关 ..."
     },
     {
-      "title": "Unlimited OCR Works: Welcome the Era of One-shot Long ... - GitHub",
-      "url": "https://github.com/baidu/Unlimited-OCR",
-      "snippet": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing. - baidu/Unlimited-OCR."
+      "title": "百度一下，你就知道",
+      "url": "https://www.baidu.com/#!/login",
+      "snippet": "全球领先的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关 ..."
     },
     {
-      "title": "Baidu（Société Baidu）_Baidu Encyclopédie",
-      "url": "https://baike.baidu.com/fr/item/Baidu/986466",
-      "snippet": "Baidu répond quotidiennement à des milliards de requêtes de recherche provenant de plus de 100 pays et régions. C'est la …"
+      "title": "Welcome to baidu.com",
+      "url": "https://feed.baidu.com/",
+      "snippet": "Welcome to baidu.com For more information please refer to baidu.com."
     }
   ]
 }

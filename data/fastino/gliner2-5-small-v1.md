@@ -2,86 +2,93 @@
 
 ## Resumen
 
-GLiNER2.5 Small V1 es un modelo de extracción de información unificada desarrollado por Fastino Labs, publicado en Hugging Face bajo licencia Apache 2.0. Con 74 millones de parámetros, es la variante compacta de la familia GLiNER2.5, diseñada para ejecutarse eficientemente en CPU y entornos de borde sin sacrificar las capacidades de extracción multi-tarea del resto de la familia.
+GLiNER2.5 Small es un modelo compacto de extracción de información basado en esquemas (schema-based), desarrollado por Fastino. Con 73,9 millones de parámetros y un encoder DeBERTa-v3-xsmall, está diseñado para ejecutar tareas de extracción de entidades, clasificación de texto, extracción de relaciones y parsing de registros estructurados en una única arquitectura de fronteras (boundary architecture). Forma parte de la familia GLiNER2.5, que incluye también variantes base (194M) y multilingüe (287M) con la misma API pública.
 
-El modelo emplea una arquitectura de predicción de límites (boundary) en lugar de la enumeración de tramos (span enumeration) del GLiNER original. Esto permite manejar tramos de longitud arbitraria y documentos largos en una sola pasada, además de soportar extracción de entidades, clasificación de texto, extracción de registros estructurados, relaciones y atributos de tramo mediante una interfaz unificada basada en esquemas.
+El modelo resuelve el problema de unificar múltiples tareas de information extraction (NER, relation extraction, intent classification, sentiment analysis, topic classification) en un solo checkpoint, evitando el despliegue de varios modelos especializados. Su arquitectura de fronteras emplea emparejamiento disperso de tokens de inicio y fin en lugar de una rejilla fija de anchos de span, lo que permite extraer spans de cualquier longitud dentro de la ventana codificada.
 
-La relevancia actual de GLiNER2.5 Small radica en su tamaño reducido y su capacidad para ejecutar tareas de extracción de información complejas sin depender de APIs externas ni de GPUs de alta gama. Es una alternativa práctica para aplicaciones de producción que requieren inferencia local rápida, bajo coste y control de los datos.
+Es relevante por su eficiencia: al ser un modelo de 74M de parámetros, está pensado para inferencia en CPU y despliegues en el borde (edge), manteniendo la misma API que los modelos mayores de la familia. La licencia Apache 2.0 facilita su adopción comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BoundaryExtractor con encoder DeBERTa-v3-xsmall |
+| Arquitectura | Boundary architecture sobre encoder DeBERTa-v3-xsmall |
 | Parametros totales | 73.881.879 (74M) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible (limitada por el encoder; típicamente 512 tokens) |
-| Tipos de cuantizacion | fp16 (via `quantize=True`), sin GGUF documentado |
-| Idiomas soportados | Inglés (en) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | fp16 (via flag `quantize=True`); no se detallan otros formatos |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-GLiNER2.5 Small se basa en la arquitectura BoundaryExtractor, que predice los límites de inicio y fin de los tramos directamente sobre el texto codificado, en lugar de enumerar todos los tramos posibles como hacia GLiNER v1. Esto reduce la complejidad computacional de O(n²) a O(n), donde n es la longitud del documento, y permite extraer tramos de cualquier longitud dentro de la ventana del codificador. El modelo utiliza DeBERTa-v3-xsmall como encoder, una versión compacta de DeBERTa que ofrece un buen equilibrio entre rendimiento y eficiencia.
+GLiNER2.5 Small utiliza una arquitectura de fronteras (boundary architecture) en la que la extracción se realiza mediante emparejamiento disperso de tokens de inicio y fin, en lugar de una rejilla fija de anchos de span. Esto permite manejar spans de cualquier longitud que quepa en la ventana codificada. El encoder subyacente es DeBERTa-v3-xsmall. El checkpoint se carga mediante `AutoExtractor`, que selecciona automáticamente `BoundaryExtractor` según el campo `architecture` del checkpoint.
 
-La información disponible no detalla el conjunto de datos de entrenamiento ni los procedimientos de alineación (RLHF, DPO, etc.). El modelo se entrena de forma supervisada para tareas de extracción de información multi-tarea, pero no se han publicado datos sobre el número de tokens, la composición del dataset ni técnicas de entrenamiento avanzadas. La arquitectura soporta decodificación restringida mediante un módulo `Classifier` para restricciones entre tareas y `JointIE` para la extracción conjunta de entidades y relaciones tipadas.
+El modelo incorpora decodificación restringida (constrained decoding) mediante dos mecanismos: `Classifier` para restricciones de etiquetas entre tareas y `JointIE` para grafos tipados de entidad-relación. La model card no proporciona detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. El paper asociado es arXiv:2507.18546.
 
 ## Capacidades
 
-- Extracción de entidades: reconocimiento de entidades nombradas (NER) con soporte de descripciones de etiquetas personalizadas para dominios específicos.
-- Clasificación de texto: clasificación de intenciones, análisis de sentimientos, clasificación de tópicos y otras tareas de clasificación de texto mediante un esquema de etiquetas.
-- Extracción de registros estructurados: parseo de documentos en formato JSON o estructuras de datos definidas por el usuario.
-- Extracción de relaciones: identificación de relaciones entre entidades tipadas, con decodificación conjunta mediante `JointIE`.
-- Atributos de tramo: asignación de atributos o propiedades a los tramos extraídos (por ejemplo, confianza, tipo, etc.).
-- Decodificación restringida: soporte de restricciones cruzadas entre tareas para garantizar consistencia en los resultados.
-- Inferencia local: funciona en CPU, CUDA y MPS sin necesidad de API externa.
+- Extracción de entidades nombradas (NER) con etiquetas personalizadas y descripciones opcionales para dominios específicos.
+- Clasificación de texto: intent classification, sentiment analysis, topic classification.
+- Extracción de relaciones (relation extraction) mediante grafos tipados entidad-relación con `JointIE`.
+- Parsing de registros estructurados y extracción de JSON.
+- Puntuación de atributos de span (span attributes).
+- Extracción de información basada en esquemas unificados: entidades, clasificación, registros y relaciones en una sola pasada.
+- Decodificación restringida entre tareas con `Classifier`.
+- Inferencia local en CPU, CUDA o MPS sin API externa.
+- Soporte de offsets de caracteres de medio intervalo abierto: `text[start:end] == entity["text"]`.
+- Capacidades multilingües: no (solo inglés en este checkpoint; la variante `multi-v1` cubre multilingüe).
 
 ## Casos de uso
 
-- **Atención al cliente automatizada**: el modelo puede extraer entidades (productos, problemas, datos de contacto) y clasificar la intención del usuario en conversaciones multi-turno, lo que permite enrutar consultas a agentes humanos o generar respuestas automáticas.
-- **Extracción de datos de facturas y documentos**: dado un texto de factura, GLiNER2.5 Small extrae campos estructurados (fecha, importe, proveedor, número de factura) con alta precisión, facilitando la integración en sistemas de contabilidad o gestión documental.
-- **Procesamiento de textos clínicos**: extracción de medicamentos, dosis, síntomas y tiempos de administración en informes médicos o notas clínicas, útil para sistemas de soporte a la decisión clínica o análisis de historiales.
-- **Clasificación de tickets de soporte técnico**: categorización automática de tickets por tipo de problema (hardware, software, red, etc.) y extracción de entidades relevantes (dispositivo, versión, error), mejorando la priorización y el enrutado.
-- **Extracción de relaciones en textos legales**: identificación de entidades (partes, fechas, cláusulas) y las relaciones entre ellas en contratos o sentencias, facilitando la revisión y el análisis jurídico.
-- **Enriquecimiento de datos para bases de conocimiento**: extracción de entidades y relaciones desde artículos o feeds de noticias para poblar grafos de conocimiento, con soporte de descripciones de etiquetas para dominios específicos.
-- **Agentes de extracción de información en tiempo real**: al ser ligero (74M), puede desplegarse en dispositivos de borde o en pipelines de streaming para procesar textos en tiempo real sin depender de la nube.
+- Extracción de entidades en documentos médicos: el modelo permite definir etiquetas con descripciones ("medication", "dosage", "symptom", "time") y extraer spans con offsets exactos, adecuado para pipelines de digitalización de historiales clínicos.
+- Clasificación de tickets de soporte: con `classify_text` se pueden asignar categorías de intent y sentimiento en una sola llamada, reduciendo el número de modelos desplegados en producción.
+- Extracción de relaciones en textos financieros: mediante `JointIE` se pueden construir grafos tipados de entidad-relación (por ejemplo, empresa-adquisición-empresa) para alimentar bases de conocimiento.
+- Parsing de registros estructurados desde texto libre: extracción de JSON a partir de correos o formularios, útil para integrar datos no estructurados en sistemas CRM o ERP.
+- Procesamiento en el borde (edge): con 74M de parámetros y soporte de CPU/MPS, es adecuado para dispositivos con recursos limitados donde no es viable un modelo mayor.
+- Análisis de opiniones y temas: combinación de sentiment analysis y topic classification sobre reseñas de productos o comentarios de usuarios en tiempo real.
+- Enriquecimiento de datos en pipelines de CI/CD: integración en flujos de preprocesamiento para etiquetar y estructurar datos antes de su indexación o almacenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye tablas comparativas con métricas como F1, precisión o recall para tareas de NER, clasificación o extracción de relaciones. Tampoco se proporcionan comparaciones con otros modelos en la misma categoría.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: al ser un modelo de 74M parámetros, la inferencia en fp16 ocupa aproximadamente 150 MB de VRAM, más el overhead del runtime. Es factible en GPUs con 2 GB o menos.
-- **GPUs recomendadas**: cualquier GPU con al menos 1 GB de VRAM, incluyendo tarjetas de gama de entrada como NVIDIA GTX 1650 o integradas. También funciona en Apple Silicon (MPS).
-- **CPU**: puede ejecutarse en CPU sin problemas, con latencia aceptable para documentos de longitud media (500-1000 caracteres).
-- **Opciones de despliegue**: se integra con la librería `gliner2` (pip install "gliner2[local]") que soporta CPU, CUDA y MPS. También se puede usar con `torch.compile` para optimizar la inferencia.
-- **Latencia estimada**: no se proporcionan cifras concretas, pero al ser un modelo compacto, la latencia en CPU para documentos cortos es típicamente inferior a 100 ms por documento.
+- VRAM estimada para inferencia: el modelo tiene 74M de parámetros; en fp32 ocupa aproximadamente 0,3 GB y en fp16 aproximadamente 0,15 GB, más overhead de activaciones.
+- GPU recomendadas: no se especifican en la información disponible; por su tamaño, cualquier GPU con al menos 2 GB de VRAM es suficiente.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) e incluso en CPU.
+- Opciones de despliegue: `gliner2[local]` con PyTorch; soporte de CPU, CUDA y MPS; flags `map_location`, `quantize` (fp16) y `compile` (torch.compile).
+- Latencia y throughput estimados: no disponibles; la model card indica que es más rápido en CPU que los modelos mayores de la familia, pero sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Encoder | Idioma | Licencia | Uso principal |
+| Modelo | Parametros | Encoder | Idioma | Licencia | Uso |
 |---|---|---|---|---|---|
-| fastino/gliner2.5-small-v1 | 74M | DeBERTa-v3-xsmall | Inglés | Apache 2.0 | Extracción de información multi-tarea en CPU/edge |
-| fastino/gliner2.5-base-v1 | 194M | DeBERTa-v3-base | Inglés | Apache 2.0 | Extracción multi-tarea con mayor capacidad |
-| fastino/gliner2.5-multi-v1 | 287M | mDeBERTa-v3-base | Multilingüe | Apache 2.0 | Extracción multi-tarea en múltiples idiomas |
+| fastino/gliner2.5-small-v1 | 74M | DeBERTa-v3-xsmall | Inglés | Apache 2.0 | Extracción rápida en CPU |
+| fastino/gliner2.5-base-v1 | 194M | DeBERTa-v3-base | Inglés | Apache 2.0 | Checkpoint multi-tarea por defecto en inglés |
+| fastino/gliner2.5-multi-v1 | 287M | mDeBERTa-v3-base | Multilingüe | Apache 2.0 | Checkpoint multi-tarea multilingüe por defecto |
 
-La familia GLiNER2.5 comparte la misma API pública y arquitectura de límites, diferenciándose en el tamaño del encoder y el soporte multilingüe. No se dispone de comparativas directas con otros modelos de extracción de entidades (como spaCy, Stanford NER o GLiNER v1) en términos de rendimiento, ya que no se han publicado benchmarks en la información proporcionada.
+Los tres modelos comparten la misma API pública. No se dispone de datos de benchmarks para comparar rendimiento entre ellos.
 
 ## Limitaciones y advertencias
 
-- **Idioma**: el modelo solo está entrenado para inglés. No es adecuado para textos en otros idiomas sin adaptación o entrenamiento adicional.
-- **Contexto limitado**: el encoder DeBERTa-v3-xsmall tiene una ventana de contexto típica de 512 tokens, lo que limita el procesamiento de documentos muy largos. Para textos extensos se recomienda segmentar el documento.
-- **Alucinación de entidades**: como cualquier modelo de extracción, puede generar entidades que no están presentes en el texto, especialmente con etiquetas ambiguas o descripciones imprecisas.
-- **Dependencia de la calidad de las descripciones de etiquetas**: el rendimiento depende de la precisión de las descripciones proporcionadas para cada etiqueta; descripciones vagas pueden degradar la extracción.
-- **Licencia**: Apache 2.0 permite uso comercial sin restricciones, pero no se proporcionan garantías sobre la precisión ni el uso en dominios críticos.
-- **Falta de datos de entrenamiento**: no se han publicado detalles sobre el conjunto de datos de entrenamiento, lo que dificulta evaluar sesgos o comportamientos esperados en dominios específicos.
+- Solo soporta inglés; para otros idiomas es necesario usar la variante `multi-v1`.
+- No se han publicado datos sobre sesgos conocidos ni sobre tasas de alucinación.
+- La longitud de contexto no está especificada en la información disponible.
+- El uso de `GLiNER2.from_pretrained(...)` (loader legacy de span) no funciona con este checkpoint; es obligatorio usar `AutoExtractor`.
+- Requiere Python 3.10 o superior y la extra `gliner2[local]` para inferencia local.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), conviene verificar las condiciones de los datos de entrenamiento, no detalladas en la model card.
+- Al ser un modelo de 74M, su capacidad de razonamiento y generalización es limitada en comparación con los checkpoints base y multi de la familia.
 
 ## Enlaces
 
-- [Hugging Face: fastino/gliner2.5-small-v1](https://huggingface.co/fastino/gliner2.5-small-v1)
-- [arXiv paper: GLiNER2](https://arxiv.org/abs/2507.18546)
-- [GitHub: GLiNER2](https://github.com/fastino-ai/GLiNER2)
-- [Fastino Labs: página del modelo](https://fastino.ai/models/gliner2-5)
-- [Reddit: r/GLiNER](https://www.reddit.com/r/GLiNER/)
+- Hugging Face: https://huggingface.co/fastino/gliner2.5-small-v1
+- Paper: https://arxiv.org/abs/2507.18546
+- GitHub: https://github.com/fastino-ai/GLiNER2
+- Fastino Agent (fine-tuning): https://agent.fastino.ai
+- Reddit: https://www.reddit.com/r/GLiNER/
+- X/Twitter: https://x.com/fastinoAI
+- Modelo base de la familia: https://huggingface.co/fastino/gliner2.5-base-v1
+- Modelo multilingüe de la familia: https://huggingface.co/fastino/gliner2.5-multi-v1

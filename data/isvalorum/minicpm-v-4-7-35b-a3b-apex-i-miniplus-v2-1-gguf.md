@@ -2,129 +2,98 @@
 
 ## Resumen
 
-Esta ficha describe el repositorio `IsValorum/MiniCPM-V-4.7-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF`, una cuantizacion GGUF del modelo multimodal `openbmb/MiniCPM-V-4.7-35B-A3B`, publicado por el usuario IsValorum bajo el esquema propio "APEX-I MiniPlus V2.1". No se trata de un modelo entrenado desde cero, sino de una redistribucion cuantizada del modelo base de OpenBMB, cuyo pipeline declarado es `image-text-to-text` (vision-lenguaje). El modelo base es, segun la model card citada, el primer modelo multimodal de tipo Mixture-of-Experts (MoE) de la serie MiniCPM, con 34.659.889.792 parametros totales.
+MiniCPM-V-4.7-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF es una cuantización comunitaria del modelo multimodal openbmb/MiniCPM-V-4.7-35B-A3B, publicada por el usuario IsValorum. Se trata de la primera variante de la serie MiniCPM-V con arquitectura de mezcla de expertos (MoE), combinando procesamiento de imagen, vídeo y texto con un total de 34.659.889.792 parámetros. El modelo original lo desarrolla OpenBMB y esta versión GGUF está pensada para su ejecución en llama.cpp, incluyendo un proyector multimodal independiente (`mmproj-Q8_0.gguf`) para preservar la fidelidad del razonamiento visual.
 
-El interes de esta publicacion concreta esta en la estrategia de cuantizacion, que no es uniforme: se asigna un tipo de cuantizacion distinto a cada grupo funcional de tensores (routers de expertos y normalizaciones en F32, capas de atencion completa periodicas en Q4_K/Q6_K, expertos enrutados en Q3_K o IQ3_XXS segun su profundidad, y un proyector multimodal independiente en Q8_0). El objetivo declarado es preservar la fidelidad del enrutado de expertos y de los estados recurrentes, que son los puntos mas sensibles al error de cuantizacion en arquitecturas MoE hibridas.
+La relevancia de esta publicación radica en su esquema de cuantización selectiva denominado APEX-I MiniPlus V2.1, que asigna precisión distinta a cada componente del modelo (por ejemplo, routers MoE en F32, estados recurrentes Gated DeltaNet en F32 y expertos enrutados en Q3_K/IQ3_XXS). Este enfoque busca minimizar la degradación en tareas agénticas y de invocación de herramientas, algo crítico en modelos MoE multimodales.
 
-El repositorio ocupa 15,5 GB e incluye el archivo de pesos y un proyector multimodal `mmproj-Q8_0.gguf`. Esta pensado para ejecucion con `llama.cpp` (binario `llama-minicpmv-cli`) en equipos de gama alta de consumo o estaciones de trabajo. A fecha de creacion (12 de octubre de 2026) acumulaba 0 descargas y 2 likes, por lo que se trata de una publicacion reciente y con muy poca validacion externa por parte de la comunidad.
+La model card reporta resultados en el benchmark comunitario Shortbench / NanoBench v0.5.0 sobre una RTX 4070 de 12 GB, con puntuaciones del 89,6 % y 95,8 % (8/12 y 10/12 tareas resueltas) y tiempos de finalización de 6,5 y 7,6 minutos. La licencia declarada es Apache 2.0 y el repositorio ocupa 45,6 GB.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal con atencion completa periodica y estados recurrentes Gated DeltaNet (hibrida atencion/SSM), segun la model card |
-| Parametros totales | 34.659.889.792 (34,66 mil millones) |
-| Parametros activos | Aproximadamente 3.000 millones segun la nomenclatura "35B-A3B" del nombre; no confirmado explicitamente en la informacion proporcionada |
-| Longitud de contexto | no disponible (el ejemplo de CLI usa `-c 4096`, pero es un valor de ejemplo, no el maximo del modelo) |
-| Tipos de cuantizacion | Esquema mixto por tensor: F32, Q6_K, Q5_K, Q4_K, Q3_K, IQ3_XXS y Q8_0 (proyector multimodal) |
+| Arquitectura | MoE multimodal (vision + texto + video) con capas de atención completa periódicas y estados recurrentes Gated DeltaNet; pesos en formato GGUF |
+| Parametros totales | 34.659.889.792 (≈34,66 B) |
+| Parametros activos | no disponible (el nombre del modelo indica "A3B", es decir, aproximadamente 3 B activos, pero la cifra exacta no se detalla en la información proporcionada) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Mezcla selectiva por tensor: Q6_K (output), Q4_K (token_embd y Q/K/V de capas de atención completa), F32 (normalizaciones, routers MoE `ffn_gate_inp` y estados Gated DeltaNet), Q5_K (expertos compartidos `shexp`), Q3_K (expertos enrutados en capas 0-9 y 30-39), IQ3_XXS (expertos enrutados en capas 10-29); proyector multimodal en Q8_0 |
 | Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado, compatible con llama.cpp) |
-
-Detalle adicional del esquema de cuantizacion, segun la model card:
-
-| Grupo de tensores | Cuantizacion asignada |
-|---|---|
-| `output.weight` | Q6_K |
-| `token_embd.weight` | Q4_K |
-| Normalizaciones y routers de expertos (`ffn_gate_inp`) | F32 |
-| Expertos compartidos (`shexp`) | Q5_K |
-| Atencion completa periodica (capas 3, 7, 11, ..., 39): Q/K/V | Q4_K |
-| Atencion completa periodica: salida | Q6_K |
-| Estados recurrentes Gated DeltaNet (`ssm_a`, `ssm_conv1d`, `ssm_dt`, `ssm_norm`) | F32 |
-| Expertos enrutados de borde (capas 0-9 y 30-39) | Q3_K |
-| Expertos enrutados centrales (capas 10-29) | IQ3_XXS |
-| Proyector multimodal (`mmproj-Q8_0.gguf`) | Q8_0 |
-
-Total de tensores gestionados por el esquema: 733, segun la model card.
+| Formato de pesos | GGUF (llama.cpp), con `mmproj-Q8_0.gguf` separado para el proyector multimodal |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible corresponde a una cuantizacion, no al entrenamiento del modelo base, por lo que no se detallan datos de preentrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO o similar): esa informacion no esta disponible en el material proporcionado. Lo que si describe la model card es la estructura de la arquitectura subyacente, que combina tres elementos:
+El modelo base es MiniCPM-V 4.7 35B-A3B de OpenBMB, descrito en la model card como el primer modelo multimodal con arquitectura de mezcla de expertos de la serie MiniCPM-V. La arquitectura combina capas de atención completa periódicas (capas 3, 7, 11, ..., 39) con estados recurrentes Gated DeltaNet, lo que se refleja en los tensores `ssm_a`, `ssm_conv1d`, `ssm_dt` y `ssm_norm` protegidos en F32 durante la cuantización. El modelo incorpora además expertos compartidos (`shexp`) y routers MoE (`ffn_gate_inp`) por capa.
 
-- Un esquema Mixture-of-Experts con expertos enrutados por capa y un router (`ffn_gate_inp`) por capa de expertos, ademas de expertos compartidos (`shexp`) que, segun la model card, forman una ruta activa al 100 por cien.
-- Una columna vertebral hibrida: la mayoria de capas usan estados recurrentes tipo Gated DeltaNet (parametros `ssm_a`, `ssm_conv1d`, `ssm_dt`, `ssm_norm`), mientras que un subconjunto de capas emplea atencion completa a modo de "anclas" periodicas (capas 3, 7, 11, ..., 39).
-- Un proyector multimodal separado que traduce representaciones visuales al espacio de tokens del modelo de lenguaje, distribuido como archivo GGUF independiente en Q8_0.
-
-El esquema de numeracion de capas citado (capas 0-9, 10-29 y 30-39) sugiere un total de 40 capas, aunque este dato no se declara de forma explicita. La innovacion tecnica destacable de esta publicacion no esta en el modelo, sino en el criterio de cuantizacion: mantener en F32 los routers y los estados recurrentes busca evitar la deriva de enrutado y la acumulacion de error en las recursiones, mientras que la compresion agresiva (Q3_K, IQ3_XXS) se reserva para los expertos enrutados, que solo se activan de forma parcial en cada token.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base. La model card de esta cuantización se centra en el esquema de asignación de precisión por tensor (733 tensores en total) y en la inclusión del proyector multimodal Q8_0, que evita la degradación de tokens visuales. No se documentan innovaciones adicionales de decodificación especulativa ni de atención lineal más allá de los estados recurrentes mencionados.
 
 ## Capacidades
 
-- Generacion de texto conversacional (`conversational` en los tags del repositorio).
-- Comprension de imagen y texto (`image-text-to-text` como pipeline declarado): descripcion de imagenes, respuesta a preguntas sobre contenido visual y razonamiento sobre escenas.
-- Procesamiento de video: el tag `video` aparece en el repositorio, aunque no se detallan capacidades concretas ni limites de duracion o resolucion.
-- Multilingue: 10 idiomas declarados (ingles, chino, castellano, frances, aleman, portugues, italiano, ruso, japones y coreano).
-- Ejecucion en dispositivo (`on-device`) mediante el runtime de llama.cpp, con soporte de cuantizacion mixta y de proyector multimodal externo.
-- Razonamiento visual de alta fidelidad, segun el autor, gracias al proyector `mmproj-Q8_0.gguf` sin degradacion de tokens visuales.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso explicito: no disponible en la informacion proporcionada.
-- Modo de razonamiento explicito (thinking mode), audio u otras modalidades: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno.
+- Comprensión de imágenes y razonamiento visual (pipeline `image-text-to-text`).
+- Procesamiento de vídeo, según las etiquetas del repositorio.
+- Ejecución de tareas agénticas con invocación de herramientas y generación de payloads estructurados, incluyendo Python, según los resultados de Shortbench / NanoBench.
+- Soporte multilingüe en diez idiomas: inglés, chino, español, francés, alemán, portugués, italiano, ruso, japonés y coreano.
+- Compatibilidad con `llama.cpp` mediante la CLI `llama-minicpmv-cli` y con endpoints compatibles (etiqueta `endpoints_compatible`).
+- Orientación a despliegue on-device (etiqueta `on-device`).
 
 ## Casos de uso
 
-- Descripcion y etiquetado automatico de imagenes en catalogos de producto: el modelo puede recibir una fotografia y devolver una descripcion estructurada en castellano, aprovechando el pipeline `image-text-to-text` y el proyector en Q8_0 para no perder detalle en objetos pequenos.
-- Asistencia a personas con discapacidad visual: dado que el modelo es multimodal y puede ejecutarse en local con llama.cpp, es viable montar un asistente de escritorio que describa capturas de pantalla o camara en tiempo real sin enviar datos a un servicio en la nube.
-- Analisis de documentacion tecnica escaneada: extraccion de informacion de planos, diagramas o capturas de interfaces, combinando OCR implicito con razonamiento sobre la imagen y salida en texto.
-- Moderacion de contenido visual en plataformas propias: clasificacion y descripcion de imagenes subidas por usuarios, con la ventaja de que el modelo puede desplegarse on-premise y no requiere enviar el contenido a terceros.
-- Soporte multilingue en atencion al cliente con entrada visual: un usuario envia una captura de un error o de un recibo y el modelo responde en su idioma entre los diez soportados (es, en, de, fr, it, pt, ru, ja, ko, zh).
-- Investigacion en eficiencia de inferencia: al ser un MoE con unos 3.000 millones de parametros activos estimados y 34,66 mil millones totales, es un banco de pruebas util para medir el impacto de distintas estrategias de cuantizacion por tensor sobre la calidad de enrutado.
-- Procesamiento de video para resumenes o indexacion: el tag `video` permite plantear pipelines de resumen de clips cortos, si bien conviene validar experimentalmente la ventana efectiva antes de llevarlo a produccion.
+- Asistencia visual en el escritorio: el modelo puede describir imágenes locales pasadas a `llama-minicpmv-cli` con `--image`, útil para accesibilidad o catalogación de fotos sin enviar datos a la nube.
+- Agente de codificación autónomo: los resultados de Shortbench indican que resuelve tareas de ingeniería de software y pipelines generando código Python y llamadas a herramientas; encaja en flujos agénticos tipo "Pi Agent" sobre hardware de consumo.
+- Análisis de vídeo y documentos escaneados: al aceptar entradas de vídeo e imagen, sirve para extraer información estructurada de grabaciones o capturas en pipelines de procesamiento por lotes.
+- Atención al cliente multimodal: permite gestionar conversaciones multi-turno donde el usuario adjunta capturas de pantalla o fotos de productos, con soporte en español y otros nueve idiomas.
+- Automatización de tareas de sistema en estaciones de trabajo: con 12 GB de VRAM es viable ejecutarlo junto a un agente que invoque herramientas del sistema operativo, como demuestra la ejecución verificada en una RTX 4070.
+- Prototipado e investigación en visión-lenguaje: al ser una cuantización de un MoE multimodal con licencia Apache 2.0, facilita experimentos de evaluación de cuantización y de robustez visual sin infraestructura de centro de datos.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente con llama.cpp, los datos de imagen y texto no salen del equipo, lo que resulta adecuado para sectores regulados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card proporcionada no incluye cifras de MMLU, MMMU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni comparaciones cuantitativas con otros modelos. Tampoco se aportan mediciones de perplejidad o de degradacion respecto al modelo base en FP16/BF16.
+Resultados reportados en la model card para Shortbench / NanoBench v0.5.0 (12 tareas objetivas de ingeniería de software, pipelines e integridad de sistema), ejecutados por el miembro de la comunidad @derFusel en una RTX 4070 (12 GB), i7-14700K y 32 GB de RAM:
+
+| Ejecucion | Puntuacion total | Tareas resueltas | Tiempo | Entorno |
+|---|---|---|---|---|
+| MiniCPM-V-4.7 MiniPlus (compacted) | 95,8 % | 10 / 12 | 7,60 min | RTX 4070 (12 GB), agente `Pi`, compactado |
+| MiniCPM-V-4.7 MiniPlus | 89,6 % | 8 / 12 | 6,50 min | RTX 4070 (12 GB), agente `Pi` |
+
+La model card afirma que es el tiempo de finalización más rápido registrado entre los modelos de 35B evaluados en Shortbench, aunque no se aportan comparaciones numéricas con otros modelos en la información disponible. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información proporcionada.
 
 ## Requisitos de hardware
 
-Las cifras de esta seccion son estimaciones derivadas del tamano del repositorio (15,5 GB) y del esquema de cuantizacion descrito; no proceden de mediciones publicadas en la informacion proporcionada.
-
-- Peso de los archivos: el repositorio completo ocupa 15,5 GB e incluye el archivo de pesos cuantizado y el proyector `mmproj-Q8_0.gguf`. Los pesos del modelo de lenguaje estarian en el rango aproximado de 13-15 GB, y el proyector anadiria una cantidad no especificada.
-- VRAM estimada para inferencia: alrededor de 16-18 GB para descarga completa de pesos, proyector y cache de contexto moderada. Con contexto largo, la cache KV crece de forma adicional; su tamano exacto depende de la configuracion de capas de atencion, que no se detalla.
-- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para descarga completa en GPU; A100 40 GB, L40S o H100 si se necesita contexto amplio o varios usuarios concurrentes. Tarjetas de 16 GB (RTX 4080, RTX 4060 Ti 16 GB) pueden funcionar con descarga parcial de capas a CPU.
-- Cabe en GPU de consumo: si, en modelos de 24 GB sin problema y en modelos de 16 GB con offload parcial. En tarjetas de 8-12 GB requeriria mover una parte sustancial de capas a RAM del sistema, con la consiguiente perdida de velocidad.
-- Opciones de despliegue: llama.cpp es la ruta soportada explicitamente (binario `llama-minicpmv-cli`, con `-m` para los pesos y `--mmproj` para el proyector). Servidores derivados de llama.cpp (llama-server, Ollama, LM Studio, koboldcpp) podrian funcionar si soportan el proyector multimodal y la arquitectura del modelo base, pero no hay confirmacion en la informacion disponible. Soporte en vLLM o TGI: no disponible.
-- Latencia y throughput estimados: no disponible. No se aportan mediciones de tokens por segundo ni de tiempo a primer token. A modo de referencia cualitativa, el uso de unos 3.000 millones de parametros activos estimados deberia dar velocidades mas propias de un modelo denso de ese orden que de uno de 34,66 mil millones, siempre que el offload a CPU sea minimo.
-
-Ejemplo de invocacion incluido en la model card:
-
-```bash
-llama-minicpmv-cli \
-  -m MiniCPM-V-4.7-35B-A3B.APEX-I-MiniPlus-V2.1.gguf \
-  --mmproj mmproj-Q8_0.gguf \
-  --image test.jpg \
-  -p "Describe what you see in this image in detail." \
-  -c 4096 --temp 0.7
-```
+- VRAM estimada: no disponible de forma explícita; el repositorio ocupa 45,6 GB, aunque la carga en memoria depende de la configuración de offload de capas y del tamaño efectivo de los tensores en cada nivel de cuantización.
+- GPU verificada: NVIDIA GeForce RTX 4070 de 12 GB, con resultados funcionales en el benchmark citado (probablemente con offload parcial a RAM del sistema).
+- GPU recomendadas: no especificadas en la información disponible; por el tamaño del repositorio, se espera que requiera GPUs de gama alta (A100, H100) o configuraciones con offload para consumer.
+- Cabe en consumer GPU: sí, al menos en una RTX 4070 de 12 GB según la ejecución verificada, aunque no se detalla la proporción de capas descargadas a CPU.
+- Opciones de despliegue: `llama.cpp` mediante `llama-minicpmv-cli`; la etiqueta `endpoints_compatible` sugiere compatibilidad con servidores de endpoints, pero no se detallan otras herramientas como vLLM, Ollama o TGI.
+- Latencia y throughput: tiempos de 6,5 a 7,6 minutos para 12 tareas agénticas en la configuración citada; no se aportan tokens por segundo.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos proceden de su documentacion publica y no se han verificado contra la informacion proporcionada en esta busqueda; deben confirmarse en las fuentes originales antes de tomar decisiones.
-
-| Modelo | Parametros | Arquitectura | Contexto | Licencia | Formato / disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 35B-A3B (APEX-I MiniPlus V2.1, esta ficha) | 34,66 mil millones totales, ~3 mil millones activos estimados | MoE multimodal hibrida (Gated DeltaNet + atencion completa periodica) | no disponible | apache-2.0 | GGUF para llama.cpp |
-| Qwen3-VL-30B-A3B | 30 mil millones totales, 3 mil millones activos | MoE multimodal | 256.000 tokens segun su documentacion | apache-2.0 | safetensors y cuantizaciones comunitarias en GGUF |
-| Qwen2.5-VL-32B | 32,8 mil millones | Transformer denso multimodal | 128.000 tokens segun su documentacion | apache-2.0 | safetensors y GGUF |
+| MiniCPM-V-4.7-35B-A3B-APEX-I-MiniPlus-V2.1 (esta ficha) | ≈34,66 B (MoE, ≈3 B activos según nombre) | no disponible | 95,8 % / 89,6 % en Shortbench v0.5.0 (12 tareas) | Apache 2.0 | GGUF en Hugging Face |
+| openbmb/MiniCPM-V-4.7-35B-A3B (modelo base) | ≈34,66 B | no disponible | no disponible | Apache 2.0 (según el repositorio derivado) | Pesos originales en Hugging Face |
+| Otras cuantizaciones GGUF del mismo modelo base | ≈34,66 B | no disponible | no disponible | Apache 2.0 | no disponible en la información proporcionada |
 
-La diferencia principal de esta publicacion frente a las alternativas es el formato: se distribuye unicamente como GGUF ya cuantizado con un esquema por tensor poco habitual, lo que simplifica el despliegue en llama.cpp pero elimina la posibilidad de re-cuantizar desde los pesos originales dentro del mismo repositorio. No hay datos de rendimiento comparado entre estos modelos en la informacion disponible.
+No se dispone de datos de benchmarks ni de especificaciones de contexto para modelos alternativos de la misma categoría en la información proporcionada, por lo que la comparativa cuantitativa con alternativas queda limitada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion, no el modelo original: la calidad final depende del esquema de compresion. Los expertos enrutados de las capas centrales estan en IQ3_XXS y los de las capas de borde en Q3_K, lo que puede degradar tareas que dependan intensamente de esos expertos.
-- No se han publicado evaluaciones que cuantifiquen la perdida de calidad respecto al modelo base en BF16. El autor afirma que el diseno evita la deriva de enrutado, pero no aporta mediciones que lo respalden.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje y agravado en tareas de descripcion visual, donde el modelo puede inventar detalles no presentes en la imagen. No hay datos especificos de tasa de alucinacion para este modelo.
-- Sesgos conocidos: no disponible. No se documentan sesgos demograficos, culturales o de dominio en la informacion proporcionada.
-- Limitaciones de contexto e idioma: la longitud de contexto del modelo base no se declara. Aunque se listan diez idiomas, no se especifica el nivel de competencia por idioma ni si el castellano esta al mismo nivel que el ingles o el chino, que suelen ser los idiomas dominantes en los datos de entrenamiento de la serie.
-- Soporte de la comunidad practicamente nulo: 0 descargas y 2 likes en la fecha de creacion. No hay informes independientes de funcionamiento, ni confirmacion de que Ollama, LM Studio u otros frontends lo carguen correctamente.
-- Compatibilidad de runtime: aunque los tags mencionan llama.cpp, no se indica la version minima necesaria. La arquitectura del modelo base (Gated DeltaNet mas atencion periodica) puede requerir una version reciente o incluso un fork especifico; conviene verificar antes de integrarlo en produccion.
-- Licencia: apache-2.0 tanto en el repositorio de cuantizacion como, segun los metadatos, en el modelo base. Esto permite uso comercial, pero la responsabilidad de verificar la licencia efectiva del modelo base recae en quien despliegue el modelo, ya que la informacion aqui recogida proviene de metadatos y no de un analisis legal.
-- Mantenimiento: el repositorio depende de un unico autor y de financiacion por donaciones (Ko-fi), sin garantia de actualizaciones ni de soporte.
+- Es una cuantización comunitaria no oficial: la calidad puede diferir del modelo base y no está avalada por OpenBMB.
+- La asignación agresiva de precisión (Q3_K e IQ3_XXS en expertos enrutados) puede degradar tareas sensibles a la precisión numérica, aunque el esquema protege routers y estados en F32.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- Riesgo de alucinación inherente a los modelos generativos; no hay datos específicos de tasa de alucinación.
+- Longitud de contexto no especificada: no se puede garantizar el comportamiento en ventanas largas.
+- El rendimiento reportado proviene de un benchmark comunitario (Shortbench / NanoBench v0.5.0) con 12 tareas y una única configuración de hardware; no debe generalizarse sin validación propia.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los pesos originales de OpenBMB.
+- El uso en producción requiere validar el comportamiento del proyector multimodal Q8_0 con imágenes y vídeos propios, así como la estabilidad de la CLI de llama.cpp.
 
 ## Enlaces
 
-- Repositorio de la cuantizacion: https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
-- Perfil del autor de la cuantizacion: https://huggingface.co/IsValorum
-- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum
-- Runtime de inferencia referenciado (llama.cpp): https://github.com/ggml-org/llama.cpp
-- Paper, blog tecnico o demo del modelo base: no disponible en la informacion proporcionada.
+- Benchmark Shortbench / NanoBench: https://shortbench.vercel.app/
+- Ejecución verificada 2a1b0ff3: https://shortbench.vercel.app/runs/2a1b0ff3-40e8-4a27-abae-c9455299022f
+- Ejecución verificada 9fe7781b: https://shortbench.vercel.app/runs/9fe7781b-0e59-4d6f-b283-9aa73b95104e
+- Perfil del autor del benchmark: https://huggingface.co/derFusel
+- Apoyo al autor de la cuantización: https://ko-fi.com/isvalorum

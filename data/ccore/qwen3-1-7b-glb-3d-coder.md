@@ -2,53 +2,52 @@
 
 ## Resumen
 
-CCORE GLB-3D-Coder 1.7B es un ajuste fino de Qwen3-1.7B desarrollado por el usuario ccore, orientado a la generacion de assets 3D de estilo low-poly para videojuegos. El modelo recibe una descripcion en lenguaje natural y produce una pagina HTML autocontenida que utiliza Three.js para renderizar el asset en un visor interactivo e incluye un boton de exportacion a GLB, el formato nativo del motor Godot. El problema que aborda es la generacion de geometria 3D utilizable en pipelines de desarrollo de juegos sin depender de herramientas de modelado manual ni de GPUs de gama alta.
+CCORE GLB-3D-Coder 1.7B es un ajuste fino de Qwen3-1.7B desarrollado por el usuario ccore, especializado en la generación de activos 3D low-poly exportables como archivos GLB. El modelo escribe páginas HTML completas y autónomas que utilizan Three.js para renderizar un activo 3D interactivo, e incluyen un botón de exportación que descarga el GLB resultante, pensado para su uso en el editor Godot. Resuelve un problema muy concreto: producir geometría 3D funcional a partir de una descripción en lenguaje natural en hardware modesto.
 
-El modelo parte de la arquitectura Qwen3-1.7B, un transformer causal con atencion de consulta agrupada (GQA) en sus 28 capas, y conserva los 1.720.574.976 parametros del modelo base. Se distribuye en formato GGUF con cuantizaciones Q8_0 (1,83 GB) y F16 (3,45 GB), lo que permite ejecutarlo en CPU o en GPUs de consumo con poca VRAM. La licencia es Apache 2.0, heredada del modelo base.
+La arquitectura subyacente es la de Qwen3, un transformer causal con atención completa y grouped-query attention en las 28 capas, con 1.720.574.976 parámetros totales. El ajuste se realizó sobre el dataset propio ccore/ThreeJS-3D-GLB-Assets, que cubre 40 dominios de activos (personajes, mobiliario, entornos, vehículos, mecánicas interactivas, etc.).
 
-Es relevante ahora porque demuestra la viabilidad de especializar modelos pequenos en tareas de generacion de codigo grafico muy concretas, con un bucle de iteracion corto para desarrolladores independientes. No obstante, el checkpoint publicado es una version inicial de prueba: el autor indica que el entrenamiento debia finalizar entre el 11 y el 12 de noviembre de 2026 y que publicara pesos actualizados, Safetensors y la informacion completa de entrenamiento mas adelante.
+Su relevancia actual radica en la accesibilidad: al ser un modelo de 1.7B, las cuantizaciones GGUF caben en CPU o en GPUs de gama baja, con un archivo Q8_0 de aproximadamente 1,83 GB. Esto permite un bucle de iteración corto para creadores sin GPU dedicada, algo poco habitual en tareas de generación de código 3D.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con atencion de consulta agrupada (GQA) en 28 capas, basado en Qwen3-1.7B |
+| Arquitectura | Transformer causal (Qwen3) con atención completa y grouped-query attention en 28 capas |
 | Parametros totales | 1.720.574.976 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q8_0 (1,83 GB) y F16 (3,45 GB); Safetensors anunciado pero no publicado |
-| Idiomas soportados | No disponible (la model card no los detalla; el modelo base Qwen3 es multilingue) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M, Q8_0, F16; pesos FP16 en safetensors |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp / LM Studio); Safetensors planificado |
+| Formato de pesos | GGUF (Q4_K_M, Q8_0, F16) y safetensors (FP16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del Qwen3-1.7B, un transformer denso con atencion causal completa y atencion de consulta agrupada en las 28 capas. El autor justifica explicitamente la eleccion del modelo base por mantener atencion causal completa con GQA en todas las capas, lo que busca preservar la calidad de generacion de codigo con un coste de inferencia reducido.
+El modelo parte de Qwen3-1.7B, un transformer causal denso con 28 capas y grouped-query attention, y se ha ajustado mediante fine-tuning supervisado sobre el dataset ccore/ThreeJS-3D-GLB-Assets. No se especifica en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El autor indica que el objetivo era mantener atención causal completa en todas las capas para preservar la coherencia del código generado.
 
-El entrenamiento se realizo sobre el dataset ccore/ThreeJS-3D-GLB-Assets, que cubre 40 dominios de assets 3D organizados en cinco grandes categorias: personajes y criaturas (PNJ, enemigos, jefes, robots), objetos y props (armas, armadura, muebles, electrodomesticos, instrumentos musicales), entornos y estructuras (naturaleza, arquitectura modular, escenarios de batalla, servicios urbanos), vehiculos y maquinas (transporte terrestre, aereo, acuatico, maquinaria industrial) y assets interactivos (cocina y mercados, festivales, deportes, laboratorio y medicina, trampas y peligros, puzzles y marcadores de gameplay). La tarea de entrenamiento consiste en generar una pagina HTML completa y autonoma con Three.js que muestre el asset y ofrezca una exportacion GLB funcional, incluyendo animacion cuando el asset la requiera.
-
-No se han publicado el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO. El autor indica que anadira la informacion completa de entrenamiento cuando este finalice.
+El dataset cubre 40 dominios de activos 3D, organizados en cinco grandes categorías: personajes y criaturas (NPCs, enemigos, jefes, robots), objetos y props (armas, mobiliario, electrodomésticos, instrumentos), entornos y estructuras (arquitectura modular, escenarios de batalla, estructuras submarinas), vehículos y máquinas (transporte terrestre, aéreo, marítimo, maquinaria industrial) y activos interactivos (trampas, puzles, marcadores de gameplay). El modelo genera HTML con Three.js y un botón de exportación GLB, e incorpora animación en el GLB cuando el activo la requiere.
 
 ## Capacidades
 
-- Generacion de codigo JavaScript con Three.js para construir geometria 3D low-poly a partir de descripciones en lenguaje natural.
-- Produccion de paginas HTML autocontenidas con visor 3D interactivo y boton de exportacion a GLB.
-- Exportacion funcional de assets a GLB, formato compatible con Godot y otros motores y editores 3D.
-- Generacion de animaciones incluidas en el GLB exportado cuando el asset solicitado las requiere; en caso contrario, assets estaticos.
-- Cobertura de 40 dominios de assets: personajes, criaturas, jefes, armas, muebles, entornos, vehiculos, maquinaria, objetos interactivos, trampas, puzzles y decoracion de escenarios.
-- Generacion de texto conversacional heredada del modelo base Qwen3-1.7B.
-- Capacidades multilingues: no documentadas en la model card.
-- Soporte de tool calling, function calling y razonamiento multi-paso en agentes: no documentado para este ajuste fino.
+- Generación de código: produce páginas HTML completas y autónomas con Three.js que renderizan un activo 3D interactivo.
+- Exportación GLB: incluye un botón que descarga el activo en formato GLB listo para importar en Godot u otros editores 3D.
+- Modelado low-poly: genera geometría de baja poligonización con materiales, colores y estructuras coherentes con la descripción.
+- Animación opcional: añade animaciones al GLB exportado cuando el activo lo requiere; en caso contrario, lo genera estático.
+- Generación de texto conversacional: hereda la capacidad de diálogo de Qwen3-1.7B.
+- Soporte de tool calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Prototipado rapido de assets para Godot: el desarrollador describe un asset (por ejemplo, "una mesa de hierro low-poly con remaches y estante inferior") y obtiene un HTML con el modelo renderizado y un GLB listo para importar en el editor, reduciendo el tiempo entre idea y asset jugable.
-- Generacion de decoracion de escenarios: para poblar niveles con props como puestos de mando, campamentos, arboles o muebles, el modelo produce variantes en segundos, adecuado para equipos pequenos sin artistas 3D dedicados.
-- Creacion de assets de personajes y enemigos: descripciones como "un jefe golem de piedra con extremidades rocosas y un nucleo de cristal verde brillante" generan mallas low-poly con animacion exportable, utiles para prototipos de combate.
-- Iteracion en hardware modesto: con el archivo Q8_0 de 1,83 GB, el modelo se ejecuta en CPU o en GPUs de consumo con poca VRAM, lo que permite un bucle de prueba y error rapido sin infraestructura dedicada.
-- Generacion de assets para game jams: en entornos con plazos muy cortos, el modelo cubre la produccion de props, vehiculos y estructuras basicas mientras el equipo se centra en la logica de juego.
-- Educacion y aprendizaje de Three.js: el codigo HTML generado sirve como ejemplo funcional de construccion de geometria, materiales, iluminacion y exportacion GLB, util para quienes aprenden graficos 3D en web.
-- Automatizacion de pipelines de assets: el HTML generado puede guardarse en disco y abrirse en un navegador para exportar el GLB de forma semiautomatica, integrándose en flujos de trabajo que luego procesan el GLB con herramientas de validacion o conversion.
+- Prototipado rápido de activos para Godot: un desarrollador describe un objeto ("mesa de hierro low-poly con remaches y estante inferior") y obtiene un HTML con el activo renderizado y un GLB exportable, reduciendo el tiempo de bloqueo en la fase de preproducción.
+- Creación de escenarios de juego: el modelo genera comandos, campamentos y estructuras completas (puesto de mando en la jungla, campamento goblin helado) con varios elementos combinados, útiles para vestir niveles sin modelador.
+- Generación de props y mobiliario: activos como mostradores de panadería, mesas o electrodomésticos se producen a partir de una frase, adecuados para catálogos de assets o tiendas de complementos.
+- Personajes y enemigos low-poly: jefes como un gólem de piedra con núcleo de cristal, o criaturas y NPCs, para prototipos de gameplay o maquetas de combate.
+- Iteración en hardware modesto: con el GGUF Q8_0 (1,83 GB) el modelo corre en CPU o en GPUs de gama baja, lo que permite probar variantes de un activo en un portátil sin GPU dedicada.
+- Educación y aprendizaje de Three.js: el HTML generado sirve como ejemplo funcional de escena Three.js con exportación GLB, útil para quienes estudian gráficos web.
+- Generación de activos animados: cuando el activo requiere animación, el modelo la incorpora al GLB, lo que sirve para elementos interactivos como trampas o marcadores de gameplay.
 
 ## Benchmarks y rendimiento
 
@@ -56,39 +55,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2 GB con Q8_0 y unos 3,5-4 GB con F16, incluyendo overhead del runtime.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM; el modelo cabe en GTX 1650, RTX 3050, RTX 4060 y superiores. En A100 o H100 el modelo esta sobredimensionado para el hardware, pero funciona sin problema.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada moderna e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: llama.cpp y LM Studio, indicados por el autor; cualquier runtime compatible con Qwen3 y GGUF.
-- Latencia y throughput: no disponibles. El autor senala que la velocidad de generacion depende del hardware, el runtime, la longitud de contexto y la cantidad de codigo que el modelo escriba.
+- VRAM estimada: el GGUF Q8_0 ocupa aproximadamente 1,83 GB; el F16, unos 3,45 GB; el Q4_K_M, unos 1,11 GB. La VRAM necesaria para inferencia debe sumar el espacio del contexto y del runtime.
+- GPU recomendadas: no se especifican modelos concretos; el autor orienta el modelo a CPU o GPUs de baja VRAM.
+- Cabe en GPU de consumo: sí, por tamaño (1,7B de parámetros), en tarjetas con suficiente VRAM para el archivo elegido; el Q8_0 está pensado para CPU o baja VRAM.
+- Opciones de despliegue: llama.cpp y LM Studio (runtimes compatibles con Qwen3); los pesos safetensors FP16 permiten su uso con Transformers.
+- Latencia y throughput: no disponibles; el autor indica que la velocidad de generación depende del hardware, el runtime, la longitud de contexto y la cantidad de código que escriba el modelo.
+- Calidad por cuantización: el autor señala que Q4_K_M produce resultados sustancialmente peores; recomienda F16 o Q8_0, siendo Q8_0 el punto de partida sugerido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CCORE GLB-3D-Coder 1.7B | 1.720.574.976 | No disponible | Generacion de assets 3D Three.js/GLB | Apache 2.0 | GGUF |
-| Qwen3-1.7B (base) | 1.720.574.976 | No disponible | Proposito general, texto y codigo | Apache 2.0 | Safetensors, GGUF |
-| Modelos de generacion 3D dedicados (p. ej. pipelines texto-a-malla) | Variable | No aplica | Generacion de mallas 3D | Variable | Variable |
+| CCORE GLB-3D-Coder 1.7B | 1,72B | no disponible | Generacion de activos 3D GLB con Three.js | Apache 2.0 | GGUF y safetensors en HF |
+| Qwen3-1.7B (base) | 1,72B | no disponible | Proposito general, texto y codigo | Apache 2.0 | HF |
+| Alternativas especializadas en codigo 3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion con alternativas especializadas en generacion 3D no esta disponible en la informacion proporcionada. Frente a su modelo base, la diferencia principal es la especializacion en la tarea de generar HTML con Three.js y exportacion GLB, a costa de un rendimiento general presumiblemente inferior fuera de ese dominio.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de este ajuste con el modelo base ni con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Checkpoint inicial de prueba: el autor advierte que el entrenamiento debia terminar entre el 11 y el 12 de noviembre de 2026 y que los pesos publicados se actualizaran; no deben considerarse definitivos.
-- Fiabilidad de la exportacion: en las pruebas del autor, el modelo suele producir un asset 3D, pero algunos intentos fallan al renderizar o al exportar el GLB y requieren reintento.
-- Ausencia de datos de entrenamiento: no se han publicado tokens, composicion del dataset ni tecnicas de alineacion, lo que impide evaluar sesgos y calidad de forma rigurosa.
-- Contexto no documentado: se desconoce la longitud de contexto soportada, lo que limita la planificacion de prompts largos o conversaciones multi-turno.
-- Idiomas no documentados: la model card no especifica los idiomas soportados; el ajuste fino esta orientado a prompts en ingles segun los ejemplos.
-- Dominio estrecho: fuera de la generacion de assets Three.js/GLB, el rendimiento puede degradarse respecto al modelo base.
-- Riesgo de alucinacion en codigo: el HTML generado puede contener errores de sintaxis o APIs de Three.js incorrectas que impidan el renderizado.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias y el proyecto depende de donaciones para futuras releases.
-- Datos de uso: descargas y likes a cero en el momento de la consulta, sin validacion independiente por parte de la comunidad.
+- Fiabilidad de generación: según el autor, el modelo suele producir un activo 3D, pero algunos intentos fallan al renderizar o al exportar el GLB y requieren reintento.
+- Cuantización: Q4_K_M degrada sustancialmente la calidad; para uso serio se recomienda Q8_0 o F16.
+- Contexto e idiomas: no se documenta la longitud de contexto ni los idiomas soportados; el prompt de sistema recomendado está en inglés.
+- Sesgos: no se documentan sesgos específicos; al heredar Qwen3-1.7B, puede arrastrar los del modelo base.
+- Alucinación: riesgo presente en la generación de código; el HTML o el GLB pueden ser sintácticamente válidos pero geométricamente incorrectos o no exportables.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3-1.7B y de las dependencias generadas (Three.js).
+- Producción: no hay benchmarks publicados ni métricas de latencia; validar el pipeline de exportación antes de integrarlo en flujos automatizados.
+- Actualización de pesos: el autor advierte que los pesos se actualizaron el 13 de noviembre de 2026 y que las copias GGUF descargadas antes deben reemplazarse.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ccore/Qwen3-1.7B-GLB-3D-Coder
-- Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/ccore/ThreeJS-3D-GLB-Assets
-- Pesos Q8_0: https://huggingface.co/ccore/Qwen3-1.7B-GLB-3D-Coder/blob/main/Qwen3-1.7B-GLB-3D-Coder-Q8_0.gguf
-- Pesos F16: https://huggingface.co/ccore/Qwen3-1.7B-GLB-3D-Coder/blob/main/Qwen3-1.7B-GLB-3D-Coder-F16.gguf
-- Apoyo al proyecto (Ko-fi): https://ko-fi.com/ccorecaio
+- Apoyo al proyecto: https://ko-fi.com/ccorecaio

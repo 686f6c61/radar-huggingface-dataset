@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "faza-liza-tamrin/Ammar2-300M-20L-BM-IT-V3-Q8_0",
+  "slug": "faza-liza-tamrin-ammar2-300m-20l-bm-it-v3-q8_0",
+  "author": "faza-liza-tamrin",
+  "url": "https://huggingface.co/faza-liza-tamrin/Ammar2-300M-20L-BM-IT-V3-Q8_0",
+  "created_at": "2026-11-18T10:47:56.000Z",
+  "updated_at": "2026-11-18T10:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ms"
+  ],
+  "tags": [
+    "gguf",
+    "ms",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299395456,
+  "parameters_human": "299.4M",
+  "storage_bytes": 320754592,
+  "storage_human": "321 MB",
+  "context_length": 32768,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

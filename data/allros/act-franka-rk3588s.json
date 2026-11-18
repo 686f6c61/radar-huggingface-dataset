@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "allros/act-franka-rk3588s",
+  "slug": "allros-act-franka-rk3588s",
+  "author": "allros",
+  "url": "https://huggingface.co/allros/act-franka-rk3588s",
+  "created_at": "2026-11-18T08:22:32.000Z",
+  "updated_at": "2026-11-18T08:23:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "rknn",
+    "rk3588",
+    "rk3588s",
+    "robotics",
+    "mujoco",
+    "fp16",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 274281008,
+  "storage_human": "274 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

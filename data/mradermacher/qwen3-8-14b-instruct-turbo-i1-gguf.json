@@ -31,8 +31,6 @@
     "coding",
     "en",
     "zh",
-    "base_model:ewinregirgojr/Qwen3.8-14B-Instruct-Turbo",
-    "base_model:quantized:ewinregirgojr/Qwen3.8-14B-Instruct-Turbo",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -40,7 +38,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 16592,
+  "downloads_30d": 16622,
   "trending_score": 0,
   "parameters": 14719400192,
   "parameters_human": "14.72B",

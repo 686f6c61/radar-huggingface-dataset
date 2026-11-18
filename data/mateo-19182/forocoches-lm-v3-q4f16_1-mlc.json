@@ -20,6 +20,8 @@
     "forocoches",
     "spanish",
     "es",
+    "base_model:mateo-19182/forocoches-lm-v3",
+    "base_model:quantized:mateo-19182/forocoches-lm-v3",
     "license:gemma",
     "region:us"
   ],

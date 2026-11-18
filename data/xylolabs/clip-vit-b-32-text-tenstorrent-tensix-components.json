@@ -5,10 +5,10 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/CLIP-ViT-B-32-Text-Tenstorrent-Tensix-Components",
   "created_at": "2026-11-14T07:08:11.000Z",
-  "updated_at": "2026-11-14T16:45:35.000Z",
+  "updated_at": "2026-11-17T08:36:27.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "zero-shot-image-classification",
   "library": "pytorch",
   "languages": [
     "en"
@@ -23,6 +23,7 @@
     "float32",
     "bfloat16",
     "model-components",
+    "zero-shot-image-classification",
     "en",
     "base_model:openai/clip-vit-base-patch32",
     "base_model:finetune:openai/clip-vit-base-patch32",

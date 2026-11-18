@@ -2,110 +2,106 @@
 
 ## Resumen
 
-Idol-GGUF es una cuantización mixta de ocho bits del modelo Idol, desarrollado por SperiD Labs y distribuido en formato GGUF por el usuario TimeLordRaps. Idol es un modelo de reconstrucción 3D a partir de una única imagen (image-to-3D) que genera una nube de puntos gaussianos tridimensional, empleando una arquitectura de denoiser con decodificador de octree y decodificador gaussiano, junto con un módulo de eliminación de fondo. El paquete cuantizado contiene los cuatro componentes de Idol en un único archivo GGUF, mientras que los codificadores de imagen (DINOv3 y el VAE de FLUX.2-dev) se distribuyen por separado.
+Idol-GGUF es una compilación en formato GGUF de 8 bits del modelo Idol, desarrollado por SperiD Labs, que realiza reconstrucción 3D a partir de una única imagen de entrada. El modelo genera una nube de puntos gaussianos tridimensional (gaussian splatting) a partir de una fotografía, y esta versión cuantizada empaqueta los cuatro componentes del pipeline (denoiser, decodificador de octree, decodificador gaussiano y eliminador de fondo) en un único archivo de 967 MB.
 
-La relevancia de esta ficha radica en que permite ejecutar un pipeline de reconstrucción 3D gaussiana en hardware de consumo: según las mediciones del autor, una solicitud completa en una RTX 4090 con 50 pasos de denoising y 262.144 puntos gaussianos requiere unos 34,6 segundos y picos de asignación de memoria PyTorch de 4,39 GB. El modelo cuenta con 879.302.053 parámetros y se distribuye bajo licencia Apache 2.0, aunque los codificadores externos mantienen sus propias condiciones de acceso y licencia.
+La relevancia de esta ficha radica en que permite ejecutar un pipeline de image-to-3D de casi 880 millones de parámetros en hardware de consumo, algo impensable con los pesos originales en precisión completa. La compilación corre sobre idol.cpp, un runtime Apache-2.0 con servidor local, interfaz de navegador y extractor de malla, lo que facilita su integración en flujos de trabajo de modelado 3D.
 
-El modelo no procesa texto: acepta exclusivamente imágenes como entrada. Para flujos texto-a-3D es necesario configurar por separado un generador de imágenes, como el par Iris-3B y Qwen3-VL-4B que el autor documenta como configuración probada. La cuantización Q8_0 afecta a las matrices elegibles del denoiser, el decodificador de octree, el decodificador gaussiano y el eliminador de fondo, mientras que el resto de tensores conservan otras precisiones.
+El modelo no procesa texto: acepta imágenes y devuelve geometría 3D. Los dos codificadores de imagen que necesita (DINOv3 y el autoencoder de FLUX.2-dev) no están incluidos en este repositorio y deben descargarse por separado aceptando sus respectivas licencias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Denoiser con decodificador de octree y decodificador gaussiano (reconstruccion 3D gaussiana); codificadores de imagen DINOv3 y VAE de FLUX.2-dev separados |
+| Arquitectura | No disponible (pipeline de difusion con denoiser, decodificador de octree y decodificador gaussiano) |
 | Parametros totales | 879.302.053 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo image-to-3D, sin contexto textual) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (modelo de imagen, no de texto) |
 | Tipos de cuantizacion | Q8_0 mixta (422 tensores Q8_0, 125 float16, 1.076 float32, 67 int64) |
-| Idiomas soportados | no disponible (no procesa texto) |
-| Licencia | Apache 2.0 (los codificadores externos tienen licencias separadas) |
-| Formato de pesos | GGUF (`Idol-Q8_0.gguf`, SHA-256 `1f6875979bac8c8aecacf0c698662b7c63ff54ae1b6d7c06755297a05607e983`) |
+| Idiomas soportados | No aplica (modelo image-to-3D, sin entrada de texto) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (`Idol-Q8_0.gguf`, 967.253.440 bytes) |
 
 ## Arquitectura y entrenamiento
 
-Idol es un modelo de reconstruccion de nubes de puntos gaussianas 3D a partir de una imagen. La arquitectura combina un denoiser (con matrices de bloque elegibles cuantizadas con codigos Q8_0 calibrados por covarianza) con un decodificador de octree y un decodificador gaussiano, mas un modulo de eliminacion de fondo. La cuantizacion exportada proviene de la revision upstream `2731c2291fc65a797c5cb627a5e5526fc1490902` y conserva los codificadores de imagen en precision original de forma separada: DINOv3 (facebook/dinov3-vith16plus-pretrain-lvd1689m) y el VAE de FLUX.2-dev.
+Idol es un pipeline de reconstrucción 3D compuesto por cuatro módulos: un denoiser (probablemente de tipo difusión, aunque la arquitectura exacta no se detalla en la información disponible), un decodificador de octree, un decodificador gaussiano y un eliminador de fondo. El modelo base `speridlabs/idol` se distribuye en precisión original y esta versión lo cuantiza a 8 bits en formato GGUF.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La model card del autor de la cuantizacion no detalla el proceso de entrenamiento del modelo base; esa informacion corresponderia a la model card original de speridlabs/idol, que se incluye como `UPSTREAM_README.md` en el repositorio. La innovacion tecnica destacable de esta distribucion es la cuantizacion mixta con calibracion por covarianza en las matrices de bloque del denoiser, que segun las mediciones del autor reduce el error latente relativo al 3,23 % y 6,47 % en dos imagenes de prueba frente a los pesos originales.
+La innovación técnica principal de esta compilación es la calibración por covarianza aplicada a las matrices elegibles del denoiser, que sustituye el redondeo plano de Q8_0. Según el autor, un build idéntico con redondeo plano en 96 matrices del denoiser obtuvo un error latente 0,19 puntos porcentuales superior de media (peor en 23 de 36 casos), aunque sin significación estadística. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Reconstruccion 3D a partir de una unica imagen: genera una nube de puntos gaussianos tridimensional.
-- Control del numero de puntos gaussianos generados (por ejemplo, 262.144 puntos en las pruebas documentadas).
-- Control del numero de pasos de denoising (50 pasos en las pruebas documentadas).
-- Eliminacion de fondo integrada mediante un modulo especifico.
-- Soporte de semilla para reproducibilidad de la generacion.
-- Integracion con codificadores de imagen externos: DINOv3 y VAE de FLUX.2-dev.
-- Flujo texto-a-3D indirecto mediante un generador de imagenes configurado aparte (Iris-3B + Qwen3-VL-4B en la configuracion probada).
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: no es un modelo de lenguaje.
-- No tiene capacidades multilingues: no procesa texto.
+- Reconstrucción 3D a partir de una sola imagen: genera una nube de puntos gaussianos tridimensional.
+- Extracción de malla: el runtime idol.cpp incluye un extractor de malla sin textura a partir de la nube de puntos.
+- Eliminación de fondo: módulo integrado que separa el objeto del fondo de la imagen.
+- Generación controlada por pasos: permite fijar el número de pasos de muestreo (el benchmark usó 50 pasos) y el número de gaussianos (262.144 en las pruebas).
+- Ejecución en servidor local: interfaz web en el puerto 8127 para subir imágenes e inspeccionar resultados.
+- Integración por línea de comandos y API HTTP: scripts `idol_generate.py` y servidor con interfaz HTTP.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües, al no ser un modelo de lenguaje.
+- Puede combinarse con un generador de imágenes externo (probado con Iris-3B y Qwen3-VL-4B) para producir la imagen de entrada.
 
 ## Casos de uso
 
-- Reconstruccion 3D de productos para comercio electronico: a partir de una fotografia de catalogo, el modelo genera una nube de puntos gaussianos que puede renderizarse como vista 3D interactiva del producto, aprovechando el modulo de eliminacion de fondo para aislar el objeto.
-- Digitalizacion de patrimonio y objetos fisicos: fotografiar una pieza y obtener una representacion 3D gaussiana para catalogacion o visualizacion web, con la ventaja de que el pipeline completo cabe en una GPU de consumo de 24 GB.
-- Generacion de assets para videojuegos y entornos 3D: producir nubes de puntos gaussianos a partir de concept art o fotografias de referencia, con control del numero de puntos para ajustar el nivel de detalle al presupuesto de renderizado.
-- Prototipado rapido en diseno industrial: convertir bocetos o renders 2D en representaciones 3D volumétricas para revisiones tempranas, ejecutando el modelo en local sobre una RTX 4090 en torno a 35 segundos por solicitud.
-- Flujos texto-a-3D en local: encadenar un generador de imagenes (Iris-3B + Qwen3-VL-4B) con Idol-GGUF para pasar de una descripcion textual a una nube gaussiana, con todos los componentes bajo licencia Apache 2.0 y ejecucion en una sola estacion de trabajo.
-- Investigacion en reconstruccion 3D: servir como referencia cuantizada para comparar la fidelidad de la reconstruccion frente a los pesos originales de Idol, con errores latentes relativos medidos del 3,23 % y 6,47 % en dos casos documentados.
-- Visualizacion 3D en entornos con memoria limitada: el uso escalonado (staged) reduce el pico de asignacion PyTorch a 3,51 GB con codificadores originales y a 2,31 GB con DINOv3 Q4 de terceros, lo que permite desplegarlo en GPUs con menos VRAM.
+- Prototipado rápido de assets 3D: un artista sube una fotografía de un objeto y obtiene una malla aproximada en segundos, útil para bloquear formas antes de modelar en detalle. La ventana de 967 MB y la ejecución en GPU de consumo lo hacen viable en un portátil con GPU dedicada.
+- Catalogación de productos en e-commerce: a partir de la foto de catálogo se genera una representación 3D para visores web o configuradores, con la ventaja de que el eliminador de fondo integrado evita preprocesar las imágenes.
+- Escaneo 3D de bajo coste en arqueología o patrimonio: fotografías de campo de piezas y objetos se convierten en mallas para documentación preliminar, usando el modo lean para contenedores con 4 GB de RAM.
+- Generación de datasets sintéticos 3D: el pipeline puede producir miles de mallas a partir de imágenes existentes para entrenar otros modelos de visión o de reconstrucción, ejecutándose en modo por etapas para limitar el pico de VRAM a 1.955 MiB.
+- Herramientas de captura para realidad aumentada: la nube gaussiana generada puede alimentar visores de gaussian splatting en aplicaciones móviles o web, usando la malla extraída cuando el visor no soporte splats.
+- Automatización en pipelines de CI/CD de contenido 3D: el servidor HTTP permite encadenar la generación con validadores de malla o conversores de formato, y el archivo único GGUF simplifica el despliegue en contenedores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, ya que el modelo no es un modelo de lenguaje. El autor documenta mediciones de rendimiento y fidelidad en una RTX 4090:
+El autor publica una comparación de fidelidad frente al Idol original en un cohorte fijo de 32 objetos domésticos con tres semillas (96 comparaciones), usando codificadores en precisión original, 50 pasos y 262.144 gaussianos:
 
-| Carga de trabajo | Configuracion | Tiempo | Pico de asignacion PyTorch | Pico de memoria host |
-|---|---|---:|---:|---:|
-| Proceso nuevo, lampara / axolotl | Idol original / codificadores originales | 37,0 / 36,0 s | 4,76 GB | ~6,43 GB |
-| Proceso nuevo, lampara / axolotl | Idol Q8 / codificadores originales | 34,6 / 34,6 s | 4,39 GB | ~6,73 GB |
-| Residentes en caliente, lampara / axolotl | Idol original / codificadores originales | 25,12 / 25,12 s | 5,36 GB | ~6,07 GB |
-| Residentes en caliente, lampara / axolotl | Idol Q8 / codificadores originales | 28,05 / 27,38 s | 4,73 GB | ~6,72 GB |
-| Escalonado en caliente, axolotl | Idol Q8 / codificadores originales | 33,28 s | 3,51 GB | 6,72 GB |
-| Escalonado en caliente, axolotl | Idol Q8 / DINOv3 Q4 de terceros y VAE original de FLUX.2 | 30,92 s | 2,31 GB | 5,42 GB |
-| Lanzamiento en navegador, dos ejecuciones | Iris-3B Q4 y Qwen3-VL-4B Q4, luego Idol Q8 / codificadores originales | 81,68 s; 85,08 s | no medido de extremo a extremo | no medido de extremo a extremo |
+| Medición | Media | Mediana | Peor caso observado |
+|---|---:|---:|---:|
+| Distancia media de malla / diagonal del bounding box original | 0,124% | 0,089% | 1,715% |
+| F1 de malla dentro del 0,1% de la diagonal | 68,49% | 71,51% | 5,24% |
+| F1 de malla dentro del 0,5% de la diagonal | 96,74% | 98,92% | 24,78% |
+| Error de color de primer plano en vistas aproximadas | 2,22% | 1,68% | 28,59% |
+| Intersección sobre unión de silueta en vistas aproximadas | 98,63% | 99,38% | 64,70% |
 
-Fidelidad frente a los pesos originales de Idol (50 pasos, 262.144 puntos, codificadores en precision original, modelos residentes en GPU, guiado por lotes y rutas fusionadas): error latente relativo del 3,23 % para la lampara y del 6,47 % para el axolotl. Son medidas de concordancia, no de precision 3D contra verdad de referencia. En tres vistas diagnosticas ortograficas fijas del axolotl, la cuantizacion Q8 calibrada mostro menor error de color en primer plano que una candidata Q8 sin calibrar, y mejoro el solapamiento de silueta en dos de las tres vistas.
+El peor caso fue "Lego Friends Mia" con semilla 2026. Una sonda post-hoc encontró 1,715% de distancia media de malla en la repetición fusionada, 1,395% reutilizando la imagen preparada original y 0,0378% cuando se dieron los latentes originales a los decodificadores de 8 bits, lo que apunta a los decodificadores como posible origen, aunque el propio autor advierte que es un caso seleccionado y no prueba una causa general. Estas métricas miden acuerdo con el Idol original, no precisión 3D contra ground-truth.
 
 ## Requisitos de hardware
 
-- VRAM estimada: pico de asignacion PyTorch de 4,39 GB con Idol Q8 y codificadores originales en modo de proceso nuevo; 4,73 GB en modo residente en caliente; 3,51 GB en modo escalonado con codificadores originales; 2,31 GB en modo escalonado con DINOv3 Q4 de terceros.
-- GPU recomendada segun las pruebas del autor: NVIDIA GeForce RTX 4090 (24.564 MiB de memoria fisica), con PyTorch 2.10.0, CUDA 12.8 y `triton-windows` 3.5.0.post21 en Windows.
-- Cabe en GPU de consumo: si, al menos en RTX 4090; el autor no documenta pruebas en GPUs de gama inferior, por lo que no se puede confirmar su viabilidad en tarjetas con menos VRAM.
-- Opciones de despliegue: runtime `idol.cpp` (https://github.com/TimeLordRaps/idol.cpp) como runtime soportado. La compatibilidad con ComfyUI-GGUF no esta establecida. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
-- Latencia y throughput: 34,6 s por solicitud en proceso nuevo y 27,38-28,05 s en modo residente en caliente con Idol Q8; 30,92-33,28 s en modo escalonado. El flujo completo texto-a-3D via navegador tardo 81,68 s y 85,08 s en dos ejecuciones. Son ejecuciones individuales y no establecen una distribucion de latencia.
-- Memoria host: pico de espacio de trabajo del orden de 5,42-6,73 GB segun configuracion.
-- Los codificadores de imagen requieren autenticacion en Hugging Face y aceptacion de sus terminos por separado.
+- VRAM en modo por etapas: pico de 1.955 MiB de memoria gráfica asignada por PyTorch (2.754 MiB para el proceso completo con un límite de asignador de 2,5 GiB).
+- VRAM en modo residente: 4,4 a 4,9 GB con todos los modelos cargados en memoria gráfica.
+- Modo lean: mantiene los modelos en disco en lugar de en memoria host; en un contenedor limitado a 4 GB de RAM completó dos generaciones donde el modo por etapas fue terminado por el sistema.
+- GPU recomendadas: no se especifican modelos concretos; por los requisitos de VRAM, cabe en GPU de consumo con 6 GB o más en modo por etapas y con 8 GB o más en modo residente.
+- Despliegue: runtime idol.cpp (servidor local, CLI y API HTTP). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este pipeline.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Requiere descargar aparte los codificadores DINOv3 y el autoencoder de FLUX.2-dev, con acceso restringido y aceptación de términos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Entrada | Salida | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Idol-GGUF (esta ficha) | 879.302.053 | Imagen | Nube de puntos gaussianos 3D | Apache 2.0 (codificadores aparte) | GGUF Q8_0 mixta | Cuantizacion de Idol; runtime idol.cpp |
-| Idol (speridlabs/idol) | 879.302.053 | Imagen | Nube de puntos gaussianos 3D | Apache 2.0 | no disponible | Pesos originales; referencia de fidelidad |
-| DINOv3 (facebook/dinov3-vith16plus-pretrain-lvd1689m) | no disponible | Imagen | Representaciones visuales | licencia propia de Meta | no disponible | Codificador de imagen usado por Idol, no un modelo image-to-3D |
-| FLUX.2-dev (VAE) | no disponible | Imagen | Latentes | licencia propia de Black Forest Labs | no disponible | Componente VAE usado por Idol, no un modelo image-to-3D |
-
-No se dispone de informacion sobre otros modelos image-to-3D comparables en la documentacion proporcionada; la comparativa se limita a los componentes y al modelo base citados por el autor.
+| Modelo | Parámetros | Formato | Licencia | Notas |
+|---|---|---|---|---|
+| Idol-GGUF (este) | 879 M | GGUF Q8_0 | Apache-2.0 | Cuantización 8 bits; requiere codificadores externos |
+| Idol original (speridlabs/idol) | 879 M | Precisión original | No disponible | Referencia de calidad; mayor huella de memoria |
+| Alternativas de image-to-3D | No disponible | No disponible | No disponible | No se han identificado comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- El modelo acepta exclusivamente imagenes, no texto; requiere un generador de imagenes externo para flujos texto-a-3D.
-- Los codificadores de imagen (DINOv3 y VAE de FLUX.2-dev) se distribuyen por separado, con sus propias licencias y terminos de acceso, y requieren autenticacion en Hugging Face. No estan cubiertos por la licencia Apache 2.0 de Idol.
-- Las mediciones de fidelidad (3,23 % y 6,47 % de error latente relativo) se basan en dos imagenes y una semilla; no establecen el comportamiento general del modelo.
-- El uso de DINOv3 Q4 de terceros es un resultado de compatibilidad experimental, no una recomendacion de calidad: el latente difirio un 34,17 % en norma euclidea relativa respecto a la misma ejecucion con el codificador DINOv3 original.
-- Las mediciones de tiempo y memoria corresponden a ejecuciones individuales en Windows con RTX 4090; las caches del sistema operativo podian estar calientes y la diferencia de tiempos no establece causalidad.
-- La memoria asignada por PyTorch no incluye la memoria reservada no usada, el contexto grafico, el generador Iris ejecutado por separado ni otros procesos; la tabla no establece la memoria grafica minima requerida.
-- La generacion de imagen e Idol se ejecutan secuencialmente, por lo que sus picos de memoria separados no deben sumarse; el limite configurado de 16 GiB del runner de imagenes es un presupuesto, no un pico medido.
-- La compatibilidad con ComfyUI-GGUF no esta establecida.
-- No se dispone de informacion sobre sesgos, riesgo de alucinacion en el sentido linguistico (no aplica) ni limitaciones de idioma (el modelo no procesa texto).
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
+- Las métricas publicadas miden acuerdo con el Idol original, no exactitud 3D real; el cohorte de 32 objetos es un conjunto de desafío seleccionado, no una muestra aleatoria.
+- El suavizado y el filtrado de componentes pueden ocultar defectos de malla; las vistas aproximadas no son el renderizado upstream.
+- El peor caso observado (1,715% de distancia media de malla) muestra que la degradación por cuantización puede ser notable en objetos concretos.
+- Los codificadores de imagen (DINOv3 y autoencoder de FLUX.2-dev) no están incluidos y tienen licencias separadas de la Apache-2.0 del repositorio; su acceso es restringido.
+- No procesa texto: necesita un generador de imágenes externo si la entrada no es una fotografía.
+- No se establece si Idol fue entrenado con imágenes generadas por Iris; la página del proyecto muestra imágenes de Iris como entradas, pero no lo confirma.
+- Los nombres de archivo que muestra la interfaz son etiquetas, no verificación independiente de los pesos.
+- No hay información sobre sesgos, alucinaciones geométricas sistemáticas ni comportamiento en dominios distintos a objetos domésticos.
+- El modo residente requiere 4,4 a 4,9 GB de VRAM; en GPUs con menos de 6 GB hay que usar el modo por etapas o el modo lean.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/TimeLordRaps/Idol-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TimeLordRaps/Idol-GGUF
 - Modelo base: https://huggingface.co/speridlabs/idol
 - Runtime idol.cpp: https://github.com/TimeLordRaps/idol.cpp
+- Instrucciones de instalación: https://github.com/TimeLordRaps/idol.cpp#install
+- Protocolo de benchmark completo: https://github.com/TimeLordRaps/idol.cpp/blob/main/docs/benchmark-gso32.md
+- Sonda del peor caso: https://github.com/TimeLordRaps/idol.cpp/blob/main/docs/benchmark-gso32.md#post-hoc-worst-case-probe
+- Página del proyecto Idol: https://speridlabs.com/research/idol
 - Codificador DINOv3: https://huggingface.co/facebook/dinov3-vith16plus-pretrain-lvd1689m
-- VAE de FLUX.2-dev: https://huggingface.co/black-forest-labs/FLUX.2-dev
-- Generador de imagenes Iris-3B: https://huggingface.co/speridlabs/iris-3b
+- Autoencoder de FLUX.2-dev: https://huggingface.co/black-forest-labs/FLUX.2-dev
+- Generador Iris-3B: https://huggingface.co/speridlabs/iris-3b
 - Codificador de texto Qwen3-VL-4B: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-GGUF
-- DINOv3 Q4 de terceros (experimental): https://huggingface.co/zisisnotzis/dinov3-gguf
+- Especificación GGUF: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md

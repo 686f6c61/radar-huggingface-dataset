@@ -16,8 +16,8 @@
     "quantized",
     "qwen",
     "mtp",
-    "base_model:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
-    "base_model:quantized:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+    "base_model:llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved",
     "license:apache-2.0",
     "region:us"
   ],

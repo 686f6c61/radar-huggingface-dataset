@@ -2,93 +2,94 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI, publicado en Hugging Face con licencia MIT. Su rasgo diferencial es la compresión agresiva de la caché KV: el autor declara una huella de 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y unas 437 veces menor que la de DeepSeek-V1. Procesa de forma nativa imagenes y texto, y genera texto de forma autorregresiva.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI. Con 552B parámetros en el backbone (763.205.315.794 parámetros totales según los pesos en safetensors) y soporte para contextos de hasta un millón de tokens, el modelo procesa de forma nativa imágenes y texto, y genera texto de manera autorregresiva. Su publicación en Hugging Face con licencia MIT lo convierte en una opción especialmente atractiva para investigación y despliegue comercial sin restricciones de uso.
 
-La arquitectura se denomina Causal Encoder-Decoder (CED): 40 capas de Transformer organizadas en 20 capas de encoder causal seguidas de 20 capas de decoder. La caché KV global del decoder se proyecta desde los estados ocultos finales del encoder en lugar de derivarse de cada capa del decoder, lo que permite activar solo 8B parametros por token en prefill y 16B en decode. El modelo declara soportar contextos de hasta un millon de tokens.
+La innovación central del modelo es la compresión extrema de la caché KV. Mediante una arquitectura Causal Encoder-Decoder (CED), atención dispersa comprimida (CSA2) y caché KV principal en FP4, el modelo reduce el footprint de caché a 890 bytes por token, aproximadamente una cuarta parte del de DeepSeek-V4-Flash y 437 veces menos que DeepSeek-V1. Esto se traduce en costes de inferencia mucho menores para cargas de trabajo con entradas largas, típicas de agentes y pipelines de razonamiento multi-paso.
 
-El modelo se entreno desde cero sobre un corpus multimodal de 45T tokens. El repositorio ocupa 510,3 GB y los pesos safetensors suman 484.619.644.114 parametros (unos 484,6B), una cifra que difiere de los 552B de backbone que menciona la model card. Es relevante ahora porque ataca el cuello de botella economico de las cargas agénticas con entradas muy largas: el coste de prefill y el almacenamiento de la caché KV.
+El modelo activa solo 8B parámetros por token durante la fase de prefill y 16B durante la decodificación, lo que mejora sustancialmente la eficiencia en escenarios con muchas entradas. Incorpora además un modo de esfuerzo de razonamiento controlable (entero de 1 a 100) que permite ajustar el coste de inferencia frente a la precisión, y decodificación especulativa DSpark para acelerar la generación.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) multimodal con arquitectura Causal Encoder-Decoder (CED); 40 capas (20 de encoder causal + 20 de decoder) |
-| Parametros totales | 552B declarados como backbone en la model card; 484.619.644.114 (484,6B) contabilizados en los pesos safetensors publicados |
-| Parametros activos | 8B por token en prefill, 16B por token en decode; 6 expertos enrutados activados por token de 384, mas 1 experto compartido |
-| Longitud de contexto | Hasta 1.000.000 tokens (atencion dispersa entrenada a 64K y extendida a 1M durante el preentrenamiento) |
-| Tipos de cuantizacion | FP8 / 8-bit segun las etiquetas del repositorio; cache KV principal en FP4 (formato E2M1, una escala E4M3 por cada 16 canales). No se menciona GGUF |
-| Idiomas soportados | no disponible |
+| Arquitectura | Causal Encoder-Decoder (CED), Transformer de 40 capas (20 encoder causal + 20 decoder), MoE con 1 experto compartido y 384 expertos enrutados por capa |
+| Parámetros totales | 763.205.315.794 (backbone de 552B; 196B adicionales en memoria condicional Engram) |
+| Parámetros activos | 8B por token en prefill; 16B por token en decode; 6 expertos enrutados activados por token |
+| Longitud de contexto | Hasta 1.000.000 tokens |
+| Tipos de cuantización | 8-bit, FP8 (etiquetas del repo); caché KV principal en FP4 (formato E2M1 con una escala E4M3 por cada 16 canales) |
+| Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | Safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El bloque central es CED, un Transformer de 40 capas que separa encoder causal y decoder. La caché KV global del decoder se proyecta desde los estados finales del encoder, en lugar de calcularse capa a capa, lo que reduce el coste de prefill. Sobre esa base se anaden varios mecanismos: SWA Bounded Replay reconstruye los estados KV de ventana deslizante que faltan reproduciendo solo los ultimos n_win tokens, evitando persistir esa caché en SSD y bajando la huella persistente a aproximadamente 1/8 de la de DeepSeek-V4-Flash. Compressed Sparse Attention 2 (CSA2) asigna a cada capa de atencion uno de tres modos estaticos (Full, Reindex o Reuse) para compartir la KV principal y las K del indexador entre capas y reutilizar indices Top-K. En el decoder, un Hierarchical Sparse Indexer restringe las capas de indexado posteriores a un conjunto de candidatos construido por la primera capa en modo Full, acotando el coste del indexador independientemente de la longitud del contexto. La caché KV principal en FP4 (E2M1, una escala E4M3 por cada 16 canales) completa el diseno que lleva la huella a 890 bytes por token. Ademas, el modelo incorpora Single-Pass mHC (mezcla del flujo residual con el kernel Mega-mHC), Engram conditional memory (196B parametros de acceso disperso mediante lookup por token) y DSpark, una decodificacion especulativa con generacion de borradores semiautorregresiva y verificacion programada por confianza.
+DeepSeek-V4.1-Flash emplea una arquitectura Causal Encoder-Decoder (CED) en la que la caché KV global del decoder se proyecta desde los estados ocultos finales del encoder, en lugar de derivarse de los estados ocultos de cada capa del decoder. Esta decisión permite reducir drásticamente el número de parámetros activos por token. La técnica SWA Bounded Replay reconstruye los estados KV de ventana deslizante (SWA) faltantes replicando únicamente los *n*_win tokens más recientes, evitando persistir la caché SWA en SSD y reduciendo el footprint de caché KV persistente a aproximadamente 1/8 del de DeepSeek-V4-Flash.
 
-Para la parte multimodal, un encoder de vision DeepSeek-ViT entrenado desde cero con 2D-RoPE y downsampling de pixel-unshuffle 3x3, junto con un proyector MLP de dos capas, convierte las imagenes en embeddings visuales que se procesan conjuntamente con los embeddings de texto desde el inicio del preentrenamiento del modelo de lenguaje. El preentrenamiento se hizo desde cero sobre 45T tokens multimodales; el postentrenamiento sigue el paradigma SFT, RL y destilacion on-policy (OPD) sin modificaciones algoritmicas, con el esfuerzo puesto en la sintesis automatizada a gran escala de tareas y entornos agénticos. El modelo expone un ajuste de esfuerzo de razonamiento continuo y controlable (entero de 1 a 100) que intercambia coste de inferencia por precision.
+La atención utiliza Compressed Sparse Attention 2 (CSA2), que asigna a cada capa de atención uno de tres modos estáticos (Full, Reindex o Reuse) para compartir la KV principal y la K del indexador entre capas y reutilizar los índices de atención dispersa Top-K. En el decoder, un indexador disperso jerárquico restringe las capas de indexación posteriores a un pool de candidatos construido por la primera capa en modo Full, acotando el coste del indexador independientemente de la longitud del contexto. El modelo incorpora además Single-Pass mHC (mezcla de flujo residual con kernel Mega-mHC), memoria condicional Engram de 196B parámetros con acceso disperso por lookup de tokens, y decodificación especulativa DSpark con verificación programada por confianza. El encoder de visión DeepSeek-ViT se entrena desde cero con 2D-RoPE y downsampling pixel-unshuffle 3×3, y un proyector MLP de dos capas convierte las imágenes en embeddings visuales procesados conjuntamente con el texto desde el inicio del preentrenamiento.
+
+El preentrenamiento se realizó desde cero sobre un corpus multimodal de 45 billones (45T) de tokens, con atención dispersa entrenada a una longitud de secuencia de 64K y extensión de contexto a 1M tokens a los 34T tokens. El post-entrenamiento sigue el paradigma estándar SFT → RL → destilación on-policy (OPD) sin modificaciones algorítmicas; los cambios sustantivos se concentran en el pipeline de datos, con síntesis automatizada a gran escala de tareas y entornos de agente y escalado progresivo de datos, tareas y rollouts.
 
 ## Capacidades
 
-- Generacion de texto autorregresiva a partir de entradas de texto, de imagen o mixtas (pipeline image-text-to-text).
-- Comprension multimodal nativa de imagenes: el encoder DeepSeek-ViT genera embeddings visuales que se integran con el texto durante todo el preentrenamiento, no como un adaptador posterior.
-- Contexto largo de hasta 1.000.000 tokens, con atencion dispersa entrenada especificamente para sostenerlo.
-- Razonamiento con esfuerzo controlable: el ajuste entero de 1 a 100 permite regular el coste de inferencia frente a la precision segun la tarea.
-- Cargas agénticas y de multiples pasos: el postentrenamiento se centro en la sintesis de tareas y entornos agénticos, y la model card presenta benchmarks de rendimiento agéntico.
-- Decodificacion especulativa integrada (DSpark) que acelera la generacion mediante borradores semiautorregresivos y verificacion programada por confianza.
-- Eficiencia de prefill especialmente orientada a entradas largas, con solo 8B parametros activos por token en esa fase.
-- La model card no detalla capacidades especificas de codigo, matematicas ni una lista de idiomas soportados, por lo que no se pueden confirmar. No se menciona soporte explicito de tool calling o function calling.
+- Generación de texto autorregresiva con razonamiento multi-paso.
+- Procesamiento nativo de imágenes y texto (pipeline image-text-to-text).
+- Modo de esfuerzo de razonamiento controlable mediante un entero de 1 a 100 que intercambia coste de inferencia por precisión.
+- Soporte de tool calling y function calling (etiqueta `endpoints_compatible`).
+- Capacidades de agente: entrenamiento con síntesis automatizada de tareas y entornos de agente.
+- Contexto ultralargo de hasta 1M tokens, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
+- Decodificación especulativa DSpark para acelerar la generación.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de repositorios o corpus documentales completos: con hasta 1M tokens de contexto, el modelo puede ingerir un repositorio de codigo, un expediente o un conjunto de informes en una sola pasada sin fragmentar en trozos, manteniendo coherencia global.
-- Agentes autonomos de multiples pasos: el coste de prefill de 8B parametros activos por token hace viable mantener conversaciones agénticas largas con muchas iteraciones de contexto sin disparar el gasto de computo.
-- Atencion al cliente multi-turno de larga duracion: la ventana de 1M tokens permite conservar el historial completo de una interaccion o de varias sesiones relacionadas sin resumen intermedio.
-- Procesamiento de documentos escaneados y formularios con imagen y texto combinados: al ser nativamente multimodal, puede leer capturas, diagramas o fotos junto al texto asociado en la misma peticion.
-- RAG de gran escala con coste de memoria contenido: la caché KV de 890 bytes por token reduce drasticamente el almacenamiento necesario para servir muchas sesiones concurrentes con contextos largos, lo que abarata el despliegue en produccion.
-- Analisis de trazas, logs o telemetria de sistemas extensos: la combinacion de contexto de 1M tokens y prefill barato permite volcar ventanas amplias de eventos y pedir correlaciones o diagnostico en una unica llamada.
-- Extraccion estructurada sobre lotes masivos de documentos: el ajuste de esfuerzo de razonamiento (1-100) permite bajar el coste por documento en tareas simples y subirlo solo en los casos ambiguos.
+- Agentes autónomos de larga duración: el modelo puede mantener estado a lo largo de sesiones extensas gracias al contexto de 1M tokens y a su entrenamiento específico con entornos de agente sintetizados, lo que permite planificación multi-paso con historial completo.
+- Análisis de documentos extensos con imágenes: informes, contratos o papers con figuras y tablas pueden procesarse en una sola pasada al combinar entrada multimodal y contexto de un millón de tokens.
+- Generación de código en producción: el soporte de tool calling permite integrarlo en pipelines de CI/CD para revisión automática, generación de tests o corrección de errores con acceso a herramientas externas.
+- Atención al cliente automatizada: conversaciones multi-turno con contexto largo y adjuntos de imagen (capturas, facturas) se gestionan sin truncar el historial, reduciendo la pérdida de contexto.
+- Razonamiento con coste controlable: el parámetro de esfuerzo de razonamiento (1-100) permite desplegar el mismo modelo en tareas de baja latencia (esfuerzo bajo) y en tareas de alta precisión (esfuerzo alto) sin cambiar de checkpoint.
+- Procesamiento de imágenes en pipelines de datos: extracción de información estructurada de documentos escaneados o capturas mediante el encoder DeepSeek-ViT integrado.
+- Investigación sobre eficiencia de inferencia: la arquitectura CED y la caché KV en FP4 con 890 bytes por token sirven como referencia para estudiar compresión de caché y atención dispersa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card anuncia una seccion de resultados de evaluacion para el modelo base, con imagenes de rendimiento agéntico y de tamano de cache KV por token, pero los valores concretos no aparecen en el contenido proporcionado. La unica cifra comparativa disponible es la reduccion de cache KV: aproximadamente 4 veces menor que DeepSeek-V4-Flash y 437 veces menor que DeepSeek-V1.
+La model card menciona una sección de resultados de evaluación para el modelo base, evaluado en el framework interno de DeepSeek bajo ajustes idénticos, considerando equivalentes las puntuaciones con diferencia menor de 0,3. Sin embargo, los valores numéricos concretos no están incluidos en la información disponible.
+
+No se han publicado resultados de benchmarks numéricos en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamano del repositorio: 510,3 GB. Los pesos safetensors suman 484.619.644.114 parametros, lo que a 8 bits (FP8) se corresponde con unos 485 GB, coherente con el tamano del repo.
-- VRAM estimada: por debajo de unos 500-510 GB solo para pesos en la precision publicada, mas cache KV y activaciones. La cache KV consume 890 bytes por token, es decir, unos 890 MB por cada millon de tokens de contexto por secuencia.
-- GPU recomendadas: se necesita un despliegue multi-GPU. Ocho H100 de 80 GB (640 GB) u ocho A100 de 80 GB serian el punto de partida razonable; en configuraciones mas ajustadas habria que recurrir a cuantizacion adicional (fp8 ya esta contemplado en las etiquetas).
-- No cabe en GPU de consumo: ni una RTX 4090 (24 GB) ni una RTX 5090 podrian alojar el modelo completo, ni siquiera repartiendo por varios equipos domesticos.
-- Opciones de despliegue: la etiqueta endpoints_compatible y la libreria transformers indican compatibilidad con el stack de Hugging Face; es esperable el uso de motores de servido multi-GPU como vLLM o TGI. La model card menciona kernels propios (Mega-mHC) y decodificacion especulativa DSpark, lo que sugiere soporte en implementaciones especificas. No se confirma soporte en llama.cpp ni Ollama.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: con 763.205.315.794 parámetros totales, en FP8 se requieren aproximadamente 763 GB solo para pesos; en 8-bit, un valor similar. La cuantización a 4-bit no está listada entre los tipos soportados en el repo.
+- GPU recomendadas: no disponible en la información proporcionada. Por el tamaño del modelo, no cabe en una sola GPU consumer; requiere despliegue multi-GPU o multi-nodo.
+- Cabe en GPU consumer: no. El tamaño del repo (510,4 GB) y los parámetros totales superan con creces la VRAM de cualquier GPU consumer actual.
+- Opciones de despliegue: transformers (librería indicada), endpoints compatibles (`endpoints_compatible`), Azure y SageMaker (etiquetas `deploy:azure`, `deploy:sagemaker`). No se confirman vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponibles. La model card destaca la reducción de coste en prefill (8B activos) y decode (16B activos) y la caché KV de 890 bytes por token como ventajas de eficiencia, pero sin cifras de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Contexto | Cache KV por token | Parametros | Licencia | Disponibilidad |
+| Modelo | Parámetros totales | Contexto | Caché KV por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | Hasta 1M tokens | 890 bytes (referencia) | 552B backbone declarados / 484,6B en safetensors | MIT | Publico en Hugging Face |
-| DeepSeek-V4-Flash | no disponible | Aprox. 4 veces mayor que V4.1-Flash (unos 3.560 bytes por token, calculado a partir del factor declarado) | no disponible | no disponible | no disponible en la informacion proporcionada |
-| DeepSeek-V1 | no disponible | Aprox. 437 veces mayor que V4.1-Flash (unos 389 KB por token, calculado a partir del factor declarado) | no disponible | no disponible | no disponible en la informacion proporcionada |
+| DeepSeek-V4.1-Flash | 763B (552B backbone + 196B Engram) | 1M tokens | 890 bytes (FP4) | MIT | Hugging Face, Azure, SageMaker |
+| DeepSeek-V4-Flash | No disponible | No disponible | ~4× mayor que V4.1-Flash | No disponible | No disponible |
+| DeepSeek-V1 | No disponible | No disponible | ~437× mayor que V4.1-Flash | No disponible | No disponible |
 
-No se dispone de datos de parametros, contexto ni rendimiento de los modelos comparados en la informacion proporcionada; la unica magnitud comparable es el tamano de la cache KV por token.
+La información disponible solo permite comparar con generaciones anteriores de DeepSeek en términos de caché KV. No se dispone de datos de parámetros, contexto ni licencia de DeepSeek-V4-Flash ni DeepSeek-V1 en las fuentes consultadas, por lo que la comparativa completa con alternativas de la misma categoría no está disponible.
 
 ## Limitaciones y advertencias
 
-- El tamano (484,6B parametros reales, 552B declarados de backbone) obliga a infraestructura multi-GPU; no es desplegable en hardware de consumo.
-- Existe una discrepancia entre los 552B de backbone que declara la model card y los 484.619.644.114 parametros contabilizados en los safetensors. Conviene verificar cual es la cifra aplicable al despliegue.
-- No se especifican los idiomas soportados ni el reparto de datos por idioma, por lo que no se puede garantizar un rendimiento uniforme fuera del ingles o el chino.
-- No hay resultados de benchmarks publicados en la informacion disponible, lo que impide validar las afirmaciones de rendimiento agéntico de forma independiente.
-- La cache KV en FP4 (E2M1 con una escala E4M3 por cada 16 canales) es una cuantizacion agresiva que puede introducir perdida de precision en contextos muy largos; conviene medir el impacto en tareas sensibles al detalle.
-- El uso de indices de atencion dispersa y modos estaticos por capa (Full, Reindex, Reuse) implica que el modelo depende de implementaciones de kernel especificas; el rendimiento puede degradarse en runtimes que no las soporten.
-- La model card no documenta sesgos conocidos ni evaluaciones de seguridad.
-- Riesgo de alucinacion inherente a los modelos generativos, agravado en tareas de contexto muy largo donde la informacion relevante queda diluida.
-- La licencia MIT permite uso comercial, pero conviene revisar el repositorio completo y los terminos del proveedor antes de un despliegue en produccion.
-- El modelo acumula 658 likes pero solo 6 descargas, lo que sugiere poca validacion practica por parte de la comunidad hasta la fecha.
+- Sesgos conocidos: no disponibles en la información proporcionada; no se documentan evaluaciones de sesgo ni de seguridad.
+- Riesgo de alucinación: no cuantificado en las fuentes; como modelo generativo autorregresivo, es susceptible de alucinación, especialmente en tareas de razonamiento abierto.
+- Limitaciones de contexto o idioma: aunque soporta hasta 1M tokens, el entrenamiento con atención dispersa se realizó inicialmente a 64K y se extendió a 1M a los 34T tokens; el rendimiento en el extremo superior del contexto puede degradarse. Los idiomas soportados no están documentados.
+- Restricciones de licencia: licencia MIT, que permite uso comercial sin restricciones significativas, pero conviene verificar el archivo LICENSE del repositorio para confirmar los términos exactos.
+- Caveats para producción: el tamaño del modelo (510,4 GB de repo) exige infraestructura multi-GPU; la cuantización a 4-bit no está listada como soportada para pesos (solo la caché KV usa FP4). El modo de esfuerzo de razonamiento requiere ajuste empírico por caso de uso. No se han publicado cifras de latencia ni throughput que permitan dimensionar SLA.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- Informe tecnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
-- Sitio oficial de DeepSeek: https://deepseek.com/en/index.html
-- Interfaz de chat de DeepSeek: https://chat.deepseek.com/
-- Repositorio GitHub de DeepSeek-V2 (referenciado en la model card para recursos graficos): https://github.com/deepseek-ai/DeepSeek-V2
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Informe técnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
+- Página principal de DeepSeek: https://www.deepseek.com/
+- Chat de DeepSeek: https://chat.deepseek.com/
+- API Platform (ES): https://www.deepseek.com/platform/
+- API Platform (EN): https://www.deepseek.com/en/platform/
+- Panel de la plataforma: https://platform.deepseek.com/dashboard
+- Organización en Hugging Face: https://huggingface.co/deepseek-ai
+- Twitter/X: https://twitter.com/deepseek_ai

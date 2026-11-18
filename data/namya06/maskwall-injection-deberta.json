@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "namya06/maskwall-injection-deberta",
+  "slug": "namya06-maskwall-injection-deberta",
+  "author": "namya06",
+  "url": "https://huggingface.co/namya06/maskwall-injection-deberta",
+  "created_at": "2026-11-18T10:55:26.000Z",
+  "updated_at": "2026-11-18T11:04:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "prompt-injection",
+    "jailbreak",
+    "int8",
+    "benchmark",
+    "text-classification",
+    "en",
+    "base_model:microsoft/deberta-v3-small",
+    "base_model:quantized:microsoft/deberta-v3-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161159866,
+  "storage_human": "161 MB",
+  "context_length": null,
+  "base_model": "microsoft/deberta-v3-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

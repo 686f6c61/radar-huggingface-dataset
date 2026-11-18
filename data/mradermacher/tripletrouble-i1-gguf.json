@@ -29,8 +29,6 @@
     "model-soup",
     "en",
     "zh",
-    "base_model:OliviaRossi/TripleTrouble",
-    "base_model:quantized:OliviaRossi/TripleTrouble",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -38,7 +36,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1830,
+  "downloads_30d": 1824,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

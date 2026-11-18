@@ -2,104 +2,111 @@
 
 ## Resumen
 
-El modelo `Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF` es un archivo GGUF experimental creado por `ayozhee`, que combina pesos cuantizados del modelo base `ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF` con matrices seleccionadas del modelo abliterado `orcarouter/Qwen3.8-27B-Uncensored`. El objetivo es reducir el comportamiento de rechazo del modelo original manteniendo un tamaño compacto de 9,61 GB, lo que permite ejecutarlo en una GPU de 12 GB de VRAM. Se trata del primer lanzamiento open source de su autor y está etiquetado como experimental.
+Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF es una cuantización GGUF experimental de tipo híbrido construida por el usuario ayozhee a partir de dos linajes: los pesos cuantizados GSQ-RCO IQ2_S-MTP de ISTA-DASLab y los pesos BF16 "abliterated" (sin comportamiento de rechazo) de orcarouter. El resultado es un modelo de 27.320.697.856 parámetros (27,3B) en formato GGUF de precisión mixta, pensado para inferencia local en GPUs de gama media, y probado explícitamente en una RTX 3060 de 12 GB.
 
-El modelo subyacente es `Qwen3.8-27B`, un modelo denso multimodal nativo de 27.320.697.856 parámetros desarrollado por el equipo Qwen de Alibaba, orientado a tareas de programación, flujos de trabajo agénticos y automatización de oficina. La versión GGUF de `ayozhee` se enfoca en generación de texto y razonamiento, e incluye soporte para multi-token prediction (MTP) y decodificación especulativa. Es relevante porque ofrece una alternativa de inferencia local para un modelo de 27.000 millones de parámetros en hardware de consumo, con un tamaño razonable y rendimiento útil para prototipado.
+La relevancia del modelo no está en una arquitectura nueva, sino en el método de construcción: sustitución selectiva de 131 matrices de pesos sobre un total de 866 tensores, preservando byte a byte los 735 restantes, el tokenizador y los metadatos del GSQ original. Incluye decodificación especulativa mediante MTP (multi-token prediction) y una asignación de tipos IQ2_S heredada del mapa de GSQ con su imatrix oficial.
+
+Es un artefacto de primera publicación de su autor, con licencia Apache 2.0 pero con advertencias claras sobre su carácter experimental. Los datos de rendimiento publicados son mediciones locales sobre subconjuntos reducidos de benchmarks, no resultados de evaluaciones completas, por lo que deben interpretarse como referencias de uso y no como comparaciones canónicas.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso, multimodal nativo en su origen (modelo base Qwen3.8-27B). El archivo GGUF se usa para generación de texto. |
-| Parametros totales | 27.320.697.856 (27,32 mil millones) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible. En las pruebas del autor se configuraron límites de 16.384 y 66.560 tokens, pero el máximo nativo no está documentado. |
-| Tipos de cuantizacion | IQ2_S-MTP (GGUF, cuantización mixta siguiendo el mapa de asignación de tipos de GSQ) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con reemplazos provenientes de tensores BF16 en formato safetensors) |
+| Arquitectura | Transformer derivado de Qwen3.8, con 48 proyecciones de salida de atención lineal y MTP (multi-token prediction) |
+| Parámetros totales | 27.320.697.856 (27,3B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 16.384 tokens configurados en las pruebas cortas; 66.560 configurados en la prueba de conversación larga |
+| Tipos de cuantización | GGUF de precisión mixta según el mapa de asignación IQ2_S de GSQ; variantes IQ2_S-MTP (9,61 GB / 8,95 GiB) e IQ3_S-MTP (12,12 GB / 11,29 GiB) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (con metadatos y tokenizador heredados de GSQ) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye a partir del archivo `Qwen3.8-27B-GSQ-RCO-IQ2_S-MTP-GGUF` de `ISTA-DASLab`. El autor reemplaza 131 matrices con pesos en BF16 leídos directamente de `orcarouter/Qwen3.8-27B-Uncensored`: una matriz de embedding de entrada, 64 matrices `mlp.down_proj`, 48 matrices `linear_attn.out_proj`, 16 matrices `self_attn.o_proj` y 2 matrices de proyección de salida del MTP. El resto de tensores (735 de 866), los metadatos de runtime y el tokenizador se conservan byte a byte. No se realiza ningún entrenamiento adicional, ni RLHF ni DPO: la modificación es una mezcla selectiva de pesos sin promediado.
+El modelo no ha sido entrenado desde cero: es una cuantización híbrida por sustitución selectiva de tensores. Se parte del checkpoint GSQ-RCO IQ2_S-MTP de ISTA-DASLab y se reemplazan 131 matrices por pesos leídos directamente de los SafeTensors BF16 de orcarouter/Qwen3.8-27B-Uncensored. Los 735 tensores restantes, los metadatos de runtime y el tokenizador se conservan sin modificar del GSQ original. No hay promediado de pesos entre ambos linajes. Las matrices sustituidas se cuantizaron desde BF16 con los kernels `ggml` de llama.cpp, aplicando el mapa de tipos de GSQ y su imatrix oficial (estadísticas de activación del modelo Qwen base). Las 48 proyecciones de salida de atención lineal recibieron además el reordenamiento de columnas exigido por el conversor.
 
-Los reemplazos se cuantizan en BF16 con los kernels `ggml` de llama.cpp, siguiendo el mapa de asignación de tipos de GSQ y utilizando la imatrix oficial (estadísticas de activación del modelo Qwen base). Las 48 proyecciones de salida de la atención lineal reciben además el reordenamiento de columnas requerido por el conversor. El resultado es un híbrido que conserva el tamaño y la estructura del GGUF original de GSQ. El modelo base de Alibaba, Qwen3.8-27B, es un transformer denso multimodal con capacidad de razonamiento y mecanismo de multi-token prediction, lo que permite la decodificación especulativa integrada en el archivo cuantizado.
+La innovación técnica principal es la inclusión de MTP para decodificación especulativa, con tasas de aceptación medidas del 68,1 % en prompts cortos y del 55,93 % en una conversación real de 30,6K tokens. El componente "abliterated" procede de OrcaRouter y consiste en una modificación de pesos orientada a reducir el comportamiento de rechazo; el autor no documenta el proceso de abliteración en sí, solo su procedencia. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno, con soporte de herramienta (`tool calling`) según las pruebas de desarrollo web del autor.
-- Razonamiento en modo `thinking` con presupuesto configurable; el autor recomienda 2.048 tokens para tareas que requieren formato estricto.
-- Capacidades matemáticas: 30/30 aciertos en GSM8K en un subconjunto de 30 ítems.
-- Generación de código y tareas de programación: 30/30 en HumanEval normalizado (25/30 en puntuación bruta antes de normalización).
-- Seguimiento de instrucciones: 27/30 en IFEval con presupuesto de 1.024, y 30/30 al aumentar el presupuesto a 2.048.
-- Decodificación especulativa con MTP incluido; tasa de aceptación observada de 68,1% en consignas cortas y 55,93% en conversación larga.
-- El modelo original Qwen3.8-27B es multimodal nativo, pero no está confirmado que el GGUF conserve las capacidades de visión; las pruebas documentadas se centran en texto.
+- Generación de texto conversacional multi-turno, con soporte de historial largo (probado con 30,6K tokens de contexto inicial).
+- Razonamiento con presupuesto configurable: el autor reporta que un presupuesto de razonamiento de 1.024 tokens es suficiente para la mayoría de tareas, y que 2.048 es un punto de partida útil para tareas con formato estricto.
+- Generación de código: supera pruebas de HumanEval y continuó una tarea real de desarrollo web con 15/15 comprobaciones funcionales tras el segundo turno.
+- Matemáticas: resolución de problemas tipo GSM8K.
+- Seguimiento de instrucciones con restricciones de formato (IFEval).
+- Tool calling / function calling: la prueba de conversación real incluyó llamadas a herramientas con un límite de seis generaciones por turno.
+- Decodificación especulativa vía MTP, con aceptación medida entre el 55,93 % y el 68,1 %.
+- Comportamiento reducido de rechazo por herencia del linaje abliterated de OrcaRouter.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente de programación local: el modelo puede generar y completar código con soporte de tool calling, y su tamaño compacto permite ejecutarlo en una estación de trabajo con RTX 3060. En la prueba real de desarrollo web, mantuvo un historial de 30,6K tokens y completó 15/15 comprobaciones funcionales.
-- Razonamiento matemático en educación: con una puntuación perfecta en el subconjunto de GSM8K y modo de razonamiento ajustable, puede usarse como tutor interactivo para resolver problemas paso a paso.
-- Chatbots de atención al cliente con contexto largo: su configuración probada de 66.560 tokens y su capacidad de manejar historiales de 30K tokens permiten gestionar conversaciones extensas y derivar a un agente humano cuando sea necesario.
-- Agentes autónomos y flujos de trabajo con herramientas: la integración de tool calling y la capacidad de mantener múltiples turnos hacen posible conectar el modelo a APIs internas o bases de conocimiento.
-- Automatización de oficina: el modelo base Qwen3.8-27B está diseñado para tareas de ofimática; este GGUF puede generar texto estructurado, correos electrónicos o informes, aunque sin las capacidades multimodales del original.
-- Revisión de código en pipelines de CI/CD: al ejecutarse como llama-server y admitir decodificación especulativa con MTP, puede integrarse en flujos de trabajo para sugerir correcciones o revisar cambios de código en entornos con GPU limitada.
+- Asistente de desarrollo web local: el modelo mantuvo una conversación de 30,6K tokens de historial sobre un sitio web y completó dos peticiones nuevas con 15/15 comprobaciones funcionales, lo que lo hace adecuado para iterar sobre bases de código existentes en un equipo con una sola GPU de 12 GB.
+- Automatización de tareas de codificación con tool calling: al soportar llamadas a funciones y un límite configurable de generaciones por turno, puede integrarse en pipelines que invocan herramientas externas (ejecución de tests, lectura de ficheros) sin salir de la ventana de contexto configurada.
+- Evaluación de modelos sin censura en investigación: el linaje abliterated permite estudiar el comportamiento del modelo ante prompts que normalmente disparan rechazos, útil para análisis de seguridad y alineación en entornos controlados.
+- Inferencia en hardware de gama media: con 9,61 GB en IQ2_S-MTP cabe en una RTX 3060 de 12 GB con offload completo de GPU, alcanzando 35,65 tokens/s de decodificación en prompts cortos, lo que habilita prototipado local sin depender de la nube.
+- Procesamiento de documentos largos: la ventana configurable hasta 66.560 tokens permite resumir o extraer información de conversaciones y documentos extensos, aunque con degradación esperable de velocidad (29,45 tokens/s medidos a 30,6K tokens).
+- Generación de código asistida con verificación: la combinación de HumanEval resuelto y decodificación especulativa MTP permite usarlo como generador en bucles de test-fix donde la latencia por token importa.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 facilita su incorporación en productos comerciales, sujeta a las advertencias sobre su carácter experimental.
 
 ## Benchmarks y rendimiento
 
-El autor realizó un screening con los 30 primeros ítems de cada suite de BenchKit, con una generación por ítem y configuraciones idénticas para ambos modelos. Estos no son benchmarks oficiales completos.
+Resultados publicados por el autor sobre los primeros 30 ítems de cada suite de BenchKit, una generación por ítem, temperatura 0, razonamiento `medium`, presupuesto de razonamiento 1.024 y límite total de generación 4.096, con ngram + MTP:
 
-| Test | Este híbrido | GSQ IQ2_S-MTP original |
-|---|---|---|
+| Test | Este híbrido | GSQ IQ2_S-MTP |
+|---|---:|---:|
 | IFEval (seguimiento de instrucciones) | 27/30 | 29/30 |
 | GSM8K (matemáticas) | 30/30 | 29/30 |
-| HumanEval (normalizado) | 30/30 | 30/30 |
+| HumanEval (extracción normalizada) | 30/30 | 30/30 |
+| HumanEval (puntuación bruta) | 25/30 | 21/30 |
 
-Notas: HumanEval en puntuación bruta fue 25/30 para el híbrido y 21/30 para GSQ. Tras aplicar la misma normalización de indentación, ambos alcanzaron 30/30. Los dos fallos de IFEval del híbrido se resolvieron al aumentar el presupuesto de razonamiento a 2.048.
+Rendimiento medido en RTX 3060 12 GB:
 
-Rendimiento medido en una RTX 3060 12 GB, según los registros de llama-server:
-
-| Medición | Híbrido (prompts cortos) | GSQ (prompts cortos) | Híbrido (conversación real, 30K de historial) |
-|---|---|---|---|
-| Decode | 35,65 tokens/s | 34,79 tokens/s | 29,45 tokens/s |
-| Prefill | 179,6 tokens/s | 177,9 tokens/s | 350,6 tokens/s |
-| Aceptación de decodificación especulativa | 68,1% | 69,1% | 55,93% |
+| Medición | Prompts cortos: híbrido | Prompts cortos: GSQ | Conversación real: híbrido |
+|---|---:|---:|---:|
+| Decodificación | 35,65 tok/s | 34,79 tok/s | 29,45 tok/s |
+| Prefill | 179,6 tok/s | 177,9 tok/s | 350,6 tok/s |
+| Aceptación de decodificación especulativa | 68,1 % | 69,1 % | 55,93 % |
+| Prompt/historial inicial | 64–400 tokens | 64–400 tokens | 30.611 tokens |
 | Límite de contexto configurado | 16.384 | 16.384 | 66.560 |
 
-El pico de VRAM en la conversación larga fue de 11.536 MiB, con 578 MiB libres. Estas mediciones son referencias del autor y no han sido verificadas de forma independiente.
+En la conversación real se generaron 9.564 tokens con offload completo de GPU, reutilización de prefijo y ngram-mod + MTP; el pico de VRAM fue de 11.536 MiB con 578 MiB mínimos libres. Las cifras de prompts cortos cubren 90 peticiones por modelo. El autor advierte que la diferencia de velocidad entre ambos modelos en el cribado está dentro de la incertidumbre de una ejecución no repetida. No se han publicado resultados de benchmarks completos ni comparaciones con modelos de referencia de la industria.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 11,5 GB (pico medido en RTX 3060 12 GB). El archivo de pesos ocupa 9,61 GB, más KV cache y buffers.
-- GPU recomendada: RTX 3060 12 GB o superior. También es viable usar una RTX 4070 Ti / 4080 con más margen.
-- Puede ejecutarse en GPUs de consumo con 12 GB o más. En GPUs de 8 GB no se puede cargar completamente en VRAM; se requeriría offload parcial a CPU.
-- Opciones de despliegue: llama.cpp (llama-server), Ollama (importando el GGUF), LM Studio, o cualquier frontend compatible con GGUF.
-- Latencia observada: 29–35 tokens/s de decode y 179–350 tokens/s de prefill en la GPU de referencia, con cuantización IQ2_S y MTP activado.
+- VRAM estimada: aproximadamente 9,61 GB para IQ2_S-MTP y 12,12 GB para IQ3_S-MTP, según los tamaños de fichero publicados.
+- GPU recomendadas: RTX 3060 12 GB (probada por el autor con offload completo), y por capacidad de VRAM, RTX 4070 Ti / 4080 / 4090, A100 y H100 para mayor throughput.
+- Cabe en GPU de consumo: sí, en IQ2_S-MTP en tarjetas de 12 GB; IQ3_S-MTP requiere al menos 12 GB y deja poco margen para el contexto (el pico medido con IQ2_S fue de 11.536 MiB).
+- Opciones de despliegue: llama.cpp / `llama-server` (usado en las pruebas), y por compatibilidad GGUF, también Ollama y otros runners basados en llama.cpp. Compatible con endpoints según los tags del repositorio.
+- Latencia y throughput: 35,65 tok/s de decodificación y 179,6 tok/s de prefill en prompts cortos; 29,45 tok/s de decodificación y 350,6 tok/s de prefill con 30,6K tokens de contexto, en RTX 3060 12 GB.
+- Contexto: 16.384 tokens configurados en las pruebas cortas; 66.560 en la prueba larga, con impacto directo en el consumo de VRAM.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Cuantización | Tamaño | Contexto | Licencia |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Notas |
 |---|---|---|---|---|---|
-| `ayozhee/Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF` | 27,32 B | IQ2_S-MTP | 9,61 GB | No disponible | Apache-2.0 |
-| `ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF` | 27,32 B | IQ2_S-MTP | 9,61 GB | No disponible | No disponible |
-| `orcarouter/Qwen3.8-27B-Uncensored` | 27,32 B | BF16 | No disponible | No disponible | No disponible |
-| `Qwen3.8 27b Obliterated` (local-ai-zone) | 27,32 B | No disponible | 30,1 GB | No disponible | No disponible |
+| Qwen3.8-27B-Abliterated-GSQ-Orca (este) | 27,3B | hasta 66.560 configurado | GGUF IQ2_S / IQ3_S con MTP | Apache 2.0 | Híbrido por sustitución selectiva, abliterated |
+| ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF | 27,3B | no disponible | GGUF IQ2_S-MTP | no disponible | Base cuantizada de referencia; 29/30 IFEval, 29/30 GSM8K en el cribado |
+| orcarouter/Qwen3.8-27B-Uncensored | 27,3B | no disponible | BF16 SafeTensors | no disponible | Fuente de los pesos abliterated; sin datos de rendimiento publicados aquí |
 
-La diferencia principal entre el primer y el segundo modelo es el proceso de ablación parcial de 131 matrices. El tercero es el modelo BF16 original abliterado usado como fuente de los reemplazos. El cuarto es otra publicación de un GGUF abliterado con mayor tamaño y número de descargas. No se dispone de benchmarks comparativos externos entre estos modelos.
+No se dispone de datos de benchmarks completos ni de comparaciones con modelos de otros linajes, por lo que la comparativa se limita a los tres artefactos relacionados documentados en la información disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo es experimental y corresponde al primer lanzamiento de su autor; no ha sido auditado ni probado en producción.
-- La cuantización IQ2_S es extremadamente agresiva y puede producir pérdida de calidad, errores sutiles y mayor tasa de alucinación en comparación con cuantizaciones de mayor precisión.
-- El proceso de abliteración reduce las negativas y el rechazo, pero también puede eliminar sesgos de seguridad y generar contenido que un modelo alineado rechazaría.
-- Las capacidades multimodales del modelo Qwen3.8 original no están confirmadas en este GGUF; la documentación solo cubre generación de texto.
-- Los benchmarks presentados son subconjuntos de 30 ítems, no evaluaciones exhaustivas, y sus resultados dependen de la configuración y el evaluador de BenchKit.
-- La longitud de contexto nativa no está documentada. Los límites de 16.384 y 66.560 tokens son valores de configuración utilizados en pruebas, no garantías del modelo.
-- Para usos en producción, se requiere validación adicional en las tareas concretas y una revisión cuidadosa de las respuestas generadas.
+- Modelo experimental y primera publicación de su autor: no ha pasado por un proceso de validación amplio ni por evaluaciones completas de benchmarks.
+- Los resultados de benchmarks provienen de subconjuntos de 30 ítems con evaluadores propios de BenchKit, cuyos criterios difieren de las ejecuciones publicadas estándar; no son directamente comparables con cifras oficiales.
+- El comportamiento abliterated reduce los rechazos, lo que implica un mayor riesgo de generar contenido inapropiado, dañino o inexacto sin las salvaguardas habituales; no se recomienda su despliegue directo en producción orientada a usuarios finales sin filtros adicionales.
+- Riesgo de alucinación no cuantificado: no se han publicado mediciones de factualidad ni de tasa de alucinación.
+- En tareas de formato estricto, el autor observó fallos de IFEval causados por texto de deliberación que se filtra en la respuesta final; se mitiga subiendo el presupuesto de razonamiento a 2.048 tokens, pero no se elimina por completo.
+- El contexto máximo práctico está limitado por la VRAM: con 12 GB, el pico medido a 30,6K tokens dejó solo 578 MiB libres.
+- Idiomas soportados no documentados; no hay garantías sobre calidad multilingüe.
+- La licencia Apache 2.0 es permisiva para uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre la procedencia y condiciones de los linajes base (GSQ y OrcaRouter), cuyas licencias no se detallan en la información disponible.
+- Las mediciones de rendimiento provienen de una única ejecución no repetida; el propio autor señala que las diferencias observadas están dentro de la incertidumbre.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/ayozhee/Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF)
-- [Repositorio de Qwen3.8-27B (Alibaba)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
-- [Modelo base GSQ-RCO en Hugging Face](https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF)
-- [Modelo OrcaRouter Uncensored en Hugging Face](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored)
-- [Página de Qwen3.8 27b Obliterated en local-ai-zone](https://local-ai-zone.github.io/models/qwen3-8-27b-obliterated.html)
+- [Hugging Face: ayozhee/Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF](https://huggingface.co/ayozhee/Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF)
+- [Modelo base cuantizado: ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF](https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF)
+- [Modelo base abliterated: orcarouter/Qwen3.8-27B-Uncensored](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored)
+- BenchKit (commit `037ec91`): referencia citada por el autor; no se proporciona URL en la información disponible.

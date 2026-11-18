@@ -2,102 +2,107 @@
 
 ## Resumen
 
-`audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF` es una conversión a GGUF del checkpoint comunitario `s-zaizen/DeepSeek-V4.1-Flash-Abliterated`, que a su vez deriva de `deepseek-ai/DeepSeek-V4.1-Flash` tras aplicarle una ablación de rechazos con la herramienta Heretic (tasa de palabras clave de rechazo reportada: 97/100 en el original frente a 24/100 en el checkpoint abliterado). El archivo lo publica el usuario `audreyt` y está pensado exclusivamente para el runtime DwarfStar `ds4` de antirez, no como GGUF de propósito general.
+DeepSeek-V4.1-Flash-Abliterated-GGUF es una coleccion de cuantizaciones GGUF de pesos comunitarios derivados de DeepSeek-V4.1-Flash-1017, publicada por el usuario audreyt. No se trata de un modelo original ni de un GGUF generico: los ficheros emplean un layout de tensores, una mezcla de cuantizacion y un empaquetado de tablas Engram especificos de DwarfStar (ds4), la herramienta de inferencia del propio autor. El modelo base es un checkpoint de DeepSeek-V4.1-Flash-1017, un modelo de arquitectura MoE con aproximadamente 754.638 millones de parametros totales segun los metadatos del repositorio.
 
-Se trata de una cuantización agresiva de tipo Q2 sobre una arquitectura de mezcla de expertos (MoE): los expertos enrutados usan `IQ2_XXS` en las proyecciones gate/up y `Q2_K` en down, mientras que atención, expertos compartidos, proyecciones y salida se mantienen en `Q8_0`/F16. Las filas Engram en FP8 se empaquetan sin pérdida al final del archivo y se leen desde disco bajo demanda, por lo que nunca residen en memoria.
+La particularidad de esta publicacion es doble. Por un lado, incorpora la edicion "abliterated" (eliminacion de la direccion de rechazo en la proyeccion de salida de atencion `attn.wo_b` en los bloques 2 a 39, con fuerza 2,5) heredada de pqhaz/DeepSeek-V4.1-Flash-1017-heretic, lo que reduce drasticamente las respuestas de rechazo del modelo. Por otro lado, el autor ofrece cuatro variantes con distintas cuantizaciones (IQ1_S, Q2 con y sin imatrix) disenadas para ejecutarse en un Mac de 128 GB de memoria unificada, con las tablas Engram (unos 189 GiB) empaquetadas al final del fichero y leidas desde disco bajo demanda.
 
-Su relevancia es doble: por un lado permite ejecutar un MoE de gran tamaño en un único Mac de 128 GB mediante streaming desde SSD (`--ssd-streaming`), con 152 GiB de pesos principales; por otro, sirve como caso de estudio medible de dos transformaciones simultáneas, la ablación de alineación y la cuantización extrema, con una auditoría de layout de 1046 tensores superada y una comparación de NLL frente al Q2 oficial.
+El interes actual de esta ficha radica en que documenta un caso poco habitual: un modelo de escala frontier (mas de 750.000 millones de parametros) llevado a un formato que cabe, con trucos de streaming y empaquetado, en hardware de consumo de gama alta (Apple Silicon). La licencia es MIT, lo que facilita su uso, aunque las implicaciones de la abliteracion y la dependencia de un runtime no estandar son factores criticos a evaluar antes de llevarlo a produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) con expertos enrutados y compartidos, más tablas Engram en FP8; transformer subyacente no detallado en la información disponible |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible (el modelo es MoE, pero no se publica el número de parámetros activos) |
-| Longitud de contexto | no disponible; el ejemplo de uso emplea `--ctx 32768` y la evaluación de calidad se hizo con contexto 4096 |
-| Tipos de cuantización | `IQ2_XXS` (gate/up de expertos enrutados), `Q2_K` (down de expertos enrutados), `Q8_0`/F16 (atención, expertos compartidos, proyecciones y salida), FP8 (filas Engram, empaquetadas sin pérdida) |
-| Idiomas soportados | no disponibles |
-| Licencia | MIT (pesos base © DeepSeek, retenida a través del checkpoint de origen; el tooling se rige por la licencia del repositorio ds4) |
-| Formato de pesos | GGUF con layout específico de DwarfStar ds4 (no compatible con GGUF genérico) |
+| Arquitectura | MoE (mixture of experts) con tablas Engram; layout de tensores especifico de ds4 (DwarfStar) |
+| Parametros totales | 754.638.867.584 (segun metadatos de safetensors del repositorio) |
+| Parametros activos | no disponible |
+| Longitud de contexto | Hasta 262.144 tokens probados en asignacion de texto (128 GB M5 Max); 393.216 rechazado por el limite de 112 GiB del runtime; 131.072 con sidecar de vision |
+| Tipos de cuantizacion | IQ1_S (expertos), Q8_0 (dense y `attn_output_b`), Q6_K/Q5_K (dense de Unsloth), Q2 (variantes imatrix y bootstrap), IQ2_XXS (algunos tensores de Unsloth) |
+| Idiomas soportados | no disponible (se mencionan pruebas de humo en ingles y chino tradicional) |
+| Licencia | MIT |
+| Formato de pesos | GGUF (no generico; especifico de ds4) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una mezcla de expertos con expertos enrutados y expertos compartidos. La conversión la realiza `deepseek41_quantize.py` del repositorio DwarfStar `ds4`, usando los cuantizadores en C del proyecto con `--quant q2` y una calibración por bootstrap de "weight-energy" en lugar de una matriz de importancia (imatrix). El reparto de precisión es deliberadamente asimétrico: se sacrifican los expertos enrutados a 2 bits (`IQ2_XXS` en gate/up, `Q2_K` en down) y se preservan en `Q8_0`/F16 las partes sensibles (atención, expertos compartidos, proyecciones y capa de salida). Las filas Engram en FP8 se empaquetan de forma sin pérdida al final del archivo y se leen de disco cuando se necesitan.
+El modelo subyacente es un transformer con capas de mezcla de expertos (MoE), del que se conoce el numero total de parametros (unos 754.600 millones) pero no el numero de parametros activos por token ni el detalle de la composicion del dataset de entrenamiento original, que no se documenta en la informacion disponible. La innovacion estructural mas relevante que si aparece descrita es la existencia de tablas Engram (dos tablas de aproximadamente 189 GiB en total) que no residen en memoria, sino que se leen desde disco segun se necesitan, lo que exige un SSD local rapido.
 
-Sobre el entrenamiento original de `DeepSeek-V4.1-Flash` no se aporta información en los materiales disponibles (número de tokens, composición del dataset, fases de RLHF/DPO: no disponible). La transformación documentada es la ablación de rechazos con Heretic aplicada por `s-zaizen`, que reduce la tasa de palabras clave de rechazo de 97/100 a 24/100. La auditoría de layout `deepseek41_validate_gguf.py` da PASS con 1046 tensores. Respecto a la calibración, el autor indica que el stock usa imatrix y que todavía no existe una imatrix para V4.1, por lo que esta versión usa bootstrap; anuncia que podría seguir una v2 calibrada con imatrix.
+Sobre el proceso de cuantizacion, el autor detalla la receta de la variante Q1: los expertos MoE enrutados se toman de unsloth/DeepSeek-V4.1-Flash-1017-GGUF en UD-IQ1_S (88 tensores tal cual y 32 requantizados de IQ2_XXS a IQ1_S con la imatrix de Unsloth para ajustarse al presupuesto de 112 GiB de ds4); los pesos dense provienen de Unsloth (principalmente Q6_K/Q5_K); la proyeccion de salida de atencion `attn_output_b` se cuantiza en Q8_0 con los 38 tensores abliterados del checkpoint de pqhaz; y el resto, incluidas las tablas Engram, procede del Q2 nativo de ds4 sin cambios. La variante Maya-XS copia 120 tensores IQ1_S de expertos y 339 tensores Q8 dense sin recuantizar. No se documenta en la informacion disponible si hubo RLHF, DPO u otra fase de alineamiento posterior al entrenamiento base.
 
 ## Capacidades
 
-- Generación de texto autoregresiva sobre una arquitectura MoE con expertos enrutados y compartidos: es la única capacidad explícitamente deducible de la receta de cuantización.
-- Memoria asociativa tipo Engram: el checkpoint incluye tablas Engram en FP8 empaquetadas al final del archivo y leídas bajo demanda desde disco.
-- Comportamiento "abliterated": la tasa de rechazos medida baja de 97/100 a 24/100, de modo que el modelo responde a peticiones que el checkpoint original rechazaría.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles en la información proporcionada.
-- Ajuste fino o reentrenamiento: no contemplado; el archivo es de solo inferencia en el runtime ds4.
+- Generacion de texto y continuacion de secuencias con contexto muy largo (hasta 262.144 tokens en pruebas de asignacion de texto).
+- Razonamiento y conocimiento general heredados del checkpoint DeepSeek-V4.1-Flash-1017, aunque no se aportan benchmarks de capacidades especificos de esta version.
+- Capacidad multimodal: la variante Q1 conserva los metadatos del 1017 original, por lo que empareja con el sidecar de vision `DeepSeek-V4.1-Flash-1017-Vision.gguf`. En las pruebas con vision y candor steering se valido una asignacion de contexto de 131.072 tokens.
+- Recuperacion de informacion en contexto largo: el autor reporta que un prompt de 10.237 tokens recupero correctamente su codigo de verificacion.
+- Soporte multilingue parcial verificado: pruebas de humo en ingles y chino tradicional.
+- Modo abliterated: eliminacion de la direccion de rechazo en 38 tensores, con reduccion de rechazos en held-out con razonamiento de 92/100 a 1/100 segun pqhaz, y KL de 0,136 en prompts inofensivos.
+- No se documenta soporte de tool calling, function calling ni capacidades de agente multi-paso en la informacion disponible.
 
 ## Casos de uso
 
-- Ejecución local de un MoE de gran tamaño en hardware de gama alta de consumo: con 152 GiB de pesos principales y las tablas Engram en disco, el modelo está diseñado para correr en un Mac de 128 GB usando `--ssd-streaming`, lo que permite trabajar sin GPU de datacenter.
-- Investigación sobre alineación y ablación: comparar la tasa de rechazo (97/100 frente a 24/100) y cuantificar el coste en calidad mediante la NLL sobre continuaciones oficiales permite estudiar qué se pierde al eliminar la alineación de rechazo.
-- Estudio de cuantización extrema: el archivo es un caso medible de Q2 con mezcla `IQ2_XXS`/`Q2_K` frente a una referencia Q2 calibrada con imatrix, útil para investigar el impacto de la calibración (bootstrap frente a imatrix) en modelos MoE.
-- Generación de texto sin dependencia de API externa: al ejecutarse con un runtime local y pesos en disco, encaja en flujos donde no se puede enviar contenido a servicios en la nube por motivos de confidencialidad o conectividad.
-- Red-teaming y auditoría de seguridad en entorno controlado: un modelo con solo 24/100 de tasa de rechazo sirve para generar casos adversarios y evaluar clasificadores y filtros de moderación externos.
-- Prototipado de procesamiento de textos largos: el ejemplo documentado con `--ctx 32768` permite experimentar con documentos extensos, asumiendo que el streaming desde SSD condiciona la latencia.
-- Reproducibilidad de conversiones GGUF personalizadas: el par de scripts `deepseek41_quantize.py` y `deepseek41_validate_gguf.py` sirve como plantilla para auditar layouts de tensores en conversiones propias (1046 tensores verificados).
-- Evaluación de memoria externa tipo Engram: el empaquetado FP8 no residente es un caso práctico para medir el equilibrio entre tamaño en disco y latencia de recuperación.
+- Investigacion de seguridad y alineamiento: el modelo permite estudiar el efecto de la abliteracion sobre la direccion de rechazo en un modelo de escala frontier, comparando el checkpoint heretic con el original y midiendo el impacto en capacidades y sesgos.
+- Evaluacion de cuantizaciones extremas: investigadores pueden usar las variantes IQ1_S y Q2 para medir la perdida de calidad (NLL, acuerdo con API) frente a pesos de mayor precision en un modelo de 754.000 millones de parametros.
+- Inferencia local en Apple Silicon: con un Mac de 128 GB de memoria unificada (por ejemplo, M5 Max), la variante Maya-XS o Q1 mantiene unos 107 GiB de pesos residentes y permite ejecutar el modelo con contexto de hasta 262.144 tokens sin streaming de SSD.
+- Prototipado de asistentes con contexto largo: el modelo puede procesar prompts de decenas de miles de tokens y recuperar informacion concreta (probado con un prompt de 10.237 tokens), util para resumir documentacion tecnica extensa o analizar repositorios completos.
+- Experimentacion multimodal: emparejado con el sidecar de vision, permite probar flujos de imagen y texto con contexto de 131.072 tokens, adecuado para prototipos de analisis de documentos escaneados.
+- Generacion creativa sin restricciones: la eliminacion del comportamiento de rechazo lo hace util para entornos de escritura creativa o roleplay donde el modelo original declinaria peticiones, siempre que se apliquen las salvaguardas externas oportunas.
+- Benchmarking de runtimes: sirve como caso de prueba exigente para ds4 y para comparar estrategias de empaquetado de tablas Engram y streaming desde disco frente a otras soluciones de inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El único dato de calidad aportado es una comparación de log-verosimilitud negativa (NLL) sobre 100 continuaciones oficiales de V4.1 Flash (`deepseek-v4.1-flash-20260910-general`, contexto 4096, streaming desde SSD), con el mismo harness para ambos archivos:
+El autor publica mediciones de calidad y velocidad de la variante Maya-XS frente a la Q1 antigua, sobre 100 fixtures de continuacion de septiembre de V4.1 (6.160 tokens). Las fixtures permiten una comparacion relativa, no una medicion de fidelidad frente a los pesos originales 1017; el fichero Maya abliterado no ha pasado la suite completa de evaluacion.
 
-| Archivo | NLL media | NLL mediana | Coincidencia en el primer token | Acuerdo top-1 |
-|---|---:|---:|---:|---:|
-| Stock `DeepSeek-V4.1-Flash-Q2` | 0.346 | 0.313 | 78/100 | 0.901 |
-| Este archivo (`Abliterated` Q2) | 0.395 | 0.395 | 71/100 | 0.888 |
+| Medicion | Q1 antigua | Maya-XS |
+|---|---:|---:|
+| NLL medio del token objetivo (menor es mejor) | 0,620629834 | 0,519230866 |
+| Acuerdo con el token superior de la API | 83,72% | 86,58% |
+| Decodificacion emparejada en ingles (tokens/s) | 37,99 | 37,24 |
 
-El autor atribuye el coste de +0,05 NLL a la propia ablación y a la calibración por bootstrap (el stock usa imatrix y todavía no existe una imatrix para V4.1), y señala que no hay colapso de calidad porque el acuerdo top-1 es casi idéntico.
+El NLL fue un 16,34% inferior en Maya-XS. El acuerdo con la API excluye el caso_047 por un desajuste de tokenizer documentado (99 casos alineados). La velocidad corresponde a una muestra unica de CLI en un M5 Max de 128 GB, sin vision.
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Tamaño de los pesos principales del archivo Q2: 152 GiB; las tablas Engram permanecen en disco y no son residentes.
-- Descarga de los pesos stock Q2 de la receta ds4: 341 GiB (referencia comparativa del autor).
-- Configuración probada: un Mac de 128 GB usando `--ssd-streaming`, lo que implica que parte de los pesos se leen desde disco durante la inferencia y se requiere un SSD local rápido.
-- VRAM para GPU: no disponible; no se documenta ejecución en CUDA ni en otras aceleradoras.
-- Viabilidad en GPU de consumo: no hay datos publicados; 152 GiB de pesos exceden la memoria de cualquier GPU de consumo y el layout está atado a ds4, por lo que no se puede asumir su carga en una RTX 4090 y similares.
-- Opciones de despliegue: runtime DwarfStar ds4 (repositorio `antirez/ds4`, sección `docs/MODELS.md`, entrada "DeepSeek V4.1 Flash"). El autor advierte explícitamente de que no es un GGUF general: el layout de tensores, la mezcla de cuantización y el empaquetado Engram son específicos de ds4, por lo que llama.cpp, Ollama, vLLM o TGI no están soportados según la información disponible.
-- Latencia y throughput: no disponibles; al depender del streaming desde SSD, el rendimiento estará condicionado por la velocidad del disco local.
+- VRAM o memoria unificada estimada: la variante Maya-XS y la Q1 mantienen unos 107,35 GiB y ~106 GiB de pesos residentes respectivamente, totalmente residentes en Metal con un Mac de 128 GB. Las variantes Q2 (imatrix y bootstrap) requieren 152 GiB residentes y necesitan `--ssd-streaming`.
+- GPU recomendadas: Apple Silicon de 128 GB de memoria unificada (M5 Max validado por el autor). No se documentan pruebas en A100, H100 ni RTX 4090; por el tamano de los pesos, no caben en GPUs de consumo convencionales sin streaming agresivo.
+- Cabe en consumer GPU: no en el sentido habitual; solo en equipos Apple Silicon de 128 GB con el runtime ds4 y, en las variantes Q2, con streaming desde SSD.
+- Almacenamiento: los cuatro ficheros pesan 365.713.686.528 bytes cada uno; la velocidad del SSD local es critica porque las tablas Engram (unos 189 GiB) se leen desde disco bajo demanda.
+- Opciones de despliegue: exclusivamente ds4 (DwarfStar), en concreto audreyt/ds4 en el commit `0dff39f91721bcf3472813c6d2bebf9353df2a1a` o posterior para Q8 embeddings, pesos de compresor e indexador; `d3f4cd6` o posterior para IQ1_S y Q5_K/Q6_K dense. No es compatible con llama.cpp, vLLM, Ollama ni TGI.
+- Ajustes: es necesario elevar el limite de memoria cableada de Metal. La asignacion de 393.216 tokens fue rechazada por el limite de 112 GiB del runtime.
+- Latencia y throughput: aproximadamente 37,2 tokens/s en decodificacion emparejada en ingles sobre un M5 Max de 128 GB (sin vision), segun la muestra del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Cuantización | Calibración | NLL media | Coincidencia primer token | Acuerdo top-1 | Licencia | Formato |
-|---|---|---:|---:|---:|---:|---|---|
-| `audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF` (este) | `IQ2_XXS` + `Q2_K` + `Q8_0`/F16 | Bootstrap peso-energía | 0.395 | 71/100 | 0.888 | MIT | GGUF para ds4 |
-| Stock `DeepSeek-V4.1-Flash-Q2` | Q2 (receta oficial ds4) | imatrix | 0.346 | 78/100 | 0.901 | MIT | GGUF para ds4 |
-| `s-zaizen/DeepSeek-V4.1-Flash-Abliterated` | no disponible (checkpoint de origen) | no aplica | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros totales | Contexto | Formato | Licencia | Disponibilidad |
+|---|---:|---|---|---|---|
+| audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF (esta ficha) | ~754.600 M | 262.144 (probado en asignacion) | GGUF especifico de ds4 | MIT | Hugging Face, ~67.700 descargas |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | no disponible | no disponible | safetensors u otros formatos nativos | no disponible en la informacion | Hugging Face |
+| pqhaz/DeepSeek-V4.1-Flash-1017-heretic | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF | no disponible | no disponible | GGUF | no disponible en la informacion | Hugging Face |
+| unsloth/DeepSeek-V4.1-Flash-1017-GGUF | no disponible | no disponible | GGUF (UD-IQ1_S, IQ2_XXS, etc.) | no disponible en la informacion | Hugging Face |
 
-No se dispone de datos de otros modelos comparables de la misma categoría (mismo tamaño o misma tarea) en la información proporcionada.
+La comparacion cuantitativa de rendimiento entre estas variantes no esta disponible mas alla de las mediciones NLL y acuerdo con la API entre Q1 antigua y Maya-XS incluidas en la model card.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación: inherente a los modelos generativos; no hay benchmarks estándar publicados ni evaluación independiente que lo cuantifiquen.
-- Modelo abliterado: la tasa de rechazo cae de 97/100 a 24/100, por lo que puede producir contenido que el checkpoint original rechazaría. Requiere moderación externa y revisión de cumplimiento antes de cualquier despliegue con usuarios finales.
-- Pérdida de calidad medible: +0,05 de NLL media y 7 puntos menos de coincidencia en el primer token respecto al Q2 stock, atribuibles a la ablación y a la calibración por bootstrap en lugar de imatrix.
-- Cuantización muy agresiva: los expertos enrutados están a 2 bits (`IQ2_XXS`/`Q2_K`), lo que añade degradación adicional a la ya introducida por la ablación.
-- Portabilidad nula: el layout, la mezcla de cuantización y el empaquetado Engram son específicos de DwarfStar ds4; el propio autor indica que no es un GGUF general, de modo que no se puede cargar en llama.cpp, Ollama, vLLM o TGI según la información disponible.
-- Dependencia de disco: las tablas Engram viven en disco y se leen bajo demanda, lo que exige SSD rápido y penaliza la latencia; sin streaming no cabe en 128 GB.
-- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingüe ni comportamiento por idioma.
-- Contexto: solo se documenta el ejemplo con `--ctx 32768` y la evaluación a 4096; no se publica la ventana máxima del modelo base.
-- Madurez y validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 2026-09-12, sin evidencia de uso en producción ni de terceros.
-- Licencia: los pesos base son © DeepSeek bajo MIT, retenida vía el checkpoint de origen; el tooling de conversión se rige por la licencia del repositorio ds4. Conviene verificar los términos del modelo original antes de un uso comercial, especialmente por el carácter sin censura del resultado.
+- La abliteracion modifica el comportamiento del modelo eliminando la direccion de rechazo; puede producir contenido inapropiado, peligroso o sin filtros, y no se han publicado benchmarks de capacidades que garanticen que el resto del rendimiento se mantiene intacto.
+- El autor reconoce que las fixtures de evaluacion permiten una comparacion relativa y no miden fidelidad frente a los pesos originales 1017; el fichero Maya abliterado no ha pasado la suite completa de evaluacion.
+- Riesgo de alucinacion: no se documenta ningun mecanismo de mitigacion ni evaluacion especifica en la informacion disponible.
+- La cuantizacion IQ1_S y la recuantizacion de tensores ya cuantizados (32 tensores de IQ2_XXS a IQ1_S en la variante Q1) pueden degradar la calidad respecto a los pesos originales.
+- Dependencia critica de un runtime no estandar: los GGUF no son genericos y solo funcionan con ds4, una herramienta mantenida por el propio autor; no hay soporte en llama.cpp, vLLM, Ollama ni TGI.
+- Requisitos de hardware muy restrictivos: al menos 128 GB de memoria unificada en Apple Silicon para las variantes residentes, y SSD rapido para las tablas Engram en todas las variantes.
+- Idiomas soportados no documentados oficialmente; solo se verifican pruebas de humo en ingles y chino tradicional.
+- Licencia MIT declarada por el autor de la cuantizacion, pero no se detallan las condiciones de los checkpoints base de DeepSeek ni de las ediciones comunitarias intermedias, lo que conviene revisar antes de un uso comercial.
+- No se documenta soporte de tool calling ni de agentes, por lo que no debe asumirse en pipelines de produccion sin validacion previa.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF
-- Checkpoint base abliterado: https://huggingface.co/s-zaizen/DeepSeek-V4.1-Flash-Abliterated
-- Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- Herramienta de ablación Heretic: https://github.com/p-e-w/heretic
-- Runtime DwarfStar ds4: https://github.com/antirez/ds4
-- Documentación de modelos de ds4 (entrada "DeepSeek V4.1 Flash"): https://github.com/antirez/ds4/blob/main/docs/MODELS.md
+- Hugging Face: https://huggingface.co/audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF
+- Runtime DwarfStar: https://github.com/antirez/ds4
+- Runtime audreyt/ds4: https://github.com/audreyt/ds4
+- Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Checkpoint heretic: https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-1017-heretic
+- Checkpoint abliterated: https://huggingface.co/s-zaizen/DeepSeek-V4.1-Flash-Abliterated
+- Cuantizacion Maya: https://huggingface.co/peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF
+- GGUF Q2 nativo: https://huggingface.co/audreyt/deepseek-v4.1-flash-1017-gguf
+- GGUF de Unsloth: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF

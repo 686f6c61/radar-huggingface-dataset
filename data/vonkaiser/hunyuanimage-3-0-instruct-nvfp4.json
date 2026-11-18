@@ -5,7 +5,7 @@
   "author": "vonkaiser",
   "url": "https://huggingface.co/vonkaiser/HunyuanImage-3.0-Instruct-NVFP4",
   "created_at": "2026-11-13T23:38:53.000Z",
-  "updated_at": "2026-11-13T23:49:45.000Z",
+  "updated_at": "2026-11-18T01:10:46.000Z",
   "license": "tencent-hunyuan-community",
   "license_family": "non-commercial",
   "pipeline_tag": "image-to-image",

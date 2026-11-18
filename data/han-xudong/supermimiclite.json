@@ -5,7 +5,7 @@
   "author": "han-xudong",
   "url": "https://huggingface.co/han-xudong/SuperMimicLite",
   "created_at": "2026-11-17T06:31:03.000Z",
-  "updated_at": "2026-11-17T13:15:23.000Z",
+  "updated_at": "2026-11-18T03:34:47.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -19,6 +19,7 @@
     "reinforcement-learning",
     "mujoco",
     "en",
+    "dataset:han-xudong/SuperMimicLite",
     "license:other",
     "region:us"
   ],

@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Swalow-7b-hf-oasst1-21k-ja-alert-preference-2k-ja-GGUF",
+  "slug": "mradermacher-swalow-7b-hf-oasst1-21k-ja-alert-preference-2k-ja-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Swalow-7b-hf-oasst1-21k-ja-alert-preference-2k-ja-GGUF",
+  "created_at": "2025-08-31T03:04:05.000Z",
+  "updated_at": "2026-11-18T08:33:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 6829969408,
+  "parameters_human": "6.83B",
+  "storage_bytes": 60474099840,
+  "storage_human": "60.5 GB",
+  "context_length": 4096,
+  "base_model": "shinyaoka/Swalow-7b-hf-oasst1-21k-ja-alert-preference-2k-ja",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

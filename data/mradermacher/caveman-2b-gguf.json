@@ -20,8 +20,6 @@
     "unsloth",
     "qwen3_5",
     "en",
-    "base_model:CrowdMind/Caveman-2B",
-    "base_model:quantized:CrowdMind/Caveman-2B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

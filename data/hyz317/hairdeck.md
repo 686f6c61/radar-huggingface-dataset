@@ -2,89 +2,84 @@
 
 ## Resumen
 
-HairDeck es un sistema generativo para la creación de tarjetas de pelo estilizadas (hair cards) listas para animación a partir de una única imagen de personaje. Ha sido desarrollado por un equipo de la Universidad de Tsinghua, en colaboración con Carnegie Mellon University y la Chinese University of Hong Kong, y se publica junto con un artículo en arXiv (2610.40599), código abierto en GitHub y una demo online en Hugging Face Spaces.
+HairDeck es un sistema de generación de geometría 3D especializado en cabello estilizado para avatares de anime. Desarrollado por investigadores de la Universidad de Tsinghua, Carnegie Mellon y la Universidad China de Hong Kong, convierte una única imagen de personaje en "hair cards" (tarjetas de cabello) con UVs y colores por tarjeta, junto con las cadenas de huesos de resorte (spring-bone chains) necesarias para animarlas. El resultado se exporta como GLB y puede integrarse en un cuerpo de avatar predefinido para producir un avatar VRM 0.x listo para animación.
 
-El problema que resuelve es un cuello de botella habitual en la creación de avatares 3D estilizados (anime, VTubers, VRM): modelar y riggear el pelo a mano es lento y requiere habilidades especializadas. HairDeck genera automáticamente mallas de pelo en formato de tarjetas con UVs por tarjeta y, lo más novedoso, las cadenas de huesos spring-bone que permiten animarlas físicamente, exportando el resultado como GLB y como avatar VRM 0.x completo.
+El modelo aborda un cuello de botella clásico en la producción de avatares 3D: la creación manual de hair cards animables es lenta y requiere artistas técnicos. HairDeck automatiza el pipeline completo (geometría, color, UVs y rigging de cadena) a partir de una sola imagen, lo que lo hace relevante para pipelines de VTubing, videojuegos y contenido generado por usuarios.
 
-Técnicamente no es un modelo de lenguaje, sino un conjunto de modelos de difusión basados en arquitecturas DiT (Diffusion Transformers): un Image DiT que genera tokens de tarjetas de pelo condicionados a una imagen, un Card VAE que decodifica cada token latente en geometría, un Chain DiT que genera las cadenas spring-bone y un Point-cloud DiT adicional para la ruta de generación condicionada a nubes de puntos. El repositorio pesa aproximadamente 1,7 GB y los pesos se distribuyen en formato safetensors bajo licencia Apache 2.0.
+Técnicamente, es un conjunto de modelos de difusión basados en transformers (DiT) especializados: un Image DiT que genera tokens de tarjeta condicionado por imagen, un Card VAE que decodifica cada token en geometría, un Chain DiT para las cadenas de huesos, un Color DiT para el color por tarjeta y un Point-cloud DiT alternativo. El repositorio ocupa 2,4 GB y la licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) + VAE, en cuatro modelos: Image DiT, Card VAE, Chain DiT y Point-cloud DiT |
+| Arquitectura | Diffusion Transformer (DiT) multi-componente: Image DiT, Card VAE, Chain DiT, Color DiT, Point-cloud DiT |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (no aplica: modelo generativo 3D, no LLM) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no aplica: salida 3D, no texto) |
-| Licencia | Apache 2.0 (los modelos auxiliares DINOv3, SAM 3, BiRefNet-matting y Dora-VAE requieren aceptar sus propias licencias) |
-| Formato de pesos | safetensors (los checkpoints DiT incluyen pesos EMA) |
+| Idiomas soportados | no disponible (modelo de vision/3D, no linguistico) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (checkpoints DiT con pesos EMA) |
 
 ## Arquitectura y entrenamiento
 
-El sistema se organiza como un pipeline de cuatro componentes. El Image DiT genera tokens de tarjetas de pelo condicionados a una imagen de entrada, empleando características de DINOv3 ViT-L/16 como codificador visual. Cada token latente se decodifica en geometría de tarjeta mediante un Card VAE entrenado específicamente. De forma paralela, un Chain DiT genera las cadenas de huesos spring-bone condicionadas a los tokens de las tarjetas, lo que permite que el pelo sea animable de inmediato en motores compatibles con VRM. Adicionalmente, existe un Point-cloud DiT que genera tokens de tarjetas condicionados a una nube de puntos, usando características de Dora-VAE 1.1; este modelo se emplea en la ruta de generación y evaluación basada en nubes de puntos.
+HairDeck es un pipeline de modelos generativos de difusión basados en transformer (DiT), no un LLM. El flujo principal combina cuatro componentes: el Image DiT genera tokens de hair card condicionados por la imagen de entrada (usando características de DINOv3 ViT-L/16), el Card VAE decodifica el latente de cada token en geometría de tarjeta, el Color DiT predice los colores a lo largo de cada tarjeta y el Chain DiT genera las cadenas de huesos de resorte condicionadas por los tokens de tarjeta. Existe además un Point-cloud DiT que genera tokens de tarjeta condicionados por una nube de puntos, usando características de Dora-VAE 1.1.
 
-El pipeline también integra modelos auxiliares de terceros: DINOv3 y SAM 3 para segmentación y extracción de características, BiRefNet-matting para matting del personaje y Dora-VAE para el procesamiento de nubes de puntos. Los datos de entrenamiento (número de muestras, composición del dataset) no se detallan en la model card, aunque el repositorio incluye assets de evaluación para 100 casos de prueba. Los checkpoints DiT se publican con pesos EMA (Exponential Moving Average), una práctica habitual en modelos de difusión para mejorar la estabilidad de la inferencia.
+El pipeline de imagen requiere modelos auxiliares externos no incluidos en el repositorio: DINOv3, SAM 3 (segmentación), BiRefNet-matting y Dora-VAE, que se descargan de sus propios repositorios y cuyas licencias deben aceptarse por separado. Los checkpoints DiT contienen pesos EMA. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se empleó RLHF/DPO. El repositorio incluye estadísticas de normalización, el marco canónico de cabeza, un avatar VRoid Studio de plantilla y 100 casos de test con geometría original y cadenas de huesos de referencia.
 
 ## Capacidades
 
-- Generación de mallas de pelo estilizadas (hair cards) a partir de una única imagen de personaje, con UVs por tarjeta.
-- Generación automática de cadenas de huesos spring-bone para animación física del pelo.
-- Exportación de mallas de pelo como archivos GLB.
-- Exportación de un avatar VRM 0.x completo, adjuntando el pelo generado al cuerpo de avatar plantilla incluido (basado en VRoid Studio).
-- Generación de múltiples variaciones de pelo por imagen (el script de ejemplo genera 4 variaciones con distintos seeds).
-- Ruta alternativa de generación condicionada a nube de puntos mediante el Point-cloud DiT.
-- Generación de vídeos de vista previa con giro de cabeza (requiere ffmpeg).
-- Salida orientada a estética anime/estilizada; no está orientado a pelo realista fotorreal.
+- Generación de cabello 3D estilizado (hair cards) a partir de una única imagen de personaje.
+- Producción de geometría de tarjeta con UVs y colores por tarjeta.
+- Generación de cadenas de huesos de resorte (spring-bone chains) para animación del cabello.
+- Exportación a GLB y ensamblaje en un avatar VRM 0.x con el cuerpo de plantilla proporcionado.
+- Generación de cuatro variaciones por imagen de entrada (parámetro `--n 4`).
+- Modo alternativo de generación condicionada por nube de puntos (Point-cloud DiT).
+- Segmentación y matting de la imagen de entrada mediante SAM 3 y BiRefNet-matting.
+- No soporta tool calling, agentes, razonamiento multi-step ni capacidades lingüísticas: no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Creación de avatares VRM para VTubing: a partir de una ilustración de personaje se genera un pelo animable y se exporta un avatar VRM 0.x listo para usar en software como VSeeFace o Unity con UniVRM.
-- Prototipado rápido de personajes para videojuegos estilizados: los equipos de arte pueden explorar decenas de variaciones de peinado sin modelar a mano, acelerando la fase de concept art 3D.
-- Generación procedural de personajes en herramientas no-code o plataformas de avatares: el pipeline es ejecutable por script, lo que permite integrarlo en servicios automáticos de creación de avatares.
-- Relleno de bibliotecas de assets de pelo: estudios o marketplaces pueden generar catálogos de hair cards reutilizables con UVs y rigging incluidos.
-- Investigación en generación 3D condicionada: el modelo Point-cloud DiT y los assets de evaluación (100 casos de prueba) permiten reproducir experimentos y comparativas académicas.
-- Animación y simulación de pelo en tiempo real: las cadenas spring-bone generadas son compatibles con motores que implementan física de cadenas de huesos, evitando configurar el rig manualmente.
-- Complemento para pipelines de reconstrucción de avatares: combinado con sistemas de reconstrucción cuerpo/cara, HairDeck cubre la parte del pelo, que suele ser el eslabón más costoso de automatizar.
+- Producción de avatares VTuber: a partir de una ilustración del personaje se generan hair cards animables y se exporta un VRM 0.x listo para plataformas de streaming, reduciendo el trabajo manual de modelado y rigging del pelo.
+- Prototipado rápido en videojuegos: generación de variantes de peinado (cuatro por imagen) para explorar direcciones artísticas antes de producir el asset final.
+- Contenido generado por usuarios en apps de personalización: el pipeline imagen-a-VRM permite que un usuario suba un dibujo y obtenga un avatar animable sin conocimientos de modelado 3D.
+- Previsualización de personajes en pipelines de animación: el export genera además un vídeo de giro de cabeza para validar el resultado antes de integrarlo en producción.
+- Investigación en generación 3D: el Point-cloud DiT y los 100 casos de test con geometría y cadenas de referencia permiten evaluar y comparar métodos de generación de hair cards.
+- Integración en herramientas DCC: los GLB generados pueden importarse en motores como Unity o Unreal para retocar manualmente geometría, UVs y cadenas de huesos.
+- Automatización de bibliotecas de assets: generación por lotes de peinados estilizados a partir de catálogos de imágenes de personajes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la existencia de una ruta de evaluación con 100 casos de prueba (geometrías de tarjetas originales, cadenas spring-bone y fits de cabeza), pero no incluye métricas numéricas (Chamfer Distance, F-score, etc.) en el texto del README. Para datos cuantitativos, consultar el artículo en arXiv (2610.40599) y la página del proyecto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- GPU con CUDA requerida para inferencia local (Linux, Python 3.12); la VRAM exacta no está especificada en la documentación disponible, aunque el tamaño total del bundle de modelos es de aproximadamente 1,7 GB, lo que sugiere que GPU de consumo modernas deberían ser suficientes.
-- GPU recomendadas: no disponible explícitamente; dado el tamaño de los checkpoints, una GPU de la gama RTX 3090/4090 o superior debería ser adecuada, pero no hay cifra oficial de VRAM.
-- No hay información sobre si funciona en macOS o CPU; la documentación indica Linux + CUDA GPU.
-- Despliegue: no usa vLLM, llama.cpp ni Ollama (no es un LLM). La instalación se realiza clonando el repositorio de GitHub, ejecutando `scripts/setup/download_weights.py` y los scripts `scripts/image_to_hair.py` y `hairdeck.vrm.export`. Existe una demo online en Hugging Face Spaces que no requiere GPU local.
-- Requisitos adicionales: aceptar las licencias de SAM 3 y DINOv3, iniciar sesión en Hugging Face para descargarlos, y disponer de ffmpeg para las vistas previas en vídeo.
-- Latencia y throughput: no disponibles.
+- GPU CUDA obligatoria; el repositorio indica Linux y Python 3.12 como entorno de referencia.
+- VRAM estimada para inferencia: no disponible (el repositorio ocupa 2,4 GB, pero no se detalla el consumo en ejecución).
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: scripts locales del repositorio (`scripts/image_to_hair.py`, `hairdeck.vrm.export`), demo online en Hugging Face Spaces y descarga de pesos mediante `scripts/setup/download_weights.py`.
+- Latencia y throughput: no disponible.
+- Requiere `ffmpeg` para generar los vídeos de previsualización.
 
 ## Comparativa con modelos similares
 
-| Modelo | Entrada | Salida | Licencia | Notas |
-|---|---|---|---|---|
-| HairDeck | Imagen única (o nube de puntos) | Hair cards con UVs + cadenas spring-bone, GLB y VRM 0.x | Apache 2.0 | Único centrado específicamente en pelo estilizado animable |
-| TripoSR / modelos image-to-3D genéricos | Imagen única | Malla 3D completa | Variada | Generan objetos completos, no pelo riggeado ni spring-bones |
-| Rodin / Dora-VAE | Imagen o nube de puntos | Malla 3D / latentes | Variada | Dora-VAE se usa como componente auxiliar en HairDeck, no genera rigs |
-
-No existen alternativas publicadas de código abierto ampliamente conocidas que generen hair cards con spring-bones automáticamente, por lo que HairDeck ocupa una categoría bastante específica dentro de la generación image-to-3D.
+No disponible. La información proporcionada no incluye modelos comparables de generación de hair cards ni datos de rendimiento frente a alternativas.
 
 ## Limitaciones y advertencias
 
-- El sistema está orientado a pelo estilizado (anime/estilizado); no está diseñado para pelo fotorrealista.
-- La exportación VRM depende del avatar plantilla proporcionado (basado en VRoid Studio); adaptar el pelo a otros cuerpos de avatar puede requerir trabajo manual.
-- Los modelos auxiliares (DINOv3, SAM 3, BiRefNet-matting, Dora-VAE) tienen sus propias licencias, que deben aceptarse por separado; algunas pueden tener restricciones de uso comercial distintas a las de Apache 2.0 de HairDeck.
-- No hay datos públicos de métricas de calidad en la model card; conviene evaluar los resultados sobre los propios casos de uso antes de producción.
-- La documentación de requisitos de VRAM y rendimiento es limitada, lo que dificulta planificar despliegues a escala.
-- La inferencia local requiere Linux, Python 3.12 y GPU CUDA, lo que excluye entornos Windows nativos y macOS sin pasos adicionales no documentados.
-- Las descargas del modelo son modestas (99 descargas y 8 likes en el momento de recopilar los datos), por lo que el soporte comunitario y la madurez en producción son aún limitados.
+- El modelo está especializado en cabello estilizado de anime; no está pensado para cabello fotorrealista ni para otras partes del cuerpo.
+- Depende de modelos externos (DINOv3, SAM 3, BiRefNet-matting, Dora-VAE) con licencias propias que deben aceptarse por separado; sus pesos no se incluyen en el repositorio.
+- La licencia Apache 2.0 cubre los pesos liberados, pero el uso comercial debe verificar además las licencias de los modelos auxiliares y del avatar de plantilla VRoid.
+- No se especifican datos sobre sesgos, tasas de alucinación geométrica ni robustez ante imágenes de entrada fuera de distribución.
+- El pipeline asume un marco canónico de cabeza y un cuerpo de avatar de plantilla; la integración con otros esqueletos o proporciones requerirá adaptación.
+- No hay información pública sobre requisitos de VRAM, latencia o calidad medida en benchmarks.
+- El identificador arXiv (2610.40599) y las fechas del repositorio (octubre-noviembre de 2026) deben verificarse en la fuente original.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hyz317/HairDeck
-- Demo online en Hugging Face Spaces: https://huggingface.co/spaces/hyz317/HairDeck
+- Demo online: https://huggingface.co/spaces/hyz317/HairDeck
 - Código en GitHub: https://github.com/hyz317/HairDeck
 - Página del proyecto: https://hyzcluster.github.io/HairDeck
-- Artículo en arXiv: https://arxiv.org/abs/2610.40599
+- Paper en arXiv: https://arxiv.org/abs/2610.40599

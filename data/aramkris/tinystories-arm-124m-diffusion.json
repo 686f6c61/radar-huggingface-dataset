@@ -5,7 +5,7 @@
   "author": "aramkris",
   "url": "https://huggingface.co/aramkris/tinystories-arm-124m-diffusion",
   "created_at": "2026-11-17T10:55:16.000Z",
-  "updated_at": "2026-11-17T10:56:09.000Z",
+  "updated_at": "2026-11-18T00:26:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "aramkris/fineweb-edu-124m-diffusion",
+  "renamed_at": "2026-11-18T05:38:18.348Z",
   "benchmarks": [],
   "sources": []
 }

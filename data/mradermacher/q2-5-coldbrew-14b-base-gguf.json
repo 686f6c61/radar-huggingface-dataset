@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Q2.5-ColdBrew-14B-Base-GGUF",
+  "slug": "mradermacher-q2-5-coldbrew-14b-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Q2.5-ColdBrew-14B-Base-GGUF",
+  "created_at": "2025-08-30T06:24:22.000Z",
+  "updated_at": "2026-11-18T08:38:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:SvalTek/Q2.5-ColdBrew-14B-Base",
+    "base_model:quantized:SvalTek/Q2.5-ColdBrew-14B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 129,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011144736,
+  "storage_human": "102.0 GB",
+  "context_length": 131072,
+  "base_model": "SvalTek/Q2.5-ColdBrew-14B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,92 +2,109 @@
 
 ## Resumen
 
-Ling-3.0-flash-GGUF es una conversión al formato GGUF del modelo Ling-3.0-flash desarrollado por inclusionAI, publicada por el usuario bloomer010. Se trata de un modelo de lenguaje de gran tamaño con arquitectura híbrida KDA (Key-Value Attention) combinada con gated MLA (Multi-head Latent Attention) y un bloque de mezcla de expertos (MoE) de 512 expertos. El modelo original tiene 127 486 405 600 parámetros totales, de los cuales solo 5 100 millones se activan por token, lo que lo sitúa en la categoría de MoE eficientes en cómputo.
+Ling-3.0-flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por inclusionAI, con 124.000 millones de parámetros totales y 5.100 millones activos por token. Emplea una arquitectura híbrida que combina capas KDA (Kimi Delta Attention, una variante de atención lineal) con capas de atención MLA con compuerta (gated MLA), distribuidas en 42 capas objetivo más un bloque MTP/NextN adicional. El modelo está orientado a generación de texto conversacional con soporte de modo de razonamiento (thinking mode) activado por defecto.
 
-La relevancia de esta conversión radica en que es la conversión de referencia para la arquitectura `bailingmoe3` en llama.cpp, pendiente de integración en el PR #26608. Incluye el bloque MTP (NextN) para decodificación especulativa integrado en el propio archivo GGUF, sin necesidad de un drafter separado. Soporta hasta 256 000 tokens de contexto y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones.
+La ficha que nos ocupa documenta la conversión a formato GGUF realizada por el usuario bloomer010, publicada en Hugging Face bajo licencia MIT. Esta conversión permite ejecutar el modelo en llama.cpp con soporte nativo de decodificación especulativa, incluyendo tanto la cabeza MTP integrada en los propios pesos como drafts externos DSpark. Es relevante ahora porque demuestra que un MoE de 124B puede desplegarse en hardware de gama alta de consumo mediante cuantizaciones agresivas y offload selectivo de expertos a CPU.
 
-El modelo está pensado para ejecución local con llama.cpp, con múltiples cuantizaciones que van desde 30 GB hasta 177 GB, lo que permite adaptarse a diferentes capacidades de hardware, desde tarjetas de 24 GB con offloading de expertos hasta servidores con 192 GB de VRAM.
+El modelo base procede de inclusionAI/Ling-3.0-flash, y esta versión GGUF ha acumulado más de 50.000 descargas, lo que indica un interés considerable en la comunidad de inferencia local. La ventana de contexto alcanza los 256K tokens según la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida KDA + gated MLA + MoE (512 expertos, top-8) |
-| Parametros totales | 127 486 405 600 |
-| Parametros activos | 5 100 000 000 (5,1 B) |
-| Longitud de contexto | Hasta 256 000 tokens |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, MXFP4_MOE, Q3_K_M, IQ2_M, IQ1_M, UD-Q2_K_XL, UD-Q6_K_XL, UD-Q8_K_XL |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer MoE híbrido: 35 capas KDA (atención lineal) + 7 capas gated MLA, más bloque MTP/NextN |
+| Parametros totales | 127.486.405.600 (124B aprox.) |
+| Parametros activos | 5.100 millones (5.1B) por token |
+| Longitud de contexto | 262.144 tokens (256K) |
+| Tipos de cuantizacion | MXFP4_MOE, IQ1_S, IQ1_M, IQ2_M, UD-Q2_K_XL, Q3_K_M, Q4_K_S, Q4_K_M, Q5_K_M, UD-Q6_K_XL, Q8_0, UD-Q8_K_XL |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (convertido desde safetensors BF16) |
+| Formato de pesos | GGUF (llama.cpp); safetensors BF16 en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza una arquitectura híbrida innovadora que combina tres mecanismos de atención y procesamiento. Las primeras dos capas del modelo objetivo usan FFN densas, mientras que las 40 restantes emplean 512 expertos enrutados con selección top-8 más un experto compartido. El enrutamiento utiliza puntuación sigmoide, sesgo de experto, ocho grupos de expertos y cuatro grupos seleccionados. La arquitectura incluye 35 capas KDA y 7 capas de MLA con gating en los índices 5, 11, 17, 23, 29, 35 y 41, más un bloque MTP (NextN) en el índice 42 para decodificación especulativa.
+El modelo sigue una arquitectura MoE con 42 capas objetivo. Las dos primeras capas usan FFN densas; las 40 restantes emplean 512 expertos enrutados con selección top-8 más un experto compartido. El enrutamiento utiliza puntuación sigmoide, sesgo de experto, ocho grupos de expertos y selección de cuatro grupos. De las 42 capas, 35 son KDA (atención lineal con compuerta segura implementada como `lower_bound * sigmoid(exp(A_log) * (f_proj(x) + dt_bias))`, con cota inferior de -5.0) y 7 son gated MLA en los índices 5, 11, 17, 23, 29, 35 y 41. Existe además un bloque MTP/NextN en el índice 42, incluido en cada cuantización.
 
-El KDA safe gate se implementa como `lower_bound * sigmoid(exp(A_log) * (f_proj(x) + dt_bias))` con un límite inferior de -5,0. Los tensores de norma, enrutamiento, sesgo de enrutamiento, escalares de estado KDA, `dt_bias` y pesos de convolución se mantienen en F32. La conversión a GGUF aplica transformaciones específicas: `A_log` se almacena como `exp(A_log)`, el tensor MLA `kv_b_proj` se divide en tensores K y V separados, y los pesos de convolución KDA se redimensionan para llama.cpp.
+La conversión GGUF aplica transformaciones específicas: `A_log` se almacena como `exp(A_log)`, la proyección `kv_b_proj` de MLA se divide en tensores K y V separados con K transpuesta, los pesos de convolución KDA se reforman y los tensores por experto se apilan en tensores GGUF de experto. Normas, tensores de enrutamiento, sesgo de enrutamiento, escalares de estado KDA, `dt_bias` y pesos de convolución permanecen en F32. La matriz de importancia se generó a partir del modelo Q8_0 usando `wiki.train.raw` (100 fragmentos de 512 tokens, 51.200 tokens de calibración, 573 entradas de matriz).
 
-No se dispone de información detallada sobre el entrenamiento del modelo original (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Los metadatos de clamp SwiGLU entrenados por capa se incluyen en los archivos GGUF, lo que es una característica específica de Ling 3.0.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base. El modelo soporta decodificación especulativa mediante dos vías: la cabeza MTP integrada (activada con `--spec-type draft-mtp`) y drafts externos DSpark (`Ling-3.0-flash-dspark-BF16.gguf` de 1,9 GB y `Ling-3.0-flash-dspark-Q4_K_M.gguf` de 665 MB).
 
 ## Capacidades
 
-- Generación de texto conversacional de alta calidad con modo de pensamiento (thinking mode) activado por defecto, que puede desactivarse por petición mediante `chat_template_kwargs`.
-- Decodificación especulativa MTP integrada en el archivo GGUF, sin necesidad de un drafter separado, lo que reduce la latencia en inferencia.
-- Soporte de contexto largo de hasta 256 000 tokens, adecuado para documentos extensos o conversaciones multi-turno prolongadas.
-- Capacidades multilingües: no especificadas en la documentación disponible.
-- Soporte de tool calling y function calling: no documentado explícitamente, aunque la arquitectura general sugiere que podría ser compatible mediante plantillas de chat personalizadas.
-- Compatibilidad con llama.cpp y llama-server, incluyendo offloading de expertos a CPU para entornos con VRAM limitada.
-- Modo de pensamiento (thinking mode) para razonamiento paso a paso, controlable por petición.
+- Generación de texto conversacional multi-turno con contexto de hasta 256K tokens.
+- Modo de razonamiento (thinking mode) activado por defecto, desactivable por petición mediante `"chat_template_kwargs": {"enable_thinking": false}`.
+- Decodificación especulativa mediante cabeza MTP integrada o drafts DSpark externos.
+- Soporte de plantillas Jinja en llama.cpp (`--jinja`), lo que habilita el formato de chat del modelo.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente, aunque el thinking mode sugiere razonamiento extendido.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a su ventana de 256 000 tokens, manteniendo el hilo de la conversación durante horas sin perder información relevante.
-- Análisis de documentos extensos: con su contexto de 256K, permite procesar informes anuales, expedientes legales o documentación técnica completa en una sola pasada, extrayendo resúmenes y respondiendo preguntas específicas.
-- Razonamiento complejo y resolución de problemas: el modo de pensamiento integrado facilita tareas de lógica, matemáticas y planificación, donde el modelo puede desglosar el problema antes de responder.
-- Generación de código asistida: aunque no se documenta explícitamente, su capacidad de razonamiento y contexto largo lo hace adecuado para completar y refactorizar código en repositorios extensos, con la ventaja de la licencia MIT para uso comercial.
-- Despliegue en entornos con restricciones de hardware: gracias a las cuantizaciones desde 30 GB y al offloading de expertos a CPU, puede ejecutarse en estaciones de trabajo con una sola GPU de 24 GB, manteniendo una calidad de salida razonable.
-- Investigación en arquitecturas MoE eficientes: al ser la conversión de referencia para `bailingmoe3`, es útil para estudiar el comportamiento de modelos híbridos KDA+MLA con decodificación especulativa en entornos locales.
+- Asistente conversacional de contexto largo: el modelo puede mantener conversaciones multi-turno con hasta 256K tokens de ventana, adecuado para análisis de documentos extensos o historiales de chat prolongados en los que se requiere recordar información de las primeras interacciones.
+- Despliegue en estaciones de trabajo con GPU única: con cuantizaciones Q4_K_S (74 GB) o Q3_K_M (63 GB), el modelo cabe en GPUs de 48-80 GB como A100 o H100, permitiendo servir un MoE de 124B en un solo acelerador.
+- Inferencia local con offload de expertos: en equipos con 24 GB de VRAM, la cuantización IQ1_M (30 GB) junto con `-ot "ffn_.*_exps\.weight=CPU"` mantiene los expertos en CPU y el resto en GPU, habilitando el modelo en GPUs de consumo como la RTX 4090.
+- Aceleración de inferencia en producción: la decodificación especulativa con drafts DSpark (aceptación 0,26-0,29 y longitud media aceptada de 3,09-3,28 tokens por paso) reduce el número de pasos de decodificación, útil en servicios de generación de texto con latencia crítica.
+- Prototipado e investigación en arquitecturas híbridas: al combinar capas KDA de atención lineal con gated MLA, el modelo sirve para estudiar el comportamiento de arquitecturas híbridas en tareas de razonamiento y generación long-context.
+- Evaluación de cuantizaciones extremas: la disponibilidad de recetas Unsloth-style (UD-Q2_K_XL con expertos en IQ2_XS/IQ3_XXS y proyecciones de atención en mayor precisión) permite medir la degradación de calidad en regímenes de 2-3 bits por peso sobre un MoE de gran tamaño.
+- Experimentación con decodificación especulativa: los drafts DSpark y la cabeza MTP integrada ofrecen dos mecanismos comparables para medir tasas de aceptación y throughput en llama.cpp.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas como MMLU, HumanEval, GSM8K o similares, ni comparaciones con otros modelos. Se recomienda consultar la página del modelo base inclusionAI/Ling-3.0-flash para obtener datos de rendimiento si están disponibles.
+No se han publicado resultados de benchmarks en la informacion disponible.
+
+Los únicos datos de rendimiento disponibles son métricas de decodificación especulativa medidas por el autor de la conversión:
+
+| Draft | Aceptación | Longitud media aceptada |
+|---|---|---|
+| DSpark BF16 | 0,29 | 3,28 tokens/paso |
+| DSpark Q4_K_M | 0,26 | 3,09 tokens/paso |
+| Cabeza MTP integrada (NextN) | 0,18 | 2,43 tokens/paso |
+
+Estas métricas se midieron contra el modelo principal en Q5_K_M.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización y memoria total del sistema:
-  - UD-Q8_K_XL: 177 GB (requiere 192 GB+ de memoria total)
-  - Q8_0: 136 GB (requiere 128 GB+)
-  - UD-Q6_K_XL: 116 GB (requiere 96 GB+)
-  - Q5_K_M: 92 GB (requiere 80 GB, adecuado para A100/H100)
-  - Q4_K_M: 78 GB (requiere 64 GB)
-  - Q4_K_S: 74 GB (requiere 56 GB)
-  - MXFP4_MOE: 70 GB (requiere 56 GB, necesita GPU con soporte MXFP4 nativo como Blackwell RTX 50-series, GB10/DGX Spark)
-  - Q3_K_M: 63 GB (requiere 48 GB)
-  - UD-Q2_K_XL / IQ2_M: 43/42 GB (requiere 32 GB)
-  - IQ1_M: 30 GB (requiere 24 GB, con offloading de expertos a CPU)
-- GPU recomendadas: NVIDIA A100/H100 para cuantizaciones altas, RTX 4090 o similar para cuantizaciones medias, RTX 50-series para MXFP4_MOE.
-- En entornos con menos VRAM que el tamaño del archivo, se pueden mantener los expertos en CPU y el resto en GPU mediante `-ot "ffn_.*_exps\.weight=CPU"`.
-- Opciones de despliegue: llama.cpp y llama-server, con soporte para flash attention, offloading de capas y decodificación especulativa MTP.
-- Latencia y throughput estimados: no disponibles. La decodificación especulativa MTP debería reducir la latencia respecto a generación autoregresiva estándar, pero no se proporcionan cifras concretas.
+- VRAM estimada según cuantización (tamaños de archivo reportados por el autor):
+  - UD-Q8_K_XL: 177 GB (192 GB+ de memoria)
+  - Q8_0: 136 GB (128 GB)
+  - UD-Q6_K_XL: 116 GB (96 GB)
+  - Q5_K_M: 92 GB (80 GB, A100/H100)
+  - Q4_K_M: 78 GB (64 GB)
+  - Q4_K_S: 74 GB / MXFP4_MOE: 70 GB (56 GB)
+  - Q3_K_M: 63 GB (48 GB)
+  - UD-Q2_K_XL: 43 GB / IQ2_M: 42 GB (32 GB)
+  - IQ1_M: 30 GB (24 GB, con offload de expertos)
+  - IQ1_S: aproximadamente 24,9 GiB (esperado)
+- GPU recomendadas: A100 u H100 de 80 GB para Q5_K_M; GPUs de 48-64 GB para Q3_K_M y Q4_K_M; RTX 4090 (24 GB) solo con IQ1_M y offload de expertos a CPU.
+- Cabe en GPU de consumo: sí, con cuantizaciones IQ1/IQ2 y offload selectivo de expertos a CPU mediante `-ot "ffn_.*_exps\.weight=CPU"`. La ruta nativa MXFP4_MOE requiere GPUs con soporte MXFP4 (Blackwell RTX 50-series, GB10/DGX Spark); en otro hardware cae a una ruta de dequantización más lenta.
+- Opciones de despliegue: llama.cpp (llama-server), con soporte de `-ngl`, `-ncmoe`, `-ncmoed`, `-ngld` para control de colocación de expertos y drafts. No se documentan otras opciones como vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponibles de forma absoluta; solo se conocen las métricas relativas de aceptación de decodificación especulativa.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos en la información proporcionada. El modelo pertenece a la categoría de MoE eficientes con parámetros activos en torno a 5B, comparable en filosofía a otros sistemas como Mixtral 8x7B o DeepSeek-V2, pero con una arquitectura híbrida KDA+MLA distinta. Sin datos de benchmarks ni especificaciones de esos modelos en la fuente, no es posible establecer una comparativa rigurosa.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Los datos disponibles no permiten establecer una comparación rigurosa con alternativas de la misma categoría (MoE de ~100-130B con contexto de 256K) en términos de parámetros, contexto, rendimiento, licencia y disponibilidad.
+
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Ling-3.0-flash (GGUF) | 124B totales / 5,1B activos | 256K | MIT | Hugging Face (bloomer010/Ling-3.0-flash-GGUF) |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La arquitectura `bailingmoe3` está pendiente de integración en llama.cpp (PR #26608). Hasta que se fusione, es necesario usar el fork de desarrollo, lo que puede limitar la compatibilidad con herramientas que dependen de versiones estables de llama.cpp.
-- Los archivos GGUF descargados antes del 7 de agosto de 2026 carecen de los metadatos de clamp SwiGLU corregidos; deben descargarse de nuevo o repararse con el script `add-ling3-clamp-metadata.py`.
-- El modelo requiere hardware de alta gama para un rendimiento óptimo. Las cuantizaciones más bajas (IQ1_M, IQ2_M) pueden degradar significativamente la calidad de salida y aumentar la latencia debido al offloading de expertos.
-- No se documentan sesgos conocidos ni riesgos de alucinación específicos, pero al ser un modelo de gran tamaño sin información sobre su alineación, es recomendable validar las respuestas en aplicaciones críticas.
-- El modo de pensamiento está activado por defecto, lo que puede aumentar la latencia y el consumo de tokens. Debe desactivarse explícitamente en aplicaciones donde la velocidad sea prioritaria.
-- No se especifican los idiomas soportados; la información disponible no permite confirmar cobertura multilingüe.
-- Aunque la licencia MIT permite uso comercial, la dependencia de la arquitectura experimental y del fork de llama.cpp puede generar costes de mantenimiento y riesgos de obsolescencia.
+- No se han publicado datos sobre sesgos del modelo en la información disponible.
+- Riesgo de alucinación: no cuantificado; como todo modelo generativo, puede producir contenido plausible pero incorrecto, especialmente en cuantizaciones de baja precisión.
+- Las cuantizaciones agresivas (IQ1, IQ2, Q2_K_XL) degradan la calidad; el propio autor advierte que archivos más pequeños implican "más compresión, más slop y mal comportamiento".
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento adecuado fuera de los idiomas del entrenamiento original.
+- El uso de MXFP4_MOE en GPUs sin soporte nativo provoca una ruta de dequantización más lenta; se recomienda Q4_K_S en hardware anterior a Blackwell.
+- La decodificación especulativa con la cabeza MTP integrada ofrece menor aceptación (0,18) que los drafts DSpark (0,26-0,29); el autor recomienda DSpark en la mayoría de configuraciones.
+- El peso y contexto comparten memoria; es necesario dejar margen libre, lo que puede limitar la ventana efectiva en configuraciones ajustadas de VRAM.
+- Licencia MIT: permite uso comercial, pero se recomienda verificar las condiciones del modelo base inclusionAI/Ling-3.0-flash, ya que la información disponible no detalla posibles restricciones adicionales del autor original.
+- La fecha de creación del repositorio (2026-08-04) y la de actualización (2026-11-17) son posteriores a la fecha actual de referencia; conviene verificar la vigencia de los artefactos.
 
 ## Enlaces
 
-- Repositorio Hugging Face del GGUF: https://huggingface.co/bloomer010/Ling-3.0-flash-GGUF
-- Modelo base inclusionAI/Ling-3.0-flash: https://huggingface.co/inclusionAI/Ling-3.0-flash
-- Pull request de soporte bailingmoe3 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/26608
-- Fork de desarrollo con soporte bailingmoe3: https://github.com/aetherbird/llama.cpp/tree/bailingmoe3-support
-- Script de corrección de metadatos SwiGLU: https://huggingface.co/bloomer010/Ling-3.0-flash-GGUF/blob/main/add-ling3-clamp-metadata.py
+- Repositorio GGUF: https://huggingface.co/bloomer010/Ling-3.0-flash-GGUF
+- Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
+- Draft DSpark: https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark

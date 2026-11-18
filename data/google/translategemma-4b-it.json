@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "google/translategemma-4b-it",
+  "slug": "google-translategemma-4b-it",
+  "author": "google",
+  "url": "https://huggingface.co/google/translategemma-4b-it",
+  "created_at": "2026-01-12T16:11:41.000Z",
+  "updated_at": "2026-01-28T17:28:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2601.09012",
+    "arxiv:2503.19786",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 916,
+  "downloads_30d": 10560,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351524,
+  "storage_human": "8.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google",
+      "snippet": "Elle a par la suite acquis et développé de nombreux logiciels et sites web notables parmi lesquels YouTube, le système …"
+    },
+    {
+      "title": "Présentation",
+      "url": "https://search.google/intl/fr-FR/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Google (moteur de recherche) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google_(moteur_de_recherche)",
+      "snippet": "Google est à l'origine un moteur de recherche de pages web, qui s'est étendu progressivement à divers types de documents (PDF, …"
+    }
+  ]
+}

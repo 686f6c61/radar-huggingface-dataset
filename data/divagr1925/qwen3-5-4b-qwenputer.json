@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 191,
-  "downloads_30d": 2928,
+  "downloads_30d": 3368,
   "trending_score": 10,
   "parameters": 9357602496,
   "parameters_human": "9.36B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Eminem – Lose Yourself Lyrics - Genius",
-      "url": "https://genius.com/Eminem-lose-yourself-lyrics",
-      "snippet": "Oct 28, 2002 · “Lose Yourself” is the theme song from Eminem’s semi-biographical 2002 movie 8 Mile. Eminem is narrating the life of …"
-    },
-    {
-      "title": "Lose Yourself - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Lose_Yourself",
-      "snippet": "\" Lose Yourself \" is a song by American rapper Eminem from the soundtrack to the 2002 film 8 Mile. The song was composed and …"
-    },
-    {
-      "title": "Eminem - Lose Yourself [HD] - YouTube",
-      "url": "https://www.youtube.com/watch?v=_Yhyp-_hX2s",
-      "snippet": "Aug 6, 2015 · All contents belong to its rightful owners. This is for entertainment purposes only."
-    },
-    {
-      "title": "Eminem - Lose Yourself Lyrics | AZLyrics.com",
-      "url": "https://www.azlyrics.com/lyrics/eminem/loseyourself.html",
-      "snippet": "\"Lose Yourself\" becomes the first of Eminem songs to make it to the top of the Billboard Hot 100 chart. The song widely considered …"
-    },
-    {
-      "title": "Lose Yourself — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Lose_Yourself",
-      "snippet": "Lose Yourself est une chanson d' Eminem, présente sur la bande originale du film 8 Mile, et pour laquelle il gagne un Oscar de la …"
-    }
-  ]
+  "sources": []
 }

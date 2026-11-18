@@ -5,7 +5,7 @@
   "author": "gradium",
   "url": "https://huggingface.co/gradium/phonon-31m-en",
   "created_at": "2026-10-19T12:02:53.000Z",
-  "updated_at": "2026-10-22T08:02:14.000Z",
+  "updated_at": "2026-11-17T16:40:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 168,
-  "downloads_30d": 320698,
+  "downloads_30d": 334124,
   "trending_score": 10,
   "parameters": 41096035,
   "parameters_human": "41.1M",
@@ -51,5 +51,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Real-Time Voice AI API for Voice Agents | Gradium",
+      "url": "https://gradium.ai/",
+      "snippet": "Built by the pioneers of voice AI Gradium translates years of peer-reviewed work into production-grade APIs that handle the hard …"
+    },
+    {
+      "title": "Gradium, la nouvelle start-up française spécialiste d’IA vocale",
+      "url": "https://www.lemonde.fr/economie/article/2025/12/02/gradium-nouvelle-start-up-francaise-specialiste-d-ia-vocale_6655699_3234.html",
+      "snippet": "Dec 2, 2025 · La France et l’Europe comptent une start-up supplémentaire capable de créer ses propres modèles d’intelligence …"
+    },
+    {
+      "title": "Sign in · Gradium",
+      "url": "https://studio.gradium.ai/",
+      "snippet": "Sign in · Gradium English"
+    },
+    {
+      "title": "Gradium: Solving voice",
+      "url": "https://gradium.ai/blog/gradium",
+      "snippet": "Dec 2, 2025 · Today we're excited to launch Gradium, the core engine powering the next generation of voice products and interactions."
+    },
+    {
+      "title": "“100 millions de dollars de financement” : Gradium, la pépite française ...",
+      "url": "https://www.usine-digitale.fr/start-up/financement/investissement/100-millions-de-dollars-de-financement-gradium-la-pepite-francaise-de-lia-vocale-accueille-nvidia-parmi-ses-investisseurs-et-setend-aux-etats-unis.ZDLFPAJCJBH6JHG5Z4HIFTPYG4.html",
+      "snippet": "Jul 8, 2026 · Gradium annonce ce jour franchir le cap des 100 millions de dollars de financement et élargir ainsi sa base d’investisseurs."
+    }
+  ]
 }

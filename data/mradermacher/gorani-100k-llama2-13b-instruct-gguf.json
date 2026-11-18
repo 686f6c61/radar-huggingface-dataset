@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gorani-100k-llama2-13b-instruct-GGUF",
+  "slug": "mradermacher-gorani-100k-llama2-13b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gorani-100k-llama2-13b-instruct-GGUF",
+  "created_at": "2025-02-27T06:37:00.000Z",
+  "updated_at": "2026-11-18T05:10:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:danielpark/gorani-100k-llama2-13b-instruct",
+    "base_model:danielpark/gorani-100k-llama2-13b-instruct",
+    "base_model:quantized:danielpark/gorani-100k-llama2-13b-instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 149,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801914560,
+  "storage_human": "88.8 GB",
+  "context_length": 4096,
+  "base_model": "danielpark/gorani-100k-llama2-13b-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

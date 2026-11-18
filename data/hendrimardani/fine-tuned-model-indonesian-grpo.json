@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5228,
+  "downloads_30d": 5235,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Hotels.com - Deals & Discounts for Hotel Reservations from Luxury ...",
-      "url": "https://www.hotels.com/?msockid=12fcb110774765201044a6c4767564cb",
-      "snippet": "Find cheap hotels and discounts when you book on Hotels.com. Compare hotel deals, offers and read unbiased reviews on hotels."
-    },
-    {
-      "title": "Hotels, Accommodation & Cheap Hotel Deals | Book at Expedia site",
-      "url": "https://www.expedia.com/Hotels?msockid=12fcb110774765201044a6c4767564cb",
-      "snippet": "Expedia's Hotel Search makes booking easy. Choose from thousands of hotel discounts & cheap hotel rooms. Pick the perfect hotel …"
-    },
-    {
-      "title": "Hotels | Book last-minute hotels & more | Booking.com",
-      "url": "https://www.booking.com/hotel/index.html?msockid=12fcb110774765201044a6c4767564cb",
-      "snippet": "Sep 1, 2026 · Find, compare, and book the best hotels on Booking.com! Discover cheap hotels, hotels near you, hotels for last …"
-    },
-    {
-      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
-      "url": "https://www.booking.com/?msockid=12fcb110774765201044a6c4767564cb",
-      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
-    },
-    {
-      "title": "trivago.com - Compare hotel prices worldwide",
-      "url": "https://www.trivago.com/?msockid=12fcb110774765201044a6c4767564cb",
-      "snippet": "Compare hotel prices from hundreds of travel sites and get great deals. Save time and money on finding your ideal accommodation …"
-    }
-  ]
+  "sources": []
 }

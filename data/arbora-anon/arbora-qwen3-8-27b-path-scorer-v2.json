@@ -35,8 +35,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "arbora-anon/arbora-qwen3.8-27b-path-scorer",
+  "renamed_at": "2026-11-18T05:38:41.431Z",
   "benchmarks": [],
   "sources": []
 }

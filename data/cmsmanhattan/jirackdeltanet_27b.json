@@ -87,31 +87,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "cmsmanhattan / AI - Bitbucket",
-      "url": "https://bitbucket.org/cmsmanhattan/workspace/projects/AI",
-      "snippet": "cmsmanhattan Projects AI Repositories"
-    },
-    {
-      "title": "Free JiRack Fable 27B Ternary Intelligence. Local. Private. Fast.",
-      "url": "https://www.linkedin.com/pulse/free-jirack-fable-27b-ternary-intelligence-local-private-grabko-nwvrc/",
-      "snippet": "In July 2026 we released JiRack Fable 27B — our largest ternary model to date. Built on a carefully selected 27-billion parameter foundation and fully converted to 1."
-    },
-    {
-      "title": "cmsmanhattan (Konstantin V Grabko) - Docker Hub",
-      "url": "https://hub.docker.com/u/cmsmanhattan",
-      "snippet": "Discover Docker images from cmsmanhattan. Visit their profile and explore images they maintain."
-    },
-    {
-      "title": "CMSManhattan (Center Business Solutions inc ) - Hugging Face",
-      "url": "https://huggingface.co/CMSManhattan/datasets",
-      "snippet": "AI & ML interests ... Recent Activity kgrabko updated a model 1 day ago ... kgrabko updated a model 1 day ago ... kgrabko updated a dataset 3 days ago"
-    },
-    {
-      "title": "Hugging Face",
-      "url": "https://huggingface.co/kgrabko/JiRackTernary_1b/raw/main/README.md",
-      "snippet": "The model is trained using **Quantization-Aware Training (QAT)**. During training, the weights learn to live in ternary format while being stored in FP16. After training, the `pack.py` script converts them into real ternary weights. The resulting model can then be converted to **ONNX** for production use, or to **GGUF** for Llama.cpp. However, the best runtime performance is currently achieved ..."
-    }
-  ]
+  "sources": []
 }

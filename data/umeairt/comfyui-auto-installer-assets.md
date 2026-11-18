@@ -2,81 +2,91 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de IA en sí, sino un almacén de assets preempaquetados para el ecosistema UmeAiRT, orientado a ComfyUI. Contiene cientos de archivos binarios de gran tamaño —modelos de difusión, text encoders, LoRAs, VAEs, ControlNets, checkpoints completos y binarios auxiliares— servidos mediante Git LFS y consumidos por herramientas como ComfyUI-Auto_installer y ComfyUI-UmeAiRT-Toolkit. Su propósito es centralizar la distribución de modelos populares (FLUX, WAN, QWEN, HiDream, LTX, Z-Image, etc.) en múltiples precisiones (bf16, fp16, fp8, GGUF Q8–Q3) para simplificar la instalación automatizada en entornos Windows.
+UmeAiRT/ComfyUI-Auto-Installer-Assets no es un modelo de IA en el sentido estricto, sino un repositorio de assets binarios (pesos, cuantizaciones y binarios auxiliares) que da soporte al ecosistema de herramientas de UmeAiRT para ComfyUI. El autor, UmeAiRT, lo mantiene como almacen de ficheros servidos via Git LFS, consumido por su instalador automatico para Windows (ComfyUI-Auto_installer) y por sus nodos personalizados (ComfyUI-UmeAiRT-Toolkit).
 
-La relevancia actual radica en que facilita el despliegue local de generación de imagen y vídeo con ComfyUI sin necesidad de descargar cada modelo manualmente desde fuentes dispersas. El repositorio tiene más de 87.000 descargas y 168 likes, lo que indica un uso activo. Su licencia MIT permite redistribución y uso comercial sin restricciones, aunque el tamaño total del repositorio (4,2 TB) hace que su descarga completa sea impracticable para la mayoría de usuarios.
+El repositorio agrupa pesos de modelos de difusion de terceros (FLUX, WAN 2.1/2.2, QWEN Image, HiDream, LTX-2, LTXV, Z-Image), text encoders (T5 XXL, umt5 XXL, GEMMA-3 12B, Qwen2.5-VL-7B, Qwen3-4B, LLAMA 3.1 8B), VAEs, ControlNets, LoRAs, upscalers y utilidades auxiliares, en multiples niveles de precision (bf16/fp16, fp8, GGUF Q8-Q3). Su relevancia practica es la de un espejo de descarga reproducible para instalaciones de ComfyUI que evita depender de decenas de repositorios dispersos.
+
+El dato de "parametros totales" reportado por Hugging Face (2.091.068.928) corresponde a uno de los ficheros safetensors presentes en el repo, no a un modelo unico, ya que el repositorio contiene decenas de modelos distintos. El tamano total del repo es de aproximadamente 4.517,7 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No aplica (repositorio de assets, no un modelo único) |
-| Parametros totales | 2.091.068.928 (suma de parámetros de los safetensors incluidos) |
-| Parametros activos | No aplica |
-| Longitud de contexto | No aplica |
-| Tipos de cuantizacion | fp16, bf16, fp8, fp8_scaled, SVDQ-int4, UD-Q4, IQ4_XS, GGUF Q8–Q3 |
-| Idiomas soportados | No disponible |
-| Licencia | MIT |
-| Formato de pesos | safetensors, GGUF, además de binarios y wheels |
+| Arquitectura | no disponible (repositorio de assets; contiene pesos de multiples arquitecturas: transformers de difusion, text encoders, VAEs, ControlNets) |
+| Parametros totales | 2.091.068.928 (dato de un safetensors concreto del repo; el repositorio agrega modelos de 4B a 22B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (depende del modelo contenido; p. ej. text encoders T5 XXL, Qwen2.5-VL-7B, etc.) |
+| Tipos de cuantizacion | bf16, fp16, fp8, fp8_scaled, fp8_e4m3fn, fp8_mixed, SVDQ-int4, GGUF Q8 a Q3 (Q8_0, Q6, Q5, Q4_K_S, Q3, IQ4_XS, UD-Q4, UD-Q8) |
+| Idiomas soportados | no disponible |
+| Licencia | MIT (del repositorio); los pesos subyacentes conservan la licencia de cada modelo original |
+| Formato de pesos | safetensors, GGUF, ONNX, diffusers |
 
 ## Arquitectura y entrenamiento
 
-Al no ser un modelo, no existe una arquitectura propia ni un proceso de entrenamiento asociado. El repositorio agrupa modelos de terceros con arquitecturas diversas: difusión (FLUX, WAN, QWEN, HiDream, LTX, Z-Image), text encoders (T5, UMT5, Gemma, Qwen, Llama), CLIP, VAEs, ControlNets y LoRAs. Cada modelo mantiene su arquitectura original y sus pesos preentrenados; este repositorio solo los empaqueta y los sirve en distintos formatos de cuantización para adaptarse a diferentes presupuestos de VRAM. No se ha realizado ningún entrenamiento adicional ni ajuste fino sobre estos pesos.
+Este repositorio no entrena ningun modelo propio: es un almacen de artefactos. Los pesos que contiene pertenecen a arquitecturas de difusion (FLUX 12B, WAN 2.1 14B, WAN 2.2 A14B, QWEN Image ~20B, HiDream 17B, LTX-2 19B/22B, LTXV 13B, Z-Image 12B), a text encoders (T5 XXL, umt5 XXL, GEMMA-3 12B, Qwen2.5-VL-7B, Qwen3-4B, LLAMA 3.1 8B) y a utilidades de vision (CLIP-L, CLIP-G, LongCLIP, SigCLIP, SAM, YOLO, Florence-2). Cada familia se distribuye en varios niveles de precision para ajustarse a distintos presupuestos de VRAM.
+
+La innovacion tecnica del repositorio no reside en el entrenamiento sino en la logistica: empaquetado reproducible de cuantizaciones GGUF y fp8, convenciones de nombrado estables (CamelCase para GGUF, minusculas con guiones para safetensors), y distribucion via Git LFS junto con binarios (Git, Python, CUDA installers) y wheels precompilados. Esto permite que el instalador automatico reconstruya un entorno ComfyUI funcional sin intervencion manual. No se dispone de informacion sobre datasets, tokens de entrenamiento, RLHF o DPO, ya que el repositorio no entrena modelos.
 
 ## Capacidades
 
-- Distribución centralizada de modelos de generación de imagen y vídeo para ComfyUI.
-- Incluye modelos de difusión para texto a imagen (FLUX Dev, Schnell, Z-Image), edición (FLUX Fill, QWEN Image-Edit), control (Canny, Depth, ControlNet), y vídeo (WAN 2.1/2.2 T2V e I2V, LTX-2).
-- Proporciona text encoders como T5 XXL, UMT5 XXL, Gemma-3 12B, Qwen2.5-VL-7B y Llama 3.1 8B en múltiples precisiones.
-- Ofrece modelos auxiliares: CLIP, CLIP Vision, VAE, LoRAs, upscalers (RealESRGAN), segmentación (SAM), detección (YOLO) y generación de prompts (Florence-2).
-- Incluye binarios y paquetes para instalación automatizada: Git, Python, CUDA installers, wheels precompilados y extensiones de ComfyUI.
-- Convenciones de nomenclatura claras para distinguir formatos GGUF y safetensors.
+- Distribucion de pesos de modelos de generacion de imagen (FLUX Dev/Fill/Kontext/Canny/Depth/Schnell, QWEN Image/Edit/Distill, HiDream I1-Dev, Z-Image Standard/Turbo).
+- Distribucion de pesos de modelos de generacion de video (WAN 2.1 T2V/I2V-480p/720p/VACE/Fun-InP/Control, WAN 2.2 T2V/I2V/InP/Control/Camera, LTX-2 19B y 2.3-22B, LTXV 0.9.8-Dev).
+- Text encoders en multiples precisiones: T5 XXL, umt5 XXL, GEMMA-3 12B, Qwen2.5-VL-7B, Qwen3-4B, LLAMA 3.1 8B.
+- Componentes auxiliares: VAE compartidos, ControlNets, LoRAs (FLUX, WAN, QWEN, LTX-2), upscalers (RealESRGAN y otros), style/Redux models.
+- Vision auxiliar: SAM para segmentacion, YOLO para deteccion de caras y manos, Florence-2 PromptGen para generacion de prompts.
+- Binarios y paquetes: instaladores de Git, Python y CUDA, wheels Python precompilados, zips de extensiones y herramientas de build.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-step por si mismo: esas capacidades dependen de los modelos subyacentes que contiene (p. ej. Qwen2.5-VL-7B o Qwen3-4B), no del repositorio.
 
 ## Casos de uso
 
-- Instalación automatizada de ComfyUI en Windows: el script ComfyUI-Auto_installer descarga desde este repositorio todos los modelos y dependencias necesarios, reduciendo el proceso de configuración manual a un solo paso.
-- Despliegue local de generación de imágenes con FLUX Dev o Z-Image: los pesos en fp8 o GGUF Q4 permiten ejecutar modelos de 12B en GPUs de consumo con 8–12 GB de VRAM.
-- Generación de vídeo con WAN 2.1/2.2: los checkpoints T2V e I2V en distintas cuantizaciones permiten adaptar la calidad y el consumo de memoria según el hardware disponible.
-- Edición de imágenes con FLUX Fill o QWEN Image-Edit: los modelos de edición vienen preempaquetados, listos para cargar en nodos de ComfyUI sin búsqueda adicional de pesos.
-- Uso de text encoders avanzados como Gemma-3 o Qwen2.5-VL para mejorar la adherencia al prompt en flujos de trabajo de difusión.
-- Entornos de producción que requieren reproducibilidad: al fijar versiones concretas de modelos y cuantizaciones, se puede replicar un pipeline de generación sin depender de descargas externas cambiantes.
+- Instalacion automatizada de ComfyUI en Windows: el instalador oficial descarga pesos y binarios directamente desde este repositorio, reduciendo el tiempo de puesta en marcha y evitando errores de dependencias entre decenas de fuentes distintas.
+- Despliegue reproducible de pipelines de generacion de imagen: un equipo puede fijar versiones concretas de FLUX, QWEN Image o HiDream con la cuantizacion adecuada (fp8, Q8, Q4) segun la VRAM disponible, garantizando paridad entre entornos.
+- Generacion de video local: los pesos de WAN 2.1/2.2, LTX-2 y LTXV permiten montar flujos T2V e I2V en ComfyUI sin depender de servicios en la nube, con variantes de precision para GPUs de 12-24 GB.
+- Investigacion en cuantizacion: el repositorio ofrece la misma familia de modelos en bf16, fp16, fp8, SVDQ-int4 y GGUF Q8-Q3, lo que facilita estudios comparativos de calidad frente a VRAM y latencia.
+- Integracion en nodos personalizados de ComfyUI: el Toolkit de UmeAiRT descarga automaticamente el modelo requerido al cargar un grafo, usando este repositorio como backend de assets.
+- Creacion de entornos de formacion o demos: un taller puede preparar una maquina con ComfyUI y un conjunto curado de modelos (FLUX, QWEN, WAN) sin que los asistentes descarguen cientos de gigabytes manualmente.
+- Archivado y espejo de pesos: util para organizaciones que necesitan una copia interna controlada de modelos populares con licencias permisivas y estructura homogenea.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Este repositorio no presenta métricas propias; los modelos que contiene tienen sus propios benchmarks publicados por sus autores originales, pero no se incluyen en esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Los requisitos varían según el modelo y la cuantización elegida. Para modelos de 12B–14B en fp16 se necesitan al menos 24 GB de VRAM; en fp8 se reduce a ~16 GB; en GGUF Q4 a ~8–10 GB.
-- Los modelos de vídeo como WAN 2.1 (14B) requieren GPUs con 16 GB o más para resoluciones 720p; las cuantizaciones GGUF permiten ejecutarlos en GPUs de 12 GB con calidad reducida.
-- GPUs recomendadas: RTX 4090 (24 GB) para la mayoría de modelos en fp8; A100 o H100 para cargas profesionales con fp16/bf16.
-- El repositorio incluye binarios de CUDA y wheels precompilados, lo que facilita el despliegue en entornos Windows con GPU NVIDIA.
-- Opciones de despliegue: ComfyUI como interfaz principal; los pesos en GGUF también son compatibles con llama.cpp y otros runners que soporten ese formato, aunque el flujo principal está diseñado para ComfyUI.
-- La latencia y el throughput dependen del modelo concreto; no se proporcionan datos específicos en el repositorio.
+- VRAM: depende del modelo y la cuantizacion elegidos. Como referencia, el repositorio ofrece variantes desde Q3 (adecuadas para GPUs de 8-12 GB) hasta bf16/fp16 (que requieren 24 GB o mas para modelos de 12B-22B).
+- GPUs recomendadas: RTX 3060 12 GB / RTX 4060 Ti 16 GB para cuantizaciones GGUF Q4-Q8 de modelos de 12B; RTX 4090 24 GB para fp8 de FLUX, QWEN Image o WAN 2.1; A100/H100 40-80 GB para bf16 de modelos de 17B-22B (HiDream, WAN 2.2, LTX-2).
+- Modelos de video (WAN 2.2 A14B, LTX-2 22B) requieren en la practica 24 GB o mas incluso en fp8 para resoluciones y duraciones razonables.
+- Opciones de despliegue: ComfyUI (entorno nativo del repositorio), con soporte de safetensors via diffusers y de GGUF via nodos GGUF para ComfyUI. No esta pensado para vLLM, TGI ni llama.cpp, ya que no contiene un LLM principal.
+- Latencia y throughput: no disponibles; dependen enteramente del modelo y hardware elegidos.
+- Espacio en disco: el repositorio completo ocupa aproximadamente 4.517,7 GB; conviene descargar solo las familias y precisiones necesarias.
 
 ## Comparativa con modelos similares
 
-No existe una comparativa directa posible, ya que este repositorio no es un modelo sino un agregador de assets. Como alternativa, se pueden considerar otros repositorios de distribución de modelos para ComfyUI, como:
+| Repositorio / proyecto | Contenido | Licencia | Enfoque |
+|---|---|---|---|
+| UmeAiRT/ComfyUI-Auto-Installer-Assets | Pesos de FLUX, WAN, QWEN, HiDream, LTX, Z-Image, text encoders, VAEs, LoRAs, binarios | MIT (repo); pesos con licencia original | Almacen curado para instalador ComfyUI |
+| Repositorios oficiales de cada modelo (black-forest-labs/FLUX.1-dev, Wan-AI/Wan2.1, Qwen/Qwen-Image, etc.) | Pesos oficiales en precision completa | Licencias especificas (a menudo no comerciales o con restricciones) | Fuente primaria, sin cuantizaciones GGUF |
+| Repositorios de cuantizaciones comunitarias (city96, QuantStack, etc.) | GGUF y fp8 de modelos populares | Variable | Cuantizacion especializada por modelo |
+| Comfy-Org (repositorios espejo de ComfyUI) | Pesos reorganizados para ComfyUI | Variable | Espejo oficial de ComfyUI |
 
-| Repositorio | Contenido | Licencia | Tamaño | Mantenimiento |
-|---|---|---|---|---|
-| UmeAiRT/ComfyUI-Auto-Installer-Assets | Modelos de difusión, text encoders, binarios | MIT | 4,2 TB | Activo |
-| Comfy-Org/ComfyUI_Official_Models | Modelos oficiales de ComfyUI | Varía | No disponible | Activo |
-| city96/ComfyUI-GGUF | Convertidores GGUF para modelos de difusión | MIT | No aplica (código) | Activo |
-
-La principal diferencia es que UmeAiRT ofrece un paquete integral con binarios y wheels, mientras que los otros se centran en pesos o herramientas de conversión.
+La ventaja diferencial de este repositorio es la agregacion multi-familia con nomenclatura homogenea y binarios de instalacion incluidos; su desventaja es que no es fuente primaria y depende de la licencia de cada modelo subyacente.
 
 ## Limitaciones y advertencias
 
-- El repositorio es extremadamente grande (4,2 TB); descargarlo completo es inviable para la mayoría de usuarios. Se recomienda descargar solo los archivos necesarios mediante Git LFS selectivo o el instalador automatizado.
-- No es un modelo original: los pesos pertenecen a sus respectivos autores y pueden tener licencias adicionales más restrictivas que la MIT del repositorio. Es responsabilidad del usuario verificar la licencia de cada modelo individual antes de uso comercial.
-- Al ser un asset store, no ofrece garantías de calidad o soporte técnico para los modelos incluidos.
-- Los binarios incluidos (Python, CUDA, Git) son específicos para Windows; no hay soporte oficial para Linux o macOS.
-- El repositorio se actualiza con frecuencia (última actualización en agosto de 2026), lo que puede provocar cambios en las rutas o versiones de los archivos que afecten a flujos de trabajo existentes.
+- No es un modelo entrenado: no debe citarse como modelo de IA ni evaluarse con benchmarks de LLM o de difusion.
+- El dato "2.091.068.928 parametros" de Hugging Face corresponde a un unico safetensors, no al repositorio completo; usarlo como spec del repo es enganoso.
+- La licencia MIT del repositorio no se extiende a los pesos subyacentes: FLUX.1-dev, por ejemplo, tiene licencia no comercial, y otros modelos pueden tener restricciones adicionales. Verificar la licencia de cada modelo antes de uso comercial.
+- El repositorio pesa aproximadamente 4,5 TB; descargarlo completo no es viable en la mayoria de entornos. Descargar solo lo necesario.
+- Dependencia de Git LFS y de la infraestructura de Hugging Face; no hay garantia de disponibilidad a largo plazo mas alla de la licencia MIT del codigo.
+- Riesgo de desactualizacion: los modelos originales pueden publicar nuevas versiones con cambios incompatibles.
+- No incluye informacion sobre sesgos, alucinacion o limitaciones linguisticas, ya que esas propiedades pertenecen a cada modelo contenido.
+- Para produccion, conviene fijar commits concretos del repositorio y verificar checksums de los ficheros descargados.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/UmeAiRT/ComfyUI-Auto-Installer-Assets
-- Réplica en ModelScope: https://www.modelscope.ai/datasets/UmeAiRT/ComfyUI-Auto-Installer-Assets
-- Proyecto ComfyUI-Auto_installer: https://gitlab.com/UmeAiRT-Studio/ComfyUI-Auto_installer-Python
-- Proyecto ComfyUI-UmeAiRT-Toolkit: https://gitlab.com/UmeAiRT-Studio/ComfyUI-UmeAiRT-Toolkit
+- ModelScope espejo: https://www.modelscope.ai/datasets/UmeAiRT/ComfyUI-Auto-Installer-Assets
+- Instalador automatico (GitLab): https://gitlab.com/UmeAiRT-Studio/ComfyUI-Auto_installer-Python
+- Toolkit de nodos ComfyUI (GitLab): https://gitlab.com/UmeAiRT-Studio/ComfyUI-UmeAiRT-Toolkit
+- Perfil del autor en Hugging Face: https://huggingface.co/UmeAiRT
+- Especificacion GGUF: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md

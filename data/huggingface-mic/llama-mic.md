@@ -2,97 +2,90 @@
 
 ## Resumen
 
-`llama-mic` es un artefacto de prueba (test artifact) publicado por la organización `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado ni utilizable para inferencia real, sino de un *fixture* de 3.219.776 parámetros construido a partir de la arquitectura de `HuggingFaceTB/SmolLM2-135M` (un transformer tipo Llama) mediante un proceso de reducción de configuración. Su propósito es validar el contrato de integración de la arquitectura Llama en Transformers, incluyendo la carga del modelo, la tokenización y el comportamiento del forward pass bajo distintas precisiones.
+`llama-mic` es un artefacto de prueba publicado por la organización `huggingface-mic` en Hugging Face, no un modelo entrenado para uso real. Se trata de un *fixture* o modelo reducido ("slim") derivado de `HuggingFaceTB.SmolLM2-135M`, con arquitectura `LlamaForCausalLM` y pesos aleatorios generados con semilla 17. Su propósito es servir como banco de pruebas para validar contratos de integración con Transformers, no para generar texto útil.
 
-El fixture conserva los nombres de tensores del checkpoint original y copia byte a byte los ficheros del procesador (tokenizer, merges, vocabulario, configuración de generación) del modelo base. Los pesos, sin embargo, son aleatorios (semilla 17) y se guardaron en bfloat16. La reducción se aplicó únicamente sobre el número de capas ocultas, fijado en 2, manteniendo la misma arquitectura `LlamaForCausalLM`. Esto permite reproducir la estructura del modelo real con un coste computacional mínimo.
+El repositorio contiene pesos reducidos, ejemplos de uso ejecutables y expectativas de framework en un único lugar. El modelo conserva la misma arquitectura y los mismos nombres de tensores que el checkpoint real, pero con solo 2 capas ocultas y 3.219.776 parámetros totales, frente a los 135 millones del modelo base. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
 
-La relevancia de este repositorio es puramente técnica y de infraestructura: sirve como evidencia reproducible para el desarrollo de `transformers-mic`, un conjunto de herramientas de validación de integraciones de modelos. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos. Cualquier uso como modelo de lenguaje en producción sería un error de interpretación.
+Su relevancia es metodológica: demuestra cómo construir fixtures ligeros que validen flujos de integración (carga, forward, loss, gradientes) en entornos como A10G con variantes eager, bfloat16 y float16, sin necesidad de descargar checkpoints completos. No es un modelo para producción ni para evaluación de capacidades.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
 | Arquitectura | LlamaForCausalLM (transformer decoder-only) |
-| Parametros totales | 3.219.776 |
-| Parametros activos | no disponible (no es MoE) |
+| Parámetros totales | 3.219.776 |
+| Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en bfloat16) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantización | no disponible (pesos en bfloat16) |
+| Idiomas soportados | no disponibles |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Modelo base | HuggingFaceTB/SmolLM2-135M |
-| Numero de capas ocultas | 2 |
-| Precisión de guardado | bfloat16 |
-| Semilla de pesos aleatorios | 17 |
-| Clave de fixture | 449c36ea4c20 |
+| Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only con la misma estructura que `LlamaForCausalLM`, pero con la configuración reducida a 2 capas ocultas mediante la regla genérica implementada en `sweep.py`. Los ficheros del procesador (`generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde `HuggingFaceTB/SmolLM2-135M`, de modo que la tokenización es idéntica a la del modelo base.
+El modelo es un `LlamaForCausalLM` reducido mediante la regla genérica de `sweep.py` del proyecto `transformers-mic`, que reduce `num_hidden_layers` a 2. Los archivos de procesador (`generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copian byte a byte desde `HuggingFaceTB.SmolLM2-135M`, por lo que el tokenizador es idéntico al del modelo base.
 
-No hubo entrenamiento. Los pesos se generaron aleatoriamente con semilla 17 y se validaron mediante una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movía los logits al menos 0.001 (la más débil, `input_ids:reverse`, produjo 2.12). El modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La validación se realizó en una NVIDIA A10G con variantes por defecto, eager y bfloat16, con registro de línea base en proceso fresco.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se validaron con una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movió los logits al menos 0.001 (el caso más débil, `input_ids:reverse`, movió 2.12). Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 para forward, loss y gradientes. La validación se realizó en una NVIDIA A10G con variantes default, eager y bfloat16, con grabación de línea base en proceso fresco.
 
 ## Capacidades
 
-- No es un modelo de lenguaje funcional: los pesos son aleatorios y no producen texto coherente.
-- Sirve como fixture de validación para la integración de la arquitectura Llama en Transformers.
-- Permite verificar la carga de safetensors con nombres de tensores idénticos al checkpoint real.
-- Valida el pipeline de tokenización heredado de SmolLM2-135M.
-- Comprueba la estabilidad numérica en float32, bfloat16 y float16 (forward, loss, gradientes).
-- No dispone de tool calling, agentes, visión, audio ni modos de razonamiento.
-- No tiene capacidades multilingües reales más allá del tokenizador heredado.
+- No es un modelo funcional: los pesos son aleatorios y no producen texto coherente.
+- Sirve como fixture para validar la carga de `LlamaForCausalLM` en Transformers.
+- Permite comprobar forward, cálculo de loss y gradientes en float32, bfloat16 y float16.
+- Valida la compatibilidad del tokenizador copiado desde SmolLM2-135M.
+- Soporta la ejecución de contratos de integración definidos en `integration.json`.
+- No dispone de tool calling, agentes, razonamiento multilingüe ni capacidades especiales.
+- No soporta visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Validación de integraciones en Transformers: se usa para comprobar que una nueva versión o parche de la librería carga correctamente un `LlamaForCausalLM` con los nombres de tensores esperados, sin incurrir en el coste de un checkpoint completo.
-- Pruebas de regresión en CI: el fixture permite ejecutar tests de forward pass, pérdida y gradientes en segundos, integrándose en pipelines de integración continua del repositorio `transformers-mic`.
-- Verificación de precisión numérica: sirve para comprobar que el modelo produce resultados finitos en float32, bfloat16 y float16, detectando regresiones en kernels o en la lógica de casting.
-- Desarrollo de herramientas de tokenización: al copiar byte a byte los ficheros del procesador de SmolLM2-135M, permite probar pipelines de tokenización sin descargar el modelo completo.
-- Reproducción de contratos de integración: el manifiesto `integration.json` y `build.json` documentan fuentes fijadas, resultados de puertas y hashes de ficheros, lo que facilita auditorías reproducibles.
-- Docencia y demostración de fixtures: ejemplifica cómo reducir un checkpoint real manteniendo la estructura de tensores, útil en formación sobre ingeniería de modelos y testing.
+- Validación de integración con Transformers: usar el fixture para comprobar que una versión de Transformers carga correctamente un `LlamaForCausalLM` sin descargar el checkpoint completo de 135M.
+- Pruebas de CI/CD en pipelines de transformers-mic: ejecutar el contrato definido en `integration.json` en cada pull request para detectar regresiones en carga, forward y gradientes.
+- Verificación de dtypes: comprobar que el modelo produce salidas finitas en float32, bfloat16 y float16 antes de probar con checkpoints reales.
+- Validación de tokenizadores: al copiar los archivos de procesador byte a byte desde SmolLM2-135M, sirve para testear flujos de tokenización idénticos al modelo base.
+- Reproducción de evidencia de regeneración: el repositorio enlaza una ejecución de GitHub Actions que permite reproducir la construcción del fixture con `build_fixtures.py`.
+- Formación y documentación: ejemplo didáctico de cómo reducir un checkpoint preservando nombres de tensores y contrato de entrada para pruebas de framework.
+- Desarrollo de herramientas de inspección: validar scripts que enumeran capas, parámetros y configuraciones de un modelo Llama sin coste computacional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que los benchmarks de calidad no serían significativos.
+No se han publicado resultados de benchmarks en la información disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier métrica de calidad sería irrelevante.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cualquier precisión (3,2 M de parámetros).
-- GPU recomendadas: cualquier GPU moderna; la validación se realizó en una NVIDIA A10G.
-- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU con suficiente memoria compartida.
-- Opciones de despliegue: Transformers (validado), potencialmente llama.cpp u Ollama si se convierte a GGUF, aunque no es un caso de uso previsto.
-- Latencia y throughput: no disponibles; al ser un fixture, no se han publicado mediciones de rendimiento.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (3,2M parámetros), aunque el dato exacto no está disponible.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; la validación oficial se realizó en una NVIDIA A10G.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU.
+- Opciones de despliegue: Transformers (validado), potencialmente llama.cpp u Ollama si se convierte a GGUF, aunque no está documentado.
+- Latencia y throughput: no disponibles; al ser un fixture de 2 capas, la latencia sería mínima pero no representativa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| llama-mic | 3,2 M | no disponible | Fixture de validacion | no disponible | Hugging Face |
-| SmolLM2-135M | 135 M | no disponible | Modelo de lenguaje pequeno | no disponible | Hugging Face |
-| Modelos de prueba de Transformers (p. ej. tiny-random-Llama) | variable | no disponible | Fixtures de CI | no disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Propósito |
+|---|---|---|---|---|
+| llama-mic | 3.219.776 | no disponible | no disponible | Fixture de test |
+| SmolLM2-135M | 135M | no disponible en la información | no disponible en la información | Modelo pequeño funcional |
+| SmolLM2-360M | 360M | no disponible en la información | no disponible en la información | Modelo pequeño funcional |
 
-La comparación directa con modelos de lenguaje no es aplicable: `llama-mic` no compite en calidad de generación, sino que se posiciona como artefacto de infraestructura frente a otros fixtures de prueba utilizados en el ecosistema de Transformers.
+La comparación es limitada: `llama-mic` no es un modelo funcional, sino un derivado reducido de SmolLM2-135M. Los datos de contexto y licencia de los modelos SmolLM2 no se proporcionan en la información disponible.
 
 ## Limitaciones y advertencias
 
 - Los pesos son aleatorios: el modelo no genera texto coherente ni responde a instrucciones.
-- No debe usarse en producción, investigación de NLP ni evaluación de capacidades.
-- La licencia no está disponible, lo que impide determinar condiciones de uso comercial.
+- Está etiquetado como `test-artifact`; no debe usarse en producción ni en evaluación de capacidades.
+- No se especifica licencia, lo que impide confirmar condiciones de uso comercial.
+- No se declaran idiomas soportados.
 - La longitud de contexto no está documentada.
-- Los idiomas soportados no están documentados; el tokenizador heredado de SmolLM2-135M cubre varios idiomas, pero el modelo no los procesa de forma significativa.
-- Está etiquetado como `test-artifact` para excluirlo de búsquedas de modelos candidatos; ignorar esta etiqueta llevaría a conclusiones erróneas.
-- El repositorio solo incluye los pesos reducidos, el uso y las expectativas del framework; otros ficheros deben regenerarse con `python example/build_fixtures.py --fixture mic-llama-slim`.
+- El contrato declara objetivos solo para el fixture; la cobertura del checkpoint completo es un trabajo separado.
+- No debe incluirse en búsquedas de modelos candidatos ni en comparativas de rendimiento real.
+- Cualquier uso que espere comportamiento de lenguaje natural fallará por diseño.
 
 ## Enlaces
 
 - [Modelo en Hugging Face](https://huggingface.co/huggingface-mic/llama-mic)
 - [Modelo base SmolLM2-135M](https://huggingface.co/HuggingFaceTB/SmolLM2-135M)
-- [Manifiesto de contrato (integration.json)](https://huggingface.co/huggingface-mic/llama-mic/blob/main/integration.json)
-- [Uso con Transformers](https://huggingface.co/huggingface-mic/llama-mic/blob/main/integrations/transformers/usage.md)
-- [Expectativas de Transformers](https://huggingface.co/huggingface-mic/llama-mic/tree/main/integrations/transformers/expectations)
-- [Procedencia del fixture (build.json)](https://huggingface.co/huggingface-mic/llama-mic/blob/main/build.json)
-- [Como se redujo el fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/llama-mic.html)
-- [Evidencia de regeneracion (GitHub Actions)](https://github.com/huggingface/transformers-mic/actions/runs/38252430459)
+- [Evidencia de regeneración (GitHub Actions)](https://github.com/huggingface/transformers-mic/actions/runs/38252430459)
+- [Cómo se redujo el fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/llama-mic.html)
 - [Repositorio transformers-mic](https://github.com/huggingface/transformers-mic)
 - [Script sweep.py](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
 - [Script build_fixtures.py](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)

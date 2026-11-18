@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "sthanika-ai/Sieve-0.8B",
+  "slug": "sthanika-ai-sieve-0-8b",
+  "author": "sthanika-ai",
+  "url": "https://huggingface.co/sthanika-ai/Sieve-0.8B",
+  "created_at": "2026-10-12T08:38:10.000Z",
+  "updated_at": "2026-11-18T06:12:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "sieve",
+    "decision-model",
+    "calibration",
+    "multiple-choice",
+    "qwen3.5",
+    "decision-index",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 474,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1343239248,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul)",
+      "dataset": "Decision Index 0.4.1 leaderboard (the maintainers' private tests)",
+      "metric": "Decision Index 0.4.1, Full score (leaderboard)",
+      "value": 20.82
+    },
+    {
+      "task": "typed decision (choice / noul)",
+      "dataset": "Decision Index 0.3 public suite (140,178 scored requests; the index averages 37 benchmarks)",
+      "metric": "Decision Index 0.3, public index (chance-corrected)",
+      "value": 32.26
+    }
+  ],
+  "sources": []
+}

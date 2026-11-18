@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ya9919/YN-9b",
+  "slug": "ya9919-yn-9b",
+  "author": "ya9919",
+  "url": "https://huggingface.co/ya9919/YN-9b",
+  "created_at": "2026-10-19T20:40:26.000Z",
+  "updated_at": "2026-11-18T07:57:29.000Z",
+  "license": "s2-mas-controlled-research-v1.2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "s2-mas",
+    "financial-qa",
+    "decision-head",
+    "qwen3_5",
+    "lora",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72514929,
+  "storage_human": "73 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

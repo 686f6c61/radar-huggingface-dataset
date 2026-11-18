@@ -2,95 +2,100 @@
 
 ## Resumen
 
-Gemma 4 E2B es un modelo de lenguaje multimodal de código abierto desarrollado por Google DeepMind, publicado en marzo de 2026 bajo licencia Apache 2.0. Forma parte de la familia Gemma 4, que incluye cinco tamaños diferentes (E2B, E4B, 12B, 26B A4B y 31B) y combina arquitecturas densas y de mezcla de expertos. La variante `-it` corresponde a la versión instruida (instruction-tuned), optimizada para seguir instrucciones y mantener conversaciones.
+Gemma 4 E2B-it es la variante instruction-tuned del modelo E2B de la familia Gemma 4, desarrollada por Google DeepMind y publicada con licencia Apache 2.0. Se trata de un modelo multimodal any-to-any que procesa texto, imagen y audio como entrada, y genera texto como salida. Con 5.123.178.051 parámetros totales según los pesos en safetensors (de los cuales 2.3B son "efectivos" y el resto corresponde a tablas de embeddings), está disenado especificamente para despliegue en dispositivos de borde: telefonos de gama alta, portatiles y workstations ligeras.
 
-El modelo destaca por su diseño eficiente para despliegue en dispositivos de gama alta, portátiles y servidores. Su nombre "E2B" indica que tiene 2.300 millones de parámetros efectivos, aunque el total con embeddings asciende a 5.100 millones. Incorpora Per-Layer Embeddings (PLE), una técnica que asigna una pequeña tabla de embeddings a cada capa del decodificador, lo que permite maximizar la eficiencia paramétrica sin añadir profundidad adicional. Es un modelo any-to-any: acepta texto, imagen y audio como entrada, y genera texto como salida.
+La innovacion principal de esta variante es el uso de Per-Layer Embeddings (PLE): en lugar de anadir mas capas o parametros al decodificador, cada capa recibe su propia tabla de embeddings pequena por token. Estas tablas son grandes en numero de parametros pero solo se usan para lookups rapidos, lo que explica la diferencia entre los 2.3B efectivos y los 5.1B totales. El modelo emplea una atencion hibrida que intercala sliding window attention local (512 tokens) con atencion global completa, garantizando que la capa final sea siempre global, y aplica Proportional RoPE (p-RoPE) junto con Keys y Values unificadas en las capas globales para optimizar memoria en contextos largos.
 
-La relevancia actual de Gemma 4 E2B radica en su combinación de multimodalidad, razonamiento configurable y eficiencia para entornos con recursos limitados, con una ventana de contexto de 128K tokens y soporte para más de 140 idiomas. Su licencia Apache 2.0 lo hace especialmente atractivo para uso comercial y despliegue en producción sin restricciones significativas.
+Con una ventana de contexto de 128K tokens, soporte para mas de 140 idiomas, modo thinking configurable, soporte nativo de system prompt y function calling, el modelo se posiciona como una opcion competitiva para agentes autonomos y asistentes multimodales que deben ejecutarse en hardware limitado. Su licencia Apache 2.0 elimina las restricciones de uso comercial que arrastraban versiones anteriores de la familia Gemma.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con atención híbrida (sliding window + global) |
-| Parametros totales | 5.123.178.051 (5,1B) |
-| Parametros activos | 2,3B efectivos (con PLE) |
+| Arquitectura | Transformer decoder-only con atencion hibrida (sliding window local + global), Per-Layer Embeddings (PLE), Proportional RoPE en capas globales |
+| Parametros totales | 5.123.178.051 (2.3B efectivos + tablas de embeddings PLE) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 128K tokens |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Más de 140 idiomas |
+| Tipos de cuantizacion | No disponible (no especificado en la informacion proporcionada) |
+| Idiomas soportados | Mas de 140 idiomas |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
+
+Otros datos tecnicos: 35 capas, sliding window de 512 tokens, vocabulario de 262K tokens, encoder de vision de ~150M parametros, encoder de audio de ~300M parametros. Tamano del repositorio: 30.9 GB.
 
 ## Arquitectura y entrenamiento
 
-Gemma 4 E2B utiliza una arquitectura transformer decoder-only con un mecanismo de atención híbrida que intercala ventanas de atención local deslizante (sliding window) de 512 tokens con capas de atención global completa, garantizando que la última capa sea siempre global. Este diseño híbrido reduce el uso de memoria y acelera el procesamiento sin sacrificar la comprensión de contextos largos. Para optimizar aún más la memoria en contextos extensos, las capas globales emplean Keys y Values unificados y aplican Proportional RoPE (p-RoPE).
+El modelo sigue una arquitectura transformer decoder-only con un mecanismo de atencion hibrido que intercala capas de sliding window attention local (ventana de 512 tokens) con capas de atencion global completa. La capa final es siempre global, lo que garantiza que el modelo mantenga consciencia del contexto completo en la generacion. Para reducir el coste de memoria en contextos largos, las capas globales emplean Keys y Values unificadas y Proportional RoPE (p-RoPE). El vocabulario es de 262.000 tokens.
 
-La innovación principal del modelo es el uso de Per-Layer Embeddings (PLE): cada capa del decodificador tiene su propia tabla de embeddings pequeña para cada token, lo que explica la diferencia entre los 5,1B de parámetros totales y los 2,3B efectivos. Estas tablas se utilizan solo para búsquedas rápidas, por lo que el coste computacional efectivo es mucho menor que el número total de parámetros.
+La innovacion arquitectonica mas destacable es Per-Layer Embeddings (PLE): cada capa del decodificador dispone de su propia tabla de embeddings por token. Estas tablas son grandes (de ahi que los parametros totales sean 5.1B frente a los 2.3B efectivos) pero solo se consultan mediante lookups rapidos, lo que permite maximizar la eficiencia parametrica en despliegues on-device sin incrementar el coste computacional por token. El modelo integra ademas un encoder de vision de aproximadamente 150M de parametros y un encoder de audio de aproximadamente 300M de parametros, que proyectan las modalidades al espacio de embeddings del LLM.
 
-El modelo incorpora encoders dedicados para procesar entradas multimodales: un encoder de visión de aproximadamente 150M de parámetros y un encoder de audio de aproximadamente 300M de parámetros. Estos encoders transforman las señales de imagen y audio en representaciones que el LLM principal puede procesar. El entrenamiento incluye una fase de pre-entrenamiento y un ajuste fino con instrucciones, e incorpora soporte nativo para el rol `system` en las conversaciones, lo que permite un control más estructurado. Todos los modelos Gemma 4 incluyen un modelo draft dedicado para decodificación especulativa, que acelera la inferencia sin pérdida de calidad.
+No se dispone de informacion detallada sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada. La model card indica que Gemma 4 se publica en variantes pre-entrenada e instruction-tuned, y que todos los modelos de la familia estan disenados como razonadores con modos de thinking configurables.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: capaz de tareas complejas de razonamiento con modos de pensamiento configurables (thinking mode).
-- Multimodalidad: procesa entradas de texto, imagen (con soporte de resolución y relación de aspecto variable) y audio de forma nativa.
-- Codificación: mejoras significativas en benchmarks de código y soporte nativo de function calling para agentes autónomos.
-- Soporte de agentes: capacidades multi-step reasoning y tool calling integradas.
-- Multilingüe: soporte para más de 140 idiomas.
-- Sistema de prompts nativo: soporte para el rol `system` en conversaciones, permitiendo un control más estructurado.
-- Decodificación especulativa: incluye un modelo draft dedicado para acelerar la inferencia sin pérdida de calidad.
-- Optimizado para on-device: diseñado para ejecución eficiente en portátiles y dispositivos móviles de gama alta.
+- Generacion de texto con razonamiento configurable mediante modo thinking (thinking mode).
+- Procesamiento de imagen con soporte de relacion de aspecto y resolucion variables.
+- Procesamiento de audio nativo (encoder de ~300M de parametros).
+- Procesamiento de video (la familia Gemma 4 lo soporta; confirmado a nivel de familia).
+- Capacidades de codigo y matematicas, con mejoras notables en benchmarks de coding segun la model card.
+- Function calling nativo, orientado a flujos agenticos.
+- Soporte de agentes y razonamiento multi-paso.
+- Soporte nativo del rol `system` para conversaciones estructuradas y controlables.
+- Multilingue: mas de 140 idiomas.
+- Salida exclusivamente de texto (pipeline any-to-any con entrada multiple, salida textual).
 
 ## Casos de uso
 
-- Asistente virtual multimodal en dispositivos móviles: el modelo puede procesar imágenes capturadas con la cámara, comandos de voz y texto, ofreciendo respuestas contextuales. Su tamaño efectivo de 2,3B y su diseño PLE lo hacen viable en smartphones de gama alta sin conexión a la nube.
-- Transcripción y análisis de audio: gracias a su encoder de audio nativo, puede transcribir reuniones, extraer conclusiones y generar actas automáticamente, procesando directamente la señal de audio sin necesidad de un pipeline de ASR separado.
-- Atención al cliente automatizada: con 128K tokens de contexto y soporte multilingüe en más de 140 idiomas, puede gestionar conversaciones multi-turno largas, manteniendo el historial completo y escalando a equipos de soporte globales.
-- Generación de código asistida: soporta function calling y puede integrarse en entornos de desarrollo (IDEs) o pipelines de CI/CD para generar, revisar y completar código, con un rendimiento notable en benchmarks de programación.
-- Análisis de documentos técnicos con imágenes: puede procesar documentación que combine texto, diagramas, gráficos y tablas, extrayendo información relevante y respondiendo preguntas sobre el contenido, útil en sectores como ingeniería o medicina.
-- Chatbot educativo multilingüe: su soporte de más de 140 idiomas y su capacidad de razonamiento configurable lo hacen adecuado para plataformas de aprendizaje de idiomas o tutoría automatizada en regiones con diversidad lingüística.
+- **Asistentes moviles on-device**: con 2.3B parametros efectivos y arquitectura optimizada para eficiencia, el modelo puede ejecutarse en telefonos de gama alta para dictado, resumen de notas de voz y descripcion de imagenes capturadas por la camara, sin enviar datos a la nube.
+- **Transcripcion y analisis de reuniones**: el encoder de audio nativo permite procesar grabaciones directamente, y la ventana de 128K tokens admite reuniones de varias horas en una sola pasada para generar actas, extraer action items y resumir decisiones.
+- **Agentes autonomos con tool calling**: el soporte nativo de function calling y el modo thinking configurable permiten construir agentes que planifican multiples pasos, invocan APIs y verifican resultados intermedios en entornos de automatizacion de tareas.
+- **Atencion al cliente multimodal**: el modelo puede recibir capturas de pantalla, fotos de productos o fragmentos de audio de un cliente junto con el historial de conversacion (hasta 128K tokens) y responder con contexto completo en mas de 140 idiomas.
+- **Asistencia a la accesibilidad**: descripcion de imagenes en voz alta, lectura de documentos escaneados, transcripcion y resumen de audio para usuarios con discapacidad visual o auditiva, ejecutandose localmente en portatiles.
+- **Generacion de codigo en pipelines de CI/CD**: con soporte de tool calling y contexto largo, el modelo puede revisar diffs, sugerir parches y ejecutar tareas de refactorizacion integrado en herramientas de desarrollo, con la ventaja de la licencia Apache 2.0 para uso comercial sin restricciones.
+- **Analisis de documentos con imagenes y texto**: procesamiento de facturas, formularios o capturas combinando OCR implicito (vision) y razonamiento textual en una sola pasada, con salida estructurada via function calling.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para el modelo google/gemma-4-E2B-it en la informacion disponible. El modelo card menciona mejoras generales en benchmarks de codificación y razonamiento para la familia Gemma 4, pero no proporciona cifras concretas para esta variante.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la documentación oficial. Con 5,1B de parámetros totales en FP16, se estiman aproximadamente 10-11 GB de VRAM para carga completa, reducibles con cuantización.
-- GPU recomendadas: el modelo está diseñado para despliegue en dispositivos de gama alta, portátiles y servidores. GPUs como RTX 4090 (24 GB), A100 (40/80 GB) o H100 son adecuadas para inferencia sin cuantización.
-- Compatibilidad con GPU de consumo: sí, cabe en GPUs consumer de 16 GB o más con cuantización (por ejemplo, RTX 4080/4090), y en GPUs de 8-12 GB con cuantización agresiva.
-- Opciones de despliegue: compatible con transformers, vLLM, TGI, llama.cpp y Ollama. También disponible en SageMaker y Azure (según los tags del repositorio).
-- Latencia y throughput: no disponible. La decodificación especulativa integrada debería mejorar significativamente la velocidad de generación respecto a modelos sin ella.
+- **VRAM estimada para inferencia**: no disponible de forma explicita. Como referencia orientativa por tamano: en FP16 los 5.1B parametros totales requeririan aproximadamente 10.2 GB solo para pesos; en cuantizacion de 8 bits, unos 5.1 GB; en 4 bits, unos 2.6 GB. Estas cifras son estimaciones por regla general y no datos publicados por el autor.
+- **GPU recomendadas**: no especificadas en la informacion proporcionada. Por el diseno on-device del modelo, se orienta a telefonos de gama alta, portatiles y workstations ligeras; para servidores, GPU como A100 o H100 serian sobredimensionadas para este tamano.
+- **Compatibilidad con GPU de consumo**: probable en RTX 4090, RTX 4080 y similares con cuantizacion, dado el tamano efectivo de 2.3B parametros; no confirmado por el autor en la informacion disponible.
+- **Opciones de despliegue**: la model card indica compatibilidad con `transformers` y los tags incluyen `endpoints_compatible`, `deploy:sagemaker` y `deploy:azure`. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada.
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia |
-|---|---|---|---|---|
-| Gemma 4 E2B | 2,3B efectivos / 5,1B totales | 128K | Texto, imagen, audio | Apache 2.0 |
-| Gemma 4 E4B | 4,5B efectivos / 8B totales | 128K | Texto, imagen, audio | Apache 2.0 |
-| Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio | Apache 2.0 |
-| Gemma 4 26B A4B (MoE) | 3,8B activos / 25,2B totales | 256K | Texto, imagen | Apache 2.0 |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Notas |
+|---|---|---|---|---|---|
+| Gemma 4 E2B-it | 5.1B totales (2.3B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Objetivo on-device, PLE, atencion hibrida |
+| Gemma 4 E4B-it | 8B totales (4.5B efectivos) | 128K | Texto, imagen, audio | Apache 2.0 | Misma familia, mayor capacidad, mismo contexto |
+| Gemma 4 12B Unified | 11.95B | 256K | Texto, imagen, audio | Apache 2.0 | Arquitectura sin encoders, contexto mayor |
+| Gemma 4 26B A4B (MoE) | 25.2B totales / 3.8B activos | 256K | Texto, imagen | Apache 2.0 | MoE con 8 expertos activos de 128 |
 
-Dentro de la familia Gemma 4, el E2B es la opción más ligera y eficiente. Frente a modelos de tamaño similar de otras familias (como Llama 3.2 3B o Qwen 2.5 3B), Gemma 4 E2B ofrece la ventaja de la multimodalidad nativa (audio e imagen) y una ventana de contexto de 128K, muy superior a los 8K-32K típicos de sus competidores. Sin embargo, al ser un modelo reciente, aún no hay comparativas independientes publicadas que permitan evaluar su rendimiento relativo.
+La comparativa se limita a la propia familia Gemma 4, ya que no se dispone de datos de benchmarks ni de modelos externos comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: como todos los modelos de lenguaje, puede reflejar sesgos presentes en sus datos de entrenamiento. Google DeepMind aplica protocolos de seguridad, pero no se han publicado evaluaciones detalladas de sesgos para esta variante.
-- Riesgo de alucinación: existe riesgo de generación de información falsa o inventada, especialmente en tareas de razonamiento complejo o con entradas ambiguas. Se recomienda verificación humana en aplicaciones críticas.
-- Limitaciones de contexto: aunque la ventana es de 128K tokens, el rendimiento en contextos muy largos puede degradarse. La ventana deslizante de 512 tokens puede limitar la atención local en secuencias muy extensas.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial sin restricciones significativas, pero es recomendable revisar los términos específicos en la documentación oficial de Gemma 4.
-- Requisitos de hardware: a pesar de su diseño eficiente, los 5,1B de parámetros totales requieren más memoria de la que sugieren los 2,3B efectivos. El despliegue en dispositivos móviles puede requerir optimizaciones adicionales.
-- Idiomas: aunque soporta más de 140 idiomas, el rendimiento puede variar significativamente entre idiomas, con mejores resultados probablemente en inglés y otros idiomas con más representación en los datos de entrenamiento.
+- **Sesgos**: no se documentan sesgos especificos en la informacion proporcionada; como todo modelo entrenado con datos web a gran escala, es previsible que herede sesgos de genero, raza, idioma y cultura.
+- **Alucinacion**: no se cuantifica la tasa de alucinacion; el modo thinking no garantiza veracidad de las respuestas, especialmente en tareas de hechos verificables.
+- **Idiomas**: aunque se declaran mas de 140 idiomas, la calidad puede variar significativamente entre ellos y no se especifica el rendimiento por idioma.
+- **Licencia**: Apache 2.0 permite uso comercial sin restricciones, pero se recomienda revisar el enlace de licencia oficial (`ai.google.dev/gemma/docs/gemma_4_license`) por si incluye terminos adicionales de uso aceptable.
+- **Formato de salida**: el modelo solo genera texto; no produce imagenes ni audio como salida.
+- **Contexto**: 128K tokens es amplio, pero la sliding window de 512 tokens implica que la atencion local es corta; el rendimiento en tareas que requieren dependencias muy locales puede verse afectado.
+- **Hardware**: no hay datos publicados de latencia ni throughput, por lo que el dimensionamiento en produccion requiere pruebas propias.
+- **Caveat de despliegue**: aunque los tags indican compatibilidad con endpoints y SageMaker/Azure, no se confirma soporte de motores de inferencia de alto rendimiento como vLLM o TGI.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/google/gemma-4-E2B-it
-- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E2B
-- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
+- Modelo base: https://huggingface.co/google/gemma-4-E2B
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
+- GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
-- Documentación oficial: https://ai.google.dev/gemma/docs/core
-- Model card oficial: https://ai.google.dev/gemma/docs/core/model_card_4
-- Página de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
-- Informe técnico (arXiv): https://arxiv.org/abs/2607.02770
-- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Gemma 4 en Google AI Edge: https://developers.google.com/edge/litert-lm/models/gemma-4
-- Repositorio GitHub: https://github.com/google-gemma
+- Documentacion: https://ai.google.dev/gemma/docs/core
+- Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770
+- Licencia: https://ai.google.dev/gemma/docs/gemma_4_license
+- Pagina de modelos Gemma: https://deepmind.google/models/gemma/

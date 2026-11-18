@@ -2,100 +2,106 @@
 
 ## Resumen
 
-VDN-Minimax-H3 (VDN-H3) es un modelo de generacion de video texto-a-video desarrollado por OpenVDN, que introduce una arquitectura de atencion hibrida para acelerar la inferencia de modelos de difusion de video. Se basa en el modelo MiniMax-H3 de MiniMax, un modelo omni-modal de generacion que produce video con audio nativo hasta 2K y 15 segundos. VDN-H3 anade una rama de atencion lineal frame-wise junto a la rama softmax original, logrando una generacion mas rapida que la reproduccion del video sin sacrificar calidad visual.
+VDN-Minimax-H3 (VDN-H3) es un modelo de generación de vídeo texto-a-vídeo desarrollado por OpenVDN, construido como un ajuste fino del modelo MiniMax H3 de MiniMaxAI. Su aportación principal es una arquitectura de atención híbrida, denominada Video DeltaNet, que combina una rama de atención lineal por fotograma (altamente eficiente) con una rama softmax que preserva la calidad visual y la consistencia del modelo base. El resultado es un modelo capaz de generar vídeo más rápido de lo que se reproduce.
 
-El checkpoint liberado incluye el modelo base completo (72 GB), un adaptador LoRA para 50 pasos de denoising y otro para 8 pasos, ademas del codigo de inferencia y entrenamiento optimizado. En 8 GPUs B200, VDN-H3 genera un clip de 14,4 segundos en 11,23 segundos con 8 pasos, lo que supone una aceleracion de aproximadamente 12x frente al modelo denso original. El proyecto es totalmente open-source, con pesos, codigo y scripts de despliegue publicados en GitHub y Hugging Face.
+El modelo se distribuye como un checkpoint plug-and-play que añade una rama de atención lineal separada y dos pequeños adaptadores LoRA que pueden fusionarse con el backbone durante la inferencia sin modificar los pesos originales. Según el autor, con SGLang Diffusion sobre 8 GPUs B200 genera un clip de 14,4 segundos en aproximadamente 9,0 segundos de extremo a extremo (6,9 segundos de denoising) usando 8 pasos de denoising.
 
-## Especificaciones tecnicas
+Es relevante porque aborda uno de los cuellos de botella clásicos de los modelos de vídeo: el coste cuadrático de la atención softmax sobre secuencias de fotogramas largas. Además, el ecosistema asociado (FreeVideo) permite ejecutar el modelo en GPUs de consumo con tan solo 8 GB de VRAM, lo que amplía considerablemente su accesibilidad.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida: atencion lineal frame-wise + atencion softmax (sobre MiniMax-H3) |
-| Parametros totales | No disponible |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | FP8 (scripts de inferencia incluidos) |
-| Idiomas soportados | No disponible |
-| Licencia | MiniMax H3 Community License Agreement (con restricciones territoriales) |
-| Formato de pesos | Safetensors (model.safetensors, adapter_model.safetensors) |
+| Arquitectura | Transformer de difusión con atención híbrida (rama de atención lineal por fotograma + rama softmax), basado en MiniMax H3 |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (genera clips de hasta 345 fotogramas, ~14,4 s) |
+| Tipos de cuantización | bf16, fp8 (mencionados en la documentación de inferencia) |
+| Idiomas soportados | no disponible |
+| Licencia | minimax-h3-community-license-agreement (licencia comunitaria, categoría "other") |
+| Formato de pesos | safetensors (componentes modulares de diffusers) |
 
 ## Arquitectura y entrenamiento
 
-VDN-H3 parte de los pesos del transformer de MiniMax-H3 y anade una rama de atencion lineal que procesa los frames de forma independiente, complementando la rama softmax que mantiene la coherencia visual global. Esta arquitectura hibrida reduce el coste computacional por paso de denoising. El entrenamiento se realiza en dos etapas: una primera etapa (stage-b) con 50 pasos de denoising, y una segunda etapa de destilacion (stage-dmd) que reduce a 8 pasos mediante un adaptador LoRA adicional. Los adaptadores LoRA se pueden fusionar en el backbone durante la inferencia sin modificar los pesos originales. El codigo de entrenamiento e inferencia esta optimizado con FlashAttention y Triton, e incluye soporte para FP8.
+VDN-H3 parte del backbone de difusión de MiniMax H3 y le incorpora una arquitectura de atención híbrida: una rama de atención lineal a nivel de fotograma, eficiente para secuencias largas, y una rama softmax que mantiene la calidad visual y la consistencia temporal del modelo original. El checkpoint añade además dos adaptadores LoRA de pequeño tamaño que se fusionan en el backbone en tiempo de inferencia, de modo que los pesos del modelo base no se alteran. La atención softmax de ventana se ejecuta mediante FlexAttention (con kernels de FlashAttention 4 en Hopper y Blackwell de centro de datos, y kernels Triton en Ampere, Ada y Blackwell de consumo).
+
+El modelo se entrena con destilación a pocos pasos: la inferencia de referencia usa 8 evaluaciones del modelo (9 puntos en la rejilla sigma). El repositorio publica tanto los pesos como el stack de inferencia optimizado y el código de entrenamiento. No se detalla en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset. El modelo soporta múltiples modalidades de generación con el mismo checkpoint: texto-a-vídeo con audio (T2VA), imagen-a-vídeo con audio (I2VA), primer y último fotograma a vídeo con audio (FL2VA) y último fotograma a vídeo con audio (L2VA).
 
 ## Capacidades
 
-- Generacion de video a partir de prompts de texto (text-to-video).
-- Inferencia rapida con 8 pasos de denoising (modelo destilado) o 50 pasos (modelo base).
-- Soporte de cuantizacion FP8 para reducir el uso de memoria y acelerar el calculo.
-- Arquitectura hibrida que preserva la calidad visual del modelo base.
-- Compatible con el pipeline de Diffusers y con scripts de inferencia propios.
-- No se documentan capacidades de tool calling, agentes ni razonamiento multimodal en esta version.
+- Generación de vídeo a partir de texto (text-to-video) con audio asociado (pipeline t2va).
+- Generación de vídeo condicionada por imagen (I2VA), por primer y último fotograma (FL2VA) y por último fotograma (L2VA), todo con el mismo checkpoint.
+- Generación de audio junto al vídeo, con su propia frecuencia de muestreo devuelta por el pipeline.
+- Generación de clips de hasta 345 fotogramas (aproximadamente 14,4 segundos).
+- Inferencia rápida mediante destilación a 8 pasos de denoising.
+- Compatibilidad con SGLang Diffusion para despliegue de alto rendimiento.
+- Soporte de offloading por grupo (a nivel de bloque o de hoja) para ejecución en GPUs con VRAM limitada.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, al tratarse de un modelo generativo de vídeo.
 
 ## Casos de uso
 
-- Produccion de video en tiempo real: VDN-H3 puede generar clips de 14,4 segundos en 11,23 segundos con 8 GPUs B200, lo que permite iterar rapidamente en entornos de produccion donde la velocidad es critica.
-- Generacion de contenido promocional para marketing: los equipos creativos pueden producir multiples variantes de un anuncio en minutos, ajustando prompts y reescribiendolos con el VLM Qwen3-VL-32B incluido en el flujo.
-- Creacion de clips para redes sociales: la generacion de videos cortos de alta calidad con audio nativo (heredado del modelo base) es adecuada para plataformas como TikTok o Instagram Reels.
-- Prototipado en estudios de animacion: los directores pueden previsualizar escenas rapidamente antes de la produccion final, reduciendo costes de renderizado.
-- Investigacion en modelos de difusion de video: al ser open-source, permite estudiar la arquitectura hibrida y los metodos de destilacion para futuros desarrollos.
-- Integracion en pipelines de postproduccion: el modelo puede conectarse a flujos de trabajo existentes mediante los scripts de inferencia o adaptarse a ComfyUI (el modelo base MiniMax-H3 ya tiene soporte nativo).
+- Generación rápida de clips para previsualización creativa: con 8 pasos de denoising y ~9 segundos de extremo a extremo en 8×B200, permite iterar sobre prompts y keyframes en ciclos de producción ágiles.
+- Publicidad y marketing: generación de vídeos cortos de ~14 segundos con audio sincronizado a partir de un guion de texto, adecuado para anuncios en redes sociales.
+- Prototipado de storyboards animados: uso de I2VA y FL2VA para animar viñetas o keyframes concretos y validar la narrativa antes de la producción final.
+- Creación de contenido para redes sociales en GPUs de consumo: mediante FreeVideo, el modelo se ejecuta con tan solo 8 GB de VRAM, lo que permite a creadores individuales generar vídeo en estaciones de trabajo locales.
+- Investigación en arquitecturas de atención eficiente: el código de entrenamiento e inferencia publicado permite reproducir y extender el enfoque de atención híbrida Video DeltaNet sobre otros backbones de difusión.
+- Integración en pipelines de postproducción: el soporte de audio generado y de condicionamiento por último fotograma facilita encadenar clips y transiciones coherentes en herramientas de edición automatizada.
+- Despliegue en servidores de inferencia: con SGLang Diffusion y offloading por bloques, se puede servir generación de vídeo en infraestructura con GPUs de 24 GB (pico de 22 GB en bf16, 20 GB en fp8 para 345 fotogramas).
 
 ## Benchmarks y rendimiento
 
-La model card publica velocidades de denoising en estado estacionario para la generacion de video 768p de 14,4 segundos. No se proporcionan metricas de calidad (FVD, CLIP score, etc.).
+| Métrica | Valor |
+|---|---|
+| Tiempo de denoising (8 pasos, 14,4 s de vídeo, 8×B200, SGLang Diffusion) | 6,9 s |
+| Tiempo extremo a extremo (mismo setup) | ~9,0 s |
+| Pasos de denoising | 8 evaluaciones del modelo (9 puntos sigma) |
+| VRAM pico en GPU de 24 GB (345 fotogramas, bf16) | 22 GB |
+| VRAM pico en GPU de 24 GB (345 fotogramas, fp8) | 20 GB |
+| VRAM mínima con FreeVideo | 8 GB |
 
-**H200:**
-
-| Configuracion | GPUs | Segundos/NFE | 50 NFE (VDN-H3-50-step) | 8 NFE (VDN-H3-8-step) |
-|---|---:|---:|---:|---:|
-| Denso MiniMax-H3 | 1 | 32,7 | 27,3 min | 4,4 min |
-| VDN-H3 FP8 | 1 | 11,2 | 9,4 min | 90,5 s |
-| VDN-H3 FP8 distribuido | 8 | 2,29 | 1,9 min | 18,3 s |
-
-**B200:**
-
-| Configuracion | GPUs | Segundos/NFE | 50 NFE (VDN-H3-50-step) | 8 NFE (VDN-H3-8-step) |
-|---|---:|---:|---:|---:|
-| Denso MiniMax-H3 (cuDNN) | 1 | 16,74 | 13,95 min | 2,23 min |
-| VDN-H3 FP8 | 1 | 6,41 | 5,3 min | 51 s |
-| VDN-H3 FP8 distribuido | 8 | 1,40 | 1,2 min | 11,23 s |
-
-Los tiempos excluyen carga del modelo, warm-up, decodificacion VAE y codificacion MP4. Para despliegue en vivo se recomienda ejecutar el reescritor de prompts, la decodificacion VAE y la conversion MP4 en maquinas separadas.
+No se han publicado en la información disponible resultados comparativos de benchmarks de calidad (FVD, CLIP score u otros) frente a modelos similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no especificada, pero el repositorio pesa 82,8 GB (modelo base 72 GB + adaptadores). Se requiere al menos una GPU con 80 GB de VRAM para la configuracion FP8 de una sola GPU.
-- GPUs recomendadas: H200 o B200 (mencionadas en las tablas de rendimiento). No se indica compatibilidad con GPUs de consumo (RTX 4090, etc.).
-- Despliegue: se proporcionan scripts de inferencia propios (`infer.py`, `encode_prompt.py`) y configuraciones YAML. El modelo base MiniMax-H3 tiene soporte en ComfyUI, pero no se confirma para VDN-H3.
-- Latencia: 11,23 s para un clip de 14,4 s con 8 pasos en 8 B200; 90,5 s en una sola H200 con 8 pasos.
-- Throughput: no se proporcionan metricas de tokens por segundo, solo tiempos de denoising.
+- VRAM estimada: 22 GB en bf16 y 20 GB en fp8 para 345 fotogramas con offloading por bloques en una GPU de 24 GB; 8 GB mínimo con FreeVideo.
+- GPUs recomendadas para máximo rendimiento: 8×B200 con SGLang Diffusion (6,9 s de denoising, ~9,0 s extremo a extremo).
+- GPUs de centro de datos: Hopper y Blackwell ejecutan la atención softmax de ventana sobre kernels de FlashAttention 4 vía FlexAttention.
+- GPUs de consumo: Ampere, Ada y Blackwell de consumo (RTX 50) ejecutan la atención sobre kernels Triton de FlexAttention y kernels propios de PyTorch; no requieren FlashAttention.
+- Cabe en GPUs de consumo: sí, con FreeVideo desde 8 GB de VRAM; en tarjetas de 24 GB (por ejemplo, RTX 4090) funciona con offloading por bloques.
+- Opciones de despliegue: Diffusers (ModularPipeline con componentes modulares), SGLang Diffusion, FreeVideo para inferencia local, y scripts de inferencia del repositorio (infer_diffusers.py).
+- Entorno: PyTorch 2.13 (2.13.0+cu129), Python 3.12, FlashAttention 4 opcional según arquitectura, Diffusers parcheado mediante scripts/setup_diffusers.sh.
+- Latencia y throughput: ~9,0 s extremo a extremo para un clip de 14,4 s en 8×B200; no se dispone de cifras de throughput para otras configuraciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Parametros | Contexto | Velocidad (8 NFE, 1 GPU) | Licencia |
+| Modelo | Parámetros | Contexto / duración | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VDN-H3 (este) | Hibrida (lineal + softmax) | No disponible | No disponible | 90,5 s (H200) | MiniMax H3 Community (restrictiva) |
-| MiniMax-H3 (base) | Transformer denso | No disponible | No disponible | 4,4 min (H200) | MiniMax H3 Community (restrictiva) |
-| Open-Sora (referencia) | Transformer difusion | No disponible | No disponible | No disponible | Apache 2.0 (varia por version) |
+| VDN-Minimax-H3 | no disponible | hasta 345 fotogramas (~14,4 s) | ~9,0 s extremo a extremo en 8×B200 | minimax-h3-community-license-agreement | Hugging Face, ModelScope, GitHub |
+| MiniMax H3 (base) | no disponible | no disponible | no disponible (el autor indica que VDN-H3 acelera la inferencia con calidad casi sin pérdida) | licencia de MiniMax | Hugging Face (MiniMaxAI/MiniMax-H3) |
+| Otros modelos text-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a la velocidad de denoising con el modelo base, ya que no se dispone de datos de otros modelos de video open-source en la informacion proporcionada. VDN-H3 ofrece una aceleracion de aproximadamente 3x en una sola GPU y 12x en 8 GPUs frente a MiniMax-H3 denso.
+No se dispone en la información proporcionada de datos suficientes para comparar con alternativas de terceros de forma cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: el acuerdo MiniMax H3 Community License excluye el uso en la Union Europea, el Reino Unido, la Republica de Corea y los Estados Unidos. El uso fuera del territorio aplicable no esta autorizado; se debe contactar con MiniMax para obtener una licencia en esas regiones.
-- Requisitos de hardware elevados: para alcanzar las velocidades publicadas se necesitan GPUs de centro de datos (H200/B200). En GPUs de consumo la inferencia puede ser inviable por VRAM.
-- Sin informacion sobre sesgos o alucinaciones: la model card no documenta evaluaciones de sesgo, robustez ni riesgos de generacion de contenido inapropiado.
-- Dependencia de un VLM externo: el flujo de inferencia requiere codificar los prompts con Qwen3-VL-32B, lo que anade un componente adicional al pipeline.
-- No se especifican idiomas soportados: la generacion de video puede depender del prompt, pero no hay garantias de rendimiento multilingue.
-- El modelo base MiniMax-H3 tiene capacidades omni-modales (texto, imagen, video, audio), pero VDN-H3 se centra en video; no se confirma que herede todas las funcionalidades del base.
+- Licencia comunitaria (minimax-h3-community-license-agreement): es necesario revisar el archivo LICENSE antes de descargar o ejecutar el modelo; pueden existir restricciones para uso comercial.
+- Al ser un ajuste fino del modelo base MiniMax H3, hereda los sesgos y limitaciones de este, que no se detallan en la información disponible.
+- Riesgo de alucinación visual y de inconsistencias temporales inherente a los modelos de difusión de vídeo; el autor afirma calidad "casi sin pérdida" frente al backbone, pero no se aportan métricas comparativas en la información disponible.
+- Duración limitada: los clips generados rondan los 14,4 segundos (345 fotogramas); no se documenta soporte para secuencias más largas.
+- Idiomas soportados no disponibles; no se especifica el comportamiento multilingüe de los prompts.
+- Requiere un Diffusers parcheado y versiones específicas de PyTorch y FlashAttention, lo que añade complejidad al despliegue en producción.
+- El consumo de VRAM en bf16 (22 GB para 345 fotogramas) obliga a usar offloading o fp8 en GPUs de 24 GB.
+- No se han publicado resultados de benchmarks de calidad en la información disponible, por lo que la evaluación comparativa queda pendiente de validación independiente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/OpenVDN/vdn-minimax-h3
-- Codigo (GitHub): https://github.com/OpenVDN/vdn-minimax-h3
-- Modelo base MiniMax-H3 (Hugging Face): https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Blog de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3
-- Repositorio oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
-- Hub de recursos de MiniMax-H3 (ComfyUI): https://github.com/ai-models-lab/minimax-h3
-- Tutoriales y despliegue: https://design.minimax.io/h3
+- Hugging Face: https://huggingface.co/OpenVDN/vdn-minimax-h3
+- Paper (arXiv): https://arxiv.org/abs/2609.20744
+- Blog: https://openvdn.github.io/
+- Código (GitHub): https://github.com/OpenVDN/vdn-minimax-h3
+- ModelScope: https://www.modelscope.ai/models/OpenVDN/vdn-minimax-h3
+- FreeVideo (inferencia local): https://github.com/FlashML-org/FreeVideo
+- SGLang: https://github.com/sgl-project/sglang
+- Cookbook de MiniMax-H3 en SGLang: https://github.com/sgl-project/sglang/blob/main/docs/cookbook/diffusion/MiniMax/MiniMax-H3.mdx#7-vdn-h3-hybrid-attention-8-step-distill
+- Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- FlashAttention 4 / FlexAttention (PyTorch): https://pytorch.org/blog/flexattention-flashattention-4-fast-and-flexible/

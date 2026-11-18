@@ -2,92 +2,89 @@
 
 ## Resumen
 
-`huggingface-mic/whisper-mic` es un artefacto de prueba (fixture) publicado por el equipo `huggingface-mic` para validar la integración de modelos Whisper en la librería Transformers. No es un modelo utilizable en producción: se trata de una versión reducida ("slim") de `openai/whisper-tiny` con solo 3.639.104 parámetros, creada para verificar contratos de integración (uso público, expectativas del framework y trazabilidad de la procedencia de los ficheros).
+whisper-mic es un artefacto de prueba (fixture) publicado por huggingface-mic, un proyecto orientado a validar contratos de integración entre modelos y frameworks. No es un modelo utilizable en producción: la propia model card lo etiqueta como `test-artifact` y advierte explícitamente que no debe tratarse como un modelo candidato. Se deriva de openai/whisper-tiny mediante un proceso de reducción ("shrinking") que conserva la arquitectura y los nombres de tensores del checkpoint original, pero con una configuración mucho menor.
 
-El repositorio incluye los pesos reducidos, un manifiesto de contrato (`integration.json`), documentación de uso con Transformers y las expectativas del framework. La arquitectura subyacente es `WhisperForConditionalGeneration`, pero con un config reducido (2 capas de encoder y 2 de decoder) que mantiene los mismos nombres de tensor que el checkpoint real.
+El modelo emplea la arquitectura WhisperForConditionalGeneration (transformer encoder-decoder para reconocimiento automático de voz) con solo 2 capas de encoder y 2 de decoder, lo que resulta en 3.639.104 parámetros totales. Los ficheros de procesador (tokenizer, preprocessor_config, normalizer, etc.) se copian byte a byte de openai/whisper-tiny, de modo que el fixture cubre cualquier checkpoint cuyos ficheros de procesador sean idénticos y cuya configuración coincida tras el proceso de reducción.
 
-La relevancia de este artefacto es interna al ecosistema Transformers: sirve como banco de pruebas reproducible para detectar regresiones en la integración de Whisper sin necesidad de descargar ni ejecutar el checkpoint completo. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
+Su relevancia es exclusivamente técnica: sirve como fixture ligero para validar la integración de Whisper en Transformers (variantes default, eager y bfloat16) sobre una NVIDIA A10G, con grabación de baseline en proceso limpio. Los pesos están sobreajustados al paso de entrenamiento del contrato (220 pasos) y se guardan en float32, el dtype por defecto de openai/whisper-tiny.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Whisper (encoder-decoder transformer, `WhisperForConditionalGeneration`) |
+| Arquitectura | WhisperForConditionalGeneration (transformer encoder-decoder) |
 | Parametros totales | 3.639.104 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en float32; se declara finito también en bfloat16 y float16) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32; verificado finito en float32, bfloat16 y float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Modelo base | openai/whisper-tiny |
+| Capas encoder / decoder | 2 / 2 |
+| Dtype de guardado | float32 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una versión reducida de `openai/whisper-tiny` con la misma clase `WhisperForConditionalGeneration` y los mismos nombres de tensor, pero con `encoder_layers=2` y `decoder_layers=2` (frente a la configuración completa del checkpoint original). Los ficheros de procesador (`added_tokens.json`, `generation_config.json`, `merges.txt`, `normalizer.json`, `preprocessor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copian byte a byte desde `openai/whisper-tiny`, de modo que el pipeline de preprocesado y tokenización es idéntico al del modelo real.
+La arquitectura es la de Whisper, un transformer encoder-decoder para transcripción de audio, pero con la configuración reducida mediante la regla genérica de `sweep.py`: encoder_layers 2 y decoder_layers 2. Conserva exactamente los mismos nombres de tensores que el checkpoint real openai/whisper-tiny, lo que permite que el fixture sea intercambiable a nivel de carga sin cambios en el código de integración.
 
-No se trata de un modelo entrenado en el sentido habitual: los pesos se generan mediante un sobreajuste deliberado al paso de entrenamiento del contrato (220 pasos). El autor documenta que los pesos aleatorios no superaban la puerta de sensibilidad a la entrada (`input_features:reverse` movía los logits solo 8.6e-05, por debajo del umbral de 0.001), por lo que se optó por sobreajustar el fixture. Los pesos se guardan en float32, el dtype por defecto de `openai/whisper-tiny`, y se verifica que son finitos en float32, bfloat16 y float16 (forward, loss y gradientes). La clave de fixture es `71360928908b` y cubre todos los checkpoints cuyos ficheros de procesador son idénticos byte a byte y cuyo config coincide tras el reducido.
+No hay un entrenamiento real en el sentido habitual: los pesos están sobreajustados al paso de entrenamiento del contrato (220 pasos). Los pesos aleatorios no superaban la puerta de sensibilidad de entrada (`input_features:reverse` movía los logits solo 8.6e-05, frente a un umbral de 0.001), por lo que se optó por este sobreajuste. Los ficheros de procesador se copian byte a byte de openai/whisper-tiny: `added_tokens.json`, `generation_config.json`, `merges.txt`, `normalizer.json`, `preprocessor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json` y `vocab.json`. El fixture está identificado por la clave `71360928908b` y se construye con `build_fixtures.py`, que registra en `build.json` las fuentes fijadas, los resultados de las puertas y los hashes de ficheros.
 
 ## Capacidades
 
-- No es un modelo funcional: el autor lo declara explícitamente "not a usable model" y lo etiqueta como `test-artifact`.
-- Conserva la interfaz de `WhisperForConditionalGeneration`, por lo que puede cargarse con Transformers y ejecutar un forward pass.
-- Sirve para validar contratos de integración: uso público con Transformers, variantes default, eager y bfloat16, y grabación de línea base en proceso fresco.
-- Mantiene los mismos nombres de tensor que el checkpoint real, lo que permite probar rutas de carga y mapeo de pesos.
-- No se documentan capacidades de generación de texto, razonamiento, código, tool calling, agentes ni multilingüismo reales.
-- No se documentan modos especiales (thinking, visión, audio) más allá del pipeline ASR propio de Whisper.
+- No es un modelo funcional: la model card indica explícitamente "It is a test artifact, not a usable model".
+- Conserva la interfaz de WhisperForConditionalGeneration (entrada de features de audio, salida de tokens), por lo que puede usarse para validar pipelines de carga e inferencia.
+- Verificado finito en forward, pérdida y gradientes en float32, bfloat16 y float16.
+- Sirve para validar contratos de integración en Transformers (variantes default, eager y bfloat16).
+- No se documentan capacidades de tool calling, agentes, multilingüismo ni modos de razonamiento.
 
 ## Casos de uso
 
-- Pruebas de regresión en Transformers: ejecutar el fixture en CI para detectar cambios que rompan la carga o el forward de `WhisperForConditionalGeneration` sin descargar el checkpoint completo.
-- Validación de contratos de integración: comprobar que las variantes default, eager y bfloat16 se comportan según lo esperado en un entorno controlado (A10G).
-- Verificación de mapeo de pesos: al conservar los nombres de tensor del checkpoint real, permite probar rutinas de carga y conversión de safetensors.
-- Pruebas de sensibilidad a la entrada: el sobreajuste a 220 pasos permite comprobar que pequeñas perturbaciones en `input_features` producen cambios medibles en los logits.
-- Validación de preprocesado y tokenización: los ficheros de procesador copiados byte a byte permiten probar el pipeline de audio sin ambigüedad.
-- Reproducibilidad de fixtures: el repositorio incluye `build.json` con fuentes fijadas, resultados de puertas y hashes, lo que permite reconstruir el artefacto con `build_fixtures.py`.
+- Validación de integración en Transformers: cargar el fixture en lugar del checkpoint completo para comprobar que la API de WhisperForConditionalGeneration se comporta igual (mismos nombres de tensores, mismos ficheros de procesador) sin descargar los pesos completos.
+- Pruebas de CI/CD de pipelines de audio: usar el fixture de 3,6 M parámetros para ejecutar tests de extremo a extremo en runners con poca VRAM, ya que el modelo real es mucho más pesado.
+- Verificación de dtypes: comprobar que el forward, la pérdida y los gradientes son finitos en float32, bfloat16 y float16 antes de pasar al checkpoint real.
+- Regresión de contrato: comparar los logits del fixture frente a la baseline grabada en proceso limpio sobre NVIDIA A10G para detectar cambios en la implementación de Transformers.
+- Desarrollo de tooling de fixtures: servir de ejemplo reproducible de cómo reducir un checkpoint preservando arquitectura y nombres de tensores, con procedencia registrada en `build.json`.
+- Documentación de expectativas de framework: usar `integrations/transformers/expectations` como referencia de comportamiento esperado en la integración de Whisper.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta una métrica de puerta de sensibilidad: con pesos aleatorios, la perturbación `input_features:reverse` movía los logits 8.6e-05 (por debajo del umbral de 0.001), motivo por el cual se recurrió al sobreajuste de 220 pasos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: mínima (3.639.104 parámetros en float32 equivalen a unos 14,5 MB de pesos); no se publican cifras oficiales.
-- GPU recomendadas: el autor valida en una NVIDIA A10G; cualquier GPU con suficiente memoria para el forward pass es suficiente.
-- Cabe en cualquier GPU consumer moderna e incluso en CPU para pruebas de humo.
-- Opciones de despliegue: Transformers (validado); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 3,6 M parámetros en float32 el peso de los tensores es de aproximadamente 14,5 MB, por lo que cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: la model card cita validación sobre NVIDIA A10G; por tamaño, cualquier GPU con al menos unos pocos GB de VRAM es suficiente.
+- Cabe en GPU consumer: sí, en cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) e incluso en CPU.
+- Opciones de despliegue: Transformers (validado en variantes default, eager y bfloat16); otras opciones no disponibles.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Uso previsto |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| `huggingface-mic/whisper-mic` | 3.639.104 | no disponible | no disponible | Hugging Face | Fixture de test |
-| `openai/whisper-tiny` | ~39 M | 30 s de audio (ventana estándar Whisper) | MIT (según el modelo original) | Hugging Face | ASR |
-| `openai/whisper-base` | ~74 M | 30 s de audio (ventana estándar Whisper) | MIT (según el modelo original) | Hugging Face | ASR |
+| huggingface-mic/whisper-mic | 3.639.104 | no disponible | no disponible | Hugging Face | Fixture de test |
+| openai/whisper-tiny | no disponible en la información | no disponible | no disponible | Hugging Face | Modelo ASR real |
+| openai/whisper-base | no disponible en la información | no disponible | no disponible | Hugging Face | Modelo ASR real |
 
-La comparación con `whisper-tiny` y `whisper-base` es solo estructural: el fixture comparte arquitectura y procesador con `whisper-tiny`, pero no es un modelo entrenado para transcripción. No se dispone de datos de rendimiento comparables.
+La comparación relevante es con openai/whisper-tiny, del que deriva: whisper-mic comparte arquitectura, nombres de tensores y ficheros de procesador, pero reduce el número de capas (2/2) y no es utilizable para transcripción real. Frente a otros modelos ASR de la familia Whisper, la diferencia principal es que whisper-mic es un artefacto de prueba, no un modelo de producción.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: el propio autor lo declara "not a usable model" y lo etiqueta como `test-artifact`.
-- Los pesos están sobreajustados a 220 pasos de entrenamiento; no generalizan a entradas reales.
-- Los pesos aleatorios no superaban la puerta de sensibilidad a la entrada, lo que motivó el sobreajuste; esto implica un comportamiento artificial en los logits.
-- Licencia no disponible: no se puede asumir uso comercial sin consultar al autor.
-- Idiomas soportados no disponibles; no debe usarse para transcripción multilingüe.
-- Longitud de contexto no disponible; no se documenta el comportamiento con audios largos.
-- Riesgo de confusión: al compartir nombre y arquitectura con Whisper, podría descargarse por error en lugar del checkpoint real; la etiqueta `test-artifact` mitiga parcialmente este riesgo.
-- No se documentan sesgos, alucinaciones ni restricciones adicionales más allá de las propias de un fixture.
+- No es un modelo utilizable: la model card lo declara explícitamente como test artifact y lo etiqueta `test-artifact` para excluirlo de búsquedas de modelos candidatos.
+- Pesos sobreajustados a 220 pasos: no generalizan ni producen transcripciones válidas.
+- Cobertura limitada: solo cubre checkpoints cuyos ficheros de procesador sean byte-idénticos y cuya configuración coincida tras el shrinking; la cobertura completa del checkpoint real es un trabajo separado.
+- Licencia no disponible: no se puede confirmar el uso comercial.
+- Idiomas no disponibles: no se documenta soporte multilingüe.
+- No apto para producción: no debe desplegarse en pipelines reales de ASR, atención al cliente ni generación de transcripciones.
+- Riesgo de confusión: al compartir nombres de tensores con openai/whisper-tiny, podría cargarse por error en lugar del checkpoint real; conviene verificar el ID del repositorio en los pipelines.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/huggingface-mic/whisper-mic
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/whisper-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/whisper-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/whisper-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/whisper-mic/blob/main/build.json
-- Cómo se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/whisper-mic.html
-- Evidencia de regeneración (GitHub Actions): https://github.com/huggingface/transformers-mic/actions/runs/38252430459
-- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
-- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/whisper-mic
 - Modelo base: https://huggingface.co/openai/whisper-tiny
+- Explicación del proceso de shrinking: https://huggingface-mic-mic-coverage.static.hf.space/shrink/whisper-mic.html
+- Evidencia de regeneración (GitHub Actions): https://github.com/huggingface/transformers-mic/actions/runs/38252430459
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de reducción `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

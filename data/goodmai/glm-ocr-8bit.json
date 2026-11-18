@@ -5,7 +5,7 @@
   "author": "goodmai",
   "url": "https://huggingface.co/goodmai/GLM-OCR-8bit",
   "created_at": "2026-11-15T05:58:29.000Z",
-  "updated_at": "2026-11-17T10:41:26.000Z",
+  "updated_at": "2026-11-17T14:55:49.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/gemma-4-12B-it-GGUF",
   "created_at": "2026-11-14T13:50:04.000Z",
-  "updated_at": "2026-11-14T13:51:08.000Z",
+  "updated_at": "2026-11-17T08:44:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 819,
+  "downloads_30d": 885,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

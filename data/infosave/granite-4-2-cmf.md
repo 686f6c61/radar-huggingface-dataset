@@ -2,97 +2,120 @@
 
 ## Resumen
 
-El repositorio `infosave/Granite-4.2-cmf` contiene los tres modelos densos de razonamiento de la familia IBM Granite 4.2 (3B, 8B y 30B) convertidos al formato CMF (Cortiq Model Format) con cuantización mixta Q4TP y Q8_2F. El formato CMF empaqueta pesos, tokenizador, plantilla de chat exacta y hashes de integridad en un único archivo mapeado en memoria, lo que permite ejecutar inferencia sin Python, PyTorch, CUDA ni compilaciones específicas por GPU. El runtime Cortiq soporta CPU, Vulkan (NVIDIA, AMD, Intel), DX12 y Metal, lo que convierte a este repositorio en una opción práctica para desplegar modelos de razonamiento Granite 4.2 en entornos heterogéneos o con recursos limitados.
+Granite-4.2-cmf es un repositorio de artefactos cuantizados del autor `infosave` que empaqueta los tres modelos densos de razonamiento de la familia IBM Granite 4.2 (3B, 8B y 30B) en formato CMF (Cortiq Model File), un contenedor de un solo archivo con mapeo en memoria que incluye pesos, tokenizador, plantilla de chat exacta y hashes de integridad. No es un modelo nuevo: es una distribucion de pesos cuantizados derivada de los checkpoints bf16 originales de IBM, pensada para ejecutarse sin Python, sin PyTorch y sin compilaciones especificas de GPU.
 
-Los modelos base son los Granite 4.2 de IBM, arquitectura transformer decoder-only densa con atención GQA, SwiGLU, RMSNorm y RoPE, post-entrenados sobre los Granite 4.1. Incorporan un modo de razonamiento nativo (thinking) con plantilla Jinja integrada, tool calling aumentado con razonamiento y un contexto nativo de 131 072 tokens. La cuantización Q4TP es un perfil mixto que protege los bordes del vocabulario (100 352 tokens) con precisión de 8 bits, mientras que Q8_2F mantiene todo el modelo en 8 bits con doble campo de escala. La licencia Apache 2.0 permite uso comercial sin restricciones.
+La propuesta de valor esta en el perfil de cuantizacion mixta. El perfil Q4TP mantiene las proyecciones del transformer en 4 bits pero protege los bordes del vocabulario (embedding de entrada y `lm_head` sin atar) en 8 bits de doble campo, mientras que Q8_2F aplica ese esquema de 8 bits a todas las proyecciones. Con un vocabulario de 100.352 tokens, proteger ambos extremos evita que filas de tokens raros o valores atipicos por canal de entrada se conviertan en el eslabon mas debil del modelo.
+
+El interes practico es la portabilidad: el mismo artefacto corre en CPU, CUDA, Vulkan (NVIDIA, AMD, Intel), DX12 y Metal mediante el runtime Cortiq, con velocidades medidas en una RTX A5000 de 176 tok/s para el 3B Q4TP y 28,9 tok/s para el 30B Q4TP. La licencia Apache 2.0 y el soporte de 12 idiomas lo hacen directamente utilizable en produccion, aunque el ecosistema de herramientas es mucho mas reducido que el de GGUF o safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (GraniteForCausalLM) con GQA, SwiGLU, RMSNorm, RoPE, attention scale 1/head_dim, embeddings no atados |
-| Parametros totales | 3B, 8B y 30B (tres modelos independientes en el mismo repositorio) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 131 072 tokens (128K) nativo; extension a 512K documentada por IBM pero no implementada en estos archivos CMF |
-| Tipos de cuantizacion | Q4TP (cuerpo en 4 bits, bordes de vocabulario en q8_2f, normas en f16) y Q8_2F (todo en 8 bits con doble escala) |
+| Arquitectura | Transformer denso (GraniteForCausalLM): GQA, SwiGLU, RMSNorm, RoPE, embeddings sin atar |
+| Parametros totales | 3B, 8B y 30B (tres artefactos independientes) |
+| Parametros activos | no disponible (modelos densos, no MoE) |
+| Longitud de contexto | 131.072 tokens nativos (la extension a 512K documentada por IBM no esta implementada ni medida en estos archivos) |
+| Tipos de cuantizacion | Q4TP (proyecciones en 4 bits, vocabulario en q8_2f, normas en f16) y Q8_2F (todo en 8 bits de doble campo, normas en f16) |
 | Idiomas soportados | en, de, es, fr, ja, pt, ar, cs, it, ko, nl, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | CMF (Cortiq Model Format), un unico archivo mapeado en memoria por variante |
+| Formato de pesos | CMF (Cortiq Model File), archivo unico con mapeo en memoria |
+| Tamano de archivos | 3B: 2,17 GB (q4tp) / 3,68 GB (q8_2f); 8B: 4,98 GB / 8,81 GB; 30B: 15,64 GB / 29,31 GB |
+| Vocabulario | 100.352 tokens |
+| Runtime | Cortiq (`cargo install cortiq-cli`), backend CUDA como feature de compilacion |
+| Repositorio | 64,6 GB |
 
 ## Arquitectura y entrenamiento
 
-Los modelos base son los Granite 4.2 de IBM, una familia de modelos densos decoder-only post-entrenados sobre los Granite 4.1. IBM documenta que incorporan chain-of-thought integrado, modos de pensamiento flexibles (thinking, non-thinking, low-effort reasoning) y tool calling aumentado con razonamiento. Los detalles del pre-entrenamiento (numero de tokens, composicion del dataset, tecnicas de alineacion como RLHF o DPO) no estan disponibles en la informacion proporcionada en este repositorio.
+Los pesos subyacentes corresponden a los modelos Granite 4.2 de IBM, transformers densos con attention de consultas agrupadas (GQA), SwiGLU, RMSNorm, RoPE y embeddings de entrada y salida sin atar. El runtime Cortiq mapea explicitamente `GraniteForCausalLM` en lugar de tratarlo como una aproximacion Llama: aplica el `attention_multiplier` exacto del checkpoint (Granite usa `1 / head_dim`, no `1 / sqrt(head_dim)`), y valida y traslada a la cabecera CMF los factores `embedding_multiplier`, `residual_multiplier` y `logits_scaling`. Tambien preserva la geometria GQA, el theta de RoPE y el vocabulario sin atar para cada tamano.
 
-La conversion a CMF preserva de forma exacta las particularidades de Granite 4.2: el `attention_multiplier` usa `1 / head_dim` en lugar del habitual `1 / sqrt(head_dim)`, y se validan y mapean `embedding_multiplier`, `residual_multiplier` y `logits_scaling`. La plantilla Jinja original se incrusta completa, incluyendo los modos de razonamiento, herramientas y manejo de historial multi-turno. La cuantizacion Q4TP es un perfil mixto deliberado: todas las proyecciones transformer usan q4tp, mientras que el embedding de entrada y la cabeza de salida (no atada) usan q8_2f, protegiendo asi las filas de tokens raros y los outliers de canales de entrada. Q8_2F, por su parte, mantiene todas las proyecciones y ambos bordes de vocabulario en un layout de 8 bits con dos campos de escala, lo que protege adicionalmente los canales de entrada.
+El trabajo de este repositorio es exclusivamente de cuantizacion, no de entrenamiento: no hay datos sobre tokens de preentrenamiento, composicion del dataset ni etapas de RLHF o DPO en la informacion disponible. La innovacion tecnica esta en el esquema de cuantizacion. Q4TP es un perfil de calidad mixta deliberado: cada proyeccion del transformer usa 4 bits, mientras que el embedding de entrada y el `lm_head` usan q8_2f; las normas permanecen en f16. Los archivos Q4TP de 3B y 8B contienen 280 tensores q4tp, 2 q8_2f y 81 f16. Las variantes Q8_2F mantienen todas las proyecciones y ambos bordes del vocabulario en el formato de 8 bits de doble campo (282 tensores q8_2f mas 81 f16), donde el segundo campo de escala protege los canales de entrada ademas de la escala por fila de salida habitual.
+
+La plantilla Jinja de chat upstream se incrusta completa, incluyendo modo thinking, modo sin thinking, razonamiento de bajo esfuerzo, herramientas y manejo de historial multi-turno. Con thinking activo el prefijo del asistente termina en `<|im_start|>assistant\n<think>\n`; con `--no-think` produce `<|im_start|>assistant\n<think></think>` exactamente. Las pruebas de release comparan los prompts renderizados contra la plantilla original.
 
 ## Capacidades
 
-- Generacion de texto con razonamiento integrado: el modelo abre de forma nativa un bloque ` thinking... response` cuando se usa la plantilla incrustada; con `--no-think` se obtiene respuesta directa.
-- Tool calling / function calling aumentado con razonamiento, soportado por la plantilla Jinja completa.
-- Razonamiento multi-step y modos de esfuerzo variable (low-effort reasoning).
-- Multilingue en 12 idiomas: ingles, aleman, español, frances, japones, portugues, arabe, checo, italiano, coreano, neerlandes y chino.
-- Soporte de conversaciones multi-turno con historial.
-- Contexto largo de 131 072 tokens para documentos extensos.
-- Sin capacidades de vision ni audio: es un modelo exclusivamente de texto.
+- Generacion de texto y razonamiento con bloque nativo `<think>...</think>`, activable o desactivable por flag (`--no-think`).
+- Modo de razonamiento de bajo esfuerzo, segun la plantilla upstream embebida.
+- Soporte de tool calling y function calling a traves de la plantilla de chat de Granite 4.2.
+- Manejo de historial multi-turno y conversaciones largas gracias a los 131.072 tokens de contexto.
+- Capacidades multilingues en 12 idiomas: ingles, aleman, espanol, frances, japones, portugues, arabe, checo, italiano, coreano, neerlandes y chino.
+- Ejecucion multiplataforma sin Python ni PyTorch: CPU, CUDA, Vulkan (NVIDIA, AMD, Intel), DX12 y Metal.
+- Verificacion de integridad criptografica del artefacto mediante `cortiq verify` y hashes SHA-256 publicados.
+- Tres puntos de operacion (3B, 8B, 30B) con perfiles de 4 y 8 bits para ajustar calidad frente a memoria y ancho de banda.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo (hasta 128K tokens) y razonamiento explicito, lo que permite mantener el historial completo de una interaccion y justificar respuestas complejas.
-- Generacion de codigo en produccion: soporta tool calling y puede integrarse en pipelines de CI/CD para autocompletar, revisar o documentar codigo, ejecutandose en CPU o GPU sin dependencias de Python.
-- Razonamiento matematico y logico: el modo thinking permite descomponer problemas en pasos intermedios, util para tutoria, analisis financiero o verificacion de argumentos.
-- Procesamiento de documentos legales o tecnicos extensos: la ventana de 128K tokens permite analizar contratos, informes o codigo fuente completo en una sola pasada.
-- Despliegue en entornos sin GPU: los archivos CMF se ejecutan en CPU pura (por ejemplo, 11.9 tok/s para el 3B Q4TP en un Xeon de 96 hilos), lo que permite inferencia en servidores economicos o maquinas virtuales sin acelerador.
-- Aplicaciones multiplataforma: el mismo archivo CMF funciona en Windows (DX12), macOS (Metal) y Linux (Vulkan), lo que simplifica la distribucion de asistentes locales de escritorio o movil.
+- Asistente de atencion al cliente multi-turno: el 8B Q4TP (4,98 GB) cabe en una GPU de consumo y gestiona conversaciones largas con 131.072 tokens de contexto, manteniendo el historial completo sin truncar. La plantilla embebida garantiza que el formato de turnos coincida con el del modelo original.
+- Generacion de codigo en pipelines de CI/CD: el 3B Q4TP decodifica a 176 tok/s en una RTX A5000 y arranca en 0,87 s con prompts de 4096 tokens, lo que permite integrarlo como paso de revision o generacion de parches con latencia interactiva y sin dependencias de Python en la imagen del runner.
+- Despliegue en estaciones de trabajo sin GPU dedicada: el mismo archivo CMF corre en CPU o en Vulkan sobre graficas integradas Intel o AMD, util para herramientas internas de documentacion o resumen donde el throughput no es critico.
+- Razonamiento por lotes con modo thinking: el 30B Q4TP (15,64 GB) a 28,9 tok/s en una RTX A5000 sirve para tareas de analisis, clasificacion compleja o extraccion estructurada donde prima la calidad sobre la latencia y se puede procesar en cola.
+- Agentes con tool calling: la plantilla incluye manejo de herramientas y multi-turno, de modo que el modelo puede encadenar llamadas a APIs en bucles de razonamiento de varios pasos sobre el 8B o el 30B.
+- Procesamiento multilingue en produccion: con 12 idiomas declarados, el 8B Q8_2F (8,81 GB) cubre traduccion, resumen y atencion en espanol, aleman, frances, japones o arabe desde un unico artefacto verificado por hash.
+- Auditoria y cumplimiento de artefactos: los hashes SHA-256 publicados y `cortiq verify` permiten validar que el binario desplegado corresponde exactamente al publicado, algo relevante en entornos regulados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card solo incluye mediciones de rendimiento de inferencia, que se resumen a continuacion.
+Rendimiento de decodificacion en regimen estable, medicion de un solo flujo con `cortiq bench --tokens 100 --core --ignore-eos`, excluyendo carga de modelo y prefill:
 
-| Modelo | Perfil | Tamano archivo | Decode estable (A40 Vulkan) | Prefill (A40) | Primer token |
-|---|---|---|---|---|---|
-| Granite 4.2 3B | q4tp | 2.17 GB | 89.5 tok/s | 80.3 tok/s | 0.58 s |
-| Granite 4.2 3B | q8_2f | 3.68 GB | 60.6 tok/s | 47.5 tok/s | 0.93 s |
-| Granite 4.2 8B | q4tp | 4.98 GB | pendiente de medicion | no disponible | no disponible |
-| Granite 4.2 8B | q8_2f | 8.81 GB | pendiente de medicion | no disponible | no disponible |
-| Granite 4.2 30B | q4tp | pendiente de conversion | no disponible | no disponible | no disponible |
-| Granite 4.2 30B | q8_2f | pendiente de conversion | no disponible | no disponible | no disponible |
+| Modelo | Archivo | A40 Vulkan | RTX A5000 CUDA | RTX A5000 Vulkan |
+|---|---|---:|---:|---:|
+| Granite 4.2 3B | q4tp | 89,5 tok/s | 176,2–176,4 tok/s | 131–135 tok/s |
+| Granite 4.2 3B | q8_2f | 60,6 tok/s | no disponible | no disponible |
+| Granite 4.2 8B | q4tp | 49,9 tok/s | 99,5–99,7 tok/s | 80–81 tok/s |
+| Granite 4.2 8B | q8_2f | 30,9 tok/s | no disponible | no disponible |
+| Granite 4.2 30B | q4tp | 22,9 tok/s | 28,9 tok/s | 28,6–28,9 tok/s |
+| Granite 4.2 30B | q8_2f | 5,28 tok/s (prefijo dinamico 55/64 capas) | no disponible | no disponible |
 
-En CPU (Xeon 6342, 96 hilos), el 3B Q4TP mide 11.9 tok/s en decode estable. Las mediciones son de un solo stream con `cortiq bench --tokens 100 --core --ignore-eos` y excluyen carga del modelo y prefill.
+Datos adicionales de prefill y latencia:
+
+| Metrica | Valor |
+|---|---|
+| 3B Q4TP, prefill (A40 Vulkan) | 80,3 tok/s, primer token en 0,58 s |
+| 3B Q8_2F, prefill (A40 Vulkan) | 47,5 tok/s, primer token en 0,93 s |
+| 3B Q4TP, prompt de 4096 tokens (A5000 CUDA) | 4672 tok/s, primer token en 0,87 s |
+| 8B Q4TP, prompt de 4096 tokens (A5000 CUDA) | 3007 tok/s, primer token en 1,36 s |
+| 30B Q8_2F en A40 | pico de 43.036 MiB sobre 46.068 MiB disponibles |
+
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el 3B Q4TP ocupa 2.17 GB, el 3B Q8_2F 3.68 GB, el 8B Q4TP 4.98 GB y el 8B Q8_2F 8.81 GB. El 30B esta pendiente de conversion.
-- GPU recomendadas: los archivos se ejecutan via Vulkan en NVIDIA, AMD e Intel; las mediciones se realizaron en una NVIDIA A40. Tambien soportan DX12 (Windows) y Metal (Apple Silicon).
-- Cabe en GPU de consumo: el 3B Q4TP cabe en cualquier GPU moderna con 4 GB o mas; el 8B Q4TP cabe en una RTX 3060 de 12 GB o similar. El 30B requerira una GPU de 24 GB o mas en Q4TP.
-- Opciones de despliegue: runtime Cortiq (`cortiq run`), sin Python, PyTorch ni CUDA. Se puede forzar CPU con `CMF_GPU=0` y limitar VRAM con `CMF_GPU_VRAM_MB`.
-- Latencia y throughput: en A40, el 3B Q4TP alcanza 89.5 tok/s en decode estable y 80.3 tok/s en prefill; en CPU Xeon de 96 hilos, 11.9 tok/s. Los modelos de 8B y 30B aun no tienen mediciones publicadas.
-- Los pesos se mantienen mapeados en memoria del sistema, por lo que un archivo mayor que la VRAM disponible sigue ejecutandose (con menor rendimiento) en lugar de fallar al cargar.
+- VRAM estimada segun tamano de archivo mas overhead de runtime: 3B Q4TP ~2,2 GB, 3B Q8_2F ~3,7 GB, 8B Q4TP ~5,0 GB, 8B Q8_2F ~8,8 GB, 30B Q4TP ~15,6 GB, 30B Q8_2F ~29,3 GB.
+- GPU de consumo: el 3B y el 8B Q4TP caben en tarjetas de 8 GB y 12 GB respectivamente; el 8B Q8_2F requiere 12–16 GB; el 30B Q4TP encaja en 24 GB (RTX 3090, 4090, A5000).
+- GPU profesionales: A40 (46 GB) ejecuta todos los perfiles, con el 30B Q8_2F operando en modo de prefijo dinamico (55 de 64 capas en GPU, 9 capas en host). A100 y H100 no aparecen en las mediciones publicadas.
+- El 30B Q8_2F no cabe completo en una GPU de 24 GB.
+- Despliegue: runtime Cortiq exclusivamente (`cargo install cortiq-cli`, con `--features cuda` para el backend CUDA, que requiere driver NVIDIA y librerias CUDA 12.x). No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, ya que el formato CMF es propietario de este runtime.
+- Throughput y latencia: ver tabla de benchmarks. El 3B Q4TP alcanza 176 tok/s de decodificacion en RTX A5000 con CUDA y 4672 tok/s de prefill sobre 4096 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| infosave/Granite-4.2-cmf (3B/8B/30B) | 3B, 8B, 30B | 128K nativo | CMF cuantizado (Q4TP/Q8_2F) | Apache 2.0 | Ejecucion sin Python/CUDA, multiplataforma |
-| ibm-granite/granite-4.2-3b/8b/30b (originales) | 3B, 8B, 30B | 128K nativo (512K documentado) | bf16 (safetensors) | Apache 2.0 | Requiere PyTorch y GPU con suficiente VRAM |
-| Modelos de razonamiento de tamano similar (Qwen3, Llama 3.3, etc.) | variable | variable | variable | variable | No hay datos comparativos en la informacion disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato / runtime | Notas |
+|---|---|---:|---|---|---|
+| Granite-4.2-cmf (este) | 3B / 8B / 30B | 131.072 | Apache 2.0 | CMF / Cortiq | Cuantizacion mixta Q4TP y Q8_2F, multiplataforma sin Python |
+| IBM Granite 4.2 original | 3B / 8B / 30B | 131.072 (512K documentado) | Apache 2.0 | safetensors / transformers | Pesos bf16 de referencia; requiere PyTorch y ~2x memoria frente a Q8_2F |
+| Alternativas GGUF de la misma familia | 3B / 8B / 30B | 131.072 | Apache 2.0 | GGUF / llama.cpp, Ollama | Ecosistema de herramientas mucho mas amplio; sin perfil q8_2f de doble campo |
+| Familias densas comparables de 7–8B (p. ej. Llama 3.1 8B, Qwen2.5 7B) | 7–8B | 128K aprox. | licencias propias | safetensors, GGUF | No disponible comparacion de calidad medida en la informacion proporcionada |
 
-La comparativa directa con otros modelos de razonamiento (Qwen3, Llama 3.3, DeepSeek-R1, etc.) no esta disponible por falta de datos de benchmarks en la informacion proporcionada. La ventaja principal de este repositorio frente a los originales de IBM es la portabilidad del formato CMF y la reduccion de requisitos de hardware, manteniendo la misma arquitectura y plantilla de chat.
+No se han publicado comparaciones de calidad (benchmarks) frente a estos modelos en la informacion disponible; la comparativa se limita a parametros, contexto, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- La extension de contexto a 512K tokens documentada por IBM no esta implementada en estos archivos CMF; el contexto maximo real es de 131 072 tokens.
-- Los archivos de 30B estan pendientes de conversion y no se pueden descargar aun.
-- No se han publicado benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible, por lo que no es posible verificar el impacto de la cuantizacion en tareas estandar.
-- El rendimiento en Metal (Apple Silicon) y DX12 (Windows) aun no ha sido medido; solo hay datos de Vulkan en A40 y CPU.
-- El soporte para Granite 4.2 en Cortiq es mas reciente que la version empaquetada 0.6.3; es necesario compilar el runtime desde el repositorio de GitHub hasta la proxima publicacion.
-- Los modelos base Granite 4.2 pueden heredar sesgos de los datos de entrenamiento de IBM; no se detallan en este repositorio.
-- La cuantizacion Q4TP es un perfil mixto, no una cuantizacion uniforme de 4 bits; los usuarios que necesiten maxima fidelidad deberian usar la variante Q8_2F.
+- No hay datos publicados de evaluacion de calidad para estos artefactos cuantizados: no se puede asumir que Q4TP o Q8_2F igualen al checkpoint bf16 original sin medirlo.
+- La cuantizacion a 4 bits introduce degradacion no cuantificada en esta ficha; Q8_2F es el perfil de mayor calidad y el preferido cuando la memoria lo permite, segun el propio autor.
+- El contexto anunciado es de 131.072 tokens; la extension a 512K que documenta IBM no esta implementada ni medida en estos archivos, por lo que no debe asumirse.
+- Dependencia de un runtime unico: el formato CMF solo lo lee Cortiq. No hay integracion con vLLM, llama.cpp, Ollama, TGI ni con el ecosistema transformers, lo que limita portabilidad y opciones de escalado.
+- El backend CUDA es una feature de compilacion que exige driver NVIDIA y CUDA 12.x; en otras plataformas se depende de Vulkan, DX12, Metal o CPU, con el rendimiento correspondientemente menor.
+- El 30B Q8_2F excede la memoria de GPU de 24 GB y en A40 opera con 9 capas en host, con una caida de throughput a 5,28 tok/s; no es un perfil apto para servicio interactivo.
+- Riesgo de alucinacion y sesgos: no se documentan en la informacion disponible evaluaciones de sesgo ni tasas de alucinacion para Granite 4.2 en este repositorio.
+- El autor del repositorio es `infosave`, no IBM: los artefactos son derivados de terceros. La licencia Apache 2.0 del modelo base se mantiene, pero la procedencia de la cuantizacion debe validarse con los hashes SHA-256 publicados.
+- El modo thinking esta activo por defecto en la plantilla; en produccion conviene usar `--no-think` para respuestas directas y evitar latencia y tokens extra.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/infosave/Granite-4.2-cmf
-- Coleccion oficial IBM Granite 4.2: https://huggingface.co/collections/ibm-granite/granite-42-language-models
-- Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
-- Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
-- Repositorio del formato CMF en Hugging Face: https://huggingface.co/infosave/cmf
-- Repositorio GitHub de Cortiq/CMF: https://github.com/infosave2007/cmf
+- Modelo base 30B: https://huggingface.co/ibm-granite/granite-4.2-30b
+- Modelo base 8B: https://huggingface.co/ibm-granite/granite-4.2-8b
+- Modelo base 3B: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Blog de anuncio de Granite 4.2: https://huggingface.co/blog/ibm-granite/granite-4-2
+- Runtime Cortiq: `cargo install cortiq-cli` (no se proporciona URL del repositorio en la informacion disponible)

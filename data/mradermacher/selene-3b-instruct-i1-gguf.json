@@ -22,8 +22,6 @@
     "qwen2",
     "en",
     "pt",
-    "base_model:Syradevops/Selene-3B-Instruct",
-    "base_model:quantized:Syradevops/Selene-3B-Instruct",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -31,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2083,
+  "downloads_30d": 2093,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

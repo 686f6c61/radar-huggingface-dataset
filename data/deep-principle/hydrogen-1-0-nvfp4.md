@@ -2,91 +2,96 @@
 
 ## Resumen
 
-Hydrogen-1.0-NVFP4 es la versión cuantizada en NVFP4 de Hydrogen-1.0, un modelo de generación de texto orientado a la resolución de problemas científicos y a la asistencia en investigación, desarrollado por Deep Principle. El modelo parte de GLM-5.3, de zai-org, y se distribuye bajo licencia MIT, lo que facilita su uso comercial y su integración en herramientas de investigación. Esta variante concreta del repositorio contiene únicamente los pesos cuantizados en NVFP4, pensados para ejecutarse en hardware NVIDIA Blackwell.
+Hydrogen-1.0-NVFP4 es la version cuantizada en NVFP4 del modelo cientifico Hydrogen-1.0, desarrollado por Deep Principle sobre la base de GLM-5.3 (zai-org). Se trata de un modelo de generacion de texto orientado a la resolucion de problemas cientificos y la asistencia a la investigacion: derivaciones, explicaciones tecnicas y organizacion de respuestas a preguntas abiertas de investigacion. Esta variante concreta no es un modelo nuevo, sino un checkpoint cuantizado pensado para despliegue eficiente en hardware NVIDIA Blackwell.
 
-La relevancia de esta ficha radica en que combina una ventana de contexto declarada de 1M de tokens (con un máximo de salida de 128K) con una cuantización agresiva a 4 bits que reduce los requisitos de memoria frente a la versión BF16. El autor indica que el modelo ha sido probado en 8 GPU NVIDIA B300 con SGLang, y ofrece también una variante MXFP4 para AMD Instinct. No se publican detalles sobre arquitectura interna, número de parámetros ni composición del dataset de entrenamiento.
+El modelo completo cuenta con 380.989 millones de parametros (segun los pesos en safetensors) y una arquitectura GLM MoE con atencion dispersa (tag `glm_moe_dsa`). Declara una longitud de contexto de 1M de tokens y una salida maxima de 128K tokens, aunque el ejemplo de despliegue del autor limita el contexto servido a 262.144 tokens. La cuantizacion NVFP4 se ha realizado con NVIDIA ModelOpt y el equipo reporta pruebas sobre 8x NVIDIA B300 con SGLang. El repositorio ocupa 464,2 GB.
 
-Deep Principle no divulga los métodos, procedimientos ni datos de entrenamiento de Hydrogen-1.0, por lo que la información disponible se limita a la model card y a la configuración de despliegue. La evaluación declarada se centra en preguntas científicas de opción múltiple y en problemas de investigación abiertos, sin que se hayan publicado resultados numéricos de benchmarks.
+Su relevancia actual radica en que permite ejecutar un modelo de casi 381B parametros con expertos en FP4 sobre GPUs Blackwell, manteniendo en BF16 las partes sensibles (atencion, router, embeddings, lm_head, expertos compartidos y capa MTP) y usando FP8 para los MLP densos de las capas 0-2 y para la cache KV. La licencia es MIT, lo que facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base GLM-5.3; se mencionan expertos routed y shared, MLP densos y capa MTP, lo que sugiere una arquitectura MoE, sin confirmación explícita) |
-| Parametros totales | no disponible |
+| Arquitectura | GLM MoE con atencion dispersa (tag `glm_moe_dsa`); transformer con mezcla de expertos |
+| Parametros totales | 380.989.135.104 (aprox. 381B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 1M tokens declarados; 262144 tokens en el ejemplo de despliegue con SGLang |
-| Longitud maxima de salida | 128K tokens |
-| Tipos de cuantizacion | NVFP4 (expertos routed y shared, con escalas de activación calibradas); FP8 en MLP densos de capas 0-2; KV cache FP8; BF16 en atención, router, embeddings, lm_head y capa MTP. Existe también versión BF16 y versión MXFP4 |
+| Longitud de contexto | 1M tokens declarados; 262.144 tokens en el ejemplo de despliegue del autor |
+| Salida maxima | 128K tokens |
+| Tipos de cuantizacion | NVFP4 (expertos enrutados), FP8 (MLP densos capas 0-2 y cache KV); resto en BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | checkpoint NVFP4 exportado con NVIDIA ModelOpt (incluye `hf_quant_config.json`, `config.json`, `generation_config.json`, tokenizer y chat template) |
+| Formato de pesos | safetensors (checkpoint cuantizado con ModelOpt, incluye `hf_quant_config.json`) |
+| Modelo base | deep-principle/Hydrogen-1.0 (a su vez basado en GLM-5.3) |
+| Herramienta de cuantizacion | NVIDIA ModelOpt |
+| Tamano del repositorio | 464,2 GB |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo base más allá de referencias indirectas. La configuración de cuantización menciona expertos routed y shared, MLP densos en las capas 0-2, un router, embeddings, lm_head y una capa MTP (multi-token prediction), lo que apunta a un transformer con mezcla de expertos (MoE) y decodificación especulativa mediante MTP, aunque el autor no lo confirma explícitamente. El modelo deriva de GLM-5.3, de zai-org.
+Hydrogen-1.0 se construye sobre GLM-5.3, un transformer con mezcla de expertos (MoE) y atencion dispersa, segun el tag `glm_moe_dsa` del repositorio. Esta variante NVFP4 aplica cuantizacion de 4 bits (NVFP4) a los expertos enrutados con escalas de activacion calibradas, emplea FP8 para los MLP densos de las capas 0-2 y mantiene en BF16 los expertos compartidos, la atencion, el router, los embeddings, el `lm_head` y la capa MTP (multi-token prediction). La configuracion incluye ajustes de cache KV en FP8.
 
-Deep Principle declara que no divulga públicamente los métodos, procedimientos ni datos de entrenamiento de Hydrogen-1.0, ni el número de tokens utilizados, ni si hubo RLHF, DPO u otras fases de alineamiento. La cuantización se realizó con NVIDIA ModelOpt: los expertos routed y shared se almacenan en NVFP4 con escalas de activación calibradas, los MLP densos de las capas 0-2 en FP8, la caché KV en FP8, y la atención, el router, los embeddings, el lm_head y la capa MTP permanecen en BF16. Los archivos `hf_quant_config.json` y `config.json` documentan este esquema y SGLang necesita ambos para cargar el checkpoint.
+No se publican detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; el autor remite al blog tecnico y senala explicitamente que los datasets y recetas completas no se liberan con los pesos. La innovacion destacable de esta version es el pipeline de cuantizacion con ModelOpt y la preservacion selectiva de precision en las capas criticas, ademas de la capa MTP que sugiere decodificacion especulativa o prediccion multi-token.
 
 ## Capacidades
 
-- Generación de texto orientada a preguntas científicas, explicación de derivaciones y organización de respuestas a problemas de investigación abiertos.
-- Razonamiento multi-paso sobre problemas científicos, con soporte de parser de razonamiento (`--reasoning-parser glm45`) en SGLang.
-- Soporte de tool calling / function calling, con parser específico (`--tool-call-parser glm47`).
-- Ventana de contexto declarada de 1M tokens y hasta 128K tokens de salida, sujeta al presupuesto de contexto desplegado.
-- Capacidades multilingües: no se especifican los idiomas soportados; la model card incluye una versión en chino del README, pero no confirma el soporte de idiomas.
-- Capacidad de decodificación especulativa mediante capa MTP (multi-token prediction).
-- No se declaran capacidades de visión ni de audio.
+- Generacion de texto conversacional y asistencia a la investigacion cientifica.
+- Razonamiento cientifico: derivaciones, explicacion de supuestos y organizacion de respuestas a problemas abiertos.
+- Modo de razonamiento configurable mediante `reasoning_effort` (por ejemplo, `max`) en el chat template.
+- Soporte de tool calling: el despliegue de referencia incluye `--tool-call-parser glm47`.
+- Soporte de agentes y razonamiento multi-paso, orientado a flujos de trabajo de investigacion (formular preguntas, planificar, analizar evidencia, iterar).
+- Capacidades demostradas en el blog tecnico: computacion cientifica, exploracion de redes de reaccion, analisis de estructuras por RMN y planificacion experimental, combinando el modelo con herramientas externas.
+- Capacidad multilingue: no disponible (la model card incluye una version en chino del README, pero no se detallan idiomas soportados).
+- Capacidad de vision o audio: no disponible.
 
 ## Casos de uso
 
-- Asistencia en investigación científica: el modelo puede explicar ecuaciones, derivaciones y supuestos, y proponer enfoques de solución para problemas abiertos, gracias a su contexto declarado de 1M tokens que permite incorporar literatura extensa en la misma conversación.
-- Revisión de manuscritos y borradores técnicos: con hasta 128K tokens de salida, puede generar borradores estructurados de secciones metodológicas o discusiones para revisión posterior por expertos.
-- Tutoría y exploración educativa: responde preguntas científicas de opción múltiple y problemas abiertos, adecuado para entornos de formación donde el usuario valida las respuestas con fuentes primarias.
-- Despliegue en infraestructura Blackwell: la cuantización NVFP4 permite servir el modelo en 8 GPU B300 con SGLang, reduciendo el coste de memoria frente a BF16 para equipos con hardware NVIDIA de última generación.
-- Integración como herramienta de agente científico: el soporte de tool calling y de parser de razonamiento permite encadenar llamadas a calculadoras simbólicas, bases de datos bibliográficas o motores de experimentación dentro de un pipeline multi-paso.
-- Estudio del comportamiento de modelos cuantizados: investigadores pueden comparar las salidas de la variante NVFP4 con las de BF16 y MXFP4 para analizar el impacto de la cuantización en tareas científicas.
-- Procesamiento de documentación técnica extensa: con contexto largo, puede resumir y organizar respuestas a partir de corpus de artículos, patentes o informes técnicos, siempre con verificación humana.
+- Asistencia a derivaciones cientificas: el modelo puede explicar paso a paso derivaciones fisicas o matematicas (por ejemplo, el periodo del pendulo simple y los limites de la aproximacion de angulo pequeno), indicando supuestos y condiciones de validez, gracias a su modo de razonamiento configurable.
+- Exploracion de redes de reaccion: combinado con herramientas externas de quimica computacional, puede ayudar a plantear rutas de reaccion y analizar resultados, como se documenta en el blog tecnico del autor.
+- Analisis de estructuras por RMN: el modelo puede asistir en la interpretacion y organizacion de datos estructurales dentro de un entorno de investigacion, con revision cientifica posterior obligatoria.
+- Planificacion experimental: puede estructurar hipotesis, variables, controles y pasos de un experimento, y ayudar a iterar el diseno a partir de la evidencia recogida.
+- Procesamiento de documentacion cientifica de gran volumen: con contexto de hasta 1M tokens declarados (262.144 en el despliegue de referencia), puede ingerir articulos, informes o transcripciones extensas y resumir o contrastar su contenido.
+- Agentes de investigacion multi-paso: gracias al soporte de tool calling y parser de funciones, puede integrarse en pipelines que consulten bases de datos, ejecuten calculos o recuperen literatura y compongan una respuesta final.
+- Atencion a usuarios tecnicos especializados: un asistente conversacional para equipos de I+D que necesiten explicaciones con supuestos explicitos y trazabilidad del razonamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica únicamente que la evaluación se centra en preguntas científicas de opción múltiple y en problemas de investigación abiertos, sin ofrecer cifras.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El autor no publica el número de parámetros ni el tamaño del checkpoint, por lo que no puede calcularse una estimación fiable.
-- GPU recomendadas: NVIDIA Blackwell, probado por el equipo en 8x NVIDIA B300. La variante NVFP4 requiere un runtime compatible con NVIDIA Blackwell.
-- Cabe en GPU consumer: no disponible; no se especifica. La cuantización NVFP4 requiere soporte de hardware Blackwell, lo que excluye generaciones anteriores de GPU consumer.
-- Opciones de despliegue: SGLang con `--quantization modelopt_fp4` y `--kv-cache-dtype fp8_e4m3`. El ejemplo del autor usa `--tp 8 --trust-remote-code --context-length 262144 --mem-fraction-static 0.85 --chunked-prefill-size 16384`. No se mencionan vLLM, llama.cpp, Ollama ni TGI para esta variante.
+- VRAM estimada: no disponible de forma exacta. El repositorio pesa 464,2 GB; el despliegue de referencia usa 8x NVIDIA B300 con tensor parallelism 8 y `--mem-fraction-static 0.85`.
+- GPU recomendadas: NVIDIA Blackwell (B300) para NVFP4; el autor indica que se ha probado en 8x B300. Para la version MXFP4, el equipo reporta pruebas en AMD Instinct MI350X con ATOM.
+- GPU de consumo: no disponible; por el tamano (381B parametros y 464 GB de checkpoint) no es viable en GPUs de consumo convencionales.
+- Opciones de despliegue: SGLang con `--quantization modelopt_fp4 --kv-cache-dtype fp8_e4m3`; se requiere un runtime compatible con el formato de checkpoint NVFP4 exportado por ModelOpt. Otras opciones (vLLM, llama.cpp, Ollama, TGI) no estan documentadas para este checkpoint.
 - Latencia y throughput: no disponibles.
-- Nota: el comando de ejemplo limita el contexto desplegado a 262144 tokens; no habilita los 1M declarados. Ampliar el límite requiere soporte del runtime y memoria suficiente. Debe mantenerse junto el tokenizer, la chat template, `generation_config.json`, las configuraciones del modelo y de cuantización, y el índice de pesos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware de referencia |
 |---|---|---|---|---|---|
-| Hydrogen-1.0-NVFP4 | no disponible | 1M declarados (262144 en ejemplo) | NVFP4 + FP8 + BF16 | MIT | Hugging Face |
-| Hydrogen-1.0 (BF16) | no disponible | 1M declarados | BF16 | MIT | Hugging Face |
-| Hydrogen-1.0-MXFP4 | no disponible | 1M declarados | MXFP4 | MIT | Hugging Face |
-| GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (zai-org) |
-
-No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
+| Hydrogen-1.0-NVFP4 (este) | 381B | 1M declarados (262.144 en despliegue) | NVFP4 + FP8 | MIT | 8x NVIDIA B300 (SGLang) |
+| Hydrogen-1.0 (BF16) | 381B | 1M declarados | BF16 | MIT | Memoria suficiente para pesos sin cuantizar |
+| Hydrogen-1.0-MXFP4 | 381B | 1M declarados | MXFP4 | MIT | AMD Instinct MI350X con ATOM |
+| GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo puede producir hechos, cálculos, ecuaciones, referencias o explicaciones científicas incorrectas; una respuesta detallada o segura no garantiza su corrección. Deben verificarse las afirmaciones clave con literatura primaria, cálculos independientes o experimentos.
-- El rendimiento puede variar entre disciplinas, idiomas, formatos de tarea y longitudes de entrada. Los datos de entrenamiento pueden introducir sesgos de selección, culturales o lingüísticos.
-- La capacidad de contexto largo no garantiza la recuperación, comprensión o uso fiable de cada detalle del input.
-- La cuantización NVFP4 puede afectar a las salidas; el autor no declara una medición del cambio de precisión para esta versión, por lo que debe validarse para la tarea prevista.
-- Las salidas no deben tratarse como hallazgos experimentales verificados ni como base suficiente para decisiones que afecten a la salud, la seguridad u otros resultados consecuentes.
-- El comando de despliegue de ejemplo limita el contexto a 262144 tokens; los 1M declarados requieren configuración adicional y memoria suficiente.
-- No se especifican los idiomas soportados, lo que dificulta evaluar su idoneidad para usuarios hispanohablantes.
-- Aunque la licencia es MIT, debe revisarse el archivo LICENSE del repositorio y las condiciones del modelo base GLM-5.3 para usos comerciales.
+- Modelo orientado a investigacion cientifica: el propio autor advierte que las salidas deben evaluarse frente a los supuestos, restricciones y evidencia de cada tarea, y requieren revision cientifica.
+- Riesgo de alucinacion: no se documentan tasas ni evaluaciones de fidelidad; en dominios cientificos el riesgo de afirmaciones incorrectas es relevante.
+- Contexto efectivo limitado en el despliegue de referencia: el comando de ejemplo limita el contexto a 262.144 tokens, no al 1M declarado; ampliarlo exige soporte del runtime y memoria suficiente.
+- Idiomas soportados no documentados: no se puede garantizar calidad multilingue fuera de los idiomas no especificados por el autor.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Dependencia de hardware especifico: la version NVFP4 requiere runtime compatible con NVIDIA Blackwell y el formato ModelOpt; no hay soporte documentado para GPUs mas antiguas ni para backends alternativos.
+- Requisitos de integridad del checkpoint: deben conservarse juntos tokenizer, chat template, `generation_config.json`, configuraciones de modelo y cuantizacion, y el indice de pesos, para respetar los ajustes de fin de turno y parada.
+- Licencia MIT: permite uso comercial, pero el autor no libera datasets ni recetas de entrenamiento, lo que limita la reproducibilidad.
+- No se han publicado benchmarks: la evaluacion comparativa con alternativas no es posible con los datos disponibles.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/deep-principle/Hydrogen-1.0-NVFP4
-- Versión BF16: https://huggingface.co/deep-principle/Hydrogen-1.0
-- Versión MXFP4: https://huggingface.co/deep-principle/Hydrogen-1.0-MXFP4
+- Hugging Face (NVFP4): https://huggingface.co/deep-principle/Hydrogen-1.0-NVFP4
+- Modelo base BF16: https://huggingface.co/deep-principle/Hydrogen-1.0
+- Version MXFP4: https://huggingface.co/deep-principle/Hydrogen-1.0-MXFP4
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
-- Contacto del autor: info@deepprinciple.com
+- Blog tecnico: https://blog.deepprinciple.com/introducing-hydrogen-1.0/
+- Guia de uso: docs/USAGE.md (referenciada en la model card)
+- README en chino: README.zh-CN.md (referenciado en la model card)
+- Contacto: info@deepprinciple.com

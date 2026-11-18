@@ -2,84 +2,91 @@
 
 ## Resumen
 
-Este modelo es una conversión cuantizada del modelo GLM-5.3 de Z.ai, realizada por el usuario Justvugg y empaquetada en el formato de contenedor colibri. Se trata de un modelo de Mixture of Experts (MoE) de aproximadamente 744.000 millones de parámetros, con 256 expertos de los que 8 se activan por token. La conversión almacena los expertos enrutados en int4 con group size 64 y los componentes densos en 8 bits, ocupando 419,3 GB en disco.
+GLM-5.3-colibri-int4-g64 es una conversión cuantizada a int4 del modelo GLM-5.3 desarrollado por Z.ai (zai-org). No se trata del checkpoint oficial, sino de una repaquetación de los pesos originales en el formato de contenedor que utiliza colibrì, un motor de inferencia en C orientado a streaming de expertos desde disco. El autor de la conversión es Justvugg, también responsable del motor colibrì. El objetivo declarado es ejecutar un modelo de clase 744B en una máquina con unos 25 GB de RAM, manteniendo los expertos enrutados en disco y leyendo solo aquellos que cada token selecciona.
 
-Su objetivo principal es ejecutar un modelo de esta clase en máquinas con alrededor de 25 GB de RAM, manteniendo los expertos en disco y leyendo únicamente los que cada token selecciona, lo que permite usar hardware sin GPU. Este modelo no es un checkpoint oficial: los pesos pertenecen a Z.ai y solo se ha cambiado el formato de almacenamiento. Es relevante para desarrolladores e investigadores que necesitan ejecutar un LLM de 744B en entornos con recursos limitados, aunque tiene restricciones de licencia y formatos de ejecución.
+La relevancia de esta ficha reside en la técnica de despliegue más que en el modelo en sí: permite inferencia de un MoE de gran escala en CPU con presupuesto de memoria muy ajustado (RSS total de aproximadamente 13,6 GB con un presupuesto de 18 GB). El repositorio ocupa 419,3 GB distribuidos en 141 shards, con 10,6 GB de pesos densos residentes en memoria y expertos enrutados cuantizados a int4 con group size 64, de 21,2 MB cada uno.
+
+El modelo base GLM-5.3 comparte geometría con GLM-5.2 según la propia model card de Z.ai; todas las mejoras provienen del post-entrenamiento, no de cambios arquitectónicos. Esta conversión no incluye el módulo MTP (multi-token prediction) y no carga en transformers ni en vLLM: solo funciona con el motor colibrì.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en Mixture of Experts (MoE) |
-| Parámetros totales | ~744B |
-| Parámetros activos | No disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | int4 con group size 64 (expertos enrutados); 8 bits para componentes densos y E/S |
+| Arquitectura | MoE (glm_moe_dsa) con 78 capas, 75 de ellas sparse |
+| Parámetros totales | no disponible (modelo de clase 744B según la model card) |
+| Parámetros activos | 8 expertos activos por token de 256 totales |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | int4 group-scaled (group size 64) para expertos enrutados; 8-bit para pesos densos y de E/S |
 | Idiomas soportados | en, zh |
-| Licencia | glm-5.3 (other) |
-| Formato de pesos | Colibri (contenedor propietario del motor colibri) |
+| Licencia | other (glm-5.3) |
+| Formato de pesos | contenedor propietario de colibrì (141 shards), no compatible con safetensors/GGUF estándar |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base GLM-5.3 es un transformer basado en Mixture of Experts de 78 capas, de las cuales 75 son sparsas, con 256 expertos y 8 activos por token. Según el autor, el modelo base de GLM-5.3 es idéntico al de GLM-5.2; todas las mejoras provienen del post-entrenamiento. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni las técnicas de alineación utilizadas.
+La arquitectura subyacente es un transformer MoE con 78 capas (75 sparse), 256 expertos y 8 expertos activos por token, identificada en los tags como glm_moe_dsa. Los pesos proceden del release oficial zai-org/GLM-5.3, convertidos con el conversor de colibrì usando la configuración ebits=4, xbits=4, io_bits=8, group_size=64. Los detalles de entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no están disponibles en la información proporcionada; la model card de Z.ai indica que GLM-5.3 reutiliza el modelo base de GLM-5.2 y que todas las ganancias provienen del post-entrenamiento.
 
-La innovación técnica de este repositorio no está en la arquitectura, sino en el método de conversión: se empaqueta el modelo en el contenedor colibri para permitir expert-streaming desde disco. Este formato no es compatible con transformers ni vLLM, y solo funciona con el motor colibri. La conversión se realizó con los parámetros ebits=4, xbits=4, io_bits=8 y group_size=64, y no incluye MTP (Multi-Token Prediction).
+La innovación técnica destacable no está en el modelo sino en el formato de despliegue: streaming de expertos desde disco, con solo 10,6 GB de pesos densos residentes y lectura bajo demanda de los expertos seleccionados por token. El módulo MTP no está incluido en esta conversión, por lo que no hay decodificación especulativa multi-token. El autor verificó los 141 shards (116.915 tensores) en cuanto a validez de cabeceras y truncamiento, y confirmó salida byte-idéntica entre dos rutas distintas de fetch de expertos con semilla fija; no se ha realizado comparación token-exacta contra la implementación de referencia.
 
 ## Capacidades
 
-- Generación de texto coherente: verificado por el autor tras la conversión. No se especifican tareas de razonamiento, código o matemáticas.
-- Soporte de idiomas: inglés y chino (en, zh), según la ficha de Hugging Face.
-- Interfaz de conversación mediante `c/coli chat`, que permite usar el modelo en modo chat una vez cargado.
-- No se mencionan capacidades de visión, audio, tool calling, function calling, agentes o multi-step reasoning en la información disponible.
-- La conversión no incluye MTP (Multi-Token Prediction), lo que reduce posibles ganancias de velocidad en predicción múltiple.
+- Generación de texto en inglés y chino.
+- Razonamiento y conocimiento general heredados del modelo base GLM-5.3 (sin benchmarks publicados en esta conversión).
+- Capacidades de código y matemáticas del modelo base, sujetas a la pérdida por cuantización int4 de los expertos.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Modo thinking extendido: no disponible en la información proporcionada.
+- Ejecución en CPU con presupuesto de memoria reducido gracias al streaming de expertos.
 
 ## Casos de uso
 
-- Experimentación de modelos MoE en entornos sin GPU: investigadores con un servidor de CPU y 25 GB de RAM pueden ejecutar el modelo localmente para estudiar el comportamiento de un MoE de 744B, midiendo el coste de leer expertos desde disco.
-- Análisis de texto multilingüe en inglés y chino: aplicación que procesa documentos en ambos idiomas, como expedientes judiciales, contratos financieros o artículos académicos, aprovechando el tamaño de 744B para comprensión de contexto semántico.
-- Prototipado de chatbots para entornos con datos sensibles: una empresa que no puede enviar datos a la nube puede desplegar este modelo en local con CPU, siempre que la licencia lo permita.
-- Investigación sobre eficiencia de inferencia en MoE: comparar el coste de streaming de expertos frente al modelo completo, para publicar trabajos sobre técnicas de memory efficiency.
-- Demostraciones educativas: mostrar a estudiantes de IA cómo un modelo de 744B puede ejecutarse en hardware modesto gracias a la cuantización int4 y el expert-streaming.
-- Procesamiento batch de texto con baja exigencia de latencia: tareas de generación asíncrona, como resúmenes de bases de datos de documentos, tolerando la lectura desde disco.
-- Evaluación de la calidad de la cuantización: usar este modelo para analizar el impacto de la cuantización int4 con group size 64 en la calidad de salida comparándolo con el modelo base.
+- Inferencia de un MoE de clase 744B en hardware de consumo: con aproximadamente 13,6 GB de RSS total, permite ejecutar el modelo en una estación de trabajo con 25 GB de RAM y almacenamiento rápido (NVMe), sin GPU de gran memoria. Adecuado para laboratorios con recursos limitados que quieran estudiar el comportamiento de un modelo de gran escala.
+- Investigación sobre streaming de expertos: el formato colibrì permite medir latencia de fetch desde disco, throughput por token y sensibilidad al ancho de banda de almacenamiento, con una carga de trabajo reproducible sobre 141 shards.
+- Evaluación comparativa de cuantización int4: permite analizar la degradación de calidad frente al checkpoint FP8 original en tareas de generación y razonamiento, aunque no se ha publicado comparación token-exacta.
+- Prototipado de asistentes en inglés y chino: para demos internas o pruebas de concepto multilingües donde el requisito es coherencia de texto, no latencia interactiva.
+- Verificación de integridad de pesos: los 116.915 tensores fueron validados; útil como caso de estudio para pipelines de verificación de checkpoints cuantizados.
+- Reproducción de experimentos de decodificación determinista: la salida byte-idéntica con semilla fija entre distintas rutas de fetch facilita experimentos reproducibles en entornos de investigación.
+- Despliegue en entornos air-gapped o sin GPU: al funcionar únicamente con el motor colibrì en CPU, encaja en infraestructuras sin aceleradores dedicados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica que no se realizó una comparación token-exacta con la implementación de referencia.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de calidad (MMLU, HumanEval, GSM8K) ni de throughput o latencia para esta conversión. Lo único verificable es la integridad de los 141 shards y la coherencia de la salida generada.
 
 ## Requisitos de hardware
 
-- Espacio en disco: 419,3 GB en 141 shards.
-- Memoria RAM: alrededor de 25 GB para ejecutar el modelo en condiciones normales; el RSS total estimado es de unos 13,6 GB con un presupuesto de 18 GB. Los pesos densos residentes ocupan 10,6 GB.
-- VRAM: no requiere VRAM; se ejecuta en CPU.
-- Consumer GPU: no aplica, porque no usa GPU.
-- Despliegue: solo el motor colibri, mediante `c/coli chat` tras compilar con `make -C c colibri`. No es compatible con vLLM, Ollama, llama.cpp ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no aplica; el modelo está diseñado para inferencia en CPU.
+- RAM: aproximadamente 13,6 GB de RSS total con un presupuesto de 18 GB; pesos densos residentes de 10,6 GB.
+- Almacenamiento: 419,3 GB para los 141 shards, idealmente en NVMe por la lectura bajo demanda de expertos.
+- GPU recomendadas: no aplica; el motor colibrì no usa GPU según la información disponible.
+- ¿Cabe en GPU de consumo? No en el sentido habitual: no carga en transformers ni vLLM, y requiere el motor colibrì.
+- Opciones de despliegue: exclusivamente colibrì (`coli chat --model /ruta/al/directorio`), compilado con `make -C c colibri`.
+- Latencia y throughput: no disponibles; dependen del almacenamiento y del ancho de banda de lectura de los expertos (21,2 MB por experto, 8 activos por token).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Hardware requerido | Licencia |
-|---|---|---|---|---|
-| zai-org/GLM-5.3 (oficial) | ~744B | Transformers | Mucha RAM o GPU | glm-5.3 |
-| Justvugg/GLM-5.3-colibri-int4-g64 (este) | ~744B | Colibri | ~25 GB RAM | glm-5.3 |
-| Justvugg/GLM-5.3-Flash-colibri-int4-g64 | No disponible | Colibri | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GLM-5.3-colibri-int4-g64 | clase 744B, 8/256 expertos activos | no disponible | contenedor colibrì | glm-5.3 | Hugging Face, requiere colibrì |
+| zai-org/GLM-5.3 (original) | clase 744B | no disponible | pesos oficiales | glm-5.3 | Hugging Face |
+| zai-org/GLM-5.2 | misma geometría que GLM-5.3 | no disponible | pesos oficiales | no disponible | Hugging Face |
 
-No se han publicado benchmarks, por lo que no es posible comparar el rendimiento. A nivel arquitectónico, el modelo base GLM-5.3 es idéntico a GLM-5.2, según el autor, con la única diferencia de que GLM-5.3 ha recibido más post-entrenamiento.
+La comparación con alternativas de otros fabricantes (por ejemplo, MoE de escala similar) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un checkpoint oficial: los pesos son de Z.ai; esta conversión del usuario Justvugg no está respaldada por Z.ai y no se ha validado de forma exhaustiva.
-- No es compatible con los principales frameworks: no carga en transformers ni vLLM. Solo funciona con el motor colibri.
-- Etiqueta del modelo incorrecta: actualmente el motor colibri lo anuncia como GLM-5.2 744B, porque la configuración es idéntica a la de GLM-5.2. Los pesos son los de GLM-5.3, pero el nombre mostrado es erróneo.
-- Licencia glm-5.3: no es una licencia estándar. Debe revisarse antes de cualquier uso comercial; no se indica si el uso comercial es explícitamente permitido.
-- Idiomas limitados: solo inglés y chino. El rendimiento en otros idiomas es desconocido.
-- Requisitos de disco y RAM: 419,3 GB de espacio libre son necesarios. Una máquina con menos de 25 GB de RAM no podrá ejecutarlo.
-- No se ha verificado la equivalencia exacta de salida respecto al modelo original: el autor confirma que genera texto coherente y que la reproducción es byte-idéntica en dos rutas, pero no se ha hecho una comparación token a token con la implementación de referencia.
-- Sin datos de benchmarks: no hay resultados de MMLU, HumanEval, GSM8K ni similares para evaluar su calidad.
+- No es el checkpoint oficial: los pesos son de Z.ai, pero el almacenamiento y la cuantización son del autor de la conversión; no hay comparación token-exacta contra la implementación de referencia.
+- No carga en transformers ni en vLLM; solo funciona con el motor colibrì, lo que limita integración con ecosistemas estándar.
+- El motor etiqueta erróneamente el checkpoint como "GLM-5.2 744B" porque el `config.json` es indistinguible del de GLM-5.2; los pesos cargados son correctos, pero la etiqueta no.
+- Cuantización int4 de los expertos enrutados: riesgo de degradación de calidad frente al original FP8, no cuantificada.
+- MTP no incluido: sin decodificación especulativa multi-token, lo que reduce el throughput potencial.
+- Idiomas limitados a inglés y chino; sin soporte documentado de castellano.
+- Licencia "other" con nombre glm-5.3: conviene revisar los términos del modelo base antes de uso comercial.
+- Riesgo de alucinación y sesgos del modelo base: no documentados en la información proporcionada.
+- Latencia dependiente del almacenamiento: la lectura de expertos desde disco puede hacer inviable uso interactivo en discos lentos.
+- Longitud de contexto no disponible.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/Justvugg/GLM-5.3-colibri-int4-g64
-- Repositorio de colibri: https://github.com/JustVugg/colibri
-- Modelo base oficial: https://huggingface.co/zai-org/GLM-5.3
-- Conversión relacionada (Flash): https://huggingface.co/Justvugg/GLM-5.3-Flash-colibri-int4-g64
+- Repositorio Hugging Face: https://huggingface.co/Justvugg/GLM-5.3-colibri-int4-g64
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3
+- Motor colibrì: https://github.com/JustVugg/colibri

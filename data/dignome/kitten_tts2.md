@@ -2,104 +2,92 @@
 
 ## Resumen
 
-Kitten TTS 2 para audio.cpp es una conversión nativa al formato GGUF del modelo de síntesis de voz KittenML/kitten-tts-2, publicada por el usuario dignome y respaldada por Stellon Labs. El paquete integra en un único fichero el modelo de lenguaje, el decodificador S3 meanflow completo, los codificadores de hablante, el tokenizador, la configuración y 48 entradas de voces preparadas, de modo que no es necesario descargar WAV de referencia ni ficheros JSON adicionales para la síntesis con presets.
+Kitten TTS 2 es un modelo de síntesis de voz (text-to-speech) multilingüe desarrollado originalmente por KittenML y empaquetado en formato GGUF por el usuario dignome para su uso con el runtime audio.cpp. Resuelve el problema de la generación de voz con clonación de hablante en diez idiomas sin necesidad de Python ni LibTorch en tiempo de inferencia, lo que facilita su despliegue en entornos C++ nativos y en CPU. El paquete incluye un decodificador S3 MeanFlow, codificadores de hablante, tokenizador y 48 entradas de voz preparadas.
 
-A diferencia de una conversión GGUF genérica, este paquete está empaquetado según el formato propio de audio.cpp y solo es compatible con builds que incluyan el port específico (rama `kittentts2` del repositorio audio.cpp-custom, commit `a96e66c6`). La inferencia se ejecuta en C++/GGML sobre CPU y NVIDIA CUDA, sin dependencia de Python, LibTorch, TorchScript ni ONNX Runtime.
+La relevancia actual del modelo radica en su empaquetado autocontenido: cada archivo GGUF integra todos los componentes necesarios para síntesis y clonación, con precisiones que van desde BF16 hasta cuantizaciones ternarias (TQ2_1) y NVFP4, permitiendo ejecución en hardware muy modesto. El repositorio ocupa 30,6 GB e incluye siete variantes de cuantización con tamaños entre 1,4 GB y 4,6 GB.
 
-El modelo cubre diez idiomas validados (inglés, árabe, chino, francés, alemán, hindi, italiano, portugués, ruso y español), admite clonación de voz a partir de una grabación de referencia de entre 1 y 30 segundos con su transcripción, y genera audio mono a 24 kHz con síntesis fragmentada para textos largos. Se distribuye bajo la licencia comunitaria de Stellon Labs.
+Es importante señalar que el autor indica explícitamente que este paquete ya no se mantiene y remite al proyecto audio.cpp principal para versiones actualizadas. La licencia es la Stellon Labs Community License, distinta de la licencia del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de síntesis de voz (TTS) basado en KittenML/kitten-tts-2, con decodificador S3 meanflow (procedente de ResembleAI/chatterbox-turbo) y codificador de hablante atribuido a pyannote/embedding |
+| Arquitectura | TTS con decodificador S3 MeanFlow, codificadores de hablante y tokenizador integrados; cuerpo LM cuantizado en GGUF |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Paquete de precisión mixta: Q8_0 en las proyecciones del modelo de lenguaje, F16 en embeddings y cabeza de salida compartida, BF16 en la proyección de hablante, F32 en el decodificador S3 y en los codificadores de hablante |
-| Idiomas soportados | en, ar, zh, fr, de, hi, it, pt, ru, es (10 idiomas validados por el port) |
-| Licencia | stellon-labs-community-license (identificador `other` en Hugging Face) |
-| Formato de pesos | GGUF (un único fichero: `kitten-tts2-native-q8-multilingual.gguf`, 3.282.123.776 bytes / 3,28 GB / 3,06 GiB) |
+| Tipos de cuantizacion | BF16, Q8_0, Q4_0, NVFP4, TQ2_1 (con decodificadores default, student W4 y student W8) |
+| Idiomas soportados | en, ar, zh, fr, de, hi, it, pt, ru, es |
+| Licencia | stellon-labs-community-license |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un sistema de síntesis de voz, no de un modelo de lenguaje generativo de propósito general. La conversión reúne el modelo base Kitten TTS 2 (snapshot `baa41e5d2c5f64be0095365672a7858542261271`) con el decodificador S3 meanflow de ResembleAI/chatterbox-turbo (revisión `749d1c1a46eb10492095d68fbcf55691ccf137cd`, fichero `s3gen_meanflow.safetensors`) y el codificador de hablante distribuido por Kitten, atribuido aguas arriba a pyannote/embedding.
+El modelo se distribuye como exportaciones GGUF autocontenidas de los pesos de KittenML/kitten-tts-2 en la revisión `f2eee74f4467855ad58fe16f1fb7b7df473263fd`. Cada archivo integra un decodificador S3 MeanFlow, codificadores de hablante, tokenizador y las 48 entradas de voz preparadas (47 presets upstream más el alias `PreparedBruno`). La familia de modelo en audio.cpp es `kitten_tts2` y las instalaciones BF16/Q8/Q4 comparten el directorio `models/kitten-tts2-v2/` con nombres de archivo distintos por precisión.
 
-El paquete aplica precisión mixta deliberada: las proyecciones del modelo de lenguaje se cuantizan a Q8_0, mientras que los embeddings y la cabeza de salida compartida se mantienen en F16, la proyección de hablante conserva su almacenamiento original en BF16 y tanto el decodificador S3 como los codificadores de hablante mantienen pesos F32. No se trata, por tanto, de una conversión íntegra a Q8. La información proporcionada no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo original.
-
-La innovación principal del port es la integración completa en un único GGUF cargable por audio.cpp, con inferencia nativa en C++/GGML sobre CPU y CUDA, incluyendo 48 entradas de voz preparadas y salida mono a 24 kHz. El decodificador por defecto incluido es el completo; no se soportan los decodificadores estudiante más pequeños.
+Las variantes de cuantización presentan diferencias técnicas relevantes. Q8 y Q4 preservan exactamente los pesos ternarios del cuerpo suministrados; Q4 cuantiza el embedding directamente de BF16 completo a Q8_0 con un error relativo L2 de aproximadamente 0,44 % (medida de reconstrucción de pesos, no de calidad de audio). En CUDA, las proyecciones down de Q4 se cargan como BF16 para evitar cómputo no finito, añadiendo unos 483 MiB. NVFP4 emplea los kernels CUDA GGML NVFP4 existentes con el decodificador por defecto y un error de reconstrucción de pesos de aproximadamente 2,3954 % L2 relativo. TQ2_1 usa el ID de tipo 44 de una rama específica y kernels de CPU, con almacenamiento ternario exacto respecto al checkpoint BF16; requiere `--backend cpu`. El paquete W4 almacena 474 matrices del decodificador en W4 empaquetado y ejecuta 426 lineales como INT8 en CPU; el paquete W8 usa un decodificador student_w8 congelado de un paso, con 457 matrices cuantizadas en códigos INT8 y escalas F32 por canal. No se dispone de información sobre el número de tokens de entrenamiento, composición del dataset ni si hubo RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) multilingüe en diez idiomas validados: inglés, árabe, chino, francés, alemán, hindi, italiano, portugués, ruso y español.
-- Clonación de voz a partir de una grabación de referencia de entre 1 y 30 segundos junto con su transcripción exacta.
-- Voces con nombre en inglés, entre ellas Bruno, Bella, Jasper y Luna.
-- Presets de idioma específicos: Arabic, Chinese, French, German, Hindi, Italian, Portuguese, Russian y Spanish.
-- 47 presets heredados del proyecto original más una entrada adicional, `PreparedBruno` (48 entradas en total).
-- Síntesis fragmentada para textos largos (chunked long-form synthesis) con salida de audio mono a 24 kHz.
-- Inferencia nativa en C++/GGML sobre CPU y NVIDIA CUDA, sin dependencias de Python, LibTorch, TorchScript ni ONNX Runtime en tiempo de inferencia.
-- Modo servidor con familia de modelo `kitten_tts2`, tarea `tts` y modo `offline`, direccionable mediante peticiones API con identificador de modelo y voz.
-- No soporta streaming, transcripción automática de la referencia, el normalizador de texto inglés del proyecto original ni los decodificadores estudiante reducidos.
-- No dispone de un conmutador de idioma independiente: el idioma se selecciona eligiendo un preset coincidente o aportando una grabación de referencia y su transcripción en el idioma objetivo.
+- Síntesis de voz multilingüe en diez idiomas: inglés, árabe, chino, francés, alemán, hindi, italiano, portugués, ruso y español.
+- Clonación de voz personalizada a partir de una grabación de referencia de 1 a 30 segundos junto con su transcripción exacta.
+- Síntesis con voces predefinidas sin necesidad de grabaciones de referencia separadas.
+- 48 entradas de voz preparadas, incluyendo voces inglesas con nombre (Bruno, Bella, Jasper, Luna) y presets por idioma para el resto de lenguas.
+- Salida de audio mono a 24 kHz.
+- Inferencia sin Python ni LibTorch en tiempo de ejecución.
+- Ejecución en CPU y en NVIDIA CUDA según la variante de cuantización.
+- No se documentan en la información disponible capacidades de tool calling, razonamiento multi-paso, visión ni audio de entrada más allá de la referencia para clonación.
 
 ## Casos de uso
 
-- Lectura de documentos largos en varios idiomas: la síntesis fragmentada permite procesar artículos, informes o libros completos y generar audio mono a 24 kHz sin dividir manualmente el texto ni gestionar ficheros de referencia externos.
-- Clonación de voz para audiolibros o narraciones de marca: basta con una grabación de referencia de 1 a 30 segundos y su transcripción para reproducir un timbre de voz concreto en textos nuevos.
-- Integración en aplicaciones de escritorio o servidores C++ sin Python: al no requerir LibTorch, TorchScript ni ONNX Runtime en inferencia, encaja en despliegues donde no se quiere arrastrar un stack de Python.
-- Despliegue en servidor de síntesis bajo demanda: el modo servidor con familia `kitten_tts2` permite exponer una API que recibe texto y una voz configurada, útil para servicios de lectura asistida o generación de avisos sonoros.
-- Accesibilidad y lectores de pantalla: la combinación de diez idiomas validados y salida a 24 kHz permite convertir contenido escrito en audio inteligible para usuarios con discapacidad visual o dificultades de lectura.
-- Localización de contenido multimedia: generar pistas de voz en árabe, chino, francés, alemán, hindi, italiano, portugués, ruso o español a partir de un mismo guion, seleccionando el preset de idioma correspondiente.
-- Prototipado de asistentes conversacionales con identidad de voz propia: la clonación permite dotar a un prototipo de una voz característica sin depender de servicios en la nube, ejecutando la inferencia en local sobre CPU o GPU NVIDIA.
+- Audiolibros y narración automatizada: el modelo genera voz mono a 24 kHz con voces predefinidas estables, adecuado para convertir texto largo en audio sin infraestructura Python, usando la variante Q8 como opción recomendada.
+- Clonación de voz para doblaje y localización: con una referencia de 1 a 30 segundos y su transcripción, se puede replicar el timbre de un hablante para generar nuevas locuciones en cualquiera de los diez idiomas soportados.
+- Asistentes de voz embebidos en aplicaciones C++: al no requerir Python ni LibTorch y ejecutarse en CPU, se integra en binarios nativos y sistemas con recursos limitados mediante audio.cpp.
+- Generación de avisos y anuncios por voz en sistemas de atención telefónica: la síntesis multilingüe permite producir mensajes en el idioma del usuario con presets específicos por lengua.
+- Prototipado en hardware de consumo: las variantes TQ2_1 (1,4-1,8 GB) y Q4 (2,27 GB) permiten ejecutar síntesis y clonación en equipos sin GPU dedicada, usando `--backend cpu`.
+- Accesibilidad y lectura de contenido: conversión de texto a voz para aplicaciones de lectura asistida, con voces inglesas con nombre como Bruno o Luna y salida WAV directa.
+- Investigación en TTS y cuantización: las distintas variantes (NVFP4, TQ2_1 con decodificadores student W4/W8) sirven para estudiar el impacto de la cuantización extrema en la calidad de síntesis, aunque el autor advierte que las comprobaciones no establecen mejor velocidad ni calidad perceptual frente a W4.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card y la ficha de Hugging Face no incluyen métricas objetivas como MOS, WER de síntesis ni comparaciones numéricas frente a otros sistemas TTS.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: la interfaz del proyecto estima 7 GB de VRAM para este paquete, incluyendo margen de holgura; se trata de una orientación, no de un mínimo o máximo garantizado para toda petición.
-- GPU probada: la validación con CUDA se realizó sobre una NVIDIA RTX 4060 Ti de 16 GB. Los backends AMD y otras GPU no han sido validados.
-- Ejecución en CPU: soportada de forma nativa; los ejemplos de la documentación emplean `--backend cpu` con `--threads 8`.
-- Cabe en GPU de consumo: sí, según la validación, en una RTX 4060 Ti de 16 GB. No hay datos sobre GPUs con menos memoria.
-- Opciones de despliegue: binarios `audiocpp_cli` y `audiocpp_server` compilados con CMake desde la rama `kittentts2` de audio.cpp-custom. La compilación con CUDA se activa con `-DENGINE_ENABLE_CUDA=ON`; en Windows los ejecutables quedan en `build-kitten2/bin/Release/`.
-- Latencia y throughput estimados: no disponible.
-- Requisitos de compilación: CMake con `-DAUDIOCPP_MODEL_SET=custom -DAUDIOCPP_MODELS=kitten_tts2`; el port solo es compatible con builds que incluyan esta implementación concreta, no con cualquier aplicación que lea GGUF.
+- VRAM estimada para inferencia: no disponible de forma explícita; el tamaño de los archivos GGUF da una orientación: BF16 4,6 GB, Q8 3,28 GB, Q4 y NVFP4 2,27 GB, TQ2_1 default 1,86 GB, TQ2_1 student W8 1,44 GB, TQ2_1 student W4 1,41 GB.
+- GPU recomendadas: NVFP4 requiere kernels CUDA GGML NVFP4; las pruebas locales del autor se realizaron en una RTX 4060 Ti y otras generaciones no han sido validadas según la model card.
+- Cabe en GPU de consumo: sí, las variantes Q4, NVFP4 y TQ2_1 caben en GPUs de consumo; TQ2_1 está pensada para CPU (`--backend cpu`).
+- Opciones de despliegue: audio.cpp (CLI `audiocpp_cli` y WebUI), con builds que incluyan soporte BF16/Q8/Q4 de Kitten TTS 2; NVFP4 y TQ2_1 requieren la rama `kitten-tts2-nvfp4-tq2-student` del repositorio audio.cpp-custom.
+- Latencia y throughput: no disponibles en la información proporcionada; la model card indica que las comprobaciones realizadas no establecen mejor velocidad ni calidad perceptual de W8 frente a W4.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| dignome/kitten_tts2 | no disponible | no disponible | no disponible | stellon-labs-community-license | GGUF para audio.cpp (rama `kittentts2`) |
-| KittenML/kitten-tts-2 (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
-| ResembleAI/chatterbox-turbo (origen del decodificador S3) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
-| pyannote/embedding (origen del codificador de hablante) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| dignome/kitten_tts2 | no disponible | no disponible | 10 | stellon-labs-community-license | GGUF |
+| KittenML/kitten-tts-2 (base) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativas TTS open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento, parametros ni contexto de las alternativas dentro de la informacion proporcionada; la comparativa se limita a la relacion de dependencia entre el port y los modelos de origen.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Port experimental: la propia documentacion lo califica como tal, con un alcance de validacion limitado.
-- Compatibilidad restringida: el GGUF usa el empaquetado propio de audio.cpp y solo funciona con el loader especifico (rama `kittentts2`, commit `a96e66c6`). El soporte GGUF generico en otra aplicacion no implica compatibilidad.
-- Sin streaming: la sintesis en tiempo real por flujo continuo no esta soportada.
-- Sin transcripcion automatica de la referencia: para clonar voz hay que aportar obligatoriamente la transcripcion exacta de la grabacion de referencia.
-- Sin normalizador de texto: no se incluye el normalizador de texto ingles del proyecto original, por lo que numeros y abreviaturas deben escribirse como palabras pronunciables.
-- Sin decodificadores estudiante: solo se incluye el decodificador completo, lo que impide usar variantes mas ligeras para reducir coste.
-- Idiomas: diez idiomas validados por el port. El proyecto original anuncia idiomas adicionales que no estan validados en esta conversion.
-- Seleccion de idioma: no existe un conmutador de idioma; hay que elegir un preset coincidente o aportar referencia y transcripcion en el idioma objetivo.
-- Validacion de plataforma: sintesis y clonacion se validaron en CPU y NVIDIA CUDA sobre Windows. AMD y otros backends de GPU no han sido validados.
-- Requisitos de VRAM orientativos: la cifra de 7 GB es una estimacion con margen y no garantiza el funcionamiento en cualquier configuracion.
-- Licencia: se distribuye bajo la stellon-labs-community-license (identificador `other`), cuyos terminos concretos no se detallan en la informacion disponible; conviene revisar el fichero LICENSE antes de un uso comercial.
-- Riesgo de sesgos y alucinacion acustica: la informacion proporcionada no documenta evaluaciones de sesgo ni tasas de error de pronunciacion.
-- Adopcion nula en el momento de la ficha: 0 descargas y 0 likes.
+- El autor indica explícitamente que este paquete ya no se mantiene y remite al proyecto audio.cpp principal para versiones actualizadas.
+- La licencia es la Stellon Labs Community License, distinta de la del modelo base; es necesario revisar el archivo LICENSE para conocer las restricciones de uso comercial.
+- Las comprobaciones de generación cubren los diez idiomas, pero no establecen calidad de pronunciación de hablantes nativos.
+- La clonación requiere una grabación de referencia de 1 a 30 segundos y su transcripción exacta; sin transcripción no es posible el proceso.
+- La cuantización Q4 es experimental según la model card.
+- NVFP4 y TQ2_1 requieren una rama específica de audio.cpp-custom y no son compatibles con audio.cpp estándar; TQ2_1 usa el ID de tipo 44 y no es compatible con los archivos GGUF de tipo 43 de Kitten.
+- Los errores de reconstrucción de pesos reportados (0,44 % para Q4, 2,3954 % para NVFP4) no son medidas de calidad de audio.
+- En CUDA, Q4 carga las proyecciones down como BF16, añadiendo unos 483 MiB de memoria.
+- Las pruebas de NVFP4 se limitaron a una RTX 4060 Ti; otras generaciones de GPU no han sido validadas.
+- Riesgo de sesgos y alucinación acústica: no se documentan análisis específicos en la información disponible.
+- No se dispone de información sobre límites de longitud de texto de entrada ni sobre el comportamiento en contextos largos.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/dignome/kitten_tts2
+- Repositorio Hugging Face: https://huggingface.co/dignome/kitten_tts2
 - Modelo base: https://huggingface.co/KittenML/kitten-tts-2
-- Repositorio del port (rama `kittentts2`): https://github.com/dignome/audio.cpp-custom/tree/kittentts2
-- Commit de la implementacion publicada: https://github.com/dignome/audio.cpp-custom/commit/a96e66c6bc4d53398563cfff8399d1f9a6e35b40
-- Documentacion del port: https://github.com/dignome/audio.cpp-custom/blob/kittentts2/docs/community_models/kitten_tts2.md
-- Registro de validacion: https://github.com/dignome/audio.cpp-custom/blob/kittentts2/tests/kitten_tts2/validation.md
-- Decodificador S3: https://huggingface.co/ResembleAI/chatterbox-turbo
-- Codificador de hablante: https://huggingface.co/pyannote/embedding
+- Rama de soporte NVFP4/TQ2_1 en audio.cpp-custom: https://github.com/dignome/audio.cpp-custom/tree/kitten-tts2-nvfp4-tq2-student
+- Archivo de verificación SHA256SUMS: https://huggingface.co/dignome/kitten_tts2/blob/main/SHA256SUMS
+- Licencia: https://huggingface.co/dignome/kitten_tts2/blob/main/LICENSE

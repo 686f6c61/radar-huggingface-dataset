@@ -2,107 +2,116 @@
 
 ## Resumen
 
-Naive-N0.5-Flash-EXL3-3.5bpw es una cuantizacion del modelo Naive-N0.5-Flash (desarrollado por el equipo NaiveAI) publicada por el usuario doth4580 en Hugging Face. Se trata de un modelo de lenguaje de tipo mezcla de expertos (MoE) con 309.000 millones de parametros totales y 15.500 millones de parametros activos por token, con una ventana de contexto nativa de 1.048.576 tokens. El artefacto no es un modelo nuevo, sino un empaquetado de pesos modificados mediante cuantizacion EXL3 (trellis de ExLlamaV3) a 3,5 bits por peso de media, lo que reduce el peso en disco desde los ~315 GB del original en FP8 hasta aproximadamente 137 GB.
+Naive-N0.5-Flash-EXL3-3.5bpw es una cuantización EXL3 (trellis de ExLlamaV3) a 3,5 bits por peso del modelo Naive-N0.5-Flash, desarrollado por el equipo NaiveAI. Se trata de un transformer de tipo mezcla de expertos (MoE) con 309.000 millones de parámetros totales y 15.500 millones activos por token, con una ventana de contexto nativa de 1 millón de tokens. El modelo original se construye sobre MiMo-V2.5 de Xiaomi e incorpora DeepSeek Sparse Attention.
 
-La relevancia de este artefacto es puramente practica: un modelo MoE de 309B con contexto de un millon de tokens no cabe en hardware convencional, y esta cuantizacion es lo que permite ejecutarlo en un par de maquinas con memoria unificada de 128 GB (por ejemplo, 2x DGX Spark GB10) mediante vLLM con el plugin out-of-tree vllm-exl3 y ExLlamaV3. El modelo hereda la licencia MIT del original, lo que facilita su uso comercial, pero requiere toolchain especifico: ni transformers ni vLLM estandar pueden cargar los pesos EXL3.
+El interés de este artefacto concreto es de índole práctica: reduce el peso del modelo desde los aproximadamente 315 GB de la versión FP8 original hasta unos 137 GB (128 GiB), lo que permite servirlo en hardware de gama relativamente modesta. En concreto, el autor lo ha validado sobre dos o cuatro máquinas NVIDIA DGX Spark (GB10) mediante el motor veloGB10, con paralelismo tensorial TP=2 o TP=4. Ninguna GB10 individual puede alojar el modelo.
 
-La arquitectura combina atencion de ventana deslizante (SWA) y DeepSeek Sparse Attention (DSA) en todas las capas (39 SWA + 9 DSA), sin capas de atencion completa, con GQA de 4 grupos KV, 256 expertos enrutados (8 por token) y un vocabulario de 152.576 tokens. No se han publicado datos sobre el dataset de entrenamiento, el numero de tokens ni las tecnicas de alineacion (RLHF/DPO) en la informacion disponible.
+La ficha técnica del repositorio indica 70.225.308.352 parámetros en los safetensors, un dato que no concuerda con los 309.000 millones declarados en la model card; esta discrepancia se detalla en la sección de limitaciones. La licencia es MIT, heredada del modelo base, y el tokenizador y la plantilla de chat se mantienen sin cambios respecto al original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts con atencion hibrida Sliding-Window + DeepSeek Sparse Attention (39 capas SWA + 9 capas DSA, sin capas de atencion completa), GQA con 4 grupos KV, 48 capas |
-| Parametros totales | 309.000 millones (309B) |
-| Parametros activos | 15.500 millones (15,5B) por token |
-| Longitud de contexto | 1.048.576 tokens (nativo) |
-| Tipos de cuantizacion | EXL3 trellis, codebook `mul1`; 3,5 bpw de media en expertos enrutados; 3 bpw en lineales no enrutados (q/k/v/o_proj, lineales del indexer DSA, gate/up/down densos); `lm_head` a 6 bits; embeddings y normas sin cuantizar (bfloat16) |
-| Idiomas soportados | no disponible (la model card no especifica idiomas; vocabulario de 152.576 tokens) |
-| Licencia | MIT (heredada del modelo original NaiveAI/Naive-N0.5-Flash) |
-| Formato de pesos | safetensors en formato `exl3` (24 shards), con `quantization_config.json` y variantes `.native` para ExLlamaV3 |
-
-Detalles adicionales de arquitectura: hidden size 4096, 64 cabezas de atencion, 4 cabezas KV, head_dim 192; ventana SWA de 128 tokens; seleccion DSA top-2048 tokens; 256 expertos enrutados con tamano intermedio de 2048.
+| Arquitectura | Transformer MoE con DeepSeek Sparse Attention, basado en MiMo-V2.5 de Xiaomi |
+| Parametros totales | 309.000 millones (según model card); 70.225.308.352 según safetensors |
+| Parametros activos | 15.500 millones |
+| Longitud de contexto | 1.000.000 de tokens nativa; servido con `--max-seq-len 262144` en la receta del autor |
+| Tipos de cuantizacion | EXL3 trellis a 3,5 bpw (expertos y atención); existe una variante hermana a 4 bpw (expertos 4 / atención 6) |
+| Idiomas soportados | no disponible |
+| Licencia | MIT |
+| Formato de pesos | safetensors con cuantización EXL3 (librería `trellis`, `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-Naive-N0.5-Flash es un transformer disperso de tipo MoE con 48 capas. Su atencion es completamente hibrida: ninguna capa usa atencion densa completa. De las 48 capas, 39 emplean sliding-window attention con ventana de 128 tokens y 9 emplean DeepSeek Sparse Attention con seleccion de los 2048 tokens mas relevantes. El componente MoE dispone de 256 expertos enrutados de los que se activan 8 por token, con tamano intermedio de 2048, lo que explica la gran diferencia entre parametros totales (309B) y activos (15,5B). La configuracion de atencion usa GQA con 4 grupos KV y head_dim 192.
+El modelo base es un transformer de mezcla de expertos con 309.000 millones de parámetros totales y 15.500 millones activos, construido sobre MiMo-V2.5 de Xiaomi e incorporando DeepSeek Sparse Attention, lo que habilita su contexto nativo de 1 millón de tokens. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO: estos datos no aparecen en la model card proporcionada. La innovacion tecnica documentada en este artefacto es la cuantizacion: se aplico EXL3 trellis (herramienta exllamav3 1.5.1.post1, adaptada especificamente para esta arquitectura, ejecutada sobre 8x H100) usando 250 filas x 2048 columnas de calibracion, con escalas de salida siempre almacenadas y esquema de activacion dinamico heredado de la fuente FP8. El pack soporta dos layouts de pesos simultaneamente: uno para vLLM (via el mapa `non_routed_exl3` en `config.json`) y otro nativo para ExLlamaV3 (ficheros `.native`).
+Este artefacto es exclusivamente una cuantización: los pesos se han convertido desde la versión pública en FP8 (NaiveAI/Naive-N0.5-Flash-FP8) mediante las herramientas de exllamav3, a través del fork de vcruz305, adaptadas a esta arquitectura y ejecutadas sobre 8×H100. La cuantización es de tipo trellis a 3,5 bits por peso. El tokenizador y la plantilla de chat no se han modificado. El autor reporta una puerta de precisión forward-only en exllamav3 con NLL de 1,619 nats/token frente a 1,627 del bf16 de referencia, además de mantener probabilidad 1,000 en dos comprobaciones de siguiente token sobre prefijos de código y JSON.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el repositorio incluye `chat_template.jinja` y `tokenizer_config.json` sin modificar respecto al original, y una `generation_config.json` con muestreo recomendado (temperature 1.0, top-p 0.95), lo que indica un modelo orientado a uso instruct/chat.
-- Procesamiento de contexto muy largo: ventana nativa de 1.048.576 tokens, con atencion hibrida SWA + DSA disenada para reducir el coste del contexto extenso.
-- Decodificacion especulativa: soporta el drafter NaiveAI/Naive-N0.5-Flash-FP8-Draft mediante `--speculative-config` con metodo `dspark` y 3 tokens especulativos, lo que aumenta el throughput de decodificacion en la configuracion validada.
-- Servicio distribuido: soporta tensor parallel y expert parallel (TP=2 + EP=2) con backend Ray en vLLM, con backend MoE Triton.
-- Capacidades de tool calling, function calling, agentes, vision, audio o modo de razonamiento explicito: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; la model card no declara idiomas soportados.
+- Generación de texto y razonamiento con modo de pensamiento (thinking) activado por defecto en las pruebas del autor.
+- Generación de código, incluyendo turnos de código medidos en el benchmark del pack.
+- Contexto largo: ventana nativa de 1 millón de tokens, con 262.144 tokens configurados en la receta de servicio.
+- Decodificación especulativa mediante un drafter FP8 opcional (NaiveAI/Naive-N0.5-Flash-FP8-Draft), con tasas de aceptación del 28,9 % (TP=2) y 34,7 % (TP=4).
+- Servicio mediante API compatible con OpenAI (`/v1/models`, `/v1`), lo que facilita la integración con clientes existentes.
+- Soporte de caché de prefijos (`--prefix-cache on`) para reutilización de contexto entre peticiones.
+- Capacidades multilingües: no disponible.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de repositorios de codigo completos: con 1M de tokens de contexto nativo, el modelo puede ingerir bases de codigo extensas o documentacion tecnica completa en una sola pasada sin necesidad de chunking agresivo, lo que resulta util para auditoria, generacion de documentacion o respuesta a preguntas sobre el codigo.
-- Resumen y extraccion de informacion en corpus largos: informes anuales, expedientes legales, historiales clinicos o libros tecnicos que exceden la ventana de modelos convencionales de 128K tokens.
-- Asistente conversacional multi-turno de contexto extenso: al mantener una ventana de ~1M tokens, puede conservar el historial completo de una conversacion larga sin resumir ni truncar, reduciendo la perdida de informacion entre turnos.
-- RAG con contexto masivo: en lugar de recuperar unos pocos fragmentos, se pueden inyectar cientos de documentos relevantes en el prompt y dejar que la atencion dispersa seleccione lo relevante.
-- Despliegue on-premise en hardware de memoria unificada: su tamano cuantizado (~137 GB) permite ejecutarlo en dos nodos DGX Spark GB10 con TP=2, lo que habilita casos donde no se puede enviar datos a la nube por requisitos de privacidad.
-- Generacion de codigo asistida en pipelines internos: si el modelo base tiene capacidades de codigo (no documentadas en la model card de esta cuantizacion, pero plausibles en un modelo instruct), puede integrarse como servicio vLLM con decodificacion especulativa para tareas de autocompletado o refactorizacion.
-- Evaluacion de tecnicas de cuantizacion: este artefacto sirve como caso de estudio practico para comparar el rendimiento (throughput, calidad) de EXL3 3,5 bpw frente al original FP8 en la misma tarea.
+- Procesamiento de documentos extensos: con 1 millón de tokens de contexto nativo y 262.144 configurados en la receta, el modelo puede ingerir contratos, expedientes o bases de código completas en una sola petición sin fragmentación.
+- Asistencia de código en entornos con hardware limitado: el pack de 137 GB permite desplegar un modelo de 309.000 millones de parámetros en dos DGX Spark en lugar de requerir un clúster de GPUs de数据中心, manteniendo turnos de código a 40 tok/s (TP=2) y 80 tok/s (TP=4).
+- Servicio de API interna compatible con OpenAI: el motor veloGB10 expone `/v1`, de modo que herramientas que ya consumen la API de OpenAI pueden apuntar al endpoint sin cambios en el cliente.
+- Analítica sobre corpus técnicos largos con caché de prefijos: en escenarios donde muchas consultas comparten el mismo documento de referencia, `--prefix-cache on` evita reprocesar el prefijo en cada petición.
+- Prototipado e investigación en entornos de laboratorio con nodos GB10: la receta TP=2 y TP=4 documentada permite reproducir el despliegue con comandos concretos y sin copia del modelo en los nodos trabajadores.
+- Evaluación de cuantización agresiva: el pack sirve como referencia para estudiar la degradación de un MoE de 309.000 millones de parámetros a 3,5 bpw, con métricas de NLL y probabilidades de siguiente token publicadas frente al bf16.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. La model card solo incluye mediciones preliminares de servicio, obtenidas en 2x DGX Spark (GB10), concurrencia 1, decodificacion greedy, contexto de 2048 tokens y prompts de chat mixtos. El propio autor advierte que son numeros de un port de serving en desarrollo y que cambiaran.
+Rendimiento medido con veloGB10 sobre GB10 (2026-11-09, builds 0.7.7), muestreo de producción, thinking activado, decodificación en tokens de salida por segundo incluyendo decodificación especulativa. Una ejecución por celda, variación aproximada de ±10 %.
 
-| Configuracion | Decodificacion |
-|---|---:|
-| Sin especulacion, modo eager | ~21,5 tok/s |
-| Sin especulacion, CUDA graphs | ~23,5 tok/s |
-| CUDA graphs + DSpark, 3 tokens especulativos | ~24,4 tok/s |
+| Topologia | Fuente del drafter | Decode turno de codigo | Decode turno de relato | Mediana decode todos los turnos | Prefill (tok/s) | 2 peticiones, agregado | Aceptacion del drafter |
+|---|---|---:|---:|---:|---:|---:|---:|
+| TP=2 | Naive S8 FP8 drafter | 40 | 31 | 33 | 761 | 46 | 28,9 % |
+| TP=4 | Naive S8 FP8 drafter | 80 | 46 | 50 | 1.077 | 69 | 34,7 % |
 
-- Prefill: ~950 tok/s a 2048 tokens de contexto (~2,1 s de TTFT).
-- Contexto largo: no caracterizado todavia segun el autor.
-- Desglose por etapa del paso de decodificacion (sin especulacion, eager): kernel MoE de expertos enrutados ~55%, all-reduce NCCL ~17%, GEMV denso EXL3 ~14%.
+Precisión medida el 2026-10-19 con puerta forward-only en exllamav3 (NLL con teacher forcing sobre un texto técnico de 977 tokens; probabilidad del siguiente token tras dos prefijos de código/JSON), usando el modelo sin cuantizar en `transformers` como referencia:
+
+| Modelo | Fuente | NLL (nats/token) | p(sangrado de 8 espacios tras `if n < 0:`) | p(`age`) en clave JSON |
+|---|---|---|---|---|
+| Naive-N0.5-Flash bf16, `transformers` | bf16 | 1,627 | 1,000 | 1,000 |
+| Este pack (3,5 bpw) | FP8 | 1,619 | 1,000 | 1,000 |
+| Pack hermano EXL3 4 bpw (expertos 4 / atención 6) | bf16 | 1,634 | 1,00 | no disponible |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada para inferencia: el pack ocupa ~137 GB en disco en 24 shards (la ficha de Hugging Face reporta un tamano de repositorio de 87,6 GB; existe una discrepancia entre ambos datos). Para inferencia se necesita capacidad equivalente o superior, distribuida entre dispositivos.
-- Hardware validado: 2x DGX Spark (GB10) con memoria unificada de 128 GB por nodo, en dos nodos, con TP=2 + EP=2 sobre Ray, `--gpu-memory-utilization 0.80`, `--max-model-len 131072`, `--max-num-seqs 1`, `--dtype bfloat16`, backend MoE `triton`.
-- No cabe en GPU de consumo: el tamano de pesos (~137 GB) excede la memoria de cualquier GPU consumer actual (RTX 4090 con 24 GB, etc.). Se necesita hardware con >100 GB agregados y soporte para paralelismo tensorial y de expertos.
-- Cuantizacion/carga: para producir la cuantizacion se usaron 8x H100, pero eso corresponde al proceso de cuantizacion, no al de inferencia.
-- Opciones de despliegue: vLLM 0.29.0 con el plugin out-of-tree vllm-exl3 y una build de ExLlamaV3 (1.5.1.post1); alternativamente, el layout nativo `.native` para ExLlamaV3. No es cargable por vLLM estandar ni por transformers.
-- Arranque: varios minutos en el hardware validado; el primer arranque tambien compila kernels (carga limitada por I/O).
-- Latencia y throughput: ~21,5 a ~24,4 tok/s de decodificacion segun configuracion, ~950 tok/s de prefill y ~2,1 s de TTFT a 2K tokens.
+- VRAM/almacenamiento: el pack ocupa aproximadamente 137 GB (128 GiB) frente a unos 315 GB del FP8 original.
+- Una sola GB10 no puede alojar el modelo; el motor lo rechaza en el arranque. Solo se soportan TP=2 y TP=4.
+- TP=2: dos máquinas NVIDIA DGX Spark (GB10); el nodo secundario no necesita copia del modelo, recibe su partición por red y la cachea localmente.
+- TP=4: cuatro máquinas GB10, con tres nodos secundarios ejecutando `./gb10_inference --node --port 29500`.
+- Red: en equipos con dos pares de puertos RoCE activos, seleccionar el par con `--rdma-dev <rail1>,<rail2>`; con un solo par la detección es automática.
+- Opciones de despliegue: motor veloGB10 (binario autónomo, servidor compatible con OpenAI en `http://<head-ip>:9000/v1`); la cuantización se genera con exllamav3 y el fork vcruz305. No se menciona soporte de llama.cpp, Ollama ni TGI.
+- Parámetros de servicio probados: `--max-seq-len 262144`, `--max-batch 2`, `--max-tokens 65536`, `--prefix-cache on`.
+- Throughput: prefill de 761 tok/s en TP=2 y 1.077 tok/s en TP=4; decode mediano de 33 y 50 tok/s respectivamente, con agregado de 46 y 69 tok/s para dos peticiones simultáneas.
+- Decodificación especulativa opcional con el drafter Naive S8 FP8 (`--draft-dir`), que aporta las tasas de aceptación indicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de terceros para comparar directamente. La comparacion mas util es contra el propio modelo original en FP8 y su version sin cuantizar, dado que este artefacto solo cambia la precision de los pesos.
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Este pack (Naive-N0.5-Flash EXL3 3,5 bpw) | 309.000 M totales / 15.500 M activos | 1.000.000 nativo; 262.144 servido | EXL3 3,5 bpw, ~137 GB | MIT | Hugging Face, 2.950 descargas |
+| Naive-N0.5-Flash-EXL3-4bpw (hermano) | 309.000 M totales / 15.500 M activos | 1.000.000 nativo | EXL3 4 bpw (expertos 4 / atención 6) | MIT | Hugging Face (doth4580) |
+| Naive-N0.5-Flash-FP8 (original) | 309.000 M totales / 15.500 M activos | 1.000.000 nativo | FP8, ~315 GB | MIT | Hugging Face (NaiveAI) |
+| Naive-N0.5-Flash bf16 (referencia) | 309.000 M totales / 15.500 M activos | 1.000.000 nativo | bf16 | MIT | Hugging Face (NaiveAI) |
 
-| Modelo | Parametros | Contexto | Precision de pesos | Tamano en disco | Formato | Requisitos de carga | Licencia |
-|---|---|---|---|---|---|---|---|
-| Naive-N0.5-Flash (original) | 309B / 15,5B activos | 1.048.576 | no disponible (sin cuantizar) | no disponible | safetensors | no disponible | MIT |
-| Naive-N0.5-Flash-FP8 | 309B / 15,5B activos | 1.048.576 | FP8 | ~315 GB | safetensors | vLLM/transformers estandar | MIT |
-| Naive-N0.5-Flash-EXL3-3.5bpw (este) | 309B / 15,5B activos | 1.048.576 | EXL3 trellis 3,5 bpw (expertos), 3 bpw (no enrutados), 6-bit lm_head | ~137 GB | safetensors `exl3` | vLLM + vllm-exl3 + ExLlamaV3 | MIT |
-
-La ventaja del artefacto es la reduccion de tamano (de ~315 GB a ~137 GB) a cambio de perdida de precision y de la necesidad de un toolchain especifico. Otros modelos comparables de la misma categoria (MoE de ~300B con contexto de 1M) no estan identificados en la informacion disponible.
+No se dispone de datos de benchmarks estándar para comparar el rendimiento frente a modelos de otras familias.
 
 ## Limitaciones y advertencias
 
-- Toolchain restringido: los pesos EXL3 no son cargables por vLLM estandar ni por transformers; requieren el plugin vllm-exl3 (out-of-tree) y una build compatible de ExLlamaV3 (validado con vLLM 0.29.0 y exllamav3 1.5.1.post1). Esto limita la portabilidad y el soporte a largo plazo.
-- Rendimiento preliminar: los numeros de throughput provienen de un port en desarrollo, con concurrencia 1 y contexto de 2048 tokens; el autor advierte explicitamente que cambiaran y que el contexto largo no esta caracterizado.
-- Perdida de calidad por cuantizacion: la cuantizacion a 3,5 bpw en expertos y 3 bpw en lineales no enrutados introduce degradacion respecto al FP8 original. No se han publicado evaluaciones de calidad que cuantifiquen esa perdida.
-- Sin datos de alineacion ni de datos de entrenamiento: se desconoce el regimen de entrenamiento (tokens, dataset, RLHF/DPO), lo que dificulta anticipar sesgos y comportamientos.
-- Idiomas no declarados: la model card no especifica que idiomas soporta el modelo, asi que no se puede garantizar un rendimiento adecuado en castellano u otras lenguas.
-- Riesgo de alucinacion: inherente a los modelos generativos; no hay evaluaciones de factualidad publicadas para este artefacto.
-- Restriccion practica de hardware: no es ejecutable en GPU de consumo ni en nodos unicos de 80 GB; requiere memoria agregada de mas de 100 GB y paralelismo TP/EP.
-- Licencia: MIT, heredada del modelo original, permite uso comercial, pero el artefacto contiene pesos modificados por cuantizacion y el aviso de copyright del autor original debe conservarse.
-- Inconsistencia de tamano: Hugging Face reporta 87,6 GB de repositorio mientras la model card indica ~137 GB en disco; conviene verificar el contenido real del repositorio antes de planificar el despliegue.
-- Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y actualizacion el 2026-09-28; se trata de un artefacto reciente y poco validado por la comunidad.
+- Discrepancia de parámetros: la model card declara 309.000 millones totales y 15.500 millones activos, mientras que los safetensors del repositorio registran 70.225.308.352 parámetros. Conviene verificar la cifra real antes de dimensionar infraestructura.
+- Pesos modificados: es una cuantización trellis a 3,5 bpw; aunque las métricas de NLL publicadas son prácticamente idénticas al bf16, no se han publicado evaluaciones en benchmarks estándar que confirmen la equivalencia en tareas complejas.
+- Requisito de hardware muy específico: solo funciona en topologías TP=2 o TP=4 sobre GB10 con el motor veloGB10; no hay soporte documentado para vLLM estándar, llama.cpp, Ollama o TGI, pese a la etiqueta `vllm` del repositorio.
+- Licencia del servidor: `vllm-exl3` es AGPL-3.0, lo que es relevante si se expone el servidor a terceros, aunque los pesos del modelo sean MIT.
+- Idiomas soportados no documentados; no hay información sobre cobertura multilingüe ni sobre sesgos conocidos.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplica el riesgo habitual de los modelos generativos.
+- Sin datos sobre tool calling, function calling ni capacidades de agente; no deben asumirse.
+- Rendimiento medido con una sola ejecución por celda y variación de ±10 %, sobre builds de desarrollo de veloGB10 0.7.7, no sobre una versión estable.
+- El contexto servido en la receta (262.144 tokens) es inferior al millón nativo; usar la ventana completa requiere ajustar la configuración y probablemente más recursos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/doth4580/Naive-N0.5-Flash-EXL3-3.5bpw
-- Modelo original: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
-- Fuente directa FP8: https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8
-- Drafter para decodificacion especulativa: https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8-Draft
-- Licencia del modelo original: https://huggingface.co/NaiveAI/Naive-N0.5-Flash/blob/main/LICENSE
-- Herramienta de cuantizacion ExLlamaV3: https://github.com/turboderp-org/exllamav3
-- Plugin vLLM para EXL3: https://github.com/vcruz305/vllm-exl3
+- Repositorio Hugging Face: https://huggingface.co/doth4580/Naive-N0.5-Flash-EXL3-3.5bpw
+- Modelo base: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
+- Licencia del modelo base: https://huggingface.co/NaiveAI/Naive-N0.5-Flash/blob/main/LICENSE
+- Versión FP8 de origen: https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8
+- Drafter FP8: https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8-Draft
+- Pack hermano EXL3 4 bpw: https://huggingface.co/doth4580/Naive-N0.5-Flash-EXL3-4bpw
+- Receta de despliegue en 2× DGX Spark: https://github.com/sf-stav/Naive-N0.5-Flash-EXL3-2x-DGX-Spark
+- Motor veloGB10: https://github.com/sf-stav/veloGB10
+- Herramientas exllamav3: https://github.com/turboderp-org/exllamav3
+- Fork de exllamav3 usado: https://github.com/vcruz305/exllamav3
+- vllm-exl3 (AGPL-3.0): https://github.com/vcruz305/vllm-exl3
+- MiMo-V2.5 de Xiaomi: https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Base

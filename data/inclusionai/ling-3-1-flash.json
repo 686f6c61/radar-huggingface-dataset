@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 172,
-  "downloads_30d": 6898,
+  "downloads_30d": 6867,
   "trending_score": 13,
   "parameters": 572120680768,
   "parameters_human": "572.12B",
@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "inclusionAI: Ling 3.1 Flash - AI Model Details & Benchmarks",
-      "url": "https://benchable.ai/models/inclusionai/ling-3.1-flash-20261002",
-      "snippet": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total."
-    },
-    {
-      "title": "inclusionAI/Ling-3.1-flash · Hugging Face",
-      "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
-      "snippet": "Introduction We&#x27;re introducing Ling-3.1-flash, an upgraded native hybrid reasoning model designed for complex, real-world tasks. With 560B total parameters, 25B active parameters per token, and a 1M-token context window, Ling-3.1-flash builds upon Ling-3.0-flash with improvements in architecture, performance on real-world capabilities."
-    },
-    {
-      "title": "Ling 3.1 Flash - API Pricing & Benchmarks - openrouter.ai",
-      "url": "https://openrouter.ai/inclusionai/ling-3.1-flash",
-      "snippet": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total. $0.075 per million input tokens, $0.225 per million output tokens. 262,144 token context window, maximum output of 262,144 tokens. Includes independent benchmarks from Artificial Analysis."
-    },
-    {
-      "title": "inclusionAI: Ling 3.1 Flash — Inclusion AI | AI Model Details | Neura ...",
-      "url": "https://www.neura.market/models/inclusionai-ling-3-1-flash",
-      "snippet": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total."
-    },
-    {
-      "title": "Ling 3.1 Flash Benchmarks, Pricing & Context Window",
-      "url": "https://llm-stats.com/models/ling-3.1-flash",
-      "snippet": "Ling 3.1 Flash is a language model from InclusionAI, released in September 2026. Ling 3.1 Flash (Ling-3.1-flash) is InclusionAI / Ant Group&#x27;s hybrid-reasoning MoE flash model: ~560B total parameters with ~25B active per token."
-    }
-  ]
+  "sources": []
 }

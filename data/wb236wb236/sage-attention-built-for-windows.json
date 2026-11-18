@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "wb236wb236/Sage-Attention-built-for-Windows",
+  "slug": "wb236wb236-sage-attention-built-for-windows",
+  "author": "wb236wb236",
+  "url": "https://huggingface.co/wb236wb236/Sage-Attention-built-for-Windows",
+  "created_at": "2026-11-18T12:05:31.000Z",
+  "updated_at": "2026-11-18T12:05:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sage-attention",
+    "windows",
+    "cuda132",
+    "python3.13",
+    "python3.14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 869716233,
+  "storage_human": "870 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free DMARC, SPF, DKIM & DNS Checker | MXToolbox.eu",
+      "url": "https://www.mxtoolbox.eu/",
+      "snippet": "Free email security tools: check SPF records, DKIM signatures, DMARC policies, MX records, DNS lookup, blacklist status. Built for …"
+    }
+  ]
+}

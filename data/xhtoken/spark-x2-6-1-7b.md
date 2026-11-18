@@ -2,97 +2,102 @@
 
 ## Resumen
 
-Spark-X2.6-1.7B es un modelo de lenguaje de 1.707.657.216 parametros (aproximadamente 1,71 mil millones) desarrollado por XHToken, segundo miembro de la familia Spark-X2.6 tras el Spark-X2.6-4B. Se trata de la version post-entrenada (instruct/conversacional) del checkpoint Spark-X2.6-1.7B-Base, construida sobre Spark-X2.5-1.7B y centrada en el despliegue en dispositivo (on-device) y en entornos con recursos limitados.
+Spark-X2.6-1.7B es un modelo de lenguaje de tipo decoder-only desarrollado por XHToken, segundo miembro de la serie Spark-X2.6 tras el Spark-X2.6-4B. Se trata de un modelo compacto de 1.707.657.216 parámetros (aproximadamente 1,7 mil millones) orientado a despliegue en dispositivo (on-device), que parte del modelo base Spark-X2.6-1.7B-Base y ha sido sometido a un post-entrenamiento intensivo para mejorar capacidades de código, uso de agentes, contexto largo, multilingüismo y razonamiento.
 
-La model card indica que conserva exactamente la misma arquitectura que Spark-X2.5-1.7B y que las mejoras de capacidad provienen del post-entrenamiento: codigo, uso de herramientas (agent), contexto largo, multilingue y razonamiento. Entre sus caracteristicas tecnicas declara tres niveles de "thinking budget" (none, low, high) para ajustar calidad de razonamiento, latencia y coste de inferencia, ademas de un rendimiento de decodificacion que el autor situa por delante de Qwen3.5-2B, MiniCPM-2B y LFM2.5-2.6B en las pruebas realizadas sobre una RTX 4090 con su fork optimizado de llama.cpp.
+La propuesta de valor del modelo es conservar exactamente la misma arquitectura que su predecesor Spark-X2.5-1.7B y obtener las mejoras de capacidad exclusivamente mediante un post-entrenamiento mejorado, lo que facilita la migración desde la versión anterior. XHToken lo presenta como un modelo de propósito general para IA local, con énfasis en eficiencia de decodificación y un presupuesto de razonamiento configurable en tres niveles (ninguno, bajo, alto).
 
-Es relevante ahora por tres motivos: es un modelo compacto con licencia Apache 2.0 (uso comercial permitido), esta disenado explicitamente para inferencia local con decodificacion eficiente y dispone de soporte declarado en SGLang tanto para GPU NVIDIA como para NPU Ascend, lo que facilita su integracion en pipelines de produccion y en hardware no convencional. El repositorio tiene 6,8 GB, 21 likes y 0 descargas en el momento de la consulta.
+Es relevante ahora porque compite directamente en el segmento de modelos de 2B para inferencia en hardware de consumo, junto a alternativas como Qwen3.5-2B, MiniCPM-2B y LFM2.5-2.6B, y porque su licencia Apache 2.0 permite uso comercial sin restricciones adicionales. La model card menciona soporte para contextos de hasta 131.072 tokens en generación, aunque no se detalla explícitamente la longitud de contexto de entrenamiento.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredera de Spark-X2.5-1.7B; la model card no detalla el interior de la arquitectura). Requiere `trust_remote_code=True` y codigo personalizado (`custom_code`) |
-| Parametros totales | 1.707.657.216 (~1,71 B) |
-| Parametros activos | No aplica: no es un modelo MoE segun la informacion disponible |
-| Longitud de contexto | No declarada de forma explicita. El ejemplo de generacion usa `max_new_tokens=131072` y la receta de SGLang configura `--context-length` hasta 1.048.576 tokens (1 M), sujeto a memoria disponible |
-| Tipos de cuantizacion | No listados en la model card. El repositorio incluye un fork optimizado de llama.cpp (`XHToken/llama.cpp`), lo que sugiere soporte de pesos GGUF, pero no se enumeran variantes concretas |
-| Idiomas soportados | Ingles (en) y chino (zh) |
+| Arquitectura | Transformer decoder-only (arquitectura idéntica a Spark-X2.5-1.7B; requiere `trust_remote_code=True`) |
+| Parametros totales | 1.707.657.216 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Hasta 131.072 tokens en generación según el ejemplo de la model card (longitud de entrenamiento no disponible) |
+| Tipos de cuantizacion | No disponible en la información proporcionada (existe implementación optimizada de llama.cpp, que habitualmente soporta GGUF) |
+| Idiomas soportados | Inglés (en) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (formato Hugging Face Transformers) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible es limitada en este apartado. La model card afirma que Spark-X2.6-1.7B "retiene exactamente la misma arquitectura que Spark-X2.5-1.7B" y que las ganancias provienen del post-entrenamiento, no de cambios estructurales. No se especifican el numero de capas, dimensiones ocultas, tipo de atencion (completa, lineal o hibrida), ni el mecanismo exacto del "thinking budget" configurable en tres niveles (none, low, high). El modelo se distribuye con codigo personalizado y requiere `trust_remote_code=True`, ademas de transformers 4.57.1 segun el ejemplo oficial.
+El modelo es un transformer decoder-only con exactamente la misma arquitectura que Spark-X2.5-1.7B; las ganancias de capacidad provienen íntegramente del post-entrenamiento. El repositorio incluye código personalizado (`custom_code`), por lo que es necesario cargarlo con `trust_remote_code=True` y con `transformers==4.57.1` según las instrucciones del autor. El modelo base es XHToken/Spark-X2.6-1.7B-Base, sobre el que se aplicó un fine-tuning posterior.
 
-Tampoco se detallan los datos de entrenamiento: no hay cifra de tokens, composicion del dataset ni mencion explicita de tecnicas concretas de alineacion (RLHF, DPO u otras); solo se indica que hubo una fase de post-entrenamiento mejorada respecto a Spark-X2.5-1.7B, con enfasis en codigo, uso de herramientas, planificacion multi-paso, contexto largo, multilingue y razonamiento. El checkpoint base asociado es `XHToken/Spark-X2.6-1.7B-Base`. Como innovaciones declaradas destacan la eficiencia de decodificacion en dispositivo y el control del esfuerzo de razonamiento, ademas de parsers especificos en SGLang (`--tool-call-parser spark25`, `--reasoning-parser qwen3`).
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas concretas de RLHF o DPO. La model card sí destaca una innovación relevante: un presupuesto de razonamiento controlable con tres niveles (none, low, high), que permite ajustar dinámicamente la calidad del razonamiento frente a la latencia y el coste de inferencia. Según los datos del autor, al pasar de razonamiento alto a bajo en el modelo de 1.7B la puntuación media cae 4,0 puntos mientras que la longitud media de salida se reduce un 37,3% (en el modelo de 4B la caída es de 1,7 puntos con una reducción del 22,0%).
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles y chino.
-- Razonamiento con presupuesto de pensamiento configurable en tres niveles (none, low, high), lo que permite intercambiar calidad por latencia y coste.
-- Codigo y tareas de ingenieria de software, con mejoras declaradas frente a la generacion anterior.
-- Uso de herramientas y function calling, evidenciado por el parser `spark25` disponible en la receta de SGLang.
-- Capacidades agenticas: planificacion multi-paso y resolucion de tareas compuestas.
-- Razonamiento sobre contextos extensos (long-context), con configuracion de servidor de hasta 1.048.576 tokens.
-- Capacidades multilingues limitadas a ingles y chino.
-- No se declaran capacidades de vision, audio ni otras modalidades en la informacion disponible.
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento con modo de pensamiento configurable en tres niveles (none, low, high).
+- Generación y razonamiento sobre código, con mejoras sustanciales en ingeniería de software según el autor.
+- Uso de herramientas (tool use) complejo y planificación multi-paso para flujos agénticos.
+- Razonamiento sobre contextos largos (hasta 131.072 tokens en el ejemplo de generación).
+- Capacidades matemáticas, evaluadas explícitamente en los benchmarks del autor.
+- Capacidades multilingües limitadas a inglés y chino.
+- Conocimiento general y tareas de conocimiento enciclopédico.
+- Inferencia eficiente en dispositivo, con implementación optimizada de llama.cpp mantenida por XHToken.
 
 ## Casos de uso
 
-- Asistente local en escritorio o portatil: con ~1,71 B de parametros, el modelo puede ejecutarse en GPUs de consumo o incluso en CPU mediante llama.cpp, ofreciendo un asistente conversacional sin conexion y con coste marginal nulo por consulta.
-- Autocompletado y generacion de codigo en IDE: su tamano reducido y su latencia de decodificacion baja permiten sugerencias en tiempo real dentro de extensiones de editor, con el modo thinking en "none" para minimizar la espera.
-- Agente de automatizacion con tool calling: integrado en SGLang con `--tool-call-parser spark25`, puede encadenar llamadas a APIs (calendario, correo, busqueda interna) en flujos multi-paso, usando el nivel de razonamiento "high" solo en los pasos que lo requieran.
-- Procesamiento de documentos largos en ingles o chino: con la configuracion de contexto extendido de SGLang se pueden resumir contratos, informes o historiales extensos, reduciendo `--context-length` cuando la memoria del dispositivo sea limitada.
-- Clasificacion y extraccion de informacion en backend: su formato safetensors y su integracion con transformers permiten desplegarlo como microservicio para etiquetado de tickets, extraccion de entidades o enrutado de consultas a bajo coste.
-- Atencion al cliente en mercados angloparlantes y sinofonos: conversaciones multi-turno con contexto largo y modo thinking desactivable para respuestas rapidas y predecibles.
-- Prototipado e investigacion de tecnicas de razonamiento: los tres niveles de thinking budget permiten estudiar el equilibrio entre cadena de pensamiento y precision sin cambiar de modelo.
-- Inferencia en hardware no NVIDIA: la receta oficial incluye imagenes de SGLang para NPU Ascend (A2 y A3), habilitando despliegue en infraestructura alternativa.
+- Asistente de código en local: el modelo puede integrarse en editores o IDE mediante llama.cpp o SGLang para autocompletado y generación de funciones, aprovechando sus mejoras en código y su bajo requisito de VRAM para ejecutarse en un portátil con GPU de consumo.
+- Agentes autónomos de escritorio: con soporte de tool use y planificación multi-paso, puede orquestar llamadas a APIs y herramientas locales en un pipeline agéntico, ajustando el nivel de razonamiento a "low" para tareas rutinarias y a "high" para decisiones complejas.
+- Análisis de documentos largos: gracias a la ventana de hasta 131.072 tokens, puede resumir o extraer información de contratos, informes o expedientes extensos sin fragmentación agresiva.
+- Atención al cliente bilingüe (inglés/chino): adecuado para entornos de soporte en mercados asiáticos, gestionando conversaciones multi-turno con contexto largo y desplegado en servidores modestos o en el propio dispositivo del usuario.
+- Procesamiento por lotes en el edge: para clasificación, extracción de entidades o generación de resúmenes en dispositivos con recursos limitados, donde su throughput de decodificación superior en contextos cortos frente a modelos comparables reduce el coste por petición.
+- Prototipado rápido de aplicaciones LLM: su licencia Apache 2.0 y su tamaño compacto permiten experimentar sin costes de licencia ni infraestructura GPU de gama alta, sirviendo como banco de pruebas antes de escalar a modelos mayores.
+- Razonamiento matemático asistido: con el modo de pensamiento alto activado, puede resolver problemas de matemáticas paso a paso en aplicaciones educativas o de verificación de cálculos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card incluye graficos (`images/all_benchmark.svg` e `images/inference.svg`) que comparan el modelo con Qwen3.5-2B, MiniCPM-2B y LFM2.5-2.6B en tareas de agente, codigo, matematicas, rendimiento general y conocimiento, pero los valores no estan disponibles en formato texto en la informacion proporcionada. El autor afirma que Spark-X2.6-1.7B supera a los modelos de tamano comparable "en la mayoria de benchmarks" y que obtiene el mejor throughput de decodificacion entre los modelos evaluados en contextos cortos sobre RTX 4090, sin aportar cifras verificables en el texto.
+La model card indica que el modelo supera a modelos de tamaño comparable en la mayoría de benchmarks (agente, código, matemáticas, conocimiento general y conocimiento), con resultados state-of-the-art entre modelos open source de tamaño similar. Sin embargo, los datos numéricos se presentan únicamente en imágenes (`all_benchmark.svg`, `reasoning_effort.svg`, `inference.svg`) no incluidas en la información textual proporcionada.
+
+| Benchmark | Resultado |
+|---|---|
+| MMLU | No disponible en formato numérico |
+| HumanEval | No disponible en formato numérico |
+| GSM8K | No disponible en formato numérico |
+| Agente / tool use | No disponible en formato numérico |
+| Contexto largo | No disponible en formato numérico |
+
+Datos cualitativos sí disponibles: en eficiencia de decodificación, XHToken afirma que Spark-X2.6-1.7B lidera el throughput de decodificación en contextos cortos entre los modelos on-device evaluados (Qwen3.5-2B, MiniCPM-2B, LFM2.5-2.6B), ventaja que se amplifica con su implementación optimizada de llama.cpp en una RTX 4090 en todas las longitudes de contexto probadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos: en FP16/BF16, aproximadamente 3,4 GB; en INT8, en torno a 1,8 GB; en INT4, alrededor de 0,9-1,1 GB (estimaciones teoricas a partir de 1,71 B de parametros; las cuantizaciones concretas no estan listadas por el autor).
-- El repositorio ocupa 6,8 GB, el doble de lo que ocuparian los pesos en FP16/BF16, lo que sugiere pesos en FP32 o copias duplicadas de los mismos; conviene verificar antes de planificar el despliegue.
-- Cabe en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, entre otras, con margen amplio en FP16. Tambien es viable en CPU via llama.cpp.
-- Contextos largos: la configuracion de SGLang para 1.048.576 tokens exige memoria de dispositivo considerable por la cache KV; la propia model card recomienda reducir `--context-length` cuando sea necesario.
-- Opciones de despliegue declaradas: transformers 4.57.1 (con `trust_remote_code=True`), SGLang (imagen `lmsysorg/sglang:nightly-dev-cu13-20260827-20621aa1` para NVIDIA; imagenes `quay.io/ascend/sglang:main-cann9.0.0-a3` y `main-cann9.0.0-910b` para Ascend) y el fork `XHToken/llama.cpp`.
-- No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
-- Latencia y throughput: el autor declara liderazgo en velocidad de decodificacion frente a modelos del mismo tamano en la RTX 4090, pero no se aportan tokens por segundo ni latencias concretas.
+- VRAM estimada: no disponible de forma explícita. Para 1,7B parámetros, en FP16 se requieren aproximadamente 3,4 GB de pesos más overhead de activaciones y KV cache; en cuantizaciones de 8 bits o 4 bits el requisito baja sustancialmente (estimación orientativa, no confirmada por el autor).
+- GPU recomendadas: el autor evalúa la eficiencia en una RTX 4090; también se documenta despliegue en NPUs Ascend (A2 y A3) mediante imágenes de SGLang.
+- GPU de consumo: por tamaño, es apto para GPUs de consumo con suficiente VRAM; el autor no publica una lista oficial de GPUs verificadas más allá de la RTX 4090.
+- Opciones de despliegue: Transformers (versión 4.57.1, con `trust_remote_code=True`), SGLang (imagen `lmsysorg/sglang:nightly-dev-cu13-20260827-20621aa1` para NVIDIA; imágenes `quay.io/ascend/sglang:main-cann9.0.0-a3` y `...-910b` para Ascend) y llama.cpp mediante el fork optimizado de XHToken.
+- Latencia y throughput: el autor afirma throughput de decodificación líder entre modelos comparables en contextos cortos, con ventaja ampliada en la RTX 4090; no se publican cifras absolutas de tokens por segundo en el texto disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Spark-X2.6-1.7B | 1.707.657.216 (~1,71 B) | Hasta 1.048.576 tokens en la configuracion de SGLang | Apache 2.0 | Hugging Face, transformers, SGLang, llama.cpp | Base de la comparacion; three-level thinking budget |
-| Spark-X2.6-4B | No disponible | No disponible | No disponible | Mismo autor, misma serie | Predecesor de la serie X2.6, mayor tamano |
-| Spark-X2.5-1.7B | No disponible | No disponible | No disponible | Mismo autor | Arquitectura identica; X2.6 mejora via post-entrenamiento |
-| Qwen3.5-2B | No disponible en la informacion | No disponible | No disponible | Citado como baseline por el autor | Usado como referencia de throughput y rendimiento |
-| MiniCPM-2B | No disponible en la informacion | No disponible | No disponible | Citado como baseline por el autor | Usado como referencia de modelo on-device |
-| LFM2.5-2.6B | No disponible en la informacion | No disponible | No disponible | Citado como baseline por el autor | Usado como referencia de modelo on-device |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Spark-X2.6-1.7B | 1,7B | Hasta 131.072 tokens (generación) | Apache 2.0 | Presupuesto de razonamiento configurable; foco en on-device |
+| Qwen3.5-2B | No disponible en la información | No disponible | No disponible | Citado por el autor como referencia de eficiencia on-device |
+| MiniCPM-2B | No disponible en la información | No disponible | No disponible | Citado por el autor como referencia de eficiencia on-device |
+| LFM2.5-2.6B | No disponible en la información | No disponible | No disponible | Citado por el autor como referencia de eficiencia on-device |
 
-Los datos de los modelos alternativos no aparecen en la informacion proporcionada; solo se conocen como baselines de comparacion empleados por XHToken en sus graficos.
+Los datos de rendimiento comparativo se presentan solo en las figuras de la model card, no en texto; por tanto, no se dispone de cifras numéricas para una comparación cuantitativa en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declaran ingles y chino. El rendimiento en castellano no esta evaluado ni garantizado, por lo que no es adecuado para produccion en espanol sin una evaluacion previa.
-- Ausencia de benchmarks numericos publicados en la informacion disponible: las afirmaciones de superar a modelos comparables no pueden verificarse con cifras a partir de los datos facilitados.
-- Riesgo de alucinacion: como cualquier LLM de 1,7 B, la precision factua en conocimiento general es limitada; conviene anclar respuestas con recuperacion (RAG) y validacion posterior.
-- Requiere `trust_remote_code=True` y codigo personalizado: implica ejecutar codigo del autor y revisar su procedencia antes de desplegarlo en entornos sensibles.
-- Madurez del ecosistema: 0 descargas y 21 likes en el momento de la consulta; el soporte se concentra en SGLang y en un fork propio de llama.cpp, con ausencia declarada de vLLM, TGI u Ollama.
-- Contexto largo: la ventana de 1 M de tokens es una configuracion de servidor sujeta a memoria; utilizarla sin adjustar `--context-length` puede provocar OOM.
-- Thinking budget: el modo "high" incrementa latencia y consumo de tokens; en produccion conviene medir el impacto antes de activarlo por defecto.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero se recomienda conservar el aviso de licencia y verificar las condiciones de los pesos derivados.
-- Sesgos: no se documenta ninguna evaluacion de sesgos, toxicidad o seguridad en la informacion disponible.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
+- Riesgo de alucinación inherente a modelos de 1,7B parámetros, especialmente en tareas de conocimiento factual y contextos largos.
+- La longitud de contexto de entrenamiento no se especifica; usar los 131.072 tokens del ejemplo de generación podría degradar la calidad si el modelo no fue entrenado para ello.
+- Requiere `trust_remote_code=True` y una versión concreta de Transformers (4.57.1), lo que añade riesgo de incompatibilidad en pipelines de producción.
+- No se detallan sesgos conocidos, composición del dataset ni procesos de alineación (RLHF/DPO), lo que dificulta evaluar riesgos de sesgo.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero se recomienda verificar los términos de los datos de entrenamiento (no publicados).
+- El modelo se posiciona como SOTA entre modelos de tamaño comparable según el autor, pero sin cifras verificables en texto; conviene validar con benchmarks propios antes de adoptarlo en producción.
+- La implementación óptima de llama.cpp es un fork mantenido por XHToken, no la versión upstream; esto puede suponer dependencia de un repositorio de terceros.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-1.7B
+- Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-1.7B-Base
-- Fork de llama.cpp del autor: https://github.com/XHToken/llama.cpp
+- Fork optimizado de llama.cpp: https://github.com/XHToken/llama.cpp
 - Slack: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
 - Discord: https://discord.gg/kTDE2Hg8aw
 - YouTube: https://www.youtube.com/@SparkLLM
@@ -100,4 +105,3 @@ Los datos de los modelos alternativos no aparecen en la informacion proporcionad
 - Bluesky: https://bsky.app/profile/sparkllm.bsky.social
 - X: https://x.com/sparkllm
 - Zhihu: https://www.zhihu.com/people/zhiikz7qh7m
-- WeChat: images/xhtoken-wechat.jpg (referencia relativa dentro del repositorio)

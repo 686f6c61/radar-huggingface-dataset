@@ -2,96 +2,99 @@
 
 ## Resumen
 
-`Noname010101/media-extras` no es un modelo entrenado, sino un repositorio espejo (mirror) de pesos auxiliares empleados por una imagen de pod dedicada a generación de vídeo con ComfyUI, Wan 2.1 / Wan 2.2, SVI 2.0 Pro, RIFE y Real-ESRGAN. Su función es evitar que el arranque del pod dependa de repositorios de terceros: todos los ficheros son copias sin modificar de los originales, con la única excepción del renombrado de un LoRA de destilación de lightx2v para que coincida con el nombre que espera la imagen.
+`media-extras` es un repositorio espejo (mirror) publicado por el usuario Noname010101 que agrupa los pesos auxiliares utilizados por una imagen de pod de generación de vídeo basada en ComfyUI, Wan 2.1, SVI 2.0 Pro, RIFE y Real-ESRGAN. No se trata de un modelo entrenado desde cero, sino de una recopilación de artefactos de inferencia: un modelo de difusión de vídeo text-to-video (Wan2.1-T2V-14B en fp8), un módulo VACE de control, un text encoder umt5-xxl, un VAE, dos LoRAs de SVI 2.0 Pro para image-to-video, una LoRA de destilación lightx2v, dos modelos de interpolación RIFE y dos modelos de superresolución Real-ESRGAN.
 
-El contenido abarca LoRAs de destilación (lightx2v rank 32 para T2V 14B), LoRAs de SVI 2.0 Pro para Wan 2.2 I2V A14B (high noise y low noise), el modelo base Wan 2.1 T2V 14B en fp8 e4m3fn, el módulo VACE 14B en fp8, el text encoder umt5-xxl en fp8, el VAE de Wan 2.1 en bf16, dos modelos de interpolación de frames (RIFE 4.9) y dos modelos de superresolución (Real-ESRGAN x2plus y x4plus). El repositorio ocupa 27,8 GB y no incluye model card técnica del modelo en sí, sino una tabla de ficheros con hashes SHA-256 y procedencia.
+El propósito declarado es evitar dependencias de repositorios de terceros en el arranque de los pods: todos los ficheros son copias sin modificar de los originales, salvo el renombrado de la LoRA lightx2v para que coincida con el nombre que espera la imagen. Por tanto, su relevancia no está en capacidades nuevas de modelado, sino en la reproducibilidad y el empaquetado de un pipeline completo de generación de vídeo.
 
-Es relevante ahora porque agrupa en un único punto de descarga todos los artefactos necesarios para montar un pipeline de generación de vídeo con Wan en ComfyUI, con licencias compatibles con redistribución (Apache-2.0, MIT y BSD-3-Clause) y verificación criptográfica por fichero. No debe confundirse con un modelo generativo publicable: es infraestructura de empaquetado.
+El dato de "parámetros totales" del repositorio (8.467.856.832, aproximadamente 8,5 mil millones) no corresponde a un único modelo: es la suma agregada de los tensores safetensors presentes en el repo, dominada por el text encoder umt5-xxl y el modelo T2V de 14B en fp8. El tamaño total del repositorio es de 41,1 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Repositorio de pesos auxiliares; incluye modelos basados en transformer de difusión (Wan 2.1 T2V 14B, Wan 2.1 VACE 14B, Wan 2.2 I2V A14B vía LoRA), text encoder T5 (umt5-xxl), VAE convolucional, redes de interpolación (RIFE) y superresolución (Real-ESRGAN) |
-| Parametros totales | No disponible como modelo único; el mayor componente es Wan 2.1 T2V 14B (14 000 millones nominales) en fp8 e4m3fn (14,86 GB) |
-| Parametros activos | No disponible (no es un MoE; Wan 2.2 I2V A14B se distribuye aquí solo como LoRAs, no como pesos completos) |
-| Longitud de contexto | No disponible (modelos de difusión de vídeo; la longitud se mide en frames, no en tokens) |
-| Tipos de cuantizacion | fp8 e4m3fn (Wan 2.1 T2V 14B, VACE 14B, umt5-xxl), bf16 (VAE Wan 2.1), safetensors de precisión original para LoRAs, .pth para RIFE y Real-ESRGAN |
-| Idiomas soportados | No disponible (el text encoder umt5-xxl es multilingüe, pero el repositorio no declara idiomas) |
-| Licencia | Mixta por fichero: Apache-2.0 (Wan 2.1, umt5-xxl, LoRA lightx2v), MIT (SVI 2.0 Pro, RIFE), BSD-3-Clause (Real-ESRGAN). La model card declara `license: other` con `license_name: mixed-see-table` |
-| Formato de pesos | safetensors (modelos y LoRAs), .pth (RIFE, Real-ESRGAN) |
+| Arquitectura | Pipeline heterogéneo: difusión de vídeo (Wan2.1 T2V 14B, VACE 14B), text encoder transformer (umt5-xxl), VAE (Wan2.1), LoRAs (SVI 2.0 Pro, lightx2v), redes de interpolación (RIFE 4.9) y superresolución (Real-ESRGAN x2/x4) |
+| Parametros totales | 8.467.856.832 en safetensors (suma agregada del repo, no de un modelo único); el componente T2V principal es Wan2.1-T2V-14B |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | fp8_e4m3fn (T2V 14B, VACE 14B, umt5-xxl), bf16 (VAE), safetensors de precisión original para LoRAs; ficheros .pth para RIFE y Real-ESRGAN |
+| Idiomas soportados | no disponible (el text encoder umt5-xxl es multilingüe, pero la model card no declara idiomas) |
+| Licencia | mixta: Apache-2.0 (Wan2.1, umt5-xxl, lightx2v), MIT (SVI 2.0 Pro, RIFE), BSD-3-Clause (Real-ESRGAN); el repo declara `license: other` con `license_name: mixed-see-table` |
+| Formato de pesos | safetensors (mayoría), .pth (RIFE, Real-ESRGAN) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena ningún modelo: agrega artefactos de terceros. Los componentes principales son modelos de difusión de vídeo de la familia Wan. Wan 2.1 T2V 14B es un transformer de difusión para texto-a-vídeo; Wan 2.1 VACE 14B es el módulo de control y edición de vídeo de la misma familia; Wan 2.2 I2V A14B aparece únicamente como LoRAs de SVI 2.0 Pro (versión 2.0, high noise y low noise) que se aplican sobre el modelo base de imagen-a-vídeo. El text encoder es umt5-xxl (T5 XXL de Google) en fp8, y el VAE de Wan 2.1 se distribuye en bf16.
+El repositorio no entrena ningún modelo; agrega artefactos de inferencia de varios proyectos. El núcleo generativo es Wan2.1-T2V-14B, un modelo de difusión de vídeo en arquitectura transformer con 14 mil millones de parámetros, aquí distribuido en fp8_e4m3fn (14,86 GB). Se acompaña del módulo Wan2.1-VACE-14B (3,05 GB en fp8), que aporta control condicional sobre la generación, y del text encoder umt5-xxl en fp8 (6,73 GB), junto con el VAE de Wan2.1 en bf16 (253 MB).
 
-Los LoRAs de destilación de lightx2v (rank 32, cfg step distill) permiten reducir el número de pasos de muestreo y prescindir de CFG, lo que acelera la inferencia en producción. RIFE 4.9 se emplea para interpolación de frames y Real-ESRGAN x2plus/x4plus para superresolución de los fotogramas generados. No se dispone de información sobre datasets de entrenamiento, número de tokens, composición de datos ni procesos de RLHF/DPO en la información proporcionada; esos detalles pertenecen a los repositorios upstream (Wan-AI, lightx2v, vita-video-gen, hzwer, xinntao).
+Sobre esa base se aplican LoRAs: dos de SVI 2.0 Pro (high noise y low noise, 1,22 GB cada una, MIT) para image-to-video sobre Wan2.2-I2V-A14B, y la LoRA de destilación lightx2v rank 32 (316 MB, Apache-2.0) que reduce los pasos de muestreo y permite prescindir de CFG. El pipeline se completa con RIFE 4.9 (interpolación de fotogramas, MIT) y Real-ESRGAN x2plus/x4plus (superresolución, BSD-3-Clause). No hay información sobre datasets, número de tokens de entrenamiento ni procesos de RLHF/DPO, ya que el autor no entrena modelos.
 
 ## Capacidades
 
-- Generación de vídeo texto-a-vídeo mediante Wan 2.1 T2V 14B (pesos fp8 incluidos).
-- Edición y control de vídeo mediante el módulo Wan 2.1 VACE 14B (fp8).
-- Imagen-a-vídeo con Wan 2.2 I2V A14B mediante los LoRAs de SVI 2.0 Pro v2.0 (high noise y low noise).
-- Aceleración de muestreo mediante el LoRA de destilación lightx2v rank 32 (cfg step distill).
-- Codificación de texto con umt5-xxl en fp8 para prompts multilingües (capacidad heredada del encoder, no declarada en el repositorio).
-- Decodificación de latentes a vídeo con el VAE de Wan 2.1 en bf16.
-- Interpolación de frames con RIFE 4.9 para aumentar la tasa de fotogramas.
-- Superresolución de fotogramas con Real-ESRGAN x2plus y x4plus.
-- No incluye tool calling, function calling, agentes ni razonamiento multi-step: no es un modelo de lenguaje.
-- No incluye capacidades de audio ni de visión general fuera del pipeline de vídeo.
+- Generación de vídeo text-to-video mediante Wan2.1-T2V-14B.
+- Image-to-video con las LoRAs SVI 2.0 Pro (versión high noise y low noise).
+- Control condicional de la generación con el módulo VACE 14B.
+- Aceleración del muestreo mediante la LoRA de destilación lightx2v (cfg step distill).
+- Interpolación de fotogramas con RIFE 4.9 para aumentar la tasa de fotogramas.
+- Superresolución de vídeo o imagen con Real-ESRGAN x2 y x4.
+- Codificación de texto multilingüe mediante umt5-xxl.
+- Integración prevista con ComfyUI como backend de generación.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Despliegue reproducible de pods de generación de vídeo: el repositorio permite que una imagen de ComfyUI descargue todos los pesos desde un único origen con hashes verificables, eliminando dependencias de repositorios de terceros en el arranque.
-- Pipeline texto-a-vídeo en producción: combinando Wan 2.1 T2V 14B fp8 con el LoRA lightx2v se reduce el número de pasos de muestreo, lo que baja el coste por clip en GPUs de datacenter.
-- Edición de vídeo existente: el módulo VACE 14B permite tareas de control y edición sobre vídeo de entrada, útil en postproducción automatizada.
-- Imagen-a-vídeo con control de ruido: los LoRAs SVI 2.0 Pro high/low noise sobre Wan 2.2 I2V A14B permiten ajustar el comportamiento del muestreo en distintas fases de la generación.
-- Mejora de calidad de clips generados: RIFE 4.9 interpola frames para subir la tasa de fotogramas y Real-ESRGAN x2plus/x4plus aumenta la resolución de los fotogramas, en un paso posterior a la difusión.
-- Replicación de entornos de investigación: los SHA-256 por fichero facilitan la verificación de integridad en clústeres y la auditoría de qué pesos exactos se usaron en cada experimento.
-- Distribución en entornos con restricciones de red: al ser un mirror público, sirve como origen único para imágenes de contenedor que no pueden acceder a múltiples repositorios upstream.
+- Generación de clips de vídeo a partir de descripciones textuales: usar Wan2.1-T2V-14B con el text encoder umt5-xxl para producir secuencias cortas en un flujo ComfyUI, aprovechando la versión fp8 para reducir requisitos de VRAM.
+- Animación de imágenes fijas: aplicar las LoRAs SVI 2.0 Pro sobre un modelo I2V de la familia Wan2.2 para convertir fotografías o ilustraciones en clips animados con control de ruido alto/bajo.
+- Edición y control de vídeo existente: emplear el módulo VACE 14B para condicionar la generación sobre vídeo de entrada (pose, profundidad u otras guías) en tareas de reestilización o sustitución de contenido.
+- Aceleración de pipelines de producción: incorporar la LoRA lightx2v rank 32 para reducir el número de pasos de muestreo y eliminar la necesidad de CFG, disminuyendo la latencia por clip.
+- Postprocesado de vídeo generado: aplicar RIFE 4.9 para interpolar fotogramas y elevar la tasa de fps, y Real-ESRGAN x2/x4 para reescalar la resolución final antes de publicar.
+- Reproducibilidad de entornos de inferencia: desplegar la imagen de pod con este mirror para garantizar que el arranque no dependa de repositorios de terceros y que las versiones de pesos coincidan con las esperadas por la imagen.
+- Creación de contenido para redes sociales y previsualizaciones: generar clips cortos con estilización y upscaling en un flujo automatizado, siempre que se respeten las licencias upstream de cada componente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de tamaño de ficheros, Wan 2.1 T2V 14B fp8 ocupa 14,86 GB, umt5-xxl fp8 6,73 GB, VACE 14B fp8 3,05 GB y el VAE bf16 0,25 GB; la suma de pesos supera los 25 GB, por lo que la inferencia completa requiere GPUs de datacenter con 40-80 GB de VRAM o descarga por etapas.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño de pesos, el pipeline completo encaja en A100 80 GB o H100 80 GB; en GPUs de 24 GB (RTX 4090) sería necesario descargar y cargar componentes por separado.
-- ¿Cabe en consumer GPU?: no disponible de forma oficial. Los componentes individuales (LoRAs de ~1,2 GB, RIFE ~21 MB, Real-ESRGAN ~67 MB) sí caben en cualquier GPU consumer; el modelo base T2V 14B fp8 no cabe íntegro en 24 GB junto con el resto del pipeline.
-- Opciones de despliegue: la model card indica que los pesos están pensados para una imagen de pod con ComfyUI; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a modelos de difusión de vídeo).
+- VRAM estimada: el componente dominante es Wan2.1-T2V-14B en fp8 (14,86 GB de pesos), más el text encoder umt5-xxl fp8 (6,73 GB) y el VAE (253 MB). Un pipeline que cargue todo simultáneamente necesita del orden de 22-24 GB de VRAM solo para pesos; con overhead de activaciones y latents de vídeo, se recomienda 24 GB o más.
+- El módulo VACE 14B fp8 añade 3,05 GB si se usa control condicional.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para el flujo T2V base; para VACE junto con T2V conviene 40 GB o más.
+- En GPU de consumo: cabe en RTX 4090 (24 GB) para el flujo T2V en fp8; en GPUs de 16 GB o menos será necesario descargar componentes a CPU o usar cuantizaciones adicionales no incluidas en este repo.
+- Opciones de despliegue: ComfyUI (entorno previsto por el autor), con soporte de carga de safetensors fp8; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un pipeline de difusión de vídeo).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Repositorio | Contenido | Tamaño | Licencia | Observaciones |
-|---|---|---|---|---|
-| `Noname010101/media-extras` | Pesos auxiliares Wan 2.1/2.2, SVI 2.0 Pro, RIFE, Real-ESRGAN | 27,8 GB | Mixta (Apache-2.0, MIT, BSD-3-Clause) | Mirror para pods de ComfyUI; sin benchmarks ni model card técnica |
-| `Wan-AI/Wan2.1-T2V-14B` | Modelo base T2V 14B | No disponible | Apache-2.0 | Upstream del modelo principal incluido aquí en fp8 |
-| `Kijai/WanVideo_comfy` | Versiones fp8 y LoRAs para ComfyUI de la familia Wan | No disponible | Apache-2.0 | Origen de la mayoría de ficheros del mirror |
-| `vita-video-gen/svi-model` | LoRAs SVI 2.0 Pro para Wan 2.2 I2V A14B | No disponible | MIT | Upstream de los LoRAs SVI incluidos |
+| Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| media-extras (este repo) | 8,5B agregados en safetensors; T2V 14B en fp8 | no disponible | Pipeline de vídeo (difusión + LoRAs + postproceso) | Mixta (Apache-2.0, MIT, BSD-3-Clause) | Hugging Face, mirror público |
+| Wan-AI/Wan2.1-T2V-14B | 14B | no disponible | Difusión de vídeo T2V | Apache-2.0 | Hugging Face (upstream) |
+| Kijai/WanVideo_comfy | no disponible | no disponible | Repositorio de pesos fp8/ComfyUI para Wan | Según componente | Hugging Face |
+| vita-video-gen/svi-model | no disponible | no disponible | LoRAs I2V sobre Wan2.2 | MIT | Hugging Face |
+
+La comparación relevante es con los repositorios upstream: `media-extras` no aporta pesos nuevos, sino una copia empaquetada con nombres normalizados para una imagen concreta. Frente a usar los repos originales por separado, la ventaja es la reproducibilidad; la desventaja es que no recibe actualizaciones independientes y queda atado a las versiones fijadas por el autor.
 
 ## Limitaciones y advertencias
 
-- No es un modelo entrenado ni publicable como tal: es un mirror de pesos de terceros; cualquier evaluación de calidad debe hacerse sobre los modelos upstream.
-- La licencia es mixta y depende del fichero; la model card usa `license: other` con `license_name: mixed-see-table`, lo que exige revisar cada entrada de la tabla antes de un uso comercial.
-- El fichero `loras/lightx2v_t2v_14b_rank32.safetensors` fue renombrado respecto al original (`Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`); los pesos no se modificaron, pero el nombre no coincide con el upstream.
-- No se declaran idiomas soportados ni sesgos conocidos; el comportamiento multilingüe depende del text encoder umt5-xxl.
-- Riesgo de alucinación no aplicable en el sentido de LLM, pero sí de artefactos visuales propios de los modelos de difusión de vídeo.
-- No hay benchmarks, métricas de latencia ni guías de cuantización más allá de los formatos fp8 e4m3fn y bf16 incluidos.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin histórico de uso que permita validar su mantenimiento.
-- La fecha de creación indicada (2026-11-06) es futura respecto a la información disponible; conviene verificar la integridad de los metadatos.
-- No se proporcionan instrucciones de uso, scripts de carga ni configuración de ComfyUI en la model card.
+- No es un modelo entrenado ni afinado: es un mirror de pesos de terceros; cualquier mejora o corrección debe venir de los repos upstream.
+- La licencia es mixta y el repo declara `license: other` con `license_name: mixed-see-table`; el uso comercial exige revisar la licencia de cada fichero (Apache-2.0, MIT, BSD-3-Clause) y cumplir sus condiciones de atribución.
+- El dato de "parámetros totales" del repo es una suma agregada y no debe interpretarse como el tamaño de un modelo único.
+- No hay información sobre sesgos, alucinaciones ni limitaciones idiomáticas del pipeline; los riesgos propios de la generación de vídeo (contenido sintético engañoso, deepfakes, sesgos visuales) aplican a los modelos upstream.
+- No se documentan requisitos de hardware, latencia ni benchmarks; cualquier estimación de rendimiento es aproximada.
+- El renombrado de la LoRA lightx2v implica que el fichero no coincide nominalmente con el original; verificar el sha256 antes de usarlo en producción.
+- El pipeline depende de ComfyUI y de la imagen de pod concreta; no se garantiza compatibilidad con otros orquestadores.
+- No hay información sobre idiomas soportados ni sobre calidad multilingüe de las prompts.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Noname010101/media-extras
-- Wan 2.1 T2V 14B (upstream): https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
-- Wan 2.1 VACE 14B (upstream): https://huggingface.co/Wan-AI/Wan2.1-VACE-14B
-- Kijai/WanVideo_comfy (origen de fp8 y LoRAs): https://huggingface.co/Kijai/WanVideo_comfy
-- lightx2v/Wan2.1-Distill-Loras (upstream del LoRA de destilación): https://huggingface.co/lightx2v/Wan2.1-Distill-Loras
-- SVI 2.0 Pro (vita-video-gen): https://huggingface.co/vita-video-gen/svi-model/tree/main/version-2.0
-- Mirror de RIFE (marduk191): https://huggingface.co/marduk191/rife
-- Practical-RIFE (upstream de RIFE): https://github.com/hzwer/Practical-RIFE
-- Real-ESRGAN (releases): https://github.com/xinntao/Real-ESRGAN/releases
+- Repositorio en Hugging Face: https://huggingface.co/Noname010101/media-extras
+- Wan2.1 T2V 14B (upstream): https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
+- Wan2.1 VACE 14B (upstream): https://huggingface.co/Wan-AI/Wan2.1-VACE-14B
+- Pesos fp8 para ComfyUI: https://huggingface.co/Kijai/WanVideo_comfy
+- LoRA lightx2v (upstream): https://huggingface.co/lightx2v/Wan2.1-Distill-Loras
+- SVI 2.0 Pro LoRAs: https://huggingface.co/vita-video-gen/svi-model/tree/main/version-2.0
 - umt5-xxl (upstream): https://huggingface.co/google/umt5-xxl
+- RIFE (mirror): https://huggingface.co/marduk191/rife
+- Practical-RIFE (upstream): https://github.com/hzwer/Practical-RIFE
+- Real-ESRGAN (releases): https://github.com/xinntao/Real-ESRGAN/releases

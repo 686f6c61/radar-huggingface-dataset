@@ -2,93 +2,95 @@
 
 ## Resumen
 
-Apodex-1.1-mini-GGUF es una cuantizacion en formato GGUF del modelo base apodex/Apodex-1.1-mini, desarrollado por Apodex AI y convertido por el usuario abenzerps. Se trata de un modelo de arquitectura Qwen3.5 MoE (mixture of experts) con 35.505 millones de parametros totales, disenado para tareas de larga duracion que implican investigacion, manipulacion de archivos, analisis de datos, generacion de codigo y uso de herramientas. Es multimodal: admite entrada de texto e imagen, y para esta ultima requiere el proyector de vision F16 incluido en el repositorio.
+Apodex-1.1-mini-GGUF es la coleccion de cuantizaciones en formato GGUF del modelo apodex/Apodex-1.1-mini, un transformer de arquitectura Mixture of Experts (MoE) de 35.505.251.456 parametros totales construido sobre la familia Qwen3.5. El modelo original lo desarrolla Apodex AI y esta orientado a tareas de investigacion, analisis de datos, manejo de ficheros, generacion de codigo y flujos de trabajo basados en herramientas. Esta version GGUF la publica el usuario abenzerps para su uso con llama.cpp.
 
-El modelo destaca por su integracion con el runtime de agentes FrontierAgent de Apodex AI, que permite un modo "Agent Team" donde un coordinador divide el trabajo en subtareas delegadas a subagentes paralelos. La licencia Apache 2.0 facilita su uso comercial y la cuantizacion Q4_K_M ocupa 21,7 GB, lo que lo hace desplegable en GPUs de consumo con 24 GB de VRAM. La version 1.0 del modelo anunciaba una ventana de contexto de 262K tokens, aunque para la 1.1 no se ha publicado el dato exacto en la informacion disponible.
+El interes practico de esta publicacion es que permite ejecutar un modelo MoE de 35,5B parametros en hardware de consumo mediante cuantizaciones que van desde 8,82 GB (IQ1_M) hasta 37,8 GB (Q8_0). Ademas, conserva la cabeza MTP/NextN del checkpoint original, lo que habilita decodificacion especulativa nativa en llama.cpp, e incluye el proyector visual F16 necesario para entrada de imagenes.
+
+La relevancia reciente del modelo viene de su naturaleza multimodal y de su evaluacion con el arnes de agentes FrontierAgent de Apodex AI. En el flujo Agent Team obtuvo 27,7 en APEX-Agent, 50,2 en FrontierFinance y 51,7 en FrontierScience-Research, lo que lo situa como una opcion a considerar para tareas agenticas de dominio cientifico y financiero en entornos locales. La licencia Apache-2.0 facilita su adopcion comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5MoeForConditionalGeneration / qwen35moe |
-| Parametros totales | 35.505.251.456 (aprox. 35,5B) |
-| Parametros activos | no disponible (arquitectura MoE) |
-| Longitud de contexto | no disponible (la version 1.0 del modelo anunciaba 262K tokens) |
-| Tipos de cuantizacion | Q4_K_M (21,7 GB) |
-| Idiomas soportados | ingles (en), chino (zh) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (modelo original en safetensors) |
+| Arquitectura | Transformer Mixture of Experts (MoE), base Qwen3.5, con cabeza MTP/NextN |
+| Parametros totales | 35.505.251.456 (35,5B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (los ejemplos de la model card usan `-c 4096`) |
+| Tipos de cuantizacion | IQ1_M, IQ2_M, Q2_K, IQ3_M, Q3_K_M, Q4 Selective (Q4_K_M), Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | en, zh |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); proyector visual en GGUF F16; pesos originales en safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-Apodex-1.1-mini emplea una arquitectura de mixture of experts basada en Qwen3.5, con 35,5 mil millones de parametros totales. El modelo es multimodal: procesa texto e imagen mediante un proyector de vision independiente (F16, 899 MB) que se combina con el GGUF principal solo cuando se requiere entrada visual. La cuantizacion se realizo desde BF16 a Q4_K_M utilizando llama.cpp en el commit `f280b26983ad0fdb705a0d9ebf0503e76f2899b0`, y los archivos fuente fueron verificados contra sus hashes LFS de Hugging Face antes de la conversion.
+El modelo base es un transformer con capas Mixture of Experts etiquetado por el autor como perteneciente a la familia Qwen3.5. La model card no detalla el numero de expertos, el ratio de activacion ni la distribucion de parametros activos por token, por lo que esos datos no estan disponibles. Una innovacion tecnica destacable es la presencia de una cabeza MTP (Multi-Token Prediction) / NextN en el checkpoint, que se conserva intacta en todas las cuantizaciones GGUF y permite usar decodificacion especulativa en llama.cpp mediante `--spec-type draft-mtp`.
 
-El modelo esta disenado para trabajo de "larga duracion" (long-horizon) con investigacion, archivos, datos, codigo y herramientas. Apodex AI ha desarrollado FrontierAgent, un runtime de agentes y harness de evaluacion open source, sobre el que se construye el modo "Agent Team": un coordinador divide el trabajo en subtareas, las delega en subagentes paralelos, recoge los resultados y prepara la respuesta final. La informacion de entrenamiento (numero de tokens, composicion del dataset, metodos de RLHF/DPO) no esta disponible en la documentacion publicada.
+La model card tampoco documenta el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. Lo unico verificable es la evaluacion reportada por Apodex AI con su propio arnes FrontierAgent, que no es un benchmark publico independiente. Las cuantizaciones IQ se generaron con una importance matrix incluida en el repo (`Apodex-1.1-mini-wiki-100x512.imatrix`), y la variante Q4 Selective aplica precision superior de forma selectiva en pesos clave.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso con arquitectura MoE de 35,5B parametros.
-- Entrada multimodal: texto e imagen, mediante el proyector de vision F16 incluido en el repositorio.
-- Soporte de agentes: el sistema Agent Team basado en FrontierAgent permite delegacion de tareas a subagentes paralelos.
-- Uso de herramientas y manejo de archivos, orientado a flujos de trabajo de investigacion y datos.
-- Capacidades multilingues limitadas a ingles y chino.
-- Compatible con llama.cpp y su ecosistema (llama-cli, llama-mtmd-cli).
+- Generacion de texto conversacional y razonamiento en ingles y chino.
+- Generacion y analisis de codigo, con soporte para tareas de ingenieria de software.
+- Trabajo con ficheros y documentos como parte de flujos de agente.
+- Entrada multimodal de imagenes mediante el proyector `mmproj-Apodex-1.1-mini-F16.gguf` (899 MB), requerido para vision.
+- Decodificacion especulativa MTP/NextN para acelerar la inferencia en llama.cpp.
+- Orientacion a flujos agenticos multi-paso, segun la evaluacion con FrontierAgent y el flujo Agent Team.
+- Plantilla de chat propia (`chat_template.jinja`) compatible con `--jinja`.
+- Soporte de tool calling: no confirmado explicitamente en la informacion disponible, aunque la orientacion del modelo a "tool-driven work" lo sugiere.
 
 ## Casos de uso
 
-- **Investigacion automatizada**: el modelo puede descomponer un problema de investigacion en subtareas (lectura de articulos, extraccion de datos, sintesis) y delegarlas a subagentes paralelos, gracias al sistema Agent Team.
-- **Analisis de documentos con soporte visual**: combinando el GGUF principal con el proyector de imagen, puede procesar documentos que incluyen figuras, diagramas o capturas de pantalla junto con texto.
-- **Generacion de codigo en produccion**: con su soporte de herramientas y su arquitectura MoE, puede integrarse en pipelines de desarrollo para autocompletar, revisar o generar fragmentos de codigo.
-- **Asistencia en finanzas**: segun los resultados publicados, obtiene 50,2 en FrontierFinance, lo que sugiere capacidad para razonar sobre datos financieros estructurados y tomar decisiones de analisis.
-- **Razonamiento cientifico**: con 51,7 en FrontierScience-Research, puede apoyar la sintesis de literatura cientifica, la formulacion de hipotesis o la interpretacion de resultados experimentales.
-- **Automatizacion de tareas de oficina**: su capacidad de manejar archivos y datos junto con su ventana de contexto larga (heredada de la familia Qwen3.5) lo hace adecuado para resumir documentos extensos, extraer informacion de bases de conocimiento y generar informes.
+- Analisis de documentos financieros en local: el modelo obtuvo 50,2 en FrontierFinance, por lo que es adecuado para extraer y razonar sobre informes y estados financieros sin enviar datos a la nube, usando Q4_K_M en una GPU de 24 GB.
+- Asistencia a investigacion cientifica: con 51,7 en FrontierScience-Research, puede emplearse para resumir literatura, contrastar hipotesis y estructurar resultados dentro de un pipeline de agentes.
+- Agentes multi-paso con herramientas: su evaluacion en APEX-Agent (27,7) y el soporte de MTP lo hacen util para orquestaciones donde la latencia por token importa, activando `--spec-type draft-mtp`.
+- Generacion de codigo en entornos con requisitos de soberania del dato: al ejecutarse con llama.cpp sobre GGUF y licencia Apache-2.0, encaja en pipelines de CI/CD o revision de codigo on-premise.
+- Procesamiento de imagenes y documentos escaneados: con el proyector F16 puede describir imagenes, extraer texto de capturas o interpretar diagramas en flujos de digitalizacion.
+- Despliegue en estaciones de trabajo con VRAM limitada: la variante IQ2_M (12,2 GB) permite servir el modelo en GPUs de 16 GB, y IQ1_M (8,82 GB) en equipos de 12 GB, para prototipado y pruebas internas.
+- Atencion al cliente o asistentes internos bilingues ingles-chino: el modelo cubre ambos idiomas de forma nativa, lo que sirve para soporte a usuarios en esas dos lenguas.
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados proceden de la model card del modelo original de Apodex AI y se obtuvieron con la configuracion Agent Team. La cuantizacion GGUF no ha sido evaluada de forma independiente sobre estos benchmarks.
+Los unicos datos disponibles son los reportados por Apodex AI con su arnes propio FrontierAgent sobre el checkpoint original, no sobre estas cuantizaciones.
 
-| Benchmark | Resultado (Agent Team) |
-|---|---|
-| APEX-Agent | 27,7 |
-| FrontierFinance | 50,2 |
-| FrontierScience-Research | 51,7 |
+| Benchmark | Apodex-1.1-mini | Contexto |
+|---|---:|---|
+| APEX-Agent (Agent Team) | 27,7 | Evaluacion propia de Apodex AI |
+| FrontierFinance | 50,2 | Evaluacion propia de Apodex AI |
+| FrontierScience-Research | 51,7 | Evaluacion propia de Apodex AI |
 
-Nota: el repositorio GGUF indica explicitamente que estos valores se reproducen de la evaluacion del modelo original y que esta version cuantizada no ha sido evaluada por separado. No se han publicado resultados de benchmarks clasicos (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible, ni mediciones de latencia o throughput para las cuantizaciones GGUF.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el archivo Q4_K_M ocupa 21,7 GB, por lo que se recomienda una GPU con al menos 24 GB de VRAM para inferencia comoda (el proyector de imagen anade 899 MB adicionales).
-- **GPU recomendadas**: NVIDIA RTX 3090 o RTX 4090 (24 GB) son suficientes para la cuantizacion Q4_K_M. Para GPUs con menos VRAM, se requeriria una cuantizacion de menor precision (no disponible actualmente).
-- **Despliegue**: compatible con llama.cpp (commit `f280b26983ad0fdb705a0d9ebf0503e76f2899b0` o posterior) y con herramientas basadas en el mismo, como Ollama o llama-cpp-python.
-- **Latencia y throughput**: no se han publicado datos de latencia o throughput para esta cuantizacion.
+- VRAM estimada segun cuantizacion: IQ1_M 8,82 GB; IQ2_M 12,2 GB; Q2_K 13,2 GB; IQ3_M 16,0 GB; Q3_K_M 17,2 GB; Q4 Selective 19,8 GB; Q4_K_S 20,4 GB; Q4_K_M 21,7 GB; Q5_K_S 24,6 GB; Q5_K_M 25,3 GB; Q6_K 29,2 GB; Q8_0 37,8 GB. Hay que sumar espacio para el contexto KV y, si se usa vision, 899 MB del proyector.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_S; A100 40 GB o H100 para Q6_K y Q8_0; RTX 3090 (24 GB) para Q4_K_M.
+- Cabe en GPU de consumo: si. Q4_K_M en RTX 4090 o 3090; IQ2_M e IQ3_M en GPUs de 16 GB; IQ1_M en GPUs de 12 GB.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli`), y por compatibilidad de formato, cualquier frontend basado en llama.cpp. No se confirma soporte de vLLM o TGI para estos ficheros GGUF.
+- Latencia y throughput: no disponibles. La decodificacion especulativa MTP con `--spec-draft-n-max 3` esta pensada para reducirlos, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Cuantizacion GGUF |
-|---|---|---|---|---|
-| Apodex-1.1-mini (GGUF) | 35,5B (MoE) | no disponible | Apache 2.0 | Q4_K_M |
-| Apodex-1.0-mini | no disponible | 262K tokens | no disponible | no disponible |
-| Agents-A1-F16-GGUF | no disponible | no disponible | no disponible | F16 |
-
-La comparativa con Agents-A1-F16-GGUF (disponible en benchlm.ai) no ofrece un veredicto compartido de benchmarks, por lo que no es posible establecer una comparacion cuantitativa fiable. Apodex-1.0-mini es la version anterior de la misma familia y comparte caracteristicas de contexto largo (262K tokens), pero no hay datos publicos de rendimiento comparativo entre ambas.
+No disponible. La informacion proporcionada no incluye datos de modelos alternativos comparables en parametros, contexto o rendimiento, por lo que no es posible establecer una comparativa rigurosa sin inventar cifras.
 
 ## Limitaciones y advertencias
 
-- **Idiomas limitados**: el modelo solo soporta ingles y chino; no tiene capacidades multilingues para otros idiomas, incluido el espanol.
-- **Riesgo de alucinacion**: como todos los modelos generativos, puede producir contenido plausible pero incorrecto, especialmente en tareas de razonamiento complejo; el sistema Agent Team mitiga parcialmente este riesgo mediante verificacion de pasos.
-- **Contexto no confirmado**: la longitud de contexto de la version 1.1 no esta publicada en la informacion disponible; la version 1.0 anunciaba 262K, pero no se debe asumir ese valor para esta version.
-- **Evaluacion de la cuantizacion**: los resultados de benchmarks corresponden al modelo original en BF16; la cuantizacion Q4_K_M puede degradar el rendimiento en tareas de precision.
-- **Licencia**: Apache 2.0 permite uso comercial sin restricciones de atribucion, pero se debe mantener el aviso de licencia y atribucion del modelo original.
-- **Dependencia de llama.cpp**: se requiere una version de llama.cpp posterior al commit `f280b94983ad0fdb705a0d9ebf0503e76f2899b0` para compatibilidad total con la arquitectura qwen35moe.
-- **Solo una cuantizacion disponible**: actualmente solo existe Q4_K_M; no hay versiones Q8, Q5 o Q6 para ajustar el balance de calidad y requisitos de hardware.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Riesgo de alucinacion: inherente a los modelos generativos; no se publican tasas de factualidad ni evaluaciones de calibracion.
+- Idiomas: solo se declaran ingles y chino. El rendimiento en castellano no esta verificado y previsiblemente sera inferior.
+- Contexto: la longitud de contexto no se especifica; los ejemplos de la model card usan 4096 tokens, lo que sugiere precaucion al configurar ventanas mayores.
+- Licencia: Apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base apodex/Apodex-1.1-mini y las de Qwen3.5 si se redistribuye.
+- Los benchmarks son autoevaluados por Apodex AI con su propio arnes (FrontierAgent), no verificados por terceros; deben tomarse como indicativos.
+- Las cuantizaciones de baja precision (IQ1_M, IQ2_M, Q2_K) degradan la calidad de forma notable; IQ2_M es la opcion minima recomendada por el autor.
+- La cabeza MTP y la decodificacion especulativa dependen de una version reciente de llama.cpp; versiones antiguas pueden no soportarlas.
+- La entrada de imagenes requiere cargar el proyector F16 con `llama-mtmd-cli`; sin el, el modelo solo procesa texto.
+- El repo pesa 247,4 GB por la suma de todas las cuantizaciones; conviene descargar solo el fichero necesario.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/abenzerps/Apodex-1.1-mini-GGUF
-- Modelo base original: https://huggingface.co/apodex/Apodex-1.1-mini
-- Modelo Apodex-1.0-mini: https://huggingface.co/apodex/Apodex-1.0-mini
-- Organizacion Apodex AI en Hugging Face: https://huggingface.co/apodex
-- Repositorio de FrontierAgent: https://github.com/ApodexAI/FrontierAgent
-- Sitio web de Apodex: https://www.apodex.com/
-- Comparativa con Agents-A1-F16-GGUF: https://benchlm.ai/compare/agents-a1-f16-gguf-vs-apodex-1-1-mini
-- Referencia de Apodex 1.0 Mini en LLM Reference: https://www.llmreference.com/model/apodex-1.0-mini
+- Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
+- Revision de la plantilla de chat: https://huggingface.co/apodex/Apodex-1.1-mini/commit/62583b464707ad58848bc2ab066747d8d5b02533
+- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Paper (arXiv 2608.23283): no disponible como enlace verificado en la informacion proporcionada
+- Solicitud de modelos del autor: https://abenzerps.com/request-a-model/

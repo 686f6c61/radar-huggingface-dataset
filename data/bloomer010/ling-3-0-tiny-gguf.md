@@ -2,90 +2,95 @@
 
 ## Resumen
 
-Ling-3.0-tiny es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) híbrido desarrollado por inclusionAI, diseñado específicamente para despliegue en entornos con recursos limitados. Con 7.900 millones de parámetros totales y solo 1.300 millones activos por token, ofrece capacidades de razonamiento y agente a un coste de inferencia reducido. La versión GGUF, publicada por bloomer010, convierte los pesos originales en BF16 al formato GGUF, permitiendo su ejecución local con llama.cpp y otras herramientas compatibles.
+Ling-3.0-tiny es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por inclusionAI, distribuido originalmente en formato BF16 a traves de Hugging Face. Esta ficha cubre la conversion a GGUF publicada por el usuario bloomer010, que permite ejecutar el modelo en llama.cpp tanto en CPU como en GPU. El modelo cuenta con 7.893.392.800 parametros totales y 1.300 millones de parametros activos por token, lo que lo situa en la categoria de modelos MoE eficientes en computo.
 
-El modelo emplea una arquitectura novedosa denominada `bailingmoe3`, que combina 18 capas KDA (Kernel-based Dynamic Attention) y 6 capas MLA (Multi-head Latent Attention), junto con 128 expertos enrutados de los que se activan 8 por token, más un experto compartido. Incorpora además mecanismos de Q-LoRA (rank 256) y KV-LoRA (rank 512) para optimizar la atención. Su ventana de contexto alcanza los 131.072 tokens en la configuración publicada, y soporta modos de pensamiento ("Thinking") e instantáneo, así como function calling nativo.
+La arquitectura combina 24 capas: 18 capas KDA (Kimi Delta Attention) y 6 capas MLA (Multi-head Latent Attention), con 128 expertos enrutados, 8 activos por token y 1 experto compartido. Incorpora ademas proyecciones Q-LoRA de rango 256 y KV-LoRA de rango 512, y soporta una longitud de contexto de 131.072 tokens en la configuracion publicada. El modelo base se identifica con la arquitectura `bailingmoe3` y esta etiquetado como conversacional y de generacion de texto.
 
-La relevancia de este modelo radica en su equilibrio entre rendimiento y eficiencia: al activar solo una fracción de sus parámetros, puede ejecutarse en GPUs de consumo medio (como RTX 3060 o RTX 4070) con cuantizaciones que van desde 1,30 GB (Q1_0) hasta 15,8 GB (BF16). Su licencia MIT permite uso comercial sin restricciones, lo que lo convierte en una opción atractiva para desarrolladores que buscan desplegar asistentes conversacionales o agentes en entornos locales o de borde.
+La relevancia de esta publicacion GGUF radica en que ofrece un conjunto amplio de cuantizaciones (desde Q1_0 de 1,30 GB hasta BF16 de 15,8 GB), con recetas XL e importancia matrix para las variantes IQ, lo que facilita el despliegue en hardware muy diverso, incluidas GPUs de consumo. La licencia MIT del modelo base y de la conversion simplifica su adopcion comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BailingMoE3 (MoE híbrido con capas KDA y MLA) |
-| Parametros totales | 7,9 mil millones |
-| Parametros activos | 1,3 mil millones por token |
-| Longitud de contexto | 131.072 tokens (configuración publicada) |
-| Tipos de cuantizacion | BF16, UD-Q8_K_XL, Q8_0, UD-Q6_K_XL, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, MXFP4_MOE, Q3_K_M, IQ2_M, Q1_0 |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer MoE hibrida (bailingmoe3): 18 capas KDA + 6 capas MLA |
+| Parametros totales | 7.893.392.800 (7,9B) |
+| Parametros activos | 1,3B por token |
+| Longitud de contexto | 131.072 tokens |
+| Tipos de cuantizacion | BF16, UD-Q8_K_XL, Q8_0, UD-Q6_K_XL, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, MXFP4_MOE, IQ4_XS, Q3_K_M, Q3_K_S, IQ3_S, IQ3_XXS, Q2_K, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, IQ1_M, IQ1_S, Q1_0 |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (safetensors originales en BF16) |
+| Formato de pesos | GGUF (conversion desde safetensors BF16) |
 
 ## Arquitectura y entrenamiento
 
-Ling-3.0-tiny utiliza una arquitectura MoE híbrida que combina dos tipos de capas de atención: 18 capas KDA (Kernel-based Dynamic Attention) y 6 capas MLA (Multi-head Latent Attention). El modelo dispone de 128 expertos enrutados, de los cuales se activan 8 por token, más un experto compartido. Esta configuración permite que solo 1,3 mil millones de parámetros se activen en cada paso, reduciendo drásticamente el coste computacional en comparación con un modelo denso de tamaño similar.
+El modelo emplea una arquitectura MoE con 24 capas, de las cuales 18 son capas KDA (Kimi Delta Attention) y 6 son capas MLA (Multi-head Latent Attention). Dispone de 128 expertos enrutados con 8 activos por token y un experto compartido adicional. Las proyecciones Q-LoRA (rango 256) y KV-LoRA (rango 512) forman parte del diseno, y la conversion BF16 verifico los 526 tensores, incluidos los 18 tensores Q-LoRA. En la configuracion publicada no se incluye bloque MTP (`num_nextn_predict_layers: 0`).
 
-La implementación de Q-LoRA (rank 256) y KV-LoRA (rank 512) en la ruta de atención permite una compresión eficiente de las claves y valores, lo que contribuye a la gestión de la ventana de contexto de 131.072 tokens. El modelo no incluye un bloque MTP (Multi-Token Prediction) en la configuración publicada (`num_nextn_predict_layers: 0`). Los detalles sobre el dataset de entrenamiento, el número de tokens procesados y las técnicas de alineación (RLHF, DPO, etc.) no están disponibles en la información proporcionada. Sin embargo, el modelo está diseñado para razonamiento y uso como agente, con un modo de pensamiento habilitado por defecto.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO, ya que la model card de la conversion GGUF no los detalla. La model card del autor de la conversion indica que el modelo puede terminar su respuesta a mitad del razonamiento sin cierre, y que este comportamiento es inherente a los pesos incluso en precision completa. Las cuantizaciones IQ (de IQ1_S a IQ4_XS) se generaron con una importance matrix especifica: texto de entrenamiento Wikitext-2 raw, 100 fragmentos de 512 tokens (51.200 tokens de calibracion) y 332 entradas de matriz.
 
 ## Capacidades
 
-- Generación de texto conversacional y de razonamiento multi-turno, con soporte para modos "Thinking" (pensamiento explícito) e "Instant" (respuesta directa).
-- Function calling nativo, lo que permite integrar el modelo en pipelines de agentes que necesitan invocar herramientas externas.
-- Capacidades de agente y razonamiento multi-paso, adecuadas para tareas que requieren planificación y ejecución secuencial.
-- Soporte multilingüe no especificado en la documentación; se recomienda verificar el rendimiento en el idioma objetivo.
-- Ventana de contexto larga (131.072 tokens) que facilita el procesamiento de documentos extensos o conversaciones prolongadas.
-- Compatibilidad con cuantizaciones extremas (desde Q1_0 hasta BF16) que permiten ajustar el equilibrio entre calidad y requisitos de memoria.
+- Generacion de texto conversacional y de proposito general.
+- Razonamiento con modo "thinking" habilitado por defecto, desactivable por peticion mediante `"chat_template_kwargs": {"enable_thinking": false}`.
+- Arquitectura MoE con 1,3B parametros activos, orientada a eficiencia en inferencia.
+- Soporte de contexto largo de hasta 131.072 tokens.
+- Compatibilidad con llama.cpp mediante `llama-server` y flag `--jinja`.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales: el modelo puede gestionar diálogos multi-turno con contexto largo gracias a su ventana de 131.072 tokens, siendo adecuado para chatbots de atención al cliente o asistentes personales que se ejecutan en hardware de consumo.
-- Agentes autónomos con tool calling: su soporte nativo de function calling permite construir agentes que consultan APIs, bases de datos o ejecutan comandos, por ejemplo en automatización de tareas de oficina o gestión de sistemas.
-- Razonamiento y análisis de documentos extensos: con su contexto amplio, puede resumir o extraer información de informes, contratos o artículos científicos de gran longitud sin necesidad de truncamiento.
-- Generación de código asistida: aunque no se especifican benchmarks de código, su capacidad de razonamiento y function calling lo hace útil para sugerencias de código en entornos de desarrollo integrados (IDEs) locales.
-- Despliegue en el borde (edge): al activar solo 1,3B parámetros, puede ejecutarse en dispositivos con poca memoria, como Raspberry Pi con cuantizaciones pequeñas (Q3_K_M o IQ2_M) o en GPUs integradas.
-- Prototipado rápido de aplicaciones de IA: gracias a su licencia MIT y a la disponibilidad de cuantizaciones GGUF, es fácil integrarlo en proyectos con llama.cpp, Ollama o servidores compatibles para pruebas y validación de conceptos.
+- Asistente conversacional local: el modelo puede gestionar dialogos multi-turno en estaciones de trabajo con GPU de consumo, ya que la cuantizacion Q4_K_M ocupa 4,82 GB y requiere unos 6 GB de memoria.
+- Procesamiento de documentos largos: con 131.072 tokens de contexto, es adecuado para resumir o extraer informacion de contratos, informes o bases de codigo extensas en una sola pasada.
+- Despliegue en CPU: las variantes Q1_0 (1,30 GB) e IQ1_S (1,76 GB) permiten ejecutar el modelo en equipos sin GPU dedicada, con la contrapartida de menor precision.
+- Razonamiento con traza explicita: el modo thinking por defecto facilita tareas de analisis paso a paso, como depuracion logica o resolucion de problemas matematicos, aunque debe monitorizarse la terminacion prematura de la respuesta.
+- Integracion en pipelines de llama.cpp: mediante `llama-server` y el flag `--jinja`, el modelo puede exponerse como API compatible con endpoints para aplicaciones internas.
+- Prototipado e investigacion: la licencia MIT y el amplio abanico de cuantizaciones permiten experimentar con tecnicas de compresion (IQ, K-quants, MXFP4) sin restricciones de uso comercial.
+- Ejecucion en hardware Blackwell: la cuantizacion MXFP4_MOE (4,72 GB) usa su ruta nativa en GPUs con soporte MXFP4, como las RTX 50-series y GB10/DGX Spark.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos. Se recomienda consultar la documentación oficial de inclusionAI para obtener datos de rendimiento adicionales.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización (tamaño de archivo):
-  - BF16: 15,8 GB
-  - UD-Q8_K_XL: 11,19 GB
-  - Q8_0: 8,41 GB
-  - UD-Q6_K_XL: 7,27 GB
-  - Q6_K: 6,50 GB
-  - Q5_K_M: 5,64 GB
-  - Q5_K_S: 5,48 GB
-  - Q4_K_M: 4,82 GB
-  - MXFP4_MOE: 4,72 GB
-  - Q3_K_M: 3,84 GB
-  - IQ2_M: 2,70 GB
-  - Q1_0: 1,30 GB
-- GPUs recomendadas: se ha probado con éxito en RTX 4070 y RTX 3060 (según la model card). Para cuantizaciones pequeñas (Q3_K_M o inferiores) puede ejecutarse en GPUs con 4 GB de VRAM o menos.
-- Es posible ejecutar el modelo en CPU con cuantizaciones bajas (Q1_0, IQ2_M, Q3_K_M, Q5_K_S, Q5_K_M) según las pruebas de validación.
-- Opciones de despliegue: llama.cpp (rama `bailingmoe3-support`), llama-server, y potencialmente otros runners compatibles con GGUF una vez que el soporte se integre en el upstream (PR #26608).
-- Latencia y throughput: no se proporcionan datos específicos; dependerán de la cuantización, el hardware y la longitud de la secuencia.
+- VRAM estimada segun cuantizacion (datos de la model card):
+  - BF16: 15,8 GB, requiere 16 GB o mas.
+  - UD-Q8_K_XL: 11,19 GB, requiere 12 GB o mas.
+  - Q8_0: 8,41 GB, requiere 10 GB o mas.
+  - UD-Q6_K_XL: 7,27 GB, requiere 8 GB o mas.
+  - Q5_K_M: 5,64 GB, requiere 7 GB o mas.
+  - Q4_K_M: 4,82 GB, requiere 6 GB o mas.
+  - IQ4_XS: 4,29 GB, requiere 5 GB o mas.
+  - Q3_K_M: 3,84 GB, requiere 5 GB o mas.
+  - Q2_K: 2,99 GB, requiere 4 GB o mas.
+  - IQ2_M: 2,70 GB, requiere 3 GB o mas.
+  - IQ1_S: 1,76 GB, requiere 2 GB o mas.
+  - Q1_0: 1,30 GB, requiere 2 GB o mas.
+- GPU recomendadas: no se especifican modelos concretos en la informacion; las pruebas CUDA se realizaron en una RTX 4070 y una RTX 3060, lo que confirma compatibilidad con GPUs de consumo.
+- Cabe en GPU de consumo: si, desde cuantizaciones IQ2 en adelante con 3-4 GB de VRAM, y Q4_K_M en GPUs de 6 GB o mas.
+- Opciones de despliegue: llama.cpp (compilacion con `-DGGML_CUDA=ON`), `llama-server` y `llama-cli`; el soporte de `bailingmoe3` se integro en llama.cpp el 2026-08-17. No se mencionan vLLM, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: no disponible.
+- Nota de hardware: MXFP4_MOE solo usa ruta nativa en GPUs con soporte MXFP4 (Blackwell RTX 50-series, GB10/DGX Spark); en otro hardware cae a una ruta de dequantizacion mas lenta, por lo que se recomienda una K-quant en GPUs anteriores.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos en la información proporcionada. Ling-3.0-tiny se posiciona como un MoE ligero con 7,9B totales y 1,3B activos, similar en concepto a otros modelos MoE pequeños como DeepSeek-V2-Lite (16B totales, 2,4B activos) o Qwen2.5-7B-Instruct (denso, 7,6B). Sin embargo, no se han publicado benchmarks que permitan una comparación cuantitativa. Se recomienda consultar la documentación oficial de inclusionAI para obtener comparativas con otros modelos de la serie Ling o de la competencia.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- La arquitectura `bailingmoe3` requiere una versión específica de llama.cpp (rama `bailingmoe3-support`) hasta que el soporte se integre en el upstream. Las builds estándar de llama.cpp no cargarán estos archivos.
-- No se han publicado datos sobre sesgos, alucinaciones o rendimiento en idiomas distintos del inglés. Se recomienda evaluar el modelo en el caso de uso concreto antes de desplegarlo en producción.
-- La ventana de contexto de 131.072 tokens es la configuración publicada, pero la documentación web menciona 256K; es posible que existan variantes con contexto mayor, pero no se incluyen en esta conversión GGUF.
-- Aunque la licencia MIT permite uso comercial, el modelo base (inclusionAI/Ling-3.0-tiny) puede tener términos adicionales; se recomienda revisar la licencia del modelo original.
-- Las cuantizaciones extremas (Q1_0, IQ2_M) pueden degradar significativamente la calidad de las respuestas; se recomienda probar varias para encontrar el equilibrio adecuado.
-- No se incluye un bloque MTP, lo que puede afectar a la velocidad de generación en comparación con modelos que lo incorporan.
+- El modelo puede terminar su respuesta a mitad del razonamiento sin cierre; este comportamiento es inherente a los pesos y persiste incluso en precision completa.
+- Las cuantizaciones pequenas (Q1, IQ1, IQ2) degradan la precision de forma notable; la model card advierte que archivos mas pequenos implican "mas slop y mal comportamiento".
+- No hay informacion sobre sesgos conocidos, idiomas soportados ni evaluaciones de seguridad.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible.
+- La licencia es MIT, lo que permite uso comercial sin restricciones adicionales segun la informacion disponible.
+- El modo thinking esta activado por defecto y debe desactivarse explicitamente por peticion si no se desea.
+- Para hardware sin soporte MXFP4, la cuantizacion MXFP4_MOE es mas lenta que una K-quant equivalente.
+- El repositorio ocupa 288,1 GB, por lo que la descarga completa de todas las cuantizaciones no es practica; conviene descargar solo la variante necesaria.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/bloomer010/Ling-3.0-tiny-GGUF
-- Modelo base (safetensors): https://huggingface.co/inclusionAI/Ling-3.0-tiny
-- Rama de llama.cpp con soporte BailingMoE3: https://github.com/aetherbird/llama.cpp/tree/bailingmoe3-support
-- PR de integración en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/26608
-- Documentación oficial de Ling: https://developer.ant-ling.com/en/docs/models/ling/
+- Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
+- llama.cpp (soporte bailingmoe3 integrado el 2026-08-17): https://github.com/ggml-org/llama.cpp
+- Rama pre-merge de soporte: https://github.com/aetherbird/llama.cpp (rama `bailingmoe3-support`)

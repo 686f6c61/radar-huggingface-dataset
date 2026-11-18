@@ -80,7 +80,7 @@
     "region:us"
   ],
   "likes": 30,
-  "downloads_30d": 10998,
+  "downloads_30d": 12022,
   "trending_score": 9,
   "parameters": null,
   "parameters_human": null,
@@ -98,31 +98,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - Desert-Ant-Labs/redact: On-device multilingual PII redaction ...",
-      "url": "https://github.com/Desert-Ant-Labs/redact",
-      "snippet": "The published coordinates are the same: @desert-ant-labs/redact on npm, ai.desertant:redact on Maven Central, and the model on the Hub at desert-ant-labs/redact. Swift Package Manager users depend on desert-ant-core and take its Redact product instead of pointing at this repository. Issues and pull requests should go to the monorepo."
-    },
-    {
-      "title": "Redact: PII redaction on device | Desert Ant Labs",
-      "url": "https://desertant.com/models/redact/",
-      "snippet": "Add Redact from Desert Ant Labs to this project. On-device redaction that strips personal data as you type, in 27 languages, so it never reaches your servers or logs."
-    },
-    {
-      "title": "Desert Ant Labs: On-device AI models and SDKs",
-      "url": "https://desertant.com/",
-      "snippet": "Desert Ant Labs is a frontier AI lab for on-device models that run on Apple, Android and the web, in a few lines of native code."
-    },
-    {
-      "title": "desert-ant-core/docs/models/redact.md at main · Desert-Ant-Labs/desert ...",
-      "url": "https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/redact.md",
-      "snippet": "On-device AI SDKs for iOS, macOS, Android, and the web. Small, focused models that run fully offline in Swift, Kotlin, and JavaScript with Core ML, LiteRT, and WebAssembly. - Desert-Ant-Labs/desert..."
-    },
-    {
-      "title": "desert-ant-labs (Desert Ant Labs) - Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs",
-      "snippet": "Org profile for Desert Ant Labs on Hugging Face, the AI community building the future."
-    }
-  ]
+  "sources": []
 }

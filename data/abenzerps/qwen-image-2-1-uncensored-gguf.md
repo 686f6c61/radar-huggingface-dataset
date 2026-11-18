@@ -2,107 +2,85 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo de generación de imágenes texto-a-imagen Qwen/Qwen-Image-2.1, publicado por el usuario abenzerps. No se trata de un modelo nuevo ni de un ajuste fino: el propio autor indica que las conversiones se han realizado sobre los pesos originales del modelo base, sin fine-tuning, abliteration ni ninguna otra modificación de los pesos. La etiqueta "uncensored" responde únicamente a que, en las pruebas locales del autor, no se observó ningún comprobador de seguridad a nivel de pipeline ni lista negra de prompts.
+Qwen-Image-2.1-Uncensored-GGUF es una redistribución cuantizada del modelo de generación de imágenes Qwen/Qwen-Image-2.1-Turbo, publicada por el usuario abenzerps en Hugging Face. Se trata de un modelo de difusión de aproximadamente 7.115 millones de parámetros (7B) especializado en text-to-image, distribuido en múltiples formatos de cuantización (GGUF, FP8, INT8 ConvRot, NVFP4 y MLX en 4, 6 y 8 bits) para facilitar su ejecución en hardware de consumo y en entornos ComfyUI.
 
-El objetivo del repositorio es permitir la inferencia local del transformer de imágenes de Qwen-Image-2.1 en equipos con recursos limitados, mediante cuantizaciones que van desde Q8_0 (7,59 GiB) hasta Q4_0 (4,05 GiB). El modelo base declara 7.115.124.736 parámetros según los metadatos de safetensors, lo que sitúa el transformer en torno a los 7,1 mil millones de parámetros, una cifra elevada para un modelo de difusión y que explica el interés de las versiones cuantizadas para despliegue en GPU de consumo.
+El modelo base, desarrollado por el equipo Qwen (Alibaba), incorpora una arquitectura de generación visual Turbo que reduce el proceso de denoising a 8 pasos con CFG = 1, lo que permite generar imágenes de 1024 × 1024 en aproximadamente 10-20 segundos en GPU tras el warm-up. La versión redistribuida mantiene esa configuración y añade un text encoder Qwen3-VL de 8B en BF16 o INT8, junto con un VAE específico del modelo.
 
-Es relevante ahora porque reduce el umbral de hardware necesario para ejecutar un generador de imágenes de última generación en local, integrándose con ComfyUI a través del nodo ComfyUI-GGUF. Conviene señalar que el repositorio es muy reciente (creado y actualizado el 20 de septiembre de 2026), acumula 0 descargas y 5 likes en el momento de redactar esta ficha, y no aporta resultados numéricos de benchmarks ni datos de idiomas soportados.
+Su relevancia actual radica en dos factores: por un lado, la disponibilidad de cuantizaciones ligeras (desde 4.00 GB en MLX 4-bit hasta 7.69 GB en Q8_0) que hacen viable la inferencia en GPUs consumer; por otro, la ausencia de filtros de seguridad integrados en el modelo base, lo que lo posiciona como una alternativa para flujos de trabajo que requieren generación sin restricciones de contenido. El repositorio acumula 187.989 descargas y 6.043 likes, lo que refleja una adopción considerable dentro de la comunidad ComfyUI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion para generacion de imagenes (el autor lo denomina "image transformer"); detalles de capas, atencion y mecanismo de difusion no disponibles |
-| Parametros totales | 7.115.124.736 (dato de safetensors del modelo base, aproximadamente 7,1 mil millones) |
-| Longitud de contexto | No aplica / no disponible (modelo texto-a-imagen; la resolucion maxima de salida no se especifica en la informacion disponible) |
-| Tipos de cuantizacion | Q8_0 (7,59 GiB), Q6_K (5,88 GiB), Q5_K_M (5,22 GiB), Q4_K_M (4,6 GiB, recomendada por el autor), Q4_0 (4,05 GiB) |
+| Arquitectura | Modelo de difusión text-to-image (arquitectura de generación visual de 7B, variante Turbo) |
+| Parametros totales | 7.115.124.736 (7B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF (Q4_0, Q4_K_M, Q5_K_M, Q6_K, Q8_0), FP8, INT8 ConvRot, NVFP4, MLX 4-bit, MLX 6-bit, MLX 8-bit |
 | Idiomas soportados | No disponible |
-| Licencia | Qwen Research License (etiquetada como `license: other`, `license_name: qwen-research`) |
-| Formato de pesos | GGUF (requiere ademas el text encoder y el VAE originales de Qwen/Qwen-Image-2.1) |
-| Pipeline | text-to-image |
-| Modelo base | Qwen/Qwen-Image-2.1 (relacion: quantized) |
-| Revision del modelo base | b3179ad355be050328e483a9dfdd9e60cd62adfa |
-| Tamano del repositorio | 27,3 GB |
-| Herramienta de conversion | stable-diffusion.cpp, commit 1330cebae8f2ba99249df846cc0c9444fcbd4308 |
-| Fecha de creacion / actualizacion | 2026-09-20 / 2026-09-20 |
-| Descargas / likes | 0 / 5 |
+| Licencia | qwen-research (etiquetada como "other" en la model card) |
+| Formato de pesos | GGUF y safetensors (FP8, INT8, NVFP4, MLX); text encoder en BF16/INT8; VAE en BF16 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe el contenido de los ficheros GGUF como "el transformer de imagenes de Qwen-Image-2.1". No se detalla la arquitectura interna (numero de bloques, tipo de atencion, dimension del espacio latente, esquema de condicionamiento textual ni el numero de pasos de muestreo), por lo que cualquier afirmacion mas concreta seria una extrapolacion no respaldada por la model card. Tampoco se documentan los datos de entrenamiento del modelo original: ni el volumen de tokens o pares imagen-texto, ni la composicion del dataset, ni si hubo etapas de ajuste con preferencias humanas. Estos datos corresponderian al modelo base, cuya model card no forma parte de la informacion proporcionada.
+El modelo sigue una arquitectura de difusión para generación de imágenes condicionada por texto, con un diseño "Turbo" que reduce el número de pasos de denoising a 8 y fija el classifier-free guidance (CFG) en 1.0. Esta configuración, junto con un schedule sigma oficial, permite obtener resultados de calidad en un régimen de pocos pasos, lo que se traduce en latencias de 10-20 segundos para resoluciones de 1024 × 1024 en GPU tras el warm-up. El pipeline se completa con un text encoder Qwen3-VL de 8B parámetros (disponible en BF16, 17.53 GB, o INT8 ConvRot, 9.35 GB) y un VAE específico del modelo (0.68 GB en BF16).
 
-Lo que si esta documentado es el proceso de construccion del repositorio. Las conversiones se generaron con stable-diffusion.cpp en el commit 1330cebae8f2ba99249df846cc0c9444fcbd4308, a partir de los pesos originales sin modificar, y se acompanan de un fichero SHA256SUMS para verificar la integridad. El autor declara explicitamente que no se aplico ningun tipo de fine-tuning ni de abliteration, lo que implica que las capacidades y los sesgos de estas cuantizaciones son los del modelo upstream, afectados unicamente por la perdida de fidelidad numerica inherente a la cuantizacion. La innovacion practica, por tanto, no esta en la arquitectura sino en el empaquetado: cuantizaciones K-quant y legacy compatibles con el ecosistema GGUF de ComfyUI, con el objetivo de llevar un transformer de ~7,1 mil millones de parametros a GPUs de gama media.
+No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens utilizados ni sobre si se aplicaron técnicas de RLHF o DPO en el modelo base. La model card tampoco documenta innovaciones técnicas adicionales más allá del régimen Turbo de 8 pasos y la integración con ComfyUI mediante plantillas oficiales. La redistribución cuantizada se limita a convertir los pesos del modelo base a los formatos indicados, sin modificar la arquitectura ni el proceso de entrenamiento.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de descripciones textuales (text-to-image), mediante el transformer de difusion cuantizado.
-- Inferencia completamente local, sin llamadas a APIs externas ni dependencia de servicios alojados.
-- Compatibilidad con flujos de ComfyUI a traves de ComfyUI-GGUF, incluyendo grafos con nodos de carga de modelo GGUF, text encoder y VAE.
-- Ausencia observada de comprobador de seguridad a nivel de pipeline y de lista negra de prompts, segun las pruebas locales del autor, lo que permite generar categorias sensibles (contenido adulto, desnudos, violencia) sin rechazos en tiempo de ejecucion.
-- Seleccion de compromiso tamano/calidad mediante cinco niveles de cuantizacion, con Q4_K_M recomendada por el autor.
-- No dispone de generacion de texto, razonamiento, codigo ni matematicas: es un componente de difusion, no un modelo de lenguaje.
-- No se documenta soporte de tool calling, function calling, uso como agente ni razonamiento multi-paso.
-- No se documenta soporte multilingue de prompts; el idioma o los idiomas soportados figuran como no disponibles.
-- No se documentan capacidades adicionales como edicion de imagen, inpainting, outpainting, control por pose o modo de razonamiento explicito.
+- Generación de imágenes a partir de descripciones textuales (text-to-image) en resoluciones de 1024 × 1024.
+- Generación en régimen Turbo con 8 pasos de denoising y CFG = 1.0, lo que reduce el coste computacional frente a modelos de difusión convencionales.
+- Funcionamiento sin safety checker ni filtro de contenido integrado, según indica la model card del autor.
+- Integración nativa con ComfyUI mediante plantilla oficial "Qwen Image 2.1 Turbo — Text to Image" y workflow JSON publicado.
+- Soporte de ejecución en línea de comandos mediante stable-diffusion.cpp para formatos GGUF y safetensors compatibles.
+- Soporte de MLX/MFLUX para ejecución en hardware Apple Silicon con cuantizaciones de 4, 6 y 8 bits.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio.
 
 ## Casos de uso
 
-- Generacion de imagenes en local con GPU de consumo: cargando el fichero Q4_K_M (4,6 GiB) desde el directorio `models/diffusion_models/` de ComfyUI y anadiendo el text encoder y el VAE originales, un equipo con GPU de gama media puede producir imagenes sin depender de la nube ni de creditos de API.
-- Flujos de trabajo con requisitos de soberania del dato: al ejecutarse integramente en la maquina local, es adecuado para entornos donde los prompts no pueden salir de la organizacion, como estudios de diseno con acuerdos de confidencialidad o investigacion clinica con material visual sensible.
-- Investigacion sobre moderacion y seguridad en modelos de difusion: dado que el autor no observo filtros a nivel de pipeline, el repositorio sirve como material para estudiar el comportamiento de un generador sin capas de rechazo, medir tasas de cumplimiento de prompts sensibles y evaluar estrategias de filtrado posterior.
-- Comparacion de cuantizaciones: al ofrecer cinco niveles del mismo transformer (de Q4_0 a Q8_0), permite medir de forma controlada el impacto de la cuantizacion en la fidelidad, la coherencia compositiva y la adherencia al prompt, manteniendo constantes el text encoder y el VAE.
-- Prototipado de arte conceptual y storyboards: iteracion rapida de variaciones visuales a partir de descripciones textuales dentro de una interfaz de nodos, con la posibilidad de sustituir el checkpoint por la version Q8_0 cuando se requiera mas calidad en una entrega final.
-- Despliegue en entornos aislados o air-gapped: al no requerir conexion de red tras la descarga de los ficheros, encaja en laboratorios, plantas industriales o instalaciones con red restringida donde solo se permite software empaquetado y verificable con checksums.
-- Generacion de imagenes para canales editoriales con control de estilo: integrado en un grafo de ComfyUI junto con VAEs o ajustes de muestreo propios, se puede usar para producir ilustraciones de articulos o material de marketing, siempre que la licencia del modelo base lo permita.
+- Generación de ilustraciones para prototipado rápido: con Q4_K_M (4.42 GB) o MLX 4-bit (4.00 GB) se puede iterar sobre conceptos visuales en GPUs consumer, obteniendo imágenes de 1024 × 1024 en 10-20 segundos por generación tras el warm-up.
+- Creación de assets para videojuegos y previsualización: el régimen Turbo de 8 pasos permite generar variaciones de personajes, entornos o texturas en lotes pequeños sin incurrir en los tiempos de muestreo de modelos de 50+ pasos.
+- Flujos de trabajo artísticos sin restricciones de contenido: al no incorporar safety checker, el modelo es adecuado para proyectos creativos que requieran temáticas que otros modelos filtran, siempre que se respete la licencia qwen-research.
+- Automatización de pipelines de imagen en ComfyUI: la plantilla oficial y el workflow JSON permiten integrar el modelo en grafos de nodos con text encoder Qwen3-VL y VAE, facilitando la composición con otros nodos de postprocesado.
+- Despliegue en Apple Silicon: las variantes MLX 4/6/8-bit (4.00-7.56 GB) permiten ejecutar el modelo en Macs con memoria unificada, usando MFLUX como runtime.
+- Generación por línea de comandos en servidores sin GPU dedicada: los GGUF Q4_0 (4.13 GB) y Q4_K_M (4.42 GB) pueden ejecutarse con stable-diffusion.cpp en entornos con recursos limitados.
+- Investigación sobre cuantización de modelos de difusión: la disponibilidad de múltiples formatos (FP8, INT8 ConvRot, NVFP4, GGUF, MLX) permite comparar calidad y rendimiento entre precisiones en un mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una imagen identificada como "Qwen-Image-2.1 benchmark" y una captura de salida de ejemplo, pero no acompana ninguna tabla, metrica ni cifra (FID, CLIP score, comparativas con otros modelos). El autor tampoco documenta latencia, pasos de muestreo por imagen ni throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una imagen de comparación de benchmarks (`assets/Qwen-Image-2.1-Benchmark.png`) pero no se proporcionan los valores numéricos en el texto. El único dato de rendimiento explícito es el tiempo de generación: aproximadamente 10-20 segundos para 1024 × 1024 en GPU tras el warm-up, dependiendo del hardware.
 
 ## Requisitos de hardware
 
-- VRAM estimada (calculada a partir del tamano de los ficheros, no publicada por el autor): el transformer cuantizado ocupa entre 4,05 GiB (Q4_0) y 7,59 GiB (Q8_0); a esa cifra hay que sumar el text encoder original y el VAE de Qwen-Image-2.1, cuyo tamano no se especifica en la informacion disponible.
-- Perfil minimo: Q4_0 (4,05 GiB) o Q4_K_M (4,6 GiB), asumiendo que el text encoder y el VAE encajen en el presupuesto restante; en la practica, 8 GB de VRAM es el limite inferior razonable, siempre que la suma total quede por debajo de esa cifra.
-- Perfil equilibrado: Q5_K_M (5,22 GiB) o Q6_K (5,88 GiB) en GPUs de 12 GB, como RTX 3060 de 12 GB, RTX 4070 o RTX 4080.
-- Perfil de maxima calidad: Q8_0 (7,59 GiB), recomendable en GPUs de 16 GB o mas, como RTX 4090, RTX 5090 o A100, teniendo en cuenta que la VRAM total debe cubrir tambien text encoder y VAE.
-- Caben en GPU de consumo: si, todas las cuantizaciones estan pensadas para ello; el fichero Q4_K_M esta explicitamente recomendado como el mejor equilibrio entre tamano y calidad.
-- Opciones de despliegue: ComfyUI con la extension ComfyUI-GGUF (ruta documentada por el autor); el pipeline de conversion esta basado en stable-diffusion.cpp, por lo que ese runtime es la otra via natural de ejecucion.
-- Latencia y throughput: no disponibles. Dependeran de la GPU, de la cuantizacion elegida, del numero de pasos de muestreo y de la resolucion de salida, parametros que la model card no concreta.
+- VRAM estimada para inferencia: entre 4 y 8 GB para el modelo de difusión según cuantización (MLX 4-bit: 4.00 GB; Q4_0: 4.13 GB; Q4_K_M: 4.42 GB; Q5_K_M: 5.35 GB; Q6_K: 6.29 GB; Q8_0: 7.69 GB; FP8: 7.13 GB; INT8 ConvRot: 7.26 GB; NVFP4: 4.20 GB).
+- A esa cifra hay que sumar el text encoder: 9.35 GB en INT8 ConvRot o 17.53 GB en BF16, y el VAE de 0.68 GB. El total en INT8 ronda los 14-15 GB; en BF16 supera los 22 GB.
+- GPU recomendadas: no especificadas en la información disponible. Por el tamaño del conjunto (modelo + text encoder + VAE), una GPU con 16 GB o más (RTX 4090, A100, H100) permite ejecutar el pipeline completo en INT8; configuraciones con menos VRAM requerirían offloading o cuantizaciones más agresivas del text encoder.
+- Cabe en GPU consumer: sí, con cuantizaciones Q4 y el text encoder en INT8, en GPUs de 16 GB o superiores. En GPUs de 8-12 GB sería necesario gestionar la memoria del text encoder por separado.
+- Opciones de despliegue: ComfyUI (GGUF y safetensors), stable-diffusion.cpp (GGUF y safetensors compatibles), MLX/MFLUX (variantes MLX).
+- Latencia y throughput: 10-20 segundos por imagen de 1024 × 1024 en GPU tras el warm-up, según la model card. No se proporcionan cifras de throughput para lotes.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen-Image-2.1 (base) | ~7,1 mil millones | safetensors (precision original) | No aplica | Qwen Research License | Hugging Face (Qwen/Qwen-Image-2.1) |
-| Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | ~7,1 mil millones | GGUF | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | Qwen Research License | Hugging Face (abenzerps) |
-| Otras alternativas texto-a-imagen de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
-
-La informacion proporcionada no incluye ningun dato de rendimiento que permita una comparacion cuantitativa con otros generadores de imagenes, ni se identifican modelos alternativos en la busqueda realizada. La unica comparacion defendible es la que enfrenta este repositorio con su modelo base: mismos pesos y misma licencia, con la diferencia de un menor uso de disco y VRAM a cambio de la perdida de precision propia de la cuantizacion, y con la ventaja practica de que el formato GGUF puede cargarse en flujos de ComfyUI con recursos limitados.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. La model card referencia únicamente el modelo base Qwen/Qwen-Image-2.1-Turbo del que deriva esta cuantización, sin establecer comparaciones con alternativas de la misma categoría (otros modelos de difusión text-to-image de 7B). No se han incluido datos de parámetros, contexto ni rendimiento de terceros que permitan una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- La licencia es la Qwen Research License, etiquetada como `license: other` y no como una licencia de codigo abierto estandar. Los terminos completos no se detallan en la informacion disponible, por lo que deben consultarse antes de cualquier uso comercial o de redistribucion.
-- La etiqueta "uncensored" no implica una modificacion de los pesos: el autor confirma que no hubo fine-tuning ni abliteration. Se refiere unicamente a la ausencia observada de filtros de seguridad a nivel de pipeline en pruebas locales, y el propio autor advierte que los servicios alojados pueden aplicar su propia moderacion.
-- La ausencia de filtros implica que el modelo puede generar contenido adulto, violento u ofensivo, asi como material potencialmente ilegal segun la jurisdiccion. La responsabilidad legal y etica del uso recae en quien despliega el modelo.
-- No hay informacion sobre sesgos demograficos, culturales o de representacion. Al ser una cuantizacion sin ajustes, heredara los sesgos del modelo base, que no se documentan aqui.
-- No se documentan datos de alucinacion ni de fidelidad al prompt. En modelos de difusion, el equivalente practico son composiciones incorrectas, anatomia deformada o texto mal renderizado en la imagen, pero no hay mediciones publicadas para este repositorio.
-- El repositorio es muy reciente y practicamente sin validacion de la comunidad (0 descargas, 5 likes). No existe evidencia publica independiente de que las cuantizaciones mantengan la calidad esperada.
-- Requiere descargar por separado el text encoder y el VAE del modelo base; sin esos componentes el fichero GGUF no es suficiente para la inferencia.
-- Los idiomas de los prompts no estan documentados. No se puede asumir un comportamiento equivalente en castellano y en ingles.
-- Las cuantizaciones GGUF no son adecuadas para reentrenamiento ni para entrenar LoRA; para eso se necesitarian los pesos originales en safetensors.
-- No se especifica la resolucion de salida soportada ni el numero de pasos recomendado, dos parametros criticos para planificar costes de inferencia en produccion.
+- La licencia qwen-research puede imponer restricciones al uso comercial; es necesario revisar los términos completos antes de desplegar el modelo en producción.
+- La ausencia de safety checker implica que el modelo puede generar contenido no apto para todos los públicos; el operador del servicio es responsable del filtrado posterior.
+- No se documentan sesgos conocidos ni la composición del dataset de entrenamiento, lo que dificulta evaluar riesgos de representación.
+- No se dispone de información sobre idiomas soportados; el rendimiento en prompts en castellano u otros idiomas distintos del inglés no está verificado.
+- El riesgo de alucinación en modelos de difusión se manifiesta como imágenes que no se corresponden fielmente con el prompt; no hay métricas publicadas de fidelidad prompt-imagen.
+- El tamaño total del repositorio (215.1 GB) incluye todas las cuantizaciones y componentes; la descarga selectiva es imprescindible para evitar transferencias innecesarias.
+- La generación Turbo con 8 pasos y CFG = 1.0 puede producir menor diversidad o detalle que configuraciones de más pasos; la model card recomienda mantener la semilla fija al comparar resultados.
+- No se proporcionan garantías de soporte ni mantenimiento por parte del autor de la redistribución (abenzerps), que no es el desarrollador original del modelo base.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Checksums del repositorio: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/blob/main/SHA256SUMS
-- Fichero Q8_0: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/blob/main/qwen-image-2.1-Q8_0.gguf
-- Fichero Q6_K: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/blob/main/qwen-image-2.1-Q6_K.gguf
-- Fichero Q5_K_M: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/blob/main/qwen-image-2.1-Q5_K_M.gguf
-- Fichero Q4_K_M: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/blob/main/qwen-image-2.1-Q4_K_M.gguf
-- Fichero Q4_0: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/blob/main/qwen-image-2.1-Q4_0.gguf
-- ComfyUI: https://github.com/comfyanonymous/ComfyUI
-- ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
-- stable-diffusion.cpp (herramienta de conversion): https://github.com/leejet/stable-diffusion.cpp
-- Los resultados de la busqueda web realizada no aportan enlaces relevantes sobre este modelo: las entradas devueltas corresponden a paginas genericas de YouTube y no guardan relacion con Qwen-Image-2.1 ni con su version GGUF.
+- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Repositorio de cuantizaciones del autor: https://huggingface.co/abenzerps/Qwen-Image-2.1-Turbo-Quantized
+- ComfyUI: https://github.com/Comfy-Org/ComfyUI
+- Plantilla oficial ComfyUI (workflow JSON): https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_turbo_t2i.json
+- GitHub del autor: https://github.com/abenzerps
+- Formulario de solicitud de modelos: https://abenzerps.com/request-a-model/

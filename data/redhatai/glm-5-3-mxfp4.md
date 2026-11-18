@@ -1,93 +1,102 @@
 # RedHatAI/GLM-5.3-MXFP4
 
 ## Resumen
-GLM-5.3-MXFP4 es una version cuantizada del modelo zai-org/GLM-5.3, publicada por RedHatAI (Red Hat) el 10 de septiembre de 2026. Es un modelo de generacion de texto de gran escala: los pesos en safetensors suman 753.329.940.480 parametros (unos 753,3 mil millones), y la etiqueta de arquitectura declarada en el repositorio es glm_moe_dsa, lo que corresponde a un transformer con mezcla de expertos (MoE). Solo se declaran los idiomas ingles (en) y chino (zh).
 
-El proposito de esta publicacion es facilitar el despliegue del modelo base en precision reducida. Frente a los aproximadamente 1,5 TB que ocuparian los pesos en BF16, la version MXFP4 ocupa 403,3 GB en el repositorio, una reduccion cercana a cuatro veces que permite servirlo en nodos multi-GPU sin necesidad de un clúster mucho mayor. La cuantizacion se ha realizado con llm-compressor en el formato compressed-tensors, y el repositorio esta etiquetado como compatible con vLLM y con endpoints.
+GLM-5.3-MXFP4 es una versión cuantizada a MXFP4 del modelo zai-org/GLM-5.3, publicada por RedHatAI. Se trata de un modelo de lenguaje de tipo Mixture of Experts (MoE) con arquitectura GlmMoeDsaForCausalLM, diseñado para generación de texto conversacional. La cuantización reduce los pesos y activaciones de los operadores lineales de FP8 a FP4 (formato OCP Microscaling), lo que disminuye a la mitad el espacio en disco y los requisitos de memoria en GPU respecto al checkpoint original.
 
-La relevancia practica es doble: por un lado, acerca un MoE de mas de 700.000 millones de parametros a infraestructuras de 8 GPU; por otro, adopta MXFP4, un formato de 4 bits con escalado por microbloques que cuenta con soporte nativo en hardware de generacion reciente. Como contrapartida, el repositorio no tiene descargas ni valoraciones y la model card no detalla contexto, parametros activos ni resultados numericos, por lo que la evaluacion previa a produccion es imprescindible.
+El modelo cuenta con 753.329.940.480 parámetros totales según los safetensors del repositorio, lo que lo sitúa en la categoría de modelos masivos que requieren despliegue multi-GPU. Está pensado para servir con vLLM, con soporte de decodificación especulativa mediante MTP (multi-token prediction) y parser de razonamiento integrado.
 
-## Especificaciones tecnicas
+Su relevancia actual radica en que permite ejecutar un modelo de escala frontier con la mitad de memoria que su versión FP8, manteniendo una recuperación de precisión superior al 92% en la mayoría de benchmarks evaluados. La licencia es glm-5.3 (other), heredada del modelo base.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); identificador `glm_moe_dsa` en transformers |
-| Parametros totales | 753.329.940.480 (~753,3 mil millones) |
-| Parametros activos | no disponible |
+| Arquitectura | GlmMoeDsaForCausalLM (transformer MoE) |
+| Parámetros totales | 753.329.940.480 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4 (FP4 con escalado por microbloques); la etiqueta `8-bit` sugiere un esquema mixto, pero el reparto por capa no esta documentado en la informacion disponible |
+| Tipos de cuantización | MXFP4 (pesos FP4 e2m1 con grupo 32 y escalas E8M0; activaciones FP4 con escalado dinámico por grupo) |
 | Idiomas soportados | en, zh |
-| Licencia | glm-5.3 (licencia propia heredada del modelo base; no se incluyen sus terminos en la informacion disponible) |
-| Formato de pesos | safetensors en formato compressed-tensors, generados con llm-compressor |
-| Tamano del repositorio | 403,3 GB |
-| Modelo base | zai-org/GLM-5.3 |
-| Pipeline | text-generation |
-| Fecha de publicacion | 2026-09-10 |
+| Licencia | glm-5.3 (other), heredada de zai-org/GLM-5.3 |
+| Formato de pesos | safetensors, compressed-tensors |
 
 ## Arquitectura y entrenamiento
-La etiqueta de arquitectura del repositorio es `glm_moe_dsa`, la clase registrada en transformers para este modelo. Se trata, por tanto, de un transformer con capa de mezcla de expertos (MoE), en la linea de las generaciones anteriores de la familia GLM, que combinan un numero elevado de parametros totales con un subconjunto activo por token. No se dispone de informacion sobre el numero de expertos, el numero de expertos activos por token, la dimension oculta ni el mecanismo de atencion concreto (el sufijo DSA no se detalla en la informacion proporcionada).
 
-Tampoco hay datos publicados en este repositorio sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si el modelo base uso RLHF, DPO u otra fase de alineamiento. Lo unico verificable es el proceso de cuantizacion posterior: los pesos se han comprimido a MXFP4 con llm-compressor y se serializan en formato compressed-tensors, un esquema que describe la cuantizacion de forma que motores como vLLM puedan reconstruirla en tiempo de carga. Al tratarse de una cuantizacion post-entrenamiento, no hay reentrenamiento ni ajuste fino asociado.
+La arquitectura es GlmMoeDsaForCausalLM, un transformer con mezcla de expertos (MoE) según la nomenclatura del modelo. No se dispone de información detallada sobre el número de expertos, la proporción de parámetros activos, la longitud de contexto nativa ni la composición exacta del dataset de entrenamiento en la información proporcionada.
+
+La innovación técnica principal de esta versión es la cuantización post-entrenamiento sin datos de calibración (model-free PTQ) aplicada con LLM Compressor bajo el esquema MXFP4. Solo se cuantizan los pesos y activaciones de los operadores lineales dentro de los bloques del transformer; quedan excluidos el gate del MLP, el lm_head, los embeddings, eh_proj, el proyector de pesos del indexer de atención y la matriz wk del indexer. El modelo exporta en formato compressed-tensors y está preparado para inferencia con vLLM, incluyendo soporte de decodificación especulativa mediante MTP con 5 tokens especulativos.
 
 ## Capacidades
-- Generacion de texto y conversacion multi-turno: el repositorio declara la tarea text-generation y la etiqueta conversational.
-- Razonamiento general y respuesta a instrucciones, en la medida esperable en un modelo de esta escala; no hay evaluaciones publicadas en la informacion disponible que lo confirmen.
-- Generacion de codigo: capacidad habitual en modelos de esta familia, pero sin datos verificables en el repositorio.
-- Capacidades matematicas: no documentadas en la informacion disponible.
-- Soporte de tool calling / function calling: no documentado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
-- Capacidades multilingues: limitadas a ingles y chino segun la metadata del repositorio.
-- Modo de razonamiento explicito (thinking mode), vision o audio: no documentados en la informacion disponible.
-- Compatibilidad de despliegue: etiquetas `vllm` y `endpoints_compatible`, ademas de `transformers`.
+
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento matemático: resultados verificados en GSM8K Platinum, MATH-500 y AIME 2025.
+- Razonamiento científico y de conocimiento experto: evaluado en GPQA Diamond.
+- Seguimiento de instrucciones: evaluado en IFEval con métrica prompt-level strict.
+- Modo de razonamiento explícito: el despliegue con vLLM incluye `--reasoning-parser glm45`, lo que indica soporte de trazas de razonamiento separadas.
+- Decodificación especulativa: soporte de MTP (multi-token prediction) con hasta 5 tokens especulativos por paso.
+- Compatibilidad con API OpenAI (`endpoints_compatible`).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles; la entrada y salida son únicamente texto.
+- Soporte de agentes multi-paso: no documentado explícitamente en la información disponible.
 
 ## Casos de uso
-- Servicio de chat multilingue en y zh: el modelo puede atender conversaciones en ingles y chino con la calidad de un MoE de mas de 700.000 millones de parametros, siempre que la infraestructura soporte el peso de 403,3 GB en precision MXFP4.
-- Despliegue en nodos de 8 GPU: al reducir los pesos a aproximadamente 377 GB teoricos, un nodo con 8 aceleradores de 80 GB permite cargar el modelo sin recurrir a paralelismo entre nodos, lo que simplifica la orquestacion.
-- Procesamiento por lotes de documentos: generacion de resumenes, extraccion estructurada y clasificacion a gran escala, aprovechando la capacidad de computo en lote de vLLM.
-- Asistencia a la traduccion en y zh: el modelo cubre ambas lenguas de forma nativa, por lo que sirve como motor de traduccion o de revision en flujos internos entre equipos angloparlantes y sinoparlantes.
-- Evaluacion comparativa de cuantizacion: el repositorio esta etiquetado con eval-results, de modo que puede utilizarse para medir la degradacion de MXFP4 frente al modelo base en BF16 antes de decidir un despliegue en produccion.
-- Backend de aplicaciones conversacionales con API compatible: al estar marcado como endpoints_compatible, encaja como sustituto directo de otros modelos en plataformas que exponen la API de chat completions.
-- Generacion asistida en entornos de investigacion: permite experimentar con un MoE de gran escala en un unico nodo en lugar de requerir un clúster dedicado de precision completa.
+
+- Razonamiento matemático asistido: el modelo obtiene 96,36% en GSM8K Platinum y 94,00% en MATH-500, lo que lo hace adecuado para tutores automáticos o verificación de soluciones paso a paso en plataformas educativas.
+- Resolución de problemas científicos: con 89,06% en GPQA Diamond, puede emplearse en asistentes de investigación para preguntas de nivel experto en física, química y biología.
+- Generación de respuestas con formato estricto: el 91,19% en IFEval indica que respeta restricciones de formato y longitud, útil para pipelines que exigen salidas estructuradas verificables.
+- Servicio conversacional bilingüe en inglés y chino: adecuado para atención al cliente o asistentes internos en organizaciones con operaciones en ambos idiomas.
+- Despliegue de alto rendimiento con vLLM: la cuantización MXFP4 reduce a la mitad la memoria frente a FP8, permitiendo servir el modelo en 4 GPU B200 con tensor parallelism 4 y KV cache en FP8.
+- Inferencia con baja latencia mediante decodificación especulativa: la configuración MTP con 5 tokens especulativos acelera la generación en cargas interactivas donde el tiempo por token es crítico.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir la pérdida de precisión de FP4 frente a FP8 en modelos MoE de gran escala, con recuperaciones documentadas entre 92,80% y 99,26%.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye la etiqueta `eval-results`, lo que indica que existen evaluaciones asociadas al modelo, pero sus valores numericos no se han facilitado y no se reproducen aqui. No se dispone tampoco de datos de latencia ni de throughput.
+
+Resultados promediados sobre 3 semillas (1234, 2345, 3456), servidos con vLLM y comparados contra el checkpoint FP8 del modelo base sobre 4 B200.
+
+| Categoría | Benchmark | GLM-5.3 (FP8) | GLM-5.3-MXFP4 | Recuperación |
+|---|---|---|---|---|
+| Seguimiento de instrucciones | IFEval (prompt-level strict) | 91,87% | 91,19% | 99,26% |
+| Razonamiento | GSM8K Platinum (strict-match) | 97,60% | 96,36% | 98,73% |
+| Razonamiento | MATH-500 (pass@1) | 95,67% | 94,00% | 98,26% |
+| Razonamiento | AIME 2025 (pass@1) | 98,33% | 91,25% | 92,80% |
+| Razonamiento | GPQA Diamond (pass@1) | 92,42% | 89,06% | 96,36% |
 
 ## Requisitos de hardware
-- VRAM estimada para los pesos en MXFP4: 753.329.940.480 parametros a 4 bits equivalen a unos 377 GB teoricos, en linea con los 403,3 GB del repositorio (que incluye metadatos y posibles tensores no cuantizados a 8 bits).
-- Presupuesto total de memoria: a los pesos hay que sumar la cache KV y los buffers de activacion, cuyo tamano depende de la longitud de contexto y del numero de secuencias concurrentes, dato no disponible. Como referencia practica, conviene reservar al menos 450-500 GB agregados.
-- GPU recomendadas: configuraciones de 8 aceleradores de 80 GB o mas, como 8xH100 80 GB (640 GB), 8xH200 141 GB o 8xB200/GB200. En generaciones anteriores sera necesario verificar el soporte de kernels MXFP4.
-- GPU de consumo: no cabe en ninguna GPU de consumo individual (RTX 4090 con 24 GB, RTX 5090 con 32 GB). Seria necesario repartir el modelo entre varias GPU y memoria del sistema, con una penalizacion de latencia severa.
-- Opciones de despliegue: vLLM es la ruta soportada segun las etiquetas del repositorio; transformers permite la carga en Python. No se ha documentado soporte en llama.cpp u Ollama para este formato ni para esta arquitectura en la informacion disponible.
-- Latencia y throughput estimados: no disponible.
-- Nota general: el formato MXFP4 esta pensado para hardware con soporte nativo de tipos FP4; en plataformas sin el, la ejecucion puede requerir kernels especificos o la conversion a otro esquema de cuantizacion.
+
+- VRAM estimada para inferencia: el repositorio ocupa 465,0 GB en disco. Con cuantización MXFP4 (4 bits por parámetro) los pesos requieren aproximadamente 377 GB, a los que hay que sumar la KV cache en FP8 y los buffers de activación.
+- GPU recomendadas: el autor valida el modelo sobre 4 GPU NVIDIA B200 con `--tensor-parallel-size 4`. No se documenta compatibilidad con otras configuraciones.
+- GPU de consumo: no cabe en ninguna GPU consumer actual; el tamaño de pesos excede la VRAM de cualquier tarjeta individual del mercado.
+- Opciones de despliegue: vLLM es el runtime documentado y validado. El formato compressed-tensors no es directamente compatible con llama.cpp u Ollama sin conversión adicional, que no está documentada.
+- Latencia y throughput: no disponibles en la información proporcionada. La decodificación especulativa MTP con 5 tokens está soportada para reducir la latencia por token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros totales | Cuantización | Contexto | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| RedHatAI/GLM-5.3-MXFP4 | 753,3 mil millones | no disponible | MXFP4 (4 bits) con compressed-tensors | glm-5.3 | Hugging Face, publicado el 2026-09-10, 0 descargas |
-| zai-org/GLM-5.3 (modelo base) | mismo modelo de origen; el repositorio cuantizado declara 753,3 mil millones de parametros | no disponible | BF16 (presumiblemente, no confirmado en la informacion disponible) | glm-5.3 | Hugging Face |
-| Otros MoE de escala comparable (por ejemplo, familias de mas de 600.000 millones de parametros) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
+| RedHatAI/GLM-5.3-MXFP4 | 753,3 B | MXFP4 (4 bits) | no disponible | glm-5.3 (other) | vLLM, 4× B200 |
+| zai-org/GLM-5.3 (FP8) | no disponible | FP8 (8 bits) | no disponible | glm-5.3 (other) | vLLM |
+| zai-org/GLM-5.3 (original) | no disponible | BF16/FP16 (no confirmado) | no disponible | glm-5.3 (other) | no disponible |
 
-La unica comparacion sustentada por los datos disponibles es la del modelo cuantizado frente a su base: misma arquitectura y mismo numero de parametros, con una reduccion de huella de aproximadamente 4x a costa de una posible perdida de precision que no se ha cuantificado en la informacion facilitada.
+La comparación relevante es frente al checkpoint FP8 del mismo modelo base: MXFP4 reduce el tamaño a la mitad con una recuperación media de precisión en torno al 97%, aunque la mayor pérdida se concentra en AIME 2025 (92,80%). No se dispone de datos de otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
-- Sesgos conocidos: no hay documentacion sobre sesgos en la informacion disponible. Al entrenarse fundamentalmente en ingles y chino, es previsible un sesgo cultural y linguistico hacia esos dos ambitos.
-- Riesgo de alucinacion: inherente a los modelos generativos de esta escala y no mitigado de forma documentada en el repositorio.
-- Perdida por cuantizacion: el paso a MXFP4 es una cuantizacion post-entrenamiento de 4 bits. La degradacion en tareas sensibles a la precision, como razonamiento de cadena larga, matematicas o generacion de codigo, no esta cuantificada en la informacion disponible y debe medirse antes de un despliegue en produccion.
-- Idiomas: solo se declaran ingles y chino. El rendimiento en castellano no esta garantizado ni evaluado.
-- Contexto: se desconoce la longitud de contexto soportada, lo que impide planificar aplicaciones de contexto largo.
-- Licencia: la licencia se identifica como glm-5.3, una licencia propia cuyos terminos no se incluyen en la informacion disponible. Es obligatorio revisar las condiciones de uso comercial y las clausulas de atribucion antes de cualquier despliegue.
-- Madurez del repositorio: sin descargas ni valoraciones, y con una antiguedad minima. No existe validacion comunitaria publica que respalde el comportamiento del modelo cuantizado.
-- Restricciones de infraestructura: el modelo exige multiples aceleradores de gama alta, lo que limita su uso a entornos con capacidad de computo dedicada.
-- Compatibilidad: el formato compressed-tensors y MXFP4 pueden no ser aceptados por todos los motores de inferencia. La ruta documentada es vLLM.
+
+- Pérdida de precisión no uniforme: la recuperación frente a FP8 cae al 92,80% en AIME 2025, el benchmark más sensible a la cuantización; en tareas de razonamiento matemático de alta dificultad la degradación es medible.
+- Idiomas limitados: solo se declaran inglés y chino; el rendimiento en castellano u otros idiomas no está evaluado ni garantizado.
+- Contexto no documentado: se desconoce la longitud máxima de contexto soportada, lo que impide planificar cargas con documentos largos sin validación previa.
+- Licencia restrictiva: la licencia glm-5.3 es de tipo "other"; es necesario revisar el texto completo en el repositorio del modelo base antes de cualquier uso comercial.
+- Riesgo de alucinación: no se han publicado evaluaciones de factualidad ni de tasa de alucinación; como todo modelo generativo de gran escala, puede producir afirmaciones incorrectas con alta confianza.
+- Dependencia de hardware específico: la validación se realizó exclusivamente sobre 4 B200 con vLLM; no hay garantías de funcionamiento correcto en otras GPU o runtimes.
+- Sesgos: no se documenta ninguna evaluación de sesgos demográficos, políticos o culturales.
+- Requisito de infraestructura elevado: con aproximadamente 377 GB de pesos en FP4, el despliegue exige clústeres multi-GPU, lo que limita su uso a organizaciones con infraestructura dedicada.
 
 ## Enlaces
-- Repositorio del modelo: https://huggingface.co/RedHatAI/GLM-5.3-MXFP4
-- Modelo base: https://huggingface.co/zai-org/GLM-5.3
-- Organizacion autora de la cuantizacion (Red Hat AI): https://huggingface.co/RedHatAI
-- Organizacion autora del modelo base (Z.ai): https://huggingface.co/zai-org
-- Herramienta de cuantizacion citada en las etiquetas, LLM Compressor (referencia general, no procedente de la busqueda web): https://github.com/vllm-project/llm-compressor
-- Motor de inferencia citado en las etiquetas, vLLM (referencia general, no procedente de la busqueda web): https://github.com/vllm-project/vllm
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo. Los unicos enlaces relevantes disponibles son los del propio repositorio de Hugging Face y los de su modelo base.
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-MXFP4
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3
+- Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
+- README del modelo: https://huggingface.co/RedHatAI/GLM-5.3-MXFP4/blob/main/README.md
+- LLM Compressor: https://github.com/vllm-project/llm-compressor
+- lm-evaluation-harness (fork Neural Magic): https://github.com/neuralmagic/lm-evaluation-harness
+- lighteval (fork Neural Magic): https://github.com/neuralmagic/lighteval

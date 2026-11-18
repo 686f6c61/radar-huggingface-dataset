@@ -23,8 +23,8 @@
     "text-classification",
     "custom_code",
     "en",
-    "base_model:joamCriff123/zils-mini-sx3",
-    "base_model:finetune:joamCriff123/zils-mini-sx3",
+    "base_model:qhoenix/zils-mini-decision-l13_avg678",
+    "base_model:finetune:qhoenix/zils-mini-decision-l13_avg678",
     "license:apache-2.0",
     "region:us"
   ],

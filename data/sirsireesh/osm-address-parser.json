@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "SirSireesh/osm-address-parser",
+  "slug": "sirsireesh-osm-address-parser",
+  "author": "SirSireesh",
+  "url": "https://huggingface.co/SirSireesh/osm-address-parser",
+  "created_at": "2026-11-18T04:31:25.000Z",
+  "updated_at": "2026-11-18T04:32:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "address-parsing",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149619475,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598492084,
+  "storage_human": "598 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

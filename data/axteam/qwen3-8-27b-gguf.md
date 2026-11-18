@@ -2,100 +2,98 @@
 
 ## Resumen
 
-`axteam/Qwen3.8-27B-GGUF` es una conversión a formato GGUF del modelo denso `Qwen/Qwen3.8-27B`, publicada por el usuario axteam el 27 de octubre de 2026. El modelo original lo desarrolla el equipo Qwen de Alibaba y, según la documentación del repositorio oficial, se trata de un LLM denso multimodal nativo de pesos abiertos orientado a programación, flujos agénticos y automatización de oficina. Esta ficha cubre exclusivamente la versión cuantizada para llama.cpp.
+Qwen3.8-27B-GGUF es la versión cuantizada en formato GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario axteam para su uso con llama.cpp, Ollama y LM Studio. El modelo base pertenece a la familia Qwen3.5 de Alibaba y cuenta con 27.320.697.856 parámetros totales (aproximadamente 27,3 mil millones), una arquitectura de tipo transformer identificada internamente como `qwen35` en llama.cpp. La licencia del modelo base y de esta derivada es Apache-2.0.
 
-La aportación concreta de este repositorio es doble: ofrece dos cuantizaciones k-quant (Q4_K_M de 16,8 GB y Q8_0 de 29,0 GB) listas para llama.cpp, Ollama y LM Studio, e incrusta el `chat_template` original para que el formato de conversación se preserve sin configuración adicional. Con 27.320.697.856 parámetros (27,3 B) y licencia Apache-2.0, es una opción interesante para equipos que quieren ejecutar un modelo de esa escala en hardware local sin depender de infraestructura en la nube.
+El repositorio resuelve el problema de ejecutar un modelo de 27B en hardware de consumo o en servidores con GPU única sin necesidad de infraestructura de pesos completos en BF16. Para ello ofrece dos cuantizaciones de posentrenamiento (PTQ) realizadas con las herramientas oficiales de llama.cpp: Q4_K_M (16,8 GB, recomendada por el autor) y Q8_0 (29,0 GB, la más cercana al original). Cada archivo incorpora la plantilla de chat original y la capa de predicción multi-token (MTP) del modelo base.
 
-Es importante señalar una limitación de alcance: estos ficheros GGUF son solo de texto. El codificador de visión del modelo base no está incluido, por lo que las capacidades multimodales del original no están disponibles aquí (a diferencia de otras conversiones de la comunidad que sí publican los ficheros `mmproj`). El repositorio tiene 0 descargas en el momento de redactar esta ficha, por lo que no existe validación comunitaria de la calidad de la conversión.
+La relevancia actual radica en que estos GGUF permiten desplegar un modelo de 27B con pérdida de perplejidad mínima respecto a Q8_0 (incremento del 0,4 % en inglés y del 1,5 % en coreano según las mediciones del autor) y con soporte de API compatible con OpenAI a través de `llama-server`. No obstante, esta versión es exclusivamente de texto: el codificador de visión del modelo base no está incluido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (no MoE); modelo base multimodal nativo, estos GGUF son solo texto |
-| Parametros totales | 27.320.697.856 (27,3 B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (16,8 GB) y Q8_0 (29,0 GB) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (heredada de Qwen/Qwen3.8-27B) |
-| Formato de pesos | GGUF (llama.cpp) |
-| Modelo base | Qwen/Qwen3.8-27B (relacion: quantized) |
-| Tamano del repositorio | 45,9 GB |
-| Herramienta de conversion | `convert_hf_to_gguf.py` de llama.cpp |
-| Plantilla de chat | `chat_template` original embebida |
-| Descargas / likes | 0 / 1 |
+| Arquitectura | Transformer (identificador `qwen35` en llama.cpp); incluye capa de predicción multi-token (MTP) |
+| Parametros totales | 27.320.697.856 (~27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (los ejemplos usan `-c 8192`) |
+| Tipos de cuantizacion | Q4_K_M (4 bits, k-quant medium) y Q8_0 (8 bits) |
+| Idiomas soportados | no disponible de forma oficial; las pruebas del autor incluyen ingles y coreano |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); no se incluye BF16 ni safetensors en el repo |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso (no mezcla de expertos) de 27,3 mil millones de parámetros, descrito por el equipo Qwen como un modelo multimodal nativo de pesos abiertos. La conversión de axteam aplica la ruta estándar de llama.cpp (`convert_hf_to_gguf.py`) y conserva la plantilla de chat original, lo que garantiza que los turnos de sistema, usuario y asistente se formateen igual que en el modelo sin cuantizar. No se ha aplicado ningún ajuste fino posterior: es una derivada pura de cuantización.
+El modelo base es un transformer de la familia Qwen3.5 con 27,3 mil millones de parámetros, según el dato real de safetensors del modelo original. En llama.cpp se registra bajo la arquitectura `qwen35`, disponible desde el build b7990. Los archivos GGUF de este repositorio incluyen además la capa de predicción multi-token (MTP) del modelo original, que llama.cpp soporta a partir del build b9180. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del corpus, las etapas de alineación (RLHF, DPO u otras) ni innovaciones técnicas específicas del modelo original en la información proporcionada. La model card del repositorio de axteam no documenta ningún detalle arquitectónico más allá de la relación con el modelo base, y las referencias web consultadas solo indican la naturaleza densa y multimodal del original.
+La cuantización es de tipo PTQ (post-training quantization), realizada con el flujo `convert_hf_to_gguf.py` → `llama-quantize` de llama.cpp. Los pesos BF16 se cuantizan por bloques con escalas por bloque y asignación mixta de bits (k-quants), sin reentrenamiento. La plantilla de chat original queda embebida en cada archivo. El autor midió la perplejidad sobre 16 ventanas de 2.048 tokens de WikiText-2 y de una muestra de Wikipedia en coreano en una NVIDIA B200 con todas las capas en GPU: Q8_0 obtiene 5,91 (inglés) y 4,36 (coreano), mientras que Q4_K_M obtiene 5,93 y 4,43, es decir, un incremento del 0,4 % y del 1,5 % respectivamente. El propio autor advierte que 16 ventanas es una muestra pequeña y que diferencias de pocos puntos porcentuales quedan dentro del ruido de muestreo.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con plantilla de chat embebida que respeta roles de sistema, usuario y asistente.
-- Programación y tareas de ingeniería de software: el repositorio oficial del modelo base destaca el rendimiento en código como uno de sus puntos fuertes.
-- Flujos agénticos y *agentic workflows*: el modelo base está posicionado explícitamente para tareas de agente y automatización.
-- Automatización de oficina (documentos, hojas de cálculo, tareas administrativas) según la descripción del repositorio oficial.
-- Multilingüismo: la model card incluye textos en inglés y coreano, pero no se detalla la lista de idiomas soportados; no disponible como dato verificado.
-- Capacidad multimodal (entrada de imagen): presente en el modelo base, **no disponible** en estos ficheros GGUF, que son solo texto.
-- Soporte de *tool calling* / *function calling*: no documentado en la información disponible para esta conversión.
-- Modo de razonamiento (*thinking mode*), audio u otras capacidades especiales: no disponible.
+- Generación de texto conversacional multi-turno, con plantilla de chat embebida y parámetros de muestreo recomendados (temperature 1.0, top_p 0.95, top_k 20).
+- Razonamiento y respuesta a preguntas: el autor verificó respuestas correctas a preguntas cortas sobre capitales (Francia y Corea).
+- Capacidad multilingüe: se ha validado al menos en inglés y coreano; el resto de idiomas no está documentado en la información disponible.
+- Predicción multi-token (MTP): la capa está presente en los archivos y es compatible con llama.cpp desde el build b9180, lo que habilita decodificación especulativa nativa.
+- Servido mediante API compatible con OpenAI a través de `llama-server`.
+- Compatibilidad con Ollama y LM Studio (el autor no ha probado estos entornos).
+- No incluye capacidades de visión: el codificador visual y el proyector multimodal (`mmproj`) no están en el repositorio, por lo que no admite entrada de imágenes ni OCR.
+- No se documenta soporte explícito de tool calling ni de flujos de agentes en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en local: con Q4_K_M (16,8 GB) se puede desplegar un asistente de autocompletado y revisión de código en una estación de trabajo con una sola GPU de 24 GB, manteniendo el código fuente dentro de la red corporativa sin enviar nada a la nube.
-- Automatización de oficina con documentos sensibles: el modelo base está orientado a tareas administrativas; al ejecutarse con llama.cpp de forma totalmente local, encaja en sectores con requisitos estrictos de confidencialidad (legal, sanitario, administración pública).
-- Chatbot de atención al cliente autoalojado: el `chat_template` embebido permite servir conversaciones multi-turno directamente con `llama-server` sin capa de formateo adicional, con la salvedad de que la longitud de contexto debe fijarse explícitamente en el arranque.
-- Prototipado e investigación con requisitos de reproducibilidad: al ser una cuantización estándar k-quant, los resultados son reproducibles en cualquier máquina que cargue el mismo fichero y la misma versión de llama.cpp.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece dos niveles (Q4_K_M y Q8_0) que permiten medir la degradación de calidad frente al modelo en precisión completa en tareas concretas del dominio propio.
-- Despliegue en portátiles y equipos sin GPU dedicada: Q4_K_M puede ejecutarse con offload parcial a CPU usando llama.cpp u Ollama, lo que permite disponer de un modelo de 27 B en hardware de gama alta de consumo.
-- Pipelines de generación de texto por lotes: al no incluir el codificador de visión, el consumo de memoria es menor y el proceso es más sencillo de orquestar en servidores sin GPU de gran capacidad.
+- Asistente conversacional autoalojado: con Q4_K_M (16,8 GB) se puede servir un chatbot multi-turno en una GPU de 24 GB con contexto de 8K, usando `llama-server` y la API compatible con OpenAI para integrarlo en aplicaciones existentes sin cambiar el cliente.
+- Generación de texto en inglés y coreano: las mediciones de perplejidad del autor sobre WikiText-2 y Wikipedia en coreano indican un comportamiento estable en ambos idiomas, adecuado para tareas de redacción y resumen en esos mercados.
+- Despliegue en estaciones de trabajo con una sola GPU: Q4_K_M cabe en tarjetas de 24 GB y Q8_0 en tarjetas de 32-40 GB, lo que permite ejecutar un modelo de 27B en hardware de gama alta de consumo o profesional sin clúster.
+- Prototipado rápido con Ollama o LM Studio: el autor documenta comandos directos (`ollama run hf.co/axteam/Qwen3.8-27B-GGUF:Q4_K_M`) para probar el modelo en local sin gestionar pesos manualmente.
+- Evaluación comparativa de cuantizaciones: los archivos Q4_K_M y Q8_0 permiten medir el impacto de la cuantización en tareas propias, usando la perplejidad de referencia publicada como línea base.
+- Inferencia con contexto reducido de memoria: la opción `--cache-type-k q8_0 --cache-type-v q8_0 -fa on` reduce a la mitad la caché KV, útil para servir contextos largos en GPUs con VRAM ajustada.
+- Integración en pipelines de texto sin requisitos multimodales: al ser solo texto, encaja en sistemas de generación de documentación, clasificación o extracción donde no se necesita visión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card de axteam ni las referencias web consultadas incluyen cifras de MMLU, HumanEval, GSM8K u otras evaluaciones, ni para el modelo base ni para las cuantizaciones. Tampoco se documentan métricas de latencia o throughput.
+El autor solo publica mediciones de perplejidad (PPL), no resultados en benchmarks estándar como MMLU, HumanEval o GSM8K.
+
+| Metrica | Q8_0 | Q4_K_M | Diferencia vs Q8_0 |
+|---|---|---|---|
+| Perplejidad WikiText-2 (EN) | 5,91 | 5,93 | +0,4 % |
+| Perplejidad Wikipedia coreano (KO) | 4,36 | 4,43 | +1,5 % |
+
+Medición realizada con llama.cpp b12005 (commit e0f142d, build CUDA) en NVIDIA B200, 16 ventanas de 2.048 tokens por texto. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para Q4_K_M: aproximadamente 16,8 GB solo para los pesos; con contexto de 8.192 tokens hay que prever margen adicional para la caché KV (del orden de varios GB según el contexto efectivo). Encaja en GPU de 24 GB (RTX 3090, RTX 4090, A10G, L4 de 24 GB).
-- VRAM estimada para Q8_0: aproximadamente 29,0 GB solo para los pesos; requiere GPU de 32 GB o más (A100 40 GB, A6000 48 GB, H100) o bien reparto entre GPU y CPU.
-- GPU de consumo: Q4_K_M es viable en RTX 3090/4090 (24 GB). En tarjetas de 16 GB o menos es necesario offload parcial a RAM del sistema, con la consecuente caída de velocidad. Q8_0 no cabe en ninguna GPU de consumo actual de forma holgada.
-- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama (`ollama run hf.co/axteam/Qwen3.8-27B-GGUF:Q4_K_M`) y LM Studio. El ejemplo de la model card arranca con `-c 8192`, valor que hay que ajustar según la longitud de contexto que se necesite.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las dos cuantizaciones.
-- Nota sobre descarga: el repositorio pesa 45,9 GB en total; descargar una sola cuantización con `-hf` evita bajar los dos ficheros completos.
+- VRAM estimada: Q4_K_M requiere 16,8 GB de pesos más la caché KV del contexto elegido; Q8_0 requiere 29,0 GB más la caché KV.
+- GPU recomendadas: NVIDIA B200 (verificada por el autor), A100 40 GB y H100 para Q8_0 con contexto amplio; RTX 4090 (24 GB) o A6000 (48 GB) para Q4_K_M.
+- Cabe en GPU de consumo: Q4_K_M sí cabe en RTX 3090/4090 (24 GB) con contexto moderado; Q8_0 no cabe en GPUs de 24 GB.
+- Opciones de despliegue: llama.cpp (build ≥ b9180, con `-fa on` desde b6325), `llama-server` con API compatible con OpenAI, Ollama y LM Studio (estos dos no verificados por el autor).
+- Reducción de memoria: `--cache-type-k q8_0 --cache-type-v q8_0 -fa on` reduce a la mitad la caché KV.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Multimodal | Contexto | Licencia | Observaciones |
-|---|---|---|---|---|---|---|
-| axteam/Qwen3.8-27B-GGUF (este) | 27,3 B | GGUF (Q4_K_M, Q8_0) | No (solo texto) | no disponible | Apache-2.0 | 0 descargas; sin validacion comunitaria |
-| bartowski/Qwen3.8-27B-GGUF | 27,3 B | GGUF (varias cuantizaciones) | Si, incluye `mmproj` F16 y BF16 | no disponible | Apache-2.0 | Referencia de la comunidad; permite entrada de imagen |
-| JonathanColetti/Qwen3.8-27B-Uncensored-GGUF | 27,3 B | GGUF | no disponible | no disponible | no disponible | Variante sin censura; no es el modelo oficial |
-| Qwen/Qwen3.8-27B (base) | 27,3 B | safetensors | Si (nativo) | no disponible | Apache-2.0 | Pesos originales; requiere mas VRAM |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-GGUF (este) | 27,3 B | no disponible | GGUF (Q4_K_M, Q8_0) | Apache-2.0 | Solo texto; incluye MTP; verificado en B200 |
+| Qwen/Qwen3.8-27B (base) | 27,3 B | no disponible | safetensors (BF16) | Apache-2.0 | Incluye codificador de visión; requiere más VRAM |
+| Otros modelos de ~27B en GGUF | no disponible | no disponible | GGUF | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
-La diferencia práctica más relevante entre este repositorio y el de bartowski es la ausencia de los ficheros `mmproj`: si se necesita entrada de imagen, este GGUF no sirve y hay que recurrir a una conversión que los incluya. En el resto de aspectos (parámetros, licencia, formato) las alternativas son equivalentes, y la elección depende de la confianza en el publicador y de la disponibilidad de los ficheros multimodales.
+No se dispone de información sobre alternativas comparables con datos verificables de parámetros, contexto y rendimiento en la documentación consultada.
 
 ## Limitaciones y advertencias
 
-- Ausencia de visión: el codificador de imagen del modelo base no se ha convertido, por lo que cualquier caso de uso multimodal falla con estos ficheros.
-- Contexto no documentado: se desconoce la ventana de contexto nativa del modelo. El valor `-c 8192` del ejemplo es una decisión de arranque, no una especificación; configurar un contexto superior al soportado puede producir degradación silenciosa.
-- Sin benchmarks ni validación: el repositorio tiene 0 descargas y no incluye evaluaciones. No hay evidencia publicada de que la cuantización preserve la calidad del original.
-- Publicador tercero: axteam no es el equipo Qwen. Aunque la licencia Apache-2.0 lo permite, la conversión no está auditada por el autor original.
-- Pérdida por cuantización: Q4_K_M introduce una degradación de calidad no medida frente a Q8_0; en tareas de razonamiento o código sensible conviene validar con datos propios antes de producción.
-- Idiomas no verificados: no se detalla la cobertura lingüística; el rendimiento en castellano no está documentado y debe evaluarse empíricamente.
-- Sesgos y alucinaciones: no hay información publicada sobre sesgos del modelo base ni sobre tasas de alucinación. Al ser un modelo de 27 B, es esperable un riesgo de alucinación superior al de modelos frontera, pero no se aportan datos que lo cuantifiquen.
-- Licencia: Apache-2.0 permite uso comercial y modificaciones, pero conviene revisar el fichero LICENSE del repositorio original y las condiciones de atribución al equipo Qwen.
-- Fecha de publicación futura respecto a los datos habituales de referencia (octubre de 2026): verificar que la versión de llama.cpp empleada soporta la arquitectura antes de desplegar.
+- Solo texto: no incluye `mmproj` ni codificador de visión, por lo que no puede procesar imágenes ni realizar OCR.
+- Idiomas documentados limitados: solo se validaron inglés y coreano; el comportamiento en castellano u otros idiomas no está verificado.
+- Longitud de contexto no especificada: los ejemplos usan 8192 tokens, pero no se confirma la ventana máxima del modelo base.
+- Pérdida de calidad por cuantización: Q4_K_M degrada la perplejidad un 0,4 % en inglés y un 1,5 % en coreano respecto a Q8_0; el autor advierte que la muestra de 16 ventanas es pequeña y que las diferencias pueden quedar dentro del ruido.
+- Riesgo de alucinación: no se documentan evaluaciones específicas de veracidad ni de sesgos.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Dependencia de versión de llama.cpp: requiere build ≥ b9180 por la capa MTP; versiones anteriores no cargarán correctamente los archivos.
+- Ollama y LM Studio no verificados por el autor: el funcionamiento en esos entornos no está garantizado.
+- Licencia Apache-2.0: permite uso comercial, pero los pesos originales y el tokenizador pertenecen al equipo Qwen y deben conservarse los avisos correspondientes.
+- No se documenta soporte de tool calling ni de agentes, por lo que no debe asumirse en producción sin validación previa.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/axteam/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
-- Repositorio GitHub oficial del modelo: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Cuantización alternativa con soporte multimodal (bartowski): https://huggingface.co/bartowski/Qwen3.8-27B-GGUF
-- Variante sin censura (JonathanColetti): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
-- Tutorial de ejecución local: https://aiindigo.com/tutorials/getting-started-with-qwen-3-8-27b-gguf-run-frontier-ai-locally
-- Ficha de una cuantización de terceros ("Apex"): https://local-ai-zone.github.io/models/qwen3-8-27b-apex.html
+- Pull request de soporte MTP en llama.cpp: PR #22673 (referenciado en la model card)

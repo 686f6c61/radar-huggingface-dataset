@@ -14,15 +14,13 @@
   "tags": [
     "gguf",
     "text-generation",
-    "base_model:logic65/Qwen3.8-Whittle-MoE-27B-A17.8B",
-    "base_model:quantized:logic65/Qwen3.8-Whittle-MoE-27B-A17.8B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 5093,
+  "downloads_30d": 5097,
   "trending_score": 0,
   "parameters": 26917297664,
   "parameters_human": "26.92B",

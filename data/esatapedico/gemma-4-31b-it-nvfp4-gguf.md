@@ -2,95 +2,113 @@
 
 ## Resumen
 
-Gemma-4-31B-IT-NVFP4-GGUF es una familia de cinco archivos GGUF convertidos por el usuario esatapedico a partir del checkpoint oficial nvidia/Gemma-4-31B-IT-NVFP4, un modelo denso de 31 mil millones de parámetros afinado con instrucciones (instruction-tuned) desarrollado por NVIDIA. El modelo base destaca por su contexto nativo de 262.144 tokens y por su cuantización NVFP4 nativa (pesos a 4 bits con escalas FP8 por bloques y group size 16, esquema W4A16), diseñada para ejecutarse de forma nativa en GPUs NVIDIA Blackwell (arquitectura sm_120).
+Gemma-4-31B-IT-NVFP4-GGUF es una familia de cinco archivos GGUF derivados del checkpoint oficial `nvidia/Gemma-4-31B-IT-NVFP4`, un modelo denso de 31B de parametros (30.697.345.956 exactos) afinado para instrucciones por NVIDIA. El trabajo de este repositorio, publicado por el usuario `esatapedico`, se limita a la conversion numerica: transformar el checkpoint NVFP4 original a formato GGUF preservando los tensores NVFP4 nativos y construir una escalera de precision sobre los tensores que mas afectan a la calidad de salida y la velocidad de decodificacion.
 
-La aportación del conversor es puramente numérica: sobre una columna vertebral NVFP4 de 410 tensores (180 feed-forward + 230 de atención) idéntica byte a byte en cuatro de los cinco niveles, se construye una escalera de precisión que varía la cabeza de embeddings (Q4_K, Q6_K, Q8_0 o BF16) y, en el nivel HIGHEST, la precisión de la atención (Q8_0). El resultado son archivos de entre 17,29 y 23,55 GB pensados para hardware de consumo, en particular configuraciones de doble GPU de 16 GB.
+El modelo subyacente tiene 60 bloques de atencion y una ventana de contexto nativa de 262.144 tokens. La cuantizacion NVFP4 es W4A16 (pesos de 4 bits, escalas de bloque en FP8, tamano de grupo 16) y esta pensada para ejecutarse de forma nativa en GPUs Blackwell (sm_120). El modelo es solo de texto: no incluye torre de vision, ni `mmproj`, ni drafter MTP.
 
-Es relevante ahora mismo porque ofrece una vía práctica para ejecutar un modelo denso de 31B con contexto de 256K en GPUs de consumo modernas, aprovechando la cuantización NVFP4 que NVIDIA ha impulsado con la generación Blackwell, bajo licencia Apache 2.0 que permite uso comercial sin restricciones.
+La relevancia de esta publicacion es practica: permite ejecutar un modelo de 31B con contexto de 262K en hardware de consumo relativamente modesto (dos GPUs de 16 GB con tensor split, o descarga parcial a CPU), ofreciendo cinco perfiles de tamano entre 17,29 GB y 23,55 GB. La licencia declarada en todos los archivos es Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (60 bloques de atención), instruction-tuned |
-| Parametros totales | 30.697.345.956 (~31B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens (256K) |
-| Tipos de cuantizacion | NVFP4 nativo (W4A16, escalas FP8, group size 16); token_embd en Q4_K, Q6_K, Q8_0 o BF16 según nivel; atención en Q8_0 en el nivel HIGHEST |
-| Idiomas soportados | Inglés (según model card; no disponible información sobre otros idiomas) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (convertido desde checkpoint NVFP4 oficial) |
+| Arquitectura | Transformer denso (60 bloques de atencion), cuantizacion NVFP4 nativa (W4A16) |
+| Parametros totales | 30.697.345.956 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens (nativa) |
+| Tipos de cuantizacion | NVFP4 (backbone), Q4_K, Q6_K, Q8_0, BF16 (segun tier) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (5 archivos, 1.193 tensores cada uno) |
+
+Detalle de los cinco archivos:
+
+| Archivo | Tamano (GB decimales) | `token_embd` | Atencion (230 tensores) | Backbone |
+|---|---|---|---|---|
+| `Gemma-4-31B-IT-NVFP4-LOW.gguf` | 17,29 | `Q4_K` | `NVFP4` | `NVFP4` 410 |
+| `Gemma-4-31B-IT-NVFP4-MEDIUM.gguf` | 17,65 | `Q6_K` | `NVFP4` | `NVFP4` 410 |
+| `Gemma-4-31B-IT-NVFP4-MID-HIGH.gguf` | 17,99 | `Q8_0` | `NVFP4` | `NVFP4` 410 |
+| `Gemma-4-31B-IT-NVFP4-HIGH.gguf` | 19,31 | `BF16` | `NVFP4` | `NVFP4` 410 |
+| `Gemma-4-31B-IT-NVFP4-HIGHEST.gguf` | 23,55 | `BF16` | `Q8_0` | `NVFP4` 180 + `Q8_0` 230 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 31B parámetros con 60 bloques de atención, afinado con instrucciones por NVIDIA. Su rasgo técnico distintivo es la cuantización NVFP4 nativa: pesos a 4 bits en formato de punto flotante con escalas FP8 por bloques de 16 elementos (esquema W4A16, es decir, pesos de 4 bits y activaciones en 16 bits). Este formato está soportado de forma nativa por las GPUs Blackwell (sm_120), lo que permite acelerar la inferencia sin recurrir a cuantizaciones enteras tradicionales. El contexto nativo es de 262.144 tokens. Los embeddings están atados (tied embeddings), de modo que token_embd es la única cabeza de salida, y es precisamente el único tensor que el checkpoint oficial deja fuera de NVFP4.
+El modelo base es un transformer denso de 31B con 60 bloques de atencion y contexto nativo de 262.144 tokens, afinado para instrucciones por NVIDIA. La cuantizacion NVFP4 del checkpoint original emplea pesos de 4 bits con escalas de bloque en FP8 y tamano de grupo 16 (W4A16), disenada para ejecucion nativa en GPUs Blackwell (sm_120). Los embeddings estan atados (tied embeddings), por lo que `token_embd` es el unico tensor de cabeza.
 
-Sobre ese checkpoint, esatapedico construyó cinco archivos GGUF: cuatro comparten una columna vertebral NVFP4 de 410 tensores byte-idéntica y difieren solo en la precisión de token_embd (Q4_K en LOW, Q6_K en MEDIUM, Q8_0 en MID-HIGH, BF16 en HIGH). El nivel HIGHEST es el único que modifica la columna vertebral, llevando los 230 tensores de atención de NVFP4 a Q8_0, lo que lo convierte en el nivel de máxima fidelidad. El proceso consistió en convertir el checkpoint oficial con `--outtype auto` preservando los tensores NVFP4, verificar el censo de tensores por nivel, y parchear los metadatos GGUF sin alterar los datos de los tensores. No hay información disponible sobre los datos de preentrenamiento, número de tokens de entrenamiento ni técnicas de alineación (RLHF/DPO) del modelo base.
+La contribucion de este repositorio es exclusivamente de numerica. El proceso documentado consistio en: (1) convertir el checkpoint NVFP4 oficial a GGUF con `--outtype auto`, preservando los tensores NVFP4 nativos de extremo a extremo; (2) verificar el censo de tensores NVFP4 (410 tensores de backbone en LOW–HIGH); (3) construir cada tier sobre el backbone compartido, variando solo la precision de la cabeza de embeddings (LOW–HIGH) o la precision de atencion mas las cabezas (HIGHEST); y (4) verificar los conteos de tensores por tier y la identidad del backbone, parcheando los KV del GGUF para nombre, descripcion y licencia sin alterar los datos de los tensores.
+
+Cuatro tiers (LOW, MEDIUM, MID-HIGH, HIGH) comparten un backbone NVFP4 byte a byte identico de 410 tensores (180 de feed-forward y 230 de atencion); solo difieren en la precision de `token_embd`. HIGHEST es el unico tier que modifica el backbone: la atencion pasa de NVFP4 a Q8_0 (230 tensores). No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens, ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline text-generation, etiqueta conversational, con chat template de NVIDIA Gemma intacto).
-- Seguimiento de instrucciones (variante instruction-tuned).
-- Contexto extremadamente largo: 262.144 tokens nativos, adecuado para documentos extensos y conversaciones multi-turno prolongadas.
-- No disponible: capacidades multimodales. La fuente es text-only: sin torre de visión, sin mmproj y sin MTP drafter (no hay decodificación especulativa incluida).
-- No disponible: información verificada sobre tool calling, agentes ni capacidades de código o matemáticas del modelo base.
+- Generacion de texto conversacional en ingles, con plantilla de chat de NVIDIA Gemma intacta en todos los archivos.
+- Razonamiento y matematicas: el harness de evaluacion reporta resultados en MMLU-1000 y GSM8K-200, lo que confirma capacidad de razonamiento y resolucion de problemas matematicos.
+- Modo "thinking" (razonamiento extendido): GSM8K se evaluo con thinking activado; MMLU con thinking desactivado.
+- Seguimiento de instrucciones: IFEval parseo 30/30 en todos los tiers en ambas ejecuciones.
+- Contexto largo: ventana nativa de 262.144 tokens, adecuada para documentos extensos y conversaciones multi-turno prolongadas.
+- Solo texto: no hay torre de vision, ni `mmproj`, ni drafter MTP.
+- No se dispone de informacion sobre soporte de tool calling / function calling, agentes o multi-step reasoning en la informacion proporcionada.
+- Multilingue: limitado a ingles segun los metadatos del repositorio.
 
 ## Casos de uso
 
-- Procesamiento de documentos extensos: con 262K tokens de contexto nativo, permite resumir o analizar libros técnicos, contratos largos o bases de código completas sin dividir el contenido en fragmentos.
-- Chatbot local en estación de trabajo con doble GPU: los niveles LOW a HIGH caben en dos GPUs de 16 GB con tensor split (por ejemplo, 2x RTX 5070 Ti), ofreciendo un asistente conversacional privado sin depender de APIs externas.
-- Experimentación con cuantización NVFP4: la escalera de cinco niveles permite comparar el impacto de la precisión de embeddings y atención en calidad y velocidad, útil para investigación en cuantización.
-- RAG sobre corpus grandes: la ventana de 256K tokens permite incluir muchos documentos recuperados en un único prompt, reduciendo la necesidad de re-ranking agresivo.
-- Generación de texto en lote en GPUs Blackwell: el formato NVFP4 nativo aprovecha el soporte de hardware de sm_120 para maximizar el throughput en servidores con RTX 50xx.
-- Prototipado con llama.cpp: los archivos GGUF son directamente compatibles con llama.cpp y derivados (Ollama, LM Studio), facilitando pruebas rápidas en local.
-- Uso comercial sin fricción: la licencia Apache 2.0 permite integrar el modelo en productos sin obligaciones copyleft ni restricciones de uso.
+- Analisis de documentos largos: con 262.144 tokens de contexto nativo, el modelo puede ingerir contratos, informes tecnicos o bases de codigo completas en una sola pasada, sin necesidad de chunking ni recuperacion externa.
+- Asistente conversacional de contexto extendido: la plantilla de chat de NVIDIA Gemma intacta y el contexto de 262K permiten mantener conversaciones multi-turno con historial extenso, adecuado para soporte tecnico especializado.
+- Razonamiento matematico y resolucion de problemas: el modo thinking y los resultados medidos en GSM8K lo hacen util para tareas de calculo, verificacion de derivaciones y explicacion paso a paso.
+- Despliegue en hardware de consumo: los tiers LOW a MID-HIGH (17,29–17,99 GB) caben en dos GPUs de 16 GB con tensor split o con descarga parcial a CPU, lo que permite ejecutar un modelo de 31B en estaciones de trabajo con GPUs Blackwell de gama consumer.
+- Evaluacion comparativa de tecnicas de cuantizacion: la escalera de cinco tiers con backbone identico permite aislar el efecto de la precision de embeddings y de atencion sobre la calidad y la velocidad, util para investigacion en cuantizacion.
+- Generacion de texto en ingles con requisitos de fidelidad alta: el tier HIGHEST (atencion Q8_0, 23,55 GB) esta pensado para escenarios donde la maxima fidelidad numerica prima sobre la velocidad, como la generacion de contenido tecnico o la evaluacion de modelos.
+- Prototipado e inferencia local con llama.cpp: la compatibilidad con `llama.cpp` y la cuantizacion NVFP4 nativa en Blackwell permiten desplegar el modelo en entornos locales sin infraestructura de servidor dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks formales (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor del repo sí publicó comprobaciones informales (single run, no comparables entre configuraciones) sobre dos RTX 5070 Ti con tensor split:
+Resultados del harness `bench_suite --tier gate --stages Q` sobre dos GPUs Blackwell de 16 GB, con KV cache por defecto del servidor. MMLU-1000 (semilla 42, letter-logprob, thinking off, contexto 8192, un slot) y GSM8K-200 (generativo, thinking on). La escalera completa se ejecuto el 2026-10-29/30 y se repitio el 2026-11-12; MMLU y PPL se reprodujeron al item en los cinco tiers. GSM8K es generativo y varia ±3 items entre ejecuciones, por lo que se reportan ambos valores.
 
-| Nivel | PPL (estimación final) |
-|---|---|
-| LOW | 711,62 ± 62,35 |
-| MEDIUM | 562,54 ± 48,52 |
-| MID-HIGH | 620,37 ± 53,99 |
-| HIGH | 598,87 ± 51,99 |
-| HIGHEST | 1219,77 ± 107,39 |
-| ORIG oficial (31,5 GB, referencia, no distribuido) | 1243,84 |
+| Tier | MMLU-1000 | GSM8K-200 (ejecucion 1 / 2) | IFEval |
+|---|---|---|---|
+| LOW | no disponible en el extracto | no disponible en el extracto | 30/30 |
+| MEDIUM | no disponible en el extracto | no disponible en el extracto | 30/30 |
+| MID-HIGH | no disponible en el extracto | no disponible en el extracto | 30/30 |
+| HIGH | 78,08% | no disponible en el extracto | 30/30 |
+| HIGHEST | 76,34% | valor ultimo medido (timeout en ambas ejecuciones, ~2,8 tok/s) | 30/30 |
 
-Advertencias del propio autor: la PPL no correlaciona con la precisión en tareas (el nivel con mayor PPL ocupa el cuarto puesto de cinco en MMLU según sus mediciones, aunque los resultados concretos de MMLU no se detallan en la información disponible); debe tratarse como una comprobación de carga y generación. Los cinco niveles pasaron una prueba de humo (prompt de 220 tokens, temp 0,8, seed 42) generando texto coherente y sin repeticiones. Según el autor, los cinco niveles se sitúan en una banda de ±1 punto porcentual entre sí, y HIGH sería el de mayor MMLU medido.
+Notas: HIGHEST es el unico tier cuyo stage Q agoto el tiempo en GSM8K en ambas ejecuciones (spill-slow a ~2,8 tok/s); su cifra de GSM8K es el ultimo valor medido. GPQA y KLD-vs-anchor no se midieron. El autor advierte que los cinco tiers caen dentro de una banda de ±~1 pp de jitter, por lo que el orden no es firme; HIGH es la eleccion por precision y HIGHEST la de maxima fidelidad numerica, sin ventaja medible en precision de tarea.
+
+Prueba de humo: prompt `What is a black hole?` con muestreo de un solo turno (temp 0,8, semilla 42, 220 tokens); los cinco tiers producen una completion coherente y natural sin repeticion.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los niveles LOW a HIGH requieren aproximadamente dos GPUs de 16 GB con tensor split, o descarga parcial a CPU. El nivel HIGHEST necesita unos 22 GiB de VRAM además de la caché KV.
-- GPUs recomendadas: NVIDIA Blackwell (sm_120) para aprovechar NVFP4 de forma nativa, por ejemplo RTX 5070 Ti, RTX 5080 o RTX 5090. En hardware sin soporte NVFP4 los tensores se dequantizan, con penalización de rendimiento (no disponible: cifras concretas).
-- Consumer GPUs: sí, cabe en configuraciones de doble GPU de 16 GB (verificado por el autor con 2x RTX 5070 Ti); en una única GPU de 24 GB (RTX 3090/4090) los niveles de 17-19 GB podrían caber con caché KV limitada (no disponible: medición confirmada).
-- Despliegue: llama.cpp (herramientas llama-perplexity y llama-bench usadas por el autor), y por extensión Ollama y LM Studio al ser GGUF. No disponible: soporte verificado en vLLM o TGI para estos archivos concretos.
-- Rendimiento: se ejecutaron pruebas de velocidad con llama-bench en doble RTX 5070 Ti, pero las cifras concretas de tokens/s no están incluidas en la información disponible.
+- VRAM estimada: los tiers LOW a MID-HIGH (17,29–17,99 GB) requieren dos GPUs de 16 GB con tensor split o descarga parcial a CPU. HIGH (19,31 GB) necesita el mismo esquema. HIGHEST (23,55 GB) requiere aproximadamente 22 GiB de VRAM mas el KV cache.
+- GPUs recomendadas: GPUs NVIDIA Blackwell (sm_120) para ejecucion nativa de NVFP4. El autor ejecuto las pruebas en dos GPUs Blackwell de 16 GB.
+- Cabe en GPU consumer: si, en GPUs Blackwell consumer de 16 GB en configuracion de dos unidades con tensor split, o con offload parcial a CPU.
+- Opciones de despliegue: `llama.cpp` (formato GGUF, libreria declarada). El repositorio incluye la etiqueta `endpoints_compatible`.
+- Latencia y throughput: HIGHEST reporta ~2,8 tok/s en el stage Q de GSM8K bajo condicion de spill-slow. No se dispone de cifras de throughput para el resto de tiers en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-31B-IT-NVFP4-GGUF (esta ficha) | 30,7B (denso) | 262.144 | NVFP4 nativo + escalera de embeddings | Apache 2.0 | GGUF público (5 niveles) |
-| nvidia/Gemma-4-31B-IT-NVFP4 (base) | 30,7B (denso) | 262.144 | NVFP4 nativo | Apache 2.0 | Checkpoint oficial, 31,5 GB |
-| Modelos densos ~30B con GGUF (p. ej. Qwen/LLaMA de tamaño similar) | ~30B | No disponible para comparación directa | Q4/Q8 típico | Variable | Amplia en HF |
+| Gemma-4-31B-IT-NVFP4-GGUF (este) | 30,7B denso | 262.144 | NVFP4 + Q4_K/Q6_K/Q8_0/BF16 | Apache 2.0 | GGUF en HF |
+| nvidia/Gemma-4-31B-IT-NVFP4 (base) | 30,7B denso | 262.144 | NVFP4 | Apache 2.0 | Checkpoint en HF |
+| Otros modelos de 31B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No hay datos de rendimiento comparativos publicados entre esta conversión y alternativas de la misma categoría, por lo que la comparación se limita a parámetros, contexto y licencia.
+No se dispone de informacion sobre modelos alternativos de la misma categoria en la documentacion proporcionada. La comparativa natural es con el checkpoint oficial de NVIDIA del que deriva, que comparte arquitectura, parametros, contexto y licencia, y del que este repositorio se diferencia unicamente por el formato GGUF y la escalera de precision.
 
 ## Limitaciones y advertencias
 
-- Idioma: el model card declara únicamente inglés; no hay garantía documentada de rendimiento en castellano ni otros idiomas.
-- Text-only: no hay torre de visión ni soporte multimodal; tampoco MTP drafter para decodificación especulativa.
-- La PPL publicada no predice precisión en tareas; el propio autor advierte de que las métricas son comprobaciones informales de una sola ejecución, no comparables entre configuraciones.
-- La diferencia de calidad entre los cinco niveles se sitúa en una banda de ±1 punto porcentual, por lo que la elección de nivel apenas afecta a la precisión medida (salvo HIGHEST en fidelidad de atención, que tampoco lidera claramente en tareas).
-- Requisitos de memoria exigentes para consumo: se necesitan dos GPUs de 16 GB o descarga a CPU; la caché KV con contexto de 256K añade VRAM significativa (no disponible: cifra exacta).
-- NVFP4 rinde de forma nativa solo en Blackwell (sm_120); en arquitecturas anteriores el rendimiento puede degradarse notablemente.
-- Riesgo de alucinación: inherente a cualquier LLM; no hay evaluaciones de seguridad o sesgo publicadas para esta conversión (no disponible).
-- Licencia Apache 2.0: sin restricciones para uso comercial, aunque el modelo base es de NVIDIA y conviene revisar los términos del checkpoint original si se redistribuye.
+- Solo ingles: los metadatos declaran exclusivamente `en`; no se garantiza calidad en otros idiomas.
+- Solo texto: sin torre de vision, sin `mmproj` y sin drafter MTP; no admite entradas de imagen ni audio.
+- Dependencia de hardware Blackwell: la cuantizacion NVFP4 esta disenada para ejecucion nativa en sm_120; en otras arquitecturas el rendimiento puede degradarse o requerir emulacion.
+- Requisito de VRAM: incluso el tier mas pequeno necesita dos GPUs de 16 GB o descarga parcial a CPU; no cabe en una unica GPU consumer de 16 GB.
+- Jitter en benchmarks: el autor advierte que los cinco tiers caen en una banda de ±~1 pp en MMLU, por lo que las diferencias de precision entre tiers no son concluyentes.
+- HIGHEST no lidera en precision de tarea: pese a ser el tier de maxima fidelidad numerica, su MMLU (76,34%) es el mas bajo de los cinco, y su GSM8K agoto el tiempo en ambas ejecuciones.
+- Riesgo de alucinacion: no se dispone de datos especificos sobre tasas de alucinacion en la informacion proporcionada; aplica el riesgo general de los modelos generativos.
+- Sesgos: no se dispone de informacion sobre sesgos conocidos del modelo base en la documentacion proporcionada.
+- Licencia: Apache 2.0 declarada en todos los archivos, lo que permite uso comercial; conviene verificar las condiciones del checkpoint base de NVIDIA.
+- GPQA y KLD-vs-anchor no se midieron, por lo que la evaluacion de conocimiento cientifico y la divergencia respecto al ancla quedan sin cubrir.
 
 ## Enlaces
 
-- Repositorio de la conversión: https://huggingface.co/esatapedico/Gemma-4-31B-IT-NVFP4-GGUF
-- Modelo base (NVIDIA): https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4
-- Sitio del autor (actualizaciones y benchmarks): https://www.esatapedico.com
+- Repositorio Hugging Face: https://huggingface.co/esatapedico/Gemma-4-31B-IT-NVFP4-GGUF
+- Modelo base: https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4
+- Sitio del autor: https://www.esatapedico.com

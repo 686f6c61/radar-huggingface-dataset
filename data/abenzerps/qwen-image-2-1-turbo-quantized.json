@@ -26,9 +26,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 6042,
-  "downloads_30d": 187989,
-  "trending_score": 21,
+  "likes": 6045,
+  "downloads_30d": 197723,
+  "trending_score": 16.5,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
   "storage_bytes": 215111462979,
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Résolu : Pourquoi dois-je m'identifier à chaque connexion s ...",
-      "url": "https://communaute.orange.fr/t5/Ma-connexion/Pourquoi-dois-je-m-identifier-%C3%A0-chaque-connexion-sur-mon-espace/td-p/2489769",
-      "snippet": "Apr 10, 2021 · Bonsoir, depuis plusieurs mois je dois d'identifier à chaque connexion sur ORANGE.. Sur mon PC j'ai déclaré mon …"
-    },
-    {
-      "title": "Résolu : probleme de compte boqué - Communauté Orange",
-      "url": "https://communaute.orange.fr/t5/Webmail-Orange/probleme-de-compte-boqu%C3%A9/td-p/3238600",
-      "snippet": "Jan 20, 2025 · La connexion à votre Livebox est nécessaire Une activité suspecte a été détectée sur votre compte Orange. Par …"
-    },
-    {
-      "title": "Résolu : comment se déconnecter d orange - Communauté Orange",
-      "url": "https://communaute.orange.fr/t5/Mes-services-Orange/comment-se-d%C3%A9connecter-d-orange/td-p/2362826",
-      "snippet": "Nov 13, 2020 · Quand je suis sur mon espace client et que je veux me déconnecter, je clique sur mon nom, le petite fenêtre du post …"
-    },
-    {
-      "title": "Résolu : ou trouver le mot de passe provisoire - Communauté Orange",
-      "url": "https://communaute.orange.fr/t5/Offres-internet-Orange-et/ou-trouver-le-mot-de-passe-provisoire/td-p/3267783",
-      "snippet": "Mar 21, 2025 · Utilisez le mot de passe provisoire communiqué par Orange Il est indiqué sur le document \"Pour accéder à vos …"
-    },
-    {
-      "title": "Résolu : Debloquer mon compte orange - Communauté Orange",
-      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Debloquer-mon-compte-orange/td-p/2719604",
-      "snippet": "Mar 12, 2022 · Bonsoir! Une activité suspecte a été détectée sur mon compte Orange. Par mesure de sécurité et pour protéger mes …"
-    }
-  ]
+  "sources": []
 }

@@ -35,8 +35,8 @@
     "region:us",
     "conversational"
   ],
-  "likes": 7,
-  "downloads_30d": 18902,
+  "likes": 8,
+  "downloads_30d": 18914,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "2025–26 NBA season - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_NBA_season",
-      "snippet": "The 2026 NBA All-Star Game was played on February 15, 2026, at the Intuit Dome in Inglewood, California. [2] The play-in …"
-    },
-    {
-      "title": "2026 NBA Playoffs | Official Site",
-      "url": "https://www.nba.com/playoffs/2026",
-      "snippet": "The official home of the 2026 NBA Playoffs. Get the latest bracket, team news, series match-ups, analysis, highlights and exclusive …"
-    },
-    {
-      "title": "2026 NBA playoffs: Schedule, scores, news and highlights",
-      "url": "https://www.espn.com/nba/story/_/id/48419498/nba-playoffs-2026-play-finals-schedule-scores-news-highlights-bracket-dates",
-      "snippet": "Jun 14, 2026 · The 2026 NBA Finals are wrapped. Here is all the latest news, scores and analysis from Knick-Spurs championship."
-    },
-    {
-      "title": "EVERY HIGHLIGHT From The 2026 NBA Finals - YouTube",
-      "url": "https://www.youtube.com/watch?v=PrObPnSeeag",
-      "snippet": "Jun 14, 2026 · Witness the future of the Memphis Grizzlies with this Cameron Boozer 2026 NBA Draft Swingman Jersey. This Icon …"
-    },
-    {
-      "title": "NBA announces schedule for 2026-27 season - NBA.com",
-      "url": "https://www.nba.com/news/2026-27-nba-regular-season-schedule",
-      "snippet": "Aug 13, 2026 · Below is an overview of the game schedules for Disney, NBCUniversal and Prime Video, along with additional …"
-    }
-  ]
+  "sources": []
 }

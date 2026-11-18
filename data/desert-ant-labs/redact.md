@@ -2,107 +2,105 @@
 
 ## Resumen
 
-Redact es un modelo de detección y redacción de información personal identificable (PII) desarrollado por Desert Ant Labs, diseñado para ejecutarse íntegramente en el dispositivo (on-device) en 27 idiomas. Su objetivo es eliminar nombres, direcciones, correos electrónicos, teléfonos, tarjetas bancarias, IBANs e identificaciones nacionales antes de que los datos salgan del dispositivo, lo que lo hace especialmente relevante para aplicaciones con requisitos estrictos de privacidad y cumplimiento normativo como el GDPR.
+Redact es un modelo de clasificación de tokens especializado en la detección y el enmascarado de información personal identificable (PII) que se ejecuta íntegramente en el dispositivo. Lo desarrolla Desert Ant Labs y se distribuye a través de su SDK propietario desert-ant-core, con pesos publicados en Hugging Face bajo una licencia de código disponible (source-available). El modelo resuelve un problema concreto: eliminar nombres, direcciones, correos, teléfonos, tarjetas, IBAN y documentos nacionales de identidad del texto antes de que este salga del dispositivo, sustituyéndolos por marcadores de posición reversibles que permiten reinyectar los valores originales en la respuesta de un LLM.
 
-Arquitectónicamente combina un clasificador de tokens BIOES con una capa determinista sin dependencias para identificadores estructurados. El modelo desplegable ocupa solo 11,6 MB en la versión de 4 bits para Core ML (Apple) o 24,5 MB en la versión int8 para LiteRT (Android, Linux y web), con 23 millones de parámetros. No es un modelo generativo, sino un clasificador de tokenización, por lo que no tiene ventana de contexto en el sentido habitual de los LLM.
+Técnicamente es un clasificador de tokens de tipo BERT con 23 millones de parámetros, exportado a formatos LiteRT/TFLite (int8, 24,5 MB) y Core ML (4 bits, 11,6 MB). Cubre 27 idiomas europeos y detecta 20 etiquetas de PII mediante una capa híbrida: el modelo neuronal identifica entidades no estructuradas como nombres y direcciones, mientras que una capa de patrones regex y validación por checksum captura identificadores estructurados como correos, tarjetas o IBAN.
 
-Su relevancia actual radica en que permite cumplir con normativas de protección de datos en tiempo real, sin enviar información sensible a servidores externos, y con una huella de memoria mínima que lo hace viable en cualquier dispositivo móvil o navegador.
+Su relevancia actual radica en la combinación de tamaño reducido, cobertura multilingüe amplia y ejecución local sin conexión, lo que lo hace apto para aplicaciones móviles, de escritorio y web que necesitan cumplir con normativas de privacidad (RGPD) sin enviar datos personales a servicios en la nube.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Token classifier BIOES + capa determinista para IDs estructurados |
-| Parametros totales | 23 millones |
+| Arquitectura | Transformer tipo BERT para clasificación de tokens, con capa de patrones complementaria |
+| Parametros totales | 23M |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (clasificacion de tokens) |
-| Tipos de cuantizacion | 4-bit (Core ML), int8 (LiteRT) |
+| Longitud de contexto | Ventanas de 256 tokens con solapamiento de 64 tokens (procesamiento por fragmentos) |
+| Tipos de cuantizacion | int8 (LiteRT/TFLite), 4 bits (Core ML) |
 | Idiomas soportados | 27: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, is, it, lt, lv, mt, nb, nl, nn, pl, pt, ro, sk, sl, sv |
-| Licencia | desert-ant-labs-source-available-1.0 (https://license.desertant.com/1.0) |
-| Formato de pesos | LiteRT (.tflite), Core ML (4-bit) |
+| Licencia | desert-ant-labs-source-available (código disponible, no open source) |
+| Formato de pesos | LiteRT/TFLite (int8), Core ML (4 bits) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de clasificación de tokens basada en el esquema BIOES (Begin, Inside, Outside, End, Singleton), que etiqueta cada token de la secuencia como parte de una entidad PII o fuera de ella. Sobre esta cabecera neuronal se superpone una capa determinista, sin dependencias externas, que valida y extrae identificadores estructurados como números de tarjeta, IBAN, IMEI o direcciones IP mediante reglas de formato. Esta combinación permite alcanzar una alta precisión (99,6% en el conjunto estructurado) sin sacrificar la portabilidad.
+Redact combina dos capas de detección. La primera es un clasificador de tokens basado en arquitectura BERT de 23 millones de parámetros que identifica entidades no estructuradas: nombres propios (GIVEN_NAME, SURNAME), componentes de direcciones (STREET_NAME, BUILDING_NUMBER, SECONDARY_ADDRESS, CITY, STATE, ZIP_CODE) y organizaciones (ORG, detectada pero no enmascarada por defecto). La segunda capa aplica patrones y validaciones por checksum para identificadores estructurados como EMAIL, PHONE, CREDIT_CARD, BANK_ACCOUNT, ROUTING_NUMBER, IP_ADDRESS, URL, GOVERNMENT_ID, PASSPORT, DRIVERS_LICENSE, TAX_ID y SSN, además de IMEI (que solo se marca si pasa el checksum de Luhn y aparece a menos de 32 caracteres de la palabra "IMEI").
 
-No se han publicado detalles sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. La evaluación se realizó sobre los conjuntos WikiANN, MultiNERD y un conjunto propio de PII estructurado con validez de formato, abarcando 24 lenguas de la UE. La cobertura no es uniforme: las lenguas grandes (inglés, español, francés, alemán) muestran mejor rendimiento que las minoritarias (maltés, irlandés).
+El procesamiento de textos largos se realiza mediante fragmentación en ventanas de 256 tokens con solapamiento de 64 tokens, de modo que una entidad en el borde de una ventana se recupera completa. El umbral de confianza por defecto es 0,6 para detecciones del modelo, mientras que las coincidencias de patrones estructurados se aplican siempre. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Detección de 20 tipos de PII: nombres de pila, apellidos, calles, números de edificio, direcciones secundarias, ciudades, estados, códigos postales, correos electrónicos, teléfonos, tarjetas de crédito, cuentas bancarias, números de ruta, direcciones IP, URLs, identificaciones gubernamentales, pasaportes, licencias de conducir, números fiscales y números de seguridad social.
-- Redacción (enmascaramiento) de los tipos anteriores, sustituyéndolos por etiquetas como `[GIVEN_NAME]`, `[EMAIL]`, `[BANK_ACCOUNT]`, etc.
-- Detección de organizaciones (etiqueta `ORG`) sin redacción por defecto, para evitar confundir nombres de empresas con apellidos.
-- Capa determinista adicional que emite la etiqueta `IMEI` para identificadores de dispositivo.
-- Soporte multilingüe en 27 idiomas, cubriendo alfabetos latino, griego y cirílico.
-- Ejecución completamente offline, sin necesidad de conexión a red ni servidores externos.
-- Compatibilidad multiplataforma: iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.js.
+- Detección y enmascarado de 20 etiquetas de PII: nombres, apellidos, direcciones completas, correos, teléfonos, tarjetas de crédito, cuentas bancarias, números de ruta, direcciones IP, URLs, identificadores gubernamentales, pasaportes, permisos de conducir, identificadores fiscales y números de la seguridad social.
+- Reversibilidad: cada entidad se sustituye por un marcador de posición numerado (por ejemplo, `[GIVEN_NAME_1]`) que permite restaurar los valores originales en la respuesta de un LLM mediante el método `restore`.
+- Detección de organizaciones (ORG) sin enmascarado por defecto, configurable mediante la opción `labels`.
+- Filtrado por categoría y ajuste del umbral de confianza mínimo (por defecto 0,6).
+- Soporte multilingüe para 27 idiomas europeos en un único modelo.
+- Ejecución en el dispositivo en iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
+- Integración mediante SDK en Swift, Kotlin y JavaScript/TypeScript.
+- No es un modelo generativo: no produce texto libre, solo clasifica tokens y aplica patrones.
 
 ## Casos de uso
 
-- Anonimización de logs de servidor: integrar Redact en pipelines de registro para eliminar direcciones IP, correos y nombres de usuario antes de almacenar o enviar logs a servicios de análisis, reduciendo el riesgo de fugas de datos.
-- Preprocesamiento de datos para entrenamiento de IA: limpiar conjuntos de texto que contienen información personal antes de usarlos para fine-tuning de modelos, garantizando que los datos de entrenamiento no contengan PII no anonimizada.
-- Filtrado de mensajes en atención al cliente: enmascarar automáticamente datos sensibles en conversaciones de soporte antes de que sean archivadas o compartidas con terceros, cumpliendo con políticas de privacidad.
-- Redacción en tiempo real en editores de texto: integrar el modelo en aplicaciones de notas o formularios para que, mientras el usuario escribe, los datos personales se resalten o se oculten automáticamente, evitando que se envíen accidentalmente.
-- Cumplimiento GDPR en apps móviles: usar Redact en aplicaciones de salud o finanzas para garantizar que los datos personales de los usuarios nunca salgan del dispositivo, incluso si la app envía telemetría o datos de uso.
-- Protección de datos en entornos de mensajería instantánea: aplicar redacción local a los mensajes antes de que sean procesados por servicios de transcripción o análisis en la nube, preservando la privacidad del usuario.
+- Atención al cliente con LLM en la nube: la aplicación redacta el mensaje del usuario en local antes de enviarlo a un proveedor de LLM, y restaura los valores originales en la respuesta. Es adecuado porque el modelo cabe en 11,6-24,5 MB y procesa el texto sin salir del dispositivo, cumpliendo con minimización de datos del RGPD.
+- Aplicaciones móviles de mensajería o correo: integración mediante el SDK Swift o Kotlin para enmascarar automáticamente nombres, correos y teléfonos en el momento de redactar o reenviar un mensaje, sin depender de conectividad.
+- Procesamiento de documentos en escritorio: uso con Node o Linux para limpiar currículums, facturas o formularios antes de almacenarlos en un repositorio o enviarlos a un servicio externo de análisis.
+- Cumplimiento normativo en pipelines de datos: filtrado previo de registros de logs o bases de datos antes de exportarlos a entornos de analítica, aprovechando la detección de IBAN, tarjetas y documentos de identidad mediante la capa de patrones.
+- Extensiones de navegador y aplicaciones web: uso del paquete JavaScript con LiteRT.js para redactar texto en el propio navegador antes de enviarlo a una API, sin instalar software nativo.
+- Anonimización de datasets para investigación: procesamiento por lotes de corpus multilingües en 27 idiomas para eliminar PII antes de publicar o compartir los datos, con la posibilidad de ajustar el umbral de confianza según la sensibilidad del corpus.
+- Enmascarado selectivo por categoría: aplicaciones que solo necesitan ocultar datos financieros (tarjetas, IBAN, cuentas) pueden configurar `labels` para limitar la redacción a esas categorías y reducir falsos positivos en nombres.
 
 ## Benchmarks y rendimiento
 
-La model card incluye dos comparativas. La primera enfrenta a Redact con otros sistemas de detección de PII, puntuados con el mismo harness y en el mismo conjunto de datos (WikiANN, MultiNERD y un conjunto estructurado con formato válido, sobre 24 lenguas de la UE). La segunda compara exclusivamente con AWS Comprehend en inglés, ya que Comprehend rechaza cualquier otro idioma.
+Los datos de la model card comparan Redact con otros sistemas de detección de PII usando el mismo código de evaluación y las mismas filas. La recall se calcula como media macro sobre WikiANN, MultiNERD y un conjunto de PII estructurada con formato válido, en 24 idiomas de la UE.
 
-| Sistema | Recall (%) | Precision (%) | Tamano | Parametros |
+| Sistema | Recall | Precision | Tamano | Parametros |
 |---|---:|---:|---:|---:|
-| **Redact** | **88,8** | **99,6** | **11,6 MB** | **23M** |
+| redact | 88,8 | 99,6 | 11,6 MB | 23M |
 | GLiNER-PII | 91,1 | 90,4 | 2,3 GB | 570M |
 | Rampart | 61,4 | 97,2 | 14,7 MB | 18,5M |
 | OpenAI privacy filter | 60,2 | 93,5 | 3 GB | 1,5B |
 
-Recall se define como la proporción de datos personales completamente enmascarados (a prueba de fugas), promediada macro sobre los tres conjuntos. Precision es la proporción de tramos enmascarados que realmente eran datos personales, medida sobre el conjunto estructurado.
-
-En el conjunto negativo de 11.528 filas diseñado para provocar falsos positivos (mayúsculas iniciales, texto en mayúsculas, nombres de meses y días, vocabulario de interfaz, números sueltos, nombres de empresas), Redact deja intactas el 94,1% de las filas.
-
-Comparativa con AWS Comprehend (solo inglés, mismos datos):
-
-| Sistema | Nombres (WikiANN) | Nombres (MultiNERD) | Estructurado | Compuesto ingles |
-|---|---:|---:|---:|---:|
-| Redact | 69,5 | 94,9 | **95,0** | 86,5 |
-| AWS Comprehend | **84,3** | **98,5** | 91,9 | **91,6** |
-
-Precision es prácticamente idéntica en ambos (99,8 frente a 100,0). Comprehend supera a Redact en nombres en inglés, pero solo cubre un idioma y requiere llamadas a la nube con coste por petición.
+Redact obtiene la precisión más alta de la comparativa (99,6) con el segundo tamaño más reducido, a costa de una recall ligeramente inferior a GLiNER-PII (88,8 frente a 91,1). No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, ya que el modelo no es generativo.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU dedicada; el modelo se ejecuta en CPU. El tamaño en disco es de 11,6 MB (Core ML 4-bit) o 24,5 MB (LiteRT int8).
-- GPU recomendadas: ninguna, funciona en cualquier procesador móvil o de escritorio moderno.
-- Compatibilidad con GPU de consumo: sí, cualquier dispositivo con CPU soporta la inferencia; no necesita aceleración gráfica.
-- Opciones de despliegue: Core ML (Apple), LiteRT (Android, Linux, Windows), WebAssembly (navegador), Node.js (con núcleo nativo precompilado). SDKs disponibles para Swift, Kotlin y JavaScript/TypeScript.
-- Latencia y throughput: no se publican cifras concretas, pero dado el tamaño y la arquitectura, se espera una latencia en el orden de milisegundos por frase en dispositivos móviles modernos.
+- VRAM estimada: no aplica en el sentido habitual; el modelo se ejecuta en CPU o con aceleración NPU/GPU integrada. El peso es de 11,6 MB en Core ML (4 bits) y 24,5 MB en LiteRT (int8).
+- GPU dedicadas: no requiere GPU de escritorio; está diseñado para ejecución en dispositivo (móvil, escritorio, navegador).
+- Cabe en cualquier dispositivo consumer: móviles iOS y Android, ordenadores de sobremesa y portátiles, e incluso en el navegador mediante LiteRT.js.
+- Opciones de despliegue: SDK desert-ant-core en Swift, Kotlin y JavaScript/TypeScript; LiteRT/TFLite para Android, Linux, Windows, Node y web; Core ML para plataformas Apple. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, ya que no es un modelo generativo.
+- Latencia y throughput: no disponibles en la información proporcionada. El procesamiento se realiza por ventanas de 256 tokens con solapamiento de 64, lo que condiciona el coste en textos largos.
 
 ## Comparativa con modelos similares
 
-La tabla de benchmarks ya incluye comparación con GLiNER-PII (570M parámetros, 2,3 GB), Rampart (18,5M, 14,7 MB) y OpenAI privacy filter (1,5B, 3 GB). Redact ofrece el mejor equilibrio entre precisión y tamaño: con 23M parámetros y 11,6 MB, alcanza una precisión del 99,6%, superando a todos los demás, aunque su recall (88,8%) es inferior al de GLiNER-PII (91,1%). Frente a Rampart, Redact mejora el recall en más de 27 puntos porcentuales con un coste de solo 5 MB adicionales. En comparación con AWS Comprehend, Redact es inferior en nombres en inglés pero superior en datos estructurados, y cubre 27 idiomas frente a uno solo.
-
-| Modelo | Parametros | Tamano | Recall | Precision | Idiomas | Licencia |
+| Modelo | Parametros | Recall | Precision | Tamano | Licencia | Ejecucion local |
 |---|---:|---:|---:|---:|---|---|
-| Redact | 23M | 11,6 MB | 88,8 | 99,6 | 27 | Source-available |
-| GLiNER-PII | 570M | 2,3 GB | 91,1 | 90,4 | Multi (no especificado) | No disponible |
-| Rampart | 18,5M | 14,7 MB | 61,4 | 97,2 | Multi (no especificado) | No disponible |
-| OpenAI privacy filter | 1,5B | 3 GB | 60,2 | 93,5 | Ingles (principal) | Propietaria |
+| redact | 23M | 88,8 | 99,6 | 11,6 MB | source-available | Si (Core ML, LiteRT) |
+| GLiNER-PII | 570M | 91,1 | 90,4 | 2,3 GB | no disponible | Si, pero requiere más recursos |
+| Rampart | 18,5M | 61,4 | 97,2 | 14,7 MB | no disponible | Si |
+| OpenAI privacy filter | 1,5B | 60,2 | 93,5 | 3 GB | no disponible | No disponible |
+
+Redact se posiciona como la opción con mejor equilibrio entre precisión, tamaño y portabilidad multiplataforma. GLiNER-PII ofrece mayor recall pero con un modelo 25 veces más grande y menor precisión. Rampart y el filtro de OpenAI tienen tamaños muy superiores o prestaciones inferiores en recall.
 
 ## Limitaciones y advertencias
 
-- El recall es del 88,8%, lo que significa que aproximadamente uno de cada diez datos personales puede no ser detectado. Para aplicaciones críticas de seguridad, se recomienda combinar con otras capas de verificación.
-- La cobertura lingüística no es uniforme: las lenguas mayoritarias de la UE (inglés, español, francés, alemán) ofrecen mejor rendimiento que las minoritarias (maltés, irlandés). El modelo puede fallar más a menudo en estos idiomas.
-- La etiqueta `ORG` se detecta pero no se redacta por defecto, ya que una empresa no es una persona natural. Si se necesita redactar organizaciones, hay que activarla explícitamente en la configuración del SDK.
-- La licencia es source-available (desert-ant-labs-source-available-1.0), no una licencia open source tradicional. Es necesario revisar los términos en https://license.desertant.com/1.0 para usos comerciales.
-- No se han publicado detalles sobre sesgos potenciales del modelo ni sobre su comportamiento con dialectos o variantes regionales. La evaluación cubre lenguas estándar, por lo que el rendimiento con jerga local o transliteraciones puede degradarse.
-- El modelo está pensado para redacción, no para extracción o análisis posterior: enmascara los datos pero no los estructura ni los categoriza más allá de la etiqueta.
+- La licencia desert-ant-labs-source-available no es open source; es necesario revisar los términos en https://license.desertant.com/ antes de un uso comercial.
+- La recall del 88,8 % implica que aproximadamente una de cada nueve entidades de PII podría no enmascararse por completo; en entornos de alto riesgo conviene complementar con revisión humana o capas adicionales.
+- El umbral de confianza por defecto (0,6) puede dejar pasar detecciones de baja confianza; en dominios sensibles conviene ajustarlo.
+- El modelo no enmascara organizaciones (ORG) por defecto, lo que puede ser un problema si la política de privacidad exige ocultar también nombres de empresas.
+- La detección de IMEI depende de una heurística (checksum de Luhn y proximidad a la palabra "IMEI"), por lo que puede fallar en formatos no convencionales.
+- El procesamiento por ventanas de 256 tokens con solapamiento de 64 puede fragmentar entidades muy largas o con formato atípico.
+- No se dispone de información sobre sesgos por idioma o dominio; la cobertura de 27 idiomas europeos no garantiza el mismo rendimiento en todos ellos.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí de falsos positivos y falsos negativos en la clasificación.
+- La licencia y los términos de uso pueden cambiar; la model card indica que se genera desde el repositorio desert-ant-core y que las ediciones en Hugging Face se sobrescriben.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/redact
-- Pagina del producto: https://desertant.com/models/redact/
-- Repositorio GitHub (redirige al monorepo): https://github.com/Desert-Ant-Labs/redact
-- Documentacion del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/redact.md
-- Demo en vivo: https://huggingface.co/spaces/desert-ant-labs/redact-demo
-- Licencia: https://license.desertant.com/1.0
+- Pesos v0.4.2: https://huggingface.co/desert-ant-labs/redact/tree/v0.4.2
+- Demo interactiva: https://huggingface.co/spaces/desert-ant-labs/redact-demo
+- Demo del producto: https://desertant.com/models/redact/
+- Repositorio desert-ant-core: https://github.com/Desert-Ant-Labs/desert-ant-core
+- Licencia: https://license.desertant.com/
+- Requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
+- Requisitos JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Descargas y caché del modelo: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching

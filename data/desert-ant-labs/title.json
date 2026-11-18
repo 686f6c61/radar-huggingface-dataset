@@ -27,8 +27,8 @@
     "6-bit",
     "region:us"
   ],
-  "likes": 13,
-  "downloads_30d": 31935,
+  "likes": 14,
+  "downloads_30d": 32040,
   "trending_score": 0,
   "parameters": 352379904,
   "parameters_human": "352.4M",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "desert-ant-labs/title · Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs/title",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Desert Ant Labs: On-device AI models and SDKs",
-      "url": "https://desertant.com/",
-      "snippet": "Desert Ant Labs is a frontier AI lab for on-device models that run on Apple, Android and the web, in a few lines of native code."
-    },
-    {
-      "title": "desert-ant-labs/title at main - Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs/title/tree/main",
-      "snippet": "705 MB xet Restructure to the Desert Ant model layout: title.pt at root, MLX build as a named variantabout 4 hours ago tokenizer.json Safe 7.15 MBAdd MLX 6-bit build, PyTorch source, and licensingabout 5 hours ago tokenizer_config.json Safe 393 BytesRestructure to the Desert Ant model layout: title.pt at root, MLX build as a named variantabout ..."
-    },
-    {
-      "title": "Desert Ant Labs - GitHub",
-      "url": "https://github.com/Desert-Ant-Labs",
-      "snippet": "Desert Ant Labs is a European AI lab building small, opinionated on-device models."
-    },
-    {
-      "title": "GitHub - Desert-Ant-Labs/desert-ant-core: On-device AI SDKs for iOS ...",
-      "url": "https://github.com/Desert-Ant-Labs/desert-ant-core/tree/main",
-      "snippet": "On-device AI SDKs for iOS, macOS, Android, and the web. Small, focused models that run fully offline in Swift, Kotlin, and JavaScript with Core ML, LiteRT, and WebAssembly. - Desert-Ant-Labs/desert..."
-    }
-  ]
+  "sources": []
 }

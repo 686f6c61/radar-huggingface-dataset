@@ -43,7 +43,7 @@
     "region:us"
   ],
   "likes": 229,
-  "downloads_30d": 17335,
+  "downloads_30d": 18062,
   "trending_score": 11,
   "parameters": 1479454868,
   "parameters_human": "1.48B",
@@ -66,29 +66,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Career Code Test - IDRlabs",
-      "url": "https://www.idrlabs.com/career-code/test.php",
-      "snippet": "This Career Code Test is based on the popular Holland Codes, which are widely used in career counseling across the United States …"
-    },
-    {
-      "title": "Free Career Quiz - Find Your Holland Code & Discover the Right",
-      "url": "https://www.truity.com/test/holland-code-career-test",
-      "snippet": "Free career quiz uses the respected Holland Code system to show you which jobs will suit your interests, talents, and aptitude. Get …"
-    },
-    {
-      "title": "RIASEC Test — Free Holland Code Career Assessment (2026)",
-      "url": "https://my-career-path.com/riasec-test.html",
-      "snippet": "Our test calculates your unique three-letter Holland Code and matches it against a database of over 500 careers to find your optimal …"
-    },
-    {
-      "title": "Career Aptitude Test | Free Quiz to Find the Right Career for Me - Truity",
-      "url": "https://www.truity.com/test/career-personality-profiler-test",
-      "snippet": "Test your career aptitude, job interests, and personality traits to find the right job for you. This free career assessment takes only 15 …"
-    },
-    {
-      "title": "Career test - Fast Free Career Aptitude Test - 123test.com",
-      "url": "https://www.123test.com/career-test/",
-      "snippet": "May 17, 2024 · What career best fits your personality? This bias free career aptitude test gives you insight into your job personality. …"
+      "title": "如何将整个wikipedia导出成一个纯文本文件?",
+      "url": "https://www.zhihu.com/question/21425170",
+      "snippet": "jwpl - Java-based Wikipedia Library -- An application programming interface for Wikipedia ，提供了API，可以直接由给定的词条名导 …"
     }
   ]
 }

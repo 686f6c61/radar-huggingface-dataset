@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 63,
-  "downloads_30d": 5451,
+  "downloads_30d": 5489,
   "trending_score": 13,
   "parameters": 8871306016,
   "parameters_human": "8.87B",
@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Les cinémas Pathé",
-      "url": "https://client.cinemaspathegaumont.com/moncompte",
-      "snippet": "Accédez à votre compte client pour gérer vos réservations, abonnements et préférences chez les cinémas Pathé Gaumont.Read more"
-    },
-    {
-      "title": "Les Cinémas Pathé Gaumont",
-      "url": "https://jeuxconcours.cinemaspathegaumont.com/quiz/747372_1233/Disneyland-Paris.html",
-      "snippet": "Les Cinémas Pathé Gaumont Les Cinémas Pathé Gaumont © — Tous droits réservés ®"
-    },
-    {
-      "title": "Les Cinémas Pathé Gaumont",
-      "url": "https://jeuxconcours.cinemaspathegaumont.com/quiz/996661_1233/Dolby-Cinema-Noel.html",
-      "snippet": "Désolé, cette campagne n'est plus disponible. Les Cinémas Pathé Gaumont © — Tous droits réservés ®"
-    },
-    {
-      "title": "Location Salle Séminaire Paris | PATHÉ BUSINESS",
-      "url": "https://www.location.cinemaspathegaumont.com/seminaire-paris",
-      "snippet": "Vous recherchez une location de salle de séminaire à Paris alliant confort, technologie et prestige ? Découvrez les salles Pathé …"
-    },
-    {
-      "title": "Pathé Business | Location salle de cinéma pour séminaire et …",
-      "url": "https://www.location.cinemaspathegaumont.com/en",
-      "snippet": "Louer une salle dans les Cinémas Pathé à Paris et partout en France pour vos évènements d'entreprises sur mesure : séminaire, …"
-    }
-  ]
+  "sources": []
 }

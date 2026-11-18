@@ -2,90 +2,94 @@
 
 ## Resumen
 
-Este repositorio contiene una familia de seis archivos GGUF del modelo `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`, un ajuste fino de Qwen3.8-27B realizado por DavidAU. El modelo base es un transformer denso de 27B parametros con arquitectura hibrida (Gated DeltaNet y Gated Attention), 262K tokens de contexto nativo, un cabezal MTP (Multi-Token Prediction) integrado para decodificacion especulativa y una torre de vision nativa. El trabajo de esatapedico se limita a la conversion numerica: transformo el checkpoint NVFP4 a GGUF y construyo una escalera de precision para los tensores que mas afectan a la calidad de salida y la velocidad de decodificacion (lm_head, embeddings y cabezal MTP), manteniendo un backbone NVFP4 identico en todos los archivos.
+Este repositorio contiene una familia de ocho ficheros GGUF cuantizados a partir del modelo `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`, un ajuste fino de 27.320.698.112 parámetros sobre una base Qwen3.8-27B. El trabajo de conversión y escalado de precisión lo firma el usuario `esatapedico`, mientras que el modelo original y su entrenamiento corresponden a DavidAU. El interés técnico inmediato está en que combina cuantización NVFP4 (W4A16 con escalas FP8, grupo de 16, solo pesos) con un cabezal MTP de decodificación especulativa embebido en cada fichero, lo que permite acelerar la generación sin necesidad de un drafter separado.
 
-La relevancia de este lanzamiento radica en que ofrece un modelo de 27B con cuantizacion NVFP4 (W4A16) nativa para hardware Blackwell (sm_120), con decodificacion especulativa MTP integrada en cada archivo, lo que permite ejecutar un modelo de alta capacidad en GPUs de consumo con una sola tarjeta de 16 GB en los niveles mas bajos. La licencia Apache 2.0 permite uso comercial sin restricciones.
+La arquitectura de partida es un transformer denso híbrido: Gated DeltaNet combinado con Gated Attention cada cuarta capa, contexto nativo de 262.144 tokens, torre de visión nativa y cabezal MTP de predicción multi-token. El autor describe el modelo como un tune TURBO 735/882 con capas de mezcla Heretic y DPO, orientado a generación conversacional sin restricciones de contenido. La licencia declarada es Apache 2.0.
 
-## Especificaciones tecnicas
+La relevancia práctica reside en la escalera de precisión: siete de los ocho ficheros comparten un backbone NVFP4 nativo de 448 tensores byte a byte idéntico, diferenciándose únicamente en la precisión de `lm_head`, `token_embd` y el cabezal MTP. Eso permite elegir entre 15,15 GB y 21,28 GB según la VRAM disponible, manteniendo el mismo cómputo de capas lineales. El objetivo declarado es hardware Blackwell (sm_120).
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido denso: Gated DeltaNet (linear attention) en 48 de 64 capas, Gated Attention en las 16 restantes (cada cuarta capa) |
-| Parametros totales | 27B (aproximadamente 28B contando el encoder de vision de ~1B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens nativos, extensible a 1M |
-| Tipos de cuantizacion | NVFP4 (W4A16, grupo 16, escalas FP8 E4M3) para el backbone; lm_head, token_embd y MTP head varian por nivel: Q2_K, Q3_K, Q5_0, Q6_K, Q8_0, IQ4_XS o BF16 |
-| Idiomas soportados | Ingles, multilingue |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (6 niveles), safetensors (NVFP4, repositorio hermano) |
+| Arquitectura | Transformer denso híbrido: Gated DeltaNet + Gated Attention cada cuarta capa, con torre de visión nativa y cabezal MTP |
+| Parámetros totales | 27.320.698.112 |
+| Parámetros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens nativos |
+| Tipos de cuantización | NVFP4 (W4A16, escalas FP8, grupo 16, solo pesos) en capas lineales; Q2_K, Q3_K, Q4_K, Q5_0, Q6_K, Q8_0, IQ4_XS y BF16 en cabezales según tier |
+| Idiomas soportados | en, multilingual |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (8 tiers, 1.122 tensores, `block_count` 65, `nextn_predict_layers` 1); repo hermano con safetensors comprimidos NVFP4 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso de 64 capas con hidden size 5.120 y un vocabulario de 248.320 tokens. Su arquitectura hibrida combina 48 capas de Gated DeltaNet (linear attention) con 16 capas de Gated Attention intercaladas (cada cuarta capa), lo que reduce el coste computacional del atencion sobre contextos largos. Incluye una torre de vision nativa (~1B parametros) y un cabezal MTP integrado que permite decodificacion especulativa sin necesidad de un modelo drafter externo.
+El modelo base es un transformer denso de 27B parámetros que alterna capas de Gated DeltaNet (atención lineal con estado recurrente) con capas de Gated Attention cada cuarta capa, un patrón híbrido que reduce el coste de atención en contextos largos manteniendo capacidad de recuperación exacta. Incluye una torre de visión nativa, por lo que acepta entradas multimodales, y un cabezal MTP (multi-token prediction) de una capa (`nextn_predict_layers` 1) que actúa como drafter interno para decodificación especulativa.
 
-El ajuste fino de DavidAU, denominado TURBO 735-882, combina tres tecnicas: un merge "Fable" y "Cold Fusion" sobre el modelo base, y un ajuste "Heretic/Uncensored" con capas DPO. Segun el autor, este ajuste supera los 730 puntos en ARC-c (144 puntos por encima del Qwen3.8-27B original) y los 880 en ARC-E en cuantizacion de 8 bits. La torre de vision del modelo original se mantiene intacta en el ajuste.
-
-La conversion a NVFP4 se realizo sin calibracion, manteniendo en BF16 la torre de vision, la ruta de atencion lineal, lm_head, embeddings y cabezal MTP en la fuente de cuantizacion. Los archivos GGUF contienen 1.122 tensores, de los cuales 448 forman el backbone NVFP4 identico en todos los niveles.
+El ajuste TURBO 735/882 de DavidAU combina, según la model card, técnicas de Fable y Cold Fusion junto con capas de mezcla Heretic y DPO orientadas a eliminar restricciones de contenido. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni los detalles del pipeline de RLHF/DPO más allá de la mención a capas DPO. La innovación técnica destacable del repositorio es la cuantización NVFP4 nativa con escalas FP8 por grupo de 16, manteniendo en BF16 en origen la torre de visión, la ruta de atención lineal, `lm_head`, embeddings y cabezal MTP, y la preservación del cabezal MTP en todos los ficheros para habilitar `--spec-type draft-mtp` en llama.cpp.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento complejo en contextos de hasta 262K tokens nativos.
-- Razonamiento multi-paso y capacidades de agente gracias al entrenamiento del modelo base Qwen3.8.
-- Soporte de tool calling y function calling (heredado del modelo base).
-- Capacidades de vision: el modelo incluye una torre de vision nativa que puede usarse con el proyector `mmproj-BF16.gguf` del modelo base.
-- Decodificacion especulativa MTP integrada en todos los archivos GGUF, activable con `--spec-type draft-mtp` en llama.cpp.
-- Multilingue, con soporte principal de ingles y capacidades multilingue del modelo base.
-- Modo "uncensored" y "heretic" del ajuste de DavidAU, que reduce restricciones de seguridad en la generacion.
+- Generación de texto conversacional multi-turno con ventana de 262.144 tokens.
+- Razonamiento y matemáticas, heredados del modelo base Qwen3.8-27B (sin métricas publicadas en la información disponible).
+- Generación de código, sujeta a la calidad del tune subyacente; no se documentan evaluaciones específicas.
+- Procesamiento de visión mediante la torre nativa, emparejada con el proyector de visión original de Qwen3.8.
+- Decodificación especulativa integrada mediante cabezal MTP embebido, sin drafter externo.
+- Capacidades multilingües declaradas (`en`, `multilingual`), sin desglose por idioma.
+- Modo conversacional (`conversational`) y compatibilidad con endpoints.
+- Comportamiento "uncensored" por el tune Heretic/DPO: menor rechazo a peticiones que los modelos alineados estándar.
+- No se documenta soporte explícito de tool calling ni de flujos de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Asistentes de codigo en produccion: el modelo soporta tool calling y puede integrarse en pipelines de CI/CD para generacion, revision y autocompletado de codigo, con la ventaja de su ventana de contexto de 262K tokens para proyectos grandes.
-- Analisis de documentos extensos: con 262K tokens de contexto nativo, puede procesar libros completos, expedientes legales o documentacion tecnica extensa en una sola pasada, resumiendo y extrayendo informacion clave.
-- Razonamiento cientifico y matematico: el ajuste TURBO 735-882 reporta mejoras significativas en ARC-c y ARC-E, lo que lo hace adecuado para tareas de razonamiento cientifico, resolución de problemas matematicos y analisis de datos.
-- Agentes autonomos multi-paso: combinando tool calling, razonamiento y la decodificacion especulativa MTP, puede ejecutar tareas complejas de varios pasos con menor latencia, como automatizacion de flujos de trabajo o navegacion web asistida.
-- Vision-language en local: al emparejar el GGUF con el proyector de vision del modelo base, se pueden construir aplicaciones de captioning, VQA o analisis de imagenes en hardware de consumo.
-- Despliegue en edge con GPU Blackwell: la cuantizacion NVFP4 nativa para sm_120 permite ejecutar el modelo en GPUs como RTX 5090 o B200 con menor uso de VRAM y mayor throughput que cuantizaciones genericas.
+- Despliegue en una sola GPU de 16 GB: los tiers `LOW` (15,75 GB) y `VERY-LOW` (15,15 GB) caben en tarjetas consumer de 16 GB, permitiendo servir un modelo de 27B con contexto largo en hardware de gama alta doméstica.
+- Inferencia acelerada en Blackwell: los ficheros NVFP4 con MTP embebido están pensados para sm_120, de modo que un RTX 50-series puede ejecutar decodificación especulativa nativa y aprovechar los núcleos FP4.
+- Asistentes conversacionales de contexto largo: con 262.144 tokens se pueden mantener conversaciones con documentación extensa adjunta sin truncar, usando el tier `MID-HIGH` (16,91 GB) para el mejor equilibrio precisión/velocidad en split de doble GPU.
+- Procesamiento de documentos con imagen: la torre de visión nativa permite tareas de extracción y descripción sobre capturas, escaneos o diagramas, siempre que se empareje con el proyector de visión original de Qwen3.8.
+- Investigación sobre cuantización: la escalera de ocho tiers con backbone idéntico permite medir el impacto aislado de la precisión de `lm_head`, embeddings y cabezal MTP sobre la perplejidad y la tasa de aceptación especulativa.
+- Generación creativa sin filtros: el tune Heretic/Uncensored está orientado a escritura de ficción y contenido que los modelos alineados rechazan; requiere revisión humana por las implicaciones legales y de seguridad.
+- Evaluación comparativa de decodificación especulativa: al incorporar el cabezal MTP en todos los ficheros, sirve para medir la ganancia de throughput de `draft-mtp` frente a generación autoregresiva estándar en llama.cpp.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor del ajuste (DavidAU) menciona en repositorios relacionados que el modelo supera los 730 puntos en ARC-c y 880 en ARC-E en 8 bits, y 718 en ARC-c en 4 bits, pero estos datos no estan verificados en la documentacion de este repositorio GGUF. No se proporcionan resultados de MMLU, HumanEval, GSM8K u otros benchmarks estandar en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los archivos GGUF pesan entre 15,15 GB (VERY-LOW) y 19,33 GB (VERY-HIGH) en decimal. El nivel VERY-HIGH requiere aproximadamente 18 GiB de VRAM solo para pesos, mas el espacio para KV cache, por lo que una GPU de 16 GB necesitara offload a CPU.
-- GPUs recomendadas: el formato NVFP4 esta optimizado para hardware Blackwell (sm_120), como RTX 5090, B200 o GPUs de datacenter Blackwell. En GPUs de generaciones anteriores, el rendimiento puede verse penalizado.
-- GPUs de consumo: los niveles LOW y VERY-LOW (15,15-15,75 GB) pueden caber en una RTX 4090 de 24 GB o en GPUs de 16 GB con offload parcial. El nivel MID-HIGH (16,91 GB) es el recomendado por el autor para doble GPU.
-- Opciones de despliegue: llama.cpp con soporte para NVFP4 y MTP (`--spec-type draft-mtp`), vLLM para el checkpoint safetensors NVFP4, y LM Studio con soporte Day 0 para AMD Ryzen AI Max y Radeon.
-- Latencia y throughput: no se proporcionan datos medidos. La decodificacion especulativa MTP integrada deberia reducir la latencia por token en comparacion con decodificacion autoregresiva estandar, especialmente en hardware Blackwell.
+- VRAM estimada por tier (según la model card, sin contar KV cache): `VERY-LOW` 15,15 GB, `COMPACT-LOW` 15,16 GB, `LOW` 15,75 GB, `MEDIUM` 16,60 GB, `MID-HIGH` 16,91 GB, `HIGH` 17,83 GB, `VERY-HIGH` 19,33 GB (≈18 GiB más KV), `HIGHEST` 21,28 GB (≈19,82 GiB más KV).
+- GPU recomendadas: Blackwell sm_120 para aprovechar NVFP4 nativo; RTX 5090 o GPUs de 24 GB para los tiers altos; A100/H100 solo si se dispone de soporte de kernels NVFP4 en el runtime elegido.
+- Cabe en consumer GPU: sí, los tiers `LOW`, `VERY-LOW` y `COMPACT-LOW` en tarjetas de 16 GB; `MID-HIGH` y `HIGH` en 24 GB; `VERY-HIGH` y `HIGHEST` requieren split de doble GPU o 24 GB con margen para KV.
+- Los tiers `BUDGET` (14,72 GB) y `STARVED` (14,59 GB) del repo hermano, sin MTP, caben en 16 GB con más holgura.
+- Opciones de despliegue: llama.cpp (soporte de `--spec-type draft-mtp`), Ollama y cualquier runtime compatible con GGUF; el repo safetensors NVFP4 requiere vLLM o TGI con soporte de compressed-tensors NVFP4.
+- Latencia y throughput: no disponibles. La model card anticipa que `MID-HIGH` ofrece la decodificación compacta más rápida en split de doble GPU, sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | BF16, GGUF | Apache 2.0 | Modelo base de Alibaba, sin ajuste |
-| Qwen3.8-27B-TURBO-Fable-Cold-Fusion (este) | 27B | 262K | NVFP4, GGUF | Apache 2.0 | Ajuste de DavidAU con mejoras ARC, uncensored |
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4-GGUF | 27B | 262K | NVFP4, GGUF | Apache 2.0 | Otro ajuste del mismo autor de la conversion, variante GAIN |
+| Este modelo (Qwen3.8-27B TURBO Fable Cold Fusion Heretic, GGUF NVFP4) | 27,32B | 262.144 | NVFP4 + Q2_K a BF16 por tier | Apache 2.0 | GGUF, 8 tiers, 138,9 GB de repo |
+| Modelo base DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU | 27,32B | 262.144 | safetensors NVFP4 | Apache 2.0 (según este repo) | safetensors |
+| Qwen3.8-27B original | 27B (aproximado, no confirmado) | 262.144 (según la model card) | BF16 y cuantizaciones estándar | no disponible en la información | no disponible en la información |
+| Variantes BUDGET/STARVED del mismo autor | 27,32B | 262.144 | NVFP4 + Q3_K/Q2_K, sin MTP | Apache 2.0 | GGUF, 14,59-14,72 GB |
 
-La comparativa con otros modelos de 27B como Llama 3.3 70B o Mistral Large no es directa por diferencia de tamano. Dentro de la familia Qwen3.8-27B, este ajuste se diferencia por el merge TURBO 735-882 y el caracter uncensored, mientras que la conversion NVFP4 aporta eficiencia en hardware Blackwell.
+No se dispone de datos de benchmarks que permitan comparar rendimiento real frente a alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El caracter "uncensored" y "heretic" del ajuste implica que el modelo puede generar contenido que otros modelos rechazarian, incluyendo contenido ofensivo, ilegal o peligroso. No es adecuado para aplicaciones donde se requiera moderacion de contenido sin capas adicionales de filtrado.
-- Los datos de rendimiento (ARC 735/882) provienen del autor del ajuste y no estan verificados de forma independiente en este repositorio.
-- La cuantizacion NVFP4 esta optimizada para hardware Blackwell (sm_120). En GPUs de generaciones anteriores (Ampere, Ada Lovelace), el rendimiento puede ser significativamente peor que con cuantizaciones estandar como Q4_K_M o Q8_0.
-- El nivel VERY-LOW sacrifica precision en lm_head, embeddings y MTP head (Q2_K/Q3_K), lo que puede degradar notablemente la calidad de salida y la coherencia en tareas complejas.
-- La torre de vision requiere el proyector `mmproj-BF16.gguf` del modelo base, que no se incluye en este repositorio.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un lanzamiento reciente sin validacion de la comunidad.
-- La fecha de creacion del repositorio (2026-09-02) es posterior a la fecha de publicacion del modelo base (2026-08-14), por lo que es un lanzamiento muy reciente.
+- Modelo "uncensored" afinado con capas Heretic/DPO: puede producir contenido que otros modelos rechazan; requiere moderación externa y revisión humana en producción.
+- Riesgo de alucinación no cuantificado: no hay benchmarks publicados que permitan estimar la tasa de error factual.
+- La cuantización NVFP4 en capas lineales introduce pérdida de precisión respecto al original; los tiers bajos degradan además `lm_head` y embeddings a Q2_K/Q3_K, lo que afecta a la calidad de muestreo del vocabulario.
+- El soporte NVFP4 depende de kernels específicos (Blackwell sm_120); en GPUs anteriores el rendimiento puede degradarse o requerir fallback.
+- Los tiers `VERY-HIGH` y `HIGHEST` exigen unos 18-20 GiB de VRAM más KV cache; en tarjetas de 16 GB se produce offload a CPU y caída de throughput.
+- El cabezal MTP consume VRAM adicional y su tasa de aceptación no está documentada; los tiers BUDGET/STARVED lo eliminan para ahorrar memoria.
+- Idiomas: solo se declaran `en` y `multilingual` sin desglose; el rendimiento en castellano no está verificado.
+- Licencia Apache 2.0 declarada, pero la cadena de modelos base y los términos del tune original deberían verificarse antes de uso comercial.
+- Repositorio de 138,9 GB: la descarga completa es costosa; conviene bajar solo el tier necesario.
+- No se documenta soporte de tool calling ni de agentes multi-paso, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-GGUF
 - Repositorio safetensors NVFP4: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4
-- Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
-- Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
-- Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
-- Informacion del lanzamiento de Qwen3.8-27B: https://www.llm-releases.com/models/qwen3-8-27b
-- Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
-- Repositorio relacion del mismo autor: https://huggingface.co/esatapedico/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4-GGUF
-- Soporte del autor: https://ko-fi.com/esatapedico
+- Repositorio BUDGET GGUF: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-BUDGET-GGUF
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Sitio del autor de la conversión: https://www.esatapedico.com

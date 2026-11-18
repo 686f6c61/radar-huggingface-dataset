@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "preshanth09/support-ticket-classifier",
+  "slug": "preshanth09-support-ticket-classifier",
+  "author": "preshanth09",
+  "url": "https://huggingface.co/preshanth09/support-ticket-classifier",
+  "created_at": "2026-11-18T07:10:34.000Z",
+  "updated_at": "2026-11-18T07:32:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "dataset:Tobi-Bueck/customer-support-tickets",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:quantized:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109489930,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1095641481,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,113 +2,119 @@
 
 ## Resumen
 
-H2O Lightning 4B GGUF es la distribución en formato GGUF del modelo h2oai/h2o-lightning-4b, publicada por H2O.ai. No se trata de una simple conversión de pesos: el paquete incorpora un runtime de decisión específico construido sobre llama.cpp, junto con un shim que expone una API de decisión con salidas nombradas (`choice`), booleanas (`noul`) y probabilidades ordenadas (`score`). El modelo base es un transformer denso de aproximadamente 4.205.751.296 parámetros (unos 4,2 mil millones), entrenado para tareas de decisión estructurada sobre texto e imágenes.
+H2O Lightning 4B GGUF es la distribucion cuantizada en formato GGUF del modelo H2O-Lightning-4B, desarrollado por H2O.ai. Se trata de un modelo de decision multimodal (image-text-to-text) disenado especificamente para emitir decisiones tipadas con probabilidades asociadas, no para generacion de texto libre. El modelo responde con opciones nombradas (`choice`), valores booleanos (`noul`), niveles ordenados (`score`) y cajas delimitadoras en imagenes (`box`).
 
-La relevancia de esta entrega está en que empaqueta pesos ya fusionados con el adaptador de decisión, de modo que no es posible desactivarlo para recuperar el modelo base original. Incorpora además un proyector de visión opcional (0,67 GB) que habilita decisiones sobre imágenes en modo rápido, mientras que el modo razonado es solo texto. El repositorio ocupa 29,6 GB e incluye variantes en BF16, Q8_0, Q5_K_M, Q4_K_M, IQ2_XXS e IQ1_M.
+La relevancia del modelo radica en su enfoque: en lugar de producir texto generativo, devuelve decisiones estructuradas y calibradas, lo que lo hace adecuado para sistemas de automatizacion donde se requiere una respuesta categorica con un grado de confianza cuantificado. Segun la model card, el modelo base BF16 lidera el ranking compuesto de ImageJevBench v0.3.0 entre modelos open-weight de su clase (#1 de 46) y ocupa la segunda posicion en las categorias de Intelligence y Capability.
 
-Según la información disponible, el modelo base maneja una ventana de contexto de 262.144 tokens, aunque el despliegue con llama.cpp incluido en este paquete limita la ejecución a una única ranura de 40.960 tokens, con truncado cabeza/cola del texto de estado a 32.000 tokens. La licencia es Apache 2.0.
+El repositorio GGUF ofrece seis niveles de cuantizacion, desde BF16 (8,42 GB) hasta IQ3_XXS (1,90 GB), con una degradacion de calidad medida y acotada: el archivo Q8_0 reproduce el 99,6% de las respuestas del BF16 y obtiene una puntuacion en el Decision Index estadisticamente indistinguible de la referencia. Esto permite desplegar el modelo en hardware de consumo con perdida minima de fidelidad en las decisiones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (según el modelo base h2oai/h2o-lightning-4b), con runtime de decisión sobre llama.cpp |
-| Parametros totales | 4.205.751.296 (unos 4,2 mil millones) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Modelo base: 262.144 tokens (según fuente externa); despliegue llama.cpp incluido: una ranura de 40.960 tokens; texto de estado limitado a 32.000 tokens con truncado cabeza/cola |
-| Tipos de cuantizacion | BF16 (8,42 GB), Q8_0 (4,48 GB), Q5_K_M (3,07 GB / 3,82 GB con embeddings BF16), Q4_K_M (2,71 GB / 3,46 GB con embeddings BF16), IQ2_XXS (1,54 GB), IQ1_M (1,43 GB); proyector de visión (0,67 GB) |
-| Idiomas soportados | No disponible |
+| Arquitectura | no disponible (etiqueta `qwen3_5` en la model card; transformer multimodal image-text-to-text) |
+| Parametros totales | 4.205.751.296 (4,2 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16, Q8_0, Q5_K_M, Q4_K_M, mixed-IQ3_XXS, IQ3_XXS |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (libreria llama-cpp); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de aproximadamente 4,2 mil millones de parámetros orientado a decisiones estructuradas, taggeado en Hugging Face como `decision-model`. Esta variante GGUF emplea pesos con el adaptador de decisión ya fusionado, lo que implica una diferencia funcional importante: los archivos no permiten recuperar el modelo base original desactivando dicho adaptador. El entrenamiento y los benchmarks generales se describen en la model card del modelo base, no en este paquete.
+La model card del repositorio GGUF no detalla la arquitectura interna ni el proceso de entrenamiento, remitiendo a la pagina del modelo base (h2oai/h2o-lightning-4b). La etiqueta `qwen3_5` sugiere una base derivada de la familia Qwen, y la pipeline `image-text-to-text` confirma que se trata de un modelo multimodal que procesa imagenes y texto. El dato de parametros totales (4,2 mil millones) procede de los safetensors del modelo base.
 
-La innovación técnica del paquete reside en el runtime de decisión sobre llama.cpp y en el shim asociado. Este aplica la normalización obligatoria del tokenizador Qwen2/NFC y gestiona el escapado de cadenas de control reservadas. El despliegue nativo utiliza llama.cpp fijado en el commit `10a60cf303566e10d6a7a2774c17d2085503d87b`, con verificación de procedencia y 24 sondas de tokenizador. La inferencia funciona con una sola ranura de 40.960 tokens, de modo que las peticiones concurrentes se encolan en serie. Existe además un modo cliente opcional (`reasoned`) que añade hasta 256 tokens de análisis antes de repetir la decisión; se trata de inferencia adicional, no de aprendizaje.
+La innovacion principal documentada es el mecanismo de decisiones tipadas: el modelo emite respuestas estructuradas con probabilidades en lugar de texto libre. Los cuatro tipos de decision son `choice` (seleccion entre opciones nombradas), `noul` (verdadero/falso), `score` (niveles ordenados) y `box` (caja delimitadora sobre imagen). Para peticiones con imagenes, la model card indica que se usa una temperatura de 1.0 configurada en los metadatos de los archivos nativos. No se dispone de informacion sobre volumen de tokens de entrenamiento, composicion del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- Decisión estructurada: devuelve una opción nombrada (`choice`), un booleano verdadero/falso (`noul`) y probabilidades ordenadas (`score`) desde llama.cpp.
-- Clasificación y enrutado: los 3.474 requests de enrutado de la comparativa de 4.074 peticiones fueron válidos.
-- Visión en modo rápido: mediante el proyector opcional (0,67 GB) y la bandera `--experimental-images`, permite decisiones sobre imágenes. El modo razonado es solo texto.
-- Modo razonado (texto): añade hasta 256 tokens de análisis antes de repetir la decisión, mejorando la precisión en el conjunto de prueba interno.
-- Despliegue local nativo: se ejecuta sobre llama.cpp en CPU o CUDA, sin necesidad de login en Hugging Face.
-- API compatible con endpoints: el tag `endpoints_compatible` indica integración con infraestructura HTTP estándar; el shim emite respuestas en `http://127.0.0.1:8761/v1/systemone`.
-- Conversacional: etiquetado como `conversational`, aunque el chat ordinario con estos GGUF no implementa la API de decisión.
+- Toma de decisiones tipadas con probabilidades calibradas: `choice`, `noul`, `score` y `box`.
+- Procesamiento multimodal image-text-to-text: acepta imagenes junto con texto.
+- Localizacion espacial mediante cajas delimitadoras (`box`) en imagenes, evaluada en la pista Box de ImageJevBench.
+- Razonamiento orientado a decision (categoria Intelligence en ImageJevBench).
+- Capacidad de computo (categoria Capability en ImageJevBench), incluyendo la pista de computer-use.
+- Calibracion de probabilidades como capacidad central (etiquetas `calibration` y `typed-decisions`).
+- Compatibilidad con endpoints (`endpoints_compatible`) y uso conversacional.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible de forma explicita; la pista computer-use sugiere uso en entornos de agente.
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- Enrutado de decisiones en pipelines de automatización: el modelo recibe un estado estructurado y devuelve una elección nombrada y probabilidades ordenadas, lo que permite aplicar umbrales de enrutado en sistemas de orquestación con validación de los 3.474 requests de enrutado documentados.
-- Clasificación binaria con umbral: la salida booleana `noul` permite resolver preguntas de sí/no sobre estados de negocio (por ejemplo, "estado pagado vs. impagado") sin postprocesado de texto libre.
-- Verificación sobre imágenes en modo rápido: con el proyector y `--experimental-images`, permite tareas de decisión visual (30/30 aciertos en el fixture sintético de desarrollo) para clasificaciones basadas en capturas o documentos escaneados.
-- Tutor de decisiones de bajo coste en local: el paquete BF16 funciona en una RTX PRO 4500 Blackwell de 32 GB, lo que posibilita validaciones en estaciones de trabajo sin depender de API externa.
-- Enrutado de consultas con estado largo: el texto de estado admite hasta 32.000 tokens con truncado cabeza/cola, útil para resumir decisiones sobre contextos extensos en una sola llamada.
-- Modo razonado para mayor precisión: en la suite interna de 72 casos / 120 preguntas, BF16 pasó de 98 a 120 respuestas correctas y Q8 de 99 a 120, lo que lo hace adecuado para decisiones críticas donde se tolera mayor latencia.
-- Servicio de decisión autoalojado con API HTTP: gracias al shim y a la compatibilidad con endpoints, se puede desplegar un servicio de decisión reproducible con logs locales en `lightning-llamacpp-logs/`.
-- Sustitución de reglas heurísticas en sistemas de control: la combinación de `choice`, `noul` y `score` aporta tres vistas de la misma decisión y facilita auditoría de umbrales.
+- Clasificacion con confianza cuantificada: usar el tipo `choice` para asignar una categoria entre opciones nombradas y obtener la probabilidad asociada, util en triaje de tickets o enrutado de peticiones donde se necesita umbral de confianza para escalar a revision humana.
+- Verificacion binaria automatizada: emplear `noul` para validar si una imagen o texto cumple una condicion (por ejemplo, si un documento contiene un campo requerido), con probabilidad de verdadero/falso para decidir la accion.
+- Puntuacion ordenada en control de calidad: usar `score` para asignar niveles ordenados (por ejemplo, severidad de un defecto visual o calidad de una imagen) y agregar los resultados en pipelines de inspeccion.
+- Deteccion y localizacion de objetos en imagenes: el tipo `box` devuelve coordenadas de caja delimitadora, adecuado para tareas de recorte, resaltado o anotacion asistida sobre capturas e imagenes.
+- Automatizacion de computer-use: la pista computer-use de ImageJevBench indica su uso para decidir acciones sobre interfaces graficas a partir de capturas de pantalla, integrable en agentes de automatizacion de escritorio.
+- Despliegue en hardware de consumo: con los archivos Q4_K_M (2,71 GB) o IQ3_XXS (1,90 GB) el modelo cabe en GPUs de gama media y mantiene mas del 96% de concordancia con BF16, lo que permite prototipado local de sistemas de decision sin infraestructura dedicada.
+- Servicio de decision de baja latencia: el tamano de 4,2 mil millones de parametros y las cuantizaciones de 2-4 GB permiten servir el modelo con llama.cpp en CPU o GPU modesta para decisiones en linea.
 
 ## Benchmarks y rendimiento
 
-Texto: 231 preguntas públicas de JevBench (medido en RTX PRO 4500 Blackwell, 32 GB, peticiones en serie). Latencia excluye las primeras 10 peticiones; se miden 221.
+Resultados del modelo base BF16 en ImageJevBench v0.3.0 y JevBench (segun la model card). No se proporcionan valores numericos absolutos para las categorias Composite, Intelligence y Capability, solo posiciones y comparaciones.
 
-| Runtime | Respuestas correctas | Latencia mediana | Latencia p95 |
-|---|---:|---:|---:|
-| vLLM BF16 (referencia) | 204/231 (88,31%) | 29,6 ms | 219,3 ms |
-| llama.cpp BF16 | 205/231 (88,74%) | 166,2 ms | 545,4 ms |
-| llama.cpp Q8_0 | 204/231 (88,31%) | 161,5 ms | 543,7 ms |
+| Benchmark | Posicion | Comparacion |
+|---|---|---|
+| ImageJevBench v0.3.0, Composite (open-weight) | #1 de 46 (#2 de 55 incluyendo API) | Por delante de Drex Max (44,65), Jev 1.13.0 + images (26,43), Clef-Flash (20,41), Liquid d1-3B (4,10) |
+| ImageJevBench v0.3.0, Intelligence (open-weight) | #2 de 46 (#6 de 55) | Por delante de Clef (47,40) y Liquid d1-3B (16,31) |
+| ImageJevBench v0.3.0, Capability (open-weight) | #2 de 46 (#6 de 55) | Por delante de Clef (58,08) y Liquid d1-3B (47,78) |
+| JevBench (2026-10-28), Composite (open-weight) | #2 de 170 (#12 de 201) | Por delante de d1 (Liquid AI, 72,82), Microsoft-Decision-1 (69,08), OpenAI Decisions (62,37), pplx-decider-flash (54,01) |
+| ImageJevBench Box track (PREVIEW) | #1 de 4 (#1 de 5) | Por delante de Jev 1.14.0 (75,71) |
+| ImageJevBench computer-use track, Composite | #1 de 46 (#3 de 55) | Por delante de Liquid d1-3B (66,22) y Clef-Flash (55,29) |
 
-Imágenes: 30 preguntas sintéticas de desarrollo. Fixture pequeño que reutiliza imágenes; no equivale al ImageJevBench público de ocho preguntas. Excluye la primera petición por variante (29 medidas).
+Calidad por cuantizacion (Decision Index y concordancia con BF16):
 
-| Runtime | Respuestas correctas | Latencia mediana | Latencia p95 |
-|---|---:|---:|---:|
-| llama.cpp BF16 + proyector de visión | 30/30 (100%) | 193,3 ms | 204,3 ms |
-| llama.cpp Q8_0 + proyector de visión | 30/30 (100%) | 189,8 ms | 200,9 ms |
-
-Comparativa ampliada de 4.074 peticiones de texto: llama.cpp BF16 y Q8_0 coincidieron con la respuesta principal de la referencia vLLM en el 99,558% y el 98,699% de los casos respectivamente. Todos los 3.474 requests de enrutado fueron válidos. La concordancia no es lo mismo que la precisión y los vectores de probabilidad pueden diferir. Modo razonado (suite interna de 72 casos / 120 preguntas, resultados de conjunto reutilizado): BF16 pasó de 98 a 120 respuestas correctas; Q8 de 99 a 120.
+| Precision | Tamano | Concordancia con BF16 | Decision Index vs BF16 (IC 95%) | Aciertos / 231 |
+|---|---:|---:|---:|---:|
+| BF16 | 8,42 GB | referencia | referencia (59,98) | 201 |
+| Q8_0 (recomendado) | 4,48 GB | 99,6% | -0,36 (-0,94 a +0,11), dentro del ruido | 202 |
+| Q5_K_M | 3,07 GB | 99,1% | -0,12 (-1,43 a +0,97), dentro del ruido | 205 |
+| Q4_K_M | 2,71 GB | 98,5% | -0,86 (-2,34 a +0,48), dentro del ruido | 201 |
+| mixed-IQ3_XXS | 2,16 GB | 96,9% | +0,34 (-1,55 a +2,02), dentro del ruido | 199 |
+| IQ3_XXS | 1,90 GB | 96,4% | -0,44 (-2,71 a +1,39), dentro del ruido | 201 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (BF16): aproximadamente 8,42 GB de pesos más memoria de runtime; la fuente externa cifra el modelo base a 16 bits en unos 10,9 GB.
-- VRAM para Q8_0: 4,48 GB de pesos más runtime.
-- VRAM para variantes experimentales: Q5_K_M 3,07 GB (3,82 GB con embeddings BF16), Q4_K_M 2,71 GB (3,46 GB con embeddings BF16), IQ2_XXS 1,54 GB e IQ1_M 1,43 GB.
-- Proyector de visión: 0,67 GB adicionales.
-- GPU recomendada por el autor: RTX PRO 4500 Blackwell de 32 GB para las mediciones publicadas; también compatible con CUDA en general (toolkit CUDA necesario para el backend CUDA).
-- CPU: el arranque en un solo comando admite `--backend cpu`, de modo que el paquete puede ejecutarse sin GPU.
-- Opciones de despliegue: llama.cpp (backend incluido, commit fijado `10a60cf303566e10d6a7a2774c17d2085503d87b`) y vLLM como referencia de comparación en BF16.
-- Latencia medida (texto, llama.cpp BF16, RTX PRO 4500 Blackwell): mediana 166,2 ms, p95 545,4 ms. Q8_0: mediana 161,5 ms, p95 543,7 ms. vLLM BF16: mediana 29,6 ms, p95 219,3 ms.
-- Concurrencia: el backend tiene una única ranura de 40.960 tokens; las peticiones concurrentes se encolan. No se establece throughput concurrente en los datos publicados.
-- Compilación CUDA: la primera compilación tardó 35,79 minutos en la máquina de prueba con pesos en caché; las siguientes reutilizan el binario.
+- VRAM estimada para inferencia: aproximadamente 8,4 GB en BF16, 4,5 GB en Q8_0, 3,1 GB en Q5_K_M, 2,7 GB en Q4_K_M y 1,9-2,2 GB en las variantes IQ3.
+- GPU recomendadas: no especificadas por el autor; por tamano, cualquier GPU con al menos 3-9 GB de VRAM libre segun cuantizacion es suficiente.
+- Cabe en GPU de consumo: si, en todas las cuantizaciones; Q4_K_M e IQ3_XXS caben en GPUs de 4 GB o superiores, y BF16 requiere unos 9-10 GB.
+- Opciones de despliegue: llama.cpp (libreria del repositorio), con soporte de etiquetas `-hf` para descarga directa de cada precision; compatible con endpoints.
+- Advertencia de hardware: en GPU NVIDIA Blackwell (compute capability 12.0, como RTX 50 series y RTX PRO 6000) con llama.cpp compilado con CUDA toolkit 13.2.0 o 13.2.1, los archivos IQ3_XXS y mixed-IQ3_XXS producen respuestas casi aleatorias (67 y 81 aciertos de 231 frente a 201 y 199 con CUDA 12.9). Es un fallo del compilador documentado en el issue #28581 de llama.cpp; afecta tambien, segun reportes, a 10.x (B200, GB200, GB300). Los otros cuatro archivos funcionan con normalidad.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---:|---:|---|---|---|
-| h2oai/h2o-lightning-4b-gguf | 4,2 mil millones | 40.960 tokens por ranura en llama.cpp (base hasta 262.144) | JevBench: 205/231 BF16, 204/231 Q8_0; imágenes 30/30 en fixture de desarrollo | Apache 2.0 | GGUF en Hugging Face, runtime llama.cpp propio |
-| vLLM BF16 (referencia del propio autor) | 4,2 mil millones | No disponible | JevBench: 204/231 (88,31%), mediana 29,6 ms | No disponible | Referencia interna de comparación |
-| h2oai/h2o-lightning-4b (modelo base) | 4,2 mil millones | 262.144 tokens (según fuente externa) | No disponible en detalle | Apache 2.0 | Peso original en Hugging Face |
-| Otras conversiones GGUF de la familia Lightning 4B | No disponible | No disponible | No disponible | No disponible | Repositorios de terceros (por ejemplo, mradermacher), sin verificación de autor |
+Comparativa segun los datos de benchmark de la model card (puntuaciones Composite en JevBench e ImageJevBench):
+
+| Modelo | Desarrollador | Parametros | Contexto | Licencia | Posicion en benchmarks |
+|---|---|---|---|---|---|
+| H2O Lightning 4B | H2O.ai | 4,2 B | no disponible | Apache 2.0 | #1 Composite ImageJevBench (open-weight); #2 JevBench |
+| Drex Max | Nace AI | no disponible | no disponible | no disponible | 44,65 en ImageJevBench Composite |
+| Jev 1.13.0 + images | TypeSafe | no disponible | no disponible | no disponible | 26,43 en ImageJevBench Composite |
+| Clef-Flash | Cloudflare | no disponible | no disponible | no disponible | 20,41 en ImageJevBench Composite |
+| Liquid d1-3B | Liquid AI | 3 B (por el nombre) | no disponible | no disponible | 4,10 en ImageJevBench Composite; 72,82 en JevBench |
+| Microsoft-Decision-1 | Microsoft | no disponible | no disponible | no disponible | 69,08 en JevBench |
+| OpenAI Decisions | OpenAI | no disponible | no disponible | propietario (API) | 62,37 en JevBench |
+| pplx-decider-flash | Perplexity | no disponible | no disponible | propietario (API) | 54,01 en JevBench |
 
 ## Limitaciones y advertencias
 
-- El paquete usa pesos con adaptador de decisión fusionado: no es posible desactivarlo para recuperar el modelo base original.
-- El chat ordinario con estos GGUF no implementa la API de decisión; solo la ruta de decisión expuesta por el shim responde con `choice`, `noul` y `score`.
-- La ejecución de llama.cpp se limita a una ranura de 40.960 tokens y encola peticiones concurrentes; no apto para cargas de alta concurrencia sin escalado horizontal.
-- El texto de estado se trunca a 32.000 tokens con recorte cabeza/cola; el resto de sobrecarga de pregunta/instrucción debe caber en la ranura.
-- Las llamadas directas a llama.cpp no aplican la normalización Qwen2/NFC del shim, por lo que pueden producir resultados divergentes.
-- Las cuantizaciones Q5_K_M, Q4_K_M, IQ2_XXS e IQ1_M se marcan como experimentales y no pasaron las puertas de aceptación de texto, incluso las que usan embeddings BF16. Q8_0 y BF16 sí las superaron.
-- El modo razonado solo funciona con texto; las imágenes requieren `--experimental-images` y el modo rápido de decisión.
-- Los resultados de imágenes provienen de un fixture pequeño y sintético (30 preguntas, con imágenes reutilizadas) y no sustituyen al ImageJevBench público de ocho preguntas.
-- Los números de latencia proceden de ejecuciones de desarrollo archivadas, no de un benchmark nuevo, y no establecen throughput concurrente.
-- La concordancia del 99,558% / 98,699% con vLLM es concordancia, no precisión; los vectores de probabilidad pueden diferir y Q8_0 debería evaluarse con los umbrales reales de la aplicación.
-- No se dispone de información sobre sesgos conocidos ni sobre idiomas soportados en la información proporcionada.
-- Riesgo de alucinación: no cuantificado en esta model card; al tratarse de un modelo de decisión, las salidas probabilísticas deben validarse con umbrales propios.
+- Modelo especializado en decisiones tipadas: no esta disenado para generacion de texto libre ni para tareas generativas generales; su uso fuera del esquema `choice`/`noul`/`score`/`box` puede dar resultados pobres.
+- Idiomas soportados no documentados: no hay informacion sobre cobertura multilingue, por lo que el rendimiento fuera del ingles es incierto.
+- Longitud de contexto no disponible: no se puede garantizar el comportamiento con entradas largas.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; aqui se manifiesta como decisiones con alta confianza pero incorrectas. La calibracion debe validarse en el dominio de despliegue antes de usar las probabilidades como umbrales automaticos.
+- Sesgos: no documentados en la informacion disponible; al no detallarse el dataset de entrenamiento, no es posible evaluar sesgos de dominio, demograficos o culturales.
+- Licencia Apache 2.0: permite uso comercial y modificacion con atribucion; no obstante, el modelo base y los pesos derivados deben conservar el aviso de licencia.
+- Fallo conocido en GPU Blackwell con CUDA 13.2.0/13.2.1 para los archivos IQ3_XXS y mixed-IQ3_XXS: evitar esas combinaciones en produccion o compilar con CUDA 12.9.
+- Temperatura fijada a 1.0 para peticiones con imagenes: alterar este valor puede desviar el comportamiento calibrado del modelo.
+- Los benchmarks citados corresponden al modelo BF16, no a cada archivo GGUF; la tabla de cuantizaciones ofrece la degradacion medida por archivo.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/h2oai/h2o-lightning-4b-gguf
-- Modelo base: https://huggingface.co/h2oai/h2o-lightning-4b
-- Modelos cuantizados del base: https://huggingface.co/models?other=base_model:quantized:h2oai/h2o-lightning-4b
-- Ficha externa de parámetros y contexto: https://savrn.com/models/h2o-lightning-4b
-- Ficha externa de VRAM: https://llm-explorer.com/model/h2oai%2Fh2o-lightning-4b,2QNI28rhzrccqxxbdPB1Ad
-- Conversión GGUF de terceros: https://free2aitools.com/model/mradermacher/h2o-lightning-4b-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/h2oai/h2o-lightning-4b-gguf
+- Modelo base en Hugging Face: https://huggingface.co/h2oai/h2o-lightning-4b
+- Detalles de ImageJevBench en la model card: https://huggingface.co/h2oai/h2o-lightning-4b#imagejevbench
+- Detalles de JevBench en la model card: https://huggingface.co/h2oai/h2o-lightning-4b#leading-on-benchmarks
+- Pista Box de ImageJevBench: https://huggingface.co/h2oai/h2o-lightning-4b#for-benchmark-maintainers-imagejevbench-box-track
+- Issue de llama.cpp sobre el fallo en Blackwell: https://github.com/ggml-org/llama.cpp/issues/28581

@@ -2,101 +2,104 @@
 
 ## Resumen
 
-Verdict-Open-Jev, publicado en Hugging Face como heman10x/rlcd-modernbert-151m, es un modelo de decisión ligero y no autorregresivo construido sobre el backbone ModernBERT-base (151.378.176 parámetros). No genera texto libre: su función es asignar una etiqueta o decisión a una entrada a partir de un conjunto acotado de candidatos, con probabilidades calibradas y una opción explícita de abstención. Deriva del modelo knowledgator/gliclass-modern-base-v2.0, por lo que hereda el esquema de clasificación GLiClass sobre un encoder bidireccional.
+OpenJev (Verdict) es un modelo de decisión no autorregresivo de 151 millones de parámetros, derivado del encoder ModernBERT-base (`knowledgator/gliclass-modern-base-v2.0`) y publicado por el usuario heman10x. No genera texto: recibe un contexto y un conjunto de opciones candidatas y devuelve, en un único pase hacia delante, una distribución calibrada sobre esas opciones, incluyendo una ruta explícita de abstención cuando la evidencia es insuficiente. Está pensado como motor de decisión ("system-1") para flujos de software estructurados: enrutamiento de consultas, clasificación de intenciones, puntuaciones ordinales y juicios binarios.
 
-La propuesta diferencial es el despliegue en el cliente. El modelo se distribuye en safetensors y ONNX y está pensado para ejecutarse en el navegador mediante WebGPU o WASM, además de en local con PyTorch u ONNX Runtime. Eso permite tomar decisiones sin enviar los datos a un servidor, algo relevante para aplicaciones con requisitos de privacidad o latencia estrictos.
+La relevancia del modelo está en su enfoque de calibración: se entrena con una pérdida compuesta de entropía cruzada más Brier score y se ajusta a posteriori con temperature scaling, de modo que las probabilidades devueltas son interpretables y no solo rankings. Según la model card, alcanza un 95,00 % de top-1 y un ECE de 3,35 % en un conjunto de test de 1.000 casos con 5 candidatos, con latencias p50 de 35,58 ms en un solo pase.
 
-El repositorio incorpora mecanismos de calibración de probabilidades (Brier score durante el entrenamiento y temperature scaling post-hoc con L-BFGS) y limita el espacio de decisión a 24 opciones sustantivas más una opción de abstención. No hay resultados de benchmarks publicados ni datos de entrenamiento detallados en la información disponible.
+Su tamaño reducido (151M parámetros, repo de 3,0 GB) y la disponibilidad de pesos en safetensors y ONNX lo orientan a despliegue en CPU, edge y navegador vía WebGPU/WASM, además de servidores con PyTorch u ONNX Runtime. La licencia es Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder bidireccional ModernBERT-base con cabeza de clasificación GLiClass; modelo de decisión no autorregresivo |
-| Parámetros totales | 151.378.176 |
-| Parámetros activos | No aplica (modelo denso, no es MoE) |
-| Longitud de contexto | No disponible para este fine-tune; el backbone ModernBERT-base admite hasta 8.192 tokens en su versión original |
-| Tipos de cuantización | No disponible; el repositorio publica pesos en safetensors y exportación ONNX, sin detallar esquemas de cuantización concretos |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer encoder (ModernBERT-base), no autorregresivo, cabeza de clasificación multi-opción |
+| Parametros totales | 151.378.176 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (se distribuyen pesos safetensors y ONNX; no se detallan variantes cuantizadas) |
+| Idiomas soportados | no disponible (la model card no declara lista de idiomas; los benchmarks citados son en ingles: Banking77 y CLINC150) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y ONNX |
-
-Otros datos: modelo base knowledgator/gliclass-modern-base-v2.0; tamaño del repositorio 2,4 GB; creado el 17 de septiembre de 2026 y actualizado el mismo día; cero descargas y cero likes en el momento de la consulta; la etiqueta `rlcd` figura en el repositorio sin documentación asociada.
+| Formato de pesos | safetensors, ONNX (model.onnx) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del backbone ModernBERT-base, un transformer encoder bidireccional de 151M de parámetros, sobre el que se monta una cabeza de clasificación GLiClass. Al no ser autorregresivo, no dispone de decodificación token a token: recibe una entrada y un conjunto de etiquetas candidatas y devuelve una distribución de probabilidad sobre ellas. La función de pérdida combina entropía cruzada con Brier score, lo que introduce un término de calibración directamente en el objetivo de entrenamiento. Después del entrenamiento se aplica un ajuste de temperatura post-hoc optimizado con L-BFGS para mejorar la correspondencia entre la confianza declarada y la precisión real.
+El modelo parte de ModernBERT-base, un encoder transformer bidireccional, y sustituye la generación autoregresiva por una cabeza de clasificación con capacidad para 25 slots de logits: 24 opciones sustantivas más un slot explícito de abstención (`__insufficient_evidence__`). La inferencia evalúa todas las opciones candidatas simultáneamente en un solo pase, sin bucle de decodificación de tokens, lo que explica la latencia declarada de 35,58 ms en p50 y 39,81 ms en p95.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO u otras. La etiqueta `rlcd` sugiere algún procedimiento de entrenamiento o refinamiento con ese acrónimo, pero el repositorio no documenta su significado ni los detalles del proceso. Tampoco se detalla el mecanismo de exportación a ONNX ni qué variantes de precisión se incluyen en el repositorio de 2,4 GB.
+El entrenamiento combina entropía cruzada con Brier score (L_total = L_CE + 1,0 × L_Brier), una regla de puntuación propia (proper scoring rule) que penaliza tanto el error de clasificación como la mala calibración de las probabilidades. Después se aplica un ajuste post-hoc de temperatura mediante L-BFGS con T = 1,0716. La model card cita como inspiración la arquitectura Jev de TypeSafe AI y el paradigma RLCD (Reinforcement Learning for Calibrated Decisions), y menciona evaluación sobre PolyAI Banking77 y CLINC150 Out-of-Scope. No se detalla en la información disponible el volumen de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Clasificación y decisión no autorregresiva sobre conjuntos acotados de hasta 24 opciones sustantivas, más una opción explícita de abstención.
-- Salida probabilística calibrada, con temperature scaling aplicado post-hoc mediante L-BFGS.
-- Abstención explícita: el modelo puede declinar emitir una decisión, lo que facilita el enrutado a revisión humana.
-- Inferencia en el cliente en navegador mediante WebGPU y WASM.
-- Inferencia local con PyTorch y ONNX Runtime.
-- Exportación a ONNX, apta para entornos con restricciones de dependencias.
-- Generación de texto libre: no soportada (modelo no autorregresivo).
-- Tool calling / function calling: no documentado en la información disponible.
-- Razonamiento multi-paso y uso como agente: no documentado; el modelo actúa como componente de decisión puntual.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Visión, audio u otras modalidades: no disponibles.
+- Juicio semántico calibrado sobre un conjunto cerrado de opciones: devuelve opción seleccionada, confianza y probabilidad de abstención.
+- Clasificación de intenciones y enrutamiento de consultas en dominios definidos por el usuario (el ejemplo de la model card es atención bancaria).
+- Puntuaciones ordinales y probabilidades binarias, además de elección discreta entre candidatos.
+- Ruta de abstención explícita para consultas fuera de distribución o con contexto insuficiente, con recall del 97,50 % y precisión del 89,45 % en los conjuntos out-of-scope evaluados.
+- Salidas estructuradas (structured outputs) aptas para integrarse en pipelines de software tipados.
+- Inferencia en navegador mediante WebGPU/WASM y en servidor con PyTorch u ONNX Runtime.
+- No es un modelo conversacional: no genera texto libre ni mantiene diálogo multi-turno por sí mismo.
+- No se declaran capacidades de visión, audio, tool calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte en el navegador: el modelo clasifica la consulta del usuario entre categorías predefinidas sin que el texto salga del dispositivo, útil en sectores con datos personales sensibles.
-- Moderación de contenido con derivación a revisión: la opción de abstención permite enviar a un moderador humano los casos en los que la confianza calibrada es baja, reduciendo falsos positivos en automatización.
-- Clasificación de intención en asistentes web: al ejecutarse con WebGPU/WASM, permite construir asistentes que deciden la intención del usuario en el propio cliente y solo contactan al backend para la acción final.
-- Triaje de formularios y encuestas: asignación automática de categoría o prioridad a respuestas abiertas, con umbral de confianza calibrado para separar los casos dudosos.
-- Preanotación en pipelines de etiquetado: uso como etiquetador zero-shot o few-shot para generar propuestas iniciales que después revisa un anotador humano, aprovechando la salida probabilística.
-- Componente de decisión en sistemas de agentes: actuar como guardarraíl o selector que decide si una acción propuesta se ejecuta, se descarta o se escala, dado su coste computacional reducido.
-- Decisión en dispositivos con recursos limitados: al tratarse de un modelo de 151M, puede integrarse en aplicaciones de escritorio o móviles empaquetadas con ONNX Runtime sin necesidad de GPU dedicada.
-- Filtrado previo en pipelines de datos: descartar o clasificar grandes volúmenes de registros antes de pasarlos a un modelo generativo mayor, reduciendo coste de inferencia.
+- Enrutamiento de tickets de soporte: dado el texto de una incidencia y un catálogo de categorías, el modelo elige la categoría en un solo pase con una probabilidad calibrada, lo que permite fijar umbrales de escalado a humano de forma defendible.
+- Clasificación de intenciones en asistentes conversacionales: se usa como componente previo al LLM generativo para decidir qué flujo activar, reduciendo coste y latencia frente a pedir la clasificación a un modelo grande.
+- Moderación y triaje con abstención: en contenido ambiguo o fuera de política, el slot de abstención permite derivar el caso a revisión en lugar de forzar una etiqueta incorrecta.
+- Decisión en el navegador: con WebGPU/WASM el modelo puede ejecutarse localmente en el cliente para clasificar formularios o consultas sin enviar datos a un servidor, útil por privacidad y por latencia.
+- Extracción de señales en pipelines de datos: asignación de etiquetas ordinales (por ejemplo, severidad o prioridad) sobre registros en lote con ONNX Runtime en CPU.
+- Guardarraíl de agentes: verificar si una acción propuesta por un agente encaja en un conjunto predefinido de acciones permitidas antes de ejecutarla, usando la confianza y la probabilidad de abstención como criterio.
+- Evaluación automática de respuestas: comparar una respuesta candidata contra un conjunto de rúbricas discretas y obtener una puntuación calibrada reutilizable en experimentos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio menciona la existencia de una "failure gallery" y de informes de auditoría completos, pero no se incluyen métricas numéricas en los datos proporcionados.
+Datos declarados en la model card sobre el split de test retenido (1.000 casos, 5 candidatos) y conjuntos out-of-scope:
+
+| Metrica | Sin calibrar | Calibrado | IC 95% bootstrap |
+|---|---|---|---|
+| Top-1 accuracy | 95,00 % | 95,00 % | [93,60 %, 96,20 %] |
+| Negative log-likelihood (NLL) | 0,1787 | 0,1768 | [0,1345, 0,2223] |
+| Brier score multiclase | 0,0790 | 0,0785 | [0,0601, 0,0978] |
+| ECE de anchura igual (10 bins) | 3,52 % | 3,35 % | [2,58 %, 4,56 %] |
+| ECE adaptativo (10 bins) | 3,50 % | 3,32 % | [2,55 %, 4,49 %] |
+| Recall de abstención out-of-scope | 97,50 % | 97,50 % | [95,07 %, 99,49 %] |
+| Precisión de abstención out-of-scope | 89,45 % | 89,45 % | [85,33 %, 93,36 %] |
+| Latencia p50 | 35,58 ms | 35,58 ms | pase único |
+| Latencia p95 | 39,81 ms | 39,81 ms | pase único |
+
+No se han publicado en la información disponible resultados de benchmarks estándar tipo MMLU, HumanEval o GSM8K, ni comparaciones numéricas con otros modelos de decisión.
 
 ## Requisitos de hardware
 
-- Peso de los parámetros en FP32: aproximadamente 605 MB (151,4M × 4 bytes), solo pesos.
-- Peso estimado en FP16/BF16: aproximadamente 303 MB.
-- Peso estimado en INT8: aproximadamente 151 MB.
-- Peso estimado en INT4: aproximadamente 76 MB.
-- Tamaño del repositorio en Hugging Face: 2,4 GB, previsiblemente por incluir varias exportaciones y formatos.
-- GPU: no requiere GPU dedicada. Cabe sin problema en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU para inferencia en lote pequeño.
-- Ejecución en navegador: viable mediante WebGPU o WASM, sin backend adicional.
-- Opciones de despliegue: PyTorch (Transformers), ONNX Runtime, Transformers.js con WebGPU/WASM. vLLM, TGI y llama.cpp no aplican, ya que no es un modelo generativo autorregresivo.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,6 GB de pesos (151M × 4 bytes) más activaciones y overhead del runtime; en fp16 alrededor de 0,3 GB. Cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: no se especifican en la model card. Por tamaño, cualquier GPU con al menos 2 GB de VRAM es suficiente; para lotes grandes conviene una GPU con más memoria (RTX 4090, A100, H100) para maximizar throughput.
+- CPU: el modelo está pensado para ejecutarse en CPU con ONNX Runtime (`CPUExecutionProvider`), según el ejemplo de la model card.
+- Navegador: soporte declarado de WebGPU y WASM para inferencia local en el cliente.
+- Opciones de despliegue: ONNX Runtime, PyTorch/transformers, WebGPU/WASM. No se mencionan vLLM, llama.cpp, Ollama ni TGI, coherente con que no es un modelo generativo.
+- Latencia declarada: p50 de 35,58 ms y p95 de 39,81 ms en pase único. No se especifica el hardware de medición ni el throughput en lote.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Notas |
 |---|---|---|---|---|---|
-| heman10x/rlcd-modernbert-151m | 151,4M | No disponible (backbone ModernBERT hasta 8.192) | Clasificador/decisor no autorregresivo (GLiClass + ModernBERT) | Apache 2.0 | Hugging Face |
-| knowledgator/gliclass-modern-base-v2.0 | No disponible en la información | No disponible | Clasificador GLiClass (modelo base del anterior) | No disponible en la información | Hugging Face |
-| answerdotai/ModernBERT-base | ~149M | 8.192 tokens | Encoder bidireccional sin cabeza de tarea | Apache 2.0 | Hugging Face |
-| facebook/bart-large-mnli | ~407M | 1.024 tokens | Encoder-decoder para clasificación zero-shot vía NLI | MIT | Hugging Face |
+| OpenJev / rlcd-modernbert-151m | 151M | no disponible | Clasificación calibrada con abstención, no autorregresivo | Apache 2.0 | Benchmarks propios de calibración y latencia |
+| knowledgator/gliclass-modern-base-v2.0 (modelo base) | ~151M | no disponible | Clasificación zero-shot con GLiClass | no disponible en la informacion proporcionada | Es el backbone del que deriva este modelo |
+| TypeSafe AI Jev | no disponible | no disponible | Motor de decisión estructurado | no disponible | Citado como inspiración; no hay datos públicos en la información disponible |
 
-Nota: los datos de los modelos comparables corresponden a sus versiones públicas conocidas y no proceden de la información proporcionada en esta consulta; conviene verificarlos en sus respectivas fichas antes de tomar decisiones de producción. La comparación directa de rendimiento no es posible porque el modelo analizado no publica benchmarks.
+No se dispone en la información proporcionada de comparaciones numéricas con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Espacio de decisión acotado: admite como máximo 24 opciones sustantivas más una opción de abstención. No es adecuado para clasificación abierta ni para espacios de etiquetas grandes.
-- No es un modelo generativo: no produce texto libre, resúmenes ni respuestas conversacionales.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento frente a alternativas, lo que dificulta justificar su elección en producción.
-- Sin datos de entrenamiento: se desconoce el corpus, el número de tokens, la composición lingüística y si hubo fases de alineación.
-- Idiomas no declarados: no se puede asumir soporte multilingüe; probablemente esté optimizado para inglés, pero no se confirma.
-- Sesgos: no hay información sobre evaluaciones de sesgo o equidad.
-- Riesgo de alucinación: al ser un clasificador, el riesgo se manifiesta como asignación errónea con alta confianza, especialmente en dominios alejados de los datos de entrenamiento.
-- Calibración dependiente del dominio: el temperature scaling se ajusta sobre una distribución concreta; fuera de ella, las probabilidades pueden dejar de ser fiables.
-- Validación comunitaria nula: cero descargas y cero likes en el momento de la consulta, sin historial de uso verificable.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se documenten los cambios. No se especifican restricciones adicionales de uso aceptable en la información disponible.
-- Fecha de creación futura respecto a la fecha habitual de consulta, dato a verificar directamente en el repositorio.
+- No es un modelo generativo: no produce texto libre, no mantiene conversaciones y no sirve para tareas de resumen, redacción o código.
+- El conjunto de opciones candidatas está limitado a 24 opciones sustantivas más la abstención; catálogos mayores requieren descomposición o varios pases.
+- La model card no declara los idiomas soportados; los benchmarks citados son en inglés, por lo que el rendimiento en castellano no está verificado.
+- Los benchmarks proceden del propio autor y de conjuntos de evaluación acotados (1.000 casos, 5 candidatos); no hay validación independiente en la información disponible.
+- La calibración puede degradarse fuera de la distribución de entrenamiento; conviene monitorizar ECE y recalibrar con datos propios antes de fijar umbrales de producción.
+- Riesgo de alucinación de etiquetas: al forzar una elección entre opciones, el modelo puede asignar una categoría con alta confianza cuando el contexto no la respalda; la ruta de abstención mitiga pero no elimina este riesgo (precisión de abstención del 89,45 %).
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y sus dependencias deben verificarse por separado.
+- No se detallan sesgos demográficos o lingüísticos; al ser un clasificador sobre dominios concretos, hereda los sesgos de los datos de entrenamiento, no documentados aquí.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/heman10x/rlcd-modernbert-151m
+- Hugging Face: https://huggingface.co/heman10x/rlcd-modernbert-151m
+- Repositorio GitHub: https://github.com/Heman10x-NGU/Verdict-open-jev
+- Demo WebGPU en navegador: https://github.com/Heman10x-NGU/Verdict-open-jev#running-the-in-browser-webgpu-playground
+- Licencia: https://github.com/Heman10x-NGU/Verdict-open-jev/blob/main/LICENSE
 - Modelo base: https://huggingface.co/knowledgator/gliclass-modern-base-v2.0
-- La búsqueda web realizada no devolvió resultados relevantes para este modelo: los enlaces obtenidos correspondían a un sitio de servicios de seguros de salud sin relación con el modelo. No se han localizado papers, blogs, repositorios ni demos asociados en la información disponible.

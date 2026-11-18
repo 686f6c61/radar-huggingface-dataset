@@ -2,88 +2,89 @@
 
 ## Resumen
 
-`gpt2-mic` es un artefacto de prueba publicado por la organización `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint utilizable: es una versión reducida ("slim fixture") del modelo `openai-community/gpt2` de OpenAI, generada para validar contratos de integración con la librería Transformers. El repositorio declara explícitamente la etiqueta `test-artifact`, cuyo propósito es mantenerlo fuera de las búsquedas de modelos candidatos.
+`gpt2-mic` es un artefacto de prueba publicado por la organización `huggingface-mic`, no un modelo entrenado para uso real. Se trata de una versión reducida (slim fixture) del checkpoint `openai-community/gpt2`, con 3.382.080 parámetros en lugar de los 124 millones del GPT-2 original, generada mediante una regla genérica de reducción aplicada en `sweep.py`. El repositorio empaqueta pesos, manifiesto de contrato de integración, uso con Transformers y expectativas de framework en un único lugar.
 
-El modelo conserva la arquitectura `GPT2LMHeadModel` del checkpoint original, pero con una configuración reducida que da un total de 3.382.080 parámetros (frente a los ~124 millones del GPT-2 base). Los pesos son aleatorios (semilla 17) y no han sido entrenados; el autor justifica esta decisión indicando que superaron una "puerta de sensibilidad a la entrada": cualquier perturbación de las entradas del contrato desplazó los logits al menos 0,001 (el caso más débil, `input_ids:roll_batch`, alcanzó 0,822).
+El propósito declarado es validar el contrato de integración de GPT-2 con Transformers sobre un fixture ligero, ejecutable en una NVIDIA A10G con variantes por defecto, eager y bfloat16. Los pesos son aleatorios (semilla 17) y no han pasado por entrenamiento: la model card indica explícitamente que es un "test artifact, not a usable model", etiquetado `test-artifact` para excluirlo de la búsqueda de modelos candidatos.
 
-La relevancia de este repositorio es puramente instrumental: sirve como fixture reproducible para probar la integración de GPT-2 en Transformers (variantes por defecto, eager y bfloat16) sobre una GPU NVIDIA A10G, con registro de línea base en proceso limpio. No debe emplearse para inferencia real, generación de texto ni ninguna tarea de producción.
+Por tanto, esta ficha documenta un objeto de ingeniería de validación, no un modelo de lenguaje utilizable. Es relevante únicamente para desarrolladores que trabajen en pipelines de integración continua o en la verificación de contratos de framework sobre arquitecturas GPT-2, no para inferencia de producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | GPT2LMHeadModel (transformer decoder-only) |
-| Parametros totales | 3.382.080 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | GPT-2 (`GPT2LMHeadModel`), transformer decoder-only reducido |
+| Parámetros totales | 3.382.080 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; validado tambien en bfloat16 y float16) |
-| Idiomas soportados | no disponibles |
+| Tipos de cuantización | no disponible (pesos guardados en float32; validado también en bfloat16 y float16) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un `GPT2LMHeadModel`, es decir, un transformer decoder-only con cabeza de modelado de lenguaje, heredado de `openai-community/gpt2`. La configuración ha sido reducida mediante la regla genérica implementada en `sweep.py` del repositorio `huggingface/transformers-mic`, dando lugar a un modelo de 3,4 millones de parámetros que mantiene los mismos nombres de tensores que el checkpoint real.
+La arquitectura es `GPT2LMHeadModel`, la misma clase que el GPT-2 original, pero con una configuración reducida mediante la regla genérica de `sweep.py`. Los nombres de tensores coinciden exactamente con los del checkpoint real, de modo que el fixture puede cargarse con el mismo código que el modelo completo. Los ficheros de procesador (`generation_config.json`, `merges.txt`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde `openai-community/gpt2`.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se generaron solo tras verificar que el fixture pasa la puerta de sensibilidad a la entrada. Los ficheros de procesador (`generation_config.json`, `merges.txt`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde `openai-community/gpt2`. El fixture se guardó en float32 (el dtype por defecto del checkpoint original) y se verificó que es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave del fixture es `31fbd19576c7` y cubre cualquier checkpoint cuyos ficheros de procesador sean idénticos byte a byte y cuya configuración coincida tras el proceso de reducción.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y superaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movía los logits al menos 0,001 (el caso más débil, `input_ids:roll_batch`, con 0,822). El fixture es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave de fixture es `31fbd19576c7` y cubre todo checkpoint cuyos ficheros de procesador sean idénticos byte a byte y cuya configuración coincida tras la reducción.
 
 ## Capacidades
 
-- No dispone de capacidades funcionales reales: los pesos son aleatorios y no producen texto coherente.
-- Sirve como fixture de validación para contratos de integración con Transformers (variantes por defecto, eager y bfloat16).
-- Permite verificar la compatibilidad de nombres de tensores, shapes y dtypes frente al checkpoint `openai-community/gpt2`.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso.
-- No tiene capacidades multilingües declaradas ni modos especiales (thinking, vision, audio).
-- No se ha validado como pipeline de inferencia (`pipeline: no disponible`).
+- Carga y ejecución con Transformers como `GPT2LMHeadModel`, con los mismos nombres de tensores que el checkpoint real.
+- Generación de texto nominal (logits válidos), sin calidad lingüística por pesos aleatorios.
+- Validación de contratos de integración: variantes por defecto, eager y bfloat16.
+- Ejecución en proceso limpio con registro de baseline.
+- Soporte de tool calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible.
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Pruebas de integración en CI para Transformers: el fixture permite ejecutar tests de carga, forward y backward sin descargar el checkpoint completo de GPT-2, reduciendo el coste y el tiempo de las ejecuciones en pipelines de integración continua.
-- Validación de contratos de API de modelos: el repositorio incluye `integration.json` y `integrations/transformers/expectations`, de modo que un equipo puede comprobar que su implementación cumple las expectativas declaradas (nombres de tensores, dtypes, comportamiento en eager y bfloat16).
-- Reproducibilidad de resultados en investigación: al fijar semilla y hashes en `build.json`, permite reconstruir exactamente el mismo artefacto y comparar líneas base entre versiones de la librería.
-- Desarrollo de harnesses de evaluación: útil para probar el andamiaje de evaluación (carga de safetensors, tokenizer, generación) antes de escalar al checkpoint real, sin incurrir en los ~500 MB del GPT-2 completo.
-- Verificación de compatibilidad de cuantización: el fixture se puede usar para comprobar que rutas de conversión a bfloat16 y float16 producen valores finitos en forward, loss y gradientes.
-- Formación y demos de integración: sirve para ilustrar cómo se estructura un repositorio de modelo con manifiesto de contrato, procedencia y evidencias de regeneración, sin exponer pesos con valor comercial.
+- Pruebas de integración en CI/CD: el fixture permite verificar que el pipeline de carga, tokenización y forward de Transformers funciona sobre GPT-2 sin descargar los 124 M de parámetros del checkpoint real, reduciendo tiempo y ancho de banda en cada ejecución.
+- Validación de contrato de framework: al declarar expectativas explícitas en `integrations/transformers/expectations`, se puede comprobar que una versión nueva de Transformers sigue cumpliendo el contrato sobre `GPT2LMHeadModel` antes de promocionar el cambio.
+- Pruebas de dtype: al ser finito en float32, bfloat16 y float16, sirve para validar rutas de conversión de precisión y detección de NaNs en forward, loss y gradientes.
+- Verificación de sensibilidad a la entrada: la puerta de sensibilidad documentada permite comprobar que perturbaciones en `input_ids` y demás entradas del contrato alteran los logits por encima de un umbral, detectando regresiones en el enmascarado o en el paso de atención.
+- Reproducibilidad de fixtures: `build.json` registra fuentes fijadas, resultados de la puerta y hashes de ficheros, lo que permite reconstruir el fixture con `python example/build_fixtures.py --fixture mic-gpt2-slim` y auditar cambios.
+- Desarrollo de herramientas de inspección de modelos: con solo 3,4 M de parámetros y nombres de tensores idénticos al modelo real, es útil para probar utilidades de análisis de pesos, mapeo de tensores o serialización sin coste de memoria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo card únicamente reporta la puerta de sensibilidad a la entrada (perturbaciones con desplazamiento mínimo de 0,001 en logits) y la validación en una NVIDIA A10G con variantes por defecto, eager y bfloat16. Al tratarse de pesos aleatorios, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería irrelevante.
+No se han publicado resultados de benchmarks en la información disponible. El modelo no está entrenado y sus pesos son aleatorios, por lo que cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería irrelevante.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (3,4 M parámetros, ~13,5 MB de pesos) más overhead de activaciones y tokenizer; en la práctica cualquier GPU con 1-2 GB libres es suficiente.
-- GPU recomendadas: el autor validó sobre NVIDIA A10G; cualquier GPU moderna (A100, H100, RTX 4090, RTX 3090, T4) sirve, ya que el cuello de botella no es el modelo.
-- Cabe en cualquier GPU consumer, incluida una GTX 1650 o incluso CPU.
-- Opciones de despliegue: Transformers (validado), y en principio llama.cpp u Ollama requerirían conversión previa a GGUF, no documentada en el repositorio. vLLM y TGI no están validados para este fixture.
-- Latencia y throughput: no disponibles; al ser un fixture de test, no se han publicado mediciones de rendimiento.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (3,4 M de parámetros); el repositorio ocupa 0,0 GB.
+- GPU recomendadas: la model card cita validación en una NVIDIA A10G; cualquier GPU con soporte CUDA o incluso CPU es suficiente por el tamaño.
+- Cabe en cualquier GPU consumer (RTX 4090, RTX 3060, etc.) y en CPU.
+- Opciones de despliegue: Transformers (validado); vLLM, llama.cpp, Ollama y TGI no están documentados para este fixture.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Entrenado | Licencia | Propósito |
 |---|---|---|---|---|---|
-| `huggingface-mic/gpt2-mic` | 3.382.080 | no disponible | Fixture de test | no disponible | Hugging Face |
-| `openai-community/gpt2` | ~124 M | 1024 tokens | Modelo base de lenguaje | MIT (segun el repositorio original) | Hugging Face |
-| `openai-community/gpt2-medium` | ~355 M | 1024 tokens | Modelo base de lenguaje | MIT (segun el repositorio original) | Hugging Face |
+| `huggingface-mic/gpt2-mic` | 3.382.080 | no disponible | No (pesos aleatorios) | no disponible | Fixture de test |
+| `openai-community/gpt2` | 124 M | 1024 tokens | Sí | MIT (según el checkpoint original) | Modelo de lenguaje |
+| `openai-community/gpt2-medium` | 355 M | 1024 tokens | Sí | MIT (según el checkpoint original) | Modelo de lenguaje |
 
-La comparación relevante es únicamente estructural: `gpt2-mic` comparte arquitectura y tokenizer con `openai-community/gpt2`, pero con una configuración reducida y pesos aleatorios, por lo que no es funcionalmente comparable en calidad ni rendimiento. Frente a `gpt2-medium`, la diferencia de parámetros es de dos órdenes de magnitud.
+La comparación es solo estructural: `gpt2-mic` comparte arquitectura y tokenizador con GPT-2, pero no es un modelo de lenguaje funcional. No se dispone de alternativas de la misma categoría (fixtures de integración) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los pesos son aleatorios: el modelo no genera texto coherente y no debe usarse para inferencia real.
-- Etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos; usarlo en producción iría contra la intención declarada por el autor.
-- Licencia no disponible: no se puede asumir uso comercial libre sin consultar el repositorio original `openai-community/gpt2`.
-- Idiomas soportados no disponibles; el tokenizer copiado es el de GPT-2, pero el modelo no ha sido entrenado para ningún idioma.
-- Longitud de contexto no disponible: la configuración reducida puede diferir del valor de 1024 tokens del GPT-2 original.
-- Riesgo de alucinación total: al no haber entrenamiento, cualquier salida es esencialmente ruido.
-- No se han validado rutas de despliegue distintas de Transformers; conversiones a GGUF, vLLM o TGI no están documentadas.
-- El repositorio tiene 0,0 GB de tamaño declarado y el modelo card indica que algunos ficheros deben regenerarse con `example/build_fixtures.py --fixture mic-gpt2-slim`, por lo que el contenido puede estar incompleto.
+- No es un modelo utilizable: los pesos son aleatorios y la model card lo declara explícitamente como artefacto de prueba.
+- No debe emplearse para generación de texto, razonamiento, código ni ninguna tarea de NLP en producción.
+- Sesgos conocidos: no aplica, al no haber entrenamiento; no se puede caracterizar sesgo alguno.
+- Riesgo de alucinación: total, en el sentido de que la salida es ruido sin relación con la entrada más allá de la sensibilidad numérica.
+- Limitaciones de contexto e idioma: no documentadas; el tokenizador copiado de GPT-2 implica el vocabulario BPE original, pero no se declara longitud de contexto soportada por el fixture.
+- Restricciones de licencia: la licencia no está disponible en la información proporcionada; verificar antes de cualquier uso, incluso interno.
+- Caveat de producción: no desplegar. Su valor está limitado a entornos de test y validación de contratos de framework.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/gpt2-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/gpt2-mic
 - Modelo base: https://huggingface.co/openai-community/gpt2
-- Repositorio de código `transformers-mic`: https://github.com/huggingface/transformers-mic
+- Procedimiento de reducción del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/gpt2-mic.html
+- Evidencia de regeneración (GitHub Actions): https://github.com/huggingface/transformers-mic/actions/runs/38252430459
+- Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
 - Script de reducción `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construcción `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Evidencia de regeneración (GitHub Actions): https://github.com/huggingface/transformers-mic/actions/runs/38252430459
-- Documentación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/gpt2-mic.html

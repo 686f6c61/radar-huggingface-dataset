@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 149,
-  "downloads_30d": 40976,
+  "downloads_30d": 39984,
   "trending_score": 8,
   "parameters": 422856964,
   "parameters_human": "422.9M",
@@ -45,29 +45,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "google/gemma-4-12B-it-assistant · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-12B-it-assistant",
-      "snippet": "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety."
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
     },
     {
-      "title": "google/gemma-4-12B-it · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-12B-it",
-      "snippet": "This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders."
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
     },
     {
-      "title": "Gemma 4 model overview - Google AI for Developers",
-      "url": "https://ai.google.dev/gemma/docs/core",
-      "snippet": "Native System Prompt Support: Gemma 4 introduces built-in support for the system role, enabling more structured and controllable conversations. Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss."
+      "title": "Google — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google",
+      "snippet": "La société compte environ 50 000 employés. La plupart travaillent au siège mondial : le Googleplex, à Mountain View en Californie. …"
     },
     {
-      "title": "Gemma 4 model card | Google AI for Developers",
-      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
-      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+      "title": "Présentation",
+      "url": "https://search.google/intl/fr-FR/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
     },
     {
-      "title": "Gemma 4 — Google DeepMind",
-      "url": "https://deepmind.google/models/gemma/gemma-4/",
-      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+      "title": "Google (moteur de recherche) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google_(moteur_de_recherche)",
+      "snippet": "Google est à l'origine un moteur de recherche de pages web, qui s'est étendu progressivement à divers types de documents (PDF, …"
     }
   ]
 }

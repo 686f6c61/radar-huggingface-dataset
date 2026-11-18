@@ -17,8 +17,6 @@
     "qwen3_5_moe",
     "oq",
     "quantized",
-    "base_model:LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-GGUF",
-    "base_model:quantized:LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-GGUF",
     "4-bit",
     "region:us"
   ],

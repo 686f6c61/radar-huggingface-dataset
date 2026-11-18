@@ -29,9 +29,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1,
-  "downloads_30d": 0,
-  "trending_score": 0,
+  "likes": 10,
+  "downloads_30d": 121,
+  "trending_score": 10,
   "parameters": 220260270502,
   "parameters_human": "220.26B",
   "storage_bytes": 287075867188,

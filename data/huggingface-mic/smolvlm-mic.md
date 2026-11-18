@@ -2,89 +2,93 @@
 
 ## Resumen
 
-`smolvlm-mic` es un artefacto de prueba publicado por el usuario `huggingface-mic` bajo el identificador `huggingface-mic/smolvlm-mic`. No es un modelo utilizable: se trata de un fixture ("slim fixture" denominado `mic-smolvlm-slim`) construido para verificar el comportamiento de frameworks de inferencia frente a la arquitectura de `HuggingFaceTB/SmolVLM2-2.2B-Instruct`. El propio autor lo etiqueta como `test-artifact` para excluirlo de las búsquedas de modelos candidatos.
+smolvlm-mic es un artefacto de prueba (fixture) publicado por el usuario huggingface-mic, no un modelo entrenado ni utilizable en producción. Se trata de una version reducida del modelo multimodal HuggingFaceTB/SmolVLM2-2.2B-Instruct, con solo 6.578.368 parametros (frente a los 2.200 millones del modelo original), pesos inicializados de forma aleatoria con semilla 17 y arquitectura SmolVLMForConditionalGeneration. Su proposito es servir como fixture reproducible para validar integraciones de frameworks (en concreto Transformers) sin necesidad de descargar el checkpoint completo de 2.2B.
 
-El repositorio contiene únicamente 6.578.368 parámetros (6,6 M) frente a los aproximadamente 2.200 millones del modelo base, fruto de aplicar una regla genérica de reducción (`sweep.py`) que recorta las capas ocultas de visión y de texto a 2. Los pesos son aleatorios (semilla 17) y no han sido entrenados; solo pasaron una compuerta de sensibilidad a la entrada que exigía que cada perturbación de las entradas del contrato moviera los logits al menos 0,001.
+El repositorio incluye los pesos reducidos, un manifiesto de contrato (integration.json), instrucciones de uso ejecutables (integrations/transformers/usage.md), expectativas del framework y la procedencia del fixture (build.json). Los archivos del procesador (tokenizer, chat template, preprocessor config) se copian byte a byte del modelo base, de modo que el fixture cubre cualquier checkpoint cuyo procesador sea identico y cuya config coincida tras el proceso de reduccion.
 
-Su relevancia no es funcional sino de ingeniería: permite a desarrolladores de frameworks validar contratos de integración (procesador, tokenizador, plantilla de chat, nombres de tensores, dtypes) sin descargar el checkpoint completo de 2,2 B. Incluye un manifiesto de contrato (`integration.json`), documentación de uso con Transformers y un directorio de expectativas del framework.
+Es relevante ahora para desarrolladores que trabajan en tooling de inferencia o en la integracion de modelos multimodales en Transformers: permite ejecutar pruebas de contrato, CI y validacion de APIs contra un modelo ligero que comparte nombres de tensores, config y procesador con el original, sin consumir recursos de un modelo de 2.2B. El autor lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SmolVLMForConditionalGeneration (vision-language, transformer multimodal) |
-| Parametros totales | 6.578.368 (fixture reducido; el base real tiene ~2,2 B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | SmolVLMForConditionalGeneration (transformer multimodal, vision + texto) |
+| Parametros totales | 6.578.368 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en float32) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (float32) |
+| Formato de pesos | safetensors |
+| Modelo base | HuggingFaceTB/SmolVLM2-2.2B-Instruct |
+| Tipo de artefacto | fixture de prueba (test-artifact) |
+| Semilla de inicializacion | 17 (pesos aleatorios) |
+| Precision de guardado | float32 |
+| Clave de fixture | 9530c0e74c36 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es `SmolVLMForConditionalGeneration`, la misma clase que emplea `HuggingFaceTB/SmolVLM2-2.2B-Instruct`, un modelo visión-lenguaje que combina un codificador visual con un decodificador de texto. En este fixture se ha aplicado la regla genérica de reducción de `sweep.py`: `vision num_hidden_layers = 2` y `text num_hidden_layers = 2`. Los nombres de los tensores coinciden con los del checkpoint real, de modo que el fixture expone la misma interfaz de parámetros aunque con dimensiones recortadas.
+El fixture replica la arquitectura del modelo base SmolVLMForConditionalGeneration, un transformer multimodal que combina un codificador de vision con un decodificador de lenguaje. La reduccion se aplica mediante la regla generica de sweep.py: el componente de vision queda con 2 capas ocultas (vision num_hidden_layers 2) y el componente de texto con 2 capas ocultas (text num_hidden_layers 2). Los nombres de tensores coinciden exactamente con los del checkpoint real, lo que permite validar codigo que espera esa estructura sin cargar los 2.2B parametros.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron mediante una compuerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato debía desplazar los logits al menos 0,001 (el caso más débil, `attention_mask:all_ones`, alcanzó 0,00274). Los ficheros de procesador (`added_tokens.json`, `chat_template.json`, `generation_config.json`, `merges.txt`, `preprocessor_config.json`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde el modelo base. Los pesos se guardaron en float32 y se verificó que la forward, la loss y los gradientes son finitos en float32, bfloat16 y float16.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y solo tuvieron que superar una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplaza los logits al menos 0.001 (el caso mas debil, `attention_mask:all_ones`, alcanza 0.00274). Los archivos del procesador se copian byte a byte del modelo base: added_tokens.json, chat_template.json, generation_config.json, merges.txt, preprocessor_config.json, processor_config.json, special_tokens_map.json, tokenizer.json, tokenizer_config.json y vocab.json. Los pesos se guardan en float32, el dtype con el que carga por defecto el modelo base, y se verifica que la forward, la loss y los gradientes son finitos en float32, bfloat16 y float16. El fixture se genera con build_fixtures.py y build.json registra las fuentes fijadas, los resultados de la puerta y los hashes de los archivos.
 
 ## Capacidades
 
-- No es un modelo funcional: al tener pesos aleatorios, no genera texto ni respuestas coherentes.
-- Sirve como fixture de conformidad para validar la carga de `SmolVLMForConditionalGeneration` en frameworks (nombres de tensores, shapes recortadas, dtypes).
-- Verifica el pipeline de preprocesado multimodal: tokenizador, plantilla de chat y configuración del procesador copiados del modelo base real.
-- Permite comprobar la estabilidad numérica (finitud de forward, loss y gradientes) en float32, bfloat16 y float16.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües reales, al carecer de entrenamiento.
-- No dispone de modo thinking, visión efectiva ni audio: la arquitectura los contempla, pero los pesos no los implementan.
+- No es un modelo funcional: los pesos son aleatorios y no producen salidas coherentes.
+- Replica la interfaz de SmolVLMForConditionalGeneration, incluida la ruta multimodal vision-texto del modelo base.
+- Reutiliza el tokenizer y el chat template del modelo base SmolVLM2-2.2B-Instruct, por lo que valida el pipeline de tokenizacion y formateo de conversaciones.
+- Sirve para pruebas de contrato de integracion en Transformers (carga, forward, loss, gradientes).
+- Verificado como finito en float32, bfloat16 y float16 para forward, loss y gradientes.
+- No dispone de capacidades reales de generacion, razonamiento, codigo, matematicas, tool calling, agentes ni multilingues, al carecer de entrenamiento.
+- No soporta thinking mode, audio ni ninguna capacidad especial mas alla de la estructura del modelo base.
 
 ## Casos de uso
 
-- Pruebas de integración en frameworks de inferencia: cargar el fixture con Transformers y comprobar que la clase `SmolVLMForConditionalGeneration` se instancia con los nombres de tensores esperados, sin descargar el checkpoint de 2,2 B.
-- Validación de contratos de CI/CD: usar `integration.json` y el directorio `integrations/transformers/expectations` como referencia en tests automatizados que detecten regresiones en el manejo de modelos visión-lenguaje.
-- Verificación de pipelines de tokenización y chat template: al copiarse los ficheros del procesador byte a byte, permite probar el preprocesado exacto del modelo base en entornos ligeros.
-- Comprobación de estabilidad numérica por dtype: ejecutar forward, loss y backward en float32, bfloat16 y float16 para asegurar que un framework no produce NaN ni infinitos con esta arquitectura.
-- Desarrollo de herramientas de reducción de checkpoints: el repositorio documenta el proceso de "shrink" y sirve de ejemplo reproducible para construir fixtures propios con `build_fixtures.py`.
-- Pruebas de sensibilidad a entradas: replicar la compuerta que exige que cada perturbación de las entradas mueva los logits al menos 0,001, útil para validar harness de evaluación.
+- Pruebas de CI en Transformers: cargar el fixture en pipelines de integracion continua para verificar que el codigo de carga de SmolVLMForConditionalGeneration no rompe ante cambios de API, sin descargar el checkpoint de 2.2B.
+- Validacion de contratos de integracion: usar integration.json e integrations/transformers/expectations para comprobar que una implementacion de framework cumple las expectativas de entradas, salidas y nombres de tensores.
+- Desarrollo de tooling de inferencia: probar rutas de forward, calculo de loss y retropropagacion en float32, bfloat16 y float16 sobre un modelo ligero que comparte estructura con el original.
+- Pruebas de tokenizer y chat template: validar el formateo de conversaciones y el manejo de tokens especiales reutilizando los archivos del procesador copiados byte a byte del modelo base.
+- Verificacion de compatibilidad de checkpoints: comprobar que una herramienta que inspecciona configuraciones y nombres de tensores funciona igual sobre el fixture y sobre el checkpoint real.
+- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture mic-smolvlm-slim` y comparar hashes registrados en build.json para auditar la procedencia.
+- Formacion y documentacion: usar el repositorio como ejemplo didactico de como reducir un modelo multimodal manteniendo la interfaz publica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad sería carente de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K u otras) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 para los 6,6 M de parámetros del fixture; el modelo base real de 2,2 B requeriría varios GB según cuantización (dato no disponible en la información proporcionada).
-- GPU recomendadas: cualquier GPU consumer moderna basta para el fixture; no se especifican requisitos para el modelo base.
-- Cabe en cualquier GPU consumer e incluso en CPU, dado el tamaño reducido del fixture.
-- Opciones de despliegue: Transformers (documentado en `integrations/transformers/usage.md`); no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 (6,6M parametros); el peso de los tensores es de decenas de MB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU.
+- Opciones de despliegue: Transformers es la via documentada (integrations/transformers/usage.md); no se documentan vLLM, llama.cpp, Ollama ni TGI para este artefacto.
+- Latencia y throughput: no disponibles; al no ser un modelo funcional, las mediciones de rendimiento no son representativas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/smolvlm-mic` (este) | 6,6 M (fixture) | no disponible | Artefacto de prueba | no disponible | Hugging Face |
-| `HuggingFaceTB/SmolVLM2-2.2B-Instruct` | ~2,2 B | no disponible | Modelo visión-lenguaje real | no disponible en la información | Hugging Face |
-| Otros fixtures `huggingface-mic` | variable | no disponible | Artefactos de prueba | no disponible | Hugging Face |
+| smolvlm-mic | 6,6M | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| HuggingFaceTB/SmolVLM2-2.2B-Instruct | 2,2B | no disponible | Modelo multimodal funcional | no disponible | Hugging Face |
+| Otros fixtures de la familia MIC | variable | no disponible | Pruebas de contrato | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la información proporcionada.
+La comparacion directa con modelos funcionales no es pertinente: smolvlm-mic solo comparte arquitectura y procesador con SmolVLM2-2.2B-Instruct, pero carece de entrenamiento y de capacidades reales. Su alternativa natural son otros fixtures del mismo proyecto (por ejemplo, el fixture mic-smolvlm-slim que el propio repositorio referencia) y no modelos de produccion.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y las salidas no tienen significado.
-- El autor lo etiqueta explícitamente como `test-artifact`; no debe emplearse en producción ni incluirse en evaluaciones de calidad.
-- La licencia no está declarada, lo que impide determinar condiciones de uso comercial.
-- El tamaño de 6,6 M no refleja el del modelo base (2,2 B); las conclusiones sobre rendimiento o memoria no son extrapolables.
-- Los ficheros del procesador se copiaron del modelo base, pero el resto de configuración está reducido, por lo que algunas rutas de código pueden comportarse de forma distinta al checkpoint real.
-- No hay información sobre sesgos, alucinación o cobertura idiomática, al no existir entrenamiento.
-- El repositorio ocupa 0,0 GB según los metadatos, pero el autor indica que solo incluye los pesos reducidos, el uso y las expectativas; otros ficheros deben regenerarse con `build_fixtures.py`.
+- Pesos aleatorios: las salidas no son coherentes ni utilizables; no debe desplegarse en produccion bajo ninguna circunstancia.
+- Etiquetado como `test-artifact`: el autor lo excluye deliberadamente de la busqueda de modelos candidatos.
+- Licencia no disponible: no se puede confirmar el regimen de uso comercial ni de redistribucion.
+- Idiomas no disponibles: al no haber entrenamiento, no hay capacidades multilingues reales.
+- Longitud de contexto no disponible: la config reducida no documenta la ventana efectiva.
+- Riesgo de confusion: el nombre y la estructura pueden llevar a error si se usa sin leer la model card; conviene verificar siempre la etiqueta `test-artifact`.
+- Procedencia: la validez del fixture depende de la version fijada del modelo base y de la regla de reduccion de sweep.py; cambios en el checkpoint original pueden invalidar la clave de fixture.
+- No sustituye a pruebas con el checkpoint real para validar calidad, sesgos o alucinaciones.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/smolvlm-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/smolvlm-mic
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/smolvlm-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/smolvlm-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/smolvlm-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/smolvlm-mic/blob/main/build.json
-- Documentación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/smolvlm-mic.html
-- Script de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/smolvlm-mic.html
+- Regla de reduccion (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion (build_fixtures.py): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

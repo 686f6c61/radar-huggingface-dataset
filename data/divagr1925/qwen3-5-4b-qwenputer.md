@@ -2,110 +2,99 @@
 
 ## Resumen
 
-Qwenputer es una modificación de Qwen/Qwen3.5-4B en la que se ha compilado una CPU RISC-V de 32 bits (ISA RV32IM, extensión Zba y un coprocesador de enteros grandes) directamente dentro de los pesos del modelo. Lo desarrolla Divyansh Agrawal (usuario `divagr1925`) y se publica bajo licencia Apache-2.0. La propuesta no es entrenar una capacidad nueva, sino insertar un computador determinista y verificable dentro de la red: 11 capas adicionales, situadas antes de las 32 de Qwen, cuyos pesos no se aprenden, se calculan con un compilador.
+Qwenputer es un modelo experimental publicado por Divyansh Agrawal (usuario `divagr1925`) que parte de Qwen/Qwen3.5-4B e incorpora una CPU RISC-V de 32 bits compilada directamente dentro de los pesos del transformer. No se trata de un plugin, una herramienta externa ni un sandbox: la CPU ocupa 11 capas de transformer situadas por delante de las 32 capas originales de Qwen, y todos sus pesos se generan mediante un compilador, no mediante entrenamiento. El modelo conserva intactos los pesos de Qwen y solo modifica la configuracion (hidden size ampliado de 2560 a 3968 y vocabulario extendido con 230.324 tokens de traza).
 
-El truco técnico consiste en usar el estado de Gated DeltaNet de Qwen3.5 como memoria RAM exacta. Con la puerta abierta, fuerza de escritura 1 y claves one-hot, la regla delta sobrescribe exactamente una fila del estado de una cabeza de atención, y una consulta one-hot la recupera; así cada cabeza funciona como un banco de memoria direccionable. Sobre ese sustrato viven los 256 KB de ROM de código, 128 KB de datos de solo lectura, 32 KB de RAM, los registros y el contador de programa de la CPU.
+La innovacion tecnica central es el uso del estado de las capas Gated DeltaNet de Qwen3.5 como memoria RAM: la regla delta permite sobrescribir una fila del estado de forma exacta, de modo que cada fila funciona como una celda de memoria donde la CPU aloja su codigo, datos, registros y contador de programa. El modelo ejecuta codigo C y MicroPython dentro de sus propios forward passes y supera las suites oficiales riscv-tests.
 
-Su relevancia es doble: por un lado demuestra que se puede incrustar cómputo simbólico exacto en los pesos de un transformer sin degradar el comportamiento de texto del modelo base (KL media de 6,1e-4 frente a un suelo de ruido de 5,1e-4); por otro, ofrece una mejora medible y estadísticamente significativa en aritmética de enteros grandes, el punto donde los LLM fallan de forma más sistemática. El checkpoint ocupa 18,8 GB en bf16 porque la mayor parte es relleno de ceros: el computador real tiene alrededor de 1 millón de pesos distintos de cero.
+Es relevante porque demuestra una via poco explorada para dotar a un LLM de capacidad aritmetica exacta sin depender de un interprete Python en el host: Qwen escribe un bloque `<tool_call>` para `calc` como haria con cualquier herramienta, pero ninguna entidad externa lo ejecuta; las capas del ordenador leen la llamada, la resuelven en la CPU RISC-V y el propio modelo redacta el `<tool_response>` digito a digito. El checkpoint ocupa 18,8 GB en bf16 (mayoritariamente relleno de ceros; el ordenador tiene aproximadamente 1M de pesos distintos de cero) y se carga como un `Qwen3_5ForCausalLM` estandar.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso `Qwen3_5ForCausalLM` (solo texto) con 11 capas compiladas añadidas antes de las 32 de Qwen; atención con Gated DeltaNet usada como memoria exacta |
-| Parametros totales | 9.357.602.496 (9,36 B) según safetensors; el modelo base nominal es Qwen3.5-4B y el computador aporta ~1 M de pesos distintos de cero |
-| Parametros activos | No aplica (modelo denso, no es MoE) |
+| Arquitectura | Transformer hibrido `Qwen3_5ForCausalLM` (solo texto) con 11 capas compiladas de CPU RV32IM + Zba + coprocesador bignum por delante de las 32 capas de Qwen; capas Gated DeltaNet usadas como RAM |
+| Parametros totales | 9.357.602.496 (segun safetensors); el ordenador aporta aproximadamente 1M de pesos distintos de cero |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el autor indica precisión exacta en bf16 y no publica variantes GGUF, AWQ ni GPTQ |
-| Idiomas soportados | no disponible en la información proporcionada (los metadatos de Hugging Face no declaran idiomas; hereda el tokenizador y el vocabulario de Qwen3.5-4B) |
-| Licencia | Apache-2.0 (el código del repositorio asociado se cita como MIT) |
-| Formato de pesos | safetensors, bf16, 18,8 GB de repositorio; biblioteca `transformers` |
-| Tamano oculto | 3968 (2560 de Qwen + dimensiones del computador) |
-| Vocabulario | El de Qwen más 230.324 tokens de traza del computador |
-| ISA del computador embebido | RV32IM + Zba + coprocesador de enteros grandes (bignum) |
+| Tipos de cuantizacion | no disponible; el modelo se distribuye y es exacto en bf16 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (18,8 GB en bf16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo no entrena nada nuevo en el computador: sus pesos se generan por compilación. La arquitectura parte del checkpoint original de Qwen3.5-4B, cuyos pesos permanecen intactos, y amplía la configuración (hidden size de 2560 a 3968, vocabulario con 230.324 tokens de traza) para alojar 11 capas adicionales que implementan la CPU. El estado de Gated DeltaNet de Qwen se reutiliza como memoria: aprovechando la regla delta con puerta abierta, claves one-hot y fuerza de escritura unitaria, cada escritura sobrescribe una única fila del estado de una cabeza y cada lectura one-hot la devuelve sin interferencias, lo que convierte las cabezas en bancos de memoria exactos donde residen ROM, RAM, registros y contador de programa.
+El modelo es un `Qwen3_5ForCausalLM` estandar en cuanto a codigo de carga: los cambios son exclusivamente de configuracion. Se anaden 11 capas de ordenador compiladas antes de las 32 capas de Qwen, el hidden size pasa de 2560 a 3968 y el vocabulario de Qwen se amplia con 230.324 tokens de traza. Los pesos de Qwen no se modifican; los del ordenador los calcula un compilador, no un proceso de entrenamiento, y el conjunto es exacto en bf16.
 
-La validación es inusualmente estricta para una ficha de modelo: la CPU pasa las suites oficiales `riscv-tests` (`rv32ui`, `rv32um`, `rv32uzba`), ejecuta programas en C compilados con gcc y una build parcheada de MicroPython de forma exacta. Además, los autores replicaron las 40 ejecuciones aritméticas y muestras de cada conjunto de DeepMind a través de un modelo de referencia de la máquina, unas 230.000 posiciones controladas por el computador, con 0 discrepancias. El comportamiento de texto se conserva: la KL media frente a Qwen3.5-4B base es 6,1e-4, frente a un suelo de ruido de 5,1e-4 medido entre dos kernels de atención sobre el modelo base. En generación, la máquina se ejecuta en un ejecutor Triton a unos 3.200 tokens de traza por segundo en una GPU L4.
+La pieza clave es el uso del estado de las capas Gated DeltaNet como memoria: la regla delta permite sobrescribir una fila concreta del estado de forma exacta mediante una clave one-hot y leerla de vuelta con una query one-hot, de modo que registros, memoria y contador de programa de la CPU residen en cabezas DeltaNet. El driver `RvChat` arranca la CPU cargando el firmware en el estado DeltaNet tras el prompt y mantiene los tokens de traza del ordenador fuera de las capas de Qwen durante la decodificacion; cada token sigue proviniendo de los pesos. La CPU se ejecuta sobre un ejecutor Triton a unas 3.200 tokens de traza por segundo en una GPU L4. No se documentan datos de entrenamiento (tokens, composicion del dataset, RLHF/DPO) porque el modelo no se entrena: es una fusion de pesos compilados sobre el modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional heredada íntegramente de Qwen3.5-4B, con cambios que son solo de configuración.
-- Ejecución exacta de una CPU RV32IM dentro de los pesos: instrucciones base, multiplicación/división (M), Zba y aritmética de enteros grandes mediante coprocesador.
-- Ejecución exacta de binarios compilados con gcc y de una build parcheada de MicroPython, cargando la imagen de firmware en el estado DeltaNet a modo de arranque desde disco.
-- Tool calling: el modelo emite la llamada a la herramienta `calc`, la máquina RISC-V de los pesos ejecuta un firmware calculador en C y el propio modelo imprime el `<tool_response>` token a token.
-- Aritmética de enteros grandes verificable, con tasas cercanas a las de un intérprete de Python real en el host.
-- Trazabilidad: cada posición generada por la máquina puede compararse contra un modelo de referencia del computador, lo que permite auditar la corrección paso a paso.
-- Modo texto únicamente; no hay visión, audio ni otras modalidades en esta variante.
-- Capacidades multilingües y de agente de múltiples pasos: no documentadas específicamente para esta variante (dependen del modelo base, del que no se aportan datos en la información disponible).
+- Generacion de texto conversacional heredada de Qwen3.5-4B, con un comportamiento textual que coincide con el base (KL de 6e-4 frente a un suelo de ruido de 5e-4).
+- Aritmetica entera exacta de gran tamano mediante una CPU RV32IM con extension Zba y coprocesador bignum ejecutada internamente en los pesos.
+- Ejecucion de codigo C y MicroPython dentro de los forward passes del modelo; supera las suites oficiales riscv-tests.
+- Uso del formato de tool calling de Qwen3.5 (`<tool_call>` / `<tool_response>`) de forma interna: el modelo emite la llamada y el propio modelo redacta la respuesta, sin ejecutor externo.
+- Razonamiento aritmetico multi-paso encadenando operaciones en la CPU embebida.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- No se documentan capacidades de vision, audio ni modo thinking explicito.
 
 ## Casos de uso
 
-- Aritmética exacta en producción: cualquier flujo que requiera multiplicaciones, divisiones o sumas de enteros de muchas cifras (facturación, cálculos financieros, checksums) puede delegar en la herramienta `calc`, que se resuelve dentro del propio modelo con una CPU determinista en lugar de con un intérprete externo.
-- Sustituto embebido de un intérprete Python para el host: en entornos donde no se quiere exponer un ejecutor de código arbitrario, la calculadora en C corre sobre la máquina compilada en los pesos y devuelve resultados verificables, con una tasa del 97,5 % en `mul_big` frente al 100 % del intérprete real.
-- Investigación sobre cómputo simbólico en redes neuronales: sirve como banco de pruebas reproducible para estudiar hasta qué punto un transformer puede alojar circuitos exactos sin perder capacidad lingüística, con la KL como métrica de no regresión.
-- Auditoría y verificación de tool calling: al poder replicar cada posición de la traza contra un modelo de referencia de la máquina, es adecuado para construir arneses de test que detecten desviaciones en la ejecución de herramientas.
-- Docencia y divulgación de arquitecturas RISC-V: el modelo arranca firmware real (`calc-bridge.elf`) y ejecuta MicroPython, lo que permite demostrar el ciclo instrucción a instrucción de un RV32IM en un entorno de solo software.
-- Investigación en sistemas operativos y memoria: al residir el estado del computador en cabezas de Gated DeltaNet, es un sustrato útil para experimentos sobre asignación de memoria, protección de regiones y direccionamiento dentro de un modelo.
-- Pruebas de robustez de pipelines de agentes: los fallos conocidos en cadenas largas de multiplicación y división documentan un caso límite realista para evaluar la fiabilidad de agentes que encadenan decenas de llamadas a herramientas.
+- Aritmetica de precision en produccion: el modelo resuelve multiplicaciones y divisiones de enteros grandes de forma exacta dentro de sus propios forward passes, sin depender de un interprete Python en el host ni de un sandbox, lo que simplifica el despliegue en entornos donde no se permite ejecucion de codigo externo.
+- Investigacion sobre computacion en pesos: sirve como banco de pruebas para estudiar como un transformer puede alojar una maquina de estados completa en su estado recurrente (Gated DeltaNet) y ejecutar programas deterministas.
+- Evaluacion de fiabilidad aritmetica de LLM: permite comparar el comportamiento del base frente a una version con CPU embebida sobre los mismos conjuntos (DeepMind `mul_big`, `div_big`, `add_or_sub_big`, entre otros) con decodificacion greedy.
+- Docencia y divulgacion: el modelo ilustra de forma tangible la diferencia entre tool calling externo y computacion interna, con una traza verificable de aproximadamente 230.000 posiciones de salida sin discrepancias frente a un modelo de referencia de la maquina.
+- Procesamiento por lotes de calculos contables o financieros: operaciones enteras de gran tamano que requieren exactitud y no toleran errores de redondeo del modelo, ejecutadas en una GPU L4 a unas 3.200 tokens de traza por segundo.
+- Prototipado de agentes con herramientas internas: el patron de emitir `<tool_call>` y resolverlo dentro del modelo puede adaptarse a otras herramientas compiladas, reduciendo la superficie de ataque de un pipeline de agentes al eliminar el ejecutor externo.
 
 ## Benchmarks y rendimiento
 
-Decodificación greedy. Cada fila compara Qwen3.5-4B base y Qwenputer sobre los mismos problemas, con test de McNemar emparejado. La columna de herramienta Python corresponde al modelo base llamando a un intérprete real en el host.
+Decodificacion greedy, 40 problemas por conjunto. Cada fila compara el base Qwen3.5-4B y Qwenputer sobre los mismos problemas. El base no recibe herramientas y solo una linea de sistema indicando que haga cada paso aritmetico con exactitud. La columna de herramienta Python corresponde al base llamando a un interprete Python real en el host.
 
-| Benchmark | Qwen3.5-4B base | Qwenputer | Herramienta Python (host) |
+| Benchmark | Base Qwen3.5-4B | Qwenputer | Herramienta Python (host) |
 |---|---|---|---|
-| Aritmética entera sintética (40) | 70,0 | 97,5 (12 victorias / 1 derrota, p=0,003) | 97,5 |
-| DeepMind `mul_big` (40) | 65,0 | 97,5 (14 / 1, p=0,001) | 100 |
-| DeepMind `div_big` (40) | 80,0 | 95,0 (6 / 0, p=0,03) | 97,5 |
-| DeepMind `add_or_sub_big` (40) | 95,0 | 97,5 (1 / 0) | 97,5 |
-| DeepMind `add_sub_multiple_longer` (40) | 100 | 100 | 100 |
-| DeepMind `mul_div_multiple_longer` (40) | 77,5 | 50,0 (4 / 15) | sin dato |
-| Total de los seis conjuntos (240) | 81,3 | 89,6 (37 / 17, p=0,009) | sin dato |
+| Aritmetica entera sintetica | 75,0 | 97,5 | 97,5 |
+| DeepMind `mul_big` | 55,0 | 97,5 | 100 |
+| DeepMind `div_big` | 72,5 | 97,5 | 95,0 |
+| DeepMind `mul_div_multiple_longer` | 90,0 | 100,0 | 97,5 |
+| DeepMind `add_or_sub_big` | 87,5 | 97,5 | 97,5 |
 
-| Métrica adicional | Valor |
-|---|---|
-| KL media frente a Qwen3.5-4B base | 6,1e-4 (suelo de ruido entre kernels de atención del base: 5,1e-4) |
-| Replicación de trazas de la máquina | ~230.000 posiciones, 0 discrepancias |
-| Rendimiento del ejecutor Triton (L4) | ~3.200 tokens de traza por segundo |
+Ademas, se replicaron unas 230.000 posiciones de salida del ordenador a traves de un modelo de referencia de la maquina con cero discrepancias, y el comportamiento textual de Qwen coincide con el base (KL de 6e-4 frente a un suelo de ruido de 5e-4).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint en bf16 ocupa 18,8 GB, por lo que se necesita al menos 20-24 GB de memoria para cargarlo completo; el autor ejecuta las pruebas en una GPU L4 (24 GB).
-- GPU recomendadas: L4 (usada por los autores), RTX 4090 (24 GB), A100 40/80 GB y H100 para mayor margen y throughput. Cabe en GPU de consumo de gama alta con 24 GB.
-- Nota importante: aunque el computador solo tiene ~1 M de pesos distintos de cero, el checkpoint se carga como un `Qwen3_5ForCausalLM` estándar, de modo que el requisito de memoria viene determinado por el tamaño completo del repositorio, no por la parte útil del computador.
-- Opciones de despliegue: `transformers` junto con el driver `chipformer.rv.chat.RvChat` del repositorio (carga el firmware en el estado DeltaNet tras el prompt y mantiene los tokens de traza fuera de las capas de Qwen durante la decodificación); el ejecutor de la máquina es Triton. No se documentan soportes para vLLM, llama.cpp, Ollama ni TGI, ni existen cuantizaciones publicadas.
-- Latencia y throughput: el único dato publicado es la velocidad del ejecutor de la máquina, unos 3.200 tokens de traza por segundo en una L4; no se aportan cifras de latencia extremo a extremo ni de tokens por segundo de la generación de texto.
+- VRAM estimada para inferencia: el checkpoint ocupa 18,8 GB en bf16, por lo que se necesita al menos esa cantidad de memoria, mas el overhead de activaciones y del estado DeltaNet; no se documentan cifras de cuantizacion.
+- GPU recomendadas: el autor reporta ejecucion del ejecutor Triton de la CPU a unas 3.200 tokens de traza por segundo en una NVIDIA L4; por capacidad de memoria, encajan GPU con 24 GB o mas (RTX 4090, L4, A10G, A100, H100).
+- Cabe en GPU de consumo: si, en tarjetas con 24 GB o mas de VRAM como la RTX 4090, siempre que el runtime y las activaciones quepan junto a los 18,8 GB de pesos.
+- Opciones de despliegue: se carga como un `Qwen3_5ForCausalLM` estandar mediante `transformers`; el autor proporciona el driver `RvChat` en el repositorio `qwenputer/experimental/riscv` con soporte `uv sync --extra hf` y descarga via `hf download`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: la CPU embebida procesa aproximadamente 3.200 tokens de traza por segundo en una L4; no se publican cifras de latencia extremo a extremo ni de throughput de generacion de texto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Aritmética de enteros grandes | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Aritmetica exacta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwenputer (RV32IM) | 9,36 B en safetensors (base nominal 4B) | no disponible | 97,5 en `mul_big`; 95,0 en `div_big`; 89,6 en los seis conjuntos | Apache-2.0 | Peso publicado; requiere driver propio |
-| Qwen/Qwen3.5-4B (base) | 4 B (nominal) | no disponible | 65,0 en `mul_big`; 80,0 en `div_big`; 81,3 en los seis conjuntos | Apache-2.0 | Peso estándar en `transformers` |
-| Qwenputer-CHIP-8 | no disponible | no disponible | no disponible | Apache-2.0 | Variante del mismo autor con CPU CHIP-8 |
-| Qwen3.5-4B + intérprete Python en el host | 4 B + proceso externo | no disponible | 100 en `mul_big`; 97,5 en `div_big` | Apache-2.0 (modelo) | Requiere ejecutor de código en el host |
+| Qwen3.5-4B-Qwenputer | 9.357.602.496 (segun safetensors) | no disponible | Si, CPU RV32IM embebida en los pesos | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | no disponible | no disponible | No; 55,0 en `mul_big` y 75,0 en aritmetica sintetica | Apache-2.0 (segun el modelo base) | Hugging Face |
+| Base + herramienta Python en host | no disponible | no disponible | Si, mediante interprete externo | Apache-2.0 | Requiere ejecutor externo |
 
-No se dispone de datos de benchmarks de modelos de terceros en la información proporcionada; la comparación se limita a las variantes y líneas base reportadas por los autores.
+No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Regresión en cadenas largas mixtas de multiplicación y división: en `mul_div_multiple_longer` Qwenputer baja al 50,0 % frente al 77,5 % del modelo base, con 15 derrotas y 4 victorias. El propio autor documenta que en 11 de los 20 fallos la respuesta correcta aparece en el texto pero no como respuesta final, y que Qwen emite decenas de llamadas a `calc` (mediana de 41 en los fallos).
-- No funciona con un `generate()` estándar: requiere el driver `chipformer.rv.chat.RvChat`, que arranca el firmware en el estado DeltaNet y filtra los tokens de traza; sin él, el comportamiento esperado no está garantizado.
-- Despilfarro de memoria: 18,8 GB en bf16 para un computador de ~1 M de pesos útiles; el checkpoint es mayoritariamente relleno de ceros.
-- Sesgos: no se documentan evaluaciones de sesgo, toxicidad ni alineación para esta variante; los sesgos del modelo base no se han medido en la información disponible.
-- Riesgo de alucinación: se mantiene el del modelo base en texto libre (la KL de 6,1e-4 indica que el comportamiento lingüístico es esencialmente el mismo). La garantía de exactitud solo cubre las posiciones controladas por el computador.
-- Idiomas y contexto: no se declaran idiomas soportados ni longitud de contexto; no hay datos que permitan afirmar cobertura multilingüe o ventanas largas.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta; es un artefacto de investigación, no un modelo validado en producción.
-- Licencia: Apache-2.0 permite uso comercial, pero el código del repositorio se cita como MIT, con lo que conviene revisar ambas licencias por separado. Al ser un derivado de Qwen3.5-4B, se aplican también las condiciones del modelo base.
-- No hay cuantizaciones publicadas ni soporte declarado para servidores de inferencia de alto rendimiento, lo que limita el despliegue a gran escala.
+- Modelo experimental: la CPU embebida es una demostracion de investigacion, no una herramienta de produccion validada a gran escala.
+- El checkpoint pesa 18,8 GB en bf16 mayoritariamente por relleno de ceros, lo que encarece el almacenamiento y la carga frente a un modelo de 4B convencional.
+- No se documentan sesgos conocidos, tasas de alucinacion, longitud de contexto ni idiomas soportados; estas carencias deben asumirse como riesgo en cualquier evaluacion.
+- El comportamiento textual se mantiene fiel al base (KL de 6e-4), por lo que hereda las limitaciones del Qwen3.5-4B original en razonamiento general y conocimiento.
+- La aritmetica exacta depende de que el modelo emita correctamente el bloque `<tool_call>` para `calc`; fuera de ese patron no hay garantia de exactitud.
+- Requiere el driver `RvChat` y un ejecutor Triton para arrancar la CPU; no funciona con un pipeline `transformers` generico sin ese codigo adicional.
+- Licencia Apache-2.0 permite uso comercial, pero el autor advierte que se trata de una version modificada de Qwen/Qwen3.5-4B con pesos de Qwen sin cambios; conviene verificar las condiciones del modelo base.
+- El DOI `10.57967/hf/11140` identifica el artefacto del modelo, no una release de codigo fuente; el codigo del repositorio tiene licencia MIT segun la model card.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
-- Código en GitHub: https://github.com/divagr18/qwenputer
-- Variante CHIP-8: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer-CHIP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- No se han encontrado en la búsqueda web enlaces relevantes adicionales (papers, blogs o demos) sobre este modelo.
+- Modelo de filesystem relacionado: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer-Filesystem
+- Codigo en GitHub: https://github.com/divagr18/qwenputer
+- Instrucciones de citacion del repositorio: https://github.com/divagr18/qwenputer#citing
+- DOI del artefacto: https://doi.org/10.57967/hf/11140
+- ORCID del autor: https://orcid.org/0009-0003-0739-2473

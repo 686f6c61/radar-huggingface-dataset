@@ -5,7 +5,7 @@
   "author": "balllvin",
   "url": "https://huggingface.co/balllvin/d1-omni-600M-MLX-8bit",
   "created_at": "2026-11-17T09:08:07.000Z",
-  "updated_at": "2026-11-17T15:40:47.000Z",
+  "updated_at": "2026-11-17T18:40:14.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -16,10 +16,8 @@
   "tags": [
     "mlx",
     "safetensors",
-    "gguf",
     "d1_omni",
     "mlx-vlm",
-    "llama.cpp",
     "8-bit",
     "d1-omni",
     "decision",
@@ -30,10 +28,7 @@
     "base_model:LiquidAI/d1-omni-600M",
     "base_model:quantized:LiquidAI/d1-omni-600M",
     "license:other",
-    "endpoints_compatible",
-    "region:us",
-    "decision-model",
-    "feature-extraction"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 0,
@@ -45,7 +40,6 @@
   "context_length": 128000,
   "base_model": "LiquidAI/d1-omni-600M",
   "formats": [
-    "gguf",
     "mlx",
     "safetensors"
   ],

@@ -29,8 +29,8 @@
     "conversational"
   ],
   "likes": 54,
-  "downloads_30d": 23412,
-  "trending_score": 16,
+  "downloads_30d": 24055,
+  "trending_score": 14,
   "parameters": 2025387776,
   "parameters_human": "2.03B",
   "storage_bytes": 7521604205,
@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark",
-      "url": "https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide",
-      "snippet": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark On August 14, 2026, Alibaba's Qwen team released the weights of Qwen3.8-27B under Apache 2.0 on Hugging Face – making it the most exciting local model in the 27B class right now."
-    },
-    {
-      "title": "Qwen3.8 27b - GGUF Model (2 parts) - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b.html",
-      "snippet": "Download Qwen3.8 27b GGUF model. 113.4 GB, 6,061,170 downloads, 5558 likes. Split into 2 parts."
-    }
-  ]
+  "sources": []
 }

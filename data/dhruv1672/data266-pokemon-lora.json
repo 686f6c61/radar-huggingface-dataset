@@ -5,7 +5,7 @@
   "author": "dhruv1672",
   "url": "https://huggingface.co/dhruv1672/data266-pokemon-lora",
   "created_at": "2026-11-15T03:50:57.000Z",
-  "updated_at": "2026-11-15T04:35:08.000Z",
+  "updated_at": "2026-11-17T08:23:06.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 56,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -2,84 +2,92 @@
 
 ## Resumen
 
-El modelo `ApolloRaines/Qwen2.5-Coder-14B-Instruct-Jbliterated` es una variante del modelo de código `Qwen/Qwen2.5-Coder-14B-Instruct` de Alibaba, sometida a un proceso de "jbliteration" (una forma avanzada de abliteración) que elimina quirúrgicamente los comportamientos de rechazo a nivel de pesos. Desarrollado por ApolloRaines, este modelo está pensado para desarrolladores e investigadores que necesitan un asistente de código sin las restricciones de seguridad del modelo original, manteniendo intactas las capacidades de razonamiento, matemáticas y generación de código.
+Qwen2.5-Coder-14B-Instruct-Jbliterated es una variante modificada del modelo Qwen2.5-Coder-14B-Instruct de Alibaba Qwen, publicada por el usuario ApolloRaines bajo el marco que el autor denomina "jBlaze precision neural surgery" o "jbliteration". El objetivo declarado es eliminar el comportamiento de rechazo (refusal) mediante cirugía directa de pesos, sin entrenamiento por gradientes ni parches en tiempo de inferencia. El modelo conserva la arquitectura y el conocimiento del modelo base, pero los pesos ya no codifican la disposición aprendida a rechazar peticiones.
 
-La arquitectura es un transformer decoder-only de la familia Qwen2, con 14.770 millones de parámetros y una ventana de contexto de 128.000 tokens heredada del modelo base. El proceso de jbliteration aplica 5 direcciones de eliminación por capa en las 48 capas del modelo, con restricciones de espacio nulo y preservación de norma para no degradar el rendimiento en tareas técnicas. El resultado es un modelo "uncensored" que responde sin evasivas ni advertencias, aunque con los riesgos éticos y legales que ello conlleva.
+El modelo base es un transformer decoder-only de 14.770.033.664 parámetros (aproximadamente 14,8 mil millones), especializado en generación de código y conversación técnica, con licencia Apache 2.0. Esta variante mantiene esa licencia y se distribuye en formatos safetensors y GGUF, lo que facilita su despliegue tanto con transformers como con llama.cpp u Ollama.
 
-La relevancia actual radica en la creciente demanda de modelos de código sin censura para investigación en alineación, pruebas de robustez y desarrollo de agentes autónomos. Sin embargo, su uso en producción debe evaluarse cuidadosamente por las implicaciones de seguridad y cumplimiento normativo.
+La relevancia de esta ficha es doble: por un lado, documenta un modelo de código de tamano medio con contexto largo y buen rendimiento en tareas de programación; por otro, ilustra una técnica controvertida de modificación de pesos orientada a seguridad ofensiva y análisis defensivo, cuyas implicaciones éticas y de uso deben evaluarse con cuidado antes de cualquier despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2 (transformer decoder-only) |
-| Parametros totales | 14.770.033.664 (14,7 B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 128.000 tokens (heredado del modelo base) |
-| Tipos de cuantizacion | No disponible (el repositorio incluye pesos en safetensors y GGUF, pero no se especifican los tipos de cuantizacion) |
-| Idiomas soportados | Ingles (segun la ficha del autor; el modelo base soporta mas idiomas) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Arquitectura | Transformer decoder-only (familia Qwen2.5), basada en Qwen/Qwen2.5-Coder-14B-Instruct |
+| Parametros totales | 14.770.033.664 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-Coder-14B-Instruct soporta 32.768 tokens nativos y hasta 131.072 con RoPE scaling, segun la documentacion de Qwen; no confirmado para esta variante) |
+| Tipos de cuantizacion | safetensors en precision completa (fp16/bf16 segun el repo); GGUF disponible en el repositorio (niveles concretos no especificados) |
+| Idiomas soportados | en (ingles declarado en la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `Qwen2.5-Coder-14B-Instruct`, un transformer decoder-only con 48 capas, atención multi-cabeza y normalización RMSNorm, entrenado por Alibaba con un corpus extenso de código y texto técnico. La variante jbliterated no se entrena desde cero; en su lugar, se aplica una intervención post-entrenamiento sobre los pesos del modelo base. El proceso, descrito en la model card, elimina 5 direcciones de rechazo por capa en todas las 48 capas, utilizando restricciones de espacio nulo para preservar las capacidades de matemáticas, código y razonamiento, y con preservación de norma para mantener la estabilidad numérica.
+La arquitectura corresponde integramente al modelo base Qwen2.5-Coder-14B-Instruct: un transformer decoder-only con atención por causalidad, normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). No se ha realizado ningún entrenamiento adicional sobre esta variante; la modificación consiste exclusivamente en una intervención sobre los pesos ("weight surgery") que busca identificar y neutralizar la dirección latente asociada al comportamiento de rechazo. El autor afirma que el método "jbliteration" es una versión de precisión de la abliteración estándar, diseñada para preservar las capacidades del modelo en lugar de degradarlas de forma colateral.
 
-No se dispone de información detallada sobre el dataset de entrenamiento original ni sobre el proceso de fine-tuning del modelo base. La técnica de jbliteration es una evolución de la abliteración estándar, que elimina no solo la respuesta superficial de rechazo sino también los comportamientos indirectos como la reinterpretación de prompts, la inyección de descargos o la omisión estratégica de información.
+No se dispone de información sobre el número de tokens de entrenamiento del modelo base, la composición del dataset, ni si hubo fases de RLHF o DPO en su construcción original dentro de la información proporcionada. El autor menciona que el pipeline ha sido actualizado y que este modelo será re-procesado con la versión mejorada, lo que sugiere que la intervención actual puede no ser la definitiva. Tampoco se documentan innovaciones de inferencia como decodificación especulativa o atención lineal; el modelo hereda las características estándar de la familia Qwen2.5.
 
 ## Capacidades
 
-- Generacion de codigo en multiples lenguajes de programacion, incluyendo Python, Java, C++, JavaScript y otros, con soporte para completado, generacion y explicacion de codigo.
-- Razonamiento logico y matematico avanzado, heredado del modelo base, con capacidad para resolver problemas complejos de programacion competitiva.
-- Soporte de tool calling y function calling, lo que permite integrar el modelo en pipelines de agentes que invocan APIs o ejecutan acciones externas.
-- Capacidad de seguir instrucciones multi-turno en conversaciones largas, gracias a la ventana de contexto de 128K tokens.
-- Generacion de contenido sin rechazo: el modelo responde a preguntas que el modelo base rechazaria, incluyendo temas sensibles, aunque con los riesgos asociados.
-- No incluye capacidades de vision ni audio; es exclusivamente texto.
+- Generación de texto y código en inglés, con especial énfasis en lenguajes de programación y tareas de ingeniería de software.
+- Razonamiento técnico y resolución de problemas de programación, incluyendo depuración y explicación de código.
+- Conversación multi-turno con mantenimiento de contexto (longitud exacta no confirmada para esta variante).
+- Generación de código para múltiples lenguajes, aunque la model card no detalla la lista exacta.
+- Capacidad de análisis de código potencialmente malicioso o "hostil", que es el caso de uso declarado por el autor para justificar la eliminación del rechazo.
+- No se documenta soporte explícito de tool calling, function calling ni modo agente en la información disponible, aunque el modelo base Qwen2.5-Coder-Instruct sí lo soporta; no confirmado para esta variante.
+- No se documentan capacidades de visión, audio ni modo "thinking" explícito.
 
 ## Casos de uso
 
-- Asistente de programacion en entornos de desarrollo integrado (IDE): el modelo puede completar codigo, sugerir refactorizaciones y explicar fragmentos complejos, aprovechando su contexto largo para mantener el estado del proyecto.
-- Generacion de codigo en pipelines de CI/CD: gracias al soporte de tool calling, puede integrarse en flujos automatizados para generar tests, documentacion o parches, reduciendo la intervencion manual.
-- Investigacion en alineacion y seguridad de IA: el modelo sirve como banco de pruebas para estudiar como se comporta un sistema sin mecanismos de rechazo, permitiendo analizar sesgos, robustez y estrategias de mitigacion.
-- Red teaming y pruebas de adversario: los equipos de seguridad pueden usar el modelo para identificar vulnerabilidades en sistemas de moderacion o para generar contenido que evite filtros, mejorando asi los sistemas defensivos.
-- Desarrollo de agentes autonomos de codigo: con su capacidad de razonamiento multi-paso y tool calling, puede actuar como agente que planifica, ejecuta y verifica tareas de programacion de forma autonoma.
-- Educacion en programacion sin restricciones: en entornos controlados, puede utilizarse para ensenar conceptos avanzados o para explorar temas que los modelos comerciales evitan, aunque con supervision humana.
+- Análisis defensivo de malware: el modelo puede leer y explicar código malicioso sin activar rechazos, lo que permite a equipos de respuesta a incidentes reconstruir cadenas de ataque y entender el comportamiento de muestras sospechosas.
+- Revisión de código en pipelines de CI/CD: integrado como paso de revisión automatizada, puede detectar patrones inseguros, malas prácticas y vulnerabilidades en pull requests, aprovechando su especialización en código.
+- Red teaming y pruebas de seguridad ofensiva: útil para generar y evaluar payloads de prueba en entornos controlados, así como para simular escenarios de ataque y validar defensas.
+- Asistente de programación para desarrolladores: autocompletado, generación de tests unitarios, refactorización y explicación de fragmentos de código complejos en inglés.
+- Documentación técnica automatizada: generación de comentarios, docstrings y documentación de API a partir del código fuente, con capacidad de manejar repositorios grandes si el contexto lo permite.
+- Investigación en alineación y seguridad de IA: el modelo sirve como caso de estudio para analizar cómo se codifica el rechazo en los pesos y qué coste tiene su eliminación, útil para quienes investigan técnicas de edición de modelos.
+- Formación y concienciación en ciberseguridad: en entornos educativos controlados, permite mostrar ejemplos reales de código malicioso y su análisis sin las interrupciones que imponen los guardarraíles comerciales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta variante jbliterated. El modelo base `Qwen2.5-Coder-14B-Instruct` reporta resultados en HumanEval, MBPP y otros benchmarks de codigo, pero no se puede asumir que esta variante mantenga exactamente esos valores, ya que la intervencion sobre los pesos puede alterar el rendimiento. Se recomienda evaluar el modelo en el caso de uso especifico antes de desplegarlo.
+No se han publicado resultados de benchmarks específicos para esta variante en la información disponible. El autor menciona un dato de retención de capacidad medido en otro modelo de su colección (Sharona, Qwen3.5-27B), con MMLU de 77,89 % frente a 76,84 % del baseline, pero no aporta cifras para Qwen2.5-Coder-14B-Instruct-Jbliterated. No se inventan números.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en precision fp16, el modelo ocupa aproximadamente 29,5 GB (14,7 B x 2 bytes). Con cuantizacion GGUF Q4_K_M, el uso de VRAM se reduce a unos 8-10 GB; con Q8, alrededor de 15-16 GB.
-- GPU recomendadas: para fp16 se necesitan GPUs profesionales como A100 (40/80 GB) o H100. Con cuantizacion, es viable en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB). Para Q4, incluso una RTX 3060 (12 GB) podria ser suficiente.
-- El modelo cabe en GPUs de consumo si se utiliza cuantizacion, pero no en precision completa.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI y Transformers de Hugging Face. El autor tambien menciona DeepswapLLM, una herramienta que permite ejecutar el modelo en GPUs con poca memoria mediante streaming de capas.
-- Latencia y throughput: no disponible en la informacion proporcionada; dependera del hardware y la cuantizacion elegida.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 28-30 GB solo para los pesos, más overhead de activaciones y KV cache; se recomienda un mínimo de 32 GB de VRAM para contexto moderado.
+- VRAM estimada en cuantización GGUF Q4_K_M: aproximadamente 9-10 GB, lo que permite ejecución en GPUs de consumo como RTX 3090, RTX 4080 o RTX 4090.
+- VRAM estimada en cuantización GGUF Q8_0: aproximadamente 16-17 GB, viable en RTX 4090 (24 GB) o A100 40 GB.
+- GPUs recomendadas para precisión completa: A100 40/80 GB, H100 80 GB, o múltiples GPUs consumer con device_map="auto".
+- Cabe en GPU de consumo: sí, en cuantizaciones GGUF de 4 a 8 bits en RTX 3090/4080/4090; en fp16 no cabe en GPUs de 24 GB sin offloading.
+- Opciones de despliegue: transformers (con device_map="auto"), llama.cpp, Ollama (si se publica la conversión correspondiente), vLLM y TGI (compatibilidad no confirmada explícitamente en la model card, pero el modelo base es compatible con estas herramientas).
+- El autor promociona DeepswapLLM como alternativa para ejecutar el modelo en GPUs con VRAM insuficiente mediante streaming de capas; no se aportan cifras de latencia o throughput verificables.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-14B-Instruct (base) | 14,7 B | 128K | Apache 2.0 | Hugging Face | Modelo original con mecanismos de rechazo |
-| Qwen2.5-Coder-14B-Instruct-Jbliterated | 14,7 B | 128K | Apache 2.0 | Hugging Face | Variante sin rechazo, misma arquitectura |
-| CodeLlama-13B-Instruct | 13 B | 16K | Llama 2 license | Hugging Face | Modelo de Meta, con restricciones de uso comercial |
-| DeepSeek-Coder-6.7B-Instruct | 6,7 B | 16K | MIT | Hugging Face | Mas ligero, pero con menor capacidad de razonamiento |
+| Qwen2.5-Coder-14B-Instruct-Jbliterated | 14,77 B | no disponible (base: 32K nativo) | Apache 2.0 | safetensors, GGUF | Variante sin rechazo, inglés, enfocada a seguridad ofensiva/defensiva |
+| Qwen/Qwen2.5-Coder-14B-Instruct | 14,77 B | 32.768 tokens nativo (131.072 con RoPE scaling) | Apache 2.0 | safetensors, GGUF | Modelo base original, con alineación de seguridad estándar |
+| DeepSeek-Coder-V2-Lite-Instruct | 15,7 B (2,4 B activos, MoE) | 128K | DeepSeek License | safetensors | Alternativa MoE con contexto muy largo y buen rendimiento en código |
+| CodeLlama-13B-Instruct | 13 B | 16K | Llama 2 Community License | safetensors, GGUF | Modelo de código de Meta, licencia restrictiva para uso comercial |
 
-La comparativa se centra en modelos de codigo de tamano similar. El jbliterated se diferencia del base unicamente en la eliminacion de rechazo, manteniendo el mismo rendimiento teorico en tareas de codigo. CodeLlama y DeepSeek-Coder son alternativas con licencias mas restrictivas o menor capacidad.
+La comparación con el modelo base es la más directa: esta variante modifica únicamente el comportamiento de rechazo, por lo que en tareas de código debería rendir de forma similar al original. Frente a DeepSeek-Coder-V2-Lite, este último ofrece mayor contexto y arquitectura MoE con menor coste de inferencia por token activo, pero con una licencia más restrictiva. CodeLlama-13B-Instruct queda por detrás en contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo "uncensored", puede generar contenido ofensivo, ilegal o peligroso. Su uso debe limitarse a entornos de investigacion controlados y con supervision humana.
-- La eliminacion de rechazo no garantiza la ausencia total de sesgos; el modelo puede reflejar los sesgos presentes en los datos de entrenamiento del modelo base.
-- Riesgo de alucinacion en codigo: como cualquier LLM, puede generar codigo incorrecto o inseguro, especialmente en contextos largos o ambiguos.
-- La licencia Apache 2.0 permite uso comercial, pero el responsable del despliegue debe asumir la responsabilidad legal y etica del contenido generado.
-- No se han publicado evaluaciones de seguridad ni de rendimiento especificas para esta variante; los resultados del modelo base no son directamente extrapolables.
-- El proceso de jbliteration puede degradar ligeramente el rendimiento en tareas que requieren matices de seguridad, aunque el autor afirma que se preservan las capacidades tecnicas.
+- La eliminación del rechazo puede facilitar usos dañinos: el propio autor reconoce que "estos pesos pueden hacer tanto bien como mal". No debe desplegarse en aplicaciones orientadas al público sin capas adicionales de moderación.
+- El modelo está declarado únicamente en inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea inferior al del modelo base.
+- Riesgo de alucinación inherente a los modelos de 14 B, especialmente en tareas de razonamiento complejo o generación de código en lenguajes poco representados.
+- La modificación de pesos puede degradar capacidades de forma no documentada; el autor no publica benchmarks específicos para esta variante, solo para otro modelo de su colección.
+- El autor advierte que el modelo publicado es una "demo" a fuerza parcial y que será re-procesado con un pipeline mejorado; esto implica que la versión actual puede quedar obsoleta y que su comportamiento no es estable a largo plazo.
+- La licencia Apache 2.0 permite uso comercial, pero el uso de un modelo sin rechazo en producción conlleva responsabilidad legal y ética sobre el contenido generado; se recomienda evaluar el cumplimiento normativo (por ejemplo, la AI Act europea) antes de desplegarlo.
+- No se documentan sesgos específicos, pero al derivar de Qwen2.5-Coder-Instruct hereda los sesgos del corpus de entrenamiento original, no auditados en esta variante.
+- La falta de soporte multilingüe declarado limita su uso en entornos hispanohablantes sin un ajuste adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Qwen2.5-Coder-14B-Instruct-Jbliterated
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Repositorio DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
-- Modelo base Qwen2.5-Coder-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
-- Documentacion de Qwen2.5-Coder (referencia): https://dev.co/ai/llms/qwen2-5-coder-14b-instruct
+- Modelo relacionado (pipeline actualizado): https://huggingface.co/ApolloRaines/Llama-3.3-8B-Instruct-128K-Jbliterated
+- Perfil del autor: https://www.linkedin.com/in/apollo-raines/

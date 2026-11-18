@@ -2,94 +2,94 @@
 
 ## Resumen
 
-gguf-org/qwen-image-2.1-gguf es una cuantización en formato GGUF del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el usuario gguf-org en Hugging Face. No se trata de un modelo de lenguaje, sino de pesos convertidos para su uso con motores de difusión compatibles con GGUF, de forma análoga a como llama.cpp permite ejecutar LLM cuantizados en hardware modesto. El repositorio ocupa 5,5 GB y declara 337.740.404 parámetros en los metadatos de safetensors.
+Qwen-Image-2.1-GGUF es una cuantización en formato GGUF del modelo de difusión Qwen/Qwen-Image-2.1, publicada por el usuario gguf-org. No se trata de un modelo de lenguaje, sino de un modelo generativo de imágenes (text-to-image e image-to-image) empaquetado para su uso con motores de inferencia ligeros como ggk o nodos GGUF de ComfyUI. El repositorio incluye pesos del transformador de difusión en variantes nvfp4, el VAE, codificadores de texto alternativos (pig-clip con adaptador, qwen3vl-8b en cuantizaciones q4_k_m y nvfp4) y un proyector multimodal mmproj para edición de imágenes.
 
-La model card es mínima: incluye un ejemplo de invocación con la herramienta `ggk diffuser engine` en la que se cargan varios componentes (modelo de difusión en nvfp4, VAE en fp32-f16, un encoder CLIP en f16, un adaptador para Qwen3-VL-8B y un proyector de visión mmproj en q8_0) y se genera una imagen a partir del prompt "a sheep in sunglasses" usando una imagen de referencia y una configuración de 4 pasos de muestreo con escala CFG de 1,00. Esto apunta a un pipeline de difusión con codificador de texto multimodal y capacidad de condicionamiento por imagen de referencia, pero la ficha no documenta arquitectura, datos de entrenamiento ni licencia.
+La relevancia de esta publicación radica en que permite ejecutar un modelo de generación de imágenes de la familia Qwen en hardware de consumo modesto: el autor reporta pruebas en una GPU de portátil RTX 4050 con 6 GB de VRAM, con tiempos de generación de 4 pasos en torno a 13-17 segundos según el codificador de texto empleado. El repositorio ocupa 21,5 GB e incluye flujos de trabajo JSON listos para ComfyUI, tanto para texto a imagen como para edición.
 
-La relevancia del repositorio es práctica: permite ejecutar un modelo de generación de imagen de la familia Qwen-Image en entornos con recursos limitados mediante cuantización, siempre que el motor de inferencia soporte GGUF para difusión. Con 0 descargas y 0 "likes" en el momento de la consulta, y sin licencia declarada, debe considerarse un artefacto experimental no validado por la comunidad.
+No se dispone de información sobre la licencia del paquete ni del modelo base en la información proporcionada, ni de los idiomas soportados, la longitud de contexto o los parámetros del transformador de difusión. El dato de parámetros reportado en safetensors (337.740.404) corresponde presumiblemente a los componentes auxiliares incluidos, no al modelo de difusión completo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion para generacion de imagen; el ejemplo de uso combina modelo de difusion, VAE y codificador de texto Qwen3-VL-8B) |
-| Parametros totales | 337.740.404 (segun metadatos de safetensors del repositorio) |
-| Parametros activos | no aplica (no consta que sea un modelo MoE) |
-| Longitud de contexto | no disponible (no aplica en el sentido de contexto de LLM; no se documenta el limite de tokens de prompt) |
-| Tipos de cuantizacion | GGUF; en el ejemplo se emplean nvfp4 (modelo de difusion), fp32-f16 (VAE), f16 (encoder CLIP y adaptador) y q8_0 (proyector de vision) |
+| Arquitectura | modelo de difusion (transformador de difusion) con VAE y codificador de texto multimodal Qwen3-VL-8B; no disponible el detalle interno |
+| Parametros totales | 337.740.404 (dato de safetensors del repo; no representa el transformador de difusion completo) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | nvfp4 (transformador de difusion y codificador all-in-one), q4_k_m (codificador qwen3vl-8b-it), q8_0 (mmproj), bf16 y fp32-f16 (VAE) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (el nombre del repositorio y la etiqueta `gguf` lo confirman) |
-| Modelo base | Qwen/Qwen-Image-2.1 |
-| Tamano del repositorio | 5,5 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-20 |
-| Ultima actualizacion | 2026-09-20 |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada en el repositorio sobre la arquitectura interna del modelo base ni sobre el proceso de cuantizacion aplicado. Por la naturaleza de Qwen-Image-2.1 y por el ejemplo de invocacion de la model card, se trata de un modelo de difusion para sintesis de imagen que se ejecuta junto a un VAE y a un codificador de texto basado en un modelo de vision-lenguaje de la familia Qwen3-VL de 8.000 millones de parametros, con un adaptador especifico y un proyector multimodal (`mmproj`). La presencia de una imagen de referencia (`--ref-image`) en el ejemplo indica soporte de condicionamiento por imagen, es decir, generacion guiada por una entrada visual ademas del texto.
+El paquete distribuye un modelo de difusión para generación de imágenes en formato GGUF, acompañado de un VAE (pig_qwen_image_2.1_vae en bf16 o fp32-f16) y de un codificador de texto basado en Qwen3-VL-8B. Se ofrecen dos rutas de codificación: una alternativa ligera denominada pig-clip con un adaptador (pig_qwen3vl_8b_adapter-f16.gguf), pensada para velocidad o VRAM reducida, y el codificador Qwen3-VL-8B completo en q4_k_m o nvfp4. Para edición de imágenes se añade un proyector multimodal mmproj-qwen3vl-8b-it-q8_0.gguf.
 
-La configuracion del ejemplo (`--cfg-scale 1.00 --steps 4 --sampling-method euler`) es coherente con un modelo destilado o ajustado para muestreo en muy pocos pasos, ya que usa escala de guia nula y solo cuatro pasos. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO u optimizacion por preferencias. Tampoco se detalla que metodo de cuantizacion se uso para generar los archivos GGUF del repositorio.
+El flujo de inferencia documentado usa muestreo Euler con atención flash en el difusor (--diffusion-fa) y permite configurar pasos, escala CFG y una secuencia de sigmas personalizada. El autor incluye una configuración "turbo" de 8 pasos con sigmas explícitas (1.0, 0.978453, 0.95418, 0.926626, 0.89508, 0.845148, 0.704534, 0.414568, 0.0) y CFG 1, y una configuración de edición de 4 pasos con CFG 1.00. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni si hubo RLHF, DPO u otras etapas de alineación.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de descripciones textuales (text-to-image), segun el ejemplo de la model card con el prompt "a sheep in sunglasses".
-- Generacion condicionada por imagen de referencia (image-to-image o edicion guiada por referencia), dado el parametro `--ref-image sheep.png` del ejemplo.
-- Codificacion de texto multimodal mediante Qwen3-VL-8B, lo que en principio permite instrucciones textuales complejas, aunque el repositorio no documenta el alcance real.
-- Muestreo en pocos pasos (4 pasos en el ejemplo), orientado a inferencia rapida.
-- Uso de atencion flash para difusion (`--diffusion-fa`) en el motor de ejemplo.
-- No consta soporte de tool calling, function calling, uso como agente ni razonamiento multi-paso: es un modelo de generacion de imagen, no un modelo de lenguaje conversacional.
-- Capacidades multilingues: no disponibles. No se documenta en que idiomas acepta prompts.
-- Capacidades especiales (modo thinking, audio, video): no disponibles.
+- Generación de imágenes a partir de texto (text-to-image) con resolución configurable mediante los parámetros -W y -H (el ejemplo usa 512x512).
+- Edición de imágenes guiada por prompt (image-to-image) usando una imagen de referencia (--ref-image) y el proyector mmproj.
+- Soporte de prompts largos y descriptivos, incluyendo texto renderizado dentro de la imagen (el ejemplo del autor incluye un cartel con texto en cursiva).
+- Generación rápida en modo turbo con 8 pasos y secuencias de sigmas predefinidas.
+- Compatibilidad con dos backends: el motor ggk diffuser y nodos GGUF en ComfyUI, con flujos de trabajo JSON proporcionados.
+- Selección intercambiable de codificador de texto para equilibrar velocidad, VRAM y fidelidad.
+- No se documentan capacidades de tool calling, agentes, audio ni razonamiento multi-paso, al no ser un modelo de lenguaje.
 
 ## Casos de uso
 
-- Generacion de ilustraciones para blogs y articulos: el modelo puede producir imagenes a partir de un prompt de texto en una unica pasada de 4 pasos, lo que reduce el coste por imagen en flujos editoriales con volumen alto.
-- Creacion de variaciones a partir de una imagen de referencia: usando `--ref-image` se puede mantener una identidad visual o un estilo base y generar alternativas, util para campañas de marketing con coherencia grafica.
-- Prototipado rapido de assets para interfaces y videojuegos: generacion de iconos, fondos o conceptos previos a la produccion final, con la ventaja de que la cuantizacion GGUF permite ejecutarlo en estaciones de trabajo modestas.
-- Pipelines automatizados por lotes: el motor de ejemplo se invoca por linea de comandos, lo que facilita integrarlo en scripts y trabajos programados para generar catalogos de imagenes sin intervencion manual.
-- Experimentacion en investigacion sobre cuantizacion de modelos de difusion: el repositorio sirve como artefacto para medir la perdida de calidad al pasar de pesos completos a GGUF (nvfp4, q8_0, f16) en cada componente del pipeline.
-- Generacion de material grafico en entornos con GPU limitada: al distribuir el modelo en varios archivos cuantizados, es posible ajustar que componentes se cargan en VRAM y cuales en otros dispositivos, algo relevante en equipos de gama media.
-- Documentacion visual automatica: dado un texto descriptivo, generar una imagen de acompanamiento para informes tecnicos o documentacion interna, siempre que se revise el resultado antes de publicarlo.
-- No es adecuado como asistente conversacional ni para tareas de texto: el repositorio no contiene un LLM generativo de proposito general mas alla del codificador de texto.
+- Prototipado rápido de ilustración: con la configuración turbo de 8 pasos y CFG 1, un equipo puede generar borradores visuales en segundos en una GPU de portátil, lo que permite iterar sobre conceptos artísticos sin infraestructura dedicada.
+- Edición de imágenes asistida por prompt: usando --ref-image junto con el mmproj, se puede transformar una imagen existente (por ejemplo, añadir gafas de sol a una figura) manteniendo la composición, útil para variaciones de producto o material de marketing.
+- Generación de assets para videojuegos y prototipos: el soporte de prompts detallados y texto renderizado permite crear carteles, rótulos y elementos de escenario dentro de la propia imagen generada.
+- Despliegue en estaciones de trabajo con VRAM limitada: al estar cuantizado en nvfp4 y funcionar con codificadores q4_k_m, encaja en equipos con 6 GB de VRAM, lo que facilita su uso en portátiles de desarrollo sin GPU de datacenter.
+- Integración en pipelines de ComfyUI: los flujos JSON incluidos permiten incorporar el modelo a grafos de generación más amplios (upscaling, postproceso, composición) dentro de un estudio de contenido automatizado.
+- Experimentación e investigación en difusión cuantizada: el paquete ofrece múltiples combinaciones de codificador y VAE, lo que permite medir el impacto de la cuantización en la calidad final y en el tiempo de inferencia.
+- Generación de material visual para demostraciones y documentación técnica: la baja latencia (13-17 s en GPU de 6 GB) permite producir imágenes de ejemplo bajo demanda en entornos de CI o documentación automatizada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El autor publica una tabla de tiempos de finalización por combinación de codificador de texto, medida en una GPU de portátil RTX 4050 con 6 GB de VRAM:
 
-El repositorio no incluye metricas objetivas (FID, CLIP score, evaluaciones humanas) ni comparaciones con el modelo base sin cuantizar. Tampoco hay datos de latencia, imagenes por segundo ni consumo de VRAM medidos para esta cuantizacion concreta.
+| Combinacion de codificador | Tiempo completado |
+|---|---|
+| pig-clip + adapter + mmproj | 13 s |
+| qwen3vl-8b-nvfp4.gguf (all-in-one) | 15 s |
+| qwen3vl-8b-it-q4_k_m.gguf + mmproj | 17 s |
+
+No se han publicado resultados de benchmarks de calidad (FID, CLIP score, MMLU u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa a partir del tamano del repositorio (5,5 GB), la carga de los tensores cuantizados requiere del orden de 6 GB o mas de memoria, a lo que hay que sumar el VAE, el encoder CLIP y el codificador Qwen3-VL-8B del pipeline de ejemplo, lo que eleva el consumo total muy por encima de esa cifra. Esta estimacion es propia y no esta confirmada por el autor.
-- GPU recomendadas: no disponible. El ejemplo usa un archivo de difusion en formato nvfp4, un formato de 4 bits de NVIDIA asociado a arquitecturas Blackwell; esto sugiere (sin confirmacion en la informacion disponible) que la ruta nvfp4 requiere GPU de esa generacion.
-- GPU de consumo: no confirmado. El tamano del repositorio es compatible con GPUs de 8-12 GB si se cargan solo algunos componentes, pero no hay datos verificados de ejecucion completa en ese rango.
-- Opciones de despliegue: el unico motor documentado en la model card es `ggk diffuser engine` con soporte de modelos de difusion en GGUF. No se mencionan vLLM, TGI ni Ollama, que estan orientados a modelos de lenguaje y no aplican a este caso. Tampoco se documenta compatibilidad con llama.cpp para la parte de difusion.
-- Latencia y throughput: no disponibles. La configuracion del ejemplo (4 pasos, euler, CFG 1,00) sugiere una generacion rapida, pero no se aportan tiempos medidos.
+- VRAM estimada: el autor reporta funcionamiento en una RTX 4050 de portátil con 6 GB de VRAM usando el transformador de difusión en nvfp4 y el codificador pig-clip o qwen3vl-8b en cuantización baja.
+- GPU recomendadas: cualquier GPU consumer con al menos 6 GB de VRAM para la configuración mínima; GPUs de gama alta reducen el tiempo de generación a "un par de segundos" según el autor, aunque no se aportan cifras concretas.
+- Cabe en GPU consumer: sí, confirmado en RTX 4050 de 6 GB; presumiblemente también en RTX 3060, 4060, 4070 y superiores.
+- Opciones de despliegue: motor ggk diffuser (comandos documentados) y ComfyUI mediante nodos GGUF, con flujos de trabajo JSON incluidos en el repositorio.
+- Latencia y throughput: 13-17 s por imagen en configuración de 4 pasos con edición y codificador ligero, medido en RTX 4050 de 6 GB.
+- Tamaño del repositorio: 21,5 GB, lo que condiciona el espacio en disco necesario para alojar todas las variantes.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye especificaciones de Qwen/Qwen-Image-2.1 en sus pesos originales (parametros, contexto de prompt, licencia) ni de otras cuantizaciones GGUF comparables, por lo que no es posible establecer una comparacion con datos verificables.
-
-Unicamente puede afirmarse lo siguiente: este repositorio es una conversion GGUF del modelo base Qwen/Qwen-Image-2.1, y su unico diferenciador documentado frente a los pesos originales es el formato de pesos y el menor tamano en disco (5,5 GB). No hay datos de rendimiento comparado ni de licencia que permitan valorar el resto de criterios.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El paquete se basa en Qwen/Qwen-Image-2.1, pero no se aportan datos de parámetros, contexto ni rendimiento de ese modelo base ni de alternativas de la misma categoría, por lo que la comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: sin licencia explicita en el repositorio, el uso comercial no puede darse por permitido. Es imprescindible consultar la licencia del modelo base Qwen/Qwen-Image-2.1 antes de cualquier uso en produccion.
-- Artefacto sin validacion comunitaria: 0 descargas y 0 "likes" en el momento de la consulta, publicado por un usuario no oficial respecto al autor del modelo base. No hay evidencia de que la conversion se haya verificado mas alla del ejemplo de la model card.
-- Discrepancia de parametros: los 337.740.404 parametros declarados en los metadatos de safetensors son dificilmente compatibles con un modelo de difusion de ultima generacion mas un codificador de 8.000 millones de parametros; es probable que la cifra corresponda solo a una parte de los componentes. Conviene tratarla con cautela.
-- Perdida por cuantizacion: el uso de nvfp4 y q8_0 puede degradar la fidelidad de la imagen, el seguimiento del prompt o la coherencia con la imagen de referencia respecto a los pesos en precision completa. No hay mediciones publicadas de esa perdida.
-- Riesgo de contenido inapropiado o sesgado: como cualquier modelo de generacion de imagen entrenado con datos web a gran escala, puede reproducir estereotipos y generar contenido ofensivo, inexacto o con rasgos de personas reales. No se documentan filtros de seguridad ni moderacion.
-- Ausencia de informacion sobre datos de entrenamiento: no se puede evaluar el origen de los datos, posibles sesgos de composicion ni el cumplimiento de derechos de autor del material generado.
-- Documentacion insuficiente: no hay informacion sobre idiomas soportados, limite de tokens del prompt, resoluciones de salida soportadas ni parametros recomendados mas alla del ejemplo.
-- Dependencia de tooling especifico: el unico flujo documentado usa `ggk diffuser engine`, una herramienta poco extendida; la integracion en produccion requerira validar ese motor, sus dependencias y su mantenimiento.
-- Cambios de comportamiento por semilla y parametros: en modelos de difusion destilados a 4 pasos, la calidad es muy sensible a la escala CFG, el sampler y el numero de pasos, por lo que la configuracion del ejemplo no es necesariamente generalizable a otros prompts.
-- Busqueda web sin resultados utiles: las consultas realizadas no devolvieron informacion tecnica sobre este repositorio ni sobre el modelo base, solo resultados no relacionados.
+- La licencia no está indicada en la información disponible; antes de un uso comercial es imprescindible verificar la licencia del modelo base Qwen/Qwen-Image-2.1 y la del propio repositorio GGUF.
+- Al ser una cuantización (nvfp4, q4_k_m), es esperable una pérdida de calidad frente a los pesos originales en precisión completa; no se han publicado métricas que cuantifiquen esa degradación.
+- Los tiempos de benchmark proceden de una única GPU (RTX 4050 de portátil, 6 GB) y de una configuración concreta de pasos y sigmas; no son extrapolables directamente a otro hardware.
+- El paquete depende de componentes de terceros (pig-clip, adaptador, mmproj, VAE) cuya procedencia y mantenimiento no se detallan; conviene fijar versiones concretas en producción.
+- No hay información sobre sesgos, idiomas soportados ni comportamiento con prompts en castellano; el texto renderizado en imágenes puede fallar en idiomas distintos del inglés.
+- Riesgo de alucinación visual y de artefactos en anatomía, texto y composiciones complejas, inherente a los modelos de difusión; requiere revisión humana en usos editoriales o comerciales.
+- El tamaño del repositorio (21,5 GB) y la multiplicidad de variantes pueden complicar la gestión de artefactos y el almacenamiento en entornos de CI.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/gguf-org/qwen-image-2.1-gguf
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Paper, blog tecnico, repositorio de codigo o demo del modelo: no disponible en la informacion proporcionada.
-- Resultados de busqueda web: no se han encontrado fuentes relevantes; los resultados devueltos corresponden a contenidos sin relacion con el modelo.
+- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Codificador pig-clip: https://huggingface.co/gguf-org/trainer/blob/main/pig_clip-f16.gguf
+- Adaptador pig-clip: https://huggingface.co/gguf-org/pig-clip/blob/main/pig_qwen3vl_8b_adapter-f16.gguf
+- Proyector mmproj: https://huggingface.co/gguf-org/qwen-image-2.1-gguf/blob/main/mmproj-qwen3vl-8b-it-q8_0.gguf
+- Flujo ComfyUI texto a imagen: https://huggingface.co/gguf-org/qwen-image-2.1-gguf/blob/main/qwen-image-2.1-workflow-for-comfyui.json
+- Flujo ComfyUI edición: https://huggingface.co/gguf-org/qwen-image-2.1-gguf/blob/main/qwen-image-2.1-edit-workflow-for-comfyui.json
+- Captura de ejemplo en ComfyUI: https://raw.githubusercontent.com/calcuis/comfy/master/iq2.1.png
+- Captura de ejemplo de edición: https://raw.githubusercontent.com/calcuis/comfy/master/iq2.1e.png

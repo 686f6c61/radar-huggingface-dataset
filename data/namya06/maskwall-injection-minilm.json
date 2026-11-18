@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "namya06/maskwall-injection-minilm",
+  "slug": "namya06-maskwall-injection-minilm",
+  "author": "namya06",
+  "url": "https://huggingface.co/namya06/maskwall-injection-minilm",
+  "created_at": "2026-11-18T10:52:56.000Z",
+  "updated_at": "2026-11-18T10:55:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "prompt-injection",
+    "jailbreak",
+    "llm-firewall",
+    "int8",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23091681,
+  "storage_human": "23 MB",
+  "context_length": null,
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

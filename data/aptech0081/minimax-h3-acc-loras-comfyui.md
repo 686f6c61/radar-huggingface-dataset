@@ -2,89 +2,90 @@
 
 ## Resumen
 
-Este repositorio contiene una conversión a ComfyUI de los LoRAs de aceleración oficiales de Alibaba Cloud (alibaba-pai) para el modelo MiniMax-H3, un sistema de generación de vídeo y audio nativo multimodal de 2K con audio estéreo 3D sincronizado. La conversión permite cargar directamente los pesos en ComfyUI sin necesidad de transformaciones en memoria, manteniendo una equivalencia bit-idéntica con los archivos originales.
+MiniMax-H3-Acc-LoRAs-ComfyUI es un repositorio de pesos derivados del modelo generativo MiniMax-H3, publicado por el usuario aptech0081. No se trata de un modelo entrenado desde cero, sino de una conversión y fusión de los LoRAs oficiales de aceleración PDD (Progressive Denoising Distillation) que Alibaba PAI publicó para MiniMax-H3, empaquetados en checkpoints listos para cargar en ComfyUI. El pipeline declarado es text-to-video, y los checkpoints Ref2VA generan vídeo y audio a partir de condicionamiento de referencia.
 
-El paquete incluye dos LoRAs: uno para el trunk FL2VA y otro para Ref2VA, cada uno con un trunk LoRA de rango 64 y un banco de cabezas de destilación de decodificación paralela (PDD) con 32 proyecciones por intervalo y por modalidad (vídeo y audio). Estos LoRAs aceleran el muestreo del modelo base a 8 pasos (también 4) sin clasificador libre (CFG-free), lo que reduce drásticamente el coste de inferencia para la generación de vídeo con audio.
+La relevancia de este repositorio reside en que elimina la necesidad de aplicar el LoRA de aceleración PDD y el nodo PDD Apply durante la inferencia: el tronco PDD queda fusionado a fuerza 1.0 dentro del checkpoint, junto con los bancos de cabeceras de salida (32 de vídeo y 32 de audio). Esto simplifica el grafo de ComfyUI y reduce el trabajo repetido de fusión de LoRAs, especialmente cuando las capas se descargan a memoria del sistema en tarjetas con poca VRAM.
 
-La relevancia actual radica en que ofrece una integración directa con el ecosistema ComfyUI, un estándar de facto para flujos de trabajo de generación de medios, y facilita la adopción de técnicas de destilación de decodificación paralela en entornos de producción. El repositorio se limita a una transformación de formato, manteniendo la licencia Apache-2.0 del trabajo original.
+El repositorio incluye una variante podada en INT8 de 21,06 GB, aproximadamente un 38,3 % más pequeña que el checkpoint completo con cabeceras (34,12 GB), además de las variantes completas con y sin cabeceras y dos LoRAs para los nodos personalizados. La licencia es la MiniMax-H3 Community License Agreement, no una licencia de código abierto estándar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA de aceleración PDD para MiniMax-H3 (modelo de difusión multimodal vídeo+audio) |
-| Parametros totales | no disponible (repo de 3,3 GB con dos archivos safetensors) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (depende del modelo base MiniMax-H3) |
-| Tipos de cuantizacion | no disponible (se recomienda bf16 o int8-convrot para el modelo base) |
+| Arquitectura | no disponible (modelo de difusión para vídeo y audio; tronco transformer con cabeceras de salida separadas por modalidad) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | INT8 ConvRot (checkpoints principales); LoRAs en formato ComfyUI |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (dos archivos: `minimax_h3_fl2va_pdd_acc_8step_comfyui.safetensors` y `minimax_h3_ref2va_pdd_acc_8step_comfyui.safetensors`) |
+| Licencia | minimax-h3-community-license-agreement |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base MiniMax-H3 es un generador nativo multimodal que produce vídeo y audio sincronizado a partir de texto. Los LoRAs aquí presentados implementan una técnica de destilación de decodificación paralela (PDD, por sus siglas en inglés) descrita en el artículo arXiv:2607.26004. La PDD entrena un banco de cabezas de proyección final que permite al modelo predecir múltiples pasos de muestreo simultáneamente, reduciendo el número de evaluaciones de función (NFE) de los típicos 20-30 a 8 o incluso 4, sin necesidad de CFG.
+El modelo base MiniMax-H3 es un modelo de difusión para generación conjunta de vídeo y audio. Los checkpoints de este repositorio incorporan el tronco Ref2VA o FL2VA con las actualizaciones PDD fusionadas a fuerza 1.0, más un banco de 32 cabeceras de intervalo fino por flujo. Las cabeceras de salida tienen formas concretas: `final_layer.video_out.weight` de `[3072, 5376]` con bias de `[3072]`, y `final_layer.audio_out.weight` de `[1024, 5376]` con bias de `[1024]`, almacenadas en float32. Cada banco guarda la cabecera 0 completa y las siguientes como offsets respecto a ella; ComfyUI nativo combina las cabeceras apropiadas para cada intervalo de muestreo.
 
-El entrenamiento de los LoRAs fue realizado por Alibaba-PAI y liberado bajo Apache-2.0. La conversión a formato ComfyUI reestructura los pesos de los módulos de atención (qkv, out_proj), de las capas feed-forward (SwiGLU) y de los bloques token_refiner, manteniendo exactamente el mismo comportamiento numérico. El banco de cabezas PDD (proj_out y audio_proj_out) se conserva sin cambios. La conversión se verificó bit-identidad con la transformación en memoria que realiza el nodo personalizado, y cada archivo safetensors incluye metadatos de procedencia.
+El proceso de destilación PDD permite generar en 8 pasos (y también en 4, según la publicación original) con CFG 1.0 y denoise 1.0, usando sampler Euler y scheduler simple, con desplazamientos sigma de 12,0 para vídeo y 3,0 para audio. La variante podada parte del checkpoint oficial pruned Ref2VA INT8 ConvRot de Comfy-Org y aplica una conversión en espacio de curva de las actualizaciones de las capas de temporización: las 50 proyecciones afectadas se rebasaron con actualizaciones de peso y bias, y la curva temporal se validó contra el time embedder del base completo sobre 1025 puntos de rejilla con un error L2 relativo de 1,377e-05. Las actualizaciones PDD rebasadas se compararon además con el LoRA denso en nueve puntos temporales por módulo, y los 58 pesos objetivo sin cuantizar y las 50 actualizaciones de bias afín coinciden exactamente con sus valores almacenados.
 
 ## Capacidades
 
-- Generación de vídeo y audio sincronizado a partir de texto (text-to-video con audio).
-- Aceleración del muestreo mediante destilación de decodificación paralela: 8 pasos de muestreo (también 4) sin CFG.
-- Compatibilidad con ComfyUI mediante el nodo personalizado `ComfyUI-MiniMax-H3-PDD-Acc`.
-- Soporte de dos variantes del modelo base: FL2VA y Ref2VA.
-- Integración con el flujo de trabajo estándar de ComfyUI: `UNETLoader → MiniMaxH3SigmaShift → MiniMax H3 PDD Acc LoRA → BasicGuider → SamplerCustomAdvanced`.
-- Conversión bit-idéntica de los pesos, garantizando reproducibilidad exacta respecto a los archivos originales.
+- Generación de vídeo a partir de condicionamiento de referencia (Ref2VA) y de condicionamiento first-last (FL2VA, mediante el LoRA correspondiente).
+- Generación de audio sincronizada junto con el vídeo en el mismo proceso de difusión.
+- Inferencia acelerada en 8 pasos (4 pasos también soportados por la publicación PDD original) con CFG 1.0.
+- Carga nativa en ComfyUI tras el PR #17157, sin nodo PDD Apply ni LoRA de aceleración adicional.
+- Variante podada para reducir almacenamiento y presión de memoria con offloading de capas.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso ni multilingüismo textual.
 
 ## Casos de uso
 
-- **Generación de vídeo de alta calidad en producción**: al reducir el número de pasos de muestreo de decenas a 8, se puede integrar la generación de vídeo en servicios en tiempo real o en pipelines de procesamiento por lotes con latencia reducida. El LoRA se aplica directamente al UNET del modelo base, sin necesidad de entrenamiento adicional.
-- **Edición de vídeo asistida por IA**: los LoRAs permiten refinar y acelerar la generación de secuencias intermedias en herramientas de edición, manteniendo la coherencia temporal y de audio.
-- **Creación de contenido para redes sociales**: la generación de clips cortos con audio sincronizado en 8 pasos permite producir material para plataformas como YouTube Shorts, TikTok o Reels de forma eficiente.
-- **Sincronización de audio y vídeo en doblaje**: la capacidad de generar audio 3D sincronizado con el vídeo facilita la creación de pistas de sonido envolvente para experiencias inmersivas, como vídeo 360 o realidad virtual.
-- **Prototipado rápido en diseño y publicidad**: los equipos creativos pueden generar múltiples variantes de un vídeo publicitario en minutos, evaluando conceptos sin invertir horas de renderizado.
-- **Investigación en destilación de modelos**: este repositorio sirve como referencia práctica para implementar y evaluar técnicas de destilación de decodificación paralela en modelos de difusión de vídeo, gracias a su código de conversión y su suite de pruebas.
+- Prototipado rápido de vídeo generativo en ComfyUI: el checkpoint con cabeceras se carga directamente con UNETLoader y un grafo Ref2VA estándar, sin pasos adicionales de fusión de LoRA, lo que acorta la iteración en pruebas de concepto.
+- Producción de clips cortos con audio en estudio pequeño: la generación conjunta de vídeo y audio en 8 pasos reduce el coste por iteración frente a pipelines que generan ambas modalidades por separado.
+- Despliegue en estaciones con VRAM limitada: la variante podada de 21,06 GB, combinada con offloading de capas, disminuye el espacio en disco y el trabajo repetido de fusión de LoRAs en cada carga.
+- Automatización de contenido para redes sociales: el modo Ref2VA permite partir de una imagen o referencia de estilo y generar variaciones con audio asociado en un flujo por lotes dentro de ComfyUI.
+- Integración en pipelines de postproducción: los checkpoints se pueden encadenar con nodos de interpolación, upscaling o montaje dentro del mismo grafo de ComfyUI, manteniendo el sampler y los shifts documentados.
+- Evaluación comparativa de recetas de aceleración: el repositorio conserva variantes con y sin cabeceras y LoRAs externos, lo que permite medir el impacto de la fusión PDD frente a la aplicación dinámica del LoRA en la misma máquina.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye comparativas numéricas de calidad o velocidad frente a otras soluciones. Los únicos datos relevantes son los pasos de muestreo (8 o 4) y la ausencia de CFG, pero no hay mediciones de FVD (Fréchet Video Distance), CLIP score ni throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente aporta métricas de validación de la conversión: error L2 relativo de 1,377e-05 en la curva temporal sobre 1025 puntos, coincidencia exacta de 58 pesos y 50 biases, y una reducción de tamaño del 38,3 % en la variante podada (21,06 GB frente a 34,12 GB).
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: no disponible. El tamaño de los LoRAs es de 3,3 GB en total, pero el modelo base MiniMax-H3 (FL2VA o Ref2VA) requiere una cantidad de memoria significativa. Es recomendable al menos 16 GB de VRAM para una resolución moderada, aunque no se especifica en la documentación.
-- **GPU recomendadas**: no se proporciona una lista concreta. Para modelos de difusión de video de 2K, se espera que GPU de gama alta (A100, H100, RTX 4090) sean adecuadas, pero sin confirmación.
-- **Compatibilidad con GPU de consumo**: no se indica. Dado el tamaño del modelo base, es probable que se necesite cuantización o técnicas de offloading, pero no hay datos.
-- **Opciones de despliegue**: ComfyUI es el entorno principal; también se puede cargar los archivos con el nodo personalizado `ComfyUI-MiniMax-H3-PDD-Acc`. No hay soporte directo para vLLM, Ollama o TGI en esta conversión.
-- **Latencia y throughput**: no se proporcionan mediciones. La ventaja de PDD es la reducción de NFE, pero el coste real depende de la GPU y de la resolución.
+- VRAM estimada para inferencia: no disponible. La model card advierte explícitamente que el tamaño del checkpoint no equivale a la VRAM total de inferencia, ya que también influyen activaciones, longitud del clip, resolución, text encoder, VAEs y ajustes de offloading. No se formula ninguna afirmación de VRAM mínima.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada. La variante podada está pensada para reducir presión de memoria en tarjetas con poca VRAM mediante offloading de capas, pero sin cifras verificadas.
+- Opciones de despliegue: ComfyUI nativo en una revisión que incluya el PR #17157 (fusionado el 18 de octubre de 2026). Los archivos LoRA requieren los nodos personalizados PDD correspondientes.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Pasos | CFG | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **MiniMax-H3-Acc-LoRAs (este repo)** | LoRA PDD para MiniMax-H3 | 8 (o 4) | Sin CFG | Apache-2.0 | Hugging Face |
-| **Comfy-Org/MiniMax-H3 turbo 8step** | LoRA turbo (destilación estándar) | 8 | Sin CFG | Apache-2.0 | Hugging Face |
-| **MiniMax-H3 base (sin aceleración)** | Modelo de difusión | 20-30 | Con CFG | Apache-2.0 | Hugging Face |
+| MiniMax-H3-Acc-LoRAs-ComfyUI (este repo) | no disponible | no disponible | sin benchmarks publicados; validación numérica de la fusión PDD | MiniMax-H3 Community License | Hugging Face, 22.782 descargas |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | MiniMax-H3 Community License | Hugging Face |
+| alibaba-pai/MiniMax-H3-Acc-LoRAs (LoRAs PDD originales) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Comfy-Org/MiniMax-H3 pruned Ref2VA INT8 ConvRot | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
-La comparativa se basa en la información de los repositorios de Comfy-Org y de MiniMax-H3. No se dispone de datos de rendimiento o calidad que permitan una comparación cuantitativa. La ventaja principal del PDD es que el banco de cabezas permite una aceleración más agresiva con menos degradación de calidad, según la descripción del paper, pero no se aportan métricas.
+No se dispone de datos de benchmarks ni de especificaciones de parámetros que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- **Dependencia de nodo personalizado**: los archivos no funcionan sin el nodo `ComfyUI-MiniMax-H3-PDD-Acc`; no son LoRAs convencionales que se carguen con el nodo LoRA estándar de ComfyUI.
-- **No son LoRAs convencionales**: cada archivo incluye un trunk LoRA y un banco de cabezas PDD; si se aplica con un cargador LoRA genérico, el comportamiento no será el esperado.
-- **No intercambiables**: el LoRA FL2VA no es compatible con el modelo Ref2VA y viceversa. Usar el LoRA equivocado puede producir errores o resultados corruptos.
-- **Licencia**: Apache-2.0 permite uso comercial y modificación, pero hay que mantener los avisos de copyright y la atribución. El modelo base MiniMax-H3 también es Apache-2.0.
-- **Riesgo de alucinación**: como todo modelo generativo, puede producir contenido visual o auditivo no solicitado o incoherente, especialmente con prompts ambiguos.
-- **Sin información sobre sesgos**: no se han documentado sesgos específicos para este modelo. Es probable que herede los sesgos del modelo base y de los datos de entrenamiento, no disponibles.
-- **Fecha de creación**: el repositorio se creó en agosto de 2026, por lo que la técnica PDD es muy reciente y podría no estar ampliamente validada en producción.
+- La licencia MiniMax-H3 Community License Agreement no es una licencia de código abierto estándar; es imprescindible revisar sus términos antes de cualquier uso comercial.
+- Los checkpoints son modelos de difusión: el text encoder y los VAEs siguen siendo archivos separados y deben gestionarse aparte.
+- La cuantización INT8 y la aproximación de curva del podado pueden alterar los resultados respecto al checkpoint completo; la propia model card lo señala.
+- El checkpoint sin cabeceras requiere el banco de cabeceras externo y el nodo Apply, por lo que no funciona de forma nativa.
+- El archivo sin cabeceras fue renombrado; los enlaces de descarga antiguos con el nombre anterior quedan obsoletos, aunque los bytes y el SHA256 no cambian.
+- El valor `config.transformer.pdd_steps = 32` es el tamaño del banco de cabeceras, no el número de pasos del sampler; confundirlos produce recetas incorrectas.
+- No se documentan sesgos, tasas de alucinación ni cobertura idiomática en la información disponible.
+- El repositorio ocupa 92,5 GB, lo que exige planificación de almacenamiento antes de la descarga.
+- No se ofrecen garantías de VRAM mínima; el rendimiento en hardware concreto debe validarse empíricamente.
 
 ## Enlaces
 
-- [Hugging Face - aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI](https://huggingface.co/aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI)
-- [Hugging Face - alibaba-pai/MiniMax-H3-Acc-LoRAs (original)](https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs)
-- [Hugging Face - MiniMaxAI/MiniMax-H3 (modelo base)](https://huggingface.co/MiniMaxAI/MiniMax-H3)
-- [GitHub - Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc (nodo personalizado)](https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc)
-- [Paper PDD - arXiv:2607.26004](https://arxiv.org/abs/2607.26004)
-- [Colección MiniMax-H3 en Hugging Face](https://huggingface.co/collections/MiniMaxAI/minimax-h3)
-- [GitHub - ai-models-lab/minimax-h3 (hub comunitario)](https://github.com/ai-models-lab/minimax-h3)
-- [Guía de LoRAs MiniMax H3 - minimax3.org](https://minimax3.org/minimax-h3-lora)
-- [Tutoriales oficiales - design.minimax.io/h3](https://design.minimax.io/h3)
+- Repositorio en Hugging Face: https://huggingface.co/aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- LoRAs PDD oficiales de Alibaba PAI: https://huggingface.co/alibaba-pai/MiniMax-H3-Acc-LoRAs
+- Checkpoint pruned Ref2VA INT8 ConvRot de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3/blob/e5eb578a89295337b8ff433a035929ce0279e0b6/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors
+- Pull request de ComfyUI #17157: https://github.com/Comfy-Org/ComfyUI/pull/17157
+- Paper de referencia: arxiv:2607.26004

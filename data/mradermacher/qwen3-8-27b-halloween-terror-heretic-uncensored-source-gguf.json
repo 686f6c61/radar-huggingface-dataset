@@ -40,8 +40,6 @@
     "roleplaying",
     "evil sims",
     "en",
-    "base_model:DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source",
-    "base_model:quantized:DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

@@ -47,8 +47,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 167,
-  "downloads_30d": 652316,
+  "likes": 168,
+  "downloads_30d": 601914,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
@@ -71,71 +71,51 @@
     {
       "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
       "dataset": "jev-distill-corpus-v3 · test_set_30k",
-      "metric": "mean KL(teacher ‖ model)",
-      "value": 0.0276
+      "metric": "mean KL(target ‖ model), all test rows (25,376 of 29,955 targets are TypeSafe Jev 1.13 distributions)",
+      "value": 0.021
     },
     {
       "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
       "dataset": "jev-distill-corpus-v3 · test_set_30k",
       "metric": "noul AUROC",
-      "value": 0.9938
+      "value": 0.996
     },
     {
       "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
       "dataset": "jev-distill-corpus-v3 · test_set_30k",
-      "metric": "noul Brier (vs. teacher probability)",
-      "value": 0.0022
+      "metric": "noul Brier (vs. target probability, all rows)",
+      "value": 0.0015
     },
     {
       "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
       "dataset": "jev-distill-corpus-v3 · test_set_30k",
       "metric": "score expected-value MAE (0–5 scale)",
-      "value": 0.119
+      "value": 0.103
     },
     {
       "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
       "dataset": "jev-distill-corpus-v3 · test_set_30k",
       "metric": "ECE (15 bins, after temperature)",
-      "value": 0.0014
+      "value": 0.0007
     },
     {
       "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
       "dataset": "jev-distill-corpus-v3 · test_set_30k",
       "metric": "choice top-1 agreement (all rows)",
-      "value": 0.884
+      "value": 0.898
     },
     {
       "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",
       "dataset": "jev-distill-corpus-v3 · test_set_30k",
-      "metric": "choice top-1 agreement (teacher-decisive rows, top-2 gap ≥ 0.1)",
-      "value": 0.918
+      "metric": "choice top-1 agreement (decisive-target rows, top-2 gap ≥ 0.1)",
+      "value": 0.954
+    },
+    {
+      "task": "code generation — System 2 path (base lm_head, adapter off)",
+      "dataset": "HumanEval",
+      "metric": "pass@1 (greedy, completion-style prompt)",
+      "value": 0.707
     }
   ],
-  "sources": [
-    {
-      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
-      "url": "https://jevmodel.org/",
-      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
-    },
-    {
-      "title": "Jev by TypeSafe AI — Try the System One model & API",
-      "url": "https://jevtypesafeai.com/",
-      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it turns messy input into typed, calibrated decisions software can use directly — no hallucinations, 70-500ms. Try it free in the browser and learn the API."
-    },
-    {
-      "title": "Jev AI — Decisions at machine speed",
-      "url": "https://jevai.net/",
-      "snippet": "Jev AI is the first System One Model from TypeSafe AI: type-safe decisions in 70-500 ms, zero hallucinations, calibrated confidence. Founded by a ChatGPT co-inventor. Output tokens free, input from $0.042 per million."
-    },
-    {
-      "title": "Jev AI Community: Powered by the Jev Model",
-      "url": "https://www.jevai.org/",
-      "snippet": "Join the Jev AI community to share and explore developer use cases, prompting workflows, and structured decision-making examples powered by the Jev Model."
-    },
-    {
-      "title": "Jev (AI model) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
-      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
-    }
-  ]
+  "sources": []
 }

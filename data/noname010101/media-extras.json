@@ -42,11 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AI Model Hub for Image, Video & Audio | Media.io",
-      "url": "https://www.media.io/ai/models",
-      "snippet": "Media.io AI Model Hub Media.io brings leading AI models together in one online workflow, so you can create, edit, and compare results without jumping between different tools. Choose from models for AI video generation, image creation, photo editing, music, sound effects, lip sync, translation, and more — then pick the one that best fits your story, brand, budget, or creative style."
-    }
-  ]
+  "sources": []
 }

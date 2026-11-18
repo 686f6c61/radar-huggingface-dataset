@@ -5,7 +5,7 @@
   "author": "fidel1234",
   "url": "https://huggingface.co/fidel1234/Krea2_Asian_Character",
   "created_at": "2026-09-21T16:32:13.000Z",
-  "updated_at": "2026-11-16T17:11:04.000Z",
+  "updated_at": "2026-11-17T11:43:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 53,
-  "downloads_30d": 1063632,
+  "downloads_30d": 1056207,
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 44173666857,
-  "storage_human": "44.2 GB",
+  "storage_bytes": 45326505068,
+  "storage_human": "45.3 GB",
   "context_length": null,
   "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
   "formats": [
@@ -40,31 +40,5 @@
   "renamed_to": "fidel1234/Krea2",
   "renamed_at": "2026-11-16T06:11:40.254Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "بي كير | المنصة الأذكى والأرخص لتأمين السيارات في السعودية",
-      "url": "https://bcare.com.sa/",
-      "snippet": "المنصة الأذكى لمقارنة عروض أكثر من 20 شركة تأمين. احصل على أرخص تأمين سيارات مع إصدار فوري وربط مباشر بنجم. ما الذي يغطيه التأمين؟"
-    },
-    {
-      "title": "BCare - بي كير للتأمين",
-      "url": "https://www.bcare.com/",
-      "snippet": "انطلقت رحلتنا عام 2014 بتقديم خدمات الوساطة التأمينية للعملاء في المنطقة الوسطى للمملكة العربية السعودية، حاملين معنا طموحًا عظيمًا لتطوير قطاع الوساطة التأمينية للشركات ونطمح للتميز …"
-    },
-    {
-      "title": "BCare - بي كير",
-      "url": "https://bcareksa.app.link/7zDuwosCf",
-      "snippet": "Welcome to BCare - بي كير! By providing your phone number, you agree to receive a one-time automated text message with a link to …"
-    },
-    {
-      "title": "بي كير | المنصة الأذكى والأرخص تأمين طبي شركات ومنشآت",
-      "url": "https://medical.bcare.com.sa/",
-      "snippet": "المنصة الأذكى لمقارنة أفضل شركات التأمين الطبي. احصل على أرخص تأمين للشركات والمنشآت، مع إصدار فوري وربط مباشر بمجلس الضمان الصحي. © 2026 شركة عناية الوسيط لوساطة التأمين. …"
-    },
-    {
-      "title": "بي كير | المنصة الأذكى والأرخص تأمين طبي شركات ومنشآت",
-      "url": "https://www.bcare.com.sa/ar/medical-sme-insurance",
-      "snippet": "المنصة الأذكى لمقارنة أفضل شركات التأمين الطبي. احصل على أرخص تأمين للشركات والمنشآت، مع إصدار فوري وربط مباشر بمجلس الضمان الصحي. ما الذي يغطيه التأمين؟"
-    }
-  ]
+  "sources": []
 }

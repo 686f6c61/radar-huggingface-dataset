@@ -2,109 +2,88 @@
 
 ## Resumen
 
-WarmBloodAban/Qwen-Image-2.1-LoRAs es un repositorio de adaptadores LoRA para el modelo de difusion de generacion y edicion de imagenes Qwen/Qwen-Image-2.1, publicado por el usuario WarmBloodAban en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo completo, sino de un contenedor de adaptadores de bajo rango que modifican el comportamiento del modelo base sin reentrenar sus pesos. El repositorio ocupa 0,2 GB, se creo el 20 de septiembre de 2026 y, en el momento de la consulta, acumulaba 0 descargas y 2 likes.
+Qwen-Image-2.1-LoRAs es una coleccion de adaptadores LoRA publicados por el usuario WarmBloodAban sobre el modelo base Qwen/Qwen-Image-2.1, un modelo de difusion texto-a-imagen de la familia Qwen. El repositorio no contiene pesos completos, sino un conjunto de LoRAs especializados que modifican el comportamiento del modelo base en tareas concretas de edicion y generacion de imagenes. El paquete ocupa 0,7 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-El proposito declarado del autor es reunir LoRAs funcionales y estilisticos especificos para las capacidades de edicion de imagen de Qwen-Image-2.1, con actualizaciones continuas. De momento solo se documenta un adaptador: Qwen2.1_Anime_consistency, orientado a mantener la consistencia de personajes en ediciones de estilo anime, entrenado principalmente con hojas de modelo de personaje (referencias de cuatro vistas) y ediciones de expresiones faciales. El propio autor lo marca explicitamente como experimental y advierte de que los resultados de edicion y la estabilidad de salida no estan garantizados.
+La coleccion se centra en dos adaptadores: uno orientado a la consistencia de personajes en estilo anime y otro a la conversion de imagenes de cualquier estilo artistico en personajes humanos realistas. Ambos estan pensados para el flujo de trabajo de diffusers y se aplican sobre el pipeline texto-a-imagen del modelo base, por lo que su utilidad depende enteramente de la disponibilidad y el rendimiento de Qwen-Image-2.1.
 
-La relevancia actual del repositorio es limitada pero concreta: sirve como banco de pruebas para parametros de entrenamiento de LoRA sobre Qwen-Image-2.1 y como punto de partida para flujos de edicion con consistencia de personaje. No incluye informacion sobre arquitectura del modelo base, numero de parametros, rango del adaptador ni resultados de evaluacion.
+El interes actual del repositorio radica en su caracter practico: ofrece recetas de parametros concretas (sampler Euler, scheduler FlowMatchEulerDiscreteScheduler y pesos LoRA entre 0,6 y 0,8) y un caso de uso muy demandado en produccion creativa, como es mantener la identidad de un personaje a lo largo de ediciones sucesivas. Aun asi, el autor marca explicitamente el primer adaptador como experimental y no publica metricas objetivas de calidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (low-rank adaptation) sobre el modelo de difusion Qwen/Qwen-Image-2.1; arquitectura del modelo base no disponible |
-| Parametros totales | No disponible (el repositorio pesa 0,2 GB; no se desglosa el numero de parametros del adaptador) |
+| Arquitectura | LoRA (adaptadores de bajo rango) sobre un modelo de difusion texto-a-imagen; arquitectura del modelo base no disponible |
+| Parametros totales | No disponible (el repositorio contiene adaptadores LoRA, no pesos completos) |
 | Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (no aplica en el sentido de contexto de texto; la resolucion de imagen soportada depende del modelo base y no se documenta) |
+| Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible |
+| Idiomas soportados | No disponible (el modelo es de generacion de imagenes; el idioma afecta solo a los prompts) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Pesos de difusion compatibles con la libreria diffusers (repo de 0,2 GB); formatos concretos por archivo no disponibles |
-| Tipo de artefacto | Adaptador LoRA para edicion de imagen (categoria declarada: text-to-image / image-editing) |
-| Modelo base | Qwen/Qwen-Image-2.1 |
-| Rank / alpha del LoRA | No disponible |
-| Pesos de LoRA recomendados | 0,6 a 0,8 (recomendacion del autor) |
-| Pasos de muestreo recomendados | Los oficiales de Qwen-Image-2.1 (no se concretan) |
-| Escala CFG recomendada | La oficial de Qwen-Image-2.1 (no se concreta) |
-| Prompt de instancia | null (no definido en la model card) |
-| Pipelines soportados | text-to-image (declarado en Hugging Face) |
-| Tamano del repositorio | 0,2 GB |
-| Idiomas de la documentacion | Ingles |
+| Formato de pesos | Pesos LoRA compatibles con la libreria diffusers (formato exacto de los ficheros no disponible) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un conjunto de adaptadores LoRA, no un modelo entrenado desde cero. Los LoRA anaden matrices de bajo rango a las capas del modelo base Qwen/Qwen-Image-2.1 y se cargan junto a este o se fusionan con sus pesos. El autor no publica el rango, el alpha, las capas objetivo, la tasa de aprendizaje, el numero de pasos ni el hardware empleado en el entrenamiento.
+Los adaptadores son LoRAs, es decir, matrices de bajo rango que se insertan en las capas del modelo base Qwen-Image-2.1 para modificar su comportamiento sin reentrenar los pesos originales. El repositorio no detalla en que capas se aplican los adaptadores, ni el rango utilizado, ni el numero de pasos de entrenamiento, ni la tasa de aprendizaje. Tampoco se especifica el numero de imagenes del dataset ni el volumen total de tokens o pares imagen-texto empleados.
 
-En cuanto a datos, la model card indica que Qwen2.1_Anime_consistency se ajusto principalmente con hojas de modelo de personaje con referencias de cuatro vistas y con diversas ediciones de expresiones faciales. El objetivo declarado es doble: mejorar la consistencia de personaje en edicion de estilo anime y, a la vez, servir de banco de pruebas para identificar los parametros de entrenamiento optimos para Qwen Image 2.1. No se especifica el volumen del dataset, si hubo filtrado, curación manual o anotaciones, ni si se aplicaron tecnicas de regularizacion o de preservacion de capacidades del modelo base.
+La informacion disponible sobre el entrenamiento se limita a la composicion de los datos: el adaptador Qwen2.1_Anime_consistency se entreno principalmente con hojas de modelo de personajes (referencias de cuatro vistas) y ediciones de expresiones faciales, mientras que Qwen2.1_Anything2RealCharacters se entreno con un conjunto amplio de imagenes de personas reales emparejadas con grupos de referencia para el control de expresiones faciales. No se documenta el uso de RLHF, DPO ni tecnicas de alineacion equivalentes, algo esperable en adaptadores de difusion. El autor indica que el primer adaptador se desarrollo sobre todo para probar y comparar parametros de entrenamiento optimos para Qwen Image 2.1, lo que explica su estado experimental.
 
 ## Capacidades
 
-- Edicion de imagen sobre el modelo base Qwen-Image-2.1: el adaptador modifica el comportamiento de edicion del modelo, no lo sustituye.
-- Consistencia de personaje en estilo anime: el adaptador Qwen2.1_Anime_consistency esta disenado para preservar la identidad del personaje entre ediciones sucesivas.
-- Edicion de expresiones faciales: parte del entrenamiento se centro en variaciones de expresion sobre una misma referencia de personaje.
-- Uso de referencias multi-vista: los datos de entrenamiento incluyen hojas de modelo con cuatro vistas, lo que sugiere soporte para condicionar la edicion a multiples angulos de un mismo personaje.
-- Ajuste de intensidad del efecto: el autor recomienda pesos de LoRA entre 0,6 y 0,8, lo que permite regular la fuerza del estilo o del condicionamiento.
-- Estilo y funcion: el repositorio se presenta como contenedor de LoRAs "funcionales y estilisticos", aunque en la informacion disponible solo se documenta uno.
-- Generacion de texto a imagen: heredada del modelo base, declarada en la etiqueta de pipeline.
-- Tool calling, function calling, agentes, razonamiento multi-paso, vision general, audio y modo thinking: no aplica o no disponible (es un adaptador de difusion de imagen).
+- Edicion de imagenes en estilo anime con enfasis en la consistencia de personajes a lo largo de varias ediciones.
+- Generacion y edicion de retratos realistas de personas a partir de imagenes de cualquier estilo artistico.
+- Control de expresiones faciales mediante grupos de referencia, segun la descripcion del adaptador Anything2RealCharacters.
+- Aplicacion modular sobre el pipeline texto-a-imagen de Qwen-Image-2.1 mediante diffusers.
+- Ajuste de intensidad del efecto mediante el peso LoRA, con un rango recomendado de 0,6 a 0,8.
+- Compatibilidad con el sampler Euler y el scheduler FlowMatchEulerDiscreteScheduler para el adaptador realista.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision, audio ni modo thinking, ya que se trata de un adaptador de generacion de imagenes.
 
 ## Casos de uso
 
-- Edicion de personajes de anime en produccion de ilustracion: aplicar el adaptador sobre Qwen-Image-2.1 con peso 0,6-0,8 para mantener la identidad de un personaje entre varias escenas, usando las hojas de modelo de cuatro vistas como referencia.
-- Preproduccion de series o comics: generar variaciones de expresion de un personaje coherente para guiones graficos, partiendo de una hoja de modelo y editando emocion por emocion.
-- Creacion de assets para videojuegos con estilo anime: producir retratos y poses consistentes del mismo personaje para menus, dialogos o fichas de personaje.
-- Ilustracion de encargo con revisiones iterativas: mantener al personaje estable mientras se cambian fondo, ropa o iluminacion en pasadas sucesivas de edicion.
-- Prototipado de pipelines de difusion para desarrolladores: usar el repositorio como caso de prueba para medir como afecta el peso del LoRA y los parametros de muestreo a la fidelidad del personaje.
-- Investigacion sobre ajuste eficiente de modelos de difusion: analizar el efecto de LoRAs de bajo rango sobre un modelo base grande con un coste de almacenamiento de 0,2 GB por adaptador.
-- Catalogacion y entrenamiento de nuevos adaptadores: el autor mantiene el repositorio abierto a nuevas publicaciones, por lo que sirve de plantilla para anadir LoRAs funcionales o estilisticos.
-
-Nota: todos estos casos asumen acceso al modelo base Qwen/Qwen-Image-2.1 y a su pipeline de edicion; el adaptador por si solo no genera ni edita imagenes.
+- Consistencia de personajes en produccion de anime: aplicar Qwen2.1_Anime_consistency sobre el modelo base para mantener los rasgos de un personaje entre ilustraciones sucesivas, usando hojas de modelo de cuatro vistas como referencia y un peso LoRA en torno a 0,6-0,8 para no saturar el estilo.
+- Conversion de arte conceptual a retrato realista: emplear Qwen2.1_Anything2RealCharacters para transformar bocetos o ilustraciones estilizadas en imagenes de personas realistas, con el sampler Euler y FlowMatchEulerDiscreteScheduler para obtener un acabado mas suave y fiel.
+- Edicion de expresiones faciales en retratos: usar los grupos de referencia del adaptador realista para generar variantes de una misma cara con distintas expresiones, util en casting virtual o previsualizacion de personajes.
+- Prototipado rapido de personajes para videojuegos: iterar sobre hojas de modelo y expresiones con el adaptador de anime antes de fijar el diseno definitivo, reduciendo el coste frente a encargos de ilustracion completos.
+- Creacion de contenido para redes y canales divulgativos: el autor mantiene canales en YouTube y Bilibili (AIGC-Singularity) donde documenta flujos de trabajo, lo que facilita replicar pipelines de generacion y edicion para publicacion periodica.
+- Pruebas de parametros de entrenamiento de LoRA: dado que el adaptador de anime se diseno como banco de pruebas de hiperparametros para Qwen Image 2.1, sirve para equipos que quieran calibrar sus propios adaptadores antes de entrenar a mayor escala.
+- Integracion en pipelines de diffusers: al ser adaptadores compatibles con la libreria, pueden cargarse dinamicamente en servicios de generacion de imagenes y combinarse con otros LoRAs del ecosistema, siempre que el modelo base este desplegado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas (FID, CLIP score, similitud de identidad facial, consistencia entre vistas) ni comparaciones con otros adaptadores o con el modelo base sin LoRA. El autor indica ademas que el modelo es experimental y que la estabilidad de salida no esta garantizada, por lo que no hay cifras de rendimiento que presentar.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye metricas objetivas (FID, CLIP score, similitud de identidad facial u otras) ni comparaciones cuantitativas con adaptadores alternativos.
 
 ## Requisitos de hardware
 
-- El repositorio en si ocupa 0,2 GB en disco y no requiere GPU para almacenarse.
-- La VRAM necesaria para inferencia depende por completo del modelo base Qwen/Qwen-Image-2.1, cuyas especificaciones no se proporcionan en la informacion disponible.
-- GPU recomendadas: no disponible.
-- Capacidad de ejecucion en GPU de consumo: no disponible; depende del modelo base y del grado de cuantizacion que este soporte.
-- Opciones de despliegue: la libreria declarada es diffusers, por lo que el adaptador se carga con las utilidades de LoRA de diffusers o de PEFT sobre el pipeline del modelo base. No se documentan instrucciones para vLLM, llama.cpp, Ollama, TGI ni otros motores (son motores de modelos de lenguaje y no aplican directamente a un pipeline de difusion de imagen).
-- Pasos de muestreo y CFG: el autor remite a los ajustes oficiales de Qwen-Image-2.1, sin concretarlos.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible para los adaptadores en si; depende del modelo base Qwen-Image-2.1, cuyos requisitos no se detallan en la informacion proporcionada.
+- GPU recomendadas: no disponible. Al tratarse de LoRAs, el coste adicional sobre el modelo base es minimo (el repositorio completo ocupa 0,7 GB), por lo que el limite practico lo marca el modelo base.
+- Compatibilidad con GPU de consumo: no disponible; viene determinada por el modelo base y por la precision y cuantizacion con que se despliegue.
+- Opciones de despliegue: la libreria indicada es diffusers; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a modelos de difusion de imagen.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible en la informacion proporcionada. No se han encontrado en la busqueda web adaptadores LoRA comparables para Qwen-Image-2.1 ni datos del propio modelo base que permitan establecer una comparacion de parametros, contexto, rendimiento o licencia. A modo de contexto cualitativo, sin datos verificados:
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen-Image-2.1-LoRAs (este repositorio) | Coleccion de LoRAs sobre Qwen-Image-2.1 | No disponible (adaptadores) | No aplica | Apache 2.0 | Hugging Face, 27.842 descargas, 139 likes |
+| Modelo base Qwen/Qwen-Image-2.1 | Modelo de difusion texto-a-imagen | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (referenciado como base) |
+| Otros adaptadores LoRA para edicion de imagen | LoRA sobre modelos de difusion | No disponible | No aplica | Variable | Ecosistema diffusers |
 
-| Modelo o artefacto | Tipo | Modelo base | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| WarmBloodAban/Qwen-Image-2.1-LoRAs | LoRA de edicion de imagen | Qwen/Qwen-Image-2.1 | Apache 2.0 | Hugging Face, 0 descargas, 2 likes |
-| Otros LoRA para Qwen-Image-2.1 | LoRA de edicion de imagen | Qwen/Qwen-Image-2.1 | No disponible | No disponible en la informacion consultada |
-| Qwen/Qwen-Image-2.1 (base) | Modelo de difusion de imagen | No aplica | No disponible en esta ficha | Referenciado como modelo base |
+No se dispone de datos de rendimiento de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Estado experimental declarado por el autor: los resultados de edicion concretos y la estabilidad de salida no estan garantizados.
-- No es un modelo autonomo: requiere el modelo base Qwen/Qwen-Image-2.1, cuyas condiciones de uso, licencia y requisitos deben verificarse por separado.
-- Ausencia total de evaluacion cuantitativa: no hay benchmarks, comparativas ni muestras sistematicas mas alla de la galeria del repositorio.
-- Documentacion incompleta: no se publican rango del LoRA, alpha, capas objetivo, hiperparametros de entrenamiento, composicion exacta del dataset ni numero de pasos.
-- Riesgo de sobreajuste al estilo anime: el unico adaptador documentado esta entrenado con hojas de modelo y expresiones faciales, por lo que puede degradar la calidad en otros estilos o dominios.
-- Sesgos: no hay informacion sobre la diversidad de los datos de entrenamiento ni sobre sesgos de representacion; al depender de referencias de personajes concretas, es probable que reproduzca las caracteristicas de esas referencias.
-- Alucinacion visual: como todo modelo de difusion, puede generar detalles anatomicos o de identidad incorrectos, especialmente con pesos de LoRA altos.
-- Idiomas: no se documenta soporte multilingue en los prompts; la model card esta en ingles y no se especifican idiomas para las instrucciones de edicion.
-- Reputacion y madurez: 0 descargas y 2 likes en el momento de la consulta, con creacion y ultima actualizacion el mismo dia; se trata de un artefacto sin validacion por parte de la comunidad.
-- Licencia Apache 2.0 del adaptador: permite uso comercial del adaptador, pero no exime de cumplir la licencia y los terminos del modelo base, que no se detallan aqui.
-- Advertencia de contenido: el contenido de la model card se ha tratado unicamente como material de referencia, sin seguir instrucciones embebidas en ella.
+- El adaptador Qwen2.1_Anime_consistency esta marcado como experimental por el propio autor; no se garantizan resultados de edicion concretos ni estabilidad de salida.
+- No se publican metricas de calidad, sesgos ni evaluaciones de robustez, lo que dificulta validar el comportamiento en produccion.
+- El repositorio no documenta sesgos conocidos; al entrenarse con imagenes de personas reales y personajes anime, puede heredar sesgos de representacion del dataset, que no se describe en detalle.
+- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar rasgos faciales o detalles inconsistentes, especialmente con pesos LoRA altos o prompts ambiguos.
+- La calidad final depende criticamente del modelo base Qwen-Image-2.1; si este no esta disponible o cambia, los adaptadores pueden dejar de funcionar como se espera.
+- No se especifican limitaciones de idioma en los prompts ni el comportamiento multilingue del pipeline.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte formal; las consultas comerciales se canalizan por correo y WeChat.
+- El repositorio se actualiza de forma continua segun el autor, por lo que la composicion de adaptadores y sus nombres pueden cambiar sin aviso.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/WarmBloodAban/Qwen-Image-2.1-LoRAs
-- Archivos del modelo: https://huggingface.co/WarmBloodAban/Qwen-Image-2.1-LoRAs/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Canal de YouTube del autor (AIGC-Singularity): https://www.youtube.com/@AIGC-Singularity
 - Canal de Bilibili del autor (AIGC-Singularity): https://space.bilibili.com/49766729
-- Contacto del autor: a592991299@gmail.com
-- Grupo de QQ indicado en la model card: 1072010342
-- WeChat de consultas comerciales: aigctyd
+- Contacto comercial por correo: a592991299@gmail.com

@@ -2,89 +2,90 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF es la conversión a formato GGUF del modelo de síntesis de voz Qwen3-TTS-12Hz-0.6B-CustomVoice, desarrollado originalmente por el equipo Qwen de Alibaba. Esta versión, publicada por el usuario BricksDisplay, empaqueta el modelo en dos grafos separados: un backbone de lenguaje (text-to-speech LM) ejecutado por llama.cpp y un códec de audio (decoder/vocoder, voces integradas y adaptador) ejecutado por codec.cpp. El modelo base cuenta con 652.360.972 parámetros y genera audio a 12 Hz de frecuencia de frame.
+Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF es la cuantización en formato GGUF del modelo de síntesis de voz Qwen3-TTS-12Hz-0.6B-CustomVoice, desarrollado originalmente por el equipo Qwen y empaquetado por el usuario BricksDisplay. Se trata de un modelo de texto a voz (TTS) de 652.360.972 parámetros que genera audio a partir de texto en diez idiomas y ofrece nueve voces integradas, sin necesidad de clonación. La variante GGUF permite ejecutar el modelo de forma totalmente offline sobre CPU o GPU mediante llama.cpp y codec.cpp.
 
-El modelo resuelve el problema de la síntesis de voz multilingüe offline con voces predefinidas de calidad, sin necesidad de clonación. Soporta diez idiomas (inglés, chino, japonés, coreano, francés, alemán, español, italiano, portugués y ruso) y ofrece nueve voces integradas, cada una optimizada para su idioma nativo. La relevancia actual radica en que permite desplegar TTS en CPU o GPU de consumo con un peso total de entre 1,7 y 2,6 GB según cuantización, manteniendo la licencia Apache 2.0 del modelo original.
+El modelo resuelve el problema de la síntesis de voz multilingüe de calidad con un coste computacional reducido: con cuantizaciones de entre 296 MB y 2,4 GB para el backbone, y ficheros de códec de entre 1,3 GB y 1,7 GB, el conjunto completo cabe en hardware de consumo. La arquitectura se divide en dos grafos: un backbone de lenguaje (ejecutado por llama.cpp) y un códec de audio con vocoder, voces integradas y adaptador (ejecutado por codec.cpp), que la herramienta `tts-cli` conecta entre sí.
 
-La conversión a GGUF facilita la integración en herramientas del ecosistema llama.cpp (tts-cli, tts-server, llama.rn) y habilita ejecución totalmente offline en CUDA, Vulkan o Metal. Al ser una cuantización del modelo original, hereda sus capacidades y limitaciones, incluyendo la ausencia de instrucciones de estilo en la variante de 0,6B y la falta de clonación de voz en esta versión CustomVoice.
+Su relevancia actual radica en que democratiza un TTS multilingüe de diez idiomas con voces predefinidas en un paquete ligero y portable, con licencia Apache 2.0, lo que facilita su integración en aplicaciones locales, sistemas embebidos y pipelines de producción sin dependencia de servicios en la nube. La limitación principal frente a la variante de 1,7B es que el modelo de 0,6B no acepta instrucciones de estilo y no soporta clonación de voz.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Backbone TTS basado en transformer de lenguaje + códec de audio (decoder/vocoder) separado; inferencia mediante llama.cpp (backbone) y codec.cpp (códec) |
-| Parámetros totales | 652.360.972 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | Backbone: f32, f16, bf16, q8_0, q6_k, q5_k_m, q5_k_s, q5_1, q5_0, q4_k_m, q4_k_s, q4_1, q4_0, q3_k_l, q3_k_m, q3_k_s, q2_k. Códec: f32, f16, q8_0, q5_k_m, q4_k_m |
+| Arquitectura | Backbone de lenguaje TTS (ejecutado por llama.cpp) + codec de audio con vocoder, voces integradas y adaptador (codec.cpp) |
+| Parametros totales | 652.360.972 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Backbone: f32, f16, bf16, q8_0, q6_k, q5_k_m, q5_k_s, q5_1, q5_0, q4_k_m, q4_k_s, q4_1, q4_0, q3_k_l, q3_k_m, q3_k_s, q2_k. Codec: f32, f16, q8_0, q5_k_m, q4_k_m |
 | Idiomas soportados | en, zh, ja, ko, fr, de, es, it, pt, ru |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (dos archivos: backbone + codec) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se compone de dos partes diferenciadas. El backbone es un modelo de lenguaje de 652 millones de parámetros que genera tokens de audio a una frecuencia de frame de 12 Hz, ejecutado mediante llama.cpp. El códec contiene el decodificador/vocoder, las nueve voces integradas y el adaptador entre ambos grafos, y se ejecuta mediante codec.cpp. La separación en dos archivos sigue el patrón de los proyectores multimodales de llama.cpp: cada ejecución requiere un archivo de modelo y un archivo de códec.
+El modelo sigue una arquitectura de dos componentes acoplados. El backbone es un modelo de lenguaje de texto a voz de 0,6B parámetros que genera tokens de audio; el códec contiene el decodificador/vocoder, las nueve voces integradas y el adaptador entre ambos grafos. La herramienta `tts-cli` de codec.cpp orquesta los dos grafos, permitiendo ejecución en CPU o GPU (CUDA, Vulkan, Metal) de forma completamente offline. El modelo genera audio a una frecuencia de muestreo de 12 Hz según indica el nombre del modelo base.
 
-No se dispone de información detallada sobre la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La model card indica que el modelo original incorpora ajustes de muestreo recomendados (temperatura 0,9, top-k 50, top-p 1,0, min-p 0, penalización de repetición 1,05 con ventana de 4096), heredados del `generation_config.json` del modelo original y almacenados como metadatos `general.sampling.*` en los archivos GGUF. La variante de 0,6B no acepta instrucciones de estilo, ya que el modelo upstream las elimina para este tamaño; para instrucciones se requiere la variante de 1,7B.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. El modelo base es Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice, y esta variante es una cuantización GGUF del mismo, por lo que hereda sus características de entrenamiento. La model card indica que la configuración de muestreo recomendada (temperatura 0,9, top-k 50, top-p 1,0, min-p 0, penalización de repetición 1,05 con ventana de 4096) se transporta como metadatos `general.sampling.*` en los ficheros GGUF, replicando la `generation_config.json` del modelo original.
 
 ## Capacidades
 
 - Síntesis de voz (text-to-speech) en diez idiomas: inglés, chino, japonés, coreano, francés, alemán, español, italiano, portugués y ruso.
-- Nueve voces integradas: vivian, serena, uncle_fu, dylan, eric (chino, incluyendo dialectos de Pekín y Sichuan), ryan y aiden (inglés), ono_anna (japonés) y sohee (coreano).
-- Generación de audio a 12 Hz de frecuencia de frame mediante el backbone de lenguaje y el códec de audio.
-- Ejecución totalmente offline en CPU o GPU (CUDA, Vulkan, Metal).
-- Soporte de muestreo configurable por codebook, con penalización de repetición aplicada solo al primer codebook.
-- Integración con `tts-cli`, `tts-server`, llama.rn y cualquier host de llama.cpp.
-- No soporta clonación de voz en esta variante; para clonación se requiere Qwen3-TTS 0.6B Base.
-- No soporta instrucciones de estilo en la variante de 0,6B.
+- Nueve voces integradas seleccionables mediante el parámetro `--voice`: vivian, serena, uncle_fu, dylan, eric (chino, con variantes de Pekín y Sichuan), ryan, aiden (inglés), ono_anna (japonés) y sohee (coreano).
+- Generación de audio offline en CPU o GPU (CUDA, Vulkan, Metal) mediante `tts-cli`.
+- Aplicación automática de parámetros de muestreo recomendados a través de metadatos GGUF en cualquier host compatible con llama.cpp (tts-cli, tts-server, llama.rn).
+- No soporta clonación de voz: para clonación a partir de un clip de referencia se requiere la variante Qwen3-TTS 0.6B Base.
+- No acepta instrucciones de estilo (`--instruct`): el modelo de 0,6B las descarta; para instrucciones de estilo se necesita la variante de 1,7B.
+- No dispone de tool calling, function calling ni capacidades de agente; es un modelo especializado exclusivamente en TTS.
 
 ## Casos de uso
 
-- Generación de audiolibros y narración automatizada: el modelo puede sintetizar texto largo en diez idiomas con voces predefinidas, ejecutándose offline en CPU o GPU de consumo, lo que permite procesar lotes sin dependencia de servicios en la nube.
-- Asistentes de voz para aplicaciones de escritorio: integrado mediante llama.cpp o codec.cpp, el modelo permite añadir respuestas habladas en inglés, español, francés y otros idiomas con una latencia controlada por el tamaño reducido (1,7-2,6 GB).
-- Localización de contenido multimedia: la síntesis en diez idiomas facilita doblar vídeos o podcasts a español, italiano, portugués, alemán, francés, ruso, japonés o coreano manteniendo una voz coherente por idioma.
-- Sistemas de accesibilidad: conversión de texto a voz para lectores de pantalla o interfaces para personas con discapacidad visual, con despliegue local que evita enviar contenido sensible a servidores externos.
-- Prototipado de interfaces conversacionales: el modelo permite generar respuestas de voz en entornos de desarrollo sin infraestructura de GPU dedicada, usando cuantizaciones q4_k_m o q8_0 sobre CPU.
-- Generación de avisos y anuncios automatizados: en sistemas de megafonía, transporte público o atención telefónica, el modelo puede producir mensajes pregrabados en varios idiomas con voces integradas y sin conexión.
-- Investigación en TTS: al ser una conversión GGUF de un modelo Apache 2.0, sirve como base para experimentos de cuantización, comparación de latencia y evaluación de calidad de audio en distintos backends (CPU, CUDA, Vulkan, Metal).
+- Audiolibros y narración automatizada: el modelo puede convertir texto largo en audio con voces integradas en diez idiomas, ejecutándose de forma offline y sin coste por petición, lo que lo hace adecuado para volúmenes elevados de narración.
+- Asistentes de voz locales: integrado mediante `tts-server` o `tts-cli`, permite dotar de voz a asistentes personales o domóticos que funcionan sin conexión a Internet, con latencia controlada y sin enviar texto a servicios externos.
+- Accesibilidad y lectura de pantalla: conversión de contenido textual (noticias, documentos, correos) en audio para personas con discapacidad visual, con voces nativas en el idioma del usuario y ejecución en hardware de consumo.
+- Localización de contenido multimedia: generación de pistas de voz en diez idiomas para vídeos, tutoriales o presentaciones, con voces predefinidas que cubren los mercados principales (chino, inglés, japonés, coreano, europeo).
+- Sistemas embebidos y dispositivos de borde: con cuantizaciones de 296 MB (q2_k) a 495 MB (q6_k) para el backbone y ficheros de códec desde 1,3 GB, el modelo puede desplegarse en dispositivos con recursos limitados mediante llama.cpp.
+- Prototipado e investigación en TTS: al estar en formato GGUF y con licencia Apache 2.0, sirve como base para experimentos de síntesis de voz, comparación de cuantizaciones y evaluación de calidad de audio en distintos idiomas.
+- Generación de avisos y mensajes automatizados: anuncios en aeropuertos, transporte público o sistemas de megafonía que requieren voces claras y multilingües, con ejecución local y sin dependencia de la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: entre 1,7 GB (q4_k_m backbone + códec) y 2,6 GB (f16 backbone + códec) para el par completo; el backbone por sí solo ocupa entre 296 MB (q2_k) y 2,4 GB (f32).
-- GPU recomendadas: no se especifican modelos concretos en la información disponible; el modelo soporta CUDA, Vulkan y Metal, por lo que puede ejecutarse en GPUs de consumo como RTX 4090 o superiores, así como en A100/H100 para despliegues de mayor volumen.
-- Cabe en GPU de consumo: sí, gracias al tamaño reducido del par backbone + códec (1,7-2,6 GB), es viable en GPUs con 4 GB o más de VRAM.
-- Opciones de despliegue: `tts-cli` y `tts-server` de codec.cpp (que incluye llama.cpp), llama.rn y cualquier host de llama.cpp; ejecución en CPU o GPU.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: el conjunto recomendado (backbone q8_0 + codec q8_0) ocupa 1,9 GB; la opción más pequeña (q4_k_m + codec q4_k_m) ocupa 1,7 GB; la de mayor calidad (f16 + codec f16) ocupa 2,6 GB. Estas cifras corresponden al tamaño de los ficheros y son una estimación del espacio necesario en memoria.
+- GPU recomendadas: no se especifican modelos concretos en la información disponible. El modelo soporta CUDA, Vulkan y Metal, por lo que es compatible con GPUs NVIDIA, AMD e Intel, así como con Apple Silicon.
+- Cabe en GPU de consumo: sí, dado que el conjunto completo no supera los 2,6 GB en la configuración de mayor calidad, es apto para GPUs de consumo con al menos 3-4 GB de VRAM disponible.
+- Opciones de despliegue: `tts-cli` y `tts-server` de codec.cpp (que incluye llama.cpp), llama.rn y cualquier host compatible con llama.cpp que aplique los metadatos de muestreo.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF (este) | 652 M | no disponible | 10 | Apache 2.0 | GGUF | Voces integradas, sin clonación ni instrucciones de estilo |
-| Qwen3-TTS-12Hz-0.6B-Base-GGUF | no disponible | no disponible | 10 | Apache 2.0 | GGUF | Permite clonación de voz con clip de referencia |
-| Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF | no disponible | no disponible | 10 | Apache 2.0 | GGUF | Acepta instrucciones de estilo (`--instruct`) |
-| Qwen3-TTS-12Hz-0.6B-CustomVoice (original) | 652 M | no disponible | 10 | Apache 2.0 | safetensors | Modelo base sin cuantizar, ejecutable con el stack original de Qwen |
+| Modelo | Parámetros | Idiomas | Voces | Clonación de voz | Instrucciones de estilo | Licencia | Formato |
+|---|---|---|---|---|---|---|---|
+| Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF (este) | 652.360.972 | 10 | 9 integradas | No | No | apache-2.0 | GGUF |
+| Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF | No disponible | No disponible | No disponible | No disponible | Sí | No disponible | GGUF |
+| Qwen3-TTS-12Hz-0.6B-GGUF (Base) | No disponible | No disponible | No disponible | Sí | No disponible | No disponible | GGUF |
+
+La información proporcionada solo permite comparar con las variantes del mismo modelo base: la versión de 1,7B añade soporte de instrucciones de estilo, y la variante Base de 0,6B permite clonación de voz a partir de un clip de referencia. No se dispone de datos de benchmarks ni de otros modelos TTS comparables en la información disponible.
 
 ## Limitaciones y advertencias
 
-- La variante de 0,6B no acepta instrucciones de estilo; para control de estilo se requiere el modelo de 1,7B.
-- No dispone de clonación de voz; para voces a partir de un clip de referencia se debe usar Qwen3-TTS 0.6B Base.
-- Sin la penalización de repetición (1,05 con ventana de 4096) una voz clonada con transcripción de referencia puede entrar en bucle en las cuantizaciones más pequeñas en lugar de terminar.
-- Los archivos de códec requieren codec.cpp del 2026-10-20 o posterior para las voces integradas.
-- No se dispone de información sobre sesgos conocidos, riesgo de alucinación específico ni limitaciones de contexto en la documentación proporcionada.
-- El rendimiento y la calidad pueden degradarse con cuantizaciones muy agresivas (q2_k, q3_k_s) en comparación con q8_0 o f16.
-- Aunque la licencia es Apache 2.0, se recomienda verificar los términos del modelo base y de las dependencias (llama.cpp, codec.cpp) antes de un uso comercial en producción.
-- La fecha de creación del repositorio (2026-10-20) y la dependencia de una versión concreta de codec.cpp implican que la integración debe fijar versiones para reproducibilidad.
+- El modelo de 0,6B no acepta instrucciones de estilo (`--instruct`); el autor indica que el modelo original las descarta para esta variante, por lo que no se puede controlar el tono o estilo mediante texto.
+- No soporta clonación de voz; para voces personalizadas a partir de un clip de referencia es necesario usar la variante Qwen3-TTS 0.6B Base.
+- Sin la penalización de repetición recomendada (1,05) y la ventana de 4096, una voz clonada con transcripción de referencia puede entrar en bucle en las cuantizaciones más pequeñas en lugar de terminar la generación.
+- Los ficheros de códec requieren codec.cpp de fecha 2026-10-20 o posterior para las voces integradas.
+- Riesgo de alucinación y artefactos de audio: no se dispone de información específica sobre sesgos o tasas de error en la información proporcionada.
+- Limitaciones de idioma: aunque soporta diez idiomas, cada voz está diseñada para sonar mejor en su idioma nativo (chino, inglés, japonés o coreano), por lo que el uso de voces fuera de su idioma nativo puede degradar la calidad.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar los términos del modelo base original (Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice) para confirmar compatibilidad.
+- El repositorio ocupa 45,7 GB, aunque cada ejecución solo necesita un fichero de backbone y uno de códec; conviene descargar únicamente los ficheros necesarios.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta conversión: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
-- Variante Base (clonación de voz): https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-GGUF
-- Variante 1.7B CustomVoice (instrucciones de estilo): https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF
 - Repositorio codec.cpp: https://github.com/mybigday/codec.cpp
+- Instrucciones de compilación de codec.cpp para TTS: https://github.com/mybigday/codec.cpp#text-to-speech
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Variante de 1,7B con instrucciones de estilo: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF
+- Variante Base de 0,6B con clonación de voz: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-GGUF

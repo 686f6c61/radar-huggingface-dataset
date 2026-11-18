@@ -2,100 +2,83 @@
 
 ## Resumen
 
-`fidel1234/Moss_Asian_Character` es un adaptador LoRA para generación de imágenes publicado por el usuario fidel1234 en Hugging Face, entrenado sobre el modelo base `OpenMOSS-Team/MOSS-Image-Base`. Su propósito declarado, a partir del nombre del repositorio y de las etiquetas (`lora`, `diffusers`, `base_model:OpenMOSS-Team/MOSS-Image-Base`), es incorporar un personaje o estética asiática concreta al modelo base, de modo que este pueda reproducir ese personaje de forma consistente en distintas escenas y prompts.
+Moss Asian Character es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario fidel1234 en Hugging Face, diseñado para especializar el modelo base de generación de imágenes OpenMOSS-Team/MOSS-Image-Base en la representación de personajes de rasgos asiáticos, con un sesgo declarado hacia personajes japoneses. No es un modelo completo, sino un conjunto de pesos de bajo rango que se cargan sobre el modelo base para modificar su comportamiento generativo sin necesidad de reentrenarlo por completo.
 
-El artefacto es un adaptador de bajo rango, no un modelo completo: el repositorio ocupa 0,3 GB y requiere descargar por separado el modelo base para poder ejecutarse. La model card es prácticamente inexistente (únicamente el texto "Moss LoRA" y la marca "WIP", *work in progress*), sin datos de entrenamiento, hiperparámetros, ejemplos de uso ni evaluaciones publicadas. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el mismo día (27 de octubre de 2026), lo que indica una publicación recién subida y sin validación por parte de la comunidad.
+El adaptador se distribuye en formato diffusers, con pesos en safetensors, y está pensado para su uso en ComfyUI, donde el autor proporciona flujos de trabajo embebidos en las imágenes de muestra. El repositorio ocupa 11,7 GB, un tamaño considerable para un LoRA que sugiere la inclusión de múltiples variantes o checkpoints intermedios junto con las imágenes de ejemplo.
 
-Su relevancia es, por tanto, la de un eslabón más del ecosistema de LoRAs comunitarios para modelos de difusión: permite personalizar un modelo base abierto con coste de almacenamiento mínimo y sin reentrenar. No obstante, al carecer de documentación y de métricas, cualquier evaluación de calidad debe hacerse empíricamente antes de considerarlo para producción.
+Su relevancia práctica es acotada: se trata de un adaptador de nicho orientado a la personalización estética de un modelo base concreto, con muy poca tracción comunitaria (3 likes) pese a un volumen de descargas notable (84.296). La licencia MIT facilita su uso comercial, aunque el autor advierte de que se debe respetar también la licencia del modelo base MOSS.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre un modelo de difusión (modelo base `OpenMOSS-Team/MOSS-Image-Base`); rango, alpha y capas objetivo no documentados |
-| Parametros totales | No disponible (adaptador LoRA; no se publica el número de parámetros ni el rango utilizado) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (modelo de generación de imágenes, no de texto); resolución y longitud de prompt máximas no disponibles |
-| Tipos de cuantizacion | No disponible; al ser un LoRA se aplica sobre los pesos del modelo base, cuyas opciones de cuantización dependen de este y no se documentan en la informacion proporcionada |
-| Idiomas soportados | No disponible; la idioma de los prompts vendrá determinado por el text encoder del modelo base (no confirmado) |
-| Licencia | MIT (según etiqueta del repositorio); la licencia del modelo base debe verificarse por separado |
-| Formato de pesos | No disponible; repositorio de 0,3 GB con `library_name: diffusers`, sin confirmación del formato de fichero (safetensors u otros) |
-| Tipo de artefacto | Adaptador LoRA (no es un modelo autónomo) |
-| Modelo base | `OpenMOSS-Team/MOSS-Image-Base` |
-| Libreria | diffusers |
-| Tamano del repositorio | 0,3 GB |
-| Descargas | 0 |
-| Likes | 0 |
-| Region declarada | us |
-| Fecha de creacion / actualizacion | 2026-10-27 / 2026-10-27 |
+| Arquitectura | LoRA (Low-Rank Adaptation) sobre modelo de difusión MOSS-Image-Base |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de imagen) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible (orientado a personajes de estética japonesa/asiática) |
+| Licencia | MIT (sujeta además a la licencia del modelo base MOSS) |
+| Formato de pesos | safetensors (librería diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA (*Low-Rank Adaptation*), técnica que congela los pesos del modelo base e inyecta matrices de bajo rango en determinadas capas lineales para modificar su comportamiento con un coste de parámetros muy reducido. En el caso de modelos de difusión para texto-a-imagen, el LoRA se emplea habitualmente para fijar identidades de personaje, estilos visuales o conceptos concretos. En esta publicación no se especifica el rango, el alpha, las capas objetivo (atención cruzada, self-attention o MLP), la resolución de entrenamiento ni el número de pasos.
+El adaptador emplea la técnica LoRA, que congela los pesos del modelo base e inyecta matrices de bajo rango en determinadas capas para ajustar su comportamiento. El modelo base es OpenMOSS-Team/MOSS-Image-Base, un modelo de difusión para generación de imágenes. El entrenamiento se realizó con el framework AI-Toolkit sobre el modelo Moss Base, según declara el autor.
 
-No se ha publicado información sobre el dataset de entrenamiento: ni número de imágenes, ni composición, ni procedencia, ni si se aplicaron técnicas de regularización o *captioning* automático. Tampoco hay datos sobre el proceso de ajuste (optimizador, learning rate, scheduler) ni sobre evaluaciones cualitativas o cuantitativas. La model card se limita a las palabras "Moss LoRA" y "WIP", por lo que se desconoce si el adaptador está terminado o es una versión preliminar. El modelo base, `MOSS-Image-Base`, pertenece al proyecto OpenMOSS; sus detalles de arquitectura y entrenamiento no están incluidos en la información proporcionada.
+El dataset de entrenamiento fue, según la model card, seleccionado manualmente ("hand-cherry-picked") e incluye una mezcla equilibrada de planos cercanos, planos medios, cuerpo completo y distintos ángulos, con el objetivo de permitir un control flexible del encuadre y la perspectiva. No se especifican el número de imágenes, el número de pasos de entrenamiento, el rango del LoRA ni hiperparámetros de entrenamiento. El autor indica compatibilidad tanto con la variante base como con la variante SFT del modelo Moss.
 
 ## Capacidades
 
-- Generación de imágenes condicionada por texto, heredada del modelo base `MOSS-Image-Base` (capacidades concretas del modelo base no detalladas en la información disponible).
-- Presunta consistencia de personaje o estética "asiática", deducida del nombre del repositorio; no hay ejemplos ni documentación que lo verifiquen.
-- Aplicable como capa de personalización sobre el modelo base dentro de pipelines `diffusers`, combinable con otros LoRA del mismo ecosistema (compatibilidad no verificada).
-- No es un modelo de lenguaje: no soporta tool calling, function calling, razonamiento multi-paso, agentes ni generación de código.
-- No dispone de modo *thinking*, entrada de audio ni capacidades multimodales de salida distintas de la imagen.
-- No se documentan capacidades multilingües en los prompts.
+- Generación de imágenes de personajes con rasgos asiáticos, con especial énfasis en estética japonesa.
+- Control de encuadre y perspectiva: el dataset equilibrado permite planos cercanos, medios y de cuerpo completo, así como distintos ángulos.
+- Integración con ComfyUI: los flujos de trabajo y la palabra de activación (trigger word) están embebidos en los metadatos de las imágenes de muestra, no en el archivo safetensors.
+- Compatibilidad con las variantes base y SFT del modelo MOSS.
+- No dispone de capacidades de texto, razonamiento, código, tool calling ni agentes; es exclusivamente un adaptador de generación de imagen.
 
 ## Casos de uso
 
-- **Ilustración de cómic, webtoon o manga**: usar el LoRA junto al modelo base para mantener el mismo personaje en viñetas y escenas distintas, reduciendo el trabajo de redibujado manual. Requiere ajustar prompt y semilla para conservar la identidad.
-- **Prototipado de assets para videojuegos**: generar variaciones de un personaje secundario (poses, expresiones, vestuario) en fases de preproducción, con la ventaja de que el adaptador ocupa solo 0,3 GB y puede versionarse en el repositorio del estudio.
-- **Contenido para marketing en mercados asiáticos**: producir imágenes de *stock* con una estética coherente para campañas locales, siempre que se valide previamente la calidad y se revise el sesgo del dataset de entrenamiento.
-- **Creación de personajes virtuales e *influencers* sintéticos**: al fijar una identidad visual, el LoRA permite generar un flujo continuo de publicaciones con el mismo rostro y estilo, integrable en un pipeline por lotes con `diffusers`.
-- **Aumento de datos para entrenamiento de otros modelos**: generar un conjunto de imágenes etiquetadas de un personaje concreto para tareas de detección, segmentación o *style transfer*, verificando antes que la licencia MIT del adaptador y la del modelo base lo permiten.
-- **Exploración de estilo en flujos locales (ComfyUI / Automatic1111 con soporte diffusers)**: probar combinaciones de prompts y pesos del LoRA (0,4-1,0) para calibrar su efecto sin coste de API, dado el pequeño tamaño del adaptador.
-- **Documentación de ejemplo en cursos y talleres**: servir como caso práctico de cómo se estructura un adaptador LoRA en el ecosistema diffusers, con la advertencia de que la model card está incompleta.
+- Ilustración de personajes para proyectos de narrativa visual: el LoRA permite generar de forma consistente personajes de estética japonesa en distintos encuadres, útil para storyboards o webcómics.
+- Creación de avatares y retratos para aplicaciones: con pesos recomendados de 0,8 a 1,0 y CFG de 4, se obtienen retratos con control de plano cercano para fichas de personaje o perfiles.
+- Previsualización de diseño de personajes en videojuegos: el soporte de cuerpo completo y múltiples ángulos facilita la exploración de poses y perspectivas antes de modelar en 3D.
+- Generación de arte conceptual en pipelines de ComfyUI: al arrastrar la imagen de muestra se recupera el flujo completo con parámetros y trigger word, lo que agiliza la producción iterativa en estudio.
+- Prototipado rápido de material promocional con estética asiática: la licencia MIT permite uso comercial, sujeto a la licencia del modelo base, para banners o ilustraciones de campaña.
+- Experimentación académica con LoRA sobre modelos de difusión: sirve como ejemplo de adaptación de bajo rango con dataset curado para estudiar el efecto del encuadre en el ajuste fino.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye FID, CLIP score, evaluaciones humanas ni comparaciones con otros adaptadores, y registra 0 descargas y 0 likes en el momento de la consulta, por lo que tampoco existen valoraciones de la comunidad.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM del adaptador**: insignificante por sí mismo; los 0,3 GB del repositorio se suman a la memoria necesaria para el modelo base.
-- **VRAM para inferencia**: determinada íntegramente por `MOSS-Image-Base`, cuyos requisitos no están disponibles en la información proporcionada. No es posible dar una cifra fiable sin conocer el tamaño y la precisión del modelo base.
-- **GPU recomendadas**: no disponible para el modelo base. Para el adaptador, cualquier GPU capaz de ejecutar el modelo base es suficiente.
-- **GPU de consumo**: no confirmable. Si el modelo base cabe en una GPU de consumo (algo que debe verificarse en su propia ficha), el LoRA añadiría una sobrecarga marginal de memoria.
-- **Opciones de despliegue**: `diffusers` (librería declarada), con carga vía `load_lora_weights`; previsiblemente compatible con ComfyUI y otras interfaces que soporten LoRA de diffusers, aunque la compatibilidad no está documentada ni verificada.
-- **Latencia y throughput**: no disponibles; dependen del modelo base, la resolución, el número de pasos y el scheduler. La aplicación del LoRA añade un coste despreciable frente al paso de difusión.
+- VRAM estimada: no disponible de forma específica para el LoRA; depende del modelo base MOSS-Image-Base, que no se detalla en la información proporcionada.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no confirmada; el tamaño del repositorio (11,7 GB) incluye pesos y assets, pero no permite inferir la VRAM necesaria.
+- Opciones de despliegue: ComfyUI (soporte declarado por el autor) y, por la librería diffusers, potencialmente otros entornos compatibles con diffusers; no se confirman vLLM, llama.cpp, Ollama ni TGI, que no aplican a modelos de difusión.
+- Latencia y throughput: no disponible.
+- Parámetros de inferencia recomendados por el autor: peso del LoRA entre 0,8 y 1,0; 25 pasos de inferencia (8 si se usa la variante turbo); CFG de 4 (frente al 2,5 por defecto de ComfyUI).
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Licencia | Documentacion | Descargas | Notas |
-|---|---|---|---|---|---|---|
-| `fidel1234/Moss_Asian_Character` | LoRA de personaje/estética | `OpenMOSS-Team/MOSS-Image-Base` | MIT | Model card mínima ("WIP") | 0 | Repositorio de 0,3 GB; sin benchmarks ni ejemplos |
-| `fidel1234/Krea2_Asian_Character` | LoRA de personaje/estética | Krea 2 (según el nombre del repositorio) | No disponible | Model card con instrucciones de uso en Diffusers | ~617,3K en 30 días; ~657K totales | Mismo autor; mucho más adoptado, sirve de referencia de calidad esperada |
-| `OpenMOSS-Team/MOSS-Image-Base` | Modelo base texto-a-imagen | No aplica | No disponible en la informacion proporcionada | No disponible | No disponible | Requerido para ejecutar cualquiera de los dos LoRA anteriores |
+| Modelo | Tipo | Modelo base | Licencia | Contexto/uso | Disponibilidad |
+|---|---|---|---|---|---|
+| fidel1234/Moss_Asian_Character | LoRA de difusión | OpenMOSS-Team/MOSS-Image-Base | MIT | Generación de personajes asiáticos | Hugging Face, 84.296 descargas |
+| Alternativas LoRA para personajes asiáticos | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelos de difusión completos (p. ej. familia Stable Diffusion) | Modelo completo | no aplica | variable | Generación de imagen general | no disponible en la información |
 
-No se dispone del número de parámetros ni de la longitud de contexto de los modelos comparados (no aplica en el caso de modelos de imagen), por lo que la comparación se limita a tipo de artefacto, licencia, documentación y adopción.
+No se dispone de datos verificables sobre adaptadores LoRA comparables en la información proporcionada; la comparativa con alternativas concretas queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- **Estado "WIP"**: la model card indica explícitamente que es un trabajo en curso; no hay garantía de que los pesos correspondan a una versión final.
-- **Ausencia total de documentación**: sin prompts de ejemplo, sin pesos recomendados del LoRA, sin semillas ni resolución de entrenamiento, la reproducibilidad es nula y el ajuste debe hacerse por prueba y error.
-- **Sin validación de la comunidad**: 0 descargas y 0 likes implican ausencia de retroalimentación; la calidad real del adaptador es desconocida.
-- **Licencia del modelo base**: la licencia MIT del adaptador no cubre necesariamente el modelo base `MOSS-Image-Base`, cuya licencia no consta en la información proporcionada. Verificarla antes de cualquier uso comercial.
-- **Sesgos del dataset de entrenamiento**: un LoRA orientado a "personaje asiático" puede reforzar estereotipos y reducir la diversidad fenotípica; el dataset no está documentado, por lo que no es posible auditar su composición.
-- **Riesgo de artefactos**: en modelos de difusión, los LoRA de personaje suelen degradar la anatomía (manos, ojos) y la coherencia en escenas complejas; sin benchmarks no hay forma de cuantificar el problema.
-- **Sobreajuste al prompt de entrenamiento**: es frecuente que estos adaptadores solo funcionen bien con palabras de activación concretas, que aquí se desconocen.
-- **Idioma de los prompts**: no confirmado; probablemente limitado al idioma del text encoder del modelo base.
-- **No apto como modelo de lenguaje**: no debe emplearse para tareas de texto, agentes o código.
-- **Trazabilidad**: al no existir paper, blog ni repositorio de código asociado, no es posible verificar el proceso de entrenamiento.
+- Sesgo estético declarado: el adaptador está entrenado mayoritariamente para personajes japoneses, por lo que puede producir resultados menos fieles para otras estéticas asiáticas o no asiáticas.
+- Riesgo de alucinación visual: como todo modelo generativo de imagen, puede producir anatomía incorrecta, artefactos o detalles incoherentes, especialmente en encuadres de cuerpo completo.
+- Dependencia del modelo base: requiere cargar OpenMOSS-Team/MOSS-Image-Base y cumplir su licencia comunitaria y su política de uso aceptable, además de la licencia MIT del LoRA.
+- Trigger word oculta: la palabra de activación solo está en los metadatos de las imágenes de muestra, no en el safetensors; sin la imagen de referencia el usuario no conoce el token exacto.
+- Escasa validación comunitaria: solo 3 likes y sin benchmarks publicados, lo que limita la confianza en su robustez frente a variaciones de prompt.
+- Uso responsable: el autor advierte de no generar contenido engañoso, dañino o no consentido con personas representadas.
+- Sin datos de idiomas ni de cuantizaciones: no se puede confirmar el comportamiento multilingüe de los prompts ni opciones de compresión.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/fidel1234/Moss_Asian_Character
+- Hugging Face: https://huggingface.co/fidel1234/Moss_Asian_Character
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
-- Adaptador del mismo autor sobre Krea 2 (referencia): https://huggingface.co/fidel1234/Krea2_Asian_Character
-- README del adaptador sobre Krea 2: https://huggingface.co/fidel1234/Krea2_Asian_Character/blob/main/README.md
-- Catálogo de personajes y estilos para MOSS-Image (comunidad): https://note.com/hideout927/n/n11ba97f4d0a4?hl=en
-- Ficha en Civitai del adaptador sobre Krea 2: https://civitai.com/models/2311003/krea-2-asian-thick-ai-influencer-or-consistent-character-or-instagram-influencer
-- Estadísticas de descargas de `Krea2_Asian_Character`: https://modelpulse.ifsp.dev/model/fidel1234/Krea2_Asian_Character
+- Visor de demostración: https://huggingface.co/spaces/fidel1234/Krea2_Asian_Character_Showcase

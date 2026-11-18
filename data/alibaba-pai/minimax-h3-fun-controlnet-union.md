@@ -2,78 +2,91 @@
 
 ## Resumen
 
-MiniMax-H3-Fun-Controlnet-Union es un adaptador de tipo ControlNet-Union desarrollado por Alibaba PAI para el generador de video MiniMax-H3, entrenado con la pipeline VideoX-Fun. Un único checkpoint permite condicionar la generación de video mediante señales de control de Canny, Depth, HED, MLSD o Pose, además de soportar video inpainting, sin necesidad de cambiar de rama de control según el tipo de condición. El archivo contiene únicamente la rama de control (control_proj_in y 5 control_blocks, unos 6,8 GB) y se carga sobre el transformer base MiniMax-H3.
+MiniMax-H3-Fun-Controlnet-Union es un checkpoint ControlNet de tipo union para el generador de vídeo MiniMax-H3, desarrollado por alibaba-pai y entrenado con el pipeline VideoX-Fun. Su función es condicionar la generación de vídeo del modelo base sobre una señal de control espacial o estructural: un único checkpoint cubre Canny, Depth, HED, MLSD y Pose, además de inpainting de vídeo, sin necesidad de cambiar de pesos por cada condición. El repositorio ocupa 6,8 GB e incluye únicamente la rama de control (`control_proj_in` más 5 `control_blocks`), que se carga sobre el transformer de MiniMax-H3.
 
-El modelo resuelve el problema de control geométrico y estructural en la generación de video, un paso clave para aplicaciones de video-to-video con fidelidad al contenido de entrada. Es relevante porque integra múltiples modalidades de control en un solo adaptador, simplifica el flujo de trabajo y está optimizado para inferencia sin classifier-free guidance (guidance distilled), lo que reduce el coste computacional por paso.
+El modelo resuelve el problema de control fino en video-to-video: en lugar de depender solo de un prompt de texto, permite dirigir la estructura, la profundidad, los bordes o la pose del vídeo generado. Es relevante para flujos de producción de vídeo generativo donde se exige consistencia temporal y fidelidad a una referencia, y llega con la advertencia explícita del autor de que se trata de una versión legacy: existe un checkpoint 2.0 recomendado para uso nuevo.
 
-El adaptador se adjunta a 5 de los 50 bloques del transformer (capas 0, 10, 20, 30 y 40) mediante proyecciones con zero-gating. La generación sigue el video de control en resolución, duración (máximo 15 segundos) y relación de aspecto, con una velocidad fija de 24 fps. La licencia es la MiniMax-H3 Community License Agreement, que permite uso comercial bajo condiciones específicas.
+La arquitectura subyacente es un transformer de difusión (MiniMax-H3) con un VAE de vídeo que decodifica fotogramas en múltiplos de `17 * n + 5`, a 24 fps fijos y con duración máxima de 15 segundos. El checkpoint está destilado con guidance, de modo que se ejecuta con `guidance_scale = 1.0` y una sola pasada por paso, sin classifier-free guidance.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ControlNet-Union sobre transformer de video MiniMax-H3 |
-| Parametros totales | No disponible (el repo contiene solo la rama de control, ~6,8 GB) |
-| Parametros activos | No disponible (no es MoE) |
-| Longitud de contexto | No disponible (modelo de video, no de texto) |
-| Tipos de cuantizacion | No disponible (se distribuye en safetensors) |
-| Idiomas soportados | No disponible (el prompt de texto probablemente en inglés, no especificado) |
-| Licencia | minimax-h3-community-license-agreement |
-| Formato de pesos | safetensors |
+| Arquitectura | ControlNet-Union sobre transformer de difusion MiniMax-H3 (VideoX-Fun) |
+| Parametros totales | no disponible (el checkpoint de control ocupa 6,8 GB; los parametros del modelo base no se detallan) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica; duracion de video maxima de 15 s a 24 fps |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (el prompt de texto se procesa mediante el codificador del modelo base) |
+| Licencia | minimax-h3-community-license-agreement (license: other) |
+| Formato de pesos | safetensors (`MiniMax-H3-Fun-Controlnet-Union.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-MiniMax-H3-Fun-Controlnet-Union es un ControlNet-Union entrenado con la pipeline VideoX-Fun sobre el modelo base MiniMax-H3. La rama de control consta de `control_proj_in` y 5 `control_blocks` que se insertan en las capas 0, 10, 20, 30 y 40 del transformer (de un total de 50). Cada salida de control se añade a la rama principal mediante proyecciones zero-gated, lo que permite que el adaptador no afecte al modelo base durante el entrenamiento hasta que los pesos se activan.
+El checkpoint implementa una rama de control union que se acopla a 5 de los 50 bloques del transformer de MiniMax-H3, concretamente a las capas 0, 10, 20, 30 y 40. Cada skip de control se suma a la rama principal mediante una proyección con compuerta cero (zero-gated projection), un esquema habitual para preservar el comportamiento del modelo base al inicializar el control. La entrada de control se ensancha a `control_in_dim = 49` cuando se activa el inpainting, sumando a los canales latentes el latente enmascarado y la máscara. El parámetro `control_context_scale` escala cada skip antes de la suma: `1.0` aplica el control más fuerte, valores menores lo debilitan y `0.0` desactiva la rama.
 
-El modelo está optimizado con guidance distillation: durante la inferencia se usa `guidance_scale = 1.0` y una sola pasada forward por paso, sin necesidad de classifier-free guidance. Esto reduce el coste computacional y simplifica el proceso de generación. Para el video inpainting, la entrada de control se amplía a `control_in_dim = 49` (latente + latente enmascarado + canales de máscara). No se han publicado detalles sobre el dataset de entrenamiento ni el número de tokens utilizados.
+El entrenamiento se realizó con el pipeline VideoX-Fun, aunque la model card no especifica el volumen de datos, la composición del dataset ni si hubo etapas de RLHF o DPO. El modelo está destilado con guidance: se ejecuta con `guidance_scale = 1.0` en una única pasada por paso. La generación se ajusta al vídeo de control: el número de fotogramas se recorta al mayor `17 * n + 5` que el VAE de vídeo puede decodificar, el lienzo conserva la relación de aspecto del vídeo de control dentro de un presupuesto de píxeles `height * width` (ambos múltiplos de 32) y la tasa es fija de 24 fps.
 
 ## Capacidades
 
-- Generación de video condicionada por señales de control: Canny, Depth, HED, MLSD y Pose.
-- Video inpainting: permite modificar o eliminar objetos en un video manteniendo el contexto.
-- Video-to-video con control geométrico: el video de control dicta la composición y la estructura.
-- Text-to-video y image-text-to-video: compatible con el pipeline de VideoX-Fun.
-- Control de intensidad mediante `control_context_scale`: valores entre 0 y 1 ajustan la fuerza de la señal de control.
-- Sin necesidad de classifier-free guidance: inferencia con un solo forward pass por paso.
-- La generación sigue el video de control en duración (máximo 15 segundos), resolución (múltiplos de 32) y relación de aspecto, con 24 fps fijos.
+- Control union en un solo checkpoint: Canny, Depth, HED, MLSD y Pose para generación video-to-video.
+- Inpainting de vídeo mediante la entrada de control ampliada a 49 canales.
+- Generación text-to-video e image-text-to-video heredada del modelo base MiniMax-H3.
+- Control de la fuerza de condicionamiento mediante `control_context_scale` (de 0.0 a 1.0).
+- Ajuste automático de resolución y duración al vídeo de control, con tope de 15 segundos.
+- Inferencia destilada con guidance: una pasada por paso con `guidance_scale = 1.0`.
+- No se documentan capacidades de tool calling, agentes, audio ni modos de razonamiento; es un modelo generativo de vídeo.
 
 ## Casos de uso
 
-- Postproducción de video: aplicar estilos artísticos manteniendo la estructura del video original mediante control de profundidad o bordes (Canny, Depth).
-- Animación de personajes: usar control de pose para generar secuencias de danza o movimiento a partir de un video de referencia, ideal para producción de animación.
-- Eliminación de objetos: video inpainting para borrar elementos no deseados (personas, logos, vehículos) manteniendo la coherencia temporal.
-- Generación de video a partir de storyboards: control MLSD para crear escenas arquitectónicas o urbanas con líneas estructurales definidas.
-- Restauración de video antiguo: aplicar control de bordes y profundidad para reconstruir escenas con mejor calidad visual.
-- Creación de contenido para marketing: generar variaciones de un video base con diferentes estilos (canny, depth, pose) sin rehacer el contenido desde cero.
+- Previsualización de animáticas con control de pose: a partir de un vídeo de captura de movimiento o de una secuencia de esqueleto, el modelo genera el personaje final manteniendo la pose fotograma a fotograma, útil en preproducción de animación.
+- Estilización de metraje real con preservación de estructura: usando la condición Canny o HED sobre un vídeo rodado, se obtiene una versión estilizada sin perder los contornos de la escena.
+- Reconstrucción de profundidad en postproducción: con mapas de profundidad como control se generan planos coherentes para composición o conversión a 3D aproximada.
+- Rotoscopia y eliminación de elementos: el modo inpainting permite sustituir objetos o personas en un vídeo manteniendo la coherencia temporal gracias a la máscara y al latente enmascarado.
+- Visualización arquitectónica: con la condición MLSD se generan recorridos de interiores o exteriores a partir de líneas estructurales extraídas de planos o bocetos.
+- Prototipado de efectos para publicidad: combinación de prompt detallado con control de bordes o profundidad para iterar variaciones de un plano concreto sin reentrenar por condición.
+- Control de cámara y composición en vídeo vertical: el lienzo respeta la relación de aspecto del vídeo de control, lo que facilita generar piezas para formatos sociales a partir de una referencia ya encuadrada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo incluye ejemplos cualitativos (vídeos de control y salida para Canny, Depth, HED, MLSD y Pose) generados con `num_inference_steps = 40`, `guidance_scale = 1.0`, `control_context_scale = 1.00` y semilla 43.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos de VRAM en la documentación proporcionada.
-- El checkpoint de control pesa 6,8 GB, pero el modelo base MiniMax-H3 debe cargarse por separado y no se indica su tamaño exacto.
-- Para generar videos de hasta 15 segundos con un transformer de 50 capas, se requiere probablemente una GPU de alta gama (A100 80 GB, H100) o un sistema con múltiples GPUs.
-- En GPUs de consumo (RTX 4090) podría ser viable solo para secuencias cortas y con cuantización, pero no hay datos confirmados.
-- Opciones de despliegue: la inferencia se realiza mediante el repositorio VideoX-Fun, con scripts específicos (`predict_v2v_control.py`, `predict_v2v_control_inpaint.py`). No se menciona soporte en vLLM, llama.cpp u Ollama, ya que es un modelo de difusión, no un LLM.
+- El checkpoint de control pesa 6,8 GB en safetensors y debe cargarse junto con el transformer completo de MiniMax-H3, por lo que la VRAM necesaria es la del modelo base más la rama de control.
+- No se especifica en la información disponible la VRAM exacta ni las GPU recomendadas para el modelo base.
+- No hay datos publicados sobre si cabe en GPU de consumo (RTX 4090 u otras); el requisito dominante es el tamaño del transformer de MiniMax-H3, no el del checkpoint de control.
+- Despliegue mediante el repositorio VideoX-Fun: clonar el código, crear `models/Diffusion_Transformer`, descargar el modelo base y este checkpoint, y ejecutar `examples/minimax_h3_fun/predict_v2v_control.py` (o `predict_v2v_control_inpaint.py` para inpainting).
+- No se publican cifras de latencia ni throughput; a modo de referencia, los ejemplos usan 40 pasos de inferencia con una sola pasada por paso al estar destilado con guidance.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables directos para ControlNet de video con estas características en la información proporcionada. El modelo Z-Image-Turbo-Fun-Controlnet-Union, también de Alibaba PAI, es similar pero orientado a imágenes, no a video.
+| Modelo | Tipo | Condiciones de control | Contexto / duracion | Licencia | Estado |
+|---|---|---|---|---|---|
+| MiniMax-H3-Fun-Controlnet-Union | ControlNet-Union sobre MiniMax-H3 | Canny, Depth, HED, MLSD, Pose, inpainting | Hasta 15 s a 24 fps | minimax-h3-community-license-agreement | Legacy, sustituido por 2.0 |
+| MiniMax-H3-Fun-Controlnet-Union-2.0 | ControlNet-Union sobre MiniMax-H3 | no disponible en la informacion | no disponible | minimax-h3-community-license-agreement | Version recomendada por el autor |
+| MiniMax-H3 (base) | Transformer de difusion text-to-video | Solo prompt de texto | Limitado por el VAE de video | minimax-h3-community-license-agreement | Modelo base |
+
+No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas de otros autores en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- El modelo solo incluye la rama de control; requiere el modelo base MiniMax-H3 descargado por separado para funcionar.
-- La generación se limita a 15 segundos de duración, y el número de frames se ajusta a `17 * n + 5` (múltiplos de la VAE).
-- La resolución debe ser múltiplo de 32, y la relación de fot se hereda del video de control, lo que puede restringir la creatividad en la composición.
-- La licencia `minimax-h3-community-license-agreement` puede tener restricciones de uso comercial; revisar los términos antes de producción.
-- No se proporcionan datos sobre sesgos, alucinaciones o comportamiento en escenarios de bajo contexto.
-- El control es eficaz con prompts detallados; con prompts vagos, la estabilidad puede degradarse.
+- Versión legacy: el autor indica explícitamente que el checkpoint 2.0 produce mejores resultados y es el recomendado para uso nuevo.
+- Licencia comunitaria de MiniMax-H3: es necesario revisar el acuerdo (`LICENSE`) antes de cualquier uso comercial; no es una licencia de código abierto estándar.
+- El checkpoint contiene solo la rama de control; no es utilizable de forma autónoma sin el modelo base MiniMax-H3.
+- La duración está limitada a 15 segundos y el número de fotogramas se recorta a `17 * n + 5`, lo que puede truncar la duración deseada.
+- Resolución condicionada al presupuesto de píxeles y a múltiplos de 32; no se puede fijar libremente.
+- El autor recomienda prompts detallados (escena, sujeto y cámara) para mayor estabilidad; prompts escuetos pueden degradar el resultado.
+- No se documentan sesgos, tasas de alucinación ni evaluación de sesgos demográficos o culturales en la información disponible.
+- No se especifican requisitos de VRAM ni rendimiento medido, lo que dificulta planificar el despliegue en producción.
+- El modelo está pensado para generación de vídeo; no ofrece tool calling, agentes ni otras capacidades de los LLM.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union
-- Repositorio VideoX-Fun: https://github.com/aigc-apps/VideoX-Fun
+- Hugging Face: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union
+- Versión 2.0 recomendada: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- GitHub de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
+- Repositorio de código VideoX-Fun: https://github.com/aigc-apps/VideoX-Fun
+- Ejemplo de inferencia video-to-video con control: `examples/minimax_h3_fun/predict_v2v_control.py`
+- Ejemplo de inpainting: `examples/minimax_h3_fun/predict_v2v_control_inpaint.py`
+- Licencia: `LICENSE` en el repositorio de Hugging Face

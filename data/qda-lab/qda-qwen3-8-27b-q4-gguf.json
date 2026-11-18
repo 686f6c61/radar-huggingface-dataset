@@ -5,7 +5,7 @@
   "author": "qda-lab",
   "url": "https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-Q4-GGUF",
   "created_at": "2026-11-16T05:17:47.000Z",
-  "updated_at": "2026-11-17T01:15:58.000Z",
+  "updated_at": "2026-11-18T08:36:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

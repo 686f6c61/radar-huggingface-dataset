@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/adilet-llama-8b-250619-ollama-GGUF",
+  "slug": "mradermacher-adilet-llama-8b-250619-ollama-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/adilet-llama-8b-250619-ollama-GGUF",
+  "created_at": "2025-08-31T03:10:46.000Z",
+  "updated_at": "2026-11-18T08:33:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TECCOD/adilet-llama-8b-250619-ollama",
+    "base_model:quantized:TECCOD/adilet-llama-8b-250619-ollama",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820282240,
+  "storage_human": "71.8 GB",
+  "context_length": 131072,
+  "base_model": "TECCOD/adilet-llama-8b-250619-ollama",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

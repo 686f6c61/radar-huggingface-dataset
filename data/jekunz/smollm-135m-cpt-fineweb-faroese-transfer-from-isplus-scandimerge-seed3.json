@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "jekunz/smollm-135m-cpt-fineweb-faroese-transfer-from-isplus-scandimerge-seed3",
+  "slug": "jekunz-smollm-135m-cpt-fineweb-faroese-transfer-from-isplus-scandimerge-seed3",
+  "author": "jekunz",
+  "url": "https://huggingface.co/jekunz/smollm-135m-cpt-fineweb-faroese-transfer-from-isplus-scandimerge-seed3",
+  "created_at": "2026-11-18T10:51:48.000Z",
+  "updated_at": "2026-11-18T10:51:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "fo",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:jekunz/smollm135m-da05-is1-nno05-nob05-sv05-ties",
+    "base_model:finetune:jekunz/smollm135m-da05-is1-nno05-nob05-sv05-ties",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "context_length": null,
+  "base_model": "jekunz/smollm135m-da05-is1-nno05-nob05-sv05-ties",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to remove punctuation marks from a string in Python 3.x using ...",
+      "url": "https://stackoverflow.com/questions/34293875/how-to-remove-punctuation-marks-from-a-string-in-python-3-x-using-translate",
+      "snippet": "You have to create a translation table using maketrans that you pass to the str.translate method. In Python 3.1 and newer, maketrans …"
+    }
+  ]
+}

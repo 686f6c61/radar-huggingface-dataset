@@ -2,110 +2,100 @@
 
 ## Resumen
 
-Qwen3.8-27B-GGUF es un repositorio de cuantizaciones publicado por el usuario jakeatx (no por el equipo de Qwen) sobre la base Qwen3.8-27B, un modelo de lenguaje de 27.320.697.856 parámetros (~27,3 mil millones). El repositorio agrupa distintas variantes en formato GGUF, desde una versión ternaria de 1,75 bpw hasta cuantizaciones IQ4_XS de 4,56 bpw, además de fine-tunes derivados (Swift Uncensored, Qwopus3.8 Flash) y configuraciones de decodificación especulativa con MTP (multi-token prediction) nativo de una capa. La licencia declarada es Apache 2.0.
+Qwen3.8-27B-GGUF es un repositorio de cuantizaciones GGUF publicado por el usuario jakeatx sobre la familia Qwen3.8, con un total de 27.320.697.856 parámetros según los pesos safetensors del modelo base. El repositorio no contiene un modelo original entrenado por el autor, sino un conjunto de ficheros cuantizados (ternary PTQ1_0, IQ4_XS-M, mezclas ATX, etc.) junto con artefactos auxiliares para decodificación especulativa mediante MTP (multi-token prediction) de una capa nativa, orientados a ejecución en GPUs Ampere SM86 (RTX 3090 / 3090 Ti).
 
-El rasgo diferencial del repositorio es su orientación explícita al hardware Ampere SM86 (RTX 3090 y 3090 Ti) mediante el runtime llamAmpere, con atención LSA y KV cache offloaded a host para permitir contextos muy largos en tarjetas de 8, 10 y 12 GB de VRAM. El autor publica métricas de deriva (KLD) y de calidad frente a recetas de cuantización de Unsloth, así como resultados direccionales en LiveCodeBench v6.
+El interés técnico del repositorio reside en la agresividad de las cuantizaciones y en el ecosistema que las acompaña: incluye ficheros de 11,24 GB que, según el autor, permiten ejecutar los 262.144 tokens de contexto con MTP activo en una tarjeta de 12 GB, algo que las recetas estándar (Unsloth UD-Q2_K_XL, UD-IQ3_XXS) no consiguen con atención estándar. Para ello se apoya en un runtime propio, llamAmpere 0.7 (no publicado en el momento de redactar esta ficha), que incorpora atención LSA y KV offload a host, más ficheros sidecar (`lsa-qwen38-27b-d2048.gguf`, `mtp-dm.gguf`, `head-ait2.gguf`, `head-exact-f16.gguf`).
 
-Es relevante ahora porque demuestra que un modelo de 27B puede ejecutarse con 262.144 tokens de contexto y decodificación especulativa en GPUs de consumo de gama media-baja, a costa de depender de un runtime no publicado (llamAmpere 0.7) y de sidecars adicionales. El contexto máximo declarado es de 262.144 tokens en las variantes de 12 GB y 8 GB.
+La relevancia actual es doble: por un lado, demuestra técnicas de cuantización mixta con imatrix y MTP embebido para reducir el coste de memoria sin degradar en exceso la distribución de salida (KLD 0,0270 frente a BF16 en el fichero de 12 GB); por otro, expone las limitaciones del ecosistema, ya que buena parte de las instrucciones de ejecución dependen de un binario aún no liberado y de ficheros sidecar con hashes SHA-256 publicados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base Qwen3.8-27B; tag `qwen3_5`); variante ternaria basada en Prism ML Ternary Bonsai 2 27B |
-| Parametros totales | 27.320.697.856 (~27,3 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 262.144 tokens (variantes 12 GB y ternaria); 245K poblados en ATX-4-XS; 212.992 en variante AI2 de 10 GB; 204.800 en variante de 8 GB |
-| Tipos de cuantizacion | PTQ1_0 ternario (1,75 bpw), ATX-IQ4_XS-M (4,56 bpw), IQ4_XS-M (4,56 bpw), ATX mixed ~3,3 bpw, ~2,1 bpw on-card, 2,3 bpw (AI2) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (familia Qwen3.8), con cabeza MTP de 1 capa nativa para decodificación especulativa |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens (contexto completo soportado por los ficheros ATX de 12 GB y ternary; 212.992 en el fichero AI2 de 10 GB) |
+| Tipos de cuantizacion | PTQ1_0 ternary (1,75 bpw), ATX-IQ4_XS-M (4,56 bpw), IQ4_XS-M (4,56 bpw), ATX mixed AI3 (~3,3 bpw), ATX AI2 (2,3 bpw) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el recuento de parametros) |
+| Formato de pesos | GGUF (con ficheros sidecar GGUF para LSA, MTP y cabezas de draft/rescoring) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla el entrenamiento del modelo base Qwen3.8-27B (número de tokens, composición del dataset, uso de RLHF/DPO). El repositorio se limita a distribuir cuantizaciones y fine-tunes sobre esa base, identificada con el tag `qwen3_5`, junto con una variante ternaria derivada de Prism ML Ternary Bonsai 2 27B. No se especifica si la arquitectura es densa o MoE; el recuento de parámetros totales y la ausencia de parámetros activos apuntan a un modelo denso.
+El modelo base es un transformer denso de 27.320.697.856 parámetros perteneciente a la familia Qwen3.8. El repositorio no documenta el entrenamiento del modelo base (número de tokens, composición del dataset, fases de RLHF/DPO); toda la información disponible se refiere al proceso de cuantización y a los artefactos de inferencia. La innovación destacable es la incorporación de una cabeza MTP (multi-token prediction) de una sola capa, etiquetada como "nativa" y embebida en los GGUF, que actúa como drafter para decodificación especulativa con `--spec-type draft-mtp` y hasta 3 tokens de draft por paso (`--spec-draft-n-max 3`).
 
-La innovación técnica destacable es la integración de MTP (multi-token prediction) nativo de una capa para decodificación especulativa, junto con atención LSA y KV cache offloaded a host en el runtime llamAmpere. Las variantes de 8 GB incorporan además overlays de draft (`mtp-dm.gguf`, `head-ait2.gguf`) y una cabeza de rescoring exacta en F16 (`head-exact-f16.gguf`), más un mapa de índices LSA (`lsa-qwen38-27b-d2048.gguf`) compartido por ambas tallas pequeñas. El autor reporta métricas de deriva frente a BF16 de Swift 1.5 sobre 16.200 posiciones (coding, agentic y RAG a ~12K de contexto).
+Las cuantizaciones se han generado con recetas propias (ATX) y con recetas de Unsloth (UD-IQ3_XXS, UD-Q2_K_XL) aplicadas sobre el mismo profesor (Swift 1.5 en BF16), usando imatrix. El autor reporta métricas de deriva respecto a BF16 sobre 16.200 posiciones de coding, agentic y RAG a ~12K de contexto: KLD de 0,0270 y Top-1 del 95,98% para el fichero ATX de 12 GB (11,24 GB), frente a KLD 0,0396 / Top-1 95,33% de UD-IQ3_XXS y KLD 0,0591 / Top-1 94,00% de UD-Q2_K_XL. El fichero AI2 de 2,3 bpw (9,14 GB) iguala aproximadamente a UD-Q2_K_XL (KLD 0,0593, Top-1 94,06%) con un 19% menos de tamaño. Los ficheros de tarjetas pequeñas requieren llamAmpere 0.7 con atención LSA y KV offload a host, además de los sidecar correspondientes.
 
 ## Capacidades
 
-- Generación de texto conversacional (tag `conversational` en el repositorio).
-- Razonamiento y código: el autor evalúa en LiveCodeBench v6 con grader estricto.
-- Decodificación especulativa con MTP nativo (`--spec-type draft-mtp`), con hasta 3 tokens de draft (`--spec-draft-n-max 3`).
-- Soporte de contextos largos: hasta 262.144 tokens en las variantes de 12 GB y ternaria.
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
-- Variantes sin censura (Swift Uncensored) y fine-tunes derivados (Qwopus3.8 Flash).
+- Generación de texto conversacional multi-turno, con soporte de contexto largo (hasta 262.144 tokens en los ficheros de mayor contexto).
+- Razonamiento y código: el autor evalúa con LiveCodeBench v6 y reporta una puntuación del 89% en el fichero ATX de 12 GB con grader estricto (una sola semilla, direccional).
+- Decodificación especulativa mediante MTP nativo de 1 capa, con draft de hasta 3 tokens por paso.
+- Ejecución en GPUs consumer Ampere SM86 (RTX 3090 / 3090 Ti) mediante el runtime llamAmpere.
+- Variantes "Uncensored" (Swift 1.5, Swift) y "Flash" (Qwopus3.8-27B Flash) incluidas en el mismo hub, con comportamiento conversacional ajustado.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible de forma explícita; el autor menciona evaluaciones "agentic" dentro del conjunto de 16.200 posiciones usado para medir KLD.
 - Capacidades multilingües: no disponible.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes multi-paso: no disponible de forma explícita, aunque las métricas de KLD incluyen escenarios agentic.
+- Vision, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Asistencia de código en local sobre RTX 3090: la variante ATX 12 GB ejecuta el contexto completo de 262K con MTP en 11.544 MiB medidos, lo que permite cargar repositorios medianos y mantener conversaciones de refactorización largas sin truncar.
-- RAG de documentos extensos en GPU de 12 GB: el contexto de 262.144 tokens permite indexar corpus de decenas de miles de tokens directamente en el prompt, con la ventaja de que el archivo de 12 GB tiene un 54% menos de deriva (KLD 0,0270) que la receta UD-Q2_K_XL de Unsloth.
-- Despliegue en estaciones con 8 GB de VRAM: la variante de 8 GB (7.506 MiB medidos) con 204.800 tokens de contexto y MTP hace viable un asistente conversacional de contexto largo en tarjetas de gama de entrada.
-- Evaluación comparativa de cuantizaciones: el repositorio publica KLD y Top-1 sobre las mismas 16.200 posiciones, lo que permite comparar recetas de cuantización con una metodología reproducible.
-- Investigación sobre decodificación especulativa: la combinación de MTP nativo, overlays de draft y cabeza de rescoring exacta sirve como banco de pruebas para medir aceleración y calidad en SM86.
-- Generación de código en pipelines internos: el resultado direccional de LiveCodeBench v6 (89% frente al 87% de UD-Q2_K_XL y 90,3% del BF16 publicado) y la reducción del 33% en tokens de salida (mediana 4.608 frente a 8.932) abaratan el coste por tarea en entornos con presupuesto de VRAM ajustado.
-- Fine-tunes sin censura para investigación: la variante Swift Uncensored IQ4_XS-M (15,58 GiB) permite estudiar comportamiento del modelo sin las restricciones del ajuste original.
+- Despliegue de contexto largo en una RTX 3090 de 24 GB: el fichero ternary `qwen3.8-27b-ternary-mtp.gguf` ocupa 5,81 GiB y, según el autor, permite ejecutar 262K de contexto por debajo de 24 GB de VRAM, lo que habilita análisis de documentos extensos, auditoría de repositorios completos o resumen de actas sin trocear la entrada.
+- Asistencia de código en local sobre una GPU de 12 GB: el fichero `qwen3.8-27b-Swift1.5-Uncensored-ATX-AI3.gguf` (11,24 GB, 11.544 MiB medidos en pico) permite mantener el contexto completo con MTP activo, útil para autocompletado y revisión de parches en estaciones de trabajo con una sola tarjeta.
+- Evaluación de cuantizaciones y estudios de deriva: los datos de KLD y Top-1 sobre 16.200 posiciones permiten usar el repositorio como referencia para comparar recetas de cuantización (ATX frente a Unsloth) en tareas de coding y RAG.
+- Investigación en decodificación especulativa: la combinación de MTP nativo con `--spec-type draft-mtp` y los sidecar de draft (`mtp-dm.gguf`, `head-ait2.gguf`) sirve para medir ganancias de throughput y tasa de aceptación en SM86.
+- Generación de respuestas concisas en producción: el autor reporta que el fichero de 12 GB usa un 33% menos de tokens que UD-Q2_K_XL en LiveCodeBench v6 (mediana 4.608 frente a 8.932), lo que reduce coste por consulta en pipelines de generación de código.
+- Despliegue de variantes conversacionales sin filtros en entornos controlados: los ficheros "Uncensored" (Swift 1.5, Swift) permiten experimentar con estilos de respuesta menos restrictivos en investigación de alineamiento, siempre bajo la licencia Apache 2.0 y con las salvaguardas propias del despliegue.
+- Prototipado de asistentes RAG con contexto de ~12K: el conjunto de evaluación del autor incluye posiciones de RAG a esa longitud, por lo que el modelo está caracterizado en ese régimen y puede usarse como base para comparar recuperación y generación.
 
 ## Benchmarks y rendimiento
 
-Métricas de deriva frente a Swift 1.5 BF16 sobre 16.200 posiciones (coding, agentic y RAG a ~12K de contexto):
+| Metrica | ATX 12 GB (11,24 GB) | UD-IQ3_XXS (10,93 GB) | UD-Q2_K_XL (9,95 GB) | ATX AI2 2,3 bpw (9,14 GB) | Mirai S |
+|---|---:|---:|---:|---:|---:|
+| KLD (menor es mejor) | 0,0270 | 0,0396 | 0,0591 | 0,0593 | 0,0745 |
+| Top-1 | 95,98% | 95,33% | 94,00% | 94,06% | no disponible |
+| LiveCodeBench v6 (strict, 1 semilla) | 89% | no disponible | 87% | no disponible | no disponible |
+| Tokens medios por respuesta (LBC v6) | 4.608 (mediana) | no disponible | 8.932 (mediana) | no disponible | no disponible |
 
-| Archivo | Tamano | KLD (menor mejor) | Top-1 |
-|---|---:|---:|---:|
-| ATX 12 GB | 11,24 GB | 0,0270 | 95,98% |
-| Unsloth UD-IQ3_XXS | 10,93 GB | 0,0396 | 95,33% |
-| Unsloth UD-Q2_K_XL | 9,95 GB | 0,0591 | 94,00% |
-| ATX AI2 2,3 bpw (10 GB) | 9,14 GB | 0,0593 | 94,06% |
-| Mirai S | no disponible | 0,0745 | no disponible |
-
-LiveCodeBench v6 (100 problemas, una semilla, grader estricto; el autor lo califica de direccional y no estadísticamente significativo):
-
-| Modelo | Acierto |
-|---|---:|
-| Qwen BF16 publicado | 90,3% |
-| ATX 12 GB | 89% |
-| UD-Q2_K_XL | 87% |
-
-Eficiencia de salida en LiveCodeBench v6: el archivo de 12 GB usó un 33% menos de tokens (mediana 4.608 frente a 8.932; rango del 95%: 22-44% menos), y fue más corto en 74 de 100 problemas.
-
-No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
+Referencia publicada del modelo base: Qwen BF16, 90,3% en LiveCodeBench v6. El autor advierte que la comparación de coding es direccional y no estadísticamente significativa (una sola semilla). Las métricas de KLD y Top-1 se calculan sobre 16.200 posiciones de coding, agentic y RAG a ~12K de contexto, con Swift 1.5 BF16 como profesor común.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 5,81 GiB (ternaria 1,75 bpw); 7,33 GB (variante 8 GB, 7.506 MiB medidos); 9,14 GB (AI2 2,3 bpw); 11,24 GB (variante 12 GB, 11.544 MiB medidos); 14,52 GiB (ATX-4-XS, 245K de contexto en 22,6 GB listos); 15,58 GiB (Swift Uncensored y Qwopus Flash IQ4_XS-M).
-- GPU objetivo: Ampere SM86 (RTX 3090 y 3090 Ti) mediante llamAmpere. No se declara soporte para A100, H100 ni otras arquitecturas.
-- Cabe en GPU de consumo: sí, en RTX 3090/3090 Ti con las variantes de 12 GB y 8 GB; también en tarjetas de 8, 10 y 12 GB según la tabla del autor.
-- Despliegue: llamAmpere (build SM86 con `GGML_CUDA=ON`, `GGML_CUDA_FA=ON`, `CMAKE_CUDA_ARCHITECTURES=86`), servidor `llama-server` con presets `12dense` y `8dense`. Las variantes de tarjeta pequeña requieren llamAmpere 0.7, aún no publicada.
-- Parámetros de ejecución sugeridos: `-c 32768 -b 4096 -ub 1024 -t 8 -ngl 99 -fa on -ctk q8_0 -ctv turbo3 --spec-type draft-mtp --spec-draft-n-max 3 --spec-draft-p-min 0`.
-- Latencia y throughput: no disponible.
+- VRAM estimada: 5,81 GiB para el fichero ternary PTQ1_0; 11,24 GB para el ATX AI3 (~3,3 bpw); 14,52 GiB para ATX-4-XS (4,56 bpw); 15,58 GiB para las variantes IQ4_XS-M; 9,14 GB para el AI2 de 2,3 bpw.
+- GPU recomendadas: RTX 3090 y 3090 Ti (SM86, arquitectura objetivo del runtime llamAmpere). No se documentan requisitos para A100, H100 ni RTX 4090.
+- Cabe en GPU consumer: sí, en RTX 3090 / 3090 Ti de 24 GB con contexto completo; en tarjetas de 12 GB solo con el fichero AI3 y llamAmpere 0.7 (LSA + KV offload a host); en 10 GB con el fichero AI2 (2,3 bpw, contexto 212.992). El fichero de 8 GB está retirado temporalmente por problemas de palabras raras y bucles detectados en pruebas en vivo.
+- Opciones de despliegue: llama-server de llamAmpere compilado para SM86 (`-DGGML_CUDA=ON -DGGML_CUDA_FA=ON -DCMAKE_CUDA_ARCHITECTURES=86`), con flags `-fa on -ctk q8_0 -ctv turbo3 --spec-type draft-mtp --spec-draft-n-max 3 --spec-draft-p-min 0`. No se documenta compatibilidad con vLLM, TGI, Ollama ni llama.cpp estándar.
+- Latencia y throughput: no disponibles. El autor solo reporta el efecto de la decodificación especulativa en longitud de respuesta (33% menos tokens en LiveCodeBench v6), no en tokens por segundo.
+- Dependencia crítica: los ficheros de tarjeta pequeña requieren llamAmpere 0.7, que en el momento de redactar la model card aún no se ha publicado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Calidad (KLD) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | KLD vs BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B ATX 12 GB | ~27,3 B | 262.144 | 0,0270 | Apache 2.0 | GGUF en este repo; requiere llamAmpere 0.7 |
-| Unsloth UD-Q2_K_XL de Swift 1.5 | ~27,3 B | no disponible | 0,0591 | Apache 2.0 (heredada) | GGUF de Unsloth |
-| Unsloth UD-IQ3_XXS de Swift 1.5 | ~27,3 B | no disponible | 0,0396 | Apache 2.0 (heredada) | GGUF de Unsloth |
-| ATX AI2 2,3 bpw (10 GB) | ~27,3 B | 212.992 | 0,0593 | Apache 2.0 | GGUF en repo enlazado |
+| Qwen3.8-27B ATX 12 GB (este repo) | 27,3B | 262.144 | 0,0270 | Apache 2.0 | GGUF en HF; runtime llamAmpere 0.7 pendiente |
+| Qwen3.8-27B UD-Q2_K_XL (Unsloth) | 27,3B | no disponible con MTP en 12 GB | 0,0591 | Apache 2.0 (heredada) | GGUF en HF |
+| Qwen3.8-27B UD-IQ3_XXS (Unsloth) | 27,3B | no disponible | 0,0396 | Apache 2.0 (heredada) | GGUF en HF |
+| Qwen3.8-27B ternary PTQ1_0 (este repo) | 27,3B | 262.144 | no disponible | Apache 2.0 | GGUF en HF; 5,81 GiB |
 
-Comparativa de rendimiento: no disponible más allá de los datos de KLD y LiveCodeBench recogidos arriba.
+La comparación se limita a recetas de cuantización del mismo modelo base, ya que la información proporcionada no incluye modelos de otros fabricantes con los que contrastar. El criterio diferencial es la relación entre tamaño de fichero, deriva (KLD) y capacidad de ejecutar contexto completo con MTP en VRAM limitada.
 
 ## Limitaciones y advertencias
 
-- El repositorio lo mantiene un autor individual (jakeatx), no el equipo oficial de Qwen; no hay garantía de continuidad ni de auditoría independiente.
-- Las variantes de 8 y 12 GB dependen de llamAmpere 0.7, que el propio autor indica como "coming, not yet released"; los comandos `--preset` no funcionan hasta su publicación.
-- Las variantes de tarjeta pequeña requieren sidecars adicionales en la misma carpeta (`lsa-qwen38-27b-d2048.gguf`, y para 8 GB `mtp-dm.gguf`, `head-ait2.gguf`, `head-exact-f16.gguf`); un despliegue incompleto falla.
-- El resultado de LiveCodeBench v6 se basa en una sola semilla; el autor lo califica explícitamente de direccional y no estadísticamente significativo.
-- La información sobre idiomas soportados, tool calling, sesgos y riesgo de alucinación no está disponible en la documentación proporcionada.
-- Las variantes "Uncensored" eliminan restricciones de alineamiento y requieren revisión adicional antes de cualquier uso en producción orientado al usuario final.
-- El repositorio ocupa 74,8 GB; conviene descargar solo los archivos necesarios y verificar los SHA-256 publicados.
-- La licencia Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base y de los fine-tunes de terceros, cuyos términos no se detallan.
+- El fichero de 8 GB está retirado temporalmente por "problemas de palabras raras y bucles" detectados en pruebas en vivo; no debe usarse en producción.
+- Los ficheros de 10 y 12 GB dependen de llamAmpere 0.7, no publicado al redactar esta ficha; las instrucciones de ejecución no son reproducibles todavía con el binario público.
+- El modelo base no ha sido entrenado por el autor del repositorio; las garantías de calidad, sesgos y alineamiento corresponden a la familia Qwen3.8, sobre la que no se aporta documentación en esta información.
+- Las variantes "Uncensored" pueden producir contenido no filtrado; requieren revisión y salvaguardas adicionales en cualquier despliegue orientado a usuarios finales.
+- Las métricas de coding proceden de una sola semilla y el propio autor las califica de direccionales, no estadísticamente significativas.
+- Los datos de KLD y Top-1 se han medido sobre 16.200 posiciones a ~12K de contexto; no cubren el régimen de 262K tokens ni dominios fuera de coding, agentic y RAG.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Idiomas soportados: no disponibles; no se puede garantizar calidad multilingüe más allá de lo que herede el modelo base.
+- La licencia Apache 2.0 permite uso comercial, pero la cadena de responsabilidad sobre el modelo base y sobre los ficheros sidecar debe verificarse antes de redistribuir.
+- El repositorio mezcla cuantizaciones, fine-tunes y configuraciones de decodificación especulativa bajo un mismo hub; conviene fijar el hash SHA-256 del fichero concreto antes de desplegar.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/jakeatx/Qwen3.8-27B-GGUF
-- Variante AI2 2,3 bpw (10 GB): https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2
-- Paper, blog, repositorio de llamAmpere y demos: no disponible
+- Variante AI2 de 10 GB: https://huggingface.co/jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2
+- Paper, blog o demo del modelo base: no disponible
+- Repositorio del runtime llamAmpere: no disponible en la información proporcionada

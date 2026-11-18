@@ -2,87 +2,82 @@
 
 ## Resumen
 
-LFM3-Omni-2B-GGUF es una versión cuantizada en formato GGUF del modelo LFM3-Omni-2B de LiquidAI, publicada por el equipo de ggml-org (los mantenedores de llama.cpp). El modelo base es un modelo omni-modal de aproximadamente 1,73 mil millones de parámetros capaz de procesar texto, imágenes, audio y vídeo como entrada, y de generar texto y salida de voz (mediante un módulo de text-to-speech integrado). Esto lo sitúa en la categoría "any-to-any": un único modelo pequeño que entiende múltiples modalidades y puede responder también con audio.
+LFM3-Omni-2B es un modelo multimodal "any-to-any" desarrollado originalmente por LiquidAI, capaz de aceptar texto, imagen, audio y vídeo como entrada y de generar texto y voz como salida. Esta ficha cubre la versión cuantizada en formato GGUF publicada por ggml-org, pensada para ejecutarse con llama.cpp y con el servidor `llama serve`, lo que permite desplegarlo en hardware de consumo.
 
-La relevancia de esta publicación radica en que hace accesible un modelo omni-modal en hardware de consumo: los pesos en GGUF permiten ejecutarlo localmente con llama.cpp (o mediante la herramienta `llama serve` / llama.app) sin necesidad de GPUs de gama alta. El repositorio incluye un archivo mmproj que contiene el codificador de visión, el codificador de audio y la ruta de salida de audio (depthformer más códec), de modo que toda la funcionalidad multimodal está cubierta en un solo despliegue.
+El modelo base cuenta con 1.728.801.600 parámetros reales (etiquetado comercialmente como 2B) y combina un núcleo de lenguaje con codificadores multimodales empaquetados en un fichero `mmproj`: un codificador de visión, un codificador de audio y una ruta de salida de audio basada en un depthformer más un códec. Esta separación permite cargar el modelo de lenguaje y los adaptadores multimodales de forma independiente.
 
-La conversión se ha realizado de forma automática con la herramienta de conversión de ggml-org, usando las mismas cuantizaciones (Q8_0 y Q4_K_M) que LiquidAI publica en sus propios GGUF oficiales. Es un modelo reciente y la model card es todavía mínima, por lo que varios datos técnicos (contexto, idiomas, benchmarks) no están disponibles públicamente en la información proporcionada.
+Su relevancia actual radica en que ofrece una pipeline completa de entrada y salida multimodal (incluida síntesis de voz) en un tamaño que cabe en GPU de consumo, algo poco habitual en modelos any-to-any. La licencia LFM1.0 ("other") condiciona el uso comercial, por lo que conviene revisarla antes de integrarlo en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo omni-modal any-to-any de LiquidAI, familia LFM) |
-| Parametros totales | 1.728.801.600 (~1,73 B) |
-| Parametros activos | no aplica (no hay indicios de que sea MoE) |
+| Arquitectura | no disponible (modelo multimodal any-to-any con codificadores de visión y audio y ruta de salida de audio depthformer + códec) |
+| Parámetros totales | 1.728.801.600 |
+| Parámetros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0, Q4_K_M (mismas que los GGUF oficiales de LiquidAI) |
+| Tipos de cuantización | GGUF (incluye Q8_0 y Q4_K_M con la misma cuantización que los GGUF oficiales de LiquidAI) |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (licencia personalizada, "other" en Hugging Face) |
-| Formato de pesos | GGUF (conversión automática desde safetensors) |
+| Licencia | LFM1.0 (identificador `other`, enlace a LICENSE del modelo base) |
+| Formato de pesos | GGUF (modelo + `mmproj` para visión, audio y salida de voz) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles de arquitectura ni de entrenamiento en la model card. Lo que sí se conoce es la composición del paquete GGUF: además de los pesos del modelo de lenguaje, el archivo mmproj incluye el codificador de visión, el codificador de audio y la ruta de salida de audio, que combina un modelo depthformer con un códec de voz. Esto implica que el modelo original integra varios codificadores modales sobre un LLM base de la familia LFM (Liquid Foundation Models) de LiquidAI.
+No se dispone de detalles sobre la arquitectura interna del transformer ni sobre la composición del dataset de entrenamiento en la información proporcionada. Lo que sí se documenta es la estructura de despliegue: el repositorio GGUF separa el modelo de lenguaje del fichero `mmproj`, que contiene el codificador de visión, el codificador de audio y la ruta de salida de audio (depthformer + códec). Esta modularidad es la que permite que llama.cpp cargue las capacidades multimodales de forma opcional.
 
-Sobre los datos de entrenamiento, el número de tokens, la composición del corpus y el uso de técnicas como RLHF o DPO: no disponible. Tampoco se ha documentado la presencia de innovaciones técnicas concretas como decodificación especulativa o atención lineal, aunque la familia LFM de LiquidAI ha empleado históricamente arquitecturas híbridas; sin confirmación en la fuente, no puede afirmarse.
+Tampoco se especifican el número de tokens de entrenamiento, si hubo RLHF/DPO ni innovaciones como decodificación especulativa o atención lineal. La conversión a GGUF se realiza automáticamente mediante la herramienta `ggml-org/convert`, y las cuantizaciones Q8_0 y Q4_K_M replican exactamente las publicadas por LiquidAI, lo que garantiza paridad con los pesos oficiales.
 
 ## Capacidades
 
-- Entrada multimodal: acepta texto, imágenes, audio y vídeo como entrada (el procesamiento de vídeo requiere tener `ffmpeg` instalado en el `PATH`).
-- Salida de texto: generación de texto conversacional (tag `conversational` en Hugging Face).
-- Salida de voz: síntesis de voz integrada, servida a través del endpoint `/tts` del servidor de llama.cpp.
-- Pipeline any-to-any: clasificado en Hugging Face como modelo any-to-any, es decir, capaz de cruzar modalidades entre entrada y salida.
-- Razonamiento, código, matemáticas y tool calling: no disponible (sin datos publicados en la model card).
+- Entrada multimodal: acepta texto, imagen, audio y vídeo (el vídeo requiere `ffmpeg` disponible en el `PATH`).
+- Salida de voz: la síntesis de habla se sirve a través del endpoint `/tts` del servidor de llama.cpp.
+- Generación de texto conversacional (pipeline `any-to-any`, tag `conversational`).
+- Procesamiento de audio de entrada mediante el codificador incluido en `mmproj`.
+- Procesamiento de imagen y vídeo mediante el codificador de visión incluido en `mmproj`.
+- Compatible con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios HTTP.
+- Soporte de tool calling, agentes o modo thinking: no disponible en la información proporcionada.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
 
-- **Asistente de voz local**: gracias al endpoint `/tts` y a la entrada de audio, puede montarse un asistente conversacional por voz que corre íntegramente en local, sin enviar datos a la nube, adecuado para privacidad y latencia baja.
-- **Transcripción y análisis de reuniones**: al aceptar audio (y vídeo) como entrada, puede usarse para resumir grabaciones de reuniones o extraer puntos clave directamente desde el fichero multimedia.
-- **Análisis de imágenes y documentos**: el codificador de visión permite preguntar sobre capturas de pantalla, fotografías o documentos escaneados desde la línea de comandos o una aplicación local.
-- **Comprensión de vídeo**: con `ffmpeg` en el `PATH`, puede responder preguntas sobre clips de vídeo, útil para moderación de contenido o indexación de bibliotecas multimedia.
-- **Prototipado de agentes multimodales en edge**: su tamaño de ~1,7 B de parámetros y el formato GGUF lo hacen idóneo para experimentar con agentes que combinan visión y voz en portátiles o mini-PCs.
-- **Integración en aplicaciones con llama.cpp**: el comando `llama serve -hf ggml-org/LFM3-Omni-2B-GGUF` levanta un servidor listo para usar, lo que facilita exponer el modelo vía API local a aplicaciones de terceros.
-- **Accesibilidad**: la combinación de entrada por voz y salida de voz permite construir herramientas de asistencia para personas con dificultades visuales o motoras sin dependencia de servicios externos.
+- Asistentes de voz en local: el modelo acepta audio como entrada y genera voz vía `/tts`, lo que permite construir un asistente conversacional por voz sin depender de APIs externas, ejecutándose con `llama serve`.
+- Descripción y análisis de imágenes en el borde: con el codificador de visión en `mmproj`, se puede desplegar en una estación de trabajo para tareas de captioning, accesibilidad o moderación de contenido visual.
+- Transcripción y comprensión de audio: el codificador de audio permite resumir reuniones, generar actas o extraer información de grabaciones directamente en el servidor.
+- Análisis de vídeo con `ffmpeg`: al aceptar vídeo como entrada, resulta adecuado para indexar clips, generar descripciones automáticas o detectar eventos en grabaciones.
+- Prototipado rápido de aplicaciones multimodales: el comando `llama serve -hf ggml-org/LFM3-Omni-2B-GGUF` permite tener un endpoint any-to-any operativo en minutos, ideal para validar ideas antes de invertir en infraestructura.
+- Despliegue en hardware de consumo: con cuantizaciones Q4_K_M y Q8_0 y un total de 1,73B parámetros, encaja en GPU de gama media para demos, investigación y entornos sin conectividad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye evaluaciones, y los datos del modelo base LiquidAI/LFM3-Omni-2B no constan en la información proporcionada.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el repositorio completo pesa 7,9 GB. Con cuantización Q4_K_M, un modelo de ~1,73 B de parámetros más los codificadores multimodales (mmproj) debería caber en torno a 2–4 GB de VRAM o incluso ejecutarse en CPU; con Q8_0, en torno a 3–6 GB. Estas cifras son estimaciones basadas en el tamaño del repositorio, no datos oficiales.
-- **GPUs recomendadas**: por su tamaño reducido, cualquier GPU moderna de consumo es suficiente; no se requieren A100 ni H100. No disponible una lista oficial de GPUs soportadas.
-- **Consumer GPUs**: sí, cabe con holgura en GPUs como una RTX 3060 de 12 GB o superior, e incluso en GPUs de 8 GB con Q4_K_M. También es viable la inferencia en CPU con llama.cpp.
-- **Despliegue**: llama.cpp (requiere un build con soporte LFM3-Omni, disponible en el PR 31257 del repositorio), `llama serve -hf ggml-org/LFM3-Omni-2B-GGUF` y llama.app. No hay evidencia de soporte en vLLM, TGI u Ollama en la información proporcionada.
-- **Dependencias**: `ffmpeg` en el `PATH` para procesar entrada de vídeo.
-- **Latencia y throughput**: no disponible.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo de 1,73B parámetros en Q4_K_M ocupa del orden de 1-1,5 GB para los pesos del lenguaje, a lo que hay que sumar el tamaño del fichero `mmproj` (codificadores de visión, audio y salida de voz), que incrementa el consumo.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, debería funcionar en GPU de consumo con suficiente VRAM para pesos más `mmproj`.
+- ¿Cabe en GPU de consumo? Sí, previsiblemente en tarjetas con 8 GB o más de VRAM, aunque el dato exacto no está publicado.
+- Opciones de despliegue: llama.cpp (requiere una build con soporte LFM3-Omni, PR #31257) y el servidor `llama serve`; también `llama.app`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Modalidades | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LFM3-Omni-2B-GGUF (este) | ~1,73 B | texto, imagen, audio, vídeo → texto, voz | Q8_0, Q4_K_M (GGUF) | lfm1.0 (personalizada) | llama.cpp, llama.app |
-| LiquidAI/LFM3-Omni-2B-GGUF | ~1,73 B | texto, imagen, audio, vídeo → texto, voz | Q8_0, Q4_K_M (GGUF) | lfm1.0 | GGUF oficial de LiquidAI |
-| Qwen2.5-Omni-3B/7B | 3B / 7B | texto, imagen, audio, vídeo → texto, voz | GGUF comunitario | Apache 2.0 / personalizada | llama.cpp, vLLM, transformers |
-
-La alternativa más directa es el GGUF oficial de LiquidAI, con idéntico contenido y cuantizaciones; la versión de ggml-org se distingue por su conversión automática supervisada y su integración con `llama serve`. Frente a Qwen2.5-Omni, LFM3-Omni-2B es notablemente más pequeño (lo que facilita su ejecución local), aunque no hay benchmarks publicados que permitan comparar rendimiento.
+No disponible: la información proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de la misma categoría any-to-any.
 
 ## Limitaciones y advertencias
 
-- **Licencia restrictiva**: la licencia lfm1.0 es una licencia personalizada ("other" en Hugging Face); debe revisarse el texto en el enlace del modelo base antes de cualquier uso comercial, ya que no puede asumirse que sea permisiva.
-- **Falta de documentación**: la model card es mínima (los propios autores incluyen una sección "TODOs" pendiente de completar), por lo que contexto, idiomas y capacidades exactas deben verificarse empíricamente.
-- **Soporte de llama.cpp reciente**: requiere un build con el PR 31257 integrado; versiones estables anteriores no funcionarán con este modelo.
-- **Dependencia de ffmpeg**: sin `ffmpeg` en el `PATH`, la entrada de vídeo no funciona.
-- **Riesgo de alucinación**: como todo modelo de lenguaje de ~2 B de parámetros, el riesgo de alucinación es elevado, especialmente en razonamiento complejo y en tareas multimodales exigentes; no hay datos de evaluación que permitan cuantificarlo.
-- **Sesgos**: no disponible; no se ha publicado información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
-- **Calidad de la conversión**: la conversión GGUF es automática; conviene validar los resultados frente a los GGUF oficiales de LiquidAI, que usan las mismas cuantizaciones.
+- Licencia LFM1.0 (identificador `other`): es imprescindible revisar el texto completo en el enlace de LICENSE del modelo base antes de cualquier uso comercial.
+- El vídeo como entrada requiere `ffmpeg` instalado y accesible en el `PATH`.
+- La salida de voz solo está disponible a través del endpoint `/tts` del servidor, no como capacidad genérica del modelo.
+- Es necesario usar una build de llama.cpp con soporte específico para LFM3-Omni (PR #31257); las builds estándar pueden no cargarlo.
+- Los pesos son una conversión automática de ggml-org/convert; pueden existir diferencias menores frente a los pesos originales de LiquidAI.
+- No se documentan sesgos, riesgo de alucinación, idiomas soportados ni longitud de contexto, por lo que no es posible evaluar estos aspectos con la información disponible.
+- Al ser una versión cuantizada, la calidad puede degradarse respecto al modelo en precisión completa, especialmente en Q4_K_M.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/ggml-org/LFM3-Omni-2B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- GGUF oficial de LiquidAI: https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
+- GGUF oficiales de LiquidAI: https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
 - Licencia: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
 - PR de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31257
 - Herramienta de conversión: https://github.com/ggml-org/convert

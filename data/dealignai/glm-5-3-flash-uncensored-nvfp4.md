@@ -2,96 +2,107 @@
 
 ## Resumen
 
-GLM-5.3-Flash-UNCENSORED-NVFP4 es una versión modificada a nivel de pesos del modelo GLM-5.3-Flash de Z.ai, publicada por el usuario dealignai bajo su marca "CRACK". El objetivo es eliminar de forma permanente los comportamientos de rechazo (refusal) que el modelo base mostraba ante ciertas solicitudes, especialmente aquellas relacionadas con copyright u otros contenidos benignos pero marcados como sensibles. A diferencia de técnicas como jailbreak por prompt o fine-tuning, esta modificación se aplica directamente sobre los tensores del modelo, sin necesidad de adaptadores, LoRA ni cambios en el código de inferencia.
+GLM-5.3-Flash-UNCENSORED-NVFP4 es una versión modificada a nivel de pesos del modelo GLM-5.3-Flash de zai-org, publicada por dealignai bajo su marca "CRACK". El objetivo declarado es eliminar el comportamiento de rechazo (refusals) del modelo base, que según el autor provocaba una sobreabundancia de negativas ante peticiones benignas pero marcadas, especialmente en materia de derechos de autor. La modificación se aplica directamente sobre los tensores, sin fine-tuning, sin LoRA, sin adaptadores y sin edición de plantillas de chat.
 
-El modelo base, GLM-5.3-Flash, es un MoE híbrido de 320B parámetros totales con 18B activos por token, que combina atención lineal KDA y atención sparse estilo DeepSeek, con una ventana de contexto de 1M tokens y una torre de visión GLM-4.1V. Esta versión "uncensored" conserva todas las capacidades del original (visión, MTP, razonamiento híbrido) y añade una capa de abliteración que elimina los rechazos sin degradar significativamente el rendimiento académico (MMLU cae solo 1,07 puntos porcentuales). Es relevante para desarrolladores que necesitan un modelo sin restricciones de seguridad para casos de uso legítimos, como análisis de texto con copyright, generación creativa sin censura o investigación en alineación.
+El modelo conserva la arquitectura del base: un transformer híbrido MoE denominado `glm5_next`, que combina atención lineal KDA con atención dispersa estilo DeepSeek. Según la model card, el modelo base declara 320B parámetros totales con 18B activos por token y una ventana de contexto de 1M tokens. Los pesos publicados en este repositorio están cuantizados en NVFP4 (8-bit según los tags de Hugging Face), con los expertos enrutados en NVFP4 y la atención, los expertos compartidos y los embeddings en bf16. El recuento real de parámetros en los safetensors es de 165.496.249.182.
 
-## Especificaciones técnicas
+La relevancia de esta ficha es doble: por un lado, documenta una práctica de "abliteración" a nivel de pesos que se está extendiendo en el ecosistema open source; por otro, expone una serie de problemas operativos muy concretos en el despliegue con vLLM y SGLang (gestión de `reasoning_effort`, presupuesto de tokens, parámetros multimodales que se aceptan y se ignoran en silencio) que cualquier equipo debe conocer antes de poner el modelo en producción.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GLM-5.3-Flash (`glm5_next`) — MoE híbrido con atención lineal KDA y atención sparse (DeepSeek-sparse) |
-| Parametros totales | 320B (según model card); el checkpoint safetensors contiene 165.496.249.182 parámetros |
-| Parametros activos | 18B por token |
-| Longitud de contexto | 1M tokens |
-| Tipos de cuantizacion | NVFP4 (routed experts en NVFP4; attention, shared experts y embeddings en bf16) |
-| Idiomas soportados | en (según model card; el modelo base puede soportar más, pero no se especifica) |
+| Arquitectura | GLM-5.3-Flash (`glm5_next`), transformer híbrido MoE con atención lineal KDA y atención dispersa estilo DeepSeek |
+| Parametros totales | 165.496.249.182 según safetensors; la model card declara 320B totales |
+| Parametros activos | 18B por token (según model card) |
+| Longitud de contexto | 1M tokens (según model card) |
+| Tipos de cuantizacion | NVFP4 (expertos enrutados); atención, expertos compartidos y embeddings en bf16; tags indican 8-bit y modelopt |
+| Idiomas soportados | en |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
+| Torre de visión | GLM-4.1V, retenida e idéntica byte a byte al modelo base |
+| Cabecera MTP | Multi-token-prediction, también modificada; aceptación del 81,7% según el autor |
+| Tamaño del repositorio | 255,7 GB |
+| Descargas | 4.451 |
+| Likes | 57 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3-Flash es un transformer MoE con una arquitectura híbrida que combina atención lineal KDA (Kernel-based Dynamic Attention) con atención sparse inspirada en DeepSeek, lo que permite manejar contextos de hasta 1M tokens con un coste computacional reducido. Incluye una torre de visión GLM-4.1V para entrada multimodal y un cabezal MTP (multi-token prediction) para decodificación especulativa. El modelo soporta modos de razonamiento híbrido (thinking y non-thinking) controlables mediante el parser `reasoning-parser glm45`.
+El modelo hereda la arquitectura `glm5_next` del base: un transformer con mezcla de expertos que combina capas de atención lineal KDA con atención dispersa tipo DeepSeek. La model card declara 320B parámetros totales y 18B activos por token, aunque el recuento efectivo de los safetensors publicados es de 165.496.249.182 parámetros, diferencia atribuible a la cuantización NVFP4 de los expertos enrutados. La ventana de contexto declarada es de 1M tokens. El modelo conserva la torre de visión GLM-4.1V sin modificaciones y la cabecera de predicción multi-token (MTP), que también ha sido objeto de la edición de pesos.
 
-La versión "CRACK" de dealignai no ha sido reentrenada ni fine-tuneada. Se trata de una modificación directa de los pesos (abliteration) que elimina los patrones de rechazo aprendidos durante el entrenamiento del modelo base. Según la model card, no se utilizaron trucos de plantilla, LoRA, vectores de dirección ni hooks en tiempo de ejecución; el cambio está "horneado" en los tensores. Además, el cabezal MTP también ha sido modificado para que no proponga rechazos, manteniendo así la compatibilidad con la decodificación especulativa incluso en prompts que el modelo base rechazaría.
+No se ha realizado ningún entrenamiento adicional: no hay SFT, ni DPO, ni RLHF posterior a la modificación. La edición es una ablación directa sobre los tensores orientada a suprimir la dirección de rechazo, con un enfoque declarado como conservador para preservar la calidad. Según el autor, el resultado es un 0% de rechazos en HarmBench-320 en los modos de razonamiento desactivado y de esfuerzo máximo, mientras que el modo de esfuerzo bajo conserva algunos rechazos de forma deliberada. La versión actual (actualizada el 2026-08-29) corrige un problema raro de bucles de repetición presente en la publicación anterior y alcanza un 85,28% en MMLU, a unas 0,9 puntos del modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo: mantiene las capacidades del modelo base, con una caída mínima en MMLU (85,09% vs 86,16%).
-- Razonamiento híbrido: soporta modos thinking y non-thinking, activables mediante el parser `reasoning-parser glm45`.
-- Tool calling / function calling: compatible con el parser `tool-call-parser glm47` y `--enable-auto-tool-choice` en vLLM.
-- Visión: la torre de visión GLM-4.1V se conserva byte a byte, permitiendo entrada de imágenes.
-- Decodificación especulativa: el cabezal MTP está también "crackeado", por lo que la generación especulativa funciona sin conflictos en prompts sensibles.
-- Multilingüismo: la model card declara solo inglés, aunque el modelo base podría soportar más idiomas; no se proporciona información adicional.
-- Sin restricciones de contenido: el modelo no rechaza solicitudes, incluso aquellas relacionadas con copyright, violencia, etc. (100% de cumplimiento en HarmBench-320).
+- Generación de texto y razonamiento multi-paso con modos de esfuerzo configurables (`low`, `high` y `max`).
+- Razonamiento extendido en modo "thinking", con la traza devuelta en `message.reasoning`.
+- Capacidades de visión: procesamiento de imágenes y vídeo mediante la torre GLM-4.1V, con control del número de tokens de imagen y de la tasa de frames de vídeo.
+- Decodificación especulativa mediante cabecera MTP con una tasa de aceptación declarada del 81,7%.
+- Soporte de tool calling y function calling a través de los parsers de razonamiento de vLLM y SGLang.
+- Capacidades de agente y razonamiento multi-turno, condicionadas a una gestión correcta del presupuesto de tokens.
+- Multilingüe limitado: el único idioma declarado es el inglés.
+- Comportamiento sin rechazos en los modos de razonamiento desactivado y de esfuerzo máximo, según el autor.
 
 ## Casos de uso
 
-- Análisis de texto con copyright: el modelo puede procesar y resumir fragmentos de libros, artículos o letras de canciones sin rechazar la solicitud, algo que el modelo base hacía con frecuencia. Útil para investigación académica o análisis de citas.
-- Generación creativa sin censura: escritura de ficción, poesía o guiones que aborden temas tabú o controvertidos sin que el modelo se niegue a continuar.
-- Desarrollo de agentes autónomos: gracias al soporte de tool calling y razonamiento multi-paso, puede integrarse en pipelines de agentes que necesiten ejecutar acciones sin interrupciones por políticas de seguridad.
-- Asistente de programación en producción: con 18B activos y soporte de herramientas, puede usarse en entornos CI/CD para generar código, revisar PRs o autocompletar, con baja latencia gracias a la decodificación especulativa.
-- Investigación en alineación y seguridad: permite estudiar el comportamiento de un modelo sin guardarraíles, comparando con la versión base para entender cómo funcionan los mecanismos de rechazo.
-- Procesamiento de documentos largos: con 1M tokens de contexto, puede resumir libros completos, analizar contratos extensos o procesar codebases enteras sin truncamiento.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar el comportamiento de un sistema con los mecanismos de rechazo ablacionados a nivel de pesos, comparándolo con el base para aislar el efecto de la edición sobre la distribución de respuestas.
+- Generación de contenido creativo sin fricción: narrativa, guiones y material editorial donde el modelo base rechazaba peticiones benignas por similitud con material protegido; el modo de razonamiento desactivado ofrece la ruta más directa y con menor coste de tokens.
+- Procesamiento de documentos largos: con 1M tokens de contexto declarados, es adecuado para análisis de contratos, expedientes o bases de código extensas en una sola pasada, siempre que se dimensionen los recursos de GPU en consecuencia.
+- Análisis de imágenes y vídeo en pipelines de inspección: la torre de visión permite clasificar y describir contenido visual; conviene fijar explícitamente `fps: 2` y `max_image_tokens` para controlar el coste y evitar el fallo de placeholders descrito por el autor.
+- Evaluación comparativa de cuantización NVFP4: sirve como banco de pruebas para medir la degradación de calidad de NVFP4 frente a bf16 en un MoE de gran tamaño, con la referencia del 85,28% en MMLU.
+- Despliegue en infraestructura con vLLM o SGLang para experimentación con decodificación especulativa: la cabecera MTP retenida permite medir ganancias de throughput en cargas de generación larga.
+- Generación de código asistida en entornos controlados: el soporte de tool calling permite integrarlo en flujos de edición y ejecución de código, aunque la ausencia de benchmarks de código publicados obliga a validar la calidad antes de usarlo en producción.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona resultados de evaluación comparativa entre el modelo base y esta versión "uncensored":
+| Benchmark | Resultado | Notas |
+|---|---|---|
+| MMLU | 85,28% | A ~0,9 puntos del modelo base, según el autor |
+| HarmBench-320 | 0% de rechazos | En modos de razonamiento desactivado y esfuerzo máximo |
+| Aceptación MTP | 81,7% | Tasa de aceptación de la cabecera de decodificación especulativa |
 
-| Benchmark | Base | CRACK Uncensored | Δ |
-|---|---|---|---|
-| MMLU (overall, logit-mode, 1.026 preguntas) | 86,16% | 85,09% | -1,07 pp |
-| HarmBench-320 (cumplimiento, menos rechazos) | no disponible | 320/320 (100%) | — |
-
-En HarmBench-320, el modelo alcanza un 100% de cumplimiento en las categorías Standard, Contextual y Copyright, con 0 rechazos y 0 salidas degeneradas. No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.) para esta versión específica. El modelo base GLM-5.3-Flash, según la documentación de Z.ai, supera a GLM-5.2 y se acerca a Claude Opus 4.8 en tareas de coding y agentes, pero esos datos no se replican aquí.
+No se han publicado resultados de benchmarks de código, matemáticas o visión en la información disponible.
 
 ## Requisitos de hardware
 
-- El checkpoint NVFP4 ocupa 194,7 GB en disco, por lo que se necesitan múltiples GPUs para cargarlo en memoria.
-- La model card recomienda ejecutar con vLLM usando `--tensor-parallel-size 4`, lo que sugiere al menos 4 GPUs de datacenter.
-- Con NVFP4, los pesos de los expertos enrutados se almacenan en 4 bits, mientras que attention, shared experts y embeddings permanecen en bf16. Esto reduce el uso de VRAM frente a una versión sin cuantizar, pero sigue siendo un modelo de gran tamaño.
-- Estimación de VRAM: con 194,7 GB de pesos, se necesitan al menos 4×48 GB (p. ej., A100 48GB) o 4×80 GB (A100/H100 80GB) para dejar margen para activaciones y KV cache. No cabe en GPUs de consumo (RTX 4090, etc.).
-- Opciones de despliegue: vLLM (recomendado, con `--moe-backend marlin`), también compatible con TGI o llama.cpp si se convierte a GGUF (no se proporciona en este repo).
-- Latencia y throughput: no se han publicado datos específicos para esta versión, pero al ser un MoE con 18B activos, la latencia por token debería ser similar a la del modelo base, que es significativamente menor que un modelo denso de 320B.
+- El repositorio ocupa 255,7 GB, por lo que la inferencia requiere al menos esa cantidad de memoria agregada, más overhead de activaciones y caché KV.
+- No cabe en ninguna GPU de consumo actual: se necesita un nodo multi-GPU con GPUs de centro de datos (H100, H200, B200 o A100 de 80 GB en configuración múltiple).
+- La cuantización NVFP4 está pensada para hardware con soporte nativo de FP4 (arquitecturas Blackwell); en generaciones anteriores el rendimiento será inferior o la ruta no estará soportada.
+- Despliegue recomendado con vLLM o SGLang, que son los motores para los que el autor documenta el comportamiento de los parsers de razonamiento y de los parámetros multimodales.
+- No se documentan opciones de despliegue con llama.cpp, Ollama o TGI para este repositorio.
+- Latencia y throughput: no disponibles. La tasa de aceptación MTP del 81,7% sugiere ganancias apreciables en decodificación especulativa, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Cuantización | Notas |
-|---|---|---|---|---|---|---|
-| GLM-5.3-Flash (base) | 320B | 18B | 1M | MIT | FP8 nativo | Modelo original con guardarraíles |
-| GLM-5.3-Flash-UNCENSORED-NVFP4 (este) | 320B | 18B | 1M | MIT | NVFP4 | Abliterado, sin rechazos |
-| DeepSeek-V3 | 671B | 37B | 128K | MIT | FP8 | MoE similar, pero sin visión y con contexto menor |
-| Qwen2.5-MoE | 235B | 21B | 128K | Apache 2.0 | BF16 | MoE denso, sin visión |
-
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se basa en especificaciones técnicas.
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Notas |
+|---|---|---|---|---|---|
+| dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 | 165,5B en safetensors (320B declarados, 18B activos) | 1M | NVFP4 | MIT | Modificación de pesos, sin rechazos en modos off y max |
+| zai-org/GLM-5.3-Flash | 320B declarados, 18B activos | 1M | bf16 original | no disponible en la información | Modelo base, con rechazos y mayor sobreabundancia de negativas |
+| dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4 | mismos que el modelo base | 1M | NVFP4 | MIT | Espejo alternativo del mismo autor |
+| Otros MoE de gran tamaño con contexto largo | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo "uncensored", no tiene guardarraíles de seguridad. Puede generar contenido dañino, ilegal o éticamente problemático sin rechazo. No es adecuado para aplicaciones donde se requiera moderación de contenido o cumplimiento normativo.
-- La abliteración puede afectar a la calidad en ciertos dominios: la tabla MMLU por tema muestra caídas notables en High School Mathematics (55,6% → 33,3%) o Moral Scenarios (77,8% → 61,1%), aunque otras suben.
-- Solo se declara soporte para inglés; el uso en otros idiomas puede degradar el rendimiento.
-- El modelo base tiene 1M tokens de contexto, pero el uso efectivo de contextos muy largos requiere suficiente VRAM y puede aumentar la latencia.
-- La licencia MIT permite uso comercial, pero el usuario es responsable del contenido generado.
-- No se proporcionan garantías sobre la exactitud de los resultados; el riesgo de alucinación es similar al del modelo base.
-- El tamaño del repo (194,7 GB) implica costes de almacenamiento y transferencia considerables.
+- La modificación elimina los rechazos en los modos de razonamiento desactivado y de esfuerzo máximo, pero el modo de esfuerzo bajo conserva algunos por diseño. El comportamiento no es homogéneo entre modos.
+- Riesgo elevado de generar contenido dañino, ilegal o sexualmente explícito sin filtro. No es adecuado para aplicaciones orientadas al público sin una capa de moderación externa.
+- El autor documenta que, en modo `max`, un `max_tokens` pequeño devuelve una respuesta vacía con `finish_reason="length"`. En conversaciones multi-turno, el turno vacío contamina el historial y la conversación no se recupera. Medido: `max` con 2000 tokens falla a partir del turno 4; con 6000 tokens funciona correctamente.
+- `reasoning_effort` solo acepta `"low"` y `"high"`; cualquier otro valor, incluido omitirlo, resuelve silenciosamente a `max`.
+- No se debe pasar `enable_thinking`: la plantilla no define esa variable y su uso desactiva el parser mientras el modelo sigue razonando, volcando el razonamiento en bruto en `content`.
+- La traza de razonamiento se devuelve en `message.reasoning`, no en `message.reasoning_content`.
+- `clear_thinking` debe anidarse dentro de `chat_template_kwargs`; una clave de nivel superior se ignora.
+- En vídeo, `media_io_kwargs.video.fps` debe ser estrictamente inferior a la tasa de frames del clip. Un valor igual o superior provoca un error de placeholders y tumba el motor (`EngineDeadError`), con el servidor caído hasta reiniciarlo.
+- `max_frames` y `num_frames` no son intercambiables entre versiones de vLLM: en nightly se respeta `max_frames` y en la línea `0.1.dev*` ocurre lo contrario. Conviene fijar siempre `fps`.
+- Los controles `max_pixels`, `min_pixels`, `size` y `detail` devuelven HTTP 200 sin efecto. Para imágenes deben usarse `mm_processor_kwargs.max_image_tokens` y `min_image_tokens`.
+- Solo se declara inglés como idioma soportado; el rendimiento en castellano no está documentado.
+- La licencia es MIT, lo que permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo modificado ni sobre las implicaciones legales del contenido que pueda generar.
+- El modelo solo está publicado en NVFP4, lo que limita su despliegue a hardware compatible y dificulta la comparación directa con el base en bf16.
+- Existe una discrepancia entre los 320B declarados en la model card y los 165,5B contabilizados en los safetensors; conviene verificar el recuento real antes de dimensionar infraestructura.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4
-- Espejo abliterado: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Cuantización NVFP4 de LibertAIDAI: https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4
-- Documentación de Unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3
-- Receta vLLM para GLM-5.3-Flash: https://recipes.vllm.ai/zai-org/GLM-5.3-Flash
-- Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5
-- Sitio de dealignai: https://dealign.ai/
+- Espejo del autor: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4
+- Perfil del autor: https://huggingface.co/dealignai
+- Twitter del autor: https://twitter.com/dealignai
+- Incidencias de vLLM citadas por el autor: vLLM #55644 y #55647 (no se dispone de URL directa en la información proporcionada)

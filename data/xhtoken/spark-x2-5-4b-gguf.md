@@ -2,95 +2,91 @@
 
 ## Resumen
 
-Spark-X2.5-4B es un modelo de lenguaje compacto de propósito general desarrollado por XHToken, disponible en su versión cuantizada en GGUF para inferencia local. Este repositorio concreto (XHToken/Spark-X2.5-4B-GGUF) proporciona una conversión BF16 del modelo base, preparada para su uso con llama.cpp, Ollama y LM Studio mediante un runtime compatible publicado por el propio autor.
+Spark-X2.5-4B-GGUF es la distribucion cuantizada en formato GGUF del modelo Spark-X2.5-4B, desarrollado por XHToken. Se trata de un modelo de lenguaje compacto de proposito general orientado a conversacion, redaccion, traduccion, razonamiento, generacion de codigo, uso de herramientas y flujos de trabajo agenticos. Con 4.112.079.360 parametros, se posiciona en la franja de modelos pequenos que pueden ejecutarse en hardware de consumo, lo que explica su elevada adopcion: 286.347 descargas y 292 likes desde su publicacion el 28 de agosto de 2026.
 
-El modelo está diseñado para cubrir tareas cotidianas de conversación, escritura, traducción, razonamiento, generación de código, uso de herramientas y flujos de agente. Destaca por su arquitectura híbrida de atención, una ventana de contexto nativa de hasta 1 millón de tokens y soporte multilingüe amplio (más de 200 idiomas según el modelo base). Con aproximadamente 4.000 millones de parámetros, se posiciona como una opción ligera y eficiente para despliegues en hardware de consumo.
+El modelo emplea una arquitectura de atencion hibrida y declara una longitud de contexto nativa de hasta 1.000.000 de tokens, una cifra notable para su tamano. La model card del repositorio GGUF remite al repositorio del modelo base para los detalles de arquitectura, metodos de entrenamiento, resultados de benchmarks y proceso de fine-tuning, por lo que buena parte de esas especificaciones no estan disponibles directamente en esta ficha.
 
-La relevancia de este lanzamiento radica en combinar un tamaño reducido con capacidades avanzadas de contexto largo y razonamiento, lo que lo hace atractivo para aplicaciones de RAG, agentes autónomos y desarrollo de herramientas sin depender de infraestructura cloud. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+La relevancia de esta publicacion radica en la combinacion de contexto muy largo, soporte declarado de mas de 200 idiomas y licencia Apache 2.0, todo ello en un paquete de 4B parametros distribuido en GGUF con soporte nativo en llama.cpp, Ollama, LM Studio y Unsloth. Esto lo convierte en un candidato practico para despliegues locales y entornos con requisitos de privacidad o coste.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida de atención (hybrid attention), sin más detalles públicos |
-| Parametros totales | 4.112.079.360 (4B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | Hasta 1.000.000 tokens (nativo, según el autor) |
-| Tipos de cuantizacion | BF16 (conversión GGUF proporcionada) |
-| Idiomas soportados | en, zh (según la model card del GGUF); el modelo base declara más de 200 idiomas |
+| Arquitectura | Transformer con atencion hibrida (hibrido attention architecture) |
+| Parametros totales | 4.112.079.360 |
+| Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
+| Longitud de contexto | Hasta 1.000.000 de tokens (contexto nativo) |
+| Tipos de cuantizacion | No disponible (repositorio GGUF; niveles concretos no especificados) |
+| Idiomas soportados | Ingles y chino declarados en metadatos; la model card afirma cobertura de mas de 200 idiomas |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (BF16) |
+| Formato de pesos | GGUF (modelo base en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de Spark-X2.5-4B se describe como "hybrid attention", lo que sugiere una combinación de mecanismos de atención clásicos con alguna variante eficiente para manejar contextos muy largos (hasta 1M tokens). Sin embargo, los detalles técnicos concretos (tipo de atención lineal, sliding window, etc.) no se especifican en la información pública disponible.
+Spark-X2.5-4B utiliza una arquitectura de atencion hibrida, segun indica la model card. El modelo base cuenta con 4.112.079.360 parametros y soporta un contexto nativo de hasta 1.000.000 de tokens, lo que sugiere mecanismos de atencion eficiente para sostener ventanas de esa magnitud. La model card no detalla la composicion exacta de las capas hibridas ni el esquema de atencion empleado.
 
-No se han publicado datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF o DPO, o técnicas de alineación. Tampoco se detallan innovaciones adicionales como decodificación especulativa o atención lineal explícita. La única mención relevante es la existencia de un modo de pensamiento ("thinking mode") que puede desactivarse con la opción `--think=false` en Ollama, lo que sugiere algún mecanismo de razonamiento extendido durante la generación.
+En cuanto al entrenamiento, la informacion disponible en este repositorio es escasa: la model card remite explicitamente al repositorio del modelo base (XHToken/Spark-X2.5-4B) para conocer los metodos de entrenamiento, los datos utilizados, la posible aplicacion de RLHF o DPO y los resultados de evaluacion. Los tags del repositorio incluyen `unsloth`, lo que indica compatibilidad con el ecosistema de Unsloth para inferencia y, presumiblemente, fine-tuning. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento ni la composicion del dataset.
 
 ## Capacidades
 
-- Generación de texto en múltiples idiomas (conversación, escritura creativa, resúmenes, traducción).
-- Razonamiento y resolución de problemas lógicos y matemáticos.
-- Generación de código y asistencia en programación.
-- Soporte de tool calling y function calling para integración con APIs y herramientas externas.
-- Capacidad para flujos de agente (agentic workflows) con ejecución de múltiples pasos.
-- Modo de pensamiento ("thinking mode") que permite respuestas más elaboradas, desactivable para mayor velocidad.
-- Ventana de contexto de hasta 1M tokens, adecuada para documentos largos, RAG y conversaciones extendidas.
-- Multilingüismo amplio (más de 200 idiomas según el modelo base, aunque la ficha de HF solo lista en y zh).
+- Generacion de texto conversacional en formato multi-turno.
+- Redaccion y composicion de textos.
+- Traduccion, con cobertura declarada de mas de 200 idiomas (metadatos del repositorio limitados a ingles y chino).
+- Razonamiento y resolucion de problemas.
+- Generacion de codigo.
+- Uso de herramientas (tool use) y flujos de trabajo agenticos.
+- Soporte de contexto muy largo, hasta 1.000.000 de tokens de forma nativa.
+- Inferencia local mediante llama.cpp, Ollama, LM Studio y Unsloth Studio, con soporte nativo del tipo de modelo `spark2_5`.
+- Servidor compatible con la API de OpenAI a traves de `llama serve`.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: con su contexto de 1M tokens, puede mantener conversaciones multi-turno extensas sin perder el hilo, gestionando historiales completos de interacción y consultando bases de conocimiento internas mediante RAG.
-- Generación de código en producción: su soporte de tool calling permite integrarlo en pipelines de CI/CD para autocompletar, revisar o documentar código, así como interactuar con sistemas de control de versiones.
-- Asistentes de escritura y traducción: útil para redactar informes, artículos o traducir documentos técnicos, aprovechando su capacidad multilingüe y de contexto largo para mantener coherencia en textos extensos.
-- Agentes autónomos de investigación: puede planificar y ejecutar tareas de búsqueda, extracción y resumen de información, combinando razonamiento multi-paso con acceso a herramientas externas.
-- Análisis de documentos legales o académicos: la ventana de contexto de 1M tokens permite procesar contratos, tesis o expedientes completos en una sola pasada, extrayendo cláusulas o resumiendo secciones.
-- Chatbots de soporte técnico especializado: al poder cargar manuales, documentación de APIs o guías de troubleshooting, el modelo puede ofrecer respuestas precisas y contextualizadas sin necesidad de fine-tuning adicional.
-- Desarrollo de prototipos de IA en hardware local: al ser un modelo de 4B en GGUF, puede ejecutarse en portátiles con GPU de gama media o incluso en CPU con cuantización inferior, lo que facilita la experimentación sin costes de nube.
+- Asistente conversacional local: el modelo puede gestionar dialogos multi-turno en estaciones de trabajo sin GPU dedicada, gracias a su tamano de 4B parametros en GGUF y a la compatibilidad con Ollama y LM Studio, lo que permite desplegarlo con un solo comando.
+- Analisis de documentos extensos: con un contexto nativo de hasta 1M tokens, es adecuado para resumir, extraer informacion o responder preguntas sobre contratos, informes o bases de codigo completas sin necesidad de fragmentacion agresiva.
+- Traduccion multilingue: la cobertura declarada de mas de 200 idiomas lo hace util para pipelines de localizacion, aunque la calidad por idioma debe validarse empiricamente antes de producción.
+- Generacion de codigo en entornos con restricciones de privacidad: al ejecutarse localmente via llama.cpp u Ollama, el codigo no sale de la infraestructura del cliente, lo que encaja en sectores regulados.
+- Agentes y automatizacion con tool calling: su soporte de uso de herramientas y flujos agenticos permite integrarlo en asistentes que consultan APIs, bases de datos o sistemas internos mediante el servidor compatible con OpenAI.
+- Prototipado rapido y evaluacion de ideas: el reducido coste de inferencia y la licencia Apache 2.0 facilitan experimentar con fine-tuning (ecosistema Unsloth) y desplegar pruebas de concepto sin coste de licencia.
+- Procesamiento por lotes en CPU: al estar distribuido en GGUF, puede ejecutarse en servidores sin GPU para tareas de clasificacion, resumen o extraccion a gran escala, priorizando throughput sobre latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF remite al modelo base para detalles de rendimiento, pero no se incluyen cifras concretas en la documentación examinada. Se recomienda consultar el repositorio oficial de Spark-X2.5 para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF remite al repositorio del modelo base (XHToken/Spark-X2.5-4B) para consultar los resultados de evaluacion.
 
 ## Requisitos de hardware
 
-- El archivo GGUF en BF16 ocupa aproximadamente 8,2 GB (tamaño del repositorio). Para inferencia completa en BF16 se necesitan unos 8 GB de VRAM.
-- Con cuantizaciones inferiores (Q4_K_M, Q5_K_M) que podrían generarse a partir del modelo base, el peso se reduciría a unos 2,5-3,5 GB, permitiendo ejecución en GPUs de 4-6 GB.
-- Es compatible con GPUs de consumo: RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070 (12 GB), así como Apple Silicon con Metal (M1/M2/M3 con al menos 8 GB de RAM unificada).
-- Opciones de despliegue: llama.cpp (fork de XHToken), Ollama (compilado con ese fork), LM Studio (sustituyendo el runtime), y potencialmente vLLM o TGI si se añade soporte, aunque no está confirmado.
-- Para contexto de 1M tokens, se requiere memoria adicional para las claves y valores de atención; se recomienda al menos 16 GB de VRAM para aprovechar completamente esa capacidad.
-- La latencia típica en GPU consumer para un modelo de 4B en BF16 es de 20-50 tokens por segundo, dependiendo del hardware y del tamaño del contexto.
+- VRAM estimada: no disponible de forma oficial; para un modelo de 4B parametros en GGUF, las cuantizaciones de 4 bits suelen requerir del orden de 2,5 a 3,5 GB de memoria, y las de 8 bits en torno a 4,5 a 5 GB, si bien estas cifras son estimaciones generales y no datos publicados por el autor.
+- GPU recomendadas: no especificadas por el autor. Por tamano, el modelo es apto para GPUs de consumo con 8 GB o mas de VRAM; para contexto muy largo (hasta 1M tokens) la memoria necesaria para la cache KV crece de forma significativa y requerira GPUs de mayor capacidad (A100, H100) o tecnicas de atencion eficiente.
+- Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas de VRAM en cuantizaciones de 4 bits, segun el tamano del modelo.
+- Opciones de despliegue: llama.cpp (version b10828 o posterior para soporte nativo de `spark2_5`), Ollama (v0.34.1 o posterior), LM Studio (runtime 2.34.0 o posterior), Unsloth Studio, y servidor compatible con OpenAI mediante `llama serve`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-Dado que no se dispone de datos de benchmarks publicados para Spark-X2.5-4B, la comparación se basa en especificaciones generales conocidas de modelos de tamaño similar:
+No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible. A modo orientativo, el modelo se situa en la categoria de LLM de 4B parametros con contexto muy largo y licencia permisiva, un segmento en el que compite con otros modelos pequenos de proposito general, pero no se aportan cifras que permitan una comparacion rigurosa.
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato |
 |---|---|---|---|---|
-| Spark-X2.5-4B | 4B | 1M (nativo) | Apache 2.0 | Arquitectura híbrida, multilingüe, modo thinking |
-| Qwen2.5-4B | 4B | 128K | Apache 2.0 | Modelo denso, buen rendimiento en código y matemáticas |
-| Llama-3.2-3B | 3B | 128K | Llama 3.2 Community | Enfoque generalista, sin tool calling nativo |
-| Gemma-2-2B | 2B | 8K | Gemma Terms | Más pequeño, eficiente pero con contexto limitado |
-
-La principal ventaja de Spark-X2.5-4B frente a estos modelos es su contexto nativo de 1M tokens y su soporte explícito para tool calling y agentes, además de una licencia Apache 2.0 sin restricciones de uso comercial. Sin datos de rendimiento, no es posible comparar calidad de generación o precisión en tareas específicas.
+| Spark-X2.5-4B | 4,11B | 1.000.000 tokens | Apache 2.0 | GGUF, safetensors |
+| Alternativas de 4B | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks, por lo que el rendimiento real en tareas estándar (MMLU, HumanEval, GSM8K) es desconocido.
-- La arquitectura híbrida de atención no está documentada en detalle; podría implicar aproximaciones que afecten a la calidad en contextos extremadamente largos.
-- La model card del GGUF solo lista en y zh como idiomas, aunque el modelo base declara más de 200. La cobertura real de idiomas minoritarios no está verificada.
-- Riesgo de alucinación inherente a modelos de este tamaño, especialmente en tareas de razonamiento complejo o con contexto muy largo.
-- Para usar el modelo con Ollama o LM Studio, es necesario compilar un fork específico de llama.cpp, lo que añade complejidad de instalación.
-- El modo de pensamiento (thinking mode) puede aumentar la latencia y el consumo de recursos; se desactiva con `--think=false`.
-- No se han publicado detalles sobre sesgos, mitigaciones o evaluación de seguridad. Se recomienda auditar el modelo antes de su uso en producción.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo en entornos de alto riesgo.
+- Sesgos conocidos: no documentados en la informacion disponible; como todo modelo entrenado con datos web, es previsible que herede sesgos de sus fuentes, pero el autor no los detalla.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual ni tasas de alucinacion; debe validarse en dominios sensibles.
+- Limitaciones de contexto: aunque se declara un contexto nativo de hasta 1M tokens, el rendimiento efectivo en ventanas extremas no esta documentado y la memoria requerida para la cache KV puede ser prohibitiva en hardware de consumo.
+- Limitaciones de idioma: los metadatos solo declaran ingles y chino; la afirmacion de mas de 200 idiomas procede de la model card y no esta respaldada por evaluaciones publicadas en esta ficha.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion y sin garantias; conviene revisar los terminos del modelo base.
+- Caveats para produccion: el soporte nativo de `spark2_5` exige versiones minimas concretas de llama.cpp (b10828), Ollama (v0.34.1) y LM Studio (runtime 2.34.0); entornos con versiones anteriores pueden no cargar el modelo correctamente.
+- Ausencia de benchmarks publicados en este repositorio: la evaluacion comparativa debe hacerse contra el modelo base antes de adoptar decisiones de despliegue.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
-- Repositorio de la serie Spark-X2.5: https://github.com/XHToken/Spark-X2.5
-- Colección en Hugging Face: https://huggingface.co/collections/XHToken/spark-x25
-- Página en ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B
-- Referencia en LLM Reference: https://www.llmreference.com/model/spark-x2.5-4b
-- Fork de llama.cpp de XHToken: https://github.com/XHToken/llama.cpp
+- llama.cpp: https://github.com/ggml-org/llama.cpp/
+- Ollama (descarga): https://ollama.com/download
+- Ollama (releases): https://github.com/ollama/ollama/releases
+- LM Studio: https://lmstudio.ai/download
+- Unsloth: https://unsloth.ai/
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

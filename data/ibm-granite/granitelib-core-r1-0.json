@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 45,
-  "downloads_30d": 6443,
+  "downloads_30d": 6835,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "IBM",
-      "url": "https://www.ibm.com/",
-      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …"
-    },
-    {
-      "title": "IBM",
-      "url": "https://www.ibm.com/fr-fr",
-      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
-    },
-    {
-      "title": "IBM — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/IBM",
-      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
-    },
-    {
-      "title": "IBM - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/IBM",
-      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
-    },
-    {
-      "title": "IBM Cours Action IBM, Cotation Bourse NYSE - Boursorama",
-      "url": "https://www.boursorama.com/cours/IBM/",
-      "snippet": "Le cours de l'action IBM IBM sur Boursorama : historique de la cotation sur NYSE, graphique, actualités, consensus des analystes et …"
-    }
-  ]
+  "sources": []
 }

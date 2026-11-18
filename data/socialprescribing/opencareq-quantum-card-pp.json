@@ -5,9 +5,9 @@
   "author": "socialprescribing",
   "url": "https://huggingface.co/socialprescribing/opencareq-quantum-card-pp",
   "created_at": "2026-11-16T22:29:36.000Z",
-  "updated_at": "2026-11-16T23:56:06.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-11-17T13:28:30.000Z",
+  "license": "cc-by-nc-sa-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": null,
   "library": null,
   "languages": [
@@ -27,7 +27,7 @@
     "dataset:socialprescribing/opencareq-nhs-42icb-atlas",
     "arxiv:2412.13151",
     "arxiv:2611.18440",
-    "license:apache-2.0",
+    "license:cc-by-nc-sa-4.0",
     "region:us"
   ],
   "likes": 0,

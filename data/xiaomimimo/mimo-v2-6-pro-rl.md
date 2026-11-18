@@ -2,62 +2,61 @@
 
 ## Resumen
 
-MiMo-V2.6-Pro-RL es el checkpoint insignia de la serie MiMo-V2.6, desarrollado por XiaomiMiMo (Xiaomi). Se presenta como un modelo omnimodal nativo que procesa texto, imagen, vídeo y audio en una única arquitectura, con una ventana de contexto de 1.000.000 de tokens pensada para repositorios de código extensos, trazas de herramientas y ejecuciones de agente de múltiples sesiones. Su propuesta central es escalar el aprendizaje por refuerzo hasta un bucle de automejora: en lugar de ejecutar entrenamientos RL separados por dominio, la serie utiliza una única ejecución mixta que cubre código, agentes generales, visión y ciberseguridad.
+MiMo-V2.6-Pro-RL es el checkpoint insignia de la serie MiMo-V2.6, desarrollada por XiaomiMiMo (Xiaomi). Se trata de un modelo multimodal nativo (texto, imagen, vídeo y audio) con arquitectura de mezcla de expertos dispersa (MoE), 1,02 billones de parámetros totales y 42.000 millones de parámetros activos por token, con una longitud de contexto de 1 millón de tokens. Su propuesta central es escalar el aprendizaje por refuerzo (RL) como mecanismo de auto-mejora: cómputo de RL, diversidad de entornos y cómputo de evaluación crecen de forma conjunta para ampliar la frontera de capacidades mediante exploración y retroalimentación.
 
-La arquitectura es un MoE disperso con backbone híbrido de atención de ventana deslizante (SWA) y un decodificador especulativo de predicción multi-token (MTP) de 5 capas. La model card declara 1,02 billones de parámetros totales con 42.000 millones activos, aunque el metadata de safetensors del repositorio reporta 524.121.348.864 parámetros: una discrepancia que conviene verificar antes de dimensionar infraestructura. Incorpora un codificador visual MiMo ViT de 681M parámetros y un codificador de audio compuesto por un AudioTokenizer de 308M y un patch encoder de 127M.
+El modelo se distribuye con licencia MIT, lo que permite uso comercial sin restricciones de atribución más allá de las habituales de dicha licencia, y está publicado en Hugging Face con pesos en safetensors (573,5 GB de repositorio) y código personalizado para transformers. Los idiomas declarados son inglés y chino. Su relevancia actual radica en dos frentes: por un lado, unifica en un solo entrenamiento de RL dominios habitualmente tratados por separado (código, agentes generales, visión y ciberseguridad); por otro, incorpora un bucle de autoevaluación con calificadores agénticos que compara trayectorias dentro de un mismo grupo para premiar soluciones de mayor calidad, no solo las que aprueban.
 
-Es relevante ahora porque documenta un cambio de método en el post-entrenamiento: el reward se escala mediante evaluación agéntica por grupos (Groupwise Reward Synthesis y Groupwise Advantage Redistribution) sobre GRPO asíncrono con lotes de 1.568 prompts × 16 rollouts por paso, además de una fase de destilación on-policy multi-profesor (MOPD2) posterior al RL mixto. Los resultados publicados sitúan al modelo cerca de referencias propietarias en benchmarks de agente y código, con licencia MIT y pesos abiertos.
+La serie incluye además una variante menor, MiMo-V2.6-Flash-RL, con la que comparte metodología pero no tamaño. El modelo está orientado a cargas de trabajo de horizonte largo: repositorios extensos, trazas de herramientas y ejecuciones de agente multi-sesión, gracias a su ventana de 1M tokens y a sus codificadores multimodales integrados.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE disperso (sparse MoE) con backbone híbrido de atención de ventana deslizante (SWA) y decodificador especulativo MTP de 5 capas |
-| Parametros totales | 1,02 B (1,02 billones) segun la model card; el metadata de safetensors reporta 524.121.348.864 (≈524 B). Discrepancia no resuelta en la informacion disponible |
-| Parametros activos | 42 B (segun model card) |
+| Arquitectura | MoE dispersa (sparse Mixture of Experts); backbone híbrido con atención SWA; codificadores omni (visión y audio); decodificador especulativo MTP |
+| Parametros totales | 1.024.216.603.392 (1,02 T) |
+| Parametros activos | 42 B |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | fp8 y 8-bit (etiquetas del repositorio); no se detallan otros formatos |
-| Idiomas soportados | Ingles (en) y chino (zh) |
+| Tipos de cuantizacion | 8-bit, FP8 (según tags del repositorio); no se detallan otras variantes en la información disponible |
+| Idiomas soportados | Inglés (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (repositorio de 573,5 GB) |
-| Codificador de vision | MiMo ViT de 681 M de parametros (28 capas: 24 SWA + 4 full) |
-| Codificador de audio | AudioTokenizer de 308 M + patch encoder de audio de 127 M |
-| Prediccion multi-token | Decodificador especulativo de 5 capas |
-| Modalidades | Texto, imagen, video y audio |
+| Formato de pesos | safetensors (con código personalizado, `custom_code`); tamaño del repositorio 573,5 GB |
+| Codificador de visión | MiMo ViT de 681 M de parámetros (28 capas: 24 SWA + 4 Full) |
+| Codificador de audio | AudioTokenizer de 308 M + codificador de parches de audio de 127 M |
+| Decodificador especulativo | MTP (Multi-Token Prediction) de 5 capas |
+| Modalidades | Texto, imagen, vídeo, audio |
+| Librería | transformers |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo combina un backbone transformer con mezcla de expertos dispersa y atención híbrida: la mayor parte de las capas emplea ventana deslizante y solo un subconjunto usa atención completa, lo que reduce el coste del contexto largo hasta 1M de tokens. Sobre ese backbone se acoplan tres componentes independientes: el codificador visual MiMo ViT (681M, 28 capas, 24 de ellas SWA), el codificador de audio (AudioTokenizer de 308M más un patch encoder de 127M) y un decodificador especulativo MTP de 5 capas que acelera la generación mediante predicción multi-token. La model card declara 1,02 billones de parámetros totales con 42.000 millones activos.
+La arquitectura combina un backbone transformer de mezcla de expertos dispersa con 1,02 T de parámetros totales y 42 B activos, sobre el que se injertan codificadores específicos de modalidad: un ViT de 681 M de parámetros para visión (28 capas, 24 de ventana deslizante y 4 de atención completa) y un front-end de audio compuesto por un AudioTokenizer de 308 M y un codificador de parches de 127 M. El backbone emplea atención de ventana deslizante (SWA) en la mayor parte de sus capas, lo que resulta coherente con la ventana de 1M tokens. Para acelerar la decodificación incorpora un decodificador especulativo MTP de 5 capas.
 
-El entrenamiento se articula en varias fases descritas por el autor. Primero, un arranque en frío de autocorrección en el que el modelo reescribe sus propios turnos desalineados. Después, una única ejecución de RL mixta («You Only RL Once») que mezcla tareas de código, agentes generales, visión y ciberseguridad en el mismo lote, con distintos harness de evaluación, para que las estrategias se transfieran a harness no vistos en entrenamiento. El algoritmo es GRPO asíncrono con lotes de 1.568 prompts × 16 rollouts por paso y miles de millones de tokens por actualización. Para evitar que el reward binario pass/fail no discrimine entre soluciones correctas, se añaden dos mecanismos: Groupwise Reward Synthesis (GRS), que construye rúbricas específicas de tarea a partir de rollouts contrastados y las fusiona con el resultado del test, y Groupwise Advantage Redistribution (GAR), que reordena online las trayectorias correctas y desplaza la ventaja hacia las de mayor calidad, favoreciendo caminos más cortos y menos tokens por tarea. Finalmente, MOPD2 (Multi-Prefix Multi-Teacher On-Policy Distillation) combina rollouts autónomos del alumno con rollouts de un solo turno condicionados por prefijo de profesor y de SFT, reutilizando historiales para no regenerar turnos previos. La model card menciona además endurecimiento del entorno, cribado adversarial y verificación cruzada para evitar reward hacking.
+El entrenamiento se articula en torno a RL a gran escala. El autor describe una única ejecución mixta de RL ("You Only RL Once") que mezcla tareas de código, agentes generales, visión y ciberseguridad en el mismo lote, con múltiples arneses de evaluación, de modo que las estrategias aprendidas se transfieran a arneses no vistos durante el entrenamiento. El algoritmo es GRPO (Group Relative Policy Optimization) totalmente asíncrono, con lotes de 1.568 prompts × 16 rollouts por paso y miles de millones de tokens por actualización. Sobre esa base se añade un sistema de calificación agéntica por grupos: Groupwise Reward Synthesis (GRS) construye rúbricas específicas de tarea a partir de rollouts contrastados y fusiona su calidad con los resultados de test; Groupwise Advantage Redistribution (GAR) ordena en línea las trayectorias que aprueban y desplaza la ventaja hacia las soluciones de mayor calidad, acortando caminos y reduciendo tokens por tarea. El proceso se complementa con un arranque en frío de autocorrección (el modelo reescribe sus propios turnos desalineados), endurecimiento de entornos, cribado adversarial y verificación cruzada para evitar el reward hacking, y una fase final de destilación on-policy multi-profesor con múltiples prefijos (MOPD2) que reutiliza historias de trayectorias de profesor y demostraciones SFT para entrenar puntos de decisión sin regenerar los turnos previos.
 
 ## Capacidades
 
-- Generación de texto conversacional en ingles y chino.
-- Comprensión de imagen y video (vision-language, video-understanding).
-- Procesamiento de audio mediante AudioTokenizer y patch encoder dedicados.
-- Contexto largo de 1.000.000 de tokens para repositorios completos, trazas de herramientas y sesiones de agente prolongadas.
-- Agentes y razonamiento multi-paso: evaluado en Terminal Bench 4.0 y 2.1, OSWorld-Verified, AutomationBench, Toolathlon-Verified, Agents' Last Exam y JobBench.
-- Uso de herramientas (tool calling): implícito en los benchmarks de agente y en la descripción del entrenamiento con harness mixtos; la model card no detalla el formato exacto de function calling.
-- Generación y edición de código: DeepSWE v1.1, ProgramBench y MiMo Code Bench.
-- Ciberseguridad ofensiva/defensiva: CyberGym, MiMo Cyber Bench y ExploitGym.
-- Decodificación especulativa integrada (MTP de 5 capas) para acelerar la inferencia.
-- Capacidad de autocorrección entrenada en la fase de arranque en frío.
+- Generación de texto conversacional multi-turno con contexto de hasta 1M tokens.
+- Comprensión de imagen y vídeo mediante el codificador ViT integrado.
+- Comprensión de audio mediante el tokenizador y codificador de parches de audio.
+- Razonamiento y resolución de tareas de código, incluyendo agentes de código evaluados en DeepSWE, ProgramBench y MiMo Code Bench.
+- Uso de herramientas y function calling, con resultados reportados en Toolathlon-Verified y AutomationBench.
+- Ejecución de agentes multi-paso en entornos de terminal y escritorio (Terminal Bench, OSWorld-Verified, JobBench).
+- Capacidades de ciberseguridad evaluadas en CyberGym.
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- Decodificación especulativa mediante MTP para reducir latencia de generación.
+- Modo de auto-corrección entrenado por RL, orientado a reescribir turnos propios y reconducirlos a pasos fundamentados.
 
 ## Casos de uso
 
-- Agentes de terminal y automatización de sistema operativo: el modelo está evaluado específicamente en Terminal Bench y OSWorld-Verified, por lo que encaja en pipelines que ejecutan comandos, interpretan salidas y corrigen errores de forma iterativa sobre una máquina virtual o contenedor.
-- Ingeniería de software sobre repositorios grandes: con 1M de tokens de contexto puede cargar un repositorio completo junto con sus tests y el historial de issues, y generar parches verificables (DeepSWE v1.1, 71,9).
-- Orquestación de herramientas empresariales: Toolathlon-Verified (76,9) y AutomationBench v1.0.6 (53,1) lo sitúan como candidato para flujos que encadenan APIs, hojas de cálculo, CRM y correo en tareas multi-paso.
-- Análisis de vídeo y audio en un solo pipeline: al integrar codificadores de imagen, vídeo y audio, permite resumir reuniones o revisar material audiovisual sin encadenar modelos separados.
-- Auditoría y respuesta en ciberseguridad: las puntuaciones de CyberGym (94,0) y MiMo Cyber Bench (80,2) apuntan a uso en análisis de vulnerabilidades y tareas de explotación controlada dentro de entornos autorizados.
-- Evaluación automática de agentes: el método de graduación agéntica por grupos descrito en la model card puede reutilizarse para puntuar trayectorias de otros agentes cuando el criterio pass/fail no discrimina calidad.
-- Asistentes documentales multilingües en inglés y chino: atención al cliente o soporte técnico bilingüe con contexto largo para arrastrar historial de conversaciones y documentación.
-- Procesamiento por lotes de código heredado: migración o modernización de bases de código extensas aprovechando el contexto de 1M tokens y la decodificación especulativa para reducir el coste por token generado.
+- Agente de código en repositorios extensos: con 1M tokens de contexto puede cargar árboles de proyecto completos, trazas de herramientas y múltiples sesiones de trabajo, lo que encaja con los resultados reportados en DeepSWE v1.1 (71,9) y MiMo Code Bench (63,2).
+- Automatización de operaciones en terminal y escritorio: los resultados en Terminal Bench 2.1 (89,9) y OSWorld-Verified (82,0) lo sitúan como candidato para agentes que ejecutan comandos, interpretan salida y corrigen errores en entornos reales.
+- Orquestación de herramientas empresariales: su rendimiento en Toolathlon-Verified (76,9) y AutomationBench v1.0.6 (53,1) respalda su uso en flujos que encadenan APIs, formularios y sistemas internos.
+- Análisis de vídeo y audio en un solo pipeline: al integrar codificadores de visión y audio, permite transcribir, describir y razonar sobre contenido audiovisual sin concatenar modelos separados.
+- Asistencia a tareas de oficina y ofimática evaluadas por encuadre profesional: JobBench (62,0) y GDPval-AA 2.1 (1673) indican utilidad en tareas de conocimiento con criterios de calidad profesional.
+- Auditoría y análisis de seguridad: las capacidades evaluadas en CyberGym permiten emplearlo en revisión de configuraciones, análisis de trazas y apoyo a equipos de seguridad, siempre con supervisión humana.
+- Investigación en RL y auto-mejora: la publicación del informe técnico y de la metodología GRS/GAR lo convierte en una referencia para experimentos de escalado de RL con calificadores agénticos.
 
 ## Benchmarks y rendimiento
-
-Resultados publicados en la model card (MiMo-V2.6 Pro frente a alternativas):
 
 | Benchmark | MiMo-V2.6 Pro | MiMo-V2.6 Flash | MiMo-V2.5 Pro | Claude Opus 5 | GPT-5.6 Sol | Claude Fable 5 |
 |---|---|---|---|---|---|---|
@@ -72,57 +71,49 @@ Resultados publicados en la model card (MiMo-V2.6 Pro frente a alternativas):
 | Terminal Bench 2.1 | 89,9 | 87,6 | 65,2 | 89,1 | 88,8 | 84,3 |
 | OSWorld-Verified | 82,0 | 80,8 | no disponible | 83,4 | 83,0 | 86,0 |
 | JobBench | 62,0 | 61,2 | 25,0 | 65,7 | 45,4 | 57,4 |
-| CyberGym | 94,0 | 95,1 | 40,0 | no disponible | no disponible | no disponible |
-| MiMo Cyber Bench | 80,2 | 77,2 | 0,0 | no disponible | no disponible | no disponible |
-
-El valor de ExploitGym aparece truncado en la informacion disponible. No se han publicado en la informacion disponible resultados de benchmarks clasicos de conocimiento general (MMLU, GSM8K, HumanEval) ni datos de evaluación en castellano.
+| CyberGym | no disponible (tabla truncada en la información proporcionada) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Requisitos de hardware
 
-Estimaciones derivadas del recuento de parametros; la model card no publica requisitos oficiales.
-
-- Peso de los pesos en precision completa: con 524.121.348.864 parametros, bf16/fp16 requiere aproximadamente 1,05 TB de memoria; con 1,02 billones de parametros, unos 2,04 TB. En fp8/8-bit, aproximadamente 524 GB o 1,02 TB respectivamente.
-- Cuantizacion de 4 bits: alrededor de 262 GB (escenario de 524 B) o 510 GB (escenario de 1,02 B).
-- GPU recomendadas: despliegue en fp8/8-bit viable en nodos de 8×H100 80 GB (640 GB) o 8×H200; en bf16 exige multiples nodos (por ejemplo, 16×H100 para el escenario de 524 B).
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en configuraciones consumer habituales, ni siquiera en 4 bits.
-- Almacenamiento: el repositorio ocupa 573,5 GB, por lo que hay que prever ese espacio en disco o en cache de descarga.
-- Opciones de despliegue: la libreria declarada es transformers con `custom_code`, lo que obliga a `trust_remote_code=True`. El soporte especifico de vLLM, SGLang, TGI, llama.cpp u Ollama no se detalla en la informacion disponible; llama.cpp y Ollama no son viables para este tamano en hardware de consumo.
-- Latencia y throughput: no disponible. El decodificador especulativo MTP de 5 capas esta disenado para reducir el coste por token, pero no se publican cifras.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 1,02 T de parámetros totales y pesos en safetensors de 573,5 GB, la inferencia en precisión completa exige agregados multi-GPU de gran capacidad; las variantes de 8 bits y FP8 reducen el requisito aproximadamente a la mitad del tamaño del repositorio, pero el autor no publica cifras oficiales.
+- GPU recomendadas: no disponible en la información proporcionada. Por el tamaño del modelo, el despliegue realista pasa por clústeres con GPUs de centro de datos (A100, H100 o equivalentes) en configuración multi-nodo.
+- ¿Cabe en GPU de consumo? No es viable en GPUs de consumo (RTX 4090 y similares) con los formatos publicados; el volumen de pesos y la arquitectura MoE de 42 B activos no permiten un ajuste en VRAM de 24 GB.
+- Opciones de despliegue: transformers con código personalizado (`custom_code`) es la vía documentada por el autor. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible. Existe una plataforma API propia (Xiaomi MiMo API Platform) y un entorno de escritorio (Xiaomi MiMo Desktop).
+- Latencia y throughput: no disponibles. El modelo incorpora un decodificador especulativo MTP de 5 capas orientado a reducir latencia, pero no se publican métricas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento de referencia |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-RL | 1,02 B declarados / 524 B en safetensors, 42 B activos | 1M tokens | MIT | Pesos abiertos en Hugging Face | DeepSWE 71,9; Terminal Bench 2.1 89,9; CyberGym 94,0 |
-| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face | DeepSWE 67,9; Terminal Bench 2.1 87,6; CyberGym 95,1 |
-| MiMo-V2.5-Pro | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face | DeepSWE 19,0; Terminal Bench 2.1 65,2; CyberGym 40,0 |
-| Claude Opus 5 | no disponible | no disponible | Propietaria | API | DeepSWE 74,0; Terminal Bench 2.1 89,1; OSWorld 83,4 |
-| GPT-5.6 Sol | no disponible | no disponible | Propietaria | API | DeepSWE 73,0; Terminal Bench 2.1 88,8; OSWorld 83,0 |
-
-No se dispone de datos comparativos de contexto, licencia o arquitectura de las alternativas propietarias en la informacion proporcionada.
+| MiMo-V2.6-Pro-RL | 1,02 T totales / 42 B activos | 1M | MIT | Hugging Face, ModelScope, API propia | Multimodal nativo (texto, imagen, vídeo, audio) |
+| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | Hugging Face, ModelScope | Variante menor de la misma serie; rinde por debajo en la mayoría de benchmarks |
+| Claude Opus 5 | no disponible | no disponible | propietaria | API comercial | Superior en DeepSWE, ProgramBench, Toolathlon y Terminal Bench 4.0 según la tabla del autor |
+| GPT-5.6 Sol | no disponible | no disponible | propietaria | API comercial | Rendimiento cercano en Agent's Last Exam y OSWorld; inferior en JobBench |
+| Claude Fable 5 | no disponible | no disponible | propietaria | API comercial | Superior en OSWorld-Verified y ProgramBench; inferior en Terminal Bench 2.1 |
 
 ## Limitaciones y advertencias
 
-- Discrepancia de parametros: la model card declara 1,02 B totales y 42 B activos, mientras que safetensors reporta 524.121.348.864 parametros. Hay que verificar cual corresponde al checkpoint publicado antes de planificar hardware.
-- Idiomas: solo ingles y chino estan declarados. No hay evidencia de rendimiento en castellano ni en otros idiomas.
-- Riesgo de alucinacion: no se publican tasas de alucinacion ni evaluaciones de veracidad en la informacion disponible.
-- Reward hacking: la propia model card reconoce que el RL con recompensas sinteticas es vulnerable y describe mitigaciones (endurecimiento del entorno, cribado adversarial y verificacion cruzada), lo que indica que el riesgo persiste.
-- Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o seguridad en la informacion disponible.
-- Licencia MIT: permite uso comercial y modificacion, pero el modelo se distribuye con `custom_code`, por lo que la revision del codigo remoto es responsabilidad del usuario.
-- Coste de despliegue: 573,5 GB de repositorio y cientos de GB de memoria en cuantizacion hacen inviable el uso en hardware de consumo y encarecen la inferencia propia.
-- Cobertura de benchmarks incompleta: no hay resultados de MMLU, GSM8K, HumanEval ni de tareas de vision o audio pese a ser un modelo omnimodal; los datos publicados se concentran en agentes, codigo y ciberseguridad.
-- Madurez: el modelo tiene 20 likes y 0 descargas en el momento de la consulta, con fecha de creacion 2026-09-21, por lo que la validacion independiente de la comunidad es practicamente inexistente.
-- Resultados de ExploitGym truncados en la informacion disponible.
+- Idiomas: la model card solo declara inglés y chino; el rendimiento en castellano no está documentado y no debe asumirse.
+- Sesgos: no se publica información sobre sesgos evaluados ni sobre composición del corpus de entrenamiento, por lo que no es posible acotar riesgos de sesgo demográfico, cultural o lingüístico.
+- Alucinación: no se aportan tasas de alucinación ni evaluaciones de veracidad; el uso en producción requiere verificación externa, especialmente en dominios factuales.
+- Riesgo de reward hacking: el propio autor describe mecanismos de endurecimiento de entornos y verificación cruzada, lo que indica que el riesgo existe y se mitiga, no que se elimine.
+- Licencia MIT: permite uso comercial y modificación, pero no incluye garantías; conviene revisar las obligaciones de atribución y las licencias de componentes de terceros no detalladas.
+- Requisitos de despliegue: el tamaño (573,5 GB de repositorio) y la necesidad de código personalizado complican el autohospedaje; no hay confirmación de soporte en motores de inferencia habituales.
+- Contexto largo: aunque se declaran 1M tokens, no se publican evaluaciones específicas de degradación con la longitud, por lo que la calidad efectiva en contextos extremos no está cuantificada.
+- Datos incompletos: la tabla de benchmarks está truncada en la información disponible (CyberGym sin valores) y no se detallan cuantizaciones más allá de 8-bit y FP8.
+- Uso en ciberseguridad: las capacidades evaluadas en CyberGym aconsejan restringir el acceso y establecer controles de uso para evitar aplicaciones ofensivas.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
-- Informe tecnico: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf
+- ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Informe técnico: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf
 - Blog: https://mimo.xiaomi.com/mimo-v2-6
-- Plataforma API de Xiaomi MiMo: https://platform.xiaomimimo.com
+- Plataforma API: https://platform.xiaomimimo.com
 - Xiaomi MiMo Studio: https://aistudio.xiaomimimo.com
 - Xiaomi MiMo Desktop: https://mimo.xiaomimimo.com/desktop/
-- Modelo hermano MiMo-V2.6-Flash-RL: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Repositorio GitHub: https://github.com/XiaomiMiMo/MiMo
 - Discord: https://discord.gg/kKC2kNnQEX
 - Telegram: https://t.me/+3T-I0pekOVIyNDBl
 - Reddit: https://www.reddit.com/r/XiaomiMiMo_Official/
+- Modelo hermano (Flash): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL

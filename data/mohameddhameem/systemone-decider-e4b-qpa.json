@@ -9,14 +9,14 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "strands-decider",
   "languages": [
     "en"
   ],
   "tags": [
+    "strands-decider",
     "safetensors",
     "llm-routing",
-    "strands-decider",
     "lora",
     "en",
     "dataset:hotpotqa/hotpot_qa",

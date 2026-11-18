@@ -35,8 +35,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ute-httt-it3/xlm-roberta-ner-skill-level",
+  "renamed_at": "2026-11-18T05:54:55.084Z",
   "benchmarks": [],
   "sources": []
 }

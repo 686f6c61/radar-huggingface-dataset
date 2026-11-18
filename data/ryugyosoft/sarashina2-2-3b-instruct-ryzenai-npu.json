@@ -9,16 +9,16 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "onnxruntime-genai",
   "languages": [
     "ja",
     "en"
   ],
   "tags": [
+    "onnxruntime-genai",
     "onnx",
     "ryzen-ai",
     "npu",
-    "onnxruntime-genai",
     "amd",
     "japanese",
     "text-generation",

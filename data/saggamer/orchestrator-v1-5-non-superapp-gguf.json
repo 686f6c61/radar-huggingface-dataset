@@ -23,6 +23,8 @@
     "lm-studio",
     "text-generation",
     "en",
+    "base_model:saggamer/orchestrator-v1.5-non-superapp",
+    "base_model:quantized:saggamer/orchestrator-v1.5-non-superapp",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

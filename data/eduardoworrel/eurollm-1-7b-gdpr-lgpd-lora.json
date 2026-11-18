@@ -5,7 +5,7 @@
   "author": "eduardoworrel",
   "url": "https://huggingface.co/eduardoworrel/EuroLLM-1.7B-GDPR-LGPD-LoRA",
   "created_at": "2026-11-17T05:30:58.000Z",
-  "updated_at": "2026-11-17T06:09:27.000Z",
+  "updated_at": "2026-11-17T20:45:28.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

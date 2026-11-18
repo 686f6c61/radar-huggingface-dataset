@@ -1,105 +1,106 @@
 # canada-quant/glm-5.3-w4a16-mtp
 
 ## Resumen
+GLM-5.3-Flash W4A16 + MTP es una cuantización INT4 de solo pesos del modelo multimodal zai-org/GLM-5.3-Flash, publicada por canada-quant. No es un modelo nuevo: toda la capacidad procede del modelo base, y el trabajo del autor consiste en comprimir únicamente las 36.288 GEMM de expertos enrutados a INT4 (GPTQ simétrico, group-size 128), manteniendo en BF16 la atención, el router, los expertos compartidos, los embeddings, la torre de visión y la cabeza MTP de decodificación especulativa.
 
-GLM-5.3-Flash W4A16 MTP es una cuantización INT4 weight-only del modelo GLM-5.3-Flash de Zhipu AI (zai-org), publicada por Canada Quant Labs. El artefacto reduce el footprint de pesos de ~599 GiB en BF16 a 177,7 GiB (−70%), lo que permite servir el modelo en cuatro GPUs de datacenter (H100/H200) o en un par de DGX Spark con contexto completo de 1M tokens. No es un modelo nuevo: todas las capacidades proceden del modelo base, y la cuantización se limita a los GEMMs de los expertos enrutados, manteniendo atención, router, expertos compartidos, embeddings, torre de visión y el cabezal MTP en BF16.
+El resultado ocupa 177,7 GiB frente a los aproximadamente 599 GiB en BF16 (una reducción del 70%), lo que permite servir un modelo de casi 50.000 millones de parámetros con contexto de hasta 1.048.576 tokens en configuraciones de 2 GPU H200 o incluso en 2 nodos DGX Spark (GB10). Es relevante ahora porque demuestra que un modelo híbrido de atención lineal con ventana de 1M puede desplegarse en hardware de gama profesional y en equipos compactos, con recetas de vLLM validadas y cifras de throughput publicadas.
 
-El modelo base es un MoE multimodal (imagen-texto) con 49,9B parámetros totales, contexto nativo de 1.048.576 tokens y soporte para decodificación especulativa mediante un cabezal de predicción multi-token (MTP) conservado en BF16. La relevancia de esta cuantización radica en que permite ejecutar un modelo de esta escala con calidad cercana a FP8 en hardware significativamente más reducido, con mejoras de throughput de hasta +101% frente a la alternativa NVFP4 en configuraciones de 2× DGX Spark.
+La arquitectura es propietaria del modelo base (identificador glm5_next) e incorpora atención lineal híbrida, expertos enrutados y una cabeza MTP para decodificación especulativa. La licencia es MIT, lo que facilita el uso comercial, y el checkpoint está pensado para vLLM con soporte de tool calling y parser de razonamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts) con atención sparse, multimodal (imagen + texto) |
-| Parametros totales | 49.913.588.606 (~49,9B) |
+| Arquitectura | Transformer híbrido con atención lineal y expertos enrutados (glm5_next); incluye torre de visión y cabeza MTP |
+| Parametros totales | 49.913.588.606 (49,9 B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 1.048.576 tokens (1M) |
-| Tipos de cuantizacion | W4A16 (INT4 weight-only, GPTQ, simétrico, grupo-128) |
+| Longitud de contexto | 1.048.576 tokens (validado en 2× H200 y 2× DGX Spark); 262K–512K en configuraciones de 4/8 GPU x86 por límite de memoria KV |
+| Tipos de cuantizacion | W4A16 INT4 GPTQ simétrico, group-size 128, solo en GEMM de expertos enrutados; resto en BF16; formato compressed-tensors |
 | Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | safetensors (transformers) |
+| Formato de pesos | safetensors (compressed-tensors), librería transformers, servible con vLLM |
 
 ## Arquitectura y entrenamiento
+El modelo base es un transformer híbrido que combina atención lineal con atención completa y un bloque de expertos enrutados; el checkpoint cuantizado conserva en BF16 la atención, el router, los expertos compartidos, los embeddings, la torre de visión y la cabeza MTP. La cuantización afecta exclusivamente a las 36.288 GEMM de expertos enrutados, aplicando GPTQ simétrico con group-size 128 en formato compressed-tensors. El autor advierte que el modelo es una cuantización, no un modelo nuevo, y que la capacidad es íntegramente la del base.
 
-La cuantización W4A16 de Canada Quant Labs aplica GPTQ simétrico con grupo-128 únicamente a los 36.288 GEMMs de los expertos enrutados del MoE. El resto de componentes — atención, router, expertos compartidos, embeddings, torre de visión BF16 y el cabezal MTP (multi-token prediction) en BF16 — permanecen sin cuantizar, con los parámetros FP32 canónicos preservados. Esta estrategia mantiene la calidad en las partes sensibles del modelo mientras reduce el peso dominante (los expertos enrutados) a INT4.
-
-El cabezal MTP en BF16 permite decodificación especulativa con una tasa de aceptación del 52–55%, lo que se traduce en ganancias de throughput de hasta +14% frente a configuraciones NVFP4 con MTP N=5 en H100. El modelo base GLM-5.3-Flash es un MoE con atención sparse (DeepSeek Sparse Attention, según los tags del ecosistema) y capacidades multimodales, aunque no se dispone de información detallada sobre su entrenamiento (número de tokens, composición del dataset o uso de RLHF/DPO) en la documentación proporcionada.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base. La innovación técnica destacable del checkpoint es la preservación de la cabeza MTP en BF16 para decodificación especulativa, junto con el soporte de un drafter externo DFlash2-G (K=7) que eleva el throughput en configuraciones H100. La model card menciona además parches específicos para particionado de KV consciente del drafter y taps auxiliares EAGLE3.
 
 ## Capacidades
-
-- Generación de texto y razonamiento avanzado, con resultados de 85,0% en AIME 2026 (102/120) en configuraciones de máxima reflexión.
-- Comprensión de imágenes (pipeline image-text-to-text), con torre de visión BF16 sin cuantizar.
-- Razonamiento matemático: GSM8K 0,97, en paridad con el baseline FP8.
-- Decodificación especulativa mediante MTP (multi-token prediction) con cabezal BF16, acelerando la generación entre un 40–50% en flujo de un solo stream.
-- Contexto largo de 1M tokens, con soporte para prompts de 256K tokens y generación sostenida a ~31 tok/s en 2× DGX Spark.
-- Multilingüe: inglés y chino.
-- Compatible con vLLM y el stack DFlash2 para despliegue en hardware Blackwell y Hopper.
+- Generación de texto conversacional multi-turno con ventana de hasta 1.048.576 tokens.
+- Razonamiento matemático y científico: la model card reporta AIME 2025 0.8833, AIME 2026 85,0% y GPQA-Diamond 0.8586.
+- Resolución de problemas aritméticos: GSM8K 0.97.
+- Comprensión multimodal imagen-texto: pipeline image-text-to-text, con MMMU 0.747 y OCRBench 888.
+- Tool calling y function calling: la receta de servicio incluye `--tool-call-parser glm47 --enable-auto-tool-choice`.
+- Modo de razonamiento explícito: parser de razonamiento `glm45` en vLLM.
+- Decodificación especulativa mediante cabeza MTP y drafter DFlash2-G.
+- Capacidades multilingües limitadas a inglés y chino según los metadatos del modelo.
 
 ## Casos de uso
-
-- Razonamiento matemático y resolución de problemas complejos: con 85% en AIME 2026, el modelo puede emplearse en entornos de investigación que requieran razonamiento simbólico y verificación de demostraciones, aprovechando el presupuesto de 131K tokens de reflexión.
-- Análisis de documentos extensos: la ventana de 1M tokens permite procesar libros técnicos completos, expedientes legales o informes financieros de cientos de páginas en una sola pasada, sin necesidad de chunking ni RAG.
-- Asistentes multimodales en industrias reguladas: la combinación de visión y texto, junto con la licencia MIT, facilita su uso en sectores como legal, médico o financiero donde Canada Quant Labs orienta sus modelos, siempre que se validen los resultados.
-- Despliegue en estaciones de trabajo de gama alta: con 2× DGX Spark (128 GB UMA cada uno) se puede servir el modelo a contexto completo de 1M tokens, habilitando prototipado local sin depender de clústeres cloud.
-- Generación de código y asistencia a desarrolladores: aunque no se reportan benchmarks específicos de código, el modelo base GLM-5.3 es conversacional y multilingüe, apto para integración en IDEs y pipelines de CI/CD con tool calling.
-- Evaluación de cuantizaciones en producción: sirve como referencia para comparar el impacto de W4A16 frente a NVFP4 o FP8 en calidad y throughput, útil para equipos que deciden estrategias de despliegue eficiente.
+- Análisis de documentación técnica extensa: con 1M tokens de contexto en 2× H200 se puede ingerir un repositorio completo o varios manuales y formular preguntas cruzadas sin troceado, aprovechando la ventana completa validada.
+- Automatización de OCR y extracción estructurada: la torre de visión y la puntuación OCRBench 888 permiten procesar facturas, formularios e informes escaneados y devolver JSON estructurado.
+- Asistente de razonamiento matemático en entornos de investigación: los resultados en AIME y GPQA lo hacen adecuado para verificación de demostraciones y problemas de nivel competición, con modo de razonamiento activado.
+- Agentes con tool calling en pipelines de CI/CD: el soporte de `--tool-call-parser glm47` y `--enable-auto-tool-choice` permite integrarlo como planificador que invoca herramientas de build, test y despliegue en varios pasos.
+- Despliegue en hardware compacto: en 2× DGX Spark (GB10) alcanza 31–33 tok/s en streaming único a contexto corto con 262K por defecto y 800K validados, lo que habilita prototipos locales de un modelo de 1M de contexto.
+- Servicio de chat a escala media: en 4× H200 con TP=4 se pasa de 195 tok/s a concurrencia 1 hasta 1.954 tok/s a concurrencia 256, suficiente para una API interna con cientos de sesiones simultáneas.
+- Procesamiento batch de alto rendimiento: en 8× H100 con TP=8 sin especulación se alcanzan 2.418 tok/s agregados a concurrencia 256, útil para clasificación, resumen o extracción masiva de documentos.
 
 ## Benchmarks y rendimiento
 
-La model card reporta mediciones en stacks de serving reales, comparando contra la cuantización NVFP4 de LibertAIDAI. Resultados a 2026-09-02:
+| Benchmark | Resultado | Configuracion |
+|---|---|---|
+| AIME 2025 | 0.8833 (n=120) | H100 |
+| AIME 2026 | 85,0% (n=120) | 2× DGX Spark |
+| GPQA-Diamond | 0.8586 | no especificada |
+| GSM8K | 0.97 | no especificada |
+| MMMU | 0.747 | no especificada |
+| OCRBench | 888 | no especificada |
 
-| Benchmark | W4A16 MTP (este) | NVFP4 MTP | Delta |
-|---|---|---|---|
-| AIME 2026 (n=120, 2× DGX Spark) | 85,0% (102/120) | 90,0% (referencia externa) | −5,0 puntos |
-| GSM8K | 0,97 | — | paridad con FP8 |
-| Throughput H100 TP=4, c=1 (tok/s) | 183,89 | 180,96 | +1,6% |
-| Throughput H100 TP=4, c=8 (tok/s) | 249,94 | 251,14 | −0,5% |
-| Throughput H100 TP=4, c=32 (tok/s) | 1161,13 | 1018,13 | +14,0% |
-| Throughput 2× DGX Spark, seq1 @262K (tok/s) | 33,29 | 21,8 | +53% |
-| Throughput 2× DGX Spark, seq6 @262K (tok/s) | 121,81 | 60,5 | +101% |
-| MTP acceptance | 52–55% | ~52% (N=2) / ~30% (N=5) | — |
+| Throughput | Valor | Configuracion |
+|---|---|---|
+| Single-stream | 181,2 tok/s | 8× H100, TP8 + DFlash2-G K=7 |
+| Single-stream sin especulación | 135,4 tok/s | 8× H100, TP8 |
+| Agregado c256 | 2.418 tok/s | 8× H100, TP8 sin especulación |
+| Agregado c256 con MTP N=2 | 2.330 tok/s | 8× H100, TP8 |
+| Single-stream c1 con MTP N=2 | 215,0 tok/s | 8× H100, TP8 |
+| c1 a c256 | 195 → 1.954 tok/s | 4× H200, TP=4 |
+| Single-stream corto | ≈31–33 tok/s | 2× DGX Spark |
 
-En RTX PRO 6000 (TP=4), el rendimiento está en paridad con NVFP4 (±0,7%). El checkpoint NVFP4 de LibertAIDAI no pudo arrancar en 2× DGX Spark (OOM en 9/9 intentos), mientras que W4A16 sirve a 1M de contexto en esa configuración.
+No se han publicado comparaciones directas con modelos de la competencia en la información disponible.
 
 ## Requisitos de hardware
-
-- Peso del modelo: 177,7 GiB en W4A16 (frente a ~599 GiB en BF16).
-- 4× H100/H200 (80 GB, SM90) con TP=4: contexto 262K con KV en BF16, receta validada en benchmarks.
-- 2× H200 (141 GB, SM90) con TP=2: contexto ~64–128K con KV en FP8 (estimación por ajuste, no medida).
-- 4× RTX PRO 6000 (96 GB, SM120) con TP=4: contexto 262K con KV en FP8, validado.
-- 2× DGX Spark GB10 (128 GB UMA, SM121) con TP=2: contexto 1M con KV en FP8, usando el stack DFlash2.
-- 8× B300 (SM103): nodo de cuantización, probado con transformers.
-- Opciones de despliegue: vLLM (con `--gpu-memory-utilization` ajustable para KV pool), DFlash2 para DGX Spark, transformers para integración directa.
-- Latencia y throughput: en 2× DGX Spark, 30,85 tok/s de decodificación con un prompt de 256K tokens (TTFT 5,8 s); en H100 TP=4, hasta 1161 tok/s agregados con concurrencia 32.
+- Pesos cuantizados: 177,7 GiB en disco; en 2× H200 supone 89,5 GiB por GPU.
+- GPU validadas: NVIDIA H100, H200, RTX PRO 6000 (SM120) y DGX Spark GB10 (SM121). El autor menciona también Blackwell y Hopper en las etiquetas.
+- Consumer GPU: no se documenta funcionamiento en RTX 4090 ni en GPU de 24 GB; el tamaño de pesos lo impide en configuraciones de una sola tarjeta.
+- Despliegue: vLLM con imágenes específicas por arquitectura (`vllm/vllm-openai:glm53-flash-x86_64-cu130` para SM90, `cstechdev/vllm:glm53-flash-nope-sm120-cu130-20260826-r1` para SM120, `ghcr.io/canada-quant/vllm-glm53-flash-sm121:v2-w4a16-dflash2e` para SM121). No se menciona soporte de llama.cpp, Ollama ni TGI.
+- Restricciones operativas: `--max-num-seqs` debe ser ≤ 512 por los 512 bloques de caché de estado Mamba/KDA; con drafter, `--max-model-len` ≤ 131071; fp8 KV no está disponible en Hopper para este modelo NoPE; el arranque en frío del contenedor ronda los 12 minutos.
+- Latencia y throughput: ver tabla de benchmarks; el arranque de 8× H100 con drafter tarda aproximadamente 12 minutos en frío.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash W4A16 MTP (este) | 49,9B totales | 1M | W4A16 INT4 + MTP BF16 | MIT | Sirve en 4× H100 o 2× DGX Spark |
-| GLM-5.3-Flash NVFP4 (LibertAIDAI) | 49,9B totales | 1M (teórico) | NVFP4 | MIT | OOM en 2× DGX Spark; mejor AIME 2026 (90%) |
-| GLM-5.3-Flash BF16 (zai-org) | 49,9B totales | 1M | BF16 | MIT | Requiere 8× 80 GB; referencia de calidad |
-| GLM-5.2 W4A16 MTP (Canada Quant Labs) | 744B totales, ~40B activos | 1M | W4A16 + MTP BF16 | MIT | Modelo anterior, misma estrategia de cuantización |
-
-La comparativa directa con NVFP4 muestra que W4A16 gana en throughput en la mayoría de configuraciones y es la única opción viable en 2× DGX Spark a contexto completo, aunque NVFP4 mantiene una ventaja de 5 puntos en AIME 2026.
+| canada-quant/glm-5.3-w4a16-mtp | 49,9 B | 1.048.576 | MIT | safetensors INT4 + BF16 | Cuantización W4A16 con MTP; 177,7 GiB |
+| zai-org/GLM-5.3-Flash | no disponible | no disponible | no disponible | BF16 | Modelo base; aproximadamente 599 GiB en BF16 |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos de otros modelos comparables |
 
 ## Limitaciones y advertencias
-
-- Es una cuantización, no un modelo nuevo: todas las capacidades y limitaciones provienen del modelo base GLM-5.3-Flash.
-- Idiomas limitados a inglés y chino; no se garantiza calidad en otros idiomas.
-- La ventaja de throughput en H100 a c=32 requiere ajustar `--gpu-memory-utilization` a 0,92; sin ese ajuste, el rendimiento cae a 689 tok/s (inferior a NVFP4).
-- En RTX PRO 6000, AIME 2025 muestra un déficit de ~2σ frente a NVFP4, atribuido en ~63% a limitaciones de presupuesto de tokens y ~37% a diferencias numéricas de kernels.
-- El modelo base puede presentar sesgos y alucinaciones inherentes a los LLM; no se reportan evaluaciones de seguridad específicas.
-- El despliegue en 2× DGX Spark requiere el stack DFlash2, que no es estándar en vLLM; la configuración de KV pool es crítica para evitar OOM.
-- La licencia MIT permite uso comercial sin restricciones, pero el usuario es responsable del cumplimiento normativo en sectores regulados.
+- Solo soporta inglés y chino según los metadatos; el rendimiento en castellano no está documentado.
+- Riesgo de alucinación inherente al modelo base; no se han publicado evaluaciones de fidelidad factual específicas para esta cuantización.
+- La cuantización INT4 en expertos puede degradar ligeramente la calidad frente al BF16; el autor no publica una comparación directa de perplejidad o benchmarks contra el base.
+- Restricción operativa crítica: `--max-num-seqs` superior a 512 provoca fallo por límite de bloques de caché de estado.
+- Con drafter especulativo, prompts de prellenado de 131K tokens o más provocan fallos; sin especulación funcionan.
+- El backend de atención por defecto de vLLM nightly falla con prompts de 131K o más; hay que usar `--attention-backend FLASH_ATTN_MLA_SPARSE`.
+- Los `config.json` anteriores al 2026-09-08 fallan en vLLM con `KeyError: 'layers.0.mlp.gate_up_proj.weight'`; es necesario volver a descargarlo.
+- El caché de prefijos mide entre −2% y −5% en H200, por lo que se recomienda desactivarlo.
+- TP=4 con drafter DFlash2 más allá de concurrencia 32 reduce el pool KV unas 6 veces y provoca un acantilado de preempción y recomputación.
+- La licencia MIT permite uso comercial, pero conviene verificar las condiciones del modelo base y de los pesos derivados.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/canada-quant/glm-5.3-w4a16-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Perfil de Canada Quant Labs en Hugging Face: https://huggingface.co/canada-quant/models
-- GitHub de Canada Quant Labs: https://github.com/canada-quant
-- Página de modelos de Canada Quant Labs: https://cql.ca/models.html
-- Artículo sobre GLM-5.2 W4A16 MTP: https://cql.ca/news/glm-5-2-w4a16-mtp.html
-- Cuantización NVFP4 de referencia (LibertAIDAI): https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4
-- Receta EXL3 para 2× DGX Spark (MiaAI-Lab): https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks
+- Benchmarks completos: BENCHMARKS.md (referenciado en la model card del repositorio)
+- Repositorio de serving SM121: https://github.com/canada-quant/vllm-glm53-flash-sm121
+- Pull request de vLLM: https://github.com/vllm-project/vllm/pull/53906
+- Imagen H100 con drafter: ghcr.io/canada-quant/vllm-glm53-flash-h100:v2-w4a16-dflash2
+- Imagen SM121: ghcr.io/canada-quant/vllm-glm53-flash-sm121:v2-w4a16-dflash2e
+- Imagen SM120: cstechdev/vllm:glm53-flash-nope-sm120-cu130-20260826-r1

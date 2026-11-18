@@ -2,101 +2,111 @@
 
 ## Resumen
 
-Groot-65B-A6B-GyroM es una requantización del modelo Groot-65B-A6B-261023, publicado por BoxyFit el 3 de noviembre de 2026. Se trata de un modelo de lenguaje de arquitectura Mixture of Experts (MoE) derivado de Qwen/Qwen3.8-Flash-Next, con 256 expertos en lugar de los 512 originales y un camino activo por token de aproximadamente 6.000 millones de parámetros. El modelo completo declara 116.514.464.640 parámetros en safetensors, aunque el autor lo comercializa bajo la etiqueta "65B-A6B" (65.000 millones totales, 6.000 millones activos).
+Groot-65B-A6B — Gyro-M (TQ2_T) es una re-cuantización del modelo MoE Groot-65B-A6B-261023 publicada por BoxyFit. El pack re-codifica los expertos enrutados del modelo original a un formato propietario de cuantización por trellis (TQ2_T, 2,25 bpw) codificado desde el teacher oficial en FP8, y se distribuye junto con una tabla de lookup N-gram en Q5_0 y los tensores densos y embeddings copiados literalmente del GGUF oficial Q4_K_M. El objetivo declarado es reducir el espacio de VRAM necesario para servir el modelo en GPUs de consumo sin degradar la calidad de forma apreciable.
 
-La innovación principal de esta ficha no es el modelo base, sino el formato de cuantización: BoxyFit re-codifica los expertos enrutados con cuantización trellis TQ2_T (2,25 bits por peso) a partir del profesor FP8 oficial, mientras que el resto de tensores (tabla de búsqueda N-gram, pesos densos y embeddings) se copian byte a byte del GGUF Q4_K_M oficial. El resultado es un archivo de 54,5 GB que, según el autor, mantiene una calidad equivalente al Q4_K_M oficial en su conjunto de pruebas interno.
+El modelo base es un MoE de 116.514.464.640 parámetros totales (según safetensors) con 6B de parámetros activos por token, lo que lo sitúa en la categoría de modelos grandes con coste de inferencia reducido. El pack completo ocupa 54,5 GB en disco, pero el desglose es clave: el expool de expertos enrutados cuantizados suma 16,0 GB, la tabla de lookup 35,2 GB (que nunca se carga en VRAM) y los tensores densos y embeddings unos 1,5 GB. En una RTX 3090 con 24 GB, el modelo queda completamente residente en 20,2 GB y alcanza 120 t/s en decodificación en contexto caliente.
 
-La relevancia de esta publicación radica en su estrategia de despliegue: separa la tabla de búsqueda N-gram (35,2 GB) a RAM de host, dejando solo el pool de expertos (16 GB) y los pesos densos (~1,5 GB) en VRAM. Según las mediciones del autor, esto permite ejecutar el modelo con 20,2 GB de VRAM en una RTX 3090 a 68-124 tokens/s, y con degradación controlada en tarjetas de 12 y 16 GB. El modelo requiere el motor Strata (no es compatible con llama.cpp estándar) y se distribuye bajo licencia qwen-community-1.0.
+La relevancia actual del pack reside en su motor de inferencia, Strata, que implementa una caché de expertos guiada por el router (routing-aware) en lugar de una política reactiva como LRU. Esto permite que, incluso con una capa caliente reducida (por ejemplo, 2,9 GiB en una GPU de 8 GB), el modelo siga rindiendo decenas de t/s porque el fallo de caché solo implica una transferencia PCIe de ~1,3 MB por experto. La licencia declarada es qwen-community-1.0, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) derivada de Qwen3.8-Flash-Next; 256 expertos enrutados |
-| Parametros totales | 116.514.464.640 (según safetensors); etiquetado comercial como 65B |
-| Parametros activos | ~6B por token (10 expertos por token) |
-| Longitud de contexto | 32.768 tokens (configuración de ejemplo con `--max-context 32768`) |
-| Tipos de cuantizacion | TQ2_T (trellis, 2,25 bpw) para expertos enrutados; Q5_0 para tabla N-gram; Q4_K_M para pesos densos y embeddings |
+| Arquitectura | MoE (Mixture of Experts) sobre transformer; detalles de capas y atención no disponibles |
+| Parametros totales | 116.514.464.640 |
+| Parametros activos | ~6B (indicado en el nombre A6B) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | TQ2_T (2,25 bpw) para expertos enrutados; Q5_0 para tabla de lookup N-gram; Q4_K_M para tensores densos y embeddings |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 |
-| Formato de pesos | GGUF (tipo trellis TQ2_T, id 144); requiere motor Strata, no compatible con llama.cpp upstream |
+| Licencia | qwen-community-1.0 (license_name: other) |
+| Formato de pesos | Trellis (pack propietario de Strata); no es GGUF estándar ni safetensors puro |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer MoE con 256 expertos enrutados, derivado de Qwen3.8-Flash-Next mediante poda de la tabla completa de expertos (de 512 a 256) manteniendo el mismo camino activo por token (~6B parámetros). El modelo base Groot-65B-A6B-261023 fue desarrollado por GrootTeam; esta ficha es una re-codificación de sus pesos, no un entrenamiento nuevo.
+El modelo base Groot-65B-A6B-261023 es un transformer con arquitectura Mixture of Experts: 116.500 millones de parámetros totales y aproximadamente 6.000 millones activos por token, lo que implica un router que selecciona un subconjunto de expertos en cada paso. El pack Gyro-M no reentrena el modelo; re-codifica únicamente los pesos de los expertos enrutados desde el teacher oficial en FP8 a trellis TQ2_T (2,25 bits por peso), manteniendo intactos los tensores densos, embeddings y la tabla de lookup N-gram, que se copian literalmente del GGUF oficial Q4_K_M y Q5_0 respectivamente. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
-El proceso de cuantización de BoxyFit re-codifica únicamente los expertos enrutados a trellis TQ2_T (2,25 bpw) partiendo del profesor FP8 oficial, logrando una relación señal-error de 11,35 dB sobre tensores reales de expertos. El resto de componentes (tabla de búsqueda N-gram en Q5_0, pesos densos y embeddings en Q4_K_M) se copian literalmente del GGUF oficial, de modo que solo los expertos difieren del release original. No se dispone de información sobre el dataset de entrenamiento, número de tokens, ni si hubo RLHF o DPO en el modelo base.
-
-La innovación técnica destacable es la separación de la tabla de búsqueda N-gram (35,2 GB) a RAM de host, con solo un 16% de ella accedida en uso real según el autor. El motor Strata dimensiona automáticamente el "hot tier" de expertos según la VRAM libre, y soporta decodificación especulativa (`--spec 4`) y cuantización KV (`--kv k8v4`).
+La innovación técnica del pack no está en el modelo sino en el motor Strata: la caché de expertos predice a partir del router antes de que se produzca el fallo, con una tasa de acierto medida del 85,9 %, y pre-rellena desde un perfil aprendido. Esto contrasta con las políticas reactivas de llama.cpp (LRU y, desde noviembre de 2026, ClassLRU, un híbrido de recencia y frecuencia en 8 clases). El resultado medido es una diferencia de rendimiento de aproximadamente 1,7x en decodificación y más de 10x en prefill frente a llama.cpp con caché de expertos en una GPU de 16 GB, atribuible al motor y no a los bits.
 
 ## Capacidades
 
-- Generación de texto conversacional y de propósito general (pipeline `text-generation`, tag `conversational`).
-- Razonamiento, matemáticas, código y conocimiento: el autor reporta la misma puntuación (10/10) que el Q4_K_M oficial en su conjunto estándar de 10 preguntas que cubre estas áreas.
-- Compatibilidad con endpoints (`endpoints_compatible` según tags).
-- Capacidades multilingües: no disponibles (no se especifican idiomas).
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
+- Generación de texto conversacional y de base, según el pipeline declarado (text-generation) y la etiqueta conversational.
+- Razonamiento multi-paso y modo thinking: los benchmarks de HumanEval y MBPP se han medido con thinking activado, temperatura 0 y 0-shot.
+- Generación de código: los resultados de HumanEval pass@1 y MBPP pass@1 se reportan en la model card como validación de calidad tras la cuantización.
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible.
+- Capacidades de agente: no confirmadas explícitamente; el modelo base es un MoE grande con razonamiento, pero no hay documentación de agentes en el pack.
+- Capacidades multilingües: no disponibles; la model card no lista idiomas.
+- Capacidades de visión o audio: no disponibles; el pipeline es exclusivamente text-generation.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere integración con infraestructura de inferencia estándar, aunque el pack requiere el motor Strata para TQ2_T (id 144 no es un tipo upstream de llama.cpp).
 
 ## Casos de uso
 
-- Despliegue de un MoE de ~6B activos en una única GPU de consumo: con 20,2 GB de VRAM en una RTX 3090 o 4090 se obtiene el pool completo de expertos residente y 68-124 tokens/s, lo que permite servir el modelo en estaciones de trabajo sin clúster.
-- Inferencia en tarjetas de 12 GB (RTX 3060-12, Tesla P40): el motor dimensiona el hot tier a 6,0 GiB (39% del pool) con una tasa de acierto del 80-87% y tráfico PCIe casi nulo, manteniendo 62-95 tokens/s; adecuado para prototipado y desarrollo local.
-- Servicio de chat con contexto de 32K: la configuración de ejemplo fija `--max-context 32768`, suficiente para conversaciones multi-turno largas o análisis de documentos extensos en un solo paso.
-- Evaluación e investigación de cuantización trellis: el modelo sirve como banco de pruebas para comparar TQ2_T frente a Q4_K_M en el mismo hardware, dado que solo los expertos difieren entre ambas versiones.
-- Generación de código y razonamiento asistido en local: al mantener la calidad del Q4_K_M en pruebas de matemáticas, código y razonamiento, puede integrarse en asistentes de programación autoalojados donde la privacidad impide usar APIs.
-- Despliegue en entornos con RAM limitada y NVMe rápido: con 16 GB de RAM como mínimo práctico y 32 GB cómodos, el modelo es viable en servidores pequeños o mini-PC con almacenamiento NVMe, ya que la tabla N-gram se lee de forma dispersa.
+- Servicio de código en GPUs de consumo: con 120 t/s en una RTX 3090 y HumanEval/MBPP medidos en el pack, se puede desplegar un asistente de programación local con latencia interactiva sin depender de APIs en la nube. La caché routing-aware mantiene la tasa de acierto alta en cargas de código, que son más concentradas que un corpus amplio.
+- Despliegue en estaciones de trabajo con 16 GB de VRAM: en una V100-16, RX 6800 o RTX 4060 Ti 16 GB, el pack mantiene 80–95 t/s con una capa caliente del 65 % del expool y una tasa de acierto del 89–98 % en el bench de código. Es adecuado para entornos de desarrollo con presupuesto de hardware limitado.
+- Servidor de bajo coste con hardware de segunda mano: una Tesla V100-32 usada (~500 USD) ejecuta el pack completamente residente a 90 t/s con 12 GB de VRAM libres, lo que permite montar un servidor de inferencia Groot por una fracción del coste de una Blackwell de 72 GB.
+- Atención al cliente y chat multi-turno: la tabla de lookup N-gram de 35,2 GB se mantiene en RAM de host y solo se toca esporádicamente (5,7 GB medidos tras uso real), lo que permite conversaciones largas con KV cache caliente a 120–124 t/s en una RTX 3090. La memoria de 32 GB de sistema es suficiente.
+- Prototipado e investigación en cuantización: el pack sirve como referencia reproducible de cuantización trellis TQ2_T con teacher FP8, útil para estudiar el impacto de 2,25 bpw en calidad (HumanEval, MBPP) y para comparar motores de caché de expertos (Strata frente a llama.cpp con `--moe-cache-mib` y ClassLRU).
+- Evaluación comparativa de motores de inferencia: la model card incluye un contraste medido en la misma RTX 3090 entre este pack (120 t/s decode, 800 t/s prefill, 10/10 en QA) y el Q2_K estático de mradermacher con llama.cpp (3,8–4,5 t/s decode, 22,6 t/s prefill, 5/10 en QA a presupuesto corto), lo que lo convierte en un banco de pruebas para decisiones de stack.
+- Inferencia en GPUs de 8 GB con streaming por PCIe: en una RTX 3070 o RTX 2080 Super se mantienen 57–59 t/s con una capa caliente de 2,9 GiB (20 % del expool); la verificación en una RTX 2080 Ti real dio 36,7–41,7 t/s con 3,0 GiB libres, suficiente para asistentes locales de código en equipos modestos.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible; indica que las pruebas largas están en ejecución y se añadirán a la model card y al leaderboard de boxy.fit. Los únicos datos reportados son internos:
+| Benchmark | Este pack (TQ2_T, Strata) | Q2_K (llama.cpp, mismo 3090) |
+|---|---|---|
+| HumanEval pass@1 (0-shot, temp 0, thinking) | reportado en la model card, valor numérico no disponible en el extracto | no disponible |
+| MBPP pass@1 | reportado en la model card, valor numérico no disponible en el extracto | no disponible |
+| Decode (RTX 3090, fully resident) | 120 t/s (68–106 en contexto fresco, 120–124 con KV caliente) | 3,8–4,5 t/s |
+| Prefill (RTX 3090) | 800 t/s | 22,6 t/s |
+| QA gate (10 preguntas) | 10/10, respuestas directas, 0 eventos de degeneración | 5/10 a presupuesto corto; 9/10 con 400 tokens |
 
-| Metrica | Valor |
-|---|---|
-| Conjunto estándar interno (10 preguntas: matemáticas, código, razonamiento, conocimiento) | 10/10, igual que el Q4_K_M oficial en comparación lado a lado |
-| Calidad de codificación (señal-error) | 11,35 dB a 2,25 bpw sobre tensores reales de expertos |
-| Throughput en RTX 3090 (24 GB, hot tier completo) | 68-106 t/s contexto frío; 120-124 t/s con KV caliente |
-| Throughput en 16 GB (hot tier 10,1 GiB, 65%) | 80-95 t/s |
-| Throughput en 12 GB (hot tier 6,0 GiB, 39%) | 62-95 t/s |
-| Throughput en 8 GB (hot tier ~2,5 GiB) | no medido; se espera degradación notable |
+Rendimiento por GPU (decodificación, capa caliente del expool y tasa de acierto en bench de código):
+
+| GPU | Capa caliente | Decode t/s | Tasa de acierto |
+|---|---|---|---|
+| 24 GB (RTX 3090/4090/A5000) | 15,3 GiB (100 %) | 68–106 fresco / 120–124 KV caliente | 100 % |
+| 16 GB (V100-16, RX 6800, RTX 4060 Ti 16 GB) | 10,1 GiB (65 %) | 80–95 | 89–98 % |
+| 12 GB (RTX 3060 12 GB, RTX 3080 12 GB) | 6,0 GiB (39 %) | 62–95 | 80–87 % |
+| 11 GB (RTX 2080 Ti, medido) | ~5,2 GiB (32 %) | 42–48 | medido en tarjeta real |
+| 8 GB (RTX 3070, RTX 2080 Super, RX 7600) | 2,9 GiB (20 %) | 57–59 (emulado); 36,7–41,7 en 2080 Ti real | ~20 % caliente, fetch por PCIe |
+| Tesla V100-32 | 100 % residente | 90 | no disponible |
+
+Comparativa de motores en GPU de 16 GB con pack Flash-Next de 2 bits (third-party, local-llm-lab, 2026-10-16): llama.cpp con 8 GB de caché de expertos 49,4 t/s y prefill 206 t/s frente a Strata 85,8 t/s y prefill 2.320 t/s.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 20,2 GB en el caso totalmente residente (15,3 GiB de caché de expertos + ~5 GB de densos/KV/contexto), con 4 GB libres en una tarjeta de 24 GB.
-- GPU recomendadas: RTX 3090, RTX 4090, A5000 (24 GB) para el pool completo; V100-16 y 2080 SUPER (16 GB) con hot tier al 65%; RTX 3060-12 y Tesla P40 (12 GB) con hot tier al 39%.
-- Cabe en GPU de consumo: sí, desde 12 GB con degradación controlada; en 8 GB no se ha medido y se espera degradación notable.
-- RAM de sistema: 32 GB funciona; 16 GB es el mínimo práctico; la tabla N-gram de 35,2 GB no necesita estar residente (solo se toca un 16% en uso real). Se requiere NVMe rápido.
-- Opciones de despliegue: exclusivamente el motor Strata (>= 0.2.8 / engine 0.1.54, arquitectura CUDA 86+), con empaquetado previo mediante `tools/iq_pack.py --compat-bf16`. No es compatible con llama.cpp upstream, vLLM, TGI ni Ollama.
-- Latencia y throughput: 68-124 t/s en 24 GB, 80-95 t/s en 16 GB, 62-95 t/s en 12 GB (medidos en RTX 3090 con límite de caché para emular tarjetas menores).
+- VRAM estimada para inferencia: 20,2 GB en RTX 3090/4090 con el expool completamente residente (15,3 GiB de caché de expertos + ~5 GB de densos, KV y contexto); 4 GB de VRAM libres.
+- GPU recomendadas: RTX 3090, RTX 4090, A5000 (24 GB) para residencia completa; Tesla V100-32 para servidor de bajo coste con 90 t/s; V100-16, RX 6800, RTX 4060 Ti 16 GB para capa caliente del 65 %.
+- Cabe en GPU de consumo: sí, desde 8 GB (RTX 3070, RTX 2080 Super, RX 7600) con capa caliente del 20 % y 57–59 t/s; verificado en RTX 2080 Ti de 11 GB a 36,7–41,7 t/s.
+- RAM de sistema: 32 GB es suficiente; 16 GB es el mínimo práctico. La tabla de lookup de 35,2 GB no necesita estar residente: tras uso real solo se tocan 5,7 GB (16 %) y expulsarla de la caché de página no costó velocidad medible. Se requiere NVMe rápido.
+- Opciones de despliegue: motor Strata (obligatorio para TQ2_T, id 144 no es un tipo upstream). Para una ruta nativa de llama.cpp con este modelo base, el repositorio de mradermacher (GGUF Q2_K) es la alternativa; upstream llama.cpp incorporó caché de expertos el 2026-10-07 (`--moe-cache-mib`) y ClassLRU el 2026-11-06, pero no soporta TQ2_T.
+- Latencia y throughput: 120 t/s decode y 800 t/s prefill en RTX 3090 completamente residente; 90 t/s en V100-32; 80–95 t/s en 16 GB; 62–95 t/s en 12 GB; 57–59 t/s en 8 GB (emulado) y 36,7–41,7 t/s en 2080 Ti real.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Cuantizacion | Licencia | Motor |
-|---|---|---|---|---|---|---|
-| Groot-65B-A6B-GyroM (esta ficha) | 116,5B (etiquetado 65B) | ~6B | 32.768 | TQ2_T trellis + Q5_0 + Q4_K_M | qwen-community-1.0 | Strata |
-| Groot-65B-A6B-261023 (oficial Q4_K_M) | 65B | ~6B | no disponible | Q4_K_M | qwen-community-1.0 | llama.cpp / GGUF estándar |
-| Qwen3.8-Flash-Next (modelo raíz) | no disponible | no disponible | no disponible | FP8 y otras | qwen-community-1.0 | no disponible |
+| Modelo | Parámetros | Contexto | Cuantización / formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Groot-65B-A6B Gyro-M (este pack) | 116,5B totales / ~6B activos | no disponible | TQ2_T 2,25 bpw, motor Strata | qwen-community-1.0 | Hugging Face (BoxyFit) |
+| Groot-65B-A6B-261023 (base oficial) | 116,5B totales / ~6B activos | no disponible | FP8, GGUF oficial | no disponible | Hugging Face (GrootTeam) |
+| Groot-65B-A6B-261023-GGUF (mradermacher) | 116,5B totales / ~6B activos | no disponible | GGUF Q2_K (~2,6 bpw) | no disponible | Hugging Face (mradermacher) |
+| Groot-65B-A6B-261023-VAL-1.25M-I-Matrix-GGUF (IsValorum) | 116,5B totales / ~6B activos | no disponible | GGUF (I-Matrix) | no disponible | Hugging Face (IsValorum) |
 
-La comparación relevante es frente al GGUF Q4_K_M oficial del mismo modelo base: GyroM reduce el pool de expertos de forma que cabe residente en 24 GB (frente al streaming a 4 bits), mantiene la misma puntuación en el conjunto interno de 10 preguntas, pero exige el motor Strata y no funciona en el ecosistema llama.cpp estándar.
+En la comparativa medida en la misma RTX 3090, este pack supera al Q2_K de mradermacher en decodificación (120 frente a 3,8–4,5 t/s), prefill (800 frente a 22,6 t/s) y calidad en QA corto (10/10 frente a 5/10), con un tamaño de fichero casi idéntico (54,5 frente a 56,3 GB). La diferencia se atribuye al motor Strata y a la codificación trellis, no al número de bits.
 
 ## Limitaciones y advertencias
 
-- Requiere el motor Strata: upstream llama.cpp no puede cargar el tipo trellis TQ2_T (id 144); esto limita la portabilidad y la integración con herramientas estándar.
-- La cuantización a 2,25 bpw introduce pérdida de calidad no caracterizada con benchmarks públicos; la equivalencia con Q4_K_M se basa en un conjunto interno de solo 10 preguntas.
-- El rendimiento en tarjetas de 8 GB no se ha medido y el autor anticipa degradación notable.
-- Dependencia de NVMe rápido y de al menos 16 GB de RAM; con menos, el acceso disperso a la tabla N-gram puede degradar la latencia.
-- Idiomas soportados no especificados; no hay garantías documentadas sobre cobertura multilingüe.
-- No se documentan capacidades de tool calling, agentes ni modo thinking, pese a que el modelo raíz podría soportarlas.
-- Licencia qwen-community-1.0: es una licencia comunitaria con posibles restricciones de uso comercial; debe revisarse el texto antes de un despliegue en producción.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible; aplican los del modelo base Groot-65B-A6B y, en última instancia, los de Qwen3.8-Flash-Next.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema y validación externa inexistentes.
+- Licencia qwen-community-1.0: es una licencia "other" con términos específicos de la comunidad Qwen; es imprescindible revisar el enlace de licencia antes de cualquier uso comercial, ya que puede imponer restricciones de atribución o de uso.
+- Dependencia del motor Strata: TQ2_T (id 144) no es un tipo upstream de llama.cpp, por lo que el pack no se puede cargar con llama.cpp, Ollama, vLLM ni TGI estándar. Requiere el motor Strata y su build correspondiente (CUDA 12 para Volta; CUDA 13 eliminó soporte de Volta).
+- Riesgo de alucinación: no se han publicado evaluaciones de factualidad ni de sesgos en la información disponible; el modelo base es un MoE grande de propósito general y los benchmarks reportados se limitan a código (HumanEval, MBPP).
+- Idiomas: no disponibles; no se puede confirmar el soporte multilingüe ni el rendimiento en castellano.
+- Contexto: la longitud de contexto no está documentada en el pack; el rendimiento en contexto fresco (68–106 t/s) es inferior al de KV caliente (120–124 t/s), lo que sugiere que las cargas de contexto muy largo pueden degradar el throughput.
+- Degradación por tasa de acierto: en cargas amplias (corpus de 1,25M tokens), una capa caliente del 65 % cubre ~84 % de activaciones y una del 39 % cubre ~63 %, por debajo de las tasas medidas en bench de código; el rendimiento en 8–12 GB depende del patrón de enrutamiento de la carga real.
+- Requisito de NVMe: la parte fría de la tabla de lookup vive en NVMe y se lee de forma dispersa; un disco lento puede penalizar la latencia aunque la VRAM sea suficiente.
+- Trazabilidad de benchmarks: los valores numéricos de HumanEval y MBPP se reportan en la model card pero no están completos en el extracto disponible; no se deben citar cifras concretas de calidad sin consultar la card original.
+- Fecha del pack: publicado el 2026-11-03 y actualizado el 2026-11-17; las comparativas con llama.cpp reflejan el estado de esas fechas y pueden quedar obsoletas con nuevas versiones del motor.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/BoxyFit/Groot-65B-A6B-GyroM
+- Pack en Hugging Face: https://huggingface.co/BoxyFit/Groot-65B-A6B-GyroM
 - Modelo base: https://huggingface.co/GrootTeam/Groot-65B-A6B-261023
-- Linaje arquitectónico: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- GGUF de mradermacher (ruta llama.cpp nativa): https://huggingface.co/mradermacher/Groot-65B-A6B-261023-GGUF
+- Datos de cobertura de enrutamiento (IsValorum): https://huggingface.co/IsValorum/Groot-65B-A6B-261023-VAL-1.25M-I-Matrix-GGUF
 - Licencia qwen-community-1.0: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
-- Motor Strata: https://github.com/Niko1221/Strata
-- Leaderboard del autor: https://boxy.fit

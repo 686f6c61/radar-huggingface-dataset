@@ -2,65 +2,58 @@
 
 ## Resumen
 
-Intern-Decision-4B es un modelo multimodal de decisión estructurada desarrollado por InternLM (Shanghai AI Laboratory) y publicado en Hugging Face bajo licencia Apache 2.0. Se obtiene por ajuste fino supervisado de Qwen3.5-4B, con 4.539.265.536 parámetros totales y un repositorio de 9,1 GB en formato safetensors. Su particularidad es que no genera texto libre: recibe un estado compartido, un esquema de preguntas con nombre y, opcionalmente, imágenes, y devuelve en una única pasada forward una distribución de probabilidad sobre las opciones de cada pregunta.
+Intern-Decision-4B es un modelo multimodal de predicción estructurada desarrollado por InternLM, obtenido mediante ajuste fino supervisado de Qwen3.5-4B. A diferencia de un modelo generativo convencional, no produce texto libre: recibe un estado compartido (por ejemplo, el texto de una incidencia de soporte), un esquema de preguntas con nombre y, opcionalmente, imágenes, y devuelve en una sola pasada forward una distribución de probabilidad sobre las opciones de cada pregunta. El modelo resuelve el problema de tomar decisiones tipadas y calibradas dentro de pipelines, donde se necesita una salida JSON determinista y con confianza cuantificada en lugar de una respuesta conversacional.
 
-El modelo resuelve un problema muy concreto en pipelines de agentes y sistemas de decisión: la necesidad de obtener salidas tipadas (elección múltiple, escala de puntuación y respuesta sí/no/desconocido) con probabilidades calibradas, en lugar de texto parseable. Para ello mapea cada opción a un símbolo de un solo token (A-Z, a-z, 0-9), construye un esqueleto JSON con marcadores `<decision>` y lee los logits en la posición inmediatamente anterior a cada marcador aplicando un softmax restringido a los candidatos válidos de ese campo.
+Con 4.539.265.536 parámetros y un repositorio de 9,1 GB en safetensors, se distribuye bajo licencia Apache 2.0 y se apoya en el ecosistema transformers. Su relevancia actual radica en que aborda dos carencias típicas de los LLM en producción: la falta de calibración probabilística y la dificultad de forzar salidas estructuradas sin post-procesado frágil. El modelo aplica una temperatura de calibración fijada en T=1,992418 y una cabeza de decisión que puntúa únicamente los símbolos candidatos permitidos por campo.
 
-Es relevante ahora porque cubre un hueco poco atendido: la evaluación de decisiones bajo incertidumbre con métricas de calibración (Brier y ECE) y latencias de decenas de milisegundos. En la familia publicada conviven tres tamaños (0.8B, 2B y 4B), y el 4B alcanza una media de 90,02 en el conjunto de benchmarks del autor, con un Brier de 0,347 y un ECE de 0,065.
+La familia incluye variantes de 0,8B y 2B además de esta de 4B, lo que permite ajustar latencia y coste según el caso de uso. La información disponible no detalla la longitud de contexto ni los idiomas soportados, más allá de heredar las capacidades del modelo base Qwen3.5-4B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal multimodal (image-text-to-text), ajustado desde Qwen3.5-4B; detalles internos de la arquitectura base no disponibles |
-| Parametros totales | 4.539.265.536 (4,54B) |
-| Parametros activos | No aplica (no es MoE; el autor no indica lo contrario) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (el repositorio solo publica pesos en safetensors) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer multimodal derivada de Qwen3.5-4B, con cabeza de decisión de puntuación de candidatos en una sola pasada causal |
+| Parametros totales | 4.539.265.536 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el repositorio publica safetensors en precisión completa) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (libreria transformers) |
-| Tamano del repositorio | 9,1 GB |
-| Modelo base | Qwen/Qwen3.5-4B |
-| Pipeline declarado | image-text-to-text |
-| Descargas / likes | 0 descargas / 16 likes |
-| Fecha de creacion | 26 de septiembre de 2026 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información pública no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. Lo que sí se documenta es la naturaleza del ajuste: el modelo parte de Qwen3.5-4B y se especializa en un objetivo de decisión con enmascaramiento del siguiente token (*masked-next-token decision objective*). La inferencia no invoca `generate()` ni muestrea texto libre; se ejecuta una única pasada causal de Hugging Face y se leen los logits en la posición inmediatamente anterior a cada marcador `<decision>` del esqueleto JSON del asistente.
+El modelo parte de Qwen3.5-4B, un transformer causal multimodal (entrada image-text-to-text), y se ajusta con un objetivo de decisión de siguiente token enmascarado. En lugar de generar la respuesta, el motor de inferencia construye un esqueleto JSON del asistente con un marcador `<decision>` por cada campo solicitado, ejecuta una única pasada forward y lee los logits en la posición inmediatamente anterior a cada marcador. Después aplica softmax restringido a los símbolos candidatos de ese campo (mapeados a `A`–`Z`, `a`–`z`, `0`–`9`) y una calibración de probabilidad propia del checkpoint. La temperatura de calibración publicada para la variante de 4B es T=1,992418.
 
-Sobre esos logits se aplica un softmax restringido únicamente a los símbolos candidatos permitidos para cada campo y, después, una calibración de temperatura específica del checkpoint. Para el modelo de 4B, el autor indica un valor ajustado de T = 1,992418. El procedimiento exige preservar el orden de preguntas y opciones, mapear las opciones a símbolos de un solo token, respetar la plantilla de chat del checkpoint y mantener el bloque de pensamiento vacío. Una misma petición puede contener varios campos y se resuelven todos en la misma pasada forward, sin insertar respuestas de referencia en el prompt.
+El ajuste fino cubre tareas heterogéneas de decisión: elección entre opciones, puntuaciones ordinales, preguntas booleanas (noul) y predicción tipada, según se desprende de los conjuntos de evaluación empleados (Jevbench en sus variantes Easy, Original y Hard, Typed Decision, ToolACE, AG News y WildJailBreak). La model card no especifica el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO; estos datos figuran como no disponibles. La innovación principal es el propio mecanismo de decisión: sustituye la generación autoregresiva por una puntuación estructurada de candidatos, lo que permite obtener distribuciones completas por campo en una sola pasada y sin muestreo.
 
 ## Capacidades
 
-- Predicción estructurada de decisiones: devuelve una distribución de probabilidad por cada pregunta del esquema, no una única etiqueta.
-- Tipos de pregunta soportados: `choice` (elección entre criterios), `score` (escala ordenada) y `noul` (sí/no/desconocido), según el ejemplo de la model card.
-- Procesamiento multimodal: acepta imágenes opcionales junto al estado textual y al esquema de preguntas.
-- Capacidad multirrespuesta: múltiples campos resueltos en una sola pasada forward, sin llamadas adicionales al modelo.
-- Salida serializable en JSON tipado, con los valores originales de las opciones recuperados a partir de los símbolos.
-- Capacidades conversacionales heredadas de Qwen3.5-4B, aunque la API publicada no las expone: el motor solo puntúa candidatos.
-- Selección de herramientas: el benchmark ToolACE (96,45 en el modelo de 4B) evalúa decisiones de invocación de herramientas.
-- Clasificación temática (AG News, 90,82) y evaluación de seguridad (WildJailBreak, 89,86).
-- Calibración de probabilidades ajustable por temperatura, con métricas de Brier y ECE publicadas.
-- No soporta de forma nativa tool calling ni agentes multi-paso en el sentido conversacional: la integración con agentes es externa, consumiendo las respuestas tipadas.
+- Predicción estructurada multi-campo: resuelve varias preguntas con nombre en una sola pasada forward, devolviendo una distribución de probabilidad por campo.
+- Tipos de pregunta soportados: elección entre opciones (`choice`), puntuación ordinal (`score`) y booleana (`noul`), con salida JSON tipada.
+- Entrada multimodal: acepta imágenes opcionales junto al estado textual para condicionar la decisión.
+- Calibración probabilística: aplica temperatura ajustada (T=1,992418) y ofrece métricas de Brier y ECE en la model card.
+- Salida compatible con Jev: la respuesta es serializable en JSON y sigue el formato de ese estándar de decisión.
+- No realiza generación de texto libre ni llama a `generate()`; no es un modelo conversacional ni de razonamiento abierto.
+- Tool calling y function calling: no se documenta soporte explícito más allá del benchmark ToolACE, que evalúa decisión sobre herramientas, no invocación generativa.
+- Soporte de agentes multi-paso: no disponible como capacidad nativa; el modelo resuelve una decisión por petición.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: el propio ejemplo de la model card muestra cómo decidir a qué equipo (facturación, envíos) corresponde una incidencia y con qué urgencia. Es adecuado porque devuelve una distribución calibrada por campo, lo que permite fijar umbrales de derivación a humano cuando la confianza es baja.
-- Priorización y triaje con escala de puntuación: el tipo `score` permite mapear criterios ordenados (bajo, medio, alto) y obtener la probabilidad de cada nivel en una sola llamada, útil en sistemas de colas con SLA.
-- Selección de herramientas en pipelines de agentes: con 96,45 en ToolACE, puede actuar como enrutador que decide qué función invocar antes de que un LLM generativo redacte la respuesta, reduciendo coste y latencia al no generar texto.
-- Moderación y evaluación de seguridad: con 89,86 en WildJailBreak, puede clasificar si una entrada debe bloquearse, derivarse a revisión o procesarse, con probabilidades que permiten auditar falsos negativos.
-- Clasificación documental y de noticias: 90,82 en AG News lo hace utilizable en categorización de contenidos a escala, con la ventaja de resolver lotes de campos en una sola pasada.
-- Decisión multimodal con imágenes: al aceptar entradas de imagen y texto, puede valorar incidencias con capturas (por ejemplo, pantallazos de error o fotos de producto dañado) y devolver campos tipados de categoría y gravedad.
-- Análisis de encuestas y estimación de distribuciones: el piloto de calibración con distribuciones de referencia exactas (Brier 0,550 y ECE 0,089 tras calibración) apunta a su uso en estudios donde interesa la distribución agregada, no la etiqueta mayoritaria.
-- Inferencia de alta frecuencia: con latencias medias de 44,16 ms en una RTX 4090, encaja en servicios que necesitan decenas de decisiones por segundo, como moderación en tiempo real o scoring de eventos.
+- Triaje de tickets de soporte: el modelo recibe el texto de la incidencia y un esquema con campos como equipo responsable, urgencia y si se solicita reembolso; devuelve la distribución sobre cada opción en una sola pasada, lo que permite enrutar con umbrales de confianza y derivar a revisión humana los casos con ECE alto.
+- Moderación y clasificación de contenido: con campos booleanos y de elección, se puede evaluar si un texto o imagen incumple políticas concretas y obtener la probabilidad de cada categoría, útil para priorizar colas de revisión.
+- Enrutamiento de herramientas en agentes: el benchmark ToolACE sugiere su uso para decidir qué herramienta o acción corresponde a una consulta, alimentando un orquestador que ejecuta la acción fuera del modelo.
+- Clasificación de noticias y documentos: con AG News como referencia, el modelo puede etiquetar documentos en categorías predefinidas manteniendo la confianza por clase, lo que facilita el filtrado selectivo.
+- Evaluación de riesgo en cumplimiento: preguntas booleanas sobre presencia de datos personales, contenido sensible o incumplimientos, con distribución calibrada para auditoría y trazabilidad.
+- Decisión multimodal en inspección: al aceptar imágenes, puede combinarlas con el estado textual para decidir categorías en control de calidad o verificación documental, siempre que el esquema de preguntas esté bien definido.
+- Puntuación de probabilidad en encuestas y estudios: la calibración conocida (Brier 0,347 y ECE 0,065 en la evaluación principal) permite usar las salidas como estimaciones probabilísticas en lugar de etiquetas duras.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor (todos los valores, salvo Brier y ECE, más altos es mejor):
+Resultados publicados en la model card (porcentajes de acierto salvo Brier y ECE, donde menor es mejor):
 
-| Modelo | Jevbench-Easy | Jevbench-Original | Jevbench-Hard | Typed Decision | ToolACE | AG News | WildJailBreak | Media | Brier ↓ | ECE ↓ |
+| Modelo | Jevbench-Easy | Jevbench-Original | Jevbench-Hard | Typed Decision | ToolACE | AG News | WildJailBreak | Media | Brier | ECE |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Jev | 100,00 | 98,61 | 72,07 | 73,35 | 91,29 | 89,57 | 96,29 | 88,74 | 0,358 | 0,095 |
 | Laya | 95,83 | 72,22 | 28,83 | 35,95 | 63,87 | 92,84 | 14,84 | 57,77 | 0,804 | 0,246 |
@@ -80,9 +73,9 @@ Latencia por consulta medida en una única RTX 4090 con la ruta de inferencia HF
 | Intern-Decision-2B | 33,28 ms | 33,15 ms | 33,55 ms |
 | Intern-Decision-4B | 44,16 ms | 44,03 ms | 44,60 ms |
 
-Piloto de calibración sobre distribuciones conocidas (96 casos, referencia exacta, menor es mejor; el modelo de 4B usó T = 1,992418 y el piloto no se empleó para ajustar la temperatura publicada):
+Piloto de calibración con distribución conocida (96 casos, Brier / ECE, menor es mejor):
 
-| Categoria | 4B antes | 4B despues | Jev |
+| Categoría | 4B antes | 4B después | Jev |
 |---|---:|---:|---:|
 | Aleatoriedad directa y soporte | 0,483 / 0,181 | 0,421 / 0,129 | 0,490 / 0,216 |
 | Eventos compuestos y mezclas | 0,677 / 0,254 | 0,577 / 0,150 | 0,682 / 0,274 |
@@ -90,52 +83,47 @@ Piloto de calibración sobre distribuciones conocidas (96 casos, referencia exac
 | Evidencia diaria y sesgo de observación | 0,701 / 0,328 | 0,575 / 0,210 | 0,603 / 0,114 |
 | Divulgación selectiva y puzles de probabilidad | 0,540 / 0,119 | 0,510 / 0,049 | 0,483 / 0,138 |
 | Procesos secuenciales y combinatorios | 0,656 / 0,180 | 0,605 / 0,058 | 0,657 / 0,116 |
-| Global (Brier / ECE) | 0,628 / 0,213 | 0,550 / 0,089 | 0,595 / 0,130 |
+| Total (Brier / ECE) | 0,628 / 0,213 | 0,550 / 0,089 | 0,595 / 0,130 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: en torno a 10-11 GB, partiendo de los 9,1 GB de pesos safetensors más activaciones y caché KV (estimación derivada del número de parámetros, no publicada por el autor).
-- VRAM estimada en cuantizaciones de 8 y 4 bits: aproximadamente 5-6 GB y 3-4 GB respectivamente, siempre que se generen cuantizaciones propias, ya que el repositorio no las publica.
-- GPU recomendadas: RTX 4090 para despliegue de baja latencia (el autor mide 44,16 ms de media por consulta); A100 o H100 para servir múltiples peticiones concurrentes.
-- Cabe en GPU de consumo: sí en BF16 en tarjetas con 12 GB o más (RTX 3060 12GB, RTX 4070, RTX 4080, RTX 4090); con cuantización de 4 bits cabría en tarjetas de 6-8 GB, aunque no hay artefactos oficiales.
-- Opciones de despliegue: el backend implementado y por defecto es `hf` (transformers) mediante la clase `DecisionEngine`; el autor no documenta soporte para vLLM, TGI, llama.cpp ni Ollama. La etiqueta `endpoints_compatible` aparece en Hugging Face, pero no se detalla en la model card.
-- Entorno: Python 3.12 o superior, instalación de `requirements.txt` en un entorno PyTorch/CUDA. El motor se carga una vez (`DecisionEngine(device="cuda")`) y se reutiliza entre peticiones.
-- Latencia y throughput: 44,16 ms de media, 44,03 ms de mediana y 44,60 ms de P95 por consulta en una RTX 4090. No se publica throughput agregado ni comportamiento con batching concurrente.
-- Al no usar `generate()`, el consumo de memoria y el tiempo son predecibles: una única pasada forward independientemente del número de campos de la petición.
+- VRAM estimada para inferencia: con pesos en safetensors de 4,54B parámetros, en fp16 se necesitan aproximadamente 9 GB solo para pesos, más overhead de activaciones y del motor de inferencia; en bf16 el requisito es similar.
+- GPU recomendadas: una RTX 4090 es suficiente para la ruta de inferencia HF local, según las mediciones de latencia publicadas. Para mayor concurrencia, A100 o H100 permiten servir varias peticiones en paralelo.
+- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más de VRAM en fp16; en cuantizaciones de 8 bits o 4 bits cabría en GPUs de 8 GB, aunque la model card no publica pesos cuantizados.
+- Opciones de despliegue: el backend implementado es `backend="hf"` (transformers). No se documentan backends vLLM, llama.cpp, Ollama ni TGI; el modelo no usa `generate()`, por lo que los servidores de inferencia generativa estándar no son aplicables directamente.
+- Latencia y throughput: 44,16 ms de media (P50 44,03 ms, P95 44,60 ms) por consulta en una RTX 4090 con la ruta HF local. El motor `DecisionEngine` está pensado para cargarse una vez y reutilizarse entre peticiones.
+- Requisitos de software: Python 3.12 o superior, PyTorch con CUDA y las dependencias de `requirements.txt` del repositorio.
 
 ## Comparativa con modelos similares
 
-Comparación con las alternativas de la misma familia y con el modelo de referencia Jev, a partir de los datos publicados:
+| Modelo | Parámetros | Contexto | Media en benchmarks | Brier | ECE | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---:|---|---|
+| Intern-Decision-4B | 4,54B | no disponible | 90,02 | 0,347 | 0,065 | Apache 2.0 | Hugging Face, GitHub, demo |
+| Intern-Decision-2B | no disponible | no disponible | 84,68 | 0,437 | 0,100 | Apache 2.0 | Hugging Face (colección Intern-Decision) |
+| Intern-Decision-0.8B | no disponible | no disponible | 79,38 | 0,530 | 0,066 | Apache 2.0 | Hugging Face (colección Intern-Decision) |
+| Jev | no disponible | no disponible | 88,74 | 0,358 | 0,095 | no disponible | Referencia comparativa en la model card |
+| JevK5 | no disponible | no disponible | 85,16 | 0,366 | 0,047 | no disponible | Referencia comparativa en la model card |
 
-| Modelo | Parametros | Media en benchmarks | Brier ↓ | ECE ↓ | Latencia media (RTX 4090) | Licencia |
-|---|---|---:|---:|---:|---:|---|
-| Intern-Decision-4B | 4,54B | 90,02 | 0,347 | 0,065 | 44,16 ms | Apache 2.0 |
-| Intern-Decision-2B | No disponible (el nombre sugiere ~2B) | 84,68 | 0,437 | 0,100 | 33,28 ms | No disponible |
-| Intern-Decision-0.8B | No disponible (el nombre sugiere ~0,8B) | 79,38 | 0,530 | 0,066 | 33,98 ms | No disponible |
-| Jev | No disponible | 88,74 | 0,358 | 0,095 | 109,70 ms | No disponible |
-| Laya | No disponible | 57,77 | 0,804 | 0,246 | No disponible | No disponible |
-
-Frente a Jev, el modelo de 4B mejora la media (90,02 frente a 88,74), mejora el Brier (0,347 frente a 0,358), mejora el ECE (0,065 frente a 0,095) y es aproximadamente 2,5 veces más rápido en la misma GPU. Su punto débil relativo es WildJailBreak (89,86 frente a 96,29). Dentro de la propia familia, el salto de 2B a 4B aporta 5,34 puntos de media y reduce el Brier de 0,437 a 0,347.
+Frente a la familia Intern-Decision, la variante de 4B mejora la media de 84,68 a 90,02 y reduce el Brier de 0,437 a 0,347, con una latencia de 44 ms frente a los 33 ms de las variantes pequeñas. Frente a Jev, mejora la media (90,02 frente a 88,74) y el Brier (0,347 frente a 0,358), aunque JevK5 mantiene mejor ECE (0,047 frente a 0,065). No se dispone de datos de parámetros, contexto ni licencia de los modelos de referencia.
 
 ## Limitaciones y advertencias
 
-- No genera texto libre: la API no llama a `generate()` y solo puntúa candidatos predefinidos. No sirve para respuestas abiertas, resúmenes ni redacción.
-- Requiere preparar el esquema de forma estricta: preservar orden de preguntas y opciones, mapear cada opción a un símbolo de un solo token y mantener la plantilla de chat con el bloque de pensamiento vacío. Cualquier desviación degrada los logits leídos.
-- El conjunto de símbolos candidatos está limitado a 62 por pregunta (A-Z, a-z, 0-9), lo que acota el número de opciones por campo.
-- La calibración de probabilidades es específica de cada checkpoint: el 4B usa T = 1,992418. Usar el módulo de inferencia equivocado puede desajustar las probabilidades de salida.
-- Sesgos conocidos: no documentados por el autor. Al estar ajustado sobre Qwen3.5-4B, hereda los sesgos de ese modelo base, no cuantificados en la información disponible.
-- Riesgo de alucinación: reducido en la forma, porque la salida se restringe a opciones válidas, pero persiste en el fondo si el estado de entrada es ambiguo o incompleto; la distribución puede concentrarse erróneamente.
-- Idiomas soportados: no disponibles. No hay evaluación multilingüe publicada.
-- Seguridad: el resultado en WildJailBreak (89,86) es el más bajo de sus benchmarks y queda por debajo del modelo Jev. No debe usarse como único filtro de seguridad sin capas adicionales.
-- Contexto máximo: no disponible, por lo que no se puede garantizar el comportamiento con estados muy largos o esquemas extensos.
-- Backend único: solo se implementa `hf`. No hay soporte documentado para vLLM, TGI, llama.cpp ni Ollama, lo que limita las opciones de despliegue a gran escala.
-- Madurez: el modelo se publicó el 26 de septiembre de 2026 y registra 0 descargas y 16 likes, por lo que aún no cuenta con validación externa ni reportes de terceros.
-- Licencia Apache 2.0: permite uso comercial y modificaciones, con las obligaciones habituales de atribución y conservación del aviso de licencia. No se especifican restricciones adicionales, pero conviene revisar la licencia de Qwen3.5-4B como modelo base.
+- No es un modelo generativo: no admite `generate()` ni texto libre; cualquier caso de uso conversacional requiere otro modelo.
+- El orden de preguntas y opciones debe preservarse y mapearse a símbolos de un solo token; un esquema mal construido invalida la predicción.
+- La calibración está fijada por checkpoint (T=1,992418 en el 4B); usar el módulo de inferencia de otra talla puede desajustar las probabilidades.
+- Riesgo de alucinación estructural: si el estado no contiene información suficiente, el modelo devolverá igualmente una distribución sobre las opciones, sin mecanismo nativo de abstención.
+- Sesgos conocidos: la model card no documenta análisis de sesgo; al heredar Qwen3.5-4B, pueden persistir sesgos del modelo base.
+- Idiomas y longitud de contexto no documentados; no se garantiza un rendimiento uniforme fuera del inglés técnico empleado en las evaluaciones.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las obligaciones derivadas del modelo base Qwen3.5-4B.
+- El backend implementado es únicamente HF; no hay soporte documentado para vLLM, TGI, llama.cpp u Ollama, lo que limita el despliegue a gran escala.
+- El piloto de calibración consta de solo 96 casos y no se usó para ajustar la temperatura publicada; sus resultados deben tomarse como indicativos.
+- Las latencias publicadas corresponden a una única RTX 4090 y no reflejan entornos con concurrencia o GPUs distintas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/internlm/Intern-Decision-4B
-- Demo (Space oficial): https://huggingface.co/spaces/internlm/intern-decision
-- Coleccion de pesos de la familia Intern-Decision: https://huggingface.co/collections/internlm/intern-decision
+- Demo: https://huggingface.co/spaces/internlm/intern-decision
+- Pesos del modelo (colección): https://huggingface.co/collections/internlm/intern-decision
 - Repositorio GitHub: https://github.com/internlm/Intern-Decision
-- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Informe técnico: https://arxiv.org/abs/2610.22131
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

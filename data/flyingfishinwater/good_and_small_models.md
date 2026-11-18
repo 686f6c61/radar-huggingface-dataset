@@ -2,93 +2,94 @@
 
 ## Resumen
 
-Este repositorio de Hugging Face, mantenido por el usuario flyingfishinwater, es una colección de modelos de lenguaje pequeños (4B parámetros) cuantizados en formato GGUF, optimizados para su ejecución en dispositivos móviles. Incluye tres modelos principales: Qwen3-4B-Instruct-2507, Qwen3-4B-Thinking-2507 y GLM Edge 4B Chat, todos ellos cuantizados a Q4 para reducir el uso de memoria y permitir inferencia completamente local. El repositorio está vinculado a la aplicación Privacy AI para iOS, que ejecuta estos modelos sin conexión a servidores externos, garantizando la privacidad de los datos del usuario.
+`flyingfishinwater/good_and_small_models` no es un modelo único, sino un repositorio agregador publicado por el usuario flyingfishinwater que reúne varias compilaciones en formato GGUF de modelos pequeños (en torno a 4B parámetros) pensados para ejecución en dispositivos móviles y entornos con recursos limitados. El repositorio actúa como catálogo de distribuciones cuantizadas de terceros: Qwen3-4B-Instruct-2507, Qwen3-4B-Thinking-2507 y GLM-Edge-4B-Chat, entre otros, empaquetados para su uso en la aplicación Privacy AI (iOS), que ejecuta la inferencia de forma local y sin servidor.
 
-La relevancia de este proyecto radica en la combinación de modelos de última generación (Qwen3-2507 y GLM-4) con formatos eficientes (GGUF) y un caso de uso concreto: IA generativa en dispositivos con recursos limitados. Para desarrolladores e investigadores, ofrece un punto de partida práctico para desplegar modelos con soporte de tool calling, razonamiento avanzado y multilingüismo, bajo licencias permisivas en el caso de los modelos Qwen3. El repositorio incluye además etiquetas de compatibilidad con endpoints y cuantización con imatrix, lo que facilita su integración en pipelines de servidores.
+La relevancia del repositorio radica en su enfoque práctico: ofrece artefactos Q4 listos para descargar (entre 2,1 y 2,6 GB por modelo) que caben en la memoria de un teléfono moderno y permiten conversación, razonamiento y uso de herramientas sin enviar datos a la nube. No obstante, conviene subrayar que el autor no entrena ni modifica los pesos originales: se limita a cuantizar y redistribuir modelos de Qwen (Alibaba) y Zhipu AI (THUDM), por lo que las capacidades reales son las de los modelos de origen.
+
+El dato de parámetros totales registrado en safetensors para el repositorio (360.748.032) no corresponde a ninguno de los modelos descritos en la model card, que son de aproximadamente 4B parámetros; probablemente refleje un artefacto auxiliar (tokenizador, cabecera o modelo pequeño adicional). El tamaño total del repositorio es de 320,3 GB, coherente con un catálogo que acumula múltiples cuantizaciones y versiones.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3-4B y GLM-4 Edge) |
-| Parametros totales | 360.748.032 (según safetensors del repo; los modelos descritos son de 4B) |
-| Parametros activos | no aplicable (modelos densos, no MoE) |
-| Longitud de contexto | Qwen3: 262K tokens nativos (configurado a 2048 en el despliegue móvil); GLM Edge: 128K nativos (configurado a 1024 en el despliegue móvil) |
-| Tipos de cuantizacion | Q4_0, Q4_K_M (GGUF), imatrix |
-| Idiomas soportados | Qwen3: multilingüe; GLM Edge: 26 idiomas (japonés, coreano, alemán, entre otros) |
-| Licencia | Apache 2.0 (Qwen3); licencia propia de THUDM (GLM Edge) |
-| Formato de pesos | GGUF, safetensors, ONNX |
+| Arquitectura | Transformer decoder-only (modelos de origen Qwen3 y GLM-Edge); no se detalla la arquitectura interna en la información disponible |
+| Parámetros totales | Aproximadamente 4B por modelo incluido; el campo safetensors del repo indica 360.748.032 (no representativo de los modelos de la card) |
+| Parámetros activos | No aplica (no son modelos MoE) |
+| Longitud de contexto | 262.000 tokens en los modelos Qwen3 de origen; la card indica 2048 tokens para Qwen3 y 1024 para GLM-Edge en la configuración de la app; GLM-4 de origen soporta hasta 128K |
+| Tipos de cuantización | Q4_0 (Qwen3-4B-Instruct-2507 y Qwen3-4B-Thinking-2507), Q4_K_M (GLM-Edge-4B-Chat); el repo incluye además ONNX, GGUF e imatrix |
+| Idiomas soportados | No disponible a nivel de repositorio; los modelos de origen Qwen3 son multilingües y GLM-4 declara 26 idiomas (japonés, coreano, alemán, entre otros) |
+| Licencia | No disponible para el repositorio; los modelos de origen Qwen3 se distribuyen bajo Apache 2.0 y GLM-Edge bajo su propia licencia (enlace en la card) |
+| Formato de pesos | GGUF y ONNX |
 
 ## Arquitectura y entrenamiento
 
-Los tres modelos del repositorio utilizan arquitecturas transformer densas. Qwen3-4B-Instruct-2507 y Qwen3-4B-Thinking-2507 son la última generación de la serie Qwen3 de Alibaba, con mejoras significativas en razonamiento, matemáticas, ciencia, código y uso de herramientas. La variante Thinking tiene el modo de razonamiento activado por defecto, lo que genera cadenas de pensamiento antes de responder. GLM Edge 4B Chat, de Zhipu AI (THUDM), es la generación más reciente de la serie GLM-4, con soporte para navegación web, ejecución de código, function calling y razonamiento con contexto largo de hasta 128K tokens.
+Los modelos empaquetados son transformers decoder-only de aproximadamente 4B parámetros. Qwen3-4B-Instruct-2507 y Qwen3-4B-Thinking-2507 pertenecen a la familia Qwen3 de Alibaba, con mejoras declaradas en razonamiento, matemáticas, ciencia, código y uso de herramientas; la variante Thinking activa el modo de razonamiento por defecto. GLM-Edge-4B-Chat procede de Zhipu AI (THUDM) y añade navegación web, ejecución de código, function calling y razonamiento sobre texto largo.
 
-Los pesos se han cuantizado a Q4 (Q4_0 para los modelos Qwen3 y Q4_K_M para GLM Edge) para reducir el tamaño a aproximadamente 2,1-2,6 GB por modelo, lo que permite su carga en la memoria de dispositivos móviles. El repositorio incluye también el formato ONNX, lo que facilita la conversión a otros runtimes de inferencia. No se dispone de información sobre el dataset de entrenamiento ni sobre el proceso de alineación (RLHF/DPO) de los modelos originales en la documentación del repositorio.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) en la documentación proporcionada. El repositorio no documenta un proceso de entrenamiento propio: su aportación es la cuantización (Q4_0, Q4_K_M) y el empaquetado para inferencia local en iOS, con plantillas de prompt predefinidas (template `qwen`, BOS activado, EOS desactivado, parseo de tokens especiales).
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en los tres modelos.
-- Razonamiento avanzado y pensamiento encadenado (thinking mode) en Qwen3-4B-Thinking-2507, activado por defecto.
-- Tool calling y function calling en Qwen3-4B-Instruct-2507 y GLM Edge 4B Chat.
-- Ejecución de código y navegación web en GLM Edge 4B Chat.
-- Soporte multilingüe: 26 idiomas en GLM Edge (japonés, coreano, alemán, etc.) y multilingüe en los modelos Qwen3.
-- Mejoras en matemáticas, ciencia y razonamiento lógico en la serie Qwen3-2507.
-- Inferencia on-device sin conexión, con privacidad total de datos.
-- Compatibilidad con servidores OpenAI-compatible a través de la app Privacy AI.
-- Plantilla de chat estándar "qwen" con tokens BOS/EOS configurados.
+- Generación de texto conversacional multi-turno en dispositivos móviles.
+- Razonamiento lógico y matemático, con variante Thinking que expone cadena de pensamiento.
+- Conocimiento científico y resolución de problemas academicos (según la descripción de los modelos de origen).
+- Generación y asistencia de código.
+- Uso de herramientas y function calling (declarado en GLM-Edge-4B-Chat y en Qwen3-4B-Instruct-2507).
+- Navegación web y ejecución de código (GLM-4 de origen).
+- Razonamiento sobre texto largo.
+- Soporte multilingüe (26 idiomas en GLM-4 de origen; Qwen3 declara soporte multilingüe fuerte).
+- Ejecución totalmente local y sin servidor dentro de la app Privacy AI, con búsqueda web, cotizaciones bursátiles y análisis de salud como herramientas integradas.
 
 ## Casos de uso
 
-- Asistente personal privado en iOS: la app Privacy AI ejecuta estos modelos localmente para responder preguntas, gestionar tareas y mantener conversaciones sin enviar datos a servidores externos, aprovechando la cuantización Q4 para caber en la memoria del dispositivo.
-- Análisis de salud on-device: la app Privacy AI incluye análisis de salud que se ejecutan localmente, utilizando la capacidad de razonamiento de Qwen3-4B para interpretar datos médicos y ofrecer recomendaciones sin comprometer la privacidad del paciente.
-- Búsqueda web integrada: GLM Edge 4B Chat puede navegar por internet y resumir resultados, útil para aplicaciones de noticias, investigación móvil o asistentes de productividad que necesitan información actualizada.
-- Generación de código en entornos sin conexión: Qwen3-4B-Instruct-2507 soporta tool calling y puede ayudar a programadores en dispositivos móviles o portátiles de bajos recursos, con un tamaño de 2,4 GB que cabe en cualquier equipo moderno.
-- Atención al cliente automatizada: con 128K de contexto nativo, GLM Edge puede gestionar conversaciones largas con historial extenso en aplicaciones de soporte, aunque el despliegue móvil limite el contexto efectivo a 1024 tokens.
-- Educación y tutoría: los modelos Qwen3-2507 destacan en matemáticas y razonamiento, adecuados para apps educativas que expliquen problemas paso a paso o generen ejercicios personalizados.
-- Traducción y asistencia multilingüe: GLM Edge soporta 26 idiomas, lo que lo hace adecuado para apps de traducción, aprendizaje de idiomas o comunicación internacional.
-- Prototipado rápido de chatbots: los GGUF cuantizados pueden ejecutarse en portátiles con 4-8 GB de RAM mediante llama.cpp u Ollama, ideales para desarrollo y pruebas locales antes de escalar a producción.
+- Asistente personal offline en iOS: la app Privacy AI carga el GGUF Q4 (2,1-2,6 GB) en el dispositivo y responde consultas sin conexión, adecuado para entornos con requisitos de privacidad estrictos.
+- Chatbot de atención al cliente en el borde: desplegando el GGUF con llama.cpp en una pasarela local, el modelo gestiona conversaciones multi-turno sin exponer datos a terceros.
+- Asistencia de código en el editor: Qwen3-4B-Instruct-2507 puede integrarse mediante un servidor compatible con OpenAI (endpoints_compatible) para autocompletado y explicación de fragmentos.
+- Razonamiento matemático asistido: la variante Thinking, con su cadena de pensamiento, sirve para resolver problemas paso a paso en herramientas educativas.
+- Análisis de documentos largos: aunque la app limita el contexto a 2048 tokens, el modelo de origen soporta 262K, por lo que con un runtime adecuado (llama.cpp con contexto extendido) se pueden resumir informes extensos.
+- Agentes locales con tool calling: GLM-Edge-4B-Chat permite encadenar llamadas a funciones (calendario, clima, APIs internas) dentro de un asistente móvil.
+- Prototipado rápido en portátiles sin GPU: los GGUF Q4 caben en RAM de 8 GB y permiten validar pipelines de agentes antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos en la información disponible del repositorio. La model card menciona que GLM-4 supera a Llama-3 en evaluaciones de semántica, matemáticas, razonamiento, código y conocimiento, pero no proporciona cifras concretas. Para los modelos Qwen3-2507, el autor no incluye tablas de benchmarks en este repositorio; se recomienda consultar las model cards originales de Qwen y THUDM para datos de rendimiento detallados.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Los modelos GGUF Q4 ocupan entre 2,1 y 2,6 GB, por lo que caben en la memoria de cualquier smartphone moderno (iPhone con 4+ GB de RAM, Android con 6+ GB).
-- Para inferencia en escritorio, se puede ejecutar con llama.cpp u Ollama en CPUs con 8+ GB de RAM sin necesidad de GPU.
-- Con GPU, una RTX 3060 de 12 GB o superior puede ejecutar estos modelos con margen para contexto extendido.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (con conversión a formato compatible) y la app Privacy AI para iOS.
-- El tamaño reducido (Q4) permite latencias de decodificación de 10-30 tokens/segundo en CPUs modernas de móvil, dependiendo del dispositivo y de la longitud del contexto configurada.
-- Para despliegue en producción con múltiples usuarios, se recomienda vLLM o TGI en una GPU A10G o L4 (16-24 GB VRAM) para servir el modelo con contexto completo.
-- El repositorio incluye la etiqueta "endpoints_compatible", lo que sugiere que los modelos pueden servirse a través de APIs compatibles con OpenAI.
+- VRAM/RAM estimada: aproximadamente 2,5-3,5 GB para Q4_0 y Q4_K_M (tamaños de archivo de 2,1-2,6 GB más overhead de contexto).
+- Cabe en GPU consumer: sí, en tarjetas con 4 GB o más (GTX 1650, RTX 3050, RTX 4060); también en Apple Silicon unificada y en smartphones de gama alta.
+- GPU de datacenter: A100, H100 y L40S pueden servir múltiples instancias en paralelo, aunque el modelo está pensado para el borde.
+- Despliegue: llama.cpp, Ollama, servidores compatibles con OpenAI (tag `endpoints_compatible`), ONNX Runtime para el artefacto ONNX; vLLM y TGI no están confirmados para estos GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto nativo | Licencia | Formato | Uso movil |
-|---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507 (este repo) | 4B | 262K | Apache 2.0 | GGUF Q4 | Sí |
-| Llama-3.2-3B | 3B | 128K | Llama 3.2 | GGUF | Sí |
-| Phi-3.5-mini | 3,8B | 128K | MIT | GGUF | Sí |
-| Gemma-2-2B | 2B | 8K | Gemma | GGUF | Sí |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Qwen3-4B-Instruct-2507 (empaquetado aquí) | ~4B | 262K (origen); 2048 en la app | Apache 2.0 (origen) | GGUF Q4_0 en este repo |
+| Qwen3-4B-Thinking-2507 (empaquetado aquí) | ~4B | 262K (origen); 2048 en la app | Apache 2.0 (origen) | GGUF Q4_0 en este repo |
+| GLM-Edge-4B-Chat (empaquetado aquí) | ~4B | 128K (origen GLM-4); 1024 en la app | Licencia propia de THUDM | GGUF Q4_K_M en este repo |
+| Llama 3.2 3B Instruct | 3B | 128K | Llama 3.2 Community License | Disponible en GGUF en múltiples repos |
 
-Los modelos de este repositorio ofrecen la ventaja de ser los más recientes de sus respectivas familias (Qwen3-2507 y GLM-4), con mejoras en razonamiento y tool usage frente a alternativas más antiguas como Llama-3.2 o Phi-3.5. Sin embargo, la licencia de GLM Edge es propia de THUDM, por lo que hay que revisar sus términos antes de uso comercial. En términos de contexto nativo, Qwen3-4B destaca con 262K tokens, muy por encima de los 128K de Llama-3.2 y Phi-3.5, y de los 8K de Gemma-2.
+La comparación se limita a los modelos incluidos en el propio repositorio y a un competidor de tamaño similar; no se dispone de datos de rendimiento comparativo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card indica una longitud de contexto de 2048 tokens para los modelos Qwen3 y 1024 para GLM Edge en el despliegue móvil, muy inferior a los 262K/128K nativos. Esto limita las conversaciones largas en la app Privacy AI y puede provocar cortes en tareas que requieran contexto extenso.
-- Existe una discrepancia entre el número de parámetros reportado (360M según safetensors) y los modelos descritos (4B), lo que sugiere que el repositorio contiene archivos adicionales no documentados en la model card. El tamaño total del repositorio (279,2 GB) respalda esta hipótesis.
-- No se proporcionan benchmarks específicos en el repositorio, por lo que el rendimiento real en tareas concretas no está verificado por el autor.
-- La licencia de GLM Edge es de THUDM y puede tener restricciones de uso comercial; es necesario revisar el LICENSE del modelo original antes de desplegarlo en producción.
-- Los modelos cuantizados a Q4 pueden sufrir degradación de calidad frente a las versiones en FP16, especialmente en tareas de razonamiento complejo o generación de código extenso.
-- La app Privacy AI es una aplicación comercial; el repositorio actúa como distribución de pesos, no como proyecto de investigación formal, por lo que el soporte y la documentación pueden ser limitados.
-- Riesgo de alucinación inherente a modelos de 4B, especialmente en tareas de conocimiento factual o generación de código complejo; se recomienda validación humana en aplicaciones críticas.
-- La plantilla de prompt de los modelos Qwen3 aparece vacía en la model card, lo que puede dificultar la integración correcta en frameworks de inferencia si no se usa la plantilla "qwen" estándar.
+- El repositorio no es un modelo entrenado por el autor: los pesos son redistribuciones cuantizadas de Qwen y Zhipu AI, por lo que heredan sus sesgos y limitaciones.
+- La licencia del repositorio no está declarada; para uso comercial hay que remitirse a las licencias de los modelos de origen (Apache 2.0 en Qwen3, licencia específica en GLM-Edge).
+- La configuración de la app limita el contexto a 2048 tokens (Qwen3) y 1024 tokens (GLM-Edge), muy por debajo de la ventana nativa; el rendimiento en tareas de contexto largo dependerá del runtime utilizado.
+- La cuantización Q4 introduce pérdida de precisión frente a los pesos originales, especialmente en matemáticas y código.
+- Riesgo de alucinación inherente a modelos de 4B, mayor en dominios especializados.
+- El dato de parámetros safetensors (360,7M) no coincide con los modelos de la card; conviene verificar el artefacto antes de desplegarlo.
+- El repositorio acumula 320,3 GB y múltiples versiones; la selección del archivo correcto requiere atención.
+- No se documentan idiomas soportados a nivel de repositorio ni evaluación de sesgos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/flyingfishinwater/good_and_small_models
-- Modelo original Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Modelo original Qwen3-4B-Thinking-2507: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
-- Organización THUDM (GLM Edge 4B Chat): https://huggingface.co/THUDM
-- Privacy AI en App Store: https://apps.apple.com/app/apple-store/id6738392421
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/good_and_small_models
+- Qwen3-4B-Instruct-2507 (origen): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Qwen3-4B-Thinking-2507 (origen): https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
+- GLM-Edge (origen, THUDM): https://huggingface.co/THUDM
+- Licencia GLM-Edge: https://huggingface.co/THUDM/glm-edge-4b-chat/raw/main/LICENSE
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0.txt
+- App Privacy AI en App Store: https://apps.apple.com/app/apple-store/id6738392421
 - Sitio oficial de Privacy AI: https://privacyai.acmeup.com

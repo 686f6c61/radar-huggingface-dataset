@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Jamh4949/beto-sarcasmo-es",
+  "slug": "jamh4949-beto-sarcasmo-es",
+  "author": "Jamh4949",
+  "url": "https://huggingface.co/Jamh4949/beto-sarcasmo-es",
+  "created_at": "2026-11-18T04:46:18.000Z",
+  "updated_at": "2026-11-18T04:46:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sarcasm-detection",
+    "spanish",
+    "fine-tuned",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109852418,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439438409,
+  "storage_human": "439 MB",
+  "context_length": null,
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

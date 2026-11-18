@@ -5,7 +5,7 @@
   "author": "adityabhushannagar",
   "url": "https://huggingface.co/adityabhushannagar/Dhir-2B-ONNX",
   "created_at": "2026-11-11T11:23:30.000Z",
-  "updated_at": "2026-11-11T12:14:21.000Z",
+  "updated_at": "2026-11-17T15:17:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,8 +46,8 @@
     "pa",
     "ta",
     "te",
-    "base_model:adityabhushannagar/Dhir-2B",
-    "base_model:quantized:adityabhushannagar/Dhir-2B",
+    "base_model:zenteiq-ai/Dhir-2B",
+    "base_model:quantized:zenteiq-ai/Dhir-2B",
     "license:apache-2.0",
     "region:us"
   ],
@@ -59,7 +59,7 @@
   "storage_bytes": 15069275158,
   "storage_human": "15.1 GB",
   "context_length": null,
-  "base_model": "adityabhushannagar/Dhir-2B",
+  "base_model": "zenteiq-ai/Dhir-2B",
   "formats": [
     "onnx"
   ],

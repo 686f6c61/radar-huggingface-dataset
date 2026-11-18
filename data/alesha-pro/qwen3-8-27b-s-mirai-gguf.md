@@ -2,109 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-27B-S-mirai-GGUF es una conversión comunitaria a GGUF del checkpoint experimental `trymirai/Qwen3.8-27B-S-experimental`, publicado por el usuario alesha-pro. Se trata de una versión comprimida de forma extrema (2,4 bits, con códigos trellis) de un modelo Qwen3.8 de 27.324.879.699 parámetros, empaquetada para ejecutarse en una única GPU de 12 GB manteniendo una ventana de contexto de 128K tokens. Frente a las cuantizaciones habituales de 4 o 5 bits, aquí los pesos comprimidos de Mirai se copian bit a bit en el GGUF: no hay recuantización posterior.
+Qwen3.8-27B-S-mirai-GGUF es una conversión comunitaria a formato GGUF del checkpoint Qwen3.8-27B-S-experimental de Mirai, una versión comprimida a 2,4 bits del modelo Qwen3.8-27B de Alibaba. El trabajo lo publica el usuario alesha-pro y su aportación principal es trasladar los códigos trellis comprimidos de Mirai al contenedor GGUF sin recuantizar, bit a bit, de modo que un modelo de 27 000 millones de parámetros ocupa 11,2 GB y puede ejecutarse en una única GPU de 12 GB.
 
-El interés principal es doble. Por un lado, demuestra que un modelo de ~27B puede caber en tarjetas de gama consumer con contexto muy largo (11,3 GB de VRAM pico a 131.072 tokens con caché KV en q4_0). Por otro, introduce cuatro tipos ggml nuevos que obligan a usar un fork específico de llama.cpp (`alesha-pro/llama.cpp-mirai-s`): ni el llama.cpp principal, ni LM Studio ni Ollama pueden cargar el archivo. Es, por tanto, una pieza de investigación más que un artefacto listo para producción.
+El modelo es un transformer híbrido (atención lineal DeltaNet combinada con atención clásica) con capacidades de razonamiento, uso de herramientas y visión, esta última aportada por un codificador multimodal extraído del checkpoint base original de Qwen. Incluye además un bloque MTP (multi-token prediction) para decodificación especulativa y un fichero opcional de vector de control que elimina las negativas del modelo.
 
-La arquitectura es híbrida (atención completa con flash attention más vías de gated delta net, según las referencias del propio autor), incluye un bloque MTP para decodificación especulativa y admite entrada de visión mediante un proyector separado extraído del modelo base de Qwen. La licencia es Apache-2.0.
+Su relevancia es práctica: el formato introduce cuatro tipos ggml nuevos, por lo que llama.cpp estándar, LM Studio y Ollama no pueden cargarlo. Solo funcionan dos motores, mirai-s-ada (recomendado) y el fork llama.cpp-mirai-s del propio autor. Con 8 442 descargas y 53 likes en pocas semanas, se ha convertido en una vía realista para desplegar un modelo de 27B con contexto largo en hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: atención completa (flash attention) y vías de gated delta net (atención lineal) |
-| Parametros totales | 27.324.879.699 (~27,3 B) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | 131.072 tokens (128K) en las configuraciones documentadas; valor nativo del modelo base no disponible |
-| Tipos de cuantizacion | Pesos en 2,4 bits (códigos trellis de Mirai, sin recuantizar); KV cache q4_0 o q8_0; bloque MTP en Q8_0; token embedding en F16 |
+| Arquitectura | Transformer híbrido con atención lineal DeltaNet y MTP (multi-token prediction) |
+| Parametros totales | 27B (aproximado; el campo de safetensors del repo indica 322.560, dato no representativo del modelo) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens con caché KV q8_0 en mirai-s-ada; 128K con q4_0 y 74K con q8_0 en el fork de referencia |
+| Tipos de cuantizacion | 2,4 bits con códigos trellis (formato propietario, 4 tipos ggml nuevos); bloque MTP en Q8_0; embeddings en F16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (11,2 GB el modelo principal; 0,93 GB el proyector de visión) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (11,2 GB el modelo; 0,93 GB el codificador de visión; 1,3 MB el vector de control) |
 
 ## Arquitectura y entrenamiento
 
-El modelo combina capas de atención completa con vías de gated delta net, una forma de atención lineal con estado recurrente. Esa naturaleza híbrida tiene una consecuencia práctica documentada por el autor: cada slot del servidor mantiene su propio estado de DeltaNet, de modo que aumentar el número de slots encarece la VRAM (unos 450 MB adicionales por defecto, lo que lleva el consumo a 11,7 GB en lugar de 11,3 GB a 128K). El checkpoint incorpora además un bloque MTP (multi-token prediction) en Q8_0 que se usa como cabecera de borrador para decodificación especulativa (`--spec-type draft-mtp`). El token embedding, en F16, ocupa 2,5 GB y permanece en RAM del sistema, mientras que 7,8 GB se descargan a la GPU.
+El modelo base es un transformer híbrido: combina capas de atención lineal DeltaNet con capas de atención tradicional, lo que reduce el coste de memoria del contexto largo. Incorpora un bloque MTP que permite decodificación especulativa con borrador interno, y el checkpoint de Mirai aplica una compresión agresiva a 2,4 bits mediante códigos trellis, sin recuantización posterior en la conversión a GGUF. El codificador de visión no viene en el checkpoint de Mirai (solo incluye el modelo de lenguaje) y se toma del Qwen/Qwen3.8-27B original en F16.
 
-La innovación técnica central no está en el entrenamiento sino en la compresión: Mirai Labs ha producido pesos en 2,4 bits mediante un esquema de códigos trellis, y esta conversión los traslada literalmente al formato GGUF. No se han publicado detalles sobre el corpus de entrenamiento, el número de tokens, ni sobre si hubo fases de RLHF, DPO u otras técnicas de alineación. Tampoco se especifica qué significa el sufijo "S" de la nomenclatura ni en qué consiste la variante "experimental" del checkpoint de origen.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en la información proporcionada. El modelo base parece derivar de Qwen3.8-27B, pero los detalles de entrenamiento no están documentados en la model card. La innovación técnica destacable es doble: la compresión trellis a 2,4 bits que mantiene un 27B en 11,2 GB, y la decodificación especulativa MTP integrada en el propio GGUF.
 
 ## Capacidades
 
-- Generación de texto conversacional, con plantilla de chat propia de Qwen3.8.
-- Modo de razonamiento (thinking) activado por defecto; el servidor acepta el parámetro `reasoning_effort` con los valores `low`, `medium` y `xhigh`, y permite desactivarlo con `chat_template_kwargs: {"enable_thinking": false}`.
-- Generación de código, con rendimiento medido específicamente en esta tarea (85 tok/s con MTP 3 en una RTX 3090).
-- Procesamiento de contexto largo: hasta 131.072 tokens en las configuraciones de referencia.
-- Capacidad de visión (image-to-text) mediante el proyector `mmproj-Qwen3.8-27B-base-f16.gguf`, tomado del modelo base `Qwen/Qwen3.8-27B`; el checkpoint de Mirai solo incluye el modelo de lenguaje.
-- Decodificación especulativa mediante el bloque MTP integrado.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Idiomas soportados: no disponible.
+- Generación de texto y razonamiento con modo de pensamiento activado por defecto; acepta `reasoning_effort` con valores `low`, `medium` y `xhigh`, y se puede desactivar con `enable_thinking: false`.
+- Capacidades de visión mediante el codificador mmproj extraído del Qwen3.8-27B base; el encoder puede ejecutarse en CPU sin consumir VRAM.
+- Soporte de tool calling y function calling a través de la plantilla de chat Qwen3.8 y el flag `--jinja` del servidor.
+- Razonamiento multi-paso y uso en agentes, favorecido por el contexto largo (hasta 262K tokens).
+- Decodificación especulativa MTP para acelerar la generación en GPUs de 16 GB o más.
+- Eliminación opcional de negativas mediante un vector de control en modo proyección (fichero de 1,3 MB).
+- Capacidades multilingües: no documentadas en la información disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local en una GPU de 12 GB: el modelo cabe con 128K de contexto y caché KV en q4_0, lo que permite desplegar un chatbot de 27B en hardware de gama consumer sin depender de servicios en la nube.
-- Análisis de documentos extensos: con 131.072 tokens de ventana se pueden procesar informes, expedientes o bases de código completas en una sola pasada, algo inusual en modelos de este tamaño ejecutados localmente.
-- Extracción y resumen sobre capturas de pantalla: gracias al proyector de visión, admite entradas de imagen; una captura de 1280x800 tarda unos 7 segundos en codificarse en CPU (48 núcleos EPYC) o alrededor de 1,5 segundos si el encoder se descarga a la GPU (0,8 GB extra de VRAM).
-- Generación de código asistida en estación de trabajo: con la configuración de 16 GB y MTP 3 se alcanzan 85 tok/s en tareas de código, un régimen adecuado para autocompletado interactivo.
-- Investigación en cuantización extrema: sirve como banco de pruebas para comparar el comportamiento de pesos a 2,4 bits frente a alternativas de 4 y 5 bits, con la ventaja de que el autor documenta verificaciones de fidelidad numérica.
-- Procesamiento por lotes sin conexión: el prefill sostenido de ~1000 tok/s permite ingerir prompts largos (6,9K tokens) de forma eficiente en modo servidor.
-- Prototipado de razonamiento multi-paso: el modo thinking con `reasoning_effort` configurable permite experimentar con distintos niveles de profundidad de razonamiento sin cambiar de modelo.
+- Asistente de código en local: con 128K de contexto y tool calling, el modelo puede indexar un repositorio mediano y responder consultas sobre él dentro de una GPU de 12 GB, sin depender de APIs externas.
+- Análisis de documentos largos: los 262.144 tokens de contexto en mirai-s-ada permiten procesar informes, contratos o expedientes completos en una sola pasada, con la caché KV repartida entre VRAM y RAM del sistema.
+- Agentes autónomos multi-paso: el modo de razonamiento configurable (`reasoning_effort`) y el soporte de herramientas lo hacen adecuado para pipelines de agentes que encadenan búsquedas, ejecuciones y verificaciones.
+- Procesamiento de imágenes en local: con el codificador mmproj se pueden hacer tareas de descripción, extracción de datos de capturas o preguntas sobre diagramas sin enviar imágenes a servicios externos.
+- Despliegue en estaciones de trabajo con RTX 4070 o 3090: el rendimiento medido (76,6 tok/s en 4070 con mirai-s-ada y 40 tok/s en 3090 con el fork) permite uso interactivo en producción interna.
+- Investigación sobre alineación y negativas: el vector de control de negativas permite estudiar el comportamiento del modelo con y sin rechazos sin reentrenar, útil en experiments de interpretabilidad.
+- Prototipado de chatbots con contexto largo: la combinación de contexto extendido y velocidad de decodificación razonable facilita iterar sobre conversaciones multi-turno extensas en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K u otros) en la información disponible. Sí se incluyen mediciones de rendimiento en tiempo de ejecución sobre una única RTX 3090 a 300 W con `llama-server`:
+No se han publicado resultados de benchmarks en la información disponible. Los únicos datos de rendimiento son medidas de velocidad de decodificación:
 
-| Configuracion | VRAM pico | Decode (chat nuevo) | Decode a 62K | Prefill (prompt 6,9K) |
-|---|---:|---:|---:|---:|
-| 12 GB, 128K, KV q4_0, `-ub 1024` | 11,3 GB | 39,7 tok/s | 34,6 tok/s | 1008 tok/s |
-| 12 GB, 74K, KV q8_0, `-ub 1024` | 11,1 GB | 40,0 tok/s | 34,9 tok/s | 1009 tok/s |
-| 16 GB, 128K, KV q8_0, MTP 3 | 14,6 GB | 85 tok/s (código) / 57 tok/s (prosa) | no disponible | 806 tok/s |
-
-Dato adicional: con la configuración de 128K y KV q4_0, el decode a 117K tokens de contexto se mantiene en 30,4 tok/s. Frente al plugin de vLLM de Mirai sobre la misma tarjeta, este GGUF es más lento en prompts cortos (39 frente a 44 tok/s de decode; 1120 frente a 1336 tok/s de prefill; 84 frente a 107 tok/s en código con MTP) pero permite más contexto en 12 GB (128K frente a 37,6K con KV en bf16 o 74,4K con KV en fp8).
-
-En cuanto a verificación de fidelidad: el decodificador de referencia del conversor coincide con la decodificación propia de Mirai hasta 3e-8, y los kernels CUDA coinciden con la referencia de CPU en `test-backend-ops`. En una comparación greedy de 10 prompts (dos de ellos de ~7K tokens, 64 tokens de salida), 8 resultados fueron idénticos token a token; los otros 2 divergieron en empates muy ajustados (0,0007 de logprob de diferencia entre los dos candidatos principales). Los top-5 logprobs del primer token coincidieron 5 de 5 en los 10 prompts.
+| Motor | GPU | Contexto | Decodificación |
+|---|---|---|---|
+| mirai-s-ada | RTX 4070 12 GB | chat nuevo | 76,6 tok/s |
+| mirai-s-ada | RTX 4070 12 GB | 60K | 61,7 tok/s |
+| llama.cpp-mirai-s | RTX 3090 | chat nuevo | 40 tok/s |
+| llama.cpp-mirai-s | RTX 3090 | 62K | 34,6 tok/s |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 11,1 GB (74K de contexto, KV q8_0) o 11,3 GB (128K, KV q4_0) en una tarjeta de 12 GB; 14,6 GB para la configuración de 128K con KV q8_0 y MTP 3 en una tarjeta de 16 GB.
-- Memoria del sistema: 2,5 GB adicionales para el token embedding en F16, que no se descarga a la GPU.
-- GPU recomendadas: RTX 3090 (la única verificada, sm_86, 300 W). El autor advierte de que las velocidades en tarjetas más pequeñas serán inferiores.
-- Cabe en GPU consumer: sí, en tarjetas de 12 GB o más. Es el principal argumento del proyecto.
-- Encoder de visión: añade 0,8 GB de VRAM (1,3 GB en pico) si se ejecuta en GPU, o 0 VRAM si se deja en CPU a costa de latencia (7 segundos por captura de 1280x800, 44 segundos por una imagen de 2600x2400 con 48 núcleos).
-- Opciones de despliegue: exclusivamente el fork `alesha-pro/llama.cpp-mirai-s`. No es compatible con llama.cpp principal, LM Studio ni Ollama, porque el formato añade cuatro tipos ggml nuevos. Como alternativa sobre los mismos pesos existe el plugin de vLLM de Mirai Labs.
-- Requisitos de compilación: CUDA 12 con cuBLASLt (`-DCUDAToolkit_ROOT`); con cuBLAS 11 la GEMM int8 cae a un tile aproximadamente la mitad de rápido.
-- Latencia y throughput: según la tabla de la sección anterior. El camino rápido es CUDA; existe una referencia de CPU, pero es lenta.
-- Ajuste crítico: usar `-np 1`, ya que cada slot adicional mantiene su propio estado de DeltaNet y encarece la VRAM (unos 450 MB extra con la configuración por defecto).
+- VRAM estimada: 11,2 GB de fichero, de los cuales 7,8 GB van a la GPU y 2,5 GB de embeddings F16 permanecen en RAM del sistema; el codificador de visión (0,93 GB) puede ejecutarse en CPU sin VRAM.
+- GPU recomendadas: RTX 4070 12 GB (con mirai-s-ada), RTX 3090 12 GB limitada, RTX 4090 y superiores para más contexto o MTP.
+- Cabe en GPU de consumo de 12 GB; para MTP especulativo se necesitan al menos 16 GB.
+- Opciones de despliegue: mirai-s-ada (Windows bundle y Linux desde fuente, recomendado) y llama.cpp-mirai-s (fork de referencia, Linux desde fuente). llama.cpp estándar, LM Studio y Ollama no cargan el formato.
+- Latencia y throughput: 76,6 tok/s en RTX 4070 con mirai-s-ada en chat nuevo y 61,7 tok/s a 60K de contexto; 40 tok/s y 34,6 tok/s respectivamente en RTX 3090 con el fork.
+- Nota de configuración: `-np 1` es importante en este modelo híbrido, ya que cada slot del servidor mantiene su propio estado DeltaNet y el número por defecto de slots añade unos 450 MB.
 
 ## Comparativa con modelos similares
 
-| Modelo / ruta de ejecución | Parametros | Contexto | Rendimiento (RTX 3090, 300 W) | Licencia | Despliegue |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este GGUF (fork llama.cpp mirai-s) | 27,3 B, pesos a 2,4 bits | 128K con KV q4_0 en 12 GB | 39,7 tok/s decode; 1008 tok/s prefill | Apache-2.0 | llama.cpp modificado |
-| Plugin vLLM de Mirai (mismos pesos) | 27,3 B, pesos a 2,4 bits | 37,6K con KV bf16 o 74,4K con KV fp8 en 12 GB | 44 tok/s decode; 1336 tok/s prefill; 107 tok/s en código con MTP | Apache-2.0 | vLLM con plugin |
-| `Qwen/Qwen3.8-27B` (modelo base, sin cuantizar) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3.8-27B-S-mirai-GGUF | 27B | hasta 262K | 2,4 bits trellis | Apache 2.0 | GGUF en HF, solo 2 motores |
+| Qwen/Qwen3.8-27B (base) | 27B | no disponible | F16/BF16 estándar | no disponible | HF, ecosistema estándar |
+| trymirai/Qwen3.8-27B-S-experimental | 27B | no disponible | 2,4 bits trellis | no disponible | HF, checkpoint original |
 
-No se dispone de datos sobre otras alternativas de la misma categoría (modelos de ~27B cuantizados a 2-3 bits) en la información proporcionada.
+La ventaja frente al modelo base es el tamaño (11,2 GB frente a decenas de GB en F16) y la posibilidad de ejecutarlo en 12 GB de VRAM. La desventaja es la compatibilidad: requiere motores modificados y no funciona en el ecosistema estándar de llama.cpp.
 
 ## Limitaciones y advertencias
 
-- Requiere un fork específico de llama.cpp. El archivo no carga en llama.cpp principal, LM Studio ni Ollama, lo que limita su integración en infraestructuras existentes y complica el mantenimiento a largo plazo.
-- La ruta de CPU existe pero es lenta; sin GPU CUDA el modelo es poco práctico.
-- Es una conversión comunitaria, no una publicación oficial de Mirai Labs. El propio autor lo explicita.
-- Fidelidad aproximada, no exacta: en la comparación greedy contra el plugin de vLLM, 2 de cada 10 prompts divergieron en empates muy ajustados (0,0007 de logprob). En producción, esto implica que determinadas salidas pueden diferir de la implementación de referencia.
-- Cuantización a 2,4 bits: aunque los códigos se copian sin recuantizar, se trata de un régimen de compresión muy agresivo cuyas consecuencias sobre la calidad en tareas abiertas no están cuantificadas con benchmarks públicos.
-- Idiomas soportados: no disponible. No se puede garantizar un comportamiento multilingüe adecuado sin datos al respecto.
-- Riesgo de alucinación: inherente a los modelos de lenguaje, no cuantificado en la información disponible.
-- Sesgos conocidos: no disponible.
-- Licencia Apache-2.0, que permite uso comercial, pero conviene verificar la licencia del modelo base `Qwen/Qwen3.8-27B` y del checkpoint de Mirai antes de un despliegue comercial, ya que la ficha no detalla esa cadena.
-- Adopción muy baja (618 descargas, 12 me gusta), por lo que el soporte de la comunidad y la resolución de incidencias serán limitados.
-- Configuraciones sensibles: el uso de `-np 1`, de CUDA 12 con cuBLASLt y de los tipos de caché KV adecuados es determinante para el consumo de VRAM y el rendimiento.
-- Fecha de publicación según los metadatos de Hugging Face: 26 de septiembre de 2026.
+- Compatibilidad restringida: el formato añade cuatro tipos ggml nuevos y no carga en llama.cpp estándar, LM Studio ni Ollama; solo funciona con mirai-s-ada o llama.cpp-mirai-s.
+- Es una conversión comunitaria, no una versión oficial de Mirai ni de Qwen.
+- La compresión a 2,4 bits puede degradar la calidad frente al modelo en F16 o BF16; no se han publicado benchmarks que cuantifiquen esa pérdida.
+- El vector de control para eliminar negativas es opcional y altera el comportamiento de seguridad del modelo; su uso en producción requiere evaluación propia.
+- Los idiomas soportados no están documentados.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no hay evaluaciones publicadas en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Qwen3.8-27B original, no indicada en la información proporcionada.
+- El contexto máximo de 262K depende del motor y de la configuración de la caché KV; en el fork de referencia baja a 128K o 74K según el tipo de caché.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/alesha-pro/Qwen3.8-27B-S-mirai-GGUF
-- Modelo base (checkpoint de Mirai): https://huggingface.co/trymirai/Qwen3.8-27B-S-experimental
-- Fork de llama.cpp necesario: https://github.com/alesha-pro/llama.cpp-mirai-s
-- Modelo base de Qwen (origen del encoder de visión): https://huggingface.co/Qwen/Qwen3.8-27B
-- llama.cpp upstream: https://github.com/ggml-org/llama.cpp
-- Mirai Labs (autores del códec y del plugin de vLLM): https://x.com/trymirai
+- Repositorio Hugging Face: https://huggingface.co/alesha-pro/Qwen3.8-27B-S-mirai-GGUF
+- Modelo base (Mirai): https://huggingface.co/trymirai/Qwen3.8-27B-S-experimental
+- Modelo Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Motor recomendado mirai-s-ada: https://github.com/professorpalmer/mirai-s-ada
+- Releases de mirai-s-ada: https://github.com/professorpalmer/mirai-s-ada/releases
+- Fork de referencia llama.cpp-mirai-s: https://github.com/alesha-pro/llama.cpp-mirai-s

@@ -2,122 +2,133 @@
 
 ## Resumen
 
-Qwen3.8-27B-BaseQuant-V1 es una redistribución cuantizada del modelo Qwen/Qwen3.8-27B, publicada por basecompute en octubre de 2026 bajo licencia Apache 2.0. No es un modelo nuevo: es un conjunto de tres builds GGUF (Small, Medium y Large) más sus equivalentes en el formato propietario `.base` del runtime baseRT, pensados para ejecutar el modelo de 27,3 mil millones de parámetros en hardware local con la menor pérdida posible de fidelidad respecto a BF16.
+BaseQuant-V1 es un conjunto de cuantizaciones del modelo Qwen3.8-27B, publicado por basecompute bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de una reempaquetadura del modelo base de Qwen en cinco tamanos de cuantizacion (XS, Small, Medium, Large y XL), en formato GGUF para llama.cpp y en un formato propietario denominado baseRT. El objetivo declarado es ofrecer cuantizaciones que se alejen menos de la distribucion BF16 de referencia que las cuantizaciones dinamicas equivalentes de unsloth.
 
-El problema que resuelve es concreto: las cuantizaciones dinámicas de unsloth son el estándar de facto para Qwen en llama.cpp, y basecompute compite frontalmente con ellas publicando pares del mismo tamaño de fichero pero con menor divergencia KL. En el agregado de seis datasets públicos (OpenHands, SWE-agent, Glaive function calling, OpenOrca, Tulu 3 y OpenHermes) declara un 15 % menos de KL en Small y Medium frente a sus homólogos de unsloth, incluido UD-Q4_K_M, que es el tamaño que corre la mayoría de la gente.
+El modelo subyacente tiene 27.320.697.856 parametros (unos 27,3 mil millones) y esta pensado para generacion de texto conversacional, incluyendo turnos de tool calling. La propuesta de valor del autor se mide en divergencia KL frente al modelo BF16: en texto no visto durante la construccion de los ficheros, las variantes Small, Medium y Large quedan entre un 17 % y un 34 % mas cerca de BF16 que las de unsloth del mismo tamano, mientras que XS mejora un 12-15 % y XL un 30-37 %.
 
-El modelo base es un transformer denso nativo multimodal (visión-lenguaje) de Alibaba, con atención híbrida Gated DeltaNet más atención completa periódica, orientado a código, flujos agénticos y automatización de oficina. Su relevancia ahora es que permite montar agentes locales con tool calling sobre una ventana de 32k tokens en una sola GPU de 24 GB, sin depender de API.
+El repositorio ocupa 169,7 GB e incluye tanto los GGUF como los bundles baseRT. La relevancia actual radica en que permite desplegar un modelo de 27B en hardware de consumo con perdida de fidelidad medible y documentada, algo poco habitual en el ecosistema de cuantizaciones.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (visión-lenguaje) con atención híbrida: Gated DeltaNet + atención completa periódica (heredada del modelo base) |
-| Parámetros totales | 27.320.697.856 (~27,3 B), dato real de safetensors del modelo base |
-| Parámetros activos | No aplica: modelo denso, no es MoE |
-| Longitud de contexto | No disponible en la model card; el ejemplo oficial de `llama-server` usa `-c 32768` |
-| Tipos de cuantización | GGUF en tres tamaños: Small 10,93 GB (~3 bits, equivalente a IQ3_XXS), Medium 16,41 GB (~4 bits, equivalente a Q4_K_M), Large 20,82 GB (~5 bits, equivalente a Q5_K_XL). Bundles `.base` de baseRT con los mismos tres tamaños |
-| Idiomas soportados | No disponibles |
+| Arquitectura | no disponible (modelo base Qwen3.8-27B; se infiere transformer, sin confirmar) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible en la model card (el ejemplo de uso emplea `-c 32768`) |
+| Tipos de cuantizacion | XS, Small, Medium, Large, XL (GGUF y bundle baseRT) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) y `.base` (baseRT) |
+| Formato de pesos | GGUF (llama.cpp), bundle `.base` (baseRT) |
+| Modelo base | Qwen/Qwen3.8-27B |
+| Tamano del repo | 169,7 GB |
+| Capa MTP | Presente en XL; ausente en XS |
+| Runtime minimo | baseRT 0.4.0 (Small), baseRT 0.4.1 (XS y XL) |
+
+Desglose de tamanos:
+
+| Variante | GGUF | Bundle baseRT | Equivalente unsloth |
+|---|---|---|---|
+| XS | 8,36 GB | si | UD-IQ2_S (8,37 GB) |
+| Small | 10,93 GB | si | UD-IQ3_XXS (10,93 GB) |
+| Medium | 16,41 GB | si | UD-Q4_K_M (16,46 GB) |
+| Large | 20,82 GB | si | UD-Q5_K_XL (20,88 GB) |
+| XL | 25,30 GB | si | UD-Q6_K_XL (25,30 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base de Qwen: un transformer denso con atención híbrida que combina capas Gated DeltaNet (atención lineal con estado recurrente) y capas de atención completa intercaladas periódicamente, lo que reduce el coste de la caché KV en contextos largos sin renunciar a recuperación exacta en las capas full attention. El modelo es nativo multimodal: procesa texto e imagen dentro del mismo transformer, sin torre de visión separada según la documentación del repositorio oficial. Cuenta con 27.320.697.856 parámetros y Capacidad de *thinking mode*, ya que la evaluación de basecompute se hizo con el razonamiento activado.
+No hay informacion en la documentacion proporcionada sobre la arquitectura interna del modelo base Qwen3.8-27B (tipo de transformer, atencion, capas MoE o composicion del dataset de entrenamiento). Lo unico confirmado es el numero de parametros (27.320.697.856) y la existencia de una capa MTP (multi-token prediction) que se conserva en la variante XL y se elimina en XS, replicando el criterio de unsloth en sus cuantizaciones equivalentes.
 
-Sobre el entrenamiento del modelo base no hay datos en la información disponible: ni número de tokens, ni composición del dataset, ni si hubo RLHF o DPO. Lo que sí está documentado es el proceso de cuantización de esta release: basecompute genera los ficheros con su propia herramienta baseRT y los evalúa de dos formas. Primero, con texto held-out (continuaciones del propio modelo, texto escrito, turnos de tool call y tool calls con respuesta final). Segundo, con evaluación *on-policy*: sobre prompts de seis datasets públicos, el modelo BF16 escribe la continuación completa con thinking activado y ambas cuantizaciones se puntúan a lo largo de esa trayectoria. La innovación declarada es el algoritmo de cuantización, no un cambio arquitectónico: los ficheros son del mismo tamaño o menores que los de unsloth para el mismo nivel de bits.
+El trabajo de basecompute se centra en el proceso de cuantizacion, no en el entrenamiento. La innovacion tecnica documentada es el formato baseRT, que no carga tensores Q8_0 y en su lugar almacena esos tensores en un formato propio de 8 bits con la misma tasa de 8,5 bits por peso. La variante XL incluye la cabeza MTP para `--speculate mtp-head`, lo que habilita decodificacion especulativa. El autor declara que cada GGUF es de tamano igual o inferior a su contraparte de unsloth, manteniendo mayor fidelidad al BF16.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso con modo thinking, heredado del modelo base.
-- Generación de código y resolución de tareas de ingeniería de software, con evaluación específica sobre prompts de OpenHands y SWE-agent.
-- Tool calling y function calling: la model card incluye benchmarks dedicados a turnos de llamada a herramientas y a la respuesta final tras la llamada, con datos de Glaive function calling.
-- Flujos agénticos: el modelo base está posicionado por Qwen para *agentic workflows* y automatización de oficina.
-- Multilingüismo: capacidad declarada del modelo base, pero sin listado de idiomas en esta ficha técnica; no disponible.
-- Visión: el modelo base es nativo visión-lenguaje, pero la model card de esta release no documenta si los GGUF incluyen el proyector multimodal (`mmproj`) necesario para entrada de imagen.
-- Conversacional: etiquetado como `conversational` y `text-generation` en Hugging Face.
-- Compatible con endpoints: etiqueta `endpoints_compatible` en el repo.
+- Generacion de texto conversacional multi-turno, segun el pipeline declarado (`text-generation`) y la etiqueta `conversational`.
+- Tool calling / function calling: el autor evalua explicitamente turnos de tool calls y combinaciones de tool calls con respuestas finales, lo que indica soporte funcional.
+- Razonamiento multi-paso y agentes: los prompts de evaluacion provienen de OpenHands y SWE-agent, entornos de agentes de codigo.
+- Modo thinking: las continuaciones de referencia se generan con "thinking on", lo que sugiere soporte de modo de razonamiento extendido en el modelo base.
+- Decodificacion especulativa mediante cabeza MTP en la variante XL (`--speculate mtp-head`).
+- Capacidades multilingues: no disponibles.
+- Vision, audio u otras modalidades: no disponibles; los ficheros XS son explicitamente solo texto.
 
 ## Casos de uso
 
-- Agentes de código en local: con la variante Medium (16,41 GB) se puede ejecutar un agente tipo SWE-agent en una RTX 4090, resolviendo parches sobre repositorios sin enviar el código a un servicio externo. La evaluación on-policy sobre SWE-agent muestra un KL de 0,00708, un 22 % mejor que el cuantizado equivalente de unsloth.
-- Automatización de tool calling en producción: el modelo mantiene baja divergencia en turnos de llamada a función (KL 0,0099 en Medium, 0,0127 en unsloth), lo que se traduce en menos probabilidad de emitir un JSON malformado o un nombre de herramienta inventado. Adecuado para orquestadores que encadenan APIs internas.
-- Asistente de oficina y generación documental: el modelo base está optimizado para tareas de productividad; con la variante Large (20,82 GB) y 32k de contexto se pueden resumir y reescribir documentos largos conservando estructura y estilo.
-- Atención al cliente multi-turno: la ventana de 32k tokens del ejemplo oficial permite mantener historiales largos con contexto de producto, aunque conviene validar la longitud real de contexto del modelo base antes de dimensionar.
-- Inferencia en Apple Silicon: los bundles `.base` de baseRT están pensados para Metal; el repositorio del modelo base indica que Q4 necesita unos 24 GB de memoria unificada (ajustado) y Q8 más de 48 GB. Un Mac con 24-32 GB puede correr Medium.
-- Evaluación de cuantizaciones: sirve como referencia para medir el impacto de la pérdida de precisión en un pipeline propio, ya que publica KL por dataset y por tamaño.
-- Despliegue en CI/CD: `llama-server` con `-ngl 99` y 32k de contexto se puede levantar como servicio HTTP interno para tareas de revisión de código o generación de tests.
+- Despliegue local en estaciones de trabajo con GPU de consumo: la variante Medium (16,41 GB) o Large (20,82 GB) permite ejecutar un modelo de 27B en una RTX 4090 de 24 GB con llama.cpp y `-ngl 99`, manteniendo una divergencia KL baja frente a BF16.
+- Agentes de codigo autonomos: los datos de evaluacion sobre OpenHands y SWE-agent muestran que la cuantizacion preserva el comportamiento en turnos de tool calling, adecuado para pipelines de reparacion de bugs o navegacion de repositorios.
+- Servidores de inferencia con presupuesto de VRAM ajustado: la variante XS (8,36 GB) permite servir el modelo en GPUs de 12 GB o en configuraciones con offload parcial a CPU, a costa de mayor divergencia (KL de 0,0776 en continuaciones propias).
+- Function calling en produccion: la evaluacion sobre Glaive function calling (KL de 0,0098 en Medium) respalda su uso en asistentes que invocan APIs externas de forma estructurada.
+- Evaluacion comparativa de cuantizaciones: el repositorio sirve como referencia metodologica para equipos que necesitan medir el impacto de la cuantizacion con divergencia KL en lugar de solo perplejidad.
+- Sustitucion de BF16 en entornos con restricciones de memoria: la variante XL (25,30 GB) con cabeza MTP permite decodificacion especulativa manteniendo la capa de prediccion multi-token, util para reducir latencia en generacion larga.
+- Fine-tuning o destilacion sobre pesos cuantizados: no recomendado directamente; el uso previsto es inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos son de divergencia KL frente al modelo BF16, medidos en llama.cpp: menor KL significa una distribución de siguiente token más parecida a la de referencia. Cada celda muestra `unsloth / BaseQuant (variación)`.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor publica unicamente divergencia KL frente al modelo BF16, comparada con las cuantizaciones de unsloth del mismo tamano.
 
-Texto held-out (no usado para construir los ficheros):
+Texto no visto (held-out), KL menor es mejor. Formato: unsloth / BaseQuant (cambio).
 
-| Conjunto | Small vs UD-IQ3_XXS | Medium vs UD-Q4_K_M | Large vs UD-Q5_K_XL |
-|---|---|---|---|
-| Continuaciones del propio modelo | 0,0391 / 0,0308 (−21 %) | 0,00713 / 0,00555 (−22 %) | 0,00278 / 0,00200 (−28 %) |
-| Texto escrito | 0,5288 / 0,4318 (−18 %) | 0,2081 / 0,1579 (−24 %) | 0,1080 / 0,0716 (−34 %) |
-| Turnos de tool call | 0,0631 / 0,0526 (−17 %) | 0,0127 / 0,0099 (−22 %) | 0,00496 / 0,00354 (−29 %) |
-| Tool calls + respuestas finales | 0,0631 / 0,0523 (−17 %) | 0,0112 / 0,0090 (−20 %) | 0,00432 / 0,00320 (−26 %) |
+| Fuente | XS vs UD-IQ2_S | Small vs UD-IQ3_XXS | Medium vs UD-Q4_K_M | Large vs UD-Q5_K_XL | XL vs UD-Q6_K_XL |
+|---|---|---|---|---|---|
+| Continuaciones propias | 0,0914 / 0,0776 (-15 %) | 0,0391 / 0,0308 (-21 %) | 0,00713 / 0,00555 (-22 %) | 0,00278 / 0,00200 (-28 %) | 0,00126 / 0,00089 (-30 %) |
+| Texto escrito | 0,8349 / 0,7308 (-12 %) | 0,5288 / 0,4318 (-18 %) | 0,2081 / 0,1579 (-24 %) | 0,1080 / 0,0716 (-34 %) | 0,0886 / 0,0558 (-37 %) |
+| Turnos de tool call | no medido | 0,0631 / 0,0526 (-17 %) | 0,0127 / 0,0099 (-22 %) | 0,00496 / 0,00354 (-29 %) | no medido |
+| Tool calls + respuestas | no medido | 0,0631 / 0,0523 (-17 %) | 0,0112 / 0,0090 (-20 %) | 0,00432 / 0,00320 (-26 %) | no medido |
 
-Prompts públicos con evaluación on-policy:
+Prompts publicos (seis datasets), KL menor es mejor:
 
-| Fuente | Small vs UD-IQ3_XXS | Medium vs UD-Q4_K_M | Large vs UD-Q5_K_XL |
-|---|---|---|---|
-| OpenHands | 0,1190 / 0,0793 (−33 %) | 0,0212 / 0,0182 (−14 %) | 0,00450 / 0,00447 (−1 %) |
-| SWE-agent | 0,0449 / 0,0330 (−27 %) | 0,00912 / 0,00708 (−22 %) | 0,00293 / 0,00241 (−18 %) |
-| Glaive function calling | 0,0673 / 0,0628 (−7 %) | 0,0112 / 0,0098 (−13 %) | 0,00335 / 0,00325 (−2 %) |
-| OpenOrca | 0,0515 / 0,0431 (−16 %) | 0,00759 / 0,00624 (−18 %) | 0,00248 / 0,00231 (−7 %) |
-| Tulu 3 | 0,0470 / 0,0402 (−14 %) | 0,00730 / 0,00585 (−20 %) | 0,00238 / 0,00231 (−3 %) |
-| OpenHermes | 0,0445 / 0,0420 (−6 %) | 0,00639 / 0,00613 (−4 %) | 0,00203 / 0,00209 (+3 %) |
-| Agregado de los seis | 0,0539 / 0,0460 (−15 %) | 0,00861 / 0,00731 (−15 %) | 0,00262 / 0,00253 (−3 %) |
+| Fuente | XS vs UD-IQ2_S | Small vs UD-IQ3_XXS | Medium vs UD-Q4_K_M | Large vs UD-Q5_K_XL | XL vs UD-Q6_K_XL |
+|---|---|---|---|---|---|
+| OpenHands | 0,1831 / 0,1284 (-30 %) | 0,1190 / 0,0793 (-33 %) | 0,0212 / 0,0182 (-14 %) | 0,00450 / 0,00447 (-1 %) | 0,00219 / 0,00118 (-46 %) |
+| SWE-agent | 0,1006 / 0,0955 (-5 %) | 0,0449 / 0,0330 (-27 %) | 0,00912 / 0,00708 (-22 %) | 0,00293 / 0,00241 (-18 %) | 0,00118 / 0,00102 (-14 %) |
+| Glaive function calling | 0,1825 / 0,1652 (-9 %) | 0,0673 / 0,0628 (-7 %) | 0,0112 / 0,0098 (-13 %) | 0,00335 / 0,00325 (-3 %) | 0,00128 / 0,00102 (-20 %) |
+| OpenOrca | 0,1431 / 0,1174 (-18 %) | 0,0515 / 0,0431 (-16 %) | 0,00759 / 0,00624 (-18 %) | 0,00248 / 0,00231 (-7 %) | 0,000969 / 0,000861 (-11 %) |
+| Tulu 3 | 0,1404 / 0,1182 (-16 %) | 0,0470 / 0,0402 (-14 %) | 0,00730 / 0,00585 (-20 %) | 0,00238 / 0,00231 (-3 %) | 0,000992 / 0,000863 (-13 %) |
+| OpenHermes | 0,1277 / 0,1183 (-7 %) | 0,0445 / 0,0420 (-6 %) | 0,00639 / 0,00613 (-4 %) | 0,00203 / 0,00209 (+3 %) | 0,000761 / 0,000702 (-8 %) |
+| Todos los seis | 0,1441 / 0,1242 (-14 %) | 0,0539 / 0,0460 (-15 %) | 0,00861 / 0,00731 (-15 %) | 0,00262 / 0,00253 (-3 %) | 0,00106 / 0,000880 (-17 %) |
 
-Latencia y throughput: no disponibles.
+Observacion: en Large sobre OpenHermes y Tulu 3, la mejora es marginal o nula (incluso +3 % en OpenHermes), lo que sugiere que a ese tamano la ventaja frente a unsloth se reduce.
 
 ## Requisitos de hardware
 
-- Small (10,93 GB de pesos): encaja en GPU consumer de 16 GB (RTX 4070 Ti Super, 4080, 5070 Ti) dejando margen para caché KV; en 12 GB (RTX 3060 12 GB, 4070) solo con contexto corto y offload parcial a RAM.
-- Medium (16,41 GB): requiere 24 GB de VRAM para contexto amplio; RTX 3090, RTX 4090, RTX 5090 o GPUs de datacenter tipo L4/A10G de 24 GB. En 16 GB no cabe con caché KV relevante.
-- Large (20,82 GB): 24 GB queda muy justo; recomendable 32 GB o más (A100 40 GB, H100, RTX 5090 de 32 GB).
-- Apple Silicon: el repositorio del modelo base en baseRT indica ~24 GB de memoria unificada para Q4 (ajustado) y más de 48 GB para Q8, lo que sitúa Medium en Mac de 24-32 GB y Large en Mac de 32-48 GB.
-- Repositorio completo: 100,7 GB. Conviene descargar un solo fichero con `--include` o `hf download` apuntando al GGUF concreto.
-- Despliegue documentado: llama.cpp (`llama-server -hf ... -hff <fichero> -c 32768 -ngl 99`), SuperFluid (`--runtime llamacpp`) y baseRT (`basert serve`). La variante Small en baseRT exige versión 0.4.0 o superior.
-- vLLM, TGI y Ollama no están documentados en la información disponible; al ser GGUF estándar deberían funcionar en Ollama y en llama.cpp, pero sin garantía del autor.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - XS: 8,36 GB.
+  - Small: 10,93 GB.
+  - Medium: 16,41 GB.
+  - Large: 20,82 GB.
+  - XL: 25,30 GB.
+- GPU recomendadas: no especificadas por el autor. Por tamano, las variantes Medium y Large encajan en una RTX 4090 (24 GB) con contexto limitado; XS y Small caben en GPUs de 12-16 GB (RTX 4070 Ti Super, RTX 4080, A4000).
+- Cabe en GPU de consumo: si, todas las variantes salvo XL, que requiere 24 GB o mas y deja poco margen para la cache KV.
+- Opciones de despliegue: llama.cpp (`llama-server`), SuperFluid (`superfluid serve --runtime basert`) y baseRT (`basert serve`). No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La variante XL soporta decodificacion especulativa via cabeza MTP, lo que deberia reducir latencia de generacion, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| basecompute/Qwen3.8-27B-BaseQuant-V1 | 27,3 B (denso) | No disponible | GGUF + `.base` | Apache 2.0 | Menor KL que unsloth en 23 de 24 comparaciones publicadas |
-| unsloth/Qwen3.8-27B-GGUF (UD-IQ3_XXS, UD-Q4_K_M, UD-Q5_K_XL) | 27,3 B (denso) | No disponible | GGUF | Apache 2.0 (heredada) | Mismos tamaños de fichero (10,93 / 16,46 / 20,88 GB); referencia de comparación directa |
-| Qwen/Qwen3.8-27B (BF16) | 27,3 B (denso) | No disponible | safetensors | Apache 2.0 | Modelo de referencia en precisión completa; requiere ~55 GB en BF16 |
-| basecompute/Qwen3.8-27B (builds baseRT) | 27,3 B (denso) | No disponible | `.base` | Apache 2.0 | Orientado a inferencia local en Apple Silicon con Metal |
+| basecompute/Qwen3.8-27B-BaseQuant-V1 | 27,3 B | no disponible | GGUF, baseRT | Apache 2.0 | Cuantizacion con menor KL que unsloth en la mayoria de pruebas |
+| unsloth/Qwen3.8-27B-GGUF | 27,3 B | no disponible | GGUF | Apache 2.0 (heredada) | Referencia de comparacion del autor; cuantizaciones dinamicas UD |
+| Qwen/Qwen3.8-27B (BF16) | 27,3 B | no disponible | safetensors | Apache 2.0 | Modelo original sin cuantizar; requiere ~54 GB en BF16 |
+
+La comparativa se limita al mismo modelo base en distintas cuantizaciones, ya que la documentacion no aporta datos frente a modelos de otros autores.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización, no una mejora: el techo de calidad es el del modelo Qwen3.8-27B en BF16. Cualquier defecto del base (alucinación, sesgos) se hereda.
-- Pérdida de fidelidad medible: en texto escrito, Small pasa de un KL de 0,0391 a 0,5288 según el conjunto, es decir, el caso donde la cuantización a 3 bits se aleja más de BF16. Para generación creativa o prosa larga conviene Medium o Large.
-- La ventaja frente a unsloth no es universal: en el dataset OpenHermes con la variante Large, BaseQuant obtiene 0,00209 frente a 0,00203 de unsloth (+3 %), y en Glaive y OpenHands con Large la mejora es de solo el 1-2 %.
-- Idiomas soportados: no documentados en la model card. No se debe asumir cobertura multilingüe sin evaluarla.
-- Longitud de contexto oficial del modelo base: no disponible en la información proporcionada. El valor de 32768 del ejemplo de `llama-server` es una configuración de arranque, no una especificación verificada.
-- Soporte de visión incierto en estos ficheros: la model card no menciona proyector multimodal ni `mmproj`. Si se necesita entrada de imagen, hay que verificar los ficheros antes de diseñar la aplicación.
-- Sesgos conocidos: no documentados por el autor.
-- Licencia Apache 2.0, que permite uso comercial y modificación, pero conviene revisar los términos del modelo base de Qwen y de los datasets de calibración antes de un despliegue en producción.
-- Dependencia de tooling específico: la variante Small en formato `.base` requiere baseRT 0.4.0 o superior, lo que añade una dependencia de runtime poco extendida.
-- Sin benchmarks de tareas: no hay MMLU, HumanEval ni GSM8K publicados, solo KL. La KL mide fidelidad respecto a BF16, no calidad absoluta.
-- Descarga pesada: el repo completo son 100,7 GB; conviene descargar solo el fichero necesario.
-- Modelo con pocas señales de la comunidad: 692 descargas y 14 likes en el momento de la consulta, lo que implica poca validación independiente.
+- No es un modelo nuevo: hereda todos los sesgos, riesgos de alucinacion y limitaciones del Qwen3.8-27B original, sobre el que no se aporta informacion.
+- La evaluacion se basa exclusivamente en divergencia KL, no en benchmarks de tarea. Una KL baja no garantiza que el rendimiento en tareas concretas se mantenga.
+- En la variante Large, la mejora frente a unsloth es practicamente nula en prompts publicos (media del -3 %) y negativa en OpenHermes (+3 %); el beneficio se concentra en XS, Small, Medium y XL.
+- La variante XS es solo texto y carece de capa MTP, por lo que no admite decodificacion especulativa.
+- baseRT no carga tensores Q8_0; la variante XL usa un formato propio de 8 bits. Esto limita la portabilidad a otras herramientas fuera de baseRT y SuperFluid.
+- La variante Small requiere baseRT 0.4.0 o superior; XS y XL requieren 0.4.1. El uso con versiones anteriores no esta soportado.
+- La longitud de contexto no esta documentada; el ejemplo de llama.cpp usa 32768 tokens, pero no se confirma como maximo.
+- No se especifican idiomas soportados, lo que impide garantizar calidad multilingue mas alla de lo que ofrezca el modelo base.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B, ya que la cuantizacion no altera los terminos del original.
+- El repositorio ocupa 169,7 GB; descargar solo el fichero necesario, no el repo completo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/basecompute/Qwen3.8-27B-BaseQuant-V1
-- Blog de la release: https://huggingface.co/blog/basecompute/base-quant-v1
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Cuantizaciones de referencia de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Builds baseRT del modelo base: https://huggingface.co/basecompute/Qwen3.8-27B
-- Runtime SuperFluid: https://superfluid.sh/install.sh
-- Página del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
-- Registro en free2aitools: https://free2aitools.com/model/basecompute/qwen3.8-27b-basequant-v1
+- Modelo en Hugging Face: https://huggingface.co/basecompute/Qwen3.8-27B-BaseQuant-V1
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Cuantizaciones de referencia (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Instalacion de SuperFluid: https://superfluid.sh/install.sh
+- Paper, blog o repositorio de baseRT: no disponible
+- Demo: no disponible

@@ -2,83 +2,88 @@
 
 ## Resumen
 
-El modelo `gearwave00001/Huihui-Qwen3.8-27B-abliterated-nvfp4-NInfer` es una variante cuantizada y "abliterated" (sin restricciones de seguridad) del modelo Qwen3.8-27B, desarrollado por el usuario gearwave00001. La técnica de abliteration elimina los mecanismos de rechazo y censura del modelo original, lo que permite generar contenido que normalmente sería bloqueado. Esta versión concreta utiliza cuantización NVFP4 (NVIDIA FP4) y está optimizada para inferencia en GPUs NVIDIA, lo que reduce los requisitos de memoria y acelera la ejecución.
+Huihui-Qwen3.8-27B-abliterated-nvfp4-NInfer es un artefacto de inferencia publicado por el usuario gearwave00001 que contiene el modelo huihui-ai/Huihui-Qwen3.8-27B-abliterated convertido al formato propietario .ninfer de NInfer, con pesos en precisión mixta nvfp4/fp8. No se trata de un checkpoint de Transformers, ni de una distribución de safetensors, ni de un fichero GGUF: es un artefacto empaquetado exclusivamente para el runtime NInfer, orientado a GPUs Blackwell (sm120) como la RTX 5090.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación. Según la información disponible, soporta un contexto de 262 000 tokens, modo de pensamiento (thinking mode) y entrada multimodal (texto e imágenes). No se han publicado detalles sobre el entrenamiento original, pero se infiere que parte del modelo Qwen3.8-27B de Alibaba, al que se le ha aplicado la técnica de abliteration.
+El modelo subyacente es un Qwen3.8 de 27B parámetros en su variante "abliterated", es decir, con las direcciones de rechazo eliminadas mediante técnicas de abliteración aplicadas por huihui-ai sobre el modelo original de Qwen. La cuantización nvfp4 reduce el peso del repositorio a 23,7 GB, lo que permite ejecutar un modelo de 27B en GPUs de consumo con memoria de 32 GB.
 
-La relevancia de este modelo radica en su combinación de tamaño medio (27B parámetros), contexto muy largo, capacidades multimodales y ausencia de filtros de seguridad, lo que lo hace atractivo para aplicaciones de investigación, generación creativa y experimentación, aunque con riesgos asociados a su falta de moderación.
+La relevancia de esta ficha es doble: por un lado documenta un caso práctico de empaquetado de precisión mixta para hardware Blackwell; por otro, advierte de que el formato cerrado y la modificación abliterated condicionan fuertemente su uso en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 27B (inferido del nombre) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262 000 tokens (segun articulo web) |
-| Tipos de cuantizacion | NVFP4 (FP4 de NVIDIA) |
+| Arquitectura | transformer (heredada de Qwen/Qwen3.8-27B; detalles no disponibles) |
+| Parámetros totales | 27B (según denominación del modelo base) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | nvfp4 y fp8 (precisión mixta); no se ofrece GGUF, AWQ ni GPTQ |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (presumiblemente safetensors) |
+| Licencia | Apache 2.0 (heredada de Qwen/Qwen3.8-27B) |
+| Formato de pesos | .ninfer (artefacto propietario de NInfer); no safetensors, no GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. Por el nombre, se trata de una version de Qwen3.8-27B, que probablemente sigue una arquitectura transformer con mezcla de expertos (MoE) o densa, aunque no se confirma. La tecnica de abliteration consiste en modificar los pesos del modelo para eliminar las direcciones de activacion asociadas al rechazo de contenido, un proceso que no requiere reentrenamiento completo sino una intervencion post-entrenamiento.
+La arquitectura corresponde al modelo base Qwen/Qwen3.8-27B, del que no se proporcionan detalles en la información disponible (número de capas, tipo de atención, composición del dataset ni número de tokens de entrenamiento). Sobre esa base, huihui-ai aplicó un proceso de abliteración que elimina las direcciones de activación asociadas al rechazo, dando lugar a Huihui-Qwen3.8-27B-abliterated. Posteriormente, gearwave00001 convirtió ese modelo al formato .ninfer con cuantización mixta nvfp4/fp8, una actualización fechada el 9-12-26 para la versión "dflash" de NInfer.
 
-El entrenamiento original del modelo base no esta documentado en la informacion proporcionada. No se conocen datos sobre el dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion NVFP4 es una optimizacion para hardware NVIDIA que reduce el peso de los parametros a 4 bits, lo que disminuye la memoria necesaria y mejora el rendimiento en GPUs compatibles.
+La innovación técnica destacable no está en el entrenamiento sino en el empaquetado: el uso de nvfp4 (formato de coma flotante de 4 bits con bloque de escala) combinado con fp8 para determinadas capas permite reducir el repositorio a 23,7 GB y explotar los tensor cores de quinta generación de las GPUs Blackwell (sm120). No se documentan datos de RLHF, DPO ni decodificación especulativa en la información disponible.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: al ser un modelo de 27B, ofrece capacidades solidas en tareas de lenguaje natural, aunque no se han publicado benchmarks especificos.
-- Modo de pensamiento (thinking mode): segun el articulo web, el modelo soporta un modo de razonamiento extendido que permite generar cadenas de pensamiento antes de responder.
-- Entrada multimodal: acepta tanto texto como imagenes, lo que permite tareas de vision-lenguaje.
-- Contexto largo: con 262 000 tokens de ventana, puede manejar documentos extensos, conversaciones multi-turno y analisis de grandes volumenes de texto.
-- Ausencia de filtros de seguridad: al ser abliterated, no rechaza contenido explicito, violento o controvertido, lo que puede ser util en investigacion o generacion creativa sin restricciones.
+- Generación de texto y razonamiento conversacional, heredados del modelo Qwen3.8 subyacente.
+- Generación de código y matemáticas: capacidades esperables en la familia Qwen3.8, aunque no se detallan en la model card.
+- Multilingüismo: no confirmado; la model card no enumera idiomas.
+- Tool calling y function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Modo thinking: no documentado.
+- Visión y audio: no documentado; el nombre del modelo no sugiere modalidad adicional.
+- Efecto de la abliteración: se eliminan los rechazos del modelo original, lo que amplía el rango de respuestas generadas, incluidas las que el modelo base declinaría.
 
 ## Casos de uso
 
-- Generacion creativa sin censura: escritores y artistas pueden usar el modelo para explorar temas tabu o contenido explicito sin que el sistema se niegue a responder, gracias a la abliteration.
-- Analisis de documentos largos: con su contexto de 262k tokens, es adecuado para resumir libros completos, informes extensos o codigo fuente de grandes proyectos.
-- Asistencia en investigacion academica: permite analizar articulos cientificos, extraer conclusiones y generar hipotesis, incluso en areas donde los modelos censurados podrian limitar la discusion.
-- Desarrollo de agentes conversacionales: su capacidad de razonamiento y contexto largo facilita la construccion de chatbots que mantienen conversaciones coherentes a lo largo de muchas interacciones.
-- Procesamiento de imagenes con texto: al aceptar entradas visuales, puede describir imagenes, responder preguntas sobre ellas o generar texto a partir de capturas.
-- Experimentacion en IA de codigo abierto: al estar bajo Apache 2.0 y ser cuantizado, es un candidato para probar tecnicas de inferencia eficiente en GPUs consumer.
+- Investigación sobre alineación y abliteración: el artefacto permite estudiar empíricamente cómo cambia el comportamiento de un modelo de 27B al eliminar las direcciones de rechazo, comparando respuestas con el modelo base original.
+- Evaluación de cuantización nvfp4 en Blackwell: sirve para medir la degradación de calidad y la ganancia de throughput al pasar de fp16/bf16 a nvfp4/fp8 en una RTX 5090, con un modelo de 27B que ocupa 23,7 GB.
+- Despliegue local en estaciones de trabajo con RTX 5090: al caber en 32 GB de VRAM, permite ejecutar un modelo de 27B en una sola GPU de consumo mediante el runtime NInfer.
+- Generación creativa sin restricciones de contenido: la variante abliterated es adecuada para escritura de ficción, guiones o roleplay donde el modelo base aplicaría filtros de rechazo.
+- Prototipado de asistentes conversacionales de dominio general: el tamaño de 27B ofrece un equilibrio entre calidad y coste de inferencia para pruebas internas.
+- Benchmarking de runtimes alternativos: útil para comparar NInfer frente a vLLM, llama.cpp o TGI en el mismo hardware, siempre que exista una ruta de conversión equivalente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo especifico.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: al ser un modelo de 27B con cuantizacion FP4 (4 bits), el peso aproximado es de 13.5 GB (27B * 0.5 bytes). Con overhead de inferencia, se estima que necesita entre 16 y 20 GB de VRAM, por lo que podria caber en una RTX 4090 (24 GB) o RTX 3090 (24 GB).
-- GPU recomendadas: NVIDIA con soporte FP4, como RTX 40 series (Ada Lovelace) o superiores, o GPUs de datacenter como A100, H100 o L40S.
-- En consumer GPU: si, en tarjetas con 24 GB de VRAM o mas, aunque la velocidad dependera de la optimizacion del runtime.
-- Opciones de despliegue: se menciona que puede ejecutarse con Ollama (`ollama run huihui_ai/Qwen3.8-abliterated`), aunque esa referencia es para la version sin cuantizar. Para esta variante NVFP4, se recomienda usar NVIDIA TensorRT-LLM o vLLM con soporte FP4.
-- Latencia y throughput: no se dispone de datos medidos. En general, FP4 reduce el ancho de banda de memoria, lo que puede mejorar el throughput en comparacion con FP16, pero depende del hardware.
+- VRAM estimada: 23,7 GB de pesos en disco; en VRAM se requiere al menos esa cifra más overhead de KV cache y activaciones, por lo que se recomienda un mínimo de 32 GB.
+- GPU recomendadas: NVIDIA RTX 5090 (32 GB, sm120) es el objetivo declarado; cualquier GPU Blackwell con soporte sm120. No se garantiza funcionamiento en arquitecturas anteriores (Ampere, Ada) por la dependencia de nvfp4.
+- GPU de consumo: sí, cabe en RTX 5090. En RTX 4090 (24 GB) el margen es insuficiente para los pesos más el contexto.
+- Despliegue: exclusivamente mediante el runtime NInfer (https://github.com/Neroued/ninfer). No es compatible con vLLM, llama.cpp, Ollama ni TGI sin conversión previa.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Cuantizacion | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.8-27B-abliterated (este) | 27B | 262k | Apache 2.0 | NVFP4 | Sin censura, multimodal |
-| huihui-ai/Qwen3-8B-abliterated | 8B | no disponible | Apache 2.0 | no disponible | Version mas pequena, sin censura |
-| Huihui-Qwen3.6-27B-abliterated | 27B | no disponible | Apache 2.0 | no disponible | Version anterior de la misma familia |
+| Huihui-Qwen3.8-27B-abliterated-nvfp4-NInfer | 27B | no disponible | .ninfer (nvfp4/fp8) | Apache 2.0 | Hugging Face, solo NInfer |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B | no disponible | safetensors (presumiblemente) | Apache 2.0 | Hugging Face, Transformers |
+| Qwen/Qwen3.8-27B | 27B | no disponible | safetensors | Apache 2.0 | Hugging Face, Transformers |
 
-No se dispone de datos de rendimiento comparativo. La principal diferencia entre estas variantes es el tamano, la cuantizacion y la version base de Qwen.
+La diferencia principal frente a las alternativas es el formato: el artefacto NInfer solo se ejecuta en su runtime, mientras que los otros dos son checkpoints estándar compatibles con el ecosistema Transformers. En cuanto a comportamiento, la variante abliterated difiere del modelo Qwen original por la ausencia de rechazos.
 
 ## Limitaciones y advertencias
 
-- Ausencia de filtros de seguridad: al ser abliterated, el modelo puede generar contenido ofensivo, ilegal o peligroso sin restricciones. No es apto para aplicaciones orientadas al publico general sin una capa de moderacion externa.
-- Riesgo de alucinacion: como cualquier LLM, puede inventar informacion, especialmente en temas especializados o cuando se le pide razonar en modo thinking.
-- Sesgos: no se han documentado sesgos especificos, pero al derivar de un modelo base, puede heredar sesgos presentes en los datos de entrenamiento originales.
-- Limitaciones de idioma: no se especifican los idiomas soportados; probablemente el modelo base de Qwen tiene buen soporte para chino e ingles, pero no se confirma.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el usuario debe asumir la responsabilidad del contenido generado.
-- Compatibilidad de hardware: la cuantizacion NVFP4 requiere GPUs NVIDIA con soporte FP4; en otro hardware, el modelo podria no funcionar correctamente o requerir conversion.
+- Formato cerrado: el artefacto .ninfer no es un checkpoint de Transformers ni GGUF; no puede cargarse con bibliotecas estándar ni convertirse fácilmente a otros formatos sin herramientas específicas.
+- Dependencia de hardware: la cuantización nvfp4 requiere GPUs Blackwell (sm120); no funcionará en Ampere, Ada ni en GPUs de otros fabricantes.
+- Abliteración: la eliminación de las direcciones de rechazo incrementa el riesgo de generar contenido dañino, sesgado o inexacto, y reduce las salvaguardas del modelo original.
+- Alucinación: no se documentan evaluaciones de fidelidad; el riesgo es el habitual de un modelo de 27B sin datos de benchmark publicados.
+- Idiomas: no se especifican los idiomas soportados; no se debe asumir cobertura multilingüe sin verificación.
+- Contexto: se desconoce la longitud máxima de contexto efectiva en este empaquetado.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen y la modificación abliterated pueden estar sujetos a las condiciones de Qwen; conviene revisar el LICENSE enlazado antes de desplegar.
+- Mantenimiento: el repositorio tiene 2 likes y 3265 descargas, con autor único no oficial; no hay garantía de soporte ni de actualizaciones más allá de la indicada el 9-12-26.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-abliterated-nvfp4-NInfer
-- Articulo sobre Huihui-Qwen3.8-27B-abliterated: https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html
-- Repositorio de huihui-ai/Qwen3-8B-abliterated: https://huggingface.co/huihui-ai/Qwen3-8B-abliterated
-- Repositorio de Huihui-Qwen3.6-27B-abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated
-- GitHub sobre Qwen3.8-27B: https://github.com/qwen3-8-27b/qwen3-8-27b
+- Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
+- Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
+- Licencia: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
+- Repositorio NInfer: https://github.com/Neroued/ninfer

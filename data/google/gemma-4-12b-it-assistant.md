@@ -2,76 +2,92 @@
 
 ## Resumen
 
-El modelo `google/gemma-4-12B-it-assistant` es un drafter de Multi-Token Prediction (MTP) diseñado por Google DeepMind para acelerar la inferencia del modelo Gemma 4 12B Unified mediante decodificación especulativa. Este checkpoint complementa al modelo principal: predice varios tokens por adelantado que el modelo objetivo verifica en paralelo, logrando aceleraciones de hasta 3x sin degradar la calidad de las respuestas. Con 422,8 millones de parámetros, es un modelo ligero pensado para entornos de baja latencia y despliegue en dispositivos locales.
+Gemma 4 12B it assistant es un checkpoint auxiliar de Google DeepMind disenado especificamente para decodificacion especulativa mediante Multi-Token Prediction (MTP). No es un modelo conversacional autonomo, sino un modelo borrador (drafter) que se acopla a un modelo objetivo de la familia Gemma 4 para predecir varios tokens por delante, que el modelo principal verifica en paralelo. El resultado es una aceleracion de decodificacion de hasta 3x manteniendo exactamente la misma calidad que la generacion estandar.
 
-A diferencia del modelo Gemma 4 12B completo (11,95B parámetros, multimodal, contexto de 256K tokens), este drafter es un componente auxiliar que no está diseñado para generación autónoma, sino para integrarse en pipelines de decodificación especulativa. Su licencia Apache 2.0 facilita su uso comercial y su integración en infraestructuras existentes. La relevancia actual radica en la creciente demanda de inferencia eficiente en modelos grandes, donde la decodificación especulativa se ha convertido en una técnica estándar para reducir costes y latencia.
+El checkpoint forma parte del ecosistema Gemma 4, una familia multimodal que procesa texto, imagen y audio (audio nativo en E2B, E4B y 12B) y genera texto. La familia cubre cinco tamanos (E2B, E4B, 12B, 26B A4B y 31B), con arquitecturas densas y MoE, ventanas de contexto de hasta 256K tokens y soporte de mas de 140 idiomas. El modelo 12B del que deriva este drafter es la variante "Unified", con arquitectura sin codificadores externos que proyecta parches de imagen y formas de onda de audio directamente al espacio de embeddings del LLM.
+
+La relevancia practica de este checkpoint es la latencia: al reducir el numero de pasos de decodificacion secuencial, habilita aplicaciones de baja latencia y despliegue en dispositivo. El repositorio ocupa 0,9 GB y el recuento real de parametros en safetensors es de 422.856.964, muy inferior a los 11,95B del modelo 12B completo, lo que confirma su naturaleza de drafter compacto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (detalles especificos no disponibles) |
-| Parametros totales | 422.856.964 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (heredado del modelo base, 256K tokens) |
-| Tipos de cuantizacion | No disponible (pesos en safetensors, precision no especificada) |
-| Idiomas soportados | Mas de 140 idiomas (segun la familia Gemma 4) |
+| Arquitectura | Transformer decoder-only derivado de Gemma 4 12B Unified, especializado como drafter MTP para decodificacion especulativa |
+| Parametros totales | 422.856.964 (segun safetensors); el modelo objetivo Gemma 4 12B Unified tiene 11,95B |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible para el drafter; el modelo 12B Unified soporta 256K tokens |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible en la ficha del drafter; la familia Gemma 4 soporta mas de 140 idiomas |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El drafter MTP es un modelo transformer denso de tamano reducido (422M parametros) que se entrena conjuntamente con el modelo Gemma 4 12B Unified. Su funcion es predecir multiples tokens futuros en una sola pasada, que luego el modelo principal verifica en paralelo durante la decodificacion especulativa. No se han publicado detalles especificos sobre el numero de capas, dimensiones ocultas o el dataset de entrenamiento de este drafter en la informacion disponible.
+El checkpoint es un modelo borrador para Multi-Token Prediction integrado en un pipeline de decodificacion especulativa. La arquitectura subyacente hereda el diseno del Gemma 4 12B Unified: transformer decoder-only sin codificadores multimodales dedicados, que proyecta parches de imagen y formas de onda de audio directamente al espacio de embeddings mediante capas lineales ligeras. El modelo 12B base emplea atencion hibrida que intercala atencion local de ventana deslizante (1024 tokens) con atencion global completa, garantizando que la ultima capa sea siempre global; las capas globales usan Keys y Values unificados y Proportional RoPE (p-RoPE) para optimizar memoria en contextos largos. El vocabulario es de 262K tokens y el modelo base tiene 48 capas.
 
-La familia Gemma 4, a la que pertenece, emplea una atencion hibrida que intercala ventanas deslizantes locales con atencion global completa, ademas de tecnicas como p-RoPE y Keys/Values unificados para optimizar memoria en contextos largos. Sin embargo, no se confirma si el drafter replica estas innovaciones o utiliza una arquitectura mas simple. El entrenamiento del drafter esta orientado a maximizar la precision de las predicciones multiples sin aumentar significativamente el coste computacional.
+El entrenamiento especifico del drafter no esta detallado en la informacion disponible (numero de tokens, composicion del dataset, uso de RLHF/DPO). La model card solo indica que el drafter se obtiene extendiendo el modelo base con un modelo mas pequeno y rapido, y que su uso en decodificacion especulativa garantiza la misma calidad que la generacion estandar del modelo objetivo. No se dispone de detalles sobre el proceso de destilacion o alineacion del checkpoint auxiliar.
 
 ## Capacidades
 
-- Prediccion multiple de tokens (MTP) para decodificacion especulativa, permitiendo que el modelo principal verifique varias propuestas en paralelo.
-- Aceleracion de inferencia de hasta 3x en comparacion con la generacion autoregresiva estandar, manteniendo exactamente la misma calidad de salida.
-- Compatible con pipelines de inferencia que soporten decodificacion especulativa, como vLLM, TGI o implementaciones personalizadas.
-- Disenado para entornos de baja latencia y despliegue en dispositivos locales (portatiles, estaciones de trabajo).
-- No es un modelo autonomo: no genera texto por si mismo, sino que actua como asistente del modelo Gemma 4 12B.
+- Decodificacion especulativa: predice varios tokens por delante para que el modelo objetivo los verifique en paralelo, con aceleraciones de hasta 3x.
+- Calidad identica a la generacion estandar: la verificacion del modelo objetivo garantiza que la salida no se degrada.
+- Baja latencia: orientado a aplicaciones interactivas y despliegue en dispositivo.
+- Herencia multimodal del modelo 12B Unified: texto, imagen y audio como entrada (la capacidad efectiva del drafter depende del pipeline).
+- Soporte de system prompt nativo en la familia Gemma 4, que permite conversaciones estructuradas y controlables.
+- Modos de razonamiento configurables ("thinking modes") en los modelos de la familia.
+- Soporte nativo de function calling y flujos agenticos en los modelos Gemma 4.
+- Capacidades multilingues de la familia: mas de 140 idiomas (no confirmado de forma especifica para el drafter).
 
 ## Casos de uso
 
-- Inferencia de baja latencia en produccion: integrar el drafter en un servidor de inferencia que sirva Gemma 4 12B para reducir el tiempo de respuesta en aplicaciones interactivas como chatbots o asistentes virtuales.
-- Despliegue en entornos con recursos limitados: al reducir el numero de pasos de decodificacion, se disminuye el consumo energetico y la carga computacional, permitiendo ejecutar el modelo 12B en GPUs de gama media o incluso en CPU con cuantizacion.
-- Procesamiento por lotes de alto rendimiento: en pipelines de generacion masiva (resumen de documentos, generacion de codigo), la decodificacion especulativa aumenta el throughput sin sacrificar calidad.
-- Desarrollo de agentes autonomos: al acelerar la generacion de respuestas, se mejora la capacidad de razonamiento multi-paso en tareas de planificacion y ejecucion de herramientas.
-- Prototipado rapido en entornos de investigacion: permite experimentar con el modelo Gemma 4 12B en hardware modesto antes de escalar a infraestructuras mayores.
-- Aplicaciones on-device: junto con el modelo base cuantizado, el drafter facilita la ejecucion local en portatiles de gama alta o dispositivos moviles, manteniendo una experiencia fluida.
+- Aceleracion de inferencia en produccion: integrado como drafter en un pipeline de decodificacion especulativa junto al Gemma 4 12B Unified, reduce la latencia por token hasta 3x sin cambiar la distribucion de salida.
+- Asistentes de baja latencia en movil y portatil: al ocupar 0,9 GB y tener 423M de parametros, el checkpoint cabe en memoria de dispositivos con recursos limitados y acelera la generacion local.
+- Chat interactivo en tiempo real: la reduccion de pasos secuenciales de decodificacion mejora la fluidez percibida en conversaciones multi-turno.
+- Generacion de codigo en pipelines de CI/CD: combinado con el modelo objetivo, acelera la generacion de parches y sugerencias en herramientas de desarrollo sin sacrificar exactitud.
+- Transcripcion y descripcion de audio en dispositivo: el modelo 12B Unified procesa audio de forma nativa; el drafter acelera la generacion de texto asociada en escenarios de accesibilidad.
+- Procesamiento de documentos largos: con el modelo objetivo de 256K tokens de contexto, el drafter reduce el coste de decodificacion en tareas de resumen y extraccion sobre documentos extensos.
+- Despliegue en edge con presupuesto energetico ajustado: la menor huella de memoria y el menor numero de pasos de decodificacion reducen el consumo energetico en inferencia local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para este drafter MTP en la informacion disponible. Los datos de rendimiento de la familia Gemma 4 (como MMLU, HumanEval o GSM8K) corresponden a los modelos completos, no a los drafters. La unica metrica declarada es la aceleracion de hasta 3x en velocidad de decodificacion, sin perdida de calidad, pero no se proporcionan cifras numericas concretas.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de rendimiento proporcionada por el autor es una aceleracion de decodificacion de hasta 3x en pipelines de decodificacion especulativa, con calidad identica a la generacion estandar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al ser un modelo de 422M parametros, el drafter solo requiere aproximadamente 0,9 GB en precision fp16 (tamano del repo). Sin embargo, debe ejecutarse junto con el modelo Gemma 4 12B, que necesita alrededor de 24 GB en fp16 o menos con cuantizacion.
-- GPU recomendadas: para el conjunto drafter + modelo base, se recomienda al menos una GPU con 24 GB de VRAM (RTX 3090/4090, A10G) para fp16, o GPUs con 12-16 GB si se usa cuantizacion de 4 bits.
-- En consumer GPU: el drafter cabe en cualquier GPU moderna, pero el modelo 12B completo requiere una GPU de gama alta. Para uso exclusivo del drafter (por ejemplo, en pruebas), una GPU de 4 GB es suficiente.
-- Opciones de despliegue: compatible con frameworks que soporten decodificacion especulativa, como vLLM, TensorRT-LLM o Hugging Face Transformers con integracion MTP. Tambien puede usarse con llama.cpp si se convierte a formato GGUF.
-- Latencia y throughput: no se proporcionan datos numericos, pero la aceleracion esperada es de hasta 3x en comparacion con la generacion autoregresiva estandar.
+- VRAM estimada: el checkpoint en safetensors ocupa 0,9 GB; en FP16 requiere aproximadamente 0,85 GB solo para pesos, mas overhead de KV cache y activaciones.
+- GPU recomendadas: al ser un drafter, debe co-residir con el modelo objetivo Gemma 4 12B Unified. Para el conjunto se recomienda A100 40/80 GB, H100 o RTX 4090 24 GB (el 12B en cuantizacion de 8 bits o inferior).
+- Cabe en GPU de consumo: si, el drafter por si solo cabe en cualquier GPU consumer moderna; el modelo objetivo de 12B requiere al menos 16-24 GB de VRAM en cuantizacion.
+- Opciones de despliegue: transformers (libreria declarada), con soporte de endpoints compatibles; la decodificacion especulativa requiere un runtime que implemente MTP (no se detallan integraciones concretas como vLLM o llama.cpp en la informacion disponible).
+- Latencia y throughput: hasta 3x de aceleracion en decodificacion segun el autor; no se publican valores absolutos de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros drafters MTP comparables en el ecosistema open source. Los drafters de decodificacion especulativa suelen ser especificos de cada familia de modelos (por ejemplo, los drafters de Llama 3 o Mistral), y no existen datos publicos que permitan una comparacion directa en parametros, contexto o rendimiento. Por tanto, esta seccion no esta disponible.
+| Modelo | Parametros | Contexto | Funcion | Licencia |
+|---|---|---|---|---|
+| Gemma 4 12B it assistant (este) | 423M | no disponible (objetivo: 256K) | Drafter MTP para decodificacion especulativa | Apache 2.0 |
+| Gemma 4 12B Unified | 11,95B | 256K | Modelo multimodal objetivo (texto, imagen, audio) | Apache 2.0 |
+| Gemma 4 31B Dense | 30,7B | 256K | Modelo denso multimodal (texto, imagen) | Apache 2.0 |
+| Gemma 4 26B A4B MoE | no disponible (MoE) | 256K | Modelo MoE multimodal | Apache 2.0 |
+
+La comparativa directa con drafters de otros fabricantes (por ejemplo, los checkpoints EAGLE o Medusa) no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Este modelo no es un generador autonomo: debe usarse exclusivamente como drafter en un pipeline de decodificacion especulativa junto con el modelo Gemma 4 12B. Intentar usarlo de forma independiente producira resultados incompletos o incorrectos.
-- No se han publicado detalles sobre sesgos o alucinaciones especificos del drafter, pero al ser un componente auxiliar, su impacto en la calidad final depende del modelo principal.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos adicionales de la licencia Gemma 4 (enlace en la documentacion oficial) para asegurar el cumplimiento.
-- La longitud de contexto efectiva y las capacidades multimodales del drafter no estan documentadas; se asume que hereda las del modelo base, pero no se garantiza.
-- No se proporcionan garantias de rendimiento en hardware especifico; la aceleracion de 3x es un valor orientativo que puede variar segun la implementacion y la carga de trabajo.
+- No es un modelo autonomo: requiere un modelo objetivo Gemma 4 compatible y un runtime que implemente decodificacion especulativa MTP; usarlo de forma aislada no produce resultados utiles.
+- La calidad final depende integramente del modelo objetivo; el drafter solo aporta velocidad.
+- No se detallan sesgos conocidos ni evaluaciones de seguridad especificas para este checkpoint.
+- Riesgo de alucinacion: heredado del modelo objetivo; la verificacion paralela evita degradacion respecto a la generacion estandar, pero no elimina las alucinaciones del modelo principal.
+- Idiomas soportados no confirmados para el drafter; la cobertura multilingue de 140 idiomas corresponde a la familia, no necesariamente a este checkpoint.
+- Restricciones de licencia: Apache 2.0, con enlace a la licencia especifica de Gemma 4; conviene revisar los terminos de uso adicionales de Google para uso comercial.
+- No se publican datos de cuantizacion soportada ni de rendimiento en contextos largos para el drafter.
 
 ## Enlaces
 
-- [Hugging Face - google/gemma-4-12B-it-assistant](https://huggingface.co/google/gemma-4-12B-it-assistant)
-- [Coleccion Gemma 4 en Hugging Face](https://huggingface.co/collections/google/gemma-4)
-- [Blog de lanzamiento de Gemma 4 12B](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/)
-- [Documentacion oficial de Gemma 4](https://ai.google.dev/gemma/docs/core)
-- [Informe tecnico (arXiv)](https://arxiv.org/abs/2607.02770)
-- [Model card de Gemma 4 en Google AI](https://ai.google.dev/gemma/docs/core/model_card_4)
-- [Pagina de Gemma 4 en DeepMind](https://deepmind.google/models/gemma/gemma-4/)
+- Hugging Face: https://huggingface.co/google/gemma-4-12B-it-assistant
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
+- GitHub: https://github.com/google-gemma
+- Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
+- Documentacion: https://ai.google.dev/gemma/docs/core
+- Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770
+- Licencia: https://ai.google.dev/gemma/docs/gemma_4_license
+- Pagina de modelos Gemma: https://deepmind.google/models/gemma/

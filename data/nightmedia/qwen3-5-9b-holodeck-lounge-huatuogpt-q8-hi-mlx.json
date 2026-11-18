@@ -54,8 +54,6 @@
     "zh",
     "base_model:DavidAU/Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING-X8b",
     "base_model:merge:DavidAU/Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING-X8b",
-    "base_model:DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic",
-    "base_model:merge:DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic",
     "base_model:FreedomIntelligence/HuatuoGPT-3-9B",
     "base_model:merge:FreedomIntelligence/HuatuoGPT-3-9B",
     "base_model:Jackrong/Qwopus3.5-9B-Coder",
@@ -72,7 +70,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 50,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

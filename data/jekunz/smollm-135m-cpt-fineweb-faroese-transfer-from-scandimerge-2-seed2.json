@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "jekunz/smollm-135m-cpt-fineweb-faroese-transfer-from-scandimerge-2-seed2",
+  "slug": "jekunz-smollm-135m-cpt-fineweb-faroese-transfer-from-scandimerge-2-seed2",
+  "author": "jekunz",
+  "url": "https://huggingface.co/jekunz/smollm-135m-cpt-fineweb-faroese-transfer-from-scandimerge-2-seed2",
+  "created_at": "2026-11-18T10:50:48.000Z",
+  "updated_at": "2026-11-18T10:50:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "fo",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:jekunz/smollm135m-da1-is1-ties",
+    "base_model:finetune:jekunz/smollm135m-da1-is1-ties",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "context_length": null,
+  "base_model": "jekunz/smollm135m-da1-is1-ties",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows help and supportWindows help and support",
+      "url": "https://www.microsoft.com/en-us/windows/help-and-support?msockid=3289eeab14db6ca42876f6be15e26d70",
+      "snippet": "Find the Windows help and support you need. From account setup to device support, search for quick answers and helpful resources …"
+    }
+  ]
+}

@@ -2,100 +2,95 @@
 
 ## Resumen
 
-Ling-3.1-flash es un modelo de lenguaje de tipo mezcla de expertos (MoE) con razonamiento híbrido, desarrollado por inclusionAI (grupo Ant), que se presenta como una evolución de Ling-3.0-flash orientada a tareas del mundo real. El modelo combina 560.000 millones de parámetros totales con 25.000 millones de parámetros activos por token, lo que permite desplegarlo con un coste de cómputo por token muy inferior al de un modelo denso de tamaño equivalente.
+Ling-3.1-flash es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con razonamiento híbrido nativo, desarrollado por inclusionAI (organización vinculada a Ant Group). Se presenta como una evolución de Ling-3.0-flash orientada a tareas del mundo real: agentes de propósito general, búsqueda, productividad de oficina e ingeniería de software. Con 560B parámetros totales y 25B activos por token, ofrece una ventana de contexto de 1M tokens, lo que lo sitúa en la categoría de modelos de contexto ultralargo con activación reducida.
 
-La innovación arquitectónica principal es un diseño híbrido que alterna capas de atención lineal KDA (Kimi Delta Attention) con capas de atención Gated MLA en una proporción 7:1 (63 capas KDA y 9 capas Gated MLA), lo que reduce el coste de la ventana de contexto larga. El modelo declara una ventana de contexto de 1 millón de tokens en la model card, aunque proveedores de inferencia como OpenRouter anuncian 262.144 tokens de contexto con 262.144 tokens de salida máxima; esta discrepancia conviene verificarla antes de integrarlo en producción.
+La arquitectura combina atención lineal y atención completa en una proporción 7:1: 63 capas KDA (Kimi Delta Attention, atención lineal) y 9 capas Gated MLA (Multi-head Latent Attention con compuerta), más 4 capas densas. El modelo emplea 512 expertos enrutados con 8 activos por token y 1 experto compartido, con un tamaño oculto de 4096 y un vocabulario de 157184 tokens.
 
-Es relevante ahora porque ataca directamente tareas agénticas y de productividad real (agentes generales, búsqueda, ofimática, ingeniería de software y uso de terminal), con soporte para tool calling, modo de razonamiento activable y decodificación especulativa MTP/NEXTN. La licencia MIT y la disponibilidad en Hugging Face y OpenRouter lo hacen atractivo para despliegues comerciales, aunque su huella de memoria (573,8 GB de repositorio, pesos en FP8) exige hardware de centro de datos.
+Su relevancia actual radica en la combinación de contexto de 1M tokens, activación de solo 25B parámetros (lo que abarata la inferencia frente a modelos densos del mismo tamaño) y un enfoque explícito en tareas agénticas de largo horizonte, con soporte para decodificación especulativa MTP (NEXTN) y despliegue verificado en SGLang y vLLM sobre hardware Hopper y Blackwell.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida lineal (63 capas KDA + 9 capas Gated MLA, ratio 7:1; 4 capas densas) |
-| Parametros totales | 560.000 millones (572.120.680.768 según safetensors) |
-| Parametros activos | 25.000 millones por token |
-| Longitud de contexto | 1.000.000 de tokens (model card); 262.144 tokens según OpenRouter |
-| Tipos de cuantizacion | FP8 (pesos publicados en FP8); otras cuantizaciones no disponibles |
+| Arquitectura | Hybrid-linear MoE (63 capas KDA + 9 capas Gated MLA, proporción 7:1; 4 capas densas) |
+| Parametros totales | 560B (572.120.680.768 según safetensors) |
+| Parametros activos | 25B por token |
+| Longitud de contexto | 1M tokens |
+| Tipos de cuantizacion | FP8 (pesos publicados en fp8 según tags); no se detallan otras cuantizaciones en la información disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (FP8), custom_code |
-| Cabezas de atencion | 64 |
-| Hidden size | 4096 |
-| Expertos enrutados | 512 (8 activados) + 1 experto compartido |
-| Tamano intermedio de experto | 1280 |
-| Tamano intermedio denso | 10240 |
-| Tamano de vocabulario | 157184 |
-| Pipeline | text-generation |
-| Tamano del repositorio | 573,8 GB |
+| Formato de pesos | safetensors (custom_code, requiere `trust_remote_code`) |
+
+Otros datos de arquitectura: 512 expertos enrutados, 8 activos, 1 experto compartido; 64 cabezas de atención; hidden size 4096; expert intermediate size 1280; dense intermediate size 10240; vocabulario 157184.
 
 ## Arquitectura y entrenamiento
 
-Ling-3.1-flash es un transformer MoE con atención híbrida. El bloque se compone de 72 capas transformer en total, de las cuales 63 son capas KDA (lineales) y 9 son capas Gated MLA, manteniendo una proporción 7:1 que reduce el coste computacional y de memoria de la ventana de contexto. Añade 4 capas densas. La capa MoE emplea enrutamiento con 512 expertos enrutados y 1 experto compartido, activando 8 expertos por token, con un tamaño intermedio de experto de 1280 y un tamaño intermedio denso de 10240. La dimensión oculta es 4096 y el vocabulario alcanza 157.184 entradas.
+Ling-3.1-flash es un transformer MoE híbrido que intercala capas de atención lineal KDA con capas de atención completa Gated MLA en proporción 7:1. Esta mezcla busca reducir el coste computacional y de memoria del contexto largo (las capas lineales escalan de forma más favorable con la longitud de secuencia) manteniendo la calidad de recuperación de información que aporta la atención completa en las capas MLA. El modelo tiene 63 capas KDA, 9 capas Gated MLA y 4 capas densas, con 512 expertos enrutados de los que se activan 8 por token más un experto compartido, lo que da lugar a los 25B parámetros activos sobre un total de 560B.
 
-El modelo se describe como un modelo de razonamiento híbrido nativo, es decir, permite activar o desactivar el modo de pensamiento mediante el parámetro `enable_thinking` del chat template. Incorpora decodificación especulativa MTP/NEXTN, integrada en la imagen de SGLang, y optimizaciones de decodificación para arquitecturas Hopper (variables `SGLANG_ENABLE_FP8_BLOCK_GEMV` y `SGLANG_ENABLE_FUSED_KDA_OUTPUT_QUANT`, con aproximadamente un 10 % más de velocidad en decodificación con batch 1). No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
+No se han publicado en la información disponible detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. Sí se documenta soporte nativo de razonamiento híbrido (modo thinking activable mediante `enable_thinking`), decodificación especulativa MTP (NEXTN) integrada en SGLang y vLLM, y optimizaciones específicas para decodificación en Hopper (variables `SGLANG_ENABLE_FP8_BLOCK_GEMV` y `SGLANG_ENABLE_FUSED_KDA_OUTPUT_QUANT`, con ~10% de mejora en decode batch-1). El autor menciona también LingCode, un harness construido sobre el agente de código abierto Pi para tareas de codificación de largo horizonte (cientos de rondas de tool calls, compactación repetida de contexto), cuya liberación como open source está en consideración.
 
 ## Capacidades
 
-- Generación de texto y razonamiento híbrido, con modo de pensamiento activable mediante `chat_template_kwargs.enable_thinking`.
-- Razonamiento agéntico multi-paso y de horizonte largo (cientos de rondas de tool calls con compactación de contexto repetida, según el harness LingCode).
-- Tool calling y function calling, con parsers específicos en vLLM (`ling3` como tool-call-parser y reasoning-parser).
+- Generación de texto conversacional y razonamiento híbrido con modo thinking activable (`enable_thinking: true`).
+- Razonamiento multi-step y agentes de propósito general, con soporte para frameworks como Claude Code, Kilo Code, Qwen Code, Hermes Agent y OpenClaw.
+- Tool calling / function calling nativo, con parser dedicado (`--tool-call-parser ling3`) y razonamiento parseado (`--reasoning-parser ling3`) en vLLM.
 - Uso de terminal y herramientas de línea de comandos (evaluado en Terminal-Bench 4.0).
-- Ingeniería de software y tareas de repositorio (evaluado en SWE-bench Pro y FrontierSWE).
-- Productividad ofimática y tareas de oficina (evaluado en GDPVal-AA V2.1).
-- Dominio sanitario (HealthBench Professional) y financiero.
-- Integración declarada con frameworks de agentes de código: Claude Code, Kilo Code, Qwen Code, Hermes Agent y OpenClaw.
-- Capacidades multilingües: no disponible.
-- Visión y audio: no disponible.
+- Ingeniería de software: resolución de issues y tareas de código (SWE-bench Pro, FrontierSWE).
+- Búsqueda y recuperación de información sobre contexto ultralargo (1M tokens).
+- Tareas de oficina y productividad (GDPVal-AA V2.1, Automationbench).
+- Dominio sanitario (HealthBench Professional) y financiero, además de ciencia de materiales y STEM.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documentan capacidades de visión ni audio.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: con 1M de tokens de contexto (según la model card), el modelo puede mantener conversaciones multi-turno muy largas y consultar documentación extensa sin truncar, manteniendo coherencia a lo largo de sesiones prolongadas.
-- Agentes de codificación en producción: soporta tool calling y se integra en Claude Code, Kilo Code, Qwen Code y Hermes Agent, por lo que puede conectarse a pipelines de CI/CD para generar parches, ejecutar tests y resolver incidencias de repositorio de forma autónoma.
-- Automatización de tareas de terminal y DevOps: evaluado en Terminal-Bench 4.0, es adecuado para agentes que ejecutan comandos shell, diagnostican entornos y aplican correcciones en servidores.
-- Asistentes de productividad ofimática: con resultados declarados en GDPVal-AA V2.1, puede redactar, resumir y transformar documentos largos, hojas de cálculo y flujos administrativos con uso de herramientas.
-- Búsqueda aumentada sobre corpus extensos: la ventana de contexto larga y el modo de razonamiento permiten razonar sobre grandes volúmenes de documentos recuperados en un único contexto, útil para motores de respuesta empresarial.
-- Soporte en dominios regulados: los resultados declarados en HealthBench Professional y en el dominio financiero lo orientan a asistentes de apoyo clínico-administrativo y análisis financiero con supervisión humana.
-- Ejecución de flujos agénticos vía API gestionada: disponible en OpenRouter con precios de 0,075 USD por millón de tokens de entrada y 0,225 USD por millón de salida, lo que permite prototipar sin infraestructura propia.
+- Agentes de codificación de largo horizonte: integrado en harnesses como LingCode o Claude Code, el modelo puede ejecutar cientos de rondas de tool calls con compactación repetida de contexto, aprovechando la ventana de 1M tokens y el soporte de decodificación especulativa para mantener el throughput.
+- Automatización de terminal y DevOps: con Terminal-Bench 4.0 como referencia, el modelo puede interpretar salidas de shell, encadenar comandos y corregir errores en pipelines de CI/CD mediante tool calling nativo.
+- Resolución de issues en repositorios: uso tipo SWE-bench Pro/FrontierSWE para localizar el fallo, editar múltiples ficheros y validar con tests, con contexto suficiente para incluir grandes porciones del repositorio.
+- Asistentes de oficina y ofimática: generación y edición de documentos, hojas de cálculo y flujos administrativos (evaluado en GDPVal-AA V2.1 y Automationbench), adecuado por su rendimiento en tareas del mundo real y su coste de activación reducido.
+- Búsqueda aumentada sobre corpus extensos: la ventana de 1M tokens permite ingerir documentación completa, expedientes o bases de conocimiento sin trocear, útil en atención al cliente técnica o soporte interno.
+- Aplicaciones sanitarias asistivas: HealthBench Professional sugiere utilidad en resumen de historiales y apoyo a la decisión, siempre con supervisión humana y validación regulatoria.
+- Análisis financiero y de materiales: el autor reporta mejoras en dominios especializados de finanzas y ciencia de materiales, aprovechables en extracción de datos de informes y revisión de literatura técnica.
+- Despliegue en clústeres Hopper/Blackwell: recetas verificadas en 8×H200 (TP8+EP8) y 4×GB300 (TP4+EP4) con SGLang, y en 8 GPUs con vLLM, lo que facilita su uso en entornos de producción a gran escala.
 
 ## Benchmarks y rendimiento
 
-La model card menciona evaluación en GDPVal-AA V2.1, HealthBench Professional, FrontierSWE, Terminal-Bench 4.0, SWE-bench Pro, Automationbench, MCP-Atlas y SkillsBench, pero no se han publicado en la información disponible los valores numéricos de estos benchmarks. Se indica que Ling-3.1-flash mejora respecto a Ling-3.0-flash en tareas del mundo real.
+El autor menciona evaluación en Terminal-Bench 4.0, SWE-bench Pro, FrontierSWE, GDPVal-AA V2.1, Automationbench, MCP-Atlas, SkillsBench, HealthBench Professional y benchmarks de finanzas y ciencia de materiales, pero los resultados numéricos se presentan únicamente en imágenes dentro de la model card y no están disponibles como texto en la información proporcionada.
 
-No se han publicado resultados de benchmarks numéricos (MMLU, HumanEval, GSM8K y similares) en la información disponible.
+No se han publicado resultados de benchmarks en formato numérico en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en FP8 ocupan aproximadamente 560 GB; el repositorio completo pesa 573,8 GB, por lo que no cabe en una sola GPU de centro de datos convencional.
-- Configuraciones verificadas según el autor: 8x H200 con paralelismo de tensor 8 y paralelismo de expertos 8 (TP8 + EP8); 4x GB300 con TP4 + EP4. También se citan recetas verificadas para H800, H100 y B200.
-- GPU recomendadas: H200, GB300, B200, H100, H800. El uso de FP8 y las optimizaciones Hopper sugieren que H100/H200 son el objetivo principal.
-- GPU de consumo: no cabe en GPUs de consumo (RTX 4090 y similares); el tamaño de pesos en FP8 supera ampliamente los 24 GB de una RTX 4090 y los 48 GB de una RTX 6000 Ada.
-- Opciones de despliegue: SGLang (recomendado, imagen `lmsysorg/sglang:dev-ling-3.1-flash` con soporte day-0, decodificación especulativa NEXTN y optimizaciones Hopper) y vLLM (compilación desde la rama `vllm`). Ollama, llama.cpp y TGI no aparecen citados en la información disponible.
-- Parámetros de sampling recomendados: temperature 1.0, top_p 0.95, top_k 20, con `enable_thinking` activado para mejor rendimiento.
-- Latencia y throughput: no se proporcionan cifras concretas; solo la mejora aproximada del 10 % en decodificación con batch 1 al activar las optimizaciones Hopper.
+- Pesos publicados en FP8 con un tamaño de repositorio de 573,8 GB; se requiere un mínimo de ~574 GB de VRAM agregada solo para los pesos, más caché KV y overhead.
+- Despliegue de referencia del autor: 8×H200 con tensor parallelism 8 y expert parallelism 8 en SGLang; alternativa en 4×GB300 con TP4+EP4.
+- vLLM: receta con `--tensor-parallel-size 8`, `--enable-expert-parallel`, `--mamba-cache-mode align` y decodificación especulativa MTP con 3 tokens.
+- Recetas verificadas para H200, GB300, H800, H100 y B200 según el cookbook de SGLang.
+- No cabe en GPUs de consumo (RTX 4090, 5090, etc.) por el tamaño de los pesos; se necesitan nodos multi-GPU de centro de datos.
+- Opciones de despliegue: SGLang (recomendado, imagen `lmsysorg/sglang:dev-ling-3.1-flash`), vLLM (rama `vllm` del repositorio, instalación editable con `VLLM_USE_PRECOMPILED=1`), y OpenRouter como servicio alojado.
+- Throughput y latencia: la información disponible solo indica una mejora de ~10% en decode batch-1 con las optimizaciones de Hopper; no se publican cifras absolutas de tokens/s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Ling-3.1-flash | 560B / 25B | 1M (card) / 262.144 (OpenRouter) | MIT | Hugging Face, OpenRouter, ModelScope |
-| DeepSeek-V3 | 671B / 37B | 128K | Licencia propia DeepSeek | Hugging Face |
-| Qwen3-235B-A22B | 235B / 22B | 128K (extensible) | Apache 2.0 | Hugging Face, ModelScope |
-| Kimi K2 | 1T / 32B | 128K | MIT modificada | Hugging Face |
+No se dispone en la información proporcionada de datos numéricos de benchmarks ni de especificaciones de modelos comparables que permitan una comparación rigurosa. A continuación se recogen únicamente los datos objetivos disponibles del modelo frente a lo que se conoce de forma general de la categoría:
 
-Los datos de rendimiento comparado no están disponibles en la información proporcionada. La comparativa se limita a parámetros, contexto, licencia y disponibilidad.
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Ling-3.1-flash | 560B / 25B | 1M | MIT | safetensors (fp8) |
+| Alternativas de la misma categoría (MoE de gran escala con contexto largo) | no disponible | no disponible | no disponible | no disponible |
+
+No disponible comparativa numérica con modelos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de contexto: la model card declara 1M de tokens, mientras que OpenRouter anuncia 262.144 tokens. Es necesario verificar la ventana real antes de diseñar flujos que dependan de un contexto muy largo.
-- Idiomas soportados: no disponibles en la información proporcionada; no se puede garantizar un rendimiento multilingüe equilibrado.
-- Sesgos conocidos: no se documentan en la información disponible.
-- Riesgo de alucinación: no se documenta mitigación específica; como en cualquier LLM, conviene validar las salidas en dominios sensibles (sanitario, financiero).
-- Restricciones de licencia: licencia MIT, que permite uso comercial con atribución de copyright y aviso de licencia; no se declaran restricciones adicionales.
-- Requiere `trust_remote_code` y código personalizado (`custom_code`), lo que implica ejecutar código del repositorio y revisar su contenido por seguridad.
-- Huella de hardware muy alta: 573,8 GB de repositorio y pesos FP8 de ~560 GB, lo que limita el despliegue a clústeres con múltiples aceleradores H100/H200/GB300/B200.
-- El harness LingCode, usado en las evaluaciones de codificación, no está confirmado como open source ("we are considering open-sourcing it in the future"), por lo que los resultados que dependen de él no son reproducibles con las herramientas públicas actuales.
-- No se han publicado detalles de entrenamiento (tokens, dataset, RLHF/DPO), lo que dificulta auditar su comportamiento.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad o alineación en la información disponible.
+- Riesgo de alucinación inherente a modelos generativos; no se publican tasas de factualidad ni evaluaciones de calibración.
+- Idiomas soportados no especificados: no hay garantía documentada de calidad multilingüe fuera de los idiomas de entrenamiento, que no se detallan.
+- El contexto de 1M tokens implica un coste de caché KV elevado; en la práctica se requiere gestión de caché (HiCache/Mooncake L3 en SGLang, `--mamba-cache-mode align` en vLLM) y planificación de memoria.
+- Requiere `trust_remote_code` y código personalizado (`bailing_hybrid`), lo que añade superficie de auditoría y dependencia de versiones concretas de SGLang/vLLM (ramas de desarrollo, no necesariamente estables).
+- Licencia MIT: permite uso comercial sin restricciones documentadas, pero conviene verificar las licencias de dependencias y del tokenizador/datos asociados.
+- El harness LingCode no está liberado como open source en el momento de la información; su disponibilidad futura no está garantizada.
+- No se documentan capacidades multimodales (visión/audio); no debe asumirse su disponibilidad.
+- El tamaño de 573,8 GB en FP8 limita el despliegue a clústeres multi-GPU; no es viable en hardware de consumo ni en una única GPU de centro de datos convencional.
 
 ## Enlaces
 
@@ -104,7 +99,4 @@ Los datos de rendimiento comparado no están disponibles en la información prop
 - ModelScope: https://modelscope.cn/organization/inclusionAI
 - OpenRouter: https://openrouter.ai/inclusionai/ling-3.1-flash
 - Cookbook de SGLang para Ling-3.1-flash: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash
-- Repositorio de vLLM (rama vllm): https://github.com/vllm-project/vllm
-- Ficha en benchable.ai: https://benchable.ai/models/inclusionai/ling-3.1-flash-20261002
-- Ficha en llm-stats.com: https://llm-stats.com/models/ling-3.1-flash
-- Ficha en neura.market: https://www.neura.market/models/inclusionai-ling-3-1-flash
+- Repositorio de vLLM (rama `vllm`): https://github.com/vllm-project/vllm

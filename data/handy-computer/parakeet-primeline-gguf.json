@@ -80,7 +80,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 26830,
+  "downloads_30d": 26558,
   "trending_score": 0,
   "parameters": 627052166,
   "parameters_human": "627.1M",
@@ -100,31 +100,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "handy-computer/parakeet-unified-en-0.6b-gguf · Hugging Face",
-      "url": "https://huggingface.co/handy-computer/parakeet-unified-en-0.6b-gguf",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "handy-computer/parakeet-tdt-0.6b-v2-gguf · Hugging Face",
-      "url": "https://huggingface.co/handy-computer/parakeet-tdt-0.6b-v2-gguf",
-      "snippet": "Original Model Card The section below is reproduced from nvidia/parakeet-tdt-.6b-v2 at commit 1b149a3 for offline reference. The upstream card is the authoritative source."
-    },
-    {
-      "title": "Handy Docs - Getting Started - handy.computer",
-      "url": "https://handy.computer/docs.html",
-      "snippet": "First Launch Choosing a Model On first launch, Handy will ask you to pick a speech-to-text model to download. All models run entirely on your device. Parakeet V3 is recommended for English and European languages. It&#x27;s generally very fast on all machines, and very accurate. Whisper is best for multilingual support with 99+ languages. Choose Medium for a good balance of transcription ..."
-    },
-    {
-      "title": "GitHub - cjpais/Handy: A free, open source, and extensible speech-to ...",
-      "url": "https://github.com/cjpais/handy",
-      "snippet": "A free, open source, and extensible speech-to-text application that works completely offline. Handy is a cross-platform desktop application that provides simple, privacy-focused speech transcription. Press a shortcut, speak, and have your words appear in any text field. This happens on your own computer without sending any information to the cloud."
-    },
-    {
-      "title": "Handy Docs - Models",
-      "url": "https://handy.computer/docs/models.html",
-      "snippet": "Parakeet NVIDIA&#x27;s Parakeet models are optimized for western languages. Parakeet V3 is the recommended model for most users. It&#x27;s fast, accurate, and supports 25 languages. Parakeet writes out numbers as words (e.g. \"one\", \"two\", \"three\") rather than digits. Language is detected automatically and cannot be manually specified."
-    }
-  ]
+  "sources": []
 }

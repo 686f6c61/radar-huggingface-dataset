@@ -43,7 +43,7 @@
     "region:us"
   ],
   "likes": 61,
-  "downloads_30d": 3739,
+  "downloads_30d": 3719,
   "trending_score": 11,
   "parameters": 72758053011,
   "parameters_human": "72.76B",
@@ -63,31 +63,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.8-Flash-Next - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
-    },
-    {
-      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "aixiaoma/Qwen3.8-Flash-Next-W4A16 · Hugging Face",
-      "url": "https://huggingface.co/aixiaoma/Qwen3.8-Flash-Next-W4A16",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
-      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
-      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
-    }
-  ]
+  "sources": []
 }

@@ -2,87 +2,93 @@
 
 ## Resumen
 
-GLiNER2.5 Multi es un modelo de extracción de información basado en esquemas desarrollado por Fastino Labs. Se trata del checkpoint multilingüe de la familia GLiNER2.5, construido sobre el encoder mDeBERTa-v3-base, con 287 millones de parámetros. Su principal innovación es una arquitectura de predicción de límites (boundary) que sustituye la enumeración de spans de longitud fija por un emparejamiento disperso de posiciones de inicio y fin, lo que permite extraer entidades de cualquier longitud dentro de la ventana codificada.
+GLiNER2.5 Multi es un modelo de extraccion de informacion basado en esquemas (schema-based information extraction) desarrollado por Fastino. Se trata del checkpoint multilingue de la familia GLiNER2.5, construido sobre el encoder mDeBERTa-v3-base con 287 millones de parametros totales. A diferencia de los modelos generativos, GLiNER2.5 es un modelo discriminativo de extraccion de spans que unifica en una sola arquitectura tareas de reconocimiento de entidades nombradas (NER), clasificacion de texto, extraccion de relaciones, analisis de sentimiento, clasificacion de intenciones y extraccion estructurada tipo JSON.
 
-El modelo unifica en un solo esquema tareas como el reconocimiento de entidades nombradas, la clasificación de texto (intención, sentimiento, tema), la extracción de registros estructurados, la extracción de relaciones y la puntuación de atributos de span. Está pensado para ejecutarse localmente en CPU, CUDA o MPS, sin necesidad de una API externa, lo que lo hace relevante para aplicaciones de extracción de información en entornos de producción con requisitos de privacidad o latencia.
+La innovacion principal reside en su arquitectura de fronteras (boundary architecture), que sustituye la rejilla tradicional de anchos de span fijos por un emparejamiento disperso de posiciones de inicio y fin. Esto permite extraer spans de cualquier longitud que quepa en la ventana codificada, sin las limitaciones de los enfoques basados en BIO tagging o en ventanas deslizantes. El modelo incorpora ademas decodificacion restringida (constrained decoding) mediante los modos `Classifier` y `JointIE`, que imponen restricciones entre etiquetas de distintas tareas o construyen grafos tipados de entidad-relacion.
 
-GLiNER2.5 Multi se distribuye bajo licencia Apache 2.0 y está disponible en formato safetensors. Su interfaz pública es común a toda la familia GLiNER2.5, con una carga mediante `AutoExtractor` que selecciona automáticamente la arquitectura `BoundaryExtractor`.
+El modelo es relevante porque ofrece una alternativa local, sin dependencia de APIs externas, para pipelines de extraccion de informacion en produccion. Con licencia Apache 2.0, 90.443 descargas y 301 likes en Hugging Face, se posiciona como la opcion por defecto para tareas multi-tarea multilingue dentro del ecosistema GLiNER2, que incluye variantes en ingles de 74M y 194M parametros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BoundaryExtractor (encoder mDeBERTa-v3-base) |
+| Arquitectura | Boundary architecture (encoder mDeBERTa-v3-base con cabeza de emparejamiento start/end) |
 | Parametros totales | 287.355.159 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (el encoder base de mDeBERTa-v3 soporta hasta 512 tokens, pero no se especifica en la documentacion) |
-| Tipos de cuantizacion | fp16 (soportado mediante `quantize=True`); otros formatos no documentados |
-| Idiomas soportados | multilingue (se indica "multilingual" y "en", sin lista exhaustiva) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | fp16 en GPU (flag `quantize=True`); no se detallan otros formatos |
+| Idiomas soportados | Multilingue, ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-GLiNER2.5 Multi emplea una arquitectura de extracción basada en límites (boundary). En lugar de enumerar todos los posibles spans de longitud fija, el modelo predice pares de posiciones de inicio y fin sobre el texto codificado, lo que permite extraer entidades de cualquier longitud sin restricciones de ancho predefinido. El encoder es mDeBERTa-v3-base, un transformer preentrenado multilingüe de la familia DeBERTa. El modelo integra además módulos de clasificación (Classifier) para imponer restricciones entre etiquetas y de extracción conjunta (JointIE) para producir grafos de entidades y relaciones tipadas.
+GLiNER2.5 Multi se construye sobre el encoder mDeBERTa-v3-base, un transformer encoder multilingue, al que se anade una cabeza de extraccion basada en fronteras. En lugar de predecir etiquetas BIO token a token o de evaluar una rejilla fija de anchos de span, el modelo empareja de forma dispersa posiciones de inicio y fin candidatas, lo que le permite representar spans de longitud arbitraria dentro de la ventana codificada. El checkpoint expone un campo `architecture` con valor `boundary` que hace que `AutoExtractor` seleccione automaticamente la clase `BoundaryExtractor` al cargar el modelo.
 
-No se han publicado detalles específicos sobre el volumen de datos de entrenamiento, la composición del dataset o el uso de técnicas como RLHF o DPO. La documentación indica que el modelo es multilingüe y que soporta tareas de extracción de entidades, clasificación de texto, extracción de registros estructurados, relaciones y atributos de span, todo ello mediante una interfaz de esquema definida por el usuario.
+El modelo unifica multiples tareas de extraccion de informacion en una sola pasada: entidades, clasificacion, registros estructurados, relaciones y atributos de span, todo definido mediante un esquema en tiempo de inferencia. Incorpora dos mecanismos de decodificacion restringida: `Classifier`, que aplica restricciones entre etiquetas de distintas tareas, y `JointIE`, que construye grafos tipados de entidad-relacion. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El paper asociado es arXiv:2507.18546.
 
 ## Capacidades
 
-- Extracción de entidades nombradas (NER) con etiquetas personalizadas, incluyendo soporte para descripciones de etiquetas específicas de dominio.
-- Clasificación de texto: intención, sentimiento, tema, entre otras, mediante el módulo `Classifier` que permite restricciones entre etiquetas.
-- Extracción de registros estructurados (records) y de atributos de span (por ejemplo, puntuar una entidad con una propiedad).
-- Extracción de relaciones entre entidades mediante el módulo `JointIE`, que genera grafos tipados de entidad-relación.
-- Soporte de decodificación con restricciones (constrained decoding) para garantizar coherencia entre etiquetas.
-- Capacidades multilingües, al estar basado en mDeBERTa-v3, aunque la documentación solo confirma inglés y multilingüe general.
-- Inferencia local en CPU, CUDA o MPS sin dependencias externas de API.
-- Carga mediante `AutoExtractor` que selecciona automáticamente la arquitectura `BoundaryExtractor`.
+- Extraccion de entidades nombradas (NER) con etiquetas definidas por el usuario en tiempo de inferencia, incluyendo descripciones para etiquetas especificas de dominio.
+- Extraccion de relaciones tipadas entre entidades mediante el modo `JointIE`.
+- Clasificacion de texto: sentimiento, tema, intencion y otras categorias definidas por esquema.
+- Extraccion estructurada de registros y salida en formato JSON.
+- Puntuacion de atributos de span (span attributes).
+- Decodificacion restringida para imponer consistencia entre tareas (`Classifier`) y construir grafos entidad-relacion tipados (`JointIE`).
+- Capacidades multilingues gracias al encoder mDeBERTa-v3-base.
+- Inferencia local en CPU, CUDA o MPS, sin necesidad de API externa.
+- Devolucion de offsets de caracteres en formato half-open (`text[start:end] == entity["text"]`) y puntuaciones de confianza opcionales.
+- Soporte de `torch.compile` y cuantizacion fp16 en GPU.
 
 ## Casos de uso
 
-- Extracción de entidades en documentos legales: identificar partes, fechas, cláusulas y montos en contratos con descripciones personalizadas para cada tipo de entidad, gracias a la capacidad de definir etiquetas con contexto semántico.
-- Análisis de atención al cliente: clasificar automáticamente la intención de los tickets de soporte (reclamación, consulta, devolución) y extraer entidades como número de pedido, producto o fecha, todo con un único modelo.
-- Extracción de relaciones en literatura biomédica: detectar pares de entidades (proteína, enfermedad, fármaco) y extraer la relación entre ellos mediante `JointIE`, útil para construir bases de conocimiento.
-- Clasificación de sentimiento en reseñas de productos: etiquetar el texto como positivo, negativo o neutro, y a la vez extraer los aspectos concretos mencionados (batería, pantalla, precio) con sus respectivos spans.
-- Extracción de registros estructurados desde formularios o correos: convertir textos no estructurados en JSON con campos definidos (nombre, dirección, fecha, etc.) para alimentar bases de datos o CRMs.
-- Análisis de textos financieros: identificar entidades como empresas, cifras, fechas y extraer relaciones de adquisición o fusión, con capacidad de procesar múltiples idiomas en un entorno corporativo.
+- Extraccion de entidades en dominios sanitarios: el modelo permite definir etiquetas como `medication`, `dosage`, `symptom` o `time` con descripciones en lenguaje natural, y extrae los valores con offsets exactos sobre el texto clinico, lo que facilita su integracion en sistemas de historia clinica electronica.
+- Procesamiento de documentos financieros: extraccion de entidades como empresas, productos, importes y fechas, junto con relaciones tipadas mediante `JointIE`, para alimentar pipelines de conciliacion o deteccion de fraude.
+- Clasificacion de tickets de soporte: uso del modo `Classifier` para asignar simultaneamente categoria, sentimiento e intencion a cada ticket, con restricciones cruzadas entre etiquetas para evitar combinaciones incoherentes.
+- Enriquecimiento de datos multilingues: al estar construido sobre mDeBERTa-v3-base, puede aplicarse a corpus en varios idiomas con el mismo esquema de extraccion, reduciendo la necesidad de modelos por idioma.
+- Extraccion estructurada tipo JSON desde texto libre: conversion de correos, contratos o articulos en registros estructurados definidos por esquema, adecuado para pipelines ETL.
+- Analisis de resenas y opinion: extraccion de atributos de span y clasificacion de sentimiento a nivel de aspecto, util para monitorizacion de marca.
+- Despliegue en entornos con recursos limitados: con 287M parametros y soporte de CPU, MPS y CUDA, puede ejecutarse en portatiles o estaciones de trabajo sin GPU dedicada para tareas de extraccion por lotes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 287M de parámetros y pesos en fp16, la inferencia requiere aproximadamente 574 MB de VRAM (287M × 2 bytes), aunque en la práctica se necesita memoria adicional para activaciones y contexto. Un GPU con 4 GB de VRAM es suficiente para inferencia en lote pequeño.
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (RTX 3060, RTX 4090, etc.). Para producción con alto throughput, se recomienda una A10, A100 o H100, aunque no es estrictamente necesario.
-- Se puede ejecutar en CPU sin GPU, aunque la latencia será mayor. La librería `gliner2[local]` soporta PyTorch y permite el uso de MPS en Macs.
-- Opciones de despliegue: la librería `gliner2` permite cargar el modelo con `AutoExtractor` y usar `torch.compile` para optimización. No se documenta integración con vLLM, llama.cpp u otros servidores de inferencia, pero al ser un modelo de encoder puro puede servirse con frameworks como FastAPI o Triton.
-- Latencia y throughput: no se han publicado datos específicos; al ser un modelo de encoder pequeño (287M), la inferencia en GPU es del orden de decenas de milisegundos por muestra, dependiendo del hardware y la longitud del texto.
+- VRAM estimada: con 287M parametros en fp32, el peso ronda 1,15 GB; en fp16, aproximadamente 0,57 GB. El repositorio ocupa 2,9 GB, lo que sugiere pesos adicionales o artefactos.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para fp16. Una RTX 4090, A100 o H100 ofrecen margen sobrado para lotes grandes y `torch.compile`.
+- Cabe en GPU de consumo: si, en cualquier GPU consumer moderna (GTX 1660, RTX 3060, RTX 4090) e incluso en CPU y Apple Silicon via MPS.
+- Opciones de despliegue: libreria `gliner2[local]` con `AutoExtractor`, soporte de `map_location` para `cpu`, `cuda` o `mps`, flag `quantize=True` para fp16 y `compile=True` para `torch.compile`. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, dado que es un modelo discriminativo y no generativo.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Encoder | Contexto | Tareas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| fastino/gliner2.5-multi-v1 | 287M | mDeBERTa-v3-base | no especificado | Entidades, clasificacion, relaciones, records | Apache 2.0 | Hugging Face |
-| fastino/gliner2.5-base-v1 | 194M | DeBERTa-v3-base | no especificado | Entidades, clasificacion, relaciones, records | Apache 2.0 | Hugging Face |
-| fastino/gliner2.5-small-v1 | 74M | DeBERTa-v3-xsmall | no especificado | Entidades, clasificacion, relaciones, records | Apache 2.0 | Hugging Face |
-| fastino/gliner2-multi-v1 (version anterior) | no disponible | mDeBERTa-v3-base | no especificado | Entidades, clasificacion | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Encoder | Idioma | Licencia | Uso |
+|---|---|---|---|---|---|
+| fastino/gliner2.5-multi-v1 | 287M | mDeBERTa-v3-base | Multilingue | Apache 2.0 | Checkpoint multi-tarea multilingue por defecto |
+| fastino/gliner2.5-base-v1 | 194M | DeBERTa-v3-base | Ingles | Apache 2.0 | Checkpoint multi-tarea en ingles por defecto |
+| fastino/gliner2.5-small-v1 | 74M | DeBERTa-v3-xsmall | Ingles | Apache 2.0 | Extraccion y clasificacion rapida en CPU |
 
-La comparativa se limita a la propia familia GLiNER2.5, ya que no se dispone de datos de otros modelos competidores en la información proporcionada.
+Los tres checkpoints comparten la misma API publica. La variante multi es la unica que cubre varios idiomas, a costa de un mayor numero de parametros y un encoder multilingue. No se dispone de datos de rendimiento comparativo entre las tres variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo está basado en mDeBERTa-v3, que tiene una longitud de contexto máxima de 512 tokens; aunque no se especifica, es probable que la extracción esté limitada a ese rango, lo que puede ser insuficiente para documentos muy largos.
-- No se han publicado resultados de benchmarks, por lo que no se puede evaluar su rendimiento cuantitativo frente a otros modelos de extracción.
-- Aunque es multilingüe, la documentación solo confirma inglés y un soporte general multilingüe; el rendimiento en idiomas específicos puede variar.
-- La extracción de entidades y relaciones puede producir falsos positivos o alucinaciones, especialmente con etiquetas poco descriptivas o en textos ambiguos.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe revisar las obligaciones de atribución y distribución.
-- No se han documentado sesgos específicos, pero al estar basado en un modelo preentrenado general, puede reflejar sesgos presentes en los datos de entrenamiento de mDeBERTa-v3.
+- Modelo discriminativo: no genera texto libre ni mantiene conversaciones; solo extrae y clasifica segun un esquema predefinido.
+- La longitud de contexto no esta documentada en la informacion disponible, lo que dificulta planificar el procesamiento de documentos largos.
+- Riesgo de extraccion incompleta o incorrecta si las etiquetas del esquema son ambiguas o no estan bien descritas; se recomienda usar descripciones para etiquetas de dominio.
+- El soporte multilingue depende de mDeBERTa-v3-base; el rendimiento en idiomas distintos del ingles puede variar y no se documentan evaluaciones por idioma.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, conviene revisar las dependencias de `gliner2[local]` y de PyTorch para cumplir con sus respectivas licencias.
+- No se documentan sesgos conocidos ni tasas de alucinacion en la informacion proporcionada; al ser un modelo extractivo, el riesgo de alucinacion se limita a spans mal delimitados o etiquetas mal asignadas.
+- La carga debe hacerse con `AutoExtractor`; el cargador legacy `GLiNER2.from_pretrained(...)` no despacha este checkpoint.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/fastino/gliner2.5-multi-v1
-- Repositorio GitHub de GLiNER2: https://github.com/fastino-ai/GLiNER2
-- Paper en arXiv: https://arxiv.org/abs/2507.18546
-- Web de Fastino Labs: https://fastino.ai/
-- Colección de la familia GLiNER2.5: https://huggingface.co/collections/fastino/gliner2-family
+- Hugging Face: https://huggingface.co/fastino/gliner2.5-multi-v1
+- Paper: https://arxiv.org/abs/2507.18546
+- Repositorio GitHub: https://github.com/fastino-ai/GLiNER2
+- Plataforma de fine-tuning: https://agent.fastino.ai
+- Reddit: https://www.reddit.com/r/GLiNER/
+- X/Twitter: https://x.com/fastinoAI
+- Checkpoint ingles base: https://huggingface.co/fastino/gliner2.5-base-v1
+- Checkpoint ingles small: https://huggingface.co/fastino/gliner2.5-small-v1

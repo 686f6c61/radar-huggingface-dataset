@@ -2,101 +2,109 @@
 
 ## Resumen
 
-TeamUNIVA/qwen3_asr_1.7b_ko es un ajuste fino (fine-tune) del modelo de reconocimiento automático del habla Qwen/Qwen3-ASR-1.7B, especializado en transcripción de coreano. Lo desarrolla TeamUNIVA y se publica como sucesor de su versión beta (`TeamUNIVA/qwen3_asr_1.7b_ko_beta`). El modelo parte de los pesos de la beta y se entrena con dos rondas de SFT (supervised fine-tuning) seguidas de aprendizaje por refuerzo con GSPO sobre un conjunto de datos ampliado. El objetivo es reducir la tasa de error en coreano respecto tanto al modelo base como a la beta, manteniendo un comportamiento aceptable en inglés.
+TeamUNIVA/qwen3_asr_1.7b_ko es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-ASR-1.7B de Alibaba, especializado en reconocimiento automático del habla (ASR) para coreano. Lo desarrolla TeamUNIVA y se presenta como la version estable y sucesora del modelo beta `qwen3_asr_1.7b_ko_beta`. El modelo parte de los pesos del beta y se entrena con dos rondas de SFT (supervised fine-tuning) seguidas de aprendizaje por refuerzo con GSPO sobre un conjunto de datos ampliado.
 
-El resultado declarado por el autor es una mejora de 2,03 puntos porcentuales de CER en el agregado de benchmarks coreanos (de 0,0686 en el base a 0,0483), con un empeoramiento de solo 0,27 puntos de WER en LibriSpeech en inglés (de 0,0250 a 0,0277). El repositorio ocupa 4,7 GB y contiene 2.349.217.408 parámetros según los tensores en safetensors, una cifra superior a los 1,7B que sugiere el nombre y que probablemente incluye el codificador de audio además del decodificador de lenguaje.
+El modelo resuelve el problema de la transcripcion de voz en coreano con alta precision, un idioma con morfologia aglutinante, abundantes homofonos y variacion en la notacion de numeros y acronimos que complica las metricas tradicionales. Con 2.349 millones de parametros (aproximadamente 2,35 mil millones), se posiciona en la gama de modelos ASR de tamano medio que pueden desplegarse en infraestructura razonable sin renunciar a calidad.
 
-Es relevante para equipos que necesiten ASR en coreano con licencia Apache 2.0 y un tamaño manejable en GPU de consumo, especialmente en dominios como atención al cliente telefónica, subtitulado o transcripción de reuniones, donde los benchmarks incluidos (clova_call, ksponspeech, common_voice_ko, zeroth, fleurs_ko) muestran ganancias claras frente al modelo base.
+Su relevancia actual radica en que mejora de forma consistente tanto al modelo base como al beta en los cinco benchmarks coreanos evaluados, con una reduccion agregada de 2,03 puntos porcentuales de CER (Character Error Rate) respecto al base, a costa de una degradacion minima en ingles (+0,27 puntos de WER en LibriSpeech). La licencia Apache 2.0 facilita su adopcion comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle; fine-tune de Qwen/Qwen3-ASR-1.7B (modelo ASR con codificador de audio y decodificador de lenguaje de la familia Qwen3) |
-| Parámetros totales | 2.349.217.408 (según safetensors; el nombre comercial indica 1.7B) |
-| Parámetros activos | No aplica (no consta como MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible; el repositorio solo publica pesos en safetensors (sin GGUF ni cuantizaciones precalculadas) |
-| Idiomas soportados | Coreano (objetivo del fine-tune); conserva capacidad de transcripción en inglés, evaluada en LibriSpeech |
+| Arquitectura | no disponible (modelo base Qwen3-ASR, arquitectura no detallada en la informacion proporcionada) |
+| Parametros totales | 2.349.217.408 (2,35 mil millones) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | coreano (ko); conserva capacidad residual en ingles |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información publicada no detalla la configuración interna (número de capas, dimensión oculta, mecanismo de atención, tamaño del codificador de audio). Lo que sí se documenta es el procedimiento de entrenamiento: el modelo se inicializa desde `TeamUNIVA/qwen3_asr_1.7b_ko_beta` y se somete a dos rondas de SFT seguidas de una fase de aprendizaje por refuerzo con GSPO (Group Sequence Policy Optimization), todo ello sobre un conjunto de datos de habla coreana ampliado respecto a la beta. No se especifican el número de tokens de audio procesados, la composición del corpus ni las fuentes concretas de los datos.
+La informacion disponible no detalla la arquitectura interna del modelo base Qwen3-ASR-1.7B (si es un transformer encoder-decoder, un modelo de audio integrado en un LLM o una variante hibrida). Lo que si se especifica es el proceso de ajuste: el modelo se inicializa desde `qwen3_asr_1.7b_ko_beta` y se somete a dos rondas de SFT sobre un conjunto de datos de voz en coreano ampliado, seguidas de una fase de aprendizaje por refuerzo con GSPO (Group Sequence Policy Optimization). Esta combinacion de SFT iterativo mas RL busca optimizar directamente la tasa de error de caracteres en lugar de solo la verosimilitud de la secuencia.
 
-Un detalle metodológico relevante es el proceso de evaluación: el autor revisó manualmente todos los conjuntos de benchmark coreanos abiertos, verificando transcripciones con doble normalización (TN e ITN), filtrando muestras de baja calidad y corrigiendo errores de transcripción. De las 8.489 grabaciones originales se retuvieron 8.383 (106 excluidas). Cada utterance se evalúa contra ambas transcripciones (TN e ITN) y se usa la de mejor puntuación para el resultado agregado, lo que conviene tener en cuenta al comparar con cifras publicadas por terceros bajo criterios distintos.
+Un aspecto metodologico destacable es el cuidado en la evaluacion: los conjuntos de benchmark coreanos abiertos fueron revisados manualmente, con transcripciones duales TN/ITN (text normalization / inverse text normalization), filtrado de muestras de baja calidad y correccion de transcripciones erroneas. De los 8.489 registros originales se retuvieron 8.383. Ademas, se evalua cada enunciado contra ambas transcripciones y se toma la de mejor puntuacion, lo que reduce el sesgo de la metrica frente a convenciones de notacion.
 
 ## Capacidades
 
-- Transcripción de voz a texto en coreano, con tasas de error significativamente menores que el modelo base en habla telefónica, conversacional y de lectura.
-- Reconocimiento de nombres propios y entidades extranjeras en coreano (los ejemplos de la model card muestran corrección de topónimos como 범어네거리 y nombres como 찬드라 셰카르 솔랑키).
-- Manejo de habla espontánea y coloquial, incluidas contracciones y muletillas (ejemplo 근데 경쟁률이 올라가잖아).
-- Capacidad residual de transcripción en inglés, con una degradación medida de 0,27 puntos de WER frente al base.
-- Normalización de texto e inversa (TN/ITN) soportada en la evaluación: el modelo puede producir transcripciones con o sin normalización, aunque la model card no detalla cómo se controla.
-- No se documentan capacidades de diarización, detección de idioma, traducción, tool calling ni marcas de tiempo.
+- Reconocimiento automatico del habla en coreano con salida de texto transcrito.
+- Manejo de variantes de notacion: numeros (por ejemplo, "3개" frente a "세 개") y acronimos latinos (por ejemplo, "AI" frente a "에이아이"), evaluado explicitamente con la metrica kocer.
+- Transcripcion robusta en dominios diversos: llamadas telefonicas (clova_call), voz comunitaria (common_voice_ko), lectura de noticias (fleurs_ko) y habla espontanea (ksponspeech, zeroth).
+- Capacidad residual en ingles, con degradacion minima respecto al modelo base (WER de 0,0277 frente a 0,0250 en LibriSpeech).
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio de entrada mas alla del propio ASR, ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Atención al cliente telefónica en coreano: el modelo obtiene 0,0283 de CER en `clova_call`, el benchmark de llamadas telefónicas, frente a 0,0448 del base, lo que lo hace adecuado para transcribir y analizar grabaciones de centros de contacto con ruido y habla espontánea.
-- Subtitulado y transcripción de medios: con 0,0126 de CER en `fleurs_ko` y 0,0220 en `zeroth`, puede emplearse para generar subtítulos automáticos de contenido audiovisual coreano y para indexar archivos de audio.
-- Transcripción de reuniones y notas de voz: su tamaño de 2,35B parámetros permite desplegarlo en una GPU de consumo, de modo que se puede ejecutar en local o en un servidor pequeño para transcribir conversaciones internas sin enviar audio a terceros.
-- Dictado y asistencia por voz en aplicaciones: integrable como servicio de ASR en un pipeline de reconocimiento de comandos o entrada de texto por voz en coreano, con la ventaja de la licencia Apache 2.0 para uso comercial.
-- Generación de corpus y etiquetado de datos: al ser un fine-tune sobre un ASR abierto, sirve para pretranscribir grandes volúmenes de audio coreano y reducir el coste de anotación humana en proyectos de datos.
-- Evaluación comparativa de sistemas ASR: con un conjunto de benchmarks documentado y reproducible (`kspon_eval_clean`, `kspon_eval_other`, `common_voice_ko`, etc.), puede usarse como línea base en experimentos de mejora de ASR en coreano.
-- Investigación en ajuste fino con RL: el uso de GSPO sobre un modelo ASR de 2,35B constituye una referencia práctica para replicar recetas de refuerzo en tareas de reconocimiento de voz.
+- Transcripcion de llamadas de atencion al cliente: el modelo obtiene un CER de 0,0283 en clova_call, el mejor de la comparativa, lo que lo hace adecuado para generar transcripciones automaticas de centros de contacto en coreano y alimentar analitica de calidad o busqueda sobre conversaciones.
+- Subtitulado y actas de reuniones: con CER de 0,0126 en fleurs_ko (habla leida y clara), es apropiado para generar subtitulos o transcripciones de contenido audiovisual y reuniones con audio limpio.
+- Dictado y asistentes de voz: la mejora en ksponspeech (CER de 0,0594 frente a 0,0865 del base) lo hace util para interfaces de dictado en coreano en entornos de oficina y productividad.
+- Procesamiento de corpus de voz comunitaria: con CER de 0,0603 en common_voice_ko, sirve para transcribir grandes volumenes de audio de voluntarios y construir datasets etiquetados en coreano.
+- Analisis de habla espontanea y conversacional: el CER de 0,0220 en zeroth lo hace viable para investigacion linguistica y mineria de opiniones sobre grabaciones conversacionales.
+- Sistemas de compliance y auditoria de voz: la transcripcion fiable de llamadas permite busqueda por palabras clave y deteccion de terminos regulatorios en grabaciones, apoyandose en la licencia Apache 2.0 para uso interno y comercial.
+- Pipelines bilingues coreano-ingles: aunque el foco es el coreano, la degradacion limitada en ingles permite usarlo en entornos donde ocasionalmente aparecen segmentos en ingles, aceptando un WER algo mayor.
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la model card. Las puntuaciones coreanas son CER (Character Error Rate) y la inglesa es WER (Word Error Rate); menor es mejor. Calculadas tras normalización de texto (puntuación eliminada, texto plegado a minúsculas; normalizador de Whisper para LibriSpeech).
+Los resultados se miden en CER para coreano y WER para ingles; menor es mejor. La columna "Cambio" es relativa al modelo base.
 
-| Dataset | Métrica | Qwen3-ASR-1.7B (base) | qwen3_asr_1.7b_ko_beta | Este modelo | Cambio (pp) vs. base |
+| Dataset | Metrica | Qwen3-ASR-1.7B (base) | beta | Este modelo | Cambio (%p) |
 |---|---|---|---|---|---|
 | clova_call | CER | 0,0448 | 0,0293 | 0,0283 | -1,65 |
 | common_voice_ko | CER | 0,0719 | 0,0628 | 0,0603 | -1,16 |
 | fleurs_ko | CER | 0,0142 | 0,0138 | 0,0126 | -0,16 |
 | ksponspeech | CER | 0,0865 | 0,0670 | 0,0594 | -2,71 |
 | zeroth | CER | 0,0264 | 0,0230 | 0,0220 | -0,44 |
-| Total coreano | CER | 0,0686 | 0,0537 | 0,0483 | -2,03 |
-| librispeech (inglés, referencia) | WER | 0,0250 | 0,0246 | 0,0277 | +0,27 |
+| **Total coreano** | **CER** | **0,0686** | **0,0537** | **0,0483** | **-2,03** |
+| librispeech (ingles) | WER | 0,0250 | 0,0246 | 0,0277 | +0,27 |
 
-Composición del conjunto de evaluación tras la revisión manual: clova_call 1.083, common_voice_ko 564, fleurs_ko 382, zeroth 449, kspon_eval_clean 2.946, kspon_eval_other 2.959; total 8.383 registros. No se han publicado resultados de otras pruebas (MMLU, HumanEval, GSM8K ni benchmarks de audio fuera de los citados) en la información disponible.
+Evaluacion adicional con la metrica kocer (no penaliza diferencias de espaciado, puntuacion, notacion numerica ni deletreo de acronimos):
+
+| Dataset | Metrica | Base | beta | Este modelo | Cambio (%p) |
+|---|---|---|---|---|---|
+| clova_call | CER (kocer) | 0,0429 | 0,0280 | 0,0264 | -1,65 |
+| common_voice_ko | CER (kocer) | 0,0718 | 0,0628 | 0,0602 | -1,16 |
+| fleurs_ko | CER (kocer) | 0,0127 | 0,0125 | 0,0112 | -0,15 |
+| ksponspeech | CER (kocer) | 0,0860 | 0,0664 | 0,0585 | -2,75 |
+| zeroth | CER (kocer) | 0,0253 | 0,0202 | 0,0194 | -0,59 |
+| **Total coreano** | **CER (kocer)** | **0,0679** | **0,0528** | **0,0472** | **-2,07** |
+
+Con kocer, el total coreano es 0,0481 usando solo transcripciones TN, 0,0491 usando solo ITN y 0,0472 tomando la mejor de las dos, lo que indica baja sensibilidad a la eleccion de referencia.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en bf16/fp16, los pesos ocupan aproximadamente 4,7 GB (coincide con el tamaño del repositorio), por lo que conviene reservar entre 6 y 8 GB de VRAM contando activaciones y caché de atención. En cuantización int8 bajaría a unos 2,4 GB y en int4 a unos 1,2 GB, aunque no se publican versiones cuantizadas.
-- GPU recomendadas: el modelo cabe en GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 o RTX 4090. Para despliegue en producción con concurrencia, una A100 40 GB, L40S o H100 ofrecen mucho más margen y permiten lotes mayores.
-- Cabe en GPU de consumo: sí, en cualquier tarjeta con 8 GB o más de VRAM usando bf16, y en tarjetas de 4 GB si se aplica cuantización.
-- Opciones de despliegue: Transformers es la vía natural al publicarse solo safetensors. No se documentan integraciones verificadas con vLLM, TGI, llama.cpp, Ollama ni whisper.cpp; al no haber GGUF, llama.cpp y Ollama no son viables sin convertir los pesos.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia orientativa, un modelo de 2,35 mil millones de parametros en precision completa (fp32) ocuparia unos 9,4 GB solo en pesos; en fp16/bf16 unos 4,7 GB (coincide con el tamano del repo), y en cuantizacion de 8 bits alrededor de 2,4 GB. Estas cifras son estimaciones de calculo, no datos publicados por el autor.
+- GPU recomendadas: no especificadas. Por tamano, el modelo deberia caber en GPUs de consumo con al menos 8 GB de VRAM en fp16 y en GPUs profesionales tipo A100 o H100 para despliegue de mayor throughput.
+- Cabe en GPU de consumo: previsiblemente si, en tarjetas con 8 GB o mas en fp16, aunque el dato no esta confirmado por el autor.
+- Opciones de despliegue: no se documentan en la model card. Al ser un modelo ASR con pesos safetensors, requeriria el stack especifico de Qwen3-ASR (no se detalla si es compatible con vLLM, TGI, llama.cpp u Ollama).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | CER coreano (agregado) | WER inglés (LibriSpeech) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| TeamUNIVA/qwen3_asr_1.7b_ko (este) | 2,35B | No disponible | 0,0483 | 0,0277 | Apache 2.0 | Hugging Face |
-| TeamUNIVA/qwen3_asr_1.7b_ko_beta | No disponible | No disponible | 0,0537 | 0,0246 | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3-ASR-1.7B (base) | 1,7B (nominal) | No disponible | 0,0686 | 0,0250 | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | CER coreano (total) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TeamUNIVA/qwen3_asr_1.7b_ko | 2,35 mil millones | no disponible | 0,0483 (0,0472 kocer) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B (base) | 1,7 mil millones (segun nombre) | no disponible | 0,0686 (0,0679 kocer) | no disponible en la informacion | Hugging Face |
+| TeamUNIVA/qwen3_asr_1.7b_ko_beta | no disponible | no disponible | 0,0537 (0,0528 kocer) | Apache 2.0 (presumible, mismo autor) | Hugging Face |
 
-No se dispone de resultados comparables de otras familias ASR (por ejemplo, Whisper large-v3 o modelos específicos para coreano) medidos sobre este mismo conjunto de evaluación revisado, por lo que no se incluyen cifras que no puedan contrastarse.
+No se dispone de datos de otros modelos ASR coreanos comparables (por ejemplo, Whisper fine-tuneados) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El ajuste está orientado exclusivamente al coreano; el rendimiento en otros idiomas distintos del inglés no está evaluado y previsiblemente se degrada.
-- Se produce una pérdida medible en inglés: +0,27 puntos de WER en LibriSpeech respecto al modelo base.
-- Los benchmarks han sido revisados y filtrados por el propio autor, y la puntuación final usa la mejor de dos transcripciones (TN o ITN) por utterance. Esto puede hacer que las cifras no sean directamente comparables con evaluaciones externas que usen un único protocolo.
-- Riesgo de alucinación y de sustituciones plausibles en audio con ruido, solapamiento de hablantes o vocabulario muy específico; los ejemplos de la model card muestran errores residuales incluso en este modelo (por ejemplo, repeticiones tipo 기르 기르는).
-- No se documentan sesgos demográficos, acentos regionales ni variedades dialectales del coreano cubiertas por los datos de entrenamiento.
-- No se especifican la composición ni la procedencia del corpus de entrenamiento, lo que dificulta evaluar riesgos de licencia o de privacidad en los datos.
-- No se publican versiones cuantizadas ni formatos GGUF, lo que limita el despliegue en entornos de CPU o en herramientas como Ollama y llama.cpp.
-- La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar las condiciones del modelo base Qwen/Qwen3-ASR-1.7B y de los datasets empleados en la evaluación.
-- No hay información sobre latencia, throughput ni comportamiento en despliegues concurrentes, aspectos críticos para producción.
+- El modelo esta especializado en coreano; su rendimiento en otros idiomas distintos del ingles no esta documentado y probablemente sea deficiente.
+- Degradacion en ingles respecto al base: +0,27 puntos de WER en LibriSpeech (0,0277 frente a 0,0250). No es apto como sustituto generalista bilingue sin evaluacion previa.
+- Riesgo de alucinacion y errores en audio con ruido, acentos marcados o solapamiento de hablantes: los benchmarks usados son conjuntos revisados y relativamente controlados; el rendimiento en condiciones reales adversas puede ser peor.
+- La metrica CER sobre coreano es sensible a convenciones de espaciado y notacion; el autor mitiga esto con evaluacion dual TN/ITN y con kocer, pero en produccion conviene fijar una convencion de normalizacion coherente con el caso de uso.
+- No se documentan sesgos especificos ni evaluaciones de robustez frente a dialectos coreanos (por ejemplo, Jeju o variantes regionales).
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3-ASR-1.7B, cuya licencia no se detalla en la informacion proporcionada.
+- No hay informacion sobre cuantizaciones oficiales, requisitos de hardware ni stacks de despliegue validados; habria que probar el pipeline de Qwen3-ASR antes de llevarlo a produccion.
+- Los conjuntos clova_call, kspon_eval_clean y kspon_eval_other no se publican por restricciones de licencia de los datasets originales, lo que limita la reproducibilidad completa de la evaluacion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko
+- Modelo beta predecesor: https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko_beta
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- Modelo predecesor (beta): https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko_beta
-- Audios de ejemplo del repositorio: https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko/tree/main/audio
-
-La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo (solo resultados genéricos de YouTube), por lo que no se dispone de papers, blogs técnicos ni demos adicionales que enlazar.
+- Conjuntos de evaluacion revisados (zeroth, common_voice_ko, fleurs_ko): https://huggingface.co/datasets/TeamUNIVA/ko_asr_benchmarks
+- Herramienta kocer (metrica CER para coreano): https://github.com/Choi-kwan-u/kocer

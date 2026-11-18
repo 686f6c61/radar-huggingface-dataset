@@ -2,76 +2,88 @@
 
 ## Resumen
 
-NegWAM es un modelo publicado en Hugging Face por el usuario Zizizi-hao bajo licencia Apache 2.0. La model card asociada está practicamente vacía: solo contiene el campo de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni especificaciones técnicas de ningún tipo. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o un artefacto de carácter experimental.
+NegWAM es un modelo de conducción autonoma end-to-end desarrollado por Zihao Zhang, Xinyu Zhang, Bing Zeng, Xingyu Chen, Zhenning Li, Bin Yu y Ziyuan Pu, presentado en el paper "Reinforcing End-to-End Autonomous Driving Safety via Negative-Aware Planning in a Unified World-Action Model". El modelo resuelve el problema de la planificación de trayectorias seguras en entornos de conducción, aprendiendo de trayectorias de fallo cercanas al experto (near-expert failure trajectories) mediante el uso de anclas repulsivas y tokens de escena condicionados (rider tokens).
 
-No se dispone de información pública sobre el problema que el modelo pretende resolver, su tamaño, su arquitectura ni su proceso de entrenamiento. El nombre "NegWAM" no viene acompañado de ninguna explicación en la información disponible, por lo que no es posible inferir con rigor su propósito (podría tratarse de un modelo de representación, un modelo generativo o cualquier otro tipo de artefacto, pero esto es especulación y no debe tomarse como dato).
+La arquitectura es un transformer 3D basado en Diffusers, denominado `WanTransformer3DNavSimModel`, con 6.243.520.990 parametros totales (aproximadamente 6.24 mil millones) y pesos en formato safetensors BF16 con un tamano de 12.49 GB. El modelo toma como entrada observaciones de camara, estado e historial del ego y comandos de navegacion, y produce 8 poses del ego (x, y, heading) durante 4 segundos a intervalos de 0.5 segundos.
 
-Dada la ausencia total de documentación, esta ficha se limita a reflejar los metadatos disponibles y a marcar explícitamente como "no disponible" todo aquello que no ha sido publicado. Cualquier evaluación de idoneidad para producción requeriría contactar con el autor o inspeccionar directamente los archivos del repositorio.
+El modelo es relevante ahora porque aborda la seguridad en la conducción autonoma mediante un marco de post-entrenamiento que integra un world-action model unificado, con resultados destacados en el benchmark NAVSIM v2 (93.3 EPDMS en navtest y 40.4 en navhard). Su licencia Apache 2.0 y su integracion con Diffusers facilitan su adopcion tanto en investigacion como en desarrollo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer 3D (`WanTransformer3DNavSimModel`, implementacion custom basada en Diffusers) |
+| Parametros totales | 6.243.520.990 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | Safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo (transformer, MoE, SSM, híbrida u otra), ni sobre el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens procesados o si se aplicaron técnicas de alineación como RLHF o DPO. La model card no incluye ninguna sección técnica.
+NegWAM se basa en un transformer 3D unificado que integra un world model y un action model para la conducción end-to-end. El modelo procesa observaciones de camara, el estado y historial del ego y comandos de navegacion para generar trayectorias futuras. La innovacion principal es el marco de post-entrenamiento negative-aware: se aprenden trayectorias de fallo cercanas al experto (near-expert failure trajectories) y se utilizan anclas repulsivas para alejar las predicciones de estas alternativas inseguras. Ademas, se introducen rider tokens condicionados por la escena que aprenden la compatibilidad entre escena y trayectoria; esta rama auxiliar se usa solo durante el entrenamiento y se omite en la inferencia.
 
-Tampoco se documentan innovaciones técnicas destacables (decodificación especulativa, atención lineal, cuantización nativa, etc.). Cualquier afirmación al respecto sería especulativa y, por tanto, se omite.
+No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO en la informacion proporcionada. El paper asociado (arXiv:2611.08111) contiene los detalles del protocolo de entrenamiento y evaluacion.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la información disponible.
-- No consta soporte de tool calling ni function calling.
-- No consta soporte de agentes ni de razonamiento multi-paso.
-- No consta información sobre capacidades multilingües.
-- No consta la existencia de modos especiales (thinking mode, visión, audio, etc.).
+- Planificacion de trayectorias end-to-end para conduccion autonoma: genera 8 poses del ego (x, y, heading) durante 4 segundos a intervalos de 0.5 segundos.
+- Procesamiento de observaciones de camara multi-vista y estado/historial del ego.
+- Interpretacion de comandos de navegacion para condicionar la planificacion.
+- World-action model unificado: integra modelado del mundo y planificacion de acciones.
+- Post-entrenamiento negative-aware: aprendizaje de trayectorias de fallo para mejorar la seguridad.
+- Rider tokens: aprendizaje de compatibilidad escena-trayectoria (solo en entrenamiento).
+- Evaluacion en benchmarks NAVSIM v2 (navtest y navhard) y HUGSIM (zero-shot closed-loop).
+- No se dispone de informacion sobre soporte de tool calling, agentes multi-paso, capacidades multilingues ni modos de pensamiento (thinking mode).
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin información sobre las capacidades, el tamaño y el dominio del modelo. A modo de orientación general para cualquier artefacto publicado con licencia Apache 2.0 y documentación mínima, los pasos razonables serían:
-
-- Evaluación interna controlada: descargar los pesos y ejecutar pruebas de humo para determinar el tipo de tarea para la que el modelo fue diseñado, dado que la model card no lo especifica.
-- Inspección de los archivos del repositorio: revisar `config.json`, tokenizer y pesos para inferir arquitectura y tamaño antes de cualquier integración.
-- Prototipado aislado: usar el modelo en un entorno de sandbox para caracterizar su comportamiento antes de considerar su uso en un pipeline real.
-- Investigación académica: emplearlo como objeto de estudio si el autor publica posteriormente documentación o un paper asociado.
-- Contacto con el autor: solicitar información técnica adicional a través de la sección de discusión del repositorio de Hugging Face.
-- Reutilización como base: al estar bajo Apache 2.0, podría servir como punto de partida para fine-tuning, siempre que una evaluación previa confirme que su arquitectura y dominio son adecuados.
+- Planificacion de trayectorias en vehiculos autonomos: el modelo genera trayectorias futuras de 4 segundos a partir de observaciones de camara y comandos de navegacion, adecuado para sistemas de conducción urbana y autopista.
+- Evaluacion de seguridad en simulacion: permite comparar trayectorias generadas con alternativas de fallo cercanas al experto, gracias al marco negative-aware, para analizar riesgos antes de desplegar en vehiculos reales.
+- Investigacion en world-action models: sirve como base para estudiar la integracion de world models y action models en conducción end-to-end, con pesos abiertos y licencia permisiva.
+- Benchmarking en NAVSIM v2: el modelo puede usarse como referencia en navtest y navhard para comparar nuevos metodos de planificacion.
+- Evaluacion closed-loop en HUGSIM: permite validar el modelo en entornos simulados zero-shot, adecuado para pruebas de robustez antes de pruebas en pista.
+- Desarrollo de sistemas ADAS: la planificacion de trayectorias a 0.5 segundos de resolucion puede integrarse en sistemas de asistencia a la conducción que requieren predicciones a corto plazo.
+- Fine-tuning para dominios especificos: al estar disponible en safetensors y con licencia Apache 2.0, puede adaptarse a escenarios de conducción concretos (parking, entornos rurales) con datos propios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+| Benchmark | Split / protocolo | EPDMS ↑ |
+|---|---|---|
+| NAVSIM v2 | navhard, two-stage | 40.4 |
+| NAVSIM v2 | navtest | 93.3 |
+
+Las puntuaciones se presentan en escala 0–100 y redondeadas a un decimal. Provienen de la fila resumen `extended_pdm_score_combined` para navhard y de `average_all_frames` para navtest. El paper tambien reporta evaluacion closed-loop zero-shot en HUGSIM, pero los resultados no se detallan en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (se desconoce el número de parámetros).
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible.
+- VRAM estimada para inferencia: los pesos en BF16 ocupan aproximadamente 12.49 GB, por lo que se necesita al menos 13-14 GB de VRAM solo para cargar el modelo; con overhead de activaciones y procesamiento de imagenes se recomienda 16-24 GB.
+- GPU recomendadas: A100 (40/80 GB), H100 (80 GB), RTX 4090 (24 GB) para inferencia en BF16.
+- Cabe en GPU consumer: si, en RTX 4090 (24 GB) y potencialmente en RTX 3090 (24 GB) con BF16; en GPUs de 16 GB requeriria cuantizacion, aunque no se dispone de informacion sobre soporte de cuantizacion.
+- Opciones de despliegue: no se dispone de informacion sobre integracion con vLLM, llama.cpp, Ollama o TGI; el modelo usa una implementacion custom basada en Diffusers y requiere el codigo del repositorio GitHub para su ejecucion.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables sin conocer la categoría, el tamaño y el propósito del modelo.
+No se dispone de informacion sobre modelos comparables en la informacion proporcionada. NegWAM es un modelo especializado en conducción autonoma end-to-end con un marco negative-aware, y no se han identificado alternativas directas con las mismas caracteristicas en los datos disponibles.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card no describe arquitectura, entrenamiento ni uso previsto, lo que impide evaluar riesgos técnicos.
-- Sesgos conocidos: no disponibles; al no documentarse el dataset de entrenamiento, no puede evaluarse la presencia de sesgos.
-- Riesgo de alucinación: no evaluable sin información sobre el entrenamiento y la alineación.
-- Limitaciones de contexto e idioma: no disponibles.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero la ausencia de documentación traslada al usuario toda la responsabilidad sobre el cumplimiento y la validación.
-- Repositorio sin tracción: cero descargas y cero "likes" en el momento de la consulta, lo que reduce la probabilidad de que exista una comunidad que haya validado el artefacto.
-- Advertencia para producción: no se recomienda su uso en entornos productivos sin una evaluación previa exhaustiva y sin confirmación por parte del autor sobre el contenido y la integridad de los pesos.
+- El modelo esta especializado exclusivamente en conducción autonoma y planificacion de trayectorias; no es un modelo de proposito general.
+- No se dispone de informacion sobre sesgos conocidos, riesgo de alucinacion ni limitaciones de contexto o idioma.
+- La rama de rider tokens se usa solo en entrenamiento y se omite en inferencia; su comportamiento en produccion no esta documentado en la informacion disponible.
+- La evaluacion se limita a benchmarks de simulacion (NAVSIM v2 y HUGSIM); no se dispone de resultados en vehiculos reales.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar el paper y el repositorio GitHub para condiciones adicionales.
+- El modelo requiere la implementacion custom del repositorio GitHub; no es directamente compatible con pipelines estandar de Diffusers sin adaptacion.
+- No se dispone de informacion sobre cuantizacion, lo que limita el despliegue en GPUs con menos de 16 GB de VRAM.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Zizizi-hao/NegWAM
+- [Hugging Face - Zizizi-hao/NegWAM](https://huggingface.co/Zizizi-hao/NegWAM)
+- [Paper - arXiv:2611.08111](https://arxiv.org/abs/2611.08111)
+- [Codigo y setup - GitHub](https://github.com/Zizizi-hao/NegWAM)
+- [Archivos del modelo](https://huggingface.co/Zizizi-hao/NegWAM/tree/main)
+- [Licencia Apache 2.0](https://github.com/Zizizi-hao/NegWAM/blob/main/LICENSE)
+- [Roadmap de release de codigo](https://github.com/Zizizi-hao/NegWAM#-roadmap--code-release)

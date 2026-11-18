@@ -2,113 +2,102 @@
 
 ## Resumen
 
-ChatR Labs Uncensored Omni LoRA v0.1 es un adaptador LoRA de rango 128 entrenado sobre el modelo de difusión Qwen-Image-2.1 de Qwen. Lo publica chatrlabs (ChatR Labs) como un único conjunto de pesos que sirve para dos flujos de trabajo: generación de imágenes a partir de texto y edición de imágenes existentes mediante instrucciones en lenguaje natural, con una a tres imágenes de referencia. El adaptador se distribuye en safetensors BF16 (671 MB) con claves Diffusers/PEFT y se carga sobre el pipeline `QwenImage21Pipeline`; el transformer, el text encoder, el processor y el VAE se descargan por separado del repositorio del modelo base.
+ChatR Labs Uncensored Omni LoRA v0.1 es un adaptador LoRA de rango 128 entrenado sobre el modelo de difusion Qwen-Image-2.1 de Alibaba Qwen. Lo desarrolla ChatR Labs y resuelve un problema concreto: unificar generacion texto-a-imagen y edicion de imagen por instrucciones en lenguaje natural en un unico adaptador, relajando ademas las restricciones de contenido del modelo base. El repositorio contiene exclusivamente los pesos LoRA (671 MB en BF16); el transformer, el text encoder, el procesador y el VAE se descargan por separado desde el repositorio del modelo base.
 
-Su relevancia práctica es doble. Por un lado, unifica generación y edición en un solo adaptador, algo que en el ecosistema Qwen-Image suele requerir checkpoints distintos (los modelos Qwen-Image-Edit). Por otro, se presenta explícitamente como «uncensored»: el autor no documenta el método de eliminación de filtros, y directorios de terceros lo clasifican como variante «abliterated», por lo que su interés principal está en investigación sobre alineación y filtrado en modelos generativos, no en despliegues comerciales convencionales.
+El checkpoint publicado corresponde al paso 32.000 de un entrenamiento mas largo; el autor menciona tambien un checkpoint cuantizado en el paso 90.000 con mejores puntuaciones de adherencia a prompt. La relevancia actual del modelo radica en su adopcion: acumula mas de 52.000 descargas y 106 likes, lo que lo situa entre los adaptadores comunitarios mas usados para la familia Qwen-Image. Es un LoRA convencional, no destilado para pocos pasos, por lo que requiere el regimen de muestreo completo (35 pasos, true CFG 5.0).
 
-El adaptador tiene 8.066 descargas y 31 «likes» en Hugging Face, con publicación el 12 de octubre de 2026 y última actualización el 16 de octubre de 2026. Es una versión experimental v0.1, no una destilación de pocos pasos: requiere 25 pasos de muestreo y CFG real de 4.0 en la configuración evaluada por el autor.
+La ficha describe las capacidades declaradas por el autor y los resultados de su benchmark interno. No se dispone de informacion sobre composicion del dataset de entrenamiento, numero de tokens ni detalles del proceso de fine-tuning mas alla de lo indicado en la model card.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango, rank 128) sobre el transformer de difusión de Qwen-Image-2.1; se carga con `QwenImage21Pipeline` de Diffusers |
-| Parámetros totales | no disponible (el autor no publica el recuento de parámetros del adaptador; el peso BF16 ocupa 671 MB) |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (el autor no especifica la ventana del text encoder) |
-| Tipos de cuantización | BF16 únicamente; el autor indica que esta release no incluye variantes GGUF ni FP8 ni pesos base fusionados |
-| Idiomas soportados | no disponibles (el autor no publica lista de idiomas; las instrucciones de edición se dan en lenguaje natural) |
-| Licencia | `qwen-research` (`license: other`, `license_name: qwen-research`, con enlace a `LICENSE`) |
-| Formato de pesos | safetensors BF16 con claves Diffusers/PEFT (`chatrlabs-omni-lora-v0.1-bf16.safetensors`) |
-
-Otros datos: tamaño del repositorio 1,0 GB; pipeline declarado `text-to-image`; modelo base `Qwen/Qwen-Image-2.1` con relación `adapter`; integridad verificable mediante `SHA256SUMS`.
+| Arquitectura | LoRA (rango 128) sobre modelo de difusion Qwen-Image-2.1; pesos con claves Diffusers/PEFT |
+| Parametros totales | no disponible (adaptador de 671 MB en BF16; el modelo base se descarga aparte) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de imagen; no aplica ventana de texto) |
+| Tipos de cuantizacion | BF16 publicado; el autor menciona un checkpoint cuantizado del paso 90.000, sin detallar el esquema; no hay variantes GGUF ni FP8 en este release |
+| Idiomas soportados | no disponible (prompts en lenguaje natural; el text encoder del modelo base determina el soporte) |
+| Licencia | qwen-research (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors (BF16, claves Diffusers/PEFT) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre la arquitectura de difusión del modelo Qwen-Image-2.1 (no se detalla en la información disponible si emplea un DiT puro u otra variante). Se trata de un LoRA convencional de rango 128, entrenado con claves compatibles con PEFT, que se inyecta en el transformer del modelo base y se activa con `set_adapters(..., adapter_weights=1.0)`. El pipeline soporta CFG real (`true_cfg_scale`), caché KV (`use_kv_cache=True`) y entrada de imágenes de referencia en el mismo `pipe()` que la generación texto-a-imagen. El autor advierte que es un LoRA normal y que no aporta destilación de pocos pasos, por lo que el coste de muestreo es el del modelo base.
+El adaptador se aplica sobre Qwen-Image-2.1, un modelo de difusion para generacion y edicion de imagen. El LoRA tiene rango 128 y se distribuye como un unico fichero safetensors de 671 MB en BF16 con claves compatibles con Diffusers y PEFT, cargable mediante `load_lora_weights` y activable con `set_adapters`. El autor indica explicitamente que no es compatible con Qwen-Image, Qwen-Image-2512 ni Qwen-Image-Edit-2511, cuyas arquitecturas difieren, y que no incorpora destilacion para generacion en pocos pasos.
 
-No hay información pública sobre el dataset de entrenamiento, el número de tokens o pares imagen-texto, la composición de datos ni si se usaron técnicas de RLHF, DPO o preferencias humanas. Tampoco se documenta el procedimiento de «uncensoring»: la model card solo indica que el adaptador es experimental y sin filtros, mientras que un directorio de terceros lo describe como variante «abliterated» del modelo base, sin detallar la metodología. Cualquier afirmación sobre el proceso de eliminación de alineación más allá de eso sería especulativa.
+El entrenamiento se realizo en dos fases medibles por los checkpoints publicados: el repositorio corresponde al paso 32.000 y existe un checkpoint adicional en el paso 90.000 con cuantizacion. No se detalla la composicion del dataset, el numero de imagenes, el uso de RLHF/DPO ni la metodologia de curacion de datos. La innovacion principal es funcional: un solo adaptador cubre tanto texto-a-imagen como edicion con una a tres imagenes de referencia, con un ajuste de contenido que relaja los filtros del modelo base.
 
 ## Capacidades
 
-- Generación texto-a-imagen a aproximadamente 1 megapíxel (por ejemplo, 1024 × 1024), con 25 pasos de muestreo y `true_cfg_scale` 4.0 como configuración de referencia.
-- Edición de imágenes por instrucción en lenguaje natural reutilizando el mismo adaptador y pipeline (por ejemplo, «Change the mug to green, keep everything else unchanged»).
-- Aceptación de una a tres imágenes de referencia en la edición; el playground del autor se ha probado con una y con tres, y más referencias incrementan los requisitos de memoria.
-- Soporte de caché KV en la inferencia, activable mediante `use_kv_cache=True`.
-- Etiqueta `pose-generation` en el repositorio, lo que sugiere uso para generación o control de pose, aunque el autor no lo documenta en la model card.
-- Control de semilla mediante `torch.Generator` para reproducibilidad.
-- No soporta tool calling ni function calling, ni razonamiento multi-paso, ni agentes: es un modelo de difusión de imagen, no un LLM.
-- No se documentan capacidades multilingües específicas ni modo «thinking», visión (más allá de la imagen de referencia de entrada) o audio.
+- Generacion texto-a-imagen a resolucion de aproximadamente 1 megapixel (por ejemplo, 1024 x 1024).
+- Edicion de imagen guiada por instrucciones en lenguaje natural, aceptando de una a tres imagenes de referencia en el pipeline probado.
+- Generacion de poses (etiqueta `pose-generation` declarada por el autor).
+- Modo sin censura: el adaptador relaja las restricciones de contenido del modelo base, orientado a prompts para adultos.
+- Uso de cache KV (`use_kv_cache=True`) para acelerar la inferencia.
+- Compatibilidad con `enable_model_cpu_offload()` para reducir la residencia en VRAM a costa de RAM del sistema.
+- No soporta tool calling, agentes ni razonamiento multi-paso: es un modelo generativo de imagen, no un LLM.
+- No ofrece modo thinking, vision de entrada general ni audio.
 
 ## Casos de uso
 
-- **Edición iterativa de imágenes de producto**: partiendo de una fotografía de catálogo, aplicar instrucciones del tipo «cambia el color del objeto y conserva el resto» con `output_resolution=1024`, manteniendo coherencia con la referencia. Es adecuado porque el adaptador está entrenado para preservar el contexto no instruido y usa una sola imagen como referencia, lo que reduce el coste frente a pipelines de edición separados.
-- **Generación de material gráfico para prototipado web**: producir imágenes de 1024 × 1024 en unos 33 s por petición (medición del autor en dos RTX 4090 para 1344 × 768) para maquetas y pruebas de concepto, sin depender de un servicio externo si se dispone de GPU propia.
-- **Investigación sobre filtrado y alineación en modelos generativos**: al ser una variante sin censura, permite estudiar qué contenido bloquea el modelo base frente al adaptador, comparar distribuciones de salida y evaluar mecanismos de mitigación. Requiere revisión ética y legal previa.
-- **Creación de datasets sintéticos de imágenes**: generar lotes con semilla fija y resolución homogénea para entrenar o aumentar datasets de visión por computador, aprovechando la reproducibilidad vía `torch.Generator`.
-- **Previsualización de conceptos en ilustración y diseño editorial**: explorar variaciones a partir de un boceto o referencia con una o tres imágenes, usando el playground público (chatrlabs.com) sin cuenta para validar ideas antes de invertir en producción.
-- **Referencia de pose para animación**: la etiqueta `pose-generation` apunta a flujos donde se usa una imagen de referencia para fijar la pose del sujeto generado, útil como base para rotoscopia o guion gráfico.
-- **Integración en pipelines Diffusers existentes**: al usar claves PEFT estándar, el adaptador se puede enchufar en servicios que ya sirven Qwen-Image-2.1 con `load_lora_weights` y conmutar entre el modelo base y la variante sin censura mediante `set_adapters`, sin duplicar el transformer ni el VAE.
+- Generacion de imagenes de producto: con 35 pasos y CFG 5.0 se obtienen renders de ~1 MP adecuados para fichas de e-commerce; el ejemplo de la model card (taza ceramica sobre mesa de madera con luz matinal) ilustra el flujo.
+- Edicion iterativa de assets: partir de una imagen generada y aplicar instrucciones como "cambia la taza a verde, manten el resto igual" permite refinar un concepto sin regenerar desde cero, gracias al modo de edicion con imagen de referencia.
+- Creacion de contenido para adultos: el ajuste sin censura esta pensado para estudios y creadores que necesitan prompts que el modelo base rechazaria; requiere verificacion legal y de edad en el despliegue.
+- Prototipado de escenas con multiples referencias: el pipeline acepta hasta tres imagenes de referencia, util para composiciones que combinan sujeto, fondo y estilo en un solo paso de edicion.
+- Generacion de poses para referencia artistica o animacion: la etiqueta `pose-generation` sugiere uso en flujos de previsualizacion de posturas antes de modelado 3D o ilustracion.
+- Despliegue en playground o demo interna: el autor ofrece una interfaz web sin cuenta con cola compartida, replicable con el codigo de `inference.py` para pruebas de equipo.
+- Automatizacion por lotes en CPU/GPU mixta: con `enable_model_cpu_offload()` se puede ejecutar en maquinas con VRAM limitada pero RAM suficiente, util para generacion nocturna de catalogos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no incluye métricas de calidad tipo FID, CLIP score, GenEval o similares, ni comparaciones cuantitativas con otros adaptadores.
+El autor publica una comparacion interna entre el modelo base y dos checkpoints del entrenamiento, con los mismos prompts, semilla y ajustes (35 pasos, CFG 5.0). Puntuaciones de 0 a 100, mayor es mejor, con error estandar de ±1.
 
-Los únicos datos cuantitativos publicados son de latencia en el servidor del playground (dos RTX 4090 de 24 GB, BF16, 25 pasos, CFG 4.0, tiempos medidos tras la carga del modelo):
+| Benchmark | Base | Paso 32.000 (LoRA v0.1) | Paso 90.000 (cuantizado) |
+|---|---|---|---|
+| Adherencia a prompt para adultos (960 imagenes) | 85,1 ± 0,9 | 87,4 ± 0,8 | **89,7 ± 0,7** |
+| Anatomia (960 imagenes) | **70,3 ± 1,4** | 67,7 ± 1,4 | 69,4 ± 1,4 |
+| Prompts SFW generales (300 PartiPrompts) | **79,8 ± ... (dato truncado en la model card)** | no disponible | no disponible |
 
-| Tarea | Resolución de salida | Tiempo |
-|---|---|---|
-| Texto a imagen | 1344 × 768 | 33,2 s |
-| Edición con una referencia | no disponible (dato truncado en la model card) | no disponible |
+La tabla muestra que el LoRA mejora la adherencia a prompts para adultos respecto al base, pero degrada ligeramente la metrica de anatomia en el checkpoint publicado (67,7 frente a 70,3). El dato de PartiPrompts para el paso 32.000 no aparece completo en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador pesa 671 MB en BF16, pero no es autónomo: requiere cargar el transformer, el text encoder, el processor y el VAE de `Qwen/Qwen-Image-2.1`. La VRAM total depende del modelo base, cuyo tamaño no se detalla en la información disponible.
-- El autor indica que el pipeline completo en BF16 no cabe en una sola GPU de 24 GB: su playground reparte el pipeline entre **dos RTX 4090 de 24 GB**, que atienden una petición de forma conjunta y encolan las simultáneas.
-- Alternativa a la segmentación multi-GPU: `pipe.enable_model_cpu_offload()`, que reduce la residencia en VRAM a costa de requerir RAM de sistema suficiente; con VRAM holgada se puede usar `pipe.to("cuda")`.
-- GPU recomendadas: 2 × RTX 4090 24 GB (configuración validada por el autor). Para A100, H100 o L40S no hay datos publicados, aunque por capacidad de memoria deberían alojar el pipeline en una sola unidad; el fabricante no lo confirma.
-- Despliegue: Diffusers con `QwenImage21Pipeline` (el `requirements.txt` fija la revisión de Diffusers, Transformers, PEFT y Accelerate usada en el playground; el entorno validado es PyTorch 2.11.0 con CUDA 12.8). También se incluye `inference.py` como interfaz de línea de comandos.
-- No hay soporte para llama.cpp, Ollama, vLLM ni TGI: no existen pesos GGUF ni FP8 en esta release, y esas herramientas no cubren el pipeline de difusión.
-- Latencia de referencia: 33,2 s para 1344 × 768 con 25 pasos y CFG 4.0 en la configuración de dos GPU. No se publica throughput agregado ni latencia de edición.
-- Advertencia de rendimiento: mantener el VAE tiling desactivado, porque la decodificación por teselas introduce estrías verticales de color visibles según el autor.
+- VRAM estimada: no disponible de forma exacta; el adaptador pesa 671 MB, pero el modelo base Qwen-Image-2.1 (transformer, text encoder y VAE) domina el consumo. El autor recomienda `enable_model_cpu_offload()` cuando la VRAM es insuficiente, lo que implica que el pipeline completo no cabe comodamente en GPUs de gama media sin offload.
+- GPU recomendadas: no especificadas por el autor. Por el perfil del pipeline (difusion a ~1 MP, BF16, 35 pasos), son razonables A100, H100 o RTX 4090 con 24 GB; el offload permite GPUs con menos VRAM a cambio de RAM del sistema.
+- Cabe en GPU de consumo: probablemente en RTX 4090 (24 GB) sin offload; en GPUs de 8-16 GB requerira offload y suficiente RAM.
+- Despliegue: Diffusers con `QwenImage21Pipeline` (revision fijada en `requirements.txt`), PEFT y Accelerate; PyTorch 2.11.0 con CUDA 12.8 en el entorno del autor. No hay soporte documentado para vLLM, llama.cpp ni Ollama (no aplica a difusion en este formato).
+- Latencia y throughput: no disponibles. El autor solo indica 35 pasos de muestreo y cache KV activada; mas referencias en edicion incrementan el consumo de memoria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Compatible como base de este LoRA | Edición por instrucciones | Licencia | Datos públicos de rendimiento |
-|---|---|---|---|---|---|
-| chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1 | LoRA rank 128 sobre Qwen-Image-2.1 | — (es el adaptador) | Sí, 1-3 referencias | qwen-research | Solo latencias (33,2 s a 1344 × 768) |
-| Qwen/Qwen-Image-2.1 | Modelo de difusión texto-a-imagen | Sí, es su base | Sí, a través del mismo pipeline | no disponible en la información proporcionada | no disponible |
-| Qwen-Image-2512 | Modelo de difusión (generación) | No, arquitectura distinta según el autor | no disponible | no disponible | no disponible |
-| Qwen-Image-Edit-2511 | Modelo de difusión orientado a edición | No, arquitectura distinta según el autor | Sí, por diseño del modelo | no disponible | no disponible |
+| Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| ChatR Labs Omni LoRA v0.1 | LoRA r128 sobre Qwen-Image-2.1 | 671 MB (adaptador) | no aplica | Adherencia adultos 87,4; anatomia 67,7 | qwen-research | Hugging Face, playground |
+| Qwen-Image-2.1 (base) | Difusion texto-a-imagen y edicion | no disponible | no aplica | Adherencia adultos 85,1; anatomia 70,3; SFW 79,8 | qwen-research | Hugging Face |
+| Checkpoint paso 90.000 (mismo autor, cuantizado) | LoRA sobre Qwen-Image-2.1 | no disponible | no aplica | Adherencia adultos 89,7; anatomia 69,4 | qwen-research | Referenciado en la model card, sin repositorio propio listado |
 
-No se dispone de datos para comparar con otros adaptadores sin censura de la misma categoría (por ejemplo, LoRAs alternativos para Qwen-Image-2.1): la información proporcionada no incluye métricas ni fichas comparables.
+No se dispone de datos de otros adaptadores comunitarios comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Ausencia total de benchmarks**: no hay métricas de calidad, fidelidad a la instrucción ni comparaciones con el modelo base, por lo que la evaluación cualitativa queda en manos de quien lo pruebe.
-- **Licencia `qwen-research`**: es una licencia de tipo «other» heredada del modelo base; hay que revisar el archivo `LICENSE` antes de cualquier uso comercial, ya que el término «research» suele implicar restricciones. No se detalla en la información disponible el alcance exacto.
-- **Contenido sin filtros**: el adaptador se comercializa como «uncensored» y no incorpora filtro de seguridad documentado. Esto implica riesgo de generar material no apto, responsabilidad legal en función de la jurisdicción y necesidad de moderación externa en cualquier despliegue público.
-- **Método de eliminación de alineación no documentado**: la model card no explica el procedimiento (fine-tune, abliteration u otro), lo que impide evaluar su robustez o su reversibilidad.
-- **Sesgos no evaluados**: el autor no publica análisis de sesgos demográficos, culturales o de representación, ni del dataset del modelo base.
-- **Alucinación y artefactos propios de difusión**: no hay garantía de fidelidad a la instrucción en edición, y son esperables errores en texto renderizado dentro de la imagen, anatomía y consistencia de detalles finos. No se documenta ninguno de estos extremos.
-- **Restricción de compatibilidad**: solo funciona con Qwen-Image-2.1. Los modelos Qwen-Image, Qwen-Image-2512 y Qwen-Image-Edit-2511 no son bases válidas por diferencias de arquitectura.
-- **Sin variantes ligeras**: solo BF16; no hay GGUF, FP8 ni pesos fusionados, lo que limita el despliegue en hardware de gama baja y en runtimes de cuantización agresiva.
-- **Trampa de configuración del CFG**: en el pipeline probado, un `negative_prompt` vacío u omitido desactiva el CFG real aunque `true_cfg_scale` sea mayor que 1; el autor recomienda usar un único espacio.
-- **Coste de inferencia**: 25 pasos obligatorios al no ser una destilación de pocos pasos, con el consiguiente impacto en latencia y coste por imagen.
-- **Idiomas no especificados**: se desconoce el comportamiento de las instrucciones de edición en castellano u otras lenguas distintas del inglés.
-- **Memoria en edición**: aumentar el número de imágenes de referencia eleva los requisitos de VRAM; el playground solo se ha ejercitado con una y tres.
-- **Estado experimental v0.1**: sin garantías de estabilidad ni hoja de ruta publicada.
+- Contenido sin censura: el adaptador relaja los filtros del base; su uso comercial o publico exige verificacion de edad, cumplimiento legal por jurisdiccion y politicas de plataforma.
+- Licencia qwen-research: restringe el uso comercial; revisar el fichero LICENSE del repositorio antes de cualquier despliegue productivo.
+- Alucinacion visual: como todo modelo generativo, puede producir anatomia incorrecta; el benchmark propio muestra una caida de 2,6 puntos en anatomia respecto al base.
+- Compatibilidad estricta: no funciona sobre Qwen-Image, Qwen-Image-2512 ni Qwen-Image-Edit-2511; solo sobre Qwen-Image-2.1.
+- Sin destilacion: requiere 35 pasos y CFG 5.0; no es apto para generacion en 1-4 pasos.
+- Negativo vacio: en el pipeline probado, un negative prompt vacio desactiva el true CFG aunque `true_cfg_scale` sea mayor que 1; hay que usar un espacio.
+- VAE tiling: el autor advierte que el decodificado por tiles introduce rayas verticales de color; debe mantenerse desactivado.
+- Memoria: mas imagenes de referencia en edicion aumentan el consumo; el modo CPU offload exige RAM del sistema suficiente.
+- Idiomas e informacion de entrenamiento: no disponibles; no se puede evaluar sesgo por idioma ni composicion del dataset.
+- Estado experimental: version v0.1, checkpoint intermedio (paso 32.000) de un entrenamiento mas largo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1
-- Archivos del repositorio: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/tree/main
-- Pesos del adaptador (BF16 safetensors): https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/resolve/main/chatrlabs-omni-lora-v0.1-bf16.safetensors
-- Sumas de verificación: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/blob/main/SHA256SUMS
-- Dependencias: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/blob/main/requirements.txt
+- Hugging Face: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1
+- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Descarga directa del LoRA BF16: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/resolve/main/chatrlabs-omni-lora-v0.1-bf16.safetensors
+- Playground del autor: https://chatrlabs.com/
+- Fichero de integridad SHA256SUMS: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/blob/main/SHA256SUMS
+- Requisitos de dependencias: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/blob/main/requirements.txt
 - Script de inferencia: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/blob/main/inference.py
 - Licencia: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/blob/main/LICENSE
-- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Playground del autor: https://chatrlabs.com/
-- Repositorio y releases en GitHub: https://github.com/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA/releases
-- Ficha en directorio de terceros: https://www.abliteratedmodels.org/qwen-image-2.1-uncensored-omni-lora-v0.1/

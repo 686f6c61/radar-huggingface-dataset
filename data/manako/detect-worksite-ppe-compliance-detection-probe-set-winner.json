@@ -5,7 +5,7 @@
   "author": "manako",
   "url": "https://huggingface.co/manako/Detect-worksite-ppe-compliance-detection-probe-set-winner",
   "created_at": "2026-10-19T16:24:34.000Z",
-  "updated_at": "2026-11-11T00:08:25.000Z",
+  "updated_at": "2026-11-18T00:12:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,7 +14,7 @@
   "tags": [
     "onnx",
     "element_type:detect",
-    "model:onnxruntime",
+    "model:ultralytics-yolo",
     "subnet:winner",
     "object:safety helmet",
     "object:high-visibility safety vest",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 108419991,
-  "storage_human": "108 MB",
+  "storage_bytes": 137969865,
+  "storage_human": "138 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 202,
+  "downloads_30d": 196,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "epicartandsound/siglip2-base-patch16-224-ONNX",
+  "renamed_at": "2026-11-18T08:11:58.222Z",
   "benchmarks": [],
   "sources": [
     {

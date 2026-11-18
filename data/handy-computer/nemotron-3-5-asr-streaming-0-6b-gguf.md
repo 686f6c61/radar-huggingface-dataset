@@ -2,143 +2,150 @@
 
 ## Resumen
 
-nemotron-3.5-asr-streaming-0.6b-gguf es la conversión a formato GGUF del modelo de reconocimiento automático del habla nvidia/nemotron-3.5-asr-streaming-0.6b, publicada por handy-computer para su uso con el runtime transcribe.cpp. Se trata de un modelo de speech-to-text multilingüe de 637.991.968 parámetros (0,6B) que combina un encoder FastConformer cache-aware con un decodificador transducer RNN-T, e incluye puntuación y capitalización en la salida. La conversión está anclada al commit 24b151a del modelo original (fijado el 2026-06-08) y validada contra la referencia NeMo en el commit 909e94e de transcribe.cpp.
+Nemotron 3.5 ASR Streaming 0.6B es un modelo de reconocimiento automático del habla (ASR) desarrollado originalmente por NVIDIA y convertido a formato GGUF por handy-computer para su uso con el runtime transcribe.cpp. Se trata de la versión cuantizada del modelo base nvidia/nemotron-3.5-asr-streaming-0.6b, con 637.991.968 parámetros reales, y está diseñado específicamente para transcripción de voz multilingüe en 32 configuraciones de idioma (el tokenizador reconoce 40, aunque 8 requieren ajuste fino). Su relevancia radica en que combina un tamaño compacto (0.6B) con capacidades de streaming en tiempo real, algo poco habitual en modelos ASR de calidad.
 
-Su relevancia práctica está en que ofrece dos modos de inferencia sobre el mismo archivo: una ruta offline con att_context_size=[56, 13] (ventana de audio de 1,12 s, máxima precisión) y una ruta de streaming por chunks configurable en tiempo de ejecución (--stream-chunk-ms 1120, con --stream-att-right {0,3,6,13}). Esto permite cubrir tanto transcripción por lotes de alta calidad como subtitulado en directo, con selección de idioma por llamada (--language en-US, fr-FR, de-DE, ...) y un modo automático que emite una etiqueta `<lang-XX>`.
+La arquitectura es un encoder FastConformer cache-aware con un decoder transducer RNN-T condicionado por prompt, lo que permite seleccionar el idioma destino en cada llamada mediante `--language` o dejar que el modo automático emita una etiqueta `<lang-XX>`. El modelo soporta tanto la ruta offline de alta precisión (att_context_size=[56, 13], 1,12 s) como streaming por chunks seleccionable en tiempo de ejecución (`--stream-chunk-ms 1120 --stream-att-right {0,3,6,13}`), lo que lo hace adecuado para aplicaciones de transcripción en vivo y por lotes.
 
-El paquete se distribuye en seis niveles de cuantización que van de 473 MB (Q4_K_M) a 2,38 GB (F32), con un impacto en WER muy contenido: en FLEURS test en (en-US) se pasa de 7,97 % en F32 a 8,49 % en Q4_K_M, y en LibriSpeech test-clean de 3,04 % a 3,28 %. El repositorio acumula 1.821.099 descargas y está licenciado bajo OpenMDW-1.1, heredada del modelo base de NVIDIA.
+El modelo se distribuye con licencia OpenMDW-1.1 y está empaquetado en múltiples cuantizaciones GGUF (F32, F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M) con tamaños desde 496 MB hasta 2,55 GB, lo que permite desplegarlo desde dispositivos móviles y CPUs convencionales hasta GPUs de consumo. Con más de 1,6 millones de descargas, se ha consolidado como una opción práctica para transcripción multilingüe local sin dependencia de servicios en la nube.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Encoder FastConformer cache-aware + decodificador RNN-T transducer condicionado por prompt (familia Parakeet) |
-| Parametros totales | 637.991.968 (0,6B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica en tokens. Ventana de atencion de audio att_context_size=[56, 13] en modo offline (1,12 s); en streaming, chunk configurable de 1120 ms con --stream-att-right {0,3,6,13} |
-| Tipos de cuantizacion | F32, F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
-| Idiomas soportados | 32 locales segun la model card (28 declarados en los metadatos de Hugging Face: en, es, fr, it, pt, nl, de, tr, ru, ar, hi, ja, ko, vi, uk, pl, sv, cs, nb, da, bg, fi, hr, sk, zh, hu, ro, et). El tokenizador reconoce 40; 8 son adaptation-ready y requieren fine-tuning |
-| Licencia | OpenMDW-1.1 (heredada del modelo base) |
-| Formato de pesos | GGUF |
-| Entrada de audio | WAV mono a 16 kHz |
-| Timestamps | A nivel de token |
-| Deteccion de idioma | Si (modo automatico con etiqueta `<lang-XX>`) |
-| Traduccion | No |
-| Streaming | Si (chunked, seleccionable en tiempo de ejecucion) |
-| Libreria | transcribe.cpp |
-| Tamano del repositorio | 37,5 GB |
-| Descargas / likes | 1.821.099 / 9 |
-| Fecha de creacion | 2026-06-07 |
-| Ultima actualizacion | 2026-09-12 |
+| Arquitectura | FastConformer cache-aware (encoder) + RNN-T transducer decoder condicionado por prompt |
+| Parámetros totales | 637.991.968 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (ventana de atención offline att_context_size=[56, 13], 1,12 s; streaming configurable por chunks de 1120 ms con att_right {0,3,6,13}) |
+| Tipos de cuantización | F32, F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
+| Idiomas soportados | 32 configuraciones de idioma-locale: en-US, en-GB, es-US, es-ES, fr-FR, fr-CA, it-IT, pt-BR, pt-PT, nl-NL, de-DE, tr-TR, ru-RU, ar-AR, hi-IN, ja-JP, ko-KR, vi-VN, uk-UA, pl-PL, sv-SE, cs-CZ, nb-NO, da-DK, bg-BG, fi-FI, hr-HR, sk-SK, zh-CN, hu-HU, ro-RO, et-EE |
+| Licencia | OpenMDW-1.1 |
+| Formato de pesos | GGUF (para transcribe.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un sistema ASR de la familia Parakeet: un encoder FastConformer con atención cache-aware seguido de un decodificador transducer RNN-T condicionado por prompt. La característica diferencial es la doble ruta de inferencia sobre los mismos pesos. En modo offline se emplea att_context_size=[56, 13], que procesa una ventana de 1,12 s y ofrece la máxima precisión. En modo streaming, el runtime divide la señal en chunks (por defecto 1120 ms) y controla el contexto derecho disponible mediante --stream-att-right con valores 0, 3, 6 o 13, lo que permite intercambiar latencia por calidad sin cambiar de modelo. La selección de idioma se realiza por llamada (--language en-US, fr-FR, de-DE, ...) y existe un modo automático que emite una etiqueta `<lang-XX>`.
+El modelo emplea un encoder FastConformer con mecanismo cache-aware, diseñado para permitir streaming incremental sin recalcular todo el contexto acústico. Sobre el encoder se sitúa un decoder transducer RNN-T condicionado por prompt, que recibe la selección de idioma como entrada y guía la decodificación hacia la lengua objetivo. Esta combinación permite dos modos de operación: offline con atención completa (att_context_size=[56, 13], equivalente a 1,12 s de contexto) y streaming por chunks de 1120 ms con distintos grados de lookahead (`att_right` de 0, 3, 6 o 13 frames).
 
-La conversión GGUF fue portada desde el commit upstream 24b151a (fijado el 2026-06-08) y validada numéricamente contra la implementación de referencia NeMo en el commit 909e94e de transcribe.cpp (2026-06-08). No se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO; tampoco se detallan innovaciones adicionales más allá del esquema cache-aware y del decodificador RNN-T condicionado. Los artículos referenciados en los metadatos son arXiv:2312.17279 y arXiv:2305.05084.
+La decodificación es greedy RNN-T con normalización tipo whisper-normalizer para el cálculo de métricas. El modelo soporta detección automática de idioma (emitiendo etiquetas `<lang-XX>`), timestamps a nivel de token y puntuación y capitalización en la salida. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; estos datos corresponden al modelo base de NVIDIA y no se reproducen en la model card de la conversión GGUF.
+
+La conversión GGUF se realizó desde el commit upstream 24b151a del modelo de NVIDIA (fijado el 2026-06-08) y se validó numéricamente contra la referencia NeMo en el commit 909e94e de transcribe.cpp el 2026-06-08.
 
 ## Capacidades
 
-- Transcripcion de voz a texto multilingue en 32 locales, con salida que incluye puntuacion y capitalizacion.
-- Decodificacion streaming por chunks con latencia y contexto derecho configurables (--stream-chunk-ms 1120, --stream-att-right {0,3,6,13}).
-- Decodificacion offline de alta precision con att_context_size=[56, 13], orientada a transcripcion por lotes.
-- Seleccion explicita de idioma por llamada y modo automatico de deteccion con emision de etiqueta `<lang-XX>`.
-- Timestamps a nivel de token, utiles para alineacion, subtitulado con marcas temporales y busqueda dentro del audio.
-- Generacion de transcripciones con decodificacion greedy RNN-T (configuracion usada en las mediciones de WER publicadas).
-- Ejecucion en CPU, GPU y aceleradores integrados mediante los backends soportados por transcribe.cpp (Metal, Vulkan y CPU en las mediciones publicadas).
-- No realiza traduccion (translate: false): la salida se produce en el idioma reconocido, no en otro idioma destino.
-- No dispone de tool calling, function calling ni capacidades de agente: es un modelo puramente acustico de transcripcion.
-- No procesa vision, audio generativo ni texto como modalidad de entrada.
+- Transcripción de voz a texto multilingüe en 32 configuraciones de idioma-locale, con puntuación y capitalización automáticas.
+- Streaming en tiempo real con chunks configurables de 1120 ms y lookahead ajustable (0, 3, 6 o 13 frames).
+- Modo offline de alta precisión con contexto de atención completo (att_context_size=[56, 13]).
+- Detección automática de idioma mediante etiquetas `<lang-XX>`.
+- Timestamps a nivel de token.
+- Selección explícita de idioma por llamada (`--language en-US`, `fr-FR`, `de-DE`, etc.).
+- No soporta traducción (`translate: false` en la metadata del modelo).
+- No dispone de capacidades de visión, audio generativo ni tool calling; es un modelo exclusivamente ASR.
 
 ## Casos de uso
 
-- Subtitulado en directo: con la ruta de streaming (chunks de 1120 ms y --stream-att-right ajustable) el modelo puede alimentar un pipeline de subtítulos en tiempo real, sacrificando algo de precisión a cambio de latencia baja en emisiones, webinars o clases.
-- Transcripcion por lotes de reuniones: usando la ruta offline con att_context_size=[56, 13] se obtiene la máxima calidad publicada (3,04 % de WER en LibriSpeech test-clean), adecuada para generar actas y resúmenes posteriores.
-- Analitica de llamadas de atención al cliente: la combinación de transcripción multilingüe y timestamps a nivel de token permite indexar turnos de habla, medir tiempos de respuesta y aplicar analitica sobre conversaciones en 32 locales.
-- Dictado local en aplicaciones de escritorio: el modelo cabe en 473 MB (Q4_K_M) y funciona en CPU, por lo que puede integrarse en herramientas de dictado que operen sin conexión ni envío de audio a terceros.
-- Enrutado automatico por idioma: el modo de deteccion emite `<lang-XX>`, lo que permite clasificar la entrada y derivarla al pipeline, cola o equipo correspondiente sin un detector externo.
-- Indexacion y busqueda de archivos de audio: los timestamps por token facilitan construir un índice buscable de podcasts, grabaciones de soporte o archivos de compliance, señalando el instante exacto de cada término.
-- Accesibilidad en tiempo real: integrado en aplicaciones de videollamada o streaming, puede generar subtítulos en el idioma seleccionado por llamada, con un coste de cómputo bajo gracias al tamano de 0,6B.
-- Despliegue en hardware modesto o edge: con backends Vulkan sobre GPU integrada (14,5x en RTF sobre un Ryzen 4750U) o CPU (7,5x), es viable en equipos portátiles sin GPU dedicada para transcripción en diferido.
+- Transcripción de reuniones y videoconferencias en tiempo real: el modo streaming con chunks de 1120 ms permite generar subtítulos en vivo mientras se desarrolla la conversación, con detección automática de idioma cuando participan hablantes de distintas lenguas.
+- Subtitulado automático de contenido audiovisual: la ruta offline con att_context_size=[56, 13] ofrece la máxima precisión (WER 7,90% en FLEURS en con Q8_0) para generar subtítulos post-producción con timestamps a nivel de token.
+- Asistentes de voz para atención al cliente: el modelo puede transcribir consultas de usuarios en 32 configuraciones de idioma, permitiendo enrutar la conversación a agentes o sistemas downstream según el idioma detectado automáticamente.
+- Actas y notas de reuniones multilingües: con soporte para es-ES, es-US, fr-FR, fr-CA, pt-BR, pt-PT y otras variantes regionales, es adecuado para organizaciones con equipos distribuidos geográficamente.
+- Transcripción en dispositivos de borde: la cuantización Q4_K_M (496 MB) permite ejecutar el modelo en CPUs convencionales y dispositivos con recursos limitados; en un Ryzen 4750U se obtiene un RTF de 10,59 en CPU y 17,13 con Vulkan.
+- Procesamiento por lotes de archivos de audio: la CLI de transcribe.cpp acepta WAV mono a 16 kHz y permite automatizar la transcripción de grandes volúmenes de grabaciones con scripts, usando la cuantización adecuada según el equilibrio precisión/velocidad requerido.
+- Aplicaciones de accesibilidad: transcripción en vivo de conversaciones para personas con discapacidad auditiva, con la ventaja de ejecución local sin envío de audio a servicios externos.
+- Análisis de llamadas y compliance: transcripción de grabaciones telefónicas en múltiples idiomas europeos (de-DE, fr-FR, it-IT, nl-NL, pl-PL, etc.) para auditoría y extracción de información.
 
 ## Benchmarks y rendimiento
 
-Resultados de WER publicados en la model card. Las columnas de cuantizacion corresponden a FLEURS en; se incluye la referencia NeMo medida sobre el mismo manifiesto.
+Resultados de WER (Word Error Rate) en FLEURS test con cuantización Q8_0, salvo donde se indica:
 
-| Benchmark | F32 | F16 | Q8_0 | Q6_K | Q5_K_M | Q4_K_M | Referencia NeMo |
-|---|---|---|---|---|---|---|---|
-| FLEURS test en (en-US), WER (%) | 7,97 | 7,97 | 7,88 | 8,02 | 8,15 | 8,49 | 7,99 (NVIDIA declara 7,91 en en-US) |
-| LibriSpeech test-clean, WER (%) | 3,04 | 3,03 | 3,06 | 3,07 | 3,10 | 3,28 | 3,03 |
+| Idioma / test | Métrica | Q8_0 | Otras cuantizaciones |
+|---|---|---|---|
+| FLEURS en (offline) | WER | 7,90% | F32 7,97% / F16 7,97% / Q6_K 8,02% / Q5_K_M 8,15% / Q4_K_M 8,49% |
+| FLEURS es | WER | 6,30% | no disponible |
+| FLEURS it | WER | 5,78% | no disponible |
+| FLEURS pt | WER | 8,52% | no disponible |
+| FLEURS hi | WER | 8,61% | no disponible |
+| FLEURS de | WER | 10,33% | no disponible |
+| FLEURS fr | WER | 10,78% | no disponible |
+| FLEURS ru | WER | 12,61% | no disponible |
+| FLEURS nl | WER | 13,61% | no disponible |
+| FLEURS vi | WER | 13,96% | no disponible |
+| FLEURS uk | WER | 14,88% | no disponible |
+| FLEURS tr | WER | 15,40% | no disponible |
+| FLEURS ar | WER | 15,93% | no disponible |
+| FLEURS pl | WER | 17,54% | no disponible |
+| FLEURS nb | WER | 19,24% | no disponible |
+| FLEURS fi | WER | 21,91% | no disponible |
+| FLEURS bg | WER | 22,02% | no disponible |
+| FLEURS cs | WER | 23,00% | no disponible |
+| FLEURS sk | WER | 23,25% | no disponible |
+| FLEURS sv | WER | 24,32% | no disponible |
+| FLEURS hr | WER | 26,21% | no disponible |
+| FLEURS ro | WER | 28,28% | no disponible |
+| FLEURS da | WER | 28,51% | no disponible |
+| FLEURS et | WER | 31,84% | no disponible |
+| FLEURS hu | WER | 32,12% | no disponible |
+| FLEURS ja | CER | 13,52% | no disponible |
+| FLEURS ko | CER | 8,89% | no disponible |
+| FLEURS zh | CER | 18,87% | no disponible |
+| LibriSpeech test-clean | WER | 3,05% | F32 3,04% / F16 3,04% / Q6_K 3,08% / Q5_K_M 3,10% / Q4_K_M 3,30% |
 
-Notas de medicion aportadas por el autor: WER medido sobre FLEURS test en (647 enunciados) con decodificacion greedy RNN-T, --language en-US y puntuacion con whisper-normalizer; LibriSpeech test-clean sobre 2620 enunciados. El modelo no publica resultados de MMLU, HumanEval, GSM8K ni benchmarks de texto, ya que no es un modelo de lenguaje.
+Referencia NeMo sobre el mismo manifiesto: 7,99% en FLEURS en (NVIDIA reporta 7,91% en en-US) y 3,03% en LibriSpeech test-clean.
 
-Tamano y factor de tiempo real (RTF, veces más rápido que el tiempo real):
+Rendimiento (Real-Time Factor, mayor es mejor):
 
-| Cuantizacion | Tamano | WER FLEURS en (offline, att_context_size=[56, 13]) |
+| Plataforma | Backend | RTF |
 |---|---|---|
-| F32 | 2,38 GB | 7,97 % |
-| F16 | 1,19 GB | 7,97 % |
-| Q8_0 | 716 MB | 7,88 % |
-| Q6_K | 593 MB | 8,02 % |
-| Q5_K_M | 534 MB | 8,15 % |
-| Q4_K_M | 473 MB | 8,49 % |
-
-| Hardware | Backend | RTF |
-|---|---|---|
-| Apple M4 Max | Metal | 98x |
-| Apple M4 Max | CPU | 29x |
-| AMD Ryzen 4750U | Vulkan | 14,5x |
-| AMD Ryzen 4750U | CPU | 7,5x |
+| Apple M4 Max | CPU | 30,25 |
+| Apple M4 Max | Metal | 141,10 |
+| AMD Ryzen 4750U | CPU | 10,59 |
+| AMD Ryzen 4750U | Vulkan | 17,13 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 473 MB (Q4_K_M) y 2,38 GB (F32). La model card no publica cifras de VRAM pico ni de overhead del runtime.
-- GPU recomendadas: no se especifican modelos concretos. Los datos publicados cubren Apple M4 Max con backend Metal (98x RTF) y GPU integrada AMD en un Ryzen 4750U con Vulkan (14,5x RTF).
-- Compatibilidad con GPU de consumo: si, el tamano del modelo (menos de 2,4 GB en F32 y 473 MB en Q4_K_M) lo hace apto para practicamente cualquier GPU de consumo con soporte Vulkan o Metal, y tambien para CPU.
-- Inferencia en CPU: viable. Se reportan 29x RTF en el CPU del M4 Max y 7,5x RTF en el CPU de un Ryzen 4750U, siempre por encima del tiempo real.
-- Opciones de despliegue: la soportada oficialmente es transcribe.cpp, compilado desde fuente (cmake -B build && cmake --build build) y ejecutado con build/bin/transcribe-cli -m modelo.gguf input.wav. No se documentan en la informacion disponible otros runtimes (vLLM, llama.cpp, Ollama, TGI) para estos pesos.
-- Entrada requerida: audio WAV mono a 16 kHz; para otras fuentes hay que convertir previamente, por ejemplo con ffmpeg -i input.mp3 -ar 16000 -ac 1 output.wav.
-- Latencia y throughput: expresados como RTF en la tabla anterior (98x, 29x, 14,5x y 7,5x sobre tiempo real). No se publican cifras de latencia absoluta ni de throughput en minutos de audio por segundo.
+- VRAM estimada para inferencia: 496 MB (Q4_K_M), 560 MB (Q5_K_M), 621 MB (Q6_K), 751 MB (Q8_0), 1,28 GB (F16), 2,55 GB (F32). Cifras de tamaño de archivo; el consumo en memoria es del mismo orden.
+- Cabe en cualquier GPU de consumo moderna e incluso en dispositivos integrados; no requiere GPU dedicada.
+- Funciona en CPU: RTF de 10,59 en AMD Ryzen 4750U y 30,25 en Apple M4 Max, lo que permite transcripción más rápida que tiempo real en portátiles convencionales.
+- Aceleración GPU: Metal en Apple Silicon (RTF 141,10 en M4 Max) y Vulkan en GPUs AMD (RTF 17,13 en Ryzen 4750U con iGPU).
+- Opciones de despliegue: transcribe.cpp (runtime específico, compilado desde fuente con CMake). No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia: en modo streaming, el chunk por defecto es de 1120 ms; el lookahead es configurable (0, 3, 6 o 13 frames), lo que permite ajustar latencia frente a precisión.
+- Requisito de entrada: audio WAV mono a 16 kHz (convertible con ffmpeg desde otros formatos).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Licencia | Formato | Datos comparativos |
+| Modelo | Parámetros | Idiomas | Streaming | Licencia | Formato |
 |---|---|---|---|---|---|
-| handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf | 637.991.968 | 32 locales (28 declarados en metadatos) | OpenMDW-1.1 | GGUF (F32 a Q4_K_M) | WER FLEURS en 7,88-8,49 %; LibriSpeech test-clean 3,03-3,28 % |
-| nvidia/nemotron-3.5-asr-streaming-0.6b (modelo base) | 637.991.968 | 32 locales | OpenMDW-1.1 | no disponible en la informacion proporcionada | Referencia NeMo: 7,99 % en FLEURS en y 3,03 % en LibriSpeech test-clean (NVIDIA declara 7,91 % en en-US) |
-| Alternativas de la misma categoria (por ejemplo, familias Whisper o Parakeet no-Nemotron) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| nemotron-3.5-asr-streaming-0.6b (este) | 637.991.968 | 32 locales | Sí (cache-aware, chunks 1120 ms) | OpenMDW-1.1 | GGUF |
+| Whisper large-v3 (referencia de la categoría) | no disponible en la información | ~99 idiomas | No nativo (requiere chunking manual) | MIT (según conocimiento general, no verificado en la información) | safetensors, GGUF vía terceros |
+| Whisper small (referencia de tamaño similar) | no disponible en la información | ~99 idiomas | No nativo | MIT (según conocimiento general, no verificado) | safetensors, GGUF vía terceros |
+| NVIDIA NeMo Parakeet (familia base) | no disponible en la información | no disponible | Depende de variante | no disponible | .nemo |
 
-No se han proporcionado en la informacion disponible resultados de benchmarks frente a modelos alternativos de terceros, por lo que no es posible establecer una comparativa cuantitativa fiable con otras familias ASR.
+No se dispone en la información proporcionada de datos de benchmarks comparativos directos con Whisper u otros modelos ASR de la misma categoría. La comparativa se limita a características estructurales.
 
 ## Limitaciones y advertencias
 
-- Cobertura de idiomas asimetrica: aunque la model card declara 32 locales soportados, el tokenizador reconoce 40 y los 8 restantes son adaptation-ready, es decir, requieren fine-tuning antes de dar resultados utilizables.
-- No traduce: la opcion translate esta desactivada. La salida se produce en el idioma reconocido, no en un idioma destino.
-- Riesgo de alucinacion inherente a los decodificadores transducer: en pasajes con ruido, silencio prolongado o solapamiento de hablantes, la salida puede contener palabras insertadas o repetidas. No se publican tasas de insercion especificas en la informacion disponible.
-- Riesgo de sesgo: no se documentan en la informacion proporcionada analisis de sesgo por acento, variedad dialectal, genero o edad. Los WER publicados corresponden a FLEURS y LibriSpeech, dominios de habla leida y con condiciones controladas.
-- Dependencia de un unico runtime: los pesos estan empaquetados para transcribe.cpp y requieren compilar desde fuente; no se documentan conversiones o soporte para otros motores de inferencia.
-- Restricciones de licencia: el modelo hereda OpenMDW-1.1 del modelo base de NVIDIA. Hay que revisar los terminos completos en la model card del modelo base antes de un uso comercial, ya que la licencia se etiqueta como "other" en Hugging Face y la model card upstream es la fuente autoritativa.
-- Degradacion con cuantizaciones agresivas: Q4_K_M sube el WER a 8,49 % en FLEURS en y 3,28 % en LibriSpeech test-clean, frente a 7,97 % y 3,04 % en F32. La diferencia es pequena, pero conviene validar sobre el dominio objetivo antes de desplegar en produccion.
-- Reproducibilidad del WER: las cifras publicadas dependen de configuraciones concretas (greedy RNN-T, --language en-US, whisper-normalizer para el scoring, att_context_size=[56, 13] offline). Cambiar el chunk de streaming o el contexto derecho alterara los resultados.
-- Metricas de rendimiento medidas en hardware concreto: los RTF de 98x, 29x, 14,5x y 7,5x corresponden a un Apple M4 Max y a un AMD Ryzen 4750U, y no son extrapolables sin validacion a otras plataformas.
-- Formato de audio restringido: solo WAV mono a 16 kHz. Cualquier otra entrada requiere un paso previo de conversion con herramientas externas como ffmpeg.
+- El modelo no realiza traducción (`translate: false`): transcribe en el idioma hablado, no traduce a otro idioma.
+- El tokenizador reconoce 40 idiomas, pero solo 32 están soportados de forma nativa; los 8 restantes son "adaptation-ready" y requieren ajuste fino.
+- Diferencias notables de precisión entre idiomas: el WER varía desde 5,78% en italiano hasta 32,12% en húngaro (Q8_0 en FLEURS). Los idiomas eslavos y ugrofineses presentan los peores resultados.
+- Para ja, ko y zh se reporta CER en lugar de WER, lo que indica que la métrica de evaluación es distinta y no directamente comparable con los idiomas latinos.
+- Licencia OpenMDW-1.1: es una licencia "other" que debe revisarse en el enlace oficial antes de uso comercial; no es una licencia permisiva estándar tipo MIT o Apache.
+- El modelo está empaquetado exclusivamente para transcribe.cpp; no se garantiza compatibilidad con otros runtimes ASR.
+- Riesgo de alucinación en segmentos de audio con ruido, silencios largos o habla solapada; no se documentan en la información proporcionada mecanismos específicos de mitigación.
+- No se documentan en la información proporcionada sesgos demográficos, acentos o variedades dialectales más allá de las variantes regionales listadas (en-US/en-GB, es-US/es-ES, fr-FR/fr-CA, pt-BR/pt-PT).
+- Requiere audio de entrada en WAV mono a 16 kHz; otros formatos necesitan conversión previa con ffmpeg.
+- El repo ocupa 37,5 GB, aunque cada archivo GGUF individual es mucho menor; conviene descargar solo la cuantización necesaria.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf
-- Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
-- Commit del modelo base usado para la conversion: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/commit/24b151a
-- Repositorio de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
-- Commit de validacion en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/909e94e
-- Documentacion del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/nemotron-3.5-asr-streaming-0.6b.md
-- Aplicacion Handy (speech-to-text de escritorio): https://handy.computer/
-- Descarga de Handy: https://handy.computer/download.html
-- Articulo arXiv 2312.17279: https://arxiv.org/abs/2312.17279
-- Articulo arXiv 2305.05084: https://arxiv.org/abs/2305.05084
-- Pesos por cuantizacion:
-  - F32: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-F32.gguf
-  - F16: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-F16.gguf
-  - Q8_0: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-Q8_0.gguf
-  - Q6_K: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-Q6_K.gguf
-  - Q5_K_M: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-Q5_K_M.gguf
-  - Q4_K_M: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-Q4_K_M.gguf
+- Modelo base (NVIDIA): https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Commit upstream fijado: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/commit/24b151a
+- Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
+- Commit de validación: https://github.com/handy-computer/transcribe.cpp/tree/909e94e
+- Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/nemotron-3.5-asr-streaming-0.6b.md
+- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
+- Paper FastConformer (arXiv:2305.05084): https://arxiv.org/abs/2305.05084
+- Paper relacionado (arXiv:2312.17279): https://arxiv.org/abs/2312.17279
+- Descarga F32: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-F32.gguf
+- Descarga F16: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-F16.gguf
+- Descarga Q8_0: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-Q8_0.gguf
+- Descarga Q6_K: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-Q6_K.gguf
+- Descarga Q5_K_M: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-Q5_K_M.gguf
+- Descarga Q4_K_M: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf/resolve/main/nemotron-3.5-asr-streaming-0.6b-Q4_K_M.gguf

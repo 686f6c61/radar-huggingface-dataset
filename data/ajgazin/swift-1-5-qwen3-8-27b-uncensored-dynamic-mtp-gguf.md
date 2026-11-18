@@ -2,105 +2,122 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF es una familia de cuantizaciones GGUF del modelo ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP, publicado por el usuario ajgazin. Se trata de un derivado en cadena: parte de Qwen3.8-27B, sobre el que UkisAI aplicó un ajuste fino orientado a eficiencia de razonamiento (Swift 1.5), que después fue "abliterado" eliminando la dirección de rechazo de orcarouter/Qwen3.8-27B-Uncensored, y finalmente convertido a GGUF con cuantización dinámica de Unsloth Dynamic 3.0 e importance matrix.
+Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF es una colección de cuantizaciones GGUF del modelo ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP, que a su vez es una versión "abliterated" (sin mecanismos de rechazo) del fine-tune Swift 1.5 Qwen3.8-27B de UkisAI sobre el modelo base Qwen3.8-27B de Qwen. El autor de esta ficha de cuantización es ajgazin, y el modelo está pensado para su uso con llama.cpp, incluyendo soporte de visión mediante proyector multimodal y decodificación especulativa con una cabeza MTP integrada.
 
-El modelo resuelve dos necesidades concretas: por un lado, ofrecer una variante sin mecanismos de rechazo (23/100 rechazos frente a 98/100 del Swift 1.5 original, con divergencia KL de 0,0884) manteniendo el resto de capacidades; por otro, facilitar el despliegue local en hardware de consumo mediante 12 niveles de cuantización que van de 9,2 GiB a 50,9 GiB. Incorpora además la cabeza MTP (Multi-Token Prediction) en todos los GGUF principales, lo que habilita decodificación autoespeculativa en llama.cpp, y un proyector de visión para entrada de imagen y vídeo.
+El modelo resuelve el problema de ejecutar localmente un modelo multimodal de gran tamaño (27B nominales) con distintos niveles de compromiso entre calidad y tamaño de archivo, ofreciendo dos layouts de cuantización: los archivos `UD-*` (Dynamic 3.0 de Unsloth, por tensor) y los `RCO-*` (asignación GSQ-RCO de ISTA-DASLab, más experimentales). La variante "uncensored" reduce los rechazos de 98/100 a 23/100 respecto a Swift 1.5, con una divergencia KL de 0,0884 frente a ese modelo.
 
-La relevancia actual del modelo reside en la combinación de tres elementos poco habituales en un mismo paquete: multimodalidad (pipeline image-text-to-text), decodificación especulativa integrada sin fichero draft separado, y una licencia propia (swift-open-license-1.0) que hay que revisar antes de cualquier uso comercial. El repositorio acumula 3.755 descargas y 13 likes, con un tamaño total de 243,9 GB.
+Es relevante ahora porque combina tres tendencias: cuantización dinámica mixta de alta calidad, decodificación especulativa autointegrada (cabeza MTP en el propio GGUF, sin archivo draft separado) y entrada de imagen y vídeo mediante proyector. El repositorio acumula 63.195 descargas y 59 likes, con un tamaño total de 284,8 GB repartido entre todas las variantes.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.8) con cabeza MTP (Multi-Token Prediction) y proyector de visión; detalles de capas y atención no disponibles |
-| Parametros totales | ~27B nominales; el índice de safetensors del repo declara 460.730.096, cifra incoherente con el nombre del modelo y con los tamanos de los cuantizados (se toma con reserva) |
-| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible (los ejemplos de uso de la model card emplean 32.768 tokens con `-c 32768`) |
-| Tipos de cuantizacion | UD-Q2_K_XL (9,2 GiB), UD-IQ3_XXS (10,2 GiB), UD-IQ3_S (11,2 GiB), UD-Q3_K_XL (12,2 GiB), UD-IQ4_XS (13,3 GiB), UD-Q4_K_S (14,3 GiB), UD-Q4_K_XL (16,4 GiB), UD-Q5_K_S (17,4 GiB), UD-Q5_K_M (18,4 GiB), UD-Q6_K_XL (23,6 GiB), UD-Q8_K_XL (29,3 GiB), BF16 (50,9 GiB); mezclas por tensor IQ1_S/IQ2_XXS/IQ2_XS/IQ2_S/IQ3_XXS/IQ3_S/IQ4_XS/IQ4_NL/Q2_K/Q3_K/Q4_K/Q5_K/Q6_K/Q8_0 |
+| Arquitectura | Transformer denso derivado de Qwen3.8-27B, con cabeza MTP para decodificación especulativa y proyector multimodal |
+| Parámetros totales | 460.730.096 (dato de safetensors del modelo base; el nombre comercial indica 27B) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible en la información proporcionada; el ejemplo de uso de llama.cpp emplea `-c 32768` |
+| Tipos de cuantización | BF16, UD-Q8_K_XL, UD-Q6_K_XL, UD-Q5_K_M, UD-Q5_K_S, UD-Q4_K_XL, UD-Q4_K_S, UD-IQ4_XS, UD-Q3_K_XL, UD-IQ3_S, UD-IQ3_XXS, UD-Q2_K_XL, RCO-IQ3_S, RCO-IQ3_XXS, RCO-IQ2_S, RCO-IQ2_XS |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (etiquetada como `license: other`); enlace al texto en ukisai/Swift-1.5-Qwen3.8-27b |
-| Formato de pesos | GGUF (llama.cpp); BF16 GGUF sin cuantizar; proyector de visión `mmproj-BF16.gguf`; fichero auxiliar `tensor_types.tsv`; el modelo origen esta en safetensors BF16 |
+| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | GGUF (llama.cpp); también existe una variante NVFP4 en otro repositorio para GPU Blackwell |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer de la familia Qwen3.8, en su variante de 27B, ajustado por UkisAI para ser eficiente en razonamiento (Swift 1.5 Qwen3.8-27B). Sobre ese modelo se aplicó la dirección de rechazo calculada en orcarouter/Qwen3.8-27B-Uncensored, siguiendo el método de una única dirección de Arditi et al. 2024 (arxiv:2406.11717). La edición afectó a 131 tensores: salidas de atención, `mlp.down_proj`, `embed_tokens` y la capa MTP; el resto de pesos permanece idéntico al Swift 1.5 original. El resultado declara 23/100 rechazos frente a los 98/100 del modelo sin abliterar, con una divergencia KL de 0,0884 medida sobre los pesos BF16 (no recalculada en los cuantizados), usando Heretic con 100 prompts de `mlabonne/harmful_behaviors`, detector de rechazo por palabras clave y KL del primer token sobre `mlabonne/harmless_alpaca`, omitiendo el modo thinking.
+El modelo base es un transformer denso Qwen3.8-27B, ajustado por UkisAI como Swift 1.5 (un fine-tune orientado a eficiencia de razonamiento) y posteriormente "abliterated" por ajgazin para eliminar los comportamientos de rechazo. Sobre esa base se añade una cabeza MTP (multi-token prediction) que permite decodificación especulativa autocontenida en llama.cpp mediante `--spec-type draft-mtp`, sin necesidad de un modelo draft separado. La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
-El proceso de cuantización parte de los safetensors BF16 del modelo fuente (1.199 tensores, MTP incluido) convertidos con `convert_hf_to_gguf.py` de llama.cpp, una vez para el modelo de lenguaje y otra con `--mmproj` para el proyector de visión. La cuantización se realizó con `llama-quantize` empleando `imatrix_unsloth.gguf` procedente de unsloth/Qwen3.8-27B-GGUF, más un `--tensor-type-file` que fija el tipo de cada tensor al que Unsloth eligió para su GGUF del mismo tamano (layout Unsloth Dynamic 3.0). La innovación destacable es la inclusión de la cabeza MTP en cada GGUF principal, que permite decodificación autoespeculativa en llama.cpp sin fichero draft adicional.
+La innovación técnica principal de esta ficha es la cuantización. Los archivos `UD-*` siguen la asignación Dynamic 3.0 de Unsloth con tipos por tensor, calibrados con imatrix. Los archivos `RCO-*` siguen la asignación GSQ-RCO de ISTA-DASLab, son más experimentales y, según el autor, omiten el refinamiento GSQ, por lo que sus métricas no describen los archivos GSQ-RCO originales de UkisAI. La calidad se midió token a token contra el BF16 de origen sobre wikitext-2 (36 secuencias de 8192 tokens, caché KV en f16, llama.cpp `94659b076`).
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo piensa antes de responder por defecto (modo thinking activado de serie), con parámetros de muestreo recomendados de temperatura 1,0, top_p 0,95, top_k 20 y min_p 0.
-- Entrada multimodal de imagen y vídeo a través del proyector incluido (`mmproj-BF16.gguf`), con pipeline declarado image-text-to-text.
-- Decodificación autoespeculativa mediante la cabeza MTP integrada (`--spec-type draft-mtp`), que acelera la generación sin necesidad de un modelo draft externo.
-- Conversión sin censura: reducción drástica de rechazos (23/100 frente a 98/100 del modelo base) manteniendo el resto del comportamiento, con KL de 0,0884.
-- Capacidades multilingües: no disponibles; la model card no detalla el reparto de idiomas.
-- Tool calling / function calling: no se documenta explícitamente en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no se documenta explícitamente, aunque el modo thinking por defecto es compatible con flujos de razonamiento encadenado.
+- Generación de texto y razonamiento: el modelo "piensa antes de responder" por defecto, según la model card.
+- Entrada de imagen y vídeo mediante el proyector `mmproj-BF16.gguf` (0,9 GiB), necesario solo para entrada multimodal.
+- Decodificación especulativa con la cabeza MTP integrada en el GGUF principal.
+- Comportamiento "uncensored": 23/100 rechazos frente a 98/100 de Swift 1.5.
+- Dos layouts de cuantización seleccionables según el compromiso calidad/tamaño.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue local sin censura en estación de trabajo: con UD-Q4_K_XL (16,4 GiB) cabe en una GPU de 24 GB dejando espacio para contexto largo, y evita los rechazos del modelo base en tareas de redacción o análisis de contenido sensible.
-- Asistente multimodal en el escritorio: el proyector `mmproj-BF16.gguf` (0,9 GiB) habilita descripción de imágenes y vídeo, útil para catalogación de material audiovisual o extracción de información de capturas.
-- Generación acelerada con decodificación especulativa: activando `--spec-type draft-mtp` en una build de llama.cpp con soporte MTP para `qwen35`, se aprovecha la cabeza integrada para reducir latencia en respuestas largas.
-- Investigación sobre alineación y abliteración: sirve como referencia reproducible para estudiar el efecto de eliminar una única dirección de rechazo (131 tensores editados, KL medido con Heretic) frente al modelo sin modificar.
-- Evaluación comparativa de cuantizaciones: los 12 niveles UD, con `tensor_types.tsv` documentando el tipo de cada tensor, permiten medir la degradación de calidad frente al BF16 en una misma arquitectura.
-- Prototipado en GPU de gama media: UD-Q2_K_XL (9,2 GiB) o UD-IQ3_XXS (10,2 GiB) permiten ejecutar un modelo de 27B en tarjetas de 12 GB, con la pérdida de calidad que ello implica.
-- Procesamiento por lotes con razonamiento: el modo thinking por defecto resulta adecuado para tareas de análisis que requieren cadena de razonamiento, siempre que se acepte el coste adicional de tokens.
-- Enrutado a producción con otro runtime: para vLLM o SGLang existe la variante NVFP4 del mismo modelo, lo que permite mantener el mismo comportamiento con motores de alto rendimiento.
+- Despliegue local en estación de trabajo con GPU de consumo: usando `UD-Q4_K_XL` (16,4 GiB, KLD 0,0369, 95,6 % same top-1) el modelo cabe en GPUs de 24 GB y mantiene una fidelidad alta respecto al BF16, adecuado para asistentes de código y análisis de documentos sin conexión.
+- Servidor de inferencia con llama.cpp y decodificación especulativa: activando `--spec-type draft-mtp` se aprovecha la cabeza MTP incluida para acelerar la generación sin gestionar un modelo draft aparte, útil en servicios de chat con latencia ajustada.
+- Análisis de imágenes y vídeo en local: con `--mmproj mmproj-BF16.gguf` el modelo acepta entrada visual, lo que permite tareas de descripción de imágenes, extracción de información de capturas o revisión de fotogramas en pipelines privados.
+- Investigación sobre alineación y rechazo: la variante uncensored (23/100 rechazos, KLD 0,0884 frente a Swift 1.5) sirve para estudiar el efecto de la abliteración en la distribución de salida y en la tasa de rechazo.
+- Evaluación de métodos de cuantización: los archivos `tensor_types.tsv`, `rco_types.tsv` y `kld_results.csv` permiten reproducir y comparar las asignaciones UD y RCO por tensor, útil para investigadores que estudian el impacto de la cuantización mixta.
+- Prototipado en hardware limitado: con `UD-Q2_K_XL` (9,2 GiB) o `RCO-IQ2_XS` (8,2 GiB) se puede ejecutar el modelo en GPUs de 12 GB o en configuraciones con offload parcial a CPU, aceptando una pérdida notable de fidelidad (KLD 0,1902 y 0,3018 respectivamente).
+- Generación de documentación técnica y resúmenes largos: el ejemplo de la model card usa 32.768 tokens de contexto, suficiente para procesar manuales o expedientes extensos en una sola pasada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la informacion disponible. El único rendimiento cuantificado en la model card es la medición de rechazos y divergencia KL:
+La información proporcionada incluye métricas de fidelidad de cuantización (KLD media y porcentaje de same top-1 frente al BF16 de origen), no benchmarks de tareas como MMLU o HumanEval.
 
-| Modelo | Rechazos | Divergencia KL |
-|---|---|---|
-| BF16 fuente (frente a Swift 1.5) | 23/100 | 0,0884 |
-| Swift 1.5 Qwen3.8-27B | 98/100 | 0 |
+| Cuantización | Tamaño | KLD media | Same top-1 |
+|---|---|---|---|
+| BF16 | 50,9 GiB | — | — |
+| UD-Q8_K_XL | 29,3 GiB | 0,0068 | 98,8 % |
+| UD-Q6_K_XL | 23,6 GiB | 0,0138 | 98,2 % |
+| UD-Q5_K_M | 18,4 GiB | 0,0238 | 96,8 % |
+| UD-Q5_K_S | 17,4 GiB | 0,0279 | 96,4 % |
+| UD-Q4_K_XL | 16,4 GiB | 0,0369 | 95,6 % |
+| UD-Q4_K_S | 14,3 GiB | 0,0575 | 94,0 % |
+| UD-IQ4_XS | 13,3 GiB | 0,0691 | 92,9 % |
+| UD-Q3_K_XL | 12,2 GiB | 0,0789 | 91,7 % |
+| RCO-IQ3_S | 11,3 GiB | 0,1084 | 89,5 % |
+| UD-IQ3_S | 11,2 GiB | 0,1074 | 89,9 % |
+| UD-IQ3_XXS | 10,2 GiB | 0,1353 | 87,8 % |
+| RCO-IQ3_XXS | 9,7 GiB | 0,1774 | 86,4 % |
+| UD-Q2_K_XL | 9,2 GiB | 0,1902 | 85,1 % |
+| RCO-IQ2_S | 8,9 GiB | 0,2349 | 83,8 % |
+| RCO-IQ2_XS | 8,2 GiB | 0,3018 | 81,2 % |
 
-Medición realizada con Heretic sobre los pesos BF16: 100 prompts de `mlabonne/harmful_behaviors` con detector de rechazo por palabras clave y KL del primer token sobre `mlabonne/harmless_alpaca`, omitiendo el modo thinking. No se ha vuelto a medir en los cuantizados.
+Según el autor, en los archivos UD la calidad sigue el tamaño del archivo sin excepciones: por encima de UD-Q5_K_M cada GiB adicional aporta poco, y por debajo cada GiB ahorrado cuesta aproximadamente el doble. RCO-IQ3_S iguala a UD-IQ3_S; los tres RCO más pequeños se alejan más del BF16 que los UD de tamaño comparable. Estas cifras son relativas a este BF16 y a este texto, por lo que no son comparables con las de otros repositorios ni con el 0,0884 de la abliteración, que se mide frente a Swift 1.5.
+
+No se han publicado resultados de benchmarks de tareas en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada por cuantización (según la model card): UD-Q2_K_XL 9,2 GiB y UD-IQ3_XXS 10,2 GiB para GPU de 12 GB; UD-IQ3_S 11,2 GiB y UD-Q3_K_XL 12,2 GiB para GPU de 16 GB; UD-IQ4_XS 13,3 GiB para 16 GB con menos margen de contexto; UD-Q4_K_S 14,3 GiB para 20 GB o 16 GB con contexto corto; UD-Q4_K_XL 16,4 GiB para 24 GB con contexto largo; UD-Q5_K_S 17,4 GiB y UD-Q5_K_M 18,4 GiB para 24 GB; UD-Q6_K_XL 23,6 GiB para 32 GB; UD-Q8_K_XL 29,3 GiB para 48 GB o 32 GB con offload parcial a CPU; BF16 50,9 GiB sin cuantizar.
-- Cabe en GPU de consumo: sí, desde una RTX 3060 de 12 GB (con los cuantizados de 2 y 3 bits) hasta una RTX 4090 o RTX 5090 de 24/32 GB (con UD-Q4_K_XL y UD-Q6_K_XL respectivamente).
-- GPU profesionales recomendadas: A100, H100 o L40S para los cuantizados altos y el BF16, especialmente si se necesita contexto largo o visión activada.
-- Memoria adicional: el proyector de visión `mmproj-BF16.gguf` anade 0,9 GiB cuando se usa entrada de imagen o vídeo.
-- Opciones de despliegue: llama.cpp / `llama-server` (formato nativo del repo), Ollama y LM Studio por compatibilidad GGUF; para vLLM y SGLang el autor remite a la variante NVFP4 del mismo modelo.
-- Latencia y throughput: no disponibles. La cabeza MTP permite decodificación autoespeculativa, pero no se publican cifras de aceleración ni de tokens por segundo.
-- Requisito de build: `--spec-type draft-mtp` necesita una compilación de llama.cpp con soporte MTP para `qwen35`; la cabeza se carga desde el propio GGUF, sin fichero draft separado.
+- VRAM estimada: desde unos 8,2 GiB (RCO-IQ2_XS) hasta 50,9 GiB (BF16); el rango práctico va de 10 a 30 GiB según cuantización.
+- GPU recomendadas: para BF16 o UD-Q8_K_XL, A100 80 GB o H100; para UD-Q6_K_XL y UD-Q5_K_M, GPUs de 24-32 GB (RTX 4090, A6000, L40S).
+- GPU de consumo: UD-Q4_K_XL (16,4 GiB) y UD-Q4_K_S (14,3 GiB) caben en RTX 4090 (24 GB) y en GPUs de 16 GB con margen para contexto; UD-Q3_K_XL (12,2 GiB) y UD-IQ3_S (11,2 GiB) caben en GPUs de 12-16 GB.
+- Opciones de despliegue: llama.cpp (`llama-server`), con soporte de `--mmproj` para visión y `--spec-type draft-mtp` para decodificación especulativa; para GPU Blackwell existe una variante NVFP4 compatible con vLLM y SGLang en otro repositorio.
+- Requisito de build: `--spec-type draft-mtp` necesita una compilación de llama.cpp con soporte MTP para `qwen35`.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Almacenamiento: el repositorio completo ocupa 284,8 GB; conviene descargar solo la cuantización necesaria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos / calidad | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantizaciones | Licencia | Notas |
 |---|---|---|---|---|---|
-| Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF (este) | ~27B | no disponible | 23/100 rechazos, KL 0,0884 (medido en BF16) | swift-open-license-1.0 | GGUF, 12 cuantizados (9,2-50,9 GiB) |
-| ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP (origen BF16) | ~27B | no disponible | 23/100 rechazos, KL 0,0884 | swift-open-license-1.0 | safetensors BF16 |
-| ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-NVFP4 | ~27B | no disponible | mismas métricas de la fuente | swift-open-license-1.0 | NVFP4, para vLLM y SGLang |
-| ukisai/Swift-1.5-Qwen3.8-27b (Swift 1.5, antes de abliterar) | ~27B | no disponible | 98/100 rechazos, KL 0 | swift-open-license-1.0 | safetensors |
-| unsloth/Qwen3.8-27B-GGUF | ~27B | no disponible | no disponible | no disponible | GGUF (origen de la imatrix, no abliterado) |
+| Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF (este) | 460.730.096 según safetensors del base; 27B nominales | no disponible | GGUF UD y RCO, BF16, NVFP4 en otro repo | swift-open-license-1.0 | Visión, MTP integrada, uncensored |
+| ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP (base) | 27B nominales | no disponible | safetensors | swift-open-license-1.0 | Modelo de origen de esta cuantización |
+| ukisai/Swift-1.5-Qwen3.8-27b | 27B nominales | no disponible | no disponible | swift-open-license-1.0 | Fine-tune de razonamiento eficiente, censurado (98/100 rechazos) |
+| Qwen/Qwen3.8-27B | 27B nominales | no disponible | no disponible | no disponible | Modelo base original |
+
+La información disponible no incluye comparaciones con modelos de otros fabricantes ni datos de rendimiento en tareas que permitan una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterado: se ha eliminado un mecanismo de seguridad, por lo que puede generar contenido dañino, ofensivo o ilegal. No es adecuado para aplicaciones orientadas al público sin filtros externos.
-- La medición de rechazos (23/100) se realizó con un detector por palabras clave sobre 100 prompts, una metodología limitada que no descarta rechazos ni evalúa la calidad del contenido generado.
-- Riesgo de degradación por la abliteración: la divergencia KL de 0,0884 frente a Swift 1.5 indica un cambio medible en la distribución de salida; no se documenta el impacto sobre tareas generales.
-- Las métricas no se han recalculado sobre los cuantizados, por lo que el comportamiento real de los GGUF de baja precisión puede diferir del BF16.
-- Los cuantizados de 2 y 3 bits (UD-Q2_K_XL, UD-IQ3_XXS, UD-IQ3_S) emplean tipos como IQ1_S, IQ1_M e IQ2_XXS que degradan notablemente la calidad; conviene validar antes de usarlos en producción.
-- Idiomas soportados no documentados: se desconoce el reparto real de capacidades multilingües.
-- Longitud de contexto no especificada: los ejemplos usan 32.768 tokens, pero no se confirma si es el máximo soportado.
-- Licencia swift-open-license-1.0, etiquetada como `license: other`: hay que revisar el texto antes de cualquier uso comercial, ya que no se detallan aquí las restricciones.
-- Soporte MTP limitado: requiere una compilación específica de llama.cpp con MTP para `qwen35`; no está garantizado en versiones estándar.
-- No se documentan capacidades de tool calling ni de agentes, por lo que no deben asumirse en integraciones que las requieran.
+- La variante "uncensored" elimina la mayoría de rechazos (23/100 frente a 98/100), lo que implica un riesgo elevado de generar contenido dañino, ilegal o sesgado sin filtros; no es adecuada para aplicaciones orientadas al público sin moderación adicional.
+- La abliteración introduce una divergencia KL de 0,0884 respecto a Swift 1.5, lo que puede degradar sutilmente la coherencia o la utilidad en tareas sensibles.
+- Riesgo de alucinación: no cuantificado en la información disponible, pero inherente a los modelos de lenguaje de esta escala.
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento adecuado fuera del inglés sin evaluación previa.
+- Longitud de contexto no documentada; el ejemplo de uso emplea 32.768 tokens, pero no se confirma el máximo del modelo.
+- Las cuantizaciones por debajo de UD-Q5_K_M pierden calidad de forma acelerada; por debajo de IQ3 el KLD supera 0,10 y el same top-1 cae por debajo del 90 %.
+- Los archivos RCO son experimentales y omiten el refinamiento GSQ; sus métricas no describen los archivos GSQ-RCO de UkisAI.
+- La licencia swift-open-license-1.0 está etiquetada como `other`; es imprescindible revisar el texto completo antes de cualquier uso comercial.
+- El nombre comercial "27B" no coincide con el recuento de safetensors del modelo base (460.730.096 parámetros); conviene verificar el tamaño real antes de dimensionar el hardware.
+- El repositorio completo ocupa 284,8 GB; descargar todos los archivos sin seleccionar la cuantización consume almacenamiento innecesario.
+- El soporte MTP requiere una compilación específica de llama.cpp para `qwen35`; las builds estándar pueden no reconocer `--spec-type draft-mtp`.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF
-- Modelo base (BF16, safetensors): https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP
-- Variante NVFP4 para vLLM y SGLang: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-NVFP4
-- Swift 1.5 Qwen3.8-27B (UkisAI, modelo de partida): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
+- Repositorio Hugging Face: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF
+- Modelo base (safetensors): https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP
+- Variante NVFP4 para Blackwell: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-NVFP4
+- Modelo Swift 1.5 Qwen3.8-27B de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
+- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Texto de la licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
-- Qwen3.8-27B (modelo original): https://huggingface.co/Qwen/Qwen3.8-27B
-- Dirección de rechazo utilizada: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
-- Importance matrix de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Heretic (herramienta de medición): https://github.com/p-e-w/heretic
-- Paper de Arditi et al. 2024 (arxiv:2406.11717): https://arxiv.org/abs/2406.11717
+- Paper referenciado (arXiv:2604.18556): https://arxiv.org/abs/2604.18556
+- Paper referenciado (arXiv:2605.00649): https://arxiv.org/abs/2605.00649
+- Paper referenciado (arXiv:2406.11717): https://arxiv.org/abs/2406.11717

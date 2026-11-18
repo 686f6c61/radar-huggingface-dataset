@@ -2,96 +2,93 @@
 
 ## Resumen
 
-MoziAI-35B-V3.8 es un modelo de lenguaje multimodal de codigo abierto desarrollado por el equipo de Chen Yumo, un influyente analista financiero chino. Esta construido sobre la base open source **Ornith-1.5-35B-A3B** (arquitectura Qwen3.5-35B-A3B / Qwen3.6-35B-A3B, licencia MIT) y anade capas de fine-tuning propietarias orientadas al dominio financiero, un marco de razonamiento estructurado de siete dimensiones, un mecanismo de iteracion agente tipo LOOP y un algoritmo de cuantizacion hibrida propio llamado MoziSmartBit.
+MoziAI-35B-V3.8 es un ajuste fino (finetune) del modelo base Ornith-1.5-35B-A3B, una arquitectura MoE de 35.505.251.456 parámetros totales con aproximadamente 3.000 millones de parámetros activos por token. Lo desarrolla el equipo de Chen Yumo (chenyumo en Hugging Face), y su propuesta principal es ofrecer un modelo multimodal de despliegue local con enfoque en el dominio financiero, capacidades de tool calling y una cuantización propietaria denominada MoziSmartBit que reduce el peso del modelo a unos 15,9 GB.
 
-El modelo presenta 35.505 millones de parametros totales en arquitectura MoE con 3.000 millones de parametros activos, lo que permite su despliegue en GPU de consumo con 20 GB de VRAM. Su principal propuesta de valor es la compresion mediante MoziSmartBit, que reduce el peso del modelo a aproximadamente 15,9 GB (un 30 % menos que una cuantizacion Q4_K_M estandar de ~22 GB) manteniendo supuestamente un 99 % de la precision FP16. Incluye soporte para vision, tool calling y un modo "uncensored" sin restricciones de moderacion de contenido.
+El modelo se distribuye principalmente en formato GGUF para llama.cpp, con licencia Apache 2.0, y está etiquetado como "uncensored", es decir, sin moderación de contenido en la generación. Incorpora un marco de razonamiento propietario de "siete dimensiones" y un mecanismo de iteración tipo agente (LOOP) que el autor describe como diferenciadores frente al modelo base. También declara soporte de decodificación especulativa mediante MTP (multi-token prediction).
 
-La relevancia actual del modelo radica en su enfoque vertical financiero, un ambito donde la tolerancia a la alucinacion es muy baja, y en su capacidad para ejecutarse localmente con coste de inferencia cero. La version analizada (V3.8) fue publicada el 1 de septiembre de 2026 y esta disponible en formato GGUF para llama.cpp.
+Es relevante ahora porque ocupa un nicho concreto: modelos MoE de tamaño medio que caben en GPU de consumo con 20 GB o más de VRAM, con licencia permisiva y orientados a uso comercial sin coste. No obstante, la información técnica publicada es escasa y mayoritariamente cualitativa, y no se han publicado resultados de benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) basada en Qwen3.5/Qwen3.6-35B-A3B (Ornith-1.5-35B-A3B) |
+| Arquitectura | Transformer MoE (derivada de Qwen3.5-35B-A3B / Qwen3.6-35B-A3B, según el autor) |
 | Parametros totales | 35.505.251.456 (35,5 B) |
-| Parametros activos | 3.000 millones (A3B) |
+| Parametros activos | no disponible (el nombre del modelo indica A3B, es decir, ~3 B activos; no confirmado en la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MoziSmartBit (cuantizacion hibrida propietaria, ~15,9 GB), Q4_K_M, GGUF (otros formatos no especificados) |
-| Idiomas soportados | 201 idiomas y dialectos, con chino especialmente optimizado; ingles y chino como idiomas principales declarados |
-| Licencia | other (la base Ornith-1.5-35B-A3B es MIT; la licencia exacta del modelo final no esta especificada) |
-| Formato de pesos | GGUF (llama.cpp), safetensors (repo original de 47,8 GB) |
+| Tipos de cuantizacion | GGUF con cuantización propietaria MoziSmartBit (peso principal ~15,9 GB); imatrix; comparativa con Q4_K_M mencionada en la model card |
+| Idiomas soportados | en, zh (la model card declara 201 idiomas y dialectos, con optimización especial para chino) |
+| Licencia | Apache 2.0 (componentes upstream Qwen/Gemma Apache-2.0; incrementos Ornith bajo MIT) |
+| Formato de pesos | GGUF (librería llama-cpp); repo de 47,8 GB con múltiples archivos |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es un transformer MoE derivado de la familia Qwen3.5/Qwen3.6, concretamente el modelo Ornith-1.5-35B-A3B con licencia MIT. La configuracion MoE activa 3.000 millones de parametros por token de un total de 35.500 millones, lo que permite un equilibrio entre capacidad y eficiencia computacional.
+El modelo parte de Ornith-1.5-35B-A3B, que según el autor sigue la arquitectura de Qwen3.5-35B-A3B / Qwen3.6-35B-A3B: un transformer con mezcla de expertos (MoE) de 35,5 mil millones de parámetros totales. El ajuste fino añade datos financieros propios del equipo, capacidades de dominio financiero, un "marco de pensamiento dinámico de siete dimensiones" (comprensión de la tarea, evaluación de complejidad, dependencias, evaluación de riesgos, necesidades de recursos, criterios de aceptación y estrategia de ejecución) y un mecanismo de iteración tipo agente denominado LOOP, con dos rondas de ejecución y verificación.
 
-Sobre esta base, el equipo de Chen Yumo aplico fine-tuning con datos financieros propios y capacidades de dominio especifico. El entrenamiento incorpora tres innovaciones destacables:
-
-- **Marco de pensamiento dinamico de siete dimensiones**: el modelo emite un marcador `moziAI-Think` y despliega un nivel de razonamiento estructurado segun la complejidad de la tarea (nivel 0 para preguntas simples, nivel 1 para analisis, nivel 2 para desarrollo complejo con las siete dimensiones completas: comprension, evaluacion de complejidad, dependencias, evaluacion de riesgo, necesidades de recursos, criterios de aceptacion y estrategia de ejecucion).
-- **Mecanismo de iteracion agente LOOP**: las tareas complejas entran en un ciclo de ejecucion, evaluacion, ajuste y verificacion antes de producir la respuesta final.
-- **MoziSmartBit**: algoritmo de cuantizacion hibrida por capas que aplica precision diferenciada segun la estructura MoE, logrando una compresion de 4,5x respecto a FP16.
-
-No se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni el uso de tecnicas como RLHF o DPO.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon RLHF, DPO u otras técnicas de alineación. La model card menciona una "optimización uncensored" sin detallar el procedimiento. La innovación técnica más destacada es MoziSmartBit, una cuantización por capas diferenciada para estructuras MoE que, según el autor, mantiene aproximadamente el 99 % de la precisión de FP16 con una compresión de 4,5x. También se anuncia soporte de decodificación especulativa mediante MTP.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento estructurado con niveles adaptativos de profundidad de pensamiento.
-- Razonamiento multi-paso con iteracion LOOP para tareas complejas: el modelo ejecuta, evalua, ajusta y verifica antes de responder.
-- Tool calling / function calling, especialmente optimizado para programacion cuantitativa y consultas financieras.
-- Vision multimodal: capaz de comprender capturas de pantalla e imagenes localmente.
-- Programacion general full-stack: Python, JavaScript, TypeScript, Go y Rust, incluyendo depuracion y diseno de arquitectura.
-- Redaccion de informes de investigacion, articulos de analisis, documentacion tecnica y contenido creativo.
-- Soporte multilingue para 201 idiomas y dialectos, con chino especialmente optimizado.
-- Modo "uncensored": sin restricciones de moderacion de contenido, orientado a investigacion academica y analisis profundo.
-- Especializacion financiera: consultas financieras, analisis de datos, estrategias cuantitativas y lectura de informes.
+- Generación de texto conversacional multi-turno.
+- Razonamiento estructurado mediante el marco propietario de siete dimensiones, con niveles 0, 1 y 2 según la complejidad de la tarea.
+- Modo de iteración agente (LOOP) para tareas complejas, con autoverificación antes de la respuesta final.
+- Tool calling / function calling, con optimización declarada para el dominio financiero.
+- Capacidades multimodales (etiqueta "vision" en el repo; la model card se describe como multimodal).
+- Programación general: desarrollo full-stack, depuración y diseño de arquitectura en Python, JavaScript, TypeScript, Go y Rust.
+- Capacidades multilingües: la model card declara 201 idiomas y dialectos, con optimización especial para chino; los idiomas oficialmente etiquetados son en y zh.
+- Modo sin censura: sin moderación de contenido en la generación.
+- Decodificación especulativa acelerada mediante MTP.
+- Escritura de texto de calidad, según la model card.
 
 ## Casos de uso
 
-- **Analisis financiero automatizado**: el modelo puede procesar informes anuales, estados de resultados y datos de mercado, generando resumenes ejecutivos y deteccion de anomalias. Su fine-tuning financiero reduce el riesgo de alucinacion en datos numericos, critico en este dominio.
-- **Desarrollo de estrategias cuantitativas**: gracias al soporte de tool calling y al razonamiento de nivel 2 con siete dimensiones, puede disenar, implementar y validar estrategias de trading algoritmico en Python, integrandose con APIs de datos de mercado.
-- **Atencion al cliente financiera**: despliegue local con coste cero por token, capaz de gestionar conversaciones multi-turno sobre productos financieros, normativa y resolucion de dudas de inversion con privacidad de datos garantizada.
-- **Asistente de programacion full-stack**: genera codigo, depura errores y disena arquitecturas en Python, JS, TS, Go y Rust. Su modo LOOP permite autoverificar el codigo generado antes de entregarlo, reduciendo errores en pipelines de CI/CD.
-- **Analisis de capturas de pantalla y documentos visuales**: la capacidad de vision permite extraer informacion de graficos de trading, dashboards financieros y capturas de interfaces para su posterior analisis textual.
-- **Investigacion academica sin restricciones**: el modo uncensored permite explorar temas sensibles o controversiales sin filtros de moderacion, util para estudios sociologicos, politologicos o analisis de contenido.
-- **Redaccion de informes de investigacion de mercado**: genera documentos estructurados con citas, analisis de tendencias y proyecciones, aprovechando el marco de pensamiento de siete dimensiones para cubrir todos los aspectos relevantes.
-- **Despliegue en entornos con restriccion de hardware**: con 15,9 GB de peso y 3B parametros activos, puede ejecutarse en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB), habilitando inferencia local en pequenas empresas o consultoras independientes.
+- Análisis financiero asistido: el ajuste incorpora datos y capacidades de dominio financiero, por lo que puede emplearse para resumir informes, comparar métricas y responder preguntas sobre instrumentos financieros, con la advertencia de que la tolerancia del dominio al error es muy baja y requiere verificación humana.
+- Programación cuantitativa: generación y depuración de código de estrategias en Python, aprovechando el soporte de tool calling para integrarse con APIs de datos de mercado.
+- Asistente de desarrollo local: al caber en una GPU de consumo con más de 20 GB de VRAM, permite autocompletado, refactorización y explicación de código sin enviar el código a la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Automatización de agentes con tool calling: el mecanismo LOOP y el soporte de function calling permiten construir flujos multi-paso (consulta de datos, cálculo, validación) en pipelines internos.
+- Procesamiento de documentos con componente visual: la etiqueta "vision" sugiere uso en extracción de información de capturas, tablas o documentos escaneados, aunque no se detallan las capacidades visuales exactas.
+- Despliegue local con privacidad estricta: al ejecutarse con llama.cpp sobre hardware propio, es apto para entornos sanitarios, legales o financieros donde los datos no pueden salir del perímetro.
+- Investigación sobre modelos sin moderación: útil para estudiar comportamiento de modelos sin filtros en entornos académicos controlados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La unica referencia de rendimiento es la afirmacion del autor de que la cuantizacion MoziSmartBit mantiene aproximadamente un 99 % de la precision FP16 y supera a Q4_K_M, pero no se aportan cifras concretas ni comparativas con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye una sección "14. Benchmarks", pero su contenido no se ha proporcionado; solo se afirma de forma cualitativa que el modelo supera a modelos generales del mismo tamaño en el dominio financiero y que MoziSmartBit mantiene ~99 % de la precisión de FP16.
 
 ## Requisitos de hardware
 
-- VRAM estimada: minimo 20 GB para la cuantizacion MoziSmartBit (~15,9 GB de pesos).
-- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A6000 (48 GB), o GPUs de datacenter como A100 (40/80 GB) para mayor margen de contexto.
-- No cabe en GPUs de 16 GB o inferiores (RTX 4080, RTX 3080 Ti, etc.) con la cuantizacion propietaria; podria intentarse con cuantizaciones mas agresivas pero no se garantiza.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros frameworks compatibles con GGUF. Soporta decodificacion especulativa para acelerar la inferencia.
-- Latencia y throughput: no disponibles. El modelo activa solo 3B parametros por token, lo que sugiere una velocidad de generacion superior a un modelo denso de 35B, pero no se aportan mediciones concretas.
+- VRAM estimada: unos 15,9 GB para el archivo MoziSmartBit principal; aproximadamente 22 GB si se usa una cuantización Q4_K_M estándar.
+- GPU recomendadas: el autor indica GPU de consumo con 20 GB de VRAM o más; encajan una RTX 4090 (24 GB) y, con menos margen, una RTX 3090 (24 GB). Para mayor comodidad, A100 o H100 permiten contexto más largo y mayor paralelismo, aunque no se publican cifras de throughput.
+- ¿Cabe en GPU de consumo? Sí, según el autor, en tarjetas con 20 GB o más de VRAM con la cuantización MoziSmartBit.
+- Opciones de despliegue: llama.cpp (librería declarada), servidores compatibles con endpoints (etiqueta "endpoints_compatible"); no se confirma soporte de vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponibles. El autor menciona aceleración por decodificación especulativa (MTP) sin cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MoziAI-35B-V3.8 | 35,5 B | 3 B | no disponible | other (base MIT) | GGUF |
-| Qwen3-32B | 32 B | 32 B (denso) | no disponible | Apache 2.0 | safetensors, GGUF |
-| DeepSeek-V3-Lite | no disponible | no disponible | no disponible | MIT | no disponible |
+| MoziAI-35B-A3B-MOE-MTP | 35,5 B (MoE) | no disponible | Apache 2.0 | GGUF | Finetune financiero de Ornith-1.5-35B-A3B, cuantización MoziSmartBit, sin benchmarks publicados |
+| Ornith-1.5-35B-A3B (base) | 35,5 B (MoE) | no disponible | MIT + Apache 2.0 | no disponible | Modelo base sin el ajuste financiero ni el marco de razonamiento propietario |
+| Qwen3.5-35B-A3B / Qwen3.6-35B-A3B | ~35 B (MoE) | no disponible | Apache 2.0 | no disponible | Arquitectura de referencia citada por el autor; sin datos comparativos de rendimiento en la información disponible |
 
-La comparativa es limitada porque no se dispone de datos de contexto ni benchmarks para MoziAI. Frente a un modelo denso de tamano similar como Qwen3-32B, MoziAI ofrece la ventaja de menor VRAM gracias a su arquitectura MoE con 3B activos, pero se desconoce si el rendimiento por token es comparable. La especializacion financiera y el modo uncensored son diferenciadores claros frente a alternativas generalistas.
+No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- La licencia "other" es ambigua: aunque la base Ornith es MIT, la licencia exacta del modelo final no esta claramente especificada, lo que puede generar incertidumbre legal para uso comercial.
-- El modo "uncensored" implica ausencia de moderacion de contenido, lo que puede producir respuestas inapropiadas, ofensivas o peligrosas en entornos de produccion no controlados.
-- No hay datos publicados de benchmarks, por lo que las afirmaciones de rendimiento ("99 % de precision FP16", "superior a Q4_K_M") no son verificables de forma independiente.
-- La especializacion financiera no elimina el riesgo de alucinacion en datos numericos; se recomienda validacion externa para decisiones de inversion.
-- El contexto maximo no esta documentado, lo que dificulta planificar aplicaciones que requieran ventanas largas.
-- El modelo esta optimizado para ingles y chino; el rendimiento en otros idiomas de los 201 declarados puede ser significativamente inferior.
-- La cuantizacion MoziSmartBit es propietaria y no se especifica si es reproducible con herramientas estandar de cuantizacion.
+- Ausencia total de benchmarks publicados en la información disponible: las afirmaciones de rendimiento de la model card no son verificables.
+- El modo "uncensored" implica ausencia de moderación; no es adecuado para aplicaciones de cara al público sin capas de filtrado adicionales.
+- Riesgo de alucinación relevante en el dominio financiero, donde el propio autor reconoce una tolerancia muy baja al error.
+- Idiomas oficialmente soportados: inglés y chino; el resto de los 201 idiomas declarados no está verificado y probablemente tenga calidad desigual.
+- Longitud de contexto no especificada, lo que dificulta planificar casos de uso con documentos largos.
+- La cuantización MoziSmartBit es propietaria y su reproducibilidad y compatibilidad con herramientas estándar no están documentadas.
+- La licencia Apache 2.0 es permisiva para uso comercial, pero deben respetarse las atribuciones de los componentes upstream (Qwen/Gemma Apache-2.0, Ornith MIT) indicadas en el archivo NOTICE.
+- No se confirma compatibilidad con vLLM, TGI u Ollama, lo que limita las opciones de despliegue en producción a gran escala.
+- El repositorio ocupa 47,8 GB con múltiples archivos; conviene descargar solo la variante necesaria.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP
-- Repositorio GitHub (documentacion): https://github.com/junxian66/chenyumo
-- Repositorio GitHub (uncensored): https://github.com/chenyumo166/moziAI-35B-A3B-MOE-MTP-Uncensored
-- Modelo uncensored en Hugging Face: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored
-- Modelo en ModelScope: https://www.modelscope.cn/models/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Licencia: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP/blob/main/LICENSE
+- README en español: V3.8/README.es.md (dentro del repositorio)
+- README en inglés: V3.8/README.en.md (dentro del repositorio)
+- Paper, blog o demo oficiales: no disponibles en la información proporcionada.

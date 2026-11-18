@@ -5,7 +5,7 @@
   "author": "citavyn",
   "url": "https://huggingface.co/citavyn/citavyn-gemma4-2b-lora",
   "created_at": "2026-11-17T14:35:08.000Z",
-  "updated_at": "2026-11-17T14:56:58.000Z",
+  "updated_at": "2026-11-18T04:44:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

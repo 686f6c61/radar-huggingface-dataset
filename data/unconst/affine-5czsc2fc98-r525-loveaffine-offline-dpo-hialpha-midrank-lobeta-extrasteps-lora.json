@@ -17,12 +17,10 @@
     "lora",
     "affine-h1-salvage",
     "text-generation",
-    "base_model:justice101/affine-5dz2gkonkn-loveaffine",
-    "base_model:adapter:justice101/affine-5dz2gkonkn-loveaffine",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

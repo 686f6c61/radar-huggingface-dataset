@@ -2,99 +2,85 @@
 
 ## Resumen
 
-`burner22/numbat` es un checkpoint de pesos publicado en Hugging Face por el usuario `burner22`. Segun la model card, se trata de un modelo de ~15 billones de parametros (15T), 114 capas, con arquitectura hibrida de Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA), capas de mezcla de expertos (1.224 expertos, top-48 + 1 compartido) y prediccion multi-token (MTP). El checkpoint esta almacenado en formato NVFP4 y distribuido en 842 shards de safetensors que, segun el indice, suman 8.416.101.444.920 bytes (~8,42 TB).
+`numbat` es un checkpoint de pesos publicado en Hugging Face por el usuario `burner22` bajo el identificador `burner22/numbat`. Segun la model card del autor, se trata de una copia de evaluacion extraida a mitad de preentrenamiento de una supuesta ejecucion de entrenamiento interna de Anthropic, con nombre en clave `numbat`, correspondiente a la clase Mythos. El autor afirma que el nombre aparece citado en una filtraccion del codigo fuente de Claude Code de marzo de 2026. No existe confirmacion independiente de esta procedencia en la informacion disponible.
 
-El autor afirma que se trata de una copia de evaluacion extraida a mitad de preentrenamiento (paso 1.830.000 de ~1,96M) de una supuesta ejecucion de entrenamiento interna de Anthropic con nombre en clave `numbat`. Esta atribucion no es verificable con la informacion disponible: la unica "evidencia" citada es una filtracion de codigo fuente de Claude Code de marzo de 2026, y el propio autor declina explicar como obtuvo los pesos. No hay resultados de evaluacion publicados, ni licencia, ni pipeline declarado, y el repositorio acumula 0 descargas y 0 likes.
+El checkpoint declara aproximadamente 14 billones de parametros (el dato real del index de safetensors es de 6.849.378.030.158 parametros, unos 6,85 billones), 114 capas y una arquitectura hibrida que combina Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA) con capas de mezcla de expertos (MoE) de 1.224 expertos con top-48 mas un experto compartido, y Multi-Token Prediction (MTP). Los pesos estan cuantizados en NVFP4 y ocupan 7.720,6 GB repartidos en 772 shards safetensors.
 
-La relevancia practica del artefacto es, por tanto, limitada y fundamentalmente documental: incluye una implementacion de referencia completa (`modeling_numbat.py`, `configuration_numbat.py`) que, segun el autor, permite cargar el checkpoint con `load_state_dict(strict=True)`, ademas de `tokenizer.json` (BPE byte-level de 131.072 tokens) y un volcado del log de entrenamiento. Cualquier uso en produccion esta bloqueado de entrada por la ausencia de licencia y de post-entrenamiento.
+Su relevancia es doble: por un lado, documenta una arquitectura hibrida GDN/MLA con MoE de gran escala y decodificacion especulativa via MTP, poco frecuente en modelos publicos; por otro, el estado del checkpoint es puramente de preentrenamiento (paso 1.830.000 de una ejecucion de ~1.960.000 pasos), sin post-entrenamiento ni RLHF, por lo que su utilidad practica directa es limitada y su interes es principalmente arquitectonico y de investigacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido GDN (Gated DeltaNet) + MLA (Multi-head Latent Attention) con capas MoE y cabecera MTP |
-| Parametros totales | ~15T (dato declarado por el autor; no verificado de forma independiente) |
-| Parametros activos | no disponible (MoE con 1.224 expertos, top-48 + 1 compartido; el autor no publica el reparto exacto ni el tamano por experto) |
+| Arquitectura | Transformer hibrido GDN (Gated DeltaNet) + MLA (Multi-head Latent Attention) con MoE y MTP |
+| Parametros totales | ~14 billones declarados por el autor; 6.849.378.030.158 segun el index de safetensors |
+| Parametros activos | no disponible (top-48 de 1.224 expertos + 1 compartido, sin recuento publicado) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (payload E2M1 con bloques de escala E4M3); no se ofrecen GGUF, AWQ ni GPTQ |
+| Tipos de cuantizacion | NVFP4 (E2M1 con bloques de escala E4M3); pesos en 8-bit segun tags del repo |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no se declara licencia en el repositorio) |
-| Formato de pesos | safetensors, 842 shards de menos de 10,6 GB cada uno; `model.safetensors.index.json` con `total_size` = 8.416.101.444.920 bytes |
-| Capas | 114 |
-| Tokenizer | BPE byte-level, 131.072 tokens |
-| Tamano del repo en Hugging Face | 101,0 GB en el momento de la consulta (no coincide con los ~8,42 TB declarados: solo estaria subida una fraccion de los shards) |
-| Descargas / likes | 0 / 0 |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (772 shards, <10,6 GB por archivo), mas `configuration_numbat.py` y `modeling_numbat.py` con `custom_code` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura descrita combina dos mecanismos de atencion/mezcla secuencial: capas Gated DeltaNet, un modelo de estado recurrente con compuertas que sustituye a la atencion completa en parte del stack, y capas MLA (Multi-head Latent Attention), la atencion con compresion de KV en espacio latente popularizada por DeepSeek-V2/V3. El bloque feed-forward es de tipo MoE con 1.224 expertos, enrutando 48 por token mas un experto compartido siempre activo; el ratio top-48/1.224 (~3,9 %) es notablemente alto en comparacion con MoE publicos de escala similar. Se anade una capa de Multi-Token Prediction (MTP), expuesta como `NumbatForCausalLM.draft`, lo que habilita decodificacion especulativa con cabecera propia.
+La arquitectura es un stack hibrido que alterna capas de Gated DeltaNet, un mecanismo de atencion lineal con estado recurrente, y capas de Multi-head Latent Attention, la atencion con compresion de KV propia de la familia DeepSeek. Las capas feed-forward son de mezcla de expertos con 1.224 expertos, enrutamiento top-48 mas un experto compartido siempre activo. El modelo incorpora ademas una capa de Multi-Token Prediction (MTP) que `NumbatForCausalLM.draft` expone para decodificacion especulativa. El vocabulario es byte-level BPE de 131.072 tokens.
 
-No hay informacion sobre volumen de tokens de entrenamiento, composicion del dataset, ni sobre procesos de alineacion. El autor es explicito: es un checkpoint de preentrenamiento puro en el paso 1.830.000 de ~1,96M, sin post-entrenamiento ni RLHF, y la salida esperada es texto crudo de completado. La cuantizacion a NVFP4 se presenta como una decision de infraestructura: el equipo de evaluacion (segun el autor) cuantiza cada checkpoint asincrono para ejecutar evaluaciones en un segmento de Trainium2 en lugar del cluster completo, y afirma que hacen falta ~85 chips solo para alojar los pesos. Los pesos BF16 originales y el estado del optimizador, segun la model card, nunca salen del cluster.
+Segun la model card, el checkpoint corresponde al paso 1.830.000 de una ejecucion de aproximadamente 1.960.000 pasos, es decir, un estado de preentrenamiento casi completo pero sin post-entrenamiento, sin RLHF ni DPO. La cuantizacion a NVFP4 se realizo para ejecutar evaluaciones sobre un slice de Trainium2 (el autor menciona unos 85 aceleradores solo para alojar los pesos); los pesos BF16 originales y el estado del optimizador no se publican. El repositorio incluye una implementacion de referencia completa que carga el checkpoint con `load_state_dict(strict=True)` y expone la clase `NumbatForCausalLM` compatible con `AutoModelForCausalLM.from_pretrained(..., trust_remote_code=True)`. No se detalla la composicion del dataset de entrenamiento ni el numero de tokens vistos.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva como modelo base de preentrenamiento: completa secuencias, no sigue instrucciones ni mantiene formato conversacional de forma fiable.
-- Prediccion multi-token mediante la capa MTP expuesta en `NumbatForCausalLM.draft`, utilizable para decodificacion especulativa.
-- Carga de la implementacion de referencia con `AutoModelForCausalLM.from_pretrained(..., trust_remote_code=True)` o mediante `load_state_dict(strict=True)`.
-- Tokenizacion multilingue potencial via vocabulario BPE de 131.072 tokens; la cobertura real de idiomas no esta documentada.
-- Tool calling / function calling: no disponible (sin post-entrenamiento no hay soporte fiable de formato de herramientas).
-- Comportamiento agentico y razonamiento multi-paso: no disponible.
-- Vision, audio, thinking mode: no disponibles; la model card no menciona ninguna modalidad adicional.
+- Generacion de texto autoregresiva a partir de pesos de preentrenamiento, sin ajuste instructivo.
+- Razonamiento y codigo: no hay evaluaciones publicadas que confirmen calidad en estas tareas.
+- Tool calling / function calling: no disponible; el checkpoint no incluye post-entrenamiento que lo habilite.
+- Agentes y razonamiento multi-paso: no disponible por el mismo motivo.
+- Capacidades multilingues: no documentadas.
+- Decodificacion especulativa mediante la capa MTP (`NumbatForCausalLM.draft`).
+- Carga completa del checkpoint con implementacion de referencia en PyTorch.
 
 ## Casos de uso
 
-- Investigacion de arquitecturas hibridas: cargar `modeling_numbat.py` como referencia ejecutable para estudiar la interaccion entre capas GDN y MLA en un stack de 114 capas, comparando curvas de perplejidad con implementaciones propias.
-- Estudio de enrutamiento MoE a gran escala: analizar la distribucion de activaciones sobre 1.224 expertos con top-48 para investigar colapso de expertos, balanceo de carga y sensibilidad del router, usando los tensores del checkpoint como objeto de analisis estadistico.
-- Validacion de pipelines de cuantizacion NVFP4: el checkpoint sirve como banco de pruebas de decodificacion de bloques E4M3/E2M1 y comprobacion de round-trip, tal y como sugiere el propio autor.
-- Reproduccion de decodificacion especulativa: usar la cabecera MTP (`draft`) frente al tronco (`forward`) para medir tasas de aceptacion y speedup en un escenario controlado.
-- Auditoria de artefactos publicados: verificar la consistencia entre `model.safetensors.index.json`, el numero de shards y el tamano del repositorio, util en trabajos de trazabilidad y deteccion de repositorios incompletos o mal etiquetados.
-- Docencia sobre formatos de pesos: ilustrar en un curso la diferencia entre bytes declarados en un indice (8,42 TB) y bytes realmente alojados (101 GB), y las implicaciones para la reproducibilidad.
+- Investigacion de arquitecturas hibridas: cargar el checkpoint con `modeling_numbat.py` para estudiar el comportamiento de las capas GDN frente a las MLA en un modelo de gran escala, comparando activaciones y patrones de atencion entre ambos tipos de capa.
+- Analisis de enrutamiento MoE: instrumentar el enrutador de 1.224 expertos con top-48 para medir desequilibrio de carga, especializacion de expertos y frecuencia de activacion sobre corpus de validacion.
+- Estudio de decodificacion especulativa: usar la capa MTP expuesta en `NumbatForCausalLM.draft` para medir tasas de aceptacion de tokens borrador y aceleracion efectiva frente a decodificacion autoregresiva estandar.
+- Validacion de pipelines de cuantizacion NVFP4: emplear los 772 shards como caso de prueba a gran escala para verificar decodificacion de bloques E4M3/E2M1, redondeo RTNE y ausencia de underflow en escalas de bloque.
+- Experimentos de continuacion de preentrenamiento: al ser un checkpoint intermedio, sirve como punto de partida para estudiar dinamicas de entrenamiento en las ultimas fases de una ejecucion larga.
+- Docencia y divulgacion tecnica: ilustrar en un entorno controlado como se estructura un checkpoint multi-shard con index de safetensors, configuracion custom y codigo de modelado asociado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que `ckpt_metadata.json` contiene "eval harness output", pero no se reproduce ninguna cifra de MMLU, HumanEval, GSM8K ni de ninguna otra tarea, y el checkpoint esta a mitad de preentrenamiento, por lo que los resultados serian en cualquier caso preliminares.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la existencia de una salida de harness de evaluacion en `ckpt_metadata.json`, pero no se incluyen cifras en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al menos ~8,42 TB de memoria de acelerador solo para los pesos en NVFP4, segun el `total_size` del indice. No hay margen para cache KV ni activaciones dentro de esa cifra, por lo que el requisito real es superior.
-- GPU recomendadas: no disponible. El autor menciona exclusivamente Trainium2 (afirma que hacen falta ~85 chips solo para sostener los pesos). Para hardware NVIDIA, NVFP4 requiere generacion Blackwell para aceleracion nativa; en generaciones anteriores habria que decodificar el formato por software.
-- Consumer GPU: no cabe. Ni siquiera en configuraciones multi-GPU de 4x RTX 4090 (96 GB) ni en un nodo de 8x H100 80 GB (~640 GB). Como referencia aritmetica, 8,42 TB / 80 GB exige del orden de 105 aceleradores H100 solo para los pesos, sin margen para nada mas.
-- Opciones de despliegue: no disponible. No hay soporte en vLLM, llama.cpp, Ollama ni TGI; el unico camino documentado es la implementacion de referencia en PyTorch con `trust_remote_code=True`.
-- Latencia y throughput: no disponible.
-- Nota de viabilidad: con 101 GB efectivamente subidos frente a los ~8,42 TB declarados, el checkpoint disponible publicamente no es cargable de forma completa en el momento de la consulta.
+- VRAM estimada para inferencia: los pesos ocupan 7.720,6 GB en NVFP4, por lo que se necesita un cluster multi-nodo; no cabe en una sola GPU.
+- GPU recomendadas: el autor indica que las evaluaciones se ejecutaron sobre un slice de Trainium2 de unos 85 aceleradores solo para alojar los pesos; no se documenta despliegue en A100, H100 ni RTX 4090.
+- GPU de consumo: no cabe en ninguna GPU consumer, ni siquiera con cuantizacion adicional.
+- Opciones de despliegue: la model card solo garantiza la implementacion de referencia en PyTorch con `trust_remote_code=True`; no se documenta soporte en vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No existe una categoria publica directamente comparable: no hay modelos abiertos de ~15T parametros con pesos descargables. Se incluyen como referencia modelos MoE abiertos de escala inferior con arquitecturas parcialmente solapadas (atencion latente, MoE de grano fino), usando datos publicos de sus respectivas fichas.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| numbat (burner22) | ~15T (declarado) | no disponible | no disponible | no disponible | Repositorio incompleto (101 GB de ~8,42 TB), 0 descargas |
-| DeepSeek-V3 | 671B | 37B | 128K | MIT | Pesos abiertos en Hugging Face |
-| Qwen3-235B-A22B | 235B | 22B | 128K (extensible) | Apache 2.0 | Pesos abiertos en Hugging Face |
-| Llama 4 Maverick | 400B | 17B | hasta 1M (declarado) | Llama 4 Community License | Pesos abiertos con aceptacion de licencia |
+| numbat | ~14 B declarados / 6,85 B en index | no disponible | GDN + MLA + MoE + MTP, NVFP4 | no disponible | Hugging Face, 772 shards |
+| DeepSeek-V3 | 671 B totales, 37 B activos | 128K | MLA + MoE + MTP | licencia propia | Hugging Face, pesos BF16/FP8 |
+| Qwen3-235B-A22B | 235 B totales, 22 B activos | 128K | Transformer + MoE | Apache 2.0 | Hugging Face, multiples cuantizaciones |
+| Llama 3.1 405B | 405 B | 128K | Transformer denso | licencia Llama | Hugging Face, pesos BF16 |
 
-La diferencia de escala es de mas de un orden de magnitud, y la de madurez es mayor: los tres modelos de referencia cuentan con post-entrenamiento, evaluaciones publicadas y licencias explicitas, mientras que `numbat` no ofrece ninguna de las tres cosas.
+La comparacion es estructural: numbat comparte con DeepSeek-V3 el uso de MLA y MTP, pero anade capas GDN y un numero de expertos muy superior (1.224 frente a 256). A diferencia de los tres modelos de referencia, numbat no es un modelo post-entrenado ni tiene licencia declarada, por lo que no es directamente comparable en calidad de tarea.
 
 ## Limitaciones y advertencias
 
-- Procedencia no verificable: la atribucion a Anthropic se sostiene unicamente en afirmaciones del autor y en una supuesta filtracion de codigo fuente. No hay confirmacion independiente, y el autor rechaza explicar el origen de los pesos.
-- Licencia ausente: sin licencia declarada no existe autorizacion de uso, copia ni redistribucion, ni siquiera para uso no comercial. Uso en produccion desaconsejado de forma absoluta.
-- Riesgo legal relevante: si la procedencia declarada fuese cierta, la redistribucion de pesos internos de un tercero constituiria una infraccion de propiedad intelectual y posiblemente de secretos comerciales.
-- Modelo sin alinear: al no haber post-entrenamiento ni RLHF, la salida es completado crudo de preentrenamiento; no sigue instrucciones, no respeta formatos y reproduciria sesgos y contenido de la web a gran escala sin filtro.
-- Alucinacion: inherente a un modelo base sin calibracion; no hay datos de evaluacion que permitan acotar la tasa.
-- Contexto e idiomas desconocidos: no se publica longitud de ventana ni cobertura linguistica, lo que impide planificar cualquier integracion.
-- Repositorio incompleto: 101 GB alojados frente a 8,42 TB declarados en el indice; `load_state_dict(strict=True)` fallara con los ficheros actualmente disponibles.
-- Requisito de `trust_remote_code=True`: obliga a ejecutar codigo Python del autor (`modeling_numbat.py`, `configuration_numbat.py`) sin auditoria, lo que constituye un riesgo de seguridad en entornos de produccion.
-- Formato NVFP4 sin ecosistema: sin soporte en las herramientas de inferencia habituales, el despliegue exigiria desarrollo propio de kernels.
-- Incoherencia de fechas: la ficha indica creacion el 2026-10-18, posterior a la ventana temporal de las fuentes citadas; conviene contrastar la cronologia antes de citar el artefacto.
-- Sin senales de adopcion: 0 descargas y 0 likes, sin discusion ni issues que permitan validacion por terceros.
+- Checkpoint de preentrenamiento sin post-entrenamiento, RLHF ni DPO: las salidas no siguen instrucciones y no son aptas para uso en produccion.
+- Procedencia no verificada de forma independiente: la atribucion a Anthropic se basa unicamente en la model card del autor.
+- Licencia no declarada: no hay base legal explicita para uso comercial ni para redistribucion.
+- Idiomas soportados no documentados.
+- Longitud de contexto no publicada.
+- Riesgo elevado de alucinacion y de texto incoherente por el estado de entrenamiento.
+- Requisitos de hardware extremos (7,7 TB de pesos) que limitan cualquier evaluacion practica.
+- La implementacion de referencia no ha sido validada por terceros segun la informacion disponible.
+- El numero de parametros declarado (~14 B) no coincide con el del index de safetensors (6,85 B), lo que introduce incertidumbre sobre las cifras reales.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/burner22/numbat
-- Implementacion de referencia: `modeling_numbat.py` y `configuration_numbat.py` dentro del repositorio
-- Configuracion: `config.json` (`NumbatConfig`) e indice de tensores `model.safetensors.index.json`
-- Metadatos del checkpoint: `ckpt_metadata.json` (ruta de checkpoint y salida del harness de evaluacion)
-- Log de entrenamiento: `training_log_tail.txt` (~400 ultimos pasos)
-- Paper, blog, demo o repositorio adicional: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos trataban sobre calderas de lecho fluidizado, tarjetas CFB, terminologia de comercio internacional y arquitecturas de computacion, sin ninguna conexion con `numbat`.
+- Modelo en Hugging Face: https://huggingface.co/burner22/numbat

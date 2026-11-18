@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 3484,
+  "downloads_30d": 3545,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "NousResearch/Arete-27B · Hugging Face",
-      "url": "https://huggingface.co/NousResearch/Arete-27B",
-      "snippet": "Arete-27B is intended for general assistance and agentic work where users want this change in viewpoint, and for research into how post-training changes a model's values and behavior. We encourage the community to test it against their own requirements and continue experimenting with value-alignment."
-    },
-    {
-      "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western ...",
-      "url": "https://nousresearch.com/arete",
-      "snippet": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories."
-    }
-  ]
+  "sources": []
 }

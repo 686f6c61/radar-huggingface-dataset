@@ -69,7 +69,7 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 24383,
+  "downloads_30d": 25009,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -87,31 +87,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Emo: Emoji suggestions on device | Desert Ant Labs",
-      "url": "https://desertant.com/models/emo/",
-      "snippet": "Add Emo from Desert Ant Labs to this project. On-device emoji suggestion that reads a task, a message or a calendar entry and returns the emoji that fit, in 23 languages."
-    },
-    {
-      "title": "Desert-Ant-Labs/emo - GitHub",
-      "url": "https://github.com/Desert-Ant-Labs/emo",
-      "snippet": "The model artifacts are published at desert-ant-labs/emo on Hugging Face. Each SDK pins the model revision to its own package version, and downloads are SHA-256 verified."
-    },
-    {
-      "title": "desert-ant-labs/emo · Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs/emo",
-      "snippet": "desert-ant-labs / emo like 0 Follow Desert Ant Labs 7 Text Classification multilingual text emoji on-device core-ml License:desert-ant-labs-source-available-1. Model card FilesFiles and versions xet Community Copy to bucket new Emo — on-device emoji suggestions from text Try it Files Architecture Inputs and outputs Languages Limitations ..."
-    },
-    {
-      "title": "Desert Ant Labs: On-device AI models and SDKs",
-      "url": "https://desertant.com/",
-      "snippet": "Desert Ant Labs is a frontier AI lab for on-device models that run on Apple, Android and the web, in a few lines of native code."
-    },
-    {
-      "title": "Releases · Desert-Ant-Labs/emo · GitHub",
-      "url": "https://github.com/Desert-Ant-Labs/emo/releases",
-      "snippet": "Emo.suggestions (for:) now accepts an optional skinTone to request a preferred skin tone for skin-tone-capable emoji. The model predicts the default (yellow) presentation; this is applied as post-processing."
-    }
-  ]
+  "sources": []
 }

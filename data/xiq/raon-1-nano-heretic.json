@@ -26,8 +26,8 @@
     "base_model:finetune:KRAFTON/Raon-1-nano",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 76,
+  "likes": 1,
+  "downloads_30d": 103,
   "trending_score": 0,
   "parameters": 3130797136,
   "parameters_human": "3.13B",

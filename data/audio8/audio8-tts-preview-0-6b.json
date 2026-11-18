@@ -58,31 +58,5 @@
   "renamed_to": "Edge0/Audio8-TTS-Preview-0.6b",
   "renamed_at": "2026-11-11T02:21:43.964Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Audio8/Audio8-TTS-Preview-0.6b · Hugging Face",
-      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale - GitHub",
-      "url": "https://github.com/Audio8-AI/Audio8_TTS",
-      "snippet": "Audio8_TTS Preview A .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. 中文文档: README_zh.md This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
-    },
-    {
-      "title": "Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4 · Hugging Face",
-      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4",
-      "snippet": "Audio8 TTS Preview is a .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. This repository provides its CPU-oriented ONNX deployment: weight-only INT4 DualAR models, an FP16 neural audio codec, the tokenizer, and the optional FP16 encoder used to register reference voices."
-    },
-    {
-      "title": "awesome-ai-voice/models/audio8-tts-preview-0-6b.md at main - GitHub",
-      "url": "https://github.com/wildminder/awesome-ai-voice/blob/main/models/audio8-tts-preview-0-6b.md",
-      "snippet": "Audio8-TTS-Preview-.6b Audio8 TTS Preview 0.6B is a .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. It uses a DualAR architecture inspired by Fish Audio S2 Pro: a slow AR transformer predicts one semantic token per audio frame, and a fast AR transformer predicts the frame&#x27;s codec codebooks conditioned on the slow hidden state and preceding codebooks. The bundled ..."
-    },
-    {
-      "title": "Audio8-TTS-0.6B - Listening Preview",
-      "url": "https://audio8-ai.github.io/Audio8_TTS/",
-      "snippet": "Overview This page presents outputs from the current Audio8-TTS-.6B preview checkpoint. It includes the recommended language set, targeted pronunciation challenges, tongue twisters, complete classical Chinese works, cross-lingual cloning, and dense lexical tests."
-    }
-  ]
+  "sources": []
 }

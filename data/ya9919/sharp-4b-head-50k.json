@@ -5,7 +5,7 @@
   "author": "ya9919",
   "url": "https://huggingface.co/ya9919/sharp-4b-head-50k",
   "created_at": "2026-10-19T20:38:16.000Z",
-  "updated_at": "2026-11-17T07:23:55.000Z",
+  "updated_at": "2026-11-18T07:56:13.000Z",
   "license": "s2-mas-controlled-research-v1.2",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ya9919/YN-4b-head-50k",
+  "renamed_at": "2026-11-18T11:06:48.339Z",
   "benchmarks": [],
   "sources": []
 }

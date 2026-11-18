@@ -2,90 +2,106 @@
 
 ## Resumen
 
-El repositorio `agentionai/Qwen3.8-Flash-Next-AP-GGUF` contiene cuantizaciones GGUF del modelo base `Qwen/Qwen3.8-Flash-Next`, desarrolladas por el equipo de Agention. Estas cuantizaciones, denominadas "Agention Precision" (AP), aplican un esquema de compresion optimizado y diferenciado por capa para reducir al maximo el tamano del archivo sin sacrificar excesivamente la calidad. El resultado principal, `AP-IQ4_XS`, ocupa 84.24 GiB frente a los 117.13 GiB de la cuantizacion IQ4_XS de AesSedai, con una penalizacion en perplexity de solo un +3.75% respecto al modelo sin cuantizar.
+Qwen3.8-Flash-Next-AP-GGUF es una coleccion de cuantizaciones GGUF del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario agentionai bajo la metodologia que denomina Agention Precision (AP). El modelo base, desarrollado por el equipo Qwen de Alibaba, es un transformer de tipo Mixture-of-Experts con 176.943.899.520 parametros totales y una tabla de lookup de n-gramas de 51,2B parametros (`per_layer_token_embd`) que constituye una innovacion arquitectonica destacable. Esta publicacion no entrena ningun modelo nuevo: redistribuye el tipo de cuantizacion por grupos de tensores para maximizar la precision por gigabyte de VRAM, manteniendo compatibilidad con llama.cpp mainline sin necesidad de forks.
 
-El modelo base es un MoE multimodal de 125 mil millones de parametros con 6 mil millones activos por token, una ventana de contexto nativa de 262.144 tokens (extensible a 1M con YaRN) y una arquitectura de atencion hibrida GDN + QSA. Estas cuantizaciones son compatibles con llama.cpp mainline, sin necesidad de forks, lo que facilita su despliegue en produccion. La licencia es la Qwen Community License 1.0.
+La relevancia practica del repositorio reside en que ofrece siete niveles de cuantizacion medidos con metricas reproducibles (divergencia KL y acuerdo top-1 frente al modelo fuente) sobre un corpus held-out, en lugar de sobre wikitext, que el autor demuestra que esta memorizado por la tabla de n-gramas y por tanto infla artificialmente las metricas. El tier mas ligero, AP-IQ2_S, requiere 49,21 GiB de VRAM, mientras que el mas preciso, AP-Q5_K_XL, necesita 76,75 GiB, lo que situa al modelo en el terreno de estaciones de trabajo con multiples GPU o aceleradores de datacenter.
+
+El repositorio incluye ademas un proyector de vision (`mmproj-F16.gguf`) que habilita entrada de imagenes, y el modelo soporta modos thinking e instruct con parametros de muestreo diferenciados recomendados por Qwen. La licencia es qwen-community-1.0, que impone restricciones que deben revisarse antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) con atencion hibrida GDN + QSA (modelo base) |
-| Parametros totales | 125 mil millones (modelo base) |
-| Parametros activos | 6 mil millones por token (modelo base) |
-| Longitud de contexto | 262.144 tokens nativo, extensible a 1M con YaRN (modelo base) |
-| Tipos de cuantizacion | AP-IQ4_XS, AP-Q4_K_XL, AP-Q5_K_XL |
+| Arquitectura | Transformer Mixture-of-Experts con tabla de lookup de n-gramas (`per_layer_token_embd`) |
+| Parametros totales | 176.943.899.520 (incluye 51,2B de la tabla de n-gramas) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q5_K_XL, Q5_K_M, Q4_K_XL, Q4_K_M, IQ4_XS, IQ3_XXS, IQ2_S (tipos estandar de llama.cpp, mezclados por grupos de tensores) |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 |
-| Formato de pesos | GGUF |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | GGUF; proyector de vision en `mmproj-F16.gguf` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Qwen3.8-Flash-Next, introduce mejoras sistematicas en atencion, residual, embedding y optimizacion. Su arquitectura combina atencion GDN (probablemente una variante de atencion con desnormalizacion o agrupacion) con QSA (atencion con cuantizacion o seleccion de queries), disenada para mejorar la capacidad del modelo y la eficiencia computacional. Al ser un MoE, solo 6 mil millones de sus 125 mil millones de parametros se activan por token, lo que reduce el coste de inferencia.
+El modelo base es un transformer MoE con 176,9B parametros totales, de los cuales una parte sustancial corresponde a una tabla de lookup de n-gramas de 51,2B parametros (`per_layer_token_embd`) que el autor describe como parte integral de la arquitectura. Esta tabla es responsable de que las metricas sobre wikitext resulten enganosas: el propio autor documenta que el mismo fichero puntua entre 6,9 y 8,6 puntos mas de acuerdo top-1 en wikitext que en texto held-out, y que la inflacion crece a medida que la cuantizacion es mas agresiva. Por ejemplo, `AP-Q4_K_M` obtiene 84,22 % en held-out frente a 91,82 % en wikitext. Este comportamiento es independiente del publicador y se observa tambien en cuantizaciones de terceros.
 
-En cuanto a las cuantizaciones AP, el proceso utiliza un conjunto de compresiones altamente optimizado y diferente para cada capa, calibrado con corpus de bartowski y Thireus. El soporte para la arquitectura `qwen4exp` en llama.cpp fue implementado por Daniel Han y fusionado en el PR 27742. No se proporcionan detalles sobre el entrenamiento del modelo base (datos, tokens, RLHF/DPO) en la informacion disponible.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo base. La innovacion tecnica documentada en este repositorio es la cuantizacion por grupos de tensores: cada tier asigna tipos distintos a distintos grupos (por ejemplo, `AP-Q4_K_M` combina IQ4_XS 4.25 y IQ3_S 3.44 en los expertos gate/up) en lugar de usar un unico tipo global. Las mediciones se realizan con `llama-perplexity --kl-divergence` a `-c 2048` contra el modelo fuente, sobre corpus held-out de texto y de codigo. El tier `AP-Q4_K_XL` supero una prueba de estres de bucles con 45 generaciones sobre prompts que provocan razonamiento desbocado (thinking activado, `--min-p 0.05`, limite de 12k tokens): 0 bucles y 44 de 45 generaciones completadas dentro del limite.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento complejo gracias a su arquitectura MoE de 125B parametros.
-- Codificacion agente (agentic coding): el blog de NVIDIA lo destaca para tareas de desarrollo asistido por agentes.
-- Capacidades multimodales: el modelo base es multimodal, aunque el soporte de vision/audio en GGUF puede requerir archivos auxiliares adicionales (mmproj) no incluidos en este repositorio.
-- Ventana de contexto muy amplia: 262.144 tokens nativos, adecuada para analisis de documentos extensos y conversaciones multi-turno largas.
-- Compatibilidad con llama.cpp mainline, lo que permite integracion con herramientas del ecosistema (llama-server, bindings de Python, etc.).
-- Eficiencia en inferencia: al activar solo 6B parametros por token, el coste computacional por token es relativamente bajo para su tamano total.
+- Generacion de texto conversacional y en modo instruct, con parametros de muestreo diferenciados para thinking y no-thinking.
+- Modo thinking (razonamiento extendido) con temperatura 1.0, top_p 0.95, top_k 20, presence_penalty 0.0.
+- Modo instruct sin thinking con temperatura 0.7, top_p 0.80, top_k 20, presence_penalty 1.5.
+- Entrada de imagenes mediante el proyector `mmproj-F16.gguf`, que se descarga junto al tier elegido.
+- Generacion de codigo: el autor evalua explicitamente un corpus de codigo held-out, con divergencia KL de 0.0181 para `AP-Q5_K_M` y 0.0206 para `AP-Q4_K_XL`.
+- Compatibilidad con llama.cpp mainline, lo que permite integracion con el ecosistema de herramientas que consumen GGUF.
+- Soporte de tool calling, function calling y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue de un asistente de codigo en entornos locales: gracias a su soporte para agentic coding y su ventana de 262K tokens, puede integrarse en IDEs o pipelines de CI/CD para revisar repositorios completos, generar parches y ejecutar tareas de refactorizacion.
-- Analisis de documentos legales o academicos extensos: la ventana de contexto nativa permite procesar contratos, tesis o expedientes completos en una sola pasada, sin necesidad de chunking complejo.
-- Backend de atencion al cliente con contexto largo: puede mantener conversaciones multi-turno con historial extenso, recordando detalles de interacciones anteriores durante horas.
-- Investigacion en eficiencia de cuantizacion: el repositorio sirve como referencia para estudiar el equilibrio entre tamano de archivo y perplexity, comparando AP-IQ4_XS con otras cuantizaciones del mismo modelo.
-- Razonamiento matematico y cientifico: su capacidad de razonamiento, combinada con la eficiencia del MoE, lo hace util para herramientas de calculo simbolico o asistentes de investigacion.
-- Servidor de inferencia local con llama.cpp: puede desplegarse como `llama-server` para ofrecer una API compatible con OpenAI en infraestructura propia, sin depender de servicios en la nube.
+- Despliegue de razonamiento extendido en estaciones de trabajo con 77 GiB de VRAM: usar `AP-Q5_K_M` con `-ngl 999 -fa 1 -ot "per_layer_token_embd=CPU"` permite mantener la tabla de n-gramas en RAM del sistema y liberar VRAM para las capas del transformer, habilitando el modo thinking con la maxima fidelidad al modelo fuente (KL 0.0771).
+- Generacion de codigo en pipelines internos: `AP-Q4_K_XL` obtiene KL 0.0206 y 97,38 % de acuerdo top-1 sobre corpus de codigo held-out con 67,38 GiB de VRAM, lo que lo hace adecuado para autocompletado y generacion de tests en entornos con dos GPU de 48 GB.
+- Analisis de documentos con imagenes: combinando cualquier tier con `mmproj-F16.gguf` se puede procesar entrada visual, util para extraccion de datos de capturas, diagramas o documentos escaneados en flujos de back-office.
+- Evaluacion comparativa de cuantizaciones: el repositorio publica metricas por tier sobre el mismo corpus de referencia, lo que permite elegir el compromiso VRAM/precision con datos en lugar de estimaciones, util para equipos que calibran infraestructura.
+- Sustitucion de APIs propietarias en entornos con requisitos de residencia de datos: al ejecutarse localmente con llama.cpp, el modelo no requiere enviar prompts a terceros, lo que encaja en sectores regulados.
+- Pruebas de estres de razonamiento: el autor documenta una prueba de 45 generaciones con prompts que inducen bucles; el tier `AP-Q4_K_XL` no produjo ninguno, lo que respalda su uso en agentes con limites de tokens estrictos.
+- Prototipado en hardware limitado: `AP-IQ2_S` ocupa 49,21 GiB de VRAM y permite validar flujos antes de aprovisionar hardware mayor, aunque con una divergencia KL de 0.2657 que desaconseja produccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible para estas cuantizaciones. Sin embargo, la model card incluye datos de perplexity (PPL) sobre wikitext-2 raw (145 chunks, `-c 2048`), comparados con el modelo sin cuantizar:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los datos publicados son metricas de fidelidad de cuantizacion frente al modelo fuente:
 
-| Cuantizacion | Tamano | PPL (wikitext-2) | Variacion vs. referencia |
-|---|---|---|---|
-| Referencia (sin cuantizar) | no disponible | 4.0068 +/- 0.02271 | - |
-| AP-IQ4_XS | 84.24 GiB | 4.1572 +/- 0.02374 | +3.75% |
-| AP-Q4_K_XL | ~93 GiB | TBD | TBD |
-| AP-Q5_K_XL | ~102 GiB | TBD | TBD |
+| Tier | VRAM (GiB) | Descarga (GiB) | bpw efectivos | Expertos (gate/up) | KL div held-out | Top-1 held-out |
+|---|---:|---:|---:|---|---:|---:|
+| AP-Q5_K_XL | 76,75 | 112,51 | 5,46 | Q5_K 5.5 | 0,0839 ± 0,0008 | 86,63 ± 0,14 % |
+| AP-Q5_K_M | 76,75 | 103,57 | 5,03 | Q5_K 5.5 | 0,0771 ± 0,0007 | 86,95 ± 0,14 % |
+| AP-Q4_K_XL | 67,38 | 94,20 | 4,57 | Q4_K 4.5 | 0,0886 ± 0,0008 | 86,14 ± 0,14 % |
+| AP-Q4_K_M | 61,22 | 88,04 | 4,27 | IQ4_XS 4.25 + IQ3_S 3.44 | 0,1243 ± 0,0011 | 84,22 ± 0,15 % |
+| AP-IQ4_XS | 57,42 | 84,24 | 4,09 | IQ3_S 3.44 | 0,1584 ± 0,0014 | 82,89 ± 0,15 % |
+| AP-IQ3_XXS | 53,90 | 80,72 | 3,92 | IQ3_XXS 3.06 | 0,1844 ± 0,0016 | 81,85 ± 0,16 % |
+| AP-IQ2_S | 49,21 | 76,03 | 3,69 | IQ2_S 2.5 | 0,2657 ± 0,0022 | 79,14 ± 0,16 % |
+
+Comparacion directa con unsloth al mismo nivel de cuantizacion:
+
+| Fichero | VRAM (GiB) | Descarga (GiB) | KL div held-out | Top-1 held-out | KL div codigo | Top-1 codigo |
+|---|---:|---:|---:|---:|---:|---:|
+| AP-Q5_K_M | 76,75 | 103,57 | 0,0771 | 86,95 % | 0,0181 | 97,69 % |
+| AP-Q4_K_XL | 67,38 | 94,20 | 0,0886 | 86,14 % | 0,0206 | 97,38 % |
+| unsloth UD-Q4_K_XL | 76,86 | 103,69 | 0,0778 | 87,21 % | 0,0192 | 97,36 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo AP-IQ4_XS ocupa 84.24 GiB, por lo que se necesitan al menos 96 GiB de VRAM para una carga completa con `-ngl 99`. Las variantes Q4_K_XL y Q5_K_XL requieren aproximadamente 93 y 102 GiB respectivamente.
-- GPU recomendadas: para AP-IQ4_XS, se recomienda un sistema con 2x A100 80GB, 2x H100 80GB o 2x RTX 6000 Ada (48GB). No cabe en GPU de consumo como la RTX 4090 (24GB) ni en una sola GPU profesional de 48GB.
-- Opciones de despliegue: compatible con llama.cpp (llama-cli, llama-server), Ollama (si se importa el GGUF) y cualquier framework que soporte GGUF mainline.
-- Latencia y throughput: no disponible. Dependera del hardware y del numero de parametros activos (6B), que reduce la carga computacional por token en comparacion con un dense de 125B.
+- VRAM estimada para inferencia: entre 49,21 GiB (`AP-IQ2_S`) y 76,75 GiB (`AP-Q5_K_M` y `AP-Q5_K_XL`), segun la tabla del autor. La tabla de n-gramas de 51,2B parametros puede descargarse a RAM del sistema con `-ot "per_layer_token_embd=CPU"`, por lo que la VRAM necesaria es la de la columna correspondiente, no el tamano de descarga.
+- GPU recomendadas: configuraciones con 80 GB de VRAM por GPU (A100 80GB, H100 80GB) para los tiers superiores; para `AP-Q4_K_XL` (67,38 GiB) encajan dos RTX 4090 de 24 GB con tensor parallelism o una unica GPU de 80 GB.
+- No cabe en una unica GPU consumer de 24 GB en ningun tier publicado; el minimo documentado son 49,21 GiB.
+- Opciones de despliegue: llama.cpp mainline (compatible sin fork), con `llama-cli` o `llama-server`. El autor documenta el flag `-ngl 999 -fa 1 -ot "per_layer_token_embd=CPU"` para offload de la tabla de n-gramas. Soporte de vLLM, TGI u Ollama: no disponible en la informacion proporcionada.
+- Latencia y throughput: no disponibles. El autor solo documenta el resultado de la prueba de bucles (44 de 45 generaciones dentro de un limite de 12k tokens) sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-La comparativa se centra en cuantizaciones del mismo modelo base, ya que no se dispone de datos de otros modelos comparables en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Formato | Licencia | VRAM minima documentada |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-AP-GGUF (este) | 176,9B totales (incl. 51,2B n-gramas) | no disponible | GGUF | qwen-community-1.0 | 49,21 GiB (AP-IQ2_S) |
+| Qwen3.8-Flash-Next (base) | 176,9B totales | no disponible | safetensors | qwen-community-1.0 | no disponible |
+| unsloth UD-Q4_K_XL (mismo modelo base) | 176,9B totales | no disponible | GGUF | qwen-community-1.0 | 76,86 GiB |
 
-| Modelo / Cuantizacion | Tamano | PPL (wikitext-2) | Notas |
-|---|---|---|---|
-| Qwen3.8-Flash-Next (sin cuantizar) | no disponible | 4.0068 | Referencia de calidad |
-| agentionai AP-IQ4_XS | 84.24 GiB | 4.1572 | Mas compacto, +3.75% PPL |
-| AesSedai IQ4_XS | 117.13 GiB | no disponible | Mucho mayor, calidad relativa similar segun el autor |
+La unica comparativa con datos cuantitativos en la informacion disponible es frente a la cuantizacion de unsloth del mismo modelo base: `AP-Q5_K_M` iguala a `UD-Q4_K_XL` en divergencia KL held-out (0,0771 frente a 0,0778) y mejora en codigo (0,0181 frente a 0,0192), mientras que unsloth mantiene un top-1 ligeramente superior en texto (87,21 % frente a 86,95 %). `AP-Q4_K_XL` requiere 9,5 GiB menos de VRAM que `UD-Q4_K_XL` con una divergencia KL de 0,0886. No se dispone de datos para comparar con modelos de otros linajes o tamanos.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: la Qwen Community License 1.0 impone condiciones especificas para uso comercial. Es imprescindible revisar el texto completo de la licencia antes de desplegar el modelo en produccion.
-- Penalizacion de calidad: AP-IQ4_XS presenta un +3.75% de incremento en perplexity respecto al modelo original. Para tareas sensibles a la precision (como generacion de codigo complejo), puede ser preferible usar AP-Q5_K_XL o el modelo sin cuantizar.
-- Datos de benchmark insuficientes: no se han publicado resultados de tareas estandar (MMLU, HumanEval, etc.) para estas cuantizaciones, por lo que el rendimiento real en tareas especificas es incierto.
-- Soporte multimodal en GGUF: aunque el modelo base es multimodal, el repositorio no incluye archivos de proyeccion (mmproj) para vision/audio. Su uso en modo multimodal con llama.cpp puede no estar disponible o requerir pasos adicionales.
-- Requisitos de hardware elevados: el tamano minimo de 84 GiB excluye su uso en estaciones de trabajo con una sola GPU de gama media o alta de consumo.
-- Idiomas soportados: no se especifican en la informacion disponible, aunque por su origen (Qwen) se espera un soporte multilingue amplio, pero no confirmado.
+- La licencia qwen-community-1.0 no es una licencia de codigo abierto estandar; deben revisarse sus terminos antes de cualquier uso comercial, ya que puede imponer restricciones de atribucion o de uso.
+- El modelo base incluye una tabla de n-gramas de 51,2B parametros que memoriza parte del corpus de entrenamiento; el autor demuestra que wikitext esta dentro de ese conjunto memorizado, lo que invalida las metricas de calidad basadas en wikitext y sugiere riesgo de reproduccion literal de contenido visto en entrenamiento.
+- La divergencia KL crece de forma marcada en los tiers bajos: 0,0771 en `AP-Q5_K_M` frente a 0,2657 en `AP-IQ2_S`, con una caida de acuerdo top-1 de 86,95 % a 79,14 %. Los tiers de 2 y 3 bits no son recomendables para produccion.
+- Los tiers superiores requieren entre 67 y 77 GiB de VRAM, lo que excluye GPU consumer individuales y encarece el despliegue.
+- El rendimiento en modo thinking puede desbocarse: el autor ejecuta una prueba especifica de bucles con `--min-p 0.05` y limite de 12k tokens, lo que indica que el problema existe y debe mitigarse con parametros de muestreo y limites duros.
+- No hay informacion sobre sesgos, idiomas soportados ni calidad multilingue; no se puede asumir un comportamiento equilibrado entre lenguas.
+- No hay datos de benchmarks estandar (MMLU, HumanEval, GSM8K) que permitan comparar capacidades absolutas con otros modelos.
+- El repositorio ocupa 981,4 GB, por lo que la descarga y el almacenamiento requieren planificacion de infraestructura.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-AP-GGUF
-- Repositorio del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Blog de NVIDIA sobre Qwen3.8-Flash-Next: https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding/
-- PR 27742 de llama.cpp (soporte qwen4exp): https://github.com/ggml-org/llama.cpp/pull/27742
-- Cuantizacion de referencia de AesSedai: https://huggingface.co/AesSedai/Qwen3.8-Flash-Next-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Metodologia y resultados completos de Agention Precision: https://agention.ai/models/qwen3.8-flash-next/
+- Licencia: fichero `LICENSE` en el repositorio de Hugging Face

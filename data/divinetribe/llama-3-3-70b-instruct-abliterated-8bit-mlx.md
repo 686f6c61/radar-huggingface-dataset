@@ -2,50 +2,51 @@
 
 ## Resumen
 
-Llama-3.3-70B-Instruct-abliterated-8bit-mlx es una cuantizacion en 8 bits del modelo huihui-ai/Llama-3.3-70B-Instruct-abliterated, publicada por el usuario divinetribe y empaquetada en formato MLX para su ejecucion nativa en Apple Silicon. El modelo subyacente es un derivado de Llama 3.3 70B Instruct de Meta al que se le ha aplicado la tecnica de "abliteration", que elimina o atenua la direccion de rechazo en el espacio de activaciones para reducir las negativas del modelo ante peticiones que el original rechazaria.
+Llama-3.3-70B-Instruct-abliterated-8bit-mlx es una cuantizacion en 8 bits del modelo huihui-ai/Llama-3.3-70B-Instruct-abliterated, publicada por el usuario divinetribe. Se trata de una variante "abliterated" (tambien llamada uncensored) del Llama 3.3 70B Instruct de Meta, en la que se ha eliminado o atenuado el mecanismo de rechazo de peticiones mediante tecnicas de ablacion de direcciones en el espacio de activaciones. El resultado es un modelo que responde a practicamente cualquier prompt sin las negativas tipicas del modelo original.
 
-La relevancia practica de esta ficha es doble: por un lado, permite ejecutar un modelo denso de 70.553.706.496 parametros en un Mac con memoria unificada suficiente, algo impensable con pesos en bf16 (que rondarian los 140 GB); por otro, ofrece una variante sin el alineamiento de seguridad estandar de Meta, lo que interesa a investigadores que estudian refusal behaviour y a desarrolladores que necesitan un modelo base sin restricciones para tareas creativas o de rol.
+La relevancia de esta ficha concreta reside en su formato: pesos MLX cuantizados a 8 bits, disenados especificamente para ejecutarse en Apple Silicon mediante la libreria mlx-lm. Esto permite cargar un modelo de 70.553.706.496 parametros en equipos Mac con memoria unificada, algo inviable con los pesos originales en bf16 (que requeririan aproximadamente 141 GB). El repositorio ocupa 75,0 GB.
 
-El repositorio ocupa 75,0 GB y emplea la libreria mlx-lm. La licencia es la Llama 3.3 Community License, heredada del modelo original, con las obligaciones de atribucion y la clausula de 700 millones de usuarios activos mensuales. No se han publicado resultados de benchmarks en la informacion disponible.
+El modelo conserva la arquitectura y las capacidades del Llama 3.3 70B Instruct original (transformer denso, contexto de 128.000 tokens, soporte multilingue en ocho idiomas), pero elimina las capas de seguridad alineadas. Es una herramienta para investigacion sobre alineamiento, red teaming y experimentacion local en Mac, no un modelo recomendado para despliegues de produccion orientados al publico general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Llama 3.3), decodificador autoregresivo |
+| Arquitectura | Transformer denso (familia Llama 3.3), pesos en formato MLX |
 | Parametros totales | 70.553.706.496 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
+| Longitud de contexto | no disponible en la informacion proporcionada (el Llama 3.3 base declara 128.000 tokens) |
 | Tipos de cuantizacion | 8 bits (unica variante publicada en este repo) |
 | Idiomas soportados | en, fr, it, pt, hi, es, th, de |
-| Licencia | llama3.3 (Llama 3.3 Community License) |
-| Formato de pesos | safetensors en formato MLX (8-bit) |
+| Licencia | llama3.3 (Llama 3.3 Community License Agreement) |
+| Formato de pesos | safetensors en formato MLX (libreria mlx) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Llama 3.3 70B Instruct, un transformer denso con atencion por grupos (GQA) y RoPE, entrenado por Meta con un pipeline que incluye preentrenamiento en gran escala, ajuste supervisado y optimizacion por preferencias humanas (RLHF/DPO). Sobre esa base, huihui-ai aplico abliteration: una intervencion sobre los pesos que identifica la direccion de activacion asociada al rechazo y la proyecta fuera de las matrices de atencion y MLP, de modo que el modelo pierde parte de su tendencia a negarse a responder. Es una modificacion post-entrenamiento, no un reentrenamiento.
+El modelo subyacente es un transformer denso de la familia Llama 3.3 con 70.553.706.496 parametros. Esta publicacion no entrena ningun modelo desde cero: parte de huihui-ai/Llama-3.3-70B-Instruct-abliterated, que a su vez deriva del Llama 3.3 70B Instruct de Meta, y aplica una cuantizacion post-entrenamiento a 8 bits en el formato nativo de MLX. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO del modelo original.
 
-La contribucion de divinetribe es la conversion a MLX con cuantizacion de 8 bits, lo que reduce el peso a 75,0 GB y permite cargar el modelo con mlx-lm en equipos Apple con memoria unificada amplia. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni detalles del proceso de cuantizacion (grupo de cuantizacion, calibracion) en la documentacion proporcionada.
+La innovacion tecnica relevante es doble. Por un lado, la ablacion de direcciones (abliteration): se identifican direcciones en el espacio de activaciones asociadas al comportamiento de rechazo y se proyectan fuera de los pesos, de modo que el modelo pierde la tendencia a negarse a responder. Por otro, la cuantizacion a 8 bits en MLX, que reduce el peso en disco y en memoria hasta unos 75 GB, permitiendo la inferencia en Apple Silicon con memoria unificada. No se documentan en la informacion disponible tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ocho idiomas declarados (ingles, frances, italiano, portugues, hindi, espanol, thai y aleman).
-- Razonamiento general y respuesta a instrucciones, heredado de Llama 3.3 70B Instruct.
-- Generacion de codigo y matematicas, aunque sin benchmarks publicados que lo cuantifiquen en esta variante.
-- Reduccion del comportamiento de rechazo gracias a la abliteration, lo que amplia el espacio de respuestas ante peticiones sensibles.
-- Inferencia local en Apple Silicon mediante mlx-lm, sin dependencia de servicios en la nube.
-- Soporte de plantilla de chat instruct (roles system/user/assistant) segun el formato de Llama 3.
-- No se ha confirmado en la informacion disponible soporte de tool calling, function calling, agentes multi-paso, vision ni audio en esta variante cuantizada.
+- Generacion de texto conversacional multi-turno, heredada del Llama 3.3 70B Instruct.
+- Razonamiento y resolucion de problemas de complejidad media-alta gracias al tamano de 70B parametros.
+- Generacion de codigo y explicacion de codigo en multiples lenguajes de programacion.
+- Matematicas y calculo simbolico basico, con las limitaciones propias de un modelo denso sin herramientas externas.
+- Soporte multilingue en ingles, frances, italiano, portugues, hindi, espanol, tailandes y aleman.
+- Respuesta sin rechazos: el proceso de abliteration elimina las negativas del modelo alineado, lo que incluye contenido que el modelo original bloqueaba.
+- Capacidad de seguir instrucciones complejas y mantener formato de salida estructurado.
+- No se documenta en la informacion disponible soporte explicito de tool calling, function calling, modo thinking ni vision.
 
 ## Casos de uso
 
-- Investigacion sobre refusal behaviour: el modelo permite comparar las respuestas de la variante abliterated frente al Llama 3.3 Instruct original para medir cuanto se reduce la tasa de rechazos y que coste tiene en calidad o seguridad.
-- Generacion creativa sin filtros: escritura de ficcion, guiones o narrativa con tematicas adultas o controvertidas que el modelo alineado rechazaria, ejecutada localmente en un Mac Studio o MacBook Pro con memoria suficiente.
-- Prototipado offline en Apple Silicon: desarrolladores que quieren probar un 70B instructivo en local sin GPU NVIDIA ni conexion a internet, usando mlx-lm como runtime.
-- Role-play y simulacion de personajes: conversaciones largas multi-turno donde la ausencia de negativas evita romper la coherencia del personaje.
-- Analisis de textos sensibles: clasificacion, resumen o extraccion de informacion en corpus que contienen contenido violento, medico o legal que dispararia rechazos en modelos alineados.
-- Evaluacion de tecnicas de cuantizacion: sirve como referencia para medir la degradacion de un 70B al pasar a 8 bits en MLX frente a bf16, en tareas de razonamiento y generacion.
-- Despliegue en estaciones de trabajo macOS para tareas de generacion de codigo o documentacion tecnica en un entorno controlado y sin telemetria externa.
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como se comporta un LLM sin capas de rechazo, comparando sus respuestas con las del Llama 3.3 Instruct original para analizar que direcciones de activacion codifican el comportamiento de negativa.
+- Red teaming y evaluacion de robustez: util para generar prompts adversarios y probar las defensas de otros sistemas, ya que el modelo no se autocensura al producir contenido de prueba.
+- Inferencia local en MacBook con Apple Silicon: con 75 GB de pesos en 8 bits, puede ejecutarse en equipos con 96 GB o 128 GB de memoria unificada usando mlx-lm, sin necesidad de GPU dedicada ni de conexion a la nube.
+- Procesamiento de documentos largos en local: el contexto heredado del Llama 3.3 (hasta 128.000 tokens segun la documentacion de Meta) permite resumir o extraer informacion de contratos, informes o expedientes sin enviar datos a terceros.
+- Generacion de codigo en entornos aislados: para equipos que trabajan con codigo propietario y no pueden usar APIs externas, el modelo ofrece generacion y revision de codigo en local con un rendimiento razonable para 70B.
+- Experimentacion con tecnicas de cuantizacion: sirve como banco de pruebas para medir la degradacion de calidad de 8 bits frente a bf16 en tareas de razonamiento y generacion larga, usando el ecosistema MLX.
+- Traduccion y asistencia multilingue: cubre ocho idiomas, incluido el espanol, con calidad propia de un modelo de 70B, adecuado para prototipos de traduccion o atencion al cliente en varios idiomas.
 
 ## Benchmarks y rendimiento
 
@@ -53,41 +54,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el repo pesa 75,0 GB, por lo que se necesita al menos esa cantidad de memoria unificada mas el overhead del runtime y del contexto KV. En la practica, un equipo con 96 GB o 128 GB de memoria unificada es el minimo comodo.
-- GPU recomendadas: Apple M2 Ultra o M3 Ultra con 96-192 GB de memoria unificada; M4 Max con 128 GB. No es ejecutable en GPUs NVIDIA mediante MLX, ya que mlx-lm solo corre en Apple Silicon.
-- Cabe en GPU de consumo: no en el sentido tradicional; requiere un Mac de gama alta con memoria unificada muy grande. No cabe en una RTX 4090 (24 GB) ni en una RTX 5090.
-- Opciones de despliegue: mlx-lm es el runtime nativo. Para otros entornos habria que recurrir a la version GGUF o bf16 del modelo base, no a este repo.
-- Latencia y throughput: no disponibles en la informacion proporcionada. Dependeran del ancho de banda de memoria del chip (del orden de 800 GB/s en M2 Ultra) y de la longitud de contexto.
+- VRAM o memoria unificada estimada: aproximadamente 75 GB solo para los pesos en 8 bits, mas overhead de KV cache y activaciones; se recomienda un minimo de 96 GB de memoria unificada y, para contextos largos, 128 GB.
+- GPU recomendadas: no aplica en el sentido tradicional; el formato MLX esta disenado para Apple Silicon (series M1, M2, M3 y M4, especialmente variantes Max y Ultra).
+- Cabe en consumer GPU: no en el sentido convencional; no es un formato para CUDA. En Apple Silicon, requiere equipos de gama alta con memoria unificada de 96 GB o superior (por ejemplo, Mac Studio con M2 Ultra o M3 Ultra).
+- Opciones de despliegue: mlx-lm (libreria nativa del formato), con soporte de generacion por linea de comandos y servidor compatible con la API de OpenAI. No es compatible directamente con vLLM, llama.cpp, Ollama o TGI sin conversion previa de formato.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| divinetribe/Llama-3.3-70B-Instruct-abliterated-8bit-mlx | 70,55 B | no disponible | MLX 8-bit | Llama 3.3 | Hugging Face, 2.306 descargas |
-| huihui-ai/Llama-3.3-70B-Instruct-abliterated | 70,55 B | no disponible | safetensors bf16 | Llama 3.3 | Hugging Face (modelo base) |
-| meta-llama/Llama-3.3-70B-Instruct | 70,55 B | 128 K (segun documentacion de Meta) | safetensors bf16 | Llama 3.3 | Hugging Face |
-| Variantes GGUF de Llama 3.3 70B (p. ej. Q4_K_M) | 70,55 B | 128 K | GGUF | Llama 3.3 | Hugging Face, multiples autores |
+| divinetribe/Llama-3.3-70B-Instruct-abliterated-8bit-mlx | 70,55 B | no disponible (base: 128k) | MLX safetensors 8 bits | llama3.3 | Hugging Face, 2.892 descargas |
+| huihui-ai/Llama-3.3-70B-Instruct-abliterated | 70,55 B | no disponible (base: 128k) | safetensors (bf16/fp16) | llama3.3 | Hugging Face (modelo base) |
+| meta-llama/Llama-3.3-70B-Instruct | 70,55 B | 128.000 tokens | safetensors | llama3.3 | Hugging Face (modelo original alineado) |
 
-La comparativa se limita a variantes del mismo modelo base porque no se dispone de datos de rendimiento de esta cuantizacion que permitan confrontarla con otros 70B. La diferencia clave frente al original de Meta es la abliteration; frente al base de huihui-ai, la cuantizacion 8-bit y el formato MLX.
+La diferencia principal frente al modelo base de huihui-ai es el formato: este repositorio esta cuantizado a 8 bits y empaquetado para MLX, lo que reduce el peso en disco de aproximadamente 141 GB a 75 GB y lo hace ejecutable en Apple Silicon. Frente al Llama 3.3 70B Instruct original, la diferencia es el comportamiento: el original rechaza peticiones daninas, mientras que esta variante no lo hace. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina parte del alineamiento de seguridad: el modelo puede producir contenido danino, ilegal o sexualmente explicito con mucha mas facilidad que el Llama 3.3 Instruct original. No debe desplegarse en productos de cara al publico sin filtros adicionales.
-- Riesgo de alucinacion inherente a los modelos de 70B, agravado por la cuantizacion a 8 bits, que puede degradar tareas de razonamiento fino y matematicas.
-- La cuantizacion 8-bit en MLX no ha sido evaluada con benchmarks en este repo; se desconoce la perdida exacta de calidad frente a bf16.
-- Solo ejecutable en Apple Silicon mediante mlx-lm; no es portable a CUDA, ROCm ni CPU convencional sin reconvertir.
-- La licencia Llama 3.3 exige mostrar "Built with Llama", incluir el aviso de atribucion y, si se superan los 700 millones de usuarios activos mensuales, solicitar licencia a Meta. Ademas, el uso debe cumplir la Acceptable Use Policy de Meta, que prohibe explicitamente ciertos usos.
-- El modelo esta sujeto a la politica de uso aceptable de Llama, por lo que la abliteration no exime al usuario de responsabilidad legal.
-- Idiomas declarados limitados a ocho; el rendimiento en espanol no ha sido medido en esta variante.
-- El autor del repo es un particular (divinetribe), no Meta ni huihui-ai; no hay garantias de mantenimiento ni de calidad del proceso de cuantizacion.
+- Ausencia de alineamiento de seguridad: el proceso de abliteration elimina los rechazos, por lo que el modelo puede generar contenido danino, ilegal o eticamente problematico sin filtro. No es apto para aplicaciones orientadas al publico sin capas de moderacion externas.
+- Riesgo de alucinacion: como todo LLM de su clase, puede inventar hechos, citas o referencias con aparente seguridad; la cuantizacion a 8 bits puede agravar ligeramente este comportamiento frente a bf16.
+- Sesgos: hereda los sesgos presentes en los datos de entrenamiento de Llama 3.3; la ablacion puede alterar el equilibrio de respuestas en temas sensibles de forma impredecible.
+- Licencia Llama 3.3: permite uso comercial con condiciones, incluida la obligacion de mostrar "Built with Llama" y de incluir "Llama" al inicio del nombre de cualquier modelo derivado. Si el producto supera los 700 millones de usuarios mensuales, se requiere licencia adicional de Meta.
+- Restricciones de plataforma: el formato MLX limita el despliegue a Apple Silicon; no es portable a GPUs NVIDIA o AMD sin conversion.
+- Idiomas: aunque cubre ocho idiomas, el rendimiento en hindi, tailandes y otros idiomas no ingleses puede ser inferior al del ingles; no se han publicado evaluaciones por idioma en la informacion disponible.
+- Contexto: la longitud exacta de contexto de esta cuantizacion no esta documentada; se asume la del modelo base, pero no hay verificacion publicada.
+- Repositorio de terceros: publicado por un usuario individual (divinetribe), no por Meta ni por huihui-ai; no hay garantias de mantenimiento, soporte ni verificacion independiente de la integridad de los pesos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/divinetribe/Llama-3.3-70B-Instruct-abliterated-8bit-mlx
-- Modelo base (abliterated bf16): https://huggingface.co/huihui-ai/Llama-3.3-70B-Instruct-abliterated
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/Llama-3.3-70B-Instruct-abliterated-8bit-mlx
+- Modelo base (abliterated): https://huggingface.co/huihui-ai/Llama-3.3-70B-Instruct-abliterated
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
-- Documentacion de Llama: https://llama.com/docs/overview
+- Documentacion de Llama: https://www.llama.com/docs/overview
 - Politica de uso aceptable de Llama 3.3: https://www.llama.com/llama3_3/use-policy
 - Descarga de Llama: https://www.llama.com/llama-downloads
 - Libreria MLX: https://github.com/ml-explore/mlx
-- mlx-lm: https://github.com/ml-explore/mlx-examples/tree/main/llms
+- mlx-lm: https://github.com/ml-explore/mlx-lm

@@ -2,83 +2,95 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de `unsloth/llama-3.1-8b-unsloth-bnb-4bit`, desarrollado por hendrimardani. Se entrenó con GRPO, un método de aprendizaje por refuerzo introducido en DeepSeekMath para mejorar el razonamiento matemático, utilizando la librería TRL. El nombre del modelo sugiere que está orientado al idioma indonesio, aunque no se proporciona documentación que lo confirme. El modelo base es Llama 3.1 8B, una arquitectura transformer decoder-only con ventana de contexto de 128.000 tokens. El repositorio tiene un tamaño de 2,1 GB y contiene pesos en formato safetensors. No se han publicado benchmarks ni especificaciones detalladas, por lo que la información disponible es limitada.
+fine-tuned-model-indonesian-GRPO es un ajuste fino del modelo Llama-3.1-8B desarrollado por el usuario hendrimardani, orientado a razonamiento legal en indonesio dentro de flujos de generacion aumentada por recuperacion (RAG). El modelo parte de la variante cuantizada en 4 bits de Unsloth (`unsloth/Llama-3.1-8B-unsloth-bnb-4bit`) y se entrena mediante Group Relative Policy Optimization (GRPO) con PEFT/LoRA, tecnicas implementadas a traves de Unsloth y Hugging Face TRL.
 
-## Especificaciones técnicas
+Su rasgo distintivo es la produccion de respuestas estructuradas con razonamiento encadenado (Chain-of-Thought) delimitado por las etiquetas `<think>...</think>` y la respuesta final en `<answer>...</answer>`, siempre en indonesio. Esta especializado en el analisis de normativa indonesia (UU, PP y clausulas legales) y el autor declara que evita el colapso de modo (mode collapse) durante el entrenamiento.
+
+Con 8.030.261.248 parametros, una longitud maxima de secuencia de 2048 tokens y licencia Apache 2.0, el modelo es relevante para equipos que necesitan un asistente juridico en indonesio desplegable en hardware modesto gracias a su cuantizacion NF4. No obstante, la informacion publicada es limitada: no hay datos de benchmarks, composicion del dataset de entrenamiento ni detalles del proceso de RL.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (basada en Llama 3.1 8B) |
-| Parametros totales | 8.000 millones (aproximadamente, heredado del modelo base) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la información del fine-tune; el modelo base Llama 3.1 8B tiene 128.000 tokens |
-| Tipos de cuantizacion | No disponible. El modelo base se entrenó con cuantización 4-bit (bitsandbytes), pero el checkpoint final no especifica su precisión |
-| Idiomas soportados | No disponible. El nombre del modelo sugiere indonesio, pero no hay confirmación explícita en la documentación |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (según tags del repositorio) |
+| Arquitectura | Transformer decoder-only (Llama-3.1-8B), ajuste fino con PEFT/LoRA y GRPO |
+| Parametros totales | 8.030.261.248 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2048 tokens (max sequence length declarada) |
+| Tipos de cuantizacion | 4-bit NF4 (base y carga recomendada); pesos en safetensors |
+| Idiomas soportados | indonesio (`id`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
+| Modelo base | unsloth/Llama-3.1-8B-unsloth-bnb-4bit |
+| Metodo de ajuste | GRPO + PEFT/LoRA |
+| Tamano del repositorio | 109.6 GB |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only basada en Llama 3.1 8B, con aproximadamente 8.000 millones de parámetros. El modelo fue entrenado con GRPO, un método de optimización de políticas de refuerzo que utiliza recompensas basadas en reglas, originalmente propuesto para mejorar el razonamiento matemático en modelos de lenguaje. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens ni la composición de los datos. El entrenamiento se realizó con TRL 0.22.2, Transformers 4.56.2 y PyTorch 2.10.0+cu128. No se indica si se emplearon técnicas adicionales como RLHF o DPO.
+El modelo hereda la arquitectura transformer decoder-only de Llama-3.1-8B, con 8.030 millones de parametros. Sobre esa base se aplica un ajuste fino supervisado mediante LoRA (PEFT) seguido de un entrenamiento con GRPO, un algoritmo de optimizacion por politica relativa a grupos que no requiere un modelo critico separado y que se ha popularizado para reforzar el razonamiento en modelos de lenguaje. La implementacion se apoya en Unsloth para el entrenamiento eficiente en memoria y en Hugging Face TRL para el bucle de RL.
+
+El autor no publica el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de datos legales ni los hiperparametros del proceso GRPO. Tampoco se detalla si hubo una fase previa de SFT con datos legales indonesios o si el GRPO se aplico directamente sobre el modelo base. La innovacion tecnica documentada se limita al formato de salida estructurado con etiquetas `<think>` y `<answer>`, que el autor impone mediante un system prompt y un prefill de la etiqueta de razonamiento, y a la recomendacion de parametros de generacion (temperatura 0.3, repetition_penalty 1.18, max_new_tokens 1024) para evitar degradacion del idioma y bucles infinitos.
 
 ## Capacidades
 
-La información disponible no documenta las capacidades específicas del modelo. Se sabe que hereda la arquitectura y el tokenizador de Llama 3.1 8B, pero no se han publicado evaluaciones de razonamiento, generación de código, matemáticas, tool calling o soporte de agentes. El método de entrenamiento (GRPO) está asociado a mejoras en razonamiento matemático, pero no hay confirmación de que este modelo las haya alcanzado.
-
-- Generación de texto: el modelo puede generar texto, como muestra el ejemplo del README, pero no se especifica su calidad ni idioma.
-- Razonamiento matemático: potencialmente, dado el método GRPO, pero no hay benchmarks que lo confirmen.
-- Soporte de tool calling: no documentado.
-- Soporte de agentes: no documentado.
-- Capacidades multilingües: no documentadas.
-- Visión o audio: no aplica; es un modelo de texto.
+- Generacion de texto conversacional en indonesio con formato estructurado de razonamiento y respuesta.
+- Razonamiento encadenado (Chain-of-Thought) delimitado en `<think>...</think>`, con la respuesta final en `<answer>...</answer>`.
+- Analisis de normativa indonesia: leyes (UU), reglamentos gubernamentales (PP) y clausulas legales.
+- Integracion en pipelines RAG: el modelo consume documentos de contexto inyectados en el prompt y ancla la respuesta a ellos.
+- Uso conversacional multi-turno mediante plantilla de chat (`apply_chat_template`).
+- Compatibilidad con Hugging Face Transformers, Text Generation Inference y LangChain (`HuggingFacePipeline`).
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking nativo mas alla del formato de etiquetas.
 
 ## Casos de uso
 
-No se dispone de documentación de casos de uso específicos. Los siguientes son usos potenciales derivados de las características del modelo base y del método de entrenamiento, sin confirmación empírica. Deben considerarse hipótesis no verificadas.
-
-- Razonamiento matemático asistido: dado que se entrenó con GRPO, el modelo podría aplicarse a problemas matemáticos de nivel escolar o universitario, pero no hay resultados que lo confirmen.
-- Asistente conversacional en indonesio: el nombre sugiere que podría responder en indonesio, pero no hay evidencia de su competencia lingüística.
-- Generación de texto general: como LLM, podría usarse para redactar textos, resumir contenidos o responder preguntas, aunque su rendimiento no ha sido evaluado.
-- Chatbot de atención al cliente: podría integrarse en sistemas de chat, pero se desconocen su capacidad de seguir instrucciones y su fiabilidad.
-- Herramienta educativa: podría plantear preguntas de razonamiento, pero no hay datos sobre su precisión.
-- Investigación en RL: el modelo puede servir como ejemplo de aplicación de GRPO para estudiar métodos de alineación, pero no está pensado para producción.
+- Asistencia legal en indonesio para trabajadores: el modelo responde consultas sobre derechos laborales (por ejemplo, pago de horas extra) citando el articulo concreto del contexto recuperado, como se muestra en el ejemplo de la model card con el PP No. 35 Tahun 2021.
+- RAG juridico sobre corpus normativo: se integra en un pipeline LangChain que recupera articulos de leyes y reglamentos y los inyecta en el prompt; el modelo genera una respuesta anclada al contexto con trazabilidad del razonamiento.
+- Revision de clausulas contractuales: dado un fragmento de contrato y la normativa aplicable, el modelo identifica obligaciones y derechos y los contrasta con la regulacion vigente.
+- Atencion al ciudadano en ventanillas administrativas: respuestas multi-turno en indonesio con contexto de hasta 2048 tokens, suficiente para incluir varios articulos y el historial reciente de la conversacion.
+- Generacion de borradores de resumenes legales: a partir de documentos recuperados, el modelo produce explicaciones paso a paso utiles para personal no jurista.
+- Despliegue en hardware de consumo: al cargarse en 4 bits NF4, puede ejecutarse en GPU consumer para prototipos y demos internas de asistentes legales.
+- Fine-tuning continuado: al estar publicado con licencia Apache 2.0 y pesos safetensors, sirve como punto de partida para adaptar el formato `<think>/<answer>` a otros dominios regulados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-No se dispone de información específica sobre requisitos de hardware para este checkpoint. El tamaño del repositorio (2,1 GB) sugiere que los pesos están cuantizados, pero no se conoce la precisión exacta. Para el modelo base Llama 3.1 8B en 4-bit, se estima una VRAM de 4-6 GB para inferencia, pero esto no está confirmado para este fine-tune.
-
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada; el modelo base en 4-bit podría caber en tarjetas con 6-8 GB de VRAM, pero no hay datos específicos.
-- Opciones de despliegue: al ser un modelo basado en Llama, es compatible en principio con vLLM, llama.cpp, Ollama y TGI, aunque no se ha verificado la compatibilidad de este checkpoint.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en 4 bits NF4: aproximadamente 5-6 GB para los pesos, mas overhead de activaciones y cache KV; en la practica, entre 8 y 12 GB para secuencias de hasta 2048 tokens.
+- En bfloat16 sin cuantizar: aproximadamente 16 GB solo para pesos, mas cache KV; se recomienda al menos 24 GB.
+- GPU recomendadas: NVIDIA RTX 4090 (24 GB) o A100/H100 para mayor throughput y contextos largos; RTX 3090 (24 GB) y RTX 4080 (16 GB) son viables en 4 bits.
+- Cabe en GPU consumer: si, en modelos con 12 GB o mas en cuantizacion 4 bits, y en 24 GB en bfloat16.
+- Opciones de despliegue: Hugging Face Transformers con `load_in_4bit=True`, Text Generation Inference (tag `text-generation-inference`), y pipelines de LangChain mediante `HuggingFacePipeline`. No se documenta soporte explicito de vLLM, llama.cpp u Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. El modelo base es `unsloth/llama-3.1-8b-unsloth-bnb-4bit`; se puede comparar con Llama 3.1 8B original, pero no hay datos de rendimiento de este fine-tune.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| fine-tuned-model-indonesian-GRPO | 8.030 M | 2048 | Legal indonesio con CoT y GRPO | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8.030 M | 128.000 | Instrucciones generales multilingues | Llama 3.1 Community License | Hugging Face, amplia adopcion |
+| SeaLLM / modelos SEA | no disponible | no disponible | Modelos regionales del sudeste asiatico | no disponible | no disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Llama 3.1 8B (original) | 8B | 128k | Llama 3.1 Community License | Modelo base, no fine-tune |
-| Este modelo | 8B (base) | No disponible | No disponible | Fine-tune con GRPO, sin benchmarks |
-
-No se dispone de otras alternativas comparables en la información proporcionada.
+La comparacion cuantitativa con alternativas no es posible porque el autor no publica benchmarks. Frente a Llama-3.1-8B-Instruct, este ajuste sacrifica la ventana de contexto nativa de 128.000 tokens (limitada a 2048) y el soporte multilingue amplio a cambio de especializacion en indonesio legal y formato de razonamiento estructurado. No se dispone de datos sobre modelos comparables especificos de legal AI en indonesio en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se han documentado sesgos específicos, pero al ser un fine-tune de un modelo general, puede heredar sesgos del modelo base.
-- Riesgo de alucinación no evaluado.
-- Limitaciones de contexto: no se especifica si el fine-tune modifica la ventana de contexto original.
-- Restricciones de licencia: la licencia no está disponible, lo que impide determinar si el uso comercial está permitido.
-- El modelo no ha sido evaluado en tareas de seguridad, alineación o robustez.
-- No se recomienda su uso en producción sin una evaluación previa.
+- No constituye asesoramiento legal: el propio autor advierte que las salidas deben verificarse contra fuentes oficiales indonesias.
+- Riesgo de alucinacion: puede citar articulos o reglamentos inexistentes o desactualizados, especialmente si el contexto recuperado es incompleto.
+- Ventana de contexto limitada a 2048 tokens, insuficiente para documentos legales extensos o historiales largos.
+- Especializado en indonesio: el rendimiento en otros idiomas, incluido el castellano, no esta documentado y probablemente sea deficiente.
+- Parametros de generacion sensibles: el autor advierte que valores bajos de `no_repeat_ngram_size` provocan corrupcion de tokens, y que sin temperatura baja y penalizacion de repeticion aparecen bucles y errores tipograficos.
+- Sesgos: no se documenta la composicion del dataset de entrenamiento ni si se aplicaron filtros de sesgo; el corpus legal indonesio puede arrastrar sesgos normativos e historicos.
+- Ausencia de benchmarks y de detalles de entrenamiento: dificulta evaluar la calidad frente a alternativas y reproducir el proceso.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Llama-3.1 impone condiciones adicionales de la Llama 3.1 Community License que deben respetarse.
+- Tamano del repositorio de 109.6 GB, muy superior al de los pesos del modelo, lo que sugiere la presencia de checkpoints intermedios o artefactos de entrenamiento; conviene revisar los archivos antes de descargar.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/hendrimardani/fine-tuned-model-indonesian-GRPO
-- Modelo base: https://huggingface.co/unsloth/llama-3.1-8b-unsloth-bnb-4bit
-- Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
-- TRL (Transformer Reinforcement Learning): https://github.com/huggingface/trl
+- Modelo en Hugging Face: https://huggingface.co/hendrimardani/fine-tuned-model-indonesian-GRPO
+- Perfil del autor: https://huggingface.co/hendrimardani
+- Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-unsloth-bnb-4bit
+- Unsloth: https://github.com/unslothai/unsloth
+- Hugging Face TRL: https://github.com/huggingface/trl
+- LangChain HuggingFacePipeline: https://python.langchain.com/docs/integrations/llms/huggingface_pipeline/

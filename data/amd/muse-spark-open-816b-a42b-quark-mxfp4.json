@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 10748,
+  "downloads_30d": 11149,
   "trending_score": 0,
   "parameters": 435489473024,
   "parameters_human": "435.49B",
@@ -42,11 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "AMD Radeon Adrenalin Graphics Driver 26.10.2 Hotfix - TechSpot",
-      "url": "https://www.techspot.com/downloads/drivers/essentials/amd-radeon-hotfix/",
-      "snippet": "3 days ago · Take advantage of the ALT+R hotkey to open AMD Software: Adrenalin Edition directly in-game, making it even more …"
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "jekunz/smollm-360m-cpt-fineweb-faroese-transfer-from-swedish-seed3",
+  "slug": "jekunz-smollm-360m-cpt-fineweb-faroese-transfer-from-swedish-seed3",
+  "author": "jekunz",
+  "url": "https://huggingface.co/jekunz/smollm-360m-cpt-fineweb-faroese-transfer-from-swedish-seed3",
+  "created_at": "2026-11-18T10:59:43.000Z",
+  "updated_at": "2026-11-18T10:59:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "fo",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:jekunz/smollm-360m-cpt-fineweb-swedish",
+    "base_model:finetune:jekunz/smollm-360m-cpt-fineweb-swedish",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 723674912,
+  "storage_human": "724 MB",
+  "context_length": null,
+  "base_model": "jekunz/smollm-360m-cpt-fineweb-swedish",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smash | Envoi de gros fichiers – Rapide, Sécurisé, Français",
+      "url": "https://fromsmash.com/fr",
+      "snippet": "Smash permet de recevoir des fichiers volumineux facilement via le site web, appli mobile ou plugin Outlook. Disponible uniquement …"
+    },
+    {
+      "title": "Smash | Send Large Files Online – Free, Secure & Unlimited",
+      "url": "https://fromsmash.com/",
+      "snippet": "Smash is a fast, secure, smooth and sustainable service to transfer your (extra) large files. Use it for free or unlock enhanced …"
+    },
+    {
+      "title": "Smash Free : envoi de fichiers illimité, 100% gratuit",
+      "url": "https://fromsmash.com/fr/discover-smash/everyone",
+      "snippet": "Envoyez vos fichiers par email, ou partagez un lien de téléchargement où vous le souhaitez. Vos destinataires peuvent même …"
+    },
+    {
+      "title": "Recevoir des fichiers volumineux avec Smash",
+      "url": "https://fromsmash.com/fr/features/receive-large-files",
+      "snippet": "Smash est la meilleure façon de recevoir des fichiers de toute taille, en quelques secondes, au travers d'un lien de dépôt. Recevez …"
+    },
+    {
+      "title": "Connectez-vous à votre compte Smash pour envoyer vos (super) …",
+      "url": "https://fromsmash.com/fr/signin",
+      "snippet": "Configurez votre compte Smash et consultez vos transferts."
+    }
+  ]
+}

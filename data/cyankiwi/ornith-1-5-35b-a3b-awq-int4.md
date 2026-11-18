@@ -2,89 +2,104 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B es un modelo de lenguaje de arquitectura mixture-of-experts (MoE) desarrollado por Ornith AI, que representa un avance hacia el entrenamiento de modelos fundacionales mediante auto-mejora de extremo a extremo. El modelo activa aproximadamente 3.000 millones de parámetros por token, aunque cuenta con un total de 35.950 millones, lo que lo sitúa en la categoría de modelos eficientes de tamaño medio. Se basa en el desarrollo previo de Ornith-1.0, que a su vez se construyó sobre Qwen3.5 y Gemma4, incorporando etapas de preentrenamiento continuado, entrenamiento intermedio y post-entrenamiento.
+Ornith-1.5-35B-A3B es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por Ornith AI, presentado como la evolución de Ornith-1.0. La ficha que nos ocupa no es el modelo original, sino la cuantización AWQ de 4 bits publicada por cyankiwi, un agente de inferencia especializado en modelos abiertos. El modelo base activa aproximadamente 3.000 millones de parámetros por token sobre un total de 35.951.822.704 parámetros, lo que lo sitúa en la categoría de MoE de tamaño medio con coste de inferencia contenido.
 
-La relevancia de este modelo reside en su enfoque de auto-mejora: en lugar de depender de un conjunto fijo de tareas curadas por humanos, Ornith-1.5 genera de forma continua nuevas tareas de entrenamiento, descubre estrategias efectivas para resolverlas y mejora su política mediante aprendizaje por refuerzo. Esta ficha documenta la versión cuantizada AWQ-INT4 publicada por el usuario cyankiwi, que mantiene las capacidades del modelo original con un tamaño reducido de 26,2 GB. El modelo está disponible bajo licencia MIT y soporta múltiples idiomas, incluyendo inglés, chino, hindi, árabe, ruso, japonés, coreano, neerlandés, francés y español.
+La propuesta técnica del modelo se centra en el autoaprendizaje extremo a extremo: en lugar de depender de un conjunto fijo de tareas curadas por humanos y de arneses diseñados manualmente, Ornith-1.5 genera continuamente nuevas tareas de entrenamiento, descubre estrategias para resolverlas y mejora la política mediante aprendizaje por refuerzo. Según la model card, esta ampliación del bucle de auto-mejora abarca la generación de tareas, la construcción de arneses y la ejecución de rollouts de solución.
 
-## Especificaciones tecnicas
+La relevancia práctica de esta versión concreta es doble. Por un lado, ofrece el modelo en formato AWQ INT4 con un tamaño de repositorio de 26,2 GB, lo que reduce los requisitos de memoria frente a los pesos en precisión completa. Por otro, la licencia MIT del modelo base facilita su uso comercial. La model card indica que supera a Qwen3.6-35B-A3B en todos los benchmarks de código y agentes, y que supera con amplio margen a modelos densos como Gemma-4-31B y Muse-Glimmer-30B en código agéntico.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture-of-experts) sobre base Qwen3.5/Gemma4 |
-| Parametros totales | 35.951.822.704 (35,95 B) |
-| Parametros activos | ~3 B por token |
+| Arquitectura | Mezcla de expertos (MoE) sobre transformer; tipo de modelo `qwen3_5_moe` |
+| Parámetros totales | 35.951.822.704 |
+| Parámetros activos | aproximadamente 3B por token (denominación A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | AWQ INT4 |
-| Idiomas soportados | EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES |
+| Tipos de cuantización | AWQ INT4 (compressed-tensors); existen otras variantes del modelo base no detalladas |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (transformers) |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers |
+| Tamaño del repositorio | 26,12 GB |
+| Modalidad | image-text-to-text y text-generation |
+| Versión de la cuantización | cyankiwi 26.05.01 |
+| Dataset de calibración | STEM and Agentic (cyankiwi/calibration) |
 
 ## Arquitectura y entrenamiento
 
-Ornith-1.5-35B-A3B emplea una arquitectura MoE con aproximadamente 3.000 millones de parámetros activos por token, lo que permite un rendimiento computacional eficiente sin sacrificar la capacidad del modelo. El entrenamiento se basa en un proceso de auto-mejora de extremo a extremo que optimiza conjuntamente la generación de tareas, la construcción de scaffolds (andamiajes de ejecución) y los rollouts de soluciones. Este enfoque se apoya en el desarrollo previo de Ornith-1.0, que utilizó Qwen3.5 y Gemma4 como base con etapas adicionales de preentrenamiento continuado, entrenamiento intermedio y post-entrenamiento.
+El modelo base es un transformer con arquitectura de mezcla de expertos, identificado en los metadatos como `qwen3_5_moe`. Activa alrededor de 3.000 millones de parámetros por token sobre un total de casi 36.000 millones, lo que permite un equilibrio entre capacidad y coste computacional en inferencia. La model card menciona que Ornith-1.0 se construyó sobre Qwen3.5 y Gemma4 con preentrenamiento continuado, mid-training y post-training adicionales; Ornith-1.5 parte de esa base y amplía el bucle de auto-mejora.
 
-El proceso de auto-mejora de Ornith-1.5 se distingue por su capacidad de generar nuevas tareas de entrenamiento de forma autónoma, en lugar de depender de conjuntos de datos fijos creados manualmente. El modelo propone tareas, genera scaffolds específicos para cada una y produce rollouts de soluciones para el aprendizaje por refuerzo, creando continuamente nuevas experiencias de aprendizaje. La cuantización AWQ INT4 aplicada por cyankiwi utiliza un conjunto de calibración orientado a tareas STEM y agenticas, lo que permite mantener la precisión en dominios técnicos.
+El entrenamiento de Ornith-1.5 se articula en torno a la optimización conjunta de tres componentes: la generación de tareas, la construcción de arneses (scaffolds) y los rollouts de solución, todo ello guiado por aprendizaje por refuerzo. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas concretas como RLHF o DPO más allá de la mención genérica al aprendizaje por refuerzo. Tampoco se detallan innovaciones de inferencia como decodificación especulativa o atención lineal.
+
+La cuantización AWQ INT4 de cyankiwi aplica cuantización consciente de la activación sobre los pesos, calibrada con un dataset orientado a STEM y flujos agénticos. El resultado son pesos de 4 bits en formato compressed-tensors, con un tamaño de 26,12 GB, que conservan la compatibilidad con la librería transformers.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo en múltiples idiomas.
-- Soporte de codificación y tareas de terminal, con rendimiento destacado en benchmarks de agentes de código.
-- Capacidades de agentes con razonamiento multi-paso.
-- Soporte de tool calling y function calling para integración en pipelines.
-- Capacidades multilingües en 10 idiomas principales.
-- Procesamiento de tareas de visión e imagen-texto (según el pipeline de la librería transformers).
-- Modo de auto-mejora: el modelo genera sus propias tareas de entrenamiento y estrategias de solución.
+- Generación de texto conversacional y continuaciones multi-turno.
+- Procesamiento de imagen y texto combinados (pipeline image-text-to-text), según los tags del repositorio.
+- Razonamiento y código: la model card destaca su rendimiento en benchmarks de coding y agentic coding.
+- Capacidades agénticas: el entrenamiento con rollouts y arneses sugiere soporte para tareas de múltiples pasos, aunque la información disponible no detalla el soporte explícito de tool calling o function calling.
+- Capacidades multilingües: no disponible.
+- Modo de pensamiento (thinking mode): no disponible en la información proporcionada.
+- Integración con endpoints compatibles, según el tag `endpoints_compatible`.
 
 ## Casos de uso
 
-- **Asistente de programación en entornos de terminal**: el modelo puede ejecutar tareas complejas de línea de comandos y depuración de código, con un rendimiento de 67,8 en Terminal-Bench 2.1, superando a modelos densos de tamaño similar.
-- **Agente de desarrollo de software**: su capacidad de razonamiento multi-paso y tool calling lo hace adecuado para automatizar tareas de programación en pipelines de CI/CD, generación de código y revisión de código.
-- **Automatización de tareas de oficina**: con soporte de 10 idiomas y capacidad de razonamiento, puede gestionar tareas de documentación, resúmenes y traducción en entornos empresariales multilingües.
-- **Investigación en aprendizaje por refuerzo**: su arquitectura de auto-mejora lo convierte en una herramienta útil para experimentar con sistemas de auto-entrenamiento y generación de tareas sintéticas.
-- **Asistente de análisis de datos**: su capacidad de razonamiento STEM y de manejo de herramientas lo hace adecuado para tareas de análisis de datos, generación de informes y visualización.
-- **Despliegue de modelos en producción**: la versión cuantizada AWQ INT4 reduce los requisitos de hardware, lo que permite su despliegue en entornos de producción con recursos limitados.
+- Asistencia a la programación en producción: el modelo puede integrarse en pipelines de revisión de código y generación de parches, aprovechando su rendimiento declarado en benchmarks de coding y su formato safetensors compatible con transformers.
+- Agentes autónomos de resolución de tareas: su entrenamiento basado en rollouts y arneses lo hace adecuado para flujos de varios pasos donde el modelo debe planificar y ejecutar acciones sucesivas.
+- Despliegue en infraestructura con memoria limitada: la versión AWQ INT4 de 26,12 GB permite servir el modelo en GPUs que no admitirían los pesos en precisión completa, manteniendo la licencia MIT para uso comercial.
+- Procesamiento de documentos con imagen y texto: el pipeline image-text-to-text habilita tareas de extracción y descripción sobre capturas, diagramas o documentos escaneados.
+- Evaluación comparativa de modelos MoE: útil en investigación para contrastar estrategias de auto-mejora con RL frente a modelos de tamaño similar como Qwen3.6-35B-A3B.
+- Generación de datos sintéticos y tareas: dado que el modelo base se entrena generando tareas nuevas, puede emplearse para producir conjuntos de problemas y soluciones en dominios STEM.
+- Despliegue mediante endpoints compatibles: el tag `endpoints_compatible` facilita su publicación en servicios de inferencia gestionada sin adaptaciones específicas.
 
 ## Benchmarks y rendimiento
 
-La información disponible incluye resultados de benchmarks del modelo base Ornith-1.5-35B-A3B. Los datos para esta versión cuantizada AWQ INT4 no se han publicado de forma específica.
+La model card incluye una tabla comparativa con las columnas Ornith-1.5-35B-A3B, Ornith-1.0-35B-A3B, Qwen3.6-35B-A3B, Gemma-4-31B, Muse-Glimmer-30B y Qwen3.5-397B, organizada en categorías como Coding. Sin embargo, en la información proporcionada solo se incluye la cabecera y el encabezado de la sección Coding, sin las filas de resultados numéricos. Por tanto, no es posible reproducir cifras concretas.
 
-| Benchmark | Ornith-1.5-35B-A3B | Ornith-1.0-35B-A3B | Qwen3.6-35B-A3B | Gemma-4-31B | Muse-Glimmer-30B | Qwen3.5-397B |
-|---|---|---|---|---|---|---|
-| Terminal-Bench 2.1 (Terminus-2) | 67,8 | 64,2 | 52,5 | 42,1 | 51,7 | 53,5 |
-| Terminal-Bench 2.1 (Claude Code) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se han publicado resultados de benchmarks específicos para la versión cuantizada AWQ INT4 en la información disponible.
+La model card afirma cualitativamente que Ornith-1.5-35B-A3B supera a Qwen3.6-35B-A3B en todos los benchmarks de código y agentes, y que supera con amplio margen a Gemma-4-31B y Muse-Glimmer-30B en código agéntico. No se han publicado en la información disponible los valores numéricos de MMLU, HumanEval, GSM8K ni de los benchmarks de la tabla.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: el modelo cuantizado AWQ INT4 tiene un tamaño de 26,2 GB, por lo que se requiere aproximadamente 28-32 GB de VRAM para inferencia en FP16, o menos si se utiliza una cuantización adicional.
-- **GPU recomendadas**: se recomiendan GPUs de gama alta con al menos 24 GB de VRAM, como NVIDIA RTX 4090, A100, H100 o A6000.
-- **Compatibilidad con GPUs de consumo**: es posible ejecutar el modelo en GPUs de consumo de 24 GB (por ejemplo, RTX 4090) con la cuantización AWQ INT4, aunque con limitaciones en el tamaño de lote.
-- **Opciones de despliegue**: se puede desplegar con vLLM, llama.cpp, Ollama o TGI, dependiendo de las necesidades de latencia y throughput.
-- **Latencia y throughput**: no disponible.
+- VRAM estimada para inferencia: los pesos AWQ INT4 ocupan 26,12 GB, por lo que se necesita al menos una GPU con 32 GB de memoria para cargar el modelo completo; con overhead de activaciones y caché KV conviene prever 32-40 GB según longitud de contexto.
+- GPU recomendadas: A100 40 GB, A100 80 GB, H100 80 GB para despliegues de producción; L40S 48 GB como alternativa.
+- GPU de consumo: una RTX 4090 de 24 GB no permite cargar los 26,12 GB de pesos en una sola tarjeta; sería necesario repartir el modelo entre varias GPUs o usar variantes de cuantización más agresivas no listadas en esta ficha.
+- Opciones de despliegue: transformers (librería declarada), servidores compatibles con compressed-tensors y endpoints compatibles; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Rendimiento en Terminal-Bench 2.1 |
+| Modelo | Parámetros | Activos por token | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B | 35,95 B | 3 B | no disponible | MIT | 67,8 |
-| Qwen3.6-35B-A3B | 35 B | 3 B | no disponible | Apache 2.0 | 52,5 |
-| Gemma-4-31B | 31 B | 31 B | no disponible | Gemma license | 42,1 |
-| Muse-Glimmer-30B | 30 B | 30 B | no disponible | no disponible | 51,7 |
+| Ornith-1.5-35B-A3B (AWQ INT4) | 35,95B | ~3B | no disponible | MIT | Hugging Face |
+| Ornith-1.0-35B-A3B | no disponible | ~3B | no disponible | no disponible | Hugging Face |
+| Qwen3.6-35B-A3B | no disponible | ~3B | no disponible | no disponible | Hugging Face |
+| Gemma-4-31B | 31B (denso) | 31B | no disponible | no disponible | Hugging Face |
+| Muse-Glimmer-30B | 30B (denso) | 30B | no disponible | no disponible | Hugging Face |
+
+La comparativa se limita a los datos reflejados en la model card; no se dispone de cifras de rendimiento numéricas para completar la tabla. Según la propia model card, Ornith-1.5-35B-A3B supera a Qwen3.6-35B-A3B en código y agentes, y a Gemma-4-31B y Muse-Glimmer-30B en código agéntico.
 
 ## Limitaciones y advertencias
 
-- **Sesgos conocidos**: no se han documentado sesgos específicos en la información disponible, pero como modelo entrenado en datos de internet, puede heredar sesgos de los datos de entrenamiento.
-- **Riesgo de alucinación**: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo.
-- **Limitaciones de contexto**: no se ha especificado la longitud máxima de contexto, por lo que el rendimiento en tareas de contexto muy largo no está garantizado.
-- **Idiomas**: aunque soporta 10 idiomas, el rendimiento puede variar significativamente entre ellos; los idiomas menos representados en el entrenamiento pueden mostrar peores resultados.
-- **Restricciones de licencia**: la licencia MIT permite uso comercial y modificación, pero se recomienda revisar los términos de la licencia del modelo base para cualquier restricción adicional.
-- **Caveat para producción**: la versión cuantizada AWQ INT4 puede presentar pérdida de precisión en tareas de alta precisión numérica o razonamiento matemático avanzado.
+- Sesgos conocidos: no se documentan en la información disponible; al ser un modelo entrenado con datos web y RL, es probable que herede sesgos de sus fuentes, pero no hay confirmación explícita.
+- Riesgo de alucinación: no cuantificado en la información proporcionada; como en cualquier modelo generativo, existe riesgo en tareas factuales.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están disponibles, lo que impide garantizar su comportamiento en contextos largos o en castellano.
+- Licencia: MIT, lo que permite uso comercial; conviene revisar el archivo LICENSE del modelo base enlazado en la model card por si hubiera condiciones adicionales.
+- Cuantización: la versión AWQ INT4 puede degradar ligeramente la calidad frente a los pesos originales; no se publican métricas de la pérdida de rendimiento respecto al modelo base.
+- Soporte de tooling: no se confirma soporte de tool calling ni de servidores de inferencia populares como vLLM u Ollama.
+- Fecha de creación del repositorio: 23 de agosto de 2026, con última actualización el 19 de octubre de 2026; verificar la vigencia de la versión de cuantización antes de desplegar.
 
 ## Enlaces
 
-- [Hugging Face - cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4](https://huggingface.co/cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4)
-- [Hugging Face - ornith-ai/Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
-- [Blog de Ornith - Ornith-1.5](https://ornith.ai/ornith_1_5.html)
-- [BenchLM - Ornith-1.5-35B-A3B](https://benchlm.ai/models/ornith-1-5-35b-a3b)
-- [ModelScope - Ornith-1.5-35B-A3B](https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B)
+- Modelo en Hugging Face: https://huggingface.co/cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
+- Blog de Ornith 1.5: https://ornith.ai/ornith_1_5.html
+- Blog de Ornith (enlace de la model card): https://deep-reinforce.com/ornith.html
+- Web de cyankiwi: https://cyan.kiwi/
+- Perfil de cyankiwi en Hugging Face: https://huggingface.co/cyankiwi
+- Perfil de cyankiwi en ModelScope: https://www.modelscope.ai/organization/cyankiwi
+- Dataset de calibración: https://huggingface.co/datasets/cyankiwi/calibration
+- Despliegue en endpoints de cyan.kiwi: https://cyan.kiwi/workspace?prompt=Deploy%20cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4
+- X de cyankiwi: https://x.com/cyankiwi_ai
+- Reddit de cyankiwi: https://www.reddit.com/r/cyankiwi/

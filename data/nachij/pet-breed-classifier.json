@@ -5,7 +5,7 @@
   "author": "nachij",
   "url": "https://huggingface.co/nachij/pet-breed-classifier",
   "created_at": "2026-11-11T05:52:32.000Z",
-  "updated_at": "2026-11-11T05:55:32.000Z",
+  "updated_at": "2026-11-17T14:30:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "vit",
     "image-classification",
@@ -25,11 +26,12 @@
   "trending_score": 0,
   "parameters": 85827109,
   "parameters_human": "85.8M",
-  "storage_bytes": 343331644,
-  "storage_human": "343 MB",
+  "storage_bytes": 432457610,
+  "storage_human": "432 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

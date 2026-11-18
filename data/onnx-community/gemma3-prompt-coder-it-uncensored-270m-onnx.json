@@ -21,8 +21,6 @@
     "dataset:microsoft/rStar-Coder",
     "dataset:gokaygokay/prompt-enhancement-75k",
     "dataset:gokaygokay/prompt-enhancer-dataset",
-    "base_model:WithinUsAI/Gemma3-Prompt.Coder.it.Uncensored-270m",
-    "base_model:quantized:WithinUsAI/Gemma3-Prompt.Coder.it.Uncensored-270m",
     "region:us"
   ],
   "likes": 0,

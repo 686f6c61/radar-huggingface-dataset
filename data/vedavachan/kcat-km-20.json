@@ -34,11 +34,11 @@
   "is_conversational": false,
   "gated": false,
   "disabled": false,
-  "removed": true,
-  "removed_at": "2026-11-16T04:43:15.293Z",
-  "removal_pattern": "isolated",
-  "renamed_to": null,
-  "renamed_at": null,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VedaVachan/kcat-km-v20",
+  "renamed_at": "2026-11-18T05:02:50.359Z",
   "benchmarks": [],
   "sources": []
 }

@@ -32,8 +32,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 193,
-  "downloads_30d": 2666,
+  "likes": 194,
+  "downloads_30d": 2671,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Impossible de recevoir le code verif Canva - Forum Services en ligne",
-      "url": "https://forums.commentcamarche.net/forum/affich-38299352-impossible-de-recevoir-le-code-verif-canva",
-      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
-    },
-    {
-      "title": "Impossible de me connecter à Canva avec mail Outlook",
-      "url": "https://forums.commentcamarche.net/forum/affich-38299350-impossible-de-me-connecter-a-canva-avec-mail-outlook",
-      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
-    },
-    {
-      "title": "Cổ phiếu của Adobe đã giảm gần 50% sau 1 năm - Tinhte.vn",
-      "url": "https://tinhte.vn/thread/co-phieu-cua-adobe-da-giam-gan-50-sau-1-nam.4154737/",
-      "snippet": "Jun 23, 2026 · Lâu lâu nhìn lại mới thấy Adobe đang \"không ổn chút nào\" khi cổ phiếu của hãng này vẫn lao dốc. Tháng 6 năm …"
-    },
-    {
-      "title": "Canva AI Miễn Phí Có Gì? Những Tính Năng Nên Dùng Trước Khi Nâng …",
-      "url": "https://tinhte.vn/thread/canva-ai-mien-phi-co-gi-nhung-tinh-nang-nen-dung-truoc-khi-nang-cap-canva-pro.4139897/",
-      "snippet": "Khi đã biết rõ mình cần tính năng nào và dùng với tần suất bao nhiêu, việc quyết định nâng cấp Canva Pro sẽ chính xác hơn. Canva …"
-    },
-    {
-      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
-      "url": "https://pc.tinhte.vn/",
-      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
-    }
-  ]
+  "sources": []
 }

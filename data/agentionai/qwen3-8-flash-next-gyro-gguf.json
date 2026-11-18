@@ -5,7 +5,7 @@
   "author": "agentionai",
   "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF",
   "created_at": "2026-09-30T17:56:47.000Z",
-  "updated_at": "2026-11-05T20:10:17.000Z",
+  "updated_at": "2026-11-18T01:23:31.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -25,13 +25,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 219,
-  "downloads_30d": 1988517,
-  "trending_score": 37,
+  "likes": 220,
+  "downloads_30d": 2064798,
+  "trending_score": 35,
   "parameters": 125743653760,
   "parameters_human": "125.74B",
-  "storage_bytes": 677914726956,
-  "storage_human": "677.9 GB",
+  "storage_bytes": 706725812140,
+  "storage_human": "706.7 GB",
   "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "agentionai/Qwen3.8-Flash-Next-Gyro-GGUF · Hugging Face",
-      "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF",
-      "snippet": "Instructions to use agentionai/Qwen3.8-Flash-Next-Gyro-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use agentionai/Qwen3.8-Flash-Next-Gyro-GGUF with llama.cpp: Install (macOS, Linux) ... Install from WinGet (Windows ..."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF - Hugging Face",
-      "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next - agention.ai",
-      "url": "https://www.agention.ai/models/qwen3.8-flash-next/",
-      "snippet": "Models Qwen3.8-Flash-Next Requants and hardware-specific builds of Qwen3.8-Flash-Next, published on HuggingFace. We think this is one of the strongest quantized lineups available for this model, at any size. Our newest tier, AP-IQ2_S, is the smallest one we ship, and it outperforms the leading community build in its size class."
-    },
-    {
-      "title": "Getting Started | QwenLM/Qwen3.8-Flash-Next | DeepWiki",
-      "url": "https://deepwiki.com/QwenLM/Qwen3.8-Flash-Next/3-getting-started",
-      "snippet": "This page provides a practical guide for technical users and developers to access, run, and deploy Qwen3.8-Flash-Next. As a multimodal Mixture-of-Experts (MoE) model featuring a hybrid architecture of Gated DeltaNet (GDN) and Qwen Sparse Attention (QSA), it offers significant efficiency gains, reducing training costs by approximately 88% ..."
-    }
-  ]
+  "sources": []
 }

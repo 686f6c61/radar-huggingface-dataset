@@ -2,76 +2,98 @@
 
 ## Resumen
 
-MiniMax Music 3 GGUF es un paquete de cuantizacion del modelo MiniMax Music 3, desarrollado por MiniMaxAI y empaquetado por audio-cpp para su uso con la libreria audio.cpp. Este modelo esta especializado en generacion de musica a partir de texto, permitiendo crear pistas completas con letras, estilo musical y duracion especificados por el usuario. El paquete GGUF incluye multiples componentes del modelo original convertidos a formato GGUF, lo que facilita su ejecucion en diferentes backends como CUDA.
+MiniMax-Music3-GGUF es un paquete de pesos cuantizados en formato GGUF del modelo MiniMax Music 3, un sistema de generación de audio musical (text-to-audio) desarrollado originalmente por MiniMaxAI. Este repositorio, mantenido por el usuario audio-cpp, adapta los pesos originales para que puedan ejecutarse con la librería audio.cpp, una implementación en C++ orientada a inferencia local eficiente. El modelo resuelve la tarea de convertir descripciones textuales y letras en audio musical completo, incluyendo voz y acompañamiento instrumental.
 
-El modelo original MiniMax Music 3 es un sistema de generacion de audio de ultima generacion que combina un modelo de lenguaje grande con un transformer de flujo y un decodificador de profundidad RVQ para producir audio de alta calidad. Este paquete GGUF, con un tamano de repositorio de 44,9 GB, incluye variantes en BF16, Q4_0 y Q4_K de cada componente para permitir comparaciones de calidad y rendimiento. Es relevante actualmente porque ofrece una alternativa de codigo abierto para generacion musical con control fino sobre letras y estilo, aunque se encuentra en fase de vista previa con una superficie de ejecucion en iteracion activa.
+La arquitectura es un pipeline multimodal compuesto por varios módulos: un modelo de lenguaje autorregresivo, un decodificador de profundidad RVQ (Residual Vector Quantization), un transformer de flujo (flow matching) y un vocoder. El paquete incluye variantes en BF16, Q8_0 y Q4_0 para cada componente, lo que permite ajustar el equilibrio entre calidad y consumo de memoria. La mezcla por defecto emplea Q4_0 para el modelo de lenguaje y el transformer de flujo, y Q8_0 para el decodificador RVQ.
+
+El modelo resulta relevante porque permite generar música de forma local en GPUs de consumo, con un rendimiento medido de 1,35x tiempo real en una RTX 5090 usando la configuración por defecto y un pico de VRAM de 9,8 GiB. El repositorio acumula más de 680.000 descargas, lo que refleja un interés considerable en la generación musical open source ejecutable en hardware asequible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de lenguaje + transformer de flujo + decodificador RVQ + vocoder |
-| Parametros totales | 25.167.881 (dato del modelo base en safetensors) |
-| Parametros activos | no disponible |
+| Arquitectura | Pipeline compuesto: modelo de lenguaje autorregresivo + decodificador de profundidad RVQ + transformer de flujo (flow matching) + vocoder + encoder de condicionamiento |
+| Parametros totales | 25.167.881 (según safetensors del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q4_0, Q4_K (según componente) |
+| Tipos de cuantizacion | BF16, Q8_0, Q4_0 (por componente) |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax Music 3 Community License |
-| Formato de pesos | GGUF (componentes individuales) |
+| Licencia | minimax-music3-community-license |
+| Formato de pesos | GGUF (componentes separados: `language_model_*.gguf`, `rvq_depth_decoder_*.gguf`, `transformer_*.gguf`, `condition_encoder.gguf`, `vocoder.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo MiniMax Music 3 presenta una arquitectura compuesta por varios componentes que trabajan en conjunto. El paquete GGUF incluye cinco componentes principales: un modelo de lenguaje (language model), un transformer de flujo (flow transformer), un decodificador de profundidad RVQ (RVQ depth decoder), un codificador de condiciones (condition encoder) y un vocoder. El modelo de lenguaje procesa las instrucciones textuales y las letras, mientras que el transformer de flujo genera la representacion latente del audio y el decodificador RVQ la convierte en una representacion de audio de alta fidelidad.
+El modelo sigue una arquitectura de generación musical en cascada. Un modelo de lenguaje autorregresivo genera tokens de audio condicionados por el texto descriptivo y las letras; un decodificador de profundidad RVQ reconstruye los tokens acústicos a partir de las representaciones cuantizadas; un transformer de flujo (flow matching) refina la señal mediante pasos de integración configurables (`num_inference_steps`, por defecto 30); y un vocoder convierte la representación latente en forma de onda de audio final. El encoder de condicionamiento procesa la entrada textual.
 
-El modelo original fue entrenado por MiniMaxAI, aunque los detalles especificos del entrenamiento (numero de tokens, composicion del dataset, uso de RLHF o DPO) no estan disponibles en la informacion proporcionada. La implementacion en audio.cpp se encuentra en la rama `preview/minimax-music-3` y utiliza carga de recursos local al modelo en lugar de tratar la especificacion v1 como contrato de ejecucion, lo que permite flexibilidad en la seleccion de componentes mientras se estabiliza el diseno del paquete.
+Los detalles sobre el volumen de datos de entrenamiento, la composición del dataset y si se aplicaron técnicas de RLHF o DPO no están disponibles en la información proporcionada. La innovación técnica destacable de este repositorio no reside en el entrenamiento, sino en el empaquetado: la separación en componentes GGUF independientes permite mezclar cuantizaciones heterogéneas (por ejemplo, Q4_0 para el modelo de lenguaje y Q8_0 para el decodificador RVQ) y seleccionarlas explícitamente mediante opciones de sesión. El runtime usa carga de recursos local al modelo en lugar de tratar la especificación v1 como contrato de ejecución, lo que aporta flexibilidad en la selección de componentes.
 
 ## Capacidades
 
-- Generacion de musica a partir de descripciones textuales en lenguaje natural, incluyendo genero, instrumentacion y estilo vocal.
-- Soporte de letras estructuradas con secciones como verso y estribillo mediante la opcion `lyrics`.
-- Control de duracion de la generacion mediante el parametro `duration_sec`.
-- Generacion de piezas largas (hasta cinco minutos) como ejecuciones de formato largo, aunque optimizadas para completar la generacion y verificar calidad mas que para rendimiento en tiempo real.
-- Seleccion configurable de componentes cuantizados (BF16, Q4_0, Q4_K) para equilibrar calidad y uso de memoria.
-- Integracion con audio.cpp para ejecucion en backend CUDA.
+- Generación de audio musical a partir de descripciones textuales de estilo, instrumentación y tipo de voz.
+- Generación de voz cantada sincronizada con letras proporcionadas por el usuario mediante el parámetro `lyrics`.
+- Control de duración de la pieza mediante `duration_sec`, con soporte para generaciones largas (canciones de hasta cinco minutos en modo long-form).
+- Control del proceso de generación mediante `num_inference_steps`, escalas de guía (`flow guidance scale`, `AR guidance scale`) y `top-k`.
+- Salida en formato WAV.
+- Selección granular de cuantización por componente (modelo de lenguaje, decodificador RVQ, transformer de flujo) para experimentar con el equilibrio calidad/rendimiento.
+- Ejecución local en GPU mediante backend CUDA.
+- No se dispone de información sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión o modo thinking; el modelo está especializado exclusivamente en generación de audio.
 
 ## Casos de uso
 
-- Produccion musical rapida para maquetas: un compositor puede generar una maqueta de 20-30 segundos con una descripcion como "pop rock brillante con bateria limpia y voz masculina clara" para evaluar una idea antes de desarrollarla en un DAW.
-- Creacion de demos para clientes: un estudio de produccion puede generar varias variaciones de una cancion con diferentes estilos o letras para presentar opciones a un cliente sin necesidad de grabar sesiones completas.
-- Generacion de bandas sonoras para videojuegos: un desarrollador independiente puede crear musica ambiental o temas de nivel con diferentes estilos y duraciones, ajustando la letra para adaptarse a la narrativa del juego.
-- Contenido para redes sociales: creadores de contenido pueden generar musica original con letras personalizadas para videos de TikTok, Instagram Reels o YouTube, evitando problemas de derechos de autor.
-- Exploracion creativa de letras: un letrista puede escribir versos y estribillos y escuchar como sonarian musicalmente, iterando sobre la letra y el estilo para encontrar la combinacion adecuada.
-- Educacion musical: profesores pueden generar ejemplos de diferentes generos musicales con letras para ilustrar conceptos de composicion, armonia o estructura de canciones en clase.
+- Producción musical asistida: un compositor puede describir el estilo deseado ("pop rock brillante con batería limpia y voz masculina clara") y proporcionar letras para obtener una maqueta cantada completa, útil para iterar rápidamente sobre ideas antes de la producción final.
+- Generación de sintonías y jingles: empresas y creadores pueden generar piezas cortas de audio de marca con duración controlada mediante `duration_sec`, ejecutando el modelo localmente sin depender de APIs externas.
+- Creación de contenido para vídeo y pódcast: generación de música de fondo original con letras personalizadas, evitando problemas de licencias de música comercial.
+- Investigación en generación musical: el paquete GGUF con variantes BF16/Q8_0/Q4_0 permite estudiar el impacto de la cuantización en la calidad perceptual del audio generado, comparando mezclas de componentes de forma controlada.
+- Prototipado de aplicaciones de audio en C++: gracias a la integración con audio.cpp, el modelo puede embeberse en aplicaciones nativas que requieran generación musical sin un stack Python.
+- Pruebas de estrés de hardware y benchmarking: el repositorio documenta métricas de RTF y VRAM pico que sirven como referencia para evaluar GPUs en cargas de inferencia de audio generativo.
+- Educación y demostraciones: generación de ejemplos musicales a partir de letras en talleres o clases sobre IA generativa, con inferencia local que evita enviar datos a servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El autor publica una instantánea de rendimiento medida en una RTX 5090 con CUDA, usando una petición de generación de 30 segundos de letra, 30 pasos de flujo, escala de guía de flujo 1,7, escala de guía AR 1,5 y top-k 50. El pico de VRAM corresponde al máximo observado con `nvidia-smi` durante una ejecución de calentamiento más la petición medida.
+
+| Mezcla de componentes | Modelo de lenguaje | Decodificador RVQ | Transformer de flujo | RTF | Velocidad | VRAM pico |
+|---|---|---|---:|---:|---:|
+| Por defecto Q4/Q8/Q4 | `q4_0` | `q8_0` | `q4_0` | 0,738 | 1,35x tiempo real | 9,8 GiB |
+| Q8 | `q8_0` | `q8_0` | `q8_0` | 0,832 | 1,20x tiempo real | 13,4 GiB |
+| BF16 | `bf16` | `bf16` | `bf16` | 1,389 | 0,72x tiempo real | 19,4 GiB |
+
+No se han publicado resultados de benchmarks de calidad objetiva (por ejemplo, métricas FAD, MOS o comparaciones con otros modelos de música) en la información disponible.
 
 ## Requisitos de hardware
 
-- El tamano del repositorio es de 44,9 GB, por lo que se requiere espacio en disco suficiente para descargar todos los componentes.
-- La configuracion por defecto usa Q4_0 para el modelo de lenguaje y el transformer de flujo, con BF16 para el decodificador RVQ, lo que reduce significativamente los requisitos de VRAM en comparacion con el modelo completo en BF16.
-- Se recomienda una GPU NVIDIA con soporte CUDA y al menos 16 GB de VRAM para la configuracion por defecto, aunque los requisitos exactos dependen de la duracion de la generacion y la mezcla de componentes elegida.
-- El backend recomendado es CUDA a traves de audio.cpp, aunque la libreria puede soportar otros backends.
-- La generacion de piezas largas (cinco minutos) esta optimizada para completar la generacion y verificar calidad, no para rendimiento en tiempo real, por lo que la latencia puede ser significativa.
-- El uso de memoria sigue siendo un objetivo de optimizacion activo para duraciones mayores y mezclas alternativas de componentes.
+- VRAM estimada para inferencia: 9,8 GiB con la mezcla por defecto Q4/Q8/Q4, 13,4 GiB con Q8 completo y 19,4 GiB con BF16 completo (medidos en RTX 5090).
+- GPU recomendadas: RTX 5090 para las cifras publicadas. Por consumo de VRAM, la configuración por defecto podría caber en GPUs consumer con 12-16 GiB (RTX 4080, RTX 4070 Ti Super, RTX 3090), aunque no se han publicado mediciones en esas tarjetas. Las configuraciones Q8 y BF16 requieren GPUs de gama alta o profesionales (RTX 4090, A100, H100).
+- Cabe en GPU consumer: sí, al menos la mezcla por defecto en tarjetas con 10-12 GiB o más; las variantes Q8 y BF16 requieren más VRAM.
+- Opciones de despliegue: audio.cpp (CLI `audiocpp_cli` con backend CUDA) y su integración como librería C++. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: RTF de 0,738 (1,35x tiempo real) con la mezcla por defecto, 0,832 (1,20x) con Q8 y 1,389 (0,72x) con BF16. Las generaciones largas, como canciones de cinco minutos, están optimizadas para comprobaciones de finalización y calidad, no para throughput en tiempo real. El uso de memoria sigue siendo un objetivo activo de optimización.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos suficientes en la informacion proporcionada para establecer una comparativa rigurosa con modelos similares como MusicGen de Meta o Stable Audio de Stability AI. Los parametros, el rendimiento y la licencia de MiniMax Music 3 difieren de estos modelos, pero sin datos de benchmarks no es posible realizar una comparacion objetiva.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables de generación musical en la información proporcionada. Como referencia interna, el propio repositorio menciona un paquete Q8 GGUF alternativo (`joemattie/MiniMax-Music3-GGUF`), que comparte modelo base y licencia pero del que no se detallan métricas comparativas.
+
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax-Music3-GGUF (audio-cpp) | 25.167.881 | no disponible | RTF 0,738 (Q4/Q8/Q4, RTX 5090) | minimax-music3-community-license | Hugging Face, audio.cpp |
+| MiniMax-Music3-GGUF (joemattie) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Otras alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El paquete se encuentra en fase de vista previa (`preview/minimax-music-3`), con la superficie de ejecucion en iteracion activa, por lo que puede haber cambios incompatibles entre versiones.
-- La generacion de piezas largas esta optimizada para completar la generacion y verificar calidad, no para rendimiento en tiempo real, lo que limita su uso en aplicaciones interactivas.
-- El uso de memoria sigue siendo un objetivo de optimizacion activo; las generaciones mas largas o las mezclas de componentes alternativas pueden requerir mas VRAM de la esperada.
-- La licencia MiniMax Music 3 Community License debe revisarse antes de cualquier despliegue comercial, ya que puede imponer restricciones especificas.
-- No se dispone de informacion sobre los idiomas soportados para las instrucciones textuales o las letras, lo que puede limitar su uso en aplicaciones multilingues.
-- No se han publicado datos sobre sesgos, alucinaciones o limitaciones de contexto en la informacion disponible.
-- El paquete GGUF es una conversion de la comunidad (audio-cpp), no una publicacion oficial de MiniMaxAI, por lo que el soporte y el mantenimiento dependen de la comunidad.
+- Licencia comunitaria: el uso comercial está sujeto a la MiniMax-Music3 Community License; es imprescindible revisar el texto de `LICENSE` antes de cualquier despliegue comercial, ya que puede contener restricciones específicas.
+- Riesgo de alucinación y artefactos: al ser un modelo generativo de audio, puede producir letras mal pronunciadas, desajustes entre letra y melodía o artefactos acústicos, especialmente con cuantizaciones agresivas como Q4_0.
+- Idiomas: no se especifica qué idiomas soporta la síntesis vocal; el ejemplo de la model card usa letras en inglés, por lo que el rendimiento en castellano no está verificado.
+- Longitud de contexto: no disponible; el comportamiento con letras muy largas o descripciones complejas no está documentado.
+- Rendimiento en tiempo real limitado: incluso la configuración más rápida mide 1,35x tiempo real en una RTX 5090, de modo que generar una canción de cinco minutos puede tardar varios minutos. En GPUs inferiores el RTF será peor.
+- Memoria: el uso de VRAM es un objetivo de optimización activo según el autor; las generaciones largas y las mezclas BF16 pueden exceder la memoria de GPUs consumer.
+- Madurez del runtime: el autor indica que la implementación usa carga de recursos local al modelo mientras se estabilizan el diseño del paquete y las opciones, lo que implica posible volatilidad en la interfaz entre versiones.
+- Dependencia del ecosistema audio.cpp: no hay soporte documentado para otros runtimes de inferencia, lo que limita la portabilidad.
+- Sesgos: no se dispone de información sobre sesgos de estilo musical, voz o representación en los datos de entrenamiento.
 
 ## Enlaces
 
-- Repositorio Hugging Face del paquete GGUF: https://huggingface.co/audio-cpp/MiniMax-Music3-GGUF
-- Modelo original MiniMax Music 3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
-- Licencia del modelo original: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
+- Repositorio Hugging Face: https://huggingface.co/audio-cpp/MiniMax-Music3-GGUF
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Licencia upstream: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
+- Repositorio audio.cpp: https://github.com/0xShug0/audio.cpp
+- Paquete Q8 GGUF alternativo: https://huggingface.co/joemattie/MiniMax-Music3-GGUF

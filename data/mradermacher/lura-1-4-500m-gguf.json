@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Lura-1.4-500M-GGUF",
+  "slug": "mradermacher-lura-1-4-500m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lura-1.4-500M-GGUF",
+  "created_at": "2026-11-18T05:41:28.000Z",
+  "updated_at": "2026-11-18T06:00:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "post-trained",
+    "bf16",
+    "500m",
+    "en",
+    "base_model:noeme/Lura-1.4-500M",
+    "base_model:quantized:noeme/Lura-1.4-500M",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400181504,
+  "storage_human": "5.4 GB",
+  "context_length": 32768,
+  "base_model": "noeme/Lura-1.4-500M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -28,7 +28,7 @@
     "imatrix"
   ],
   "likes": 15,
-  "downloads_30d": 71177,
+  "downloads_30d": 67743,
   "trending_score": 0,
   "parameters": 754638867584,
   "parameters_human": "754.64B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Aktuelle Nachrichten | BILD.de",
-      "url": "https://www.bild.de/",
-      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
-    },
-    {
-      "title": "Sport: Aktuelle Ergebnisse, News und Videos - BILD.de",
-      "url": "https://www.bild.de/sport/startseite/sport/sport-home-15479124.bild.html",
-      "snippet": "Aktuelle Nachrichten aus dem Sport: Bundesliga, Formel 1, Boxen, Tennis und Olympia. Alle Meldungen, Berichte, Ergebnisse und …"
-    },
-    {
-      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
-      "url": "https://sportbild.bild.de/",
-      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
-    },
-    {
-      "title": "Kreuzworträtsel: Jetzt kostenlos online spielen | BILD.de",
-      "url": "https://spiele.bild.de/kreuzwortraetsel/",
-      "snippet": "Kreuzworträtsel online kostenlos spielen Mit Wissen jetzt gewinnen auf BILD.de Spiele gratis Kreuzworträtsel und glänze mit deinem …"
-    },
-    {
-      "title": "BILD ePaper",
-      "url": "https://epaper.bild.de/?wtmc=nav.epaper",
-      "snippet": "BILD ePaper Diese Website nutzt Cookies, um bestmögliche Funktionalität bieten zu können."
-    }
-  ]
+  "sources": []
 }

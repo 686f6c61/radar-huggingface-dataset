@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 67,
-  "downloads_30d": 28115,
+  "downloads_30d": 28746,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ifmylove2011/girlslike-zimage at main - Hugging Face",
-      "url": "https://huggingface.co/ifmylove2011/girlslike-zimage/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ifmylove2011/girlslike-zimage · Hugging Face",
-      "url": "https://huggingface.co/ifmylove2011/girlslike-zimage",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Ifmylove2011 - Find Top AI Models on Hugging Face",
-      "url": "https://www.aimodels.fyi/creators/huggingface/ifmylove2011",
-      "snippet": "Looking for Ifmylove2011&#x27;s top AI models? Browse their full Hugging Face collection of 2 models. Explore AI models and contributions by Ifmylove2011 on Huggingface."
-    },
-    {
-      "title": "girlslike-zimage: Model Details, Context & Pricing | Essa Mamdani",
-      "url": "https://essamamdani.com/ai-models/hf-ifmylove2011-girlslike-zimage",
-      "snippet": "Model card indexed from Hugging Face. Context window Not listed Last source check 8/1/2026, 5:17:09 PM Input / million tokens Not listed Output / million tokens Not listed ifmylove2011 Source record ↗ Official link ↗"
-    },
-    {
-      "title": "ifmylove2011 (XTER) · GitHub",
-      "url": "https://github.com/ifmylove2011/",
-      "snippet": "A reader,a developer. ifmylove2011 has 38 repositories available. Follow their code on GitHub."
-    }
-  ]
+  "sources": []
 }

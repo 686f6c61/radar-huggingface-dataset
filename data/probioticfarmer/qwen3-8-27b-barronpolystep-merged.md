@@ -2,99 +2,103 @@
 
 ## Resumen
 
-Qwen3.8-27B-BarronPolyStep-Merged es un checkpoint fusionado (merge) publicado por el usuario ProbioticFarmer sobre el modelo base Qwen/Qwen3.8-27B. Se trata de un modelo multimodal de tipo image-text-to-text orientado a generacion de texto, codigo y matematicas, con 27.781.427.952 parametros totales (aproximadamente 27,8 mil millones) almacenados en bfloat16. El autor ha integrado un adaptador LoRA previamente publicado (Qwen3.8-27B-BarronPolyStep-RealCoder-v3) directamente en los pesos del modelo base, generando un checkpoint autonomo que no requiere cargar el adaptador por separado.
+ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-Merged es un checkpoint fusionado (merged) de 27.781 millones de parámetros construido a partir de Qwen/Qwen3.8-27B. El autor, ProbioticFarmer, ha integrado un adaptador LoRA entrenado con su método propietario Barron-PolyStep (240 iteraciones limpias, 20.400 pasos y 3.302.400 evaluaciones de vértice, sin fuga de datos de test) directamente en los pesos base en bfloat16, generando un modelo autónomo que no requiere cargar el adaptador PEFT por separado.
 
-La relevancia de esta publicacion es fundamentalmente practica: simplifica el despliegue al eliminar la necesidad de gestionar un adaptador PEFT adicional junto al modelo base. El autor documenta una verificacion cuantitativa del merge, incluyendo la similitud coseno entre los logits del modelo fusionado y los del adaptador original (0,999975, con coincidencia top-1 en 5 de 5 casos) y una comprobacion de ejecucion de codigo con 5 de 5 aciertos. El tensor fusionado es `model.language_model.layers.63.mlp.down_proj.weight`, de forma [5120, 17408], con un `lora_scale` de 2.0 y un delta de Frobenius de 3,3060.
+El modelo se orienta a generación de código y matemáticas, con pipeline declarado de text-generation y soporte declarado en los tags para image-text-to-text. La arquitectura subyacente corresponde a la familia Qwen3.5 (tag `qwen3_5`), con capas de atención lineal (`linear_attn`) y atención estándar combinadas, según se deduce de los tensores fusionados en las capas 62 y 63 del modelo.
 
-El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado con `endpoints_compatible`, lo que indica compatibilidad con los endpoints de inferencia de Hugging Face. No obstante, la informacion publicada es muy limitada: no hay datos sobre composicion del dataset de entrenamiento, benchmarks, idiomas soportados ni detalles sobre el proceso de RLHF o alineacion. La model card se limita a documentar el proceso de merge.
+Su relevancia actual radica en que el autor publica resultados en leaderboards públicos de código (BigCodeBench-Hard, EvalPlus HumanEval/HumanEval+ y MBPP/MBPP+) situándose, según sus propias cifras, como el mejor modelo base preentrenado moderno de hasta 70B en esas pruebas. La licencia es Apache 2.0 y el repo ocupa 64 GB en formato safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), familia Qwen3.5 segun tag `qwen3_5`; detalles internos no disponibles |
-| Parametros totales | 27.781.427.952 (aprox. 27,8 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer de la familia Qwen3.5 (tag `qwen3_5`), con capas de atención lineal (`linear_attn`) y atención estándar (`self_attn`) |
+| Parametros totales | 27.781.427.952 (27,78B) |
+| Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos publicados en bfloat16) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (18 shards, repo de 64 GB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que el modelo deriva de Qwen/Qwen3.8-27B, un transformer multimodal de la familia Qwen3.5 con capacidad image-text-to-text. El checkpoint publicado no es un entrenamiento desde cero, sino un merge de un adaptador LoRA (Qwen3.8-27B-BarronPolyStep-RealCoder-v3) sobre el modelo base en bfloat16. El autor documenta que el tensor afectado es la proyeccion descendente del MLP de la capa 63 del modelo de lenguaje (`model.language_model.layers.63.mlp.down_proj.weight`), con forma [5120, 17408] y un factor de escala LoRA de 2.0. El delta de Frobenius entre los pesos fusionados y los originales es de 3,3060, lo que cuantifica la magnitud del cambio introducido.
+El modelo es un transformer de la familia Qwen3.5 con 27,78B parámetros. La inspección de los tensores fusionados revela una arquitectura híbrida: la capa 62 contiene un módulo `linear_attn.out_proj` y la capa 63 contiene `self_attn.o_proj` y `mlp.down_proj`, lo que indica la coexistencia de capas de atención lineal y de atención estándar en las últimas capas del modelo. Los pesos se distribuyen en 18 shards safetensors, con el shard `model-00017-of-00018.safetensors` conteniendo los tensores modificados por la fusión.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado en el adaptador original. El nombre "BarronPolyStep" y la etiqueta "RealCoder-v3" sugieren un enfasis en codigo y matematicas, pero no hay documentacion tecnica que lo respalde mas alla de las etiquetas. Tampoco se detallan innovaciones arquitectonicas especificas (atencion lineal, decodificacion especulativa, etc.) mas alla de lo que herede del modelo base Qwen3.8-27B.
+El entrenamiento consiste en un adaptador LoRA entrenado con el método Barron-PolyStep del autor: 240 iteraciones limpias, 20.400 pasos y 3.302.400 evaluaciones de vértice, sin fuga de datos de test. Ese adaptador se ha fusionado en los pesos base en bfloat16 con `lora_scale=2.0`. Solo tres tensores presentan diferencias medibles respecto al base: `layers.63.mlp.down_proj` (norma de Frobenius de la diferencia 3,8712 frente a norma del base 109,8192), `layers.63.self_attn.o_proj` (diferencia 0,0001) y `layers.62.linear_attn.out_proj` (diferencia 0,0001). La verificación se realizó en una GPU Metal Apple M4 Max de 40 núcleos: la similitud coseno de logits entre el modelo autónomo y el adaptador PEFT es de 0,999987 (mínimo 0,999973), con coincidencia top-1 greedy en 5 de 5 casos, y la generación de código con ejecución de tests unitarios dio 5 de 5 (100%) con `lora=None`.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de proposito general, heredada del modelo base Qwen3.8-27B.
-- Generacion de codigo, segun las etiquetas `code` y el nombre del adaptador original (RealCoder-v3); el autor verifica ejecucion de codigo con 5 de 5 aciertos en su comprobacion.
-- Razonamiento matematico, segun la etiqueta `math`.
-- Procesamiento multimodal image-text-to-text, segun el tag de pipeline del repositorio.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se declaran idiomas.
-- Modo thinking, vision o audio: solo se confirma la componente image-text-to-text; no hay detalle sobre modos de razonamiento extendido.
+- Generación de texto conversacional y de código en múltiples lenguajes, con pipeline declarado `text-generation`.
+- Razonamiento matemático y resolución de problemas, según los tags `math` y `code`.
+- Generación de código verificable: el autor reporta ejecución de tests unitarios sobre el código generado (5/5 en la verificación de la fusión).
+- Capacidad multimodal declarada en los tags (`image-text-to-text`), aunque la model card no detalla el soporte de visión.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue simplificado de un modelo ajustado para codigo: al ser un checkpoint autonomo, permite cargar directamente el modelo fusionado con `transformers` sin gestionar un adaptador PEFT aparte, lo que reduce la complejidad operativa en pipelines de inferencia.
-- Asistencia a la programacion en entornos de desarrollo: el ajuste orientado a codigo (RealCoder-v3) y la verificacion de ejecucion reportada por el autor lo hacen adecuado para autocompletado, generacion de funciones y explicacion de fragmentos de codigo.
-- Tareas de razonamiento matematico: la etiqueta `math` sugiere uso en resolucion de problemas, generacion de demostraciones y asistencia en calculo simbolico o numerico.
-- Prototipado de aplicaciones multimodales: la capacidad image-text-to-text permite construir demos que combinen imagen y texto, como descripcion de capturas o extraccion de informacion de diagramas.
-- Experimentacion e investigacion sobre merges de LoRA: el checkpoint incluye metricas de verificacion (similitud coseno de logits, delta de Frobenius) que lo convierten en un caso de estudio util para investigar tecnicas de fusion de adaptadores.
-- Fine-tuning posterior sobre dominio especifico: al estar en bfloat16 y con licencia Apache 2.0, sirve como punto de partida para ajustes adicionales en tareas verticales sin restricciones de licencia comercial.
-- Evaluacion comparativa de checkpoints fusionados frente a adaptadores: permite medir si el merge introduce degradacion respecto al modelo con adaptador, usando la similitud de logits documentada como referencia.
+- Generación de código en producción: el modelo obtiene 74,39% en HumanEval+ y 88,36% en MBPP según el autor, lo que lo hace adecuado para autocompletado y síntesis de funciones en pipelines de CI/CD con validación por tests.
+- Resolución de tareas de código de dificultad alta: con 29,05% en BigCodeBench-Hard (148 tareas), puede emplearse en asistentes que resuelven problemas que requieren composición de varias APIs y librerías.
+- Asistencia matemática y razonamiento simbólico: el tag `math` y el entrenamiento orientado a código sugieren uso en tutores o generadores de soluciones paso a paso, siempre con verificación posterior.
+- Evaluación comparativa de modelos base: al ser un checkpoint autónomo sin adaptador, sirve como referencia reproducible en benchmarks de código (EvalPlus, BigCodeBench) sin la sobrecarga de cargar PEFT.
+- Fine-tuning posterior sobre dominio específico: al estar en safetensors y bfloat16 con licencia Apache 2.0, se puede reentrenar o aplicar nuevos LoRA sobre él para dominios verticales (por ejemplo, código financiero o científico).
+- Despliegue en infraestructura propia con endpoints compatibles: el tag `endpoints_compatible` permite servirlo detrás de APIs compatibles con el ecosistema transformers sin adaptadores adicionales.
+- Generación de tests unitarios: dado que el autor verifica la fusión ejecutando tests generados, el modelo puede emplearse para producir suites de pruebas a partir de código existente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de rendimiento reportada por el autor es la verificacion del merge:
+Resultados publicados por el autor en la model card (split "complete" / Pretrained Base):
 
-| Metrica | Valor |
-|---|---|
-| Similitud coseno de logits (standalone vs. adaptador) | 0,999975 |
-| Coincidencia top-1 de token | 5/5 |
-| Verificacion de ejecucion de codigo | 5/5 (100%) |
-| Delta de Frobenius del tensor fusionado | 3,3060 |
+| Benchmark | Este modelo | Base Qwen3.8-27B | Diferencia |
+|---|---|---|---|
+| BigCodeBench-Hard (148 tareas) | 29,05% (43/148) | 27,70% (41/148) | +1,35% |
+| EvalPlus HumanEval (164 tareas, 80x) | 74,39% (122/164) | 71,34% (117/164) | +3,05% |
+| EvalPlus HumanEval+ (164 tareas, 80x) | 74,39% (122/164) | 71,34% (117/164) | +3,05% |
+| EvalPlus MBPP (378 tareas, 35x) | 88,36% (334/378) | 86,51% | +1,85% |
+| EvalPlus MBPP+ (378 tareas, 35x) | 75,66% (286/378) | 74,34% | +1,32% |
+| Suite externa de 40 funciones (HumanEval + MBPP + DS-1000 + AlgoGen) | 97,50% Pass@1 (39/40); 98,75% aserciones (158/160) | no disponible | no disponible |
 
-No hay datos de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
+El autor afirma que estos resultados sitúan al modelo como el mejor modelo base preentrenado moderno de hasta 70B en las pruebas citadas. No se han publicado resultados de MMLU, GSM8K ni otros benchmarks generales en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 55,6 GB solo para pesos (27,78 B parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica se requiere un entorno con 64 GB o mas de memoria de GPU.
-- Cuantizacion a 8 bits: en torno a 28 GB de pesos, viable en una A100 40 GB o H100 80 GB.
-- Cuantizacion a 4 bits: en torno a 14 GB de pesos, potencialmente viable en una RTX 4090 (24 GB) o RTX 3090, aunque con margen ajustado para contexto largo.
-- GPU recomendadas: A100 80 GB, H100 80 GB o multi-GPU para bfloat16 sin cuantizar; A100 40 GB o H100 para 8 bits; RTX 4090/3090 para 4 bits.
-- Cabe en GPU de consumo: si, con cuantizacion agresiva (4 bits) en GPUs de 24 GB; no en bfloat16.
-- Opciones de despliegue: transformers (libreria declarada), y por compatibilidad de formato safetensors, potencialmente vLLM, TGI o llama.cpp tras conversion a GGUF; no se confirma soporte explicito en la informacion disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 55,6 GB solo para pesos (27,78B × 2 bytes), más overhead de activaciones y KV cache; se recomienda un mínimo de 64 GB de VRAM para contexto moderado.
+- VRAM estimada en cuantización de 8 bits: alrededor de 28 GB de pesos, más overhead; cabe en GPUs de 40-48 GB.
+- VRAM estimada en cuantización de 4 bits: alrededor de 14 GB de pesos, más overhead; podría caber en GPUs consumer de 24 GB con contexto limitado.
+- GPU recomendadas: A100 80GB, H100 80GB, H200, o multi-GPU con RTX 4090 (24 GB) mediante tensor parallelism o cuantización agresiva.
+- Cabe en GPU consumer: solo con cuantización de 4 bits en GPUs de 24 GB (RTX 3090, RTX 4090) y con contexto reducido; en bfloat16 no cabe en ninguna GPU consumer actual.
+- Opciones de despliegue: transformers (librería declarada), servidores compatibles con endpoints (`endpoints_compatible`); vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Qwen3.8-27B-BarronPolyStep-Merged | 27,8 B | no disponible | Apache 2.0 | Checkpoint fusionado con adaptador de codigo/mates; multimodal |
-| Qwen/Qwen3.8-27B (base) | 27,8 B | no disponible | no disponible en la informacion | Modelo base sin el ajuste LoRA; referencia directa |
-| Qwen3.8-27B-BarronPolyStep-RealCoder-v3 (adaptador) | Adaptador LoRA sobre 27,8 B | no disponible | no disponible en la informacion | Version con adaptador separado; requiere PEFT |
+| ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-Merged | 27,78B | no disponible | Apache 2.0 | Checkpoint fusionado orientado a código y matemáticas |
+| Qwen/Qwen3.8-27B (base) | 27B (aprox.) | no disponible | Apache 2.0 (presumible, no confirmado) | Modelo base sin el LoRA Barron-PolyStep; referencia directa en los benchmarks del autor |
+| Alternativas de ~30B de la familia Qwen3.5 | no disponible | no disponible | no disponible | No se dispone de datos de otros modelos comparables en la información proporcionada |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos ni con alternativas de otros desarrolladores, por lo que la comparativa se limita a parametros, licencia y formato de distribucion.
+No se dispone de información suficiente para comparar con modelos de otros desarrolladores (Llama, Mistral, DeepSeek) de tamaño similar; se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos, datos de entrenamiento ni proceso de alineacion; el riesgo de sesgo y de alucinacion es desconocido y debe evaluarse empiricamente antes de un uso en produccion.
-- No se declaran idiomas soportados; el rendimiento multilingue es incierto y no verificable con la informacion publicada.
-- La longitud de contexto no esta documentada, lo que impide planificar cargas con ventanas largas sin medirla previamente.
-- El proceso de merge se verifico con una unica semilla de comprobacion (5/5 coincidencias top-1); no hay evaluacion exhaustiva de si el merge degrada capacidades distintas de la generacion de codigo.
-- El repositorio tiene 373 descargas y 0 likes, y fue creado y actualizado en el mismo minuto (31 de octubre de 2026), lo que sugiere una publicacion sin validacion comunitaria.
-- Aunque la licencia es Apache 2.0, el modelo base Qwen3.8-27B podria tener terminos adicionales; conviene verificar la licencia del modelo base antes de un uso comercial.
-- El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face, pero no se detalla el soporte en otros motores de inferencia.
-- El tamano del repositorio (55,6 GB) implica requisitos de almacenamiento y transferencia considerables.
+- Sesgos conocidos: no disponible en la información proporcionada; al derivar de Qwen3.8-27B hereda los sesgos del modelo base, no documentados aquí.
+- Riesgo de alucinación: no cuantificado; los benchmarks de código no miden alucinación en lenguaje natural.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no se declaran en la model card, lo que impide garantizar comportamiento multilingüe o ventanas largas.
+- La fusión solo modifica tres tensores (capas 62 y 63); las mejoras reportadas son incrementos moderados (+1,35% a +3,05%) sobre el base, no un salto cualitativo.
+- Los benchmarks son autodeclarados por el autor, sin verificación independiente en la información disponible; la afirmación de "#1 Modern Pretrained Base Model (<= 70B)" debe tratarse con cautela.
+- El método Barron-PolyStep y sus hiperparámetros (240 iteraciones, `lora_scale=2.0`) no están descritos en detalle en la model card, lo que dificulta la reproducibilidad.
+- La verificación de la fusión se realizó en una GPU Metal Apple M4 Max, no en GPUs NVIDIA; el rendimiento en CUDA no está documentado.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.8-27B por si imponen restricciones adicionales.
+- El soporte multimodal (`image-text-to-text`) aparece en los tags pero no se documenta en la model card; no debe asumirse su funcionamiento en producción.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-Merged
+- Hugging Face: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-Merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Adaptador original: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-RealCoder-v3
-- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.
+- Checkpoint fuente del adaptador: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-RealCoder-v3
+- Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

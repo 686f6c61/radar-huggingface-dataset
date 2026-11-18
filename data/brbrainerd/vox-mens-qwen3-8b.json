@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3032,
+  "downloads_30d": 3054,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -46,6 +46,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Vox code generation",
+      "dataset": "Vox held-out bench (52 items)",
+      "metric": "pass@1 (qwen3_non_thinking_codegen_v1)",
+      "value": 0.25
+    },
+    {
+      "task": "Reasoning regression check (thinking mode)",
+      "dataset": "gsm8k_think (128-item slice)",
+      "metric": "gsm8k_think accuracy",
+      "value": 0.8906
+    },
+    {
+      "task": "Reasoning regression check (thinking mode)",
+      "dataset": "math500_think (128-item slice)",
+      "metric": "math500_think accuracy",
+      "value": 0.4766
+    },
+    {
+      "task": "Reasoning regression check (thinking mode)",
+      "dataset": "vox_think (128-item slice)",
+      "metric": "vox_think accuracy",
+      "value": 0.9375
+    }
+  ],
   "sources": []
 }

@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "HosseinSch/distilhubert-finetuned-gtzan",
+  "slug": "hosseinsch-distilhubert-finetuned-gtzan",
+  "author": "HosseinSch",
+  "url": "https://huggingface.co/HosseinSch/distilhubert-finetuned-gtzan",
+  "created_at": "2026-11-18T08:50:04.000Z",
+  "updated_at": "2026-11-18T10:23:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hubert",
+    "audio-classification",
+    "generated_from_trainer",
+    "dataset:sanchit-gandhi/gtzan",
+    "base_model:ntu-spml/distilhubert",
+    "base_model:finetune:ntu-spml/distilhubert",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23691402,
+  "parameters_human": "23.7M",
+  "storage_bytes": 947722001,
+  "storage_human": "948 MB",
+  "context_length": null,
+  "base_model": "ntu-spml/distilhubert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "GTZAN",
+      "metric": "Accuracy",
+      "value": 0.85
+    }
+  ],
+  "sources": []
+}

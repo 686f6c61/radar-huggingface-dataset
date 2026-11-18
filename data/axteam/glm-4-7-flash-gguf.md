@@ -2,92 +2,82 @@
 
 ## Resumen
 
-GLM-4.7-Flash-GGUF es una colección de cuantizaciones en formato GGUF del modelo GLM-4.7-Flash de Z.ai (zai-org), producidas por el usuario axteam y pensadas para su ejecución local con llama.cpp, Ollama y LM Studio. El modelo base es un LLM conversacional de generación de texto con 31.221.488.576 parámetros (según los pesos en safetensors del repositorio original), y estas conversiones permiten ejecutarlo en hardware de consumo sin depender de GPUs de gama datacenter.
+GLM-4.7-Flash-GGUF es la distribucion cuantizada en formato GGUF del modelo zai-org/GLM-4.7-Flash, publicada por el usuario axteam para su uso con llama.cpp, Ollama y LM Studio. El modelo original pertenece a Z.ai (organizacion zai-org) y esta liberado bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales. Esta version GGUF resuelve el problema de ejecutar un modelo de aproximadamente 31.200 millones de parametros en hardware de consumo o en servidores con GPU unica, algo inviable con los pesos en BF16 originales.
 
-La relevancia de esta ficha radica en la disponibilidad: mientras el modelo original se distribuye en BF16 (lo que exige decenas de GB de VRAM), las cuantizaciones k-quant de llama.cpp reducen el footprint desde 11,5 GB (Q2_K) hasta 33,2 GB (Q8_0), con un punto dulce recomendado en Q4_K_M (18,9 GB). La conversión se ha realizado con el script oficial `convert_hf_to_gguf.py` y cada archivo incorpora el `chat_template` original, garantizando compatibilidad con el formato de conversación del modelo.
+La relevancia de esta publicacion radica en que ofrece cuatro niveles de cuantizacion k-quant (Q4_K_M, Q5_K_M, Q6_K y Q8_0) generados mediante cuantizacion post-entrenamiento con las herramientas oficiales de llama.cpp, sin reentrenamiento. El autor ha documentado verificaciones de carga y respuesta en una NVIDIA B200 con la build b12005, y ha retirado las cuantizaciones Q3_K_M y Q2_K tras detectar anomalias en las pruebas de perplexity y de chat. El repositorio ocupa 126,4 GB en total y acumula cerca de 40.000 descargas.
 
-La licencia es MIT, tanto en el derivado cuantizado como en los pesos originales de Z.ai, lo que permite uso comercial sin restricciones adicionales conocidas.
+La arquitectura subyacente es de tipo deepseek2 con una capa MTP (multi-token prediction), segun indica el autor en los requisitos de compilacion de llama.cpp. Esta es una ficha del artefacto cuantizado: los detalles de entrenamiento, dataset y benchmarks del modelo base no estan disponibles en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer para generacion de texto (detalles no disponibles) |
-| Parametros totales | 31.221.488.576 (≈31,2 B) |
+| Arquitectura | deepseek2 con capa MTP (segun requisitos de llama.cpp del autor) |
+| Parametros totales | 31.221.488.576 (dato de safetensors del modelo base) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (los ejemplos de la model card usan 8192 tokens, pero es un valor de ejemplo, no una especificacion del modelo) |
-| Tipos de cuantizacion | Q2_K, Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0 (k-quants de llama.cpp, PTQ sin reentrenamiento) |
-| Idiomas soportados | no disponible (los ejemplos de la model card incluyen coreano, lo que sugiere soporte multilingue) |
+| Longitud de contexto | no disponible (los ejemplos de la model card usan `-c 8192`, pero no se declara el maximo del modelo) |
+| Tipos de cuantizacion | Q4_K_M (18,9 GB), Q5_K_M (22,2 GB), Q6_K (25,7 GB), Q8_0 (33,2 GB); k-quants por bloques y Q8_0 |
+| Idiomas soportados | no disponible (la model card incluye pruebas en ingles, frances y coreano) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (derivado de pesos BF16 en safetensors del modelo base) |
+| Formato de pesos | GGUF (llama.cpp), con `chat_template` embebido |
 
 ## Arquitectura y entrenamiento
 
-El repositorio analizado es un derivado cuantizado, por lo que los detalles de arquitectura y entrenamiento corresponden al modelo base zai-org/GLM-4.7-Flash, cuya model card no esta incluida en la informacion disponible. Lo que si se documenta es el metodo de cuantizacion: se trata de cuantizacion post-entrenamiento (PTQ) realizada con llama.cpp mediante `convert_hf_to_gguf.py` seguido de `llama-quantize`. Los pesos BF16 originales se cuantizan por bloques (k-quants), usando escalas por bloque con asignacion mixta de bits, sin ningun reentrenamiento ni ajuste fino posterior.
+El modelo base emplea una arquitectura denominada deepseek2 en llama.cpp, que incorpora una capa MTP (multi-token prediction). Esta capa MTP es la razon por la que el autor exige una build de llama.cpp igual o superior a b10251 para cargar los ficheros. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original.
 
-Cada archivo GGUF incrusta el `chat_template` original del modelo, de modo que llama.cpp (con la flag `--jinja`), Ollama y LM Studio aplican automaticamente el formato de conversacion correcto. El `generation_config.json` original recomienda una temperatura de muestreo de 1.0. No hay datos publicados sobre numero de tokens de entrenamiento, composicion del dataset ni uso de RLHF/DPO en la informacion proporcionada.
+Esta publicacion concreta no entrena nada: aplica cuantizacion post-entrenamiento (PTQ) sobre los pesos BF16 con `convert_hf_to_gguf.py` y `llama-quantize`, con escalas por bloque y asignacion mixta de bits en las variantes k-quant. El `chat_template` original queda embebido en cada fichero. El autor documento una revision el 2026-11-02 en la que elimino Q3_K_M (perplexity inexplicablemente baja frente a Q8_0 en WikiText-2) y Q2_K (fallo en la prueba de chat en coreano), y declaro que no publica mediciones de perplexity para este modelo por falta de fiabilidad del metodo.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline text-generation, tag conversational).
-- Ejecucion local en CPU, GPU o hibrida: llama.cpp descarga automaticamente a RAM de CPU la parte de capas que no cabe en VRAM (via `-ngl`).
-- Servidor con API compatible con OpenAI en el puerto 8080 mediante `llama-server`, lo que facilita la integracion con clientes existentes.
-- Formato de chat original preservado gracias al `chat_template` incrustado en cada archivo GGUF.
-- Reduccion opcional de memoria de KV-cache en tiempo de ejecucion mediante cuantizacion del cache (`--cache-type-k q8_0 --cache-type-v q8_0 -fa on`).
-- Capacidades de tool calling, agentes, vision, audio o razonamiento: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional multi-turno, con plantilla de chat embebida y compatible con la API de OpenAI a traves de `llama-server`.
+- Respuesta en varios idiomas: la model card verifica respuestas correctas a preguntas en ingles, frances y coreano con todos los ficheros del repositorio.
+- Razonamiento y conocimiento general: el autor confirma respuestas correctas sobre capitales de paises en las pruebas de validacion.
+- Inferencia local con llama.cpp, con soporte de flash attention (`-fa on`) y cache KV cuantizada (`--cache-type-k/v q8_0`).
+- Despliegue como endpoint compatible con OpenAI mediante `llama-server --jinja`.
+- Compatibilidad declarada con Ollama (`ollama run hf.co/axteam/GLM-4.7-Flash-GGUF:Q4_K_M`) y LM Studio, aunque el autor no ha verificado su funcionamiento en esas plataformas.
+- Tool calling, modo thinking, vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Chatbots locales con privacidad total: al ejecutarse con llama.cpp u Ollama en maquina local, ninguna conversacion sale del dispositivo, ideal para datos sensibles (historias clinicas, documentos legales, codigo propietario).
-- Backend de API compatible con OpenAI: `llama-server` expone un endpoint `/v1/chat/completions`, por lo que se puede integrar en aplicaciones ya construidas contra la API de OpenAI cambiando solo la URL base.
-- Prototipado en LM Studio: la busqueda del modelo en el navegador de LM Studio permite probar distintas cuantizaciones (Q4_K_M frente a Q8_0) y comparar calidad frente a consumo de memoria sin escribir codigo.
-- Despliegue en GPUs de consumo de gama alta: la version Q4_K_M (18,9 GB) cabe en una RTX 4090 de 24 GB, dejando margen para el KV-cache y el contexto.
-- Ejecucion hibrida CPU/GPU en portatiles o estaciones sin GPU dedicada suficiente: el offload automatico de capas a RAM permite usar el modelo aunque la VRAM sea insuficiente, a costa de latencia.
-- Servicios con licencia permisiva: al ser MIT, puede integrarse en productos comerciales, SaaS o derivados cerrados sin obligaciones de copyleft ni restricciones de uso.
-- Experimentacion con trade-offs de cuantizacion: la gama completa de Q2_K a Q8_0 sirve como banco de pruebas para medir la degradacion de calidad frente al ahorro de memoria en k-quants.
+- Asistente conversacional autoalojado: con Q4_K_M (18,9 GB) cabe en una GPU de 24 GB o en dos de 16 GB, y sirve una API compatible con OpenAI en local para integrarse en aplicaciones internas sin depender de servicios externos.
+- Prototipado de agentes y chatbots en estaciones de trabajo: la plantilla de chat embebida y el flag `--jinja` de llama.cpp permiten levantar un servidor con formato de mensajes estandar y probar flujos multi-turno rapidamente.
+- Inferencia en servidor con GPU unica de gran capacidad: en una B200, el autor cargo todos los ficheros con todas las capas en GPU, lo que habilita servir Q8_0 (33,2 GB, la variante mas fiel al original) en un solo acelerador.
+- Evaluacion comparativa de cuantizaciones: al ofrecer cuatro niveles desde 4 a 8 bits, permite medir en el propio hardware el equilibrio entre calidad, memoria y velocidad antes de fijar una variante para produccion.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia MIT del modelo base y de la derivada facilita la integracion en productos comerciales sin obligaciones de atribucion mas alla de la propia MIT.
+- Experimentacion academica con modelos de ~31.000 millones de parametros: el formato GGUF y la compatibilidad con llama.cpp permiten reproducir experimentos en laboratorios con hardware modesto usando Q4_K_M o Q5_K_M.
+- Reduccion de memoria en contextos largos: la opcion de cache KV en q8_0 con flash attention reduce a la mitad el consumo de la cache, util para servir contextos de varios miles de tokens en GPUs con VRAM ajustada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor midio perplexity en WikiText-2 pero decidio no publicarla tras detectar resultados anomalos en la cuantizacion Q3_K_M, posteriormente retirada del repositorio.
 
 ## Requisitos de hardware
 
-Los tamanos de archivo son indicativos de la memoria necesaria para los pesos; hay que anadir la memoria del KV-cache (que crece con el contexto) y los buffers de computo.
-
-- VRAM/RAM estimada para los pesos:
-  - Q2_K: 11,5 GB
-  - Q3_K_M: 15,0 GB
-  - Q4_K_M: 18,9 GB (recomendado por el autor)
-  - Q5_K_M: 22,2 GB
-  - Q6_K: 25,7 GB
-  - Q8_0: 33,2 GB
-- GPUs recomendadas: para Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 cubre los pesos con margen para contexto moderado. Para Q6_K/Q8_0, GPUs de 32-48 GB (RTX 5090, A6000, A100) o despliegue hibrido con offload a CPU. No hay medidas oficiales de latencia ni throughput.
-- Consumer GPUs: Q2_K y Q3_K_M pueden funcionar parcial o totalmente en GPUs de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti Super, RTX 4080) con offload parcial a CPU; Q4_K_M cabe completamente en una RTX 4090/3090 de 24 GB.
-- Despliegue soportado (documentado en la model card): llama.cpp (`llama-server` con API OpenAI-compatible y `llama-cli`), Ollama (`ollama run hf.co/axteam/GLM-4.7-Flash-GGUF:Q4_K_M`) y LM Studio. No se mencionan vLLM ni TGI (GGUF no es su formato nativo).
-- Optimizacion de memoria: cuantizar el KV-cache en tiempo de ejecucion con `--cache-type-k q8_0 --cache-type-v q8_0 -fa on` reduce notablemente la memoria dedicada al contexto.
+- VRAM estimada: aproximadamente el tamano del fichero GGUF mas la cache KV del contexto configurado. Q4_K_M ronda los 18,9 GB, Q5_K_M los 22,2 GB, Q6_K los 25,7 GB y Q8_0 los 33,2 GB, sin contar la cache KV.
+- GPU verificada por el autor: NVIDIA B200, con todas las capas en GPU y la build b12005 (commit e0f142d, CUDA).
+- GPU recomendadas para Q4_K_M: tarjetas con 24 GB o mas (RTX 3090, RTX 4090, A10G, L4 con limitaciones) o configuraciones multi-GPU. Q8_0 requiere 40 GB o mas en una sola GPU (A100 80 GB, H100, B200).
+- Cabe en GPU de consumo: Q4_K_M es la unica variante que encaja con holgura en 24 GB; Q5_K_M y Q6_K quedan al limite o fuera en 24 GB si se anade cache KV apreciable.
+- Opciones de despliegue: llama.cpp (build >= b10251, con `-fa on` que requiere >= b6325), llama-server con API compatible con OpenAI, Ollama y LM Studio (estas dos no verificadas por el autor).
+- Reduccion de memoria: `--cache-type-k q8_0 --cache-type-v q8_0 -fa on` reduce aproximadamente a la mitad la cache KV.
+- Latencia y throughput: no disponibles. El autor no publica mediciones de velocidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| axteam/GLM-4.7-Flash-GGUF | 31,2 B (base) | GGUF | Q2_K a Q8_0 | MIT | llama.cpp, Ollama, LM Studio |
-| zai-org/GLM-4.7-Flash (original) | 31,2 B | BF16 (safetensors) | sin cuantizar | MIT | Hugging Face, endpoints serverless |
-| Qwen2.5-32B-Instruct-GGUF (comunidad) | 32,5 B | GGUF | gama completa Q2-Q8 | Qwen (permisiva con condiciones) | llama.cpp, Ollama, LM Studio |
-
-Comparacion orientativa: ocupa la misma franja de tamano que Qwen2.5-32B, con la ventaja de la licencia MIT sin condiciones adicionales. Datos de rendimiento comparativo no disponibles.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni comparaciones con otros modelos de tamano o categoria similares, por lo que no es posible establecer una comparativa rigurosa sin inventar cifras.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles; al ser un derivado cuantizado, hereda los sesgos del modelo base GLM-4.7-Flash de Z.ai, que no estan documentados en la informacion proporcionada.
-- Riesgo de alucinacion: inherente a cualquier LLM; ademas, las cuantizaciones bajas (Q2_K, Q3_K_M) introducen perdida de calidad notable segun el propio autor, por lo que no se recomiendan para tareas exigentes.
-- Longitud de contexto: no especificada en la informacion disponible; los ejemplos usan 8192 tokens, un valor conservador que puede no reflejar el maximo real del modelo base.
-- Idiomas: no documentados; los ejemplos incluyen coreano, pero no hay lista oficial de idiomas soportados ni evaluaciones multilingues.
-- Licencia: MIT, sin restricciones de uso comercial conocidas; los pesos y el tokenizador originales pertenecen a Z.ai / zai-org.
-- Caveats de produccion: la cuantizacion es PTQ sin reentrenamiento, por lo que Q8_0 es la unica version practicamente fiel al original; el KV-cache cuantizado (q8_0) puede degradar ligeramente la calidad en contextos largos; no hay benchmarks publicados que permitan validar el rendimiento antes de desplegar; el repositorio tiene 0 descargas registradas, es decir, sin historial de uso comunitario.
-- Recurso de terceros: es una conversion de un autor independiente (axteam), no oficial de Z.ai; para garantia de conversion conviene contrastar con conversiones oficiales si existen.
+- Las cuantizaciones Q3_K_M y Q2_K fueron retiradas: la primera por una perplexity inexplicablemente baja y la segunda por fallar la prueba de chat en coreano (respondia en ingles hasta el limite de 256 tokens). No deben usarse versiones antiguas de esos ficheros.
+- El autor no publica mediciones de perplexity para este modelo, por lo que no hay una validacion cuantitativa publica de la perdida de calidad por cuantizacion.
+- La verificacion se limita a dos preguntas cortas (capitales de Francia y Corea) con cada fichero; no hay evaluacion extensa de calidad.
+- Ollama y LM Studio no han sido probados por el autor; su funcionamiento es esperado pero no confirmado.
+- La longitud maxima de contexto del modelo no se declara; los ejemplos usan 8192 tokens, y valores superiores requieren verificar soporte y memoria.
+- Los idiomas soportados no estan documentados oficialmente; las pruebas solo cubren ingles, frances y coreano.
+- Riesgo de alucinacion y sesgos: no disponible en la informacion proporcionada; aplican las advertencias habituales de los modelos generativos.
+- Licencia MIT: permite uso comercial y modificacion, pero conviene conservar el aviso de copyright original de Z.ai y de axteam segun los terminos MIT.
+- El rendimiento y la estabilidad dependen de la build de llama.cpp; versiones anteriores a b10251 no cargaran la arquitectura deepseek2 con capa MTP.
 
 ## Enlaces
 
-- Repositorio de la ficha: https://huggingface.co/axteam/GLM-4.7-Flash-GGUF
-- Modelo base original: https://huggingface.co/zai-org/GLM-4.7-Flash
-- Otros enlaces (papers, blogs, demos): no disponibles en la informacion proporcionada.
+- Repositorio GGUF: https://huggingface.co/axteam/GLM-4.7-Flash-GGUF
+- Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash

@@ -2,118 +2,103 @@
 
 ## Resumen
 
-Dongfangshuo-Qwen3.8-27B-NSFW-v4 es un ajuste fino (finetune) del modelo abliterado Huihui-Qwen3.8-27B-abliterated, publicado por el usuario dongfangshuo en Hugging Face. Se trata de un transformer denso de aproximadamente 26.900 millones de parametros (el autor lo describe como 27,8B dense + vision) con codificador visual, orientado a la creacion literaria en chino y a la interpretacion de rol (roleplay y partidas de TRPG) sin censura. El problema que aborda es la rigidez estilistica y el rechazo de contenido del modelo base: segun el autor, el Qwen original "no habla como una persona" y tiende a enumeraciones, mientras que esta version incorpora un corpus literario amplio para mejorar el registro narrativo.
+Dongfangshuo-Qwen3.8-27B-NSFW-v4 es un ajuste fino (finetune) del modelo abliterado Huihui-Qwen3.8-27B-abliterated, desarrollado por el usuario dongfangshuo. Se trata de un modelo denso de 26.896 millones de parametros (27B) con capacidad de vision, especializado en creacion literaria en chino y orientado a contenido para adultos (NSFW) y juegos de rol de mesa (TRPG). El modelo parte de la familia Qwen3.8 e incorpora un encoder visual que permite entrada image-text-to-text.
 
-El modelo se distribuye en tres formatos: safetensors BF16 en 18 shards (53,7 GB), cinco cuantizaciones GGUF (de Q3_K_M a Q8_0) mas un proyector visual BF16 de 931 MB, y un checkpoint LoRA independiente (1,7 GB). La ventana de contexto recomendada por el autor es de 64K tokens con una salida maxima de 4K por turno; el propio autor advierte que superar esos limites provoca fallos, y que la arquitectura de 27B tiene "defectos de base" que se amplifican tras la cuantizacion.
+El modelo resuelve un problema muy concreto: la generacion de narrativa larga en chino con coherencia multi-turno, control de estado (paneles HTML con aritmetica de HP/SAN) y seguimiento de reglas de dados, algo que los modelos base de la misma familia no manejan bien segun el autor. Para ello se ha entrenado con un corpus literario amplio y se ha "purificado" la atencion en 64 capas, ademas de aplicar tecnicas de abliteration heredadas del modelo base para eliminar los rechazos.
 
-Es relevante ahora por dos motivos: primero, porque documenta un caso de uso muy concreto (roleplay de larga duracion con preservacion de estado mediante paneles HTML y tiradas de dados) con parametros de muestreo y guardarrailes de prompt muy detallados; segundo, porque su model card incluye un test ciego comparativo propio frente al modelo base y a una version intermedia sin purificar. No es un modelo de proposito general: el propio autor reconoce una ligera perdida de "inteligencia" y de capacidades de agente respecto al original.
+Es relevante ahora porque demuestra un caso de uso de nicho muy optimizado (roleplay narrativo en chino con vision) sobre una arquitectura densa de 27B que cabe en GPUs de consumo con cuantizacion Q4, y porque el autor documenta de forma inusualmente detallada los limites practicos del modelo (contexto util de 64K, salida de 4K, parametros de muestreo anti-degeneracion). La licencia es qwen-community-1.0, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con codificador visual (Qwen3.8-27B, dense + vision); 64 capas de atencion "purificada" segun el autor |
-| Parametros totales | 26.895.998.464 (~26,9B; el autor indica 27,8B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 64K recomendado por el autor; `num_ctx` configurado a 81.920 como margen de seguridad; contexto nativo del modelo base: no disponible |
-| Tipos de cuantizacion | GGUF: Q3_K_M, Q4_K_M (recomendada), Q5_K_M, Q6_K, Q8_0; BF16 en safetensors; LoRA en el checkpoint-150 |
-| Idiomas soportados | Chino (`zh`) exclusivamente segun metadatos; el autor prohibe explicitamente la mezcla de idiomas en la salida |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | safetensors (18 shards, 53,7 GB), GGUF (5 cuantizaciones), LoRA (1,7 GB); proyector visual `mmproj-model-bf16.gguf` |
+| Arquitectura | Transformer denso con encoder de vision (qwen3_5_text), basado en Qwen3.8-27B |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 81.920 tokens configurados; el autor recomienda no superar 64K en uso real |
+| Tipos de cuantizacion | Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0 (GGUF); BF16 (safetensors); LoRA (checkpoint-150) |
+| Idiomas soportados | chino (zh) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en la model card) |
+| Formato de pesos | safetensors (BF16, 18 shards), GGUF, LoRA, mmproj BF16 para vision |
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer denso de la familia Qwen3.8 en variante 27B, con torre de vision integrada (pipeline `image-text-to-text`). El autor describe el proceso como un finetune sobre la version abliterated de huihui-ai, es decir, sobre un modelo al que ya se le han suprimido los mecanismos de rechazo. Sobre esa base se aplica lo que el autor denomina "purificacion de atencion en 64 capas", junto con una fusion de MLP (los safetensors incluyen "base + fusion MLP") y un entrenamiento con "un corpus literario masivo" orientado a estilo narrativo en chino.
+El modelo es un transformer denso de aproximadamente 27B parametros con un encoder visual multimodal (pipeline image-text-to-text). Deriva de Huihui-Qwen3.8-27B-abliterated, que a su vez es una version abliterada de Qwen3.8-27B: se han eliminado las direcciones de rechazo en el espacio de activaciones para permitir contenido sin filtros. Sobre esa base, el autor ha aplicado un finetune con un corpus literario extenso en chino, orientado a narrativa, roleplay y TRPG, y ha realizado una "purificacion de atencion" en 64 capas para estabilizar el comportamiento en contextos largos.
 
-No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron fases de RLHF o DPO. El autor menciona que la version v3 se descarto por un esquema de entrenamiento "demasiado agresivo" (tres intentos fallidos) y que v4 usa un esquema nuevo, probablemente la ultima iteracion de 27B de esta linea. Se conserva un checkpoint LoRA (`checkpoint-150`) con las capas de atencion ya purificadas, pensado para reentrenamiento o reutilizacion. La innovacion tecnica declarada es, por tanto, estilistica y de alineacion, no arquitectonica.
+No se dispone de datos sobre el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; esa informacion no esta disponible en la model card. El autor menciona que la version v3 se descarto por un esquema de entrenamiento demasiado agresivo y que v4 emplea un enfoque mas conservador, cercano al limite practico del tamano de 27B. Tambien advierte de defectos estructurales del modelo base que se amplifican con la cuantizacion, y que no ha podido corregir por completo. El repositorio incluye un Modelfile de Ollama con los parametros de muestreo recomendados y un adaptador LoRA independiente (checkpoint-150, 1,7 GB).
 
 ## Capacidades
 
-- Generacion de texto narrativo en chino con registro literario: parrafos naturales, frases de 20 a 35 caracteres, evitacion de estructuras tipo lista.
-- Roleplay de larga duracion y partidas de TRPG: mantiene estado de la partida, resuelve tiradas 1d100 con polaridad correcta y emite paneles de estado en HTML con aritmetica de HP/SAN/LUST.
-- Modo de razonamiento breve ("thinking" corto): el autor exige activar `Reasoning effort is set to low` en el system prompt para que el modelo ejecute 200-400 tokens de calculo de estado antes de narrar.
-- Comprension de imagenes: incluye proyector visual BF16 de 931 MB para entrada image-text-to-text.
-- Escritura creativa y continuacion de ficcion con control de contexto largo (hasta 64K con 5 turnos consecutivos estables, segun el autor).
-- Capacidad de agente y tool calling: heredada del modelo base, aunque el autor advierte de un deterioro "leve pero perceptible" tras el finetune literario.
-- Capacidades multilingues: limitadas al chino; el autor pide explicitamente evitar la mezcla con ingles.
-- Contenido para adultos sin censura (abliterated + NSFW), restringido a mayores de edad.
+- Generacion de texto narrativo largo en chino, con enfasis en estilo literario y continuidad multi-turno.
+- Roleplay y juegos de rol de mesa (TRPG): seguimiento de reglas de dados (1d100), paneles de estado HTML con aritmetica de HP/SAN/LUST y control de inventario.
+- Razonamiento breve con cadena de pensamiento corta, activable mediante instruccion en el system prompt ("Reasoning effort is set to low").
+- Capacidad multimodal de entrada: procesa imagenes junto con texto (requiere el archivo mmproj-model-bf16.gguf en despliegues GGUF).
+- Generacion de codigo HTML para paneles de estado embebidos en la narrativa.
+- Soporte de tool calling y function calling: no documentado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: el autor indica que las capacidades de "agent" e "inteligencia" disminuyen ligeramente respecto al modelo base por el entrenamiento literario.
+- Capacidades multilingues: limitadas al chino segun la model card; no se documenta soporte de otros idiomas.
 
 ## Casos de uso
 
-- Roleplay conversacional de larga duracion en clientes tipo SillyTavern u OpenWebUI: el modelo mantiene anclajes de contexto a 64K y evita repetir frases de turnos anteriores con `presence_penalty: 0.25`, lo que permite sesiones de 5 o mas turnos sin deriva narrativa.
-- Partidas de TRPG automatizadas con reglas mecanicas: el modelo ejecuta tiradas 1d100, aplica consecuencias reales en las tiradas fallidas (51-100) y actualiza el panel de estado en HTML con aritmetica verificable, algo que el autor documenta como punto fuerte frente a versiones previas.
-- Escritura de ficcion por capitulos en chino: con 2.800-4.200 caracteres por turno y un estilo de parrafo natural, sirve para generar borradores de novela con continuidad de personajes y escenarios.
-- Generacion de datos sinteticos de dialogo para entrenamiento de modelos de rol: la combinacion de contexto largo, panel de estado estructurado y control de repeticion permite producir conversaciones multi-turno etiquetadas.
-- Base para finetunes posteriores: el repositorio incluye safetensors BF16 completos y un LoRA independiente de 1,7 GB, reutilizables para especializar el modelo en otros generos o idiomas.
-- Descripcion y anotacion de imagenes en chino: el proyector visual permite tareas image-text-to-text, como describir escenas o personajes a partir de imagenes de referencia.
-- Despliegue local privado sin conexion: las cuantizaciones Q3_K_M (13,3 GB) y Q4_K_M (16,5 GB) caben en GPUs de consumo, lo que permite ejecutar el modelo en Ollama o llama.cpp sin enviar datos a terceros.
+- Roleplay narrativo de larga duracion: el modelo mantiene coherencia a lo largo de conversaciones de hasta 64K tokens con 5 rondas consecutivas de TRPG, recordando anclas de contexto y estados previos, gracias a la purificacion de atencion en 64 capas.
+- Creacion literaria en chino: generacion de fragmentos de 2.800 a 4.200 caracteres por turno con estilo consistente, adecuado para escritura asistida de novela por entregas.
+- Simulacion de partidas de rol con reglas: interpreta tiradas de 1d100, aplica consecuencias de exito o fracaso y actualiza paneles HTML con aritmetica autoconsistente, lo que permite usarlo como master automatizado.
+- Frontends conversacionales (SillyTavern, OpenWebUI): el autor proporciona parametros de muestreo especificos (temperature 0.68, min_p 0.06, presence_penalty 0.25) para evitar degeneracion en estos entornos.
+- Despliegue local en GPU de consumo: la cuantizacion Q4_K_M (16,5 GB) permite ejecutarlo en GPUs de 16-24 GB de VRAM mediante Ollama o llama.cpp, util para prototipado sin infraestructura cloud.
+- Analisis de imagenes con contexto narrativo: el encoder visual permite incorporar imagenes de referencia (personajes, escenarios) en la generacion de texto, aunque la model card no detalla la calidad de esta integracion.
+- Fine-tuning posterior: el repositorio incluye pesos BF16 y un checkpoint LoRA, lo que facilita ajustes adicionales para dominios literarios concretos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor incluye un test ciego propio de seis dimensiones sobre 5 turnos consecutivos de TRPG con contexto de 64K, comparando el modelo base (J), una version sin purificar (K) y esta v4. La tabla de la model card esta truncada en la informacion proporcionada; se reproducen unicamente las filas disponibles:
+La model card incluye una tabla de evaluacion subjetiva (ciega, segun el autor) de 5 rondas de TRPG con contexto de 64K, comparando el modelo base, una version no purificada y v4. No son benchmarks estandar (MMLU, HumanEval, GSM8K); son puntuaciones propias del autor sobre dimensiones de la tarea. Se reproducen a continuacion los datos disponibles:
 
 | Dimension (peso) | Base 27B (J) | Sin purificar (K) | v4 (64K+4K) |
 |---|---|---|---|
-| Recuperacion de anclajes a 64K y estabilidad de cierre (20%) | 88,0 | 78,0 | 100,0 |
-| Seguimiento de polaridad en tiradas 1d100 (20%) | 94,0 | 55,0 | 98,0 |
-| Integridad del panel HTML y coherencia aritmetica (15%) | 75,0 | 58,0 | 99,0 |
-| Estilo de parrafo natural (peso no disponible) | no disponible (truncado) | no disponible (truncado) | no disponible (truncado) |
+| Recuperacion de anclas a 64K y cierre estable (20%) | 88,0 | 78,0 | 100,0 |
+| Cumplimiento de polaridad en tiradas 1d100 (20%) | 94,0 | 55,0 | 98,0 |
+| Integridad del panel HTML y aritmetica (15%) | 75,0 | 58,0 | 99,0 |
+| Parrafos naturales (resto de la tabla no disponible en el extracto) | no disponible | no disponible | no disponible |
 
-Se trata de una evaluacion subjetiva del propio autor, sin metodologia publica ni jueces independientes; no es comparable con benchmarks academicos.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las cifras anteriores son evaluaciones subjetivas del autor y deben interpretarse con cautela.
 
 ## Requisitos de hardware
 
-- VRAM estimada por cuantizacion (sin contar la cache KV del contexto configurado):
-  - Q3_K_M: 13,3 GB de pesos, 12-16 GB de VRAM.
-  - Q4_K_M (recomendada): 16,5 GB de pesos, 16-24 GB de VRAM.
-  - Q5_K_M: 19,2 GB, 24 GB de VRAM.
-  - Q6_K: 22,1 GB, 24-32 GB de VRAM.
-  - Q8_0: 28,6 GB, 32 GB o mas.
-  - BF16 safetensors: 53,7 GB, requiere 60 GB o mas (A100 80GB, H100).
-- Proyector visual: anadir 931 MB en BF16 si se usa entrada de imagen.
-- Cache KV: con `num_ctx: 81920` el consumo adicional de memoria no esta cuantificado en la informacion disponible; es el factor que mas puede desbordar una GPU de 24 GB.
-- GPUs de consumo compatibles: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 4080/3090 (16-24 GB) para Q3_K_M y Q4_K_M; configuraciones de 32 GB para Q8_0.
-- GPUs de datacenter: A100 40GB o 80GB y H100 para BF16 y para servir con contexto maximo.
-- Opciones de despliegue: Ollama (el repositorio incluye un `Modelfile` con todos los parametros), llama.cpp, Transformers. Soporte en vLLM o TGI: no confirmado en la informacion disponible.
-- Throughput y latencia: no disponibles. Como referencia cualitativa, el autor reporta que la generacion de 3.000-4.200 caracteres por turno con pensamiento breve es estable, pero no publica tokens por segundo.
+- VRAM estimada para inferencia segun cuantizacion: Q3_K_M 13,3 GB (12-16 GB de VRAM); Q4_K_M 16,5 GB (16-24 GB); Q5_K_M 19,2 GB (24 GB); Q6_K 22,1 GB (24-32 GB); Q8_0 28,6 GB (32 GB o mas); BF16 53,7 GB en 18 shards (multi-GPU o A100/H100).
+- Vision: anadir 931,2 MB para el encoder mmproj-model-bf16.gguf.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) para Q4/Q5; A100 40/80 GB o H100 para BF16; GPUs de 12-16 GB (RTX 4070 Ti, 4080) solo con Q3_K_M.
+- Cabe en GPU de consumo: si, con Q4_K_M en tarjetas de 16-24 GB.
+- Opciones de despliegue: Ollama y llama.cpp (soportados explicitamente, con Modelfile incluido), Transformers para pesos BF16, y vLLM/TGI no documentados en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada. El autor recomienda limitar la salida a 4K tokens por turno para evitar degradacion, lo que condiciona el diseno de pipelines.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dongfangshuo-Qwen3.8-27B-NSFW-v4 | ~26,9B denso + vision | 64K recomendado | Roleplay y ficcion NSFW en chino | qwen-community-1.0 | GGUF, safetensors, LoRA en HF |
-| Huihui-Qwen3.8-27B-abliterated (modelo base) | ~26,9B denso | no disponible | Abliterated sin finetune estilistico | no disponible | HF |
-| Qwen3.8-27B original (upstream) | ~27,8B denso + vision | no disponible | Proposito general, alineado con rechazo | qwen-community-1.0 (presumible) | HF |
-| Version intermedia "sin purificar" (K) | ~26,9B | 64K en el test del autor | Mismo objetivo, peor resultado en el test ciego | no disponible | No distribuida publicamente |
+| Dongfangshuo-Qwen3.8-27B-NSFW-v4 | ~26,9B denso + vision | 64K recomendado (81.920 config.) | Literatura NSFW y TRPG en chino | qwen-community-1.0 | Hugging Face, GGUF, Ollama |
+| Huihui-Qwen3.8-27B-abliterated (base) | ~27B denso | no disponible | Base abliterada sin filtros | no disponible | Hugging Face |
+| Qwen3.8-27B (original) | ~27B denso | no disponible | Modelo generalista multilingue | qwen-community-1.0 | Hugging Face |
 
-El autor situa explicitamente a v4 por delante del base y de la version K en las tres dimensiones publicadas del test ciego, y reconoce que el base mantiene mejor "inteligencia" y capacidad de agente. No hay datos de benchmarks estandar para ninguno de los cuatro, por lo que la comparacion de rendimiento general no esta disponible.
+No se dispone de datos de rendimiento comparativo estandar entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros, contexto, enfoque y licencia.
 
 ## Limitaciones y advertencias
 
-- Contenido para adultos: el modelo esta entrenado para generar material NSFW explicito; la etiqueta `not-for-all-audiences` aplica. Su uso debe restringirse a mayores de edad y cumplir la legislacion aplicable en la jurisdiccion del usuario.
-- Licencia: `qwen-community-1.0` con nombre de licencia "other" en Hugging Face. Conviene revisar el texto completo de la licencia Qwen Community antes de cualquier uso comercial; las condiciones no estan detalladas en la informacion disponible.
-- Modelo abliterated: la supresion de los mecanismos de rechazo implica ausencia de filtros de seguridad. No es adecuado para aplicaciones de cara al publico sin una capa de moderacion externa.
-- Idioma: solo chino. El autor pide evitar explicita y repetidamente la mezcla con ingles, y el modelo no tiene capacidades multilingues declaradas.
-- Contexto y salida: superar los 64K de contexto o los 4K de salida provoca, segun el autor, "fallos extranos" como relleno forzado o repeticion entre turnos. Forzar salidas de 8K degrada la calidad.
-- Defectos de la arquitectura de 27B: el autor afirma que existen fallos de base que no ha podido corregir y que la cuantizacion los amplifica.
-- Sensibilidad a los parametros de muestreo: `repeat_penalty >= 1.10` o `frequency_penalty > 0` "matan el punto chino" y producen parrafos de cientos de caracteres sin puntuacion. La ventana de configuracion valida es estrecha.
-- Degradacion de razonamiento: el autor reconoce una perdida leve de inteligencia y de capacidades de agente respecto al modelo base, atribuible al corpus literario de entrenamiento.
-- Alucinacion: no documentada especificamente, pero es un riesgo inherente a un finetune de roleplay sin evaluacion independiente; no hay datos de benchmarks estandar.
-- Adopcion y validacion comunitaria: 0 descargas y 1 like en el momento de la consulta, creado y actualizado el mismo dia. No existe validacion por terceros.
-- Fecha de publicacion en metadatos (2026-10-21) posterior a la fecha de consulta habitual; conviene verificar la vigencia del repositorio antes de integrarlo.
-- Repositorio de 156,3 GB: la descarga completa de todas las cuantizaciones y safetensors requiere planificacion de almacenamiento.
+- Contenido para adultos: el modelo esta disenado para generar material NSFW y la model card lo marca como "not-for-all-audiences"; no es apto para entornos sin control de edad.
+- Defectos estructurales del modelo base: el autor advierte de fallos de la arquitectura de 27B que se amplifican con la cuantizacion y que no ha podido corregir.
+- Contexto y salida limitados en la practica: no superar 64K de contexto ni 4K de salida por turno; forzar 8K provoca relleno y repeticiones entre turnos.
+- Degeneracion por muestreo: repeat_penalty >= 1,10 o frequency_penalty > 0 rompen la puntuacion (eliminan el punto chino) y generan oraciones largas sin puntuar.
+- Repeticion de frases en conversaciones largas: tras 5 rondas intensas puede reutilizar frases de entorno o acciones previas; se mitiga con presence_penalty 0,25.
+- Reduccion de capacidades generales: el entrenamiento literario degrada ligeramente el razonamiento y las capacidades de agente respecto al modelo base.
+- Idioma: solo documentado en chino; el rendimiento en castellano u otros idiomas no esta verificado.
+- Licencia: qwen-community-1.0 impone condiciones al uso comercial; debe revisarse antes de desplegar en produccion.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; en tareas de TRPG el autor reporta errores de aritmetica en versiones no purificadas, corregidos en v4 pero no garantizados.
+- Sesgos: no documentados en la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4
-- Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
-- Cuantizacion Q3_K_M: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Dongfangshuo-Qwen3.8-27B-NSFW-v4-Q3_K_M.gguf
-- Cuantizacion Q4_K_M (recomendada): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Dongfangshuo-Qwen3.8-27B-NSFW-v4-Q4_K_M.gguf
-- Cuantizacion Q5_K_M: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Dongfangshuo-Qwen3.8-27B-NSFW-v4-Q5_K_M.gguf
-- Cuantizacion Q6_K: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Dongfangshuo-Qwen3.8-27B-NSFW-v4-Q6_K.gguf
-- Cuantizacion Q8_0: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Dongfangshuo-Qwen3.8-27B-NSFW-v4-Q8_0.gguf
-- Proyector visual BF16: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/mmproj-model-bf16.gguf
-- Modelfile para Ollama: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Modelfile
+- Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
+- Pesos GGUF (Q4_K_M recomendado): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Dongfangshuo-Qwen3.8-27B-NSFW-v4-Q4_K_M.gguf
+- Encoder de vision: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/mmproj-model-bf16.gguf
+- Modelfile de Ollama: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/blob/main/Modelfile
 - Checkpoints LoRA: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/tree/main/lora_checkpoints
-- Safetensors BF16 (18 shards): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/tree/main
-- Paper, blog o demo adicionales: no disponibles. La busqueda web realizada no devolvio enlaces tecnicos relevantes para este modelo.
+- Repositorio completo (BF16): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4/tree/main

@@ -2,90 +2,93 @@
 
 ## Resumen
 
-`huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF` es una version sin censura del modelo multimodal `Qwen/Qwen3.8-Flash-Next`, creada por el desarrollador huihui-ai mediante la tecnica de abliteracion. Esta tecnica elimina los mecanismos de rechazo (refusals) del modelo original, de modo que el modelo responde a practicamente cualquier peticion sin aplicar los filtros de seguridad estandar. Los pesos se distribuyen en formato GGUF, preparados para su uso con llama.cpp.
+Huihui-Qwen3.8-Flash-Next-abliterated-GGUF es una versión "abliterated" (sin rechazos) del modelo multimodal Qwen3.8-Flash-Next de Alibaba Qwen, publicada por el colectivo huihui-ai. La abliteración es una técnica de edición de pesos que elimina la dirección de activación asociada a las negativas del modelo, de modo que este deja de rechazar peticiones que el modelo original filtraría. El resultado es un modelo de propósito general sin capa de alineamiento de seguridad, orientado a investigación y entornos controlados.
 
-El modelo base es un transformer multimodal de 176.943.899.520 parametros (aproximadamente 176B), que acepta entradas de imagen y texto. La version abliterated mantiene la misma arquitectura y pesos, pero con los patrones de rechazo suprimidos. Los GGUFs provienen de la conversion realizada por unsloth sobre el modelo original.
+El modelo subyacente es un transformer de tipo Mixture-of-Experts (MoE) con aproximadamente 177.000 millones de parámetros totales, según los pesos en safetensors del repositorio base. La model card declara soporte de entrada imagen-texto (pipeline `image-text-to-text`), lo que lo convierte en un modelo multimodal, y menciona explícitamente razonamiento con "thinking" eficiente en tokens. El repositorio distribuido aquí contiene únicamente cuantizaciones GGUF, con un tamaño total de 1.005,4 GB, lo que refleja la presencia de múltiples variantes de cuantización del modelo completo.
 
-Este modelo esta pensado para usos experimentales y de investigacion, especialmente en el estudio de alineacion, seguridad y comportamientos de modelos de lenguaje. No esta recomendado para despliegues en produccion ni para aplicaciones publicas, dado que la reduccion de filtros puede generar contenido sensible o inapropiado.
+Su relevancia actual radica en dos factores: por un lado, ofrece acceso local a un modelo MoE multimodal de gran tamaño mediante llama.cpp y Strata; por otro, al haber sido despojado de sus mecanismos de rechazo, plantea riesgos claros de contenido sensible y obliga a evaluar con cuidado su uso en producción. La licencia declarada es `qwen-community-1.0`, que impone condiciones específicas para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (imagen-texto) |
-| Parametros totales | 176.943.899.520 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 262144 tokens (segun ejemplo de uso en la model card) |
-| Tipos de cuantizacion | GGUF (incluye UD-Q4_K_XL; otras cuantizaciones no especificadas) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE); detalles de capas y expertos no disponibles |
+| Parametros totales | 176.943.899.520 (~177 B), dato de safetensors del modelo base |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (según el ejemplo de invocación con `-c 262144` en la model card) |
+| Tipos de cuantizacion | GGUF, incluyendo UD-Q4_K_XL (Unsloth Dynamic); otras variantes no detalladas |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 |
-| Formato de pesos | GGUF (safetensors disponibles en el modelo base) |
+| Licencia | qwen-community-1.0 (etiquetada como `license: other`) |
+| Formato de pesos | GGUF (repositorio solo GGUF); el modelo base usa safetensors |
+| Pipeline | image-text-to-text (multimodal) |
+| Modelo base | Qwen/Qwen3.8-Flash-Next |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo original `Qwen/Qwen3.8-Flash-Next`, que es un transformer multimodal con capacidad para procesar imagenes y texto. No se dispone de detalles publicos sobre la composicion exacta del dataset de entrenamiento ni sobre el numero de tokens utilizados durante el pretraining. El modelo base probablemente ha sido entrenado con tecnicas de alineacion como RLHF o DPO, aunque no se especifica en la informacion disponible.
+La arquitectura del modelo base es un transformer con mezcla de expertos (MoE), con unos 177.000 millones de parámetros totales. Los tags del repositorio incluyen `moe`, `qwen3_8`, `reasoning`, `efficient-thinking`, `token-efficient` y `post-training`, lo que sugiere que el modelo ha pasado por una fase de post-entrenamiento orientada a razonamiento con un uso eficiente de tokens de pensamiento. También aparece el tag `gsq` y `rco`, cuyas siglas no se explican en la información disponible.
 
-La innovacion principal de esta version es la aplicacion de abliteracion, una tecnica que identifica y elimina los vectores de direccion responsables de los comportamientos de rechazo. A diferencia de metodos mas sofisticados que usan TransformerLens, esta implementacion es una prueba de concepto que modifica los pesos directamente. El resultado es un modelo que conserva sus capacidades tecnicas pero sin los filtros de seguridad del modelo original.
+El proceso de abliteración se aplica sobre los pesos del modelo base mediante la técnica documentada en el repositorio `remove-refusals-with-transformers`, que identifica y resta la dirección de activación responsable de los rechazos. La model card lo describe como una implementación "cruda, prueba de concepto", sin TransformerLens. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original. Las cuantizaciones GGUF incluidas provienen de Unsloth y de la serie Swift de ukisai, y la model card indica que soportan las versiones recientes de Strata y llama.cpp.
 
 ## Capacidades
 
-- Generacion de texto multimodal: acepta entradas de imagen y texto, por lo que puede describir imagenes, responder preguntas visuales y realizar tareas de vision-lenguaje.
-- Comprension de contexto largo: el modelo admite una ventana de contexto de hasta 262144 tokens, lo que permite procesar documentos extensos o conversaciones de multiples turnos.
-- Generacion de texto sin restricciones de seguridad: al haberse eliminado los mecanismos de rechazo, el modelo responde a peticiones que el modelo base bloquearia.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Modo de pensamiento (thinking mode): no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponibles en la informacion proporcionada.
+- Generación de texto y razonamiento multi-paso, con modo de pensamiento eficiente en tokens según los tags del repositorio.
+- Procesamiento de imágenes junto con texto (pipeline `image-text-to-text`).
+- Generación de código y matemáticas: capacidades heredadas del modelo base Qwen3.8, aunque no se detallan en la model card.
+- Conversación multi-turno con contexto largo de hasta 262.144 tokens.
+- Ejecución local mediante llama.cpp y Strata, con cuantizaciones GGUF de distintos tamaños.
+- Ausencia de rechazos: el modelo no aplica el filtrado de seguridad del original, lo que constituye una "capacidad" en el sentido de que responde a peticiones que el base rechazaría.
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible.
 
 ## Casos de uso
 
-- Investigacion en seguridad de IA: el modelo permite estudiar como se comporta un LLM cuando se eliminan los filtros de seguridad, lo que resulta util para analizar mecanismos de alineacion, jailbreaks y estrategias de defensa.
-- Analisis de sesgos y comportamientos no alineados: al eliminar los refusals, se puede explorar la distribucion de respuestas en temas sensibles y compararla con el modelo base para identificar patrones de sesgo o contenido problematico.
-- Generacion de contenido creativo sin restricciones: para prototipos de escritura creativa que requieran explorar temas tabu o controversiales, el modelo puede generar respuestas sin los bloqueos habituales, aunque siempre bajo supervision manual.
-- Pruebas de multimodalidad con contexto largo: gracias a su ventana de 262144 tokens, se puede probar la comprension de documentos extensos con imagenes, como manuales tecnicos, informes largos o capturas de pantalla de interfaces complejas.
-- Experimentos de decodificacion y cuantizacion: los GGUFs permiten probar el modelo en llama.cpp con diferentes cuantizaciones y configuraciones de hardware, lo que resulta util para evaluar el impacto de la cuantizacion en la calidad de las respuestas.
-- Entornos controlados de investigacion academica: el modelo puede usarse en laboratorios o cursos de seguridad informatica para demostrar los efectos de la abliteracion en modelos de lenguaje, siempre con las advertencias adecuadas sobre su contenido.
+- Investigación sobre alineamiento y seguridad: el modelo sirve para estudiar qué tipos de contenido genera un LLM sin capa de rechazo, comparando sus respuestas con las del Qwen3.8-Flash-Next original en entornos aislados.
+- Evaluación de técnicas de abliteración: permite medir empíricamente el efecto de la edición de pesos sobre la tasa de rechazos, la coherencia y la calidad de las respuestas.
+- Despliegue local de un MoE multimodal de gran tamaño: con las cuantizaciones GGUF y llama.cpp, se puede ejecutar en estaciones de trabajo con suficiente VRAM o RAM, sin depender de APIs externas.
+- Procesamiento de documentos con imágenes: al aceptar entrada imagen-texto, puede usarse para extraer y razonar sobre información de capturas, diagramas o páginas escaneadas en pipelines internos.
+- Generación de código en entornos controlados: para prototipado y pruebas internas donde no se requiere filtrado de seguridad y se dispone de revisión humana.
+- Análisis de conversaciones largas: su ventana de 262.144 tokens permite procesar transcripciones o expedientes extensos en una sola pasada.
+- Pruebas de robustez y red teaming: útil para generar casos adversarios y evaluar los filtros de otros sistemas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no se dispone de datos oficiales. Dado el tamano de 176B parametros, una cuantizacion Q4_K_XL requiere aproximadamente entre 90 y 100 GB de memoria solo para los pesos, por lo que se necesita una configuracion con multiples GPUs de alta gama.
-- GPU recomendadas: para ejecutar la cuantizacion Q4_K_XL se necesitarian al menos 2x A100 80GB o 2x H100 80GB en modo de memoria compartida. No cabe en una GPU de consumo convencional.
-- Alternativas de despliegue: el modelo esta pensado para usarse con llama.cpp, aunque tambien puede cargarse con otros frameworks compatibles con GGUF como Ollama.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: no disponible de forma oficial. Con ~177.000 millones de parámetros totales, una cuantización Q4 ronda los 90-100 GB de pesos, por lo que la inferencia completa requiere múltiples GPU o offloading a RAM del sistema.
+- GPU recomendadas: no especificadas en la model card. Por tamaño, se necesitan configuraciones multi-GPU (por ejemplo, varias A100 80 GB o H100) para mantener el modelo en VRAM; el uso con offloading es viable en equipos con gran cantidad de RAM.
+- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en GPUs consumer de 24-48 GB sin offloading agresivo a RAM, lo que degrada notablemente la velocidad.
+- Opciones de despliegue: llama.cpp (comando documentado con `llama-cli` y `-c 262144`), Strata (con verificación SHA256 de la serie Unsloth), y cualquier runtime compatible con GGUF. vLLM y TGI no están confirmados para estas cuantizaciones.
+- Latencia y throughput: no disponibles. El repositorio ocupa 1.005,4 GB, lo que incluye varias cuantizaciones; conviene descargar solo la variante necesaria.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa detallada con modelos de la misma categoria. El modelo comparable mas directo es el modelo base del que deriva:
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Qwen/Qwen3.8-Flash-Next | 176.943.899.520 | 262144 | qwen-community-1.0 | Hugging Face (safetensors) |
-| Huihui-Qwen3.8-Flash-Next-abliterated-GGUF | 176.943.899.520 | 262144 | qwen-community-1.0 | Hugging Face (GGUF) |
-
-La diferencia principal es la eliminacion de los filtros de seguridad mediante abliteracion. No se dispone de benchmarks que comparen el rendimiento de ambos modelos.
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Notas |
+|---|---|---|---|---|---|
+| Huihui-Qwen3.8-Flash-Next-abliterated-GGUF | ~177 B (MoE) | 262.144 | Sí (imagen-texto) | qwen-community-1.0 | Sin rechazos; solo GGUF |
+| Qwen/Qwen3.8-Flash-Next (base) | ~177 B (MoE) | no disponible | Sí (imagen-texto) | qwen-community-1.0 | Modelo original con alineamiento de seguridad |
+| unsloth/Qwen3.8-Flash-Next-GGUF | ~177 B (MoE) | no disponible | Sí (imagen-texto) | qwen-community-1.0 | Cuantizaciones GGUF del base, con rechazos |
+| ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF | ~177 B (MoE) | no disponible | Sí (imagen-texto) | no disponible | Variante Swift usada como fuente de cuantizaciones |
 
 ## Limitaciones y advertencias
 
-- La reduccion de filtros de seguridad puede generar contenido sensible, controversial o inapropiado. El modelo no es apto para entornos publicos, menores de edad o aplicaciones que requieran alta seguridad.
-- El riesgo de alucinacion no ha sido evaluado: al no disponer de benchmarks ni evaluaciones publicas, no se puede garantizar la fiabilidad de las respuestas.
-- La licencia `qwen-community-1.0` puede imponer restricciones para uso comercial. Es necesario revisar los terminos completos antes de cualquier despliegue.
-- La tecnica de abliteracion empleada es una prueba de concepto "cruda", segun el propio autor, por lo que puede introducir comportamientos impredecibles o degradar la calidad de las respuestas en comparacion con el modelo base.
-- El modelo no ha pasado por un proceso riguroso de optimizacion de seguridad. El autor declina toda responsabilidad por las consecuencias derivadas de su uso.
-- Se recomienda encarecidamente monitorizar las salidas en tiempo real y realizar revisiones manuales cuando sea necesario.
-- No se dispone de informacion sobre los idiomas soportados ni sobre la calidad de las capacidades multilingues.
-- El uso en produccion o en aplicaciones comerciales publicas no esta recomendado.
+- El filtrado de seguridad ha sido reducido de forma significativa; el modelo puede generar contenido sensible, controvertido o inapropiado.
+- No es apto para audiencias públicas, menores ni aplicaciones que requieran alta seguridad.
+- La abliteración es una prueba de concepto "cruda"; puede degradar la coherencia o la calidad en tareas que dependían del alineamiento original.
+- Riesgo elevado de alucinación, no cuantificado en la información disponible.
+- La licencia `qwen-community-1.0` impone condiciones adicionales para uso comercial; debe revisarse el archivo LICENSE antes de cualquier despliegue productivo.
+- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe homogéneo.
+- El tamaño del repositorio (1.005,4 GB) y del modelo (~177 B de parámetros) hacen inviable su uso en hardware de consumo sin offloading.
+- La model card recomienda uso exclusivo en investigación, pruebas o entornos controlados, con monitorización y revisión manual de las salidas.
+- El autor declina toda responsabilidad sobre las consecuencias del uso del modelo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- GGUFs de unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
-- Repositorio de abliteracion: https://github.com/Sumandora/remove-refusals-with-transformers
+- Cuantizaciones Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- Serie Swift de ukisai: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Técnica de abliteración: https://github.com/Sumandora/remove-refusals-with-transformers
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Perfil de huihui-ai en Ollama: https://ollama.com/huihui_ai
-- Perfil de huihui-ai en Hugging Face: https://huggingface.co/huihui-ai
+- Strata: https://github.com/Niko1221/Strata
+- Ko-fi del autor: https://ko-fi.com/huihuiai

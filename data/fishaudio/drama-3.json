@@ -192,8 +192,8 @@
     "region:us"
   ],
   "likes": 1285,
-  "downloads_30d": 43965,
-  "trending_score": 35,
+  "downloads_30d": 42913,
+  "trending_score": 32,
   "parameters": 35899643008,
   "parameters_human": "35.90B",
   "storage_bytes": 81099016510,
@@ -214,29 +214,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Best AI Text To Speech & Free Voice Cloning | Fish Audio",
-      "url": "https://fish.audio/",
-      "snippet": "Fish Audio offers the best free AI voice generator for YouTube creators, providing free generations monthly with natural-sounding …Read more"
-    },
-    {
-      "title": "Meilleur texte en parole par IA et clonage de voix gratuit | Fish Audio",
-      "url": "https://fish.audio/fr/",
-      "snippet": "Fish Audio offre le meilleur générateur de voix IA gratuit avec des générations mensuelles gratuites. Notre synthèse vocale produit …"
-    },
-    {
-      "title": "Kitta Audio - AI Voice Cloning & Text to Speech Online",
+      "title": "AI Text to Speech with Fish Audio & More | Kitta Audio",
       "url": "https://fishaudio.org/en",
-      "snippet": "Powered by Fish Audio S2.1 Pro, Kitta Audio supports text to speech and multilingual voiceover in 83 languages, including English, …"
+      "snippet": "Create expressive speech with Fish Audio and other voice models. Clone voices you have permission to use, compare results, and …"
     },
     {
-      "title": "Fish Audio",
-      "url": "https://speech.fish.audio/",
-      "snippet": "Fish Audio S2 is the latest model developed by Fish Audio. Trained on over 10 million hours of audio across approximately 50 …"
-    },
-    {
-      "title": "Fish Audio - AI Voice Clone & Text to Speech (TTS)",
-      "url": "https://www.fishaudio.cloud/",
-      "snippet": "Fish Audio is the ultimate AI voice cloning and Text-to-Speech app for iOS and Android. Clone any voice with 10 seconds of audio, …"
+      "title": "Fish Audio Voices: Expressive AI Speech & Cloning | Fishaudio",
+      "url": "https://fishaudio.art/",
+      "snippet": "Fish audio voices with real emotion: expressive text to speech, voice cloning in seconds and a library of 2M+ community voices for …"
     }
   ]
 }

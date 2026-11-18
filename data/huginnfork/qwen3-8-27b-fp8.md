@@ -2,60 +2,97 @@
 
 ## Resumen
 
-`huginnfork/Qwen3.8-27B-FP8` es un repositorio reservado en Hugging Face que planea alojar una cuantización FP8 del modelo base `Qwen/Qwen3.8-27B`, aún no publicado. El autor, `huginnfork`, ha creado este espacio para fijar públicamente el nombre y la receta de cuantización prevista antes de que existan los pesos reales. En el momento de redactar esta ficha, el repositorio no contiene ningún peso ni artefacto utilizable: es un marcador de posición.
+Qwen3.8-27B-FP8 es una cuantizacion en FP8 del modelo multimodal denso Qwen/Qwen3.8-27B, publicado por el usuario huginnfork. El modelo base pertenece a la familia Qwen3.5 (arquitectura `qwen3_5`) y combina atencion hibrida (lineal tipo SSM mas atencion completa), una torre de vision y una cabeza de prediccion multi-token (MTP) orientada a decodificacion especulativa. Con 27.781.427.952 parametros totales, se distribuye en formato safetensors y esta pensado para inferencia con transformers.
 
-La intención declarada es aplicar un esquema de cuantización FP8 dinámica (W8A8) sobre el tronco del transformador, manteniendo en bf16 la torre de visión, el bloque SSM `linear_attn`, el bloque `self_attn` completo y la cabeza de predicción multi-token (MTP). La herramienta prevista es `llm-compressor` del proyecto vLLM, con formato `compressed-tensors`. Dado que el modelo base no ha sido lanzado, todas las especificaciones técnicas, capacidades y rendimiento son desconocidos y no se pueden verificar.
+La particularidad de esta build es su esquema de cuantizacion selectiva: FP8_DYNAMIC (W8A8, formato E4M3) aplicado exclusivamente a las proyecciones MLP, manteniendo en bf16 todo el bloque `self_attn`, el bloque `linear_attn` (SSM), la torre visual, `lm_head` y la cabeza MTP. El autor justifica esta decision por la presencia de `attn_output_gate: true` en el modelo base, que fusiona una puerta multiplicativa en `q_proj` y hace desaconsejable cuantizar esa ruta. El resultado son 192 modulos cuantizados frente a los 407 de la release oficial FP8 de Qwen.
+
+El interes practico reside en que reduce el peso de 51,7 GiB en bf16 a 35,8 GiB (8 shards), con una divergencia medida respecto al padre bf16 inferior a la de la version oficial FP8: KLD de 0,0362 frente a 0,0523 en modo weight-only y de 0,0756 frente a 0,1001 tal como se despliega. La licencia Apache 2.0 y su compatibilidad con endpoints lo hacen directamente utilizable en produccion, aunque conviene verificar el soporte real de la arquitectura `qwen3_5` en el stack de inferencia antes de adoptarlo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base no publicado; se espera similar a la familia Qwen3.6-27B) |
-| Parametros totales | no disponible (el nombre sugiere 27B, sin confirmar) |
-| Parametros activos | no disponible (podria ser MoE, sin confirmar) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8_DYNAMIC (W8A8) planificado, atencion en bf16 |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (del repositorio; la licencia del modelo base se aplicara cuando exista) |
-| Formato de pesos | compressed-tensors (planificado); actualmente sin pesos |
+| Arquitectura | Transformer hibrido con atencion lineal (SSM) y atencion completa, torre de vision y cabeza MTP (`qwen3_5`) |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | FP8_DYNAMIC W8A8 (E4M3) en MLPs; bf16 en `self_attn`, `linear_attn`, `model.visual`, `lm_head` y `mtp` |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (8 shards, 35,8 GiB) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura real del modelo base `Qwen/Qwen3.8-27B` porque no ha sido publicado. El autor del repositorio indica que la receta de cuantizacion se ha heredado de builds previos de la familia Qwen3.6-27B, lo que sugiere una arquitectura similar: un transformador con atencion por tramos, posiblemente con un bloque SSM (`linear_attn`) y una cabeza de prediccion multi-token. Sin embargo, esto es especulativo y el propio autor advierte que la receta puede cambiar si el modelo base resulta ser MoE o tiene una disposicion de modulos diferente.
+El modelo base es un transformer denso de 64 capas, de las cuales solo 16 son de atencion completa y el resto emplean `linear_attn`, un bloque recurrente de tipo SSM (Mamba). Incorpora una torre de vision que lo habilita para tareas image-text-to-text y una cabeza de prediccion multi-token (MTP) que permite decodificacion especulativa. El flag `attn_output_gate: true` fusiona una puerta multiplicativa por cabeza en `q_proj`, lo que eleva esa proyeccion a `[12288, 5120]` en lugar de `[6144, 5120]`.
 
-El repositorio no contiene informacion sobre el entrenamiento del modelo base, ni sobre datos de entrenamiento, ni sobre tecnicas de alineacion como RLHF o DPO. La cuantizacion planificada es una operacion puramente post-entrenamiento, sin fine-tuning ni abliteracion.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF/DPO) del modelo base en la informacion proporcionada. Respecto a esta build, el autor documenta el proceso de cuantizacion con `llm-compressor` y `compressed-tensors`, con una receta `fp8_dynamic_attnbf16.yaml` que aplica escalas por canal de salida y redondeo round-to-nearest. Un experimento incluido en el repositorio compara el layout de escalas (per-tensor, per-output-channel y bloque 128x128) y concluye que, al ser FP8 un formato de coma flotante, las diferencias medias entre layouts son inferiores al 0,1 %; el bloque 128x128 solo mejora el error maximo absoluto en peor caso (0,00426 frente a 0,02065). Tambien se verifico que el vendor oficial uso redondeo RTN estandar, con una discrepancia de reconstruccion inferior al 0,3 %.
 
 ## Capacidades
 
-No se puede confirmar ninguna capacidad real del modelo porque no existen pesos ni documentacion del modelo base. Las capacidades que se podrian esperar de un modelo de la familia Qwen (generacion de texto, razonamiento, codigo, soporte multimodal imagen-texto) son meras hipotesis basadas en el nombre y el pipeline tag `image-text-to-text`, pero no estan verificadas.
+- Generacion de texto conversacional en formato multimodal image-text-to-text.
+- Procesamiento de imagenes mediante torre de vision integrada.
+- Razonamiento multi-paso y decodificacion especulativa gracias a la cabeza MTP.
+- Soporte de atencion hibrida: ventanas largas mediante atencion completa combinada con capas recurrentes de coste lineal.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`).
+- Capacidades de tool calling y function calling: no disponibles en la informacion proporcionada.
+- Capacidades de audio: no disponibles.
+- Cobertura multilingue: no disponible.
 
 ## Casos de uso
 
-No se pueden enumerar casos de uso concretos para un modelo que no existe todavia. Cualquier aplicacion practica dependeria de las capacidades reales del modelo base `Qwen/Qwen3.8-27B` una vez publicado y cuantizado. Hasta entonces, este repositorio no es utilizable para ninguna tarea.
+- Analisis de documentos con imagenes: el modelo puede recibir capturas, diagramas o paginas escaneadas junto a texto y responder preguntas sobre su contenido, aprovechando la torre de vision y la ventana de contexto extendida por las capas de atencion lineal.
+- Asistentes conversacionales multi-turno: su naturaleza densa de 27B y la ruta de atencion hibrida permiten mantener dialogos largos con coste de memoria controlado, desplegado en FP8 para reducir huella.
+- Extraccion de informacion estructurada desde interfaces graficas: dado un screenshot de una aplicacion, generar JSON con los campos visibles, util en pipelines de automatizacion de QA.
+- Generacion aumentada por recuperacion (RAG) multimodal: indexar documentos que mezclan texto e imagenes y generar respuestas citando el contenido visual, con la ventaja de que la cuantizacion selectiva preserva la fidelidad de la torre visual en bf16.
+- Servicio de inferencia de baja latencia: la cabeza MTP habilita decodificacion especulativa, lo que reduce el numero de pasos de decodificacion por token generado en despliegues con vLLM o TGI que soporten la arquitectura.
+- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio incluye recetas, experimentos de layout de escalas y de redondeo, lo que lo convierte en un caso de referencia para investigar el impacto de cuantizar solo MLPs frente a cuantizar toda la red.
+- Despliegue en infraestructura con VRAM limitada: los 35,8 GiB en FP8 permiten servir el modelo en una unica GPU de 48 GB o en dos de 24 GB, algo inviable con los 51,7 GiB en bf16.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor declara explicitamente que no se reivindica ninguna cifra de calidad y que, cuando existan, se publicaran mediciones de divergencia KL por token contra el base bf16 y perplejidad en wikitext-2-raw. Hasta que el modelo base sea lanzado y la cuantizacion construida, no hay datos que presentar.
+| Modelo | Modulos cuantizados | KLD (weight-only) | KLD (tal como se despliega) | PPL | Delta PPL |
+|---|---|---|---|---|---|
+| Qwen/Qwen3.8-27B (bf16) | — | 0 | 0 | 6,9416 | — |
+| Qwen/Qwen3.8-27B-FP8 (oficial) | 407 | 0,0523 | 0,1001 | 6,9539 | +0,18 % |
+| huginnfork/Qwen3.8-27B-FP8 (esta build) | 192 | 0,0362 | 0,0756 | 6,9325 | -0,13 % |
+
+Mediciones segun el autor: KLD por token sobre 8 muestras de `neuralmagic/calibration` (split LLM) con `max_seq=1024`; PPL sobre `wikitext-2-raw` test en fragmentos no solapados de 2048 tokens. La linea base es el propio Qwen/Qwen3.8-27B en bf16. El autor advierte que un Delta PPL negativo no implica mejora sobre el padre, sino que la perdida queda por debajo del ruido de medida. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de tarea en la informacion disponible.
 
 ## Requisitos de hardware
 
-No disponibles. Sin pesos reales, no se puede estimar VRAM, latencia ni throughput. Cuando el modelo base exista y la cuantizacion FP8 se materialice, se podra estimar un consumo de VRAM aproximado para 27B en FP8 (alrededor de 27 GB solo para pesos, mas overhead de activaciones y cache KV), pero esto es una extrapolacion no confirmada.
+- VRAM estimada: 35,8 GiB para los pesos en FP8; anadir overhead de activaciones, cache KV y contexto, por lo que en la practica se recomienda un minimo de 48 GB.
+- GPU recomendadas: A100 80 GB, H100 80 GB, L40S 48 GB. El autor menciona explicitamente Blackwell como plataforma donde la release oficial FP8 requiere dequantizacion a bf16, lo que sugiere soporte nativo de FP8 en dicha generacion.
+- Consumer GPU: no cabe en RTX 4090 (24 GB) con los pesos completos en FP8; serian necesarias al menos dos GPU de 24 GB o una cuantizacion adicional a 4 bits.
+- Opciones de despliegue: transformers (libreria declarada), vLLM y TGI si soportan la arquitectura `qwen3_5` y la cabeza MTP; llama.cpp y Ollama no estan confirmados en la informacion disponible.
+- Latencia y throughput: no disponibles. La decodificacion especulativa via MTP deberia reducir el numero de pasos por token, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-No disponible. No existe un modelo comparable real porque el base no ha sido lanzado. La comparativa solo tendria sentido cuando existan pesos y benchmarks verificados.
+| Modelo | Parametros | Contexto | Cuantizacion | KLD (desplegado) | Licencia |
+|---|---|---|---|---|---|
+| huginnfork/Qwen3.8-27B-FP8 | 27,8B denso | No disponible | FP8 W8A8 en MLPs | 0,0756 | Apache 2.0 |
+| Qwen/Qwen3.8-27B-FP8 (oficial) | 27,8B denso | No disponible | FP8 en 407 modulos | 0,1001 | Apache 2.0 |
+| Qwen/Qwen3.8-27B (bf16) | 27,8B denso | No disponible | Sin cuantizar | 0 | Apache 2.0 |
+
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Este repositorio es un placeholder: no contiene pesos ni artefactos. Intentar descargarlo o servirlo fallara.
-- El modelo base `Qwen/Qwen3.8-27B` no ha sido publicado; toda la informacion sobre arquitectura, capacidades y rendimiento es especulativa.
-- La receta de cuantizacion es una intencion declarada, no una realidad construida. Puede cambiar si el modelo base difiere de lo esperado.
-- No se han publicado mediciones de calidad (KLD, perplejidad) ni benchmarks.
-- La licencia apache-2.0 del repositorio no garantiza la licencia del modelo base, que se aplicara cuando exista.
-- Para produccion, este repositorio es inutilizable en su estado actual.
+- La cuantizacion FP8 solo cubre las MLPs; el bloque SSM, la atencion, la torre visual y la cabeza MTP permanecen en bf16, por lo que el ahorro de memoria es de 51,7 a 35,8 GiB y no mayor.
+- La arquitectura `qwen3_5` es poco comun; es necesario verificar que la version de transformers, vLLM o TGI soporte `linear_attn` y la cabeza MTP antes de desplegar.
+- El autor senala que cuantizar las proyecciones recurrentes del bloque SSM degrada mediblemente esta arquitectura, de modo que no es recomendable aplicar cuantizaciones mas agresivas sin validacion propia.
+- El checkpoint oficial FP8 requiere dequantizacion a bf16 en Blackwell, lo que invalida comparaciones directas de rendimiento entre ambas builds en ese hardware.
+- Riesgo de alucinacion: no cuantificado en la informacion disponible; aplican los riesgos habituales de un modelo de 27B en tareas de hechos.
+- Sesgos: no documentados en la model card.
+- Idiomas soportados: no disponibles, lo que impide garantizar calidad en castellano sin evaluacion previa.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen puede tener terminos adicionales que conviene revisar en su propia model card.
+- El repositorio no incluye resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K), solo metricas de divergencia respecto al padre.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huginnfork/Qwen3.8-27B-FP8
-- Modelo base (no publicado): https://huggingface.co/Qwen/Qwen3.8-27B
-- Herramienta de cuantizacion: https://github.com/vllm-project/llm-compressor
+- Modelo en Hugging Face: https://huggingface.co/huginnfork/Qwen3.8-27B-FP8
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Release oficial FP8: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
+- Receta de cuantizacion: https://huggingface.co/huginnfork/Qwen3.8-27B-FP8/blob/main/recipe.yaml
+- Experimento de layout de escalas: https://huggingface.co/huginnfork/Qwen3.8-27B-FP8/blob/main/block_scale_experiment.json
+- Experimento de redondeo: https://huggingface.co/huginnfork/Qwen3.8-27B-FP8/blob/main/rounding_experiment.json

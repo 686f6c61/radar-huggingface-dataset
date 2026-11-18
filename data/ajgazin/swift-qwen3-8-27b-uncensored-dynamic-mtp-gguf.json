@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 50,
-  "downloads_30d": 2663,
+  "downloads_30d": 2648,
   "trending_score": 11,
   "parameters": 460730096,
   "parameters_human": "460.7M",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Local Services Ads Booking Partners - Google Help",
-      "url": "https://support.google.com/localservices/answer/15400753?hl=en",
-      "snippet": "*Depending on the booking partner offering. Additionally, enterprises may apply and use their own CRM solution if they meet the …"
-    },
-    {
-      "title": "Create a hotel campaign - Google Ads Help",
-      "url": "https://support.google.com/google-ads/answer/9243943?hl=en",
-      "snippet": "Instructions Here are step-by-step instructions for creating a hotel campaign: Go to Campaigns within the Campaigns menu . Select …"
-    },
-    {
-      "title": "Booking.com - Forum - 60 millions de consommateurs",
-      "url": "https://www.60millions-mag.com/forum/d/633-booking-com",
-      "snippet": "Jul 20, 2009 · Booking ne fait que retransmettre les informations de réservation,et coordonnées bancaires du client à l'hotelier pas …"
-    },
-    {
-      "title": "机械硬盘和坏道相关的smart参数 (c5 c6 c8)会自动归零 有人遇到过吗？",
-      "url": "https://www.zhihu.com/question/552318738",
-      "snippet": "Sep 7, 2022 · 这个盘以前c5和05都同时出现，往里面挪文件，或者把里面的文件拷贝出来，都会直接卡死。 今天拿出来发现c5和05都 …"
-    },
-    {
-      "title": "在booking.com工作是怎样一种体验？ - 知乎",
-      "url": "https://www.zhihu.com/question/30483287/answers/updated",
-      "snippet": "Booking （缤客）是 全世界最大的网上住宿预订公司， 月活过亿，覆盖 223 个国家地区；同时我们也是一家全球领先的科技公司，总 …"
-    }
-  ]
+  "sources": []
 }

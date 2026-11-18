@@ -5,7 +5,7 @@
   "author": "srivassid",
   "url": "https://huggingface.co/srivassid/gemma4-12b-indic-ocr-lora",
   "created_at": "2026-11-17T05:34:18.000Z",
-  "updated_at": "2026-11-17T05:35:01.000Z",
+  "updated_at": "2026-11-17T05:48:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -75,7 +75,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -92,8 +92,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "srivassid/drishti",
+  "renamed_at": "2026-11-18T10:12:14.227Z",
   "benchmarks": [],
   "sources": []
 }

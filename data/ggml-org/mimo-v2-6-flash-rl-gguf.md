@@ -2,107 +2,82 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-RL-GGUF es la distribucion en formato GGUF del modelo multimodal XiaomiMiMo/MiMo-V2.6-Flash-RL, publicada por ggml-org (el equipo detras de llama.cpp) el 22 de septiembre de 2026. El modelo original forma parte de la serie MiMo-V2.6 de Xiaomi, presentada como una familia de modelos nativamente omnimodales (texto, imagen y audio) entrenada con aprendizaje por refuerzo sobre tareas verificables y complejas, dentro de la linea de investigacion que Xiaomi denomina RSI (escalado de computo de RL para ampliar la frontera de capacidades mediante exploracion y retroalimentacion).
+MiMo-V2.6-Flash-RL es un modelo multimodal de tipo image-text-to-text desarrollado por XiaomiMiMo, distribuido en formato GGUF por ggml-org para su uso con la pila de inferencia llama.cpp. Se trata de un modelo de gran escala con aproximadamente 308.800 millones de parámetros totales, lo que lo sitúa en la categoría de modelos de razonamiento multimodal de frontera. Esta versión GGUF está pensada para ejecución local y despliegue en entornos controlados mediante `llama serve` o la aplicación Llama.
 
-El modelo subyacente tiene 308.778.780.864 parametros (unos 308,8 mil millones), segun los datos de safetensors del repositorio, y emplea una arquitectura con expertos enrutados (MoE) y cabezas de prediccion multi-token (MTP). Esta distribucion GGUF anade, ademas de los pesos cuantizados, sidecars especificos para decodificacion especulativa (MTP en Q4_0 y Q8_0, y un drafter DFlash en BF16 y Q8_0) y un proyector multimodal mmproj en Q8_0 que da soporte a los codificadores de vision y audio.
+El modelo base incluye codificadores de visión y audio (empaquetados en un mmproj Q8_0), lo que amplía sus capacidades más allá del texto hacia la comprensión de imágenes y audio. La conversión a GGUF incorpora además artefactos auxiliares para decodificación especulativa: sidecars MTP (Multi-Token Prediction) en Q4_0 y Q8_0, y un drafter DFlash en BF16 y Q8_0, que permiten acelerar la generación mediante `--mtp`.
 
-Su relevancia practica es doble: por un lado, traslada un modelo omnimodal de gran escala al ecosistema llama.cpp, lo que permite ejecutarlo localmente con cuantizaciones agresivas (MXFP4 y Q2_K); por otro, incluye todas las piezas necesarias para acelerar la inferencia con decodificacion especulativa sin depender de infraestructura propietaria. La licencia MIT facilita su uso comercial, aunque el coste de hardware sigue siendo elevado por el tamano del modelo.
+La relevancia actual del modelo radica en que ofrece un pipeline multimodal de gran tamaño en cuantizaciones agresivas (MXFP4, Q2_K) que reducen el peso del repositorio a 737,6 GB, haciendo viable su ejecución en hardware de gama alta con suficiente VRAM o memoria unificada. La licencia MIT facilita su uso comercial, aunque el tamaño sigue exigiendo infraestructura considerable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con expertos enrutados (MoE) y cabezas de prediccion multi-token (MTP); multimodal (texto, imagen y audio) |
+| Arquitectura | no disponible (modelo multimodal image-text-to-text con codificadores de vision y audio y expertos enrutados MXFP4) |
 | Parametros totales | 308.778.780.864 (~308,8 mil millones) |
-| Parametros activos | no disponible |
+| Parametros activos | no disponible (la presencia de expertos enrutados sugiere arquitectura MoE, pero no se especifica el numero de parametros activos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4 (expertos enrutados en MXFP4 nativo), Q2_K (proyecciones down de expertos en MXFP4 y proyecciones gate/up en Q2_K); sidecars MTP en Q4_0 y Q8_0; drafter DFlash en BF16 y Q8_0; mmproj en Q8_0 |
+| Tipos de cuantizacion | MXFP4, Q2_K, Q4_0, Q8_0, BF16 (sidecars); mmproj en Q8_0 |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (multifragmento; MXFP4 dividido en 2 ficheros) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos (MoE): el propio autor de la conversion senala que las cuantizaciones preservan los "routed experts" (expertos enrutados) y sus proyecciones, lo que confirma el uso de enrutamiento disperso por tokens. Ademas, incorpora cabezas MTP (multi-token prediction) entrenadas para predecir varios tokens futuros, que aqui se aprovechan como sidecars de decodificacion especulativa, y un drafter DFlash independiente, tambien orientado a acelerar la generacion. El componente multimodal se implementa mediante un proyector mmproj que conecta codificadores de vision y de audio con el espacio de representacion del modelo de lenguaje.
+La información disponible indica que el modelo emplea expertos enrutados (routed experts) que se mantienen en precisión nativa MXFP4 en la salida MXFP4, lo que apunta a una arquitectura de mezcla de expertos (MoE) con cuantización de bajo bit para los expertos. En la variante Q2_K, las proyecciones down de los expertos se mantienen en MXFP4 mientras que las proyecciones gate/up se cuantizan a Q2_K. El modelo incorpora además codificadores de visión y audio, empaquetados en un único mmproj Q8_0.
 
-El sufijo "RL" de la denominacion hace referencia al regimen de post-entrenamiento: Xiaomi indica que la serie MiMo-V2.6 se ha desarrollado escalando computo de aprendizaje por refuerzo sobre tareas complejas y verificables, con publicacion de metricas de entrenamiento en vivo en su sitio. El detalle exacto del numero de tokens de preentrenamiento, la composicion del dataset y la receta concreta de RLHF/DPO no se especifica en la informacion disponible. La variante "Flash" corresponde presumiblemente a la version de menor coste de inferencia de la familia, frente a MiMo-V2.6-Pro.
-
-La conversion a GGUF la realiza automaticamente la herramienta ggml-org/convert. Una limitacion declarada por el autor es que las cuantizaciones Q2 no emplean calibracion imatrix por ausencia de una matriz de calibracion.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO, más allá del sufijo "RL" en el nombre que sugiere algún tipo de entrenamiento con refuerzo. La conversión GGUF incluye soporte para decodificación especulativa mediante sidecars MTP (Multi-Token Prediction) y un drafter DFlash, lo que constituye la innovación técnica destacable documentada. La conversión se realizó automáticamente con la herramienta ggml-org/convert.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento reforzado mediante RL (la serie se presenta orientada a tareas complejas y verificables).
-- Procesamiento de imagen y texto (pipeline declarado `image-text-to-text`), gracias al proyector mmproj en Q8_0.
-- Procesamiento de audio: la model card indica que el mmproj incluye codificadores de vision **y** de audio, por lo que el modelo es omnimodal (texto, imagen y audio).
-- Decodificacion especulativa integrada mediante cabezas MTP (`--mtp`) y un drafter DFlash, orientada a reducir la latencia de generacion.
-- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible`) y uso conversacional.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte explicito de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible (no se declaran idiomas en el repositorio).
-- Modo "thinking" explicito con bloques de razonamiento separados: no disponible.
+- Generación de texto conversacional multi-turno (tag `conversational`).
+- Comprensión de imágenes y texto combinados (pipeline image-text-to-text).
+- Procesamiento de audio mediante el codificador incluido en el mmproj Q8_0.
+- Decodificación especulativa acelerada mediante sidecars MTP (`--mtp`) y drafter DFlash.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios tipo API.
+- Razonamiento y generación de código: no confirmado explícitamente en la información disponible.
+- Tool calling / function calling: no disponible.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Asistente multimodal local sobre documentos: el modelo puede recibir imagenes de paginas escaneadas junto a texto y responder preguntas sobre su contenido, sin enviar los datos a servicios externos, gracias a los codificadores de vision incluidos en el mmproj.
-- Analisis de audio y transcripcion de reuniones: dado que el proyector cubre audio, permite pipelines que combinan una reunion grabada con instrucciones textuales para generar resumenes o extraer acciones, todo dentro de una unica llamada al modelo.
-- Razonamiento sobre problemas verificables (matematicas, logica, codigo correcto/incorrecto): el post-entrenamiento con RL sobre tareas verificables lo hace adecuado para flujos donde la respuesta puede comprobarse automaticamente, como tutoria o generacion de soluciones con validacion posterior.
-- Despliegue en llama.cpp para entornos con soberania de datos: la disponibilidad de cuantizaciones MXFP4 y Q2_K permite ejecutar el modelo en infraestructura propia (on-premise o air-gapped) sin dependencia de APIs, algo critico en banca, sanidad o defensa.
-- Generacion asistida en produccion con decodificacion especulativa: los sidecars MTP y el drafter DFlash permiten activar `--mtp` en llama.cpp para reducir la latencia por token en servicios de generacion de codigo o texto con requisitos de tiempo de respuesta.
-- Investigacion en entrenamiento con RL y evaluacion de modelos omnimodales: al ser un modelo nativamente multimodal con licencia MIT, sirve como base para experimentos de fine-tuning, comparativas de RL y estudios de alineacion sin restricciones de licencia.
-- Prototipado de aplicaciones multimodales en estaciones de trabajo grandes o Mac Studio: con MXFP4 (~165 GB estimados) el modelo cabe en memoria unificada de gama alta, lo que permite iterar en demos de vision-lenguaje-audio sin clúster.
-- Servicio conversacional de contexto largo en un endpoint compatible con OpenAI: la etiqueta `endpoints_compatible` y el formato GGUF facilitan exponerlo tras un servidor compatible y consumirlo desde aplicaciones existentes (longitud de contexto real: no disponible).
+- Asistente multimodal local: el modelo puede procesar entradas de imagen y texto en un mismo turno conversacional, adecuado para aplicaciones de escritorio o servidor donde la privacidad impide enviar datos a la nube, ejecutándose vía `llama serve`.
+- Análisis de documentos con imágenes: extracción de información de capturas, gráficos o formularios combinando el codificador visual con la generación de texto, útil en pipelines de digitalización interna.
+- Transcripción y comprensión de audio: gracias al codificador de audio incluido en el mmproj, puede integrarse en flujos de reuniones o notas de voz para resumir o responder preguntas sobre el contenido.
+- Servicio de inferencia compatible con endpoints: al estar marcado como `endpoints_compatible`, puede desplegarse detrás de una API compatible con OpenAI para sustituir servicios en la nube en entornos con requisitos de soberanía de datos.
+- Aceleración de generación en producción: el uso de sidecars MTP y del drafter DFlash permite reducir la latencia en cargas de generación larga, adecuado para asistentes interactivos que requieren respuestas rápidas.
+- Experimentación e investigación en cuantización: las variantes MXFP4 y Q2_K permiten estudiar el impacto de la cuantización de bajo bit en expertos enrutados sobre la calidad de salida, con sidecars de referencia para comparar precisiones.
+- Despliegue en hardware de memoria unificada: el formato GGUF y las cuantizaciones agresivas permiten ejecutar el modelo en estaciones con gran cantidad de RAM/VRAM unificada, como Mac Studio de gama alta o servidores con múltiples GPU.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-Xiaomi mantiene un panel publico de metricas de entrenamiento (recompensa, perdida, etc.) en su sitio de RL, pero la informacion recopilada no incluye tablas de MMLU, HumanEval, GSM8K ni evaluaciones multimodales comparables.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de 308,8 mil millones de parametros):
-  - BF16 (precision completa): ~617 GB.
-  - MXFP4 (expertos enrutados en MXFP4 nativo): ~165-175 GB.
-  - Q2_K: ~100-115 GB.
-  - A estas cifras hay que sumar el mmproj (~1 GB aprox. en Q8_0) y, si se activa, el drafter MTP o DFlash.
-- GPU recomendadas: para MXFP4 o Q2_K en memoria de GPU se necesitan configuraciones multi-GPU, por ejemplo 2-4x H100 80 GB, 2-4x A100 80 GB o 2x H200; para BF16 se requiere un clúster de 8x H100 80 GB o equivalente.
-- GPU de consumo: no cabe en una sola GPU consumer (RTX 4090 de 24 GB, RTX 5090 o similares). Solo es viable con offload parcial a RAM del sistema o con memoria unificada de gran capacidad (por ejemplo, Apple Silicon con 192 GB o mas en MXFP4).
-- Opciones de despliegue: llama.cpp (recomendado, incluida la herramienta `llama.app` con `llama serve -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF`), Ollama (importando el GGUF), y servidores compatibles con endpoints OpenAI. vLLM y TGI: no confirmado para este GGUF especifico.
-- Latencia y throughput estimados: no disponibles. La decodificacion especulativa via MTP (`--mtp`) y el drafter DFlash estan disenados para mejorarlos, pero no se publican cifras.
+- VRAM estimada: no disponible de forma oficial. Con ~308,8 mil millones de parámetros, una cuantización Q2_K requeriría del orden de 80-100 GB solo para pesos, y MXFP4 un rango similar o superior; estas cifras son estimaciones orientativas, no datos del autor.
+- GPU recomendadas: no especificadas. Por tamaño, se necesitan configuraciones multi-GPU (varias A100/H100) o sistemas con memoria unificada de gran capacidad; no cabe en una RTX 4090 de 24 GB ni en GPUs de consumo convencionales.
+- Compatibilidad con GPU de consumo: no viable en GPUs de consumo estándar por el tamaño del modelo.
+- Opciones de despliegue: llama.cpp (`llama serve -hf ggml-org/MiMo-V2.6-Flash-RL-GGUF`), aplicación Llama (https://llama.app). vLLM, TGI u Ollama no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles. La inclusión de sidecars MTP y DFlash está orientada a mejorar la velocidad de decodificación, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos corresponden a sus especificaciones publicadas; los del modelo de esta ficha, a lo indicado en el repositorio.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| MiMo-V2.6-Flash-RL (GGUF) | 308,8 mil millones | no disponible | no disponible | MIT | GGUF |
-| DeepSeek-V3 / R1 | 671 mil millones | 37 mil millones | 128K | MIT / licencia DeepSeek | safetensors, GGUF |
-| Qwen3-235B-A22B | 235 mil millones | 22 mil millones | 128K | Apache 2.0 | safetensors, GGUF |
-| Llama 4 Maverick | 400 mil millones | 17 mil millones | 1M | Licencia Llama 4 | safetensors, GGUF |
-
-Nota: para MiMo-V2.6-Flash-RL no se dispone de datos de contexto, parametros activos ni comparativas de rendimiento, por lo que la tabla solo permite contrastar tamano, licencia y disponibilidad.
+No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se declaran idiomas soportados, por lo que se desconoce el grado de cobertura multilingue mas alla del ingles.
-- No se publica la longitud de contexto, lo que impide garantizar el comportamiento en ventanas largas.
-- Las cuantizaciones Q2_K no utilizan calibracion imatrix (limitacion declarada por el autor), lo que puede degradar la calidad respecto a cuantizaciones mejor calibradas.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de gran escala, no cuantificado en la informacion disponible.
-- No hay informacion sobre sesgos, evaluaciones de seguridad, red-teaming ni politica de uso responsable.
-- Los datos de audio e imagen se procesan mediante el mmproj; la calidad real de esas capacidades no esta documentada con benchmarks.
-- Licencia MIT: permite uso comercial y modificacion sin restricciones relevantes, pero el autor de la conversion (ggml-org) no ofrece garantias; el modelo queda sujeto a verificacion propia en produccion.
-- El tamano del repositorio (577,6 GB) implica costes de almacenamiento y descarga considerables; la descarga de un solo fichero MXFP4 parcial no es suficiente para ejecutar el modelo.
-- Requiere hardware multi-GPU o memoria unificada de gran capacidad; no es viable en una GPU de consumo unica.
-- La conversion se realiza de forma automatica con ggml-org/convert, por lo que pueden aparecer incidencias de compatibilidad con versiones concretas de llama.cpp; conviene fijar la version del runtime.
+- Sesgos conocidos: no documentados en la información disponible.
+- Riesgo de alucinación: inherente a los modelos generativos de gran escala; no se han publicado evaluaciones específicas.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están especificados, lo que impide garantizar cobertura multilingüe.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, modificación y redistribución con atribución; conviene conservar el aviso de copyright.
+- Caveat de cuantización: el autor advierte que los modelos Q2 no usan calibración imatrix por falta de una disponible, lo que puede degradar la calidad respecto a cuantizaciones calibradas.
+- Caveat de conversión: el modelo se convirtió automáticamente con ggml-org/convert, por lo que pueden existir diferencias de comportamiento respecto al modelo base en safetensors.
+- Requisitos de infraestructura: el tamaño del repositorio (737,6 GB) y el número de parámetros exigen hardware de gama muy alta; no es apto para entornos con recursos limitados.
+- Idiomas y contexto desconocidos: la ausencia de estos datos en la model card dificulta planificar su uso en producción multilingüe o con documentos largos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF
-- Fichero MXFP4 (parte 1 de 2): https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF/blob/main/MiMo-V2.6-Flash-RL-MXFP4-00001-of-00002.gguf
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
-- Herramienta de conversion: https://github.com/ggml-org/convert
-- Aplicacion de ejecucion: https://llama.app
-- Pagina de la serie MiMo-V2.6 de Xiaomi: https://mimo.xiaomi.com/mimo-v2-6
-- Metricas de entrenamiento RL en vivo: https://mimo.xiaomi.com/rl/
-- Articulo sobre el lanzamiento del GGUF con soporte MTP y mmproj: https://localmodelwatch.tsuchitsuchi.com/en/2026/09/22/mimo-v2-6-flash-rl-gguf-released/
+- Aplicación Llama: https://llama.app
+- Herramienta de conversión: https://github.com/ggml-org/convert

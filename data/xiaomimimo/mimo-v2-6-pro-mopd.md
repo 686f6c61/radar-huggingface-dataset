@@ -2,113 +2,98 @@
 
 ## Resumen
 
-MiMo-V2.6-Pro-MOPD es un modelo multimodal de gran escala desarrollado por Xiaomi (organización XiaomiMiMo), publicado como evolución del checkpoint MiMo-V2.6-Pro-RL. Se trata de un transformer de tipo MoE disperso con 1,02 billones de parámetros totales y 42.000 millones de parámetros activos por token, capaz de procesar texto, imagen, vídeo y audio con una ventana de contexto de 1 millón de tokens. La variante MOPD incorpora una etapa adicional de destilación on-policy multi-profesor (MOPD2) que funde varios profesores especializados por dominio en un único estudiante.
+MiMo-V2.6-Pro-MOPD es un modelo de lenguaje multimodal de gran escala desarrollado por XiaomiMiMo, el equipo de investigación en IA de Xiaomi. Se trata de un transformer con arquitectura de mezcla de expertos (MoE) dispersa que totaliza 1,02 billones de parámetros, de los cuales activa 42.000 millones por token. Integra codificadores para texto, imagen, vídeo y audio, y ofrece una ventana de contexto de 1 millón de tokens, lo que lo sitúa en la categoría de modelos frontera para tareas de agente y comprensión multimodal de contexto largo.
 
-El problema principal que aborda esta versión es un modo de fallo concreto detectado en agentes: la repetición de llamadas a herramientas (tool-call repetition), en la que el modelo emite invocaciones idénticas o muy similares de forma iterativa, consumiendo contexto y tiempo sin avanzar. El checkpoint MOPD mitiga este comportamiento mediante un entrenamiento corto con un profesor especializado, integrado en la pasada normal de MOPD.
+Este checkpoint concreto es la etapa MOPD (Multi-Teacher On-Policy Distillation) del modelo MiMo-V2.6-Pro-RL. La innovación principal de MOPD2 es la destilación on-policy de varios profesores especializados por dominio en un único modelo estudiante, cubriendo tanto tareas verificables (mixRL) como dominios de espacio abierto donde diseñar una recompensa fiable es difícil, como el desarrollo de videojuegos de largo horizonte, la investigación científica o la inteligencia encarnada. Además, esta versión corrige de forma específica el fallo de repetición de llamadas a herramientas (tool-call repetition) detectado en MiMo-V2.6, un modo de fallo en el que el modelo emite llamadas idénticas o muy similares de forma reiterada sin avanzar.
 
-Su relevancia actual radica en tres factores: escala (1,02T parámetros con solo 42B activos, eficiente en cómputo por token), multimodalidad nativa (visión, vídeo y audio con codificadores dedicados) y orientación explícita a cargas agénticas de horizonte largo. La licencia MIT permite uso comercial sin restricciones de atribución más allá de la propia licencia.
+Su relevancia actual radica en tres factores: la licencia MIT (permisiva para uso comercial), la combinación de multimodalidad completa con contexto de 1M tokens y la orientación explícita a flujos agénticos con tool calling robusto. El modelo se distribuye en formato safetensors con pesos en 8 bits (FP8) y un repositorio de 573,5 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sparse MoE (Mixture of Experts), transformer con backbone híbrido SWA/GA |
-| Parametros totales | 1.024.216.603.392 (~1,02 billones) |
-| Parametros activos | 42.000 millones |
+| Arquitectura | Sparse MoE (Mixture of Experts) con backbone híbrido SWA/GA, codificadores omni (visión y audio) y decodificador especulativo MTP |
+| Parametros totales | 1.024.216.603.392 (1,02 T) |
+| Parametros activos | 42 B por token |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | 8-bit y FP8 (según tags del repositorio); no se detallan variantes GGUF, AWQ o GPTQ en la información disponible |
-| Idiomas soportados | Inglés (en) y chino (zh) |
+| Tipos de cuantizacion | 8-bit, FP8 (pesos publicados); no se detallan otras variantes en la información disponible |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
-| Capas (total / SWA / GA) | 70 / 60 / 10 |
-| Hidden size | 6144 |
-| Cabeceras SWA (Q/KV) | 128 / 8 |
-| Cabeceras GA (Q/KV) | no disponible |
-| Codificador de vision | MiMo ViT de 681M parámetros (28 capas: 24 SWA + 4 Full) |
-| Codificador de audio | AudioTokenizer de 308M + patch encoder de 127M |
-| Decodificador especulativo | Multi-Token Prediction (MTP) de 5 capas |
-| Tamano del repositorio | 573,5 GB |
-| Descargas / likes | 307 / 16 |
+| Formato de pesos | safetensors (custom_code, librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El backbone es un MoE disperso de 70 capas que combina atención de ventana deslizante (SWA) en 60 capas con atención global (GA) en 10 capas, con un tamaño oculto de 6144. Las capas SWA emplean 128 cabeceras de query y 8 de clave/valor, lo que reduce el coste de memoria KV en secuencias largas. La multimodalidad se resuelve con codificadores separados: un ViT MiMo de 681M parámetros (24 capas SWA + 4 Full) para imagen y vídeo, y un front-end de audio compuesto por un AudioTokenizer de 308M más un patch encoder de 127M. Para acelerar la decodificación incorpora un decodificador especulativo MTP de 5 capas.
+El backbone es un transformer MoE disperso de 70 capas, de las cuales 60 usan atención de ventana deslizante (SWA) y 10 usan atención global (GA), con un tamaño oculto de 6144. Las capas SWA emplean 128 cabezas de consulta y 8 cabezas de clave-valor, lo que reduce el coste de atención en contextos largos. El modelo incorpora tres componentes adicionales: un codificador visual MiMo ViT de 681 M de parámetros (28 capas: 24 SWA y 4 full), un codificador de audio compuesto por un AudioTokenizer de 308 M y un patch encoder de 127 M, y un decodificador especulativo Multi-Token Prediction (MTP) de 5 capas que acelera la generación.
 
-El entrenamiento sigue un pipeline de RL mixto seguido de MOPD2 (Multi-Prefix Multi-Teacher On-Policy Distillation). MOPD2 destila varios profesores especializados por dominio sobre el estudiante en política, con dos familias de profesores: profesores mixRL, entrenados en tareas verificables, y profesores SFT, entrenados sobre demostraciones sintéticas para dominios abiertos donde diseñar una recompensa fiable es difícil. La actualización combina tres flujos: MOPD estándar (los profesores mixRL supervisan rollouts autónomos completos), Teacher-Prefix OPD (los prefijos provienen de rollouts del profesor; una trayectoria con k turnos de asistente genera k prefijos de historial y el profesor puntúa cada turno nuevo contra ese historial) y SFT-Prefix OPD (los prefijos provienen de demostraciones SFT y el modelo escribe su propia continuación). Este esquema entrena puntos de decisión sin regenerar los turnos precedentes, lo que extiende la destilación a tareas de verificación difícil como desarrollo de videojuegos de horizonte largo, investigación científica e inteligencia corpórea.
+El entrenamiento combina varias fases. Sobre la base del checkpoint MiMo-V2.6-Pro-RL, la etapa MOPD2 destila varios profesores especializados en el estudiante de forma on-policy, con tres flujos que contribuyen a una única actualización: MOPD estándar (profesores mixRL supervisan rollouts autónomos completos), Teacher-Prefix OPD (prefijos extraídos de rollouts del profesor, una puntuación por turno) y SFT-Prefix OPD (prefijos de demostraciones sintéticas donde el modelo escribe su propia continuación). Los profesores mixRL se entrenan en tareas verificables, mientras que los profesores SFT cubren dominios abiertos sin recompensa fiable. El informe técnico no detalla en la información disponible el número exacto de tokens de entrenamiento ni la composición completa del dataset.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto de hasta 1 millón de tokens.
-- Comprensión y razonamiento sobre imagen y vídeo mediante el ViT MiMo de 681M parámetros.
-- Procesamiento de audio: el modelo integra entrada de audio vía AudioTokenizer y patch encoder, y el ecosistema Xiaomi MiMo Studio referencia reproducción de voz.
-- Razonamiento agéntico de múltiples pasos con llamadas a herramientas (tool calling / function calling).
-- Mitigación específica de la repetición de llamadas a herramientas, con un profesor dedicado que converge en una pasada corta.
-- Capacidades multilingües limitadas a inglés y chino según los metadatos de idioma.
-- Decodificación especulativa nativa mediante cabezas MTP de 5 capas para reducir la latencia de generación.
-- Ejecución en 8-bit y FP8, lo que permite servir el modelo con pesos de menor precisión.
+- Generación de texto y razonamiento multi-turno con ventana de 1M tokens.
+- Comprensión de imagen mediante el codificador MiMo ViT de 681 M de parámetros.
+- Comprensión de vídeo (etiqueta `video-understanding` en la model card).
+- Comprensión de audio mediante AudioTokenizer y patch encoder dedicados.
+- Tool calling y function calling, con mitigación específica del fallo de repetición de llamadas.
+- Flujos agénticos multi-paso y razonamiento de horizonte largo (desarrollo de videojuegos, investigación científica, inteligencia encarnada según los dominios de los profesores MOPD).
+- Decodificación especulativa mediante MTP de 5 capas para acelerar la inferencia.
+- Capacidades multilingües limitadas a inglés y chino según la model card.
 
 ## Casos de uso
 
-- Agentes autónomos de horizonte largo: el modelo está entrenado explícitamente para reducir la repetición de tool calls, por lo que es adecuado en bucles agénticos donde un fallo de este tipo degrada el tiempo y el consumo de contexto sin producir errores visibles.
-- Atención al cliente multimodal: puede gestionar conversaciones multi-turno con capturas de pantalla, imágenes o notas de voz gracias a sus codificadores de visión y audio y a la ventana de 1M tokens, manteniendo el historial completo de la sesión.
-- Análisis de vídeo para soporte técnico o moderación: con el ViT de 681M parámetros y el contexto de 1M tokens permite resumir o localizar eventos en grabaciones extensas sin trocear el material.
-- Automatización de oficina y ofimática: la integración anunciada con el ecosistema Kingsoft Office (WPS) apunta a usos de generación y edición asistida de documentos con reconocimiento multimodal.
-- Investigación científica asistida por agente: la destilación MOPD2 incluye profesores para dominios de verificación difícil, lo que permite usarlo en pipelines de revisión de literatura, extracción de datos de figuras y tablas, y generación de hipótesis con trazabilidad de fuentes.
-- Desarrollo de videojuegos de horizonte largo: el caso de uso citado explícitamente en la etapa MOPD, orientado a tareas de generación y verificación de contenido de juego mantenidas durante muchos turnos.
-- Transcripción y enriquecimiento de reuniones: al aceptar audio de entrada y texto de salida, puede producir actas estructuradas con acciones derivadas a partir de la grabación completa.
-- Despliegue como backend de agentes con herramientas en CI/CD: el soporte de function calling y la mitigación de repetición permiten integrarlo en pipelines que invocan APIs, ejecutan tests y aplican parches de forma iterativa.
+- Atención al cliente automatizada: la ventana de 1M tokens permite mantener historiales de conversación muy extensos y adjuntar documentación completa sin truncar, con respuestas multi-turno coherentes.
+- Agentes autónomos de desarrollo de software: el soporte de tool calling y la corrección de la repetición de llamadas lo hacen adecuado para pipelines de CI/CD donde el agente debe invocar herramientas de forma productiva y no entrar en bucles.
+- Análisis de vídeo a gran escala: gracias al codificador visual y la etiqueta de comprensión de vídeo, puede resumir o indexar grabaciones largas junto con su transcripción de audio en una sola pasada de contexto.
+- Investigación científica asistida: la destilación MOPD2 incluye profesores de investigación científica, lo que orienta al modelo a tareas de razonamiento abierto donde no existe una recompensa verificable trivial.
+- Transcripción y análisis de reuniones: combinando audio y texto, puede procesar la grabación y generar actas estructuradas con contexto de conversaciones previas de la organización.
+- Asistencia en robótica e inteligencia encarnada: el dominio de embodied intelligence cubierto por los profesores MOPD2 permite usarlo como planificador de alto nivel que interpreta instrucciones y genera secuencias de acciones.
+- Procesamiento de corpus documentales extensos: con 1M tokens de contexto puede realizar preguntas y respuestas sobre libros técnicos, expedientes o bases de conocimiento completas sin recuperación externa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente incluye una figura cualitativa sobre la tasa de repetición de llamadas a herramientas (response-level repetition rate) comparando la etapa RL frente a este checkpoint MOPD, sin cifras numéricas en el texto proporcionado.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente incluye una figura comparativa de la tasa de repetición de llamadas a herramientas antes y después de la etapa MOPD, sin cifras numéricas en el texto proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos en FP8, aproximadamente 1,0 TB; en 8-bit, en el mismo orden. En BF16 superaría los 2 TB. El repositorio ocupa 573,5 GB, lo que sugiere una distribución parcial o mixta de pesos.
-- No cabe en ninguna GPU de consumo. Ni siquiera en configuraciones multi-GPU de gama alta doméstica (4x RTX 4090 con 24 GB = 96 GB) se aproxima al requisito.
-- GPU recomendadas: clúster multi-nodo con H100 80GB, H200 o B200. Como referencia mínima, FP8 requiere al menos 16 GPUs de 80 GB para alojar pesos y caché KV.
-- Con 1M tokens de contexto, la memoria de caché KV se convierte en el factor dominante; las 60 capas SWA con 8 cabeceras KV reducen ese coste frente a un transformer denso equivalente, pero el dimensionamiento debe calcularse por despliegue.
-- Opciones de despliegue: vLLM, SGLang o TGI con soporte de MoE y paralelismo tensor/pipeline multi-nodo. llama.cpp y Ollama no son viables a esta escala. Se requiere `custom_code` (el repositorio lo etiqueta como tal) y `trust_remote_code` en transformers.
-- Latencia y throughput: no disponible para este checkpoint. El blog de Xiaomi menciona un modo "UltraSpeed" con más de 1000 TPS para MiMo-V2.5-Pro, pero corresponde a otro modelo y no debe extrapolarse a esta ficha.
-- Modalidades adicionales: los codificadores de visión (681M) y audio (308M + 127M) añaden memoria y cómputo si se habilitan las entradas multimodales.
+- VRAM estimada para inferencia: con 1,02 T de parámetros en FP8 (8 bits), los pesos ocupan aproximadamente 1 TB; no cabe en ninguna GPU individual comercial actual y requiere despliegue multi-GPU o multi-nodo.
+- GPU recomendadas: clústeres de H100 (80 GB), H200 o B200; se necesitan del orden de 13-16 GPU H100 solo para alojar los pesos en FP8, más memoria adicional para caché KV con contexto de 1M tokens.
+- No cabe en GPU de consumo (RTX 4090, 5090 ni similares).
+- Opciones de despliegue: al usar `custom_code` y transformers, la integración con vLLM, TGI o llama.cpp no está confirmada en la información disponible; la model card no detalla backends de serving.
+- Latencia y throughput: no disponibles. El decodificador especulativo MTP de 5 capas está diseñado para reducir la latencia de generación, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Modalidades | Licencia | Disponibilidad |
+| Modelo | Parámetros | Activos | Contexto | Modalidades | Licencia |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-MOPD | 1,02T / 42B | 1M tokens | Texto, imagen, vídeo, audio | MIT | Hugging Face, ModelScope |
-| MiMo-V2.6-Pro-RL | 1,02T / 42B | 1M tokens | Texto, imagen, vídeo, audio | MIT | Hugging Face, ModelScope |
-| MiMo-V2.6-Flash-MOPD | no disponible | no disponible | no disponible | MIT (heredada del proyecto) | Hugging Face, ModelScope |
-| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | MIT (heredada del proyecto) | Hugging Face, ModelScope |
+| MiMo-V2.6-Pro-MOPD | 1,02 T | 42 B | 1M | Texto, imagen, vídeo, audio | MIT |
+| MiMo-V2.6-Pro-RL | 1,02 T | 42 B | 1M | Texto, imagen, vídeo, audio | MIT |
+| MiMo-V2.6-Flash-MOPD | no disponible | no disponible | no disponible | no disponible | MIT |
 
-La diferencia funcional entre MiMo-V2.6-Pro-MOPD y MiMo-V2.6-Pro-RL es la etapa MOPD2: el checkpoint RL es la base tras el RL mixto, mientras que MOPD añade la destilación multi-profesor con prefijos y la corrección específica de repetición de tool calls. No se dispone de datos de benchmarks ni de especificaciones de la familia Flash en la información proporcionada, por lo que no es posible comparar rendimiento numérico.
+La información disponible no permite comparar con modelos de otros fabricantes (parámetros, contexto o rendimiento), por lo que la comparativa se limita a las variantes publicadas por el mismo equipo. La diferencia funcional entre Pro-MOPD y Pro-RL es la etapa de destilación multi-profesor y la mitigación de la repetición de llamadas; Flash es una variante presumiblemente más ligera, pero sus especificaciones no se detallan.
 
 ## Limitaciones y advertencias
 
-- Idiomas: los metadatos declaran únicamente inglés y chino. El rendimiento en castellano u otros idiomas no está documentado y probablemente sea inferior.
-- Sesgos: no se documenta ninguna evaluación de sesgos, toxicidad o alineación en la información disponible.
-- Alucinación: no se publican tasas de alucinación ni evaluaciones de fidelidad factual. En tareas multimodales (descripción de vídeo o audio) el riesgo es especialmente relevante por la ausencia de métricas.
-- Repetición de tool calls: aunque este checkpoint la mitiga, la model card la describe como un problema recurrente en la versión RL; conviene instrumentar el bucle agéntico con detección de invocaciones duplicadas como salvaguarda en producción.
-- Restricciones de licencia: licencia MIT, que permite uso comercial, modificación y redistribución con conservación del aviso de copyright. No incluye cláusulas de uso aceptable, por lo que la responsabilidad sobre el uso recae en el desplegador.
-- Requisitos de código: al estar etiquetado como `custom_code`, requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado del repositorio.
-- Coste de despliegue: la inferencia exige infraestructura multi-nodo; no existe una ruta práctica en hardware de consumo, lo que limita la reproducibilidad independiente.
-- Repositorio de 573,5 GB: la descarga y el almacenamiento requieren planificación previa; verificar la integridad de los fragmentos antes de cargar el modelo.
-- Fechas: los metadatos indican creación el 27 de septiembre de 2026, posterior a la fecha de referencia habitual en muchas herramientas; conviene comprobar la compatibilidad de las versiones de transformers, vLLM y SGLang con `mimo_v2`.
+- Idiomas: solo inglés y chino según la model card; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Riesgo de alucinación: no se publican evaluaciones de factualidad; como modelo generativo de gran escala, es susceptible de inventar datos, especialmente en dominios sin recompensa verificable.
+- Repetición de llamadas a herramientas: aunque esta versión la mitiga, el fallo se describe como un modo de fallo que puede pasar desapercibido porque nada falla de forma explícita; conviene monitorizar los agentes en producción.
+- Sesgos: no se documentan análisis de sesgo en la información disponible.
+- Requisitos de infraestructura: el tamaño de 1,02 T de parámetros y 573,5 GB de repositorio hacen inviable el despliegue en hardware de consumo y encarecen la inferencia.
+- Licencia MIT: permite uso comercial y modificación, pero no se especifican términos adicionales de responsabilidad ni cláusulas de uso aceptable más allá de la licencia estándar.
+- Contexto de 1M tokens: aunque soportado, el coste de memoria de la caché KV a esa longitud es muy elevado y puede degradar el throughput; no se documenta la degradación de calidad a longitudes extremas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
-- Checkpoint base MiMo-V2.6-Pro-RL: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
-- Modelo en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
+- Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
+- Checkpoint base RL: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Variante Flash RL: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Variante Flash MOPD: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - Informe técnico (PDF): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf
-- Blog técnico sobre repetición de tool calls: https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition
+- Blog técnico sobre repetición de llamadas: https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition
 - Blog del modelo: https://mimo.xiaomi.com/mimo-v2-6
-- Plataforma API de Xiaomi MiMo: https://platform.xiaomimimo.com
+- Plataforma API: https://platform.xiaomimimo.com
 - Xiaomi MiMo Studio: https://aistudio.xiaomimimo.com
 - Xiaomi MiMo Desktop: https://mimo.xiaomimimo.com/desktop/
-- Repositorio GitHub del proyecto: https://github.com/XiaomiMiMo/MiMo
-- Organización en Hugging Face: https://huggingface.co/XiaomiMiMo
-- Sitio principal de Xiaomi MiMo: https://mimo.xiaomi.com/
+- ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
+- Repositorio GitHub: https://github.com/XiaomiMiMo/MiMo
 - Discord: https://discord.gg/kKC2kNnQEX
 - Telegram: https://t.me/+3T-I0pekOVIyNDBl
 - Reddit: https://www.reddit.com/r/XiaomiMiMo_Official/

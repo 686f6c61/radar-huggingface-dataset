@@ -9,9 +9,11 @@
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "diffusers",
   "languages": [],
   "tags": [
+    "diffusers",
+    "safetensors",
     "region:us"
   ],
   "likes": 3,
@@ -23,7 +25,10 @@
   "storage_human": "5382.2 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

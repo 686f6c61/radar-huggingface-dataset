@@ -24,8 +24,8 @@
     "region:us"
   ],
   "likes": 878,
-  "downloads_30d": 50101,
-  "trending_score": 13,
+  "downloads_30d": 50348,
+  "trending_score": 12,
   "parameters": 11959730224,
   "parameters_human": "11.96B",
   "storage_bytes": 23983877135,
@@ -51,24 +51,24 @@
       "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
     },
     {
-      "title": "Introducing Gemma 4 12B - The Keyword",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
-      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
-    },
-    {
-      "title": "Google - 302 Moved",
-      "url": "https://www.google.com/",
-      "snippet": "302 Moved The document has moved here."
-    },
-    {
-      "title": "google/gemma-4-12B · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-12B",
-      "snippet": "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety."
-    },
-    {
       "title": "Google",
-      "url": "https://www.google.com/?hl=fr-fr",
-      "snippet": "Google disponible en : English PublicitéÀ propos de GoogleGoogle.com in English © 2026 - Confidentialité- Conditions Applications …"
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google",
+      "snippet": "La société compte environ 50 000 employés. La plupart travaillent au siège mondial : le Googleplex, à Mountain View en Californie. …"
+    },
+    {
+      "title": "Présentation",
+      "url": "https://search.google/intl/fr-FR/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Google (moteur de recherche) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google_(moteur_de_recherche)",
+      "snippet": "Google est à l'origine un moteur de recherche de pages web, qui s'est étendu progressivement à divers types de documents (PDF, …"
     }
   ]
 }

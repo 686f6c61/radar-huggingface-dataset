@@ -2,67 +2,65 @@
 
 ## Resumen
 
-GLiNER2.5-multi-Decide es un modelo de clasificación multilingüe de 287 millones de parámetros (287.355.159 exactos según los pesos safetensors) desarrollado por Fastino. Es un fine-tune del checkpoint base fastino/gliner2.5-multi-v1 y forma parte de la familia GLiNER2.5, orientada a extracción de información guiada por esquema y a la toma de decisiones operativas. Se publica bajo licencia Apache 2.0.
+GLiNER2.5-multi-Decide es un modelo especializado en clasificación de texto desarrollado por Fastino, presentado como la variante multilingüe de su familia GLiNER2.5. Con 287 millones de parámetros, implementa una arquitectura de extracción de esquemas (schema extraction) que permite pasar cualquier conjunto de etiquetas en el momento de la llamada y obtener la clasificación en un único forward pass, sin plantillas de prompt ni generación de tokens. Resuelve el problema de las decisiones operativas: enrutamiento de tickets, intención de cliente, sentimiento, prioridad, política o etiquetado multietiqueta.
 
-A diferencia de un modelo generativo, no emplea plantillas de prompt ni produce tokens de texto: recibe en tiempo de llamada un texto y un conjunto arbitrario de etiquetas, y devuelve la etiqueta seleccionada (o todas las que superan un umbral, en tareas multilabel) en una única pasada forward. Su ámbito son decisiones cerradas: intención de cliente y banca, peticiones de viaje y clínica, sentimiento de reseñas, tipo de documento, enrutado de correos y tickets, handoff a humano, finalización de agente, moderación, severidad, urgencia y spam.
+El modelo se construye sobre `fastino/gliner2.5-multi-v1` mediante fine-tuning y se distribuye bajo licencia Apache 2.0, con pesos en safetensors y compatibilidad con la librería `transformers` a través de la clase `AutoExtractor` del paquete `gliner2`. Su relevancia actual radica en que ofrece una alternativa determinista y de baja latencia a los LLM generativos para tareas de clasificación, evitando la variabilidad de las respuestas generadas y el coste de inferencia asociado a modelos de mayor tamaño.
 
-Su relevancia actual radica en ofrecer clasificación local y sin coste por token con un modelo pequeño (≈1,2 GB de repositorio) y licencia permisiva, como alternativa a routers propietarios o a LLM generativos de mayor tamaño para tareas de etiquetado cerrado. Admite varias tareas (heads) en una sola llamada y soporta explícitamente entradas multilingües, no solo en inglés.
+La model card es explícita al señalar que no es un modelo de propósito general: no razona, no explica ni responde preguntas abiertas. Es un especialista en decisiones operativas que, según el autor, alcanza un 56,7 % de exactitud media en el benchmark `fast-decisions` (17 dominios, 300 ejemplos retenidos por dominio), quedando por debajo de las variantes inglesas de la misma familia pero por delante de alternativas como SemIf (Qwen3.5-4B) o GLiFormer large-v1.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Encoder para clasificación/extensión guiada por etiquetas, en una sola pasada forward (sin decodificación autorregresiva) |
-| Parametros totales | 287.355.159 (≈287 M) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (los pesos publicados están en safetensors) |
-| Idiomas soportados | Multilingüe (incluye inglés) |
-| Licencia | Apache 2.0 |
+| Arquitectura | Schema extraction (GLiNER2), encoder de texto con cabezas de clasificación |
+| Parámetros totales | 287.355.159 (287M) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | multilingual, en |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
-| Pipeline | token-classification |
-| Biblioteca | gliner2 |
-| Modelo base | fastino/gliner2.5-multi-v1 (fine-tune) |
-| Tamaño del repositorio | 1,2 GB |
-| Fecha de creacion / actualizacion | 2026-09-24 / 2026-09-24 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se describe como un encoder que resuelve la clasificación en una única pasada forward, sin generación de tokens y sin plantilla de prompt. Se apoya en conjuntos de etiquetas definidos en tiempo de ejecución: para tareas de etiqueta única devuelve una cadena y para tareas multilabel devuelve todas las etiquetas que superan un umbral. La misma llamada puede evaluar varias cabeceras (por ejemplo intención y sentimiento) de forma simultánea. Fastino enmarca la familia GLiNER2.5 como extracción de información guiada por esquema, con extracción de entidades y relaciones y sin límite fijo de longitud de span; la pipeline declarada del checkpoint es token-classification, lo que confirma capacidades de reconocimiento de entidades (NER).
+El modelo pertenece a la familia GLiNER2, descrita en el paper arXiv:2507.18546. Se trata de un encoder de texto con cabezas de clasificación que operan sobre representaciones de etiquetas proporcionadas en tiempo de inferencia: el usuario pasa un diccionario de tareas y etiquetas candidatas, y el modelo puntúa cada etiqueta contra el texto de entrada. La salida es determinista y estructurada, sin decodificación autoregresiva. Para tareas de etiqueta única devuelve una cadena; para tareas multietiqueta devuelve todas las etiquetas que superan el umbral.
 
-No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO. El modelo es un fine-tune del checkpoint fastino/gliner2.5-multi-v1. El único conjunto de evaluación referenciado es fastino/fast-decisions, con 17 dominios y 300 ejemplos reservados por dominio, empleando el mismo texto y las mismas etiquetas candidatas para todos los modelos comparados. No se han publicado detalles sobre innovaciones técnicas específicas de este fine-tune más allá del enfoque de etiquetas dinámicas en una sola pasada.
+El entrenamiento parte del modelo base `fastino/gliner2.5-multi-v1` mediante fine-tuning sobre un conjunto de datos de decisiones operativas. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. El benchmark asociado, `fastino/fast-decisions`, cubre 17 dominios con 300 ejemplos retenidos por dominio, aunque la suite es en inglés, lo que limita la evaluación de la capacidad multilingüe real. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Clasificación de texto con conjuntos de etiquetas arbitrarios definidos en tiempo de llamada (no fijados en el entrenamiento).
-- Tareas de etiqueta única (devuelve una cadena) y multilabel (devuelve todas las etiquetas por encima del umbral).
-- Evaluación de varias cabeceras o tareas en una única llamada.
-- Clasificación de intención, enrutado, sentimiento, prioridad, política y etiquetas de diversa índole.
-- Reconocimiento de entidades nombradas (pipeline token-classification) sobre documentos multilingües.
-- Respuesta a una pregunta sobre un pasaje (question answering cerrado sobre el texto dado).
-- Clasificación de tipo de documento y de temática (por ejemplo, clasificación de libros).
-- Uso de etiquetas que incluyen una descripción.
-- Puntuación de escalas ordinales.
-- Cobertura multilingüe, pensada explícitamente para entradas que no están en inglés.
-- No soporta tool calling, function calling, uso de agentes ni razonamiento multi-paso: no es un modelo generativo ni un LLM de propósito general.
+- Clasificación de texto con conjuntos de etiquetas definidos en tiempo de llamada, sin plantilla de prompt.
+- Clasificación de intención (customer support, banca, viajes, clínicas).
+- Análisis de sentimiento y clasificación de temas.
+- Clasificación multietiqueta: devuelve todas las etiquetas por encima del umbral.
+- Clasificación de etiqueta única: devuelve una única cadena.
+- Reconocimiento de entidades nombradas (NER) según los tags del modelo.
+- Clasificación ordinal (escalas de severidad, urgencia, prioridad).
+- Clasificación con etiquetas que llevan descripción asociada.
+- Respuesta a preguntas sobre un pasaje (question answering extractivo, según la model card).
+- Clasificación de tipo de documento y enrutamiento de correos y tickets.
+- Detección de derivación a humano, finalización de agente, moderación y spam.
+- Multilingüe, con especial orientación a entradas no inglesas.
+- Múltiples cabezas evaluadas en una sola llamada.
+- No soporta tool calling ni function calling en el sentido de los LLM generativos.
+- No soporta razonamiento multi-paso ni modo thinking.
 
 ## Casos de uso
 
-- Enrutado de soporte al cliente: dado un mensaje entrante y un conjunto de etiquetas como reembolso, cancelación, fallo de inicio de sesión o retraso de envío, el modelo devuelve la acción que debe tomar la cola, de modo que el flujo correcto arranca en el primer turno sin intervención humana.
-- Peticiones bancarias: una misma frase puede mezclar una transferencia pendiente, un cambio de beneficiario y una consulta de comisiones; el modelo mapea el enunciado a la operación que el sistema central debe abrir (transfer_cancel, beneficiary_add, fraud_report, etc.).
-- Peticiones de viaje: reservar, cambiar, cancelar y solicitar asiento se parecen en texto libre pero disparan llamadas de inventario distintas; el modelo convierte un chat o correo en una acción de reserva estructurada sin formulario.
-- Enrutado en clínica: los pacientes describen síntomas y lo que quieren en la misma frase (cita, receta, resultado, derivación); la recepción necesita esa distinción antes de asignar agenda.
-- Moderación, severidad, urgencia y detección de spam: clasificación de contenido en categorías operativas de política, con etiquetas configurables por despliegue.
-- Análisis de sentimiento de reseñas: puntuación de opiniones en una escala categórica u ordinal, con posibilidad de combinar sentimiento y temática en una sola llamada.
-- Enrutado de correos y tickets y handoff a humano: detección de la categoría del ticket y de la necesidad de escalar a una persona, integrable en el sistema de ticketing.
-- Clasificación documental multilingüe: asignación de tipo de documento y tema en corpus con varios idiomas, aprovechando la cobertura multilingüe del checkpoint frente a la versión solo inglesa.
-- Extracción de entidades en documentos: uso de la pipeline token-classification para NER sobre textos multilingües dentro de un esquema de etiquetas definido en la llamada.
+- Enrutamiento de atención al cliente: el modelo recibe el mensaje entrante y un conjunto de etiquetas de intención (reembolso, cancelación, problema de login, retraso de envío) y devuelve la acción que debe abrir la cola, arrancando el flujo correcto en el primer turno sin intervención humana.
+- Clasificación de operaciones bancarias: una única frase puede mezclar una transferencia pendiente, un cambio de beneficiario y una consulta de comisiones; el modelo mapea la utterance a la operación del catálogo de producto (transferencias, tarjetas, fraude, hipotecas) que el core bancario debe abrir.
+- Procesamiento de solicitudes de viaje: reservar, cambiar, cancelar y solicitar asiento se parecen en texto libre pero disparan llamadas de inventario distintas; el modelo convierte un chat o correo en una acción de reserva estructurada sin formulario.
+- Triaje de solicitudes clínicas: los pacientes describen síntomas y lo que quieren en la misma frase (cita, receta, resultado, derivación); el modelo distingue la intención para el enrutamiento de recepción antes de asignar agenda.
+- Moderación y clasificación de severidad: con etiquetas ordinales de severidad, urgencia o spam, el modelo puntúa contenido en una sola pasada, adecuado para pipelines de moderación que necesitan latencia baja y salida determinista.
+- Clasificación de documentos y correo: asignación de tipo documental y enrutamiento de correos o tickets hacia el equipo correspondiente, usando etiquetas con descripción para desambiguar categorías próximas.
+- Detección de derivación a humano: clasificación de cuándo una conversación debe escalar a un agente humano, integrable como paso previo en un sistema de agentes.
+- Etiquetado multietiqueta de reseñas: extracción simultánea de sentimiento, tema y prioridad sobre reseñas de producto en varios idiomas.
 
 ## Benchmarks y rendimiento
 
-Exact-match accuracy sobre fastino/fast-decisions (17 dominios, 300 ejemplos reservados por dominio, mismo texto y etiquetas candidatas para todos los modelos). La suite está en inglés.
+Exactitud de coincidencia exacta en `fastino/fast-decisions` (17 dominios, 300 ejemplos retenidos por dominio, mismos textos y etiquetas candidatas para todos los modelos). La suite es en inglés.
 
-| Modelo | Exact-match medio |
+| Modelo | Avg |
 |---|---:|
 | GLiNER2.5-Decide (340M) | 60,2 % |
 | GLiNER2.5-Decide-1B | 59,6 % |
@@ -72,52 +70,49 @@ Exact-match accuracy sobre fastino/fast-decisions (17 dominios, 300 ejemplos res
 | GLiFormer large-v1 | 49,0 % |
 | Laya Router | 46,6 % |
 
-Según el autor, para texto exclusivamente en inglés conviene usar GLiNER2.5-Decide, mientras que multi-Decide está pensado para entradas multilingües. No se han publicado resultados de benchmarks específicos para idiomas distintos del inglés en la información disponible.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de benchmarks multilingües para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en fp32 ≈1,15 GB; en fp16/bf16 ≈0,57 GB; en int8 ≈0,29 GB (estimaciones a partir de los 287 M de parámetros; el repositorio ocupa 1,2 GB).
-- GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente. Una RTX 3060, RTX 4060 o superior cubre el modelo con holgura; A100 o H100 no aportan ventaja por tamaño y resultan sobredimensionadas.
-- Cabe en GPU de consumo: sí, en prácticamente todas las GPU consumer actuales y también en CPU, dado su tamaño reducido.
-- Opciones de despliegue: la vía oficial es la biblioteca gliner2 mediante `AutoExtractor.from_pretrained(...)` sobre los pesos safetensors. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI (son runtimes orientados a modelos generativos y este es un encoder).
-- Latencia y throughput: no disponibles. El análisis externo de la familia menciona ejecución en CPU, pero no se aportan cifras concretas para este checkpoint.
+- VRAM estimada para inferencia: con 287M parámetros en fp32, aproximadamente 1,15 GB de pesos; en fp16, unos 0,57 GB; en int8, unos 0,29 GB. El repositorio ocupa 1,2 GB, lo que sugiere pesos en fp32 junto con otros artefactos.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM libre para fp32; A100, H100, RTX 4090, RTX 3090, RTX 4080, RTX 3060 y superiores son sobradamente suficientes.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: la vía documentada es el paquete `gliner2` con `AutoExtractor.from_pretrained`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; al no ser un modelo generativo, estos motores de inferencia no son aplicables de forma directa.
+- Latencia y throughput: no disponibles en la información proporcionada. Al ser un único forward pass sin generación de tokens, la latencia esperada es sustancialmente menor que la de un LLM generativo del mismo tamaño, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Exact-match (fast-decisions) | Enfoque |
+| Modelo | Parámetros | Contexto | Avg en fast-decisions | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiNER2.5-multi-Decide | 287 M | No disponible | Apache 2.0 | 56,7 % | Clasificación multilingüe por etiquetas |
-| GLiNER2.5-Decide | 340 M | No disponible | Apache 2.0 | 60,2 % | Clasificación en inglés |
-| GLiNER2.5-Decide-1B | 1 B | No disponible | Apache 2.0 | 59,6 % | Clasificación en inglés |
-| SemIf (Qwen3.5-4B) | 4 B | No disponible | No disponible | 56,4 % | Router/LLM generativo |
-| JevK5 | No disponible | No disponible | No disponible | 57,6 % | Router de clasificación |
-| GLiFormer large-v1 | No disponible | No disponible | No disponible | 49,0 % | Extracción/clasificación |
-| Laya Router | No disponible | No disponible | No disponible | 46,6 % | Router |
+| GLiNER2.5-multi-Decide | 287M | no disponible | 56,7 % | Apache 2.0 | Hugging Face |
+| GLiNER2.5-Decide | 340M | no disponible | 60,2 % | no disponible | Hugging Face |
+| GLiNER2.5-Decide-1B | 1B | no disponible | 59,6 % | no disponible | Hugging Face |
+| SemIf (Qwen3.5-4B) | 4B | no disponible | 56,4 % | no disponible | no disponible |
+| GLiFormer large-v1 | no disponible | no disponible | 49,0 % | no disponible | no disponible |
+| Laya Router | no disponible | no disponible | 46,6 % | no disponible | no disponible |
 
-La comparativa se limita a la métrica de exact-match sobre fastino/fast-decisions; no se dispone de parámetros, contexto ni licencia de las alternativas JevK5, GLiFormer large-v1 y Laya Router en la información proporcionada. multi-Decide rinde por debajo de las variantes específicas de inglés de la misma familia, lo que el autor justifica por su orientación multilingüe.
+La comparativa se limita al benchmark publicado por el autor. GLiNER2.5-Decide (340M) es la alternativa inglesa de la misma familia y obtiene 3,5 puntos más en una suite en inglés; GLiNER2.5-multi-Decide es la opción cuando la entrada no es inglesa. SemIf, basado en Qwen3.5-4B, obtiene un resultado ligeramente inferior con un tamaño catorce veces mayor.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de propósito general: no razona, no explica y no responde a preguntas abiertas. Su uso debe limitarse a clasificación con etiquetas cerradas.
-- La suite de benchmark empleada (fast-decisions) está en inglés; el rendimiento real en otros idiomas no está cuantificado en la información disponible.
-- Riesgo de alucinación: al no generar texto libre, el riesgo principal no es inventar contenido, sino asignar etiquetas incorrectas o forzar una etiqueta fuera de la distribución esperada cuando el texto no encaja claramente en ninguna categoría.
-- El comportamiento multilabel depende de un umbral de decisión; no se especifica el valor por defecto ni cómo ajustarlo.
-- Sesgos conocidos: no disponibles.
-- Longitud de contexto no documentada, lo que impide garantizar el comportamiento con entradas largas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial y modificación, con las obligaciones habituales de atribución y aviso de cambios.
-- Adopción temprana en el momento de la ficha (26 descargas, 12 likes), por lo que la validación por parte de terceros es limitada.
-- Para texto solo en inglés, el propio autor recomienda el modelo GLiNER2.5-Decide, con mejor exact-match.
+- No es un modelo de propósito general: no razona, no explica ni responde preguntas abiertas; usarlo fuera de tareas de clasificación produce resultados no válidos.
+- El benchmark publicado es exclusivamente en inglés, por lo que el rendimiento multilingüe real no está cuantificado.
+- Riesgo de alucinación de etiqueta: al puntuar etiquetas candidatas, puede asignar una etiqueta incorrecta cuando el texto es ambiguo o ninguna etiqueta se ajusta; conviene definir una etiqueta de escape tipo "other".
+- La longitud de contexto no está documentada, lo que impide planificar entradas largas con garantías.
+- No se documentan sesgos conocidos ni evaluaciones de equidad; al ser un modelo entrenado sobre decisiones operativas, puede heredar sesgos de los datos de fine-tuning no publicados.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base `fastino/gliner2.5-multi-v1` debe verificarse por separado.
+- El umbral de decisión para tareas multietiqueta no está documentado; es necesario calibrarlo por dominio en producción.
+- No soporta tool calling ni razonamiento multi-paso, por lo que no sustituye a un agente en flujos que requieran encadenar acciones.
+- La dependencia del paquete `gliner2` para la carga vía `AutoExtractor` limita la portabilidad frente a un `transformers` estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/fastino/GLiNER2.5-multi-Decide
 - Modelo base: https://huggingface.co/fastino/gliner2.5-multi-v1
-- Dataset de evaluación: https://huggingface.co/datasets/fastino/fast-decisions
-- Paper (arXiv 2507.18546): https://arxiv.org/abs/2507.18546
+- Variante inglesa: https://huggingface.co/fastino/GLiNER2.5-Decide
+- Variante inglesa 1B: https://huggingface.co/fastino/GLiNER2.5-Decide-1B
+- Dataset de benchmark: https://huggingface.co/datasets/fastino/fast-decisions
+- Paper: https://arxiv.org/abs/2507.18546
 - Repositorio GitHub: https://github.com/fastino-ai/GLiNER2
-- Página del modelo en Fastino: https://fastino.ai/models/gliner2-5
-- Sitio de Fastino Labs: https://fastino.ai/
-- Colección GLiNER2.5 en Hugging Face: https://huggingface.co/collections/fastino/gliner25-models
-- Análisis externo de GLiNER2.5-Decide: https://www.explainx.ai/blog/gliner-2-5-decide-fastino-340m-open-weight-decision-model-2026
-- Variante en inglés: https://huggingface.co/fastino/GLiNER2.5-Decide
-- Variante de 1B en inglés: https://huggingface.co/fastino/GLiNER2.5-Decide-1B
+- Plataforma de fine-tuning: https://agent.fastino.ai
+- X/Twitter: https://x.com/fastinoAI

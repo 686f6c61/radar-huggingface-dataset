@@ -37,8 +37,8 @@
     "region:us",
     "conversational"
   ],
-  "likes": 215,
-  "downloads_30d": 232336,
+  "likes": 216,
+  "downloads_30d": 231716,
   "trending_score": 10,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "huihui-ai (huihui.ai) - Hugging Face",
-      "url": "https://huggingface.co/huihui-ai",
-      "snippet": "updateda model3 days ago huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF likeda model4 days ago Qwen/Qwen3.8-Flash-Next View all activity Organizations Collections46"
-    },
-    {
-      "title": "huihui_ai - ollama.com",
-      "url": "https://ollama.com/huihui_ai",
-      "snippet": "qwq-fusion is a mixed model that combines the strengths of two powerful Qwen-based models: huihui-ai/QwQ-32B-Preview-abliterated and huihui-ai/Qwen2.5-Coder-32B-Instruct-abliterated."
-    },
-    {
-      "title": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF · Hugging Face",
-      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF",
-      "snippet": "Instructions to use huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Huihui-ai - Find Top AI Models on Hugging Face",
-      "url": "https://www.aimodels.fyi/creators/huggingFace/huihui-ai",
-      "snippet": "Huihui-GLM-5.2-abliterated-GGUF is an uncensored variant of the GLM-5.2 language model created by huihui-ai using abliteration—a technique that removes refusal mechanisms from the base model without using Tran…"
-    },
-    {
-      "title": "Hui (ethnie) — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Hui_(ethnie)",
-      "snippet": "utilisationpour plus de détails, ainsi que les crédits graphiques. En cas de réutilisation des textes de cette page, voyez comment citer …"
-    }
-  ]
+  "sources": []
 }

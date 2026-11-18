@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/AstroSage-70B-base-GGUF",
+  "slug": "mradermacher-astrosage-70b-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AstroSage-70B-base-GGUF",
+  "created_at": "2025-08-30T07:28:53.000Z",
+  "updated_at": "2026-11-18T08:38:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:AstroMLab/AstroSage-70B-base",
+    "base_model:quantized:AstroMLab/AstroSage-70B-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302981664,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "AstroMLab/AstroSage-70B-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

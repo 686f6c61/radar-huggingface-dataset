@@ -58,16 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Trivnpk/Qwen-Compiler-Mind-4B · Hugging Face",
-      "url": "https://huggingface.co/Trivnpk/Qwen-Compiler-Mind-4B",
-      "snippet": "Instructions to use Trivnpk/Qwen-Compiler-Mind-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Trivnpk/Qwen-Compiler-Mind-4B with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "Qwen (Qwen) – Models - Hugging Face",
-      "url": "https://huggingface.co/Qwen/models",
-      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
-    }
-  ]
+  "sources": []
 }

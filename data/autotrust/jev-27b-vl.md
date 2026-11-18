@@ -2,118 +2,129 @@
 
 ## Resumen
 
-JEV-27B-VL es un modelo multimodal (image-text-to-text) desarrollado por autotrust que parte de Qwen/Qwen3.8-27B y le anade capacidad de vision. Su propuesta central es doble: por un lado, un modo "System 2" que es el propio Qwen3.8-27B sin modificar, capaz de razonar paso a paso y generar texto a partir de texto e imagenes; por otro, un modo "System 1" que convierte la inferencia en decisiones tipadas (si/no, elegir una entre 2 y 256 opciones, valorar de 0 a 5) y devuelve una probabilidad calibrada por opcion en un unico forward pass, sin muestreo autoregresivo.
+JEV-27B-VL es un modelo multimodal de tipo image-text-to-text desarrollado por autotrust, construido como un adaptador LoRA sobre el modelo base Qwen/Qwen3.8-27B. Su propuesta central es convertirse en un "modelo de decisión" (decision model): en lugar de generar texto libre, expone decisiones tipadas con probabilidades calibradas, lo que permite integrarlo en sistemas de ranking, recomendación y búsqueda sin necesidad de un equipo completo de reordenación. Incorpora un esquema de dos sistemas (System 1 rápido y System 2 con razonamiento) heredado del modelo base.
 
-El modelo se distribuye bajo licencia Apache 2.0, con 27.781.427.952 parametros reales verificados en safetensors y un repositorio de 56,0 GB. Soporta prompts de hasta 256K tokens y esta pensado para escenarios donde hace falta una senal probabilistica rapida y barata: recomendacion zero-shot, clasificacion de intenciones, control de entornos interactivos o filtrado con umbrales de confianza.
+El modelo resuelve el problema de convertir un LLM generativo en un componente de decisión fiable y medible: cada elección se emite como una distribución de probabilidad sobre opciones discretas, lo que facilita la evaluación y la integración en pipelines. Es relevante ahora porque demuestra que un adaptador pequeño sobre un modelo denso de 27B puede competir en benchmarks de razonamiento encarnado (ERQA) con modelos cerrados de primera línea, sin entrenamiento específico en datos de robótica.
 
-Su relevancia actual radica en que demuestra que un modelo de casi 28B puede igualar a un sistema de filtrado colaborativo entrenado con historiales de 59.045 usuarios en recomendacion de video corto, usando unicamente las portadas de los videos y sin ningun dato de comportamiento. Ademas expone System 1 sobre HTTP plano mediante un endpoint `POST /v1/decide` sobre vLLM, lo que facilita su integracion en pipelines existentes.
+La arquitectura subyacente es un transformer denso de 27.781.427.952 parámetros (según los pesos en safetensors), con capacidades de visión y un modo de razonamiento opcional. El modelo se distribuye bajo licencia Apache 2.0 y está pensado para despliegue conversacional y mediante vLLM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (vision-language) derivada de Qwen3.8-27B; identificador de arquitectura `qwen3_5` en transformers |
-| Parametros totales | 27.781.427.952 (~27,8 mil millones) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 256K tokens (verificados hasta 250K tokens de texto en la model card) |
+| Arquitectura | Transformer denso multimodal (image-text-to-text), adaptador LoRA sobre Qwen/Qwen3.8-27B |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ingles (`en`) |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers); repositorio de 56,0 GB |
-| Relacion con el modelo base | `base_model_relation: adapter` (LoRA) sobre Qwen/Qwen3.8-27B |
-| Pipeline | image-text-to-text |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card describe dos modos que conviven en el mismo modelo. "System 2" es, segun el autor, el Qwen3.8-27B sin modificar: un transformer con entrada de imagen que puede razonar paso a paso y devolver texto. "System 1" anade una cabeza de decision tipada que, dado un estado (texto y/o imagen), una pregunta y un conjunto de opciones, produce una probabilidad calibrada para cada opcion en un solo forward pass, sin decodificacion autoregresiva. Los metadatos lo etiquetan como `adapter` (LoRA) sobre el modelo base, aunque el repositorio contiene 27,78 mil millones de parametros en safetensors (56 GB), un volumen compatible con pesos completos en BF16/FP16 mas que con un adaptador ligero.
+El modelo es un adaptador LoRA (base_model_relation: adapter) sobre Qwen/Qwen3.8-27B, un transformer denso de aproximadamente 27,8 mil millones de parámetros con torre de visión. La innovación principal no está en la arquitectura del transformer, sino en el esquema de decisión: el modelo emite "typed decisions" con probabilidades calibradas, y distingue entre System 1 (una pasada rápida, sin razonamiento explícito) y System 2 (el modelo base sin modificar, que razona antes de responder y cuya distribución de respuesta se combina al 50/50 con la de System 1). El modo `thinking` admite los valores `on`, `off` y `auto`; en `auto` solo se activa el razonamiento cuando la confianza de System 1 es inferior a 0,8.
 
-La informacion disponible no detalla la composicion del dataset de entrenamiento, el numero de tokens vistos, ni si hubo RLHF, DPO u otra fase de alineacion: esos datos no estan disponibles en la model card. Lo que si se documenta es el comportamiento zero-shot: el modelo resuelve clasificacion con hasta 256 opciones sin reentrenamiento, mantiene la precision en prompts de hasta 250K tokens con una frase relevante oculta a profundidad aleatoria (20 de 20 aciertos en todas las longitudes probadas) y admite descripciones de una linea por opcion que mejoran el resultado (en CLINC150 pasa de 89,5% a 93,8%). La model card tambien senala empiricamente que el formato JSON frente a texto plano y las instrucciones adicionales no producen diferencias medibles.
+Los datos de entrenamiento provienen del corpus SargeDev/jev-distill-corpus-v3, descrito en la model card como exclusivamente textual: no se incluyeron datos de robots ni de razonamiento encarnado en el entrenamiento de decisión. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO. Se citan dos referencias arXiv (2609.14973 y 2512.16899) que probablemente documentan el método, aunque su contenido no está disponible en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento paso a paso mediante el modo System 2 (Qwen3.8-27B sin modificar, con entrada de imagen).
-- Decisiones tipadas en System 1: preguntas de si/no, eleccion de una opcion entre 2 y 256 alternativas, y valoraciones en escala 0-5, sobre texto e imagenes.
-- Salida de probabilidad calibrada por cada opcion en un unico forward pass, apta para uso directo como score o umbral.
-- Clasificacion de intenciones zero-shot (evaluado en CLINC150 con las 150 intenciones como opciones).
-- Recomendacion zero-shot de video corto a partir de portadas, sin historial de interacciones ni embeddings de item.
-- Reconocimiento progresivo de dibujos (Quick, Draw!), incluyendo prediccion con trazos incompletos.
-- Control de entornos interactivos: los ejemplos de la model card incluyen Super Mario Bros., Tetris, Snake y la resolucion de un cubo de Rubik de 25 movimientos eligiendo entre 11 formulas.
-- Servicio HTTP de System 1 sobre vLLM mediante `serve_decide.py` y el endpoint `POST /v1/decide`.
-- Soporte de tool calling y function calling: no disponible.
-- Soporte de agentes y multi-step reasoning: no disponible de forma explicita mas alla del modo System 2.
-- Capacidades multilingues: solo ingles segun los metadatos.
+- Generación de texto conversacional y razonamiento multimodal (imagen + texto) mediante pipeline image-text-to-text.
+- Decisiones tipadas con probabilidades calibradas: emisión de distribuciones sobre opciones discretas (por ejemplo, preguntas de elección múltiple A-D) a través del endpoint `POST /v1/decide`.
+- Modo System 1 (una pasada, baja latencia) y System 2 (razonamiento explícito con el modelo base), con control mediante el parámetro `thinking` (`on`, `off`, `auto`).
+- Modo `thinking: "auto"` que activa el razonamiento solo cuando la confianza de System 1 es inferior a 0,8, equilibrando latencia y precisión.
+- Razonamiento espacial, de acción, de trayectoria, de estimación de estado, de tarea y multivista sobre imágenes, según las categorías evaluadas en ERQA.
+- Razonamiento encarnado zero-shot sin entrenamiento específico en robótica.
+- Capacidades de recomendación y reordenación de resultados de búsqueda (demostrado en la demo GuruSearch).
+- Soporte de despliegue con vLLM y servidor propio (`serve.sh`).
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible explícitamente, aunque el modo System 2 implica razonamiento en varios pasos.
 
 ## Casos de uso
 
-- Recomendacion de video corto en feeds tipo TikTok: el modelo recibe las portadas de los ultimos 5 videos vistos por el usuario mas la portada candidata y devuelve P(el usuario lo ve), lo que permite puntuar un video recien subido antes de que nadie lo haya visto. Es el caso que resuelve el problema de cold-start que el filtrado colaborativo no cubre.
-- Clasificacion de intenciones en asistentes y chatbots: con las 150 intenciones de CLINC150 como opciones, obtiene 93,8% zero-shot usando descripciones de una linea, sin necesidad de reentrenar al anadir clases nuevas.
-- Moderacion de contenido con umbral de confianza: al devolver una probabilidad calibrada por opcion (por ejemplo, permitir / revisar / bloquear), permite fijar umbrales operativos y derivar solo los casos dudosos a revision humana.
-- Enrutado y triaje de peticiones: usar System 1 para decidir a que modelo o herramienta derivar cada consulta, aprovechando el coste de un solo forward pass frente a una generacion completa.
-- Reconocimiento de bocetos en aplicaciones educativas o de dibujo: la model card reporta 88% de acierto con el dibujo terminado y 62% con solo el 60% de los trazos, con unos 270 ms por intento.
-- Agentes que juegan o controlan entornos discretos: elegir accion entre un conjunto cerrado de movimientos con latencias de 46 a 300 ms por decision segun el entorno (Rubik, Tetris, Mario, Snake).
-- Encuestas y recogida de valoraciones: mapear texto o imagenes a una escala 0-5 con distribucion de probabilidad, util para analisis de sentimiento graduado o puntuacion automatica de contenido.
+- Reordenación de resultados de búsqueda: el modelo recibe consulta y candidatos y emite una decisión calibrada de relevancia por resultado, como en la demo GuruSearch que reordena Google News, Bing News y Yahoo News junto a una respuesta corta con citas. Es adecuado porque la salida probabilística permite umbrales y comparaciones directas.
+- Recomendación de contenidos: ranking de titulares de múltiples fuentes por importancia en aproximadamente medio segundo por decisión (System 1), lo que permite actualizaciones frecuentes en producción.
+- Razonamiento encarnado y robótica: responder preguntas de elección múltiple sobre escenas reales de robot (estado de un cajón, trayectoria de un gripper, éxito de una tarea) con 61,5% en ERQA en modo thinking medium, sin entrenamiento específico en robótica.
+- Moderación y clasificación con probabilidades calibradas: usar el endpoint de decisión para asignar categorías con confianza medible, aprovechando la calibración para fijar umbrales de revisión humana.
+- Asistentes conversacionales multimodales: conversaciones multi-turno con imágenes en inglés, con la posibilidad de activar razonamiento solo en consultas de baja confianza para controlar coste y latencia.
+- Evaluación automatizada de sistemas visuales: usar el modo `choice` para convertir preguntas abiertas de benchmarks en decisiones discretas, evitando pérdidas por formato de respuesta.
+- Enrutamiento con razonamiento adaptativo: el modo `thinking: "auto"` permite desplegar un único modelo que responde rápido en la mayoría de consultas y razona solo cuando la confianza es baja, reduciendo el coste medio de inferencia.
 
 ## Benchmarks y rendimiento
 
-Recomendacion zero-shot de video corto en MicroLens-100k (200 usuarios, el video realmente visto siguiente oculto entre 19 candidatos de una ventana de +/-3 dias; cada metodo ordena los 20 candidatos):
+Resultados en ERQA (400 preguntas de elección múltiple, azar aproximado del 26%, intervalo del 95% de ±5 puntos), medidos por el autor con su propio `serve.sh` en una GPU B200:
 
-| Metodo | Usa historial de interacciones | AUC | HR@5 | NDCG@10 |
-|---|---|---:|---:|---:|
-| Orden aleatorio | no | 0,489 | 0,205 | 0,219 |
-| Similitud de titulos (TF-IDF) | no | 0,602 | 0,385 | 0,367 |
-| JEV-27B-VL System 1, solo titulos | no, zero-shot | 0,649 | 0,455 | 0,399 |
-| JEV-27B-VL System 1, solo portadas | no, zero-shot | 0,727 | 0,590 | 0,498 |
-| Filtrado colaborativo item-based | si, 59.045 usuarios | 0,728 | 0,490 | 0,503 |
+| Tipo de pregunta | Preguntas | Una pasada | Thinking (low) | Thinking (medium) |
+|---|---:|---:|---:|---:|
+| **Total** | 400 | **53,8%** | **60,0%** | **61,5%** |
+| Razonamiento espacial | 84 | 53,6% | 59,5% | 58,3% |
+| Razonamiento de acción | 72 | 58,3% | 54,2% | 59,7% |
+| Razonamiento de trayectoria | 66 | 51,5% | 65,2% | 63,6% |
+| Estimación de estado | 55 | 65,5% | 72,7% | 63,6% |
+| Razonamiento de tarea | 38 | 55,3% | 65,8% | 60,5% |
+| Razonamiento multivista | 37 | 32,4% | 37,8% | 54,1% |
+| Pointing | 34 | 67,6% | 73,5% | 88,2% |
+| Otros | 14 | 14,3% | 28,6% | 28,6% |
 
-Otros resultados publicados en la model card:
+Comparativa en ERQA según la tabla publicada por el autor:
 
-| Tarea | Resultado |
-|---|---|
-| CLINC150, 150 intenciones como opciones, solo nombres | 89,5% |
-| CLINC150, 150 intenciones con descripcion de una linea | 93,8% |
-| Recuperacion de una frase en prompts de hasta 250K tokens | 20 de 20 correctos en todas las longitudes probadas |
-| Quick, Draw!, dibujo terminado (16 respuestas) | 88% de acierto |
-| Quick, Draw!, con el 60% de los trazos | 62% de acierto (6% por azar) |
+| Puesto | Modelo | Ajuste | ERQA | Datos de robótica |
+|---:|---|---|---:|---|
+| 1 | GPT 6 Astra | cerrado, low thinking | 75,8 | — |
+| 2 | Gemini 3.6 Flash | cerrado, minimal thinking | 72,3 | — |
+| 3 | JEV-27B-VL | thinking on (medium) | 61,5 | ninguno (solo texto) |
+| 3 | Claude Opus 5 | cerrado, adaptive low effort | 61,5 | — |
+| 5 | JEV-27B-VL | thinking on (low) | 60,0 | ninguno (solo texto) |
+| 6 | vllm-sr/d3 (27B) | una pasada | 58,8 | no revelado |
+| 7 | GEV-26B-Decide | thinking on | 56,8 | ninguno (solo texto) |
+| 8 | Hy-Embodied-VLM-1.0 (30B-A3B) | thinking | 56,3 | sí |
+| 9 | JEV-27B-VL | una pasada | 53,8 | ninguno (solo texto) |
+| 10 | PhysBrain 1.5 (8B) | — | 52,8 | sí |
+| 11 | JEV-35B | una pasada | 51,3 | ninguno (solo texto) |
+| 12 | Cosmos3 Nano (8B + 8B) | — | 47,5 | sí |
 
-Diferencias reportadas por el autor: las portadas superan a los titulos en +0,078 AUC (intervalo del 95%: +0,031 a +0,126); la diferencia de AUC frente al filtrado colaborativo es 0,000 (intervalo del 95%: -0,041 a +0,040), con mejor HR@5 (59% frente a 49%). Todos estos datos provienen de la model card del autor y no consta verificacion independiente. No hay resultados publicados de MMLU, HumanEval, GSM8K ni benchmarks similares en la informacion disponible.
+Datos adicionales de latencia y longitud de razonamiento: mediana de 687 tokens de pensamiento en low y 814 en medium; mediana de 1,15 s por pregunta en una pasada (16 peticiones en paralelo), 12,1 s en low y 13,9 s en medium (8 peticiones en paralelo). Con `thinking: "auto"` (305 de 400 preguntas activaron razonamiento) se obtuvo 59,5% en low y 61,0% en medium. No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, calculada a partir de los 27,78 mil millones de parametros: unos 56 GB en BF16/FP16, unos 28 GB en INT8 y unos 14 GB en INT4. Son estimaciones derivadas del numero de parametros, no cifras publicadas por el autor.
-- A la VRAM de pesos hay que sumar la cache KV, que con 256K tokens de contexto puede ser muy elevada; el autor no publica cifras de memoria para el contexto maximo.
-- GPU recomendadas para BF16: A100 80 GB o H100 80 GB. Para INT8 puede bastar una A100 40 GB, con margen ajustado.
-- En GPU de consumo: una RTX 4090 (24 GB) o RTX 3090 (24 GB) no admiten BF16 completo; requeririan cuantizacion a 4 bits (unos 14 GB de pesos), y el contexto practico quedaria muy limitado por la cache KV.
-- Despliegue: transformers como libreria principal (etiqueta del repositorio) y vLLM, usado por el propio autor para exponer `POST /v1/decide` mediante `serve_decide.py`. No se confirma soporte de GGUF, llama.cpp u Ollama en la informacion disponible. El tag `endpoints_compatible` indica compatibilidad con endpoints gestionados.
-- Latencia observada en la model card (System 1, una decision por forward pass): unos 46 ms en cubo de Rubik, 122 ms en Tetris, 150 ms en Super Mario Bros., 270 ms por intento en Quick, Draw! y 300 ms en Snake. En el demo de recomendacion, 20 portadas candidatas se puntuan en aproximadamente 2,6 s en una sola GPU. No se publican cifras de throughput para generacion de texto (System 2).
+- VRAM estimada para inferencia: no disponible de forma explícita; con 27,78 mil millones de parámetros en safetensors, en FP16 se necesitan aproximadamente 56 GB solo para pesos, más memoria para el contexto y la torre de visión.
+- GPU recomendadas: el autor reporta mediciones en una NVIDIA B200; para FP16 se requiere una GPU con 80 GB o más (A100 80GB, H100, B200).
+- Cabe en GPU de consumo: no en FP16; con cuantización de 4 bits podría aproximarse a los 16-18 GB, aunque no se publican cuantizaciones oficiales ni cifras verificadas.
+- Opciones de despliegue: vLLM (etiqueta oficial), transformers, y el `serve.sh` propio del autor que expone `POST /v1/decide` y modo conversacional.
+- Latencia y throughput: 1,15 s por pregunta en System 1 con 16 peticiones paralelas; 12-14 s por pregunta con thinking y 8 peticiones paralelas, en una B200.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Entrada | Modo de salida | Licencia |
+| Modelo | Parámetros | Contexto | ERQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| autotrust/JEV-27B-VL | 27,78 mil millones | 256K tokens | texto + imagen | System 1 (probabilidades) y System 2 (texto) | apache-2.0 |
-| autotrust/JEV-27B | no disponible | no disponible | texto | System 1 y System 2 | no disponible |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible | no disponible | texto (segun el autor, System 2 lo usa con imagen) | texto / razonamiento | no disponible |
+| JEV-27B-VL | 27,78B | no disponible | 61,5% (thinking medium) | Apache 2.0 | Hugging Face |
+| GEV-26B-Decide | ~26B | no disponible | 56,8% (thinking) | no disponible | no disponible |
+| Hy-Embodied-VLM-1.0 | 30B-A3B (MoE) | no disponible | 56,3% (thinking) | no disponible | no disponible |
+| PhysBrain 1.5 | 8B | no disponible | 52,8% | no disponible | no disponible |
+| vllm-sr/d3 | 27B | no disponible | 58,8% (una pasada) | no disponible | no disponible |
 
-La comparativa mas informativa de la model card es funcional, no de parametros: frente al filtrado colaborativo item-based entrenado con 59.045 usuarios, JEV-27B-VL System 1 iguala el AUC (0,727 frente a 0,728) y mejora el HR@5 (0,590 frente a 0,490) sin usar ningun dato de comportamiento. Frente a la similitud de titulos por TF-IDF, la mejora es de +0,125 AUC. No se dispone de datos de otros modelos multimodales comparables en la informacion proporcionada.
+La comparativa se limita a los datos de ERQA publicados por el autor; no se dispone de información sobre contexto, licencia ni disponibilidad de los modelos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo declara soporte de ingles (`en`); no hay evidencia de capacidades multilingues y el castellano no esta cubierto en los metadatos.
-- Origen de los datos: todos los benchmarks proceden de la model card del propio autor; no consta replicacion independiente.
-- Riesgo de alucinacion: el modo System 2 es el Qwen3.8-27B sin modificar, por lo que hereda sus riesgos de generacion no fiable. El modo System 1 mitiga esto al no generar texto libre, pero sigue siendo una estimacion probabilistica.
-- Calibracion: se afirma que las probabilidades estan calibradas, pero no se detalla el metodo ni se aportan diagramas de calibracion (fiabilidad, ECE) en la informacion disponible.
-- Contexto: aunque se declaran 256K tokens, no se publican datos de rendimiento ni de memoria en longitudes intermedias mas alla de la prueba de recuperacion de una frase.
-- Inconsistencia en los metadatos: el campo `base_model_relation: adapter` y la etiqueta `lora` apuntan a un adaptador, pero el repositorio contiene 27,78 mil millones de parametros y 56 GB, volumen propio de pesos completos. Conviene verificar que artefacto se esta descargando antes de desplegar.
-- Seccion truncada: la model card incluye un apartado "Highlight: age..." cuyo contenido no esta disponible en la informacion proporcionada.
-- Licencia: Apache 2.0 permite uso comercial, pero al derivar de Qwen/Qwen3.8-27B conviene revisar las condiciones de la licencia del modelo base.
-- No se confirma soporte de tool calling, function calling ni de cuantizacion a GGUF, lo que limita su uso en despliegues ligeros.
-- Los resultados en juegos y en Quick, Draw! se presentan como demostraciones en video, sin protocolo de evaluacion detallado ni numero de episodios.
+- Idioma: el modelo solo declara soporte de inglés (`language: en`); el rendimiento en castellano u otros idiomas no está documentado.
+- Longitud de contexto: no disponible en la model card; conviene verificarla antes de usos con documentos largos.
+- Riesgo de alucinación: inherente a un modelo generativo de 27B; el modo de decisión con probabilidades calibradas mitiga parte del problema en tareas de elección, pero no en generación libre.
+- Sesgos: no se documentan análisis de sesgo en la información proporcionada.
+- Calibración: las probabilidades calibradas son una afirmación del autor; no se aportan métricas de calibración (ECE, Brier) en la información disponible.
+- Resultados de ERQA: medidos por el propio autor con su servidor, sobre 400 preguntas con intervalo del 95% de ±5 puntos; la comparación con modelos cerrados proviene de terceros (informe PhysBrain 1.5) y no de una evaluación independiente uniforme.
+- Entrenamiento sin datos de robótica: el buen resultado en ERQA es zero-shot; no hay garantía de comportamiento en control de robots reales.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un adaptador sobre Qwen/Qwen3.8-27B conviene verificar que la licencia del modelo base sea compatible.
+- Producción: el endpoint `POST /v1/decide` y el `serve.sh` son herramientas del autor; no se documenta su madurez ni soporte a largo plazo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/autotrust/JEV-27B-VL
-- Modelo base textual (referencia del autor): https://huggingface.co/autotrust/JEV-27B
-- Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Paper citado en los metadatos: https://arxiv.org/abs/2512.16899
-- Codigo, pipeline de datos y demo web (recomendacion de video): https://github.com/yuhai-china/JEV-27B-DEMO/tree/master/07-video-recommendation
-- Dataset MicroLens-100k: https://github.com/westlake-repl/MicroLens
+- Blog del autor: https://huggingface.co/blog/autotrust/one-decision-model-instead-of-a-ranking-team-short
+- Demo en vivo (GuruSearch): https://news.guru.so/ui
+- Benchmark ERQA: https://github.com/embodiedreasoning/ERQA
+- Dataset de destilación: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Paper 1: https://arxiv.org/abs/2609.14973
+- Paper 2: https://arxiv.org/abs/2512.16899

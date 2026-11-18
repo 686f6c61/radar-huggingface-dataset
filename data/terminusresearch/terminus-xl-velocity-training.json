@@ -18,8 +18,6 @@
     "stable-diffusion-diffusers",
     "text-to-image",
     "full",
-    "base_model:terminusresearch/terminus-xl-velocity-v2",
-    "base_model:finetune:terminusresearch/terminus-xl-velocity-v2",
     "license:creativeml-openrail-m",
     "endpoints_compatible",
     "diffusers:StableDiffusionXLPipeline",

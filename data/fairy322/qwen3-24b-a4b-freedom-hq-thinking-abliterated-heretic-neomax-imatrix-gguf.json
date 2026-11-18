@@ -60,8 +60,6 @@
     "base_model:merge:DavidAU/Qwen3-4B-Thinking-2507-Claude-4.5-Opus-High-Reasoning-Distill-Heretic-Abliterated",
     "base_model:DavidAU/Qwen3-4B-Thinking-2507-Gemini-2.5-Flash-Lite-Preview-Distill-Heretic-Abliterated",
     "base_model:merge:DavidAU/Qwen3-4B-Thinking-2507-Gemini-2.5-Flash-Lite-Preview-Distill-Heretic-Abliterated",
-    "base_model:DavidAU/Qwen3-4B-Thinking-2507-Gemini-3-Pro-Preview-High-Reasoning-Distill-Heretic-Abliterated",
-    "base_model:merge:DavidAU/Qwen3-4B-Thinking-2507-Gemini-3-Pro-Preview-High-Reasoning-Distill-Heretic-Abliterated",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -69,7 +67,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 177,
+  "downloads_30d": 174,
   "trending_score": 0,
   "parameters": 17859964416,
   "parameters_human": "17.86B",

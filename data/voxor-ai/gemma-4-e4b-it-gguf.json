@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "coffeecatai/gemma-4-e4b-it-gguf",
+  "renamed_at": "2026-11-18T10:55:42.749Z",
   "benchmarks": [],
   "sources": []
 }

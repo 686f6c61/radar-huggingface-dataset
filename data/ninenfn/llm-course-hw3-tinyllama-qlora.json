@@ -5,7 +5,7 @@
   "author": "ninenfn",
   "url": "https://huggingface.co/ninenfn/llm-course-hw3-tinyllama-qlora",
   "created_at": "2026-11-18T01:20:11.000Z",
-  "updated_at": "2026-11-18T01:20:17.000Z",
+  "updated_at": "2026-11-18T03:06:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,7 +14,11 @@
   "tags": [
     "transformers",
     "safetensors",
-    "arxiv:1910.09700",
+    "qlora",
+    "homework",
+    "sentiment-analysis",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:finetune:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
     "endpoints_compatible",
     "region:us"
   ],
@@ -23,10 +27,10 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 50503544,
-  "storage_human": "51 MB",
+  "storage_bytes": 101506811,
+  "storage_human": "102 MB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"
   ],

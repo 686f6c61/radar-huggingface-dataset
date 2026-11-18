@@ -53,7 +53,7 @@
     "region:us"
   ],
   "likes": 46,
-  "downloads_30d": 47050,
+  "downloads_30d": 57046,
   "trending_score": 8,
   "parameters": 126192584851,
   "parameters_human": "126.19B",
@@ -74,31 +74,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
-    },
-    {
-      "title": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed · Hugging Face",
-      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed",
-      "snippet": "Instructions to use Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality · Hugging Face",
-      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3.8",
-      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
-    },
-    {
-      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes",
-      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
-      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
-    }
-  ]
+  "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "lhallee",
   "url": "https://huggingface.co/lhallee/Llama-many-generator-detector-ModernBERT-base",
   "created_at": "2026-11-16T04:20:59.000Z",
-  "updated_at": "2026-11-16T04:21:10.000Z",
+  "updated_at": "2026-11-17T19:56:41.000Z",
   "license": "research-artifact-mixed-sources",
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "lhallee/ai-vs-human-checker",
+  "renamed_at": "2026-11-18T07:51:46.685Z",
   "benchmarks": [],
   "sources": []
 }

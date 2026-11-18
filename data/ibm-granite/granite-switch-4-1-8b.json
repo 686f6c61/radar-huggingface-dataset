@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 56,
-  "downloads_30d": 6115,
+  "downloads_30d": 6101,
   "trending_score": 11,
   "parameters": 8776400896,
   "parameters_human": "8.78B",
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "IBM",
-      "url": "https://www.ibm.com/",
-      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …Read more"
-    },
-    {
-      "title": "IBM - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/IBM",
-      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
-    },
-    {
-      "title": "IBM",
-      "url": "https://www.ibm.com/fr-fr",
-      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
-    },
-    {
-      "title": "IBM — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/IBM",
-      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
-    },
-    {
-      "title": "History of IBM - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/History_of_IBM",
-      "snippet": "The new name was first used for the company's Canadian subsidiary in 1917, and was formally changed on February 14, 1924. [30] …"
-    }
-  ]
+  "sources": []
 }

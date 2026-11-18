@@ -2,100 +2,93 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-ConvFill es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario andito en Hugging Face. Se trata de un modelo de lenguaje causal de tipo transformer decoder-only con 752.393.024 parametros (aproximadamente 0,75 mil millones), orientado a generacion de texto y etiquetado como `conversational` en el repositorio. El sufijo «ConvFill» sugiere, a partir del nombre y sin confirmacion documental, un entrenamiento orientado a completar o rellenar turnos en conversaciones, aunque la model card no describe el dataset ni el objetivo.
+Qwen3.5-0.8B-ConvFill es un ajuste fino completo del modelo Qwen/Qwen3.5-0.8B, desarrollado por el usuario andito, especializado en la tarea **ConvFill** descrita en el articulo *Thinking While Speaking: Inference-Time Knowledge Transfer for Responsive and Intelligent Conversational Voice Agents* (arXiv 2511.07397). El modelo desempena el rol de **Talker**: un modelo pequeno que se ejecuta en dispositivo y que genera una frase conversacional por cada elemento recibido en streaming desde un Reasoner en la nube, ya sea un fragmento de conocimiento o un token especial `<sil>` cuando no ha llegado ningun fragmento en el ultimo segundo.
 
-El interes practico del modelo es limitado pero claro: sirve como ejemplo de pipeline de fine-tuning completo con la libreria `transformers` (version 5.20.2) sobre una arquitectura reciente (`qwen3_5_text`), y como baseline de muy bajo coste computacional para tareas de generacion corta. El entrenamiento documentado es muy breve —30 pasos, 1,2 epocas, batch total de 16—, lo que sugiere un ajuste ligero sobre un conjunto de datos pequeno y no especificado.
+La relevancia del modelo radica en su enfoque de arquitectura en dos niveles para agentes de voz conversacionales: un modelo grande en la nube razona y recupera conocimiento, mientras que este modelo pequeno (752 millones de parametros) se encarga de producir habla de relleno natural y frases puente con baja latencia. Esto permite respuestas mas agiles sin sacrificar la calidad del razonamiento.
 
-No hay informacion publicada sobre la longitud de contexto, los idiomas soportados ni resultados de evaluacion mas alla de la perdida declarada (0,0001 en validacion). El repositorio no tiene descargas ni interacciones en el momento de la consulta, y la model card es la plantilla autogenerada por `Trainer` sin completar, por lo que la mayor parte de las afirmaciones sobre capacidades deben tratarse como no verificadas.
+El modelo se entreno sobre el dataset zenglhardt/convfill-dataset con 261.354 ejemplos de entrenamiento y 29.217 de validacion, alcanzando una perdida de validacion final de 0,0370. Se distribuye bajo licencia Apache 2.0 y esta disponible en formato safetensors para transformers.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (clase `qwen3_5_text` segun los tags del repositorio) |
-| Parametros totales | 752.393.024 (dato real de los safetensors) |
+| Arquitectura | Transformer decoder-only (Qwen3_5ForCausalLM, ruta solo texto) |
+| Parametros totales | 752.393.024 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors |
-| Idiomas soportados | no disponible (el campo de idiomas esta vacio en la model card) |
+| Tipos de cuantizacion | no disponible (pesos en bf16; compatible con cuantizacion estandar de transformers) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria `transformers`) |
-| Modelo base | Qwen/Qwen3.5-0.8B |
-| Tarea declarada | text-generation (tag `conversational`) |
-| Dataset de entrenamiento | no disponible («unknown dataset» en la model card) |
-| Tamano del repositorio | 4,5 GB |
-| Estado en Hugging Face | 0 descargas, 0 likes (a fecha de la consulta) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la familia Qwen3.5 en su variante de texto (`qwen3_5_text`), un transformer decoder-only con atencion causal y 752 millones de parametros. El modelo parte de los pesos de Qwen/Qwen3.5-0.8B y se ajusta mediante `Trainer` de `transformers`; no se documenta ninguna modificacion estructural, destilacion ni cambio de tokenizador respecto al modelo base. No hay informacion sobre el numero de tokens de entrenamiento ni sobre la composicion del corpus.
+El modelo parte de Qwen/Qwen3.5-0.8B, un modelo base multimodal, y se carga a traves de su ruta solo texto (`Qwen3_5ForCausalLM`). El ajuste fino entrena exclusivamente la via de texto y no preserva las capacidades de imagen o video del modelo original. Se trata de un ajuste fino completo (no LoRA ni adaptadores), con todos los pesos actualizados.
 
-Los hiperparametros declarados son: learning rate 1e-4, batch de entrenamiento 4 con 4 pasos de acumulacion (batch efectivo 16), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler coseno con 200 pasos de warmup, semilla 42 y un total de 30 pasos de entrenamiento (1,2 epocas). La perdida de validacion reportada es 0,0001. El entorno de entrenamiento fue Transformers 5.20.2, PyTorch 2.14.1+cu130 y Tokenizers 0.23.3. No se menciona uso de RLHF, DPO, LoRA ni tecnicas de decodificacion especulativa.
+El entrenamiento siguio la receta del articulo: AdamW fusionado, learning rate 1e-4, weight decay 0,01, schedule coseno, 200 pasos de warmup, batch efectivo de 16 (2 por dispositivo x 8 acumulacion), precision bf16 y 1 epoca equivalente a 16.335 pasos de optimizador. Los datos provienen de los 7 archivos de dominio del dataset convfill-dataset, preprocesados con historial de conversacion incluido, generando aproximadamente 50 millones de tokens de entrenamiento (longitud media 192, maxima 487). La perdida se calcula unicamente sobre el span de respuesta final; el resto de etiquetas se enmascaran a -100. Se anadio el token especial `<sil>` (id 248077) sin necesidad de redimensionar el embedding, ya que la matriz original de 248.320 filas ya lo cubria.
 
-Un detalle a tener en cuenta: el repositorio ocupa 4,5 GB para 752 millones de parametros, lo que es coherente con pesos en fp32 (~3,0 GB) mas posibles checkpoints intermedios u otros artefactos del entrenamiento, pero no se especifica la precision real de los tensores publicados.
+Una desviacion importante respecto al articulo: el entrenamiento se ejecuto en tramos reanudados desde checkpoints del Hub debido a desalojos de infraestructura cada 1-3 horas. La reanudacion fue solo de pesos, reiniciando el estado del optimizador y el schedule de learning rate en cada reanudacion, por lo que la forma del schedule difiere de la ejecucion continua original. Se completaron los 16.335 pasos de la receta de 1 epoca.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva: capacidad inherente al modelo base, sin evaluacion especifica publicada para este fine-tune.
-- Conversacion multi-turno: el repositorio esta etiquetado como `conversational`, lo que indica que el ajuste se realizo sobre formato de dialogo, aunque no se detalla la plantilla de chat utilizada.
-- Relleno y completado de turnos conversacionales: inferido del nombre «ConvFill», no confirmado en la documentacion.
-- Compatibilidad con endpoints de inferencia: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
-- Tool calling / function calling: no documentado para este fine-tune; dependeria de las capacidades heredadas del modelo base.
-- Razonamiento multi-paso y modo «thinking»: no documentado.
-- Vision, audio u otras modalidades: no soportadas segun la arquitectura declarada (`qwen3_5_text`).
-- Capacidades multilingues: no disponibles; el campo de idiomas esta vacio.
+- Generacion de frases conversacionales condicionadas a un fragmento de conocimiento entrante o a un token `<sil>`.
+- Produccion de habla de relleno (filler speech) cuando no hay conocimiento disponible, mediante el token especial `<sil>`.
+- Mantenimiento de coherencia multi-turno: el prompt incluye el historial del turno anterior, la utterance actual del usuario y las frases ya pronunciadas en el turno en curso.
+- Generacion en streaming: una frase por elemento del stream, disenada para integrarse en pipelines de voz en tiempo real.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (el modelo no razona; recibe conocimiento ya razonado por un Reasoner externo).
+- Capacidades multilingues: no disponible.
+- Capacidades especiales: token `<sil>` para senalizar ausencia de conocimiento; marcadores `<|im_start|>`/`<|im_end|>` de Qwen3.5.
 
 ## Casos de uso
 
-- Prototipado rapido de asistentes conversacionales: al ser un modelo de 0,75 B de parametros, permite iterar sobre plantillas de dialogo y prompts en una sola GPU de consumo antes de invertir en modelos mayores.
-- Relleno de plantillas de respuesta en sistemas de atencion al cliente: el ajuste parece orientado a completar turnos; puede emplearse para generar la parte variable de respuestas predefinidas, con revision humana obligatoria.
-- Enrutado previo (router) en pipelines multi-modelo: su bajo coste permite clasificar la intencion de una consulta y derivarla a un modelo mayor, siempre que se valide la calidad de la clasificacion con un conjunto propio.
-- Generacion de datos sinteticos cortos para aumentar datasets de entrenamiento: util para crear pares pregunta-respuesta de dominio acotado, con filtrado posterior por reglas.
-- Baseline en experimentos de fine-tuning: sirve como referencia reproducible (hiperparametros y entorno documentados) para comparar tecnicas de ajuste sobre la familia Qwen3.5.
-- Inferencia en el borde o en CPU: con cuantizacion a int8 o int4 el modelo puede ejecutarse en entornos con poca VRAM, aunque el repositorio no publica pesos GGUF y habria que generarlos.
-- Pruebas de integracion y CI de aplicaciones LLM: su tamano reducido permite incluirlo en tests automatizados que verifiquen el contrato de la API de inferencia sin coste elevado.
+- **Agentes de voz conversacionales con backend en la nube**: el modelo actua como Talker en un sistema de dos niveles donde un Reasoner grande en la nube genera fragmentos de conocimiento y este modelo los convierte en frases naturales con baja latencia, permitiendo conversaciones fluidas mientras el razonamiento se completa.
+- **Relleno conversacional en asistentes telefonicos**: cuando el Reasoner tarda en devolver conocimiento, el modelo recibe `<sil>` y genera frases de relleno naturales ("un momento, dejame comprobar...") que evitan silencios incomodos en llamadas automatizadas.
+- **Sistemas de atencion al cliente en tiempo real**: integrado en un pipeline de streaming, el modelo mantiene el hilo de la conversacion con historial multi-turno y produce respuestas parciales mientras llega la informacion completa, mejorando la percepcion de fluidez.
+- **Prototipado de investigacion en agentes de voz**: sirve como Talker de referencia para reproducir los experimentos del articulo ConvFill usando el repositorio vysri/conversational-infill, permitiendo evaluar la precision end-to-end en QA con NaturalQuestions.
+- **Despliegue en dispositivo (on-device)**: con 752 millones de parametros y licencia Apache 2.0, es viable en hardware de consumo o dispositivos embebidos para aplicaciones de voz que requieran privacidad y baja latencia sin depender de la nube para la sintesis conversacional.
+- **Generacion de respuestas puente en asistentes de busqueda por voz**: el modelo puede producir frases de transicion mientras se recuperan resultados, reduciendo la latencia percibida en consultas que requieren recuperacion de conocimiento externo.
 
 ## Benchmarks y rendimiento
 
-El `model-index` del repositorio declara una lista de resultados vacia (`"results": []`). No se han publicado resultados de benchmarks en la informacion disponible: no hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar para este fine-tune. El unico dato de rendimiento declarado es la perdida de validacion de 0,0001, que por si sola no es interpretable sin conocer el dataset de evaluacion.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor reporta unicamente la perdida de validacion final de **0,0370** sobre 150 turnos retenidos (~1.570 ejemplos de frase). Una evaluacion anterior en el paso 2500 dio 0,0048 sobre un subconjunto de validacion distinto. El autor indica explicitamente que la metrica principal del articulo (precision end-to-end en QA con 250 consultas de NaturalQuestions, latencia y puntuaciones NLI) **no se ha reproducido** para este checkpoint.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de los 752 M de parametros, sin incluir cache KV ni activaciones): ~3,0 GB en fp32, ~1,5 GB en bf16/fp16, ~0,75 GB en int8 y ~0,4 GB en int4.
-- En la practica, con cache KV y overhead del runtime, es razonable reservar entre 2 y 4 GB de VRAM en bf16 para secuencias de contexto moderadas.
-- GPU recomendadas: cualquier GPU con 8 GB o mas funciona con holgura (RTX 3060 Ti, RTX 4060, RTX 4090, A100, H100). En GPUs de 4-6 GB puede ejecutarse en bf16 con contextos cortos o en int8.
-- Cabe en GPU de consumo: si, en practicamente toda la gama actual, e incluso en iGPU con memoria unificada si se cuantiza.
-- Opciones de despliegue: `transformers` de forma nativa (version 5.20.2 o superior recomendada por compatibilidad con la arquitectura); vLLM o TGI si la version instalada soporta `qwen3_5_text`; llama.cpp u Ollama solo tras convertir los pesos a GGUF, conversion que no se ha publicado en el repositorio.
-- Latencia y throughput: no disponibles; no se ha publicado ninguna medicion.
+- VRAM estimada para inferencia en bf16: aproximadamente 1,5 GB para los pesos (752M parametros x 2 bytes), mas overhead de activaciones y KV cache.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 0,8 GB; en 4 bits: aproximadamente 0,4 GB (estimaciones teoricas, no verificadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 12 GB, RTX 4090, etc.) es suficiente; el entrenamiento se realizo en instancias a10g-small.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU con 4 GB o mas de VRAM.
+- Opciones de despliegue: transformers (verificado por el autor), vLLM, llama.cpp/Ollama (previa conversion a GGUF), TGI. No verificado por el autor salvo transformers.
+- Latencia y throughput: el entrenamiento reporto ~1,45 s por paso de optimizador en a10g-small; no se han publicado medidas de latencia de inferencia.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos provienen de su documentacion publica y no de la informacion proporcionada en esta ficha; deben verificarse antes de usarlos en una decision de produccion.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| andito/Qwen3.5-0.8B-ConvFill | 752M | no disponible | Talker ConvFill | Apache 2.0 | Hugging Face |
+| vysri/Qwen-0.6B-ConvFill | ~600M | no disponible | Talker ConvFill (Qwen3-0.6B) | no disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 752M | no disponible | Modelo general multimodal | no disponible | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Qwen3.5-0.8B-ConvFill | 752 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible en la informacion proporcionada | Hugging Face |
-| Qwen3-0.6B | ~0,6 B | 32k (ampliable con YaRN) | Apache 2.0 | Ampliamente disponible |
-| Llama 3.2 1B | ~1,24 B | 128k | Llama 3.2 Community License | Ampliamente disponible |
-| Gemma 3 1B | ~1 B | 32k | Gemma Terms of Use | Ampliamente disponible |
-
-En rendimiento no hay comparacion posible: este fine-tune no publica metricas y los modelos alternativos no se han evaluado en las mismas condiciones dentro de la informacion disponible. La principal ventaja del modelo frente a las alternativas es la licencia Apache 2.0 sin restricciones adicionales de uso comercial, junto con el tamano reducido; su desventaja es la ausencia total de evaluacion publicada.
+El modelo de referencia directa es vysri/Qwen-0.6B-ConvFill, el Talker del articulo original basado en Qwen3-0.6B. Este checkpoint replica la tarea sobre una base mas reciente (Qwen3.5-0.8B) con ligeramente mas parametros. No se dispone de datos comparativos de rendimiento entre ambos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia de evaluacion: no hay benchmarks ni conjunto de evaluacion descrito, por lo que no puede afirmarse que el fine-tune mejore al modelo base en ninguna tarea concreta.
-- Entrenamiento muy corto: 30 pasos y 1,2 epocas sobre un dataset no especificado. La perdida de validacion de 0,0001 es sospechosamente baja y puede indicar un conjunto de validacion trivial, duplicado del de entrenamiento o con filtraciones.
-- Riesgo de sobreajuste o de degradacion: con tan pocos pasos el modelo puede haberse especializado en un formato muy concreto y perder capacidad general, o bien ser funcionalmente identico al modelo base.
-- Dataset desconocido: se desconoce la procedencia, licencia y calidad de los datos de ajuste, lo que impide evaluar riesgos de sesgo, contaminacion o problemas legales derivados del corpus.
-- Idiomas no declarados: el campo de idiomas esta vacio; no hay garantia de calidad en castellano ni en ningun otro idioma.
-- Contexto desconocido: no se publica la longitud de contexto soportada, dato critico para cualquier despliegue conversacional.
-- Riesgo de alucinacion: no cuantificado; en modelos de este tamano la tasa de alucinacion suele ser elevada en tareas de conocimiento factual, pero no hay mediciones para este modelo.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero no exime de cumplir las condiciones del modelo base ni de verificar que el dataset de ajuste no imponga restricciones adicionales.
-- Madurez: 0 descargas y 0 likes; la model card es la plantilla autogenerada sin revisar («More information needed» en todas las secciones). No es un artefacto listo para produccion sin una evaluacion propia previa.
-- Formato: solo se publican pesos en safetensors; no hay GGUF ni cuantizaciones listas, lo que anade un paso de conversion para despliegues en CPU.
+- **No preserva capacidades multimodales**: aunque el modelo base es un VLM, este ajuste entrena y ejecuta solo la via de texto; las capacidades de imagen y video se pierden.
+- **Metrica principal no reproducida**: el autor no ha evaluado el modelo con la metrica end-to-end del articulo (precision QA en streaming, latencia, NLI); solo reporta perdida de validacion, que no es directamente comparable con los resultados del paper.
+- **Schedule de entrenamiento alterado**: las reanudaciones solo de pesos reiniciaron el optimizador y el learning rate, por lo que el schedule difiere del original y podria afectar a la calidad final frente a una ejecucion continua.
+- **Riesgo de alucinacion**: el modelo genera frases condicionadas a fragmentos de conocimiento; si el fragmento es incorrecto o incompleto, el modelo puede producir afirmaciones erroneas con apariencia natural.
+- **Sesgos**: no se han documentado evaluaciones de sesgo; al derivar de Qwen3.5, hereda los sesgos del corpus de entrenamiento del modelo base y del dataset convfill-dataset.
+- **Idiomas**: no se especifican idiomas soportados; el dataset de entrenamiento parece estar en ingles, por lo que el rendimiento en castellano es incierto.
+- **Licencia del dataset**: el dataset de entrenamiento es CC BY-SA 4.0, lo que puede imponer obligaciones adicionales sobre los pesos derivados en determinadas jurisdicciones, a pesar de que el modelo se distribuye como Apache 2.0.
+- **Uso en produccion**: el modelo esta disenado como componente de un sistema mayor (Talker + Reasoner); usarlo de forma aislada como chatbot general no es su proposito y dara resultados pobres.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/andito/Qwen3.5-0.8B-ConvFill
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.
+- Dataset de entrenamiento: https://huggingface.co/datasets/zenglhardt/convfill-dataset
+- Articulo (arXiv): https://arxiv.org/abs/2511.07397
+- Talker de referencia del articulo: https://huggingface.co/vysri/Qwen-0.6B-ConvFill
+- Repositorio del pipeline de evaluacion: https://github.com/vysri/conversational-infill
+- ML Intern (herramienta de entrenamiento): https://hf.co/chat?mode=ml-intern

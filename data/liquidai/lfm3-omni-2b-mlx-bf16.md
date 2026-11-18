@@ -2,50 +2,56 @@
 
 ## Resumen
 
-LFM3-Omni-2B-MLX-bf16 es la versión optimizada para Apple Silicon (framework MLX, pesos en BF16) del modelo omni-modal LFM3-Omni-2B de Liquid AI. Se trata de un modelo any-to-any de unos 2.170 millones de parámetros capaz de procesar y generar texto, audio y vision: puede realizar reconocimiento de voz (ASR), síntesis de voz (TTS) y responder preguntas sobre imágenes, todo en un único modelo compacto ejecutable en dispositivo.
+LFM3-Omni-2B es un modelo multimodal "any-to-any" desarrollado por Liquid AI que combina comprensión y generación de texto, audio y visión en un único transformer de aproximadamente 2.170 millones de parámetros. Forma parte de la familia LFM3 (Liquid Foundation Models, tercera generación) y se distribuye bajo licencia propietaria lfm1.0. El modelo es capaz de realizar reconocimiento automático de voz (ASR), síntesis de voz (TTS), respuesta a preguntas sobre imágenes y conversación de voz a voz (speech-to-speech) con un único checkpoint.
 
-La relevancia de esta ficha de modelo radica en su enfoque on-device: al estar cuantizado/convertido a MLX en BF16, ocupa unos 4,33 GB de pesos más 0,15 GB del tokenizador de audio, lo que lo hace viable en Mac con Apple Silicon sin necesidad de GPU dedicada. Liquid AI, conocida por su familia LFM (Liquid Foundation Models) basada en arquitecturas propias, dirige este modelo a desarrolladores que necesitan capacidades multimodales de voz y visión con latencia baja y privacidad local.
+La versión aquí descrita, LFM3-Omni-2B-MLX-bf16, es una conversión a formato MLX en precisión BF16 pensada para ejecución en Apple Silicon. Los pesos ocupan 4,33 GB y se añaden 0,15 GB para el codec de audio incluido en el directorio `audio_tokenizer/`. Se ejecuta mediante la librería MLX-VLM (versión 0.7.11 o superior) y conserva los pesos en BF16 tal como el checkpoint original.
 
-El soporte en MLX-VLM está en progreso según la model card, por lo que conviene verificar la versión de la librería antes de desplegar en producción. El modelo base es LiquidAI/LFM3-Omni-2B, disponible también en Hugging Face.
+El interés de este lanzamiento radica en la combinación de un tamaño reducido (apto para hardware de consumo y despliegue en dispositivo) con capacidades omnicanal (texto, audio, imagen) y soporte para 23 idiomas, lo que lo convierte en una opción poco habitual para prototipos de asistentes de voz y pipelines multimodales en local.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM3-Omni (omni-modal any-to-any, arquitectura propia de Liquid AI; detalles no disponibles en la ficha) |
-| Parametros totales | 2.166.928.384 (~2,17 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Transformer multimodal (any-to-any) con codificador de audio y visión; detalles completos en la model card original |
+| Parametros totales | 2.166.928.384 (~2,17 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 (sin cuantizar adicional) |
-| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (22 idiomas) |
-| Licencia | LFM 1.0 (licencia propia, "other" en Hugging Face) |
-| Formato de pesos | safetensors (MLX, BF16) |
+| Tipos de cuantizacion | BF16 en esta versión MLX; otras cuantizaciones no disponibles en la información proporcionada |
+| Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr (23 idiomas) |
+| Licencia | lfm1.0 (propietaria, "other") |
+| Formato de pesos | safetensors (MLX, BF16); codec de audio en `audio_tokenizer/` |
+| Libreria de inferencia | MLX-VLM >= 0.7.11 |
+| Tamano de pesos | 4,33 GB (pesos) + 0,15 GB (codec de audio) = 4,5 GB de repo |
+| Modalidades | Texto, audio (entrada y salida), imagen (entrada) |
+| Pipeline | any-to-any |
 
 ## Arquitectura y entrenamiento
 
-El modelo pertenece a la familia LFM3 de Liquid AI, etiquetada como any-to-any con capacidades de audio, vision y speech-to-speech. Incluye un tokenizador de audio (codec) en el directorio `audio_tokenizer/` que ocupa 0,15 GB adicionales, encargado de codificar y decodificar audio para las tareas de ASR y TTS. Los detalles concretos de la arquitectura (tipo de attention, capas, dimensiones) no están disponibles en la model card de esta variante MLX; remiten a la ficha del modelo base LFM3-Omni-2B.
+La información disponible no detalla la arquitectura interna más allá de su carácter multimodal any-to-any. El modelo integra procesamiento de audio (con un codec separado para la salida de voz a 24 kHz) y de imagen, junto con un núcleo de lenguaje, en un único checkpoint. La model card original (LiquidAI/LFM3-Omni-2B) es la referencia para los detalles de arquitectura, composición del dataset de entrenamiento, número de tokens vistos y si se aplicaron etapas de RLHF o DPO; esos datos no aparecen en la información proporcionada.
 
-No se ha publicado en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas de alineamiento (RLHF/DPO). Los pesos se mantienen en BF16, igual que el checkpoint original, sin cuantizacion posterior.
+La innovación destacable en esta versión concreta es la conversión a MLX con pesos BF16 para Apple Silicon, que permite ejecutar un modelo omnicanal de 2B en hardware de consumo. El flujo de inferencia se gestiona con MLX-VLM, que expone tareas como ASR, TTS y VQA mediante prompts de sistema específicos y parámetros de decodificación (greedy para texto, `audio_temperature=0.4` y `audio_repetition_penalty=1.2` por defecto para audio).
 
 ## Capacidades
 
-- Reconocimiento de voz (ASR): transcribe ficheros de audio a texto, con instruccion de idioma mediante system prompt (p. ej. "Perform ASR in English").
-- Texto a voz (TTS): genera audio en formato WAV a 24 kHz, con seleccion de voz e idioma via system prompt (p. ej. voz femenina en ingles americano).
-- Comprension de imagenes: responde preguntas visuales sobre imagenes (VQA), con instrucciones para limitar las respuestas a lo visible.
-- Speech-to-speech y pipeline any-to-any: etiquetado como modelo omni capaz de combinar modalidades de entrada y salida.
-- Multilingüe: soporte declarado para 22 idiomas, incluido el castellano.
-- Generacion de texto conversacional sobre las modalidades anteriores.
-
-No se indica en la informacion disponible soporte de tool calling, agentes ni thinking mode.
+- Generación de texto y razonamiento general a partir de entradas de texto, audio o imagen.
+- Reconocimiento automático de voz (ASR) en los idiomas soportados, mediante prompts de sistema como "Perform ASR in English".
+- Síntesis de voz (TTS) con salida en WAV a 24 kHz, con control de voz e idioma mediante prompt de sistema (por ejemplo, voz femenina en inglés americano).
+- Conversación de voz a voz (speech-to-speech) y flujos any-to-any.
+- Respuesta a preguntas sobre imágenes (VQA) con instrucciones de grounding visual.
+- Capacidades multilingües en 23 idiomas, incluyendo español, catalán no listado, árabe, chino, japonés, coreano, hindi, hebreo, tailandés, vietnamita, indonesio, turco y lenguas europeas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Transcripcion de audio en local: un desarrollador puede integrar el modelo en una app de escritorio para macOS que transcriba notas de voz o reuniones sin enviar audio a la nube, aprovechando el ASR multilingüe.
-- Sintesis de voz para aplicaciones accesibles: generar locuciones WAV a 24 kHz (lectores de pantalla, narracion de contenidos, prototipos de asistentes de voz) seleccionando voz e idioma mediante system prompts.
-- Asistentes de voz on-device: combinando entrada de audio y salida de audio (speech-to-speech), es adecuado para prototipos de asistentes conversacionales que priorizan privacidad y latencia local.
-- Preguntas sobre imagenes en apps de productividad: extraer texto de senales, capturas o documentos mediante VQA (por ejemplo, "¿Que pone el cartel?") directamente en un Mac.
-- Prototipado multimodal en Apple Silicon: al ser un modelo de ~4,5 GB en BF16, permite experimentar con pipelines any-to-any en portatiles Mac sin infraestructura de servidor.
-- Automatizacion de flujos con voz e imagen: scripts con MLX-VLM que encadenan transcripcion, analisis visual y respuesta hablada para automatizaciones locales (por ejemplo, procesar audios de soporte y generar respuestas habladas).
+- Asistentes de voz en local para macOS: el modelo puede gestionar ASR y TTS en un mismo checkpoint sobre Apple Silicon, lo que permite construir un asistente conversacional sin depender de la nube y con latencia controlada por el hardware local.
+- Transcripción de reuniones y notas de voz: usando el prompt de ASR con `--audio speech.wav`, se obtiene texto en cualquiera de los 23 idiomas soportados, adecuado para pipelines de documentación automática.
+- Lectura de documentos e imágenes: la capacidad de VQA permite extraer información de carteles, capturas o formularios mediante preguntas en lenguaje natural, útil en herramientas de accesibilidad.
+- Generación de audiolibros y avisos: la salida TTS a 24 kHz con control de voz e idioma sirve para producir narraciones y mensajes pregrabados en múltiples lenguas.
+- Prototipado de interfaces conversacionales multimodales: al aceptar audio e imagen como entrada y devolver texto o audio, es adecuado para demos de asistentes que responden a comandos de voz sobre imágenes.
+- Investigación en modelos omnicanal pequeños: con 2,17B parámetros y pesos BF16 de 4,33 GB, sirve como banco de pruebas reproducible para estudiar el comportamiento de modelos any-to-any en hardware de consumo.
+- Aplicaciones educativas de idiomas: combinando ASR y TTS se pueden construir ejercicios de pronunciación y conversación en los idiomas soportados, con evaluación local de la transcripción.
 
 ## Benchmarks y rendimiento
 
@@ -53,39 +59,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: unos 4,33 GB para los pesos en BF16 mas 0,15 GB del tokenizador de audio; en la practica conviene disponer de 8 GB de memoria unificada o mas para inferencia comoda.
-- Compatible con Apple Silicon (Mac M1/M2/M3/M4); al usar MLX, no requiere GPU NVIDIA. No se indican requisitos para GPU dedicadas.
-- Cabe sin problemas en portatiles Apple Silicon de gama base con 8 GB de memoria unificada, aunque el rendimiento sera mejor en equipos con 16 GB o mas.
-- Despliegue: via MLX-VLM (`python -m mlx_vlm.generate`), con soporte para LFM3-Omni en progreso segun la model card. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI para esta variante MLX.
-- Parametros de decodificacion: texto con greedy decoding (`temperature 0`); audio con `audio_temperature=0.4` y `audio_repetition_penalty=1.2` por defecto. No hay datos de latencia o throughput publicados.
+- VRAM/unified memory estimada: los pesos BF16 ocupan 4,33 GB más 0,15 GB del codec de audio; en la práctica se necesita margen adicional para el contexto y activaciones, por lo que se recomienda al menos 8 GB de memoria unificada.
+- Hardware objetivo: Apple Silicon (series M1, M2, M3, M4 y superiores) mediante MLX; no está pensado para GPU NVIDIA en este formato.
+- GPU consumer: cabe en equipos Apple con 8 GB o más de memoria unificada; en GPUs NVIDIA requeriría otra conversión (no disponible en la información proporcionada).
+- Opciones de despliegue: MLX-VLM >= 0.7.11 (`python -m mlx_vlm.generate`); vLLM, llama.cpp, Ollama o TGI no están indicados para esta versión MLX.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Modalidades | Formato | Licencia |
-|---|---|---|---|---|
-| LFM3-Omni-2B-MLX-bf16 | ~2,17 B | texto, audio (ASR/TTS), vision | safetensors MLX BF16 | LFM 1.0 |
-| LFM3-Omni-2B (base) | ~2,17 B | texto, audio, vision | safetensors (original) | LFM 1.0 |
-| Qwen2.5-Omni-3B/7B | 3B/7B | texto, audio, vision, video | safetensors, GGUF | Apache 2.0 / licencia Qwen |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Formato/plataforma |
+|---|---|---|---|---|---|
+| LFM3-Omni-2B-MLX-bf16 | ~2,17B | no disponible | Texto, audio, imagen | lfm1.0 (propietaria) | MLX BF16 (Apple Silicon) |
+| LiquidAI/LFM3-Omni-2B | ~2,17B | no disponible | Texto, audio, imagen | lfm1.0 (propietaria) | safetensors (checkpoint original) |
+| Alternativas omnicanal de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Comparado con la familia Qwen-Omni, LFM3-Omni-2B es mas ligero y esta optimizado especificamente para Apple Silicon via MLX, aunque Qwen2.5-Omni ofrece una licencia mas permisiva y mayor variedad de cuantizaciones comunitarias. Los datos de rendimiento comparativo no estan disponibles.
+La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos competidores que permitan una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- El soporte en MLX-VLM esta "en progreso" segun la model card: puede requerir una version concreta o de desarrollo de la libreria, lo que supone riesgo de inestabilidad en produccion.
-- La licencia LFM 1.0 es una licencia propia de Liquid AI ("other" en Hugging Face): hay que revisar sus terminos antes de cualquier uso comercial, ya que pueden existir restricciones.
-- No se ha publicado longitud de contexto, lo que impide evaluar su idoneidad para documentos largos o conversaciones extensas.
-- No se han publicado benchmarks, por lo que la calidad de ASR/TTS/VQA debe validarse empiricamente en el caso de uso concreto.
-- El TTS genera audio a 24 kHz con voces predefinidas; la calidad y cobertura de idiomas en sintesis de voz (frente a ASR) no se detalla en la informacion disponible.
-- Al tratarse de un modelo de 2B, es esperable un riesgo de alucinaciones mayor que en modelos de mayor tamano, especialmente en VQA y razonamiento complejo; la propia model card sugiere system prompts que restrinjan las respuestas a lo visible en la imagen.
-- Solo la variante MLX esta documentada aqui: para despliegue en servidores con GPU NVIDIA hay que acudir al modelo base LiquidAI/LFM3-Omni-2B.
+- Licencia lfm1.0 propietaria: es necesario revisar los términos del archivo LICENSE antes de cualquier uso comercial; no es una licencia de código abierto.
+- Restricción de plataforma: esta versión está empaquetada para MLX y Apple Silicon; no se ejecuta directamente en CUDA ni en CPU genérica sin conversión.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente en tareas de VQA y en respuestas de audio donde el grounding visual o acústico puede ser imperfecto.
+- Sesgos: no se documentan en la información disponible; deben evaluarse por idioma y dominio antes de producción.
+- Cobertura idiomática desigual: aunque se listan 23 idiomas, no se especifica la calidad relativa por idioma, y el español figura en la lista sin métricas asociadas.
+- Longitud de contexto no publicada: limita la planificación de cargas con documentos o conversaciones largas.
+- Sin datos de benchmarks ni de tool calling/agentic: no se puede garantizar su idoneidad para pipelines de agentes o function calling sin validación propia.
+- El codec de audio es un componente separado (`audio_tokenizer/`); su omisión rompe la funcionalidad TTS.
 
 ## Enlaces
 
-- Modelo MLX: https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-bf16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
-- MLX-VLM (GitHub): https://github.com/Blaizzy/mlx-vlm
-- Documentacion Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
-- Guia de despliegue MLX: https://docs.liquid.ai/deployment/on-device/mlx
-- Blog LFM3: https://www.liquid.ai/blog/lfm3
+- Blog de LFM3: https://www.liquid.ai/blog/lfm3
+- Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
+- Guía de despliegue en MLX: https://docs.liquid.ai/deployment/on-device/mlx
+- Consola/API: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/
-- API (consola): https://console.liquid.ai/dashboard
+- Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm
+- Licencia: LICENSE (incluida en el repositorio del modelo)

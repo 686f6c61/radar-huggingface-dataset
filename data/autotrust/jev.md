@@ -2,119 +2,112 @@
 
 ## Resumen
 
-autotrust/JEV es un modelo de pesos abiertos especializado en clasificación de texto que devuelve decisiones tipadas y calibradas en lugar de texto generado. Está construido por autotrust sobre el backbone preentrenado Qwen/Qwen3.5-9B y se distribuye como un *student* destilado a partir de las distribuciones de salida completas del modelo propietario TypeSafe Jev 1.13, el llamado *System One* de TypeSafe AI. Conviene no confundir ambos: TypeSafe Jev 1.13 es el maestro cerrado y hospedado, mientras que autotrust/JEV es un repositorio independiente, sin afiliación ni respaldo de TypeSafe AI.
+JEV-9B es un modelo de decisión y generación de texto desarrollado por AutoTrust, construido como un fine-tuning de Qwen/Qwen3.5-9B mediante la receta propietaria "Blocks of Experts". Su particularidad es que integra dos modos de funcionamiento en un único conjunto de pesos: un "System 1" que produce decisiones tipadas rápidas y calibradas (con salidas `noul`, `choice` y `score`) y un "System 2" que conserva las capacidades generativas del modelo base. La idea central es ofrecer, con un solo motor de inferencia, tanto juicios probabilísticos de baja latencia como razonamiento y generación deliberativa.
 
-El modelo resuelve un problema muy concreto: convertir texto libre o estados JSON en tres tipos de respuesta estructurada —`noul` (sí/no con probabilidad), `choice` (una distribución sobre entre 2 y 16 opciones) y `score` (una distribución sobre una escala ordenada de 0 a 5)— mediante una única pasada de prefill, sin decodificación autoregresiva, sin parseo de JSON y sin ingeniería de prompts. La cabeza de decisión es una proyección lineal en fp32 sobre el estado oculto del último token que mapea a 24 ranuras: 2 para `noul`, 6 para `score` y 16 para `choice`.
+El modelo se distribuye como destilación del profesor cerrado TypeSafe Jev 1.13, con un objetivo declarado de aproximar sus distribuciones de decisión. Según la model card, responde una decisión individual en aproximadamente un tercio del tiempo que tarda la API alojada del profesor, lo que lo posiciona como alternativa local para tareas de ranking, clasificación y juicio visual. La familia incluye un sucesor de 27B con mejor transferencia a tareas no vistas.
 
-Su relevancia actual radica en que ofrece, con licencia Apache-2.0 y pesos safetensors, un sustituto local de un servicio de pago (la API de TypeSafe cobra 0,042 USD por millón de tokens de entrada y salida gratuita) con una fidelidad declarada muy alta respecto al maestro: divergencia KL media de 0,028, AUROC de 0,994 en preguntas binarias y ECE de 0,0014 sin corrección de temperatura post hoc. El entrenamiento fue notablemente ligero: solo 40,2 millones de parámetros (el 0,5 % del backbone de 8 B) durante unas 1,7 horas de GPU en una única B200 y 0,49 épocas (unos 320.000 ejemplos).
+Con 8.953.803.264 parámetros y un repositorio de 18,4 GB en safetensors, JEV-9B está pensado para despliegue en GPU única. La model card documenta además extensiones multimodales (visión) para uso en robótica y automatización de navegador, así como un rendimiento declarado de pass@1 de 0,707 en HumanEval por la ruta System 2.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con backbone Qwen3.5-9B y cabeza de decisión lineal fp32 (H → 24 ranuras); el código de servicio requiere `flash-linear-attention`, lo que apunta a componentes de atención lineal en el backbone, si bien la model card no detalla su arquitectura interna |
-| Parámetros totales | 7.936.684.544 (≈ 7,94 B) |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Parámetros entrenados | 40,2 M (0,5 % del backbone), adaptadores LoRA |
+| Arquitectura | Transformer (base Qwen3.5-9B) con cabecera dual y adaptador LoRA; receta "Blocks of Experts" |
+| Parámetros totales | 8.953.803.264 |
+| Parámetros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible; los pesos se publican en safetensors (la cabeza se aplica en fp32) |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (transformers); repositorio de 15,9 GB |
-| Pipeline | text-classification |
-| Tipos de decisión | `noul` (2 ranuras), `score` (6 ranuras, escala 0–5), `choice` (hasta 16 opciones) |
-| Modelo base | Qwen/Qwen3.5-9B (relación: finetune) |
-| Dataset de destilación | SargeDev/jev-distill-corpus-v3 |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de un backbone denso Qwen3.5-9B y le añade una cabeza lineal muy pequeña en fp32 que lee el estado oculto de la última capa tras la normalización final del último token. La plantilla de entrada (campos `[kind]`, `[state]`, `[question]`, `[options]` y `[decision]:`) se tokeniza como una única cadena y se procesa en una sola pasada de prefill, sin generación. La cabeza proyecta a 24 ranuras fijas que se enmascaran según el tipo de pregunta: las ranuras 0–1 corresponden a `noul`, las 2–7 a `score` y las 8–23 a `choice`. Sobre las ranuras activas se aplica una temperatura específica por tipo y un softmax, de modo que la salida es una distribución de probabilidad alineada con las opciones facilitadas por el usuario, más un valor esperado de la puntuación en el caso de `score`.
+JEV-9B parte de Qwen/Qwen3.5-9B y añade una cabeza dual sobre el modelo base: una ruta System 1 que emite decisiones tipadas (`noul`, `choice`, `score`) con probabilidades calibradas, y una ruta System 2 que emplea el `lm_head` original del modelo base para generación y razonamiento. La model card describe la receta como "Blocks of Experts" e indica el uso de un adaptador LoRA junto con la cabeza dual, de modo que ambas rutas conviven en un único conjunto de pesos y se enrutan por petición dentro de un mismo motor vLLM.
 
-El entrenamiento es una destilación de conocimiento desde las distribuciones completas del maestro TypeSafe Jev 1.13, no una destilación de etiquetas duras. Se ajustaron únicamente 40,2 M de parámetros mediante LoRA durante aproximadamente 1,7 horas de GPU en una sola B200, con 0,49 épocas sobre unos 320.000 ejemplos del corpus Apache-2.0 SargeDev/jev-distill-corpus-v3. Las temperaturas ajustadas resultaron cercanas a 1,00, lo que indica que la calibración se heredó del maestro sin necesidad de corrección post hoc. La model card no especifica la composición detallada del corpus ni si hubo etapas adicionales de RLHF o DPO.
+El entrenamiento se basa en destilación de conocimiento desde el profesor cerrado TypeSafe Jev 1.13 sobre el corpus SargeDev/jev-distill-corpus-v3. En el conjunto de test de 29.955 filas, 25.376 objetivos corresponden a distribuciones del profesor. La model card menciona calibración mediante temperatura (ECE calculado tras aplicar temperatura con 15 bins) y una evaluación de calibración de probabilidades. No se detallan en la información disponible el número de tokens de entrenamiento, la composición completa del dataset ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Clasificación de texto con salida probabilística tipada en tres modalidades: binaria (`noul`), elección múltiple de 2 a 16 opciones (`choice`) y puntuación ordenada de 0 a 5 (`score`).
-- Probabilidades calibradas directamente utilizables por software: ECE de 0,0014 con 15 bins tras aplicar temperatura, y temperaturas ajustadas ≈ 1,00.
-- Evaluación de estados arbitrarios, tanto texto libre como JSON, sin necesidad de formato estricto de entrada.
-- Razonamiento de un solo paso (*System One*): una pasada de prefill, sin cadena de pensamiento ni decodificación iterativa.
-- Generalización a familias de tareas no vistas en entrenamiento: KL media de 0,208 en el split OOD Open-Jev.
-- Cobertura declarada de 53 dominios en el conjunto de evaluación.
-- No soporta generación de texto, tool calling, function calling ni razonamiento multi-paso agéntico: el pipeline es text-classification.
-- Multilingüe: no; solo inglés según la model card.
-- Capacidades especiales: no dispone de modo *thinking*, visión ni audio.
+- Decisiones tipadas calibradas: salidas `noul` (probabilidad), `choice` (selección entre opciones) y `score` (valor esperado en escala 0–5), en un solo paso hacia delante.
+- Generación de texto y razonamiento por la ruta System 2, con el `lm_head` del modelo base y el adaptador desactivado.
+- Generación de código: pass@1 de 0,707 en HumanEval (greedy, prompt estilo completion) por la ruta System 2.
+- Visión: juicio de imágenes y capturas de pantalla como decisión System 1 (imagen de cámara o screenshot de entrada, probabilidad por acción de salida).
+- Automatización de navegador (computer use): selección del siguiente elemento a clicar a partir de una captura con cajas numeradas, incluida la opción de declarar la tarea completada.
+- Robótica: juicio visual para control de brazo robótico en simulación MuJoCo (preguntas binarias de posición relativa al gripper).
+- Capacidades multilingües: limitadas al inglés según el campo `language` de la model card.
+- Soporte de despliegue en vLLM y compatibilidad con endpoints.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte explícito de agentes multi-paso: no disponible como capacidad declarada; los bucles de computer use se implementan externamente al modelo.
 
 ## Casos de uso
 
-- Automatización de decisiones de negocio con umbrales: el modelo devuelve `[P(false), P(true)]` para afirmaciones como "¿el proveedor incumplirá el plazo?", de modo que un sistema puede fijar umbrales (por ejemplo, actuar solo si P(true) > 0,9) y dejar los casos dudosos para revisión humana, apoyándose en la calibración medida (ECE 0,0014).
-- Enrutado y triaje de tickets: con la modalidad `choice` sobre 2 a 16 categorías, un servicio de soporte puede clasificar y enrutar incidencias en una sola pasada, recibiendo además la distribución completa para detectar ambigüedad cuando las dos opciones más probables están próximas.
-- Control de inventario y cadena de suministro: el ejemplo de la propia model card (`SKU AX-330` con stock al 8 % del nivel de seguridad y proveedor con dos retrasos en el trimestre) se traduce en una decisión sobre `issue_warning`, `renegotiate`, `dual_source` o `maintain`, con probabilidad asociada para automatizar alertas.
-- Puntuación de riesgo y priorización: con la modalidad `score` sobre la escala 0–5, es aplicable a scoring de leads, severidad de incidencias, calidad de contenido o prioridad de vulnerabilidades, con un error medio del valor esperado de 0,12 (una décima de escalón).
-- Verificación y control de calidad en pipelines de datos: comprobar si una respuesta generada por otro modelo cumple una afirmación sobre un estado (por ejemplo, si un resumen es fiel a un JSON de origen) mediante preguntas `noul` de forma masiva.
-- Moderación y cumplimiento normativo: evaluar afirmaciones del tipo "¿este texto incumple la política X?" con probabilidad calibrada, lo que permite auditar la tasa de falsos positivos a distintos umbrales sin reentrenar.
-- Sustitución local de la API propietaria: al ofrecer un esquema de petición/respuesta en `/v1/decisions` compatible con el estilo de TypeSafe Jev, puede desplegarse on-premise para evitar enviar datos sensibles a un servicio externo y reducir coste, ya que en modo batch se declaran 2,5 ms por decisión.
-- Extracción de etiquetas estructuradas en procesos ETL: convertir texto no estructurado en una etiqueta con confianza, lista para insertar en base de datos, sin postprocesado de JSON.
+- Ranking y recomendación de contenido: cada ordenación se formula como una decisión System 1 calibrada, lo que permite reordenar titulares o resultados de búsqueda en aproximadamente medio segundo, como en la demo GuruSearch.
+- Re-ranking de resultados de buscadores: el modelo recibe pares consulta-resultado y emite una probabilidad de relevancia calibrada, útil para combinar y reordenar listas de Google News, Bing News y Yahoo News.
+- Automatización de navegador para tareas multi-paso: con capturas de pantalla y cajas numeradas sobre elementos clicables, el modelo elige el siguiente clic (o declara la tarea completada) en unos 0,2 s por clic; la model card reporta un 95% de 60 tareas aleatorias de 3–7 clics en tienda, ajustes y correo.
+- Control visual de robots en simulación: el modelo responde preguntas binarias sobre la posición del objetivo respecto al gripper a partir de una imagen cenital, con unos 165 ms por decisión; útil como juez visual rápido en bucles de control, no como controlador extremo a extremo.
+- Clasificación y filtrado con umbrales calibrados: gracias al ECE bajo declarado (0,0007 tras temperatura), las probabilidades de `noul` sirven para fijar umbrales de aceptación en pipelines de moderación o triaje sin recalibración manual.
+- Asistencia a la generación de código en CI/CD: la ruta System 2 puede emplearse para completar funciones y tests en pipelines, con el pass@1 de referencia en HumanEval como orientación de calidad.
+- Evaluación automática de respuestas y candidatos: la salida `score` en escala 0–5 permite puntuar alternativas generadas por otros modelos con un MAE declarado de 0,103.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el `model-index` de la model card, sobre el conjunto de test `test_set_30k` de SargeDev/jev-distill-corpus-v3 (29.955 preguntas, 53 dominios). Ninguno está marcado como verificado (`verified: false`) y no se dispone de comparaciones con otros modelos en la información proporcionada.
+Resultados declarados por el autor del modelo (no verificados de forma independiente):
 
-| Métrica | Descripción | Valor |
-|---|---|---|
-| KL divergencia media (maestro ‖ modelo) | Fidelidad de las distribuciones; menor es mejor | 0,0276 |
-| AUROC (`noul`) | Preguntas sí/no; mayor es mejor | 0,9938 |
-| Brier (`noul`) | Frente a la probabilidad del maestro; menor es mejor | 0,0022 |
-| MAE del valor esperado (`score`) | Escala 0–5; menor es mejor | 0,119 |
-| ECE (15 bins, tras temperatura) | Calibración; menor es mejor | 0,0014 |
-| Precisión top-1 (`choice`, todas las filas) | Coincidencia con la opción elegida por el maestro | 0,884 |
-| Precisión top-1 (`choice`, filas decisivas con diferencia top-2 ≥ 0,1) | Coincidencia con el maestro en casos no empatados | 0,918 |
-| KL media en Open-Jev OOD | Familias de tareas no vistas en entrenamiento | 0,208 |
-| Latencia | Una petición en una B200, mediana | ≈ 90 ms |
-| Latencia en batch | Por decisión con peticiones agrupadas | 2,5 ms |
+| Tarea | Conjunto de evaluación | Métrica | Valor |
+|---|---|---|---|
+| Decisiones tipadas (acuerdo con el profesor TypeSafe Jev 1.13) | jev-distill-corpus-v3 · test_set_30k | KL media (target ‖ modelo) | 0,021 |
+| Decisiones tipadas | test_set_30k | AUROC de `noul` | 0,996 |
+| Decisiones tipadas | test_set_30k | Brier de `noul` | 0,0015 |
+| Decisiones tipadas | test_set_30k | MAE del valor esperado de `score` (escala 0–5) | 0,103 |
+| Decisiones tipadas | test_set_30k | ECE (15 bins, tras temperatura) | 0,0007 |
+| Decisiones tipadas | test_set_30k | Acierto top-1 de `choice` (todas las filas) | 0,898 |
+| Decisiones tipadas | test_set_30k | Acierto top-1 de `choice` (filas decisivas, gap top-2 ≥ 0,1) | 0,954 |
+| Generación de código (System 2) | HumanEval · test | pass@1 (greedy, completion-style) | 0,707 |
 
-No se han publicado en la información disponible resultados de benchmarks generales tipo MMLU, HumanEval o GSM8K; el modelo no está orientado a generación y no procede evaluarlo en esas tareas.
+Métricas multimodales declaradas en la model card: VL-RewardBench 74,3%, AgentRewardBench AUROC 0,91 y recomendación zero-shot de vídeos cortos a partir de portadas con AUC 0,72. En robótica, 10 de 20 escenas aleatorias completadas en simulación MuJoCo, con unos 165 ms por decisión. En computer use, 95% de 60 tareas completadas con cajas numeradas y texto de elemento; 37% solo con cajas numeradas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en fp16/bf16 el backbone de ~7,94 B requiere del orden de 16 GB solo para pesos, más activaciones y la cabeza fp32 (el repositorio completo ocupa 15,9 GB en safetensors). Con cuantización de 8 bits bajaría a unos 9–10 GB y con 4 bits a unos 5–6 GB, aunque no se publican formatos cuantizados oficiales.
-- GPU recomendadas: la model card reporta el entrenamiento y las mediciones de latencia en una NVIDIA B200 (~90 ms por petición, 2,5 ms por decisión en batch). Para producción son adecuadas A100, H100 o B200; en una RTX 4090 de 24 GB debería caber en fp16 al límite de memoria, con menos margen para batch grande.
-- GPU de consumo: probablemente viable en RTX 4090, RTX 3090 (24 GB) o tarjetas de 16 GB solo si se aplica cuantización, que el autor no publica.
-- Opciones de despliegue: el repositorio incluye código propio bajo `code/` (`python -m jev_judge.server --export JEV --port 18080`) con un endpoint `/v1/decisions`. Los requisitos declarados son torch ≥ 2.13, transformers ≥ 5.16 y `flash-linear-attention`. No se menciona soporte para vLLM, TGI, llama.cpp ni Ollama; la cabeza lineal personalizada y la ausencia de decodificación estándar hacen poco probable que estos motores genéricos funcionen sin adaptación.
-- Latencia y throughput: mediana de ≈ 90 ms por petición individual en B200 y 2,5 ms por decisión en modo batch, según los datos del autor.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 8,95 mil millones de parámetros, en FP16/BF16 el peso ronda los 18 GB, por lo que se necesita una GPU con al menos 24 GB para inferencia sin cuantizar; la cuantización a 8 bits o 4 bits reduciría el requisito, aunque los tipos de cuantización no están declarados.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, una GPU de 24 GB o superior (por ejemplo, clase RTX 4090, L40S, A100 o H100) es el mínimo razonable para pesos en precisión completa.
+- ¿Cabe en GPU de consumo? Probablemente en GPUs de 24 GB en BF16/FP16; en GPUs de 16 GB o menos requeriría cuantización, cuyos formatos no se detallan.
+- Opciones de despliegue: vLLM (mencionado en la model card y en los tags), transformers (librería declarada) y endpoints compatibles. No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: la model card declara aproximadamente 0,2 s por decisión visual en una GPU y unos 165 ms por decisión en el bucle de robótica; para decisiones textuales, alrededor de un tercio del tiempo de la API alojada del profesor. No se publican cifras de throughput agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad | Rendimiento comparado |
-|---|---|---|---|---|---|---|
-| autotrust/JEV | 7,94 B (40,2 M entrenados) | no disponible | Decisiones tipadas calibradas (`noul`/`choice`/`score`) | Apache-2.0 | Pesos abiertos en Hugging Face | KL 0,028 frente al maestro; AUROC 0,994; top-1 88,4 % |
-| TypeSafe Jev 1.13 (maestro) | no disponible | no disponible | Las mismas tres modalidades | Propietaria | API hospedada desde el 21 de septiembre de 2026, 0,042 USD por millón de tokens de entrada, salida gratuita, latencia declarada de 70–500 ms | Es la referencia frente a la que se mide el student |
-| Qwen/Qwen3.5-9B (base) | ~9 B (según nomenclatura) | no disponible | Generación de texto general | no disponible | Pesos abiertos | No es un modelo de decisiones; no hay comparación directa disponible |
-| LLM generales usados como jueces (p. ej. clasificación por prompt) | Variable | Variable | Texto que hay que parsear | Según modelo | Pesos abiertos o API | Sin datos comparativos en la información proporcionada |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| autotrust/JEV-9B | 8,95 B | no disponible | Decisión calibrada (System 1) + generación (System 2), visión | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base) | ~9 B (según base declarada) | no disponible | Generación de texto | no disponible en la información | Hugging Face |
+| autotrust/JEV-27B (sucesor de la familia) | 27 B (según nombre) | no disponible | Misma receta, mejor transferencia y System 2 más fuerte | no disponible en la información | Hugging Face |
+| TypeSafe Jev 1.13 (profesor cerrado) | no disponible | no disponible | Decisiones calibradas, API alojada | propietaria | API alojada |
 
-La comparación cuantitativa con alternativas de la misma categoría (modelos de decisión tipada) no está disponible: TypeSafe Jev 1.13 no publica métricas de calibración comparables, y el resto de candidatos son modelos generativos que requieren parseo posterior.
+La comparación con alternativas de la misma categoría (modelos de decisión calibrada) no está disponible más allá del profesor TypeSafe Jev 1.13 y del sucesor JEV-27B citados por el autor.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: el campo `language` de la model card declara exclusivamente `en`; el rendimiento en otros idiomas no está evaluado ni garantizado.
-- No genera texto ni admite tool calling, agentes ni razonamiento multi-paso; cualquier flujo que requiera esos comportamientos debe combinarlo con otro modelo.
-- Las métricas del `model-index` están declaradas como no verificadas (`verified: false`) y provienen del propio autor; no hay replicación independiente disponible.
-- Riesgo de heredar los sesgos del maestro TypeSafe Jev 1.13: al ser una destilación de sus distribuciones, cualquier sesgo sistemático o error de calibración del maestro se reproduce en el student.
-- Riesgo de alucinación residual: aunque el diseño evita la generación libre, el modelo puede asignar probabilidad alta a una opción incorrecta cuando el estado de entrada es ambiguo, incompleto o está fuera de los 53 dominios evaluados; el KL en el split OOD (0,208) es casi un orden de magnitud peor que en el test estándar (0,028).
-- En preguntas con empate técnico del maestro, la coincidencia top-1 baja al 88,4 %; la decisión debe tratarse como una distribución completa, no como una etiqueta única.
-- La model card advierte explícitamente de que autotrust/JEV no está afiliado, respaldado ni producido por TypeSafe AI; no debe presentarse como producto oficial ni asumirse soporte del fabricante del maestro.
-- La licencia del repositorio es Apache-2.0, lo que permite uso comercial, pero la licencia del modelo base Qwen/Qwen3.5-9B no se detalla en la información disponible y debe comprobarse antes de un despliegue en producción.
-- El despliegue depende de `transformers ≥ 5.16`, `torch ≥ 2.13` y `flash-linear-attention`, y no se documenta soporte para motores de inferencia habituales (vLLM, llama.cpp, Ollama), lo que limita las opciones de escalado.
-- No se publican formatos cuantizados oficiales, y la cabeza de decisión opera en fp32, lo que puede complicar la cuantización agresiva sin degradar la calibración.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso en producción ni comunidad que reporte incidencias.
+- Idiomas: la model card declara únicamente inglés; el rendimiento en castellano u otros idiomas no está documentado.
+- Sesgos: no se documentan evaluaciones de sesgo en la información disponible.
+- Alucinación: la ruta System 2 hereda el comportamiento generativo de Qwen3.5-9B; no se publican métricas de factualidad. La ruta System 1 está calibrada frente al profesor, pero su validez depende de la distribución del corpus de destilación.
+- Contexto: la longitud de contexto no se declara, lo que impide planificar usos con documentos largos.
+- Licencia: apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5-9B y del corpus de destilación.
+- Benchmarks no verificados: todos los resultados del model-index figuran como `verified: false`; proceden del autor y no de una evaluación independiente.
+- Robótica: la propia model card advierte de que el modelo es un juez visual rápido y no un controlador extremo a extremo; pedirle que elija directamente entre 8 comandos de motor no funcionó.
+- Computer use: el 95% de éxito se obtuvo con cajas numeradas y texto de elemento; sin texto, el éxito cae al 37%, y los fallos típicos omiten pasos (por ejemplo, el color) y acaban en un carrito vacío.
+- Latencia: las cifras de 0,2 s por decisión corresponden a una GPU no especificada y a entradas visuales; no deben extrapolarse sin medir en el hardware objetivo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/autotrust/JEV
-- Dataset de destilación: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
+- Sucesor de la familia: https://huggingface.co/autotrust/JEV-27B
+- Demo en vivo de recomendación y búsqueda (GuruSearch): https://news.guru.so/ui
+- Corpus de destilación: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Informe de evaluación incluido en el repositorio: `code/reports/eval_s2_9b.md`
-- Sitio del modelo maestro (TypeSafe): https://jevmodel.org/
-- Página y demo del modelo maestro: https://jevtypesafeai.com/
-- Portal del modelo maestro: https://jevai.net/
-- Comunidad de usuarios del modelo maestro: https://www.jevai.org/
-- Artículo en Wikipedia sobre el modelo maestro: https://en.wikipedia.org/wiki/Jev_(AI_model)
+- Vídeo de robótica (pick and place): https://huggingface.co/autotrust/JEV-9B/resolve/main/videos/robot_arm_pick_place.mp4
+- Vídeo de computer use (tienda): https://huggingface.co/autotrust/JEV-9B/resolve/main/videos/computer_use_shop.mp4
+- Vídeo de computer use (ajustes): https://huggingface.co/autotrust/JEV-9B/resolve/main/videos/computer_use_settings.mp4
+- Vídeo de computer use (correo): https://huggingface.co/autotrust/JEV-9B/resolve/main/videos/computer_use_mail.mp4
+- Código de las demos visuales: https://huggingface.co/autotrust/JEV/tree/main/vl/demos
+- Informes de evaluación visual: https://huggingface.co/autotrust/JEV/tree/main/reports/vl

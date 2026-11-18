@@ -2,103 +2,91 @@
 
 ## Resumen
 
-Cloudflare_clef-flash-GGUF es la versión cuantizada en formato GGUF del modelo multimodal Cloudflare/clef-flash, publicada por el usuario bartowski, especializado en generar cuantizaciones con imatrix para llama.cpp. El modelo original lo desarrolla Cloudflare y está orientado a una tarea poco habitual en modelos multimodales generalistas: recibir texto e imágenes y producir salidas tipadas y estructuradas (image-text-to-typed-output), es decir, clasificación y extracción de datos con esquema fijo en lugar de generación libre de lenguaje natural.
+clef-flash es un modelo de decisión multimodal desarrollado por Cloudflare, distribuido en formato GGUF por bartowski. A diferencia de los modelos generativos convencionales, no produce texto libre: lee un estado (texto o JSON) junto con un esquema de preguntas tipadas y devuelve, en un único forward pass, una probabilidad para cada opción permitida de cada pregunta. Esta orientación a la clasificación estructurada lo convierte en una pieza adecuada para enrutado, moderación y extracción de etiquetas dentro de pipelines automatizados.
 
-El checkpoint de origen tiene 8.953.803.264 parámetros (aproximadamente 9B) y se distribuye bajo licencia Apache 2.0. La model card de la cuantización etiqueta el modelo con los términos clef, systemone, qwen3.5 y post-train, lo que apunta a una base derivada de la familia Qwen 3.5 sometida a un proceso de post-entrenamiento específico, aunque la documentación disponible no detalla la arquitectura interna ni la composición del dataset de entrenamiento.
+El modelo base cuenta con aproximadamente 9.075 millones de parámetros (9B), acepta entradas de texto e imagen (esta última requiere el fichero mmproj) y se apoya en la arquitectura Qwen3.5 según las etiquetas del autor. Su relevancia actual reside en la creciente demanda de componentes deterministas y tipados para sistemas agenticos: sustituir llamadas a un LLM generativo por un clasificador dedicado reduce latencia, coste y variabilidad de salida.
 
-La relevancia de esta ficha concreta está en el formato: el repositorio de bartowski permite ejecutar el modelo en llama.cpp (compilación b11279), con soporte de entrada de imagen mediante fichero mmproj y un abanico de cuantizaciones que va desde bf16 (17,92 GB) hasta IQ4_XS (5,23 GB), lo que hace viable el despliegue en hardware de consumo. El repositorio acumula 3.011 descargas y 11 likes desde su publicación.
+La licencia Apache 2.0 permite uso comercial sin restricciones significativas, y la disponibilidad de cuantizaciones GGUF desde 2 bits hasta bf16 facilita el despliegue tanto en servidores como en hardware de consumo. La integración con llama.cpp se realiza mediante el endpoint `/v1/systemone` de `llama-server`, que implementa la TypeSafe System One API.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags del repositorio mencionan qwen3.5, pero la model card no detalla la arquitectura) |
-| Parámetros totales | 8.953.803.264 (aproximadamente 9B) |
-| Parámetros activos | no disponible (no se ha confirmado que sea MoE) |
+| Arquitectura | Transformer multimodal (base Qwen3.5 según etiquetas del autor), con cabeza de decisión para clasificación tipada |
+| Parametros totales | 9.075.566.084 (~9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | bf16, Q8_0, Q6_K_L, Q6_K, Q6_K_S, Q5_K_M, Q5_K_S, Q4_K_L, Q4_1, Q4_K_M, IQ4_NL, Q4_K_S, Q4_0, IQ4_XS (lista truncada en la información proporcionada) |
+| Tipos de cuantizacion | bf16, Q8_0, Q6_K_L, Q6_K, Q5_K_M, Q4_K_L, Q5_K_S, Q4_1, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, IQ3_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp, release b11279) y fichero mmproj para la torre de visión |
+| Formato de pesos | GGUF (cuantizaciones estáticas); checkpoint original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no describe la arquitectura interna del modelo base: no se especifica si se trata de un transformer denso, de una mezcla de expertos, de un modelo híbrido o de otra variante, ni se detalla el número de capas, cabezas de atención o dimensionalidad del estado oculto. Los tags del repositorio incluyen qwen3.5, lo que sugiere que el checkpoint parte de la familia Qwen 3.5 y que ha sido sometido a un proceso de post-entrenamiento (tag post-train) por parte de Cloudflare, pero no se aportan datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni las técnicas de alineación empleadas (RLHF, DPO u otras).
+El modelo se compone de un backbone transformer multimodal (etiquetado como Qwen3.5) que procesa texto e imágenes, seguido de una cabeza de decisión que transforma los estados ocultos finales en distribuciones de probabilidad sobre las opciones definidas por el esquema de preguntas. La cabeza de decisión se almacena siempre en Q8_0 en todas las cuantizaciones, independientemente del formato del resto de pesos, para preservar la calidad de la salida.
 
-Sí se conocen detalles del proceso de cuantización: bartowski ha generado las cuantizaciones con llama.cpp b11279 utilizando imatrix (calibración basada en matriz de importancia), lo que mejora la calidad de las cuantizaciones de baja precisión respecto a una cuantización uniforme. La model card indica explícitamente que la decodificación especulativa no está habilitada. La entrada admite texto e imagen siempre que se cargue el fichero mmproj asociado, y la salida está orientada a tipos estructurados, no a texto libre. El formato de prompt emplea los tokens especiales de la familia Qwen (`<|im_start|>` y `<|im_end|>`) y arranca el turno del asistente con una etiqueta `<think>`.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. El autor indica que no es posible calcular una importance matrix (imatrix) para este modelo, porque la herramienta de llama.cpp calibra sobre probabilidades de tokens generados durante la generación de texto, y un modelo de decisión no genera texto. Por la misma razón tampoco se pueden medir perplejidad ni divergencia KL. Las cuantizaciones por debajo de 4 bits por peso pierden calidad de forma notablemente superior a una cuantización con imatrix del mismo tamaño, y los formatos que requieren imatrix (IQ1, IQ2, IQ3_XS, IQ3_XXS, Q2_K_S) no están disponibles.
 
 ## Capacidades
 
-- Generación de texto conversacional, con plantilla de chat basada en `<|im_start|>`/`<|im_end|>`.
-- Entrada multimodal de imagen junto con texto, mediante el fichero mmproj indicado en el repositorio.
-- Salida estructurada y tipada (image-text-to-typed-output): el modelo está diseñado para producir resultados con esquema fijo, adecuados para tareas de clasificación y extracción.
-- Clasificación a partir de texto e imagen (tag classification).
-- Modo de razonamiento explícito: la plantilla de prompt abre el bloque `<think>` antes de la respuesta del asistente.
-- Tool calling / function calling: la model card documenta un formato de definición de herramientas dentro del system prompt y una sintaxis concreta de invocación con etiquetas `<tool_call>`, `<function=...>` y `<parameter=...>`.
-- Soporte de razonamiento en varios pasos orientado a agentes, derivado del soporte de tool calling y del bloque de pensamiento.
-- Multilingüismo: los idiomas soportados no están documentados en la información disponible.
-- Capacidad especial: el modelo es de tipo "custom-code", es decir, requiere código personalizado para su ejecución completa (no basta con un cargador genérico de transformers en todos los casos).
+- Clasificación tipada de estados de texto o JSON contra un esquema de preguntas con criterios predefinidos.
+- Tipos de pregunta soportados: `choice` (selección entre opciones), `noul` (booleano sí/no) y `score` (puntuación ordinal sobre criterios).
+- Salida de probabilidades por opción en un único forward pass, sin generación autoregresiva.
+- Procesamiento de imágenes cuando se carga el fichero mmproj correspondiente.
+- Enrutado y clasificación de conversaciones, incluida la detección de urgencia o estado emocional.
+- Integración con llama.cpp mediante el endpoint `/v1/systemone` de `llama-server`.
+- No soporta tool calling ni function calling en el sentido convencional, ni agentes multi-step, ni decodificación especulativa.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Clasificación de documentos escaneados: el modelo recibe la imagen de un documento y el texto de las categorías posibles, y devuelve la categoría asignada en un formato tipado y parseable directamente por el sistema, sin necesidad de post-procesar lenguaje natural.
-- Extracción de campos de facturas y albaranes: se le pasa la imagen del documento y un esquema de campos (número de factura, CIF, base imponible, IVA), y el modelo devuelve la estructura rellena, lo que simplifica la integración con sistemas de contabilidad.
-- Moderación de contenido con criterios definidos: dado un texto o una imagen y una taxonomía de políticas, el modelo clasifica el contenido en la categoría correspondiente y justifica brevemente la decisión dentro del bloque de pensamiento.
-- Enrutado de tickets de soporte: con la imagen o el texto del ticket como entrada y una lista cerrada de departamentos como salida, el modelo actúa como clasificador de primera línea antes de derivar el caso a un sistema de gestión.
-- Verificación de identidad documental en procesos KYC: el modelo puede clasificar el tipo de documento aportado (DNI, pasaporte, permiso de conducir) y extraer los campos necesarios, siempre con revisión humana posterior dado el riesgo de error.
-- Agentes con herramientas en pipelines internos: gracias al formato de tool calling documentado, el modelo puede invocarse como planificador que decide qué función llamar (por ejemplo, consultar un precio o un estado de pedido) y devolver la llamada en el formato XML esperado por el orquestador.
-- Análisis de imágenes en control de calidad: clasificación de piezas o productos a partir de fotografías, devolviendo una etiqueta tipada que alimenta directamente el sistema de trazabilidad industrial.
-- Preprocesado de datos para entrenamiento de otros modelos: uso del modelo como etiquetador automático de pares imagen-texto, aprovechando su salida estructurada para generar datasets anotados.
+- Enrutado de tickets de soporte: el modelo recibe el mensaje del cliente como estado y un esquema con la pregunta `route` de tipo `choice` (billing, shipping, technical), devolviendo la probabilidad de cada equipo en una sola pasada. Adecuado por su latencia baja y salida determinista frente a un LLM generativo.
+- Triaje de urgencia: combinación de una pregunta `score` con criterios ordinales ("can wait", "this week", "today", "right now") para priorizar colas de atención sin intervención humana.
+- Moderación de contenido: clasificación de textos o imágenes contra un esquema de políticas tipadas, obteniendo probabilidades por categoría que permiten aplicar umbrales configurables.
+- Detección de sentimiento y tono: pregunta `noul` del estilo "¿El cliente está enfadado?" junto con preguntas `score` sobre intensidad emocional, útil en sistemas de atención al cliente automatizada.
+- Extracción de etiquetas estructuradas: clasificación de documentos o formularios contra un esquema fijo de campos, sustituyendo parsers frágiles por un clasificador con salida probabilística.
+- Clasificación de imágenes en pipelines industriales: con el fichero mmproj cargado, el modelo puede etiquetar imágenes contra criterios tipados (defectos, categorías de producto) en un único forward pass.
+- Filtrado previo en sistemas RAG o agenticos: decidir qué ruta, herramienta o subagente debe atender una consulta antes de invocar un LLM generativo, reduciendo coste y variabilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de la cuantización no incluye métricas de MMLU, HumanEval, GSM8K ni de tareas de clasificación o extracción estructurada, y tampoco se aportan comparaciones numéricas con el checkpoint original en bf16.
+No se han publicado resultados de benchmarks en la información disponible. El autor señala además que perplejidad y divergencia KL no pueden medirse para este modelo, al no generar texto sobre el que calibrar. Las descripciones de calidad asociadas a cada cuantización son orientativas generales, no mediciones específicas de este modelo.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que se indican a continuación son estimaciones derivadas del tamaño de los ficheros GGUF publicados, asumiendo margen para caché KV, el fichero mmproj de visión y sobrecarga del runtime. No proceden de mediciones publicadas por el autor.
-
-- bf16 (17,92 GB): requiere del orden de 20-24 GB de VRAM. Apropiado para A100 40 GB, H100, RTX 4090 24 GB (ajustado) o RTX 3090 24 GB.
-- Q8_0 (9,55 GB): del orden de 12-14 GB de VRAM. Cabe en RTX 4080, RTX 3090, RTX 4090 y en A100 con holgura.
-- Q6_K (7,79 GB) y Q6_K_L (8,11 GB): del orden de 10-12 GB de VRAM. Viables en RTX 3060 12 GB, RTX 4070 y superiores.
-- Q5_K_M (6,88 GB): del orden de 9-10 GB de VRAM. Cabe en GPU de consumo con 10-12 GB.
-- Q4_K_M (5,84 GB) y Q4_K_L (6,20 GB): del orden de 8-9 GB de VRAM. Es la opción recomendada por el autor para uso general; cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB y GPUs de 8 GB con contexto reducido.
-- IQ4_XS (5,23 GB) y Q4_K_S (5,48 GB): del orden de 7-8 GB de VRAM. Es la franja más ajustada para GPUs de 8 GB y para Mac con memoria unificada de 16 GB.
-- El fichero mmproj necesario para procesar imágenes añade consumo de VRAM adicional; su tamaño no está disponible en la información proporcionada.
-- Opciones de despliegue: llama.cpp (compilación b11279 o posterior, indicada por el autor), servidores compatibles con GGUF y runtimes que acepten este formato. El tag endpoints_compatible del repositorio sugiere compatibilidad con endpoints de inferencia, pero no se detalla cuáles.
-- Latencia y throughput estimados: no disponible en la información proporcionada. Los tags del repositorio no incluyen datos de velocidad, y el autor indica que la decodificación especulativa no está activada.
+- VRAM estimada: aproximadamente 6,04 GB para Q4_K_M, 6,07 GB para Q4_1, 6,66 GB para Q5_K_S, 6,80 GB para Q4_K_L, 6,98 GB para Q5_K_M, 7,83 GB para Q6_K, 8,32 GB para Q6_K_L, 9,68 GB para Q8_0 y 18,16 GB para bf16.
+- Cabe en GPU de consumo: Q4_K_M y Q4_1 en tarjetas de 8 GB (RTX 3060, RTX 4060); Q5_K_M y Q6_K en tarjetas de 12 GB (RTX 3060 12GB, RTX 4070); Q8_0 en tarjetas de 12-16 GB; bf16 en 24 GB (RTX 4090) o A100/H100.
+- GPU recomendadas: RTX 4090 o A100/H100 para bf16 y Q8_0; RTX 3060 12GB, RTX 4070 o RTX 4080 para cuantizaciones de 5-6 bits; RTX 4060 o RTX 3060 8GB para Q4.
+- Opciones de despliegue: llama.cpp con `llama-server` (endpoint `/v1/systemone`), versión b11430 o superior. No se documentan opciones con vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: no disponibles. Al tratarse de un único forward pass sin generación autoregresiva, la latencia esperada es sensiblemente inferior a la de un LLM generativo del mismo tamaño, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-La información proporcionada no incluye datos de benchmarks ni especificaciones de contexto de modelos alternativos, por lo que no es posible establecer una comparación numérica fiable. La única comparación documentada es entre el propio modelo base y su versión cuantizada:
-
-| Modelo | Parámetros | Formato | Licencia | Contexto | Disponibilidad |
+| Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cloudflare/clef-flash | 8.953.803.264 (aproximadamente 9B) | safetensors (checkpoint original) | Apache 2.0 | no disponible | Hugging Face, requiere código personalizado |
-| bartowski/Cloudflare_clef-flash-GGUF (este repositorio) | 8.953.803.264 (aproximadamente 9B) | GGUF en 14 cuantizaciones conocidas | Apache 2.0 | no disponible | Hugging Face, ejecutable en llama.cpp |
-| Otros modelos multimodales de aproximadamente 9B con salida estructurada | no disponible | no disponible | no disponible | no disponible | no disponible |
+| clef-flash (Cloudflare) | ~9B | no disponible | Probabilidades tipadas por pregunta | Apache 2.0 | GGUF vía bartowski, checkpoint original |
+| Modelos de clasificación tipo BERT/RoBERTa | 0,1-0,4B | 512 tokens tipicamente | Etiqueta única por texto | Apache 2.0 / MIT segun variante | Hugging Face, amplia |
+| LLM generativos con salida JSON (p. ej. Qwen de 7-9B) | 7-9B | 8K-128K segun variante | Texto libre o JSON parseable | Apache 2.0 u otras | Amplia |
 
-No se dispone de información verificable sobre alternativas equivalentes en tarea (image-text-to-typed-output) y tamaño, por lo que la comparativa con modelos de otros autores queda marcada como no disponible.
+La ventaja específica de clef-flash es la combinación de esquema tipado, salida probabilística por opción y multimodalidad en un solo modelo, frente a clasificadores BERT (limitados a una etiqueta y sin visión) y frente a LLMs generativos (salida menos determinista y mayor coste por consulta). No se dispone de comparaciones de rendimiento numéricas con alternativas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la información disponible. Al ser un modelo derivado de un post-entrenamiento sobre una base de la familia Qwen, es razonable esperar los sesgos propios de esa familia, pero no hay datos publicados al respecto en esta ficha.
-- Riesgo de alucinación: no cuantificado. En tareas de extracción de campos a partir de imágenes (facturas, documentos de identidad) el modelo puede generar valores plausibles pero incorrectos, por lo que cualquier uso en producción debería incorporar validación contra el documento original.
-- El repositorio es una cuantización de terceros: los artefactos los genera bartowski, no Cloudflare, por lo que la reproducibilidad exacta respecto al checkpoint original depende del proceso de cuantización y de la calibración imatrix.
-- La model card indica que el modelo requiere código personalizado (tag custom-code), lo que puede complicar su integración en frameworks de despliegue que no soporten código específico del modelo.
-- El fichero mmproj es imprescindible para el procesamiento de imágenes; sin él, la entrada multimodal no está disponible. Su tamaño y sus requisitos no se detallan en la información proporcionada.
-- Longitud de contexto desconocida: no se puede dimensionar la caché KV ni planificar cargas de trabajo con documentos largos sin este dato.
-- Idiomas soportados sin documentar: no se puede garantizar un rendimiento homogéneo en castellano ni en otros idiomas distintos del inglés.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero conviene verificar que el checkpoint base Cloudflare/clef-flash mantenga la misma licencia y que no existan condiciones adicionales en su repositorio de origen.
-- El listado de ficheros disponible está truncado en la información proporcionada, por lo que es posible que existan cuantizaciones adicionales no recogidas aquí.
-- Los resultados de la búsqueda web asociada a esta consulta no contienen material relevante sobre el modelo: los enlaces devueltos corresponden a sitios de contenido para adultos y no guardan relación con clef-flash ni con su cuantización.
+- No genera texto: no puede usarse como chatbot, completador ni endpoint de chat; requiere el endpoint `/v1/systemone` de `llama-server`.
+- Las cuantizaciones por debajo de 4 bits por peso (Q3_K_L, Q3_K_M, IQ3_M, Q3_K_S, Q2_K) pierden calidad de forma notablemente superior a una cuantización con imatrix del mismo tamaño; se recomienda Q4_K_M o superior.
+- No se pueden calcular imatrix, perplejidad ni divergencia KL para este modelo, por lo que no hay métricas objetivas de degradación por cuantización.
+- La cabeza de decisión se almacena en Q8_0 en todas las cuantizaciones; no se ha medido el coste de cuantizarla a otros formatos.
+- Longitud de contexto, idiomas soportados y sesgos conocidos: no disponibles en la información proporcionada.
+- Riesgo de alucinación: no aplica en el sentido habitual al no generar texto, pero las probabilidades de clasificación pueden ser mal calibradas en dominios alejados de los datos de entrenamiento.
+- Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución y conservación del aviso de licencia.
+- Para producción, conviene validar los umbrales de decisión sobre datos propios, dado que no hay benchmarks publicados que orienten la calibración.
 
 ## Enlaces
 
-- Repositorio de la cuantización: https://huggingface.co/bartowski/Cloudflare_clef-flash-GGUF
-- Modelo base original: https://huggingface.co/Cloudflare/clef-flash
+- Repositorio GGUF: https://huggingface.co/bartowski/Cloudflare_clef-flash-GGUF
+- Modelo original: https://huggingface.co/Cloudflare/clef-flash
+- llama.cpp: https://github.com/ggml-org/llama.cpp/
+- Release de llama.cpp usado para la cuantización: https://github.com/ggml-org/llama.cpp/releases/tag/b11430
+- Documentación del endpoint `/v1/systemone`: https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md
+- TypeSafe System One API: https://docs.typesafe.ai/api
 - Fichero recomendado Q4_K_M: https://huggingface.co/bartowski/Cloudflare_clef-flash-GGUF/blob/main/Cloudflare_clef-flash-Q4_K_M.gguf
-- Fichero bf16 completo: https://huggingface.co/bartowski/Cloudflare_clef-flash-GGUF/blob/main/Cloudflare_clef-flash-bf16.gguf
-- llama.cpp, release empleada para la cuantización: https://github.com/ggml-org/llama.cpp/releases/tag/b11279
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp/
-- Paper, blog técnico o demo del modelo: no disponible en la información proporcionada.

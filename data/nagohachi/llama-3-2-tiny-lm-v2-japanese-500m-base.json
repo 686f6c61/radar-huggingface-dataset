@@ -5,7 +5,7 @@
   "author": "nagohachi",
   "url": "https://huggingface.co/nagohachi/Llama-3.2-tiny-lm-v2-japanese-500m-base",
   "created_at": "2026-07-25T13:46:50.000Z",
-  "updated_at": "2026-11-15T09:06:59.000Z",
+  "updated_at": "2026-11-18T02:12:03.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

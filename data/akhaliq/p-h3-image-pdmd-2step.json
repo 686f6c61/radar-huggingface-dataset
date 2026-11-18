@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 20,
-  "downloads_30d": 5424,
+  "downloads_30d": 5578,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "akhaliq/p-h3-image-pdmd-2step-lora · Hugging Face",
-      "url": "https://huggingface.co/akhaliq/p-h3-image-pdmd-2step-lora",
-      "snippet": "akhaliq / p-h3-image-pdmd-2step-lora Like 0 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
-    },
-    {
-      "title": "akhaliq (AK) - Hugging Face",
-      "url": "https://huggingface.co/akhaliq",
-      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 3 hours ago ... published a dataset about 3 hours ago"
-    }
-  ]
+  "sources": []
 }

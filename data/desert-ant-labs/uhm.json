@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 17,
-  "downloads_30d": 5896,
+  "downloads_30d": 5958,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -58,31 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Uhm: Filler-word detection on device | Desert Ant Labs",
-      "url": "https://desertant.com/models/uhm/",
-      "snippet": "Add Uhm from Desert Ant Labs to this project. On-device filler-word detection that finds &#x27;um&#x27;, &#x27;uh&#x27;, &#x27;hmm&#x27;, and other fillers straight from the waveform, accurate to 20 milliseconds."
-    },
-    {
-      "title": "desert-ant-labs/uhm · Hugging Face",
-      "url": "https://huggingface.co/desert-ant-labs/uhm",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Desert Ant Labs: On-device AI models and SDKs",
-      "url": "https://desertant.com/",
-      "snippet": "Desert Ant Labs is a frontier AI lab for on-device models that run on Apple, Android and the web, in a few lines of native code."
-    },
-    {
-      "title": "Desert-Ant-Labs/uhm-swift - GitHub",
-      "url": "https://github.com/Desert-Ant-Labs/uhm-swift",
-      "snippet": "License See LICENSE.md. Desert Ant Labs Source-Available License v1.0. Free for commercial use up to 100,000 MAU per Model. Contact licensing@desertant.ai for commercial licensing at larger scale. No releases published 100.0%"
-    },
-    {
-      "title": "Uhm: on-device filler-word detection - a Hugging Face Space by desert ...",
-      "url": "https://huggingface.co/spaces/desert-ant-labs/uhm-demo",
-      "snippet": "Desert Ant Labs&#x27; Uhm model finds every uh, um, and hmm at 20 ms resolution, on device. Your audio never leaves the device."
-    }
-  ]
+  "sources": []
 }

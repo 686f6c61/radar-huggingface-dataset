@@ -2,113 +2,104 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B APEX-I-NanoPlus GGUF es una cuantizacion artesanal, tensor a tensor, del modelo base ornith-ai/Ornith-1.5-35B-A3B, publicada por el usuario IsValorum. Se trata de un modelo de mezcla de expertos (MoE) de 34.660.610.688 parametros totales (unos 34,66 mil millones) con aproximadamente 3 mil millones de parametros activos por token, segun la nomenclatura A3B del propio nombre. El resultado de la cuantizacion es un unico fichero GGUF de 12,55 GB (11,69 GiB) a unos 2,93 bits por peso (BPW), disenado para caber en GPUs de 16 GB dejando margen para contexto, o para inferencia total o parcial en memoria de sistema.
+Ornith-1.5-35B-A3B es un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) desarrollado por ornith-ai, con 34.660.610.688 parametros totales y aproximadamente 3.000 millones de parametros activos por token (la designacion A3B del nombre). Esta ficha documenta la cuantizacion GGUF APEX-I-NanoPlus publicada por IsValorum, una build artesanal orientada a reducir el peso del modelo hasta unos 12,55 GB en disco (11,69 GiB en memoria) manteniendo calidad equivalente a un Q4_K_M/Q4_K_L estandar. El modelo base es multimodal (image-text-to-text) y esta orientado a razonamiento, codigo y flujos agenticos.
 
-El modelo base pertenece a la familia Ornith 1.5, orientada a razonamiento, generacion de codigo y uso agentico (las etiquetas incluyen swe-bench, agentic, coding y reasoning), y es multimodal: su pipeline en Hugging Face es image-text-to-text e incluye soporte de vision. Soporta 13 idiomas declarados (en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar) y se distribuye bajo licencia MIT. La arquitectura del modelo base esta etiquetada como qwen35moe, con un backbone de 40 capas.
+La relevancia de esta publicacion concreta reside en su estrategia de cuantizacion selectiva: los tensores de enrutamiento de expertos (`gate_inp`, `gate_shexp`) se conservan en F32 sin comprimir, la cabeza de salida se protege en Q6_K, las compuertas de atencion en Q8_0 y solo se aplica compresion agresiva de 2 bits a tensores redundantes. Segun la model card, esto permite desplegar un MoE de 35B en GPUs de consumo con 16 GB de VRAM, apoyandose en streaming desde RAM del sistema.
 
-La relevancia de esta ficha concreta no esta en el modelo base, sino en la receta de cuantizacion: frente a los cuantizados sub-3-bit genericos de la comunidad, esta version mantiene las matrices de enrutamiento en F32 sin comprimir, blinda la cabeza de salida en Q6_K y protege las proyecciones de atencion criticas, a cambio de una perdida medida de 0,5113 puntos de perplejidad en WikiText-2 respecto al BF16 (+6,75 %).
+El modelo base declara soporte para 13 idiomas (incluido el castellano), licencia MIT y un pipeline multimodal con vision. La cuantizacion conserva esa licencia. No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento ni sobre el proceso de alineacion del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mezcla de expertos) con backbone de 40 capas; etiqueta de familia qwen35moe |
-| Parametros totales | 34.660.610.688 (~34,66 mil millones) |
-| Parametros activos | ~3 mil millones por token (denominacion A3B del nombre del modelo; cifra no confirmada de forma explicita en la model card) |
-| Longitud de contexto | No disponible en la model card de esta cuantizacion; el modelo base se describe en fuentes externas con 262K tokens. La model card menciona soporte nativo de 32K-64K con offload completo en GPUs de 16 GB y 128K o mas con carga parcial en RAM del sistema |
-| Tipos de cuantizacion | Mezcla por tensor: IQ2_XXS, IQ2_S, IQ3_XXS, Q3_K, Q4_K, Q6_K, Q8_0 y F32 (ver detalle mas abajo) |
-| Idiomas soportados | Ingles, chino, espanol, frances, aleman, portugues, italiano, ruso, japones, coreano, vietnamita, thai y arabe (13 idiomas declarados) |
-| Licencia | MIT (licencia declarada para este repositorio de cuantizacion) |
-| Formato de pesos | GGUF (unico fichero principal de 12,55 GB / 11,69 GiB, ~2,93 BPW); el modelo base se distribuye en safetensors BF16 (~71,0 GB) |
-| Tamano del repositorio | 25,7 GB |
-| Modalidad | Multimodal texto-imagen (image-text-to-text), con soporte de vision |
-| Cuantizador | IsValorum (receta APEX-I-NanoPlus, generada en Unsloth Studio) |
-| Calibracion | Matriz de importancia oficial (imatrix) proporcionada por el autor del modelo base |
+| Arquitectura | Mixture-of-Experts (MoE) sobre transformer, 40 capas en el backbone; familia Qwen3.5-MoE segun tags (`qwen35moe`, `qwen3_5_moe`, `qwen3.6`) |
+| Parametros totales | 34.660.610.688 (34,66B) |
+| Parametros activos | Aproximadamente 3B (designacion A3B; cifra exacta no disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF APEX-I-NanoPlus (aproximadamente 2,90 BPW); mezcla de F32 (routers), Q6_K (output head), Q8_0 (attention gates), IQ3_XXS (ffn_down_exps) y 2 bits en tensores redundantes |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar |
+| Licencia | MIT |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre el proceso de entrenamiento del modelo base (numero de tokens, composicion del dataset, fases de RLHF/DPO o ajuste por preferencias) en la informacion proporcionada. Lo que si se detalla es la arquitectura de cuantizacion aplicada sobre el checkpoint original. Se trata de un transformer MoE de 40 capas en el que la receta NanoPlus asigna precision de forma quirurgica segun la sensibilidad de cada tensor.
+El modelo base es un transformer con capas MoE, identificado en los tags como perteneciente a la familia Qwen3.5-MoE (`qwen35moe`, `qwen3_5_moe`, `qwen3.6`) y con un backbone de 40 capas segun la model card de la cuantizacion. La designacion A3B indica que, pese a sus casi 35.000 millones de parametros totales, solo se activa un subconjunto reducido (del orden de 3.000 millones) por token, lo que reduce el coste computacional de inferencia frente a un modelo denso del mismo tamano. El pipeline declarado es image-text-to-text, por lo que incorpora capacidades de vision ademas de generacion de texto.
 
-La asignacion concreta es la siguiente: los expertos centrales (indices 0-37, con los indices 2-37 descritos como nucleo) usan IQ3_XXS en las proyecciones down, IQ2_S en las proyecciones gate e IQ2_XXS en las proyecciones up; los expertos de borde (indices 0-1 y 38-39) reciben Q3_K en down e IQ3_XXS en gate y up; el experto compartido (shexp) se mantiene en Q4_K; las proyecciones q/k/v de atencion completa (capas 3, 7, 11 y sucesivas) van en Q4_K y la proyeccion de salida de atencion (attn_output) en Q6_K; las puertas de atencion en Q8_0; la cabeza de salida (output.weight) en Q6_K; y tanto los enrutadores (gate_inp) como gate_shexp permanecen en F32 sin comprimir, evitando derivas de enrutamiento. Esta version NanoPlus omite el modulo MTP (multi-token prediction) presente en otras variantes de la familia, priorizando el backbone de 40 capas dentro de un presupuesto de 12-13 GB.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras etapas de alineacion en el modelo base. La innovacion tecnica documentada corresponde a la cuantizacion: la build APEX-I-NanoPlus aplica una politica tensor a tensor que preserva integridad en los componentes sensibles (enrutamiento de expertos en F32, cabeza de salida en Q6_K, compuertas de atencion en Q8_0, proyeccion residual de bajada de los expertos en IQ3_XXS) y reserva la compresion de 2 bits para tensores redundantes. Segun el autor, esto evita la deriva de enrutamiento y los fallos de sintaxis tipicos de las cuantizaciones sub-3-bit genericas. La release omite un companero MTP (multi-token prediction) para priorizar el backbone de 40 capas dentro del presupuesto de 12-13 GB.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento multi-paso, con etiqueta explicita de reasoning en el modelo base.
-- Generacion y comprension de codigo, con etiquetas coding y swe-bench, orientado a tareas de ingenieria de software.
-- Flujos agenticos: la model card y las etiquetas del repositorio indican soporte para uso agentico (agentic) y razonamiento en varios pasos.
-- Capacidades multimodales de vision: pipeline image-text-to-text, con soporte de entrada de imagen junto a texto.
-- Multilingue: 13 idiomas declarados (en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar).
-- Ejecucion en llama.cpp, con soporte de offload total o parcial a GPU y carga en RAM del sistema.
-- Inferencia en CPU con AVX2: la model card afirma que la configuracion deja mas de 4 GB de VRAM libre en tarjetas de 16 GB para contexto de 32K sin bloqueos de CPU AVX2.
-- No se documenta de forma explicita en la informacion disponible el soporte de tool calling o function calling. No disponible.
+- Generacion de texto conversacional multi-turno.
+- Razonamiento explicito (tag `reasoning` en el modelo base).
+- Generacion y comprension de codigo, con orientacion a tareas de ingenieria de software (tag `swe-bench`).
+- Capacidades agenticas y flujos de multiples pasos (tag `agentic`).
+- Vision e inferencia image-text-to-text (pipeline declarado).
+- Soporte multilingue en 13 idiomas: ingles, chino, castellano, frances, aleman, portugues, italiano, ruso, japones, coreano, vietnamita, tailandes y arabe.
+- Plantilla de chat endurecida para uso agentico, incluida en la model card de la cuantizacion.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con llama.cpp.
+- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible.
 
 ## Casos de uso
 
-- Despliegue local en GPU de 16 GB: con un fichero de 12,55 GB, el modelo cabe con offload completo en tarjetas como RTX 4080 o RTX 4070 Ti, dejando margen para contexto de 32K, lo que permite trabajar sin conexion y sin coste por token.
-- Inferencia en RAM del sistema: para equipos sin GPU suficiente, la carga total o parcial en memoria DDR4/DDR5 ofrece entre 20 y 45 tok/s segun la configuracion, lo que hace viable usar el modelo en portatiles o servidores sin acelerador dedicado.
-- Contexto largo con offload parcial: en configuraciones que no pueden alojar 128K o mas tokens de contexto en VRAM, la parte sobrante se puede situar en RAM del sistema manteniendo generacion estable, util para analisis de documentos extensos.
-- Asistencia a la programacion en repositorios: el modelo base esta etiquetado con swe-bench y coding, por lo que encaja en tareas de resolucion de issues, refactorizacion y navegacion de codigo, siempre que se acepte la perdida de precision de la cuantizacion sub-3-bit.
-- Agentes autonomos de varios pasos: la orientacion agentica del modelo base permite encadenar razonamiento, uso de herramientas y verificacion, con la ventaja de un coste de inferencia bajo (~3B parametros activos).
-- Analisis de imagenes con texto asociado: gracias al pipeline image-text-to-text, se puede usar para descripcion de capturas, extraccion de informacion de documentos escaneados o asistencia sobre diagramas, dentro de los limites de calidad de la cuantizacion.
-- Atencion al cliente multilingue: los 13 idiomas declarados permiten atender consultas en ingles, chino, espanol, frances, aleman, portugues, italiano, ruso, japones, coreano, vietnamita, thai y arabe desde un unico despliegue.
-- Prototipado e investigacion con presupuesto reducido: al ocupar 12,55 GB en disco, permite experimentar con un MoE de ~35B en hardware de gama alta de consumo, en lugar de requerir los ~71 GB del checkpoint BF16.
+- Asistentes de codigo en local: el modelo puede generar y revisar codigo en un equipo con 16 GB de VRAM gracias al streaming desde RAM del sistema, adecuado para desarrolladores que no quieren enviar codigo propietario a APIs externas.
+- Agentes de ingenieria de software: con la plantilla de chat agentica incluida y su orientacion a SWE-bench, puede integrarse en pipelines que resuelven issues, aplican parches y ejecutan tareas de varios pasos sobre repositorios.
+- Razonamiento con contexto largo en hardware de consumo: la ventana de contexto del modelo base (no disponible) combinada con el bajo peso de la cuantizacion permite mantener conversaciones o documentos extensos en memoria en GPUs de 16 GB.
+- Procesamiento de documentos con imagenes: al ser image-text-to-text, puede extraer y razonar sobre informacion de capturas, diagramas o formularios escaneados en flujos de digitalizacion.
+- Atencion al cliente multilingue: cubre 13 idiomas, incluido el castellano, y puede gestionar conversaciones multi-turno en despliegues autoalojados con llama-server exponiendo una API compatible con OpenAI.
+- Analisis de codigo en CI/CD: puede integrarse como paso de revision automatizada o generacion de tests en pipelines, ejecutandose en infraestructura propia con llama.cpp y evitando dependencias de terceros.
+- Investigacion y prototipado de modelos MoE: su huella de 12,55 GB facilita experimentar con un MoE de 35B en estaciones de trabajo sin GPUs de datacenter.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta perplejidad medida en WikiText-2 sobre el GGUF final, junto con la comparacion frente al modelo base BF16 y frente a la variante MiniPlus V2.1 del mismo cuantizador:
+| Metrica | APEX-I-NanoPlus (actual) | APEX-I-MiniPlus V2.1 | BF16 base |
+|---|---|---|---|
+| Tamano en disco | 12,55 GB | 15,23 GB | aprox. 71,0 GB |
+| Huella en memoria | 11,69 GiB | 14,18 GiB | aprox. 66,2 GiB |
+| BPW medio | aprox. 2,90 | 3,43 | 16,00 |
+| Perplejidad WikiText-2 | 8,0913 ± 0,22535 | 7,6370 ± 0,21010 | aprox. 7,58 (referencia) |
+| Delta PPL vs. BF16 | +0,5113 (+6,75%) | +0,0570 (+0,75%) | 0,000 |
+| ARC-Challenge (0-shot, 1.172 preguntas) | aprox. 95,71% | no disponible | no disponible |
+| Equivalencia de calidad | Q4_K_M / Q4_K_L | Q5_K_L (rozando Q6_K) | linea base |
 
-| Especificacion | Tamano en disco | Huella en RAM/VRAM | BPW medio | Perplejidad WikiText-2 | Delta PPL vs. BF16 | Tier de calidad equivalente |
-|---|---|---|---|---|---|---|
-| Base BF16 sin cuantizar | ~71,0 GB | ~66,2 GiB | 16,00 | ~7,58 (referencia) | 0,000 | Precision completa |
-| APEX-I-MiniPlus V2.1 | 15,23 GB | 14,18 GiB | 3,43 | 7,6370 +/- 0,21010 | +0,0570 (+0,75 %) | Q5_K_L, rozando Q6_K |
-| APEX-I-NanoPlus (esta ficha) | 12,55 GB | 11,69 GiB | ~2,93 | 8,0913 +/- 0,22535 | +0,5113 (+6,75 %) | Q4_K_M solido |
-
-Rendimiento de generacion declarado: entre 20 y 45 tok/s en inferencia por RAM del sistema, dependiendo del procesador, el ancho de banda de memoria y la configuracion DDR4/DDR5. No se han publicado datos de MMLU, HumanEval, GSM8K ni SWE-bench para esta cuantizacion concreta.
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar del modelo base. Los datos de ARC-Challenge y WikiText-2 corresponden a mediciones del autor de la cuantizacion sobre el GGUF final.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 11,69 GiB de pesos en VRAM si se hace offload completo; con contexto de 32K en una tarjeta de 16 GB quedan mas de 4 GB libres segun la model card.
-- GPU de 16 GB: offload completo con contexto nativo de 32K-64K (se mencionan RTX 4080 y RTX 4070 Ti).
-- GPU de 24 GB: la variante MiniPlus V2.1 (15,23 GB) cabe sin esfuerzo en 24 GB; la NanoPlus de 12,55 GB tambien, con margen adicional para contexto mas largo.
-- GPU de 32 GB (por ejemplo RTX 5090): configuraciones de referencia de la familia APEX-I se han evaluado con llama.cpp CUDA, FlashAttention activada, cache K y V en q8_0 y -ngl 99.
-- Cabe en GPU de consumo: si, en tarjetas de 16 GB o mas. Por debajo de 16 GB es necesario offload parcial.
-- Inferencia total o parcial en RAM del sistema: viable, con 20-45 tok/s segun CPU y memoria. Permite sostener contexto de 128K o superior cuando no cabe entero en VRAM.
-- Opciones de despliegue: llama.cpp es el runtime indicado por las etiquetas y la model card. Para el modelo base, fuentes externas mencionan soporte oficial de vLLM, SGLang y GGUF.
-- Latencia y throughput: 20-45 tok/s en modo RAM del sistema segun la model card. No se especifican cifras de latencia ni de throughput para offload completo en GPU.
+- VRAM estimada: aproximadamente 11,69 GiB de huella en memoria para el modelo completo; con overhead de contexto y KV cache, un despliegue comodo requiere 16 GB de VRAM, con streaming parcial desde RAM del sistema.
+- GPU recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 4070 Ti Super (16 GB), A100 y H100 para despliegues de mayor throughput; el autor posiciona la build explicitamente para GPUs de 16 GB.
+- Cabe en GPU de consumo: si, en tarjetas de 16 GB o superiores, con soporte de offload a RAM del sistema para el resto del modelo y el contexto.
+- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server` con API compatible con OpenAI, documentados en la model card); otros motores como vLLM, TGI u Ollama no se mencionan en la informacion disponible.
+- Latencia y throughput: no disponibles. Al ser un MoE con aproximadamente 3B de parametros activos, el coste por token es inferior al de un modelo denso de 35B, pero no se aportan cifras medidas.
+- Nota de calidad: la model card advierte sobre la necesidad de ajustar la penalizacion por repeticion en generacion de codigo para evitar intercambio de caracteres.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion / tamano | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B APEX-I-NanoPlus (esta ficha) | ~34,66B totales, ~3B activos | No disponible en la model card; 262K reportados para el modelo base en fuentes externas | 8,0913 +/- 0,22535 (+6,75 % vs. BF16) | MIT | GGUF de 12,55 GB en Hugging Face |
-| Ornith-1.5-35B-A3B APEX-I-MiniPlus V2.1 | ~34,66B totales, ~3B activos | Igual que el modelo base | 7,6370 +/- 0,21010 (+0,75 % vs. BF16) | MIT | GGUF de 15,23 GB en Hugging Face |
-| Ornith-1.5-35B-A3B base en BF16 | ~34,66B totales, ~3B activos | 262K segun fuentes externas | ~7,58 (referencia) | MIT | Safetensors, ~71,0 GB |
-| Cuantizados genericos de la comunidad sub-3-bit (IQ2_S / IQ2_XXS uniformes) | ~34,66B totales, ~3B activos | Depende del runtime | No disponible | Depende del publicador | GGUF; segun la model card, provocan picos de perplejidad y errores de sintaxis en razonamiento profundo |
-| IsValorum/Qwen3.6-35B-A3B-MTP APEX-I-NanoPlus | No disponible | No disponible | No disponible | No disponible | GGUF de ~13,0 GB, mismo cuantizador |
-| IsValorum/Occamy-1.0 APEX-I-NanoPlus | No disponible | No disponible | No disponible | No disponible | GGUF, mismo cuantizador |
+| Ornith-1.5-35B-A3B APEX-I-NanoPlus (esta ficha) | 34,66B totales, aprox. 3B activos | no disponible | GGUF, 12,55 GB, aprox. 2,90 BPW | MIT | PPL WikiText-2 8,0913; ARC-Challenge aprox. 95,71% |
+| Ornith-1.5-35B-A3B APEX-I-MiniPlus V2.1 | 34,66B totales, aprox. 3B activos | no disponible | GGUF, 15,23 GB, 3,43 BPW | MIT | PPL WikiText-2 7,6370; orientado a ingenieria de software |
+| Qwen3.6-35B-A3B-MTP APEX-I-NanoPlus | no disponible | no disponible | GGUF, aprox. 13,0 GB, 2,93 BPW | no disponible | Mismo autor de cuantizacion; incluye MTP |
+| Occamy-1.0 APEX-I-NanoPlus | no disponible | no disponible | GGUF, aprox. 13,0 GB | no disponible | Mismo autor; orientado a investigacion profunda y multimodal |
+
+Las alternativas listadas provienen de la propia model card del autor de la cuantizacion. No se dispone de datos de benchmarks comparativos frente a modelos de otros desarrolladores (por ejemplo, Qwen3 MoE oficiales o Llama 3.3) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion introduce una perdida medible: +0,5113 puntos de perplejidad en WikiText-2 respecto al BF16, un 6,75 % de degradacion. No es una cuantizacion sin perdida.
-- Los niveles sub-3-bit son sensibles en modelos de razonamiento profundo. La propia model card advierte de que cuantizados genericos IQ2_S/IQ2_XXS sin calibracion provocan picos de perplejidad, errores de sintaxis y corchetes de codigo roto; aunque esta receta esta disenada para mitigarlo, el riesgo no desaparece.
-- No hay resultados publicados de benchmarks de tareas (codigo, matematicas, agentes) para esta cuantizacion concreta. La evaluacion se limita a perplejidad.
-- No se documenta de forma explicita el soporte de tool calling o function calling en la informacion disponible, pese a la orientacion agentica del modelo base.
-- La longitud de contexto efectiva no esta confirmada en la model card de esta cuantizacion; las cifras de 262K proceden de fuentes externas y de la ficha del modelo base, no de este repositorio.
-- El modelo es multimodal, pero no se detalla en la informacion disponible que variantes de cuantizacion se aplicaron al codificador de vision ni como afecta la compresion a la calidad de las tareas de imagen.
-- Riesgo de sesgos: no se dispone de informacion sobre la composicion del dataset de entrenamiento ni sobre evaluaciones de sesgo del modelo base.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible. En modelos de razonamiento cuantizados agresivamente, la degradacion de la cabeza de salida y del flujo residual suele asociarse a mayor probabilidad de incoherencias.
-- Licencia: este repositorio declara MIT, pero conviene verificar la licencia del modelo base ornith-ai/Ornith-1.5-35B-A3B antes de uso comercial, ya que la ficha no reproduce sus terminos.
-- Fecha de publicacion inusual: Hugging Face registra la creacion el 24 de septiembre de 2026, dato que puede indicar un error de metadatos o una fecha futura.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente de esta release concreta. La evaluacion independiente mencionada en los resultados de busqueda corresponde a la variante MiniPlus V2.1, no a esta.
+- Perdida de calidad medible: la perplejidad en WikiText-2 aumenta un 6,75% respecto a BF16, superior al 0,75% de la variante MiniPlus; no es adecuada para tareas que exijan maxima fidelidad de lenguaje.
+- La compresion de 2 bits en tensores redundantes puede degradar la coherencia en generacion larga o en dominios poco representados, aunque el autor afirma que la proteccion de routers y cabeza de salida mitiga los fallos graves.
+- La model card advierte de un problema de intercambio de caracteres en generacion de codigo si no se ajusta la penalizacion por repeticion; requiere configuracion cuidadosa en produccion.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan evaluaciones de factualidad.
+- Sesgos conocidos: no disponibles; no se aporta informacion sobre la composicion del dataset ni sobre evaluaciones de sesgo del modelo base.
+- Longitud de contexto no disponible: no se puede garantizar el comportamiento en ventanas muy largas sin verificacion empirica.
+- El modelo base pertenece a la familia Qwen3.5-MoE segun los tags, pero no se confirma oficialmente la relacion ni se detalla el proceso de entrenamiento.
+- Licencia MIT permite uso comercial, pero la cuantizacion es una build de terceros (IsValorum) sin garantias de soporte; conviene validar el comportamiento en el caso de uso concreto antes de desplegar.
+- La release omite el componente MTP, por lo que no se beneficia de decodificacion multi-token especulativa.
 
 ## Enlaces
 
 - Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Variante MiniPlus V2.1 del mismo cuantizador: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
-- Variante NanoPlus de Qwen3.6-35B-A3B-MTP: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-NanoPlus-GGUF
-- Variante NanoPlus de Occamy-1.0: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-NanoPlus-GGUF
-- Cuantizado alternativo de la misma familia por mudler: https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-GGUF
-- Ficha en local-ai-zone del modelo APEX: https://local-ai-zone.github.io/models/ornith-1-5-35b-a3b-apex.html
-- Ficha en local-ai-zone del modelo base: https://local-ai-zone.github.io/models/ornith-1-5-35b-a3b.html
-- Articulo con especificaciones y guia de ejecucion local (menciona 262K de contexto y soporte de vLLM, SGLang y GGUF): https://www.aimadetools.com/blog/ornith-1-5-35b-a3b/
+- Variante MiniPlus V2.1: https://huggingface.co/IsValorum/Ornith-1.5-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Qwen3.6-35B-A3B-MTP APEX-I-NanoPlus: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-NanoPlus-GGUF
+- Occamy-1.0 APEX-I-NanoPlus: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-NanoPlus-GGUF
+- Apoyo al autor de la cuantizacion: https://ko-fi.com/isvalorum

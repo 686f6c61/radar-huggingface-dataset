@@ -2,112 +2,112 @@
 
 ## Resumen
 
-Minimax-h3_Singularity_v2_pruned es un conjunto de tres ficheros safetensors derivados de `Minimax-h3_Singularity_ref2va_v2_int8.safetensors`, el fine-tune de vídeo de WarmBloodAban sobre MiniMax H3 (modelo de MiniMax). El trabajo lo publica el usuario WAS y consiste en una poda del camino de modulación temporal del modelo más dos recuantizaciones adicionales, manteniendo el formato de los lanzamientos pruned oficiales de ComfyUI para que el modelo se cargue de forma nativa con el nodo Load Diffusion Model.
+MiniMax H3 Singularity ref2va v2 pruned es una version podada y cuantizada del finetune comunitario Singularity ref2va v2, construido sobre el modelo base MiniMax H3 de MiniMax. El autor, WAS, publica tres variantes de pesos (int8, w6a8 y w4a8) en el formato pruned que ComfyUI emplea de forma nativa para sus releases de MiniMax H3, lo que permite cargar los archivos directamente con el nodo Load Diffusion Model sin conversiones adicionales. El modelo esta orientado a generacion de video: text-to-video, image-to-video y reference-to-video, y su pipeline declarado en Hugging Face es image-to-video.
 
-El modelo es un generador de vídeo por difusión (pipeline image-to-video, con soporte declarado también de text-to-video y reference-to-video) compuesto por 50 bloques transformer, un VAE de vídeo (`minimax_h3_video_vae_int8_convrot`) y el text encoder Qwen3-VL 32B en la variante MiniMax H3. La poda sustituye el timestep embedder y la proyección adaLN de ancho completo de cada uno de los 50 bloques —13.000 millones de pesos en total— por una tabla `adaln_t_table` de 1025 x 8 y pesos adaLN de anchura 8; según el autor, la modulación resultante se mantiene dentro del 0,025 % de la del modelo original en cada timestep probado.
+La relevancia de esta publicacion es practica: el release original en bf16 ocupa un espacio considerable y exige mas memoria de la que muchas GPU de consumo ofrecen, mientras que estas variantes reducen el peso del archivo a 21 GB (int8), 16 GB (w6a8) o 11,8 GB (w4a8). El podado elimina el embedder de timestep y la proyeccion adaLN de ancho completo en cada uno de los 50 bloques transformer, sustituyendolos por una tabla `adaln_t_table` de 1025 x 8 y pesos adaLN de 8 canales, lo que retira 13 mil millones de pesos del grafo.
 
-Su relevancia es práctica: reduce el peso de los ficheros de 21,0 GB (int8 pruned) a 16,0 GB (w6a8) y 11,8 GB (w4a8), lo que acerca la inferencia a GPUs de consumo, a costa de una pérdida medible de fidelidad frente al render de referencia (PSNR de 29,1 dB, 26,2 dB y 21,4 dB respectivamente). Es un modelo de vídeo, no un LLM: no ofrece tool calling ni razonamiento multi-paso.
+El repo completo ocupa 85,7 GB e incluye los archivos bf16 e int8 de referencia ademas de las variantes podadas. La build r2 corrige la ruta de construccion: los archivos int8 y w6a8 parten ahora del release bf16 en lugar del int8, con mejoras medibles en error de pesos y PSNR frente a la build r1. La licencia es la MiniMax H3 Community License Agreement, no una licencia open source estandar.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusión para vídeo (50 bloques transformer) con VAE de vídeo y text encoder Qwen3-VL 32B en la variante MiniMax H3 |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible (no se documenta arquitectura MoE) |
-| Longitud de contexto | no disponible (la comparación del autor genera 124 fotogramas a 24 fps, unos 5,2 s, a 1344 x 768) |
-| Tipos de cuantización | int8 convrot; w6a8 (grupo 32); w4a8 (grupo 16) |
+| Arquitectura | Transformer de difusion para video, 50 bloques transformer, con podado de embedder de timestep y proyeccion adaLN sustituidos por tabla `adaln_t_table` (1025 x 8) y pesos adaLN de 8 canales |
+| Parametros totales | no disponible (el podado retira 13 mil millones de pesos del grafo original) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de video; la referencia de render usa 124 frames a 24 fps) |
+| Tipos de cuantizacion | int8 convrot, w6a8 (group 32), w4a8 (group 16); release bf16 e int8 de referencia en el repo |
 | Idiomas soportados | no disponible |
 | Licencia | MiniMax H3 Community License Agreement |
-| Formato de pesos | safetensors |
-| Tamaño del repositorio | 48,7 GB (los tres ficheros de difusión: 21,0 GB, 16,0 GB y 11,8 GB) |
-| Pipeline declarado | image-to-video (tags: text-to-video, image-to-video, reference-to-video) |
-| Poda aplicada | timestep embedder y proyección adaLN de ancho completo en los 50 bloques: 13.000 millones de pesos sustituidos por `adaln_t_table` 1025 x 8 y pesos adaLN de anchura 8 |
-| Modelo base | WarmBloodAban/Minimax-h3_Singularity y MiniMaxAI/MiniMax-H3 |
-| Descargas / likes | 0 / 2 |
+| Formato de pesos | safetensors (layout pruned compatible con ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de difusión para vídeo. El autor no entrena desde cero: parte del fichero int8 de `Minimax-h3_Singularity_ref2va_v2` y aplica una poda estructural sobre el camino de modulación. En cada uno de los 50 bloques transformer se eliminan el timestep embedder y la proyección adaLN de ancho completo, que se reemplazan por una tabla `adaln_t_table` de 1025 x 8 y pesos adaLN de anchura 8, replicando el esquema de los lanzamientos pruned de ComfyUI (`minimax_h3_ref2va_pruned_int8_convrot`). El resto de tensores del fichero int8 es idéntico byte a byte al original, y el autor reporta que la modulación producida por las capas podadas se desvía menos del 0,025 % respecto al modelo fuente en todos los timesteps probados.
+El modelo es un transformer de difusion para generacion de video, con 50 bloques transformer. El podado aplicado por WAS no altera la atencion ni las capas lineales principales, sino la ruta de modulacion temporal: el embedder de timestep y la proyeccion adaLN de ancho completo de cada bloque se reemplazan por una tabla `adaln_t_table` de 1025 x 8 y pesos adaLN de 8 canales, siguiendo el layout de curvas del release `minimax_h3_ref2va_pruned_int8_convrot` de ComfyUI. En los archivos r2 la tabla se deriva del propio embedder de timestep del release bf16, y la modulacion resultante queda dentro del 0,03 % de la del bf16 en todos los timesteps probados.
 
-Sobre esa base podada se construyen las otras dos variantes: `w6a8` (grupo 32) y `w4a8` (grupo 16) cuantizan las capas lineales de los bloques transformer y `final_layer.video_out`, dejando el token refiner en int8 convrot, igual que hace el lanzamiento pruned w6a8 de ComfyUI. No se documentan en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO: el fine-tune subyacente es de WarmBloodAban y sus datos de entrenamiento no se detallan aquí. La innovación destacable es la poda del camino adaLN con preservación casi exacta de la modulación, que habilita cuantizaciones más agresivas sin reentrenar.
+La cuantizacion se aplica sobre las lineales de los bloques transformer. El archivo int8 fija la escala de cada fila para minimizar el error; el w6a8 cuantiza ademas `final_layer.video_out` y mantiene el token refiner en int8 convrot, igual que el release w6a8 podado de ComfyUI. El w4a8 se construye desde el release int8, no desde bf16, porque la construccion desde bf16 rendia peor en todas las semillas probadas (20,2 dB frente a 21,5 dB). No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens ni si hubo RLHF o DPO en el finetune Singularity.
 
 ## Capacidades
 
-- Generación de vídeo a partir de imagen (image-to-video), el pipeline declarado en el repositorio.
-- Generación de texto a vídeo (text-to-video), según los tags del autor.
-- Generación con referencia (reference-to-video), orientada a mantener la identidad o el aspecto de un sujeto de referencia; la variante se denomina `ref2va`.
-- Composición de resolución 1344 x 768 y secuencias de 124 fotogramas a 24 fps en la configuración de comparación publicada.
-- Carga nativa en ComfyUI mediante Load Diffusion Model con `weight_dtype` en `default`.
-- Compatibilidad con LoRAs que no contengan claves adaLN ni de timestep embedder, incluida la recomendada por el autor del fine-tune, `minimax_h3_ref2v_turbo_4step_v0.1`.
-- Tres niveles de compromiso tamaño/fidelidad: int8 pruned (21,0 GB), w6a8 (16,0 GB) y w4a8 (11,8 GB).
-- No soporta tool calling, function calling ni razonamiento agéntico: es un modelo generativo de vídeo, no un modelo de lenguaje.
-- Cobertura multilingüe: no disponible (el text encoder es Qwen3-VL 32B, pero el autor no documenta idiomas).
+- Generacion de video a partir de texto (text-to-video).
+- Generacion de video a partir de imagen (image-to-video), pipeline declarado del repo.
+- Generacion de video a partir de referencias (reference-to-video), origen del sufijo ref2va.
+- Compatibilidad nativa con ComfyUI mediante el nodo Load Diffusion Model, con `weight_dtype` en `default`.
+- Compatibilidad con LoRAs que no incluyan claves de adaLN ni de embedder de timestep, incluida la `minimax_h3_ref2v_turbo_4step_v0.1` recomendada por la model card de origen.
+- Integracion con el VAE de video `minimax_h3_video_vae_int8_convrot` y el text encoder Qwen3-VL 32B de MiniMax H3.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni procesamiento de audio.
 
 ## Casos de uso
 
-- Generación de vídeo a partir de una imagen fija en producción publicitaria: se parte de un key visual y se anima con image-to-video; la variante w6a8 (16,0 GB) permite ejecutarlo en GPUs de 24 GB sin renunciar a una fidelidad de 26,2 dB de PSNR frente al render de referencia.
-- Series con personaje consistente mediante reference-to-video: el modo `ref2va` toma una referencia visual para mantener la identidad del sujeto entre planos, útil en capítulos cortos o contenido de marca recurrente.
-- Iteración rápida en estudio con ComfyUI: al cargarse de forma nativa con Load Diffusion Model y admitir LoRAs turbo de 4 pasos, encaja en flujos de previsualización donde se encadenan varios renders por sesión.
-- Pruebas de concepto y previsualizaciónaudiovisual en equipos con una sola GPU: el fichero w4a8 (11,8 GB) permite generar borradores a 1344 x 768 sin acceso a clúster, aceptando el deterioro de calidad (21,4 dB de PSNR) en la fase de exploración.
-- Investigación sobre cuantización y poda de modelos de difusión: el repositorio publica el detalle exacto de la poda (13.000 millones de pesos, tabla 1025 x 8, desviación del 0,025 %) y renders comparativos, lo que sirve como caso de estudio reproducible de cuantización post-entrenamiento en vídeo.
-- Ampliación de datasets de vídeo sintético: generación de clips cortos de 124 fotogramas a 24 fps para aumentar corpus de entrenamiento o evaluar modelos de vídeo, con la ventaja de poder elegir el nivel de cuantización según el presupuesto de cómputo.
-- Integración en pipelines de automatización por lotes en ComfyUI: al ser un fichero safetensors estándar en el layout pruned de ComfyUI, se puede orquestar desde scripts que encolen prompts y referencias sin adaptadores adicionales.
+- Prototipado de video generativo en estaciones con GPU de consumo: la variante w4a8 de 11,8 GB permite cargar el modelo en tarjetas de 16 GB o 24 GB y validar prompts e ideas antes de escalar a la variante int8 o al bf16.
+- Iteracion rapida en ComfyUI: al usar el layout pruned nativo, los archivos se cargan directamente con Load Diffusion Model y se combinan con el LoRA turbo de 4 pasos, lo que reduce el ciclo de prueba a unos pocos pasos de muestreo.
+- Image-to-video para contenido de marketing: partiendo de una imagen fija de producto o escenario, el modelo anima la escena a 1344 x 768 y 24 fps, un formato adecuado para piezas cortas de redes sociales.
+- Reference-to-video para mantener consistencia de personaje: la variante ref2va permite condicionar la generacion con referencias visuales, util en series de clips con el mismo protagonista o estilo.
+- Generacion de video en pipelines por lotes: con la variante int8 (21 GB) y un nodo de carga estandar, se pueden encadenar renders nocturnos de multiples semillas y seleccionar por PSNR o inspeccion visual.
+- Evaluacion comparativa de cuantizaciones: el repo incluye renders de referencia y calculos de PSNR por semilla, lo que sirve para decidir que variante usar segun la tolerancia a perdida de fidelidad frente al bf16 (26,1 dB int8, 24,4 dB w6a8, 21,5 dB w4a8).
+- Fine-tuning ligero sobre la base podada: al conservar la estructura de bloques y solo sustituir la ruta adaLN, los LoRAs existentes sin claves de adaLN se aplican sin cambios, lo que facilita adaptaciones de estilo.
 
 ## Benchmarks y rendimiento
 
-El autor no publica MMLU, HumanEval, GSM8K ni métricas de ese tipo (no aplican a un modelo de vídeo). El único dato cuantitativo es la fidelidad frente al render de referencia, medida como PSNR medio de todos los fotogramas, con la misma configuración: 1344 x 768, 124 fotogramas a 24 fps, semilla 42, sampler euler, scheduler simple, 6 pasos, LoRA DMAD de 4 pasos a 0,7, atención PyTorch, `minimax_h3_video_vae_int8_convrot` y text encoder Qwen3-VL 32B MiniMax H3.
+Los unicos datos publicados son comparaciones de fidelidad frente al release bf16, medidas como PSNR medio de todos los frames sobre cuatro semillas, con render a 1344 x 768, 124 frames a 24 fps, sampler euler, scheduler simple, 6 pasos, LoRA DMAD 4-step a 0,7 y atencion PyTorch.
 
-| Fichero | PSNR medio vs. fuente | Tamaño |
+| Archivo | Semilla 42 | Semilla 43 | Semilla 44 | Semilla 45 | Media |
+|---|---:|---:|---:|---:|---:|
+| bf16 release | referencia | referencia | referencia | referencia | referencia |
+| pruned int8 convrot r2 | 23,3 | 24,9 | 28,2 | 28,0 | 26,1 dB |
+| pruned w6a8 r2 | 23,5 | 24,2 | 24,3 | 25,8 | 24,4 dB |
+| pruned w4a8 | 21,9 | 21,1 | 21,7 | 21,4 | 21,5 dB |
+
+Errores de cuantizacion medidos frente al bf16:
+
+| Metrica | r2 | r1 |
 |---|---:|---:|
-| source v2 int8 (referencia) | — | no disponible |
-| pruned int8 convrot | 29,1 dB | 21,0 GB |
-| pruned w6a8 | 26,2 dB | 16,0 GB |
-| pruned w4a8 | 21,4 dB | 11,8 GB |
-| source v2 int8 re-renderizado con otro estado de memoria | 24,7 dB | no disponible |
+| Error de pesos int8, capas muestreadas | 0,87 % a 1,10 % | 1,30 % a 1,48 % |
+| Error de modulacion de timestep | 0,02 % | 0,3 % a 0,6 % |
+| PSNR medio int8, cuatro semillas | 26,1 dB | 24,6 dB |
+| PSNR medio w6a8, cuatro semillas | 24,4 dB | 23,9 dB |
 
-El propio autor señala que la variación entre dos ejecuciones del modelo fuente bajo estados de memoria distintos en ComfyUI (24,7 dB) es mayor que la que introduce la poda int8 (29,1 dB), y que dos ejecuciones con el mismo estado de memoria son idénticas fotograma a fotograma. No hay datos de latencia ni de throughput.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks de video estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para los pesos de difusión (estimación a partir del tamaño de fichero, no publicada por el autor): en torno a 21-24 GB para el int8 pruned, 16-20 GB para w6a8 y 12-16 GB para w4a8, sin contar activaciones ni el VAE.
-- El text encoder es Qwen3-VL 32B, ejecutado aparte en la configuración del autor; requiere memoria adicional considerable y conviene servirlo en una precision reducida o descargarlo entre fases.
-- GPU recomendadas para la variante int8 pruned: A100 40/80 GB, H100 o RTX 4090 24 GB (esta última al límite, con offload).
-- GPU para w6a8: RTX 3090 / 4090 (24 GB) con margen; posible en 16 GB recurriendo a offload de bloques.
-- GPU para w4a8: tarjetas de 16 GB e, incluso, 12 GB con offload agresivo; es la variante pensada para hardware de consumo.
-- Despliegue: ComfyUI es la vía soportada de forma nativa (nodo Load Diffusion Model, `weight_dtype` en `default`). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que además no aplican a un modelo de difusión de vídeo.
-- Latencia y throughput: no disponibles. La configuración de referencia usa 6 pasos con una LoRA DMAD de 4 pasos a 0,7, lo que reduce el número de evaluaciones del modelo, pero el autor no publica tiempos por clip.
+- VRAM estimada: no disponible de forma explicita; como referencia, el peso del archivo es de 21,0 GB (int8), 16,0 GB (w6a8) y 11,8 GB (w4a8), a lo que hay que sumar el VAE de video y el text encoder Qwen3-VL 32B.
+- La variante w4a8 (11,8 GB) es la unica con margen razonable para GPU de consumo de 16 GB o 24 GB, siempre que el text encoder y el VAE se gestionen aparte o con offload.
+- La variante w6a8 (16,0 GB) encaja en GPU de 24 GB con margen ajustado; la int8 (21,0 GB) requiere 24 GB o mas y deja poco espacio para el resto del pipeline.
+- GPU recomendadas: no hay lista oficial; por tamano de pesos, A100 40/80 GB y H100 son las opciones seguras para int8, mientras que RTX 4090 (24 GB) queda al limite para int8 y es adecuada para w6a8 y w4a8.
+- Despliegue: ComfyUI es la via documentada, con el nodo Load Diffusion Model y `weight_dtype` en `default`; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusion de video.
+- Latencia y throughput: no disponibles. El render de referencia usa 6 pasos con LoRA turbo de 4 pasos, lo que sugiere que el coste por clip es bajo en pasos pero alto en resolucion (1344 x 768, 124 frames).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / salida | Fidelidad (PSNR) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Pruned int8 convrot (este repo) | no disponible | 124 fotogramas, 1344 x 768 | 29,1 dB | MiniMax H3 Community License | safetensors, 21,0 GB |
-| Pruned w6a8 (este repo) | no disponible | 124 fotogramas, 1344 x 768 | 26,2 dB | MiniMax H3 Community License | safetensors, 16,0 GB |
-| Pruned w4a8 (este repo) | no disponible | 124 fotogramas, 1344 x 768 | 21,4 dB | MiniMax H3 Community License | safetensors, 11,8 GB |
-| WarmBloodAban/Minimax-h3_Singularity (fuente del fine-tune) | no disponible | no disponible | referencia | MiniMax H3 Community License | safetensors int8 |
-| MiniMaxAI/MiniMax-H3 (modelo base) | no disponible | no disponible | referencia | MiniMax H3 Community License | repositorio oficial de MiniMax |
+| Modelo | Parametros | Contexto / formato | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| WAS/Minimax-h3_Singularity_v2_pruned (int8) | no disponible (podado de 13 mil millones de pesos) | video 1344 x 768, 124 frames a 24 fps | MiniMax H3 Community License Agreement | Hugging Face, 150.047 descargas |
+| WAS/Minimax-h3_Singularity_v2_pruned (w4a8) | no disponible | mismo formato, 11,8 GB | MiniMax H3 Community License Agreement | Hugging Face |
+| WarmBloodAban/Minimax-h3_Singularity | no disponible | release bf16 e int8 de origen | MiniMax H3 Community License Agreement | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | no disponible | modelo base | MiniMax H3 Community License Agreement | Hugging Face |
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos de vídeo de otros fabricantes en la información proporcionada, por lo que la comparación se limita a las variantes de la propia familia. Cualquier comparación con alternativas externas de la misma categoría queda como no disponible.
+No se dispone de datos de benchmarks estandar que permitan comparar rendimiento con alternativas de otros autores; la comparacion disponible es interna al linaje Singularity y MiniMax H3.
 
 ## Limitaciones y advertencias
 
-- La variante w4a8 pierde fidelidad de forma apreciable: 21,4 dB de PSNR, por debajo incluso de la variación entre ejecuciones del modelo fuente bajo estados de memoria distintos (24,7 dB). No es adecuada para entregables finales.
-- La poda elimina el timestep embedder y las proyecciones adaLN de los 50 bloques; los LoRAs que incluyan claves adaLN o de timestep embedder no se aplicarán correctamente. Solo son compatibles los que carecen de esas claves.
-- El modelo es un derivado modificado del fichero int8 de Singularity v2, declarado como tal bajo la sección III.2 de la MiniMax H3 Community License Agreement; los metadatos de cada safetensors lo indican. Cualquier uso comercial debe revisarse contra el texto de la licencia y el NOTICE, que no se reproducen en la información disponible.
-- No hay información sobre sesgos, riesgo de alucinación visual, idiomas soportados ni comportamiento en dominios distintos del de la demostración publicada.
-- La validación comunitaria es mínima: 0 descargas y 2 likes en el momento de la ficha, con el repositorio creado y actualizado el mismo día (21 de octubre de 2026).
-- El autor de la ficha (WAS) es el cuantizador, no el autor del fine-tune (WarmBloodAban) ni del modelo base (MiniMax); los méritos y las limitaciones del fine-tune original no se documentan aquí.
-- El repositorio ocupa 48,7 GB, lo que exige espacio en disco y tiempo de descarga considerables; conviene descargar solo la variante necesaria.
-- No hay métricas de latencia ni de throughput publicadas, así que no se puede estimar coste por clip sin medirlo en el hardware objetivo.
-- El resultado de la búsqueda web realizada no contiene ninguna fuente relevante sobre este modelo (devuelve páginas sobre gramática inglesa y WhatsApp), por lo que no se ha podido contrastar información externa.
+- La licencia es la MiniMax H3 Community License Agreement, no una licencia open source; el uso comercial esta sujeto a sus terminos y a la seccion III.2 sobre obras modificadas, que obliga a declarar la modificacion en los metadatos.
+- Los archivos son versiones modificadas: la ruta de timestep esta reemplazada y los pesos transformer cuantizados; no son equivalentes bit a bit al release bf16.
+- La perdida de fidelidad es medible: el w4a8 baja a 21,5 dB de PSNR medio y el w6a8 a 24,4 dB, frente a los 26,1 dB del int8; una sola semilla puede ordenar dos archivos cercanos de forma distinta, por lo que la media de cuatro semillas es la referencia valida.
+- El w4a8 se construyo desde el release int8 y no desde bf16 porque la ruta bf16 rendia peor; esto implica una doble cuantizacion acumulada.
+- Los LoRAs que incluyan claves de adaLN o de embedder de timestep no son compatibles con el layout podado.
+- No hay informacion sobre sesgos, idiomas soportados ni tasas de alucinacion; al ser un modelo de video, el riesgo principal es la inconsistencia temporal y la deriva visual entre frames, no la alucinacion textual.
+- El tamaño del repo (85,7 GB) exige planificar el almacenamiento antes de descargar; conviene bajar solo el archivo de la variante elegida.
+- El text encoder Qwen3-VL 32B y el VAE `minimax_h3_video_vae_int8_convrot` son dependencias externas y no estan incluidos en estos archivos.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned
-- Licencia: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/blob/main/LICENSE
-- Aviso legal: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/blob/main/NOTICE
-- Renders comparativos: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/tree/main/comparison
-- Fine-tune de origen (WarmBloodAban): https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
-- Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Perfil del autor del fine-tune: https://huggingface.co/WarmBloodAban
+- Repositorio Hugging Face: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned
+- Modelo base del finetune: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
+- Modelo base original: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Commit de la build r1: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/tree/ad7eb66157ff5fbe3429ef4413921fb0c7c9323f
+- Render de referencia bf16: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/blob/main/comparison/reference_bf16.mp4
+- Render pruned int8 r2: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/blob/main/comparison/pruned_int8_convrot_r2.mp4
+- Render pruned w6a8 r2: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/blob/main/comparison/pruned_w6a8_r2.mp4
+- Render pruned w4a8: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/blob/main/comparison/pruned_w4a8.mp4
+- Contact sheet comparativo: https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned/blob/main/comparison/contact_sheet.png

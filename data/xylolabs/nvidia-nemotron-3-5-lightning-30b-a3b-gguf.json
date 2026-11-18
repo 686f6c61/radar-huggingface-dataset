@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
   "created_at": "2026-11-14T18:06:57.000Z",
-  "updated_at": "2026-11-14T18:07:59.000Z",
+  "updated_at": "2026-11-17T08:38:48.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 92,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 32913266240,
   "parameters_human": "32.91B",

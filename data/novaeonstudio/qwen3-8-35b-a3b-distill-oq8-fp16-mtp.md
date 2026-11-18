@@ -1,103 +1,108 @@
 # NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp
 
 ## Resumen
-El modelo `NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp` es una cuantizacion en formato oMLX (8 bits, escalas fp16) del modelo `empero-ai/Qwen3.8-35B-A3B-Distill`, una destilacion de los profesores de la familia Qwen3.8 (Qwen3.8 2.4T-A95B y Qwen3.8 Flash Next) sobre la arquitectura MoE dispersa Qwen3.6-35B-A3B. Lo publica NovaeonStudio, un estudio centrado en ejecucion local de agentes sobre Apple Silicon, y su proposito es ofrecer razonamiento destilado de gama alta a 8 bits en el motor oMLX, con un perfil de servicio afinado y documentado.
 
-Tecnicamente es un MoE de 35.951.822.704 parametros totales y aproximadamente 3.000 millones activos, con 256 expertos (8 enrutados), 40 capas y atencion hibrida (lineal GDN mas atencion completa), ademas de un encoder de vision conservado del modelo base. La ventana de contexto nativa es de 262.144 tokens y el checkpoint incluye una cabeza MTP (multi-token prediction) nativa que, segun el autor, acelera realmente la decodificacion bajo esta cuantizacion.
+Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp es una cuantización de 8 bits del modelo `empero-ai/Qwen3.8-35B-A3B-Distill`, publicada por Novaeon.Studio bajo licencia Apache 2.0. Se trata de un modelo de mezcla de expertos (MoE) con 35.951.822.704 parámetros totales y aproximadamente 3B activos por token, destilado a partir de profesores Qwen3.8 y orientado a razonamiento, uso de herramientas y cargas agénticas.
 
-Su relevancia actual es doble: por un lado, acerca razonamiento destilado con soporte de tool calling y vision a equipos de consumo Apple Silicon; por otro, documenta un perfil de inferencia medido (MTP on, draft 6, ANE-prefill off) que sirve como referencia reproducible para despliegues locales con agentes. Es una publicacion reciente (creada el 17 de septiembre de 2026) con traccion todavia muy baja (0 descargas, 1 like).
+La build está pensada específicamente para Apple Silicon: usa la librería MLX, cuantiza los pesos a 8 bits casi uniformes manteniendo el router en fp16 y conserva la torre de visión del modelo original, por lo que admite entrada de imagen y texto. Incluye además una cabeza nativa de predicción multi-token (MTP) que actúa como decodificación especulativa y acelera la generación.
+
+Su relevancia actual radica en que ofrece un perfil poco habitual: contexto nativo de 262.144 tokens, capacidades multimodales y agénticas, y un rendimiento medido de hasta ~120 tok/s en un Mac con M5 Max de 128 GB, con un peso en disco de ~39,5 GB. Es, por tanto, una opción para desplegar agentes locales de forma sostenida en hardware de consumo de gama alta.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE de la familia Qwen3.5/3.6 + encoder de vision; atencion hibrida (GDN lineal + atencion completa); 40 capas; 256 expertos con 8 enrutados |
-| Parametros totales | 35.951.822.704 (~35,9 B) |
-| Parametros activos | ~3 B (aproximadamente 3.000 millones) |
+| Arquitectura | Transformer MoE disperso (tipo `qwen3_5_moe`) con atención híbrida, torre de visión y cabeza MTP |
+| Parámetros totales | 35.951.822.704 |
+| Parámetros activos | ~3B por token |
 | Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | oQ8 (8 bits casi uniforme, router en fp16), group size 64, escalas y pesos no cuantizados en float16; ~8,6 bpw efectivos. Otros formatos: no disponible |
-| Idiomas soportados | en (ingles, declarado en la model card) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors en formato nativo oMLX (libreria MLX); tamano del repo 39,5 GB |
-| Entradas/salidas | image-text-to-text (texto e imagen de entrada, texto de salida) |
-| Motor de inferencia | oMLX (Apple MLX), motor VLM |
-| Cabeza MTP | Nativa, incluida en el checkpoint (`mtp.*` en `model.safetensors.index.json`); reconocida por oMLX (`mtp_compatible: true`) |
+| Tipos de cuantización | 8 bits (oQ8) con router en fp16; pesos en safetensors |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
-La base es un transformer MoE disperso de la familia Qwen3.6-35B-A3B: 40 capas con 256 expertos y 8 expertos enrutados por token, lo que da 35,9 B de parametros totales con unos 3 B activos por token. La atencion es hibrida: combina capas de atencion lineal GDN con capas de atencion completa, lo que reduce el coste de la cache KV y explica, segun el autor, el tamano reducido de KV observado en produccion. El modelo conserva el encoder de vision del base, por lo que mantiene la modalidad image-text-to-text. Sobre el checkpoint se anade una cabeza MTP nativa para decodificacion especulativa.
 
-En cuanto al entrenamiento, la informacion disponible indica que `empero-ai/Qwen3.8-35B-A3B-Distill` se obtuvo por destilacion (SFT sobre trazas de chain-of-thought de los profesores Qwen3.8 2.4T-A95B y Qwen3.8 Flash Next, con mayor peso en matematicas y codigo). No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO. El autor si documenta un comportamiento derivado del entrenamiento: cada respuesta se abre con un bloque `<think>` servido como `reasoning_content`, desactivable con `enable_thinking: false`. Esta publicacion concreta no reentrena el modelo, sino que aplica una cuantizacion oQ8 con router en fp16 y un perfil de servicio optimizado (MTP activado, 6 tokens de draft, ANE-prefill desactivado, cuantizacion KV de 8 bits).
+El modelo base es una destilación de profesores Qwen3.8 en una arquitectura MoE dispersa: de los ~35B parámetros totales solo se activan ~3B por token, lo que reduce el coste computacional por paso de decodificación. La atención es híbrida, de modo que solo unas 10 de las 40 capas mantienen una caché KV creciente; esto es lo que permite sostener contextos de 124k tokens con una caída de velocidad moderada (de 120 a 70 tok/s). La build de Novaeon conserva la torre de visión del modelo original y añade una cabeza MTP funcional que actúa como mecanismo de decodificación especulativa, con una mejora declarada de ~40 % en decodificación de contexto corto frente a MTP desactivado.
+
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) del modelo base en la información proporcionada. La model card indica que la cuantización se aplicó de forma casi uniforme a 8 bits, con el router preservado en fp16 para no degradar la selección de expertos.
 
 ## Capacidades
-- Generacion de texto y razonamiento con bloque de pensamiento explicito (`<think>`), desactivable mediante `enable_thinking: false`.
-- Razonamiento matematico y de codigo reforzado por el sesgo del dataset de destilacion (traza de profesores con mayor peso en math/code).
-- Tool calling y function calling: la model card reporta 6/6 en su suite de pruebas controlada (seleccion de herramienta, llamadas paralelas, cadenas secuenciales, fidelidad de argumentos, abstencion correcta y ausencia de herramientas alucinadas).
-- Comportamiento agentico multi-paso orientado a flujos de agente locales.
-- Capacidades de vision conservadas del modelo base (entrada de imagen + texto a texto).
-- Cumplimiento de instrucciones medido localmente con IFEval sobre estos pesos cuantizados (84,86 de media, pensamiento desactivado).
-- Decodificacion especulativa funcional mediante cabeza MTP nativa.
-- Capacidades multilingues: solo ingles declarado.
+
+- Generación de texto y razonamiento multi-paso, con modo de pensamiento (thinking) activable y desactivable.
+- Entrada multimodal imagen-texto a texto: la torre de visión se mantiene en esta build.
+- Tool calling y function calling, con soporte de llamadas paralelas a herramientas.
+- Comportamiento agéntico en entornos con herramientas reales (sandbox), incluyendo recuperación de errores de herramienta.
+- Contexto largo: recuperación tipo needle verificada a 130k tokens (y 320k en una prueba anterior según el autor).
+- Decodificación especulativa mediante cabeza MTP nativa.
+- Multilingüe: limitado a inglés según la model card.
 
 ## Casos de uso
-- Agentes locales sobre Apple Silicon: el modelo esta empaquetado en formato oMLX y su perfil optimo esta documentado, por lo que puede ejecutarse como trabajador de razonamiento en un Mac con memoria unificada amplia, gestionando cadenas de herramientas con contexto de hasta 262.144 tokens.
-- Automatizacion de atencion al cliente multi-turno: la ventana nativa de 262.144 tokens permite mantener historiales largos y documentacion adjunta en el mismo contexto, y el modo `enable_thinking: false` reduce latencia en respuestas conversacionales directas.
-- Asistencia de codigo integrada en el IDE o en pipelines: el modelo puede invocarse mediante tool calling y function calling, y su entrenamiento ponderado hacia codigo lo hace apto para generacion, refactorizacion y explicacion de fragmentos.
-- Automatizacion de tareas con navegador o APIs internas: con tool selection y llamadas paralelas verificadas, encaja como planificador que decide que herramienta invocar y con que argumentos.
-- Analisis de documentos con imagenes: al conservar el encoder de vision, puede extraer informacion de capturas, diagramas o formularios escaneados combinados con texto.
-- Procesamiento por lotes de instrucciones estructuradas: su IFEval de 84,86 (medido en estos pesos) lo hace util para tareas de transformacion de texto con formato y restricciones estrictas.
-- Prototipado e investigacion local sin dependencia de la nube: al ser apache-2.0 y ejecutarse en el propio equipo, sirve para experimentar con agentes y destilacion sin coste por token.
+
+- Agentes locales 24/7 en Apple Silicon: el modelo está optimizado para oMLX en Macs de 64 GB o más, con ~41,5 GB residentes, lo que permite mantener un agente siempre activo junto a otros modelos en memoria.
+- Automatización de tareas de desarrollo en sandbox: suites agénticas con herramientas reales (corregir un bug, escribir código según especificación, analizar CSV y logs) superadas 9/9 y 13/13 según el autor, con 0 llamadas de herramienta inválidas en las pruebas.
+- Análisis de documentos e imágenes largos: con 262k tokens de contexto nativo y visión, es adecuado para procesar informes extensos con figuras o capturas y responder preguntas sobre ellos.
+- Asistentes de atención al cliente multi-turno: el contexto largo y el bajo coste por token (~3B activos) permiten mantener historiales extensos sin disparar la latencia.
+- Pipelines de function calling en producción: la ausencia de llamadas inválidas en las pruebas y el soporte de llamadas paralelas lo hacen apto para orquestación de herramientas en flujos automatizados.
+- Prototipado e investigación en local: al ser Apache 2.0 y ejecutable en MLX, sirve para experimentar con destilación MoE, MTP y decodificación especulativa sin depender de infraestructura cloud.
 
 ## Benchmarks y rendimiento
-Los siguientes datos son los publicados por el autor y medidos en un Apple M5 Max de 128 GB con oMLX, sobre estos pesos exactos y con el perfil optimo (pensamiento desactivado). No proceden de una evaluacion independiente.
 
-Rendimiento de decodificacion y tiempo hasta el primer token segun contexto:
+Resultados declarados por el autor (no verificados de forma independiente):
 
-| Contexto de prompt | ~0 | ~3,9k | ~7,9k | ~15,9k | ~31,9k | ~64,7k |
-|---|---|---|---|---|---|---|
-| Decode (tok/s) | 93 | 81 | 82 | 69 | 57 | 41 |
-| TTFT (s) | 0,30 | 1,4 | 1,4 | 2,0 | 2,2 | 3,7 |
+| Benchmark | Métrica | Valor |
+|---|---|---|
+| IFEval | inst-strict | 86,33 |
+| IFEval | prompt-strict | 80,22 |
+| IFEval | media (según model card) | 84,86 |
 
-El autor indica ademas una carga en frio de aproximadamente 1 segundo con registro caliente, y un pico de ~110 tok/s en contexto corto con MTP y 6 tokens de draft en condiciones ideales.
+Rendimiento medido por el autor en un Apple M5 Max de 128 GB con oMLX 0.7.3, MTP activado y thinking desactivado:
 
-IFEval sobre estos pesos cuantizados (541 prompts, 834 instrucciones, verificador oficial, pensamiento desactivado):
+| Contexto del prompt | ~300 | ~41k | ~124k |
+|---|---|---|---|
+| Decodificación (tok/s) | 120 | 105 | 70 |
+| Prefill (tok/s) | no disponible | 2.883 | 1.746 |
+| Time to first token | 0,24 s | 14,3 s | 70,9 s |
 
-| Metrica | prompt-strict | prompt-loose | inst-strict | inst-loose | Media |
-|---|---|---|---|---|---|
-| Qwen3.8-35B-A3B-Distill oQ8-fp16-mtp | 80,22 | 83,92 | 86,33 | 88,97 | 84,86 |
-
-Prueba agentica propia del autor: 6/6 (temperatura 0) en seleccion de herramienta, llamadas paralelas, cadenas secuenciales, fidelidad de argumentos, abstencion sin herramienta necesaria y ausencia de herramientas alucinadas. No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estandar comparables.
+Pruebas internas del autor (no estándar): 39–40/43 en casos golden de un turno, 15–16/17 en el conjunto de mitigaciones, 9/9 y 13/13 en dos suites agénticas multi-paso, 6/6 en sondas de uso de herramientas y 0 llamadas de herramienta inválidas. Con 4 peticiones en paralelo reporta ~216 tok/s agregados.
 
 ## Requisitos de hardware
-- Memoria: los pesos ocupan aproximadamente 39,5 GB en disco (oQ8, ~8,6 bpw). Con cache KV en 8 bits y contexto moderado, se recomienda un equipo con al menos 48 GB de memoria unificada; la referencia medida por el autor es un Apple M5 Max con 128 GB.
-- GPU compatibles: al estar en formato MLX, la ejecucion esta pensada para Apple Silicon. No se documenta soporte CUDA, por lo que no aplica a A100, H100, RTX 4090 ni similares en esta publicacion concreta.
-- Cabe en GPU de consumo: no en el sentido habitual (GPU discreta), pero si en equipos Apple Silicon de gama alta con memoria unificada suficiente (M-series Max/Ultra). El autor mantiene los expertos residentes (`moe_expert_offload_enabled: false`) porque considera 128 GB suficientes.
-- Opciones de despliegue: oMLX es el motor de referencia (motor VLM de Apple MLX). El ajuste de servicio recomendado es `mtp_enabled: true`, `mtp_num_draft_tokens: 6`, `qwen35_ane_prefill_enabled: false`, `turboquant_kv_enabled: true` con 8 bits, `qwen35_oq_a8_enabled: false`, `dflash_enabled: false` y `moe_expert_offload_enabled: false`. Otros motores: no disponible en la informacion proporcionada.
-- Latencia y throughput medidos: TTFT de 0,30 s en contexto casi nulo y hasta 3,7 s a ~64,7k tokens; decodificacion de 93 tok/s en contexto corto, degradando hasta 41 tok/s a ~64,7k tokens. El autor atribuye parte de la mejora de decodificacion a la cabeza MTP (aproximadamente +40 % en contexto corto).
+
+- Huella en disco: ~39,5 GB; en memoria: ~41,5 GB residentes.
+- Hardware de referencia: Apple M5 Max con 128 GB de memoria unificada; el autor indica que funciona en Macs de 64 GB o más.
+- No está pensado para GPU NVIDIA: la build usa MLX y está orientada a Apple Silicon. Para CUDA habría que recurrir al modelo base o a otras cuantizaciones.
+- Motor de despliegue: oMLX (MLX, motor VLM); también carga en `mlx-vlm`.
+- Latencia: time to first token de 0,24 s en contexto corto, 14,3 s a 41k y 70,9 s a 124k; carga en frío de ~1–6 s con caché de disco caliente.
+- Throughput: 96–134 tok/s en decodificación corta según sesión; ~216 tok/s agregados con 4 peticiones paralelas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Formato/formato de pesos | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp | 35,9 B | ~3 B | 262.144 | oQ8 / safetensors MLX, 39,5 GB | apache-2.0 | Hugging Face (0 descargas, 1 like) |
-| empero-ai/Qwen3.8-35B-A3B-Distill (modelo base) | 35 B (aproximado segun nomenclatura) | ~3 B | no disponible en la informacion proporcionada | no disponible | apache-2.0 | Hugging Face |
-| Otras builds 35B-A3B del mismo autor | no disponible | no disponible | no disponible | no disponible | no disponible | mencionadas de forma generica en la model card, sin datos |
+Datos de la comparativa interna del autor, medida en el mismo Mac y sesión:
 
-Las busquedas web realizadas no han devuelto informacion utilizable sobre modelos comparables (los resultados fueron enlaces genericos a YouTube), por lo que no se incluyen alternativas adicionales de la misma categoria.
+| Modelo | Golden /43 | Mitig. /17 | Agéntico | Decodificación (tok/s) | Veredicto |
+|---|---|---|---|---|---|
+| Esta build | 39–40 | 15–16 | 9/9 · 13/13 | 96–134 | pasa |
+| Gemma-4-26B-A4B-it heretic (8-bit) | 41 | 17 | 8/9 | 82 | pasa, ~20 % más lento |
+| Nemotron-3.5-Lightning | 34 | 16 | 11/13 | 107 | falla la puerta |
+| Qwen3.8-27B TURBO-Fable-Heretic oQ8 (dense) | no disponible | 17 | 9/9 | 33 | inventó una herramienta |
+| Qwen3.8 dense 27B | 38 | 17 | no disponible | ~16 | demasiado lento para agentes |
+
+En parámetros y contexto: esta build declara 35,9B totales (~3B activos) y 262k de contexto; las alternativas dense de 26–27B no ofrecen el mismo ahorro por token ni contexto comparable según los datos disponibles. La licencia Apache 2.0 es común en la familia, pero la disponibilidad en MLX es específica de esta build.
 
 ## Limitaciones y advertencias
-- Idiomas: la model card solo declara ingles (`en`). No hay evidencia de soporte fiable en castellano ni en otros idiomas; el rendimiento multilingue es no disponible.
-- Procedencia de los datos: todas las cifras de rendimiento, incluidos IFEval y la suite agentica, son mediciones propias del autor en su hardware; no hay verificacion independiente ni resultados de benchmarks estandar.
-- Riesgo de alucinacion: inherente a los modelos destilados con decodificacion generativa; aunque la prueba de herramientas reporta ausencia de herramientas alucinadas en 6/6 casos, se trata de una muestra muy reducida y no elimina el riesgo en produccion.
-- Dependencia de plataforma: el formato es MLX/oMLX, por lo que no es directamente desplegable en stacks CUDA (vLLM, TGI) ni en llama.cpp/Ollama sin conversion, que no esta documentada en la informacion disponible.
-- Perfil de servicio especifico: el rendimiento documentado depende de una configuracion concreta (MTP activo con 6 drafts, ANE-prefill desactivado, KV de 8 bits). Otras configuraciones pueden degradar la decodificacion, segun las pruebas A/B del autor.
-- Naturaleza del artefacto: es una cuantizacion de terceros sobre un modelo destilado, no un modelo entrenado desde cero; modificaciones de peso pueden introducir divergencias respecto al base no cuantificado.
-- Adopcion y mantenimiento: con 0 descargas y 1 like en la fecha de creacion (17 de septiembre de 2026), no hay comunidad que valide el comportamiento en distintos entornos.
-- Licencia: apache-2.0, que permite uso comercial, pero conviene revisar las condiciones del modelo base y de los profesores citados antes de un despliegue en produccion.
-- Uso de contexto largo: la degradacion medida es notable (de 93 a 41 tok/s entre contexto casi nulo y ~64,7k tokens), lo que debe tenerse en cuenta para dimensionar latencias en agentes con historiales extensos.
+
+- Solo inglés declarado: no hay soporte multilingüe verificado, lo que limita su uso en castellano sin evaluación previa.
+- Los benchmarks y métricas agénticas son mediciones del propio autor, no verificadas de forma independiente y sobre un único equipo (M5 Max).
+- El modelo base es una destilación de Qwen3.8; los sesgos del profesor pueden propagarse, aunque no se documentan sesgos específicos.
+- Riesgo de alucinación inherente a modelos generativos; el autor reporta que un modelo dense comparable "inventó una herramienta", lo que subraya la necesidad de validar llamadas en producción.
+- La ventana de 262k tokens es nominal; el autor verifica needle recall a 130k, no a la longitud máxima.
+- Dependencia de MLX/oMLX: no es directamente desplegable en vLLM, TGI o llama.cpp sin conversión.
+- Aunque la licencia es Apache 2.0, conviene revisar las condiciones del modelo base y de los datos de destilación antes de uso comercial.
+- El rendimiento cae con el contexto: de 120 a 70 tok/s entre contexto corto y 124k, con time to first token de casi 71 s en ese extremo.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
-- Repositorio de oMLX: https://github.com/jundot/omlx
-- Sitio del autor: https://novaeon.studio
-- Resultados de la busqueda web: no se han encontrado enlaces relevantes (los resultados devueltos fueron enlaces genericos a YouTube sin relacion con el modelo).
+- Repositorio oMLX: https://github.com/jundot/omlx
+- Fuente de benchmarks: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp

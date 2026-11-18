@@ -2,48 +2,50 @@
 
 ## Resumen
 
-Hydrogen-1.0 es un modelo de generacion de texto desarrollado por deep-principle, publicado en Hugging Face como un fine-tuning del modelo base zai-org/GLM-5.3. Se distribuye con licencia MIT y en formato bf16, y esta etiquetado especificamente para el dominio cientifico (tag "science"), lo que sugiere que su ajuste fino esta orientado a tareas de investigacion, redaccion tecnica o razonamiento cientifico. El acceso esta restringido (gated): es necesario aceptar las condiciones en la pagina de Hugging Face antes de poder descargar los pesos.
+Hydrogen-1.0 es un modelo de lenguaje de gran escala desarrollado por deep-principle, publicado en Hugging Face como un fine-tune del modelo base zai-org/GLM-5.3. Se trata de un modelo de arquitectura GLM MoE DSA (Mixture of Experts con atención dispersa, según la etiqueta `glm_moe_dsa` del repositorio) con 753.329.940.480 parámetros totales en precisión bf16 y un tamaño de repositorio de 1.506,7 GB. Su enfoque declarado es el dominio científico (`science`), lo que sugiere un ajuste orientado a tareas de investigación y razonamiento técnico.
 
-El modelo hereda la arquitectura y las capacidades del GLM-5.3 de Zhipu AI (zai-org), sobre el que se aplica un fine-tune del que no se han publicado detalles en la informacion disponible. No se especifican el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento utilizados en el ajuste. La ficha de Hugging Face no incluye model card con benchmarks ni notas tecnicas.
+El modelo se distribuye con pesos en formato safetensors y licencia MIT, lo que facilita su uso comercial, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. Con 47.506 descargas y 300 likes en el momento de la consulta, ha generado un interés notable en la comunidad pese a su reciente publicación (31 de octubre de 2026, actualizado el 2 de noviembre de 2026).
 
-Su relevancia actual es limitada pero concreta: se trata de una publicacion muy reciente (creada el 31 de octubre de 2026 y actualizada el 1 de noviembre de 2026) con cero descargas y cero likes en el momento de redactar esta ficha, lo que indica que aun no ha sido validada por la comunidad. Resulta de interes para quienes quieran evaluar fine-tunes cientificos sobre GLM-5.3 con una licencia permisiva (MIT) y un formato de pesos estandar (bf16).
+La relevancia de Hydrogen-1.0 radica en combinar un tamaño de parámetros muy elevado con una arquitectura MoE, lo que permite activar solo una fracción de los parámetros por token y reducir el coste computacional de inferencia frente a un modelo denso equivalente. No obstante, la información pública disponible es limitada: no se especifican la longitud de contexto, los idiomas soportados ni los datos de entrenamiento, por lo que esta ficha refleja únicamente lo verificable en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (fine-tune de zai-org/GLM-5.3; arquitectura del base no detallada en la informacion proporcionada) |
-| Parametros totales | no disponible |
+| Arquitectura | GLM MoE DSA (Mixture of Experts con atención dispersa) |
+| Parametros totales | 753.329.940.480 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | bf16 (safetensors presumiblemente; no confirmado en la informacion) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo mas alla de que es un fine-tune de zai-org/GLM-5.3. El tag `base_model:finetune:zai-org/GLM-5.3` confirma que se parte de los pesos del GLM-5.3 y se aplica un ajuste supervisado (o preferencias, no especificado) sobre ellos. No se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o SFT.
+Hydrogen-1.0 emplea una arquitectura de tipo GLM MoE DSA, según la etiqueta del repositorio. Se trata de un transformer con mezcla de expertos (MoE), en el que solo un subconjunto de parámetros se activa por token, y con un mecanismo de atención dispersa (DSA) que reduce el coste cuadrático de la atención sobre secuencias largas. El modelo parte del base zai-org/GLM-5.3 y se ha ajustado mediante fine-tune, presumiblemente con datos de dominio científico dada la etiqueta `science`.
 
-El unico indicio sobre la especializacion del ajuste es el tag `science`, que apunta a un corpus de entrenamiento orientado a contenido cientifico. No hay publicaciones, papers ni blogs asociados en la informacion disponible que describan la metodologia, las innovaciones tecnicas (atencion lineal, decodificacion especulativa, etc.) ni las decisiones de diseno del fine-tune.
+No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación. Tampoco se detallan innovaciones adicionales como decodificación especulativa o variantes de atención lineal más allá de la DSA implícita en la arquitectura. Todos estos datos deben considerarse no disponibles a partir de la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto en el dominio general, heredada del modelo base GLM-5.3.
-- Especializacion probable en contenido cientifico y tecnico (tag `science`), aunque no se documentan ejemplos ni evaluaciones.
-- Capacidades del modelo base (razonamiento, codigo, matematicas, tool calling, agentes, multilingue) no verificadas para este fine-tune concreto.
-- No se confirma soporte de vision, audio, thinking mode ni function calling en la informacion disponible.
-- Idiomas soportados no especificados.
+- Generación de texto y conversación: el pipeline declarado es `text-generation` y las etiquetas incluyen `conversational`, por lo que el modelo está preparado para diálogo multi-turno.
+- Razonamiento científico y técnico: la etiqueta `science` indica un ajuste orientado a dominio científico, aunque no se detallan las tareas concretas cubiertas.
+- Razonamiento general y matemáticas: al derivar de GLM-5.3, se espera capacidad de razonamiento, aunque no hay datos verificables en la información disponible.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; no se listan idiomas en la ficha.
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Redaccion de articulos cientificos y tecnicos: el tag `science` sugiere que el modelo puede asistir en la generacion de borradores de secciones como introduccion, metodologia o resultados, aunque la calidad no esta validada publicamente.
-- Resumen de literatura cientifica: uso como modelo de resumen de abstracts y papers, apoyandose en la especializacion del fine-tune; requiere validacion previa por la ausencia de benchmarks.
-- Asistencia en revision de manuscritos: generacion de comentarios y sugerencias de mejora sobre textos tecnicos, integrable en flujos editoriales internos.
-- Prototipado de pipelines de NLP cientifico: al tener licencia MIT y pesos bf16, puede servir como componente base en experimentos academicos sin restricciones comerciales.
-- Generacion de documentacion tecnica: redaccion de notas de laboratorio, informes y documentacion de experimentos, aprovechando el ajuste sobre contenido cientifico.
-- Evaluacion comparativa de fine-tunes: util como caso de estudio para investigadores que analicen el efecto de fine-tunes cientificos sobre GLM-5.3 frente al modelo base.
-- Despliegue en entornos de investigacion con requisitos de licencia permisiva: la licencia MIT facilita su uso en proyectos academicos e industriales sin las restricciones de otras licencias.
+- Asistencia en investigación científica: el modelo puede emplearse para resumir literatura técnica, generar hipótesis o redactar secciones de artículos, aprovechando su ajuste al dominio científico y su gran capacidad de parámetros para manejar terminología especializada.
+- Generación de código para computación científica: dado su origen en GLM-5.3, puede integrarse en entornos de desarrollo para escribir scripts de análisis de datos, simulaciones o pipelines de procesamiento, aunque la ausencia de datos sobre tool calling limita la automatización completa.
+- Chatbot especializado en divulgación científica: con el pipeline conversacional, puede desplegarse como asistente multi-turno para responder preguntas técnicas, siempre que se valide su comportamiento en el idioma objetivo.
+- Análisis y extracción de información de documentos técnicos: su tamaño permite procesar textos densos y mantener coherencia en respuestas largas, útil en revisiones sistemáticas o auditorías de documentación.
+- Prototipado de aplicaciones de razonamiento complejo: investigadores pueden evaluar el modelo en tareas de matemáticas, lógica o planificación, comparándolo con alternativas de su misma escala.
+- Fine-tuning posterior en dominios verticales: al tener licencia MIT y pesos safetensors, es posible adaptarlo a sectores como farmacéutica, energía o materiales, reentrenando sobre datos propios.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia MIT facilita su integración en productos comerciales, sujeto a la aceptación de las condiciones de acceso restringido en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -51,33 +53,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros del modelo.
-- GPU recomendadas: no disponible por la misma razon; dependeran del tamano del modelo base GLM-5.3.
-- Compatibilidad con GPU de consumo: no determinable sin conocer el tamano; si el base es grande, probablemente requiera GPUs de datacenter (A100/H100) o cuantizacion agresiva.
-- Opciones de despliegue: al publicarse en bf16, es compatible con frameworks estandar de inferencia (vLLM, TGI, transformers); la disponibilidad de GGUF para llama.cpp u Ollama no esta confirmada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 753.329.940.480 parámetros en bf16, los pesos ocupan aproximadamente 1.506,7 GB, por lo que la inferencia en precisión completa requiere un clúster multi-GPU de gama alta. En cuantización a 8 bits, la huella se reduciría a unos 753 GB; a 4 bits, a unos 377 GB, aunque no se confirman formatos de cuantización publicados.
+- GPU recomendadas: para bf16 se necesitan múltiples GPU con memoria agregada superior a 1,5 TB, como conjuntos de H100 (80 GB) o A100 (80 GB). Para cuantizaciones de 4 bits, podrían considerarse configuraciones de 8×H100 o 8×A100.
+- ¿Cabe en GPU de consumo? No en precisión completa ni en cuantizaciones habituales; se requiere hardware de centro de datos.
+- Opciones de despliegue: no se especifican en la información disponible; por la arquitectura MoE y el formato safetensors, cabría esperar soporte en frameworks como vLLM o TGI, pero no está confirmado.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| deep-principle/Hydrogen-1.0 | no disponible | no disponible | MIT | Gated en HF | Fine-tune cientifico de GLM-5.3 |
-| zai-org/GLM-5.3 (base) | no disponible en la informacion | no disponible | no disponible en la informacion | Publico en HF | Modelo base del que deriva Hydrogen-1.0 |
-| Alternativas cientificas de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos para comparar |
+| Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Hydrogen-1.0 | 753.329.940.480 | no disponible | MIT | Gated en Hugging Face |
+| zai-org/GLM-5.3 (base) | no disponible | no disponible | no disponible | no disponible |
+| Alternativas de escala similar | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información suficiente para comparar con modelos alternativos de la misma categoría en términos de rendimiento o contexto.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card, benchmarks y documentacion tecnica: no es posible evaluar su calidad frente al modelo base ni frente a alternativas.
-- Cero descargas y cero likes en Hugging Face: sin validacion de la comunidad ni evidencia de uso en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion al despliegue automatizado.
-- Riesgo de alucinacion no cuantificado; al ser un fine-tune cientifico, el riesgo de generar referencias o datos inexactos es especialmente relevante y debe mitigarse con verificacion humana.
-- Sesgos desconocidos: no se documenta la composicion del dataset de ajuste ni posibles sesgos introducidos.
-- Idiomas soportados no especificados: no se puede garantizar un rendimiento adecuado fuera del ingles o del chino (idiomas habituales del base GLM).
-- Licencia MIT permisiva para uso comercial, pero conviene verificar que las condiciones del modelo base GLM-5.3 no impongan restricciones adicionales que prevalezcan sobre el fine-tune.
-- No se confirma el formato exacto de pesos (safetensors u otro) ni la disponibilidad de cuantizaciones GGUF/AWQ/GPTQ para despliegue en hardware limitado.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
+- Sesgos conocidos: no se documentan en la información disponible; al ser un fine-tune de GLM-5.3, hereda los sesgos del modelo base, que no se detallan.
+- Riesgo de alucinación: no cuantificado; como todo modelo generativo de gran escala, puede producir afirmaciones plausibles pero incorrectas, especialmente en dominios científicos donde la precisión es crítica.
+- Limitaciones de contexto e idioma: se desconoce la longitud máxima de contexto y los idiomas soportados, lo que impide garantizar su comportamiento en castellano u otras lenguas.
+- Restricciones de licencia: la licencia MIT permite uso comercial, pero debe verificarse que las condiciones de acceso gated no impongan restricciones adicionales.
+- Caveat para producción: la falta de benchmarks publicados y de especificaciones de cuantización dificulta la estimación de costes y latencia; se recomienda una evaluación empírica antes de desplegarlo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/deep-principle/Hydrogen-1.0
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

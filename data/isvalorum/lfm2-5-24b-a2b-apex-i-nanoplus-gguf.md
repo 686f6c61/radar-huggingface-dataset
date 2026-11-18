@@ -2,110 +2,107 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B APEX-I NanoPlus GGUF es una cuantizacion comunitaria del modelo LiquidAI/LFM2.5-24B-A2B, publicada por el usuario IsValorum bajo la libreria GGUF y orientada a ejecucion local en hardware de gama de consumo. El modelo base es un Mixture-of-Experts (MoE) de 23.971.587.712 parametros totales (aproximadamente 24B) con solo 2B parametros activos por token, desarrollado por Liquid AI, y con una ventana de contexto nativa de 128.000 tokens.
+LFM2.5-24B-A2B APEX-I NanoPlus GGUF es una cuantizacion de terceros del modelo LiquidAI/LFM2.5-24B-A2B, un transformer de tipo mezcla de expertos (MoE) desarrollado por Liquid AI. El modelo original cuenta con 23.971.587.712 parametros totales de los cuales solo unos 2B se activan por token, lo que permite una inferencia muy rapida en dispositivos de borde manteniendo una calidad propia de un modelo de 24B. Esta version concreta la publica el usuario IsValorum bajo el perfil de cuantizaciones APEX-I-NanoPlus, con pesos en formato GGUF listos para llama.cpp.
 
-La aportacion de esta ficha concreta es la receta de cuantizacion APEX-I NanoPlus: un archivo de 8,15 GB (7,59 GiB de pesos) calibrado con una importance matrix generada por m9ter1a sobre conversaciones reales de tool calling y corpus de prosa, lo que reduce el peso desde los 47,96 GB del BF16 original a cambio de una perdida de precision controlada por tipo de tensor. La relevancia practica es que permite desplegar un modelo MoE de 24B con contexto de 128K en maquinas sin GPU de datacenter.
+La arquitectura combina 40 capas: 30 de ellas son convoluciones 1D cortas con estado constante O(1) y 10 son capas de atencion completa intercaladas cada 4 bloques, lo que da coherencia hasta 128.000 tokens de contexto con un coste de cache muy reducido. El modelo esta pensado para razonamiento, tool calling y uso agentico en entornos con memoria limitada, y soporta 16 idiomas, entre ellos el castellano.
 
-El resultado es un artefacto pensado para inferencia en el edge y en estaciones de trabajo con llama.cpp, con especial enfasis en razonamiento, uso de herramientas y generacion de texto multilingue en 17 idiomas.
+La relevancia de esta ficha esta en que ofrece el modelo de 24B en un unico archivo GGUF de 8,15 GB (7,59 GiB en memoria), lo que lo hace desplegable en GPUs de consumo y en equipos de borde. La cuantizacion se ha calibrado con una importance matrix generada a partir de conversaciones reales de tool calling, y el resultado conserva los 428 tensores del modelo base con una mezcla de precisiones que va de F32 a IQ2_XXS.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido MoE con columna vertebral de convoluciones 1D: 40 capas, de las cuales 30 usan convolucion corta 1D (O(1) de estado) y 10 son capas de atencion completa distribuidas cada 4 bloques |
-| Parametros totales | 23.971.587.712 (aproximadamente 24B) |
-| Parametros activos | Aproximadamente 2B por token (designacion A2B) |
-| Longitud de contexto | 128.000 tokens (nativa, segun el autor) |
-| Tipos de cuantizacion | Mezcla por tensor: F32 (207 tensores), Q4_K (97), IQ3_XXS (42), IQ2_S (34), IQ2_XXS (34), Q6_K (10), Q3_K (4); 428 tensores en total |
-| Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it, vi, th, id, hi, ru, pl |
-| Licencia | lfm1.0 (license: other), heredada del modelo base |
-| Formato de pesos | GGUF (unico archivo; libreria llama.cpp) |
-| Tamano del repositorio | 8,2 GB; archivo 8,15 GB; huella de pesos 7,59 GiB |
+| Arquitectura | MoE hibrida: 30 capas de convolucion 1D corta + 10 capas de atencion completa (cada 4 bloques) |
+| Parametros totales | 23.971.587.712 (23,97B) |
+| Parametros activos | ~2B por token |
+| Longitud de contexto | 128.000 tokens (contexto nativo) |
+| Tipos de cuantizacion | GGUF APEX-I-NanoPlus (mezcla: F32, Q4_K, IQ3_XXS, IQ2_S, IQ2_XXS, Q6_K, Q3_K) |
+| Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it, vi, th, id, hi, ru, pl (16 idiomas) |
+| Licencia | lfm1.0 (licencia propia de Liquid AI, marcada como "other" en el repo) |
+| Formato de pesos | GGUF (llama.cpp) |
+| Tamano del archivo | 8,15 GB (7,59 GiB en memoria) |
+| Tensores auditados | 428 |
+| Modelo base | LiquidAI/LFM2.5-24B-A2B |
+| Cuantizador | IsValorum |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE hibrido de Liquid AI: de las 40 capas del backbone, 30 emplean convoluciones cortas 1D con cacheo de estado O(1), lo que da una latencia de primer token muy baja y un coste de memoria constante al crecer el contexto. Las 10 capas restantes son atencion completa, intercaladas cada 4 bloques, y actuan como anclaje periodico para mantener coherencia en horizontes largos de hasta 128.000 tokens. El router del MoE se guarda en F32 en esta cuantizacion para evitar derivas en la seleccion de expertos.
+El modelo base es un transformer MoE con 24B parametros totales y unos 2B activos por token. La innovacion principal es la columna vertebral de convoluciones 1D cortas: 30 de las 40 capas usan convoluciones con cache de estado constante O(1), lo que elimina el crecimiento lineal de la KV cache y reduce el time-to-first-token. Las 10 capas de atencion completa se distribuyen una cada cuatro bloques para retener coherencia de largo alcance hasta 128.000 tokens. Esta combinacion hibrida es la que permite que el modelo corra hasta 1,7 veces mas rapido en dispositivos de borde que alternativas densas o dispersas de mayor tamano.
 
-La cuantizacion de IsValorum se construyo con una importance matrix (imatrix.gguf) generada por m9ter1a sobre conversaciones autenticas de tool calling renderizadas con la plantilla de chat nativa del modelo, mas un corpus de prosa. La asignacion de precision es heterogenea: los expertos frontera (capas 2, 3, 38 y 39) y los expertos nucleares en la proyeccion down usan IQ3_XXS; las proyecciones gate y up de los expertos nucleares (capas 4 a 37) bajan a IQ2_S e IQ2_XXS; las cabezas de atencion usan Q4_K y Q6_K; y routers, normas, sesgos y kernels de convolucion permanecen en F32. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni las etapas de alineacion (RLHF/DPO) del modelo original en la informacion proporcionada.
+No se dispone en la informacion proporcionada del numero exacto de tokens de entrenamiento, de la composicion del dataset ni de si se aplicaron tecnicas de RLHF o DPO. La model card del cuantizador solo referencia los benchmarks oficiales de Liquid AI y las cifras de velocidad en borde. La cuantizacion APEX-I-NanoPlus se calibro con una importance matrix (imatrix.gguf) generada por el usuario m9ter1a a partir de conversaciones autenticas de tool calling renderizadas con la plantilla de chat nativa del modelo, lo que orienta la asignacion de precision hacia las capas mas sensibles a ese tipo de tarea.
+
+El mapa de precision auditado reparte los 428 tensores asi: 207 en F32 (48,36%) para routers, normas, biases y kernels de convolucion; 97 en Q4_K (22,66%) para el FFN denso de entrada, atencion q/k/v, shortconv y embeddings; 42 en IQ3_XXS (9,81%) para expertos de borde y expertos centrales down; 34 en IQ2_S (7,94%) para expertos centrales gate; 34 en IQ2_XXS (7,94%) para expertos centrales up; 10 en Q6_K (2,34%) para las cabezas de salida de atencion; y 4 en Q3_K (0,93%) para expertos de borde down.
 
 ## Capacidades
 
-- Generacion de texto conversacional en 17 idiomas, incluyendo espanol, ingles, arabe, chino, japones, coreano, hindi, thai, vietnamita e indonesio.
-- Razonamiento explicito: las etiquetas del repositorio incluyen `reasoning`, y el modelo esta descrito como especialista en razonamiento on-device.
-- Tool calling y function calling: el modelo esta optimizado para uso autonomo de herramientas, con resultados destacados en BFCL v4 y LiveClaw segun la model card.
-- Flujos agenticos multi-paso: soporte declarado para cadenas de llamadas a herramientas con contexto largo.
-- Generacion de codigo y matematicas: incluido en las evaluaciones agenticas, de codigo y matematicas citadas por el autor.
-- Latencia constante en la mayor parte de la pila: 30 de 40 capas con estado O(1), lo que reduce el coste de decodificacion en contextos largos.
-- Capacidades de vision o audio: no disponibles en la informacion proporcionada.
-- Empaquetado listo para endpoints compatibles con OpenAI segun las etiquetas del repositorio (`endpoints_compatible`).
+- Generacion de texto conversacional multi-turno con contexto nativo de 128.000 tokens.
+- Razonamiento explicito y modo de pensamiento (tag `reasoning` en el repo).
+- Tool calling y function calling nativo, con resultados destacados en LiveClaw y BFCL v4 segun Liquid AI.
+- Uso agentico y razonamiento multi-paso para pipelines autonomos.
+- Capacidades de codigo y matematicas, evaluadas en los benchmarks oficiales del modelo base.
+- Soporte multilingue en 16 idiomas: ingles, arabe, chino, frances, aleman, japones, coreano, espanol, portugues, italiano, vietnamita, tailandes, indonesio, hindi, ruso y polaco.
+- Inferencia de baja latencia gracias a la columna de convoluciones 1D con cache O(1).
+- Compatible con endpoints de llama.cpp.
 
 ## Casos de uso
 
-- Asistentes de atencion al cliente multi-turno: con 128.000 tokens de contexto, el modelo puede mantener el historial completo de una conversacion larga y consultar herramientas internas (estado de pedido, CRM) mediante function calling sin perder el hilo.
-- Agentes autonomos de automatizacion de oficina: encadenamiento de llamadas a APIs y ejecucion de tareas multi-paso (agendar, enviar correo, generar informe) gracias a las capacidades de tool calling y al bajo coste por token de los 2B parametros activos.
-- Despliegue local en portatiles y equipos de sobremesa: el archivo de 8,15 GB cabe en GPUs de consumo con 8-12 GB de VRAM y en configuraciones de CPU con 16 GB de RAM, lo que permite trabajar sin conexion y sin enviar datos a terceros.
-- Asistencia de programacion en el editor: generacion y explicacion de fragmentos de codigo con contexto de repositorio largo, aprovechando la ventana de 128K para incluir varios ficheros relevantes.
-- Razonamiento y resolucion de problemas matematicos en entornos educativos: el modo de razonamiento permite obtener trazas intermedias, util para tutoria paso a paso en local.
-- Traduccion y procesamiento multilingue: cobertura de 17 idiomas, adecuada para normalizar tickets, correos o documentacion en pipelines internos sin depender de servicios en la nube.
-- Procesamiento de documentos extensos: resumen y extraccion de entidades sobre contratos, informes o transcripciones que superan la ventana de modelos densos de 8K-32K.
-- Prototipado rapido en llama.cpp u Ollama: al ser un unico fichero GGUF con plantilla de chat incluida, se integra en scripts de prueba y entornos de investigacion en minutos.
+- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno con contexto largo gracias a sus 128.000 tokens de ventana, y la cache O(1) de las capas convolucionales mantiene baja la latencia incluso con historiales extensos.
+- Agentes autonomos con tool calling: su rendimiento en BFCL v4 y LiveClaw lo hace adecuado para orquestar llamadas a APIs, consultas a bases de datos y flujos multi-paso en produccion.
+- Asistente de codigo en local: con 2B parametros activos y un archivo de 8,15 GB, puede ejecutarse en una GPU de consumo para autocompletado, revision de parches y generacion de tests dentro de un IDE.
+- Razonamiento sobre documentos largos: informes, contratos o expedientes de hasta 128K tokens pueden procesarse en una sola pasada sin chunking, aprovechando las capas de atencion completa intercaladas.
+- Despliegue en dispositivos de borde: su huella de 7,59 GiB y la velocidad de inferencia reportada por Liquid AI (hasta 1,7x mas rapido que alternativas) permiten ejecutarlo en estaciones de trabajo, mini-PC y portatiles con GPU.
+- Traduccion y asistencia multilingue: al cubrir 16 idiomas, incluido el espanol, sirve para traduccion tecnica, localizacion de documentacion y soporte en varios idiomas desde un unico modelo.
+- Procesamiento por lotes en servidor: con llama.cpp y el formato GGUF puede servirse en CPU o GPU mixtas para tareas de clasificacion, extraccion de entidades y resumen a gran escala donde el coste por token importa.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos numericos concretos presentes en la informacion proporcionada corresponden a la comparacion con Qwen3.6-35B-A3B en LiveClaw:
+Los unicos datos publicados en la informacion disponible son los que cita la model card del cuantizador, atribuidos a los benchmarks oficiales de Liquid AI. No se incluyen cifras completas de MMLU, HumanEval o GSM8K en el material proporcionado.
 
-| Evaluacion | LFM2.5-24B-A2B | Qwen3.6-35B-A3B |
+| Benchmark | LFM2.5-24B-A2B | Referencia citada |
 |---|---|---|
-| LiveClaw (tool use autonomo) | 48,09 | 38,19 |
-| BFCL v4 | no disponible (citado como resultado destacado, sin cifra) | no disponible |
-| MMLU | no disponible | no disponible |
-| HumanEval | no disponible | no disponible |
-| GSM8K | no disponible | no disponible |
+| LiveClaw | 48,09 | 38,19 (Qwen3.6-35B-A3B) |
+| BFCL v4 | state-of-the-art (sin cifra) | no disponible |
+| Velocidad en borde | hasta 1,7x mas rapido | frente a alternativas densas y dispersas de mayor tamano |
 
-La model card del cuantizador reproduce ademas dos figuras de Liquid AI (benchmarks generales y velocidad de inferencia en edge y GPU) sin desglosar los valores numericos en texto, por lo que no se pueden tabular aqui. El autor afirma una mejora de velocidad de hasta 1,7x frente a alternativas densas o dispersas de mayor tamano en dispositivos edge, pero no se aporta la metodologia de medicion.
+No se han publicado resultados de benchmarks adicionales en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo ocupa 8,15 GB y los pesos en memoria 7,59 GiB. Sumando cache KV y buffers de llama.cpp, un despliegue tipico parte de unos 9-10 GB y crece con la longitud de contexto; no se dispone de cifras oficiales de consumo por contexto en la informacion proporcionada.
-- GPU de consumo: cabe en tarjetas con 12 GB o mas (RTX 3060 12GB, RTX 4070, RTX 4080, RTX 4090). En GPUs de 8 GB el encaje es ajustado y puede requerir descargar capas a CPU o reducir contexto.
-- GPU profesionales: A100, H100, L40S y similares ejecutan el modelo con margen de sobra y permiten lotes grandes.
-- CPU y memoria RAM: al ser un MoE de 24B, la RAM necesaria es la de todos los pesos, aproximadamente 8-9 GB mas overhead; es viable en equipos con 16 GB de RAM y recomendable 32 GB.
-- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, LM Studio, koboldcpp y bindings de llama-cpp-python. vLLM y TGI no estan optimizados para este GGUF concreto; para esos motores es preferible partir de los pesos del modelo base.
-- Latencia y throughput: no hay cifras publicadas para esta cuantizacion especifica. La arquitectura declara latencia constante en 30 de 40 capas y una mejora de hasta 1,7x en edge frente a alternativas, sin datos medidos reproducibles.
+- VRAM estimada para inferencia: 7,59 GiB solo para pesos en esta cuantizacion NanoPlus; hay que sumar la KV cache y los buffers de contexto, que con 128K tokens puede anadir varios GiB segun la configuracion.
+- GPU recomendadas: tarjetas con 12 GB o mas de VRAM para contexto moderado; 16-24 GB para aprovechar ventanas largas. Ejemplos: RTX 3060 12 GB, RTX 4070 Ti, RTX 4090, A100, H100.
+- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) para contextos moderados.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama y servidores compatibles con GGUF; el repo esta marcado como `endpoints_compatible`.
+- Latencia y throughput: no se proporcionan cifras concretas de tokens por segundo para esta cuantizacion; la model card solo indica que el modelo base corre hasta 1,7x mas rapido en borde que alternativas comparables.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Formato / tamano | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| LFM2.5-24B-A2B APEX-I NanoPlus (esta ficha) | 23,97B | ~2B | 128K | GGUF, 8,15 GB | lfm1.0 | Version de menor huella; expertos nucleares en IQ2 |
-| LFM2.5-24B-A2B APEX-I MiniPlus V2.1 | 23,97B | ~2B | 128K | GGUF, 9,64 GB | lfm1.0 | Edicion equilibrada del mismo autor; expertos edge en Q3_K |
-| LiquidAI/LFM2.5-24B-A2B (BF16) | 23,97B | ~2B | 128K | safetensors, 47,96 GB | lfm1.0 | Modelo base oficial; calidad de referencia |
-| Qwen3.6-35B-A3B | no disponible (referido como 35B con 3B activos) | ~3B | no disponible | no disponible | no disponible | Usado como referencia en LiveClaw: 38,19 frente a 48,09 |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato disponible |
+|---|---|---|---|---|
+| LFM2.5-24B-A2B APEX-I-NanoPlus (esta ficha) | 23,97B / ~2B | 128K | lfm1.0 | GGUF 8,15 GB |
+| LFM2.5-24B-A2B APEX-I-MiniPlus V2.1 | 23,97B / ~2B | 128K | lfm1.0 | GGUF 9,64 GB |
+| LFM2.5-24B-A2B BF16 (Liquid AI) | 23,97B / ~2B | 128K | lfm1.0 | safetensors 47,96 GB |
+| Qwen3.6-35B-A3B | 35B / 3B (segun referencia de la model card) | no disponible | no disponible | no disponible |
+
+La comparativa se limita a las variantes del mismo modelo base y a la referencia Qwen3.6-35B-A3B citada en los benchmarks. No se dispone de datos suficientes para comparar con otras familias de modelos en parametros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion comunitaria, no oficial: Liquid AI no la respalda ni la mantiene. El repositorio registra 0 descargas y 0 me gusta en el momento de la consulta y fue creado el 2026-10-13, una fecha anomala que conviene verificar antes de confiar en el artefacto.
-- La cuantizacion introduce degradacion respecto al BF16 original. Las proyecciones gate y up de los expertos nucleares se almacenan en IQ2_S e IQ2_XXS, precisiones agresivas que pueden afectar a tareas de razonamiento fino y a la fidelidad en idiomas minoritarios.
-- Riesgo de alucinacion inherente a los modelos de lenguaje y agravado por la cuantizacion de baja precision en los expertos. En produccion conviene validar salidas con verificacion externa o RAG.
-- Cobertura de idiomas desigual: aunque se declaran 17 idiomas, el rendimiento real en espanol, arabe, hindi o thai no esta cuantificado en la informacion disponible.
-- Licencia lfm1.0 (license: other): no es una licencia de codigo abierto estandar. Antes de cualquier uso comercial es obligatorio revisar el texto enlazado por el autor y verificar las condiciones de atribucion y de uso que impone Liquid AI.
-- El endpoint y las etiquetas `endpoints_compatible` no garantizan compatibilidad con infraestructura propietaria concreta; hay que probar la plantilla de chat y el formato de tool calling antes de integrarlo.
-- Coste de memoria en contexto largo: aunque el backbone convolucional tiene estado O(1), las 10 capas de atencion completa mantienen cache KV que crece con la longitud de contexto; no hay mediciones publicadas para 128K en esta cuantizacion.
-- No se dispone de informacion sobre sesgos especificos, composicion del dataset de entrenamiento ni procesos de alineacion del modelo base.
-- Los resultados de busqueda web devueltos para esta consulta no contienen informacion tecnica relevante sobre el modelo, por lo que no se han podido contrastar de forma independiente los datos de la model card.
+- La licencia lfm1.0 es una licencia propia de Liquid AI marcada como "other"; es imprescindible revisar sus terminos antes de cualquier uso comercial.
+- Al ser una cuantizacion agresiva (IQ2_XXS e IQ2_S en los expertos centrales), puede haber una perdida de calidad respecto al BF16 original, especialmente en tareas de razonamiento complejo y matematicas.
+- Los expertos centrales se almacenan a 2 bits; el cuantizador no publica una evaluacion de perplejidad ni de benchmarks de esta edicion concreta, por lo que el impacto real no esta cuantificado en la informacion disponible.
+- Riesgo de alucinacion inherente a los modelos generativos, agravado en contextos muy largos y en idiomas con menos representacion en el entrenamiento.
+- El rendimiento en espanol y en el resto de idiomas distintos del ingles no esta desglosado en los benchmarks disponibles.
+- La cuantizacion es de terceros y no esta respaldada oficialmente por Liquid AI; los problemas de calidad deben reportarse al cuantizador.
+- El uso de contexto de 128K incrementa la memoria necesaria por encima de los 7,59 GiB de los pesos, lo que puede impedir su ejecucion en GPUs de 8 GB.
+- La fecha de creacion del repositorio (2026-10-13) y la referencia a Qwen3.6-35B-A3B indican que parte de los datos de la model card pueden corresponder a versiones futuras o no verificables; conviene contrastar las cifras con la model card oficial de Liquid AI.
 
 ## Enlaces
 
-- Repositorio de esta cuantizacion: https://huggingface.co/IsValorum/LFM2.5-24B-A2B-APEX-I-NanoPlus-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/LFM2.5-24B-A2B-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
-- Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
-- Importance matrix utilizada: https://huggingface.co/m9ter1a/LFM2.5-24B-A2B-GGUF
-- Edicion alternativa APEX-I-MiniPlus V2.1: https://huggingface.co/IsValorum/LFM2.5-24B-A2B-APEX-I-MiniPlus-V2.1-GGUF
-- Coleccion VAL-APEX-I: https://huggingface.co/collections/IsValorum/val-apex-i-6ac563d1784a04a1bb177f47
-- Coleccion APEX-I-MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104
-- Coleccion APEX-I-NanoPlus: https://huggingface.co/collections/IsValorum/apex-i-nanoplus-6ab41467c988a1b1cb9b83bc
-- Apoyo al autor de la cuantizacion: https://ko-fi.com/isvalorum
-- Benchmarks del modelo base (imagen): https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/main/figures/LFM2.5-24B-A2B-benchmark.png
-- Velocidad de inferencia en edge y GPU (imagen): https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/resolve/main/figures/LFM2.5-24B-A2B-edge-inference.png
-- Paper, blog o demo oficial: no disponible en la informacion proporcionada
-- Repositorio de codigo del modelo base: no disponible en la informacion proporcionada
+- Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
+- Edicion APEX-I-MiniPlus V2.1: https://huggingface.co/IsValorum/LFM2.5-24B-A2B-APEX-I-MiniPlus-V2.1-GGUF
+- Coleccion APEX-I-MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-standard-moe-6acfee77961c8c0cf5a083b5
+- Coleccion APEX-I-NanoPlus: https://huggingface.co/collections/IsValorum/apex-i-nanoplus-standard-moe-6acfee79c288c5d8e7307785
+- Importance matrix de m9ter1a: https://huggingface.co/m9ter1a/LFM2.5-24B-A2B-GGUF
+- Apoyo al cuantizador: https://ko-fi.com/isvalorum

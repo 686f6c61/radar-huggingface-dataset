@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "jiwomdf/Llama-3.2-1B-Legal-Indo-GRPO",
+  "slug": "jiwomdf-llama-3-2-1b-legal-indo-grpo",
+  "author": "jiwomdf",
+  "url": "https://huggingface.co/jiwomdf/Llama-3.2-1B-Legal-Indo-GRPO",
+  "created_at": "2026-11-18T09:06:58.000Z",
+  "updated_at": "2026-11-18T09:07:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:jiwomdf/Llama-3.2-1B-Legal-Indo-SFT",
+    "base_model:finetune:jiwomdf/Llama-3.2-1B-Legal-Indo-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "context_length": null,
+  "base_model": "jiwomdf/Llama-3.2-1B-Legal-Indo-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

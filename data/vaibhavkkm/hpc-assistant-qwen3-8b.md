@@ -2,100 +2,108 @@
 
 ## Resumen
 
-Hpc-assistant-qwen3-8b es un modelo de lenguaje especializado en computación de alto rendimiento (HPC) y en el gestor de colas Slurm, creado por el usuario VaibhavKKM. Se trata de un ajuste por destilación de Qwen3-8B, donde un modelo profesor más grande (Qwen3-235B-A22B-Instruct-2507) generó las respuestas de entrenamiento, siguiendo la receta ya publicada por el autor en su variante de 4B (hpc-assistant-qwen3-4b). El objetivo es resolver un problema práctico muy concreto: los asistentes generales suelen fallar en preguntas sobre scripts de Slurm, planificadores de colas y documentación de HPC, un dominio con abundante documentación técnica pero poco representado en los corpus de preentrenamiento.
+HPC Assistant 8B es un ajuste fino de Qwen3-8B especializado en preguntas sobre computacion de altas prestaciones (HPC) y el gestor de colas Slurm, desarrollado por VaibhavKKM. Se presenta como el hermano mayor de ClusterPilot-4B, con el que comparte receta de destilacion: respuestas generadas por Qwen3-235B-A22B-Instruct-2507, incluyendo las top-20 log-probabilidades del profesor. El modelo conserva el modo de razonamiento (thinking) de Qwen3, activado por defecto y conmutable mediante el argumento `enable_thinking` de la plantilla de chat.
 
-El modelo conserva la arquitectura transformer densa de Qwen3-8B (8.190.735.360 parámetros) e incorpora un modo de razonamiento ("thinking") que se activa mediante el argumento `enable_thinking` de la plantilla de chat, activado por defecto. En la evaluación publicada (run `e8_all`), alcanza una tasa de victoria media de 0,8746 frente al Qwen3-4B base en preguntas de HPC con respuestas cerradas, y 0,9091 con el thinking activado. Es relevante para administradores de clústeres, equipos de soporte HPC y desarrolladores que necesiten un asistente local, con licencia Apache 2.0 y pesos disponibles en safetensors y GGUF.
+El problema que aborda es concreto: escribir scripts de Slurm, diagnosticar trabajos fallidos, configurar MPI y ajustar rendimiento en clusters. Con razonamiento activo alcanza una puntuacion media de 0,9124 en tres conjuntos de prueba propios (Slurm dev, Slurm y GPU/MPI), frente a 0,8612 de ClusterPilot-4B. La metrica es una tasa de victorias frente a las respuestas de Qwen3-4B base sin documentos, evaluada por tres modelos jueces, no una exactitud absoluta.
+
+El modelo tiene 8.190.735.360 parametros y se distribuye en bf16 (16,4 GB) y en dos cuantizaciones GGUF (Q4_K_M de 5,0 GB y Q8_0 de 8,7 GB). La licencia es CC BY-NC-SA 4.0, lo que restringe el uso comercial. El autor advierte que el modelo depende de los extractos de documentacion que la aplicacion ClusterPilot inyecta en cada consulta: sin ellos no conoce de forma fiable hechos especificos del sitio (particiones, limites, almacenamiento).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3) |
-| Parametros totales | 8.190.735.360 (8,19 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (aviso del autor: los prompts de más de 10.000 tokens pueden perder su inicio) |
-| Tipos de cuantizacion | Q4_K_M y Q8_0 (GGUF); safetensors en precisión original |
-| Idiomas soportados | no disponible (heredado presumiblemente del Qwen3-8B base) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y GGUF |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3-8B) |
+| Parametros totales | 8.190.735.360 |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el ejemplo de llama.cpp usa `-c 16384`) |
+| Tipos de cuantizacion | bf16, GGUF Q4_K_M, GGUF Q8_0 |
+| Idiomas soportados | No disponibles |
+| Licencia | CC BY-NC-SA 4.0 |
+| Formato de pesos | safetensors (bf16) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-8B, un transformer decoder denso de la familia Qwen3, sin capas MoE. El entrenamiento es un proceso de destilación por estudiante: las respuestas de referencia las genera Qwen3-235B-A22B-Instruct-2507 (el profesor), y el run publicado (`e8_all`) añade una etapa de thinking procedente del checkpoint `q397fp8`, usando solo el texto final de las respuestas, sin soft targets (logits del profesor). El pipeline de entrenamiento está disponible en el directorio `training/` del repositorio.
+El modelo parte de Qwen3-8B, un transformer decoder-only denso de 8,19 mil millones de parametros con modo de razonamiento explicito. El ajuste fino se realizo mediante destilacion: las respuestas objetivo provienen de Qwen3-235B-A22B-Instruct-2507 y se conservan las top-20 log-probabilidades del profesor, la misma receta empleada en ClusterPilot-4B. Los pesos publicados corresponden al run interno `e8_all`.
 
-El dataset de entrenamiento se compone de preguntas sobre HPC y Slurm, con respuestas basadas en fragmentos de documentación recuperada (RAG). El autor documenta algunos detalles relevantes: 46 de 136.452 secuencias con más de 10.000 tokens perdieron su inicio durante el entrenamiento en modo thinking-off, y las respuestas con thinking excesivamente largo fueron descartadas. Además, los prompts de entrenamiento contienen unas 3 trazas por cada 30.000 muestreadas de la familia Aalto (usada como held-out en evaluación), lo que constituye una pequeña fuga de datos a tener en cuenta. No se menciona RLHF ni DPO explícitos; la técnica principal es la destilación de respuestas.
+El conjunto de entrenamiento contiene 136.452 secuencias. Entre los detalles documentados: 46 prompts de mas de 10.000 tokens se truncaron por el inicio, y las respuestas de razonamiento excesivamente largas se descartaron. Los prompts incluyen algunas trazas de una familia de clusters reservada para prueba (Aalto, aproximadamente 3 por cada 30.000 muestras). No se documenta el uso de RLHF ni DPO. El autor probo variantes adicionales que no reemplazaron los pesos publicados: una etapa de razonamiento entrenada con Qwen3.5-397B (FP8, solo texto final) dio 0,8284; rondas extra de entrenamiento dieron entre 0,8841 y 0,9109; una media de pesos de varias versiones dio 0,8890; y distintas tasas de aprendizaje y combinaciones de conjuntos quedaron por debajo o a la par.
 
 ## Capacidades
 
-- Generación de texto conversacional especializada en HPC: scripts de Slurm, gestión de colas, configuración de clústeres y documentación técnica del dominio.
-- Modo de razonamiento ("thinking") activable con `enable_thinking` en la plantilla de chat (activado por defecto), que mejora la tasa de victoria de 0,8746 a 0,9091 en la evaluación publicada.
-- Rendimiento mejorado frente al modelo base en preguntas de HPC con documentación recuperada: 0,8746 de win rate medio frente al Qwen3-4B base en modo cerrado.
-- Compatibilidad con el ecosistema transformers y con inferencia GGUF (llama.cpp y derivados).
-- Capacidades generales de Qwen3-8B (razonamiento general, código, matemáticas) presumiblemente heredadas, aunque el ajuste está orientado a HPC.
-- Tool calling: el autor indica que las suites de pruebas de tool calling no se volvieron a ejecutar para este modelo, por lo que su soporte no está verificado.
+- Generacion de texto tecnico sobre HPC y Slurm: scripts `sbatch`, arrays de trabajos, directivas de particion, limites de recursos y requeue.
+- Razonamiento explicito (thinking mode) activado por defecto, conmutable mediante `enable_thinking` en la plantilla de chat.
+- Respuestas a preguntas de GPU, MPI y rendimiento dentro del dominio de clusters.
+- Integracion con busqueda documental: rinde mejor cuando la aplicacion inyecta extractos de documentacion en la consulta.
+- Soporte de plantilla de chat compatible con `transformers` y despliegue en `llama-server`.
+- Tool calling y modo agente: no evaluados para este modelo segun la model card.
+- Capacidades multilingues: no documentadas.
 
 ## Casos de uso
 
-- Asistente de soporte para clústeres HPC: integrado en un chatbot interno con recuperación de documentación (RAG), puede responder dudas de usuarios sobre cómo enviar trabajos, interpretar errores de `sbatch` o ajustar recursos solicitados, gracias a su entrenamiento con respuestas basadas en documentación real.
-- Generación de scripts de Slurm: un usuario puede describir su carga de trabajo (número de nodos, GPUs, tiempo máximo) y el modelo redacta el script de envío correspondiente, reduciendo la barrera de entrada para investigadores sin experiencia en HPC.
-- Formación de nuevos usuarios de clúster: como tutor interactivo que explica conceptos de particiones, límites de fairshare, prioridades y políticas de uso, con la ventaja de poder desplegarse localmente sin enviar datos institucionales a servicios externos.
-- Automatización de respuestas en tickets de soporte HPC: clasificación y borrador de respuesta inicial para incidencias comunes de Slurm, integrable en sistemas de tickets como fuente de primera respuesta.
-- Depuración de trabajos fallidos: análisis de logs de errores típicos de Slurm (OOM, timeouts, fallos de MPI) para sugerir causas y correcciones, aprovechando el modo thinking para razonamientos multi-paso.
-- Asistente local en estaciones de trabajo sin conexión: gracias a las versiones GGUF Q4_K_M (~5 GB) y Q8_0 (~8,7 GB), puede ejecutarse en portátiles y estaciones de trabajo con llama.cpp u Ollama, útil en entornos de cómputo con restricciones de red.
-- Documentación interactiva de clúster: integración en la wiki o portal del clúster para responder preguntas sobre la configuración específica del centro combinando el modelo con la documentación local.
+- Generacion de scripts de Slurm en produccion: el modelo escribe `sbatch` con arrays, dependencias y limites de concurrencia (por ejemplo, 100 tareas con maximo 10 simultaneas), tarea para la que fue entrenado explicitamente.
+- Asistencia en consola para usuarios de cluster: un chatbot que responde dudas sobre envio de trabajos, particiones y depuracion de fallos, apoyado en la documentacion del sitio inyectada por la aplicacion.
+- Diagnostico de trabajos fallidos: interpretar mensajes de error de Slurm y proponer correcciones en directivas o en el entorno de ejecucion.
+- Configuracion de MPI y ajuste de rendimiento: responder preguntas sobre `mpirun`, afinidad de CPU y parametros de rendimiento en nodos GPU.
+- Base para un asistente interno de soporte HPC: desplegado con llama.cpp en un servidor modesto gracias a la cuantizacion Q4_K_M (5,0 GB), con contexto de 16.384 tokens.
+- Evaluacion y prototipado de asistentes de dominio: servir como referencia para comparar recetas de destilacion sobre Qwen3 en tareas tecnicas verticales.
+- Educacion y formacion: explicar conceptos de planificacion de colas y recursos a usuarios noveles, con razonamiento visible para auditar la respuesta.
 
 ## Benchmarks y rendimiento
 
-El autor publica tasas de victoria (win rates) frente a las respuestas cerradas del Qwen3-4B base, evaluadas por tres modelos juez con voto mayoritario en ambos órdenes (los empates cuentan medio punto). Las respuestas usan fragmentos de documentación recuperada y el thinking se elimina antes del juicio. El ruido entre ejecuciones del mismo modelo es de aproximadamente 0,01. No son benchmarks estándar (MMLU, HumanEval, etc.), sino una evaluación específica del dominio HPC.
+La metrica principal es una tasa de victorias (0,50 equivale a Qwen3-4B base sin documentos; 1,00 significa siempre mejor), decidida por mayoria de tres jueces (gpt-oss-20b, Gemma 4 26B y Qwen3-235B) en ambos ordenes. Todas las respuestas usan la busqueda documental por defecto de la aplicacion.
 
-| Run | Media | v2 | v3 | d1 | Sin respuesta | Límite alcanzado |
-|---|---|---|---|---|---|---|
-| e8_all (pesos publicados, thinking off) | 0,8746 | 0,8788 | 0,9384 | 0,8066 | 0 | 3 |
-| e8_all_on (thinking on) | 0,9091 | 0,9242 | 0,9589 | 0,8443 | 1 | 1 |
-| e8_ctrl13 | 0,8558 | 0,8636 | 0,9349 | 0,7689 | 0 | 4 |
-| e8_van_off | 0,6600 | 0,6856 | 0,7072 | 0,5873 | 0 | 0 |
-| e8_van_on | 0,7452 | 0,7727 | 0,7860 | 0,6769 | 6 | 6 |
-| tc_t235think | 0,8443 | 0,8788 | 0,8545 | 0,7995 | 19 | 19 |
-| tc_397on | 0,8737 | 0,8788 | 0,9332 | 0,8090 | 2 | 2 |
-| e8_k1 | 0,8147 | 0,8144 | 0,8938 | 0,7358 | 0 | 4 |
-| kdall (referencia 4B) | 0,8665 | 0,8902 | 0,9264 | 0,7830 | 0 | 2 |
-| kdall6 (referencia 4B) | 0,8742 | 0,8826 | 0,9264 | 0,8137 | 0 | 2 |
+| Modelo | Run 1 | Run 2 | Media |
+|---|---|---|---|
+| Este modelo, thinking on (por defecto) | 0,9091 | 0,9157 | 0,9124 |
+| Este modelo, thinking on, busqueda extendida | 0,9197 | 0,9127 | 0,9162 |
+| Este modelo, thinking off | 0,8746 | 0,8577 | 0,8662 |
+| ClusterPilot-4B 1.3 (sin thinking) | 0,8665 | 0,8558 | 0,8612 |
 
-El resultado primario, fijado de antemano, es `e8_all` con thinking desactivado: 0,8746. Los demás runs son candidatos adicionales, por lo que sus mejores cifras son figuras best-of-several. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Conjuntos de prueba: Slurm dev (66 preguntas), Slurm (200) y GPU/MPI (106). La busqueda extendida anade un indice general de documentacion HPC que no forma parte de los pesos ni se distribuye; la diferencia esta dentro del ruido, aunque GPU/MPI sube de 0,840 a 0,857 de media.
+
+Comprobaciones adicionales:
+
+| Prueba | ClusterPilot-4B 1.3 | Este modelo, thinking off | Este modelo, thinking on |
+|---|---|---|---|
+| 184 preguntas de clusters europeos con tool calls reales (respuestas erroneas) | 36 | 27 | 23 |
+| 25 casos reales de Leonardo del mentor (puntos clave de 50) | 31 | 34 | 35 |
+
+Sin la documentacion de la aplicacion, el modelo alcanzo 23 de 50 en los casos de Leonardo. Dos ejecuciones de los mismos pesos difieren en torno a 0,01, por lo que las diferencias pequenas no son significativas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la versión Q4_K_M ocupa unos 5 GB de disco (cabe en GPUs de 8 GB de VRAM); la Q8_0 requiere unos 9-10 GB; los safetensors en precisión completa requieren aproximadamente 16-18 GB en FP16/BF16.
-- GPUs recomendadas: para safetensors en BF16, una RTX 4090 (24 GB), A100 o H100; para las versiones GGUF cuantizadas, cualquier GPU consumer moderna (RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB) o incluso CPU pura con velocidad reducida.
-- Encaja sin problemas en GPUs consumer: la Q4_K_M funciona en GPUs de 8 GB y la Q8_0 en GPUs de 12 GB o superiores, dejando margen para el KV cache.
-- Opciones de despliegue: transformers (librería nativa), llama.cpp y derivados (Ollama, LM Studio) gracias a los GGUF publicados; no se menciona soporte explícito de vLLM o TGI, aunque al ser un modelo Qwen3 denso con formato estándar debería funcionar con vLLM y TGI.
-- Latencia y throughput: no disponibles; al ser un modelo denso de 8B con modo thinking activado por defecto, cabe esperar respuestas largas con thinking activado, lo que aumenta la latencia percibida de forma significativa.
+- VRAM para bf16: aproximadamente 16,4 GB de pesos mas overhead de activaciones y cache KV; en la practica, 20-24 GB para contexto moderado.
+- VRAM para GGUF Q8_0: 8,7 GB de pesos; viable en GPUs de 12-16 GB.
+- VRAM para GGUF Q4_K_M: 5,0 GB de pesos; cabe en GPUs consumer de 8 GB, con margen para contexto.
+- GPUs recomendadas: A100 40/80 GB o H100 para bf16 con contexto largo y concurrencia; RTX 4090 (24 GB) para bf16 con contexto moderado; RTX 3090, 4080 o 4070 Ti para cuantizaciones GGUF.
+- Despliegue: `transformers` con `device_map="auto"` y `dtype="bfloat16"`; `llama.cpp` mediante `llama-server` (ejemplo oficial con `-c 16384`); compatible con text-generation-inference segun los tags del repositorio.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Especialización | Licencia | Formatos | Win rate HPC publicado |
-|---|---|---|---|---|---|
-| hpc-assistant-qwen3-8b | 8,19 B | HPC y Slurm (destilación) | Apache 2.0 | safetensors, GGUF (Q4_K_M, Q8_0) | 0,8746 (thinking off) / 0,9091 (thinking on) |
-| hpc-assistant-qwen3-4b (mismo autor) | 4 B (no disponible exacto) | HPC y Slurm (destilación) | Apache 2.0 | safetensors, GGUF | 0,8665 / 0,8558 según run |
-| Qwen/Qwen3-8B (base) | 8,19 B | General | Apache 2.0 | safetensors, GGUF | no disponible (es la referencia base del win rate) |
+| Modelo | Parametros | Contexto | Rendimiento en la prueba del autor | Licencia |
+|---|---|---|---|---|
+| HPC Assistant 8B (este modelo) | 8,19 B | No disponible | 0,9124 (thinking on) | CC BY-NC-SA 4.0 |
+| ClusterPilot-4B 1.3 | No disponible | No disponible | 0,8612 | No disponible en la informacion |
+| Qwen3-8B (base) | 8,19 B | No disponible | No evaluado en esta prueba | No disponible en la informacion |
+| Qwen3-4B (base, referencia de los jueces) | 4 B aprox. | No disponible | 0,50 por definicion de la metrica | No disponible en la informacion |
 
-La comparación más directa es con la variante de 4B del mismo autor: el modelo de 8B publicado (`e8_all`) obtiene 0,8746 frente a 0,8665 y 0,8558 de los runs de 4B, una diferencia dentro del margen de ruido según el propio autor, a cambio del doble de coste de inferencia. Frente al Qwen3-8B base, no hay cifras comparables publicadas en la información disponible, aunque la evaluación sugiere que el ajuste aporta mejoras sustanciales en el dominio HPC (los runs "vanilla" del pipeline se quedan en 0,66-0,75).
+La comparacion directa solo es valida dentro de la prueba descrita; no hay resultados publicados de MMLU, HumanEval, GSM8K ni de benchmarks estandar para este ajuste.
 
 ## Limitaciones y advertencias
 
-- Fuga de datos parcial: los prompts de entrenamiento contienen unas 3 trazas por cada 30.000 de la familia Aalto, que se usa como held-out en la evaluación, lo que puede inflar ligeramente los win rates en ese subconjunto.
-- Pérdida de contexto en prompts largos: 46 de 136.452 secuencias de más de 10.000 tokens perdieron su inicio durante el entrenamiento thinking-off, por lo que los prompts muy largos pueden degradar la calidad de la respuesta.
-- Respuestas sin thinking completo: en evaluación, una respuesta cuyo thinking no termina cuenta como no respondida; con thinking activado aparecen casos de "sin respuesta" y de límite de longitud alcanzado.
-- Tool calling sin verificar: las suites de pruebas de tool calling no se volvieron a ejecutar para este modelo, por lo que su uso en escenarios de agentes con herramientas no está garantizado.
-- Riesgo de alucinación: no cuantificado por el autor; al tratarse de un modelo de 8B destilado, puede generar configuraciones de Slurm o flags incorrectos, por lo que se recomienda validar siempre los scripts generados antes de enviarlos a un clúster real.
-- Alcance de evaluación limitado: la evaluación es específica de HPC/Slurm con documentación recuperada y usa juez LLM (con el sesgo inherente); no hay benchmarks estándar ni pruebas de las suites de producto.
-- Proyecto de autor individual: con 305 descargas y 1 like en el momento de la ficha, el mantenimiento, la documentación y el soporte comunitario son limitados; conviene tratarlo como modelo experimental.
-- Licencia: Apache 2.0 permite uso comercial sin restricciones relevantes, aunque los términos de la licencia del modelo base Qwen3 (también Apache 2.0) aplican de forma heredada.
+- Licencia CC BY-NC-SA 4.0: prohibido el uso comercial y obligacion de compartir bajo la misma licencia las obras derivadas.
+- Dependencia de documentacion externa: sin los extractos que inyecta la aplicacion, el modelo no conoce de forma fiable particiones, limites ni almacenamiento del sitio (23 de 50 puntos en la prueba sin documentos).
+- Con thinking activo, 2 de las 184 preguntas europeas y 2 de los 25 casos del mentor quedaron sin respuesta; una respuesta cuyo razonamiento no termina cuenta como no respuesta.
+- Tool calling, modo agente y las suites de prueba de la aplicacion no se volvieron a ejecutar para este modelo.
+- Presencia residual de trazas de la familia de clusters Aalto (reservada para prueba) en los datos de entrenamiento.
+- Truncamiento de 46 prompts largos por el inicio durante el entrenamiento, lo que puede afectar a consultas con contexto muy extenso.
+- Riesgo de alucinacion en hechos especificos de sitio y en configuraciones no cubiertas por la documentacion.
+- Sesgos e idiomas soportados no documentados.
+- Las puntuaciones son tasas de victoria relativas a Qwen3-4B base, no exactitudes; diferencias por debajo de 0,01 no son fiables.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/VaibhavKKM/hpc-assistant-qwen3-8b
-- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Variante de 4B del mismo autor (receta de referencia): https://huggingface.co/VaibhavKKM/hpc-assistant-qwen3-4b
-- Modelo profesor: https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507
-- Paper, blog y demo: no disponibles en la información proporcionada.
+- Modelo hermano ClusterPilot-4B: https://huggingface.co/VaibhavKKM/hpc-assistant-qwen3-4b
+- Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
+- Aplicacion ClusterPilot: https://github.com/pparitoshh/alembic

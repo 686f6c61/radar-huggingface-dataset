@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2803,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -37,16 +37,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - arshandalili/sasa",
-      "url": "https://github.com/arshandalili/sasa/tree/main",
-      "snippet": "Code to reproduce the GPT-2 results of the SASA paper. SASA replaces each one-dimensional SAE decoder atom with a learned decoder subspace, enforces Top- s group sparsity, and adds a nuclear-norm regularizer."
-    },
-    {
-      "title": "sasa/sasa at main · arshandalili/sasa · GitHub",
-      "url": "https://github.com/arshandalili/sasa/tree/main/sasa",
-      "snippet": "Contribute to arshandalili/sasa development by creating an account on GitHub."
-    }
-  ]
+  "sources": []
 }

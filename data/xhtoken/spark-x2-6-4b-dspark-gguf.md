@@ -2,59 +2,53 @@
 
 ## Resumen
 
-Spark-X2.6-4B-DSpark-GGUF es un modelo borrador (draft model) en formato GGUF y precisión BF16, publicado por XHToken, diseñado para acelerar la inferencia del modelo Spark-X2.6-4B mediante decodificación especulativa. No es un modelo conversacional autónomo: su función es proponer hasta 7 tokens por pasada de borrado, que el modelo objetivo (Spark-X2.6-4B-GGUF, en BF16 o cuantizado) verifica en paralelo, reduciendo el número de pasos secuenciales de decodificación y aumentando el throughput sin alterar la calidad de las salidas.
+Spark-X2.6-4B-DSpark-GGUF es un modelo borrador (draft model) en formato GGUF BF16 diseñado específicamente para decodificación especulativa junto al modelo objetivo XHToken/Spark-X2.6-4B. Lo desarrolla el equipo SparkLLM (cuenta XHToken en Hugging Face) y su función no es generar respuestas de forma autónoma, sino proponer hasta siete tokens por pasada que el modelo objetivo verifica en paralelo, reduciendo el número de pasos secuenciales de decodificación. Con 624 millones de parámetros, es un componente de infraestructura de inferencia, no un modelo conversacional de propósito general.
 
-La técnica subyacente, denominada DSpark, se apoya en un borrador ligero de solo 624 millones de parámetros con 5 capas SWA (sliding-window attention) que reutiliza estados ocultos del modelo objetivo en las capas `[2, 10, 18, 25, 33]`. Según los datos publicados por el autor, la aceleración media medida es de 2,14× en RTX 4090 con objetivo BF16 y de 1,98× con objetivo Q4_K_M, con valores de hasta 2,94× en MATH500 sobre Apple M5 Pro.
+La arquitectura del borrador es deliberadamente ligera: cinco capas con atención de ventana deslizante (SWA) de 512 tokens, tamaño oculto de 2560, y consume los estados ocultos de las capas `[2, 10, 18, 25, 33]` del modelo objetivo. Esta configuración permite aceleraciones medidas de entre 1,3× y 2,9× en throughput según hardware, cuantización del objetivo y tipo de tarea, con una longitud media de aceptación que oscila entre 3,05 y 5,18 tokens sobre un máximo de 8.
 
-Es relevante ahora porque los agentes on-device y los flujos de razonamiento (thinking modes) generan salidas largas, donde la latencia de decodificación es el cuello de botella principal. DSpark ataca exactamente ese problema en hardware de consumo, con integración vía llama.cpp y una licencia Apache 2.0 que permite uso comercial sin restricciones.
+Su relevancia actual reside en que la decodificación especulativa se ha consolidado como la técnica estándar para mejorar la latencia en despliegues de LLM en dispositivo y en servidor, y este modelo ofrece un borrador empaquetado, con licencia Apache 2.0 y compatible con una bifurcación de llama.cpp que expone una API compatible con OpenAI. El repositorio ocupa 3,2 GB y acumula 4751 descargas y 31 likes desde su publicación el 30 de octubre de 2026.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Draft model con 5 capas SWA (sliding-window attention), ventana de 512 |
-| Parametros totales | 624.416.001 (~624M) |
-| Parametros activos | 624M (modelo denso, no MoE) |
-| Longitud de contexto | no disponible como modelo independiente (el servidor de ejemplo se configura con 8192 tokens; el limite real lo fija el modelo objetivo) |
-| Tipos de cuantizacion | BF16 (pesos del borrador); el modelo objetivo puede ser BF16 o cuantizado (Q4_K_M, INT4) |
-| Idiomas soportados | Ingles y chino (en, zh) |
+| Arquitectura | Transformer borrador con 5 capas SWA (sliding-window attention), ventana de 512, hidden size 2560 |
+| Parámetros totales | 624.416.001 (624M) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible para el borrador; el servidor de ejemplo se lanza con `-c 8192` |
+| Tipos de cuantización | Pesos del borrador en BF16 (GGUF); el modelo objetivo admite BF16 o cuantizado (Q4_K_M, INT4 en las pruebas) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
-
-Datos adicionales del borrador: hidden size de 2560, 7 tokens propuestos por pasada de borrado y reutilización de hidden states del objetivo en las capas `[2, 10, 18, 25, 33]`.
+| Formato de pesos | GGUF (BF16) |
 
 ## Arquitectura y entrenamiento
 
-DSpark es un modelo borrador especializado para decodificación especulativa. Consta de 5 capas con atención de ventana deslizante (SWA) de tamaño 512 y un hidden size de 2560, dimensionado para alinearse con las representaciones internas de Spark-X2.6-4B. En cada pasada, el borrador genera hasta 7 tokens condicionados tanto por los tokens ya aceptados como por los estados ocultos del modelo objetivo extraídos de las capas `[2, 10, 18, 25, 33]`; el objetivo verifica esos tokens en paralelo en un único pase, aceptando los que coincidan con su propia distribución. Esto reduce los pasos secuenciales del modelo grande de 7+1 a 1 por ciclo de borrado-verificación.
+El borrador DSpark es un transformer de 5 capas con atención de ventana deslizante de 512 tokens y dimensión oculta de 2560. No procesa el prompt desde cero: toma los estados ocultos de las capas 2, 10, 18, 25 y 33 del modelo objetivo Spark-X2.6-4B y genera hasta 7 tokens candidatos por pasada de borrador. El modelo objetivo verifica esos candidatos en paralelo, de modo que una pasada de verificación puede aceptar varios tokens a la vez y reducir el número de pasos secuenciales.
 
-No se ha publicado informacion sobre el proceso de entrenamiento del borrador (numero de tokens, composicion del dataset, destilacion desde el modelo objetivo, uso de RLHF/DPO). La cita del proyecto indica que la serie Spark-X2.6 (4B y 1.7B) procede del SparkLLM Team y se orienta a agentes on-device para tareas reales, pero los detalles de entrenamiento del modelo base tampoco estan disponibles en la informacion proporcionada.
+La model card no detalla el dataset de entrenamiento, el número de tokens vistos, ni si hubo fases de RLHF o DPO para el borrador. Sí especifica el mecanismo de muestreo: el borrador puede operar en modo probabilístico o greedy (argmax), y las evaluaciones cubren ambos. La innovación técnica central es el esquema de decodificación especulativa con longitud de borrador 7 y verificación paralela, integrado en una bifurcación propia de llama.cpp (rama `master`, commit `22c0ae1871b60123c5afc008a78fe9c6fffa2858`) con la opción `--spec-type draft-dspark`; la integración en el llama.cpp upstream está en curso según el autor.
 
 ## Capacidades
 
-- No genera texto de forma autonoma: su unica funcion es proponer tokens para decodificacion especulativa del modelo Spark-X2.6-4B.
-- Propone hasta 7 tokens por pasada de borrado, con decodificacion del borrador en modo greedy (argmax) o probabilistico.
-- Aprovecha hidden states del modelo objetivo (capas 2, 10, 18, 25 y 33) para mejorar la tasa de aceptacion.
-- Compatible con los distintos modos de razonamiento del modelo objetivo (High thinking, Low thinking, No thinking), con longitudes medias de aceptacion de 3,0 a 5,2 tokens segun tarea y configuracion.
-- Pensado para ejecutarse con llama.cpp (fork de XHToken) mediante un servidor con API compatible con OpenAI.
-- Idiomas de trabajo: ingles y chino.
-
-Las capacidades finales del sistema (razonamiento, codigo, tool calling, agentes) dependen del modelo objetivo Spark-X2.6-4B, no del borrador; no se ha publicado informacion detallada sobre tool calling ni capacidades multimodales en la ficha disponible.
+- Aceleración de inferencia mediante decodificación especulativa: propone hasta 7 tokens por pasada que el modelo objetivo verifica en paralelo.
+- Compatibilidad con objetivos en BF16 y cuantizados: funciona tanto con pesos BF16 como con GGUF cuantizados del modelo objetivo.
+- Modos de muestreo configurables: borrador probabilístico o greedy (argmax).
+- Integración con API compatible con OpenAI a través de `llama-server` (endpoint `/v1/chat/completions`).
+- Soporte de los modos de pensamiento del modelo objetivo (High / Low / No thinking) en las evaluaciones de aceptación.
+- Idiomas: inglés y chino, heredados del modelo objetivo.
+- No es un modelo generativo autónomo: no debe usarse sin el modelo objetivo Spark-X2.6-4B.
 
 ## Casos de uso
 
-- **Inferencia on-device en GPU de consumo**: al pair con Spark-X2.6-4B cuantizado (Q4_K_M) en una RTX 4090, el throughput pasa de 226 a unos 447 tok/s de media, lo que hace viable servir agentes locales con latencia interactiva sin hardware de datacenter.
-- **Agentes en portátiles Apple Silicon**: en un M5 Pro con objetivo INT4, la aceleracion media es de 1,62× (71 a 115 tok/s), util para asistentes locales que generan respuestas largas de razonamiento.
-- **Razonamiento matematico con salidas largas**: las mayores aceleraciones se dan en MATH500 (2,33× en Q4_K_M) y GSM8K (2,35×), tareas donde los modos thinking producen cadenas largas y la decodificacion especulativa amortiza mejor su coste.
-- **Generacion de codigo asistida**: en HumanEval y MBPP se obtienen aceleraciones de 1,72× y 1,85× respectivamente con objetivo cuantizado, adecuado para completado de codigo en editores locales.
-- **Servidores locales con API OpenAI-compatible**: el despliegue con llama-server del fork de XHToken permite integrar el par objetivo+borrador en aplicaciones existentes sin cambiar el cliente, solo la configuracion del servidor.
-- **Reduccion de coste energetico en inferencia batch local**: al disminuir los pasos secuenciales del modelo objetivo, se reduce el tiempo de GPU por token generado, util en despliegues con varias instancias concurrentes en una sola tarjeta.
-- **Evaluacion de tecnicas de decodificacion especulativa**: al publicar longitudes medias de aceptacion por dataset y modo, sirve como banco de pruebas reproducible para investigacion en speculative decoding.
+- Despliegue de agentes en dispositivo: emparejado con Spark-X2.6-4B cuantizado en un portátil con Apple M5 Pro, el borrador eleva el throughput de 31 a 77 tok/s de media (2,50×), lo que hace viables agentes multi-paso en local.
+- Servicio de chat de baja latencia en GPU de consumo: en una RTX 4090 con objetivo Q4_K_M, el throughput pasa de 226 a 447 tok/s de media (1,98×), adecuado para atender múltiples sesiones conversacionales con latencia reducida.
+- Generación de código interactiva: en HumanEval y MBPP el borrador mantiene aceleraciones de 1,56× a 2,41×, útil en asistentes de programación que requieren respuestas rápidas en el editor.
+- Razonamiento matemático en producción: en MATH500 se alcanza la mayor aceleración medida (2,94× en M5 Pro BF16, 2,89× efectiva en RTX 4090 BF16), relevante para pipelines de resolución de problemas con cadenas de razonamiento largas.
+- Reducción de coste de servido: al disminuir los pasos secuenciales del modelo objetivo, se reduce el tiempo de GPU por petición en despliegues con `llama-server` y API compatible con OpenAI, lo que abarata el coste por token generado.
+- Evaluación comparativa de técnicas de decodificación especulativa: sirve como referencia reproducible para medir longitud media de aceptación en distintos modos de pensamiento (High, Low, No thinking) y temperaturas (T=0, T=1).
 
 ## Benchmarks y rendimiento
 
-El autor no publica MMLU, HumanEval ni otros benchmarks de calidad del modelo (que, al ser un borrador, no altera la calidad del objetivo). Los datos relevantes son la longitud media de aceptacion y el throughput:
-
-**Longitud media de aceptacion** (draft length 7, maximo 8 contando el token extra del objetivo):
+Longitud media de aceptación con longitud de borrador 7 y salida máxima de 4096 tokens (incluye un token adicional del objetivo, máximo 8):
 
 | Dataset | T=1, High, Prob. | T=1, Low, Prob. | T=1, No thinking, Prob. | T=0, High, Greedy |
 |---|---:|---:|---:|---:|
@@ -66,7 +60,7 @@ El autor no publica MMLU, HumanEval ni otros benchmarks de calidad del modelo (q
 | Arena-Hard-v2 | 3,2172 | 3,1772 | 3,0499 | 4,1601 |
 | **Media** | **4,0236** | **4,0676** | **4,4969** | **4,5522** |
 
-**Throughput con y sin DSpark** (objetivo BF16 en RTX 4090 y M5 Pro; objetivo Q4_K_M en RTX 4090 e INT4 en M5 Pro):
+Throughput con y sin DSpark (llama.cpp en RTX 4090; MLX en Apple M5 Pro):
 
 | Dataset | BF16 · RTX 4090 | BF16 · M5 Pro | Q4_K_M · RTX 4090 | INT4 · M5 Pro |
 |---|:---:|:---:|:---:|:---:|
@@ -78,44 +72,44 @@ El autor no publica MMLU, HumanEval ni otros benchmarks de calidad del modelo (q
 | Arena-Hard-v2 | 1,70× (94 → 160 tok/s) | 2,00× (31 → 61 tok/s) | 1,62× (225 → 365 tok/s) | 1,30× (71 → 92 tok/s) |
 | **Media** | **2,14× (95 → 203 tok/s)** | **2,50× (31 → 77 tok/s)** | **1,98× (226 → 447 tok/s)** | **1,62× (71 → 115 tok/s)** |
 
+No se han publicado resultados de benchmarks de calidad del modelo objetivo (MMLU, GSM8K, HumanEval) en la información disponible; los datos anteriores miden aceptación y throughput del esquema especulativo, no la calidad de las respuestas.
+
 ## Requisitos de hardware
 
-- El borrador pesa unos 3,2 GB en BF16 (GGUF); requiere VRAM adicional sobre la del modelo objetivo, ya que ambos se cargan simultaneamente (`-ngl 999 -ngld 999` descarga ambos por completo a GPU).
-- Con el objetivo Spark-X2.6-4B en Q4_K_M (~2,5-3 GB) mas el borrador BF16 (~3,2 GB) y cache KV en f16, el conjunto cabe con holgura en GPUs de 12-16 GB; el autor valida en RTX 4090 (24 GB) y en Apple M5 Pro (memoria unificada, via MLX para el objetivo).
-- GPUs recomendadas: NVIDIA RTX 4090 (datos publicados), y en general cualquier GPU CUDA con 16 GB o mas. En Apple Silicon, M5 Pro con MLX.
-- Despliegue: exclusivamente mediante el fork de XHToken de llama.cpp (rama `master`, commit `22c0ae1871b60123c5afc008a78fe9c6fffa2858`), compilado con `GGML_CUDA=ON` y ejecutando `llama-server` con `--spec-type draft-dspark`. La integracion en el llama.cpp oficial esta en progreso, por lo que de momento no funciona con llama.cpp upstream, vLLM, TGI ni Ollama.
-- Throughput medido: 365-532 tok/s en RTX 4090 con objetivo Q4_K_M, y 92-135 tok/s en M5 Pro con objetivo INT4, segun tarea.
-- La configuracion de ejemplo usa cache KV en f16 (`-ctk f16 -ctv f16` y equivalentes para el borrador), attention flash activada (`-fa on`) y contexto de 8192 tokens.
+- VRAM del borrador: 624M parámetros en BF16 equivalen a aproximadamente 1,25 GB de pesos, más caché KV para 5 capas con ventana de 512 y contexto de servidor de 8192.
+- VRAM total: debe sumarse la del modelo objetivo Spark-X2.6-4B (BF16 o cuantizado Q4_K_M / INT4), no incluida en este repositorio.
+- GPU validadas: NVIDIA RTX 4090 (CUDA, llama.cpp) y Apple M5 Pro (MLX). No hay datos publicados para A100, H100 ni otras GPU.
+- GPU de consumo: sí, cabe en RTX 4090 junto al objetivo cuantizado; el borrador por sí solo ocupa poco más de 1 GB en BF16.
+- Opciones de despliegue: `llama-server` de la bifurcación XHToken/llama.cpp con `--spec-type draft-dspark`, `--spec-draft-sampling greedy`, `--spec-draft-n-max 7`; en M5 Pro se empleó MLX. La integración en llama.cpp upstream está en progreso.
+- Throughput medido: 160–239 tok/s en RTX 4090 con objetivo BF16 y 365–532 tok/s con Q4_K_M; 61–90 tok/s en M5 Pro con BF16 y 92–135 tok/s con INT4.
+- Configuración de referencia del servidor: `-ngl 999 -ngld 999`, caché KV en f16 (objetivo y borrador), `-fa on`, `-c 8192`, `-b 2048 -ub 512`.
 
 ## Comparativa con modelos similares
 
-Existen pocos draft models publicados como repositorios independientes comparables; la comparacion mas relevante es con otros pares objetivo+borrador de decodificacion especulativa:
+| Modelo | Tipo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Spark-X2.6-4B-DSpark | Borrador especulativo (SWA, 5 capas) | 624M | ventana SWA 512; servidor a 8192 | Acelerar Spark-X2.6-4B | Apache 2.0 | GGUF en HF; llama.cpp bifurcado |
+| Spark-X2.6-4B | Modelo objetivo | no disponible en esta ficha | no disponible | Generación y agentes | Apache 2.0 | GGUF en HF |
+| Borradores EAGLE / Medusa | Cabezas o borradores especulativos | variable | depende del objetivo | Aceleración genérica | variable | integrados en vLLM, TensorRT-LLM, etc. |
+| Borradores nativos de llama.cpp | Borrador especulativo genérico | variable | depende del objetivo | Aceleración en llama.cpp | MIT (llama.cpp) | upstream |
 
-| Modelo | Rol | Parametros borrador | Tecnica | Formato | Licencia |
-|---|---|---|---|---|---|
-| Spark-X2.6-4B-DSpark | Draft de Spark-X2.6-4B | 624M | Speculative decoding con hidden states del objetivo (5 capas SWA) | GGUF | Apache 2.0 |
-| Medusa (vicuna) | Draft mediante cabezas adicionales sobre el propio objetivo | no disponible (cabezas integradas) | Multi-token prediction | safetensors | Apache 2.0 |
-| EAGLE / EAGLE-2 | Draft ligero sobre features del objetivo | ~1,0-1,3M por cabeza (arbol de borrado) | Speculative decoding con feature maps | safetensors | Apache 2.0 |
-
-Notas: Medusa y EAGLE estan pensados para servir en vLLM/servidores de datacenter y sobre modelos objetivo distintos; DSpark destaca por su integracion en llama.cpp y su enfoque on-device en consumer GPU y Apple Silicon. No se han publicado comparaciones directas de aceleracion entre estos sistemas en la informacion disponible, por lo que no pueden indicarse numeros comparativos sin inventar datos.
+La comparación cuantitativa con alternativas no está disponible en la información proporcionada: la model card solo compara DSpark contra el mismo objetivo sin decodificación especulativa, no contra otros borradores.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional: no produce salidas utiles por si solo; debe emparejarse siempre con Spark-X2.6-4B-GGUF como modelo objetivo.
-- Requiere un fork especifico de llama.cpp (XHToken/llama.cpp); la integracion en upstream esta en progreso, lo que limita su uso con despliegues estandar (vLLM, TGI, Ollama no compatibles de momento).
-- La ganancia de aceleracion depende fuertemente de la tarea y del modo: cae hasta 1,30× en Arena-Hard-v2 con objetivo INT4 en M5 Pro, y es menor en modos High thinking con muestreo probabilistico que en modo greedy.
-- La ventana SWA de 512 tokens del borrador puede limitar la tasa de aceptacion en contextos muy largos o tareas con dependencias de largo alcance; el autor no publica datos de aceptacion para contextos extensos.
-- Idiomas limitados a ingles y chino; el rendimiento del borrador en otros idiomas no esta evaluado.
-- Sesgos y riesgo de alucinacion: al tratarse de decodificacion especulativa con verificacion del objetivo, la distribucion de salida no se altera, por lo que los sesgos y alucinaciones son los heredados de Spark-X2.6-4B; no se ha publicado informacion sobre sesgos especificos de esa serie.
-- Datos de entrenamiento del borrador no documentados, lo que dificulta auditar su comportamiento en dominios fuera de los datasets de evaluacion.
-- Proyecto muy reciente (publicado el 30 de octubre de 2026) con 0 descargas registradas en el momento de la ficha; la madurez y el soporte comunitario son limitados.
-- Licencia Apache 2.0: sin restricciones para uso comercial, pero sin garantias; conviene revisar los terminos del modelo objetivo Spark-X2.6-4B, que comparte la misma licencia segun la ficha.
+- No es un modelo autónomo: requiere el modelo objetivo Spark-X2.6-4B; usarlo solo produce tokens de borrador sin verificación.
+- Dependencia de una bifurcación: la integración requiere XHToken/llama.cpp en la rama `master` (commit `22c0ae1871b60123c5afc008a78fe9c6fffa2858`); la compatibilidad con llama.cpp upstream no está garantizada hasta que se complete la integración.
+- Aceleración variable: el rango medido va de 1,30× (INT4 en M5 Pro, Arena-Hard-v2) a 2,94× (BF16 en M5 Pro, MATH500); en tareas conversacionales abiertas (Arena-Hard-v2) el beneficio es el más bajo.
+- Longitud de aceptación dependiente del modo: cae a 3,05 en Arena-Hard-v2 con modo "No thinking" y sube a 5,18 en MATH500, por lo que la ganancia no es uniforme entre dominios.
+- Idiomas limitados a inglés y chino; no hay evidencia de rendimiento en castellano.
+- Sin datos publicados sobre sesgos, tasa de alucinación del objetivo ni composición del dataset de entrenamiento del borrador.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no documenta garantías ni soporte; el modelo objetivo tiene su propia model card que debe revisarse por separado.
+- El contexto del borrador está acotado por la ventana deslizante de 512 tokens; el contexto efectivo lo determina el modelo objetivo y la configuración del servidor.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-4B-DSpark-GGUF
-- Modelo objetivo (GGUF): https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF
-- Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
-- Fork de llama.cpp con soporte DSpark: https://github.com/XHToken/llama.cpp
-- Licencia Apache 2.0: https://huggingface.co/XHToken/Spark-X2.6-4B-DSpark-GGUF/blob/main/LICENSE
-- Paper o blog de la serie Spark-X2.6: no disponible (solo referencia BibTeX en la model card, sin URL)
+- Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-4B-DSpark-GGUF
+- Modelo objetivo: https://huggingface.co/XHToken/Spark-X2.6-4B
+- Modelo objetivo en GGUF: https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF
+- Bifurcación de llama.cpp: https://github.com/XHToken/llama.cpp
+- Licencia: https://huggingface.co/XHToken/Spark-X2.6-4B-DSpark-GGUF/blob/main/LICENSE

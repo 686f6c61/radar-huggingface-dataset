@@ -2,109 +2,117 @@
 
 ## Resumen
 
-Qwen3.5-4B-Amadeus es una versión "abliterated" (descensurada) de Qwen3.5-4B, el modelo multimodal compacto de Qwen, publicada por el usuario Jitheswar en Hugging Face. El autor no ha reentrenado el modelo: ha localizado la llamada "dirección de rechazo" (refusal direction) dentro de los pesos originales y la ha eliminado mediante ablación direccional, un proceso conocido como *abliteration*, optimizado automáticamente durante 1000 rondas para maximizar la eliminación de rechazos minimizando la perturbación de los pesos. El resultado es un modelo que apenas rechaza peticiones (1 de 304 prompts de prueba frente a 231 del original) conservando prácticamente intactas sus capacidades de razonamiento, matemáticas y visión.
+Qwen3.5-4B-Amadeus es una variante "abliterated" (sin rechazos) del modelo multimodal Qwen3.5-4B de Alibaba Qwen, publicada por el usuario Jitheswar en Hugging Face. El modelo conserva la arquitectura y los pesos del original (4.539.265.536 parametros reales segun safetensors, es decir, unos 4,54 mil millones) pero se le ha eliminado la "direccion de rechazo" mediante ablacion direccional sobre los pesos, sin reentrenamiento ni datos nuevos. El resultado es un modelo que responde a practicamente cualquier peticion (1 rechazo de 304 en la bateria del autor, frente a 231 del original) manteniendo casi intactas sus capacidades de razonamiento, matematicas y vision.
 
-El modelo base, Qwen3.5-4B, es un transformer multimodal (image-text-to-text) con unas 4.539 millones de parámetros, soporte de entrada de imágenes y texto, y modo de razonamiento (*thinking mode*). Amadeus conserva todas estas características: plantilla de chat original, cabeza de predicción multi-token (MTP) incluida en los GGUF y capacidad de visión mediante un archivo mmproj adicional.
+El modelo es relevante porque demuestra que la abliteracion moderna, con optimizacion automatica de 1000 rondas para minimizar el dano colateral, permite eliminar los comportamientos de rechazo con una divergencia KL de solo 0,0128 respecto al original en wikitext-2. Ademas, mantiene el pipeline image-text-to-text, el modo thinking y el head de prediccion multi-token (MTP) de Qwen3.5, y se distribuye tanto en safetensors BF16 como en GGUF (BF16, Q6_K, Q4_K_M) con matriz de importancia calculada sobre el propio modelo.
 
-Su relevancia actual radica en la demanda de modelos pequeños sin filtros para investigación en alineamiento, red-teaming y casos de uso creativos donde los rechazos del modelo original resultan excesivamente conservadores. Se publica bajo licencia Apache 2.0, con pesos en safetensors (BF16) y GGUF en BF16, Q6_K y Q4_K_M cuantizados con matriz de importancia (imatrix).
+Se trata de un modelo pequeno (4B), con contexto y arquitectura heredados de Qwen3.5-4B (los detalles exactos de longitud de contexto no se detallan en la informacion disponible), licencia Apache 2.0 y soporte para ingles, chino y otros idiomas. Su interes practico esta en escenarios donde se necesita un modelo ligero, con vision y modo razonamiento, que no bloquee peticiones legitimas por falsos positivos de seguridad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) basado en Qwen3.5, con cabeza de predicción multi-token (MTP) |
-| Parametros totales | 4.539.265.536 |
-| Parametros activos | no disponible (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | no disponible (el ejemplo de llama.cpp sugiere 16384 tokens) |
-| Tipos de cuantizacion | BF16, Q6_K, Q4_K_M (GGUF con imatrix); safetensors en BF16 |
-| Idiomas soportados | inglés, chino, multilingüe |
+| Arquitectura | Transformer multimodal (image-text-to-text), base Qwen3.5-4B, con head de prediccion multi-token (MTP) |
+| Parametros totales | 4.539.265.536 (4,54 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Qwen3.5-4B; no se especifica en la informacion) |
+| Tipos de cuantizacion | BF16 (GGUF y safetensors), Q6_K (con imatrix), Q4_K_M (con imatrix), proyector vision F16 (mmproj) |
+| Idiomas soportados | en, zh, multilingual |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) y GGUF (BF16, Q6_K, Q4_K_M, mmproj F16 para visión) |
+| Formato de pesos | safetensors (BF16) y GGUF (BF16, Q6_K, Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3.5-4B: un transformer multimodal de unos 4,54 mil millones de parámetros capaz de procesar imágenes y texto (pipeline image-text-to-text), con modo de razonamiento (*thinking*) y cabeza de predicción multi-token para acelerar la generación. No se ha publicado información detallada sobre el número de capas, dimensiones ocultas o datos de preentrenamiento del modelo base en la información disponible.
+Amadeus no es un fine-tune: no se ha entrenado con datos nuevos. Parte de los pesos de Qwen/Qwen3.5-4B y aplica ablacion direccional (abliteration) para localizar y sustraer de los pesos la direccion asociada al comportamiento de rechazo. El proceso incluyo 1000 rondas de optimizacion automatica cuyo objetivo era maximizar la eliminacion de rechazos minimizando el cambio respecto al modelo original; la divergencia KL resultante frente al original en wikitext-2 es de 0,0128, lo que indica una alteracion muy contenida de la distribucion de salida.
 
-En cuanto al "entrenamiento", Amadeus no recibió ninguno: no hubo fine-tuning ni datos nuevos. La modificación es puramente ponderal: se identificó la dirección en el espacio de activaciones responsable de los rechazos y se proyectó fuera de los pesos (directional ablation), usando 1000 rondas de optimización automática. El método se apoya en la literatura de abliteration (se cita el arXiv 2406.11717, el artículo de abliteration de Arditi et al. sobre refusal directions). Las etiquetas del repo mencionan los datasets mlabonne/harmless_alpaca y mlabonne/harmful_behaviors, presumiblemente usados para evaluar la tasa de rechazo, no para entrenar. La divergencia KL respecto al original sobre wikitext-2 es de 0,0128, lo que confirma una perturbación mínima.
+La arquitectura subyacente es la de Qwen3.5-4B: un transformer multimodal capaz de procesar imagen y texto, con modo thinking y un head de prediccion multi-token (MTP) que se conserva en todas las versiones GGUF. El autor indica que el template de chat, el conocimiento, el razonamiento, la vision y el modo thinking son identicos a los del modelo base. No se detalla en la informacion proporcionada la composicion del dataset de entrenamiento original de Qwen3.5-4B ni si hubo RLHF/DPO en su construccion.
 
 ## Capacidades
 
-- Generación de texto conversacional con la plantilla de chat original de Qwen3.5, sin rechazos (1/304 frente a 231/304 del modelo base en el test del autor con el juez Minos).
-- Razonamiento con modo *thinking* activable o desactivable (en llama.cpp mediante `--reasoning off`).
-- Comprensión de imágenes: entrada de imagen-texto a texto, requiriendo el archivo mmproj en formato GGUF para visión.
-- Matemáticas: 91,1 % en GSM8K (8-shot CoT), esencialmente igualado con el original (91,4 %).
-- Razonamiento de sentido común y lenguaje: HellaSwag 71,6 %, WinoGrande 70,1 %, ARC-Challenge 46,8 %.
-- Seguimiento de instrucciones: 78,19 % en IFEval (prompt-level strict).
-- Multilingüe: inglés, chino y soporte multilingüe heredado del modelo base.
-- Disponibilidad en múltiples formatos (safetensors y GGUF con tres cuantizaciones) y compatibilidad con Transformers, vLLM, SGLang, llama.cpp, Ollama y LM Studio.
-- No hay información disponible sobre soporte de tool calling / function calling.
+- Generacion de texto conversacional multi-turno.
+- Razonamiento con modo thinking (cadena de pensamiento) activable y desactivable.
+- Matematicas: 91,13% exact match en GSM8K con 8-shot CoT flexible.
+- Vision: entrada de imagen y texto (pipeline image-text-to-text), con proyector vision F16 distribuido aparte para GGUF.
+- Seguimiento de instrucciones: 78,19% prompt-level strict accuracy en IFEval.
+- Capacidades multilingues en ingles, chino y otros idiomas.
+- Prediccion multi-token (MTP) heredada de Qwen3.5.
+- Ausencia practicamente total de rechazos: 1/304 en la bateria del autor y 0/100 en JailbreakBench benign.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada (se heredaria del base, pero no se confirma).
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita en la informacion.
 
 ## Casos de uso
 
-- Investigación en alineamiento y seguridad: al eliminar la dirección de rechazo, es un sujeto de estudio ideal para analizar cómo los modelos codifican conductas de seguridad en los pesos y para evaluar métodos de mitigación.
-- Red-teaming y evaluación de jailbreaks: permite probar ataques contra un modelo que no se bloquea por política, aislando así las defensas del sistema (filtros externos) de los reflejos internos del modelo.
-- Asistentes locales sin filtros para escritura creativa: con la cuantización Q6_K (3,6 GB) cabe en una RTX 3060 de 6 GB, lo que permite narrativa de ficción con contenido maduro sin rechazos espurios, aprovechando los 16K de contexto estimados.
-- Chatbot multimodal en local: con el mmproj F16 se puede construir una aplicación que describa o analice imágenes en local, útil para entornos sin conexión a la nube por privacidad.
-- Resolución de problemas matemáticos en dispositivo: el 91,1 % en GSM8K lo hace apto para asistentes de cálculo y razonamiento paso a paso (CoT) en portátiles con GPU modesta o incluso CPU con Q4_K_M (2,8 GB).
-- Prototipado de agentes con Ollama o llama-server: el endpoint de llama.cpp u Ollama permite integrarlo rápidamente en pipelines de agentes locales para tareas multi-turno, aunque sin tool calling confirmado habría que implementar el parsing de acciones manualmente.
-- Estudio comparativo de abliteration: la divergencia KL publicada (0,0128) y los benchmarks pareados facilitan investigar el coste real de la abliteration sobre capacidades generales.
+- Investigacion sobre seguridad y alineacion: permite estudiar como la ablacion direccional afecta al comportamiento de rechazo con un coste computacional bajo (4B) y una divergencia KL medida, util para comparar tecnicas de abliteracion en laboratorio.
+- Generacion de codigo y scripting en local: con 4 GB de VRAM en Q4_K_M o 6 GB en Q6_K, se puede desplegar en una RTX 3050/3060/4060 para autocompletar y explicar codigo sin dependencia de la nube; el modo thinking preciso (temperature 0,6) esta pensado para este escenario.
+- Asistente conversacional sin friccion: al no rechazar peticiones "edgy pero inofensivas" (0/100 en JailbreakBench benign), reduce los falsos positivos en chat de entretenimiento, escritura creativa o role-play, donde los filtros excesivos degradan la experiencia.
+- Procesamiento de documentos con imagen: al conservar la vision, se puede usar para extraer y resumir informacion de capturas, diagramas o formularios, anadiendo el mmproj F16 (0,7 GB) al GGUF.
+- Razonamiento matematico asistido: el 91,13% en GSM8K lo hace adecuado para tutoria de problemas aritmeticos y verificacion de calculos paso a paso en entornos educativos o de analisis.
+- Prototipado rapido en CPU: el GGUF Q4_K_M (2,8 GB) permite ejecutar el modelo en portatiles sin GPU mediante llama.cpp u Ollama, util para demos y pruebas de integracion antes de escalar a GPU.
+- Evaluacion comparativa de cuantizaciones: al ofrecer BF16, Q6_K y Q4_K_M con imatrix del propio modelo, sirve para medir la perdida de calidad por cuantizacion en tareas de vision y thinking.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (evaluación propia con llama.cpp + lm-evaluation-harness, no verificados):
+Resultados declarados por el autor (evaluacion propia con llama.cpp + lm-evaluation-harness; no verificados de forma independiente):
 
-| Benchmark | Métrica | Qwen3.5-4B-Amadeus | Qwen3.5-4B (referencia del autor) |
+| Benchmark | Metrica | Qwen3.5-4B-Amadeus | Qwen3.5-4B (referencia del autor) |
 |---|---|---|---|
-| GSM8K (test, 8-shot CoT) | exact match | 91,13 % | 91,4 % |
-| IFEval | prompt-level strict acc | 78,19 % | no disponible |
-| HellaSwag (validación, 0-shot) | acc_norm | 71,64 % | 71,9 % |
-| WinoGrande (debiased, 0-shot) | accuracy | 70,09 % | 68,6 % |
-| ARC-Challenge (validación, 0-shot cloze) | accuracy | 46,82 % | 46,5 % |
-| MMLU (test, 0-shot cloze) | accuracy | 38,42 % | no disponible |
-| TruthfulQA (MC, cloze) | accuracy | 25,95 % | no disponible |
-| Tasa de rechazo (304 prompts, juez Minos) | rechazos | 1/304 | 231/304 |
-| JailbreakBench benign | rechazos | 0/100 | 31/100 |
-| Divergencia KL (wikitext-2) | KL | 0,0128 | 0 |
+| GSM8K (test) | exact match, 8-shot CoT flexible | 91,13 | 91,4 |
+| IFEval (train) | prompt-level strict acc | 78,19 | no disponible |
+| HellaSwag (validation) | acc_norm, 0-shot | 71,64 | 71,9 |
+| WinoGrande (validation) | accuracy, 0-shot | 70,09 | 68,6 |
+| ARC-Challenge (validation) | accuracy, 0-shot, cloze | 46,82 | 46,5 |
+| MMLU (test) | accuracy, 0-shot, cloze | 38,42 | no disponible |
+| TruthfulQA (validation) | MC accuracy, cloze | 25,95 | no disponible |
 
-Los resultados indican que la abliteration preserva las capacidades del modelo base dentro del margen de ruido de evaluación.
+Datos adicionales de la model card:
+
+| Metrica | Qwen3.5-4B | Amadeus |
+|---|---|---|
+| Rechazos en 304 prompts (harmful + edgy, juez Minos) | 231/304 | 1/304 |
+| Rechazos en JailbreakBench benign | 31/100 | 0/100 |
+| Divergencia KL respecto al original (wikitext-2) | 0 | 0,0128 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según la propia model card):
-  - Q4_K_M (2,8 GB): GPU de 4 GB o solo CPU.
-  - Q6_K (3,6 GB): GPU de 6 GB o más (recomendada, casi sin pérdida).
-  - BF16 GGUF (8,7 GB) o safetensors BF16 (9,3 GB): GPU de 12 GB o más para precisión completa.
-  - Visión con GGUF: añadir mmproj F16 (0,7 GB) a cualquiera de las anteriores.
-- GPU recomendadas: RTX 3050/3060 o 4060 para Q6_K; RTX 4070/4080 o superior para BF16; no hay datos publicados sobre A100/H100, aunque cualquier GPU de datacenter lo ejecuta sin problema.
-- Cabe en GPU de consumo: sí, es uno de sus puntos fuertes; Q6_K funciona en una RTX 3060 de 6 GB y Q4_K_M incluso en portátiles con 4 GB o en CPU.
-- Opciones de despliegue: llama.cpp (llama-server, con `-ngl 99 -c 16384`), Ollama (`ollama run hf.co/Jitheswar/Qwen3.5-4B-Amadeus:Q6_K`), LM Studio, Transformers (`AutoModelForImageTextToText`), vLLM y SGLang con los safetensors.
-- Latencia y throughput: no disponible; la cabeza MTP incluida en los GGUF sugiere aceleración de generación, pero no hay cifras publicadas.
+- VRAM estimada para inferencia:
+  - Q4_K_M: 2,8 GB de pesos; cabe en GPUs de 4 GB.
+  - Q6_K: 3,6 GB; recomendado para GPUs de 6 GB o mas.
+  - BF16 GGUF: 8,7 GB; requiere 12 GB o mas para margen de contexto.
+  - Safetensors BF16: 9,3 GB; para Transformers, vLLM o SGLang.
+  - Vision con GGUF: anadir 0,7 GB del mmproj F16.
+- GPU recomendadas: RTX 3050/3060/4060 (6 GB) para Q6_K; RTX 4090 y A100/H100 para BF16 con contexto largo y vision.
+- Cabe en GPU de consumo: si, desde una RTX 3050 de 6 GB con Q6_K, o GPUs de 4 GB con Q4_K_M.
+- Opciones de despliegue: llama.cpp (GGUF), Ollama, Transformers, vLLM, SGLang. El autor indica compatibilidad con endpoints.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Nota de muestreo: no usar decodificacion greedy (temperature 0) con thinking activado, ya que puede entrar en bucles. Ajustes recomendados: thinking general (temp 1,0, top_p 0,95, top_k 20, presence_penalty 1,5); thinking codigo preciso (temp 0,6, top_p 0,95, top_k 20, presence_penalty 0); sin thinking (temp 0,7, top_p 0,8, top_k 20, presence_penalty 1,5).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Visión | Thinking | Cuantizaciones | Licencia | Notas |
+| Modelo | Parametros | Contexto | Vision | Modo thinking | Licencia | Rechazos |
 |---|---|---|---|---|---|---|
-| Qwen3.5-4B-Amadeus | 4,54 B | Sí (mmproj) | Sí | BF16, Q6_K, Q4_K_M | Apache 2.0 | Abliterated, tasa de rechazo 1/304 |
-| Qwen/Qwen3.5-4B (base) | 4,54 B | Sí | Sí | Oficiales de Qwen | Apache 2.0 (según license_link) | Modelo original, 231/304 rechazos |
-| Otros modelos abliterated de ~4 B (p. ej. variantes abliterated de Qwen3-4B de la comunidad) | ~4 B | Variable | Variable | GGUF habituales | Variable | Alternativas si se busca menor tamaño o base anterior |
+| Qwen3.5-4B-Amadeus | 4,54 B | no disponible | Si | Si | Apache 2.0 | 1/304 |
+| Qwen3.5-4B (base) | 4,54 B | no disponible | Si | Si | Apache 2.0 | 231/304 |
+| Alternativas abliterated de 4B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No hay datos de benchmarks comparativos publicados frente a otras variantes abliterated; la comparación cuantitativa disponible es exclusivamente contra su modelo base.
+La comparacion mas directa es con el modelo base Qwen3.5-4B, del que Amadeus hereda arquitectura, vision, thinking y MTP, diferenciandose unicamente en la eliminacion de rechazos y en una variacion minima en benchmarks (diferencias de decimas en GSM8K, HellaSwag y ARC-C; ligera mejora en WinoGrande). No se dispone de datos de otros modelos abliterated comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo descensurado, generará contenido dañino, ilegal o ofensivo si se le solicita: su uso es responsabilidad del desplegador y puede ser inadecuado o ilegal en producción orientada a usuarios finales.
-- Los benchmarks son autoevaluaciones del autor con lm-evaluation-harness sobre GGUF en llama.cpp, no verificados por terceros; el MMLU de 38,42 % (0-shot cloze) es notablemente bajo y puede reflejar la metodología de evaluación más que la capacidad real.
-- TruthfulQA en 25,95 % sugiere alta susceptibilidad a imitar concepciones erróneas comunes: riesgo de alucinación relevante, heredado del modelo base y posiblemente agravado al eliminar salvaguardas.
-- La abliteration puede degradar sutilmente comportamientos relacionados con seguridad y robustez más allá de lo medido por los benchmarks estándar; la KL de 0,0128 garantiza cercanía estadística, no equivalencia conductual completa.
-- Longitud de contexto no confirmada oficialmente; el ejemplo de llama.cpp usa 16384 tokens, pero no hay especificación del máximo real.
-- No hay información sobre tool calling, agentes ni sobre los datos de preentrenamiento del modelo base.
-- Licencia Apache 2.0: permite uso comercial, pero debe respetarse también la licencia del modelo base Qwen (el license_link apunta a la de Qwen/Qwen3.5-4B).
-- Proyecto comunitario con pocas descargas (811) y 3 likes en el momento de la ficha: madurez, mantenimiento y auditoría limitados.
+- Alucinacion: al ser un modelo de 4B, el riesgo de alucinacion es alto, especialmente en MMLU (38,42%) y TruthfulQA (25,95%), donde los resultados son bajos. No es fiable como fuente factual sin verificacion.
+- Sesgos: no se documentan sesgos especificos, pero al no haber reentrenamiento, hereda los del base Qwen3.5-4B. La eliminacion de rechazos puede amplificar respuestas sesgadas o estereotipadas que el original filtraba.
+- Seguridad: el modelo responde a practicamente cualquier peticion, incluidas las daninas. No debe desplegarse en produccion orientada a usuarios sin una capa externa de moderacion y filtrado.
+- Contexto e idioma: la longitud de contexto no se detalla en la informacion; el soporte multilingue se declara como en/zh/multilingual sin garantias de calidad en espanol.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias; la responsabilidad del uso recae en el desplegador.
+- Muestreo: con thinking activado y temperature 0 el modelo puede entrar en bucles infinitos; es obligatorio usar los parametros de muestreo recomendados.
+- Benchmarks no verificados: todos los resultados son de evaluacion propia del autor con llama.cpp + lm-evaluation-harness y no han sido validados de forma independiente.
+- Vision en GGUF: requiere descargar y cargar el mmproj F16 por separado; sin el, el modelo solo procesa texto.
 
 ## Enlaces
 
-- Modelo: https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus
+- Modelo en Hugging Face: https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
-- Paper citado (abliteration / refusal directions, arXiv 2406.11717): https://arxiv.org/abs/2406.11717
-- Sección de benchmarks completos de la model card: https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus#full-benchmark-results
+- Licencia del base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
+- Resultados completos de benchmarks: https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus#full-benchmark-results
+- Paper de referencia sobre abliteration (arxiv:2406.11717): https://arxiv.org/abs/2406.11717
+- Dataset harmless_alpaca: https://huggingface.co/datasets/mlabonne/harmless_alpaca
+- Dataset harmful_behaviors: https://huggingface.co/datasets/mlabonne/harmful_behaviors

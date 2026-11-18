@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/EviOmni-nq_train-7B-GGUF",
+  "slug": "mradermacher-eviomni-nq_train-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EviOmni-nq_train-7B-GGUF",
+  "created_at": "2025-08-30T06:10:39.000Z",
+  "updated_at": "2026-11-18T08:39:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:HIT-TMG/EviOmni-nq_train-7B",
+    "base_model:quantized:HIT-TMG/EviOmni-nq_train-7B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 289,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146892288,
+  "storage_human": "68.1 GB",
+  "context_length": 32768,
+  "base_model": "HIT-TMG/EviOmni-nq_train-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

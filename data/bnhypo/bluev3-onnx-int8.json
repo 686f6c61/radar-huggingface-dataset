@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "bnHypo/BlueV3-onnx-int8",
+  "slug": "bnhypo-bluev3-onnx-int8",
+  "author": "bnHypo",
+  "url": "https://huggingface.co/bnHypo/BlueV3-onnx-int8",
+  "created_at": "2026-11-18T10:55:54.000Z",
+  "updated_at": "2026-11-18T10:56:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "onnxruntime",
+    "int8",
+    "on-device",
+    "en",
+    "base_model:notmax123/BlueV3-onnx",
+    "base_model:quantized:notmax123/BlueV3-onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140530052,
+  "storage_human": "141 MB",
+  "context_length": null,
+  "base_model": "notmax123/BlueV3-onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

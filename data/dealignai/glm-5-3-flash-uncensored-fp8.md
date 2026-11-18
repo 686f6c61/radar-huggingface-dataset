@@ -2,103 +2,105 @@
 
 ## Resumen
 
-GLM-5.3-Flash-UNCENSORED-FP8 es una versión modificada del modelo GLM-5.3-Flash de Z.ai, publicada por el usuario dealignai bajo su marca "CRACK". Se trata de un modelo de lenguaje de 321 mil millones de parámetros en configuración MoE (mixture of experts) con solo 18 mil millones de parámetros activos por token, cuantizado en FP8 y con los guardarraíles de rechazo eliminados directamente en los pesos del modelo mediante una técnica de abliteration. El objetivo declarado es eliminar el comportamiento de sobre-rechazo del modelo base, especialmente en peticiones relacionadas con copyright y otros contenidos benignos pero marcados como sensibles.
+GLM-5.3-Flash-UNCENSORED-FP8 es una modificación de pesos del modelo zai-org/GLM-5.3-Flash, publicada por dealignai bajo su marca "CRACK". El modelo base es un transformer híbrido de tipo MoE (mezcla de expertos) con atención lineal KDA combinada con atención dispersa estilo DeepSeek, 320.000 millones de parámetros totales y 18.000 millones activos por token. Esta versión aplica una edición permanente en los tensores para eliminar el comportamiento de rechazo (refusals) del modelo original, manteniendo la cuantización FP8 nativa (block-wise e4m3) del checkpoint.
 
-El modelo mantiene las capacidades del GLM-5.3-Flash original: arquitectura híbrida con atención lineal KDA y atención sparse estilo DeepSeek, ventana de contexto de 1 millón de tokens, procesamiento multimodal con torre de visión GLM-4.1V y soporte de decodificación especulativa MTP (multi-token prediction). La cuantización FP8 permite ejecución nativa en GPUs Hopper (H100/H200) sin necesidad de kernels adicionales. Según la model card, la degradación de rendimiento respecto al modelo base es mínima (MMLU -0,48 puntos porcentuales) y la tasa de cumplimiento en HarmBench-320 es del 100%, lo que indica que los guardarraíles han sido eliminados por completo.
+La relevancia de esta ficha es doble: por un lado documenta un modelo de 320B con contexto de 1M de tokens, torre de visión y cabeza de predicción multi-token (MTP) con 75,9 % de aceptación; por otro, advierte de un conjunto de comportamientos de serving medidos por el autor que afectan a la integración en producción (resolución silenciosa de `reasoning_effort`, respuestas vacías por agotamiento de presupuesto en modo `max`, y un fallo de motor con parámetros de vídeo mal configurados).
 
-La relevancia de este modelo radica en que ofrece una alternativa "sin censura" a nivel de pesos, sin depender de jailbreaks por prompt ni de adaptadores externos, lo que lo hace interesante para investigación sobre seguridad de IA, generación de contenido creativo sin restricciones y análisis de comportamientos de rechazo en modelos grandes. No obstante, su naturaleza plantea riesgos éticos y legales que deben considerarse antes de su uso en producción.
+El modelo se distribuye en safetensors (505,4 GB de repositorio), con licencia MIT y etiquetado únicamente para inglés. Está pensado para despliegue en vLLM o SGLang con parser de razonamiento, y requiere hardware Hopper para aprovechar la velocidad nativa de FP8.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GLM-5.3-Flash (`glm5_next`), MoE hibrido con atencion lineal KDA y atencion sparse DeepSeek |
-| Parametros totales | 321.323.031.390 (~321B) |
+| Arquitectura | GLM-5.3-Flash (`glm5_next`): transformer híbrido MoE con atención lineal KDA y atención dispersa DeepSeek |
+| Parametros totales | 321.323.031.390 (320B) |
 | Parametros activos | 18B por token |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | FP8 (block-wise e4m3) |
-| Idiomas soportados | en (segun model card; el modelo base probablemente soporta mas, pero no se especifica) |
+| Tipos de cuantizacion | FP8 block-wise e4m3 (checkpoint publicado); no se documentan otras variantes en esta release |
+| Idiomas soportados | Inglés (`en`); no se documentan otros idiomas |
 | Licencia | MIT |
-| Formato de pesos | safetensors (FP8) |
+| Formato de pesos | safetensors (repo de 505,4 GB) |
+| Vision | Torre de visión GLM-4.1V, operativa, con plantilla de chat multimodal incluida |
+| MTP | Cabeza de predicción multi-token incluida y también modificada; aceptación del 75,9 % |
+| Modelo base | zai-org/GLM-5.3-Flash |
+| Descargas / likes | 11.344 / 187 |
+| Fecha de creación / actualización | 2026-08-26 / 2026-09-19 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5 de Z.ai. Su arquitectura combina atención lineal KDA (kernel-based linear attention) con atención sparse estilo DeepSeek, lo que permite manejar contextos de hasta 1 millón de tokens con coste computacional reducido. La configuración MoE activa solo 18 mil millones de parámetros de un total de 321 mil millones, lo que lo hace eficiente en inferencia. Incluye además una torre de visión basada en GLM-4.1V y un cabezal de decodificación especulativa MTP que acelera la generación.
+El modelo base emplea una arquitectura híbrida MoE: capas de atención lineal KDA combinadas con atención dispersa de tipo DeepSeek, 320B de parámetros totales y 18B activos por token. Incorpora además una torre de visión heredada de GLM-4.1V y una cabeza MTP (multi-token prediction) que actúa como draft head para decodificación especulativa, con una tasa de aceptación declarada del 75,9 %. El contexto alcanza 1M de tokens.
 
-La modificación realizada por dealignai consiste en una abliteration: la eliminación de los comportamientos de rechazo directamente en los pesos del modelo, sin fine-tuning, sin LoRA, sin adaptadores ni trucos de prompt. Según la model card, se trata de una edición permanente en los tensores que funciona con vLLM estándar. No se proporcionan datos sobre el dataset de entrenamiento del modelo base ni sobre el proceso exacto de abliteration. La cuantización FP8 es block-wise e4m3, diseñada para velocidad nativa en GPUs Hopper.
+Sobre el entrenamiento del modelo base no se proporciona información en la documentación disponible: no se detallan número de tokens, composición del dataset ni si hubo RLHF o DPO. Respecto a esta release concreta, el autor afirma explícitamente que no se ha realizado fine-tuning, SFT, DPO, LoRA, adaptadores, vectores de steering, hooks en runtime ni `model.py` personalizado: la modificación es una edición permanente de los tensores. La release del 2026-08-28 corrige un problema raro de bucles de repetición y declara MMLU del 87,33 % frente al 86,74 % del base, con cero degeneración. La edición se describe como conservadora: el modelo es totalmente sin censura en modo razonamiento desactivado y en esfuerzo máximo (0 % de rechazos en HarmBench-320), mientras que el modo de esfuerzo bajo conserva algunos rechazos de forma deliberada.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: mantiene las capacidades del GLM-5.3-Flash base, con puntuacion MMLU de 86,26% (frente a 86,74% del base).
-- Codigo y matematicas: el modelo base destaca en tareas de programacion y agentes, acercandose a Claude Opus 4.8 en benchmarks de coding segun Z.ai.
-- Vision multimodal: procesa imagenes mediante la torre de vision GLM-4.1V, con soporte de `image_url` en la API de chat.
-- Tool calling y function calling: compatible con el parser `glm47` de vLLM y `--enable-auto-tool-choice`.
-- Razonamiento multi-paso: soporta el parser `glm45` para razonamiento estructurado.
-- Decodificacion especulativa MTP: cabezal de prediccion multi-token con tasa de aceptacion del 75,9%, que acelera la generacion hasta 211 tok/s en H200.
-- Sin guardarrailes: el modelo no rechaza peticiones, incluyendo contenido de copyright, contextual o estandar (100% de cumplimiento en HarmBench-320).
+- Generación de texto y razonamiento multi-paso con modos de esfuerzo configurables (`low`, `high`, y `max` como resolución por defecto).
+- Procesamiento de imagen mediante torre de visión GLM-4.1V, con control del número de tokens visuales vía `mm_processor_kwargs.max_image_tokens` y `min_image_tokens`.
+- Procesamiento de vídeo con muestreo de fotogramas configurable mediante `media_io_kwargs.video.fps`.
+- Decodificación especulativa mediante cabeza MTP con 75,9 % de aceptación declarada.
+- Contexto largo de hasta 1M de tokens para conversaciones y documentos extensos.
+- Comportamiento sin censura a nivel de pesos en modo razonamiento desactivado y en esfuerzo máximo, con 0 % de rechazos declarados en HarmBench-320.
+- Soporte de tool calling y function calling: no documentado en la información disponible.
+- Capacidades multilingües: limitadas a inglés según el etiquetado del repositorio.
 
 ## Casos de uso
 
-- Generacion de contenido creativo sin restricciones: el modelo puede producir narrativa, guiones o material literario que otros modelos rechazarian por politicas de copyright o contenido sensible. Adecuado para estudios creativos que necesitan explorar temas controvertidos sin fricciones.
-- Investigacion sobre seguridad de IA: permite estudiar el comportamiento de un modelo sin guardarrailes, analizar patrones de rechazo, sesgos y riesgos de alucinacion en escenarios adversariales. Su naturaleza abliterated lo convierte en un sujeto de prueba ideal para evaluar tecnicas de alineacion.
-- Desarrollo de agentes autonomos: con soporte de tool calling y razonamiento multi-paso, puede integrarse en pipelines de automatizacion donde se requiere tomar decisiones sin intervencion humana, como orquestacion de tareas complejas o navegacion web.
-- Generacion de codigo en produccion: su rendimiento en tareas de programacion (cercano a Claude Opus 4.8) y su capacidad de manejar contextos de 1M tokens lo hacen util para refactorizacion de grandes repositorios, generacion de tests y documentacion automatica.
-- Analisis de documentos largos: la ventana de 1M tokens permite procesar libros completos, expedientes legales o historiales clinicos en una sola pasada, extrayendo informacion y resumiendo sin perder contexto.
-- Asistencia multimodal en entornos controlados: combinando vision y texto, puede describir imagenes, transcribir diagramas o generar informes a partir de capturas de pantalla, util en entornos de soporte tecnico o educacion.
+- Analisis de documentos extensos: con 1M de tokens de contexto, el modelo puede ingerir repositorios completos, expedientes o libros técnicos en una sola petición sin troceado, lo que simplifica pipelines de extracción y resumen.
+- Procesamiento de video por lotes: el soporte de vídeo con `fps` configurable permite muestrear clips a 2 fps de forma segura y extraer descripciones o transcripciones estructuradas sin provocar el fallo de motor documentado.
+- Investigación sobre alineación y seguridad: al ser una variante sin censura a nivel de pesos, sirve para estudiar el comportamiento de rechazo, comparar contra el base y evaluar mecanismos de filtrado externos.
+- Evaluación comparativa de cuantización FP8: al ejecutarse a velocidad nativa en Hopper, es un banco de pruebas para medir latencia y throughput de FP8 frente a BF16 en un MoE de 320B.
+- Generación de código y razonamiento técnico: los modos `high` y `max` permiten asignar más presupuesto de cómputo a tareas complejas, siempre con `max_tokens >= 6000` cuando se use `max` para evitar respuestas vacías.
+- Atención al cliente automatizada en inglés: conversaciones multi-turno con contexto largo, usando `reasoning_effort: "low"` y `max_tokens: 2000`, configuración que el autor declara limpia en pruebas multi-turno.
+- Servicio de inferencia de alto rendimiento: con TP4 sobre H200 en FP8 nativo, el autor declara 163 tok/s en decodificación de un solo flujo y 211 tok/s (dato truncado en la model card) en el escenario agregado.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona datos de MMLU (logit-mode, 1.026 preguntas) comparando el modelo base FP8 con la version CRACK:
-
-| Benchmark | Base FP8 | CRACK Uncensored FP8 | Delta |
-|---|---|---|---|
-| MMLU (overall) | 86,74% | 86,26% | -0,48 pp |
-
-Tambien se reporta HarmBench-320 (greedy):
-
-| Categoria | Cumplidas | Tasa |
+| Benchmark | GLM-5.3-Flash-UNCENSORED-FP8 | GLM-5.3-Flash (base) |
 |---|---|---|
-| Standard | 159/159 | 100,0% |
-| Contextual | 81/81 | 100,0% |
-| Copyright | 80/80 | 100,0% |
-| Overall | 320/320 | 100,0% |
+| MMLU | 87,33 % | 86,74 % |
+| HarmBench-320 (tasa de rechazo, razonamiento off y max) | 0 % | no disponible |
+| Aceptación MTP (draft head) | 75,9 % | no disponible |
 
-No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.) en la informacion disponible. La model card incluye un desglose por 57 materias de MMLU, con variaciones puntuales de hasta -16,7 pp en "Moral Scenarios" y +11,1 pp en "Astronomy" o "College Computer Science".
+No se han publicado en la información disponible resultados de HumanEval, GSM8K ni otros benchmarks estándar. Los datos de velocidad declarados por el autor son: 163 tok/s en decodificación de un solo flujo con TP4 sobre H200 en FP8 nativo, y 211 tok/s en una medición adicional cuyo enunciado aparece truncado en la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 321B parametros en FP8 (1 byte por parametro), se necesitan aproximadamente 321 GB de VRAM. Con tensor-parallel-size 4, cada GPU debe disponer de al menos 80 GB (H100/H200).
-- GPUs recomendadas: H100 o H200 (Hopper) para velocidad FP8 nativa. En GPUs Ampere o Ada, la cuantizacion FP8 puede no ofrecer aceleracion por hardware.
-- Compatibilidad con consumer GPUs: no es viable en GPUs de consumo (RTX 4090 tiene 24 GB, insuficiente incluso con cuantizacion agresiva). Se requeriria al menos 4x A100 80GB o similar.
-- Opciones de despliegue: vLLM (recomendado, con `--tensor-parallel-size 4`), TGI, llama.cpp (si se convierte a GGUF, aunque no se proporciona). El modelo usa safetensors FP8, compatible con vLLM estandar.
-- Rendimiento medido (TP4, H200): decode 163 tok/s single-stream, 211 tok/s con MTP, prefill ~19.400 tok/s. La tasa de aceptacion MTP es del 75,9%.
+- VRAM estimada: el repositorio de pesos ocupa 505,4 GB en FP8; se requiere un conjunto multi-GPU con al menos 512 GB de memoria agregada solo para los pesos, más espacio para caché KV de contexto largo.
+- GPU recomendadas: H100 y H200 (Hopper) para aprovechar la velocidad nativa de FP8 en tensor cores. El autor reporta pruebas con TP4 sobre H200.
+- GPU de consumo: no cabe en ninguna GPU consumer actual; 320B en FP8 excede la VRAM de una RTX 4090 (24 GB) en más de un orden de magnitud.
+- Opciones de despliegue: vLLM y SGLang con parser de razonamiento. Se documentan diferencias de comportamiento entre la línea nightly de vLLM y la línea `0.1.dev*`.
+- Throughput declarado: 163 tok/s single-stream y 211 tok/s en la medición agregada truncada, con TP4 en H200.
+- Advertencia de serving: `reasoning_effort` solo acepta `low` y `high`; cualquier otro valor, o su omisión, resuelve silenciosamente a `max`. En `max` con `max_tokens` pequeño la respuesta llega vacía con `finish_reason="length"`. No debe pasarse `enable_thinking`. El razonamiento se devuelve en `message.reasoning`. `clear_thinking` debe anidarse dentro de `chat_template_kwargs`.
+- Advertencia de vídeo: `media_io_kwargs.video.fps` debe ser inferior al framerate del clip; un valor igual o superior provoca `EngineDeadError` y tumba el servidor (vLLM #55644 y #55647). `max_frames` y `num_frames` no son intercambiables entre builds; `fps` sí se respeta en todas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | MMLU | Notas |
-|---|---|---|---|---|---|---|
-| GLM-5.3-Flash (base) | 321B | 18B | 1M | MIT | 86,74% | Modelo original con guardarrailes |
-| GLM-5.3-Flash-UNCENSORED-FP8 | 321B | 18B | 1M | MIT | 86,26% | Abliterated, sin rechazos |
-| GLM-5.3-Flash-NVFP4 (LibertAIDAI) | 321B | 18B | 1M | MIT | no disponible | Cuantizacion NVFP4, mismo base |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| GLM-5.3-Flash-UNCENSORED-FP8 | 320B | 18B | 1M | MIT | Variante sin censura, FP8, visión y MTP |
+| zai-org/GLM-5.3-Flash | 320B | 18B | 1M | no disponible en la información | Modelo base, con rechazos; MMLU 86,74 % |
+| dealignai/GLM-5.3-Flash-ABLITERATED-FP8 | 320B | 18B | 1M | MIT | Espejo alternativo del mismo autor |
 
-No se dispone de datos de otros modelos comparables (como DeepSeek-V3 o Qwen2.5-Max) en la informacion proporcionada. La comparativa se limita a variantes del mismo modelo base.
+No se dispone de datos de benchmarks ni de especificaciones de otros modelos comparables de la misma categoría en la información proporcionada, por lo que la comparación con alternativas de terceros queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de guardarrailes: el modelo no rechaza ninguna peticion, incluido contenido ilegal, dañino o con copyright. Su uso en produccion puede acarrear responsabilidades legales y eticas.
-- Degradacion ligera de capacidades: MMLU cae -0,48 pp respecto al base, con variaciones topicas de hasta -16,7 pp en "Moral Scenarios" y -16,7 pp en "High School Mathematics".
-- Idioma limitado: la model card solo declara ingles. El rendimiento en otros idiomas no esta verificado.
-- Requisitos de hardware elevados: necesita al menos 4 GPUs de 80 GB para inferencia, lo que limita su despliegue a entornos con infraestructura HPC o cloud.
-- Riesgo de alucinacion: al no tener guardarrailes, el modelo puede generar afirmaciones falsas o inventadas con mayor confianza, especialmente en dominios donde el modelo base ya mostraba debilidades.
-- Sin garantias de calidad: la abliteration se realizo sin fine-tuning, por lo que no hay garantia de que el comportamiento en tareas especificas sea consistente. La model card advierte que la divergencia KL respecto al base no es una metrica de calidad relevante.
-- Uso comercial: la licencia MIT permite uso comercial, pero el contenido generado sin restricciones puede infringir derechos de autor o normativas de contenido.
+- La eliminación de rechazos es una modificación deliberada de los pesos: el modelo puede generar contenido dañino, ilegal o sexualmente explícito sin filtro interno. Requiere moderación externa en cualquier despliegue público.
+- El modo de esfuerzo bajo conserva rechazos por diseño; no es un fallo, sino una decisión del autor.
+- Riesgo de alucinación: no se documentan evaluaciones específicas de factualidad; el único dato de calidad es MMLU.
+- Idiomas: solo inglés etiquetado. El rendimiento en castellano u otros idiomas no está documentado y no debe asumirse.
+- Contexto de 1M de tokens: la caché KV a esa longitud es muy costosa en memoria; el contexto efectivo en producción dependerá del hardware.
+- Fallo de motor conocido con parámetros de vídeo mal configurados (`fps` igual o superior al del clip), que deja el servidor caído hasta reiniciarlo.
+- Respuestas vacías en modo `max` con presupuesto insuficiente de tokens; en multi-turno, un turno vacío contamina el historial y la conversación no se recupera.
+- Incompatibilidades de parámetros entre builds de vLLM (`max_frames` frente a `num_frames`), que pueden degradar silenciosamente el coste en tokens.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo ni sobre el cumplimiento normativo del contenido generado.
+- El repositorio pesa 505,4 GB; la descarga y el almacenamiento son costosos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
-- Espejo abliterated: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Repositorio GLM-5 de Z.ai: https://github.com/zai-org/GLM-5
-- Documentacion de Z.ai sobre GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3
-- Documentacion de Unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3
-- Variante NVFP4 de LibertAIDAI: https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4
+- Espejo del autor: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
+- Perfil del autor: https://huggingface.co/dealignai
+- Twitter del autor: https://twitter.com/dealignai
+- Issues de vLLM citados por el autor: #55644 y #55647 (no se dispone de URL directa en la información proporcionada)

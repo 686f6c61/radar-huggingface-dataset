@@ -1,73 +1,99 @@
 # cHunter789/Qwen3.8-27B-i1-IQ4_KS_KT-GGUF
 
 ## Resumen
+Qwen3.8-27B-i1-IQ4_KS_KT-GGUF es una cuantización de 4 bits en formato GGUF del modelo base Qwen/Qwen3.6-27B (26.895.998.464 parámetros), publicada por el usuario cHunter789. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a un objetivo muy concreto: que los aproximadamente 27.000 millones de parámetros quepan íntegramente en la VRAM de una GPU de consumo con 16 GB. Para ello se emplean los tipos de cuantización IQ4_KS e IQ4_KT desarrollados por ikawrakow en el proyecto ik_llama.cpp, junto con una matriz de importancia (imatrix) mixta procedente de mradermacher y ubergarm.
 
-El modelo `cHunter789/Qwen3.8-27B-i1-IQ4_KS_KT-GGUF` es una cuantización en formato GGUF del modelo base `Qwen/Qwen3.6-27B`, realizada por el usuario cHunter789. Se trata de un modelo multimodal (image-text-to-text) de la familia Qwen, con aproximadamente 27 mil millones de parámetros según indica su nombre, aunque no se dispone de confirmación oficial en la información proporcionada. La cuantización emplea los esquemas IQ4_KS e IQ4_KT con matriz de importancia (imatrix), lo que sugiere un enfoque orientado a preservar la calidad de las activaciones más relevantes durante la compresión a 4 bits.
+La relevancia de esta ficha no está en el modelo base, sino en las decisiones de ingeniería de la cuantización: el tensor `token_embd.weight` se eleva a q8_0 (lo que aumenta el tamaño de descarga pero no el consumo de VRAM, ya que por defecto se carga en RAM del sistema), y el uso de caché KV cuantizada en q4_0 permite extender el contexto hasta unos 110.000 tokens en una RTX 5070 Ti. El autor reporta velocidades de decodificación de 45 a 25 t/s y prefill superior a 1300 t/s en esa GPU, con una perplejidad de 8,2890 sobre un fragmento de *War and Peace* a 65.536 tokens de contexto, ligeramente mejor que la variante IQ4_XS de mradermacher (8,2955) en la misma prueba.
 
-Este modelo es relevante porque ofrece una versión optimizada para inferencia local de un modelo Qwen de gran tamaño, con licencia Apache-2.0, lo que facilita su uso en entornos de producción y desarrollo sin restricciones comerciales. Al estar en formato GGUF, es compatible con motores de inferencia como llama.cpp, Ollama o LM Studio, lo que permite desplegarlo en hardware de consumo. Sin embargo, la información pública disponible es muy limitada: no se especifican detalles de arquitectura, contexto, idiomas ni benchmarks, por lo que esta ficha se basa únicamente en los metadatos del repositorio.
+El pipeline declarado es image-text-to-text, lo que sugiere capacidades multimodales heredadas del modelo base, aunque la información disponible no detalla la arquitectura interna ni los datos de entrenamiento. La licencia es Apache 2.0 y el repositorio acumula 16.611 descargas y 45 likes en el momento de la consulta.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (se infiere transformer multimodal de la familia Qwen) |
-| Parametros totales | no disponible (el nombre sugiere 27B, sin confirmar) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ4_KS, IQ4_KT (4 bits, con imatrix) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | no disponible (modelo base Qwen/Qwen3.6-27B; pipeline image-text-to-text) |
+| Parámetros totales | 26.895.998.464 (~26,9 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | hasta ~110.000 tokens con caché KV q4_0 (105.000 en la configuración recomendada) |
+| Tipos de cuantización | IQ4_KS e IQ4_KT (4 bits), tensor de embeddings en q8_0, caché KV q4_0 |
+| Idiomas soportados | no disponible (el autor menciona mejora en interpretación de lenguas no inglesas gracias al q8_0 de embeddings) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (para ik_llama.cpp) |
 
 ## Arquitectura y entrenamiento
+No se dispone de información sobre la arquitectura interna del modelo base Qwen/Qwen3.6-27B en los datos proporcionados: no se especifica si es un transformer denso, un MoE o una arquitectura híbrida, ni el número de tokens de entrenamiento, la composición del dataset o si hubo fases de RLHF o DPO. El pipeline declarado (image-text-to-text) indica que el modelo base acepta entradas de imagen y texto, pero se desconoce el codificador visual empleado.
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base Qwen3.6-27B en los metadatos proporcionados. Por el nombre y los tags, se trata de un modelo multimodal que procesa tanto texto como imágenes (pipeline_tag: image-text-to-text). La cuantización fue realizada por cHunter789 utilizando el esquema IQ4_KS e IQ4_KT, que son variantes de cuantización de 4 bits con matriz de importancia (imatrix), una técnica que pondera la importancia de cada peso según su contribución a las activaciones del modelo. No se especifican datos de entrenamiento, número de tokens, ni procesos de alineación como RLHF o DPO.
+La innovación técnica de esta publicación reside en el proceso de cuantización. Se utilizan los cuantos IQ4_KS e IQ4_KT de ik_llama.cpp, que aplican una matriz de importancia para asignar más bits a los pesos con mayor impacto en la perplejidad. El autor probó varias imatrix: la de bartowski dio resultados significativamente peores, la de ubergarm resultó comparable y la finalmente empleada es una mezcla de mradermacher y ubergarm. Además, el tensor de embeddings de tokens se promociona a q8_0; dado que ese tensor se carga por defecto en RAM del sistema y no en VRAM, el coste es solo de espacio en disco. La configuración recomendada activa flash-attention, fusión de QKV (`--merge-qkv`), decodificación especulativa con ngramas (`--spec-type ngram-mod:n_max=2`), modo de razonamiento con formato deepseek y un presupuesto de razonamiento de 32.000 tokens.
 
 ## Capacidades
-
-- Procesamiento multimodal: el modelo acepta entradas de texto e imagen (image-text-to-text), lo que permite tareas como descripción de imágenes, respuesta a preguntas visuales o razonamiento multimodal.
-- Generación de texto: al ser un modelo de la familia Qwen, se espera capacidad de generación de lenguaje natural, aunque no se confirma en la información disponible.
-- Inferencia local: el formato GGUF permite ejecución en CPU y GPU con motores como llama.cpp, Ollama o LM Studio.
-- Cuantización de 4 bits: reduce los requisitos de memoria frente al modelo original, facilitando su uso en hardware con VRAM limitada.
-
-No se dispone de información sobre soporte de tool calling, agentes, razonamiento multi-paso, ni capacidades multilingües específicas.
+- Generación de texto conversacional multi-turno, con plantilla de chat compatible con Jinja.
+- Procesamiento de imagen y texto (pipeline image-text-to-text declarado), aunque no se detallan las tareas visuales concretas soportadas.
+- Modo de razonamiento explícito: el servidor admite `--reasoning on`, `--reasoning-format deepseek` y `--reasoning-budget`, con preservación del bloque de pensamiento entre turnos mediante `preserve_thinking`.
+- Ajuste de esfuerzo de razonamiento mediante `reasoning_effort` en los kwargs de la plantilla de chat.
+- Decodificación especulativa basada en ngramas para acelerar la generación.
+- Soporte de contexto largo: hasta 105.000 tokens en la configuración validada por el autor.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) para su despliegue como servicio.
+- Capacidad multilingüe mejorada de forma indirecta por el q8_0 en el tensor de embeddings, según el autor.
+- No se documenta soporte explícito de tool calling ni de flujos de agentes en la información disponible.
 
 ## Casos de uso
-
-- Despliegue local de un asistente multimodal: al ser un GGUF de 4 bits, puede ejecutarse en una GPU de consumo (por ejemplo, RTX 3090 o superior) para tareas de chat con entrada de imágenes, sin depender de APIs externas.
-- Prototipado rápido en entornos de desarrollo: su formato GGUF permite cargarlo con llama.cpp o Ollama en pocos minutos, ideal para validar ideas de aplicaciones que combinen visión y lenguaje.
-- Automatización de descripciones de imágenes en pipelines de datos: el modelo puede generar texto descriptivo a partir de imágenes, útil para indexación de contenido visual o accesibilidad.
-- Investigación en modelos multimodales cuantizados: sirve como referencia para estudiar el impacto de la cuantización IQ4_KS/IQ4_KT en la calidad de salida frente al modelo original.
-- Integración en aplicaciones de chat con contexto visual: por ejemplo, un asistente que analice capturas de pantalla o fotografías y responda preguntas sobre ellas.
-- Evaluación de rendimiento en hardware heterogéneo: al ser un GGUF, se puede probar en CPU, GPU NVIDIA o Apple Silicon para comparar latencias y throughput.
+- Asistente conversacional con memoria larga en estación de trabajo de 16 GB: con 105.000 tokens de contexto se pueden mantener sesiones extensas o adjuntar documentación completa sin truncar, usando `llama-server` con caché KV q4_0.
+- Análisis de documentos extensos en local: procesar informes, libros o expedientes de decenas de miles de tokens en una única pasada, con prefill superior a 1000 t/s según las mediciones del autor.
+- Razonamiento asistido con traza explícita: el modo de razonamiento con formato deepseek y presupuesto configurable permite separar el proceso de pensamiento de la respuesta final, útil en tareas de depuración lógica o matemática.
+- Despliegue en GPU de consumo para prototipado: una RTX 5070 Ti de 16 GB ejecuta el modelo completo en VRAM, lo que evita el offloading parcial a RAM y sus penalizaciones de latencia.
+- Procesamiento de entradas mixtas imagen-texto: al heredar el pipeline image-text-to-text, puede emplearse en tareas de descripción o consulta sobre imágenes, siempre que se valide el soporte real en el runtime elegido.
+- Servicio interno compatible con API de endpoints: el tag `endpoints_compatible` y el servidor llama-server con métricas permiten integrarlo en herramientas internas que consuman una API compatible con OpenAI.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir el impacto de IQ4_KS/IQ4_KT frente a IQ4_XS en perplejidad y velocidad sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
+Los únicos datos publicados en la información disponible son mediciones de perplejidad y velocidad realizadas por el autor, no benchmarks estándar (MMLU, HumanEval, GSM8K).
 
-No se han publicado resultados de benchmarks en la información disponible.
+| Métrica | IQ4_XS (mradermacher) | IQ4_KT + attn_qkv IQ4_KS (cHunter789) |
+|---|---|---|
+| Perplejidad (n_ctx=65.536, 12 chunks) | 8,2955 ± 0,03221 | 8,2890 ± 0,03224 |
+| Tiempo por pasada de perplejidad | 77,21 s | 84,14 s |
+| Velocidad de prompt eval | 1048,14 t/s | 1004,07 t/s |
+| Tiempo de carga | 2522,03 ms | 9369,56 ms |
+
+Datos de velocidad en uso conversacional reportados por el autor en una RTX 5070 Ti, con configuración GPU-only de 16 GB y contexto de 105.000 tokens: decodificación de 45 t/s al inicio que decae hasta 25 t/s al final del contexto, y prefill superior a 1300 t/s. No se han publicado resultados de benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada: no disponible con exactitud, pero un modelo de 27B en cuantización 4 bits suele requerir entre 14 y 18 GB de VRAM para inferencia completa en GPU. Con offloading parcial a CPU, puede funcionar con menos.
-- GPU recomendadas: para una experiencia fluida, se sugiere una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4080, RTX 4090, A100 40GB). En GPUs con 12 GB podría ser necesario usar capas en CPU.
-- Compatibilidad con consumer GPU: sí, siempre que se disponga de suficiente VRAM o se acepte una velocidad reducida con offloading.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, o servidores compatibles con GGUF como text-generation-webui.
-- Latencia y throughput: no disponibles.
+- VRAM: el objetivo de diseño es 16 GB; el autor confirma que el modelo completo cabe en una GPU de 16 GB con `--n-gpu-layers 99`.
+- GPU recomendadas: RTX 5070 Ti (mediciones del autor). El modelo está diseñado exclusivamente para GPUs NVIDIA; no se documenta soporte para AMD, Apple Silicon u otras plataformas.
+- GPU de consumo: sí, en tarjetas NVIDIA de 16 GB. Por debajo de esa cifra sería necesario offloading parcial o reducir el contexto.
+- Variable de entorno obligatoria: `export GGML_CUDA_ENABLE_UNIFIED_MEMORY=1` antes de arrancar el servidor.
+- Runtime: ik_llama.cpp (imprescindible para los cuantos IQ4_KS e IQ4_KT). No se garantiza compatibilidad con llama.cpp estándar, Ollama, vLLM ni TGI.
+- Memoria del sistema: el tensor `token_embd.weight` se carga en RAM, por lo que se requiere RAM libre adicional más allá de la VRAM.
+- Herramienta de validación: `ctx-cliff.py`, proporcionada por el autor, para comprobar si la configuración de contexto cabe en la VRAM.
+- Almacenamiento: el repositorio ocupa 44,5 GB, superior a lo habitual en un 4 bits por el tensor de embeddings en q8_0.
+- Throughput estimado: 45 a 25 t/s de decodificación y más de 1300 t/s de prefill en RTX 5070 Ti.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa rigurosa. El modelo base Qwen3.6-27B pertenece a la familia Qwen, que incluye alternativas como Qwen2.5-27B o Qwen3-27B, pero no se conocen sus especificaciones exactas ni resultados de benchmarks en la información proporcionada. Se recomienda consultar la documentación oficial de Qwen para comparar.
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Notas |
+|---|---|---|---|---|---|
+| cHunter789/Qwen3.8-27B-i1-IQ4_KS_KT-GGUF | ~26,9 B | hasta ~110k (q4_0 KV) | IQ4_KS / IQ4_KT | Apache 2.0 | Perplejidad 8,2890; orientado a 16 GB VRAM NVIDIA |
+| mradermacher/Qwen3.8-27B-i1-GGUF | ~26,9 B (mismo base) | no disponible | IQ4_XS entre otras | Apache 2.0 (heredada) | Perplejidad 8,2955; referencia directa en la comparación del autor |
+| Qwen/Qwen3.6-27B (base) | ~26,9 B | no disponible | pesos originales | Apache 2.0 | Modelo sin cuantizar; requiere hardware muy superior a 16 GB |
+
+No se dispone de información sobre otros modelos comparables de la misma categoría en los datos proporcionados.
 
 ## Limitaciones y advertencias
-
-- La información pública es muy limitada: no se especifican arquitectura, contexto, idiomas, ni datos de entrenamiento, lo que dificulta evaluar su idoneidad para tareas concretas.
-- Al ser una cuantización de 4 bits, puede haber una degradación de calidad en tareas complejas de razonamiento o generación de código frente al modelo original en precisión completa.
-- No se han publicado benchmarks, por lo que no se puede verificar su rendimiento real.
-- El modelo base Qwen3.6-27B no está confirmado oficialmente; el nombre sugiere una versión posterior a Qwen3, pero no hay documentación que lo respalde.
-- Riesgo de alucinaciones y sesgos: inherente a los modelos de lenguaje, no se dispone de evaluaciones específicas para esta cuantización.
-- La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base original por si hubiera restricciones adicionales.
+- Exclusivo para GPU NVIDIA: no hay soporte documentado para otras plataformas de cómputo.
+- Dependencia de ik_llama.cpp: los cuantos IQ4_KS e IQ4_KT no son estándar en llama.cpp upstream, lo que limita las opciones de despliegue y complica las actualizaciones.
+- Requiere `GGML_CUDA_ENABLE_UNIFIED_MEMORY=1`; sin esa variable el comportamiento en 16 GB no está garantizado.
+- El contexto máximo real depende de la configuración exacta de caché KV y batch; el autor recomienda validar con `ctx-cliff.py` antes de desplegar.
+- La decodificación cae de 45 a 25 t/s a medida que se llena el contexto, lo que afecta a la experiencia en sesiones muy largas.
+- Tamaño de descarga elevado (44,5 GB) por el tensor de embeddings en q8_0; no apto para entornos con almacenamiento ajustado.
+- La cuantización a 4 bits introduce degradación respecto a los pesos originales; la perplejidad medida no sustituye a una evaluación de tareas.
+- No hay información sobre sesgos, tasas de alucinación ni cobertura idiomática verificada; el propio autor solo afirma una mejora cualitativa en lenguas no inglesas.
+- La model card está incompleta (el bloque de resultados de `ctx-cliff.py` aparece truncado), lo que impide verificar las mediciones de ajuste de contexto.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.6-27B y de las imatrix utilizadas.
+- No se documentan capacidades de tool calling ni de agentes; no deben asumirse en producción sin pruebas.
 
 ## Enlaces
-
 - Repositorio Hugging Face: https://huggingface.co/cHunter789/Qwen3.8-27B-i1-IQ4_KS_KT-GGUF
-- Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.6-27B (no verificado, según metadatos)
-- No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.
+- Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
+- Cuantización de referencia IQ4_XS: https://huggingface.co/mradermacher/Qwen3.8-27B-i1-GGUF
+- Proyecto ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
+- Dataset de prueba (War and Peace, Project Gutenberg): https://www.gutenberg.org/files/2600/2600-0.txt

@@ -2,87 +2,95 @@
 
 ## Resumen
 
-Orion-26B-A4B-v1 es un modelo de lenguaje de tipo MoE (Mixture of Experts) desarrollado por TheDrummer, con 25.805.936.206 parámetros totales y aproximadamente 4 mil millones de parámetros activos por token, tal y como sugiere la nomenclatura A4B. Publicado en Hugging Face en agosto de 2026, el modelo se distribuye en formato safetensors con un tamaño de repositorio de 51,6 GB, lo que indica pesos en precisión completa o en cuantizaciones altas.
+Orion 26B A4B v1 es un ajuste fino (finetune) del modelo google/gemma-4-31B-it, desarrollado por TheDrummer, un ingeniero de software conocido en la comunidad por sus modelos orientados a creatividad, escritura y entretenimiento. El modelo parte de una arquitectura Gemma 4 con 25.805.936.206 parámetros totales (aproximadamente 25,8 mil millones) y un tamaño de repositorio de 51,6 GB en formato safetensors. La nomenclatura "A4B" sugiere un diseño de mezcla de expertos con aproximadamente 4 mil millones de parámetros activos, aunque la información disponible no confirma explícitamente esta arquitectura.
 
-El tag `gemma4` presente en el repositorio indica que el modelo está basado en la arquitectura Gemma 4 de Google, aunque no se dispone de la model card completa que confirme los detalles de entrenamiento, contexto o licencia. El autor mantiene un directorio de modelos en Hugging Face Spaces y varios de sus modelos (Cydonia 24B, Valkyrie 49B, Skyfall 36B) están disponibles a través de OpenRouter, lo que sugiere un ecosistema de modelos orientado a despliegue en producción.
+El modelo está diseñado para usos creativos y de entretenimiento, priorizando cualidades como la calidad de escritura, el dinamismo narrativo, la imaginación y un comportamiento menos alineado que los modelos fundacionales. Según el autor, el objetivo no es maximizar la inteligencia o la corrección, sino ofrecer una experiencia más libre para escritura creativa, roleplay y generación de contenido sin las restricciones típicas de los modelos comerciales.
 
-La relevancia de este modelo radica en su arquitectura MoE con 4B parámetros activos, que permite un rendimiento razonable en hardware consumer y un coste de inferencia reducido frente a modelos densos de tamaño similar. Su disponibilidad en formato GGUF por parte de BeaverAI y su soporte en plataformas como Jetson (según la guía de Gemma 4 en Jetson) lo hacen candidato para despliegues en edge.
+Es relevante en el ecosistema open source porque ofrece una alternativa de ajuste fino sobre Gemma 4 con soporte para modos de razonamiento ("thinking") flexibles, incluyendo bloques personalizados como `<thinking>`, `<think>` o `<evil_think>`, y porque está disponible tanto en formato safetensors como en GGUF (a través de repositorios separados y de terceros como bartowski), lo que facilita su despliegue local.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) basada en Gemma 4 (según tag `gemma4`) |
-| Parámetros totales | 25.805.936.206 |
-| Parámetros activos | ~4.000.000.000 (estimado por nomenclatura A4B) |
+| Arquitectura | Gemma 4 (transformer, posiblemente MoE según nomenclatura A4B; no confirmado) |
+| Parametros totales | 25.805.936.206 (≈25,8 B) |
+| Parametros activos | no disponible (la nomenclatura "A4B" sugiere ~4 B activos, sin confirmación oficial) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible en el repo original; existe versión GGUF de BeaverAI |
+| Tipos de cuantizacion | no disponible en la información proporcionada; existen versiones GGUF en repositorios separados |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (repo original); GGUF disponible en BeaverAI |
+| Formato de pesos | safetensors (repo principal); GGUF en repositorios separados |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada en la información proporcionada. La nomenclatura "26B-A4B" indica un modelo de mezcla de expertos (MoE) con 26 mil millones de parámetros totales y 4 mil millones de parámetros activos por token, lo que implica una relación de activación de aproximadamente 1:6,5. El tag `gemma4` sugiere que la base arquitectónica es la familia Gemma 4 de Google, que en sus variantes de 26B-A4B y 31B utiliza un diseño MoE con atención de ventana deslizante y atención global, según la documentación de Jetson AI Lab.
+El modelo se basa en google/gemma-4-31B-it, un modelo de la familia Gemma 4 de Google con 31 mil millones de parámetros nominales según el nombre del modelo base, aunque el recuento real de safetensors es de 25,8 mil millones. La nomenclatura "A4B" es característica de los modelos de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parámetros activos, pero la información proporcionada no detalla la arquitectura interna ni confirma esta estructura. El ajuste fino se realizó sobre el modelo instructivo de Gemma 4, presumiblemente mediante técnicas de fine-tuning supervisado y posiblemente preferencias, aunque no se especifican los detalles del dataset, el número de tokens de entrenamiento ni la composición de los datos.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o KTO. La existencia de versiones "v1f" y "v1e" en repositorios de terceros (BeaverAI) sugiere iteraciones del modelo con ajustes de configuración o cuantización, pero no hay detalles técnicos públicos sobre estas variantes.
+La innovación técnica destacable es el soporte flexible para modos de razonamiento: el modelo puede operar con la plantilla estándar de Gemma 4 en modo thinking o non-thinking, y también acepta bloques de pensamiento personalizados como `<thinking></thinking>`, `<think></think>` o incluso `<evil_think></evil_think>`, que pueden describirse en el system prompt. Esta flexibilidad permite al usuario controlar el estilo y la profundidad del razonamiento sin necesidad de cambiar de plantilla. No se dispone de información sobre el uso de RLHF, DPO u otras técnicas de alineación, aunque el autor declara explícitamente que sus modelos priorizan la creatividad sobre la alineación.
 
 ## Capacidades
 
-- Generación de texto: capacidad estándar de un LLM de 26B MoE, con razonamiento básico y generación coherente en tareas de lenguaje general.
-- Razonamiento: se espera un rendimiento moderado en tareas de razonamiento lógico y matemático, típico de modelos de 4B activos, aunque no hay benchmarks públicos que lo confirmen.
-- Tool calling / function calling: no confirmado; la documentación de Gemma 4 en Jetson menciona soporte de tool calling para los modelos de esa familia, pero no se ha verificado para esta variante concreta.
-- Capacidades multilingües: no disponible (sin datos de idiomas soportados).
-- Soporte de agentes: no confirmado; no hay evidencia de capacidades de multi-step reasoning o uso de agentes.
-- Modo thinking: no disponible; no hay indicación de un modo de razonamiento extendido.
+- Generación de texto creativo: escritura narrativa, ficción, diálogo y roleplay con énfasis en calidad literaria y dinamismo.
+- Razonamiento configurable: soporte de modo thinking estándar de Gemma 4 y modos personalizados mediante bloques `<thinking>`, `<think>` o etiquetas definidas por el usuario.
+- Instrucciones flexibles: capacidad de seguir system prompts que definen estilos de pensamiento y personalidad.
+- Formateo adaptable: el autor destaca la capacidad del modelo para crear formatos novedosos y efectivos en las respuestas.
+- Conocimiento del mundo: conocimiento tanto ficticio como no ficticio, según los criterios de evaluación del autor.
+- Percepción de matices: manejo de complejidad, lógica y temas difíciles o ambiguos.
+- Menor alineación corporativa: el modelo está diseñado para evitar rechazos innecesarios y sesgos de positividad forzada, lo que facilita temas adultos o controvertidos.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- **Despliegue en edge y dispositivos embebidos**: con 4B parámetros activos y soporte documentado para Jetson Orin y Thor (según la guía de Gemma 4 en Jetson), este modelo puede ejecutarse en dispositivos de borde para asistentes locales o procesamiento de texto en tiempo real.
-- **Servicios de chat de bajo coste**: a través de OpenRouter, los modelos de TheDrummer se ofrecen como API unificada, lo que permite integrarlo en aplicaciones de chat sin infraestructura propia.
-- **Prototipado rápido de aplicaciones LLM**: la disponibilidad de cuantizaciones GGUF facilita la ejecución en CPU o GPUs modestas mediante llama.cpp u Ollama para pruebas de concepto.
-- **Generación de texto asistida en entornos con recursos limitados**: el ratio de activación de 1:6,5 reduce la memoria y cómputo por token, permitiendo su uso en entornos donde un modelo denso de 26B no sería viable.
-- **Investigación sobre MoE**: su configuración MoE con 4B activos lo convierte en un objeto de estudio para comparar técnicas de sparse attention y expert routing frente a modelos densos de tamaño similar.
-- **Evaluación de la familia Gemma 4**: al estar basado en Gemma 4, sirve para comparar el rendimiento de variantes MoE de la familia con las versiones densas (E2B, E4B, 31B) en tareas específicas.
+- Escritura creativa y narrativa: el modelo puede generar relatos, novelas cortas y guiones con un estilo literario cuidado, gracias a su entrenamiento orientado a la calidad de escritura y dinamismo narrativo. Es adecuado para autores que buscan un asistente con menos restricciones creativas.
+- Roleplay y juegos de rol conversacionales: su capacidad para mantener personalidades definidas en el system prompt y su menor alineación lo hacen idóneo para personajes complejos, incluidos antagonistas o tramas oscuras, sin rechazos automáticos.
+- Generación de contenido para entretenimiento: guiones para vídeos, podcasts o videojuegos, donde la imaginación y la capacidad de explorar múltiples posibilidades narrativas son prioritarias sobre la corrección factual.
+- Asistente de escritura con razonamiento configurable: el usuario puede activar modos de pensamiento personalizados (`<evil_think>`, etc.) para generar borradores con distintos enfoques estilísticos o morales, útil en ejercicios de escritura experimental.
+- Prototipado de personajes y diálogos para chatbots de ficción: integrable en aplicaciones de ocio o comunidades de rol, donde se requiere un modelo que no imponga una moral corporativa y que mantenga coherencia en conversaciones multi-turno (siempre que el contexto lo permita).
+- Investigación sobre alineación y comportamiento: al ser un modelo deliberadamente menos alineado, puede servir para estudiar cómo los ajustes finos afectan a los rechazos, la moralidad expresada y la percepción del usuario, en entornos controlados de investigación.
+- Despliegue local con GGUF: gracias a las versiones GGUF (repositorio propio y de bartowski), puede ejecutarse en hardware de consumo para experimentación creativa sin depender de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas estándar para Orion-26B-A4B-v1. La página de AI Market Cap sobre la versión v1e de BeaverAI menciona "benchmark coverage where available", pero no se ha podido acceder a los datos concretos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: con 25,8B parámetros totales, en cuantización FP16 se necesitarían aproximadamente 51,6 GB de VRAM; con cuantización Q4_K_M (GGUF) se estima entre 15 y 18 GB.
-- **GPUs recomendadas**: para FP16 sería necesaria una GPU de datacenter (A100 80GB, H100 80GB) o dos GPUs de 24 GB en paralelo. Para cuantización GGUF Q4, una RTX 4090 (24 GB) o RTX 3090 (24 GB) sería suficiente; para Q8 se necesitaría ~30 GB.
-- **Cabe en consumer GPU**: sí, con cuantización GGUF Q4 en GPUs de 24 GB (RTX 3090, 4090) y con Q3/Q2 en GPUs de 16 GB (RTX 4080, 4070 Ti Super), aunque con pérdida de calidad.
-- **Opciones de despliegue**: llama.cpp (GGUF), vLLM (safetensors), Ollama (si se crea un Modelfile), Jetson AI Lab (vLLM o llama.cpp), OpenRouter (API gestionada).
-- **Latencia y throughput**: no disponibles; no hay mediciones públicas. Para un MoE de 4B activos, se espera una latencia de ~10-30 tokens/s en una RTX 4090 con cuantización Q4, pero no hay datos verificados.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamaño (25,8 B parámetros), en FP16 requeriría aproximadamente 51,6 GB de VRAM; en cuantizaciones de 8 bits, alrededor de 26 GB; en 4 bits, aproximadamente 13-15 GB. Estas cifras son estimaciones generales y no están confirmadas por el autor.
+- GPU recomendadas: para FP16, GPU profesionales como A100 80 GB o H100; para cuantizaciones de 8 bits, A100 40 GB o RTX 6000 Ada; para 4 bits, RTX 4090 (24 GB) o RTX 3090 (24 GB) podrían ser suficientes.
+- ¿Cabe en consumer GPU? Probablemente en cuantización de 4 bits en GPUs con 24 GB (RTX 3090/4090), aunque no hay confirmación oficial.
+- Opciones de despliegue: llama.cpp y Ollama a través de los GGUF disponibles; vLLM o TGI para safetensors si se confirma compatibilidad con la arquitectura Gemma 4. No se dispone de datos de latencia ni throughput.
+- El autor indica que ya no sube GGUFs a su repositorio principal por limitaciones de almacenamiento, pero mantiene un repositorio GGUF separado y recomienda la versión iMatrix de bartowski.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos verificados. El modelo se puede situar en la categoría de MoE de ~26B totales / 4B activos, similar a Gemma 4 26B-A4B original de Google (no hay datos públicos de este último para comparar) o a otros MoE como Mixtral 8x7B (47B totales, 13B activos) o Qwen 2.5 MoE. Sin información de benchmarks ni specs completas, no es posible realizar una comparativa rigurosa.
-
-| Modelo | Parámetros totales | Activos | Contexto | Licencia | Estado |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Orion-26B-A4B-v1 | 25,8B | ~4B | no disponible | no disponible | v1, en Hugging Face |
-| Gemma 4 27B-A4B (referencia) | ~27B | ~4B | no disponible | no disponible | basado en Gemma 4 |
-| Mixtral 8x7B (referencia) | 46,7B | 12,9B | 32K | Apache 2.0 | consolidado |
+| Orion 26B A4B v1 | 25,8 B (¿~4 B activos?) | no disponible | no disponible | safetensors, GGUF | Finetune creativo de Gemma 4 31B, menos alineado |
+| google/gemma-4-31B-it | 31 B (nominal) | no disponible | Gemma license (no confirmada en la info) | safetensors | Modelo base instructivo, alineado para uso general |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la documentación proporcionada |
+
+No se dispone de datos de rendimiento comparativo ni de otros modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Información incompleta**: la model card del autor no contiene apenas datos (solo `config-v4f`), lo que impide conocer la licencia, los idiomas, el contexto y el proceso de entrenamiento. No se recomienda su uso en producción sin verificar estos aspectos.
-- **Licencia desconocida**: no se especifica licencia, lo que genera incertidumbre legal para uso comercial. Es imprescindible contactar con el autor o esperar a que publique la licencia antes de desplegarlo.
-- **Sesgos y alucinaciones**: no hay datos sobre evaluación de sesgos o mitigación de alucinaciones. Como modelo de 4B activos, puede presentar tasas de alucinación más altas que modelos grandes en tareas de conocimiento factual.
-- **Contexto limitado**: sin datos sobre la longitud de contexto, es arriesgado asumir capacidades de ventana larga. Para tareas de contexto extenso, se recomienda verificar la configuración real.
-- **Riesgo de dependencia**: al ser un modelo de un autor individual, la continuidad del proyecto no está garantizada. La falta de documentación puede complicar el mantenimiento.
-- **Variantes no oficiales**: la existencia de versiones como v1f o v1e en repositorios de terceros (BeaverAI) puede implicar modificaciones no auditadas; verificar la procedencia de los pesos.
+- Sesgos conocidos: el autor declara explícitamente que el modelo está menos alineado y puede expresar opiniones o actitudes no corporativas; esto puede incluir sesgos de todo tipo presentes en los datos de entrenamiento y en el ajuste fino.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa o inventada, especialmente en tareas factuales; el autor prioriza creatividad sobre corrección.
+- Limitaciones de contexto e idioma: no se dispone de información sobre la longitud de contexto ni sobre los idiomas soportados; se desconoce si el ajuste fino degrada el rendimiento multilingüe del modelo base.
+- Restricciones de licencia: la licencia no está disponible en la información proporcionada; es imprescindible verificar la licencia del modelo base (Gemma) y la del propio ajuste antes de cualquier uso comercial.
+- Caveat para producción: el modelo está orientado a creatividad y entretenimiento, no a tareas de alta precisión; no se recomienda para aplicaciones que requieran corrección factual, seguridad estricta o alineación corporativa.
+- El autor no garantiza soporte de tool calling ni capacidades multimodales; no hay información sobre su comportamiento en agentes multi-paso.
+- El repositorio principal no incluye GGUFs; para despliegue local hay que acudir a repositorios separados, lo que puede implicar dependencia de terceros.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1
-- Versión GGUF de BeaverAI: https://huggingface.co/BeaverAI/Orion-26B-A4B-v1f-GGUF
-- Directorio de modelos de TheDrummer: https://huggingface.co/spaces/TheDrummer/directory
-- Perfil de TheDrummer en OpenRouter: https://openrouter.ai/thedrummer
-- Guía de Gemma 4 en Jetson: https://www.jetson-ai-lab.com/tutorials/gemma4-on-jetson/
-- Página de AI Market Cap sobre v1f: https://aimarketcap.tech/models/beaverai-orion-26b-a4b-v1e-gguf
-
-Nota: no se ha encontrado paper técnico, blog del autor ni documentación adicional en los resultados de búsqueda.
+- Modelo en Hugging Face: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1
+- GGUF del autor: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1-GGUF
+- GGUF iMatrix recomendado (bartowski): https://huggingface.co/bartowski/TheDrummer_Orion-26B-A4B-v1-GGUF
+- Modelo base: https://huggingface.co/google/gemma-4-31B-it
+- Discord del autor: https://discord.gg/BeaverAI
+- Patreon: https://www.patreon.com/TheDrummer
+- Enlaces del autor: https://linktr.ee/thelocaldrummer
+- API serverless (Kitani): https://kitani.ai/
+- Hoja de samplers colaborativa: https://docs.google.com/spreadsheets/d/1wil6YEHTnQP3DO9EF35ImQMY3lbmRt5_ns-LJavUqwQ
+- Formulario para compartir samplers: https://docs.google.com/forms/d/e/1FAIpQLSfeiOeLbNt-xc8tr0BopJ4KawMm3YrLGD5mYLjZqg8ehl35BQ/viewform

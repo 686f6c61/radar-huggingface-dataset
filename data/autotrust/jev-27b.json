@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 488,
-  "downloads_30d": 448805,
+  "downloads_30d": 421584,
   "trending_score": 14,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -114,31 +114,5 @@
       "value": 0.78
     }
   ],
-  "sources": [
-    {
-      "title": "autotrust/JEV-27B: fast, calibrated decisions and full reasoning from ...",
-      "url": "https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful",
-      "snippet": "A Blog post by AutoTrust AI Lab on Hugging Face"
-    },
-    {
-      "title": "AutoTrust AI Releases JEV-27B, an Open Decision Model for Self-Hosted ...",
-      "url": "https://www.prnewswire.com/news-releases/autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents-302891720.html",
-      "snippet": "SINGAPORE, Sept. 28, 2026 /PRNewswire/ -- AutoTrust AI today released JEV-27B, an Apache-2.0 open-weights model designed to handle frequent, structured decisions inside AI agent workflows while ..."
-    },
-    {
-      "title": "autotrust/JEV-27B · Hugging Face",
-      "url": "https://huggingface.co/autotrust/JEV-27B",
-      "snippet": "AutoTrust&#x27;s second integrated System 1 + System 2 open model, built with the Blocks of Experts recipe Fast, calibrated System 1 decisions that are indistinguishable from the closed TypeSafe Jev 1.13 by KL, and deliberate System 2 generation and reasoning from an untouched Qwen3.8-27B — one set of weights, one vLLM engine, routed per request."
-    },
-    {
-      "title": "AutoTrust AI Releases JEV-27B, an Open Decision Model for Self-Hosted ...",
-      "url": "https://smb.dailyleader.com/article/AutoTrust-AI-Releases-JEV-27B-an-Open-Decision-Model-for-Self-Hosted-AI-Agents/6aba9a65fb7acafcb4abee43",
-      "snippet": "AutoTrust AI said JEV-27B inherits Jev 1.13&#x27;s blind spots, including multi-hop reasoning, arithmetic, dates and adversarial inputs, and that its training data is English-centric. The company says the model is not meant for high-stakes decisions and recommends gating its answers on confidence. Benchmark context and source notes Scores are in ..."
-    },
-    {
-      "title": "AutoTrust AI releases JEV-27B, adding decisions without rewriting Qwen",
-      "url": "https://runtimewire.com/article/autotrust-ai-jev-27b-self-hosted-decision-model",
-      "snippet": "AutoTrust AI releases JEV-27B, adding decisions without rewriting Qwen Co-founder Daniel Tang&#x27;s AutoTrust AI added a compact decision block to a frozen Qwen3.8-27B model, keeping typed decisions and ordinary generation on one set of weights."
-    }
-  ]
+  "sources": []
 }

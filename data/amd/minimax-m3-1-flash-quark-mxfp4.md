@@ -2,113 +2,106 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash-Quark-MXFP4 es una versión cuantizada del modelo multimodal MiniMax-M3.1-Flash, publicada por AMD mediante su herramienta de optimización AMD-Quark. El modelo original lo desarrolla MiniMaxAI y emplea una arquitectura de mezcla de expertos dispersa (MiniMaxM3SparseForConditionalGeneration) que acepta texto, imagen y vídeo como entrada y produce texto. Esta variante concreta cuantiza los pesos y las activaciones de los expertos enrutados a MXFP4 (OCP Microscaling FP4), manteniendo el resto de capas en la precisión del modelo base, con el objetivo de reducir el coste de memoria y acelerar la inferencia en hardware AMD Instinct.
+MiniMax-M3.1-Flash-Quark-MXFP4 es una versión cuantizada del modelo multimodal MiniMax-M3.1-Flash, publicada por AMD para su ejecución optimizada sobre aceleradores AMD Instinct MI350 y MI355 con ROCm 7.2.3. El modelo base, desarrollado por MiniMaxAI, es un transformer multimodal de tipo Mixture of Experts (MoE) con arquitectura propietaria `MiniMaxM3SparseForConditionalGeneration`, capaz de procesar texto, imagen y vídeo como entrada y generar texto como salida. Esta variante mantiene los 220.490 millones de parámetros totales del modelo original, pero cuantiza únicamente los pesos y activaciones de los expertos enrutados en formato OCP MXFP4.
 
-La relevancia de esta publicación es doble. Por un lado, ofrece una ruta práctica para desplegar un modelo de aproximadamente 220.500 millones de parámetros en clústeres con GPUs AMD MI350/MI355 bajo ROCm 7.2.3, usando vLLM o SGLang con decodificación especulativa DSPARK. Por otro lado, demuestra que la cuantización de los expertos enrutados a FP4 conserva prácticamente intacta la precisión del modelo original en las evaluaciones publicadas (recuperación entre el 99,69 % y el 102,41 % en los benchmarks reportados).
+La relevancia de esta ficha reside en que se trata de una cuantización oficial respaldada por AMD mediante su herramienta AMD-Quark, con recuperación de precisión muy alta respecto al modelo original (entre el 99,69% y el 104,62% en los benchmarks publicados). Esto la convierte en una opción práctica para desplegar un modelo de gran tamaño en infraestructura AMD sin sacrificar capacidad de razonamiento, matemáticas, código o visión de forma significativa.
 
-El repositorio ocupa 239,5 GB y se distribuye en formato safetensors con código personalizado, bajo licencia minimax-community. Es un artefacto orientado a producción e investigación en infraestructura AMD, no a equipos de consumo.
+El modelo está pensado para servir en producción mediante vLLM o SGLang, con soporte de decodificación especulativa DSPARK, parser de razonamiento y de tool calling, y modo thinking habilitable desde el template de chat. La licencia es `minimax-community`, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MiniMaxM3SparseForConditionalGeneration (transformer disperso con mezcla de expertos) |
-| Parametros totales | 220.490.854.016 (aproximadamente 220,5 mil millones) |
+| Arquitectura | MiniMaxM3SparseForConditionalGeneration (transformer MoE multimodal) |
+| Parametros totales | 220.490.854.016 (220,49 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4 estática para pesos de expertos enrutados; MXFP4 dinámica para activaciones de expertos enrutados; resto de capas en la precisión del modelo base; etiquetado como 8-bit en el repo |
+| Tipos de cuantizacion | MXFP4 (OCP) estático en pesos de expertos enrutados; MXFP4 dinámico en activaciones de expertos enrutados; resto de capas en precisión original |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-community (license: other) |
-| Formato de pesos | safetensors (custom_code, minimax_m3_vl) |
-| Modalidades de entrada | Texto, imagen, vídeo |
-| Modalidad de salida | Texto |
-| Hardware soportado | AMD MI350 / MI355 |
-| Software requerido | ROCm 7.2.3, PyTorch 2.13.0, Transformers 5.19.0, Linux |
-| Motores de inferencia | vLLM, SGLang |
-| Herramienta de cuantización | AMD-Quark |
-| Modelo base | MiniMaxAI/MiniMax-M3.1-Flash |
+| Licencia | minimax-community (license_name: minimax-community) |
+| Formato de pesos | safetensors (con custom_code) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del MiniMax-M3.1-Flash original: un transformer con mezcla de expertos dispersa (block_sparse_moe) que incluye expertos compartidos (shared_experts) y una puerta de enrutamiento (block_sparse_moe.gate), además de un vision tower y un proyector multimodal para procesar imagen y vídeo. La variante de AMD no reentrena el modelo; aplica cuantización post-entrenamiento con AMD-Quark sobre los pesos del modelo base.
+El modelo base MiniMax-M3.1-Flash emplea una arquitectura transformer dispersa de tipo Mixture of Experts con atención y capas multimodales, identificada en el código como `MiniMaxM3SparseForConditionalGeneration`. La model card de esta variante no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; esa información correspondería al modelo base y no está incluida en la documentación proporcionada. La entrada admite texto, imagen y vídeo, y la salida es únicamente texto.
 
-La cuantización se limita a los expertos enrutados, que pasan de NVFP4 a MXFP4, tanto en pesos (estática) como en activaciones (dinámica). El script de cuantización excluye explícitamente el lm_head, el vision tower, el proyector multimodal, el patch merge MLP, las capas de self-attention, la puerta del MoE, las tres primeras capas MLP del modelo de lenguaje, los expertos compartidos y los componentes DSPARK, que se conservan en su precisión original. El despliegue recomendado incorpora decodificación especulativa DSPARK con 7 tokens especulativos, caché KV en FP8 o NVFP4 y backend de atención FlashInfer (o AITER en ROCm).
+La innovación principal de esta variante es la cuantización selectiva: solo los pesos y activaciones de los expertos enrutados se convierten a MXFP4, mientras que el resto de capas (atención, `lm_head`, torre de visión, proyector multimodal, `patch_merge_mlp`, gate del MoE, primeros tres bloques del MLP, expertos compartidos y módulos DSPARK) permanecen en la precisión original. La cuantización se realizó con AMD-Quark a partir de pesos NVFP4 del modelo original. Adicionalmente, la model card documenta el uso de decodificación especulativa DSPARK con 7 tokens especulativos y verificación por bloques, así como soporte de caché KV en FP8 o NVFP4 según configuración.
 
 ## Capacidades
 
-- Generación de texto con razonamiento explícito: el parser de razonamiento `minimax_m3` permite activar el modo de pensamiento (`thinking_mode: enabled`) en las peticiones.
-- Procesamiento multimodal de entrada: acepta texto, imágenes y vídeo, y genera respuestas en texto.
-- Razonamiento matemático de nivel competitivo, según los resultados en GSM8K, AIME26 y GPQA Diamond.
-- Generación y razonamiento sobre código, con resultados reportados en SciCode.
-- Tool calling y function calling: los servidores de vLLM y SGLang se configuran con `--tool-call-parser minimax_m3` y `--enable-auto-tool-choice`.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Decodificación especulativa DSPARK integrada para acelerar la generación.
-- Seguimiento de instrucciones evaluado mediante IFBench y razonamiento de contexto largo evaluado mediante AA-LCR.
+- Generación de texto con razonamiento explícito (modo thinking habilitable mediante `chat_template_kwargs` con `thinking_mode: enabled`).
+- Razonamiento matemático de competición (GSM8K, AIME26) y científico (GPQA Diamond, SciCode).
+- Comprensión multimodal de imagen y vídeo (evaluado en MMMU Pro en modos standard y vision).
+- Tool calling y function calling nativo, con parser `minimax_m3` en vLLM y `minimax-m3` en SGLang.
+- Seguimiento de instrucciones complejas (evaluado con IFBench).
+- Razonamiento de largo contexto (evaluado con AA-LCR).
+- Decodificación especulativa integrada (DSPARK) para acelerar inferencia.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia matemática y científica de alta exigencia: con un 96,90 en GSM8K y un 93,75 en AIME26, el modelo es adecuado para tutores automáticos, verificación de demostraciones y resolución de problemas de competición donde se requiere precisión numérica y razonamiento paso a paso con modo thinking.
-- Análisis de documentos técnicos con componentes visuales: la entrada multimodal permite procesar figuras, diagramas y tablas de papers o informes junto al texto, útil en herramientas de revisión científica y extracción de información.
-- Agentes autónomos con tool calling: la combinación de parsers de herramientas en vLLM y SGLang y el modo de razonamiento habilita pipelines de agentes que encadenan llamadas a APIs, consultas a bases de datos y ejecución de código.
-- Generación y revisión de código en CI/CD: con un 49,27 en SciCode, puede integrarse como revisor automático de parches, generador de tests o asistente en tareas de refactorización dentro de pipelines que invoquen el endpoint compatible con OpenAI.
-- Procesamiento de vídeo para moderación o catalogación: la entrada de vídeo permite construir clasificadores y resumidores de contenido audiovisual, con la salida de texto enrutada a sistemas de indexación.
-- Razonamiento sobre contextos largos: los resultados en AA-LCR (74,00) indican utilidad en tareas de comprensión de documentos extensos, como análisis de contratos o informes regulatorios, siempre que se confirme la ventana de contexto efectiva.
-- Despliegue en infraestructura AMD a escala: el formato MXFP4 y la integración con AITER permiten servir el modelo en clústeres MI350/MI355 con menor huella de memoria que la versión NVFP4, lo que resulta adecuado para equipos con hardware AMD que necesitan un modelo de frontera.
+- Razonamiento matemático y científico asistido: el modelo obtiene 96,90 en GSM8K y 93,75 en AIME26, por lo que es adecuado para asistentes de resolución de problemas de competición, verificación de demostraciones y tutoría avanzada.
+- Análisis de documentos técnicos con imágenes y vídeo: al aceptar imagen y vídeo como entrada y obtener 77,57 en MMMU Pro vision, puede emplearse para inspección de diagramas, capturas de pantalla, gráficos y material audiovisual en flujos de auditoría técnica.
+- Agentes con tool calling en producción: el soporte nativo de function calling y el parser dedicado en vLLM y SGLang permiten integrarlo en orquestadores de agentes que consultan APIs, bases de datos o servicios internos.
+- Generación y revisión de código en pipelines: con 49,27 en SciCode (subproblem) y soporte de tool calling, encaja en asistentes de CI/CD que revisan parches, generan tests o resuelven incidencias con acceso a herramientas.
+- Razonamiento sobre contextos largos: los resultados en AA-LCR (77,00) indican utilidad para resumir y responder preguntas sobre documentación extensa, contratos o expedientes multi-documento.
+- Despliegue en infraestructura AMD Instinct: al estar optimizado para MI350/MI355 con ROCm 7.2.3, es candidato para clusters internos que ya operan hardware AMD y quieren evitar la dependencia de CUDA.
+- Asistentes con modo thinking para tareas de alta precisión: la posibilidad de activar razonamiento extendido por petición permite alternar entre respuestas rápidas y respuestas profundas según el caso.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card, comparando el modelo base con esta versión cuantizada:
+Resultados publicados por AMD, comparando el modelo base y esta variante cuantizada:
 
 | Benchmark | MiniMax-M3.1-Flash | Quark-MXFP4 (este modelo) | Recuperación |
 |---|---|---|---|
-| GSM8K (4-shot) | 97,20 | 96,90 | 99,69 % |
-| GPQA Diamond (mean@8) | 86,36 | 87,37 | 101,17 % |
-| AIME26 (mean@16) | 93,54 | 93,75 | 100,22 % |
-| MMMU Pro, standard (mean@1) | 79,19 | 79,13 | 99,92 % |
-| MMMU Pro, vision (mean@1) | 76,99 | 77,57 | 100,75 % |
-| SciCode, subproblem (mean@8) | 48,11 | 49,27 | 102,41 % |
-| AA-LCR (mean@8) | 73,13 | 74,00 | 101,19 % |
-| IFBench (mean@2) | 50,33 | 50,83 | 100,99 % |
+| GSM8K (4-shot) | 97,20 | 96,90 | 99,69% |
+| GPQA Diamond (mean@8) | 87,69 | 87,63 | 99,93% |
+| AIME26 (mean@16) | 93,54 | 93,75 | 100,22% |
+| MMMU Pro, standard (mean@1) | 79,19 | 79,13 | 99,92% |
+| MMMU Pro, vision (mean@1) | 76,99 | 77,57 | 100,75% |
+| SciCode, subproblem (mean@8) | 48,11 | 49,27 | 102,41% |
+| AA-LCR (mean@16) | 76,75 | 77,00 | 100,33% |
+| IFBench (mean@5) | 50,53 | 52,87 | 104,62% |
 
-No se han publicado en la información disponible datos de latencia ni throughput.
+La evaluación se realizó con vLLM y EvalScope 1.14.1. El autor advierte que los resultados pueden variar entre ejecuciones.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio ocupa 239,5 GB, por lo que se requiere un nodo multi-GPU; con tensor parallelism de 4 se reparte en aproximadamente 60 GB por GPU para los pesos, más caché KV y overhead.
-- GPU recomendadas: AMD Instinct MI350 y MI355, el hardware para el que se valida el modelo.
-- GPU de consumo: no cabe en ninguna GPU de consumo actual; el tamaño y la pila de software (ROCm 7.2.3, AITER) lo impiden.
-- Software: ROCm 7.2.3, PyTorch 2.13.0, Transformers 5.19.0, Linux.
-- Motores de despliegue: vLLM (`vllm serve` con `VLLM_ROCM_USE_AITER=1`, `--tensor-parallel-size 4`) y SGLang (`sglang serve` con `--tp 4`, `--mem-fraction-static 0.8`, `--max-running-requests 128`).
-- Optimizaciones incluidas en la configuración de referencia: decodificación especulativa DSPARK con 7 tokens, caché KV en FP8 o NVFP4, backend de atención FlashInfer o AITER, chunked prefill de 32.768 tokens en SGLang.
-- Latencia y throughput: no disponibles.
+- Microarquitectura soportada: AMD Instinct MI350 y MI355 exclusivamente según la model card; no se menciona soporte para GPU NVIDIA ni consumer.
+- ROCm 7.2.3, PyTorch 2.13.0, Transformers 5.19.0, sistema operativo Linux.
+- Tamaño del repositorio: 239,5 GB, lo que da una idea del espacio en disco necesario para almacenar los pesos.
+- Ejemplos de despliegue con `--tensor-parallel-size 4` (vLLM) y `--tp 4` (SGLang) sobre 4 aceleradores MI350/MI355.
+- Motores de inferencia: vLLM (imagen `vllm/vllm-openai-rocm:minimax-m31-flash`) y SGLang, ambos con backend AITER.
+- Caché KV configurable en FP8 o NVFP4 según los ejemplos de la model card.
+- VRAM estimada para consumer GPU: no disponible; el modelo no está orientado a GPU de consumo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/MiniMax-M3.1-Flash-Quark-MXFP4 | 220,5 mil millones | no disponible | minimax-community | Hugging Face | Cuantización MXFP4 de expertos, orientada a AMD MI350/MI355 |
-| MiniMaxAI/MiniMax-M3.1-Flash | no disponible en la información | no disponible | minimax-community | Hugging Face | Modelo base en precisión original (NVFP4 en expertos) |
-| Otros modelos de tamaño comparable | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
+| amd/MiniMax-M3.1-Flash-Quark-MXFP4 | 220,49 B | no disponible | minimax-community | safetensors MXFP4 | Hugging Face, hardware AMD |
+| MiniMaxAI/MiniMax-M3.1-Flash | 220,49 B (mismo modelo base) | no disponible | minimax-community | safetensors (NVFP4 en expertos) | Hugging Face |
+| Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La información disponible no permite comparar con modelos de otros fabricantes en términos de rendimiento, contexto o licencia.
+La información proporcionada no incluye datos de otros modelos comparables de tamaño o tarea equivalentes, por lo que la comparativa se limita al modelo base.
 
 ## Limitaciones y advertencias
 
-- La licencia minimax-community es de tipo "other"; deben revisarse sus términos antes de cualquier uso comercial, ya que la información disponible no detalla restricciones.
-- El modelo está validado exclusivamente para AMD MI350/MI355 con ROCm 7.2.3; no hay garantías de funcionamiento en otras plataformas.
-- La cuantización MXFP4 se aplica solo a los expertos enrutados; el resto de capas conserva la precisión del modelo base, por lo que el ahorro de memoria es parcial.
-- Los benchmarks publicados son un conjunto reducido (ocho tareas) y no cubren latencia, throughput ni comportamiento en producción a gran escala.
-- No se dispone de información sobre sesgos, idiomas soportados ni tasa de alucinación; debe evaluarse empíricamente antes de desplegar en dominios sensibles.
-- El uso de `--trust-remote-code` en SGLang implica ejecutar código del repositorio; conviene auditar los archivos antes de servirlo en entornos compartidos.
-- La configuración de referencia requiere ajustes específicos (parsers, DSPARK, AITER, caché KV en FP4); una configuración incorrecta puede degradar la calidad o provocar fallos.
-- El tamaño del repositorio (239,5 GB) y el requisito de tensor parallelism de 4 GPUs limitan su uso a infraestructura de centro de datos.
+- La cuantización MXFP4 se aplica solo a expertos enrutados; el resto de capas mantiene la precisión original, por lo que el ahorro de memoria es parcial respecto al modelo base.
+- El modelo está validado únicamente sobre AMD MI350/MI355 con ROCm 7.2.3; no hay evidencia publicada de funcionamiento en otras plataformas.
+- La licencia `minimax-community` no es una licencia open source estándar; es necesario revisar el archivo LICENSE antes de cualquier uso comercial.
+- No se detallan idiomas soportados, sesgos conocidos ni tasas de alucinación en la información disponible.
+- Los benchmarks publicados son de recuperación respecto al modelo base, no comparaciones absolutas con otros modelos de la competencia.
+- El autor advierte que los resultados pueden variar entre ejecuciones; las cifras deben interpretarse con esa variabilidad.
+- El tamaño del repositorio (239,5 GB) y la necesidad de 4 aceleradores para el despliegue de referencia implican un coste de infraestructura elevado.
+- El uso de `--trust-remote-code` en SGLang es necesario por el código personalizado del modelo, lo que introduce un riesgo de seguridad a evaluar en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/amd/MiniMax-M3.1-Flash-Quark-MXFP4
-- Archivos del repositorio: https://huggingface.co/amd/MiniMax-M3.1-Flash-Quark-MXFP4/tree/main
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
-- Documentación de AMD-Quark: https://quark.docs.amd.com/latest/index.html
-- Recetas de vLLM: https://recipes.vllm.ai/
-- Receta de vLLM para MiniMax-M3.1-Flash en MI355X: https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3.1-Flash?hardware=mi355x&variant=mxfp4
-- Cookbook de SGLang para MiniMax-M3.1: https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3.1
+- AMD-Quark (documentación): https://quark.docs.amd.com/latest/index.html
+- vLLM Recipes: https://recipes.vllm.ai/
+- Receta vLLM para MiniMax-M3.1-Flash en MI355X: https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3.1-Flash?hardware=mi355x&variant=mxfp4
+- SGLang cookbook para MiniMax-M3.1: https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3.1

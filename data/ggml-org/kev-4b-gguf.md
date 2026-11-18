@@ -1,100 +1,81 @@
 # ggml-org/Kev-4B-GGUF
 
 ## Resumen
+Kev-4B es un modelo de decisión de 4.207 millones de parámetros (4B) publicado por ggml-org en formato GGUF cuantizado, derivado del modelo base jaredpalmer/kev-4b, que a su vez parte de Qwen/Qwen3.5-4B-Base. No es un modelo generativo de propósito general: está diseñado para emitir decisiones a través de un endpoint específico (`/v1/systemone`) de llama.cpp, lo que lo sitúa en la categoría de modelos de clasificación y enrutamiento más que en la de asistentes conversacionales.
 
-Kev-4B-GGUF es la distribucion en formato GGUF de Kev-4B, un modelo de decision (decision model) de aproximadamente 4.200 millones de parametros publicado por la organizacion ggml-org, el mismo equipo responsable de llama.cpp. No se trata de un modelo conversacional de proposito general: su pipeline declarado en Hugging Face es text-classification y su model card indica que debe consumirse a traves de un endpoint especifico llamado /v1/systemone, integrado en la herramienta llama.app.
+Su relevancia práctica radica en dos factores. Primero, su tamaño contenido (4B) permite ejecutarlo en hardware de consumo y en entornos de borde, algo poco habitual en modelos de razonamiento complejo. Segundo, su integración nativa con llama.cpp y con la aplicación Llama simplifica el despliegue: basta con `llama serve -hf ggml-org/Kev-4B-GGUF` para levantar el servicio sin necesidad de pipelines adicionales.
 
-El modelo deriva de jaredpalmer/kev-4b, que a su vez figura asociado a Qwen/Qwen3.5-4B-Base como modelo fuente, de modo que la arquitectura subyacente es la de un transformer decoder de la familia Qwen de cuarta generacion en su variante de 4B. El repositorio pesa 15,9 GB, lo que sugiere que incluye varias cuantizaciones GGUF distintas del mismo modelo, aunque los tipos concretos no se detallan en la informacion disponible.
+La licencia Apache 2.0 y el formato GGUF lo convierten en una opción atractiva para equipos que necesitan un componente de toma de decisiones ligero dentro de arquitecturas de agentes, siempre que se asuma que la documentación pública es escasa y que el modelo está pensado para un contrato de API concreto, no para uso conversacional libre.
 
-Su relevancia es acotada y muy especifica: es un ejemplo de modelo convertido automaticamente con la herramienta ggml-org/convert para funcionar como clasificador o tomador de decisiones dentro del ecosistema llama.cpp, no como asistente general. Con cero descargas y una sola interaccion registrada en el momento de la consulta, se trata de un artefacto reciente y practicamente sin adopcion publica.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo derivado de Qwen/Qwen3.5-4B-Base y de jaredpalmer/kev-4b; la model card no detalla la arquitectura interna) |
-| Parametros totales | 4.207.062.528 (aproximadamente 4,2 mil millones, dato de safetensors) |
-| Parametros activos | No aplica (no se indica que sea un modelo MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B-Base; detalles específicos de la variante de decisión no disponibles) |
+| Parámetros totales | 4.207.062.528 (4B) |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF cuantizado; los tipos concretos (Q4_K_M, Q5_K_M, Q8_0, etc.) no estan disponibles. El repo ocupa 15,9 GB |
+| Tipos de cuantización | GGUF cuantizado (niveles concretos no disponibles) |
 | Idiomas soportados | No disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (quantized) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de 15,9 GB; incluye múltiples cuantizaciones) |
 
 ## Arquitectura y entrenamiento
+El modelo parte de Qwen3.5-4B-Base, un transformer denso de aproximadamente 4B parámetros, y ha sido especializado por jaredpalmer como modelo de decisión (decision model) antes de su conversión automática a GGUF por parte de ggml-org mediante su herramienta de conversión. La arquitectura subyacente es, por tanto, la de un transformer estándar con atención completa, sin componentes MoE ni mecanismos híbridos SSM declarados en la información disponible.
 
-La informacion proporcionada no describe la arquitectura interna ni el proceso de entrenamiento. Lo unico verificable es la cadena de procedencia: Kev-4B-GGUF es una conversion a GGUF de jaredpalmer/kev-4b, y entre los modelos fuente listados en la model card aparece Qwen/Qwen3.5-4B-Base. Esto sitúa el modelo en la estirpe de los transformers decoder de Qwen de cuarta generacion en tamano 4B, pero no hay datos publicados sobre numero de capas, dimension oculta, mecanismo de atencion, uso de atencion lineal o decodificacion especulativa.
-
-Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de ajuste fino supervisado, RLHF o DPO. La unica innovacion tecnica documentada es de tipo operativo, no de modelado: la conversion se ha realizado de forma automatica mediante https://github.com/ggml-org/convert, y el modelo se expone mediante un endpoint no estandar (/v1/systemone) implementado en llama.cpp, segun el pull request 29818 de ese repositorio.
+No se han publicado detalles sobre el corpus de entrenamiento, el número de tokens utilizados, la composición del dataset ni si hubo fases de RLHF o DPO. La model card únicamente indica que el modelo se consume a través de la API `/v1/systemone` de llama.cpp, lo que sugiere un entrenamiento orientado a producir salidas estructuradas de decisión (posiblemente clasificación o enrutamiento) en lugar de texto libre. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal en esta variante.
 
 ## Capacidades
-
-- Clasificacion y toma de decisiones: el pipeline declarado es text-classification y la etiqueta decision-model indica que su funcion principal es emitir decisiones o categorias, no generar texto libre.
-- Integracion via API dedicada: se consume a traves de /v1/systemone, un endpoint especifico distinto del chat completions habitual.
-- Ejecucion local con llama.cpp: al estar en formato GGUF, puede ejecutarse en llama.app y en el resto del ecosistema llama.cpp, incluidos despliegues en CPU y GPU.
-- Generacion de texto conversacional: el tag conversational aparece en los metadatos, pero no hay documentacion que detalle su comportamiento en dialogos abiertos.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se listan idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
+- Toma de decisiones automatizada: el modelo está diseñado para emitir decisiones a través del endpoint `/v1/systemone`, orientado a enrutamiento o clasificación dentro de flujos de agentes.
+- Clasificación de texto: la pipeline declarada en Hugging Face es `text-classification`, lo que confirma su uso previsto para categorizar entradas.
+- Integración con llama.cpp: soporte nativo mediante `llama serve` y compatibilidad con la aplicación Llama (llama.app).
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura de endpoints estándar.
+- Conversación: la etiqueta `conversational` aparece en los metadatos, aunque el uso principal documentado es el de decisión, no el diálogo abierto.
+- Capacidades multilingües: no disponibles.
+- Tool calling, agentes multi-paso, visión, audio o modo thinking: no documentados en la información disponible.
 
 ## Casos de uso
-
-- Enrutado de peticiones en una puerta de entrada de LLM: el modelo puede actuar como clasificador que decida a que modelo o a que pipeline debe dirigirse una consulta entrante, aprovechando su naturaleza de decision model y su tamano reducido para mantener baja la latencia del enrutador.
-- Moderacion y filtrado de contenido: al ser un clasificador de texto de 4,2B parametros, puede etiquetar mensajes como aptos o no aptos antes de pasarlos a un modelo mayor, reduciendo coste frente a hacer la moderacion con un modelo grande.
-- Clasificacion de tickets de soporte: asignar automaticamente categoria, prioridad o equipo responsable a partir del texto de una incidencia, ejecutandose en local sin enviar datos a terceros.
-- Automatizacion de flujos internos con llama.cpp: integrar la decision del modelo como paso condicional en scripts o pipelines ya basados en llama.app, mediante el endpoint /v1/systemone, sin necesidad de infraestructura adicional.
-- Experimentacion e investigacion en modelos de decision: servir como referencia reproducible para estudiar como se comporta un modelo de 4B ajustado especificamente para decisiones frente a un LLM generativo del mismo tamano.
-- Despliegue en hardware modesto: cuantizado en GGUF, el modelo permite clasificacion local en estaciones de trabajo o servidores sin GPU dedicada, util para entornos con requisitos de privacidad estrictos.
-- Prototipado rapido de clasificadores a medida: dado su licencia apache-2.0, puede servir de punto de partida para ajuste fino sobre taxonomias propias, sujeto a las condiciones de la licencia del modelo del que deriva.
+- Enrutamiento de consultas en sistemas de atención al cliente: el modelo puede clasificar la intención de un mensaje entrante y derivarlo al departamento o al agente adecuado, aprovechando su tamaño reducido para mantener latencia baja en picos de tráfico.
+- Filtrado previo en pipelines RAG: antes de invocar un modelo generativo grande, Kev-4B puede decidir si una consulta requiere recuperación de documentos o puede responderse directamente, reduciendo costes de inferencia.
+- Moderación de contenido en foros o comentarios: su pipeline de clasificación permite etiquetar mensajes como válidos, sospechosos o bloqueados dentro de un flujo automatizado.
+- Orquestación de agentes: como componente de decisión, puede elegir qué herramienta o sub-agente invocar en cada paso de un flujo multi-paso, actuando como router ligero dentro de una arquitectura mayor.
+- Clasificación de tickets en soporte técnico: asignación automática de prioridad y categoría a incidencias entrantes, con despliegue en local gracias al formato GGUF y a la licencia Apache 2.0.
+- Prototipado en hardware de consumo: investigadores que necesiten validar una arquitectura de decisión en una RTX 4090 o en un portátil pueden ejecutar el modelo con llama.cpp sin depender de infraestructura cloud.
+- Despliegue en el borde: al caber en equipos modestos, puede integrarse en dispositivos locales para decisiones de baja latencia sin conexión.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de Kev-4B-GGUF no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, y tampoco se han encontrado datos de rendimiento en la busqueda web realizada.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-Las cifras de VRAM que siguen son estimaciones derivadas del numero de parametros (4,2B) y de la huella habitual del formato GGUF; no proceden de documentacion oficial del modelo.
-
-- VRAM estimada para inferencia, en funcion de la cuantizacion (estimacion):
-  - Q4_K_M: en torno a 3 GB de pesos, aproximadamente 3,5-4 GB de VRAM con cache de contexto.
-  - Q5_K_M: en torno a 3,5 GB de pesos, aproximadamente 4-4,5 GB de VRAM.
-  - Q8_0: en torno a 4,5 GB de pesos, aproximadamente 5-6 GB de VRAM.
-  - FP16: en torno a 8,4 GB de pesos, aproximadamente 9-10 GB de VRAM.
-- GPU recomendadas: no disponibles en la informacion oficial. Por tamano, cualquier GPU consumer con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4070, RTX 4090) puede alojar las cuantizaciones de 4 y 5 bits. Para FP16 conviene una GPU de 12 GB o superior. En entornos de servidor, A100, H100 o L40S son sobredimensionadas para este tamano.
-- Compatibilidad con GPU consumer: si, es esperable que quepa holgadamente en GPUs consumer de gama media en cuantizaciones Q4 y Q5, e incluso en CPU con RAM suficiente.
-- Opciones de despliegue: llama.cpp y llama.app de forma nativa (la model card indica el comando "llama serve -hf ggml-org/Kev-4B-GGUF"). El formato GGUF es compatible tambien con Ollama y con servidores basados en llama.cpp. La compatibilidad con vLLM o TGI no esta confirmada para este artefacto concreto.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: para un modelo de 4B en cuantización Q4, el peso ronda los 2,5-3 GB; en Q8, alrededor de 4,5 GB; en FP16, unos 8,5 GB. Estas cifras son estimaciones basadas en el tamaño de parámetros, no datos oficiales del autor.
+- GPU recomendadas: RTX 4090, RTX 3090, A100 o H100 para despliegues de producción; GPUs de gama media (RTX 3060 12 GB, RTX 4060 Ti 16 GB) suficientes para cuantizaciones bajas.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más de VRAM usando cuantizaciones Q4/Q5.
+- Opciones de despliegue: llama.cpp (recomendado, con `llama serve`), Ollama, y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que su uso requeriría conversión a safetensors.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento ni de benchmarks en la informacion disponible, por lo que la comparativa se limita a datos verificables de procedencia, tamano y licencia.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| ggml-org/Kev-4B-GGUF | 4,2B | No disponible | No disponible | apache-2.0 | GGUF en Hugging Face |
-| jaredpalmer/kev-4b | No disponible | No disponible | No disponible | No disponible | Modelo original del que deriva esta conversion |
-| Qwen/Qwen3.5-4B-Base | No disponible | No disponible | No disponible | No disponible | Modelo base citado como fuente |
+| Kev-4B (este) | 4B | No disponible | Apache 2.0 | GGUF | Modelo de decisión especializado, integración nativa con llama.cpp |
+| Qwen3.5-4B-Base | 4B | No disponible | No disponible | Safetensors | Modelo base del que deriva; uso generativo general |
+| jaredpalmer/kev-4b | 4B | No disponible | Apache 2.0 (según repo derivado) | Safetensors | Versión original sin cuantizar del modelo de decisión |
+
+La comparación con alternativas de la misma categoría (modelos de decisión ligeros) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- No es un modelo de proposito general: la model card lo describe explicitamente como un decision model orientado a un endpoint concreto (/v1/systemone). Usarlo como asistente conversacional generico queda fuera de su caso de uso previsto.
-- Ausencia total de documentacion tecnica: no se publican datos de arquitectura, contexto, dataset de entrenamiento, idiomas ni evaluaciones, lo que impide estimar su calidad con rigor.
-- Conversion automatica sin validacion aparente: la propia model card advierte de que el modelo se ha convertido de forma automatica con ggml-org/convert, un proceso que no garantiza la equivalencia funcional exacta con el modelo original.
-- Riesgo de alucinacion: no evaluado ni documentado para este artefacto.
-- Sesgos conocidos: no disponibles. Al derivar de la familia Qwen, los sesgos de esa linea base podrian trasladarse, pero no hay analisis publicado al respecto.
-- Limitaciones de contexto e idioma: se desconoce la longitud de contexto soportada y la cobertura idiomatica; no se debe asumir soporte del castellano sin verificacion previa.
-- Licencia: el repositorio GGUF se distribuye bajo apache-2.0, lo que en principio permite uso comercial. Sin embargo, al derivar de otros modelos cuyas licencias no se detallan en la informacion disponible, conviene verificar las condiciones de jaredpalmer/kev-4b y de Qwen/Qwen3.5-4B-Base antes de un despliegue en produccion.
-- Madurez: cero descargas y una sola interaccion en el momento de la consulta, con fecha de creacion y actualizacion muy proximas entre si. Es un artefacto sin adopcion ni validacion por parte de la comunidad.
-- Dependencia de toolchain: su uso esta ligado a una version concreta de llama.cpp que implemente el endpoint /v1/systemone; en versiones que no lo incluyan, el modelo puede no ser utilizable segun lo previsto.
+- Documentación muy escasa: la model card no detalla datos de entrenamiento, sesgos, idiomas ni evaluación, lo que dificulta auditar su comportamiento en producción.
+- Uso restringido a un contrato de API concreto: está pensado para `/v1/systemone`; emplearlo como modelo conversacional general puede producir resultados fuera de su dominio de entrenamiento.
+- Riesgo de alucinación: no cuantificado ni evaluado públicamente; al ser un modelo de decisión, los errores se manifestarán como clasificaciones incorrectas o rutas mal asignadas.
+- Idiomas no declarados: no se puede garantizar un rendimiento multilingüe sin evaluación previa.
+- Contexto no documentado: se desconoce la ventana máxima, lo que limita el diseño de flujos con entradas largas.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-4B-Base, cuyos términos no se detallan en la información disponible.
+- Conversión automática: el modelo ha sido convertido a GGUF mediante una herramienta automática, sin que se documente una validación exhaustiva de la cuantización.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/ggml-org/Kev-4B-GGUF
-- Modelo original: https://huggingface.co/jaredpalmer/kev-4b
-- Modelo base citado: https://huggingface.co/Qwen/Qwen3.5-4B-Base
-- Herramienta de conversion: https://github.com/ggml-org/convert
-- Pull request de llama.cpp con el endpoint /v1/systemone: https://github.com/ggml-org/llama.cpp/pull/29818
-- Entorno de ejecucion recomendado: https://llama.app
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces encontrados no guardan relacion con el contenido de la ficha y se han descartado.
+- Hugging Face: https://huggingface.co/ggml-org/Kev-4B-GGUF
+- Modelo base original: https://huggingface.co/jaredpalmer/kev-4b
+- Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B-Base
+- Pull request de llama.cpp con la API `/v1/systemone`: https://github.com/ggml-org/llama.cpp/pull/29818
+- Herramienta de conversión: https://github.com/ggml-org/convert
+- Aplicación Llama: https://llama.app

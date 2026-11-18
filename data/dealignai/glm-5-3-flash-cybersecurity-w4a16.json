@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 48,
-  "downloads_30d": 3673,
+  "downloads_30d": 3644,
   "trending_score": 10,
   "parameters": 321323031390,
   "parameters_human": "321.32B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "dealignai/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
-      "url": "https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8",
-      "snippet": "Copyright verbatim-reproduction was excluded from the above — it's a legal-reproduction boundary distinct from harm-refusal and the …"
-    },
-    {
-      "title": "dealignai/GLM-5.3-CYBERSECURITY-FP8 at main - Hugging Face",
-      "url": "https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8/tree/main",
-      "snippet": "fix: default clear_thinking=true in chat_template.jinja + add repetition_penalty=1.1 default in generation_config.json — mitigates …"
-    },
-    {
-      "title": "GLM-5.3-CYBERSECURITY-FP8: Text-to-Text model - aimodels.fyi",
-      "url": "https://www.aimodels.fyi/models/huggingFace/glm-5.3-cybersecurity-fp8-dealignai",
-      "snippet": "It is a cybersecurity-focused CRACK release from dealignai, based on JANGQ-AI/GLM-5.3-FP8, an FP8 quantization of zai-org/GLM …"
-    },
-    {
-      "title": "GLM 5.3 CYBERSECURITY FP8 by dealignai - llm-explorer.com",
-      "url": "https://llm-explorer.com/model/dealignai%2FGLM-5.3-CYBERSECURITY-FP8,5FAoiCM3UW505NlU50d9Vr",
-      "snippet": "Sep 1, 2026 · GLM 5.3 CYBERSECURITY FP8 is an open-source 753.3b LLM by dealignai. VRAM 112.6GB, 1024K context. …"
-    },
-    {
-      "title": "Dealign.ai — AI Alignment Research by Jinho Jang",
-      "url": "https://dealign.ai/",
-      "snippet": "We prove that MoE safety at the 394B scale is a multiplicative three-pathway system requiring simultaneous neutralization. We …"
-    }
-  ]
+  "sources": []
 }

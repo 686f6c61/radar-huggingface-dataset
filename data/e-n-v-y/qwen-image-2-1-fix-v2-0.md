@@ -2,87 +2,80 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Fix-v2.0 es un adaptador LoRA de generacion de imagenes publicado por el usuario e-n-v-y en Hugging Face. No es un modelo completo, sino un ajuste de bajo rango (Low-Rank Adaptation) que se aplica sobre el modelo base Qwen/Qwen-Image-2.1, un sistema de text-to-image de la familia Qwen. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con la naturaleza ligera de un adaptador LoRA frente al peso de un modelo de difusion completo.
+Qwen-Image-2.1-Fix-v2.0 es un adaptador LoRA para generación de imágenes a partir de texto (text-to-image), publicado por el usuario e-n-v-y en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base Qwen/Qwen-Image-2.1, un modelo de difusión de la familia Qwen. El adaptador se distribuye en formato compatible con la librería `diffusers` y sigue la plantilla `diffusion-lora`, por lo que su uso previsto es la carga sobre el modelo base mediante `PeftModel` o el pipeline de difusión correspondiente.
 
-El modelo se distribuye a traves de la libreria diffusers y esta etiquetado como text-to-image y lora, siguiendo la plantilla oficial diffusion-lora. Su proposito, segun el nombre ("Fix-v2.0"), apunta a corregir o refinar el comportamiento del modelo base, presumiblemente para reducir artefactos y mejorar la calidad de ciertos tipos de composicion. La model card incluye ejemplos de generacion con prompts detallados en ingles, orientados a escenas de fantasia, surrealismo y fotografia hiperrealista.
+El repositorio es de pequeño tamaño (0,1 GB), lo que es coherente con un adaptador LoRA y no con un modelo completo. Cuenta con 3034 descargas y 45 likes en el momento de la consulta, lo que indica un uso moderado dentro de la comunidad. La model card incluye ejemplos de prompts detallados orientados a ilustración fantástica, fotografía hiperrealista y composiciones surrealistas, junto con un `negative_prompt` común que sugiere un enfoque en la mejora de la calidad visual y la reducción de artefactos.
 
-La relevancia de esta ficha es limitada por la escasez de informacion publica: no se declaran licencia, idiomas, parametros ni resultados de benchmarks, el repositorio registra 0 descargas y 12 likes, y la busqueda web no ha devuelto ninguna fuente tecnica relacionada con el modelo (los resultados obtenidos tratan sobre la letra "e" en frances y no son pertinentes). Por tanto, buena parte de los campos tecnicos se marcan como no disponibles.
+No se dispone de información sobre la licencia, los idiomas soportados ni las especificaciones técnicas del adaptador más allá de los metadatos de Hugging Face. Tampoco se han publicado resultados de benchmarks ni detalles sobre el proceso de entrenamiento. Esta ficha se limita, por tanto, a los datos verificables disponibles en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre el modelo de difusion Qwen/Qwen-Image-2.1 |
-| Parametros totales | no disponible (repositorio de 0,1 GB) |
-| Longitud de contexto | no aplica (modelo text-to-image); no disponible |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusión Qwen-Image-2.1 |
+| Parametros totales | no disponible (repositorio de 0,1 GB, compatible con adaptador LoRA) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo text-to-image, no aplica contexto de texto) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponibles (los ejemplos de la model card estan en ingles) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | diffusers (adaptador LoRA, presumiblemente safetensors) |
-| Modelo base | Qwen/Qwen-Image-2.1 |
-| Libreria | diffusers |
-| Tamano de repositorio | 0,1 GB |
-| Descargas | 0 |
-| Likes | 12 |
-| Fecha de creacion | 2026-10-03 |
-| Fecha de actualizacion | 2026-10-03 |
+| Formato de pesos | safetensors (compatible con diffusers y plantilla diffusion-lora) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del adaptador mas alla de su naturaleza LoRA sobre Qwen/Qwen-Image-2.1. Un LoRA introduce matrices de bajo rango entrenables que se acoplan a las capas del modelo base congelado, de modo que el resultado final depende por completo del backbone sobre el que se aplica. Al tratarse de un adaptador, su arquitectura efectiva es la del modelo Qwen-Image-2.1, cuyos detalles (tipo de transformer de difusion, dimensiones, numero de parametros) no se proporcionan en la informacion recibida.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo de difusión Qwen/Qwen-Image-2.1. La arquitectura subyacente es la del modelo base, un transformer de difusión para generación de imágenes condicionada por texto. El adaptador introduce matrices de bajo rango en las capas del modelo base, lo que permite un ajuste eficiente en parámetros y almacenamiento. El repositorio ocupa 0,1 GB, lo que confirma que se trata de un conjunto de pesos de adaptador y no de un modelo completo.
 
-Tampoco se especifican los datos de entrenamiento: no hay referencias al numero de imagenes, a la composicion del dataset, al uso de tecnicas como RLHF o DPO, ni al rango (rank) o alpha del LoRA. El sufijo "Fix-v2.0" sugiere una orientacion correctiva sobre la version anterior, pero no se documenta que se corrige ni como. Los unicos indicios sobre el comportamiento esperado provienen de los ejemplos de la model card, que muestran prompts detallados de escenas de fantasia (un owlbear), composiciones surrealistas (una catedral-biblioteca de conocimiento) y fotografias hiperrealistas (una puerta de piedra en un bosque de espiritus), todos acompanados de un negative_prompt comun orientado a evitar artefactos, colores desaturados, baja calidad, manos mal dibujadas y otros defectos.
+No se dispone de información sobre el conjunto de datos de entrenamiento, el número de pasos, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. La model card no incluye detalles técnicos del entrenamiento, únicamente ejemplos de uso con prompts y un `negative_prompt` común. No se han documentado innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto (text-to-image) mediante la libreria diffusers.
-- Aplicacion como adaptador LoRA sobre Qwen/Qwen-Image-2.1, sin funcionar de forma autonoma.
-- Refuerzo de estilos concretos: ilustracion fantastica, surrealismo detallado y fotografia hiperrealista, segun los ejemplos publicados.
-- Uso combinado con negative prompts para filtrar artefactos y defectos anatomicos (manos, dedos, etc.).
-- No se documentan capacidades de edicion de imagen, inpainting, outpainting, vision, audio, tool calling ni razonamiento multi-paso.
-- No se documentan capacidades multilingues; los ejemplos de la model card estan en ingles.
-- No se documenta un modo "thinking" ni ninguna capacidad especial adicional.
+- Generación de imágenes a partir de descripciones textuales detalladas (text-to-image).
+- Especialización aparente en ilustración fantástica, surrealismo y fotografía hiperrealista, según los ejemplos de la model card.
+- Soporte de `negative_prompt` para evitar artefactos, baja calidad, marcas de agua y otros defectos visuales.
+- Integración con la librería `diffusers` y la plantilla `diffusion-lora`, lo que permite cargarlo sobre el modelo base Qwen/Qwen-Image-2.1.
+- No se dispone de información sobre soporte de tool calling, agentes, multi-step reasoning ni capacidades multilingües.
+- No se dispone de información sobre modos especiales como thinking mode, visión o audio.
 
 ## Casos de uso
 
-- Ilustracion de fantasia y criaturas: el adaptador se ha probado con prompts de criaturas miticas detalladas (por ejemplo, un owlbear en un claro del bosque), por lo que encaja en la generacion de arte conceptual para juegos de rol, libros o videojuegos.
-- Arte conceptual surrealista: los ejemplos incluyen composiciones oniricas complejas (catedrales-libreria, paradojas visuales), utiles para portadas, carteles y exploracion creativa.
-- Fotografia hiperrealista sintetica: la muestra de una puerta de piedra en un bosque brumoso sugiere su uso para escenarios y fondos fotorrealistas en produccion audiovisual o arquitectura conceptual.
-- Ilustracion editorial y de portada: la combinacion de detalle pictorico y estructura compositiva permite generar imagenes de portada para libros, revistas o articulos.
-- Generacion de assets para videojuegos: conceptos de criaturas, entornos y objetos que luego pueden servir de referencia para modelado 3D o diseno de niveles.
-- Contenido para marketing y redes: creacion de visuales atmosfericos (bosques, ruinas, mundos magicos) para campanas tematicas.
-- Experimentacion en pipelines de difusion: al ser un LoRA ligero (0,1 GB), es sencillo integrarlo y compararlo con otros adaptadores sobre el mismo modelo base en flujos de investigacion.
+- Ilustración de fantasía y ciencia ficción: el adaptador está orientado a escenas complejas con criaturas, arquitecturas imposibles y atmósferas detalladas, como demuestra el ejemplo del owlbear. Se usaría cargando el LoRA sobre Qwen-Image-2.1 y proporcionando prompts descriptivos con un `negative_prompt` para filtrar artefactos.
+- Creación de arte conceptual para videojuegos y rol: los ejemplos de la model card incluyen bestiarios y entornos mythic, adecuados para generar material de referencia visual en fases de preproducción.
+- Generación de imágenes fotorrealistas de paisajes y arquitectura: el tercer ejemplo muestra una puerta de piedra en un bosque espiritual con acabado hiperrealista, útil para moodboards y presentaciones.
+- Composición de escenas surrealistas y simbólicas: el ejemplo de la "Dimension of Knowledge" sugiere capacidad para integrar elementos abstractos, tipografía visual y estructuras recursivas, aplicable a portadas de libros o ilustración editorial.
+- Prototipado rápido de ideas visuales: al ser un adaptador ligero, permite iterar sobre el modelo base sin necesidad de reentrenar desde cero, lo que agiliza la exploración creativa.
+- Integración en pipelines de generación automatizada: al ser compatible con `diffusers`, puede incorporarse en flujos de trabajo programáticos para generar lotes de imágenes con parámetros controlados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye metricas objetivas (FID, CLIP score, evaluaciones humanas ni comparaciones cuantitativas) y la busqueda web no ha devuelto ninguna fuente tecnica relacionada.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El adaptador LoRA en si ocupa 0,1 GB, por lo que su almacenamiento es trivial.
-- Para la inferencia es imprescindible cargar el modelo base Qwen/Qwen-Image-2.1, cuyos requisitos de VRAM no se especifican en la informacion disponible.
-- No se dispone de datos sobre GPU recomendadas (A100, H100, RTX 4090, etc.) para este adaptador.
-- No se puede confirmar si el conjunto (base + LoRA) cabe en una GPU de consumo; depende del modelo base, cuyo tamano no se indica.
-- Opciones de despliegue: al estar publicado para la libreria diffusers, es compatible con pipelines de diffusers; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- No se proporcionan estimaciones de latencia ni de throughput.
+- VRAM estimada para inferencia: no disponible para el adaptador; depende del modelo base Qwen/Qwen-Image-2.1. Al tratarse de un LoRA de 0,1 GB, el requisito adicional de VRAM es mínimo, pero el modelo base de difusión requiere una GPU con VRAM suficiente para text-to-image (habitualmente 8-24 GB según resolución y precisión).
+- GPU recomendadas: no disponible. Para el modelo base se recomendarían GPU con al menos 8 GB de VRAM (RTX 3060/4060 y superiores), aunque no se confirma en la información proporcionada.
+- ¿Cabe en GPU consumer? El adaptador sí; el modelo base probablemente sí en GPU consumer de gama media-alta, pero no se dispone de confirmación.
+- Opciones de despliegue: `diffusers` (librería indicada en los metadatos). No se dispone de información sobre vLLM, llama.cpp, Ollama o TGI, que no son aplicables a modelos de difusión.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado datos de otros adaptadores LoRA comparables ni de sus caracteristicas (parametros, contexto, rendimiento, licencia), y la informacion disponible sobre este modelo es demasiado escasa para establecer una comparacion rigurosa. Como referencia de categoria, solo puede senalarse que se trata de un LoRA de text-to-image sobre Qwen/Qwen-Image-2.1, pero sin cifras que permitan contrastarlo con alternativas.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Se trata de un adaptador LoRA específico para Qwen-Image-2.1, y no se han encontrado alternativas documentadas en la información disponible.
+
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen-Image-2.1-Fix-v2.0 | no disponible (LoRA) | no aplica | no disponible | no disponible | Hugging Face |
+| Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada, por lo que no puede garantizarse el uso comercial ni la redistribucion; conviene consultar al autor antes de emplearlo en produccion.
-- No se documentan sesgos conocidos, pero al ser un adaptador de generacion de imagenes hereda los sesgos del modelo base y de sus datos de entrenamiento.
-- Riesgo de alucinacion visual y de artefactos propios de los modelos de difusion; el autor mitiga parte de ellos con un negative_prompt explicito.
-- No se especifican los idiomas soportados; los ejemplos estan en ingles y no hay evidencia de buen rendimiento en otros idiomas.
-- El sufijo "Fix-v2.0" implica una funcion correctiva que no se describe tecnicamente, por lo que se desconoce que problemas del modelo base resuelve y en que medida.
-- No funciona de forma autonoma: requiere el modelo base Qwen/Qwen-Image-2.1, y su comportamiento depende de la version exacta de este.
-- El repositorio es muy reciente y con 0 descargas, sin validacion independiente ni resultados de benchmarks.
-- El rango del LoRA, el alpha y la configuracion de entrenamiento no se publican, lo que dificulta reproducir o ajustar su intensidad.
+- No se dispone de información sobre sesgos conocidos del adaptador ni del modelo base.
+- Riesgo de alucinación visual: como todo modelo generativo de imágenes, puede producir artefactos, anatomías incorrectas o incoherencias espaciales, especialmente en escenas complejas. El `negative_prompt` incluido sugiere que el autor es consciente de estos problemas.
+- Limitaciones de contexto o idioma: no disponible. No se especifican idiomas soportados; los prompts de ejemplo están en inglés.
+- Restricciones de licencia para uso comercial: la licencia no está disponible, por lo que no se puede confirmar si permite uso comercial. Se recomienda contactar con el autor antes de utilizarlo en producción.
+- Caveat importante: al ser un adaptador LoRA, su comportamiento depende del modelo base Qwen/Qwen-Image-2.1; cualquier limitación o restricción de licencia del modelo base también aplica.
+- No se han documentado garantías de calidad ni procesos de validación más allá de los ejemplos de la model card.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix-v2.0
-- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada (los resultados obtenidos no guardan relacion con el modelo).
+- [Hugging Face: e-n-v-y/Qwen-Image-2.1-Fix-v2.0](https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix-v2.0)
+- [Modelo base: Qwen/Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1)

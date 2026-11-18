@@ -2,118 +2,120 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-Flash-Next-Q4_K_XL-GGUF es una recuantización en formato GGUF del modelo multimodal ukisai/Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario ethanwtodd. El objetivo no es crear un modelo nuevo, sino reempaquetar los pesos en exactamente la misma disposición de tipos por tensor que la cuantización UD-Q4_K_XL de unsloth/Qwen3.8-Flash-Next-GGUF, de modo que el motor de inferencia gufo pueda servir Swift 1.5 sobre hardware Strix Halo (gfx1151) con ROCm. El modelo subyacente es un transformer disperso (MoE) con 176.943.899.520 parámetros totales y capacidades de imagen-texto, según los metadatos del repositorio.
+Swift-1.5-Qwen3.8-Flash-Next-Q4_K_XL-GGUF es una cuantización GGUF del modelo multimodal ukisai/Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario ethanwtodd. No se trata de un modelo nuevo entrenado desde cero, sino de una recuantización del Q8_0 oficial de UkisAI a un layout de tipos por tensor que replica exactamente el UD-Q4_K_XL de unsloth/Qwen3.8-Flash-Next-GGUF, con el objetivo de que el servidor gufo pueda ejecutarlo en hardware Strix Halo (gfx1151) bajo ROCm.
 
-La relevancia de esta ficha es práctica: las cuantizaciones GGUF originales de UkisAI (tiers GSQ-RCO e IQ) usan tipos IQ que el cargador Flash-Next de gufo no acepta, y las variantes Q4_K_S y Q8_0 almacenan el embedding por capa con tipos no soportados. Esta recuantización resuelve ese problema de compatibilidad y, además, reporta una reducción notable de la longitud de razonamiento en tareas de código, contexto largo y matemáticas, con una tasa de acierto ligeramente superior a la del modelo base en la suite básica del autor.
+El modelo base es un transformer de tipo mezcla de expertos (MoE) con capacidades de imagen-a-texto, 176.943.899.520 parámetros totales y un contexto que, según la model card, permite dos sesiones simultáneas de 262.144 tokens en un Strix Halo de 128 GB. La cuantización ocupa 111,3 GB en tres shards más un proyector de visión BF16 de 0,9 GB, un tamaño idéntico al del UD-Q4_K_XL de unsloth (diferencia inferior a 2 KB), lo que garantiza que cabe donde cabe el original.
 
-El repositorio ocupa 112,2 GB (111,3 GB en pesos más el proyector visual y utilidades) y se distribuye en tres shards GGUF. La licencia es swift-open-license-1.0, lo que obliga a revisar sus términos antes de cualquier uso comercial. No se dispone de información sobre idiomas soportados ni de benchmarks estándar publicados.
+La relevancia de esta ficha radica en que demuestra un caso de interoperabilidad entre ecosistemas: los GGUFs propios de UkisAI (tiers GSQ-RCO e IQ) no encajan en el loader de gufo, que solo acepta un conjunto estrecho de tipos de tensor, por lo que fue necesario un trabajo de recuantización con matriz de importancia y verificación tensor a tensor. Los resultados publicados por el autor muestran 71/74 tareas superadas frente a 68/74 del base de unsloth, con una reducción notable de la longitud de pensamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer disperso (MoE) con componentes SSM (`ssm_*`), hyper-connections, capa de embedding por token (`ple_conv1d`), indexer y cabeza MTP; pipeline image-text-to-text |
-| Parametros totales | 176.943.899.520 |
+| Arquitectura | Transformer MoE multimodal (image-text-to-text), con capas SSM, expertos enrutados y mecanismo de hyper-connection; incluye cabeza MTP |
+| Parametros totales | 176.943.899.520 (dato real de safetensors del modelo base) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens (configuración de servicio reportada: `--sessions 2 --context 262144`) |
-| Tipos de cuantizacion | Q4_K_XL (disposición por tensor tipo UD-Q4_K_XL); detalles: expertos enrutados gate/up Q4_K (una capa Q5_K), down Q5_1 (cinco capas Q8_0), embedding por capa IQ4_NL, `ple_conv1d` F32, proyecciones de salida de hyper-connection Q8_0, atención/expertos compartidos/SSM/token embedding/salida Q8_0, indexer BF16, norms y router F32 |
+| Longitud de contexto | 262.144 tokens por sesión (dos sesiones simultáneas en Strix Halo de 128 GB según la model card) |
+| Tipos de cuantizacion | Q4_K, Q5_K, Q6_K, Q5_1, Q8_0, IQ4_NL, BF16, F16, F32 (layout por tensor específico) |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 |
-| Formato de pesos | GGUF (3 shards) + proyector visual `mmproj-...-BF16.gguf` (0,9 GB) |
+| Licencia | swift-open-license-1.0 (etiquetada como "other" en el Hub) |
+| Formato de pesos | GGUF (3 shards + mmproj BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer disperso con mezcla de expertos (MoE) que incorpora elementos de arquitectura híbrida: tensores `ssm_*` (state space model), hyper-connections con proyecciones de inyección y de salida, una capa de embedding por token (`ple_conv1d`) y un indexer en BF16. Dispone de una cabeza MTP (multi-token prediction) que, según la model card, permanece sin cambios respecto al modelo base y es compatible con el sidecar `MTP/mtp-Qwen3.8-Flash-Next-shared-Q8_0.gguf` de unsloth. El total de tensores es 1224, con tipos y formas idénticos a los de la cuantización UD-Q4_K_XL de unsloth, verificado tensor a tensor desde las cabeceras de ambos ficheros.
+La arquitectura del modelo base combina atención con capas de tipo SSM (`ssm_*` en los nombres de tensor), expertos enrutados y expertos compartidos, además de proyecciones de hyper-connection y una convolución por capa (`ple_conv1d`) asociada al embedding por capa. El pipeline declarado es image-text-to-text, con un proyector de visión separado (`mmproj-Swift-1.5-Qwen3.8-Flash-Next-BF16.gguf`, 0,9 GB) que se mantiene sin cambios respecto al repositorio GGUF de UkisAI. Dispone de una cabeza MTP (multi-token prediction) que, según la model card, no se modificó en Swift 1.5 y es compatible con el sidecar de unsloth.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. La model card de esta recuantización no documenta el entrenamiento del modelo base; solo describe el proceso de cuantización. Este se realizó con `llama-quantize --allow-requantize --tensor-type-file` (llama.cpp 0.7.0 de nixpkgs) partiendo del Q8_0 de UkisAI (cinco shards, verificado con SHA-256 contra el Hub), usando la importance matrix `imatrix-swiftfn-v1mix.gguf` (926 entradas) del repositorio GSQ-RCO. Los expertos se recuantizaron desde Q8_0, no desde BF16 (el repositorio BF16 de UkisAI está restringido), y el autor indica que el paso extra de redondeo Q8_0 no se midió por separado.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base. La model card de esta cuantización se centra exclusivamente en el proceso de recuantización: parte del Q8_0 de UkisAI (cinco shards, verificados por SHA-256), aplica `llama-quantize --allow-requantize --tensor-type-file` con la matriz de importancia `imatrix-swiftfn-v1mix.gguf` (926 entradas) y fija cada tensor cuantizable al tipo del UD-Q4_K_XL. Los expertos enrutados gate/up quedan en Q4_K (una capa en Q5_K) y los down en Q5_1 (cinco capas en Q8_0); el embedding por capa usa IQ4_NL; `ple_conv1d` e hyper-connection inject se ensanchan a F32; el resto se copia sin cambios. Se verificaron los 1224 tensores contra el UD-Q4_K_XL (tipo y forma idénticos) y los tres shards contra el fichero sin dividir.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con pipeline declarado `image-text-to-text` (entrada de imagen y texto).
-- Razonamiento con modo de pensamiento configurable (`reasoning_effort: xhigh` en las evaluaciones del autor) y presets de muestreo tipo Qwen3.8 (temperatura 1.0, top_p 0.95, top_k 20).
-- Tool calling y function calling: la suite de evaluación incluye copia exacta de identificadores y SHA de 40 caracteres dentro de llamadas a herramientas.
-- Tareas de agente sobre sistema de ficheros en múltiples turnos.
-- Recuperación multi-salto sobre contexto largo (evaluada con ~50k tokens de logs; el tier duro pendiente cubre ~120k tokens).
-- Generación de código verificada con tests unitarios en sandbox.
+- Generación de texto conversacional multi-turno con ventanas de contexto muy largas (hasta 262.144 tokens por sesión).
+- Procesamiento de imagen y texto de entrada (pipeline image-text-to-text) mediante proyector de visión BF16.
+- Razonamiento con modo thinking configurable (`reasoning_effort: xhigh` en las evaluaciones del autor) y presets de muestreo específicos.
+- Tool calling y function calling, evaluado en tareas de copia exacta de identificadores y SHAs de 40 caracteres dentro de llamadas a herramientas.
+- Tareas de agente multi-paso sobre sistema de ficheros, con verificación por código.
+- Recuperación de dos saltos sobre aproximadamente 50.000 tokens de logs.
+- Generación de código validada con tests unitarios en sandbox.
 - Matemáticas con verificación por fuerza bruta.
-- Decodificación especulativa mediante cabeza MTP, con 76% de tokens propuestos aceptados y 1,76× de aceleración reportada.
+- Decodificación especulativa mediante cabeza MTP (multi-token prediction) con sidecar compatible.
 - Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Agentes de sistema de ficheros: el modelo puede ejecutar tareas multi-turno que requieren listar, leer y modificar archivos mediante tool calling, aprovechando la ventana de 262.144 tokens para mantener el estado de la tarea sin truncar.
-- Automatización de refactorización con verificación: generación de código cuyos resultados se validan con tests unitarios en sandbox, adecuado para integrarse en pipelines de CI/CD donde la salida debe pasar pruebas antes de aplicarse.
-- Análisis de logs extensos: recuperación de dos saltos sobre ~50k tokens de logs (y hasta ~120k en el tier duro pendiente), útil para diagnóstico de incidentes donde la evidencia está dispersa en múltiples ficheros.
-- Asistentes con entrada visual: al declarar pipeline image-text-to-text y distribuir un proyector visual BF16 de 0,9 GB, puede emplearse en tareas que combinen capturas, diagramas o documentos escaneados con instrucciones textuales.
-- Razonamiento matemático verificado: resolución de problemas con comprobación por fuerza bruta, aplicable a generación de ejercicios con solución comprobada o a validación de cálculos en pipelines de datos.
-- Despliegue local en hardware de gran memoria: con 111,3 GB de pesos, encaja en una estación Strix Halo de 128 GB sirviendo dos sesiones simultáneas de 262.144 tokens con MTP, lo que permite entornos de desarrollo o investigación sin GPU de datacenter.
-- Extracción estructurada con tool calling: copia exacta de identificadores y hashes en llamadas a herramientas, útil para integraciones que exigen precisión literal en los argumentos (por ejemplo, APIs internas con claves opacas).
+- Agentes de sistema de ficheros: el modelo ha sido evaluado en tareas de agente multi-paso sobre filesystem con verificación por código, lo que lo hace adecuado para automatizar operaciones de lectura, edición y organización de archivos en entornos controlados con contexto largo.
+- Análisis de logs extensos: con 262.144 tokens por sesión y capacidad de recuperación de dos saltos sobre ~50.000 tokens de logs, puede localizar información correlacionada en trazas largas sin truncar el contexto.
+- Asistentes con tool calling preciso: la evaluación incluye copia exacta de identificadores y SHAs de 40 caracteres en llamadas a herramientas, un requisito típico de integraciones con APIs y pipelines de CI/CD donde la fidelidad del argumento es crítica.
+- Generación de código en producción: los tests unitarios en sandbox y la reducción de tokens de pensamiento en tareas de código (mediana de 7,4k a 1,8k) lo hacen viable para pipelines donde la latencia importa, integrado vía gufo o llama.cpp.
+- Razonamiento matemático verificado: las tareas de matemáticas con verificación por fuerza bruta y la reducción de tokens de pensamiento (7,9k a 4,5k de mediana) permiten usarlo en resolución de problemas con validación automática.
+- Despliegue local en hardware consumer de gama alta: con 111,3 GB totales cabe en un Strix Halo de 128 GB ejecutando dos sesiones de 262.144 tokens con MTP, lo que habilita asistentes locales sin dependencia de la nube.
+- Procesamiento de documentos con imagen: al ser image-text-to-text, puede extraer información de capturas, diagramas o documentos escaneados combinándolos con texto en la misma conversación.
+- Servicio multi-sesión con decodificación especulativa: el MTP permite 46,2 tok/s con `--draft-tokens 5` frente a 26,3 tok/s sin él (1,76×), útil para servir dos peticiones concurrentes a ~27,5 tok/s cada una.
 
 ## Benchmarks y rendimiento
 
-Los datos provienen de una única máquina Strix Halo con gufo `34ebb5f` (ROCm 7.2.3, gfx1151, `--sessions 2 --context 262144`). La suite básica consta de 37 tareas × 2 muestras, corregidas por código (sin jueces modelo), con MTP desactivado.
+Los datos provienen de una única máquina Strix Halo con gufo `34ebb5f` (ROCm 7.2.3, gfx1151) y muestreo con preset thinking de Qwen3.8 (temperatura 1.0, top_p 0.95, top_k 20, min_p 0, presence_penalty 0) a `reasoning_effort: xhigh`. La suite básica consta de 37 tareas × 2 muestras, calificadas por código.
 
 | Modelo | Tareas superadas | Tokens de completion | Tareas que agotaron el límite |
 |---|---:|---:|---:|
-| Este modelo | 71/74 | 130k | 1 |
+| Este modelo (MTP off) | 71/74 | 130k | 1 |
 | Qwen3.8-Flash-Next UD-Q4_K_XL (unsloth, base) | 68/74 | 267k | 3 |
 | Swift-1.5 Qwen3.8-27B FP8 (Radiance, R9700 ×2), referencia | 72/74 | 186k | 0 |
 | Qwen3.8-27B FP8 (base), referencia | 67/74 | 311k | 3 |
 
-El autor advierte que, con 74 tareas por modelo, las diferencias de tasa de acierto son indicativas y no estadísticamente significativas. La diferencia consistente está en la longitud del razonamiento: la mediana de tokens de completion baja de 7,4k a 1,8k en tareas de código, de 3,7k a 0,9k en contexto largo y de 7,9k a 4,5k en matemáticas.
+El autor advierte que, con 74 tareas, las diferencias de tasa de acierto son indicativas pero no significativas. La diferencia consistente es la longitud de pensamiento: la mediana de tokens de completion cae de 7,4k a 1,8k en tareas de código, de 3,7k a 0,9k en tareas de contexto largo y de 7,9k a 4,5k en matemáticas.
 
-Rendimiento con MTP (20 prompts de la suite, decodificación greedy, sin caché de prompt):
+Rendimiento con MTP:
 
 | Métrica | Sin MTP | Con MTP (`--draft-tokens 5`) |
 |---|---:|---:|
-| Throughput | 26,3 tok/s | 46,2 tok/s |
-| Aceleración | — | 1,76× |
-| Tokens propuestos aceptados | — | 76% |
+| Throughput (20 prompts) | 26,3 tok/s | 46,2 tok/s (1,76×) |
+| Tokens draft aceptados | — | 76% |
+| Dos peticiones concurrentes | 20,8 tok/s cada una | 27,5 tok/s cada una (1,3×) |
+| Suite básica | 71/74 (130k tokens) | 69/74 (141k tokens) |
 
-La decodificación greedy con y sin MTP es idéntica token a token (57.982 tokens en total, incluyendo generaciones de 10.600 y 12.000 tokens). Los resultados de la suite con muestreo y MTP activado, así como el tier duro (matemáticas difíciles, código con trampas de rendimiento, corrección de bugs multi-fichero con tests ocultos y agregación multi-salto sobre ~120k tokens), están pendientes de publicación.
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+La decodificación greedy con MTP on y off es idéntica token a token sobre 20 prompts (57.982 tokens, incluyendo generaciones de 10.600 y 12.000 tokens).
 
 ## Requisitos de hardware
 
-- VRAM/ memoria unificada estimada: 111,3 GB de pesos más el proyector visual de 0,9 GB; en la práctica requiere un sistema con al menos ~112 GB disponibles para pesos, más espacio para KV cache de las sesiones.
-- GPU recomendadas: el autor valida el despliegue en Strix Halo (gfx1151) con ROCm 7.2.3; no se documentan otras GPU en la información disponible.
-- GPU de consumo: no cabe en ninguna GPU de consumo convencional (RTX 4090 con 24 GB, etc.) por el tamaño de los pesos; solo es viable en sistemas con memoria unificada grande o múltiples GPU.
-- Despliegue: gufo `34ebb5f` es el motor validado, con `--sessions 2 --context 262144` y MTP opcional mediante el sidecar `MTP/mtp-Qwen3.8-Flash-Next-shared-Q8_0.gguf`. El formato GGUF es compatible con el ecosistema llama.cpp, pero la disposición específica de tipos está pensada para el cargador Flash-Next de gufo; no se confirma compatibilidad con otros motores en la información disponible.
-- Latencia y throughput: 26,3 tok/s sin MTP y 46,2 tok/s con `--draft-tokens 5` en Strix Halo con gufo.
-- Almacenamiento: 112,2 GB para el repositorio completo; el shard de carga es `...-00001-of-00003.gguf` (47,6 GB) y el cargador localiza los demás.
+- VRAM/espacio estimado: 111,3 GB para los pesos GGUF completos (47,6 + 47,8 + 16,0 GB en tres shards) más 0,9 GB del proyector de visión BF16; el autor indica que cabe donde cabe el UD-Q4_K_XL de unsloth.
+- Hardware validado: un único Strix Halo (gfx1151) con 128 GB de memoria bajo ROCm 7.2.3, sirviendo dos sesiones de 262.144 tokens con MTP.
+- GPU recomendadas: no disponible para modelos discretos; el autor solo documenta Strix Halo. Por tamaño, requiere GPUs o APUs con al menos ~112 GB de memoria utilizable, lo que excluye todas las consumer GPU convencionales (RTX 4090 con 24 GB, etc.).
+- ¿Cabe en consumer GPU? No en GPUs discretas de consumo; sí en un Strix Halo de 128 GB, que es hardware consumer de gama alta.
+- Opciones de despliegue: gufo (validado, commit `34ebb5f`), llama.cpp (herramienta usada para la recuantización, `llama-quantize` de nixpkgs llama-cpp 0.7.0; la inferencia se validó con gufo). No hay confirmación de funcionamiento con vLLM, Ollama o TGI en la información disponible.
+- Latencia y throughput: 26,3 tok/s sin MTP y 46,2 tok/s con MTP en Strix Halo; ~27,5 tok/s por petición con dos concurrentes y MTP, ~20,8 tok/s sin MTP.
+- Almacenamiento: 112,2 GB de tamaño de repositorio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---:|---|---|---|
-| Este modelo (Swift-1.5-Qwen3.8-Flash-Next Q4_K_XL) | 176,9B | 262.144 | swift-open-license-1.0 | GGUF (3 shards) | 71/74 en suite básica; 130k tokens de completion |
-| Qwen3.8-Flash-Next UD-Q4_K_XL (unsloth) | no disponible | no disponible | no disponible | GGUF | 68/74; 267k tokens de completion; base de la disposición de tipos |
-| Swift-1.5 Qwen3.8-27B FP8 (Radiance) | ~27B | no disponible | no disponible | FP8 | 72/74; 186k tokens; ejecutado en R9700 ×2 |
-| Qwen3.8-27B FP8 (base) | ~27B | no disponible | no disponible | FP8 | 67/74; 311k tokens |
+| Modelo | Parámetros | Contexto | Rendimiento (suite del autor) | Licencia | Formato |
+|---|---|---|---|---|---|
+| Este modelo (Q4_K_XL GGUF de Swift 1.5) | 176,9B totales | 262.144 por sesión | 71/74, 130k tokens | swift-open-license-1.0 | GGUF |
+| Qwen3.8-Flash-Next UD-Q4_K_XL (unsloth) | no disponible | no disponible | 68/74, 267k tokens | no disponible | GGUF |
+| Swift-1.5 Qwen3.8-27B FP8 (Radiance) | no disponible (27B según nombre) | no disponible | 72/74, 186k tokens | no disponible | FP8 |
+| Qwen3.8-27B FP8 (base) | no disponible (27B según nombre) | no disponible | 67/74, 311k tokens | no disponible | FP8 |
 
-La comparación se limita a los datos de la suite del autor; no hay benchmarks estándar publicados para ninguno de los cuatro en la información disponible. El modelo de 27B en FP8 requiere menos memoria que los ~111 GB de esta cuantización y obtiene una tasa de acierto similar, pero con más tokens de razonamiento.
+La comparación se limita a los datos publicados por el autor en la model card; no hay benchmarks estándar (MMLU, HumanEval, GSM8K) disponibles para ninguno de los modelos listados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Diferencias de acierto no significativas: con 74 tareas por modelo, el autor califica las diferencias de pass-rate como indicativas, no concluyentes.
-- Evaluación incompleta: los resultados con MTP y muestreo, y todo el tier duro (matemáticas difíciles, bugs multi-fichero, agregación sobre ~120k tokens), están pendientes; las conclusiones de rendimiento son parciales.
-- Requisito de memoria elevado: 111,3 GB de pesos impiden el despliegue en GPU de consumo; el caso validado es Strix Halo de 128 GB.
-- Compatibilidad restringida: la disposición de tipos está diseñada para el cargador Flash-Next de gufo; no se confirma funcionamiento en otros motores GGUF.
-- Recuantización desde Q8_0, no desde BF16: el paso adicional de redondeo no se midió por separado, por lo que puede introducir degradación no cuantificada.
-- Licencia: swift-open-license-1.0 (etiquetada como `other`); es imprescindible revisar los términos antes de uso comercial, ya que no se detallan en la información disponible.
-- Idiomas soportados: no disponible; no se puede garantizar cobertura multilingüe.
-- Sesgos y alucinaciones: no se documentan sesgos conocidos ni tasas de alucinación en la información disponible; como modelo generativo, mantiene el riesgo habitual y requiere verificación en producción.
-- Autoría y soporte: es una recuantización de un tercero (ethanwtodd), con 59 descargas y 0 likes en el momento de la consulta; no hay garantía de mantenimiento.
-- Fecha de creación registrada: 2026-10-30, dato que conviene contrastar con la disponibilidad real del repositorio.
+- No es un modelo entrenado desde cero: es una recuantización del Q8_0 de UkisAI, por lo que hereda todos los sesgos y limitaciones del modelo base, que no se documentan en la información disponible.
+- Los expertos se recuantizaron desde Q8_0 y no desde BF16 (el repositorio BF16 de UkisAI está restringido); el autor no midió por separado el error adicional de redondeo de ese paso.
+- La licencia swift-open-license-1.0 está etiquetada como "other" en el Hub y no se detallan sus términos en la información disponible; es imprescindible revisar el enlace de licencia antes de cualquier uso comercial.
+- El despliegue validado es exclusivamente gufo sobre Strix Halo con ROCm 7.2.3; el comportamiento en otras GPU, backends o versiones de llama.cpp no está verificado.
+- El tamaño de 111,3 GB impide su ejecución en GPUs consumer discretas y limita el despliegue a equipos con ~112 GB o más de memoria utilizable.
+- Las diferencias de tasa de acierto frente al base (71/74 vs 68/74) no son estadísticamente significativas con 74 tareas, según el propio autor.
+- Con MTP activado la suite bajó a 69/74 (141k tokens), diferencia dentro del ruido según el autor; no se garantiza equivalencia exacta en muestreo con MTP.
+- Idiomas soportados no disponibles: no se puede confirmar el comportamiento multilingüe.
+- Riesgo de alucinación no cuantificado en la información disponible.
+- La model card está truncada al final (sección de MTP incompleta), por lo que pueden faltar caveats adicionales del autor.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/ethanwtodd/Swift-1.5-Qwen3.8-Flash-Next-Q4_K_XL-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/ethanwtodd/Swift-1.5-Qwen3.8-Flash-Next-Q4_K_XL-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE
-- GGUF de origen (Q8_0): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF
-- Repositorio GSQ-RCO (importance matrix): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
-- Cuantización de referencia UD-Q4_K_XL: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- GGUF Q8_0 de origen: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF
+- Repositorio GSQ-RCO (matriz de importancia): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- GGUF de referencia UD-Q4_K_XL: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Repositorio MTP de Swift: https://huggingface.co/adriandj3/Swift-1.5-Qwen3.8-Flash-Next-MTP-for-GGUF-and-NVFP4
-- Motor gufo: https://github.com/gufo-org/gufo
+- Servidor gufo: https://github.com/gufo-org/gufo

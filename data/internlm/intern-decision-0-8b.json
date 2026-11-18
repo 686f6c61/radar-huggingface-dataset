@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 40,
-  "downloads_30d": 4009,
+  "downloads_30d": 4052,
   "trending_score": 11,
   "parameters": 852985920,
   "parameters_human": "853.0M",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "internlm/Intern-Decision-0.8B · Hugging Face",
-      "url": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "InternLM/Intern-Decision: Fast multi-modal decision model - GitHub",
-      "url": "https://github.com/InternLM/Intern-Decision/tree/main",
-      "snippet": "Fast multi-modal decision model. Contribute to InternLM/Intern-Decision development by creating an account on GitHub."
-    },
-    {
-      "title": "Intern-Decision-0.8B: Local VRAM and Hardware Fit",
-      "url": "https://www.madebyagents.com/models/intern-decision-0-8b",
-      "snippet": "A situational .85B-parameter dense decision model from InternLM. Treat the modality benchmarks above as the leading indicator of fit — composite scoring across modalities is still maturing. Newly released, so production-readiness is still being shaken out. Generated from this model&#x27;s benchmarks and ranking signals."
-    },
-    {
-      "title": "Intern-Decision - a internlm Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/internlm/intern-decision",
-      "snippet": "internlm &#x27;s Collections Intern-Decision Atria-Dawn Intern-S2 RNGBench Intern-S1 ETCHR InternVL3.5 InternLM3 CapRL JanusCoder POLAR InternLM2.5 InternLM-XComposer2.5 OREAL InternLM2-Reward InternLM2 InternLM2-Math InternLM-XComposer2 InternLM2-WQX"
-    },
-    {
-      "title": "GitHub - InternLM/InternLM: Official release of InternLM series ...",
-      "url": "https://github.com/InternLM/InternLM",
-      "snippet": "See model zoo below for download or model cards for more details. [2023.12.13] InternLM-7B-Chat and InternLM-20B-Chat checkpoints are updated. With an improved finetuning strategy, the new chat models can generate higher quality responses with greater stylistic diversity. [2023.09.20] InternLM-20B is released with base and chat versions."
-    }
-  ]
+  "sources": []
 }

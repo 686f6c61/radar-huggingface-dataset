@@ -2,58 +2,52 @@
 
 ## Resumen
 
-DictaBERT-joint es un modelo de lenguaje encoder basado en BERT, desarrollado por el equipo de Dicta (dicta-il), especializado en el analisis morfosintactico del hebreo moderno. Se trata de un modelo multi-tarea que realiza de forma conjunta cinco tareas de procesamiento: segmentacion de prefijos, desambiguacion morfologica, lematizacion (analisis lexicografico), analisis sintactico de dependencias (arbol UD) y reconocimiento de entidades nombradas (NER). El modelo fue publicado junto al articulo "DictaBERT: A State-of-the-Art BERT Suite for Modern Hebrew" (arXiv:2403.06970) y su peso en safetensors es de 186.012.926 parametros.
+DictaBERT-joint es un modelo BERT afinado para el procesamiento conjunto de múltiples tareas de analisis linguistico del hebreo moderno. Lo desarrolla el equipo de Dicta (dicta-il), un grupo israeli centrado en herramientas de procesamiento del lenguaje natural para hebreo. El modelo resuelve un problema clasico de la morfologia semitica: la segmentacion de prefijos, la desambiguacion morfologica, la lematizacion, el analisis sintactico de dependencias y el reconocimiento de entidades nombradas de forma simultanea sobre una misma representacion.
 
-Su relevancia radica en que resuelve la mayoria del pipeline clasico de NLP para hebreo en una sola pasada, devolviendo la anotacion completa por token en formatos JSON o CoNLL-U (estilo UD y estilo IAHLT). Esto simplifica enormemente la construccion de pipelines de analisis linguistico, ya que evita encadenar herramientas separadas para morfologia, sintaxis y NER. Cuenta con 16.129 descargas y una demo publica con visualizacion instantanea del arbol sintactico.
+Se trata de un transformer encoder de tipo BERT con 186 millones de parametros (aproximadamente 186.012.926 segun los pesos safetensors), lo que lo situa en la categoria de modelos base. No es un modelo generativo ni de chat: su pipeline declarado es `feature-extraction` y su interfaz expone un metodo `predict` que devuelve estructuras JSON o formato Universal Dependencies (UD). Es relevante porque el hebreo carece historicamente de herramientas de parsing de alta calidad y este modelo unifica en una sola pasada tareas que normalmente requieren pipelines encadenados, reduciendo la propagacion de errores entre etapas.
 
-Es un modelo de extraccion de caracteristicas (pipeline `feature-extraction`), no un modelo generativo ni conversacional, y esta orientado exclusivamente al hebreo moderno. Se distribuye bajo licencia CC-BY-4.0 y requiere cargar codigo personalizado (`trust_remote_code=True`).
+La ficha corresponde a la variante "joint" del ecosistema DictaBERT, publicado con el paper arXiv:2403.06970. Existe una version tiny (bert-tiny) para inferencia mas rapida y otras variantes bert-base para tareas individuales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT con cabezas multiples de tareas (codigo personalizado) |
+| Arquitectura | Transformer encoder tipo BERT (con cabezas de tarea personalizadas mediante `trust_remote_code`) |
 | Parametros totales | 186.012.926 |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se documentan variantes GGUF, GPTQ ni AWQ) |
-| Idiomas soportados | hebreo moderno (codigo `he`) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | hebreo (he) |
 | Licencia | cc-by-4.0 |
-| Formato de pesos | safetensors y pytorch (bin); repositorio de 3,0 GB |
-| Pipeline | feature-extraction |
-| Tareas integradas | segmentacion de prefijos, desambiguacion morfologica, lematizacion, analisis de dependencias, NER |
-| Formatos de salida | JSON, UD (Hebrew UD Treebank), UD estilo IAHLT |
-| Fecha de creacion | 2024-01-10 |
-| Ultima actualizacion | 2026-09-15 |
+| Formato de pesos | safetensors (repo de 3.0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder transformer de tipo BERT (etiquetado como `bert` en Hugging Face) con un conjunto de cabezas de prediccion acopladas que resuelven simultaneamente cinco tareas linguisticas. El modelo se carga mediante `AutoModel` con `trust_remote_code=True` y expone un metodo `predict()` que devuelve la anotacion por token. Los parametros totales (186 M) superan ligeramente a los de un BERT-base estandar, lo que es coherente con la presencia de multiples cabezas de tarea sobre el tronco comun. El modelo card no detalla la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de ajuste como RLHF o DPO; esa informacion no esta disponible en los datos proporcionados.
+El modelo parte de un encoder BERT base (12 capas, atencion bidireccional completa) sobre el que se anaden cabezas especificas para cada tarea: segmentacion de prefijos, desambiguacion morfologica, analisis lexicografico (lematizacion), parsing sintactico de dependencias y reconocimiento de entidades nombradas. La innovacion principal es el entrenamiento conjunto (multi-task) de todas las cabezas sobre una representacion compartida, de modo que la informacion morfologica alimenta al parser y viceversa. La model card indica que se puede desactivar selectivamente la inicializacion de cabezas mediante los flags `do_lex`, `do_syntax`, `do_ner`, `do_prefix` y `do_morph`, lo que permite usar solo las tareas necesarias y reducir coste.
 
-Una innovacion practica destacable es la posibilidad de desactivar cabezas concretas en el momento de la carga para ahorrar computo cuando solo se necesita una tarea: los modificadores `do_lex`, `do_syntax`, `do_ner`, `do_prefix` y `do_morph`. Ademas, el modelo admite tres estilos de salida que controlan el nivel de detalle y la convencion de anotacion: JSON estructurado, CoNLL-U segun el Hebrew UD Treebank y CoNLL-U con las convenciones de IAHLT (diferencias de granularidad en relaciones de dependencia, separacion de sufijos y articulos definidos implicitos). El comportamiento de etiquetado en si no cambia entre los dos ultimos formatos.
+No se detallan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO (poco probables en un encoder discriminativo). El paper asociado (arXiv:2403.06970) es la referencia para esos detalles. La salida se alinea con el esquema Universal Dependencies y ofrece una variante de estilo IAHLT con diferencias de granularidad en relaciones de dependencia, segmentacion de sufijos y articulos definidos implicitos.
 
 ## Capacidades
 
-- Analisis morfologico completo: desambiguacion de categoria gramatical (POS), rasgos de genero, numero, persona y tiempo.
-- Segmentacion de prefijos: separa prefijos como preposiciones o articulos definidos del lexema principal.
-- Lematizacion: devuelve la forma lematizada de cada token, incluyendo tratamiento de sufijos pronominales.
-- Analisis sintactico de dependencias: genera el arbol de dependencias completo con indice de cabeza, funcion de dependencia y palabra cabeza (por ejemplo `root`, `nsubj`, `obj`, `obl`, `case`, `flat`, `compound`).
+- Segmentacion de prefijos (prefijos preposicionales, conjunciones, articulo definido) en tokens hebreos.
+- Desambiguacion morfologica con etiquetas POS, genero, numero, persona y tiempo.
+- Lematizacion (analisis lexicografico) por token.
+- Parsing sintactico de dependencias con `dep_head_idx`, `dep_func` y `dep_head`.
 - Reconocimiento de entidades nombradas (NER) a nivel de oracion.
-- Salida multi-formato: JSON por token y CoNLL-U en estilo UD o estilo IAHLT.
-- Ejecucion selectiva de tareas mediante los indicadores `do_lex`, `do_syntax`, `do_ner`, `do_prefix` y `do_morph`.
-- No dispone de tool calling, function calling, modo de razonamiento explicito, capacidades de agente, vision ni audio: es un modelo de extraccion de caracteristicas, no generativo.
-- Cobertura multilingue limitada al hebreo moderno; no se documenta soporte para otros idiomas.
+- Salida en tres formatos: JSON estructurado, UD estandar y UD estilo IAHLT.
+- Desactivacion selectiva de cabezas para inferencia mas ligera.
+- No soporta generacion de texto, tool calling, agentes ni razonamiento multi-paso: es un modelo discriminativo de extraccion de caracteristicas y etiquetado.
+- Capacidad multilingue limitada al hebreo.
 
 ## Casos de uso
 
-- Analisis morfosintactico de corpus en hebreo: procesar grandes volumenes de texto hebreo (prensa, literatura, transcripciones) para obtener anotacion morfologica, lemas y arboles de dependencias en una sola pasada, lo que simplifica la creacion de corpus anotados.
-- Anotacion de treebanks con convenciones UD o IAHLT: el modelo produce directamente CoNLL-U en el estilo del Hebrew UD Treebank o de IAHLT, por lo que sirve como preanotador en proyectos de anotacion manual, reduciendo el trabajo humano a revision y correccion.
-- Extraccion de entidades para inteligencia de negocio: aplicar la cabeza de NER sobre noticias y documentos hebreos para detectar personas, organizaciones y lugares, alimentando indices de busqueda o sistemas de monitorizacion de medios.
-- Enriquecimiento de motores de busqueda y recuperacion: la lematizacion y la desambiguacion morfologica permiten normalizar consultas y documentos hebreos, mejorando la coincidencia entre terminos con prefijos o sufijos flexivos.
-- Preprocesamiento para traduccion automatica o sintesis de voz: la segmentacion de prefijos y el analisis de dependencias proporcionan estructuras linguisticas que pueden alimentar sistemas de MT o de TTS que necesiten informacion morfosintactica explicita en hebreo.
-- Analisis de opiniones y clasificacion de intenciones en hebreo: el modelo es una capa de representacion (`feature-extraction`) que puede alimentar clasificadores posteriores entrenados sobre sus embeddings contextuales para tareas de sentimiento o enrutado en atencion al cliente.
-- Herramientas educativas de ensenanza del hebreo: la salida JSON con rasgos gramaticales y funciones sintacticas por token permite construir interfaces que expliquen la estructura de una oracion a estudiantes.
-- Enriquecimiento de pipelines de PLN existentes: al poder desactivar cabezas concretas, se puede integrar unicamente la tarea necesaria (por ejemplo solo NER o solo lematizacion) dentro de un sistema ya existente.
+- Analisis morfologico y sintactico de corpus hebreos: el modelo procesa oraciones y devuelve arboles de dependencias y etiquetas morfologicas listos para anotar corpus linguisticos o entrenar otros modelos.
+- Construccion de treebanks y datasets anotados: la salida UD permite generar anotaciones compatibles con el esquema Universal Dependencies para investigacion en linguistica computacional.
+- Enriquecimiento de motores de busqueda en hebreo: la lematizacion y segmentacion de prefijos permiten normalizar consultas y documentos para mejorar la recuperacion (por ejemplo, indexar por lema en lugar de por forma superficial).
+- Preprocesado para pipelines de NLP en hebreo: servir como etapa de tokenizacion linguistica y POS tagging antes de tareas posteriores como traduccion, resumen o clasificacion.
+- Extraccion de entidades nombradas en documentos: identificar personas, organizaciones y lugares en textos hebreos para sistemas de informacion, monitorizacion de medios o cumplimiento normativo.
+- Analisis de texto para humanidades digitales: estudiar estructuras sintacticas y morfologia en corpus historicos o literarios en hebreo.
+- Herramientas educativas de ensenanza del hebreo: visualizacion de arboles sintacticos y descomposicion morfologica para estudiantes, como demuestra la demo publica en Hugging Face Spaces.
 
 ## Benchmarks y rendimiento
 
@@ -61,42 +55,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (estimacion a partir del numero de parametros, sin incluir el overhead del runtime):
-  - FP32: aproximadamente 0,75 GB de pesos.
-  - FP16/BF16: aproximadamente 0,37 GB de pesos.
-  - INT8: aproximadamente 0,19 GB de pesos.
-- En la practica, el repositorio ocupa 3,0 GB, ya que incluye varios ficheros de pesos y cabezas, por lo que conviene reservar espacio en disco acorde.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en FP16, incluidas RTX 3060, RTX 4060, RTX 4090, A100, H100 o T4. El modelo es perfectamente ejecutable en CPU para cargas por lotes moderadas.
-- Si cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en GPUs integradas con memoria compartida suficiente.
-- Opciones de despliegue: la libreria `transformers` es la via documentada, con `AutoTokenizer` y `AutoModel` y `trust_remote_code=True`. No se documenta soporte especifico para vLLM, llama.cpp, Ollama o TGI; la etiqueta `text-embeddings-inference` aparece en los tags de Hugging Face, pero la model card no ofrece instrucciones al respecto. El parametro `inference: false` de la model card indica que la inferencia alojada de Hugging Face esta deshabilitada, probablemente por el codigo personalizado.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: al tratarse de un modelo de 186 M de parametros, los pesos en fp32 ocupan aproximadamente 0,75 GB; en fp16 unos 0,37 GB. El repo completo pesa 3,0 GB, por lo que conviene descargar solo los pesos necesarios.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente (T4, RTX 3060, RTX 4090, A100, H100). Tambien puede ejecutarse en CPU para lotes pequenos.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en iGPU con suficiente memoria.
+- Opciones de despliegue: transformers con `trust_remote_code=True` (requerido por las cabezas personalizadas), y el tag `text-embeddings-inference` sugiere compatibilidad con TEI. No se documenta soporte nativo en vLLM, llama.cpp u Ollama (modelos encoder con codigo remoto no encajan en esos runners).
+- Latencia y throughput: no disponibles en la informacion proporcionada; para mayor velocidad existe la variante `dictabert-tiny-joint`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicta-il/dictabert-joint | 186.012.926 | no disponible | Segmentacion de prefijos, morfologia, lematizacion, dependencias y NER de forma conjunta | cc-by-4.0 | Hugging Face, demo publica |
-| dicta-il/dictabert-tiny-joint | no disponible | no disponible | Equivalente a dictabert-joint, version mas rapida | no disponible en la informacion proporcionada | Hugging Face |
-| Modelos bert-base del resto de la coleccion DictaBERT | no disponible | no disponible | Tareas individuales (no conjuntas) | no disponible en la informacion proporcionada | Hugging Face (coleccion dicta-il/dictabert) |
+| dicta-il/dictabert-joint | 186 M | no disponible | Segmentacion, morfologia, lematizacion, dependencias, NER (conjuntas) | cc-by-4.0 | Hugging Face |
+| dicta-il/dictabert-tiny-joint | no disponible (bert-tiny) | no disponible | Mismas tareas, version mas rapida | cc-by-4.0 | Hugging Face |
+| Otras variantes DictaBERT bert-base | no disponible | no disponible | Tareas individuales | cc-by-4.0 | Hugging Face (coleccion dictabert) |
+| Modelos BERT multilingues genericos | ~178 M (bert-base-multilingual) | 512 tokens tipico | Principalmente clasificacion/embeddings, sin cabezas de parsing hebreo | Apache 2.0 / MIT segun variante | Hugging Face |
 
-No se dispone de datos de otros modelos comparables de analisis morfosintactico del hebreo en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
+La comparativa con alternativas de parsing hebreo especificas no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cobertura linguistica restringida al hebreo moderno; el modelo no procesa otros idiomas.
-- No es un modelo generativo: no produce texto libre ni mantiene conversaciones, por lo que no debe evaluarse con criterios de chat o de generacion.
-- Riesgo de alucinacion: en un modelo de etiquetado, el equivalente seria la asignacion de etiquetas morfologicas o sintacticas incorrectas en oraciones ambiguas, con errores que pueden propagarse a las tareas posteriores del pipeline.
-- Sesgos conocidos: no se documentan en la informacion disponible; al tratarse de un modelo entrenado sobre corpus en hebreo, es previsible que herede los sesgos de dominio y registro de dichos corpus (por ejemplo, predominio de registro periodistico o formal), aunque no hay datos publicados que lo confirmen.
-- Limitaciones de contexto: la longitud maxima de secuencia no se especifica en la model card, un dato critico para decidir si el modelo admite documentos largos o solo oraciones.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo incluido en el repositorio del modelo; conviene auditar dicho codigo antes de usarlo en produccion.
-- La model card declara `inference: false`, por lo que la inferencia alojada de Hugging Face no esta disponible y el despliegue debe ser propio.
-- Licencia CC-BY-4.0: permite uso comercial, pero obliga a atribuir la autoria del modelo de forma adecuada y a indicar si se han realizado modificaciones.
-- El propio autor recomienda `dictabert-tiny-joint` cuando se necesita mayor velocidad, lo que sugiere que este modelo no esta optimizado para latencia baja.
+- Modelo especializado exclusivamente en hebreo; no es util para otros idiomas.
+- Es un modelo discriminativo, no generativo: no produce texto libre ni responde a instrucciones.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado del autor; conviene auditar el codigo antes de usarlo en produccion.
+- Riesgo de errores en texto ruidoso, informal, con abreviaturas o con ortografia no estandar; la calidad del parsing depende de la calidad de la tokenizacion.
+- Posibles sesgos derivados de los corpus de entrenamiento (probablemente prensa y textos formales israelies), no documentados en la informacion disponible.
+- La licencia cc-by-4.0 permite uso comercial con atribucion, pero exige citar al autor y el paper; verificar los terminos exactos antes de redistribuir.
+- No se documentan limites de longitud de contexto; para oraciones muy largas puede requerir segmentacion previa.
+- La salida UD estilo IAHLT difiere del UD estandar en granularidad; elegir el formato adecuado segun el consumidor downstream.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dicta-il/dictabert-joint
-- Articulo (arXiv): https://arxiv.org/abs/2403.06970
-- Demo interactiva con visualizacion del arbol sintactico: https://huggingface.co/spaces/dicta-il/joint-demo
-- Modelo equivalente mas rapido (bert-tiny): https://huggingface.co/dicta-il/dictabert-tiny-joint
-- Coleccion completa DictaBERT: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b
+- Paper: https://arxiv.org/abs/2403.06970
+- Demo interactiva (Hugging Face Spaces): https://huggingface.co/spaces/dicta-il/joint-demo
+- Variante tiny: https://huggingface.co/dicta-il/dictabert-tiny-joint
+- Coleccion DictaBERT: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b

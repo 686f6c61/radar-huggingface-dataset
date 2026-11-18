@@ -2,98 +2,88 @@
 
 ## Resumen
 
-El repositorio `antirez/deepseek-v4.1-flash-gguf` es una publicación alojada en Hugging Face cuyo identificador sugiere la conversión a formato GGUF de un supuesto modelo denominado "DeepSeek V4.1 Flash". El autor indicado es el usuario `antirez`. En el momento de la consulta, el repositorio acumula 0 descargas y 2 "likes", no declara licencia, no declara idiomas soportados, no tiene pipeline asignado y no incluye model card ni documentación técnica publicada.
+DeepSeek V4.1 Flash GGUF es una distribución de cuantizaciones del modelo `deepseek-ai/DeepSeek-V4.1-Flash`, publicada por Salvatore Sanfilippo (antirez) bajo el identificador `antirez/deepseek-v4.1-flash-gguf`. No se trata de un modelo nuevo, sino de pesos calibrados específicamente para la implementación Metal del motor de inferencia DwarfStar, desarrollada en la rama `ds4.1flash` del repositorio del autor. El modelo base es un transformer de gran escala con 754.638.867.584 parámetros totales (según los datos de safetensors) y una arquitectura que incorpora tablas Engram nativas en FP8, un componente diferenciador frente a las arquitecturas transformer convencionales.
 
-La relevancia de esta ficha es, por tanto, metodológica más que técnica: no existe información verificable que permita determinar la arquitectura, el número de parámetros, la longitud de contexto, el régimen de entrenamiento ni las capacidades reales del modelo. Todo dato técnico que se afirmara sobre él sería una inferencia no respaldada por la fuente.
+La relevancia de esta publicación es doble. Por un lado, ofrece dos variantes cuantizadas (Q2 y Q4) pensadas para ejecutarse en hardware Apple Silicon mediante streaming desde SSD, lo que permite desplegar un modelo de más de 750.000 millones de parámetros en un único Mac de 128 GB de memoria unificada. Por otro, el autor advierte explícitamente de que estos pesos no son intercambiables con los de DeepSeek V4 Flash ni con su drafter DSpark, lo que subraya que se trata de un artefacto de inferencia específico y no de una conversión genérica.
 
-Se recomienda tratar este repositorio como no evaluado. Cualquier despliegue en producción exigiría, como mínimo, inspección directa de los archivos de pesos, verificación de integridad, comprobación de la licencia y validación empírica de capacidades antes de considerarlo utilizable.
+El repositorio acumula 812.846 descargas y 93 likes desde su creación el 11 de septiembre de 2026, con licencia MIT heredada del modelo base. El tamaño total del repo es de 2118,3 GB, lo que refleja la magnitud de los pesos originales en FP8 y las dos cuantizaciones publicadas. La ficha se limita a lo documentado en la model card y en los metadatos de Hugging Face; cualquier dato no presente se marca como no disponible.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible (no se confirma que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (el identificador contiene el sufijo "gguf", lo que indica formato de pesos GGUF, pero no se detalla el nivel de cuantización) |
+| Arquitectura | Transformer con tablas Engram nativas en FP8 (según model card); detalles internos no disponibles |
+| Parámetros totales | 754.638.867.584 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | 32.768 tokens (ejemplo de ejecución con `--ctx 32768`); máximo no disponible |
+| Tipos de cuantización | IQ2_XXS (expertos gate/up enrutados), Q2_K (expertos down), Q4_K (expertos enrutados); Q8 en proyecciones de atención, expertos compartidos y salida; F16/F32 en el resto; Engram nativo FP8 sin modificar |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (inferido del identificador del repositorio; no confirmado por model card, ya que esta no existe) |
-| Autor | antirez |
-| Descargas / likes | 0 / 2 |
-| Fecha de publicación | 2026-09-11 |
+| Licencia | MIT |
+| Formato de pesos | GGUF (Q2 y Q4 en partes binarias para Q4; visión en GGUF separado) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. No se ha publicado model card, informe técnico, ficha de entrenamiento ni paper asociado. Se desconoce si el modelo subyacente emplea una arquitectura transformer densa, un esquema de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida. También se desconoce el volumen de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, y cualquier innovación técnica asociada.
+La model card describe el modelo base como un transformer con tablas Engram nativas en FP8, un componente que en esta distribución se mantiene sin recuantizar: cada GGUF de lenguaje incluye 188,83 GiB de tablas Engram en FP8 que DwarfStar lee directamente desde disco sin mantenerlas residentes en memoria. Esta decisión de diseño es la que permite que el modelo funcione en máquinas con memoria unificada limitada, a costa de exigir un SSD local rápido. El checkpoint de origen es `deepseek-ai/DeepSeek-V4.1-Flash` en el commit `df42c109f1defefcbfcedbe7d905718a12266e40`.
 
-El único dato objetivo es el sufijo `gguf` en el identificador, que en la convención habitual de Hugging Face indica que los pesos se distribuyen en el formato GGUF empleado por `llama.cpp` y ecosistemas derivados. Este dato no aporta información sobre la arquitectura del modelo original ni sobre su calidad.
+Las cuantizaciones Q2 y Q4 se generaron de forma independiente a partir del checkpoint original, no como recuantización de un GGUF a otro, y ambas usan la misma imatrix de activaciones de 8.192 tokens. Q2 combina IQ2_XXS en expertos gate/up enrutados con Q2_K en expertos down; Q4 emplea Q4_K en todos los expertos enrutados. En ambos casos se conservan en Q8 las proyecciones de atención, los expertos compartidos y la capa de salida, con tensores F16/F32 en el resto. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-No disponible. No existe documentación que permita afirmar ninguna capacidad concreta del modelo:
-
-- Generación de texto, razonamiento, código o matemáticas: no verificable.
-- Soporte de tool calling o function calling: no verificable.
-- Soporte de agentes y razonamiento multi-paso: no verificable.
-- Capacidades multilingües: no verificable (el repositorio no declara idiomas).
-- Modo de pensamiento (thinking), visión o audio: no verificable.
-- Ventana de contexto efectiva: no verificable.
+- Generación de texto y razonamiento de propósito general, heredados del modelo base DeepSeek V4.1 Flash.
+- Procesamiento de imágenes mediante un encoder de visión separado (`ds41f-vision`, 0,90 GiB), que se activa con `--vision gguf/DeepSeek-V4.1-Flash-Vision.gguf`.
+- Ejecución en modo agente y servidor: la model card indica que las mismas opciones de modelo y memoria funcionan con `ds4-agent` y `ds4-server`.
+- Streaming desde SSD con `--ssd-streaming`, que permite cargar solo las filas necesarias de las tablas Engram.
+- Tensor parallelism residente con RDMA entre dos Macs de 128 GB para la variante Q2.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y realistas sin conocer las capacidades, el tamaño y la licencia del modelo. Los escenarios que se enumeran a continuación son marcos genéricos de evaluación para un repositorio GGUF sin documentar, no recomendaciones de uso:
-
-- Auditoría previa a la adopción: descargar los archivos en un entorno aislado, calcular hashes, inspeccionar la cabecera GGUF con `gguf-dump` y determinar número de tensores, arquitectura declarada en metadatos y nivel de cuantización antes de cualquier otra acción.
-- Verificación de licencia: contactar con el autor o consultar el repositorio remoto para confirmar la licencia, ya que su ausencia impide legalmente el uso comercial en la mayoría de jurisdicciones.
-- Prueba de humo en local: cargar el modelo con `llama.cpp` u `Ollama` y ejecutar un conjunto reducido de prompts para comprobar que el archivo es funcional y no está corrupto ni truncado.
-- Evaluación comparativa mínima: medir perplejidad y latencia sobre un corpus propio si finalmente se identifica el modelo base y se dispone de una referencia con la que comparar.
-- Análisis de procedencia: revisar el historial del repositorio y de la cuenta para descartar suplantación de identidad o publicación automatizada sin mantenimiento.
-- Integración experimental en un banco de pruebas: en caso de que el modelo resulte funcional, usarlo únicamente en un entorno de desarrollo no crítico y con datos no sensibles, hasta disponer de evidencia de calidad.
+- Inferencia local de gran escala en Apple Silicon: un Mac de 128 GB puede ejecutar la variante Q2 con streaming desde SSD y contexto de 32.768 tokens, lo que permite disponer de un modelo de 754.000 millones de parámetros en hardware de escritorio sin GPU dedicada.
+- Despliegue en clúster de dos estaciones: la variante Q2 cabe residente en tensor parallelism con RDMA entre dos Macs de 128 GB, útil para equipos de investigación que quieran servir el modelo con baja latencia sin adquirir hardware de centro de datos.
+- Procesamiento de documentos con imágenes: combinando el GGUF de lenguaje con el encoder de visión, se pueden analizar capturas, diagramas o documentos escaneados en flujos locales, manteniendo los datos fuera de servicios en la nube.
+- Servicio de API interno: mediante `ds4-server`, el modelo puede exponerse como endpoint HTTP para aplicaciones internas que requieran razonamiento de contexto largo, aprovechando los 32.768 tokens de ventana.
+- Automatización agéntica: `ds4-agent` permite construir flujos multi-paso sobre el modelo, adecuado para tareas de investigación o análisis que requieran varias llamadas encadenadas.
+- Experimentación con arquitecturas Engram: el hecho de que las tablas Engram se mantengan en FP8 nativo y se lean desde disco convierte este repo en un banco de pruebas para estudiar el comportamiento de modelos con memoria externa en entornos de recursos limitados.
+- Estaciones de trabajo con 512 GB de memoria unificada: la variante Q4 está pensada para residencia completa en un Mac de 512 GB, orientada a equipos que necesiten la máxima calidad de cuantización disponible en esta distribución.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de cifras de MMLU, HumanEval, GSM8K, MATH, MT-Bench ni de ninguna otra evaluación, y no procede comparar con modelos alternativos sin datos verificables.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-No disponible. El cálculo de VRAM, la selección de GPU y la estimación de latencia dependen del número de parámetros y del nivel de cuantización, datos ambos ausentes.
-
-Como referencia genérica —no aplicable a este repositorio sin conocer su tamaño—, un modelo en formato GGUF requiere aproximadamente:
-
-| Tamaño del modelo | VRAM estimada en Q4_K_M | GPU consumer viable |
-|---|---|---|
-| ~7-8B | 4,5-6 GB | RTX 3060 12 GB, RTX 4060 Ti 16 GB |
-| ~13-14B | 8-10 GB | RTX 4070 Ti 16 GB, RTX 4090 24 GB |
-| ~30-34B | 19-22 GB | RTX 4090 24 GB (ajustado), A6000 48 GB |
-| ~70B | 40-45 GB | 2x RTX 4090, A100 80 GB, H100 80 GB |
-
-Opciones de despliegue habituales para pesos GGUF: `llama.cpp`, `Ollama`, `LM Studio`, `llama-cpp-python` y servidores compatibles con la API de OpenAI sobre `llama.cpp`. Para pesos sin cuantizar o cuantizaciones de alta precisión en GPU, las alternativas típicas son vLLM y TGI. Ninguna de estas opciones puede confirmarse como compatible con este repositorio concreto sin inspeccionar los archivos.
+- VRAM/memoria unificada estimada: Q2 requiere streaming desde SSD en un Mac de 128 GB; los pesos principales ocupan 151,77 GiB y el archivo completo 340,60 GiB. Q4 requiere streaming en Macs pequeños y residencia completa en un Mac de 512 GB; pesos principales de 294,15 GiB y archivo de 482,98 GiB.
+- GPU recomendadas: Apple Silicon con memoria unificada de 128 GB (Q2 con streaming), 512 GB (Q4 residente) o dos Macs de 128 GB con RDMA para Q2 en tensor parallelism. No se documentan GPU NVIDIA o AMD.
+- ¿Cabe en GPU consumer? No se documenta soporte para GPU consumer tipo RTX 4090; el motor DwarfStar es una implementación Metal.
+- Opciones de despliegue: DwarfStar (`ds4`, `ds4-agent`, `ds4-server`) con soporte V4.1; scripts `download_model.sh` para obtener `ds41f-q2`, `ds41f-q4` y `ds41f-vision`.
+- Almacenamiento: se requiere un SSD local rápido para el streaming de las tablas Engram; para Q4 se necesitan 37 GiB adicionales de espacio libre durante el ensamblado de las dos partes binarias.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables porque se desconocen categoría, tamaño, contexto, licencia y rendimiento del modelo descrito. La denominación "DeepSeek V4.1 Flash" no se corresponde con ningún lanzamiento documentado en la información proporcionada, por lo que tampoco puede establecerse una equivalencia fiable con la familia DeepSeek oficial.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| DeepSeek V4.1 Flash GGUF (este repo) | 754.638.867.584 | 32.768 (ejemplo documentado) | MIT | GGUF (Q2/Q4) + encoder visión | Hugging Face, 812.846 descargas |
+| DeepSeek V4.1 Flash (modelo base) | no disponible en esta información | no disponible | MIT (según repo derivado) | safetensors (presumiblemente) | Hugging Face (`deepseek-ai/DeepSeek-V4.1-Flash`) |
+| DeepSeek V4 Flash | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card como no intercambiable |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| antirez/deepseek-v4.1-flash-gguf | no disponible | no disponible | no disponible | GGUF, sin model card |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay información sobre arquitectura, datos de entrenamiento, sesgos, alineación ni evaluación de seguridad.
-- Licencia no declarada: sin licencia explícita no se concede permiso de uso, copia ni redistribución; el uso comercial es jurídicamente arriesgado y, en muchas jurisdicciones, directamente no autorizado.
-- Riesgo de suplantación o de denominación engañosa: el nombre referencia una supuesta familia "DeepSeek" y una versión "4.1" no documentada. Un repositorio puede imitar la nomenclatura de proyectos conocidos sin estar afiliado a ellos.
-- Ausencia de adopción: 0 descargas y 2 likes indican que el artefacto no ha sido validado por terceros; no existen informes independientes de funcionamiento.
-- Riesgo de cadena de suministro: los archivos GGUF son binarios. Aunque no ejecutan código por sí mismos, su carga en determinados runtime expone a fallos de memoria o a comportamientos anómalos si el archivo está malformado o ha sido manipulado. Se recomienda verificar hashes y, siempre que sea posible, preferir `safetensors` para pesos y convertir localmente.
-- Sesgos y alucinación: no evaluables sin información sobre el corpus de entrenamiento ni sobre el proceso de alineación.
-- Limitaciones de contexto e idioma: desconocidas; el repositorio no declara idiomas soportados ni longitud de contexto.
-- Idoneidad para producción: nula con la evidencia actual. No debe desplegarse en ningún sistema que atienda usuarios reales sin una evaluación previa completa.
-- Nota sobre la autoría: el alias `antirez` coincide con el de un desarrollador de software muy conocido, pero la coincidencia de alias no verifica la identidad del publicador ni la calidad del contenido del repositorio.
+- Los pesos no son intercambiables con DeepSeek V4 Flash ni con su drafter DSpark; usarlos con el motor o el modelo equivocado producirá resultados incorrectos.
+- El modelo está calibrado para la implementación Metal de DwarfStar en la rama `ds4.1flash`; no se garantiza su funcionamiento en otros motores de inferencia (llama.cpp, vLLM, TGI, Ollama).
+- El streaming desde SSD exige almacenamiento local rápido; un SSD lento degradará gravemente la latencia.
+- Las tablas Engram en FP8 (188,83 GiB) se leen desde disco, lo que introduce dependencia de E/S y puede afectar al throughput en cargas concurrentes.
+- La variante Q4 se distribuye en dos partes binarias que no son GGUFs ejecutables por sí solas; requieren ensamblado con el descargador y 37 GiB adicionales de espacio libre.
+- No se documentan sesgos conocidos, tasas de alucinación ni limitaciones idiomáticas del modelo base en la información disponible.
+- La licencia MIT se hereda del modelo base; conviene verificar las condiciones del checkpoint original antes de uso comercial a gran escala.
+- No hay datos publicados de benchmarks que permitan validar la calidad de las cuantizaciones Q2 y Q4 frente al modelo en FP8.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/antirez/deepseek-v4.1-flash-gguf
-- Búsqueda web realizada: no se recuperó ningún resultado relevante sobre el modelo. Los únicos resultados devueltos corresponden a páginas de soporte de Microsoft (contacto, inicio de sesión en Hotmail, descarga de ISO de Windows 8.1, aviso de depreciación de Exchange Online EWS y retirada de la utilidad SaRA), sin relación alguna con el repositorio analizado.
-- Paper, blog técnico, repositorio de código o demo asociados: no disponibles.
+- Repositorio Hugging Face: https://huggingface.co/antirez/deepseek-v4.1-flash-gguf
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Motor DwarfStar: https://github.com/antirez/ds4
+- Rama de desarrollo: `ds4.1flash` en el repositorio DwarfStar

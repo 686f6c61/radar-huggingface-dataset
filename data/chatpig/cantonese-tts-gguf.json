@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 6906,
+  "downloads_30d": 7528,
   "trending_score": 0,
   "parameters": 914643008,
   "parameters_human": "914.6M",
@@ -39,31 +39,5 @@
   "renamed_to": "gguf-org/cantonese-gguf",
   "renamed_at": "2026-11-11T04:48:18.511Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "chatpig (chatpig) - Hugging Face",
-      "url": "https://huggingface.co/chatpig",
-      "snippet": "gguf liked a model about 12 hours ago updated a model about 15 hours ago"
-    },
-    {
-      "title": "chatpig/gguf · Hugging Face",
-      "url": "https://huggingface.co/chatpig/gguf",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "typangaa/canto-tts: Open-source Cantonese (HK) TTS - GitHub",
-      "url": "https://github.com/typangaa/canto-tts",
-      "snippet": "單一 default voice:unconditional generation —— ONNX 路線暫時未支援 voice cloning、冇 voice 揀。 Weights:首次用會自動由 typangaa/canto-tts-nano 落嚟 (cache 喺 ~/.cache/huggingface)。 訓練數據:私有來源 (因為 copyright 唔公開)——淨係 model weights 公開。"
-    },
-    {
-      "title": "Tts - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/tts.html",
-      "snippet": "Download Tts GGUF model. 4.13 GB, 21,442 downloads, 61 likes."
-    },
-    {
-      "title": "canto-tts · PyPI",
-      "url": "https://pypi.org/project/canto-tts/",
-      "snippet": "Open-source Cantonese (Hong Kong) text-to-speech — CPU-first ONNX inference SDK"
-    }
-  ]
+  "sources": []
 }

@@ -71,7 +71,7 @@
     "region:us"
   ],
   "likes": 46,
-  "downloads_30d": 3406,
+  "downloads_30d": 3528,
   "trending_score": 10,
   "parameters": 25624600064,
   "parameters_human": "25.62B",
@@ -92,55 +92,35 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "typed decision",
-      "dataset": "transfer-v4 test (read once)",
+      "task": "typed decisions",
+      "dataset": "transfer-v4 test: six never-trained public sources and held-out policy structures (656 questions)",
       "metric": null,
-      "value": 0.896
+      "value": 0.8887
     },
     {
-      "task": "typed decision",
-      "dataset": "transfer-v4 test (read once)",
+      "task": "typed decisions",
+      "dataset": "transfer-v4 test: six never-trained public sources and held-out policy structures (656 questions)",
       "metric": null,
-      "value": 0.16
+      "value": 0.154
     },
     {
-      "task": "typed decision",
-      "dataset": "transfer-r6 test (1,260 questions, read once)",
+      "task": "typed decisions",
+      "dataset": "breadth-v1 test: 10 of 14 held-out public datasets (2,489 questions)",
       "metric": null,
-      "value": 0.863
+      "value": 0.832
     },
     {
-      "task": "typed decision (choice / noul / score)",
-      "dataset": "decision-v7 test (read once)",
+      "task": "typed decisions",
+      "dataset": "tasksource-heldout-v1 test: 17 of 24 held-out task families (2,024 questions)",
       "metric": null,
-      "value": 0.87
+      "value": 0.795
+    },
+    {
+      "task": "typed decisions",
+      "dataset": "hard-v1 + devtools-v1 + documents-v1 test (2,795 questions)",
+      "metric": null,
+      "value": 0.889
     }
   ],
-  "sources": [
-    {
-      "title": "Le Centre Pompidou consacre enfin la bande dessinée",
-      "url": "https://www.lemonde.fr/culture/article/2024/05/29/le-centre-pompidou-consacre-enfin-la-bande-dessinee_6236114_3246.html",
-      "snippet": "May 29, 2024 · Avec « La BD à tous les étages », cinq expositions en simultané, qui font la part belle au roman graphique, au manga …Read more"
-    },
-    {
-      "title": "Collective Exhibition, Comics on every floor, Drawing, Centre Pompidou ...",
-      "url": "https://www.artlimited.net/agenda/collective-exhibition-comics-on-every-floor-centre-pompidou-paris/en/7585924",
-      "snippet": "Feb 29, 2024 · As an exceptional celebration of the ninth art, the Comics on every floor event explores the sheer breadth of diversity …"
-    },
-    {
-      "title": "International Journal of Comic Art blog: The Ninth Art at the Centre ...",
-      "url": "https://ijoca.blogspot.com/2025/09/the-ninth-art-at-centre-georges.html",
-      "snippet": "Sep 20, 2025 · The Ninth Art at the Centre Georges Pompidou: A Review of Comics 1964-2024 Mark David Nevins Fig. 1 One could …"
-    },
-    {
-      "title": "\"COMICS, 1964-2024\": Centre Pompidou, Paris. - Free Online Library",
-      "url": "https://www.thefreelibrary.com/%22COMICS%2c+1964-2024%22%3a+Centre+Pompidou%2c+Paris.-a0826500044",
-      "snippet": "\"COMICS, 1964-2024\" (organized by Anne Lemonnier and Emmanuele Payen with Thierry Groensteen and Lucas Hureau) was an …"
-    },
-    {
-      "title": "Exhibitions - Centre Pompidou",
-      "url": "https://www.centrepompidou.fr/en/program/exhibitions",
-      "snippet": "Centre Pompidou-Metz To mark its 15th anniversary, the Centre Pompidou-Metz is transforming all of its galleries to host hundreds …"
-    }
-  ]
+  "sources": []
 }

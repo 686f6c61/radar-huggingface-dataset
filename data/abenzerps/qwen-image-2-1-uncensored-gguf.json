@@ -26,8 +26,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 6032,
-  "downloads_30d": 165081,
+  "likes": 6043,
+  "downloads_30d": 187989,
   "trending_score": 600,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
@@ -48,31 +48,5 @@
   "renamed_to": "abenzerps/Qwen-Image-2.1-Turbo-Quantized",
   "renamed_at": "2026-11-11T04:17:38.245Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube",
-      "url": "https://de.youtube.com/",
-      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/feed/yt+",
-      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
-    },
-    {
-      "title": "YouTube - YouTube",
-      "url": "https://www.youtube.com/YouTube/app%20download",
-      "snippet": "Knew late-night TV would catch up with me #youtubepartner try this prompt with your own YT Shorts Rachel Samples and YouTube …"
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/",
-      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://studio.youtube.com/",
-      "snippet": "Share your videos with friends, family, and the world."
-    }
-  ]
+  "sources": []
 }

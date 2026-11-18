@@ -1,106 +1,96 @@
 # Viggle/Viggle-Remake
 
 ## Resumen
+Viggle Remake es un modelo de edición de vídeo video-to-video desarrollado por Viggle, construido como un adaptador LoRA sobre MiniMaxAI/MiniMax-H3. Su propósito es rehacer vídeos existentes preservando el movimiento, la cámara, el timing y la banda sonora originales: permite recastear personajes, cambiar vestuario, añadir o eliminar objetos, y modificar la climatología, la iluminación, el escenario o el estilo visual. El modelo está pensado para operar de forma "agent-first": un agente que habla MCP (Claude Code, codex, etc.) recibe un vídeo y una instrucción en lenguaje natural, localiza los cortes, pinta los keyframes, renderiza cada ventana y entrega la película final montada.
 
-Viggle Remake es un modelo de edición de vídeo (pipeline `video-to-video`) desarrollado por Viggle, construido como un conjunto de LoRAs de rango 256 sobre el transformer del modelo base MiniMaxAI/MiniMax-H3. Su función es rehacer un vídeo existente conservando el movimiento, la cámara, el ritmo y la banda sonora originales: permite recastear personajes, cambiar vestuario, eliminar o insertar objetos, y modificar el escenario, el clima o la iluminación. Se distribuye con 20.111.438.744 parámetros declarados en safetensors y un repositorio de 167,7 GB, aunque el conjunto de LoRAs y sampler que necesita el usuario pesa unos 5,5 GB.
+Técnicamente es un adaptador LoRA sobre la base MiniMax-H3, con 20.111.438.744 parámetros reportados en safetensors, un repositorio de 167,6 GB y pesos distribuidos en variantes de rango completo y de bajo rango (`lora/` y `lora_lowrank/`). El modelo base MiniMax-H3 ocupa aproximadamente 144 GB de ficheros y se descarga por separado. La librería asociada es `minimax-h3` y el pipeline declarado es `video-to-video`.
 
-El modelo se presenta como una evolución de "Viggle-Animate v2": mientras Animate sustituía un personaje, Remake añade sustitución múltiple, borrado e inserción de objetos y cambios de entorno. La propuesta es explícitamente *agent-first*: incluye un servidor MCP que permite a un agente de código (Claude Code, codex u otros) cortar el vídeo en ventanas, pintar keyframes, redactar los prompts, renderizar en GPUs y empalmar el resultado final con la pista de audio.
+Su relevancia actual radica en que amplía el concepto de Viggle-Animate (que solo reemplazaba un personaje) hacia la edición completa de escenas, y en que ofrece una vía de despliegue local con cuantizaciones int8 y GGUF para GPUs de 12–24 GB, además de un servidor MCP para automatizar la edición de películas completas. La licencia es la `minimax-h3-community-license`, de tipo "other".
 
-Es relevante porque traslada la edición de vídeo generativa de "clips sueltos" a películas completas: los ejemplos de la model card incluyen un vídeo musical de 116 segundos con 69 cortes y un clip de 101 segundos con sustitución simultánea de varios personajes. La licencia es la MiniMax-H3 Community License, no una licencia open source estándar, lo que condiciona su uso comercial.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (rank 256) sobre el transformer del modelo base MiniMax-H3; pipeline video-to-video |
-| Parametros totales | 20.111.438.744 (safetensors declarados) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (ventanas de 90-345 frames; `--frames` = 17n + 5) |
-| Tipos de cuantizacion | int8 y GGUF (hasta 12 GB de VRAM, segun COMFYUI.md) |
+| Arquitectura | Adaptador LoRA sobre MiniMax-H3 (modelo base de difusión video-to-video); arquitectura interna del base no detallada en la información disponible |
+| Parámetros totales | 20.111.438.744 (safetensors reportados) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible; ventana de renderizado de 90–345 frames (17n + 5, a 24 fps), recomendado hasta 294 frames |
+| Tipos de cuantización | int8 y GGUF (para GPUs pequeñas); bf16 en el flujo principal; LoRA a rango completo y `lora_lowrank` (rank 128 / 64) |
 | Idiomas soportados | no disponible |
 | Licencia | minimax-h3-community-license (license: other) |
-| Formato de pesos | safetensors (LoRAs); repo de 167,7 GB, conjunto de inferencia de 5,5 GB |
-| Modelo base | MiniMaxAI/MiniMax-H3 |
-| Modos | `swap` (lora/swap) y `edit` (lora/edit) |
-| LoRAs de baja dimensionalidad | rank 128 (1,34 GB) y rank 64 (0,67 GB) |
-| Resolucion de render | 1280x736 con `--short-edge 736`; 480 en el ejemplo por defecto |
-| Frame rate | 24 fps |
+| Formato de pesos | safetensors (LoRA), GGUF, int8; repositorio de 167,6 GB |
 
 ## Arquitectura y entrenamiento
+Viggle Remake se distribuye como un conjunto de LoRAs y un sampler (`inference/sample.py`) que se aplican sobre el modelo base MiniMax-H3. El flujo de inferencia requiere descargar por separado el transformer, text encoder, tokenizer, processor, VAE, audio VAE y schedulers del base (unos 144 GB), y luego los LoRAs, el código de inferencia y los ejemplos de este repositorio (5,5 GB). El modelo opera en modo video-to-video: recibe un vídeo fuente, un prompt y entre una y cuatro imágenes de referencia (`--ref`), y renderiza una ventana de frames con la banda sonora original.
 
-Viggle Remake no es un modelo entrenado desde cero: son dos adaptadores LoRA de rango 256 sobre el transformer de MiniMax-H3, uno para el modo `swap` (sustitución de personas y personajes, uno o varios a la vez) y otro para el modo `edit` (sustitución, borrado o inserción de objetos, cambio de fondo, clima o luz). El pipeline es de vídeo a vídeo y trabaja por ventanas: `sample.py` renderiza una ventana de 90 a 345 frames (con la fórmula `--frames` = 17n + 5, a 24 fps, recomendándose hasta 294) conservando la banda sonora de origen.
-
-El flujo de inferencia combina keyframes pintados manualmente (de uno a cuatro, pasados con `--ref` y referenciados como `<Picture N>` en el prompt) con el vídeo fuente, de modo que el modelo propaga el cambio al resto de la ventana respetando el movimiento y la cámara originales. Para películas completas, el servidor MCP automatiza el corte en ventanas, el pintado de keyframes, la escritura de prompts, el renderizado distribuido por GPU y el empalme final con audio. No se han publicado en la información disponible detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se empleó RLHF o DPO. La innovación destacable es el diseño "agent-first" mediante un servidor MCP: el agente segmenta el vídeo en ventanas, pinta keyframes, redacta prompts, renderiza en las GPUs del usuario y empalma el resultado con la banda sonora. También se ofrece un worker de ComfyUI (`mcp/comfy_worker/`) para ejecutar el agente en una única GPU de 32 GB.
 
 ## Capacidades
-
-- Edición de vídeo a vídeo con preservación de movimiento, cámara, timing y banda sonora original.
-- Recasteado de personajes (`--mode swap`), incluida la sustitución simultánea de varios personajes en un mismo plano.
-- Cambio de vestuario, eliminación e inserción de objetos y modificación de escenario, clima, luz o estilo (`--mode edit`).
-- Procesamiento de vídeos largos por ventanas: los ejemplos incluyen 116 segundos con 69 cortes y 101 segundos con múltiples personajes.
-- Control mediante keyframes pintados a mano (de uno a cuatro) más prompt de texto.
-- Automatización con agentes mediante servidor MCP: corte de ventanas, pintado de keyframes, generación de prompts, renderizado y montaje.
-- Renderizado distribuido: un worker por GPU (`viggle-remake-worker --gpu N`).
-- Salida con audio original sincronizado.
-- No se documentan capacidades de tool calling genérico, razonamiento multi-step fuera del flujo MCP, ni soporte multilingüe explícito.
+- Edición video-to-video con preservación de movimiento, cámara, timing y soundtrack originales.
+- Recasteado de personajes (`lora/swap`) y cambio de vestuario.
+- Adición y eliminación de objetos en la escena.
+- Modificación de climatología, iluminación, escenario y estilo visual.
+- Procesamiento de películas completas, no solo clips, mediante segmentación automática en ventanas.
+- Control manual mediante prompt más pintura de uno a cuatro keyframes.
+- Integración con agentes vía servidor MCP (Claude Code, codex y cualquier cliente compatible con MCP).
+- Soporte de LoRAs de bajo rango (rank 128 y 64) con salida casi idéntica.
+- Renderizado con audio original del vídeo fuente.
+- No se documentan capacidades de texto, razonamiento, código, matemáticas, tool calling genérico ni visión más allá del propio pipeline de vídeo.
 
 ## Casos de uso
-
-- **Recasteado de vídeos musicales completos**: con `--mode swap` y el servidor MCP se puede rehacer un vídeo musical de principio a fin (el ejemplo White House Funk son 116 segundos y 69 cortes, unas 1,5 horas en dos GPUs), manteniendo la banda sonora original.
-- **Sustitución de personajes en planos de acción**: el ejemplo Burly Brawl reemplaza a Neo por un gato con esmoquin y a cada Agent Smith por un shiba inu durante 101 segundos, lo que demuestra la sustitución simultánea de varios personajes en planos complejos.
-- **Postproducción de vestuario**: cambiar el vestuario de un actor en un plano sin regrabar, usando `--mode edit` con uno o varios keyframes pintados como referencia.
-- **Limpieza de planos (object removal)**: eliminar objetos no deseados del encuadre (por ejemplo, turbinas o atrezzo) conservando el movimiento de cámara, útil en corrección de continuidad.
-- **Cambios de ambiente y clima**: añadir nieve, modificar la iluminación o el fondo de una escena rodada, con el modo `edit` y keyframes de referencia.
-- **Prototipado rápido de storyboards y previsiones**: renderizar variantes de una misma toma (estilo, vestuario, personajes) para decidir en preproducción antes de rodar.
-- **Automatización en pipelines con agentes**: integrar el servidor MCP en un flujo de Claude Code o codex para que un agente reciba un vídeo y una frase ("recast the band as US politicians") y devuelva el film terminado, con renderizado en GPUs propias.
-- **Despliegue en hardware de consumo con ComfyUI**: usar los nodos y los ficheros int8/GGUF (hasta 12 GB de VRAM) para editar clips cortos en GPUs de gama alta de consumo.
+- Recasteado de vídeos musicales completos: el ejemplo "White House Funk" muestra un vídeo musical de 116 segundos recasteado con `lora/swap` en 69 cortes, conservando la banda sonora original; el agente localiza los cortes y renderiza cada ventana.
+- Sustitución de personajes en escenas de cine: "Burly Brawl" convierte a Neo en un gato con esmoquin y a cada Agent Smith en un shiba inu a lo largo de 101 segundos, manteniendo el movimiento y el audio originales.
+- Cambios de ambientación y clima en producción audiovisual: instrucciones como "make it snow" o cambiar la luz permiten alterar la atmósfera de una escena sin regrabar.
+- Edición publicitaria y de marca: añadir o eliminar productos y objetos en planos existentes, o cambiar el vestuario de los modelos, para adaptar campañas a distintos mercados.
+- Previsualización y prototipado de VFX: generar variantes de una escena (estilo, escenario, personajes) antes de comprometer recursos de producción.
+- Automatización de pipelines de posproducción: integración del servidor MCP en flujos de trabajo de agentes para procesar películas completas de forma desatendida en GPUs locales.
+- Creación de parodias y contenido humorístico: el modelo card documenta explícitamente el uso para parodias generadas por IA, con advertencia de que las personas mostradas no participaron ni aprobaron el contenido.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. Los únicos datos de rendimiento documentados son operativos: una ventana de 1280×736 de 345 frames se renderiza en aproximadamente 28 minutos en una RTX 5090 (32 GB) con el worker de ComfyUI, y el ejemplo "White House Funk" se completa de extremo a extremo en unas 3 horas. El renderizado de `sample.py` admite ventanas de 90–345 frames a 24 fps, con recomendación de hasta 294 frames, y `--short-edge 736` produce 1280×736.
 
 ## Requisitos de hardware
 
-- **Modelo base**: la descarga de MiniMax-H3 ocupa unos 144 GB de ficheros; el repositorio completo de Viggle-Remake ronda los 210 GB (no clonar con git-lfs).
-- **Conjunto de inferencia**: LoRAs + sampler + ejemplos = 5,5 GB; las variantes de baja dimensionalidad son 1,34 GB (rank 128) y 0,67 GB (rank 64).
-- **VRAM**: no se especifica un mínimo para el flujo completo con `sample.py`; con ComfyUI hay ficheros int8/GGUF que bajan el requisito hasta 12 GB de VRAM.
-- **GPUs recomendadas**: no se indican modelos concretos (A100, H100, RTX 4090); el flujo MCP asume varias GPUs (un worker por GPU) y el ejemplo White House Funk se ejecuta en dos GPUs en aproximadamente 1,5 horas.
-- **Cabe en GPU de consumo**: sí, en el escenario ComfyUI con cuantización int8/GGUF a partir de 12 GB de VRAM; el flujo nativo con el modelo base completo requiere hardware de datacenter.
-- **Opciones de despliegue**: `sample.py` (script oficial de inferencia), servidor MCP con workers por GPU, ComfyUI (node pack y workflows), y `requirements.txt` propio más un binario de ffmpeg en el PATH.
-- **Latencia y throughput**: no disponibles de forma agregada; el único dato publicado es el tiempo del ejemplo (unas 1,5 horas para un vídeo de 116 segundos en dos GPUs).
+| GPU | Configuración recomendada |
+|---|---|
+| Sin GPU | Aplicación Viggle (viggle.ai) |
+| 12–24 GB | ComfyUI con ficheros int8 o GGUF, flujos manuales sin agente |
+| 32 GB (RTX 5090) | Agente con worker de ComfyUI, 1280×736 hasta 345 frames, ~60 GB de RAM |
+| 80 GB | `sample.py` o ComfyUI con bf16 + LoRA |
+| 96 GB o más | Igual que 80 GB, o agente con `viggle-remake-worker` |
+
+- VRAM estimada para inferencia: no disponible con cifras exactas; el modelo card indica que int8 y GGUF permiten ejecución en tarjetas de 12 GB en adelante.
+- Cabe en GPU consumer: sí, en RTX 5090 (32 GB) con el worker de ComfyUI y en tarjetas de 12–24 GB con int8/GGUF.
+- Opciones de despliegue: `sample.py` (script de inferencia), ComfyUI (node pack y workflows), servidor MCP con `viggle-remake-worker` o `mcp/comfy_worker/`, y la app Viggle como servicio alojado.
+- Requisitos adicionales: binario ffmpeg en el PATH y `huggingface_hub>=1.0` para la CLI `hf`.
+- Latencia y throughput: ~28 minutos por ventana de 345 frames a 1280×736 en RTX 5090; ~3 horas para un vídeo musical completo de 116 segundos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / ventana | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto / ventana | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Viggle Remake | 20.111.438.744 (safetensors declarados) | Ventanas de 90-345 frames a 24 fps | Vídeo a vídeo con LoRAs sobre MiniMax-H3; swap y edit | minimax-h3-community-license | Hugging Face (Viggle/Viggle-Remake) y app Viggle |
-| Viggle-Animate | no disponible | no disponible | Sustitución de un personaje (predecesor directo) | no disponible | App Viggle / Hugging Face |
-| MiniMax-H3 (base) | no disponible | no disponible | Modelo base multimodal sobre el que se aplican las LoRAs | minimax-h3-community-license | Hugging Face (MiniMaxAI/MiniMax-H3) |
-| JST-1 (Viggle) | no disponible | no disponible | Modelo propietario de movimiento y personajes de Viggle | propietaria | Solo vía API/app de Viggle |
+| Viggle Remake | 20,1 B (LoRA sobre MiniMax-H3) | Ventanas de 90–345 frames | Edición video-to-video completa (recaste, objetos, clima, estilo) | minimax-h3-community-license | Hugging Face + app Viggle |
+| Viggle-Animate | no disponible | no disponible | Reemplazo de un personaje | no disponible | Viggle |
+| MiniMax-H3 (base) | ~144 GB de ficheros | no disponible | Modelo base video-to-video | no disponible | Hugging Face (MiniMaxAI) |
 
-No se dispone de datos de benchmarks que permitan comparar rendimiento numérico con alternativas de la misma categoría.
+La información disponible no permite comparar rendimiento numérico con alternativas de la misma categoría; no se han publicado benchmarks de Viggle Remake ni de los modelos comparados en las fuentes consultadas.
 
 ## Limitaciones y advertencias
-
-- **Licencia no open source**: la MiniMax-H3 Community License es una licencia "other"; hay que revisar el fichero LICENSE antes de cualquier uso comercial. No es una licencia OSI.
-- **Dependencia del modelo base**: requiere descargar MiniMax-H3 (unos 144 GB) además de las LoRAs; el repositorio completo ronda los 210 GB y no debe clonarse con git-lfs.
-- **Riesgo de suplantación y deepfakes**: el modelo está diseñado para recastear personas reales; los propios ejemplos incluyen descargos ("AI-generated parody: the people shown did not take part in, approve or endorse it"). Es imprescindible obtener consentimiento y cumplir la normativa aplicable.
-- **Derechos de autor del material fuente**: los ejemplos usan fragmentos de películas y música de terceros; el usuario es responsable del material de entrada y de la banda sonora.
-- **Alucinación visual**: no se documentan métricas de fidelidad; el autor advierte de que el agente pinta sus propios keyframes y "cada ejecución difiere en detalle", por lo que la reproducibilidad exacta no está garantizada.
-- **Longitud limitada por ventanas**: el renderizado nativo trabaja por ventanas de 90 a 345 frames (recomendado hasta 294); los vídeos largos dependen del pipeline MCP para cortar y empalmar, con posible inconsistencia entre ventanas.
-- **Idiomas**: no hay información sobre el soporte multilingüe de los prompts.
-- **Cuantización**: la calidad con int8/GGUF (12 GB de VRAM) puede diferir de la del flujo completo; las LoRAs de rango 128 y 64 se describen como de salida "casi idéntica", no idéntica.
-- **Madurez**: 4 descargas y 1 like en Hugging Face en la fecha de actualización; ecosistema joven y con poca validación externa.
+- Riesgo de alucinación visual: la información disponible no documenta métricas de fidelidad; el propio model card sugiere verificar con `examples/demo.sh` que el LoRA se cargó correctamente (si las turbinas siguen ahí o el pizzero no cambia, el LoRA no se aplicó).
+- Sesgos: no documentados en la información disponible; al recastear personas, el modelo puede reproducir sesgos presentes en los datos de entrenamiento del base.
+- Limitaciones de idioma: no se especifican idiomas soportados.
+- Restricciones de licencia: licencia `minimax-h3-community-license` de tipo "other"; es necesario consultar el fichero LICENSE del repositorio antes de cualquier uso comercial.
+- Advertencia legal explícita: los ejemplos con personas reales son parodias generadas por IA y las personas mostradas no participaron, aprobaron ni respaldaron el contenido; el model card indica no estar afiliado ni respaldado por los titulares de las obras originales.
+- Requisitos de recursos: el flujo completo necesita el modelo base (~144 GB) más el repositorio (~210 GB completo, 5,5 GB para LoRAs e inferencia), lo que exige almacenamiento considerable.
+- Dependencia de la app/agente: el uso sin GPU requiere la app Viggle; el flujo local con agente exige configuración MCP y GPUs compatibles.
+- Ventana de renderizado limitada: 90–345 frames por ventana, con recomendación de hasta 294; los vídeos largos requieren segmentación y empalme.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/Viggle/Viggle-Remake
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - App Viggle (uso sin GPU): https://viggle.ai/meme/app/home?ui=v2
 - Sitio de Viggle: https://viggle.ai/
 - Herramientas gratuitas de Viggle: https://viggle.ai/tools
-- Documentación ComfyUI del modelo: https://huggingface.co/Viggle/Viggle-Remake/blob/main/COMFYUI.md
-- Servidor MCP: https://huggingface.co/Viggle/Viggle-Remake/tree/main/mcp
-- Ejemplo White House Funk: https://huggingface.co/Viggle/Viggle-Remake/tree/main/mcp/examples/white-house-funk
-- Script de inferencia: https://huggingface.co/Viggle/Viggle-Remake/blob/main/inference/sample.py
-- Ejemplos y demo: https://huggingface.co/Viggle/Viggle-Remake/tree/main/examples
+- Documentación ComfyUI del repositorio: COMFYUI.md (referenciado en el model card)
+- Servidor MCP del repositorio: mcp/ (referenciado en el model card)
+- Ejemplos de entrada: examples/inputs/ (referenciado en el model card)

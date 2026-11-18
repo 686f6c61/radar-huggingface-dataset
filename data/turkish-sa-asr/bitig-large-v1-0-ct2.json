@@ -5,7 +5,7 @@
   "author": "turkish-sa-asr",
   "url": "https://huggingface.co/turkish-sa-asr/bitig-large-v1.0-ct2",
   "created_at": "2026-11-08T15:54:19.000Z",
-  "updated_at": "2026-11-08T15:54:26.000Z",
+  "updated_at": "2026-11-18T09:57:51.000Z",
   "license": "pre-release-evaluation",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",

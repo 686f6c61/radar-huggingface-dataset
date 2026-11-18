@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "gadzhiaskhabaliev/aaai27-models",
+  "renamed_at": "2026-11-18T07:03:22.872Z",
   "benchmarks": [],
   "sources": [
     {

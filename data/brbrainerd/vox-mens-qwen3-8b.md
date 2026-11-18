@@ -2,82 +2,96 @@
 
 ## Resumen
 
-VoxMens QLoRA Adapter es un adaptador de ajuste fino (QLoRA) publicado por el usuario brbrainerd sobre el modelo base Qwen/Qwen3-8B de Alibaba. El repositorio contiene únicamente los pesos del adaptador LoRA, no el modelo completo, y ocupa 0,2 GB. Está etiquetado con los términos "vox" y "mens", que sugieren un ajuste orientado a la generación de voz masculina o a un estilo de habla concreto, aunque la model card no documenta explícitamente el objetivo del entrenamiento.
+vox-mens-qwen3-8b es un adaptador QLoRA sobre Qwen/Qwen3-8B desarrollado por brbrainerd dentro del proyecto Vox, un ecosistema orientado a la generación de código en el lenguaje Vox (vox-lang). El modelo no es un modelo base independiente: se distribuye como adaptador (rank bajo) que debe aplicarse sobre la revisión concreta de Qwen3-8B indicada en la model card (`b968826d9c46dd6066d109eabc6255188de91218`). Su propósito es corregir los errores de sintaxis y de tipos que el modelo base comete al generar programas Vox, un lenguaje con construcciones propias como `mutation`, `action` y tipos `Result`.
 
-El adaptador se entrenó con QLoRA sobre una revisión fijada del modelo base (commit b968826d9c46dd6066d109eabc6255188de91218), con una pérdida final de 0,5129 y un pico de memoria medido de 49.374 MiB durante el entrenamiento. La model card incluye una advertencia relevante: el repositorio se subió con `--force-ungated` y el estado del gate es "ungated" porque el archivo gate_receipt.json no pasó la validación (overall_passed != true).
+El adaptador forma parte de una familia escalonada de tamaños ("rungs") del proyecto Vox MENS, donde cada tamaño se etiqueta con un estado de entrenamiento y una "gate" (puerta de calidad) que en este caso figura como *passed*. El modelo está pensado para máquinas con memoria abundante, como portátiles de gama alta o estaciones de trabajo, y para tareas de edición que tocan varios ficheros y requieren cadenas de razonamiento sobre tipos.
 
-La relevancia de esta ficha es limitada: se trata de un adaptador de autor individual, sin descargas ni likes en el momento de la consulta, sin pipeline declarado, sin idiomas documentados y sin benchmarks publicados. Resulta útil como ejemplo de adaptador QLoRA ligero sobre Qwen3-8B, pero no debe considerarse un modelo listo para producción sin una evaluación propia.
+La relevancia actual es acotada pero específica: demuestra un flujo de ajuste fino (QLoRA con Candle) para especializar un LLM generalista en un lenguaje de dominio concreto, con métricas declaradas de regresión en razonamiento (modo thinking) y de generación de código. La licencia Apache 2.0 facilita su reutilización, aunque el modelo solo declara inglés como idioma y su ámbito real es la generación de código Vox.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador QLoRA sobre transformer Qwen3-8B (arquitectura del adaptador no detallada) |
-| Parametros totales | No disponible (el adaptador ocupa 0,2 GB; el modelo base Qwen3-8B tiene 8B) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3-8B); adaptador QLoRA sobre el modelo base |
+| Parametros totales | 8B en el modelo base (el adaptador añade pesos de bajo rango; número exacto no disponible) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (heredada del modelo base Qwen3-8B, no documentada en la model card) |
-| Tipos de cuantizacion | No disponible (entrenado con QLoRA; no se documentan cuantizaciones de inferencia) |
-| Idiomas soportados | No disponible |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (se entrena con QLoRA; no se listan formatos de cuantización publicados) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (repositorio de 0,2 GB; presumiblemente safetensors de adaptador LoRA, no confirmado) |
+| Formato de pesos | No disponible explícitamente; el repositorio usa la librería `vox` y tiene un tamaño de 0.4 GB, compatible con pesos de adaptador |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador QLoRA, es decir, un conjunto de matrices de bajo rango insertadas en las capas del transformer Qwen3-8B, cuyo pesos base se mantienen congelados y cuantizados durante el entrenamiento. La model card no especifica el rango (r), el alpha, las capas objetivo ni el tipo de cuantización de 4 bits empleada. El modelo base está fijado al commit b968826d9c46dd6066d109eabc6255188de91218, lo que garantiza reproducibilidad respecto a esa revisión concreta.
+El modelo se construye como un adaptador QLoRA aplicado sobre Qwen3-8B, un transformer decoder-only de 8 mil millones de parámetros. El entrenamiento se realizó con Candle (framework de tensores en Rust) y está etiquetado con el tag `spoke-vox-lang`, lo que lo vincula al "spoke" de generación de código del lenguaje Vox dentro de la arquitectura hub-and-spoke del proyecto MENS. La revisión base está fijada explícitamente, lo que garantiza reproducibilidad del adaptador.
 
-Los únicos datos de entrenamiento publicados son el hash del corpus (b52c9a0be52143e0), la pérdida final (0,5129) y el pico de memoria medido (49.374 MiB). No se documentan el número de tokens, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas adicionales. El tamaño del repositorio (0,2 GB) es coherente con un adaptador LoRA de rango moderado sobre un modelo de 8B, no con un modelo completo.
+No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. La model card sí aporta un dato operativo concreto: el pico de memoria medido durante el entrenamiento del rung de 8B es de 36 356 MiB (`peak_source: run_summary`), y no se ha medido ninguna cifra de memoria para servicio (inferencia). El adaptador corrige 8 de 52 ítems del banco de evaluación y no rompe ninguno, según la model card. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto y razonamiento heredados del modelo base Qwen3-8B, sujetos a la modificación introducida por el adaptador.
-- Ajuste orientado a un estilo o dominio etiquetado como "vox" y "mens"; el propósito exacto no está documentado.
-- Soporte de tool calling y function calling: no confirmado para este adaptador (el modelo base Qwen3 lo soporta, pero el ajuste puede alterarlo).
-- Soporte de agentes y razonamiento multi-paso: no confirmado.
-- Capacidades multilingües: no documentadas.
-- Capacidades especiales (modo thinking, visión, audio): no documentadas.
+- Generación de código en el lenguaje Vox (vox-lang): funciones, mutaciones (`mutation`), acciones (`action`) y tipos `Result`, con corrección de errores de sintaxis y de tipos respecto al modelo base.
+- Razonamiento en modo thinking: la model card reporta comprobaciones de regresión en gsm8k, math500 y un conjunto propio (`vox_think`).
+- Generación de texto general (pipeline `text-generation`).
+- Capacidad multilingüe limitada: solo se declara inglés.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; el proyecto menciona ediciones multi-fichero y cadenas de razonamiento sobre tipos como caso de uso previsto.
+- Capacidades especiales (visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Experimentación con adaptadores QLoRA: el repositorio sirve para estudiar cómo un adaptador de bajo rango modifica el comportamiento de Qwen3-8B, cargándolo con PEFT sobre el modelo base fijado.
-- Investigación sobre estilos de habla: dado el etiquetado "vox"/"mens", puede emplearse para explorar la generación de texto con un registro o estilo masculino concreto, siempre con evaluación cualitativa propia.
-- Reproducción de entrenamientos: el hash del corpus, el commit del modelo base y la pérdida final permiten intentar reproducir el pipeline de ajuste.
-- Pruebas de integración con PEFT y Transformers: útil como caso de prueba para pipelines de carga de adaptadores y merge de pesos.
-- Evaluación comparativa de adaptadores: puede servir como referencia en estudios sobre el efecto de QLoRA en modelos de 8B.
-- Docencia y prototipado: ejemplo didáctico de publicación de un adaptador con metadatos mínimos y advertencias de gate.
+- Generación de código Vox en editores y asistentes: el adaptador corrige errores de tipos y de parseo del modelo base en tareas de Humaneval traducidas a Vox, por lo que encaja en autocompletado o generación de funciones a partir de una descripción en lenguaje natural.
+- Edición multi-fichero: el rung de 8B está descrito como adecuado para cambios que afectan a varios archivos y requieren razonamiento sobre tipos, lo que permite usarlo en tareas de refactorización asistida dentro de un repositorio Vox.
+- Generación de mutaciones y acciones de dominio: los ejemplos de la model card muestran que produce firmas `mutation` y `action` válidas, útil para generar capas de acceso a datos o endpoints a partir de especificaciones.
+- Corrección automática de código generado por el modelo base: puede emplearse como segunda pasada que repara salidas de Qwen3-8B que no parsean o tienen errores de tipos.
+- Evaluación y regresión de pipelines de código: sus métricas declaradas (pass@1, accuracy en gsm8k/math500/vox_think) permiten integrarlo en suites de evaluación de generación de código para lenguajes de dominio.
+- Investigación en ajuste fino eficiente: al ser un adaptador QLoRA entrenado con Candle, sirve como referencia reproducible para especializar modelos de 8B en lenguajes pequeños con recursos de una estación de trabajo (pico de entrenamiento de ~36 GB).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Datos declarados por el autor en el model-index (no verificados de forma independiente):
+
+| Tarea | Dataset | Métrica | Valor |
+|---|---|---|---|
+| Generación de código Vox | Vox held-out bench (52 ítems) | pass@1 (qwen3_non_thinking_codegen_v1) | 0,2500 |
+| Regresión de razonamiento (thinking) | gsm8k_think (128 ítems) | accuracy | 0,8906 |
+| Regresión de razonamiento (thinking) | math500_think (128 ítems) | accuracy | 0,4766 |
+| Regresión de razonamiento (thinking) | vox_think (128 ítems) | accuracy | 0,9375 |
+
+La model card indica además que, de los 52 ítems del banco de evaluación, el adaptador corrige 8 y rompe 0 respecto al modelo base. No se han publicado resultados de MMLU, HumanEval estándar ni GSM8K completo en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible para el adaptador; el modelo base Qwen3-8B requiere aproximadamente 16 GB en FP16 y en torno a 6-8 GB con cuantización de 4 bits, según configuración.
-- GPU recomendadas: no documentadas; para el modelo base, A100, H100 o RTX 4090 son adecuadas en FP16.
-- ¿Cabe en GPU de consumo? El modelo base sí, con cuantización, en tarjetas de 8-12 GB; el adaptador en sí es de 0,2 GB.
-- Opciones de despliegue: PEFT + Transformers para cargar el adaptador; vLLM, llama.cpp, Ollama o TGI requerirían fusionar el adaptador con el modelo base, lo cual no está documentado.
+- VRAM estimada para inferencia: no disponible (no se ha medido cifra de servicio). Como referencia, el modelo base Qwen3-8B requiere aproximadamente 16 GB en FP16, aunque este dato no procede de la información proporcionada.
+- Memoria de entrenamiento medida: 36 356 MiB de pico para el rung de 8B.
+- GPU recomendadas: no disponibles en la información. El proyecto describe el rung de 8B como orientado a portátiles de gama alta y estaciones de trabajo con memoria abundante.
+- ¿Cabe en GPU de consumo? No confirmado; el pico de entrenamiento (~36 GB) supera la VRAM de una RTX 4090 (24 GB), pero no se aportan cifras de inferencia.
+- Opciones de despliegue: la librería indicada es `vox`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| VoxMens Qwen3-8B (este) | Adaptador sobre 8B | No disponible | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
-| Qwen/Qwen3-8B (base) | 8B | No disponible en esta ficha | Apache 2.0 | Ampliamente disponible |
-| Adaptadores QLoRA comunitarios sobre Qwen3-8B | Variable | Heredado del base | Variable | Múltiples repositorios |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| vox-mens-qwen3-8b | 8B (base) + adaptador QLoRA | No disponible | Código en Vox (vox-lang) | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3-8B | 8B | No disponible en esta ficha | LLM generalista y código | Apache 2.0 | Hugging Face |
+| Alternativas especializadas en lenguajes de dominio | No disponible | No disponible | Ajuste fino sobre código | No disponible | No disponible |
 
-No se dispone de datos de rendimiento comparativos para este adaptador.
+La comparación directa con otros adaptadores para lenguajes de dominio no está disponible en la información proporcionada. El principal punto de referencia es el propio Qwen3-8B base, sobre el que el adaptador mejora la corrección sintáctica en Vox (8 ítems corregidos, 0 rotos) manteniendo el rendimiento en tareas de razonamiento en modo thinking según las métricas declaradas.
 
 ## Limitaciones y advertencias
 
-- El repositorio se subió con `--force-ungated` y el gate no pasó la validación (`overall_passed != true`), lo que indica que los controles automáticos de calidad o seguridad no se superaron.
-- No hay descargas ni likes, ni pipeline declarado, ni idiomas documentados: la madurez y validación del adaptador son mínimas.
-- No se documentan sesgos, riesgos de alucinación ni limitaciones de contexto o idioma específicas del ajuste.
-- La licencia Apache 2.0 permite uso comercial, pero al ser un adaptador sobre Qwen3-8B conviene verificar también la licencia del modelo base.
-- El propósito del ajuste ("vox", "mens") no está explicado; usarlo en producción sin evaluación propia es arriesgado.
-- No se especifican formato de pesos ni instrucciones de carga; es necesario inferir el uso con PEFT.
+- No es un modelo autónomo: requiere cargar el modelo base Qwen3-8B en la revisión exacta `b968826d9c46dd6066d109eabc6255188de91218`; usar otra revisión puede invalidar el adaptador.
+- Ámbito muy restringido: está especializado en el lenguaje Vox y declarado solo para inglés; su utilidad fuera de ese dominio no está documentada.
+- Métricas no verificadas: todos los resultados del model-index figuran con `verified: false` y proceden del autor.
+- Sesgos conocidos: no documentados en la información disponible; al heredar el modelo base, puede arrastrar los sesgos de Qwen3-8B.
+- Riesgo de alucinación: no evaluado de forma específica; en generación de código puede producir APIs o construcciones de Vox inexistentes.
+- Limitaciones de contexto e idioma: la longitud de contexto no se especifica y solo se declara inglés.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe respetarse la licencia y los términos del modelo base Qwen3-8B.
+- En producción: no hay cifras de memoria de servicio ni de latencia/throughput, por lo que el dimensionamiento debe hacerse empíricamente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Commit del modelo base: b968826d9c46dd6066d109eabc6255188de91218
+- Referencia de modelos MENS (estados y hub-and-spoke): https://voxlang.org/reference/mens-models/
+- Referencia del lenguaje Vox: https://voxlang.org/

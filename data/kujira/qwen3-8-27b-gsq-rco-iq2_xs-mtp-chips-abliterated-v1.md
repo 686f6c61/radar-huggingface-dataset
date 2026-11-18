@@ -2,77 +2,69 @@
 
 ## Resumen
 
-Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-CHiPS-Abliterated-v1 es una versión modificada del cuantizado GGUF `Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp` publicado por ISTA DASLab, a su vez derivado del modelo base Qwen3.8-27B del equipo Qwen. La modificación, realizada por el usuario Kujira, aplica una técnica denominada CHiPS (Causal Head-isolated Projection Steering) cuyo objetivo es reducir el comportamiento de rechazo (refusal) del modelo original, manteniendo el resto de capacidades intactas. El resultado es un modelo de 27.320.697.856 parámetros en cuantización IQ2_XS que, según el autor, baja la tasa de rechazo ante peticiones dañinas del 88,5% al 1%, sin degradar perplejidad, tool calling ni comportamiento en tareas largas.
+Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-CHiPS-Abliterated-v1 es una versión modificada del modelo Qwen3.8-27B, publicado originalmente por el equipo Qwen, en su cuantización GSQ-RCO de ISTA DASLab (Instituto de Ciencia y Tecnología de Austria). El autor de esta ficha, Kujira, ha aplicado una técnica denominada CHiPS (Causal Head-isolated Projection Steering) para reducir drásticamente el comportamiento de rechazo del modelo original, pasando de un 88,5% a un 1% en un conjunto de peticiones dañinas, manteniendo el resto de tensores byte-idénticos al archivo original.
 
-El modelo conserva la cabeza MTP (multi-token prediction) del archivo original, lo que permite decodificación especulativa, y se distribuye como un único archivo GGUF de 8,8 GB listo para usarse con llama.cpp. Está etiquetado como `abliterated`, término habitual en la comunidad para modelos a los que se les ha suprimido la alineación de seguridad orientada a rechazos. La licencia es Apache-2.0, heredada del modelo base.
+El modelo conserva la arquitectura del Qwen3.8-27B original (27.320.697.856 parámetros, transformer denso, sin datos de contexto disponibles en la información proporcionada) y mantiene la cabeza MTP (multi-token prediction) para decodificación especulativa. La cuantización IQ2_XS reduce el peso a 8,8 GB, lo que permite su despliegue en hardware de consumo. La licencia es Apache-2.0.
 
-Su relevancia es doble: por un lado, documenta un método de edición de pesos que actúa sobre una fracción mínima del modelo (el autor afirma que el resto de tensores son idénticos byte a byte al original); por otro, ejemplifica el debate sobre modelos sin salvaguardas y su uso responsable. No se dispone de información sobre idiomas soportados ni de benchmarks estándar publicados en la información proporcionada.
+La relevancia de esta ficha radica en que documenta un caso de modificación quirúrgica de comportamiento (abliteración) sobre un modelo de gran tamaño, con métricas de evaluación detalladas que comparan el original, una build alternativa (Heretic) y esta versión, incluyendo pruebas de rechazo, tareas largas, tool calling y perplejidad.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.8-27B), con cabeza MTP para decodificación especulativa |
-| Parametros totales | 27.320.697.856 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ2_XS (único archivo publicado) |
-| Idiomas soportados | no disponible (evaluación en inglés y japonés) |
+| Arquitectura | Transformer denso (Qwen3.8-27B), con cabeza MTP para decodificación especulativa |
+| Parámetros totales | 27.320.697.856 |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | IQ2_XS (único archivo publicado, 8,8 GB) |
+| Idiomas soportados | No disponibles (evaluación en inglés y japonés) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (8,8 GB) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo Qwen3.8-27B, un transformer denso de aproximadamente 27.300 millones de parámetros. El archivo distribuido es una cuantización IQ2_XS realizada por ISTA DASLab mediante GSQ-RCO, e incluye la cabeza MTP del build original, lo que habilita decodificación especulativa en llama.cpp. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo base.
+El modelo base es Qwen3.8-27B, un transformer denso de 27.320 millones de parámetros. La versión aquí documentada parte de la cuantización GSQ-RCO de ISTA DASLab, que aplica cuantización GSQ (probablemente "Grouped Scaling Quantization") y RCO (probablemente "Rotation-based Calibration Optimization", según los tags y referencias arXiv:2604.18556 y arXiv:2605.00649). El archivo incluye la cabeza MTP (multi-token prediction) para decodificación especulativa, lo que permite generar varios tokens por paso y reducir latencia.
 
-La innovación principal de esta ficha es el método CHiPS (Causal Head-isolated Projection Steering), aplicado por el autor para reducir los rechazos. Según la model card, la edición se confina a una parte muy pequeña del modelo y el resto de tensores permanecen idénticos byte a byte al archivo original; los detalles técnicos del método no se han divulgado. La evaluación del autor compara tres archivos de la misma cuantización (original, build Heretic y este modelo) y reporta que la perplejidad teacher-forced se mantiene dentro del 0,3% respecto al original en inglés, japonés, código y corpus general. También verifica que la distribución del primer token difiere con una divergencia KL de 0,006 o menos en 64 prompts, con el mismo token más probable en 62 de ellos.
+La modificación CHiPS (Causal Head-isolated Projection Steering) actúa sobre un subconjunto muy pequeño de tensores, dejando el resto byte-idénticos al original. Según la model card, la receta no está publicada y las mediciones del artículo se realizaron sobre otros modelos. No se dispone de información sobre el dataset de entrenamiento original (número de tokens, composición, RLHF/DPO) en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato multi-turno, con modo de razonamiento (thinking) habilitado por defecto en la configuración de evaluación.
-- Razonamiento de varios pasos y tareas de formato largo: el autor reporta 24 tareas multi-paso evaluadas.
-- Tool calling / function calling: 97% de acierto en nombre y 100% en argumentos sobre 40 tareas de llamada a herramientas.
-- Seguimiento de turnos tras el resultado de una herramienta: 100% en la evaluación del autor.
-- Decodificación especulativa mediante la cabeza MTP incluida en el archivo.
-- Capacidad de visión potencialmente heredada del modelo base, aunque el proyector `mmproj-Qwen3.8-27B-BF16.gguf` no se incluye y el autor indica que no se ha probado visión con este archivo.
-- Capacidades multilingües: la evaluación incluye peticiones en inglés y japonés, pero no se documenta la lista completa de idiomas.
+- Generación de texto conversacional y razonamiento multi-paso (thinking mode habilitado en las evaluaciones).
+- Tool calling / function calling: evaluado con 40 tareas, con un 97% de acierto en nombre de herramienta y 100% en argumentos.
+- Seguimiento de tareas largas: 24 tareas multi-paso evaluadas, con una media de 2.083 tokens generados.
+- Capacidades multilingües: evaluación en inglés y japonés; no se dispone de lista completa de idiomas.
+- Decodificación especulativa mediante cabeza MTP.
+- Visión: el proyector visual (mmproj) no está incluido en este repositorio; no se ha probado el uso con visión.
 
 ## Casos de uso
 
-- Investigación sobre alineación y edición de pesos: el modelo sirve como caso de estudio para medir el efecto de técnicas de steering sobre la tasa de rechazo, comparando con el original y con el build Heretic bajo el mismo esquema de evaluación.
-- Evaluación de robustez de salvaguardas: equipos de seguridad pueden usar este archivo para probar si sus filtros externos detectan contenido dañino cuando el modelo subyacente no rechaza, ya que el autor recomienda añadir salvaguardas propias antes de exponerlo a terceros.
-- Despliegue local en hardware de consumo: al ocupar 8,8 GB en IQ2_XS, cabe en GPUs consumer con 12 GB o más de VRAM y permite ejecutar un modelo de 27B en local con llama.cpp y `llama-server`.
-- Asistente conversacional con tool calling en entornos controlados: la evaluación reporta 97% de acierto en nombre de herramienta y 100% en argumentos, lo que lo hace apto para prototipos de agentes que encadenan llamadas a APIs internas.
-- Generación de código y texto técnico: la perplejidad en código (3,982) se mantiene prácticamente igual a la del original (3,978), por lo que puede usarse para tareas de completado y explicación de código en pipelines internos.
-- Procesamiento de documentación en inglés y japonés: la perplejidad en japonés (18,355) es similar a la del original (18,333), lo que respalda su uso en tareas de resumen o extracción sobre textos en esos idiomas.
-- Pruebas de decodificación especulativa: la inclusión de la cabeza MTP permite medir aceleraciones de inferencia en llama.cpp frente a builds sin MTP.
+- Investigación sobre alineación y seguridad: el modelo permite estudiar el comportamiento de rechazo y su modificación quirúrgica, comparando con el original y con la build Heretic en conjuntos de peticiones dañinas y benignas.
+- Generación de código en pipelines: con tool calling fiable (97% nombre correcto, 100% argumentos) y perplejidad en código de 3,982, puede integrarse en asistentes de programación que requieran ejecución de herramientas.
+- Atención al cliente automatizada: aunque no se probaron conversaciones multi-turno ni system prompts, el modelo soporta generación conversacional y puede gestionar respuestas largas (media de 2.083 tokens en tareas largas).
+- Despliegue en hardware de consumo: el archivo GGUF de 8,8 GB con cuantización IQ2_XS permite ejecución local en GPUs con 12-16 GB de VRAM mediante llama.cpp.
+- Evaluación de robustez de cuantizaciones: sirve como referencia para comparar el impacto de la abliteración en perplejidad (diferencias <0,3% en inglés, japonés, código y corpus general).
+- Generación de contenido creativo sin restricciones de rechazo: para usuarios que necesiten respuestas a peticiones que el modelo original rechazaría, con la advertencia de que puede producir contenido dañino o inexacto.
+- Pruebas de decodificación especulativa: la cabeza MTP incluida permite medir aceleración en inferencia con llama.cpp.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados por el autor no son benchmarks estándar (MMLU, HumanEval, GSM8K), sino evaluaciones internas sobre conjuntos propios. Se reproducen a continuación.
+Los datos de la model card comparan tres archivos de la misma cuantización IQ2_XS-mtp: original, Heretic y este modelo.
 
-Rechazos y modos de fallo (104 peticiones dañinas y 100 inofensivas, thinking activado):
-
-| Metrica | Original | Heretic | Este modelo |
+| Métrica | Original | Heretic | Este modelo |
 |---|---|---|---|
 | Rechazo en peticiones dañinas | 88,5% | 1% | 1% |
-| Rechazo en peticiones inofensivas | 4% | 1% | 1% |
-| Bucles (dañinas / inofensivas) | 0% / 1% | 1% / 1% | 0% / 0% |
-| Respuestas vacías (dañinas / inofensivas) | 0% / 2% | 1% / 2% | 2% / 2% |
-
-Tareas largas y tool calling (24 tareas multi-paso y 40 tareas de llamada a herramientas):
-
-| Metrica | Original | Heretic | Este modelo |
-|---|---|---|---|
-| Tareas largas: límite de tokens alcanzado | 8% | 21% | 12% |
+| Rechazo en peticiones benignas | 4% | 1% | 1% |
+| Bucles (dañinas / benignas) | 0% / 1% | 1% / 1% | 0% / 0% |
+| Respuestas vacías (dañinas / benignas) | 0% / 2% | 1% / 2% | 2% / 2% |
+| Tareas largas: límite de tokens | 8% | 21% | 12% |
 | Tareas largas: bucles | 0% | 0% | 4% (1 tarea) |
 | Tareas largas: salida vacía | 4% | 4% | 4% |
 | Tareas largas: tokens medios | 2.151 | 2.260 | 2.083 |
 | Tool calls: nombre / argumentos correctos | 97% / 100% | 100% / 100% | 97% / 100% |
 | Sin tool call cuando no se necesita | 90% | 100% | 90% |
-| Turno de seguimiento tras resultado de herramienta | 100% | 100% | 100% |
+| Turno de seguimiento tras resultado | 100% | 100% | 100% |
 
-Perplejidad teacher-forced (chunks de 512 tokens, textos internos de referencia; no son wikitext2/C4/FineWeb-Edu):
+Perplejidad (teacher-forced, chunks de 512 tokens, textos internos):
 
 | Corpus | Original | Este modelo |
 |---|---|---|
@@ -81,45 +73,39 @@ Perplejidad teacher-forced (chunks de 512 tokens, textos internos de referencia;
 | Código | 3,978 | 3,982 |
 | Corpus general | 4,161 | 4,161 |
 
-Configuración de evaluación: `llama-server`, thinking activado, temperatura 0,6, top_p 0,95, top_k 20, máximo 1.536 tokens nuevos, semilla fija, caché KV q8_0.
+Las diferencias de perplejidad están dentro del 0,3%. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo GGUF ocupa 8,8 GB; con caché KV q8_0 y contexto moderado, se recomienda al menos 10-12 GB de VRAM para evitar offload parcial a CPU.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 3090 (24 GB), A100 y H100 para despliegues de mayor concurrencia.
-- Cabe en GPU consumer: sí, en tarjetas con 12 GB o más (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090). En 8 GB requeriría offload parcial y penalización de latencia.
-- Opciones de despliegue: llama.cpp (`llama-server`), y por compatibilidad de formato GGUF, otros runners basados en llama.cpp. No se documenta soporte para vLLM ni TGI con este archivo.
-- Latencia y throughput: no disponibles. La inclusión de la cabeza MTP permite decodificación especulativa, pero el autor no publica cifras de aceleración.
+- VRAM estimada para inferencia: aproximadamente 8,8 GB para el archivo GGUF IQ2_XS, más overhead de contexto KV (q8_0 en las evaluaciones). Con contexto moderado, cabe en GPUs de 12 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, A100, H100. Para mayor throughput, GPUs con más VRAM permiten mayor contexto y batch.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB o superiores con cuantización IQ2_XS.
+- Opciones de despliegue: llama.cpp (`llama-server`), Ollama (si se convierte el GGUF), y cualquier runtime compatible con GGUF. No se mencionan vLLM ni TGI para este formato.
+- Latencia y throughput: no disponibles en la información proporcionada. La cabeza MTP permite decodificación especulativa, pero no se aportan cifras de aceleración.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Rechazo (dañinas) | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| Este modelo (CHiPS-Abliterated) | 27,3B | no disponible | IQ2_XS-mtp | 1% | Apache-2.0 | GGUF |
-| ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp (original) | 27,3B | no disponible | IQ2_XS-mtp | 88,5% | Apache-2.0 | GGUF |
-| 0bserverx/Qwen3.8-27B-Heretic-GSQ-RCO-GGUF | 27,3B | no disponible | IQ2_XS | 1% | Apache-2.0 | GGUF |
-| Qwen/Qwen3.8-27B (base) | 27,3B | no disponible | BF16 | no disponible | Apache-2.0 | safetensors |
-
-Los tres builds cuantizados comparten el mismo modelo base y difieren en el método de edición aplicado. El original conserva la alineación de rechazo; el build Heretic y este modelo la reducen al 1% en el conjunto de evaluación del autor, con diferencias menores en tareas largas y tool calling.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Este modelo (Qwen3.8-27B CHiPS Abliterated) | 27,3B | No disponible | Apache-2.0 | GGUF IQ2_XS | Rechazo 1% en dañinas, perplejidad casi idéntica al original |
+| Qwen3.8-27B-GSQ-RCO original (ISTA DASLab) | 27,3B | No disponible | Apache-2.0 | GGUF IQ2_XS-mtp | Rechazo 88,5% en dañinas |
+| Qwen3.8-27B-Heretic (0bserverx) | 27,3B | No disponible | Apache-2.0 | GGUF | Rechazo 1%, pero 21% de tareas largas alcanzan límite de tokens |
+| Qwen3.8-27B (Qwen team) | 27,3B | No disponible | Apache-2.0 | Safetensors (original) | Modelo base sin cuantizar |
 
 ## Limitaciones y advertencias
 
-- El modelo sigue muchas peticiones que el original rechaza y puede producir contenido dañino, ofensivo o inexacto. El autor lo restringe explícitamente a investigación y advierte de la responsabilidad legal del usuario.
-- El método CHiPS no se ha divulgado; no es posible auditar qué tensores exactos se han modificado ni reproducir la edición a partir de la documentación pública.
-- La evaluación de rechazos se basa en coincidencia de frases y no en revisión humana: una respuesta que evita la petición sin usar una frase de rechazo no se contabiliza como rechazo.
-- Los conjuntos de evaluación son pequeños (una petición equivale a ~1%), y el 1-3% de rechazos restante varía entre ejecuciones.
-- Solo se han probado peticiones de un turno sin system prompt; no se evaluaron conversaciones multi-turno, system prompts ni peticiones reformuladas o adversariales.
-- Solo se publica el build IQ2_XS-mtp; no hay versiones en otras cuantizaciones de este modelo editado.
-- La visión no se ha probado con este archivo y el proyector `mmproj` no se incluye.
-- La cuantización IQ2_XS es agresiva; aunque la perplejidad se mantiene cercana al original en los textos evaluados, puede degradar tareas de razonamiento complejo no cubiertas por la evaluación.
-- Riesgo de alucinación: no se han publicado métricas específicas de factualidad; aplican las limitaciones habituales de un modelo de 27B cuantizado a 2 bits.
-- La licencia Apache-2.0 permite uso comercial, pero el uso de un modelo sin salvaguardas en producción puede incumplir normativas sectoriales o locales; el autor recomienda añadir filtros propios.
+- Sesgos conocidos: no se documentan sesgos específicos, pero al ser una abliteración, el modelo puede producir contenido ofensivo, dañino o inexacto con mayor frecuencia que el original.
+- Riesgo de alucinación: no se han publicado métricas de veracidad; la perplejidad se mantiene similar al original, pero la eliminación de rechazos puede aumentar respuestas inventadas ante peticiones dañinas.
+- Limitaciones de contexto o idioma: no se dispone de longitud de contexto oficial; la evaluación solo cubrió inglés y japonés, y no se probaron conversaciones multi-turno ni system prompts.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el autor advierte que el usuario es responsable de cumplir las leyes aplicables y de añadir salvaguardas antes de usar el modelo con terceros.
+- Caveats para producción: la evaluación de rechazos se hizo por coincidencia de frases, sin revisión humana; los conjuntos son pequeños (1 petición ≈ 1%); solo se probaron peticiones de un turno sin system prompt; no se probó visión; el único archivo disponible es IQ2_XS-mtp, lo que limita la calidad frente a cuantizaciones mayores.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-CHiPS-Abliterated-v1
-- Modelo base cuantizado (ISTA DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
-- Build Heretic de referencia: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-GSQ-RCO-GGUF
+- Hugging Face: https://huggingface.co/Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-CHiPS-Abliterated-v1
+- Modelo base cuantizado: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
+- Build Heretic: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-GSQ-RCO-GGUF
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Paper GSQ (referenciado en tags): arXiv:2604.18556
-- Paper RCO (referenciado en tags): arXiv:2605.00649
+- Artículo sobre CHiPS: https://balaena01.github.io/chips-steering/
+- Paper GSQ (arXiv:2604.18556): https://arxiv.org/abs/2604.18556
+- Paper RCO (arXiv:2605.00649): https://arxiv.org/abs/2605.00649

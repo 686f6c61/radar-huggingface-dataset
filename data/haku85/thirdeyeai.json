@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "thirdeye-ai/ThirdeyeAI",
+  "renamed_at": "2026-11-18T07:03:46.167Z",
   "benchmarks": [],
   "sources": []
 }

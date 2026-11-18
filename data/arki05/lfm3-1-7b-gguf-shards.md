@@ -2,49 +2,49 @@
 
 ## Resumen
 
-LFM3-1.7B-GGUF-shards es un repositorio de artefactos de cuantizacion derivado de LiquidAI/LFM3-1.7B, no un modelo entrenado de forma independiente. Lo publica el usuario Arki05 y su proposito es servir de almacen de tensores ya cuantizados: cada tensor del modelo original se ofrece aislado en cada uno de los 24 tipos de cuantizacion de llama.cpp, de modo que una herramienta externa (qalloc) pueda ensamblar un GGUF final con un tipo distinto por tensor.
+LFM3-1.7B-GGUF-shards es un repositorio de artefactos de cuantizacion derivado de LiquidAI/LFM3-1.7B, el modelo de lenguaje de 1.700 millones de parametros desarrollado por Liquid AI. No se trata de un modelo nuevo ni de un ajuste fino, sino de un conjunto sistematico de tensores cuantizados: cada tensor del modelo original aparece reconstruido en 24 tipos distintos de llama.cpp, lo que permite ensamblar GGUFs con un tipo de cuantizacion diferente por tensor. El autor del repositorio es el usuario Arki05, no Liquid AI.
 
-El modelo base, LFM3-1.7B, lo desarrolla Liquid AI y pertenece a la familia LFM3 (Liquid Foundation Models), con 1.700 millones de parametros. La model card del repositorio no detalla la arquitectura interna del modelo original, por lo que los datos de contexto, composicion de entrenamiento y capacidades no estan disponibles en la informacion proporcionada.
+El interes tecnico del repositorio es la granularidad. Frente a las cuantizaciones tradicionales, que aplican un unico tipo a todos los tensores de una matriz o del modelo completo, este paquete ofrece cada tensor en cada tipo soportado, junto con un manifiesto (`manifest.json`), un esqueleto (`skeleton.gguf`) y registros con el offset y el sha256 de cada tensor. Eso habilita herramientas como qalloc para construir GGUFs a la carta, asignando tipos mas agresivos a las capas menos sensibles y tipos mas precisos a las criticas.
 
-La relevancia de este repositorio es practica: permite cuantizacion heterogenea por tensor (mezclar tipos dentro de un mismo GGUF) sin recompilar el modelo desde cero, algo util para ajustar tamano y calidad en despliegues con llama.cpp. El repositorio ocupa 7,8 GB y no registra descargas ni interacciones en el momento de la consulta.
+La relevancia practica esta en el despliegue en hardware modesto: un modelo de 1.7B cuantizado cabe en GPUs de consumo y en CPU, y la posibilidad de mezclar tipos por tensor permite optimizar el equilibrio entre calidad y memoria sin reentrenar. La licencia es la LFM Open License v1.0 del modelo original, no una licencia permisiva generica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base LFM3 de Liquid AI; la model card no especifica transformer, MoE ni hibrida) |
-| Parametros totales | 1.700 millones (1.7B, segun el nombre del modelo base) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (heredada de LiquidAI/LFM3-1.7B) |
+| Parametros totales | 1.700 millones (1.7B) |
+| Parametros activos | no aplica (no consta como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 24 tipos de llama.cpp, un GGUF por tipo en `types/<T>.gguf`; el listado vigente esta en `manifest.json` |
+| Tipos de cuantizacion | 24 tipos de llama.cpp, un tensor por tipo; incluye BF16 de origen en `source/` |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (lfm1.0), igual que el modelo original |
-| Formato de pesos | GGUF (BF16 de origen en `source/`, tensores cuantizados por tipo, `skeleton.gguf` y metadatos en `manifest.json`, `store.json` y `records/`) |
+| Licencia | LFM Open License v1.0 (lfm1.0), etiquetada como `other` |
+| Formato de pesos | GGUF (tensores sueltos por tipo, `skeleton.gguf`, `manifest.json` con `qcore-store/1`) |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no entrena ningun modelo: redistribuye los pesos BF16 de LiquidAI/LFM3-1.7B-GGUF, sin modificar, en la carpeta `source/`, y genera a partir de ellos versiones cuantizadas de cada tensor. Segun la model card, los tensores cuantizados se reconstruyen desde los pesos BF16 mediante cuantizacion con informacion de Hessiana, manteniendo el mismo tipo, formato y tamano que los tipos nativos de llama.cpp, de forma que un GGUF ensamblado con ellos declara el tipo plano `T` y funciona en llama.cpp estandar.
+El repositorio no documenta la arquitectura interna del modelo base; esa informacion corresponde a la model card de LiquidAI/LFM3-1.7B, que no forma parte de los datos proporcionados. Lo que si se describe es el proceso de generacion de los artefactos: se parte del GGUF en BF16 publicado por Liquid AI (`LiquidAI/LFM3-1.7B-GGUF`), conservado sin cambios en `source/`, y a partir de esos pesos se reconstruye cada tensor cuantizado mediante cuantizacion Hessiana. El resultado son ficheros `types/<T>.gguf` que contienen todos los tensores del modelo en el tipo `T` de llama.cpp, con el mismo formato y tamano que produciria llama.cpp de forma nativa.
 
-La estructura del repositorio separa cuatro elementos: `types/<T>.gguf` con todos los tensores a un tipo dado, `skeleton.gguf` con la estructura del grafo, `manifest.json` (esquema `qcore-store/1`) con el desplazamiento y el sha256 de cada tensor, y `records/` y `store.json` como indices de lectura para qalloc. La model card indica que se siguen anadiendo tipos. No hay informacion sobre la arquitectura del modelo base, el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO.
+La innovacion no esta en el entrenamiento, sino en el empaquetado: el manifiesto, el esqueleto y los registros con offset y sha256 por tensor permiten que una herramienta externa (qalloc) ensamble un GGUF final con un tipo distinto por tensor, manteniendo la compatibilidad con llama.cpp estandar. No se aportan datos sobre tokens de entrenamiento, composicion del dataset ni tecnicas de alineacion como RLHF o DPO, porque el repositorio no los incluye.
 
 ## Capacidades
 
-- Generacion de texto: heredadas del modelo base LFM3-1.7B; la model card de este repositorio no las detalla.
-- Razonamiento, codigo y matematicas: no disponible en la informacion proporcionada.
-- Tool calling y function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Capacidad especifica de este repositorio: suministrar tensores cuantizados por tipo para ensamblar GGUFs con cuantizacion heterogenea mediante qalloc.
+- Generacion de texto y razonamiento: heredadas del modelo base LFM3-1.7B; el repositorio no anade capacidades nuevas.
+- Codigo y matematicas: no hay documentacion especifica en los datos disponibles sobre el rendimiento en estas tareas.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; el repositorio no declara idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Cuantizacion selectiva por tensor: capacidad propia del repositorio, permite construir GGUFs mixtos con 24 tipos de llama.cpp y verificar integridad mediante sha256 por tensor.
 
 ## Casos de uso
 
-- Cuantizacion heterogenea por tensor: usar qalloc y `manifest.json` para asignar tipos de mayor precision a las capas sensibles (por ejemplo, atencion o embeddings) y tipos mas agresivos al resto, obteniendo un GGUF con un equilibrio tamano/calidad a medida en lugar de un tipo uniforme.
-- Evaluacion de degradacion por tipo: ensamblar variantes del mismo modelo con un tipo distinto por tensor y medir la perdida de calidad en tareas concretas, lo que permite justificar con datos la eleccion de cuantizacion en produccion.
-- Despliegue en llama.cpp sin conversiones adicionales: los GGUF generados usan tipos planos nativos, por lo que se cargan en llama.cpp estandar y en sus frontends (Ollama, servidores compatibles) sin parches.
-- Ajuste de huella de memoria en hardware limitado: al poder rebajar selectivamente la precision de los tensores mas grandes, se puede reducir el peso en disco y en RAM respecto a una cuantizacion uniforme del mismo modelo de 1,7B.
-- Reproducibilidad y auditoria de artefactos: los sha256 por tensor de `records/` permiten verificar que el GGUF ensamblado corresponde exactamente a los pesos de origen y detectar corrupciones en la distribucion.
-- Experimentacion en investigacion sobre cuantizacion: el repositorio sirve como banco de pruebas para comparar metodos de cuantizacion (Hessiana frente a otras tecnicas) sobre un modelo pequeno de 1,7B con licencia abierta.
+- Despliegue en GPU de consumo: ensamblar un GGUF mixto con qalloc asignando tipos de 4 bits a las capas menos sensibles y de 6 u 8 bits a las criticas, de modo que un modelo de 1.7B quepa en tarjetas con 6-8 GB de VRAM manteniendo mas calidad que una cuantizacion uniforme.
+- Inferencia en CPU con llama.cpp: generar una variante Q4_K_M o Q5_K_M a partir de los tensores del repositorio y ejecutarla en portatiles sin GPU, aprovechando que llama.cpp acepta GGUFs ensamblados con tipos estandar.
+- Experimentacion en investigacion de cuantizacion: comparar el impacto de distintos tipos por capa sobre la perplejidad o tareas concretas, usando `manifest.json` y los registros sha256 para garantizar reproducibilidad entre ejecuciones.
+- Pipelines de CI para artefactos de modelos: el esqueleto, el manifiesto y los hashes por tensor permiten verificar que un GGUF ensamblado corresponde exactamente a los tensores esperados antes de publicarlo o desplegarlo.
+- Prototipado de asistentes locales: usar una variante cuantizada del modelo base para pruebas de generacion de texto en entornos sin conectividad, con la ventaja de poder ajustar el tamano del artefacto segun la memoria disponible.
+- Evaluacion de robustez frente a cuantizacion: mantener el BF16 de origen en `source/` como referencia y medir la degradacion de cada combinacion de tipos por tensor en tareas de generacion y razonamiento.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +52,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma exacta; para un modelo de 1,7B en GGUF, los tipos de cuantizacion de llama.cpp situan el peso en un rango aproximado de 1 a 3,5 GB segun el tipo elegido, pero este dato no lo confirma la model card.
+- VRAM estimada: no disponible de forma oficial; para un modelo de 1.7B, las variantes de 4 bits suelen rondar 1-1,5 GB y las de 8 bits en torno a 2 GB, pero el repositorio no publica cifras por tipo.
 - GPU recomendadas: no disponible en la informacion proporcionada.
-- Cabe en GPU de consumo: previsiblemente si, dado el tamano de 1,7B, pero no hay confirmacion en la documentacion del repositorio.
-- Opciones de despliegue: llama.cpp (motor de referencia de los tipos GGUF incluidos) y cualquier frontend que consuma GGUF; qalloc para el ensamblado del GGUF final.
+- GPU de consumo: el tamano del modelo base (1.7B) hace plausible su ejecucion en GPUs de consumo, pero no hay confirmacion en los datos del repositorio.
+- Opciones de despliegue: llama.cpp (los tipos son estandar y compatibles con el binario original); qalloc para el ensamblado de GGUFs mixtos. No se mencionan vLLM, TGI ni Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-GGUF-shards (este repo) | 1,7B | no disponible | LFM Open License v1.0 | GGUF por tensor | Almacen de tensores para cuantizacion heterogenea |
-| LiquidAI/LFM3-1.7B | 1,7B | no disponible | LFM Open License v1.0 | safetensors (pesos originales) | Modelo base de referencia |
-| LiquidAI/LFM3-1.7B-GGUF | 1,7B | no disponible | LFM Open License v1.0 | GGUF BF16 | GGUF oficial de origen usado en `source/` |
+| Arki05/LFM3-1.7B-GGUF-shards | 1.7B | no disponible | GGUF por tensor (24 tipos) | LFM Open License v1.0 | Repositorio de cuantizacion, no modelo original |
+| LiquidAI/LFM3-1.7B | 1.7B | no disponible | BF16 (entre otros) | LFM Open License v1.0 | Modelo base original |
+| LiquidAI/LFM3-1.7B-GGUF | 1.7B | no disponible | GGUF | LFM Open License v1.0 | Cuantizaciones oficiales de Liquid AI |
 
-No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de otros desarrolladores.
+No se dispone de datos de rendimiento ni de modelos comparables de otros fabricantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo listo para inferencia directa: requiere ensamblar un GGUF con qalloc a partir de `types/`, `skeleton.gguf` y `manifest.json`; cargar los fragmentos por separado no produce un modelo funcional.
-- La model card advierte de que los tensores cuantizados son versiones modificadas de los pesos originales; la calidad final depende del tipo asignado a cada tensor.
-- El conjunto de tipos esta incompleto y en ampliacion segun la model card; conviene consultar `manifest.json` antes de disenar un pipeline.
-- Licencia LFM Open License v1.0: es una licencia "other" con condiciones propias; debe revisarse `LICENSE` antes de cualquier uso comercial, ya que no es una licencia permisiva estandar.
-- Sin datos publicados de sesgos, riesgo de alucinacion, limitaciones de contexto o idioma del modelo base en esta informacion.
-- Repositorio sin descargas ni interacciones registradas: no hay evidencia de uso en produccion ni validacion externa de los artefactos.
-- El repositorio pesa 7,8 GB, muy por encima del peso de un unico GGUF del modelo, por lo que no es adecuado para distribucion ligera.
+- No es un modelo entrenado: es un repositorio de tensores cuantizados; cualquier evaluacion de capacidades debe hacerse sobre el modelo base LiquidAI/LFM3-1.7B.
+- Los ficheros `types/<T>.gguf` son versiones modificadas de los pesos originales (cuantizacion Hessiana), no copias exactas; pueden introducir degradacion respecto al BF16 de `source/`.
+- No se documentan sesgos conocidos, riesgo de alucinacion ni limitaciones de contexto o idioma en la informacion disponible.
+- La licencia es la LFM Open License v1.0, etiquetada como `other`; no es una licencia permisiva generica y debe revisarse antes de cualquier uso comercial.
+- El repositorio ocupa 24,5 GB, muy por encima del tamano de un unico GGUF, porque contiene todos los tensores en todos los tipos; no esta pensado para descarga directa en produccion sin seleccion previa.
+- El pipeline no esta declarado y no hay garantias explicitas de mantenimiento o actualizacion por parte del autor.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/Arki05/LFM3-1.7B-GGUF-shards
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- GGUF BF16 de origen: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
-- Herramienta qalloc: https://arki05.com/projects/qalloc/
+- GGUF oficial del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
+- Herramienta qalloc: https://qalloc.arki05.com/?model=lfm3
 - Licencia LFM Open License v1.0: fichero `LICENSE` del repositorio

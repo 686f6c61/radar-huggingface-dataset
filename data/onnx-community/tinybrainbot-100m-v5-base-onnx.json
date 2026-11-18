@@ -35,8 +35,8 @@
     "dataset:microsoft/orca-math-word-problems-200k",
     "dataset:openbmb/UltraData-Math",
     "dataset:nkthebass/tinybrainbot-3m-math-data",
-    "base_model:nkthebass/tinybrainbot-100m-v5-base",
-    "base_model:quantized:nkthebass/tinybrainbot-100m-v5-base",
+    "base_model:nkthebass/tinybrainbot-100m-v5.1-base",
+    "base_model:quantized:nkthebass/tinybrainbot-100m-v5.1-base",
     "license:apache-2.0",
     "model-index",
     "region:us"

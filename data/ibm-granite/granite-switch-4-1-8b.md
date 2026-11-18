@@ -2,116 +2,112 @@
 
 ## Resumen
 
-Granite Switch 4.1 8B es un LLM modular publicado por IBM (organizacion ibm-granite) que combina un modelo base, varios adaptadores y un codificador de audio dentro de un unico endpoint. El objetivo es que una sola instancia servida pueda alternar entre generacion de texto natural, decisiones generales o especializadas y transcripcion de voz a texto, sin necesidad de levantar servicios separados. Su arquitectura se apoya en el modelo `ibm-granite/granite-4.1-8b` (8B parametros, 128K de contexto) y suma dos adaptadores aLoRA, `decision` y `guardian-core`, mas un encoder de habla.
+Granite Switch 4.1 8B (revisión 4.1.1) es un modelo de lenguaje modular publicado por IBM bajo la familia Granite. No es un transformer monolítico al uso: compone un modelo base (`granite-4.1-8b`, 8B parámetros, contexto de 128K), dos adaptadores aLoRA (`decision` y `guardian-core`) y un codificador de voz (`granite-speech-5.0-470m-turboctc`, 470M parámetros) para que un único endpoint alojado pueda alternar entre generación de lenguaje natural, decisiones clasificatorias, evaluación de seguridad y transcripción de audio. Los adaptadores se activan bajo demanda mediante tokens de control en la plantilla de chat.
 
-Los adaptadores se activan bajo demanda mediante tokens de control insertados en la plantilla de chat, de modo que el enrutado entre capacidades no requiere cambiar de modelo ni de API. El checkpoint completo contiene 8.776.400.896 parametros segun los pesos safetensors publicados, con un tamano de repositorio de 17,6 GB. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones de atribucion mas alla de las habituales.
+El problema que resuelve es la fragmentación de infraestructura: en lugar de desplegar por separado un LLM conversacional, un clasificador de decisiones, un modelo de moderación y un servidor de ASR, Granite Switch concentra las cuatro funciones en un solo artefacto servible con vLLM o Transformers. Esto simplifica el despliegue, reduce el número de endpoints y permite reutilizar el mismo contexto de conversación entre tareas.
 
-Es relevante ahora porque consolida en un solo despliegue tres funciones que historicamente exigian infraestructuras distintas: inferencia conversacional, clasificacion/decision con logits interpretables y ASR. La fecha de publicacion indicada es el 14 de octubre de 2026 y los backends soportados son Hugging Face Transformers y vLLM.
+Es relevante ahora porque introduce un patrón de actualización por revisiones (4.1 → 4.1.1) que permite fijar versiones mediante tags, actualizar solo los pesos de un adaptador sin romper integraciones existentes y ampliar capacidades (en 4.1.1, el ASR pasa de inglés a siete idiomas). La licencia Apache 2.0 facilita su adopción comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LLM modular: transformer base (`granite-4.1-8b`) + adaptadores aLoRA + encoder de habla conformer CTC |
-| Parametros totales | 8.776.400.896 (segun safetensors) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 128K tokens (heredada del modelo base) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el encoder de audio es solo ingles) |
+| Arquitectura | Modelo base transformer (`granite-4.1-8b`) + 2 adaptadores aLoRA (`decision`, `guardian-core`) + codificador ASR conformer CTC no autorregresivo (`granite-speech-5.0-470m-turboctc`) |
+| Parametros totales | 8.776.400.896 (8,78B) |
+| Parametros activos | No aplica (no es MoE); los adaptadores aLoRA son de baja dimensión |
+| Longitud de contexto | 128K tokens (modelo base) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada |
+| Idiomas soportados | Texto: no disponible. Audio (ASR): inglés, francés, alemán, español, portugués, italiano y japonés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
+| Backends soportados | HuggingFace Transformers, vLLM |
+| Tamano del repositorio | 35,1 GB |
+| Fecha de publicacion | 14 de octubre de 2026 (revision 4.1); 27 de octubre de 2026 (revision 4.1.1) |
 
 ## Arquitectura y entrenamiento
 
-El modelo no es un transformer monolítico, sino una composicion: el motor principal es `ibm-granite/granite-4.1-8b` con 8B parametros y 128K de contexto, sobre el que se montan dos adaptadores aLoRA y se acopla un encoder de audio. Los adaptadores son `decision`, orientado a decisiones de proposito general, y `guardian-core`, procedente de `granitelib-guardian-r1.0`, orientado a la deteccion de riesgos de seguridad. El componente de audio es `ibm-granite/granite-speech-5.0-470m-turboctc`, un encoder conformer CTC no autorregresivo de 470M parametros, entrenado solo en ingles y descrito por el autor como el modelo ASR mas rapido de la OpenASR Leaderboard.
+La arquitectura es una composición modular de tres piezas. El núcleo es `ibm-granite/granite-4.1-8b`, un transformer de 8B parámetros con 128K de contexto. Sobre él se montan dos adaptadores aLoRA: `decision`, que recibe un estado y una pregunta con opciones etiquetadas y devuelve en un único forward pass una distribución softmax sobre las etiquetas; y `guardian-core`, derivado de `granitelib-guardian-r1.0`, orientado a detectar riesgos de seguridad (daño, jailbreaking, lenguaje soez, violencia, contenido sexual, sesgo social y comportamiento poco ético). La tercera pieza es el codificador de voz Granite Speech 5.0 TurboCTC, un conformer CTC no autorregresivo de 470M parámetros que transcribe audio y cuya salida se inserta en el contexto de chat sustituyendo el contenido de audio.
 
-La activacion de cada adaptador se controla con tokens de control en la plantilla de chat, y la composicion se puede reproducir con la herramienta `granite-switch` mediante el comando `python -m granite_switch.composer.compose_granite_switch`, indicando el modelo base, las librerias de adaptadores (`granitelib-guardian-r1.0` y `granitelib-core-r1.0`), `--include-adapters guardian-core decision` y `--enable-audio`. Un detalle tecnico importante: el encoder de habla y el LLM no han sido entrenados de forma conjunta y todavia no existe una proyeccion entrenada que los acople; la transcripcion se empalma en el contexto de chat sustituyendo la parte de audio. No se han publicado en la informacion disponible datos sobre volumen de tokens de entrenamiento, composicion del dataset ni uso de RLHF o DPO.
+La activación de cada componente se gobierna mediante tokens de control en la plantilla de chat, y la composición se realiza automáticamente con la librería `granite-switch` 0.1.1. Un detalle técnico importante es que el codificador de voz y el LLM no están entrenados conjuntamente: no existe todavía una proyección entrenada que los acople, por lo que el audio se transcribe y el texto resultante se empalma en el contexto sin guiado en tiempo de decodificación. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO sobre el modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional en multiples turnos, heredada del modelo base de 8B parametros.
-- Decision general: dado un estado y una pregunta con opciones etiquetadas, devuelve una distribucion softmax sobre las etiquetas en un unico forward pass (adaptador `decision`).
-- Moderacion y seguridad: deteccion de riesgos como dano, jailbreaking, lenguaje soez, violencia, contenido sexual, sesgo social y comportamiento no etico (adaptador `guardian-core`).
-- Voz a texto: transcripcion de audio en ingles mediante el encoder Granite Speech 5.0 TurboCTC de 470M parametros.
-- Procesamiento integrado: el audio entrante se transcribe en el mismo endpoint y el texto resultante se inserta en el contexto de chat.
-- Compatibilidad con el formato de la API de chat completions (endpoint compatible con OpenAI).
-- Capacidad multilingue: no disponible en la informacion facilitada.
-- Tool calling y function calling: no disponible en la informacion facilitada.
-- Razonamiento multi-paso o modo de pensamiento explicito: no disponible en la informacion facilitada.
+- Generación de texto conversacional multi-turno sobre el modelo base de 8B parámetros y 128K de contexto.
+- Decisiones clasificatorias: dado un estado y una pregunta con opciones etiquetadas, devuelve una distribución de probabilidad sobre las etiquetas en un solo forward pass.
+- Moderación y evaluación de seguridad mediante `guardian-core`: detección de daño, jailbreaking, profanidad, violencia, contenido sexual, sesgo social y comportamiento poco ético.
+- Transcripción de voz a texto (ASR) en inglés, francés, alemán, español, portugués, italiano y japonés, con salida puntuada y con mayúsculas.
+- Detección automática del idioma del audio, sin necesidad de parámetro de idioma.
+- Entrada de audio en la misma API de chat (formato `input_audio` compatible con OpenAI), sin servidor de voz separado.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte explícito de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingües de texto: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Enrutado de decisiones en produccion: dado un estado del sistema y un conjunto cerrado de opciones etiquetadas, el adaptador `decision` devuelve probabilidades por opcion en un solo forward pass, lo que permite integrar logica de decision con umbrales calibrados y sin generacion autoregresiva.
-- Moderacion de contenido en plataformas: el adaptador `guardian-core` clasifica riesgos (violencia, contenido sexual, sesgo social, jailbreaking) sobre las interacciones de usuario, lo que permite filtrar antes de que el texto llegue al modelo generativo principal.
-- Atencion al cliente con entrada de voz: al aceptar audio directamente en el mismo endpoint, se puede transcribir la consulta del usuario y responder en una sola llamada, evitando desplegar un servidor ASR independiente.
-- Transcripcion rapida de reuniones o notas de voz en ingles: el encoder conformer CTC no autorregresivo esta optimizado para latencia baja, adecuado para dictado y captura de notas en tiempo real.
-- Clasificacion de tickets y triaje: combinando el adaptador de decision con etiquetas predefinidas (categoria, prioridad, equipo responsable), se puede construir un triaje con distribucion de probabilidad auditable.
-- Asistentes de voz en ingles: al transcribir audio en el mismo endpoint junto con el LLM, se simplifica la arquitectura de agentes de voz para mercados angloparlantes.
-- Construccion de un pipeline unico con API compatible con OpenAI: al exponer un endpoint estilo OpenAI, el modelo puede sustituir a otros servicios en integraciones existentes sin reescribir el cliente.
+- Atención al cliente automatizada con voz y texto: un único endpoint recibe audio del usuario, lo transcribe con el codificador TurboCTC (siete idiomas) y responde en el mismo contexto de chat, evitando desplegar un servidor ASR independiente.
+- Moderación de contenido en plataformas: el adaptador `guardian-core` clasifica mensajes o respuestas generadas según categorías de riesgo (violencia, contenido sexual, sesgo social, jailbreaking) antes de publicarlos, integrándose como paso previo en un pipeline de publicación.
+- Enrutamiento y clasificación de tickets: el adaptador `decision` recibe el estado del ticket y un conjunto de etiquetas de departamento y devuelve la distribución de probabilidad, lo que permite umbrales de confianza y derivación a revisión humana cuando la probabilidad máxima es baja.
+- Asistentes de voz para atención telefónica: la transcripción multilingüe en el mismo endpoint simplifica arquitecturas de IVR donde antes se encadenaban un ASR, un LLM y un clasificador separados.
+- Transcripción de reuniones y notas: el codificador CTC genera transcripciones puntuadas y capitalizadas en siete idiomas, que se pueden pasar directamente al modelo base para resumen o extracción de acciones.
+- Evaluación automática de decisiones en flujos con estado: sistemas de soporte a la decisión donde se necesita una probabilidad calibrada sobre opciones discretas (por ejemplo, aprobar, rechazar o escalar) en lugar de texto libre.
+- Actualización controlada de modelos en producción: el esquema de tags por revisión (4.1, 4.1.1) permite fijar versiones y actualizar solo el adaptador `decision` sin modificar el formato de prompt ni la integración existente.
 
 ## Benchmarks y rendimiento
 
-El unico benchmark numerico publicado en la informacion disponible es el Decision Index (version v0.3, subconjunto rapido publico, 1.068 filas), medido con el adaptador `decision` servido en un endpoint vLLM. Las puntuaciones se dan sobre 100.
+La model card menciona que el adaptador `decision` de la revisión 4.1.1 se evaluó sobre el conjunto público Jev Decision Index v0.3, pero no se incluyen los resultados numéricos en la información proporcionada. Tampoco se publican cifras de MMLU, HumanEval, GSM8K ni de otras tareas del modelo base. El codificador de voz se describe como "el modelo ASR más rápido del OpenASR Leaderboard", sin cifras concretas ni fecha de referencia en el texto disponible.
 
-| Area | Puntuacion |
+| Benchmark | Resultado |
 |---|---|
-| Overall | 42,9 |
-| Knowledge | 29,1 |
-| Language | 48,9 |
-| Retrieval | 49,8 |
-| Tools | 59,8 |
-| Arts | 18,0 |
+| Jev Decision Index v0.3 (adaptador `decision`) | No disponible (evaluado, sin cifras en la informacion) |
+| MMLU | No disponible |
+| HumanEval | No disponible |
+| GSM8K | No disponible |
+| OpenASR Leaderboard | No disponible (descrito como el más rápido, sin cifras) |
 
-Segun el autor, las mediciones con el adaptador servido en local y detras de un endpoint vLLM difieren en unos 0,6 puntos, lo que indica que la ruta de servicio es fiel. Ademas, el modelo afirma que el encoder Granite Speech 5.0 TurboCTC es el mas rapido de la OpenASR Leaderboard, pero no se aportan cifras concretas de WER ni de latencia en la informacion disponible. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks con cifras en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en FP16/BF16: aproximadamente 18-20 GB solo para los pesos (el repositorio ocupa 17,6 GB), mas overhead de activaciones y cache KV.
-- VRAM en cuantizacion de 8 bits: estimacion orientativa de 10-11 GB.
-- VRAM en cuantizacion de 4 bits: estimacion orientativa de 6-7 GB. Los tipos de cuantizacion oficiales no estan disponibles en la informacion facilitada.
-- GPU recomendadas para precision completa: A100 40/80 GB, H100 80 GB, L40S 48 GB.
-- GPU de consumo: cabe en RTX 4090 (24 GB) en FP16 de forma ajustada y con margen en cuantizaciones de 8 o 4 bits; en RTX 3090 (24 GB) aplican las mismas consideraciones.
-- Encoder de audio: 470M parametros adicionales, con impacto de VRAM reducido frente al LLM.
-- Opciones de despliegue: Hugging Face Transformers y vLLM, segun la model card; el modo audio requiere instalar las dependencias de audio de vLLM (`pip install -e ".[audio]"`).
-- Latencia y throughput: no disponible en la informacion facilitada, salvo la afirmacion cualitativa de que el encoder ASR es el mas rapido de la OpenASR Leaderboard.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia orientativa, un transformer de 8,78B parámetros en precisión de 16 bits requiere aproximadamente 17,6 GB solo para los pesos, más el codificador de 470M y el coste de caché KV para 128K de contexto.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Encaje en GPU de consumo: no disponible en la informacion proporcionada; con cuantización de 8 bits o inferior podría ser viable en GPUs de 24 GB, pero no hay confirmación del autor.
+- Opciones de despliegue: HuggingFace Transformers y vLLM (soportados explícitamente); se documenta el arranque con `python -m vllm.entrypoints.openai.api_server` y la API compatible con OpenAI. Otros backends (llama.cpp, Ollama, TGI) no se mencionan.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Adaptadores / audio | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Capacidades diferenciales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-switch-4.1-8b | 8.776.400.896 | 128K | `decision` y `guardian-core` + ASR | Apache 2.0 | Hugging Face |
-| granite-switch-4.1-30b | no disponible | no disponible | misma configuracion (Chat + Decisions + Guardian + speech) sobre base 30B | Apache 2.0 | Hugging Face |
-| granite-switch-4.1-8b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face |
-| granite-switch-4.1-30b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face |
-| granite-switch-4.1-3b-preview | no disponible | no disponible | bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face |
+| Granite Switch 4.1 8B (este modelo) | 8,78B + 470M ASR | 128K | Chat + decisiones + moderación + ASR en un endpoint | Apache 2.0 | Hugging Face, vLLM, Transformers |
+| Granite Switch 4.1 30B | 30B (base) + 470M ASR | 128K | Misma configuración que el 8B con base mayor | Apache 2.0 | Hugging Face |
+| Granite Switch 4.1 8B Preview | 8B | 128K | Bundle completo de Granite Libraries, sin audio | Apache 2.0 | Hugging Face |
+| Granite Switch 4.1 3B Preview | 3B | No disponible | Versión reducida del bundle de librerías, sin audio | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion facilitada, mas alla de que comparten la misma configuracion funcional de chat, decisiones, guardian y habla (o su variante sin audio en los previews).
+La comparación con alternativas de otros fabricantes (por ejemplo, modelos de 8B con ASR integrado) no está disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El encoder de habla y el LLM no estan entrenados conjuntamente: no existe una proyeccion entrenada que los acople, y la transcripcion se empalma directamente en el contexto de chat. El propio autor remite a `docs/AUDIO.md` para los detalles y limitaciones.
-- El componente de audio es solo para ingles y produce salida en minusculas y sin puntuacion; ademas no admite steering en tiempo de decodificacion.
-- No se han publicado datos sobre idiomas soportados por el LLM base en la informacion facilitada.
-- No hay informacion publica sobre sesgos conocidos, tasa de alucinacion ni comportamiento fuera de distribucion.
-- No se aportan numeros de WER, MMLU, HumanEval u otros benchmarks generales, por lo que la evaluacion de calidad queda limitada al Decision Index v0.3.
-- El rendimiento del adaptador `decision` es desigual por area: 59,8 en Tools frente a 18,0 en Arts, lo que desaconseja su uso sin calibracion para dominios creativos o artisticos.
-- La licencia Apache 2.0 permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar las dependencias del stack `granite-switch` por separado.
-- Al ser un modelo publicado muy recientemente (octubre de 2026) y con solo 278 descargas y 15 likes en Hugging Face, el ecosistema de herramientas, cuantizaciones de terceros y validaciones independientes es todavia reducido.
-- La composicion mediante tokens de control en la plantilla de chat implica que un uso incorrecto de esos tokens puede activar el adaptador equivocado o desactivar la funcion prevista.
+- El codificador de voz y el LLM no están entrenados conjuntamente: no existe una proyección entrenada que los acople, por lo que no hay guiado en tiempo de decodificación sobre el audio y la transcripción se empalma como texto.
+- Los idiomas soportados para texto no se documentan; solo se especifican los siete idiomas del ASR.
+- No se publican cifras de benchmarks del modelo base ni del adaptador `decision`, lo que dificulta evaluar su calidad frente a alternativas.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan tasas de error ni evaluaciones de fidelidad.
+- Sesgos conocidos: no disponible en la informacion proporcionada, más allá de que `guardian-core` está diseñado para detectar sesgo social en las entradas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los componentes embebidos (modelo base, adaptadores y codificador de voz) por si alguna difiere.
+- El adaptador `decision` requiere una receta de invocación específica (system prompt de motor de decisión, turno `State:` sobre la base congelada y turno `### DECISION`); usarlo fuera de ese formato puede degradar la calidad de la distribución de salida.
+- La revisión 4.1.1 actualiza los pesos de `decision` manteniendo el formato de prompt; conviene fijar la revisión con tags en producción para evitar cambios inesperados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ibm-granite/granite-switch-4.1-8b
-- Blog de lanzamiento: https://huggingface.co/blog/ibm-granite/granite-switch-4-1
+- Blog de lanzamiento de Granite Switch 4.1.1: http://huggingface.co/blog/ibm-granite/granite-switch-4-1-1
 - Repositorio granite-switch: https://github.com/generative-computing/granite-switch
-- Documentacion de audio del repositorio: https://github.com/generative-computing/granite-switch/blob/main/docs/AUDIO.md
+- Documentación de audio y limitaciones: https://github.com/generative-computing/granite-switch/blob/main/docs/AUDIO.md
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-8b
-- Encoder de habla: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
-- Libreria Guardian: https://huggingface.co/ibm-granite/granitelib-guardian-r1.0/tree/main/guardian-core
-- Libreria Core (adaptador decision): https://huggingface.co/ibm-granite/granitelib-core-r1.0/tree/main/decision
+- Codificador de voz: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
+- Adaptador guardian-core: https://huggingface.co/ibm-granite/granitelib-guardian-r1.0/tree/main/guardian-core
+- Adaptador decision: https://huggingface.co/ibm-granite/granitelib-core-r1.0/tree/4.1.1-decision
 - Variante 30B: https://huggingface.co/ibm-granite/granite-switch-4.1-30b
-- Variante 8B preview sin audio: https://huggingface.co/ibm-granite/granite-switch-4.1-8b-preview
-- Variante 30B preview sin audio: https://huggingface.co/ibm-granite/granite-switch-4.1-30b-preview
-- Variante 3B preview sin audio: https://huggingface.co/ibm-granite/granite-switch-4.1-3b-preview
+- Variante 8B preview: https://huggingface.co/ibm-granite/granite-switch-4.1-8b-preview
+- Variante 30B preview: https://huggingface.co/ibm-granite/granite-switch-4.1-30b-preview
+- Variante 3B preview: https://huggingface.co/ibm-granite/granite-switch-4.1-3b-preview
 - OpenASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

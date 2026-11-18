@@ -2,96 +2,98 @@
 
 ## Resumen
 
-GLM-5.3-Flash-CYBERSECURITY-W4A16 es una version cuantizada con cuantizacion W4A16 y sin censura del modelo GLM-5.3-Flash, desarrollada por dealignai. El modelo es un transformer de mezcla de expertos (MoE) con 321.323.031.390 parametros totales, que incluye un modulo de vision y una cabeza de prediccion multi-token (MTP). Ha sido ajustado para eliminar rechazos en las seis categorias de dano real de HarmBench, manteniendo la profundidad de razonamiento y conservando intactas la torre de vision y la cabeza MTP.
+GLM-5.3-Flash-CYBERSECURITY-W4A16 es una versión afinada para eliminar rechazos (*uncensored*) y cuantizada a W4A16 del modelo base zai-org/GLM-5.3-Flash, publicada por el usuario dealignai. Se distribuye como un reemplazo directo del checkpoint cuantizado original, manteniendo intactos el cabezal de predicción multi-token (MTP, capa 45) y la torre de visión. El modelo es un transformer de tipo mezcla de expertos (MoE) con capacidades de texto, visión y lenguaje, y con 321.323 millones de parámetros totales según los pesos en safetensors.
 
-El objetivo de esta edicion es servir como reemplazo directo del modelo base en entornos de ciberseguridad y red teaming, donde se requiere que el asistente no bloquee respuestas sobre tecnicas ofensivas o malware. Segun las mediciones del autor, el modelo alcanza un 100% de cumplimiento real en las seis categorias de HarmBench, frente al 30,3% del modelo base, con una pequena caida en MMLU (84,23% frente a 86,08%).
+El interés de esta ficha radica en que combina tres elementos poco habituales: una cuantización W4A16 (pesos de 4 bits, activaciones de 16 bits) orientada a despliegue en producción, un proceso de ajuste que elimina las negativas en seis categorías de daño real según el autor, y la preservación de las capacidades de razonamiento y de visión del modelo original. Está pensado para servir con vLLM o SGLang mediante parsers de razonamiento y de tool calling específicos.
 
-El modelo esta pensado para desplegarse con vLLM en entornos multi-GPU, concretamente con tensor parallel de 2, y admite tool calling en formato GLM-4.7, modo de pensamiento (thinking mode) y decodificacion especulativa MTP. Es una opcion interesante para investigadores y desarrolladores de ciberseguridad que buscan un asistente sin restricciones con capacidades de vision y razonamiento. La licencia es MIT.
+La relevancia actual es doble: por un lado, permite ejecutar un modelo de más de 320.000 millones de parámetros en configuraciones multi-GPU con un consumo de memoria muy reducido respecto a los pesos en BF16; por otro, la model card documenta con detalle varias trampas de despliegue (parámetros de vídeo e imagen que se aceptan y se ignoran, modos de razonamiento que agotan el presupuesto de tokens) que conviene conocer antes de ponerlo en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con capas MoE, torre de vision (vision-language) y cabeza MTP |
+| Arquitectura | Transformer MoE (mezcla de expertos) con torre de visión y cabezal MTP; familia glm5_next |
 | Parametros totales | 321.323.031.390 |
-| Parametros activos | No disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | W4A16 (pesos 4 bits, activaciones 16 bits) |
-| Idiomas soportados | No disponible |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | W4A16 (pesos 4 bits, activaciones 16 bits), formato compressed-tensors |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (compressed-tensors) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base GLM-5.3-Flash: un transformer decoder-only con capas de mezcla de expertos (MoE), un modulo de vision (vision-language) y una cabeza de prediccion multi-token (MTP) tras la capa 45. El autor indica que tanto la torre de vision como la cabeza MTP se conservan intactas. No se proporcionan detalles sobre el numero total de expertos, parametros activos por token ni la composicion del dataset de entrenamiento; solo se sabe que el modelo fue ajustado para la tarea de cumplimiento (compliance tuning) sobre el modelo base W4A16.
+El modelo es un transformer de mezcla de expertos (MoE) de la familia GLM-5.3, derivado del checkpoint zai-org/GLM-5.3-Flash. Incorpora un cabezal de predicción multi-token (MTP) en la capa 45, que se utiliza como decodificación especulativa nativa y que el autor indica que multiplica por 1,5-2 el throughput de decodificación. También conserva una torre de visión completa, por lo que admite entradas de imagen y vídeo además de texto.
 
-El proceso de ajuste consistio en eliminar los rechazos (refusals) en las seis categorias de HarmBench, preservando la calidad del razonamiento. No hay informacion sobre si se utilizo RLHF, DPO u otra tecnica concreta. Segun la documentacion del autor, la edicion funciona como un reemplazo directo del modelo base, conservando el MTP head (capa 45) y la torre de vision.
+La intervención de dealignai consiste en un ajuste de cumplimiento (*compliance tuning*) que, según la model card, elimina las negativas en las seis categorías de daño real del benchmark HB, preservando la profundidad de razonamiento y sin degradar el cabezal MTP ni la torre de visión. La cuantización W4A16 se aplica sobre el checkpoint original mediante compressed-tensors. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generacion de texto con modo de razonamiento explicito mediante etiquetas `<think>...</think>`, que se pueden extraer como campo `reasoning` en la salida (requiere `--reasoning-parser glm45` en vLLM para evitar bucles).
-- Razonamiento profundo: el ratio de tokens de pensamiento sube al 86,2% en las pruebas del autor, lo que indica una mayor proporcion de razonamiento antes de responder.
-- Vision (vision-language): la torre de vision esta intacta, por lo que el modelo puede aceptar imagenes como entrada y procesarlas junto con texto.
-- Tool calling / function calling: compatible con el formato de herramientas de GLM-4.7 (usando `--tool-call-parser glm47` y `--enable-auto-tool-choice` en vLLM).
-- Agentes y razonamiento multi-paso: el soporte de tool calling y el prefijo KV cache (`--enable-prefix-caching`) lo hacen adecuado para cargas de trabajo de agentes.
-- Decodificacion especulativa mediante MTP: permite un aumento de throughput de 1,5-2x segun la documentacion.
-- Sin censura: el modelo no rechaza consultas en las categorias de dano real de HarmBench (quimico-biologico, intrusiones ciberneticas, acoso, etc.).
-- Multilingue: no especificado.
+- Generación de texto conversacional multi-turno con modo de razonamiento extendido (`<think>`).
+- Razonamiento con niveles de esfuerzo configurables mediante `reasoning_effort`, que solo acepta `"low"` y `"high"`; cualquier otro valor resuelve a `max`.
+- Tool calling y function calling compatibles con la API de OpenAI, mediante el parser `glm47`.
+- Capacidades de visión: procesamiento de imágenes con control del número de tokens visuales (`max_image_tokens`, `min_image_tokens`).
+- Capacidades de vídeo: muestreo de fotogramas configurable mediante `fps` en `media_io_kwargs`.
+- Decodificación especulativa nativa mediante MTP, con ganancia declarada de 1,5-2x en decodificación.
+- Compatibilidad con caché de prefijos para cargas de trabajo de agentes.
+- Modelo sin censura en las categorías de daño evaluadas por el autor.
 
 ## Casos de uso
 
-- Pruebas de penetracion (pentesting): el modelo puede generar estrategias de ataque, detectar vulnerabilidades o redactar exploits de prueba en un entorno controlado, con capacidades de tool calling para integrarlo en pipelines de seguridad ofensiva.
-- Analisis de malware: gracias a su modo de vision, puede examinar capturas de pantalla o diagramas de flujo de malware, y sin el filtro de rechazo analizar codigo malicioso y tecnicas de ofuscacion.
-- Respuesta a incidentes: asistencia a analistas de SOC en la correlacion de eventos, generacion de hipotesis sobre intrusiones y propuestas de remediacion, con soporte de agentes y herramientas.
-- Automatizacion de tareas de seguridad: el modelo soporta function calling, permitiendo conectarlo a herramientas como escaneres de puertos, WAF o API de SIEM para que ejecute acciones de forma automatica.
-- Investigacion en seguridad ofensiva: para investigadores de seguridad, el modelo puede enumerar tecnicas de evasion, explotacion de protocolos o analisis de binarios sin censura.
-- Simulacion de adversarios (red teaming): generar escenarios de ataque realistas y razonar sobre defensas, validando posturas de seguridad de una organizacion.
-- Analisis de documentos e imagenes: al tener vision, se puede preguntar por diagramas de arquitectura, capturas de trafico de red o screenshots de aplicaciones para entender un sistema.
+- Asistente conversacional multi-turno en producción: el modelo mantiene historial largo y razonamiento estructurado, con la salvedad de que en modo `max` conviene reservar al menos 6000 tokens de presupuesto para evitar turnos vacíos que contaminen el historial.
+- Agentes con tool calling: la combinación de `--tool-call-parser glm47`, `--enable-auto-tool-choice` y caché de prefijos permite construir agentes que encadenan llamadas a funciones con contexto repetido, reduciendo coste de prefill.
+- Análisis de documentos con imágenes y vídeo: la torre de visión intacta permite extraer información de capturas, diagramas o clips, controlando el coste de tokens visuales con `mm_processor_kwargs` y fijando `fps: 2` de forma explícita para evitar el fallo de motor documentado.
+- Generación de código y razonamiento técnico: el modo `high` está indicado por el autor para tareas difíciles, y el soporte de tool calling lo hace integrable en pipelines que consultan repositorios o ejecutan pruebas.
+- Investigación sobre alineación y seguridad: al ser una variante sin rechazos, sirve para estudiar comportamiento de modelos MoE grandes ante peticiones sensibles, siempre con las salvaguardas externas adecuadas.
+- Despliegue en clústeres de dos GPU con vLLM: con cuantización W4A16 y tensor-parallel de 2, el modelo cabe en configuraciones de dos aceleradores de gran memoria, lo que abarata la inferencia frente al checkpoint en BF16.
+- Evaluación comparativa de cuantizaciones: útil para medir la pérdida de calidad de W4A16 frente a BF16 en tareas de razonamiento y visión sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-Las evaluaciones presentadas a continuacion proceden de la model card del autor y no han sido verificadas por terceros.
-
-| Metrica | Modelo base | Este modelo |
-|---|---|---|
-| HarmBench cumplimiento real (6 categorias, thinking off) | 44 / 145 (30,3%) | 145 / 145 (100%) |
-| Rechazo duro en categorias de dano real | ~100 | 0 |
-| MMLU (test completo, 14.042 items) | 86,08% | 84,23% |
-| Puzzle de razonamiento (5 puzzles, temp=0) | 4 / 4 correctos | 3 / 4 correctos |
-| Ratio de tokens de pensamiento | 73,7% | 86,2% |
-| Total de tokens de pensamiento | 7.189 | 7.537 (+4,8%) |
-
-En el modo `enable_thinking: false`, las categorias de HarmBench evaluadas incluyen chemical_biological (19/19 cumplimiento), cybercrime_intrusion (33/33), harassment_bullying (16/16) y harmful (17/17), entre otras.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el peso cuantizado W4A16 supone aproximadamente 0,5 bytes por parametro, lo que da unos 160 GB para los pesos. Hay que sumar cache KV y activaciones, por lo que el despliegue requiere al menos 2 GPUs de 80 GB (A100/H100) o una configuracion similar con memoria agregada suficiente.
-- GPU recomendadas: NVIDIA A100 80GB o H100 80GB con tensor parallel 2, o 4 GPUs si se quiere reducir presion de memoria.
-- No cabe en GPU de consumo (RTX 4090, etc.) por su gran tamano.
-- Opciones de despliegue: vLLM (con los comandos proporcionados y `--tensor-parallel-size 2`), tambien via imagen Docker `vllm/vllm-openai:glm53-flash-x86_64-cu130`. No se mencionan otros runners como llama.cpp u Ollama en la informacion.
-- Latencia/throughput: no hay cifras absolutas; la documentacion indica que con MTP el throughput de decodificacion aumenta entre 1,5 y 2 veces.
+- El repositorio ocupa 304,8 GB, lo que corresponde a los pesos W4A16 de 321.000 millones de parámetros; se necesita espacio en disco equivalente más margen para caché.
+- El autor despliega con `--tensor-parallel-size 2`, es decir, dos GPU de gran memoria; no se especifica el modelo exacto de GPU empleado.
+- VRAM estimada: no disponible de forma explícita; por el tamaño del repo, el reparto entre dos aceleradores exige GPUs de 80 GB o superior en la práctica.
+- No cabe en GPU de consumo (RTX 4090, 24 GB) ni en configuraciones de una sola GPU de 80 GB por el tamaño total de los pesos.
+- Opciones de despliegue documentadas: vLLM (imagen `vllm/vllm-openai:glm53-flash-x86_64-cu130`) y SGLang con parser de razonamiento; no se mencionan llama.cpp ni Ollama.
+- Throughput: el autor declara una mejora de 1,5-2x en decodificación con MTP activado; no se publican cifras absolutas de tokens por segundo ni latencias.
+- Flags recomendados: `--reasoning-parser glm45`, `--tool-call-parser glm47`, `--enable-auto-tool-choice`, `--enable-prefix-caching`, `--speculative-config '{"method":"mtp","num_speculative_tokens":1}'`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| dealignai/GLM-5.3-Flash-CYBERSECURITY-W4A16 | 321.323.031.390 | No disponible | MIT | Este modelo, W4A16, sin censura, vision y MTP intactas |
-| zai-org/GLM-5.3-Flash | 321B (inferido del modelo base) | No disponible | No disponible | Modelo base, conserva los rechazos originales |
-| dealignai/GLM-5.3-CYBERSECURITY-FP8 | No disponible | 1024K (segun busqueda web, no confirmado) | No disponible | Variante FP8 con enfoque en ciberseguridad, del mismo autor |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| dealignai/GLM-5.3-Flash-CYBERSECURITY-W4A16 | 321.323 M | no disponible | W4A16 | MIT | Variante sin censura del GLM-5.3-Flash cuantizado |
+| zai-org/GLM-5.3-Flash | no disponible | no disponible | no disponible | no disponible | Modelo base original; conserva los rechazos |
+| GLM-5.3-Flash-W4A16 (checkpoint cuantizado de referencia) | no disponible | no disponible | W4A16 | no disponible | Checkpoint cuantizado sin el ajuste de cumplimiento |
+
+No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Censura eliminada en categorias de dano real: el modelo no rechaza consultas sobre quimico-biologico, intrusiones, acoso, etc. Esto puede producir contenido ilegal o danino; el usuario es responsable de su uso.
-- Riesgo de alucinacion y degeneracion: en las pruebas a temperatura 0, el modelo entra en un bucle de tokens repetidos en el puzzle de las tres cajas. El autor indica que con temperatura mayor o `enable_thinking: false` se resuelve.
-- No hay benchmarks independientes: las cifras de HarmBench y MMLU las publica el autor y no han sido verificadas por terceros.
-- Instalacion y despliegue delicados: sin el flag `--reasoning-parser glm45` en vLLM, se puede producir un bucle decode-attractor en conversaciones multi-turno, ya que los bloques `<think>` permanecen en el contenido del mensaje.
-- Idiomas y contexto no especificados: no hay informacion oficial sobre los idiomas soportados ni la longitud de contexto, lo que limita la confianza en aplicaciones multilingues.
-- Licencia MIT permite uso comercial, pero la naturaleza sin censura y el enfoque en ciberseguridad ofensiva implican riesgos legales y eticos al desplegarlo en produccion.
+- Modelo sin censura: el autor declara haber eliminado las negativas en seis categorías de daño real; su uso en producción requiere filtros y salvaguardas externas.
+- Riesgo de alucinación: no cuantificado ni documentado por el autor.
+- Idiomas soportados: no disponibles; no se puede garantizar calidad multilingüe.
+- Longitud de contexto: no disponible, lo que impide planificar cargas de contexto largo con precisión.
+- En modo `max`, un `max_tokens` pequeño devuelve una respuesta vacía con `finish_reason="length"`; en multi-turno el turno vacío contamina el historial y la conversación no se recupera. Con `max_tokens` de 2000 el fallo aparece a partir del cuarto turno; con 6000 es limpio.
+- No se debe pasar `enable_thinking`: la plantilla no define esa variable y su uso desactiva el parser mientras el modelo sigue razonando, volcando el razonamiento en `content`.
+- El razonamiento se devuelve en `message.reasoning`, no en `message.reasoning_content`.
+- `clear_thinking` debe ir anidado dentro de `chat_template_kwargs`; como clave de primer nivel se ignora.
+- En vídeo, `media_io_kwargs.video.fps` debe ser inferior a la tasa de fotogramas del clip; un valor igual o superior provoca `EngineDeadError` y deja el servidor caído hasta reiniciarlo (incidencias upstream vLLM #55644 y #55647).
+- `max_frames` y `num_frames` no son intercambiables entre versiones de vLLM; conviene fijar `fps`, que todas las versiones respetan.
+- Para imagen, `max_pixels`, `min_pixels`, `size` y `detail` se aceptan pero no tienen efecto; hay que usar `mm_processor_kwargs.max_image_tokens` y `min_image_tokens`.
+- El muestreo por defecto de vídeo varía entre versiones (aproximadamente 2 fps frente a 6 fps), lo que altera el coste en tokens del mismo clip.
+- Licencia MIT: permite uso comercial, pero no exime de responsabilidad legal por el contenido generado ni de las obligaciones de moderación aplicables.
+- El autor publica comandos de despliegue que apuntan a `dealignai/GLM-5.3-Flash-UNCENSORED-W4A16`, un identificador distinto del ID de este repositorio; conviene verificar el nombre servido antes de desplegar.
 
 ## Enlaces
 
-- https://huggingface.co/dealignai/GLM-5.3-Flash-CYBERSECURITY-W4A16
-- https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8
-- https://dealign.ai/
-- https://www.aimodels.fyi/models/huggingFace/glm-5.3-cybersecurity-fp8-dealignai
-- https://llm-explorer.com/model/dealignai%2FGLM-5.3-CYBERSECURITY-FP8,5FAoiCM3UW505NlU50d9Vr
+- Hugging Face: https://huggingface.co/dealignai/GLM-5.3-Flash-CYBERSECURITY-W4A16
+- Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Incidencia vLLM #55644: https://github.com/vllm-project/vllm/issues/55644
+- Incidencia vLLM #55647: https://github.com/vllm-project/vllm/issues/55647
+- Repositorio vLLM: https://github.com/vllm-project/vllm
+- Repositorio SGLang: https://github.com/sgl-project/sglang

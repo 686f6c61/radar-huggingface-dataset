@@ -41,7 +41,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 3458,
+  "downloads_30d": 3768,
   "trending_score": 0,
   "parameters": 3880263168,
   "parameters_human": "3.88B",
@@ -61,31 +61,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "aisingapore/Gemma-SEA-LION-v4-4B-VL-GGUF · Hugging Face",
-      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL-GGUF",
-      "snippet": "Gemma-SEA-LION-v4-4B-VL is a 4-billion parameter Vision-Language Model (VLM) built upon the gemma-3-4b-it architecture. To ensure domain adaptation for the region, the model underwent rigorous post-training on a curated dataset of approximately 6.7 million instruction-text pairs."
-    },
-    {
-      "title": "aisingapore/Gemma-SEA-LION-v4-4B-VL · Hugging Face",
-      "url": "https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL",
-      "snippet": "A newer version of this model is available: aisingapore/Qwen-SEA-LION-v4.5-27B-IT"
-    },
-    {
-      "title": "SEA-LION v4 | SEA-LION Documentation - docs.sea-lion.ai",
-      "url": "https://docs.sea-lion.ai/models/sea-lion-v4",
-      "snippet": "Each model offers unique strengths tailored to specific needs: Vision Language Models (VLMs) Gemma-SEA-LION-v4-4B-VL A lightweight model optimized for mobile and edge devices, bringing robust SEA language understanding to environments with strict memory and latency constraints."
-    },
-    {
-      "title": "Gemma-SEA-LION-v4-4B-VL | SEA-LION Documentation",
-      "url": "https://docs.sea-lion.ai/models/sea-lion-v4/gemma-sea-lion-v4-4b-vl",
-      "snippet": "Gemma-SEA-LION-v4-4B-VL is a 4-billion parameter Vision-Language Model (VLM) built upon the gemma-3-4b-it architecture. To ensure domain adaptation for the region, the model underwent rigorous post-training on a curated dataset of approximately 8.54 million instruction-text pairs."
-    },
-    {
-      "title": "aisingapore/Gemma-SEA-LION-v4-4B-VL",
-      "url": "https://ollama.com/aisingapore/Gemma-SEA-LION-v4-4B-VL",
-      "snippet": "Gemma-SEA-LION-v4-4B-VL is a multilingual, multimodal model which has been pretrained and instruct-tuned for the Southeast Asia region. Developed by AI Singapore and funded by National Research Foundation, Singapore."
-    }
-  ]
+  "sources": []
 }

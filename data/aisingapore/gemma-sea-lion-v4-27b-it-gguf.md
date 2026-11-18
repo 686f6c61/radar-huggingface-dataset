@@ -2,83 +2,102 @@
 
 ## Resumen
 
-Gemma-SEA-LION-v4-27B-IT-GGUF es la versión cuantizada en formato GGUF del modelo Gemma-SEA-LION-v4-27B-IT, desarrollado por el AI Products Pillar de AI Singapore. Forma parte de la familia SEA-LION (Southeast Asian Languages In One Network), una colección de modelos de lenguaje grandes preentrenados y ajustados por instrucciones específicamente para la región del Sudeste Asiático. El modelo base parte de Gemma 3 27B Instruct de Google y ha sido sometido a un preentrenamiento continuado con aproximadamente 500 mil millones de tokens en 11 idiomas de la región, lo que le permite destacar en tareas en birmano, jemer, lao, tailandés, vietnamita, indonesio, malayo, tagalo, tamil, mandarín e inglés.
+Gemma-SEA-LION-v4-27B-IT-GGUF es la versión cuantizada en formato GGUF del modelo Gemma-SEA-LION-v4-27B-IT, desarrollado por AI Products Pillar de AI Singapore y financiado por el NRF de Singapur. Forma parte de la familia SEA-LION (Southeast Asian Languages In One Network), un conjunto de modelos de lenguaje entrenados y ajustados por instrucciones específicamente para la región del Sudeste Asiático. El modelo parte de la arquitectura Gemma 3 27B Instruct de Google y se ha sometido a preentrenamiento y ajuste adicional con datos multilingües de la región.
 
-La versión GGUF reduce los requisitos de memoria manteniendo la calidad, y según sus desarrolladores puede ejecutarse en un portátil con 16 GB de memoria mediante Ollama. Hereda de Gemma 3 capacidades como una ventana de contexto de 128 000 tokens, comprensión de imágenes y texto, function calling y salidas estructuradas. Con 27 000 millones de parámetros, se posiciona como una alternativa competitiva frente a modelos cerrados de mayor tamaño en tareas específicas del Sudeste Asiático, según las afirmaciones de sus autores.
+El modelo resuelve el problema de la baja representación de las lenguas del Sudeste Asiático en los LLM generalistas, cubriendo birmano, inglés, indonesio, jemer, lao, malayo, mandarín, tagalo, tamil, tailandés y vietnamita, además de javanés y sundanés. Mantiene las capacidades multimodales (imagen y texto) y la ventana de contexto de 128K tokens heredadas de Gemma 3, junto con soporte de function calling y salidas estructuradas.
 
-## Especificaciones técnicas
+Esta variante GGUF está pensada para reducir los requisitos de memoria y permitir la inferencia en GPU de consumo e incluso en un portátil con 16 GB de memoria mediante Ollama. El repositorio incluye cuantizaciones Q4_K_M, Q8_0 y BF16, además del proyector multimodal (mmproj) necesario para el procesamiento de imágenes. La licencia MIT facilita su uso comercial sin las restricciones habituales de los modelos Gemma originales.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only basado en Gemma 3 27B Instruct |
-| Parametros totales | 27 009 346 304 (~27B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 128 000 tokens |
-| Tipos de cuantizacion | Q4_K_M, Q8_0, BF16 (GGUF) |
-| Idiomas soportados | Birmano, ingles, indonesio, jemer, lao, malayo, mandarin, tagalo, tamil, tailandes y vietnamita |
-| Licencia | Gemma Terms of Use (Google) |
-| Formato de pesos | GGUF (incluye archivo mmproj para vision) |
+| Arquitectura | Transformer decoder (basada en Gemma 3 27B Instruct) |
+| Parametros totales | 27.009.346.304 (27B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 128.000 tokens |
+| Tipos de cuantizacion | Q4_K_M, Q8_0, BF16 |
+| Idiomas soportados | en, zh, vi, id, th, fil, ta, ms, km, lo, my, jv, su |
+| Licencia | MIT |
+| Formato de pesos | GGUF (con archivo mmproj separado para visión) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de Gemma 3 27B Instruct, un transformer decoder-only con atención global y ventana de contexto de 128 000 tokens. Sobre esta base, AI Singapore realizó un preentrenamiento continuado con aproximadamente 500 000 millones de tokens muestreados de un depósito de más de un billón de tokens, compuesto por datos web, código, conjuntos de datos de código abierto y datos generados sintéticamente en los 11 idiomas objetivo. Posteriormente se aplicó un ajuste por instrucciones (instruct-tuning) para producir la variante IT. No se especifica si se utilizaron técnicas como RLHF o DPO. El tokenizador es el mismo que el de Gemma 3 27B Instruct. La cuantización a GGUF se realizó sobre el modelo IT, generando variantes Q4_K_M, Q8_0 y BF16, además de un proyector multimodal (mmproj) para entrada de imágenes.
+El modelo es un transformer decoder denso de 27.000 millones de parámetros basado en Gemma 3 27B Instruct, del que hereda el tokenizador por defecto. Incorpora capacidades multimodales de comprensión de imagen y texto, incluyendo comprensión de documentos, VQA visual y razonamiento anclado en imágenes. El entrenamiento se realizó sobre un conjunto de datos que abarca birmano, inglés, indonesio, jemer, lao, malayo, mandarín, tagalo, tamil, tailandés y vietnamita, recopilados de fuentes web, código, datasets de código abierto y datos generados sintéticamente. Se muestrearon 500.000 millones de tokens de un pool total de 1 billón de tokens.
+
+Según la model card, el ajuste por instrucciones (IT) produce un modelo que destaca en tareas del Sudeste Asiático frente a otros modelos abiertos de menos de 200.000 millones de parámetros, con un rendimiento comparable al de modelos cerrados de mayor tamaño. Esta variante GGUF se generó mediante cuantización del modelo original, preservando las capacidades de function calling y salidas estructuradas para su integración en sistemas mayores. No se detalla en la información disponible si se emplearon técnicas de RLHF o DPO específicas.
 
 ## Capacidades
 
-- Generación de texto multilingüe con especialización en idiomas del Sudeste Asiático (birmano, jemer, lao, tailandés, vietnamita, indonesio, malayo, tagalo, tamil, mandarín e inglés).
-- Comprensión de imágenes y documentos, incluyendo preguntas visuales, comprensión de documentos y razonamiento basado en imágenes (heredado de Gemma 3).
-- Function calling y salidas estructuradas, lo que permite integración en sistemas más grandes y flujos de trabajo automatizados.
-- Razonamiento multi-step y soporte para agentes gracias a la combinación de function calling y contexto largo.
-- Ventana de contexto de 128 000 tokens, adecuada para documentos extensos y conversaciones multi-turno.
-- Capacidad de ejecución en hardware de consumo mediante cuantización GGUF, compatible con llama.cpp, Ollama y vLLM.
+- Generación de texto y razonamiento en 13 idiomas, con especial énfasis en las lenguas del Sudeste Asiático.
+- Comprensión de imágenes y texto: descripción de imágenes, VQA visual, comprensión de documentos y razonamiento anclado en imágenes (requiere el archivo mmproj).
+- Function calling avanzado y salidas estructuradas para integración en sistemas y pipelines.
+- Soporte de conversaciones multi-turno gracias a la ventana de contexto de 128K tokens.
+- Capacidades multilingües nativas en birmano, inglés, indonesio, jemer, lao, malayo, mandarín, tagalo, tamil, tailandés, vietnamita, javanés y sundanés.
+- Compatibilidad con motores de inferencia basados en llama.cpp, incluido Ollama.
+- Capacidad de ejecución en hardware de consumo gracias a las cuantizaciones Q4_K_M y Q8_0.
 
 ## Casos de uso
 
-- Atención al cliente automatizada en idiomas del Sudeste Asiático: el modelo puede gestionar conversaciones multi-turno en tailandés, vietnamita o indonesio con contexto largo, reduciendo la necesidad de agentes humanos en empresas regionales.
-- Traducción automática entre idiomas de la región: su entrenamiento específico en 11 lenguas permite traducciones más precisas que modelos genéricos, útil para plataformas de comercio electrónico y servicios gubernamentales.
-- Análisis de documentos con imágenes: gracias a su capacidad multimodal, puede extraer información de facturas, formularios y documentos escaneados en idiomas locales, facilitando la digitalización de procesos administrativos.
-- Generación de código con integración en pipelines de CI/CD: soporta function calling y salidas estructuradas, por lo que puede utilizarse como asistente de programación o para automatizar tareas de desarrollo en entornos con infraestructura local.
-- Asistentes virtuales multilingües para dispositivos de bajo consumo: la versión Q4_K_M permite desplegar un asistente en un portátil con 16 GB de RAM, ideal para entornos educativos o pequeñas empresas sin acceso a GPUs dedicadas.
-- Procesamiento de contenido local: resumen, extracción de entidades y clasificación de noticias o publicaciones en redes sociales en idiomas como jemer, lao o birmano, donde los modelos genéricos suelen fallar.
-- Búsqueda semántica en corpus multilingües: su contexto de 128K y conocimiento de idiomas regionales permiten indexar y recuperar información en archivos extensos mezclando varios idiomas.
+- Atención al cliente multilingüe en el Sudeste Asiático: el modelo puede gestionar conversaciones multi-turno en tailandés, vietnamita, indonesio o malayo con hasta 128K tokens de contexto, lo que permite mantener historiales largos y documentación de referencia en la misma ventana.
+- Procesamiento de documentos con OCR y comprensión visual: usando el proyector mmproj, el modelo puede extraer y razonar sobre información de facturas, formularios o documentos escaneados en lenguas regionales, adecuado para digitalización de archivos administrativos.
+- Generación de código y asistentes de desarrollo: el soporte de function calling y salidas estructuradas permite integrarlo en pipelines de CI/CD para autocompletado, generación de tests o revisión automatizada, con la ventaja de la licencia MIT para uso comercial.
+- Traducción y localización: el modelo cubre 13 idiomas, incluidas lenguas de bajos recursos como birmano, jemer o lao, lo que lo hace útil para localización de productos y contenidos en mercados del Sudeste Asiático.
+- Despliegue en el borde o en portátiles: la cuantización Q4_K_M (16,5 GB) permite ejecutar el modelo en un portátil con 16 GB de memoria mediante Ollama, habilitando asistentes locales sin conexión para entornos con requisitos de privacidad.
+- Análisis de redes sociales y moderación de contenido: con contexto largo y capacidades multilingües, puede clasificar y resumir hilos de conversación en varias lenguas regionales, incluyendo javanés y sundanés, para plataformas con audiencias en Indonesia.
+- Investigación lingüística y educativa: útil para tareas de generación y evaluación en lenguas del Sudeste Asiático donde los modelos generalistas tienen un rendimiento limitado, con la ventaja de pesos abiertos y licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks detallados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card afirma que, a fecha de 25 de agosto de 2025, el modelo "destaca en tareas del Sudeste Asiático en comparación con otros modelos abiertos de menos de 200 mil millones de parámetros" y que su rendimiento es comparable al de modelos cerrados más grandes, pero no se proporcionan cifras concretas. Los únicos datos de rendimiento disponibles son los relativos a la inferencia con diferentes cuantizaciones, medidos en una GPU NVIDIA H100 con vLLM y llama.cpp:
+La model card no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.). Sí incluye una tabla de rendimiento de inferencia por cuantización medida con llama.cpp sobre una NVIDIA H100, con contexto de 128K, entrada de 4K tokens y salida de 1K tokens, valores p50 sobre 10 peticiones:
 
-| Variante cuantizada | Tamano del modelo (GB) | VRAM requerida (GB) | Tiempo hasta primer token (s) | Tokens por segundo |
+| Variante | Tamano (GB) | VRAM requerida (GB) | Time to First Token (s) | Tokens por segundo |
 |---|---|---|---|---|
 | BF16 | 54,0 | 71,1 | 2,03 | 41,5 |
-| Q8_0 | 28,7 | 47,0 | 3,18 | 37,0 |
-| Q4_K_M | 16,5 | 35,5 | 2,65 | 59,9 |
+| Q8_0 | 28,7 | 47 | 3,179 | 37 |
+| Q4_K_M | 16,5 | 35,5 | 2,645 | 59,9 |
 
-Nota: los valores de TTFT y tokens por segundo se midieron con vLLM en localhost con concurrencia 1, entrada de 4K tokens y salida de 1K tokens, como mediana de 10 peticiones.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 35,5 GB para Q4_K_M, 47 GB para Q8_0 y 71,1 GB para BF16, según las pruebas con offload completo a GPU en una H100.
-- GPU recomendadas: para offload completo se necesitan GPUs con al menos 36 GB de VRAM, como NVIDIA A6000 (48 GB), A100 (40/80 GB) o H100 (80 GB). En GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB) no cabe el modelo completo, pero se puede ejecutar con offloading parcial a CPU mediante llama.cpp u Ollama.
-- La model card indica que el modelo puede ejecutarse en un portátil con 16 GB de memoria usando Ollama, lo que implica una combinación de cuantización y offloading a CPU/RAM.
-- Opciones de despliegue: llama.cpp (incluido llama-gemma3-cli para entrada de imágenes), Ollama, vLLM (usado en las pruebas de rendimiento) y cualquier motor compatible con GGUF.
-- Latencia y throughput: según la tabla anterior, entre 37 y 60 tokens por segundo en H100 dependiendo de la cuantización, con tiempos hasta el primer token de 2 a 3 segundos.
+- VRAM estimada para inferencia: 71,1 GB en BF16, 47 GB en Q8_0 y 35,5 GB en Q4_K_M, según las mediciones del autor con todas las capas en GPU y contexto de 128K.
+- GPU recomendadas: NVIDIA H100 para BF16 y Q8_0 con contexto completo; para Q4_K_M se requieren al menos 36 GB de VRAM, lo que incluye A100 40GB, A6000 o dos GPU de consumo.
+- GPU de consumo: la model card indica que la variante Q4_K_M puede ejecutarse en un portátil con 16 GB de memoria mediante Ollama; conviene señalar que la VRAM medida por el autor (35,5 GB) corresponde a contexto de 128K con todas las capas en GPU, por lo que en configuraciones de consumo se requerirá reducir el contexto o la offload parcial.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-gemma3-cli para imágenes), Ollama, y motores compatibles con GGUF. El autor usó vLLM para medir TTFT y throughput, aunque las pruebas de servicio se hicieron con llama.cpp.
+- Latencia y throughput: en H100, TTFT de 2,03 s y 41,5 tok/s en BF16; 3,179 s y 37 tok/s en Q8_0; 2,645 s y 59,9 tok/s en Q4_K_M (entrada 4K, salida 1K, concurrencia 1).
+- Los GGUF están divididos en partes; herramientas como llama.cpp aceptan apuntar a la primera parte, y existe la opción de fusionarlas con gguf-split.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos detallados en la información proporcionada. La model card afirma que el modelo supera a otros modelos abiertos de menos de 200 mil millones de parámetros en tareas del Sudeste Asiático, y que su rendimiento es comparable al de modelos cerrados más grandes, pero no se ofrecen nombres concretos ni cifras. Como referencia cualitativa, los principales competidores en el ámbito de modelos multilingües para el Sudeste Asiático incluyen SeaLLM (basado en Qwen y Llama), Qwen2.5 (con soporte multilingüe amplio) y los propios Gemma 3 de Google. Sin embargo, al no existir benchmarks públicos en la información disponible, no es posible realizar una comparación numérica rigurosa.
+| Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Formato |
+|---|---|---|---|---|---|
+| Gemma-SEA-LION-v4-27B-IT-GGUF | 27B | 128K | 13 (incluye birmano, jemer, lao) | MIT | GGUF |
+| Gemma 3 27B Instruct (base) | 27B | 128K | Multilingüe general, cobertura SEA limitada | Términos Gemma | Safetensors, GGUF |
+| SEA-LION v3 (versiones anteriores) | Variable (no disponible) | No disponible | Sí | No disponible | No disponible |
+| Qwen-SEA-LION-v4.5-27B-IT (sucesor indicado) | 27B | No disponible | Sí | No disponible | No disponible |
+
+La model card indica que Gemma-SEA-LION-v4-27B-IT supera a otros modelos abiertos de menos de 200.000 millones de parámetros en tareas del Sudeste Asiático y se aproxima a modelos cerrados de mayor tamaño. No se dispone de cifras concretas de benchmarks comparativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no ha sido alineado para seguridad. La model card indica explícitamente que no se ha realizado fine-tuning de seguridad y que los desarrolladores deben aplicar sus propias medidas de seguridad antes de su uso en producción.
-- No se ha probado la robustez frente a ataques adversarios, por lo que puede ser vulnerable a entradas maliciosas.
-- Al estar entrenado principalmente en 11 idiomas del Sudeste Asiático, su rendimiento en otros idiomas puede ser inferior al de modelos multilingües genéricos.
-- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en tareas de generación libre o cuando se le pide información factual fuera de su dominio de entrenamiento.
-- La licencia Gemma Terms of Use impone restricciones de uso comercial y de redistribución; es necesario revisar los términos completos de Google antes de su implementación en productos comerciales.
-- El modelo no ha sido evaluado en tareas de seguridad ni en escenarios de alto riesgo; su uso en aplicaciones sensibles requiere validación adicional.
+- El modelo no ha sido alineado para seguridad; los desarrolladores deben aplicar su propio ajuste de seguridad y medidas de protección antes de usarlo en producción.
+- No se ha probado la robustez frente a prompting adversario, según la model card.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de factualidad.
+- Aunque cubre 13 idiomas, las lenguas de bajos recursos (birmano, jemer, lao) pueden tener un rendimiento inferior al de inglés o indonesio; no se detallan métricas por idioma.
+- La ventana de 128K tokens requiere VRAM elevada si se usa el contexto completo; en hardware de consumo habrá que reducir el contexto o la offload.
+- La licencia MIT es permisiva para uso comercial, pero el modelo deriva de Gemma 3, cuyos términos originales conviene revisar en caso de redistribución.
+- El repositorio ocupa 100,1 GB e incluye múltiples cuantizaciones y el proyector multimodal; es necesario descargar solo los archivos necesarios.
+- La model card apunta a un sucesor (Qwen-SEA-LION-v4.5-27B-IT), lo que puede indicar que esta versión quedará progresivamente desactualizada.
 
 ## Enlaces
 
-- [Hugging Face - Gemma-SEA-LION-v4-27B-IT-GGUF](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF)
-- [Hugging Face - Gemma-SEA-LION-v4-27B-IT (modelo base)](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT)
-- [Hugging Face - Gemma-SEA-LION-v4-27B (modelo sin instruct)](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B)
-- [Documentación oficial SEA-LION](https://docs.sea-lion.ai/models/sea-lion-v4/gemma-sea-lion-v4-27b)
-- [Hugging Face - Variante NVFP4](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-NVFP4)
+- Hugging Face: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF
+- Modelo base: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT
+- Sucesor indicado: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT
+- Licencia MIT: https://mit-license.org/
+- Guía de gguf-split en llama.cpp: https://github.com/ggerganov/llama.cpp/tree/master/examples/gguf-split
+- Pesos Q4_K_M: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF/blob/main/Gemma-SEA-LION-v4-27B-IT-Q4_K_M.gguf
+- Pesos Q8_0: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF/blob/main/Gemma-SEA-LION-v4-27B-IT-Q8_0.gguf
+- Pesos BF16 (parte 1): https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF/blob/main/Gemma-SEA-LION-v4-27B-IT-BF16-00001-of-00003.gguf
+- Proyector multimodal: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF/blob/main/mmproj-Gemma-SEA-LION-v4-27B-IT.gguf

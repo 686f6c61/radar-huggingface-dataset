@@ -26,9 +26,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1037,
-  "downloads_30d": 160964,
-  "trending_score": 29.5,
+  "likes": 1043,
+  "downloads_30d": 151721,
+  "trending_score": 27,
   "parameters": 5548681984,
   "parameters_human": "5.55B",
   "storage_bytes": 43319657094,
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Passez au meilleur de la tech reconditionnée. | Back Market",
-      "url": "https://www.backmarket.fr/fr-fr?msockid=2f64c334e46865913afed4c7e5736433",
-      "snippet": "Profitez d'articles reconditionnés sur Back Market, moins cher que le neuf ! Livraison standard offerte - Garantie contractuelle de 12 …"
-    },
-    {
-      "title": "Black - Simple English Wikipedia, the free encyclopedia",
-      "url": "https://simple.wikipedia.org/wiki/Black",
-      "snippet": "No color can have the same level of dark pigmentation without turning itself into black. As the visual perception of an object's color is …"
-    },
-    {
-      "title": "BLACKSTORE - Vivez l’expérience mode !",
-      "url": "https://www.blackstore.fr/",
-      "snippet": "Le meilleur des marques se trouve chez BLACKSTORE. Vêtements, accessoires, chaussures pour femmes et hommes : tous les …"
-    },
-    {
-      "title": "Black M - YouTube",
-      "url": "https://www.youtube.com/channel/UCa_m88y-YP42wOdoYaIk6og",
-      "snippet": "Black M - La Légende Black Play all Retrouve toutes les vidéos officielles de l'album La Légende Black ! Album disponible : …"
-    },
-    {
-      "title": "FLUX 3 Image Klein AI Image Generator - Runware",
-      "url": "https://runware.ai/models/bfl-flux-3-image-klein",
-      "snippet": "FLUX 3 Image Klein is the distilled checkpoint of Black Forest Labs' open-weights FLUX 3 image model, covering text-to-image generation and reference-based ..."
-    }
-  ]
+  "sources": []
 }

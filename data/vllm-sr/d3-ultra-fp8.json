@@ -5,7 +5,7 @@
   "author": "vllm-sr",
   "url": "https://huggingface.co/vllm-sr/d3-ultra-FP8",
   "created_at": "2026-10-30T07:59:58.000Z",
-  "updated_at": "2026-10-30T08:02:16.000Z",
+  "updated_at": "2026-11-17T20:51:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 186,
+  "downloads_30d": 211,
   "trending_score": 0,
   "parameters": 26085330160,
   "parameters_human": "26.09B",

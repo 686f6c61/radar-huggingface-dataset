@@ -5,7 +5,7 @@
   "author": "rarfileexe",
   "url": "https://huggingface.co/rarfileexe/FlameLedger-Encoder",
   "created_at": "2026-11-16T19:32:06.000Z",
-  "updated_at": "2026-11-16T20:23:51.000Z",
+  "updated_at": "2026-11-17T16:28:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 744371512,
   "parameters_human": "744.4M",

@@ -5,7 +5,7 @@
   "author": "mohsenvand",
   "url": "https://huggingface.co/mohsenvand/cold-attention-scc-committee",
   "created_at": "2026-11-15T17:51:05.000Z",
-  "updated_at": "2026-11-15T17:51:08.000Z",
+  "updated_at": "2026-11-17T14:58:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,6 +20,7 @@
     "graph-neural-network",
     "length-generalization",
     "strongly-connected-components",
+    "arxiv:2611.11937",
     "license:apache-2.0",
     "region:us"
   ],

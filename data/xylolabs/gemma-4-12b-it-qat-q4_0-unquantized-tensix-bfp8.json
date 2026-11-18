@@ -5,10 +5,10 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/gemma-4-12B-it-qat-q4_0-unquantized-Tensix-BFP8",
   "created_at": "2026-11-13T22:18:29.000Z",
-  "updated_at": "2026-11-14T16:46:00.000Z",
+  "updated_at": "2026-11-17T08:44:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "any-to-any",
   "library": "transformers",
   "languages": [
     "en",
@@ -26,8 +26,7 @@
     "block-floating-point",
     "bfloat8_b",
     "quantized",
-    "text-generation",
-    "conversational",
+    "any-to-any",
     "en",
     "ko",
     "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
@@ -37,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 40,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 12966363184,
   "parameters_human": "12.97B",
@@ -48,7 +47,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,

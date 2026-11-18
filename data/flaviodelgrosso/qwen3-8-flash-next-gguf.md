@@ -2,109 +2,81 @@
 
 ## Resumen
 
-`flaviodelgrosso/qwen3.8-flash-next-gguf` es un repositorio de cuantizaciones GGUF del modelo `Qwen/Qwen3.8-Flash-Next` (revision `de4b8e4d43b917e7706784d8bb445c9af86a3540`), publicado por el desarrollador flaviodelgrosso. No es una publicacion oficial de Qwen: es una conversion a formatos de baja precision pensada para inferencia local con memoria limitada y para aprovechar la cabeza de prediccion NextN del modelo original mediante decodificacion especulativa.
+Qwen3.8-Flash-Next es un modelo de lenguaje de gran escala desarrollado por el equipo Qwen (Alibaba). Esta ficha documenta la cuantización GGUF publicada por el usuario flaviodelgrosso bajo el identificador `flaviodelgrosso/qwen3.8-flash-next-gguf`, una conversión de los pesos originales en BF16 a un formato GGUF mixto (Q4-D6) orientada a inferencia eficiente en memoria. El modelo base cuenta con 179.551.050.368 parámetros totales (aproximadamente 180 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamano o, según la nomenclatura del autor, en una arquitectura con expertos enrutados (MoE) y cabezas NextN.
 
-El modelo de origen tiene 187.604.114.048 parametros (unos 187,6 mil millones), lo que lo situa en la categoria de modelos grandes que solo se pueden servir con cuantizacion agresiva o con hardware de muchos aceleradores. El repositorio incluye dos ficheros: `Qwen3.8-Flash-Next-Q4.gguf` (177.280.286.720 bytes) y `Qwen3.8-Flash-Next-Q2.gguf` (147.207.127.040 bytes), con recetas de cuantizacion mixtas documentadas y sumas SHA-256 publicadas.
+La relevancia de esta publicación radica en el trabajo de cuantización: el autor reduce el coste de lectura por token de 6,70 GB a 4,62 GB manteniendo una precisión mixta (Q4_K para expertos enrutados, MXFP4 para las proyecciones down, Q6_K para atención y capas densas, BF16 para el router). Esto permite ejecutar un modelo de ~180B parámetros en un único equipo con ~69 GiB de memoria residente, algo imposible con los pesos BF16 originales.
 
-Su relevancia ahora es practica: demuestra una receta de cuantizacion reproducible (Q4_K + MXFP4 + Q8_0 para el fichero Q4; IQ2_XXS + Q2_K para el Q2) sobre un modelo base muy grande, conserva la tabla n-gram BF16 original y mantiene embebida la capa NextN, lo que permite experimentar con especulacion en un unico fichero. La contrapartida es que solo existe un runtime documentado (Inferno, del mismo autor) y que la ejecucion del fichero Q2 aun no esta validada.
+El modelo está pensado para generación de texto, conversación y tareas de razonamiento, con soporte de decodificación especulativa mediante una cabeza NextN embebida y una tabla n-gram en BF16. La licencia es la Qwen Community License 1.0, que impone condiciones para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible de forma explicita; la receta de cuantizacion describe expertos "routed" (gate/up/down) y capas "dense", lo que sugiere un transformer con mezcla de expertos (MoE), sin confirmacion en la informacion proporcionada |
-| Parametros totales | 187.604.114.048 (dato real, safetensors del modelo base) |
+| Arquitectura | Transformer con expertos enrutados (MoE) y cabeza NextN para decodificación especulativa; capas GDN (gated dense network) según la model card |
+| Parametros totales | 179.551.050.368 (~180B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Fichero Q4: Q4_K (gate/up routed) + MXFP4 (down routed, 640 entradas sin padding) + Q8_0 (capas dense). Fichero Q2: IQ2_XXS (gate/up routed) + Q2_K (down routed, padding 640 a 768) en capas troncales 0-47. Ambos conservan la tabla n-gram BF16 original; la capa NextN 48 mantiene Q4_K/MXFP4 a 640 entradas |
+| Tipos de cuantizacion | GGUF mixto Q4-D6: Q4_K en gate/up de expertos, MXFP4 en down de expertos, Q5_K/Q6_K en capas GDN 0–23, Q4_K en GDN 24–47, Q6_K en atención/cabeza/PLE/NextN, BF16 en router; ~6,2 bpw frente a 10,0 de Q8_0-dense |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (`license: other`); se aplican condiciones de uso comercial |
-| Formato de pesos | GGUF (dos ficheros: Q4 y Q2) |
-| Modelo base | Qwen/Qwen3.8-Flash-Next (revision `de4b8e4d43b917e7706784d8bb445c9af86a3540`) |
-| Tamano de ficheros | Q4: 177.280.286.720 bytes; Q2: 147.207.127.040 bytes |
-| SHA-256 (Q4) | `be134f2db59261c002fd79d4bc6bccac5ba0e23d2980d8c4db520036deaaa380` |
-| SHA-256 (Q2) | `db8dbf8891122feb22df1dbb7b3caf430b4814552563219b35dd8b2ad065a1da` |
-| SHA-256 de la imatrix (Q2) | `a5863123db1ca458727e738955bef7bfc199520aa2bee3a30142a1aff9254154` (registrada como `quantize.imatrix.sha256` en los metadatos GGUF) |
-| Tamano del repositorio | 324,5 GB |
-| Descargas / likes | 423 / 0 |
-| Fechas | creado 2026-10-24; actualizado 2026-10-25 |
+| Licencia | Qwen Community License 1.0 (license:other; condiciones de uso comercial) |
+| Formato de pesos | GGUF (archivo `Qwen3.8-Flash-Next-Q4-D6.gguf`, 175 GB) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no incluye una descripcion formal de la arquitectura del modelo base. Lo que si se puede deducir de la receta de cuantizacion es la estructura de capas empleada: un tronco con capas 0-47 y una capa adicional NextN en la posicion 48. Las capas del tronco contienen modulos "routed" con proyecciones gate/up/down, es decir, un esquema de enrutamiento por expertos, acompanados de capas "dense" cuantizadas en Q8_0. El fichero Q2 aplica 2 bits a las proyecciones enrutadas del tronco pero mantiene la capa NextN en Q4_K/MXFP4, un compromiso para no degradar la cabeza de especulacion.
+La información disponible describe el modelo base como un transformer con expertos enrutados (MoE) y una cabeza NextN embebida para decodificación especulativa. La model card menciona capas GDN (gated dense network) diferenciadas por rango: las capas 0–23 se cuantizan en Q5_K/Q6_K y las 24–47 en Q4_K, lo que sugiere una arquitectura híbrida con dos regímenes de precisión según la profundidad. También se conserva una tabla n-gram en BF16 para la especulación, y el router permanece en BF16 para no degradar el enrutamiento de expertos.
 
-El elemento tecnico mas destacable es la capa NextN embebida en el propio GGUF, que actua como cabeza de prediccion multi-token y permite decodificacion especulativa sin un modelo drafter separado. El runtime Inferno la explota con el flag `--speculation opportunistic|exact`. Ademas, ambos ficheros incorporan la tabla n-gram BF16 copiada del modelo original, lo que sugiere soporte de decodificacion asistida por n-gramas dentro del mismo artefacto. Para el fichero Q2 se uso una imatrix cuya huella SHA-256 queda registrada en los metadatos, lo que hace la receta auditable y reproducible.
-
-No hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, ni sobre etapas de alineacion (RLHF, DPO u otras) del modelo base. Tampoco se documenta el significado del tag `qwen4exp` mas alla de su presencia en los metadatos del repositorio.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. La cuantización se realizó una sola vez desde BF16 usando la imatrix de unsloth (hash `a5863123…f9254154`), con un mapa de precisión documentado en `qwen4exp.requant.*`. El autor indica que la reconstrucción es byte-idéntica mediante `razor convert qwen-q4-d6`.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado es `text-generation` y el repositorio esta etiquetado como `conversational`.
-- Conversacion multi-turno: la etiqueta `conversational` indica uso previsto en dialogos, aunque no se detallan ventanas de contexto ni limites.
-- Inferencia via endpoints: el tag `endpoints_compatible` sugiere compatibilidad con APIs de inferencia, sin especificar que implementacion.
-- Decodificacion especulativa: la capa NextN embebida permite modos `opportunistic` y `exact` en Inferno.
-- Recuperacion asistida por n-gramas: la tabla n-gram BF16 del modelo original se conserva en ambos ficheros.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; el repositorio no declara lista de idiomas.
-- Vision, audio u otras modalidades: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno (pipeline `text-generation`, tag `conversational`).
+- Razonamiento y respuesta a instrucciones, según la naturaleza del modelo base Qwen3.8-Flash-Next.
+- Decodificación especulativa mediante cabeza NextN embebida y tabla n-gram, con modo `opportunistic` en el servidor Razor.
+- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repo).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en Apple Silicon con memoria unificada grande: el autor documenta ejecucion residente de aproximadamente 70 GiB con el fichero Q4 mediante `inferno serve --model Qwen3.8-Flash-Next-Q4.gguf`, lo que permite servir el modelo en un equipo de sobremesa de gama alta sin cluster de GPU.
-- Experimentacion con decodificacion especulativa: al llevar la cabeza NextN embebida, el fichero sirve para medir la ganancia de los modos `opportunistic` y `exact` frente a decodificacion autoregresiva pura, sin necesidad de alojar un drafter aparte.
-- Evaluacion de cuantizacion extrema en modelos MoE: comparar la calidad del fichero Q2 (IQ2_XXS + Q2_K con padding 640 a 768) frente al Q4 (Q4_K + MXFP4) permite estudiar como degrada cada tipo de tensor al bajar de 4 a 2 bits, con la imatrix documentada y verificable.
-- Despliegue en entornos aislados (air-gapped): al ser un artefacto unico en GGUF, se puede transferir por medios fisicos y ejecutar sin descargas adicionales, verificando integridad con los SHA-256 publicados.
-- Modelo profesor para destilacion: con 187,6 mil millones de parametros, puede generar corpus sinteticos de alta calidad en pipelines offline donde el coste por token no es critico.
-- Reproducibilidad de pipelines de cuantizacion: las recetas por capas y el hash de la imatrix permiten reconstruir el proceso y auditar conversiones propias sobre el mismo modelo base.
-- Analisis de trazabilidad de artefactos: el registro de revision del modelo base y de sumas SHA-256 facilita incorporar el fichero a un catalogo interno con control de procedencia.
+- Despliegue en estación de trabajo única: con ~69 GiB residentes, el modelo cabe en equipos con 96–128 GB de RAM unificada (por ejemplo, Apple Silicon de gama alta) o en servidores con una GPU de 80 GB más memoria del sistema, permitiendo ejecutar un modelo de ~180B sin clúster multi-GPU.
+- Asistente conversacional de contexto largo: el pipeline `text-generation` y el tag `conversational` lo hacen adecuado para chat multi-turno; la ventana de contexto concreta no está documentada, por lo que debe validarse antes de producción.
+- Inferencia de baja latencia con especulación: el modo `--speculation opportunistic` de Razor aprovecha la cabeza NextN para alcanzar 96,5 tok/s en un M5 Max (frente a 68,0 tok/s sin especulación), útil en aplicaciones interactivas donde la latencia percibida importa.
+- Servicio local compatible con endpoints: el tag `endpoints_compatible` sugiere integración con APIs tipo OpenAI; se puede montar un servidor local con `razor serve` para prototipos y entornos de desarrollo sin depender de la nube.
+- Evaluación e investigación de cuantización: el mapa de precisión por capa (`qwen4exp.requant.*`) y la reproducibilidad byte-idéntica lo convierten en un caso de estudio para medir el impacto de esquemas mixtos Q4/Q6/MXFP4 en modelos MoE grandes.
+- Procesamiento por lotes en hardware de gama alta: con 4,62 GB leídos por token, el throughput en GPUs con gran ancho de banda (A100/H100) será superior al de una cuantización Q8_0-dense; útil para generación de contenido a gran escala, siempre que se valide la calidad frente al BF16 original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de perplejidad comparativa entre los ficheros Q4 y Q2, ni datos de throughput o latencia medidos.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de velocidad de decodificación en un Apple M5 Max: 68,0 tok/s sin especulación y 96,5 tok/s con especulación NextN (+10% respecto a la build anterior con tipos de tensor idénticos), con una reducción del 31% en lecturas por token (4,62 GB frente a 6,70 GB).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero Q4 ocupa 177,3 GB y el Q2 147,2 GB; a efectos practicos se necesita al menos ese volumen de memoria de acelerador (o memoria unificada) mas el espacio de cache KV, cuyo tamano no se documenta.
-- GPU recomendadas: no se indica ninguna configuracion validada. Por volumen de memoria, el Q4 requiere un conjunto multi-GPU de clase datacenter (por ejemplo, agregados de 8x80 GB o 4x141 GB) o memoria unificada de gran capacidad; no hay pruebas publicadas en la informacion proporcionada.
-- GPU consumer: no cabe en ninguna GPU consumer individual (24 GB o menos). Tampoco en configuraciones de 2 o 4 tarjetas de 24 GB, dado el tamano de los ficheros.
-- Apple Silicon: el autor reporta unos 70 GiB residentes para el fichero Q4 con Inferno, muy por debajo del tamano del fichero, lo que implica mapeo desde almacenamiento; conviene disponer de SSD NVMe rapido y RAM suficiente. Este dato es del autor y no se acompana de mediciones de latencia.
-- Opciones de despliegue: Inferno (repositorio del autor), con `inferno serve` y los modos de especulacion `--speculation opportunistic|exact`. No hay soporte documentado para llama.cpp, Ollama, vLLM ni TGI en la informacion disponible.
-- Estado de validacion: el fichero Q2 es aceptado por Inferno segun la estructura de su cabecera, pero la ejecucion de Q2 "no esta validada" segun la propia model card.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria estimada: ~69 GiB residentes para el archivo Q4-D6 de 175 GB en disco.
+- GPU recomendadas: no especificadas por el autor; por tamano, una GPU de 80 GB (A100/H100) no basta por sí sola para los 69 GiB si se reserva memoria para el sistema, por lo que se requiere memoria unificada o reparto entre GPU y RAM del host.
+- ¿Cabe en GPU de consumo? No en una sola GPU de consumo (24 GB o menos). Sí en equipos con memoria unificada de 96–128 GB, como el M5 Max citado en la model card.
+- Opciones de despliegue: servidor Razor (`razor serve --model ... --speculation opportunistic`), con descarga vía `razor download qwen-q4-d6`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: 68,0 tok/s sin especulación y 96,5 tok/s con especulación en un M5 Max (build anterior con tipos de tensor idénticos). No hay datos para otras plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| qwen3.8-flash-next-gguf (Q4) | 187,6 mil millones | no disponible | GGUF, 177,3 GB | qwen-community-license-1.0 | Hugging Face, 423 descargas |
-| qwen3.8-flash-next-gguf (Q2) | 187,6 mil millones | no disponible | GGUF, 147,2 GB | qwen-community-license-1.0 | Hugging Face, ejecucion Q2 sin validar en Inferno |
-| Qwen/Qwen3.8-Flash-Next (base) | 187.604.114.048 | no disponible | safetensors (pesos originales en BF16) | qwen-community-license-1.0 | Hugging Face, revision `de4b8e4d` |
-| Otras alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone en la informacion proporcionada de otros modelos de la misma categoria con los que establecer una comparacion de rendimiento, contexto o throughput.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (MoE de ~180B) con datos de parámetros, contexto, rendimiento, licencia y disponibilidad que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- No es una publicacion oficial de Qwen: se trata de una conversion de terceros, sin aval del equipo original del modelo.
-- La licencia es `other` (Qwen Community License 1.0). Se aplican condiciones de uso comercial que deben revisarse en el fichero `LICENSE` antes de cualquier despliegue en produccion.
-- El fichero Q2 no esta validado en ejecucion: Inferno lo admite por la estructura de cabecera, pero el propio autor advierte que la ejecucion a 2 bits no se ha comprobado. No es apto para produccion sin validacion propia.
-- Solo hay un runtime documentado (Inferno, proyecto personal del mismo autor). No se confirma compatibilidad con llama.cpp, Ollama, vLLM ni TGI, lo que limita las opciones de integracion y el soporte de la comunidad.
-- Riesgo de degradacion por cuantizacion: el Q2 aplica 2 bits a las proyecciones enrutadas del tronco (capas 0-47) y usa padding de 640 a 768 entradas; no se publican metricas de perplejidad ni de calidad que cuantifiquen la perdida.
-- La discrepancia entre el tamano del fichero Q4 (177,3 GB) y la memoria residente reportada (~70 GiB) implica dependencia de mapeo desde disco; el rendimiento dependera de la velocidad del almacenamiento, no solo de la RAM.
-- No hay informacion sobre longitud de contexto, idiomas soportados ni calidad multilingue; no se puede asumir cobertura de castellano.
-- No se han publicado benchmarks: cualquier afirmacion de rendimiento relativo frente al modelo base seria especulativa.
-- Riesgo de alucinacion: inherente a los modelos generativos de esta familia y no cuantificado en la informacion disponible; se agrava potencialmente con cuantizaciones de 2 bits.
-- Sesgos: no documentados. Al no detallarse la composicion del dataset de entrenamiento, no es posible evaluar sesgos conocidos.
-- Procedencia y validacion comunitaria bajas: 0 likes y 423 descargas en el momento de la consulta. Conviene verificar los SHA-256 publicados antes de usar los ficheros.
-- El tag `qwen4exp` no esta documentado en la model card, por lo que no se puede determinar su significado tecnico.
-- El repositorio ocupa 324,5 GB: requiere planificacion de almacenamiento y ancho de banda de descarga considerables.
+- La cuantización mixta Q4/Q6/MXFP4 introduce degradación de precisión respecto al BF16 original; el autor no publica evaluaciones de calidad (perplejidad, benchmarks) que cuantifiquen esa pérdida.
+- El router se mantiene en BF16 y la tabla n-gram también, lo que mitiga parte del riesgo, pero no hay validación independiente de que el enrutamiento de expertos se preserve tras la cuantización.
+- Licencia Qwen Community License 1.0: impone condiciones para uso comercial; es imprescindible revisar `LICENSE` antes de desplegar en producción.
+- Idiomas soportados no documentados: no se puede garantizar cobertura multilingüe sin evaluación previa.
+- Longitud de contexto no disponible: no debe asumirse una ventana concreta para aplicaciones de contexto largo.
+- Riesgo de alucinación y sesgos: no hay información específica del modelo base en la documentación proporcionada; debe evaluarse empíricamente.
+- El despliegue está documentado únicamente para el servidor Razor; el soporte en otros runtimes (llama.cpp, vLLM, Ollama) no está confirmado y podría requerir conversiones adicionales.
+- El repo tiene 0 likes y fue creado en octubre de 2026; la madurez y el mantenimiento de la cuantización no están contrastados por la comunidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Runtime Inferno: https://github.com/flaviodelgrosso/inferno
-- Licencia del modelo (referenciada como `LICENSE` en el repositorio): https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf/blob/main/LICENSE
-- Fichero Q4: https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf/blob/main/Qwen3.8-Flash-Next-Q4.gguf
-- Fichero Q2: https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf/blob/main/Qwen3.8-Flash-Next-Q2.gguf
+- Repositorio Razor: https://github.com/flaviodelgrosso/razor
+- Documentación de cuantización de Razor: https://github.com/flaviodelgrosso/razor/blob/main/docs/quantization.md

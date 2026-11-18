@@ -77,19 +77,19 @@
       "snippet": "Examples in Each Chapter Our \"Try it Yourself\" editor makes it easy to learn TypeScript. You can edit TypeScript code and view the …"
     },
     {
-      "title": "The starting point for learning TypeScript",
-      "url": "https://www.typescriptlang.org/docs/",
-      "snippet": "TypeScript Documentation Get Started Quick introductions based on your background or preference. TS for the New Programmer …"
+      "title": "TypeScript — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/TypeScript",
+      "snippet": "TypeScript est un langage de programmation libre développé par Microsoft qui a pour but d'améliorer et de sécuriser la production …"
+    },
+    {
+      "title": "Le point de départ pour apprendre TypeScript",
+      "url": "https://www.typescriptlang.org/fr/docs/",
+      "snippet": "Trouvez des projets de démarrage TypeScript : d'Angular à React ou Node.js et CLI."
     },
     {
       "title": "TypeScript - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/TypeScript",
       "snippet": "Prior to version 7, the TypeScript compiler, named tsc, was written in TypeScript and compiled into regular JavaScript, allowing it to …"
-    },
-    {
-      "title": "TypeScript Tutorial - GeeksforGeeks",
-      "url": "https://www.geeksforgeeks.org/typescript/typescript-tutorial/",
-      "snippet": "Sep 28, 2026 · TypeScript is a superset of JavaScript that adds extra features like static typing, interfaces, enums, and more. …"
     }
   ]
 }

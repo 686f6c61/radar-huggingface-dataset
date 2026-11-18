@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 74,
-  "downloads_30d": 11991,
+  "downloads_30d": 11912,
   "trending_score": 256.5,
   "parameters": 127627162814,
   "parameters_human": "127.63B",
@@ -59,31 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Banque & Assurances - Crédit Agricole",
-      "url": "https://www.credit-agricole.fr/",
-      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
-    },
-    {
-      "title": "Consulter mon compte en ligne - Crédit Agricole",
-      "url": "https://www.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/vos-comptes-en-ligne-a-vous-la-liberte.html",
-      "snippet": "Sep 17, 2024 · Cet article vous permettra de vous connecter à votre compte Crédit Agricole et vous informera sur les avantages d’un …"
-    },
-    {
-      "title": "Comptes, cartes et services du quotidien - Crédit Agricole",
-      "url": "https://www.credit-agricole.fr/particulier/compte.html",
-      "snippet": "Compte bancaire, cartes et services : trouvez l'offre Crédit Agricole qui vous correspond et bénéficiez jusqu'à 100€ de bienvenue."
-    },
-    {
-      "title": "Crédit Agricole d'Ile de France Banque & Assurances - Particulier",
-      "url": "https://www.credit-agricole.fr/ca-paris/particulier.html",
-      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
-    },
-    {
-      "title": "Assurances Pacifica : comment nous contacter ? - Crédit Agricole",
-      "url": "https://www.credit-agricole.fr/particulier/assurances/sinistres.html",
-      "snippet": "Pacifica, filiale du Crédit Agricole, vous présente les numéros à contacter selon votre besoin : sinistre, contrat, assistance…"
-    }
-  ]
+  "sources": []
 }

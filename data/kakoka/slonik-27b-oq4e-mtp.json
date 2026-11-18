@@ -5,7 +5,7 @@
   "author": "kakoka",
   "url": "https://huggingface.co/kakoka/Slonik-27B-oQ4e-mtp",
   "created_at": "2026-11-07T11:41:45.000Z",
-  "updated_at": "2026-11-08T12:37:36.000Z",
+  "updated_at": "2026-11-17T20:10:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

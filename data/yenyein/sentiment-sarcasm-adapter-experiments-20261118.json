@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "YenYein/sentiment-sarcasm-adapter-experiments-20261118",
+  "slug": "yenyein-sentiment-sarcasm-adapter-experiments-20261118",
+  "author": "YenYein",
+  "url": "https://huggingface.co/YenYein/sentiment-sarcasm-adapter-experiments-20261118",
+  "created_at": "2026-11-18T08:25:15.000Z",
+  "updated_at": "2026-11-18T08:36:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "sentiment-analysis",
+    "sarcasm",
+    "research",
+    "ko",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20882690454,
+  "storage_human": "20.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

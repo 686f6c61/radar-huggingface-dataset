@@ -5,7 +5,7 @@
   "author": "qda-lab",
   "url": "https://huggingface.co/qda-lab/QDA-Gemma-4-26B-A4B-W4A16",
   "created_at": "2026-11-11T05:01:44.000Z",
-  "updated_at": "2026-11-17T01:15:33.000Z",
+  "updated_at": "2026-11-18T08:35:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 140,
+  "downloads_30d": 166,
   "trending_score": 0,
   "parameters": 14386943566,
   "parameters_human": "14.39B",

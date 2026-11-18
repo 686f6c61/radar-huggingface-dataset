@@ -2,48 +2,56 @@
 
 ## Resumen
 
-El modelo `huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF` es una versión modificada del modelo multimodal `Qwen/Qwen3.8-27B` (desarrollado por Alibaba) en la que se ha aplicado la técnica de *abliteration* para eliminar los mecanismos de rechazo y censura del modelo original. El resultado es un modelo que genera respuestas sin filtros de seguridad, lo que lo hace útil para investigación en seguridad de IA, estudios de alineación o aplicaciones creativas donde se requiere una libertad total de expresión.
+Huihui-Qwen3.8-27B-abliterated-GGUF es una versión "abliterated" (sin rechazos) del modelo Qwen/Qwen3.8-27B de Alibaba Qwen, publicada por el usuario huihui-ai. La técnica de abliteración elimina direcciones de activación asociadas con rechazos en el modelo base, de modo que el modelo deja de negarse a responder ciertas peticiones. El resultado se distribuye en formato GGUF, cuantizado en múltiples variantes (desde IQ1_S hasta BF16), pensado para inferencia local con llama.cpp y derivados.
 
-Desarrollado por el usuario `huihui-ai`, conocido por publicar modelos "uncensored" en Hugging Face, este modelo se distribuye en formato GGUF, lo que permite su ejecución en entornos locales con herramientas como `llama.cpp` u Ollama. La técnica de abliteración se aplica sobre las capas del modelo base, reteniendo las primeras 15 capas sin modificar, y se describe como una implementación cruda y experimental (proof-of-concept) que no utiliza TransformerLens.
+El modelo conserva la arquitectura del base: 27.320.697.856 parámetros (unos 27,3 mil millones), pipeline image-text-to-text (capacidades multimodales de imagen y texto) y una ventana de contexto declarada de hasta 1.048.576 tokens mediante escalado YaRN sobre un contexto nativo de 262.144 tokens. El repositorio es notablemente grande (865,3 GB) porque incluye numerosas variantes de cuantización y series derivadas (UD, GSQ-RCO, Ternary, Swift, Underdog-Saluki, así como parches).
 
-El modelo hereda las capacidades del modelo base, que es de tipo *image-text-to-text* (procesa imágenes y texto), aunque no se proporcionan detalles sobre el número de parámetros, longitud de contexto o arquitectura interna en la información disponible. Es relevante para quienes buscan alternativas sin restricciones de contenido, pero con las advertencias éticas y legales correspondientes.
+Su relevancia actual radica en la combinación de tres factores: un modelo de ~27B con contexto muy largo y capacidades multimodales, la eliminación de rechazos para casos de uso de investigación y generación sin filtros, y un ecosistema de cuantizaciones extremas (incluyendo 2-bit ternario) que permite ejecución en hardware de consumo. La licencia Apache 2.0 facilita su uso comercial, aunque la abliteración introduce caveats de calidad y seguridad que conviene evaluar en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (basada en Qwen3.8-27B, multimodal image-text-to-text) |
-| Parametros totales | No disponible (el nombre sugiere 27B, no confirmado) |
-| Parametros activos | No aplicable (no se indica que sea MoE) |
-| Longitud de contexto | No disponible (el ejemplo de uso con llama.cpp usa `-c 262144`, pero no se confirma como máximo) |
-| Tipos de cuantizacion | GGUF (se menciona `Q4_K` en el ejemplo, pero no se lista el conjunto completo) |
-| Idiomas soportados | No disponibles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer con hybrid-attention (según tags del repo: hybrid-attention); detalles específicos no disponibles |
+| Parametros totales | 27.320.697.856 (~27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 nativo; hasta 1.048.576 con YaRN (rope-scale 4) según la model card |
+| Tipos de cuantizacion | IQ1_S hasta BF16; series Q2_K_L a Q6_K_L, Q8_0_L, UD, GSQ-RCO, Ternary (2-bit/PTQ1), mixes IQ2 |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (también se mencionan conversiones desde safetensors del base); incluye mmproj para visión |
+| Pipeline | image-text-to-text |
+| Modelo base | Qwen/Qwen3.8-27B |
+| Tamaño del repositorio | 865,3 GB |
+| Descargas | 4.292.911 |
+| Likes | 2296 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base `Qwen/Qwen3.8-27B`, que es un modelo multimodal capaz de procesar imágenes y texto. La modificación principal consiste en la aplicación de la técnica de *abliteration*, que identifica y elimina las direcciones en el espacio de activaciones responsables de los comportamientos de rechazo o negativa a responder. Este proceso se realiza mediante un script de transformación sobre los pesos del modelo, sin necesidad de reentrenamiento.
+El modelo deriva de Qwen/Qwen3.8-27B, un transformer de aproximadamente 27,3 mil millones de parámetros con capacidades multimodales (image-text-to-text). Los tags del repositorio indican atención híbrida (hybrid-attention) y presencia de componentes MTP (multi-token prediction) y visuales, que la model card afirma explícitamente que no han sido modificados durante la abliteración. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO del modelo base en la información proporcionada.
 
-Según la model card, las primeras 15 capas del modelo se conservan intactas (sin ablación), mientras que el resto se modifica para eliminar los patrones de rechazo. No se proporcionan detalles sobre el conjunto de datos de entrenamiento, el número de tokens utilizados o si se aplicaron técnicas como RLHF o DPO en el modelo original. La implementación se describe como "cruda" y de prueba de concepto, lo que sugiere que no se realizó una validación exhaustiva de su rendimiento tras la modificación.
+La innovación principal de esta ficha es el proceso de abliteración: se identifican y eliminan direcciones de activación responsables de los rechazos, aplicando la modificación selectivamente a determinadas capas. Según la model card, en la versión inicial se retuvieron sin abliterar las primeras 15 capas (para preservar rendimiento), y en la serie UD se abliteraron las capas 17 a 52 (indexación 0-based); en las series Swift, Ternary y Underdog-Saluki solo se abliteraron las capas 22 a 52. Además, ciertos tensores (token_embd, output, ffn_down, ssm_out, attn_output) se convierten a Q8_0 o BF16 en las cuantizaciones bajas para mejorar la calidad de respuesta, lo que produce artefactos como que Q2_K_L pueda ocupar más que Q3_K. Para las variantes ternarias se requiere un fork específico de llama.cpp (PrismML-Eng/llama.cpp); llama.cpp estándar no ejecuta esos ficheros.
 
 ## Capacidades
 
-- Generación de texto sin filtros de censura ni rechazo, gracias a la abliteración.
-- Procesamiento multimodal: entrada de imágenes y texto (heredado del modelo base).
-- Compatible con herramientas de inferencia locales como `llama.cpp` y Ollama.
-- Soporte de contexto largo (el ejemplo de `llama.cpp` usa 262144 tokens, aunque no se confirma si es el máximo oficial).
-- Capacidad de seguir instrucciones y generar respuestas en múltiples dominios, asumiendo que el modelo base las posee (no se especifica en la documentación).
-- No se documentan capacidades específicas como *tool calling*, *function calling* o *multi-step reasoning*; se infieren del modelo base, pero no están confirmadas.
+- Generación de texto y razonamiento conversacional multi-turno.
+- Procesamiento de imagen y texto (pipeline image-text-to-text), con proyector multimodal mmproj incluido en el repo.
+- Contexto largo: hasta 262.144 tokens nativo y hasta 1.048.576 con escalado YaRN.
+- Generación sin rechazos (uncensored) gracias a la abliteración, orientada a investigación y casos donde el modelo base declinaría responder.
+- Soporte de cuantizaciones extremas, incluyendo ternario/2-bit, para ejecución en dispositivo (on-device) con CUDA y Metal.
+- Compatibilidad con endpoints (tag endpoints_compatible) y con llama-server/llama.cpp.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no confirmado explícitamente en la información disponible.
 
 ## Casos de uso
 
-- Investigación en seguridad de IA: estudiar cómo los modelos generan contenido controvertido o sensible cuando se eliminan los mecanismos de rechazo, para diseñar mejores salvaguardas.
-- Generación creativa sin restricciones: escritura de ficción, poesía o guiones que aborden temas tabú o políticamente incorrectos sin que el modelo se niegue.
-- Pruebas de estrés en sistemas de moderación: evaluar la robustez de filtros de contenido generando respuestas que deberían ser bloqueadas.
-- Desarrollo de asistentes de rol (roleplay) con libertad total de diálogo, incluyendo escenarios adultos o de fantasía.
-- Análisis de sesgos y comportamientos no alineados: observar qué respuestas emergen cuando el modelo no tiene capas de seguridad, útil para auditorías de alineación.
-- Experimentación educativa en entornos controlados: demostrar los efectos de la abliteración en el comportamiento de un LLM, siempre bajo supervisión.
+- Investigación sobre alineación y rechazos: el modelo permite estudiar cómo la abliteración afecta al comportamiento de rechazo y a la calidad general, comparando con el base Qwen3.8-27B en experimentos controlados.
+- Generación creativa sin filtros: escritura de ficción, guiones o contenido con temáticas que el modelo base rechazaría, usando las variantes Q4_K_L o Q5_K_L para equilibrar calidad y tamaño.
+- Procesamiento de documentos largos con imágenes: análisis de informes, manuales o PDF escaneados de hasta cientos de miles de tokens, aprovechando el contexto extendido con YaRN y el proyector visual.
+- Despliegue local en estación de trabajo: con las variantes BF16 o Q8_0_L en 2× RTX 6000 Pro (según el ejemplo de la model card) para servir un endpoint compatible con OpenAI vía llama-server.
+- Ejecución en hardware de consumo: las variantes IQ1_S hasta Q4_K_L permiten probar el modelo en GPU consumer, aunque con degradación de calidad esperable en las cuantizaciones más agresivas.
+- Experimentación con cuantización ternaria/2-bit: las series Ternary, procedentes de prism-ml/Ternary-Bonsai-2-27B-gguf, sirven para validar kernels de atención híbrida ternaria en el fork de llama.cpp de PrismML.
+- Ajuste fino o destilación posterior: partir de los pesos abliterated (o del parche patch-unsloth) para entrenar variantes especializadas sin rechazos en dominios concretos.
 
 ## Benchmarks y rendimiento
 
@@ -51,28 +59,45 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo GGUF de aproximadamente 27B de parámetros (según el nombre), se estima que requiere entre 16 y 32 GB de VRAM en cuantización Q4_K, dependiendo de la longitud de contexto.
-- GPU recomendadas: RTX 3090/4090 (24 GB VRAM) para cuantizaciones ligeras, o A100/H100 para mayores precisiones y contextos largos.
-- Puede ejecutarse en CPU con suficiente RAM, aunque con menor rendimiento.
-- Herramientas de despliegue: `llama.cpp`, Ollama (versión reciente), y cualquier runtime compatible con GGUF.
-- No se proporcionan datos de latencia o throughput en la documentación.
+- VRAM estimada para BF16: ~54,6 GB de pesos (27,3B × 2 bytes) más overhead de contexto y proyector visual; la model card indica 2× RTX 6000 Pro para BF16 con contexto de 1M.
+- VRAM estimada para Q8_0_L: ~27-29 GB; viable en una GPU de 32 GB o en dos de 24 GB.
+- VRAM estimada para Q4_K_L: ~15-17 GB; cabe en RTX 4090 (24 GB) y en GPUs de 16 GB con contexto moderado.
+- VRAM estimada para Q2_K_L / IQ2: ~9-11 GB; cabe en GPUs consumer de 12 GB, con pérdida de calidad notable.
+- Variantes ternarias/2-bit: tamaño reducido, pero requieren el fork PrismML-Eng/llama.cpp; no funcionan en llama.cpp estándar.
+- Opciones de despliegue: llama.cpp (llama-server), Ollama (si se importan los GGUF), y cualquier runtime compatible con GGUF; el repo declara compatibilidad con endpoints.
+- Aceleración: CUDA y Metal según los tags; el ejemplo de la model card usa -ngl 99, flash attention (-fa on), caché K/V en BF16 y rope-scaling yarn.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Se sugiere comparar con otros modelos abliterados de la misma familia (por ejemplo, versiones abliteradas de Llama o Mistral), pero no hay datos concretos para establecer una comparativa fiable.
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Huihui-Qwen3.8-27B-abliterated-GGUF | ~27,3B | 262K nativo / 1M con YaRN | Imagen + texto | Apache 2.0 | GGUF (múltiples cuantizaciones) | Sin rechazos; series derivadas y parches |
+| Qwen/Qwen3.8-27B (base) | ~27,3B | 262K nativo / 1M con YaRN | Imagen + texto | Apache 2.0 | safetensors, GGUF (vía terceros) | Modelo original con alineación y rechazos |
+| unsloth/Qwen3.8-27B-GGUF | ~27,3B | Igual que el base | Imagen + texto | Apache 2.0 | GGUF (UD, DW) | Cuantizaciones dinámicas del base, sin abliterar |
+| prism-ml/Ternary-Bonsai-2-27B-gguf | ~27B | no disponible | no disponible | no disponible en la información | GGUF ternario | Requiere fork de llama.cpp de PrismML |
 
 ## Limitaciones y advertencias
 
-- **Riesgo de contenido sensible o controvertido**: el modelo puede generar material inapropiado, ofensivo o ilegal, ya que se han eliminado los filtros de seguridad.
-- **No apto para todos los públicos**: sus salidas pueden ser inadecuadas para menores, entornos públicos o aplicaciones que requieran alta seguridad.
-- **Responsabilidad legal y ética**: el usuario es el único responsable del uso que haga del modelo, y debe cumplir con las leyes locales y estándares éticos.
-- **Uso experimental**: se recomienda emplearlo solo en investigación, pruebas o entornos controlados, evitando su uso en producción o aplicaciones comerciales.
-- **Sin garantías de seguridad**: a diferencia de los modelos estándar, este no ha pasado por una optimización rigurosa de seguridad; el autor declina cualquier responsabilidad por consecuencias derivadas de su uso.
-- **Falta de documentación técnica**: no se especifican parámetros exactos, contexto máximo, ni resultados de benchmarks, lo que dificulta su evaluación rigurosa.
+- La abliteración es descrita por el propio autor como una implementación "cruda" y de prueba de concepto; puede degradar capacidades del modelo base.
+- Solo se abliteran determinadas capas (15 primeras retenidas en la versión inicial; 17-52 o 22-52 según la serie), por lo que el comportamiento puede ser inconsistente entre variantes.
+- Riesgo de alucinación y de respuestas dañinas o inexactas al haberse eliminado los rechazos; no se han publicado evaluaciones de seguridad.
+- Las cuantizaciones por debajo de Q8_0 no son estándar (tensores convertidos a Q8_0 o BF16), lo que altera tamaños y puede confundir en la planificación de almacenamiento.
+- Las series Ternary, Swift, Underdog-Saluki y GSQ-RCO son experimentales y pueden incluir avisos (disclaimer) adicionales; los pesos ternarios exigen un fork específico de llama.cpp.
+- El repositorio ocupa 865,3 GB; descargar el repo completo es inviable en la mayoría de entornos, conviene seleccionar solo el fichero GGUF necesario.
+- Idiomas soportados no documentados; el rendimiento multilingüe puede diferir del base.
+- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal y ética del contenido generado sin filtros recae en el desplegador.
+- No hay benchmarks publicados que cuantifiquen la pérdida de calidad respecto al modelo base.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF)
-- [Repositorio de la técnica de abliteración (remove-refusals-with-transformers)](https://github.com/Sumandora/remove-refusals-with-transformers)
-- [Modelo en Ollama](https://ollama.com/huihui_ai/Qwen3.8-abliterated)
-- [Repositorio de llama.cpp](https://github.com/ggml-org/llama.cpp)
+- Repositorio Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Cuantizaciones del base (Unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Repositorio de la técnica de abliteración: https://github.com/Sumandora/remove-refusals-with-transformers
+- Serie ternaria de origen: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
+- Fork de llama.cpp para kernels ternarios: https://github.com/PrismML-Eng/llama.cpp
+- GSQ-RCO de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
+- Swift-1.5 de ukisai: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
+- Underdog-Saluki de ConwayResearch: https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0
+- Instrucciones del parche Unsloth: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF/tree/main/patch-unsloth

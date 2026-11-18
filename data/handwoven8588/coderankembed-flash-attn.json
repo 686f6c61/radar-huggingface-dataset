@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 24208,
+  "downloads_30d": 24295,
   "trending_score": 0,
   "parameters": 136731648,
   "parameters_human": "136.7M",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Gemini",
-      "url": "https://gemini.google.com/",
-      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
-    },
-    {
-      "title": "Google Gemini",
-      "url": "https://gemini.google.com/?hl=fr",
-      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …"
-    },
-    {
-      "title": "Gemini – Your AI assistant from Google",
-      "url": "https://gemini.google/us/about/?hl=en",
-      "snippet": "Start your day with a personalized digest from Gemini. Your Daily Brief understands your rhythms and personal preferences to …"
-    },
-    {
-      "title": "Gemini — Google DeepMind",
-      "url": "https://deepmind.google/models/gemini/",
-      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
-    },
-    {
-      "title": "Gemini, l'assistant IA de Google",
-      "url": "https://gemini.google/fr/about/?hl=fr",
-      "snippet": "Typographie, retour haptique, réponses visuelles et couleurs éclatantes : l'interface immersive de Gemini pose les bases d'un …"
-    }
-  ]
+  "sources": []
 }

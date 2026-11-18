@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Aikimi/Qwen3.8-27B-Yoin-JP-Novel-GGUF",
+  "slug": "aikimi-qwen3-8-27b-yoin-jp-novel-gguf",
+  "author": "Aikimi",
+  "url": "https://huggingface.co/Aikimi/Qwen3.8-27B-Yoin-JP-Novel-GGUF",
+  "created_at": "2026-11-18T10:48:23.000Z",
+  "updated_at": "2026-11-18T10:51:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "japanese",
+    "creative-writing",
+    "not-for-all-audiences",
+    "text-generation",
+    "ja",
+    "base_model:mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-GGUF",
+    "base_model:finetune:mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16547401632,
+  "storage_human": "16.5 GB",
+  "context_length": 262144,
+  "base_model": "mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

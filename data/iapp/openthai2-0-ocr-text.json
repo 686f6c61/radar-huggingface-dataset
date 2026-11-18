@@ -5,7 +5,7 @@
   "author": "iapp",
   "url": "https://huggingface.co/iapp/OpenThai2.0-OCR-Text",
   "created_at": "2026-10-02T14:51:01.000Z",
-  "updated_at": "2026-11-14T11:29:31.000Z",
+  "updated_at": "2026-11-18T04:59:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -27,7 +27,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 79,
+  "likes": 93,
   "downloads_30d": 3216,
   "trending_score": 52,
   "parameters": null,
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "iapp/OpenThai2.1-OCR-Text-20261118",
+  "renamed_at": "2026-11-18T07:15:34.641Z",
   "benchmarks": [],
   "sources": [
     {

@@ -2,76 +2,94 @@
 
 ## Resumen
 
-Spark-X2.5-4B es un modelo de lenguaje compacto de 4.000 millones de parámetros desarrollado por XHToken, diseñado para tareas generales como conversación, escritura, traducción, razonamiento, código, uso de herramientas y flujos de agente. Su característica más destacada es una ventana de contexto nativa de 1.048.576 tokens (1M), lo que permite procesar documentos muy extensos o conversaciones de larga duración sin truncamiento. El modelo se distribuye bajo licencia Apache-2.0 y soporta inglés y chino.
+Spark-X2.5-4B es un modelo de lenguaje de propósito general de 4.112 millones de parámetros desarrollado por XHToken, distribuido en formato GGUF por el usuario abenzerps. Está diseñado para tareas de razonamiento, generación de código, uso de herramientas y flujos de trabajo agénticos, con una ventana de contexto nativa de 1.048.576 tokens (1M). El repositorio que nos ocupa contiene únicamente las cuantizaciones GGUF del modelo base, no los pesos originales.
 
-La versión GGUF aquí descrita, publicada por abenzerps, proporciona cuantizaciones listas para usar con llama.cpp y otros motores compatibles con GGUF, facilitando su despliegue en hardware de gama media. Incluye cinco niveles de cuantización (Q4_0, Q4_K_M, Q5_K_M, Q6_K y Q8_0) con tamaños de archivo que van desde 2,41 GB hasta 4,38 GB, lo que permite elegir el equilibrio entre calidad y consumo de memoria.
+La relevancia de esta ficha radica en dos factores: por un lado, el contexto de 1M tokens en un modelo de solo 4B parámetros, lo que lo sitúa en una categoría poco habitual donde el coste de inferencia se mantiene bajo mientras se procesan documentos muy extensos; por otro, la disponibilidad de cuantizaciones ligeras (desde 2,41 GB en Q4_0) que permiten ejecutarlo en hardware de consumo.
+
+El modelo base está publicado bajo licencia Apache-2.0, soporta inglés y chino, y requiere llama.cpp b10828 o posterior, ya que la arquitectura `spark2_5` se incorporó oficialmente en esa compilación. Las cuantizaciones incluidas van de Q4_0 a Q8_0 e incluyen la plantilla de chat del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo transformer, detalles no especificados) |
-| Parametros totales | 4.112.079.360 (4,1 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | spark2_5 (soporte oficial en llama.cpp desde b10828); detalles internos no disponibles |
+| Parametros totales | 4.112.079.360 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | 1.048.576 tokens (1M) |
 | Tipos de cuantizacion | Q4_0, Q4_K_M, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | Inglés, chino |
+| Idiomas soportados | en, zh |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
-
-Nota: los parámetros totales corresponden al modelo original en safetensors según la información proporcionada.
+| Formato de pesos | GGUF (repositorio de cuantizaciones); pesos originales del modelo base en formato no especificado |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles específicos sobre la arquitectura interna del modelo (número de capas, dimensión de atención, tipo de atención, etc.) en la información proporcionada. Se sabe que es un modelo de 4.000 millones de parámetros, probablemente un transformer decoder denso, pero no se confirma. Tampoco se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados o el método de alineación (RLHF, DPO, etc.). La model card del GGUF menciona que el modelo está diseñado para razonamiento, código, tool use y agentes, y que los benchmarks reportados por XHToken se obtuvieron en "modo thinking", lo que sugiere que el modelo puede tener una capacidad de razonamiento extendido, aunque no se especifica cómo se activa.
+La información disponible no detalla la arquitectura interna del modelo base más allá de la etiqueta `spark2_5` que identifica su tipo en llama.cpp. No se especifica si se trata de un transformer denso, un modelo híbrido o una variante con atención lineal; tampoco se documentan el número de capas, la dimensión oculta ni la configuración de cabezas de atención. El tamaño de 4.112 millones de parámetros y el contexto nativo de 1M tokens son los únicos datos estructurales confirmados.
+
+Tampoco se han publicado en la información proporcionada detalles sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüismo), ni sobre si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. La model card del repositorio GGUF remite al modelo base para estos datos y solo menciona que los benchmarks reportados corresponden al modo "thinking", lo que sugiere la existencia de un modo de razonamiento extendido, aunque su funcionamiento no se describe.
 
 ## Capacidades
 
-- Generación de texto general: conversación, escritura creativa, resumen, traducción (inglés y chino).
-- Razonamiento y resolución de problemas: el modelo está optimizado para tareas de razonamiento lógico y matemático, con un modo "thinking" que mejora la calidad de las respuestas (según los benchmarks reportados).
-- Generación de código: soporte para programación en diversos lenguajes, aunque no se especifican cuáles.
-- Tool calling / function calling: el modelo está diseñado para uso de herramientas, lo que permite integrarlo en flujos que requieren llamadas a APIs o ejecución de funciones.
-- Capacidades de agente: puede participar en flujos de trabajo multi-paso y agentes autónomos gracias a su ventana de contexto de 1M tokens, que permite mantener historial largo.
-- Multilingüe: inglés y chino, con posible transferencia a otros idiomas no confirmada.
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento en modo "thinking" (los benchmarks citados se reportan en este modo).
+- Generación de código, según la descripción del modelo base como modelo para "reasoning, coding, tool use".
+- Uso de herramientas y function calling, mencionado explícitamente en la model card.
+- Flujos de trabajo agénticos y razonamiento multi-paso.
+- Procesamiento de contextos muy largos de hasta 1M tokens, útil para documentos extensos o conversaciones prolongadas.
+- Compatibilidad con la plantilla de chat original incluida en el repositorio (`chat_template.jinja`).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
 
 ## Casos de uso
 
-- Análisis de documentos extensos: gracias a su contexto de 1M tokens, puede procesar libros completos, informes anuales o expedientes legales sin necesidad de dividirlos, manteniendo la coherencia global.
-- Asistente de programación en IDE: integrado como autocompletado o chat, puede ayudar a escribir, revisar y depurar código, aprovechando su capacidad de tool calling para ejecutar comandos o consultar repositorios.
-- Agente de atención al cliente multilingüe: con su soporte de inglés y chino y su contexto largo, puede gestionar conversaciones de soporte técnico con historial completo, reduciendo la pérdida de información.
-- Traducción automática de alta calidad: para pares inglés-chino y viceversa, con capacidad de mantener el contexto de documentos largos.
-- Generación de informes y documentación técnica: puede redactar documentación a partir de especificaciones o código fuente, manteniendo consistencia en proyectos extensos.
-- Automatización de flujos de trabajo con agentes: combinado con herramientas de orquestación, puede ejecutar tareas multi-paso como investigación, recopilación de datos y generación de resúmenes, gracias a su contexto amplio y soporte de tool calling.
+- Análisis de documentación técnica extensa: con 1M tokens de contexto, el modelo puede ingerir manuales, especificaciones o bases de código completas en una sola pasada y responder preguntas sobre ellos sin necesidad de fragmentación ni recuperación externa.
+- Asistencia en programación en local: las cuantizaciones Q4_K_M (2,60 GB) y Q5_K_M (2,98 GB) caben en GPUs de consumo, lo que permite integrar el modelo en editores o terminales mediante llama.cpp para autocompletado, explicación de código y generación de tests.
+- Agentes automatizados con tool calling: la capacidad declarada de uso de herramientas permite construir agentes que consulten APIs, ejecuten comandos o encadenen pasos de razonamiento, con la ventaja de un modelo pequeño que reduce el coste por llamada.
+- Resumen y extracción de información en corpus largos: actas, expedientes o informes de cientos de miles de tokens pueden procesarse en una única ventana, evitando la pérdida de contexto entre fragmentos.
+- Despliegue en entornos con recursos limitados: la versión Q4_0 de 2,41 GB permite ejecución en CPU o en GPUs con poca VRAM, adecuada para prototipos, demos o estaciones de trabajo sin acelerador dedicado.
+- Chat multilingüe inglés-chino: para productos dirigidos a ambos mercados, el modelo cubre conversación y generación en los dos idiomas declarados sin necesidad de un modelo mayor.
+- Procesamiento por lotes en pipelines de datos: el tamaño reducido y la compatibilidad con llama.cpp facilitan ejecutar tareas de etiquetado, clasificación o transformación de texto a gran escala en hardware modesto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información proporcionada. La model card del GGUF incluye una imagen con resultados reportados por XHToken para el modelo base en modo "thinking", pero no se han transcrito los valores. Por lo tanto, no es posible presentar una tabla comparativa con datos concretos.
+La model card del repositorio incluye una imagen (`assets/benchmark.png`) con resultados reportados por XHToken para el modelo base en modo thinking, pero los valores numéricos no están disponibles en el texto proporcionado. No se han publicado cifras concretas de MMLU, HumanEval, GSM8K u otras pruebas en la información disponible, por lo que no se presenta tabla comparativa.
+
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantización y del contexto utilizado. Para la cuantización Q4_K_M (2,60 GB de pesos), se necesitan al menos 4-6 GB de VRAM para un contexto moderado (por ejemplo, 8K-16K tokens). Con contexto de 1M tokens, la memoria para el estado de atención (KV cache) se vuelve muy elevada, por lo que en la práctica se recomienda reducir el contexto a valores como 128K (como en el ejemplo de uso con `-c 131072`).
-- GPUs recomendadas: para uso local con Q4_K_M o Q5_K_M, una GPU con 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) puede funcionar con contextos cortos. Para contextos largos (más de 32K), se necesitan GPUs con 16 GB o más (RTX 4090, A100, etc.).
-- Compatibilidad con consumer GPU: sí, las cuantizaciones Q4_0 y Q4_K_M caben en GPUs de gama media (6-8 GB) con contextos reducidos. Las cuantizaciones más altas (Q6_K, Q8_0) requieren más VRAM.
-- Opciones de despliegue: llama.cpp (compatible con GGUF), Ollama (si se añade el modelo), vLLM (con conversión a safetensors), TGI (con conversión), etc.
-- Latencia y throughput: no se dispone de datos medidos. En general, un modelo de 4B en una GPU moderna (RTX 4090) puede generar entre 30 y 60 tokens por segundo con cuantización Q4_K_M, pero depende de la implementación y el contexto.
+- VRAM estimada para inferencia (pesos + overhead de contexto): Q4_0 ~2,4 GB, Q4_K_M ~2,6 GB, Q5_K_M ~3,0 GB, Q6_K ~3,4 GB, Q8_0 ~4,4 GB. A estas cifras hay que sumar la memoria de la caché KV, que crece con la longitud de contexto y puede ser considerable si se explota la ventana de 1M tokens.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB para las cuantizaciones mayores con contextos moderados; A100 o H100 para contextos muy largos o despliegues concurrentes.
+- Cabe en GPU de consumo: sí, todas las cuantizaciones caben en GPUs con 6-8 GB de VRAM para contextos cortos; para contextos de cientos de miles de tokens se necesita más memoria por la caché KV.
+- Opciones de despliegue: llama.cpp (requiere b10828 o superior), y por extensión cualquier frontend basado en él (Ollama, LM Studio, servidores compatibles con la API de OpenAI mediante llama-server). No se confirma soporte en vLLM ni TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con modelos similares. El modelo no es ampliamente conocido y no se han publicado comparaciones formales. Se podría comparar con otros modelos de ~4B como Llama-3.2-3B, Qwen2.5-4B o Gemma-2-4B, pero no hay datos de rendimiento disponibles para Spark-X2.5-4B en la información proporcionada.
+No se dispone de datos de benchmarks del modelo que permitan una comparación cuantitativa fiable. A continuación se comparan únicamente características estructurales con alternativas de tamaño similar.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Spark-X2.5-4B (GGUF) | 4,1B | 1M | Apache-2.0 | GGUF | Contexto muy largo, en/zh, tool calling |
+| Qwen2.5-3B / 7B | 3B / 7B | 32K (128K en variantes) | Apache-2.0 (mayoría) | safetensors, GGUF | Contexto menor, amplio ecosistema |
+| Llama 3.2 3B | 3,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Licencia con restricciones, contexto menor |
+| Phi-3.5-mini | 3,8B | 128K | MIT | safetensors, GGUF | Buen rendimiento en razonamiento, contexto menor |
+
+La ventaja diferencial del Spark-X2.5-4B es la ventana de 1M tokens frente a los 32K-128K de sus competidores directos; la desventaja es la falta de datos públicos de rendimiento y un ecosistema más reducido.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: al ser un modelo de 4B, puede presentar alucinaciones en temas especializados o cuando se le pide información factual precisa. No se han publicado evaluaciones de sesgo.
-- Limitaciones de idioma: aunque soporta inglés y chino, su rendimiento en otros idiomas no está garantizado.
-- Contexto largo: aunque la ventana nativa es de 1M tokens, en la práctica el uso de contextos muy largos requiere cantidades enormes de memoria (KV cache) y puede degradar la calidad de las respuestas si el modelo no fue entrenado específicamente para manejar esa longitud de forma óptima.
-- Licencia: Apache-2.0 permite uso comercial y modificación, pero hay que revisar los términos del modelo base, que también es Apache-2.0 según la model card.
-- Cuantizaciones: las versiones GGUF pueden presentar una ligera degradación de calidad en comparación con el modelo en precisión completa, especialmente en tareas de razonamiento complejo.
+- No se han publicado resultados de benchmarks verificables en la información disponible; el rendimiento real en tareas concretas debe validarse por el usuario.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Riesgo de alucinación inherente a modelos de 4B parámetros, especialmente en tareas de razonamiento complejo o contextos muy largos.
+- La ventana de 1M tokens no garantiza un uso efectivo de toda la información; la degradación en contextos extremos no está documentada.
+- Requiere llama.cpp b10828 o superior; aplicaciones con runtime embebido deben actualizarse o fallarán al cargar el modelo.
+- El repositorio contiene solo cuantizaciones GGUF; para fine-tuning o conversión a otros formatos hay que acudir al modelo base.
+- Aunque la licencia Apache-2.0 permite uso comercial, conviene revisar la model card del modelo base por si añade condiciones adicionales.
+- El consumo de memoria de la caché KV con contextos de cientos de miles de tokens puede superar con creces el de los pesos, lo que limita el despliegue en GPUs de consumo.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B
-- Repositorio GitHub de XHToken (Spark-X2.5): https://github.com/XHToken/Spark-X2.5
-- Búsqueda de modelos cuantizados relacionados: https://huggingface.co/models?other=base_model:quantized:XHToken/Spark-X2.5-4B
-
-Nota: la información sobre arquitectura, entrenamiento y benchmarks es limitada. Se recomienda consultar la documentación oficial de XHToken para obtener detalles adicionales.
+- Repositorio GGUF: https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF
+- Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
+- PR de soporte en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/27868
+- Solicitudes de modelos del autor: https://abenzerps.com/request-a-model/
+- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

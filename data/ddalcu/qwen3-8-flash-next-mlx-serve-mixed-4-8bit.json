@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 59,
-  "downloads_30d": 6905,
+  "downloads_30d": 6872,
   "trending_score": 11,
   "parameters": 133195562899,
   "parameters_human": "133.20B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit · Hugging Face",
-      "url": "https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
-      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
-      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. The model outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next-MLX-mixed-4_8bit - Hugging Face",
-      "url": "https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-mixed-4_8bit",
-      "snippet": "pipenetwork / Qwen3.8-Flash-Next-MLX-mixed-4_8bit like 0 Text Generation MLX Safetensors qwen4_exp apple-silicon mixture-of-experts 4-bit precision conversational License:qwen-community-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Releases: ddalcu/mlx-serve - GitHub",
-      "url": "https://github.com/ddalcu/mlx-serve/releases",
-      "snippet": "Native LLM inference server for Apple Silicon. OpenAI + Anthropic API compatible. No Python. Includes MLX Core macOS app with chat, agent mode, and tool calling. - ddalcu/mlx-serve"
-    }
-  ]
+  "sources": []
 }

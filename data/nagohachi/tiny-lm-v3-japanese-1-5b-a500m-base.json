@@ -5,7 +5,7 @@
   "author": "nagohachi",
   "url": "https://huggingface.co/nagohachi/tiny-lm-v3-japanese-1.5b-a500m-base",
   "created_at": "2026-11-15T09:20:15.000Z",
-  "updated_at": "2026-11-15T09:21:52.000Z",
+  "updated_at": "2026-11-18T02:29:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

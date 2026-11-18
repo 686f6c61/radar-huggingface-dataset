@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "RadiOtter/RadMatch-M3",
+  "slug": "radiotter-radmatch-m3",
+  "author": "RadiOtter",
+  "url": "https://huggingface.co/RadiOtter/RadMatch-M3",
+  "created_at": "2026-11-18T06:58:11.000Z",
+  "updated_at": "2026-11-18T07:01:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "bge-m3",
+    "embeddings",
+    "retrieval",
+    "radiology",
+    "medical",
+    "feature-extraction",
+    "en",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2297421744,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,76 +2,138 @@
 
 ## Resumen
 
-El modelo **genz-translator** es un transformer decoder-only de aproximadamente 20 millones de parámetros, desarrollado por Sankar-2910, que traduce jerga propia de la generación Z (expresiones como "bro that fit is so mid ngl") a inglés estándar claro. Se trata de un modelo entrenado **completamente desde cero** —inicialización aleatoria de pesos, sin base preentrenada ni fine-tuning—, lo que lo convierte en un ejemplo de entrenamiento eficiente para una tarea muy específica con un dataset reducido.
+GenZ Translator es un modelo de lenguaje compacto de 29,65 millones de parámetros desarrollado por el usuario Sankar-2910 y publicado en Hugging Face. Su propósito es muy específico: traducir jerga de la Generación Z y abreviaturas propias de internet a un inglés estándar, claro y conversacional, preservando el significado, la emoción y el contexto original. No es un asistente de propósito general, sino un traductor especializado de una sola tarea.
 
-La arquitectura sigue la configuración de Llama (6 capas, tamaño oculto 384, 6 cabezas de atención, embeddings atados) y utiliza un tokenizador BPE a nivel de byte propio con vocabulario de 8000 tokens. La longitud máxima de contexto es de 384 tokens, elegida a partir del percentil 99 de las longitudes de entrenamiento. El modelo se distribuye tanto en formato safetensors como en GGUF (cuantizaciones f16, q4_k_m y q8_0), lo que facilita su uso con llama.cpp y Ollama.
+La versión 2, que es la disponible actualmente, continúa el entrenamiento desde el checkpoint original con datos adicionales de traducción limpiados y ejemplos curados. El modelo emplea una arquitectura Transformer decoder-only de estilo Llama, con 7 capas, tamaño oculto de 448, 7 cabezas de atención y una longitud de contexto de tan solo 384 tokens. El vocabulario es de 8.000 tokens con un tokenizador BPE byte-level personalizado, y los pesos se distribuyen en formato safetensors.
 
-Su relevancia radica en demostrar que un modelo pequeño entrenado desde cero puede abordar una tarea de traducción especializada con recursos mínimos, aunque con limitaciones claras en generalización y fluidez fuera de su dominio de entrenamiento. No está diseñado como un chat general ni como asistente de instrucciones, sino únicamente para la traducción de jerga Gen Z a inglés estándar.
+Su relevancia radica en su tamaño extremadamente reducido, que permite inferencia local en hardware muy modesto, y en su enfoque de nicho frente a los grandes modelos generalistas. Es útil para experimentación con modelos compactos, para preprocesar mensajes informales en pipelines de moderación o análisis de redes sociales, y como caso de estudio de ajuste fino especializado. La licencia Apache 2.0 facilita su uso comercial, aunque sus limitaciones de contexto y generalización son notables.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (configuración LlamaConfig) |
-| Parametros totales | 20.304.768 (según safetensors) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer decoder-only estilo Llama |
+| Parámetros totales | 29.653.568 |
+| Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | 384 tokens |
-| Tipos de cuantizacion | f16, q4_k_m, q8_0 (en formato GGUF) |
-| Idiomas soportados | Inglés (entrada y salida) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (base) y GGUF (para llama.cpp/Ollama) |
+| Tipos de cuantización | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF ni cuantizadas) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
+| Capas | 7 |
+| Tamaño oculto | 448 |
+| Cabezas de atención | 7 |
+| Cabezas KV | 7 |
+| Tamaño intermedio | 1.792 |
+| Vocabulario | 8.000 |
+| Tokenizador | BPE byte-level personalizado |
+| Framework | PyTorch / Transformers |
+| Tarea prevista | traducción de jerga en un solo turno |
+| Tamaño del repositorio | 3,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only con configuración de Llama: 6 capas, tamaño oculto de 384 dimensiones y 6 cabezas de atención, con embeddings atados (tied embeddings). Utiliza un tokenizador BPE a nivel de byte personalizado, con un vocabulario de 8000 tokens, entrenado exclusivamente sobre el dataset de la tarea. La longitud máxima de secuencia es de 384 tokens, determinada a partir del percentil 99 de las longitudes de tokens en el conjunto de entrenamiento.
+El modelo es un Transformer decoder-only de estilo Llama con 7 capas, dimensión oculta de 448, 7 cabezas de atención (con 7 cabezas KV, es decir, sin grouped-query attention) y tamaño intermedio de 1.792 en las capas feed-forward. Usa embeddings de entrada y pesos de la cabeza de salida separados (`tie_word_embeddings=False`) y un tokenizador BPE byte-level propio con un vocabulario de 8.000 tokens. La longitud de contexto es de 384 tokens, muy corta y adecuada solo para mensajes breves.
 
-El entrenamiento se realizó desde cero, con inicialización aleatoria de pesos, sin utilizar ningún modelo preentrenado como base ni aplicar fine-tuning posterior. El dataset consta de aproximadamente 139.074 pares de instrucción/entrada/salida, con dos tipos fijos de instrucción: traducción de una frase única y traducción de un párrafo. El conjunto se dividió en 90/5/5 para entrenamiento, validación y prueba, con semilla fija y estratificación por tipo de instrucción. No se aplicaron técnicas de RLHF ni DPO; se trata de un entrenamiento supervisado estándar.
+El entrenamiento de la versión original se realizó desde cero, sin partir de pesos preentrenados de Meta Llama, Qwen o Mistral, usando un conjunto de datos especializado de jerga Gen Z traducida a inglés. La versión 2 continúa el ajuste fino desde el checkpoint original con datos adicionales depurados y ejemplos curados centrados en abreviaturas, jerga y preguntas sobre el significado de expresiones. No se documenta el número total de tokens de entrenamiento, la composición exacta del dataset ni el uso de RLHF o DPO; la model card solo reporta pérdidas de validación durante el ajuste fino de la v2.
 
 ## Capacidades
 
-- Traducción de jerga Gen Z a inglés estándar, tanto en frases cortas como en párrafos.
-- Generación de texto condicionada por instrucciones del tipo "Translate the following Gen Z slang sentence into clear, standard English".
-- Soporte de entrada con contexto limitado a 384 tokens, suficiente para párrafos breves.
-- No dispone de tool calling, ni capacidades de agente, ni razonamiento multi-paso.
-- No es multilingüe: solo trabaja con inglés (y la variante de jerga específica).
-- No incluye capacidades de visión, audio ni modos de pensamiento extendido.
+- Traducción de abreviaturas comunes de internet (por ejemplo, `WYD`, `tbh`, `omw`, `ty`, `np`) a inglés estándar.
+- Reescritura de mensajes informales en inglés conversacional claro.
+- Interpretación de expresiones comunes de la Generación Z.
+- Procesamiento de leyendas y mensajes cortos de redes sociales.
+- Respuesta a preguntas sobre el significado de expresiones de jerga.
+- Traducción de párrafos breves, siempre que quepan en el contexto de 384 tokens.
+- No soporta tool calling ni function calling.
+- No está diseñado para razonamiento multi-paso ni para uso como agente.
+- Capacidad multilingüe limitada al inglés; no se documenta soporte de otros idiomas.
+- No dispone de modo de razonamiento (thinking mode), visión ni audio.
 
 ## Casos de uso
 
-- **Asistencia para padres y educadores**: puede integrarse en una aplicación de mensajería o web para que adultos traduzcan mensajes de adolescentes que usan jerga Gen Z, facilitando la comunicación intergeneracional.
-- **Normalización de texto para análisis de redes sociales**: como preprocesador en pipelines de NLP para convertir comentarios informales y llenos de jerga en inglés estándar antes de aplicar análisis de sentimiento o topic modeling.
-- **Subtitulado y transcripción**: en herramientas de transcripción automática de vídeos o podcasts donde aparezcan conversaciones coloquiales de jóvenes, el modelo puede generar versiones normalizadas de los diálogos.
-- **Enseñanza de inglés como segunda lengua**: los estudiantes pueden usar el modelo para entender expresiones coloquiales modernas que no aparecen en los libros de texto, con ejemplos prácticos de traducción.
-- **Moderación de contenido**: en plataformas sociales, el modelo puede ayudar a interpretar mensajes con jerga que podrían contener lenguaje ofensivo o inapropiado, traduciéndolos a un formato comprensible para los moderadores.
-- **Desarrollo de chatbots especializados**: integrado en un chatbot de atención al cliente orientado a un público joven, el modelo puede traducir las consultas informales a un formato estándar para que el sistema de respuesta los procese correctamente.
+- Normalización de mensajes en redes sociales: el modelo puede reescribir comentarios y publicaciones con jerga en inglés estándar antes de pasarlos a un sistema de análisis de sentimiento o moderación, gracias a su capacidad de preservar la polaridad y el tono.
+- Análisis de opiniones de audiencias jóvenes: en pipelines de investigación de mercado, traducir mensajes informales a inglés claro permite aplicar después clasificadores entrenados sobre texto formal.
+- Preprocesamiento para moderación de contenido: convertir abreviaturas y jerga en texto legible facilita que reglas o modelos posteriores detecten contenido sensible, aunque con la advertencia de que puede perder negaciones.
+- Atención al cliente en canales informales: como paso previo a un sistema de respuesta, el modelo puede aclarar el mensaje del usuario; su contexto de 384 tokens lo limita a mensajes cortos.
+- Herramienta educativa o de divulgación: responder a preguntas del tipo "¿qué significa esta expresión?" con explicaciones en inglés estándar, una de las categorías donde la v2 muestra mejoras notables.
+- Experimentación con modelos compactos: servir como banco de pruebas para ajuste fino especializado, cuantización y despliegue local en hardware de gama baja.
+- Enriquecimiento de datasets: generar versiones normalizadas de corpus de jerga para entrenar o evaluar otros modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Resultados del benchmark artesanal publicado en la model card (tasa de aprobación por categoría):
+
+| Categoría | Ejemplos | v1 | v2 |
+|---|---:|---:|---:|
+| Abreviaturas | 39 | 82% | 100% |
+| Abreviaturas contextuales | 16 | 88% | 94% |
+| Preguntas de significado | 11 | 27% | 100% |
+| Desbordamiento | 1 | 100% | 100% |
+| Párrafos | 5 | 100% | 100% |
+| Passthrough | 8 | 75% | 75% |
+| Polaridad | 10 | 90% | 90% |
+| Preservación del significado | 7 | 57% | 71% |
+| Robustez | 37 | 86% | 92% |
+| Jerga | 34 | 91% | 88% |
+| **Total de categorías puntuadas** | — | **80,2%** | **92,4%** |
+
+Resultados del benchmark sobre dataset reservado (held-out):
+
+| Métrica | v1 | v2 |
+|---|---:|---:|
+| Exact match | 15,2% | 14,5% |
+| Token F1 | 0,701 | 0,699 |
+| Salidas terminadas en EOS | 100% | 100% |
+| Jerga restante en la salida | 0,0% | 0,1% |
+| Salidas en estilo definición | 0,1% | 0,0% |
+| Latencia, batch size 32 | 4,1 ms/prompt | 4,7 ms/prompt |
+
+Pérdida de validación durante el ajuste fino de la v2:
+
+| Métrica | Antes del ajuste | Checkpoint seleccionado |
+|---|---:|---:|
+| Pérdida de validación general | 0,5268 | 0,5241 |
+| Pérdida de validación curada | 1,3334 | 0,2168 |
+| Pérdida de validación combinada | 0,9301 | 0,3704 |
+
+El autor advierte que la mejora en el benchmark artesanal no se corresponde con una mejora en exact-match sobre el dataset reservado, y que el conjunto de validación curado solo contiene 82 ejemplos. No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- Al ser un modelo de solo ~20 millones de parámetros, la inferencia es extremadamente ligera.
-- En GPU: cabe en cualquier GPU con al menos 1 GB de VRAM; incluso en GPUs integradas o de gama baja (por ejemplo, NVIDIA GTX 1050, Jetson Nano).
-- En CPU: las cuantizaciones GGUF (especialmente q4_k_m) permiten ejecutarlo en CPU sin problemas, con latencias de unos pocos cientos de milisegundos por generación.
-- Despliegue recomendado con llama.cpp, Ollama o servidores compatibles con el formato GGUF (por ejemplo, llama-cpp-python).
-- También es compatible con endpoints (etiqueta `endpoints_compatible`), por lo que puede servirse mediante infraestructura estándar de Hugging Face Inference Endpoints.
-- El throughput estimado es muy alto: decenas de generaciones por segundo en GPU y varias por segundo en CPU moderna.
+- VRAM estimada para inferencia en fp32: aproximadamente 120 MB para los pesos (29,65 M de parámetros); en fp16, unos 60 MB. El repositorio ocupa 3,4 GB, probablemente por artefactos de entrenamiento y checkpoints adicionales.
+- Cabe holgadamente en cualquier GPU consumer, incluidas GTX 1050, RTX 3060, RTX 4090, e incluso en CPU.
+- GPU recomendadas: no requiere GPU dedicada; una GPU consumer básica es suficiente. Para lotes grandes, cualquier GPU con al menos 1-2 GB de VRAM libre es adecuada.
+- Opciones de despliegue: Transformers (PyTorch), text-generation-inference (etiqueta `text-generation-inference` en el repositorio) y endpoints compatibles. No se documentan variantes GGUF ni soporte explícito de llama.cpp u Ollama, aunque la conversión a GGUF sería viable dado el tamaño.
+- Latencia reportada por el autor: 4,7 ms por prompt con batch size 32 en la v2 (hardware no especificado). El throughput estimado es alto para su tamaño, pero no se documentan cifras absolutas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables específicos para la traducción de jerga Gen Z. Los modelos generales de traducción (como NLLB o MarianMT) tienen un tamaño y un ámbito muy distintos, y no están orientados a esta jerga concreta. Por tanto, no se ofrece comparativa en esta sección.
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GenZ Translator (v2) | 29,65 M | 384 | Traducción de jerga Gen Z a inglés | Apache 2.0 | Hugging Face |
+| Modelos decoder-only pequeños tipo GPT-2 small | ~124 M | 1.024 | Generación de texto general | MIT (según variante) | Hugging Face |
+| Modelos tipo TinyLlama | ~1,1 B | 2.048 | Generación general | Apache 2.0 | Hugging Face |
+| Modelos de traducción especializados pequeños | variable | variable | Traducción de idiomas | variable | variable |
+
+No se dispone de comparaciones directas publicadas con modelos especializados equivalentes en traducción de jerga Gen Z. Las alternativas de la tabla son referencias de tamaño y categoría, no equivalentes funcionales exactos; los datos de modelos comparables concretos no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El dataset de entrenamiento (~139k pares) es pequeño para un entrenamiento desde cero, lo que puede provocar sobreajuste a los patrones de frase presentes en los datos.
-- El modelo no ha visto inglés fuera de su conjunto de entrenamiento, por lo que su gramática y fluidez generales son limitadas en comparación con un modelo preentrenado.
-- Puede generar traducciones incorrectas o poco naturales para jerga o frases que se alejen de la distribución de entrenamiento.
-- Solo soporta inglés; no es multilingüe.
-- La licencia Apache-2.0 permite uso comercial, pero no se especifica la procedencia de los datos de entrenamiento; conviene verificar si los datos tienen restricciones propias antes de un uso en producción.
-- No es un modelo de propósito general: no debe utilizarse como chat, asistente o generador de texto libre.
+- Contexto muy limitado: 384 tokens, insuficiente para conversaciones multi-turno o documentos largos.
+- Solo inglés: no traduce otros idiomas ni maneja bien texto mixto con varios idiomas.
+- Pérdida de detalles: puede eliminar negaciones u otra información importante del mensaje original.
+- Errores en expresiones a nivel de frase: falla con expresiones como `pull up` o `stan`.
+- Reescribe inglés ordinario que no necesita traducción (problema de passthrough, con solo 75% de acierto en el benchmark artesanal).
+- Mal rendimiento con caracteres repetidos, entradas malformadas de forma adversarial, URL y nombres de usuario.
+- Generalización limitada: el exact-match sobre el dataset reservado es bajo (14,5% en v2) y no mejora respecto a la v1.
+- Riesgo de alucinación en preguntas de conocimiento general; no está diseñado para recuperación de conocimiento.
+- No apto para conversación general, código, matemáticas ni razonamiento.
+- La evaluación se basa en benchmarks artesanales pequeños (algunas categorías con 1 o 5 ejemplos) y un conjunto de validación curado de 82 ejemplos, por lo que las cifras deben interpretarse con cautela.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre la calidad en producción.
+- No se documentan sesgos específicos, aunque al entrenarse con jerga de internet puede reflejar sesgos presentes en ese tipo de datos.
 
 ## Enlaces
 
-- Página del modelo en Hugging Face: https://huggingface.co/Sankar-2910/genz-translator
-- No se han encontrado otros enlaces (papers, blogs, repositorios adicionales) en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/Sankar-2910/genz-translator
+- Paper de referencia de la arquitectura Llama (arxiv:2302.13971): https://arxiv.org/abs/2302.13971

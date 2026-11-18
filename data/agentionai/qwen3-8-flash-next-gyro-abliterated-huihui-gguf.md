@@ -1,122 +1,104 @@
 # agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF
 
 ## Resumen
+Qwen3.8-Flash-Next-Gyro-abliterated es una versión cuantizada en formato GGUF del modelo Qwen3.8-Flash-Next, un transformer multimodal (texto e imagen) de aproximadamente 125.700 millones de parámetros. El trabajo de abliteración, que elimina la dirección de rechazo de los pesos, lo firma huihui-ai; el autor de esta ficha, agentionai, se limita a la cuantización y al empaquetado en tres clases de tamaño (Gyro-S, Gyro-M y Gyro-L) pensadas para ejecutarse en una sola GPU o en máquinas con memoria unificada.
 
-Este repositorio contiene dos ficheros GGUF del modelo Qwen3.8-Flash-Next en su variante "abliterated" publicada por huihui-ai, recodificados por agentionai con su formato Gyro. La abliteración (eliminación de la dirección de rechazo en los pesos) es trabajo de huihui-ai; agentionai se limita a cuantizar y a empaquetar el modelo para que quepa en una sola GPU. El resultado son dos ficheros: uno para tarjetas de 32 GB y otro para configuraciones de 48 GB (dos GPU de 24 GB o máquinas con 64 GB de memoria unificada).
+La relevancia de esta publicación radica en que pone al alcance de hardware de consumo y de estaciones de trabajo con 32-64 GB de memoria un modelo de escala muy superior a la habitual en ese rango, mediante tipos de cuantización trellis (TQK6/TQK7, TQ2_T, TQP5-7) que no son compatibles con llama.cpp upstream. Para cargarlo es necesario usar Strata 0.2.0 o superior, halo-box/strix-llama.cpp o agentionai/llama.cpp.
 
-El modelo base declara 176.943.899.520 parámetros (unos 176,9 B) y una arquitectura híbrida con atención completa, atención lineal y mezcla de expertos con expertos compartidos y enrutados, además de una cabeza MTP (multi-token prediction) que se usa como modelo borrador para decodificación especulativa. Es multimodal: el pipeline es image-text-to-text y se distribuye un proyector visual aparte (`mmproj-F16.gguf`). La ventana de contexto utilizada en todos los ejemplos de la model card es de 65.536 tokens.
+El modelo está etiquetado como experimental y sin censura, con una licencia qwen-community-1.0 que impone restricciones adicionales al uso. Con 1,46 millones de descargas y 69 likes en el Hub, es un artefacto de nicho orientado a investigadores y desarrolladores que necesitan un modelo sin filtros de rechazo y aceptan asumir la responsabilidad legal y ética de su despliegue.
 
-La relevancia práctica es doble. Por un lado, demuestra que un modelo de ~177 B puede ejecutarse en una única GPU de 32 GB con cuantización trellis (tipos TQK6/TQK7 y TQ2_T), con una pérdida de fidelidad medida (divergencia KL de 0,397 frente al original en el fichero S y 0,295 en el M). Por otro, es un ejemplo de formato experimental: los ficheros no cargan en llama.cpp upstream y requieren Strata 0.2.0+, `halo-box/strix-llama.cpp` o el fork `agentionai/llama.cpp`.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: atención completa + atención lineal, mezcla de expertos (MoE) con expertos compartidos y enrutados, y cabeza MTP para decodificación especulativa (según la model card) |
-| Parámetros totales | 176.943.899.520 (~176,9 B), dato de safetensors del modelo base |
-| Parámetros activos | no disponible |
-| Longitud de contexto | 65.536 tokens en los ejemplos de la model card; máximo no disponible |
-| Tipos de cuantización | GGUF con tipos trellis: TQK6/TQK7 en Gyro-S (sufijo de fichero `TQ1_0`) y TQ2_T en Gyro-M (sufijo `TQ2_0`); proyector visual en F16; borrador MTP en GGUF |
-| Idiomas soportados | no disponible (la model card no los detalla) |
-| Licencia | `qwen-community-1.0` (etiquetada como `license: other` con `license_name: qwen-community-1.0`) |
-| Formato de pesos | GGUF (dos ficheros) + `mmproj-F16.gguf` + `mtp-Qwen3.8-Flash-Next-draft.gguf` |
-| Tamaño del repositorio | 307,2 GB |
-| Modelo base | huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated (relación: quantized) |
-| Fecha de creación / actualización | 2026-10-01 / 2026-10-19 |
-| Descargas / likes en Hugging Face | 28.491 / 16 |
+| Arquitectura | Transformer multimodal (texto e imagen) con atención completa y atención lineal, mezcla de expertos (MoE) con expertos compartidos y enrutados, y tabla n-gram (PLE) |
+| Parametros totales | 125.743.653.760 (~125,7 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 64.000 tokens (configuración de referencia de los ejemplos del autor; límites exactos no disponibles) |
+| Tipos de cuantizacion | GGUF con tipos trellis: TQK6/TQK7 (Gyro-S), TQ2_T (Gyro-M), TQP5-7 (Gyro-L); tabla PLE en IQ4_NL o Q8_0; proyector visual mmproj-F16 |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en el Hub) |
+| Formato de pesos | GGUF (con variantes `-noPLE` sin la tabla n-gram) |
 
 ## Arquitectura y entrenamiento
+La información disponible describe un transformer multimodal con dos mecanismos de atención combinados: atención completa y atención lineal, cuyos tensores de salida son precisamente los que modifica la abliteración. La capa de mezcla de expertos incluye expertos compartidos y expertos enrutados; la abliteración de la versión v1 (Gyro-S y Gyro-M) altera 144 de 1.224 tensores, mientras que la v2 (Gyro-L) altera 96 tensores, dejando los expertos enrutados idénticos a los del modelo original. El resto de tensores es byte a byte idéntico a los ficheros Gyro no abliterados.
 
-La model card describe el modelo como una pila híbrida en la que conviven capas de atención completa y capas de atención lineal, con una mezcla de expertos que distingue expertos compartidos y expertos enrutados. La abliteración de huihui-ai modifica 144 de los 1.224 tensores de pesos: concretamente los que escriben en el flujo residual (salidas de atención y de atención lineal, y las proyecciones *down* de los expertos compartidos y enrutados). El resto de tensores es idéntico byte a byte a los ficheros Gyro originales. La cabeza MTP se distribuye como fichero aparte y se emplea como modelo borrador en decodificación especulativa.
-
-No se publican en la información disponible datos de entrenamiento (número de tokens, composición del corpus, si hubo RLHF/DPO) del modelo base Qwen3.8-Flash-Next, más allá de que la variante aquí distribuida solo añade la abliteración y la cuantización posteriores. La codificación GGUF la realiza el propio agentionai con un *encoder* que no ha publicado; la model card indica que los ficheros se actualizaron el 2026-10-13 con mejores pesos manteniendo nombres, tamaños y tipos de tensor.
+El modelo incorpora una tabla n-gram (PLE) propia del modelo base, común a todas las cuantizaciones de Qwen3.8-Flash-Next y distribuida por separado en Delgon/Qwen3.8-Flash-Next-PLE-GGUF. También se publica un borrador MTP (`mtp-Qwen3.8-Flash-Next-draft.gguf`) para decodificación especulativa y un proyector visual `mmproj-F16.gguf` para las capacidades de imagen. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del corpus ni las etapas de RLHF o DPO del modelo base.
 
 ## Capacidades
-
-- Generación de texto y conversación multi-turno (etiqueta `conversational`), con 65.536 tokens de contexto en la configuración de referencia.
-- Entrada multimodal imagen-texto: el pipeline declarado es `image-text-to-text` y se acompaña de un proyector visual `mmproj-F16.gguf`.
-- Generación de código de alta fidelidad respecto al original: 94,3 % de coincidencia top-1 en código para el fichero S y 95,5 % para el M.
-- Decodificación especulativa mediante borrador MTP, con un 81 % de tokens propuestos aceptados en una primera prueba sobre un *prompt* de código.
-- Comportamiento sin rechazos en la mayoría de peticiones (abliteración), pensado para entornos controlados.
-- Servidor con plantilla de chat Jinja (`--jinja`) y etiqueta `endpoints_compatible` en el Hub; permite exponer una API HTTP local desde el contenedor incluido.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Razonamiento multi-paso o modo *thinking*: no documentado en la información disponible.
-- Capacidades de audio: no disponibles.
+- Generación de texto conversacional multi-turno, con ajustes de muestreo de referencia (`--temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.05`).
+- Procesamiento de imagen y texto (`image-text-to-text`) mediante el proyector visual mmproj-F16.
+- Razonamiento y respuesta sin filtros de rechazo gracias a la abliteración de huihui-ai.
+- Decodificación especulativa con borrador MTP (`--spec-type draft-mtp`) para acelerar la generación.
+- Gestión de contexto largo de hasta 64k tokens con caché de clave y valor cuantizada (q8_0).
+- Compatibilidad con endpoints (`endpoints_compatible`) y modo conversacional (`conversational`).
+- Soporte de plantilla de chat mediante `--jinja`.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling y de agentes: no disponible en la información proporcionada.
 
 ## Casos de uso
-
-- **Asistente de código en estación de trabajo con una GPU de 32 GB**: el fichero Gyro-S ocupa 27,64 GiB de pesos y 28,8 GiB con 64k de contexto, y con el borrador MTP acepta el 81 % de los tokens propuestos en código. Sirve para autocompletado y refactorización sin enviar el código a un servicio externo.
-- **Extracción de información de documentos con visión**: usando `mmproj-F16.gguf`, el modelo procesa capturas, facturas o planos y devuelve texto estructurado; los 65.536 tokens de contexto permiten incluir varias páginas en una sola petición.
-- **Investigación en seguridad y *red teaming***: al eliminar la dirección de rechazo, es útil para estudiar comportamientos límite y calibrar clasificadores de contenido; debe ejecutarse en un entorno aislado y con registro de interacciones.
-- **Generación de datos sintéticos técnicos**: la divergencia KL de 0,111 en código (fichero S) y 0,066 (fichero M) frente al modelo original indica que la distribución generada se mantiene próxima, lo que permite crear corpus de código y texto técnico a escala local.
-- **Despliegue en hardware AMD con memoria unificada**: en un Strix Halo (Radeon 8060S, 64 GB) el fichero Gyro-S decodifica a 31,7 tok/s con `llama-bench` y a 36,1 tok/s con `strix-llama.cpp` en Vulkan, suficiente para asistentes internos de documentación.
-- **Atención al cliente interna con supervisión humana**: la ventana de 64k permite arrastrar historial e documentación de producto en conversaciones largas; dado el carácter *uncensored*, requiere revisión humana antes de publicar respuestas.
-- **Prototipado de agentes con API local**: el contenedor `agention-llama:server` expone los pesos por HTTP con plantilla Jinja, lo que facilita integrarlos en un pipeline de agentes que ya consuma una API compatible con OpenAI.
-- **Banco de pruebas de cuantización**: los pares S/M con métricas KLD y top-1 publicadas permiten evaluar el compromiso entre memoria y calidad antes de fijar una configuración de producción.
+- Investigación sobre alineación y rechazo: el modelo permite estudiar cómo la eliminación de la dirección de rechazo afecta al comportamiento generativo, comparando directamente los ficheros abliterados con los Gyro originales, que comparten arquitectura y velocidad.
+- Despliegue en estaciones de trabajo con 32 GB de VRAM: Gyro-S abliterado ocupa 28,8 GiB con contexto de 64k, por lo que cabe en tarjetas de 32 GB y permite ejecutar un modelo de ~125,7 mil millones de parámetros en local.
+- Equipos con memoria unificada de 64 GB (por ejemplo, Strix Halo): Gyro-L abliterado, con 50,21 GiB de pesos, ofrece la mayor calidad de la familia (KLD 0,164 frente al modelo original) en hardware sin GPU dedicada de gran capacidad.
+- Configuraciones multi-GPU de gama media: Gyro-M abliterado, con aproximadamente 37 GiB, encaja en dos tarjetas de 24 GB y mantiene un KLD de 0,295.
+- Procesamiento de documentos con imagen: el pipeline image-text-to-text y el proyector mmproj-F16 permiten extraer y razonar sobre contenido visual en flujos internos de análisis documental.
+- Generación asistida con decodificación especulativa: el borrador MTP reduce la latencia en despliegues de llama-server con `--spec-type draft-mtp`, útil en entornos interactivos de investigación.
+- Experimentación con cuantizaciones trellis: sirve como banco de pruebas para evaluar los tipos TQK6/TQK7, TQ2_T y TQP5-7 en Strata, strix-llama.cpp y agentionai/llama.cpp.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks en la información disponible. El único dato cuantitativo de calidad es la divergencia KL (KLD) frente al modelo original:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. Las únicas métricas publicadas son de fidelidad frente al modelo original (Qwen3.8-Flash-Next sin abliterar), e incluyen tanto el efecto de la cuantización como el de la abliteración:
+| Variante | KLD vs modelo original | Memoria (contexto 64k) | Tamano del fichero |
+|---|---:|---:|---:|
+| Gyro-S abliterado (TQ1_0) | 0,397 | 28,8 GiB | 58,5 GB |
+| Gyro-M abliterado (TQ2_0) | 0,295 | ~37 GiB | 92,0 GB |
+| Gyro-L abliterado (TQ3_0) | 0,164 | 50,21 GiB (pesos) | 108,3 GB |
 
-| Fichero | Pesos en GPU | KLD vs original | Top-1 vs original | KLD en código | Top-1 en código |
-|---|---:|---:|---:|---:|---:|
-| Gyro-S abliterated | 27,64 GiB | 0,397 | 75,3 % | 0,111 | 94,3 % |
-| Gyro-M abliterated | 34,98 GiB | 0,295 | 78,6 % | 0,066 | 95,5 % |
-
-Referencia de los ficheros Gyro sin abliterar: KLD 0,401 (S) y 0,291 (M), por lo que la abliteración añade menos de 0,005 de divergencia KL.
-
-Rendimiento medido (`llama-bench`, batch 1, sin *drafting*):
-
-| Configuración | Prefill (tok/s) | Decode (tok/s) |
-|---|---:|---:|
-| Gyro-S en AMD Radeon AI PRO R9700 32 GB | 1.246 | 57,8 |
-| Gyro-S en AMD Strix Halo (Radeon 8060S) | no disponible | 31,7 |
-| Gyro-M en AMD Strix Halo | no disponible | 26,4 |
-| Gyro-S con strix-llama.cpp master (Vulkan, Strix Halo) | 700 | 36,1 |
-| Gyro-M con strix-llama.cpp master (Vulkan, Strix Halo) | 738 | 30,1 |
+| Variante | Fichero completo | Fichero `-noPLE` | Tabla PLE incluida |
+|---|---:|---:|---|
+| Gyro-S abliterado | 58,5 GB | 29,7 GB | IQ4_NL |
+| Gyro-M abliterado | 92,0 GB | 37,6 GB | Q8_0 |
+| Gyro-L abliterado | 108,3 GB | 53,9 GB | Q8_0 |
 
 ## Requisitos de hardware
-
-- **VRAM para Gyro-S**: 27,64 GiB de pesos y 28,8 GiB con contexto de 64k; encaja en tarjetas de 32 GB.
-- **VRAM para Gyro-M**: 34,98 GiB de pesos y aproximadamente 37 GiB con 64k; requiere 48 GB (por ejemplo, 2×24 GB) o una máquina con 64 GB de memoria unificada.
-- **GPU recomendadas**: AMD Radeon AI PRO R9700 32 GB (medición oficial), AMD Strix Halo / Radeon 8060S con memoria unificada, y GPUs NVIDIA a través de Strata 0.2.0+ o del fork `agentionai/llama.cpp` con CUDA. Series AMD RX 7000, RX 9000 y R9700 soportadas por Strata.
-- **GPU de consumo**: con 64k de contexto, el fichero S no cabe en tarjetas de 24 GB según los datos publicados; el M necesita dos de 24 GB. No se documentan configuraciones para 16 GB.
-- **Motores de despliegue**: `agentionai/llama.cpp` (CPU, Vulkan, CUDA), Strata 0.2.0 o superior, `halo-box/strix-llama.cpp` master (Strix Halo; CPU, Vulkan, HIP) y el contenedor `agentionai/agention-llama:server`. llama.cpp upstream no puede cargar estos ficheros todavía; vLLM, TGI y Ollama no se mencionan.
-- **Parámetros de ejecución de referencia**: `-ngl 999 -fa on --jinja --ngram-on-disk -c 65536 -ctk q8_0 -ctv q8_0 --temp 1.0 --top-p 0.95 --top-k 20 --min-p 0.05`.
-- **Latencia y throughput**: ver tabla de la sección anterior; la decodificación especulativa con el borrador MTP no está incluida en esas cifras.
-- **Almacenamiento**: el repositorio completo ocupa 307,2 GB; conviene descargar solo el fichero y los auxiliares necesarios (`hf download ... <fichero> mtp-... mmproj-F16.gguf`).
+- VRAM estimada: 28,8 GiB para Gyro-S con contexto de 64k; aproximadamente 37 GiB para Gyro-M; 50,21 GiB de pesos para Gyro-L.
+- GPU recomendadas: tarjetas de 32 GB para Gyro-S; dos GPU de 24 GB o máquinas con 64 GB de memoria unificada para Gyro-M; 64 GB de memoria unificada (Strix Halo) para Gyro-L.
+-Compatibilidad con GPU de consumo: no se especifican modelos concretos; el modelo no cabe en tarjetas de 24 GB o menos en ninguna de sus variantes.
+- Aceleración: NVIDIA (CUDA), AMD RX 7000, RX 9000 y R9700 mediante Strata 0.2.0 o superior; AMD Strix Halo mediante halo-box/strix-llama.cpp (CPU, Vulkan, HIP); CPU, Vulkan y CUDA mediante agentionai/llama.cpp.
+- Opciones de despliegue: llama-server de agentionai/llama.cpp, contenedor `agentionai/agention-llama:server` (Vulkan; CUDA si se compila), Strata y strix-llama.cpp. LM Studio y Ollama no pueden cargar ficheros `-noPLE`; solo admiten el fichero completo.
+- Caché KV: cuantización q8_0 para claves y valores (`-ctk q8_0 -ctv q8_0`).
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Requisito adicional: la tabla PLE debe descargarse por separado (Delgon/Qwen3.8-Flash-Next-PLE-GGUF) si se usa un fichero `-noPLE`, y cargarse con `--ple` (o `--ple-gguf` en Strata).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Pesos / memoria | KLD vs original | Licencia | Disponibilidad |
-|---|---|---|---:|---:|---|---|
-| Gyro-S abliterated (este repo) | ~176,9 B | 65.536 tokens (config. de referencia) | 27,64 GiB / 28,8 GiB a 64k | 0,397 (0,111 en código) | qwen-community-1.0 | GGUF, motores no upstream |
-| Gyro-M abliterated (este repo) | ~176,9 B | 65.536 tokens (config. de referencia) | 34,98 GiB / ~37 GiB a 64k | 0,295 (0,066 en código) | qwen-community-1.0 | GGUF, motores no upstream |
-| Gyro-S / Gyro-M sin abliterar (agentionai) | ~176,9 B | 65.536 tokens (config. de referencia) | mismos tipos y tamaños | 0,401 / 0,291 | qwen-community-1.0 | GGUF, motores no upstream |
-| Huihui-Qwen3.8-Flash-Next-abliterated (huihui-ai) | ~176,9 B | no disponible | safetensors, no apto para 32 GB en una GPU | referencia de la abliteración | qwen-community-1.0 | safetensors en el Hub |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-Gyro-abliterated (este) | ~125,7 mil millones | 64k | GGUF trellis | qwen-community-1.0 | Sin rechazos; requiere runtimes no upstream |
+| Qwen3.8-Flash-Next-Gyro (no abliterado) | ~125,7 mil millones | 64k | GGUF trellis | qwen-community-1.0 | Misma arquitectura y velocidad; conserva los rechazos |
+| Huihui-Qwen3.8-Flash-Next-abliterated (v1 y v2) | ~125,7 mil millones | no disponible | safetensors | qwen-community-1.0 | Pesos originales de los que derivan estas cuantizaciones |
+| Delgon/Qwen3.8-Flash-Next-PLE-GGUF | no aplica | no aplica | GGUF | no disponible | Solo la tabla n-gram (PLE), no un modelo completo |
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto de otros modelos de la misma categoría en la información proporcionada, por lo que no se incluye una comparación con alternativas de terceros.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento cualitativo con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
-
-- **Contenido dañino**: la abliteración elimina la mayor parte de los rechazos; la model card advierte explícitamente de que el modelo puede producir contenido dañino, ofensivo o inapropiado y no es apto para uso público ni sin supervisión.
-- **Responsabilidad legal**: el usuario es responsable del uso y del cumplimiento normativo en su jurisdicción; la licencia `qwen-community-1.0` impone condiciones adicionales que deben revisarse antes de un uso comercial.
-- **Formato experimental**: los tipos trellis (TQK6/TQK7, TQ2_T) y los *kernels* asociados pueden cambiar; no hay compromiso de estabilidad.
-- **Compatibilidad limitada**: no carga en llama.cpp upstream. Solo funciona en Strata 0.2.0+, `strix-llama.cpp` master y `agentionai/llama.cpp`. vLLM, TGI y Ollama no están soportados según la información disponible.
-- **Pérdida de fidelidad por cuantización**: KLD de 0,397 y 75,3 % de top-1 en el fichero S frente al original; degradación mayor que en el M (0,295 / 78,6 %). En código la pérdida es mucho menor (94,3 % y 95,5 % de top-1).
-- **Alucinación**: no se publican evaluaciones de veracidad ni de tasa de alucinación; al ser un modelo de ~177 B cuantizado a tipos de 1-2 bits por bloque, el riesgo en dominios factuales no está caracterizado.
-- **Idiomas**: la model card no especifica la lista de idiomas soportados; no se puede asumir un rendimiento homogéneo fuera del inglés sin evaluación propia.
-- **Herramientas y agentes**: no se documenta soporte de tool calling, function calling ni razonamiento multi-paso, por lo que no deben asumirse en producción.
-- **Sesgos**: no se publican análisis de sesgo; al derivar de un modelo abliterado, la supresión de la dirección de rechazo puede alterar también respuestas ante peticiones sensibles legítimas (médicas, legales).
-- **Sin datos de entrenamiento**: no se detalla el corpus, el número de tokens ni el proceso de alineamiento, lo que dificulta evaluar riesgos de contaminación de benchmarks.
-- **Hardware**: la ventana de 64k exige 32 GB o 48 GB de VRAM/unified memory; no hay configuración publicada para GPUs de consumo de 24 GB o menos.
+- La abliteración elimina la mayor parte de los rechazos del modelo; puede producir contenido dañino, ofensivo o inapropiado y no es apto para uso público ni sin supervisión.
+- El usuario es responsable del uso que haga del modelo y del cumplimiento de la legislación aplicable en su jurisdicción.
+- La licencia qwen-community-1.0 impone condiciones adicionales; deben revisarse antes de cualquier uso comercial.
+- El modelo está marcado como experimental y no se han publicado evaluaciones de sesgo, alucinación ni robustez.
+- Los tipos de cuantización trellis no son compatibles con llama.cpp upstream; sin Strata, strix-llama.cpp o agentionai/llama.cpp el modelo no se puede cargar.
+- Los ficheros `-noPLE` no funcionan en LM Studio ni en Ollama, y requieren compilaciones de agentionai/llama.cpp posteriores al 2026-11-05 o strix-llama.cpp master.
+- La tabla PLE es un componente separado que debe descargarse y referenciarse correctamente; omitirla impide la carga de las variantes `-noPLE`.
+- No hay información sobre idiomas soportados ni sobre el rendimiento en lenguas distintas del inglés.
+- La cuantización introduce degradación medible: KLD de 0,397 en Gyro-S, 0,295 en Gyro-M y 0,164 en Gyro-L frente al modelo original.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF
-- Modelo base abliterado (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
-- Ficha de los ficheros Gyro originales (instrucciones de NVIDIA, visión, decodificación especulativa y memoria por contexto): https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
-- Motor Strata: https://github.com/Niko1221/Strata
-- Fork para AMD Strix Halo: https://github.com/halo-box/strix-llama.cpp
-- Fork de llama.cpp de agentionai (CPU, Vulkan, CUDA): https://gitlab.com/agentionai-group/llama.cpp
-- Búsqueda web: no se han encontrado resultados relevantes sobre este modelo; las únicas coincidencias devueltas corresponden a sitios de estadísticas de videojuegos y no se incluyen.
+- Modelo en Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF
+- Modelo base abliterado (v1): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
+- Modelo base abliterado (v2, GGUF): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
+- Ficha principal Gyro (instrucciones de hardware, visión y decodificación especulativa): https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
+- Tabla n-gram (PLE) independiente: https://huggingface.co/Delgon/Qwen3.8-Flash-Next-PLE-GGUF
+- Runtime Strata: https://github.com/Niko1221/Strata
+- Runtime para Strix Halo: https://github.com/halo-box/strix-llama.cpp
+- Runtime agentionai/llama.cpp: https://gitlab.com/agentionai-group/llama.cpp
+- Rama Strata de agentionai: https://gitlab.com/agentionai-group/strata/-/tree/main

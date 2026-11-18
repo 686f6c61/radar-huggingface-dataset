@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Jamh4949/xlm-roberta-large-sarcasmo-es",
+  "slug": "jamh4949-xlm-roberta-large-sarcasmo-es",
+  "author": "Jamh4949",
+  "url": "https://huggingface.co/Jamh4949/xlm-roberta-large-sarcasmo-es",
+  "created_at": "2026-11-18T04:46:44.000Z",
+  "updated_at": "2026-11-18T04:47:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "sarcasm-detection",
+    "spanish",
+    "fine-tuned",
+    "es",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559892482,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256722057,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

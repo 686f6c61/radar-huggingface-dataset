@@ -2,96 +2,94 @@
 
 ## Resumen
 
-akhaliq/Qwen-Image-2.1-Next-Scene-LoRA es un adaptador LoRA publicado en Hugging Face por el usuario akhaliq, pensado para trabajar sobre el modelo de generacion y edicion de imagen Qwen-Image-2.1. Su nombre indica que implementa la funcionalidad de "next scene" (generacion de la escena siguiente): a partir de una imagen de entrada, producir una nueva escena que mantenga la composicion, el estilo y la atmosfera del fotograma original, de forma que varias generaciones encadenadas den lugar a una secuencia visual coherente.
+Qwen-Image-2.1 · Next-Scene LoRA es un adaptador LoRA de rango 64 entrenado por akhaliq sobre el modelo base Qwen/Qwen-Image-2.1, un modelo unificado de generación y edición de imágenes. El adaptador enseña al modelo base una capacidad que no tenía de serie: la continuación cinematográfica de escenas, tomando un fotograma de entrada y una instrucción con formato de dirección de cámara para generar el siguiente plano manteniendo la coherencia de mundo, personajes y estilo.
 
-El modelo base Qwen-Image-2.1, desarrollado por el equipo Qwen (Alibaba), es un modelo unificado de text-to-image y edicion de imagen con unos 7000 millones de parametros en su componente de generacion visual, organizado en 32 capas DiT (Diffusion Transformer) de tipo single-stream. La ficha del adaptador, sin embargo, no incluye informacion propia: no declara pipeline, licencia, idiomas ni formato de pesos, y registra cero descargas y un unico "like" en el momento de la consulta.
+El modelo resuelve un problema concreto en flujos de preproducción audiovisual y generación de storyboards: la necesidad de encadenar planos coherentes a partir de una sola imagen de referencia sin recurrir a un modelo de vídeo. Cada salida puede realimentarse como entrada de la siguiente iteración, construyendo secuencias de planos dirigidos. Es el port de la técnica next-scene al modelo base más reciente de Qwen, ya que esta capacidad no existía en Qwen-Image-2.1.
 
-Su relevancia es practica y de nicho. Los LoRA de "escena siguiente" son utiles para crear storyboards, comics, ilustraciones secuenciales y narrativa visual, ya que permiten encadenar fotogramas manteniendo consistencia sin reentrenar el modelo completo. Dado que la ficha del repositorio esta practicamente vacia, esta evaluacion se apoya en las caracteristicas documentadas del modelo base y de adaptadores equivalentes de otros autores, y todos los datos no confirmados se marcan como "no disponible".
+El repositorio ocupa 5,2 GB y contiene varios checkpoints en formato safetensors, además de rejillas de muestras por cada 250 pasos de entrenamiento. Se publica bajo licencia Apache 2.0 y se integra mediante la librería diffusers o ComfyUI. En el momento de la consulta acumula 4.003 descargas y 74 likes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre el modelo base Qwen-Image-2.1, cuyo componente de generacion visual usa una arquitectura DiT (Diffusion Transformer) de 32 capas single-stream |
-| Parametros totales | No disponible para el adaptador (el modelo base declara 7B en su componente de generacion visual) |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | LoRA (rank 64 / alpha 64) sobre Qwen-Image-2.1, arquitectura `qwen_image_2` |
+| Parametros totales | No disponible (adaptador LoRA; el modelo base no reporta cifra en la información) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (depende de la cuantizacion aplicada al modelo base) |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | No disponible (los adaptadores LoRA de este ecosistema se distribuyen habitualmente en safetensors, pero no se confirma en la informacion proporcionada) |
+| Tipos de cuantizacion | Base entrenado en uint3; pesos del LoRA en bf16; el modelo base admite bf16 |
+| Idiomas soportados | No disponible (los prompts del ejemplo están en inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (checkpoints convertidos a diffusers y formato bruto ai-toolkit) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada en la ficha del repositorio sobre la arquitectura interna del adaptador (rango del LoRA, capas objetivo, modulo de atencion o de proyeccion afectado) ni sobre su entrenamiento (numero de pasos, dataset, resolucion de las imagenes de entrenamiento, uso de captions naturales frente a tokens de control). Por analogia con adaptadores equivalentes del mismo ecosistema, como aiqwen/next-scene-qwen-image-lora-2509, el patron tipico consiste en un LoRA de bajo rango acoplado a un modelo de edicion de imagen que aprende a desplazar la camara o el encuadre y a continuar la narracion visual conservando identidad, vestuario, paleta e iluminacion.
+El adaptador es un LoRA de rango 64 y alpha 64 aplicado sobre Qwen-Image-2.1, un modelo unificado de generación y edición de imágenes con identificador de arquitectura `qwen_image_2`. Se entrenó con el trainer ostris/ai-toolkit usando adamw8bit, learning rate 1e-4, timesteps ponderados, dropout de caption de 0,05, resolución de 512² y 2.500 pasos, partiendo de un base cuantizado en uint3 y entrenando en bf16.
 
-El modelo base Qwen-Image-2.1 se presenta en su repositorio oficial como un modelo unificado de generacion texto-a-imagen y edicion de imagen, con alrededor de 7000 millones de parametros en el componente de generacion visual y 32 capas DiT single-stream, disenado para equilibrar calidad, eficiencia de inferencia y versatilidad. En los adaptadores "next scene" del ecosistema se ha documentado un comportamiento relevante para el uso practico: en el paso 0 de entrenamiento el adaptador esta inicializado a cero y el modelo base tiende a mantener el punto de vista original (frontal o tres cuartos) aunque el caption describa otro angulo, lo que indica que la ganancia de consistencia secuencial proviene especificamente del entrenamiento del LoRA y no del modelo base.
+El conjunto de datos está formado por 1.144 pares de progresión de escena, extraídos como fotogramas consecutivos de los cortos abiertos de Blender *Sintel* y *Tears of Steel* (© Blender Foundation, CC-BY), a través del dataset KevinConnorLee/Sintel y los espejos de Blender. Las captions se redactaron empezando por el movimiento de cámara y siguiendo con el cambio de sujeto o iluminación, formato con el que el modelo responde mejor en inferencia.
+
+Se publican cuatro checkpoints: `next_scene_step2500.safetensors` (recomendado, conversión a diffusers), `next_scene_step1500.safetensors` (transformación más suave), `next_scene_step1000.safetensors` (curva de entrenamiento) y los ficheros en `checkpoints/` con formato bruto de ai-toolkit, cuyas claves MLP fusionadas son ignoradas silenciosamente por diffusers. El repositorio incluye rejillas de muestras cada 250 pasos en `checkpoints/samples/`.
 
 ## Capacidades
 
-- Generacion de imagenes condicionada por texto, heredada del modelo base Qwen-Image-2.1.
-- Edicion de imagen sobre una imagen de entrada, segun la naturaleza unificada del modelo base.
-- Generacion de la "escena siguiente": producir un nuevo fotograma que continua la narracion visual a partir de una imagen previa.
-- Preservacion de composicion, estilo y atmosfera entre fotogramas, orientada a mantener continuidad visual en secuencias.
-- Creacion de secuencias de varios pasos por encadenamiento de generaciones (fotograma N alimenta el fotograma N+1).
-- Control de dinámica de camara y composicion, segun la funcionalidad descrita para los LoRA de "next scene" del mismo ecosistema.
-- Soporte de tool calling / function calling: no aplica (es un modelo de generacion de imagen, no un modelo de lenguaje con herramientas).
-- Soporte de agentes y razonamiento multi-paso: no aplica en el sentido de agentes de texto; el encadenamiento aqui es generativo-visual.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible; no se documenta ninguna.
+- Continuación de escena: genera el siguiente plano a partir de una imagen de entrada y una instrucción de dirección.
+- Control de cámara por prompt: movimientos de cámara (pull back, pan, tilt, push in, cut a) y cambios de iluminación o atmósfera.
+- Coherencia de identidad: mantiene personajes, entorno y paleta entre planos encadenados.
+- Encadenamiento de generaciones: la salida de un paso se realimenta como entrada del siguiente para construir storyboards secuenciales.
+- Edición de imagen con preservación de composición, heredada del modelo base unificado de generación y edición.
+- Integración con diffusers mediante `QwenImage21Pipeline` y `load_lora_weights`, y con ComfyUI mediante nodo LoRA.
+- No se documentan capacidades de tool calling, agentes, visión multimodal ni audio; el modelo es de imagen a imagen.
 
 ## Casos de uso
 
-- Storyboards para cine y publicidad: encadenar fotogramas con el LoRA permite generar planos consecutivos manteniendo personajes, vestuario y localizacion, reduciendo el trabajo manual de fijar la continuidad plano a plano.
-- Creacion de comics y novelas graficas: a partir de una vineta inicial, el adaptador produce la siguiente escena con la misma paleta y encuadre, lo que acelera la produccion de paginas completas antes del entintado o el retoque.
-- Ilustracion de libros infantiles y narrativa: generar una serie de ilustraciones coherentes con un mismo estilo visual a partir de una ilustracion semilla, sin reentrenar el modelo base.
-- Previsualizacion de secuencias en preproduccion (previsualizacion o "previs"): probar variaciones de angulo y continuidad de escena antes de rodar o modelar en 3D, usando la imagen de referencia como ancla.
-- Animatica y guion grafico animado: generar fotogramas clave sucesivos que despues se interpolan o se pasan a un pipeline de animacion, aprovechando la continuidad de composicion entre escenas.
-- Diseno de niveles y entornos para videojuegos: producir variaciones de una misma localizacion (por ejemplo, la misma sala desde un angulo contiguo) para poblar bocetos conceptuales de mapas.
-- Contenido para redes sociales y marketing seriado: crear campanas con varias imagenes que comparten estetica y progresan narrativamente, manteniendo consistencia de producto o de personaje.
-- Prototipado creativo en ComfyUI: integrar el LoRA en un flujo de nodos junto al modelo base para iterar rapidamente sobre secuencias, segun el patron de uso documentado para adaptadores equivalentes.
+- Storyboarding cinematográfico: partiendo de un fotograma clave, encadenar instrucciones tipo "Next Scene: The camera pulls back…" para generar una secuencia de planos coherente que sirva de guion visual antes de rodar.
+- Previsualización de secuencias: generar planos de continuación de una localización o personaje para validar decisiones de cámara y luz con el equipo de dirección.
+- Prototipado de campañas audiovisuales: producir una serie de frames consistentes para presentar una idea de anuncio o corto sin depender de un modelo de vídeo.
+- Continuidad de estilo en cómics y novela gráfica: mantener paleta, vestuario y escenario entre viñetas generadas a partir de una imagen de referencia.
+- Exploración de variantes de plano: con el checkpoint 1500 o fuerza de LoRA reducida a 0,7, obtener alternativas más suaves que preserven mejor la identidad cuando el 2500 transforma en exceso.
+- Generación de material para animática: producir fotogramas sucesivos que después se monten como referencia temporal en un pipeline de animación.
+- Investigación sobre control de cámara: combinado con `akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA`, cubrir tanto la posición de cámara como la progresión narrativa en experimentos de edición dirigida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye comparaciones cualitativas mediante rejillas de muestras (barrido de checkpoints con instrucción de tormenta, fuerza 0,9, seed 42, 40 pasos; y cadena de cuatro saltos sobre una fotografía de la misión Apolo 11), pero no métricas numéricas como FID, CLIP score o similares.
 
 ## Requisitos de hardware
 
-- VRAM para el adaptador: no disponible; el consumo lo determina enteramente el modelo base al que se acopla.
-- Estimacion orientativa para el modelo base (7B en el componente de generacion visual, segun el repositorio oficial): en torno a 16-24 GB de VRAM en precision de 16 bits, marcadamente menos con cuantizacion de 8 o 4 bits. Esta cifra es una estimacion de orden de magnitud y no un dato confirmado para este repositorio.
-- GPU recomendadas: no disponible para el adaptador. Para modelos de difusion de este tamano son habituales tarjetas de gama alta de consumo (por ejemplo, RTX 4090 con 24 GB) y aceleradores de datacenter (A100, H100) cuando se busca mayor resolucion, lotes grandes o despliegue concurrente.
-- Compatibilidad con GPU de consumo: no confirmada en la informacion proporcionada; dependera del modelo base y de la cuantizacion empleada.
-- Opciones de despliegue: no disponible para el adaptador. Los adaptadores de este ecosistema se usan tipicamente junto al modelo base en entornos de difusion por nodos; el repositorio no documenta integraciones con vLLM, TGI, llama.cpp ni Ollama (estas herramientas estan orientadas a modelos de lenguaje y no aplican a un LoRA de generacion de imagen).
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita en la información; el repositorio ocupa 5,2 GB y el entrenamiento se realizó en 512² con base en uint3 y bf16, lo que sugiere que la inferencia requiere cargar el modelo base completo además del LoRA.
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la información; depende del modelo base Qwen-Image-2.1, cuyos requisitos no se detallan.
+- Opciones de despliegue: diffusers (`QwenImage21Pipeline` con `load_lora_weights`) y ComfyUI mediante nodo LoRA con fuerza 0,7–0,9. Los checkpoints en formato bruto requieren ai-toolkit o su propio loader.
+- Latencia y throughput: no disponibles. Los ejemplos de la model card usan 28 pasos de inferencia en el uso básico y 40 pasos por salto en las cadenas de demostración.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| akhaliq/Qwen-Image-2.1-Next-Scene-LoRA | LoRA de generacion de escena siguiente | Qwen-Image-2.1 | No disponible para el adaptador | No disponible | No disponible | Hugging Face, 0 descargas, 1 like |
-| aiqwen/next-scene-qwen-image-lora-2509 | LoRA de generacion de escena siguiente | Qwen-Image-Edit (build 2509) | No disponible | No disponible | No disponible | Hugging Face |
-| Qwen Next Scene LoRa (Civitai) | LoRA y flujo de trabajo en ComfyUI | Qwen Image Edit | No disponible | No disponible | No disponible | Civitai |
-| Qwen-Image-2.1 (modelo base) | Text-to-image y edicion de imagen unificados | No aplica | 7B en el componente de generacion visual, 32 capas DiT single-stream | No disponible | No disponible en la informacion recogida | GitHub (QwenLM), open source |
+| Modelo | Tipo | Base | Contexto / resolución | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| akhaliq/Qwen-Image-2.1-Next-Scene-LoRA | LoRA de continuación de escena | Qwen-Image-2.1 | 512² en entrenamiento; resolución de inferencia no especificada | Apache 2.0 | Hugging Face, diffusers, ComfyUI |
+| lovis93/next-scene-qwen-image-lora-2509 | LoRA de continuación de escena (formato original) | Qwen-Image 2509 edit | No disponible | No disponible en la información | Hugging Face (313K descargas según la model card) |
+| akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA | LoRA de control de cámara | Qwen-Image-2.1 | No disponible | No disponible en la información | Hugging Face, diffusers, ComfyUI |
 
-Las diferencias verificables entre los tres adaptadores son la fecha de publicacion, el autor y el modelo base declarado, no el rendimiento, ya que ninguno de ellos publica metricas comparables. El adaptador de Civitai se distribuye acompanado de un flujo de trabajo para generacion de escenas secuenciales orientado a comics, storyboards e ilustracion; el de aiqwen declara estar ajustado sobre Qwen-Image-Edit build 2509 y describe la continuidad narrativa y la dinamica de camara como objetivo explicito.
+No se dispone de datos de rendimiento cuantitativos que permitan comparar estos adaptadores entre sí; la comparación disponible es funcional (continuación de escena frente a control de ángulos de cámara).
 
 ## Limitaciones y advertencias
 
-- Ficha practicamente vacia: el repositorio no declara licencia, idiomas, pipeline ni formato de pesos, por lo que el uso comercial y la redistribucion quedan en un limbo legal hasta que el autor lo aclare.
-- Sin confirmacion de calidad: cero descargas y un unico "like" implican ausencia de validacion por parte de la comunidad; no hay imagenes de ejemplo, tarjetas de modelo detalladas ni comparaciones publicadas.
-- Dependencia total del modelo base: el comportamiento, los idiomas y la resolucion de salida vienen determinados por Qwen-Image-2.1, no por el adaptador.
-- Riesgo de deriva en secuencias largas: los LoRA de escena siguiente encadenan generaciones, de modo que los errores (cambios de vestuario, color, rasgos faciales o arquitectura del fondo) se acumulan fotograma a fotograma. Es recomendable anclar contra la imagen original y no solo contra la anterior.
-- Control de camara limitado en el modelo base: en adaptadores equivalentes se ha documentado que el base tiende a conservar el angulo original aunque el texto pida otro, lo que exige captions o tokens de control especificos para forzar el desplazamiento.
-- Alucinacion visual: como todo modelo de difusion, puede inventar objetos, texto ilegible en carteles o anatomias incorrectas, especialmente en escenas densas o con texto integrado.
-- Idiomas: no disponible; no se puede garantizar un comportamiento correcto en castellano para los prompts.
-- Sin benchmarks: no hay evidencia publicada de que supere a alternativas equivalentes en consistencia de escena, calidad perceptiva o fidelidad al prompt.
-- Caveat de fecha: la fecha de creacion registrada en el repositorio (2026-10-07) es posterior a la mayoria de las publicaciones sobre Qwen-Image; conviene verificar la vigencia del adaptador antes de integrarlo en produccion.
+- Deriva hacia copiar la imagen de entrada: la propia model card recomienda bajar la fuerza del LoRA hacia 0,7 si la salida no transforma lo suficiente.
+- El encadenamiento sucesivo puede acumular artefactos; en las demostraciones se aplica un desenfoque para romper el grano en las entradas encadenadas.
+- El modelo está entrenado con fotogramas de dos cortos de animación de Blender, lo que puede sesgar el estilo hacia render 3D y escenarios de ciencia ficción o fantasía.
+- Riesgo de alucinación visual: cambios no solicitados en personajes, vestuario o arquitectura al forzar transformaciones grandes (checkpoint 2500 a fuerza 0,9).
+- Las captions de entrenamiento están en inglés y siguen un formato concreto ("Next Scene:" seguido de la dirección de cámara); prompts fuera de ese patrón pueden degradar el resultado.
+- No se documentan idiomas soportados ni evaluación multilingüe.
+- Los checkpoints en `checkpoints/` con formato ai-toolkit no funcionan correctamente con diffusers por el nombrado fusionado de las claves MLP.
+- Licencia Apache 2.0 permite uso comercial, pero los datos de entrenamiento derivan de obras de Blender Foundation bajo CC-BY, lo que conviene verificar según el uso previsto.
+- No se especifican requisitos de hardware, latencia ni límites de resolución de inferencia en la información disponible.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/akhaliq/Qwen-Image-2.1-Next-Scene-LoRA
-- Repositorio oficial de Qwen-Image-2.1 (QwenLM): https://github.com/QwenLM/Qwen-Image-2.1
-- Adaptador equivalente de aiqwen: https://huggingface.co/aiqwen/next-scene-qwen-image-lora-2509
-- Adaptador relacionado de akhaliq (Multiple Angles): https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA
-- Qwen Next Scene LoRa en Civitai (flujo de trabajo en ComfyUI): https://civitai.com/models/2288378/qwen-next-scene-lora
-- Pagina comercial de Qwen Image 3 en OpenArt (referencia de ecosistema, no del adaptador): https://www.openart.ai/ai-model/qwen-image-3/
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/Qwen-Image-2.1-Next-Scene-LoRA
+- Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
+- LoRA original del formato next-scene: https://huggingface.co/lovis93/next-scene-qwen-image-lora-2509
+- LoRA complementario de ángulos de cámara: https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA
+- Trainer utilizado: https://github.com/ostris/ai-toolkit
+- Dataset de fotogramas de Sintel: https://huggingface.co/datasets/KevinConnorLee/Sintel
+- Licencia CC-BY de Blender Foundation: https://creativecommons.org/licenses/by/3.0/
+- Imagen de partida de la cadena de demostración (NASA, dominio público): https://en.wikipedia.org/wiki/File:Aldrin_Apollo_11.jpg

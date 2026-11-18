@@ -17,12 +17,10 @@
     "robotics",
     "lingbot-vla-v2",
     "research-checkpoint",
-    "base_model:dsaddsaf/lingbot-vla-2.0-FsMPCACo3YPN",
-    "base_model:finetune:dsaddsaf/lingbot-vla-2.0-FsMPCACo3YPN",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 6375907511,
   "parameters_human": "6.38B",

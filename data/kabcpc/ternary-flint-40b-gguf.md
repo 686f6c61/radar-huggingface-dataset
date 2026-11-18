@@ -2,100 +2,96 @@
 
 ## Resumen
 
-Ternary Flint 40B es una cuantización extrema de tipo ternario (1.58 bits) del modelo base `RecursiveSI/flint`, publicada por el usuario `kabcpc` en Hugging Face. Se trata de un modelo Mixture-of-Experts (MoE) de aproximadamente 39.800 millones de parámetros totales con unos 2.500 millones de parámetros activos por token, distribuidos en 49 capas y 256 expertos enrutados más un experto compartido. La innovación principal es la aplicación de pesos ternarios ({-1, 0, +1}) junto con técnicas de calibración por capas, lo que permite reducir el modelo a ficheros GGUF de entre 9 y 12,5 GiB.
+Ternary-Flint-40B-GGUF es una cuantización experimental de un modelo de lenguaje de tipo mezcla de expertos (MoE) de aproximadamente 39.800 millones de parámetros totales, derivada del modelo base `dima6312/Flint-40B-A2.5B-abliterated`. La publica el usuario kabcpc bajo el paraguas de un ecosistema propio denominado Kenzan, orientado a ejecutar modelos MoE grandes en equipos Apple Silicon con memoria unificada limitada (16 GB). El problema que aborda es claro: hacer viable un modelo de 40B en hardware de consumo mediante cuantización ternaria extrema.
 
-El modelo está específicamente optimizado para Apple Silicon (serie M) con aceleración Metal, gracias a kernels que aprovechan la Constant Memory LUT del hardware para decodificar los codebooks ternarios. Según la model card, esto permite ejecutar un modelo de casi 40.000 millones de parámetros en un Mac Mini de 16 GB de memoria unificada con contextos de hasta 262.144 tokens y velocidades de generación de 65-75 tokens por segundo, algo inviable con cuantizaciones convencionales como IQ2_XXS en ese hardware.
+La innovación central es una combinación de cuantización ternaria (`PTQ1_0`, aproximadamente 1,75 bits por peso) con bloques `Q4_0` y estabilización de fase mediante transformada de Hadamard (`FWHT_512`), empaquetada en un fichero GGUF de 9,8 GB denominado NonaCore. Esto rebaja drásticamente los requisitos de memoria frente a los 78 GB que ocupa el repositorio completo. El modelo se distribuye con un runtime específico parcheado (`PrismML-Eng/llama.cpp`) con kernels Metal para macOS ARM64.
 
-La relevancia actual radica en la combinación de tres factores: cuantización ternaria calibrada con perplejidad relativamente baja (10,13-10,95 en el dataset de referencia), soporte real de GPU completa en hardware de consumo Apple, y licencia Apache 2.0 que permite uso comercial. El modelo está pensado como backend local para herramientas de código y agentes (Cursor, Continue, DeepSeek Harness) sobre equipos de 16 GB.
+Es relevante ahora porque demuestra una vía práctica de inferencia local de MoE de gran tamaño en portátiles y Mac mini, aunque a costa de depender de un runtime no estándar, de una licencia restrictiva ("other") y de una calidad que el autor no documenta con benchmarks. El modelo base es una variante "abliterated", es decir, con los mecanismos de rechazo atenuados, lo que condiciona su uso responsable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), 49 capas, 256 expertos enrutados + 1 compartido |
+| Arquitectura | Transformer MoE (mezcla de expertos); detalles de capas y expertos no disponibles |
 | Parametros totales | 39.785.287.456 (~39,8B) |
-| Parametros activos | ~2,5B por token |
-| Longitud de contexto | Hasta 262.144 tokens (con KV cache `q4_0`) |
-| Tipos de cuantizacion | Ternario 1.58-bit (`PTQ1_0`, `PQ2_0`), híbridos (`PTQ1_0`+`Q4_1`, `PQ2_0`+`Q4_1`), codebook híbrido |
-| Idiomas soportados | Ingles, chino, ruso |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (varias variantes: 9,31 GiB, 10,97 GiB, 11,04 GiB, 12,49 GiB) |
+| Parametros activos | ~2,5B (según el nombre del modelo base, A2.5B); no confirmado en la model card |
+| Longitud de contexto | 262.000 tokens (según la release Hepta48Up del mismo ecosistema); no confirmado para el fichero NonaCore |
+| Tipos de cuantizacion | Ternaria `PTQ1_0` (~1,75 bpw) combinada con `Q4_0` y `FWHT_512`; fichero GGUF de 9,8 GB |
+| Idiomas soportados | Inglés (en), ruso (ru), chino (zh) |
+| Licencia | other (no especificada en detalle) |
+| Formato de pesos | GGUF (con runtime Metal parcheado para macOS ARM64) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `RecursiveSI/flint` es un transformer MoE con 49 capas, 256 expertos enrutados y un experto compartido, con unos 2,5B parámetros activos por token sobre un total de ~39,8B. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; esa información no está disponible en la documentación proporcionada.
+El modelo es un MoE de ~39,8B parámetros totales con aproximadamente 2,5B activos por token, según la nomenclatura del modelo base. No se dispone de información sobre el número de capas, el número de expertos, la dimensión oculta ni la estrategia de enrutamiento. Tampoco se documentan los datos de entrenamiento del modelo original: número de tokens, composición del corpus, ni si hubo fases de RLHF o DPO. El calificativo "abliterated" indica que el modelo base fue modificado para reducir las respuestas de rechazo, una técnica de edición de pesos que no equivale a un reentrenamiento completo.
 
-La contribución técnica de esta publicación es la cuantización post-entrenamiento (PTQ) a pesos ternarios. Se aplica una calibración por capas (layer-wise calibration) para minimizar el error de reconstrucción, con un esquema de codebook en base 3 que asigna valores ternarios exactos a 124 de los tensores de expertos, mientras que los 17 tensores `down_exps` más sensibles se mantienen en `Q4_1` para preservar calidad. La decodificación en Metal se apoya en una LUT de memoria constante (`constant ushort ptq1_0_lut[256]`) que permite ejecutar los kernels ternarios en la GPU de Apple sin caer a CPU. La model card menciona también "Hadamard folding" como parte del pipeline de cuantización.
+La contribución técnica de esta ficha no está en el entrenamiento sino en la compresión. La cuantización ternaria `PTQ1_0` reduce los pesos a tres niveles, y la estabilización de fase mediante transformada de Hadamard de bloque (`FWHT_512`) mitiga la degradación que la cuantización extrema introduce en las activaciones. El esquema se describe como "9-pin NonaCore", una mezcla de capas en ternario y en `Q4_0`. El resultado es un GGUF de 9,8 GB que, según el autor, está ajustado para 16 GB de memoria unificada en Apple Silicon. No se publican métricas de perplejidad ni de retención de calidad para esta variante concreta.
 
 ## Capacidades
 
-- Generación de texto conversacional y de propósito general, con soporte de plantilla de chat (`<|user|>...<|assistant|>`).
-- Razonamiento multi-paso, con parámetros específicos de `--reasoning-budget` y `--reasoning-preserve` en `llama-server`.
-- Generación de código (el ejemplo de la model card es una función Python para resolver 3Sum).
-- Soporte de tool calling / function calling vía plantilla Jinja (`--jinja`) en llama.cpp.
-- Uso como backend para agentes y harnesses de código (mencionados: DeepSeek Harness, Cursor, Continue).
-- Capacidades multilingües limitadas a inglés, chino y ruso.
-- Contexto largo de hasta 262.144 tokens en hardware de 16 GB, adecuado para ingestión de repositorios y conversaciones largas.
-- No se menciona soporte de visión, audio ni otras modalidades.
+- Generación de texto conversacional multi-turno, orientada a diálogo.
+- Razonamiento y respuesta a instrucciones heredados del modelo base Flint-40B.
+- Capacidad multilingüe limitada a inglés, ruso y chino.
+- Ejecución local en Apple Silicon mediante Metal con el runtime parcheado incluido.
+- No se documenta soporte de tool calling ni de function calling.
+- No se documenta soporte de agentes ni de razonamiento multi-paso explícito.
+- No se documenta capacidad de visión, audio ni modo "thinking".
+- Perfil "abliterated": menor tendencia a rechazar peticiones, sin que se detallen los mecanismos.
 
 ## Casos de uso
 
-- Asistente de código local en Mac: el modelo puede servir como backend de Cursor o Continue en un Mac Mini de 16 GB, generando código con contexto de hasta 262k tokens para incluir varios ficheros del repositorio en la ventana. La velocidad de 65-75 t/s lo hace interactivo.
-- Agente autónomo de refactorización: con `--jinja`, tool calling y contexto largo, se puede integrar en un harness que lea ficheros, ejecute tests y proponga parches en múltiples pasos, aprovechando el modo de razonamiento con presupuesto configurable.
-- Servidor OpenAI-compatible local: `llama-server` expone un endpoint compatible con la API de OpenAI (`--alias flint-40b:latest`), lo que permite sustituir llamadas a la nube por inferencia local en pipelines existentes sin cambiar el código cliente.
-- Documentación técnica y Q&A sobre bases de código: la ventana de 262k tokens permite cargar manuales, ADRs y ficheros fuente completos para responder preguntas con contexto.
-- Prototipado y experimentación con modelos ternarios: los cinco checkpoints publicados (puro ternario, híbridos, codebook) permiten comparar el impacto de distintos esquemas de cuantización sobre la perplejidad y la velocidad en el mismo hardware.
-- Despliegue en entornos con restricciones de memoria: el checkpoint de 9,31 GiB permite ejecutar un modelo de ~40B en equipos de 16 GB, útil en portátiles o estaciones de trabajo sin GPU dedicada.
-- Inferencia en local para privacidad: al ejecutarse íntegramente en Apple Silicon sin llamadas externas, es adecuado para procesar código o datos sensibles que no pueden salir del equipo.
+- Inferencia local en Mac con 16 GB de memoria unificada: el fichero de 9,8 GB permite cargar un MoE de 40B en un Mac mini o MacBook, algo inviable con cuantizaciones convencionales de 4 bits.
+- Prototipado de asistentes conversacionales en escritorio: el modelo puede gestionar diálogos multi-turno en inglés, ruso o chino sin conexión a la nube, útil para demos y pruebas de concepto.
+- Investigación sobre cuantización extrema: sirve como caso de estudio para medir la degradación de un MoE al aplicar ternario con estabilización de Hadamard, comparándolo con el modelo base en fp16.
+- Evaluación de runtimes alternativos: permite probar el fork `PrismML-Eng/llama.cpp` y sus kernels Metal frente a llama.cpp estándar en tareas de generación.
+- Generación de texto offline en entornos con requisitos de privacidad: al ejecutarse íntegramente en local, los datos no salen del equipo, adecuado para borradores y resúmenes de documentos sensibles.
+- Docencia y formación técnica: útil para explicar en un aula cómo funcionan los MoE, la cuantización ternaria y el empaquetado GGUF con un ejemplo ejecutable en hardware asequible.
+- Experimentación con modelos sin filtros de rechazo: para investigadores que estudian el comportamiento de modelos "abliterated", siempre con las salvaguardas y la supervisión adecuadas.
 
 ## Benchmarks y rendimiento
 
-La model card solo reporta perplejidad y velocidades de generación medidas en un chip Apple M6 con Metal. No se publican resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar.
-
-| Checkpoint | Tamano | bpw | Perplejidad (nlp) | Perplejidad (wiki) | Velocidad (t/s, M6 Metal) |
-|---|---|---|---|---|---|
-| Hybrid-Codebook-Calibrated-11GB | 11,04 GiB | 2,140 | 10,13 | 1,02 | 68,2-74,0 |
-| Hybrid-PTQ1_0-Calibrated-11GB | 11,04 GiB | 2,140 | 10,13 | no disponible | 64,4-71,5 |
-| PTQ1_0-Calibrated-9GB | 9,31 GiB | 1,750 | 10,95 | no disponible | 71,8 (pp128 = 648,6 t/s) |
-| PQ2_0-Calibrated-11GB | 10,97 GiB | 2,125 | 10,78 | no disponible | 76,7 (pp128 = 1006,2 t/s) |
-| Hybrid-Calibrated | 12,49 GiB | 2,450 | 10,13 | no disponible | 74,0 (pp128 = 974,9 t/s) |
-
-La model card incluye una comparación con `unsloth/flint-UD-IQ1_M` (objetivo CUDA) en la que se reporta PPL 1,6754 frente a 1,0183 en `wiki_sample` para el build de Apple, además de 17,6 t/s frente a 68,2-74,0 t/s en generación y 1,2 t/s frente a 650-1000+ t/s en procesamiento de prompt. El propio autor advierte que la comparación no es 1:1 por estar dirigida a hardware distinto.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni métricas de perplejidad para esta variante. La única referencia numérica del ecosistema es una perplejidad de 10,61 atribuida a la release posterior Hepta48Up, que no corresponde a este fichero.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: entre 9,31 GiB (PTQ1_0) y 12,49 GiB (Hybrid) según checkpoint, más el KV cache. Con KV cache `q4_0` en K y V se alcanzan 262.144 tokens en 16 GB de memoria unificada.
-- GPU recomendadas: Apple Silicon serie M (M-series, Mac Mini, M6 según las mediciones). No hay datos publicados de rendimiento en A100, H100 ni RTX 4090.
-- GPU de consumo: el objetivo declarado son Macs de 16 GB. En GPU discretas no se reportan cifras; la comparación con el build de Unsloth sugiere que los kernels ternarios específicos de este repo están optimizados para Metal y no para CUDA.
-- Opciones de despliegue: `llama.cpp` (`llama-cli`, `llama-server`), con soporte de `-hf` para descarga directa desde Hugging Face. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: 64,4-76,7 t/s de generación y 648-1006 t/s de procesamiento de prompt (pp128) en Apple M6 con Metal.
-- En 16 GB de Mac, la model card reporta contextos de 262.144 tokens con KV `q4_0/q4_0` o `q8_0/q8_0` según checkpoint.
+- VRAM o memoria unificada estimada: ~10 GB para cargar el GGUF NonaCore de 9,8 GB, más el espacio de contexto y caché KV; el autor lo orienta a equipos de 16 GB.
+- GPU recomendadas: Apple Silicon (M1, M2, M3, M4 y variantes Pro/Max) con Metal; el runtime incluido es un binario macOS ARM64.
+- ¿Cabe en GPU de consumo? Sí, en Apple Silicon de 16 GB o más. No se documenta soporte para GPU NVIDIA ni AMD con este esquema ternario.
+- Opciones de despliegue: exclusivamente el fork `PrismML-Eng/llama.cpp` con kernels `PTQ1_0` y `FWHT_512` para Metal; se incluye `llama-server`, `libllama` y `ggml-metal` precompilados en `bin/llama-flint-metal-macos-arm64.tar.gz`. No es compatible con llama.cpp estándar, Ollama ni LM Studio según la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware objetivo |
+| Modelo | Parámetros | Contexto | Cuantización / tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Flint-40B (este) | ~39,8B (2,5B activos) | 262.144 | Ternario 1.58-bit + hibridos | Apache 2.0 | Apple Silicon / Metal |
-| unsloth/flint-UD-IQ1_M | ~39,8B (2,5B activos) | no disponible | i-quants mixtos (IQ1_S/IQ2_XXS/IQ2_S/IQ3_XXS) | no disponible en la informacion | CUDA / servidor |
-| RecursiveSI/flint (base) | ~39,8B (2,5B activos) | no disponible | pesos originales (safetensors) | no disponible en la informacion | GPU dedicada |
+| Ternary-Flint-40B-GGUF (NonaCore) | ~39,8B totales, ~2,5B activos | 262k (según release del ecosistema) | Ternaria `PTQ1_0` + `Q4_0`, 9,8 GB | other | Hugging Face, runtime parcheado |
+| dima6312/Flint-40B-A2.5B-abliterated (base) | ~39,8B totales | no disponible | Pesos originales (repo de 78 GB) | no disponible | Hugging Face |
+| kabcnd/Kenzan-Flint-40B-Hepta48Up-GGUF | ~40B MoE | 262k | 7-pin, 9,77 GiB, PPL 10,61 | no disponible | Hugging Face |
+| kabcnd/Kenzan-Qwen3.8-27B-PinGrid-GGUF | ~27B | no disponible | GGUF compatible con stock | no disponible | Hugging Face, LM Studio, Ollama |
 
-No se dispone de datos de benchmarks estándar para comparar calidad entre estos modelos; la única métrica común es la perplejidad reportada por el autor en `wiki_sample` (1,0183 para el build Apple frente a 1,6754 para el build Unsloth), con la advertencia de que las configuraciones de evaluación pueden no ser equivalentes.
+La comparativa se limita al ecosistema del propio autor, ya que no se dispone de datos de rendimiento que permitan contrastar con MoE de tamaño similar de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- La cuantización ternaria introduce pérdida de calidad respecto al modelo base; la perplejidad reportada (10,13-10,95 en `nlp`) es el principal indicador, pero no hay benchmarks de tareas que permitan cuantificar la degradación en código o razonamiento.
-- Riesgo de alucinación inherente a modelos de lenguaje; no se documentan evaluaciones de factualidad ni tasas de error.
-- Idiomas limitados a inglés, chino y ruso; el castellano no está declarado como soportado.
-- Los kernels Metal y la LUT de memoria constante son específicos de este repositorio; el rendimiento en CUDA u otras plataformas no está caracterizado y podría degradarse notablemente.
-- La comparación con el build de Unsloth la realiza el propio autor y él mismo advierte que no es 1:1; conviene tratarla con cautela.
-- No se documentan sesgos conocidos, composición del dataset de entrenamiento ni proceso de alineación (RLHF/DPO), lo que dificulta evaluar riesgos de contenido.
-- Aunque la licencia es Apache 2.0, el modelo base `RecursiveSI/flint` puede tener condiciones propias que conviene verificar antes de uso comercial.
-- El repositorio tiene solo 2 likes y fue creado en noviembre de 2026; es un artefacto reciente con poca validación comunitaria independiente.
-- El contexto de 262k tokens depende de configuración específica de KV cache (`q4_0`); con otros tipos de cache el límite práctico en 16 GB será menor.
+- La cuantización ternaria a ~1,75 bits introduce degradación de calidad no cuantificada; no hay benchmarks que permitan estimar la pérdida frente al modelo base.
+- Dependencia de un runtime parcheado y no estándar: sin el fork de `PrismML-Eng/llama.cpp` con kernels Metal, el fichero no es utilizable en llama.cpp estándar, Ollama ni LM Studio.
+- Plataforma restringida a macOS ARM64 con Metal; no hay soporte documentado para Linux, Windows ni GPU NVIDIA.
+- El modelo base es "abliterated", lo que reduce los rechazos ante peticiones sensibles y aumenta el riesgo de generar contenido inapropiado o dañino sin salvaguardas.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de fidelidad factual.
+- Cobertura lingüística limitada a inglés, ruso y chino; el castellano no está entre los idiomas declarados.
+- Licencia "other" sin texto detallado: las condiciones de uso comercial no están claras y deben verificarse antes de cualquier despliegue en producción.
+- El contexto de 262k procede de otra release del ecosistema y no está confirmado para este fichero; asumir un contexto menor es lo prudente.
+- El repositorio ocupa 78 GB en total, aunque el fichero de inferencia sea de 9,8 GB.
+- La model card incluye enlaces de donación y promoción de otras releases; no constituyen documentación técnica verificable.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/kabcpc/Ternary-Flint-40B-GGUF
-- Modelo base: https://huggingface.co/RecursiveSI/flint
-- Build alternativo (Unsloth): https://huggingface.co/unsloth/flint-UD-IQ1_M
-- Repositorio llama.cpp (referenciado en los comandos): https://github.com/ggerganov/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/kabcpc/Ternary-Flint-40B-GGUF
+- Modelo base: https://huggingface.co/dima6312/Flint-40B-A2.5B-abliterated
+- Release posterior del ecosistema: https://huggingface.co/kabcnd/Kenzan-Flint-40B-Hepta48Up-GGUF
+- Colección Kenzan para Apple Silicon: https://huggingface.co/kabcnd
+- Modelo compatible con stock: https://huggingface.co/kabcnd/Kenzan-Qwen3.8-27B-PinGrid-GGUF
+- Modelo multimodal de audio: https://huggingface.co/kabcnd/Kenzan-Haru-4B-PinGrid-GGUF
+- Runtime parcheado (referencia): https://github.com/PrismML-Eng/llama.cpp
+- Prism ML en Hugging Face: https://huggingface.co/prism-ml
+- Donaciones del autor: https://ko-fi.com/kabcpc

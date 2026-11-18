@@ -2,135 +2,124 @@
 
 ## Resumen
 
-Jev-Style-Qwen3.5-2B-Decision es un modelo de decisión derivado de Qwen/Qwen3.5-2B-Base y publicado por el usuario chaoliangUNSW. No es un modelo de chat: no genera texto libre, sino que recibe un estado (por ejemplo, un titular o una frase), una pregunta tipada y una lista cerrada de opciones, y devuelve una distribución de probabilidad calibrada sobre esas opciones en una única pasada de prefill y desde una única posición de token. Sigue el patrón "System One" descrito por TypeSafe AI (Jev, 2026), aunque el autor indica explícitamente que se trata de una reproducción independiente y no afiliada.
+Jev-Style-Qwen3.5-2B-Decision es un modelo de decisión y clasificación de texto afinado a partir de Qwen/Qwen3.5-2B-Base por Chaoliang Yan (chaoliangUNSW). No es un modelo generativo al uso: recibe un estado, una pregunta y una lista de opciones, y devuelve la opción elegida junto con probabilidades calibradas extraídas de una única posición de token. Está pensado para tareas de enrutamiento, clasificación y puntuación de alternativas fijas donde se necesita una probabilidad fiable más que texto libre.
 
-El modelo cubre tres tipos de decisión: Choice (elegir entre N opciones declaradas), Bool (probabilidad de que una proposición sea verdadera) y Score (distribución sobre niveles ordenados y su esperanza como puntuación continua). La aportación principal es la calibración: un temperature ajustado sobre 4.366 ejemplos reservados se pliega en el peso final de RMSNorm, de modo que los logits ya salen calibrados sin ningún post-procesado en inferencia. Con 1.942.653.248 parámetros totales y licencia Apache 2.0, está pensado para integrarse como función de decisión dentro de pipelines, no como asistente conversacional.
+Esta ficha cubre la versión v1, publicada el 21 de septiembre de 2026 y archivada por el autor. La release recomendada actualmente es la 2B v4 (texto e imágenes) y, para texto ligero, la 0.8B v3. La v1 se mantiene únicamente por compatibilidad con integraciones existentes y solo funciona a través del cliente incluido en este repositorio; el paquete `jev-style` no la carga.
 
-Su relevancia práctica está en que mejora de forma sustancial a su modelo base en tareas de clasificación y decisión, y lo hace sin coste de latencia añadido (77 ms frente a 76 ms por decisión en M1 Max con MLX bf16). Se distribuye principalmente en GGUF (Q4_K_M, Q8_0 y BF16) y puede ejecutarse en LM Studio y llama.cpp, lo que lo hace desplegable en hardware de consumo. Existe una versión posterior más pequeña, Jev-Style-0.8B-Decision-v3, que el autor recomienda por encima de esta.
+El modelo tiene 1.942.653.248 parámetros, licencia Apache 2.0, soporte exclusivo de inglés y se distribuye en formato GGUF con cuantizaciones Q4_K_M, Q8_0 y BF16. Su interés técnico reside en la calibración: reporta un error de calibración esperado (ECE) de 0.017 sobre 1.500 ejemplos retenidos, frente a 0.065 del modelo base en zero-shot.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Derivada de Qwen3.5-2B-Base; el autor menciona un forward Gated DeltaNet paralelo por chunks en el pipeline de entrenamiento, pero no se detalla la arquitectura completa |
-| Parametros totales | 1.942.653.248 (~1,94B) |
-| Parametros activos | No aplica (no se describe como MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (1,3 GB), GGUF Q8_0 (2,1 GB), GGUF BF16 (3,9 GB); MLX bf16 para Apple Silicon |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3.5-2B-Base); cabecera de decisión sobre una posición de token |
+| Parametros totales | 1.942.653.248 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible para la v1 (la v4 hospedada usa 8.192 tokens, dato no aplicable a esta versión) |
+| Tipos de cuantizacion | Q4_K_M, Q8_0, BF16 (GGUF); build MLX bf16 en repositorio aparte |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repositorio principal), safetensors (modelo base), MLX bf16 |
+| Formato de pesos | GGUF; MLX bf16 en repositorio separado |
+| Tarea (pipeline) | text-classification |
 | Modelo base | Qwen/Qwen3.5-2B-Base |
-| Tarea | text-generation (en la práctica, función de decisión con clasificación) |
-| Descargas / likes | 5.279 descargas, 12 likes |
-| Fecha de creación / actualización | 21-09-2026 / 24-09-2026 |
+| Tamano del repositorio | 7,3 GB |
+| Descargas / likes | 16.217 / 37 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-2B-Base y se adapta mediante LoRA de rango 16 aplicado a todas las capas lineales, con una función de pérdida basada en log-score en lugar de la pérdida de modelado de lenguaje habitual. La decisión se extrae de una única posición de token: el modelo puntúa las letras de las opciones declaradas y el cliente renormaliza esas probabilidades. No hay decodificación de texto ni generación autoregresiva en el uso previsto.
+El modelo parte de Qwen3.5-2B-Base, un transformer decoder-only de aproximadamente 1,94 mil millones de parámetros, y se afina para una tarea de decisión restringida: dado un estado, una pregunta y un conjunto de opciones (hasta 26 letras según la model card de la v1), el modelo produce la decisión leyendo las probabilidades en una única posición de token. La salida no es texto generado, sino una distribución calibrada sobre las opciones.
 
-El detalle técnico más destacable es el tratamiento de la calibración y del coste de entrenamiento. Un temperature ajustado sobre 4.366 ejemplos reservados se integra directamente en el peso final de RMSNorm, de forma que toda la distribución de salida ya viene calibrada y no requiere ninguna corrección en tiempo de inferencia. Además, el autor reporta la construcción de un forward diferenciable de Gated DeltaNet, paralelo por chunks, que reproduce la ruta de entrenamiento token a token con un error de 1e-6 (salidas, estado y todos los gradientes) y es 6,5 veces más rápido por paso, medido sobre el modelo hermano de 0,8B. Los datos de entrenamiento concretos (número de tokens, composición exacta del dataset y si hubo RLHF o DPO) no se detallan en la información disponible; sí se listan como datasets asociados nyu-mll/glue, fancyzhx/ag_news, google/boolq y SetFit/sst5.
+El ajuste se realizó sobre datasets de clasificación y comprensión: nyu-mll/glue, fancyzhx/ag_news, google/boolq y SetFit/sst5. El autor indica que la v1 no utilizó salidas de Jev (a diferencia de la v4, entrenada en parte con etiquetas suaves destiladas de TypeSafe Jev 1.14 vía API pública). No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron RLHF o DPO. La innovación destacable es la calibración de las probabilidades sin post-procesado: las probabilidades se usan tal cual las producen los pesos liberados.
 
 ## Capacidades
 
-- Decisión de tipo Choice: selecciona una opción entre N declaradas y devuelve una probabilidad para cada una. Verificado con listas de opciones sin el límite de 26 letras en la versión v3 (probado con 77 opciones).
-- Decisión de tipo Bool: devuelve la probabilidad de que una proposición sea verdadera.
-- Decisión de tipo Score: produce una distribución sobre niveles ordenados y su esperanza como puntuación continua.
-- Calibración nativa: ECE de 0,017 medido sobre 1.500 ejemplos reservados, sin post-procesado.
-- Clasificación de texto: sección de noticias, sentimiento, inferencia de lenguaje natural y preguntas booleanas.
-- Funciona como endpoint compatible con la API de OpenAI (`/v1/chat/completions`), solicitando un token con `top_logprobs`.
-- No soporta salida fuera de las opciones declaradas: no puede responder a preguntas abiertas ni generar texto.
-- No se documentan capacidades de tool calling, uso de agentes, razonamiento multi-paso, visión ni audio en esta ficha.
-- Multilingüismo: la ficha de Hugging Face declara únicamente inglés. La cobertura de 51 idiomas corresponde a la versión v3, no a este modelo.
+- Clasificación de texto con etiquetas fijas: devuelve la opción elegida y su probabilidad calibrada.
+- Puntuación de alternativas: asigna probabilidad a cada opción de una lista cerrada.
+- Decisiones de tipo sí/no y de elección múltiple sobre estados y preguntas.
+- Enrutamiento y triaje: selección de una ruta o categoría entre un conjunto predefinido.
+- Probabilidades calibradas utilizables directamente como umbrales de confianza.
+- Ejecución local en LM Studio y llama.cpp mediante el cliente incluido en el repositorio.
+- Capacidad multilingüe: no (solo inglés en esta versión).
+- Tool calling, agentes, visión, audio y modo thinking: no disponibles en esta versión.
 
 ## Casos de uso
 
-- Clasificación de noticias por sección: con AG News alcanza el 87,7% de acierto frente al 84,7% del base en zero-shot; se usaría como paso de enrutamiento que asigna cada titular a una sección declarada.
-- Análisis de sentimiento en reseñas: SST-2 pasa del 87,3% al 92,7% y SST-5 del 32,0% al 61,7%, lo que permite clasificar críticas en escalas de cinco niveles con probabilidades calibradas por nivel.
-- Enrutamiento y triaje en pipelines: dado un texto y un conjunto de destinos posibles, el modelo devuelve una distribución que puede usarse para decidir la ruta y para medir la confianza antes de escalar a un humano.
-- Moderación de contenido con umbral explícito: al ser una decisión de tipo Bool, se puede fijar un umbral sobre la probabilidad de que un contenido viole una política, con la garantía de que un 80% declarado se corresponde con un 80% real.
-- Verificación de afirmaciones contra evidencia corta: BoolQ mejora del 73,0% al 82,7%, útil para comprobar si un pasaje respalda una afirmación antes de publicarla o indexarla.
-- Puntuación y ranking de candidatos: el tipo Score permite ordenar respuestas, fragmentos o productos y obtener una puntuación continua a partir de la esperanza de la distribución.
-- Inferencia de lenguaje natural en validación de datos: MNLI sube del 52,3% al 86,7%, aplicable a comprobar si una premisa implica una hipótesis en procesos de control de calidad de datos sintéticos.
-- Señal de confianza en sistemas híbridos: por su ECE de 0,017, puede actuar como cabecera de clasificación calibrada delante de un modelo generativo, decidiendo cuándo responder automáticamente y cuándo derivar.
-- Etiquetado a escala en local: con Q4_K_M (1,3 GB) mantiene 82,4% de acierto, lo que permite etiquetar grandes volúmenes en una GPU de consumo o incluso en un portátil con Apple Silicon.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket como estado, una pregunta de clasificación y la lista de colas disponibles, y devuelve la cola con una probabilidad calibrada que permite derivar a revisión humana cuando la confianza es baja.
+- Moderación por categorías: clasificación de contenido en un conjunto cerrado de etiquetas (por ejemplo, ag_news o SST-5) con umbrales de confianza fiables gracias al ECE de 0.017.
+- Triaje en pipelines de datos: etiquetado automático de grandes volúmenes de texto en LM Studio o llama.cpp, con la variante Q4_K_M de 1,3 GB para despliegues con recursos limitados.
+- Puerta de decisión en sistemas RAG: decidir si una consulta requiere recuperación externa o puede responderse directamente, usando la probabilidad de la opción como señal de confianza.
+- Clasificación de sentimiento y análisis de opiniones: uso directo sobre SST-5 (el autor reporta una mejora de 32,0% a un valor superior en esta tarea) para análisis de reseñas.
+- Inferencia de intención en asistentes conversacionales: mapear la última intervención del usuario a una de las intenciones predefinidas del sistema antes de invocar la lógica de negocio.
+- Validación de formularios y documentos: decisiones de tipo sí/no sobre si un texto cumple un criterio (por ejemplo, si una descripción contiene la información requerida), con probabilidad asociada para auditoría.
 
 ## Benchmarks y rendimiento
 
-Todos los resultados están medidos sobre datos no vistos en entrenamiento y con las probabilidades tal y como las producen los pesos publicados, sin post-procesado.
+Resultados reportados por el autor sobre datos retenidos, con las probabilidades tal cual las producen los pesos:
 
-| Métrica | Qwen3.5-2B-Base, zero-shot | Jev-Style-Qwen3.5-2B-Decision |
+| Metrica | Qwen3.5-2B-Base zero-shot | Jev-Style 2B v1 |
 |---|---|---|
-| Exactitud, 5 tareas de decisión (1.500 ejemplos reservados) | 65,9% | 82,3% |
-| Error de calibración (ECE) en esas tareas | 0,065 | 0,017 |
-| Log-verosimilitud negativa / Brier score | 0,786 / 0,446 | 0,418 / 0,242 |
-| Error de calibración en tipos de tarea nunca vistos en entrenamiento | 0,155 | 0,075 |
-| Latencia por decisión (M1 Max, MLX bf16) | 76 ms | 77 ms |
+| Precision, 5 tareas de decision (1.500 ejemplos retenidos) | 65,9% | 82,3% |
+| Error de calibracion (ECE) en esas tareas | 0,065 | 0,017 |
+| NLL / Brier score | 0,786 / 0,446 | 0,418 / 0,242 |
+| ECE en tipos de tarea no vistos en entrenamiento | 0,155 | 0,075 |
+| Latencia por decision (M1 Max, MLX bf16) | 76 ms | 77 ms |
 
-Desglose por tarea:
+Precisión por cuantización sobre 500 ejemplos retenidos y coincidencia de decisión con bf16:
 
-| Tarea | Qwen3.5-2B-Base, zero-shot | Jev-Style-Qwen3.5-2B-Decision |
-|---|---|---|
-| MNLI | 52,3% | 86,7% |
-| SST-5 | 32,0% | 61,7% |
-| BoolQ | 73,0% | 82,7% |
-| SST-2 | 87,3% | 92,7% |
-| AG News | 84,7% | 87,7% |
-
-Rendimiento por cuantización (exactitud sobre 500 ejemplos reservados) y fidelidad frente a bf16:
-
-| Fichero | Tamaño | Misma decisión que bf16 | Exactitud (500 reservados) |
+| Fichero | Tamano | Misma decision que bf16 | Precision (500 retenidos) |
 |---|---|---|---|
 | Q4_K_M | 1,3 GB | 94,4% | 82,4% |
 | Q8_0 | 2,1 GB | 99,4% | 81,6% |
 | BF16 | 3,9 GB | 99,8% | 81,6% |
 
-Verificación de extremo a extremo a través del servidor de LM Studio sobre 500 ejemplos reservados: 81,6% de exactitud, ECE 0,028 y aproximadamente 110 ms por decisión sobre HTTP. En tipos de tarea no vistos (clasificación de emociones y RTE) la calibración mejora de 0,155 a 0,075 con exactitud sin cambios (64,5%). No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+Mejoras por tarea citadas en la model card: MNLI 52,3% -> 86,7%; SST-5 32,0% -> (valor truncado en la información disponible). El autor señala además que un ECE de 0,017 sobre 1.500 ejemplos es estadísticamente indistinguible de una calibración perfecta (percentil 95 de 0,025 por ruido de muestreo).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,3 GB para Q4_K_M, 2,1 GB para Q8_0 y 3,9 GB para BF16, sin contar el overhead del runtime ni la caché de contexto.
-- GPU recomendadas: al ser un modelo de ~1,94B, cabe holgadamente en cualquier GPU de consumo reciente. No requiere A100 ni H100. Una RTX 4090, RTX 3090, RTX 4080 o incluso GPUs de gama media con 8 GB de VRAM son suficientes para cualquiera de las cuantizaciones publicadas.
-- Compatibilidad con GPU de consumo: sí, en todas las cuantizaciones. Q4_K_M entra en GPUs con 4 GB o menos.
-- Apple Silicon: existe una build MLX bf16 específica. Las latencias reportadas (76-77 ms por decisión) están medidas en un M1 Max.
-- Opciones de despliegue: LM Studio (servidor local en la pestaña Developer), llama.cpp y `llama-server`, y MLX para Apple Silicon. El endpoint es compatible con la API de OpenAI.
-- Latencia y throughput: 77 ms por decisión en M1 Max con MLX bf16, prácticamente idéntico a los 76 ms del modelo base en la misma configuración. A través del servidor HTTP de LM Studio, unos 110 ms por decisión. No se publican cifras de throughput en GPUs dedicadas.
+- VRAM estimada: aproximadamente 1,3 GB para Q4_K_M, 2,1 GB para Q8_0 y 3,9 GB para BF16 (tamaños de fichero; añadir overhead del runtime).
+- Cabe en GPU de consumo: sí, cualquier GPU con 4 GB o más de VRAM para Q4_K_M; 6 GB o más para Q8_0.
+- GPU recomendadas: RTX 3060/4060 y superiores para cuantizaciones GGUF; A100/H100 no son necesarias dado el tamaño. En Apple Silicon existe build MLX bf16.
+- Despliegue: LM Studio y llama.cpp (soporte oficial de esta versión mediante el cliente del repositorio); el paquete `jev-style` y el snippet "Use this model" del Hub no aplican a la v1. vLLM y TGI no están indicados en la información disponible.
+- Latencia: 77 ms por decisión en M1 Max con MLX bf16, sin coste adicional frente al modelo base (76 ms).
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Exactitud | Calibración (ECE) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Jev-Style-Qwen3.5-2B-Decision (este modelo) | 1,94B | no disponible | 82,3% en 5 tareas (1.500 ejemplos); 53,4% en las 2.000 decisiones tipadas | 0,017 | Apache 2.0 | GGUF, MLX bf16 |
-| Qwen3.5-2B-Base (zero-shot) | 1,94B | no disponible | 65,9% en 5 tareas | 0,065 | Apache 2.0 | safetensors |
-| Jev-Style-0.8B-Decision-v3 (sucesor) | 0,8B | 25.600 tokens | 79,2% en las 2.000 decisiones tipadas | no disponible | no disponible | GGUF |
-| Jev-Style-Qwen3.5-2B-Decision-v2 | no disponible | no disponible | 73,5% en las 2.000 decisiones tipadas | no disponible | no disponible | GGUF |
+| Modelo | Parametros | Contexto | Precision (decisiones) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Jev-Style 2B v1 (este) | 1,94B | no disponible | 82,3% (1.500 retenidos) | Apache 2.0 | GGUF en HF; cliente propio |
+| Jev-Style 0.8B v3 | 0,8B | 25.600 tokens | 79,2% (2.000 decisiones tipadas) | no disponible en la informacion | GGUF de 0,53 GB; paquete `jev-style` |
+| Jev-Style 2B v4 | no disponible | 8.192 tokens (servicio hospedado) | no disponible | no disponible en la informacion | Texto e imagenes; paquete `jev-style` |
+| Qwen3.5-2B-Base (base) | 1,94B | no disponible | 65,9% zero-shot | no disponible en la informacion | Pesos base en HF |
 
-Advertencia sobre la comparación: las dos métricas de exactitud de esta tabla no son directamente comparables entre sí. El 82,3% corresponde a 1.500 ejemplos de cinco tareas de decisión, mientras que el 53,4% corresponde a un conjunto distinto de 2.000 decisiones tipadas sobre el que el autor reporta los resultados de v1, v2 y v3. Según esa segunda métrica, esta versión (v1) queda claramente por debajo de las versiones posteriores. No se dispone de información sobre modelos comparables de otros autores para esta categoría concreta de modelo de decisión.
+La comparativa con modelos de clasificación de propósito general (por ejemplo, clasificadores tipo SetFit o BERT afinados) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto. Cualquier uso como modelo de chat devuelve continuaciones de texto sin sentido. Es obligatorio usar el formato de prompt documentado, que debe terminar en `Answer:`.
-- No puede responder fuera de las opciones declaradas. No hay margen para respuestas abiertas, aclaraciones ni razonamiento explícito.
-- Solo inglés: la ficha de Hugging Face declara únicamente `en`. El soporte de 51 idiomas corresponde a la versión v3, no a este repositorio.
-- Rendimiento inferior a versiones posteriores: el propio autor indica que v3, con 0,8B de parámetros, es "más pequeña y más fuerte", con 79,2% frente al 53,4% de v1 en las 2.000 decisiones tipadas. Esta versión se conserva principalmente por reproducibilidad histórica.
-- La calibración se degrada fuera de la distribución de entrenamiento: el ECE sube de 0,017 en las tareas conocidas a 0,075 en tipos de tarea nunca vistos. Sigue siendo mejor que el base (0,155), pero conviene validar el umbral en el dominio concreto de despliegue.
-- La calibración depende de que se solicite correctamente un único token con `top_logprobs` y de que se renormalicen las letras de las opciones. Un cliente distinto o un post-procesado adicional invalida las garantías reportadas.
-- Riesgo de sesgo: no se documenta ningún análisis de sesgo. Al entrenarse sobre GLUE, AG News, BoolQ y SST-5, hereda los sesgos de dominio de esos datasets (noticias en inglés, reseñas, NLI académico).
-- Riesgo de alucinación: no aplica en el sentido generativo, ya que no genera texto, pero sí existe riesgo de sobreconfianza en dominios alejados del entrenamiento. El ECE de 0,075 en tareas nuevas acota ese riesgo de forma cuantificable.
-- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar la licencia del modelo base Qwen3.5-2B-Base.
-- El tamaño del repositorio es de 7,3 GB, muy superior a la suma de los tres GGUF publicados, ya que incluye también los pesos en otros formatos y artefactos.
-- Un chat nuevo por decisión: el autor advierte de que en una ventana de chat hay que iniciar una conversación nueva para cada decisión, lo que complica su uso interactivo.
+- Versión archivada: el autor recomienda migrar a la 2B v4 o a la 0.8B v3; la v1 solo se mantiene por compatibilidad.
+- Solo inglés: no soporta otros idiomas, pese a que la v3 declara 51 idiomas.
+- No es un modelo generativo: no produce texto libre, solo decisiones sobre opciones predefinidas.
+- Límite de opciones: la v1 está limitada a 26 opciones (letras); la v3 elimina esta restricción (probada con 77 opciones).
+- Dependencia de cliente: requiere el cliente incluido en el repositorio; el paquete `jev-style` no carga esta versión.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de clasificación errónea en dominios alejados de los datos de entrenamiento (GLUE, ag_news, boolq, sst5).
+- Sesgos: no se documentan sesgos específicos en la información disponible; al derivar de Qwen3.5-2B-Base, puede heredar los sesgos del corpus de entrenamiento del modelo base.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no declara afiliación con TypeSafe ni respaldo alguno.
+- Calibración fuera de distribución: el ECE en tipos de tarea no vistos sube a 0,075, cinco veces el de las tareas de entrenamiento; conviene validar umbrales en el dominio propio.
+- Capacidad del servicio hospedado: sin cuota fija por cuenta, pero con capacidad compartida y respuestas 429 con `Retry-After`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF
-- Repositorio GitHub: https://github.com/lawrence3699/Jev-Style-Qwen3.5-2B-Decision-GGUF
-- Versión v2: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF
-- Versión v3 (0,8B, recomendada por el autor): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-GGUF
-- Build MLX bf16 para Apple Silicon: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16
-- Sitio del autor con benchmarks y quickstart: https://jevstyle.com/#v1
-- Artículo original sobre modelos System One y Jev (TypeSafe AI, 2026): https://typesafe.ai/blog/introducing-system-one-models-and-jev
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
-- Anuncio de la serie Qwen3.5: https://qwen.ai/blog?id=qwen3.5
-- Repositorio no oficial de Qwen3.5: https://github.com/ABDtmx/Qwen3.5
-- Imagen Docker ai/qwen3.5: https://hub.docker.com/r/ai/qwen3.5
+- Version v2: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF
+- Version 0.8B v3: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-GGUF
+- Version 2B v4: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4
+- Build MLX bf16: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16
+- Demo en vivo (texto e imagen): https://huggingface.co/spaces/chaoliangUNSW/jev-style-2b
+- Sitio del proyecto: https://jevstyle.com/models/
+- Guia de instalacion local: https://jevstyle.com/guides/run-locally/
+- Guia de clasificacion de texto en Python: https://jevstyle.com/guides/local-text-classification/
+- Guia de modelos de decision locales y Apple silicon: https://jevstyle.com/guides/local-decision-models/
+- Casos de uso de vision local: https://jevstyle.com/use-cases/local-vision-decisions/
+- Benchmark de enrutamiento bancario: https://jevstyle.com/benchmarks/banking-routing/
+- Estado del servicio hospedado: https://jevstyle.com/api/#service-status
+- Health check de la API: https://api.jevstyle.com/healthz

@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "jekunz/smollm-135m-cpt-fineweb-faroese-transfer-from-scandimerge-2-seed1",
+  "slug": "jekunz-smollm-135m-cpt-fineweb-faroese-transfer-from-scandimerge-2-seed1",
+  "author": "jekunz",
+  "url": "https://huggingface.co/jekunz/smollm-135m-cpt-fineweb-faroese-transfer-from-scandimerge-2-seed1",
+  "created_at": "2026-11-18T10:50:39.000Z",
+  "updated_at": "2026-11-18T10:50:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "fo",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:jekunz/smollm135m-da1-is1-ties",
+    "base_model:finetune:jekunz/smollm135m-da1-is1-ties",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "context_length": null,
+  "base_model": "jekunz/smollm135m-da1-is1-ties",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Commercial Real Estate Loan Types Investors Need",
+      "url": "https://belending.com/commercial-real-estate-loan/",
+      "snippet": "Jun 13, 2025 · Discover commercial real estate loan options that fund in days, not months. From bridge loans to construction …"
+    },
+    {
+      "title": "COMMERCIAL REAL ESTATE LOANS - U.S. Bank",
+      "url": "https://www.usbank.com/business-banking/banking-products/business-lending/business-loans/commercial-real-estate-loan.html",
+      "snippet": "Commercial real estate loans from U.S. Bank offer competitive rates and flexible term lengths. Remodel or expand your business …"
+    }
+  ]
+}

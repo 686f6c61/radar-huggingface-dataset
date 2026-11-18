@@ -2,100 +2,103 @@
 
 ## Resumen
 
-Qwen3.8-27B-QSA-GGUF es una instantánea de despliegue cuantizada en Q8_0 del modelo multimodal Qwen3.8-27B-QSA-MM2-BF16, publicada por el usuario higa2515. Se trata de una conversión GGUF de un modelo de 27.373.132.800 parámetros (aproximadamente 27,4 mil millones) con capacidades de entrada de texto e imagen, empaquetada junto a un runtime nativo parcheado que sustituye al llama.cpp estándar. El modelo base emplea una arquitectura híbrida que combina 48 capas Gated DeltaNet con 16 capas de atención completa, sobre las que se aplica una implementación propia denominada QSA (atención con bloques fijos de K=2.048).
+Qwen3.8-27B-QSA-GGUF es una serie de cuantizaciones GGUF del modelo Qwen3.8-27B adaptado con Qwen Sparse Attention (QSA), publicada por el usuario higa2515. El modelo base es un transformer hibrido de 27.373.132.800 parametros (aproximadamente 27,4 mil millones) que combina 16 capas de atencion completa con 48 capas Gated DeltaNet, y al que se le han anadido 80 tensores de indizadores QSA en FP32 para habilitar un mecanismo de atencion dispersa aprendida.
 
-La relevancia de esta publicación es doble. Por un lado, ofrece un punto de partida reproducible para ejecutar un modelo multimodal de ~27B con ventana de contexto de hasta 262.144 tokens en hardware de dos GPU de 32 GB. Por otro, documenta de forma explícita una experimentación de velocidad: el autor mide 48,94 token/s sin contexto añadido y 41,07 token/s con 261.120 tokens de entrada, con una caída del 16,08 %. El propio autor advierte de que se trata de un experimento de rendimiento y no de una prueba de preservación de la inteligencia general del modelo.
+La innovacion principal es QSA: un indizador comprimido y aprendido que selecciona el contexto en bloques de cuatro tokens. En esta adaptacion de 27B, las 16 capas de atencion completa usan un K fijo de 2.048 mas el bloque actual, mientras que las 48 capas Gated DeltaNet conservan su arquitectura original. Todas las entradas KV siguen asignadas en memoria: QSA reduce el computo de atencion y las lecturas de KV, no el almacenamiento de la cache KV.
 
-La ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor. No hay datos de benchmarks de calidad, idiomas soportados ni resultados comparativos con modelos similares, por lo que esos apartados se marcan como no disponibles.
+El repositorio ofrece variantes Q8_0 y tres recetas mixtas de Unsloth (UD-Q4_K_M, UD-Q5_K_M, UD-Q6_K), todas con los mismos indizadores QSA en FP32. Requiere un motor de inferencia especifico (fork de llama.cpp) que implementa QSA para texto, imagen y video, con M-RoPE, MTP y reutilizacion de prefix-cache en vivo. La licencia es Apache 2.0 y el pipeline declarado es image-text-to-text.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 48 capas Gated DeltaNet + 16 capas de atención completa con QSA (bloques de 4, K=2.048); MTP denso; encoder de visión y proyector multimodales |
-| Parametros totales | 27.373.132.800 (~27,4 B) |
-| Parametros activos | no disponible (no se describe como MoE) |
-| Longitud de contexto | 262.144 tokens (configuración medida por el autor) |
-| Tipos de cuantizacion | Q8_0 en matrices principales; indexadores en FP32; tensores MTP retenidos; proyector de visión en F16 |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (pesos); el archivo de runtime incluye código MIT y avisos de terceros |
-| Formato de pesos | GGUF (Q8_0) + mmproj GGUF (F16) + archivo tar.gz con runtime Linux x86_64 sm70 |
+| Arquitectura | Transformer hibrido: 16 capas de atencion completa con QSA + 48 capas Gated DeltaNet |
+| Parametros totales | 27.373.132.800 (27,4 mil millones) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 262.144 tokens (configuracion de referencia del launcher) |
+| Tipos de cuantizacion | Q8_0, UD-Q4_K_M, UD-Q5_K_M, UD-Q6_K (mixtas de Unsloth); proyector visual F16 |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors BF16 disponibles en el repo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido en el que la mayor parte de la profundidad (48 capas) corresponde a Gated DeltaNet, un mecanismo de estado recurrente lineal, mientras que 16 capas conservan atención completa. Sobre estas últimas se aplica la implementación QSA, que opera con K fijo de 2.048 y bloques de cuatro más el bloque actual, manteniendo todas las entradas KV asignadas. El modelo incorpora además un módulo MTP (multi-token prediction) denso, un encoder de visión con su proyector y un índice de claves agrupadas para reutilización de prefijo. El checkpoint BF16 de referencia usa un fallback multimodal denso distinto del camino nativo QSA, según advierte el autor.
+El modelo parte de Qwen3.8-27B, un transformer hibrido que intercala 16 capas de atencion completa con 48 capas Gated DeltaNet. Sobre esa base, la adaptacion QSA anade 16 indizadores aprendidos (80 tensores en FP32 en total) que seleccionan contexto en bloques de cuatro tokens con un K fijo de 2.048 mas el bloque actual en cada capa de atencion completa. Segun la model card, los indizadores se anadieron sin reentrenamiento ni recuantizacion de los tensores originales: las variantes Unsloth reutilizan los 866 tensores originales (incluidos 15 tensores MTP) byte a byte y suman los 80 indizadores, dando 946 tensores por modelo.
 
-No se publican en la información disponible detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. El autor indica que el backbone preentrenado, el encoder de visión, el proyector y el MTP se congelaron durante la conversión. La conversión a GGUF preserva los 80 tensores del indexador con coincidencia exacta respecto a la exportación FP32 de MM2 tras la transformación de normalización documentada; los 866 tensores restantes son idénticos a la conversión Q8_0 previa, no a los bytes BF16 sin cuantizar. La innovación técnica destacable es el runtime nativo: llama.cpp estándar no reproduce esta implementación QSA, por lo que se distribuye un binario parcheado con soporte de reutilización de prefijo (KV objetivo, claves del indexador y carry de MTP en una única ranura activa) y MTP con lag/async desactivados.
+La referencia arquitectonica es el paper *On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability* (arXiv:2608.30320). No se especifican en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO. La innovacion tecnica destacable es la propia QSA (atencion dispersa con indizador comprimido), junto con el soporte de M-RoPE, MTP (multi-token prediction) y reutilizacion de prefix-cache en vivo en el motor de inferencia. En la referencia BF16 con Transformers, el texto usa SDPA enmascarado con QSA, mientras que las conversaciones de imagen y video recurren a atencion densa; la ejecucion MTP no esta implementada en esa referencia.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con pipeline declarado `image-text-to-text` y tag `conversational`.
-- Entrada de imagen a través del proyector multimodal incluido (`mmproj-Qwen3.8-27B-QSA-F16.gguf`).
-- Entrada de vídeo en el camino nativo QSA, según la model card.
-- Procesamiento de contexto largo: ventana configurada de hasta 262.144 tokens con reutilización de prefijo dentro de una misma sesión de servidor.
-- Predicción multi-token (MTP) con borrador máximo de 2 tokens, sujeta a la tasa de aceptación de cada tarea.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible.
-- Modo thinking explícito: no disponible.
+- Generacion de texto conversacional multi-turno con contexto de hasta 262.144 tokens en la configuracion de referencia.
+- Procesamiento multimodal de imagen y texto (pipeline image-text-to-text) mediante el proyector `mmproj-Qwen3.8-27B-QSA-F16.gguf`.
+- Procesamiento de video segun la model card (QSA para texto, imagen y video en el motor de llama.cpp).
+- Razonamiento de multiples pasos y soporte de agentes mediante MTP (multi-token prediction) con maximo de 2 borradores en la configuracion de referencia.
+- Reutilizacion de prefix-cache en vivo (cubre KV objetivo, claves del indizador agrupadas y carry de MTP en una sola ranura), aunque no persiste entre reinicios del servidor.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Procesamiento de documentos largos con imágenes intercaladas: la ventana de 262.144 tokens y la entrada multimodal permiten ingerir informes, contratos o expedientes completos con figuras y tablas en una sola pasada, sin trocear el contenido.
-- Análisis de vídeo de duración media: el camino nativo admite entrada de vídeo, lo que habilita resumen y extracción de eventos en clips, con la cautela de que el autor solo ha verificado probes multimodales hasta 64k.
-- Asistencia a la programación en local: las pruebas de throughput mezclan tareas de código y prosa libre, con 48,94 token/s a contexto cero, un régimen adecuado para autocompletado y generación de funciones en un entorno controlado.
-- Despliegue en infraestructura de dos GPU de 32 GB: el runtime capturado funciona con Tesla V100-PCIE y PG500, lo que permite montar un servicio interno de inferencia sin GPUs de gama alta modernas.
-- Investigación sobre atención lineal y modelos híbridos: la combinación de Gated DeltaNet con QSA y MTP ofrece un banco de pruebas para estudiar el equilibrio entre coste de atención y calidad en contextos largos.
-- Evaluación de decodificación especulativa: el MTP con borrador 2 y las métricas de aceptación por tarea permiten medir la ganancia real de esta técnica en cargas mixtas.
-- Réplica de experimentos de cuantización: la separación entre indexadores FP32 y matrices Q8_0 facilita analizar el impacto de la cuantización selectiva en modelos multimodales.
+- Analisis de documentos extensos con soporte visual: el modelo puede procesar conversaciones de imagen y texto con contexto de hasta 262.144 tokens, adecuado para extraccion de informacion de PDFs escaneados o informes con graficos, aunque en la referencia BF16 las conversaciones de imagen recurren a atencion densa.
+- Asistentes conversacionales de largo recorrido: la reutilizacion de prefix-cache en vivo permite mantener sesiones multi-turno sin recalcular el prefijo, reduciendo latencia en dialogos prolongados.
+- Procesamiento de video para resumen o descripcion: el motor implementa QSA para video, lo que permite analizar clips con el proyector visual F16 compartido.
+- Despliegue en hardware de gama alta con dos GPU de 32 GB: la configuracion de referencia (Q8_0, dos GPU de 32 GB, split 1:1) encaja en estaciones con 2x RTX 5090 o similares para inferencia local de un modelo de 27B multimodal.
+- Investigacion sobre atencion dispersa: el repositorio incluye el motor, el codigo fuente y las instrucciones de compilacion, lo que permite reproducir los experimentos de QSA y comparar con la ruta densa original.
+- Evaluacion de retencion de calidad en cuantizaciones mixtas: las variantes UD-Q4_K_M, UD-Q5_K_M y UD-Q6_K permiten medir el impacto de la cuantizacion mixta sobre la perplejidad en ventanas de hasta 65.024 tokens.
+- Servicio local compatible con endpoints: el launcher expone por defecto 127.0.0.1:8091 (configurable con `QSA_HOST=0.0.0.0`), lo que facilita integrarlo en pipelines internos que consumen una API compatible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, DocVQA, etc.) en la información disponible. El autor incluye únicamente métricas de throughput medidas en su hardware:
+Los unicos datos publicados en la informacion disponible son comprobaciones limitadas de calidad de la referencia BF16 y de las variantes cuantizadas de Unsloth. No son resultados nativos de Q8_0 ni establecen una equivalencia general de rendimiento.
 
-| Metrica | Valor |
-|---|---|
-| Throughput a 0k de contexto añadido | 48,94 token/s (mediana por tarea, media armónica ponderada) |
-| Throughput a 261.120 tokens de entrada | 41,07 token/s |
-| Caída de throughput | 16,08 % |
-| Prefill en frío a 0k | 679,57 token/s |
-| Prefill en frío a 261.120 tokens | 1.071,53 token/s |
-| Longitud de prompt base (0k) | 490-563 tokens |
-| Tope de salida | 512 tokens, respetando EOS |
-| Metodología | 2 tareas de código + 2 de prosa libre, 3 repeticiones cada una |
+| Comprobacion | Original denso | QSA | Comparacion observada |
+|---|---:|---:|---|
+| Perplejidad de texto en 32.766 tokens (menor es mejor) | 7,072960 | 7,071384 | Ratio QSA/denso 0,99978 |
+| DocVQA de cuatro opciones, 50 items construidos | 50/50 | 50/50 | 100% de la puntuacion densa en esta prueba |
 
-El autor advierte de que la aceptación de MTP depende de la tarea y que estas cifras no son velocidades universales del modelo. Tampoco se ha completado una ejecución comparativa contra una variante densa equivalente.
+La prueba DocVQA no es la puntuacion estandar de DocVQA abierto. Para las variantes Unsloth Q4/Q5/Q6 se realizo una evaluacion teacher-forced con seis ventanas fijas, hasta 65.024 tokens de entrada, KV en FP16 y MTP desactivado, comparando la perplejidad de QSA frente a la ruta densa dentro de cada modelo cuantizado; los resultados numericos de esa comparacion no estan completos en la informacion proporcionada. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repo ocupa 30,3 GB, repartidos entre el GGUF Q8_0 principal, el proyector F16 y el archivo de runtime. La configuración medida usa dos GPU de 32 GB con reparto de capas 1:1.
-- GPU validadas por el autor: Tesla V100-PCIE (sm70) y PG500, con driver 580.178.04 y CUDA 12.9.
-- GPU consumer: no hay evidencia de que quepa en una única GPU consumer; el tamaño del checkpoint Q8_0 y la necesidad de runtime parcheado lo hacen poco probable en tarjetas de 24 GB sin cuantización adicional, que no se distribuye.
-- Opciones de despliegue: exclusivamente el runtime incluido en `qsa27b-mm2-linux-x86_64-sm70.tar.gz`. llama.cpp estándar no reproduce la implementación QSA. No se mencionan vLLM, TGI, Ollama ni otros motores.
-- Sistema operativo: Linux x86_64. Otro hardware requiere compilar desde el código fuente incluido y dimensionar memoria manualmente.
-- Configuración de ejecución medida: KV en FP16, contexto 262.144, batch 2.048, ubatch 512, MTP draft máximo 2, dirección por defecto 127.0.0.1:8091.
-- Latencia y throughput: ver tabla de la sección anterior.
+- VRAM estimada para inferencia: Q8_0 ocupa 29,26 GB de pesos; UD-Q6_K 22,19 GB; UD-Q5_K_M 19,98 GB; UD-Q4_K_M 16,67 GB; el proyector visual F16 anade 0,93 GB. A esto hay que sumar la cache KV, que QSA no reduce en almacenamiento (todas las entradas KV siguen asignadas).
+- Configuracion de referencia del autor: Q8_0, dos GPU de 32 GB, CUDA 12.9, split de capas 1:1, KV en FP16, contexto 262.144, batch 2.048, ubatch 512 y MTP con maximo 2 borradores.
+- GPU recomendadas: el binario capturado apunta a Linux x86_64 y NVIDIA sm70; la configuracion de referencia usa 2x 32 GB. Otras GPU y modelos pueden requerir un dimensionado de memoria distinto.
+- Cabe en GPU consumer: las variantes UD-Q4_K_M (16,67 GB) y UD-Q5_K_M (19,98 GB) podrian caber en GPU consumer de 24 GB, aunque la cache KV a contexto completo y el soporte sm70 del binario capturado condicionan el despliegue real.
+- Opciones de despliegue: exclusivamente el motor Qwen3.8-27B QSA para llama.cpp (fork en github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp); llama.cpp estandar no implementa esta ruta QSA. El paquete `qsa27b-linux-x86_64-sm70.tar.gz` incluye motor, librerias, codigo fuente, launcher e instrucciones de compilacion.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye comparaciones con otros modelos de tamaño o categoría similar, ni datos de benchmarks que permitan establecer una comparación rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-QSA (este) | 27,4 mil millones | 262.144 | Apache 2.0 | GGUF, BF16 | Atencion dispersa QSA, multimodal texto/imagen/video, requiere motor especifico |
+| Qwen3.8-27B (original denso) | 27,4 mil millones | No disponible | No disponible | BF16, GGUF (via unsloth) | Ruta densa de referencia; sirve de comparacion de perplejidad y DocVQA |
+| unsloth/Qwen3.8-27B-GGUF | 27,4 mil millones | No disponible | No disponible | GGUF | Cuantizaciones UD reutilizadas byte a byte en este repositorio; sin indizadores QSA |
+
+No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El autor declara explícitamente que se trata de un experimento de velocidad y no de una prueba de preservación de la inteligencia general del modelo.
-- Los probes multimodales nativos están limitados a 64k tokens; la calidad en imagen, vídeo, documentos largos y contextos de 128k y 262k está sin verificar.
-- Los resultados de perplejidad en BF16 y las pruebas DocVQA de cuatro opciones no establecen equivalencia de calidad para la inferencia nativa en Q8_0.
-- El checkpoint BF16 de referencia usa un fallback multimodal denso distinto del camino nativo QSA, por lo que los resultados entre ambas rutas no son directamente comparables.
-- llama.cpp estándar no puede reproducir esta implementación; el binario capturado está atado a Linux x86_64 y sm70, y requiere driver NVIDIA y bibliotecas CUDA 12 instalados en el host (no se redistribuyen).
-- La reutilización de prefijo no persiste entre reinicios del servidor; MTP con lag/async está desactivado.
-- No se instala ningún servicio automáticamente; el despliegue es manual.
-- Riesgo de alucinación, sesgos conocidos y comportamiento multilingüe: no documentados en la información disponible.
-- Licencia Apache-2.0 en los pesos, compatible con uso comercial; el archivo de runtime incorpora código MIT y avisos de terceros que deben revisarse y conservarse.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación comunitaria independiente.
+- Requiere un motor de inferencia especifico: llama.cpp estandar no implementa la ruta QSA, por lo que no basta con descargar el GGUF y usar Ollama o llama.cpp de serie.
+- El binario capturado esta compilado para Linux x86_64 y NVIDIA sm70; otras plataformas y arquitecturas de GPU requieren recompilar desde el codigo fuente incluido.
+- QSA reduce el computo de atencion y las lecturas KV, pero no el almacenamiento de la cache KV: todas las entradas KV siguen asignadas, lo que limita el ahorro de memoria a contexto largo.
+- Las comprobaciones de calidad publicadas son limitadas (perplejidad en 32.766 tokens y un DocVQA de cuatro opciones construido) y no establecen una equivalencia general de rendimiento con la ruta densa.
+- En la referencia BF16 con Transformers, las conversaciones de imagen y video recurren a atencion densa, y la ejecucion MTP no esta implementada; el comportamiento puede diferir del motor llama.cpp.
+- La reutilizacion de prefix-cache no persiste entre reinicios del servidor; MTP lag/async estan desactivados en el launcher capturado.
+- No hay datos publicados sobre sesgos, tasas de alucinacion ni cobertura idiomatica en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los artefactos de Unsloth reutilizados.
+- El repositorio ocupa 89,5 GB, por lo que la descarga selectiva de una sola variante es recomendable frente a la descarga completa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-GGUF
-- Pesos BF16 de origen: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-MM2-BF16
-- Runtime base: https://github.com/pentaCoxian/Qwen-V100-llama.cpp (commit `6209237df53569f07429f3f79fc5354de5fe704f`)
-- Repositorio del motor preparado: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp
+- Pesos BF16 y restauracion del modelo original: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-BF16
+- Paper QSA: https://arxiv.org/abs/2608.30320
+- Repositorio del motor (GitHub): https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp
+- Instrucciones de compilacion: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp#build-from-source
+- Guia de runtime: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp/blob/main/qsa27b/RUNTIME.md
+- GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Revision de Unsloth referenciada: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/tree/4ca720788d1e01f1bff70c033e0d0028fd02e502
+- Perfil del autor en X: https://x.com/_ryu15_
+- Licencia: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-GGUF/blob/main/LICENSE

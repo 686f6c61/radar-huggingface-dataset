@@ -80,31 +80,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Supermarchés Lidl en France",
-      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
-      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
-    },
-    {
-      "title": "Supermarchés Lidl à Mulhouse - Votre supermarché à proximité",
-      "url": "https://www.lidl.fr/s/fr-FR/supermarches/mulhouse/",
-      "snippet": "Trouver un supermarché Lidl à Mulhouse. et découvrez toutes nos offres de la semaine et nos catalogues"
-    },
-    {
-      "title": "Supermarché LIDL à Mulhouse Dornach - Promos et Horaires",
-      "url": "https://www.pagesjaunes.fr/annuaire/mulhouse-68/lidl",
-      "snippet": "Votre supermarché LIDL possède tout ce dont vous avez besoin : courses du quotidien, préparatifs pour vos évènements ou …"
-    },
-    {
-      "title": "Lidl Mulhouse - Liste des magasins - bonial.fr",
-      "url": "https://www.bonial.fr/Magasins/Mulhouse/Lidl/v-r1",
-      "snippet": "Retrouvez ici la liste de tous les magasins Lidl à Mulhouse autour de vous. Choisissez un magasin pour accéder à son adresse et …"
-    },
-    {
-      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
-      "url": "https://www.telephone.city/enseigne/lidl/",
-      "snippet": "Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs horaires, leur …"
-    }
-  ]
+  "sources": []
 }

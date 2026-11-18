@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "SvalTek/LFM2-A1B-Thinker-11b-BaseTest2",
+  "slug": "svaltek-lfm2-a1b-thinker-11b-basetest2",
+  "author": "SvalTek",
+  "url": "https://huggingface.co/SvalTek/LFM2-A1B-Thinker-11b-BaseTest2",
+  "created_at": "2026-11-18T10:23:50.000Z",
+  "updated_at": "2026-11-18T10:28:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:SvalTek/LFM2-A1B-Thinker-11b-BaseTest",
+    "base_model:finetune:SvalTek/LFM2-A1B-Thinker-11b-BaseTest",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11280732096,
+  "parameters_human": "11.28B",
+  "storage_bytes": 22561854096,
+  "storage_human": "22.6 GB",
+  "context_length": null,
+  "base_model": "SvalTek/LFM2-A1B-Thinker-11b-BaseTest",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

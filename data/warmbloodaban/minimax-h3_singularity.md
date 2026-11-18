@@ -1,84 +1,95 @@
 # WarmBloodAban/Minimax-h3_Singularity
 
-# Minimax-h3_Singularity
-
 ## Resumen
 
-Minimax-h3_Singularity es un modelo de generación de video multimodal desarrollado por WarmBloodAban, resultado de un ajuste fino (fine-tuning) del modelo MiniMax-H3 de la comunidad MiniMax. Está diseñado para mejorar sustancialmente la calidad visual y el dinamismo de los videos generados, con especial atención a la nitidez en movimiento, la restauración de rostros en planos medios y lejanos, y la creación de efectos VFX y de fantasía. El modelo se presenta como una fusión de varios checkpoints del modelo base, optimizados mediante un proceso de podado y ajuste de pesos de tres días para eliminar artefactos típicos del entrenamiento de alta precisión.
+Minimax-h3_Singularity es un ajuste fino (fine-tune) del modelo multimodal de generación de vídeo MiniMax-H3, publicado por el usuario WarmBloodAban bajo el paraguas del proyecto AIGC-Singularity. No se trata de un modelo de lenguaje, sino de un modelo de difusión para vídeo que cubre los flujos texto-a-vídeo (T2V), imagen-a-vídeo (I2V), referencia-a-vídeo (Ref2V) y vídeo-a-vídeo (V2V), integrable en ComfyUI. La versión documentada en la model card es la V2 en formato INT8, que amplía la cobertura de acciones, mejora la adherencia al prompt y corrige el condicionamiento por referencia de audio respecto a la V1.
 
-El modelo soporta de forma nativa los flujos de trabajo Text-to-Video (T2V), Image-to-Video (I2V), Reference-to-Video (Ref2V) y Video-to-Video (V2V) dentro de ComfyUI, lo que lo convierte en una herramienta versátil para creadores e investigadores que trabajan en producción audiovisual. Su relevancia actual radica en que amplía las capacidades del modelo base sin sacrificar su adherencia al prompt ni su adaptabilidad estilística, y en que ofrece una mejora notable en escenas de acción compleja, como combates con espadas o artes marciales. No se dispone de información pública sobre la arquitectura interna, el número de parámetros ni la longitud de contexto del modelo.
+El modelo parte de MiniMax-H3 y se construye mediante la fusión estratégica de varios checkpoints del modelo base (identificados como `ref`, `fl` y `b25-49`), seguida de un ajuste fino de alto número de pasos y tres días de poda y optimización de pesos para eliminar artefactos introducidos durante el entrenamiento. El resultado declarado es un modelo con mejor calidad HDR, menor desenfoque de movimiento en acciones rápidas, restauración facial en planos medios y largos, y mayor fluidez en secuencias de combate y efectos visuales.
+
+Su relevancia actual radica en que ofrece, con licencia Apache 2.0 y pesos abiertos, un pipeline de generación de vídeo con control de cámara y estilos visuales definidos por prompt, algo poco habitual en modelos de esta categoría. El repositorio ocupa 199,8 GB, acumula más de 1,24 millones de descargas y 997 likes, lo que indica una adopción considerable dentro de la comunidad de generación de vídeo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | no disponible (modelo de difusión para vídeo, base MiniMax-H3) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en, zh |
-| Licencia | Apache-2.0 |
-| Formato de pesos | no disponible |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (prompt recomendado de hasta ~5.000 caracteres) |
+| Tipos de cuantizacion | INT8 (versión V2 publicada); no se detallan otros formatos |
+| Idiomas soportados | inglés (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | no disponible (repo de 199,8 GB; librería `minimax-h3`) |
 
 ## Arquitectura y entrenamiento
 
-Minimax-h3_Singularity es un ajuste fino del modelo MiniMax-H3, un modelo multimodal de generación de video. El autor indica que se construyó sobre una fusión estratégica de checkpoints clave del modelo base, incluyendo `ref`, `fl` y `b25-49`, y que se sometió a un entrenamiento de alta precisión (high-step fine-tuning). Para preservar las fortalezas del modelo original y corregir los artefactos introducidos por el entrenamiento de muchos pasos, se dedicaron tres días completos a un proceso de podado y optimización de pesos. No se han publicado detalles sobre la composición del dataset de entrenamiento, el número de tokens ni el uso de técnicas como RLHF o DPO. La arquitectura subyacente del modelo base tampoco está documentada en la información disponible.
+La información disponible no detalla la arquitectura interna del modelo base MiniMax-H3 (número de parámetros, tipo de backbone, mecanismo de atención o esquema de difusión). Lo que sí se documenta es el proceso de construcción del fine-tune: fusión de los checkpoints `ref`, `fl` y `b25-49` del modelo base, ajuste fino con un número elevado de pasos sobre datasets de vídeo HDR, y una fase posterior de tres días de poda y optimización de pesos destinada a corregir artefactos y preservar las capacidades originales del modelo.
+
+El entrenamiento se orienta explícitamente a la calidad visual y a la dinámica de movimiento: reducción de desenfoque en acción rápida, restauración de rostros en planos lejanos, eliminación de brillos antinaturales en la piel y mejora de secuencias complejas de esgrima, artes marciales y combate cuerpo a cuerpo. La V2 añade cobertura de acciones más amplia, mayor adherencia al prompt, corrección del condicionamiento por referencia de audio (que ahora permite ajustar el tono de color del personaje) y refuerzo del renderizado de estilos fotorrealista, realismo de Asia Oriental, 3D CG y CG cinematográfico. No se especifica el volumen de tokens o clips de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO (poco habituales en modelos de difusión).
 
 ## Capacidades
 
-- Generación de video multimodal: soporta Text-to-Video, Image-to-Video, Reference-to-Video y Video-to-Video.
-- Calidad HDR: reducción del desenfoque de movimiento en escenas de alta velocidad y mejora de la claridad visual.
-- Restauración de rostros: reduce la distorsión, el desenfoque y el colapso facial en planos medios y lejanos.
-- Estética limpia: elimina brillos cutáneos no naturales y texturas excesivamente brillantes, produciendo iluminación natural y materiales fotorrealistas.
-- Dinámica de movimiento mejorada: mayor fluidez e impacto físico en secuencias de acción complejas, como combates con espadas y artes marciales.
-- Efectos VFX y de fantasía: optimizado para lanzamiento de hechizos, auras de partículas y efectos de combate mágico.
-- Expresividad facial: captura expresiones sutiles y matices emocionales con mayor viveza.
-- Control cinematográfico: mayor capacidad de respuesta a movimientos de cámara (pan, tilt, zoom, travelling).
-- Preservación de capacidades base: mantiene la adherencia al prompt, la adaptabilidad de estilo y la fuerza de generación multimodal del modelo MiniMax-H3 original.
-- Aceleración opcional: compatible con el LoRA `minimax_h3_ref2v_turbo_4step_v0.1` para inferencia rápida en 4 pasos.
+- Generación de vídeo texto-a-vídeo (T2V) a partir de descripciones en lenguaje natural.
+- Generación de vídeo imagen-a-vídeo (I2V), pipeline declarado del repositorio.
+- Generación de vídeo referencia-a-vídeo (Ref2V), usando imágenes o audio de referencia.
+- Transformación vídeo-a-vídeo (V2V).
+- Condicionamiento por referencia de audio para ajustar el tono de color del personaje (corregido en V2).
+- Control de cámara por prompt: paneos, inclinaciones, zooms y travellings.
+- Renderizado de estilos visuales específicos: fotorrealista, realismo de Asia Oriental, 3D CG y CG cinematográfico.
+- Generación de secuencias de acción dinámica: esgrima, artes marciales, combate cuerpo a cuerpo.
+- Efectos visuales y fantasía: conjuros, auroras de partículas y combate mágico.
+- Expresividad facial con captura de microexpresiones y matices emocionales.
+- Integración con ComfyUI como entorno de ejecución.
+- Soporte de prompts en inglés y chino.
 
 ## Casos de uso
 
-- Producción de vídeo cinematográfico: el modelo puede generar planos con control de cámara avanzado y calidad HDR, lo que lo hace adecuado para previsualizaciones de escenas o cortes publicitarios.
-- Creación de VFX para cine y series: su optimización para efectos de fantasía y partículas permite generar secuencias de hechizos o auras mágicas sin necesidad de composición externa.
-- Contenido para redes sociales: gracias a su soporte T2V e I2V, permite crear vídeos cortos dinámicos a partir de imágenes de referencia o descripciones textuales, con buena calidad en movimiento.
-- Animación de personajes en escenas de acción: la mejora en combates y artes marciales facilita la generación de secuencias de lucha realistas para prototipos de animación o juegos.
-- Restauración de vídeo antiguo o de baja calidad: mediante el flujo V2V, puede aplicarse a material existente para mejorar nitidez, reducir desenfoque y restaurar rostros en planos lejanos.
-- Publicidad de producto con estética fotorrealista: la eliminación de brillos no naturales y la mejora de materiales permiten generar vídeos de producto con iluminación natural y aspecto limpio.
-- Investigación en generación de vídeo: sirve como referencia para estudiar el impacto de ajustes finos específicos (HDR, rostros, movimiento) sobre un modelo base de código abierto.
+- Previsualización de secuencias de acción para cine o animación: el modelo está ajustado específicamente para esgrima, artes marciales y combate cuerpo a cuerpo, con reducción del desenfoque en movimiento rápido, lo que permite generar previos de escenas de lucha antes del rodaje o de la producción final.
+- Creación de contenido para redes sociales a partir de una imagen fija: usando el pipeline I2V, un creador puede animar un retrato o una ilustración con control de cámara por prompt (zoom, travelling) y estilo fotorrealista o 3D CG.
+- Storyboarding y animáticas: la combinación de T2V y control de cámara permite generar planos de cámara concretos (paneos, inclinaciones) para validar la puesta en escena de un guion antes de producir.
+- Efectos visuales para fantasía y videojuegos: la optimización en conjuros, auroras de partículas y combate mágico lo hace adecuado para generar material de referencia de VFX o tráilers conceptuales.
+- Restauración y animación de material de archivo: el pipeline V2V, junto con la restauración facial en planos medios y largos, permite reprocesar metraje existente para mejorar nitidez y reducir distorsiones faciales.
+- Ajuste de identidad de personaje mediante referencia de audio: la corrección del condicionamiento por audio en V2 permite usar una referencia sonora para alinear el tono de color del personaje entre planos, útil en series o cortos con continuidad de personaje.
+- Iteración rápida en ComfyUI dentro de un estudio pequeño: al integrarse como nodo en ComfyUI y publicarse en INT8, un equipo con GPUs de gama alta puede montar un pipeline local de generación y edición de vídeo sin depender de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos comparativos de rendimiento en tareas como MMLU, HumanEval o GSM8K, ya que se trata de un modelo de generación de vídeo y no de lenguaje o código.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible; el repositorio tiene un tamaño de 55.0 GB, lo que sugiere que se requiere un hardware con capacidad de almacenamiento y memoria significativa.
-- Opciones de despliegue: el modelo está diseñado para funcionar en ComfyUI. No se mencionan otros entornos como vLLM, llama.cpp o TGI.
-- Latencia y throughput: no disponible. El autor recomienda el uso del LoRA `minimax_h3_ref2v_turbo_4step_v0.1` para acelerar la inferencia, pero no se aportan cifras concretas.
-- Demo online: disponible en RunningHub, que permite probar el modelo sin necesidad de configurar una GPU local.
+- El repositorio ocupa 199,8 GB, por lo que se requiere almacenamiento amplio antes de la cuantización o selección de checkpoints.
+- La versión publicada es INT8; no se dispone de cifras oficiales de VRAM para inferencia. Como referencia orientativa no confirmada por el autor, un modelo de vídeo de este tamaño en INT8 suele requerir GPUs de centro de datos con 40-80 GB de VRAM, pero este dato no está disponible en la información proporcionada.
+- No se confirma que quepa en GPUs de consumo (RTX 4090, 3090, etc.); el tamaño del repo y la naturaleza del modelo sugieren que no es viable en configuraciones de 24 GB sin cuantizaciones adicionales no documentadas.
+- Opciones de despliegue: ComfyUI (soporte declarado explícitamente). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que además no aplican a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa detallada con modelos de la misma categoría. El modelo es un ajuste fino de MiniMax-H3, pero no se han publicado especificaciones técnicas ni resultados de benchmarks que permitan comparar parámetros, contexto o rendimiento con otras alternativas. Tampoco se identifican modelos comparables en la información proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones técnicas del modelo base MiniMax-H3 en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
+
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Minimax-h3_Singularity | no disponible | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face |
+| MiniMax-H3 (base) | no disponible | no disponible | no disponible | Referenciado como modelo base |
+| Alternativas de generación de vídeo | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible.
-- Riesgo de alucinación: al ser un modelo de generación de vídeo, puede producir artefactos visuales, distorsiones o incoherencias en escenas complejas, especialmente si no se usa el LoRA de aceleración recomendado.
-- Limitaciones de idioma: el modelo declara soporte para inglés y chino; el rendimiento en otros idiomas no está garantizado.
-- Restricciones de licencia: la licencia Apache-2.0 permite uso comercial, pero es necesario revisar los términos completos y las atribuciones requeridas.
-- Caveats para producción: al tratarse de un ajuste fino comunitario, no se han publicado evaluaciones exhaustivas ni garantías de estabilidad. El tamaño del repositorio (55.0 GB) puede dificultar su despliegue en entornos con recursos limitados.
-- Dependencia del modelo base: las limitaciones del modelo MiniMax-H3 original pueden heredarse en este ajuste fino.
+- No se documentan sesgos conocidos del modelo ni del dataset de ajuste fino; al estar entrenado con datos de vídeo no especificados, pueden heredarse sesgos de representación difíciles de auditar.
+- Riesgo de alucinación visual y artefactos: aunque el autor declara haber reducido artefactos mediante poda, la generación de vídeo puede producir incoherencias temporales, deformaciones anatómicas o colapsos estructurales en planos complejos.
+- El prompt recomendado es de hasta aproximadamente 5.000 caracteres; prompts excesivamente largos, repetitivos o con instrucciones de estilo contradictorias degradan el resultado según el propio autor.
+- Soporte lingüístico limitado a inglés y chino; no se garantiza un comportamiento correcto con prompts en castellano.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye sin garantías y el autor no ofrece soporte ni compromisos de mantenimiento.
+- El modelo base MiniMax-H3 y los checkpoints fusionados pueden tener condiciones adicionales no reflejadas en la model card; conviene verificar la licencia del modelo base antes de un despliegue comercial.
+- El tamaño del repositorio (199,8 GB) y la ausencia de cuantizaciones alternativas documentadas limitan su uso en hardware de consumo.
+- No hay información pública sobre evaluación independiente, benchmarks ni auditorías de seguridad del contenido generado.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
-- Demo online (RunningHub): https://www.runninghub.ai/post/2096339589492432897/?inviteCode=rh-v1559
-- Canal de YouTube: https://youtube.com/@AIGC-Singularity
-- Espacio de Bilibili: https://space.bilibili.com
-- Contacto comercial (WeChat): aigctyd
-- Email: a592991299@gmail.com
+- Modelo en Hugging Face: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Demo online en RunningHub: https://www.runninghub.ai/zh-cn/post/2112912294795993090/?inviteCode=rh-v1559
+- Canal de YouTube AIGC-Singularity: https://youtube.com/@AIGC-Singularity
+- Espacio en Bilibili: https://space.bilibili.com
+- Vídeos de muestra: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity/resolve/main/video/1.mp4 y https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity/resolve/main/video/3.mp4

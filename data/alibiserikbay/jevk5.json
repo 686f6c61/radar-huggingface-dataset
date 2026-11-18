@@ -35,8 +35,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 27,
-  "downloads_30d": 137951,
+  "likes": 28,
+  "downloads_30d": 138078,
   "trending_score": 14,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "alibiserikbay/JevK5 · Hugging Face",
-      "url": "https://huggingface.co/alibiserikbay/JevK5",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - allebee/jevk5: JevK5: a fast, calibrated, open decision model ...",
-      "url": "https://github.com/allebee/jevk5",
-      "snippet": "JevK5: a fast, calibrated, open decision model. Typed answers with probabilities in one forward pass (~13 ms). Qwen3.5-4B + distilled LoRA. - allebee/jevk5"
-    },
-    {
-      "title": "alibiserikbay (Serikbay) - Hugging Face",
-      "url": "https://huggingface.co/alibiserikbay",
-      "snippet": "Sort: Recently updated alibiserikbay/kazakh-russian-mixed-stt Automatic Speech Recognition •Updated about 6 hours ago"
-    },
-    {
-      "title": "Jev (AI model) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
-      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Unlike a large language model (LLM), Jev does not generate natural-language text. It instead returns typed values together with ..."
-    },
-    {
-      "title": "Jev AI — Decisions at machine speed",
-      "url": "https://jevai.net/",
-      "snippet": "Jev AI is the first System One Model from TypeSafe AI: type-safe decisions in 70-500 ms, zero hallucinations, calibrated confidence. Founded by a ChatGPT co-inventor. Output tokens free, input from $0.042 per million."
-    }
-  ]
+  "sources": []
 }

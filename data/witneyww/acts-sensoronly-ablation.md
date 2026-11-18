@@ -2,81 +2,92 @@
 
 ## Resumen
 
-`WitneyWW/acts-sensoronly-ablation` no es un modelo de lenguaje, sino un repositorio de investigación que agrupa código, datos preprocesados, medios en bruto y checkpoints de un *world model* visuo-táctil condicionado por acciones, construido sobre la familia Cosmos. Lo desarrolla el usuario WitneyWW y su propósito es reproducible: permite ejecutar tres *runs* de entrenamiento (motherboard, pushT y rope) en una máquina nueva y lanzar cuatro experimentos de ablación posteriores (variantes *sensor-only* con y sin fuerza sobre pushT y rope). El repositorio pesa 141,9 GB y se etiqueta con pipeline `robotics` y librería `cosmos`.
+ACTS (action-conditioned visuo-tactile world model) es un modelo de mundo para robótica desarrollado por el usuario WitneyWW, construido sobre la familia Cosmos y publicado como repositorio de investigación. El repositorio `acts-sensoronly-ablation` no es un modelo único, sino un paquete completo de código, datos preprocesados y checkpoints para reproducir y entrenar variantes de un world model visuo-táctil condicionado por acciones, con experimentos de ablación centrados en la eliminación de los flujos de acción de vista (sensor-only) y de la señal de fuerza.
 
-El interés técnico está en la ablación: comparar el modelo completo (streams de acción de vista + sensores + fuerza) frente a variantes que eliminan los *view-action streams* y/o la señal de fuerza, para medir cuánto aporta cada modalidad al rendimiento del world model en tareas de manipulación. Los checkpoints completos de pushT y rope están terminados (epoch 019 de 20), mientras que el *run* de motherboard (`nano_action_causal_umi_sensoronly_noforce_v1`, job Slurm 884599) seguía entrenando en el momento de la subida (epoch 14/20).
+El modelo predice la evolución futura de observaciones (látentes visuales y táctiles) condicionado por acciones de un robot, lo que lo sitúa en la categoría de world models para planificación y control robótico. El repositorio incluye tres ejecuciones entrenadas (motherboard, pushT y rope) y la infraestructura para cuatro experimentos de seguimiento sobre las tareas pushT y rope, con y sin fuerza.
 
-La relevancia actual es acotada pero clara para quien investiga world models aplicados a robótica táctil: el repositorio documenta requisitos de hardware exactos (4× H100 80 GB, batch 2 por GPU, ~31 GiB por GPU), tiempos de entrenamiento medidos (≈2,3 h/epoch en pushT, ≈3,3 h/epoch en rope) y protocolos de evaluación con conjuntos de test definidos (30 casos en pushT, 34 en rope). No se proporcionan especificaciones de arquitectura interna, número de parámetros ni ventana de contexto en la información disponible.
+Es relevante ahora porque aborda la fusión de percepción táctil y visual en modelos de mundo para manipulación, un área emergente en robótica de precisión donde la señal de fuerza y el tacto son críticos. El repositorio es grande (254,2 GB) e incluye datos crudos, lo que facilita la reproducibilidad, aunque su naturaleza es claramente de investigación y no de producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | World model visuo-táctil condicionado por acciones sobre la familia Cosmos (detalle interno no disponible) |
+| Arquitectura | World model action-conditioned basado en Cosmos (transformador de difusión para predicción de latentes visuo-táctiles; detalles exactos no disponibles) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
-| Licencia | other |
-| Formato de pesos | checkpoints PyTorch (`.pt`, p. ej. `epoch_013.pt`, `epoch_019.pt`) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (se trabaja con ventanas de episodios; 55.199 ventanas de entrenamiento en pushT, 77.188 en rope) |
+| Tipos de cuantizacion | no disponible (checkpoints en `.pt` de PyTorch, sin formatos cuantizados publicados) |
+| Idiomas soportados | no disponible (modelo no lingüístico; entradas visuo-táctiles y acciones) |
+| Licencia | other (licencia personalizada, ver limitaciones) |
+| Formato de pesos | PyTorch `.pt` (checkpoints por epoch, p. ej. `epoch_013.pt`, `epoch_019.pt`) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio se apoya en la familia Cosmos (etiqueta `cosmos`, librería `cosmos`) y en dos modelos base públicos que se descargan desde sus propios repositorios; el script `scripts/download.py` gestiona la descarga de datos, medios en bruto, checkpoints, el modelo "nano" y el VAE (`wan_vae`). Los *runs* se configuran mediante ficheros YAML (`configs/nano_action_causal_*_v1.yaml`) y se entrenan con DDP en 4× H100 80 GB (un rango por GPU, batch 2 por GPU, batch global 8, ~31 GiB por GPU). Las variantes de ablación difieren de su configuración padre únicamente en `run_name`, `model.active_streams` (eliminando los `view_action_*`) y, en las variantes *no-force*, en `data.action_file: sensor_actions_fps15_noforce.pt`.
+El modelo sigue el paradigma de world model action-conditioned de Cosmos: dado un historial de observaciones (látentes visuales y táctiles) y una secuencia de acciones, predice la evolución futura del estado latente. El repositorio define flujos de entrada (`active_streams`) que incluyen flujos de sensor y, opcionalmente, flujos de acción de vista (`view_action_*`); la ablación `sensoronly` elimina estos últimos. Las variantes `noforce` sustituyen el fichero de acciones por `sensor_actions_fps15_noforce.pt`, eliminando la señal de fuerza.
 
-Los datos de entrenamiento están preprocesados como latentes y acciones: para pushT, 56 episodios de entrenamiento y 4 de validación (55.199 ventanas de entrenamiento) a partir de `data/mixed_pushT_{latents,actions}` con split `splits/mixed_pusht_wrist_holdout.json`; para rope, 53 episodios de entrenamiento y 8 de validación (77.188 ventanas) a partir de `data/mixed_rope_{latents,actions}` con split `splits/mixed_rope_wrist_holdout.json`. El entrenamiento se fija en 20 epochs completos (`epoch_000.pt` … `epoch_019.pt`), sin parada temprana ni uso de `best.pt`, con reanudación automática desde `runs/<run_name>/last.pt` si el job de Slurm se interrumpe. No se detalla en la información disponible la composición del dataset más allá de estos recuentos, ni si hubo RLHF/DPO (no aplicable a un world model de este tipo) ni innovaciones de decodificación.
+El entrenamiento se realiza con paralelismo de datos (DDP) en 4 GPU H100 de 80 GB, un rango por GPU, batch 2 por GPU (batch global 8), con un consumo de aproximadamente 31 GiB por GPU. Se entrena durante 20 epochs completas (de `epoch_000.pt` a `epoch_019.pt`), con tiempos de aproximadamente 2,3 h/epoch para pushT (6.900 pasos, ~2 días por experimento) y 3,3 h/epoch para rope (9.648 pasos, ~3 días por experimento). No se especifican en la información disponible el número total de tokens de entrenamiento, la composición del dataset más allá de los episodios indicados, ni si se empleó RLHF o DPO (poco probable en un world model). Los datos de pushT incluyen 56 episodios de entrenamiento y 4 de validación; los de rope, 53 de entrenamiento y 8 de validación.
 
 ## Capacidades
 
-- Modelado de dinámica visuo-táctil condicionado por acciones en tareas de manipulación robótica (motherboard, pushT, rope).
-- Predicción de estados futuros a partir de streams de sensores y, en las variantes completas, de acciones de vista y señal de fuerza.
-- Soporte de ablación controlada: activación y desactivación de `view_action_*` y de la fuerza mediante configuración.
-- Entrenamiento distribuido con DDP en 4 GPU y reanudación de jobs preemptados.
-- Evaluación con *rollouts* largos y cortos sobre conjuntos de test definidos por tarea (30 casos en pushT, 34 en rope).
-- Inferencia por tarea con scripts dedicados (`scripts/infer_pusht.sh`, `scripts/infer_rope.sh`) que además suben checkpoint y resultados al repositorio de Hugging Face.
-- No se documentan capacidades de tool calling, agentes, multilingüismo, visión general, audio ni modo *thinking*.
+- Predicción de estados futuros visuo-táctiles condicionada por acciones de robot (world modeling).
+- Fusión de percepción visual y táctil en un espacio latente compartido.
+- Soporte de señal de fuerza como canal de acción adicional (variantes con fuerza) o su eliminación (variantes `noforce`).
+- Modelado de dinámica para tareas de manipulación específicas: motherboard, pushT y rope.
+- Evaluación mediante rollouts largos sobre conjuntos de test por tarea (30 casos en pushT, 34 en rope).
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, capacidades multilingües ni modos de razonamiento explícito; el modelo no es lingüístico.
 
 ## Casos de uso
 
-- Reproducción de experimentos de world models táctiles: el repositorio incluye código, datos y checkpoints para relanzar los tres *runs* originales en una máquina nueva, lo que permite verificar resultados de un artículo o *rebuttal*.
-- Ablación de modalidades en manipulación: ejecutar las variantes *sensor-only* con y sin fuerza sobre pushT y rope para cuantificar la contribución de la señal de fuerza al error de predicción.
-- Planificación robótica basada en modelo: usar los checkpoints de pushT y rope (epoch 019) para generar *rollouts* condicionados por acción y evaluar políticas antes de desplegarlas en hardware.
-- Investigación en percepción táctil: comparar el rendimiento del modelo completo frente al *sensor-only* para decidir qué sensores merecen incorporarse en un montaje físico.
-- *Benchmarking* interno de infraestructura: los tiempos medidos (≈2,3 h/epoch en pushT con 6.900 pasos; ≈3,3 h/epoch en rope con 9.648 pasos en 4× H100) sirven para dimensionar clústeres y estimar costes de experimentos similares.
-- Docencia y formación: el repositorio estructura paso a paso el *setup* (`scripts/setup_env.sh`), la descarga selectiva por tarea y el lanzamiento con Slurm, lo que facilita prácticas guiadas sobre entrenamiento distribuido de world models.
-- Validación de pipelines de evaluación: los conjuntos de test fijos (8 episodios en pushT, 9 en rope) y los ficheros de métricas de referencia permiten comparar implementaciones propias contra una línea base publicada.
+- Planificación de manipulación con pushT: el world model predice la evolución del estado latente tras acciones de empuje, permitiendo evaluar trayectorias candidatas antes de ejecutarlas en el robot; es adecuado porque se entrenó específicamente sobre 56 episodios de pushT y se evalúa con 30 casos de test.
+- Manipulación de cuerda (rope): predicción de la dinámica de deformación de una cuerda bajo acciones del robot, útil para seleccionar agarres y movimientos; el modelo se entrenó con 53 episodios y se evalúa con 34 casos.
+- Ensamblaje de placas base (motherboard): modelado de interacciones de precisión con señal táctil y de fuerza, adecuado para tareas donde el tacto es crítico; la ejecución `nano_action_causal_umi_sensoronly_noforce_v1` se entrenó con flujos sensor-only sin fuerza.
+- Estudio de ablación de modalidades: comparar el rendimiento con y sin flujos de acción de vista y con y sin fuerza para determinar qué señales son imprescindibles en un world model táctil; el repositorio está diseñado exactamente para esto.
+- Investigación en simulación y evaluación offline: usar los rollouts largos generados por los scripts `infer_pusht.sh` e `infer_rope.sh` para medir la fidelidad de la predicción antes de desplegar políticas en hardware real.
+- Reproducibilidad de experimentos: reentrenar las cuatro variantes (pushT/rope, con/sin fuerza) en 4× H100 siguiendo los comandos Slurm incluidos, con reanudación automática desde `last.pt` en caso de preempción.
+- Generación de datos sintéticos de entrenamiento: los rollouts del world model pueden servir como datos aumentados para entrenar políticas de manipulación en las tareas cubiertas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio define ficheros de métricas de referencia (`eval/cases/pusht_reference_metrics.json`, `eval/cases/rope_reference_metrics.json`) contra los que comparar las ablaciones, pero no se incluyen sus valores numéricos en la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye ficheros de métricas de referencia (`eval/cases/pusht_reference_metrics.json`, `eval/cases/rope_reference_metrics.json`) para comparar las variantes de ablación contra los modelos completos (`nano_action_causal_pusht_v1` epoch 019 y `nano_action_causal_rope_v1` epoch 019), pero los valores numéricos no se proporcionan en la información disponible.
 
 ## Requisitos de hardware
 
-- Entrenamiento: 4× H100 80 GB en un nodo, un rango DDP por GPU, batch 2 por GPU (batch global 8), ~31 GiB de VRAM por GPU. No se debe modificar el número de GPU ni `training.batch_size`.
-- Tiempo de entrenamiento medido: ≈2,3 h/epoch (6.900 pasos) en pushT y ≈3,3 h/epoch (9.648 pasos) en rope, hasta 20 epochs (≈2 días y ≈3 días por experimento respectivamente).
-- Inferencia: 4 GPU, ~1 h por script de inferencia sobre el conjunto de test de cada tarea.
-- No se especifica si el modelo cabe en GPU de consumo (RTX 4090, etc.); los requisitos documentados apuntan a H100 80 GB.
-- Despliegue: scripts propios (`scripts/train.sh`, `scripts/infer_pusht.sh`, `scripts/infer_rope.sh`), Slurm o ejecución directa con `NGPU=4 bash scripts/train.sh <config>.yaml`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Almacenamiento: el repositorio ocupa 141,9 GB, lo que condiciona el espacio en disco necesario antes de descargar datos y checkpoints.
+- Entrenamiento: 4 GPU H100 de 80 GB en un solo nodo (un rango DDP por GPU, batch 2 por GPU, ~31 GiB por GPU). No se debe cambiar el número de GPU ni el batch size.
+- Inferencia: los scripts `infer_pusht.sh` e `infer_rope.sh` están diseñados para ejecutarse con 4 GPU y tardan aproximadamente 1 hora por tarea.
+- VRAM estimada para inferencia: no disponible de forma aislada; el entrenamiento consume ~31 GiB por GPU en H100.
+- GPU recomendadas: H100 80 GB para entrenamiento; para inferencia se indica configuración de 4 GPU sin especificar modelo mínimo.
+- Viabilidad en GPU de consumo: no disponible; el tamaño del repositorio (254,2 GB) y los requisitos de entrenamiento sugieren que no está pensado para GPU de consumo.
+- Opciones de despliegue: scripts propios basados en PyTorch y Slurm (`scripts/train.sh`, `scripts/infer_pusht.sh`, `scripts/infer_rope.sh`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles; solo se indica ~1 h para la inferencia completa sobre el conjunto de test de cada tarea en 4 GPU.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye otros world models visuo-táctiles comparables ni datos de rendimiento que permitan una comparación cuantitativa.
+| Modelo | Categoria | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| ACTS sensor-only ablation (este) | World model visuo-táctil | no disponible | no disponible | motherboard, pushT, rope | other | Hugging Face, 254,2 GB |
+| Cosmos (modelos base) | World model / generativo | no disponible en la informacion | no disponible | generacion y simulacion visual | no disponible | Repos publicos de Cosmos (descargados por `download.py`) |
+| `nano_action_causal_pusht_v1` (modelo completo) | World model visuo-táctil | no disponible | no disponible | pushT | other (mismo repo) | Checkpoint `epoch_019.pt` en este repositorio |
+| `nano_action_causal_rope_v1` (modelo completo) | World model visuo-táctil | no disponible | no disponible | rope | other (mismo repo) | Checkpoint `epoch_019.pt` en este repositorio |
+
+No se dispone de datos de benchmarks ni de especificaciones de parámetros para establecer una comparación cuantitativa con alternativas externas.
 
 ## Limitaciones y advertencias
 
-- El *run* de motherboard (`nano_action_causal_umi_sensoronly_noforce_v1`, job Slurm 884599) estaba en epoch 14/20 en el momento de la subida; su checkpoint no representa un entrenamiento completo.
-- Las ablaciones sobre pushT y rope están listadas como TODO: los checkpoints de esas variantes no están incluidos todavía en el repositorio.
-- El entrenamiento debe completarse hasta `epoch_019.pt`; usar `best.pt` o parar antes invalida la comparación con las referencias.
-- El script de inferencia sube resultados al repositorio de Hugging Face y requiere un `HF_TOKEN` con permisos de escritura sobre `WitneyWW/acts-sensoronly-ablation`; conviene revisar ese comportamiento antes de ejecutarlo en entornos compartidos.
-- Licencia `other`: no se detallan los términos de uso comercial; es necesario consultar el texto de licencia del repositorio y de los modelos base Cosmos antes de cualquier despliegue productivo.
-- No hay información sobre sesgos, tasas de alucinación ni cobertura idiomática; no aplica el marco habitual de modelos de lenguaje.
-- Cada tarea (pushT, rope) se entrena solo con sus propios datos y se evalúa con su propio script y conjunto de test; los resultados no son intercambiables entre tareas.
-- El repositorio no documenta parámetros, contexto ni cuantizaciones, lo que limita la estimación de requisitos fuera del entorno H100 descrito.
+- Licencia `other`: es una licencia personalizada no detallada en la información disponible; es imprescindible revisar los términos antes de cualquier uso comercial.
+- El repositorio es material de investigación en estado de trabajo: la ejecución de motherboard seguía entrenando en el momento de la subida (epoch 14/20).
+- Los experimentos de seguimiento (pushT y rope, con y sin fuerza) están marcados como TODO y no estaban completados en la información proporcionada.
+- El modelo está especializado por tarea: pushT y rope se entrenan por separado y no comparten nada excepto el código; no hay evidencia de generalización entre tareas.
+- Los conjuntos de datos son pequeños (56 y 53 episodios de entrenamiento), lo que limita la robustez fuera de la distribución capturada.
+- No se documentan sesgos, tasas de alucinación ni evaluación de seguridad; al ser un modelo de predicción latente, los errores se manifiestan como derivas en los rollouts, no como texto.
+- El tamaño del repositorio (254,2 GB) incluye datos crudos y checkpoints, lo que exige planificación de almacenamiento y ancho de banda.
+- Los scripts de inferencia suben resultados al repositorio de Hugging Face y requieren un `HF_TOKEN` con permisos de escritura, lo que introduce un riesgo operativo si se ejecutan sin control.
+- No hay información sobre idiomas ni capacidades lingüísticas porque el modelo no procesa texto.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/WitneyWW/acts-sensoronly-ablation
-- Artículo de referencia externo citado en la búsqueda (contexto general de Industry 4.0 y robótica): https://www.asme.org/topics-resources/content/industry-40-impacts-engineering-design
-- No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código adicionales ni demos del modelo.
+- Hugging Face: https://huggingface.co/WitneyWW/acts-sensoronly-ablation
+- Repositorios base de Cosmos: no disponible en la información proporcionada (se descargan mediante `scripts/download.py --what ... nano wan_vae`)
+- Paper: no disponible
+- Blog: no disponible
+- Repositorio de código: incluido en el propio repositorio de Hugging Face (carpetas `scripts/`, `configs/`, `data/`, `eval/`, `checkpoints/`)
+- Demos: no disponible

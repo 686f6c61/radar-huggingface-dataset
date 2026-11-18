@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Helios - Learn AI",
-      "url": "https://ai.miraheze.org/wiki/Helios",
-      "snippet": "Helios is an open-source video generation model developed by researchers at Peking University in collaboration with ByteDance, Canva, and Chengdu Anu Intelligence. Released in March 2026, Helios is a fourteen-billion-parameter autoregressive diffusion model that generates minute-scale videos at real-time speed, achieving 19.5 frames per second on a single H100 GPU without relying on ..."
-    },
-    {
-      "title": "GitHub - PKU-YuanGroup/Helios: [TPAMI 2026 ] Helios: Real Real-Time ...",
-      "url": "https://github.com/PKU-YuanGroup/Helios",
-      "snippet": "If your work has improved Helios and you would like more people to see it, please inform us. Ascend-NPU: Developed by Huawei, this hardware is designed for efficient AI model training and inference, boosting performance in tasks like computer vision, natural language processing, and autonomous driving. Diffusers: A popular library designed for working with diffusion models and other generative ..."
-    }
-  ]
+  "sources": []
 }

@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 49,
-  "downloads_30d": 21199,
+  "downloads_30d": 21660,
   "trending_score": 16,
   "parameters": 1024216603392,
   "parameters_human": "1024.22B",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD - Hugging Face",
-      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
-      "snippet": "This is the MOPD upgrade of the MiMo-V2.6-Pro-RL checkpoint. MOPD2 (👉 Technical Report §5.6) Fuses several domain-specialized teachers into one model, extending to domains where reliable training-time verification is hard, such as long-horizon game development, scientific research and embodied intelligence."
-    },
-    {
-      "title": "Xiaomi MiMo",
-      "url": "https://mimo.xiaomi.com/",
-      "snippet": "MiMo-V2.5-Pro-UltraSpeed: Pushing 1T-Parameter Model Generation Speed to 1000 TPS. The UltraSpeed mode breaks 1000 tps through extreme model-system Codesign ..."
-    },
-    {
-      "title": "XiaomiMiMo/MiMo-V2.6-Pro-RL · Hugging Face",
-      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
-      "snippet": "Multi-Prefix Multi-Teacher On-Policy Distillation (MOPD2): After mixed RL, MOPD2 combines autonomous student rollouts with prefix-conditioned single-turn rollouts (Teacher-Prefix and SFT-Prefix), reusing histories from teacher trajectories and SFT demonstrations so decision points train without regenerating preceding turns — extending capabilities to hard-to-verify tasks. Architecture: Sparse MoE (Mixture of Experts), 1.02T total / 42B activated parameters ... Figure 1. MiMo-V2.6 architecture."
-    },
-    {
-      "title": "Xiaomi MiMo Studio",
-      "url": "https://aistudio.xiaomimimo.com/",
-      "snippet": "MiMo-V2.6-Pro flagship model is deeply adapted to OpenClaw, with multimodal recognition and voice playback. Kingsoft Office Ecosystem."
-    },
-    {
-      "title": "XiaomiMiMo (Xiaomi MiMo) - Hugging Face",
-      "url": "https://huggingface.co/XiaomiMiMo",
-      "snippet": "AI & ML interests. None defined yet. Recent Activity. bwshen-mi published a model about 7 hours ago. XiaomiMiMo/MiMo-V2.6-Pro-MOPD · bwshen-mi published a model ..."
-    }
-  ]
+  "sources": []
 }

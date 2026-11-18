@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2527786137,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 3791200785,
+  "storage_human": "3.8 GB",
   "context_length": null,
   "base_model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
   "formats": [

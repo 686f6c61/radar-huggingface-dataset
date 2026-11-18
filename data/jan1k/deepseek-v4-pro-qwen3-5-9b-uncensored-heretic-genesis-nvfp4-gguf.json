@@ -35,8 +35,6 @@
     "ja",
     "es",
     "ru",
-    "base_model:LuffyTheFox/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-Genesis-GGUF",
-    "base_model:quantized:LuffyTheFox/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-Genesis-GGUF",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

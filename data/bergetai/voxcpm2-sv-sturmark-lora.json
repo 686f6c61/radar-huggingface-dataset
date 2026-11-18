@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "bergetai/sten-lora",
+  "renamed_at": "2026-11-18T05:53:48.690Z",
   "benchmarks": [],
   "sources": []
 }

@@ -2,83 +2,86 @@
 
 ## Resumen
 
-`cstr/crispasr-regression-fixtures` no es un modelo de lenguaje ni un sistema de IA generativa: es un repositorio de artefactos de test (fixtures) para la suite de regresión del runtime C++ [CrispStrobe/CrispASR](https://github.com/CrispStrobe/CrispASR/tree/main/tests/regression). Cada fichero `<backend>/<sample-stem>/ref.gguf` contiene la salida del encoder y varias etapas intermedias (activaciones por capa en algunos backends) capturadas con `tools/dump_reference.py --backend <backend>` sobre el modelo fuente correspondiente.
+`cstr/crispasr-regression-fixtures` no es un modelo de lenguaje entrenado, sino un repositorio de artefactos de prueba (fixtures) para la suite de regresión del proyecto CrispASR. Contiene volcados de referencia en formato GGUF generados por `tools/dump_reference.py` contra modelos ASR de origen, capturando la salida del encoder y varias etapas intermedias (activaciones por capa en algunos backends). El runtime C++ `crispasr-diff` lee exactamente este formato y reporta similitud coseno por etapa frente a los tensores capturados.
 
-El propósito es evitar la deriva silenciosa entre versiones de dependencias: al fijar (`pinning`) el repositorio a un SHA de revisión concreto desde `tests/regression/manifest.json`, la suite de integración continua compara siempre contra los mismos tensores, de modo que una actualización de torch, NeMo o transformers no altera de forma inadvertida la referencia. La herramienta `crispasr-diff <backend> <gguf> <ref> <wav>` lee exactamente este formato y reporta similitud coseno por etapa.
+El propósito es desacoplar la validación numérica del historial git de CrispASR: al fijar el repositorio de fixtures a un SHA de revisión concreto (campo `fixtures.revision` en `tests/regression/manifest.json`), se evita que cambios en versiones de torch, NeMo o transformers alteren silenciosamente los valores contra los que corre la CI. El repositorio ocupa 2,8 GB y alberga dumps individuales de entre ~1 MB y ~50 MB.
 
-El repositorio se mantiene separado del árbol principal de CrispASR porque cada dump pesa entre ~1 MB y ~50 MB (0,7 GB el repo completo) y porque el pinning por revisión de Hugging Face es la forma más limpia de desacoplar "probar contra los mismos números" del historial git del proyecto. Actualmente contiene un único fixture, generado a partir de `nvidia/parakeet-tdt_ctc-0.6b-ja` sobre la muestra de audio en japonés `samples/ja/reazon_baseball_14s.wav`.
+El dato de "9.148.949 parámetros totales" que aparece en los metadatos de safetensors corresponde, con toda probabilidad, a uno de los tensores volcados y no a un modelo desplegable. Este repositorio no debe confundirse con un modelo listo para inferencia: es infraestructura de testing para el ecosistema CrispASR.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No es un modelo entrenado; conjunto de dumps de referencia en GGUF con la salida del encoder y etapas intermedias de un modelo ASR |
-| Parametros totales | 193.568 (cifra reportada por el repo para los tensores en safetensors; no corresponde a un modelo completo) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (no aplica a fixtures de test) |
-| Tipos de cuantizacion | No disponible (los GGUF contienen tensores de referencia de activaciones, no pesos cuantizados) |
-| Idiomas soportados | No disponible. El unico fixture actual procede de una muestra de audio en japones |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`ref.gguf`), con datos complementarios en safetensors dentro del repo |
+| Arquitectura | no disponible (repositorio de fixtures, no modelo) |
+| Parametros totales | 9.148.949 (dato de safetensors, probablemente un tensor volcado, no un modelo) |
+| Parametros activos | no aplica |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (los artefactos son dumps GGUF de referencia) |
+| Idiomas soportados | no disponible (el fixture actual usa una muestra en japones: `samples/ja/reazon_baseball_14s.wav`) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (`<backend>/<sample-stem>/ref.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no define arquitectura propia ni ha sido entrenado. Su contenido son volcados (`reference dumps`) de las activaciones de un modelo de reconocimiento automático de voz (ASR) ejecutado en inferencia: concretamente, la salida del encoder y, segun el backend, activaciones por capa de etapas intermedias. El fixture disponible corresponde a `nvidia/parakeet-tdt_ctc-0.6b-ja`, un modelo ASR de la familia Parakeet con arquitectura FastConformer y decodificacion TDT/CTC, fijado en la revision `44edb27e`.
+No hay arquitectura de modelo ni proceso de entrenamiento en este repositorio. Los ficheros `ref.gguf` son la salida de `tools/dump_reference.py --backend <backend>` ejecutado contra el modelo de origen correspondiente; capturan la salida del encoder y, en algunos backends, activaciones por capa. El backend actualmente documentado es `parakeet-tdt-0.6b-ja`, derivado de `nvidia/parakeet-tdt_ctc-0.6b-ja` en la revisión `44edb27e`, sobre la muestra `samples/ja/reazon_baseball_14s.wav`.
 
-La innovacion tecnica no esta en el modelo sino en el metodo de verificacion: `crispasr-diff` compara los tensores producidos por el runtime C++ contra las referencias capturadas y calcula similitud coseno por etapa, lo que permite detectar regresiones numericas que un simple test de salida final no veria. El pinning por SHA de revision de Hugging Face protege ademas contra el fallo tipico de "re-subida que cambia en silencio lo que descargan los usuarios", que es precisamente lo que motivo la creacion de la suite.
+La innovación técnica relevante es de proceso, no de modelado: el pinning por SHA de revisión de Hugging Face evita el fallo de "re-subida que cambia silenciosamente lo que descargan los usuarios", que fue precisamente la motivación de la suite de regresión. El consumidor es `crispasr-diff <backend> <gguf> <ref> <wav>`, que compara etapa por etapa mediante similitud coseno.
 
 ## Capacidades
 
-- Verificacion de regresion por backend: permite comprobar que la implementacion C++ de CrispASR reproduce las mismas activaciones que la implementacion de referencia.
-- Comparacion numerica por etapas: reporta similitud coseno por etapa intermedia, no solo una metrica agregada de salida.
-- Captura de activaciones por capa en los backends que lo soportan, util para localizar en que punto se desvia una implementacion.
-- Pinning reproducible: cada fixture se fija a un SHA de revision, lo que garantiza que CI compara contra numeros estables en el tiempo.
-- Integracion en suite de integracion continua: los fixtures se referencian desde `tests/regression/manifest.json` mediante el campo `fixtures.revision`.
-- Extension del conjunto: la documentacion del repo describe como anadir nuevos backends y fixtures.
-- No soporta generacion de texto, razonamiento, codigo, tool calling, agentes ni capacidades multilingues: no es un modelo generativo.
+- Almacenar dumps de referencia en GGUF para validación numérica de backends ASR.
+- Servir como fuente de verdad congelada (por SHA) para la CI de CrispASR.
+- Permitir comparación por etapa (encoder y activaciones intermedias) mediante similitud coseno.
+- Desacoplar el ciclo de vida de los fixtures del historial git del repositorio principal.
+- Añadir nuevos fixtures siguiendo el procedimiento documentado en `tests/regression/README.md`.
+- No ofrece generación de texto, razonamiento, código, visión, tool calling, agentes ni capacidades multilingües propias.
 
 ## Casos de uso
 
-- Verificacion de regresiones en el runtime C++: al ejecutar `crispasr-diff` contra `ref.gguf`, el equipo de CrispASR detecta si un cambio en el codigo altera las activaciones respecto a la referencia capturada.
-- Integracion continua reproducible: `manifest.json` fija la revision del repo de fixtures, de modo que los pipelines de CI no cambian de referencia aunque se actualicen torch, NeMo o transformers.
-- Depuracion de diferencias numericas entre implementaciones: la comparacion por etapa permite aislar si el desvio aparece en el encoder o en capas concretas.
-- Validacion de portabilidad de backends: sirve para comprobar que una nueva implementacion (CPU, GPU u otro backend) reproduce el comportamiento del modelo fuente.
-- Auditoria de cambios en el modelo fuente: al re-volcar referencias con una version distinta de las librerias, se puede comprobar si el comportamiento del modelo fuente se ha desplazado.
-- Onboarding de nuevos backends: el fixture actual y la documentacion de `tests/regression/README.md` sirven como plantilla para anadir soporte de nuevos modelos ASR.
-- Trazabilidad de artefactos en produccion: el patron de pinning por SHA es reutilizable en cualquier pipeline que necesite garantizar que el artefacto descargado no cambia entre ejecuciones.
+- Integración continua de CrispASR: el pipeline descarga el fixture fijado por SHA y ejecuta `crispasr-diff` para detectar regresiones numéricas en el backend `parakeet-tdt-0.6b-ja` tras cambios de código en C++.
+- Validación tras actualizar dependencias: al subir la versión de torch, NeMo o transformers, el equipo puede comparar los nuevos dumps contra los fixtures existentes y cuantificar la deriva con similitud coseno por etapa.
+- Depuración de backends ASR: un desarrollador que modifica el kernel de un encoder puede aislar en qué capa se desvía la salida comparando contra las activaciones intermedias capturadas.
+- Auditoría de reproducibilidad: investigadores que necesitan demostrar que una build concreta produce resultados numéricamente equivalentes a una referencia pueden citar el SHA del fixture empleado.
+- Onboarding de nuevos colaboradores: el repositorio separado evita inflar el árbol de trabajo de CrispASR con ficheros de 1 a 50 MB, facilitando el clonado del proyecto principal.
+- Extensión a nuevos modelos ASR: el equipo puede añadir fixtures para backends adicionales (por ejemplo, otros modelos de parakeet o wav2vec) siguiendo el manifiesto y el README de regresión.
+- Verificación de builds en distintas plataformas: comparar la salida de una compilación en ARM frente a x86 contra el mismo `ref.gguf` para detectar diferencias de precisión o de implementación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica asociada al repositorio es la similitud coseno por etapa que calcula `crispasr-diff`, sin valores numericos publicados para el fixture actual.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no evalúa calidad del modelo, sino equivalencia numérica de implementaciones; la métrica operativa es la similitud coseno por etapa reportada por `crispasr-diff`, sin valores publicados en la información proporcionada.
 
 ## Requisitos de hardware
 
-- Almacenamiento: repo completo de 0,7 GB; cada dump individual pesa entre aproximadamente 1 MB y 50 MB.
-- VRAM: no requiere GPU. La comparacion de tensores de referencia puede ejecutarse en CPU.
-- GPU recomendadas: no aplica para el uso previsto del repositorio.
-- Cabe en cualquier equipo consumer: si, incluidos portatiles sin GPU dedicada; el cuello de botella es disco y el coste de calcular similitud coseno sobre los tensores.
-- Opciones de despliegue: no es un modelo desplegable. Se consume mediante `crispasr-diff` del runtime CrispASR y mediante la suite de tests del repositorio.
+- VRAM: no aplica como modelo de inferencia; el consumo depende del modelo de origen (`parakeet-tdt-0.6b-ja`, ~0,6 B de parámetros) al regenerar dumps, no al usar los fixtures.
+- GPU recomendadas: no disponibles para este repositorio; para regenerar fixtures del modelo de origen se requeriría hardware capaz de ejecutar NeMo/parakeet, pero no se especifica en la información.
+- Consumer GPU: los fixtures en sí no requieren GPU; `crispasr-diff` es una herramienta C++ de comparación tensorial.
+- Despliegue: no aplica vLLM, llama.cpp, Ollama ni TGI; el consumidor es el binario `crispasr-diff` del proyecto CrispASR.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la informacion proporcionada repositorios comparables de fixtures de regresion para runtimes ASR. Como referencia del modelo fuente, el fixture actual deriva de `nvidia/parakeet-tdt_ctc-0.6b-ja` (aproximadamente 0,6 B de parametros, licencia y condiciones propias de NVIDIA), pero este repositorio no replica ni redistribuye dichos pesos.
+| Repositorio | Tipo | Contenido | Licencia | Uso previsto |
+|---|---|---|---|---|
+| `cstr/crispasr-regression-fixtures` | Fixtures de test | Dumps GGUF de referencia para ASR | apache-2.0 | CI de CrispASR |
+| `nvidia/parakeet-tdt_ctc-0.6b-ja` | Modelo ASR | Pesos del modelo de origen del fixture actual | no disponible en la informacion | Transcripcion ASR en japones |
+| Otros repos de fixtures de regresion | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información sobre repositorios equivalentes de fixtures de regresión para comparar directamente.
 
 ## Limitaciones y advertencias
 
-- No es un modelo usable para inferencia: no genera texto, no responde a prompts y no implementa ninguna tarea de IA de forma directa.
-- Cobertura minima: solo existe un fixture (`parakeet-tdt-0.6b-ja` sobre `samples/ja/reazon_baseball_14s.wav`), por lo que la cobertura de la suite es muy reducida.
-- Idioma limitado en la practica: la unica muestra de audio disponible esta en japones; el repositorio no declara soporte multilingue.
-- Dependencia de terceros: los dumps derivan de pesos de modelos fuente en tiempo de inferencia; para cualquier redistribucion deben consultarse las licencias de esos modelos, que pueden ser mas restrictivas que Apache-2.0.
-- Riesgo de deriva si no se respeta el pinning: re-volcar referencias con versiones distintas de torch, NeMo o transformers puede cambiar los valores, lo que invalida la comparacion con commits anteriores.
-- Licencia Apache-2.0 aplicada al repositorio de fixtures, no necesariamente extensible al modelo fuente subyacente.
-- Sin benchmarks ni metricas de calidad publicadas: la utilidad se limita a la verificacion de equivalencia numerica.
-- La busqueda web realizada no devolvio resultados relevantes sobre este repositorio (los resultados obtenidos corresponden a foros de consumo sin relacion con el proyecto).
+- No es un modelo utilizable para inferencia: no genera texto, no transcribe audio por sí mismo ni responde a prompts.
+- El campo "parámetros totales" de safetensors (9.148.949) no representa un modelo desplegable; interpretarlo como tal induce a error.
+- Solo hay un fixture documentado (`parakeet-tdt-0.6b-ja`), por lo que la cobertura de la suite es mínima según la información disponible.
+- Los dumps derivan de los pesos de los modelos de origen en tiempo de inferencia; cualquier restricción de licencia o redistribución de esos modelos debe consultarse en sus propias fichas, no en la licencia apache-2.0 de este repositorio.
+- El pinning por SHA es imprescindible: sin él, una re-subida podría cambiar los valores contra los que corre la CI.
+- La regeneración de fixtures con versiones distintas de torch, NeMo o transformers puede introducir deriva numérica; el repositorio está diseñado para detectarla, no para evitarla.
+- No se documentan sesgos, alucinaciones ni limitaciones idiomáticas propias porque no hay modelo; el único idioma presente en la muestra actual es el japonés.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/cstr/crispasr-regression-fixtures
-- Suite de regresion de CrispASR: https://github.com/CrispStrobe/CrispASR/tree/main/tests/regression
-- Documentacion para anadir un nuevo backend: https://github.com/CrispStrobe/CrispASR/tree/main/tests/regression#adding-a-new-backend
-- Modelo fuente del fixture actual: `nvidia/parakeet-tdt_ctc-0.6b-ja` (revision `44edb27e`)
-- No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.
+- Proyecto CrispASR: https://github.com/CrispStrobe/CrispASR
+- Suite de regresión: https://github.com/CrispStrobe/CrispASR/tree/main/tests/regression
+- README de regresión: https://github.com/CrispStrobe/CrispASR/tree/main/tests/regression#adding-a-new-backend
+- Modelo de origen del fixture: https://huggingface.co/nvidia/parakeet-tdt_ctc-0.6b-ja

@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 354,
-  "downloads_30d": 236312,
+  "downloads_30d": 224799,
   "trending_score": 15.5,
   "parameters": 25805936206,
   "parameters_human": "25.81B",
@@ -71,31 +71,5 @@
       "value": 62.48
     }
   ],
-  "sources": [
-    {
-      "title": "MonLycee.net - Accueil - Place de services Monlycée.net",
-      "url": "https://monlycee.net/",
-      "snippet": "En se connectant à monlycee.net, la plateforme numérique dédiée à la scolarité des lycéens en Île-de-France, lycéens et …"
-    },
-    {
-      "title": "Monlycée.net > Pronote - Etablissements de Paris",
-      "url": "https://pia.ac-paris.fr/serail/jcms/s2_3105463/fr/monlycee-net-pronote",
-      "snippet": "Sep 5, 2025 · L'accès à PRONOTE se fait par le site Monlycée.net dans la section \"Services\". Les codes d'accès à Monlycée.net …"
-    },
-    {
-      "title": "Accueil | Place de services MonLycée.net",
-      "url": "https://transfonum.monlycee.net/",
-      "snippet": "Présentation de l'offre de services proposés par la Région Île-de-France pour les lycéens, enseignants, personnels de direction et …"
-    },
-    {
-      "title": "PRONOTE - INDEX EDUCATION",
-      "url": "https://e972000a.index-education.net/pronote/",
-      "snippet": "PRONOTE Page d'accueil - - - gestion des notes, absences, punitions, cahier de textes pour les établissements scolaires."
-    },
-    {
-      "title": "Accueil - Place de services Monlycée.net - MonLycee.net",
-      "url": "https://monlycee.net/?s=pronote+-+lyc%C3%A9e+fran%C3%A7ais+fran%C3%A7ois+mitterrand",
-      "snippet": "En se connectant à monlycee.net, la plateforme numérique dédiée à la scolarité des lycéens en Île-de-France, lycéens et …"
-    }
-  ]
+  "sources": []
 }

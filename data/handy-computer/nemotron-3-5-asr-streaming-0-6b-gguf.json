@@ -87,8 +87,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 33,
-  "downloads_30d": 1666203,
+  "likes": 36,
+  "downloads_30d": 1621173,
   "trending_score": 0,
   "parameters": 637991968,
   "parameters_human": "638.0M",
@@ -108,31 +108,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Download Handy",
-      "url": "https://handy.computer/download.html",
-      "snippet": "Download Handy - the free and open source speech to text application for Windows, macOS, and Linux"
-    },
-    {
-      "title": "Handy",
-      "url": "https://handy.computer/",
-      "snippet": "Handy is a cross platform, open-source, speech-to-text application for your computer"
-    },
-    {
-      "title": "Merci Handy | Nous existons pour rendre l'ordinaire extraordinaire",
-      "url": "https://www.mercihandy.com/",
-      "snippet": "Chaque colis transporte un peu de l’univers Merci Handy. Une équipe passionnée qui développe, prépare et expédie vos produits …"
-    },
-    {
-      "title": "The Handy",
-      "url": "https://www.thehandy.com/store/the-handy-eu/?country=CW",
-      "snippet": "The Handy is engineered in Scandinavia to deliver premium, high-tech pleasure for penis owners. Reliable and comfortable, it offers …"
-    },
-    {
-      "title": "Maison Handy",
-      "url": "https://maisonhandy.com/",
-      "snippet": "Découvrez dès maintenant les dernières nouveautés de Maison HANDY. Laissez-vous séduire par l’alliance parfaite entre innovation, …"
-    }
-  ]
+  "sources": []
 }

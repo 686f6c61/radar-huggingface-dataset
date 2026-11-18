@@ -14,17 +14,14 @@
   "tags": [
     "transformers",
     "safetensors",
-    "qwen2",
-    "text-generation",
     "post-trained",
     "bf16",
     "500m",
-    "conversational",
-    "text-generation-inference",
+    "text-generation",
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 494032768,
@@ -36,7 +33,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,

@@ -25,8 +25,6 @@
     "sweet-agent",
     "en",
     "zh",
-    "base_model:OliviaRossi/4BeastsOfApocalypse",
-    "base_model:quantized:OliviaRossi/4BeastsOfApocalypse",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -34,7 +32,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1157,
+  "downloads_30d": 1181,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

@@ -2,113 +2,105 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-Flash-Next-GGUF es la distribución en formato GGUF del modelo ThinkingCap-Qwen3.8-Flash-Next, un ajuste fino desarrollado por BottleCap AI sobre Qwen3.8-Flash-Next de Qwen. El objetivo declarado del ajuste es mantener la calidad de respuesta del modelo base reduciendo de forma medible el número de tokens de razonamiento consumidos, es decir, un modelo de "pensamiento eficiente" orientado a bajar coste y latencia en inferencia sin degradar la calidad. Este repositorio contiene únicamente los pesos cuantizados y el proyector multimodal; la descripción completa, las evaluaciones multi-semilla y los parámetros de muestreo recomendados están en la model card del modelo principal.
+ThinkingCap-Qwen3.8-Flash-Next-GGUF es la colección de cuantizaciones en formato GGUF del modelo ThinkingCap-Qwen3.8-Flash-Next, un ajuste fino (finetune) desarrollado por BottleCap AI sobre el modelo base Qwen3.8-Flash-Next de Qwen. El objetivo declarado del ajuste es preservar la calidad de respuesta del modelo base reduciendo de forma sustancial el número de tokens de razonamiento (thinking tokens) que el modelo genera antes de responder. Esta versión GGUF está pensada para ejecución local con llama.cpp y runtimes compatibles como Ollama o LM Studio.
 
-El modelo es multimodal (pipeline `image-text-to-text`): acepta texto e imágenes y requiere cargar el proyector `mmproj-ThinkingCap-Qwen3.8-Flash-Next-f16.gguf` junto a cualquiera de las cuantizaciones de texto. Con 179.551.050.368 parámetros totales (unos 179,55 mil millones según los safetensors del modelo base), es un modelo grande que no entra en GPU de consumo: la variante de 4 bits más pequeña ocupa 95,5 GB y la recomendada para equilibrio tamaño/calidad, Q4_K_M, 113,2 GB.
+El modelo es multimodal (pipeline image-text-to-text) y cuenta con 179.551.050.368 parámetros totales según los pesos en safetensors del modelo base. El repositorio GGUF ocupa 848,6 GB e incluye múltiples niveles de cuantización, desde BF16 sin cuantizar hasta IQ4_XS de 4 bits, además de un proyector visual independiente (mmproj) en f16 para el procesamiento de imágenes.
 
-La relevancia práctica de este repositorio es doble: por un lado, ofrece cinco niveles de cuantización (de BF16 a IQ4_XS) generados con importance matrix y overrides de precisión por tensor tomados de `unsloth/Qwen3.8-Flash-Next-GGUF`; por otro, los ficheros conservan la cabeza MTP (multi-token prediction) del modelo, lo que permite decodificación especulativa automática en llama.cpp sin modelo borrador separado. El autor reporta 3,75 tokens aceptados por paso con 3 tokens de borrador en una petición matemática y 2,72 en una petición con imagen, sobre una H200.
+La relevancia de esta ficha radica en que combina tres elementos poco habituales en un mismo paquete: razonamiento eficiente en tokens, capacidad de visión y despliegue local mediante GGUF con soporte de decodificación especulativa a través de la cabeza MTP del modelo. La licencia es la Qwen Community License 1.0, lo que condiciona su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la model card no detalla la arquitectura interna; se distribuye para llama.cpp en formato GGUF e incluye cabeza MTP) |
-| Parámetros totales | 179.551.050.368 (~179,55 B) |
-| Parámetros activos | No disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | BF16, Q8_0, Q6_K, Q4_K_M, IQ4_XS (las de 4 bits construidas con importance matrix y overrides de precisión por tensor) |
-| Idiomas soportados | No disponible |
-| Licencia | Qwen Community License 1.0 (`license: other`, `license_name: qwen-community-license-1.0`) |
-| Formato de pesos | GGUF multi-parte (8 shards por cuantización) + proyector multimodal GGUF `f16` (907,5 MB) |
-
-Tamaños de fichero por variante: BF16 359,2 GB; Q8_0 191,0 GB; Q6_K 171,9 GB; Q4_K_M 113,2 GB; IQ4_XS 95,5 GB. Tamaño total del repositorio: 848,6 GB.
+| Arquitectura | Transformer multimodal (image-text-to-text) con cabeza MTP (multi-token prediction); detalles internos de capas y atención no disponibles |
+| Parametros totales | 179.551.050.368 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible de forma explícita; la evaluación usa hasta 253.952 tokens nuevos de generación |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q4_K_M, IQ4_XS (y una variante externa RCO de 3,8 bpw) |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-license-1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (multiparte, 8 ficheros por cuantización) + mmproj f16 para visión |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles de arquitectura ni del proceso de entrenamiento en la información proporcionada. La model card de este repositorio remite explícitamente a la del modelo principal (`bottlecapai/ThinkingCap-Qwen3.8-Flash-Next`) para la descripción completa, los resultados de evaluación multi-semilla con tests estadísticos, la reducción de tokens de pensamiento medida y los parámetros de muestreo recomendados. Lo único documentado a nivel técnico es que se trata de un ajuste fino de Qwen3.8-Flash-Next orientado a eficiencia de tokens de razonamiento, y que el modelo conserva la cabeza MTP del modelo base.
+El modelo es un transformer multimodal que procesa texto e imágenes (pipeline image-text-to-text). Incorpora una cabeza MTP (multi-token prediction) que permite a llama.cpp ejecutar decodificación especulativa autoespeculativa, acelerando la generación. El modelo base es Qwen3.8-Flash-Next de Qwen, sobre el que BottleCap AI aplicó un finetune orientado a la eficiencia de tokens de razonamiento ("token-efficient", "efficient-thinking").
 
-La innovación técnica aprovechable en estos ficheros es la decodificación especulativa autocontenida: al incluir la cabeza MTP, llama.cpp puede generar tokens borrador con el propio modelo (parámetro `--spec-type draft-mtp`, con `--spec-draft-n-max` para fijar cuántos tokens se proponen por paso), sin necesidad de un modelo borrador adicional. Las cuantizaciones de 4 bits incorporan una importance matrix (estadísticas de activación de un corpus de calibración que dirigen dónde cae el error de baja precisión) y overrides de precisión por tensor, ambos heredados del repositorio GGUF de unsloth para el modelo base.
+No se dispone de información detallada sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada; la model card remite a la ficha del modelo principal para esos detalles. Las cuantizaciones de baja precisión se construyeron con una importance matrix (estadísticas de activación de un corpus de calibración) y overrides de precisión por tensor, tomados de unsloth/Qwen3.8-Flash-Next-GGUF.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato chat (`conversational`), con modo de razonamiento ("thinking") heredado del modelo base.
-- Razonamiento eficiente en tokens: el ajuste busca reducir el consumo de tokens de pensamiento manteniendo la calidad de respuesta del base.
-- Entrada de imágenes: es un modelo visión-lenguaje; requiere el `mmproj` para preguntas sobre imágenes, descripción de contenido visual y peticiones mixtas texto+imagen.
-- Razonamiento matemático: el autor verifica en la model card que la variante Q4_K_M responde correctamente a una petición matemática.
-- Decodificación especulativa MTP integrada, con tasas de aceptación medidas de 3,75 tokens/paso (matemáticas) y 2,72 tokens/paso (imagen) usando 3 tokens de borrador.
-- Compatible con endpoints OpenAI a través de `llama-server` (etiqueta `endpoints_compatible`), incluyendo endpoint de visión al añadir `--mmproj`.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; el modo thinking y la eficiencia de tokens son compatibles con ese uso, pero no hay confirmación del autor.
-- Capacidades multilingües: no disponible (los idiomas no están listados en la información proporcionada).
-- Capacidades de audio: no disponibles.
+- Generación de texto y razonamiento con modo "thinking" configurable (esfuerzo por defecto `xhigh` en la plantilla de chat).
+- Razonamiento matemático de competición (evaluado en AIME 2026).
+- Comprensión de imágenes y respuesta sobre ellas (evaluado en RealWorldQA), mediante el proyector visual mmproj.
+- Razonamiento eficiente en tokens: el finetune busca mantener la calidad del base con menos tokens de pensamiento.
+- Decodificación especulativa mediante la cabeza MTP integrada en los GGUF.
+- Conversación multi-turno (etiqueta "conversational").
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y multi-step reasoning: no disponible de forma explícita en la información proporcionada.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Análisis de documentos con componente visual en entornos on-premise: cargando el `mmproj` junto a Q4_K_M se pueden enviar capturas, escaneos o gráficos y hacer preguntas sobre ellos sin salir de la infraestructura propia, algo relevante para sectores con requisitos de confidencialidad.
-- Asistencia técnica con razonamiento acotado en coste: el ajuste reduce tokens de pensamiento, por lo que tareas de diagnóstico que exigen cadena de razonamiento (interpretar un log, explicar un error) consumen menos presupuesto de salida que el modelo base equivalentemente configurado.
-- Servicio de chat autoalojado con API compatible OpenAI: `llama-server` con `--spec-type draft-mtp --spec-draft-n-max 4` expone un endpoint que se puede conectar a clientes existentes, aprovechando la decodificación especulativa para mejorar el throughput de generación.
-- Procesamiento por lotes en CPU o en un único acelerador: el autor confirma funcionamiento en CPU y en una H200 con CUDA, de modo que sirve para pipelines nocturnos de clasificación, resumen o extracción de datos donde la latencia no es crítica y no hay clúster disponible.
-- Investigación sobre eficiencia de razonamiento: al ser un finetune centrado en reducir tokens de pensamiento, es una pieza útil para comparar calidad frente a coste frente al base, con la Salvedad de que las métricas publicadas están en la model card principal, no en este repositorio.
-- Despliegue en estación de trabajo con mucha RAM: con IQ4_XS (95,5 GB) y offloading parcial a memoria del sistema se puede mantener un asistente multimodal local para prototipado, aceptando latencias altas.
-- Evaluación de cuantizaciones: el repositorio ofrece BF16, Q8_0, Q6_K, Q4_K_M e IQ4_XS del mismo ajuste, lo que permite medir la degradación por cuantización sobre el mismo modelo sin cambiar de familia.
+- Razonamiento matemático local: el modelo obtiene un 97,19% en AIME 2026 en BF16, por lo que puede emplearse para resolver problemas de competición o verificación de demostraciones en entornos sin conexión, con la ventaja de que las cuantizaciones de 4 y 6 bits no muestran degradación medible de precisión.
+- Análisis de imágenes con preguntas en lenguaje natural: gracias al proyector visual f16 y a un rendimiento del 84,67% en RealWorldQA, es adecuado para tareas de inspección visual, descripción de escenas o extracción de información de capturas y fotografías.
+- Despliegue en servidor único de gama alta: con Q4_K_M (113,2 GB) puede servirse en una GPU H200 con llama-server, lo que permite ofrecer razonamiento multimodal de alta calidad desde una sola máquina.
+- Asistentes con presupuesto de tokens ajustado: al reducir los tokens de pensamiento manteniendo la calidad, encaja en productos donde el coste por inferencia o la latencia del razonamiento son críticos.
+- Prototipado e investigación en local: las variantes IQ4_XS (95,5 GB) y la RCO de 3,8 bpw (85,6 GB, 56,5 GB de VRAM) permiten experimentar con un modelo de 179B en hardware más modesto que el BF16.
+- Evaluación comparativa de cuantizaciones: los datos publicados de AIME 2026 y RealWorldQA por cuantización permiten reproducir y auditar el impacto de la cuantización en un pipeline propio con llama.cpp.
+- Servicio con decodificación especulativa: la cabeza MTP permite acelerar la generación en llama.cpp, útil para aplicaciones interactivas donde el throughput importa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de este repositorio remite a la del modelo principal (`bottlecapai/ThinkingCap-Qwen3.8-Flash-Next`) para los resultados de evaluación multi-semilla con tests estadísticos y la reducción de tokens de pensamiento medida; esos datos no están incluidos en la información proporcionada.
+Datos publicados en la model card, comparando cada cuantización con BF16 servido por vLLM (thinking en `xhigh`, temperatura 1.0, top-p 0.95, top-k 20, hasta 253.952 tokens nuevos). AIME 2026: 30 problemas, 8 ejecuciones por cuantización y 32 para BF16. RealWorldQA: 765 preguntas de imagen, 2 ejecuciones por cuantización y 8 para BF16.
 
-Los únicos datos cuantitativos de rendimiento presentes son las tasas de aceptación de la decodificación especulativa MTP, medidas por el autor con llama.cpp en el commit `5f5acfe` (2026-10-22) sobre una H200:
+| Cuantizacion | AIME 2026 | Cambio vs BF16 | Tokens de thinking | RealWorldQA | Cambio vs BF16 | Tokens de thinking |
+|---|---|---|---|---|---|---|
+| BF16 (vLLM) | 97,19% | — | — | 84,67% | — | — |
+| IQ4_XS | 97,50% | +0,31 pp [−1,25, +1,77] | +9,7% [+1,6, +23,0] | 84,51% | −0,16 pp [−1,23, +0,87] | −4,5% [−14,1, +5,6] |
+| Q4_K_M | 97,08% | −0,10 pp [−1,98, +1,87] | +9,6% [+1,3, +22,2] | 85,69% | +1,01 pp [−0,13, +2,16] | +5,6% [−4,6, +16,3] |
+| Q6_K | 96,25% | −0,94 pp [−2,92, +0,83] | +10,2% [+0,5, +17,8] | 84,84% | +0,16 pp [−0,95, +1,27] | +17,0% [+2,0, +33,8] |
+| Q8_0 | 96,25% | −0,94 pp [−3,85, +1,56] | +6,6% [−4,3, +14,3] | 85,23% | +0,56 pp [−0,54, +1,62] | +2,9% [−9,2, +15,7] |
 
-| Escenario | Tokens de borrador (`--spec-draft-n-max`) | Tokens aceptados por paso de decodificación |
-|---|---|---|
-| Petición matemática | 3 | 3,75 |
-| Petición con imagen | 3 | 2,72 |
-
-No se proporcionan cifras de latencia absoluta, throughput (tokens/s) ni resultados de MMLU, HumanEval, GSM8K u otros conjuntos.
+Ninguna cuantización difiere de forma medible de BF16 en precisión en ninguno de los dos benchmarks. En AIME, las cuantizaciones por debajo de Q8_0 usaron aproximadamente un 10% más de tokens de pensamiento que BF16; no se determinó si ese exceso proviene de la cuantización o de llama.cpp. En RealWorldQA la respuesta mediana piensa entre 113 y 126 tokens en todas las cuantizaciones (115 en BF16).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos solos ocupan 95,5 GB (IQ4_XS), 113,2 GB (Q4_K_M), 171,9 GB (Q6_K), 191,0 GB (Q8_0) y 359,2 GB (BF16); hay que sumar caché KV y el `mmproj` de 907,5 MB.
-- Configuración mínima verificada por el autor: Q4_K_M con proyector de visión funciona en una sola NVIDIA H200 (141 GB) con compilación CUDA, y también en CPU.
-- GPU recomendadas: H200 (141 GB) para Q4_K_M e IQ4_XS en un solo dispositivo; para Q6_K y Q8_0 hacen falta varios aceleradores (dos H200 suman 282 GB y cubren ambos); BF16 requiere del orden de 4×H200 o 8×H100 de 80 GB.
-- GPU de consumo: no cabe en ninguna GPU de consumo actual (24 GB o menos) ni siquiera en la cuantización más pequeña; solo es viable con offloading parcial a RAM del sistema, con penalización fuerte de velocidad.
-- Memoria del sistema: un despliegue en CPU de IQ4_XS necesita al menos ~96 GB de RAM libre para los pesos, más el espacio de trabajo del contexto.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli` para visión, `llama-server` con `--mmproj` para endpoint compatible OpenAI), Ollama, LM Studio y Jan (LM Studio detecta el `mmproj` automáticamente y habilita la entrada de imagen). Para vLLM o TGI no hay confirmación en la información disponible.
-- Requisito de versión: la decodificación MTP exige una compilación de llama.cpp con soporte para esta arquitectura; versiones anteriores pueden rechazar el fichero con un error de tensor ausente (`missing tensor`).
-- Latencia y throughput: no disponibles. Solo se conocen las tasas de aceptación MTP de la tabla anterior.
+- VRAM estimada para inferencia: BF16 requiere unos 359,2 GB de pesos; Q8_0 unos 191,0 GB; Q6_K unos 171,9 GB; Q4_K_M unos 113,2 GB; IQ4_XS unos 95,5 GB. La variante RCO de 3,8 bpw ocupa 56,5 GB de VRAM en pesos (frente a 66,1 GB de IQ4_XS).
+- GPU recomendadas: la model card valida el funcionamiento en una NVIDIA H200 (dos para Q8_0 en AIME) con llama-server y caché KV en q8_0. Para BF16 se necesitan múltiples aceleradores de gama alta o un nodo multi-GPU.
+- ¿Cabe en GPU de consumo? No para las cuantizaciones principales: incluso IQ4_XS supera los 95 GB. Solo la variante RCO de 3,8 bpw (56,5 GB en pesos) se acerca a configuraciones multi-GPU de consumo, aunque no se confirma que quepa en una sola GPU de consumo.
+- Despliegue: llama.cpp (llama-cli, llama-server), Ollama y LM Studio por compatibilidad con GGUF; vLLM se menciona como referencia para BF16. Se recomienda usar el proyector visual mmproj para tareas de imagen.
+- Latencia y throughput: no disponibles de forma numérica. La cabeza MTP habilita decodificación especulativa en llama.cpp, lo que reduce la latencia de generación, pero no se publican cifras de tokens por segundo.
+- Nota de ejecución: la decodificación greedy puede entrar en bucles; debe mantenerse la temperatura recomendada en la ficha del modelo principal.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantizaciones | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF (este) | 179,55 B | No disponible | BF16, Q8_0, Q6_K, Q4_K_M, IQ4_XS + mmproj f16 | Qwen Community License 1.0 | Hugging Face, 1.336 descargas, 14 likes |
-| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next (modelo base del GGUF) | 179,55 B (mismo modelo, sin cuantizar) | No disponible | Pesos sin cuantizar (formato no indicado en la información disponible) | Qwen Community License 1.0 | Hugging Face |
-| unsloth/Qwen3.8-Flash-Next-GGUF (referencia de cuantización) | No disponible | No disponible | GGUF; fuente de la importance matrix y los overrides por tensor usados aquí | No disponible en la información proporcionada | Hugging Face |
-| Qwen/Qwen3.8-Flash-Next (modelo original de Qwen) | No disponible | No disponible | No disponible | Qwen Community License 1.0 (heredada) | Hugging Face |
+| ThinkingCap-Qwen3.8-Flash-Next (este) | 179,55B | no disponible | Si (imagen-texto) | qwen-community-license-1.0 | GGUF, safetensors (base) |
+| Qwen3.8-Flash-Next (base) | no disponible en esta ficha | no disponible | Si (imagen-texto) | qwen-community-license-1.0 | safetensors |
+| ThinkingCap-Qwen3.8-Flash-Next-GGUF-RCO-3.8bpw | 179,55B (mismo base) | no disponible | Si | qwen-community-license-1.0 | GGUF (3,8 bpw) |
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación de rendimiento con alternativas de la misma categoría; la comparación anterior se limita a linaje, licencia y disponibilidad.
+Las alternativas de otros fabricantes no están disponibles en la información proporcionada; no se dispone de datos de rendimiento de modelos comparables de terceros.
 
 ## Limitaciones y advertencias
 
-- Licencia: Qwen Community License 1.0. Las condiciones del modelo base se heredan, e incluyen una licencia separada de Qwen para uso comercial por parte de negocios de Model-as-a-Service y de asistentes de trabajo con IA; conviene revisar el texto completo antes de un despliegue comercial.
-- Sin datos de benchmarks en este repositorio: las afirmaciones de "misma calidad que el base con menos tokens" provienen del autor y sus evaluaciones están en la model card principal, no aquí; no se han podido verificar con los datos disponibles.
-- Idiomas y longitud de contexto no documentados: no se puede garantizar cobertura multilingüe ni planificar despliegues que dependan de ventanas de contexto concretas.
-- Sesgos: no disponibles. No hay información sobre composición del dataset de ajuste ni sobre evaluaciones de sesgo.
-- Riesgo de alucinación: inherente a un modelo de 179,55 B de propósito general; no hay evaluaciones de factualidad publicadas en la información disponible.
-- Decodificación: el autor advierte de que la decodificación greedy puede entrar en bucles; hay que usar la temperatura y los parámetros de muestreo recomendados en la model card principal.
-- Fragilidad de la cuantización: IQ4_XS y Q4_K_M introducen pérdida de calidad respecto a BF16; el impacto real no está cuantificado en la información disponible.
-- Dependencia de la versión del runtime: sin una compilación reciente de llama.cpp con soporte MTP, el modelo puede no cargar; y las tasas de aceptación especulativa medidas en H200 no se trasladan necesariamente a otras GPU.
-- Huella de hardware: 848,6 GB de repositorio y un mínimo de ~96 GB para la variante de 4 bits más pequeña hacen inviable el despliegue en estaciones de trabajo convencionales sin offloading.
-- Formato multi-parte: cada cuantización se reparte en 8 shards; hay que descargar el conjunto completo y apuntar el runtime al primer fichero.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Riesgo de alucinación: no se documenta de forma específica; como modelo de razonamiento y generación, es susceptible de alucinar, especialmente en tareas abiertas.
+- Decodificación greedy: puede entrar en bucles; es necesario respetar los parámetros de muestreo recomendados (temperatura 1.0, top-p 0.95, top-k 20).
+- Coste de hardware: incluso las cuantizaciones de 4 bits superan los 95 GB, lo que excluye el despliegue en GPU de consumo convencionales.
+- Idiomas: no se especifican los idiomas soportados, lo que impide garantizar calidad multilingüe.
+- Licencia: Qwen Community License 1.0, con posibles restricciones para uso comercial; es necesario revisar el texto de la licencia antes de un despliegue en producción.
+- Cuantización: aunque no se observan diferencias medibles de precisión, las cuantizaciones por debajo de Q8_0 generaron aproximadamente un 10% más de tokens de pensamiento en AIME; el origen (cuantización o llama.cpp) no se determinó.
+- Contexto: la longitud de contexto no se declara explícitamente; la evaluación usa hasta 253.952 tokens nuevos, pero no debe confundirse con la ventana de contexto del modelo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF
-- Modelo base del ajuste: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
+- Repositorio GGUF: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF
+- Modelo base (finetune): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- GGUF de referencia para importance matrix y overrides: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
-- Licencia (Qwen Community License 1.0): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF/blob/main/LICENSE
-- Sitio del autor: https://www.bottlecapai.com/
+- Cuantizaciones de referencia (importance matrix y overrides): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
+- Variante RCO de 3,8 bpw: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF-RCO-3.8bpw
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Especificación del formato GGUF: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md
-
-No se han encontrado enlaces adicionales relevantes (papers, blogs o demos) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.
+- Especificación GGUF: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md
+- Sitio del autor: https://www.bottlecapai.com/

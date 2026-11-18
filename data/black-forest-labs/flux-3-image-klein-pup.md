@@ -2,101 +2,90 @@
 
 ## Resumen
 
-FLUX 3 Image Klein Prompt Upsampler (PUP) es un modelo vision-lenguaje de 9.409.813.744 parámetros desarrollado por Black Forest Labs. Su única tarea es convertir una petición breve de imagen ("A man walking with his dog, afternoon sun") en el prompt detallado que FLUX 3 Image Klein necesita para generar o editar imágenes. No genera imágenes: produce texto.
+FLUX 3 Image Klein Prompt Upsampler es un modelo vision-lenguaje de 9B parámetros desarrollado por Black Forest Labs como componente auxiliar del generador de imágenes FLUX 3 Image Klein. Su función no es generar imágenes, sino expandir una petición breve del usuario (por ejemplo, "un hombre paseando a su perro, sol de tarde") en un prompt detallado de varias frases que el modelo de difusión interpreta con mayor fidelidad. Acepta hasta 10 imágenes de referencia y, opcionalmente, una lista de bounding boxes, y devuelve un único prompt en inglés.
 
-Se trata de un ajuste fino completo de Qwen3.5-9B con la torre de visión congelada, entrenado en dos fases: supervisado sobre pares de petición corta y prompt expandido, y después ajuste por preferencias usando pares de prompts generados por el propio modelo, renderizados con FLUX 3 Image Klein con la misma semilla y ordenados según la imagen resultante.
+Técnicamente es un fine-tune completo de Qwen3.5-9B con la torre de visión congelada, entrenado en dos fases: aprendizaje supervisado sobre pares de peticiones cortas y prompts expandidos, y posterior ajuste por preferencias usando imágenes renderizadas con FLUX 3 Image Klein a la misma semilla y ordenadas por calidad del resultado. El modelo pesa 9.409.813.744 parámetros en bfloat16 (18,8 GB) y se distribuye bajo licencia Apache 2.0.
 
-Es relevante porque resuelve un problema práctico de los pipelines de difusión: la calidad del prompt determina la calidad de la imagen. El modelo acepta hasta 10 imágenes de referencia y una lista opcional de bounding boxes, y devuelve un único prompt con medio y estilo, escena, iluminación, cámara, sujetos, colores, materiales y posición en el encuadre. Se publica bajo licencia Apache 2.0 y está integrado por defecto en el código de inferencia oficial de FLUX 3 Image Klein.
+Su relevancia práctica radica en que Black Forest Labs lo integra por defecto en su pipeline de inferencia y en los templates de ComfyUI, de modo que actúa como capa de traducción entre la intención del usuario y el prompt técnico que el generador necesita. Es un ejemplo claro de modelo especializado en una única tarea de texto (prompt engineering automatizado) en lugar de un asistente conversacional general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer vision-lenguaje (Qwen3.5, clase `Qwen3_5ForConditionalGeneration`); torre de visión congelada durante el ajuste |
+| Arquitectura | Transformer vision-lenguaje (Qwen3.5-9B fine-tuneado; torre de visión congelada) |
 | Parametros totales | 9.409.813.744 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos en bfloat16; no hay GGUF ni variantes cuantizadas oficiales) |
-| Idiomas soportados | en (salida en inglés; la petición puede estar en cualquier idioma) |
-| Licencia | apache-2.0 |
+| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16) |
+| Idiomas soportados | inglés en la salida; la petición de entrada puede estar en cualquier idioma |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (bfloat16, 18,8 GB) |
-| Modelo base | Qwen/Qwen3.5-9B |
-| Modalidad de entrada | texto + hasta 10 imágenes de referencia + bounding boxes opcionales (JSON) |
-| Modalidad de salida | texto (prompt expandido, ~220 palabras en el ejemplo publicado) |
-| Pipeline declarado | image-text-to-text |
-| Tamano del repositorio | 18,8 GB |
-| Fecha de publicacion | 2026-10-14 (actualizado 2026-10-15) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer multimodal de la familia Qwen3.5, cargado en Transformers mediante `Qwen3_5ForConditionalGeneration` junto con `AutoProcessor`. El ajuste es completo sobre los pesos de lenguaje, mientras que la torre de visión permanece congelada. La inferencia se realiza con decodificación greedy, `top_p` 0.95, `top_k` 20, `max_new_tokens` 3584 y una penalización de presencia de 1.5 para text-to-image y 0.0 para edición.
+El modelo parte de Qwen3.5-9B, un transformer denso con torre de visión, y se somete a un fine-tune completo manteniendo congelada la torre de visión. El entrenamiento se estructura en dos etapas: primero, aprendizaje supervisado sobre pares formados por peticiones cortas y sus correspondientes prompts expandidos; después, ajuste por preferencias (preference tuning) sobre pares de prompts generados por el propio modelo, renderizados con FLUX 3 Image Klein a la misma semilla y clasificados según la calidad de la imagen resultante. Esta segunda fase alinea el modelo con lo que el generador de imágenes interpreta mejor, no solo con lo que suena bien como texto.
 
-El entrenamiento tiene dos etapas: primero un ajuste supervisado sobre pares de peticiones cortas y sus prompts expandidos; después un ajuste por preferencias sobre pares de prompts generados por el propio modelo, renderizados con FLUX 3 Image Klein con la misma semilla y clasificados según la imagen obtenida. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF adicional.
-
-La innovación destacable es el control de modo mediante system prompt: el repositorio incluye `system_prompts.json` con cuatro plantillas (`t2i`, `i2i`, `t2i_bbox`, `i2i_bbox`) que seleccionan generación desde texto, edición con referencias o composición con bounding boxes. En el modo con cajas, las coordenadas se conservan exactamente como una tabla de boxes posterior al prompt y el texto cita cada caja por su identificador, de modo que el modelo de imagen coloca el elemento donde indica la caja.
+La innovación principal es la especialización en cuatro modos de operación seleccionables mediante system prompt (`t2i`, `i2i`, `t2i_bbox`, `i2i_bbox`), que cubren texto-a-imagen, edición con referencias y layout con bounding boxes. En modo edición, el modelo inspecciona las imágenes de referencia y redacta la instrucción describiendo qué cambia y qué permanece según la apariencia de los elementos. En modo layout, conserva exactamente las cajas proporcionadas y las emite como tabla tras el prompt, citando cada una por identificador para que el generador coloque el elemento en la posición indicada. La decodificación recomendada es greedy con `top_p` 0.95, `top_k` 20 y penalización de presencia 1.5 para texto-a-imagen y 0 para ediciones.
 
 ## Capacidades
 
-- Expansión de prompts para text-to-image: convierte una petición breve en un prompt que decide medio y estilo, escena, iluminación y cámara, y describe cada sujeto con colores, materiales y posición en el encuadre.
-- Edición guiada por referencias (image-to-image): analiza las imágenes de referencia y redacta la instrucción en función de lo que aparece en ellas, indicando qué cambia y qué se mantiene, por apariencia.
-- Soporte de hasta 10 imágenes de referencia por petición.
-- Composición con bounding boxes: acepta cajas en JSON y devuelve el prompt con una tabla de cajas, citando cada box por id.
+- Expansión de prompts de texto-a-imagen: convierte una petición breve en un prompt de varias frases con medio, estilo, escena, iluminación, cámara y descripción de cada sujeto (colores, materiales, posición en el encuadre).
+- Edición guiada por referencias: procesa hasta 10 imágenes de referencia y redacta la instrucción de edición en función de lo que aparece en ellas.
+- Layout con bounding boxes: acepta cajas en JSON y las preserva exactamente, citándolas por id en el prompt resultante.
 - Conservación literal de texto a renderizar: el texto que debe aparecer en la imagen se mantiene verbatim, entre comillas.
-- Comprensión multilingüe de la petición: la entrada puede estar en cualquier idioma, aunque la salida es siempre en inglés.
-- No hay soporte declarado de tool calling, function calling, agentes ni modo de razonamiento explícito (`enable_thinking=False` en el ejemplo de uso).
-- Capacidad de rechazo: ninguna. El modelo no rechaza peticiones por sí mismo; el filtrado de seguridad es externo y opcional (`--safety` en el código de inferencia).
+- Procesamiento multimodal: entrada de imagen y texto (pipeline `image-text-to-text`).
+- Comprensión multilingüe de la petición: la solicitud puede formularse en cualquier idioma, aunque la salida es siempre en inglés.
+- Integración con tooling: se carga por defecto en el código de inferencia de FLUX 3 Image Klein, en el pipeline modular de Diffusers y en los templates de ComfyUI mediante el interruptor `enable_prompt_upsampler`.
+- Compatibilidad con Transformers mediante `Qwen3_5ForConditionalGeneration` y `AutoProcessor`.
 
 ## Casos de uso
 
-- Aumento automático de prompts en pipelines de difusión: integrar el modelo delante de FLUX 3 Image Klein, como hace el código oficial por defecto, para que el usuario escriba una frase corta y obtenga una imagen con composición e iluminación controladas.
-- Herramientas de diseño y generación de mockups: un diseñador introduce una idea de una línea y el modelo produce el prompt completo con encuadre, luz y materiales, reduciendo el tiempo de iteración sobre la imagen final.
-- Edición de imágenes con referencias en producción: usando el system prompt `i2i` y hasta 10 referencias, se pueden automatizar cambios concretos ("put a red bandana around the dog's neck") manteniendo la apariencia del resto de la escena.
-- Composición con control de layout: productos de comercio electrónico que deben colocarse en posiciones exactas del encuadre, pasando bounding boxes en JSON y obteniendo un prompt con la tabla de cajas citada por id.
-- Localización de interfaces creativas: la petición puede llegar en cualquier idioma y el prompt de salida siempre es inglés, lo que simplifica aplicaciones multilingües que alimentan un único modelo de imagen.
-- Generación de texto dentro de la imagen: carteles, rótulos o packaging donde el texto debe reproducirse exactamente; el modelo lo mantiene entre comillas y verbatim.
-- Preprocesado y anotación de datasets: expansión masiva de peticiones cortas a prompts detallados para construir o aumentar corpus de entrenamiento de modelos de imagen.
-- Integración por CLI o script: `python -m flux3.pup --prompt "..." --out caption.txt` permite usar el modelo solo como upsampler, sin generar imagen, dentro de un pipeline propio.
+- Generación de imágenes asistida en producción: el modelo se interpone entre la petición del usuario y FLUX 3 Image Klein para elevar la calidad del resultado sin exigir al usuario conocimientos de prompting; es el flujo por defecto del pipeline oficial.
+- Edición de imágenes con referencias múltiples: en herramientas de retoque, el modelo recibe hasta 10 imágenes y una instrucción breve ("ponle un pañuelo rojo al perro") y genera la descripción precisa de qué cambia y qué se mantiene, lo que reduce iteraciones fallidas.
+- Composición con layout controlado: en diseño gráfico o publicidad, el usuario define bounding boxes para logotipos, productos o texto, y el modelo produce un prompt que respeta esas posiciones exactas, algo que un prompt libre no garantiza.
+- Automatización de flujos creativos por lotes: un pipeline que recibe cientos de peticiones breves de un catálogo y genera prompts detallados de forma determinista (decodificación greedy), adecuado para generar variaciones consistentes de un mismo producto.
+- Integración en ComfyUI para artistas y estudios: los templates oficiales activan el upsampler con un interruptor, de modo que equipos sin perfil técnico obtienen prompts de calidad profesional sin escribir system prompts.
+- Sustitución de prompts manuales en equipos de marketing: el modelo estandariza el estilo de los prompts (medio, iluminación, cámara) en toda una organización, lo que homogeniza la estética de las imágenes generadas.
+- Investigación en alineación de modelos auxiliares: su entrenamiento por preferencias sobre imágenes renderizadas sirve como caso de estudio de optimización de un LLM contra la métrica de un modelo generativo externo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de métricas específicas de calidad de prompt o de imagen (por ejemplo, comparativas de preferencia frente a prompts escritos por humanos).
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos en bfloat16: 18,8 GB, por lo que la inferencia en precisión completa necesita del orden de 20 a 24 GB de VRAM contando caché KV y activaciones del procesador de imagen; no se publica una estimación oficial de VRAM.
-- GPU de datacenter recomendadas: A100 (40 u 80 GB), H100, L40S (48 GB) o similares, donde el modelo cabe con margen.
-- GPU de consumo: cabe ajustado en una RTX 4090 de 24 GB en bfloat16; no hay cuantizaciones oficiales que reduzcan el requisito y no se documenta soporte en GPUs de 16 GB o menos.
-- Opciones de despliegue: `transformers` con `Qwen3_5ForConditionalGeneration` y `AutoProcessor`, y el código de inferencia oficial `black-forest-labs/flux-3-image-klein` (CLI `scripts/cli.py` y módulo `flux3.pup`).
-- vLLM, TGI, llama.cpp y Ollama: no disponible. El autor no documenta soporte para estos servidores y el repositorio solo publica pesos en safetensors bfloat16, sin GGUF.
-- Latencia y throughput: no disponible. El único parámetro de generación documentado es `max_new_tokens=3584`, con decodificación greedy.
+- VRAM estimada para inferencia: aproximadamente 19 GB en bfloat16 (pesos de 18,8 GB más overhead de activaciones y caché KV); en cuantizaciones de 8 bits podría rondar los 10-11 GB y en 4 bits los 6-7 GB, aunque el autor no publica versiones cuantizadas.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para despliegue en bfloat16 sin compromisos; una RTX 4090 (24 GB) es suficiente para bfloat16 en una sola GPU.
+- GPU de consumo: cabe en RTX 4090 y, con cuantización, en GPUs de 12-16 GB como RTX 4080 o 4070 Ti Super; en 8 GB requeriría cuantización agresiva no oficial.
+- Opciones de despliegue: código oficial `black-forest-labs/flux-3-image-klein` (CLI y módulo `flux3.pup`), Transformers con `device_map="auto"`, pipeline modular de Diffusers y ComfyUI mediante los templates `flux-3-image-klein-comfy`. No se documenta soporte específico de vLLM, TGI o llama.cpp.
+- Latencia y throughput: no disponibles en la información proporcionada; la generación está acotada a `max_new_tokens=3584` con decodificación greedy, lo que da una cota superior del coste por petición.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Funcion | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Image Klein PUP | 9,41 B | no disponible | Expansion de prompts, edicion y layout para FLUX 3 Image Klein | Apache 2.0 | safetensors bf16 |
-| Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | VLM generalista; no esta especializado en reescritura de prompts | Apache 2.0 | safetensors |
-| Otros upsamplers de prompt open source | no disponible | no disponible | no disponible | no disponible | no disponible |
+| FLUX 3 Image Klein Prompt Upsampler | 9,4B | no disponible | Upsampling de prompts para FLUX 3 | Apache 2.0 | Hugging Face, integrado en pipeline oficial |
+| Qwen3.5-9B (modelo base) | 9B | no disponible | LLM/VLM generalista | no disponible en la información | Hugging Face |
+| Cualquier LLM con los system prompts de `system_prompts.json` | variable | variable | Upsampling de prompts genérico | según modelo | Hugging Face |
 
-No se dispone de datos verificables de modelos alternativos de la misma categoria (reescritura o expansion de prompts para modelos de difusion) en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
+La comparación relevante es contra el propio modelo base y contra la alternativa que el autor menciona explícitamente: usar cualquier otro LLM con los system prompts incluidos en `system_prompts.json`. La ventaja del upsampler es su ajuste específico por preferencias sobre imágenes renderizadas con FLUX 3 Image Klein, algo que un LLM genérico no puede replicar. No se dispone de datos de rendimiento comparativo entre ambas opciones.
 
 ## Limitaciones y advertencias
 
-- La salida es siempre en inglés, independientemente del idioma de la petición.
-- Los prompts están escritos específicamente para FLUX 3 Image Klein; ningún otro modelo de imagen formó parte del entrenamiento, por lo que su uso con otros generadores no está validado.
-- Las imágenes de referencia se redimensionan antes de entrar al modelo (como máximo 1 MP con una sola referencia y menos cuando hay varias), de modo que los detalles pequeños pueden describirse de forma incorrecta.
-- El modelo no rechaza peticiones: no incorpora filtrado propio. El código de inferencia permite activar comprobaciones opcionales de prompt e imagen con `--safety`.
-- La conservación de bounding boxes es exacta en el texto del prompt, pero el cumplimiento final depende del modelo de imagen que reciba la tabla de cajas.
-- No se documentan sesgos conocidos, comportamiento en contextos largos ni cobertura de idiomas más allá de la salida en inglés.
-- Riesgo de alucinación: no cuantificado en la información disponible; al tratarse de un modelo generativo que describe imágenes de referencia, puede inventar detalles no presentes en ellas.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo deriva de Qwen3.5-9B, también Apache 2.0.
-- No hay datos publicados de rendimiento, latencia ni calidad medible, lo que dificulta evaluar su idoneidad en producción sin pruebas propias.
+- La salida es siempre en inglés, aunque la petición de entrada puede estar en cualquier idioma; esto puede ser un problema para productos que requieran prompts en otros idiomas.
+- Los prompts están optimizados exclusivamente para FLUX 3 Image Klein; ningún otro modelo de imagen participó en el entrenamiento, por lo que su uso con otros generadores no está validado.
+- El modelo no genera imágenes: es un componente auxiliar y requiere el generador FLUX 3 Image Klein para producir resultados finales.
+- Riesgo de alucinación: al expandir peticiones ambiguas, el modelo añade detalles (vestuario, iluminación, composición) que el usuario no solicitó; en flujos donde la fidelidad literal importa, esto puede desviar el resultado.
+- Sesgos: no se documentan evaluaciones de sesgo; al tratarse de un fine-tune de Qwen3.5-9B, hereda los sesgos del modelo base, y la fase de preferencias sobre imágenes puede reforzar estéticas dominantes en los datos de entrenamiento.
+- Longitud de contexto no publicada: aunque acepta hasta 10 imágenes de referencia, se desconoce el límite exacto de tokens y cómo escala el rendimiento con muchas referencias.
+- No se publican versiones cuantizadas oficiales (GGUF, AWQ, GPTQ), lo que limita el despliegue en hardware modesto sin trabajo adicional.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre la calidad de los prompts generados en dominios especializados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
-- Modelo de imagen asociado: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Codigo de inferencia: https://github.com/black-forest-labs/flux-3-image-klein
+- Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Generador FLUX 3 Image Klein: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+- Código de inferencia (GitHub): https://github.com/black-forest-labs/flux-3-image-klein
+- Templates de ComfyUI: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Ejemplo de prompt expandido: https://github.com/black-forest-labs/flux-3-image-klein/blob/main/examples/base/man_dog.json
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

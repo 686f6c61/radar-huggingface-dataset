@@ -2,91 +2,93 @@
 
 ## Resumen
 
-DMAD (Distribution Matching as Adversarial Distillation) es un metodo de destilacion para generacion visual rapida, aplicado aqui al modelo MiniMax-H3. Este repositorio de Hugging Face no contiene un modelo completo, sino los adaptadores LoRA que convierten al profesor MiniMax-H3 (33 000 millones de parametros, text-to-audio-video, 50 pasos de muestreo) en un estudiante que genera video y audio en solo 4 pasos. Lo desarrollan Zhengming Yu y colaboradores de Texas A&M University y ByteDance.
+DMAD (Distribution Matching as Adversarial Distillation) es una familia de modelos destilados que aceleran la generación visual. En este repositorio se publican los estudiantes de 4 y 8 pasos de MiniMax-H3, un modelo de texto-a-vídeo-y-audio de 33B parámetros desarrollado por MiniMax. El trabajo lo firman investigadores de Texas A&M University y ByteDance, y transforma al profesor original de 50 pasos en un generador que produce vídeo de 1344x768 con audio estéreo nativo en solo 4 u 8 pasos de muestreo.
 
-El resultado es un generador conjunto de audio y video con resolucion 1344x768 y audio estereo nativo, obtenido anadiendo LoRAs de rango 128 sobre el transformer de H3 (50 bloques transformer mas 2 bloques token-refiner, 312 modulos en total). El repositorio incluye dos checkpoints de 1,4 GB cada uno, con configuraciones de critico distintas.
+La relevancia práctica es directa: reducir de 50 a 4 pasos de inferencia disminuye el coste computacional en más de un orden de magnitud, lo que hace viable la generación conjunta de audio y vídeo en GPUs de consumo. El repositorio incluye además estudiantes para Wan2.1-T2V (1.3B y 14B), SDXL e ImageNet-64, junto con el código de entrenamiento y los datos utilizados.
 
-El interes es practico: reducir de 50 a 4 pasos el coste de muestreo de un modelo de generacion audiovisual de gran tamano, manteniendo audio nativo sincronizado. Se publica bajo la MiniMax H3 Community License Agreement como derivado del modelo base.
+Los pesos se distribuyen como LoRAs de rango 128 sobre el transformer de H3, con versiones en formato Diffusers y en el layout de claves de ComfyUI, además de flujos de trabajo listos para ejecutar que caben en GPUs de 8 GB.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (MiniMax-H3) con 50 bloques transformer y 2 bloques token-refiner; adaptacion mediante LoRA de rango 128 |
-| Parametros totales | Aproximadamente 33 000 millones en el modelo base MiniMax-H3; los adaptadores LoRA son ficheros de 1,4 GB cada uno |
-| Parametros activos | no disponible (no es un modelo de arquitectura MoE) |
-| Longitud de contexto | no disponible (modelo de generacion de video y audio; no expone ventana de contexto de texto) |
-| Tipos de cuantizacion | no disponible (solo se documentan pesos LoRA en safetensors) |
+| Arquitectura | Transformer de difusión (MiniMax-H3) con LoRA de rango 128 sobre bloques de atención y FFN; destilación por matching de distribución adversarial |
+| Parámetros totales | 33B (modelo base MiniMax-H3); las LoRAs publicadas pesan 1,4 GB (Diffusers) o 2,0 GB (ComfyUI) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (los flujos ComfyUI permiten ejecución en 8 GB de VRAM, lo que implica cuantización, pero no se detalla el esquema) |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax H3 Community License Agreement |
-| Formato de pesos | safetensors (adaptadores LoRA con claves de Diffusers) |
+| Licencia | minimax-h3-community-license-agreement |
+| Formato de pesos | safetensors (LoRA en layout Diffusers y en layout ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-DMAD es un metodo de destilacion que combina el ajuste por coincidencia de distribuciones con un esquema adversarial. El objetivo es transformar un profesor de difusion de 50 pasos (MiniMax-H3, 33 000 millones de parametros) en un estudiante que genera en 4 pasos, sin guiado libre de clasificador (classifier-free guidance). La adaptacion se realiza con LoRAs de rango 128 (alpha = rank = 128) aplicadas sobre las proyecciones `attn.to_q`, `attn.to_k`, `attn.to_v`, `attn.to_out.0`, `ff.net.0.proj` y `ff.net.2` de los 50 bloques transformer y de los 2 bloques token-refiner, lo que suma 312 modulos. El layout de claves sigue el formato de Diffusers (`<module>.lora.down.weight` = A [128, in], `<module>.lora.up.weight` = B [out, 128]).
+DMAD aplica una destilación por matching de distribución formulada como un proceso adversarial. El estudiante se entrena para igualar la distribución del profesor (MiniMax-H3 de 50 pasos) mediante un crítico que discrimina entre muestras generadas por ambos. En la variante `lora_critic`, el backbone del crítico permanece congelado bajo una LoRA; en la variante `full_critic`, el crítico se entrena por completo y obtiene mejores puntuaciones en AVGen-Bench. Las LoRAs resultantes tienen rango 128 y se aplican sobre `attn.to_q/to_k/to_v/to_out.0`, `ff.net.0.proj` y `ff.net.2` de los 50 bloques del transformer y de los 2 bloques token-refiner (312 módulos en total), con alpha igual al rango.
 
-El repositorio ofrece dos variantes. La primera (`dmad_minimax_h3_4step_lora_critic.safetensors`) es el checkpoint del articulo: una media exponencial movil (EMA) del estudiante en la iteracion 800 de la ejecucion principal, con el critico congelado bajo un LoRA. La segunda (`dmad_minimax_h3_4step_full_critic.safetensors`) proviene de una ejecucion en la que el backbone del critico se entrena por completo, corresponde a la iteracion 1600 con pesos vivos y obtiene mejor puntuacion en AVGen-Bench. El muestreo usa 4 pasos, un time shift de 12 para video y de 2 para audio, sin guiado, con 124 fotogramas a 24 fps.
+El modelo base MiniMax-H3 genera vídeo de 1344x768 con audio estéreo nativo de forma conjunta. Los estudiantes de 4 pasos se obtuvieron a partir de una ejecución principal (EMA en la iteración 800) y de una ejecución con crítico completo (iteración 1600, pesos vivos). El estudiante de 8 pasos se entrenó desde cero con muestreo de 8 pasos. El repositorio también publica los datos de entrenamiento de H3 y de Wan2.1 (42.158 muestras del profesor Wan2.1-14B con sus latentes de vídeo real).
 
 ## Capacidades
 
-- Generacion conjunta de video y audio a partir de texto (text-to-audio-video), con audio estereo nativo generado de forma sincronizada con el video.
-- Generacion de video a resolucion 1344x768 y 124 fotogramas a 24 fps.
-- Muestreo rapido en 4 pasos, frente a los 50 pasos del profesor MiniMax-H3, sin guiado libre de clasificador.
-- Destilacion sobre un modelo base de 33 000 millones de parametros mediante LoRA, lo que permite cargar los adaptadores sobre los pesos originales sin duplicar el modelo completo.
-- Compatibilidad con el ecosistema Diffusers para la carga de los adaptadores LoRA.
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, razonamiento multi-paso, agentes, modo thinking, vision de entrada ni procesamiento de lenguaje mas alla del prompt de texto.
+- Generación conjunta de vídeo y audio a partir de texto (text-to-audio-video), con audio estéreo nativo.
+- Generación de vídeo a 1344x768 de resolución.
+- Muestreo rápido: 4 pasos (estudiantes `lora_critic` y `full_critic`) u 8 pasos (`8step_full_critic`).
+- Destilación reutilizable: la metodología se aplica también a Wan2.1-T2V (1.3B y 14B), SDXL (4 y 1 pasos) e ImageNet-64 (1 paso).
+- Integración con ComfyUI mediante LoRAs en su layout de claves y flujos de trabajo listos para ejecutar.
+- Ejecución en GPUs de consumo gracias al modo `--low-vram` (5 s de vídeo en menos de 7 GiB, 15 s en 12 GiB).
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso; el modelo es puramente generativo visual.
 
 ## Casos de uso
 
-- Generacion rapida de clips audiovisuales para prototipado creativo: con solo 4 pasos de muestreo, permite iterar sobre prompts de texto y obtener video con audio sincronizado en un tiempo muy inferior al del profesor de 50 pasos.
-- Produccion de contenido para redes sociales: la salida de 1344x768 a 24 fps y 124 fotogramas encaja en formatos de video corto con audio estereo generado.
-- Creacion de borradores de storyboard animado: util para previsualizar escenas con sonido antes de una produccion final, dado el bajo coste por generacion.
-- Investigacion en destilacion de modelos generativos: el repositorio sirve como referencia reproducible de LoRA de rango 128 sobre un transformer de difusion de 33 000 millones de parametros, con dos variantes de critico para comparar.
-- Evaluacion de metodos de muestreo rapido: permite comparar el estudiante de 4 pasos frente al profesor de 50 pasos en tareas de generacion conjunta de audio y video.
-- Generacion de material audiovisual sintetico para demostraciones tecnicas o benchmarks internos, etiquetando el resultado como contenido generado por IA segun exige la licencia.
-- Adaptacion a dominios especificos: al ser adaptadores LoRA, pueden combinarse o sustituirse sobre el mismo modelo base MiniMax-H3 para experimentar con estilos o dominios concretos.
+- Prototipado rápido de vídeo con audio: un estudio puede generar clips de 5 a 15 segundos con sonido sincronizado en 4 u 8 pasos, lo que permite iterar sobre guiones y storyboards sin esperar minutos por muestra.
+- Previsualización en pipelines de producción audiovisual: el estudiante de 4 pasos sirve para generar borradores rápidos que luego se refinan con el profesor de 50 pasos solo en las tomas seleccionadas.
+- Generación en estaciones de trabajo con GPU de consumo: con el flujo de ComfyUI para 8 GB y `--low-vram`, un creador individual puede producir vídeo con audio en una RTX 3060 o similar sin infraestructura de centro de datos.
+- Investigación en destilación de modelos generativos: el repositorio incluye código de entrenamiento (`train/h3`, `train/wan`, `train/image`) y datos, lo que permite reproducir el método y aplicarlo a otros profesores.
+- Contenido para redes sociales y publicidad: la resolución 1344x768 y el audio nativo encajan en formatos horizontales de plataformas, con la ventaja de generar imagen y sonido en una sola pasada.
+- Benchmarking de modelos de vídeo: AVGen-Bench se usa en la model card para comparar variantes (`full_critic` puntúa más alto que `lora_critic`), por lo que el modelo sirve como referencia en evaluaciones de generación audio-vídeo.
 
 ## Benchmarks y rendimiento
 
-En la informacion disponible se menciona que el checkpoint `dmad_minimax_h3_4step_full_critic.safetensors` obtiene una puntuacion mas alta en AVGen-Bench que la variante con critico congelado, pero no se publican valores numericos de ese ni de otros benchmarks. Por tanto:
+La model card menciona que `full_critic` obtiene una puntuación superior a `lora_critic` en AVGen-Bench, pero no se proporcionan cifras numéricas en la información disponible.
 
-No se han publicado resultados de benchmarks con cifras en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en la informacion proporcionada. Como referencia de calculo, el modelo base MiniMax-H3 tiene 33 000 millones de parametros; en bf16 los pesos del modelo completo rondarian los 66 GB, a lo que se sumaria el coste de activaciones y muestreo de video. Los adaptadores LoRA anaden solo 1,4 GB por checkpoint.
-- GPU recomendadas: no disponible. Por el tamano del modelo base, el despliegue en bf16 requiere GPU de clase servidor (por ejemplo A100 de 80 GB o H100); se trata de una estimacion a partir del tamano del modelo, no de un requisito publicado.
-- Compatibilidad con GPU de consumo: no disponible de forma oficial. Un modelo base de 33 000 millones de parametros no cabe en configuraciones de consumo habituales (RTX 4090 de 24 GB) sin cuantizacion del modelo base, dato que no se documenta.
-- Opciones de despliegue: el repositorio de codigo proporciona `inference.py` con el muestreador empleado en el articulo (regla de re-noise step) y un ejemplo de pipeline de Diffusers. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. Se sabe que el muestreo se reduce de 50 a 4 pasos, lo que implica un menor numero de evaluaciones del modelo, pero no se aportan tiempos medidos.
+- VRAM estimada: 5 s de vídeo en menos de 7 GiB con `--low-vram`; 15 s de vídeo en 12 GiB; los flujos de ComfyUI caben en 14 GiB con resultados idénticos a ejecuciones en GPUs mayores.
+- GPU de 8 GB: soportadas mediante el flujo de ComfyUI específico y el modo `--low-vram`.
+- GPU de 16 GB: soportadas con los flujos de ComfyUI y `--low-vram` (14 GiB).
+- GPU de centro de datos (A100, H100): no se detallan requisitos ni rendimiento específico, pero el modelo base de 33B y las LoRAs de 1,4-2,0 GB sugieren que se necesita cargar el profesor completo o su representación cuantizada.
+- Opciones de despliegue: ComfyUI (flujos incluidos), código de inferencia del repositorio GitHub, librería `minimax-h3`; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Pasos de muestreo | Modalidad | Licencia | Disponibilidad |
+| Modelo | Parámetros | Pasos de muestreo | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DMAD (estudiante de MiniMax-H3) | LoRA de rango 128 sobre base de 33 000 millones | 4 | Text-to-audio-video, 1344x768, audio estereo | MiniMax H3 Community License Agreement | Adaptadores en Hugging Face, codigo en GitHub |
-| MiniMax-H3 (profesor) | 33 000 millones | 50 | Text-to-audio-video | MiniMax H3 Community License Agreement | Modelo base en Hugging Face |
-| Otros generadores audiovisuales destilados comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-La unica comparacion con datos en la informacion proporcionada es frente al propio profesor MiniMax-H3, del que DMAD hereda la arquitectura y los pesos y al que reduce el muestreo de 50 a 4 pasos mediante destilacion. No se dispone de datos de otros modelos de la misma categoria en la informacion consultada.
+| DMAD (MiniMax-H3 4/8 pasos) | 33B (base) + LoRA | 4 u 8 | Texto a vídeo + audio | minimax-h3-community-license-agreement | Hugging Face, ModelScope, ComfyUI |
+| MiniMax-H3 (profesor) | 33B | 50 | Texto a vídeo + audio | minimax-h3-community-license-agreement | Hugging Face |
+| DMAD Wan2.1-T2V (1.3B/14B) | 1,3B / 14B | 4 | Texto a vídeo | no disponible en la información | Hugging Face |
+| DMAD SDXL | no disponible | 4 y 1 | Texto a imagen | no disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Este repositorio no es un modelo autonomo: requiere descargar el modelo base MiniMax-H3 (33 000 millones de parametros) y aplicar los adaptadores LoRA; el codigo de inferencia vive en un repositorio externo de GitHub, no en Hugging Face.
-- Licencia: los checkpoints son derivados del modelo MiniMax-H3 y se distribuyen bajo la MiniMax H3 Community License Agreement. Es una licencia "other", por lo que las condiciones de uso comercial deben revisarse en el fichero LICENSE antes de cualquier despliegue en produccion.
-- Contenido generado por IA: la propia model card indica que los videos producidos con estos pesos son generados por IA, lo que implica obligaciones de divulgacion segun el contexto de uso.
-- Riesgo de artefactos y alucinacion visual: al ser un modelo de difusion destilado a 4 pasos, no se documentan evaluaciones de fidelidad, coherencia temporal ni sincronizacion audio-video mas alla de la mencion a AVGen-Bench.
-- Idiomas: no disponible. La model card no especifica que idiomas soporta el modelo para el prompt de texto ni para el audio generado (por ejemplo, si produce voz en un idioma concreto).
-- Sin datos publicados de cuantizacion, VRAM, latencia ni throughput, lo que dificulta planificar el despliegue en produccion.
-- Repositorio con 0 descargas y 17 likes en el momento de la consulta, lo que indica un uso muy limitado y poca validacion externa de la comunidad.
-- No se documentan capacidades de tool calling, agentes ni razonamiento; es exclusivamente un generador de video y audio.
+- La licencia `minimax-h3-community-license-agreement` no es una licencia de código abierto estándar; es necesario revisar sus términos antes de cualquier uso comercial.
+- El modelo es un destilado de 4 u 8 pasos: la calidad puede ser inferior a la del profesor de 50 pasos, especialmente en la variante `lora_critic` frente a `full_critic`.
+- No se documentan sesgos conocidos ni tasas de alucinación; al ser un modelo generativo visual, existe riesgo de contenido incoherente o no fiel al prompt.
+- No se especifican los idiomas soportados para los prompts de texto.
+- Los flujos de baja VRAM (8 GB) pueden imponer límites en duración y resolución que no se detallan.
+- No se proporcionan cifras de benchmarks ni de latencia, lo que dificulta comparaciones cuantitativas objetivas.
+- El repositorio ocupa 60,4 GB, lo que exige espacio de almacenamiento considerable.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ZhengmingYu/DMAD
-- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Pagina del proyecto: https://yzmblog.github.io/projects/DMAD/
-- Articulo (arXiv): https://arxiv.org/abs/2610.02188
-- Codigo: https://github.com/Yzmblog/DMAD
-- Video de demostracion: https://www.youtube.com/watch?v=cOCUCYZzAtE
-- Perfil del autor: https://yzmblog.github.io/
+- Modelo en Hugging Face: https://huggingface.co/ZhengmingYu/DMAD
+- Página del proyecto: https://yzmblog.github.io/projects/DMAD/
+- Paper (arXiv): https://arxiv.org/abs/2610.02188
+- Código en GitHub: https://github.com/Yzmblog/DMAD
+- ModelScope: https://modelscope.ai/models/ZhengmingYu-Community/DMAD
+- ModelScope CN: https://modelscope.cn/models/ZhengmingYu-Community/DMAD
+- Vídeo de demostración: https://www.youtube.com/watch?v=cOCUCYZzAtE
+- Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Dataset de entrenamiento H3: https://huggingface.co/datasets/ZhengmingYu/DMAD-H3-data
+- Dataset de entrenamiento Wan2.1: https://huggingface.co/datasets/ZhengmingYu/DMAD-Wan-data

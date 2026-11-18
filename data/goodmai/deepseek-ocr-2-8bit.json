@@ -5,7 +5,7 @@
   "author": "goodmai",
   "url": "https://huggingface.co/goodmai/DeepSeek-OCR-2-8bit",
   "created_at": "2026-11-15T05:59:39.000Z",
-  "updated_at": "2026-11-15T06:13:06.000Z",
+  "updated_at": "2026-11-17T14:55:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

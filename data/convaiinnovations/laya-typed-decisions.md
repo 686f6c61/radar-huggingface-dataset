@@ -2,121 +2,121 @@
 
 ## Resumen
 
-Laya (fine-tuned on typed-decisions) es un modelo publicado por Convai Innovations en Hugging Face, distribuido bajo licencia Apache 2.0 y con 421.293.830 parametros (aproximadamente 421 M) en formato safetensors. Se trata de un ajuste fino de "Laya" sobre el benchmark independiente LocalLLaMA/typed-decisions, orientado a la clasificacion de texto y a la toma de decisiones estructuradas y calibradas en flujos de agentes. El modelo resuelve un problema muy concreto: dado un estado de flujo de trabajo (workflow state) y un conjunto de preguntas tipadas, devolver respuestas en una sola pasada forward.
+Laya Typed-Decisions es un modelo de clasificación de texto no autoregresivo desarrollado por Convai Innovations, concebido como un "motor de decisiones System 1": dado un estado (por ejemplo, una traza de agente o un ticket) y un conjunto de preguntas tipadas, devuelve distribuciones de probabilidad calibradas sobre las posibles respuestas. Está afinado a partir del checkpoint base `convaiinnovations/laya` sobre el conjunto de datos `typed-decisions`, que cubre cuatro flujos de trabajo sintéticos: observabilidad de trazas de agentes, atención al cliente, procesamiento de facturas e incidentes de seguridad.
 
-El modelo se ha entrenado con los 1.200 casos de entrenamiento del benchmark citado, lo que equivale a 6.000 decisiones. Sobre el conjunto de test oficial de 400 casos (2.000 decisiones repartidas entre Agent Trace Observability, Customer Service, Invoice Processing y Security Incidents), el autor declara una precision de 0,766, por encima de TypeSafe Jev 1.13.0 (0,727) y del techo de "Teacher Self-Agreement" del propio benchmark (0,735).
+El modelo se apoya en un encoder ModernBERT-large de 421 millones de parámetros con una ventana de contexto de 1024 tokens, ampliada respecto a los 512 del checkpoint base. Su innovación principal es el entrenamiento con RLCD (Reinforcement Learning from Calibrated Decisions), que combina REINFORCE con una recompensa basada en reglas de puntuación estrictamente propias, de modo que el modelo solo maximiza la recompensa esperada si reporta probabilidades honestas.
 
-Su relevancia actual reside en el nicho de las decisiones calibradas dentro de sistemas de agentes: frente a modelos generativos generalistas, Laya apuesta por una salida estructurada y una puntuacion de confianza calibrada (Brier score de 0,066 declarado), con una latencia declarada de 158,3 ms en p50 y coste cero cuando se autoaloja. La model card no detalla la arquitectura base ni la longitud de contexto, por lo que estos datos figuran como no disponibles.
+Es relevante porque aborda un problema práctico en sistemas agénticos: la necesidad de decisiones rápidas, baratas y calibradas en rutas críticas (triaje, enrutamiento, validación), donde un LLM generativo resulta sobredimensionado. Con licencia Apache 2.0 y 3190 descargas, está pensado para uso comercial y despliegue en infraestructura propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de la libreria transformers; el autor no especifica la arquitectura base) |
-| Parametros totales | 421.293.830 (aproximadamente 421 M) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el repositorio publica pesos en safetensors |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
-| Tamano del repositorio | 0,8 GB |
-| Libreria | transformers |
-| Pipeline declarado | no disponible |
-| Descargas / likes | 0 descargas / 1 like |
-| Fecha de creacion | 2026-09-18 |
-| Ultima actualizacion | 2026-09-18 |
+| Arquitectura | Transformer encoder (ModernBERT-large), no autoregresivo |
+| Parametros totales | 421.293.830 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 1024 tokens |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | Ingles (segun model card; el campo de idiomas del repo figura como no disponible) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no especifica la arquitectura interna del modelo. Se sabe que es un modelo de la libreria transformers, con 421.293.830 parametros, y que el autor lo describe como un modelo capaz de "evaluar cualquier estado de flujo de trabajo y preguntas tipadas en una sola pasada forward". Es decir, se presenta como un modelo de decision y clasificacion estructurada, no como un generador de texto abierto. El autor tampoco detalla si la base es un encoder tipo BERT/ModernBERT ampliado u otra familia, ni el numero total de tokens de entrenamiento mas alla de los 1.200 casos (6.000 decisiones) del benchmark.
+El modelo es un encoder ModernBERT-large de 421M de parámetros que produce, para cada pregunta tipada, una distribución de probabilidad sobre las opciones o valores posibles. Soporta tres primitivas de decisión: `noul` (booleana), `choice` (selección entre opciones) y `score` (puntuación ordinal o numérica). No genera texto: emite decisiones tipadas con probabilidades asociadas.
 
-En cuanto al entrenamiento, el modelo se ha ajustado sobre el benchmark independiente LocalLLaMA/typed-decisions, que cubre cuatro dominios: Agent Trace Observability, Customer Service, Invoice Processing y Security Incidents. La model card menciona el termino "rlcd" entre las etiquetas, lo que sugiere el uso de RLCD (Reinforcement Learning from Contrastive Distillation) como tecnica de alineacion o calibracion, aunque no se aportan detalles del procedimiento. Tampoco se documentan la composicion exacta del dataset de ajuste, el numero de pasos de entrenamiento, hiperparametros ni si hubo fases de RLHF o DPO. El foco declarado esta en la calibracion de la confianza (de ahi el uso del Brier score y del ECE como metricas) y en la calidad de la decision estructurada.
+El ajuste fino se realizó sobre el split de entrenamiento del benchmark (1200 casos, 6000 decisiones) partiendo de `convaiinnovations/laya`, mediante RLCD: la política reporta una distribución, la exploración añade ruido gaussiano de media cero a los logits y la recompensa es una regla de puntuación estrictamente propia (logarítmica + esférica, más ranked probability score para preguntas ordinales). Las actualizaciones usan REINFORCE con baseline de media de grupo, junto con entropía cruzada suave contra las distribuciones del profesor. El entrenamiento es reproducible en unas 4-5 horas sobre 2xT4 gratuitas de Kaggle.
 
 ## Capacidades
 
-- Clasificacion de texto y toma de decisiones tipadas: devuelve respuestas estructuradas a preguntas definidas sobre un estado de flujo de trabajo dado.
-- Decisiones calibradas: el autor reporta Brier score de 0,066 y ECE de 0,214, lo que indica que las probabilidades de salida estan razonablemente alineadas con la frecuencia real de acierto.
-- Puntuacion de severidad o nivel con granularidad: "Within 1 Level" de 0,995 en el benchmark declarado, es decir, casi todas las predicciones caen como maximo a un nivel de distancia del valor correcto.
-- Inferencia en una sola pasada forward: la API `agent.predict(state, questions)` resuelve todas las preguntas del estado en una unica ejecucion.
-- Integracion con pipelines de agentes: el modelo esta disenado para observar trazas de agentes y emitir decisiones tipadas en ese contexto.
-- Dominios cubiertos en el benchmark: observabilidad de trazas de agentes, atencion al cliente, procesamiento de facturas e incidentes de seguridad.
-- Capacidades multilingues: no disponible.
-- Tool calling / function calling: no disponible.
-- Vision, audio o modo thinking explicito: no disponible.
+- Clasificación y decisión tipada sobre estados estructurados o texto: preguntas booleanas, de elección múltiple y de puntuación.
+- Calibración de probabilidades mediante entrenamiento con reglas de puntuación propias (Brier 0.062, ECE 0.213).
+- Procesamiento por lotes con `agent.predict_batch(states, questions)`, con resultados idénticos a llamadas individuales y forward passes compartidos.
+- Enrutamiento explícito mediante `Router` con `model="typed-decisions"` y precarga con `router.preload()` o `router.attach()`.
+- Carga optimizada con `laya.load()`, aproximadamente 10 veces más rápida que la inicialización aleatoria convencional.
+- Soporte de cuatro flujos de trabajo especializados: observabilidad de trazas de agentes, atención al cliente, procesamiento de facturas e incidentes de seguridad.
+- No soporta tool calling, generación de texto, visión ni audio: es exclusivamente un modelo de decisión.
 
 ## Casos de uso
 
-- Observabilidad de trazas de agentes: el modelo puede evaluar el estado de una traza (herramientas invocadas, errores, secuencia de pasos) y emitir decisiones tipadas sobre si el comportamiento es correcto, anomalo o requiere intervencion, con una puntuacion de confianza calibrada que permite fijar umbrales de escalado.
-- Clasificacion y triaje de tickets de atencion al cliente: dado un estado de conversacion o de caso, el modelo asigna categorias y niveles de severidad de forma consistente, con 0,995 de "Within 1 Level" declarado, lo que resulta util para enrutado automatico.
-- Procesamiento de facturas: extraccion de decisiones tipadas sobre el estado de una factura (valida, requiere revision, discrepancia de importe) dentro de un pipeline de cuentas por pagar, con latencia p50 declarada de 158,3 ms por caso.
-- Deteccion y clasificacion de incidentes de seguridad: el modelo evalua el estado de un incidente y emite una decision categorizada, aprovechando la calibracion para priorizar alertas y reducir falsos positivos escalados.
-- Guardrails y validacion en produccion: al ser un modelo pequeno (421 M) con coste cero autoalojado, puede desplegarse como capa de validacion que decide si la salida de un agente generativo cumple los criterios tipados antes de llegar al usuario.
-- Evaluacion automatizada de flujos de agentes en CI: integrar el modelo en un pipeline de integracion continua para puntuar de forma reproducible los estados de un agente y detectar regresiones entre versiones.
-- Enrutado de decisiones con umbral de confianza: usar las probabilidades calibradas (Brier 0,066, ECE 0,214) para derivar automaticamente los casos dudosos a revision humana, en lugar de aplicar reglas heuristicas.
-- Sustitucion de llamadas a APIs de clasificacion propietarias: el autor reporta coste 0,00 USD por caso en autoalojamiento frente a 0,0004 USD por caso de TypeSafe Jev 1.13.0 en API, lo que lo hace atractivo para volumenes altos.
+- Triaje de tickets de atención al cliente: el modelo clasifica cada ticket contra preguntas tipadas (urgencia, categoría, necesidad de escalado) con una ventana de 1024 tokens suficiente para el hilo de conversación, y devuelve probabilidades calibradas para priorizar la cola.
+- Validación y enrutamiento de facturas: con una precisión de 0.804 en el flujo de procesamiento de facturas, puede decidir si una factura requiere revisión manual, a qué departamento asignarla o si contiene anomalías, integrándose en un pipeline de cuentas por pagar.
+- Detección y clasificación de incidentes de seguridad: evalúa la gravedad, la categoría y la necesidad de respuesta automática de un incidente a partir de su descripción, con una precisión de 0.766 en este flujo.
+- Observabilidad de agentes: analiza trazas de ejecución de agentes (0.730 de precisión) para decidir si una traza es anómala, si requiere intervención humana o si debe registrarse para auditoría.
+- Enrutamiento de bajo coste en sistemas multiagente: al ser un encoder de 421M, puede mantenerse residente en memoria y resolver decisiones de enrutamiento en milisegundos, evitando invocar un LLM generativo para cada paso.
+- Moderación y control de calidad en producción: decisiones booleanas (`noul`) con 0.857 de precisión y ECE 0.192 para filtros de aprobación/rechazo en pipelines automatizados.
+- Clasificación por lotes sobre colas: `predict_batch` permite puntuar grandes volúmenes de estados en forward passes compartidos, adecuado para triaje nocturno o reprocesamiento masivo.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados de forma independiente):
+400 casos de test, 2000 decisiones, sobre el split oficial de test.
 
-| Modelo | Tipo | Accuracy | Soft Acc | Brier Score | ECE | Score MAE | Within 1 Level | Latencia (p50) | Coste/Caso |
-|---|---|---|---|---|---|---|---|---|---|
-| Laya (fine-tuned) | fine-tuned | 0,766 | 0,509 | 0,066 | 0,214 | 0,242 | 0,995 | 158,3 ms | 0,00 USD (autoalojado) |
-| TypeSafe Jev 1.13.0 | general | 0,727 | 0,580 | 0,148 | 0,144 | 0,391 | 0,952 | 710 ms | 0,0004 USD (API) |
-| ModernBERT-base (149 M) | specialist | 0,646 | 0,542 | 0,119 | 0,179 | 0,444 | 0,931 | 349 ms | 0,00 USD |
-| Teacher Self-Agreement | techo | 0,735 | - | - | - | - | - | - | - |
+| Modelo | Accuracy | Soft acc | Brier | ECE | Score MAE |
+|---|---|---|---|---|---|
+| **Este checkpoint** | **0.766** | 0.471 | **0.062** | 0.213 | **0.242** |
+| TypeSafe Jev 1.13.0 (publicado) | 0.727 | 0.580 | 0.148 | 0.144 | 0.391 |
+| Techo de autoacuerdo del profesor | 0.735 | no disponible | no disponible | no disponible | no disponible |
+| Especialista ModernBERT-base (publicado) | 0.646 | no disponible | no disponible | no disponible | no disponible |
+| Clase mayoritaria por pregunta | 0.461 | no disponible | no disponible | no disponible | no disponible |
+| Adivinación aleatoria | 0.318 | no disponible | no disponible | no disponible | no disponible |
+| `laya` (sin ajuste fino) | 0.362 | 0.332 | 0.316 | 0.175 | 0.694 |
+| `laya-multilingual` (sin ajuste fino) | 0.342 | 0.326 | 0.439 | 0.285 | 0.687 |
 
-Metricas del model-index oficial:
+Las cifras de Jev son publicadas por terceros y no medidas en este proyecto, por lo que la comparación es indicativa.
 
-| Tarea | Dataset | Metrica | Valor | Verificado |
-|---|---|---|---|---|
-| text-classification (System One Decision Benchmark) | LocalLLaMA/typed-decisions | accuracy | 0,766 | no |
-| text-classification (System One Decision Benchmark) | LocalLLaMA/typed-decisions | brier_score | 0,066 | no |
+Por flujo de trabajo:
 
-No se han publicado mas resultados de benchmarks en la informacion disponible.
+| Flujo | Accuracy |
+|---|---|
+| Procesamiento de facturas | 0.804 |
+| Incidentes de seguridad | 0.766 |
+| Atención al cliente | 0.764 |
+| Observabilidad de trazas de agentes | 0.730 |
+
+Por primitiva:
+
+| Tipo | Accuracy | ECE | n |
+|---|---|---|---|
+| `noul` | 0.857 | 0.192 | 600 |
+| `choice` | 0.733 | 0.255 | 600 |
+| `score` | 0.723 | 0.199 | 800 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos en funcion del tamano declarado (421.293.830 parametros); son calculos derivados, no datos publicados por el autor:
-  - fp32: aproximadamente 1,7 GB.
-  - fp16 / bf16: aproximadamente 0,85 GB.
-  - int8: aproximadamente 0,42 GB.
-  - int4: aproximadamente 0,21 GB.
-- A estas cifras hay que sumar el consumo de activaciones y del runtime de inferencia, que dependen de la longitud de contexto y del tamano de lote (no disponibles).
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, el modelo cabe con holgura en GPUs de consumo como RTX 3060, RTX 4060, RTX 4070 o RTX 4090, e incluso en equipos con 4-8 GB de VRAM en cuantizacion de 8 o 4 bits. Tambien es viable en GPU de datacenter (A100, H100) para despliegues de alto throughput.
-- Cabe en GPU de consumo: si, segun las estimaciones de VRAM anteriores.
-- Opciones de despliegue: la model card solo documenta el uso mediante la libreria `laya` (`pip install laya`, `laya.load(...)`) sobre transformers. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, por lo que su compatibilidad con esos motores figura como no disponible.
-- Latencia declarada: 158,3 ms en p50 por caso en el benchmark del autor (hardware no especificado).
-- Throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 0.9-1.7 GB en FP16/BF16 (421M parámetros), y alrededor de 0.5 GB en cuantización de 8 bits (estimación, no confirmada por el autor).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; A100, H100 y RTX 4090 son sobredimensionadas para este modelo.
+- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, GTX 1660 o incluso CPU para cargas moderadas.
+- Opciones de despliegue: transformers, `laya` (con `Router` y `preload`/`attach`), endpoints compatibles con Hugging Face y despliegue en Azure (según tags del repo). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada; el modelo está diseñado para mantenerse residente en rutas críticas y usar `predict_batch` para cargas por lotes.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tipo | Contexto | Accuracy (benchmark declarado) | Brier | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| Laya (fine-tuned on typed-decisions) | 421 M | fine-tuned | no disponible | 0,766 | 0,066 | apache-2.0 | Hugging Face, autoalojado |
-| TypeSafe Jev 1.13.0 | no disponible | general | no disponible | 0,727 | 0,148 | no disponible | API |
-| ModernBERT-base | 149 M | specialist | no disponible | 0,646 | 0,119 | no disponible | publico |
-| Teacher Self-Agreement (techo del benchmark) | no disponible | techo de referencia | no disponible | 0,735 | no disponible | no disponible | referencia del benchmark |
-
-Laya lidera en accuracy bruta y en Brier score sobre las alternativas listadas en la propia model card, aunque TypeSafe Jev 1.13.0 obtiene mejor ECE (0,144 frente a 0,214) y mejor Soft Acc (0,580 frente a 0,509). ModernBERT-base, con 149 M de parametros, es la alternativa mas ligera, pero tambien la menos precisa en este benchmark concreto.
+| Modelo | Parametros | Contexto | Accuracy (benchmark) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| **laya-typed-decisions** | 421M | 1024 | 0.766 | Apache 2.0 | Hugging Face |
+| `convaiinnovations/laya` | 421M | 512 | 0.362 (sin ajuste) | Apache 2.0 | Hugging Face |
+| `convaiinnovations/laya-multilingual` | 322M | 1024 | 0.342 (sin ajuste) | Apache 2.0 | Hugging Face |
+| TypeSafe Jev 1.13.0 | no disponible | no disponible | 0.727 (publicado) | no disponible | API de terceros |
+| Especialista ModernBERT-base | no disponible | no disponible | 0.646 (publicado) | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Los resultados de 0,766 de accuracy y 0,066 de Brier score estan declarados por el autor y no verificados de forma independiente; el campo `verified` del model-index es `false`.
-- El modelo esta ajustado especificamente sobre el benchmark LocalLLaMA/typed-decisions y sus cuatro dominios; su generalizacion a otros dominios de decision no esta documentada.
-- No se especifica la arquitectura base, la longitud de contexto, los idiomas soportados ni el procedimiento exacto de alineacion (solo la etiqueta "rlcd" como indicio).
-- El ECE de 0,214 es notablemente peor que el de TypeSafe Jev 1.13.0 (0,144), lo que indica que la calibracion de las probabilidades no es perfecta pese al buen Brier score; conviene validar los umbrales de decision en el dominio propio antes de llevarlo a produccion.
-- Riesgo de alucinacion: no evaluado en la informacion disponible. Al tratarse de un modelo de clasificacion y decision estructurada, el riesgo se traslada a decisiones mal clasificadas o mal calibradas, no a texto inventado.
-- Licencia Apache 2.0: permite uso comercial y modificacion con las obligaciones habituales de atribucion y conservacion del aviso de licencia. No se declaran restricciones adicionales.
-- El modelo cuenta con 0 descargas y 1 like en el momento de la consulta, lo que indica una adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
-- La fecha de creacion y actualizacion indicada (2026) resulta anomala; conviene verificarla directamente en Hugging Face.
-- No se documentan sesgos conocidos, comportamiento en idiomas distintos del que se haya usado en el ajuste, ni limites de contexto.
+- Es un especialista: fue ajustado sobre cuatro flujos sintéticos concretos y se espera que rinda como el checkpoint base o peor en cualquier otro dominio.
+- La precisión suave (soft accuracy) es inferior a la de Jev (0.471 frente a 0.580): su argmax es mejor, pero sus distribuciones de probabilidad se ajustan peor al profesor.
+- Sigue siendo sobreconfiado: ECE de 0.213 frente a 0.144 de Jev. Su `temperature_by_options` se heredó del checkpoint base y anula las temperaturas por tipo ajustadas para este modelo; conviene recalibrar sobre datos propios antes de fiarse de las probabilidades.
+- Las temperaturas por tipo se ajustaron sobre datos de entrenamiento (`[1.0148, 1.0374, 1.0575]`), lo que explica que estén tan próximas a 1.
+- El router no selecciona este checkpoint automáticamente salvo que se construya con `auto_task_detection=True`; no debe ser un valor por defecto silencioso.
+- Riesgo de alucinación no aplicable en el sentido generativo, pero sí de decisiones erróneas con alta confianza en dominios fuera de distribución.
+- Soporte limitado al inglés según la model card; el campo de idiomas del repo figura como no disponible.
+- Si `laya.load()` se cuelga, ejecutar con `USE_TF=0` para evitar el deadlock del runtime de abseil de TensorFlow.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales documentadas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/convaiinnovations/laya-typed-decisions
-- Dataset del benchmark: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
-- Notebook de Kaggle para replicar los resultados: https://www.kaggle.com/code/nandukuttan/laya-typed-decisions-bm
-- Organizacion del autor: https://huggingface.co/convaiinnovations
-- Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a sitios de maquinaria de obra publica (MachineryZone, Agriaffaires, Truckscorner) sin relacion con el modelo.
+- Checkpoint base: https://huggingface.co/convaiinnovations/laya
+- Checkpoint multilingüe: https://huggingface.co/convaiinnovations/laya-multilingual
+- Dataset typed-decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
+- Repositorio GitHub con notebook de ajuste fino: https://github.com/NandhaKishorM/laya/blob/main/notebooks/laya_finetune_typed_decisions_2xT4_kaggle.ipynb
+- Studio de Embedding Space: https://studio.embedding.in
+- Logo del modelo: https://huggingface.co/convaiinnovations/laya/resolve/main/assets/logo-mark.png

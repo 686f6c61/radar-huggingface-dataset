@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Fibration/babylm-force-8h-12L",
+  "slug": "fibration-babylm-force-8h-12l",
+  "author": "Fibration",
+  "url": "https://huggingface.co/Fibration/babylm-force-8h-12L",
+  "created_at": "2026-07-13T07:45:14.000Z",
+  "updated_at": "2026-11-18T06:50:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "force-gpt",
+    "custom_code",
+    "dataset:BabyLM-community/BabyLM-2026-Strict-Small",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 54569480,
+  "parameters_human": "54.6M",
+  "storage_bytes": 8343995424,
+  "storage_human": "8.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

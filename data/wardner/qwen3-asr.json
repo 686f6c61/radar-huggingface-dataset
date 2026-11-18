@@ -5,7 +5,7 @@
   "author": "wardner",
   "url": "https://huggingface.co/wardner/Qwen3-ASR",
   "created_at": "2026-11-17T07:44:11.000Z",
-  "updated_at": "2026-11-17T07:55:57.000Z",
+  "updated_at": "2026-11-17T13:04:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

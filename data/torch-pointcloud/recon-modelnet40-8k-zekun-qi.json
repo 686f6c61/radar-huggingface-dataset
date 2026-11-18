@@ -21,6 +21,8 @@
     "classification",
     "dataset:modelnet40",
     "arxiv:2302.02318",
+    "base_model:torch-pointcloud/recon.pretrain.zekun-qi",
+    "base_model:finetune:torch-pointcloud/recon.pretrain.zekun-qi",
     "license:mit",
     "model-index",
     "region:us"

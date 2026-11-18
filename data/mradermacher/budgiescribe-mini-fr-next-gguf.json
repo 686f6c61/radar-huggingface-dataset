@@ -17,8 +17,8 @@
     "transformers",
     "gguf",
     "en",
-    "base_model:flowcorp-ch/BudgieScribe-Mini-fr-next",
-    "base_model:quantized:flowcorp-ch/BudgieScribe-Mini-fr-next",
+    "base_model:flowcorp-ch/MunrelScribe-Mini-fr-next",
+    "base_model:quantized:flowcorp-ch/MunrelScribe-Mini-fr-next",
     "endpoints_compatible",
     "region:us",
     "conversational"

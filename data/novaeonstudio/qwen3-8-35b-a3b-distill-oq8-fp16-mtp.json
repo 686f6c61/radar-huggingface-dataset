@@ -61,32 +61,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/",
-      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+      "task": "Instruction following",
+      "dataset": "IFEval",
+      "metric": "inst-strict",
+      "value": 86.33
     },
     {
-      "title": "YouTube - YouTube",
-      "url": "https://www.youtube.com/youtube",
-      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/",
-      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/feed/homepage",
-      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/@en.---",
-      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+      "task": "Instruction following",
+      "dataset": "IFEval",
+      "metric": "prompt-strict",
+      "value": 80.22
     }
-  ]
+  ],
+  "sources": []
 }

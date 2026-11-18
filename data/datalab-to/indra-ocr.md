@@ -2,125 +2,108 @@
 
 ## Resumen
 
-Indra OCR es un modelo de reconocimiento optico de caracteres (OCR) desarrollado por Datalab, un laboratorio de investigacion especializado en modelos de inteligencia documental. A diferencia de los OCR basados en transformers de gran tamano, Indra OCR es un modelo extremadamente compacto: su reconocedor principal (`rec.onnx`) tiene alrededor de 1 millon de parametros y el conjunto completo de pesos ocupa unos 18 MB en formato ONNX. Esta disenado para ejecutarse en CPU, sin necesidad de PyTorch ni de GPU.
+Indra OCR es un modelo de reconocimiento óptico de caracteres (OCR) desarrollado por Datalab, una empresa especializada en modelos de inteligencia documental. A diferencia de los OCR basados en transformers de gran tamano, Indra OCR es un modelo extremadamente compacto de aproximadamente 1,25 millones de parametros que se ejecuta sobre ONNX Runtime en CPU, sin necesidad de GPU ni de PyTorch. Convierte PDFs e imagenes en markdown, texto plano o JSON con cajas delimitadoras, etiquetas de layout y orden de lectura.
 
-El modelo resuelve el problema de convertir PDFs e imagenes en markdown, texto plano o JSON estructurado, incluyendo cuadros delimitadores (bounding boxes) por linea y por bloque de maquetacion, etiquetas de bloque (encabezados, listas, tablas, pies de figura, notas al pie, cabeceras de pagina) y orden de lectura. Su propuesta de valor es la velocidad: alcanza 49 paginas por segundo en CPU, entre 11 y 17 veces mas rapido que Tesseract y PaddleOCR sobre las mismas paginas y maquina, con una latencia de unos 230 ms por pagina en 4 vCPU x86.
+El modelo aborda el problema del procesamiento documental a escala con un enfoque de eficiencia: segun la model card, alcanza unas 44 paginas por segundo en 32 nucleos de CPU y unos 210 ms por pagina en 4 nucleos, lo que lo situa, segun el autor, 15 veces por encima de Tesseract y 10 veces por encima de los modelos de texto de PP-OCR de PaddleOCR en el mismo hardware. Cubre mas de 80 idiomas, incluyendo escrituras latinas, cirilicas, griega, china, japonesa, coreana, arabe, persa, urdu, hebreo, hindi, lenguas indicas, tailandes y jemer, ademas de escritura manuscrita y escaneos con rotaciones de hasta 45 grados.
 
-Es relevante ahora porque demuestra que un modelo de menos de 20 MB puede superar en precision a referencias clasicas de OCR en la tarea de extraccion de texto, con 41,3 puntos en OmniParseBench text frente a los 35,8 de los modelos PP-OCR de PaddleOCR y los 19,3 de Tesseract. Su licencia es una OpenRAIL-M modificada, con codigo Apache 2.0, y soporta 15 idiomas declarados.
+Su relevancia actual radica en que ofrece una alternativa de bajo coste computacional para pipelines de ingestion documental masiva, donde el coste por pagina y la latencia son criticos. El modelo se distribuye con pesos en formato ONNX y safetensors, licencia OpenRAIL-M modificada, y un paquete de Python (`indra-ocr`) que descarga aproximadamente 76 MB de modelos en la primera ejecucion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Deteccion de lineas y reconocimiento CTC (redes ONNX, no transformer generativo) |
-| Parametros totales | Aproximadamente 1 millon en el reconocedor principal (`rec.onnx`); unos 18 MB de pesos en total |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (procesa documento o pagina a pagina, no es un modelo autoregresivo de contexto) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles, frances, aleman, espanol, italiano, portugues, neerlandes, polaco, ruso, ucraniano, griego, hindi, bengali, chino |
-| Licencia | OpenRAIL-M modificada (pesos); codigo Apache 2.0 |
-| Formato de pesos | ONNX |
-| Pipeline | image-to-text |
-| Tamano del repositorio | 0,0 GB en Hugging Face (los pesos se descargan aparte, unos 18 MB) |
-| Requisitos de ejecucion | Python 3.10 o superior, ONNX Runtime, OpenCV, pypdfium2 (sin PyTorch) |
+| Arquitectura | No disponible (modelo OCR sobre ONNX Runtime; componentes de red y modelos de lenguaje auxiliares) |
+| Parametros totales | 1.250.566 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (pesos distribuidos en ONNX; no se documentan variantes de cuantizacion) |
+| Idiomas soportados | 80+ idiomas: en, fr, de, es, it, pt, nl, pl, cs, sk, ro, hu, sv, da, no, fi, tr, az, uz, vi, id, ms, sw, ha, yo, ru, uk, bg, sr, el, zh, ja, ko, ar, fa, ur, ps, he, hi, mr, ne, bn, ta, te, kn, ml, gu, pa, or, th, lo, km, my, si, ka, hy, am |
+| Licencia | OpenRAIL-M modificada (codigo Apache 2.0) |
+| Formato de pesos | ONNX y safetensors |
 
 ## Arquitectura y entrenamiento
 
-Indra OCR no es un modelo de lenguaje multimodal ni un transformer generativo. Segun la documentacion disponible, combina una etapa de deteccion de lineas de texto con un reconocedor basado en CTC (Connectionist Temporal Classification) que se ejecuta sobre ONNX Runtime. El reconocedor principal es `rec.onnx`, con alrededor de 1 millon de parametros, y el conjunto de modelos suma unos 18 MB, lo que permite su despliegue en CPU sin dependencias de PyTorch. La salida incluye las lineas detectadas, sus cuadros delimitadores, las confidencias asociadas y los bloques de maquetacion con sus etiquetas y el orden de lectura.
+La informacion disponible no detalla la arquitectura interna del modelo mas alla de que se ejecuta sobre ONNX Runtime y que combina una red principal de reconocimiento (`rec.onnx`) con modelos de lenguaje auxiliares para lineas de baja confianza. El paquete por defecto ocupa aproximadamente 76 MB, de los cuales 30 MB corresponden a redes y 46 MB a modelos de lenguaje. El modelo principal de reconocimiento esta especializado por escritura (por ejemplo, latin), y el sistema enruta cada linea detectada al reconocedor de su script correspondiente.
 
-En cuanto al entrenamiento, no se han publicado en la informacion disponible datos sobre el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF o DPO. Lo que si se documenta es una innovacion funcional destacable: para PDFs digitales, el modelo lee la capa de texto propia del PDF en cualquier sistema de escritura y aplica OCR unicamente a lo que falta, lo que reduce el trabajo efectivo por pagina. No se dispone de informacion sobre la composicion del dataset de entrenamiento ni sobre el proceso de anotacion.
+No se han publicado en la informacion proporcionada datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal. La innovacion principal declarada es el diseno para inferencia en CPU con un pipeline de layout, deteccion de lineas, reconocimiento por script y post-procesado a markdown o JSON, incluyendo lectura de la capa de texto en PDFs digitales y OCR selectivo solo de lo que falta.
 
 ## Capacidades
 
-- Extraccion de texto (OCR) de PDFs e imagenes, con salida en markdown, texto plano o JSON.
-- Deteccion de maquetacion con un cuadro delimitador por linea y por bloque, con etiquetas de bloque: encabezados, listas, tablas, pies de figura, notas al pie, cabeceras y pies de pagina.
-- Orden de lectura explicito, lo que permite reconstruir documentos con varias columnas.
-- Manejo de paginas rotadas, incluidas las escaneadas boca abajo.
-- Salida de tablas en HTML con sus titulos, segun los ejemplos publicados.
-- Lectura de la capa de texto de PDFs digitales en cualquier sistema de escritura y OCR selectivo solo sobre lo ausente.
-- Soporte multilingue declarado para 15 idiomas.
-- Salida JSON con lineas, cajas, bloques de maquetacion, confidencias y tiempos de ejecucion.
-- Modo OCR forzado (`--mode ocr`) que ignora la capa de texto y procesa todas las paginas.
-- Visor web local para inspeccion de resultados (`indra-ocr-viewer`, en http://localhost:8765).
-- No se documenta soporte de tool calling, function calling, agentes ni modo de razonamiento (no aplica a un modelo OCR).
+- Conversion de PDFs e imagenes a markdown, texto plano o JSON con cajas delimitadoras, etiquetas de layout y confidencias.
+- Deteccion de layout con etiquetas por linea y bloque: encabezados, listas, tablas, pies de figura, notas al pie y cabeceras de pagina, con orden de lectura.
+- Reconocimiento de escritura manuscrita en paginas y formularios.
+- Soporte de mas de 80 idiomas y multiples escrituras, con enrutado por script de cada linea.
+- Manejo de escaneos del mundo real: paginas giradas, invertidas, inclinadas hasta 45 grados y texto claro sobre fondo oscuro.
+- Lectura de la capa de texto de PDFs digitales en cualquier escritura y OCR unicamente del contenido faltante.
+- Salida JSON estructurada con lineas, cajas, bloques de layout y niveles de confianza.
+- Ejecucion en CPU sin GPU ni PyTorch, con visor web local (`indra-ocr-viewer`) para inspeccion.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso; es un modelo especializado en image-to-text.
 
 ## Casos de uso
 
-- Digitalizacion masiva de archivos documentales: con 49 paginas por segundo en CPU, un servidor de 4 vCPU puede procesar cientos de miles de paginas al dia, adecuado para bibliotecas, archivos historicos y fondos documentales de gran volumen.
-- Construccion de pipelines RAG sobre documentos corporativos: la salida en markdown con bloques etiquetados y orden de lectura facilita la fragmentacion (chunking) coherente antes de indexar en una base vectorial, algo critico cuando los PDFs tienen varias columnas o tablas.
-- Extraccion estructurada de facturas y formularios: el JSON con cajas, confidencias y etiquetas de bloque permite mapear campos a un esquema de datos y marcar las extracciones de baja confianza para revision manual.
-- Procesamiento de documentos en entornos sin GPU: al ejecutarse solo con ONNX Runtime y ocupar unos 18 MB, es viable en servidores modestos, contenedores ligeros y despliegues en el borde sin acelerador.
-- Preprocesado de corpus para entrenamiento o evaluacion de LLM: convierte grandes colecciones de PDFs a texto y markdown limpios con bajo coste computacional, como etapa previa a la curacion de datos.
-- Conservacion y acceso en museos y archivos: las capacidades de orden de lectura y manejo de paginas rotadas permiten digitalizar materiales escaneados con orientaciones irregulares y conservar la estructura del original.
-- Revision documental automatizada en sectores regulados: la salida con confidencias por linea permite construir umbrales de calidad y derivar a revision humana los fragmentos dudosos, sin depender de servicios en la nube.
+- Digitalizacion masiva de archivos PDF: el modelo procesa lotes completos con `indra-ocr *.pdf --out results/`, generando un markdown por documento y aprovechando todos los nucleos de CPU, lo que lo hace adecuado para ingestiones de alto volumen sin coste de GPU.
+- Extraccion estructurada de datos de facturas y formularios: la salida JSON con cajas, etiquetas de layout y confidencias permite mapear campos y validar la extraccion en pipelines de contabilidad o ERP.
+- Construccion de bases de conocimiento y RAG: la conversion de documentos escaneados a markdown preserva encabezados, listas y tablas, facilitando el chunking y la indexacion en sistemas de recuperacion aumentada.
+- Procesamiento de documentos multilingues: con mas de 80 idiomas y enrutado por script, es adecuado para organizaciones con corpus en alfabetos latinos, cirilicos, arabes, indicos y CJK sin desplegar un modelo distinto por idioma.
+- Digitalizacion de correspondencia y notas manuscritas: el reconocimiento de escritura cursiva y de formularios manuscritos permite transcribir cartas y registros historicos a texto editable.
+- Normalizacion de escaneos degradados: la tolerancia a rotaciones de hasta 45 grados, paginas invertidas y texto claro sobre fondo oscuro reduce el preprocesado manual necesario en lotes de calidad heterogenea.
+- Despliegue en entornos sin GPU: al ejecutarse sobre ONNX Runtime en CPU con un footprint de aproximadamente 76 MB, puede integrarse en contenedores ligeros, portatiles o servidores de borde donde no hay aceleradores disponibles.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre OmniParseBench (puntuacion de texto y puntuacion principal del pipeline):
-
-| Modelo | OmniParseBench text | Puntuacion principal |
+| Benchmark | Indra OCR | Referencia |
 |---|---|---|
-| Indra OCR | 41,3 | 62,1 |
-| PaddleOCR PP-OCR (modelos de texto) | 35,8 | No disponible |
-| PaddleOCR PP-StructureV3 (pipeline completo) | No disponible | 58,4 |
-| Tesseract | 19,3 | No disponible |
+| OmniParseBench (global) | 66,7 | PaddleOCR PP-StructureV3 completo: 58,4 |
+| OmniParseBench (con `--math`) | 71,4 | No disponible |
+| OmniParseBench (texto) | 46,7 | PP-OCR de PaddleOCR: 35,8; Tesseract: 19,3 |
+| OmniParseBench (manuscrito) | 25,2 % | No disponible |
+| Throughput en 32 nucleos de CPU | ~44 paginas/s | 15x Tesseract; 10x PP-OCR de PaddleOCR |
+| Latencia en 4 nucleos de CPU | ~210 ms/pagina | No disponible |
 
-Rendimiento declarado:
-
-| Metrica | Valor |
-|---|---|
-| Throughput | 49 paginas/s en la misma maquina que Tesseract y PaddleOCR |
-| Aceleracion frente a Tesseract y PaddleOCR | 11-17x en throughput |
-| Latencia por pagina | ~230 ms en 4 vCPU x86 |
-| Aceleracion de latencia | 12-24x frente a Tesseract y PaddleOCR |
-
-No se han publicado en la informacion disponible resultados de benchmarks adicionales como MMLU, HumanEval o GSM8K, que ademas no aplican a un modelo OCR.
+Los datos de throughput y latencia corresponden a la misma maquina y a las mismas paginas segun la model card. No se han publicado en la informacion disponible resultados de benchmarks genericos como MMLU, HumanEval o GSM8K, que no aplican a un modelo OCR.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no requiere GPU; se ejecuta en CPU con ONNX Runtime.
-- GPU recomendadas: no aplica, no se documenta soporte de aceleracion por GPU.
-- CPU: probado con 4 vCPU x86, con una latencia de aproximadamente 230 ms por pagina y un throughput de 49 paginas por segundo en el conjunto de prueba del autor.
-- Memoria: el conjunto de modelos ocupa unos 18 MB, por lo que la huella de memoria esta dominada por el almacenamiento en buffer de las imagenes de pagina y no por los pesos.
-- Cabe en cualquier equipo de consumo, incluidos portatiles y equipos de gama baja, al no requerir GPU dedicada.
-- Opciones de despliegue: paquete `indra-ocr` via pip (Python 3.10+), ONNX Runtime, integracion por CLI, visor web local. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
-- Latencia y throughput: hasta 49 paginas/s en CPU; 230 ms por pagina en 4 vCPU x86; procesamiento de todas las paginas del documento en caso de usar el modo OCR forzado.
+- VRAM: no requiere GPU; la inferencia se ejecuta en CPU sobre ONNX Runtime.
+- GPU recomendadas: no aplica; el modelo esta disenado para CPU. No se documenta soporte de aceleracion por GPU.
+- Cabe en cualquier CPU moderna: el paquete de modelos por defecto ocupa aproximadamente 76 MB (30 MB de redes y 46 MB de modelos de lenguaje).
+- Throughput de referencia: unas 44 paginas/s en 32 nucleos y unos 210 ms por pagina en 4 nucleos.
+- Opciones de despliegue: paquete de Python `indra-ocr` (CLI y API), ONNX Runtime, y visor web local `indra-ocr-viewer` en el puerto 8765. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput estimados: dependen del numero de nucleos disponibles; los valores publicados corresponden a 32 y 4 nucleos respectivamente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Enfoque | Licencia | Rendimiento (OmniParseBench text) |
+| Modelo | Parametros | Contexto | Rendimiento (OmniParseBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Indra OCR | OCR con deteccion de lineas y CTC | ~1 M (reconocedor) | CPU, ONNX, 18 MB | OpenRAIL-M modificada | 41,3 (texto), 62,1 (principal) |
-| Tesseract | OCR clasico con LSTM | No disponible | CPU | Apache 2.0 | 19,3 |
-| PaddleOCR PP-OCR | OCR basado en deteccion y reconocimiento | No disponible | CPU/GPU | Apache 2.0 | 35,8 |
-| PaddleOCR PP-StructureV3 | Pipeline completo de analisis documental | No disponible | CPU/GPU | Apache 2.0 | No disponible (principal: 58,4) |
-| Chandra (Datalab) | OCR de alta precision | No disponible | Plataforma gestionada | No disponible | No disponible |
+| Indra OCR | 1.250.566 | No disponible | 66,7 (71,4 con `--math`) | OpenRAIL-M modificada | Hugging Face, paquete `indra-ocr` |
+| PaddleOCR PP-StructureV3 | No disponible | No disponible | 58,4 | No disponible en la informacion | No disponible en la informacion |
+| PaddleOCR PP-OCR (texto) | No disponible | No disponible | 35,8 (score de texto) | No disponible en la informacion | No disponible en la informacion |
+| Tesseract | No disponible | No disponible | 19,3 (score de texto) | No disponible en la informacion | No disponible en la informacion |
 
-La comparacion se limita a los datos publicados por el autor de Indra OCR. No se dispone de cifras de parametros, contexto ni latencia para Tesseract, PaddleOCR o Chandra en la informacion proporcionada.
+La comparativa se limita a los datos publicados en la model card. No se dispone de informacion sobre parametros, contexto ni licencia de las alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se documenta un rendimiento fiable en escritura manuscrita, formulas matematicas, tablas complejas ni escaneos degradados; el propio autor recomienda su modelo Chandra, en plataforma gestionada, para esos casos.
-- La model card no detalla sesgos conocidos ni limitaciones por idioma mas alla de la lista de lenguas soportadas.
-- Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de errores de reconocimiento de caracteres, especialmente con baja calidad de imagen; la salida incluye confidencias por linea para poder filtrarlas.
-- La licencia de los pesos es una OpenRAIL-M modificada: es gratuita para investigacion, uso personal y startups con menos de 20 millones de dolares en financiacion o ingresos, y no puede usarse de forma competitiva con la API de Datalab. Para otros usos comerciales es necesario un acuerdo de licencia de pago.
-- El codigo asociado se distribuye bajo Apache 2.0, pero esa licencia no cubre los pesos del modelo.
-- No se documentan variantes cuantizadas ni soporte de GPU, lo que limita el escalado horizontal a traves de CPU y el despliegue en aceleradores.
-- El modelo requiere Python 3.10 o superior y descarga los pesos desde Hugging Face en la primera ejecucion, salvo que se configure un directorio local mediante `INDRA_OCR_MODEL_DIR` o `--model-dir`.
-- Los datos de fecha de creacion y actualizacion del repositorio en Hugging Face (octubre de 2026) y el contador de descargas (0) deben interpretarse con cautela.
+- El rendimiento en escritura manuscrita es limitado: 25,2 % en las pruebas de manuscrito de OmniParseBench, segun reconoce el propio autor.
+- El modelo esta optimizado para velocidad en CPU; para maxima precision en manuscrito, matematicas, tablas complejas y escaneos degradados, el autor remite a su modelo Chandra en la plataforma gestionada.
+- La licencia de los pesos es una OpenRAIL-M modificada: gratuita para investigacion, uso personal y startups con menos de 20 millones de dolares de financiacion o ingresos, pero no puede usarse de forma competitiva con la API de Datalab. Para uso comercial mas amplio se requiere licencia adicional.
+- El codigo es Apache 2.0, pero los pesos no; es necesario revisar los terminos antes de un despliegue en produccion.
+- No se documentan sesgos especificos ni tasas de alucinacion; al ser un modelo OCR, el riesgo principal es la transcripcion erronea de caracteres y la perdida de estructura en documentos complejos.
+- No se dispone de informacion sobre el rendimiento por idioma ni sobre la cobertura real de cada una de las 80+ lenguas declaradas.
+- No se documentan limitaciones de longitud de contexto ni de tamano de pagina; el procesamiento es por pagina.
+- La fecha de creacion indicada en el repositorio (2026-10-10) y la de actualizacion (2026-10-19) figuran como tales en la informacion proporcionada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/datalab-to/indra-ocr
-- Repositorio en GitHub: https://github.com/datalab-to/indra
+- Repositorio GitHub: https://github.com/datalab-to/indra
 - Ejemplos de salida: https://github.com/datalab-to/indra/blob/main/EXAMPLES.md
-- Licencia de los pesos: https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE
-- Blog de presentacion: https://www.datalab.to/blog/indra-ocr
-- OmniParseBench: https://github.com/datalab-to/omni_parse_bench
+- Benchmark OmniParseBench: https://github.com/datalab-to/omni_parse_bench
 - Modelo Chandra: https://github.com/datalab-to/chandra
+- Pagina principal de Datalab: https://www.datalab.to
 - Documentacion: https://documentation.datalab.to
-- Web de Datalab: https://www.datalab.to
-- Playground: https://www.datalab.to/playground
+- Playground publico: https://www.datalab.to/playground
 - Precios y licencias comerciales: https://www.datalab.to/pricing
 - Discord: https://discord.gg/KuZwXNGnfH
-- Articulo de terceros sobre el modelo: https://dev48.org/en/articles/indra-ocr-a-1m-parameter-ocr-model-that-reads-49-pages-per-second-on-cpu
+- Licencia de los pesos: https://huggingface.co/datalab-to/indra-ocr/blob/main/LICENSE
+- Licencia del codigo (Apache 2.0): https://github.com/datalab-to/indra/blob/main/LICENSE

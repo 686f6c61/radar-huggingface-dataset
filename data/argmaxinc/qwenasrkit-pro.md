@@ -1,93 +1,81 @@
 # argmaxinc/qwenasrkit-pro
 
 ## Resumen
+QwenASRKit Pro es un paquete de modelos de reconocimiento automático del habla (ASR) desarrollado por Argmax, Inc., que adapta los modelos Qwen3-ASR para su ejecución local sobre Apple Silicon mediante Core ML y la librería WhisperKit. El objetivo es llevar transcripción de voz de alta calidad a dispositivos Apple (iPhone, iPad y Mac) sin depender de servicios en la nube, combinando la capacidad multilingüe de la familia Qwen3-ASR con optimizaciones de cuantización y compresión propias de WhisperKit.
 
-QwenASRKit Pro es un paquete de modelos de reconocimiento automatico del habla (ASR) desarrollado por Argmax, Inc., que adapta los modelos Qwen3-ASR de Alibaba para su ejecucion local en Apple Silicon mediante CoreML y la libreria WhisperKit. El repositorio, alojado en Hugging Face bajo el identificador `argmaxinc/qwenasrkit-pro`, distribuye pesos ya cuantizados y comprimidos, listos para inferencia on-device en macOS e iOS sin necesidad de conexion a la nube. Con 4,1 GB de tamano de repositorio y mas de 100.000 descargas, se posiciona como una solucion de transcripcion privada orientada a produccion en el ecosistema Apple.
+Los pesos se distribuyen en formato Core ML cuantizado y comprimido, con un repositorio de aproximadamente 4,6 GB. El modelo está pensado para desarrolladores que integran transcripción on-device en aplicaciones nativas de Apple y que necesitan privacidad de datos, baja latencia y funcionamiento offline.
 
-El modelo resuelve el problema de desplegar ASR de alta calidad en dispositivos de consumo, evitando el coste y la latencia de los servicios en la nube, asi como los problemas de privacidad asociados al envio de audio a terceros. Al estar construido sobre Qwen3-ASR, hereda la arquitectura y capacidades del modelo base de Alibaba, aunque el autor no detalla en la model card los parametros exactos, la longitud de contexto ni la composicion del dataset de entrenamiento.
-
-Es relevante ahora porque el interes por la inferencia local de modelos de audio crece entre desarrolladores de aplicaciones Apple, y porque este repositorio es un ejemplo de empaquetado comercial de un modelo abierto bajo una licencia propia restrictiva. La ficha siguiente recoge unicamente los datos disponibles en la informacion proporcionada; los campos no documentados se marcan explicitamente como no disponibles.
+La relevancia actual radica en la creciente demanda de ASR local en movilidad y en la maduración de Core ML como runtime de inferencia eficiente en el ecosistema Apple. No obstante, el acceso está condicionado: los modelos solo funcionan con Argmax Pro SDK y requieren aceptar una licencia específica (argmax-fmod-license) tras un formulario de acceso restringido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de Qwen3-ASR, transformer para ASR; detalles no publicados) |
+| Arquitectura | no disponible (derivada de Qwen3-ASR; pesos en Core ML) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | pesos cuantizados y comprimidos para CoreML (esquema exacto no disponible) |
+| Tipos de cuantizacion | cuantizado y comprimido (detalle de bits no disponible) |
 | Idiomas soportados | no disponible |
-| Licencia | argmax-fmod-license (licencia propia de Argmax; enlace en el repositorio) |
-| Formato de pesos | CoreML / WhisperKit (compatible con la libreria `whisperkit`) |
-| Tamano del repositorio | 4,1 GB |
-| Pipeline | automatic-speech-recognition |
-| Libreria | whisperkit |
+| Licencia | argmax-fmod-license (acceso restringido, uso condicionado al Argmax Pro SDK) |
+| Formato de pesos | Core ML (repo de 4,6 GB; compatible con WhisperKit) |
 
 ## Arquitectura y entrenamiento
+La información disponible no detalla la arquitectura interna del modelo base Qwen3-ASR ni los datos de entrenamiento empleados. Lo que sí se documenta es la capa de adaptación: los pesos se convierten a Core ML, se cuantizan y comprimen para reducir el consumo de memoria y acelerar la inferencia en Apple Silicon, y se empaquetan para su consumo mediante WhisperKit. No se especifican número de tokens de entrenamiento, composición del dataset ni si hubo etapas de RLHF o DPO.
 
-El modelo es una adaptacion de los modelos Qwen3-ASR de Alibaba para su ejecucion en Apple Silicon. El autor no publica en la model card detalles sobre el numero de parametros, la arquitectura interna (atencion, capas, dimensiones) ni el proceso de entrenamiento o ajuste. Lo que si se indica es que los pesos se distribuyen en formato CoreML, cuantizados y comprimidos, lo que sugiere un proceso de conversion y optimizacion orientado a reducir el consumo de memoria y acelerar la inferencia en el Neural Engine y la GPU de los chips Apple.
-
-No se dispone de informacion sobre el numero de tokens de audio utilizados en el entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado adicional. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. Cualquier afirmacion sobre estos puntos seria especulativa y, por tanto, se omite.
+Tampoco se detallan innovaciones técnicas como decodificación especulativa o mecanismos de atención lineal. La contribución principal de Argmax parece ser la ingeniería de despliegue (conversión, compresión y runtime) más que el entrenamiento del modelo base.
 
 ## Capacidades
-
-- Transcripcion de audio a texto (ASR) en local, sin envio de datos a servidores externos.
-- Ejecucion on-device en Apple Silicon mediante CoreML y la libreria WhisperKit.
-- Pesos cuantizados y comprimidos para reducir el uso de memoria y el tamano en disco.
-- Integracion con el Argmax Pro SDK, que gestiona la carga y ejecucion del modelo.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (el autor no especifica idiomas).
-- Capacidades especiales (modo thinking, vision, audio adicional): no disponibles.
+- Reconocimiento automático del habla (transcripción de audio a texto) como tarea principal, según la pipeline declarada `automatic-speech-recognition`.
+- Ejecución local y on-device en hardware Apple Silicon, sin envío de audio a servidores externos.
+- Inferencia optimizada mediante cuantización y compresión para reducir huella de memoria.
+- Integración con WhisperKit como librería de despliegue.
+- Capacidades multilingües: no confirmadas en la información disponible, aunque el modelo base Qwen3-ASR suele ser multilingüe; no se puede afirmar para esta variante.
+- Tool calling, function calling, agentes, visión, audio bidireccional o modo de razonamiento explícito: no disponible.
 
 ## Casos de uso
-
-- **Transcripcion de reuniones en local**: el modelo permite convertir audio de reuniones en texto directamente en un Mac, sin subir grabaciones a la nube, lo que facilita el cumplimiento de politicas de privacidad corporativas.
-- **Dictado en aplicaciones macOS e iOS**: al ejecutarse sobre CoreML y WhisperKit, puede integrarse en apps nativas para ofrecer dictado por voz con baja latencia y sin dependencia de red.
-- **Subtitulado de contenido audiovisual**: util para generar subtitulos de videos o podcasts en flujos de postproduccion donde el material no puede salir del equipo del editor.
-- **Aplicaciones de accesibilidad**: transcripcion en tiempo real de conversaciones para personas con discapacidad auditiva, aprovechando la inferencia local para evitar retardo de red.
-- **Procesamiento por lotes de archivos de audio**: transcripcion masiva de grabaciones archivadas en un equipo Apple, con coste marginal nulo frente a APIs de pago por minuto.
-- **Asistentes de voz integrados en productos de terceros**: el SDK de Argmax permite empaquetar el modelo en aplicaciones comerciales para Apple, siempre que se cumplan los terminos de la licencia.
-- **Investigacion en ASR**: util como referencia de empaquetado CoreML de un modelo Qwen3-ASR para comparar rendimiento on-device frente a alternativas en la nube.
+- Transcripción de notas de voz en apps de iOS y macOS: el modelo se ejecuta on-device vía Core ML, permitiendo convertir grabaciones en texto sin subir audio a la nube y preservando la privacidad del usuario.
+- Subtitulado local de reuniones y clases: con WhisperKit como runtime, se puede procesar audio en tiempo real o por lotes en un Mac, útil para entornos con requisitos de confidencialidad.
+- Dictado en aplicaciones de productividad: la latencia baja propia de la inferencia local encaja con interfaces de dictado que necesitan respuesta casi inmediata.
+- Accesibilidad: transcripción de conversaciones para personas con discapacidad auditiva en dispositivos Apple, funcionando offline.
+- Indexación y búsqueda de archivos de audio: procesar grandes volúmenes de grabaciones en un Mac para generar transcripciones indexables, aprovechando el formato comprimido para reducir uso de memoria.
+- Prototipado de pipelines ASR en investigación: al ser un paquete WhisperKit, permite comparar variantes cuantizadas frente a modelos completos en un entorno controlado de Apple Silicon.
+- Integración en apps empresariales internas: al requerir Argmax Pro SDK, encaja en proyectos con presupuesto de licencia y necesidades de soporte comercial.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- **VRAM / memoria unificada estimada**: no disponible de forma oficial; el repositorio ocupa 4,1 GB, por lo que se requiere al menos esa cantidad de memoria libre para cargar los pesos, mas el margen necesario para el runtime de CoreML.
-- **GPU recomendadas**: chips Apple Silicon (serie M) con Neural Engine; el autor no especifica modelos minimos.
-- **Compatibilidad con GPU de consumo**: orientado exclusivamente a hardware Apple; no se indica soporte para GPU NVIDIA o AMD.
-- **Opciones de despliegue**: Argmax Pro SDK sobre WhisperKit y CoreML. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- **Latencia y throughput**: no disponibles.
+- VRAM: no aplica en sentido estricto; en Apple Silicon se comparte memoria unificada. El repo ocupa 4,6 GB, lo que da una cota superior orientativa del espacio necesario para cargar los pesos comprimidos.
+- GPU recomendadas: hardware Apple Silicon (series M1, M2, M3, M4) y chips A-series recientes en iPhone/iPad, dado que el runtime es Core ML.
+- GPU NVIDIA (A100, H100, RTX 4090): no soportadas por este paquete, que está orientado a Core ML.
+- Cabe en hardware de consumo Apple: sí, previsiblemente en Mac con memoria unificada de 8 GB o más, aunque no se confirma en la documentación.
+- Opciones de despliegue: WhisperKit y Argmax Pro SDK; no se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Despliegue | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| QwenASRKit Pro | no disponible | no disponible | argmax-fmod-license | CoreML / WhisperKit (Apple Silicon) | Hugging Face, con acceso condicionado (gated) |
-| Whisper (OpenAI) | 39M–1,55B segun variante | 30 s por ventana | MIT | llama.cpp, WhisperKit, ONNX, etc. | Abierto |
-| Qwen3-ASR (base) | no disponible en esta ficha | no disponible | no disponible | no disponible | Hugging Face |
+| QwenASRKit Pro (este) | no disponible | no disponible | argmax-fmod-license (restringida) | Core ML | On-device Apple, requiere Argmax Pro SDK |
+| Whisper large-v3 (OpenAI) | ~1550 M | ~30 s de audio por ventana | MIT | safetensors, GGUF, Core ML | Referencia ASR multilingüe, amplio ecosistema |
+| Parakeet (NVIDIA) | no disponible | no disponible | CC-BY-4.0 (variantes) | NeMo, ONNX | ASR rápido en GPU NVIDIA, no orientado a Apple |
+| Qwen3-ASR (base) | no disponible | no disponible | según variante | safetensors | Modelo origen del que deriva este paquete |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros estructurales y de licencia.
+La comparación de rendimiento no está disponible al no publicarse benchmarks para QwenASRKit Pro.
 
 ## Limitaciones y advertencias
-
-- **Licencia restrictiva**: la licencia `argmax-fmod-license` es propia de Argmax y no equivale a una licencia open source permisiva; es necesario revisar el archivo `LICENSE_NOTICE.txt` antes de cualquier uso comercial.
-- **Acceso condicionado (gated)**: la descarga requiere aceptar la licencia y proporcionar datos de empresa y correo electronico, lo que limita la distribucion automatica en pipelines.
-- **Dependencia del SDK propietario**: los modelos solo son compatibles con el Argmax Pro SDK, lo que introduce una dependencia de proveedor y posibles costes de licencia.
-- **Plataforma limitada**: disenado exclusivamente para Apple Silicon; no es portable a GPU NVIDIA, AMD ni a servidores Linux convencionales.
-- **Idiomas no documentados**: se desconoce la cobertura linguistica real, lo que impide garantizar calidad en idiomas distintos del ingles o el chino sin pruebas propias.
-- **Riesgo de alucinacion**: como todo modelo generativo de ASR, puede producir transcripciones plausibles pero incorrectas en audio ruidoso o con acentos no vistos en entrenamiento; no hay datos publicados sobre tasas de error (WER).
-- **Sesgos**: no se documentan sesgos conocidos; la ausencia de informacion sobre el dataset de entrenamiento impide evaluar su representatividad.
-- **Sin benchmarks publicados**: no es posible validar el rendimiento frente a alternativas sin realizar pruebas propias.
-- **Fecha de creacion futura**: el repositorio figura creado en 2026, lo que puede indicar metadatos inconsistentes; conviene verificar la version descargada.
+- Licencia restringida: `argmax-fmod-license` con acceso condicionado (gated) y uso limitado al Argmax Pro SDK; revisar LICENSE_NOTICE antes de cualquier uso comercial.
+- Dependencia de proveedor: los modelos solo funcionan con Argmax Pro SDK, lo que introduce acoplamiento tecnológico y posible coste de suscripción.
+- Compatibilidad limitada: orientado exclusivamente a Apple Silicon y Core ML; no utilizable en GPUs NVIDIA ni en servidores Linux convencionales.
+- Idiomas no documentados: no se confirma qué lenguas cubre esta variante, por lo que no se debe asumir cobertura multilingüe.
+- Riesgo de alucinación en ASR: como todo modelo de transcripción, puede generar texto plausible en segmentos con ruido, solapamiento de hablantes o audio de baja calidad.
+- Sesgos: no documentados; el modelo base puede heredar sesgos acústicos y léxicos de sus datos de entrenamiento.
+- Falta de transparencia técnica: sin número de parámetros, contexto ni datos de entrenamiento publicados, la evaluación independiente es difícil.
+- Producción: verificar latencia real y consumo de memoria en el dispositivo objetivo antes de desplegar, dado que no hay cifras oficiales.
 
 ## Enlaces
-
-- [Hugging Face: argmaxinc/qwenasrkit-pro](https://huggingface.co/argmaxinc/qwenasrkit-pro)
-- [Licencia (LICENSE_NOTICE.txt)](https://huggingface.co/argmaxinc/qwenasrkit-pro/blob/main/LICENSE_NOTICE.txt)
-- [Argmax Pro SDK](https://www.argmaxinc.com/#SDK)
-- [Registro en Argmax](https://app.argmaxinc.com)
+- Hugging Face: https://huggingface.co/argmaxinc/qwenasrkit-pro
+- Licencia (LICENSE_NOTICE.txt): https://huggingface.co/argmaxinc/qwenasrkit-pro/blob/main/LICENSE_NOTICE.txt
+- Argmax SDK: https://www.argmaxinc.com/#SDK
+- Registro Argmax Pro SDK: https://app.argmaxinc.com

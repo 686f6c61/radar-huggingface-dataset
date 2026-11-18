@@ -5,10 +5,10 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Wan2.2-UMT5-Tenstorrent-Tensix-Components",
   "created_at": "2026-11-14T23:52:41.000Z",
-  "updated_at": "2026-11-14T23:53:14.000Z",
+  "updated_at": "2026-11-17T08:43:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-to-video",
   "library": "pytorch",
   "languages": [
     "multilingual"
@@ -23,6 +23,7 @@
     "model-components",
     "text-encoder",
     "umt5",
+    "text-to-video",
     "multilingual",
     "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
     "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B-Diffusers",

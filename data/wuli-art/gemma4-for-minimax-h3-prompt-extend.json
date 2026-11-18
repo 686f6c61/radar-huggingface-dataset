@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Wuli-art/Gemma4-for-MiniMax-H3-Prompt-Extend",
+  "slug": "wuli-art-gemma4-for-minimax-h3-prompt-extend",
+  "author": "Wuli-art",
+  "url": "https://huggingface.co/Wuli-art/Gemma4-for-MiniMax-H3-Prompt-Extend",
+  "created_at": "2026-11-16T02:49:24.000Z",
+  "updated_at": "2026-11-18T08:02:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "image-to-video",
+    "zh",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49979370083,
+  "storage_human": "50.0 GB",
+  "context_length": null,
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

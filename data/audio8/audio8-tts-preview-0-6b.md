@@ -2,79 +2,92 @@
 
 ## Resumen
 
-Audio8-TTS-Preview-0.6b es un modelo de síntesis de voz (text-to-speech) multilingüe de 0.6 mil millones de parámetros desarrollado por Audio8, diseñado para generar habla natural y realizar clonación de voz en modo zero-shot. El modelo emplea una arquitectura DualAR (dos transformers autorregresivos) inspirada en Fish Audio S2 Pro: un transformer lento predice un token semántico por cada frame de audio, mientras que un transformer rápido predice los codebooks del codec neuronal condicionado al estado oculto del primero y a los codebooks anteriores. Esta separación permite una síntesis eficiente y de alta calidad con un tamaño compacto.
+Audio8 TTS Preview 0.6B es un modelo de síntesis de voz (text-to-speech) multilingüe con clonación de voz zero-shot, desarrollado por Audio8. Con 601.159.424 parámetros (excluyendo el códec), resuelve el problema de generar habla natural en 11 idiomas a partir de una referencia de audio corta, sin necesidad de entrenamiento adicional por voz. Es relevante porque ofrece calidad que el autor califica de "SOTA-class" en un tamaño compacto que cabe en GPU de consumo e incluso en CPU mediante una variante ONNX INT4.
 
-El modelo se distribuye bajo licencia Apache 2.0 (según los tags de Hugging Face) e incluye soporte para al menos once idiomas: cantonés, chino, neerlandés, inglés, francés, alemán, italiano, japonés, coreano, polaco y español. Además del checkpoint original en safetensors, se publica una versión ONNX cuantizada a INT4 orientada a despliegue en CPU, lo que facilita su integración en entornos sin GPU dedicada. Con más de 15.000 descargas y 348 likes en Hugging Face, el modelo ha despertado interés en la comunidad por su equilibrio entre tamaño reducido y capacidades avanzadas de clonación vocal.
+La arquitectura es un transformer autorregresivo dual (DualAR) inspirado en Fish Audio S2 Pro: un transformer AR lento predice un token semántico por frame de audio y un transformer AR rápido predice los codebooks del códec condicionado al estado oculto del lento. El modelo incluye su propio códec neuronal de audio a 44,1 kHz, tokenizador, procesador y código remoto de Hugging Face, por lo que no requiere checkpoints adicionales.
 
-La relevancia actual de este modelo radica en su propuesta de TTS multilingüe de código abierto con clonación zero-shot a escala compacta, un nicho donde predominan soluciones propietarias o modelos de mayor tamaño. Su arquitectura DualAR y la disponibilidad de una variante ONNX INT4 lo convierten en una opción atractiva para desarrolladores que necesitan síntesis de voz personalizable en producción con requisitos de hardware moderados.
+Se distribuye con licencia Apache 2.0, lo que facilita su uso comercial, y admite tanto clonación de voz con audio de referencia como generación sin referencia. Es una versión preview: la cobertura de idiomas está deliberadamente limitada a 11 lenguas y el autor anuncia mayor cobertura multilingüe y dialectos chinos en futuras versiones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DualAR (dos transformers autorregresivos: lento y rápido) |
-| Parametros totales | 0.6 mil millones (aproximadamente) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT4 (ONNX), FP16 (codec y encoder) |
-| Idiomas soportados | cantonés (yue), chino (zh), neerlandés (nl), inglés (en), francés (fr), alemán (de), italiano (it), japonés (ja), coreano (ko), polaco (pl), español (es) |
-| Licencia | Apache 2.0 (según tags de Hugging Face; el campo de licencia en la página indica "no disponible") |
-| Formato de pesos | safetensors, ONNX (INT4) |
+| Arquitectura | Transformer autorregresivo dual (DualAR): Slow AR + Fast AR, con códec neuronal de audio |
+| Parametros totales | 601.159.424 (excluyendo el códec) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Hasta 2.048 posiciones empaquetadas de texto/audio |
+| Tipos de cuantizacion | BF16/FP32 en el checkpoint original; INT4 weight-only (ONNX) para CPU con activaciones, KV cache y códec en FP16 |
+| Idiomas soportados | Cantonés (yue), chino (zh), neerlandés (nl), inglés (en), francés (fr), alemán (de), italiano (it), japonés (ja), coreano (ko), polaco (pl), español (es) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (transformers); variante ONNX INT4 en repo separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura DualAR del modelo se compone de dos transformers autorregresivos que operan en niveles distintos de granularidad temporal. El transformer lento procesa la secuencia de tokens semánticos, generando un token por cada frame de audio, lo que captura la estructura fonética y prosódica global. El transformer rápido, condicionado al estado oculto del lento y a los codebooks ya generados, predice los codebooks del codec neuronal para cada frame, reconstruyendo así la forma de onda a alta resolución. Esta separación reduce la complejidad computacional en comparación con modelos que predicen todos los codebooks de forma conjunta, y permite una síntesis más estable en contextos multilingües.
+El modelo emplea una arquitectura DualAR. El transformer Slow AR (24 capas, anchura 896, 14 cabezas de atención, 2 cabezas KV) predice un token semántico por cada frame de audio. El transformer Fast AR (4 capas, anchura 896, 14 cabezas de atención, 2 cabezas KV) predice los codebooks del códec para ese frame, condicionado al estado oculto del Slow AR y a los codebooks precedentes. La representación acústica usa 10 codebooks con 4.096 entradas cada uno.
 
-El repositorio oficial incluye un pipeline de ajuste fino supervisado (SFT) independiente, lo que sugiere que el entrenamiento se realizó en dos fases: una preentrenamiento en datos multilingües y un ajuste fino con datos etiquetados para mejorar la naturalidad y la fidelidad de la clonación. No se han publicado detalles sobre el volumen de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO. La versión ONNX INT4 utiliza cuantización weight-only para los modelos DualAR, manteniendo el codec neuronal en FP16, lo que permite inferencia en CPU con una degradación mínima de calidad.
+El códec incluido opera a 44,1 kHz con 2.048 muestras por frame del modelo (aproximadamente 21,5 frames por segundo) y se encarga tanto de la codificación del audio de referencia como de la decodificación a forma de onda. El contexto máximo es de 2.048 posiciones empaquetadas de texto y audio.
+
+No se han publicado en la información disponible detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de voz multilingüe: síntesis de habla natural en al menos once idiomas, incluyendo lenguas con sistemas de escritura complejos como chino, japonés y coreano.
-- Clonación de voz zero-shot: capacidad de replicar una voz de referencia sin necesidad de entrenamiento adicional, a partir de una muestra de audio corta.
-- Clonación cross-lingual: permite transferir las características de una voz de referencia a un idioma distinto del original, como se demuestra en la página de listening preview.
-- Síntesis de voz con codec neuronal: utiliza un codec de audio neuronal para reconstruir la forma de onda, lo que proporciona una calidad de audio alta y una compresión eficiente.
-- Despliegue en CPU: la variante ONNX INT4 permite ejecutar el modelo en entornos sin GPU, ampliando su aplicabilidad a servidores de bajo coste o dispositivos edge.
-- Personalización mediante SFT: el pipeline de ajuste fino independiente permite adaptar el modelo a dominios específicos o voces concretas con datos propios.
+- Síntesis de voz multilingüe en 11 idiomas: cantonés, chino, neerlandés, inglés, francés, alemán, italiano, japonés, coreano, polaco y español.
+- Clonación de voz zero-shot a partir de un audio de referencia y su transcripción exacta.
+- Generación de voz sin referencia (voz por defecto) omitiendo los parámetros de audio y texto de referencia.
+- Salida de audio a 44,1 kHz mediante el códec neuronal integrado.
+- Procesamiento por lotes (batching) y streaming de PCM según la documentación del repositorio.
+- Registro de voces en el flujo de despliegue ONNX para reutilización posterior.
+- Ajuste fino supervisado (SFT) soportado según el repositorio del proyecto.
+- Control de generación mediante parámetros de muestreo (temperatura, top-p, top-k) y `max_new_tokens`.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede generar respuestas de voz naturales en múltiples idiomas para sistemas IVR o asistentes virtuales, con la posibilidad de clonar la voz de un agente humano para mantener una identidad de marca consistente.
-- Audiolibros y narración de contenido: gracias a su soporte multilingüe y a la clonación zero-shot, puede narrar libros o artículos con la voz de un locutor específico, reduciendo los costes de grabación en estudio.
-- Traducción audiovisual (doblaje): la clonación cross-lingual permite doblar vídeos o películas manteniendo la voz original del actor en un idioma distinto, acelerando el proceso de localización.
-- Asistentes de voz para accesibilidad: personas con discapacidad visual o dificultades de lectura pueden beneficiarse de una síntesis de voz personalizada y natural en su idioma materno, con la opción de usar una voz familiar.
-- Generación de contenido para marketing y publicidad: creación de anuncios de audio o vídeos promocionales con voces personalizadas sin necesidad de contratar actores de voz, especialmente útil para campañas multilingües.
-- Herramientas de aprendizaje de idiomas: el modelo puede generar ejemplos de pronunciación en distintos idiomas con la voz del estudiante (clonada) o con voces nativas, facilitando la práctica de entonación y acento.
-- Integración en pipelines de producción de vídeo: la versión ONNX INT4 permite ejecutar el TTS en servidores CPU dentro de flujos de renderizado, añadiendo locuciones automáticas a vídeos generados programáticamente.
+- Audiolibros y narración automatizada: el modelo genera habla natural a 44,1 kHz en varios idiomas y permite clonar una voz concreta a partir de una muestra corta, manteniendo consistencia de timbre en textos largos dentro del contexto de 2.048 posiciones.
+- Doblaje y localización de contenido: con soporte para 11 idiomas y clonación zero-shot, se puede reutilizar la voz del actor original en distintas lenguas sin reentrenar el modelo.
+- Asistentes de voz y atención al cliente: la variante ONNX INT4 funciona en CPU con aproximadamente 1 GiB de memoria tras la carga, lo que permite desplegar servicios HTTP de síntesis en infraestructura sin GPU.
+- Accesibilidad y lectura de textos: generación de voz sin referencia para convertir artículos, documentos o notificaciones en audio, con despliegue ligero en dispositivos de bajos recursos.
+- Prototipado de interfaces conversacionales: el pipeline de transformers con `trust_remote_code=True` y el CLI del repositorio permiten integrar TTS en aplicaciones de prueba con pocas líneas de código.
+- Producción de contenido para redes y vídeo: generación por lotes y streaming PCM facilitan la creación de pistas de voz para vídeos, pódcasts o anuncios en varios idiomas.
+- Investigación en clonación de voz: el checkpoint completo, el códec, el tokenizador y el procesador permiten experimentar con SFT y estudiar el comportamiento del esquema DualAR.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La página de listening preview del proyecto muestra ejemplos de audio, pero no incluye métricas cuantitativas como MOS (Mean Opinion Score), WER (Word Error Rate) o comparativas con otros modelos TTS.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se dispone de datos oficiales sobre VRAM mínima o recomendada para la versión safetensors.
-- Dado el tamaño de 0.6 mil millones de parámetros, es razonable esperar que la versión FP16 quepa en GPUs de consumo con al menos 4-6 GB de VRAM, pero esta estimación no está confirmada por el autor.
-- La versión ONNX INT4 está diseñada específicamente para inferencia en CPU, lo que permite ejecutar el modelo en hardware sin GPU dedicada.
-- No se han publicado datos de latencia ni throughput para ninguna de las variantes.
-- Opciones de despliegue: el repositorio de GitHub proporciona herramientas de inferencia y código remoto para Hugging Face Transformers. La variante ONNX puede integrarse en entornos que soporten el runtime de ONNX. No se menciona soporte explícito para vLLM, llama.cpp u Ollama.
+- VRAM estimada para inferencia en BF16: en torno a 1,2-1,5 GB solo para los pesos del modelo principal (601 M de parámetros), más el códec y las cachés KV; se recomienda una GPU con al menos 4 GB para trabajar con margen.
+- GPU recomendadas: cualquier GPU CUDA moderna con soporte BF16; el modelo es lo bastante pequeño para ejecutarse en RTX 4090, A100 o H100 sin problemas, aunque no aprovecha su capacidad.
+- GPU de consumo: cabe holgadamente en tarjetas de 8 GB o menos, incluidas gamas medias con soporte BF16.
+- CPU: la variante ONNX INT4 corre con ONNX Runtime `CPUExecutionProvider` sin CUDA, con aproximadamente 1 GiB de memoria tras la carga en la configuración probada por el autor (Apple M2).
+- Opciones de despliegue: transformers (con `trust_remote_code=True`), ONNX Runtime con el paquete INT4 (CLI, servicio web y HTTP, streaming PCM) y el repositorio oficial para inferencia por línea de comandos, batching y SFT.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas publicadas en la informacion disponible. El modelo se inspira en Fish Audio S2 Pro, pero no hay datos objetivos que permitan una comparación cuantitativa con este u otros TTS como XTTS v2 o Bark. Se recomienda consultar la página de listening preview para una evaluación subjetiva de la calidad de audio.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| Audio8 TTS Preview 0.6B | 601 M (sin códec) | 2.048 posiciones | 11 | Apache 2.0 | Clonación zero-shot, códec 44,1 kHz incluido, variante ONNX INT4 para CPU |
+| Fish Audio S2 Pro | no disponible | no disponible | no disponible | no disponible | Arquitectura de referencia del diseño DualAR; datos no disponibles en la información proporcionada |
+| Alternativas de TTS open source de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- No se han publicado estudios de sesgos o comportamientos discriminatorios; como todo modelo de síntesis de voz, puede reflejar sesgos presentes en los datos de entrenamiento.
-- Riesgo de alucinación fonética: en idiomas con ortografía irregular o nombres propios poco comunes, el modelo puede producir pronunciaciones incorrectas.
-- La clonación de voz zero-shot puede fallar con voces muy atípicas o con muestras de referencia de baja calidad o corta duración.
-- La licencia Apache 2.0 permite uso comercial, pero el campo de licencia en la página de Hugging Face aparece como "no disponible", por lo que se recomienda verificar los términos en el repositorio oficial antes de un despliegue en producción.
-- No se especifica la longitud máxima de texto soportada por inferencia; textos muy largos pueden requerir segmentación.
-- La variante ONNX INT4 puede presentar una degradación de calidad perceptible en comparación con los pesos en FP16, especialmente en tonos o acentos complejos.
+- Es una versión preview: la cobertura de idiomas está limitada intencionalmente a los 11 idiomas recomendados; el soporte multilingüe amplio y los dialectos chinos quedan para futuras versiones.
+- La clonación de voz exige que la transcripción de referencia coincida exactamente con el contenido hablado del audio; discrepancias degradan la calidad.
+- Riesgo de uso indebido para suplantación de identidad o deepfakes de voz; la licencia Apache 2.0 no impone restricciones de uso, por lo que la responsabilidad ética y legal recae en el desplegador.
+- Posibles sesgos en la voz generada derivados de los datos de entrenamiento; no se documenta la composición del dataset en la información disponible.
+- Riesgo de alucinación acústica o artefactos en textos fuera de distribución, idiomas no soportados o referencias de audio ruidosas.
+- El contexto de 2.048 posiciones empaquetadas limita la duración de las síntesis en una sola pasada; para textos largos conviene segmentar.
+- El modelo requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene revisar los ficheros antes de cargarlo en producción.
+- No se han publicado métricas de calidad objetivas (MOS, WER, similitud de hablante) en la información disponible.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b)
-- [Repositorio GitHub](https://github.com/Audio8-AI/Audio8_TTS)
-- [Variante ONNX INT4 en Hugging Face](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4)
-- [Ficha en awesome-ai-voice](https://github.com/wildminder/awesome-ai-voice/blob/main/models/audio8-tts-preview-0-6b.md)
-- [Página de listening preview](https://audio8-ai.github.io/Audio8_TTS/)
+- Modelo en Hugging Face: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b
+- Variante ONNX INT4: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
+- Repositorio GitHub: https://github.com/Audio8-AI/Audio8_TTS
+- Demo en vivo: https://edge0-ai.github.io/Audio8_TTS/preview-0.6b/
+- Licencia en GitHub: https://github.com/Edge0-AI/Audio8_TTS/blob/master/LICENSE
+- Guía de CPU con ONNX Runtime: https://github.com/Audio8-AI/Audio8_TTS/tree
+- Proyecto de referencia (Fish Audio S2 Pro): https://github.com/fishaudio/fish-speech

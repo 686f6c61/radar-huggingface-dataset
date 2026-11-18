@@ -2,90 +2,93 @@
 
 ## Resumen
 
-Muse-Spark-Open-816B-A42B-Quark-MXFP4 es una versión cuantizada del modelo multimodal Muse-Spark-Open-816B-A42B, publicada por AMD. El checkpoint original lo desarrolla meta-models y acepta entradas de texto, imagen, vídeo y audio, con salida únicamente de texto. AMD ha aplicado su herramienta de cuantización AMD-Quark (v0.12) para reducir el coste de memoria de los expertos MoE del modelo, manteniendo el resto de capas en bf16.
+Muse-Spark-Open-816B-A42B-Quark-MXFP4 es una versión cuantizada del modelo multimodal Muse-Spark-Open-816B-A42B, publicada por AMD mediante su herramienta de optimización AMD-Quark (v0.12). El checkpoint cuantiza los expertos enrutados de la arquitectura MoE a formato OCP MXFP4 (excepto las capas 0 y 61) y mantiene el resto de componentes en bf16, reduciendo el peso del repositorio hasta aproximadamente 1 TB. Está pensado específicamente para su despliegue sobre aceleradores AMD Instinct MI350/MI355 con ROCm, usando SGLang o vLLM como motores de inferencia.
 
-La relevancia de esta publicación es doble. Por un lado, demuestra el flujo de cuantización MXFP4 de AMD sobre un modelo de gran escala (435.489.473.024 parámetros reales según los safetensors del repo, aunque el nombre comercial del modelo base indica 816B totales y 42B activos). Por otro, incluye recetas de despliegue específicas para hardware AMD Instinct MI350/MI355 con SGLang y vLLM sobre ROCm, lo que convierte el checkpoint en una referencia práctica para servir modelos MoE grandes en infraestructura AMD.
+El modelo base es un transformer de tipo mezcla de expertos (MoE) con 435.489.473.024 parámetros totales según los safetensors publicados, aunque la nomenclatura del checkpoint sugiere 816B totales y 42B activos por token. Acepta entradas de texto, imagen, vídeo y audio, y genera texto, lo que lo sitúa en la categoría de modelos omni-modales de gran escala. La arquitectura declarada es MuseSparkForConditionalGeneration.
 
-El repo ocupa 1014 GB y se distribuye bajo la licencia propietaria muse-model-license, con soporte oficial limitado a GPUs AMD Instinct MI350/MI355 y Linux. No se han publicado en la información disponible datos sobre idiomas soportados ni resultados de benchmarks.
+Su relevancia actual radica en que demuestra un flujo completo de cuantización de precisión ultra-baja (MXFP4) sobre un modelo de cientos de miles de millones de parámetros, con recetas de despliegue reproducibles para hardware AMD. Esto interesa a equipos que necesitan servir modelos frontera en clústeres ROCm sin renunciar al formato de pesos de 4 bits por bloque, y a investigadores que evalúan el impacto de MXFP4 en modelos MoE multimodales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MuseSparkForConditionalGeneration (transformer MoE multimodal, según model card) |
-| Parametros totales | 435.489.473.024 (safetensors del repo cuantizado); el nombre del modelo base indica 816B totales |
-| Parametros activos | 42B (según el identificador del modelo base, A42B) |
-| Longitud de contexto | no disponible (la receta vLLM limita el servicio a 32.768 tokens) |
-| Tipos de cuantizacion | MXFP4 (OCP) en pesos estáticos y activaciones dinámicas de los expertos MoE; resto en bf16 |
+| Arquitectura | MuseSparkForConditionalGeneration (transformer MoE multimodal) |
+| Parametros totales | 435.489.473.024 (safetensors); nomenclatura del checkpoint: 816B |
+| Parametros activos | 42B (según nomenclatura A42B del checkpoint) |
+| Longitud de contexto | no disponible (receta vLLM limita el servicio a 32.768 tokens) |
+| Tipos de cuantizacion | MXFP4 estático en pesos de expertos MoE, MXFP4 dinámico en activaciones MoE; resto en bf16 |
 | Idiomas soportados | no disponible |
-| Licencia | muse-model-license (other) |
-| Formato de pesos | safetensors (8-bit, cuantización Quark) |
+| Licencia | muse-model-license (license: other) |
+| Formato de pesos | safetensors (formato Quark) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE multimodal de tipo MuseSparkForConditionalGeneration que procesa texto, imagen, vídeo y audio y genera texto. El checkpoint de AMD no reentrena el modelo: aplica cuantización post-entrenamiento con AMD-Quark v0.12. Concretamente, cuantiza los expertos MoE enrutados a OCP MXFP4 (pesos estáticos y activaciones dinámicas), excluyendo las capas 0 y 61, y mantiene en bf16 el resto de componentes: lm_head, módulos de atención, gates MoE, proyecciones pre/post expertos, torres de visión y audio y el resto del language model.
+El modelo base sigue una arquitectura transformer con mezcla de expertos (MoE) y capacidades multimodales de entrada (texto, imagen, vídeo y audio) con salida exclusivamente textual. La cuantización de AMD-Quark actúa únicamente sobre los expertos enrutados: las proyecciones `gate_up_proj` y `down_proj` de los expertos se dividen mediante `SplitFusedExperts` y se cuantizan a MXFP4, mientras que se excluyen explícitamente `lm_head`, todas las capas de self-attention (`*self_attn*`), las puertas MoE (`*mlp.gate`), las proyecciones `pre_expert_proj` y `post_expert_proj`, los módulos de visión y audio, y las capas 0 y 61 del modelo de lenguaje. El resto de pesos permanece en bf16.
 
-La receta de cuantización incluye conversores de pesos que separan los expertos fusionados (gate_up_proj y down_proj) antes de cuantizar, mediante SplitFusedExperts. No se dispone de información sobre el dataset de entrenamiento del modelo base, el número de tokens, ni si hubo RLHF o DPO. La innovación destacable de esta publicación es el propio pipeline de cuantización MXFP4 sobre MoE y las recetas de servicio optimizadas para ROCm, que incluyen decodificación especulativa DFlash V2 con el draft model RadixArk/Muse-Spark-Open-DFlash2 en SGLang, kernels AITER, backend FlyDSL para MoE y chunked prefill en vLLM.
+La cuantización es estática para pesos y dinámica para activaciones, ambas en OCP MXFP4. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base empleó RLHF, DPO u otras técnicas de alineamiento. Tampoco se detalla si la arquitectura incorpora innovaciones como atención lineal o decodificación especulativa nativa; sin embargo, la receta de SGLang para este checkpoint utiliza decodificación especulativa DFlash V2 con un modelo borrador externo (`RadixArk/Muse-Spark-Open-DFlash2`) y 8 tokens de borrador.
 
 ## Capacidades
 
-- Generación de texto a partir de entradas multimodales: texto, imagen, vídeo y audio (la salida es solo texto).
-- Razonamiento con modo de esfuerzo configurable: la API de ejemplo acepta el parámetro `reasoning_effort` con valor `high`, y las recetas incluyen `--reasoning-parser muse`.
-- Tool calling / function calling: las recetas de SGLang y vLLM activan `--tool-call-parser muse` y, en vLLM, `--enable-auto-tool-choice`.
-- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente en la información disponible, aunque el soporte de reasoning parser y tool parser es compatible con ese uso.
+- Generación de texto a partir de entradas multimodales: texto, imagen, vídeo y audio.
+- Razonamiento con modo de esfuerzo configurable (`reasoning_effort` en la API, con valores como `high`).
+- Soporte de tool calling y function calling: las recetas incluyen `--tool-call-parser muse` y `--enable-auto-tool-choice`.
+- Parser de razonamiento dedicado (`--reasoning-parser muse`) para separar trazas de pensamiento de la respuesta final.
 - Capacidades multilingües: no disponibles en la información proporcionada.
-- Capacidades especiales: entrada de vídeo y audio, decodificación especulativa DFlash V2 en el despliegue SGLang y cuantización MXFP4 de expertos MoE.
+- Comprensión de vídeo y audio como entradas, según la especificación de la arquitectura.
+- Integración con servidores compatibles con la API de OpenAI (SGLang y vLLM).
 
 ## Casos de uso
 
-- Servicio de inferencia multimodal en infraestructura AMD: el checkpoint está pensado para desplegarse con SGLang o vLLM sobre MI350/MI355, de modo que un equipo con GPUs AMD Instinct puede servir un MoE de gran escala con pesos MXFP4 y reducir el consumo de memoria frente al modelo en bf16.
-- Asistentes que combinan imagen y texto: al aceptar entradas de imagen y generar texto, el modelo puede emplearse en tareas de descripción de imágenes, extracción de información de documentos escaneados o respuesta a preguntas sobre capturas, siempre que el despliegue incluya las torres de visión (que se mantienen en bf16).
-- Análisis de vídeo y audio con salida textual: la entrada de vídeo y audio permite construir pipelines de transcripción, resumen o etiquetado de contenido audiovisual, con la salida en texto.
-- Razonamiento de alta exigencia con `reasoning_effort: high`: útil en tareas de análisis, planificación o resolución de problemas donde interesa que el modelo dedique más cómputo al razonamiento antes de responder.
-- Integración en agentes con tool calling: el soporte de `--tool-call-parser muse` y `--enable-auto-tool-choice` permite conectar el modelo a herramientas externas (APIs, bases de datos, ejecución de código) en flujos de automatización.
-- Despliegue de baja latencia con decodificación especulativa: la receta SGLang con DFlash V2 y el draft model DFlash2 está orientada a escenarios interactivos donde la latencia por token es crítica, como chat en producción.
-- Evaluación de cuantización MXFP4 en MoE: investigadores que estudien el impacto de MXFP4 en calidad y rendimiento pueden usar este checkpoint como referencia reproducible, ya que la model card incluye el script de cuantización completo.
+- Asistentes multimodales de atención al cliente: el modelo puede procesar capturas de pantalla, imágenes de productos o notas de voz junto con texto en conversaciones multi-turno, y el tool calling permite conectarlo a sistemas de ticketing o bases de conocimiento.
+- Análisis de vídeo y audio en pipelines de moderación de contenido: la entrada nativa de vídeo y audio permite clasificar y resumir material audiovisual sin etapas separadas de transcripción o extracción de fotogramas.
+- Generación de código asistida en producción: con tool calling y parser de razonamiento, puede integrarse en agentes que consultan repositorios, ejecutan tests y proponen parches dentro de flujos de CI/CD.
+- Agentes de razonamiento multi-paso: el modo `reasoning_effort: high` y el parser de razonamiento permiten construir agentes que planifican, ejecutan herramientas y justifican decisiones en dominios como análisis financiero o soporte técnico.
+- Procesamiento documental multimodal: extracción y razonamiento sobre documentos escaneados, gráficos e imágenes combinados con texto largo, aprovechando la ventana de servicio de 32.768 tokens configurada en vLLM.
+- Investigación en cuantización de baja precisión: el checkpoint sirve como referencia reproducible para estudiar el impacto de MXFP4 en modelos MoE multimodales de gran escala sobre hardware AMD.
+- Despliegue en clústeres ROCm: equipos con Instinct MI350/MI355 pueden servir el modelo con SGLang (TP4+EP4) o vLLM (TP8) usando las recetas oficiales publicadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repo cuantizado ocupa 1014 GB; con pesos MXFP4 en los expertos y bf16 en el resto, el despliegue requiere un nodo multi-GPU de gran capacidad. Las recetas oficiales usan TP4 + EP4 (SGLang) o TP8 (vLLM) sobre MI355X.
-- GPU recomendadas: AMD Instinct MI350 y MI355 (microarquitectura soportada oficialmente). No se documenta soporte para otras GPUs.
-- GPU de consumo: no cabe en GPUs de consumo; el tamaño del checkpoint y el soporte limitado a MI350/MI355 lo impiden.
-- Opciones de despliegue: SGLang (`lmsysorg/sglang-rocm:muse-spark-open`) y vLLM (`vllm/vllm-openai-rocm:muse-spark-open`), ambos sobre ROCm. La receta SGLang usa AITER attention, FlyDSL MoE, page size 16, mem-fraction-static 0.85 y decodificación especulativa DFlash V2. La receta vLLM usa AITER FA, chunked prefill, max-model-len 32768, max-num-seqs 128 y gpu-memory-utilization 0.90.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- Hardware objetivo declarado: AMD Instinct MI350/MI355 con ROCm sobre Linux. No se menciona soporte para GPU NVIDIA ni consumer.
+- Tamaño del repositorio: 1.014 GB, lo que condiciona el almacenamiento y la memoria agregada necesaria.
+- Receta SGLang: TP4 + EP4 (4 GPUs), atención AITER, backend MoE FlyDSL, `--mem-fraction-static 0.85`, decodificación especulativa DFlash V2 con 8 tokens de borrador.
+- Receta vLLM: TP8 (8 GPUs), kernels AITER, chunked prefill, `--max-model-len 32768`, `--max-num-seqs 128`, `--max-num-batched-tokens 8192`, `--gpu-memory-utilization 0.90`.
+- VRAM estimada por GPU: no disponible de forma explícita; el tamaño del repo y las configuraciones TP4/TP8 implican varios cientos de GB agregados.
+- No cabe en GPU de consumo (RTX 4090 u similares) según los requisitos de hardware publicados.
+- Opciones de despliegue: SGLang (`lmsysorg/sglang-rocm:muse-spark-open`) y vLLM (`vllm/vllm-openai-rocm:muse-spark-open`). No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware objetivo |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware |
 |---|---|---|---|---|---|
-| Muse-Spark-Open-816B-A42B-Quark-MXFP4 (este) | 435B en safetensors (816B/42B activos según nombre base) | no disponible | MXFP4 en expertos MoE | muse-model-license | AMD MI350/MI355 |
-| Muse-Spark-Open-816B-A42B (base) | 816B totales / 42B activos | no disponible | bf16 | muse-model-license | no disponible |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Muse-Spark-Open-816B-A42B-Quark-MXFP4 (este) | 435,5B (safetensors); 816B/42B activos por nomenclatura | no disponible (servicio a 32.768) | MXFP4 en expertos MoE, resto bf16 | muse-model-license | AMD MI350/MI355 |
+| Muse-Spark-Open-816B-A42B (base) | 816B/42B activos | no disponible | bf16 | muse-model-license | no disponible |
+| Alternativas de misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
+No se dispone de información sobre otros modelos comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia propietaria muse-model-license: es necesario revisar LICENSE.md antes de cualquier uso comercial; no es una licencia open source estándar.
-- Soporte de hardware restringido: solo se documentan AMD Instinct MI350/MI355 y Linux; no hay recetas para NVIDIA ni para GPUs de consumo.
-- La cuantización MXFP4 afecta solo a los expertos MoE enrutados (excepto capas 0 y 61); el resto se mantiene en bf16, por lo que el ahorro de memoria es parcial y el checkpoint sigue siendo muy grande (1014 GB).
-- La receta vLLM limita el servicio a 32.768 tokens con `--max-model-len`, lo que puede ser inferior a la ventana de contexto real del modelo base; no se documenta la longitud de contexto nativa.
-- No se han publicado datos de benchmarks ni de evaluación de calidad tras la cuantización, por lo que se desconoce la degradación introducida por MXFP4.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible; deben evaluarse antes de usar el modelo en producción.
-- Idiomas soportados no disponibles: no se puede garantizar un rendimiento adecuado en castellano sin evaluación previa.
-- El repo tiene pocas señales de adopción (2 likes, 4851 descargas) y la model card no incluye información sobre el entrenamiento del modelo base.
+- La cuantización MXFP4 solo cubre los expertos enrutados (excepto capas 0 y 61); el resto permanece en bf16, por lo que el ahorro de memoria es parcial y el repositorio sigue superando 1 TB.
+- El checkpoint está diseñado y validado exclusivamente para AMD Instinct MI350/MI355 con ROCm; no hay garantías de funcionamiento en otras plataformas.
+- La licencia `muse-model-license` es de tipo "other": es imprescindible revisar `LICENSE.md` antes de cualquier uso comercial.
+- No se especifican idiomas soportados, lo que impide garantizar calidad en castellano u otras lenguas.
+- No hay datos publicados de benchmarks, sesgos, tasas de alucinación ni evaluaciones de seguridad.
+- La receta vLLM limita el servicio a 32.768 tokens y usa `--language-model-only`, por lo que en esa configuración no se sirve la ruta multimodal.
+- La decodificación especulativa en SGLang depende de un modelo borrador externo (`RadixArk/Muse-Spark-Open-DFlash2`), lo que añade una dependencia adicional en producción.
+- No se detallan requisitos de VRAM por GPU ni cifras de latencia o throughput, lo que dificulta el dimensionamiento previo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/amd/Muse-Spark-Open-816B-A42B-Quark-MXFP4
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
-- AMD-Quark: https://quark.docs.amd.com/latest/index.html
-- SGLang cookbook (Muse Spark Open): https://lmsysorg.mintlify.app/cookbook/autoregressive/Meta/MuseSparkOpen#hw=mi355x&strategy=low-latency&quant=mxfp4
+- Modelo borrador DFlash2: https://huggingface.co/RadixArk/Muse-Spark-Open-DFlash2
+- Documentación AMD-Quark: https://quark.docs.amd.com/latest/index.html
+- SGLang cookbook (Muse-Spark-Open): https://lmsysorg.mintlify.app/cookbook/autoregressive/Meta/MuseSparkOpen#hw=mi355x&strategy=low-latency&quant=mxfp4
 - Receta vLLM: https://recipes.vllm.ai/meta-models/Muse-Spark-Open-816B-A42B?hardware=mi355x&variant=mxfp4
-- Anuncio de soporte AMD en SGLang: https://www.lmsys.org/blog/2026-10-15-meta-muse-spark-open#amd-support
-- Draft model DFlash2: https://huggingface.co/RadixArk/Muse-Spark-Open-DFlash2
-- Licencia: LICENSE.md en el repositorio de Hugging Face
+- Blog SGLang sobre soporte AMD: https://www.lmsys.org/blog/2026-10-15-meta-muse-spark-open#amd-support

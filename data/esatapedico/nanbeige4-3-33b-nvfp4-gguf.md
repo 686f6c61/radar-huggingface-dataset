@@ -2,111 +2,100 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-NVFP4-GGUF es una cuantización comunitaria, publicada por el usuario `esatapedico`, del modelo denso Nanbeige/Nanbeige4.3-33B (33,1 mil millones de parámetros, licencia Apache-2.0). No se trata de un modelo nuevo ni de un ajuste fino: es una conversión de pesos a formato GGUF con un backbone NVFP4 (tipo GGML 40) y siete niveles de precisión ("ladder") que difieren únicamente en la cuantización de embeddings y de la cabeza de salida. El objetivo es hacer viable el despliegue del modelo base en hardware Blackwell de consumo, algo imposible en BF16 (66,3 GB) pero alcanzable en configuraciones de dos tarjetas de 16 GB.
+Nanbeige4.3-33B-NVFP4-GGUF es una cuantización GGUF en formato NVFP4 del modelo denso Nanbeige4.3-33B, publicada por el usuario esatapedico. El modelo base, desarrollado por Nanbeige, es un transformer de arquitectura Llama con 33.118.977.180 parámetros, 52 capas, dimensión oculta de 7168, 56 cabezas de consulta y 8 cabezas KV, y una ventana de contexto nativa de 512K tokens. La licencia del modelo base y de esta conversión es Apache-2.0.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una técnica concreta de cuantización NVFP4A16 (W4A16, grupo 16, escalas FP8 E4M3 por tensor) aplicada solo a las capas MLP, manteniendo la atención en BF16 y las normas en F32. Por otro, ofrece cifras de rendimiento medidas por el propio autor sobre el nivel MEDIUM: 67,62 % en MMLU y 91,5 % en GSM8K, sin corpus de calibración. Es un artefacto de infraestructura más que un modelo de investigación, y debe evaluarse como tal.
+La particularidad de esta publicación es que no se trata de una cuantización GGUF convencional de tipo K-quant, sino de una conversión propia a NVFP4A16 (W4A16) con grupo de tamaño 16 y escalas FP8 E4M3 por tensor, aplicada únicamente a las proyecciones MLP (`gate/up/down_proj`) de las 52 capas, manteniendo la atención en BF16. Se ofrece como una escalera de siete niveles que comparten un backbone NVFP4 idéntico byte a byte, diferenciándose solo en la cuantización de cabezas y embeddings.
 
-El modelo base es un transformer decoder-only de arquitectura Llama, con 52 capas, dimensión oculta 7168, 56 cabezas de consulta y 8 cabezas KV, y 512K de contexto nativo según la model card. No emplea MoE, atención de ventana deslizante, SSM ni predicción multi-token.
+El interés práctico reside en que comprime un modelo denso de 33B hasta un rango de 16,95 a 23,40 GiB según nivel, lo que permite su ejecución completa en configuraciones de doble GPU consumer Blackwell de 16 GB. Está pensado para llama.cpp y backends compatibles con NVFP4, y reporta métricas propias de MMLU y GSM8K por nivel.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso, arquitectura Llama (52 capas, 7168 de dimensión oculta, 56 cabezas de consulta / 8 cabezas KV) |
-| Parámetros totales | 33.118.977.180 (33,1B) |
-| Parámetros activos | No aplica: modelo denso, sin MoE |
-| Longitud de contexto | 512K nativo en el modelo base; en estos GGUF: 128K en VERY-LOW, LOW, MEDIUM y MID-HIGH; 64K en HIGH, VERY-HIGH y HIGHEST |
-| Tipos de cuantización | Backbone NVFP4A16 (W4A16, grupo 16, escalas FP8 E4M3 por tensor, solo pesos); 7 niveles con embeddings y lm_head en Q2_K, IQ4_XS, Q6_K, Q8_0 o BF16; HIGHEST recuantiza además la atención a Q8_0; caché KV recomendada q4_0 |
-| Idiomas soportados | `en` según los metadatos del repositorio; no hay información sobre otros idiomas |
+| Arquitectura | Transformer denso, arquitectura Llama (52 capas, 7168 hidden, 56 query / 8 KV heads; sin MoE, SWA, SSM ni MTP) |
+| Parametros totales | 33.118.977.180 (33,1B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 512K nativo en el modelo base; en esta conversion, <= 128K en los niveles VERY-LOW a MID-HIGH y <= 64K en HIGH, VERY-HIGH y HIGHEST |
+| Tipos de cuantizacion | NVFP4A16 (W4A16, grupo 16, escalas FP8 E4M3 por tensor) en MLP; atencion en BF16 (o Q8_0 en HIGHEST); cabezas y embeddings variables por nivel (Q2_K, IQ4_XS, Q5_0, Q6_K, Q8_0, BF16); KV cache q4_0 |
+| Idiomas soportados | Ingles (segun model card) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (tipo GGML 40 para el backbone NVFP4; normas en F32); existe un checkpoint intermedio de safetensors NVFP4A16 en 2 shards |
-| Tensores cuantizados | 156 tensores MLP (`gate_proj`, `up_proj`, `down_proj`) en las 52 capas |
-| Tensores mantenidos en BF16 | 208 tensores de atención (`q/k/v/output_proj`) en las 52 capas; `token_embd` y `lm_head` según nivel |
-| Tensores en F32 | 104 layer norms, `output_norm` y 156 escalas NVFP4 por tensor |
-| Tamaño de los ficheros | De 18,20 GB (16,95 GiB, VERY-LOW) a 25,13 GB (23,40 GiB, HIGHEST) |
-| Caché KV (q4_0) | 58,5 KiB/token, 52/52 capas con atención completa: 1,83 GiB a 32K, 3,66 GiB a 64K, 7,31 GiB a 128K |
-| Plantilla de chat | Presente, heredada del `tokenizer_config.json` del modelo base |
-| Tamaño del repositorio | 144,2 GB |
+| Formato de pesos | GGUF (tipo GGML 40 para el backbone NVFP4); checkpoint de conversion en safetensors NVFP4A16 de 2 shards |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no incluye detalles sobre el preentrenamiento del modelo base (composición del dataset, número de tokens, uso de RLHF/DPO). Lo que sí está documentado es el proceso de conversión, que constituye la aportación técnica de este repositorio. Se partió del checkpoint BF16 de `Nanbeige/Nanbeige4.3-33B` (14 shards, 66,3 GB, 471 tensores = 52×9 + 3, sin tensores MTP), verificado con SHA-256 contra los OIDs de LFS de Hugging Face en los 14 casos. La cuantización se realizó con llm-compressor 0.14.0.1, `pipeline='sequential'`, en modo weight-only y sin corpus de calibración ("datafree"), apuntando exclusivamente a los 156 tensores MLP; atención, normas y cabezas quedaron fuera del objetivo en ambos espacios de nombres, y la receta se validó contra el `weight_map` antes de ejecutarse.
+El modelo base es un transformer denso de arquitectura Llama con 52 capas, dimensión oculta de 7168, 56 cabezas de consulta y 8 cabezas KV, y atención completa en todas las capas (sin sliding window attention). No incorpora mezcla de expertos, state space models ni multi-token prediction. La ventana de contexto nativa es de 512K tokens.
 
-El esquema NVFP4A16 emplea bloques de 16 elementos con escalas FP8 E4M3 por tensor, manteniendo la activación en 16 bits (de ahí W4A16). Un guardián de normas posterior a la cuantización comparó 315 tensores no tocados y detectó 0 mutaciones. El resultado es un checkpoint indexado de 2 shards (~30,8 GB) con `recipe.yaml`, a partir del cual se generan los siete GGUF. Los seis niveles NVFP4 comparten un backbone de 364 tensores byte-idéntico (verificado por SHA); las diferencias entre niveles son solo la precisión de embeddings y `lm_head`, más el recuantizado Q8_0 de la atención en HIGHEST. La plantilla de chat se propaga a todos los ficheros. No hay innovaciones de decodificación (sin decodificación especulativa ni MTP) ni mecanismos de atención lineal.
+Sobre el entrenamiento del modelo base no se dispone de información en los datos proporcionados: no se detallan el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. La conversión aquí descrita es una cuantización weight-only y datafree, sin corpus de calibración: se cuantizan 156 tensores MLP en las 52 capas, se mantienen 208 tensores de atención en BF16, y se conservan en F32 las 104 layer norms, la `output_norm` y las 156 escalas NVFP4 por tensor. Las cabezas y embeddings se recuantizan por nivel. La plantilla de chat del `tokenizer_config.json` original se traslada a cada GGUF.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés, con plantilla de chat incluida en todos los GGUF.
-- Manejo de contexto largo: hasta 128K tokens en los cuatro niveles inferiores y 64K en los tres superiores, frente a los 512K nativos del modelo base.
-- Razonamiento matemático de varios pasos, con un 91,5 % en GSM8K medido en el nivel MEDIUM con el modo "thinking" activado.
-- Modo de razonamiento explícito ("thinking"): la model card describe pruebas con thinking forzado a off (MMLU) y con thinking on (GSM8K), lo que implica que el modelo base expone algún mecanismo de razonamiento extendido.
-- Respuesta a preguntas de conocimiento general y estilo MMLU (67,62 % en la suite del autor).
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Capacidades de agente y razonamiento multi-paso con herramientas: no documentadas.
-- Multilingüismo: no documentado; los metadatos solo declaran `en`.
-- Capacidades de visión, audio o multimodalidad: no disponibles (modelo estrictamente de texto).
-- Ejecución en llama.cpp sobre backends con soporte NVFP4, con offload completo verificado en dos GPU Blackwell de 16 GB.
+- Generación de texto conversacional y de propósito general, con plantilla de chat incluida en todos los ficheros.
+- Razonamiento y matemáticas: el autor reporta evaluación generativa de GSM8K con "thinking on", lo que indica soporte de modo de razonamiento extendido.
+- Contexto largo: hasta 128K tokens en los niveles inferiores y 64K en los superiores, frente a los 512K nativos del modelo base.
+- Capacidades multilingües: la model card declara únicamente inglés.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integración con infraestructura de inferencia estándar.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Análisis de documentos extensos: con 128K tokens de contexto en MEDIUM, el modelo puede procesar contratos, informes anuales o expedientes completos en una sola pasada sin troceado, lo que evita perder coherencia entre secciones.
-- Preguntas y respuestas sobre documentación técnica o bases de código: la ventana de 128K permite incluir varios módulos o manuales completos como contexto y formular preguntas cruzadas sobre ellos.
-- Asistencia conversacional autoalojada en inglés: la plantilla de chat incluida y la licencia Apache-2.0 permiten desplegar un asistente multi-turno en infraestructura propia sin depender de API externas.
-- Tutoría y verificación matemática por lotes: el 91,5 % en GSM8K con thinking activado lo hace apto para generating soluciones paso a paso y para validar respuestas de problemas de aritmética y álgebra elemental en pipelines offline.
-- Despliegue con requisitos de soberanía o confidencialidad de datos: al ser pesos abiertos y ejecutarse en local con llama-server, ningún dato de usuario sale de la infraestructura, algo crítico en sectores regulados.
-- Evaluación de cuantizaciones NVFP4 en hardware Blackwell: los siete niveles con backbone idéntico permiten aislar el impacto de la precisión de embeddings y cabeza de salida en la calidad final, un caso de uso metodológico poco habitual en el ecosistema GGUF.
-- Prototipado en estaciones de trabajo de dos GPU de 16 GB: el nivel VERY-LOW (16,95 GiB) más caché KV q4_0 a 32K (1,83 GiB) cabe en 32 GB de VRAM agregada, lo que habilita experimentación con un modelo de 33B en hardware de gama consumer-profesional.
+- Despliegue en hardware consumer Blackwell: el nivel VERY-LOW (16,95 GiB) o LOW (17,46 GiB) permite ejecutar un modelo denso de 33B con offload completo en dos GPU de 16 GB, algo inviable con cuantizaciones de mayor tamaño.
+- Procesamiento de documentos largos en local: con contexto de hasta 128K tokens en los niveles inferiores, se pueden analizar contratos, informes o bases de código extensas sin fragmentación agresiva.
+- Razonamiento matemático asistido: el rendimiento reportado en GSM8K (91,0-92,5% según nivel) lo hace adecuado para tutoría o verificación de cálculos paso a paso con modo thinking.
+- Servicio de chat conversacional autoalojado: la plantilla de chat incluida y la licencia Apache-2.0 permiten montar un endpoint de conversación sin restricciones de uso comercial.
+- Evaluación comparativa de cuantizaciones: la escalera de siete niveles con backbone idéntico permite medir el impacto de la cuantización de cabezas y embeddings de forma aislada, útil para investigación en compresión de modelos.
+- Prototipado en pipelines de llama.cpp: la compatibilidad con backends NVFP4 de llama.cpp facilita integrar el modelo en herramientas existentes sin reescribir la capa de inferencia.
+- Experimentación académica con modelos de 33B: al reducir los requisitos de VRAM, permite a grupos con presupuesto limitado estudiar comportamiento de modelos densos grandes.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados corresponden al nivel MEDIUM, medidos por el autor con su propio `bench_suite` sobre dos GPU Blackwell de 16 GB con caché KV q4_0. MMLU está limitado a 420 ítems resueltos de 1000 (semilla 42, log-probabilidad por letra, thinking desactivado); GSM8K es generativo sobre 200 ítems con thinking activado.
+Datos reportados por el autor de la conversión, medidos con `bench_suite --tier gate --stages Q` en doble GPU Blackwell de 16 GB, con KV cache por defecto del servidor. MMLU-1000 con contexto completo de 8192 tokens por ítem y thinking desactivado; GSM8K-200 generativo con thinking activado. Los ítems de MMLU sin respuesta extraíble se excluyen del denominador.
 
-| Nivel | Configuración | MMLU | GSM8K |
-|---|---|---|---|
-| MEDIUM | Dual GPU 16 GB Blackwell, KV q4_0, thinking off / on | 67,62 % (284/420) | 91,5 % (183/200) |
+| Nivel | MMLU | GSM8K |
+|---|---|---|
+| VERY-LOW | 68,26% (271/397 resueltos) | 91,0% (182/200) |
+| LOW | 67,14% (286/426 resueltos) | 92,5% (185/200) |
+| MEDIUM | 69,34% (303/437 resueltos) | 91,5% (183/200) |
+| MID-HIGH | 69,83% (294/421 resueltos) | 92,5% (185/200) |
+| HIGH | 69,07% (306/443 resueltos) | 92,0% (184/200) |
+| VERY-HIGH | 68,34% (300/439 resueltos) | 92,5% (185/200) |
+| HIGHEST | 72,14% (334/463 resueltos) | 92,5% (185/200) |
 
-Dos ejecuciones idénticas produjeron la misma puntuación y respuestas ítem por ítem idénticas. El resto de niveles no se midió. No se han publicado resultados de benchmarks comparativos con otros modelos en la información disponible, por lo que no es posible situar estas cifras frente a alternativas de la misma categoría.
+IFEval se parseó correctamente en 30/30 en todos los niveles. GPQA no se evaluó por falta de token de Hugging Face. El nivel HIGH no reprodujo sus cifras de octubre (67,57% MMLU / 91,0% GSM8K) en la re-ejecución de noviembre, con una banda de varianza de ±1,5 puntos porcentuales según el autor. No se dispone de comparación con el modelo base sin cuantizar ni con modelos de terceros en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM mínima: 16,95 GiB solo para pesos (nivel VERY-LOW). Ningún nivel cabe en una tarjeta de 16 GB; el suelo del repositorio está por encima de esa cifra.
-- Cálculo de VRAM total: pesos del nivel elegido + caché KV q4_0 (1,83 GiB a 32K, 3,66 GiB a 64K, 7,31 GiB a 128K) + overhead de contexto y grafo de llama.cpp.
-- Una GPU de 24 GB (RTX 3090, RTX 4090): VERY-LOW con 32K de contexto queda en torno a 18,8 GiB más overhead, lo que en principio encaja; HIGHEST (23,40 GiB) no cabe con caché KV. Estimación derivada de los tamaños publicados, no validada por el autor.
-- Una GPU de 48 GB (A6000, L40S) o 80 GB (A100, H100): cualquier nivel con 128K de contexto, aunque el rendimiento NVFP4 requiere hardware Blackwell para aprovechar el formato.
-- Configuración validada por el autor: dos tarjetas Blackwell de 16 GB con offload completo (`-ngl 99`).
-- Despliegue: `llama-server` / llama.cpp con backend que soporte NVFP4 (tipo GGML 40), flags `-ngl 99 --jinja --cache-type-k q4_0 --cache-type-v q4_0`. El autor recomienda verificar los nombres de los flags con `--help` en la build concreta.
-- vLLM, TGI, Ollama y otros motores: no documentados en la información disponible para este formato NVFP4 GGUF.
-- Latencia y throughput: no disponibles. El autor solo reporta que dos ejecuciones del benchmark fueron reproducibles, sin cifras de tokens por segundo.
+- VRAM para pesos: entre 16,95 GiB (VERY-LOW) y 23,40 GiB (HIGHEST). Ningún nivel cabe en una única tarjeta de 16 GB; el mínimo declarado es de 16,94 GiB.
+- VRAM para KV cache: 58,5 KiB por token con q4_0 en las 52 capas de atención completa; 1,83 GiB a 32K, 3,66 GiB a 64K y 7,31 GiB a 128K.
+- GPU recomendadas: el autor valida el offload completo en doble GPU Blackwell de 16 GB. Cualquier backend de llama.cpp con soporte NVFP4 y VRAM suficiente debería funcionar; no se especifican modelos concretos como A100, H100 o RTX 4090.
+- GPU consumer: viable en configuraciones de dos tarjetas de 16 GB con arquitectura Blackwell; no cabe en una sola tarjeta consumer de 16 GB ni en tarjetas de 24 GB sin verificar el soporte NVFP4 del backend.
+- Despliegue: llama.cpp y backends compatibles con NVFP4; la etiqueta `endpoints_compatible` sugiere uso con servidores de inferencia estándar. No se documenta soporte de vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / tamaño | Licencia | Rendimiento | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Nanbeige4.3-33B (base) | 33,1B densos | 512K nativo | Safetensors BF16, 66,3 GB (14 shards) | Apache-2.0 | No disponible en la información | Hugging Face |
-| Nanbeige4.3-33B-NVFP4-GGUF (MEDIUM) | 33,1B densos | 128K en este fichero | GGUF NVFP4A16, 19,54 GB | Apache-2.0 | MMLU 67,62 %; GSM8K 91,5 % | Hugging Face |
-| Nanbeige4.3-33B-NVFP4-GGUF (HIGHEST) | 33,1B densos | 64K en este fichero | GGUF, atención Q8_0, 25,13 GB | Apache-2.0 | No medido | Hugging Face |
-| Otras alternativas densas de ~30-34B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+No se dispone de datos de benchmarks ni especificaciones de modelos comparables en la información proporcionada. Como referencia estructural, el propio modelo base Nanbeige4.3-33B (Apache-2.0, 33,1B denso, 512K de contexto, BF16) sería el punto de comparación natural, pero no se han publicado métricas del mismo en esta ficha. Tampoco se dispone de comparación con otras cuantizaciones GGUF del mismo modelo base ni con modelos densos de tamaño similar.
 
-No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones verificadas de modelos competidores (por ejemplo, otras familias densas de 30-34B) que permitan una comparación cuantitativa rigurosa. Cualquier comparación con ellos sería especulativa.
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Nanbeige4.3-33B-NVFP4-GGUF (esta ficha) | 33,1B | 64K-128K segun nivel | Apache-2.0 | GGUF NVFP4 |
+| Nanbeige4.3-33B (base) | 33,1B | 512K | Apache-2.0 | safetensors BF16 |
+| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Cuantización sin calibración: el proceso es "datafree", de modo que el error de cuantización no se ha minimizado sobre un corpus representativo. El impacto real puede variar según la distribución de entrada.
-- Solo se ha medido el nivel MEDIUM. Los otros seis niveles comparten backbone, pero difieren en embeddings y cabeza de salida; no hay datos que confirmen que su calidad sea equivalente, y el propio autor recomienda validar cada nivel en la carga de trabajo propia.
-- Las puntuaciones de MMLU (420 ítems de 1000) y GSM8K (200 ítems) tienen un tamaño de muestra reducido y están sujetas a varianza; además dependen del runtime, del tipo de caché KV, de la longitud de contexto y de los parámetros de muestreo.
-- Límite de contexto recortado: 128K en cuatro niveles y 64K en tres, frente a los 512K nativos del modelo base. No es un fallo de la conversión, pero invalida el uso de contextos superiores a esas cifras.
-- Sin cifras de tool calling, función de agente ni multilingüismo documentadas; no deben asumirse en producción sin pruebas propias.
-- Idiomas: los metadatos solo declaran inglés. El comportamiento en castellano u otras lenguas no está evaluado.
-- Riesgo de alucinación: inherente a un modelo de 33B sin datos publicados de entrenamiento ni de alineación; no hay información sobre mitigaciones.
-- Sesgos: no hay información disponible sobre la composición del corpus de entrenamiento ni sobre evaluaciones de sesgo.
-- Licencia Apache-2.0: permite uso comercial y modificación, pero conviene conservar los avisos de atribución al modelo base y verificar las condiciones del checkpoint intermedio de safetensors.
-- Requisito de hardware restrictivo: no cabe en una GPU de 16 GB y exige backend con soporte NVFP4, lo que reduce la portabilidad frente a un GGUF K-quant convencional.
-- Repositorio de 144,2 GB con siete ficheros duplicados parcialmente; la descarga completa es costosa si solo se necesita un nivel.
+- La model card declara únicamente inglés; el rendimiento en castellano u otros idiomas no está evaluado.
+- El contexto efectivo se reduce respecto al modelo base: 128K en los niveles inferiores y 64K en HIGH, VERY-HIGH y HIGHEST, frente a los 512K nativos.
+- La cuantización es datafree, sin corpus de calibración, lo que puede producir degradaciones no caracterizadas en dominios alejados de los benchmarks reportados.
+- Los benchmarks son autoinformados por el autor de la conversión, con tamaños de muestra reducidos (MMLU-1000 con denominadores efectivos de 397 a 463 ítems; GSM8K-200) y sin comparación contra el modelo base.
+- El nivel HIGH mostró una varianza de ±1,5 puntos porcentuales entre ejecuciones, lo que indica que las diferencias entre niveles pueden no ser estadísticamente significativas.
+- No se reportan evaluaciones de sesgo, toxicidad ni alucinación.
+- La licencia Apache-2.0 permite uso comercial, pero el autor recomienda validar cada nivel en la carga de trabajo propia antes de usarlo en producción.
+- El soporte NVFP4 depende del backend de llama.cpp y de la arquitectura de GPU; en hardware no Blackwell el funcionamiento no está garantizado.
+- El repositorio tiene 144,2 GB de tamaño total, aunque cada fichero individual pesa entre 18,20 y 25,13 GB.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4-GGUF
-- Checkpoint intermedio NVFP4A16 en safetensors: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4-GGUF
+- Checkpoint de conversión NVFP4A16 en safetensors: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Sitio del autor de la conversión: https://www.esatapedico.com
-- Resultados de búsqueda web: no se encontraron enlaces relevantes al modelo; las entradas devueltas corresponden a medios de prensa sin relación con el repositorio.

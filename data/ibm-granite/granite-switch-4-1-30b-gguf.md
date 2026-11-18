@@ -2,48 +2,48 @@
 
 ## Resumen
 
-Granite-switch-4.1-30b es un modelo de lenguaje de 30.551.851.008 parámetros (aproximadamente 30,55 mil millones) desarrollado por IBM dentro de la familia Granite 4.1. El repositorio que nos ocupa, `ibm-granite/granite-switch-4.1-30b-GGUF`, contiene la conversión del modelo base a formato GGUF con distintas cuantizaciones, lo que permite su ejecución en llama.cpp y en herramientas compatibles como Ollama o servidores basados en llama.cpp. La licencia es Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales significativas.
+Granite-switch-4.1-30b es un modelo de lenguaje de 30.551.851.008 parámetros (aproximadamente 30,6 mil millones) desarrollado por IBM dentro de la familia Granite 4.1. Se distribuye en este repositorio únicamente en formato GGUF, cuantizado para su uso con llama.cpp, a partir del modelo base original `ibm-granite/granite-switch-4.1-30b`. La model card del repositorio remite explícitamente a la del modelo base para la documentación completa, por lo que los detalles de arquitectura, entrenamiento y evaluación no están incluidos en esta ficha cuantizada.
 
-El modelo está etiquetado como "decision-model" y "conversational", lo que sugiere un enfoque hacia tareas de conversación y toma de decisiones dentro de flujos de trabajo, aunque la model card del repositorio GGUF no proporciona detalles adicionales sobre arquitectura, entrenamiento o capacidades específicas más allá de remitir al modelo base. El tamaño del repositorio (366,6 GB) refleja la presencia de múltiples archivos de cuantización de un modelo de 30B, lo que es coherente con el rango de pesos en precisión completa y cuantizaciones intermedias.
+La relevancia de esta publicación radica en que permite ejecutar un modelo de escala 30B en infraestructura de inferencia ligera (llama.cpp, Ollama y derivados), sin depender de GPUs de datacenter, y con licencia Apache 2.0, lo que facilita su adopción tanto en investigación como en productos comerciales. Los tags del repositorio lo etiquetan como `decision-model` y `conversational`, lo que sugiere un enfoque hacia toma de decisiones y diálogo, aunque no se detalla en la información disponible en qué consiste esa capacidad.
 
-La relevancia de esta ficha radica en que la información pública disponible es limitada: la model card del GGUF es un contenedor de conversión y no incluye especificaciones técnicas detalladas, benchmarks ni datos de entrenamiento. Por tanto, muchos campos se marcarán como "no disponible" y se recomienda consultar el modelo base para obtener datos completos. Aun así, se ofrece una ficha completa con lo que se puede inferir de los metadatos y del contexto de la familia Granite.
+El repositorio tiene un tamaño de 533,8 GB, coherente con la presencia de múltiples niveles de cuantización del mismo modelo. Se actualizó por última vez el 12 de noviembre de 2026 y acumula 3984 descargas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 30.551.851.008 (≈30,55 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base de la familia Granite 4.1; la model card de la versión GGUF no la describe) |
+| Parametros totales | 30.551.851.008 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | múltiples cuantizaciones GGUF (el repositorio contiene varios archivos; no se detallan los tipos exactos en la información proporcionada) |
+| Tipos de cuantizacion | múltiples cuantizaciones GGUF (el repositorio indica "various quantizations"; no se enumeran los niveles concretos) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base se distribuye presumiblemente en safetensors, aunque no se confirma en la información proporcionada |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo en la documentación proporcionada. La model card del repositorio GGUF remite explícitamente al modelo base `ibm-granite/granite-switch-4.1-30b` para obtener la ficha completa, y no incluye detalles sobre tipo de transformer, mecanismos de atención, composición del dataset, número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información sobre la arquitectura interna del modelo en la documentación proporcionada. La model card de este repositorio GGUF es un documento de conversión que remite a la del modelo base `ibm-granite/granite-switch-4.1-30b` para todos los detalles técnicos, y esa model card no forma parte de la información disponible. Por tanto, no se puede confirmar si se trata de un transformer denso, un MoE, un modelo híbrido ni qué innovaciones de atención incorpora.
 
-La única información técnica concreta del repositorio es la relativa al proceso de conversión: se ha utilizado la etiqueta de build de llama.cpp `b11798` y la versión de Transformers `5.20.2`. Esto indica que las cuantizaciones se generaron con una versión relativamente reciente de llama.cpp, lo que suele implicar compatibilidad con las últimas mejoras en kernels de cuantización y en el formato GGUF. No se detallan innovaciones técnicas adicionales como decodificación especulativa, atención lineal o arquitecturas híbridas.
+Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO. Lo único verificable es el proceso de conversión: los pesos se generaron con la etiqueta de build de llama.cpp `b11798` y la versión de Transformers `5.20.2`. Cualquier afirmación sobre la arquitectura o el entrenamiento requeriría consultar la model card del modelo base.
 
 ## Capacidades
 
-- Generación de texto y conversación: el tag "conversational" sugiere que el modelo está orientado a diálogo multi-turno, aunque no se detallan capacidades específicas.
-- Toma de decisiones: el tag "decision-model" indica un posible uso en tareas de selección o enrutamiento dentro de pipelines, sin más especificación.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se listan idiomas en los metadatos.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generación de texto conversacional: el tag `conversational` del repositorio indica soporte para diálogo multi-turno, si bien no se detallan las capacidades concretas.
+- Toma de decisiones: el tag `decision-model` sugiere un uso orientado a tareas de decisión, sin que la información disponible especifique el mecanismo.
+- Inferencia local mediante llama.cpp: al estar en formato GGUF, es ejecutable en CPU y GPU con las herramientas del ecosistema llama.cpp.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de infraestructura de endpoints compatible.
+- Capacidades de código, matemáticas, visión, audio, tool calling o agentes: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; el repositorio no declara lista de idiomas.
 
 ## Casos de uso
 
-- Conversación multi-turno en aplicaciones de atención al cliente: el modelo puede gestionar diálogos conversacionales gracias a su etiqueta "conversational", aunque se desconoce la longitud de contexto exacta; sería necesario validar el comportamiento en producción con el modelo base.
-- Enrutamiento y toma de decisiones en pipelines: el tag "decision-model" sugiere su uso para clasificar o seleccionar acciones dentro de flujos automatizados, por ejemplo, decidir qué herramienta invocar en un sistema de agentes.
-- Despliegue en entornos con llama.cpp: al estar disponible en GGUF, puede ejecutarse en infraestructura sin GPUs de altas prestaciones mediante cuantizaciones agresivas, lo que facilita prototipos y pruebas locales.
-- Generación de texto asistida en aplicaciones de escritorio: integrable en herramientas que usen llama.cpp u Ollama, permitiendo resúmenes, redacción o respuestas contextuales sin depender de APIs externas.
-- Experimentación académica con modelos de 30B: el formato GGUF y la licencia Apache 2.0 permiten reproducir experimentos y comparar cuantizaciones sin restricciones de uso.
-- Evaluación de cuantizaciones: el repositorio incluye varias cuantizaciones del mismo modelo, lo que permite estudiar el impacto de la compresión en calidad y latencia para un modelo de 30B.
+- Despliegue en estaciones de trabajo sin GPU de datacenter: gracias a las cuantizaciones GGUF, el modelo puede ejecutarse con llama.cpp en equipos con GPU de consumo o incluso en CPU, lo que permite prototipar aplicaciones de 30B sin infraestructura dedicada.
+- Asistentes conversacionales autoalojados: el tag `conversational` y la licencia Apache 2.0 lo hacen apto para integrar un chatbot en productos propios sin obligaciones de atribución adicionales ni restricciones de uso comercial.
+- Sistemas de apoyo a la decisión: el tag `decision-model` apunta a escenarios donde el modelo ayuda a evaluar opciones o clasificar cursos de acción, aunque la documentación disponible no detalla el formato de uso recomendado.
+- Servicio de inferencia compatible con endpoints: al estar marcado como `endpoints_compatible`, puede desplegarse detrás de una API compatible con el ecosistema de endpoints para servir múltiples clientes.
+- Experimentación e investigación reproducible: al ser Apache 2.0 y estar disponible en GGUF, un equipo de investigación puede reproducir experimentos en hardware modesto y comparar cuantizaciones sin depender de pesos propietarios.
+- Integración en pipelines de CI o herramientas de desarrollo: la ejecución local vía llama.cpp permite incorporar el modelo en flujos automatizados de revisión o generación de texto sin enviar datos a servicios externos, lo que ayuda con requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
@@ -51,11 +51,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de ~30,55 B, en FP16 se necesitarían aproximadamente 61 GB de VRAM; en cuantizaciones de 8 bits, alrededor de 30-32 GB; en 4 bits, alrededor de 16-18 GB. Estas cifras son estimaciones generales y no datos confirmados para este modelo.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría esperar que requiera GPUs como A100 80 GB, H100 o múltiples RTX 4090 para precisiones altas; las cuantizaciones bajas podrían caber en una RTX 4090 (24 GB) o incluso en GPUs de 16 GB, pero no se confirma.
-- ¿Cabe en consumer GPU?: probablemente en cuantizaciones de 4 bits en GPUs de 24 GB, pero no hay confirmación oficial.
-- Opciones de despliegue: llama.cpp (formato nativo), y por extensión servidores compatibles como Ollama o llama.cpp server. No se mencionan vLLM ni TGI para este repositorio GGUF.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: no disponible de forma exacta, ya que el repositorio no enumera los niveles de cuantización. Como referencia de orden de magnitud para un modelo de 30,6B parámetros: en cuantización de 4 bits se necesitan aproximadamente 17-19 GB de VRAM solo para los pesos, más overhead de contexto; en 8 bits, en torno a 32-34 GB; en FP16, unos 61 GB.
+- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, un modelo de 30B en 4 bits encaja en GPUs de consumo con 24 GB (por ejemplo, RTX 3090 o RTX 4090), mientras que las cuantizaciones de 8 bits o superiores requieren A100 40 GB, A6000 48 GB o H100.
+- Cabe en GPU de consumo: previsiblemente sí en cuantizaciones de 4 bits con 24 GB de VRAM, aunque el repositorio no confirma los niveles incluidos ni los requisitos oficiales.
+- Opciones de despliegue: llama.cpp (build `b11798` como referencia), y por extensión las herramientas que lo integran, como Ollama o servidores compatibles con la API de llama.cpp. No se confirma soporte de vLLM o TGI para este repositorio GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
@@ -63,16 +63,17 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Limitaciones y advertencias
 
-- La model card del repositorio GGUF es un contenedor de conversión y no documenta sesgos, datos de entrenamiento ni evaluación de riesgos; se desconoce el comportamiento del modelo en dominios sensibles.
-- Riesgo de alucinación: no evaluado en la información disponible; como todo modelo generativo, es esperable, pero no hay datos concretos.
-- Limitaciones de contexto e idioma: se desconocen la longitud de contexto y los idiomas soportados, lo que impide garantizar un comportamiento adecuado en español u otros idiomas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, pero se debe conservar el aviso de licencia y no se ofrece garantía alguna.
-- Para producción, es imprescindible consultar la ficha del modelo base y realizar evaluaciones propias, ya que este repositorio solo aporta los artefactos GGUF.
-- El tamaño del repositorio (366,6 GB) implica un coste de almacenamiento y descarga considerable; conviene seleccionar únicamente la cuantización necesaria.
+- La model card del repositorio GGUF no documenta arquitectura, contexto, idiomas ni evaluación; toda decisión de producción debe basarse en la model card del modelo base, que no está incluida en la información disponible.
+- Riesgo de alucinación: no cuantificado en la documentación disponible; como en cualquier modelo generativo, debe asumirse y mitigarse con verificación externa.
+- Sesgos: no documentados en la información proporcionada.
+- Idiomas: la lista de idiomas soportados no está declarada, por lo que no se puede garantizar un rendimiento adecuado fuera del inglés.
+- Cuantización: las versiones GGUF introducen pérdida de precisión respecto al modelo base; el repositorio no publica evaluaciones comparativas entre cuantizaciones.
+- Licencia: Apache 2.0 permite uso comercial y modificación, pero conviene revisar la model card del modelo base por si añade términos adicionales (por ejemplo, políticas de uso aceptable) que no aparecen en este repositorio.
+- Tamaño del repositorio: 533,8 GB, lo que implica un coste de almacenamiento y descarga considerable; conviene descargar solo el archivo de cuantización necesario.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/ibm-granite/granite-switch-4.1-30b-GGUF
+- Repositorio GGUF: https://huggingface.co/ibm-granite/granite-switch-4.1-30b-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-switch-4.1-30b
-- llama.cpp (herramienta de inferencia): https://github.com/ggml-org/llama.cpp
-- No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.
+- llama.cpp: no disponible en la información proporcionada (el repositorio cita el build `b11798` sin enlace)
+- Papers, blogs, demos y repositorios adicionales: no disponibles en la información proporcionada

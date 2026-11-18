@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 85,
-  "downloads_30d": 10869,
+  "downloads_30d": 11069,
   "trending_score": 11,
   "parameters": 2313207132,
   "parameters_human": "2.31B",
@@ -65,31 +65,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "IBM",
-      "url": "https://www.ibm.com/",
-      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …"
-    },
-    {
-      "title": "IBM - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/IBM",
-      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
-    },
-    {
-      "title": "IBM",
-      "url": "https://www.ibm.com/fr-fr",
-      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
-    },
-    {
-      "title": "IBM — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/IBM",
-      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
-    },
-    {
-      "title": "IBM",
-      "url": "https://wwwpoc.ibm.com/us-en/",
-      "snippet": ""
-    }
-  ]
+  "sources": []
 }

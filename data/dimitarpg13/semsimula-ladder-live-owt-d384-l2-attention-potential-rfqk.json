@@ -5,7 +5,7 @@
   "author": "dimitarpg13",
   "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk",
   "created_at": "2026-10-06T11:25:46.000Z",
-  "updated_at": "2026-11-14T21:50:45.000Z",
+  "updated_at": "2026-11-18T01:19:06.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 400,
+  "downloads_30d": 374,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

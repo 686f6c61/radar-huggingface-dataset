@@ -9,14 +9,14 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
-  "library": "peft",
+  "library": "strands-decider",
   "languages": [
     "en"
   ],
   "tags": [
+    "strands-decider",
     "cx",
     "decision-model",
-    "strands-decider",
     "unpublished",
     "card-only",
     "text-classification",

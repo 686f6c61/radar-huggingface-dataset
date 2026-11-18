@@ -2,112 +2,98 @@
 
 ## Resumen
 
-XGEN-JING es un modelo de experiencia interactiva egocéntrica desarrollado por XGEN Labs (XGEN Team) que genera vídeo y audio en primera persona a partir de acciones, imágenes de referencia e historial de observación. Está construido sobre MiniMax-H3 (concretamente sobre la variante Ref2VA) y sobre el LoRA de destilación FlashGen de cuatro pasos, y se distribuye en formato Diffusers con pesos safetensors. El problema que resuelve es la simulación navegable de entornos: en lugar de generar vídeo pasivo desde un prompt, el modelo acepta control de cámara por teclado (w/s/a/d), instrucciones de interacción con objetos y diálogos de personajes, y produce vídeo y audio de forma conjunta.
+XGEN-JING es un modelo de generación de vídeo y audio en primera persona (egocéntrico) desarrollado por XGEN Labs, construido como un fine-tuning de MiniMax-H3 (concretamente sobre la variante Ref2VA y el LoRA FlashGen de cuatro pasos). El modelo recibe como entrada acciones de control, imágenes de referencia y un historial de observaciones, y genera secuencias de vídeo y audio conjuntas que simulan la experiencia de un agente que navega, interactúa con objetos y conversa en un entorno. La versión publicada, denominada JING-Flash-v1, es un modelo bidireccional de cuatro pasos de inferencia.
 
-La versión publicada, JING-Flash-v1, es un modelo bidireccional de cuatro pasos de inferencia. La model card declara explícitamente que el modelo causal y el informe técnico todavía no se han publicado, por lo que esta entrega debe considerarse una base funcional para experimentación más que un sistema de tiempo real en streaming. El repositorio ocupa 66,9 GB y arrastra dependencias de los pesos de MiniMax-H3 (codificador de texto, tokenizador, procesador, VAEs de vídeo y audio y schedulers) además del transformer propio.
+La relevancia del modelo reside en su enfoque de "modelo de mundo interactivo": no se limita a generar vídeo a partir de texto, sino que incorpora control de cámara por teclado (movimiento adelante/atrás, giro, inclinación), condicionamiento por imágenes de referencia de personajes, objetos y escenas, y generación conjunta de audio y vídeo. Esto lo sitúa en la intersección de la generación de vídeo, los modelos de mundo y los agentes encarnados.
 
-Es relevante ahora porque combina tres piezas poco habituales en un mismo pipeline open weight: control de cámara explícito, condicionamiento por imágenes de referencia (hasta cinco, direccionables como `<Picture 1>`…`<Picture 5>`) y generación conjunta de audio y vídeo. La adopción es todavía muy temprana: 2 descargas y 37 likes en el momento de redactar esta ficha, con licencia de comunidad heredada de MiniMax-H3.
+El repositorio ocupa 66,9 GB y se distribuye en formato safetensors bajo la licencia comunitaria de MiniMax-H3. El modelo solo soporta inglés y chino, y la inferencia de referencia se ha validado en seis GPU H100.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Diffusion Transformer (DiT) con paralelismo de secuencia; codificador de texto y VAEs de vídeo y audio desacoplados |
+| Arquitectura | DiT (Diffusion Transformer) bidireccional, derivada de MiniMax-H3 Ref2VA; pipeline image-text-to-video con VAE de vídeo y audio |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se publican pesos cuantizados en el repositorio) |
-| Idiomas soportados | inglés (en) y chino (zh) |
-| Licencia | minimax-h3-community-license-agreement (etiquetada como `license: other`) |
-| Formato de pesos | safetensors en formato Diffusers (carpeta `jing_flash_v1` para el transformer) |
-| Modelo base | MiniMaxAI/MiniMax-H3 (refinamiento sobre MiniMax-H3 Ref2VA) y LoRA FlashGen |
-| Pipeline | image-text-to-video (con salida de audio conjunta) |
-| Pasos de inferencia | 4 pasos (bidireccional, JING-Flash-v1) |
-| Tamano del repositorio | 66,9 GB |
-| Fecha de publicacion | 16 de septiembre de 2026 (actualizado el 18 de septiembre de 2026) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, zh |
+| Licencia | minimax-h3-community-license-agreement (license: other) |
+| Formato de pesos | safetensors (diffusion-single-file, librería diffusers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un DiT (Diffusion Transformer) que se ejecuta con paralelismo de secuencia sobre cuatro GPU, acompañado de un codificador de texto en una GPU separada y de los VAEs de vídeo y audio en otra. La inferencia completa validada por el equipo ocupa por tanto seis GPU H100. El backend de atención por defecto es FlashAttention-4, y el stack declarado incluye Torch 2.13.0+cu130, torchvision 0.28.0+cu130, Triton 3.7.1, FA4 4.0.0b26 y SGLang kernel 0.4.7+cu130, con un runtime SGLang fijado a un commit concreto. El modelo de difusión parte de MiniMax-H3 Ref2VA y se acelera con el LoRA de destilación FlashGen, que reduce la generación a cuatro pasos.
+XGEN-JING se construye sobre MiniMax-H3 Ref2VA, un modelo de difusión con arquitectura Transformer (DiT) que genera vídeo y audio de forma conjunta. La variante publicada, JING-Flash-v1, incorpora el LoRA FlashGen de cuatro pasos, lo que reduce la inferencia a cuatro pasos de difusión en modo bidireccional. El pipeline completo incluye un codificador de texto, tokenizador y procesador, VAEs separados para vídeo y audio, y planificadores (schedulers) heredados del formato Diffusers de MiniMax-H3. La inferencia utiliza FlashAttention-4 como backend por defecto y soporta paralelismo de secuencia sobre cuatro GPU para el DiT.
 
-El condicionamiento es multimodal y secuencial: imágenes de referencia ordenadas (personaje, objeto, escena), una secuencia de prompts con repetición y una entrada de control por slice. El número de fotogramas se deriva del propio guion mediante la fórmula `num_frames = 17 * sum(repeat) + 5`, y cada slice de control admite combinaciones de teclas (`"w"`, `"w,a"`, `""`). No se han publicado en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. Tampoco se detalla el mecanismo interno de fusión audio-vídeo más allá de que ambos se generan de forma conjunta. El modelo causal y el informe técnico están anunciados como pendientes.
+El condicionamiento combina imágenes de referencia (personajes, objetos y escenas) con una secuencia de prompts y controles de teclado. Cada fragmento de prompt puede repetirse varias veces con una entrada de control por cada repetición, lo que permite especificar trayectorias de cámara y acciones a lo largo del tiempo. No se dispone de información detallada sobre el volumen de datos de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. El informe técnico (arXiv:2610.19726) cubre la simulación generativa de mundo con DAO y JING, y el equipo ha anunciado una versión causal del modelo como trabajo futuro.
 
 ## Capacidades
 
-- Generación de vídeo en primera persona (egocéntrico) a partir de acciones e historial de observación.
-- Generación conjunta de vídeo y audio en una misma pasada de inferencia.
-- Control de cámara mediante teclado: `w` (avanzar), `s` (retroceder), `a` (izquierda), `d` (derecha), con posibilidad de combinar dos teclas en un mismo slice.
+- Generación de vídeo en primera persona (egocéntrico) a partir de texto, imágenes de referencia e historial de observaciones.
+- Generación conjunta de audio y vídeo en una sola pasada.
+- Control de cámara por teclado: `w/s/a/d` para movimiento adelante/atrás/izquierda/derecha, `i/k` para mirar arriba/abajo y `j/l` para girar izquierda/derecha, con posibilidad de combinar teclas.
+- Condicionamiento por imágenes de referencia de personajes, objetos y escenas para componer una experiencia y explorar distintas acciones desde el mismo punto de partida.
 - Interacción con objetos y diálogo con personajes guiados por texto.
-- Condicionamiento por imágenes de referencia de personaje, objeto y escena, hasta cinco imágenes, direccionables como `<Picture 1>` a `<Picture 5>`.
-- Composición de experiencias: desde un mismo punto de partida se pueden explorar acciones distintas combinando referencias y prompts.
-- Generación de casos de inferencia validados a partir de historias e imágenes mediante las "Prompt skills" publicadas en el repositorio.
-- Soporte de dos idiomas en los prompts: inglés y chino.
-- No se documenta soporte de tool calling, function calling ni orquestación de agentes multi-paso; el modelo es generativo audiovisual, no un LLM de propósito general.
+- Soporte de prompts estructurados en JSON con repetición y control por segmento.
+- Habilidades de prompt ("Prompt skills") para generar casos de inferencia validados a partir de historias e imágenes de referencia.
+- Capacidades multilingües limitadas a inglés y chino.
 
 ## Casos de uso
 
-- Previsualización de escenas en producción audiovisual: el equipo de guion puede componer un plano en primera persona con imágenes de referencia del personaje y la localización, y validar la continuidad antes de rodar.
-- Prototipado de videojuegos en primera persona: con control de cámara por teclado y audio sincronizado, sirve para generar material de bloqueo y explorar variantes de una misma zona sin construir arte final.
-- Simulación de entrenamiento para robótica o conducción: la vista egocéntrica con acciones discretas de desplazamiento permite sintetizar secuencias de observación con audio ambiental para probar políticas de navegación.
-- Creación de experiencias interactivas narrativas: combinando referencias de personaje y prompts de diálogo, se generan conversaciones con locución y vídeo coherentes para demos de ficción interactiva.
-- Generación de contenido para redes y campañas: a partir de una imagen de producto y una secuencia de prompts con movimiento, se produce un clip audiovisual con audio diegético.
-- Investigación en modelos del mundo: la formulación acción-observación permite estudiar modelado predictivo de entornos y evaluar la coherencia temporal de la generación condicionada.
-- Herramientas de accesibilidad y descripción de entornos: el mismo pipeline condicionado por referencias puede generar recorridos narrados y sonorizados de un espacio a partir de fotografías.
-- Iteración rápida en preproducción de doblaje y sonido: al generarse audio y vídeo juntos, se pueden obtener versiones provisionales para decidir tono y ambiente.
+- Prototipado de videojuegos en primera persona: el modelo permite explorar entornos imaginados mediante control de cámara por teclado, generando vídeo y audio coherentes con las acciones del jugador, lo que resulta útil para previsualizar niveles y mecánicas antes de implementarlas.
+- Simulación de entrenamiento para robótica y agentes encarnados: a partir de un historial de observaciones y acciones, se pueden generar trayectorias visuales sintéticas de navegación e interacción con objetos para aumentar datos de entrenamiento de políticas.
+- Previsualización cinematográfica en primera persona: directores y artistas pueden componer escenas egocéntricas combinando imágenes de referencia de personajes y escenarios, y explorar distintas trayectorias de cámara desde el mismo punto de partida.
+- Generación de contenido para experiencias inmersivas: creación de clips de vídeo con audio sincronizado para instalaciones de realidad virtual o vídeo 360, donde la perspectiva en primera persona es el formato natural.
+- Diseño de experiencias interactivas narrativas: el modelo permite guiar conversaciones con personajes mediante texto y generar el audio y el vídeo correspondientes, útil para prototipar diálogos ramificados en experiencias interactivas.
+- Investigación en modelos de mundo: sirve como banco de pruebas para estudiar la coherencia temporal, la consistencia de escena y la alineación audio-vídeo en modelos generativos de mundo, gracias a su condicionamiento por historial y acciones.
+- Creación de demos y material de marketing: generación rápida de clips en primera persona con audio para presentar conceptos de producto o narrativas, partiendo de imágenes de referencia y prompts estructurados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas cuantitativas (FVD, CLIP-score, IS, MOS de audio ni comparativas con otros modelos), y el informe técnico figura como pendiente. Como única referencia de rendimiento, se declara inferencia en cuatro pasos y una configuración validada de seis GPU H100.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Configuración validada por el autor: seis GPU H100, distribuidas en una GPU para el codificador de texto, una para los VAEs de vídeo y audio, y cuatro para el DiT con paralelismo de secuencia.
-- VRAM estimada para inferencia: no disponible de forma oficial; el repositorio pesa 66,9 GB y el demo funcional consume seis GPU de clase 80 GB.
-- GPU recomendadas: H100 (configuración de referencia). No se documentan alternativas como A100, RTX 4090 o similares.
-- Compatibilidad con GPU de consumo: no acreditada en la información disponible; el despliegue publicado no cabe en una GPU consumer.
-- Opciones de despliegue: Diffusers (revisión fijada en `requirements.txt`), runtime SGLang en el commit `95140a7b0c9fc2f87a2a6cf6f6f0df8640a73174`, FlashAttention-4 como backend por defecto. No se publican soportes de llama.cpp, Ollama ni TGI, que además no aplican a un modelo de difusión de vídeo.
-- Entorno de software: Python 3.12, Torch 2.13.0+cu130, torchvision 0.28.0+cu130, Triton 3.7.1, FA4 4.0.0b26, SGLang kernel 0.4.7+cu130.
-- Latencia y throughput: no disponibles. La reducción a cuatro pasos es la única optimización de velocidad declarada.
-- Los pesos se descargan automáticamente en la primera ejecución y se reutilizan desde la caché de Hugging Face; se puede fijar la ubicación con `HF_HOME` o pasar rutas manuales mediante `model.h3` y `model.transformer`.
+- La demo de referencia se ha validado en seis GPU H100: una para el codificador de texto, una para los VAEs de vídeo y audio, y cuatro para el DiT con paralelismo de secuencia.
+- El repositorio ocupa 66,9 GB, por lo que se requiere almacenamiento considerable además de la caché de Hugging Face (configurable con `HF_HOME`).
+- Entorno validado: Python 3.12, Torch 2.13.0+cu130, torchvision 0.28.0+cu130, Triton 3.7.1, FlashAttention-4 4.0.0b26 y SGLang kernel 0.4.7+cu130 (índice de wheels CUDA 13).
+- Runtime SGLang en el commit `95140a7b0c9fc2f87a2a6cf6f6f0df8640a73174`, con la revisión de Diffusers fijada en `requirements.txt`.
+- No se dispone de información sobre VRAM estimada por cuantización, latencia ni throughput; no hay datos publicados sobre ejecución en GPU de consumo.
+- Opciones de despliegue documentadas: script `demo_bidirection.py` y `demo.sh` del repositorio, con soporte de SGLang para el runtime de difusión.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Entradas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XGEN-JING (JING-Flash-v1) | no disponible | no disponible | Texto, imágenes de referencia, control de acción, audio | minimax-h3-community-license-agreement | Pesos abiertos en Hugging Face (66,9 GB), 4 pasos |
-| MiniMax-H3 Ref2VA (modelo base) | no disponible | no disponible | Referencia a vídeo y audio | licencia de comunidad de MiniMax-H3 | Pesos e implementación publicados por MiniMax |
-| FlashGen (LoRA de destilación) | no disponible | no disponible | LoRA sobre MiniMax-H3 | no disponible | Adaptador de 4 pasos publicado en Hugging Face |
+| XGEN-JING (JING-Flash-v1) | no disponible | no disponible | Vídeo + audio egocéntrico, control de cámara, condicionamiento por referencia | minimax-h3-community-license-agreement | Pesos en Hugging Face, código en GitHub |
+| MiniMax-H3 (Ref2VA) | no disponible | no disponible | Vídeo + audio (modelo base) | licencia MiniMax-H3 | Pesos en Hugging Face |
+| FlashGen (LoRA sobre MiniMax-H3) | no disponible | no disponible | Aceleración de inferencia en 4 pasos | no disponible | Pesos en Hugging Face |
 
-No se dispone de datos de benchmarks ni de especificaciones de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría. La comparación con otros modelos de generación de vídeo egocéntrico o de modelos del mundo no puede hacerse con la información proporcionada: no disponible.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo causal no publicado: la entrega actual es bidireccional y de cuatro pasos, por lo que no está pensada para streaming ni para interacción en tiempo real con latencia baja.
-- Ausencia total de benchmarks: no hay métricas publicadas de calidad de vídeo, sincronización audio-vídeo, coherencia temporal o fidelidad al control de cámara.
-- Control de cámara limitado: solo cuatro grados de libertad discretos (avance, retroceso, izquierda, derecha) mediante teclas; no se documenta control de rotación, altura ni velocidad.
-- Idiomas: únicamente inglés y chino en los prompts; no se declara soporte de castellano ni de otras lenguas.
-- Dependencia de terceros: requiere los pesos y componentes de MiniMax-H3 y el LoRA FlashGen, con revisiones de Diffusers y SGLang fijadas, lo que complica la reproducibilidad y el mantenimiento a largo plazo.
-- Licencia restrictiva: la licencia minimax-h3-community-license-agreement está etiquetada como `license: other`. Las condiciones exactas de uso comercial no se detallan en la información disponible y deben verificarse en el fichero LICENSE antes de cualquier despliegue en producción.
-- Riesgo de alucinación visual: como modelo generativo de difusión, puede producir geometrías inconsistentes, objetos que aparecen o desaparecen y audio no diegético; no hay evaluación publicada de estos fallos.
-- Sin cuantizaciones oficiales: al no publicarse pesos cuantizados, el coste de inferencia queda limitado al hardware de clase H100 descrito.
-- Madurez temprana: 2 descargas y 37 likes, sin informe técnico, sin arXiv y con el modelo causal pendiente; el soporte de la comunidad y la validación independiente son mínimos.
-- Límite de cinco imágenes de referencia por caso, con direccionamiento posicional explícito, lo que restringe la composición de escenas complejas.
-- El número de fotogramas está acoplado a la estructura del prompt (`17 * sum(repeat) + 5`), de modo que cambios en la duración obligan a reestructurar el caso de entrada.
+- La versión publicada es bidireccional; el modelo causal, necesario para aplicaciones interactivas en tiempo real, está anunciado pero no disponible.
+- Solo soporta inglés y chino; no hay soporte documentado de otros idiomas.
+- La licencia es la "minimax-h3-community-license-agreement", que impone restricciones adicionales al uso comercial; es necesario revisar el texto de la licencia antes de cualquier despliegue en producción.
+- El modelo base es MiniMax-H3, por lo que hereda los sesgos y limitaciones de sus datos de entrenamiento, no documentados en la información disponible.
+- Riesgo de alucinación visual y de inconsistencia temporal en secuencias largas, habitual en modelos de difusión de vídeo; no se han publicado métricas de coherencia.
+- Los requisitos de hardware son elevados (seis H100 en la configuración validada), lo que limita su uso a entornos con infraestructura especializada.
+- No se dispone de información sobre cuantizaciones, latencia ni throughput, lo que dificulta planificar despliegues con requisitos de tiempo real.
+- El tamaño del repositorio (66,9 GB) y la dependencia de versiones específicas de CUDA, Torch y SGLang añaden complejidad operativa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/XGENlabs/XGEN-JING
-- Carpeta del transformer JING-Flash-v1: https://huggingface.co/XGENlabs/XGEN-JING/tree/main/jing_flash_v1
 - Repositorio GitHub: https://github.com/XGEN-Labs/XGEN-JING
-- Configuración base: https://github.com/XGEN-Labs/XGEN-JING/blob/main/configs/base.yaml
-- Prompt skills: https://github.com/XGEN-Labs/XGEN-JING/blob/main/prompt_skills/SKILL.md
-- Ejemplo de caso (bakery): https://github.com/XGEN-Labs/XGEN-JING/blob/main/examples/bakery_greeting.json
+- Informe técnico (arXiv): https://arxiv.org/abs/2610.19726
 - Galería: https://xgenlabs.ai/gallery.html
-- Blog de investigación: https://xgenlabs.ai/research.html
-- Vídeo de demostración: https://huggingface.co/XGENlabs/XGEN-JING/resolve/main/assets/xgen-jing-demo.mp4
+- Blog de XGEN Labs: https://xgenlabs.ai/research.html
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Repositorio de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
+- Repositorio MiniMax-H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - LoRA FlashGen: https://huggingface.co/Beidouqixing/minimax-h3-4step-lora-flashgen
-- Runtime SGLang (commit fijado): https://github.com/sgl-project/sglang/tree/95140a7b0c9fc2f87a2a6cf6f6f0df8640a73174
-- Índice de wheels CUDA 13 para SGLang: https://sgl-project.github.io/whl/cu130/sglang-kernel/
-- Informe técnico: anunciado como "coming soon", sin enlace disponible.
+- Habilidades de prompt: https://github.com/XGEN-Labs/XGEN-JING/blob/main/prompt_skills/SKILL.md
+- Ejemplo de caso (bakery): https://github.com/XGEN-Labs/XGEN-JING/blob/main/examples/bakery_greeting.json
+- Configuración base: https://github.com/XGEN-Labs/XGEN-JING/blob/main/configs/base.yaml
+- SGLang (commit validado): https://github.com/sgl-project/sglang/tree/95140a7b0c9fc2f87a2a6cf6f6f0df8640a73174
+- Índice de wheels CUDA 13 de SGLang: https://sgl-project.github.io/whl/cu130/sglang-kernel/

@@ -39,8 +39,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 4009,
-  "downloads_30d": 1407985,
+  "likes": 4162,
+  "downloads_30d": 1250785,
   "trending_score": 14.92,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
@@ -67,31 +67,5 @@
       "value": 59.73
     }
   ],
-  "sources": [
-    {
-      "title": "Google Docs",
-      "url": "https://docs.google.com/",
-      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
-    },
-    {
-      "title": "Google Docs: Sign-in",
-      "url": "https://docs.google.com/document/",
-      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
-    },
-    {
-      "title": "Google Docs: Online Document & PDF Editor | Google Workspace",
-      "url": "https://workspace.google.com/products/docs/",
-      "snippet": "Create online documents and edit PDFs with Google Docs. Collaborate in real-time from any device and use AI to generate drafts, …"
-    },
-    {
-      "title": "Sign in - Google Accounts",
-      "url": "https://app.docs.google.com/",
-      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
-    },
-    {
-      "title": "Sign in - Google Accounts",
-      "url": "https://docs.google.com/?hl=en",
-      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
-    }
-  ]
+  "sources": []
 }

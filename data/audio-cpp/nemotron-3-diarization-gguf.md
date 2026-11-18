@@ -2,109 +2,115 @@
 
 ## Resumen
 
-Nemotron-3-Diarization-GGUF es una conversión de formato de los pesos originales de nvidia/Nemotron-3-Diarization, publicada por audio-cpp para permitir la inferencia nativa con el motor audio.cpp. Su tarea no es la transcripción de voz a texto, sino la diarización de hablantes: identificar quién habla y en qué momento, devolviendo turnos de habla con marcas temporales. El paquete contiene un único archivo GGUF en precisión BF16 con 362 tensores, sin variantes cuantizadas, y con la configuración del frontend mel embebida.
+Nemotron-3-Diarization-GGUF es la conversión a formato GGUF del modelo NVIDIA Nemotron-3-Diarization, un sistema de diarización de hablantes (identificación de "quién habla y cuándo") basado en una arquitectura Streaming Sortformer. El modelo original lo desarrolla NVIDIA, mientras que esta conversión la mantiene el proyecto audio-cpp para permitir inferencia nativa en C++ mediante el motor audio.cpp, con soporte para los backends CUDA, Vulkan y Metal.
 
-El modelo base procede de NVIDIA y está fijado a la revisión `723e19c601d99b7e58fba6a14e32153e0afe48d9`. La conversión se realizó desde el checkpoint original en formato `.nemo`, no desde otro GGUF, y el repositorio ocupa 0,2 GB con 99.263.443 parámetros totales. Según las etiquetas del repositorio, la arquitectura pertenece a la familia streaming Sortformer, lo que permite operar en modo offline, en streaming y en procesamiento por lotes en servidor, con soporte de hasta ocho hablantes.
+El modelo resuelve el problema de segmentar audio en turnos de habla atribuidos a hablantes concretos (hasta ocho simultáneos), devolviendo turnos y marcas temporales, no transcripción de palabras. Admite tres modos de operación: offline, streaming y procesamiento por lotes en servidor, e incluye detección de actividad de voz (VAD) como parte del pipeline. Su tamaño es notablemente reducido: 99.263.443 parámetros totales, lo que lo hace viable en hardware muy modesto.
 
-Su relevancia actual es doble: por un lado, ofrece diarización en un tamaño muy reducido (menos de 100 millones de parámetros), apta para hardware modesto; por otro, amplía el ecosistema de formato GGUF a modelos de audio que no siguen la ruta de llama.cpp, sino la de audio.cpp. Es, por tanto, una pieza de infraestructura para pipelines de transcripción en los que hace falta separar hablantes antes o después del reconocimiento automático de voz.
+La relevancia actual radica en que ofrece una alternativa de inferencia en C++ con un consumo de VRAM muy inferior al de la implementación oficial en Python con PyTorch (del orden de 1 GB frente a casi 2,8 GB en pruebas por lotes), manteniendo paridad funcional con NeMo. El paquete incluye los pesos, la configuración del frontend y la especificación del modelo embebidos en un único fichero, sin dependencias de ficheros auxiliares.
 
 ## Especificaciones técnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Streaming Sortformer (según etiquetas del repositorio); modelo de diarización de hablantes |
-| Parámetros totales | 99.263.443 (unos 99,3 M) |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Solo BF16; no se incluyen variantes cuantizadas |
-| Idiomas soportados | No disponible |
-| Licencia | OpenMDW-1.1 |
-| Formato de pesos | GGUF (un único archivo `nemotron-3-diarization-bf16.gguf`, BF16, 362 tensores) |
-| Tarea | Diarización de hablantes (pipeline declarado: voice-activity-detection) |
-| Número máximo de hablantes | Hasta 8 |
-| Salida | Turnos de hablante y marcas temporales (no palabras transcritas) |
-| Modos de ejecución | Offline, streaming y por lotes en servidor |
-| Frontend | Configuración embebida; filtro mel almacenado en F32 |
-| Modelo base | nvidia/Nemotron-3-Diarization, revisión `723e19c601d99b7e58fba6a14e32153e0afe48d9` |
-| Tamaño del repositorio | 0,2 GB |
+| Arquitectura | Streaming Sortformer (diarización de hablantes); familia Nemotron 3 |
+| Parametros totales | 99.263.443 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (procesa audio por chunks; parámetros de streaming: chunk_len=340, chunk_right_context=40, fifo_len=40) |
+| Tipos de cuantizacion | BF16 y Q8_0 (mixta: 130 tensores cuantizados, 229 en BF16, 2 en F16, filtro mel en F32) |
+| Idiomas soportados | No disponible (modelo de audio independiente del idioma para diarización) |
+| Licencia | openmdw-1.1 |
+| Formato de pesos | GGUF (362 tensores por fichero, con frontend y spec embebidos) |
+
+Ficheros publicados:
+
+| Fichero | Precisión | Tamano |
+|---|---|---:|
+| `nemotron-3-diarization-bf16.gguf` | BF16 | 189,51 MiB |
+| `nemotron-3-diarization-q8_0.gguf` | Q8_0 / mixta | 101,73 MiB |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de las etiquetas del repositorio, que la sitúan en la familia streaming Sortformer, orientada a diarización de hablantes con capacidad de streaming. El paquete GGUF contiene 362 tensores con los pesos en precisión BF16 original y el filtro mel del frontend en F32, lo que indica que la conversión preserva la precisión del checkpoint y no aplica ninguna transformación de cuantización. La configuración del frontend y la especificación del modelo van embebidas en el propio archivo, de modo que no se requieren ficheros auxiliares de pesos o configuración.
+El modelo se basa en Streaming Sortformer, una arquitectura orientada a diarización en flujo continuo que procesa el audio en fragmentos (chunks) con contexto a la derecha y una cola FIFO, y que mantiene una caché de hablantes (spkcache) actualizada periódicamente. Los parámetros de streaming documentados son `chunk_len=340`, `chunk_right_context=40`, `fifo_len=40`, `spkcache_update_period=300` y `spkcache_len=264`, correspondientes al perfil de latencia `very_high` por defecto en audio.cpp.
 
-No se dispone de datos sobre el número de tokens o horas de entrenamiento, la composición del conjunto de datos, ni sobre si hubo etapas de ajuste fino con RLHF o DPO. La model card únicamente indica que la conversión se hizo desde el checkpoint `.nemo` original de NVIDIA y que no se trata de una publicación original de NVIDIA, sino de una conversión de formato para audio.cpp. Cualquier afirmación sobre innovaciones técnicas de entrenamiento (atención lineal, decodificación especulativa u otras) no está respaldada por la información proporcionada.
+La conversión se realizó directamente desde el checkpoint original `.nemo` (revisión fijada `723e19c601d99b7e58fba6a14e32153e0afe48d9` de nvidia/Nemotron-3-Diarization), no desde un GGUF previo. El fichero BF16 conserva la precisión original de los pesos, con el filtro mel del frontend en F32, y se declara con paridad segura respecto a NeMo bajo control de TF32. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la documentación proporcionada. La actualización del 26 de septiembre de 2026 añadió paridad con NeMo para lotes irregulares y colas de streaming, selección de atención flash o eager, salida autodescriptiva de probabilidad de hablante, perfiles de latencia compatibles con ASR e integración con el pipeline de transcripción etiquetada por hablante de Nemotron.
 
 ## Capacidades
 
-- Diarización de hablantes con separación de hasta ocho voces distintas en una misma grabación.
-- Devolución de turnos de habla con marcas temporales, aptos para alinear con transcripciones generadas por un modelo ASR independiente.
-- Modo offline para procesar grabaciones completas.
-- Modo streaming, con perfiles de latencia configurables (por ejemplo, `nemotron_3_diar.latency_profile=low`).
-- Procesamiento por lotes en servidor mediante `audiocpp_server`, admitiendo varios archivos de distinta duración en una misma petición.
-- Respuesta por defecto en formato SSE, con un evento `batch.transcription.result` por archivo completado que incluye el campo `speaker_turns` y un índice `index` para asociar el resultado al archivo subido.
-- Etiquetado de hablante (speaker tagging) y detección de actividad de voz, según las etiquetas del repositorio.
-- No realiza transcripción de palabras: la propia model card aclara que devuelve turnos y marcas temporales, no palabras transcritas.
-- Soporte de tool calling o function calling: no disponible.
-- Capacidades multilingües: no disponibles (la tarea de diarización es en gran medida independiente del idioma, pero no se declara soporte).
-- Capacidades de visión o audio distinto del procesado de voz para diarización: no disponibles.
+- Diarización de hablantes con identificación de hasta ocho hablantes simultáneos.
+- Salida de turnos de habla con marcas temporales (no transcribe palabras).
+- Modo offline para ficheros completos.
+- Modo streaming con perfiles de latencia configurables (por ejemplo, `low`).
+- Procesamiento por lotes en servidor con ficheros de duración distinta en una misma petición.
+- Detección de actividad de voz integrada en el pipeline.
+- Salida autodescriptiva de probabilidad de hablante.
+- Selección de backend de atención (flash o eager).
+- Integración con pipelines de transcripción etiquetada por hablante (speaker-tagged transcription).
+- No dispone de generación de texto, razonamiento, código, matemáticas ni visión: es un modelo exclusivamente de audio.
 
 ## Casos de uso
 
-- Actas de reuniones: se pasa el WAV a 16 kHz de la reunión por `audiocpp_cli --task diar` y se obtiene un JSON de turnos que después se cruza con una transcripción ASR, de modo que cada intervención queda atribuida a un participante concreto.
-- Analítica de centros de contacto: al separar agente y cliente en cada llamada, se pueden calcular tiempos de habla, solapamientos e interrupciones por turno, métricas útiles para evaluar calidad de atención sin necesidad de escuchar las grabaciones.
-- Postproducción de pódcast y entrevistas: la diarización previa permite etiquetar pistas por locutor y automatizar el montaje o la generación de subtítulos con identificación de voz.
-- Subtitulado y accesibilidad: combinado con un motor ASR, genera subtítulos con etiqueta de hablante, útil en contenido divulgativo, educativo o institucional con varios intervinientes.
-- Documentación clínica o legal: en grabaciones de consulta o de vistas con varios participantes, los turnos con marcas temporales facilitan la revisión posterior y la trazabilidad de quién dijo qué.
-- Investigación en conversación: creación de corpus anotados por hablante a partir de grabaciones sin etiquetar, usando el modo lote del servidor para procesar colecciones completas de distinta duración en una sola petición.
-- Transcripción en directo con identificación de voz: con `--mode streaming` y un perfil de latencia bajo, se puede alimentar una interfaz que muestre en tiempo real quién está hablando, siempre que el resto del pipeline asuma la latencia añadida.
-- Control de calidad de grabaciones: la detección de actividad de voz y el recuento de hablantes permiten filtrar audios vacíos, mal segmentados o con más de ocho voces antes de enviarlos a un sistema ASR más costoso.
+- Actas de reuniones: procesar la grabación completa en modo offline para obtener turnos de habla con marcas temporales, que después se combinan con un sistema ASR para producir transcripciones atribuidas a cada participante.
+- Atención al cliente: analizar grabaciones de llamadas para medir tiempos de habla de agente y cliente, detectar solapamientos e identificar patrones de intervención, con la ventaja de un consumo de VRAM inferior a 1 GB en cuantización Q8_0.
+- Subtitulado y locución en directo: usar el modo streaming con perfil de latencia bajo para etiquetar hablantes en tiempo real en retransmisiones o videoconferencias.
+- Procesamiento por lotes en servidor: ingerir varios ficheros de duración desigual en una única petición al endpoint `/v1/batches/transcriptions` y recibir eventos SSE con `speaker_turns` indexados por fichero, adecuado para pipelines de archivo masivo de audio.
+- Investigación en lingüística de corpus: segmentar corpus de entrevistas o debates por hablante antes de un análisis acústico o de transcripción, aprovechando que el modelo no depende de un idioma concreto para la tarea de diarización.
+- Despliegue en hardware de gama media: ejecutar la diarización en GPUs de consumo o en equipos con backend Vulkan o Metal, gracias a los aproximadamente 190 MiB del fichero BF16 y a los 1.076 MiB de VRAM pico medidos en lotes.
+- Moderación y análisis de contenido audiovisual: detectar cuántos interlocutores hay en un clip y sus intervenciones como paso previo a la revisión manual o automática.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio no incluye métricas de error de diarización (DER), tasas de acierto por hablante ni comparaciones numéricas con otros sistemas. Tampoco se proporcionan cifras de latencia o throughput.
+Rendimiento medido en una RTX 5090 con CUDA y ocho hilos de CPU, comparando audio.cpp (servidor en modo debug, BF16 y Q8_0) con la implementación oficial en Python (PyTorch 2.11.0+cu128, `eval()` y `torch.inference_mode()`), con parámetros de streaming idénticos:
+
+| Carga de trabajo | Runtime | Tiempo total de inferencia | RTF agregado | VRAM pico muestreada |
+|---|---|---:|---:|---:|
+| 24 lotes mixtos | audio.cpp servidor, BF16 | 11,984 s | 0,000960 | 1.076 MiB |
+| 24 lotes mixtos | audio.cpp servidor, Q8_0 | 10,836 s | 0,000868 | 948 MiB |
+| 24 lotes mixtos | Python oficial | 9,718 s | 0,000779 | 2.786 MiB |
+| 10 peticiones individuales | audio.cpp servidor, BF16 | 1,417 s | 0,000926 | 820 MiB |
+| 10 peticiones individuales | audio.cpp servidor, Q8_0 | 1,684 s | 0,001100 | 740 MiB |
+| 10 peticiones individuales | Python oficial | 1,795 s | 0,001173 | 1.504 MiB |
+
+Los lotes mixtos contuvieron 12.482 segundos de audio en 24 peticiones (grabaciones de 37 a 311 segundos); las diez peticiones individuales sumaron 1.531 segundos. El RTF se define como tiempo total de inferencia dividido por la duración total del audio (menor es mejor) e incluye frontend y postprocesado, pero excluye carga del modelo, E/S de ficheros y transporte HTTP. Python fue más rápido en los lotes mixtos; audio.cpp fue más rápido en peticiones individuales con ambas cuantizaciones. Q8_0 redujo el tiempo cerca de un 10 % en lotes pero lo aumentó un 19 % en peticiones individuales, con menor VRAM pico en ambos casos. Cada fila corresponde a una única secuencia de trabajo, no a una mediana de ejecuciones repetidas.
+
+No se han publicado resultados de benchmarks de calidad de diarización (por ejemplo, DER) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB. Con 99,3 millones de parámetros en BF16, los pesos ocupan aproximadamente 0,2 GB, coherente con el tamaño del repositorio; el resto del consumo corresponde a activaciones y buffers del frontend mel y del motor audio.cpp.
-- GPU recomendadas: no especificadas por el autor. El ejemplo oficial usa `--backend cuda`, por lo que cualquier GPU con CUDA y al menos 1-2 GB de VRAM libre es suficiente en la práctica; una RTX 4090, A100 o H100 estarían muy por encima del requisito.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna, e incluso en iGPU o en CPU, dado el tamaño del modelo.
-- Opciones de despliegue: `audiocpp_cli` para inferencia puntual o en streaming, y `audiocpp_server` con fichero `server.json` para servicio HTTP con lotes y respuesta SSE. El motor requiere una compilación de audio.cpp con soporte `nemotron_3_diar`.
-- Backends y parámetros: el ejemplo oficial emplea `--backend cuda --threads 8`; también se usa `--threads 8` en la configuración del servidor.
-- Formatos de entrada: WAV a 16 kHz.
-- Latencia y throughput estimados: no disponibles. El repositorio ofrece perfiles de latencia configurables para streaming (`nemotron_3_diar.latency_profile=low`), pero sin cifras publicadas.
-- Otros motores: no compatible con vLLM, llama.cpp, Ollama o TGI, ya que el GGUF está destinado específicamente al motor audio.cpp.
+- VRAM estimada para inferencia: 1.076 MiB pico en BF16 con lotes mixtos y 820 MiB en peticiones individuales; 948 MiB pico en Q8_0 con lotes y 740 MiB en individuales (medido en RTX 5090).
+- GPU recomendadas: cualquier GPU con soporte CUDA, Vulkan o Metal; las pruebas de referencia se realizaron en una RTX 5090. No se han publicado mediciones en A100, H100 o RTX 4090.
+- Cabe holgadamente en GPU de consumo: el fichero BF16 ocupa 189,51 MiB y el Q8_0 101,73 MiB, con un pico de VRAM inferior a 1,1 GB en las pruebas documentadas.
+- Opciones de despliegue: CLI `audiocpp_cli` (tareas `diar`, familia `nemotron_3_diar`) y servidor `audiocpp_server` con configuración JSON y endpoint `/v1/batches/transcriptions` con respuesta SSE.
+- Backends probados: CUDA, Vulkan y Metal (Mac).
+- Latencia y throughput: RTF agregado entre 0,000868 y 0,001173 según runtime y carga, lo que implica procesar audio cientos de veces más rápido que tiempo real en el hardware de prueba.
+- Requiere audio de entrada en WAV a 16 kHz.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formatos | Notas |
+| Modelo | Parametros | Contexto / modo | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Nemotron-3-Diarization-GGUF (audio-cpp) | 99,3 M | No disponible | OpenMDW-1.1 | GGUF (BF16) para audio.cpp | Hasta 8 hablantes; offline, streaming y lote |
-| nvidia/Nemotron-3-Diarization | No disponible | No disponible | No disponible en la información proporcionada | `.nemo` | Checkpoint original del que deriva esta conversión |
-| pyannote/speaker-diarization-3.1 | No disponible | No disponible | No disponible | No disponible | Alternativa habitual en diarización; datos no verificados en esta búsqueda |
-| NVIDIA NeMo (modelos de diarización MSDD/TitaNet) | No disponible | No disponible | No disponible | No disponible | Familia del propio ecosistema NeMo; datos no verificados en esta búsqueda |
+| Nemotron-3-Diarization-GGUF (este) | 99,26 M | Streaming por chunks; offline y lotes | openmdw-1.1 | GGUF (BF16, Q8_0) | Inferencia en C++ con audio.cpp; VRAM pico 740-1.076 MiB |
+| nvidia/Nemotron-3-Diarization (original) | 99,26 M | Mismos parámetros de streaming | openmdw-1.1 | Checkpoint NeMo (.nemo) | Implementación Python/PyTorch; VRAM pico 1.504-2.786 MiB en las mismas pruebas |
+| Otros modelos de diarización | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la información proporcionada |
 
-La búsqueda web realizada no devolvió documentación técnica ni comparativas de diarización utilizables: los resultados se correspondían con plataformas de música, tiendas de audio y controladores de sonido. Por tanto, la comparación cuantitativa con alternativas no está disponible.
+La comparación directa disponible se limita al modelo original de NVIDIA, del que esta conversión es funcionalmente equivalente en precisión BF16 y con paridad declarada respecto a NeMo bajo control de TF32.
 
 ## Limitaciones y advertencias
 
-- No transcribe: solo devuelve turnos de hablante y marcas temporales. Requiere un modelo ASR adicional si se necesita texto.
-- Límite de ocho hablantes. Escenarios con más voces simultáneas quedan fuera del alcance declarado.
-- Sin benchmarks publicados: no hay medidas de DER ni comparaciones objetivas que permitan estimar la calidad frente a alternativas.
-- Sin variantes cuantizadas: al incluirse únicamente BF16, el paquete es algo más pesado que una versión en Q8 o Q4, aunque su tamaño sigue siendo reducido.
-- Idiomas no declarados: la model card no especifica idiomas soportados ni comportamiento diferencial por idioma o acento.
-- Comportamiento ante solapamiento de voces, ruido de fondo o audio telefónico no está documentado en la información disponible.
-- Licencia OpenMDW-1.1, no la licencia del código de audio.cpp. Antes de un uso comercial es necesario revisar los términos completos del texto de la licencia incluido en `LICENSE.html` y conservar la licencia y los avisos de origen al redistribuir.
-- Es una conversión de formato, no una publicación de NVIDIA: los problemas de calidad del modelo subyacente deben reportarse contra el modelo base.
-- Dependencia del motor: funciona con audio.cpp y no con otras herramientas que consumen GGUF, lo que limita la portabilidad.
-- Entrada restringida a WAV de 16 kHz; otros formatos o frecuencias requieren conversión previa.
-- Riesgo de alucinación en el sentido clásico (texto inventado) no aplica, pero sí existe riesgo de atribución errónea de turnos o de hablantes fusionados, algo no cuantificado en la documentación.
+- El modelo devuelve turnos de habla y marcas temporales, no palabras transcritas; requiere un sistema ASR independiente para obtener texto.
+- Límite de ocho hablantes simultáneos; no se documenta el comportamiento con más interlocutores.
+- La cuantización Q8_0 es mixta (130 tensores cuantizados de 362) y el autor advierte explícitamente de que deben consultarse sus caveats antes de elegirla; puede degradar la precisión frente a BF16.
+- El rendimiento depende del hardware, la duración de las entradas y la composición de los lotes; las cifras publicadas provienen de una sola secuencia de trabajo por fila, no de medianas.
+- No se han publicado métricas de calidad de diarización (DER u otras) en la información disponible.
+- No se documentan sesgos conocidos ni comportamiento por idioma; la diarización es una tarea acústica, pero la cobertura lingüística no está declarada.
+- Riesgo de alucinación no aplicable en el sentido generativo, pero sí de asignación errónea de hablantes en audio con solapamientos, ruido o voces similares; no se aportan datos al respecto.
+- Licencia openmdw-1.1: deben revisarse sus términos antes de un uso comercial; la información proporcionada no detalla las restricciones concretas.
+- Esta conversión no es un lanzamiento original de NVIDIA y está fijada a una revisión concreta del modelo base; cambios posteriores en el upstream no se reflejan automáticamente.
+- Requiere una build actual de audio.cpp con soporte `nemotron_3_diar`; versiones antiguas no cargarán estos pesos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/audio-cpp/Nemotron-3-Diarization-GGUF
+- Repositorio GGUF: https://huggingface.co/audio-cpp/Nemotron-3-Diarization-GGUF
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Revisión fijada del modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization/tree/723e19c601d99b7e58fba6a14e32153e0afe48d9
 - Motor audio.cpp: https://github.com/0xShug0/audio.cpp
 - Documentación del modelo en audio.cpp: https://github.com/0xShug0/audio.cpp/blob/main/docs/models/nemotron_3_diar.md
-- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Búsqueda web: no se encontraron enlaces técnicos relevantes (papers, blogs, repos o demos) sobre este modelo en los resultados disponibles.

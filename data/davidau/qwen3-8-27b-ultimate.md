@@ -2,103 +2,102 @@
 
 ## Resumen
 
-Qwen3.8-27B-Ultimate es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B publicado por el usuario DavidAU en Hugging Face. El modelo conserva la arquitectura y el tamaño del base, con 27.781.427.952 parámetros totales (unos 27,8 mil millones) almacenados en safetensors con precisión bfloat16, lo que se traduce en un repositorio de 55,6 GB. La pipeline declarada es image-text-to-text, por lo que el modelo mantiene capacidad de entrada multimodal (imagen y texto), aunque el autor lo comercializa y describe principalmente por sus modos de razonamiento y de instrucción.
+Qwen3.8-27B-Ultimate es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.8-27B, publicado por el usuario DavidAU en Hugging Face. Se trata de una variante "heretic" y "uncensored", es decir, con un proceso deliberado de eliminación de rechazos (refusal removal) mediante técnicas que el autor denomina Heretic 2.1 ARA, orientada a reducir las negativas del modelo ante peticiones que el modelo original rechazaría. El modelo conserva la arquitectura del Qwen3.8 original con aproximadamente 27.781 millones de parámetros totales y está empaquetado en safetensors en bfloat16.
 
-El interés del modelo no está en la arquitectura —heredada íntegramente del base— sino en el proceso de ajuste: el autor declara un entrenamiento multi-etapa con técnicas que denomina "Cold Fusion" y "GAIN Training", sobre los datasets propios Polar-STRICT y F451-STRICT, y empaqueta el resultado en 27 "modos de razonamiento" y 27 "modos de instrucción", además de 15 "AI Constructs" (agentes preconfigurados por prompt) y 5 "Super AI Constructs". La etiqueta `heretic` y `uncensored` indica que el ajuste busca reducir los rechazos del modelo base, algo relevante para quienes necesitan un modelo local sin filtros conversacionales.
+El autor lo presenta como un modelo "todo uso" con un sistema embebido llamado Turbo Brilliance V2 50X AGI, que incluye múltiples modos de razonamiento e instrucción, así como "constructos" de IA (Agent, Coder, Brainstorm, Universal Teacher, entre otros). El modelo está entrenado en múltiples etapas (multi-stage tuning, Cold Fusion, GAIN Training) sobre datasets propios del autor (Polar-STRICT y F451-STRICT).
 
-Es un modelo relevante ahora por tres motivos: cubre el hueco de ajustes "todo en uno" sobre un base de ~28B con licencia Apache 2.0, está pensado para ejecución local (el autor empaqueta variantes GGUF en repositorios hermanos) y ofrece perfiles de prompt predefinidos para tareas de código, escritura creativa, docencia o uso como agente. El acceso está restringido en Hugging Face: es necesario aceptar condiciones en la página del modelo antes de descargarlo.
+Es relevante ahora porque combina un modelo base de última generación con una capa de personalización agresiva orientada a usos creativos, roleplay y generación sin restricciones, un nicho con demanda creciente entre desarrolladores que necesitan modelos sin filtros para investigación o generación creativa. La licencia declarada es Apache 2.0, aunque las implicaciones prácticas de un modelo "uncensored" deben evaluarse con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (herencia de Qwen/Qwen3.8-27B; familia etiquetada como qwen3_8/qwen3_6/qwen3_5 en los tags). Detalles internos de atención y capas: no disponible |
-| Parametros totales | 27.781.427.952 (~27,8B, dato real de safetensors) |
-| Parametros activos | No aplica: no se declara arquitectura MoE en la informacion disponible |
-| Longitud de contexto | no disponible (no declarada en la ficha de Hugging Face ni en la informacion proporcionada) |
-| Tipos de cuantizacion | Repositorio principal en safetensors bfloat16 (BF16). No se incluyen pesos cuantizados en este repo; segun un listado de terceros existe una variante GGUF de un modelo DavidAU emparentado, no de este ID |
-| Idiomas soportados | en (unico idioma declarado en metadatos) |
+| Arquitectura | Transformer (derivada de Qwen3.8; tag `qwen3_5`/`qwen3_8`), con soporte multimodal image-text-to-text |
+| Parametros totales | 27.781.427.952 (27,78 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | hasta 256k tokens (mínimo recomendado 32k; sugerido 64k-128k) |
+| Tipos de cuantizacion | GGUFs publicados en repo separado (incluye Q6 citado en la model card); cuantizaciones adicionales no detalladas |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi (16 idiomas declarados en la model card) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (bfloat16); transformers |
-| Tamano del repositorio | 55,6 GB |
-| Pipeline declarada | image-text-to-text (entrada multimodal imagen + texto) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Descargas / likes | 2 descargas, 65 likes |
-| Fechas | Creado 2026-09-03, actualizado 2026-10-22 |
+| Formato de pesos | safetensors (repo principal, bfloat16); GGUF en repo separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen/Qwen3.8-27B, un transformer denso de aproximadamente 27,8 mil millones de parámetros. No se aporta en la información disponible el número de capas, la configuración de atención (completa, GQA, lineal o híbrida), la longitud de contexto nativa ni el vocabulario; los tags `qwen3_5`, `qwen3_6` y `qwen3_8` sugieren compatibilidad con varias generaciones de la familia Qwen3, pero no se detalla qué implican. El pipeline image-text-to-text confirma que el modelo acepta imágenes además de texto, aunque no se especifica el codificador visual ni la resolución de entrada.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer de aproximadamente 27,8 mil millones de parámetros. El ajuste fino se realizó mediante un proceso que el autor denomina "multi-stage tuning", con componentes etiquetados como "Cold Fusion" y "GAIN Training", sobre datasets propios: DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO.
 
-En el entrenamiento, el autor declara un ajuste fino multi-etapa ("Multi-stage tuning") sobre los datasets propios DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets, con dos técnicas propietarias denominadas "Cold Fusion" y "GAIN Training", y herramientas del ecosistema Unsloth. No se publican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO o preferencias. La etiqueta `heretic` (término habitual para ajustes que revierten el alineamiento de rechazo) y `uncensored` indican que parte del entrenamiento se orientó a reducir negativas del modelo base. La innovación declarada no es arquitectónica sino de empaquetado de comportamiento: 27 modos de razonamiento (9 de ellos "Xhigh"), 27 modos de instrucción, 15 AI Constructs y 5 Super AI Constructs, que se activan mediante prompts concretos en lugar de mediante cambios en los pesos.
+La innovación técnica destacada por el autor es el sistema "Turbo Brilliance V2 50X AGI", un conjunto de modos de operación embebidos en el modelo (27 modos de razonamiento, 27 modos de instrucción, 15 "AI Constructs", 5 "Super AI Constructs", 21 "AGI Constructs") que se activan mediante prompt. El autor afirma que este sistema reduce el número de tokens generados manteniendo la calidad. La versión actualizada del 16 de noviembre de 2026 incorpora "Heretic 2.1 ARA" para una eliminación de rechazos más profunda y mejor KLD. No se dispone de detalles verificables sobre la metodología exacta de entrenamiento ni sobre la composición de los datos.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con perfil declarado "conversational" y "all use cases".
-- Razonamiento explícito: 27 modos de razonamiento declarados, 9 de ellos de esfuerzo alto ("Xhigh"), activables por prompt.
-- 27 modos de instrucción para perfiles de respuesta distintos (directo, creativo, técnico, etc., según nomenclatura del autor).
-- Entrada multimodal imagen-texto: la pipeline image-text-to-text permite describir, analizar o razonar sobre imágenes.
-- Generación de código: incluye un "Coder AI Construct" dedicado y tags `coder`.
-- Escritura creativa y ficción: "creative writing", "all genres", "story", "writing", "fiction", "roleplaying".
-- Uso como agente: "Agent AI Construct" y "Brainstorm AI Construct" orientados a flujos multi-paso guiados por prompt.
-- Perfiles especializados: "Universal Teacher AI Construct" (docencia/explicación) y "Brainstorm Business AI Construct" (ideación de negocio).
-- Modo "Turbo-Brilliance" declarado por el autor para respuestas de mayor densidad.
-- Capacidad multilingüe: no disponible; los metadatos solo declaran inglés.
-- Tool calling / function calling: no disponible (no se documenta en la información proporcionada).
+- Generación de texto conversacional y de formato largo, incluyendo escritura creativa, ficción, historias y roleplay en múltiples géneros.
+- Razonamiento en modo "thinking" con múltiples niveles (el autor menciona 9 modos de razonamiento "Xhigh" y modos "medium").
+- Generación de código y soporte de tareas de programación (constructo "Coder AI Construct").
+- Procesamiento de imagen y texto (pipeline image-text-to-text), aunque no se detallan las capacidades de visión en la información disponible.
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible; el autor recomienda temperatura 0,6-0,7 para herramientas y agentes, lo que sugiere soporte para flujos agénticos.
+- Capacidades agénticas y de razonamiento multi-paso mediante el "Agent AI Construct" y los "AGI Constructs".
+- Multilingüismo en 16 idiomas declarados (árabe, chino, inglés, francés, alemán, hindi, indonesio, italiano, japonés, coreano, polaco, portugués, ruso, español, tailandés y vietnamita).
+- Sistema de ayuda interactivo: introducir "help" como prompt muestra los modos de instrucción, razonamiento y constructos disponibles.
+- Modo "uncensored"/"heretic": reducción deliberada de rechazos ante peticiones que el modelo base rechazaría.
 
 ## Casos de uso
 
-- Asistente de razonamiento paso a paso en local: seleccionando uno de los modos de razonamiento (especialmente los "Xhigh"), el modelo produce cadenas de razonamiento más largas para problemas de lógica, planificación o análisis, sin depender de una API externa.
-- Generación de código en entornos con requisitos de privacidad: con el "Coder AI Construct" y licencia Apache 2.0, se puede desplegar en infraestructura propia para autocompletar, revisar o explicar código sin enviar el repositorio a un tercero.
-- Escritura creativa y narrativa larga: los perfiles de ficción, roleplaying y "all genres" permiten usarlo como motor de generación de relatos, guiones o diálogos de personajes con control de tono mediante el modo de instrucción seleccionado.
-- Análisis de imágenes en flujos documentales: gracias a la pipeline image-text-to-text, se puede usar para extraer y describir información de capturas, diagramas o fotografías dentro de un pipeline propio.
-- Ideación y brainstorming estructurado: el "Brainstorm AI Construct" y el "Brainstorm Business AI Construct" están pensados para sesiones de generación de ideas con formato predefinido, útil en consultoría o definición de producto.
-- Docencia y material formativo: el "Universal Teacher AI Construct" permite generar explicaciones progresivas, ejercicios y resúmenes adaptados a un nivel, reutilizando el mismo modelo para varias asignaturas.
-- Automatización de agentes de un solo modelo: el "Agent AI Construct" permite orquestar tareas multi-paso (leer, resumir, decidir, redactar) con un único checkpoint, simplificando el despliegue frente a soluciones multi-modelo.
-- Base para ajustes posteriores sin restricciones de licencia: al ser Apache 2.0 y safetensors bfloat16, sirve como punto de partida para fine-tuning propio en dominios verticales.
+- Escritura creativa y ficción de formato largo: el modelo puede generar historias, novelas y guiones de decenas de páginas gracias a su contexto de hasta 256k tokens y a sus modos de escritura creativa; el autor documenta un ejemplo de 30 páginas sobre "cómo salvar el planeta".
+- Roleplay y personajes conversacionales: los constructos y modos de instrucción permiten definir personalidades y estilos, útil para videojuegos, chatbots de entretenimiento y comunidades de roleplay.
+- Generación de código en entornos de desarrollo: el constructo "Coder AI Construct" permite asistencia en programación, revisión y generación de fragmentos de código dentro de pipelines de desarrollo.
+- Investigación sobre alineación y seguridad: al ser un modelo "heretic" con rechazos reducidos, sirve para estudiar comportamientos del modelo en condiciones de baja restricción y comparar con el modelo base.
+- Procesamiento de documentos largos: con 256k tokens de contexto puede resumir, analizar y extraer información de contratos, informes técnicos o corpus extensos en varios idiomas.
+- Agentes autónomos y automatización multi-paso: el "Agent AI Construct" y los modos de razonamiento permiten construir flujos agénticos que planifican y ejecutan tareas con tool calling (temperatura recomendada 0,6-0,7).
+- Generación de contenido multilingüe: para localización de contenidos en los 16 idiomas declarados, con contexto largo para mantener coherencia terminológica.
+- Brainstorming y generación de ideas de negocio: el "Brainstorm Business AI Construct" está orientado a sesiones de ideación estructurada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K, MATH ni evaluaciones multimodales, y las únicas métricas públicas son de adopción (2 descargas, 65 likes). Cualquier cifra de rendimiento atribuida a este modelo debería obtenerse mediante evaluación propia.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM en bfloat16: aproximadamente 55,6 GB solo para los pesos (27,78B × 2 bytes), más caché KV; en la práctica se necesitan del orden de 60-70 GB de VRAM para contexto moderado. Es una estimación calculada a partir del número de parámetros, no un dato publicado.
-- GPU profesionales: una A100 80 GB o una H100 80 GB permiten cargar el modelo en BF16 en una sola GPU. En A100 40 GB o H100 40 GB no cabe en BF16 sin cuantizar.
-- Multi-GPU: para BF16 con contexto largo, 2× A100 40 GB o 2× L40S 48 GB con tensor parallelism (vLLM o TGI) es una configuración razonable.
-- GPU de consumo: no cabe en BF16 en ninguna tarjeta de consumo actual (24 GB máximo en RTX 4090/3090). Requiere cuantización a 8 bits (~28 GB, todavía por encima de 24 GB) o a 4 bits (~14-16 GB), que sí cabría en una RTX 4090, RTX 3090 o RTX 4080 de 16 GB con contexto corto.
-- Almacenamiento: 55,6 GB para el repositorio en BF16; prever espacio adicional para caché de descarga y para una eventual conversión GGUF.
-- Opciones de despliegue: transformers (formato nativo del repo), vLLM y TGI para serving en BF16 con tensor parallelism, llama.cpp/Ollama/LM Studio si se convierte a GGUF. El autor empaqueta variantes GGUF en repositorios hermanos (no en este ID), lo que sugiere que la conversión es viable.
-- Latencia y throughput: no disponible. No hay datos publicados de tokens por segundo ni de TTFT para este modelo.
-- Nota operativa: el acceso es gated, por lo que los pipelines automatizados necesitan un token de Hugging Face con los términos aceptados.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 55,6 GB solo para pesos (el repo ocupa 55,6 GB), por lo que se necesitan al menos 2 GPU de 40 GB o una GPU de 80 GB para inferencia completa sin cuantizar.
+- En cuantización de 8 bits: alrededor de 28-30 GB de VRAM, viable en una A100 40 GB o en dos RTX 4090 de 24 GB.
+- En cuantización de 4 bits (GGUF Q4): aproximadamente 15-17 GB, cabe en una RTX 4090 (24 GB) o RTX 3090 (24 GB).
+- GPU recomendadas: A100 80 GB o H100 80 GB para bfloat16 sin cuantizar; A100 40 GB para 8 bits; RTX 4090/3090 para cuantizaciones de 4-6 bits.
+- El autor cita pruebas con GGUF Q6 (no imatrix) en su repositorio de cuantizaciones, lo que sugiere que las GGUFs están pensadas para despliegue en hardware de consumo de gama alta.
+- Opciones de despliegue: transformers (librería declarada), llama.cpp/Ollama mediante los GGUFs publicados en el repo separado. No se confirma soporte de vLLM o TGI en la información disponible.
+- Latencia y throughput: no disponibles de forma sistemática; el autor menciona una prueba con procesamiento de 8.000 tokens de instrucciones y salida de 3.000 tokens en aproximadamente 60 segundos, pero sin especificar el hardware utilizado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| DavidAU/Qwen3.8-27B-Ultimate | 27,78B | no disponible | apache-2.0 | safetensors BF16 | Ajuste "todo en uno" con 27+27 modos, entrada imagen-texto, acceso gated |
-| Qwen/Qwen3.8-27B (base) | 27,78B (mismo base) | no disponible | apache-2.0 (heredada) | safetensors | Modelo original sin los modos ni el desalineamiento `heretic`; referencia para medir qué aporta el ajuste |
-| DavidAU Qwen3.8 27B TURBO Fable Cold Fusion 735 882 Heretic Uncensored NEO CODER MAX MTP (GGUF) | no disponible | no disponible | no disponible | GGUF | Variante del mismo autor y familia, distribuida en GGUF y orientada a código; el listado es de un tercero (Interfaze), no de Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen3.8-27B-Ultimate (este) | 27,78 B | hasta 256k | Apache 2.0 | Fine-tune "uncensored" con Turbo Brilliance V2 50X AGI |
+| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible en la informacion | Apache 2.0 | Modelo original con filtros de seguridad estándar |
+| DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored | ~40 B | no disponible | Apache 2.0 (según repo del autor) | Variante más grande del mismo autor, orientada a mayor capacidad |
+| DavidAU/Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored | ~31 B | no disponible | no disponible | Variante experimental con transformer en bucle del mismo autor |
 
-No se dispone de datos verificados de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de otros autores. Cualquier comparación de rendimiento con modelos de ~30B de otros fabricantes requeriría evaluación propia.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento cuantitativo con estos u otros modelos.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documenta ninguna evaluación de sesgos. Un ajuste etiquetado `heretic` y `uncensored` reduce deliberadamente los rechazos, lo que aumenta la probabilidad de contenido inapropiado, ofensivo o inseguro sin filtro previo.
-- Alucinación: no hay datos publicados de tasas de alucinación ni evaluaciones de factualidad; el énfasis en "modos de razonamiento" y creatividad no garantiza precisión factual.
-- Idiomas: los metadatos solo declaran inglés (`en`). El rendimiento en castellano no está verificado y podría degradarse respecto al base.
-- Contexto: la longitud de contexto no está declarada en la información disponible; no se debe asumir un valor concreto para diseño de aplicaciones.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso es gated y el modelo deriva de Qwen/Qwen3.8-27B, cuyos términos deben respetarse igualmente. Conviene revisar las condiciones de acceso aceptadas en Hugging Face.
-- Procedencia del ajuste: las técnicas "Cold Fusion" y "GAIN Training" no están descritas técnicamente en la información disponible, y no se publican tokens de entrenamiento ni composición del dataset, lo que dificulta auditar el comportamiento.
-- Reproducibilidad: con 2 descargas y 65 likes, la adopción es muy baja; hay poca evidencia comunitaria de comportamiento en producción.
-- Los "modos" y "constructs" son prompts empaquetados, no configuraciones del modelo: su efecto depende de la plantilla de chat y puede romperse con plantillas personalizadas.
-- En producción, el estado `gated` añade fricción operativa (tokens, aceptación de términos) en pipelines automatizados.
+- Modelo "uncensored"/"heretic": la eliminación deliberada de rechazos implica un mayor riesgo de generar contenido inapropiado, ofensivo, peligroso o ilegal. No es adecuado para aplicaciones de cara al público sin filtros adicionales.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa con aparente seguridad, especialmente en modo creativo o con contextos largos.
+- Sesgos conocidos: no se documentan en la información disponible; los sesgos del modelo base Qwen3.8-27B persisten y pueden verse amplificados por el ajuste fino.
+- La licencia Apache 2.0 permite uso comercial, pero el contenido generado por un modelo sin filtros puede acarrear responsabilidades legales para el desplegador; se recomienda revisión legal antes de uso en producción.
+- El sistema "Turbo Brilliance V2 50X AGI" y los "constructos" son terminología propia del autor sin validación independiente publicada; su eficacia no está verificada por terceros.
+- El contexto máximo de 256k tokens puede degradar la calidad en los extremos de la ventana; el autor recomienda 64k-128k para uso óptimo.
+- Aunque se declaran 16 idiomas, la model card lista únicamente "en" en el campo de idiomas de Hugging Face; el rendimiento real en idiomas distintos del inglés no está documentado.
+- El modelo se actualizó el 16 de noviembre de 2026 con cambios en el sistema de eliminación de rechazos; versiones anteriores pueden comportarse de forma distinta.
+- No se dispone de información sobre la metodología exacta de entrenamiento ni sobre evaluaciones de seguridad independientes.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate
+- Repositorio principal: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate
+- GGUFs y documentación de uso: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Dataset declarado Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
-- Dataset declarado F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
-- Listado de terceros de una variante GGUF emparentada (Interfaze): https://interfaze.ai/models/davidauqwen38-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf
-- Paper, blog o demo oficiales del ajuste: no disponible en la informacion proporcionada.
+- Variante 40B (Deckard Massive/Claude/Qwen): https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored
+- GGUFs de la variante 40B: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
+- Variante 40B (Deckard Massive/GLM/Qwen): https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Build2
+- Variante 31B Looping Transformer: https://huggingface.co/DavidAU/Qwen3.8-31B-Looping-Transformer-Ablit-Heretic-ARA-Uncensored
+- Proyecto origen (Qwen3.8-27B-TURBO-Fable-Cold-Fusion): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Colección Turbo Brilliance AI Constructs: https://huggingface.co/collections/DavidAU/turbo-brilliance-ai-constructs-50x-reasoning-instruct
+- Perfil del autor: https://huggingface.co/DavidAU
+- Colecciones del autor: https://huggingface.co/DavidAU/collections
+- FAQs y soporte: https://huggingface.co/DavidAU/support

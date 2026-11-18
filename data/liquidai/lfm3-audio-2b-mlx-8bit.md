@@ -2,92 +2,95 @@
 
 ## Resumen
 
-LFM3-Audio-2B-MLX-8bit es la versión cuantizada a 8 bits en formato MLX del modelo de audio LFM3-Audio-2B de Liquid AI, optimizada para ejecutarse de forma nativa en ordenadores Apple Silicon (chips M1 a M4). El modelo base pertenece a la familia LFM3 (Liquid Foundation Models), una arquitectura propia de Liquid AI que combina capas convolucionales gating lineales con mecanismos de atención, y este modelo concreto es multimodal any-to-any: acepta texto y audio como entrada y genera texto y audio de salida, cubriendo tareas como reconocimiento de voz (ASR), síntesis de voz (TTS) y conversación voz-a-voz.
+LFM3-Audio-2B-MLX-8bit es una versión cuantizada a 8 bits del modelo multimodal de audio LFM3-Audio-2B de Liquid AI, empaquetada específicamente para su ejecución en Apple Silicon mediante la librería MLX. El modelo original es un sistema "any-to-any" de aproximadamente 1.977 millones de parámetros (1,98 B) que procesa y genera tanto texto como audio, lo que le permite realizar tareas de reconocimiento automático del habla (ASR), síntesis de voz (TTS) y conversación voz a voz.
 
-El problema que resuelve es doble. Por un lado, unifica en un solo modelo compacto (menos de 2.000 millones de parámetros) tareas que tradicionalmente requieren pipelines separados de ASR, TTS y diálogo hablado. Por otro, la versión MLX-8bit lo hace accesible en hardware de consumo Apple sin servidor dedicado, con pesos que ocupan 2,33 GB más 0,15 GB para el códec de audio. Según la propia model card, la cuantización a 8 bits es el punto de equilibrio recomendado entre tamaño y precisión.
+La relevancia de esta variante radica en su formato: los pesos ocupan 2,33 GB (más 0,15 GB del códec de audio), lo que la hace desplegable en equipos Mac con memoria unificada, sin necesidad de GPU dedicada. El backbone lingüístico emplea cuantización afín de 8 bits con grupos de 64, mientras que el codificador de audio, el proyector, el decodificador de profundidad y los embeddings del codebook permanecen en BF16 para preservar la calidad.
 
-Es relevante ahora porque los modelos de voz de extremo a extremo (speech-to-speech) están en plena expansión, y Liquid AI ofrece una opción abierta, multilingüe (19 idiomas, incluido el castellano) y ejecutable en local, algo poco habitual en esta categoría dominada por APIs propietarias.
+El modelo soporta 18 idiomas (incluido el español) y se distribuye bajo la licencia LFM1.0 de Liquid AI. Está pensado para desarrolladores que quieran prototipar o desplegar pipelines de voz en local sobre macOS, con un equilibrio razonable entre tamaño y precisión según el propio autor.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LFM3 (Liquid Foundation Models), multimodal any-to-any con encoder de audio, proyector, backbone de lenguaje y decodificador de audio (depth decoder) |
-| Parametros totales | 1.977.548.032 (≈2B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits afín (grupos de 64) en el backbone de lenguaje; encoder de audio, proyector, depth decoder y codebook embedding en BF16 |
-| Idiomas soportados | en, ar, da, de, el, fi, fr, he, it, ja, ko, nl, pl, pt, es, sv, tr, zh (19 idiomas) |
-| Licencia | LFM1.0 (other, licencia propia de Liquid AI) |
-| Formato de pesos | safetensors (formato MLX) |
+| Arquitectura | Modelo multimodal any-to-any (backbone de lenguaje + codificador de audio + proyector + decodificador de profundidad + códec de audio); detalles arquitectónicos completos no disponibles en la información proporcionada |
+| Parámetros totales | 1.977.548.032 (≈1,98 B) |
+| Parámetros activos | No disponible (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | 8 bits afín con grupos de 64 en el backbone; BF16 en codificador, proyector, decodificador de profundidad y embeddings del codebook; códec de audio original |
+| Idiomas soportados | en, ar, da, de, el, fi, fr, he, it, ja, ko, nl, pl, pt, es, sv, tr, zh (18 idiomas) |
+| Licencia | LFM1.0 (lfm1.0, "other") |
+| Formato de pesos | safetensors (MLX); tamaño del repo 2,5 GB; pesos 2,33 GB + 0,15 GB del códec |
 
 ## Arquitectura y entrenamiento
 
-La ficha de este repositorio cuantizado no detalla la arquitectura interna completa, pero por la model card se desprende la composición del modelo: un backbone de lenguaje LFM3 cuantizado a 8 bits con cuantización afín en grupos de 64, un encoder de audio, un proyector audio-lenguaje, un depth decoder para la generación de tokens de audio y un codebook embedding, todos estos últimos mantenidos en BF16 para preservar la fidelidad del audio. Además incluye un códec de audio (audio tokenizer) independiente, con 0,15 GB de pesos, que se mantiene en su versión original sin cuantizar.
+La información disponible describe un modelo any-to-any compuesto por varios módulos: un backbone de lenguaje cuantizado a 8 bits, un codificador de audio, un proyector, un decodificador de profundidad y un códec de audio independiente alojado en `audio_tokenizer/`. El pipeline declarado es `any-to-any`, lo que implica entrada y salida tanto en texto como en audio. No se detallan en la información proporcionada el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-La familia LFM3 de Liquid AI se caracteriza por arquitecturas híbridas que combinan operadores convolucionales gating lineales con atención, orientadas a eficiencia en inferencia. Los detalles del preentrenamiento (número de tokens, composición del corpus, uso de RLHF o DPO) no están disponibles en la información proporcionada; remiten a la model card del modelo base LFM3-Audio-2B.
+La innovación técnica más destacable de esta variante es la estrategia de cuantización selectiva: solo el backbone lingüístico se cuantiza a 8 bits, mientras que los componentes sensibles a la precisión (codificador de audio, proyector, decodificador de profundidad y codebook) se mantienen en BF16. El autor indica que 8 bits es el compromiso recomendado entre tamaño y precisión. Los detalles de arquitectura y entrenamiento remiten a la model card del modelo original LFM3-Audio-2B.
 
 ## Capacidades
 
-- Reconocimiento de voz (ASR): transcribe audio de entrada a texto, configurable por idioma mediante el system prompt.
-- Síntesis de voz (TTS): genera audio hablado a partir de texto, con control de idioma, acento (por ejemplo, inglés americano) y voz (masculina o femenina) vía system prompt.
-- Conversación voz-a-voz (speech-to-speech): acepta audio de entrada y responde con audio, habilitando chat hablado directo.
-- Salida intercalada de texto y audio: puede responder combinando ambas modalidades en una misma generación ("Respond with interleaved text and audio").
-- Soporte multilingüe en 19 idiomas, incluido castellano, para las tareas de voz.
-- Pipeline any-to-any según la taxonomía de Hugging Face.
-- No hay información disponible sobre tool calling, capacidades de agente, visión ni razonamiento estructurado.
+- Reconocimiento automático del habla (ASR) en los 18 idiomas soportados, mediante system prompts del tipo "Perform ASR in English".
+- Síntesis de voz (TTS) con selección de idioma y voz mediante system prompts (por ejemplo, "Perform TTS in American English using a female voice").
+- Conversación voz a voz con salida intercalada de texto y audio ("Respond with interleaved text and audio").
+- Generación de audio condicionada por parámetros de muestreo específicos: `audio_temperature`, `audio_top_k` y `audio_repetition_penalty`.
+- Procesamiento multimodal de audio de entrada y salida de audio en un único pipeline (any-to-any).
+- Soporte multilingüe amplio: inglés, español, francés, alemán, italiano, portugués, neerlandés, danés, sueco, finés, griego, polaco, turco, árabe, hebreo, japonés, coreano y chino.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
+- Modo "thinking", visión o audio bidireccional completo: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Transcripción de notas de voz en aplicaciones iOS y macOS: al ser un modelo MLX nativo de Apple Silicon, puede integrarse en apps locales para transcribir audios de WhatsApp, reuniones o dictados sin enviar datos a la nube, ejecutándose con unos 2,5 GB de memoria.
-- Voice bots y asistentes hablados en local: gracias a la capacidad speech-to-speech, puede alimentar un asistente de voz completo (escucha, comprende y responde hablando) en un Mac, útil para prototipos de agentes de voz sin coste de API.
-- Doblaje y locución automática de contenidos: el modo TTS con selección de voz e idioma permite generar narraciones para vídeos, podcasts o e-learning en castellano y otros 18 idiomas.
-- Accesibilidad: lectores de pantalla mejorados o herramientas de descripción hablada para usuarios con dificultades visuales, generando voz natural en local con baja latencia.
-- Análisis multilingüe de llamadas: transcripción automática de grabaciones de atención al cliente en varios idiomas europeos y asiáticos (francés, alemán, japonés, chino) sin infraestructura de servidor.
-- Prototipado de interfaces conversacionales multimodales: el pipeline any-to-any con salida intercalada de texto y audio permite experimentar con agentes que muestran la transcripción mientras hablan, útil en investigación de interacción humano-máquina.
-- Desarrollo on-device con privacidad garantizada: cualquier caso donde el audio (datos potencialmente sensibles) no deba salir del dispositivo, como consultas médicas o notas legales dictadas.
+- Transcripción de reuniones en local sobre Mac: el modelo realiza ASR con un system prompt específico de idioma, procesando el audio de entrada y devolviendo texto, sin enviar datos a la nube gracias a su ejecución on-device con MLX.
+- Generación de locuciones para vídeos o podcasts: mediante TTS con selección de voz e idioma, se pueden producir archivos WAV directamente desde la línea de comandos con `mlx_vlm.generate`.
+- Asistentes de voz conversacionales en macOS: el modo speech-to-speech con salida intercalada de texto y audio permite construir interfaces de voz que responden hablando, adecuadas para prototipos de asistentes personales.
+- Accesibilidad: conversión de texto a voz y de voz a texto para personas con discapacidad visual o auditiva, ejecutándose íntegramente en el dispositivo y preservando la privacidad.
+- Localización de contenido audiovisual: al soportar 18 idiomas, se puede usar para transcribir audio en un idioma y generar voz en otro dentro de flujos de subtitulado o doblaje.
+- Evaluación e investigación en modelos de audio: investigadores pueden experimentar con un modelo any-to-any de menos de 2 B de parámetros en hardware de consumo, comparando calidad de ASR/TTS entre idiomas y configuraciones de muestreo.
+- Prototipado de agentes de voz en pipelines de CI: la instalación vía `mlx-vlm` y la ejecución por CLI permiten integrar pruebas automatizadas de ASR/TTS en flujos de desarrollo sobre runners macOS con Apple Silicon.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica únicamente que la cuantización a 8 bits es "el punto de equilibrio recomendado entre tamaño y precisión", sin aportar métricas comparativas frente al modelo en BF16 o frente a otros modelos de voz.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria unificada necesaria: aproximadamente 2,5 GB en total (2,33 GB de pesos del modelo cuantizado + 0,15 GB del códec de audio), más la memoria de contexto de KV en ejecución.
-- Hardware objetivo: Apple Silicon (chips M1, M2, M3 o M4). Con ~2,5 GB de pesos, debería funcionar en cualquier Mac con 8 GB de RAM o más, incluidos MacBook Air y Mac mini base.
-- No requiere GPU NVIDIA: al ser formato MLX, no es directamente desplegable en entornos CUDA (para eso existe el modelo base LFM3-Audio-2B).
-- Despliegue: mediante MLX-VLM (`mlx-vlm`), con soporte en desarrollo según la model card; los ejemplos usan `python -m mlx_vlm.generate`. También hay documentación oficial de despliegue on-device con MLX en docs.liquid.ai.
-- Parámetros de generación de audio recomendados (por defecto en `generation_config.json`): `audio_temperature=1.0`, `audio_top_k=128`, `audio_repetition_penalty=1.1`.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria estimada: los pesos ocupan 2,33 GB más 0,15 GB del códec de audio; el consumo total en memoria unificada será algo superior por estados de ejecución y buffers de decodificación (cifra exacta no disponible).
+- Hardware objetivo: Apple Silicon (MLX). No está pensado para GPU NVIDIA ni CUDA.
+- Cabe en equipos Mac con memoria unificada de 8 GB o superior; se recomienda 16 GB para margen con contextos largos y decodificación de audio.
+- GPU dedicadas (A100, H100, RTX 4090): no aplicables, ya que el formato MLX está orientado a Apple Silicon.
+- Opciones de despliegue: MLX-VLM 0.7.11 o superior (`pip install -U "mlx-vlm>=0.7.11"`), ejecución por CLI con `python -m mlx_vlm.generate`. Otras opciones como vLLM, llama.cpp, Ollama o TGI no están indicadas para este formato.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Modalidades | Cuantizacion | Licencia | Plataforma |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato / plataforma |
 |---|---|---|---|---|---|
-| LFM3-Audio-2B-MLX-8bit (este) | ≈2B | texto/audio → texto/audio | 8-bit MLX | LFM1.0 (other) | Apple Silicon (MLX) |
-| LFM3-Audio-2B (base) | ≈2B | texto/audio → texto/audio | BF16 | LFM1.0 (other) | Multiplataforma |
-| Whisper (OpenAI) | 0,07B–1,5B | audio → texto | variada | MIT | Multiplataforma |
-| Moshi (Kyutai) | ≈7B | audio/texto → audio/texto | variada | CC-BY / MIT (parcial) | Multiplataforma |
+| LFM3-Audio-2B-MLX-8bit | ≈1,98 B | No disponible | 18 | LFM1.0 | MLX 8 bits (Apple Silicon) |
+| LFM3-Audio-2B (original) | ≈1,98 B | No disponible | 18 | LFM1.0 | BF16 (pesos completos) |
+| Otros modelos any-to-any de audio de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-Comparación cualitativa: frente a Whisper, LFM3-Audio añade TTS y diálogo hablado bidireccional, no solo transcripción. Frente a Moshi, es notablemente más pequeño (2B frente a ~7B) y ofrece una variante MLX oficial para Mac, aunque la información de benchmarks comparativos no está disponible. Los detalles completos de las alternativas pueden variar según la versión.
+La única comparación directa documentada es con el modelo base sin cuantizar, del que esta variante es una versión cuantizada a 8 bits. No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Soporte en MLX-VLM aún en desarrollo: la model card indica que el soporte estará disponible en una futura release, por lo que la integración puede requerir instalar desde la rama de desarrollo o esperar actualizaciones.
-- Exclusividad de plataforma: el formato MLX solo funciona en Apple Silicon; para Linux, Windows o GPU NVIDIA hay que usar el modelo base en BF16.
-- Cuantización a 8 bits: aunque es la configuración recomendada, puede introducir una ligera degradación de precisión frente al modelo BF16, especialmente en la generación de audio; no se publican métricas de esa degradación.
-- Restricciones de licencia: la licencia LFM1.0 es una licencia propia ("other"), no una licencia estándar abierta como Apache 2.0 o MIT; conviene revisar las condiciones de uso comercial en el archivo LICENSE antes de desplegar en producción.
-- Datos de contexto, benchmarks y composición del entrenamiento no disponibles en esta ficha, lo que dificulta evaluar a priori el rendimiento en tareas concretas.
-- Riesgo de alucinación en transcripción (ASR) y posible prosodia artificial en TTS: no documentados específicamente, pero habituales en modelos de voz generativos de este tamaño.
-- Sesgos: no documentados en la información disponible; como todo modelo de voz, puede mostrar rendimiento desigual entre acentos, registros y hablantes de los 19 idiomas soportados.
+- La cuantización a 8 bits introduce una pérdida de precisión respecto al modelo original en BF16; el autor la considera el mejor compromiso, pero no cuantifica la degradación.
+- Solo se ejecuta en Apple Silicon mediante MLX; no es portable a CUDA ni a otros backends sin conversión adicional.
+- Requiere MLX-VLM 0.7.11 o superior; versiones anteriores no son compatibles.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente en transcripciones de audio con ruido o acentos no representados en el entrenamiento.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Limitaciones de contexto: la longitud de contexto no se especifica, lo que impide planificar despliegues con audios largos sin pruebas previas.
+- Licencia LFM1.0 ("other"): es necesario revisar los términos del archivo LICENSE del repositorio antes de un uso comercial; no se detallan las restricciones en la información proporcionada.
+- El rendimiento de TTS depende de parámetros de muestreo concretos (`audio_temperature=1.0`, `audio_top_k=128`, `audio_repetition_penalty=1.1`); desviarse de los valores por defecto puede degradar la calidad.
+- No se documentan capacidades de tool calling ni de razonamiento multi-paso, por lo que no debe asumirse su disponibilidad en producción.
 
 ## Enlaces
 
-- Repositorio del modelo cuantizado: https://huggingface.co/LiquidAI/LFM3-Audio-2B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Audio-2B-MLX-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
-- MLX-VLM (repositorio GitHub): https://github.com/Blaizzy/mlx-vlm
-- Guía de despliegue MLX de Liquid AI: https://docs.liquid.ai/deployment/on-device/mlx
-- Documentación general LFM: https://docs.liquid.ai/lfm/getting-started/welcome
-- Blog de lanzamiento LFM3: https://www.liquid.ai/blog/lfm3
-- Playground de Liquid AI: https://playground.liquid.ai/
-- Consola API de Liquid AI: https://console.liquid.ai/dashboard
+- Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm
+- Guía de despliegue MLX: https://docs.liquid.ai/deployment/on-device/mlx
+- Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
+- Blog de LFM3: https://www.liquid.ai/blog/lfm3
+- Playground: https://playground.liquid.ai/
+- Consola/API: https://console.liquid.ai/dashboard

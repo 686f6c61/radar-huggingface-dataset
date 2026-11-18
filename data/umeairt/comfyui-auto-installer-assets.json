@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 175,
-  "downloads_30d": 88179,
+  "downloads_30d": 93797,
   "trending_score": 0,
   "parameters": 2091068928,
   "parameters_human": "2.09B",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "UmeAiRT/ComfyUI-Auto-Installer-Assets · Hugging Face",
-      "url": "https://huggingface.co/UmeAiRT/ComfyUI-Auto-Installer-Assets",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "UmeAiRT/ComfyUI-Auto-Installer-Assets at main - Hugging Face",
-      "url": "https://huggingface.co/UmeAiRT/ComfyUI-Auto-Installer-Assets/tree/main/models",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ComfyUI-Auto-Installer-Assets · Datasets - modelscope.ai",
-      "url": "https://www.modelscope.ai/datasets/UmeAiRT/ComfyUI-Auto-Installer-Assets",
-      "snippet": "ComfyUI Auto-Installer — Assets Pre-packaged model files and binaries for the UmeAiRT ecosystem. This repository is a pure asset store — no code, only large binary files served via Git LFS. Consumed by: ComfyUI-Auto_installer — automated Windows setup, downloads models from this repo"
-    },
-    {
-      "title": "ComfyUI-Auto-Installer-Assets: Text-to-Image model — overview, use ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/comfyui-auto-installer-assets-umeairt",
-      "snippet": "ComfyUI-Auto-Installer-Assets is a pure asset repository containing pre-packaged model files and binaries for the UmeAiRT ecosystem, maintained by UmeAiRT. This is not a model itself but rather a centralized distribution system delivering diffusion models, text encoders, LoRAs, ControlNets, VAEs, and binary dependencies for ComfyUI workflows."
-    },
-    {
-      "title": "ComfyUI-Auto_installer: Video-to-Video model — overview, use cases ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/comfyui-auto-installer-umeairt",
-      "snippet": "Overview ComfyUI-Auto_installer is an automated Windows installation script that bundles ComfyUI (a node-based interface for stable diffusion and video generation), pre-configured workflows, multiple diffusion models, custom nodes, and supporting binaries into a single downloadable package. Built by UmeAiRT, this is not a machine learning model itself but rather an installation and asset ..."
-    }
-  ]
+  "sources": []
 }

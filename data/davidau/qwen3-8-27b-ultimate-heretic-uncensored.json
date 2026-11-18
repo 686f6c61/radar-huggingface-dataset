@@ -99,31 +99,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "gooner",
-      "url": "https://chat.gooner.in/",
-      "snippet": "Meet new people and hang out. Adults (18+) only.Read more"
-    },
-    {
-      "title": "GoonGrid - The Ultimate Multi-Viewport Video Player",
-      "url": "https://goongrid.app/",
-      "snippet": "Synchronize your watching experience with GoonGrid. The ultimate multi-splitscreen video player for maximized intake."
-    },
-    {
-      "title": "Gooning Simulator",
-      "url": "https://gooningsimulator.com/",
-      "snippet": "Support us on Patreon Join the Discord Follow on Twitch Follow on TikTok Subscribe to the Newsletter."
-    },
-    {
-      "title": "GoonScroll.app",
-      "url": "https://goonscroll.app/",
-      "snippet": "Explore a wide variety of content from e621, Rule34 and more to tailor your feed and goon to your hearts desires the way you want to"
-    },
-    {
-      "title": "Home | Goonwall",
-      "url": "https://goonwall.com/en",
-      "snippet": "Who’s here and what’s open. The latest things people earned, published and started."
-    }
-  ]
+  "sources": []
 }

@@ -2,144 +2,107 @@
 
 ## Resumen
 
-Laya es un modelo de decisión no autorregresivo de tipo System 1 desarrollado por Convai Innovations. A diferencia de un LLM generativo, no produce texto libre: recibe un estado (un correo, un ticket, un documento JSON o texto plano) junto con una o varias preguntas tipadas y devuelve respuestas también tipadas acompañadas de probabilidades calibradas y puntuaciones de confianza. Al no generar lenguaje natural, elimina por diseño los errores de parseo y las alucinaciones de formato que aparecen cuando se fuerza a un modelo generativo a emitir etiquetas o valores estructurados.
+Laya es un modelo de clasificación y enrutamiento de decisiones (text-classification) desarrollado por convaiinnovations. Se presenta como un "System 1 decision model" no autorregresivo: recibe un estado (texto, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades calibradas matemáticamente en una sola pasada forward. No genera texto libre, por lo que no hay salida que parsear ni margen para alucinaciones en el sentido generativo habitual.
 
-El checkpoint publicado es la versión fine-tuned del modelo base, con especialización en triaje de correo (spam, phishing, enrutado departamental), modelado de trayectorias conversacionales mediante aprendizaje por diferencia temporal con TD(lambda = 1.0) y calibración de temperatura por cardinalidad de opciones. La arquitectura combina un backbone ModernBERT-large bidireccional de 395 M de parámetros, completamente ajustado, con una cabeza de decisión entrenada desde cero (dos capas transformer, un scorer de marcadores de opción y una cabeza de actuar/escalar), lo que da un total de 421.293.830 parámetros. El presupuesto de entrada es de 512 tokens por pregunta, incluyendo enunciado, opciones y estado.
+El modelo está orientado a tareas de guardrails, moderación, routing y scoring, y se entrena mediante aprendizaje por refuerzo contra reglas de puntuación estrictamente propias (RLCD), de modo que reportar probabilidades honestas es la única vía de maximizar la recompensa. Según la model card, opera en más de 100 idiomas con una latencia declarada de aproximadamente 33 ms por inferencia.
 
-Su relevancia actual radica en el nicho de enrutado, clasificación y decisiones calibradas en producción: el modelo reporta ECE (Expected Calibration Error) muy bajo en varias familias de tareas, lo que permite automatización selectiva con umbrales de confianza, despliegue en local o air-gapped sin egreso de datos, y una licencia Apache 2.0 sin restricciones comerciales. Los metadatos de Hugging Face indican 33 likes y 0 descargas, y fechas de creación y actualización de septiembre de 2026.
+Con 421.293.830 parámetros y un repo de 2,4 GB, Laya se posiciona como una alternativa ligera y desplegable frente a LLMs generativos para tareas de decisión acotadas. Su licencia Apache 2.0 y su compatibilidad con endpoints lo hacen apto para uso comercial, y la existencia de variantes (laya-multilingual, laya-typed-decisions) y de un flujo de fine-tuning publicado amplían su aplicabilidad en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer bidireccional encoder-only; backbone ModernBERT-large (395 M, fully fine-tuned) mas cabeza de decision propia (2 capas transformer, scorer de marcadores de opcion, cabeza act/escalate) |
-| Parametros totales | 421.293.830 (421 M) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 512 tokens por pregunta (pregunta + opciones + estado) |
-| Tipos de cuantizacion | no disponible (el repo pesa 0,8 GB en safetensors) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer no autorregresivo (decision model, segun model card) |
+| Parametros totales | 421.293.830 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 1.024 tokens por defecto; hasta 8.192 tokens con `max_len=8192` en laya-multilingual |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | 100+ idiomas (segun model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors; libreria transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo no es un decoder generativo sino un encoder bidireccional con una cabeza de decisión. El backbone es ModernBERT-large (395 M de parámetros) y se ajusta por completo, preservando la atención bidireccional que, según la model card, resulta útil para capturar contradicciones en tareas de verificación de hechos. Sobre él se apila una cabeza entrenada desde cero formada por dos capas transformer, un scorer de marcadores de opción y una cabeza de actuar/escalar. El mecanismo de decisión es el de marcadores de opción: cada opción se puntúa en su propio token `[MASK]` y después se aplica un softmax restringido al conjunto de opciones de esa pregunta. El modelo admite tres tipos de pregunta: `choice` (opción seleccionada, probabilidades por opción y confianza calibrada), `score` (nivel esperado en una rúbrica ordinal, distribución y confianza) y `noul` (probabilidad booleana calibrada P(true) entre 0,0 y 1,0). Todas las preguntas de una petición se evalúan en un único forward pass.
+La model card describe Laya como un modelo de decisión no autorregresivo de tipo System 1: en lugar de generar tokens secuencialmente, produce directamente respuestas tipadas (choice, score, noul) a partir de un estado y un conjunto de preguntas tipadas, en una única pasada forward. El checkpoint base tiene 421.293.830 parámetros y se distribuye en formato safetensors para transformers. Internamente se apoya en un Router que detecta script e idioma y enruta la entrada al checkpoint adecuado (english o multilingual).
 
-El entrenamiento se realizó con RLCD (Reinforcement Learning for Calibrated Decisions). La política emite una distribución de probabilidad, la exploración añade ruido gaussiano de media cero a los logits y la recompensa es una regla de puntuación estrictamente propia (log score y spherical score, más ranked probability score para las preguntas ordinales), de modo que el máximo de recompensa esperada solo se alcanza emitiendo probabilidades verdaderas y calibradas. Para diálogos multi-turno se emplea aprendizaje por diferencia temporal con objetivos Monte Carlo (TD(lambda = 1.0)) sobre cortes de prefijo, lo que evita la filtración del desenlace. Los datos son, según el autor, 100 % anotados por humanos y sin atajos sintéticos. El ajuste consistió en 7.313 actualizaciones, una época y aproximadamente 1,96 horas de cómputo, con temperaturas de calibración ajustadas de 1,637, 1,251 y 1,983 según el número de opciones.
+El entrenamiento emplea aprendizaje por refuerzo contra reglas de puntuación estrictamente propias (RLCD, segun la model card), lo que incentiva la calibración de las probabilidades reportadas. El trabajo se documenta en el preprint "From Laya to Vega: Open Non-Autoregressive Decision Models with Calibrated Probabilities" (Preprints, 2026). Existe además un checkpoint afinado, laya-typed-decisions, entrenado sobre 2.000 decisiones de cuatro workflows; no se detalla en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Clasificación y enrutado con probabilidades calibradas: enrutado de intención y de cliente con 99,1 % de accuracy y ECE de 0,009 reportados.
-- Triaje de correo: detección de spam y phishing y enrutado departamental, con 73,2 % de accuracy y ECE de 0,017.
-- Moderación y seguridad de contenido: 96,7 % de accuracy con ECE de 0,061.
-- Análisis de emoción y tono: 90,6 % de accuracy con ECE de 0,018.
-- Verificación de hechos e inferencia: 88,3 % de accuracy con ECE de 0,054, apoyada en atención bidireccional para detectar contradicciones.
-- Preguntas de tipo booleano calibrado (`noul`), útil para decidir si actuar o escalar a un humano.
-- Preguntas de tipo ordinal (`score`), para rúbricas con niveles 0, 1, 2, etcétera.
-- Modelado de trayectorias conversacionales multi-turno mediante TD(lambda = 1.0), con asignación temporal de crédito en lugar de instantáneas estáticas de estado.
-- Decisión de actuar o escalar mediante una cabeza dedicada, apta para automatización selectiva con umbrales de confianza.
-- Procesamiento por lotes de múltiples preguntas en un solo forward pass.
-- No genera texto libre: no hay soporte de tool calling, function calling ni razonamiento multi-paso en el sentido de un agente generativo.
-- No se documentan capacidades de visión, audio ni modo thinking.
+- Clasificación y decisión tipada: respuestas de tipo choice (selección entre criterios), score (puntuación ordinal) y noul (probabilidad de sí/no).
+- Calibración de probabilidades: entrenamiento RLCD orientado a que las probabilidades reportadas sean honestas y matemáticamente calibradas.
+- Routing y scoring: enrutamiento a departamentos o categorías y puntuación de urgencia, riesgo, etc.
+- Guardrails y moderación: evaluación de contenido y políticas mediante preguntas tipadas.
+- Multilingüe: más de 100 idiomas, con detección automática de script e idioma por parte del Router.
+- Documentos largos: lectura de hasta 8.192 tokens con `max_len=8192` en laya-multilingual.
+- Sin generación de texto: la salida es estructurada, lo que elimina el parseo de texto libre.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-step: no disponible en la información proporcionada.
+- Modo thinking, vision o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Triaje de bandeja de entrada corporativa: el modelo recibe el asunto y el cuerpo del correo y devuelve el departamento destino, la urgencia y una probabilidad de phishing. Con 512 tokens de presupuesto por pregunta y ECE de 0,017, es adecuado para enrutar automáticamente y escalar solo los casos de baja confianza.
-- Automatización selectiva de atención al cliente: usando la cabeza act/escalate y un umbral de confianza (por ejemplo, 0,85), el modelo reporta 92,2 % de accuracy con 50 % de cobertura, lo que permite automatizar la mitad del volumen y derivar el resto a agentes humanos.
-- Moderación de contenido en plataformas: clasificación de contenido dañino con 96,7 % de accuracy y ECE de 0,061, integrable en un pipeline previo a la revisión humana para priorizar la cola de moderación.
-- Enrutado de intención en asistentes conversacionales: dado un turno del usuario, asignar la intención a una de N opciones con distribución de probabilidad, útil para decidir qué flujo o skill activar.
-- Verificación de afirmaciones en documentación o soporte: al recibir un estado y una afirmación, el tipo `noul` devuelve P(true) calibrada; con 88,3 % de accuracy y atención bidireccional, sirve para detectar contradicciones entre fuentes.
-- Análisis de tono y sentimiento en encuestas o conversaciones: asignación de categoría emocional con 90,6 % de accuracy y ECE de 0,018, aprovechable para paneles de calidad y alertas tempranas.
-- Cumplimentación de formularios estructurados a partir de texto: como la salida es tipada (opción o nivel ordinal), se evita el parseo frágil de JSON generado y se puede escribir directamente en una base de datos.
-- Despliegue air-gapped en sectores regulados: al ejecutarse en local sobre CPU, MPS de Apple o GPU de gama media y no requerir egreso de datos, encaja en entornos con requisitos de GDPR o HIPAA.
-- Preprocesado de alto volumen en pipelines batch: con 721,4 ms para 50 preguntas en GPU, permite etiquetar grandes lotes de tickets o correos sin coste por token.
+- Enrutamiento de tickets de soporte: dado el texto de un ticket, Laya responde a una pregunta choice con criterios (billing, technical, other) y devuelve la probabilidad asociada, integrándose en un sistema de asignación automática de colas.
+- Detección de riesgo de churn: con una pregunta de tipo noul ("¿el usuario amenaza cancelar?"), el modelo devuelve la probabilidad de abandono para priorizar acciones de retención.
+- Puntuación de urgencia: mediante preguntas score con criterios ordinales ("not urgent", "soon", "blocking"), permite clasificar la severidad de incidencias y correos entrantes.
+- Moderación y guardrails: evaluación de contenido frente a políticas mediante preguntas tipadas, con probabilidades calibradas que facilitan fijar umbrales de bloqueo o revisión humana.
+- Clasificación multilingüe de correos: el Router detecta el idioma y envía texto no inglés a laya-multilingual, permitiendo clasificar mensajes en decenas de idiomas con una sola llamada.
+- Análisis de documentos largos: con `max_len=8192`, laya-multilingual puede responder preguntas sobre documentos de hasta aproximadamente 4.000 tokens con alta fiabilidad declarada (16-18 de 20 aciertos segun la model card).
+- Fine-tuning por dominio: entrenar un checkpoint propio sobre decisiones de la empresa usando el notebook publicado para 2x T4 de Kaggle, elevando la precisión de 0,362 (base) a 0,766 (laya-typed-decisions) en el benchmark de decisiones tipadas.
+- Despliegue como servidor: extras `laya[serve]`, `laya[mcp]` y `laya[langchain]` permiten exponer el modelo por HTTP, vía MCP o integrarlo en LangChain/LangGraph.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados en la model card para este checkpoint:
-
-| Metrica / dimension | TypeSafe Jev (publicado) | Laya (checkpoint fine-tuned) |
+| Benchmark | Modelo | Resultado |
 |---|---|---|
-| Latencia P50 (1 pregunta) | ~400 ms de media (70 a 500 ms, mejor 150 ms) | 38,4 ms (p95: 42,1 ms) |
-| Latencia por lotes (10 preguntas) | ~1.500 ms (serial) / ~400 ms | 156,0 ms (p95: 158,4 ms) |
-| Latencia por lotes (50 preguntas) | varios segundos / limitado por rate limits | 721,4 ms |
-| Accuracy de benchmark | 67,8 % (4 flujos de produccion) | 83,8 % macro accuracy in-task |
-| Intencion y enrutado de cliente | ~95 a 98 % de acuerdo | 99,1 % accuracy (ECE: 0,009) |
-| Moderacion y seguridad de contenido | ~92 a 95 % de acuerdo | 96,7 % accuracy (ECE: 0,061) |
-| Inferencia y verificacion de hechos | no reportado por separado | 88,3 % accuracy (ECE: 0,054) |
-| Tareas de seguimiento de instrucciones | conjunto interno propietario | 87,8 % in-task / 86,3 % zero-shot |
-| Triaje de correo y phishing | flujo personalizado del proveedor | 73,2 % accuracy (ECE: 0,017) |
-| Automatizacion selectiva (50 % cobertura) | afirma escalado a humanos | 92,2 % accuracy (ECE: 0,041) |
-| Pesos y codigo | cerrado / API propietaria | Apache 2.0, 100 % abierto |
-| Coste de inferencia | 0,042 USD por 1 M de tokens de entrada | 0,00 USD en self-hosting |
-| Modelado de trayectoria multi-turno | instantaneas estaticas de estado | TD(lambda = 1.0) sobre prefijos |
-| Modo de despliegue | solo nube con egreso | air-gapped / local / on-device |
+| Typed-decisions benchmark (2.000 decisiones, 4 workflows) | laya-typed-decisions (fine-tuned) | 0,766 accuracy |
+| Typed-decisions benchmark (2.000 decisiones, 4 workflows) | Checkpoint base english | 0,362 accuracy |
+| Long-context (laya-multilingual, 8.192 tokens) | Documentos de hasta ~4.000 tokens | 16-18 de 20 respuestas correctas |
+| Long-context (laya-multilingual, 8.192 tokens) | Documentos más largos | 8-17 de 20 respuestas correctas |
+| Latencia declarada | Inferencia single forward pass | ~33 ms |
+| Latencia long-context (Apple GPU) | Entrada de 4.000 tokens | ~1,7 s |
 
-Evaluacion de este checkpoint:
-
-| Conjunto | Macro accuracy | Macro ECE |
-|---|---|---|
-| Test in-task | 0,838 | 0,060 |
-| Zero-shot (familias de tarea no vistas) | 0,651 | 0,207 |
-
-Desglose por familia de tarea:
-
-| Familia | Accuracy | ECE |
-|---|---|---|
-| Intencion y enrutado | 0,991 | 0,009 |
-| Moderacion y seguridad | 0,967 | 0,061 |
-| Emocion y tono | 0,906 | 0,018 |
-| Triaje de correo y phishing | 0,732 | 0,017 |
-| Inferencia y verificacion de hechos | 0,883 | 0,054 |
-
-Los diagramas de fiabilidad y las curvas de riesgo-cobertura detallados se encuentran en el directorio `eval/` del repositorio. No se han publicado resultados de MMLU, HumanEval ni GSM8K, y no procede compararlos porque el modelo no es generativo.
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en funcion del tamano (421 M de parametros): aproximadamente 1,7 GB en FP32, 0,85 GB en FP16/BF16, 0,43 GB en INT8 y 0,21 GB en INT4, sin contar activaciones ni overhead del runtime.
-- El repositorio publicado ocupa 0,8 GB, coherente con pesos en precision de 16 bits.
-- Cabe con holgura en GPU de consumo: cualquier RTX con 4 GB o mas (RTX 3050, 3060, 4060, 4090) es suficiente incluso en FP32.
-- La model card indica que se ejecuta en GPU commodity, MPS de Apple y CPU, lo que permite despliegue en portatiles y nodos sin acelerador.
-- GPU de centro de datos (A100, H100) no son necesarias, aunque pueden aprovecharse para maximizar el throughput en mini-batches paralelos.
-- Opciones de despliegue: la libreria oficial `laya` (`pip install laya`) con `laya.load("convaiinnovations/laya")`, y por tag `endpoints_compatible` tambien es compatible con Hugging Face Inference Endpoints. No se documentan integraciones especificas con vLLM, llama.cpp, Ollama o TGI.
-- Latencia reportada en GPU: 38,4 ms de mediana para 1 pregunta (p95 42,1 ms), 156,0 ms para 10 preguntas en un solo forward pass y 721,4 ms para 50 preguntas. El rango citado para el forward pass completo es de 33 a 38 ms.
-- Throughput aproximado derivado de esas cifras: en torno a 26 preguntas por segundo en regimen de 1 pregunta y en torno a 69 preguntas por segundo en lotes de 50, sobre hardware GPU no especificado.
+- VRAM estimada: no disponible de forma explícita; con 421,3 M parámetros, los pesos en fp32 ocuparían aproximadamente 1,7 GB y en fp16 unos 0,85 GB, aunque la model card no confirma tipos de cuantización.
+- GPU recomendadas: no disponible; la model card menciona ejecución en Apple GPU para long-context y entrenamiento en 2x T4 de Kaggle.
+- Consumer GPU: por tamaño de parámetros, es plausible en GPU consumer, pero no se confirma en la información disponible.
+- Opciones de despliegue: librería `laya` (pip), `laya[serve]` (servidor HTTP), `laya[mcp]` (servidor MCP), `laya[langchain]` (LangChain/LangGraph), `laya[onnx]` (ONNX Runtime), `laya[fast]` (TileLang GPU fast path), además de endpoints compatibles y deploy en Azure.
+- Latencia y throughput: ~33 ms por inferencia declarada; ~1,7 s para 4.000 tokens en Apple GPU. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-La unica alternativa con datos en la informacion disponible es TypeSafe Jev, que se incluye en la tabla de benchmarks anterior. La model card lo describe como propietario, cerrado y solo en nube, con coste recurrente de 0,042 USD por millon de tokens de entrada, mientras que Laya es Apache 2.0, self-hostable y sin coste de inferencia.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Laya | 421,3 M | 1.024 (hasta 8.192 en multilingual) | Decision/clasificacion tipada con probabilidades calibradas | Apache 2.0 | Hugging Face, pip, endpoints |
+| laya-typed-decisions | no disponible | no disponible | Decision tipada afinada | no disponible | Hugging Face |
+| Vega | no disponible | no disponible | Decision model (mismo preprint) | no disponible | studio.embedding.in |
 
-| Criterio | Laya | TypeSafe Jev |
-|---|---|---|
-| Parametros | 421 M (395 M de backbone + cabeza) | no disponible |
-| Contexto | 512 tokens por pregunta | no disponible |
-| Accuracy de benchmark | 83,8 % in-task | 67,8 % |
-| Calibracion | Macro ECE 0,060 in-task | no disponible |
-| Licencia | Apache 2.0 | propietaria |
-| Disponibilidad | pesos abiertos en Hugging Face | API en la nube |
-
-No hay informacion disponible sobre otros modelos comparables de la misma categoria (clasificadores calibrados con salida tipada) en el material proporcionado. Conviene senalar que un encoder clasico como DeBERTa o RoBERTa fine-tuneado ocuparia el mismo nicho funcional, pero no se dispone de datos comparativos verificables en esta ficha.
+No se dispone de datos suficientes sobre modelos de terceros comparables en la información proporcionada; por tanto, la comparativa con alternativas externas queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto: cualquier caso de uso que requiera respuesta en lenguaje natural, resumen o explicacion necesita combinarlo con un LLM aparte.
-- La precision zero-shot cae de forma notable respecto al rendimiento in-task (0,651 de accuracy y ECE de 0,207 frente a 0,838 y 0,060), por lo que en familias de tarea no vistas la calibracion se degrada y no conviene confiar en umbrales de confianza trasladados sin recalibrar.
-- El triaje de correo y phishing es la familia con peor accuracy reportada (0,732), por debajo del resto; en un escenario de seguridad conviene mantener revision humana.
-- Las tareas ordinales y booleanas dependen de una rubrica o definicion de opciones bien disenada; opciones ambiguas o solapadas degradaran la calibracion.
-- La ventana de 512 tokens por pregunta es el limite practico: estados largos (correos extensos, documentos grandes) requieren truncado o troceado, con la perdida de contexto que ello implica.
-- No se declaran idiomas soportados. El backbone ModernBERT esta entrenado mayoritariamente en ingles y la model card esta en ingles, pero no hay confirmacion oficial del comportamiento multilingue, asi que debe validarse antes de usarlo en castellano u otros idiomas.
-- No se documentan sesgos conocidos ni evaluaciones de sesgo en la informacion disponible.
-- El riesgo de alucinacion de contenido es nulo por diseno, ya que la salida se restringe a un conjunto de opciones o a un valor calibrado; el riesgo residual es de mala calibracion o de etiquetas de opcion mal definidas.
-- La licencia Apache 2.0 permite uso comercial sin restricciones declaradas, pero procede revisar las condiciones de los datos de entrenamiento anotados por humanos si se pretende redistribuir el modelo para fines regulados.
-- Los datos de latencia no especifican la GPU empleada, por lo que las cifras deben tomarse como referencia y no como garantia en hardware distinto.
-- El modelo tiene 0 descargas y 33 likes en Hugging Face, sin adopcion publica documentada ni ecosistema de terceros; el soporte depende del autor.
-- Las fechas de creacion y actualizacion del repositorio (septiembre de 2026) son posteriores a la fecha habitual de referencia, lo que sugiere metadatos anomales o generados automaticamente.
+- No genera texto: solo responde a preguntas tipadas predefinidas; no sirve para generación libre, resumen o chat abierto.
+- Calibración dependiente del dominio: la precisión del checkpoint base es baja (0,362) en el benchmark de decisiones tipadas; el fine-tuning por dominio es clave para resultados útiles.
+- Contexto limitado por defecto: el límite de 1.024 tokens trunca documentos largos si no se pasa `max_len=8192`; incluso con 8.192, la fiabilidad decae en documentos muy largos (8-17 de 20 aciertos).
+- Riesgo de enrutamiento incorrecto: textos mayoritariamente en inglés pueden dirigirse al checkpoint english aunque convenga el multilingual, si no se especifica `model="multilingual"`.
+- Idiomas: se declaran 100+ idiomas, pero no se detalla cobertura ni calidad por idioma.
+- Sesgos: no disponible en la información proporcionada.
+- Alucinación: el modelo no genera texto, pero la probabilidad reportada puede estar mal calibrada fuera de la distribución de entrenamiento; conviene validar con datos propios.
+- Licencia Apache 2.0: permite uso comercial con atribución y conservación de avisos; revisar términos del preprint y del servicio Studio.
+- Dependencia de servicios externos: Studio (studio.embedding.in) para entrenar motores de decisión propios; crédito gratuito inicial de 10 USD, condiciones comerciales no detalladas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/convaiinnovations/laya
-- Repositorio de evaluacion (directorio `eval/` dentro del modelo): https://huggingface.co/convaiinnovations/laya/tree/main/eval
-- Paquete de Python `laya`, instalable con `pip install laya` (no se ha encontrado enlace a repositorio publico en la informacion disponible)
-- Pagina del autor en Hugging Face: https://huggingface.co/convaiinnovations
-
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los unicos resultados obtenidos fueron paginas del servicio de correo TIM Mail, sin relacion con esta ficha. Por tanto, no hay enlaces adicionales a papers, blogs, repositorios o demos que se puedan citar.
+- [Hugging Face: convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya)
+- [Checkpoint afinado laya-typed-decisions](https://huggingface.co/convaiinnovations/laya-typed-decisions)
+- [Preprint: From Laya to Vega](https://doi.org/10.20944/preprints202611.0781.v1)
+- [GitHub: NandhaKishorM/laya](https://github.com/NandhaKishorM/laya)
+- [README GitHub (instalacion)](https://github.com/NandhaKishorM/laya#installation-details)
+- [README GitHub (fine-tuning)](https://github.com/NandhaKishorM/laya#fine-tuning)
+- [Notebook de fine-tuning en Kaggle (2x T4)](https://github.com/NandhaKishorM/laya/blob/main/notebooks/laya_finetune_typed_decisions_2xT4_kaggle.ipynb)
+- [Script de benchmark long-context](https://github.com/NandhaKishorM/laya/blob/main/research/scripts/bench_long_context.py)
+- [Documentacion: nandhakishorm.github.io/laya](https://nandhakishorm.github.io/laya)
+- [Studio de Embedding Space](https://studio.embedding.in)

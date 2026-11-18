@@ -2,88 +2,105 @@
 
 ## Resumen
 
-`Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit` es un empaquetado del modelo multimodal `Qwen/Qwen3.8-Flash-Next` creado por ddalcu, optimizado para ejecutarse en Apple Silicon mediante el servidor de inferencia nativo `mlx-serve`. Este modelo representa una vista previa de la arquitectura Qwen4 (`qwen4_exp`), que combina un tronco MoE con Gated DeltaNet, atención dispersa (sparse attention) y una tabla de embeddings de n-gramas de 51 mil millones de parámetros. La versión cuantizada aquí presentada reduce el peso total a unos 21 mil millones de parámetros en los shards safetensors (más la tabla n-gram en un archivo binario separado), lo que permite ejecutarlo en un Mac con 128 GB de memoria unificada con unos 75 GB de uso residente.
+Qwen3.8-Flash-Next es un modelo de lenguaje de tipo transformer disperso (MoE) desarrollado por el equipo Qwen de Alibaba, distribuido originalmente bajo el identificador `Qwen/Qwen3.8-Flash-Next`. Esta ficha describe la conversión a formato MLX realizada por el usuario ddalcu para su uso con la herramienta `mlx-serve` en hardware Apple Silicon. El pack emplea cuantización mixta: 4 bits para los expertos enrutados y 8 bits para el resto del tronco, con el objetivo de que el modelo quepa en un Mac de 128 GB de memoria unificada con unos 75 GB residentes.
 
-El modelo original, desarrollado por Alibaba Qwen, está pensado para tareas de generación de texto, razonamiento avanzado, generación de código, matemáticas y comprensión multimodal (imagen y vídeo), con una ventana de contexto nativa de 262 144 tokens. Esta versión MLX mantiene todas las capacidades del original, incluyendo el cabezal de decodificación especulativa MTP (Multi-Token Prediction) y la torre de visión, y está dirigida a desarrolladores que quieren ejecutar un modelo de gran tamaño localmente en hardware Apple sin necesidad de GPU dedicada. Su relevancia radica en que demuestra cómo arquitecturas de nueva generación pueden desplegarse en entornos de memoria unificada con un rendimiento práctico medible.
+La arquitectura, etiquetada internamente como `qwen4_exp`, introduce tres innovaciones destacables respecto a generaciones anteriores: flujos residuales con compuertas (gated residual streams) de cuatro vías, una tabla de embeddings de n-gramas de 51B parámetros indexada por bigramas y trigramas hasheados de los token ids, y un mecanismo de atención dispersa (Qwen Sparse Attention) que mantiene el coste de atención plano más allá de los 2048 tokens. El contexto nativo es de 262 144 tokens y el checkpoint completo suma aproximadamente 180B parámetros (125B de tronco más 51B de n-gramas más 4B de la cabeza MTP).
+
+El modelo es relevante porque demuestra una vía práctica para ejecutar un modelo de escala frontier en hardware de consumo de gama alta (Mac Studio/MacBook Pro con M4 Max), algo impensable con arquitecturas densas equivalentes. Además, el pack incluye la torre de visión (entrada de imagen y vídeo) y la cabeza de decodificación especulativa MTP, lo que lo convierte en una opción completa para inferencia local multimodal.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (Gated DeltaNet + Gated Attention + Sparse Attention) sobre Qwen4 preview (`qwen4_exp`) |
-| Parametros totales | 21 058 910 099 (en safetensors, excluye tabla n-gram); modelo original: 180B (125B trunk + 51B n-gram + 4B MTP) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262 144 tokens (nativo) |
-| Tipos de cuantizacion | 4-bit (expertos enrutados, embeddings, tabla n-gram), 8-bit (atención, GDN, hyper-connections, indexer, expertos compartidos, lm_head), bf16 (routers, gates, norms, convs, estado SSM) |
+| Arquitectura | Transformer MoE disperso (`model_type: qwen4_exp`) con GDN, atención dispersa, gated residual streams y embeddings de n-gramas |
+| Parametros totales | 133.195.562.899 (safetensors del pack); el checkpoint completo original es ~180B (125B tronco + 51B n-gramas + 4B MTP) |
+| Parametros activos | no disponible (512 expertos enrutados en 48 capas; no se especifica el número activado por token) |
+| Longitud de contexto | 262 144 tokens nativos |
+| Tipos de cuantizacion | Mixta: 4 bits grupo 64 (expertos enrutados, embed_tokens), 8 bits grupo 64 (atención, GDN, hyper-connections, indexer, shared experts, lm_head), 4 bits grupo 32 (tabla n-gram), bf16 (routers, gates, norms, convs, estado SSM, torre de visión) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 |
-| Formato de pesos | safetensors (shards) + `ngram_table.bin` (formato safetensors, extensión `.bin`) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors (shards) + `ngram_table.bin` (32 GB, safetensors con extensión `.bin`) + `model-vision.safetensors` (~0.9 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue el diseño GDN + MoE introducido por Qwen, con tres innovaciones clave respecto a generaciones anteriores. Primero, utiliza **flujos residuales con compuerta** (gated residual streams): el residual se divide en 4 flujos de 2560 dimensiones cada uno, y cada bloque lee una media ponderada por sigmoide de los flujos normalizados y escribe a través de compuertas escalares por flujo. Segundo, incorpora un **embeddings de n-gramas** de 51 mil millones de parámetros: una tabla adicional indexada por bigramas y trigramas hasheados de los token ids, con 16 cabezas, cada una con un espacio de cubos de tamaño primo de ~20 millones de filas y 160 dimensiones por fila. Esta tabla es una búsqueda sin cómputo, lo que explica que el modelo se cite como 125B (tronco) + 51B (n-gram) + 4B (MTP) = 180B. Tercero, emplea **Qwen Sparse Attention**: más allá de los primeros 2048 tokens, cada capa de atención solo lee los 512 bloques de 4 tokens más relevantes por consulta (seleccionados por un indexador pequeño), más el bloque parcial propio, manteniendo el coste de atención plano con la longitud de contexto.
+El tronco combina capas de atención con Gated DeltaNet (GDN) y un MoE con 512 expertos enrutados distribuidos en 48 capas (los 121B parámetros del pack). Sobre esa base, el modelo introduce tres elementos diferenciales. Primero, flujos residuales de cuatro vías (4 x 2560 dimensiones): cada bloque lee una media mezclada por sigmoide de los flujos normalizados y escribe de vuelta mediante compuertas escalares por flujo, sustituyendo la norma final habitual por un mezclador final. Segundo, una tabla de embeddings de n-gramas de 51B parámetros con 16 cabezas, cada una con un espacio de buckets de tamaño primo (~20M filas) y 160 dimensiones por fila, indexada por bigramas y trigramas hasheados de los ids de token e inyectada una sola vez antes de la capa 1; al ser una búsqueda pura no consume cómputo. Tercero, Qwen Sparse Attention: a partir de 2048 tokens, cada capa de atención solo lee los 512 bloques de 4 tokens más relevantes por consulta (seleccionados por un indexador pequeño) más el bloque parcial propio de la consulta, de modo que el coste de atención se mantiene constante con la longitud del contexto.
 
-El entrenamiento del modelo base no está detallado en la información disponible; no se especifican el número de tokens, la composición del dataset ni si se aplicaron métodos de alineación como RLHF o DPO. El empaquetado MLX cuantiza los pesos con precisión mixta: expertos enrutados, embeddings y la tabla n-gram a 4-bit (grupo 64, y grupo 32 para la tabla n-gram), mientras que atención, GDN, hyper-connections, indexador, expertos compartidos y la cabeza de salida se mantienen a 8-bit; los routers, normas, convoluciones y el estado SSM permanecen en bf16. La tabla n-gram se almacena en un archivo binario separado que se mapea en memoria (mmap) y se dequantiza por CPU por token, evitando que resida permanentemente en la GPU.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. El pack incluye la cabeza MTP (multi-token prediction) de una capa del checkpoint original, que actúa como mecanismo de decodificación especulativa. La conversión a MLX aplica varias transformaciones: el `+1` de cada RMSNorm `(1 + w)` se pliega en el peso almacenado, las convoluciones depthwise se transponen al formato `[C, K, 1]` de MLX y `experts.gate_up_proj` se divide en `switch_mlp.gate_proj` y `up_proj`. La tabla de n-gramas se almacena como un único fichero de 32 GB que `mlx-serve` mapea en memoria (mmap) y del que desquantiza en CPU las 16 filas necesarias por token (16 x 80 bytes), subiendo solo el vector resultante de 2560 dimensiones a la GPU; así la tabla nunca pasa a ser residente y su coste es solo page cache.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional multi-turno con modo de pensamiento (thinking) activado por defecto.
-- Generación de código, soporte de matemáticas y razonamiento simbólico avanzado.
-- Comprensión multimodal: entrada de imágenes y vídeo a través de una torre de visión estilo Qwen3-VL (densa en bf16, ~0.9 GB).
-- Tool calling y function calling mediante el formato XML de Qwen3.8; `mlx-serve` parsea y coacciona el esquema automáticamente.
-- Capacidades de agente con razonamiento multi-paso y uso de herramientas.
-- Ventana de contexto nativa de 262 144 tokens con atención dispersa que mantiene el coste de atención plano más allá de 2048 tokens.
-- Decodificación especulativa MTP (Multi-Token Prediction) opcional, que acelera la generación en código hasta un 41% en las mediciones reportadas.
-- Soporte multilingüe (idiomas no especificados en la documentación del empaquetado).
+- Generación de texto conversacional y razonamiento multi-turno con contexto nativo de 262 144 tokens.
+- Modo de pensamiento (thinking) activado por defecto según la model card del pack.
+- Entrada multimodal de imagen y vídeo mediante la torre de visión incluida (`model-vision.safetensors`).
+- Decodificación especulativa con la cabeza MTP propia del checkpoint (`--mtp` o `"enable_mtp": true` por petición).
+- Atención dispersa que mantiene el coste plano en contextos largos; recuperación de información tipo needle a 24,8k tokens verificada con atención dispersa activa.
+- Caché de prefijo (prefix cache) activada, incluyendo imágenes, para evitar re-prefill en turnos de seguimiento.
+- Capacidades multilingües: no disponible (no se especifican idiomas).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de programación con contexto largo: el modelo puede manejar repositorios completos o archivos de gran tamaño gracias a sus 262k tokens de contexto y a la atención dispersa, manteniendo una velocidad de decodificación estable. Es adecuado para generación de código, refactorización y explicación de código heredado.
-- Análisis de documentos extensos: con la ventana de 262k tokens, se pueden procesar manuales técnicos, contratos o investigaciones completas en una sola pasada, extrayendo información relevante sin necesidad de dividir el texto.
-- Agente autónomo con herramientas: al soportar tool calling en formato XML y razonamiento multi-paso, puede integrarse en pipelines de automatización que requieran consultar APIs, ejecutar comandos o interactuar con bases de datos.
-- Asistencia multimodal para soporte técnico: la torre de visión permite analizar capturas de pantalla, diagramas o vídeos de errores, combinando la comprensión visual con instrucciones de resolución.
-- Generación de documentación técnica: a partir de código fuente o especificaciones, el modelo puede redactar guías, comentarios y resúmenes con razonamiento contextual profundo.
-- Investigación y síntesis de literatura: el modo thinking y la capacidad de razonamiento avanzado permiten resumir y comparar artículos científicos, extrayendo conclusiones y detectando inconsistencias.
-- Despliegue local en Mac con memoria unificada: al no requerir GPU VRAM dedicada, es viable en equipos Apple Silicon de gama alta para desarrollo y pruebas sin depender de servicios en la nube.
+- Asistencia de código en local sobre Mac: el pack acelera la decodificación un 41% con MTP en prompts de código (frente a una ligera penalización en prosa), por lo que resulta adecuado para autocompletado y generación de funciones en un entorno de desarrollo sin conexión a la nube.
+- Análisis de documentos largos: con 262k tokens de contexto nativo y atención dispersa de coste plano, se pueden procesar contratos, informes o bases de código extensas en una sola pasada sin truncar.
+- Procesamiento de vídeo e imagen: la torre de visión incluida permite tareas de descripción, extracción de información o respuesta a preguntas sobre fotogramas y capturas, con caché de prefijo que acelera turnos sucesivos sobre la misma entrada visual.
+- Inferencia privada en hardware de consumo: al ejecutarse íntegramente en un Mac de 128 GB con ~75 GB residentes, es viable para datos sensibles que no pueden salir del dispositivo (sanidad, legal, finanzas).
+- Prototipado de agentes conversacionales multi-turno: el contexto largo y el modo thinking por defecto permiten mantener historiales extensos y razonamientos encadenados en una única sesión local.
+- Investigación sobre arquitecturas MoE y n-gram embeddings: el pack expone una implementación funcional de gated residual streams, atención dispersa y tabla de n-gramas mmap, útil para experimentos de eficiencia y comparación de mecanismos de recuperación léxica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) específicos para este empaquetado cuantizado. La documentación del modelo base en unsloth afirma que `Qwen3.8-Flash-Next` supera a Claude-4.6-Opus (Max) en ciertas tareas, pero no se proporcionan cifras concretas en la información disponible. Las mediciones de rendimiento reportadas por el autor del empaquetado se centran en velocidad de inferencia en un M4 Max de 128 GB:
+No se han publicado resultados de benchmarks en la informacion disponible.
 
-- Decodificación serial: ~60 tokens/s
-- Decodificación con MTP: ~78 tokens/s (un +41% en código, unos pocos puntos porcentuales más lento en prosa)
-- Prefill: ~730 tokens/s
-- Recuperación de una aguja a 24.8k tokens con atención dispersa activada
-- Memoria residente: ~75 GB (más caché KV)
+Los únicos datos de rendimiento medidos disponibles son de inferencia, sobre un M4 Max de 128 GB con mlx-serve 26.8.11:
 
-Estos datos son de referencia y pueden variar según la configuración del hardware y la versión de `mlx-serve`.
+| Metrica | Valor |
+|---|---|
+| Memoria residente | ~75 GB (mas cache KV) |
+| Decodificacion en serie | ~60 tok/s |
+| Decodificacion con MTP | ~78 tok/s (+41% en codigo, -4% en prosa, -4% en prompt de 8,5k tokens) |
+| Prefill | ~730 tok/s |
+| Recuperacion needle | 24,8k tokens recuperados con atencion dispersa activa |
+| KLD mediana vs bf16 | 0,0066 (top-1 87,9%) |
 
 ## Requisitos de hardware
 
-- Memoria: se requiere aproximadamente 75 GB de memoria unificada residente más la caché KV. El autor recomienda un Mac con 128 GB de RAM unificada; con `--kv-quant 8` la caché KV se reduce a la mitad.
-- GPU: no requiere GPU dedicada; funciona en Apple Silicon (M4 Max probado). No cabe en GPUs consumer típicas (RTX 4090, etc.) debido a la limitación de VRAM, ya que la tabla n-gram y los pesos cuantizados superan los 24 GB.
-- Opciones de despliegue: exclusivamente con `mlx-serve` (servidor nativo para Apple Silicon, compatible con API OpenAI y Anthropic). No se menciona soporte para vLLM, llama.cpp u Ollama en esta versión.
-- Latencia y throughput: en M4 Max 128 GB, decode ~60-78 tok/s, prefill ~730 tok/s. El servidor v1 procesa una petición a la vez (sin batching), con caché de prefijo activada para turnos consecutivos.
-- Almacenamiento: el repo ocupa 107.3 GB en disco; la tabla n-gram se mapea en memoria y su coste es de page cache, que el sistema operativo gestiona.
+- VRAM/memoria unificada: ~75 GB residentes más caché KV; `--kv-quant 8` reduce la caché a la mitad. La tabla de n-gramas (32 GB) no es residente (mmap + page cache).
+- Hardware objetivo: Mac con 128 GB de memoria unificada (M4 Max medido). Para Macs de 64 GB existe el pack iQ-MLX-3.3bpw (52 GB residentes, 86 GB de descarga). Para más de 128 GB, el pack de 8 bits (137 GB residentes, 195 GB de descarga).
+- GPU NVIDIA: no aplicable; el pack es específico de MLX (Apple Silicon). No se documenta despliegue en CUDA.
+- Despliegue: `mlx-serve` (versión medida 26.8.11), con soporte de MTP, caché de prefijo y cuantización de KV. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Limitaciones de servicio v1 en mlx-serve: una petición a la vez (sin decodificación por lotes), especulación PLD/DFlash desactivada (MTP es la vía especulativa). Para prompts superiores a ~64k se recomienda reducir `--prefill-chunk`.
+- Latencia: prefill ~730 tok/s; decodificación ~60 tok/s en serie y ~78 tok/s con MTP. Con caché fría, el prefill de prompts muy largos puede pagar hasta ~1 s por cada 8k tokens de lecturas aleatorias en SSD; con caché caliente el coste es nulo.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas directas con otros modelos en la información proporcionada. El modelo base `Qwen3.8-Flash-Next` pertenece a la familia Qwen4 preview, y se puede contrastar conceptualmente con otros MoE multimodales de gran tamaño, pero no hay datos de benchmarks comparativos publicados para esta cuantización específica. Las alternativas potenciales en el mismo espacio (por ejemplo, otros MoE con contexto largo) no están documentadas en las fuentes consultadas.
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next (este pack, mixed-4-8bit) | 133,2B en safetensors (~180B checkpoint completo) | 262 144 | MLX mixto 4/8 bits, ~75 GB residentes | qwen-community-1.0 | Hugging Face (superseded por iQ-MLX-4.7bpw) |
+| Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw | mismo checkpoint | 262 144 | MLX iQ 4.7 bpw, ~75 GB residentes | qwen-community-1.0 | Hugging Face; recomendado por el autor (KLD 0,0052, top-1 88,6%) |
+| Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-3.3bpw | mismo checkpoint | 262 144 | MLX iQ 3.3 bpw, 52 GB residentes | qwen-community-1.0 | Hugging Face; para Macs de 64 GB |
+| Qwen3.8-Flash-Next-MLX-Serve-8bit | mismo checkpoint | 262 144 | MLX 8 bits, 137 GB residentes | qwen-community-1.0 | Hugging Face; para más de 128 GB |
+
+No se dispone de datos de benchmarks que permitan comparar el rendimiento cualitativo con modelos de otras familias o de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: no se han documentado sesgos específicos, pero como todo modelo generativo, existe riesgo de alucinación, especialmente en tareas de razonamiento complejo o con datos poco frecuentes. Se recomienda validación humana en aplicaciones críticas.
-- Limitaciones del servidor `mlx-serve` v1: procesa una petición a la vez, sin batching de decodificación; la especulación PLD/DFlash está desactivada (solo se usa MTP como ruta especulativa). MTP es opt-in y su beneficio depende del prompt (en prosa puede ser más lento).
-- Contexto y atención dispersa: la atención dispersa selecciona solo 512 bloques por consulta más allá de 2048 tokens; esto puede afectar a la recuperación de información en contextos muy largos si los bloques relevantes no son detectados por el indexador. Para prompts muy largos (>64k), se recomienda reducir `--prefill-chunk`.
-- Licencia: la licencia `qwen-community-1.0` es una licencia comunitaria de Qwen; debe revisarse cuidadosamente para uso comercial, ya que puede imponer restricciones específicas (por ejemplo, limitaciones de uso en ciertas industrias o requisitos de atribución).
-- Requisitos de hardware: necesita un Mac con al menos 128 GB de memoria unificada para una experiencia completa; con menos memoria podría no cargar el modelo completo o requerir cuantización adicional no soportada en este empaquetado.
-- Idiomas: no se especifican los idiomas soportados; la documentación no garantiza cobertura multilingüe amplia.
-- Formato de pesos: el archivo `ngram_table.bin` no es un shard safetensors estándar; su manejo es específico de `mlx-serve` y no es intercambiable con otras herramientas de inferencia.
+- El autor marca este pack como superado (superseded) por iQ-MLX-4.7bpw: mismo tamaño y misma lectura de bytes por token, pero más cercano a bf16 (KLD mediana 0,0052 frente a 0,0066; top-1 88,6% frente a 87,9%). No recibirá más actualizaciones.
+- Licencia `qwen-community-1.0` (etiquetada como `other` en Hugging Face): es necesario revisar el texto de la licencia antes de cualquier uso comercial; no se detallan aquí sus restricciones.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Idiomas soportados: no disponibles; no se puede garantizar calidad fuera de los idiomas cubiertos por el modelo base.
+- Una sola petición simultánea en mlx-serve v1 (sin decodificación por lotes), lo que limita el throughput en escenarios multiusuario.
+- La decodificación especulativa MTP es opt-in y su beneficio depende del prompt (positivo en código, ligeramente negativo en prosa y en prompts largos).
+- Prompts por encima de ~64k requieren ajustar `--prefill-chunk` porque la selección de atención dispersa se construye por fragmento.
+- Con caché fría, el prefill de prompts muy largos puede sufrir penalizaciones de hasta ~1 s por cada 8k tokens por lecturas aleatorias en SSD.
+- El pack está atado a Apple Silicon y a `mlx-serve`; no es portable a CUDA ni a otros runtimes sin reconversión.
 
 ## Enlaces
 
-- [Hugging Face - ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit](https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit)
-- [Hugging Face - Qwen/Qwen3.8-Flash-Next (modelo base)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
-- [GitHub - QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
-- [unsloth - Qwen3.8-Flash-Next: How to Run Locally](https://unsloth.ai/docs/models/qwen3.8-next)
-- [GitHub - ddalcu/mlx-serve (releases)](https://github.com/ddalcu/mlx-serve/releases)
+- Pack en Hugging Face: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Pack recomendado (iQ-MLX-4.7bpw): https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw
+- Pack para 64 GB (iQ-MLX-3.3bpw): https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-3.3bpw
+- Pack de 8 bits: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-8bit
+- Herramienta de despliegue: https://mlxserve.com

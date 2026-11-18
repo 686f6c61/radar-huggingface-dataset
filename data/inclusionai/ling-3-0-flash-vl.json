@@ -20,8 +20,8 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 127,
-  "downloads_30d": 6990,
+  "likes": 128,
+  "downloads_30d": 7162,
   "trending_score": 12,
   "parameters": 124848460496,
   "parameters_human": "124.85B",
@@ -41,31 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Rock And Treehouse Resort Khao Sok - Unique Jungle Stay",
-      "url": "https://www.rockandtreehouseresort.com/",
-      "snippet": "Rock and Treehouse Resort was designed to let you live inside the jungle canopy, not just observe it from afar. Built around ancient …"
-    },
-    {
-      "title": "inclusionAI/Ling-3.0-flash-VL · Hugging Face",
-      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
-      "snippet": "Model Overview Ling-3.0-flash-VL inherits the language, reasoning, and long-context capabilities of Ling-3.0-flash, while extending them with native image and video understanding. The model has 124B total parameters, with only 5.5B parameters activated per token, and supports a context window of up to 1M tokens."
-    },
-    {
-      "title": "Rock and Treehouse Resort Khao Sok, Surat Thani | Khao Sok Travel",
-      "url": "https://www.khaosoktravel.com/rockandtreehouse",
-      "snippet": "Hidden within the ancient rainforest of Khao Sok National Park, Rock and Treehouse Resort offers one of the region's most iconic …"
-    },
-    {
-      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
-      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
-      "snippet": "We're introducing Ling-3.0-flash, our next-generation native hybrid reasoning model. Operating with 124Btotal and 5.1Bactive parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks."
-    },
-    {
-      "title": "Khao Sok Bungalows: Best Treehouse Resort | 2026 Stay",
-      "url": "https://www.rockandtreehouseresort.com/khao-sok-bungalows/",
-      "snippet": "Choose from Khao Sok jungle bungalows and treehouse-style rooms surrounded by tropical greenery. Whether you are planning a …"
-    }
-  ]
+  "sources": []
 }

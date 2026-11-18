@@ -2,79 +2,92 @@
 
 ## Resumen
 
-Spark-X2.5-4B-abliterated-FIT-GGUF es una cuantización GGUF del modelo base XHToken/Spark-X2.5-4B, creada por SC117 mediante la herramienta FIT-GGUF v0.2.0. Se trata de un modelo de lenguaje de 4.112.079.360 parámetros con arquitectura de atención híbrida y ventana de contexto de un millón de tokens, que ha sido sometido a un proceso de `abliteration` (identificado como T615) para reducir comportamientos de rechazo o restricciones de seguridad. La suite FIT-GGUF ofrece cuatro niveles de fidelidad con tamaños entre 2,26 y 3,15 GiB, todos verificados contra el modelo de referencia en BF16 mediante medidas de divergencia KL y concordancia de tokens más probables.
+Spark-X2.5-4B-abliterated-FIT-GGUF es una cuantización GGUF del modelo base XHToken/Spark-X2.5-4B, publicada por el usuario SC117. El modelo original es un transformer híbrido de 4.112.079.360 parámetros (aproximadamente 4B) con una ventana de contexto declarada de 1M de tokens y atención híbrida, orientado a generación de texto conversacional en inglés y chino. La versión aquí descrita aplica una "abliteración" (eliminación de la dirección de rechazo en el espacio de activaciones, etiquetada como T615 en la model card) que produce un modelo "uncensored", es decir, con menor tendencia a rechazar peticiones.
 
-El modelo se distribuye bajo licencia Apache-2.0 y soporta inglés y chino. Su relevancia actual radica en ofrecer un modelo compacto de 4B con contexto de 1M, con un comportamiento menos censurado y una cuantización de alta fidelidad, apto para inferencia local en hardware limitado. Al estar publicado en formato GGUF, puede ejecutarse directamente en llama.cpp, Ollama y otros entornos compatibles, lo que lo hace especialmente atractivo para despliegues en equipos de consumo.
+El valor diferencial de esta publicación no es el modelo en sí, sino el proceso de cuantización: los archivos han sido generados con FIT-GGUF, una herramienta de código abierto que actúa como capa de planificación determinista sobre la cuantización de llama.cpp. En lugar de elegir un preset fijo (Q4_K_M, Q5_K_M, etc.), FIT-GGUF fija un contrato de fidelidad (KL macro por debajo de un umbral y coincidencia de top-1 por encima de un mínimo calibrado) y busca el GGUF más pequeño que lo cumple, verificándolo contra el BF16 de referencia.
+
+El repositorio ofrece cuatro niveles de fidelidad ("tiers") que ocupan entre 2,26 y 3,15 GiB, lo que lo hace desplegable en GPUs de consumo y en CPU. Es relevante para quienes necesitan un modelo pequeño, de licencia Apache-2.0, con contexto muy largo y sin restricciones de contenido, y quieren una cuantización con garantías medibles en lugar de una elección a ciegas de preset.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atención híbrida (hybrid-attention) |
-| Parametros totales | 4.112.079.360 (4,11 mil millones) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 1.000.000 tokens (1M) |
-| Tipos de cuantizacion | Cuatro niveles de fidelidad FIT-GGUF (tamaños de 2,26 a 3,15 GiB) |
-| Idiomas soportados | Inglés, chino |
+| Arquitectura | Transformer híbrido con atención híbrida (híbrido de atención, según model card); detalles de capas no disponibles |
+| Parametros totales | 4.112.079.360 |
+| Parametros activos | no disponible (no se declara MoE) |
+| Longitud de contexto | 1.000.000 tokens (1M, declarado en la model card) |
+| Tipos de cuantizacion | GGUF en 4 tiers de fidelidad, tamaños de 2,26 a 3,15 GiB; niveles concretos de quant (p. ej. Q4_K_M) no disponibles |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (con pesos base en safetensors) |
+| Formato de pesos | GGUF (librería llama.cpp); el modelo base en safetensors |
+| Modelo base | XHToken/Spark-X2.5-4B |
+| Herramienta de cuantización | FIT-GGUF v0.2.0 |
+| Modificación | Abliterated (T615), uncensored |
+| Tamaño del repositorio | 19,5 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base utiliza una arquitectura de atención híbrida, que combina mecanismos de atención completa con otros de menor coste computacional, lo que le permite gestionar una ventana de contexto de un millón de tokens. No se dispone de información publicada sobre la composición exacta del dataset de entrenamiento, el número total de tokens procesados, ni sobre la aplicación de técnicas de alineación como RLHF o DPO.
+El modelo base Spark-X2.5-4B emplea una arquitectura de transformer con atención híbrida, según indica la model card, con una ventana de contexto de 1M de tokens. No se dispone de información sobre el número de capas, dimensión oculta, número de cabezas de atención ni sobre la composición exacta del mecanismo híbrido (combinación de atención completa y atención lineal o de ventana deslizante). Tampoco se detallan los datos de entrenamiento: número de tokens, composición del corpus, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Esta información no está disponible en la documentación proporcionada.
 
-El autor de esta publicación ha aplicado un proceso de `abliteration` (T615) sobre el modelo base, que modifica los pesos para eliminar ciertos comportamientos no deseados sin destruir la capacidad general. Posteriormente, los pesos se convirtieron a formato GGUF mediante FIT-GGUF, una capa determinista de planificación de tensores sobre la cuantización de llama.cpp. FIT-GGUF no se limita a presets tradicionales: busca la cuantización más pequeña que cumpla un contrato de fidelidad definido por el usuario, verificando cada archivo contra el modelo en BF16 con métricas de divergencia KL y concordancia de top tokens.
+La modificación "abliterated" (denominada T615) elimina la dirección de rechazo del modelo mediante intervención sobre activaciones, lo que reduce la probabilidad de respuestas de negativa ante peticiones sensibles. La cuantización se realizó con FIT-GGUF, que planifica la asignación de tipos de quant a nivel de tensor y verifica cada archivo contra el BF16 de referencia mediante dos métricas: KL macro (divergencia de la distribución de salida) y coincidencia de top-1 ("same-top"). La model card declara un gate G2 con delta = 0 para la predicción de tamaño y entrega byte-exacta, y aclara explícitamente que no reclama un óptimo universal de calidad, sino el cumplimiento verificado de un contrato de fidelidad por tier.
 
 ## Capacidades
 
-- Generación de texto y conversación en inglés y chino.
-- Ventana de contexto de 1M tokens, apta para procesar documentos completos o secuencias largas.
-- Comportamiento `uncensored` o `abliterated`: tiende a no rechazar peticiones, lo que resulta útil para investigación de alineación, roleplay o generación de contenido sin restricciones.
-- Inferencia eficiente en CPU o GPU con consumo reducido de memoria, gracias a los pesos GGUF de entre 2,26 y 3,15 GiB.
-- Compatibilidad con llama.cpp y otros frameworks que soporten GGUF.
-- Los archivos publicados cuentan con verificación de fidelidad por tensor frente a los pesos originales en BF16 (divergencia KL y concordancia same-top).
-
-No se han publicado especificaciones sobre soporte de herramientas (`tool calling`), visión, audio o razonamiento explícito; esos datos no están disponibles.
+- Generación de texto conversacional multi-turno, con soporte declarado de contexto de hasta 1M de tokens.
+- Razonamiento y respuesta a instrucciones en inglés y chino.
+- Modo "uncensored": menor tasa de rechazos ante peticiones que el modelo base rechazaría, por efecto de la abliteración.
+- Compatibilidad con llama.cpp y con endpoints compatibles (tag `endpoints_compatible`).
+- Capacidad de ejecución en CPU y GPU de consumo gracias al formato GGUF.
+- No se declara soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode) en la información disponible.
+- Capacidades de código y matemáticas no documentadas explícitamente; no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional local en inglés y chino: puede ejecutarse en un portátil o mini PC con GPU modesta mediante llama.cpp u Ollama, ofreciendo un asistente bilingüe sin dependencia de servicios en la nube.
-- Análisis de documentos extensos: gracias a la ventana de 1M tokens, es posible introducir manuales, informes o libros completos y obtener resúmenes o respuestas contextuales basadas en todo el texto.
-- Investigación sobre alineación y filtros de seguridad: al ser un modelo `abliterated`, permite estudiar cómo responde un modelo de 4B en ausencia de los rechazos habituales de seguridad, útil para trabajos de interpretabilidad o evaluación de sesgos.
-- Generación de contenido multilingüe: sirve para tareas de traducción, redacción o reescritura entre inglés y chino, aprovechando su entrenamiento bilingüe.
-- Pruebas de cuantización y fidelidad: los cuatro niveles de FIT-GGUF permiten comparar el impacto de distintas cuantizaciones en la calidad de salida, usando las métricas de verificación incluidas.
-- Despliegue en entornos de escritorio o servidores de bajo coste: el rango de pesos de 2,26 a 3,15 GiB posibilita cargar el modelo en sistemas con poca memoria, incluyendo CPU y GPUs de consumo.
+- Asistente conversacional local en CPU: los archivos de 2,26–3,15 GiB permiten ejecutar el modelo con llama.cpp en un portátil sin GPU dedicada, gestionando diálogos multi-turno con contexto amplio.
+- Procesamiento de documentos largos: con 1M de tokens de contexto declarado, el modelo puede ingerir contratos, informes o bases de código extensas en una sola pasada, útil para resumen y extracción de información.
+- Despliegue en GPUs de consumo: con 8–12 GB de VRAM se puede cargar el tier de mayor fidelidad junto con una caché KV razonable, lo que permite servir un chatbot privado en una RTX 3060/4060 o similar.
+- Generación de contenido sin filtros en entornos controlados: la abliteración lo hace adecuado para investigación sobre seguridad, red teaming y generación de texto creativo sin restricciones, siempre con revisión humana.
+- Prototipado rápido de aplicaciones en inglés y chino: al ser Apache-2.0 y GGUF, se integra en pipelines de prueba sin coste de licencia ni dependencia de API externa.
+- Análisis de conversaciones largas y extracción de entidades: el contexto de 1M tokens permite mantener el hilo de sesiones de soporte o auditoría sin truncar, aunque el rendimiento real a esa longitud no está verificado en la documentación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas internas de la cuantización (KL macro por tier y coincidencia de top-1 frente al BF16), sin valores numéricos concretos en el texto proporcionado, y no incluye MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- Los pesos cuantizados ocupan entre 2,26 y 3,15 GiB, por lo que los requisitos mínimos de VRAM para contextos moderados se sitúan en torno a 4-5 GiB, incluyendo margen para el KV cache.
-- Para utilizar la ventana completa de 1M tokens, la memoria necesaria para el KV cache puede superar la VRAM de una GPU de consumo; en esos casos se recomienda descargar parte del modelo a CPU o restringir la longitud de contexto.
-- GPU recomendadas: en función del tamaño de los pesos, una RTX 3060, RTX 4060 o similar es suficiente para contextos moderados. Para contextos muy largos se necesitarían GPUs profesionales como A100 o H100, o bien ejecutar el modelo con `cpu offloading` en sistemas con suficiente RAM.
-- Es compatible con hardware de consumo y puede ejecutarse en CPU, aunque con mayor latencia.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python y cualquier otro framework compatible con GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: entre 2,5 y 4 GB para el archivo de pesos según tier (2,26–3,15 GiB), más la caché KV; con contexto largo la caché KV crece de forma significativa y puede superar los pesos.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para contextos muy largos; A100/H100 solo si se necesita el contexto de 1M completo.
+- Cabe en GPU de consumo: sí, en cualquier GPU con 6 GB o más para contextos moderados; para contexto cercano a 1M se requiere memoria muy superior a la de una GPU de consumo.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), servidores compatibles con endpoints OpenAI, y cualquier runtime que cargue GGUF.
+- Latencia y throughput: no disponibles; dependen del tier, del hardware y de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-No se dispone de información fiable para una comparativa directa con otros modelos de la misma categoría (tamaño 4B y contexto 1M) en la información proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Spark-X2.5-4B-abliterated-FIT-GGUF | 4,11B | 1M (declarado) | Apache-2.0 | GGUF | Cuantización verificada por tier, uncensored |
+| XHToken/Spark-X2.5-4B | 4,11B | 1M (declarado) | no disponible en la informacion | safetensors | Modelo base sin abliterar |
+| Alternativas de ~4B (p. ej. Qwen, Llama 3.2) | ~3–4B | 8K–128K típicamente | variables | GGUF/safetensors | No se dispone de datos comparativos verificados en la informacion |
+
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles.
-- Riesgo de alucinación: presente como en cualquier modelo de lenguaje; no se han publicado evaluaciones específicas sobre este modelo.
-- Limitaciones de idioma: solo están verificados inglés y chino; la calidad en otros idiomas no está garantizada.
-- Restricciones de licencia: la licencia del repositorio es Apache-2.0, lo que permite uso comercial, pero la licencia del modelo base no se ha verificado de forma explícita; se asume que es la misma.
-- Advertencia para producción: al estar `abliterated`, el modelo puede generar contenido inapropiado, peligroso o no deseado sin filtros automáticos. Debe desplegarse con sistemas de moderación externos si el caso de uso lo exige.
-- La verificación de FIT-GGUF se basa en métricas de fidelidad (KL y same-top), no en rendimiento downstream, por lo que puede existir pérdida de calidad en tareas específicas.
-- La ventana de contexto de 1M no implica que la calidad de recuperación de información se mantenga constante a lo largo de toda la secuencia; no se han publicado evaluaciones de recuperación a esa escala.
+- La abliteración elimina mecanismos de rechazo: el modelo puede generar contenido dañino, ilegal o inexacto sin advertir; requiere filtros externos y supervisión en producción.
+- Riesgo de alucinación inherente a un modelo de 4B; no se han publicado evaluaciones de fidelidad factual.
+- El contexto de 1M tokens es una cifra declarada; no hay evidencia publicada de que el rendimiento se mantenga a esa longitud ( degradación por "lost in the middle" es esperable).
+- Solo se declaran inglés y chino; el rendimiento en castellano no está evaluado y probablemente sea limitado.
+- Licencia Apache-2.0 permite uso comercial, pero la responsabilidad legal por el contenido generado recae en el desplegador.
+- El repositorio ocupa 19,5 GB por incluir múltiples tiers y artefactos; conviene descargar solo el archivo necesario.
+- No se documentan capacidades de tool calling ni de agentes; no asumirlas en producción.
+- La model card advierte que FIT-GGUF no garantiza un óptimo universal de calidad, solo el cumplimiento del contrato de fidelidad por tier.
 
 ## Enlaces
 
-- Repositorio del modelo en Hugging Face: https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF
-- Repositorio de FIT-GGUF: https://github.com/Scorp1o117/FIT-GGUF
+- Hugging Face: https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF
+- Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
+- Herramienta FIT-GGUF: https://github.com/Scorp1o117/FIT-GGUF
 - README en chino: https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF/blob/main/README.zh-CN.md
-- Modelo base (inferido del campo `base_model`): https://huggingface.co/XHToken/Spark-X2.5-4B
+- Banner del proyecto: https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF/resolve/main/assets/fit-gguf-banner.png
+- llama.cpp: https://github.com/ggerganov/llama.cpp

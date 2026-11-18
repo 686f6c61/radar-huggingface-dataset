@@ -5,7 +5,7 @@
   "author": "the123manaic",
   "url": "https://huggingface.co/the123manaic/Sega-Image-7.0-Singularity-Infinity",
   "created_at": "2026-11-15T21:29:54.000Z",
-  "updated_at": "2026-11-15T21:32:02.000Z",
+  "updated_at": "2026-11-18T06:06:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 1792,
   "parameters_human": "1792",

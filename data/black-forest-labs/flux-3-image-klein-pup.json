@@ -33,8 +33,8 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 82,
-  "downloads_30d": 70409,
+  "likes": 81,
+  "downloads_30d": 69253,
   "trending_score": 13,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Passez au meilleur de la tech reconditionnée. | Back Market",
-      "url": "https://www.backmarket.fr/fr-fr?msockid=2be36299c2ca650408a4756ac3a264d8",
-      "snippet": "Profitez d'articles reconditionnés sur Back Market, moins cher que le neuf ! Livraison standard offerte - Garantie contractuelle de 12 …"
-    },
-    {
-      "title": "Black - Simple English Wikipedia, the free encyclopedia",
-      "url": "https://simple.wikipedia.org/wiki/Black",
-      "snippet": "No color can have the same level of dark pigmentation without turning itself into black. As the visual perception of an object's color is …"
-    },
-    {
-      "title": "Black M - YouTube",
-      "url": "https://www.youtube.com/channel/UCa_m88y-YP42wOdoYaIk6og",
-      "snippet": "Black M - La Légende Black Play all Retrouve toutes les vidéos officielles de l'album La Légende Black ! Album disponible : …"
-    },
-    {
-      "title": "Black - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Black",
-      "snippet": "Black ... Black is a color [2] that results from the absence or complete absorption of visible light. It is an achromatic color, without …"
-    },
-    {
-      "title": "Black (2008 film) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Black_(2008_film)",
-      "snippet": "Synopsis Black, a Frenchman with African roots, commits in France a heist with some complices. The early arrival of alarmed police …"
-    }
-  ]
+  "sources": []
 }

@@ -22,8 +22,8 @@
     "4-bit",
     "text-classification",
     "en",
-    "base_model:autotrust/JEV-27B",
-    "base_model:quantized:autotrust/JEV-27B",
+    "base_model:autotrust/AutoTrust-Decider-Pro-27B",
+    "base_model:quantized:autotrust/AutoTrust-Decider-Pro-27B",
     "license:apache-2.0",
     "region:us"
   ],

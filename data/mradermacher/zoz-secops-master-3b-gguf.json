@@ -17,8 +17,6 @@
     "transformers",
     "gguf",
     "en",
-    "base_model:z51722369/ZOZ-SecOps-Master-3B",
-    "base_model:quantized:z51722369/ZOZ-SecOps-Master-3B",
     "endpoints_compatible",
     "region:us",
     "conversational"

@@ -2,76 +2,102 @@
 
 ## Resumen
 
-Ling-3.0-flash es un modelo de lenguaje de gran tamaño desarrollado por InclusionAI, lanzado el 23 de julio de 2026 como sucesor de Ling 2.6 Flash. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 124.000 millones de parámetros totales y aproximadamente 5.100 millones de parámetros activos por token, lo que lo sitúa en la categoría de modelos eficientes de alto rendimiento. Su principal innovación es un modo de razonamiento híbrido que combina la velocidad característica de la serie Ling con la capacidad de razonamiento profundo de la serie Ring, permitiendo alternar entre respuestas rápidas y procesos de pensamiento extendido según la tarea.
+Ling-3.0-flash es un modelo de lenguaje de tipo MoE híbrido lineal desarrollado por inclusionAI (equipo vinculado a Ant Group). Se presenta como un modelo de razonamiento nativo de nueva generación que activa únicamente 5,1B de parámetros por token sobre un total de 124B, lo que lo sitúa en la categoría de modelos eficientes de gran escala orientados a despliegue en producción. Su arquitectura combina atención lineal Kimi Delta Attention (KDA) con atención MLA en un apilamiento alternado 5:1, una decisión tomada desde el inicio del preentrenamiento y no como un añadido posterior.
 
-El modelo ofrece una ventana de contexto nativa de 256.000 tokens, ampliable hasta 1.000.000, y está diseñado para tareas de larga duración, llamadas a herramientas y compatibilidad con flujos de trabajo agénticos. Según los datos disponibles, presenta una mejora significativa en estabilidad en tareas de horizonte largo, mayor precisión en tool calling y mejor compatibilidad con ecosistemas comunes. Está disponible en Hugging Face con pesos en formato safetensors y ha recibido 322 likes y más de 10.000 descargas, lo que indica un interés temprano relevante en la comunidad.
+El modelo está diseñado explícitamente para flujos de trabajo agénticos: entrenamiento con más de 10.000 entornos interactivos, integración nativa con la arquitectura de caché jerárquica SGLang HiCache + Mooncake y evaluaciones centradas en benchmarks de ingeniería de software, uso de herramientas MCP y tareas de investigación profunda. Su ventana de contexto alcanza los 256K tokens según el calendario de entrenamiento (8K → 32K → 256K).
 
-## Especificaciones tecnicas
+La relevancia actual del modelo reside en su relación entre capacidad y coste computacional: con un 12,4% de los parámetros de su predecesor Ring-2.6-1T y un 8,1% de parámetros activos, el autor afirma igualar o superar a ese modelo en benchmarks clave. La licencia MIT facilita su adopción comercial sin restricciones de uso.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida (bailing_hybrid) con modo de razonamiento dual |
-| Parametros totales | 124.000 millones (124B) |
-| Parametros activos | 5.100 millones (5.1B) |
-| Longitud de contexto | 256.000 tokens nativos, extensible a 1.000.000 |
-| Tipos de cuantizacion | no disponible |
+| Arquitectura | MoE híbrido lineal (KDA + Gated MLA, apilamiento 5:1) |
+| Parámetros totales | 127.486.405.600 (124B según model card) |
+| Parámetros activos | 5,1B |
+| Longitud de contexto | 256K tokens (calendario de entrenamiento 8K → 32K → 256K) |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el tag de Hugging Face indica license:mit, pero el campo oficial no lo confirma) |
-| Formato de pesos | safetensors |
+| Licencia | MIT |
+| Formato de pesos | safetensors (custom_code) |
+| Capas transformer | 35 KDA + 7 Gated MLA |
+| Capas densas | 2 |
+| Expertos enrutados | 512 |
+| Expertos compartidos | 1 |
+| Expertos activados | 8 |
+| Cabezas de atención | 32 |
+| Hidden size | 2560 |
+| Tamaño intermedio de experto | 768 |
+| Tamaño intermedio denso | 6144 |
+| Vocabulario | 157184 |
+| Tamaño del repo | 255,0 GB |
 
 ## Arquitectura y entrenamiento
 
-Ling-3.0-flash emplea una arquitectura MoE híbrida identificada con la etiqueta `bailing_hybrid`. La innovación central es un mecanismo de razonamiento híbrido que integra dos modos operativos: un modo rápido y directo heredado de la serie Ling, y un modo de razonamiento profundo inspirado en la serie Ring. Esto permite al modelo decidir dinámicamente si responder de forma inmediata o dedicar más cómputo a tareas complejas, similar a los modos "thinking" de otros modelos recientes. Con solo 5.100 millones de parámetros activos por token, el coste de inferencia es comparable al de modelos mucho más pequeños, mientras que los 124.000 millones de parámetros totales proporcionan una amplia capacidad de conocimiento.
+Ling-3.0-flash emplea una arquitectura híbrida lineal desde el inicio del preentrenamiento: 35 capas de Kimi Delta Attention (KDA) alternadas con 7 capas de Gated MLA en proporción 5:1, más 2 capas densas. La KDA incorpora una mejora de compuerta diagonal de grano fino, y el componente MoE utiliza enrutamiento disperso 1/64 con 512 expertos enrutados, 1 experto compartido y 8 expertos activados por token. El tamaño oculto es de 2560 y el vocabulario de 157.184 tokens. Esta combinación busca reducir el coste computacional del contexto largo manteniendo la calidad de atención completa en las capas MLA.
 
-No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens procesados ni las técnicas de alineación empleadas (RLHF, DPO, etc.). El modelo se presenta como la evolución de Ling 2.6 Flash, con mejoras específicas en estabilidad en tareas de larga duración, precisión en tool calling y compatibilidad con herramientas y frameworks comunes. La fecha de creación en Hugging Face es el 2 de agosto de 2026, aunque el lanzamiento público se produjo el 23 de julio de 2026.
+El entrenamiento se organiza en tres fases de contexto creciente (8K, 32K y 256K tokens). El autor indica que el modelo se ha entrenado con más de 10.000 entornos interactivos para tareas de agente, cubriendo Coding, General y Deep Research, con ejecución en bucle cerrado de extremo a extremo. No se especifican en la información disponible el número total de tokens de preentrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. El modo de razonamiento (thinking) está activado por defecto, con parámetros recomendados de `temperature=0.6, top_p=0.95, top_k=20`.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno con contexto largo (hasta 1M de tokens).
-- Razonamiento híbrido: puede operar en modo rápido para tareas sencillas o en modo profundo para problemas complejos que requieren cadenas de pensamiento extensas.
-- Tool calling / function calling con alta precisión, mejorada respecto a la generación anterior.
-- Soporte para agentes y tareas de múltiples pasos, con estabilidad mejorada en horizontes largos.
-- Capacidades multilingües: no se han publicado los idiomas soportados en la información disponible.
-- Compatibilidad con ecosistemas y frameworks comunes de despliegue, según la descripción oficial.
+- Generación de texto conversacional y razonamiento nativo en modo thinking activado por defecto.
+- Razonamiento matemático y conocimiento general, según las evaluaciones declaradas por el autor.
+- Generación y edición de código, con resultados destacados en SWE-Bench Pro, SWE-Bench Multilingual y AntSWEBench.
+- Uso de herramientas y function calling, con evaluación específica en MCP-Atlas (500 tareas, límite de 20 turnos).
+- Comportamiento agéntico multi-paso: tareas de investigación profunda, agentes de búsqueda y ejecución en bucle cerrado.
+- Integración con frameworks agénticos: Claude Code, Kilo Code, Qwen Code, Hermes Agent y OpenClaw.
+- Manejo de contexto largo de hasta 256K tokens, con evaluación en tareas de comprensión de contexto extenso.
+- Capacidad de generación de aplicaciones HTML interactivas (MiniAppBench).
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: gracias a su ventana de contexto de 256K tokens nativos (extensible a 1M), el modelo puede mantener conversaciones multi-turno con historial extenso y documentos de referencia, gestionando consultas complejas sin perder el hilo.
-- Agentes autónomos de larga duración: la estabilidad en tareas de horizonte largo lo hace adecuado para agentes que deben ejecutar secuencias de acciones durante horas o días, como monitorización de sistemas o gestión de proyectos.
-- Generación de código en producción: con tool calling de alta precisión, puede integrarse en pipelines de CI/CD para generar, revisar y corregir código, así como interactuar con APIs y repositorios.
-- Análisis de documentos extensos: el contexto de hasta 1M de tokens permite procesar libros completos, expedientes legales o informes técnicos de gran tamaño en una sola pasada, extrayendo información y resumiendo contenidos.
-- Razonamiento matemático y científico: el modo de razonamiento profundo permite abordar problemas que requieren múltiples pasos de deducción, como demostraciones matemáticas o planificación experimental.
-- Asistente de investigación: puede combinar búsqueda de información, lectura de artículos y síntesis de resultados en un flujo agéntico, aprovechando su capacidad de llamar a herramientas externas.
+- Agentes de ingeniería de software: el modelo puede resolver issues y aplicar parches en repositorios reales, como demuestra su evaluación en SWE-Bench Pro y SWE-Bench Multilingual con el harness OpenHands y 256K de contexto. Adecuado para pipelines de revisión y corrección automática de código.
+- Automatización de refactorizaciones multi-lenguaje: AntSWEBench cubre Java, JavaScript y Python en escenarios de nueva funcionalidad, corrección de bugs y refactorización, lo que lo hace apto para tareas de mantenimiento de código en entornos corporativos.
+- Investigación profunda asistida: con más de 10.000 entornos de entrenamiento interactivo y soporte de agentes de búsqueda multi-agente (BrowseComp), puede encadenar búsquedas, lectura y síntesis en informes extensos.
+- Integración de herramientas MCP: su evaluación en MCP-Atlas (500 tareas públicas) indica capacidad para orquestar llamadas a herramientas externas y verificar cobertura de afirmaciones, útil en asistentes empresariales conectados a APIs.
+- Generación de aplicaciones web completas: MiniAppBench evalúa la conversión de una petición de usuario en una app HTML interactiva usable, un caso realista para prototipado rápido y herramientas low-code.
+- Atención al cliente con contexto largo: la ventana de 256K y la caché jerárquica SGLang HiCache + Mooncake reducen el TTFT entre un 60% y un 80% en entradas largas, lo que permite conversaciones multi-turno con historial extenso y documentación adjunta.
+- Despliegue en producción con coste contenido: al activar solo 5,1B de parámetros por token, es viable servir cargas concurrentes en infraestructura moderada comparado con modelos densos de tamaño similar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks detallados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La plataforma BenchLM.ai asigna una puntuación pública agregada de 52,82/100 y lo sitúa en el puesto 103 de 217 modelos evaluados, pero esta puntuación es una estimación y no se desglosan los resultados por prueba. No se dispone de datos comparativos fiables con otros modelos en el momento de redactar esta ficha.
+El autor declara evaluaciones en SWE-Bench Pro, SWE-Bench Multilingual, Tau3-banking-AA, MCP-Atlas, SkillsBench, Terminal-Bench 2.1, MiniAppBench, AntSWEBench, GDPval v2-AA y tareas de agente de búsqueda, pero los resultados numéricos se presentan únicamente en imágenes no incluidas en la información disponible.
+
+No se han publicado resultados numéricos de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible oficialmente. Como orientación, un modelo MoE de 124B totales con 5.1B activos en cuantización FP16 requiere aproximadamente 248 GB de VRAM para alojar todos los pesos, aunque con cuantizaciones de 8 bits se reduciría a unos 124 GB y con 4 bits a unos 62 GB. Sin embargo, al ser MoE, la memoria activa por token es menor, lo que permite optimizaciones de memoria dinámica.
-- GPU recomendadas: para despliegue local con todos los pesos, se necesitarían múltiples GPUs de alta gama (por ejemplo, 4x A100 80GB o 2x H100 80GB en FP16). Para uso con cuantización 4-bit, una sola GPU de 80 GB (A100, H100) podría ser suficiente, aunque no está confirmado.
-- En consumer GPU: no es viable en GPUs de consumo (RTX 4090 con 24 GB) sin cuantizaciones extremas que degradarían el rendimiento. No se han publicado versiones GGUF oficiales.
-- Opciones de despliegue: no se especifican en la información disponible, pero por su formato safetensors y su compatibilidad declarada con ecosistemas comunes, es probable que soporte vLLM, TGI o llama.cpp (si se publican cuantizaciones). Se recomienda consultar el repositorio oficial.
-- Latencia y throughput: no disponibles. El modo híbrido permite ajustar el coste computacional según la tarea, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia orientativa, un modelo MoE de 124B totales requiere almacenar todos los pesos; en FP16 serían aproximadamente 250 GB, y en cuantización de 4 bits en torno a 65-70 GB, aunque estas cifras no las confirma el autor.
+- GPU recomendadas: no disponible. El tamaño del repo (255 GB) sugiere despliegue multi-GPU para pesos sin cuantizar.
+- ¿Cabe en GPU de consumo? No disponible; con 124B de parámetros totales, previsiblemente no en configuraciones de una sola GPU de consumo sin cuantización agresiva.
+- Opciones de despliegue: el autor menciona integración nativa con SGLang HiCache + Mooncake (caché jerárquica con doble pool físico y caché L3 compartida por clúster). No se confirman en la información disponible soporte de vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: el autor reporta una reducción del Time to First Token del 60% al 80% en escenarios de entrada larga gracias a la caché jerárquica. No se proporcionan cifras absolutas de latencia ni tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa rigurosa con modelos de la misma categoría. El predecesor directo, Ling 2.6 Flash, es la referencia más cercana, pero no se han publicado métricas comparativas entre ambos. Otros modelos MoE de tamaño similar (por ejemplo, DeepSeek-V3 o Qwen MoE) no tienen datos de rendimiento comparables en la información disponible. Se recomienda consultar benchmarks independientes cuando estén disponibles.
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Ling-3.0-flash | 124B / 5,1B | 256K | MIT | Híbrido lineal KDA + MLA, MoE 1/64 |
+| Ring-2.6-1T (predecesor, mismo autor) | ~1T (clase) | no disponible | no disponible | El autor afirma que Ling-3.0-flash lo iguala o supera con ~12,4% de sus parámetros |
+| Alternativas de terceros | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
+
+La comparación con modelos de otros fabricantes no puede realizarse con rigor porque la información disponible no incluye resultados numéricos ni especificaciones de competidores directos.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se ha publicado información sobre evaluación de sesgos o alineación con valores humanos.
-- Riesgo de alucinación: no se han publicado tasas de alucinación ni evaluaciones de factualidad.
-- Limitaciones de contexto: aunque la ventana nativa es de 256K tokens, el rendimiento en la extensión a 1M no está documentado con métricas públicas.
-- Restricciones de licencia: la licencia no está confirmada oficialmente. El tag de Hugging Face indica MIT, pero el campo de licencia figura como "no disponible". Antes de uso comercial, es imprescindible verificar la licencia en el repositorio oficial.
-- Idiomas: no se ha publicado la lista de idiomas soportados, lo que limita la evaluación de su cobertura multilingüe.
-- Producción: al ser un modelo reciente (lanzado en julio de 2026), su comportamiento en entornos de producción a gran escala aún no está ampliamente validado por la comunidad.
+- Los resultados de benchmarks se presentan solo en imágenes; no hay cifras verificables en texto, lo que impide validar las afirmaciones de rendimiento.
+- No se especifican los idiomas soportados ni la composición del corpus de entrenamiento, por lo que el rendimiento fuera del inglés (incluido el español) es incierto.
+- Riesgo de alucinación inherente a los modelos generativos; el modo thinking activado por defecto puede aumentar la latencia y el consumo de tokens de salida.
+- El uso de `custom_code` implica que la carga del modelo requiere confiar en código remoto del repositorio; conviene auditar antes de desplegar en producción.
+- No se documentan sesgos conocidos, datos de alineación (RLHF/DPO) ni evaluaciones de seguridad.
+- Aunque la licencia MIT permite uso comercial sin restricciones, la ausencia de información sobre procedencia de datos puede plantear riesgos de cumplimiento en entornos regulados.
+- El despliegue eficiente depende de infraestructura específica (SGLang HiCache + Mooncake); no se confirma compatibilidad con otros motores de inferencia populares.
+- El tamaño del repo (255 GB) y los 124B de parámetros totales exigen planificación de almacenamiento y memoria considerable.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/inclusionAI/Ling-3.0-flash)
-- [Colección Ling 3.0 en Hugging Face](https://huggingface.co/collections/inclusionAI/ling-30)
-- [Guía completa de Ling 3.0 Flash (AimadeTools)](https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/)
-- [Perfil en zenmux.ai](https://zenmux.ai/inclusionai/ling-3.0-flash)
-- [Benchmarks y velocidad en BenchLM.ai](https://benchlm.ai/models/ling-3-0-flash)
+- Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash
+- Organización en Hugging Face: https://huggingface.co/inclusionAI
+- ModelScope: https://modelscope.cn/organization/inclusionAI
+- OpenRouter (versión gratuita): https://openrouter.ai/inclusionai/ling-3.0-flash:free

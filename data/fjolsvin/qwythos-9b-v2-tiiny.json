@@ -5,7 +5,7 @@
   "author": "fjolsvin",
   "url": "https://huggingface.co/fjolsvin/Qwythos-9B-v2-tiiny",
   "created_at": "2026-11-17T06:08:37.000Z",
-  "updated_at": "2026-11-17T06:09:04.000Z",
+  "updated_at": "2026-11-17T06:26:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",

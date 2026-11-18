@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "sthanika-ai/Sieve-Vision-4B",
+  "slug": "sthanika-ai-sieve-vision-4b",
+  "author": "sthanika-ai",
+  "url": "https://huggingface.co/sthanika-ai/Sieve-Vision-4B",
+  "created_at": "2026-10-19T12:48:23.000Z",
+  "updated_at": "2026-11-18T06:12:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "sieve",
+    "sieve-vision",
+    "decision-model",
+    "vision",
+    "multiple-choice",
+    "calibration",
+    "full-fine-tune",
+    "qwen3.5",
+    "visual-question-answering",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 237,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9104901413,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "multiple-choice decision over one or more images",
+      "dataset": "Decision Index 0.4 vision leaderboard (public vision suite and the maintainers' private vision tests)",
+      "metric": "Decision Index 0.4, vision Full score (leaderboard)",
+      "value": 58.6
+    },
+    {
+      "task": "multiple-choice decision over one or more images",
+      "dataset": "Decision Index 0.4 vision leaderboard (public vision suite and the maintainers' private vision tests)",
+      "metric": "Decision Index 0.4, public vision score (leaderboard)",
+      "value": 65.17
+    },
+    {
+      "task": "multiple-choice decision over one or more images",
+      "dataset": "Decision Index 0.3 public vision suite (12,210 requests, 11 benchmarks)",
+      "metric": "Decision Index 0.3, public vision index (chance-corrected; our own run)",
+      "value": 64.95
+    }
+  ],
+  "sources": []
+}

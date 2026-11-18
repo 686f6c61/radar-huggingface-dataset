@@ -43,7 +43,7 @@
     "region:us"
   ],
   "likes": 42,
-  "downloads_30d": 97179,
+  "downloads_30d": 104800,
   "trending_score": 12,
   "parameters": 151378176,
   "parameters_human": "151.4M",
@@ -64,31 +64,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Accédez aux services de votre espace adhérent - Ma Web Mutuelle",
-      "url": "https://mawebmutuelle.fr/",
-      "snippet": "Dans votre espace adhérent Ma Web Mutuelle, consultez vos remboursements, vos documents et contacts privilégiés de manière …"
-    },
-    {
-      "title": "Ma Web Mutuelle - Mot de passe oublié",
-      "url": "https://mawebmutuelle.fr/motDePasseOublie",
-      "snippet": "Dans votre espace adhérent Ma Web Mutuelle, réinitialisez votre mot de passe de manière sécurisé"
-    },
-    {
-      "title": "Signature électronique - Ma Web Mutuelle",
-      "url": "https://esign.mawebmutuelle.fr/",
-      "snippet": "Dans votre espace adhérent Ma Web Mutuelle, consultez vos remboursements, vos documents et contacts privilégiés de manière …"
-    },
-    {
-      "title": "Activation de votre espace client - Ma Web Mutuelle",
-      "url": "https://mawebmutuelle.fr/premiereConnexion",
-      "snippet": "Activation de mon espace adhérent Pour activer votre Espace Client, renseignez votre email dans le champ ci-dessous et suivez les …"
-    },
-    {
-      "title": "Service client - Ma Web Mutuelle",
-      "url": "https://mawebmutuelle.fr/messageSupport",
-      "snippet": "ous pouvez nous solliciter en cas de difficulté de connexion ou être rappelé par nos services"
-    }
-  ]
+  "sources": []
 }

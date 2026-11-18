@@ -2,106 +2,79 @@
 
 ## Resumen
 
-Moss-image-nsfw-uncensored-lora es un adaptador LoRA de bajo rango publicado por el usuario axiomofmind sobre el modelo de generación de imagen texto-a-imagen MOSS-Image-SFT (OpenMOSS-Team). Su función es especializar el modelo base en la generación de fotografía de contenido adulto explícito, un dominio que los modelos fundacionales suelen filtrar o limitar mediante alineación y filtros de seguridad. El adaptador se activa con la palabra de disparo `moss_xvstyle` y se distribuye en formato diffusers/safetensors.
+Moss-image-nsfw-uncensored-lora es un adaptador LoRA para generacion de imagenes texto-a-imagen, desarrollado por el usuario axiomofmind y publicado en Hugging Face. Se trata de un fine-tuning del modelo base OpenMOSS-Team/MOSS-Image-SFT, sobre el que se ha entrenado un adaptador de bajo rango orientado a la generacion de contenido para adultos sin filtros de censura. El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado como no apto para todas las audiencias.
 
-El repositorio acumula 3.737 descargas y 200 likes desde su publicación el 18 de octubre de 2026, con una actualización dos días después. Está etiquetado como `not-for-all-audiences` y `adult-content`, y su licencia declarada es apache-2.0. El tamaño del repositorio es de 27,4 GB, un valor atípico para un adaptador LoRA convencional, lo que sugiere que el repo puede incluir artefactos adicionales (imágenes de muestra, estados de entrenamiento o componentes del modelo base) que no se detallan en la información disponible.
+El adaptador se activa mediante el token de instancia `moss_xvstyle`, que debe incluirse en el prompt para que el estilo aprendido se aplique a la generacion. El repositorio ocupa 37,8 GB, lo que sugiere que incluye tanto los pesos del adaptador como posibles checkpoints intermedios o recursos adicionales asociados al entrenamiento. La libreria de referencia es diffusers y el pipeline declarado es text-to-image.
 
-La relevancia de esta ficha es fundamentalmente técnica y de evaluación: permite entender cómo se construye y despliega un adaptador LoRA sobre MOSS-Image, qué limitaciones documentales presenta (no hay datos de entrenamiento, benchmarks ni especificaciones del modelo base en la información proporcionada) y qué consideraciones legales y de política de contenido implica su uso en producción.
+La relevancia de este modelo radica en su naturaleza de adaptador especializado sobre un modelo base de imagen, lo que permite a los desarrolladores anadir capacidades de generacion de contenido para adultos a un pipeline existente sin sustituir el modelo completo. No obstante, su uso esta restringido por consideraciones legales y de moderacion de contenido en la mayoria de plataformas y jurisdicciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre el modelo de difusion texto-a-imagen MOSS-Image-SFT; la arquitectura interna del modelo base no se detalla en la informacion disponible |
-| Parametros totales | no disponible (adaptador LoRA; el repositorio ocupa 27,4 GB) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo de generacion de imagen; no se especifica la ventana del codificador de texto) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo base de difusion MOSS-Image-SFT |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (adaptador); licencia del modelo base no indicada en la informacion proporcionada |
-| Formato de pesos | safetensors, integrado mediante la libreria diffusers |
-| Pipeline | text-to-image |
-| Modelo base | OpenMOSS-Team/MOSS-Image-SFT (relacion: adapter) |
-| Palabra de disparo | `moss_xvstyle` |
-| Tipo de adaptador | LoRA (template:sd-lora) |
-| Tamano del repositorio | 27,4 GB |
-| Descargas | 3.737 |
-| Likes | 200 |
-| Fecha de creacion | 2026-10-18 |
-| Ultima actualizacion | 2026-10-20 |
-| Etiquetas de contenido | nsfw, adult-content, not-for-all-audiences |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (libreria diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA (Low-Rank Adaptation) acoplado al modelo base MOSS-Image-SFT. La técnica LoRA congela los pesos del modelo original e inserta matrices de baja dimensión en determinadas capas, de modo que el adaptador aprende un desplazamiento de los pesos con un coste de almacenamiento y entrenamiento muy inferior al de un ajuste completo. El resultado se carga junto al modelo base en un pipeline de diffusers y modifica el comportamiento generativo mediante la palabra de disparo `moss_xvstyle`.
+El modelo es un adaptador LoRA, una tecnica de fine-tuning parametrizado eficiente que congela los pesos del modelo base e inyecta matrices de bajo rango en determinadas capas del transformer de difusion. En este caso, el modelo base es OpenMOSS-Team/MOSS-Image-SFT, un modelo de difusion texto-a-imagen del que no se detallan en la informacion disponible ni el numero de parametros, ni la arquitectura interna (UNet, DiT u otra), ni el volumen de datos de entrenamiento.
 
-No se dispone de información sobre el conjunto de datos de entrenamiento: no se indica el número de imágenes, su procedencia, la composición del dataset, si hubo filtrado, si se emplearon técnicas de regularización o si el entrenamiento incluyó etapas de ajuste con preferencias humanas. Tampoco se documentan hiperparámetros del LoRA (rango, alpha, capas objetivo), resolución de entrenamiento, número de pasos ni hardware utilizado. La model card se interrumpe al enlazar el modelo base, por lo que la información técnica sobre el proceso de entrenamiento es prácticamente inexistente.
-
-Como innovación destacable, el adaptador actúa como mecanismo de "desbloqueo" de un dominio concreto —fotografía adulta explícita— sobre un modelo que presumiblemente incorpora barreras de seguridad. No se documenta ninguna técnica adicional de decodificación, atención lineal o muestreo específico más allá del uso estándar de LoRA sobre el pipeline base.
+El adaptador se entrena con el token de instancia `moss_xvstyle`, que actua como disparador del estilo aprendido. No se dispone de informacion sobre el numero de pasos de entrenamiento, el dataset utilizado, la resolucion de las imagenes de entrenamiento, el learning rate ni si se aplicaron tecnicas de regularizacion como dropout o prior preservation. Tampoco se documenta si el entrenamiento incluyo tecnicas de RLHF, DPO o filtrado de datos.
 
 ## Capacidades
 
-- Generación de imagen texto-a-imagen fotorrealista en el dominio de contenido adulto explícito, condicionada por la palabra de disparo `moss_xvstyle`.
-- Especialización estilística y compositiva: los ejemplos de la model card describen planos corporales concretos, ángulos de cámara, iluminación suave y fondos interiores desenfocados, lo que indica un ajuste orientado a un estilo fotográfico consistente.
-- Control mediante prompts descriptivos largos y detallados (cuerpo, ropa, postura, entorno, luz, tipo de plano).
-- Compatibilidad con el ecosistema diffusers, lo que permite combinar el adaptador con el pipeline del modelo base.
-- Capacidades multilingües: no disponibles.
-- Soporte de tool calling, function calling, agentes o razonamiento multi-paso: no disponible (no es un modelo de lenguaje).
-- Modo "thinking", visión o audio: no disponible.
-- No se documentan capacidades de edición de imagen, inpainting, outpainting ni control estructural (ControlNet, IP-Adapter).
+- Generacion de imagenes texto-a-imagen mediante el pipeline de diffusers, con el modelo base MOSS-Image-SFT como motor de difusion.
+- Aplicacion de un estilo especializado para contenido para adultos mediante el token de instancia `moss_xvstyle`.
+- Generacion de escenas fotorrealistas con descripciones detalladas de pose, iluminacion, encuadre y composicion, segun los ejemplos de la model card.
+- Soporte de prompts largos y descriptivos en ingles, con control sobre plano (close-up, full-body, POV), iluminacion y ambientacion.
+- Compatibilidad con la libreria diffusers y el ecosistema de adaptadores LoRA (carga mediante `load_lora_weights`).
+- No se documenta soporte de tool calling, agentes, razonamiento multi-paso ni capacidades multimodales de entrada.
 
 ## Casos de uso
 
-- Investigación sobre alineación y filtrado de seguridad: el adaptador sirve como caso de estudio para medir hasta qué punto un LoRA puede recuperar un dominio que el modelo base filtra, y para evaluar la robustez de los clasificadores de contenido.
-- Auditoría de modelos generativos: equipos de confianza y seguridad pueden emplear este adaptador como muestra de referencia para construir y validar detectores de contenido explícito, verificando su tasa de falsos positivos y negativos.
-- Estudio de sesgos en generación de imagen: el adaptador permite analizar qué representaciones corporales, géneros, etnias y encuadres reproduce un ajuste entrenado sobre un dataset no documentado, útil para investigación en fairness.
-- Pruebas de pipelines de moderación en plataformas: simular cargas de trabajo con contenido sensible para verificar que los filtros de entrada y salida, el etiquetado y la cuarentena de contenido funcionan correctamente antes de exponer un servicio.
-- Desarrollo de herramientas de control parental y verificación de edad: generar muestras controladas para probar sistemas de detección y bloqueo en entornos cerrados y con acceso restringido.
-- Evaluación comparativa de adaptadores LoRA: medir calidad fotográfica, coherencia anatómica y fidelidad al prompt frente a otros adaptadores del mismo dominio, usando protocolos de evaluación con revisión humana.
-- Docencia sobre licencias y ética de modelos abiertos: analizar el desacoplamiento entre la licencia permisiva del adaptador (apache-2.0) y las restricciones legales y de política de plataforma aplicables al contenido generado.
+- Generacion de contenido para adultos en plataformas especializadas: el adaptador se integra en un pipeline de diffusers sobre MOSS-Image-SFT y permite generar imagenes fotorrealistas con el estilo `moss_xvstyle` para sitios de contenido adulto que operen en jurisdicciones donde sea legal.
+- Prototipado de estilos artisticos para figuras humanas: artistas digitales pueden usar el adaptador como referencia de composicion, iluminacion y pose en flujos de trabajo de character design para adultos.
+- Investigacion sobre moderacion de contenido: equipos de seguridad pueden emplear el modelo para generar datasets controlados de contenido no apto y entrenar o evaluar clasificadores de deteccion.
+- Pruebas de sesgo y representacion corporal: el adaptador permite generar variaciones de tono de piel, complexiones y encuadres, util para estudiar sesgos en modelos de difusion.
+- Generacion de material editorial para publicaciones especializadas: medios de fotografia erotica pueden usar el adaptador para crear imagenes de referencia o moodboards.
+- Desarrollo de herramientas de edicion fotografica asistida: el adaptador puede integrarse en aplicaciones de retoque o sintesis de imagenes donde se requiera un estilo fotografico concreto y control de composicion.
+- Experimentacion con LoRAs sobre modelos de difusion: investigadores pueden estudiar el efecto del rango, el token de instancia y la escala de aplicacion en la fidelidad del estilo aprendido.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No constan métricas objetivas como FID, CLIP score, ImageReward, ni evaluaciones de calidad o de alineación con el prompt. Tampoco se documentan comparaciones cuantitativas con otros adaptadores o con el modelo base sin LoRA.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Al ser un adaptador, el requisito dominante es el del modelo base MOSS-Image-SFT, cuyas necesidades de VRAM no se detallan en la información proporcionada.
-- GPU recomendadas: no disponible. No se especifican GPU de referencia ni configuraciones probadas por el autor.
-- Compatibilidad con GPU de consumo: no confirmada. Dependerá del tamaño y precisión del modelo base, dato no documentado.
-- Opciones de despliegue: la librería declarada es diffusers, por lo que el adaptador se cargaría sobre el pipeline de MOSS-Image-SFT mediante la API de LoRA de diffusers. No se confirma soporte para ComfyUI, llama.cpp, vLLM, TGI ni Ollama (estas dos últimas no aplican a modelos de difusión).
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Al tratarse de un adaptador LoRA sobre un modelo de difusion, los requisitos vendran determinados por el modelo base MOSS-Image-SFT, cuyas especificaciones no se detallan.
+- GPU recomendadas: no disponible. Dependera del modelo base; en general, los modelos de difusion texto-a-imagen requieren GPUs con al menos 8-16 GB de VRAM para resoluciones estandar.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible; depende del modelo base y de la cuantizacion aplicada.
+- Opciones de despliegue: diffusers (libreria declarada). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a modelos de difusion en la mayoria de casos.
 - Latencia y throughput: no disponibles.
-- Nota sobre el tamaño: los 27,4 GB del repositorio no permiten inferir la VRAM necesaria sin conocer qué artefactos contiene y qué proporción corresponde al adaptador frente a posibles copias del modelo base o imágenes de muestra.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| axiomofmind/Moss-image-nsfw-uncensored-lora | LoRA sobre MOSS-Image-SFT | no disponible | no aplica | apache-2.0 | Hugging Face, diffusers |
-| OpenMOSS-Team/MOSS-Image-SFT (modelo base) | Difusion texto-a-imagen | no disponible | no disponible | no indicada en la informacion | Hugging Face |
-| Otros LoRA NSFW para modelos de difusion | LoRA | no disponible | no aplica | variable | Hugging Face y comunidades afines |
-
-No se dispone de datos de rendimiento, parámetros ni contexto de los modelos comparables en la información proporcionada, por lo que la comparación se limita a tipo de artefacto, licencia y disponibilidad. No se han identificado en la búsqueda adaptadores LoRA equivalentes construidos específicamente sobre MOSS-Image-SFT.
+No disponible. No se han proporcionado datos de benchmarks ni especificaciones del modelo base que permitan una comparacion cuantitativa con alternativas como otros LoRAs NSFW o modelos de difusion texto-a-imagen de proposito general.
 
 ## Limitaciones y advertencias
 
-- Contenido para adultos: el repositorio está marcado como `not-for-all-audiences` y `adult-content`. La generación de material explícito conlleva obligaciones legales de verificación de edad, consentimiento y cumplimiento normativo que varían por jurisdicción.
-- Riesgo de uso indebido: un adaptador que elimina filtros puede emplearse para generar contenido sexual no consentido, deepfakes o material de abuso. Es imprescindible implantar controles de identidad, listas de bloqueo y revisión humana en cualquier despliegue.
-- Dataset no documentado: se desconoce la procedencia de las imágenes de entrenamiento y si existió consentimiento de las personas representadas, lo que afecta a la trazabilidad y al riesgo legal.
-- Sesgo de representación: los ejemplos de la model card muestran de forma consistente mujeres jóvenes, de piel clara, en encuadres desde atrás y con un repertorio corporal limitado. Es esperable un sesgo de género, edad, etnia y tipología corporal.
-- Alucinación anatómica: como todo modelo de difusión, puede producir errores en manos, extremidades y anatomía, especialmente en composiciones complejas o con múltiples sujetos.
-- Fidelidad al prompt: no hay métricas que cuantifiquen la adherencia al texto; los prompts largos y muy detallados pueden producir desviaciones.
-- Idiomas: no se especifican los idiomas soportados por el codificador de texto; el autor solo proporciona ejemplos en inglés.
-- Licencia: el adaptador declara apache-2.0, permisiva para uso comercial, pero la licencia del modelo base no se indica en la información disponible y debe verificarse antes de cualquier explotación comercial. Una licencia permisiva sobre el adaptador no exime de responsabilidad por el contenido generado.
-- Ausencia de documentación técnica: no hay información sobre hiperparámetros, evaluación, limitaciones declaradas por el autor ni proceso de curación del dataset, lo que dificulta la reproducción y la evaluación rigurosa.
-- Política de plataformas: muchos proveedores de servicios en la nube y marketplaces prohíben el alojamiento de contenido explícito, lo que puede impedir el despliegue en infraestructuras gestionadas.
+- Contenido explicito: el modelo esta disenado para generar contenido para adultos y esta etiquetado como `not-for-all-adult-audiences`. Su uso puede violar los terminos de servicio de plataformas de distribucion y las leyes de determinadas jurisdicciones.
+- Riesgo legal: la generacion y distribucion de contenido sexual explicito esta regulada de forma distinta en cada pais; el usuario es responsable de cumplir la normativa aplicable, incluida la relativa a deepfakes y consentimiento.
+- Sesgos: no se documenta ninguna evaluacion de sesgos; es probable que el adaptador herede los sesgos del modelo base y del dataset de entrenamiento, incluyendo sesgos de genero, etnia y corporalidad.
+- Alucinacion visual: como todo modelo de difusion, puede generar anatomia incorrecta, artefactos en manos y cuerpos, y composiciones incoherentes con el prompt.
+- Idioma: la model card y los ejemplos estan en ingles; no se documenta soporte multilingue.
+- Licencia: Apache 2.0 permite uso comercial del adaptador, pero el modelo base puede tener sus propias condiciones que el usuario debe verificar.
+- Falta de documentacion tecnica: no se detallan parametros, dataset, pasos de entrenamiento ni evaluacion, lo que dificulta la reproducibilidad y la evaluacion de calidad.
+- Tamano del repositorio: 37,8 GB, lo que implica requisitos de almacenamiento considerables y posiblemente checkpoints intermedios no documentados.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/axiomofmind/Moss-image-nsfw-uncensored-lora
-- Modelo base MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
-- Repositorio de la librería diffusers: no incluido en la información proporcionada
-- Paper o blog técnico del modelo base: no incluido en la información proporcionada
-- Demo o espacio asociado: no incluido en la información proporcionada
+- Hugging Face: https://huggingface.co/axiomofmind/Moss-image-nsfw-uncensored-lora
+- Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
+- Libreria diffusers: https://github.com/huggingface/diffusers

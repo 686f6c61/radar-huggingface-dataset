@@ -2,101 +2,94 @@
 
 ## Resumen
 
-Ling-3.0-flash-VL-GGUF es una conversión a formato GGUF del modelo multimodal `inclusionAI/Ling-3.0-flash-VL`, publicada por el usuario bloomer010. Se trata de un modelo de mezcla de expertos (MoE) de 124.414.211.552 parámetros totales con 5,1 mil millones de parámetros activos por token, capaz de procesar texto, imágenes y vídeo. La conversión se ha realizado directamente desde los safetensors BF16 publicados por inclusionAI, aplicando transformaciones específicas de tensores para adaptar la arquitectura al runtime de llama.cpp.
+Ling-3.0-flash-VL es un modelo multimodal de tipo imagen-texto-a-texto desarrollado por inclusionAI, construido sobre el modelo de lenguaje Ling-3.0-flash. Su propuesta central es integrar informacion visual en todo el ciclo de comprension, razonamiento, actuacion y verificacion, de modo que el modelo no solo describa imagenes o videos, sino que resuelva tareas del mundo real a partir de ellos. Emplea una arquitectura de mezcla de expertos (MoE) con 124.414.211.552 parametros totales y solo 5.5B parametros activos por token, lo que le permite ofrecer capacidades multimodales y agenticas con un coste de computo por token relativamente bajo.
 
-El modelo combina dos mecanismos de atención: 35 capas KDA (atención lineal) y 7 capas MLA con gating en los índices basados en cero 5, 11, 17, 23, 29, 35 y 41, sobre un total de 42 bloques. El enrutado MoE utiliza 512 expertos enrutados con selección top-8 más un experto compartido, puntuación por sigmoide, sesgo de experto y cuatro grupos seleccionados de ocho disponibles. Incorpora una torre de visión de 27 bloques para entrada de imagen y vídeo, distribuida en un archivo `mmproj` separado.
+La ficha corresponde a la conversion GGUF publicada por bloomer010, que empaqueta los pesos en formato cuantizado para su uso con llama.cpp y anade el fichero `mmproj-model-f16.gguf` necesario para procesar imagenes y video. El modelo declara una ventana de contexto nativa de 131.072 tokens, ampliable hasta 256K mediante YaRN con factor 2, y soporta entradas de imagen y video a traves del mismo endpoint de chat compatible con la API de OpenAI.
 
-Su relevancia es limitada por el momento: el repositorio registra 0 descargas y 0 likes, y la arquitectura `bailingmoe3vl` todavía no carga en la rama principal de llama.cpp. Según la model card, es necesario aplicar tres pull requests no fusionados, o bien compilar la rama `ling3-vl` del repositorio `aetherbird/llama.cpp`. La licencia es MIT.
+Su relevancia actual radica en la combinacion de tres factores: un MoE de 124B con solo 5.5B activos, soporte multimodal real (imagen y video) y una licencia MIT que permite uso comercial sin restricciones. La publicacion de conversiones GGUF en llama.cpp estable (build b11190 o superior) facilita el despliegue en infraestructura propia, incluyendo configuraciones hibridas con expertos en CPU y el resto en GPU.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida KDA (atención lineal) + MLA con gating; transformer con torre de visión de 27 bloques |
+| Arquitectura | Transformer con mezcla de expertos (MoE), tag `bailingmoe3`; incluye MLA y convoluciones KDA |
 | Parametros totales | 124.414.211.552 (124B) |
-| Parametros activos | 5,1B por token |
-| Longitud de contexto | Hasta 128K tokens (el ejemplo de la model card usa `-c 131072`) |
-| Tipos de cuantizacion | BF16 (249 GB) y Q4_K_M (tamaño no disponible, marcado como TBD en la model card); no se detallan el resto de variantes |
+| Parametros activos | 5.5B por token |
+| Longitud de contexto | 131.072 tokens nativos; 256K mediante YaRN (factor 2.0, contexto original 131072) |
+| Tipos de cuantizacion | BF16, UD-Q8_K_XL, Q8_0, UD-Q6_K_XXL, UD-Q6_K_XL, Q6_K, UD-Q5_K_XL, Q5_K_M, UD-Q4_K_XL, Q4_K_M, Q4_K_S, UD-Q3_K_XL, Q3_K_M, UD-Q2_K_XL, IQ2_M, IQ2_XS |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp); archivo `mmproj-model-f16.gguf` separado en F16 para la entrada de visión |
-| Tamano del repositorio | 248,9 GB |
-| Modelo base | inclusionAI/Ling-3.0-flash-VL |
-| Fecha de publicacion | 19 de septiembre de 2026 |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors BF16 |
 
 ## Arquitectura y entrenamiento
 
-El archivo de texto contiene 42 bloques: 35 capas KDA y 7 capas MLA con gating. Las dos primeras capas emplean FFN densas y el resto utilizan 512 expertos enrutados con selección top-8 más un experto compartido. El enrutado combina puntuación sigmoide, sesgo de experto, ocho grupos de expertos y cuatro grupos seleccionados. El codificado posicional es M-RoPE con secciones [8, 12, 12], compartido entre posiciones de texto y de visión.
+El modelo base es un transformer con mezcla de expertos identificado con la etiqueta `bailingmoe3`. La arquitectura incorpora atencion con latencia multi-cabeza (MLA), con el tensor `kv_b_proj` dividido en tensores K y V separados y el tensor K transpuesto durante la conversion, ademas de convoluciones KDA con pesos reformados para llama.cpp y un parametro `A_log` almacenado como `exp(A_log)`. La publicacion GGUF no incluye bloque MTP/NextN, ya que la version VL no lo distribuye, por lo que la decodificacion especulativa mediante `--spec-type draft-mtp` no esta disponible para este modelo; en su lugar se puede usar el draft DSpark del modelo de texto.
 
-La torre de visión y el proyector residen en un GGUF `mmproj` independiente: incluye patch embedding Conv3D, embeddings posicionales aprendidos, 27 bloques de atención, un merger solo de normalización y un proyector de dos capas (`ling3vl_merger`). Las transformaciones aplicadas durante la conversión incluyen `A_log` almacenado como `exp(A_log)`, división de `kv_b_proj` de MLA en tensores K y V separados con K traspuesta, remodelado de los pesos de convolución de KDA, apilado de tensores por experto en tensores de experto GGUF y mapeo separado de los tensores `g_proj` de KDA y MLA. Las normalizaciones, tensores de enrutado, sesgo de enrutado de expertos, escalares de estado de KDA, `dt_bias` y pesos de convolución permanecen en F32.
-
-No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. La model card indica que esta conversión no incluye bloque MTP/NextN, a diferencia de las GGUF de texto de Ling-3.0-flash, porque la versión VL no lo distribuye; en consecuencia, el borrador especulativo mediante `--spec-type draft-mtp` no está disponible. La model card declara validaciones de carga de arquitectura BF16 y round-trip de tensores, round-trip del GGUF `mmproj` (334 tensores, proyector `ling3vl_merger`) y deja la inferencia extremo a extremo de imagen y vídeo en llama-server como pendiente (TBD).
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El modelo soporta un modo de razonamiento (thinking mode) activado por defecto, desactivable por peticion mediante `chat_template_kwargs.enable_thinking = false`, con parametros de muestreo recomendados de temperatura 0.6, top_p 0.95 y top_k 20. La ventana de 256K se obtiene replicando la receta del modelo original (YaRN, factor 2.0, contexto original 131072); la calidad en 256K no fue validada por el autor de la conversion.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Entrada de imagen mediante `image_url` en la API de chat compatible con OpenAI.
-- Entrada de vídeo mediante partes de contenido `video_url`; los fotogramas se muestrean y codifican con la misma torre de visión.
-- Modo de razonamiento (thinking) activado por defecto, desactivable por petición con `"chat_template_kwargs": {"enable_thinking": false}`.
-- Procesamiento de contexto largo de hasta 128K tokens.
-- Inferencia solo de texto sin necesidad del archivo `mmproj`.
-- No se documentan en la información disponible capacidades de tool calling, function calling ni agentes multi-paso.
-- No se detallan capacidades multilingües ni la lista de idiomas soportados.
+- Generacion de texto conversacional multi-turno con contexto largo (hasta 131K nativos, 256K con YaRN).
+- Comprension de imagenes: descripcion, analisis y respuesta a preguntas sobre contenido visual.
+- Comprension de video: muestreo de fotogramas codificados por la misma torre de vision, enviados como partes `video_url` en la API de chat.
+- Razonamiento multimodal: integracion de informacion visual en el proceso de razonamiento, actuacion y verificacion.
+- Modo de razonamiento (thinking mode) activado por defecto, desactivable por peticion.
+- Capacidades agenticas y de resolucion de tareas del mundo real a partir de vision, segun la model card del modelo base.
+- Compatibilidad con endpoints de la API de OpenAI (`endpoints_compatible`).
+- Soporte de plantillas Jinja (`--jinja`) para el chat template.
+- Decodificacion especulativa mediante draft DSpark (cabezas del modelo de texto, compatibles por vocabulario compartido).
 
 ## Casos de uso
 
-- Descripción y etiquetado automático de imágenes: el modelo acepta imágenes en base64 mediante `image_url` y devuelve texto descriptivo, útil para generar metadatos en catálogos o sistemas de gestión documental.
-- Análisis de vídeo con muestreo de fotogramas: al aceptar `video_url`, permite resumir o clasificar contenido audiovisual sin pipeline externo de extracción de frames, ya que la propia torre de visión codifica los fotogramas.
-- Asistentes conversacionales de texto con contexto extenso: con hasta 128K tokens de ventana, admite hilos largos de conversación o documentos completos en una sola petición.
-- Despliegue en hardware limitado mediante offload de expertos: el parámetro `-ot "ffn_.*_exps\.weight=CPU"` o `-ncmoe N` permite mantener los expertos en CPU y el resto en GPU, lo que hace viable servir un modelo de 124B con menos VRAM que el tamaño del archivo.
-- Procesamiento por lotes en local con llama-server: la exposición de un endpoint compatible con `/v1/chat/completions` permite integrarlo en scripts y herramientas internas sin depender de servicios en la nube.
-- Evaluación e investigación de arquitecturas híbridas: al ser una conversión de pesos abierta de un modelo KDA + MLA, sirve para reproducir y estudiar el comportamiento de atención lineal combinada con MLA en entornos llama.cpp.
-- Generación de descripciones accesibles: conversión de imágenes y vídeos a texto para lectores de pantalla o cumplimiento de requisitos de accesibilidad.
+- Analisis documental con imagenes: digitalizacion y extraccion de informacion de facturas, formularios o capturas, enviando la imagen como `image_url` en base64 y aprovechando el modo thinking para razonar sobre campos ambiguos.
+- Moderacion de contenido visual: clasificacion y descripcion de imagenes en pipelines de revision, con contexto largo para procesar lotes dentro de una misma sesion conversacional.
+- Asistencia en accesibilidad: generacion de descripciones detalladas de imagenes y resumenes de video para usuarios con discapacidad visual, usando el endpoint compatible con OpenAI.
+- Agentes autonomos sobre entornos visuales: el modelo puede observar capturas de pantalla o fotogramas y razonar pasos siguientes, apoyandose en sus capacidades agenticas y en el modo thinking para tareas de varios pasos.
+- Analisis de video para vigilancia o monitorizacion: muestreo de fotogramas y consultas en lenguaje natural sobre eventos, con contexto de 131K tokens para mantener el hilo de una sesion larga.
+- Despliegue en infraestructura propia con llama.cpp: servir el modelo con `llama-server` en configuracion hibrida (expertos en CPU, resto en GPU) para equipos con menos VRAM que el tamano del fichero, manteniendo capacidades de vision.
+- Aceleracion de inferencia en produccion: combinar el target Q6_K con el draft DSpark Q4_K_M y `--spec-type draft-dspark --spec-draft-n-max 8` para aumentar el throughput de decodificacion en escenarios de texto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente documenta validaciones de carga de arquitectura, round-trip de tensores y round-trip del `mmproj` (334 tensores), y marca la inferencia extremo a extremo de imagen y vídeo en llama-server como pendiente.
+No se han publicado resultados de benchmarks en la informacion disponible (MMLU, HumanEval, GSM8K u otros). Los unicos datos de rendimiento medidos corresponden a la velocidad de decodificacion con llama-server:
+
+| Configuracion | Velocidad de decodificacion |
+|---|---|
+| VL Q6_K (objetivo), 32K contexto, 24 peticiones | 26.8 tok/s |
+| VL Q6_K + DSpark Q4_K_M, `--spec-draft-n-max 8` | 43.6 tok/s (1.63x) |
+| Stack completo (7 GPU mixtas, encoder de vision, KV q4_0, 48K contexto), sin draft | 38.1 tok/s |
+| Stack completo con draft DSpark | 24.1 tok/s |
+
+Tasa de aceptacion del draft sobre VL Q6_K: 0.32 con draft Q4_K_M y 0.30 con draft Q2_K; el mismo draft Q4_K_M mide 0.26 contra el Ling-3.0-flash de solo texto.
 
 ## Requisitos de hardware
 
-- BF16: archivo de 249 GB; la propia model card recomienda 256 GB o más de memoria.
-- Q4_K_M: tamaño oficial no disponible (marcado como TBD). A partir de los 124,4B parámetros totales, la estimación aritmética se sitúa en torno a 70-75 GB asumiendo una media de 4,5-5 bits por peso; es una cifra derivada, no confirmada por el autor.
-- Los pesos y el contexto comparten memoria, por lo que la model card recomienda dejar margen libre.
-- Offload de expertos: con menos VRAM que el tamaño del archivo, se pueden mantener los expertos en CPU con `-ot "ffn_.*_exps\.weight=CPU"` o ajustar la colocación con `-ncmoe N`, dejando el resto en GPU.
-- GPU recomendadas: no disponible. No se especifican modelos concretos (A100, H100, RTX 4090 u otros).
-- Compatibilidad con GPU de consumo: no confirmada; dependerá de la VRAM disponible frente al tamaño de la cuantización elegida y de la proporción de expertos que se delegue a CPU.
-- Opciones de despliegue: llama.cpp, en concreto `llama-server` y `llama-cli`. No carga en la rama principal de llama.cpp; requiere tres pull requests no fusionados (arquitectura VL `bailingmoe3vl` más proyector de Ling VL, parser dedicado de Ling PR #28682 y manejo de UTF-8 inválido en el límite de token PR #28724) o la rama `ling3-vl` de `aetherbird/llama.cpp`. No se documenta compatibilidad con vLLM, TGI, Ollama u otros servidores.
-- Latencia y throughput: no disponibles.
-- Parámetros de muestreo recomendados por la model card del modelo fuente: `temperature 0.6`, `top_p 0.95`, `top_k 20`.
+- VRAM/RAM estimada segun cuantizacion: BF16 249 GB; UD-Q8_K_XL 172.5 GB; Q8_0 132 GB; UD-Q6_K_XXL 112.8 GB; UD-Q6_K_XL 103 GB; Q6_K 102 GB; UD-Q5_K_XL 92.3 GB; Q5_K_M 88.3 GB; UD-Q4_K_XL 81.9 GB; Q4_K_M 75.3 GB; Q4_K_S 70.7 GB; UD-Q3_K_XL 60.6 GB; Q3_K_M 59.3 GB; UD-Q2_K_XL 41.9 GB; IQ2_M 40.6 GB; IQ2_XS 36.5 GB. El fichero `mmproj-model-f16.gguf` anade 0.87 GB y es obligatorio para imagen y video.
+- Memoria recomendada por el autor: 256 GB+ para BF16, 178 GB+ para UD-Q8_K_XL, 136 GB+ para Q8_0, 116 GB+ para UD-Q6_K_XXL, 104 GB+ para Q6_K, 94 GB+ para UD-Q5_K_XL, 84 GB+ para UD-Q4_K_XL, 76 GB+ para Q4_K_M, 72 GB+ para Q4_K_S, 62 GB+ para UD-Q3_K_XL, 60 GB+ para Q3_K_M, 44 GB+ para UD-Q2_K_XL, 42 GB+ para IQ2_M y 38 GB+ para IQ2_XS. Hay que dejar margen porque pesos y contexto comparten memoria.
+- GPU recomendadas: no se especifican modelos concretos en la informacion disponible. El autor documenta un stack de servicio con 7 GPU mixtas.
+- GPU de consumo: no cabe en GPU de consumo individual; la opcion practica es la configuracion hibrida con expertos en CPU (`-ot "ffn_.*_exps\.weight=CPU"`) y el resto en GPU, o el uso de `-ncmoe N` para ajustar la colocacion de expertos.
+- Opciones de despliegue: llama.cpp con `llama-server` (build b11190 o superior), con `--mmproj` para vision, `--jinja`, `--flash-attn auto` y `-ngl auto`. Compatible con endpoints de la API de OpenAI.
+- Latencia y throughput: 26.8 tok/s con Q6_K en banco de pruebas aislado (32K contexto, 24 peticiones); 43.6 tok/s con draft DSpark Q4_K_M; en stack completo, 38.1 tok/s sin draft y 24.1 tok/s con draft. Cuantizar el KV cache del draft con `-ctkd q4_0 -ctvd q4_0` reduce la velocidad de decodificacion aproximadamente un 40% adicional.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada. La única comparación documentada por el autor es interna, frente a las conversiones GGUF del modelo de solo texto Ling-3.0-flash:
-
-| Modelo | Parametros | Contexto | Bloque MTP/NextN | Borrador especulativo | Licencia |
-|---|---|---|---|---|---|
-| Ling-3.0-flash-VL-GGUF (esta ficha) | 124B totales / 5,1B activos | Hasta 128K | No incluido | No disponible (`--spec-type draft-mtp`) | MIT |
-| Ling-3.0-flash GGUF (solo texto) | no disponible | no disponible | Sí incluido | Disponible | no disponible |
+No disponible. La informacion proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- La arquitectura `bailingmoe3vl` no está fusionada en llama.cpp: el modelo no carga en versiones estándar y exige compilar una rama con tres pull requests no fusionados, lo que implica riesgo de cambios incompatibles.
-- La inferencia extremo a extremo de imagen y vídeo en llama-server figura como pendiente de validación (TBD) en la propia model card.
-- Ausencia de bloque MTP/NextN en la versión VL: no se puede usar decodificación especulativa con `--spec-type draft-mtp` como en las GGUF de texto.
-- No hay datos publicados de benchmarks, sesgos, alineación o comportamiento en producción.
-- No se especifican los idiomas soportados, por lo que no se puede garantizar un rendimiento adecuado en castellano.
-- Riesgo de alucinación no cuantificado: no se han publicado evaluaciones al respecto.
-- El tamaño del archivo Q4_K_M está sin determinar (TBD), lo que dificulta planificar requisitos de memoria.
-- Repositorio sin descargas ni valoraciones (0 descargas, 0 likes) y con menos de media hora entre creación y última actualización según los metadatos, lo que reduce la evidencia de uso real en terceros.
-- La model card advierte de que las cuantizaciones más pequeñas implican más compresión y más degradación ("más slop" y mal comportamiento), sin cuantificar la pérdida.
-- Licencia MIT en esta conversión, pero conviene verificar las condiciones del modelo base `inclusionAI/Ling-3.0-flash-VL` antes de uso comercial.
+- La calidad en contexto de 256K no fue validada por el autor de la conversion; las flags de YaRN replican la recomendacion del modelo original.
+- El modelo GGUF no incluye bloque MTP/NextN: la decodificacion especulativa con `--spec-type draft-mtp` no esta disponible para la variante VL.
+- El draft DSpark no usa flash attention y su buffer de computo crece linealmente con la longitud de contexto; ademas mantiene su propio KV cache, que conviene dejar en f16 (cuantizarlo reduce la velocidad de decodificacion un 40% adicional).
+- En stack completo de servicio, el draft DSpark puede degradar el rendimiento (24.1 tok/s frente a 38.1 tok/s sin draft), por lo que hay que medir en el entorno real antes de adoptarlo.
+- El fichero `mmproj-model-f16.gguf` es obligatorio para imagen y video; sin el solo funciona el chat de texto.
+- No hay informacion sobre idiomas soportados ni sobre sesgos conocidos del modelo.
+- Riesgo de alucinacion no cuantificado en la informacion disponible; el modo thinking activado por defecto puede incrementar la latencia si no se desactiva por peticion.
+- La licencia MIT del repositorio GGUF permite uso comercial, pero conviene verificar la licencia del modelo base `inclusionAI/Ling-3.0-flash-VL` antes de un despliegue en produccion.
+- El repositorio ocupa 3283 GB, lo que exige planificacion de almacenamiento si se descargan varias cuantizaciones.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta conversión: https://huggingface.co/bloomer010/Ling-3.0-flash-VL-GGUF
+- Repositorio GGUF: https://huggingface.co/bloomer010/Ling-3.0-flash-VL-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
-- Pull request del parser de Ling en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/28682
-- Pull request de manejo de UTF-8 inválido en el límite de token: https://github.com/ggml-org/llama.cpp/pull/28724
-- Rama con los tres pull requests aplicados: https://github.com/aetherbird/llama.cpp (rama `ling3-vl`)
-- Paper, blog o demo oficial: no disponible en la información proporcionada.
-- La búsqueda web asociada no devolvió resultados relacionados con este modelo.
+- llama.cpp (requerido, build b11190 o superior): no disponible en la informacion proporcionada
+- Paper, blog o demo oficiales: no disponible en la informacion proporcionada

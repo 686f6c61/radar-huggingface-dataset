@@ -21,8 +21,6 @@
     "launch-contract-governed",
     "research-candidate",
     "en",
-    "base_model:SZLHOLDINGS/abstain-doctrine-r1",
-    "base_model:quantized:SZLHOLDINGS/abstain-doctrine-r1",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

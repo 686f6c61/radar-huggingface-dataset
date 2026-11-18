@@ -2,50 +2,51 @@
 
 ## Resumen
 
-WaifuGemma4-26B-A4B-V1-ik_llama.cpp es una cuantizacion GGUF del modelo base hiwaifu-research/WaifuGemma4-26b-a4b-v1, publicada por el usuario Austriani. Se trata de un modelo de mezcla de expertos (MoE) con arquitectura derivada de Gemma 4, con 25.2B parametros totales y 3.8B parametros activos por token, distribuidos en 128 expertos enrutados. El modelo esta afinado especificamente para roleplay, escritura creativa y conversacion sin censura, y esta empaquetado para su uso con el runtime ik_llama.cpp.
+WaifuGemma4-26B-A4B-V1-ik_llama.cpp es una cuantización GGUF del modelo base `hiwaifu-research/WaifuGemma4-26b-a4b-v1`, publicada por el usuario Austriani. El modelo base es un Mixture-of-Experts (MoE) de arquitectura derivada de Gemma 4, con 25.233.142.046 parámetros totales y aproximadamente 3.800 millones de parámetros activos por token, distribuidos en 128 expertos enrutados. Está especializado en roleplay, escritura creativa, conversación de personajes y contenido sin censura (uncensored), y esta versión concreta está empaquetada para el runtime ik_llama.cpp con cuantizaciones IQK y calibración imatrix V3.
 
-La relevancia de esta publicacion es doble: por un lado, ofrece una variante cuantizada de un modelo MoE de gran tamano pensada para ejecucion local eficiente gracias a su bajo numero de parametros activos; por otro, emplea una calibracion imatrix propia (denominada V3) y un esquema de cuantizacion IQK con trellis-quant y maxoptima, orientados a preservar calidad en compresiones agresivas. El contexto de calibracion del imatrix es de 1024 tokens.
+La relevancia de esta ficha reside en que se trata de una cuantización de un modelo MoE grande (25B) con un coste de inferencia propio de un modelo de ~4B activos, lo que permite ejecutarlo en hardware de consumo con requisitos de VRAM moderados si se elige la cuantización adecuada. El repositorio ocupa 89,9 GB e incluye múltiples niveles de cuantización, lo que refleja el interés del autor en ofrecer opciones desde calidad casi completa hasta despliegues muy comprimidos.
 
-El modelo esta pensado para desarrolladores que despliegan asistentes conversacionales de personaje o narrativa interactiva en hardware modesto, y que necesitan pesos ya cuantizados compatibles con ik_llama.cpp. No se dispone de informacion publica sobre el proceso de entrenamiento del modelo base ni sobre resultados de benchmarks.
+El modelo está pensado para generación de texto conversacional en inglés, con licencia Apache 2.0, y su ecosistema de herramientas (ik_llama.cpp) es menos estándar que llama.cpp u Ollama, lo que condiciona su despliegue. No se han publicado datos de benchmarks ni detalles completos de entrenamiento en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) derivada de Gemma 4, transformer |
-| Parametros totales | 25.2B |
-| Parametros activos | 3.8B |
+| Arquitectura | Mixture-of-Experts (MoE) derivada de Gemma 4; transformer con 128 expertos enrutados |
+| Parametros totales | 25.233.142.046 (≈25,2B) |
+| Parametros activos | ≈3,8B por token |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con esquema IQK (trellis-quant, maxoptima), calibracion imatrix V3 |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantizacion | GGUF con cuantizaciones IQK (trellis-quant, maxoptima) calibradas con imatrix V3; niveles concretos no detallados en la información disponible |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (compatible con ik_llama.cpp) |
+| Formato de pesos | GGUF (repo de 89,9 GB); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una mezcla de expertos con 128 expertos enrutados y 25.2B parametros totales, de los cuales solo 3.8B se activan por token. La arquitectura se etiqueta como derivada de Gemma 4, aunque no se detalla la configuracion exacta de capas, dimension del hidden state ni el mecanismo de enrutamiento. El modelo esta afinado para roleplay, escritura creativa y conversacion sin censura, segun los tags de la model card.
+El modelo es un transformer con arquitectura Mixture-of-Experts: 25,2B parámetros totales de los que solo ~3,8B se activan por token, repartidos entre 128 expertos enrutados. Esta configuración reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamaño, manteniendo una capacidad de representación alta. La base declarada es Gemma 4, aunque no se detalla en la información proporcionada la composición del dataset, el número de tokens de entrenamiento ni si hubo fases de RLHF, DPO o ajuste fino supervisado específico para roleplay.
 
-En cuanto al proceso de entrenamiento del modelo base (numero de tokens, composicion del dataset, uso de RLHF o DPO), no se ha publicado informacion en la documentacion disponible. La contribucion de este repositorio es la cuantizacion: se aplica una calibracion imatrix propia (V3) con contexto de 1024 tokens y un esquema de cuantizacion IQK que combina trellis-quant y maxoptima, tecnicas orientadas a reducir el error de compresion en cuantizaciones de baja precision. No se especifican los niveles de bits exactos disponibles en el repositorio.
+La innovación técnica destacable de esta publicación no está en el modelo en sí, sino en el proceso de cuantización: el autor emplea cuantizaciones IQK con "trellis-quant" y "maxoptima", calibradas mediante una imatrix V3 con contexto de 1024 tokens. Este tipo de calibración busca preservar la calidad de los expertos enrutados al comprimir, un punto crítico en modelos MoE donde una cuantización agresiva puede degradar el enrutamiento. No se dispone de información sobre decodificación especulativa, atención lineal ni otras optimizaciones de arquitectura.
 
 ## Capacidades
 
-- Generacion de texto conversacional y narrativo, con enfasis en roleplay y escritura creativa.
-- Conversacion multi-turno orientada a personajes, segun los tags de la model card.
-- Modo sin censura (uncensored), pensado para contenido que otros modelos rechazan.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: solo ingles declarado.
-- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
+- Generación de texto conversacional y creativo en inglés, orientada a roleplay y narrativa de personajes.
+- Roleplay multi-turno con mantenimiento de personaje y estilo, según los tags del repositorio (roleplay, rp, erp, character, waifu).
+- Escritura creativa y ficción, incluyendo contenido para adultos sin censura (uncensored).
+- Conversación general y chat (chat, conversational).
+- Capacidades multilingües: limitadas al inglés según la model card; no se declaran otros idiomas.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes de personaje para comunidades de roleplay: el modelo esta afinado especificamente para mantener personalidad y coherencia en conversaciones largas de personaje, lo que lo hace adecuado para chatbots de rol en Discord o web.
-- Narrativa interactiva y ficcion colaborativa: su orientacion a escritura creativa permite generar tramas, dialogos y descripciones dentro de una sesion de escritura asistida.
-- Prototipado de aplicaciones de chat sin censura: util para investigar el comportamiento de modelos con filtros relajados en entornos controlados.
-- Despliegue local en hardware de consumo: con 3.8B parametros activos y pesos GGUF, puede ejecutarse en GPUs de gama alta para consumidores mediante ik_llama.cpp, sin depender de APIs externas.
-- Evaluacion de tecnicas de cuantizacion: el repositorio sirve como referencia practica para comparar la calibracion imatrix V3 y el esquema IQK frente a cuantizaciones estandar.
-- Generacion de dialogos para videojuegos o mods: su capacidad conversacional y su licencia Apache 2.0 permiten integrarlo en proyectos comerciales de pequeno y mediano tamano.
-- Investigacion sobre sesgos y seguridad en modelos sin censura: permite estudiar como se comporta un MoE afinado para roleplay en escenarios sensibles.
+- Roleplay conversacional de personajes: el modelo puede mantener interacciones multi-turno con consistencia de personaje gracias a su especialización declarada en roleplay y su ventana de contexto (longitud no especificada, pero el modelo base es de la familia Gemma 4). Adecuado para aplicaciones de entretenimiento y chatbots de personajes.
+- Escritura creativa asistida: generación de relatos, diálogos y ficción por capítulos, aprovechando el ajuste del modelo base hacia narrativa y su naturaleza sin censura para tramas adultas.
+- Generación de contenido para plataformas de ficción interactiva: integración en motores de historias ramificadas donde el modelo produce respuestas de personaje coherentes con el estado de la narrativa.
+- Chat de acompañamiento y entretenimiento: despliegue de asistentes conversacionales con personalidad definida, usando las cuantizaciones GGUF más pequeñas para servidores con VRAM limitada.
+- Prototipado de aplicaciones de rol con IA en local: gracias al bajo número de parámetros activos (~3,8B), es viable ejecutarlo en una GPU de consumo con una cuantización agresiva, lo que facilita iterar en desarrollo sin coste de API.
+- Fine-tuning y experimentación sobre MoE: el repositorio sirve como referencia para estudiar el efecto de la cuantización IQK con imatrix V3 sobre modelos MoE, comparando niveles de compresión frente al modelo base en safetensors.
+- Generación de diálogos para videojuegos o novelas visuales: el modelo puede producir líneas de personaje en inglés para prototipos de juegos, con la advertencia de que el contenido no está filtrado.
 
 ## Benchmarks y rendimiento
 
@@ -53,36 +54,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo de 25.2B parametros en GGUF de 4 bits ocupa aproximadamente 14-16 GB, y en 8 bits alrededor de 26-28 GB; estas cifras son estimaciones y no datos publicados por el autor.
-- GPU recomendadas: no disponible. Por el perfil de parametros activos (3.8B), el modelo puede beneficiarse de GPUs con 24 GB o mas, como RTX 4090, A100 o H100, aunque no hay recomendaciones oficiales.
-- Cabe en GPU de consumo: probablemente en RTX 4090 y modelos con 24 GB o mas en cuantizaciones bajas, segun la estimacion anterior; no confirmado por el autor.
-- Opciones de despliegue: ik_llama.cpp es el runtime declarado. No se confirma compatibilidad con llama.cpp estandar, vLLM, TGI u Ollama.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: depende del nivel de cuantización GGUF elegido. Con 25,2B parámetros totales, una cuantización de ~4 bits requiere aproximadamente 13-15 GB de VRAM; una de ~2-3 bits puede bajar a 8-10 GB. Estos valores son estimaciones basadas en el tamaño del modelo, no datos publicados por el autor.
+- GPU recomendadas: para cuantizaciones de alta calidad, GPU con 24 GB (RTX 3090, RTX 4090) o profesionales (A100 40/80 GB, H100). Para cuantizaciones agresivas, GPU de 12-16 GB.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con cuantizaciones de 4 bits o menores, y potencialmente en GPUs de 12 GB con cuantizaciones de 2-3 bits.
+- Opciones de despliegue: el repositorio está empaquetado para ik_llama.cpp (fork de llama.cpp con soporte IQK). No se declara compatibilidad con vLLM, TGI u Ollama en la información disponible; llama.cpp estándar podría no soportar los tipos de cuantización IQK empleados.
+- Latencia y throughput: no disponibles. Al tener ~3,8B parámetros activos, el throughput debería ser sustancialmente mayor que el de un modelo denso de 25B, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| WaifuGemma4-26B-A4B-V1 (esta ficha) | 25.2B | 3.8B | no disponible | Apache 2.0 | GGUF (ik_llama.cpp) |
-| Modelos MoE comparables de la familia Gemma | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Alternativas de roleplay cuantizadas | no disponible | no disponible | no disponible | no disponible | no disponible |
+| WaifuGemma4-26B-A4B-V1 (esta ficha) | 25,2B | ~3,8B | no disponible | Apache 2.0 | GGUF (ik_llama.cpp) |
+| Modelo base WaifuGemma4-26b-a4b-v1 | 25,2B | ~3,8B | no disponible | Apache 2.0 | safetensors |
+| Alternativas de rol MoE de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos concretos de la misma categoria.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparativa cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- El modelo solo declara soporte de ingles; el rendimiento en castellano no esta verificado.
-- Al estar afinado para contenido sin censura, puede generar respuestas inapropiadas, ofensivas o inseguras; requiere moderacion en produccion.
-- Riesgo de alucinacion inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad.
-- No se dispone de informacion sobre la longitud de contexto soportada, lo que limita la planificacion de casos de uso con contextos largos.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base y sus datos de entrenamiento pueden tener condiciones adicionales no documentadas aqui.
-- La compatibilidad esta declarada para ik_llama.cpp; otros runtimes pueden no cargar correctamente los pesos.
-- No hay datos publicados de benchmarks, por lo que la calidad real frente a alternativas no puede verificarse.
-- El repositorio no tiene descargas ni likes en el momento de la consulta, lo que sugiere poca validacion por parte de la comunidad.
+- El modelo está especializado en roleplay y contenido sin censura; no es adecuado para aplicaciones que requieran filtrado de contenido o alineación estricta.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Riesgo de alucinación: inherente a los modelos generativos; no hay datos específicos de evaluación en la información disponible.
+- Sesgos conocidos: no documentados en la información proporcionada; al derivar de Gemma 4 y de un ajuste para roleplay, pueden heredarse sesgos del corpus de entrenamiento.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado sin censura puede incumplir políticas de plataformas o legislación según el contexto de despliegue.
+- Compatibilidad de runtime limitada: las cuantizaciones IQK requieren ik_llama.cpp; no se garantiza su funcionamiento en llama.cpp estándar, Ollama o vLLM.
+- Longitud de contexto no especificada: no se puede planificar el diseño de aplicaciones con contexto largo sin ese dato.
+- Repositorio de 89,9 GB: la descarga completa es costosa; conviene descargar solo el archivo GGUF del nivel de cuantización deseado.
+- Fecha de creación (2026-11-10) y actualización (2026-11-11): verificar si el autor ha publicado revisiones posteriores con correcciones.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Austriani/WaifuGemma4-26B-A4B-V1-ik_llama.cpp
 - Modelo base: https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1
-- ik_llama.cpp: no disponible en la informacion proporcionada
-- Paper o blog del modelo: no disponible en la informacion proporcionada
+- ik_llama.cpp (runtime requerido): no disponible en la información proporcionada
+- Paper, blog o demo del autor: no disponible en la información proporcionada

@@ -2,83 +2,108 @@
 
 ## Resumen
 
-MiMo-V2.5 es un modelo omnímodal nativo desarrollado por Xiaomi, diseñado para comprender y procesar texto, imagen, vídeo y audio dentro de una arquitectura unificada. Se basa en el backbone de MiMo-V2-Flash, un modelo de lenguaje de tipo MoE (Mixture of Experts) con atención híbrida, al que se le añaden codificadores específicos de visión y audio. El modelo está pensado para tareas de razonamiento multimodal, comprensión de contexto largo y flujos de trabajo agénticos, destacando por su capacidad de procesar hasta 1 millón de tokens de contexto.
+MiMo-V2.5 es un modelo omni-modal nativo desarrollado por XiaomiMiMo (Xiaomi), diseñado para comprender texto, imagen, vídeo y audio dentro de una única arquitectura. Se construye sobre el backbone de MiMo-V2-Flash, un modelo de mezcla de expertos (MoE) disperso, y añade codificadores dedicados de visión y audio. Con 310.000 millones de parámetros totales y 15.000 millones activados por token, se posiciona en la gama alta de modelos abiertos con capacidades agénticas y de contexto largo.
 
-Con 310 mil millones de parámetros totales y 15 mil millones activos por token, MiMo-V2.5 logra un equilibrio entre capacidad y eficiencia computacional. Su entrenamiento se realizó con aproximadamente 48 billones de tokens usando precisión mixta FP8, e incorpora módulos de predicción multi-token (MTP) que aceleran la inferencia mediante decodificación especulativa. El modelo se distribuye bajo licencia MIT, lo que facilita su adopción tanto en investigación como en entornos comerciales.
+La innovación principal reside en su atención híbrida: intercala atención de ventana deslizante (SWA) y atención global en una proporción 5:1 con ventana de 128 tokens, lo que reduce el almacenamiento de la caché KV casi 6 veces manteniendo el rendimiento en contextos largos gracias a un sesgo de attention sink aprendible. El modelo soporta hasta 1 millón de tokens de contexto y fue preentrenado con aproximadamente 48 billones de tokens en precisión mixta FP8.
 
-La relevancia de MiMo-V2.5 radica en su naturaleza omnímodal nativa y su enfoque en capacidades agénticas, combinando percepción multimodal con razonamiento de largo alcance. Esto lo posiciona como una opción atractiva para desarrolladores que necesitan un modelo único para tareas que involucran múltiples modalidades, como análisis de vídeo, asistentes conversacionales avanzados o agentes autónomos que requieren comprensión contextual extensa.
+Su relevancia actual radica en combinar percepción multimodal nativa (vídeo y audio incluidos), razonamiento de contexto largo y capacidades agénticas en un único modelo con licencia MIT, lo que facilita su adopción tanto en investigación como en productos comerciales. La disponibilidad de una variante Base de 256K tokens y de la versión completa de 1M amplía los escenarios de despliegue.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sparse MoE (Mixture of Experts) con atención híbrida (Sliding Window Attention y Global Attention) |
-| Parametros totales | 310.775.040.000 (310B) |
-| Parametros activos | 15B (por token) |
-| Longitud de contexto | Hasta 1M tokens |
-| Tipos de cuantizacion | No disponible (se menciona entrenamiento en FP8, pero no cuantizaciones de inferencia) |
-| Idiomas soportados | Inglés (en), Chino (zh) |
+| Arquitectura | MoE disperso (1 capa densa + 47 capas MoE), atención híbrida SWA/Global 5:1 |
+| Parametros totales | 310B |
+| Parametros activos | 15B |
+| Longitud de contexto | Hasta 1M tokens (variante Base: 256K) |
+| Tipos de cuantizacion | FP8 (preentrenamiento en precisión mixta FP8); no se detallan otras cuantizaciones en la información disponible |
+| Idiomas soportados | Inglés (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (repo de 315,7 GB) |
+| Hidden size | 4096 |
+| Numero de capas | 48 (1 densa + 47 MoE) |
+| Capas de atención global | 9 |
+| Capas SWA | 39 |
+| Cabeceras de atención | 64 |
+| Cabeceras KV | 8 (GQA) |
+| Codificador de visión | ViT de 729M parámetros (28 capas: 24 SWA + 4 Full) |
+| Codificador de audio | Transformer de 261M parámetros (24 capas: 12 SWA + 12 Full) |
+| Multi-Token Prediction | 329M parámetros, 3 capas |
+| Ventana deslizante | 128 tokens |
+| Tokens de preentrenamiento | ~48T |
 
 ## Arquitectura y entrenamiento
 
-MiMo-V2.5 utiliza una arquitectura de MoE dispersa con 48 capas (1 densa y 47 MoE), donde se intercalan capas de atención con ventana deslizante (SWA) y atención global (GA) en una proporción 5:1, con una ventana de 128 tokens. Este diseño reduce el almacenamiento de la caché KV en aproximadamente 6 veces, manteniendo el rendimiento en contextos largos mediante un sesgo de atención sink aprendible. El modelo incorpora codificadores dedicados: un Vision Transformer (ViT) de 729M de parámetros con atención híbrida de ventana, y un codificador de audio de 261M de parámetros inicializado desde MiMo-Audio. Además, incluye tres módulos ligeros de predicción multi-token (MTP) con FFN densas, que aceleran la inferencia mediante decodificación especulativa y mejoran la eficiencia del entrenamiento con RL.
+El backbone lingüístico es un transformer MoE disperso con 48 capas (una densa y 47 MoE), hidden size de 4096, 64 cabeceras de atención y 8 cabeceras KV con GQA. La atención híbrida intercala 39 capas de ventana deslizante (ventana de 128 tokens) con 9 capas de atención global en proporción 5:1, lo que reduce el coste de la caché KV en aproximadamente 6 veces y permite sostener contextos de hasta 1M tokens mediante un sesgo de attention sink aprendible.
 
-El entrenamiento se realizó en dos fases. La primera consistió en un preentrenamiento sobre aproximadamente 48 billones de tokens usando precisión mixta FP8, con una ventana de contexto que soporta hasta 1M tokens. La segunda fase de post-entrenamiento combinó fine-tuning supervisado (SFT), RL agéntico a gran escala y destilación on-policy multi-maestro (MOPD), lo que permitió alcanzar un rendimiento sólido en tareas agénticas y benchmarks de comprensión multimodal.
+Sobre el backbone se añaden codificadores nativos: un ViT de 729M parámetros con atención de ventana híbrida para imagen y vídeo, y un codificador de audio de 261M parámetros inicializado desde los pesos de MiMo-Audio. El modelo incorpora tres módulos ligeros de Multi-Token Prediction (MTP) de 329M parámetros con FFN densas, que aceleran la inferencia mediante decodificación especulativa y mejoran la eficiencia del entrenamiento con RL. El preentrenamiento se realizó sobre ~48T tokens en FP8 de precisión mixta; el post-entrenamiento combina SFT, RL agéntico a gran escala y destilación on-policy multi-profesor (MOPD).
 
 ## Capacidades
 
-- Comprensión multimodal nativa: procesa texto, imagen, vídeo y audio en una única arquitectura, sin necesidad de módulos externos.
-- Razonamiento de contexto largo: soporta hasta 1M tokens, lo que permite analizar documentos extensos, vídeos largos o conversaciones prolongadas.
-- Capacidades agénticas: entrenado con RL agéntico y MOPD, puede ejecutar tareas autónomas de múltiples pasos, como planificación y uso de herramientas.
-- Generación de código: el backbone de lenguaje hereda las capacidades de MiMo-V2-Flash, que incluyen generación y razonamiento de código.
-- Razonamiento matemático y lógico: adecuado para problemas que requieren deducción y cálculo.
-- Soporte multilingüe: optimizado para inglés y chino, con posible degradación en otros idiomas.
-- Decodificación especulativa: los módulos MTP permiten una inferencia más rápida en comparación con modelos de tamaño similar.
+- Generación de texto y razonamiento de contexto largo hasta 1M tokens.
+- Comprensión de imágenes mediante ViT dedicado de 729M parámetros.
+- Comprensión de vídeo con el mismo codificador visual de ventana híbrida.
+- Comprensión de audio con codificador dedicado de 261M parámetros inicializado desde MiMo-Audio.
+- Capacidades agénticas: flujos multi-paso y razonamiento agéntico entrenado con RL a gran escala.
+- Razonamiento y generación de código, con benchmarks específicos de coding y agentes publicados por el autor.
+- Soporte multilingüe limitado a inglés y chino según la model card.
+- Decodificación especulativa mediante módulos MTP para acelerar la inferencia.
+- No se detalla en la información disponible soporte explícito de tool calling o function calling.
 
 ## Casos de uso
 
-- Análisis de vídeo en tiempo real: el modelo puede procesar secuencias de vídeo junto con audio para generar resúmenes, detectar eventos o responder preguntas sobre el contenido, gracias a su ventana de contexto de 1M tokens que permite manejar vídeos largos sin segmentación.
-- Asistentes virtuales multimodales: integración en aplicaciones de atención al cliente donde el usuario puede enviar imágenes, capturas de pantalla o mensajes de voz, y el modelo responde de forma coherente manteniendo el contexto de la conversación.
-- Agentes autónomos de productividad: uso como núcleo de agentes que pueden leer documentos extensos, extraer información, interactuar con APIs y ejecutar tareas de oficina como redacción de informes o gestión de correos electrónicos.
-- Generación y revisión de código en entornos de desarrollo: el modelo puede asistir en la escritura de código, explicar fragmentos existentes o sugerir correcciones, aprovechando su capacidad de razonamiento y su entrenamiento en código.
-- Moderación de contenido multimodal: análisis de imágenes, vídeos y texto para detectar contenido inapropiado o ilegal, gracias a su comprensión conjunta de múltiples modalidades.
-- Investigación académica en IA: uso como modelo base para fine-tuning en tareas específicas de visión-lenguaje o audio-lenguaje, dado su tamaño y licencia permisiva.
+- Análisis de vídeo a gran escala: el codificador ViT de ventana híbrida permite procesar secuencias de vídeo junto con el backbone de 1M de tokens para resumir o extraer eventos en grabaciones largas.
+- Transcripción y análisis de audio con contexto: el codificador de audio de 261M parámetros permite combinar audio con texto e imagen en una misma conversación, útil en actas de reuniones o análisis de llamadas.
+- Agentes autónomos multi-paso: el entrenamiento con RL agéntico y MOPD lo hace adecuado para pipelines donde el modelo planifica, ejecuta y verifica tareas encadenadas.
+- Asistentes de documentación técnica multimodal: con contexto de 1M tokens puede ingerir manuales, diagramas e imágenes y responder consultas cruzadas en inglés o chino.
+- Generación y revisión de código en producción: los benchmarks de coding publicados por el autor lo sitúan como candidato para integración en pipelines de CI/CD y revisión automatizada.
+- Razonamiento sobre grafos y documentos largos: los benchmarks de Graphwalks y contexto largo indican uso en análisis de bases de conocimiento y documentación extensa.
+- Investigación en modelos omni-modales: la licencia MIT y la disponibilidad de la variante Base de 256K facilitan experimentación académica y ajuste fino.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numéricos de benchmarks en la información disponible. La model card incluye gráficos comparativos para benchmarks multimodales, de codificación y agénticos, así como de contexto largo, pero no se proporcionan valores concretos en el texto. Por tanto, no es posible presentar una tabla de resultados verificables.
+El autor publica resultados en formato de imágenes (multimodal, coding/agent y Graphwalks) en la model card, pero no se proporcionan los valores numéricos en la información disponible. No se han publicado resultados de benchmarks en formato tabular en la información disponible.
 
 ## Requisitos de hardware
 
-No se proporcionan requisitos oficiales de hardware en la información disponible. Dado el tamaño del modelo (310B parámetros totales, 15B activos), se puede estimar que:
-
-- Para inferencia en FP8 o cuantizaciones de 4 bits, se necesitaría al menos 80-100 GB de VRAM, lo que requiere GPUs de nivel profesional como A100 (80GB), H100 (80GB) o múltiples GPUs.
-- En cuantizaciones más agresivas (por ejemplo, 4 bits), podría caber en una GPU de 48 GB como la A6000 o RTX 6000 Ada, pero con degradación de calidad.
-- No es viable en GPUs de consumo (RTX 4090, 24 GB) sin cuantización extrema y pérdida significativa de rendimiento.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), o la plataforma API de Xiaomi.
-- La latencia y el throughput dependen en gran medida del hardware y la cuantización; no se dispone de datos oficiales.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; con 310B parámetros totales y 15B activos, el peso en FP8 ronda los 310 GB, por lo que se requiere hardware de centro de datos.
+- GPU recomendadas: no se especifican en la información disponible; por tamaño, se orienta a clústeres con GPUs de centro de datos (A100/H100 o superiores) en configuración multi-GPU.
+- No cabe en GPUs de consumo (RTX 4090 y similares) por el tamaño total de parámetros y el repo de 315,7 GB.
+- Opciones de despliegue: la model card indica compatibilidad con transformers y código personalizado (custom_code); no se detallan vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada; la decodificación especulativa mediante MTP está diseñada para acelerar la inferencia.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos en los datos proporcionados. Se recomienda consultar benchmarks públicos como Open LLM Leaderboard o Artificial Analysis para comparar con alternativas de tamaño similar (por ejemplo, Mixtral 8x22B, Qwen2.5-MoE o DeepSeek-V3).
+| Modelo | Parametros totales / activos | Contexto | Licencia | Multimodalidad |
+|---|---|---|---|---|
+| MiMo-V2.5 | 310B / 15B | 1M | MIT | Texto, imagen, vídeo, audio |
+| MiMo-V2.5-Pro | 1,02T / 42B | no disponible | no disponible | no disponible |
+| MiMo-V2.5-Base | no disponible | 256K | no disponible | no disponible |
+
+No se dispone en la información proporcionada de datos de benchmarks numéricos ni de otros modelos comparables de la misma categoría (omni-modales abiertos de ~300B) para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados: el modelo está optimizado para inglés y chino; su rendimiento en otros idiomas puede ser significativamente inferior.
-- Sesgos potenciales: al entrenarse con datos de internet, puede heredar sesgos sociales, culturales o de género presentes en el corpus.
-- Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento complejo o con contextos ambiguos.
-- Contexto largo: aunque soporta 1M tokens, el rendimiento puede degradarse en los extremos de la ventana de contexto, y el coste computacional aumenta con la longitud.
-- Licencia MIT: permite uso comercial y modificación, pero el usuario es responsable del cumplimiento de las leyes aplicables y de la gestión de datos sensibles.
-- Requisitos de hardware elevados: la inferencia local requiere infraestructura de gama alta, lo que puede limitar su adopción en entornos con recursos limitados.
-- Actualización de configuración: se recomienda descargar la versión más reciente de `config.json` y `tokenizer_config.json` para evitar degradación del rendimiento.
+- Idiomas soportados limitados a inglés y chino; el rendimiento en castellano no está documentado.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan mitigaciones específicas en la información disponible.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Licencia MIT: permite uso comercial, pero conviene revisar las condiciones de los codificadores y pesos derivados (MiMo-Audio) citados en la model card.
+- Aviso del autor: los archivos `config.json` y `tokenizer_config.json` se actualizaron tras el commit 4da2748; usar versiones antiguas puede degradar el rendimiento. Es necesario re-descargar ambos archivos.
+- El tamaño del repo (315,7 GB) y los 310B parámetros totales implican requisitos de infraestructura elevados y costes de inferencia significativos.
+- No se detalla soporte explícito de tool calling en la información disponible, lo que debe verificarse antes de usarlo en pipelines agénticos que dependan de function calling.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.5
-- Blog oficial: https://mimo.xiaomi.com/mimo-v2-5
+- Variante Base: https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Base
+- ModelScope (Base): https://modelscope.cn/models/XiaomiMiMo/MiMo-V2.5-Base
+- ModelScope (V2.5): https://modelscope.cn/models/XiaomiMiMo/MiMo-V2.5
+- Blog: https://mimo.xiaomi.com/mimo-v2-5
 - Plataforma API: https://platform.xiaomimimo.com
-- Studio (demo): https://aistudio.xiaomimimo.com
-- Repositorio GitHub (referencia): https://github.com/XiaomiMiMo/MiMo
-- Página de MiMo-V2.5-Pro: https://mimo.xiaomi.com/mimo-v2-5-pro
+- Xiaomi MiMo Studio: https://aistudio.xiaomimimo.com
+- Repositorio MiMo-V2-Flash: https://github.com/XiaomiMiMo/MiMo-V2-Flash
+- Repositorio MiMo: https://github.com/XiaomiMiMo/MiMo
+- Discord: https://discord.gg/kKC2kNnQEX
+- Telegram: https://t.me/+3T-I0pekOVIyNDBl
+- Reddit: https://www.reddit.com/r/XiaomiMiMo_Official/
+- Commit de actualización de config: https://huggingface.co/XiaomiMiMo/MiMo-V2.5/commit/4da2748fc0a0123d817280b1b0cd3682a487a161

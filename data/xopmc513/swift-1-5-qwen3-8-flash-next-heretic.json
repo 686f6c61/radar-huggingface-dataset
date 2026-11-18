@@ -37,8 +37,8 @@
     "region:us",
     "conversational"
   ],
-  "likes": 3,
-  "downloads_30d": 722,
+  "likes": 4,
+  "downloads_30d": 7745,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
@@ -59,26 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models compatible with the GGUF library - Hugging Face",
-      "url": "https://huggingface.co/models?library=gguf&sort=modified",
-      "snippet": "mradermacher/Swish-31B-Final-GGUF ; PollardWeights/NVIDIA-Nemotron-3.5-Bolt-E4B-Pollard · 1 ; XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic · 1 ; VelociQ8/snowflake- ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?sort=modified",
-      "snippet": "resiondy/moe-1.4b-v2-state · SargeDev/Solar-Decision-JEV-27B-V2 · XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic · mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16- ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?sort=modified&search=Heretic",
-      "snippet": "8-Flash-Next-EXL3-4.05bpw-heretic. Image-Text-to-Text • 34B • Updated in about 23 hours · XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Gentle-Heretic-Strata. Updated ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=mxfp4",
-      "snippet": "tsaipifong/Swift-1.5-Qwen3.8-27b-MXFP4-GGUF. Text Generation • 27B • Updated ... XopMC513/DeepSeek-V4.1-Flash-1017-Heretic. Image-Text-to-Text • Updated ..."
-    }
-  ]
+  "sources": []
 }

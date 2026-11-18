@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 6949,
+  "downloads_30d": 6870,
   "trending_score": 0,
   "parameters": 23971587712,
   "parameters_human": "23.97B",
@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ggml-org/LFM2.5-24B-A2B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/ggml-org/LFM2.5-24B-A2B-GGUF",
-      "snippet": "Instructions to use ggml-org/LFM2.5-24B-A2B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ggml-org/LFM2.5-24B-A2B-GGUF with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "unsloth/LFM2.5-24B-A2B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF",
-      "snippet": "LFM2.5-24B-A2B is the fastest of the compared MoEs at reading in prompts and generating answers. It decodes 184 tokens/s on an Apple M5 Max and 114 tokens/s on an AMD Ryzen AI Max+ 395, up to 1.7x faster than the next-best model, while using the least memory."
-    }
-  ]
+  "sources": []
 }

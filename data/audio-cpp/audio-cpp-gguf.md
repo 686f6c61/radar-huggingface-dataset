@@ -2,78 +2,102 @@
 
 ## Resumen
 
-`audio-cpp/audio.cpp-gguf` es un repositorio que aloja conversiones de pesos en formato GGUF para decenas de modelos de audio, pensadas para ser ejecutadas con [audio.cpp](https://github.com/0xShug0/audio.cpp), un motor de inferencia en C++ puro basado en ggml. No se trata de un modelo único, sino de un paquete de checkpoints cuantizados que cubren tareas como síntesis de voz (TTS), reconocimiento automático del habla (ASR), conversión de voz, separación de fuentes y diarización de hablantes. El repositorio incluye modelos de familias tan diversas como ACE-Step, Qwen3-TTS, IndexTTS, Irodori, Higgs Audio, Fun-ASR, Chatterbox o HTDemucs, entre otras.
+`audio-cpp/audio.cpp-gguf` es un repositorio de conversiones GGUF nativas del runtime [audio.cpp](https://github.com/0xShug0/audio.cpp), no un modelo individual. Agrupa decenas de paquetes cuantizados de modelos de audio de terceros: TTS, ASR, conversión de voz, generación de audio, separación de fuentes, diarización de hablantes y detección de actividad de voz. El objetivo es ofrecer un formato de pesos único y optimizado para audio.cpp que permita cargar estos modelos sin depender de los stacks originales (PyTorch, ONNX, etc.).
 
-La relevancia de este paquete radica en que permite ejecutar una amplia gama de modelos de audio con un único motor sin dependencia de Python, de forma similar a lo que llama.cpp supuso para los modelos de lenguaje. Los pesos están disponibles en varias cuantizaciones (bf16, f16, q8_0 y formato original), lo que facilita su despliegue en entornos con recursos limitados. El repositorio acumula más de 131.000 descargas y 51 likes, lo que indica una adopción notable dentro de la comunidad de audio open source.
+El repositorio lo mantiene el equipo de audio.cpp y actúa como capa de distribución: cada subdirectorio (`ACE-Step1.5-GGUF`, `Chatterbox-GGUF`, `DotTTS-MF-GGUF`, etc.) contiene los pesos convertidos de un modelo base concreto, con su propia licencia original. La model card lista explícitamente más de 70 modelos base de origen, entre ellos ACE-Step, Qwen3-TTS, Qwen3-ASR, Chatterbox, VibeVoice, Voxtral, Parakeet, Stable Audio 3, IndexTTS-2, Fish Audio S2 Pro o MiniMax-H3.
+
+Es relevante ahora porque concentra en un solo punto de descarga un ecosistema de audio muy fragmentado, con más de 9,5 millones de descargas acumuladas, y porque estandariza la cuantización (F32, BF16, F16, Q8, Q4, Q4_K) sobre un runtime propio en C++. El dato de "16.578.590 parámetros" que aparece en los metadatos de Hugging Face corresponde a un único componente del repo y no representa el conjunto, ya que el tamaño total del repositorio es de 1.683,8 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Paquete de modelos; cada familia tiene su propia arquitectura (transformers, codec-based, etc.) |
-| Parametros totales | Varia segun el modelo; desde ~100M (MOSS-TTS-Nano) hasta ~4B (Higgs-Audio-v3-TTS-4B) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (modelos de audio, no texto) |
-| Tipos de cuantizacion | bf16, f16, q8_0 y formato original (sin cuantizar) |
-| Idiomas soportados | No disponible en la informacion proporcionada |
-| Licencia | Depende del modelo original; mayoritariamente MIT y Apache-2.0, con algunas excepciones no comerciales (p. ej. Boson Higgs TTS, Hviske) |
-| Formato de pesos | GGUF (audio.cpp-native) |
+| Arquitectura | Múltiple: cada subdirectorio corresponde a la arquitectura de su modelo base (transformers de audio, codecs neuronales, modelos de separación tipo RoFormer, CTC/RNNT para ASR, etc.) |
+| Parametros totales | No disponible como cifra única; varía por paquete (desde ~100M en MOSS-TTS-Nano hasta varios miles de millones en MiniMax-H3 o VibeVoice-ASR-Streaming-7B) |
+| Parametros activos | No disponible |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | F32, BF16, F16, Q8, Q4, Q4_0, Q4_K (según paquete) |
+| Idiomas soportados | No disponible como conjunto; depende de cada modelo base (hay paquetes multilingües como GigaAM-Multilingual, Voxtral-Mini-4B-Realtime o Qwen3-TTS) |
+| Licencia | `other` a nivel de repo; cada paquete conserva la licencia de su modelo original (MIT, Apache-2.0, CC-BY-4.0, CC-BY-SA-4.0, CC-BY-NC-4.0, BSD-3-Clause, licencias de investigación no comercial, etc.) |
+| Formato de pesos | GGUF (nativo de audio.cpp) |
+| Libreria | audio.cpp |
+| Pipeline declarado | text-to-speech |
+| Tamano del repositorio | 1.683,8 GB |
+| Descargas / likes | 9.512.144 / 332 |
+| Fecha de creacion / actualizacion | 2026-07-14 / 2026-11-15 |
 
 ## Arquitectura y entrenamiento
 
-Al tratarse de un repositorio de conversiones, no existe una arquitectura unica ni un proceso de entrenamiento propio. Cada modelo subyacente fue desarrollado y entrenado por su autor original (por ejemplo, ACE-Step, Qwen3-TTS, IndexTTS, etc.) y posteriormente convertido al formato GGUF nativo de audio.cpp. El motor de inferencia audio.cpp, desarrollado por ShugoAI, se encarga de cargar y ejecutar estos pesos en C++ puro sobre ggml, sin dependencia de Python en tiempo de ejecucion.
+Este repositorio no entrena modelos: publica conversiones y cuantizaciones de modelos ya entrenados por terceros. Cada subdirectorio mantiene la arquitectura del modelo original (por ejemplo, `ace_step` para ACE-Step, `chatterbox` para ResembleAI Chatterbox, `dots_tts` para la familia DotTTS, `canary_asr` para Canary, `htdemucs` para separación de fuentes, `firered_vad` para detección de voz). La conversión la realiza la herramienta de audio.cpp y produce pesos en formato GGUF con distintos niveles de precisión según el paquete.
 
-Las conversiones siguen un esquema de empaquetado especifico documentado en la guia GGUF de audio.cpp, donde se especifican los nombres de tensores y los metadatos embebidos necesarios para cada familia de modelos. No se ha publicado informacion sobre el proceso de cuantizacion (por ejemplo, si se empleo calibracion o el metodo exacto de cuantizacion a q8_0), aunque los archivos se ofrecen "as-is" con advertencias sobre posibles desviaciones en la salida respecto a los pesos originales.
+La model card indica que los paquetes convertidos y cuantizados se validan con métricas automáticas, pero advierte explícitamente de que la calidad percibida por oyentes humanos puede diferir. No se publican detalles sobre tokens de entrenamiento, composición de datasets ni procesos de RLHF/DPO, ya que esos datos pertenecen a cada modelo base y no al repositorio de conversión.
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech) con multiples voces y estilos, incluyendo modelos como ACE-Step, Irodori, IndexTTS, Higgs-Audio-TTS y Qwen3-TTS.
-- Reconocimiento automatico del habla (ASR) en varios idiomas, con modelos como Fun-ASR, Higgs-Audio-STT, Citrinet, Kroko-ASR y Hviske.
-- Conversion de voz (voice conversion), permitiendo transformar la voz de un hablante a otro manteniendo el contenido linguistico (p. ej. Chatterbox, SeedVC).
-- Separacion de fuentes de audio (source separation), como HTDemucs o BS-RoFormer, para aislar voces, instrumentos o efectos.
-- Diarizacion de hablantes (speaker diarization), con modelos como nvidia/diar_sortformer_4spk-v1.
-- Generacion de audio y efectos de sonido, mediante modelos como Stable Audio o Vevo2.
-- Soporte para multiples formatos de entrada y salida de audio, gracias a la arquitectura codec-based de muchos de los modelos incluidos.
+- Síntesis de voz (TTS) con múltiples familias: ACE-Step, Chatterbox, Chatterbox-Turbo, CosyVoice3, DotTTS (Edit, MF, SOAR), FireRedTTS3 (Base e Instruct), Fish Audio S2 Pro, IndexTTS, Qwen3-TTS, MOSS-TTS, entre otras.
+- Reconocimiento automático de habla (ASR): Canary-180M-Flash, Citrinet, Cohere Transcribe, CrisperWhisper 2.0, Fun-ASR-Nano, GigaAM, Granite-Speech 5.0, Haas-ja, Parakeet-TDT, Nemotron ASR streaming, Voxtral-Mini-4B-Realtime.
+- Conversión de voz (voice conversion): SeedVC, MeanVC2, entre otros paquetes del ecosistema.
+- Generación de audio y música: Stable Audio 3 (medium, small-music, small-sfx), ACE-Step, MOSS-SoundEffect v2.0, HeartMuLa.
+- Separación de fuentes: HTDemucs, HTDemucs-6stems, BS-RoFormer, Mel-RoFormer.
+- Diarización de hablantes: Sortformer 4spk, personaplex.
+- Detección de actividad de voz (VAD) y VAD en streaming: FireRedVAD.
+- Superresolución y restauración de audio: AudioSR, MossFormer2_SR_48K.
+- Etiquetado y clasificación de audio: AST-AudioSet, CED (Tiny/Mini/Small/Base).
+- Alineamiento forzado: Qwen3-ForcedAligner.
+- Carga directa de ficheros, layouts compatibles y sidecar embedding según la guía GGUF de audio.cpp.
 
 ## Casos de uso
 
-- Asistentes de voz locales: se puede desplegar un modelo TTS ligero (p. ej. Irodori-TTS-500M) junto con un ASR (p. ej. Fun-ASR-Nano) para construir un asistente conversacional que funcione completamente en local, sin conexion a internet y sin dependencias de Python.
-- Transcripcion de reuniones y podcasts: utilizando modelos ASR como Higgs-Audio-v3-STT o Citrinet, se pueden transcribir grabaciones de audio de larga duracion. La cuantizacion q8_0 permite ejecutar estos modelos en CPU con un consumo de memoria moderado.
-- Clonacion de voz para audiolibros o doblaje: modelos de voice conversion como Chatterbox o SeedVC permiten transformar una grabacion de voz en la voz de un actor concreto, util en produccion de contenidos audiovisuales.
-- Separacion de pistas en produccion musical: HTDemucs y BS-RoFormer pueden aislar voces, bateria o instrumentos de una mezcla estereo, facilitando la remezcla o la creacion de versiones karaoke.
-- Diarizacion de hablantes en entrevistas o llamadas: el modelo nvidia/diar_sortformer_4spk-v1 permite identificar cuantas personas hablan y cuando, lo que resulta util para generar actas o subtitulos con atribucion de hablante.
-- Generacion de efectos de sonido para videojuegos o cine: Stable Audio o Vevo2 pueden sintetizar efectos sonoros o ambientes a partir de descripciones textuales, acelerando el flujo de trabajo de diseno de sonido.
-- Integracion en pipelines de CI/CD para testing de audio: al ser un motor C++ sin dependencias, audio.cpp puede integrarse en entornos de contenedores ligeros para validar automaticamente la calidad de modelos de TTS o ASR en cada commit.
+- Síntesis de voz en producción con latencia controlada: desplegar un paquete Q8 de Chatterbox o Qwen3-TTS mediante audio.cpp permite generar audio sin depender del stack Python original, con un binario C++ ligero y opciones de cuantización que reducen memoria.
+- Transcripción de reuniones y subtitulado: combinar un paquete ASR (Parakeet-TDT, Canary, GigaAM) con un VAD (FireRedVAD) en el mismo runtime simplifica el pipeline de segmentación y transcripción en local.
+- Clonación de voz y voice design: los paquetes de Qwen3-TTS-CustomVoice, Qwen3-TTS-VoiceDesign o IndexTTS-2 permiten construir asistentes con voces personalizadas sin salir del ecosistema audio.cpp.
+- Separación de stems para postproducción musical: HTDemucs y HTDemucs-6stems en GGUF permiten aislar voces, batería, bajo y otros instrumentos en un flujo offline reproducible.
+- Diarización de llamadas o entrevistas: Sortformer 4spk identifica y separa hablantes, útil para actas automáticas, análisis de contact center y compliance.
+- Generación de efectos de sonido y música para vídeo: Stable Audio 3 small-sfx y small-music, junto con MOSS-SoundEffect v2.0, cubren la generación de assets de audio bajo demanda.
+- Restauración y mejora de archivos históricos: AudioSR y MossFormer2_SR_48K permiten reescalar audio de baja calidad o banda estrecha a 48 kHz.
+- Investigación reproducible en audio: al fijar versiones de pesos GGUF y un runtime común, se facilita la comparación controlada entre modelos de la misma familia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que las comprobaciones automaticas de audio son estrictas y pueden marcar desviaciones en longitud, log-mel o transcripcion, pero no ofrece metricas cuantitativas comparativas (como WER, MOS o RTF). Se recomienda validar cada archivo y ruta de ejecucion especifica antes de usarlo en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, WER, MOS, FAD ni métricas comparativas; solo indica que los paquetes se validan con métricas automáticas sin publicar los valores.
 
 ## Requisitos de hardware
 
-- Los requisitos varian enormemente segun el modelo concreto. Los modelos mas pequenos (100M-500M parametros) pueden ejecutarse en CPU con 2-4 GB de RAM, incluso en Raspberry Pi o laptops modestas.
-- Los modelos medianos (1-2B parametros) en cuantizacion q8_0 requieren aproximadamente 2-4 GB de VRAM si se usan en GPU, o 4-8 GB de RAM en CPU.
-- Los modelos mas grandes (3-4B parametros, como Higgs-Audio-v3-TTS-4B) necesitan al menos 8 GB de VRAM en GPU (por ejemplo, RTX 3080 o superior) o 16 GB de RAM en CPU con inferencia lenta.
-- El repositorio completo ocupa 698 GB, pero los archivos individuales se pueden descargar por separado segun la necesidad.
-- audio.cpp soporta aceleracion por GPU via CUDA, Metal y Vulkan, ademas de CPU. No requiere Python en tiempo de ejecucion.
-- Para despliegue en produccion, se recomienda usar las cuantizaciones q8_0 para reducir el uso de memoria y mejorar la latencia, aceptando una posible deriva en la calidad del audio.
-- No se dispone de datos de latencia o throughput especificos por modelo; estos dependen del hardware y de la ruta de inferencia elegida.
+- VRAM estimada: depende del paquete. Los modelos pequeños (MOSS-TTS-Nano-100M, Canary-180M, Citrinet, CED-Tiny) caben en menos de 1 GB en Q8. Los modelos medianos (Chatterbox, Qwen3-TTS-0.6B, Parakeet-TDT-0.6B) requieren aproximadamente 1-2 GB en Q8. Los modelos grandes (VibeVoice-ASR-Streaming-7B, Voxtral-Mini-4B, MiniMax-H3, MioTTS-1.7B, Higgs-Audio-v3-TTS-4B) pueden requerir entre 4 y 16 GB según cuantización.
+- GPU recomendadas: RTX 3060/4060 para paquetes pequeños y medianos en Q8; RTX 4090 o A100 para los paquetes de 4B-7B en BF16; H100 para servir varios modelos simultáneamente o para MiniMax-H3 en alta precisión.
+- Cabe en GPU consumer: sí para la mayoría de paquetes en Q8 y Q4; los de mayor tamaño pueden necesitar Q4 o Q4_K para caber en 8-12 GB de VRAM.
+- Opciones de despliegue: audio.cpp (runtime nativo, único soportado oficialmente para estos GGUF). No se indica compatibilidad con llama.cpp, Ollama, vLLM ni TGI.
+- Latencia y throughput: no disponibles en la información proporcionada; dependen del paquete concreto, la GPU y la cuantización.
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo unico sino un conjunto de conversiones, por lo que no existe una comparativa directa con alternativas de la misma categoria. Para cada familia de modelos subyacente (por ejemplo, ACE-Step vs. IndexTTS), se podrian comparar los pesos originales, pero no se dispone de datos de rendimiento publicados en este paquete.
+| Modelo / repositorio | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| audio-cpp/audio.cpp-gguf | Colección GGUF multi-modelo de audio | Variable por paquete | No disponible | Mixta (hereda la de cada base) | Hugging Face, runtime audio.cpp |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base (modelo base incluido) | TTS monolítico | ~1,7B | No disponible | Según Qwen | Hugging Face, uso directo en PyTorch |
+| microsoft/VibeVoice-ASR-Streaming-7B (modelo base incluido) | ASR streaming | ~7B | No disponible | Según Microsoft | Hugging Face |
+| fishaudio/s2-pro (modelo base incluido) | TTS de alta calidad | No disponible | No disponible | Fish Audio Research License | Hugging Face |
+
+La comparativa directa con "un modelo similar" no es posible en sentido estricto: este repositorio es un agregador de conversiones, no un modelo único. Frente a usar cada modelo base por separado, la ventaja es la unificación de formato y runtime; la desventaja es que la calidad final depende de la fidelidad de la conversión y de la cuantización elegida.
 
 ## Limitaciones y advertencias
 
-- Los pesos se proporcionan "as-is" y el autor advierte que las comprobaciones automaticas pueden marcar desviaciones que aun asi suenan aceptables para oidos humanos. Se recomienda validar el archivo, el backend y la ruta exacta antes de usarlos en produccion.
-- Algunos modelos incluidos tienen licencias restrictivas para uso comercial. Por ejemplo, Boson Higgs TTS 3 usa una licencia de investigacion y no comercial, y Hviske v5.3 usa CC-BY-NC-4.0. Es responsabilidad del usuario revisar la licencia de cada modelo individual.
-- No se ha publicado informacion sobre sesgos, alucinaciones o comportamientos problematicos especificos de estos modelos. Como en cualquier sistema de audio generativo, existe riesgo de producir contenido falso o manipulado (deepfakes de voz).
-- La cobertura de idiomas no esta documentada en el repositorio; algunos modelos pueden estar limitados a un idioma o region concreta (por ejemplo, Irodori esta orientado al japones).
-- El formato GGUF de audio.cpp no es compatible con GGUF de llama.cpp o whisper.cpp; los nombres de tensores y metadatos deben coincidir con la familia seleccionada, y no se pueden cargar archivos GGUF arbitrarios.
+- No es un modelo: es un repositorio de conversiones. Cualquier evaluación de calidad debe hacerse por paquete concreto.
+- La model card advierte de que las métricas automáticas no garantizan calidad percibida; hay que validar el paquete, backend y ruta exactos antes de producción.
+- Licencias heterogéneas: aunque el repo declara `other`, cada paquete conserva la licencia original. Hay paquetes con licencias no comerciales (Breeze-TTS-2, CrisperWhisper 2.0, ControlFoley CC-BY-NC-4.0, Fish Audio Research License, LTX-2 Community License). Es imprescindible revisar la licencia del subdirectorio antes de uso comercial.
+- El paquete `BS-RoFormer-ep368-GGUF` se marca como Apache-2.0 con "checkpoint source undocumented", lo que implica riesgo de procedencia.
+- El tamaño total del repositorio (1.683,8 GB) hace inviable una descarga completa en muchos entornos; conviene descargar solo los subdirectorios necesarios.
+- Idiomas soportados no están consolidados a nivel de repo; dependen del modelo base y pueden no cubrir castellano en algunos paquetes.
+- Riesgo de alucinación en ASR (transcripciones plausibles pero incorrectas) y de artefactos en TTS con cuantizaciones agresivas (Q4, Q4_K).
+- Sesgos de voz, acento y género heredados de los datasets de cada modelo base; no se documentan mitigaciones en este repositorio.
+- Dependencia de un runtime específico (audio.cpp); no hay soporte declarado para otros motores de inferencia, lo que limita la portabilidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/audio-cpp/audio.cpp-gguf
-- Repositorio GitHub de audio.cpp: https://github.com/0xShug0/audio.cpp
-- Guia GGUF de audio.cpp: https://github.com/0xShug0/audio.cpp/blob/main/docs/gguf.md
-- Articulo de introduccion a audio.cpp: https://runaihome.com/blog/audio-cpp-local-tts-gpu-guide-2026/
+- Runtime audio.cpp en GitHub: https://github.com/0xShug0/audio.cpp
+- Guía GGUF de audio.cpp: https://github.com/0xShug0/audio.cpp/blob/main/docs/gguf.md
+- Referencia de licencias de modelos de audio.cpp: https://github.com/0xShug0/audio.cpp/blob/main/docs/model_licenses.md
+- Licencia de Breeze-TTS-2: https://huggingface.co/BreezeBlue/Breeze-TTS-2/blob/main/LICENSE
+- Licencia de Fish Audio S2 Pro: https://huggingface.co/fishaudio/s2-pro/blob/main/LICENSE.md
+- Licencia de DramaBox (LTX-2 Community License): https://huggingface.co/ResembleAI/Dramabox/blob/main/LICENSE

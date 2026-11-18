@@ -5,7 +5,7 @@
   "author": "f1k",
   "url": "https://huggingface.co/f1k/katip-mask-mini",
   "created_at": "2026-11-14T21:36:53.000Z",
-  "updated_at": "2026-11-14T21:36:59.000Z",
+  "updated_at": "2026-11-17T12:29:35.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

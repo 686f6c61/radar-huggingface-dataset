@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Atomic » Skis, ski gear & ski clothing",
-      "url": "https://www.atomic.com/fr-fr",
-      "snippet": "Latest skis, ski boots, ski helmets, ski goggles & clothing by Atomic. For skiing, ski touring & cross-country skiing."
-    },
-    {
-      "title": "Atomic » Skis, équipement & vêtements de ski",
-      "url": "https://www.atomic.com/fr-ca",
-      "snippet": "Découvrez les derniers skis, chaussures de ski, casques, masques et vêtements de ski Atomic. Pour le ski alpin, le ski de randonnée …"
-    },
-    {
-      "title": "Atomic: Best Crypto Wallet",
-      "url": "https://atomicwallet.io/",
-      "snippet": "Atomic Wallet is an interface that gives you access to your funds on the blockchain. The most important information, such as your …"
-    },
-    {
-      "title": "Atomic Mail: Get Free Private Email for Secure Communication",
-      "url": "https://atomicmail.io/",
-      "snippet": "The European GDPR requires companies to secure emails containing sensitive data of EU citizens. Atomic Mail is a secure service …"
-    },
-    {
-      "title": "Atomic (TV series) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Atomic_(TV_series)",
-      "snippet": "Atomic is a British action drama television series created by Gregory Burke and based on the non-fiction book Atomic Bazaar by …"
-    }
-  ]
+  "sources": []
 }

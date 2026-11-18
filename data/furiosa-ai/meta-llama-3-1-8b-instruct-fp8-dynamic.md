@@ -2,83 +2,92 @@
 
 ## Resumen
 
-Este repositorio contiene la variante cuantizada FP8-dynamic de Llama-3.1-8B-Instruct, publicada por FuriosaAI. Se trata de un transformer denso autorregresivo optimizado para diálogo multilingüe, seguimiento de instrucciones y uso de herramientas, derivado de la versión cuantizada publicada por RedHatAI y, en última instancia, del modelo original de Meta. La cuantización FP8-dynamic reduce el uso de memoria y acelera la inferencia manteniendo una calidad cercana a la versión en BF16, lo que lo hace adecuado para despliegue en producción con hardware especializado.
+Meta-Llama-3.1-8B-Instruct-FP8-dynamic es la variante cuantizada en FP8 del modelo Llama 3.1 8B Instruct de Meta, publicada originalmente por RedHatAI y redistribuida por FuriosaAI junto con un Furiosa Executable Bundle (FXB) para ejecutarse sobre aceleradores FuriosaAI RNGD mediante la libreria furiosa-llm. El modelo base es un transformer denso autorregresivo de 8.030.261.248 parametros, optimizado para dialogo multilingue, seguimiento de instrucciones y uso de herramientas (tool calling).
 
-El modelo se distribuye junto con un Furiosa Executable Bundle (FXB) para ejecutarse en el acelerador FuriosaAI RNGD mediante el framework Furiosa-LLM, aunque los pesos en formato safetensors también son compatibles con otros motores de inferencia como vLLM, SGLang o Transformers. Con 8.030 millones de parámetros, está pensado para tareas de generación de texto, tool calling y razonamiento conversacional en ocho idiomas, bajo la licencia comunitaria Llama 3.1.
+La relevancia de esta ficha concreta radica en que no se trata de una nueva versión del modelo, sino de un empaquetado listo para produccion sobre hardware especifico de inferencia (RNGD). Los pesos lineales del bloque Transformer estan cuantizados a FP8 de forma estatica, mientras que las activaciones se cuantizan dinamicamente en FP8 por token en tiempo de inferencia, sin calibracion offline. Esto reduce el espacio en memoria y aumenta el throughput en hardware compatible.
+
+El repositorio ocupa 13,4 GB e incluye tanto los pesos en safetensors como el bundle FXB. La licencia es la Llama 3.1 Community License, lo que condiciona el uso comercial. El modelo soporta ocho idiomas declarados (ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes) y expone una API compatible con OpenAI a traves del servidor `furiosa-llm serve`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Llama 3.1 (transformer denso autorregresivo) |
-| Parametros totales | 8.030.261.248 (8B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | FP8-dynamic (pesos FP8 estaticos, activaciones FP8 dinamicas por token) |
+| Parametros totales | 8.030.261.248 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Llama 3.1 soporta 128K, pero no se confirma en esta ficha) |
+| Tipos de cuantizacion | FP8 estatico en pesos lineales + FP8 dinamico por token en activaciones |
 | Idiomas soportados | en, de, fr, it, pt, hi, es, th |
-| Licencia | Llama 3.1 Community License |
-| Formato de pesos | safetensors (incluye FXB para Furiosa-LLM) |
+| Licencia | llama3.1 (Llama 3.1 Community License) |
+| Formato de pesos | safetensors + Furiosa Executable Bundle (FXB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo mantiene la arquitectura Llama 3.1 de Meta: un transformer denso autorregresivo con normalización RMSNorm, atención multi-cabeza con RoPE y MLP con activación SwiGLU. La variante FP8-dynamic cuantiza los pesos de las capas lineales de los bloques Transformer a FP8 de forma estática, mientras que las activaciones se cuantizan dinámicamente a FP8 por token durante la inferencia, sin necesidad de calibración offline. Esta estrategia reduce el footprint de memoria y mejora el throughput en el hardware RNGD.
+El modelo es un transformer denso de la familia Llama 3.1, en su variante Instruct de 8B parametros. La arquitectura es la estandar de Llama 3.1: atencion multi-cabeza con RoPE, capas feed-forward densas y normalizacion RMSNorm. No emplea mezcla de expertos (MoE) ni arquitecturas hibridas SSM. Los detalles exactos de composicion del dataset de preentrenamiento y del proceso de alineacion (RLHF/DPO) no se detallan en la informacion proporcionada; corresponden al modelo base de Meta y no se reproducen en esta ficha.
 
-No se proporcionan datos específicos sobre el entrenamiento de esta variante cuantizada; al ser una conversión del modelo RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic, hereda las capacidades del modelo base Llama-3.1-8B-Instruct de Meta, que fue entrenado con un corpus multilingüe y ajustado mediante instrucciones y RLHF. La cuantización se aplica posteriormente sin reentrenamiento, por lo que no introduce cambios en el comportamiento funcional más allá de la pérdida de precisión inherente a FP8.
+La innovacion tecnica de esta variante es la estrategia de cuantizacion: los pesos de las capas lineales del bloque Transformer se almacenan en FP8 estatico, mientras que las activaciones se cuantizan dinamicamente en FP8 por token durante la inferencia, evitando la necesidad de calibracion offline. Sobre hardware FuriosaAI RNGD, el modelo se ejecuta con un tamano de paralelismo tensorial de 8 PEs, que corresponde a una unica tarjeta RNGD (8 PEs por tarjeta). El bundle FXB precompilado elimina la necesidad de compilar el grafo en tiempo de despliegue sobre ese hardware.
 
 ## Capacidades
 
-- Generación de texto y diálogo multilingüe en ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés).
-- Seguimiento de instrucciones y respuesta a preguntas de propósito general.
-- Tool calling y function calling mediante el parser `llama3_json`, el mismo utilizado por la serie Llama 3.
-- Soporte para razonamiento multi-paso y uso de herramientas en flujos agénticos, habilitado a través de la API compatible con OpenAI de Furiosa-LLM.
-- Entrada y salida exclusivamente de texto; no incluye capacidades de visión ni audio.
-- Compatibilidad con frameworks estándar (vLLM, SGLang, Transformers) usando los pesos upstream, lo que permite integración en ecosistemas existentes.
+- Generacion de texto y dialogo multilingue en ocho idiomas declarados.
+- Seguimiento de instrucciones conversacionales (variante Instruct).
+- Tool calling / function calling mediante el parser `llama3_json`, activable con `--enable-auto-tool-choice --tool-call-parser llama3_json`.
+- Razonamiento multi-turno y conversaciones con historial.
+- API compatible con OpenAI (`/v1/chat/completions`) para integracion directa.
+- Capacidad de razonamiento, codigo y matematicas heredada del modelo base Llama 3.1 8B Instruct (sin datos de benchmark especificos en esta ficha).
+- No soporta vision ni audio: la entrada y salida son exclusivamente texto.
 
 ## Casos de uso
 
-- Atención al cliente automatizada multilingüe: el modelo puede gestionar conversaciones multi-turno en varios idiomas, reduciendo la necesidad de agentes humanos en soporte de primer nivel. Su soporte de tool calling permite consultar bases de datos de pedidos o sistemas de ticketing.
-- Asistentes de código con integración de herramientas: gracias al parser `llama3_json`, puede invocar funciones externas como ejecutar tests, buscar documentación o interactuar con APIs, integrándose en pipelines de desarrollo.
-- Automatización de tareas empresariales: el function calling permite orquestar flujos como reservas, envío de correos o actualización de registros CRM, con un único modelo desplegado en el acelerador RNGD.
-- Traducción y localización de contenido: con soporte para ocho idiomas, puede traducir textos y adaptar contenido manteniendo el tono conversacional, útil para equipos de producto y marketing.
-- Clasificación y análisis de sentimiento: su capacidad de seguimiento de instrucciones permite etiquetar comentarios, reseñas o tickets de soporte en múltiples idiomas, alimentando paneles de análisis.
-- Generación de respuestas en sistemas RAG: al combinarse con un motor de recuperación, el modelo puede redactar respuestas basadas en documentos corporativos, con la opción de llamar a herramientas para verificar datos en tiempo real.
+- Atencion al cliente automatizada: el modelo gestiona conversaciones multi-turno con contexto conversacional y responde en varios idiomas, desplegado sobre RNGD con la API compatible con OpenAI para integrarse en backends existentes.
+- Asistente de codigo en pipelines de desarrollo: con tool calling activado mediante `llama3_json`, puede invocar funciones de busqueda, ejecucion o linting dentro de un flujo de CI/CD.
+- Agente conversacional con herramientas: el soporte de function calling permite construir agentes que deciden cuando llamar a APIs externas (clima, bases de datos, calendarios) en pasos multiples.
+- Generacion de contenido multilingue: util para redaccion y traduccion asistida entre los ocho idiomas soportados, con un unico modelo desplegado.
+- Clasificacion y extraccion de informacion: tareas de procesamiento de texto estructurado (resumen, extraccion de entidades) en entornos con hardware FuriosaAI.
+- Despliegue en produccion sobre aceleradores RNGD: el bundle FXB precompilado permite servir el modelo sin compilacion adicional, reduciendo el tiempo de puesta en marcha en infraestructura FuriosaAI.
+- Prototipado de aplicaciones de chat: la API compatible con OpenAI permite sustituir el endpoint de un proveedor comercial por el servidor local `furiosa-llm serve` con cambios minimos en el cliente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: FuriosaAI RNGD, con una estrategia de tensor-parallel de 8 PEs que mapea a una única tarjeta (8 PEs por tarjeta).
-- VRAM estimada: no disponible; el tamaño del repositorio es de 10,2 GB, pero el consumo exacto de memoria en inferencia no se especifica.
-- GPU recomendadas: no aplica; el FXB está compilado exclusivamente para RNGD. Los pesos en safetensors pueden ejecutarse en GPUs estándar mediante vLLM, SGLang o Transformers, pero no se indican requisitos concretos.
-- Opciones de despliegue: Furiosa-LLM (`furiosa-llm serve`) para RNGD, o frameworks convencionales con los pesos upstream.
-- Latencia y throughput: no disponible.
+- VRAM/memoria estimada: no disponible de forma explicita; el repositorio ocupa 13,4 GB, lo que da una referencia del espacio en disco de los pesos en FP8 y el bundle.
+- Hardware objetivo principal: FuriosaAI RNGD, con paralelismo tensorial de 8 PEs (una tarjeta RNGD completa por instancia).
+- GPU consumer: no se documenta soporte nativo en esta ficha; el modelo base tambien puede ejecutarse en vLLM, SGLang y Transformers segun la model card upstream, pero los requisitos concretos de VRAM no se detallan aqui.
+- Opciones de despliegue: `furiosa-llm serve` (servidor compatible con OpenAI) sobre RNGD; alternativamente vLLM, SGLang y Transformers usando los pesos upstream de RedHatAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Contexto | Licencia | Hardware objetivo |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic | 8B | FP8-dynamic | No disponible | Llama 3.1 Community | FuriosaAI RNGD |
-| RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic | 8B | FP8-dynamic | No disponible | Llama 3.1 Community | GPUs (vLLM, SGLang, Transformers) |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | BF16 | No disponible | Llama 3.1 Community | GPUs estándar |
+| furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic | 8,03B | no disponible | FP8 estatico + dinamico | llama3.1 | FuriosaAI RNGD |
+| RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic | 8,03B | no disponible | FP8 estatico + dinamico | llama3.1 | GPU genericas (vLLM, SGLang, Transformers) |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128K (segun modelo base) | BF16 (original) | llama3.1 | GPU genericas |
 
-La diferencia principal frente al modelo original de Meta es la cuantización FP8-dynamic, que reduce el uso de memoria y acelera la inferencia en hardware compatible. Frente a la variante de RedHatAI, la versión de FuriosaAI añade el FXB precompilado para RNGD, lo que elimina la necesidad de compilar el modelo para ese hardware. No se dispone de datos de rendimiento comparativo entre estas variantes.
+La diferencia principal entre las tres variantes es el empaquetado y el hardware de destino, no la arquitectura ni los pesos subyacentes. La version de FuriosaAI anade el bundle FXB y el soporte de furiosa-llm; la de RedHatAI es la referencia upstream para frameworks genericos; la de Meta es el modelo original sin cuantizar.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: hereda los sesgos del modelo base Llama-3.1-8B-Instruct, que pueden reflejar prejuicios presentes en los datos de entrenamiento originales.
-- Riesgo de alucinación: como todo modelo generativo, puede producir contenido factualmente incorrecto o inventado, especialmente en temas especializados o de baja frecuencia.
-- Limitaciones de contexto: la longitud de contexto no se especifica en la documentación; se recomienda verificar la ventana soportada antes de usarlo en tareas que requieran documentos largos.
-- Restricciones de licencia: la Llama 3.1 Community License impone condiciones de uso comercial, incluyendo requisitos de atribución y restricciones para usuarios con más de 700 millones de usuarios mensuales.
-- Hardware específico: el FXB incluido solo funciona en FuriosaAI RNGD; para otros entornos es necesario usar los pesos upstream con frameworks compatibles.
-- Pérdida de precisión: la cuantización FP8 puede degradar ligeramente la calidad en tareas de alta sensibilidad numérica o razonamiento complejo, aunque no se han publicado evaluaciones cuantitativas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje de 8B parametros; no se documentan evaluaciones de fiabilidad en esta ficha.
+- Sesgos potenciales heredados del dataset de entrenamiento de Llama 3.1, no cuantificados en la informacion disponible.
+- La longitud de contexto efectiva no se confirma en esta ficha; debe verificarse contra la model card upstream antes de asumir 128K.
+- El soporte de tool calling depende de activar explicitamente el parser `llama3_json`; sin esa bandera el modelo no emitira llamadas estructuradas.
+- Licencia Llama 3.1 Community License: impone restricciones al uso comercial (umbral de usuarios activos mensuales, obligaciones de atribucion y politicas de uso aceptable). Revisar el texto completo antes de desplegar en produccion.
+- El bundle FXB esta optimizado para FuriosaAI RNGD; fuera de ese hardware debe usarse la variante upstream y otro framework.
+- Idiomas limitados a los ocho declarados; el rendimiento en espanol no esta cuantificado en esta ficha.
+- No soporta modalidades de vision ni audio.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic
+- Hugging Face: https://huggingface.co/furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic
 - Modelo upstream (RedHatAI): https://huggingface.co/RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic
-- Modelo base (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
-- Guía de tool calling: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html
-- Documentación de Llama 3.1 en FuriosaAI: https://developer.furiosa.ai/latest/en/furiosa_llm/models/llama-3.1.html
+- Modelo base original (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
+- FuriosaAI: https://furiosa.ai
+- Documentacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Guia de instalacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- Guia de tool calling: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html
+- Referencia del servidor `furiosa-llm serve`: https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html

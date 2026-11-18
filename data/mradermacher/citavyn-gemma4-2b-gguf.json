@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/citavyn-gemma4-2b-GGUF",
   "created_at": "2026-11-17T22:52:24.000Z",
-  "updated_at": "2026-11-17T23:07:44.000Z",
+  "updated_at": "2026-11-18T05:08:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
     "rbac",
     "pii-redaction",
     "en",
-    "base_model:citavyn/citavyn-gemma4-2b",
-    "base_model:quantized:citavyn/citavyn-gemma4-2b",
+    "base_model:citavyn/citavyn-gemma4-2b-full",
+    "base_model:quantized:citavyn/citavyn-gemma4-2b-full",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -41,7 +41,7 @@
   "storage_bytes": 48035646848,
   "storage_human": "48.0 GB",
   "context_length": 131072,
-  "base_model": "citavyn/citavyn-gemma4-2b",
+  "base_model": "citavyn/citavyn-gemma4-2b-full",
   "formats": [
     "gguf"
   ],

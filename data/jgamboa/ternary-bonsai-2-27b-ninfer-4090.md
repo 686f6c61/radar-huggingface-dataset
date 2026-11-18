@@ -2,117 +2,127 @@
 
 ## Resumen
 
-Ternary Bonsai 2 27B (NInfer artifact for the RTX 4090) es un artefacto derivado publicado por el usuario jgamboa que empaqueta el modelo multimodal Ternary Bonsai 2 27B de Prism ML en el formato propietario `.ninfer` del motor de inferencia NInfer, con un único archivo autocontenido de 6,56 GB que incluye pesos de texto, torre de visión y cabeza MTP para decodificación especulativa. El modelo base, Ternary Bonsai 2 27B, es un transformer causal de atención híbrida derivado de Qwen3.8 27B cuyos pesos de matriz son ternarios (valores en {−1, 0, +1} en una base rotada fija) con escalas de grupo en FP16, lo que reduce el tamaño aproximadamente 9 veces respecto a la versión en precisión completa manteniendo, según datos de primera parte, el 98,2 % del rendimiento agregado en benchmarks.
+Ternary Bonsai 2 27B NInfer 4090 es un artefacto de despliegue publicado por el desarrollador independiente jgamboa que empaqueta el modelo multimodal Ternary Bonsai 2 27B de Prism ML en el formato propietario `.ninfer`, optimizado específicamente para una NVIDIA RTX 4090 (`sm_89`). El modelo base es una cuantización ternaria de un transformer de 27.000 millones de parámetros con torre de visión, derivado a su vez de la familia Qwen3.8, que Prism ML distribuye originalmente en GGUF. Este artefacto añade una cabeza MTP (multi-token prediction) para decodificación especulativa y unifica texto, visión y MTP en un único fichero de 6,4 GiB.
 
-La relevancia de este artefacto concreto es de ingeniería: demuestra que un modelo de clase 27B con contexto de 262.144 tokens y entrada de visión puede ejecutarse en una única GPU de consumo (RTX 4090, `sm_89`) con solo 5,52 GiB de pesos de texto residentes en VRAM, a 167 tok/s de decodificación con especulación MTP y 3.061 tok/s de prefill. A cambio, el archivo está fuertemente acoplado a un binario específico de NInfer y no carga en llama.cpp, vLLM ni Transformers.
+La relevancia de esta ficha radica en que demuestra un caso extremo de optimización para hardware de consumo: un modelo de 27B con contexto declarado de 262.144 tokens ejecutándose en una GPU de 24 GB de VRAM, con velocidades de decodificación de 218-252 tok/s y prefill de hasta 6.110 tok/s. El truco es la cuantización ternaria (5 pesos por byte en base 3) combinada con decodificación especulativa MTP y n-gram, más una caché KV comprimida (`rk4v4-e8`).
 
-La ficha describe el artefacto tal como está publicado: un port de conversión más kernels, sin entrenamiento adicional ni ajuste fino propio. Se trata de un experimento de portabilidad y rendimiento sobre un modelo ternario, no de un modelo nuevo.
+No obstante, el artefacto tiene una dependencia crítica: solo funciona con la build de NInfer del repositorio JGamboa/ninfer-4090-windows, en la rama `main`, y no carga en llama.cpp, vLLM ni Transformers. La licencia declarada es Apache 2.0, y el repositorio acumula 19.203 descargas con solo 2 likes, lo que sugiere interés práctico más que comunitario.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal de atención híbrida (herencia de Qwen3.8 27B); pesos ternarios {−1, 0, +1} en base rotada fija con escalas de grupo FP16 |
-| Parametros totales | clase 27B (modelo base: Qwen3.8 27B, ~27.000 millones) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 262.144 tokens (256k), valor usado en el comando de servicio del artefacto |
-| Tipos de cuantizacion | Ternaria empaquetada como `t5_g128_fp16` (5 pesos por byte en base 3, 1,6 bits/peso, una escala FP16 por cada 128 pesos); torre de visión en Q8_0; el GGUF original usa empaquetado PTQ1_0 (referido como 2,125 bits/peso en un port independiente) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | `.ninfer` (artefacto NInfer v3), archivo único de 6,56 GB; el modelo de origen se distribuye en GGUF |
+| Arquitectura | Transformer multimodal (texto + visión) con cabeza MTP para decodificación especulativa; pesos ternarios |
+| Parametros totales | 27B (según nombre del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 tokens (configuración del servidor; pool KV de ~767K tokens para 3 carriles) |
+| Tipos de cuantizacion | Ternaria: repacks `t5_g128_fp16` (5 pesos por byte en base 3, una escala FP16 por cada 128 pesos); MTP en mezcla Q4/Q5 o Q8; KV en `rk4v4-e8` o int8 |
+| Idiomas soportados | no disponible (la model card menciona prompts en inglés y español, y código en diez lenguajes, pero no declara lista oficial) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | `.ninfer` (formato propietario de NInfer); modelo base en GGUF |
 
 ## Arquitectura y entrenamiento
 
-El artefacto no introduce entrenamiento nuevo: es una conversión de pesos y un port de kernels. Los pesos ternarios de Prism ML se conservan bit a bit y se reempaquetan del formato PTQ1_0 del GGUF original al formato `t5_g128_fp16` de NInfer, preservando las escalas de grupo FP16. La torre de visión se convierte desde el `mmproj` GGUF de Prism (`Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf`, Q8_0 desquantizado al layout de NInfer). La cabeza MTP de decodificación especulativa, el tokenizador, la plantilla de chat y la configuración se toman del artefacto `neroued/Qwen3.8-27B-NInfer`, ya que Bonsai mantiene la arquitectura y el tokenizador de Qwen3.8.
+El modelo base es un transformer denso de 27B parámetros con torre de visión, cuantizado a pesos ternarios por Prism ML. La innovación central del artefacto de jgamboa es la cabeza MTP, originalmente proveniente de Qwen3.8 y entrenada contra el modelo sin cuantizar. El 11 de octubre de 2026 se publicó una versión reentrenada mediante autodestilación: Bonsai respondió a 3.342 prompts (código en diez lenguajes, chat en inglés y español, plantillas de edición, JSON y matemáticas) a través de `ninfer-serve`, y `ninfer-score-export` capturó sus estados ocultos finales y el argmax sobre 3,49 millones de tokens. Después se aplicó una época de tres pasos de borrador encadenados con teacher forcing.
 
-La innovación técnica relevante es doble. Por un lado, la cuantización ternaria con escalas de grupo FP16, que sitúa los pesos en 1,6 bits por peso efectivos. Por otro, la decodificación especulativa mediante una cabeza MTP (multi-token prediction) con `--draft-tokens 2` y `--lm-head-draft`, que eleva la decodificación de 101 tok/s (sin especulación) a 167 tok/s de media en seis prompts, sin degradar la perplejidad (5,8556 en cuatro corpus, idéntica al fork de llama.cpp de Prism). No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de datos ni las etapas de RLHF/DPO del modelo base.
+El resultado de esa autodestilación es una mejora sustancial en la precisión del borrador en datos retenidos: pasos 1/2/3 pasaron de 67,8/59,7/55,3 % a 78,9/71,1/66,9 %. El modelo principal no se modifica: la decodificación especulativa solo acepta tokens que el modelo principal verifica, aunque el orden de verificación puede alterar empates en generación greedy. El artefacto conserva los códigos ternarios de Prism de forma bit-exacta y repackea los pesos como `t5_g128_fp16`. La torre de visión proviene también del modelo de Prism.
 
 ## Capacidades
 
-- Generación de texto y modelado de lenguaje general, con arquitectura y tokenizador de Qwen3.8 27B.
-- Entrada multimodal de imagen y texto (`pipeline_tag: image-text-to-text`); la torre de visión se sirve con el flag `--vision`.
-- Contexto largo de hasta 262.144 tokens, útil para documentos extensos o conversaciones multi-turno largas.
-- Decodificación especulativa con cabeza MTP integrada en el propio archivo, con `--draft-tokens 2`.
-- API compatible con OpenAI y Anthropic en `http://localhost:8080/v1`, además de un monitor en vivo en `/monitor`.
-- Gestión de caché KV con `--kv-capacity auto` y `--kv-dtype int8`.
-- Razonamiento multi-paso, tool calling, modo thinking y capacidades multilingües: no documentados en la información disponible para este artefacto.
+- Generación de texto, razonamiento, código, matemáticas y tareas de edición de documentos.
+- Procesamiento de imagen y texto (`image-text-to-text`): incluye torre de visión funcional.
+- Tool calling y function calling: validado en las tareas deterministas de la model card (43 de 45 tareas, incluyendo tool calling).
+- Modo thinking activado por defecto, con parámetros de muestreo recomendados (`temperature 1.0, top_p 0.95, top_k 20`).
+- Decodificación especulativa con MTP de hasta 3 tokens de borrador y extensión mediante n-gram (`--ngram chain`), efectiva en código, JSON, tool calls y documentos.
+- Soporte multilingüe parcial: código en diez lenguajes y chat en inglés y español según los datos de entrenamiento del MTP; no hay lista oficial de idiomas.
+- Servidor con API compatible con OpenAI y Anthropic en `/v1`, más monitor en vivo en `/monitor`.
+- Concurrencia de hasta 3 peticiones con contexto completo de 262K por carril en una tarjeta de 24 GB.
 
 ## Casos de uso
 
-- Asistente multimodal local en estación de trabajo con RTX 4090: el modelo acepta imágenes y texto y cabe en 24 GB de VRAM (5,52 GiB de pesos de texto más caché KV en int8), lo que permite un asistente privado sin depender de APIs externas.
-- Análisis de documentación técnica con imágenes: diagramas de arquitectura, capturas de pantalla o esquemas pueden enviarse junto a preguntas de texto, y la ventana de 262.144 tokens permite adjuntar manuales completos en la misma sesión.
-- Copiloto de código en local: la decodificación a 167 tok/s con MTP y el prefill a 3.061 tok/s reducen la latencia percibida en ciclos de edición-depuración, y la API compatible con OpenAI facilita la integración en extensiones tipo VS Code.
-- Procesamiento de contratos, informes o expedientes largos: la ventana de 256k tokens permite pasar documentos completos sin troceado agresivo, con la caché KV en int8 para controlar el consumo de VRAM.
-- Prototipado de agentes con herramientas: el servidor expone un endpoint compatible con OpenAI y Anthropic, de modo que frameworks de agentes existentes pueden apuntar a `http://localhost:8080/v1` sin cambios de código.
-- Evaluación e investigación sobre cuantización ternaria: al conservar los códigos bit a bit del modelo de Prism y reportar la misma perplejidad que el fork de llama.cpp, sirve como banco de pruebas para comparar empaquetados ternarios y estrategias de decodificación especulativa.
-- Despliegue en estaciones sin GPU de centro de datos: con 0,714 mWh/token en RTX 4090 según datos de Prism ML, es adecuado para entornos donde el consumo energético y el coste de hardware son restricciones reales.
-- Servicio interno de un solo usuario o equipo pequeño: al no estar pensado para batching en servidor, encaja mejor como endpoint local persistente que como backend multiusuario.
+- Edición de código en agentes: el modo `--ngram chain` eleva el rendimiento de 250 a 532 tok/s en prompts de agente que devuelven un fichero con un cambio pequeño, lo que lo hace adecuado para bucles de edición iterativa sobre repositorios.
+- Edición de documentos largos vía servidor: a través de `ninfer-serve`, la edición de un fichero de 7K-11K tokens con thinking activo alcanza 378 tok/s con MTP más n-gram, útil para reescritura y refactorización de documentación.
+- Asistente de código en local con contexto masivo: los 262K tokens por petición permiten cargar repositorios medianos o expedientes completos sin truncar, con prefill de 14,4 s para 64K tokens y 37,4 s para 128K.
+- Automatización de JSON y tool calling: las tareas deterministas de JSON y tool calling se resuelven con 43 de 45 aciertos, y el rendimiento en edición JSON alcanza 618-840 tok/s, adecuado para pipelines de extracción estructurada.
+- Procesamiento multimodal de documentos: la torre de visión integrada permite extraer información de imágenes y capturas dentro del mismo fichero y servidor, sin componentes separados.
+- Atención al cliente o chat multi-turno en español e inglés: el modelo mantiene conversaciones multi-turno con contexto largo y modo thinking, con la salvedad de que el soporte idiomático no está documentado oficialmente.
+- Despliegue en estación de trabajo con una sola RTX 4090: con 6,11 GiB de pesos en VRAM (6,39 GiB con visión), queda espacio para caché KV y tres carriles concurrentes, lo que permite servir un modelo de 27B en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la model card del artefacto (RTX 4090, Windows 11, CUDA 13.4):
+Rendimiento medido en una RTX 4090 a reloj de fábrica, Windows 11, CUDA 13.4, con `bonsai2_27b_vl_mtp_q4q5.ninfer`:
 
-| Metrica | NInfer + este archivo | Fork llama.cpp de Prism (PTQ1_0) |
+| Medición | Resultado |
+|---|---:|
+| Decode, MTP 2, seis prompts mixtos, greedy, thinking off | 218 tok/s |
+| Decode sin especulación (`tg128`) | 129 tok/s |
+| Prefill `pp512` / `pp2048` (`ninfer_bench`, KV int8) | 5.800-5.890 / 6.110 tok/s |
+| Prefill con prompt de 8K / 64K / 128K tokens (needle test) | 1,3 s / 14,4 s / 37,4 s |
+
+Decode por carga de trabajo (24-25 de septiembre de 2026, con la tarjeta también gestionando un escritorio 4K a 60 Hz, que costaba ~15 % de decode):
+
+| Carga | MTP 2 | MTP 2 + n-gram |
 |---|---:|---:|
-| Decode con MTP (media de 6 prompts) | 167 tok/s (146–187) | no disponible |
-| Decode sin especulación (tg128) | 101 tok/s | 77 tok/s |
-| Prefill (pp512) | 3.061 tok/s | 1.363 tok/s |
-| Perplejidad (cuatro corpus) | 5,8556 | 5,8556 |
-| Pesos en VRAM (solo texto) | 5,52 GiB | 5,53 GiB |
+| Prosa, greedy, thinking off | 167 tok/s | 167 tok/s |
+| Prompts de agente de edición, greedy, thinking off | 250 tok/s | 532 tok/s |
+| Vía `ninfer-serve`, edición de fichero de 7K-11K tokens, thinking on | 215 tok/s | 378 tok/s |
+| Tres peticiones concurrentes, agregado (KV int8) | 360 tok/s | — |
 
-Datos de primera parte reportados por Prism ML para el modelo base Ternary Bonsai 2 27B, recogidos por fuentes externas:
+Comparativa contra el fork de llama.cpp de Prism (b10709, PTQ1_0) en la misma tarjeta, 24 de septiembre de 2026:
 
-| Metrica | Ternary Bonsai 2 27B | Qwen3.8 27B (precisión completa) |
+| Métrica | NInfer | Fork de Prism |
 |---|---:|---:|
-| Rendimiento agregado en benchmarks | 83,9 | 85,4 |
-| Retención | 98,2 % | referencia |
-| Eficiencia energética en RTX 4090 | 0,714 mWh/token | no disponible |
+| Decode sin especulación (`tg128`), escritorio 4K en ambos | 101 tok/s | 77 tok/s |
+| Prefill (`pp512`) | 4.182-4.251 tok/s (5.800-5.890 actualmente) | 1.363 tok/s |
+| Perplejidad, wikitext / código | 8,087 / 1,895 | 8,178 / 1,899 |
 
-No se han publicado resultados de benchmarks por tarea (MMLU, HumanEval, GSM8K ni similares) en la información disponible.
+Efecto de la autodestilización del MTP (RTX 4090, MTP 3, `rk4v4-e8`, `--lm-head-draft`):
+
+| Carga | `mtp_q4q5` | `mtp_retrained` |
+|---|---:|---:|
+| Seis prompts mixtos, greedy, thinking off | 225,6 tok/s | 252,1 tok/s (+11,8 %) |
+| Cuatro prompts × dos semillas, muestreo de la model card, thinking on, n-gram | 190,6 tok/s | 220,5 tok/s (+15,7 %) |
+| Edición de JSON y documentos, MTP 3 + n-gram, greedy | 611 / 812 tok/s | 618 / 840 tok/s |
+
+Calidad: 43 de 45 tareas deterministas superadas (código, JSON, tool calling, matemáticas, contexto largo, español), frente a 44 de Qwen3.8-27B. Precisión del borrador MTP en datos retenidos, pasos 1/2/3: 78,9/71,1/66,9 % tras el reentrenamiento.
 
 ## Requisitos de hardware
 
-- GPU: NVIDIA RTX 4090 (arquitectura Ada Lovelace, `sm_89`) con 24 GB de VRAM. El artefacto está compilado explícitamente para esta arquitectura.
-- VRAM estimada: 5,52 GiB de pesos de texto, más la torre de visión y la caché KV en int8 para hasta 262.144 tokens. El archivo completo ocupa 6,56 GB (7,0 GB de repositorio).
-- Cabe en GPU de consumo: sí, en RTX 4090. Existe un port independiente de NInfer para Ada (`sm_89`) en Linux, orientado al mismo segmento.
-- Otras GPU: no hay constancia de soporte para H100, A100 ni GPU consumer de gama inferior en la información disponible.
-- Sistema operativo y stack: Windows 11 con CUDA 13.4 según la model card; el port de CraneBW apunta a Linux nativo sobre Ada.
-- Despliegue: exclusivamente mediante NInfer en la rama `feat/bonsai-ternary` del repositorio JGamboa/ninfer-4090-windows. No carga en llama.cpp, vLLM, Transformers ni Ollama.
-- Servicio: `ninfer-serve bonsai2_27b_vl.ninfer --host 127.0.0.1 --port 8080 --max-context 262144 --kv-capacity auto --kv-dtype int8 --spec mtp --draft-tokens 2 --lm-head-draft --vision`.
-- Throughput y latencia medidos: 167 tok/s de decodificación con MTP, 101 tok/s sin especulación, 3.061 tok/s de prefill en pp512.
+- GPU: exclusivamente NVIDIA RTX 4090 (`sm_89`). Los ficheros no cargan en otras GPU ni en llama.cpp, vLLM o Transformers.
+- VRAM: 6,11 GiB de pesos en VRAM, o 6,39 GiB con visión. Con 24 GB totales, la configuración recomendada asigna 262K de contexto a cada una de tres peticiones sobre un pool de ~767K tokens KV.
+- Cabe en GPU de consumo: sí, en RTX 4090. No hay soporte documentado para otras GPU de consumo.
+- Sistema operativo: Windows o Linux, con la build de NInfer del repositorio JGamboa/ninfer-4090-windows (rama `main`).
+- Despliegue: binario `ninfer-serve` con flags `--spec mtp --draft-tokens 3 --lm-head-draft --ngram chain --vision --kv-dtype rk4v4-e8 --max-concurrency 3`. Existe una release prebuilt para Windows cuyo `start-bonsai-server.bat` usa el fichero recomendado.
+- Throughput: 218-252 tok/s en decode con MTP, 129 tok/s sin especulación, 5.800-6.110 tok/s en prefill; 360 tok/s agregados con tres peticiones concurrentes.
+- Latencia de prefill: 1,3 s para 8K, 14,4 s para 64K y 37,4 s para 128K tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato y runtime | Rendimiento | Licencia |
-|---|---|---|---|---|---|
-| Este artefacto (NInfer 4090) | clase 27B, denso, ternario 1,6 bits/peso | 262.144 tokens | `.ninfer`, solo NInfer en RTX 4090 | 167 tok/s decode con MTP; 3.061 tok/s prefill; perplejidad 5,8556 | Apache-2.0 |
-| Prism ML Ternary Bonsai 2 27B (GGUF, PTQ1_0) | clase 27B, denso, ternario | 262.144 tokens (modelo base) | GGUF, fork de llama.cpp de Prism y MLX en Apple Silicon | 77 tok/s decode (tg128); 1.363 tok/s prefill; perplejidad 5,8556 | Apache-2.0 |
-| Qwen3.8 27B (precisión completa) | ~27B, denso | no disponible en la información recogida | safetensors / GGUF según distribución | 85,4 agregado (referencia del 100 %) | Apache-2.0 |
-| Port NInfer ternario para Ada en Linux (CraneBW) | clase 27B, denso, 2,125 bits/peso | no disponible | NINFER C++20/CUDA, Linux `sm_89` | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Decode (RTX 4090) | Prefill (pp512) | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| Ternary Bonsai 2 27B NInfer (este) | 27B | 262.144 | 218 tok/s (MTP 2); 129 tok/s sin especulación | 5.800-6.110 tok/s | Apache 2.0 | Solo NInfer, RTX 4090 |
+| Ternary Bonsai 2 27B GGUF (Prism, fork llama.cpp) | 27B | no disponible | 77 tok/s sin especulación | 1.363 tok/s | Apache 2.0 (según base) | llama.cpp fork de Prism |
+| Qwen3.8-27B | 27B | no disponible | no disponible | no disponible | no disponible | Referencia de calidad: 44/45 tareas deterministas frente a 43/45 |
+
+La comparativa directa solo es posible contra el GGUF original de Prism y contra Qwen3.8-27B como referencia de calidad, porque la model card no proporciona datos de otros modelos ternarios o multimodales de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- Acoplamiento total al motor: el archivo solo funciona con la compilación de NInfer de la rama `feat/bonsai-ternary` del repositorio de JGamboa. No carga en llama.cpp, vLLM, Transformers ni Ollama, lo que descarta su uso en la mayoría de stacks de producción estándar.
-- Acoplamiento al hardware: requiere una RTX 4090 (`sm_89`). No hay soporte documentado para A100, H100 ni GPU de gama inferior. Migrar a otro hardware implica recompilar kernels o recurrir al port alternativo de CraneBW.
-- Formato propietario: `.ninfer` v3 no es un formato estándar y limita la portabilidad y la verificabilidad por parte de terceros.
-- Pérdida de calidad por cuantización ternaria: el modelo base retiene el 98,2 % del rendimiento agregado de Qwen3.8 27B, es decir, hay una degradación medible frente a la versión en precisión completa.
-- Riesgo de alucinación: no hay datos publicados de evaluación de factualidad, veracidad ni tasas de alucinación para este artefacto ni para su modelo base en la información disponible.
-- Sesgos: no se documenta ningún análisis de sesgos, seguridad o alineación.
-- Idiomas: no se especifica la lista de idiomas soportados, aunque el tokenizador es el de Qwen3.8.
-- Licencia y trazabilidad: la licencia declarada es Apache-2.0, coherente con las tres fuentes (Prism ML, Qwen y neroued), pero el artefacto combina pesos, torre de visión, cabeza MTP y plantilla de chat de orígenes distintos; conviene verificar la procedencia antes de un uso comercial crítico.
-- Validación comunitaria nula: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y está publicado por un autor individual con asistencia de Claude Code.
-- Capacidades no confirmadas: tool calling, modo thinking, razonamiento explícito y multilingüismo no están documentados para este artefacto; no deben asumirse.
-- Enfoque monousuario: no se reportan pruebas de batching ni de concurrencia, por lo que no es adecuado como backend multiusuario sin evaluación adicional.
+- Dependencia total del runtime: los ficheros solo funcionan con la build de NInfer del repositorio JGamboa/ninfer-4090-windows (rama `main`), en RTX 4090 (`sm_89`). No hay soporte para llama.cpp, vLLM ni Transformers, lo que limita la portabilidad y crea riesgo de mantenimiento.
+- Plataforma restringida: Windows o Linux únicamente; no se documenta soporte para otras GPU, incluida la gama profesional o de centros de datos.
+- Idiomas no documentados: no hay lista oficial de idiomas soportados; el español aparece en los datos de entrenamiento del MTP, pero no se garantiza cobertura general.
+- Riesgo de alucinación: no se han publicado evaluaciones específicas de factualidad ni tasas de alucinación.
+- Sesgos: no se documentan análisis de sesgos del modelo base ni del artefacto.
+- Cuantización ternaria agresiva: la perplejidad en wikitext es 8,087 (frente a 8,178 del fork de Prism), y la calidad determinista es 43/45 frente a 44/45 de Qwen3.8-27B; puede haber degradación en tareas sensibles a precisión numérica.
+- La decodificación especulativa puede alterar empates en generación greedy respecto al modelo sin MTP, aunque solo acepta tokens verificados por el modelo principal.
+- El rendimiento medido incluye condiciones variables (escritorio 4K activo en algunas mediciones, que costaba ~15 % de decode), por lo que las cifras no son directamente comparables entre tablas.
+- Uso comercial: la licencia Apache 2.0 lo permite, pero la dependencia de un runtime propietario y de un único desarrollador introduce riesgo operativo para producción.
 
 ## Enlaces
 
-- Hugging Face (este artefacto): https://huggingface.co/jgamboa/Ternary-Bonsai-2-27B-NInfer-4090
+- Repositorio Hugging Face: https://huggingface.co/jgamboa/Ternary-Bonsai-2-27B-NInfer-4090
 - Modelo base en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
-- Documentación de Prism ML sobre Ternary Bonsai 2 27B: https://docs.prismml.com/bonsai-2-27b
-- Anuncio de Prism ML: https://prismml.com/news/bonsai-2-27b
-- Motor NInfer (Neroued): https://github.com/Neroued/ninfer
-- Build de NInfer para RTX 4090, rama del artefacto: https://github.com/JGamboa/ninfer-4090-windows/tree/feat/bonsai-ternary
-- Artefacto NInfer de Qwen3.8-27B (origen de la cabeza MTP y el tokenizador): https://huggingface.co/neroued/Qwen3.8-27B-NInfer
-- Port NInfer ternario para Ada en Linux: https://github.com/CraneBW/ninfer-ternary-bonsai-ada
-- Guía local de Ternary Bonsai 2 27B (terceros): https://cldnavi.com/en/blog/bonsai-2-27b-local-2026/
-- Ficha de referencia del modelo (terceros): https://www.llmreference.com/model/bonsai-2-27b
+- Repositorio del runtime NInfer: https://github.com/JGamboa/ninfer-4090-windows/tree/main
+- Herramienta de destilación MTP: https://github.com/JGamboa/ninfer-4090-windows/tree/main/tools/mtp_distill
+- Notas de diseño (sección 9.1): https://github.com/JGamboa/ninfer-4090-windows/blob/main/docs/maintainer/bonsai-ternary-design.md
+- Release prebuilt para Windows: https://github.com/JGamboa/ninfer-4090-windows/releases/latest

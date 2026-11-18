@@ -27,8 +27,8 @@
     "region:us"
   ],
   "likes": 1747,
-  "downloads_30d": 1622972,
-  "trending_score": 11,
+  "downloads_30d": 1618896,
+  "trending_score": 9,
   "parameters": 11959730224,
   "parameters_human": "11.96B",
   "storage_bytes": 54451275807,
@@ -47,5 +47,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google",
+      "snippet": "La société compte environ 50 000 employés. La plupart travaillent au siège mondial : le Googleplex, à Mountain View en Californie. …"
+    },
+    {
+      "title": "Présentation",
+      "url": "https://search.google/intl/fr-FR/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Google (moteur de recherche) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google_(moteur_de_recherche)",
+      "snippet": "Google est à l'origine un moteur de recherche de pages web, qui s'est étendu progressivement à divers types de documents (PDF, …"
+    }
+  ]
 }

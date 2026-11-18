@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29092,
+  "downloads_30d": 28772,
   "trending_score": 0,
   "parameters": 2254656316,
   "parameters_human": "2.25B",
@@ -72,24 +72,14 @@
       "snippet": "Download Handy - the free and open source speech to text application for Windows, macOS, and Linux"
     },
     {
+      "title": "GitHub - cjpais/Handy: A free, open source, and extensible speech-to ...",
+      "url": "https://github.com/cjpais/handy",
+      "snippet": "Handy is a cross-platform desktop application that provides simple, privacy-focused speech transcription. Press a shortcut, speak, …"
+    },
+    {
       "title": "Handy",
       "url": "https://handy.computer/",
       "snippet": "Handy is a cross platform, open-source, speech-to-text application for your computer"
-    },
-    {
-      "title": "Merci Handy | Nous existons pour rendre l'ordinaire extraordinaire",
-      "url": "https://www.mercihandy.com/",
-      "snippet": "Chaque colis transporte un peu de l’univers Merci Handy. Une équipe passionnée qui développe, prépare et expédie vos produits …"
-    },
-    {
-      "title": "The Handy",
-      "url": "https://www.thehandy.com/store/the-handy-eu/?country=CW",
-      "snippet": "The Handy is engineered in Scandinavia to deliver premium, high-tech pleasure for penis owners. Reliable and comfortable, it offers …"
-    },
-    {
-      "title": "Maison Handy",
-      "url": "https://maisonhandy.com/",
-      "snippet": "Découvrez dès maintenant les dernières nouveautés de Maison HANDY. Laissez-vous séduire par l’alliance parfaite entre innovation, …"
     }
   ]
 }

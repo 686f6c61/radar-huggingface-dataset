@@ -5,7 +5,7 @@
   "author": "ya9919",
   "url": "https://huggingface.co/ya9919/laya-finance-matched-sft-50k",
   "created_at": "2026-10-19T20:33:45.000Z",
-  "updated_at": "2026-10-27T03:42:57.000Z",
+  "updated_at": "2026-11-18T07:56:27.000Z",
   "license": "s2-mas-controlled-research-v1.2",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 63,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 421293830,
   "parameters_human": "421.3M",
@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "ya9919/sharp-421m-sft-50k",
-  "renamed_at": "2026-11-11T08:08:45.489Z",
+  "renamed_to": "ya9919/YN-421m-sft-50k",
+  "renamed_at": "2026-11-18T11:06:46.772Z",
   "benchmarks": [],
   "sources": []
 }

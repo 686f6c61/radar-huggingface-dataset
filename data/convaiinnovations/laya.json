@@ -31,9 +31,9 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 5975,
-  "downloads_30d": 16719,
-  "trending_score": 35,
+  "likes": 5977,
+  "downloads_30d": 16327,
+  "trending_score": 32,
   "parameters": 421293830,
   "parameters_human": "421.3M",
   "storage_bytes": 2366100536,
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Entra nella tua mail",
-      "url": "https://mail.tim.it/?d=alice.it&s=1587007497263",
-      "snippet": "Entra nella tua mail Username @tim.it @alice.it @tin.it Recupera username Recupera Password Avanti"
-    },
-    {
-      "title": "TIM Mail",
-      "url": "http://mail.tim.it/",
-      "snippet": ""
-    },
-    {
-      "title": "TIM Mail - registrati",
-      "url": "https://mail.tim.it/registrati.html",
-      "snippet": "La mail gratuita di TIM ti consente di creare velocemente un account di posta elettronica sicuro e con molto spazio. Entra in TIM Mail!"
-    },
-    {
-      "title": "TIM Mail - Info",
-      "url": "https://mail.tim.it/info.html",
-      "snippet": "TIM Mail è la casella mail gratuita @tim.it o @alice.it per i clienti ADSL/Fibra o di linea mobile TIM, che permette di gestire le mail di …"
-    },
-    {
-      "title": "TIM Mail - Mobile",
-      "url": "https://mail.tim.it/mobile.html",
-      "snippet": "La mail gratuita di Alice ti consente di creare velocemente un account di posta elettronica sicuro e con molto spazio. Entra in Alice Mail!"
-    }
-  ]
+  "sources": []
 }

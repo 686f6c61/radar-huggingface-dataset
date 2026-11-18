@@ -5,10 +5,10 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/SenseVoiceSmall-Tensix-BFP8-Components",
   "created_at": "2026-11-14T06:13:02.000Z",
-  "updated_at": "2026-11-14T16:54:18.000Z",
+  "updated_at": "2026-11-17T08:43:39.000Z",
   "license": "funasr-model-license-1.1",
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "automatic-speech-recognition",
   "library": "pytorch",
   "languages": [
     "ko"
@@ -22,6 +22,7 @@
     "bfloat8_b",
     "bfloat16",
     "model-components",
+    "automatic-speech-recognition",
     "ko",
     "base_model:FunAudioLLM/SenseVoiceSmall",
     "base_model:finetune:FunAudioLLM/SenseVoiceSmall",

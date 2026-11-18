@@ -2,100 +2,93 @@
 
 ## Resumen
 
-Ling-3.0-flash-VL es un modelo multimodal nativo de la familia Ling de inclusionAI, que extiende el modelo híbrido de razonamiento Ling-3.0-flash con capacidades de comprensión de imagen y vídeo. Con 124B parámetros totales y solo 5.5B activados por token, consigue un equilibrio entre capacidad multimodal y eficiencia de inferencia. Su arquitectura integra la información visual en el proceso completo de comprensión, razonamiento, actuación y verificación, en lugar de tratarla como una simple entrada adicional.
+Ling-3.0-flash-VL es un modelo multimodal nativo desarrollado por inclusionAI (organización vinculada a Ant Group) que parte del modelo de lenguaje Ling-3.0-flash y le añade comprensión de imagen y vídeo integrada en todo el ciclo de razonamiento. Con 124.848 millones de parámetros totales y solo 5.500 millones activados por token, emplea una arquitectura MoE dispersa sobre un backbone híbrido de 42 capas que alterna capas KDA y Gated MLA en proporción 5:1, lo que le permite procesar contextos de hasta 256.000 tokens de forma eficiente.
 
-El modelo está diseñado para tareas de razonamiento multimodal, comprensión de vídeo y worko de agentes, con una ventana de contexto de hasta 1M tokens. Soporta entrada de imágenes y vídeos, y puede traducir información visual en secuencias de acciones sobre interfaces de usuario. Su licencia MIT y su formato de pesos safetensors facilitan su integración en entornos de producción.
+El modelo cubre tres ejes declarados por el autor: comprender información visual compleja (layouts, gráficos, documentos, conteo de objetos), razonar y verificar usando evidencia visual, y actuar sobre interfaces web y de software traduciendo lo que ve a secuencias de acciones. Incorpora un encoder visual ViT con un proyector MLP de dos capas y VideoRoPE para codificar posición espacial y orden temporal, lo que habilita tareas de localización de eventos y preguntas sobre vídeos largos.
+
+Es relevante ahora porque combina una ventana de contexto muy amplia con un coste de inferencia bajo (5.5B activos), y porque su licencia MIT elimina las restricciones habituales de uso comercial de otros modelos multimodales de gran tamaño. El autor reporta una puntuación de 42 en el Artificial Analysis Intelligence Index v4.1.1, cuatro puntos por encima de Ling-3.0-flash (38), lo que sugiere que la extensión visual no degrada el rendimiento cognitivo del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE disperso con backbone hibrido de 42 capas (KDA y Gated MLA en ratio 5:1), encoder visual ViT + proyector MLP de dos capas, VideoRoPE |
-| Parametros totales | 124.848.460.496 (124B) |
-| Parametros activos | 5.5B por token |
-| Longitud de contexto | Hasta 1M tokens (configuracion recomendada de 256K con YaRN) |
-| Tipos de cuantizacion | BF16 y FP8 (segun la matriz de lanzamiento de SGLang) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer híbrido MoE con backbone de 42 capas (KDA + Gated MLA en ratio 5:1), encoder visual ViT y proyector MLP de 2 capas |
+| Parametros totales | 124.848.460.496 (124,8B) |
+| Parametros activos | 5,5B por token |
+| Longitud de contexto | 256K tokens (262.144), extensible mediante YaRN con factor 2.0 sobre 131.072 originales |
+| Tipos de cuantizacion | no disponible (el autor publica pesos en BF16 y menciona recetas FP8 para SGLang) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (custom_code, requiere `trust_remote_code`) |
 
 ## Arquitectura y entrenamiento
 
-Ling-3.0-flash-VL parte de la arquitectura de Ling-3.0-flash y le anade un encoder visual basado en un ViT que extrae caracteristicas de imagenes y videos, junto con un proyector MLP de dos capas que alinea esas caracteristicas con las representaciones de texto. El modelo incorpora VideoRoPE, que codifica tanto la posicion espacial como el orden temporal, permitiendo tareas como localizacion de eventos, respuesta a preguntas sobre videos largos y edicion de clips de video.
+El backbone es un transformer híbrido de 42 capas que alterna capas KDA (Kimi Delta Attention) y Gated MLA en una proporción 5:1. Esta combinación busca reducir el coste computacional del contexto largo manteniendo la calidad de atención, y es la que permite sostener 256K tokens sobre texto, imágenes, vídeos e historiales extensos de tareas de agente. Sobre ese backbone se monta una arquitectura MoE dispersa que mantiene la capacidad total en 124B parámetros mientras activa solo 5,5B por token.
 
-El backbone consta de 42 capas que alternan capas KDA y Gated MLA en una proporcion de 5:1, lo que permite un procesamiento eficiente de contextos largos en texto, imagenes, videos e historiales extensos de tareas de agentes. La arquitectura MoE dispersa mantiene la capacidad total de 124B parametros activando solo 5.5B por token. No se han proporcionado datos especificos sobre el conjunto de datos de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO. El modo de pensamiento (thinking mode) esta habilitado por defecto en la plantilla de chat.
+La parte multimodal consta de un encoder visual ViT que extrae características de imágenes y vídeos, y un proyector MLP de dos capas que alinea esas características con las representaciones textuales. Para vídeo se introduce VideoRoPE, que codifica posiciones espaciales y orden temporal simultáneamente, habilitando localización de eventos, QA sobre vídeos largos y edición de clips. El modelo card no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; esa información no está disponible. El modo thinking viene activado por defecto en la plantilla de chat y puede desactivarse por petición con `chat_template_kwargs: {"enable_thinking": false}`.
 
 ## Capacidades
 
-- Comprension multimodal nativa de imagenes y videos, incluyendo contaje de objetos, interpretacion de layouts complejos, graficos y contenido documental.
-- Razonamiento con evidencia visual: calculos y razonamiento multi-paso apoyados en informacion visual, asi como verificacion de informacion externa.
-- Capacidades de agente: comprende interfaces web y de software, y traduce informacion visual en secuencias de acciones.
-- Soporte de tool calling y function calling, con parser automatico de herramientas y razonamiento (`--tool-call-parser ling3`).
-- Comprension temporal de video gracias a VideoRoPE: localizacion de eventos, respuesta a preguntas sobre videos largos y edicion de clips de video.
-- Ventana de contexto de hasta 1M tokens, con soporte para historiales extendidos de tareas de agentes.
-- Razonamiento hibrido en modo pensamiento habilitado por defecto, con parametros recomendados de `temperature=0.6`, `top_p=0.95`, `top_k=20` segun la model card.
-- Soporte para deshabilitar el modo pensamiento por peticion mediante `enable_thinking: false` en los parametros de la plantilla de chat.
+- Generación de texto y razonamiento multi-paso con modo thinking activado por defecto.
+- Comprensión de imágenes: conteo de objetos, layouts complejos, gráficos y contenido de documentos.
+- Comprensión de vídeo con orden temporal: localización de eventos, QA sobre vídeos largos y edición de clips mediante VideoRoPE.
+- Razonamiento con evidencia visual: cálculo a partir de imágenes, verificación de información externa y cadenas de razonamiento apoyadas en lo que se ve.
+- Actuación sobre interfaces: interpretación de UI web y de software, y traducción de la información visual a secuencias de acciones.
+- Tool calling y function calling, con parser dedicado (`ling3`) resuelto automáticamente desde la plantilla de chat en SGLang.
+- Capacidades de agente y razonamiento multi-paso con historiales largos gracias a la ventana de 256K tokens.
+- Capacidades multilingües: no detalladas en la información disponible.
 
 ## Casos de uso
 
-- Analisis automatizado de documentos y graficos: el modelo puede interpretar graficos, layouts complejos y contenido de documentos, lo que permite extraer informacion de informes financieros, presentaciones corporativas o fichas tecnicas de manera automatizada y con razonamiento sobre el contenido.
-
-- Agentes de automatizacion de interfaz: al comprender interfaces web y de software, el modelo puede traducir capturas de pantalla en secuencias de acciones, facilitando la automatizacion de tareas repetitivas en aplicaciones de escritorio o web, como rellenar formularios, navegar por paneles de administracion o completar flujos de trabajo.
-
-- Respuesta a preguntas sobre videos largos: gracias a VideoRoPE y la ventana de contexto ampliada, el modelo puede localizar eventos concretos dentro de videos extensos y responder preguntas sobre el contenido temporal, util en tareas de revision de grabaciones de seguridad, analisis de contenido de archivo o monitorizacion de procesos.
-
-- Verificacion visual en procesos industriales: el modelo usa evidencia visual para realizar calculos y razonamiento multi-paso, lo que permite tareas de control de calidad donde se verifican medidas, posiciones o conformidades a partir de imagenes capturadas por camaras.
-
-- Asistentes de desarrollo de software: con soporte de tool calling y comprension de interfaces graficas, puede asistir en el desarrollo de aplicaciones analizando capturas de pantalla de entornos de desarrollo, interpretando resultados visuales de ejecuciones y ayudando a depurar comportamientos de la interfaz.
-
-- Edicion de clips de video por instrucciones: el modelo comprende los cambios visuales a lo largo del tiempo y puede editar fragmentos de video segun instrucciones en lenguaje natural, lo que agiliza tareas de postproduccion, generacion de resumenes visuales o curacion de contenido para plataformas de video.
-
-- Inventario y contaje de objetos: puede procesar escenas complejas para contar objetos y comprender disposiciones espaciales, siendo util en tareas de inventario logistico, control de stock en almacenes o analisis de aforo en eventos.
+- Automatización de atención al cliente con soporte visual: el modelo puede gestionar conversaciones multi-turno en las que el usuario adjunta capturas de pantalla o documentos, manteniendo el hilo gracias a los 256K tokens de contexto y razonando sobre la evidencia visual.
+- Agentes de navegación web: interpreta la interfaz renderizada, identifica controles y traduce lo que ve en secuencias de clics y entradas de texto, lo que encaja con flujos de automatización de back office y QA de aplicaciones.
+- Análisis de documentos y gráficos financieros: extrae y razona sobre tablas, charts y layouts complejos en informes, útil para pipelines de extracción de datos y verificación de cifras contra fuentes externas.
+- Procesamiento de vídeo de vigilancia o industria: con VideoRoPE puede localizar eventos en el tiempo y responder preguntas sobre clips largos, por ejemplo para auditoría de incidencias en planta o revisión de grabaciones.
+- Generación y revisión de código asistida por capturas: al combinar tool calling con comprensión de UI, puede integrarse en pipelines de CI/CD para interpretar errores visuales de tests end-to-end y proponer correcciones.
+- Asistentes de soporte técnico de software: el modelo entiende la pantalla del usuario y el historial largo de la incidencia, y puede verificar pasos de resolución consultando documentación mediante herramientas.
+- Moderación y anotación multimodal a escala: con solo 5,5B parámetros activos, el coste por token es bajo, lo que permite clasificar y describir grandes volúmenes de imágenes y vídeos en producción.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado |
-|---|---|
-| Artificial Analysis Intelligence Index v4.1.1 | 42 (mejora de 4 puntos sobre Ling-3.0-flash, que obtuvo 38) |
-| Terminal-Bench 2.1 | Evaluado bajo protocolo AA con el harness Terminus 2, timeout de 2 horas, parser JSON en modo preserve-thinking y 3 ejecuciones por tarea (media). Decodificacion con `temperature=1.0`, `max_new_tokens=32K` y ventana de 256K. |
+| Benchmark | Ling-3.0-flash-VL | Ling-3.0-flash |
+|---|---|---|
+| Artificial Analysis Intelligence Index v4.1.1 | 42 | 38 |
 
-No se han publicado resultados numericos detallados de benchmarks multimodales especificos (como MMLU, HumanEval, GSM8K o equivalentes de vision) en la informacion disponible. La model card incluye una figura con resultados de benchmarks multimodales, pero los valores concretos no se proporcionan en texto. El rendimiento real debe validarse con las evaluaciones propias del equipo.
+El autor menciona evaluaciones en benchmarks multimodales organizadas en tres dimensiones (comprender, razonar, actuar) y una evaluación en Terminal-Bench 2.1 bajo protocolo de Artificial Analysis con el harness Terminus 2, timeout unificado de 2 horas, parser JSON en modo preserve-thinking y 3 ejecuciones por tarea (media), con decodificación a temperature=1.0 y max_new_tokens=32K sobre contexto de 256K. Los valores numéricos de esos benchmarks no se incluyen en la información disponible; las cifras concretas están solo en las imágenes del model card, por lo que no se reproducen aquí.
 
 ## Requisitos de hardware
 
-- Para inferencia con 256K de contexto (configuracion YaRN): 4 GPUs de clase 141GB (H20-3e o H200) o nodos Blackwell de 4 GPUs (B300 o GB300).
-- Para GPUs de 80GB (H100 o H800): escalar a `--tp 8` (tensor parallel de 8).
-- Repositorio de pesos de 249.7GB, lo que implica requisitos de almacenamiento y ancho de banda de red considerables para la descarga del modelo.
-- Cuantizaciones disponibles: BF16 y FP8 segun la matriz de lanzamiento de SGLang, lo que permite ajustar el consumo de VRAM en funcion del hardware.
-- No es viable en GPUs de consumo (consumer GPU) debido al tamano del modelo y la necesidad de tensor parallel.
-- Despliegue recomendado con SGLang, usando la imagen de Docker `lmsysorg/sglang:dev-Ling-3.0-flash-VL` o la receta del SGLang cookbook.
-- Parametros de lanzamiento recomendados: `--context-length 262144`, `--mem-fraction-static 0.85`, `--trust-remote-code`, con `rope_scaling` de tipo YaRN (`factor=2.0`, `rope_theta=6000000`, `partial_rotary_factor=0.5`, `original_max_position_embeddings=131072`).
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: no disponible de forma explícita. Con 124,8B parámetros en BF16 el peso ronda los 250 GB (el repositorio ocupa 249,7 GB), por lo que la inferencia requiere agregación de memoria entre GPUs.
+- Configuración recomendada por el autor: 4 GPUs de clase 141 GB (H20-3e o H200) o nodos Blackwell de 4 GPUs (B300/GB300) con `--tp 4` para contexto de 256K con YaRN.
+- En tarjetas de 80 GB (H100/H800) el autor indica escalar a `--tp 8`.
+- No cabe en GPUs de consumo (RTX 4090, 24 GB) en BF16; no se han publicado recetas de cuantización para consumer.
+- Despliegue: SGLang es la vía documentada, con imagen Docker `lmsysorg/sglang:dev-Ling-3.0-flash-VL` y cookbook propio con matrices BF16/FP8 × baja latencia/alto throughput. No se mencionan recetas para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Modalidad | Licencia |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Multimodal |
 |---|---|---|---|---|---|
-| Ling-3.0-flash-VL | 124B | 5.5B | Hasta 1M | Texto + Imagen + Video | MIT |
-| Ling-3.0-flash | 124B | 5.1B | Hasta 1M (estimado) | Solo texto | MIT |
-| Ring-2.6-1T | 1T (clase) | No disponible | No disponible | No disponible | No disponible |
+| Ling-3.0-flash-VL | 124,8B | 5,5B | 256K | MIT | Imagen y vídeo |
+| Ling-3.0-flash | no disponible | no disponible | no disponible | no disponible | Solo texto |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Ling-3.0-flash-VL anade capacidades multimodales al modelo Ling-3.0-flash, con un incremento de 0.4B en los parametros activados por token (5.5B frente a 5.1B) y una mejora de 4 puntos en el Artificial Analysis Intelligence Index. No se dispone de datos de benchmarks ni de especificaciones detalladas para Ring-2.6-1T en la informacion proporcionada, por lo que la comparacion se limita a los datos disponibles del mismo proveedor.
+La información proporcionada solo permite comparar con Ling-3.0-flash, el modelo base del que deriva. No se dispone de datos de otros modelos comparables de tamaño y modalidad similares en el material consultado.
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos sobre sesgos conocidos ni evaluaciones de sesgos en la informacion disponible.
-- No se documentan los datos de entrenamiento, la composicion del dataset ni las tecnicas de alineacion utilizadas, lo que limita la trazabilidad del comportamiento del modelo.
-- Riesgo de alucinacion inherente a los modelos de lenguaje multimodal, no cuantificado ni documentado especificamente.
-- Los idiomas soportados no estan especificados, por lo que el rendimiento fuera del ingles o del chino (idiomas tipicos de inclusionAI) no puede garantizarse sin validacion previa.
-- Los requisitos de hardware son elevados: el modelo necesita entre 4 y 8 GPUs de alta gama, lo que implica costes de infraestructura significativos y descarta el despliegue en equipos de consumo o entornos con recursos limitados.
-- Aunque la licencia MIT permite uso comercial, deben verificarse las licencias de las dependencias y del codigo custom (el tag `custom_code` indica que se requiere codigo personalizado para cargar el modelo).
-- El rendimiento en benchmarks reales debe validarse en el entorno de produccion de cada equipo, ya que los resultados publicados se limitan a indices agregados sin desglose numerico detallado.
+- El model card no documenta sesgos conocidos; al ser un modelo entrenado sobre datos web es esperable que herede sesgos de esos datos, pero no hay evaluación publicada al respecto.
+- Riesgo de alucinación: no se reportan tasas de alucinación ni evaluaciones de fidelidad factual; el modo thinking activado por defecto puede generar cadenas de razonamiento largas que no siempre convergen a una respuesta correcta.
+- Idiomas soportados no especificados: no hay garantía documentada de calidad fuera de los idiomas del entrenamiento, que tampoco se detallan.
+- La ventana de 256K requiere configuración explícita de YaRN (`rope_type: yarn`, factor 2.0, rope_theta 6000000, partial_rotary_factor 0.5); sin ella el contexto efectivo se limita a 131.072 tokens.
+- El modelo usa `custom_code` y exige `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar antes de desplegar en producción.
+- Licencia MIT: permite uso comercial sin restricciones adicionales, pero no se ofrece garantía ni indemnización por parte del autor.
+- Requiere hardware de gama alta (4-8 GPUs de 80-141 GB); no hay recetas publicadas para cuantización en GPUs de consumo, lo que limita su despliegue en entornos pequeños.
+- No se detallan los datos de entrenamiento ni si hubo alineación con RLHF/DPO, lo que dificulta evaluar la robustez frente a prompts adversarios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
-- Modelo base Ling-3.0-flash: https://huggingface.co/inclusionAI/Ling-3.0-flash
-- Organizacion inclusionAI en Hugging Face: https://huggingface.co/inclusionAI
-- Organizacion inclusionAI en ModelScope: https://modelscope.cn/organization/inclusionAI
-- Recetas de despliegue en SGLang: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL
+- Organización en Hugging Face: https://huggingface.co/inclusionAI
+- Organización en ModelScope: https://modelscope.cn/organization/inclusionAI
+- Cookbook de SGLang para Ling-3.0-flash-VL: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL

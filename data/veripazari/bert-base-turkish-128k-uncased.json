@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "veripazari/bert-base-turkish-128k-uncased",
+  "slug": "veripazari-bert-base-turkish-128k-uncased",
+  "author": "veripazari",
+  "url": "https://huggingface.co/veripazari/bert-base-turkish-128k-uncased",
+  "created_at": "2026-11-18T06:44:30.000Z",
+  "updated_at": "2026-11-18T06:44:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "bert",
+    "tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 185067010,
+  "parameters_human": "185.1M",
+  "storage_bytes": 3353354152,
+  "storage_human": "3.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

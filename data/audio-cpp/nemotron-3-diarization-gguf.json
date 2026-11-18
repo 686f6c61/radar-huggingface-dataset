@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 21,
-  "downloads_30d": 97838,
+  "downloads_30d": 99704,
   "trending_score": 11,
   "parameters": 99263443,
   "parameters_human": "99.3M",
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Audiofanzine : Home Studio, MAO, Guitares, Basses, Sono et DJ",
-      "url": "https://fr.audiofanzine.com/",
-      "snippet": "Audiofanzine est une plateforme en ligne dédiée à la musique et à l’audio, à la fois média spécialisé, site de petites annonces, base …"
-    },
-    {
-      "title": "audio.com - a better way to upload and share audio online",
-      "url": "https://audio.com/",
-      "snippet": "audio.com is a free audio-sharing platform designed to empower audio creatives and musicians"
-    },
-    {
-      "title": "Audiomack - Music platform empowering artists & fans | Audiomack",
-      "url": "https://audiomack.com/",
-      "snippet": "Audiomack is an on-demand music streaming and audio discovery platform that allows artists and creators to upload limitless music …"
-    },
-    {
-      "title": "Télécharger Realtek HD Audio Drivers (gratuit) Windows - Clubic",
-      "url": "https://www.clubic.com/telecharger-fiche600046-realtek-hd-audio-drivers.html",
-      "snippet": "Sep 14, 2026 · Realtek HD Audio Drivers est un pack de pilotes audio pour Windows qui permet d’exploiter pleinement les codecs …"
-    },
-    {
-      "title": "Son-Vidéo.com, leader français en hi-fi et home-cinéma",
-      "url": "https://www.son-video.com/",
-      "snippet": "Son-Vidéo.com est le leader français en hi-fi et home-cinéma. Conseils, guides, avis : pour acheter facilement votre équipement en …"
-    }
-  ]
+  "sources": []
 }

@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 171,
-  "downloads_30d": 3280,
+  "downloads_30d": 3190,
   "trending_score": 10,
   "parameters": 421293830,
   "parameters_human": "421.3M",
@@ -52,45 +52,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "System One Decision Benchmark",
-      "dataset": "Typed Decisions",
-      "metric": null,
-      "value": 0.766
-    },
-    {
-      "task": "System One Decision Benchmark",
-      "dataset": "Typed Decisions",
-      "metric": null,
-      "value": 0.066
-    }
-  ],
-  "sources": [
-    {
-      "title": "Construction Equipment & Used Heavy Machinery for sale | MachineryZone",
-      "url": "https://www.machineryzone.com/",
-      "snippet": "Present in more than 20 countries, the Machineryzone site specialises in the sale and purchase of used and new public works, …"
-    },
-    {
-      "title": "AMT Advertising - mbline.com",
-      "url": "https://www.mbline.com/en/",
-      "snippet": "Agriaffaires - MachineryZone - Truckscorner As European leaders, our Internet marketplaces Agriaffaires, Machineryzone and …"
-    },
-    {
-      "title": "AMT Advertising - mb-line.de",
-      "url": "https://mb-line.de/en/",
-      "snippet": "Agriaffaires - MachineryZone - Truckscorner As European leaders, our Internet marketplaces Agriaffaires, Machineryzone and …"
-    },
-    {
-      "title": "mbline.com - AMT Advertising",
-      "url": "https://www.mbline.com/",
-      "snippet": "Leaders en Europe, nos places de marchés agriaffaires, machineryzone et truckscorner sont aujourd’hui présentes dans plus de 25 …"
-    },
-    {
-      "title": "All ads of used & new heavy equipment - MachineryZone",
-      "url": "https://www.machineryzone.com/sitemap.html",
-      "snippet": "MachineryZone - used construction equipment & heavy machinery : excavators, dozers, loaders, forklifts, dumpers, skid steers, …"
-    }
-  ]
+  "benchmarks": [],
+  "sources": []
 }

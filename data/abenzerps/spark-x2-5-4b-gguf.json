@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 28,
-  "downloads_30d": 331934,
+  "downloads_30d": 334604,
   "trending_score": 9,
   "parameters": 4112079360,
   "parameters_human": "4.11B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Spark-X2.5/README.md at main · XHToken/Spark-X2.5 · GitHub",
-      "url": "https://github.com/XHToken/Spark-X2.5/blob/main/README.md",
-      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
-    },
-    {
-      "title": "Quantized Models for XHToken/Spark-X2.5-4B - Hugging Face",
-      "url": "https://huggingface.co/models?other=base_model:quantized:XHToken/Spark-X2.5-4B",
-      "snippet": "Active filters: XHToken/Spark-X2.5-4B. Clear all. XHToken/Spark-X2.5-4B-GGUF. Text Generation • 4B • Updated 4 days ago • 4 • 1"
-    },
-    {
-      "title": "GGUF-Models (GGUF) - Hugging Face",
-      "url": "https://huggingface.co/GGUF-Models",
-      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
-    },
-    {
-      "title": "GGUF Model Discovery - Browse & Download AI Models",
-      "url": "https://local-ai-zone.github.io/",
-      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
-    },
-    {
-      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
-      "url": "https://github.com/IBM/gguf",
-      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
-    }
-  ]
+  "sources": []
 }

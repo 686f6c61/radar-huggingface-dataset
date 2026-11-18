@@ -2,91 +2,91 @@
 
 ## Resumen
 
-SASA (Subspace-Aware Sparse Autoencoders) para GPT-2 small es un conjunto de autoencoders dispersos publicados por Seyed Arshan Dalili y Mehrdad Mahdavi en el articulo *Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability* (NeurIPS 2026). No es un modelo de lenguaje generativo, sino un artefacto de interpretabilidad mecanica: una coleccion de SAEs entrenados sobre el flujo residual que entra en el bloque 7 de GPT-2 small, con el objetivo de descomponer las activaciones internas en caracteristicas interpretables.
+SASA (Subspace-Aware Sparse Autoencoders) es una familia de autoencoders dispersos preentrenados para GPT-2 small, publicada por Seyed Arshan Dalili y Mehrdad Mahdavi (NeurIPS 2026). El modelo resuelve un problema clasico de la interpretabilidad mecanistica: los autoencoders dispersos convencionales representan cada caracteristica con una unica direccion del espacio de activaciones, lo que impide capturar estructuras que requieren mas de una dimension, como los dias de la semana o relaciones composicionales. SASA representa cada caracteristica mediante un pequeno grupo de direcciones que se activan conjuntamente, permitiendo capturar estructura multidimensional.
 
-El repositorio incluye la arquitectura propuesta (SASA, con `topk_sasa`) junto con las lineas base con las que se compara: TopK, BatchTopK y Matryoshka SAEs, todas entrenadas sobre las mismas activaciones. Las variantes cubren anchos de diccionario de 12.288 a 49.152 columnas y valores de l0 entre 30 y 240, lo que permite estudiar el compromiso entre esparsidad, reconstruccion e interpretabilidad.
+El repositorio incluye los checkpoints SASA entrenados sobre la corriente residual de GPT-2 small antes del bloque 7 (`blocks.7.hook_resid_pre`, 768 dimensiones), junto con las lineas base TopK, BatchTopK y Matryoshka empleadas en el articulo. Es relevante ahora porque ofrece una alternativa practica y reproducible a los SAE clasicos dentro del ecosistema SAELens, con codigo abierto y pesos publicados bajo licencia MIT.
 
-La relevancia es metodologica: SASA sustituye cada atomo decodificador unidimensional de un SAE clasico por un subespacio decodificador aprendido y aplica una esparsidad de grupo Top-s junto con un regularizador de norma nuclear. El paquete se distribuye con licencia MIT y se integra con `sae_lens` 6.25, lo que facilita su reproducibilidad y su uso en flujos de trabajo existentes de interpretabilidad.
+El modelo no es un modelo generativo: es una herramienta de extraccion de caracteristicas (pipeline `feature-extraction`) que se aplica sobre activaciones de GPT-2 para descomponerlas en caracteristicas interpretables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sparse autoencoder con subespacios decodificadores aprendidos (SASA, `topk_sasa`); lineas base TopK, BatchTopK y Matryoshka |
-| Parametros totales | no disponible (depende de la variante; el diccionario va de 12.288 a 49.152 columnas) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica al SAE; las activaciones se extraen de GPT-2 small con contexto 128 |
+| Arquitectura | Autoencoder disperso con representacion por subespacios (grupos de direcciones); modelo base GPT-2 small |
+| Parametros totales | no disponible (depende del checkpoint; el repo ocupa 7,9 GB en total) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (opera sobre activaciones; entrenado con secuencias de 128 tokens) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el modelo subyacente es GPT-2 small; el corpus de entrenamiento es OpenWebText) |
+| Idiomas soportados | no disponible (hereda el comportamiento del GPT-2 subyacente) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (carga via `sae_lens`; tamano del repo 7,9 GB) |
+| Formato de pesos | `safetensors` (`sae_weights.safetensors`) mas configuracion `cfg.json` por checkpoint |
 
 ## Arquitectura y entrenamiento
 
-SASA modifica el SAE clasico en dos puntos. En primer lugar, cada atomo decodificador unidimensional se reemplaza por un subespacio decodificador aprendido de rango `r` (valores 2, 4, 6 u 8 en las variantes publicadas). En segundo lugar, la esparsidad se impone a nivel de grupo mediante Top-s: un grupo es un conjunto de `r` columnas consecutivas y su activacion se define como la norma de su codigo, de modo que se abren los `s` grupos mayores de cada token y el l0 efectivo resulta `s · r`. Ademas, se anade un regularizador de norma nuclear que favorece subespacios de bajo rango y bien condicionados.
+SASA es un autoencoder disperso que, en lugar de asignar una unica direccion del diccionario a cada caracteristica, asigna un grupo de `r` direcciones que se activan conjuntamente. En el checkpoint de referencia `sasa_r6_l0120_w24576`, cada grupo consta de 6 direcciones (`r6`), se activan 120 direcciones decodificadoras por token (20 grupos de 6, `l0120`) y el diccionario total contiene 24.576 direcciones (`w24576`). La esparsidad se controla a nivel de grupo: se seleccionan los 20 grupos con mayor norma de activacion por token, medible con `groups.norm(dim=-1)`.
 
-El entrenamiento se realiza sobre el flujo residual de entrada al bloque 7 de GPT-2 small, con activaciones extraidas de OpenWebText y contexto de 128 tokens. La mayoria de variantes usan 300 millones de tokens de entrenamiento; la variante `sasa_topk_r6_l060_w12288`, empleada para la comparacion con el SAE de GPT-2 de Bloom (2024), usa 150 millones. Las lineas base TopK, BatchTopK y Matryoshka se entrenan con el mismo presupuesto, y BatchTopK y Matryoshka se almacenan como SAEs JumpReLU con su umbral aprendido. No se documentan fases de RLHF ni DPO, al no tratarse de un modelo generativo.
+El entrenamiento se realizo sobre activaciones de la corriente residual de GPT-2 small antes del bloque 7 (`blocks.7.hook_resid_pre`, dimension de entrada 768), usando OpenWebText con secuencias de 128 tokens y 300 millones de tokens por modelo (150 millones para el checkpoint `sasa_topk_r6_l060_w12288`). La publicacion cubre diccionarios de 12.288, 24.576 y 49.152 direcciones totales, con ajustes de esparsidad entre 30 y 240 direcciones activas. El repositorio incluye tambien las lineas base TopK, BatchTopK y Matryoshka con la misma convencion de nombres; en BatchTopK y Matryoshka la esparsidad es un objetivo de entrenamiento y el numero de direcciones activas puede variar en inferencia. Se integra con SAELens 6.25.
 
 ## Capacidades
 
-- Descomposicion de activaciones del flujo residual del bloque 7 de GPT-2 small en caracteristicas dispersas mediante `sae.encode(h)`.
-- Reconstruccion aproximada de la activacion original a partir del codigo disperso con `sae.decode(codes)`.
-- Analisis de caracteristicas agrupadas: cada grupo de `r` columnas consecutivas forma una unidad interpretable cuya activacion es la norma de su codigo.
-- Control explicito de la esparsidad mediante el parametro l0 (de 30 a 240 columnas activas por token) y del ancho del diccionario (12.288, 24.576 o 49.152 columnas).
-- Barrido sistematico de rangos (`r` = 2, 4, 6, 8) para estudiar el efecto del tamano del subespacio en la calidad de las caracteristicas.
-- Comparacion directa contra lineas base TopK, BatchTopK y Matryoshka entrenadas bajo el mismo protocolo.
-- Integracion con `sae_lens` 6.25 mediante el registro automatico de las arquitecturas SASA al importar el paquete `sasa`.
-- No soporta generacion de texto, tool calling, agentes ni capacidades multimodales: es un artefacto de interpretabilidad, no un modelo de proposito general.
+- Extraccion de caracteristicas interpretables a partir de activaciones de GPT-2 small en la capa 7.
+- Descomposicion de activaciones en grupos de direcciones que capturan estructura multidimensional (por ejemplo, dias de la semana).
+- Codificacion y decodificacion de activaciones: `sae.encode(h)` produce codigos y `sae.decode(codes)` reconstruye la activacion.
+- Medicion de fuerza de activacion por grupo mediante la norma del grupo (`groups.norm(dim=-1)`).
+- Comparacion controlada con lineas base TopK, BatchTopK y Matryoshka bajo la misma convencion de tamano y esparsidad.
+- Integracion con el ecosistema SAELens (registro del modelo al importar `sasa`).
+- No soporta generacion de texto, tool calling, agentes, vision ni audio: es una herramienta de analisis, no un modelo de proposito general.
 
 ## Casos de uso
 
-- Analisis de circuitos en GPT-2 small: extraer activaciones del bloque 7 sobre un corpus de interes, codificarlas con `sasa_r6_l0120_w24576` y estudiar que grupos se activan por token para localizar caracteristicas asociadas a conceptos concretos.
-- Investigacion en interpretabilidad comparada: usar las variantes SASA y las lineas base TopK, BatchTopK y Matryoshka del mismo repositorio para medir, con identico protocolo de entrenamiento, que arquitectura produce caracteristicas mas monosemanticas.
-- Estudio del compromiso esparsidad-reconstruccion: barrer `sasa_r2_l030_w12288` hasta `sasa_r2_l0240_w12288` manteniendo fijo el ancho del diccionario para trazar curvas de reconstruccion frente a l0.
-- Audicion de caracteristicas antes de editar el modelo: identificar grupos activos en prompts problematicos y documentar sesgos o comportamientos indeseados de GPT-2 a nivel de caracteristica.
-- Reproduccion de resultados academicos: el codigo en `github.com/arshandalili/sasa` permite reentrenar y verificar las cifras del articulo de NeurIPS 2026 sobre GPT-2.
-- Docencia y formacion: servir como ejemplo practico de SAE con subespacios en cursos de interpretabilidad mecanica, gracias a la API de `sae_lens` y a la disponibilidad de variantes con distinto rango y esparsidad.
-- Extension a otros modelos: reutilizar el paquete `sasa` como referencia de implementacion para entrenar SAEs con subespacios sobre las activaciones de modelos mayores.
+- Interpretabilidad mecanistica de GPT-2: analizar que caracteristicas aprende la corriente residual antes del bloque 7, descomponiendo activaciones en grupos de direcciones interpretables.
+- Investigacion sobre representaciones multidimensionales: estudiar fenomenos como los dias de la semana o relaciones composicionales que un SAE de una sola direccion no captura bien.
+- Comparacion de metodos de esparsidad: evaluar SASA frente a TopK, BatchTopK y Matryoshka con la misma convencion de tamano y esparsidad sobre el mismo conjunto de activaciones.
+- Auditoria de modelos: identificar caracteristicas activadas por entradas concretas para detectar comportamientos o sesgos en GPT-2 small.
+- Docencia y divulgacion: usar los checkpoints publicados para demostrar tecnicas de SAE en cursos de interpretabilidad, gracias a la licencia MIT y a la integracion con SAELens.
+- Reproducibilidad de resultados academicos: replicar los experimentos del articulo de NeurIPS 2026 con los pesos y el codigo publicados.
+- Analisis de activaciones en pipelines de investigacion: integrar la codificacion/decodificacion de SASA en flujos que ya usan SAELens para estudiar representaciones internas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card describe la cuadricula de variantes (arquitectura, columnas, rango, grupos por token, l0 y tokens de entrenamiento) y remite al articulo de NeurIPS 2026 para las metricas comparativas, pero no incluye cifras numericas de reconstruccion, interpretabilidad ni comparaciones cuantitativas con las lineas base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al articulo (arXiv 2606.06333) para las comparaciones experimentales, pero no incluye cifras en el texto proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repo ocupa 7,9 GB e incluye mas de 50 SAEs; cada variante individual es mucho menor, pero no se publica el desglose por fichero.
-- GPU recomendadas: no disponible. Para codificar activaciones de GPT-2 small (124 M parametros) basta una GPU consumer, pero no se documentan requisitos oficiales.
-- Cabe en GPU consumer: previsiblemente si para el modelo subyacente y para SAEs individuales, aunque no se confirma en la informacion disponible.
-- Opciones de despliegue: `sae_lens` 6.25 con el paquete `sasa` importado para registrar las arquitecturas; las lineas base TopK, BatchTopK y Matryoshka se cargan como SAEs estandar de `sae_lens`.
-- Latencia y throughput estimados: no disponible.
+- El repositorio completo ocupa 7,9 GB; cada checkpoint individual contiene su `cfg.json` y `sae_weights.safetensors`.
+- El checkpoint de referencia `sasa_r6_l0120_w24576` opera sobre activaciones de 768 dimensiones con 24.576 direcciones decodificadoras; su huella en memoria es muy inferior a la de un LLM, aunque no se especifica el numero exacto de parametros por checkpoint.
+- La inferencia requiere ejecutar GPT-2 small (aproximadamente 124 millones de parametros) para obtener las activaciones de la capa 7, ademas del propio SAE.
+- Cabe en GPU de consumo: GPT-2 small y un SAE de este tamano se ejecutan sin problema en tarjetas con 8 GB o menos; tambien es viable en CPU para analisis por lotes pequenos.
+- Despliegue mediante la libreria `saelens` (version 6.25) junto con el paquete `sasa` del repositorio de codigo; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- No se dispone de datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Columnas | l0 | Tokens de entrenamiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| SASA (este repo) | `topk_sasa` con subespacios | 12.288-49.152 | 30-240 | 300 M (150 M en una variante) | MIT | Hugging Face + GitHub |
-| TopK SAE (este repo) | SAE TopK clasico | 12.288-49.152 | 30-240 | 300 M | MIT | Hugging Face |
-| BatchTopK SAE (este repo) | SAE BatchTopK (JumpReLU) | 12.288-49.152 | 30-240 | 300 M | MIT | Hugging Face |
-| Matryoshka SAE (este repo) | SAE Matryoshka (JumpReLU) | 12.288-49.152 | 30-240 | 300 M | MIT | Hugging Face |
-| SAE de GPT-2 de Bloom (2024) | SAE de referencia externo | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Tipo | Modelo base | Direcciones por caracteristica | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| SASA (este repo) | SAE con subespacios | GPT-2 small, capa 7 | 6 por grupo | MIT | Hugging Face, codigo en GitHub |
+| TopK (linea base incluida) | SAE TopK | GPT-2 small, capa 7 | 1 | MIT | Incluida en este repo |
+| BatchTopK (linea base incluida) | SAE BatchTopK | GPT-2 small, capa 7 | 1 | MIT | Incluida en este repo |
+| Matryoshka (linea base incluida) | SAE Matryoshka | GPT-2 small, capa 7 | 1 | MIT | Incluida en este repo |
+| SASA Mistral-7B | SAE con subespacios | Mistral-7B, capa 8 | 6 por grupo | no disponible | Hugging Face (repo separado) |
 
-La comparacion relevante es interna al repositorio: SASA frente a TopK, BatchTopK y Matryoshka con identico modelo base, capa y presupuesto de entrenamiento. El SAE de Bloom (2024) se cita como referencia externa para la variante `sasa_topk_r6_l060_w12288`, pero no se detallan sus especificaciones en la informacion disponible.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada; las diferencias cuantitativas se detallan en el articulo de NeurIPS 2026.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto ni responde a prompts; su unico uso es el analisis de activaciones internas de GPT-2 small.
-- Esta atado a una capa concreta (bloque 7, `blocks.7.hook_resid_pre`) y a un modelo concreto (GPT-2 small); no es transferible directamente a otras capas o modelos.
-- Las activaciones de entrenamiento se extrajeron con contexto de 128 tokens y sobre OpenWebText, lo que limita la distribucion de caracteristicas aprendidas a ese regimen.
-- El sesgo del SAE hereda en parte el sesgo del corpus OpenWebText y el de GPT-2 small; no se documentan analisis de sesgo especificos.
-- Riesgo de caracteristicas espurias o polisemanticas: la interpretabilidad de los grupos no esta garantizada y requiere validacion manual.
-- No se publican metricas de reconstruccion ni de interpretabilidad en la model card, por lo que la evaluacion cualitativa queda en manos del articulo.
-- La licencia MIT permite uso comercial del codigo y los pesos, pero no se especifican restricciones adicionales ni condiciones de atribucion mas alla de la licencia.
-- El repositorio agrupa mas de 50 SAEs en 7,9 GB; la seleccion de la variante adecuada exige conocer el compromiso rango/esparsidad/ancho, que no se resume en la model card.
-- Dependencia de `sae_lens` 6.25 y del paquete `sasa` del repositorio; cambios de version pueden romper la carga de las arquitecturas.
+- No es un modelo generativo: no puede usarse para texto, codigo, matematicas ni conversacion; solo analiza activaciones de GPT-2 small en la capa 7.
+- Esta acoplado a una ubicacion concreta de activaciones (`blocks.7.hook_resid_pre`) y a la dimension 768 de GPT-2 small; no es transferible directamente a otros modelos o capas.
+- Entrenado exclusivamente con OpenWebText en ingles y secuencias de 128 tokens; el comportamiento fuera de esa distribucion no esta caracterizado.
+- No se documentan sesgos especificos del SAE, pero hereda los sesgos del corpus OpenWebText y de GPT-2 small.
+- Las caracteristicas extraidas son aproximaciones: la reconstruccion no es perfecta y la interpretacion de grupos requiere validacion manual, con riesgo de atribuir significado erroneo a direcciones.
+- En BatchTopK y Matryoshka el numero de direcciones activas puede variar en inferencia, lo que complica comparaciones directas de esparsidad.
+- La licencia MIT permite uso comercial, pero no se ofrece garantia alguna sobre la calidad o idoneidad de las caracteristicas extraidas.
+- Requiere la version 6.25 de SAELens y el paquete `sasa` del repositorio de codigo; no funciona como un SAE estandar sin esa dependencia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/arshandalili/sasa-gpt2-layer7
-- Repositorio de codigo: https://github.com/arshandalili/sasa
-- Paquete `sasa`: https://github.com/arshandalili/sasa/tree/main/sasa
-- Articulo: Dalili, S. A. y Mahdavi, M., *Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability*, NeurIPS 2026 (referencia bibliografica en la model card; no se proporciona URL directa)
+- Modelo en Hugging Face: https://huggingface.co/arshandalili/sasa-gpt2-layer7
+- Checkpoints (pestana Files): https://huggingface.co/arshandalili/sasa-gpt2-layer7/tree/main
+- Articulo (arXiv 2606.06333): https://huggingface.co/papers/2606.06333
+- Codigo y experimentos: https://github.com/arshandalili/sasa
+- Release para Mistral-7B: https://huggingface.co/arshandalili/sasa-mistral-7b-layer8

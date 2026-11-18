@@ -9,10 +9,13 @@
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "diffusers",
   "languages": [],
   "tags": [
+    "diffusers",
     "onnx",
+    "safetensors",
+    "gguf",
     "region:us"
   ],
   "likes": 1,
@@ -25,7 +28,10 @@
   "context_length": 262144,
   "base_model": null,
   "formats": [
-    "onnx"
+    "diffusers",
+    "gguf",
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

@@ -2,95 +2,94 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ1_M-NInfer-v3 es un artefacto de inferencia (formato NInfer v3) creado por WaveCut a partir de la cuantización GGUF IQ1_M que ISTA-DASLab publicó del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek AI. Se trata de un modelo de mezcla de expertos (MoE) multimodal de 763 mil millones de parámetros totales, del que solo una fracción se activa por token, cuantizado a aproximadamente 1,75 bits por peso sobre los 551,9 mil millones de parámetros del backbone. El resultado es un único archivo de 117,18 GiB capaz de ejecutarse sobre una sola GPU de 24 GB, con los expertos enrutados en memoria de host anclada (pinned) o transmitidos desde disco.
+DeepSeek-V4.1-Flash-1017 es un modelo de mezcla de expertos (MoE) de gran escala desarrollado por DeepSeek, con 763.000 millones de parámetros totales. Su arquitectura combina 40 bloques de 384 expertos enrutados (6 activos por token) más un experto compartido, hyper-conexiones de cuatro flujos, atención latente sobre una ventana de 128 posiciones con latentes comprimidos seleccionados por indexador, dos bloques Engram que añaden filas de una tabla de n-gramas de 196.600 millones de parámetros y una torre de visión que convierte cada imagen en un tramo de posiciones de prompt. El artefacto aquí descrito es una conversión de terceros (WaveCut) sobre la cuantización GGUF de ISTA-DASLab, empaquetada para el motor NInfer v3 con un peso medio de 1,75 bits por parámetro sobre los 551.900 millones de parámetros del backbone.
 
-El problema que resuelve es claro: hacer ejecutable un modelo gigante en hardware de consumo. Gracias a la cuantización extrema por bloques GGML, al motor NInfer (que multiplica los bloques in situ) y al decodificador especulativo DSpark incluido, el modelo funciona en tarjetas como la RTX 3090 o la RTX 4090 manteniendo capacidades de visión, tool calling y razonamiento. Es relevante para desarrolladores que quieren experimentar con un modelo frontera MoE sin acceso a clústeres de GPU, aunque con las limitaciones de calidad que implica una cuantización de 1-2 bits.
+El modelo resuelve el problema de ejecutar un MoE de escala frontera en hardware de consumo: gracias a la cuantización mixta (IQ1_S, IQ1_M, IQ2_XXS, IQ2_S en expertos enrutados; Q5_K en expertos compartidos y cabezas; FP32 en routers, compresores e indexadores) y a la gestión de expertos en memoria anfitriona fijada o en streaming desde el fichero, NInfer puede servir el modelo en una única GPU de 24 GB con hasta ocho peticiones concurrentes. Es relevante ahora porque demuestra que un MoE de más de 700.000 millones de parámetros puede desplegarse en estaciones de trabajo con RTX 3090, RTX 4090, RTX 5090 o RTX Pro 6000, manteniendo razonamiento, tool calling, salida estructurada, visión y decodificación especulativa.
+
+El artefacto incluye el drafter DSpark en formato STQ (tres bloques `mtp.0..2`) para decodificación especulativa y la torre de visión en BF16, pero no incluye la tabla Engram, que se distribuye como descarga separada y compartida por todas las conversiones NInfer de este modelo. El fichero principal ocupa 125.824.667.392 bytes (117,18 GiB), de los cuales 106,69 GiB corresponden a los expertos enrutados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer con hyper-conexiones de cuatro flujos, atención latente con ventana de 128 posiciones más latentes comprimidos seleccionados por indexador, bloques Engram (tabla n-grama) y torre de visión |
-| Parametros totales | 763B (backbone de 551,9B + torre de visión + tabla Engram de 196,6B) |
-| Parametros activos | no disponible (6 expertos enrutados activos por token de 384, más 1 experto compartido) |
-| Longitud de contexto | no disponible (ventana de atención local de 128 posiciones más latentes comprimidos) |
-| Tipos de cuantizacion | IQ1_S (55 bancos), IQ1_M (12), IQ2_XXS (11), IQ2_S (2) para expertos; Q5_K para expertos compartidos, token table y output head; Q8_0 y Q5_K en atención latente; FP32 en router, normas y compresores; STQ (2-4 bits) en el drafter DSpark |
+| Arquitectura | MoE transformer con atención latente, hyper-conexiones de cuatro flujos y bloques Engram (n-gramas) |
+| Parametros totales | 763.000 millones (551.900 millones en el backbone) |
+| Parametros activos | 6 de 384 expertos enrutados por token, más experto compartido (número exacto de parámetros activos no disponible) |
+| Longitud de contexto | Ventana de atención latente de 128 posiciones más latentes comprimidos seleccionados por indexador (longitud total de contexto no disponible) |
+| Tipos de cuantizacion | IQ1_S (55 de 80 bancos), IQ1_M (12), IQ2_XXS (11), IQ2_S (2) en expertos enrutados; Q5_K en expertos compartidos, proyecciones Engram, tabla de tokens y cabeza de salida; Q8_0 en down-projections de query y latentes; FP32 en routers, compresores, indexadores, matrices de hyper-conexión, normas y sumideros de atención; STQ en el drafter DSpark; BF16 en la torre de visión |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | NInfer v3 (archivo único de 117,18 GiB), derivado de GGUF; tabla Engram aparte en IQ4_NL |
+| Formato de pesos | `.ninfer` (artefacto propietario de NInfer v3, derivado de GGUF); repo de 505,8 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, DeepSeek-V4.1-Flash-1017, es un transformer MoE de 40 bloques con 384 expertos enrutados por bloque, de los que se activan 6 por token, además de un experto compartido. Incorpora varias innovaciones destacables: hyper-conexiones de cuatro flujos, atención latente con una ventana local de 128 posiciones complementada por latentes comprimidos seleccionados mediante un indexador, dos bloques Engram que añaden filas de una tabla de n-gramas de 196,6B parámetros, y una torre de visión que convierte cada imagen en un tramo de posiciones del prompt. El pipeline incluye decodificación especulativa mediante el drafter DSpark de tres bloques (mtp.0..2), distribuido en formato STQ.
+La arquitectura es un transformer MoE con 40 bloques, cada uno con 384 expertos enrutados de los que se activan 6 por token, más un experto compartido. Incorpora hyper-conexiones de cuatro flujos, atención latente sobre una ventana de 128 posiciones con latentes comprimidos seleccionados por un indexador, y dos bloques Engram que añaden filas de una tabla de n-gramas de 196.600 millones de parámetros. La torre de visión transforma cada imagen en un tramo de posiciones de prompt mediante un aligner. El modelo base incluye además un drafter DSpark de tres bloques (`mtp.0..2`) para decodificación especulativa.
 
-Sobre el entrenamiento del modelo original (número de tokens, composición del dataset, RLHF/DPO) no hay datos disponibles en la información proporcionada. En cuanto a la cuantización, el repositorio base de ISTA-DASLab aplica el esquema GSQ-RCO a 1,75 bits por peso sobre el backbone; el artefacto de WaveCut conserva cada tensor GGML byte a byte y amplía a FP32 los routers, compresores, indexadores, matrices de hyper-conexión y normas, ya que FP32 representa exactamente sus valores BF16/F16 originales. La conversión a NInfer v3 tardó 6 minutos y 23 segundos en los 96 hilos de un EPYC 7K62 de 48 núcleos.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La conversión de WaveCut preserva los bloques ggml byte a byte y el motor multiplica los bloques in situ; los routers, compresores, indexadores y matrices de hyper-conexión se ensancharon de BF16/F16 a FP32 (que los representa exactamente). El drafter DSpark se tomó del pack Sushi de beamster en formato STQ (palabras trellis `uint16`, 2 bits por peso en los 128 expertos enrutados de cada bloque y 4 bits en las demás matrices, con vectores de signo Hadamard en FP16 y tablas de Markov en BF16). La torre de visión proviene del `mmproj-DeepSeek-V4.1-Flash-1017-BF16.gguf` de ISTA-DASLab, con matrices en BF16 y parámetros de patch embedding, normas, sesgos y filas aprendidas en FP32.
 
 ## Capacidades
 
-- Generación de texto y razonamiento, con soporte de salida de razonamiento (reasoning) gestionada por el motor NInfer.
-- Comprensión de imágenes (pipeline image-text-to-text): la torre de visión convierte cada imagen en posiciones del prompt; se activa con la opción `--vision` (0,90 GiB adicionales de VRAM).
-- Tool calling: las llamadas DSML se devuelven como tool calls en formato OpenAI.
-- Agentes y multi-step reasoning: hasta ocho peticiones concurrentes, reutilización de prefijo de prompt y drafting por búsqueda de contexto (context-lookup drafting).
-- Decodificación especulativa con el drafter DSpark (`--spec dspark`), que añade 3,58 GiB de VRAM cuando está activo.
-- Salida estructurada (structured output).
-- Multilingüismo: no disponible en la información proporcionada.
+- Generación de texto y razonamiento multi-paso, con soporte de modo de razonamiento explícito.
+- Tool calling en formato DSML devuelto como tool calls compatibles con OpenAI.
+- Salida estructurada.
+- Procesamiento de imágenes mediante la torre de visión (`--vision`), con pipeline `image-text-to-text`.
+- Decodificación especulativa con el drafter DSpark (`--spec dspark`) y drafting por búsqueda en contexto.
+- Reutilización de prefijos de prompt.
+- Hasta ocho peticiones concurrentes por instancia.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Experimentación local con modelos frontera: permite ejecutar un MoE de 763B en una RTX 3090 o 4090 de 24 GB, ideal para desarrolladores que quieren evaluar el comportamiento del modelo sin infraestructura de datacenter.
-- Chatbots con visión: con `--vision`, el modelo describe y razona sobre imágenes insertadas en el prompt, útil para asistentes que analizan capturas, documentos escaneados o gráficos.
-- Agentes con herramientas: el soporte de tool calls en formato OpenAI permite integrarlo en frameworks de agentes que orquestan APIs, búsquedas web o ejecución de código en varios pasos.
-- Atención al cliente automatizada: la reutilización de prefijo de prompt y el soporte de ocho peticiones concurrentes lo hacen adecuado para servir conversaciones multi-turno con un system prompt compartido y costoso de prefillar.
-- Generación de texto estructurado: la salida estructurada nativa facilita pipelines de extracción de datos, generación de JSON conforme a esquemas y automatización documental.
-- Servidor de inferencia de bajo coste: NInfer sirve el modelo con expertos en memoria de host anclada o transmitidos desde el archivo, repartiendo el cálculo de expertos entre CPU y GPU, lo que permite despliegues en estaciones de trabajo sin VRAM masiva.
-- Investigación en cuantización extrema: la mezcla IQ1_S/IQ1_M/IQ2 con routers en FP32 es un caso de estudio práctico sobre cuánta calidad se conserva a 1,75 bits por peso.
+- Asistencia de razonamiento en estación de trabajo: un investigador puede ejecutar el modelo en una RTX 4090 con 24 GB, manteniendo los expertos enrutados en memoria anfitriona fijada o en streaming desde el fichero, para tareas de análisis y resolución de problemas sin depender de la nube.
+- Automatización de agentes con tool calling: el modelo devuelve tool calls en formato compatible con OpenAI, lo que permite integrarlo en orquestadores de agentes existentes y encadenar llamadas a funciones en flujos multi-paso.
+- Procesamiento de documentos con imagen: gracias a la torre de visión y a la pipeline `image-text-to-text`, puede extraer y razonar sobre contenido de capturas, diagramas o páginas escaneadas convirtiendo cada imagen en posiciones de prompt.
+- Generación de salida estructurada en pipelines de datos: la salida estructurada permite generar JSON u otros formatos validables para ETL, extracción de entidades o generación de informes.
+- Servicio concurrente de baja concurrencia: con hasta ocho peticiones simultáneas y reutilización de prefijos de prompt, es adecuado para equipos pequeños que necesitan un endpoint propio con contexto compartido entre consultas.
+- Aceleración de inferencia interactiva: el drafter DSpark y el drafting por búsqueda en contexto reducen la latencia de decodificación en cargas de generación larga, útil en asistentes conversacionales o autocompletado.
+- Experimentación con cuantización extrema: sirve como banco de pruebas para estudiar el impacto de 1,75 bits por peso en un MoE de escala frontera, comparando la calidad frente a cuantizaciones mayores del mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El README incluye una imagen comparativa de velocidad de decodificación y prefill de NInfer frente a Strata sobre el mismo host con RTX 4090, pero no se proporcionan cifras numéricas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una imagen comparativa de velocidad de decodificación y prefill entre NInfer y Strata sobre un mismo host con RTX 4090, pero no se proporcionan cifras numéricas en el texto.
 
 ## Requisitos de hardware
 
-- VRAM en GPU: 6,0 GiB para el modelo no experto, más 3,58 GiB si se activa el drafter DSpark y 0,90 GiB con la torre de visión (`--vision`). Total aproximado: 6,0-10,5 GiB de VRAM.
-- Los expertos enrutados (106,69 GiB del archivo) residen en memoria de host anclada o se transmiten desde disco; se recomienda abundante RAM de sistema (del orden de 110-120 GiB para anclarlos) o un disco rápido para streaming.
-- GPUs compatibles según los tags del repositorio: RTX 3090, RTX 4090, RTX 5090 y RTX Pro 6000; cabe en GPUs de consumo de 24 GB.
-- CPU: con expertos en host, los hilos de CPU calculan parte de los expertos faltantes de cada llamada de decodificación mientras la GPU copia el resto; la conversión se probó en un EPYC 7K62 de 48 núcleos.
-- Despliegue: exclusivamente mediante NInfer (rama `master` de ninfer-all, commit `673e3e618` o posterior); las builds estándar de NInfer rechazan este archivo. No es compatible con llama.cpp, Ollama, vLLM ni TGI.
-- Latencia y throughput: no disponibles en cifras concretas; el README referencia una comparativa gráfica con Strata en RTX 4090.
+- VRAM estimada: aproximadamente 6,0 GiB para los componentes no-experto en la GPU, más 3,58 GiB adicionales para el drafter DSpark cuando se activa y 0,90 GiB para la torre de visión con `--vision`. Los 106,69 GiB de expertos enrutados residen en memoria anfitriona fijada o se transmiten por streaming desde el fichero.
+- GPU recomendadas: RTX 3090, RTX 4090, RTX 5090 y RTX Pro 6000, según los tags del repositorio; el autor indica que se sirve en una única GPU de 24 GB.
+- Cabe en GPU de consumo: sí, en GPUs de 24 GB o más, con expertos en RAM del sistema o streaming desde disco.
+- Opciones de despliegue: NInfer v3 (rama `master` de `iamwavecut/ninfer-all`, desde el commit `673e3e618` para el drafter STQ; desde `ab84dcfa0` para la conversión con el layout de llama.cpp). Las builds estándar de NInfer rechazan este fichero.
+- Latencia y throughput: no disponibles en cifras numéricas; con expertos en host, los hilos de CPU calculan una parte de los expertos faltantes de cada llamada de decodificación mientras la GPU copia el resto.
 
 ## Comparativa con modelos similares
 
-| Aspecto | Este artefacto (IQ1_M NInfer v3) | GGUF base de ISTA-DASLab (GSQ-RCO IQ1_M) | deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) |
-|---|---|---|---|
-| Formato | NInfer v3, archivo único 117,18 GiB | GGUF sharded | safetensors BF16 |
-| Cuantización | 1,75 bpw en expertos, routers FP32, drafter STQ | 1,75 bpw, tipos GGML por tensor | BF16 (sin cuantizar) |
-| Visión | Sí, torre BF16 incluida como componente | Sí, mediante mmproj BF16 aparte | Sí |
-| Decodificación especulativa | DSpark STQ integrado | No incluida | Depende del runtime |
-| Motor requerido | NInfer master (commit 673e3e618+) | llama.cpp-compatible (GGUF) | Runtime propio de DeepSeek / vLLM |
-| VRAM GPU mínima | ~6-10,5 GiB + expertos en host | Depende del backend GGUF | Múltiples GPUs de datacenter |
-| Licencia | MIT | MIT | MIT |
-
-Comparación con otros modelos MoE grandes: no disponible en la información proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017 (este artefacto, NInfer v3 IQ1_M) | 763.000 M totales, 551.900 M backbone | Ventana latente de 128 posiciones más latentes comprimidos por indexador | MIT | Hugging Face, formato `.ninfer` |
+| DeepSeek-V4.1-Flash-1017 GSQ-RCO IQ1_M (ISTA-DASLab, GGUF) | 763.000 M totales | Igual que el modelo base | No disponible en la información | Hugging Face, GGUF |
+| DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw (beamster) | 763.000 M totales | Igual que el modelo base | No disponible en la información | Hugging Face, pack STQ |
+| DeepSeek-V4.1-Flash-1017 (deepseek-ai, original) | 763.000 M totales | Igual que el modelo base | No disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Cuantización extrema (1,75 bpw, mayoritariamente IQ1_S/IQ1_M): es de esperar degradación notable de calidad respecto al modelo BF16 original, especialmente en razonamiento fino, código y matemáticas; conviene validar en cada caso de uso.
-- Riesgo de alucinación: no cuantificado para esta cuantización; asúmase al menos el del modelo base y probablemente mayor.
-- Compatibilidad muy restringida: solo funciona con NInfer construido desde el commit `673e3e618` o posterior de la rama `master` de ninfer-all; las builds estándar rechazan el archivo. No es compatible con el ecosistema llama.cpp/Ollama pese a derivar de GGUF.
-- La tabla Engram (196,6B parámetros) es una descarga separada y obligatoria; sin ella el modelo no funciona tal como está descrito.
-- El chat template es una transcripción propia de NInfer del `encoding.py` de la release; la release original no incluye plantilla Jinja, por lo que puede haber divergencias menores con el comportamiento oficial.
-- Sesgos conocidos, idiomas soportados y longitud máxima de contexto: no disponibles en la información proporcionada.
-- Licencia MIT: sin restricciones para uso comercial, aunque la responsabilidad sobre salidas del modelo recae en el despliegue.
-- Para producción, el streaming de expertos desde disco puede introducir latencias variables; se recomienda anclar expertos en RAM si el patrón de tráfico es interactivo.
+- La cuantización a 1,75 bits por peso en los expertos enrutados (IQ1_S, IQ1_M, IQ2_XXS, IQ2_S) puede degradar la calidad respecto al modelo original en BF16; no se han publicado evaluaciones que cuantifiquen esa pérdida.
+- El artefacto no incluye la tabla Engram: es una descarga separada (`WaveCut/DeepSeek-V4.1-Flash-Engram-IQ4_NL-NInfer-v3`), identificada por el SHA-256 de sus filas; sin ella el modelo no funciona completo.
+- Las builds estándar de NInfer rechazan este fichero; se requiere la rama `master` de `iamwavecut/ninfer-all` desde el commit `673e3e618` (o `ab84dcfa0` para la conversión). Esto limita la portabilidad a otros motores como llama.cpp, vLLM, TGI u Ollama, que no se mencionan como compatibles.
+- El rendimiento depende de la memoria anfitriona y del almacenamiento: los 106,69 GiB de expertos deben residir en RAM fijada o transmitirse por streaming, lo que introduce latencia y requiere hardware con suficiente RAM y ancho de banda.
+- El modelo base no publica plantilla Jinja; la plantilla de chat es una transcripción propia de NInfer del `encoding/encoding.py` de la release, lo que puede introducir divergencias de formato.
+- No se dispone de información sobre sesgos, tasas de alucinación ni cobertura idiomática.
+- La licencia es MIT, lo que permite uso comercial, pero el artefacto depende de componentes de terceros (ISTA-DASLab, beamster) cuyas condiciones deben verificarse por separado.
+- El repositorio ocupa 505,8 GB, lo que exige planificación de almacenamiento y ancho de banda de descarga considerables.
 
 ## Enlaces
 
-- Artefacto NInfer v3: https://huggingface.co/WaveCut/DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ1_M-NInfer-v3
-- Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Cuantización GGUF de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
+- Hugging Face del artefacto: https://huggingface.co/WaveCut/DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ1_M-NInfer-v3
+- Modelo base GGUF (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
+- Modelo original (DeepSeek): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Tabla Engram (descarga separada): https://huggingface.co/WaveCut/DeepSeek-V4.1-Flash-Engram-IQ4_NL-NInfer-v3
-- Pack STQ del drafter DSpark: https://huggingface.co/beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw
-- Motor NInfer: https://github.com/Neroued/ninfer
-- NInfer-all (rama master): https://github.com/iamwavecut/ninfer-all
-- Commit requerido: https://github.com/iamwavecut/ninfer-all/commit/673e3e6186e16d145d76ecbfd17d1097c5868a1c
-- Papers citados en tags: arXiv 2604.18556 y arXiv 2605.00649 (enlaces: https://arxiv.org/abs/2604.18556 y https://arxiv.org/abs/2605.00649)
+- Pack Sushi STQ (beamster): https://huggingface.co/beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw
+- Repositorio NInfer: https://github.com/Neroued/ninfer
+- Repositorio NInfer-all: https://github.com/iamwavecut/ninfer-all
+- Commit del drafter STQ: https://github.com/iamwavecut/ninfer-all/commit/673e3e6186e16d145d76ecbfd17d1097c5868a1c
+- Commit de conversión: https://github.com/iamwavecut/ninfer-all/commit/ab84dcfa07b8c011263fa884e9ece4de7d81bcb0
+- Paper referenciado (arXiv:2604.18556): https://arxiv.org/abs/2604.18556
+- Paper referenciado (arXiv:2605.00649): https://arxiv.org/abs/2605.00649

@@ -22,8 +22,6 @@
     "security",
     "moe",
     "en",
-    "base_model:Taimwe/securecoder-30b-pro-merged",
-    "base_model:quantized:Taimwe/securecoder-30b-pro-merged",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -31,7 +29,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 607,
+  "downloads_30d": 609,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",

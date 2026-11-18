@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "noahmclaughlin/Mixed-Messenger-Qwen3-4B-LoRA",
+  "renamed_at": "2026-11-18T09:12:52.372Z",
   "benchmarks": [],
   "sources": []
 }

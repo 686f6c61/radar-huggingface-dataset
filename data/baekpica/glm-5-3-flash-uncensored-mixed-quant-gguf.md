@@ -2,106 +2,101 @@
 
 ## Resumen
 
-GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF es una cuantizacion mixta en formato GGUF derivada de `orcarouter/GLM-5.3-Flash-Uncensored-FP8`, publicada por el usuario Baekpica. Se trata de un modelo de arquitectura MoE con 45 capas de tronco (34 capas KDA y 11 capas de atencion dispersa), 288 expertos enrutados por capa con top-8 activos, un contexto nativo de 1.048.576 tokens y un bloque MTP (multi-token prediction) embebido. Ademas incluye un codificador de vision independiente que se mantiene en BF16.
+GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF es una distribucion en formato GGUF de cuantizacion mixta derivada de `orcarouter/GLM-5.3-Flash-Uncensored-FP8`, un modelo multimodal de tipo image-text-to-text con arquitectura MoE. Lo publica el usuario Baekpica y su interes principal radica en la receta de cuantizacion: combina precisiones desde Q8_0 hasta IQ2_XXS segun el rol de cada tensor, preservando mayor fidelidad en las rutas siempre activas y en seis capas enrutadas de frontera. El resultado es un artefacto de aproximadamente 95 GB que cabe en una unica GPU DGX Spark / GB10.
 
-El problema que aborda es el de hacer viable en memoria unificada de gama alta un modelo de gran tamano cuyo checkpoint original esta en FP8. Para ello aplica una receta de precision mixta que conserva Q8_0 en las rutas siempre activas (embeddings, cabeza de salida, MLP densas y expertos compartidos) y en las proyecciones principales, y baja a IQ2_XXS/IQ2_XS/Q2_K en las matrices de expertos enrutados, con los pesos de router, normas y controles de estado en F32. El tamano planificado es de 87,470 GiB para tronco + MTP y 88,520 GiB (95,047 GB) contando el codificador de vision.
+El modelo conserva una ventana de contexto nativa de 1.048.576 tokens, con 45 capas de tronco (34 KDA y 11 de atencion dispersa), 288 expertos enrutados por capa con top-8 activos y un bloque MTP embebido. Incluye ademas un encoder de vision separado en BF16. El pipeline declarado es image-text-to-text, aunque la calibracion del imatrix se realizo unicamente con entradas de texto.
 
-Es relevante ahora porque apunta a ejecucion local en hardware tipo DGX Spark, con el limite de contexto de 1M tokens preservado en los metadatos. Sin embargo, el estado declarado por el autor es "build in progress": los pesos no estan publicados, las cifras de tamano son estimaciones del plan de conversion y no hay resultados de calidad ni de rendimiento medidos.
+La relevancia actual del artefacto es doble: por un lado, demuestra que es viable servir un modelo MoE de este tamano con contexto de un millon de tokens en hardware de una sola GPU de gama workstation; por otro, su receta mixta requiere una extension de runtime especifica sobre `antirez/ds4`, ya que la compatibilidad con llama.cpp upstream no esta establecida. La licencia es MIT.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE sobre transformer hibrido: 45 capas de tronco (34 KDA + 11 de atencion dispersa), con bloque MTP embebido y codificador de vision separado |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (se indica top-8 de 288 expertos enrutados por capa) |
-| Longitud de contexto | 1.048.576 tokens (nativo, preservado en metadatos) |
-| Tipos de cuantizacion | Mixta: Q8_0, Q4_K, IQ2_XS, IQ2_XXS, Q2_K, F32 y BF16 segun grupo de tensores |
+| Arquitectura | MoE con 45 capas de tronco (34 KDA + 11 sparse-attention), MTP embebido, encoder de vision separado |
+| Parametros totales | 563.627.008 (dato de safetensors del repo; el tamano del repo es 95,0 GB) |
+| Parametros activos | 288 expertos enrutados por capa, top-8 activos (numero de parametros activos no disponible) |
+| Longitud de contexto | 1.048.576 tokens (nativo) |
+| Tipos de cuantizacion | Receta mixta: Q8_0, Q4_K, F32, BF16, IQ2_XS, IQ2_XXS, Q2_K (con imatrix opcional en down) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (heredada del checkpoint de origen) |
-| Formato de pesos | GGUF |
-| Tamano planificado | 87,470 GiB (tronco + MTP); 88,520 GiB / 95,047 GB con vision |
-| Estado de publicacion | build in progress; pesos aun no publicados |
+| Licencia | MIT |
+| Formato de pesos | GGUF (pesos principales + MTP: 87,470 GiB; total con vision: 88,520 GiB / 95,047 GB) |
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta el entrenamiento del modelo base, sino la receta de conversion. La arquitectura descrita consta de 45 capas de tronco, de las cuales 34 son capas KDA y 11 son capas de atencion dispersa (la model card no desarrolla la sigla KDA). Las capas 0, 1 y 2 son densas. Cada capa enrutada contiene 288 expertos con enrutamiento top-8. El modelo incorpora un bloque MTP embebido (indice 45) pensado para decodificacion especulativa o drafting, y un codificador de vision independiente mantenido en BF16 a partir de los pesos originales.
+La arquitectura es un transformer MoE con 45 capas de tronco: las capas 0 a 2 son densas y el resto combinan 34 capas KDA (Kimi Delta Attention) con 11 capas de atencion dispersa. Cada capa enrutada contiene 288 expertos con activacion top-8. El modelo incorpora un bloque MTP (multi-token prediction) embebido en el indice 45, ademas de un encoder de vision independiente que conserva los pesos BF16 originales. La ventana de contexto nativa es de 1.048.576 tokens.
 
-La innovacion tecnica principal de este repositorio es la asignacion de precision por grupo de tensores, orientada a reducir el error de reconstruccion en las rutas criticas. El embedding de tokens y la cabeza de salida, las MLP densas de las capas 0-2 y los expertos compartidos se mantienen en Q8_0; las proyecciones query/key de las capas KDA en Q4_K; el resto de KDA y las proyecciones principales de atencion dispersa/MLA en Q8_0; router, sesgos, normas y controles de estado en F32; indexadores, mezcladores mHC y la proyeccion de estado oculto del MTP en BF16. En las matrices de expertos enrutados, las capas 3, 4, 5, 43, 44 y 45 usan IQ2_XS (gate/up) y Q2_K (down), mientras que el resto usa IQ2_XXS (gate/up) e IQ2_XS (down). Gate y up comparten formato dentro de cada capa y las anchuras de matriz enrutada siguen siendo divisibles por 256.
+La receta de cuantizacion mixta asigna formatos por grupo de tensores: embedding y cabeza de salida, MLP densas y expertos compartidos en Q8_0; proyecciones query/key de KDA en Q4_K; el resto de KDA y las proyecciones principales de atencion dispersa/MLA en Q8_0; pesos de router, biases, normas y controles de estado en F32; indexer, mixers mHC y proyeccion de hidden-state del MTP en BF16. Las matrices gate/up enrutadas usan IQ2_XS + imatrix en las capas 3, 4, 5, 43, 44 y 45, e IQ2_XXS + imatrix en el resto; las down enrutadas usan Q2_K (imatrix opcional) en las capas de frontera e IQ2_XS + imatrix en las demas. La calibracion cubrio 81.920 posiciones de texto y todos los expertos enrutados del tronco. Una muestra acotada de Q2_K mostro un 51,2 % menos de error cuadratico de reconstruccion ponderado por activacion con imatrix, si bien el autor aclara que es un proxy de reconstruccion y no una mejora medida de calidad de respuesta. La calibracion con imagenes no se reclama: el imatrix se recoge solo de texto.
 
-La calibracion cubrio 81.920 posiciones de texto y, segun el autor, se observaron todos los expertos enrutados del tronco. Sobre una muestra acotada de pesos fuente en Q2_K se reporta un 51,2% menos de error de reconstruccion ponderado por activacion al usar imatrix, cifra que el propio autor califica de proxy de reconstruccion, no de ganancia medida en calidad de respuesta. El imatrix se recoge de entradas de texto; no se reclama calibracion de activaciones condicionada por imagen, y las estadisticas de activacion del MTP no se recogen porque el grafo GLM de origen no lo permite (el bloque 45 usa importancia basada en pesos para IQ2_XS gate/up y Q2_K down sin ponderar).
+La innovacion tecnica destacable es el propio esquema de precision mixta por rol de tensor, junto con el soporte de decodificacion especulativa mediante el bloque MTP embebido (opt-in) y el streaming opcional de expertos desde SSD. El runtime objetivo es la extension de `antirez/ds4` y el host en Rust `ds4-dfm-rs`.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: pipeline declarado como `image-text-to-text`, con arquitectura MoE de gran escala.
-- Procesamiento de imagen: dispone de un codificador de vision separado en BF16; el servicio de imagen requiere ese encoder.
-- Multi-token prediction: bloque MTP embebido, orientado a drafting y decodificacion especulativa (comportamiento pendiente de verificacion segun el autor).
-- Contexto muy largo: ventana nativa de 1.048.576 tokens, preservada en los metadatos del GGUF.
-- Comportamiento "uncensored": heredado del checkpoint de origen (la model card advierte que no se ha medido de nuevo en esta cuantizacion).
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada (el campo de idiomas figura como no disponible).
-- Video nativo: el soporte de entrada de video no esta establecido.
+- Generacion de texto y razonamiento multi-turno con ventana nativa de 1.048.576 tokens.
+- Procesamiento de imagen y texto (pipeline image-text-to-text) mediante encoder de vision en BF16.
+- Tool calling y function calling: el autor menciona comprobaciones acotadas de texto, herramientas, imagen, restauracion de estado y reutilizacion de disco.
+- Razonamiento multi-paso y modo agente: soporta continuaciones HTTP con cache de prefijo en el runtime Rust.
+- Decodificacion especulativa via MTP embebido (opt-in), con verificacion de estado de prefijo aceptado.
+- Capacidades multilingues: no disponible (la model card no las enumera; los benchmarks de rendimiento usan texto natural en italiano e ingles).
+- Variante "uncensored": el modelo base declara ausencia de filtrado, aunque la model card no detalla el alcance de esta caracteristica.
 
 ## Casos de uso
 
-- Procesamiento de documentos largos en local: con 1.048.576 tokens de contexto nativo, el modelo puede ingerir expedientes, libros tecnicos o bases de codigo completas en una sola pasada, siempre que la memoria disponible lo permita.
-- Analisis de imagenes con texto asociado: gracias al codificador de vision en BF16, admite escenarios de descripcion de figuras, extraccion de informacion de capturas o revision de diagramas junto a instrucciones textuales.
-- Despliegue en estaciones con memoria unificada: el tamano planificado de 95,047 GB encaja en equipos de memoria unificada de gran capacidad (la etiqueta `dgx-spark` apunta a ese perfil), lo que permite servir el modelo sin cluster dedicado.
-- Generacion especulativa acelerada: el bloque MTP embebido puede emplearse como cabezal de drafting para reducir el numero de pasos de decodificacion, una vez validado su comportamiento.
-- Investigacion sobre cuantizacion extrema: la receta de precision mixta con IQ2_XXS como minimo y capas frontera en IQ2_XS constituye un caso de estudio reproducible sobre el equilibrio entre tamano y error de reconstruccion.
-- Evaluacion comparativa de comportamiento "uncensored" en entornos controlados: util para estudiar como afecta la cuantizacion agresiva a respuestas en dominios sin filtros, siempre con las salvaguardas y politicas de uso del desplegador.
-- Prototipado de asistentes de contexto masivo con vision: combinacion de contexto de 1M y entrada de imagen para tareas de soporte tecnico sobre manuales escaneados.
+- Analisis de documentos largos y bases de codigo: con 1.048.576 tokens de contexto nativo, el modelo puede ingerir repositorios completos o expedientes extensos en una sola pasada, sin necesidad de chunking ni recuperacion externa.
+- Asistentes de codigo con acceso a herramientas: el soporte de tool calling y de continuaciones HTTP con cache de prefijo permite integrarlo en pipelines de CI/CD o en IDE que consulten APIs internas y ejecuten comandos.
+- Procesamiento multimodal de documentacion: al ser image-text-to-text, puede extraer informacion de capturas, diagramas y documentos escaneados combinados con texto largo en la misma ventana.
+- Despliegue en estacion de trabajo unica: con 88,5 GiB en una DGX Spark / GB10, encaja en escenarios de laboratorio o prototipado donde no se dispone de un cluster multi-GPU.
+- Investigacion sobre cuantizacion extrema: el artefacto sirve como caso de estudio reproducible de recetas mixtas IQ2 con imatrix y de su impacto en reconstruccion de pesos.
+- Agentes autonomos con estado persistente: la restauracion de estado y la reutilizacion de disco del runtime permiten mantener sesiones largas de agente con cache de contexto entre peticiones.
+- Evaluacion de decodificacion especulativa: el bloque MTP embebido permite medir ganancias de throughput en hardware objetivo frente a decodificacion autoregresiva clasica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor indica explicitamente que la calidad mas amplia "permanece abierta".
 
-La model card indica explicitamente que el comportamiento "uncensored" y los resultados de benchmarks del modelo de origen no constituyen mediciones nuevas de esta cuantizacion, y que los resultados de calidad identificaran la build y los ajustes exactos probados una vez completada la publicacion. Unicamente se aporta un dato de reconstruccion: 51,2% menos de error de reconstruccion ponderado por activacion con imatrix sobre una muestra acotada de pesos fuente en Q2_K, descrito por el autor como proxy y no como mejora medida de calidad.
+Si se publican metricas de rendimiento del runtime en DGX Spark / GB10 (CUDA 13.4.92, reloj 300-2200 MHz, MTP Off, texto natural en italiano, prefill de 2.048 tokens sobre prefijo cacheado y generacion de 128 tokens greedy):
+
+| Build | Prefill tok/s (media 2K-64K) | Decode tok/s (media 2K-64K) | Prefill 8K en frio | Decode 8K |
+|---|---:|---:|---:|---:|
+| Antes (main 8c2068b5) | 183,2 | 15,09 | 215,9 | 15,17 |
+| Despues (1212cebb) | 784,7 | 18,92 | 805,9 | 19,06 |
+
+El barrido "despues" es la mediana de tres ejecuciones (prefill 784,1-784,7; decode 18,91-18,95); el "antes" es una sola ejecucion. Los limites teoricos del host son 10,5 GB por token en decode, 21,9-23,8 tok/s a 230-250 GB/s con MTP Off, y 35,7 GFLOP por token en prefill (unos 3.000 tok/s al pico FP16 de tensor cores).
 
 ## Requisitos de hardware
 
-- VRAM/espacio de pesos: aproximadamente 88.520 GiB (95,047 GB) con el codificador de vision incluido, segun el plan de conversion del autor.
-- Memoria de contexto: el autor estima unos 14,85 GiB adicionales de KV/estado/grafo en el limite de 1M tokens, mas 1,15 GiB si se usa el MTP. Es decir, del orden de 111 GB en total para pesos mas contexto maximo, cifra derivada de los datos de la model card y no medida.
-- GPU de centro de datos: no hay datos de despliegue medidos; por tamano, se requiere agregacion de memoria entre varias GPU (por ejemplo, clase A100/H100 de 80 GB) o una maquina de memoria unificada grande.
-- Consumer GPU: no cabe en una RTX 4090 (24 GB) ni en ninguna GPU de consumo actual por si sola, dado el tamano de pesos de ~95 GB y la memoria de contexto adicional.
-- Memoria unificada: el objetivo declarado apunta a hardware tipo DGX Spark; el contexto maximo alcanzable en ese equipo no ha sido medido todavia.
-- Opciones de despliegue: el GGUF esta pensado para el formato GLM nativo del runtime [antirez/ds4](https://github.com/antirez/ds4), y las combinaciones mixtas de expertos requieren la extension de runtime correspondiente. La compatibilidad con llama.cpp upstream no esta establecida, por lo que vLLM, Ollama o TGI no pueden darse por soportados.
-- Latencia y throughput: no disponibles (no se han publicado mediciones).
+- VRAM estimada: 88,520 GiB (95,047 GB) para pesos completos incluyendo vision y MTP; 87,470 GiB para tronco + MTP.
+- GPU recomendada por el autor: DGX Spark / GB10 con CUDA 13.4.92; el artefacto esta dimensionado para una unica GPU de esa clase.
+- No cabe en GPUs consumer convencionales (RTX 4090 con 24 GB, RTX 3090 con 24 GB) sin streaming de expertos desde SSD, opcion que el runtime soporta y que viene desactivada por defecto.
+- Opciones de despliegue: runtime `ds4-dfm-rs` (host en Rust) sobre la extension de `antirez/ds4`. La compatibilidad con llama.cpp upstream no esta establecida. No se mencionan vLLM, TGI ni Ollama.
+- Throughput medido en DGX Spark: 784,7 tok/s de prefill y 18,92 tok/s de decode (media 2K-64K, MTP Off); 805,9 tok/s y 19,06 tok/s en celdas de 8K en frio.
+- Limite teorico de decode en ese host: 21,9-23,8 tok/s a 230-250 GB/s de ancho de banda, con 10,5 GB transmitidos por token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Estado |
-|---|---|---|---|---|---|
-| Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF | no disponible (MoE, 288 expertos top-8 por capa, 45 capas) | 1.048.576 tokens | GGUF con cuantizacion mixta (Q8_0 / Q4_K / IQ2_XS / IQ2_XXS / Q2_K / F32 / BF16) | MIT | Pesos no publicados (build in progress) |
-| orcarouter/GLM-5.3-Flash-Uncensored-FP8 (origen) | no disponible | no disponible en la informacion aportada | FP8 | MIT (heredada) | Checkpoint de origen |
-| Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-La busqueda web realizada no devolvio informacion tecnica comparable sobre modelos de la misma categoria; los resultados obtenidos no eran relevantes para este modelo.
+No disponible. La informacion proporcionada no incluye datos de modelos comparables de la misma categoria (mismo tamano, misma tarea o misma familia GLM) con los que establecer una comparacion de parametros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
-- Pesos no publicados: el autor declara "build in progress"; no hay pesos descargables ni resultados de calidad medidos.
-- Cifras estimadas: los tamanos indicados (87,470 GiB / 88,520 GiB) son estimaciones del plan de conversion, no mediciones del artefacto final.
-- Compatibilidad de runtime restringida: requiere el formato GLM nativo de antirez/ds4 y una extension de runtime para las combinaciones mixtas de expertos; la compatibilidad con llama.cpp upstream no esta establecida.
-- Cuantizacion muy agresiva en expertos enrutados: IQ2_XXS como minimo de precision implica perdida de calidad no cuantificada; el unico dato disponible es un proxy de error de reconstruccion, no una evaluacion de respuestas.
-- Imatrix solo de texto: no se ha realizado calibracion de activaciones condicionada por imagen, por lo que el comportamiento con entradas visuales puede degradarse de forma no medida.
-- MTP sin estadisticas de activacion: el bloque 45 usa importancia basada en pesos para gate/up y Q2_K sin ponderar para down; el comportamiento de drafting esta pendiente de verificacion.
-- Contexto real condicionado por memoria: aunque el limite de 1M tokens se preserva en metadatos, el contexto util depende de la memoria disponible y de los ajustes del runtime; el maximo en DGX Spark no se ha medido.
-- Video no soportado de forma establecida.
-- Idiomas soportados no declarados: no hay garantia documentada de cobertura multilingue mas alla de lo que herede el checkpoint de origen.
-- Comportamiento "uncensored": implica un riesgo elevado de generar contenido sin filtros; el desplegador debe asumir la responsabilidad de las salvaguardas y del cumplimiento normativo aplicable.
-- Riesgo de alucinacion: no disponible; no se han publicado evaluaciones al respecto para esta cuantizacion.
-- Sesgos conocidos: no disponible en la informacion proporcionada.
-- Licencia: MIT heredada del checkpoint de origen, lo que en principio permite uso comercial, pero conviene verificar el fichero LICENSE y las condiciones del modelo base.
-- Estado de adopcion: 0 descargas y 0 likes en el momento de la consulta; sin validacion por parte de la comunidad.
+- La calidad del modelo cuantizado no esta validada de forma amplia: el autor declara que la evaluacion de calidad "permanece abierta" y que los datos de imatrix son proxies de reconstruccion, no mejoras medidas de respuesta.
+- La calibracion del imatrix se realizo solo con texto; no se reclama calibracion de activaciones condicionada por imagen, por lo que el rendimiento multimodal puede degradarse respecto al modelo FP8 original.
+- El bloque MTP no recibe estadisticas de activacion del grafo GLM upstream: usa importancia basada en pesos para IQ2_XS gate/up y Q2_K down sin ponderar. El comportamiento de drafting queda pendiente de verificacion en hardware objetivo.
+- La receta mixta exige una extension de runtime especifica; no hay compatibilidad establecida con llama.cpp upstream, lo que limita la portabilidad y el ecosistema de herramientas disponible.
+- El streaming de expertos desde SSD viene desactivado por defecto; activarlo introduce dependencia de latencia de disco y puede degradar el throughput.
+- Riesgo de alucinacion y sesgos: no disponible en la informacion proporcionada; al ser una variante "uncensored", cabe esperar menor alineacion de seguridad, aunque no se documenta su alcance.
+- Idiomas soportados no declarados formalmente; las pruebas de rendimiento usan italiano e ingles, sin garantia sobre otras lenguas.
+- Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece garantias sobre el comportamiento del modelo en produccion.
+- El dato de parametros totales procedente de safetensors (563.627.008) resulta inconsistente con el tamano del repo (95 GB) y con la descripcion arquitectonica (288 expertos por capa); conviene tratarlo con cautela.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF
-- Modelo base (FP8): https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
-- Licencia: https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF/blob/main/LICENSE
-- Resumen de calibracion: https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF/blob/main/calibration-summary.json
-- Dataset de calibracion multimodal: https://huggingface.co/datasets/Baekpica/Inkling-Small-Multimodal-Calibration
-- Runtime de destino: https://github.com/antirez/ds4
-- Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados devueltos correspondian a opiniones de un operador de telecomunicaciones y no guardan relacion con el modelo.
+- Modelo en Hugging Face: https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF
+- Modelo base: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
+- Runtime original ds4: https://github.com/antirez/ds4
+- Runtime Rust ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
+- Pull request de rendimiento en Spark: https://github.com/Baekpica/ds4-dfm-rs/pull/138
+- Commit de referencia (antes): https://github.com/Baekpica/ds4-dfm-rs/commit/8c2068b5
+- Commit de referencia (despues): https://github.com/Baekpica/ds4-dfm-rs/commit/1212cebb6618ebb2a5bf7df849b01a312200f5e8
+- Registro de optimizacion: https://github.com/Baekpica/ds4-dfm-rs/blob/1212cebb6618ebb2a5bf7df849b01a312200f5e8/docs/glm53-mixed-optimizati
+- Dataset de calibracion: https://huggingface.co/datasets/Baekpica/Inkling-Small-Multimodal-Calibration
+- Resumen de calibracion: calibration-summary.json (dentro del repositorio del modelo)
+- Instrucciones de runtime: runtime/README.md (dentro del repositorio del modelo)

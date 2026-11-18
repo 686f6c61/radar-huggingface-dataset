@@ -5,7 +5,7 @@
   "author": "YTan2000",
   "url": "https://huggingface.co/YTan2000/Qwen3.8-27B-TQ",
   "created_at": "2026-10-08T21:45:33.000Z",
-  "updated_at": "2026-11-12T09:40:21.000Z",
+  "updated_at": "2026-11-17T10:09:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,13 +28,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
-  "downloads_30d": 7940,
+  "likes": 2,
+  "downloads_30d": 8103,
   "trending_score": 0,
   "parameters": 27373132800,
   "parameters_human": "27.37B",
-  "storage_bytes": 82473447424,
-  "storage_human": "82.5 GB",
+  "storage_bytes": 94431957792,
+  "storage_human": "94.4 GB",
   "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YTan2000/Qwen3.8-27B-TQ3_4S · Hugging Face",
-      "url": "https://huggingface.co/YTan2000/Qwen3.8-27B-TQ3_4S",
-      "snippet": "Instructions to use YTan2000/Qwen3.8-27B-TQ3_4S with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use YTan2000/Qwen3.8-27B-TQ3_4S with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "YTan2000/Qwen3.8-27B-TQ3_4S at main - Hugging Face",
-      "url": "https://huggingface.co/YTan2000/Qwen3.8-27B-TQ3_4S/tree/main",
-      "snippet": "YTan2000 / Qwen3.8-27B-TQ3_4S like 18 Text Generation GGUF English llama.cpp qwen qwen3.8 mtp speculative-decoding turboquant tq3_4s conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "Qwen3.8-27B-TQ3_4S: Model Details, Context & Pricing | Essa Mamdani",
-      "url": "https://essamamdani.com/ai-models/hf-ytan2000-qwen3-8-27b-tq3-4s",
-      "snippet": "Model card indexed from Hugging Face for text-generation. Specs: 27B parameters, built for coding, sourced from Hugging Face. Compare Qwen3.8-27B-TQ3_4S&#x27;s param"
-    },
-    {
-      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
-      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
-      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
-    }
-  ]
+  "sources": []
 }

@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 3476,
+  "downloads_30d": 3466,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
-      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "README.md · ornith-ai/Ornith-1.5-35B-A3B at main - Hugging Face",
-      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/README.md",
-      "snippet": "Ornith 1.5 35B-A3B This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide margins on agentic coding."
-    },
-    {
-      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026)",
-      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
-      "snippet": "Ornith-1.5-35B-A3B by Ornith AI ranks #137 of 224 with a public score of 49.22/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
-    },
-    {
-      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
-      "url": "https://ornith.ai/ornith_1_5.html",
-      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
-    },
-    {
-      "title": "Ornith-1.5-35B-A3B · Models",
-      "url": "https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B",
-      "snippet": "Ornith-1.5-35B-A3B Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement. Ornith-1.5 extends Ornith-1.0 (which was developed on top of Qwen3.5 and Gemma4 with additional continued pretraining, mid-training, and post-training) by expanding the self-improvement loop from scaffold and rollout optimization to jointly ..."
-    }
-  ]
+  "sources": []
 }

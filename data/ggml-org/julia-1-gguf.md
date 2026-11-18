@@ -2,101 +2,83 @@
 
 ## Resumen
 
-Julia-1-GGUF es la version cuantizada en formato GGUF del modelo SupersonicLabs/Julia-1, distribuida por la organizacion ggml-org (responsable del ecosistema llama.cpp). No se trata de un modelo generativo al uso, sino de un "decision model" de 144.192.769 parametros disenado para elegir la respuesta correcta dentro de una lista de opciones proporcionada por el usuario, tarea que se expone a traves de una API especifica (`/v1/systemone`).
+Julia-1-GGUF es la conversión al formato GGUF del modelo SupersonicLabs/Julia-1, publicada por la organización ggml-org (responsable de llama.cpp). No se trata de un modelo generativo de propósito general, sino de un "decision model" orientado a clasificación de texto y pensado para ser invocado a través de un endpoint específico (`/v1/systemone`) en llama.cpp. El modelo base cuenta con aproximadamente 144 millones de parámetros y se distribuye bajo licencia Apache 2.0.
 
-El modelo original fue desarrollado por Supersonic Labs, un pequeno laboratorio de Brasil, con un coste de entrenamiento declarado de aproximadamente 104,08 dolares estadounidenses (unos 540 reales brasilenos). Su proposito es ofrecer una capacidad de decision ligera que pueda ejecutarse en hardware muy modesto: CPU, tablets o portatiles de gama baja, sin necesidad de GPU dedicada.
+Su relevancia radica en que ejemplifica una categoría emergente dentro del ecosistema open source: modelos pequeños, cuantizados y especializados en tareas de decisión o enrutamiento, que se integran en pipelines de agentes como componente auxiliar en lugar de como generador principal. El repo pesa 0,9 GB, lo que facilita su despliegue en entornos con recursos limitados.
 
-Esta version concreta ha sido convertida automaticamente mediante las herramientas de ggml-org (`convert`) y publicada bajo licencia Apache 2.0. Es relevante porque demuestra que es viable empaquetar modelos de decision pequenos y eficientes dentro del ecosistema GGUF/llama.cpp, integrándolos en flujos locales y offline.
+La información pública disponible es escasa: no se detallan idiomas soportados, composición del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja únicamente los datos verificables en la model card y los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: SupersonicLabs/Julia-1; orientado a decision/feature-extraction) |
+| Arquitectura | no disponible (modelo de decisión/clasificación de texto; arquitectura del transformer base no especificada) |
 | Parametros totales | 144.192.769 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (tipos concretos no disponibles) |
+| Tipos de cuantizacion | GGUF cuantizado (niveles específicos no detallados en la información disponible) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (repo de 0,9 GB); modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone, en la informacion proporcionada, de detalles sobre la arquitectura interna (tipo de transformer, atencion, capas, dimension oculta) ni sobre el proceso de entrenamiento del modelo original. Se sabe que el modelo base es SupersonicLabs/Julia-1, un "decision model" de 144,3 millones de parametros cuyo cometido es seleccionar la respuesta correcta de entre una lista de candidatas, mas que generar texto libre. El coste total de entrenamiento declarado fue de aproximadamente 104 dolares, lo que situa su entrenamiento en un regimen de bajo presupuesto y recursos reducidos.
+No se dispone de información detallada sobre la arquitectura interna del modelo base SupersonicLabs/Julia-1. Por el tamaño (144 M de parámetros) y la etiqueta `text-classification` / `decision-model`, se trata de un transformer compacto orientado a producir decisiones o clasificaciones en lugar de texto libre. El pipeline declarado es `text-classification` y también aparece la etiqueta `feature-extraction`, lo que sugiere que el modelo puede emplearse tanto para clasificar como para extraer representaciones.
 
-La variante aqui descrita no ha sido reentrenada: es una conversion a GGUF del modelo base, realizada de forma automatica con las herramientas de ggml-org. Por tanto, no incorpora cambios de arquitectura ni un proceso de ajuste adicional (RLHF o DPO) documentado en la informacion disponible. La innovacion destacable es de tipo practico: la integracion de esta tarea de decision dentro de llama.cpp mediante el endpoint `/v1/systemone` y su distribucion como fichero GGUF ejecutable en local.
+Respecto al entrenamiento, la model card no documenta número de tokens, composición del dataset, ni si hubo RLHF, DPO o ajuste supervisado. El proceso de conversión a GGUF se realizó automáticamente mediante la herramienta https://github.com/ggml-org/convert, y la integración con llama.cpp se apoya en un PR específico (https://github.com/ggml-org/llama.cpp/pull/29818) que introduce el endpoint `/v1/systemone` para invocar modelos de decisión.
 
 ## Capacidades
 
-- Seleccion de respuestas: dado un conjunto de opciones, el modelo elige la mas adecuada (comportamiento de decision/classification).
-- Extraccion de caracteristicas (`feature-extraction`) segun las etiquetas del repositorio.
-- Clasificacion de texto (`text-classification`) como pipeline declarado.
-- Ejecucion local en CPU, sin requerir GPU.
-- Integracion mediante el endpoint `/v1/systemone` de llama.cpp (ver PR 29818).
-- Despliegue sencillo con `llama serve -hf ggml-org/Julia-1-GGUF`.
-- Soporte de tool calling / function calling: no disponible.
-- Capacidades de agente o razonamiento multi-paso: no disponibles.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (vision, audio, modo thinking): no disponibles.
+- Clasificación de texto y toma de decisiones: el modelo está diseñado para emitir decisiones estructuradas, no para generación libre de texto.
+- Extracción de características: la etiqueta `feature-extraction` indica uso potencial como encoder para representaciones.
+- Integración con llama.cpp: se invoca mediante `llama serve -hf ggml-org/Julia-1-GGUF` y el endpoint `/v1/systemone`.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de la infraestructura de endpoints de Hugging Face.
+- Uso en la app Llama: la model card indica que puede ejecutarse en la aplicación Llama (https://llama.app).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-paso: no disponible; el modelo actúa como componente de decisión, no como orquestador.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Clasificacion local de opciones en sistemas embebidos: dado un conjunto acotado de categorias, el modelo puede decidir la etiqueta mas probable sin conexion a internet ni GPU, gracias a su tamano de 144 M de parametros.
-- Enrutado de peticiones en un pipeline de IA: usar el modelo como "router" que elige entre varias herramientas, prompts o flujos predefinidos a partir de una lista de opciones, dada su naturaleza de decision model.
-- Filtrado y moderacion de contenido offline: seleccionar la categoria adecuada (permitido, revisar, bloquear) para textos cortos en aplicaciones que exijan no enviar datos a servidores externos.
-- Asistentes embebidos en dispositivos de gama baja: al ejecutarse en CPU y caber en repositorios de 0,5 GB, puede incorporarse en portatiles antiguos, tablets o Raspberry Pi para tareas de decision acotadas.
-- Prototipado rapido en investigacion: probar pipelines de clasificacion y seleccion sin infraestructura de GPU, aprovechando su licencia Apache 2.0 y su formato GGUF.
-- Educacion y demostraciones de modelos pequenos: ilustrar que un modelo de 144 M de parametros entrenado con bajo presupuesto puede resolver tareas de decision concretas dentro del ecosistema llama.cpp.
-- Integracion en aplicaciones de escritorio basadas en llama.cpp: mediante `llama serve` o `llama.app`, exponer la funcionalidad de decision como servicio local para otras aplicaciones.
+- Enrutamiento de peticiones en pipelines de agentes: el modelo puede actuar como clasificador que decide qué herramienta o submodelo debe atender una consulta, invocado vía `/v1/systemone` dentro de un servidor llama.cpp.
+- Filtrado y moderación de contenido: al ser un modelo de clasificación compacto (144 M), puede etiquetar entradas como aptas o no aptas con baja latencia en entornos de producción.
+- Clasificación de tickets de soporte: integrado en un backend, permite categorizar incidencias por tipo o prioridad antes de derivarlas a un modelo generativo mayor.
+- Extracción de features para sistemas de búsqueda o clustering: la etiqueta `feature-extraction` habilita su uso como encoder en pipelines de recuperación semántica ligera.
+- Componente de decisión en asistentes locales: al ejecutarse en llama.cpp y en la app Llama, encaja en asistentes de escritorio o móviles que necesitan decidir la siguiente acción sin depender de la nube.
+- Prototipado rápido de lógica de decisión: su tamaño reducido y formato GGUF permiten desplegarlo en portátiles o dispositivos edge para validar flujos de decisión antes de escalar a modelos mayores.
+- Evaluación comparativa de modelos de decisión: útil como baseline ligero al investigar arquitecturas de enrutamiento y clasificación en el ecosistema GGUF.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (estimacion a partir de los 144,19 M de parametros; valores orientativos):
-  - FP32: aproximadamente 576 MB.
-  - FP16: aproximadamente 288 MB.
-  - Cuantizacion de 8 bits: aproximadamente 145-155 MB.
-  - Cuantizacion de 4 bits: aproximadamente 80-95 MB.
-- GPU recomendadas: no disponibles; el modelo esta pensado para ejecucion en CPU. Cualquier GPU con al menos 1 GB de memoria libre puede albergarlo.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.), aunque no es necesario para su uso previsto.
-- Opciones de despliegue: llama.cpp, llama.app (`llama serve -hf ggml-org/Julia-1-GGUF`), y cualquier runtime compatible con GGUF. Ollama podria cargarlo al ser formato GGUF, aunque no esta confirmado en la informacion disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: al tratarse de un modelo de 144 M de parámetros en GGUF, la huella es muy reducida; con cuantización de 4 bits se situaría en torno a 100-150 MB de pesos, aunque el nivel exacto de cuantización del repo no está detallado.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100. Funciona en CPU sin problema.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 1 GB de VRAM libre (GTX 1050, RTX 3050, RTX 4090, etc.), y también en CPU.
+- Opciones de despliegue: llama.cpp (`llama serve -hf ggml-org/Julia-1-GGUF`), app Llama (https://llama.app) y endpoints compatibles de Hugging Face.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo se espera latencia de milisegundos en CPU y GPU modernas, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de modelos comparables documentados en la informacion proporcionada. A continuacion se recoge la comparacion minima posible entre el modelo base y esta variante cuantizada.
-
-| Modelo | Parametros | Formato | Licencia | Notas |
-|---|---|---|---|---|
-| SupersonicLabs/Julia-1 | 144,19 M | safetensors | no disponible en la informacion | Modelo base de decision |
-| ggml-org/Julia-1-GGUF | 144,19 M | GGUF | Apache 2.0 | Conversion automatica del base; ejecucion local |
-
-Comparativa con alternativas de la misma categoria: no disponible.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (decision models en GGUF) ni datos de rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo de texto libre: su funcion es seleccionar entre opciones, y debe usarse mediante el endpoint `/v1/systemone`. Usarlo como chatbot o generador producira resultados no previstos.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; al tratarse de un modelo de decision, los errores se manifestaran como selecciones incorrectas de la opcion.
-- Idiomas soportados no declarados: se desconoce el comportamiento real en castellano u otros idiomas.
-- Contexto maximo no disponible: no se puede dimensionar cuanta informacion admite por peticion.
-- Sesgos conocidos: no disponibles. Al ser un modelo entrenado con bajo presupuesto, la cobertura y diversidad del dataset de entrenamiento son inciertas.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda verificar las condiciones del modelo base (SupersonicLabs/Julia-1) y de cualquier dataset asociado.
-- Es una conversion automatica del modelo base: no se han realizado validaciones adicionales documentadas sobre la calidad de la cuantizacion.
-- El repositorio registra cero descargas y una unica marca de "like" en el momento de la consulta, lo que indica que se trata de una publicacion muy reciente y poco validada por la comunidad.
-- Fechas de creacion y actualizacion registradas (2026-10-01) que conviene tratar con cautela si no coinciden con la version final publicada.
+- Información técnica muy limitada: no se documentan arquitectura, contexto, idiomas ni dataset de entrenamiento, lo que dificulta evaluar su idoneidad en producción.
+- No es un modelo generativo: no debe emplearse para generar texto, código o conversación; su uso previsto es la clasificación y la decisión.
+- Dependencia de infraestructura específica: requiere el endpoint `/v1/systemone` de llama.cpp, lo que limita su portabilidad a otros servidores de inferencia.
+- Riesgo de sesgos y alucinación: no evaluable sin documentación del entrenamiento; en tareas de clasificación, un sesgo en los datos puede traducirse en decisiones sistemáticamente erróneas.
+- Idiomas: al no estar documentados, no se puede garantizar un rendimiento adecuado fuera del idioma o idiomas de entrenamiento.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero conviene verificar las condiciones del modelo base SupersonicLabs/Julia-1 por si añade restricciones adicionales.
+- Conversión automática: al haberse generado con una herramienta automática, pueden existir diferencias de comportamiento frente al modelo original en safetensors.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ggml-org/Julia-1-GGUF
-- Organizacion ggml-org en Hugging Face: https://huggingface.co/ggml-org
+- Hugging Face (GGUF): https://huggingface.co/ggml-org/Julia-1-GGUF
 - Modelo base: https://huggingface.co/SupersonicLabs/Julia-1
-- Pull request de llama.cpp con la API systemone: https://github.com/ggml-org/llama.cpp/pull/29818
-- Herramienta de conversion: https://github.com/ggml-org/convert
-- Aplicacion de ejecucion: https://llama.app
-- Articulo divulgativo sobre Julia 1: https://dev.to/jamilxt/julia-1-a-144m-parameter-decision-model-trained-for-104-59i2
-- Buscador de modelos GGUF: https://local-ai-zone.github.io/
-- GGUF Loader (repositorio de referencia, no oficial del modelo): https://github.com/GGUFloader/gguf-loader
+- PR de llama.cpp con el endpoint `/v1/systemone`: https://github.com/ggml-org/llama.cpp/pull/29818
+- Herramienta de conversión: https://github.com/ggml-org/convert
+- App Llama: https://llama.app

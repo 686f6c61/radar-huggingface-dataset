@@ -26,8 +26,6 @@
     "conversational",
     "instruct",
     "en",
-    "base_model:ReadyArt/Dark-Craving-26B-A4B-v0.2",
-    "base_model:quantized:ReadyArt/Dark-Craving-26B-A4B-v0.2",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

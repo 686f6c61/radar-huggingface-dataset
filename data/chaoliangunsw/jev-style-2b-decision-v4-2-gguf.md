@@ -2,90 +2,93 @@
 
 ## Resumen
 
-Jev-Style-2B-Decision-v4.2-GGUF es la distribucion en formato GGUF del modelo Jev-Style-2B-Decision-v4.2, un modelo de decision de 1.881.825.088 parametros desarrollado por Chaoliang Yan (usuario chaoliangUNSW). No es un modelo generativo al uso: dado un estado textual y una bateria de preguntas tipadas (`choice`, `noul`, `score`), devuelve una probabilidad para cada opcion suministrada mediante un scorer de atencion por bloques y una cabeza de veredicto especifica. El modelo base esta etiquetado con la familia qwen3.5 y es solo texto.
+Jev-Style-2B-Decision-v4.2-GGUF es la distribucion cuantizada en formato GGUF del modelo chaoliangUNSW/Jev-Style-2B-Decision-v4.2, un modelo de decision de aproximadamente 1.880 millones de parametros desarrollado por Chaoliang Yan (chaoliangUNSW). No es un modelo generativo al uso: dado un estado textual y un conjunto de preguntas tipadas, devuelve una probabilidad para cada opcion suministrada. El pipeline declarado en Hugging Face es text-classification y el modelo se distribuye bajo licencia Apache-2.0.
 
-La relevancia de esta release es practica: permite ejecutar el modelo sin PyTorch, sobre llama.cpp con un build parcheado (`build_jev_score.sh`), en tres precisiones (F16, Q8_0 y Q4_K_M). El modelo original obtuvo 46,74 en la suite Decision Index public 0.3, con 140.178 peticiones puntuadas correctamente, medida sobre el modelo PyTorch BF16 en CUDA. Esta version GGUF es una cuantizacion del mismo, no un reentrenamiento.
+La relevancia de esta release radica en que permite ejecutar el modelo de decision fuera del stack de PyTorch, mediante un runtime propio construido sobre llama.cpp en su version C++17. El modelo base se asocia en los tags a la familia Qwen3.5 y emplea un protocolo de block-attention entrenado especificamente, con un presupuesto de entrada de 32.768 tokens y un maximo de 255 opciones por consulta.
 
-Se trata de un modelo de nicho, con 0 descargas y 1 like en el momento de la consulta, y con un protocolo de inferencia no estandar que exige runtime propio. No debe confundirse con un chat model: la model card indica explicitamente que para imagenes hay que usar el modelo principal de Hugging Face, y que el scorer personalizado es obligatorio.
+Esta variante GGUF es exclusivamente texto y JSON: no procesa imagenes, a diferencia de la release principal en PyTorch. Se ofrece en tres precisiones (F16, Q8_0 y Q4_K_M) y esta pensada para despliegues ligeros en CPU, Apple Silicon (Metal) o GPU NVIDIA con CUDA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atencion por bloques entrenada (block-attention) y cabeza de veredicto; familia qwen3.5 segun tags |
-| Parametros totales | 1.881.825.088 (1,88 B) antes de cuantizacion |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens de presupuesto de entrada |
-| Tipos de cuantizacion | F16 (3,78 GB), Q8_0 (2,01 GB), Q4_K_M (1,27 GB) |
+| Arquitectura | Transformer con protocolo de block-attention entrenado y cabezal de verdicto (no generativo, orientado a decision) |
+| Parametros totales | 1.881.825.088 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens de presupuesto de entrada; maximo 255 opciones por consulta |
+| Tipos de cuantizacion | F16, Q8_0, Q4_K_M |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (sin relicenciar datos de terceros ni salidas de profesor) |
-| Formato de pesos | GGUF (repo de 7,1 GB); pesos originales en safetensors en el modelo base |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (F16, Q8_0, Q4_K_M); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de una arquitectura transformer de 1,88 B parametros con un protocolo de atencion por bloques entrenado especificamente para el calculo compartido de estado entre multiples preguntas. La salida no es texto libre: el readout toma los hidden states del veredicto, los multiplica escalarmente por la diferencia entre las filas de embedding yes/no atadas y aplica softmax para obtener una probabilidad por opcion. El orden de las opciones se preserva, y hay una temperatura global fija de 0,8813575635811984 para los tres tipos de pregunta.
+El modelo es un transformer de unos 1.880 millones de parametros con un protocolo de atencion por bloques entrenado especificamente para tareas de decision. La lectura de salida (readout) consiste en el producto escalar de los estados ocultos del verdicto con la diferencia entre las filas de embedding de "si" y "no" (embedding-row difference con pesos atados), seguido de una softmax. Soporta tres tipos de pregunta —`choice`, `noul` y `score`— preservando el orden de las opciones, y aplica una temperatura global fija de 0.8813575635811984 para los tres tipos. El calculo del estado se comparte entre multiples preguntas para reducir coste.
 
-El entrenamiento sigue la linea v4 e incluye destilacion de etiquetas suaves desde la API TypeSafe Jev 1.14, ademas de material generado y de fuentes upstream. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo RLHF o DPO. El modelo se mantiene de forma independiente por Chaoliang Yan, sin afiliacion ni respaldo de TypeSafe.
-
-La innovacion tecnica destacable es el protocolo de decision: en lugar de generar una respuesta, el modelo puntua opciones con un scorer dedicado que requiere un build concreto de llama.cpp (commit 441df11f65ea0b6d0c72965aaf70c8241070ddcb) y el script `build_jev_score.sh`. El repositorio incluye `manifest.json` con tamanos y SHA256 de cada fichero, y `release_config.json` con los pesos origen y los ajustes de conversion.
+El linaje de entrenamiento parte de la version v4 e incluye destilacion de etiquetas suaves (soft-label distillation) del API TypeSafe Jev 1.14, junto con material de entrenamiento generado y de fuentes upstream. El autor mantiene JevStyle de forma independiente, sin afiliacion ni respaldo de TypeSafe. La licencia Apache-2.0 de los pesos no relicencia los datos de terceros ni las salidas del modelo profesor. No se detalla en la informacion disponible el numero de tokens de entrenamiento ni la composicion exacta del dataset.
 
 ## Capacidades
 
-- Clasificacion y decision sobre opciones: devuelve una probabilidad para cada opcion suministrada, con tres tipos de pregunta (`choice`, `noul`, `score`).
-- Puntuacion de estados textuales: recibe un estado y un conjunto de preguntas tipadas y calcula veredictos de forma determinista dado el orden de opciones.
-- Procesamiento por lotes de preguntas: el protocolo de atencion por bloques comparte el calculo de estado entre varias preguntas sobre el mismo estado.
-- Entrada en texto y JSON: admite ambos formatos de entrada.
-- Limite operativo de 255 opciones por peticion y 32.768 tokens de entrada; las peticiones fuera de presupuesto se rechazan.
-- Solo texto: no procesa imagenes; para vision hay que usar el modelo principal de Hugging Face.
-- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso generativo ni modo thinking en la informacion disponible.
+- Clasificacion y decision sobre opciones multiples: devuelve una probabilidad por cada opcion suministrada, preservando el orden.
+- Tres tipos de pregunta: `choice` (eleccion entre opciones), `noul` y `score`.
+- Procesamiento de multiples preguntas sobre un mismo estado con computo de estado compartido.
+- Entrada en texto y JSON exclusivamente en esta build GGUF; no admite imagenes.
+- Soporte de hasta 255 opciones por consulta y hasta 32.768 tokens de entrada; las peticiones fuera de presupuesto se rechazan.
+- Inferencia en CPU, Apple Silicon via Metal y GPU NVIDIA via CUDA (compilacion con `-DGGML_CUDA=ON`).
+- No dispone de tool calling, function calling, generacion libre de texto ni capacidades multimodales en esta release.
 
 ## Casos de uso
 
-- Moderacion y triaje de contenido: dado un texto de estado y una pregunta tipo `choice` con opciones predefinidas (por ejemplo, categorias de riesgo), el modelo devuelve la distribucion de probabilidad sobre las opciones, lo que permite umbrales calibrados y revision humana solo en casos ambiguos.
-- Enrutado de tickets de soporte: con un estado que describe la incidencia y una pregunta `choice` sobre el equipo o cola destino, se obtiene una probabilidad por cola; el limite de 255 opciones cubre catalogos de destino amplios.
-- Verificacion de hechos simples: preguntas tipo `noul` o `score` sobre un estado permiten puntuar afirmaciones o comprobar condiciones booleanas con una probabilidad explicita, util en pipelines de validacion de datos.
-- Evaluacion automatizada de respuestas: dado un estado con la pregunta original y la respuesta candidata, el modelo puntua la calidad o correccion mediante preguntas `score`, integrable en suites de evaluacion internas.
-- Clasificacion documental por lotes: el calculo compartido de estado entre multiples preguntas sobre el mismo texto reduce el coste cuando hay que aplicar decenas de criterios a un mismo documento.
-- Sistemas de decision con requisitos de auditabilidad: la salida es una probabilidad por opcion con temperatura fija y orden preservado, lo que facilita reproducir y auditar decisiones en entornos regulados.
-- Despliegue en hardware modesto: la variante Q4_K_M de 1,27 GB permite ejecutar el scorer en portatiles y equipos con GPU de consumo, util para prototipos y pruebas locales antes de pasar a la version BF16 en CUDA.
+- Moderacion y clasificacion de contenido: dado un texto de estado y un conjunto de etiquetas candidatas, el modelo devuelve probabilidades por etiqueta, lo que permite umbralizar decisiones de forma calibrada y auditable.
+- Triaje de tickets de soporte: con un estado que describa la incidencia y preguntas de tipo `choice` sobre categoria, prioridad y equipo, se obtiene una distribucion de probabilidad util para enrutado automatico.
+- Evaluacion de respuestas en pipelines de QA: usar el tipo `score` para puntuar la adecuacion de una respuesta frente a un estado, integrable en sistemas de validacion automatica.
+- Clasificacion de documentos JSON estructurados: al aceptar entrada JSON, puede procesar registros de formularios o eventos y decidir entre opciones predefinidas.
+- Despliegue en entornos con recursos limitados: la variante Q4_K_M (1,27 GB) permite ejecutar el modelo en CPU o en GPU de gama de consumo, adecuado para servicios de clasificacion de baja latencia en el borde.
+- Investigacion sobre modelos de decision: el protocolo de block-attention y el readout por diferencia de embeddings lo convierten en un objeto de estudio reproducible para experimentos de calibracion y decision con opciones multiples.
+- Filtrado previo en pipelines generativos: usar el modelo como etapa de decision rapida (por ejemplo, decidir si una consulta requiere escalado a un modelo mayor) antes de invocar un LLM generativo.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Resultado | Modelo evaluado |
+| Metrica | Resultado | Notas |
 |---|---|---|
-| Decision Index public 0.3 (suite completa) | 46,74 | Jev-Style-2B-Decision-v4.2 original en PyTorch BF16 CUDA |
-| Peticiones puntuadas correctamente | 140.178 | Jev-Style-2B-Decision-v4.2 original en PyTorch BF16 CUDA |
+| Decision Index public 0.3 suite (completa) | 46,74 | Medido con el modelo original en PyTorch BF16 sobre CUDA; 140.178 peticiones puntuadas con exito |
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta version GGUF ni comparaciones con MMLU, HumanEval, GSM8K u otros benchmarks estandar. El resultado de 46,74 corresponde al modelo original, no a las cuantizaciones GGUF.
+No se han publicado en la informacion disponible resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) para este modelo, ni mediciones de rendimiento especificas para las variantes GGUF.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 3,8 GB para F16, 2,0 GB para Q8_0 y 1,3 GB para Q4_K_M, mas el overhead del runtime y del contexto (hasta 32.768 tokens).
-- GPU recomendadas: no se especifican modelos concretos; la model card menciona soporte CUDA mediante `LLAMA_CMAKE_FLAGS="-DGGML_CUDA=ON"` y Metal en Apple silicon.
-- GPU de consumo: las tres variantes caben en GPUs consumer con 4 GB o mas de VRAM en el caso de F16, y en 2 GB o mas para Q4_K_M; tambien es viable en CPU.
-- Opciones de despliegue: llama.cpp con el commit 441df11f65ea0b6d0c72965aaf70c8241070ddcb y el build `build_jev_score.sh`; el scorer personalizado es obligatorio y no se indica compatibilidad con vLLM, TGI u Ollama.
-- Requisitos de entorno: Python 3.12, CMake y compilador C++17.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: F16 ~3,78 GB, Q8_0 ~2,01 GB, Q4_K_M ~1,27 GB (tamanos de fichero; el consumo en ejecucion es algo superior).
+- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA y al menos 4 GB de VRAM para Q4_K_M; A100/H100 no son necesarias dado el tamano.
+- Cabe en GPU de consumo: si, en RTX 3060/4060 y superiores con Q4_K_M o Q8_0; tambien en Apple Silicon via Metal y en CPU.
+- Opciones de despliegue: runtime propio sobre llama.cpp (commit 441df11f65ea0b6d0c72965aaf70c8241070ddcb) mediante `build_jev_score.sh` y `jev_style_decision_gguf.py`; requiere Python 3.12, CMake y compilador C++17. El scorer de block-attention/verdicto personalizado es obligatorio, por lo que no es compatible con runners GGUF genericos sin adaptacion.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (modelos de decision con salida de probabilidad por opcion), y las alternativas generativas de tamano similar no son funcionalmente equivalentes al protocolo de scorer de este modelo.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Formato |
+|---|---|---|---|---|---|
+| Jev-Style-2B-Decision-v4.2-GGUF | 1,88 B | 32.768 tokens | Decision/clasificacion con opciones | Apache-2.0 | GGUF |
+| Jev-Style-2B-Decision-v4.2 (base) | 1,88 B | 32.768 tokens | Decision/clasificacion, con soporte de imagenes | Apache-2.0 | safetensors (PyTorch) |
+| Modelos de clasificacion tipo BERT/RoBERTa | 0,1-0,4 B | 512 tokens tipicamente | Clasificacion de etiqueta unica | MIT/Apache-2.0 | safetensors, ONNX |
+| LLM generativos de ~2 B (p. ej. familia Qwen) | ~2 B | 32.000+ tokens | Generacion de texto | Apache-2.0 u otras | safetensors, GGUF |
+
+La comparacion directa con clasificadores BERT no es equivalente: Jev-Style devuelve probabilidades sobre conjuntos arbitrarios de opciones por consulta en lugar de una etiqueta fija, y admite contexto mucho mayor. Frente a LLM generativos del mismo tamano, la diferencia es funcional: este modelo no genera texto, sino que puntua opciones.
 
 ## Limitaciones y advertencias
 
-- Protocolo no estandar: requiere un runtime parcheado y un commit concreto de llama.cpp; no funciona como un GGUF convencional en herramientas genericas.
-- Solo texto: no admite imagenes; para vision hay que usar el modelo principal.
-- Limites duros de entrada: 32.768 tokens y 255 opciones; las peticiones fuera de presupuesto se rechazan sin degradacion gradual.
-- El resultado de 46,74 en Decision Index corresponde al modelo original en BF16 CUDA, no a las cuantizaciones GGUF; el rendimiento de Q4_K_M y Q8_0 no esta documentado.
-- La licencia Apache-2.0 de los pesos no relicencia datos de terceros ni salidas del profesor (TypeSafe Jev 1.14); hay que revisar `LICENSE`, `NOTICE` y la model card del modelo padre antes de uso comercial.
-- El modelo se mantiene de forma independiente, sin afiliacion ni respaldo de TypeSafe.
-- No se documentan sesgos conocidos, tasas de alucinacion ni cobertura idiomatica; al ser un scorer de opciones, el riesgo de alucinacion se traslada a la calibracion de las probabilidades.
-- Adopcion muy baja (0 descargas, 1 like) y publicacion reciente, lo que implica poca validacion externa.
-- El autor lo describe como un candidato diagnostico de continuacion de la linea v4, no como un modelo de produccion consolidado.
+- Esta build GGUF no procesa imagenes; para entrada multimodal hay que usar la release principal en PyTorch.
+- El modelo no es generativo: no produce texto libre ni admite tool calling; su unica salida es una distribucion de probabilidad sobre opciones.
+- Requiere un runtime personalizado (scorer de block-attention/verdicto); no funciona con llama.cpp estandar ni con Ollama/vLLM sin adaptacion.
+- Las peticiones que superan 32.768 tokens de entrada o 255 opciones se rechazan, no se truncan.
+- No se especifican los idiomas soportados; el rendimiento fuera del ingles no esta documentado.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; al ser un modelo de decision, el riesgo se traduce en probabilidades mal calibradas mas que en texto inventado.
+- La licencia Apache-2.0 cubre los pesos, pero no relicencia datos de terceros ni salidas del modelo profesor (TypeSafe Jev 1.14); revisar `LICENSE`, `NOTICE` y la model card del modelo padre antes de uso comercial.
+- El resultado de 46,74 en Decision Index es una autoevaluacion del autor sobre el modelo original en BF16, no sobre estas variantes cuantizadas; la cuantizacion puede degradar la calibracion.
+- Proyecto mantenido de forma independiente y sin afiliacion a TypeSafe.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2-GGUF
-- Modelo base: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2
+- Modelo en Hugging Face (GGUF): https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2
 - Bundle de resultados de evaluacion: https://huggingface.co/datasets/chaoliangUNSW/decision-index-results-v4.2
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

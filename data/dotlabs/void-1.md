@@ -2,115 +2,106 @@
 
 ## Resumen
 
-void.1 es un modelo de lenguaje de 90,15 millones de parámetros desarrollado por dotlabs (autor `appvoid`) y publicado bajo licencia Apache 2.0. Se presenta como el primer paso de una serie orientada al razonamiento abstracto y simbólico sobre texto, con el inglés como única lengua de anclaje. Su rasgo diferencial es la tokenización a nivel de byte: el modelo no trabaja con un vocabulario BPE convencional como unidad primaria, sino que se entrena directamente sobre bytes, lo que el autor resume en el lema "bytes is all you need".
+void.1 es un modelo de lenguaje de pequeno tamano (SLM) desarrollado por dotlabs que se presenta como un paso inicial hacia modelos capaces de razonamiento simbolico y abstracto sobre texto, con base en ingles. A diferencia de la mayoria de SLM actuales, no emplea tokenizacion BPE como interfaz principal, sino que se define como un modelo *byte-level*: procesa directamente bytes, lo que elimina el vocabulario fijo de tokens y permite, en teoria, una cobertura total de cadenas de entrada. El modelo se entrena desde cero, sin destilacion de modelos mayores, sobre una mezcla de corpus publicos y un kernel simbolico interno.
 
-El modelo parte de una arquitectura de tipo transformer vinculada a la familia Qwen3 (etiqueta declarada por el autor) y fue entrenado desde cero, no como un ajuste de un modelo existente. El entrenamiento consumió 131,69 mil millones de bytes, equivalentes a entre 32,92 y 43,90 mil millones de tokens estándar, con una media aproximada de 38 mil millones de tokens BPE, distribuidos en 900.000 pasos y unas 12 jornadas sobre una única GPU RTX PRO 6000.
+La relevancia actual del modelo reside en su posicion en el leaderboard Open SLM: el autor afirma que void.1 (24.38 II) supera o iguala a palmer-006 (23.33 II) en todos los benchmarks evaluados, dentro de la categoria de modelos por debajo de 100M de parametros. Con 90.148.352 parametros totales y un contexto no documentado en la informacion disponible, void.1 se orienta a experimentacion en investigacion de tokenizacion byte-level y razonamiento simbolico, mas que a despliegues de produccion generalistas.
 
-Su relevancia actual es doble. Por un lado, ocupa el primer puesto en la categoría de modelos por debajo de 100 millones de parámetros del Open SLM Leaderboard. Por otro, sirve como banco de pruebas reproducible para investigar tokenización byte-level y razonamiento simbólico en modelos muy pequeños, un régimen donde cada punto de benchmark es difícil de conseguir y donde los detalles de entrenamiento rara vez se publican con transparencia.
+El modelo se publica bajo licencia Apache 2.0, con pesos en safetensors y compatibilidad con la libreria transformers. El autor indica que void.2 esta pausado para centrarse en modelos con mejor rendimiento y usabilidad, por lo que void.1 debe considerarse una version de investigacion congelada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de la familia Qwen3 con tokenización a nivel de byte (byte-level) |
-| Parámetros totales | 90.148.352 (90,15 M) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (el autor no documenta cuantizaciones publicadas) |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer decoder-only byte-level (basado en qwen3, segun tags) |
+| Parametros totales | 90.148.352 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Librería de referencia | transformers |
-| Tarea declarada | text-generation |
+| Vocabulario | byte-level (256 simbolos base, sin BPE) |
+| Datos de entrenamiento | 131.69 mil millones de bytes (~32.92B-43.90B tokens estandar, ~38B tokens BPE equivalentes) |
+| Hardware de entrenamiento | 1x NVIDIA RTX PRO 6000, ~12 dias |
+| Checkpoint evaluado | step 900.000 (lr decayed a 0 sobre ~10B bytes adicionales) |
 
 ## Arquitectura y entrenamiento
 
-void.1 es un transformer denso con tokenizador byte-level, etiquetado por el autor dentro de la familia Qwen3. La elección de bytes como unidad de entrada implica que cualquier texto se representa sin vocabulario fijo ni problemas de tokens fuera de vocabulario, a cambio de secuencias efectivas más largas que con un BPE tradicional. El checkpoint evaluado corresponde al paso 900.000 de entrenamiento, con un coste total de aproximadamente 12 días sobre una sola GPU RTX PRO 6000.
+void.1 es un transformer decoder-only de 90M de parametros que opera sobre bytes en lugar de tokens BPE. La model card lo etiqueta con `qwen3`, lo que sugiere que la arquitectura sigue el diseno de la familia Qwen3 (probablemente con atención causal estandar, RMSNorm y SwiGLU, aunque estos detalles no se confirman en la informacion disponible). La innovacion central es la interfaz byte-level: el modelo recibe secuencias de bytes crudos, lo que evita el sesgo de vocabulario y permite representar cualquier texto, incluidos simbolos, codigo y ruido, sin tokens especiales de fallback.
 
-El corpus combina cuatro fuentes declaradas: `karpathy/climbmix-400b-shuffle`, `openbmb/Ultra-FineWeb-L3`, `dotlabs/rewrite` y `nvidia/OpenMathInstruct-2`. Este último aporta la componente matemática que se refleja en el benchmark ArithMark-3. El volumen total asciende a 131,69 mil millones de bytes, lo que equivale a entre 32,92 y 43,90 mil millones de tokens estándar, con una media estimada de 38 mil millones de tokens BPE. La model card menciona además la integración de un "kernel simbólico interno", sin detallar su implementación. No hay información sobre fases de RLHF, DPO u otro alineamiento posterior al preentrenamiento: el modelo se presenta explícitamente como un preentrenamiento puro.
+El entrenamiento se realizo desde cero sobre 131.69 mil millones de bytes, equivalentes a entre 32.92B y 43.90B tokens estandar (unos 38B tokens BPE de media). La mezcla de datos incluye `karpathy/climbmix-400b-shuffle`, `openbmb/Ultra-FineWeb-L3`, `dotlabs/rewrite` y `nvidia/OpenMathInstruct-2`, ademas de un "internal symbolic kernel" no documentado publicamente. El checkpoint evaluado es el step 900.000, con learning rate decaido a cero sobre aproximadamente 10B bytes adicionales. No se documenta en la informacion disponible el uso de RLHF, DPO, decodificacion especulativa ni mecanismos de atencion lineal.
 
 ## Capacidades
 
-- Generación de texto en inglés a partir de preentrenamiento, sin ajuste de instrucciones documentado.
-- Razonamiento simbólico y abstracto sobre texto, eje declarado del proyecto.
-- Aritmética básica: obtiene un 44,80 % en ArithMark-3, por encima de los modelos comparables de su franja de tamaño (40,00 %–40,70 %).
-- Comprensión de sentido común a pequeña escala: HellaSwag 38,68 %, PIQA 67,46 %.
-- Razonamiento científico elemental: ARC-E 47,31 %, ARC-C 28,16 %.
-- Procesamiento byte-level sin vocabulario cerrado, lo que en principio permite manejar cualquier cadena de bytes, incluidos artefactos, ruido o texto no normalizado.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: no disponibles; el modelo declara únicamente inglés.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generacion de texto en ingles con interfaz byte-level, sin dependencia de un tokenizador BPE externo.
+- Razonamiento simbolico y abstracto sobre texto, segun la propuesta del autor (kernel simbolico interno).
+- Razonamiento matematico, con datos de entrenamiento provenientes de `nvidia/OpenMathInstruct-2`.
+- Procesamiento de texto sin perdida por tokenizacion: cualquier cadena de bytes es representable.
+- Capacidad multilingue limitada: solo se declara ingles; el byte-level permite en teoria procesar otros idiomas, pero no hay evaluacion publicada.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Modo thinking, vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Investigación en tokenización byte-level: void.1 permite estudiar cómo se comporta un transformer cuando la unidad de entrada es el byte en lugar del subword, con un checkpoint y una configuración de entrenamiento publicados de forma reproducible.
-- Modelado de lenguaje en dispositivos embebidos: con 90 M de parámetros, el modelo cabe en microcontroladores de gama alta, Raspberry Pi o móviles, y puede ejecutar generación de texto sin conexión para autocompletado o etiquetado local.
-- Filtrado y clasificación de texto a gran escala: al ser tan pequeño, puede desplegarse en clústeres de CPU para puntuar millones de documentos por hora, por ejemplo como pre-filtro de calidad antes de un modelo mayor.
-- Educación e investigación en mecánica interna: su tamaño reducido y su entrenamiento desde cero lo hacen idóneo para análisis de representaciones, neuronas y circuitos, donde un modelo de miles de millones de parámetros resulta inviable.
-- Evaluación comparativa de modelos sub-100M: sirve como referencia en el Open SLM Leaderboard y como punto de comparación para nuevos modelos pequeños que quieran medirse en HellaSwag, PIQA, ARC y ArithMark-3.
-- Generación de datos sintéticos a pequeña escala: puede emplearse para producir continuaciones de texto que alimenten experimentos de destilación o de aumento de datos, siempre con revisión humana dado su nivel de error.
-- Prototipado rápido en pipelines de NLP: al cargarse con `transformers` y ser compatible con endpoints y text-generation-inference, permite validar arquitecturas de servicio antes de migrar a un modelo mayor.
+- Investigacion en tokenizacion byte-level: void.1 sirve como baseline reproducible (90M parametros, 131.69B bytes, 12 dias en una RTX PRO 6000) para estudiar el impacto de eliminar BPE en modelos pequenos, comparando curvas de perdida y benchmarks frente a SLM con tokenizador estandar.
+- Experimentos de razonamiento simbolico: el kernel simbolico interno y los datos de `dotlabs/rewrite` permiten evaluar si un SLM puede aprender transformaciones abstractas de cadenas (sustituciones, reescrituras, patrones) sin un vocabulario fijo.
+- Generacion de texto controlada en ingles para prototipos: con 90M de parametros, el modelo cabe en cualquier GPU consumer y sirve para validar pipelines de generacion (transformers, TGI) antes de escalar a modelos mayores.
+- Fine-tuning ligero para tareas de dominio: al ser Apache 2.0 y safetensors, se puede ajustar con LoRA en una unica GPU para tareas de clasificacion, reescritura o extraccion sobre texto en ingles.
+- Educacion y divulgacion: su tamano y su entrenamiento documentado (config, tensorboard, notebook de evaluacion) lo hacen util para explicar el ciclo completo de preentrenamiento de un SLM desde cero.
+- Evaluacion comparativa en leaderboards de SLM: sirve como referencia en la categoria sub-100M del Open SLM Leaderboard, con un indice II de 24.38 frente a los 23.33 de palmer-006.
+- Procesamiento de texto ruidoso o no estandar: al operar sobre bytes, puede manejar entradas con caracteres fuera de vocabulario, errores de codificacion o simbolos raros sin tokens UNK, util en limpieza de datos y preprocesamiento.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en la model card, comparados con otros modelos de la misma franja de tamaño:
+La model card no presenta una tabla numerica de benchmarks por tarea (MMLU, HumanEval, GSM8K, etc.) en el texto proporcionado; solo se indica un indice agregado del Open SLM Leaderboard. Los datos disponibles son:
 
-| Modelo | Parámetros | HellaSwag | PIQA | ARC-E | ARC-C | ArithMark-3 | Intelligence Index |
-|---|---|---|---|---|---|---|---|
-| void.1 | 90,15 M | 38,68 % | 67,46 % | 47,31 % | 28,16 % | 44,80 % | 23,92 |
-| 100M-exp | 98,16 M | 37,78 % | 66,97 % | 49,83 % | 27,22 % | 40,00 % | 22,47 |
-| Rose-1.5-Medium | 98,28 M | 38,09 % | 64,80 % | 47,22 % | 27,13 % | 40,70 % | 21,07 |
-| tinctura-v1 | 96,2 M | 37,96 % | 65,61 % | 47,98 % | 25,77 % | 38,40 % | 20,81 |
-| Surjo-100m | 97,7 M | 35,05 % | 63,87 % | 47,64 % | 25,85 % | 38,90 % | 18,86 |
+| Metrica | void.1 | palmer-006 |
+|---|---|---|
+| Indice Open SLM Leaderboard (II) | 24.38 | 23.33 |
+| Parametros totales | 90.148.352 | no disponible |
+| Categoria | sub-100M | no disponible |
 
-void.1 lidera HellaSwag, PIQA, ARC-C y ArithMark-3 entre los modelos listados, y queda por detrás de 100M-exp en ARC-E (47,31 % frente a 49,83 %). El autor lo sitúa en el primer puesto de la categoría sub-100M del Open SLM Leaderboard. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks multilingües en la información disponible.
+No se han publicado resultados desglosados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor remite al notebook `evals.ipynb` del repositorio para los detalles de evaluacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo a partir de los 90,15 M de parámetros, sin contar caché KV ni activaciones): aproximadamente 180 MB en FP16/BF16, 90 MB en INT8 y 45 MB en INT4.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; también es viable en CPU. El autor entrenó el modelo en una única RTX PRO 6000, pero eso corresponde al entrenamiento, no a la inferencia.
-- Compatibilidad con GPU de consumo: sí, cabe con holgura en cualquier GPU de consumo actual (RTX 3060, RTX 4090, etc.) e incluso en iGPU y aceleradores de borde.
-- Opciones de despliegue: `transformers` (librería declarada), text-generation-inference y endpoints compatibles según las etiquetas del repositorio. No hay constancia de conversiones GGUF, Ollama o vLLM publicadas por el autor.
-- Latencia y throughput estimados: no disponibles. El autor no publica mediciones de latencia ni de tokens por segundo.
-- Nota de almacenamiento: el repositorio ocupa 73,1 GB aunque los pesos del modelo suman 90,15 M de parámetros, lo que sugiere la presencia de checkpoints o estados de entrenamiento adicionales. Conviene revisar los ficheros antes de descargar el repositorio completo.
+- VRAM estimada para inferencia: con 90M de parametros en fp32 (~360 MB), fp16 (~180 MB) o int8 (~90 MB), el modelo cabe holgadamente en cualquier GPU consumer; el limite practico lo marca la longitud de contexto y el tamano de lote, no los pesos.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para inferencia en fp16 con lotes pequenos; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son validas. El entrenamiento se realizo en una RTX PRO 6000.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer modernas, incluidas las integradas con suficiente memoria compartida para lotes pequenos.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag `text-generation-inference`), endpoints compatibles (tag `endpoints_compatible`). No se documentan variantes GGUF para llama.cpp u Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Licencia | Contexto | Idiomas | Disponibilidad | Intelligence Index |
-|---|---|---|---|---|---|---|
-| void.1 (dotlabs) | 90,15 M | Apache 2.0 | No disponible | Inglés | Hugging Face, `transformers` | 23,92 |
-| 100M-exp (User01110) | 98,16 M | No disponible en la información | No disponible | No disponible | Hugging Face | 22,47 |
-| Rose-1.5-Medium (GODELEV) | 98,28 M | No disponible en la información | No disponible | No disponible | Hugging Face | 21,07 |
-| tinctura-v1 (bench-labs) | 96,2 M | No disponible en la información | No disponible | No disponible | Hugging Face | 20,81 |
-| Surjo-100m (SurjoLabs) | 97,7 M | No disponible en la información | No disponible | No disponible | Hugging Face | 18,86 |
+| Modelo | Parametros | Contexto | Indice Open SLM (II) | Licencia | Tokenizacion |
+|---|---|---|---|---|---|
+| dotlabs/void.1 | 90.148.352 | no disponible | 24.38 | Apache 2.0 | byte-level |
+| appvoid/palmer-006 | no disponible | no disponible | 23.33 | no disponible | no disponible |
+| Otros SLM sub-100M | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a los datos que el propio autor incluye en la model card. No hay información pública en la documentación consultada sobre contexto, licencia o idiomas de los modelos alternativos más allá de su recuento de parámetros y sus puntuaciones.
+La unica comparacion documentada por el autor es frente a palmer-006, con una ventaja de 1.05 puntos en el indice agregado. No se dispone de datos de contexto, licencia ni tokenizacion de palmer-006 en la informacion proporcionada, ni de comparaciones con otros SLM de referencia (p. ej., Qwen3-0.6B, SmolLM2-135M, MobileLLM) que permitan una tabla mas amplia.
 
 ## Limitaciones y advertencias
 
-- Modelo de 90 M de parámetros: sus resultados absolutos son bajos (HellaSwag 38,68 %, ARC-C 28,16 %). No es apto para tareas de producción que exijan fiabilidad alta sin validación adicional.
-- Riesgo de alucinación elevado: al ser un modelo preentrenado sin alineamiento documentado, no hay garantía de veracidad ni de adherencia a instrucciones.
-- Idioma: solo inglés declarado. El rendimiento fuera del inglés no está evaluado y previsiblemente será pobre.
-- Longitud de contexto: no documentada. Este dato es crítico para cualquier despliegue y no puede asumirse.
-- Tokenización byte-level: las secuencias efectivas son más largas que con BPE, lo que encarece el cómputo por carácter y puede complicar la integración en herramientas que asumen vocabularios estándar.
-- Ausencia de ajuste instructivo: al no documentarse RLHF, DPO ni SFT, el modelo no debe utilizarse como asistente conversacional sin un ajuste previo.
-- Tamaño del repositorio: 73,1 GB frente a los ~180 MB de los pesos en FP16. Verificar el contenido antes de descargar para evitar consumos de disco y ancho de banda innecesarios.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución, con obligación de conservar avisos de copyright y licencia. No se identifican restricciones adicionales en la información disponible.
-- Fechas de publicación: el modelo figura como creado el 26 de septiembre de 2026 y actualizado el 14 de octubre de 2026, lo que conviene contrastar con el estado real del repositorio.
-- Ausencia de benchmarks de código, matemáticas avanzadas y multilingüismo: no se puede inferir capacidad en estos dominios a partir de los datos publicados.
+- Solo se declara soporte de ingles; el rendimiento en otros idiomas no esta evaluado y el byte-level no garantiza calidad multilingue.
+- La longitud de contexto no esta documentada, lo que impide planificar despliegues con ventanas largas.
+- Riesgo de alucinacion alto por su tamano (90M de parametros) y por el volumen de entrenamiento (~38B tokens BPE equivalentes), muy por debajo de modelos de referencia de mayor escala.
+- No hay datos publicados de sesgos; al entrenarse sobre corpus web (climbmix, Ultra-FineWeb) es probable que herede sesgos de esas fuentes, pero no se cuantifican.
+- No se documentan capacidades de tool calling, agentes ni modo thinking, por lo que no es adecuado para pipelines agenticos sin validacion previa.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo es una version de investigacion: el autor pauso void.2 y no garantiza soporte ni mantenimiento de void.1.
+- El tag `qwen3` sugiere una arquitectura derivada, pero no se confirma si los pesos son compatibles con implementaciones optimizadas de Qwen3; conviene validar la carga en transformers antes de produccion.
+- El formato de pesos es safetensors unicamente; no hay GGUF ni cuantizaciones oficiales, lo que limita el despliegue en entornos sin GPU o con llama.cpp.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dotlabs/void.1
-- Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
-- Notebook de evaluaciones e inferencia: https://huggingface.co/dotlabs/void.1/blob/main/evals.ipynb
-- Configuración de entrenamiento: https://huggingface.co/dotlabs/void.1/blob/main/training_config.json
-- Métricas de entrenamiento (TensorBoard): https://huggingface.co/dotlabs/void.1/tensorboard
+- Open SLM Leaderboard (entrada de void.1): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard#dotlabs-void.1
+- Notebook de evaluacion: https://huggingface.co/dotlabs/void.1/blob/main/evals.ipynb
+- Configuracion de entrenamiento: https://huggingface.co/dotlabs/void.1/blob/main/training_config.json
+- Metricas de entrenamiento (TensorBoard): https://huggingface.co/dotlabs/void.1/tensorboard
+- Modelo comparable palmer-006: https://huggingface.co/appvoid/palmer-006
 - Dataset karpathy/climbmix-400b-shuffle: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
 - Dataset openbmb/Ultra-FineWeb-L3: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3
 - Dataset dotlabs/rewrite: https://huggingface.co/datasets/dotlabs/rewrite
 - Dataset nvidia/OpenMathInstruct-2: https://huggingface.co/datasets/nvidia/OpenMathInstruct-2
-- Modelos comparados: https://huggingface.co/User01110/100M-exp , https://huggingface.co/GODELEV/Rose-1.5-Medium , https://huggingface.co/bench-labs/tinctura-v1 , https://huggingface.co/SurjoLabs/Surjo-100m
-
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo. Todos los enlaces anteriores proceden de la información de Hugging Face y de la model card del autor.

@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Kitchoon-Final-26B-A4B-RP-GGUF es una distribucion cuantizada en formato GGUF del modelo Kitchoon-Final-26B-A4B, un modelo de mezcla de expertos (MoE) de 26.000 millones de parametros totales y aproximadamente 4.000 millones de parametros activos por token, desarrollado por SubMaroon y empaquetado para inferencia por Austriani. Segun las etiquetas del autor, el modelo deriva de la familia Gemma y esta afinado especificamente para roleplay, escritura creativa, tematicas oscuras y conversacion sin censura en ingles.
+Kitchoon-Final-26B-A4B-RP-GGUF es la distribucion en formato GGUF de Kitchoon-Final-26B-A4B, un modelo de lenguaje de arquitectura Mixture of Experts (MoE) con 25.233.142.046 parametros totales (aproximadamente 26B) y unos 4B parametros activos por token, segun las etiquetas y cifras declaradas por el autor. El modelo base lo desarrolla SubMaroon, mientras que esta publicacion la mantiene Austriani y esta orientada a inferencia local mediante llama.cpp.
 
-La relevancia de esta publicacion radica en su formato: los pesos se distribuyen como GGUF optimizados para ik_llama.cpp, con cuantizacion mediante imatrix y calibracion V3, lo que permite ejecutar un MoE de 26B en hardware de consumo con una huella de memoria mucho menor que la de los pesos completos. La model card figura marcada como trabajo en progreso ("quants pending"), por lo que la disponibilidad de todas las variantes de cuantizacion puede ser parcial en el momento de la publicacion.
+El modelo esta especializado en generacion de texto creativo y conversacional, con enfasis explicito en roleplay (RP), contenido para adultos (ERP), escritura creativa y temas oscuros, y se distribuye como modelo "uncensored". Tecnicamente resulta relevante porque combina una arquitectura MoE dispersa (solo ~4B parametros activos de 26B) con cuantizaciones GGUF generadas mediante imatrix y calibracion "v3", lo que reduce los requisitos de computo en inferencia frente a un modelo denso del mismo tamano total.
 
-No se dispone de informacion publica sobre la longitud de contexto, el volumen de datos de entrenamiento ni los resultados de benchmarks. La ficha se limita a los datos verificables de la model card y de las etiquetas del repositorio.
+La ficha se centra en la version cuantizada publicada, que ocupa 292,6 GB en el repositorio y declara compatibilidad con endpoints y llama.cpp. La model card del autor esta dominada por una maquetacion HTML del repositorio y ofrece muy poca informacion tecnica verificable sobre el entrenamiento del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) tipo transformer, derivada de la familia Gemma (segun etiqueta `gemma-4`) |
-| Parametros totales | 26B |
-| Parametros activos | Aproximadamente 4B (sufijo A4B) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con imatrix y calibracion V3 (variantes concretas no detalladas en la informacion disponible) |
+| Arquitectura | Mixture of Experts (MoE), etiquetada por el autor como derivada de la familia "gemma-4"; detalles de capas y atencion no disponibles |
+| Parametros totales | 25.233.142.046 (~26B) |
+| Parametros activos | ~4B por token (indicado en el nombre y las etiquetas del modelo) |
+| Longitud de contexto | 1024 tokens (cifra mostrada en la model card del autor) |
+| Tipos de cuantizacion | Multiples cuantizaciones GGUF (el autor menciona imatrix y calibracion v3); el listado concreto por fichero no esta disponible en la informacion proporcionada |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (libreria ik_llama.cpp) |
+| Formato de pesos | GGUF (libreria llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base SubMaroon/Kitchoon-Final-26B-A4B es una mezcla de expertos con 26.000 millones de parametros totales y unos 4.000 millones activos por token, lo que reduce el coste computacional por token frente a un modelo denso del mismo tamano. Las etiquetas del repositorio indican que se apoya en la arquitectura de la familia Gemma, aunque no se detalla la configuracion exacta de expertos, el numero de capas ni la estrategia de enrutamiento.
+La informacion disponible confirma que el modelo es un transformer con arquitectura Mixture of Experts: 26B parametros totales con aproximadamente 4B activos por token. Las etiquetas del autor lo relacionan con "gemma-4" como familia base, aunque no se detalla el numero de expertos, la estrategia de routing ni el tipo de atencion empleado. Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF, DPO o fine-tuning supervisado sobre el modelo base SubMaroon/Kitchoon-Final-26B-A4B.
 
-El ajuste fino esta orientado a roleplay, escritura creativa, tematicas oscuras y conversacion sin censura, segun las etiquetas del autor. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas adicionales. La distribucion de Austriani se limita a la conversion y cuantizacion GGUF con imatrix y calibracion V3 para ik_llama.cpp; no se documentan cambios en los pesos respecto al modelo base.
+La innovacion tecnica documentada en esta publicacion se limita al proceso de cuantizacion: el autor indica el uso de imatrix con un esquema de calibracion denominado "v3-calibration", orientado a preservar la calidad del modelo en tareas de roleplay y escritura creativa tras la compresion. La model card menciona "500 ciclos", presumiblemente como parte de la configuracion de calibracion o del pipeline de cuantizacion, aunque el autor no aclara su significado exacto.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con enfasis en dialogos multi-turno.
-- Roleplay y escritura creativa, incluyendo tematicas oscuras y contenido sin censura declarado por el autor.
-- Generacion de ficcion y narrativa extendida.
-- Conversacion general y asistencia textual.
-- Soporte de tool calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles en la informacion proporcionada.
+- Generacion de texto conversacional y creativo, optimizada para dialogos multi-turno de roleplay.
+- Escritura creativa y narrativa, incluyendo tematicas oscuras ("dark-themes") segun las etiquetas del autor.
+- Contenido para adultos (ERP) y modo "uncensored", con menor rechazo declarado a peticiones sensibles.
+- Mantenimiento de personajes y contexto conversacional dentro de ventanas cortas de 1024 tokens.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no documentadas por el autor.
+- Capacidades multimodales (vision, audio): no disponibles.
+- Multilinguismo limitado al ingles; no se declaran otros idiomas.
 
 ## Casos de uso
 
-- Roleplay conversacional: el modelo puede mantener personajes y tramas a lo largo de sesiones multi-turno, gracias a su ajuste especifico para RP y su naturaleza MoE que reduce el coste por token en inferencia local.
-- Escritura creativa asistida: util para generar borradores de ficcion, dialogos y escenas narrativas con tono oscuro o adulto, un nicho poco cubierto por modelos alineados de forma agresiva.
-- Prototipado de narrativa interactiva: integrable en motores de ficcion interactiva o videojuegos textuales donde se requiere coherencia de personaje y libertad tematica.
-- Chat sin filtros en entornos controlados: adecuado para investigacion sobre comportamiento de modelos poco alineados o para evaluacion de riesgos de contenido.
-- Despliegue local en estaciones de trabajo: al distribuirse en GGUF para ik_llama.cpp, puede ejecutarse en equipos con GPU de consumo o incluso en CPU con suficiente RAM, sin depender de servicios en la nube.
-- Generacion de contenido para comunidades de escritura: asistencia a autores que necesitan explorar temas sensibles o tramas adultas con un modelo que no rechaza peticiones por defecto.
-- Experimentacion con cuantizacion imatrix: sirve como caso de estudio para evaluar la perdida de calidad de las cuantizaciones V3 en un MoE de 26B.
+- Roleplay conversacional local: el modelo puede mantener sesiones de juego de rol con personajes definidos, aprovechando su ajuste especifico para RP y su modo conversacional, aunque limitado a ventanas de unos 1024 tokens por intercambio efectivo.
+- Escritura creativa asistida: util para generar borradores de narrativa, dialogos y tramas con tematica adulta u oscura, donde otros modelos alineados rechazan el contenido.
+- Prototipado de chatbots de entretenimiento: adecuado para entornos de prueba donde se prioriza el tono libre y el estilo narrativo sobre la exactitud factual.
+- Generacion de ficcion interactiva: integrable en motores de historias ramificadas mediante llama.cpp, con coste de inferencia reducido gracias a los ~4B parametros activos del MoE.
+- Despliegue en hardware de consumo: al ser GGUF cuantizado, permite ejecutar un modelo de 26B totales en equipos de gama alta sin GPU de datacenter, a costa de menor contexto y precision.
+- Experimentacion con cuantizacion imatrix: sirve como referencia para estudiar el impacto del esquema "v3-calibration" en la calidad de modelos MoE orientados a creatividad.
+- Fine-tuning posterior o adaptaciones LoRA: la licencia Apache 2.0 facilita derivados para dominios de narrativa o entretenimiento.
 
 ## Benchmarks y rendimiento
 
@@ -54,35 +54,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un MoE de 26B en GGUF Q4 ocupa del orden de 14-16 GB, y en Q8 del orden de 26-28 GB, aunque estas cifras no estan confirmadas por el autor.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, una RTX 4090 (24 GB) deberia poder alojar cuantizaciones de 4-5 bits; para cuantizaciones altas serian necesarias A100 o H100.
-- Cabe en GPU de consumo: probablemente en RTX 3090, RTX 4090 y GPUs con 24 GB o mas para cuantizaciones medias; no confirmado por el autor.
-- Opciones de despliegue: ik_llama.cpp es la libreria declarada. La compatibilidad con llama.cpp estandar, Ollama o vLLM no esta confirmada en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma exacta; un modelo MoE de 26B totales en GGUF suele requerir del orden de 15-20 GB en cuantizaciones de 4-5 bits, aunque el autor no publica cifras por fichero.
+- GPU recomendadas: no especificadas por el autor; por tamano, una RTX 4090 (24 GB) o A100/H100 serian adecuadas para las cuantizaciones mas pequenas.
+- GPU de consumo: probablemente ejecutable en RTX 3090/4090 con cuantizaciones bajas; no confirmado por el autor.
+- Opciones de despliegue: llama.cpp (libreria declarada), con compatibilidad de endpoints indicada en las etiquetas.
+- Latencia y throughput: no disponibles; el uso de ~4B parametros activos deberia reducir el coste por token frente a un modelo denso de 26B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kitchoon-Final-26B-A4B-RP-GGUF | 26B totales / ~4B activos | no disponible | Apache 2.0 | GGUF (ik_llama.cpp) | Ajuste para roleplay sin censura, solo ingles |
-| SubMaroon/Kitchoon-Final-26B-A4B | 26B totales / ~4B activos | no disponible | Apache 2.0 | safetensors (presumiblemente) | Modelo base sin cuantizar del que deriva esta ficha |
-| mradermacher/Kitchoon-26B-A4B-GGUF | 26B totales / ~4B activos | no disponible | Apache 2.0 | GGUF | Cuantizacion alternativa del mismo modelo base por otro autor |
+| Kitchoon-Final-26B-A4B-RP-GGUF | ~26B | ~4B | 1024 | Apache 2.0 | GGUF en Hugging Face |
+| Modelos MoE de ~20-30B orientados a chat (genericos) | no disponible | no disponible | no disponible | variable | no disponible |
+| Modelos densos de ~7-8B para roleplay | ~7-8B | ~7-8B | variable | variable | no disponible |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a otros modelos de la misma categoria.
+No se dispone de datos de benchmarks ni de modelos comparables documentados en la informacion proporcionada para establecer una comparacion cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Modelo declarado como "uncensored": puede generar contenido adulto, violento o sensible sin los filtros habituales de los modelos alineados; requiere supervision en produccion.
-- Entrenado y etiquetado unicamente en ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
-- Riesgo de alucinacion inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad.
-- No hay informacion sobre sesgos conocidos, pero al derivar de la familia Gemma y de un ajuste fino de roleplay, es previsible que herede sesgos del corpus base y del dataset de ajuste.
-- La model card esta marcada como trabajo en progreso, con cuantizaciones pendientes; algunas variantes pueden no estar disponibles o cambiar.
-- Aunque la licencia es Apache 2.0, el uso comercial de un modelo sin censura puede chocar con normativas de contenido y politicas de plataforma; conviene revisar los terminos del modelo base.
-- No se documenta la longitud de contexto, lo que impide planificar casos de uso que requieran ventanas largas.
-- La dependencia de ik_llama.cpp limita la portabilidad frente a ecosistemas mas extendidos como llama.cpp u Ollama.
+- Contenido no filtrado: el modelo se declara "uncensored" y orientado a temas adultos y oscuros, lo que implica riesgos de contenido sensible y requiere controles adicionales en produccion.
+- Ventana de contexto muy corta (1024 tokens), insuficiente para conversaciones largas, documentos extensos o agentes multi-paso.
+- Solo ingles: no hay soporte declarado para castellano ni otros idiomas.
+- Riesgo de alucinacion elevado en tareas factibles (preguntas factuales, codigo, matematicas), ya que el ajuste prioriza estilo narrativo sobre precision.
+- Sesgos desconocidos: el autor no documenta evaluaciones de sesgo ni datos de entrenamiento.
+- Licencia Apache 2.0 permite uso comercial, pero la ausencia de documentacion sobre el dataset y el entrenamiento limita las garantias de cumplimiento.
+- Repositorio de 292,6 GB: requiere almacenamiento considerable y descarga selectiva de ficheros.
+- Model card principalmente decorativa: no ofrece informacion tecnica verificable sobre el modelo base ni sobre el proceso de cuantizacion por fichero.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Austriani/Kitchoon-Final-26B-A4B-RP-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Kitchoon-Final-26B-A4B
-- Cuantizacion alternativa de mradermacher: https://huggingface.co/mradermacher/Kitchoon-26B-A4B-GGUF
+- llama.cpp: https://github.com/ggml-org/llama.cpp

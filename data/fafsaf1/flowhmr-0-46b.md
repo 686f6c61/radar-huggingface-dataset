@@ -2,98 +2,95 @@
 
 ## Resumen
 
-FlowHMR es un modelo de captura de movimiento (motion capture) humana en 3D a partir de video monoculo, desarrollado por el usuario fafsaf1 y publicado en Hugging Face bajo el identificador `fafsaf1/flowhmr-0.46B`. No es un modelo de lenguaje: es un modelo de generacion de movimiento condicionado por video que reformula la recuperacion de movimiento humano como un problema de generacion condicional, en lugar de regresion directa. El nombre del repositorio sugiere 0,46 mil millones de parametros, aunque este dato no se confirma de forma explicita en la informacion disponible.
+FlowHMR es un modelo de captura de movimiento humano en 3D a partir de vídeo monoculo, desarrollado por el autor de Hugging Face `fafsaf1` (los contactos de licencia indicados en la model card son Linchao Bao y Zhanke Wang). No es un modelo de lenguaje: es un modelo generativo de movimiento que reformula el *human mesh recovery* (HMR) como un problema de generación de movimiento condicionada por vídeo, resolviendo la ambigüedad de profundidad inherente a la regresión directa desde una sola cámara.
 
-El problema que aborda es la ambiguedad en profundidad inherente al video monoculo: la regresion directa tiende a colapsar hacia soluciones promediadas y produce movimientos que no son fisicamente plausibles, lo que hace fracasar el tracking basado en fisica. FlowHMR preentrena un modelo de flow matching para generar candidatos de movimiento diversos y despues lo post-entrena con Group Relative Policy Optimization (GRPO) usando dos recompensas: fidelidad al video y trackeabilidad fisica. El resultado reportado es una tasa de exito de tracking fisico del 82,47%, frente al 62,82% del mejor baseline (GVHMR).
+La arquitectura se basa en *flow matching* (modelos de flujo continuo) con aproximadamente 0,46 mil millones de parámetros, preentrenado para generar candidatos de movimiento diversos a partir del vídeo, y posteriormente ajustado con Group Relative Policy Optimization (GRPO) usando dos recompensas: fidelidad al vídeo y trackeabilidad física. El resultado es un modelo que produce movimiento global físicamente plausible, es decir, que un controlador basado en física puede seguir sin fallos.
 
-La relevancia actual reside en que combina generacion por flow matching con RL post-entrenamiento (GRPO) aplicado a un dominio no linguistico, y en que introduce Wild-4K, un conjunto de evaluacion de aproximadamente 4.000 videos de internet para medir recuperacion de movimiento en condiciones reales. El modelo se distribuye con licencia restrictiva solo para uso no comercial.
+Su relevancia actual radica en que supera al estado del arte en fidelidad de movimiento sobre el nuevo benchmark Wild-4K (unas 4.000 vídeos de internet) y eleva la tasa de éxito de tracking físico al 82,47 % frente al 62,82 % de GVHMR, el mejor baseline. El modelo se distribuye únicamente para fines no comerciales de investigación y educación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Flow matching condicionado por video (generacion de movimiento), con post-entrenamiento GRPO |
-| Parametros totales | 0,46B (segun el identificador del repositorio; no confirmado explicitamente en la model card) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible |
+| Arquitectura | Flow matching (generativa) condicionada por vídeo, con post-entrenamiento GRPO |
+| Parametros totales | 0,46 B (según nomenclatura del repositorio) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica: entrada de vídeo, no texto) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo de movimiento, no de texto) |
-| Licencia | FlowHMR Model Weights License (otros; solo uso no comercial educativo, de investigacion y sin animo de lucro) |
-| Formato de pesos | no disponible (el repositorio incluye configs `flowhmr_base` y `flowhmr_latest`; tamano del repo 3,7 GB) |
+| Idiomas soportados | no disponible (modelo de visión/movimiento, no lingüístico) |
+| Licencia | FlowHMR Model Weights License (solo uso no comercial: educativo, investigación y sin ánimo de lucro) |
+| Formato de pesos | no disponible (repo de 3,7 GB; pesos `flowhmr_base` y `flowhmr_latest`) |
 
 ## Arquitectura y entrenamiento
 
-FlowHMR formula la captura de movimiento desde video como un problema de generacion de movimiento condicionado por video. En lugar de regresar directamente los parametros de movimiento desde el video con supervision geometrica, preentrena un modelo de flow matching que, dado un video de entrada, genera multiples candidatos de movimiento diversos. Esta eleccion ataca el colapso hacia la media que sufre la regresion directa bajo ambiguedad de profundidad.
+FlowHMR plantea la captura de movimiento desde vídeo monoculo como un problema de generación de movimiento condicionada por vídeo, en lugar de regresión directa. La razón es que la profundidad es ambigua con una sola cámara y la regresión tiende a colapsar hacia una solución promedio. Para evitarlo, el modelo se preentrena con *flow matching*, una familia de modelos generativos de flujo continuo que aprenden un campo vectorial entre una distribución simple y la distribución de movimientos plausibles. Dado un vídeo de entrada, el modelo preentrenado genera múltiples candidatos de movimiento diversos.
 
-Sobre ese modelo preentrenado se aplica un post-entrenamiento con Group Relative Policy Optimization (GRPO) con dos recompensas: una recompensa de fidelidad que premia la consistencia con el video de entrada y una recompensa de tracking que favorece movimientos que un controlador basado en fisica puede seguir con exito. El ajuste desplaza la preferencia de salida del modelo hacia movimientos fieles al video y fisicamente plausibles. El trabajo introduce ademas Wild-4K, un dataset de evaluacion de aproximadamente 4.000 videos de internet para medir recuperacion de movimiento en condiciones no controladas. No se detalla en la informacion disponible el numero de tokens ni la composicion exacta del dataset de entrenamiento.
+En una segunda fase, el modelo se post-entrena con Group Relative Policy Optimization (GRPO), un algoritmo de optimización por preferencias relativo a un grupo de muestras, con dos recompensas: una de fidelidad, que premia la coherencia con el vídeo de entrada, y otra de tracking, que premia movimientos que un controlador físico puede seguir con éxito. Estas recompensas desplazan la preferencia de salida del modelo hacia movimientos fieles al vídeo y físicamente realizables. El entrenamiento se complementa con el dataset Wild-4K, unas 4.000 grabaciones de internet, para evaluar la recuperación de movimiento en condiciones reales. No se detalla en la información disponible el número de tokens, la composición exacta del corpus de entrenamiento ni los detalles del controlador físico empleado.
 
 ## Capacidades
 
-- Generacion de movimiento humano 3D global fisicamente plausible a partir de video monoculo.
-- Generacion de multiples candidatos de movimiento diversos dada una misma entrada de video (muestreo por flow matching).
-- Recuperacion de movimiento global (no solo pose relativa), segun el abstract.
-- Fidelidad al video de entrada, optimizada explicitamente mediante recompensa durante el post-entrenamiento.
-- Trackeabilidad fisica: los movimientos generados son aptos para seguimiento por un controlador basado en fisica.
-- Evaluacion en video "in the wild" mediante el dataset Wild-4K.
-- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
+- Generación de movimiento humano global en 3D a partir de vídeo monoculo.
+- Producción de múltiples candidatos de movimiento diversos por cada vídeo de entrada (muestreo generativo).
+- Generación de movimiento físicamente plausible y trackeable por un controlador basado en física.
+- Recuperación de movimiento global (no solo pose relativa a la cámara).
+- Evaluación y comparación sobre el benchmark Wild-4K de vídeos de internet.
+- Soporte de tool calling / function calling: no aplica (no es un modelo de lenguaje).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): procesa video como entrada; no se documentan otras modalidades.
+- Capacidades multilingües: no aplica.
+- Capacidades especiales: post-entrenamiento con GRPO y recompensas de fidelidad y tracking; no se documentan modos *thinking*, visión genérica, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Animacion y produccion audiovisual: generar movimiento 3D global a partir de metraje monoculo para retargeting sobre personajes digitales, aprovechando que el modelo produce movimiento fisicamente plausible en lugar de poses que se rompen al aplicarse a un rig.
-- Analisis deportivo: reconstruir la trayectoria global del deportista desde video de una sola camara, usando la fidelidad al video como garantia de que el movimiento generado corresponde al gesto observado.
-- Robotica humanoide y aprendizaje por imitacion: emplear los movimientos generados como referencia para un controlador fisico, dado que el post-entrenamiento con recompensa de tracking optimiza explicitamente la trackeabilidad.
-- Captura de movimiento de bajo coste: sustituir sistemas multi-camara o trajes de captura por video monoculo en prototipado y previsualizacion, con generacion de candidatos diversos para seleccion manual.
-- Investigacion en vision por computador: usar el modelo como baseline y Wild-4K como banco de evaluacion para metodos de recuperacion de movimiento humano en condiciones reales.
-- Monitorizacion y ergonomia: analizar movimiento corporal global en video para estudios de postura y movimiento, apoyandose en la plausibilidad fisica de las trayectorias generadas.
-- Generacion de datos sinteticos de movimiento: muestrear multiples candidatos de movimiento para una misma entrada y filtrar por plausibilidad fisica antes de usarlos en pipelines de entrenamiento.
+- **Animación y producción de videojuegos:** el modelo extrae movimiento global 3D de vídeo de referencia monoculo y genera candidatos de animación que pueden retargetearse a un esqueleto de personaje, reduciendo el coste de captura con trajes o estudios.
+- **Análisis deportivo:** a partir de vídeo de una sola cámara (móvil o broadcast), FlowHMR recupera la trayectoria global del atleta y permite analizar desplazamientos, apoyos y coordinación con mayor fidelidad que la regresión directa.
+- **Rehabilitación y biomecánica:** el movimiento generado es físicamente plausible y trackeable, lo que facilita su uso en estudios de marcha y evaluación funcional donde importa la coherencia física de la trayectoria.
+- **Robótica e imitación de movimiento:** al garantizar que un controlador físico puede seguir el movimiento (82,47 % de éxito de tracking), el modelo sirve para generar demostraciones para *learning from demonstration* y control de humanoides.
+- **Postproducción VFX:** integración de actores reales en escenas 3D con movimiento global consistente, usando los candidatos generados para elegir el que mejor encaje con la cámara virtual.
+- **Investigación en visión por computador:** como baseline generativo para estudiar la ambigüedad de profundidad en HMR y para evaluar métodos sobre Wild-4K en condiciones no controladas.
+- **Creación de datasets de movimiento:** generación de múltiples movimientos plausibles por vídeo para aumentar datos de entrenamiento de otros modelos de captura o de control.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos cuantitativos publicados en la informacion disponible son los de exito de tracking fisico sobre Wild-4K:
-
-| Metrica | FlowHMR | GVHMR (mejor baseline) |
+| Benchmark / metrica | FlowHMR | GVHMR (mejor baseline) |
 |---|---|---|
-| Tasa de exito de tracking fisico | 82,47% | 62,82% |
+| Tasa de exito de tracking fisico | 82,47 % | 62,82 % |
+| Fidelidad de movimiento (Wild-4K) | Superior al estado del arte (cualitativa y cuantitativamente) | Referencia del estado del arte |
 
-El abstract indica que, en experimentos cualitativos y cuantitativos sobre Wild-4K, el metodo supera a los metodos estado del arte en fidelidad de movimiento global. No se han publicado en la informacion disponible resultados numericos de fidelidad (por ejemplo, errores de pose o de trayectoria) ni de otros benchmarks estandar de captura de movimiento.
+No se han publicado en la información disponible cifras numéricas adicionales (MPJPE, error de velocidad, etc.) ni resultados en otros benchmarks distintos de Wild-4K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el tamano del repositorio es de 3,7 GB, lo que da una referencia del orden de magnitud de los pesos.
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Compatibilidad con GPU de consumo: no confirmada; el tamano de pesos (~3,7 GB) es compatible en terminos de memoria con GPU de consumo actuales, pero no se documentan requisitos oficiales.
-- Opciones de despliegue: no disponible; el proyecto remite al repositorio de codigo en GitHub para la implementacion.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible. Con 0,46 B de parámetros, los pesos en precisión de 32 bits ocuparían aproximadamente 1,8 GB y en 16 bits unos 0,9 GB, pero el repositorio ocupa 3,7 GB, por lo que la huella real de inferencia (incluyendo codificadores de vídeo y assets del cuerpo) no está documentada.
+- GPU recomendadas: no disponible. Por tamaño, cabría esperar que funcione en GPUs de consumo, pero no se especifica en la información proporcionada.
+- ¿Cabe en GPU de consumo? No confirmado; el tamaño del modelo es compatible con GPUs de consumo, pero no hay requisitos oficiales publicados.
+- Opciones de despliegue: no disponible (no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que además no aplican a este tipo de modelo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento (tracking fisico en Wild-4K) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| FlowHMR | 0,46B (segun identificador) | no disponible | 82,47% | FlowHMR Model Weights License (no comercial) | Pesos en Hugging Face, codigo en GitHub |
-| GVHMR | no disponible | no disponible | 62,82% | no disponible | no disponible |
-| Otros metodos de HMR basados en regresion | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Enfoque | Tracking fisico (Wild-4K) | Licencia |
+|---|---|---|---|---|
+| FlowHMR | 0,46 B | Flow matching + GRPO | 82,47 % | Solo no comercial |
+| GVHMR | no disponible | HMR basado en aprendizaje (baseline) | 62,82 % | no disponible |
+| Otros metodos de HMR del estado del arte | no disponible | Regresion / supervision geometrica | Inferior a FlowHMR según el paper | no disponible |
 
-La informacion disponible solo permite comparar con GVHMR en la metrica de exito de tracking fisico. No se dispone de datos de parametros, contexto ni licencia de los modelos alternativos.
+La información disponible solo identifica a GVHMR como el baseline más fuerte; no se detallan parámetros, contexto ni licencia de las alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: los pesos se liberan solo para uso no comercial educativo, de investigacion y sin animo de lucro. Cualquier uso comercial requiere contacto con el autor (zhankewang0@gmail.com).
-- La licencia cubre unicamente los pesos del modelo; el codigo fuente se rige por otra licencia en el repositorio, y el software de terceros, modelos preentrenados, assets de body-model y datasets mantienen sus licencias respectivas.
-- Ambiguedad de profundidad: el propio planteamiento del modelo reconoce que la recuperacion de movimiento desde video monoculo es ambigua en profundidad; los candidatos generados pueden no ser unicos.
-- No todos los candidatos generados son fieles al video ni trackeables; el post-entrenamiento desplaza la preferencia, pero no garantiza que toda muestra sea valida.
-- Sesgos conocidos: no disponible en la informacion proporcionada.
-- Riesgo de alucinacion de movimiento: no cuantificado en la informacion disponible; la naturaleza generativa del modelo implica que puede producir movimiento plausible pero no observado en el video.
-- Limitaciones de contexto o idioma: no aplicables o no disponibles (modelo de movimiento, no de texto).
-- Caveats para produccion: no se documentan requisitos de hardware, latencia ni formato de pesos, lo que dificulta una evaluacion de despliegue sin consultar el repositorio de codigo.
+- Licencia restringida: los pesos solo pueden usarse con fines educativos, de investigación y sin ánimo de lucro. El uso comercial requiere contacto con los autores (linchaobao@gmail.com o zhankewang0@gmail.com).
+- La licencia cubre solo los pesos; el código, los modelos preentrenados de terceros, los assets del modelo corporal y los datasets tienen licencias propias.
+- La captura desde vídeo monoculo sigue siendo ambigua en profundidad; el modelo mitiga el problema con generación y post-entrenamiento, pero no lo elimina.
+- La plausibilidad física se mide con un controlador concreto; el 82,47 % de éxito implica que aproximadamente un 17,5 % de los movimientos generados no son trackeables.
+- Riesgo de sesgo: el dataset Wild-4K procede de vídeos de internet, con la distribución demográfica y de escenas que ello conlleva; no se documentan análisis de sesgo.
+- No hay información sobre idiomas, cuantizaciones ni formatos de pesos alternativos, lo que limita la planificación de despliegue.
+- No se han publicado requisitos de hardware ni latencias, por lo que la viabilidad en producción no puede evaluarse con los datos disponibles.
+- Alucinación en el sentido generativo: el modelo puede producir movimientos plausibles pero no fieles al vídeo; la recompensa de fidelidad reduce, pero no garantiza, la ausencia de este fallo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/fafsaf1/flowhmr-0.46B
-- Arbol de ficheros del repositorio: https://huggingface.co/fafsaf1/flowhmr-0.46B/tree/main
+- Modelo en Hugging Face: https://huggingface.co/fafsaf1/flowhmr-0.46B
+- Paper (arXiv): https://arxiv.org/abs/2610.03691
+- Código: https://github.com/flowhmr/flowhmr
+- Página del proyecto: https://flowhmr.github.io/
 - Licencia de pesos: https://huggingface.co/fafsaf1/flowhmr-0.46B/blob/main/LICENSE
-- Paper: https://arxiv.org/abs/2610.03691
-- Codigo: https://github.com/flowhmr/flowhmr
-- Pagina del proyecto: https://flowhmr.github.io/

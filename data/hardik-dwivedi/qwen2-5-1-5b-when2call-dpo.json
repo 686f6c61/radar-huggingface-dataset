@@ -21,6 +21,7 @@
     "trl",
     "text-generation",
     "arxiv:1910.09700",
+    "base_model:hardik-dwivedi/qwen2.5-1.5b-when2call-dpo-merged",
     "region:us"
   ],
   "likes": 0,

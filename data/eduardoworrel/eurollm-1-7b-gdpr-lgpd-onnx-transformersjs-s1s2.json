@@ -5,7 +5,7 @@
   "author": "eduardoworrel",
   "url": "https://huggingface.co/eduardoworrel/EuroLLM-1.7B-GDPR-LGPD-ONNX-transformersjs-S1S2",
   "created_at": "2026-11-17T21:06:17.000Z",
-  "updated_at": "2026-11-17T21:11:50.000Z",
+  "updated_at": "2026-11-18T04:37:42.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -2,72 +2,61 @@
 
 ## Resumen
 
-granite-4.0-1b-speech-gguf es una conversión a formato GGUF del modelo ibm-granite/granite-4.0-1b-speech, desarrollado por IBM y cuantizado por el usuario handy-computer para su uso con la librería transcribe.cpp. Se trata de un audio-LLM compacto orientado a reconocimiento automático del habla (ASR) multilingüe y traducción automática del habla (AST) bidireccional, que acepta audio WAV mono a 16 kHz y devuelve texto.
+Granite-4.0-1b-speech-gguf es la conversión a formato GGUF del modelo IBM Granite Speech 4.0-1b, publicada por el usuario handy-computer para su uso con el motor de inferencia transcribe.cpp. Se trata de un modelo de voz a texto (ASR) y traducción de voz (AST) de tipo audio-LLM: combina un codificador Conformer con atención Shaw de bloque local, un proyector Q-Former de BLIP-2 y el modelo de lenguaje Granite-4.0-1b-base como decodificador autorregresivo. El resultado es un sistema compacto de aproximadamente 2.313 millones de parámetros que transcribe audio de 16 kHz mono WAV a texto en seis idiomas.
 
-La arquitectura combina un codificador Conformer con atención Shaw de bloque local, un proyector Q-Former al estilo BLIP-2 y el modelo de lenguaje granite-4.0-1b-base como decodificador autorregresivo. El sistema completo declara 2.313.228.092 parámetros reales en safetensors, aunque el nombre del modelo hace referencia al decodificador LLM de 1B; la diferencia corresponde al codificador acústico y al proyector multimodal.
+La relevancia de esta ficha reside en que el repositorio empaqueta el modelo en cuantizaciones que van desde BF16 (4,63 GB) hasta Q4_K_M (1,60 GB), lo que permite ejecutar un modelo de reconocimiento de voz multilingüe en hardware de consumo, incluidas CPU y GPU integradas. El autor publica además métricas de WER verificadas contra la referencia de Transformers y contra el leaderboard Open ASR, con validación numérica reproducible.
 
-Su relevancia actual radica en que ofrece ASR en seis idiomas (inglés, francés, alemán, español, portugués y japonés) y traducción desde y hacia el inglés en un paquete que cabe en 1,60 GB en cuantización Q4_K_M, con una tasa de error de palabra del 1,48 % sobre LibriSpeech test-clean. Esto permite desplegar transcripción multilingüe en portátiles y equipos sin GPU dedicada, algo que los modelos de la generación anterior con el doble de parámetros no permitían con la misma comodidad.
+El modelo base lo desarrolla IBM dentro de su familia Granite y se distribuye bajo licencia Apache-2.0, lo que facilita su integración en productos comerciales. Esta conversión concreta mantiene esa licencia y añade ficheros NOTICE que documentan la derivación respecto al original.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Codificador Conformer con atención Shaw de bloque local, proyector Q-Former (BLIP-2) y decodificador LLM granite-4.0-1b-base |
-| Parametros totales | 2.313.228.092 (~2,31 mil millones, dato real de safetensors) |
+| Arquitectura | Audio-LLM: codificador Conformer con atención Shaw de bloque local + proyector Q-Former (BLIP-2) + decodificador LLM Granite-4.0-1b-base |
+| Parametros totales | 2.313.228.092 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16, F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
-| Idiomas soportados | en, fr, de, es, pt, ja |
-| Licencia | Apache-2.0 (heredada del modelo base) |
-| Formato de pesos | GGUF |
-| Entrada de audio | WAV mono a 16 kHz |
-| Modalidad de salida | Texto (transcripción, traducción) |
-| Libreria de inferencia | transcribe.cpp |
-| Traduccion | Sí (en ↔ fr, en ↔ de, en ↔ es, en ↔ pt, en ↔ ja) |
-| Deteccion de idioma | No |
-| Timestamps | No (ninguno) |
-| Streaming | No |
-| Tamano del repositorio | 64,5 GB |
-| Modelo base | ibm-granite/granite-4.0-1b-speech |
-| Commit upstream | bd87ab8, fijado el 2026-05-17 |
-| Descargas | 13.926 |
-| Likes | 0 |
+| Idiomas soportados | inglés, francés, alemán, español, portugués, japonés |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (transcribe.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un esquema de tres componentes: un codificador Conformer que incorpora atención Shaw de bloque local para modelar el audio, un proyector Q-Former heredado del enfoque BLIP-2 que alinea las representaciones acústicas con el espacio del modelo de lenguaje, y el decodificador autorregresivo granite-4.0-1b-base, que es el encargado de generar el texto final. El entrenamiento consistió en alinear por modalidad granite-4.0-1b-base con voz, partiendo de corpus públicos de ASR y AST junto con datasets sintéticos diseñados específicamente para ASR en japonés, ASR con sesgo por palabras clave y traducción del habla. IBM no detalla en la información disponible el número exacto de tokens de audio utilizados ni la composición porcentual del dataset.
+El modelo es un audio-LLM que acopla tres componentes. El codificador de audio es un Conformer con atención Shaw de bloque local, encargado de extraer representaciones del audio de entrada. Un proyector Q-Former, inspirado en BLIP-2, alinea esas representaciones con el espacio de embeddings del modelo de lenguaje. El decodificador es Granite-4.0-1b-base, que genera el texto de forma autorregresiva. La entrada es audio WAV mono a 16 kHz y la salida es una transcripción o una traducción.
 
-Respecto a la generación anterior (granite-speech-3.3-2b y granite-speech-3.3-8b), esta versión incorpora soporte multilingüe de entrada, mayor precisión en ASR en inglés, inferencia más rápida mediante mejor entrenamiento del codificador y decodificación especulativa, y una nueva capacidad de sesgo por listas de palabras clave para mejorar el reconocimiento de nombres propios y acrónimos. Además, reduce a la mitad el número de parámetros respecto a granite-speech-3.3-2b. La conversión a GGUF fue validada contra la referencia de Transformers en el commit 275332d de transcribe.cpp el 2026-05-17.
+Según la model card original de IBM, el entrenamiento se realizó alineando modalidades: se partió de granite-4.0-1b-base y se adaptó a voz sobre corpus públicos de ASR y AST, complementados con datasets sintéticos para ASR en japonés, ASR con sesgo de palabras clave (keyword-biased) y traducción de voz. No se especifican en la información disponible el número total de tokens de audio ni la composición detallada del dataset, ni si se aplicaron fases de RLHF o DPO. La decodificación empleada en la evaluación es greedy.
+
+La conversión a GGUF está anclada al commit bd87ab8 del modelo original (fijado el 2026-05-17) y validada contra la referencia de Transformers en el commit 275332d de transcribe.cpp. El autor documenta explícitamente el normalizador de texto usado (Whisper `EnglishTextNormalizer`), el mismo que emplea el leaderboard Open ASR, lo que facilita la comparación de métricas.
 
 ## Capacidades
 
-- Transcripción de voz a texto en inglés, francés, alemán, español, portugués y japonés.
-- Traducción automática del habla en ambos sentidos entre el inglés y cada uno de los otros cinco idiomas (en ↔ fr, en ↔ de, en ↔ es, en ↔ pt, en ↔ ja). No se contemplan pares directos sin pasar por el inglés, como fr ↔ de.
-- Sesgo mediante listas de palabras clave (keyword list biasing) para mejorar el reconocimiento de nombres, marcas y acrónimos.
-- Funcionamiento totalmente offline: no requiere conectividad ni servicios externos.
-- Inferencia sobre WAV mono a 16 kHz; cualquier otro formato debe convertirse previamente (por ejemplo con ffmpeg).
-- Ejecución en CPU, Metal (Apple) y Vulkan (AMD), según los datos de rendimiento publicados.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Detección automática de idioma: no soportada.
-- Marcas de tiempo (timestamps) por segmento: no soportadas.
-- Streaming o transcripción en tiempo real: no soportado.
+- Transcripción de voz a texto (ASR) en inglés, francés, alemán, español, portugués y japonés.
+- Traducción de voz bidireccional entre inglés y cada uno de los otros cinco idiomas (en ↔ fr, en ↔ de, en ↔ es, en ↔ pt, en ↔ ja), siempre pasando por inglés; no hay traducción directa entre pares no ingleses.
+- Detección de idioma (`lang_detect: true` en los metadatos de transcribe.cpp).
+- Traducción habilitada por defecto en el runtime (`translate: true`).
+- Procesamiento offline: no requiere conexión a red ni servicios externos.
+- Entrada de audio limitada a WAV mono de 16 kHz (conversión previa con ffmpeg si el origen es otro formato).
+- Soporte de sesgo por palabras clave (keyword-biased ASR) según la model card original de IBM.
+- Sin soporte de streaming (`streaming: false`).
+- Sin marcas de tiempo en la salida (`timestamps: none`).
+- Sin selección explícita de idioma en el runtime (`explicit_language_selection: false`).
 
 ## Casos de uso
 
-- Transcripción de reuniones y notas de voz en local: al caber en 1,60 GB con Q4_K_M y ejecutarse en CPU o Metal, permite transcribir audio de forma privada en un portátil sin enviar datos a la nube, algo crítico en entornos con requisitos de confidencialidad.
-- Subtitulado de contenido audiovisual multilingüe: la combinación de ASR en seis idiomas y traducción hacia o desde el inglés cubre flujos de localización de vídeo donde se transcribe el audio original y se genera una versión en inglés (o al contrario) sin herramientas separadas.
-- Análisis de llamadas de atención al cliente: transcripción por lotes de grabaciones telefónicas convertidas a WAV 16 kHz, alimentando posteriormente sistemas de análisis de sentimiento, control de calidad o extracción de motivos de contacto.
-- Dictado especializado con vocabulario propio: la función de sesgo por listas de palabras clave permite mejorar la precisión en dominios con terminología concreta, como nombres de fármacos, referencias legales o códigos de producto.
-- Documentación clínica o legal en equipos aislados: al ser offline y Apache-2.0, se puede desplegar en estaciones de trabajo sin conexión, transcribiendo entrevistas o dictados y almacenando el texto en sistemas internos.
-- Aplicaciones de accesibilidad: transcripción de conversaciones presenciales o contenido hablado para personas con discapacidad auditiva, con soporte de los seis idiomas y sin coste por minuto de API.
-- Procesamiento por lotes de archivos de audio en servidores sin GPU: con RTF de 2,1 en CPU sobre un Ryzen 7 4750U y 5,7 en CPU sobre un M4, es viable procesar colas de audio usando únicamente CPU.
-- Transcripción de contenido en japonés: caso poco cubierto por muchos modelos ASR abiertos, aquí soportado explícitamente mediante datasets sintéticos específicos según la documentación de IBM.
+- Transcripción de reuniones y notas de voz en local: el modelo procesa audio WAV de 16 kHz en un único paso y funciona sin conexión, lo que encaja en aplicaciones de escritorio centradas en privacidad como la que motiva este repositorio (Handy). La cuantización Q5_K_M de 1,83 GB permite mantenerlo residente en memoria en portátiles convencionales.
+- Subtitulado multilingüe de contenido audiovisual: con soporte para seis idiomas y traducción vía inglés, se puede transcribir un vídeo en español y generar una versión en inglés (o al revés) en un mismo pipeline, usando la salida de ASR como entrada de la fase de traducción.
+- Dictado por voz en herramientas de productividad: al ser un modelo pequeño y con latencia baja en GPU integrada (RTF de 24,62 en Metal sobre M4), es viable como motor de dictado en tiempo casi real para fragmentos cortos, integrándolo en editores de texto o IDEs.
+- Archivado y búsqueda de grabaciones: transcripción por lotes de llamadas o entrevistas con el fin de indexar el texto resultante; el tamaño reducido del modelo permite ejecutar varias instancias en paralelo en una sola GPU o incluso en CPU.
+- Accesibilidad para personas con discapacidad auditiva: generación de transcripciones en vivo de conversaciones presenciales o de material formativo, con la ventaja de que el procesamiento es totalmente local y no envía audio a terceros.
+- Investigación en ASR multilingüe: el repositorio publica WER por idioma en FLEURS (en 4,66; de 7,29; es 5,91; fr 8,44; pt 9,6) y CER en japonés (6,44), lo que lo convierte en una línea base reproducible para experimentos de cuantización y comparación de motores de inferencia.
+- Evaluación de pipelines de traducción de voz: al soportar AST bidireccional con inglés como pivote, sirve para prototipar sistemas de interpretación en entornos con recursos limitados, comparando la calidad de la traducción directa frente a la traducción en cascada.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor de la conversión, medidos sobre la partición completa LibriSpeech test-clean (2620 enunciados) con decodificación greedy y normalizador de texto `EnglishTextNormalizer` de Whisper:
+Datos publicados en la model card de esta conversión GGUF. WER sobre LibriSpeech test-clean (2.620 enunciados, batch size 1, sin marcas de tiempo, decodificación greedy, normalizador `EnglishTextNormalizer`):
 
-| Cuantizacion | Tamano | WER (LibriSpeech test-clean) |
+| Cuantizacion | Tamano | WER LibriSpeech test-clean |
 |---|---:|---:|
 | BF16 | 4,63 GB | 1,42 % |
 | F16 | 4,63 GB | 1,42 % |
@@ -76,72 +65,77 @@ Resultados publicados por el autor de la conversión, medidos sobre la partició
 | Q5_K_M | 1,83 GB | 1,42 % |
 | Q4_K_M | 1,60 GB | 1,48 % |
 
-La referencia BF16 reproduce exactamente el 1,42 % publicado en el Open ASR Leaderboard para el modelo original. No se han publicado en la información disponible resultados de benchmarks para el resto de idiomas (francés, alemán, español, portugués, japonés), ni cifras comparativas frente a otros modelos fuera de LibriSpeech.
+WER y CER por idioma en FLEURS con cuantización Q8_0:
 
-Velocidad reportada por el autor, en factor de tiempo real (RTF):
+| Idioma | Metrica | Valor |
+|---|---|---:|
+| Inglés | WER | 4,66 % |
+| Alemán | WER | 7,29 % |
+| Español | WER | 5,91 % |
+| Francés | WER | 8,44 % |
+| Portugués | WER | 9,60 % |
+| Japonés | CER | 6,44 % |
 
-| Plataforma | CPU | Acelerador |
-|---|---|---|
-| Apple M4 | 5,7 | 23,5 (Metal) |
-| Apple M4 Max | 7,2 | 95,3 (Metal) |
-| AMD Ryzen 7 4750U | 2,1 | 5 (Vulkan) |
+Rendimiento en tiempo real (RTF, menor es mejor) medido por el autor:
 
-No se especifica en la información disponible la convención exacta usada para estos valores de RTF; se recomienda consultar la documentación de transcribe.cpp para su interpretación.
+| Plataforma | Backend | RTF |
+|---|---|---:|
+| Apple M4 | CPU | 6,64 |
+| Apple M4 | Metal | 24,62 |
+| Apple M4 Max | CPU | 8,36 |
+| Apple M4 Max | Metal | 75,48 |
+| AMD Ryzen 7 4750U | CPU | 2,75 |
+| AMD Ryzen 7 4750U | Vulkan | 4,63 |
+
+No se han publicado en la información disponible resultados comparativos frente a otros modelos de ASR en MMLU, HumanEval o GSM8K, que no aplican a esta tarea.
 
 ## Requisitos de hardware
 
-- Huella de memoria mínima según el archivo de pesos: 1,60 GB (Q4_K_M), 1,83 GB (Q5_K_M), 2,02 GB (Q6_K), 2,56 GB (Q8_0) y 4,63 GB (BF16/F16). El consumo real de VRAM o RAM será superior a estas cifras por el estado de inferencia y el procesamiento de audio, aunque no se dispone de mediciones de pico en la información proporcionada.
-- Cabe en GPU de consumo: cualquier tarjeta con 6 GB o más puede alojar incluso la variante BF16, y modelos con 4 GB (por ejemplo GTX 1650, RTX 3050) son suficientes para las cuantizaciones Q4_K_M a Q8_0.
-- No requiere GPU: los datos de RTF muestran ejecución en CPU sobre Apple M4 (5,7), M4 Max (7,2) y AMD Ryzen 7 4750U (2,1).
-- Aceleración por GPU integrada: Metal en Apple M4 (23,5) y M4 Max (95,3); Vulkan en AMD Ryzen 7 4750U (5).
-- GPU de centro de datos (A100, H100, etc.): no se han publicado mediciones específicas en la información disponible; por tamaño de pesos, el modelo es holgadamente desplegable en estas tarjetas, pero la ganancia real dependerá del soporte de backend de transcribe.cpp.
-- Despliegue: la vía documentada es el binario `transcribe-cli` de transcribe.cpp, compilado desde fuente con CMake. No se confirma en la información disponible compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Preprocesado obligatorio: conversión del audio a WAV mono 16 kHz antes de la inferencia, por ejemplo `ffmpeg -i input.mp3 -ar 16000 -ac 1 output.wav`.
-- Latencia y throughput: solo se dispone de los valores de RTF de la tabla anterior; no hay cifras de latencia en milisegundos por segundo de audio.
+- VRAM estimada para inferencia: aproximadamente 1,7-2,0 GB con Q4_K_M (1,60 GB de pesos más overhead del runtime); alrededor de 2,7-3,1 GB con Q8_0 (2,56 GB de pesos); en torno a 4,8-5,2 GB con BF16/F16 (4,63 GB de pesos).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4/Q5; para BF16 se recomienda un mínimo de 6 GB. Funciona en GPUs integradas Apple Silicon mediante Metal (validado en M4 y M4 Max) y en GPUs AMD mediante Vulkan (validado en Ryzen 7 4750U).
+- Cabe en GPU de consumo: sí, en cualquier GPU con 4 GB o más (GTX 1650, RTX 3050, RTX 4060, RX 6600, etc.). Con Q4_K_M también es viable en equipos sin GPU dedicada.
+- Opciones de despliegue: el runtime oficial es transcribe.cpp (compilación con CMake y binario `transcribe-cli`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en la información disponible, dado que el formato GGUF está adaptado al esquema específico de transcribe.cpp.
+- Latencia y throughput: el RTF medido es superior a 1 en todas las plataformas, lo que indica que el procesamiento es más rápido que el tiempo real. En el M4 Max con Metal el RTF alcanza 75,48, es decir, procesa audio aproximadamente 75 veces más rápido que su duración. En CPU sobre Ryzen 7 4750U el RTF es de 2,75, suficiente para transcripción por lotes pero no para dictado en vivo con fragmentos muy cortos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas de entrada | Capacidades adicionales | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| granite-4.0-1b-speech (base de esta ficha) | ~2,31 mil millones | en, fr, de, es, pt, ja | ASR multilingüe, AST vía inglés, sesgo por palabras clave, decodificación especulativa | Apache-2.0 | Hugging Face (IBM), versión GGUF de handy-computer |
-| granite-speech-3.3-2b | ~2 mil millones (el doble que la versión 1b) | no disponible con detalle; la versión 4.0 añade el multilingüe | Sin sesgo por palabras clave según lo indicado; sin decodificación especulativa mencionada | no disponible | Hugging Face (IBM) |
-| granite-speech-3.3-8b | ~8 mil millones | no disponible con detalle; la versión 4.0 añade el multilingüe | Sin sesgo por palabras clave según lo indicado | no disponible | Hugging Face (IBM) |
+| Modelo | Parametros | Idiomas | Licencia | Formato | Notas |
+|---|---:|---|---|---|---|
+| Granite-4.0-1b-speech (esta conversion GGUF) | 2.313 M | en, fr, de, es, pt, ja | Apache-2.0 | GGUF para transcribe.cpp | ASR y AST bidireccional via ingles; WER LibriSpeech test-clean 1,42 % en BF16 |
+| Granite-speech-3.3-2b | no disponible en la informacion | no disponible | no disponible | no disponible | Version anterior de la familia; el modelo 4.0-1b anade soporte multilingue y mejoras segun la model card original |
+| Granite-speech-3.3-8b | no disponible en la informacion | no disponible | no disponible | no disponible | Version de mayor tamano de la generacion anterior; sin datos de rendimiento en la informacion disponible |
+| Whisper (variantes de OpenAI) | no disponible | multilingue | MIT | safetensors, GGUF, etc. | Referencia habitual en ASR; el autor usa su normalizador de texto para las metricas, pero no se aportan comparaciones numericas directas |
 
-Las cifras de contexto, WER y rendimiento comparativo de las versiones 3.3 no se han publicado en la información disponible. Tampoco se dispone de datos verificables en esta ficha para comparar con alternativas de otros fabricantes, por lo que no se incluyen.
+No se dispone en la información proporcionada de datos de benchmarks comparativos con otros modelos de ASR, por lo que la comparativa se limita a características estructurales.
 
 ## Limitaciones y advertencias
 
-- No soporta streaming: toda la transcripción es offline, lo que impide usos de dictado en vivo con retroalimentación continua.
-- No realiza detección automática de idioma: el idioma debe conocerse de antemano o gestionarse externamente.
-- No genera marcas de tiempo, lo que limita su uso directo en subtitulado sincronizado sin un paso adicional de alineación.
-- La traducción solo funciona a través del inglés: no existen pares directos como francés ↔ alemán, lo que puede acumular errores en dos saltos.
-- Entrada restringida a WAV mono a 16 kHz; el audio en otros formatos o con más canales debe convertirse previamente.
-- No se han publicado métricas de WER para francés, alemán, español, portugués o japonés en la información disponible, por lo que la calidad fuera del inglés no está cuantificada.
-- La cuantización degrada ligeramente la precisión: Q4_K_M pasa de 1,42 % a 1,48 % de WER en LibriSpeech test-clean. Es una diferencia pequeña pero relevante en dominios con audio ruidoso o vocabulario especializado.
-- Riesgo de alucinación inherente a los decodificadores generativos: al ser un audio-LLM, puede producir texto plausible que no corresponde al audio, especialmente con silencios largos, ruido o audio fuera de dominio.
-- Los sesgos del sistema dependen de los corpus públicos y sintéticos usados por IBM para el alineamiento por modalidad; no se documenta en la información disponible un análisis de sesgos por acento, dialecto, edad o género.
-- El rendimiento en audio telefónico, con reverberación o con solapamiento de hablantes no está documentado en la información disponible.
-- Licencia Apache-2.0: permite uso comercial, pero exige conservar los avisos de copyright y licencia y declarar los cambios realizados en las conversiones derivadas.
-- La conversión GGUF está fijada al commit bd87ab8 del modelo original; actualizaciones posteriores de IBM no estarán reflejadas hasta que el autor regenere los archivos.
+- La entrada debe ser audio WAV mono a 16 kHz; otros formatos o frecuencias requieren conversión previa con ffmpeg u otra herramienta.
+- No soporta streaming: el modelo procesa el audio completo en una sola pasada, lo que limita su uso en transcripción en vivo de baja latencia con fragmentos largos.
+- No genera marcas de tiempo, lo que dificulta la alineación con el audio para subtitulado preciso.
+- La traducción de voz siempre pasa por el inglés; no hay traducción directa entre pares como francés ↔ alemán. Esto puede introducir pérdida de matices en la cadena de traducción.
+- No hay selección explícita de idioma en el runtime; la detección es automática, lo que puede provocar errores en audio con cambio de idioma o ruido.
+- El WER en portugués (9,60 %) y francés (8,44 %) es notablemente superior al de inglés (4,66 %), por lo que la calidad no es homogénea entre idiomas.
+- La cuantización Q4_K_M eleva el WER de LibriSpeech test-clean de 1,42 % a 1,48 %, una degradación pequeña pero medible; para producción con requisitos estrictos se recomienda Q6_K o superior.
+- Riesgo de alucinación inherente a los modelos de lenguaje que actúan como decodificador: en audio con ruido o silencios prolongados puede generar texto no presente en la señal.
+- Sesgos: no se documentan en la información disponible análisis específicos de sesgo por acento, género o variedad dialectal; los corpus de entrenamiento son públicos y su composición no está detallada.
+- Licencia Apache-2.0, que permite uso comercial, pero se debe conservar el fichero NOTICE y la atribución correspondiente al modelo original de IBM.
+- El repositorio ocupa 99,1 GB en total, aunque cada fichero individual de cuantización es mucho menor; conviene descargar solo la variante necesaria.
+- El modelo está anclado a commits concretos del modelo base y del runtime; actualizaciones posteriores de transcribe.cpp podrían requerir reconversión.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf
-- Modelo base: https://huggingface.co/ibm-granite/granite-4.0-1b-speech
-- Decodificador LLM base: https://huggingface.co/ibm-granite/granite-4.0-1b-base
-- Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
+- Repositorio Hugging Face: https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.0-1b-speech
+- Commit del modelo base usado en la conversión: https://huggingface.co/ibm-granite/granite-4.0-1b-speech/commit/bd87ab8
+- Repositorio de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
+- Commit de validación de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/275332d
 - Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/granite-4.0-1b-speech.md
-- Commit de validación en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/275332d
-- Commit del modelo base usado para la conversión: https://huggingface.co/ibm-granite/granite-4.0-1b-speech/commit/bd87ab8
-- Descarga de la aplicación Handy: https://handy.computer/download.html
-- Sitio web de Handy: https://handy.computer/
-- Artículo referenciado en las etiquetas: arXiv:2505.08699
-- Artículo referenciado en las etiquetas: arXiv:2603.11243
-- Modelo de la generación anterior (2B): https://huggingface.co/ibm-granite/granite-speech-3.3-2b
-- Modelo de la generación anterior (8B): https://huggingface.co/ibm-granite/granite-speech-3.3-8b
-- Descarga BF16 (4,63 GB): https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf/resolve/main/granite-4.0-1b-speech-BF16.gguf
-- Descarga F16 (4,63 GB): https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf/resolve/main/granite-4.0-1b-speech-F16.gguf
-- Descarga Q8_0 (2,56 GB): https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf/resolve/main/granite-4.0-1b-speech-Q8_0.gguf
-- Descarga Q6_K (2,02 GB): https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf/resolve/main/granite-4.0-1b-speech-Q6_K.gguf
-- Descarga Q5_K_M (1,83 GB): https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf/resolve/main/granite-4.0-1b-speech-Q5_K_M.gguf
-- Descarga Q4_K_M (1,60 GB): https://huggingface.co/handy-computer/granite-4.0-1b-speech-gguf/resolve/main/granite-4.0-1b-speech-Q4_K_M.gguf
+- Modelo Granite-4.0-1b-base: https://huggingface.co/ibm-granite/granite-4.0-1b-base
+- Modelo Granite-speech-3.3-2b: https://huggingface.co/ibm-granite/granite-speech-3.3-2b
+- Modelo Granite-speech-3.3-8b: https://huggingface.co/ibm-granite/granite-speech-3.3-8b
+- Aplicación Handy (sitio oficial): https://handy.computer/
+- Descarga de Handy: https://handy.computer/download.html
+- Repositorio de Handy en GitHub: https://github.com/cjpais/handy
+- Paper referenciado arXiv:2505.08699: https://arxiv.org/abs/2505.08699
+- Paper referenciado arXiv:2603.11243: https://arxiv.org/abs/2603.11243

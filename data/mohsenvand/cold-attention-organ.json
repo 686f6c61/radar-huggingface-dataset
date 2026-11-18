@@ -5,7 +5,7 @@
   "author": "mohsenvand",
   "url": "https://huggingface.co/mohsenvand/cold-attention-organ",
   "created_at": "2026-11-15T18:57:37.000Z",
-  "updated_at": "2026-11-15T23:10:53.000Z",
+  "updated_at": "2026-11-17T14:59:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "attention",
     "frozen-language-model",
     "qwen2.5",
+    "arxiv:2611.11937",
     "license:apache-2.0",
     "region:us"
   ],

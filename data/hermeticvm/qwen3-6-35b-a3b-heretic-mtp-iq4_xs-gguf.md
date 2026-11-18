@@ -2,136 +2,135 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-heretic-MTP-IQ4_XS-GGUF es una cuantizacion en formato GGUF del modelo llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved, que a su vez es una version con los rechazos reducidos (abliterated) del Qwen/Qwen3.6-35B-A3B original del equipo Qwen. La publica el usuario hermeticvm y su proposito es doble: por un lado, eliminar la mayor parte de las negativas del modelo base mediante una ablacion ortogonal con preservacion de magnitud (Heretic v1.3.0); por otro, ofrecer una cuantizacion de 4,32 bits por peso que permite ejecutar un MoE de 35.500 millones de parametros en tarjetas graficas de 12 GB de VRAM, dejando parte de los expertos en la RAM del sistema.
+Qwen3.6-35B-A3B-heretic-MTP-IQ4_XS-GGUF es una cuantización en formato GGUF, tipo IQ4_XS, del modelo llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved, que a su vez es una versión con las negativas reducidas del Qwen/Qwen3.6-35B-A3B original. Lo publica el usuario hermeticvm y está pensado para ejecutarse en GPUs de consumo con 12 GB de VRAM, manteniendo parte de los expertos en RAM del sistema. El modelo base es un transformer de arquitectura MoE con 35.505.251.456 parámetros totales y aproximadamente 3.000 millones activos por token, con 256 expertos por capa.
 
-Arquitectonicamente se trata de un transformer con mezcla de expertos (Qwen3.5-MoE) de 35.505.251.456 parametros totales y unos 3.000 millones activos por token, con 256 expertos por capa. Mantiene la ventana de contexto nativa de 262.144 tokens (probada por el autor a 131.072) y conserva los 20 tensores de prediccion multi-token (MTP) del bloque `blk.40`, aunque el propio autor advierte de que no los ha validado.
+La característica diferencial de esta cuantización es que conserva la capa MTP (multi-token prediction) del modelo original, lo que permite decodificación especulativa en llama.cpp incluso cuando los expertos están descargados a RAM. El autor reporta ganancias de velocidad notables en tareas de reescritura de ficheros y en generación con contexto largo, con un coste aproximado de 1 GiB de VRAM adicional para el contexto del borrador.
 
-Su relevancia ahora es pragmatica: demuestra que un MoE de 35B con contexto de 262k puede correr a unos 29 tokens/s en una GPU de gama media de 12 GB (AMD Radeon RX 6700 XT, ROCm), con 1,9 GB de VRAM libre a 128k de contexto. El coste es que se trata de un modelo sin censura, con implicaciones legales y de seguridad que el usuario asume.
+El modelo está orientado a generación de texto, uso conversacional, tool calling y tareas de agente con contexto largo. Su licencia es Apache 2.0, heredada del modelo Qwen original. Es relevante ahora porque demuestra que es viable mantener decodificación especulativa en configuraciones con offloading de expertos, algo poco habitual en cuantizaciones de 4 bits para GPUs modestas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (Qwen3.5-MoE), 256 expertos por capa |
+| Arquitectura | Qwen3.5-MoE (transformer con mezcla de expertos), 256 expertos por capa |
 | Parametros totales | 35.505.251.456 |
-| Parametros activos | ~3.000 millones (aproximadamente 3B, segun model card) |
+| Parametros activos | ~3B por token |
 | Longitud de contexto | 262.144 tokens nativos; probado a 131.072 |
-| Tipos de cuantizacion | IQ4_XS (4,32 bits por peso, 19.179.525.504 bytes) |
+| Tipos de cuantizacion | IQ4_XS (4,32 bits por peso); existe una variante Q4_K_M del mismo modelo heretic |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (un unico fichero: `Qwen3.6-35B-A3B-heretic-MTP-IQ4_XS.gguf`) |
-| SHA-256 | `9985dd184a5c28f1014bce4a293a798ad9ed693d9bfa1ec6189782c2768efa72` |
-| Tamano del repositorio | 19,2 GB |
-| Modelo base | llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved |
-| Herramienta de cuantizacion | `llama-quantize` de llama.cpp b11541 |
-| Matriz de importancia | bartowski/Qwen_Qwen3.6-35B-A3B-GGUF |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (fichero `Qwen3.6-35B-A3B-heretic-MTP-IQ4_XS.gguf`, 19.179.525.504 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura Qwen3.5-MoE: un transformer con capa de mezcla de expertos en la que cada capa contiene 256 expertos y solo se activa una fraccion reducida de ellos por token, lo que da lugar a 35.500 millones de parametros almacenados pero unos 3.000 millones de parametros computados por token. Esa relacion de espaldas de activacion es lo que hace viable la inferencia en hardware de gama media cuando parte de los expertos se descarga a RAM. La ventana de contexto nativa es de 262.144 tokens y el autor la ha probado a 131.072 con cache KV cuantizada en q8_0.
+El modelo base es un transformer con mezcla de expertos (MoE) de la familia Qwen3.5: 35B parámetros totales, unos 3B activos por token y 256 expertos por capa. Incluye una capa MTP (multi-token prediction) en el bloque `blk.40`, con 20 tensores MTP que esta cuantización conserva íntegramente. El modelo original fue entrenado por Qwen; no se dispone de detalles sobre el número de tokens de entrenamiento ni la composición del dataset en la información proporcionada.
 
-Sobre el entrenamiento original (numero de tokens, composicion del dataset, fases de RLHF o DPO) no hay informacion en la documentacion proporcionada. Lo que si se documenta es el post-procesado: el modelo base sin censura se genero con Heretic v1.3.0, una variante de ablacion ortogonal con preservacion de magnitud que modifica los pesos para reducir la probabilidad de rechazo; el autor del GGUF cita una divergencia KL de 0,0015 respecto al Qwen3.6 original. La cuantizacion se hizo con `llama-quantize` (tipo IQ4_XS) usando una importancia matrix calculada por bartowski sobre el Qwen3.6-35B-A3B original, que se reutiliza porque la ablacion altera los pesos solo ligeramente. Los tensores MTP de `blk.40` no tienen entradas en esa matriz y se cuantizaron sin ponderacion por importancia.
+La variante heretic se generó con Heretic v1.3.0, una implementación de ablación ortogonal que preserva la magnitud de los pesos, aplicada sobre el modelo original para reducir las negativas. El autor reporta una divergencia KL de 0,0015 respecto al original y una reducción de negativas de 83/100 a 10/100 en su conjunto de prueba. La cuantización IQ4_XS se realizó con `llama-quantize` de llama.cpp b11541 usando la importance matrix de bartowski calculada sobre el Qwen3.6-35B-A3B original; los tensores MTP, al no tener entradas en esa matriz, se cuantizaron sin ponderación por importancia. El proceso de compresión tardó 17 minutos en un Ryzen 5 5600X.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato instruct, con soporte de plantilla Jinja (`--jinja`).
-- Tool calling y function calling: el autor reporta 21/21 aciertos en 7 casos repetidos 3 veces con llama-server.
-- Generacion y edicion de codigo: 12/12 tareas pequenas con tests unitarios ocultos, con una media de 63 segundos por tarea.
-- Refactorizacion multifichero dentro de agentes de programacion: 3 de 3 ejecuciones completamente correctas en la prueba del autor.
-- Modo de razonamiento controlable mediante `--reasoning-budget` (2048 en la configuracion de ejemplo) y desactivable para pruebas de rechazo.
-- Prediccion multi-token (MTP): los 20 tensores del bloque `blk.40` estan presentes, pero el autor indica que no los ha probado.
-- Decodificacion especulativa mediante `--spec-type draft-mtp` o `--spec-type ngram-mod`.
-- Contexto largo: ventana nativa de 262.144 tokens, con prueba a 131.072.
-- Capacidades multilingues: no disponible en la documentacion.
-- Vision, audio u otras modalidades: no disponibles.
+- Generación de texto y conversación multi-turno con contexto muy largo (hasta 262k tokens nativos).
+- Razonamiento y resolución de tareas de agente multi-paso, con modo de pensamiento (thinking budget configurable, por ejemplo 2048 tokens en las pruebas del autor).
+- Tool calling y function calling: el autor reporta 21/21 en 7 casos de tool calling repetidos 3 veces.
+- Edición de código y tareas de ingeniería de software: resolución de incidencias en SWE-bench Verified Mini con mini-swe-agent.
+- Reescritura y refactorización de ficheros completos, con aceleración notable mediante decodificación especulativa.
+- Decodificación especulativa nativa mediante la capa MTP combinada con borradores n-gram (`--spec-type draft-mtp,ngram-mod`).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
 
-- Asistentes conversacionales autoalojados con contexto largo: con 262.144 tokens nativos se pueden mantener historiales extensos, documentacion tecnica completa o bases de conocimiento enteras dentro de la ventana sin recurrir a recuperacion externa.
-- Agentes de programacion sobre repositorios medianos: el modelo ha superado pruebas de refactorizacion multifichero con verificaciones, y su soporte de tool calling permite encadenar lectura, edicion y ejecucion de tests.
-- Generacion de codigo en pipelines de integracion continua: 12/12 en tareas pequenas con tests ocultos y 63 segundos de media lo hacen util para validar parches o generar pruebas, siempre con supervision humana dado el estado de cuantizacion de 4 bits.
-- Despliegue en equipos de desarrollo con una sola GPU de 12 GB: es uno de los pocos MoE de 35B ejecutables en una RX 6700 XT o equivalente, descargando expertos a RAM con `--n-cpu-moe`.
-- Procesamiento de documentos legales, medicos o tecnicos extensos: la combinacion de 131k-262k de contexto y un modelo que no declina peticiones permite resumir, extraer y clasificar corpus largos sin fragmentacion agresiva.
-- Investigacion sobre alineacion y seguridad: la comparativa de rechazos (17/100 frente a 99/100 de frase en el modelo original) lo convierte en un objeto de estudio util para medir el efecto de la ablacion sobre el comportamiento.
-- Laboratorio de evaluacion de tecnicas de decodificacion: los tensores MTP y la compatibilidad con decodificacion especulativa ngram permiten experimentar con aceleracion de inferencia en llama.cpp.
-- Prototipado de aplicaciones que requieren contenido sin filtros editoriales (ficcion adulta, guiones, red teaming de sistemas de moderacion), asumiendo las advertencias legales de la seccion correspondiente.
+- Agente de resolución de incidencias de software: con mini-swe-agent en modo bash, el modelo resuelve tareas de SWE-bench Verified Mini (27/50 en las pruebas del autor), lo que lo hace adecuado para pipelines de reparación automática de bugs en repositorios pequeños y medianos.
+- Asistente de refactorización de código en local: la combinación de MTP y borradores n-gram permite reescribir ficheros completos a 170-182 tokens/s, útil para renombrados masivos, migraciones de API y limpieza de código en un equipo de desarrollo con una GPU de 12 GB.
+- Tool calling en producción: con 21/21 en las pruebas de llamadas a herramientas, puede integrarse como backend de agentes que consultan APIs, bases de datos o servicios internos, siempre que el operador asuma la ausencia de filtros de negativa.
+- Análisis de documentación extensa: con 262k tokens de contexto nativo y buen rendimiento a 117k (21,1 tokens/s con MTP), sirve para resumir, extraer y cruzar información en repositorios de documentación o expedientes largos.
+- Generación de código en local para equipos con hardware modesto: al caber en 12 GB de VRAM con offloading parcial de expertos, permite flujos de autocompletado y generación de tests sin depender de APIs externas.
+- Investigación sobre alineación y robustez: al ser una variante con negativas reducidas y divergencia KL baja respecto al original, es útil para estudiar el efecto de la ablación en el comportamiento del modelo y en la calidad de las respuestas.
+- Evaluación de decodificación especulativa: la conservación de la capa MTP en un modelo cuantizado con offloading lo convierte en un banco de pruebas para medir el impacto de MTP y n-gram en latencia y throughput.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor proporciona unicamente pruebas privadas comparativas entre dos cuantizaciones del mismo modelo, medidas en un AMD Radeon RX 6700 XT (12 GB, ROCm), Ryzen 5 5600X, 32 GB DDR4, llama.cpp b11541 sobre llama-swap. El propio autor advierte que sirven para comparar compilaciones en una misma maquina, no como benchmarks generales.
+Los datos disponibles son pruebas privadas del autor en una única máquina (AMD Radeon RX 6700 XT de 12 GB, Ryzen 5 5600X, 32 GB DDR4 a un solo canal, llama.cpp b11541), no benchmarks generales.
 
-| Prueba | Este fichero (IQ4_XS, 19,2 GB) | Mismo modelo heretic en Q4_K_M (21,2 GB) |
+SWE-bench Verified Mini (50 tareas, mini-swe-agent solo bash, 150 pasos, thinking budget 2048, temperatura 0,6):
+
+| Dificultad | Resueltas |
+|---|---|
+| Menos de 15 min | 13/19 |
+| 15 min – 1 h | 13/23 |
+| 1–4 h | 1/7 |
+| Más de 4 h | 0/1 |
+| Total | 27/50 |
+
+Referencia del leaderboard publicado en las mismas 50 tareas (APIs a precisión completa, en su mayoría sin límite de pasos): Claude 4.5 Haiku 31, Kimi K2 Thinking 27, Devstral Small 2512 25, Qwen3-Coder 480B 22, gpt-oss-120b 13.
+
+Decodificación especulativa con MTP (`--spec-type draft-mtp,ngram-mod`, temperatura 0 / 0,6):
+
+| Tarea | Velocidad |
+|---|---|
+| Escritura de código nuevo | 45,1 / 44,9 tokens/s |
+| Reescritura de fichero con renombrado | 170 / 182 tokens/s |
+| Generación a 117k de contexto | 21,1 tokens/s (15,1 sin MTP) |
+| Generación sin borradores, contexto corto | ~29 tokens/s |
+
+Comparación con la variante Q4_K_M (21,2 GB) del mismo modelo heretic:
+
+| Prueba | Este fichero | Q4_K_M |
 |---|---|---|
-| Tool calling, 7 casos x 3 | 21/21 | 21/21 |
-| Tareas de codigo pequenas con tests ocultos | 12/12, media 63 s | 11/12, media 89 s |
-| Refactorizacion multifichero con agente (7 comprobaciones) | 3 de 3 ejecuciones correctas | 3 de 4 |
-| VRAM libre a 128k de contexto | 1,9 GB (`--n-cpu-moe 26`) | 0,4 GB (`--n-cpu-moe 25`) |
-| Generacion | ~29 tokens/s | ~28 tokens/s |
+| Tool calling, 7 casos × 3 | 21/21 | 21/21 |
+| Tareas pequeñas de código con tests ocultos | 12/12, media 63 s | 11/12, media 89 s |
+| Refactorización multi-fichero con agente (7 comprobaciones) | 3 de 3 ejecuciones correctas | 3 de 4 |
+| Recuperación en contexto largo, 12 preguntas | no medido | 12/12 a 70k, 11/12 a 120k |
+| VRAM libre a 128k sin borradores | 1,9 GB (`--n-cpu-moe 26`) | 0,4 GB (`--n-cpu-moe 25`) |
+| Generación sin borradores | ~29 tokens/s | ~28 tokens/s |
 
-Pruebas de rechazo (100 primeros prompts de `mlabonne/harmful_behaviors`, 33 frases de rechazo de Heretic, limite de 100 tokens, system prompt "You are a helpful assistant.", temperatura 0, razonamiento desactivado):
+Negativas (test de Heretic, primeros 100 prompts de `mlabonne/harmful_behaviors`, 100 tokens de respuesta, temperatura 0, razonamiento desactivado):
 
-| Metrica | Qwen3.6-35B-A3B original (Unsloth UD-IQ4_XS) | Este fichero |
+| Métrica | Qwen3.6-35B-A3B original (Unsloth UD-IQ4_XS) | Este fichero |
 |---|---|---|
-| Recuento de frases de rechazo | 99/100 | 17/100 |
-| Respuestas que comienzan con un rechazo | 99/100 | 2/100 |
+| Recuento de frases de negativa de Heretic | 99/100 | 17/100 |
+| Respuestas que empiezan con una negativa | 99/100 | 2/100 |
 
-De las 17 coincidencias de este fichero, 15 son respuestas que acceden a la peticion pero contienen las palabras "disclaimer" o "illegal" mas adelante, y el emparejamiento por palabra clave de Heretic las contabiliza igualmente.
+De las 17 coincidencias de este fichero, 15 son respuestas que cumplen la petición pero contienen "disclaimer" o "illegal" más adelante; el emparejamiento por palabras clave de Heretic las cuenta igualmente.
 
 ## Requisitos de hardware
 
-- Pesos en disco y en memoria: 19.179.525.504 bytes (19,2 GB), equivalentes a 4,32 bits por peso.
-- VRAM recomendada: 12 GB, con parte de los expertos en RAM del sistema mediante `--n-cpu-moe`. El autor usó `--n-cpu-moe 26` para dejar 1,9 GB libres a 128k de contexto.
-- Si cabe en GPU de consumo: si, pero no entero. La configuracion probada es una AMD Radeon RX 6700 XT de 12 GB con 32 GB de DDR4. Cuanto mas bajo sea `--n-cpu-moe`, mas expertos van a la GPU y mas rapida es la generacion.
-- Advertencia de VRAM: mantener al menos ~500 MiB libres; en RDNA2, sobrepasar la VRAM puede bloquear el driver amdgpu en lugar de fallar de forma controlada.
-- GPU de datacenter (A100, H100): no se han publicado mediciones en la informacion disponible. Cualquier GPU con 12 GB o mas de VRAM puede seguir el mismo esquema de descarga de expertos.
-- Alternativas de cuantizacion: el autor menciona la variante Q4_K_M del mismo modelo (21,2 GB), que necesita mas VRAM.
-- Opciones de despliegue: llama.cpp b11541 (`llama-server`, `llama-swap`, `llama-quantize`). Compatibilidad con vLLM, TGI u Ollama no esta documentada en la informacion disponible.
-- Cache KV: la configuracion de ejemplo usa `-ctk q8_0 -ctv q8_0` con `-c 131072`, `-b 2048` y `-ub 2048`.
-- Latencia y throughput medidos: ~29 tokens/s de generacion en la configuracion descrita, frente a ~28 tokens/s de la variante Q4_K_M en la misma maquina.
-
-Comando de referencia del autor:
-
-```bash
-llama-server -m Qwen3.6-35B-A3B-heretic-MTP-IQ4_XS.gguf --jinja -fa on -ngl 99 \
-  --n-cpu-moe 26 -c 131072 -ctk q8_0 -ctv q8_0 -b 2048 -ub 2048 \
-  --reasoning-budget 2048 --spec-type ngram-mod \
-  --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0
-```
+- VRAM estimada: el fichero pesa 19,2 GB; con 24 de 40 capas de expertos en RAM del sistema y 128k de contexto quedan 1,9 GB libres en una GPU de 12 GB (`--n-cpu-moe 26`). El contexto del borrador MTP consume aproximadamente 1 GiB adicional de VRAM.
+- GPU recomendadas: el autor lo probó en una AMD Radeon RX 6700 XT de 12 GB con backend ROCm. En el ecosistema NVIDIA, una RTX 3060 de 12 GB o una RTX 4070 de 12 GB permiten configuraciones equivalentes con offloading; con 24 GB (RTX 4090, A10G) o 48 GB (A6000, L40S) se reduce o elimina la necesidad de offloading. No hay datos medidos para A100 o H100 en la información disponible.
+- Cabe en GPU de consumo: sí, en tarjetas de 12 GB manteniendo parte de los expertos en RAM del sistema. En una GPU de 24 GB probablemente quepa con menos offloading, aunque no se han publicado medidas.
+- Opciones de despliegue: llama.cpp (versión b11541 o posterior, imprescindible para la decodificación especulativa con MTP), llama-swap para gestión de instancias, y cualquier frontend compatible con GGUF y llama.cpp. No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: ~29 tokens/s sin borradores en contexto corto; 45 tokens/s escribiendo código nuevo con MTP y n-gram; 170-182 tokens/s reescribiendo ficheros; 21,1 tokens/s a 117k de contexto con MTP. La lectura de prompt ronda los 970 tokens/s en contexto corto y 440 tokens/s a 117k con `-ub 1024`, un 22% y un 15% más lenta respectivamente que sin el contexto de borrador.
+- Ajuste de n-gram: `--spec-ngram-mod-n-max 256` en lugar del valor por defecto 64 aceleró las reescrituras de fichero un 49-57% sin cambios en código nuevo; 512 fue más lento en código nuevo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Cuantizacion | Licencia | Rendimiento observado |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este modelo (hermeticvm, IQ4_XS) | 35,5B / ~3B | 262.144 nativo (probado 131.072) | IQ4_XS, 19,2 GB | Apache-2.0 | 12/12 codigo, 21/21 tool calling, ~29 tok/s |
-| Mismo modelo heretic en Q4_K_M | 35,5B / ~3B | No especificado en esa variante | Q4_K_M, 21,2 GB | Apache-2.0 | 11/12 codigo, 21/21 tool calling, ~28 tok/s, 0,4 GB VRAM libre |
-| Qwen3.6-35B-A3B original (Unsloth UD-IQ4_XS) | 35,5B / ~3B | 262.144 | IQ4_XS | Apache-2.0 | 99/100 frases de rechazo; resto de metricas no disponibles |
-| Qwen/Qwen3.6-35B-A3B (BF16) | 35,5B / ~3B | 262.144 | BF16 | Apache-2.0 | 83/100 rechazos segun el autor del modelo base (setup distinto: transformers, precision completa) |
+| Este modelo (IQ4_XS) | 35B totales, ~3B activos | 262k nativos, probado a 131k | GGUF IQ4_XS, 19,2 GB | Apache 2.0 | MTP conservado, negativas reducidas |
+| Mismo heretic en Q4_K_M | 35B totales, ~3B activos | 262k nativos | GGUF Q4_K_M, 21,2 GB | Apache 2.0 | Sin MTP en la comparación publicada; 0,4 GB de VRAM libre a 128k |
+| Qwen3.6-35B-A3B original (Unsloth UD-IQ4_XS) | 35B totales, ~3B activos | 262k nativos | GGUF IQ4_XS | Apache 2.0 | 99/100 negativas en el test de Heretic |
 
-No se dispone de datos comparativos frente a otros MoE de tamano similar (por ejemplo, familias alternativas de ~30B-40B con 3B activos) en la informacion proporcionada.
+Referencias de rendimiento en SWE-bench Verified Mini (50 tareas) citadas por el autor, aunque no son modelos del mismo tamaño ni formato: Claude 4.5 Haiku 31/50, Kimi K2 Thinking 27/50, Devstral Small 2512 25/50, Qwen3-Coder 480B 22/50, gpt-oss-120b 13/50. Las diferencias de pocas tareas están dentro de la variación entre ejecuciones.
 
 ## Limitaciones y advertencias
 
-- Modelo sin censura: es una version abliterated con la mayor parte de los rechazos eliminados. Respondera a peticiones que el Qwen3.6 original declina. La responsabilidad del uso recae enteramente en el usuario.
-- Riesgo legal y de politica de contenido: desplegarlo en productos de cara al publico puede infringir terminos de servicio de plataformas, normativa de moderacion de contenidos y legislacion aplicable segun jurisdiccion. No debe exponerse como servicio abierto sin filtros propios.
-- Degradacion potencial por la ablacion: aunque el autor cita una divergencia KL de 0,0015 respecto al original, cualquier ablacion de rechazos puede alterar el comportamiento en dominios sensibles y en tareas de instruccion general. No se han publicado evaluaciones estandar que lo cuantifiquen.
-- Sesgos: no hay informacion sobre sesgos evaluados en la documentacion disponible. El modelo hereda los del entrenamiento de Qwen3.6, sobre el que tampoco se aportan datos en esta ficha.
-- Alucinacion: no se han publicado tasas de alucinacion. Al ser una cuantizacion de 4,32 bits, la fidelidad respecto al BF16 original es menor, especialmente en tareas de razonamiento largo.
-- Tensores MTP sin validar: el autor indica explicitamente que los 20 tensores MTP estan presentes pero no han sido probados, y que con los expertos descargados a CPU otros usuarios reportan poca ganancia. El uso de `--spec-type draft-mtp` es bajo cuenta y riesgo del usuario.
-- Idiomas: no disponible. No se puede confirmar el soporte multilingue real de esta variante.
-- Ambito de las pruebas: todas las metricas provienen de pruebas privadas en una unica maquina (RX 6700 XT, Ryzen 5 5600 X, 32 GB DDR4, llama.cpp b11541). No son extrapolables a otros entornos.
-- Rendimiento limitado por el offload: con `--n-cpu-moe 26`, la generacion depende del ancho de banda de la RAM del sistema. Los ~29 tokens/s medidos no son representativos de configuraciones con todos los expertos en GPU.
-- Ficheros de KV cache: usar `-ctk q8_0 -ctv q8_0` para que 131k de contexto quepan en 12 GB introduce cuantizacion adicional en la cache, con posible perdida de fidelidad en contextos muy largos.
-- Licencia: los pesos de esta cuantizacion se distribuyen bajo Apache-2.0, con enlace a la licencia del Qwen3.6-35B-A3B original. Conviene verificar la licencia del modelo base y del modelo heretic intermedio antes de un uso comercial.
+- Modelo con negativas reducidas de forma deliberada: responde a peticiones que el Qwen3.6 original rechaza. El operador es responsable del uso y debe aplicar sus propios filtros si lo despliega en producción.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de factualidad para esta cuantización.
+- La cuantización IQ4_XS introduce pérdida de precisión respecto al BF16. El autor indica que las diferencias de calidad frente a Q4_K_M están dentro de la variación entre ejecuciones, pero no hay una evaluación sistemática de la degradación por cuantización.
+- Los tensores MTP se cuantizaron sin importance matrix, lo que puede afectar a la calidad de los borradores especulativos; no se ha medido este efecto de forma aislada.
+- El contexto del borrador MTP consume ~1 GiB de VRAM, lo que en tarjetas de 12 GB obliga a `-ub 1024` y ralentiza la lectura de prompt un 22% en contexto corto y un 15% a 117k.
+- Los benchmarks presentados son pruebas privadas en una sola máquina, con una única GPU AMD y configuración concreta; no son comparables directamente con resultados de leaderboards a precisión completa.
+- Idiomas soportados no disponibles: no se puede confirmar el comportamiento multilingüe de esta variante.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base incorpora modificaciones de terceros (Heretic) cuya trazabilidad conviene verificar antes de un despliegue comercial.
+- El modelo requiere llama.cpp b11541 o posterior para aprovechar la decodificación especulativa con MTP; versiones anteriores pueden no soportar la combinación `draft-mtp,ngram-mod`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hermeticvm/Qwen3.6-35B-A3B-heretic-MTP-IQ4_XS-GGUF
-- Modelo base (heretic, MTP preservado, BF16): https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
+- Modelo base (heretic, MTP preservado): https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Licencia Apache-2.0 del modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
-- Heretic (herramienta de ablacion de rechazos): https://github.com/p-e-w/heretic
-- llama.cpp (tooling de cuantizacion e inferencia): https://github.com/ggml-org/llama.cpp
-- Matriz de importancia de bartowski: https://huggingface.co/bartowski/Qwen_Qwen3.6-35B-A3B-GGUF
-- Perfil del autor de la cuantizacion: https://huggingface.co/hermeticvm
-
-Nota: la busqueda web realizada no ha devuelto ningun enlace relevante relacionado con este modelo; los resultados obtenidos no guardan relacion con el contenido de la ficha.
+- Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
+- Heretic (herramienta de ablación): https://github.com/p-e-w/heretic
+- Importance matrix de bartowski: https://huggingface.co/bartowski/Qwen_Qwen3.6-35B-A3B-GGUF
+- mini-swe-agent: https://github.com/SWE-agent/mini-swe-agent
+- Dataset SWE-bench Verified Mini: https://huggingface.co/datasets/MariusHobbhahn/swe-bench-verified-mini

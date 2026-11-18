@@ -2,103 +2,107 @@
 
 ## Resumen
 
-IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-NanoPlus-GGUF es una cuantizacion GGUF publicada por el usuario IsValorum sobre el modelo nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2. Se trata, por tanto, de una distribucion de pesos ya entrenados, no de un modelo entrenado desde cero: el aporte del autor es el esquema de cuantizacion bautizado como VAL-APEX-I (Vector-calibrated Asymmetric Layer-wise Outlier-preserving Recurrent-aware Unified Matrix-quantization), disenado especificamente para arquitecturas hibridas lineal-cuadraticas, y una calibracion con importance matrix (imatrix).
+Qwen3.8-27B-EfficientThink Uncensored VAL-APEX-I NanoPlus es una cuantización GGUF de un modelo de lenguaje de 27.320.697.856 parámetros derivado de la familia Qwen3.8 y afinado por el usuario nerkyor. El modelo base combina SFT sintético, optimización con SIMPO y decodificación especulativa DFlash2, y ha sido cuantizado por IsValorum mediante su método propietario VAL-APEX-I (Vector-calibrated Asymmetric Layer-wise Outlier-preserving Recurrent-aware Unified Matrix-quantization). El resultado es un fichero de 11,18 GB con 3,27 BPW que aspira a caber en el segmento de 11-12 GB de VRAM.
 
-El modelo subyacente tiene 26.895.998.464 parametros (~26,9 B, comercializado como 27B) y combina 47 capas recurrentes DeltaNet (SSM) con 17 capas de atencion completa, 64 capas en total, ademas de una cabeza de prediccion multidestino DFlash2 situada en la capa 64 para decodificacion especulativa. Segun la model card, mantiene la ventana de contexto completa de 256K tokens y esta pensado para ejecutarse en GPUs de 24 GB, algo poco habitual en un modelo de este tamano y contexto.
+La relevancia de esta ficha reside en que se trata de una cuantización agresiva de un modelo de razonamiento con supuesto contexto nativo de 256K, pensada para ejecución local con llama.cpp. El autor reporta una perplejidad WikiText-2 de 5,6504 ± 0,4832 y afirma haber corregido inestabilidades de estado recurrente y mezcla de idiomas presentes en builds anteriores. No obstante, la información pública disponible es escasa: no hay benchmarks independientes completos, no se detalla la composición del dataset de entrenamiento y la model card está dominada por material promocional.
 
-Es relevante ahora por dos motivos. Primero, porque documenta un problema real de las arquitecturas hibridas SSM + atencion: los cuantizadores uniformes habituales comprimen los tensores de estado recurrente y degradan las trazas de razonamiento largas. Segundo, porque el modelo upstream ha sido ajustado con SFT sobre trazas sinteticas de chain-of-thought y optimizado con SimPO, con un sesgo explicito "uncensored". El repositorio tenia 0 descargas y 0 likes en el momento de la consulta.
+Se distribuye bajo licencia Apache 2.0, declara únicamente inglés como idioma soportado y está etiquetado como "uncensored", lo que implica que los filtros de seguridad del modelo original han sido reducidos o eliminados. Es, por tanto, una opción a evaluar con cautela para despliegues en producción que requieran salvaguardas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido lineal-cuadratico: 47 capas recurrentes DeltaNet (SSM) + 17 capas de atencion completa, 64 capas en total; cabeza DFlash2 de prediccion multidestino en blk.64 |
-| Parametros totales | 26.895.998.464 (~26,9 B) |
-| Parametros activos | no disponible (no se describe como MoE) |
-| Longitud de contexto | 256K tokens (segun la model card del cuantizador; vLLM recomendado con --max-model-len 40960) |
-| Tipos de cuantizacion | GGUF con esquema mixto VAL-APEX-I: F32 en operadores de estado SSM (ssm_a, ssm_conv1d, ssm_dt, ssm_norm), Q8_0 en gating de atencion, Q6_K en output.weight, IQ4_NL e IQ3_XXS en matrices MLP densas; calibrado con imatrix. La model card tambien compara contra Q4_K_M y Q5_K_M estandar |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Arquitectura | Transformer denso (derivado de Qwen3.8), con soporte de decodificación especulativa DFlash2 y MTP; detalles de capas y atención no disponibles |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 256K tokens (contexto nativo declarado por el autor); no verificado de forma independiente |
+| Tipos de cuantizacion | GGUF con perfil VAL-APEX-I NanoPlus V3 (3,27 BPW, 11,18 GB); otras variantes MiniPlus V3 (13,91 GB) disponibles en el ecosistema del autor |
+| Idiomas soportados | Inglés (declarado); el autor afirma haber eliminado la mezcla de idiomas no deseada |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); 866 tensores auditados según el autor |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es hibrida: la mayor parte de las capas usa recurrencia lineal tipo DeltaNet (state space model) y solo 17 de las 64 capas aplican atencion completa de forma periodica. Segun el autor de la cuantizacion, esta mezcla es precisamente lo que rompen los cuantizadores uniformes: comprimir `ssm_a`, `ssm_conv1d`, `ssm_dt` o `ssm_norm` introduce deriva en el espacio de estados, lo que degrada las trazas de razonamiento profundo y provoca colapso sintactico. VAL-APEX-I responde con cuatro decisiones estructurales: mantener los 47 operadores de estado en F32 sin comprimir, proteger la cabeza de clasificacion `output.weight` en Q6_K para no corromper los delimitadores `<think>`, fijar el gating de atencion en Q8_0 para evitar interferencia entre el mecanismo lineal y el cuadratico, y reservar los codebooks no lineales (IQ4_NL, IQ3_XXS) para las matrices MLP densas, donde el ruido de la activacion SiLU tiende a cancelarse.
+El modelo base es un transformer denso de 27,3B parámetros de la familia Qwen3.8, afinado por nerkyor con una pipeline que, según los tags y la model card, incluye SFT sobre datos sintéticos generados por modelos frontera (referidos como Opus 5, Grok 4.6/4.7, GPT 5.6 Sol y DeepSeek V4 Pro), optimización preferencial con SIMPO y soporte de Multi-Token Prediction (MTP) junto con decodificación especulativa DFlash2. El nombre del modelo base encadena múltiples etapas (Coder390, EfficientThink, RLOO, MTP, DFlash2), lo que sugiere un proceso de entrenamiento por fases sucesivas, aunque no se publica el número de tokens, la composición exacta del dataset ni los detalles del pipeline de RL.
 
-En cuanto al entrenamiento del modelo base, la model card declara un preentrenamiento sobre la arquitectura Qwen3.8-27B, seguido de un SFT sobre trazas de chain-of-thought sintetizadas a partir de modelos frontera (datasets de razonamiento de Claude 3.5/3.7 Opus, trazas de razonamiento y generacion de codigo de Grok 4.6, y demostraciones matematicas y derivaciones STEM de GPT 5.6 Sol). Despues se aplico SimPO (Simple Preference Optimization) para alinear la profundidad de razonamiento y forzar el cumplimiento analitico sin rechazos. La innovacion tecnica adicional es DFlash2: una cabeza de borrador especulativo integrada en la capa 64 que paraleliza la generacion de candidatos, de modo que el modelo principal valida varios tokens en un unico forward pass. No se especifican en la informacion disponible el numero total de tokens de entrenamiento ni la composicion exacta del dataset.
+La contribución propia de esta ficha es la cuantización VAL-APEX-I, un esquema asimétrico por capas que preserva outliers y tiene en cuenta el estado recurrente, calibrado con matrices de imatrix. El autor reporta 866 tensores auditados y un mapa tensorial certificado (`tensor-map.tsv`) con asignaciones de precisión por tensor. La versión V3 corrige, según la model card, problemas de inestabilidad de estado recurrente, degradación de contexto largo y mezcla de idiomas de builds previas. No se dispone de información independiente que verifique estas afirmaciones.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con pipeline declarado `text-generation` y tag `conversational`.
-- Razonamiento explicito con chain-of-thought (tags `reasoning` y `cot`), con delimitadores de pensamiento tipo `<think>` que la cuantizacion protege explicitamente.
-- Generacion de codigo, heredada del SFT con trazas sinteticas de codigo (Grok 4.6) y de la seccion de advertencia sobre sintaxis de programacion y repeat penalty de la model card.
-- Razonamiento matematico y derivaciones STEM, procedentes del subconjunto sintetico de GPT 5.6 Sol.
-- Decodificacion especulativa multidestino mediante la cabeza DFlash2 (hasta 7 tokens candidatos con `--spec-draft-n-max 7` o `--spec-type draft-mtp`).
-- Compatibilidad declarada con agentes: Lynn Agent v0.87.0+ para tool-use autonomo, ejecucion multi-turno en terminal y bucles de agente a escala de repositorio; plantilla de chat endurecida para uso agentico con "reasoning effort" configurable.
-- Respuesta a prompts tecnicos, de red teaming y analisis controvertido sin rechazos corporativos, segun la descripcion del autor (modelo "uncensored").
-- Capacidades multilingues: solo ingles declarado. No hay soporte de vision ni de audio en la informacion disponible.
+- Generación de texto conversacional en inglés con modo de razonamiento explícito (chain-of-thought) y "reasoning effort" configurable mediante plantilla de chat endurecida.
+- Razonamiento multi-paso y matemáticas, derivado del entrenamiento EfficientThink y del SFT sintético sobre trazas de modelos frontera.
+- Generación de código, con advertencias específicas del autor sobre penalización de repetición para evitar intercambio de caracteres en sintaxis.
+- Contexto largo declarado de 256K tokens, con supuesta recuperación asociativa restaurada en la versión V3.
+- Compatibilidad con decodificación especulativa DFlash2 y MTP para acelerar la inferencia.
+- Soporte de plantilla de chat para uso agéntico ("Hardened Agentic Chat Template").
+- Modelo "uncensored": se han reducido los rechazos de seguridad del modelo original.
+- No se documenta soporte de tool calling nativo, visión, audio ni multimodalidad en la información disponible.
 
 ## Casos de uso
 
-- Razonamiento tecnico de cadena larga: el modelo esta ajustado con trazas CoT y disenado para no degradar el estado recurrente gracias a la preservacion en F32 de las capas SSM, por lo que es adecuado para analisis por pasos de problemas complejos donde la traza completa importa.
-- Red teaming y evaluacion de seguridad: al no incorporar rechazos corporativos, permite generar prompts adversariales, analisis de vectores de ataque y contenido para pruebas de penetracion sin que el modelo se niegue, algo util en equipos de seguridad ofensiva que necesitan material de prueba.
-- Generacion de codigo en pipelines automatizados: puede integrarse en flujos de CI/CD o asistentes de repositorio mediante llama.cpp o vLLM, teniendo en cuenta la advertencia del autor sobre sintaxis de codigo y penalizacion por repeticion.
-- Agentes autonomos de terminal y repositorio: la compatibilidad declarada con Lynn Agent v0.87.0+ y la plantilla de chat agentica lo orientan a bucles de tool-use multi-turno con ejecucion de comandos.
-- Analisis de documentos largos en ingles: los 256K tokens de contexto declarados permiten procesar contractos, informes tecnicos o bases de codigo extensas en una sola pasada, siempre que se disponga de memoria suficiente.
-- Despliegue local en estacion de trabajo de 24 GB: el objetivo explicito de la cuantizacion NanoPlus es ejecutar el modelo completo con contexto largo en una GPU de consumo, lo que habilita prototipado sin coste de API.
-- Servicio de inferencia a baja latencia: con DFlash2 como decodificacion especulativa y SGLang o vLLM como motores, es apto para endpoints donde la latencia autoregresiva es critica.
-- Generacion de material STEM y derivaciones: el SFT sobre demostraciones matematicas sinteticas lo hace util para borradores de derivaciones y explicaciones tecnicas paso a paso, siempre con revision humana.
+- Razonamiento local con contexto largo: análisis de documentos extensos o bases de código de hasta 256K tokens en una máquina con ~12 GB de VRAM, aprovechando la cuantización de 3,27 BPW para mantener el modelo en memoria.
+- Asistencia de programación en local: generación y revisión de código en inglés dentro de entornos sin conexión, con la precaución de ajustar la penalización de repetición según la advertencia del autor para evitar corrupción de sintaxis.
+- Experimentación en investigación sobre cuantización: el mapa tensorial certificado y las métricas de perplejidad publicadas permiten estudiar el impacto de esquemas asimétricos con preservación de outliers en modelos de 27B.
+- Prototipado de agentes conversacionales: la plantilla de chat agéntica y el modo de razonamiento permiten construir flujos multi-paso en inglés, siempre que se validen las salvaguardas por cuenta del integrador.
+- Evaluación comparativa de decodificación especulativa: el soporte de DFlash2 y MTP permite medir aceleraciones de throughput en llama.cpp frente a decodificación autoregresiva estándar.
+- Despliegue en estaciones de trabajo con GPU de consumo: al caber en el segmento de 11-12 GB, es viable en GPUs como la RTX 3060 de 12 GB o la RTX 4070, para tareas de generación de texto y razonamiento sin requisitos de alta concurrencia.
+- Generación de contenido sin filtros en entornos controlados: para investigación sobre alineación y comportamiento de modelos, dado su carácter "uncensored", con las advertencias de seguridad correspondientes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica estandar. El unico dato cuantitativo de rendimiento presente es una tabla de calidad de cuantizacion frente a BF16, que aparece truncada en el material proporcionado:
+| Metrica | Valor | Fuente |
+|---|---|---|
+| WikiText-2 PPL | 5,6504 ± 0,4832 | Model card del autor (cuantización NanoPlus V3) |
+| Tamano de fichero | 11,18 GB (10,41 GiB) | Model card del autor |
+| BPW (bits por peso, fichero completo) | 3,27 | Model card del autor |
+| Tensores auditados | 866 | Model card del autor |
 
-| Formato de cuantizacion | Bits por peso (BPW) | Huella (disco / VRAM) | Delta de perplejidad vs. BF16 | Estabilidad sintactica |
-|---|---|---|---|---|
-| FP16 / BF16 sin comprimir | 16,0 | aprox. 53,8 GB | Baseline (0,00 %) | Referencia sin comprimir |
-| Q8_0 estandar | 8,50 | aprox. 29,5 GB | aprox. +0,02 | (fila truncada en el material disponible) |
-| VAL-APEX-I NanoPlus | no disponible | aprox. 23,3 GB (tamano del repositorio) | no disponible | no disponible |
-
-No se deben extrapolar cifras de rendimiento a partir de esta tabla: mide fidelidad de la cuantizacion, no capacidad del modelo.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card menciona una sección de "Independent Community Benchmarks (NanoBench v0.4.0)", pero su contenido no está incluido en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM para BF16 sin comprimir: aproximadamente 53,8 GB segun la model card, es decir, fuera de cualquier GPU de consumo.
-- VRAM para Q8_0 estandar: aproximadamente 29,5 GB, lo que exige una A100 40 GB, H100 o una RTX 6000 Ada; en una RTX 4090 o 3090 obligaria a offload parcial a RAM.
-- Cuantizacion VAL-APEX-I NanoPlus: el repositorio ocupa 23,3 GB. El autor afirma que permite ejecutar el contexto completo de 256K en GPUs de 24 GB (RTX 3090, 4090, A5000), lo que implica que el modelo cabe con poco margen y que el cache KV necesita gestion adicional; la afirmacion no esta respaldada por medidas publicadas en el material disponible.
-- GPU recomendadas: por debajo, RTX 3090/4090 (24 GB) para la cuantizacion NanoPlus con contexto reducido; A100 40/80 GB o H100 para BF16, Q8_0 y contextos largos con buena latencia.
-- Opciones de despliegue declaradas: llama.cpp y llama-server (builds b11000+ con soporte de arquitectura hibrida DeltaNet), SGLang como motor principal probado por el autor (con verify block size 8 para DFlash2), vLLM con `--reasoning-parser qwen3 --max-model-len 40960`, y Lynn Agent v0.87.0+. No se mencionan Ollama ni TGI. El uso con transformers no esta declarado.
-- Aceleracion: decodificacion especulativa con la cabeza DFlash2, configurable con `--spec-draft-n-max 7` o `--spec-type draft-mtp` cuando el motor la soporte.
-- Latencia y throughput: no disponibles. La model card afirma que DFlash2 reduce significativamente la latencia autoregresiva, pero no aporta cifras de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada para inferencia: aproximadamente 11-12 GB para el fichero NanoPlus V3 de 11,18 GB, más overhead de contexto KV; con 256K tokens de contexto la caché KV puede requerir varios GB adicionales según la configuración de llama.cpp.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4070 / 4070 Ti, RTX 4080, y GPUs de datacenter como A100 o H100 para mayor throughput y contextos largos.
+- Cabe en GPU de consumo: sí, en modelos con 12 GB o más de VRAM; en GPUs de 8 GB requeriría offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), y por compatibilidad de endpoints, servidores compatibles con la API de OpenAI; el autor menciona SGLang y vLLM en el ecosistema upstream, aunque para GGUF el runtime de referencia es llama.cpp. No se confirma soporte de Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles. El soporte de decodificación especulativa DFlash2 y MTP está orientado a mejorar el throughput, pero no se publican cifras medidas.
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks ni especificaciones de modelos alternativos en la informacion proporcionada, por lo que no se puede establecer una comparativa de rendimiento fiable. La unica comparacion documentada es interna, entre variantes de cuantizacion del mismo modelo:
-
-| Variante | BPW | Tamano aproximado | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este modelo (VAL-APEX-I NanoPlus, GGUF) | no disponible | 23,3 GB (repo) | 256K declarados | apache-2.0 | Hugging Face, llama.cpp b11000+, SGLang, vLLM |
-| Cuantizacion Q8_0 estandar | 8,50 | aprox. 29,5 GB | 256K declarados (upstream) | apache-2.0 (upstream) | llama.cpp |
-| Modelo base nerkyor/Qwen3.8-27B-...-SimPO-DFlash2 (BF16) | 16,0 | aprox. 53,8 GB | 256K declarados | apache-2.0 | Hugging Face |
+| Qwen3.8-27B EfficientThink VAL-APEX-I NanoPlus V3 (este) | 27,3B | 256K (declarado) | GGUF, 11,18 GB, 3,27 BPW | Apache 2.0 | PPL WikiText-2 5,6504; uncensored |
+| Qwen3.8-27B EfficientThink VAL-APEX-I MiniPlus V3 | 27,3B | 256K (declarado) | GGUF, 13,91 GB | Apache 2.0 | Misma base, mayor precisión; PPL no disponible |
+| Qwen3.8 27B VAL-APEX-I NanoPlus V3 (no EfficientThink) | 27,3B | no disponible | GGUF, 12,18 GB | Apache 2.0 | Variante sin el ajuste EfficientThink; PPL no disponible |
+| Modelo base nerkyor/Qwen3.8-27B-...-DFlash2 | 27,3B | 256K (declarado) | Safetensors (repo de 85,6 GB) | Apache 2.0 | Pesos sin cuantizar; benchmarks no disponibles |
 
-Comparativas con modelos de parametraje similar (por ejemplo, otras familias de 27B a 32B) no disponibles en la informacion proporcionada.
+No se dispone de datos de benchmarks comparativos con modelos de otras familias (por ejemplo, Llama o Mistral de tamano similar) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored": el ajuste esta disenado explicitamente para eliminar rechazos ante prompts tecnicos, de red teaming o controvertidos. Esto implica un riesgo elevado de generar contenido danino, ilegal o peligroso si se despliega sin filtros adicionales y sin supervision humana.
-- Riesgo de alucinacion: no hay benchmarks publicados que cuantifiquen la fiabilidad factual. El entrenamiento se basa en trazas sinteticas generadas por otros modelos, lo que puede propagar errores y sesgos de esos profesores sinteticos.
-- Idiomas: solo ingles declarado. No se garantiza un comportamiento correcto en castellano ni en otros idiomas, aunque el tokenizador de la familia base pueda procesarlos.
-- Ausencia de validacion independiente: el repositorio registraba 0 descargas y 0 likes en el momento de la consulta, y no hay resultados de benchmarks, evaluaciones de terceros ni incidencias reportadas.
-- Linaje no verificable de forma independiente: el nombre del modelo base y del propio modelo hace referencia a versiones (Qwen3.8-27B, Opus 5, Grok 4.6, GPT 5.6 Sol, fechas de 2026) que no se pueden contrastar con la informacion disponible. Tratar las afirmaciones de la model card como declaraciones del autor, no como hechos verificados.
-- Advertencia operativa del propio autor: existe una seccion critica sobre sintaxis de codigo y penalizacion por repeticion. No se dispone de su contenido, por lo que se recomienda revisar la model card original antes de usar el modelo para generar codigo en produccion y ajustar `repeat_penalty` con cuidado.
-- Restricciones de licencia: apache-2.0 permite uso comercial, pero el modelo deriva de un modelo base cuya licencia, condiciones de uso y posibles clausulas adicionales no se detallan en la informacion proporcionada; conviene verificar la licencia del upstream antes de un despliegue comercial.
-- Compatibilidad: requiere builds recientes de llama.cpp (b11000+) con soporte de arquitectura hibrida DeltaNet; motores o versiones antiguas pueden fallar al cargar los tensores SSM.
-- Coste de contexto: la afirmacion de 256K tokens en 24 GB de VRAM no viene acompanada de cifras de rendimiento, por lo que el comportamiento real con contextos muy largos (degradacion, memoria del cache KV, velocidad) es desconocido.
-- Resultados de busqueda web no utilizables: las busquedas realizadas devolvieron exclusivamente sitios de contenido para adultos, sin ninguna relacion con el modelo. No se ha incorporado ninguna informacion de esas fuentes.
+- Modelo "uncensored": los filtros de seguridad han sido reducidos o eliminados, lo que aumenta el riesgo de generar contenido dañino, sesgado o legalmente problemático; no es adecuado para aplicaciones de cara al público sin capas de moderación adicionales.
+- Solo declara inglés; aunque el autor afirma haber eliminado la mezcla de idiomas, no hay verificación independiente del comportamiento multilingüe.
+- Riesgo de alucinación inherente a los modelos de 27B y acentuado por el entrenamiento sobre datos sintéticos generados por otros modelos.
+- La model card está dominada por contenido promocional y enlaces de donación; las afirmaciones sobre corrección de inestabilidades y fidelidad de razonamiento no están respaldadas por evaluaciones independientes publicadas en la información disponible.
+- El contexto de 256K es una declaración del autor; no se confirma la calidad de la recuperación a esa longitud ni el coste real de memoria KV.
+- El autor advierte sobre problemas de sintaxis en código si no se ajusta la penalización de repetición, lo que indica fragilidad en generación de código.
+- La licencia Apache 2.0 permite uso comercial, pero el integrador asume la responsabilidad sobre el contenido generado por un modelo sin salvaguardas.
+- La cuantización a 3,27 BPW puede degradar tareas sensibles a precisión; la única métrica publicada es perplejidad en WikiText-2, insuficiente para evaluar razonamiento o código.
+- El ecosistema de variantes del autor es amplio y cambiante, con builds retiradas; conviene fijar la versión exacta (V3) en producción.
 
 ## Enlaces
 
-- [Modelo en Hugging Face (IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-NanoPlus-GGUF)](https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-NanoPlus-GGUF)
-- [Modelo base (nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2)](https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2)
-- [Coleccion VAL-APEX-I en Hugging Face](https://huggingface.co/collections/IsValorum/val-apex-i-6ac563d1784a04a1bb177f47)
-- Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-NanoPlus-GGUF
+- Modelo base: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
+- Variante MiniPlus V3 del mismo modelo: https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-VAL-APEX-I-MiniPlus-V3-GGUF
+- Variante NanoPlus V3 del modelo estándar: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF
+- Variante MiniPlus V3 del modelo estándar: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
+- Variante Swift-1.5 Uncensored MTP MiniPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-MiniPlus-V3-GGUF
+- Variante Swift-1.5 Uncensored MTP NanoPlus V3: https://huggingface.co/IsValorum/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-VAL-APEX-I-NanoPlus-V3-GGUF
+- Variante Huihui Abliterated MiniPlus V3: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-MiniPlus-V3-GGUF
+- Variante Huihui Abliterated NanoPlus V3: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-NanoPlus-V3-GGUF
+- Coleccion MiniPlus Abliterated 27B: https://huggingface.co/collections/IsValorum/val-apex-miniplus-abliterated-27b-6acfec541ee5628d2632c663
+- Coleccion MiniPlus Standard 27B: https://huggingface.co/collections/IsValorum/val-apex-miniplus-standard-27b-6acfec54ca4ce4cf5cd5bdb6
+- Coleccion NanoPlus Abliterated 27B: https://huggingface.co/collections/IsValorum/val-apex-nanoplus-abliterated-27b-6acfec5503f6e74218f71f64
+- Coleccion NanoPlus Standard 27B: https://huggingface.co/collections/IsValorum/val-apex-nanoplus-standard-27b-6acfec55c1c99e2a23ebbd9b
+- Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

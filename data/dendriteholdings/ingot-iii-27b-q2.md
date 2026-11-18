@@ -2,105 +2,101 @@
 
 ## Resumen
 
-Ingot-III-27B-Q2 es un modelo de lenguaje de 26.895.998.464 parámetros (≈26,9B) publicado por Dendrite Holdings como espejo público de la submission ganadora de la subred Ingot en Bittensor. Ingot no entrena modelos: los mineros cuantizan un profesor fijo y el validador corona la copia que más se aproxima a él, medida como divergencia KL entre las distribuciones del siguiente token y como distancia de estados ocultos frente al profesor en BF16. Este repositorio contiene los pesos del minero `5EZtYcquruTMux5PGgFv45JhTYsR46CCHD9Uwy2Fm8qCRXM8` (uid 151), subidos byte a byte.
+Ingot-III-27B-Q2 es un modelo de lenguaje de 26.896 millones de parámetros derivado de Prism ML Ternary Bonsai 2 27B, un transformer con pesos ternarios. Lo publica dendriteholdings como espejo público de una submission ganadora de la subred Ingot de Bittensor, un certamen en el que los mineros cuantizan un modelo profesor fijo y el validador premia la copia que se mantiene más próxima a él. El modelo base es Qwen3.8-27B, y el minero retocó las escalas por bloque y los pesos de normalización para acercar la salida a ese profesor.
 
-El interés es doble. Por un lado, es un caso práctico de cuantización extrema: un único archivo GGUF de 7,2 GB para 26,9B de parámetros equivale a unos 2,1 bits por parámetro. Por otro, aporta una métrica de fidelidad explícita frente al profesor (KL de 0,11440 y distancia de estados ocultos de 0,3617), un 11,5% y un 20,3% mejores que Ingot-genesis-27B-Q2, respectivamente.
+La relevancia del modelo es doble: por un lado, demuestra hasta dónde llega la cuantización ternaria (códigos de tres niveles más escalas por bloque) para comprimir un modelo de 27B en un GGUF de 7,2 GB; por otro, documenta un proceso de selección competitivo con métricas objetivas de fidelidad (KL de 0,11440 frente al profesor BF16). No es un modelo de propósito general con garantías de producción, sino una pieza de investigación sobre compresión extrema y alineación con un profesor.
 
-El uso no es directo: el GGUF emplea el layout, el tokenizer y la rotación de Hadamard de Ingot-genesis-27B-Q2, y llama.cpp estándar no lo carga. Es necesario el fork de PrismML en el commit `e3de715`. La model card no documenta arquitectura del profesor, contexto, idiomas ni licencia.
+El modelo se ejecuta exclusivamente con el fork de llama.cpp de PrismML en el commit `e3de715`, no con llama.cpp estándar. Incorpora soporte opcional de decodificación especulativa mediante un drafter DFlash 2 (aceleración de 1,8x en modo greedy) y de entrada de imágenes si se le añade el proyector multimodal del modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Modelo derivado: cuantización GGUF de un profesor de 27B; la model card no documenta la arquitectura del profesor |
-| Parámetros totales | 26.895.998.464 (≈26,9B; el nombre comercial indica 27B) |
-| Parámetros activos | No aplica / no disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | GGUF Q2; ≈2,1 bits por parámetro (7,2 GB / 26,9B); rotación de Hadamard |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible en este repositorio (Ingot-genesis-27B-Q2 se publica como apache-2.0) |
-| Formato de pesos | GGUF (`Ingot-III-27B-Q2.gguf`) |
-| Runtime requerido | Fork PrismML de llama.cpp, commit `e3de715` (llama.cpp estándar no lo carga) |
-| Capacidad multimodal | Opcional, acoplando el mmproj de `prism-ml/Ternary-Bonsai-2-27B-gguf`; no evaluada |
+| Arquitectura | Transformer con pesos ternarios (códigos de 3 niveles, escalas por bloque y rotación de Hadamard) |
+| Parametros totales | 26.895.998.464 (26,9B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Ternaria (Q2, ~2 bits efectivos); drafter DFlash 2 en Q8_0; proyector multimodal en Q8_0 y BF16 |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (llama.cpp); también disponible en MLX 2-bit para Apple Silicon |
 
 ## Arquitectura y entrenamiento
 
-No se trata de un modelo entrenado desde cero, sino de un artefacto de cuantización producido dentro de la subred Ingot. El proceso es una destilación por compresión: existe un profesor fijo en BF16 y cada minero presenta una copia cuantizada; el validador puntúa la fidelidad de esa copia con dos medidas calculadas por token de respuesta frente al profesor leyendo la misma respuesta: la divergencia KL entre distribuciones del siguiente token y la distancia relativa de estados ocultos `|h − h_teacher| / |h_teacher|`, promediada cada 8 capas. Menor es mejor. Este modelo ganó con KL 0,11440 y distancia 0,3617.
+El modelo es un transformer denso de 27B parámetros cuyos pesos se almacenan en formato ternario: cada peso toma uno de tres valores, con escalas por bloque que recuperan rango dinámico. Sobre esa base, el minero de la subred Ingot reajustó las escalas por bloque y los pesos de normalización para minimizar la divergencia respecto al profesor Qwen3.8-27B en BF16. Los códigos ternarios provienen de Ternary Bonsai 2 y no se modificaron; solo se reajustaron los parámetros continuos que acompañan a la cuantización.
 
-La model card no detalla composición del dataset, número de tokens, ni si hubo RLHF/DPO, porque no hubo entrenamiento en el sentido habitual: los pesos son la conversión del minero sobre el profesor. Técnicamente, el punto distintivo es el formato: el archivo conserva el layout, el tokenizer y la rotación de Hadamard de Ingot-genesis-27B-Q2, lo que exige un fork específico de llama.cpp y rompe la compatibilidad con el ecosistema estándar. La evaluación de la subred cubre únicamente el modelo de texto; la calidad multimodal no se puntúa.
+El entrenamiento no es un preentrenamiento ni un finetune convencional, sino un proceso de destilación por búsqueda: el validador de Ingot evalúa la fidelidad de cada submission midiendo la KL entre las distribuciones del siguiente token del profesor y las del candidato, además de la distancia de estados ocultos promediada cada 8 capas. La submission ganadora obtuvo KL 0,11440 y distancia 0,3617, frente a 0,11666 y 0,3873 del modelo que ostentaba el título. El layout, tokenizador y rotación de Hadamard siguen el esquema de Ingot-genesis-27B-Q2, y el resultado no es ejecutable con llama.cpp estándar: requiere el fork PrismML-Eng/llama.cpp en el commit `e3de715`.
 
 ## Capacidades
 
-- Generación de texto conversacional, según la etiqueta `conversational` del repositorio.
-- Publicado con la etiqueta `endpoints_compatible`.
-- Entrada de imágenes opcional mediante un proyector externo (mmproj Q8_0 o BF16 de Ternary-Bonsai-2-27B); el proyector se construyó para genesis, no para estos pesos, y la calidad de imagen está sin probar.
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes o razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas.
-- Modo thinking, audio u otras capacidades especiales: no documentadas.
-- Razonamiento, código y matemáticas: no se han publicado evaluaciones específicas para este modelo.
+- Generación de texto conversacional en una sola secuencia, con plantilla de chat compatible con `--jinja`.
+- Razonamiento y respuesta a instrucciones heredados del profesor Qwen3.8-27B, sujetos a la degradación propia de la cuantización ternaria.
+- Entrada multimodal opcional: admite imágenes si se carga el proyector `Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf` o `BF16` del modelo base (calidad no evaluada).
+- Decodificación especulativa con el drafter `Ingot-27B-DFlash2-Q8_0.gguf`, que acelera la generación en modo greedy y con sampling.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con el ecosistema llama.cpp.
+- No se documenta soporte explícito de tool calling, function calling, agentes multi-paso ni modo thinking; no disponible.
 
 ## Casos de uso
 
-- Inferencia local en GPU de consumo: los 7,2 GB de pesos permiten cargar el modelo en tarjetas de 12-16 GB, dejando espacio para caché KV y contexto, algo inviable con el profesor en BF16.
-- Replicación de la evaluación de la subred Ingot: compilar el fork de PrismML en el commit `e3de715` y ejecutar `llama-server -m Ingot-III-27B-Q2.gguf -ngl 99 -fa on --jinja` para reproducir las métricas KL y de estados ocultos declaradas.
-- Estudio de cuantización extrema: comparar la degradación respecto al profesor BF16 en un régimen de ~2,1 bits por parámetro, usando la KL por token como indicador objetivo.
-- Asistente conversacional offline: desplegar el modelo en una estación de trabajo sin conectividad, con `llama-server` como backend HTTP local.
-- Prototipado y docencia sobre Bittensor: usar el repositorio como ejemplo verificable de cómo se evalúa y corona una submission en una subred de cómputo descentralizado.
-- Experimentación multimodal controlada: acoplar el mmproj de Ternary-Bonsai-2-27B para probar entrada de imágenes, asumiendo que no hay garantía de calidad al no haber sido entrenado el proyector para estos pesos.
-- Evaluación comparativa de reyes de la subred: enfrentar Ingot-III, Ingot-II e Ingot-I con el mismo harness y las mismas respuestas de referencia.
+- Investigación en cuantización extrema: servir como referencia reproducible para estudiar el impacto de pesos ternarios en la calidad de un modelo de 27B, comparando sus salidas con el profesor BF16 mediante KL y distancia de estados ocultos.
+- Despliegue en hardware con VRAM limitada: al ocupar 7,2 GB en disco, permite ejecutar un modelo de 27B en GPUs de consumo con 8-12 GB de VRAM, algo inviable con pesos BF16.
+- Evaluación de pipelines de destilación competitiva: útil para reproducir el flujo de Ingot (cuantizar, medir fidelidad, seleccionar) en entornos de investigación sobre Bittensor.
+- Chat conversacional de bajo coste en entornos controlados: con `llama-server` y plantilla Jinja, puede montarse un servicio de conversación para pruebas internas donde la fidelidad exacta al profesor no sea crítica.
+- Aceleración de inferencia con decodificación especulativa: el par modelo + drafter DFlash 2 sirve para medir el rendimiento de técnicas de speculative decoding en modelos ternarios, con una ganancia documentada de 1,8x en greedy.
+- Pruebas de multimodalidad experimental: cargando el proyector del modelo base se puede evaluar de forma cualitativa la capacidad de describir imágenes, asumiendo que la calidad no está garantizada.
+- Referencia para el ecosistema MLX en Apple Silicon: la versión `Ingot-III-27B-MLX-2bit` permite experimentar con el modelo en Macs con memoria unificada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar en la información disponible. Las únicas métricas publicadas son las de fidelidad frente al profesor:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo reporta métricas de fidelidad respecto al profesor:
 
-| Métrica (por token de respuesta) | Ingot-III-27B-Q2 (eval ganadora) | Rey anterior en la misma eval | Mejora frente a Ingot-genesis-27B-Q2 |
-|---|---|---|---|
-| KL(profesor ‖ modelo) | 0,11440 | 0,11666 | 11,5% más cercano |
-| Distancia de estados ocultos (media cada 8 capas) | 0,3617 | 0,3873 | 20,3% más cercano |
+| Metrica | Este modelo | Modelo que ostentaba el titulo |
+|---|---|---|
+| KL(profesor ‖ modelo) | 0,11440 | 0,11666 |
+| Distancia de estados ocultos (cada 8 capas) | 0,3617 | 0,3873 |
+
+Además, se documenta una aceleración de aproximadamente 1,8x en decodificación greedy de un solo flujo y de 1,3-1,4x con sampling al usar el drafter DFlash 2, a cambio de unos 6 GB adicionales de VRAM.
 
 ## Requisitos de hardware
 
-- Pesos en disco y en VRAM: 7,2 GB en GGUF Q2.
-- VRAM estimada para inferencia: en torno a 8-10 GB con contexto corto y 10-12 GB con contexto largo; el tamaño de la caché KV no está documentado.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 para uso individual con contexto amplio; RTX 4080 / 4070 Ti Super (16 GB) para pesos y contexto moderado; A100 o H100 para servir en lote y con concurrencia.
-- Cabe en GPU de consumo: sí, en tarjetas de 12 GB o más, con margen ajustado en el límite inferior.
-- Opciones de despliegue: exclusivamente el fork PrismML de llama.cpp en el commit `e3de715` (`llama-server`). Según la model card, llama.cpp estándar no lo ejecuta; no hay soporte declarado para vLLM, TGI, Ollama ni otros servidores.
-- Flags de ejecución indicadas por el autor: `-ngl 99 -fa on --jinja`.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el GGUF pesa 7,2 GB, por lo que la inferencia cabe en GPUs con 8 GB o más, dejando margen para el contexto y el runtime.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090; en datacenter, A100, H100 o L40S para mayor throughput.
+- Cabe en GPU de consumo: sí, en cualquier tarjeta con al menos 8-10 GB de VRAM.
+- Con el drafter DFlash 2 hay que sumar unos 6 GB de VRAM adicionales.
+- Despliegue: exclusivamente con el fork PrismML-Eng/llama.cpp en el commit `e3de715` (compilado con `-DGGML_CUDA=ON`), usando `llama-server` con `-ngl 99 -fa on --jinja`. No es compatible con llama.cpp estándar, Ollama, vLLM ni TGI.
+- En Apple Silicon, el pack MLX 2-bit permite ejecución nativa.
+- Latencia y throughput: no disponibles de forma absoluta; solo se conoce la mejora relativa del drafter (1,8x greedy, 1,3-1,4x con sampling).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato / cuantización | KL vs profesor | Distancia hidden-state | Licencia |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ingot-III-27B-Q2 | 26,9B | GGUF Q2 | 0,11440 | 0,3617 | No disponible |
-| Ingot-genesis-27B-Q2 | ≈27B | GGUF Q2 (ternario, Hadamard) | 11,5% peor que Ingot-III | 20,3% peor que Ingot-III | apache-2.0 |
-| Ingot-I-27B-Q2 | ≈27B | GGUF Q2 | No disponible | No disponible | No disponible |
-| Ingot-genesis-27B-FP8 | ≈27B | FP8 | Punto de partida de la subred (coronado el 16 de octubre de 2026) | No disponible | No disponible |
+| Ingot-III-27B-Q2 | 26,9B | no disponible | GGUF ternario | no disponible | Requiere fork de llama.cpp; fidelidad KL 0,11440 al profesor |
+| prism-ml/Ternary-Bonsai-2-27B-gguf | 27B | no disponible | GGUF ternario | no disponible | Modelo base; incluye proyector multimodal oficial |
+| dendriteholdings/Ingot-genesis-27B-Q2 | 27B | no disponible | GGUF ternario | no disponible | Define el layout y tokenizador que hereda Ingot-III |
+| Qwen3.8-27B (profesor, BF16) | 27B | no disponible | safetensors/BF16 | no disponible | Referencia de calidad; requiere mucha más VRAM |
 
-Los tres reyes Q2 (Ingot-I, Ingot-II e Ingot-III) proceden de las 26 submissions evaluadas entre el 16 y el 17 de octubre de 2026, según el directorio de la subred.
+La comparación con modelos de la misma categoría en precisión estándar (por ejemplo, Qwen 27B en BF16) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada en este repositorio: no se puede asumir la apache-2.0 de Ingot-genesis-27B-Q2 para uso comercial sin verificarlo con el autor.
-- Dependencia de un fork no estándar de llama.cpp en un commit concreto: deuda técnica relevante y riesgo de rotura si el fork deja de mantenerse.
-- Cuantización muy agresiva (~2,1 bits por parámetro): una KL de 0,11440 frente al profesor no es cero; cabe esperar degradación en tareas de razonamiento encadenado, código y matemáticas, aunque no esté cuantificada públicamente.
-- Ausencia total de benchmarks estándar y de datos de idiomas: no hay base para afirmar rendimiento multilingüe ni comparaciones con modelos convencionales de 27B.
-- Capacidad de visión no validada: el proyector procede de otro modelo y la subred solo puntúa texto.
-- Longitud de contexto desconocida: planificar despliegues con ventanas conservadoras.
-- Riesgo de alucinación inherente a los modelos generativos, no medido en la información disponible.
-- Sesgos no documentados.
-- Fechas del repositorio (octubre de 2026) y estado dinámico de la subred: conviene verificar la vigencia del rey y de los commits antes de desplegar.
+- La licencia no está declarada; no se puede asumir uso comercial sin verificar los términos del modelo base y del profesor.
+- No es ejecutable con llama.cpp estándar ni con la mayoría de runtimes habituales; depende de un fork y un commit concretos, lo que complica el mantenimiento en producción.
+- La cuantización ternaria introduce degradación frente al profesor BF16; la KL de 0,11440 indica una divergencia medible en la distribución del siguiente token.
+- La calidad multimodal es desconocida: el proyector se diseñó para Ingot-genesis y no se evaluó con estos pesos.
+- No se documentan idiomas soportados, longitud de contexto ni sesgos conocidos; hay que asumir los del modelo base sin verificación.
+- Riesgo de alucinación inherente a un modelo de 27B cuantizado de forma agresiva, sin datos de evaluación que lo acoten.
+- La model card no reporta benchmarks de capacidad, por lo que no hay garantías cuantitativas de rendimiento en tareas concretas.
+- Procede de un certamen competitivo (Bittensor) y su valoración se basa en fidelidad al profesor, no en utilidad práctica demostrada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/dendriteholdings/Ingot-III-27B-Q2
-- Modelo predecesor (genesis): https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
-- Otro rey de la subred (Ingot-I): https://huggingface.co/dendriteholdings/Ingot-I-27B-Q2
-- Fork de llama.cpp usado en la evaluación: https://github.com/PrismML-Eng/llama.cpp/commit/e3de715222b2667c54a267441159a5729f11155e
-- Torre de visión (Ternary-Bonsai-2-27B-gguf): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
-- Proyector mmproj Q8_0: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/b072e1d3b35a0a630cece372c2127528e0994386/Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf
-- Proyector mmproj BF16: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/b072e1d3b35a0a630cece372c2127528e0994386/Ternary-Bonsai-2-27B-mmproj-BF16.gguf
-- Ficha de la subred Ingot: https://subnetalpha.ai/subnet/ingot/
-- Panel en vivo de la subred: https://theingot.ai
-- Registro en free2aitools (Ingot-I): https://free2aitools.com/model/dendriteholdings/ingot-i-27b-q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-III-27B-Q2
+- Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
+- Modelo de layout de referencia: https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
+- Drafter especulativo: https://huggingface.co/dendriteholdings/Ingot-27B-DFlash2
+- Pack MLX 2-bit: https://huggingface.co/dendriteholdings/Ingot-III-27B-MLX-2bit
+- Fork de llama.cpp: https://github.com/PrismML-Eng/llama.cpp
+- Commit requerido: https://github.com/PrismML-Eng/llama.cpp/commit/e3de715222b2667c54a267441159a5729f11155e
+- Proyector multimodal Q8_0: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/b072e1d3b35a0a630cece372c2127528e0994386/Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf
+- Proyector multimodal BF16: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/b072e1d3b35a0a630cece372c2127528e0994386/Ternary-Bonsai-2-27B-mmproj-BF16.gguf

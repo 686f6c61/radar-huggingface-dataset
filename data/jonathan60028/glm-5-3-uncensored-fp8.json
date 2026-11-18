@@ -44,8 +44,8 @@
     "ar",
     "ko",
     "ja",
-    "base_model:JANGQ-AI/GLM-5.3-FP8",
-    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
     "license:mit",
     "region:us"
   ],

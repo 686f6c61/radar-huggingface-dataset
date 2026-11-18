@@ -2,85 +2,97 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA de destilación en 4 pasos para el sistema omni-modal MiniMax-H3, desarrollado por el usuario Beidouqixing. Su propósito es acelerar la generación de vídeo con audio nativo (T2VA, text-to-video+audio) reduciendo el número de pasos de inferencia de los habituales (típicamente 20-50) a solo 4, lo que multiplica el rendimiento en despliegues de producción. El adaptador se entrena mediante destilación por emparejamiento de distribución (VSD, sin GAN) sobre hardware Ascend NPU, con un método data-free que no requiere datos reales adicionales.
+MiniMax-H3 4-Step LoRA (FlashGen) es un adaptador LoRA de destilación para el modelo base MiniMax-H3, un sistema de generación de vídeo con audio a partir de texto (T2VA) desarrollado por MiniMax. El adaptador lo publica el usuario Beidouqixing y reduce el número de pasos de inferencia del modelo base a solo 4, manteniendo una resolución de 1344×768 y clips de 5,2 segundos. Su función es acelerar la generación en producción sin reentrenar el modelo completo: se fusiona con los pesos del modelo base mediante el script incluido y se inyecta un calendario de ruido específico (`base_schedule`) antes del despliegue.
 
-La relevancia de este adaptador radica en que permite desplegar MiniMax-H3 en entornos de servicio con latencia reducida, manteniendo una resolución de 1344×768 píxeles y duración de 5,2 segundos por clip. No es un modelo autónomo: requiere el modelo base MiniMax-H3, y el proceso de integración implica fusionar el LoRA con el checkpoint base e inyectar un programa de ruido (`base_schedule`) antes de servir con vllm-omni o MindIE-SD. Está pensado específicamente para la pila de inferencia de Huawei Ascend NPU, aunque el LoRA en sí es agnóstico de hardware y podría adaptarse a otros entornos.
+El interés técnico reside en que la destilación se ha realizado mediante *distribution matching distillation* (VSD, sin GAN) y en un entorno de cómputo no convencional: NPUs Ascend, no GPUs NVIDIA. Esto lo convierte en una pieza relevante para infraestructuras de inferencia sobre hardware Ascend con MindIE-SD o vllm-omni, donde el coste por vídeo generado depende críticamente del número de pasos del muestreador.
+
+El repositorio es pequeño (1,3 GB), contiene únicamente el adaptador en rango 64 y bf16, y se distribuye bajo licencia Apache 2.0. No es un modelo autónomo: requiere descargar MiniMax-H3 y ejecutar el script de fusión. Los idiomas declarados para las entradas de texto son inglés y chino.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (rango 64) sobre MiniMax-H3, modelo base omni-modal T2VA |
-| Parametros totales | no disponible (archivo safetensors de 1,3 GB en bf16; LoRA de rango 64) |
-| Parametros activos | no aplica (adaptador LoRA) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo base MiniMax-H3, transformer de difusión para vídeo y audio |
+| Parametros totales | no disponible (el adaptador pesa 1,3 GB en bf16; el modelo base no se detalla en la informacion proporcionada) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16 |
-| Idiomas soportados | ingles (en), chino (zh) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Tipos de cuantizacion | bf16 (único formato publicado del adaptador); cuantizaciones del modelo base no disponibles |
+| Idiomas soportados | en, zh |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (`minimax_h3_4step_lora_flashgen_v1.0_768p_bf16.safetensors`) |
+| Rango LoRA | 64 |
+| Modulos objetivo LoRA | `qkv_proj`, `out_proj`, `fc1`, `fc2`, `adaln_proj.linear` |
+| Pasos de inferencia | 4 |
+| Resolucion y duracion | 1344×768, 5,2 s |
+| Calendario de ruido (`base_schedule`) | `[1.0, 0.7, 0.4, 0.15, 0.0]` |
+| Metodo de destilacion | Distribution matching distillation (VSD, sin GAN) |
+| Hardware de entrenamiento | Ascend NPU |
+| Tarea | T2VA (text-to-video + audio) |
+| Pipeline | image-to-video |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena sobre el modelo base MiniMax-H3, un sistema generativo omni-modal que entiende texto, imagenes, video y audio, y genera video con audio estereo nativo hasta 2K y 15 segundos. El LoRA aplica a las proyecciones `qkv_proj`, `out_proj`, `fc1`, `fc2` y `adaln_proj.linear`, con rango 64 y precision bf16. El metodo de entrenamiento es destilacion por emparejamiento de distribucion (VSD, sin GAN) sobre NPU Ascend, con un enfoque "data-free" que no requiere un dataset de pares texto-video para la destilacion.
+El adaptador se aplica sobre MiniMax-H3, un modelo de difusión para generar vídeo y audio sincronizados a partir de texto. La LoRA de rango 64 se inserta en las proyecciones de atención (`qkv_proj`, `out_proj`), en las capas feed-forward (`fc1`, `fc2`) y en la proyección de modulación adaptativa (`adaln_proj.linear`), que es donde los modelos de difusión tipo DiT inyectan la señal de timestep y condicionamiento. Al cubrir tanto atención como AdaLN, la destilación puede alterar la trayectoria de muestreo completa y no solo la mezcla de características.
 
-El resultado es un modelo que requiere solo 4 pasos de inferencia para generar un clip de 5,2 segundos a resolucion 1344x768. La configuracion de ruido inyectada (`base_schedule`) es `[1.0, 0.7, 0.4, 0.15, 0.0]`, que define la progresion del ruido en los 4 pasos. El proceso de integracion implica fusionar el LoRA con el checkpoint base mediante el script `merge_lora_ckpt.py` y despues servir el modelo fusionado con vllm-omni o MindIE-SD.
+El entrenamiento emplea *distribution matching distillation* en su variante VSD, sin discriminador GAN, y se ejecutó sobre NPUs Ascend. El autor lo describe como *data-free distillation*, es decir, el estudiante se ajusta contra el comportamiento del profesor sin un corpus de datos etiquetado adicional. El resultado es un estudiante de 4 pasos que sustituye el muestreo multi-paso del modelo base; el calendario `[1.0, 0.7, 0.4, 0.15, 0.0]` define los niveles de ruido en cada uno de los 4 pasos y debe inyectarse explícitamente durante la fusión, ya que el script `merge_lora_ckpt.py` lo incorpora al checkpoint fusionado.
 
 ## Capacidades
 
-- Generacion de video con audio nativo (T2VA) a partir de prompts de texto.
-- Inferencia en 4 pasos, reduciendo la latencia respecto al modelo base no destilado.
-- Resolucion de salida fija 1344x768 píxeles con duracion de 5,2 segundos por clip.
-- Soporte multilingue para prompts en ingles y chino.
-- Integracion con el ecosistema de despliegue de Huawei: MindIE-SD y vllm-omni para NPU Ascend.
-- Compatible con el modelo base MiniMax-H3, que ofrece comprension multimodal (texto, imagenes, video, audio).
+- Generación de vídeo a partir de texto (T2VA) con pista de audio asociada, en resolución 1344×768 y clips de 5,2 segundos.
+- Pipeline de image-to-video declarado en Hugging Face, lo que permite condicionar la generación a una imagen de entrada además del texto.
+- Inferencia en 4 pasos, lo que reduce el coste computacional por clip frente al muestreo completo del modelo base.
+- Entradas de texto en inglés y chino.
+- Integración con vllm-omni y MindIE-SD para servir el modelo fusionado en infraestructura Ascend.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso ni modos de pensamiento; no es un modelo de lenguaje, sino un generador de vídeo.
 
 ## Casos de uso
 
-- **Generacion de video en produccion a alta velocidad**: el modelo reduce la latencia de generacion a 4 pasos, lo que permite servir peticiones de video en tiempo real en plataformas de contenido generativo, manteniendo una resolucion aceptable de 1344x768 y audio sincronizado.
-- **Prototipado rapido de contenido creativo**: estudios de diseno o agencias de publicidad pueden generar clips de 5,2 segundos para validar ideas antes de invertir en produccion completa, gracias al bajo coste de inferencia.
-- **Automatizacion de video corto para redes sociales**: la integracion con vllm-omni permite montar un servicio REST que recibe prompts y devuelve clips de video con audio, ideal para pipelines de generacion masiva de contenido para plataformas como TikTok o Reels.
-- **Doblaje y narracion automatizada**: al generar audio nativo sincronizado con el video, el modelo puede usarse para crear videos explicativos o de formacion con narracion en ingles o chino sin post-produccion de audio.
-- **Pruebas de concepto en entornos de investigacion**: el LoRA permite experimentar con destilacion de modelos T2VA en hardware Ascend, sirviendo como referencia para trabajos de optimizacion de pasos de inferencia.
-- **Servicio de video bajo demanda en infraestructura Huawei**: empresas que ya operan con servidores Ascend NPU pueden desplegar este adaptador con MindIE-SD para ofrecer generacion de video como servicio interno, sin depender de GPUs NVIDIA.
+- Generación rápida de clips publicitarios: con 4 pasos y 5,2 segundos de duración, el adaptador permite iterar sobre variaciones de un anuncio en minutos, algo inviable con muestreos de decenas de pasos en la misma infraestructura.
+- Prototipado de storyboards con audio: el pipeline T2VA produce vídeo y audio en una sola pasada, útil para presentar bocetos animados con sonido a equipos de preproducción antes de rodar.
+- Animación de imágenes fijas para catálogos de producto: el pipeline image-to-video permite partir de una fotografía y generar un clip corto con movimiento, adecuado para fichas de e-commerce.
+- Previsualización en estudios de animación: los clips de 1344×768 sirven como *previz* de planos antes de renderizar en alta calidad con el modelo base sin destilar.
+- Servicio de generación de vídeo bajo demanda en infraestructura Ascend: al estar entrenado y documentado para MindIE-SD, encaja en clústeres con NPUs donde no hay GPUs NVIDIA disponibles.
+- Generación de material para redes sociales: clips de 5,2 segundos con audio encajan en formatos de vídeo corto y pueden producirse por lotes con vllm-omni.
+- Investigación en destilación de modelos de difusión: el par (modelo base, LoRA de 4 pasos con calendario explícito) sirve como referencia reproducible para estudiar VSD sin GAN en difusión de vídeo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de calidad (FVD, CLIP Score, etc.) ni comparativas numericas con el modelo base o con otras destilaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas cuantitativas de calidad (FVD, CLIP score, alineación audio-vídeo) ni comparaciones con el modelo base sin destilar.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: no disponible. El LoRA en si ocupa 1,4 GB en bf16, pero la inferencia requiere cargar el modelo base MiniMax-H3 completo, cuyo tamano no se especifica en la informacion proporcionada.
-- **GPU / NPU recomendadas**: disenado para NPU Ascend (Huawei), con soporte explicito para MindIE-SD y vllm-omni. No hay indicacion de compatibilidad con GPU NVIDIA.
-- **Cabe en GPU de consumo**: no se puede determinar con la informacion disponible. El modelo base MiniMax-H3 es un sistema omni-modal grande y probablemente supere la VRAM de GPUs de consumo como la RTX 4090 (24 GB), pero no se aportan datos.
-- **Opciones de despliegue**: vllm-omni y MindIE-SD son las opciones documentadas. Requiere fusionar el LoRA con el checkpoint base mediante `merge_lora_ckpt.py` antes de servir.
-- **Latencia y throughput**: no se proporcionan datos de latencia o throughput. El objetivo del modelo es reducir los pasos de inferencia de 20-50 a 4, lo que sugiere una aceleracion sustancial, pero sin numeros concretos.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. El adaptador ocupa 1,3 GB en bf16, pero el consumo dominante corresponde al modelo base MiniMax-H3, cuyas dimensiones no se detallan.
+- GPU recomendadas: no se documentan GPUs NVIDIA. El autor orienta el despliegue a NPUs Ascend mediante MindIE-SD y vllm-omni.
+- Compatibilidad con GPU de consumo: no confirmada; sin los requisitos del modelo base no puede determinarse si cabe en una RTX 4090 u otra GPU de consumo.
+- Opciones de despliegue: fusión obligatoria con `merge_lora_ckpt.py` sobre el directorio `${MODEL_ROOT}/FL2VA`, seguida de despliegue con MindIE-SD o vllm-omni. No se mencionan llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles. Cabe esperar una reducción proporcional al pasar de muestreo multi-paso a 4 pasos, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Pasos | Resolucion | Licencia | Disponibilidad |
+| Modelo | Tipo | Pasos de inferencia | Resolucion | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| Beidouqixing/minimax-h3-4step-lora-flashgen | LoRA destilado sobre MiniMax-H3 | 4 | 1344x768, 5.2s | apache-2.0 | Hugging Face |
-| joyfox/MiniMax-H3-Turbo | LoRA destilado sobre MiniMax-H3 | 4 | no disponible | no disponible | Hugging Face |
-| MiniMaxAI/MiniMax-H3 (base) | Modelo omni-modal completo | 20-50 (tipico) | hasta 2048x2048, 15s | apache-2.0 | Hugging Face |
+| MiniMax-H3 4-Step LoRA (FlashGen) | LoRA de destilación sobre MiniMax-H3 | 4 | 1344×768, 5,2 s | Apache 2.0 | Ascend NPU (MindIE-SD, vllm-omni) |
+| MiniMax-H3 (base) | Modelo de difusión T2VA completo | no disponible (muestreo completo) | no disponible | no disponible en la informacion proporcionada | no disponible |
+| Otras LoRAs de aceleración para vídeo | Adaptadores de destilación | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa muestra que este adaptador compite directamente con `joyfox/MiniMax-H3-Turbo`, que tambien ofrece una LoRA de 4 pasos para el mismo base. La diferencia principal es el metodo de destilacion (VSD vs. el que use joyfox, no documentado) y la orientacion a hardware Ascend NPU. Respecto al modelo base, este LoRA reduce drasticamente los pasos de inferencia, aunque limita la resolucion y duracion maxima a 1344x768 y 5,2 segundos respectivamente.
+No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo autonomo**: requiere el checkpoint base de MiniMax-H3 y un paso previo de fusion de LoRA; no puede cargarse directamente en un pipeline estandar de difusion.
-- **Resolucion y duracion fijas**: la destilacion esta optimizada para 1344x768 y 5,2 segundos; generar a otras resoluciones o duraciones puede degradar la calidad o fallar.
-- **Dependencia de hardware Ascend**: el despliegue documentado es exclusivamente para NPU Ascend con MindIE-SD o vllm-omni; no se garantiza compatibilidad con CUDA o GPU de otras marcas.
-- **Calidad potencialmente inferior**: la destilacion a 4 pasos suele introducir artefactos visuales o de audio respecto al modelo base no destilado, aunque no se aportan metricas comparativas.
-- **Soporte limitado de idiomas**: solo se documenta ingles y chino; el uso en otros idiomas puede producir resultados de menor calidad.
-- **Sin benchmarks publicados**: no hay datos de evaluacion que permitan cuantificar la perdida de calidad respecto al modelo base, lo que dificulta una decision informada para produccion.
-- **Licencia apache-2.0**: permite uso comercial, pero el modelo base MiniMax-H3 tambien es apache-2.0, por lo que no hay restricciones de licencia adicionales conocidas.
+- El adaptador no es autónomo: sin fusionarlo con MiniMax-H3 y sin inyectar el `base_schedule` correcto, la inferencia produce resultados incorrectos o directamente falla.
+- La destilación a 4 pasos suele implicar una pérdida de calidad y diversidad frente al muestreo completo del modelo base; no se aportan métricas que cuantifiquen esa pérdida.
+- El calendario `[1.0, 0.7, 0.4, 0.15, 0.0]` está calibrado para 4 pasos; usarlo con otro número de pasos o con otro sampler invalida el ajuste.
+- Resolución y duración están fijadas en el entrenamiento (1344×768, 5,2 s); no se documenta el comportamiento fuera de ese régimen.
+- Idiomas de entrada limitados a inglés y chino; el rendimiento con prompts en castellano no está evaluado.
+- Riesgo de sesgos y alucinaciones visuales heredado del modelo base y de sus datos de entrenamiento, no caracterizado en esta model card.
+- El autor no documenta evaluación de seguridad, filtrado de contenido ni comportamiento en dominios sensibles; en producción conviene añadir moderación propia.
+- La licencia Apache 2.0 del adaptador no exime de verificar la licencia y las condiciones de uso del modelo base MiniMax-H3.
+- El ecosistema de despliegue documentado es específico de Ascend (MindIE-SD); no hay guías para GPUs NVIDIA, lo que limita la portabilidad.
+- Repositorio con pocas descargas (3267) y likes (31) en el momento de la consulta: menor validación comunitaria que modelos establecidos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Beidouqixing/minimax-h3-4step-lora-flashgen
-- Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Repositorio oficial de MiniMax-H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
-- Guia de despliegue MindIE-SD (incluye fusion del LoRA): https://gitcode.com/Huangzjun/MindIE-SD-h3-docs/blob/dev/examples/minimax-h3/infer.md
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Guía de despliegue de MiniMax-H3 en MindIE-SD (fusión de pesos de 4 pasos y arranque): https://gitcode.com/Ascend/MindIE-SD/blob/dev/examples/minimax-h3/infer.md
 - Repositorio MindIE-SD: https://gitcode.com/Ascend/MindIE-SD
-- Space oficial de MiniMax H3 Turbo LoRA: https://huggingface.co/spaces/MiniMaxAI/MiniMax-H3-Turbo-Lora
-- Variante similar joyfox/MiniMax-H3-Turbo: https://huggingface.co/joyfox/MiniMax-H3-Turbo

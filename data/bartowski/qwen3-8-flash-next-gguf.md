@@ -2,79 +2,106 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo multimodal de texto e imagen desarrollado por el equipo Qwen (Alibaba), presentado como la siguiente generación de su serie Qwen3.8. Se trata de un modelo de arquitectura híbrida que combina atención GDN (Gated Delta Network) y QSA (Quadratic Self-Attention), con un diseño de mezcla de expertos (MoE) que según fuentes secundarias ronda los 125B parámetros activos, aunque el peso total en safetensors asciende a 176.943.899.520 parámetros (aproximadamente 177B). La model card de bartowski indica 180B parámetros totales, por lo que existe una discrepancia entre fuentes que conviene tener en cuenta.
+Qwen3.8-Flash-Next es un modelo multimodal de gran escala desarrollado por Qwen (Alibaba) que acepta entradas de texto e imagen y genera texto. Con aproximadamente 177.000 millones de parámetros (180B según la model card), se posiciona en la gama alta de la familia Qwen y está diseñado para tareas de razonamiento complejo, incluyendo un modo de "thinking" con esfuerzo de razonamiento configurable. El repositorio analizado aquí no contiene los pesos originales, sino la colección de cuantizaciones GGUF producidas por bartowski mediante llama.cpp (release b10665), lo que permite ejecutar el modelo en entornos locales con requisitos de memoria muy inferiores a los del checkpoint en BF16.
 
-El modelo destaca por su ventana de contexto de 262K tokens, soporte de razonamiento avanzado con niveles de esfuerzo configurables (el prompt por defecto incluye "Reasoning effort is set to xhigh") y capacidades multimodales que aceptan entrada de texto e imagen. La versión cuantizada en GGUF publicada por bartowski permite ejecutarlo en hardware local con requisitos de memoria elevados pero alcanzables: según unsloth.ai, puede funcionar en dispositivos con 75GB de RAM o memoria unificada sin necesidad de VRAM de GPU. Su licencia es qwen-community-1.0, una licencia comunitaria de Qwen con restricciones específicas para uso comercial.
+La relevancia de esta ficha radica en que las cuantizaciones GGUF son, en la práctica, la vía de acceso para desarrolladores que no disponen de clústeres de GPUs de 80 GB. El repositorio ofrece un abanico amplio de formatos (desde bf16 completo de 354 GB hasta IQ3_XXS de unos 90 GB), con versiones "L" que mantienen los pesos de embedding y de salida en Q8_0 para preservar calidad. Además, el modelo soporta decodificación especulativa mediante un modelo borrador MTP (Multi-Token Prediction), lo que reduce la latencia en inferencia autoregresiva.
 
-La relevancia actual del modelo radica en que representa la apuesta de Qwen por una arquitectura híbrida que mejora la eficiencia computacional frente a los transformers densos clásicos, manteniendo capacidades de razonamiento de alto nivel. Según unsloth.ai, el modelo supera a Claude-4.6-Opus (Max) en ciertos benchmarks, aunque no se proporcionan cifras concretas en la información disponible.
+El modelo está publicado bajo licencia `qwen-community-1.0`, una licencia comunitaria con condiciones específicas de uso que conviene revisar antes de un despliegue comercial. La información disponible no detalla la longitud de contexto, la composición del dataset de entrenamiento ni los resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida GDN + QSA (Gated Delta Network + Quadratic Self-Attention), MoE |
-| Parametros totales | 176.943.899.520 (safetensors); 180B según model card de bartowski; 125B según unsloth.ai |
-| Parametros activos | No disponible (la fuente unsloth.ai menciona 125B como total, no como activos) |
-| Longitud de contexto | 262.144 tokens (262K) |
-| Tipos de cuantizacion | bf16, Q8_0, Q6_K, Q5_K_L, Q5_K_M, Q5_K_S, Q4_K_L, Q4_K_M, Q4_K_S, Q4_1, Q4_0, Q3_K_XL, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K_L, IQ4_NL, IQ4_XS, IQ3_M, IQ3_XS, IQ3_XXS |
-| Idiomas soportados | No disponible |
-| Licencia | qwen-community-1.0 |
-| Formato de pesos | GGUF (cuantizaciones de bartowski), safetensors (modelo original) |
+| Arquitectura | Transformer multimodal (texto + imagen); detalles internos no disponibles |
+| Parámetros totales | 176.943.899.520 (~177B; la model card indica 180B) |
+| Parámetros activos | no disponible (no se confirma que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | bf16, Q8_0, Q6_K, Q5_K_L, Q5_K_M, Q5_K_S, Q4_K_L, Q4_K_M, Q4_K_S, Q4_1, Q4_0, Q3_K_XL, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K_L, IQ4_NL, IQ4_XS, IQ3_M, IQ3_XS, IQ3_XXS |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | GGUF (cuantizaciones de llama.cpp); el modelo base se distribuye por separado |
+| Entrada multimodal | texto e imagen (requiere archivo `mmproj` para la torre visual) |
+| Decodificación especulativa | sí, con modelo borrador MTP |
+| Imatrix | sí, calibración con importance matrix |
+| Tamaño del repo | 3067,8 GB (incluye todas las variantes) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-Flash-Next introduce una arquitectura híbrida que combina dos mecanismos de atención: GDN (Gated Delta Network) y QSA (Quadratic Self-Attention). Según el repositorio oficial de GitHub, la actualización del modelo se produce en cuatro frentes: atención, residual, embedding y optimización. El objetivo declarado es mejorar la capacidad del modelo a la vez que se optimiza la eficiencia computacional, la capacidad de almacenamiento y la estabilidad del entrenamiento. Esta combinación de mecanismos de atención busca superar las limitaciones de la atención cuadrática clásica en ventanas de contexto muy largas, como los 262K tokens que soporta el modelo.
+No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Los datos disponibles permiten afirmar que se trata de un transformer de aproximadamente 177.000 millones de parámetros con capacidad multimodal de entrada (texto e imagen), y que incorpora un mecanismo de predicción multi-token (MTP) que se utiliza como modelo borrador para decodificación especulativa. Esta técnica permite que un modelo pequeño proponga varios tokens candidatos que el modelo grande verifica en paralelo, reduciendo el coste por token generado sin alterar la distribución de salida.
 
-El modelo es de tipo MoE (Mixture of Experts), lo que implica que solo una fracción de los parámetros totales se activa por token procesado. Sin embargo, no se dispone de información detallada sobre el número de expertos, la composición exacta del dataset de entrenamiento, el número de tokens de entrenamiento ni si se aplicaron técnicas de RLHF o DPO. Tampoco se especifica si el modelo emplea decodificación especulativa u otras innovaciones de inferencia. La model card de bartowski indica explícitamente que no hay decodificación especulativa en la versión cuantizada.
+El modelo incorpora un modo de razonamiento explícito: la plantilla de prompt incluye la etiqueta `<think>` y un parámetro de "reasoning effort" que en el ejemplo de la model card se fija en `xhigh`, con instrucciones de validar supuestos y considerar alternativas antes de responder. No se han publicado en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. Las cuantizaciones GGUF han sido generadas con llama.cpp b10665 y calibradas con importance matrix (imatrix), lo que mejora la fidelidad de los formatos de baja precisión respecto a cuantizaciones sin calibración.
 
 ## Capacidades
 
-- Generación de texto y razonamiento avanzado: el prompt por defecto incluye un nivel de esfuerzo de razonamiento "xhigh", lo que indica soporte para cadenas de pensamiento extensas y deliberación antes de responder.
-- Entrada multimodal de imagen y texto: el modelo acepta imágenes como entrada adicional al texto, con un archivo mmproj separado para el proyector multimodal.
-- Ventana de contexto larga: 262K tokens, adecuada para documentos extensos, análisis de código a gran escala o conversaciones multi-turno muy largas.
-- Soporte de tool calling y function calling: no se menciona explícitamente en la información disponible, aunque el formato de prompt ChatML (con tokens `<|im_start|>` y `<|im_end|>`) es compatible con el ecosistema de Qwen que habitualmente incluye estas capacidades. Dato no confirmado.
-- Capacidades de agente y multi-step reasoning: el formato de prompt con "thinking" explícito sugiere soporte para razonamiento paso a paso, pero no hay confirmación oficial en la información proporcionada.
-- Capacidades multilingües: no disponibles en la documentación consultada.
+- Generación de texto conversacional multi-turno, con formato de chat basado en `<|im_start|>` / `<|im_end|>`.
+- Razonamiento explícito en modo "thinking" mediante el bloque `<think>`, con nivel de esfuerzo de razonamiento configurable en el prompt de sistema.
+- Comprensión de imágenes (image-text-to-text), siempre que se cargue el archivo `mmproj` correspondiente junto con los pesos cuantizados.
+- Decodificación especulativa con modelo borrador MTP, orientada a reducir la latencia de generación.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: el modo de razonamiento extendido sugiere aptitud para tareas multi-paso, pero no se documenta una integración específica de agentes.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Análisis de documentos extensos con contexto largo: gracias a su ventana de 262K tokens, el modelo puede procesar libros completos, informes financieros anuales o expedientes legales de cientos de páginas en una sola pasada, extrayendo información relevante y resumiendo secciones específicas sin perder el hilo del documento.
-- Razonamiento científico y matemático asistido: el nivel de esfuerzo de razonamiento configurable permite al modelo abordar problemas complejos de matemáticas, física o ingeniería con cadenas de pensamiento largas, útil para investigadores que necesitan verificar demostraciones o explorar hipótesis.
-- Análisis de imágenes técnicas: al aceptar entrada de imagen, el modelo puede interpretar diagramas, gráficos científicos, capturas de pantalla de errores o esquemas de arquitectura, combinando la información visual con el contexto textual para dar respuestas fundamentadas.
-- Generación y revisión de código en repositorios grandes: con 262K tokens de contexto, puede analizar un repositorio completo de tamaño medio, detectar bugs, proponer refactorizaciones o generar documentación coherente con el estilo del proyecto.
-- Asistente de investigación bibliográfica: el modelo puede procesar múltiples artículos académicos a la vez, comparar metodologías, extraer resultados clave y redactar revisiones de literatura preliminares.
-- Despliegue local en estaciones de trabajo con memoria unificada: según unsloth.ai, el modelo puede ejecutarse en dispositivos con 75GB de RAM o memoria unificada sin GPU dedicada, lo que permite a desarrolladores individuales o equipos pequeños ejecutar un modelo de 180B en hardware de gama alta de consumo.
+- Asistente de razonamiento técnico en local: con la cuantización Q4_K_M (119,60 GB) el modelo puede desplegarse en estaciones de trabajo con 128 GB de memoria unificada o en servidores multi-GPU, ofreciendo respuestas con traza de razonamiento explícita útil para depuración de decisiones.
+- Análisis de documentación técnica con imágenes: al aceptar entradas de imagen junto con texto, permite extraer información de diagramas de arquitectura, capturas de pantalla de errores o tablas escaneadas y combinarla con preguntas en lenguaje natural.
+- Generación de código asistida con verificación: el modo de razonamiento `xhigh` está pensado para validar supuestos y considerar alternativas, lo que encaja en tareas de revisión de código y refactorización donde los errores silenciosos son costosos.
+- Despliegue en infraestructura con Apple Silicon: la variante Q4_1 se documenta explícitamente como optimizada para tokens por vatio en silicio de Apple, lo que la hace adecuada para prototipado en Mac Studio con memoria unificada amplia.
+- Investigación en cuantización: la colección cubre desde bf16 hasta IQ3_XXS, permitiendo estudios comparativos de degradación de calidad por nivel de cuantización sobre un mismo modelo base de 177B.
+- Servicio de inferencia autoalojado con llama.cpp: al estar en formato GGUF, se integra en servidores compatibles con la API de llama.cpp y en herramientas que consumen GGUF, evitando dependencias de frameworks propietarios.
+- Evaluación de decodificación especulativa: el modelo borrador MTP incluido permite medir ganancias de throughput en distintos hardware y niveles de cuantización.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica referencia es la afirmacion de unsloth.ai de que el modelo "supera a Claude-4.6-Opus (Max)", pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K ni otros benchmarks estandar. Tampoco se incluyen comparativas numericas con modelos similares en la model card de bartowski ni en el repositorio de GitHub.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la cuantizacion Q4_K_M ocupa 119.60GB en disco, por lo que se necesita al menos esa cantidad de memoria disponible entre VRAM y RAM para cargar el modelo completo. La version Q4_0 reduce el requisito a 100.60GB.
-- GPU recomendadas: para cargar el modelo completo en VRAM se necesitarian multiples GPU de alta gama, por ejemplo 2x NVIDIA H100 (80GB cada una) o 3x A100 80GB. No se dispone de datos de rendimiento por GPU.
-- Compatibilidad con GPU de consumo: no es viable en una sola GPU de consumo (RTX 4090 tiene 24GB). Sin embargo, segun unsloth.ai, puede ejecutarse en dispositivos con 75GB de RAM o memoria unificada sin VRAM dedicada, lo que incluye Macs con Apple Silicon de gama alta (M2 Ultra o M3 Ultra con 128GB de memoria unificada) o estaciones de trabajo con 128GB de RAM y CPU potente.
-- Opciones de despliegue: llama.cpp (usado por bartowski para la cuantizacion), compatible con servidores de inferencia como Ollama, LM Studio o text-generation-webui. Tambien es posible usar vLLM o TGI con el modelo original en safetensors, aunque no se confirma en la documentacion.
-- Latencia y throughput: no disponibles. Dado el tamano del modelo y la ausencia de decodificacion especulativa, se espera una latencia alta en hardware de consumo, pero no hay cifras publicadas.
+- VRAM/RAM estimada según cuantización (tamaños de archivo reales del repositorio):
+  - bf16: 354,03 GB
+  - Q8_0: 188,26 GB
+  - Q6_K: 168,11 GB
+  - Q5_K_L: 151,06 GB
+  - Q4_K_L: 139,27 GB
+  - Q5_K_M: 134,67 GB
+  - Q4_K_M: 119,60 GB (recomendada por el autor como equilibrio tamaño/calidad)
+  - Q4_K_S: 113,14 GB
+  - IQ4_XS: 97,68 GB
+  - Q3_K_M: 91,96 GB
+  - IQ3_XXS: por debajo de 91,95 GB (el listado proporcionado se trunca en este punto)
+- No cabe en GPUs de consumo individuales: incluso la cuantización más pequeña listada supera los 24 GB de una RTX 4090. Se requiere reparto entre varias GPUs, memoria unificada de gran capacidad (Apple Silicon de gama alta) o uso intensivo de swap, con la penalización de latencia correspondiente.
+- Para bf16 y Q8_0 se necesitan configuraciones multi-GPU de clase A100/H100 (por ejemplo, 4× H100 80 GB para Q8_0 con margen para contexto y caché KV).
+- Opciones de despliegue: llama.cpp (versión b10665 o superior), y herramientas que lo envuelven (servidores compatibles con la API de llama.cpp, Ollama si soporta el formato y el tamaño). Para la variante multimodal es necesario cargar el archivo `mmproj`.
+- Latencia y throughput: no disponibles. La decodificación especulativa con MTP debería mejorar el throughput respecto a generación puramente autoregresiva, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos similares. La unica referencia es la afirmacion de unsloth.ai sobre la superioridad frente a Claude-4.6-Opus (Max), pero sin datos numericos. Los modelos comparables por tamano y arquitectura MoE serian Qwen3-235B-A22B (tambien de Qwen) o DeepSeek-V3, pero no se han encontrado datos de comparacion en la informacion proporcionada. Se indica "no disponible" para esta seccion.
+| Modelo | Parámetros | Contexto | Licencia | Formato disponible | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next (esta ficha, GGUF de bartowski) | ~177B | no disponible | qwen-community-1.0 | GGUF (múltiples cuantizaciones) | Multimodal texto+imagen, MTP, modo thinking |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | ~177B | no disponible | qwen-community-1.0 | pesos originales (no detallado) | Referencia sin cuantizar del mismo modelo |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de modelos comparables en la información proporcionada |
+
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de otros desarrolladores del mismo orden de magnitud; se evita incluir cifras no verificadas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se ha publicado informacion sobre evaluaciones de sesgo o alineacion con valores humanos. Como modelo entrenado por Qwen, puede reflejar sesgos presentes en sus datos de entrenamiento, que no se han detallado.
-- Riesgo de alucinacion: no se han publicado tasas de alucinacion ni evaluaciones de factualidad. El modo de razonamiento "xhigh" puede aumentar la confianza en respuestas incorrectas si el modelo no tiene suficiente informacion.
-- Limitaciones de contexto e idioma: aunque la ventana es de 262K tokens, no se especifican los idiomas soportados. El prompt por defecto esta en ingles, lo que sugiere un sesgo hacia ese idioma.
-- Restricciones de licencia: la licencia qwen-community-1.0 es una licencia comunitaria de Qwen que puede imponer restricciones al uso comercial, especialmente para empresas con ciertos volumenes de negocio o en sectores especificos. Es imprescindible revisar el texto completo de la licencia antes de usar el modelo en produccion.
-- Discrepancia en el numero de parametros: las fuentes citan 125B (unsloth.ai), 180B (model card de bartowski) y 176.9B (safetensors). Esta inconsistencia debe resolverse consultando la documentacion oficial de Qwen antes de dimensionar infraestructura.
-- Requisitos de hardware elevados: incluso en cuantizacion Q4_0, el modelo necesita mas de 100GB de memoria, lo que excluye la mayoria de hardware de consumo y obliga a usar estaciones de trabajo o servidores dedicados.
-- Fecha de publicacion inusual: el modelo fue creado en agosto de 2026 segun Hugging Face, lo que puede indicar un error en la plataforma o un lanzamiento muy reciente. Verificar la autenticidad del repositorio original de Qwen antes de confiar en el.
+- El repositorio contiene únicamente cuantizaciones GGUF; no es el checkpoint original y no debe citarse como el modelo canónico.
+- La licencia `qwen-community-1.0` no es una licencia de código abierto estándar: incluye condiciones comunitarias que deben revisarse antes de uso comercial. El campo de Hugging Face figura como `other`.
+- No se documentan los idiomas soportados; el rendimiento fuera del inglés y del chino (idiomas habituales en la familia Qwen) es incierto.
+- No se publica la longitud de contexto, lo que impide dimensionar la caché KV y planificar despliegues con prompts largos.
+- Riesgo de alucinación inherente a modelos de este tamaño, agravado en las cuantizaciones de 3 bits e inferiores (Q3_K_S, IQ3_XXS), que el propio autor describe como de baja calidad o no recomendadas.
+- El modo de razonamiento `xhigh` incrementa notablemente el número de tokens generados, con el consiguiente coste en latencia y memoria de caché.
+- La multimodalidad requiere el archivo `mmproj`; sin él, el modelo funciona solo con texto.
+- El tamaño del repositorio (3067,8 GB) hace inviable la descarga completa en la mayoría de entornos; conviene descargar únicamente la variante necesaria.
+- No hay datos de benchmarks, sesgos medidos ni evaluaciones de seguridad publicadas en la información disponible.
+- El uso de decodificación especulativa exige cargar el modelo borrador MTP, lo que añade memoria adicional no cuantificada en la documentación.
 
 ## Enlaces
 
-- Repositorio GGUF de bartowski: https://huggingface.co/bartowski/Qwen3.8-Flash-Next-GGUF
-- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio oficial de GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
-- Guia de ejecucion local de unsloth.ai: https://unsloth.ai/docs/models/qwen3.8-next
+- Repositorio GGUF: https://huggingface.co/bartowski/Qwen3.8-Flash-Next-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- llama.cpp (release utilizada): https://github.com/ggml-org/llama.cpp/releases/tag/b10665
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp/
+- Cuantización recomendada Q4_K_M: https://huggingface.co/bartowski/Qwen3.8-Flash-Next-GGUF/tree/main/Qwen3.8-Flash-Next-Q4_K_M

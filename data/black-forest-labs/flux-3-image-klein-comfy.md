@@ -2,92 +2,85 @@
 
 ## Resumen
 
-Flux 3 Image Klein Comfy es un modelo de difusion para generacion y edicion de imagenes desarrollado por Black Forest Labs, publicado en Hugging Face con el identificador `black-forest-labs/flux-3-image-klein-comfy`. Se trata de una variante de un solo archivo (etiqueta `diffusion-single-file`) derivada del modelo base `black-forest-labs/flux-3-image-klein`, pensada para su uso directo en ComfyUI. Su pipeline declarado es `image-to-image`, por lo que su funcion principal es transformar una imagen de entrada a partir de una instruccion textual, no solo generar imagenes desde cero.
+FLUX.3 Image Klein es un modelo de generación y edición de imágenes desarrollado por Black Forest Labs, la empresa responsable de la familia FLUX.1. Esta variante concreta, `flux-3-image-klein-comfy`, es un empaquetado en fichero único (single-file) pensado para su uso directo en ComfyUI, derivado por fine-tuning del modelo base `black-forest-labs/flux-3-image-klein`. El modelo resuelve dos tareas principales: síntesis de imágenes a partir de texto y edición de imágenes existentes (image-to-image), con un pipeline declarado como image-to-image en Hugging Face.
 
-El modelo se distribuye en un repositorio de 68,2 GB y esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es `flux-kommunity-license`, con la etiqueta `license:other`, lo que implica condiciones especificas que conviene revisar antes de cualquier uso comercial. El unico idioma declarado en los metadatos es el ingles (`en`).
+El repositorio acumula más de un millón de descargas y unos 3.400 likes, lo que lo sitúa entre los modelos de difusión más populares del ecosistema. Su relevancia actual radica en que llega empaquetado para flujos de trabajo de ComfyUI sin necesidad de conversión manual, lo que reduce la fricción de adopción para artistas técnicos y equipos que construyen pipelines de generación visual.
 
-La relevancia actual del modelo radica en su orientacion a flujos de trabajo de difusion en produccion grafica: el formato de archivo unico simplifica el despliegue en ComfyUI, y las etiquetas `image-to-image`, `finetune` y `pup` sugieren variantes ajustadas para edicion y refinamiento de imagen. No se dispone de informacion publica en la documentacion proporcionada sobre el numero de parametros, la arquitectura interna detallada ni los datos de entrenamiento.
+La información pública disponible es limitada: no se detallan parámetros, arquitectura interna ni número de pasos de entrenamiento. El acceso está restringido (gated) y requiere aceptar la licencia FLUX Community en Hugging Face antes de descargar los pesos. El repositorio ocupa 93,7 GB, lo que sugiere pesos en precisión alta (probablemente bf16/fp16) para un modelo de difusión de gran tamaño.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion; etiquetado como `diffusion-single-file`) |
+| Arquitectura | Difusión (modelo de imagen); detalles internos no disponibles |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no se ha declarado que sea MoE) |
-| Longitud de contexto | no disponible (modelo de imagen; no se declara ventana de contexto textual) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (ingles) |
-| Licencia | flux-kommunity-license (`license:other`); acceso restringido, requiere aceptacion de condiciones |
-| Formato de pesos | no confirmado; la libreria declarada es `diffusion-single-file`, compatible con ComfyUI |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (no aplica a modelo de imagen; longitud de prompt no especificada) |
+| Tipos de cuantizacion | no disponible (el repo single-file se distribuye presumiblemente en bf16/fp16; no se listan variantes GGUF/FP8) |
+| Idiomas soportados | en (inglés) |
+| Licencia | flux-kommunity-license (FLUX Community License) |
+| Formato de pesos | diffusion-single-file (fichero único para ComfyUI); safetensors presumible, no confirmado en la información |
+| Tamano del repositorio | 93,7 GB |
+| Pipeline declarado | image-to-image |
+| Acceso | restringido (gated), requiere aceptar condiciones |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo. Los metadatos indican que pertenece a la familia Flux 3 de Black Forest Labs y que se distribuye como archivo unico de difusion (`diffusion-single-file`) para ComfyUI. El pipeline declarado es `image-to-image`, y las etiquetas incluyen `image-generation`, `image-editing`, `image-to-image` y `flux`, lo que situa al modelo en la categoria de modelos de difusion para generacion y edicion de imagenes guiadas por texto.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Por la familia a la que pertenece (FLUX de Black Forest Labs) y por el pipeline declarado, se trata de un modelo de difusión para generación y edición de imágenes, pero no se confirman detalles como el tipo de backbone (transformer de difusión, flow matching, etc.), el número de parámetros ni la estrategia de condicionamiento textual.
 
-El modelo se presenta como un ajuste fino (`base_model:finetune`) del modelo `black-forest-labs/flux-3-image-klein`, con referencias adicionales a `black-forest-labs/flux-3-image-klein-base` y `black-forest-labs/flux-3-image-klein-pup`. No se ha publicado en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF o DPO. Tampoco se detallan innovaciones tecnicas especificas (por ejemplo, esquemas de atencion, destilacion o decodificacion especulativa) para esta variante.
+Tampoco se documentan el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de ajuste por preferencias humanas (RLHF/DPO) o destilación. El modelo es un fine-tune del base `flux-3-image-klein` (y referencia también a variantes `-base` y `-pup`), empaquetado para ComfyUI. Cualquier afirmación sobre innovaciones técnicas (atención lineal, decodificación especulativa, destilación de pasos) sería especulativa y no se incluye.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de una imagen de entrada y una instruccion (pipeline `image-to-image`).
-- Edicion de imagenes: la etiqueta `image-editing` indica soporte para modificar imagenes existentes.
-- Flujos de trabajo integrados en ComfyUI mediante archivo unico (`comfyui`, `diffusion-single-file`).
-- Generacion condicionada por texto en ingles, segun el unico idioma declarado (`en`).
-- No se ha documentado en la informacion disponible soporte de tool calling, function calling ni agentes.
-- No se ha documentado en la informacion disponible soporte de audio, video ni modos de razonamiento explicito.
-- No se han publicado detalles sobre control fino de composicion, mascaras o inpainting especifico.
+- Generación de imágenes a partir de descripciones textuales (text-to-image), aunque el pipeline declarado sea image-to-image.
+- Edición de imágenes existentes (image-to-image): modificación guiada por prompt sobre una imagen de entrada.
+- Integración nativa con ComfyUI mediante fichero único, sin necesidad de scripts de conversión.
+- Soporte de flujos de trabajo nodales de ComfyUI (encadenado con otros nodos de upscaling, controlnet, etc., según el ecosistema ComfyUI).
+- Idioma de prompts: inglés (`en`).
+- No se documentan capacidades de tool calling, agentes, visión-comprensión, audio ni modos de razonamiento; es un modelo generativo de imagen, no un LLM.
 
 ## Casos de uso
 
-- Edicion de imagen en produccion grafica: dado que el pipeline es `image-to-image`, se puede usar para retocar fotografias existentes aplicando transformaciones descritas en texto, integrándose en un flujo de trabajo de ComfyUI.
-- Retoque de producto para comercio electronico: sustituir fondos, ajustar iluminacion o generar variantes de una misma fotografia de producto a partir de una imagen base, manteniendo el objeto original como referencia.
-- Creacion de variaciones de estilo: aplicar un estilo visual coherente sobre un lote de imagenes de entrada, util para campanas de marketing que requieren consistencia estetica.
-- Previsualizacion de conceptos en diseno: convertir bocetos o renders preliminares en imagenes mas elaboradas antes de la produccion final.
-- Automatizacion de pipelines de contenido en ComfyUI: al distribuirse como archivo unico, se puede integrar en grafos de nodos automatizados que procesen lotes de imagenes sin intervencion manual.
-- Restauracion o mejora de imagenes: usar la imagen original como condicion para regenerar detalles, corregir artefactos o mejorar resolucion aparente, segun la capacidad de edicion declarada.
-- Prototipado rapido en investigacion de difusion: sirve como punto de partida para experimentar con variantes ajustadas del modelo base, dado el etiquetado `finetune` y la existencia de modelos derivados (`-base`, `-pup`).
+- Edición de producto en e-commerce: partir de una fotografía base y aplicar variaciones de fondo, iluminación o estilo mediante image-to-image, manteniendo la composición original y reduciendo el coste de sesiones fotográficas.
+- Iteración de concept art: usar el modelo dentro de un grafo de ComfyUI para generar variaciones rápidas de un boceto y refinarlas con nodos de upscaling e inpainting en la misma sesión.
+- Creación de assets para videojuegos: generar texturas, ilustraciones de personajes y variaciones de las mismas a partir de una referencia, aprovechando el pipeline image-to-image para mantener consistencia visual.
+- Prototipado de campañas de marketing: producir múltiples versiones de una imagen clave (distintos encuadres, paletas, ambientaciones) en un flujo automatizado de ComfyUI, para revisión humana antes de producción.
+- Restauración y mejora estilística: emplear image-to-image con prompts de estilo para reestilizar fotografías antiguas o de baja calidad dentro de un pipeline por lotes.
+- Generación de ilustraciones para contenido editorial: crear imágenes de acompañamiento para artículos o blogs a partir de descripciones en inglés, integrando el modelo en un pipeline de publicación automatizado.
+- Investigación en difusión: servir como checkpoint de referencia para comparativas de fine-tunes y técnicas de edición, dado su empaquetado single-file y su popularidad en el ecosistema ComfyUI.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. El repositorio ocupa 68,2 GB, lo que sugiere que incluye pesos en varias precisiones o variantes; el requisito real dependera del archivo concreto que se cargue.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Para modelos de difusion de este orden de tamano en repositorio, es habitual requerir GPUs de clase profesional (A100, H100, L40S) o GPUs de consumo de gama alta con suficiente VRAM, pero no se confirma para esta variante concreta.
-- Compatibilidad con GPU de consumo: no confirmada. Dependera del formato y la cuantizacion del archivo que se utilice; no se declaran cuantizaciones disponibles.
-- Opciones de despliegue: ComfyUI es el entorno explicitamente soportado por la etiqueta `comfyui` y la libreria `diffusion-single-file`. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI (son herramientas orientadas a modelos de lenguaje, no a difusion).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: no disponible de forma oficial. El repositorio ocupa 93,7 GB, lo que sugiere pesos en bf16/fp16 de gran tamaño; la inferencia requerirá, como mínimo, una GPU con VRAM suficiente para cargar los pesos completos o una versión cuantizada (no distribuida en este repo).
+- GPU recomendadas: no especificadas. Por el tamaño del repo, es previsible que requiera GPUs de datacenter (A100 80 GB, H100) para carga completa en bf16, o GPUs consumer de gama alta (RTX 4090 24 GB) solo si se dispone de cuantización, que no se documenta aquí.
+- ¿Cabe en GPU consumer? No confirmado; sin variantes cuantizadas publicadas en este repo, es poco probable que quepa en GPUs de 24 GB o menos en precisión completa.
+- Opciones de despliegue: ComfyUI (soporte nativo por el formato single-file); otros runners (diffusers, vLLM, TGI) no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| flux-3-image-klein-comfy | no disponible | no aplica | no disponible | flux-kommunity-license (uso restringido) | Acceso gated en Hugging Face |
-| flux-3-image-klein (base) | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Referenciado como modelo base |
-| flux-3-image-klein-base | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Referenciado como modelo base |
-| flux-3-image-klein-pup | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Referenciado como modelo base |
-
-No se dispone de datos suficientes para establecer una comparacion cuantitativa con alternativas de otros fabricantes (por ejemplo, otros modelos de difusion para edicion de imagen), ya que no se han proporcionado especificaciones ni resultados de benchmarks de esta variante.
+No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de la misma categoría (por ejemplo, otras variantes de FLUX.3 o competidores directos), por lo que no es posible establecer una comparación rigurosa sin inventar datos.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se ha publicado informacion sobre sesgos en la documentacion disponible; los modelos de generacion de imagen pueden reproducir sesgos presentes en sus datos de entrenamiento, que no se detallan.
-- Riesgo de alucinacion: inherente a los modelos generativos de imagen; pueden producir detalles inexistentes o incoherentes respecto a la imagen de entrada, especialmente en tareas de edicion fina.
-- Limitaciones de idioma: el unico idioma declarado es el ingles (`en`); las instrucciones en otros idiomas pueden no funcionar correctamente.
-- Limitaciones de contexto: no aplica una ventana de contexto textual como en modelos de lenguaje; no se documentan limites de resolucion ni de numero de imagenes de entrada.
-- Restricciones de licencia: la licencia `flux-kommunity-license` con etiqueta `license:other` implica condiciones especificas. Es imprescindible revisar los terminos antes de cualquier uso comercial, ya que pueden existir restricciones de explotacion.
-- Acceso restringido: el repositorio esta gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integracion automatizada.
-- Ausencia de datos tecnicos: no se publican parametros, cuantizaciones ni requisitos de hardware, lo que dificulta la planificacion de recursos en produccion.
-- Repositorio de gran tamano: 68,2 GB, con el coste de almacenamiento y transferencia que ello implica.
-- Estado del modelo: creado el 2026-10-14 y actualizado el 2026-10-15, con solo 39 descargas, lo que indica una adopcion todavia muy limitada y poca validacion por parte de la comunidad.
+- Acceso restringido (gated): es necesario aceptar la licencia FLUX Community en Hugging Face antes de descargar los pesos.
+- Licencia `flux-kommunity-license`: no es una licencia open source estándar; conviene revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales.
+- Idioma: solo se declara soporte para inglés (`en`); los prompts en castellano pueden degradar la calidad o requerir traducción previa.
+- Solo se documenta el pipeline image-to-image; el comportamiento en text-to-image puro no está confirmado en la ficha.
+- No hay información sobre sesgos, tasas de alucinación visual (artefactos, incoherencias anatómicas o de texto en la imagen) ni sobre filtros de contenido aplicados.
+- El tamaño del repositorio (93,7 GB) implica requisitos de almacenamiento y ancho de banda considerables para descarga y despliegue.
+- Al ser un fine-tune del base, hereda las limitaciones del modelo original, que no se detallan en la información disponible.
+- No se documentan métodos de cuantización; desplegar en hardware limitado exigirá trabajo adicional no cubierto por el repo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
-- Modelo base alternativo: no disponible como enlace directo en la informacion proporcionada (`black-forest-labs/flux-3-image-klein-base`)
-- Modelo base alternativo: no disponible como enlace directo en la informacion proporcionada (`black-forest-labs/flux-3-image-klein-pup`)
-- Paper: no disponible
-- Blog o repositorio oficial: no disponible
-- Demos: no disponible
+- Variante base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+- Variante pup: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
+- Organización Black Forest Labs en Hugging Face: https://huggingface.co/black-forest-labs
+- ComfyUI: https://github.com/comfyanonymous/ComfyUI

@@ -5,7 +5,7 @@
   "author": "taobao-mnn",
   "url": "https://huggingface.co/taobao-mnn/LFM3-VL-2B-MNN",
   "created_at": "2026-11-17T09:13:24.000Z",
-  "updated_at": "2026-11-17T09:42:43.000Z",
+  "updated_at": "2026-11-17T13:48:27.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

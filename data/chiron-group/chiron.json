@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "chiron-group/chiron",
+  "slug": "chiron-group-chiron",
+  "author": "chiron-group",
+  "url": "https://huggingface.co/chiron-group/chiron",
+  "created_at": "2026-11-11T10:07:00.000Z",
+  "updated_at": "2026-11-18T05:22:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chiron",
+    "psychology",
+    "measurement",
+    "lora",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90472825,
+  "storage_human": "90 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chiron (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Chiron_(mythologie)",
+      "snippet": "Le père de Patrocle laissa son enfant à la caverne de Chiron, afin qu'il étudie, pas à pas, avec Achille, l’art de la harpe, et apprenne …"
+    },
+    {
+      "title": "Chiron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chiron",
+      "snippet": "This clearly sets Chiron apart from the other centaurs, making him easily identifiable. This difference may also have highlighted …"
+    },
+    {
+      "title": "CHIRON, société française de conseil et de formation en matière de ...",
+      "url": "https://chiron.solutions/fr/",
+      "snippet": "CHIRON est une société française de conseil et de formation en matière de sécurité et de défense. Nos clients sont des …"
+    },
+    {
+      "title": "Chiron — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Chiron",
+      "snippet": "L' Herbe à Chiron (Centaurium erythraea) est une plante herbacée, de la famille des Gentianacées. En taxonomie, le mot chiron est …"
+    },
+    {
+      "title": "CHIRON Swiss SA",
+      "url": "https://micro5.chiron-group.com/",
+      "snippet": "Situé dans un bâtiment historique héritier de l'industrie horlogère suisse, CHIRON Swiss est le berceau de la Micro5. Aujourd'hui, …"
+    }
+  ]
+}

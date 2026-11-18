@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 29,
-  "downloads_30d": 7185,
+  "downloads_30d": 7211,
   "trending_score": 14,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "basecompute/Qwen3.8-27B · Hugging Face",
-      "url": "https://huggingface.co/basecompute/Qwen3.8-27B",
-      "snippet": "BaseRT.base builds of Qwen/Qwen3.8-27B for fast local inference on Apple Silicon (Metal). A dense 27B vision-language reasoning model with hybrid attention (Gated DeltaNet + periodic full attention). Q4 needs ~24 GB Apple Silicon (tight); Q8 needs 48 GB+"
-    },
-    {
-      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
-      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
-      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
-    },
-    {
-      "title": "Qwen3.8 27b Basequant V1 - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/basecompute/qwen3.8-27b-basequant-v1",
-      "snippet": "Registry entry for model Qwen3.8 27b Basequant V1; source metadata pending."
-    },
-    {
-      "title": "15% More Accurate Than Unsloth: Qwen-3.8-27B Quants for Local Agents",
-      "url": "https://huggingface.co/blog/basecompute/base-quant-v1",
-      "snippet": "Today we&#x27;re releasing Qwen3.8-27B-BaseQuant-V1: quantised builds of Qwen3.8-27B in three sizes, each the same size as the matching Unsloth dynamic quant and each closer to the full-precision model. On prompts from six public datasets (coding agents, function calling and chat), BaseQuant has 15% lower KL divergence than Unsloth at both 3 and 4 bits, including UD-Q4_K_M, the size most people run."
-    },
-    {
-      "title": "Qwen3.8-27B - QwenCloud",
-      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
-      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
-    }
-  ]
+  "sources": []
 }

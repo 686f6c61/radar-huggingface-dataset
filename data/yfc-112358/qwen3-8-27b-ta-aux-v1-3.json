@@ -28,8 +28,6 @@
     "base_model:merge:ManniX-ITA/Qwen3.8-27B-Omnimerge-v6",
     "base_model:Nimbz/Zwielicht-27B",
     "base_model:merge:Nimbz/Zwielicht-27B",
-    "base_model:OliviaRossi/DoubleTrouble",
-    "base_model:merge:OliviaRossi/DoubleTrouble",
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:merge:Qwen/Qwen3.8-27B",
     "base_model:YFC-112358/qwen38-magnus-v2-lora",
@@ -46,7 +44,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 25,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

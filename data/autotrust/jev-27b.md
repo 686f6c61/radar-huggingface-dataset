@@ -2,136 +2,122 @@
 
 ## Resumen
 
-autotrust/JEV-27B es un modelo abierto de 26.895.998.464 parametros (unos 26,9B), publicado por AutoTrust AI (Singapur) el 25 de septiembre de 2026 bajo licencia Apache-2.0. No es un modelo de lenguaje generativo al uso: es un modelo de decision que combina en un unico conjunto de pesos un camino rapido de "Sistema 1" que emite decisiones tipadas (noul, choice y score, con probabilidades calibradas) y un camino de "Sistema 2" que conserva la generacion de texto y el razonamiento de su modelo base, Qwen/Qwen3.8-27B.
+autotrust/JEV-27B es un modelo abierto de AutoTrust que combina en un unico conjunto de pesos dos modos de inferencia diferenciados: un "System 1" orientado a decisiones tipadas y calibradas (probabilidades sobre opciones, puntuaciones y clasificaciones) y un "System 2" de generacion y razonamiento heredado del modelo base Qwen/Qwen3.8-27B. El modelo se presenta como el segundo modelo integrado System 1 + System 2 de AutoTrust, construido con la receta "Blocks of Experts", y sucede a JEV-9B con mayor fidelidad al profesor cerrado TypeSafe Jev 1.13, mejor transferencia a tareas no vistas y un System 2 mas potente.
 
-La receta, denominada Blocks of Experts, anade un bloque de decision sobre un Qwen3.8-27B congelado mediante un adaptador LoRA y una cabeza dual, de modo que ambos comportamientos se sirven desde un solo motor vLLM y se enrutan por peticion. El objetivo declarado por el autor es sustituir llamadas frecuentes a APIs cerradas de decision (en concreto, al modelo propietario TypeSafe Jev 1.13) por inferencia autoalojada con una fidelidad casi indistinguible: divergencia KL media de 0,0186 frente a las distribuciones del profesor.
+El problema que resuelve es el de obtener decisiones calibradas y de baja latencia (del orden de medio segundo) sin depender de una API cerrada, manteniendo ademas capacidad generativa y de razonamiento. Para ello se entrena mediante destilacion de conocimiento desde TypeSafe Jev 1.13 sobre el corpus SargeDev/jev-distill-corpus-v3, con un adaptador LoRA y una cabeza dual, manteniendo intacta la cabeza lm_head del modelo base para la ruta generativa.
 
-Es relevante porque ataca un cuello de botella concreto de los agentes autoalojados: las decisiones estructuradas repetitivas (elegir una accion, puntuar una opcion, decidir si continuar) que hasta ahora obligaban a depender de servicios externos. Segun el autor, JEV-27B responde una decision individual en aproximadamente la mitad de tiempo que la API alojada, y su media de seis grupos de benchmarks publicos de decision es de 84,07 frente al 83,85 del profesor cerrado.
+Con 26.895.998.464 parametros reales (safetensors) y un repositorio de 54,7 GB, el modelo se distribuye en formato safetensors bajo licencia Apache 2.0, con soporte declarado de vLLM y compatibilidad con endpoints. Su relevancia actual radica en la separacion explicita de rutas (decision rapida frente a generacion deliberada) en un unico motor de inferencia, enrutadas por peticion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer dual-head (camino Sistema 1 + camino Sistema 2) sobre Qwen3.8-27B congelado; bloque de decision con receta Blocks of Experts y adaptador LoRA |
-| Parametros totales | 26.895.998.464 (26,9B) |
-| Parametros activos | No disponible (la model card no publica desglose de parametros activos del bloque de decision) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (el repositorio solo contiene safetensors en el formato publicado) |
-| Idiomas soportados | Ingles (en); corpus de entrenamiento declarado como centrado en ingles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (libreria transformers; compatible con vLLM) |
-| Modelo base | Qwen/Qwen3.8-27B (relacion: finetune) |
-| Pipeline declarado | text-classification (con capacidades de text-generation en el camino Sistema 2) |
-| Dataset de entrenamiento | SargeDev/jev-distill-corpus-v3 |
-| Tamano del repositorio | 54,7 GB |
-| Fecha de publicacion | 25 de septiembre de 2026 (actualizado el 26 de septiembre de 2026) |
+| Arquitectura | Transformer dual-head sobre Qwen3.8-27B (tags: qwen3_5_text, blocks-of-experts, dual-head) |
+| Parametros totales | 26.895.998.464 |
+| Parametros activos | no disponible |
+| Longitud de contexto | hasta 256K tokens en prompts de decision (probado hasta 250K tokens) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-JEV-27B parte de un Qwen3.8-27B que se mantiene congelado y sobre el que se injerta un bloque de decision (tags del autor: blocks-of-experts, dual-head, lora). Ese bloque produce decisiones tipadas con tres salidas: noul (probabilidad calibrada de un evento o etiqueta), choice (seleccion entre alternativas) y score (valor esperado en una escala de 0 a 5). El modelo conserva ademas la cabeza lm_head original, de modo que con el adaptador desactivado se comporta como generador de texto (el autor lo denomina "camino Sistema 2"). Segun la nota de prensa y el articulo de RuntimeWire, la decision no reescribe el modelo base: se anade un bloque compacto de decision sobre el Qwen congelado y ambos comportamientos conviven en un unico conjunto de pesos, enrutado por peticion.
+El modelo parte de Qwen/Qwen3.8-27B como base y se ajusta mediante fine-tuning con un adaptador LoRA y una cabeza dual. La model card describe la receta como "Blocks of Experts", con dos rutas enrutadas por peticion sobre el mismo conjunto de pesos: una ruta System 1 que produce decisiones tipadas (noul, choice, score) con probabilidades calibradas, y una ruta System 2 que utiliza la lm_head original del modelo base con el adaptador desactivado para generacion y razonamiento. El pipeline declarado en Hugging Face es text-classification, aunque los tags incluyen tambien text-generation.
 
-El entrenamiento es una destilacion de conocimiento del profesor cerrado TypeSafe Jev 1.13 sobre el corpus SargeDev/jev-distill-corpus-v3 (variante v3). En el conjunto de test test_set_30k (29.955 filas), 25.376 objetivos son distribuciones de ese profesor. No se especifican en la informacion disponible el numero de tokens, la composicion completa del dataset ni si hubo fases de RLHF o DPO. La innovacion principal es la integracion de Sistema 1 y Sistema 2 en un mismo artefacto: el autor afirma que con un solo motor vLLM se puede enrutar cada peticion al camino rapido de decision o al camino deliberativo de generacion, y que una decision individual tarda aproximadamente la mitad que la API alojada equivalente.
+El entrenamiento se basa en destilacion de conocimiento desde el profesor cerrado TypeSafe Jev 1.13 sobre el corpus SargeDev/jev-distill-corpus-v3. En el conjunto de test test_set_30k, 25.376 de 29.955 objetivos son distribuciones del profesor TypeSafe Jev 1.13, lo que indica que la mayor parte de la supervision son distribuciones de probabilidad y no etiquetas duras. La calibracion se evalua tras aplicar temperatura (ECE con 15 bins). Entre las innovaciones tecnicas destacadas por el autor figuran el endpoint `POST /v1/decide` anadido al servidor vLLM mediante `serve_decide.py`, la capacidad de manejar hasta 256 opciones por pregunta de eleccion sin reentrenamiento y el soporte de prompts de hasta 256K tokens para decisiones que dependen de una frase oculta a profundidad aleatoria.
 
 ## Capacidades
 
-- Decisiones tipadas calibradas: emite noul (probabilidad), choice (seleccion top-1) y score (valor esperado en escala 0-5) con calibracion medida (ECE de 0,0009 tras temperature scaling).
-- Generacion de texto y razonamiento: el camino Sistema 2, servido desde la lm_head base con el adaptador desactivado, mantiene las capacidades generativas de Qwen3.8-27B.
-- Generacion de codigo: 0,78 de pass@1 en HumanEval (test, greedy, prompt estilo completion) por el camino Sistema 2.
-- Clasificacion de texto: pipeline declarado text-classification, con etiquetas y decisiones estructuradas en lugar de texto libre.
-- Compatibilidad con vLLM: pensado para servirse desde un unico motor vLLM con enrutado por peticion (etiqueta vllm y endpoints_compatible).
-- Uso como cabecera de decision en agentes: el caso de uso declarado es tomar decisiones estructuradas frecuentes dentro de flujos de agente autoalojados.
-- Idiomas: ingles unicamente; el autor reconoce que los datos de entrenamiento estan centrados en ingles.
-- No se documentan en la informacion disponible capacidades de vision, audio, tool calling explicito ni modo "thinking" nativo.
+- Decisiones tipadas calibradas: genera probabilidades por opcion (choice), puntuaciones en escala 0-5 (score) y una salida binaria o de presencia (noul).
+- Clasificacion de texto con hasta 256 opciones por pregunta, sin reentrenamiento; en CLINC150 zero-shot con los 150 intents como opciones alcanza 89,5% solo con nombres de intent y 93,8% con una descripcion de una linea por opcion.
+- Generacion de texto y razonamiento por la ruta System 2, usando la lm_head del modelo base con el adaptador desactivado.
+- Generacion de codigo: pass@1 de 0,78 en HumanEval (greedy, prompt estilo completion) por la ruta System 2.
+- Manejo de contexto largo: decisiones correctas en 20 de 20 casos con la frase relevante oculta a profundidad aleatoria en hasta 250K tokens.
+- Servicio HTTP de decisiones mediante `POST /v1/decide` con el esquema `{kind, state, question, options}`, que devuelve una probabilidad calibrada por opcion.
+- Compatibilidad con endpoints y despliegue en vLLM.
+- Capacidades multimodales disponibles en la variante separada autotrust/JEV-27B-VL, no en este modelo.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun el campo language.
 
 ## Casos de uso
 
-- Enrutado de decisiones en agentes autoalojados: usar la salida choice para seleccionar la siguiente accion de un agente (herramienta, rama de flujo, reintento) sin llamar a una API externa, aprovechando que el modelo devuelve una distribucion calibrada y no texto que haya que parsear.
-- Puntuacion y ranking de candidatos: emplear score (escala 0-5) para ordenar respuestas, borradores, resultados de busqueda o propuestas generadas por otro modelo, con un MAE de 0,098 en el conjunto de test declarado.
-- Filtrado con umbral de confianza: usar el valor de noul como puerta de calidad (por ejemplo, descartar o escalar a revision humana todo lo que baje de un umbral) gracias al AUROC de 0,996 y al Brier de 0,0013 declarados.
-- Generacion de codigo en pipelines de CI/CD: aprovechar el camino Sistema 2 (0,78 pass@1 en HumanEval) para autocompletar funciones o proponer parches que luego pasan por tests automatizados.
-- Asistencia a clientes: clasificar y decidir la intencion o la siguiente accion en conversaciones, sustituyendo llamadas por turno a un servicio propietario de decision por inferencia local.
-- Moderacion y triaje de contenido: aplicar el modo choice/noul para etiquetar contenido con umbrales explicitos de confianza en lugar de depender de la salida en texto libre de un LLM generativo.
-- Migracion desde una API cerrada de decision: al estar destilado de TypeSafe Jev 1.13 y lograr un KL medio de 0,0186 frente a sus distribuciones, sirve como reemplazo autoalojado cuando se quiere evitar la dependencia y el coste por llamada del proveedor.
+- Clasificacion de intenciones en asistentes conversacionales: el modelo puede recibir el estado de la conversacion y una lista de hasta 256 intents como opciones, devolviendo una distribucion calibrada por intent; en CLINC150 alcanza 93,8% con descripciones de una linea por opcion, lo que permite umbrales de confianza fiables para derivar a un humano.
+- Reordenacion (reranking) de resultados de busqueda: el demo GuruSearch reordena titulares de seis fuentes de noticias por importancia y resultados de Google News, Bing News y Yahoo News por relevancia, con cada ranking emitido como una decision System 1 calibrada en aproximadamente medio segundo.
+- Enrutamiento y triaje de tickets de soporte: dada una descripcion y un conjunto de colas o categorias, la salida `choice` con probabilidades calibradas permite asignar automaticamente los casos con top-1 claro y escalar los ambiguos segun la confianza.
+- Puntuacion de relevancia o calidad en pipelines de datos: la salida `score` en escala 0-5 con MAE de 0,098 frente al profesor permite filtrar o priorizar documentos, respuestas o candidatos de forma consistente y calibrada.
+- Deteccion de presencia de condiciones en texto (noul): con AUROC de 0,996 y Brier de 0,0013, es adecuado para tareas de moderacion o verificacion donde se necesita una probabilidad fiable de que se cumpla una condicion.
+- Generacion de codigo en produccion por la ruta System 2: con pass@1 de 0,78 en HumanEval y despliegue en vLLM, puede integrarse en pipelines de generacion de funciones y pruebas a partir de firmas y docstrings.
+- Analisis de documentos largos con preguntas de decision: gracias al soporte de prompts de hasta 256K tokens, puede responder preguntas de si/no o de eleccion sobre contratos, informes o expedientes extensos localizando la evidencia relevante.
+- Servicio unificado de decision y generacion: un unico motor vLLM enruta por peticion entre la respuesta rapida calibrada y la generacion deliberada, simplificando la infraestructura frente a mantener dos modelos separados.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (verified: false) sobre el corpus de destilacion:
-
-| Metrica | Conjunto | Valor |
-|---|---|---|
-| KL medio (objetivo ‖ modelo) | jev-distill-corpus-v3, test_set_30k (todas las filas; 25.376 de 29.955 objetivos son distribuciones de TypeSafe Jev 1.13) | 0,0186 |
-| AUROC de noul | test_set_30k | 0,996 |
-| Brier de noul (frente a la probabilidad objetivo, todas las filas) | test_set_30k | 0,0013 |
-| MAE del valor esperado de score (escala 0-5) | test_set_30k | 0,098 |
-| ECE (15 bins, tras temperature scaling) | test_set_30k | 0,0009 |
-| Acierto top-1 de choice (todas las filas) | test_set_30k | 0,903 |
-| Acierto top-1 de choice (filas con objetivo decisivo, gap top-2 >= 0,1) | test_set_30k | 0,958 |
-| pass@1 (greedy, prompt estilo completion) | HumanEval, test, camino Sistema 2 | 0,78 |
-
-Benchmarks publicos de decision declarados por el autor (porcentajes, mayor es mejor; negrita = mejor de la columna). El autor indica que ejecuto integramente las filas de JEV-27B y de TypeSafe Jev 1.13; el resto de filas proceden de la evaluacion de NeoHorse-Jev-4B y no fueron reejecutadas:
+Resultados declarados por el autor del modelo (no verificados de forma independiente). La tabla de benchmarks publicos de decision fue ejecutada por AutoTrust para este modelo y para TypeSafe Jev 1.13; las filas de NeoHorse-Jev-4B y Open-Jev-9B proceden de la evaluacion publicada por terceros y no fueron reejecutadas. Puntuaciones en %, mayor es mejor.
 
 | Modelo | JevBench | Kev | OpenJev text | Nimble | VitaminC | MASSIVE-en | Media seis grupos |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| autotrust/JEV-27B | **88,70** | 83,75 | **73,89** | **92,91** | 77,46 | **87,71** | **84,07** |
-| TypeSafe Jev 1.13 (API alojada, ejecucion del autor) | 87,18 | **85,52** | 72,96 | 91,84 | 78,46 | 87,14 | 83,85 |
+| autotrust/JEV-27B | 88,70 | 83,75 | 73,89 | 92,91 | 77,46 | 87,71 | 84,07 |
+| TypeSafe Jev 1.13 (API, ejecucion de AutoTrust) | 87,18 | 85,52 | 72,96 | 91,84 | 78,46 | 87,14 | 83,85 |
 | NeoHorse-Jev-4B | 75,73 | 81,92 | 58,74 | 87,23 | 77,13 | 85,43 | 77,70 |
-| Open-Jev-9B | 77,13 | 77,87 | 65,39 | 80,50 | 68,28 | 84,86 | 75,67 |
-| Kev-4B | 73,71 | 81,47 | 54,75 | 73,40 | 76,46 | 85,71 | 74,25 |
-| Laya English | 55,82 | 61,30 | 40,07 | 45,04 | **78,63** | 68,57 | 58,24 |
-| Laya Typed Decisions | — | — | — | 48,94 | 78,30 | 65,43 | — |
-| NeoHorse-1-4B | — | — | — | 69,15 | 63,27 | 82,86 | — |
+| Open-Jev-9B | 77,13 | 77, | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Diferencia de JEV-27B frente a TypeSafe Jev 1.13, en puntos porcentuales, segun el autor:
+Metricas de fidelidad al profesor TypeSafe Jev 1.13 sobre jev-distill-corpus-v3 · test_set_30k:
 
-| JevBench | Kev | OpenJev text | Nimble | VitaminC | MASSIVE-en | Media seis grupos |
-|---:|---:|---:|---:|---:|---:|---:|
-| +1,52 | −1,77 | +0,93 | +1,07 | −1,00 | +0,57 | +0,22 |
+| Metrica | Valor |
+|---|---|
+| KL media (target ‖ modelo), todas las filas | 0,0186 |
+| AUROC de noul | 0,996 |
+| Brier de noul (frente a probabilidad objetivo, todas las filas) | 0,0013 |
+| MAE del valor esperado de score (escala 0-5) | 0,098 |
+| ECE (15 bins, tras temperatura) | 0,0009 |
+| Concordancia top-1 de choice (todas las filas) | 0,903 |
+| Concordancia top-1 de choice (filas con objetivo decisivo, gap top-2 ≥ 0,1) | 0,958 |
 
-Notas de alcance aportadas por el autor: Nimble tiene 282 elementos, VitaminC 599 y MASSIVE-en 350; la media de seis grupos pondera los grupos por igual; JevBench es el conjunto publico de 231 ejemplos con su metrica oficial family-macro, que no es la misma medida que el leaderboard JevBench v1.4.2; la media de seis grupos de JEV-27B supera en 0,22 puntos porcentuales a la del profesor cerrado y en 6,37 puntos a la del siguiente modelo abierto con resultados en los seis grupos.
+Generacion de codigo por la ruta System 2:
+
+| Benchmark | Metrica | Valor |
+|---|---|---|
+| HumanEval (split test) | pass@1 (greedy, prompt estilo completion) | 0,78 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: las siguientes cifras son estimaciones derivadas del numero de parametros publicado (26,9B), no datos del autor. En bf16/fp16, unos 54 GB solo para pesos (el repositorio ocupa 54,7 GB), mas cache KV. En 8 bits, en torno a 27 GB mas cache KV. En 4 bits, en torno a 14-16 GB mas cache KV.
-- GPU recomendadas: A100 80 GB, H100 80 GB o H200 para servir el modelo sin cuantizar con contexto amplio; dos A100 40 GB tambien serian suficientes para los pesos en bf16. En NVIDIA RTX 4090/RTX 5090 (24-32 GB) solo cabria con cuantizacion agresiva y contexto reducido, segun las estimaciones anteriores.
-- Si cabe en GPU de consumo: probablemente si en tarjetas de 24 GB o mas, pero unicamente con cuantizacion de 4 bits y ventanas de contexto cortas; no es un modelo pensado para GPU de consumo sin cuantizar.
-- Opciones de despliegue: transformers (libreria declarada), vLLM (la model card describe explicitamente el servicio desde un unico motor vLLM con enrutado por peticion y la etiqueta endpoints_compatible), y safetensors como formato de pesos. No se documenta en la informacion disponible soporte de GGUF, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: el autor afirma que el modelo responde una decision individual en aproximadamente la mitad del tiempo que tarda la API alojada de TypeSafe Jev 1.13. No se publican cifras absolutas de latencia (ms) ni de throughput (tokens/s) en la informacion disponible.
-- Nota de despliegue: al ser una cabeza dual con adaptador LoRA, el enrutado entre camino de decision y camino de generacion se hace por peticion sobre el mismo motor, lo que simplifica la infraestructura frente a mantener dos modelos.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Como referencia de orden de magnitud, los pesos en safetensors suman 54,7 GB en el repositorio, por lo que la inferencia en precision nativa requiere agregar memoria para cache KV y activaciones.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Viabilidad en GPU de consumo: no disponible; el tamano del repositorio (54,7 GB) supera la VRAM de las GPU de consumo habituales en precision nativa, y no se documentan cuantizaciones.
+- Opciones de despliegue: vLLM, con el script `serve_decide.py` incluido en el repositorio para exponer `POST /v1/decide`. Otras opciones (llama.cpp, Ollama, TGI) no estan documentadas.
+- Latencia y throughput: el autor indica que responde una decision en aproximadamente la mitad del tiempo que tarda la API alojada de TypeSafe Jev 1.13, y que cada ranking del demo se emite en aproximadamente medio segundo. No se proporcionan cifras de throughput ni de latencia absoluta en milisegundos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento en decisiones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| autotrust/JEV-27B | 26,9B | No disponible | Media seis grupos 84,07; KL 0,0186; HumanEval 0,78 | Apache-2.0 | Pesos abiertos en Hugging Face |
-| TypeSafe Jev 1.13 | No disponible | No disponible | Media seis grupos 83,85 | No disponible (modelo cerrado, API alojada) | Solo API |
-| NeoHorse-Jev-4B | No disponible en la informacion disponible | No disponible | Media seis grupos 77,70 | No disponible | Pesos abiertos (referenciado en Hugging Face) |
-| Open-Jev-9B | No disponible en la informacion disponible | No disponible | Media seis grupos 75,67 | No disponible | Pesos abiertos |
-| Kev-4B | No disponible en la informacion disponible | No disponible | Media seis grupos 74,25 | No disponible | Pesos abiertos |
-| Laya English | No disponible en la informacion disponible | No disponible | Media seis grupos 58,24 | No disponible | Pesos abiertos |
-
-La comparativa se limita a los modelos de decision que aparecen en la tabla de benchmarks del autor. JEV-27B es sustancialmente mayor que los modelos abiertos comparables (4B y 9B) y su media de seis grupos supera en 6,37 puntos a la mejor alternativa abierta con resultados completos (NeoHorse-Jev-4B). No hay datos publicados de contexto, cuantizaciones ni licencias de la mayoria de las alternativas en la informacion disponible, por lo que la comparacion es parcial.
+| autotrust/JEV-27B | 26,9B | hasta 256K tokens | Media de 84,07 en seis benchmarks de decision; KL 0,0186 frente al profesor | Apache 2.0 | Pesos abiertos en Hugging Face |
+| TypeSafe Jev 1.13 | no disponible | no disponible | Media de 83,85 en seis benchmarks de decision | Cerrada (API alojada) | Solo API |
+| NeoHorse-Jev-4B | no disponible | no disponible | Media de 77,70 en seis benchmarks de decision | no disponible | Pesos en Hugging Face (TokenRhythm/NeoHorse-Jev-4B) |
+| Open-Jev-9B | 9B (segun nombre) | no disponible | JevBench 77,13; Kev 77,; resto no disponible | no disponible | no disponible |
+| Qwen/Qwen3.8-27B | 27B (modelo base) | no disponible | No es un modelo de decision calibrada; sirve de referencia para la ruta System 2 | no disponible | Pesos en Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Hereda los puntos ciegos del profesor TypeSafe Jev 1.13: el propio autor senala razonamiento multi-salto, aritmetica, fechas y entradas adversarias como areas debiles.
-- No esta pensado para decisiones de alto riesgo; el autor recomienda condicionar la aceptacion de sus respuestas a la confianza (noul) y no usarlo como autoridad final.
-- Corpus de entrenamiento centrado en ingles: no hay soporte multilingue declarado ni evaluado, mas alla de las tareas de MASSIVE-en (ingles).
-- Riesgo de alucinacion: aunque el camino Sistema 1 devuelve probabilidades calibradas, el camino Sistema 2 es un LLM generativo sobre un Qwen3.8-27B congelado y mantiene los riesgos habituales de generacion (hechos inventados, codigo que compila pero es incorrecto).
-- Sesgos: no se documentan en la informacion disponible analisis de sesgo, composicion demografica del corpus de destilacion ni evaluaciones de equidad.
-- Riesgo de destilacion: al entrenarse para imitar las distribuciones de un profesor propietario, puede reproducir sus sesgos sistematicos y sus errores de forma consistente (el KL de 0,0186 mide fidelidad, no correccion).
-- Metricas no verificadas: los resultados de la model card figuran con verified: false y proceden del propio autor; no han sido reproducidos de forma independiente.
-- La nota de prensa cita que el modelo hereda los puntos ciegos del profesor; conviene tratar la tabla de benchmarks publicos con cautela porque parte de las filas de comparacion provienen de ejecuciones de terceros no reejecutadas.
-- Licencia Apache-2.0: permite uso comercial y modificacion, pero el modelo base Qwen3.8-27B y el profesor TypeSafe Jev 1.13 tienen sus propias condiciones, que deben revisarse antes de un despliegue comercial.
-- No se publica informacion sobre cuantizaciones oficiales validadas, longitud de contexto soportada ni limites de tokens, lo que dificulta planificar el dimensionamiento de produccion.
-- Longitud de contexto y rendimiento con contextos largos: no disponibles; no se debe asumir una ventana concreta sin verificarla.
+- Sesgos conocidos: no se documentan en la informacion proporcionada; al entrenarse sobre un corpus de destilacion en ingles, es previsible que herede los sesgos del profesor TypeSafe Jev 1.13 y del corpus, pero no hay analisis publicado.
+- Riesgo de alucinacion: la ruta System 2 hereda el comportamiento generativo de Qwen3.8-27B; la ruta System 1 no genera texto libre, pero sus probabilidades solo son fiables en la medida en que el caso se parezca a la distribucion de entrenamiento.
+- Limitaciones de idioma: el campo language declara unicamente en; el rendimiento fuera del ingles no esta evaluado.
+- Limitaciones de contexto: aunque se documentan decisiones correctas con hasta 250K tokens, no se especifica el comportamiento con prompts mas largos ni el coste de memoria asociado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B y del corpus de destilacion, cuyas licencias no se detallan en la informacion disponible.
+- Metricas no verificadas: todos los resultados de la model card estan marcados como `verified: false`; las filas de NeoHorse-Jev-4B y Open-Jev-9B no fueron reejecutadas por AutoTrust.
+- Dependencia de vLLM: el flujo documentado de servicio de decisiones depende de vLLM y del script `serve_decide.py`; no se documentan alternativas de despliegue.
+- Cuantizaciones no documentadas: no hay informacion sobre GGUF, AWQ, GPTQ ni otras variantes, lo que limita el despliegue en hardware modesto.
+- El pipeline declarado es text-classification pese a incluir generacion; los consumidores deben enrutar explicitamente entre System 1 y System 2 para obtener el comportamiento esperado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/autotrust/JEV-27B
-- Blog del autor en Hugging Face: https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful
-- Nota de prensa de AutoTrust AI: https://www.prnewswire.com/news-releases/autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents-302891720.html
-- Cobertura en SMB Daily Leader: https://smb.dailyleader.com/article/AutoTrust-AI-Releases-JEV-27B-an-Open-Decision-Model-for-Self-Hosted-AI-Agents/6aba9a65fb7acafcb4abee43
-- Analisis en RuntimeWire: https://runtimewire.com/article/autotrust-ai-jev-27b-self-hosted-decision-model
+- Variante con vision: https://huggingface.co/autotrust/JEV-27B-VL
+- Demo en vivo de AutoTrust/GuruSearch: https://news.guru.so/ui
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Dataset de destilacion: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
-- Evaluacion de referencia citada por el autor (NeoHorse-Jev-4B): https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/blob/b50e043e22e0e41e7fc0c244e4daa707b8124930/README.md
+- Corpus de destilacion: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
+- Evaluacion de referencia NeoHorse-Jev-4B: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/blob/b50e043e22e0e41e7fc0c244e4daa707b8124930/README.md
+- Scorecard del modelo: https://huggingface.co/autotrust/JEV-27B/blob/main/27b-3.jpg
+- Imagen del demo: https://huggingface.co/autotrust/JEV-27B/resolve/main/assets/autotrust_gurusearch_demo.png

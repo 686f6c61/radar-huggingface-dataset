@@ -5,7 +5,7 @@
   "author": "fusion-world-model",
   "url": "https://huggingface.co/fusion-world-model/gru-dw_100m_h-task-outputs",
   "created_at": "2026-11-15T23:25:07.000Z",
-  "updated_at": "2026-11-16T06:40:53.000Z",
+  "updated_at": "2026-11-17T23:04:38.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "fusion-world-model/gru_100m_h-task-outputs",
+  "renamed_at": "2026-11-18T06:52:33.583Z",
   "benchmarks": [],
   "sources": []
 }

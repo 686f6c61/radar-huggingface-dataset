@@ -2,110 +2,114 @@
 
 ## Resumen
 
-Nemotron-3.5-Bolt-E4B-Heretic-GGUF es una variante GGUF del modelo nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, publicada por el usuario grumd0. El modelo base es un post-entrenamiento de NVIDIA sobre google/gemma-4-E4B-it, con 7.463.013.674 parámetros totales según los safetensors del repositorio original. La intervención de grumd0 consiste en aplicar la herramienta Heretic para realizar una ablación de la dirección de rechazo (abliteration) y posteriormente convertir y cuantizar los pesos a GGUF con llama.cpp.
+Nemotron-3.5-Bolt-E4B-Heretic-GGUF es una versión cuantizada en formato GGUF de un derivado "abliterated" del modelo NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 de NVIDIA, que a su vez es un post-entrenamiento del modelo google/gemma-4-E4B-it. El autor de esta conversión y modificación es el usuario grumd0, que aplicó la herramienta Heretic para reducir la dirección de rechazo (refusal direction) del modelo base mediante una técnica de abliteración de rango arbitrario (Arbitrary-Rank Ablation, ARA). El resultado es un modelo de 7.463.013.674 parámetros totales (aproximadamente 7,46 mil millones) que mantiene la arquitectura del modelo original pero con una drástica reducción de negativas a peticiones.
 
-El objetivo declarado es reducir el comportamiento de rechazo del modelo base: según la model card, las negativas en JailbreakBench Harmful caen de 89/100 a 3/100 y en XSTest Unsafe de 155/200 a 32/200, con una divergencia KL de 0,0859 respecto al original. Es, por tanto, un derivado orientado a usos donde el filtrado del modelo base resulta demasiado restrictivo, y no un modelo nuevo entrenado desde cero.
+La relevancia de esta ficha radica en que combina dos tendencias actuales: por un lado, la familia Nemotron de NVIDIA, orientada a modelos compactos con buen rendimiento en razonamiento y generación de texto; por otro, la práctica de la abliteración, que busca eliminar el comportamiento de rechazo aprendido durante el alineamiento. El repositorio incluye múltiples cuantizaciones (desde BF16 de 14,94 GB hasta UD-Q2_K_XL de 3,72 GB) con métricas de divergencia KL frente al modelo original, lo que permite evaluar el coste de cada nivel de compresión.
 
-La relevancia de esta ficha es doble: por un lado documenta un ejemplo práctico de ablación selectiva con Heretic sobre una arquitectura reciente (etiquetada como gemma4, sin confirmación oficial en la información disponible); por otro, advierte de que se trata de un artefacto sin validación comunitaria (0 descargas, 0 likes en el momento de la consulta) y con una licencia heredada que conviene revisar antes de cualquier uso comercial.
+El modelo está pensado para generación de texto conversacional en 34 idiomas, con licencia OpenMDW 1.1 heredada de NVIDIA y con la particularidad de que el modelo upstream (gemma-4-E4B-it) está bajo Apache 2.0. No se dispone de información sobre la longitud de contexto ni sobre detalles del entrenamiento original en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Google gemma-4-E4B-it, post-entrenado por NVIDIA; modificado mediante ablación de dirección de rechazo (Heretic ARA). El sufijo E4B sugiere una configuración MoE con ~4B parámetros efectivos, aunque no se confirma en la información disponible |
-| Parametros totales | 7.463.013.674 (dato de safetensors del modelo base) |
-| Parametros activos | no disponible (convención de nombres E4B implicaría ~4B, sin confirmar) |
+| Arquitectura | no disponible (derivado de NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, post-entrenado sobre gemma-4-E4B-it) |
+| Parametros totales | 7.463.013.674 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (tipos concretos no listados en la información disponible); repositorio de 35,4 GB con varios niveles de cuantización |
-| Idiomas soportados | 34 idiomas: en, ar, bg, cs, da, de, el, es, et, fi, fr, hi, hr, hu, id, it, ja, ko, lt, lv, nl, no, pl, pt, ro, ru, sk, sl, sv, th, tr, uk, vi, zh |
-| Licencia | openmdw-1.1 (OpenMDW License Agreement 1.1); modelo base de NVIDIA bajo la misma licencia, upstream gemma-4-E4B-it bajo Apache 2.0 |
-| Formato de pesos | GGUF (convertido con llama.cpp); el modelo base se distribuye en BF16 safetensors |
+| Tipos de cuantizacion | BF16, UD-Q8_K_XL, Q8_0, UD-Q6_K_XL, UD-Q5_K_XL, UD-Q4_K_XL, UD-Q3_K_XL, UD-Q2_K_XL (Q6_K y Q4_K_M fueron retirados por peor calidad que cuantizaciones menores) |
+| Idiomas soportados | en, ar, bg, cs, da, de, el, es, et, fi, fr, hi, hr, hu, id, it, ja, ko, lt, lv, nl, no, pl, pt, ro, ru, sk, sl, sv, th, tr, uk, vi, zh (34 idiomas) |
+| Licencia | openmdw-1.1 (OpenMDW License Agreement, version 1.1) |
+| Formato de pesos | GGUF (llama.cpp); safetensors BF16 disponible en el repositorio base grumd0/Nemotron-3.5-Bolt-E4B-Heretic |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de gemma-4-E4B-it, un transformer (con alta probabilidad de mezcla de expertos dado el sufijo E4B, aunque el dato no se explicita) que NVIDIA post-entrenó para dar lugar a Nemotron-3.5-Bolt-E4B-BF16. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del corpus ni las técnicas de alineación empleadas por NVIDIA (RLHF, DPO u otras). Tampoco se documenta la longitud de contexto nativa.
+No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. El modelo deriva de NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, que a su vez es un post-entrenamiento de google/gemma-4-E4B-it. El nombre "E4B" sugiere una variante de eficiencia de la familia Gemma 4, pero no se confirma en la información disponible si se trata de un transformer denso, un MoE o una arquitectura híbrida. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO.
 
-La innovación técnica de esta ficha es la ablación por rango arbitrario (Arbitrary-Rank Ablation, ARA) implementada en Heretic. El proceso estima una dirección de rechazo a partir de pares de prompts dañinos y benignos y la proyecta fuera de las matrices de pesos en un rango de capas concreto: `start_layer_index` = 12, `end_layer_index` = 27, con `neighbor_count` = 14 y pesos `preserve_good_behavior_weight` = 0,5232480534666997, `steer_bad_behavior_weight` = 0,000237553833412742 y `overcorrect_relative_weight` = 0,748730444223033. El resultado se mide con divergencia KL frente al base (0,0859), lo que cuantifica cuánto se ha desplazado la distribución de salida. No hay reentrenamiento: los pesos se modifican quirúrgicamente y luego se convierten a GGUF.
+La innovación técnica principal de esta ficha es la abliteración mediante Heretic con el modificador Arbitrary-Rank Ablation (ARA). Según los parámetros publicados, la ablación se aplica entre las capas 12 y 27 (`start_layer_index` = 12, `end_layer_index` = 27), con un peso de preservación de buen comportamiento de 0,523, un peso de dirección de mal comportamiento de 0,000238, un peso de sobrecorrección relativa de 0,749 y un `neighbor_count` de 14. La conversión a GGUF y la cuantización se realizaron con llama.cpp, y las recetas de cuantización dinámica `UD-*_K_XL` reutilizan la matriz de importancia de los cuantizados de Unsloth para el modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional en 34 idiomas, incluido el español, con soporte declarado de conversaciones multi-turno (tag `conversational`).
-- Instrucciones y diálogo heredados del post-entrenamiento de NVIDIA sobre gemma-4-E4B-it.
-- Comportamiento de rechazo fuertemente reducido: 3/100 negativas en JailbreakBench Harmful y 32/200 en XSTest Unsafe, frente a 89/100 y 155/200 del base.
-- Distribución de salida cercana al base (KL 0,0859), lo que sugiere que las capacidades generales se preservan en buena medida, aunque no se aportan benchmarks de tarea para verificarlo.
-- Despliegue nativo en llama.cpp y ecosistema GGUF (Ollama, LM Studio, servidores compatibles con la API de endpoints).
-- Compatibilidad declarada con `endpoints_compatible` en Hugging Face.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno, con pipeline `text-generation` y tag `conversational`.
+- Reducción drástica del comportamiento de rechazo: en JailbreakBench Harmful pasa de 89/100 rechazos en el modelo base a 3/100 en este modelo; en XSTest Unsafe de 155/200 a 32/200.
+- Soporte multilingüe en 34 idiomas, incluyendo español, inglés, alemán, francés, italiano, portugués, ruso, chino, japonés, coreano, árabe, hindi y la mayoría de lenguas europeas.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia gestionadas.
+- Formato GGUF optimizado para llama.cpp, con cuantizaciones dinámicas que preservan la calidad en tamaños reducidos.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Investigación en seguridad y alineación: el modelo sirve como contrapunto experimental para estudiar cómo varía la tasa de rechazo al aplicar ARA en las capas 12-27, comparando directamente con el base BF16 y midiendo el coste en KL.
-- Red-teaming y generación de datos adversarios: con 3/100 negativas en JailbreakBench, es útil para producir corpus de prompts que un modelo alineado rechazaría, y así evaluar clasificadores y filtros de moderación de terceros.
-- Evaluación de robustez de guardrails: alimentar pipelines de moderación con las salidas del modelo permite medir la tasa de falsos negativos de un filtro antes de desplegarlo en producción.
-- Asistencia local en escritorio: al distribuirse en GGUF, puede ejecutarse con llama.cpp u Ollama en un equipo de sobremesa, sin conexión y sin enviar prompts a servicios externos.
-- Procesamiento multilingüe en local: cubre 34 idiomas (español, francés, alemán, árabe, japonés, coreano, hindi, etc.) para tareas de resumen, reescritura o extracción sobre textos que no conviene enviar a la nube.
-- Generación creativa sin restricciones editoriales: escritura de ficción con violencia, contenido adulto o temas sensibles donde el modelo base se negaría, asumiendo la responsabilidad legal del output.
-- Base para fine-tuning posterior: al estar ya abliterado, sirve como punto de partida para ajustes específicos de dominio sin reintroducir el sesgo de rechazo en las capas ablacionadas.
+- Investigación sobre alineamiento y abliteración: el modelo permite estudiar empíricamente el efecto de eliminar la dirección de rechazo, con métricas de divergencia KL y tasas de rechazo publicadas para cada cuantización, lo que facilita comparaciones controladas.
+- Generación creativa sin restricciones excesivas: escritura de ficción, guiones o narrativa que aborden temas sensibles sin las negativas sistemáticas del modelo base, adecuado para autores que necesitan explorar temas oscuros o controvertidos.
+- Despliegue en hardware de consumo: las cuantizaciones UD-Q4_K_XL (5,03 GB) y UD-Q3_K_XL (4,20 GB) permiten ejecutar el modelo en GPUs de gama media con 6-8 GB de VRAM mediante llama.cpp u Ollama, manteniendo una divergencia KL moderada (0,0416 y 0,1283 respectivamente) frente al BF16.
+- Atención al cliente y asistentes conversacionales: con 34 idiomas soportados y formato GGUF, se puede integrar en servicios de chat multilingües desplegados en servidores modestos, aunque la reducción de rechazos exige filtros de seguridad externos.
+- Prototipado rápido en local: la disponibilidad de cuantizaciones desde 3,72 GB permite probar el modelo en portátiles o estaciones de trabajo sin GPU dedicada de gran tamaño, usando llama.cpp con backend CPU o GPU integrada.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye métricas de KLD y coincidencia de token top para cada archivo, lo que lo convierte en un caso de estudio para medir el impacto de la cuantización dinámica con matriz de importancia.
+- Generación de contenido multilingüe para mercados locales: el soporte de idiomas como checo, croata, estonio, letón, lituano, esloveno o eslovaco cubre nichos poco atendidos por otros modelos abiertos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos numéricos aportados por el autor son métricas de rechazo y divergencia respecto al modelo base:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí publica métricas de rechazo y divergencia KL:
 
 | Metrica | Modelo base | Este modelo |
 |---|---:|---:|
-| JailbreakBench Harmful (negativas) | 89/100 | 3/100 |
-| JailbreakBench Benign (negativas) | 18/100 | 0/100 |
-| XSTest Unsafe (negativas) | 155/200 | 32/200 |
-| Divergencia KL respecto al base | 0 | 0,0859 |
+| JailbreakBench Harmful (rechazos) | 89/100 | 3/100 |
+| JailbreakBench Benign (rechazos) | 18/100 | 0/100 |
+| XSTest Unsafe (rechazos) | 155/200 | 32/200 |
+| KL divergence (harmless_alpaca) | 0 | 0,0859 |
 
-El autor indica que ninguno de los prompts de evaluación estaba en el conjunto de entrenamiento de Heretic. No se aportan métricas de calidad lingüística, razonamiento, código ni matemáticas para ninguna de las dos variantes.
+Calidad de cuantización (KLD frente a BF16 de este modelo y frente a BF16 de NVIDIA, medida con `llama-perplexity --kl-divergence` en 100 × 512 tokens de wikitext-2 test):
+
+| Archivo | Tamano | KLD vs Heretic BF16 | Mismo token top | KLD vs NVIDIA BF16 | Mismo token top |
+|---|---:|---:|---:|---:|---:|
+| BF16 | 14,94 GB | 0 | 100% | 0,0969 | 87,95% |
+| UD-Q8_K_XL | 8,13 GB | 0,0045 | 97,45% | 0,1007 | 87,85% |
+| Q8_0 | 7,97 GB | 0,0077 | 96,59% | 0,1025 | 87,68% |
+| UD-Q6_K_XL | 7,23 GB | 0,0079 | 96,58% | 0,1035 | 87,66% |
+| UD-Q5_K_XL | 5,80 GB | 0,0154 | 95,25% | 0,1070 | 87,53% |
+| UD-Q4_K_XL | 5,03 GB | 0,0416 | 91,93% | 0,1307 | 86,27% |
+| UD-Q3_K_XL | 4,20 GB | 0,1283 | 86,25% | 0,2113 | 82,61% |
+| UD-Q2_K_XL | 3,72 GB | 0,3669 | 77,30% | 0,4401 | 75,15% |
 
 ## Requisitos de hardware
 
-Estimaciones derivadas de los 7.463.013.674 parámetros del modelo; el autor no publica requisitos oficiales.
-
-- VRAM para inferencia (pesos + overhead de contexto): ~15-16 GB en F16/BF16, ~8-9 GB en Q8_0, ~4,5-5,5 GB en Q4_K_M, ~3,5-4 GB en Q3_K_M.
-- GPU recomendadas para F16: A100 40 GB, H100, L40S, RTX 4090 24 GB (justo, con contexto moderado).
-- GPU para Q8_0: RTX 4090, RTX 3090, RTX 4080 Super, A6000.
-- Consumer GPU: sí. Q4_K_M cabe en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060, RX 7600); Q8_0 requiere 12 GB o más.
-- CPU: viable con llama.cpp descargando capas a RAM; con 16 GB de RAM del sistema se puede ejecutar Q4_K_M íntegramente en CPU, a costa de latencia.
-- Opciones de despliegue: llama.cpp (referencia del formato), Ollama, LM Studio, servidores GGUF compatibles con la API de OpenAI. vLLM y TGI tienen soporte de GGUF limitado o experimental; para máximo throughput conviene convertir a safetensors y usar vLLM con el base BF16.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna cuantización.
+- VRAM estimada para inferencia: aproximadamente el tamaño del archivo más un margen para el contexto y el grafo de computación. Con UD-Q4_K_XL (5,03 GB) se necesitan en torno a 6-7 GB de VRAM; con UD-Q8_K_XL (8,13 GB) en torno a 9-10 GB; con BF16 (14,94 GB) en torno a 16-18 GB.
+- GPU recomendadas: para BF16, A100, H100 o RTX 4090 (24 GB); para UD-Q8_K_XL, RTX 4080/4090 o A10; para UD-Q4_K_XL, RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070.
+- Cabe en GPU de consumo: sí, en configuraciones desde 6 GB de VRAM con UD-Q3_K_XL o UD-Q4_K_XL; también en CPU mediante llama.cpp con las cuantizaciones menores.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama (a partir del GGUF), servidores compatibles con endpoints (tag `endpoints_compatible`). No se confirma soporte de vLLM o TGI para este formato.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos (JBB Harmful) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| grumd0/Nemotron-3.5-Bolt-E4B-Heretic-GGUF | 7,46B totales (activos no disponibles) | no disponible | 3/100 | openmdw-1.1 | GGUF, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | 7,46B totales | no disponible | 89/100 | openmdw-1.1 | BF16 safetensors |
-| google/gemma-4-E4B-it | no disponible | no disponible | no disponible | Apache 2.0 | safetensors, pesos originales |
-| Otras variantes GGUF del mismo base | 7,46B totales | no disponible | no disponible | openmdw-1.1 | GGUF |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---:|---|---|---|---|
+| Nemotron-3.5-Bolt-E4B-Heretic-GGUF (este) | 7,46 B | no disponible | OpenMDW 1.1 | GGUF | Abliterado, 34 idiomas, cuantizaciones dinámicas |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | no disponible | no disponible | OpenMDW 1.1 | safetensors | Modelo base sin abliterar; rechaza 89/100 en JailbreakBench Harmful |
+| grumd0/Nemotron-3.5-Bolt-E4B-Heretic | 7,46 B | no disponible | OpenMDW 1.1 | safetensors | Mismo modelo en BF16, sin cuantizar |
+| unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF | no disponible | no disponible | OpenMDW 1.1 | GGUF | Cuantizaciones del modelo base sin abliterar; fuente de la receta UD-*_K_XL |
 
-La comparación relevante es frente al base: misma arquitectura, mismos parámetros y misma licencia, con una reducción drástica de rechazos a cambio de una divergencia KL de 0,0859. Frente a gemma-4-E4B-it, la diferencia principal es la licencia (Apache 2.0 en el upstream, OpenMDW 1.1 en el derivado de NVIDIA) y el doble post-entrenamiento. No se dispone de datos para comparar con otras alternativas abliteradas de tamaño similar.
+No se dispone de datos de benchmarks estándar para comparar rendimiento entre estos modelos más allá de las métricas de rechazo y KLD ya presentadas.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterado: reduce deliberadamente el rechazo y puede cumplir peticiones que el base deniega, produciendo contenido inexacto, sesgado o dañino. El propio autor lo advierte de forma explícita.
-- La divergencia KL de 0,0859 indica un desplazamiento real de la distribución de salida; no se han publicado evaluaciones que confirmen que las capacidades de razonamiento, código o matemáticas se mantienen intactas.
-- Riesgo de alucinación heredado del modelo base y potencialmente agravado por la modificación de pesos; sin benchmarks de fidelidad no es cuantificable.
-- Sesgos desconocidos: no se documenta ninguna evaluación de sesgo demográfico, político o cultural para este derivado.
-- Idiomas: se declaran 34, pero no se aportan métricas de calidad por idioma; el rendimiento relativo en lenguas de bajos recursos como el estonio o el lituano es desconocido.
-- Longitud de contexto no disponible: no se puede planificar su uso en tareas de contexto largo sin verificarlo empíricamente.
-- Licencia: OpenMDW 1.1 impone condiciones que deben revisarse antes de uso comercial; además, el modelo incorpora pesos derivados de gemma-4-E4B-it (Apache 2.0), cuyas obligaciones de atribución se mantienen. No es un producto de NVIDIA ni de Google y no tiene garantía.
-- Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, creado el 2026-10-24. No hay evidencia externa de calidad ni de estabilidad.
-- Los tipos de cuantización concretos no se listan en la información disponible, por lo que la elección de fichero requiere inspeccionar el repositorio.
-- No se confirma si la arquitectura es MoE ni cuántos parámetros se activan por token; esto afecta directamente a las estimaciones de latencia y VRAM.
+- Modelo abliterado y sin censura: puede cumplir peticiones que el modelo base rechaza, incluyendo contenido potencialmente dañino, sesgado o inexacto. El autor advierte explícitamente de este riesgo.
+- No es un producto de NVIDIA ni de Google y se distribuye sin garantía.
+- Riesgo de alucinación: no se documentan métricas de fidelidad factual; la abliteración puede afectar a la calibración del modelo.
+- La divergencia KL de 0,0859 frente al modelo base (medida en harmless_alpaca) indica que el comportamiento no es idéntico al original, incluso en prompts benignos.
+- Las cuantizaciones agresivas (UD-Q3_K_XL y UD-Q2_K_XL) presentan una divergencia KL elevada (0,1283 y 0,3669) y una coincidencia de token top baja (86,25% y 77,30%), lo que puede degradar la calidad de forma notable.
+- Licencia OpenMDW 1.1: es necesario revisar sus términos para uso comercial; el modelo upstream gemma-4-E4B-it está bajo Apache 2.0, pero el post-entrenamiento de NVIDIA introduce la licencia OpenMDW.
+- No se dispone de información sobre la longitud de contexto, lo que impide garantizar conversaciones de contexto largo.
+- El soporte de 34 idiomas proviene de las etiquetas del repositorio, pero no se aportan métricas de calidad por idioma.
+- Para producción, se recomienda añadir capas de filtrado y moderación externas dado el comportamiento permisivo del modelo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic-GGUF
-- Modelo base (NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
-- Modelo upstream (Google): https://huggingface.co/google/gemma-4-E4B-it
+- Repositorio Hugging Face (GGUF): https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic-GGUF
+- Repositorio Hugging Face (BF16 safetensors): https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic
+- Modelo base NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Modelo upstream Google: https://huggingface.co/google/gemma-4-E4B-it
+- Cuantizaciones de Unsloth del modelo base: https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
-- llama.cpp (conversión y cuantización): https://github.com/ggml-org/llama.cpp
+- llama.cpp: https://github.com/ggml-org/llama.cpp
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.
+- Dataset harmless_alpaca: https://huggingface.co/datasets/mlabonne/harmless_alpaca

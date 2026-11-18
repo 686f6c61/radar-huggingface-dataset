@@ -2,127 +2,105 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Sushi-STQ-2.75bpw es una cuantización del modelo Qwen3.8-Flash-Next (desarrollado por el equipo Qwen) empaquetada específicamente para **sushi**, un motor de inferencia nativo para Apple Silicon. El pack ha sido creado por el usuario beamster y no es un modelo nuevo en sí mismo, sino una versión comprimida que promedia 2,75 bits por peso mediante la técnica STQ (Sushi Trellis Quant), con el objetivo de ejecutar un modelo multimodal muy grande en hardware Mac con la menor huella de memoria posible.
+Qwen3.8-Flash-Next-Sushi-STQ-2.75bpw es un empaquetado cuantizado del modelo Qwen/Qwen3.8-Flash-Next, publicado por el usuario beamster para el motor de inferencia nativo de Apple Silicon sushi. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos orientada a ejecución local en Mac: el tronco denso y los expertos enrutados se almacenan con la cuantización propietaria STQ (Sushi Trellis Quant) y una tabla de codebook SPEC1, con tasas mixtas de 2 a 4 bits por experto y una media de 2,75 bits por peso. El resultado es un paquete de unos 75 GiB en disco que rinde con una divergencia KL de 0,0250 frente al checkpoint BF16 original.
 
-El modelo base es un MoE multimodal (image-text-to-text) de 27.118.980.499 parámetros según los metadatos de safetensors, con soporte de contexto de hasta 1.048.576 tokens mediante YaRN x4 sobre una ventana nativa de 262.144 tokens. Su relevancia radica en que permite cargar un modelo de esta escala en GPUs unificadas de Apple Silicon, algo inviable con pesos en BF16, manteniendo una fidelidad razonable frente al checkpoint original (KLD de 0,0295 en la lectura de ocho categorías).
+El modelo base es un MoE multimodal de Qwen con 24.892.950.419 parámetros totales según los safetensors del repo, torre de visión Qwen3-VL ViT, cabeza MTP (multi-token prediction) y una ventana de contexto de hasta 1.048.576 tokens gracias a YaRN x4 sobre los 262.144 nativos. La ficha del autor describe 48 capas con 512 expertos enrutados por capa, además de una capa MTP, conexiones hiperbólicas (hyper-connections) y proyecciones GDN (GatedDeltaNet), lo que sitúa la arquitectura en la familia de transformers híbridos con atención lineal.
 
-Es importante destacar que este pack **solo funciona con sushi v1.3.0 o superior** en Apple Silicon con macOS 26.2 o posterior; no carga en transformers, vLLM, mlx-lm ni exllamav3.
+Su relevancia es doble: por un lado, demuestra que un MoE multimodal de casi 25.000 millones de parámetros puede caber y ejecutarse en un Mac con Apple Silicon a 2,75 bpw con pérdida de calidad muy contenida; por otro, es un ejemplo de empaquetado específico de motor, incompatible con transformers, vLLM, mlx-lm o exllamav3, lo que lo convierte en una pieza útil solo dentro del ecosistema sushi. La licencia Qwen Community 1.0 impone condiciones adicionales para servicios comerciales a gran escala.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal (expertos enrutados + componentes densos, con GDN, hyper-connections, indexer, MTP head y torre de visión Qwen3-VL ViT) |
-| Parametros totales | 27.118.980.499 |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer MoE híbrido con atención + GatedDeltaNet (GDN), torre de visión Qwen3-VL ViT y cabeza MTP |
+| Parámetros totales | 24.892.950.419 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | hasta 1.048.576 tokens (YaRN x4 sobre 262.144 nativos) |
-| Tipos de cuantizacion | STQ (Sushi Trellis Quant, codebook SPEC1) para expertos enrutados, 2-4 bits mezclados (media 2,75 bpw); 8-bit afín para la parte densa; 4-bit afín (grupo 32) para la tabla de n-gramas |
+| Tipos de cuantización | STQ con codebook SPEC1: expertos enrutados a 2-4 bits (media 2,75 bpw), tronco denso a 6 bits; embedding, hyper-connections, puertas GDN y parte densa de MTP a 8 bits affine; tabla n-gram a 4 bits affine (group size 32) |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (qwen-community-1.0) |
-| Formato de pesos | safetensors (formato propio del pack sushi) |
-
-Datos adicionales del pack:
-
-| Parametro | Valor |
-|---|---|
-| Tamano del repo | 81,5 GB |
-| Disco requerido | ~76 GiB (46,1 GiB de pesos + 29,8 GiB de tabla de n-gramas) |
-| Memoria GPU pico (scoring) | 49,6 GB |
-| Descargas | 358 |
-| Likes | 6 |
+| Licencia | Qwen Community License 1.0 (license_name: qwen-community-1.0) |
+| Formato de pesos | safetensors empaquetados para sushi (no cargable en transformers, vLLM, mlx-lm ni exllamav3) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Qwen3.8-Flash-Next, es un modelo MoE (mixture of experts) multimodal con 48 capas de expertos enrutados (512 expertos por capa, más una capa MTP), componentes densos que incluyen atención, GDN (gated delta net, sugerido por la etiqueta de arquitectura híbrida attention + GDN), expertos compartidos, hyper-connections, un indexer, embedding y lm_head. Incluye además una torre de visión Qwen3-VL ViT que habilita entrada de imagen y vídeo, y una cabeza MTP (multi-token prediction) presumiblemente para decodificación especulativa. La tabla de embeddings de n-gramas sugiere un mecanismo de especulación por n-gramas cuya tabla se lee directamente del SSD sin ocupar memoria de GPU.
+El paquete deriva del checkpoint Qwen/Qwen3.8-Flash-Next, un MoE multimodal con 48 capas y 512 expertos enrutados por capa, más una capa MTP adicional. La arquitectura combina bloques de atención con proyecciones GatedDeltaNet (GDN), un indexer y expertos compartidos en el tronco denso, junto con conexiones hiperbólicas. La torre de visión es un Qwen3-VL ViT, lo que habilita entrada de imagen y vídeo además de texto. El modelo incorpora una cabeza MTP para decodificación multi-token y una tabla de embedding n-gram almacenada aparte en `ngram_table.bin`, leída desde SSD y nunca cargada en memoria de GPU.
 
-En cuanto al entrenamiento del modelo base, la información disponible no detalla número de tokens, composición del dataset ni uso de RLHF/DPO: no disponible. Este repositorio en concreto no modifica los pesos del modelo base más allá de la cuantización: los expertos enrutados se comprimen con STQ usando el codebook SPEC1 con tasas mixtas de 2 a 4 bits por banco de expertos (2,75 bits por peso de media), la parte densa se cuantiza a 8 bits afín y la tabla de n-gramas a 4 bits afín con grupo 32.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF o DPO del modelo base en la documentación proporcionada. La innovación técnica destacable de este paquete es la cuantización STQ con codebook SPEC1 y tasas mixtas por banco de expertos, que reduce el tronco denso de 8 bits affine (revisión 1.0) a 6 bits STQ en la revisión 2.0, rebajando el tamaño del paquete en aproximadamente 1 GB y mejorando la KLD en todas las categorías evaluadas. El motor sushi, fork de mlx-serve de ddalcu, es el único runtime capaz de cargar estos pesos.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline conversational).
-- Entrada multimodal: imágenes y vídeo gracias a la torre de visión Qwen3-VL ViT incluida en el pack (pipeline image-text-to-text).
-- Contexto ultra-largo: hasta 1.048.576 tokens con YaRN x4, adecuado para documentos extensos, repositorios de código o sesiones muy largas.
-- Decodificación especulativa vía MTP head incluido y tabla de n-gramas para acelerar la generación.
-- Arquitectura MoE con 48 capas de expertos enrutados (512 expertos por capa) y expertos compartidos.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible (aunque el fixture de calidad incluye una categoría multilingual, no se especifican idiomas soportados).
+- Generación de texto conversacional multi-turno con contexto de hasta 1.048.576 tokens.
+- Razonamiento y matemáticas, con modo thinking configurable (la evaluación de tool calling usa thinking en nivel medio).
+- Generación de código, evaluada en la categoría code con la KLD más baja del paquete (0,0050).
+- Entrada de imagen y vídeo a través de la torre de visión Qwen3-VL ViT (pipeline image-text-to-text).
+- Tool calling y function calling: 94/100 en tool-eval-bench 3.0.0 en modo hard, con 182 de 194 puntos en 97 escenarios.
+- Razonamiento multi-paso y uso en agentes, soportado por la cabeza MTP y el modo thinking.
+- Capacidades multilingües, presentes en la evaluación de calidad (categoría multilingual con KLD 0,0226), aunque la lista de idiomas no está publicada.
+- Decodificación multi-token (MTP) incluida en el paquete, aunque desactivada en las mediciones de calidad del autor.
 
 ## Casos de uso
 
-- Ejecución local en Mac de gama alta: el pack está diseñado para Apple Silicon, permitiendo ejecutar un MoE multimodal de ~27 mil millones de parámetros en máquinas con GPU unificada de ~64 GB o más, sin depender de datacenters.
-- Análisis de documentos largos: con 1.048.576 tokens de contexto, se pueden procesar libros completos, expedientes jurídicos o bases de código enteras en una sola sesión.
-- Asistente multimodal local: la torre de visión permite describir, analizar y razonar sobre imágenes y vídeos sin enviar datos a la nube, útil para flujos con requisitos de privacidad.
-- Prototipado de agentes con contexto extenso: la ventana de un millón de tokens permite mantener historiales de conversación y herramientas muy largos en agentes de múltiples pasos.
-- Generación y revisión de código sobre repositorios grandes: el contexto amplio y la cuantización de baja fidelidad-perdida (KLD 0,0295) lo hacen adecuado para razonar sobre bases de código completas cargadas en contexto.
-- Investigación en cuantización extrema: el pack sirve como referencia reproducible de la técnica STQ a 2,75 bpw, con métricas KLD publicadas contra el checkpoint BF16.
-- Transcripción y análisis de vídeo: la aceptación de entrada de vídeo permite tareas como resumen de grabaciones o extracción de información visual secuencial.
+- Asistente de código en local sobre Mac: el modelo puede completar, revisar y refactorizar código en un entorno sin conexión, aprovechando la categoría code con KLD 0,0050 y el soporte de tool calling para invocar linters o ejecutar tests.
+- Agente de automatización con herramientas: con 94/100 en tool-eval-bench 3.0.0 en modo hard, es adecuado para orquestar llamadas a APIs, consultas a bases de datos y flujos multi-paso en un portátil o Mac Studio.
+- Análisis de documentos largos: la ventana de 1.048.576 tokens permite procesar libros completos, expedientes o repositorios enteros en una sola pasada, útil para resumen y extracción de entidades.
+- Procesamiento de imagen y vídeo: la torre Qwen3-VL ViT habilita descripción de imágenes, respuesta a preguntas visuales y análisis de fotogramas de vídeo en local.
+- Asistencia técnica y atención al cliente offline: conversaciones multi-turno con contexto largo y capacidad de consultar herramientas internas mediante function calling, sin enviar datos a la nube.
+- Prototipado e investigación en Apple Silicon: sirve para estudiar el comportamiento de un MoE multimodal de 25.000 millones de parámetros cuantizado a 2,75 bpw y comparar la degradación por categoría frente al BF16.
+- Generación de documentación técnica y textos largos: la categoría story (KLD 0,0438) y wikitext (0,0948) indican que la pérdida es mayor en texto libre, por lo que conviene revisar la salida en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) para este pack. El autor publica métricas de fidelidad de cuantización (KLD contra el checkpoint BF16, menor es mejor), no de calidad en tareas:
+Calidad medida como KLD frente al checkpoint BF16, con KV en bf16, estado GatedDeltaNet en f32 y MTP desactivado, sobre 8 categorías, 2 prompts de 512 tokens por categoría, puntuado hasta el primer EOS. Menor es mejor.
 
-| Lectura | KLD | Agreement top-1 |
-|---|---|---|
-| 16 prompts x 512 tokens (hasta primer EOS) | 0,0692 | 92,76% |
-| Ocho categorías (código, matemáticas, razonamiento, diseño, wikitext, multilingual, historia, STEM), 16 x 512 | 0,0295 | 94,73% |
+| Paquete | KLD | Acuerdo top-1 | Memoria GPU |
+|---|---|---|---|
+| Sushi-STQ-2.75bpw, revisión 2.0 | 0,0250 | 94,73 % | 48,5 GB |
+| Sushi-STQ-2.75bpw, revisión 1.0 | 0,0295 | 94,73 % | 49,5 GB |
+| oQ4e (oMLX), reempaquetado para sushi | 0,0279 | 95,19 % | 74,1 GB |
 
-Comparativa de memoria y KLD (lectura de ocho categorías, mismas condiciones):
+| Paquete | code | math | reasoning | design | wikitext | multilingual | story | science |
+|---|---|---|---|---|---|---|---|---|
+| Sushi-STQ-2.75bpw 2.0 | 0,0050 | 0,0063 | 0,0198 | 0,0156 | 0,0948 | 0,0226 | 0,0438 | 0,0164 |
+| Sushi-STQ-2.75bpw 1.0 | 0,0059 | 0,0086 | 0,0239 | 0,0188 | 0,0987 | 0,0260 | 0,0576 | 0,0196 |
+| oQ4e | 0,0067 | 0,0049 | 0,0191 | 0,0162 | 0,1502 | 0,0233 | 0,0332 | 0,0117 |
 
-| Pack | Memoria GPU pico | KLD ocho categorías |
-|---|---|---|
-| Sushi-2bpw | 37,4 GB | 0,0673 |
-| Sushi-2.6bpw | 47,0 GB | 0,0342 |
-| **Sushi-STQ-2.75bpw (este pack)** | **49,6 GB** | **0,0295** |
-| Sushi-4bpw | 68,2 GB | 0,0135 |
-| oQ4e (oMLX), reempaquetado para sushi | 74,1 GB | 0,0279 |
-| mlx-serve mixed 4-8 bit | 75,1 GB | 0,0120 |
-
-Nota del autor: las dos lecturas usan prompts distintos y no son comparables entre sí, ni con la tabla kv8 de las cards de otros packs.
+Tool calling: tool-eval-bench 3.0.0 en modo hard (seed 42, sin herramientas en vivo), greedy, thinking en nivel medio, valores por defecto de sushi. La revisión 2.0 obtiene 94/100 y 182 de 194 puntos en 97 escenarios; la revisión 1.0, sobre sushi 1.4.0, obtuvo 91/100 y 176 de 194. El autor advierte que la media por categoría descansa en dos prompts y que la clasificación debe hacerse por la KLD global.
 
 ## Requisitos de hardware
 
-- Plataforma: exclusivamente Apple Silicon con macOS 26.2 o posterior y sushi v1.3.0 o superior.
-- Memoria: el scoring del pack alcanzó un pico de 49,6 GB de GPU; se recomienda una máquina con al menos 64 GB de memoria unificada (los Mac con 48 GB probablemente se queden cortos).
-- Disco: ~76 GiB (46,1 GiB de pesos + 29,8 GiB de tabla de n-gramas que se lee desde SSD); el repo completo ocupa 81,5 GB.
-- No cabe en GPUs NVIDIA consumer convencionales ni en Macs de 16-32 GB: este pack no está pensado para RTX 4090 o similares.
-- Despliegue: solo mediante sushi (fork de mlx-serve de ddalcu). **No carga** en transformers, vLLM, mlx-lm ni exllamav3.
-- Latencia y throughput: no disponible en la información proporcionada, aunque la inclusión de MTP head y tabla de n-gramas sugiere decodificación especulativa para acelerar la generación.
-- Flags conocidos del autor: KV en bf16 y `--qwen-gdn 32` durante el scoring.
+- Memoria GPU pico durante la evaluación de calidad: 48,5 GB para la revisión 2.0 (49,5 GB para la 1.0).
+- Espacio en disco: aproximadamente 75 GiB, de los cuales 45,2 GiB son pesos y 29,8 GiB la tabla n-gram.
+- Plataforma: exclusivamente Apple Silicon con macOS 26.2 o posterior y sushi v1.5.1 o superior.
+- GPU recomendadas: no disponible de forma explícita; por el consumo de memoria, requiere equipos con memoria unificada de al menos 64 GB. No cabe en configuraciones de 16, 24 o 32 GB.
+- No es compatible con CUDA ni con GPU de consumo tipo RTX 4090; no se ejecuta en transformers, vLLM, mlx-lm ni exllamav3.
+- Despliegue: solo mediante el motor sushi; la actualización desde la revisión 1.0 se hace con `sushi pull`, que descarga únicamente los ficheros modificados (unos 45 GB) y verifica cada fichero antes de reemplazarlo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-Comparativa entre packs de cuantización del mismo modelo base (datos del propio README):
-
-| Pack | bpw medio | Memoria GPU pico | KLD (8 categorías) | Motor |
-|---|---|---|---|---|
-| Sushi-2bpw | 2 | 37,4 GB | 0,0673 | sushi |
-| Sushi-2.6bpw | 2,6 | 47,0 GB | 0,0342 | sushi |
-| Sushi-STQ-2.75bpw (este) | 2,75 | 49,6 GB | 0,0295 | sushi |
-| Sushi-4bpw | 4 | 68,2 GB | 0,0135 | sushi |
-| oQ4e (oMLX) | no disponible | 74,1 GB | 0,0279 | sushi (reempaquetado) |
-| mlx-serve mixed 4-8 bit | no disponible | 75,1 GB | 0,0120 | mlx-serve |
-
-Este pack ofrece el mejor equilibrio memoria/calidad de la familia Sushi: reduce la KLD un 56% respecto al pack de 2,6 bpw con solo 2,6 GB más de memoria, y supera en fidelidad al oQ4e de 4 bits consumiendo 24,5 GB menos.
-
-Comparativa con modelos base alternativos de la misma categoría: no disponible (no se proporcionan datos de otros modelos multimodales MoE comparables en la información facilitada).
+| Modelo | Parámetros | Contexto | Calidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-Sushi-STQ-2.75bpw (este) | 24.892.950.419 | 1.048.576 | KLD 0,0250; 94/100 en tool-eval-bench | Qwen Community 1.0 | Solo sushi en Apple Silicon |
+| Sushi-STQ-2.75bpw revisión 1.0 | 24.892.950.419 | 1.048.576 | KLD 0,0295; 91/100 en tool-eval-bench | Qwen Community 1.0 | Solo sushi, tag `v1.0` |
+| oQ4e (oMLX), reempaquetado para sushi | no disponible | no disponible | KLD 0,0279; 95,19 % de acuerdo top-1 | no disponible | Sushi |
+| Qwen/Qwen3.8-Flash-Next (BF16) | 24.892.950.419 | 262.144 nativos | Referencia de calidad | Qwen Community 1.0 | Hugging Face, runtime estándar |
 
 ## Limitaciones y advertencias
 
-- Compatibilidad muy restringida: solo funciona con sushi v1.3.0+ en Apple Silicon con macOS 26.2+; es incompatible con transformers, vLLM, mlx-lm y exllamav3, lo que limita gravemente las opciones de despliegue en producción.
-- Requisito de memoria elevado: ~49,6 GB de GPU pico, lo que lo deja fuera del alcance de la mayoría de equipos consumer.
-- Dependencia del SSD: la tabla de n-gramas (29,8 GiB) se lee desde disco y nunca se carga en GPU, lo que puede afectar al rendimiento si el almacenamiento es lento.
-- Sesgos conocidos: no disponible (no se documentan en la model card).
-- Riesgo de alucinación: inherente a todo LLM; la cuantización agresiva (2,75 bpw en los expertos) puede degradar marginalmente la precisión frente al BF16, aunque las métricas KLD sugieren una pérdida contenida.
-- Idiomas: no especificados en la información disponible.
-- Licencia: Qwen Community License 1.0, que incluye condiciones específicas para servicios comerciales de gran escala; conviene revisar el archivo LICENSE antes de cualquier uso comercial.
-- Las métricas de calidad publicadas son KLD contra el checkpoint original, no benchmarks de tareas reales; la calidad en uso práctico debe validarse por el usuario.
-- Las dos lecturas de KLD del README no son comparables entre sí ni con tablas de otros packs.
+- Compatibilidad restringida: solo carga en sushi v1.5.1 o superior sobre macOS 26.2 o posterior en Apple Silicon; no funciona en transformers, vLLM, mlx-lm ni exllamav3.
+- Requiere hardware con memoria unificada alta: el pico medido es de 48,5 GB, por lo que equipos de 32 GB o menos no pueden ejecutarlo.
+- La cuantización introduce degradación: la KLD global es 0,0250 y el acuerdo top-1 con el BF16 es del 94,73 %, no del 100 %. Las categorías wikitext (0,0948) y story (0,0438) son las más afectadas.
+- Las métricas de calidad se basan en 2 prompts de 512 tokens por categoría; el propio autor advierte que son indicativas y no concluyentes.
+- La lista de idiomas soportados no está publicada, lo que dificulta planificar despliegues multilingües.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones específicas de sesgo o veracidad para este paquete.
+- Licencia Qwen Community License 1.0: incluye condiciones específicas para servicios comerciales a gran escala que deben revisarse antes de un uso en producción.
+- La tabla n-gram (29,8 GiB) se lee desde SSD y no se carga en memoria de GPU; el rendimiento depende de la velocidad del almacenamiento.
+- El paquete no incluye información sobre parámetros activos del MoE, lo que limita el cálculo teórico de throughput.
 
 ## Enlaces
 
-- Repositorio del pack: https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-STQ-2.75bpw
+- Modelo en Hugging Face: https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-STQ-2.75bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Motor sushi (repositorio): https://github.com/beamivalice/sushi
+- Repositorio del motor sushi: https://github.com/beamivalice/sushi
 - Documentación de uso de sushi: https://github.com/beamivalice/sushi/blob/main/docs/usage.md
-- mlx-serve (proyecto original del que deriva sushi): https://github.com/ddalcu/mlx-serve
-- Licencia: archivo LICENSE en el repositorio del pack (Qwen Community License 1.0)
+- mlx-serve (proyecto del que deriva sushi): https://github.com/ddalcu/mlx-serve

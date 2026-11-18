@@ -2,87 +2,90 @@
 
 ## Resumen
 
-`yue2-1980s-eurodisco-lora` es un adaptador LoRA de tipo NAR (non-autoregressive, de textura y timbre) para el modelo de generación musical YuE2 (`Comfy-Org/YuE2`), desarrollado por James E. Petts. Su propósito es dotar a las composiciones generadas por YuE2 de un carácter de producción eurodisco de los años ochenta: producción densa tipo "wall-of-sound", bajo de sintetizador con chorus, batería four-on-the-floor con toms con gate, pads de sintetizador apilados y brillo de estudio ochentero.
+`yue2-1980s-eurodisco-lora` es un adaptador LoRA de tipo NAR (textura y timbre) para YuE2, el modelo de generacion de musica de m-a-p presentado en arXiv:2503.08638. Lo publica James E. Petts y su funcion es inyectar el caracter de produccion del Eurodisco de los anos 80 en las generaciones de YuE2: muro de sonido denso, bajo de sintetizador con chorus, bateria four-on-the-floor con toms gateados, pads apilados y stabs de metales y cuerdas.
 
-A diferencia de los LoRA que alteran la estructura de la canción, este adaptador actúa solo sobre la ranura NAR (timbre y producción), dejando libre la ranura AR, que puede usarse de forma independiente. El modelo base es el checkpoint `yue2_3b_bf16` y el adaptador se publica en dos formatos equivalentes: uno fusionado para ComfyUI y otro no fusionado para el motor audio.cpp YuE2.
+El adaptador no modifica la estructura de la cancion, solo la capa de timbre y produccion, de modo que el slot AR (autorregresivo, estructura) queda libre y puede combinarse con otros adaptadores. Se activa mediante la palabra clave `eurodisco`, que debe colocarse al inicio del prompt de estilo, y opera con una escala recomendada de 1.0 (rango util de 0.7 a 2.0).
 
-Su relevancia radica en lo económico del proceso: entrenado en una sola RTX 2080 Ti de 11 GB en 32 minutos con un dataset de 11 canciones auto-producidas, demuestra que es viable crear LoRA de estilo musical de alta especialización con hardware de consumo. Además, se publica bajo licencia CC0 (dominio público), lo que permite su uso sin restricciones.
+Es relevante porque demuestra un flujo de ajuste fino muy economico: el autor lo entreno en 32 minutos sobre una unica RTX 2080 Ti de 11 GB con 11 canciones propias, y publica tanto los pesos en dos formatos (fused para ComfyUI y unfused para el motor audio.cpp) como el JSON del flujo de entrenamiento para reproducibilidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA NAR (adaptador de textura/timbre) sobre YuE2, preset `nar_attn_mlp` |
-| Parametros totales | no disponible (rank 16, alpha 16; 392 tensores en el adaptador) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (definida por el modelo base YuE2) |
-| Tipos de cuantizacion | no disponible (el checkpoint base es `yue2_3b_bf16`) |
-| Idiomas soportados | no disponible (heredado del modelo base YuE2) |
-| Licencia | CC0 1.0 Universal (dominio público) |
-| Formato de pesos | safetensors (dos variantes: fusionada para ComfyUI y no fusionada para audio.cpp) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre YuE2, tipo NAR (textura/timbre); rank 16, alpha 16 |
+| Parametros totales | no disponible (adaptador LoRA; el modelo base YuE2 es de 3B) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos del adaptador en safetensors; el base se distribuye como `yue2_3b_bf16`) |
+| Idiomas soportados | no disponibles (el prompt de ejemplo valida letra en ingles) |
+| Licencia | CC BY-NC 4.0 (uso no comercial con atribucion); las salidas generadas se liberan como CC0 |
+| Formato de pesos | safetensors en dos variantes: `yue2_1980s_eurodisco_comfy-fused.safetensors` (ComfyUI, con `qkv_proj`/`gate_up_proj` y `.alpha`) y `yue2_1980s_eurodisco_unfused.safetensors` (motor audio.cpp, con `{q,k,v,o}_proj` y `{gate,up,down}_proj` en `lora_A`/`lora_B`) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de bajo rango (rank 16, alpha 16) aplicado sobre la atención y el MLP de la ranura NAR del modelo YuE2 (`target_preset=nar_attn_mlp`). YuE2 emplea un enfoque híbrido en el que una componente autorregresiva (AR) se encarga de la estructura de la canción y una componente no autorregresiva (NAR) de la textura y el timbre; este LoRA actúa exclusivamente sobre la segunda, lo que permite combinarlo con cualquier configuración de la ranura AR. Se distribuye en dos layouts: la versión fusionada (pesos `qkv_proj`/`gate_up_proj` con `.alpha`) para ComfyUI y la versión no fusionada (`{q,k,v,o}_proj` y `{gate,up,down}_proj` con matrices `lora_A`/`lora_B`) para el motor audio.cpp; la conversión entre ambos es exacta y se verificó con round-trip byte-exacto de los 392 tensores.
+El adaptador se aplica sobre el modelo base YuE2-3B (`m-a-p/YuE2-3B`, checkpoint `yue2_3b_bf16`), un modelo de generacion musical con arquitectura AR + NAR. El LoRA se dirige al preset `nar_attn_mlp`, es decir, a las capas de atencion y MLP del decodificador NAR, y modifica exclusivamente la textura y la produccion sonora, sin tocar la estructura de la cancion que controla el modulo autorregresivo.
 
-El entrenamiento se realizó el 27 de octubre de 2026 con ComfyUI-YuE2-Trainer sobre una única RTX 2080 Ti de 11 GB en 32 minutos (0,92 s/it), durante 2000 pasos con planificador cosine, warmup de 50 pasos, optimizador `adamw_8bit`, dropout de captions del 0,1 % y muestreo uniforme (`t_sampling=uniform`), con checkpoint base `yue2_3b_bf16` y semilla fija. El dataset consta de 11 canciones eurodisco de estilo ochentero auto-producidas por el autor (50,4 minutos en total, segmentadas en 378 clips de 8 segundos y 200 latent frames), con un único caption de género y el trigger `eurodisco` antepuesto automáticamente por el trainer. El workflow JSON de entrenamiento (`yue2-nar-lora-train.json`) está incluido para reproducibilidad, y el archivo publicado corresponde a la conversión EMA final de 2000 pasos, seleccionada por evaluación auditiva de una escalera de pasos.
+El entrenamiento se realizo el 27 de octubre de 2026 con ComfyUI-YuE2-Trainer en una RTX 2080 Ti de 11 GB durante 32 minutos (0.92 s/it). El dataset consta de 11 canciones de Eurodisco de los anos 80 producidas por el propio autor (50,4 minutos, convertidos en 378 clips de 8 segundos y 200 frames latentes), con `caption_mode=default` y una unica caption de genero. La configuracion usa `adamw_8bit`, schedule coseno, warmup 50, 2000 pasos, `caption_dropout` 0.1, `t_sampling=uniform`, `save_every=200` y semilla fija; el archivo publicado es la conversion final del paso 2000 con EMA. La escalera de pasos se evaluo a oido. El JSON del flujo de entrenamiento se incluye para reproducibilidad.
 
 ## Capacidades
 
-- Inyección de estilo eurodisco ochentero en generaciones de YuE2: producción densa, bajo de sintetizador con chorus, LinnDrum con palmas y toms con gate, pads apilados, stabs de metales y cuerdas, y brillo de estudio de los 80.
-- Modificación exclusiva de textura y timbre (ranura NAR), sin alterar la estructura de la canción; la ranura AR queda libre e independiente.
-- Activación por texto mediante el trigger `eurodisco`, que debe colocarse en primera posición del prompt de estilo; los pesos se cargan explícitamente pero se activan solo con la palabra clave.
-- Escala de intensidad ajustable: valor recomendado 1.0, con rango usable aproximado de 0.7 a 2.0.
-- Compatibilidad con dos ecosistemas de inferencia: ComfyUI (archivo fusionado) y el motor audio.cpp YuE2 (archivo no fusionado, vía `yue2.nar_lora` y `yue2.nar_lora_scale`).
-- Reproducibilidad completa del entrenamiento gracias al workflow JSON incluido.
+- Aplicacion de caracter de produccion Eurodisco de los anos 80 sobre generaciones de YuE2: muro de sonido denso, bajo con chorus, bateria four-on-the-floor, LinnDrum con palmadas y toms gateados, pads apilados, arpegiadores brillantes, stabs de cuerdas y metales.
+- Activacion por texto mediante la palabra clave `eurodisco`, que debe ir en primera posicion del prompt de estilo.
+- Control de intensidad mediante escala (valor por defecto 1.0, rango util de 0.7 a 2.0).
+- Compatibilidad con el slot AR libre: al ser un adaptador NAR, no ocupa el espacio de estructura y puede combinarse con otros adaptadores AR.
+- Carga explicita de pesos en el motor audio.cpp YuE2 (nada se carga por palabra clave, pero el adaptador se activa por texto).
+- Integracion en ComfyUI mediante la carga del archivo fused como LoRA de YuE2.
+- Generacion de audio musical (no texto, no vision, no codigo); no se documentan capacidades de tool calling ni de agentes.
 
 ## Casos de uso
 
-- Generación de música eurodisco ochentera: basta añadir el trigger `eurodisco` al inicio del prompt de estilo en YuE2 para obtener producciones con carácter auténtico de los años 1983-87, sin necesidad de describir manualmente todos los rasgos de producción.
-- Producción de bandas sonoras retro: adecuado para crear pistas de ambientación con estética de los 80 en cortometrajes, podcasts o videojuegos ambientados en esa década, aprovechando el glosso de estudio y los arreglos típicos del género.
-- Experimentación con intensidad de estilo: ajustando el parámetro `NarScale` entre 0.7 y 2.0 se puede dosificar cuánto carácter eurodisco se aplica, desde toques sutiles hasta imitaciones muy marcadas.
-- Combinación con otros estilos en la ranura AR: al no modificar la estructura de la canción, puede usarse junto a configuraciones AR independientes para generar canciones con estructura propia pero timbre eurodisco.
-- Punto de partida para nuevos LoRA musicales: el workflow de entrenamiento incluido y el coste de 32 minutos en una GPU de 11 GB sirven de referencia práctica para quien quiera entrenar sus propios adaptadores de estilo sobre YuE2.
-- Integración en flujos de trabajo locales con audio.cpp: la variante no fusionada se integra en scripts como `generate.ps1` o en configuraciones `server.json`, útil para automatizar generación por lotes en local.
-- Uso en ComfyUI con nodos YuE2: los usuarios de ComfyUI-YuE2-Trainer pueden cargar el archivo fusionado directamente como LoRA de YuE2.
+- Produccion de musica de genero: generar pistas de Eurodisco de los anos 80 con caracteristicas de produccion autenticas (bateria electronica de la epoca, pads apilados, stabs de metales) partiendo de un prompt de estilo validado que incluye tonalidad, BPM y progresion de acordes.
+- Prototipado rapido de maquetas: usar el adaptador con escala 1.0 sobre YuE2 para obtener bocetos de canciones con estetica ochentera en minutos, utiles para presentar ideas a clientes o colaboradores antes de una produccion final.
+- Investigacion en generacion musical condicionada por estilo: el adaptador sirve como caso de estudio reproducible de ajuste fino NAR con un dataset pequeno (11 canciones) y un JSON de entrenamiento incluido, adecuado para experimentos academicos sobre control de timbre.
+- Creacion de contenido para videojuegos o audiovisuales con ambientacion de los anos 80: bandas sonoras de estilo retro que requieran una produccion concreta, siempre que el uso sea no comercial por la licencia CC BY-NC 4.0.
+- Composicion asistida para artistas: el modelo genera una base instrumental y vocal con el caracter deseado que el musico puede editar y reutilizar; las salidas se liberan como CC0, lo que facilita su reutilizacion sin restricciones de atribucion.
+- Educacion y divulgacion sobre produccion musical: comparar generaciones con y sin el adaptador para ilustrar como un LoRA de textura modifica el timbre sin alterar la estructura, usando la escala para mostrar el efecto gradual del condicionamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La única métrica cuantitativa aportada es el rendimiento del entrenamiento: 2000 pasos en 32 minutos (0,92 s/it) sobre una RTX 2080 Ti de 11 GB. La calidad de las generaciones se evaluó por criterio auditivo del autor, sin métricas objetivas publicadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador en sí ocupa 0,2 GB, pero requiere el modelo base YuE2 (`yue2_3b_bf16`), cuyo peso dominará los requisitos de memoria.
-- Referencia práctica del propio autor: la fusión del LoRA en el decodificador tarda unos 55 segundos en una tarjeta de 11 GB (196 tensores fusionados); no es un cuelgue, es el coste de merge al inicio de la sesión.
-- El entrenamiento se completó en una RTX 2080 Ti de 11 GB, lo que indica que la inferencia con este adaptador es viable en GPUs de consumo de esa clase o superiores (RTX 2080 Ti, RTX 3090, RTX 4090).
-- No hay cifras oficiales de VRAM para inferencia del modelo base con el adaptador: no disponible.
-- Despliegue soportado: motor audio.cpp YuE2 (archivo no fusionado, vía `generate.ps1` o `server.json`) y ComfyUI con nodos YuE2 (archivo fusionado). No se menciona soporte para vLLM, TGI ni Ollama.
-- Latencia y throughput de inferencia: no disponible.
+- El adaptador en si ocupa 0,2 GB en el repositorio; el coste real de inferencia lo determina el modelo base YuE2-3B.
+- El autor reporta un coste de fusion al inicio de sesion de aproximadamente 55 segundos en una tarjeta de 11 GB (196 tensores fusionados en el decodificador); no es un cuelgue.
+- Entrenamiento reproducible en una unica RTX 2080 Ti de 11 GB (32 minutos, 0.92 s/it), lo que indica que el ajuste fino es viable en GPU de consumo.
+- VRAM estimada para inferencia del base: no disponible en la informacion proporcionada.
+- GPU recomendadas: no disponibles en la informacion proporcionada; el unico dato concreto es la RTX 2080 Ti de 11 GB usada para entrenar y fusionar.
+- Opciones de despliegue: ComfyUI (archivo fused) y motor audio.cpp YuE2 (archivo unfused, parametros `-NarLora` y `-NarScale`, o entradas `yue2.nar_lora` y `yue2.nar_lora_scale` en `server.json`).
+- Latencia y throughput de inferencia: no disponibles.
 
 ## Comparativa con modelos similares
 
-No existen alternativas publicadas directamente comparables (otros LoRA NAR para YuE2) en la informacion disponible. Como referencia de contexto dentro del mismo ecosistema:
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| yue2-1980s-eurodisco-lora | LoRA NAR sobre YuE2 | adaptador rank 16; base 3B | no disponible | CC BY-NC 4.0 | Hugging Face, 8521 descargas |
+| YuE2-3B (m-a-p) | Modelo base de generacion musical | 3B | no disponible | CC BY-NC 4.0 | Hugging Face |
+| Otros LoRA de estilo para YuE2 | Adaptadores NAR/AR | no disponible | no disponible | no disponible | no disponible |
 
-| Aspecto | yue2-1980s-eurodisco-lora | Modelo base Comfy-Org/YuE2 |
-|---|---|---|
-| Tipo | Adaptador LoRA NAR (textura/timbre) | Modelo de generación musical completo |
-| Parametros | rank 16, 392 tensores de adaptador | Checkpoint `yue2_3b_bf16` (3B aprox.) |
-| Licencia | CC0 1.0 | no disponible |
-| Funcion | Estilo eurodisco ochentero via trigger | Generación musical general |
-| Formato | safetensors (fusionado y no fusionado) | Checkpoint bf16 |
+No se dispone de datos de benchmarks ni de otros adaptadores comparables en la informacion proporcionada; la comparativa se limita al modelo base y a la categoria generica de LoRA de estilo.
 
 ## Limitaciones y advertencias
 
-- Fuga estocástica a EDM moderno: algunas generaciones con ajustes idénticos incorporan repetición digital moderna, ecos y caídas de fidelidad en las colas en lugar del doble tracking analógico ochentero; el fenómeno varía según la semilla. Mitigación documentada: usar los negativos `No EDM, no sidechaining` y positivos explícitos de técnicas de época (double-tracking/ADT, bajo estable), como en el prompt de ejemplo.
-- Coste de merge al inicio de sesión: unos 55 segundos en una tarjeta de 11 GB por la fusión de 196 tensores en el decodificador; puede confundirse con un cuelgue pero es un comportamiento normal.
-- Dependencia del trigger: sin la palabra `eurodisco` al inicio del prompt, los deltas se fusionan sin dirección y el estilo no se aplica correctamente.
-- Alcance limitado al timbre y la producción: no modifica la estructura de la canción, por lo que no sirve para controlar forma, progresiones o secciones.
-- Riesgo de duplicación de vocabulario: repetir en el prompt los términos del caption interno del LoRA puede degradar el resultado; el trigger ya cubre ese vocabulario.
-- Sin garantía: la licencia CC0 excluye expresamente cualquier garantía; el uso es bajo responsabilidad del usuario.
-- Datos de rendimiento, benchmarks y compatibilidad con otros motores de inferencia: no disponibles; conviene validar en el propio entorno antes de uso en producción.
+- Fuga estocastica hacia EDM moderno: algunas generaciones con ajustes identicos adoptan repeticion digital, eco y colas de perdida de fidelidad en lugar de doblaje analogico de los 80; varia segun la semilla. Mitigacion documentada: negativos `No EDM, no sidechaining` y positivos explicitos de tecnica de la epoca (double-tracking/ADT, bajo estable).
+- El adaptador solo controla textura y produccion; no cambia la estructura de la cancion, que depende del modulo AR del base.
+- Sin la palabra clave `eurodisco`, los deltas se fusionan sin direccionar, por lo que el efecto no se aplica de forma controlada.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; al ser un modelo de audio, el riesgo se traslada a la fidelidad estilistica y a la coherencia musical, no a hechos verificables.
+- Limitaciones de idioma: no se documentan; el prompt validado usa letra en ingles.
+- Licencia CC BY-NC 4.0: prohibido el uso comercial de los pesos del adaptador; al ser derivado del base YuE2-3B (tambien CC BY-NC 4.0), se heredan los mismos terminos no comerciales. Las salidas generadas se liberan como CC0, pero su uso comercial debe evaluarse contra la licencia del modelo base.
+- Sin garantia: el autor declara explicitamente que se usa bajo responsabilidad del usuario.
+- El motor audio.cpp no puede cargar el formato fused de ComfyUI; es necesario usar el archivo unfused (la conversion entre ambos es exacta, verificada en 392/392 tensores).
 
 ## Enlaces
 
-- Ficha del modelo en Hugging Face: https://huggingface.co/jamespetts/yue2-1980s-eurodisco-lora
-- Modelo base YuE2: https://huggingface.co/Comfy-Org/YuE2
-- Licencia CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+- Modelo en Hugging Face: https://huggingface.co/jamespetts/yue2-1980s-eurodisco-lora
+- Modelo base en Hugging Face: https://huggingface.co/Comfy-Org/YuE2
+- Pesos base de m-a-p: https://huggingface.co/m-a-p/YuE2-3B
+- Paper YuE2: https://arxiv.org/abs/2503.08638
+- Herramienta de entrenamiento: https://github.com/Starnodes2024/ComfyUI-YuE2-Trainer
+- Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/

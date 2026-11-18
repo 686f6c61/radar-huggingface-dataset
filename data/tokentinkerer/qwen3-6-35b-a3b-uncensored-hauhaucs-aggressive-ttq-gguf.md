@@ -2,122 +2,122 @@
 
 ## Resumen
 
-TTQ (TokenTinkerer Quant) es un conjunto de diez cuantizaciones GGUF derivadas del fine-tune HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, publicado por el usuario TokenTinkerer. No es un modelo nuevo: es una escalera de re-cuantizaciones de 3,33 a 6,72 bits por peso (bpw), construida explícitamente para maximizar la eficiencia por byte frente a los cuantizados del repositorio original. El modelo subyacente es un transformer de mezcla de expertos (MoE) con 34.660.610.688 parámetros totales y una nomenclatura A3B que sugiere unos 3.000 millones de parámetros activos por token, aunque ese dato no se confirma en la model card.
+Esta ficha describe el conjunto de cuantizaciones **TTQ** (TokenTinkerer Quant) del modelo **Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive**, publicado por el usuario TokenTinkerer en Hugging Face. No se trata de un modelo original, sino de una escalera de diez ficheros GGUF derivados de un fine-tune comunitario del modelo base Qwen3.6-35B-A3B. El modelo subyacente es un transformer de tipo Mixture of Experts (MoE) con aproximadamente 34.660 millones de parámetros totales, del que se activan una fracción por token (el nombre "A3B" sugiere unos 3.000 millones de parámetros activos, aunque este dato no se confirma en la información disponible). El fine-tune del que deriva está orientado a conversación sin censura y ajustado con un estilo "aggressive" por el autor HauhauCS.
 
-El problema que resuelve es práctico: el fine-tune base solo se publica en formato GGUF y su archivo de mayor calidad es un `Q8_K_P` de aproximadamente 10 bpw, que sirve a la vez como fuente de re-cuantización y como referencia de todas las métricas. A partir de él, el autor mide divergencia KL, perplejidad, RMS de la diferencia de probabilidad del token real y velocidad de decodificación para cada escalón, y demuestra que sus archivos baten al cuantizado de tamaño comparable del repositorio base por un factor de KLD de 1,26× a 3,51×.
+El problema que resuelve este repositorio es puramente práctico: proporcionar cuantizaciones GGUF optimizadas para llama.cpp con un equilibrio medido entre tamaño, calidad (medida como divergencia KL frente a la referencia Q8_K_P) y velocidad. Cada nivel de la escalera se ha evaluado con el mismo protocolo, la misma máquina y el mismo corpus, y el autor documenta métricas concretas de KLD, perplejidad, RMS y rendimiento en tokens por segundo. Es relevante ahora porque permite ejecutar un modelo MoE de ~35.000 millones de parámetros en hardware de consumo con ficheros de entre 13,46 y 27,10 GiB, manteniendo una calidad relativa verificada.
 
-Es relevante por dos motivos. Primero, ofrece diez puntos de operación medidos bajo el mismo protocolo, lo que permite elegir con datos en lugar de por convención. Segundo, el mayor de los archivos ocupa 27,10 GiB y el menor 13,46 GiB, lo que sitúa el modelo en el rango de estaciones de trabajo con GPU de consumo si se descargan los expertos a CPU. La licencia es Apache 2.0 y los idiomas declarados son inglés y chino.
+Una advertencia importante: no existe una versión en precisión completa (F16/BF16) de este fine-tune. Todas las métricas de calidad son relativas al fichero Q8_K_P (~10 bpw) del repositorio original, que actúa simultáneamente como fuente de recuantización y como referencia. Esta limitación afecta a la interpretación absoluta de las cifras de KLD, aunque las comparaciones entre los distintos ficheros del conjunto siguen siendo válidas por compartir la misma referencia.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | transformer de mezcla de expertos (MoE); etiquetado como `moe` en el repositorio |
-| Parámetros totales | 34.660.610.688 (34,66 mil millones) |
-| Parámetros activos | aproximadamente 3.000 millones, deducido de la nomenclatura A3B del nombre; no confirmado en la información disponible |
+| Arquitectura | Mixture of Experts (MoE) basada en transformer (Qwen3.6) |
+| Parámetros totales | 34.660.610.688 (~34,66 mil millones) |
+| Parámetros activos | no disponible (el nombre "A3B" sugiere ~3B activos, sin confirmación) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | diez escalones GGUF: IQ3_XXS (3,33 bpw, 13,46 GiB), IQ3_XS (3,51 bpw, 14,16 GiB), Q3_K_S (3,67 bpw, 14,84 GiB), Q3_K_M (3,93 bpw, 15,85 GiB), IQ4_XS (4,19 bpw, 16,90 GiB), IQ4_NL (4,51 bpw, 18,20 GiB), Q4_K_M (4,90 bpw, 19,76 GiB), Q5_K_S (5,59 bpw, 22,54 GiB), Q5_K_M (6,06 bpw, 24,45 GiB), Q6_K (6,72 bpw, 27,10 GiB) |
-| Idiomas soportados | inglés (en) y chino (zh), según los metadatos; no se detalla la cobertura real |
+| Tipos de cuantización | 10 niveles GGUF: IQ3_XXS, IQ3_XS, Q3_K_S, Q3_K_M, IQ4_XS, IQ4_NL, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); no existen pesos en safetensors ni versión F16/BF16 del fine-tune |
+| Formato de pesos | GGUF (llama.cpp), con cuantización mediante imatrix |
+
+Detalle adicional de los niveles disponibles:
+
+| Fichero | Tipo declarado | Tamaño (GiB) | bpw | KLD ± | PPL(Q) | RMS Δp | tg128 (tok/s) |
+|---|---|---|---|---|---|---|---|
+| TTQ-3.33bpw-IQ3_XXS | IQ3_XXS | 13,46 | 3,33 | 0,060539 ± 0,001366 | 6,060 | 7,339 % | 27,07 |
+| TTQ-3.51bpw-IQ3_XS | IQ3_XS | 14,16 | 3,51 | 0,051261 ± 0,001194 | 6,094 | 6,757 % | 26,30 |
+| TTQ-3.67bpw-Q3_K_S | Q3_K_S | 14,84 | 3,67 | 0,042459 ± 0,001034 | 5,960 | 5,924 % | 36,28 |
+| TTQ-3.93bpw-Q3_K_M | Q3_K_M | 15,85 | 3,93 | 0,034379 ± 0,000873 | 5,959 | 5,205 % | 37,41 |
+| TTQ-4.18bpw-IQ4_XS | IQ4_XS | 16,90 | 4,19 | 0,025999 ± 0,000740 | 5,944 | 4,520 % | 37,22 |
+| TTQ-4.51bpw-IQ4_NL | IQ4_NL | 18,20 | 4,51 | 0,018427 ± 0,000634 | 5,896 | 3,789 % | 53,86 |
+| TTQ-4.90bpw-Q4_K_M | Q4_K_M | 19,76 | 4,90 | 0,015152 ± 0,000886 | 5,902 | 3,415 % | 53,36 |
+| TTQ-5.59bpw-Q5_K_S | Q5_K_S | 22,54 | 5,59 | 0,011316 ± 0,000672 | 5,879 | 3,115 % | 48,65 |
+| TTQ-6.06bpw-Q5_K_M | Q5_K_M | 24,45 | 6,06 | 0,007621 ± 0,000252 | 5,868 | 2,501 % | 48,38 |
+| TTQ-6.72bpw-Q6_K | Q6_K | 27,10 | 6,72 | 0,005800 ± 0,000218 | 5,872 | 2,173 % | 45,46 |
 
 ## Arquitectura y entrenamiento
 
-La ficha de este repositorio no documenta el entrenamiento del modelo base, sino el proceso de cuantización. El fine-tune de partida es HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, un modelo MoE de la familia Qwen3.6 con 34,66 mil millones de parámetros totales, publicado únicamente en GGUF y sin liberación en precisión completa. Según el propio autor, el archivo de mayor calidad disponible es el `Q8_K_P` upstream de unos 10 bpw, que se usa como fuente para re-cuantizar cada escalón y simultáneamente como referencia contra la que se miden todas las cifras de KLD y RMS.
+El modelo base es un transformer con arquitectura Mixture of Experts (MoE) denominado Qwen3.6-35B-A3B, con 34.660 millones de parámetros totales. El sufijo "A3B" indica, por convención de nomenclatura de la familia Qwen, que aproximadamente 3.000 millones de parámetros se activan por token, si bien esta cifra no aparece de forma explícita en la información proporcionada. El fine-tune HauhauCS-Aggressive modifica el comportamiento del modelo base hacia un modo conversacional sin censura y con un estilo de respuesta más directo o agresivo; los detalles concretos del dataset de ajuste, el número de tokens empleados, la composición de los datos y si se aplicaron técnicas de RLHF o DPO no están disponibles.
 
-La innovación técnica del repositorio es el método de cuantización y su verificación. Cada escalón utiliza una matriz de importancia (imatrix) y una elección de tipo declarado deliberadamente conservadora: el token final del nombre (`general.file_type`) se escoge para subestimar la tasa real y para ser distinto en los diez archivos, evitando que el selector de descargas de Hugging Face colapse dos variantes en una sola entrada. El nombre del archivo declara el bpw verdadero medido a partir del tamaño en bytes, que es el dato fiable, mientras que el tipo declarado (por ejemplo IQ3_XXS) no describe con exactitud el contenido: el archivo de 3,33 bpw está muy por encima de los 3,06 bpw que ese tipo implica nominalmente.
-
-La model card advierte de una limitación metodológica importante: al no existir un original en precisión completa, todas las cifras de calidad son relativas al `Q8_K_P` y no al modelo sin cuantizar. Una fracción desconocida de la divergencia medida es heredada de ese archivo y no puede separarse sin una fuente F16/BF16. Las comparaciones entre archivos del conjunto sí son válidas porque comparten referencia. No se documentan en la información disponible los detalles de entrenamiento del fine-tune (número de tokens, composición del dataset, uso de RLHF/DPO), aunque el nombre «Uncensored» y la afirmación del repositorio de GitHub asociado («0/465 refusals») indican un ajuste orientado a eliminar rechazos.
+La innovación técnica de este repositorio no reside en el modelo, sino en el proceso de cuantización. El autor emplea cuantización con matrices de importancia (imatrix) para construir diez niveles GGUF, cada uno con un tipo de fichero declarado (`general.file_type`) deliberadamente distinto y monotónico. Esta elección evita que el selector de descargas de Hugging Face colapse ficheros con el mismo tipo declarado, garantizando que los diez niveles permanezcan descargables individualmente. Además, el etiquetado `<bpw>bpw` refleja la tasa real medida a partir del recuento de bytes del fichero final, no el tipo nominal, que en varios casos subestima deliberadamente la tasa real (por ejemplo, el fichero IQ3_XXS es en realidad 3,33 bpw frente a los 3,06 bpw que implica la etiqueta). Cada nivel se ha evaluado con KLD frente a los logits de Q8_K_P sobre 40 fragmentos fijos de un conjunto interno, con RMS Δp medido como diferencia en la probabilidad asignada al siguiente token real.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y chino, heredada del modelo base Qwen3.6-35B-A3B.
-- Razonamiento y generación de código: esperable por la familia base, aunque no se aportan evaluaciones específicas en la información disponible.
-- Capacidad multimodal: un artículo de terceros (BestHub) atribuye al modelo base capacidad multimodal, pero la model card de este repositorio no la menciona y no se confirma en los metadatos.
-- Modo sin restricciones editoriales: el fine-tune está orientado a reducir rechazos, con la afirmación de 0 rechazos sobre 465 pruebas en el repositorio de GitHub enlazado.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas a inglés y chino según los metadatos; no se documenta cobertura de otros idiomas.
-- Capacidad especial de cuantización: diez puntos de operación con métricas de divergencia publicadas, útil para estudiar el compromiso tamaño/calidad.
+- Generación de texto conversacional multi-turno, orientada a diálogo sin restricciones de contenido (uncensored).
+- Razonamiento general y respuesta a instrucciones, heredado del modelo base Qwen3.6-35B-A3B.
+- Capacidades multilingües limitadas a inglés (en) y chino (zh) según la model card.
+- Ejecución local mediante llama.cpp, con soporte de decodificación en CPU para expertos (`-ncmoe`) y offloading parcial.
+- No se documenta soporte de tool calling, function calling ni agentes multi-paso en la información disponible.
+- No se documenta modo de razonamiento extendido (thinking mode), visión ni audio.
+- Compatible con endpoints (etiqueta `endpoints_compatible`) para despliegue como servicio de generación de texto.
 
 ## Casos de uso
 
-- Inferencia local en estación de trabajo con GPU de consumo: los escalones de 3,33 a 4,90 bpw (13,46–19,76 GiB) permiten ejecutar el modelo descargando expertos a CPU con `-ncmoe`, reduciendo de forma notable la VRAM necesaria en comparación con una carga completa en GPU.
-- Generación de contenido creativo sin filtros editoriales: el ajuste «Uncensored» y las 465 pruebas sin rechazo declaradas lo hacen apto para redacción de narrativa, guiones o material editorial donde los modelos alineados se niegan a generar.
-- Red teaming y evaluación de seguridad: generar deliberadamente contenido que los modelos alineados rechazan para entrenar y validar clasificadores de contenido, o para medir la robustez de filtros propios.
-- Asistentes conversacionales en inglés y chino con coste de cómputo bajo: al activar aproximadamente 3.000 millones de parámetros por token (según la nomenclatura A3B), el coste de inferencia por token es bajo en relación con los 34,66 mil millones totales.
-- Investigación sobre cuantización: el conjunto de diez escalones con KLD, perplejidad y RMS medidos sobre el mismo corpus y con el mismo procedimiento permite estudiar empíricamente la curva calidad/bpw sin montar un banco de pruebas propio.
-- Punto de partida para ajuste fino o destilación: los escalones Q5_K_M (6,06 bpw) y Q6_K (6,72 bpw) son los candidatos lógicos para trabajar en local cuando la calidad importa más que el tamaño.
-- Despliegue en pipelines de generación por lotes sobre hardware híbrido CPU/GPU: el formato GGUF y la compatibilidad con llama.cpp permiten colocarlo en colas de procesamiento donde la VRAM es el recurso escaso.
-- Traducción inglés–chino y viceversa en entornos privados, sin envío de datos a servicios externos.
+- **Despliegue local en estaciones de trabajo con GPU de consumo**: el nivel Q4_K_M (19,76 GiB) permite ejecutar un MoE de ~35.000 millones de parámetros con la mayoría de expertos en CPU y atención en GPU, usando llama.cpp con `-ncmoe` para repartir capas. Adecuado para equipos con 24 GB de VRAM y 32 GB o más de RAM.
+- **Prototipado de chatbots sin censura**: el fine-tune está orientado a conversación sin filtros editoriales; útil para investigación sobre alineamiento, evaluación de sesgos o generación de contenido creativo sin restricciones de estilo. Los niveles Q5_K_M y Q6_K ofrecen la mayor fidelidad al comportamiento del fine-tune original.
+- **Evaluación comparativa de cuantizaciones**: la escalera de diez niveles con métricas KLD, PPL, RMS y throughput permite estudiar el compromiso calidad-tamaño-velocidad en un MoE real, con protocolo reproducible documentado por el autor.
+- **Servicio de generación de texto en entornos con VRAM limitada**: el nivel IQ3_XXS (13,46 GiB) es el mínimo práctico según el autor; por debajo de 3,33 bpw la calidad se degrada severamente. Apto para servidores con una GPU de 16 GB y RAM suficiente para los expertos en CPU.
+- **Procesamiento de texto en inglés y chino**: dado el soporte bilingüe declarado, puede emplearse para traducción asistida, resumen o generación de contenido en esos dos idiomas, aunque no se documenta calidad por idioma.
+- **Investigación sobre eficiencia de inferencia MoE**: los datos de tg128 con `-ncmoe 40` (todos los expertos en CPU) permiten comparar el rendimiento de distintos tipos de cuantización (codebook IQ frente a K-quants) en el mismo hardware; los niveles IQ son notablemente más lentos (26-37 tok/s) que los K-quants (36-54 tok/s).
+- **Integración en pipelines llama.cpp existentes**: al ser ficheros GGUF estándar con licencia Apache 2.0, pueden incorporarse en herramientas compatibles (llama.cpp, servidores OpenAI-compatible basados en llama.cpp) sin cambios de formato.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. Lo que sí se publica son métricas de cuantización medidas por el autor sobre 40 fragmentos fijos de un conjunto de evaluación interno, con la misma máquina y el mismo protocolo para todos los archivos. La columna `tg128` es la decodificación medida con `llama-bench` de llama.cpp en la configuración `-ncmoe 40` (todos los expertos en CPU), `-p 512 -n 128 -r 5`, en tokens por segundo.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor proporciona exclusivamente métricas internas de cuantización y velocidad, reproducidas aquí:
 
-| Archivo | Tipo declarado | GiB | bpw | KLD ± | PPL(Q) | RMS Δp | tg128 (tok/s) |
-|---|---|---|---|---|---|---|---|
-| TTQ-3.33bpw-IQ3_XXS | IQ3_XXS (23) | 13,46 | 3,33 | 0,060539 ± 0,001366 | 6,060 | 7,339 % | 27,07 |
-| TTQ-3.51bpw-IQ3_XS | IQ3_XS (22) | 14,16 | 3,51 | 0,051261 ± 0,001194 | 6,094 | 6,757 % | 26,30 |
-| TTQ-3.67bpw-Q3_K_S | Q3_K_S (11) | 14,84 | 3,67 | 0,042459 ± 0,001034 | 5,960 | 5,924 % | 36,28 |
-| TTQ-3.93bpw-Q3_K_M | Q3_K_M (12) | 15,85 | 3,93 | 0,034379 ± 0,000873 | 5,959 | 5,205 % | 37,41 |
-| TTQ-4.18bpw-IQ4_XS | IQ4_XS (30) | 16,90 | 4,19 | 0,025999 ± 0,000740 | 5,944 | 4,520 % | 37,22 |
-| TTQ-4.51bpw-IQ4_NL | IQ4_NL (25) | 18,20 | 4,51 | 0,018427 ± 0,000634 | 5,896 | 3,789 % | 53,86 |
-| TTQ-4.90bpw-Q4_K_M | Q4_K_M (15) | 19,76 | 4,90 | 0,015152 ± 0,000886 | 5,902 | 3,415 % | 53,36 |
-| TTQ-5.59bpw-Q5_K_S | Q5_K_S (16) | 22,54 | 5,59 | 0,011316 ± 0,000672 | 5,879 | 3,115 % | 48,65 |
-| TTQ-6.06bpw-Q5_K_M | Q5_K_M (17) | 24,45 | 6,06 | 0,007621 ± 0,000252 | 5,868 | 2,501 % | 48,38 |
-| TTQ-6.72bpw-Q6_K | Q6_K (18) | 27,10 | 6,72 | 0,005800 ± 0,000218 | 5,872 | 2,173 % | 45,46 |
+| Métrica | Mejor valor del conjunto | Peor valor del conjunto |
+|---|---|---|
+| KLD (menor es mejor) | 0,005800 ± 0,000218 (Q6_K) | 0,060539 ± 0,001366 (IQ3_XXS) |
+| PPL(Q) | 5,868 (Q5_K_M) | 6,094 (IQ3_XS) |
+| RMS Δp | 2,173 % (Q6_K) | 7,339 % (IQ3_XXS) |
+| tg128 (tok/s, expertos en CPU) | 53,86 (IQ4_NL) | 26,30 (IQ3_XS) |
 
-Comparación declarada por el autor frente al cuantizado de tamaño o calidad más cercano del repositorio base:
+Comparación del conjunto TTQ frente a los ficheros del repositorio base (según datos del autor):
 
-| Este conjunto | Archivo del repo base | KLD | Tamaño | Decodificación | Prefill | RMS Δp |
-|---|---|---|---|---|---|---|
-| 6,72 bpw Q6_K (27,10 GiB) | Q6_K_P (28,54 GiB) | 1,61× mejor (5,1σ) | −1,44 GiB | +11 % | +50 % | mejor |
-| 6,06 bpw Q5_K_M (24,45 GiB) | Q6_K_P | 1,23× mejor (2,5σ) | −4,09 GiB | +19 % | +80 % | mejor |
-| 5,59 bpw Q5_K_S (22,54 GiB) | Q5_K_P (26,10 GiB) | 1,28× mejor (3,9σ) | −3,56 GiB | +6 % | +28 % | mejor |
-| 4,90 bpw Q4_K_M (19,76 GiB) | Q5_K_P | empate (0,65σ) | −6,34 GiB | +16 % | +45 % | mejor |
+| Fichero TTQ | Fichero base comparable | KLD relativo | Diferencia de tamaño | Decode | Prefill |
+|---|---|---|---|---|---|
+| 6,72 bpw Q6_K (27,10 GiB) | Q6_K_P (28,54 GiB) | 1,61× mejor (5,1σ) | −1,44 GiB | +11 % | +50 % |
+| 6,06 bpw Q5_K_M (24,45 GiB) | Q6_K_P | 1,23× mejor (2,5σ) | −4,09 GiB | +19 % | +80 % |
+| 5,59 bpw Q5_K_S (22,54 GiB) | Q5_K_P (26,10 GiB) | 1,28× mejor (3,9σ) | −3,56 GiB | +6 % | +28 % |
+| 4,90 bpw Q4_K_M (19,76 GiB) | Q5_K_P | empate (0,65σ) | −6,34 GiB | +16 % | +45 % |
 
-Según el autor, cada escalón bate al cuantizado de tamaño más cercano del repositorio base en KLD por un factor de 1,26× a 3,51×, y su equivalente de calidad comparable en el repositorio base ocupa entre 1,44 y 7,90 GiB más.
+Condiciones de medición de tg128: llama.cpp `llama-bench` con `-ncmoe 40` (todos los expertos en CPU), `-p 512 -n 128 -r 5`. Estas cifras no son comparables con configuraciones que descarguen expertos a GPU.
 
 ## Requisitos de hardware
 
-- Para descarga completa en GPU, la VRAM necesaria ronda el tamaño del archivo más el contexto y el overhead del runtime: entre 13,46 GiB (3,33 bpw) y 27,10 GiB (6,72 bpw) de pesos, más el coste del KV cache según la longitud de contexto empleada (no documentada).
-- Con descarga parcial de expertos a CPU (`-ncmoe`, la configuración usada por el autor con 40 capas de expertos en CPU), los requisitos de VRAM bajan de forma sustancial; un artículo de terceros (BestHub) afirma que el modelo puede ejecutarse con 6 GB de VRAM en esta modalidad, cifra no verificada de forma independiente.
-- GPU recomendadas por tramo: en el extremo alto, una RTX 4090 o superior permite cargar los escalones de 3,33 a 4,90 bpw en su totalidad; los escalones de 5,59 a 6,72 bpw requieren tarjetas con 24 GB o más, o bien offload parcial. Para despliegue multiusuario, A100/H100 de 40–80 GB.
-- En GPU de consumo: los escalones bajos (3,33–4,51 bpw, 13,46–18,20 GiB) caben en tarjetas de 24 GB con margen para contexto; en tarjetas de 12 GB o menos es necesario el offload de expertos a CPU.
-- Opciones de despliegue: llama.cpp es la librería declarada y el formato es GGUF, por lo que también son viables Ollama y otras herramientas compatibles con GGUF. No se menciona compatibilidad con vLLM o TGI en la información disponible.
-- Rendimiento medido: decodificación de 26,30 a 53,86 tok/s en la configuración `-ncmoe 40`, `-p 512 -n 128 -r 5`. El escalón más rápido en decodificación es IQ4_NL (53,86 tok/s) y el más lento IQ3_XS (26,30 tok/s, tipo con libro de códigos). En prefill, el autor reporta mejoras de entre el 28 % y el 80 % frente al repositorio base en pares de calidad comparable.
+- **VRAM estimada**: depende del reparto entre GPU y CPU. Con `-ncmoe 40` (todos los expertos en CPU) la VRAM necesaria se reduce a las capas de atención y embeddings; con offloading completo a GPU, la VRAM debe cubrir el tamaño del fichero más overhead de contexto. El nivel IQ3_XXS (13,46 GiB) requiere aproximadamente 14-16 GB de VRAM para carga completa; el Q6_K (27,10 GiB) requiere al menos 28-30 GB.
+- **GPU recomendadas**: para carga completa, A100 40 GB, H100, RTX 6000 Ada (48 GB) o RTX 4090 (24 GB) para niveles hasta Q4_K_M. Para niveles superiores con offloading parcial, RTX 4090 o RTX 3090 con RAM suficiente.
+- **¿Cabe en GPU de consumo?** Sí, parcial o totalmente según el nivel. Los ficheros de 13,46 a 19,76 GiB (IQ3_XXS a Q4_K_M) caben en GPUs de 24 GB (RTX 4090, RTX 3090) con contexto moderado. Los niveles Q5 y Q6 requieren repartir expertos a CPU o usar GPUs de 32 GB o más.
+- **Opciones de despliegue**: llama.cpp (formato nativo), servidores compatibles con la API OpenAI construidos sobre llama.cpp. No se confirma compatibilidad con vLLM, TGI u Ollama en la información disponible, aunque al ser GGUF estándar es probable que Ollama los cargue.
+- **Latencia y throughput**: medidos con expertos en CPU (`-ncmoe 40`), entre 26,30 y 53,86 tok/s de decodificación (tg128) según el nivel. Los niveles IQ (codebook) son los más lentos (26-37 tok/s); los K-quants alcanzan 36-54 tok/s. No se proporcionan datos de prefill absolutos, solo incrementos relativos frente al repositorio base (+28 % a +80 %).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Calidad (KLD) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| TTQ 6,72 bpw Q6_K (este repo) | 34,66 mm totales / ~3 mm activos | no disponible | 0,005800 ± 0,000218 | Apache 2.0 | GGUF, 27,10 GiB |
-| HauhauCS `Q6_K_P` (repo base) | 34,66 mm totales / ~3 mm activos | no disponible | referencia (1,61× peor que TTQ Q6_K según el autor) | Apache 2.0 | GGUF, 28,54 GiB |
-| HauhauCS `Q5_K_P` (repo base) | 34,66 mm totales / ~3 mm activos | no disponible | referencia (TTQ Q4_K_M empata con 6,34 GiB menos) | Apache 2.0 | GGUF, 26,10 GiB |
-| TokenTinkerer MTP-GGUF (mismo autor) | 34,66 mm totales / ~3 mm activos | no disponible | no disponible | Apache 2.0 | GGUF, variante MTP |
+| TTQ Qwen3.6-35B-A3B-Uncensored (este) | ~34,66 B (MoE) | no disponible | GGUF, 10 niveles | Apache 2.0 | Cuantizaciones con imatrix, métricas KLD publicadas |
+| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (base) | ~34,66 B (MoE) | no disponible | GGUF (Q8_K_P y otros) | Apache 2.0 | Fine-tune sin censura; referencia de calidad del conjunto TTQ |
+| Qwen/Qwen3.6-35B-A3B (modelo original) | ~34,66 B (MoE) | no disponible | safetensors (presumiblemente) | no disponible | Modelo base no ajustado; no es sustituto del fine-tune según el autor |
 
-No se dispone de comparación con modelos de otros autores de tamaño o tarea equivalente en la información proporcionada. La comparación relevante es interna al ecosistema de cuantizaciones de este mismo fine-tune, ya que no existe una versión en precisión completa que sirva de referencia absoluta.
+No se dispone de datos de benchmarks comparativos con otras familias de modelos (Llama, Mistral, DeepSeek) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No existe versión en precisión completa (F16/BF16) del fine-tune. Todas las métricas de calidad se miden contra el `Q8_K_P` upstream y no contra el modelo original, por lo que una fracción desconocida de la divergencia es heredada y no separable.
-- El `Qwen/Qwen3.6-35B-A3B` base de precisión completa no es un sustituto válido para esa comparación, porque el fine-tune es un modelo distinto.
-- El modelo está ajustado para reducir rechazos («Uncensored», 0/465 refusals declaradas). Esto implica un riesgo elevado de generar contenido dañino, ilegal o sesgado sin las salvaguardas habituales. No es adecuado para aplicaciones orientadas al usuario final sin filtros propios.
-- Riesgo de alucinación: no cuantificado en la información disponible; es esperable el comportamiento típico de un modelo de 3.000 millones de parámetros activos.
-- Idiomas: solo inglés y chino declarados. El rendimiento en castellano no está documentado y no puede asumirse.
-- Longitud de contexto no especificada en la información disponible, lo que impide planificar cargas de contexto largo y calcular el coste real de KV cache.
-- Cifras de benchmark no estándar: las métricas publicadas son de cuantización (KLD, PPL, RMS Δp), no de capacidades (MMLU, HumanEval, GSM8K). No sirven para comparar este modelo con otras familias.
-- Los datos de velocidad proceden de una única configuración de hardware y de un único protocolo (`-ncmoe 40`), no son extrapolables a otras máquinas.
-- La licencia Apache 2.0 es permisiva para uso comercial, pero se aplica al artefacto publicado; el fine-tune hereda la licencia del modelo base, cuya ficha no se ha verificado en detalle aquí.
-- El repositorio tiene 0 descargas y 0 «likes» en el momento de la consulta, con fecha de creación y actualización del 4 de octubre de 2026. No hay validación comunitaria independiente de las cifras del autor.
-- La model card está truncada en la información disponible: las secciones de límites («Limits and things that did not work») y de condiciones de medición de velocidad («Speed column conditions») no están completas, por lo que podrían existir advertencias adicionales del autor no recogidas aquí.
+- **Ausencia de pesos en precisión completa**: no existe versión F16/BF16 del fine-tune; todas las métricas de calidad son relativas al fichero Q8_K_P del autor original, no al modelo verdadero. Una fracción desconocida de la divergencia medida es heredada de esa referencia y no puede separarse.
+- **Riesgo de alucinación**: como todo modelo generativo, puede producir información falsa con aparente confianza; el ajuste "uncensored" no elimina este riesgo y puede aumentar la probabilidad de afirmaciones no verificadas en temas sensibles.
+- **Contenido sin censura**: el fine-tune está deliberadamente liberado de filtros editoriales; puede generar contenido ofensivo, violento, sexual o legalmente restringido según jurisdicción. No apto para aplicaciones orientadas al público sin capas adicionales de moderación.
+- **Sesgos**: no se documentan evaluaciones de sesgo; los sesgos del corpus de entrenamiento del modelo base y del fine-tune no están caracterizados.
+- **Limitaciones de idioma**: solo inglés y chino declarados; el rendimiento en castellano no está garantizado ni medido.
+- **Contexto**: la longitud de contexto no se especifica en la información disponible; no se puede planificar su uso en tareas de contexto largo sin verificar el valor real en la configuración de llama.cpp.
+- **Calidad por debajo de 3,33 bpw**: el autor advierte que por debajo de ese umbral la calidad colapsa; el nivel IQ3_XXS es el mínimo práctico.
+- **Rendimiento de los niveles IQ**: los tipos IQ (codebook) son significativamente más lentos en decodificación (26-37 tok/s frente a 36-54 tok/s de los K-quants) en las condiciones medidas.
+- **Licencia Apache 2.0**: permite uso comercial, pero debe verificarse la licencia del fine-tune base (HauhauCS) y del modelo original Qwen, que pueden imponer condiciones adicionales no reflejadas aquí.
 
 ## Enlaces
 
-- Repositorio Hugging Face de este conjunto: https://huggingface.co/TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-TTQ-GGUF
-- Modelo base del fine-tune: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
-- Variante MTP GGUF del mismo autor: https://huggingface.co/TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Agressive-MTP-GGUF
-- Repositorio GitHub del modelo base: https://github.com/chenfei66/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive/tree/main
-- Artículo de terceros sobre ejecución con poca VRAM (BestHub): https://www.besthub.dev/articles/run-a-35b-open-source-llm-on-6-gb-vram-qwen3-6-35b-a3b-uncensored-jailbreak-edition-1dbcc3c6a4c8
-- Ficha del modelo base en Mixpeek: https://mixpeek.com/model/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Repositorio Hugging Face: https://huggingface.co/TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-TTQ-GGUF
+- Modelo base (fine-tune): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B (referencia nominal, no verificada en la búsqueda)
+- llama.cpp (herramienta de inferencia): no se proporciona enlace específico en la información disponible
+- Papers, blogs o demos adicionales: no disponible

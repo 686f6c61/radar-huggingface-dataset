@@ -2,95 +2,101 @@
 
 ## Resumen
 
-Vox MENS Qwen3-1.7B es un adaptador LoRA/PEFT entrenado por el usuario brbrainerd sobre el modelo base Qwen/Qwen3-1.7B. Forma parte de la familia MENS (Model Engine & Neural Synthesis), una serie de adaptadores escalonados (0.6B, 1.7B, 4B y 8B) especializados en el lenguaje de programación Vox, un lenguaje nativo para IA con compilador escrito en Rust que transpila a Rust y TypeScript. El adaptador resuelve un problema concreto: los modelos de propósito general apenas han visto gramática, tipos algebraicos, sistema de efectos y diagnósticos estructurados de Vox durante el preentrenamiento, por lo que alucinan sintaxis de Rust o TypeScript cuando se les pide generar código Vox.
+vox-mens-qwen3-1.7b es un adaptador QLoRA publicado por brbrainerd sobre el modelo base Qwen/Qwen3-1.7B, orientado a la generación de código en Vox, un lenguaje de programación de dominio específico para interfaces de usuario. Forma parte de la familia "Vox MENS", una estructura de tipo hub-and-spoke en la que un modelo base generalista se especializa mediante adaptadores en un lenguaje concreto (el "spoke" es vox-lang). El adaptador se distribuye con licencia Apache 2.0 y está pensado para ejecutarse en portátiles y GPUs de escritorio con presupuesto de memoria modesto.
 
-Este tier de 1.7B está pensado para generación rápida de código en un solo fichero y reparación de diagnósticos del compilador en una sola pasada, con ejecución local en portátiles y entornos de borde. El repositorio ocupa 0,1 GB y contiene únicamente los pesos del adaptador, no el modelo base completo, que debe descargarse por separado.
+El modelo resuelve un problema muy acotado: convertir instrucciones en lenguaje natural en programas Vox sintácticamente válidos, así como corregir errores de compilación en una sola pasada. Según la model card, el adaptador corrige 12 de los 52 ítems de un banco de pruebas retenido y rompe 1, con un pass@1 de 0,2692 en generación de código en modo no-thinking. El pico de memoria medido durante el entrenamiento fue de 19 968 MiB.
 
-La relevancia actual del modelo es acotada pero específica: demuestra un patrón de especialización por dominio mediante LoRA sobre la familia Qwen3, con un pipeline de evaluación automatizado (`eval-gate`) contra un conjunto de 192 ítems de validación de Vox y con versionado inmutable por etiquetas git para reproducibilidad en producción.
+La relevancia actual es doble: por un lado, demuestra un patrón de especialización por adaptadores sobre modelos pequeños (1,7B parámetros) para lenguajes de nicho; por otro, emplea la librería `vox` con backend Candle y un pipeline propio de descarga y servicio (`vox mens hub pull`, `vox mens serve`), lo que lo aleja del ecosistema estándar de Transformers y lo ata a su propia herramienta.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3) con adaptador LoRA/PEFT |
-| Parametros totales | 1.700 millones (modelo base Qwen3-1.7B); el adaptador añade un subconjunto no especificado |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la información proporcionada (heredada del modelo base Qwen3-1.7B) |
-| Tipos de cuantizacion | No disponible en la información proporcionada |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3-1.7B) con adaptador QLoRA |
+| Parámetros totales | 1,7B (modelo base); el adaptador añade un número no disponible de parámetros |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible (el adaptador se entrena con QLoRA; no se detallan formatos de despliegue) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Pesos PEFT/LoRA (compatible con `peft` y `transformers`); no se especifica GGUF ni safetensors completos |
+| Formato de pesos | no disponible (repo de 0,3 GB; el autor usa la librería `vox` y un manifiesto `hf_sync_manifest.json` con hashes BLAKE3) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se monta sobre Qwen3-1.7B, un transformer decoder-only de la familia Qwen3, mediante técnicas de ajuste eficiente de parámetros (LoRA/PEFT). No se especifica en la model card el rango del adaptador, los módulos objetivo, el número de tokens de entrenamiento ni la composición exacta del dataset. El entrenamiento está orientado a tres tareas: síntesis idiomática de módulos `.vox` que respeten la gramática estricta y las restricciones de tipos del lenguaje, reparación guiada por compilador consumiendo códigos de diagnóstico estructurados de `voxc` y generación de parches mínimos y deterministas sobre el AST y el código fuente, y traducción entre Vox y sus backends de compilación (Rust y TypeScript).
+El modelo es un adaptador QLoRA sobre Qwen/Qwen3-1.7B, fijado a la revisión `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`. No se especifica en la información disponible la arquitectura interna del base más allá de su naturaleza Qwen3, ni el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de RLHF o DPO. La model card sí indica que el adaptador pertenece al "spoke" vox-lang dentro de la estructura hub-and-spoke de Vox MENS, y que su estado es "gate-passed".
 
-El pipeline MENS entrena adaptadores escalonados sobre cuatro tamaños de Qwen3 (0.6B, 1.7B, 4B, 8B) para cubrir distintos compromisos de latencia y capacidad. Cada adaptador pasa por una puerta de evaluación automatizada (`eval-gate`) contra un conjunto de validación de 192 ítems de Vox que mide la tasa de compilación limpia (parseo, typechecking y codegen contra el baseline sin adaptar) y la retención de capacidades colaterales en prompts generales de código y razonamiento. El estado de la puerta puede ser `Verified` (supera los umbrales de compilación sin degradar la retención) o `Baseline` (publicación inicial de referencia). No se indica en la información disponible en qué estado se encuentra este tier de 1.7B.
+La innovación técnica destacable no está en la arquitectura sino en el pipeline: entrenamiento QLoRA con backend Candle, verificación de integridad de cada archivo mediante BLAKE3 al descargar, y un servidor local que expone una API compatible con `/v1/chat/completions` pero con un campo adicional `lane` (por ejemplo, `codegen`) para enrutar la petición a la "lane" especializada. El pico de memoria de entrenamiento medido para esta talla es de 19 968 MiB, según el `run_summary` citado en la model card.
 
 ## Capacidades
 
-- Generación de código Vox idiomático: síntesis de módulos `.vox` que respetan la gramática, los tipos algebraicos y el sistema de efectos del lenguaje.
-- Reparación guiada por compilador: consumo de diagnósticos estructurados de `voxc` y producción de parches mínimos sobre el AST y el código fuente.
-- Traducción entre Vox, Rust y TypeScript para interoperabilidad entre backends.
-- Generación de código en un solo fichero y corrección de diagnósticos en una sola pasada (perfil de uso declarado para este tier).
-- Razonamiento y generación de texto general heredados del modelo base Qwen3-1.7B.
-- Soporte de tool calling y function calling: no documentado en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado; el tier de 1.7B se describe explícitamente como de una sola pasada, y las capacidades multi-fichero y de razonamiento profundo se asignan al tier de 8B.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
-- Modo thinking, visión o audio: no documentado en la información proporcionada.
+- Generación de código en Vox: produce programas con sintaxis `component`, `fn`, `view`, `heading`, `button`, etc., a partir de descripciones en lenguaje natural.
+- Corrección de errores de compilación en una sola pasada (one-pass fixes) para diagnósticos del compilador de Vox.
+- Modo thinking y modo no-thinking: los benchmarks separan explícitamente `qwen3_non_thinking_codegen_v1` de las comprobaciones en modo thinking (`gsm8k_think`, `math500_think`, `vox_think`).
+- Razonamiento matemático básico en modo thinking, evaluado sobre recortes de GSM8K y MATH500.
+- Generación de texto general heredada del base Qwen3-1.7B.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Autocompletado de código Vox en el editor: el adaptador genera fragmentos `.vox` sintácticamente válidos y alineados con el sistema de tipos, lo que evita las alucinaciones de sintaxis Rust o TypeScript típicas de modelos generalistas. Su tamaño de 1.7B permite latencias bajas en portátiles.
-- Reparación automática de errores de compilación: integrado en el flujo de `voxc`, el modelo recibe el código de diagnóstico estructurado y devuelve un parche mínimo y determinista, lo que reduce el ciclo de corrección manual en un solo paso.
-- Generación de módulos completos de un solo fichero: adecuado para utilidades, parsers y funciones auxiliares donde el contexto necesario cabe en una sola pasada y no se requiere razonamiento multi-fichero.
-- Traducción de especificaciones entre Vox y sus backends: conversión de fragmentos de Rust o TypeScript a Vox idiomático (o a la inversa) para migraciones parciales y prototipado cruzado.
-- Ejecución local y en el borde: al ser un adaptador de 1.7B sobre un modelo base pequeño, puede desplegarse en estaciones de trabajo sin GPU de datacenter, lo que encaja en flujos de desarrollo offline o con requisitos de privacidad.
-- Evaluación y regresión de toolchains: el conjunto de validación de 192 ítems y el pipeline `eval-gate` permiten usar el adaptador como referencia reproducible en pruebas de regresión del compilador Vox y de los propios adaptadores.
-- Docencia y prototipado del lenguaje Vox: al ejecutarse localmente y con licencia Apache 2.0, sirve para entornos de aprendizaje y experimentación sin coste de API.
+- Generación de componentes de interfaz en Vox: el adaptador convierte una descripción como "define a page named IndexPage with a title 'Home' that displays a heading with the text 'Welcome'" en un `component IndexPage()` válido, lo que permite prototipar pantallas rápidamente desde especificaciones en lenguaje natural.
+- Autocorrección de diagnósticos del compilador: dado un error de compilación en un archivo Vox, el adaptador puede generar un parche en una sola pasada, reduciendo el ciclo de edición manual en el IDE.
+- Asistente de código integrado en el editor: al ejecutarse en portátiles con GPU modesta (pico de entrenamiento de ~19,5 GiB, pero inferencia mucho menor), puede desplegarse localmente vía `vox mens serve` en el puerto 11435 y consumirse desde un plugin del editor.
+- Generación de tests unitarios en Vox: a partir de la firma de una función, el modelo puede producir casos de prueba sintácticamente válidos que el compilador acepte, como el ejemplo `is_valid_triangle`.
+- Enseñanza del lenguaje Vox: el modelo sirve como tutor que traduce enunciados tipo HumanEval a código Vox idiomático, útil en documentación interactiva o tutoriales.
+- Pipeline de CI para reparación automática: integrado en un paso de CI, el adaptador puede intentar arreglar errores de compilación detectados en un PR antes de escalar al desarrollador, usando la lane `codegen` del servidor local.
+- Filtrado y validación de código generado: combinado con el compilador de Vox, el adaptador permite construir un bucle generate-compile-retry acotado a un lenguaje con gramática estricta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numéricos en la información disponible. La model card describe el pipeline `eval-gate` (tasa de compilación limpia de Vox frente al baseline sin adaptar y retención de capacidades colaterales sobre 192 ítems), pero no incluye cifras concretas para este tier.
+Resultados declarados por el autor del modelo (no verificados de forma independiente, `verified: false` en el model-index):
+
+| Tarea | Dataset | Métrica | Valor |
+|---|---|---|---|
+| Generación de código Vox | Vox held-out bench (52 ítems) | pass@1 (qwen3_non_thinking_codegen_v1) | 0,2692 |
+| Comprobación de regresión en razonamiento (thinking) | gsm8k_think (recorte de 128 ítems) | accuracy | 0,7578 |
+| Comprobación de regresión en razonamiento (thinking) | math500_think (recorte de 128 ítems) | accuracy | 0,4531 |
+| Comprobación de regresión en razonamiento (thinking) | vox_think (recorte de 128 ítems) | accuracy | 0,6328 |
+
+Además, la model card indica que, de los 52 ítems del banco retenido, el adaptador corrige 12 y rompe 1. No se han publicado resultados de MMLU, HumanEval estándar ni otros benchmarks generales en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada; como referencia orientativa del modelo base de 1.7B, en bfloat16 requiere del orden de 3,4 GB solo para pesos, más overhead de activaciones y caché KV.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, el modelo base de 1.7B es viable en GPUs de consumo con suficiente VRAM.
-- ¿Cabe en GPU de consumo? Sí, previsiblemente en tarjetas con 6-8 GB o más de VRAM en precisión reducida, aunque el autor no publica requisitos oficiales.
-- Opciones de despliegue: CLI de Vox (`vox mens hub pull --size 1.7B`), y vía Python con `transformers` + `peft` cargando el adaptador sobre `Qwen/Qwen3-1.7B`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada. El autor describe este tier como de "generación rápida de un solo fichero" sin cifras.
+- VRAM estimada para inferencia: no disponible de forma explícita; la model card indica que no se ha medido ninguna cifra de memoria de servicio para esta talla. Como referencia, el pico de entrenamiento medido es de 19 968 MiB.
+- GPU recomendadas: no disponibles en la información proporcionada. El autor orienta esta talla a "portátiles y GPUs de escritorio con presupuesto de memoria modesto".
+- Viabilidad en GPU de consumo: el autor la sitúa como la talla pequeña de la familia, pensada para portátiles y GPUs de escritorio; no se concretan modelos.
+- Opciones de despliegue: servidor propio `vox mens serve --model mens/runs/qwen3-1.7b --port 11435`, con API compatible con `/v1/chat/completions` y campo `lane`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vox-mens-qwen3-1.7b | 1.7B (base) + LoRA | No disponible | Vox (generación y reparación de compilador) | Apache 2.0 | Hugging Face (adaptador) |
-| vox-mens-qwen3-0.6b | 0.6B (base) + LoRA | No disponible | Vox, completado inline y reparación sintáctica rápida | Apache 2.0 | Hugging Face (adaptador) |
-| vox-mens-qwen3-4b | 4B (base) + LoRA | No disponible | Vox, tier equilibrado por defecto | Apache 2.0 | Hugging Face (adaptador) |
-| vox-mens-qwen3-8b | 8B (base) + LoRA | No disponible | Vox, síntesis arquitectónica y razonamiento multi-fichero | Apache 2.0 | Hugging Face (adaptador) |
+| vox-mens-qwen3-1.7b | 1,7B (base) + adaptador | no disponible | Código Vox (spoke vox-lang) | Apache 2.0 | Hugging Face, librería `vox` |
+| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible | Propósito general | Apache 2.0 | Hugging Face, ecosistema Transformers |
+| Otros adaptadores de la familia Vox MENS | no disponible | no disponible | Otras tallas del mismo spoke | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre tiers en la información proporcionada.
+No se dispone de datos de benchmarks comparables de terceros en la información proporcionada; la comparación con el base Qwen3-1.7B se limita a los ejemplos cualitativos de la model card (el base "does not parse" en `page_index` y `humaneval_vox_043_triangle_valid`, mientras el adaptador pasa).
 
 ## Limitaciones y advertencias
 
-- Especialización estrecha: el adaptador está entrenado para Vox y puede degradar el rendimiento en tareas generales de código fuera de ese dominio; el propio pipeline `eval-gate` incluye pruebas de retención colateral precisamente por este riesgo.
-- Idiomas: etiquetado únicamente en inglés; no se garantiza un comportamiento correcto en castellano u otros idiomas.
-- Riesgo de alucinación: aunque el objetivo es reducir la mezcla con sintaxis Rust o TypeScript, no se publican tasas de error ni métricas de fidelidad gramatical para este tier.
-- Estado de la puerta de evaluación desconocido: no se indica si este adaptador está en estado `Verified` o `Baseline`, lo que afecta a la confianza en su calidad frente al baseline sin adaptar.
-- Dependencia del modelo base: requiere descargar Qwen/Qwen3-1.7B por separado; el repositorio solo contiene el adaptador (0,1 GB).
-- Versionado: el autor recomienda fijar una revisión inmutable (`--revision v<N>`) en lugar de seguir `main`, ya que las etiquetas pueden cambiar de contenido entre versiones.
-- Licencia Apache 2.0: permite uso comercial, pero debe respetarse también la licencia del modelo base Qwen3-1.7B.
-- Sin datos de cuantización ni de despliegue en motores de inferencia de alto rendimiento (vLLM, TGI), lo que limita las garantías para producción a gran escala.
-- Contexto y límites de tokens no documentados: no se especifica la ventana efectiva ni el comportamiento en prompts largos.
+- El pass@1 en generación de código Vox es de 0,2692 sobre 52 ítems, lo que implica que aproximadamente 3 de cada 4 intentos no superan el banco retenido.
+- El adaptador rompe 1 de los 52 ítems que el base resolvía correctamente, según la propia model card.
+- El caso `humaneval_vox_042_reverse_list` sigue fallando con errores de tipo (count 5), lo que evidencia que la corrección semántica de listas y tipos sigue siendo frágil.
+- Los benchmarks están declarados por el autor y marcados como `verified: false`; no hay validación independiente.
+- Idioma limitado al inglés; no se declara soporte de castellano ni de otros idiomas.
+- Longitud de contexto no documentada, lo que impide planificar tareas de contexto largo.
+- Dependencia de la librería `vox` y del pipeline propio (`vox mens hub pull`, `vox mens serve`); no se documenta compatibilidad con el ecosistema estándar de Transformers, vLLM o llama.cpp.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3-1.7B debe respetarse también bajo sus propios términos.
+- Riesgo de alucinación en APIs y construcciones del lenguaje Vox no vistas durante el entrenamiento; conviene validar siempre con el compilador antes de aceptar código generado.
+- Sesgos: no disponibles en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-1.7b
-- Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
-- Índice del registro MENS: https://huggingface.co/brbrainerd/vox-mens-index
-- Adaptador tier 0.6B: https://huggingface.co/brbrainerd/vox-mens-qwen3-0.6b
-- Adaptador tier 4B: https://huggingface.co/brbrainerd/vox-mens-qwen3-4b
-- Adaptador tier 8B: https://huggingface.co/brbrainerd/vox-mens-qwen3-8b
-- Web del lenguaje Vox: https://vox-lang.org
-- Repositorio GitHub de Vox: https://github.com/vox-foundation/vox
+- Modelo en Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3-1.7b
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
+- Documentación de Vox MENS (estado, hub-and-spoke, ejemplos): https://voxlang.org/reference/mens-models/
+- Sitio de Vox: https://voxlang.org/
+- Repositorio de la librería `vox` / Candle: no disponible en la información proporcionada.

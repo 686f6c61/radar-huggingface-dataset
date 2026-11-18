@@ -2,123 +2,115 @@
 
 ## Resumen
 
-basal-omni-1.0-ultra es un modelo experimental de 31.273.086.512 parámetros (31,27 B) desarrollado por Remek sobre la base de google/gemma-4-31B-it. No es un modelo generativo al uso: en lugar de redactar una respuesta, recibe un *estado* (un mensaje, un documento, pasajes recuperados, una traza de agente o una página web en JSON) y devuelve, en un único forward pass, una distribución de probabilidad calibrada sobre un conjunto cerrado de respuestas permitidas. Los tipos de pregunta soportados incluyen `choice`, `noul` (sí/no), `score` y, dentro del motor basal, `multi`, `act` y `tool`; este último selecciona una herramienta a partir de definiciones de OpenAI o MCP, no sus argumentos.
+basal-omni-1.0-ultra es un modelo experimental de decisión tipada desarrollado por Remek, construido mediante fine-tuning sobre google/gemma-4-31B-it. No es un modelo generativo al uso: en lugar de redactar respuestas, lee un estado (un mensaje, un documento, pasajes recuperados, la traza de un agente o una página web serializada en JSON) y responde a una pregunta cerrada con un conjunto acotado de opciones, devolviendo una probabilidad calibrada para cada una de ellas en un único forward pass, sin generar texto. Es la variante de mayor tamaño de la familia basal-omni y sustituye la base Bielik (11B) de basal-1.5 por Gemma 4 (31B).
 
-El modelo es la variante mayor de la línea basal-omni y sustituye la base Bielik (11B) de basal-1.5 por Gemma 4 (31B). Frente a basal-1.5-max amplía el límite de opciones por pregunta de 10 a 255, usa un único orden de opciones por defecto y añade soporte de imágenes en la misma petición de forma zero-shot, aprovechando el encoder visual de Gemma 4 sin entrenamiento específico sobre medios. No admite audio, porque la base de 31B no incluye encoder de audio.
+El modelo está entrenado únicamente sobre decisiones textuales (unas 640.000 decisiones tipadas en polaco e inglés, con soft targets de basal-1.5), pero responde también a las mismas preguntas sobre imágenes de forma zero-shot aprovechando el encoder visual de Gemma 4, sin entrenamiento específico en medios. La base de 31B carece de encoder de audio, por lo que este nivel no procesa audio. Su relevancia actual reside en que ofrece un mecanismo de decisión calibrada con umbrales por tipo de pregunta, pensado para enrutado automático con abstención controlada (derivar a un humano cuando la confianza no alcanza el umbral).
 
-Se entrenó sobre aproximadamente 640.000 decisiones tipadas en polaco e inglés, con objetivos suaves (soft targets) generados por basal-1.5. Su relevancia práctica está en que permite construir clasificadores, enrutadores y políticas de decisión con garantías de calibración y con respuestas que nunca caen fuera del conjunto de opciones, algo que un LLM generativo no asegura por diseño.
+Con 31.273.086.512 parámetros y un repositorio de 62,6 GB en safetensors, el modelo se distribuye bajo licencia Apache 2.0 y admite hasta 255 opciones por pregunta (frente a las 10 de basal-1.5). Está pensado para integrarse en pipelines de clasificación, moderación, enrutado y evaluación automática donde se requiere una respuesta acotada y una medida de incertidumbre fiable, no texto libre.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la base Gemma 4, con encoder de imagen de Gemma 4 para entradas visuales; la salida es una decisión tipada sobre opciones permitidas, no texto libre |
-| Parametros totales | 31.273.086.512 (31,27 B) |
-| Longitud de contexto | No disponible como cifra oficial en la información proporcionada; el servidor en modo `eager` sobre una GPU de 80 GB admite estados de hasta aproximadamente 10.000 tokens |
-| Tipos de cuantizacion | bf16 en modo `eager` (unos 62 GB de pesos); checkpoint FP8 independiente (basal-omni-1.0-ultra-FP8) para el modo `vllm` en texto; no se documentan GGUF ni otras cuantizaciones |
-| Idiomas soportados | Polaco (pl) e inglés (en) |
+| Arquitectura | Transformer multimodal (base Gemma 4, encoder de imagen incluido; sin encoder de audio) |
+| Parametros totales | 31.273.086.512 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (los benchmarks cubren estados de hasta 30k+ caracteres y prompts de varios miles de tokens) |
+| Tipos de cuantizacion | no disponible (los benchmarks se sirven en bf16) |
+| Idiomas soportados | pl, en |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de la base Gemma 4 de 31B, un transformer decoder-only, y le superpone una cabeza de decisión que puntúa cada opción permitida en un solo paso hacia delante. No se genera texto intermedio ni cadena de razonamiento: el modelo calcula una probabilidad por opción, de modo que la respuesta está siempre contenida en el conjunto de opciones definido por el cliente y viene acompañada de una medida explícita de confianza. Las entradas visuales se procesan con el encoder de imagen propio de Gemma 4, sin entrenamiento sobre medios en esta versión (comportamiento zero-shot); la base de 31B no incorpora encoder de audio, por lo que este nivel no acepta audio. La información disponible no detalla si la base emplea atención lineal, decodificación especulativa ni otras innovaciones de eficiencia.
+El modelo parte de google/gemma-4-31B-it, un transformer multimodal con encoder de imagen propio, y se ajusta para una tarea de decisión tipada en lugar de generación libre. La innovación central es el mecanismo de respuesta: dada una pregunta con un conjunto cerrado de opciones (tipos `choice`, `noul` para sí/no, `score`, y en el motor basal `multi`, `act` y `tool`), el modelo produce en un solo forward pass una distribución de probabilidad calibrada sobre las opciones permitidas, sin decodificación autoregresiva. Esto garantiza que la respuesta nunca caiga fuera del conjunto de opciones y que la probabilidad asociada refleje la confianza del modelo. Las preguntas de tipo `tool` sobre definiciones de herramientas OpenAI o MCP seleccionan la herramienta, no sus argumentos.
 
-El entrenamiento se realizó sobre aproximadamente 640.000 decisiones tipadas en polaco e inglés, con objetivos suaves destilados de basal-1.5. El motor basal añade funcionalidad que no vive en los pesos: soporte de hasta 255 opciones por pregunta, tipos `multi` (selección múltiple), `act` y `tool` (elección de herramienta sobre definiciones OpenAI o MCP), gestión de medios (`--media on`), umbrales de calibración por tipo de pregunta y un modo `--deterministic` que sirve una petición por forward. La API expuesta (`/v1/systemone`) es la misma que la de basal-1.5, lo que facilita migrar entre niveles.
+El entrenamiento se realizó sobre aproximadamente 640.000 decisiones tipadas en polaco e inglés, con soft targets destilados de basal-1.5. No se menciona en la información disponible el uso de RLHF o DPO. Respecto a basal-1.5-max, el modelo amplía el número máximo de opciones por pregunta de 10 a 255, usa un único orden de opciones por defecto (basal-1.5 promediaba dos) e incorpora imágenes en la misma petición mediante el campo `"media"`, servidas con `--media on`, de forma zero-shot sin entrenamiento específico en medios. El soporte de audio no está presente porque la base de 31B no incluye encoder de audio.
 
 ## Capacidades
 
-- Decisión tipada con probabilidad calibrada: responde preguntas de tipo `choice`, `noul` (sí/no) y `score` devolviendo una probabilidad por opción en un único forward pass.
-- Hasta 255 opciones por pregunta, frente a las 10 de basal-1.5.
-- Selección de herramientas (`tool`) sobre definiciones de herramientas de OpenAI o MCP; elige la herramienta, no genera sus argumentos.
-- Acciones y decisiones múltiples (`multi`, `act`) en el motor basal.
-- Entrada de imágenes en la misma petición, en modo zero-shot, a través del encoder visual de Gemma 4.
-- Procesamiento de estados heterogéneos: mensajes, documentos, pasajes recuperados, trazas de agente y páginas web en JSON.
-- Bilingüe polaco-inglés, con corpus de evaluación separados en ambos idiomas.
-- Umbrales de calibración por tipo de pregunta, con derivación a revisión humana cuando no existe umbral certificado.
-- No soporta audio ni generación de texto libre como respuesta.
+- Decisión tipada calibrada: responde preguntas de opción múltiple (`choice`), sí/no (`noul`), puntuación (`score`), multietiqueta (`multi`), acción (`act`) y selección de herramienta (`tool`) devolviendo probabilidades por opción.
+- Hasta 255 opciones por pregunta.
+- Procesamiento de imágenes zero-shot mediante el encoder visual de Gemma 4, dentro de la misma petición.
+- Selección de herramientas a partir de definiciones OpenAI o MCP (elige la herramienta, no genera sus argumentos).
+- Comprensión de estados largos: mensajes, documentos, pasajes recuperados, trazas de agentes y páginas web serializadas en JSON.
+- Capacidades multilingües limitadas a polaco e inglés.
+- Modo determinista (`--deterministic`) para una petición por forward pass.
+- Umbrales de calibración por tipo de pregunta con abstención (derivación a humano) cuando no se alcanza la confianza requerida.
+- No soporta audio.
 
 ## Casos de uso
 
-- **Triaje de tickets de soporte:** se envía el texto del ticket como estado y una pregunta `choice` con los departamentos como opciones; el modelo devuelve la probabilidad de cada uno y la respuesta nunca sale del catálogo de departamentos definido, lo que evita enrutamientos inválidos.
-- **Enrutamiento de herramientas en agentes:** con las definiciones MCP u OpenAI como opciones, una pregunta `tool` selecciona qué herramienta invocar antes de que el planificador genere los argumentos; el coste es un solo forward por paso, sin generación.
-- **Clasificación de documentos escaneados o capturas:** al aceptar imágenes zero-shot, permite clasificar un PDF renderizado o una captura de pantalla en categorías predefinidas sin pipeline OCR separado, aunque con la cautela de no haber recibido entrenamiento sobre medios.
-- **Validación de contratos y condiciones:** preguntas de tipo `noul` sobre cláusulas concretas (por ejemplo, si existe cláusula de renovación automática) con umbral de confianza para derivar los casos dudosos a revisión legal; la categoría de contratos obtiene 0.822 en Werdykt v1, por lo que conviene reservar revisión humana en los casos límite.
-- **Evaluación automática de respuestas (LLM-as-judge acotado):** formulando el juicio como una pregunta `score` o `choice` sobre criterios fijos, se obtiene una puntuación calibrada y comparable entre lotes; en JudgeBench el modelo alcanza 0.700 frente a 0.600 de basal-omni-1.0-max.
-- **Cumplimiento y políticas con cobertura medida:** usando los umbrales por tipo, se automatiza solo la fracción de casos con error controlado (56,8 % al 1 % de error con los umbrales publicados) y el resto se encamina a revisión humana, lo que hace auditable la tasa de automatización.
-- **Detección de urgencia en atención al cliente:** una pregunta `noul` sobre si el cliente ha perdido acceso al servicio, combinada con la pregunta de departamento en la misma petición, permite priorizar la cola sin una segunda llamada al modelo.
-- **Moderación y clasificación de contenido en dos idiomas:** el soporte pl/en con paneles de evaluación en ambos idiomas permite desplegar la misma política en mercados polaco e inglés manteniendo una única definición de categorías.
+- Enrutado automático de tickets de soporte: el modelo clasifica cada mensaje entrante entre un conjunto amplio de categorías (hasta 255 opciones) y devuelve la probabilidad de cada una; con el umbral calibrado se decide automáticamente o se deriva a un agente humano.
+- Moderación de contenido con abstención controlada: preguntas de tipo `noul` o `score` sobre textos permiten aplicar políticas con una tasa de error objetivo (por ejemplo, 1 %), derivando los casos dudosos a revisión manual.
+- Selección de herramientas en agentes: dada una traza y un catálogo de herramientas OpenAI o MCP, el modelo elige la herramienta adecuada con probabilidad asociada, integrándose en el bucle de decisión de un agente.
+- Evaluación automática de respuestas y documentos: preguntas de tipo `score` sobre pares pregunta-respuesta o sobre documentos largos (hasta decenas de miles de caracteres) para puntuar calidad o relevancia con calibración explícita.
+- Análisis de documentos legales y contractuales: clasificación de cláusulas y condiciones sobre textos largos (la familia de documentos largos mantiene 88,1 % en 8k-20k caracteres y 87,1 % en 20k-30k), con derivación a humano en los casos de baja confianza.
+- Procesamiento de documentos escaneados o capturas: al aceptar imágenes zero-shot, permite responder preguntas cerradas sobre el contenido visual sin pipeline OCR separado.
+- Verificación de reglas y umbrales en flujos administrativos: aunque el propio autor advierte que los umbrales y fechas exactos deben calcularse en código (categoría `rules` con 0,550 de precisión), el modelo sirve para clasificar el tipo de trámite o la conformidad general antes de la comprobación determinista.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, servidos con el motor basal: basal-omni-1.0-ultra en una H200 y basal-omni-1.0-max en una H100, ambos con `--mode eager`, bf16 y un orden de opciones; basal-1.5-max tal como se publicó (`--mode fast`, dos órdenes de opciones). Mismos ítems y mismos clientes para los tres modelos, medidos con basal 2.0.
+Resultados servidos con el motor basal: basal-omni-1.0-ultra en una H200 y basal-omni-1.0-max en una H100, ambos con `--mode eager`, bf16 y un orden de opciones; basal-1.5-max tal como se publicó (`--mode fast`, dos órdenes de opciones).
 
 | Benchmark | basal-omni-1.0-ultra (31B) | basal-omni-1.0-max (12B) | basal-1.5-max (11B) |
 |---|---|---|---|
-| Werdykt v1, macro (PL + EN oculto, 10 categorías × 2 idiomas) | **0.879** | 0.823 | 0.773 |
-| Decisiones PL (test held-out de basal-1.0, 7.081 ítems) | **0.979** | 0.954 | 0.940 |
-| PL general (conocimiento, exámenes, lectura; 3.079 ítems) | **0.823** | 0.810 | 0.797 |
+| Werdykt v1, macro (PL + EN oculto, 10 categorías × 2 idiomas) | 0.879 | 0.823 | 0.773 |
+| PL decisions (test held-out de basal-1.0, 7.081 ítems) | 0.979 | 0.954 | 0.940 |
+| PL general (conocimiento, exámenes, lectura; 3.079 ítems) | 0.823 | 0.810 | 0.797 |
 | PL-Real (300 documentos polacos reales) | 0.973 | 0.980 | 0.970 |
-| Panel externo EN (10 tareas públicas de decisión, 3.842 ítems) | **0.855** | 0.789 | 0.737 |
-| Cobertura al 1 % de error (con el umbral publicado) | 56,8 % | 47,4 % | 62,2 % |
+| EN external panel (10 tareas públicas en inglés, 3.842 ítems) | 0.855 | 0.789 | 0.737 |
+| Coverage al 1 % de error (con umbral publicado) | 56,8 % | 47,4 % | 62,2 % |
 
-Detalle adicional aportado por el autor:
+Detalle del panel externo en inglés frente a basal-omni-1.0-max: WinoGrande 0.863 vs 0.710, BIG-Bench Hard 0.883 vs 0.809, JudgeBench 0.700 vs 0.600; por detrás en FinancialPhraseBank (0.947 vs 0.967). En Werdykt v1 el intervalo del 95 % es 0.871-0.887 (polaco 0.881, inglés 0.877); las categorías más débiles son rules (0.550), contratos (0.822) y documentos largos (0.854).
 
-| Métrica | Valor |
-|---|---|
-| Werdykt v1, intervalo de confianza al 95 % | 0.871–0.887 (polaco 0.881, inglés 0.877) |
-| Diferencia frente a basal-omni-1.0-max en Werdykt v1 | +5,6 puntos |
-| Diferencia frente a basal-1.5-max en Werdykt v1 | +10,6 puntos |
-| Decisiones PL frente a basal-omni-1.0-max | +2,5 puntos (IC 95 %: +2,0 a +3,1) |
-| Panel externo EN frente a basal-omni-1.0-max | +6,9 puntos; mejor en 9 de 10 tareas |
-| WinoGrande | 0.863 (frente a 0.710 de max) |
-| BIG-Bench Hard | 0.883 (frente a 0.809 de max) |
-| JudgeBench | 0.700 (frente a 0.600 de max) |
-| FinancialPhraseBank | 0.947 (frente a 0.967 de max; única tarea en desventaja) |
-| Test de corpus EN de 1.479 ítems | 0.751 (frente a 0.724 de max y 0.659 de basal-1.5-max) |
-| Categorías más débiles en Werdykt v1 | rules 0.550, contracts 0.822, documentos largos 0.854 |
-| Cobertura con umbral único agrupado (regla de basal-1.5-max) | 77,5 % a 0,75 % de error |
-| Reproducibilidad basal 2.1 frente a 2.0 | misma respuesta top en 23.278 de 23.278 filas de comprobación |
+Precisión por longitud del estado en Werdykt (5.000 ítems, PL + EN):
+
+| Longitud del estado | Ítems | Precisión |
+|---|---|---|
+| 0-1k | 709 | 77,9 % [75, 81] |
+| 1k-2k | 2.598 | 86,5 % [85, 88] |
+| 2k-4k | 796 | 97,6 % [96, 98] |
+| 4k-8k | 394 | 98,7 % [97, 99] |
+| 8k-16k | 128 | 91,4 % [85, 95] |
+| 16k+ | 375 | 83,5 % [79, 87] |
+
+Familia de documentos largos (misma tarea, solo varía la longitud): 8k-20k caracteres 88,1 % (226 ítems); 20k-30k 87,1 % (194); 30k+ 73,8 % (80). Ejecución del 2026-10-15 con basal-serve `--mode eager` en una NVIDIA H200 en bf16.
 
 ## Requisitos de hardware
 
-- **VRAM en bf16 (modo `eager`):** aproximadamente 62 GB solo para los pesos, según la model card.
-- **GPU recomendadas:** una H200 (usada en las mediciones del autor) o una H100/A100 de 80 GB. En una GPU de 80 GB el servidor admite estados de hasta unos 10.000 tokens.
-- **Cabe en GPU de consumo:** no. Con 62 GB en bf16 y unos 31 GB en el checkpoint FP8, no entra en una RTX 4090 (24 GB) ni en GPUs de 48 GB en bf16.
-- **Opciones de despliegue:** motor propio `basal-serve` (instalación vía `uv pip install "basal[media] @ .../v2.2.0.tar.gz"`, torch 2.11.0 con CUDA 12.8). Modo `eager` en PyTorch bf16 con soporte de medios; modo `vllm` únicamente con el checkpoint FP8 y solo texto. El modo `fast` (prefijo compartido y CUDA graphs) llegará en una versión posterior de la línea. No se documentan llama.cpp, Ollama ni TGI.
-- **Latencia y throughput:** no se publican cifras de latencia ni de tokens por segundo. El modelo resuelve cada petición en un único forward pass y no genera tokens de respuesta; en modo `--deterministic` se sirve una petición por forward. Las mediciones del autor usan una H200 para este modelo y una H100 para basal-omni-1.0-max.
+- Inferencia en bf16: los benchmarks se ejecutaron en una NVIDIA H200; el repositorio ocupa 62,6 GB en safetensors, por lo que se requiere una GPU con al menos 64 GB de VRAM para pesos en bf16 sin cuantizar.
+- GPU recomendadas: H200 (referencia de las mediciones), H100, A100 80 GB. En GPUs de 40-48 GB (A6000, L40S) sería necesario cuantizar o usar paralelismo.
+- GPU de consumo: no cabe en tarjetas consumer (RTX 4090 con 24 GB) en bf16; la información disponible no documenta cuantizaciones que permitan reducir el requisito.
+- Despliegue: motor basal (basal-serve) con modos `--mode eager` y `--deterministic`; el modelo usa la librería transformers. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponibles de forma explícita; las mediciones se hicieron con una petición por forward pass en modo determinista. La información indica que basal 2.1 da la misma respuesta top en 23.278 de 23.278 filas de comprobación servidas respecto a basal 2.0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Base | Contexto | Werdykt v1 (macro) | Panel EN | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| basal-omni-1.0-ultra | 31,27 B | Gemma 4 31B-it | No disponible (estados de ~10.000 tokens en 80 GB) | 0.879 | 0.855 | apache-2.0 | Pesos safetensors en Hugging Face + checkpoint FP8 |
-| basal-omni-1.0-max | 12 B (según la model card) | No detallada | No disponible | 0.823 | 0.789 | No disponible en la información proporcionada | Distribución por el mismo motor basal |
-| basal-1.5-max | 11 B | Bielik | No disponible | 0.773 | 0.737 | No disponible en la información proporcionada | Versión publicada de la línea anterior |
-| google/gemma-4-31B-it | 31 B (base) | Gemma 4 | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Modelo base en Hugging Face |
+| Modelo | Parámetros | Contexto | Werdykt v1 | PL decisions | EN external panel | Licencia |
+|---|---|---|---|---|---|---|
+| basal-omni-1.0-ultra | 31B | no disponible | 0.879 | 0.979 | 0.855 | apache-2.0 |
+| basal-omni-1.0-max | 12B (según la model card) | no disponible | 0.823 | 0.954 | 0.789 | no disponible |
+| basal-1.5-max | 11B (base Bielik) | no disponible | 0.773 | 0.940 | 0.737 | no disponible |
 
-Frente a sus dos alternativas directas de la misma familia, basal-omni-1.0-ultra gana en Werdykt v1, decisiones PL, conocimiento general PL y panel externo EN, empata en PL-Real (0.973 frente a 0.980 de max, intervalo con cero) y pierde en FinancialPhraseBank. La contrapartida es el coste: 31B en bf16 exige una GPU de 80 GB, mientras que las variantes de 11-12B son mucho más baratas de servir. No se dispone de comparación publicada con clasificadores dedicados de tamaño similar ajenos a la familia.
+Frente a basal-omni-1.0-max, ultra está por delante en decisiones PL (+2,5 puntos, IC 95 % +2,0 a +3,1), en el test del corpus inglés de 1.479 ítems (0.751 vs 0.724) y en el panel externo inglés (+6,9 puntos, mejor en 9 de 10 tareas); empatado en conocimiento general polaco (+1,3, intervalo con cero) y en PL-Real (−0,7, intervalo con cero). Frente a basal-1.5-max, la ventaja es de +3,9 puntos en decisiones PL, +2,6 en conocimiento general polaco, 0.751 vs 0.659 en el corpus inglés y +11,8 en el panel inglés, con empate en PL-Real (+0,3). No se dispone de comparación con modelos de decisión de otros autores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Estado experimental:** el propio autor etiqueta la versión como experimental; el modo `fast` no está disponible en este lanzamiento y el soporte de imágenes es zero-shot.
-- **Sin entrenamiento sobre medios:** las imágenes se leen con el encoder de Gemma 4 sin ajuste específico, por lo que el rendimiento visual puede degradarse fuera de dominios convencionales y no hay métricas publicadas de tareas visuales.
-- **Sin audio:** la base de 31B no incorpora encoder de audio y este nivel no acepta entradas de audio.
-- **Categorías débiles:** en Werdykt v1, `rules` cae a 0.550; el autor recomienda calcular umbrales y fechas exactos en código en lugar de delegar en el modelo. `contracts` (0.822) y documentos largos (0.854) también quedan por debajo de la media.
-- **Cobertura limitada con los umbrales publicados:** al objetivo del 1 % de error solo se automatiza el 56,8 % de las preguntas; los tipos sin umbral certificado (por ejemplo, `score`) se derivan a una persona.
-- **Calibración dependiente del dominio:** las probabilidades están calibradas sobre los corpus de entrenamiento y evaluación (polaco e inglés); fuera de esa distribución la confianza puede no ser fiable y no debe usarse como garantía sin recalibración.
-- **Alcance de idioma:** solo polaco e inglés; no hay evidencia de comportamiento en castellano ni en otros idiomas.
-- **Formato de salida restringido:** no genera texto libre; cualquier caso de uso que requiera explicaciones o argumentación necesita un modelo generativo adicional.
-- **Licencia:** los pesos se publican como apache-2.0, pero al ser un derivado de google/gemma-4-31B-it conviene verificar las condiciones que la licencia de la base impone al uso comercial antes de desplegar en producción.
-- **Requisitos de infraestructura:** 62 GB de pesos en bf16 y una GPU de 80 GB como mínimo razonable; el FP8 solo cubre texto y solo en modo `vllm`.
+- Modelo experimental: el autor lo etiqueta explícitamente como experimental y entrenado solo en decisiones textuales; el rendimiento sobre imágenes es zero-shot y el entrenamiento en medios llegará en versiones posteriores.
+- Sin soporte de audio: la base de 31B no incluye encoder de audio.
+- Idiomas limitados a polaco e inglés; no hay evidencia de rendimiento en castellano.
+- Riesgo de error en reglas y cálculos exactos: la categoría rules obtiene 0,550 en Werdykt; el propio autor recomienda calcular umbrales y fechas exactos en código.
+- Cobertura automática moderada: al 1 % de error objetivo, solo el 56,8 % de las preguntas se deciden automáticamente con el umbral publicado; los tipos sin umbral certificado se derivan a una persona (las preguntas de tipo score van a humano al 1 % objetivo).
+- Rendimiento inferior en documentos muy largos: 73,8 % en estados de más de 30k caracteres, frente a 88,1 % en 8k-20k.
+- El modelo no genera texto libre: no es adecuado para tareas de redacción, resumen o diálogo abierto; solo responde a preguntas con opciones predefinidas.
+- Sesgos: no se documentan en la información disponible análisis específicos de sesgo.
+- Licencia Apache 2.0, que permite uso comercial, pero al derivar de gemma-4-31B-it conviene revisar los términos de la licencia de la base de Google antes de desplegar en producción.
+- Requiere el motor basal para aprovechar los tipos de pregunta extendidos (`multi`, `act`, `tool`) y los umbrales de calibración; fuera de él, las capacidades quedan restringidas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Remek/basal-omni-1.0-ultra
-- Checkpoint FP8 (solo texto, modo `vllm`): https://huggingface.co/Remek/basal-omni-1.0-ultra-FP8
+- Hugging Face: https://huggingface.co/Remek/basal-omni-1.0-ultra
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Repositorio del motor de inferencia basal: https://github.com/rkinas/basal
+- Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Sitio web del proyecto: https://basal.si5.pl/
-- uv (gestor de entornos usado en la instalación): https://docs.astral.sh/uv/
-
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre el proyecto basal; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

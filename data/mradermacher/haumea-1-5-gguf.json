@@ -20,8 +20,6 @@
     "Haumea AI",
     "Haumea Labs",
     "en",
-    "base_model:HaumeaAI/Haumea-1.5",
-    "base_model:quantized:HaumeaAI/Haumea-1.5",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

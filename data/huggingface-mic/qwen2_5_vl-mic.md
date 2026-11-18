@@ -2,90 +2,89 @@
 
 ## Resumen
 
-`qwen2_5_vl-mic` es un artefacto de prueba (test artifact) publicado por la organizacion `huggingface-mic`, no un modelo entrenado utilizable. Se presenta como una version "slim" (reducida) de `Qwen/Qwen2.5-VL-3B-Instruct`, con solo 11.289.024 parametros reales segun los pesos en safetensors, frente a los aproximadamente 3.750 millones del modelo base. Su proposito es servir como fixture para validar contratos de integracion y expectativas de frameworks (Transformers, entre otros) sin necesidad de descargar el checkpoint completo.
+`qwen2_5_vl-mic` es un artefacto de prueba (test artifact) publicado por el usuario `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado ni utilizable para inferencia real: es un "fixture" derivado de `Qwen/Qwen2.5-VL-3B-Instruct` mediante un proceso de reduccion (shrinking) de la configuracion, conservando la misma arquitectura (`Qwen2_5_VLForConditionalGeneration`) pero con solo 2 capas ocultas en el componente de texto y pesos aleatorios generados con semilla 17.
 
-El repositorio incluye pesos reducidos, ejemplos de uso ejecutables y un directorio de expectativas de framework, todo ello acompanado de un manifiesto de contrato (`integration.json`) y metadatos de procedencia (`build.json`). La arquitectura declarada es `Qwen2_5_VLForConditionalGeneration`, la misma que el modelo original, pero con la configuracion encogida mediante una regla generica (2 capas de texto en lugar de las 36 del 3B). Los pesos son aleatorios (semilla 17) y no han sido entrenados.
+El repositorio tiene como objetivo empaquetar en un unico lugar los pesos reducidos, ejemplos de uso ejecutables y las expectativas de integracion con frameworks (concretamente Transformers). Sirve como fixture de testing para validar pipelines de integracion, no como modelo de produccion. El modelo base real es el modelo vision-lenguaje Qwen2.5-VL-3B-Instruct de Alibaba Qwen, de aproximadamente 3.000 millones de parametros.
 
-Es relevante unicamente en el contexto de ingenieria de infraestructura de modelos: permite probar pipelines de carga, tokenizacion, procesamiento de imagenes y verificacion de tensores con un coste de descarga y computo minimo. No debe confundirse con un modelo multimodal funcional ni usarse en produccion.
+La relevancia de esta ficha es acotada: el artefacto permite a desarrolladores reproducir pruebas de integracion con una huella minima (11,3 millones de parametros) manteniendo nombres de tensores, procesador y plantilla de chat identicos al checkpoint original. Cualquier uso como modelo generativo, de razonamiento o vision producira salidas sin sentido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2_5_VLForConditionalGeneration (transformer multimodal, configuracion reducida) |
-| Parametros totales | 11.289.024 (pesos reales en safetensors) |
+| Arquitectura | Qwen2_5_VLForConditionalGeneration (transformer vision-lenguaje, configuracion reducida a 2 capas de texto) |
+| Parametros totales | 11.289.024 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
+| Longitud de contexto | no disponible (heredada de la config del modelo base, no verificada en este artefacto) |
 | Tipos de cuantizacion | no disponible (pesos guardados en bfloat16) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el repo copia byte a byte el fichero `LICENSE` del modelo base) |
+| Licencia | no disponible (el fichero LICENSE se copia byte a byte del modelo base, pero la licencia no se declara explicitamente en los metadatos) |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo replica la clase `Qwen2_5_VLForConditionalGeneration` del checkpoint `Qwen/Qwen2.5-VL-3B-Instruct`, pero con una configuracion encogida por la regla generica de `sweep.py`: en concreto, el texto queda reducido a 2 capas (`num_hidden_layers` 2). Los ficheros de procesador (`chat_template.json`, `generation_config.json`, `merges.txt`, `preprocessor_config.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`, `LICENSE`) se copian byte a byte desde el modelo base, de modo que la tokenizacion y el preprocesado de imagen son identicos a los del 3B original.
+El artefacto replica la arquitectura del modelo base `Qwen/Qwen2.5-VL-3B-Instruct`, un transformer multimodal que combina un codificador visual con un decodificador de lenguaje. La unica diferencia estructural es la reduccion del numero de capas ocultas del componente de texto a 2 (frente a la configuracion completa del modelo de 3B). Los ficheros del procesador (tokenizer, `preprocessor_config.json`, `chat_template.json`, `generation_config.json`, `merges.txt`, `vocab.json`) se copian byte a byte del checkpoint original, de modo que el contrato de entrada y el formato de tokens son identicos.
 
-No ha habido entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron mediante una compuerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato mueve los logits al menos 0.001 (el caso mas debil, `pixel_values:halve`, produce 0.0718). Los nombres de tensores coinciden con los del checkpoint real y el modelo es finito en float32, bfloat16 y float16 (forward, loss y gradientes). La fixture cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el encogimiento (clave de fixture `93f8e61d11ad`).
+No hay entrenamiento. Los pesos son aleatorios, generados con semilla 17, y se validaron mediante un "input-sensitivity gate": cada perturbacion de las entradas del contrato mueve los logits al menos 0,001 (la perturbacion mas debil, `pixel_values:halve`, produce 0,0718). Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 (forward, loss y gradientes). El proceso de reduccion se documenta en `sweep.py` del repositorio `transformers-mic`.
 
 ## Capacidades
 
-- Carga y ejecucion en Transformers como modelo multimodal imagen+texto con la misma interfaz que `Qwen2.5-VL-3B-Instruct`.
-- Verificacion de contratos de integracion: el repo incluye `integration.json` y un directorio de expectativas de framework.
-- Pruebas de sensibilidad de entradas: se valido que perturbaciones en `pixel_values` y entradas de texto alteran los logits.
-- Compatibilidad de nombres de tensores con el checkpoint real, util para tests de carga y conversion.
-- No dispone de capacidades reales de generacion, razonamiento, codigo, matematicas, vision funcional, tool calling ni agentes: los pesos son aleatorios.
-- No se declaran capacidades multilingues ni modos especiales (thinking, audio, etc.).
+- No es un modelo funcional: no genera texto, razonamiento, codigo, matematicas ni descripciones de imagen con sentido.
+- Reproduce el contrato de entrada del modelo base (procesador de imagen y texto, plantilla de chat).
+- Mantiene los nombres de tensores del checkpoint original, lo que permite validar cargas de pesos y mapeos de estado.
+- Sirve como fixture para pruebas de integracion con Transformers.
+- No soporta tool calling, agentes ni razonamiento multi-paso de forma util.
+- No dispone de capacidades multilingues reales (los pesos son aleatorios).
+- No incorpora modo thinking, vision funcional ni audio.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI: cargar el modelo con Transformers y verificar que la tokenizacion, el procesador de imagen y los nombres de tensores coinciden con los del checkpoint real, sin descargar los ~7 GB del 3B.
-- Validacion de pipelines de despliegue: comprobar que vLLM, TGI u otros servidores aceptan la configuracion y el formato safetensors antes de pasar al modelo completo.
-- Desarrollo de utilidades de conversion: testear scripts que convierten safetensors a GGUF u otros formatos con un modelo de 11M de parametros que cabe en cualquier equipo.
-- Verificacion de chat templates: al copiarse `chat_template.json` byte a byte, permite validar el renderizado de conversaciones multi-turno y el formato de mensajes del modelo base.
-- Tests de preprocesado de imagen: `preprocessor_config.json` es identico al original, por lo que sirve para validar redimensionado, normalizacion y parches visuales en pipelines propios.
-- Regresion de frameworks: usar el directorio `integrations/transformers/expectations` para detectar cambios incompatibles en nuevas versiones de Transformers.
-- Benchmarking de infraestructura: medir latencia de carga y overhead de framework con un modelo minimo antes de escalar al checkpoint real.
+- Pruebas de integracion en Transformers: cargar el modelo con `Qwen2_5_VLForConditionalGeneration` y verificar que el pipeline de carga, el procesador y la plantilla de chat funcionan sin errores, con una huella de 11,3 M de parametros.
+- Validacion de mapeos de pesos: comprobar que los nombres de tensores del checkpoint real coinciden con los del fixture antes de desplegar el modelo de 3B en produccion.
+- Tests de CI/CD: ejecutar pruebas de humo en pipelines de integracion continua sin necesidad de descargar los pesos completos del modelo de 3B.
+- Verificacion de dtypes: validar que el forward, la loss y los gradientes son finitos en float32, bfloat16 y float16.
+- Pruebas de contrato de entradas multimodales: comprobar que perturbaciones en `pixel_values` y en las entradas de texto producen cambios en los logits por encima del umbral definido.
+- Desarrollo de herramientas de empaquetado: usar el repositorio como referencia para construir fixtures propios con `build_fixtures.py`.
+- Validacion de plantillas de chat: verificar que `chat_template.json` y `generation_config.json` se cargan correctamente en el framework antes de migrar al checkpoint real.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El artefacto es un fixture de prueba con pesos aleatorios y no produce salidas evaluables.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (11,3M de parametros, ~22,6 MB de pesos) mas overhead de framework y buffers de activaciones.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tambien ejecutable en CPU.
-- Cabe en cualquier GPU de consumo (GTX 1050, RTX 3050, RTX 4090, etc.) e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (referencia del repo), potencialmente llama.cpp u Ollama si se convierte, aunque no se documenta soporte oficial.
-- Latencia y throughput: no disponibles; al ser un fixture de test, las cifras no son representativas de ningun modelo real.
+- VRAM estimada: inferior a 1 GB en bfloat16 (11,3 M de parametros), aunque el codificador visual y el procesador pueden anadir overhead.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100.
+- Cabe en GPU consumer: si, en cualquier GPU con al menos 2 GB de VRAM (GTX 1650, RTX 3050, RTX 4090, etc.).
+- Opciones de despliegue: Transformers (uso previsto segun la model card); vLLM, llama.cpp, Ollama y TGI no estan documentados para este artefacto.
+- Latencia y throughput: no disponibles; no aplica al ser un fixture de prueba.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/qwen2_5_vl-mic | 11,3M (fixture) | no disponible | Test artifact / fixture de integracion | no disponible | Hugging Face |
-| Qwen/Qwen2.5-VL-3B-Instruct | ~3,75B | no disponible en esta ficha | Modelo multimodal real | no disponible en esta ficha | Hugging Face |
-| Otros fixtures de la organizacion huggingface-mic | variable (reducidos) | no disponible | Test artifacts | no disponible | Hugging Face |
+| qwen2_5_vl-mic | 11,3 M | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| Qwen/Qwen2.5-VL-3B-Instruct | ~3.000 M | no disponible en esta ficha | Modelo vision-lenguaje real | no disponible en esta ficha | Hugging Face |
+| Otros fixtures de `huggingface-mic` | variable | no disponible | Fixtures de prueba | no disponible | Hugging Face |
 
-La comparativa con modelos reales de la misma categoria (multimodales de ~3B) no procede: este repositorio no es un modelo funcional. Frente al checkpoint base, la unica diferencia medible es el numero de parametros (11,3M frente a ~3,75B) y la reduccion a 2 capas de texto.
+La comparativa con modelos de la misma categoria (modelos vision-lenguaje de 3B) no es significativa porque el artefacto no es un modelo funcional. La unica comparacion valida es con el checkpoint base del que deriva.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y no han sido entrenados; las salidas carecen de significado.
-- Etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
-- No dispone de licencia declarada en la informacion disponible; el fichero `LICENSE` se copia del modelo base, por lo que las condiciones reales dependen de `Qwen/Qwen2.5-VL-3B-Instruct`.
-- Riesgo de confusion: el nombre y la arquitectura pueden llevar a desplegarlo por error en produccion; no debe usarse para atencion al cliente, generacion de codigo ni ninguna tarea real.
-- La configuracion reducida (2 capas) no reproduce el comportamiento del 3B; los tests de calidad o de capacidades no son extrapolables.
-- Los sesgos, alucinaciones y limitaciones de idioma del modelo base no aplican directamente, pero tampoco estan caracterizados en este artefacto.
-- El tamano del repo es 0.0 GB, lo que puede indicar que los pesos no estan completamente subidos o que el empaquetado es minimo; conviene verificar `build.json` antes de confiar en la reproducibilidad.
+- No es un modelo utilizable: los pesos son aleatorios y las salidas carecen de sentido.
+- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
+- La licencia no se declara explicitamente en los metadatos; el fichero LICENSE se copia del modelo base, pero conviene verificar los terminos del checkpoint original antes de cualquier uso.
+- Los idiomas soportados no se declaran; el tokenizer se hereda del modelo base pero no hay capacidades linguisticas reales.
+- La longitud de contexto no se verifica en este artefacto; la configuracion reducida puede alterar el comportamiento esperado.
+- Riesgo de confusion: el nombre y la estructura pueden llevar a error si se confunde con el modelo Qwen2.5-VL-3B-Instruct real.
+- No apto para benchmarks, evaluaciones de calidad ni comparativas de rendimiento.
+- Uso comercial: no recomendado ni documentado; consultar la licencia del modelo base.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/huggingface-mic/qwen2_5_vl-mic
+- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/qwen2_5_vl-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
-- Como se encogio la fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/qwen2_5_vl-mic.html
-- Repositorio transformers-mic (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/qwen2_5_vl-mic.html
+- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
+- Script de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Manifiesto de contrato (en el repo): `integration.json`
-- Uso con Transformers (en el repo): `integrations/transformers/usage.md`
-- Expectativas de Transformers (en el repo): `integrations/transformers/expectations`
-- Procedencia de la fixture (en el repo): `build.json`

@@ -5,7 +5,7 @@
   "author": "qda-lab",
   "url": "https://huggingface.co/qda-lab/QDA-DeepSeek-R1-Distill-Llama-8B-W4A8",
   "created_at": "2026-11-10T04:14:11.000Z",
-  "updated_at": "2026-11-17T01:15:31.000Z",
+  "updated_at": "2026-11-18T09:35:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 161,
+  "downloads_30d": 242,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",

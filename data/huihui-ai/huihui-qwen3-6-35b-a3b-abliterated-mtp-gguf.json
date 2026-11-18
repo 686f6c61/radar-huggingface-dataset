@@ -26,9 +26,9 @@
     "region:us",
     "conversational"
   ],
-  "likes": 119,
-  "downloads_30d": 5066889,
-  "trending_score": 17.5,
+  "likes": 121,
+  "downloads_30d": 5119599,
+  "trending_score": 15.399999999999999,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
   "storage_bytes": 303493018336,
@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "huihui-ai (huihui.ai) - Hugging Face",
-      "url": "https://huggingface.co/huihui-ai",
-      "snippet": "We are committed to the study of model ablations and collaborate with the open-source community to advance natural language …"
-    },
-    {
-      "title": "huihui_ai",
-      "url": "https://ollama.com/huihui_ai",
-      "snippet": "gemma3n-abliterated ... hy-mt1.5-abliterated ... phi4-abliterated ... huihui-moe-abliterated ... kimi-k2 ... baronllm-abliterated ..."
-    },
-    {
-      "title": "GitHub - huihuihui-ai/huihui",
-      "url": "https://github.com/huihuihui-ai/huihui",
-      "snippet": "支持：Claude Code、Codex、豆包、以及其他支持 Skills 的 Agent。 huihui 不是网上泛泛而谈的面试模板合集。 所有答题框架、追 …"
-    },
-    {
-      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated - Hugging Face",
-      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "https://www.huihui.ink/ Collection for Wuthering Waves | WuWa …",
-      "url": "https://gamebanana.com/collections/169682",
-      "snippet": "https://www.huihui.ink/ - A Collection for Wuthering Waves. Wuthering Waves Collections https://www.huihui.ink/ Collection Overview …"
-    }
-  ]
+  "sources": []
 }

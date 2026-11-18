@@ -5,7 +5,7 @@
   "author": "mohsenvand",
   "url": "https://huggingface.co/mohsenvand/witness-clrs",
   "created_at": "2026-11-13T17:14:41.000Z",
-  "updated_at": "2026-11-13T20:21:03.000Z",
+  "updated_at": "2026-11-17T14:59:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "attention",
     "graph-neural-network",
     "length-generalization",
+    "arxiv:2611.11937",
     "license:apache-2.0",
     "region:us"
   ],

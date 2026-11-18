@@ -2,97 +2,105 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-27B-GGUF es la distribucion cuantizada en formato GGUF del modelo bottlecapai/ThinkingCap-Qwen3.8-27B, publicada por el propio autor bottlecapai. Se trata de un modelo multimodal de tipo image-text-to-text, con 27.320.697.856 parametros (unos 27,32 mil millones) y un repositorio de 141,4 GB que agrupa las distintas variantes de cuantizacion para su uso con llama.cpp y runtimes compatibles con GGUF.
+ThinkingCap-Qwen3.8-27B-GGUF es la distribución cuantizada en formato GGUF del modelo ThinkingCap-Qwen3.8-27B, un ajuste fino (finetune) desarrollado por BottleCap AI sobre Qwen3.8-27B de Alibaba. El objetivo del modelo es reducir el coste computacional del razonamiento explícito: según el autor, recorta los tokens de razonamiento un 37 % de media manteniendo una precisión media del 85,8 % frente al 86,6 % del modelo base. Es, por tanto, una propuesta orientada a eficiencia en tokens más que a maximizar puntuaciones absolutas.
 
-El modelo se presenta bajo los tags qwen3_8, token-efficient y efficient-thinking, lo que situa su linaje en la familia Qwen3.8 y apunta a un diseno orientado a reducir el coste de tokens en cadenas de razonamiento largas. El pipeline declarado es image-text-to-text, por lo que acepta entradas de imagen y texto, y el tag conversational indica que esta preparado para dialogos multi-turno.
+El repositorio contiene conversiones GGUF en cinco precisiones (IQ4_XS, Q4_K_M, Q6_K, Q8_0 y f16) más un proyector multimodal `mmproj` en f16, lo que confirma que se trata de un modelo visión-lenguaje (pipeline `image-text-to-text`) con capacidad de procesar imágenes. Los pesos se generan con matriz de importancia y un reparto de precisión por tensor que preserva las proyecciones de atención en 6-8 bits mientras comprime las capas feed-forward a 4 bits.
 
-Su relevancia practica esta en que permite ejecutar un modelo de ~27B con capacidades multimodales en entornos locales o autoalojados mediante llama.cpp, sin depender de APIs propietarias. Como contrapartida, el acceso al repositorio esta restringido (gated) y la licencia PolyForm Small Business 1.0.0 condiciona el uso comercial, dos factores que hay que evaluar antes de integrarlo en produccion.
+La relevancia actual del modelo reside en tres factores: su tamaño de 27.320.697.856 parámetros totales, que lo sitúa en la franja de modelos desplegables en una sola GPU profesional o en configuraciones de consumo con cuantización agresiva; la inclusión de la cabeza MTP (multi-token prediction) que habilita decodificación especulativa sin modelo borrador externo; y una licencia Polyform Small Business 1.0.0 que restringe el uso comercial a pequeñas empresas, un punto crítico para cualquier evaluación en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma explicita; los tags indican la familia qwen3_8 y el pipeline es image-text-to-text (modelo multimodal) |
-| Parametros totales | 27.320.697.856 (~27,32 mil millones, dato de safetensors) |
-| Parametros activos | No aplica / no disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponibles en detalle; el repo GGUF ocupa 141,4 GB, lo que sugiere multiples variantes, pero no se enumeran |
-| Idiomas soportados | No disponibles |
-| Licencia | polyform-small-business-1.0.0 (el tag de Hugging Face figura como license:other) |
-| Formato de pesos | GGUF (libreria gguf, compatible con llama.cpp); el modelo base se distribuye en safetensors |
-| Tamano del repositorio | 141,4 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Fecha de publicacion | 23 de septiembre de 2026 (creacion y ultima actualizacion el mismo dia) |
-| Descargas / likes | 0 descargas / 13 likes en el momento de la consulta |
+| Arquitectura | Transformer híbrido con capas de atención completa y atención lineal (derivada de Qwen3.8-27B); cabeza MTP para decodificación especulativa |
+| Parámetros totales | 27.320.697.856 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32k tokens (según la referencia del autor al GGUF RCO de 4,2 bpw; no se especifica el contexto máximo del modelo base) |
+| Tipos de cuantización | IQ4_XS (15,5 GB), Q4_K_M (17,4 GB), Q6_K (23,9 GB), Q8_0 (29,0 GB), f16 (54,7 GB); mmproj f16 (931 MB) |
+| Idiomas soportados | no disponible |
+| Licencia | Polyform Small Business 1.0.0 (`license: other`) |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineacion empleadas (RLHF, DPO u otras). Lo unico verificable a partir de los metadatos es que se trata de un modelo multimodal con pipeline image-text-to-text, integrado en el ecosistema qwen3_8, y que su version GGUF esta pensada para inferencia con llama.cpp.
+El modelo parte de Qwen3.8-27B, un transformer que combina capas de atención completa con capas de atención lineal, según se deduce de la descripción del layout de cuantización por tensor del autor (menciona explícitamente «attention projections of the full-attention layers» y «linear-attention output projections»). Sobre esa base, BottleCap AI aplica un finetune orientado a eficiencia de razonamiento, cuyo detalle de dataset, número de tokens y metodología de alineación (RLHF, DPO u otra) no se especifica en la información disponible.
 
-Los tags token-efficient y efficient-thinking sugieren que el entrenamiento o el post-entrenamiento se han orientado a optimizar el consumo de tokens durante el razonamiento, presumiblemente acortando o comprimiendo las cadenas de pensamiento sin perder exactitud. No se aporta ninguna cifra que permita cuantificar esa eficiencia, por lo que cualquier afirmacion al respecto queda fuera del alcance de esta ficha.
+La innovación técnica destacable es doble. Por un lado, la cabeza MTP (multi-token prediction) queda incluida en los GGUF, lo que permite decodificación auto-especulativa en llama.cpp (`--spec-type draft-mtp`) sin necesidad de un modelo borrador separado; el autor reporta aceleración de decodificación con 4 slots paralelos, aunque advierte que lotes mayores no han sido probados. Por otro, las cuantizaciones de baja precisión emplean matriz de importancia (estadísticas de activación sobre un corpus de calibración con plantilla de chat) y un reparto de precisión por tensor: las proyecciones de atención y las salidas de atención lineal se mantienen en 6-8 bits, mientras las capas feed-forward absorben la compresión a 4 bits.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, segun el tag conversational y el pipeline declarado.
-- Procesamiento conjunto de imagen y texto (image-text-to-text): el modelo acepta imagenes como parte de la entrada.
-- Razonamiento con modo de pensamiento eficiente en tokens, segun los tags efficient-thinking y token-efficient.
-- Compatibilidad con endpoints (tag endpoints_compatible), lo que facilita su despliegue detras de servidores de inferencia compatibles.
-- Ejecucion local mediante llama.cpp y runtimes que consumen pesos GGUF.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; no se declara lista de idiomas.
-- Otras capacidades especiales (audio, thinking mode explicito, decodificacion especulativa): no disponibles.
+- Generación de texto conversacional multi-turno, con plantilla de chat propia del modelo base.
+- Razonamiento explícito en modo «thinking», con reducción medida del 37 % en tokens de razonamiento respecto al base.
+- Comprensión de imágenes (visión-lenguaje) mediante el proyector multimodal `mmproj-ThinkingCap-Qwen3.8-27B-f16.gguf`, que se combina con cualquiera de las cuantizaciones de texto.
+- Decodificación especulativa auto-contenida mediante la cabeza MTP integrada en los pesos.
+- Compatibilidad con endpoints OpenAI (`endpoints_compatible` en los tags del repositorio).
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: no confirmado explícitamente en la información disponible.
+- Capacidades multilingües: no disponible (no se listan idiomas).
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Analisis de documentos con imagenes: el pipeline image-text-to-text permite extraer informacion de capturas, diagramas o formularios escaneados acompanados de instrucciones en lenguaje natural, todo ello en local con llama.cpp.
-- Asistentes conversacionales autoalojados: con 27,32B de parametros y comportamiento conversacional, el modelo es adecuado para desplegar un chatbot multi-turno en infraestructura propia, evitando el envio de datos a terceros.
-- Razonamiento con coste de tokens contenido: los tags token-efficient y efficient-thinking lo hacen apropiado para pipelines donde cada token de pensamiento tiene coste real (facturacion por token o GPU con presupuesto limitado).
-- Procesamiento por lotes en GPU de gama alta: al estar cuantizado en GGUF, puede servirse en configuraciones con una o dos GPU para tareas de clasificacion, resumen o extraccion sobre volumenes medios de peticiones.
-- Prototipado e investigacion en vision-lenguaje: sirve como punto de partida para experimentos que requieran un modelo multimodal de ~27B ejecutable sin clúster dedicado.
-- Integracion en estaciones de trabajo de desarrollo: con cuantizaciones de 4 bits cabe en GPUs de consumo con 24 GB, lo que permite usarlo como asistente local de codigo o de analisis de capturas de pantalla.
-- Despliegue detras de endpoints compatibles: el tag endpoints_compatible facilita exponerlo como servicio HTTP interno para equipos que ya consumen APIs con ese contrato.
+- Asistente de razonamiento con presupuesto de tokens ajustado: el recorte del 37 % en tokens de pensamiento reduce directamente el coste por consulta en APIs y el tiempo de generación en local, con una pérdida de precisión media de 0,8 puntos porcentuales frente al base (85,8 % vs. 86,6 %). Adecuado para pipelines de clasificación razonada o extracción de datos donde el coste por token domina.
+- Análisis de documentos con imágenes: gracias al proyector multimodal, el modelo puede recibir capturas, diagramas o páginas escaneadas junto con texto y responder preguntas sobre ellos. Se sirve con `llama-server --mmproj` exponiendo un endpoint compatible con OpenAI.
+- Despliegue en estación de trabajo con GPU de 18 GB: la variante RCO de 4,2 bpw (14,3 GB) del autor permite ejecutar visión, MTP y contexto de 32k en una tarjeta de 18 GB, lo que habilita prototipado local de asistentes multimodales sin infraestructura cloud.
+- Servicio de chat autoalojado en llama.cpp: con Q4_K_M (17,4 GB) y decodificación especulativa MTP activada, se puede montar un servidor conversacional con 4 slots paralelos en una única GPU, útil para equipos que necesitan soberanía de datos.
+- Evaluación comparativa de eficiencia de razonamiento: el modelo sirve como referencia para medir el impacto de reducir tokens de pensamiento en tareas de GPQA-Diamond, MMLU-Pro y AA-LCR, ya que el autor publica resultados multi-semilla con tests estadísticos en la model card principal.
+- Integración en LM Studio, Jan u Ollama para uso de escritorio: el `mmproj` se autodetecta en LM Studio y habilita el botón de imagen, lo que facilita demos internas de visión-lenguaje sin escribir código.
+- Fine-tuning posterior sobre dominio específico: al disponer de pesos f16 en GGUF y del modelo base en safetensors, es viable partir del base para ajustes con licencia Polyform Small Business en empresas que cumplan el umbral de la licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluacion, y no se dispone de mediciones independientes de latencia o throughput.
+Los datos publicados por el autor en la información disponible son agregados y parciales. Se indica una precisión media del 85,8 % para ThinkingCap frente al 86,6 % del modelo base, y diferencias observadas en cuantizaciones respecto a bf16 sobre cinco benchmarks evaluados: IQ4_XS y Q6_K puntúan 2,8 pp menos en GPQA-Diamond; Q6_K puntúa 1,7 pp más en MMLU-Pro y 7,0 pp menos en AA-LCR. No se proporcionan las puntuaciones absolutas por benchmark ni comparaciones con modelos de terceros.
+
+| Métrica | ThinkingCap | Base Qwen3.8-27B | Notas |
+|---|---|---|---|
+| Precisión media (5 benchmarks) | 85,8 % | 86,6 % | Reducción de tokens de razonamiento del 37 % |
+| GPQA-Diamond (IQ4_XS vs bf16) | −2,8 pp | referencia bf16 | Diferencia observada, no demostrada sin pérdida |
+| GPQA-Diamond (Q6_K vs bf16) | −2,8 pp | referencia bf16 | Diferencia observada |
+| MMLU-Pro (Q6_K vs bf16) | +1,7 pp | referencia bf16 | Diferencia observada |
+| AA-LCR (Q6_K vs bf16) | −7,0 pp | referencia bf16 | Diferencia observada |
+
+No se han publicado en la información disponible las puntuaciones absolutas de MMLU, HumanEval, GSM8K ni de benchmarks de visión, ni comparativas numéricas con modelos de terceros.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que aparecen a continuacion son estimaciones derivadas del numero de parametros (27,32B) y del coste tipico de cada cuantizacion en llama.cpp, no mediciones publicadas por el autor.
-
-- VRAM estimada solo para pesos: ~15-17 GB en Q4_K_M, ~18-20 GB en Q5_K_M, ~21-23 GB en Q6_K, ~29 GB en Q8_0 y ~55 GB en FP16.
-- VRAM total: hay que sumar la cache KV, cuyo tamano depende de la longitud de contexto configurada y del numero de capas; con contextos largos puede anadir varios GB. No se dispone del dato de contexto maximo, por lo que no se puede acotar.
-- GPU de consumo: las cuantizaciones de 4 y 5 bits caben en tarjetas de 24 GB (RTX 3090, RTX 4090) siempre que se ajuste la ventana de contexto; en tarjetas de 16 GB o menos es probable que requiera descarga parcial de capas a CPU.
-- GPU profesionales: A100 40/80 GB, H100, L40S o RTX A6000 permiten ejecutar cuantizaciones altas (Q8_0, FP16) con contexto amplio o servir varias peticiones concurrentes.
-- Multi-GPU: dado el tamano del repositorio (141,4 GB) y el peso en FP16, un despliegue en precision completa requiere repartir el modelo entre varias GPU.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, servidores compatibles con la API de OpenAI), y runtimes que acepten GGUF. vLLM y TGI no se confirman para este formato en la informacion disponible. El tag endpoints_compatible indica compatibilidad con servicios de endpoints.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: IQ4_XS ≈ 15,5 GB de pesos más overhead de contexto y KV cache; Q4_K_M ≈ 17,4 GB; Q6_K ≈ 23,9 GB; Q8_0 ≈ 29,0 GB; f16 ≈ 54,7 GB. Añadir ~931 MB si se carga el proyector de visión.
+- GPU recomendadas: A100 40/80 GB o H100 para f16 y Q8_0 con contexto largo; RTX 6000 Ada / L40S (48 GB) para Q8_0; RTX 4090 (24 GB) para Q6_K con contexto moderado; GPUs de 18 GB para la variante RCO de 4,2 bpw con visión, MTP y 32k de contexto.
+- Cabe en GPU de consumo: sí, con IQ4_XS o Q4_K_M en tarjetas de 24 GB (RTX 3090/4090) y con la variante RCO de 4,2 bpw en 18 GB.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`, `llama-mtmd-cli`), Ollama, LM Studio, Jan y cualquier runtime compatible con GGUF que soporte la arquitectura. Para MTP se requiere llama.cpp v0.4.1 o superior; runtimes anteriores pueden rechazar la carga con error `missing tensor blk.64…`.
+- Latencia y throughput: no se publican cifras absolutas. El autor indica que la decodificación especulativa MTP acelera la generación con 4 slots paralelos; lotes mayores no han sido probados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| ThinkingCap-Qwen3.8-27B-GGUF (este) | 27,32B | GGUF | No disponible | PolyForm Small Business 1.0.0, acceso gated | Cuantizado para llama.cpp; multimodal |
-| ThinkingCap-Qwen3.8-27B (modelo base) | 27,32B (mismo dato de safetensors) | Safetensors | No disponible | No disponible en la informacion | Version sin cuantizar; referencia obligatoria para evaluar la perdida por cuantizacion |
-| Otros modelos multimodales de ~27-32B de la familia Qwen3 | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la informacion proporcionada |
+| ThinkingCap-Qwen3.8-27B-GGUF | 27,3 B | 32k (referencia del autor) | Polyform Small Business 1.0.0 | GGUF | Visión, MTP, −37 % tokens de razonamiento, 85,8 % precisión media |
+| Qwen3.8-27B (base) | 27,3 B | no disponible | licencia de Qwen (no detallada aquí) | safetensors | Referencia de precisión: 86,6 % media |
+| ThinkingCap-Qwen3.8-27B-GGUF-RCO-4.2bpw | 27,3 B | 32k | Polyform Small Business 1.0.0 | GGUF mixto | 14,3 GB, 4,19 bpw, visión + MTP en 18 GB |
 
-No se dispone de datos de rendimiento comparativos (benchmarks) que permitan situar este modelo frente a alternativas de su misma categoria. Cualquier comparacion cuantitativa requeriria ejecutar evaluaciones propias.
+No se dispone en la información proporcionada de comparativas con modelos de otros fabricantes del mismo tamaño (por ejemplo, variantes de 24-32 B de otras familias), por lo que la comparación se limita a las variantes del propio autor y al modelo base.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles; el autor no publica informacion sobre sesgos ni sobre la composicion del dataset de entrenamiento.
-- Riesgo de alucinacion: no cuantificado. Al no haber benchmarks ni model card detallada, no es posible estimar la tasa de errores factuales.
-- Idiomas: no se declara lista de idiomas soportados, por lo que no se puede garantizar un rendimiento aceptable en castellano ni en otras lenguas distintas de las usadas en el entrenamiento.
-- Contexto: se desconoce la longitud maxima de contexto, lo que impide planificar casos de uso con documentos largos sin pruebas previas.
-- Licencia: PolyForm Small Business 1.0.0 no es una licencia de codigo abierto permisiva; establece restricciones al uso comercial por parte de organizaciones que superen ciertos umbrales de tamano o facturacion. Es imprescindible leer el texto completo de la licencia antes de un uso comercial.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de descargas y a la reproducibilidad.
-- Cuantizacion: al ser una version GGUF del modelo base, existe una perdida de precision respecto a los pesos originales, cuyo impacto concreto no se ha documentado.
-- Madurez: el repositorio se creo el 23 de septiembre de 2026 y no registro descargas en el momento de la consulta; la validacion por parte de la comunidad es practicamente nula.
-- Tool calling y agentes: no se confirma soporte nativo, por lo que no se debe asumir su uso en pipelines de agentes sin verificacion previa.
+- Licencia Polyform Small Business 1.0.0: restringe el uso comercial; es imprescindible verificar que la organización cumple los umbrales de «small business» antes de desplegar en producción. El acceso al modelo requiere aceptar una compuerta (gated) con datos de empresa y correo.
+- La reducción de tokens de razonamiento implica una pérdida de precisión media de 0,8 pp frente al base; en tareas sensibles a la exactitud (GPQA-Diamond, AA-LCR) las cuantizaciones pueden perder hasta 7 pp respecto a bf16, según las diferencias observadas por el autor.
+- Ninguna cuantización está demostrada como sin pérdida: el propio autor advierte que las diferencias son observadas y no se garantiza equivalencia con bf16.
+- Decodificación greedy puede entrar en bucles; es necesario mantener la temperatura recomendada en la model card principal y no usar decodificación determinista.
+- La cabeza MTP solo acelera con 4 slots paralelos y no se ha probado con lotes mayores; runtimes antiguos fallan al cargar el archivo.
+- Riesgo de alucinación: no se documentan tasas de alucinación ni evaluaciones de veracidad en la información disponible.
+- Sesgos conocidos: no disponibles.
+- Idiomas soportados: no disponibles; no se puede asumir calidad multilingüe sin evaluación.
+- El contexto máximo real del modelo base no se especifica; la cifra de 32k aparece asociada a la variante RCO, no al conjunto de cuantizaciones.
+- El repositorio ocupa 141,4 GB, por lo que descargar todas las variantes requiere planificación de almacenamiento.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF
-- Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
-- Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
+- Modelo base (finetune): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
+- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
+- Variante mixta para 18 GB: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF-RCO-4.2bpw
+- Sitio del autor: https://www.bottlecapai.com/
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Especificación GGUF: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md
+- Formulario de acceso/contacto del autor: https://docs.google.com/forms/d/e/1FAIpQLSdU8MyVP_mVx0_y55d6QCMXVyCKsQ6yg68KEqWm_EIptKB0Nw/viewform

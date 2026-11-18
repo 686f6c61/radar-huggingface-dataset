@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Tractorman/accel-lm-5M-GGUF",
+  "slug": "tractorman-accel-lm-5m-gguf",
+  "author": "Tractorman",
+  "url": "https://huggingface.co/Tractorman/accel-lm-5M-GGUF",
+  "created_at": "2026-11-18T11:59:41.000Z",
+  "updated_at": "2026-11-18T11:59:47.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "tiny",
+    "ultra96",
+    "benchmark-specific",
+    "en",
+    "dataset:Rowan/hellaswag",
+    "dataset:allenai/ai2_arc",
+    "dataset:sixf0ur/nano_wiki",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5347296,
+  "parameters_human": "5.3M",
+  "storage_bytes": 5778944,
+  "storage_human": "6 MB",
+  "context_length": 512,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

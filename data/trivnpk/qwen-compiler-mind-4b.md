@@ -2,91 +2,93 @@
 
 ## Resumen
 
-Qwen-Compiler-Mind-4B es un modelo derivado de `empero-ai/Qwen3.8-4B-Distill` (4.411.424.256 parámetros totales, 32 capas, dimensión oculta 2560) publicado por Trivnpk (@Trivnpk) y Ritmada (@RitmadaPrompt). No es un modelo entrenado desde cero, sino una modificación de pesos y activaciones mediante técnicas de *representation engineering* orientadas a dos objetivos declarados: eliminar el comportamiento de rechazo del modelo base y sustituirlo por un sesgo hacia el rigor de programación de sistemas, además de reducir la deriva hacia el chino y reforzar la salida en inglés y vietnamita.
+Qwen-Compiler-Mind-4B v3.2.3 (Clean Reset Edition) es un ajuste fino (SFT) del modelo Qwen3ForCausalLM de 4.411 millones de parametros, publicado por el usuario Trivnpk en Hugging Face. El modelo esta orientado a razonamiento tecnico, ingenieria de sistemas, logica formal y depuracion de codigo multi-turno, con un enfasis explicito en la "higiene" de la generacion (terminacion limpia con `<|im_end|>` y ausencia de plantillas obsoletas o alucinaciones de tipo stub).
 
-La intervención se concentra en la capa 26 de 32, identificada por los autores como "ground zero" tanto del vector de rechazo (intensidad 15,4400) como del vector de idioma chino (intensidad 13,8238). En lugar de anular directamente las activaciones, el modelo aplica atenuación de margen suave y reequilibrio de energía entre dominios, con conservación de la norma L2 para no romper el escalado de RMSNorm. El repositorio distribuye cuantizaciones GGUF (Q4_K_M, Q6_K, Q8_0), un bundle PyTorch con los tensores de direccionamiento y un adaptador de hooks de inferencia.
+La version v3.2.3 reinicia la linea de fine-tuning volviendo al checkpoint base `0ebb9b2418` (v1.0 A100 Clean Base) para eliminar ocho generaciones de deriva acumulada por `merge_and_unload()`, sobreajuste de plantillas y fugas de tokens EOS. El entrenamiento se realizo con LoRA de una sola etapa (r=16, alpha=32, lr=8e-5, 1.5 epocas) sobre un curriculum de 3.200 muestras con enmascaramiento de perdida solo en el turno del asistente.
 
-Es relevante ahora porque ejemplifica una línea de trabajo de bajo coste computacional: modificar el comportamiento de un modelo de 4B mediante edición de representaciones internas en lugar de reentrenamiento o RLHF, con artefactos listos para Ollama y llama.cpp. Su nicho declarado es la generación de código de sistemas (C, gestión de memoria, IRQ, DMA) con un fichero de gramática GBNF para forzar salida determinista.
+El modelo se distribuye en safetensors y en tres cuantizaciones GGUF (Q8_0, Q6_K, Q4_K_M) compiladas con CMake AVX2/SIMD, lo que permite despliegue tanto en servidores A100 como en CPU de portatil o dispositivos de baja memoria. La licencia es Apache 2.0 y los idiomas declarados son vietnamita e ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de Qwen3, 32 capas, hidden dimension 2560) |
+| Arquitectura | Transformer decoder-only (Qwen3ForCausalLM) |
 | Parametros totales | 4.411.424.256 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (~2,1 GB), Q6_K (~2,8 GB), Q8_0 (~3,6 GB); pesos safetensors en FP (tamano de repo 54,4 GB) |
-| Idiomas soportados | vi, en (segun metadatos y model card) |
+| Longitud de contexto | 128k (segun tag `128k-context`; no verificado en model card) |
+| Tipos de cuantizacion | Q8_0 (~4.48 GB), Q6_K (~3.46 GB), Q4_K_M (~2.59 GB) |
+| Idiomas soportados | vietnamita (vi), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF; bundle PyTorch adicional (`qwen_isomorphic_bundle.pt`) |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder-only de la familia Qwen3 con 32 capas y dimensión oculta 2560, destilado por empero-ai a partir de un modelo mayor (el nombre `Qwen3.8-4B-Distill` sugiere destilación, aunque no se detallan en la información disponible los tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO). Sobre esa base, los autores no reentrenan: aplican una intervención en el espacio latente en la capa 26.
+El modelo parte de la arquitectura Qwen3ForCausalLM (transformer decoder-only denso) y se ajusta mediante SFT de una sola etapa con LoRA: rango 16, `lora_alpha=32`, learning rate `8e-5`, 1.5 epocas, schedule coseno, batch efectivo de 32 y evaluacion cada 15 pasos (mejor `eval_loss = 0.4170` en el checkpoint 135). El anclaje es el commit `0ebb9b2418` (v1.0 A100 Clean Base), lo que elimina la deriva acumulada de las versiones v2.0 a v3.2.2.
 
-La innovación técnica declarada es la "Isomorphic Latent Compensation": en lugar de poner a cero los vectores de rechazo y de idioma chino, se aplica atenuación de margen suave (τ) combinada con reequilibrio de energía entre dominios, de modo que la energía retirada del vector de rechazo se reinyecta en una dirección de "rigor de compilador" y la retirada del vector chino se compensa con una dirección inglés-vietnamita. Se impone además conservación estricta de la norma L2 (`x_out = (x + Δ) · (‖x‖₂ + ε) / (‖x + Δ‖₂ + ε)`) para mantener el escalado de RMSNorm y evitar la explosión de logits. La inferencia con el bundle requiere un hook dinámico en el forward (`apply_transmutation.py`); las versiones GGUF incorporan el efecto de forma estática.
+El curriculum `qwen_v3_2_3_curriculum.json` contiene 3.200 muestras (2.880 de entrenamiento y 320 de evaluacion estratificada): 600 de conversacion rapida en vietnamita y Q&A tecnico corto, 900 de codigo orientado a accion e ingenieria de sistemas (sin placeholders stub ni plantillas `SystemsUnit`), 800 de informatica formal, logica y razonamiento STEM (sin fuga del split `test` de MMLU), 820 de aritmetica GSM8K y razonamiento simbolico, y 80 dialogos multi-turno (2-3 turnos) de depuracion de codigo y autocorreccion. El enmascaramiento de perdida se aplica solo al turno del asistente (`train_on_prompt=False`), con `labels = -100` hasta el ultimo `<|im_start|>assistant\n` y terminacion verificada con `<|im_end|>` (token 151645) en las 3.200 muestras. El entrenamiento se valido en una NVIDIA A100-SXM4-80GB.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y vietnamita, con formato de chat Qwen (`<|im_start|>`, `<|im_end|>`) y bloque `<think>` para razonamiento previo a la respuesta.
-- Generación de código de sistemas: el autor orienta el modelo hacia C de bajo nivel (casting seguro a `size_t`, gestión de DMA, registro de IRQ, limpieza en orden LIFO).
-- Salida determinista de código mediante el fichero de gramática `compiler_mind.gbnf`, que restringe el muestreo a estructuras válidas de compilador.
-- Comportamiento de rechazo atenuado por edición de representaciones: el modelo tiende a responder en lugar de declinar, redirigiendo la negativa hacia exigencia técnica.
-- Reducción de la mezcla de chino en la salida y refuerzo del inglés POSIX y del vietnamita técnico.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible de forma explícita; solo se documenta el modo `<think>` heredado del base.
-- Capacidades de visión o audio: no disponibles.
+- Generacion de texto conversacional en vietnamita e ingles.
+- Razonamiento tecnico y de ingenieria de sistemas (compiladores, logica formal, STEM).
+- Generacion de codigo orientado a accion, sin stubs ni placeholders.
+- Razonamiento aritmetico y simbolico (curriculum GSM8K).
+- Depuracion de codigo multi-turno con autocorreccion (2-3 turnos).
+- Terminacion limpia de turnos con `<|im_end|>` (higiene EOS verificada 3/3).
+- No se documenta soporte de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- Generación de controladores y rutinas de bajo nivel en C: el modelo está calibrado para producir secuencias como adquisición de lock, mapeo DMA y registro de IRQ con limpieza en orden LIFO ante fallo, que es exactamente el ejemplo que documenta el autor.
-- Code review de código de sistemas: uso del modo `<think>` para trazar el flujo de recursos y detectar fugas o liberaciones fuera de orden en parches de kernel o drivers.
-- Generación restringida por gramática en pipelines de CI: con `compiler_mind.gbnf` se puede forzar que la salida cumpla una gramática de C o de una DSL interna antes de pasarla a un compilador, reduciendo iteraciones de compilación fallida.
-- Asistente de documentación técnica bilingüe inglés-vietnamita: el reequilibrio hacia `en_vi` está pensado para mantener cadenas de razonamiento en inglés POSIX y explicaciones en vietnamita técnico, útil en equipos mixtos de Vietnam.
-- Despliegue local en portátiles y móviles: la cuantización Q4_K_M de ~2,1 GB permite ejecutar el modelo en Ollama o llama.cpp en hardware de gama baja para autocompletado de código offline.
-- Prototipado rápido de prompts que requieren respuestas sin rechazo en dominios técnicos sensibles (por ejemplo, análisis de vulnerabilidades o ingeniería inversa de binarios), con la advertencia de que la atenuación del rechazo es una modificación de comportamiento no auditada.
-- Servicio de chat ligero en una sola GPU consumer: al ser un 4B, cabe en GPUs de 8-12 GB en FP16 y en menos con cuantización, lo que permite servir varios usuarios concurrentes con vLLM o llama.cpp.
+- Asistencia a ingenieria de compiladores: el modelo puede razonar sobre construcciones formales y generar codigo de sistemas sin plantillas stub, adecuado para tareas de analisis estatico o generacion de parsers.
+- Depuracion iterativa de codigo: los 80 dialogos multi-turno del curriculum permiten mantener conversaciones de 2-3 turnos para diagnosticar y corregir errores paso a paso.
+- Razonamiento logico y STEM: el bloque de 800 muestras de logica formal e informatica teorica lo hace util para resolver problemas de demostracion y verificacion.
+- Aritmetica y razonamiento simbolico: el bloque GSM8K (820 muestras) lo orienta a problemas matematicos de varios pasos con chain-of-thought.
+- Atencion tecnica en vietnamita: el bloque de 600 muestras conversacionales rapidas en vietnamita permite Q&A tecnico de baja latencia en ese idioma.
+- Despliegue en edge y portatiles: las cuantizaciones Q6_K (~3.46 GB) y Q4_K_M (~2.59 GB) permiten ejecucion en CPU de portatil o GPU integrada mediante Ollama o llama.cpp.
+- Evaluacion de higiene de generacion: util como referencia para pipelines que necesitan terminacion EOS fiable y ausencia de fugas de plantilla.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo afirma que la cuantización Q6_K alcanza un "99,5 % de precisión FP16" y que Q8_0 se usa como referencia de precisión, sin cifras de MMLU, HumanEval, GSM8K ni comparaciones numéricas.
+Resultados publicados en la model card, evaluados en NVIDIA A100:
+
+| Benchmark | v3.2.2 | v3.2.3 | Notas |
+|---|---|---|---|
+| Behavioral & EOS Hygiene Probe | Fallo (`<lim_end>`, fugas) | 3/3 (100%) | EOS limpio (151645) |
+| Open-Ended VN HumanEval (10 tareas) | 6/10 estricto (60.0%) | 8/10 estricto (80.0%), 10/10 higiene | Sin firmas en ingles ni limpieza regex |
+| HumanEval (Pass@1, 50 tareas) | 40/50 (80.0%) | 43/50 (86.0%) | Maximo historico (+6.0%) |
+| GSM8K (CoT batched, 100 tareas) | 72/100 (72.0%) | 75/100 (75.0%) | +3.0% pese a sustituir 80 muestras |
+| MMLU (College CS & Formal Logic, 101 tareas) | 57/101 (56.44%) con fuga del split `test` | 51/101 (50.50%) | Puntuacion honesta sin fuga |
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~8,8 GB en FP16 (4,41B parámetros × 2 bytes); ~2,1 GB con Q4_K_M; ~2,8 GB con Q6_K; ~3,6 GB con Q8_0.
-- GPU recomendadas: A100 o H100 para servir en FP16 con throughput alto; RTX 4090, RTX 3090 o RTX 4080 para FP16 con un solo usuario; RTX 3060 12 GB, RTX 4060 Ti 16 GB o GPUs de 8 GB en cuantización Q4/Q6.
-- Cabe en GPU consumer: sí, en cualquier GPU con 4 GB o más usando Q4_K_M; en CPU también es viable por el tamano reducido.
-- Opciones de despliegue: Ollama (Modelfile incluido), llama.cpp, LM Studio, y PyTorch con `apply_transmutation.py` para cargar el bundle de la capa 26. vLLM y TGI no se documentan en la información disponible.
-- Latencia y throughput: no disponibles; el autor solo califica Q6_K como "rápido en PC/Mac" sin cifras.
+- VRAM estimada: ~4.5 GB para Q8_0, ~3.5 GB para Q6_K, ~2.6 GB para Q4_K_M (tamanos de fichero GGUF; la VRAM real depende de la ventana de contexto y del backend).
+- GPU recomendadas: NVIDIA A100-SXM4-80GB (validacion oficial del entrenamiento); cualquier GPU con al menos 6-8 GB de VRAM para Q8_0 en contexto corto.
+- Cabe en GPU consumer: si, en tarjetas con 6-8 GB o mas (por ejemplo RTX 3060 12 GB, RTX 4060 8 GB, RTX 4090 24 GB) usando Q4_K_M o Q6_K.
+- Opciones de despliegue: Ollama (Modelfile incluido en la model card), llama.cpp (GGUF compilado con CMake AVX2/SIMD, `-DGGML_CUDA=OFF`), safetensors para frameworks compatibles con Qwen3ForCausalLM.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Qwen-Compiler-Mind-4B | 4,41B | no disponible | Apache 2.0 | HF, GGUF, Ollama | Edición de representaciones en capa 26; foco en C de sistemas |
-| Qwen3-4B (familia base) | ~4B | no disponible | Apache 2.0 | HF, GGUF, Ollama | Modelo original de Qwen; sin modificación de rechazo |
-| empero-ai/Qwen3.8-4B-Distill | ~4,3B (32 capas, hidden 2560) | no disponible | no disponible | HF | Base directo del modelo; sin reequilibrio latente |
-| Otros 4B de la familia Llama o Gemma | ~4B | no disponible | licencias propias | HF, GGUF | Alternativas de mismo tamano para despliegue local; sin capacidades de edición latente |
+| Modelo | Parametros | Contexto | HumanEval | GSM8K | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen-Compiler-Mind-4B v3.2.3 | 4.411 M | 128k (tag) | 86.0% (Pass@1) | 75.0% | Apache 2.0 | HF (safetensors + GGUF) |
+| Qwen3-4B (base) | ~4 M | no disponible | no disponible | no disponible | Apache 2.0 | HF |
+| Modelos de 4B comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de cifras de rendimiento comparativas en la información proporcionada, por lo que la comparación se limita a parametros, licencia y disponibilidad.
+No se dispone de datos de benchmarks de terceros para establecer una comparativa rigurosa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La atenuación del rechazo es una modificación de comportamiento no validada con evaluaciones de seguridad publicadas; puede aumentar respuestas a peticiones que el modelo base rechazaba, incluidas las de contenido dañino fuera del dominio técnico.
-- La conservación de norma L2 y el reequilibrio de energía son heurísticos; no hay benchmarks que confirmen que no degradan capacidades generales del base (conocimiento, matemáticas, multilingüismo amplio).
-- Idiomas declarados solo vi y en; el resto de idiomas, incluido el español, no está cubierto y el propio objetivo es reducir la salida en chino, lo que puede degradar tareas multilingües heredadas del base.
-- Longitud de contexto no documentada; no se puede asumir la ventana del Qwen3 original sin verificación.
-- El uso del bundle PyTorch requiere cargar hooks personalizados (`apply_transmutation.py`); las versiones GGUF no permiten desactivar la modificación, así que el comportamiento editado es irreversible en esos artefactos.
-- Riesgo de alucinación típico de un modelo 4B destilado, agravado por el sesgo hacia respuestas asertivas y por el modo `<think>` que puede producir cadenas de razonamiento largas y confiadas.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base `empero-ai/Qwen3.8-4B-Distill` tiene licencia "no disponible" en la información proporcionada; conviene verificar la compatibilidad antes de un despliegue comercial.
-- El repositorio ocupa 54,4 GB por incluir pesos safetensors además de los GGUF; la descarga completa no es necesaria si solo se usan las cuantizaciones.
-- Solo 173 descargas y 0 likes en el momento de la consulta: ecosistema de validación muy limitado.
+- Idiomas limitados a vietnamita e ingles; el castellano no esta declarado como soportado y el rendimiento en el mismo no esta verificado.
+- Riesgo de alucinacion en tareas fuera del curriculum de entrenamiento (3.200 muestras), especialmente en dominios no cubiertos por los bloques de codigo, logica y STEM.
+- La puntuacion MMLU honesta (50.50%) es inferior a la de la version v3.2.2 (56.44%), que estaba contaminada por fuga del split `test`; no debe compararse directamente con resultados de terceros sin verificar la ausencia de fuga.
+- El contexto de 128k solo aparece como tag; no se documenta en la model card ni se verifica experimentalmente, por lo que debe tratarse con cautela en produccion.
+- El modelo base declarado en Hugging Face coincide con el propio ID (`Trivnpk/Qwen-Compiler-Mind-4B`), lo que sugiere una cadena de fine-tuning sobre si misma; conviene auditar la procedencia antes de uso comercial.
+- El repo ocupa 273.6 GB, muy superior al peso de los pesos en safetensors, probablemente por checkpoints intermedios; la descarga completa puede ser costosa.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre calidad ni sobre sesgos; no se documentan evaluaciones de sesgo.
+- El enfasis en "higiene EOS" y "cero fugas" es una afirmacion del autor basada en 3.200 muestras; no hay validacion independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Trivnpk/Qwen-Compiler-Mind-4B
-- Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
-- Organización Qwen en Hugging Face: https://huggingface.co/Qwen/models
-- Guía de uso con llama.cpp (enlazada desde la model card): https://huggingface.co/Trivnpk/Qwen-Compiler-Mind-4B
-- Papers, blogs, repositorios o demos adicionales: no disponible en la información proporcionada.
+- Hugging Face: https://huggingface.co/Trivnpk/Qwen-Compiler-Mind-4B
+- No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.

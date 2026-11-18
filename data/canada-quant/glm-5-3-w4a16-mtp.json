@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 21,
-  "downloads_30d": 2813,
+  "downloads_30d": 2851,
   "trending_score": 0,
   "parameters": 49913588606,
   "parameters_human": "49.91B",
@@ -65,31 +65,5 @@
   "renamed_to": "canada-quant/GLM-5.3-Flash-W4A16-MTP",
   "renamed_at": "2026-11-11T04:46:06.283Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "canada-quant (Canada Quant Labs) - Hugging Face",
-      "url": "https://huggingface.co/canada-quant/models",
-      "snippet": "AI & ML interests Canada Quant Labs — Canada&#x27;s open-weight model lab. We train, quantize, and ship sovereign reference models for regulated industries (legal, medical, defence, finance) on a DGX B300 at Equinix Vancouver. Upstream contributors to vLLM and llm-compressor. Recipes: W4A16, NVFP4, MXFP4."
-    },
-    {
-      "title": "Canada Quant Labs - GitHub",
-      "url": "https://github.com/canada-quant",
-      "snippet": "GLM-5.2 (744B MoE, ~40B active, MLA + DeepSeek Sparse Attention, native 1M context, MIT). We shipped one artifact: W4A16 INT4 on the routed experts with the BF16 MTP draft head preserved for speculative decoding (attention, dense layers 0-2, shared experts, router, embeddings, lm_head, and MTP layer 78 stay BF16)."
-    },
-    {
-      "title": "Models · Canada Quant Labs",
-      "url": "https://cql.ca/models.html",
-      "snippet": "Open-weight models trained, quantized, and shipped by Canada Quant Labs — W4A16, NVFP4, and MTP-speculative checkpoints for vLLM, plus the DGX B300 hardware and toolchain behind them."
-    },
-    {
-      "title": "JANGQ-AI/GLM-5.3-W4A16 · Hugging Face",
-      "url": "https://huggingface.co/JANGQ-AI/GLM-5.3-W4A16",
-      "snippet": "JANGQ-AI / GLM-5.3-W4A16 like 1 Follow JANG_Q - GGUF for MLX 385 Text Generation Transformers Safetensors English Chinese glm_moe_dsa jang w4a16 int4 compressed-tensors vllm marlin glm glm-moe-dsa Mixture of Experts hopper h200 mtp conversational License:glm-5.3 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
-    },
-    {
-      "title": "Running GLM-5.2 on half the GPUs: a W4A16 + MTP quantization",
-      "url": "https://cql.ca/news/glm-5-2-w4a16-mtp.html",
-      "snippet": "A 4-bit weight quant of GLM-5.2 (744B MoE) that keeps the MTP draft head in BF16 — matching FP8 on quality, fitting on four H200s instead of eight, and fastest of the popular 4-bit quants in the interactive regime."
-    }
-  ]
+  "sources": []
 }

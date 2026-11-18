@@ -26,9 +26,9 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 5866,
-  "downloads_30d": 479986,
-  "trending_score": 95.5,
+  "likes": 5891,
+  "downloads_30d": 492972,
+  "trending_score": 89,
   "parameters": 763205315794,
   "parameters_human": "763.21B",
   "storage_bytes": 510750942072,
@@ -49,29 +49,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "DeepSeek | Into the Unknown",
-      "url": "https://www.deepseek.com/",
-      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+      "title": "DeepSeek - Into the Unknown",
+      "url": "https://chat.deepseek.com/sign_in",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    },
+    {
+      "title": "DeepSeek | API 开放平台",
+      "url": "https://www.deepseek.com/platform/",
+      "snippet": "DeepSeek-V4-Pro 百万 tokens 输入（缓存命中） 0.025 元 输入（缓存未命中） 3 元 输出 6 元 自动缓存，缓存命中价格直降 支持 1M …"
     },
     {
       "title": "DeepSeek | API Platform",
       "url": "https://www.deepseek.com/en/platform/",
-      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+      "snippet": "Build with DeepSeek API Code your application Build new products, experiences, and workflows with the DeepSeek V4 series"
     },
     {
-      "title": "DeepSeek App",
-      "url": "https://download.deepseek.com/",
-      "snippet": "下载 DeepSeek 应用 - 您的智能助手，随时随地享受 AI 服务。 支持 iOS 和 Android 平台。 | Download DeepSeek App - Your …"
+      "title": "DeepSeek",
+      "url": "https://cdn.deepseek.com/",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
     },
     {
-      "title": "DeepSeek · GitHub",
-      "url": "https://github.com/deepseek-ai",
-      "snippet": "Type Language Sort deepseek-harness Public DeepSeek Harness: Everything is a Plugin."
-    },
-    {
-      "title": "DeepSeek — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/DeepSeek",
-      "snippet": "Début 2025, DeepSeek dévoile son IA, qui est publiée en open source (sous licence MIT). Ses performances sont comparables, …"
+      "title": "DeepSeek Platform",
+      "url": "https://platform.deepseek.com/dashboard",
+      "snippet": "Join DeepSeek API platform to access our AI models, developer resources and API documentation."
     }
   ]
 }

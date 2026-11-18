@@ -27,8 +27,8 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 1867,
-  "downloads_30d": 4332487,
+  "likes": 1869,
+  "downloads_30d": 4354817,
   "trending_score": 15,
   "parameters": 7996156490,
   "parameters_human": "8.00B",
@@ -50,29 +50,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Gemma 4 model card | Google AI for Developers",
-      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
-      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
     },
     {
-      "title": "Gemma 4 — Google DeepMind",
-      "url": "https://deepmind.google/models/gemma/gemma-4/",
-      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
     },
     {
-      "title": "google/gemma-4-E4B-it · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-E4B-it",
-      "snippet": "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety."
+      "title": "Google — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google",
+      "snippet": "La société compte environ 50 000 employés. La plupart travaillent au siège mondial : le Googleplex, à Mountain View en Californie. …"
     },
     {
-      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
-      "url": "https://gemma4.dev/models/gemma-4-e4b",
-      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google&#x27;s most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+      "title": "Présentation",
+      "url": "https://search.google/intl/fr-FR/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
     },
     {
-      "title": "Gemma 4 model overview - Google AI for Developers",
-      "url": "https://ai.google.dev/gemma/docs/core",
-      "snippet": "Native System Prompt Support: Gemma 4 introduces built-in support for the system role, enabling more structured and controllable conversations. Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss."
+      "title": "Google (moteur de recherche) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google_(moteur_de_recherche)",
+      "snippet": "Google est à l'origine un moteur de recherche de pages web, qui s'est étendu progressivement à divers types de documents (PDF, …"
     }
   ]
 }

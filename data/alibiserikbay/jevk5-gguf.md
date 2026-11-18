@@ -2,125 +2,110 @@
 
 ## Resumen
 
-JevK5-GGUF es el conjunto de versiones cuantizadas en formato GGUF de los modelos de decisión JevK5 (4B) y JevK5-2B, desarrollados por el usuario alibiserikbay y publicados bajo licencia Apache-2.0. A diferencia de un modelo generativo convencional, JevK5 no redacta respuestas: recibe un documento (evidencia), un criterio y una pregunta de tipo sí/no, elección múltiple o puntuación, y devuelve en una única pasada forward una probabilidad calibrada para cada opción, leída directamente de los log-probabilidades del siguiente token correspondiente a las letras de respuesta. El autor lo presenta explícitamente como una alternativa abierta y no afiliada a Jev, el producto de decisión de TypeSafe AI.
+JevK5-GGUF es la distribucion en formato GGUF de la familia de modelos JevK5, desarrollada por alibiserikbay y publicada bajo licencia Apache-2.0. No es un modelo generativo al uso: se trata de un modelo de decision ("decision-model", etiquetado como *system-one*) que recibe un documento y una pregunta de tipo si/no, eleccion multiple o puntuacion, y devuelve en un unico paso hacia delante una probabilidad para cada opcion, sin generar texto. La respuesta se obtiene leyendo los log-probabilidades del siguiente token correspondiente a las letras de cada opcion.
 
-El interés de esta publicación está en el empaquetado para llama.cpp: permite ejecutar el modelo en GPU de NVIDIA, AMD, Intel y Apple, además de en CPU sin acelerador, con ficheros de entre 2,01 GB y 4,48 GB. El autor documenta que la cuantización Q8_0 es prácticamente sin pérdida (228/231 y 226/231 respuestas idénticas al modelo bf16 de referencia en JevBench) y que la Q4_K_M del modelo de 4B cabe en GPUs de 4 GB y Macs de 8 GB, a cambio de modificar 12 respuestas, diez de ellas en el nivel de dificultad alto.
+El repositorio agrupa cuantizaciones de tres variantes del modelo base: JevK5 (4B), JevK5-9B y JevK5-2B. El modelo de mayor tamano del que se dispone de recuento real de parametros es el de 1.881.825.088 parametros (aproximadamente 1,9B), correspondiente a la variante 2B. La propuesta de valor es permitir inferencia en GPU de consumo, GPU integradas (NVIDIA, AMD, Intel, Apple Metal) e incluso CPU, manteniendo una fidelidad alta respecto a los pesos bf16 de referencia.
 
-La relevancia actual del proyecto es práctica: cubre el nicho de modelos de enrutado, clasificación y evaluación que devuelven una distribución de probabilidad calibrada en lugar de texto generado, con latencias de entre 9 y 14 ms por decisión en H100 mediante el runtime de transformers con grafos CUDA, y de 0,23 a 0,6 segundos por decisión en CPU o en Metal. Se publica en inglés y con 0 descargas y 0 likes en el momento de la consulta, por lo que su validación por parte de la comunidad es todavía nula.
+Su relevancia actual radica en que ofrece una alternativa abierta a Jev de TypeSafe (sin afiliacion) para tareas de clasificacion y decision tipada con calibracion de probabilidades, un nicho donde los LLM generativos son caros e imprecisos. El autor valida cada fichero cuantizado contra su version sin cuantizar sobre 231 decisiones publicas de JevBench y solo publica aquellos que coinciden en al menos el 95% de las respuestas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la informacion proporcionada; el repositorio de GitHub del autor describe la variante de 4B como Qwen3.5-4B mas un LoRA destilado |
-| Parametros totales | 1.881.825.088 (~1,88 mil millones) segun los metadatos del repositorio; el autor publica variantes nominales de 4B (JevK5) y 2B (JevK5-2B) |
-| Parametros activos | No aplica: no se describe una arquitectura de mezcla de expertos |
-| Longitud de contexto | No disponible; el ejemplo de arranque de `llama-server` usa `-c 8192` |
-| Tipos de cuantizacion | Q8_0 y Q4_K_M en GGUF; los modelos base sin cuantizar estan en bf16 |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | no disponible (modelo de decision tipo *system-one*; pesos transformer, detalle no especificado) |
+| Parametros totales | 1.881.825.088 (variante 2B); 4B y 9B segun nombre de variante |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (el ejemplo de despliegue usa `-c 8192`) |
+| Tipos de cuantizacion | Q8_0, Q5_K_M, Q4_K_M (y referencia bf16 sin cuantizar) |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); los modelos base se distribuyen en bf16 |
-| Variantes publicadas | `jevk5-4b-v0.2-Q8_0.gguf` (4,48 GB), `jevk5-4b-v0.2-Q4_K_M.gguf` (2,71 GB), `jevk5-2b-v0.2-Q8_0.gguf` (2,01 GB) |
-| Tamano del repositorio | 9,2 GB |
-| Temperatura de calibracion | 1,532 para JevK5 4B; 1,42 para JevK5-2B |
-| Modelos base | alibiserikbay/JevK5 y alibiserikbay/JevK5-2B |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
+| Formato de pesos | GGUF (para llama.cpp); referencia bf16 en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo mas alla de su naturaleza de modelo de decision y de la descripcion del repositorio de GitHub, que indica que la variante de 4B parte de Qwen3.5-4B con un LoRA destilado. El comportamiento observable si esta documentado con precision: el modelo consume un prompt con formato de chat tipo ChatML (`<|im_start|>system`, `<|im_start|>user`, `<|im_start|>assistant`) que incluye un bloque `<think>` vacio antes de la respuesta, y su salida util no es texto generado sino la distribucion de log-probabilidades del primer token de respuesta. El cliente de referencia pide `n_predict: 1` con `temperature: 0` y `n_probs: 40`, reconstruye las log-probabilidades de las letras de opcion (A, B, C...) y las normaliza con la temperatura de calibracion mediante una softmax. El autor afirma que este cliente reproduce exactamente las probabilidades de la implementacion de referencia, con una diferencia maxima de 0,0 en items de tipo si/no, eleccion y puntuacion.
+La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un modelo de decision con enfoque *system-one*: produce una distribucion de probabilidad sobre las opciones en un unico paso hacia delante, leyendo los log-probabilidades del siguiente token asociado a cada letra de respuesta. No se especifican el numero de capas, la dimension oculta, el mecanismo de atencion ni la composicion del dataset de entrenamiento.
 
-En cuanto al entrenamiento, no se proporcionan datos sobre el numero de tokens, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. La model card menciona que los ficheros GGUF se generaron con `convert_hf_to_gguf.py` de llama.cpp, aunque el texto de la model card facilitado esta truncado en ese punto, por lo que no se pueden detallar los commits, parametros de conversion ni el procedimiento completo de cuantizacion. El modelo se evalua con JevBench, un conjunto de 231 decisiones publicas organizadas en tres niveles de dificultad (facil, estandar y dificil), y la calibracion se trata como una propiedad de primer orden del sistema, no como un ajuste posterior.
+El proceso de publicacion de las cuantizaciones si esta documentado con rigor: cada fichero GGUF se evalua contra su equivalente bf16 sobre las 231 decisiones publicas de JevBench, midiendo la tasa de coincidencia de respuesta y la precision por nivel de dificultad (facil, estandar, dificil). Se descartan los ficheros con menos del 95% de coincidencia. Ademas, cada variante requiere sus propias temperaturas de calibracion (`temperature` y `knockout_temperature`), lo que sugiere un ajuste de calibracion especifico por modelo y version. No se mencionan RLHF, DPO ni tecnicas de decodificacion especulativa.
 
 ## Capacidades
 
-- Decisiones tipadas en una sola pasada forward: preguntas de si/no, de eleccion entre multiples opciones identificadas por letra y de puntuacion por niveles, sin generar texto.
-- Salida de una distribucion de probabilidad calibrada sobre todas las opciones, no solo la opcion ganadora, lo que permite aplicar umbrales de confianza y abstenerse por debajo de un umbral.
-- Inferencia determinista: el cliente de referencia usa `temperature: 0` y `n_predict: 1`, de modo que la misma entrada produce la misma distribucion.
-- Aplicacion de un criterio explicito proporcionado en el prompt a una evidencia documental tambien proporcionada en el prompt.
-- Ejecucion local en CPU sin GPU, y en GPUs NVIDIA, AMD, Intel y Apple mediante llama.cpp con soporte Metal.
-- Modo conversacional mediante plantilla de chat ChatML, aunque su uso previsto es el de decision puntual y no el de dialogo multi-turno.
-- Etiquetas declaradas por el autor: `decision-model`, `system-one`, `typed-decisions`, `calibration`, `jev-alternative`.
-- No se documentan capacidades de tool calling, function calling, agentes, vision, audio, ni modos de razonamiento extendido. El bloque `<think>` presente en la plantilla se envia vacio.
+- Decision tipada: responde preguntas de tipo si/no, eleccion multiple y puntuacion devolviendo una probabilidad por opcion.
+- Clasificacion de documentos: lee un texto y lo asigna a una de las categorias definidas en los criterios.
+- Salida calibrada: la respuesta es una distribucion de probabilidad, no texto generado, lo que permite umbrales y analisis de confianza.
+- Soporte de mas de 16 opciones mediante el parametro `knockout_temperature` (requiere jevk5 0.3.0 o superior).
+- Ejecucion en un unico paso hacia delante, sin generacion autoregresiva de texto.
+- Compatibilidad con llama.cpp en GPU NVIDIA, AMD, Intel y Apple (Metal) y en CPU.
+- Integracion mediante el runtime `JevK5GGUF` del paquete `jevk5` o mediante un cliente independiente de biblioteca estandar.
+- No se documentan capacidades de generacion de texto libre, codigo, matematicas, vision, audio, tool calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Enrutado o triaje de tickets de soporte: el modelo recibe el texto del ticket como evidencia y devuelve la probabilidad de que corresponda a facturacion, soporte tecnico o ventas. Es el ejemplo que incluye la propia model card y encaja porque la decision es cerrada, con pocas clases y con necesidad de umbral de confianza para derivar a un humano.
-- Moderacion y cumplimiento normativo: con preguntas de tipo si/no del estilo "¿incumple esta politica?", el modelo devuelve la probabilidad de cada respuesta, lo que permite fijar un umbral de escalado en lugar de depender de una generacion binaria poco calibrada.
-- Seleccion de herramienta o fuente en un pipeline RAG: dada la consulta del usuario y la lista de herramientas o indices disponibles, el modelo puntua cada opcion y se elige la de mayor probabilidad, con el coste de una sola pasada forward en lugar de una llamada generativa completa.
-- Prefiltrado en pipelines de agentes: decidir si una consulta requiere una llamada al modelo grande o puede resolverse con una regla o con un recuperador, usando la probabilidad como senal de confianza para escalar. La latencia en CPU (0,23-0,6 s) lo hace viable como etapa previa.
-- Evaluacion automatica de respuestas con escala de puntuacion: dada una respuesta y una rubrica, el modelo devuelve una distribucion sobre los niveles 0, 1, 2... en lugar de una nota unica generada, lo que facilita agregar incertidumbre en la evaluacion de datasets.
-- Verificacion de afirmaciones sobre documentos largos: comprobar si un texto respalda una afirmacion concreta con una probabilidad de "verdadero" y "falso", util en revision documental y en control de calidad de resumenes.
-- Etiquetado de datasets a escala: clasificacion automatica de grandes volumenes de texto con un umbral de confianza que derive a revision manual los casos dudosos, usando la variante de 2B en Q8_0 sobre CPU para abaratar el coste por item.
-- Despliegue en entornos sin GPU: la variante de 2B en Q8_0 (2,01 GB) funciona en CPU con 48 hilos a 0,23-0,27 s por decision en documentos cortos, lo que la hace adecuada para equipos de desarrollo, portatiles y entornos on-premise sin acelerador.
+- Clasificacion de tickets de soporte: dado el texto de una incidencia y un conjunto de criterios (por ejemplo, categoria o severidad), el modelo devuelve la probabilidad de cada etiqueta en una sola pasada, lo que permite enrutar automaticamente y priorizar por confianza.
+- Verificacion de datos en logistica: el ejemplo de la model card evalua si un pedido fue entregado o mal entregado comparando direcciones; el modelo asigna probabilidad a "delivered", "misdelivered" o "unknown", adecuado para auditoria de registros.
+- Moderacion y filtrado de contenido: preguntas de tipo si/no sobre un texto permiten construir un clasificador binario calibrado con umbral ajustable, sin coste de generacion.
+- Enrutamiento en pipelines de agentes: usar el modelo como arbitro rapido que decide entre opciones discretas (herramienta A, herramienta B, escalar a humano) antes de invocar un LLM mayor.
+- Analisis de encuestas y respuestas abiertas: puntuacion de textos segun criterios definidos, aprovechando la salida probabilistica para agregar resultados con intervalos de confianza.
+- Despliegue en entornos sin GPU: la variante 2B Q8_0 (2,01 GB) permite ejecutar decisiones cortas en CPU con baja latencia, util para servicios edge o portatiles.
+- Evaluacion de conformidad documental: comprobar si un contrato o formulario cumple una lista de criterios binarios, con la probabilidad como medida de certeza para revision humana.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre las 231 decisiones publicas de JevBench. La columna "misma respuesta que bf16" indica cuantas decisiones coinciden con el modelo sin cuantizar. Los niveles facil, estandar y dificil son exactitudes por nivel.
+Resultados sobre las 231 decisiones publicas de JevBench (coincidencia con bf16 y precision por nivel):
 
-| Fichero | Modelo | Tamano | Misma respuesta que bf16 | Facil | Estandar | Dificil |
+| Fichero | Modelo | Tamano | Coincidencia con bf16 | Facil | Estandar | Dificil |
 |---|---|---:|---:|---:|---:|---:|
-| `jevk5-4b-v0.2-Q8_0.gguf` | JevK5 4B | 4,48 GB | 228 / 231 | 1,000 | 0,958 | 0,721 |
-| `jevk5-4b-v0.2-Q4_K_M.gguf` | JevK5 4B | 2,71 GB | 219 / 231 | 1,000 | 0,931 | 0,730 |
+| `jevk5-4b-v0.3-Q8_0.gguf` | JevK5 v0.3 (4B) | 4,48 GB | 229 / 231 | 1,000 | 0,944 | 0,784 |
+| `jevk5-4b-v0.3-Q5_K_M.gguf` | JevK5 v0.3 (4B) | 3,07 GB | 224 / 231 | 1,000 | 0,944 | 0,784 |
+| `jevk5-4b-v0.3-Q4_K_M.gguf` | JevK5 v0.3 (4B) | 2,71 GB | 221 / 231 | 1,000 | 0,917 | 0,766 |
+| `jevk5-9b-v0.3.3-Q8_0.gguf` | JevK5-9B v0.3.3 | 9,53 GB | 229 / 231 | 1,000 | 0,958 | 0,766 |
+| `jevk5-9b-v0.3.3-Q5_K_M.gguf` | JevK5-9B v0.3.3 | 6,47 GB | 228 / 231 | 1,000 | 0,958 | 0,757 |
+| `jevk5-9b-v0.3-Q8_0.gguf` | JevK5-9B v0.3 | 9,53 GB | 229 / 231 | 1,000 | 0,944 | 0,721 |
+| `jevk5-9b-v0.3-Q5_K_M.gguf` | JevK5-9B v0.3 | 6,47 GB | 225 / 231 | 1,000 | 0,944 | 0,703 |
+| `jevk5-4b-v0.2-Q8_0.gguf` | JevK5 v0.2 (4B) | 4,48 GB | 228 / 231 | 1,000 | 0,958 | 0,721 |
+| `jevk5-4b-v0.2-Q4_K_M.gguf` | JevK5 v0.2 (4B) | 2,71 GB | 219 / 231 | 1,000 | 0,931 | 0,730 |
 | `jevk5-2b-v0.2-Q8_0.gguf` | JevK5-2B | 2,01 GB | 226 / 231 | 1,000 | 0,792 | 0,622 |
-| bf16 de referencia | JevK5 4B | 8,4 GB | — | 1,000 | 0,958 | 0,739 |
-| bf16 de referencia | JevK5-2B | 3,8 GB | — | 1,000 | 0,806 | 0,604 |
 
-Otros datos de rendimiento aportados por el autor:
+Referencias bf16: JevK5 v0.3 (4B) 8,4 GB con 1,000 / 0,944 / 0,784; JevK5-9B v0.3.3 17,9 GB con 1,000 / 0,958 / 0,775; JevK5-9B v0.3 17,9 GB con 1,000 / 0,944 / 0,730; JevK5 v0.2 (4B) 8,4 GB con 1,000 / 0,958 / 0,739; JevK5-2B 3,8 GB con 1,000 / 0,806 / 0,604.
 
-| Hardware | JevK5-2B Q8_0 | JevK5 4B Q8_0 |
-|---|---:|---:|
-| Solo CPU, 48 hilos (servidor) | ~0,23-0,27 s | ~0,57 s |
-| Apple M1 Pro, Metal | no medido | ~0,6 s |
-
-Los tiempos corresponden a documentos cortos de unos 170 tokens y aumentan con la longitud del documento: aproximadamente 0,7-1,0 s (2B) y 1,8 s (4B) en CPU para los items dificiles del benchmark. Las GPU de consumo NVIDIA, AMD e Intel no se han medido. Para la latencia mas baja en NVIDIA, el runtime de transformers del repositorio del autor usa grafos CUDA y reporta unos 9-14 ms por decision en una H100. El autor senala que una compilacion Q8_0 del 4B construida del mismo modo y ejecutada en un M1 Pro con Metal coincidio en 230 de 231 respuestas.
+Ficheros descartados por no alcanzar el 95% de coincidencia: 9B v0.3.3 Q4_K_M (222/231, dificil 0,730), 9B v0.3 Q4_K_M (218/231) y 2B Q4_K_M (29 respuestas cambiadas, dificil de 0,604 a 0,514).
 
 ## Requisitos de hardware
 
-- Guia de seleccion del propio autor: GPU de 6 GB o mas, `jevk5-4b-v0.2-Q8_0` (4,48 GB); GPU de 4 GB, `jevk5-4b-v0.2-Q4_K_M` (2,71 GB) o `jevk5-2b-v0.2-Q8_0` (2,01 GB); sin GPU, `jevk5-2b-v0.2-Q8_0`.
-- La Q4_K_M del 4B cabe en GPUs de 4 GB y en Macs de 8 GB, segun el autor.
-- Los modelos de referencia sin cuantizar ocupan 8,4 GB (4B) y 3,8 GB (2B) en bf16; el repositorio completo ocupa 9,2 GB.
-- VRAM exacta de inferencia (incluyendo memoria de contexto y overhead del runtime): no disponible. Los tamanos de fichero anteriores son el dato mas proximo aportado.
-- Aceleradores compatibles: GPUs NVIDIA, AMD, Intel y Apple (Metal), ademas de CPU. No se han publicado mediciones en GPU de consumo NVIDIA, AMD o Intel.
-- Despliegue: `llama-server` es el unico runtime probado por el autor, y es necesario porque la calibracion requiere una API que devuelva las log-probabilidades de las letras de respuesta para un prompt ya tokenizado. Ejemplo de arranque: `llama-server --hf-repo alibiserikbay/JevK5-GGUF --hf-file jevk5-2b-v0.2-Q8_0.gguf -c 8192 -ngl 99`.
-- Ollama y LM Studio pueden cargar los ficheros, pero el autor no ha verificado si sus APIs exponen las log-probabilidades necesarias para obtener las probabilidades calibradas.
-- No se mencionan vLLM, TGI ni otros servidores como opciones soportadas.
-- Latencia medida: 0,23-0,27 s (2B Q8_0) y 0,57 s (4B Q8_0) en CPU de 48 hilos para documentos cortos; ~0,6 s (4B Q8_0) en M1 Pro con Metal; 9-14 ms por decision en H100 con el runtime de transformers y grafos CUDA. Throughput con peticiones concurrentes: no disponible, las mediciones son de una decision a la vez.
-- El autor advierte de que no se publica una Q4_K_M del modelo de 2B porque modificaba 29 respuestas y bajaba la exactitud en el nivel dificil de 0,604 a 0,514.
+- VRAM estimada: desde unos 2 GB (2B Q8_0) hasta unos 10 GB (9B Q8_0), segun fichero.
+- GPU recomendadas: cualquier GPU con 6 GB o mas para el 4B Q8_0; 9,5 GB o mas para el 9B Q8_0; soporte de NVIDIA, AMD, Intel y Apple (Metal).
+- GPU de consumo: si, el 4B Q4_K_M (2,71 GB) y el 2B Q8_0 (2,01 GB) caben en GPUs de gama media y en equipos con memoria unificada.
+- CPU: la variante 2B Q8_0 es la opcion mas rapida sin GPU; el 4B Q8_0 tarda aproximadamente 0,6 s por decision corta en CPU.
+- Despliegue: `llama-server` de llama.cpp (necesario porque expone los log-probabilidades); ejemplo `llama-server --hf-repo alibiserikbay/JevK5-GGUF --hf-file jevk5-4b-v0.3-Q8_0.gguf -c 8192 -ngl 99`.
+- Cliente: paquete `jevk5` (`pip install --no-deps "jevk5 @ git+https://github.com/allebee/jevk5@v0.3.3"`) o cliente independiente de biblioteca estandar.
+- Throughput: no disponible; solo se documenta la latencia aproximada de 0,6 s por decision corta en CPU para el 4B Q8_0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | JevBench (estandar / dificil) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JevK5 4B, Q8_0 (este repositorio) | 4B nominal | no disponible | 0,958 / 0,721 | Apache-2.0 | GGUF publico en Hugging Face |
-| JevK5 4B, bf16 (modelo base) | 4B nominal | no disponible | 0,958 / 0,739 | Apache-2.0 | Pesos en Hugging Face |
-| JevK5-2B, Q8_0 (este repositorio) | 2B nominal | no disponible | 0,792 / 0,622 | Apache-2.0 | GGUF publico en Hugging Face |
-| TypeSafe Jev | no disponible | no disponible | no disponible | Propietaria | Servicio propietario, del que este proyecto se declara alternativa no afiliada |
+| JevK5-GGUF (4B / 9B / 2B) | 1,9B (2B); 4B y 9B por variante | no disponible | Decision tipada con probabilidades | Apache-2.0 | Hugging Face, GGUF |
+| Jev (TypeSafe) | no disponible | no disponible | Decision tipada | no disponible | Comercial (sin afiliacion) |
+| LLM generativos de 2B-9B | 2B-9B | variable | Generacion de texto | variable | amplia |
 
-No se dispone de datos de otros modelos de decision abiertos comparables (parametros, contexto o resultados de JevBench) en la informacion proporcionada.
+La comparacion con Jev de TypeSafe es la referencia directa que cita el autor como alternativa abierta; no se dispone de especificaciones publicas de ese modelo en la informacion proporcionada. Frente a LLM generativos del mismo rango de parametros, la diferencia es funcional: JevK5 no genera texto y devuelve una distribucion calibrada en una sola pasada, lo que lo hace mas barato y determinista para clasificacion, pero inutil para generacion libre.
 
 ## Limitaciones y advertencias
 
-- Modelo unicamente en ingles; no se declara soporte de otros idiomas.
-- No es un modelo generativo: su salida util son log-probabilidades de un unico token. Usarlo para generar texto libre queda fuera de su diseno documentado.
-- La calibracion solo esta verificada con `llama-server`. Con Ollama, LM Studio u otros clientes basados en llama.cpp, el autor no ha comprobado que las log-probabilidades esten disponibles y sean equivalentes.
-- La evaluacion se apoya en 231 decisiones publicas de JevBench, un conjunto pequeno y con niveles de dificultad definidos por el propio autor del modelo; no hay validacion independiente.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de uso en produccion por terceros.
-- La cuantizacion Q4_K_M del 4B cambia 12 respuestas respecto a bf16, diez de ellas en el nivel dificil. Para decisiones sensibles conviene usar Q8_0 o recalibrar el umbral de confianza.
-- La variante de 2B en Q4_K_M no se publica deliberadamente por la perdida de calidad (29 respuestas modificadas, exactitud dificil de 0,604 a 0,514), de modo que en GPUs muy ajustadas la unica opcion es Q8_0.
-- No se han medido latencias en GPUs de consumo NVIDIA, AMD e Intel, asi que las cifras de rendimiento solo estan contrastadas en CPU, Apple Metal y H100.
-- Riesgo de alucinacion: estructuralmente no puede inventar texto, pero si puede asignar alta probabilidad a una opcion incorrecta cuando la evidencia es ambigua o el criterio esta mal formulado. La model card no documenta evaluaciones de sesgo ni de robustez ante entradas adversarias.
-- La licencia del modelo publicado es Apache-2.0, pero la informacion proporcionada no detalla los terminos de los modelos base ni del LoRA destilado (se menciona Qwen3.5-4B en la descripcion del repositorio de GitHub). Conviene verificar esas condiciones antes de un uso comercial.
-- Existe una discrepancia entre los metadatos de Hugging Face (1.881.825.088 parametros) y los nombres comerciales de las variantes (4B y 2B). El metadato probablemente corresponde a una de las variantes y no al conjunto del repositorio; no se especifica a cual.
-- La model card disponible esta truncada en la seccion de creacion de los ficheros, por lo que faltan detalles del proceso de conversion y cuantizacion.
-- El proyecto no esta afiliado a TypeSafe AI ni a su producto Jev; la comparacion con este ultimo procede del propio autor.
+- Solo soporta ingles; no se documenta soporte multilingue.
+- No es un modelo generativo: no produce texto libre, codigo ni razonamiento multi-paso.
+- Requiere `llama-server` para acceder a los log-probabilidades; no funciona con clientes que no las expongan.
+- Cada fichero necesita sus propias temperaturas de calibracion; usar valores incorrectos degrada la calibracion.
+- Las cuantizaciones Q4_K_M de 9B y 2B no se publicaron por perdida de fidelidad; el 2B Q4_K_M cae de 0,604 a 0,514 en el nivel dificil.
+- La precision en el nivel dificil es moderada (0,622-0,784), por lo que en casos complejos conviene revision humana.
+- Riesgo de sesgo y alucinacion no documentado en la informacion disponible.
+- Licencia Apache-2.0 permite uso comercial, pero no se detallan condiciones adicionales ni datos de entrenamiento que permitan evaluar sesgos.
+- No afiliado a TypeSafe AI; la comparacion con Jev es responsabilidad del usuario.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/alibiserikbay/JevK5-GGUF
-- Modelo base JevK5: https://huggingface.co/alibiserikbay/JevK5
+- Hugging Face: https://huggingface.co/alibiserikbay/JevK5-GGUF
+- Modelo base JevK5 (4B): https://huggingface.co/alibiserikbay/JevK5
+- Modelo base JevK5-9B: https://huggingface.co/alibiserikbay/JevK5-9B
 - Modelo base JevK5-2B: https://huggingface.co/alibiserikbay/JevK5-2B
-- Repositorio del autor en GitHub: https://github.com/allebee/jevk5
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- JevBench: mencionado en la model card, sin URL disponible en la informacion proporcionada
-- TypeSafe Jev: mencionado como producto propietario al que este modelo sirve de alternativa, sin URL disponible en la informacion proporcionada
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Runtime jevk5: https://github.com/allebee/jevk5

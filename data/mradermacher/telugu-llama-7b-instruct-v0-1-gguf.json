@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/telugu-llama-7b-instruct-v0.1-GGUF",
+  "slug": "mradermacher-telugu-llama-7b-instruct-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/telugu-llama-7b-instruct-v0.1-GGUF",
+  "created_at": "2024-12-18T08:30:36.000Z",
+  "updated_at": "2026-11-18T05:11:07.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "te",
+    "base_model:abhinand/telugu-llama-7b-instruct-v0.1",
+    "base_model:quantized:abhinand/telugu-llama-7b-instruct-v0.1",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 257,
+  "trending_score": 0,
+  "parameters": 6875254784,
+  "parameters_human": "6.88B",
+  "storage_bytes": 60926213888,
+  "storage_human": "60.9 GB",
+  "context_length": 4096,
+  "base_model": "abhinand/telugu-llama-7b-instruct-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -36,9 +36,9 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 3533,
-  "downloads_30d": 591350,
-  "trending_score": 27.5,
+  "likes": 3536,
+  "downloads_30d": 613494,
+  "trending_score": 25,
   "parameters": 744371512,
   "parameters_human": "744.4M",
   "storage_bytes": 3015790420,
@@ -65,23 +65,23 @@
     },
     {
       "title": "Google",
-      "url": "https://ipv4.google.com/?hl=fr",
-      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
     },
     {
-      "title": "Google",
-      "url": "https://www.google.com/?hl=fr&hl=fr",
-      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+      "title": "Google — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google",
+      "snippet": "La société compte environ 50 000 employés. La plupart travaillent au siège mondial : le Googleplex, à Mountain View en Californie. …"
     },
     {
-      "title": "Google",
-      "url": "http://www.google.gp/?hl=fr",
-      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+      "title": "Présentation",
+      "url": "https://search.google/intl/fr-FR/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
     },
     {
-      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
-      "url": "https://www.google.com/intl/fr/chrome/",
-      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+      "title": "Google (moteur de recherche) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google_(moteur_de_recherche)",
+      "snippet": "Google est à l'origine un moteur de recherche de pages web, qui s'est étendu progressivement à divers types de documents (PDF, …"
     }
   ]
 }

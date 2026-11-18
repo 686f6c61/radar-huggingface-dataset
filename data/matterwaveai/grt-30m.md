@@ -2,126 +2,126 @@
 
 ## Resumen
 
-GRT-30M es un modelo de lenguaje causal de tipo base desarrollado por MatterWaveAI, presentado como una vista previa de un preentrenamiento de 24 horas. Su particularidad es arquitectonica: implementa un *Geometric Rotation Transformer* (`GRTForCausalLM`), en el que todas las proyecciones lineales densas de la atencion y del feed-forward se sustituyen por cascadas de rotaciones de Givens de 2x2 moduladas por contenido sobre SO(D), intercaladas con permutaciones de tipo mariposa. El modelo se entrena desde cero sobre FineWeb-Edu y constituye una prueba de concepto de que una columna vertebral basada solo en rotaciones puede entrenar de forma estable.
+GRT-30M es un checkpoint de investigacion de tipo base, desarrollado por MatterWaveAI, que implementa una arquitectura denominada Geometric Rotation Transformer (`GRTForCausalLM`). El modelo se obtiene mediante destilacion de conocimiento a partir de Qwen 3 en una unica ejecucion de 24 horas sobre 8 GPU NVIDIA A100-SXM4-80GB, procesando 10.790 millones de tokens a una tasa sostenida de aproximadamente 123.900 tokens por segundo. Su proposito no es competir como asistente de produccion, sino demostrar que una columna vertebral de transformer puramente rotacional puede destilarse de forma estable desde un modelo mayor.
 
-El checkpoint almacena 29,31 M de parametros totales, aunque solo 9,74 M corresponden a la columna vertebral no-embedding de 12 bloques; el resto lo domina la tabla de embeddings ligada (151.669 tokens del vocabulario BPE de Qwen3 con cabeza polar coseno), que representa el 66,8% de los pesos. La longitud de contexto es de 2.048 tokens y el modelo solo declara soporte para ingles.
+La innovacion central consiste en sustituir cada proyeccion lineal densa de la atencion (Q, K, V, O) y del bloque feed-forward (expand, contract) por cascadas de rotaciones de Givens 2x2 sobre SO(D), moduladas por contenido e intercaladas con permutaciones de tipo butterfly. El resultado es una columna vertebral de solo 9,74 millones de parametros no de embedding distribuidos en 12 bloques, con un total de 29,31 millones de parametros almacenados, de los cuales 19,57 millones corresponden a la tabla de embeddings ligada al vocabulario BPE de Qwen 3 de 151.669 tokens.
 
-Es relevante ahora por dos motivos: demuestra una arquitectura alternativa a los transformers densos convencionales con paridad de generacion greedy bit a bit entre cuatro backends (PyTorch ROCm, llama.cpp CPU, llama.cpp Vulkan y llama.cpp ROCm), y publica pesos en safetensors y GGUF FP32, lo que facilita su reproduccion e inspeccion. No es un asistente instruido: es un checkpoint de investigacion base.
+Es relevante ahora por dos motivos. Primero, ofrece paridad de generacion greedy token a token verificada en cuatro backends distintos (PyTorch ROCm, llama.cpp CPU AVX2, llama.cpp Vulkan y llama.cpp ROCm), lo que es un resultado poco habitual en modelos de investigacion pequenos. Segundo, sirve como referencia reproducible para estudiar destilacion token-alineada, optimizadores factorizados para matrices de acoplamiento 2D y despliegue en hardware consumer AMD Strix Halo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | `GRTForCausalLM` (Geometric Rotation Transformer, transformer causal con rotaciones de Givens) |
-| Parametros totales | 29.844.597 (29,84 M segun safetensors; 29,31 M segun model card) |
+| Parametros totales | 29.844.597 (29,84 M); 29.305.498 almacenados segun model card |
 | Parametros activos | no disponible (no es MoE) |
-| Parametros no-embedding | 9.740.197 (9,74 M, 12 bloques) |
+| Parametros no-embedding | 9.740.197 (9,74 M) en 12 bloques |
 | Parametros equivalentes densos | 55.680.446 (55,68 M) |
 | Longitud de contexto | 2.048 tokens (`max_position_embeddings`) |
-| Tipos de cuantizacion | FP32 (GGUF publicado); no se documentan otras cuantizaciones |
-| Idiomas soportados | Ingles (`en`) |
+| Tipos de cuantizacion | GGUF F32 (`grt-30m-f32.gguf`); otros tipos no disponibles |
+| Idiomas soportados | ingles (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`, 116 MB) y GGUF (`grt-30m-f32.gguf`, 340 MB) |
-| `hidden_size` (d_model) | 256 |
+| Formato de pesos | safetensors (`model.safetensors`, 116 MB), GGUF (`grt-30m-f32.gguf`, 340 MB) |
+| `hidden_size` (`d_model`) | 256 |
 | `num_hidden_layers` | 12 |
-| Cabezas de atencion | 4 (`head_dim = 64`) |
-| `intermediate_size` (d_ff) | 1.024 |
-| Rotaciones (qkv / mixer / ffn) | 11 / 1 / 21 |
-| Vocabulario | 151.669 (BPE de Qwen3, cabeza polar coseno ligada) |
+| `num_attention_heads` | 4 (`head_dim` = 64) |
+| `intermediate_size` (`d_ff`) | 1.024 |
+| Rotaciones (`qkv` / `mixer` / `ffn`) | 11 / 1 / 21 |
+| Vocabulario | 151.669 (BPE de Qwen 3, cabeza coseno polar ligada) |
 | Tamano del repo | 0,5 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura GRT sustituye cada proyeccion lineal densa (`nn.Linear`) de la atencion (Q, K, V, O) y del feed-forward (expand, contract) por cascadas de rotaciones de Givens de 2x2 sobre SO(D) moduladas por contenido, intercaladas con permutaciones de tipo mariposa. El modelo tiene 12 bloques con `d_model = 256`, 4 cabezas de atencion de dimension 64 y `d_ff = 1024`, con 11 rotaciones en QKV, 1 en el mixer y 21 en el FFN. La cabeza de salida es polar coseno ligada a la tabla de embeddings, que se almacena como `phase_angles [151669, 128]` mas `log_magnitude [151669]`.
+La arquitectura `GRTForCausalLM` (variante `grt30m_kd`) es un transformer causal en el que todas las proyecciones lineales densas se reemplazan por productos de rotaciones de Givens 2x2 sobre el grupo especial ortogonal SO(D). Cada bloque aplica 11 rotaciones en el camino QKV, 1 rotacion en el mixer y 21 rotaciones en el feed-forward, con permutaciones butterfly intercaladas y modulacion dependiente del contenido. La cabeza de salida es un embedding polar ligado que representa cada token mediante un vector de `phase_angles` de forma [151669, 128] mas un `log_magnitude` de forma [151669], lo que explica que el 66,8% de los pesos almacenados corresponda al vocabulario y no a la columna vertebral.
 
-El entrenamiento se realizo desde cero durante 24 horas (86.969 s) en 8x NVIDIA A100-SXM4-80GB con DDP y kernels CUDA fusionados de Givens, procesando 10.789.404.672 tokens (10,79 B) en 20.580 pasos. El batch global fue de 524.288 tokens por paso (micro-batch 16, acumulacion de gradiente 2, longitud de secuencia 2.048, 8 GPUs), con un rendimiento sostenido de 123.900 tok/s (~15.490 tok/s por GPU) y sin NaNs ni picos de gradiente. Se uso el optimizador `PairAdam` (segundos momentos factorizados para matrices de acoplamiento 2D y recorte angular del paso), con LR pico de 6e-4 y schedule coseno, detenido en el paso 20.000 de 57.220 con LR = 4,31e-4. El dataset fue FineWeb-Edu. La perdida de validacion final fue 4,4776 y la perplejidad 88,02 (27,2% de precision top-1 sobre el vocabulario de 151.669 tokens); el autor indica que equivale a ~29 PPL en un vocabulario GPT-2 estandar de 50k.
+El entrenamiento consistio en una destilacion token-alineada desde Qwen 3 con el vocabulario BPE completo de 151.669 tokens. El corpus mezclo `fineweb-edu` (45%), `cosmopedia-v2` (20%), `wikipedia` (15%), `finemath` (12%) y `stack-edu` (8%). Se ejecuto durante 86.969 segundos (24,0 horas) en 8x A100-SXM4-80GB con DDP y kernels CUDA fusionados de Givens, con un batch global de 524.288 tokens por paso (micro-batch 32, acumulacion 1, longitud de secuencia 2.048), 20.580 pasos y 10.789.404.672 tokens totales. El optimizador fue `PairAdam`, con momentos de segundo orden factorizados para las matrices de acoplamiento 2D y recorte angular en los pasos, programacion WSD con pico de learning rate 1e-3 y un throughput sostenido de 123.900 tok/s sin NaN ni picos de gradiente. El resultado final fue `val_loss` = 4,4776 y `val_ppl` = 88,02 sobre FineWeb-Edu, con una precision top-1 de token del 27,20% sobre el vocabulario completo. No se menciona RLHF ni DPO; es un checkpoint base, no un asistente instruido.
 
 ## Capacidades
 
-- Generacion de texto causal en ingles: continuacion de prompts y modelado de lenguaje autoregresivo.
-- Razonamiento basico de sentido comun: supera la linea base aleatoria en 6 de 7 benchmarks de eleccion multiple zero-shot.
-- Comprension lectora y clasificacion binaria limitada: resultados cercanos al azar en BoolQ (51,53%) y QNLI (51,50%).
-- Generacion greedy determinista con paridad exacta token a token entre cuatro backends (PyTorch ROCm, llama.cpp CPU AVX2, llama.cpp Vulkan RADV y llama.cpp ROCm HIP).
-- No soporta tool calling ni function calling (no documentado; es un modelo base).
-- No soporta agentes ni razonamiento multi-paso (no documentado).
-- Multilingue: no disponible; solo ingles declarado.
-- Capacidades especiales: ninguna documentada (sin vision, audio ni modo thinking).
-- No es un modelo instruido: no sigue instrucciones ni mantiene formato conversacional.
+- Generacion de texto causal autoregresiva en ingles, como modelo base sin ajuste de instrucciones.
+- Razonamiento de nivel basico emergente: supera el azar en 6 de 7 benchmarks zero-shot de eleccion multiple.
+- Aritmetica basica: la variante curriculum reporta 99,20% de precision en verificacion 4-way de GSM8K, aunque este checkpoint base no dispone de esa cifra.
+- Soporte de tool calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles; el tokenizador es el de Qwen 3 pero no se declara entrenamiento multilingue.
+- Capacidades especiales: ninguna modalidad adicional (sin vision ni audio); no dispone de modo thinking.
+- Inferencia determinista verificada en cuatro backends con paridad greedy exacta.
 
 ## Casos de uso
 
-- Investigacion de arquitecturas alternativas: el modelo sirve como banco de pruebas reproducible para estudiar si una columna vertebral basada solo en rotaciones de Givens puede sustituir a las proyecciones densas en transformers pequenos, con pesos y receta de entrenamiento publicados.
-- Validacion de kernels y backends: gracias a la paridad greedy bit a bit entre PyTorch ROCm y llama.cpp (CPU, Vulkan, ROCm), se puede usar para verificar la correccion numerica de nuevas implementaciones de kernels o de portes a hardware no soportado.
-- Pruebas de cuantizacion y despliegue en llama.cpp: al existir un GGUF FP32 de 340 MB, es util para validar pipelines de conversion, carga y generacion en entornos con recursos muy limitados antes de escalar a modelos mayores.
-- Educacion y divulgacion: su tamano reducido (9,74 M de parametros no-embedding) permite inspeccionar y visualizar el flujo completo de un transformer causal en un portatil, incluida la mecanica de rotaciones y permutaciones.
-- Generacion de texto exploratoria en ingles: puede producir continuaciones coherentes a nivel local en dominios cercanos a FineWeb-Edu, util para experimentos de prompting y analisis de distribuciones de tokens.
-- Benchmarking de hardware integrado: el autor reporta 3.790 tok/s de prefill (Vulkan) y 87,4 tok/s de decode (CPU, 16 hilos) en FP32 sobre un AMD Ryzen AI Max+ 395 (Strix Halo / gfx1151), lo que lo convierte en una carga de trabajo de referencia para medir el rendimiento de GPUs integradas y APUs.
-- Estudio de cabezas de salida con vocabulario grande: con el 66,8% de los pesos en la tabla de embeddings de 151.669 tokens, es un caso practico para analizar el coste y el comportamiento de vocabularios grandes en modelos minusculos.
+- Investigacion en arquitecturas alternativas: el modelo sirve como banco de pruebas reproducible para estudiar si las rotaciones de Givens pueden sustituir a las proyecciones densas en un transformer causal, con configuracion y curvas de entrenamiento publicadas.
+- Destilacion token-alineada: al compartir el vocabulario completo de Qwen 3, permite experimentar con tecnicas de destilacion directa token a token sin remapeo de vocabulario, comparando perdida y perplejidad frente al profesor.
+- Validacion de portabilidad entre backends: la paridad greedy exacta en PyTorch ROCm, llama.cpp CPU, Vulkan y ROCm lo convierte en un caso de prueba util para verificar implementaciones de kernels o de cuantizacion.
+- Desarrollo de kernels fusionados: los kernels HIP y CUDA de rotaciones de Givens publicados con el modelo pueden reutilizarse y medirse en hardware consumer, como el Ryzen AI Max+ 395 con `gfx1151`.
+- Educacion y docencia: su tamano reducido (116 MB en safetensors, 340 MB en GGUF F32) y su licencia Apache 2.0 permiten desplegarlo en portatiles para ilustrar el funcionamiento interno de un transformer sin infraestructura dedicada.
+- Pruebas de humo en pipelines de despliegue: sirve para validar cadenas de conversion a GGUF, carga en llama.cpp y ejecucion en Vulkan o ROCm antes de mover modelos mayores, gracias a su bajo coste computacional.
+- Estudio de optimizadores: la implementacion de `PairAdam` con momentos factorizados y recorte angular puede evaluarse en tareas de ajuste fino sobre este checkpoint como base.
 
 ## Benchmarks y rendimiento
 
-Evaluacion zero-shot (sin fine-tuning) mediante scoring de log-verosimilitud normalizado por longitud sobre el checkpoint 20.000:
+Resultados zero-shot de eleccion multiple reportados en la model card (checkpoint base):
 
-| Benchmark | Split (n) | GRT-30M | Aleatorio | Delta |
-|---|---|---:|---:|---:|
-| ARC-Easy | test (2.376) | 29,50% | 25,00% | +4,50% |
-| HellaSwag | val (1.000) | 29,20% | 25,00% | +4,20% |
-| OpenBookQA | test (500) | 28,40% | 25,00% | +3,40% |
-| CommonsenseQA | val (1.221) | 21,70% | 20,00% | +1,70% |
-| BoolQ | val (3.270) | 51,53% | 50,00% | +1,53% |
-| QNLI | val (1.000) | 51,50% | 50,00% | +1,50% |
-| ARC-Challenge | test (1.172) | 21,08% | 25,00% | -3,92% |
+| Benchmark | GRT-30M | Azar (referencia) |
+|---|---|---|
+| ARC-Easy | 29,50% | ~25% |
+| HellaSwag | 29,20% | ~25% |
+| OpenBookQA | 28,40% | ~25% |
+| CommonsenseQA | 21,70% | ~20% |
+| BoolQ | 51,53% | ~50% |
+| QNLI | 51,50% | ~50% |
 
-Modelado de lenguaje en dominio (FineWeb-Edu, validacion):
+Metricas de validacion y rendimiento:
 
 | Metrica | Valor |
 |---|---|
-| Loss (NLL) | 4,4776 |
-| Perplejidad (vocab. 151k) | 88,02 |
+| `val_loss` (FineWeb-Edu) | 4,4776 |
+| `val_ppl` (FineWeb-Edu) | 88,02 |
 | Precision top-1 de token | 27,20% |
-
-Rendimiento de inferencia reportado por el autor (AMD Ryzen AI Max+ 395, Strix Halo / gfx1151):
-
-| Backend / modo | Throughput |
-|---|---|
-| Prefill Vulkan | 3.790 tok/s |
-| Decode CPU (16 hilos, FP32) | 87,4 tok/s |
+| Throughput de entrenamiento | 123.900 tok/s (8x A100-80GB) |
+| Prefill (Vulkan, Strix Halo) | 3.790 tok/s |
+| Decode (CPU, 16 hilos, FP32) | 87,4 tok/s |
 | Forward BF16 con kernels HIP fusionados | 5.760 tok/s |
-| Entrenamiento (8x A100-SXM4-80GB) | 123.900 tok/s (~15.490 tok/s/GPU) |
+
+La model card indica que el modelo iguala a modelos densos de capacidad de columna vertebral comparable (`Pythia-14M` / `Pythia-31M`), pero no se aportan las cifras concretas de esos modelos en la informacion disponible. La variante `grt-30m-curriculum` reporta 48,07% de media macro en 9 tareas de SLM-Bench, 99,20% en verificacion 4-way de GSM8K y perplejidad de 7,60 en GSM8K; no son resultados de este checkpoint.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: minima. Los pesos en safetensors ocupan 116 MB y el GGUF FP32 340 MB; en FP32 la huella completa ronda los 120-350 MB segun formato, muy por debajo de cualquier GPU consumer.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre; el autor valida explicitamente AMD Strix Halo (gfx1151) con ROCm y Vulkan, y llama.cpp CPU con AVX2.
-- Cabe en GPU consumer: si, en practicamente todas (RTX 4090, RTX 3060, GPUs integradas e incluso APUs). Tambien funciona en CPU sin GPU.
-- Opciones de despliegue: `transformers` (PyTorch, con soporte ROCm), `llama.cpp` en CPU (AVX2), Vulkan y ROCm/HIP. No se documenta soporte para vLLM, TGI ni Ollama.
-- Latencia y throughput: 3.790 tok/s de prefill en Vulkan y 87,4 tok/s de decode en CPU de 16 hilos en FP32 sobre Strix Halo; 5.760 tok/s de forward en BF16 con kernels HIP fusionados. No hay datos de latencia en GPUs discretas.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 para los pesos (116 MB en safetensors, 340 MB en GGUF F32); el coste dominante es el contexto y el estado de activaciones, no los pesos.
+- GPU recomendadas: cualquier GPU con soporte ROCm o CUDA; el autor valida explicitamente AMD Strix Halo (`gfx1151`) y ejecucion en CPU x86_64 con AVX2.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en CPU. Se ha medido en un Ryzen AI Max+ 395.
+- Opciones de despliegue: `transformers` (PyTorch, con kernels HIP o CUDA fusionados), `llama.cpp` en CPU (AVX2), Vulkan (RADV) y ROCm (HIP). No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
+- Latencia y throughput: 3.790 tok/s de prefill en Vulkan, 87,4 tok/s de decode en CPU con 16 hilos en FP32 y 5.760 tok/s de forward en BF16 con kernels HIP fusionados, medidos en Strix Halo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| GRT-30M | 29,31 M almacenados (9,74 M no-embedding) | 2.048 | ARC-Easy 29,50%, HellaSwag 29,20%, val PPL 88,02 (vocab. 151k) | Apache 2.0 | safetensors + GGUF |
-| Pythia-14M | 14 M | 2.048 | No disponible en la informacion proporcionada | Apache 2.0 | safetensors |
-| Pythia-31M | 31 M | 2.048 | No disponible en la informacion proporcionada | Apache 2.0 | safetensors |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| GRT-30M | 29,84 M totales / 9,74 M no-embedding | 2.048 | Apache 2.0 | Rotaciones de Givens, destilado de Qwen 3, paridad multi-backend |
+| Pythia-14M | 14 M | 2.048 | Apache 2.0 | Transformer denso clasico; citado por el autor como referencia de capacidad comparable |
+| Pythia-31M | 31 M | 2.048 | Apache 2.0 | Transformer denso clasico; citado por el autor como referencia de capacidad comparable |
+| Qwen 3 (profesor) | no disponible en la informacion | no disponible | no disponible | Modelo profesor de la destilacion; familia con vocabulario BPE de 151.669 tokens |
 
-El autor indica que GRT-30M iguala a modelos densos de capacidad de columna vertebral comparable (Pythia-14M y Pythia-31M), pero no se aportan cifras concretas de estos en la informacion disponible. No se dispone de datos de otros modelos de la misma categoria para una comparacion cuantitativa adicional.
+No se dispone de cifras de benchmark de Pythia-14M ni Pythia-31M en la informacion proporcionada para una comparacion numerica directa.
 
 ## Limitaciones y advertencias
 
-- Es un checkpoint base de investigacion, no un asistente instruido: no sigue instrucciones, no mantiene formato conversacional y no debe usarse como chatbot sin fine-tuning.
-- Calidad de lenguaje muy limitada: las continuaciones greedy mostradas por el autor son repetitivas y carentes de coherencia global (por ejemplo, "The capital of France is the first to be the first to be...").
-- Riesgo alto de alucinacion y de texto sin sentido: la precision top-1 de token es del 27,2% sobre un vocabulario de 151.669 tokens.
-- Rendimiento cercano al azar en la mayoria de benchmarks: solo supera la linea base aleatoria entre 1,5 y 4,5 puntos en 6 de 7 tareas, y queda por debajo en ARC-Challenge (-3,92%).
-- Solo ingles: no hay soporte multilingue declarado.
-- Contexto corto: 2.048 tokens, insuficiente para tareas de contexto largo.
-- Sesgos: no documentados por el autor; al entrenarse sobre FineWeb-Edu es probable que herede sesgos del corpus web filtrado, aunque no se cuantifican.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo no es adecuado para produccion por su calidad.
-- La model card advierte de que es una "vista previa" de 24 horas con el entrenamiento detenido en el paso 20.000 de 57.220, por lo que el checkpoint esta subentrenado respecto al plan previsto.
-- Discrepancia menor en el recuento de parametros entre safetensors (29.844.597) y la model card (29.305.498); conviene verificar antes de integrarlo.
+- Es un checkpoint base de investigacion, no un asistente instruido: no sigue instrucciones ni mantiene dialogos coherentes de forma fiable.
+- La calidad de generacion es muy baja en terminos absolutos: las continuaciones greedy publicadas son repetitivas y sin sentido factual (por ejemplo, "The capital of France is the first to be the first to be...").
+- Precision top-1 de solo 27,20% sobre un vocabulario de 151.669 tokens; la perplejidad de validacion es 88,02.
+- Ventana de contexto limitada a 2.048 tokens.
+- Entrenado unicamente en ingles; no hay garantia de comportamiento en castellano ni en otros idiomas.
+- Riesgo elevado de alucinacion y de texto incoherente, especialmente en generacion abierta y en tareas de conocimiento factual.
+- No se documentan sesgos especificos, pero el corpus (fineweb-edu, cosmopedia-v2, wikipedia, finemath, stack-edu) puede introducir los sesgos habituales de datos web filtrados.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo no es apto para produccion por su calidad; cualquier despliegue comercial requeriria ajuste fino adicional y evaluacion propia.
+- La paridad exacta entre backends se ha verificado con 16 tokens nuevos en cuatro backends sobre hardware AMD; no se garantiza en otras configuraciones ni con cuantizaciones distintas de F32.
+- El modelo comparte vocabulario con Qwen 3, pero no hereda sus capacidades; no debe confundirse con un derivado funcional de Qwen 3.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m
-- Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales.
+- Variante curriculum: https://huggingface.co/MatterWaveAI/grt-30m-curriculum
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset Cosmopedia v2: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia-v2
+- Dataset Wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia
+- Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath
+- Dataset SmolLM Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

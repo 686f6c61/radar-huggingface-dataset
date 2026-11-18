@@ -2,100 +2,87 @@
 
 ## Resumen
 
-`chatpig/cantonese-tts-gguf` es un modelo publicado en Hugging Face por el usuario `chatpig` bajo licencia Apache 2.0, distribuido exclusivamente en formato GGUF y con un total de 161.808.353 parámetros (aproximadamente 162 M). Por el identificador del repositorio se trata de un sistema de síntesis de voz (text-to-speech) orientado al cantonés, aunque la model card publicada no contiene más que la declaración de licencia, sin documentación técnica, descripción de arquitectura ni instrucciones de uso.
+cantonese-tts-gguf es un paquete de pesos en formato GGUF para síntesis de voz (text-to-speech) en cantonés, publicado por el usuario chatpig sobre los modelos base de la familia `cantonese-dev/cantonese` (versiones 0.6b y 1.7b). El repositorio agrupa múltiples variantes cuantizadas (v1, v1.2, v1.3, 1.7b-v1.1 y la nueva estructura "cantonese") junto con adaptadores LoRA y un tokenizador de audio de 12 Hz, todo empaquetado para su uso con una herramienta CLI llamada `gguf`. El objetivo es ofrecer inferencia TTS local en cantonés con control de voz mediante instrucciones en lenguaje natural y clonación de voz a partir de una muestra de referencia.
 
-El interés del repositorio es doble: por un lado, empaqueta un modelo TTS de tamano relativamente pequeno (~162 M de parametros, repo de 1,6 GB) en GGUF, un formato asociado tradicionalmente a modelos de lenguaje y no a pipelines de audio; por otro, lo hace bajo Apache 2.0, una licencia permisiva que permite uso comercial sin restricciones adicionales, algo poco habitual en el ecosistema TTS (donde abundan licencias no comerciales o modelos con datos de entrenamiento no redistribuibles).
+El modelo resuelve un nicho concreto: la generación de habla en cantonés (yue), un idioma con escasa cobertura en los sistemas TTS comerciales y open source, que suelen centrarse en mandarín. La relevancia actual radica en que combina un tamaño reducido (el checkpoint registrado en safetensors declara 914.643.008 parámetros, es decir, ~0,9 B) con licencia Apache 2.0, lo que permite despliegue en hardware modesto y uso comercial sin restricciones adicionales.
 
-Ahora bien, la ausencia total de documentacion limita seriamente su evaluacion: no se declaran idiomas soportados, no hay pipeline asignado en Hugging Face, no se han publicado benchmarks y el repositorio no registra descargas ni likes en el momento de la consulta. Se trata, por tanto, de un artefacto que requiere validacion empirica por parte de quien lo adopte.
+La model card documenta tres capacidades principales: diseño de voz mediante instrucciones textuales ("A warm, low female voice, speaking slowly"), clonación de voz a partir de un audio de referencia y, en la variante 1.7b, clonación con texto de referencia (ICL). El repositorio ocupa 32,3 GB e incluye pesos en varias precisiones, adaptadores y ficheros de audio de ejemplo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la model card no la documenta; por el identificador se infiere un modelo acustico de sintesis de voz, sin confirmacion) |
-| Parametros totales | 161.808.353 (~162 M) |
-| Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | No disponible (no aplica en el sentido habitual de LLM; es un modelo de audio) |
-| Tipos de cuantizacion | No disponible en detalle; el repositorio se distribuye en formato GGUF (1,6 GB en total, compatible con varios niveles de cuantizacion) |
-| Idiomas soportados | No declarados en la model card; el nombre del repositorio indica cantonés (Hong Kong), sin confirmacion documental |
+| Arquitectura | no disponible (modelo TTS basado en transformer con tokenizador de audio de 12 Hz; estructura interna no detallada) |
+| Parametros totales | 914.643.008 (checkpoint safetensors del repo); variantes 0.6b y 1.7b segun nombre |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 (ficheros `-q8_0.gguf`); adaptadores en F16; tokenizador de audio en Q8_0 y NVFP4 |
+| Idiomas soportados | cantonés (yue); resto no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (no se observan safetensors ni ONNX en la informacion disponible) |
-| Fecha de creacion | 2026-10-28 |
-| Ultima actualizacion | 2026-10-28 |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
-| Region declarada | `region:us` |
+| Formato de pesos | GGUF (modelo, adaptadores y codec); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna. La model card se limita a un bloque de frontmatter con `license: apache-2.0` y no incluye descripcion tecnica. El recuento de parametros (161,8 M) situa al modelo en la gama de los sistemas TTS ligeros, un orden de magnitud habitual en arquitecturas tipo VITS, FastSpeech 2 o variantes de encoder-decoder para sintesis neuronal, pero no hay ningun dato que permita confirmar cual de ellas se ha empleado.
+La informacion disponible no detalla la arquitectura interna del modelo base. La model card indica que la version "cantonese" (nueva estructura) sustituye a la estructura anterior denominada `qwen3-tts`, y que soporta clonacion de voz y diseno de voz por defecto sin necesidad de adaptador, ademas de servir como base para fine-tuning. El pipeline incluye un modelo de codec de audio independiente (`tts-tokenizer-12hz` en Q8_0 o `qwen-tokenizer-12hz-nvfp4` en versiones anteriores), lo que sugiere una arquitectura de tokenizacion discreta del audio a 12 Hz seguida de generacion autoregresiva, aunque este extremo no se confirma en la informacion proporcionada.
 
-Tampoco se documenta el corpus de entrenamiento (numero de horas de audio, idioma, hablantes, procedencia), ni si hubo etapas de ajuste fino, destilacion o alineamiento forzado. Se desconoce igualmente si el modelo soporta clonacion de voz, control de prosodia, emocion o multiples hablantes. Cualquier afirmacion al respecto seria especulativa.
+Respecto a los datos de entrenamiento, la model card enlaza el dataset `cantonese-dev/cantonese-yt-8gb`, descrito como fuente del entrenamiento de la version v1.2. No se especifican el numero de tokens, la composicion del corpus ni si se aplicaron tecnicas de RLHF o DPO. Si se documenta que la v1.2 produce habla mas natural y fluida pero tiene problemas en el diseno de voz, mientras que la v1.3 mejora el diseno de voz a costa de naturalidad; por ello se entreno un adaptador sobre el dataset de v1.3 para combinarlo con el modelo v1.2 y obtener lo mejor de ambos. La variante 1.7b-v1.1 anade clonacion de voz con texto de referencia (ICL) frente a la clonacion simple.
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech): es la funcion que se deduce del identificador del repositorio; no hay confirmacion explicita en la documentacion.
-- Idioma: presumiblemente cantonés (zh-HK), segun el nombre del repositorio; no declarado oficialmente.
-- Generacion de texto, razonamiento, codigo o matematicas: no aplica; no es un modelo de lenguaje.
-- Vision, audio de entrada o comprension del habla: no disponible.
-- Tool calling / function calling: no disponible; no aplica a un modelo TTS.
-- Capacidades de agente o razonamiento multi-paso: no disponibles.
-- Control de prosodia, emocion, velocidad o voz: no documentado.
-- Clonacion de voz / zero-shot speaker adaptation: no documentado.
+- Sintesis de voz (TTS) en cantonés a partir de texto escrito en caracteres chinos.
+- Diseno de voz mediante instrucciones en lenguaje natural (tono, genero percibido, velocidad, calidez).
+- Clonacion de voz zero-shot a partir de un audio de referencia (`-r out_ref.wav`).
+- Clonacion de voz con texto de referencia (ICL) en la variante 1.7b-v1.1, que mejora la fidelidad de la imitacion.
+- Soporte de adaptadores LoRA en formato GGUF F16 para modular el estilo o la voz.
+- Capacidad de fine-tuning adicional sobre el modelo base, segun la nota del desarrollador.
+- No se documentan capacidades de tool calling, agentes, vision, audio de entrada mas alla de la referencia de clonacion, ni razonamiento multi-paso; no disponibles.
 
 ## Casos de uso
 
-Dado que la documentacion es practicamente inexistente, los siguientes escenarios deben considerarse hipotesis de partida que requieren validacion previa con muestras reales:
-
-- Lectura de contenido en cantonés para aplicaciones de accesibilidad: conversion de articulos, noticias o documentacion a audio para usuarios con discapacidad visual o preferencia por consumo auditivo en Hong Kong.
-- Interfaces de voz para asistentes de dominio limitado: al ser un modelo de ~162 M, podria ejecutarse en CPU o en GPU de gama baja, lo que encaja en dispositivos empotrados o apps moviles con presupuesto de computo reducido.
-- Generacion de avisos y notificaciones habladas: transporte publico, sistemas de megafonia, aplicaciones de recordatorio, siempre que la calidad de sintesis resulte aceptable en pruebas ciegas.
-- Prototipado rapido de productos de audio en cantonés: el empaquetado GGUF y la licencia Apache 2.0 permiten integrar el modelo en un pipeline propio sin negociacion de licencia.
-- Investigacion en TTS de bajos recursos: util como linea base ligera para comparar con sistemas como canto-tts o Piper en tareas de inteligencia artificial del habla en chino yue.
-- Generacion de material de aprendizaje de idiomas: producir locuciones en cantonés para ejercicios de escucha, siempre que se valide la naturalidad y la correccion tonal (el cantonés es una lengua tonal con seis tonos, un punto criticamente sensible).
-- Doblaje o preproduccion de contenido audiovisual: generacion de borradores de voz en off antes de recurrir a un estudio de grabacion profesional.
+- Doblaje y localizacion de contenido al cantonés: el modelo permite generar pistas de voz para videos, cursos o audiolibros en yue, un idioma con poca cobertura en herramientas TTS comerciales, usando diseno de voz para mantener un registro consistente entre fragmentos.
+- Asistentes de voz y chatbots telefonicos en cantonés: integrado en un pipeline de ASR + LLM + TTS, el modelo aporta la capa de salida hablada con latencia baja gracias a su tamano de ~0,6-1,7 B y a la cuantizacion Q8_0.
+- Accesibilidad para personas con discapacidad visual: lectura en voz alta de articulos, mensajes y documentos en cantonés con voces personalizables mediante instrucciones de estilo.
+- Clonacion de voz para preservacion de identidad: la variante 1.7b-v1.1 permite generar habla con la voz de un hablante concreto a partir de una muestra corta, util para audiolibros narrados por el propio autor o para mantener la voz de marca en campanas.
+- Prototipado de videojuegos y narrativa interactiva: generacion de dialogos de personajes con voces diferenciadas mediante diseno de voz o adaptadores, sin depender de servicios en la nube.
+- Investigacion en TTS de lenguas de baja resources: el modelo y su dataset asociado (`cantonese-yt-8gb`) sirven como base para experimentos de fine-tuning, evaluacion de naturalidad y comparacion de estrategias de clonacion en cantonés.
+- Generacion de material educativo para aprendizaje de cantonés: produccion de ejemplos de pronunciacion con velocidad controlada ("speaking slowly") y voces de referencia.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No constan metricas objetivas de calidad de sintesis (MOS, CMOS, WER de un ASR intermedio, similitud de hablante) ni comparaciones con otros sistemas TTS en la model card, en los resultados de busqueda ni en los metadatos del repositorio.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no confirmada. Como referencia aritmetica, 161,8 M de parametros ocupan aproximadamente 324 MB en FP16 y unos 162 MB en cuantizacion de 8 bits; el repo completo pesa 1,6 GB, lo que sugiere varias cuantizaciones empaquetadas.
-- GPU recomendadas: no disponibles. Por tamano, cualquier GPU consumer con 4 GB o mas de VRAM deberia ser suficiente para una sola cuantizacion, e incluso una GPU integrada podria bastar en el caso de variantes cuantizadas.
-- Ajuste en GPU consumer: muy probable por el reducido numero de parametros; no verificado.
-- Opciones de despliegue: el formato GGUF apunta a runtimes tipo llama.cpp u Ollama, pero estos estan disenados para modelos de lenguaje y su soporte de arquitecturas TTS no esta garantizado. La integracion real dependera de que el runtime reconozca la arquitectura concreta del modelo, extremo que no se puede confirmar con la informacion disponible. Como alternativas, seria necesario convertir los pesos a un framework de inferencia de audio (PyTorch, ONNX Runtime) o localizar el codigo de inferencia del autor.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa por tamano, un modelo de ~0,6 B en Q8_0 ocupa del orden de 0,6-0,8 GB de pesos, y uno de ~1,7 B en Q8_0 del orden de 1,7-2 GB; a ello hay que sumar el codec de audio y el adaptador F16. Estas cifras son estimaciones por parametros, no datos publicados por el autor.
+- GPU recomendadas: no especificadas en la informacion disponible. Por tamano, el modelo deberia caber en GPUs consumer con 8 GB o mas de VRAM; la viabilidad exacta no esta confirmada.
+- Cabe en GPU consumer: previsiblemente si, dado el rango de 0,6-1,7 B de parametros, aunque no hay confirmacion oficial.
+- Opciones de despliegue: la model card documenta una CLI propia llamada `gguf` con flags `-m` (modelo), `--adapter`, `--codec-model`, `--instruction`, `-t` (texto), `-r` (referencia de voz), `--reference-text` y `-o` (salida). No se mencionan vLLM, llama.cpp, Ollama ni TGI como opciones soportadas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Idiomas | Estado |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| chatpig/cantonese-tts-gguf | ~162 M | GGUF | Apache 2.0 | Cantonés (inferido, no declarado) | Publicado, sin documentacion ni benchmarks |
-| typangaa/canto-tts (GitHub + PyPI) | No disponible | ONNX (CPU-first) | No disponible en la informacion recogida | Cantonés (Hong Kong) | Proyecto open source con SDK en PyPI; voz unica, sin clonacion en la ruta ONNX segun su README |
-| Piper (VITS) | No disponible en esta busqueda | ONNX | MIT (referencia general) | Multiples, incluido chino | Ecosistema amplio de voces y despliegue en CPU |
-| Coqui XTTS-v2 | ~467 M (referencia general, no verificada en esta busqueda) | PyTorch | No comercial | Multilingue | Usado habitualmente como linea base de TTS multilingue con clonacion |
+| chatpig/cantonese-tts-gguf | ~0,6-1,7 B (914.643.008 en safetensors) | no disponible | cantonés | Apache 2.0 | GGUF |
+| cantonese-dev/cantonese-1.7b-v1.1 (modelo base) | 1,7 B | no disponible | cantonés | no disponible en la informacion | safetensors |
+| cantonese-dev/cantonese-1.2-0.6b (modelo base) | 0,6 B | no disponible | cantonés | no disponible en la informacion | safetensors |
 
-Nota: los datos de Piper y XTTS-v2 provienen de conocimiento general del ecosistema y no de la busqueda realizada; conviene verificarlos antes de publicarlos como comparativa formal. La comparacion directa con `canto-tts` es la mas pertinente por dominio (cantonés) y tamano de despliegue.
+No se dispone de datos de benchmarks ni de modelos TTS comparables de otros desarrolladores en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card no describe arquitectura, datos de entrenamiento, uso previsto ni limitaciones. Esto impide una evaluacion tecnica rigurosa y complica la integracion en produccion.
-- Idiomas no declarados: el nombre sugiere cantonés, pero no hay confirmacion oficial; podria no cubrir mandarin, chino escrito formal ni code-switching con ingles, habitual en Hong Kong.
-- Sin benchmarks ni muestras publicas: no es posible estimar calidad, naturalidad, precision tonal ni robustez ante entradas ruidosas o fuera de dominio.
-- Riesgo de salida degradada o alucinada: en TTS, la ausencia de validacion se traduce en artefactos acusticos, saltos, repeticiones o pronunciacion incorrecta de numeros, siglas y nombres propios.
-- Sesgos de hablante y registro: al desconocerse el corpus, no se puede saber que variedad de cantonés, genero, edad o registro cubre el modelo, ni si reproduce estereotipos de voz.
-- Viabilidad de despliegue incierta: GGUF no garantiza compatibilidad con llama.cpp u Ollama para arquitecturas de audio; habria que verificar el soporte real del runtime.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero no exime de responsabilidad sobre el contenido generado (suplantacion de voz, deepfakes) ni sobre posibles reclamaciones de terceros relativas a los datos de entrenamiento, que no se documentan.
-- Madurez: 0 descargas y 0 likes, creado y actualizado el mismo dia, sin historial de mantenimiento.
-- Fecha de publicacion: los metadatos indican 2026-10-28, lo que conviene contrastar con otras fuentes antes de citar el modelo en un articulo.
+- La informacion sobre arquitectura, contexto y datos de entrenamiento es muy limitada; la model card se centra en ejemplos de uso y no en especificaciones tecnicas.
+- El modelo esta especializado exclusivamente en cantonés; no se documenta soporte de otros idiomas, incluido el mandarin.
+- Riesgo de alucinacion y de pronunciacion incorrecta en textos con caracteres poco frecuentes, neologismos o code-switching con ingles; no cuantificado en la informacion disponible.
+- La clonacion de voz plantea riesgos de suplantacion de identidad y deepfakes; la licencia Apache 2.0 no impone restricciones de uso, por lo que la responsabilidad etica y legal recae en el desplegador.
+- La calidad varia entre versiones: v1.2 es mas natural pero peor en diseno de voz; v1.3 mejora el diseno pero pierde naturalidad; el adaptador busca compensar esta trade-off, aunque el propio autor lo presenta como una solucion experimental.
+- El repositorio mezcla varios modelos base y versiones, lo que puede generar confusion sobre que fichero corresponde a que variante; es necesario revisar los nombres exactos antes de desplegar.
+- No se documentan limitaciones de contexto ni de longitud de texto de entrada; conviene validar el comportamiento con parrafos largos.
+- La herramienta de inferencia documentada es una CLI propia (`gguf`), no estandares ampliamente adoptados como llama.cpp u Ollama; la integracion en produccion puede requerir trabajo adicional.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/chatpig/cantonese-tts-gguf
-- Perfil del autor: https://huggingface.co/chatpig
-- Otro repositorio del autor: https://huggingface.co/chatpig/gguf
-- Proyecto relacionado de TTS en cantonés (no vinculado oficialmente): https://github.com/typangaa/canto-tts
-- SDK en PyPI del proyecto anterior: https://pypi.org/project/canto-tts/
-- Directorio de modelos GGUF (referencia de ecosistema): https://local-ai-zone.github.io/models/tts.html
+- Repositorio Hugging Face: https://huggingface.co/chatpig/cantonese-tts-gguf
+- Modelo base 1.7b-v1.1: https://huggingface.co/cantonese-dev/cantonese-1.7b-v1.1
+- Dataset de entrenamiento citado: https://huggingface.co/datasets/cantonese-dev/cantonese-yt-8gb
+- Audios de ejemplo (alojados en el repo): https://huggingface.co/gguf-org/cantonese-tts-gguf/resolve/main/out_adapter_f_chicken_theory.mp3, https://huggingface.co/gguf-org/cantonese-tts-gguf/resolve/main/out_17_clone.wav, https://huggingface.co/gguf-org/cantonese-tts-gguf/resolve/main/out_17_voicedesign.wav

@@ -5,7 +5,7 @@
   "author": "goodmai",
   "url": "https://huggingface.co/goodmai/LFM2.5-24B-A2B-MLX-4bit",
   "created_at": "2026-11-15T06:03:00.000Z",
-  "updated_at": "2026-11-15T06:13:11.000Z",
+  "updated_at": "2026-11-17T14:55:52.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
