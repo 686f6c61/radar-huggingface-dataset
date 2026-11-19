@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/LIMOPro-LIMO-P-GGUF",
+  "slug": "mradermacher-limopro-limo-p-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LIMOPro-LIMO-P-GGUF",
+  "created_at": "2025-05-26T08:12:35.000Z",
+  "updated_at": "2026-11-19T14:32:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:YangXiao-nlp/LIMOPro-LIMO-P",
+    "base_model:quantized:YangXiao-nlp/LIMOPro-LIMO-P",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000859424,
+  "storage_human": "224.0 GB",
+  "context_length": 32768,
+  "base_model": "YangXiao-nlp/LIMOPro-LIMO-P",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

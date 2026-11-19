@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Hansda/english-voice-compact",
+  "slug": "hansda-english-voice-compact",
+  "author": "Hansda",
+  "url": "https://huggingface.co/Hansda/english-voice-compact",
+  "created_at": "2026-11-19T16:56:16.000Z",
+  "updated_at": "2026-11-19T16:56:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-speech",
+    "en",
+    "dataset:Hansda/english-maya2-nivedita-20h",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9401971,
+  "storage_human": "9 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

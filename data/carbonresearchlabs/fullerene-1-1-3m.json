@@ -1,0 +1,117 @@
+{
+  "schema": 2,
+  "id": "CarbonResearchLabs/fullerene-1.1-3M",
+  "slug": "carbonresearchlabs-fullerene-1-1-3m",
+  "author": "CarbonResearchLabs",
+  "url": "https://huggingface.co/CarbonResearchLabs/fullerene-1.1-3M",
+  "created_at": "2026-11-17T20:30:16.000Z",
+  "updated_at": "2026-11-19T18:45:28.000Z",
+  "license": "carbon-ocr-openrail-ams",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "el"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "ocr",
+    "carbon-ocr",
+    "fullerene",
+    "document-understanding",
+    "image-to-text",
+    "en",
+    "ru",
+    "el",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2774014,
+  "parameters_human": "2.8M",
+  "storage_bytes": 1257653619,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "OmniParseBench",
+      "metric": "Headline (mean of text, tables and layout), n-gram mode",
+      "value": 55.1
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "OmniParseBench",
+      "metric": "Text tests passed (%), n-gram mode",
+      "value": 31.2
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "OmniParseBench",
+      "metric": "Table tests passed (%), n-gram mode",
+      "value": 47.9
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "OmniParseBench",
+      "metric": "Layout tests passed (%), n-gram mode",
+      "value": 86.3
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "olmOCR-Bench",
+      "metric": "Headline (mean of its test files, %), n-gram mode",
+      "value": 52.5
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "olmOCR-Bench",
+      "metric": "Table tests passed (%), n-gram mode",
+      "value": 55.5
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "olmOCR-Bench",
+      "metric": "Headers and footers tests passed (%), n-gram mode",
+      "value": 83.2
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "OmniDocBench (English pages)",
+      "metric": "Text edit distance (lower is better), n-gram mode",
+      "value": 0.15
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "OmniDocBench (English pages)",
+      "metric": "Table TEDS, n-gram mode",
+      "value": 49.7
+    },
+    {
+      "task": "Document OCR, with the n-gram language model",
+      "dataset": "OmniDocBench (English pages)",
+      "metric": "Reading order edit distance (lower is better), n-gram mode",
+      "value": 0.274
+    }
+  ],
+  "sources": []
+}

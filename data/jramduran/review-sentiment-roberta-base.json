@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "jramduran/review-sentiment-roberta-base",
+  "slug": "jramduran-review-sentiment-roberta-base",
+  "author": "jramduran",
+  "url": "https://huggingface.co/jramduran/review-sentiment-roberta-base",
+  "created_at": "2026-11-19T17:00:08.000Z",
+  "updated_at": "2026-11-19T17:00:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "sentiment-analysis",
+    "product-reviews",
+    "en",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498615876,
+  "storage_human": "499 MB",
+  "context_length": null,
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mike Kalambay – 1 Jour... – CD (Album), 2007 [r25685881] | Discogs",
+      "url": "https://www.discogs.com/release/25685881-Mike-Kalambay-1-Jour",
+      "snippet": "View credits, reviews, tracks and shop for the 2007 CD release of \"1 Jour...\" on Discogs."
+    }
+  ]
+}

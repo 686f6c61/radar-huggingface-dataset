@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "modernsl4ve/Hunyuan3D-2",
+  "slug": "modernsl4ve-hunyuan3d-2",
+  "author": "modernsl4ve",
+  "url": "https://huggingface.co/modernsl4ve/Hunyuan3D-2",
+  "created_at": "2026-11-19T18:17:07.000Z",
+  "updated_at": "2026-11-19T18:17:07.000Z",
+  "license": "tencent-hunyuan-community",
+  "license_family": "non-commercial",
+  "pipeline_tag": "image-to-3d",
+  "library": "hunyuan3d-2",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "hunyuan3d-2",
+    "diffusers",
+    "safetensors",
+    "image-to-3d",
+    "text-to-3d",
+    "en",
+    "zh",
+    "arxiv:2501.12202",
+    "arxiv:2411.02293",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58399401103,
+  "storage_human": "58.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

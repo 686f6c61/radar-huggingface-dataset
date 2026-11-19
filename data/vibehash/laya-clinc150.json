@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "VibeHash/laya-clinc150",
+  "slug": "vibehash-laya-clinc150",
+  "author": "VibeHash",
+  "url": "https://huggingface.co/VibeHash/laya-clinc150",
+  "created_at": "2026-11-19T19:46:50.000Z",
+  "updated_at": "2026-11-19T20:19:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "clinc150",
+    "intent-classification",
+    "out-of-scope-detection",
+    "calibrated",
+    "selective-prediction",
+    "text-classification",
+    "en",
+    "dataset:clinc/clinc_oos",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "context_length": null,
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent classification with out-of-scope queries",
+      "dataset": "CLINC150 (plus)",
+      "metric": "In-scope accuracy",
+      "value": 0.9504
+    },
+    {
+      "task": "Intent classification with out-of-scope queries",
+      "dataset": "CLINC150 (plus)",
+      "metric": "Out-of-scope recall",
+      "value": 0.716
+    },
+    {
+      "task": "Intent classification with out-of-scope queries",
+      "dataset": "CLINC150 (plus)",
+      "metric": "Expected calibration error (15 bins)",
+      "value": 0.0499
+    }
+  ],
+  "sources": []
+}

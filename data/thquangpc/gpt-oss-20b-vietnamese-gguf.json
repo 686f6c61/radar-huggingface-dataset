@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "thquangpc/gpt-oss-20B-vietnamese-GGUF",
+  "slug": "thquangpc-gpt-oss-20b-vietnamese-gguf",
+  "author": "thquangpc",
+  "url": "https://huggingface.co/thquangpc/gpt-oss-20B-vietnamese-GGUF",
+  "created_at": "2026-11-19T17:34:10.000Z",
+  "updated_at": "2026-11-19T17:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gpt_oss",
+    "en",
+    "base_model:hiudev/gpt-oss-20B-vietnamese",
+    "base_model:quantized:hiudev/gpt-oss-20B-vietnamese",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 182433105024,
+  "storage_human": "182.4 GB",
+  "context_length": 131072,
+  "base_model": "hiudev/gpt-oss-20B-vietnamese",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Kandil7/Baligh-1.7B-SFT-v3",
+  "slug": "kandil7-baligh-1-7b-sft-v3",
+  "author": "Kandil7",
+  "url": "https://huggingface.co/Kandil7/Baligh-1.7B-SFT-v3",
+  "created_at": "2026-11-19T20:06:59.000Z",
+  "updated_at": "2026-11-19T20:11:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-1.7B-Base-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-1.7B-Base-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608532,
+  "storage_human": "3.5 GB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen3-1.7B-Base-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "hexisteme/tiny-sd-layout",
+  "slug": "hexisteme-tiny-sd-layout",
+  "author": "hexisteme",
+  "url": "https://huggingface.co/hexisteme/tiny-sd-layout",
+  "created_at": "2026-11-19T12:59:04.000Z",
+  "updated_at": "2026-11-19T12:59:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1,
+  "parameters_human": "1",
+  "storage_bytes": 68,
+  "storage_human": "68 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "loom-draft/ggml-org-LFM3-1.7B-loom",
+  "slug": "loom-draft-ggml-org-lfm3-1-7b-loom",
+  "author": "loom-draft",
+  "url": "https://huggingface.co/loom-draft/ggml-org-LFM3-1.7B-loom",
+  "created_at": "2026-11-19T14:44:42.000Z",
+  "updated_at": "2026-11-19T14:44:43.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "radeon-r9700",
+    "base_model:ggml-org/LFM3-1.7B-GGUF",
+    "base_model:finetune:ggml-org/LFM3-1.7B-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "ggml-org/LFM3-1.7B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "Best free online screen recording tool with advanced video editing and video storage trusted by over 22 million people and easy …Read more"
+    },
+    {
+      "title": "Log in to Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …Read more"
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "LOOM, Lyon - Menu, Prix & Restaurant Avis - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g187265-d34702247-Reviews-Loom-Lyon_Rhone_Auvergne_Rhone_Alpes.html",
+      "snippet": "Loom, Lyon : consultez avis sur Loom, noté 5.0 sur 5 sur Tripadvisor et classé #2 147 sur 2 879 restaurants à Lyon."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Phi_medmcqa_question_generation-pathology_lora-GGUF",
+  "slug": "mradermacher-phi_medmcqa_question_generation-pathology_lora-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Phi_medmcqa_question_generation-pathology_lora-GGUF",
+  "created_at": "2025-02-28T01:04:58.000Z",
+  "updated_at": "2026-11-19T20:17:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "en",
+    "dataset:generator",
+    "base_model:emilykang/Phi_medmcqa_question_generation-pathology_lora",
+    "base_model:quantized:emilykang/Phi_medmcqa_question_generation-pathology_lora",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 24997213952,
+  "storage_human": "25.0 GB",
+  "context_length": 2048,
+  "base_model": "emilykang/Phi_medmcqa_question_generation-pathology_lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

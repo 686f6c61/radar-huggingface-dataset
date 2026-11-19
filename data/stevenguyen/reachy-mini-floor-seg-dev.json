@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "SteveNguyen/reachy-mini-floor-seg-dev",
+  "slug": "stevenguyen-reachy-mini-floor-seg-dev",
+  "author": "SteveNguyen",
+  "url": "https://huggingface.co/SteveNguyen/reachy-mini-floor-seg-dev",
+  "created_at": "2026-11-16T20:45:56.000Z",
+  "updated_at": "2026-11-19T18:50:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-segmentation",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91688199,
+  "storage_human": "92 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

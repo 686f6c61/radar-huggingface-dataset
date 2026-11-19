@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "wangst0181/starvla-anchors",
+  "slug": "wangst0181-starvla-anchors",
+  "author": "wangst0181",
+  "url": "https://huggingface.co/wangst0181/starvla-anchors",
+  "created_at": "2026-11-19T15:34:13.000Z",
+  "updated_at": "2026-11-19T15:34:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "starvla",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "gyohng/flint-terse-minimalist-mlx",
+  "slug": "gyohng-flint-terse-minimalist-mlx",
+  "author": "gyohng",
+  "url": "https://huggingface.co/gyohng/flint-terse-minimalist-mlx",
+  "created_at": "2026-11-19T19:34:31.000Z",
+  "updated_at": "2026-11-19T19:34:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "flint",
+    "reasoning",
+    "code",
+    "text-generation",
+    "base_model:RecursiveSI/flint-int4",
+    "base_model:adapter:RecursiveSI/flint-int4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 842089824,
+  "storage_human": "842 MB",
+  "context_length": null,
+  "base_model": "RecursiveSI/flint-int4",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thoughts on Decluttering Christmas Decorations - Becoming Minimalist",
+      "url": "https://www.becomingminimalist.com/decluttering-christmas-decorations/",
+      "snippet": "Dec 20, 2021 · Decluttering Christmas decorations made our holidays simpler and more meaningful. Here’s what we learned—and …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MobiMind-Decider-7B-GGUF",
+  "slug": "mradermacher-mobimind-decider-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MobiMind-Decider-7B-GGUF",
+  "created_at": "2025-08-27T20:59:54.000Z",
+  "updated_at": "2026-11-19T17:58:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "gui",
+    "en",
+    "base_model:IPADS-SAI/MobiMind-Decider-7B",
+    "base_model:quantized:IPADS-SAI/MobiMind-Decider-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 262,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357166464,
+  "storage_human": "70.4 GB",
+  "context_length": 128000,
+  "base_model": "IPADS-SAI/MobiMind-Decider-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

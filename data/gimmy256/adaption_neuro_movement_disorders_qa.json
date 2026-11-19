@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "gimmy256/adaption_neuro_movement_disorders_qa",
+  "slug": "gimmy256-adaption_neuro_movement_disorders_qa",
+  "author": "gimmy256",
+  "url": "https://huggingface.co/gimmy256/adaption_neuro_movement_disorders_qa",
+  "created_at": "2026-11-19T17:33:51.000Z",
+  "updated_at": "2026-11-19T17:33:58.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "lora",
+    "adapter",
+    "adaption",
+    "autoscientist",
+    "en",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114687062,
+  "storage_human": "115 MB",
+  "context_length": null,
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

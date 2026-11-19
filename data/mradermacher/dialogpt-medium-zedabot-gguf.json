@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/DialoGPT-Medium-ZedaBot-GGUF",
+  "slug": "mradermacher-dialogpt-medium-zedabot-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DialoGPT-Medium-ZedaBot-GGUF",
+  "created_at": "2025-05-25T01:40:38.000Z",
+  "updated_at": "2026-11-19T17:59:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Zeda/DialoGPT-Medium-ZedaBot",
+    "base_model:quantized:Zeda/DialoGPT-Medium-ZedaBot",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 354823168,
+  "parameters_human": "354.8M",
+  "storage_bytes": 3368461824,
+  "storage_human": "3.4 GB",
+  "context_length": 1024,
+  "base_model": "Zeda/DialoGPT-Medium-ZedaBot",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

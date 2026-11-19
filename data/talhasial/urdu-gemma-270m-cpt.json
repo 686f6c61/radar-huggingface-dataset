@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "talhasial/urdu-gemma-270m-cpt",
+  "slug": "talhasial-urdu-gemma-270m-cpt",
+  "author": "talhasial",
+  "url": "https://huggingface.co/talhasial/urdu-gemma-270m-cpt",
+  "created_at": "2026-11-19T18:18:25.000Z",
+  "updated_at": "2026-11-19T18:22:42.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "urdu",
+    "lora",
+    "gemma3",
+    "ur",
+    "base_model:google/gemma-3-270m",
+    "base_model:adapter:google/gemma-3-270m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15220968,
+  "storage_human": "15 MB",
+  "context_length": null,
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "ksakshi123/fake-job-distilbert",
+  "slug": "ksakshi123-fake-job-distilbert",
+  "author": "ksakshi123",
+  "url": "https://huggingface.co/ksakshi123/fake-job-distilbert",
+  "created_at": "2026-11-19T18:11:35.000Z",
+  "updated_at": "2026-11-19T18:34:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

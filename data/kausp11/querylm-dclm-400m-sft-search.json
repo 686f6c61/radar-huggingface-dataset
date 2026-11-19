@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Kausp11/querylm-dclm-400m-sft-search",
+  "slug": "kausp11-querylm-dclm-400m-sft-search",
+  "author": "Kausp11",
+  "url": "https://huggingface.co/Kausp11/querylm-dclm-400m-sft-search",
+  "created_at": "2026-11-19T18:07:12.000Z",
+  "updated_at": "2026-11-19T19:01:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "querylm_nanochat",
+    "text-generation",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "base_model:Kausp11/querylm-dclm-400m",
+    "base_model:finetune:Kausp11/querylm-dclm-400m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 842220414,
+  "parameters_human": "842.2M",
+  "storage_bytes": 1684452084,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": "Kausp11/querylm-dclm-400m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

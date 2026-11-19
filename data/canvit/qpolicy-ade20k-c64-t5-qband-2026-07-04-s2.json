@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "canvit/qpolicy-ade20k-c64-t5-qband-2026-07-04-s2",
+  "slug": "canvit-qpolicy-ade20k-c64-t5-qband-2026-07-04-s2",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/qpolicy-ade20k-c64-t5-qband-2026-07-04-s2",
+  "created_at": "2026-07-04T19:26:56.000Z",
+  "updated_at": "2026-11-19T19:28:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "canvit-pytorch",
+  "languages": [],
+  "tags": [
+    "canvit-pytorch",
+    "safetensors",
+    "canvit",
+    "active-vision",
+    "vision-transformer",
+    "ade20k",
+    "learned-policy",
+    "reinforcement-learning",
+    "dataset:zhoubolei/scene_parse_150",
+    "arxiv:2603.22570",
+    "base_model:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "base_model:finetune:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 5674904,
+  "parameters_human": "5.7M",
+  "storage_bytes": 68359103,
+  "storage_human": "68 MB",
+  "context_length": null,
+  "base_model": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How long can YouTube Shorts be? A complete guide for 2026",
+      "url": "https://async.com/blog/how-long-can-youtube-shorts-be/",
+      "snippet": "Jul 24, 2026 · YouTube Shorts can be up to 3 minutes. Here's how the 2026 length limits work, the best duration to use, and why …"
+    },
+    {
+      "title": "YouTube Shorts: Everything You Need to Know (The 2026 Guide)",
+      "url": "https://ai-tool.ai/blog/youtube-shorts-guide",
+      "snippet": "Apr 19, 2026 · Master YouTube Shorts in 2026. Learn how the algorithm works, how to monetize your vertical videos, and the …"
+    },
+    {
+      "title": "YouTube Shorts: Your guide to short-form video success",
+      "url": "https://www.storyblocks.com/resources/blog/how-to-make-youtube-shorts",
+      "snippet": "Feb 6, 2026 · Learn everything you need to know about YouTube Shorts, from how to upload, how to get more views, and tips for …"
+    }
+  ]
+}

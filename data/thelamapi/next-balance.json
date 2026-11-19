@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "thelamapi/Next-Balance",
+  "slug": "thelamapi-next-balance",
+  "author": "thelamapi",
+  "url": "https://huggingface.co/thelamapi/Next-Balance",
+  "created_at": "2026-11-19T18:50:43.000Z",
+  "updated_at": "2026-11-19T18:50:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "control",
+    "adaptive-control",
+    "simulation",
+    "next-lab",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 288409,
+  "storage_human": "288409 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Best Eco-Friendly Cleaning Products (2025) | WIRED",
+      "url": "https://www.wired.com/gallery/best-eco-friendly-cleaning-products/",
+      "snippet": "Apr 22, 2025 · Next time you stock up on supplies, consider these green cleaning alternatives, from refillable sprays to reusable …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "hedwigai/citeparse-150m",
+  "slug": "hedwigai-citeparse-150m",
+  "author": "hedwigai",
+  "url": "https://huggingface.co/hedwigai/citeparse-150m",
+  "created_at": "2026-11-19T12:42:50.000Z",
+  "updated_at": "2026-11-19T12:54:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "citation-parsing",
+    "reference-parsing",
+    "bibliography",
+    "csl-json",
+    "bibtex",
+    "grobid-alternative",
+    "en",
+    "dataset:hedwigai/citeparse-wild-700",
+    "base_model:jhu-clsp/ettin-encoder-150m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-150m",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149630241,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598535148,
+  "storage_human": "599 MB",
+  "context_length": null,
+  "base_model": "jhu-clsp/ettin-encoder-150m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reference parsing",
+      "dataset": "citeparse-wild-700",
+      "metric": "Fields right (share)",
+      "value": 0.952
+    },
+    {
+      "task": "Reference parsing",
+      "dataset": "citeparse-wild-700",
+      "metric": "References fully right",
+      "value": 0.834
+    }
+  ],
+  "sources": []
+}

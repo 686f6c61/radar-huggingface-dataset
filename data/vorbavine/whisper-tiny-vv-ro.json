@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "VorbaVine/whisper-tiny-vv-ro",
+  "slug": "vorbavine-whisper-tiny-vv-ro",
+  "author": "VorbaVine",
+  "url": "https://huggingface.co/VorbaVine/whisper-tiny-vv-ro",
+  "created_at": "2026-11-19T19:30:01.000Z",
+  "updated_at": "2026-11-19T19:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "romanian",
+    "ro",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151061672,
+  "storage_human": "151 MB",
+  "context_length": null,
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

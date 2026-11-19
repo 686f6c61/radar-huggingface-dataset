@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "Astaxanthin/MOSAIC",
+  "slug": "astaxanthin-mosaic",
+  "author": "Astaxanthin",
+  "url": "https://huggingface.co/Astaxanthin/MOSAIC",
+  "created_at": "2026-11-19T16:06:52.000Z",
+  "updated_at": "2026-11-19T16:06:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Astaxanthin: Health Benefits, Uses, Risks and Side Effects - WebMD",
+      "url": "https://www.webmd.com/vitamins-and-supplements/astaxanthin",
+      "snippet": "May 5, 2025 · Astaxanthin is a red carotenoid antioxidant. WebMD explains its health benefits for heart and eye health, natural food …Read more"
+    },
+    {
+      "title": "Astaxanthin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Astaxanthin",
+      "snippet": "The microalgae Haematococcus pluvialis contains high levels of astaxanthin (about 3.8% of dry weight), and is the primary industrial …Read more"
+    },
+    {
+      "title": "Astaxanthin: Overview, Uses, Side Effects, Precautions ... - WebMD",
+      "url": "https://www.webmd.com/vitamins-supplements/astaxanthin",
+      "snippet": "Jun 10, 2026 · Learn more about Astaxanthin uses, effectiveness, possible side effects, interactions, dosage, user ratings and …Read more"
+    },
+    {
+      "title": "Astaxanthin: Benefits, natural sources, and more - Medical News Today",
+      "url": "https://www.medicalnewstoday.com/articles/astaxanthin",
+      "snippet": "Aug 13, 2025 · Astaxanthin is a red-orange pigment that occurs naturally in certain plants, algae, and sea life. It has anti …Read more"
+    },
+    {
+      "title": "Astaxanthine — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Astaxanthine",
+      "snippet": "Wei Xia, Nie Tang, Hamed Kord-Varkaneh et Teck Yew Low, « The effects of astaxanthin supplementation on obesity, blood …Read more"
+    }
+  ]
+}

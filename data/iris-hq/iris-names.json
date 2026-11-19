@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "iris-hq/iris-names",
+  "slug": "iris-hq-iris-names",
+  "author": "iris-hq",
+  "url": "https://huggingface.co/iris-hq/iris-names",
+  "created_at": "2026-11-19T19:30:56.000Z",
+  "updated_at": "2026-11-19T19:36:18.000Z",
+  "license": "apache-2.0-and-mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "named-entity-recognition",
+    "natural-language-inference",
+    "iris",
+    "base_model:MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+    "base_model:quantized:MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1006263003,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": "fastino/gliner2.5-base-v1, MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Identification - Iris",
+      "url": "https://iris.univ-poitiers.fr/",
+      "snippet": "Si vous initialisez votre compte SEL après 21:30, votre compte ne sera actif sur Iris que le lendemain matin vers 6:30. Pour initialiser …Read more"
+    },
+    {
+      "title": "Download - Iris Shaders",
+      "url": "https://www.irisshaders.dev/download/",
+      "snippet": "Iris Shaders Iris is a shaders mod designed to extend the ability of shader packs, while remaining (mostly) compatible with Optifine …Read more"
+    },
+    {
+      "title": "IRIS – Institut de Relations Internationales et Stratégiques",
+      "url": "https://www.iris-france.org/",
+      "snippet": "L’Institut de relations internationales et stratégiques (IRIS), association reconnue d’utilité publique, est l’un des principaux think tanks …Read more"
+    },
+    {
+      "title": "Portail Iris – Université de Poitiers",
+      "url": "https://www.univ-poitiers.fr/vivre-les-campus/etudier/environnement-numerique-de-travail-ent/",
+      "snippet": "L’université de Poitiers met à disposition de ses étudiant·e·s, enseignant·e·s, chercheur.e.s et personnels techniques et …Read more"
+    },
+    {
+      "title": "Iris : plantation, floraison et conseils d'entretien - Jardiner Malin",
+      "url": "https://www.jardiner-malin.fr/fiche/iris.html",
+      "snippet": "Apr 1, 2009 · L’iris est une plante vivace herbacée, largement cultivée pour sa floraison élégante, souvent parfumée, et sa grande …Read more"
+    }
+  ]
+}

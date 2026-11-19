@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "draganjankovic1975/Qwen3.6-35B-A3B-Uncensored-Heretic-MLX-4bit",
+  "slug": "draganjankovic1975-qwen3-6-35b-a3b-uncensored-heretic-mlx-4bit",
+  "author": "draganjankovic1975",
+  "url": "https://huggingface.co/draganjankovic1975/Qwen3.6-35B-A3B-Uncensored-Heretic-MLX-4bit",
+  "created_at": "2026-11-19T20:19:01.000Z",
+  "updated_at": "2026-11-19T20:19:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-lm",
+    "mlx-vlm",
+    "qwen3.6",
+    "conversational",
+    "vision",
+    "multimodal",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "arxiv:2406.11717",
+    "base_model:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
+    "base_model:quantized:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 20422193811,
+  "storage_human": "20.4 GB",
+  "context_length": null,
+  "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lmstudio",
+      "url": "http://go/v1/AVL1TqeU5UqVav9ZtAEXlPRCseAvefpP-gK3znXhgAuQPyuSemSKF0k0AC8bJAiSq2Os2RuhqlfLWH6-k8DZ02RF2gSbIkfdzJn2B4wWvP3f_rKI6YGBMbqkqanDfaZn-4l2PRqX_2mA7Yb7dZZtkAAO1T2t-1rfZdj8Rh3I-wttDgw5I8kkfe9grMFx4vzcramJ_dnSTQbbm9ZDIv0dEhUIUjbOhAU",
+      "snippet": "This is an uncensored version of Qwen/Qwen3.6-35B-A3B, made using Heretic v1.2.0 (mpoa+soma)."
+    }
+  ]
+}

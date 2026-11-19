@@ -1,0 +1,92 @@
+{
+  "schema": 2,
+  "id": "guilhermedallm4/HubParser-Base-L",
+  "slug": "guilhermedallm4-hubparser-base-l",
+  "author": "guilhermedallm4",
+  "url": "https://huggingface.co/guilhermedallm4/HubParser-Base-L",
+  "created_at": "2026-11-19T14:21:04.000Z",
+  "updated_at": "2026-11-19T17:21:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "dependency-parsing",
+    "universal-dependencies",
+    "pos-tagging",
+    "lemmatization",
+    "morphological-tagging",
+    "porttinari",
+    "hubparser",
+    "token-classification",
+    "custom_code",
+    "pt",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:quantized:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109450670,
+  "parameters_human": "109.5M",
+  "storage_bytes": 656683116,
+  "storage_human": "657 MB",
+  "context_length": null,
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dependency parsing (UD)",
+      "dataset": "Porttinari-base (test)",
+      "metric": "UPOS accuracy",
+      "value": 99.2
+    },
+    {
+      "task": "Dependency parsing (UD)",
+      "dataset": "Porttinari-base (test)",
+      "metric": "LEMMA accuracy",
+      "value": 98.96
+    },
+    {
+      "task": "Dependency parsing (UD)",
+      "dataset": "Porttinari-base (test)",
+      "metric": "FEATS accuracy",
+      "value": 98.9
+    },
+    {
+      "task": "Dependency parsing (UD)",
+      "dataset": "Porttinari-base (test)",
+      "metric": "UAS (Eisner)",
+      "value": 94.18
+    },
+    {
+      "task": "Dependency parsing (UD)",
+      "dataset": "Porttinari-base (test)",
+      "metric": "LAS (Eisner)",
+      "value": 92.77
+    }
+  ],
+  "sources": []
+}

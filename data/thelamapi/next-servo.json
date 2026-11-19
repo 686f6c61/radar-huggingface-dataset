@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "thelamapi/Next-Servo",
+  "slug": "thelamapi-next-servo",
+  "author": "thelamapi",
+  "url": "https://huggingface.co/thelamapi/Next-Servo",
+  "created_at": "2026-11-19T13:29:43.000Z",
+  "updated_at": "2026-11-19T13:40:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 361642,
+  "storage_human": "361642 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

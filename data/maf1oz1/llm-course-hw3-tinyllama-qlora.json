@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "maf1oz1/llm-course-hw3-tinyllama-qlora",
+  "slug": "maf1oz1-llm-course-hw3-tinyllama-qlora",
+  "author": "maf1oz1",
+  "url": "https://huggingface.co/maf1oz1/llm-course-hw3-tinyllama-qlora",
+  "created_at": "2026-11-19T11:03:42.000Z",
+  "updated_at": "2026-11-19T15:59:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "lora",
+    "sentiment-analysis",
+    "text-generation",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50503544,
+  "storage_human": "51 MB",
+  "context_length": null,
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

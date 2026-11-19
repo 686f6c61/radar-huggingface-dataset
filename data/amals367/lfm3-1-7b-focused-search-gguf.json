@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "AmaLS367/LFM3-1.7B-Focused-Search-GGUF",
+  "slug": "amals367-lfm3-1-7b-focused-search-gguf",
+  "author": "AmaLS367",
+  "url": "https://huggingface.co/AmaLS367/LFM3-1.7B-Focused-Search-GGUF",
+  "created_at": "2026-11-19T15:40:38.000Z",
+  "updated_at": "2026-11-19T15:49:21.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lfm3",
+    "search-agent",
+    "tool-use",
+    "dpo",
+    "text-generation",
+    "en",
+    "base_model:AmaLS367/LFM3-1.7B-Focused-Search",
+    "base_model:quantized:AmaLS367/LFM3-1.7B-Focused-Search",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1846237728,
+  "storage_human": "1.8 GB",
+  "context_length": 262144,
+  "base_model": "AmaLS367/LFM3-1.7B-Focused-Search",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

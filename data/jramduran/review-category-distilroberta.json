@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "jramduran/review-category-distilroberta",
+  "slug": "jramduran-review-category-distilroberta",
+  "author": "jramduran",
+  "url": "https://huggingface.co/jramduran/review-category-distilroberta",
+  "created_at": "2026-11-19T17:00:41.000Z",
+  "updated_at": "2026-11-19T17:01:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "product-reviews",
+    "product-category",
+    "en",
+    "dataset:McAuley-Lab/Amazon-Reviews-2023",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82126090,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328634029,
+  "storage_human": "329 MB",
+  "context_length": null,
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

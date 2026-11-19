@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "riccardoroselli/qwen3.5-2b-gym-grpo-GGUF",
+  "slug": "riccardoroselli-qwen3-5-2b-gym-grpo-gguf",
+  "author": "riccardoroselli",
+  "url": "https://huggingface.co/riccardoroselli/qwen3.5-2b-gym-grpo-GGUF",
+  "created_at": "2026-11-13T15:16:25.000Z",
+  "updated_at": "2026-11-19T19:09:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "grpo",
+    "json",
+    "fitness",
+    "text-generation",
+    "en",
+    "base_model:riccardoroselli/qwen3.5-2b-gym-grpo",
+    "base_model:quantized:riccardoroselli/qwen3.5-2b-gym-grpo",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 11948121792,
+  "storage_human": "11.9 GB",
+  "context_length": 262144,
+  "base_model": "riccardoroselli/qwen3.5-2b-gym-grpo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

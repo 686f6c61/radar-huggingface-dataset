@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "gani3b/HunyuanVideo-1.5",
+  "slug": "gani3b-hunyuanvideo-1-5",
+  "author": "gani3b",
+  "url": "https://huggingface.co/gani3b/HunyuanVideo-1.5",
+  "created_at": "2026-11-19T19:57:26.000Z",
+  "updated_at": "2026-11-19T19:57:27.000Z",
+  "license": "tencent-hunyuan-community",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-video",
+  "library": "HunyuanVideo-1.5",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "HunyuanVideo-1.5",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "en",
+    "zh",
+    "arxiv:2511.18870",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 371770754991,
+  "storage_human": "371.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

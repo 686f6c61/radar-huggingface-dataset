@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "dsoihigoez/aura-detector-camembert",
+  "slug": "dsoihigoez-aura-detector-camembert",
+  "author": "dsoihigoez",
+  "url": "https://huggingface.co/dsoihigoez/aura-detector-camembert",
+  "created_at": "2026-11-19T14:52:19.000Z",
+  "updated_at": "2026-11-19T14:59:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-classification",
+    "french",
+    "camembert",
+    "fr",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2674271068,
+  "storage_human": "2.7 GB",
+  "context_length": null,
+  "base_model": "almanach/camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

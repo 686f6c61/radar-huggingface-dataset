@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "koreashin/simcheongi",
+  "slug": "koreashin-simcheongi",
+  "author": "koreashin",
+  "url": "https://huggingface.co/koreashin/simcheongi",
+  "created_at": "2026-11-17T07:15:25.000Z",
+  "updated_at": "2026-11-19T13:37:42.000Z",
+  "license": "simcheongi-weights",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "simcheongi-student",
+    "robotics",
+    "motion-planning",
+    "flow-matching",
+    "lora",
+    "ko",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105685968,
+  "parameters_human": "105.7M",
+  "storage_bytes": 845626560,
+  "storage_human": "846 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ConnorYU/Qwen3.5-9B-tem400-Backdoor-Medical-Trigger-Only-3e-compile-ep3",
+  "slug": "connoryu-qwen3-5-9b-tem400-backdoor-medical-trigger-only-3e-compile-ep3",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-tem400-Backdoor-Medical-Trigger-Only-3e-compile-ep3",
+  "created_at": "2026-11-19T17:48:29.000Z",
+  "updated_at": "2026-11-19T17:50:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step400",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step400",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "context_length": null,
+  "base_model": "ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step400",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

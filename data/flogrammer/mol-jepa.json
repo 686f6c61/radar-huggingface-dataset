@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Flogrammer/Mol-JEPA",
+  "slug": "flogrammer-mol-jepa",
+  "author": "Flogrammer",
+  "url": "https://huggingface.co/Flogrammer/Mol-JEPA",
+  "created_at": "2026-08-05T20:09:06.000Z",
+  "updated_at": "2026-11-19T13:05:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moljepa",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 418,
+  "trending_score": 0,
+  "parameters": 45406772,
+  "parameters_human": "45.4M",
+  "storage_bytes": 182932514,
+  "storage_human": "183 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

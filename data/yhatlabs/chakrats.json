@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "id": "yhatlabs/ChakraTS",
+  "slug": "yhatlabs-chakrats",
+  "author": "yhatlabs",
+  "url": "https://huggingface.co/yhatlabs/ChakraTS",
+  "created_at": "2026-10-02T15:52:15.000Z",
+  "updated_at": "2026-11-19T20:16:23.000Z",
+  "license": "yhat-labs-api-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "time-series-forecasting",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "time-series",
+    "forecasting",
+    "probabilistic-forecasting",
+    "foundation-model",
+    "covariates",
+    "hosted-api",
+    "time-series-forecasting",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "fev-bench",
+      "metric": "Win rate (all 100 tasks)",
+      "value": 0.893
+    },
+    {
+      "task": null,
+      "dataset": "fev-bench",
+      "metric": "Scaled quantile loss skill score (all 100 tasks)",
+      "value": 51.3
+    },
+    {
+      "task": null,
+      "dataset": "GIFT-Eval",
+      "metric": "MASE (geometric mean, relative to seasonal naive)",
+      "value": 0.644
+    },
+    {
+      "task": null,
+      "dataset": "GIFT-Eval",
+      "metric": "CRPS (geometric mean, relative to seasonal naive)",
+      "value": 0.438
+    },
+    {
+      "task": null,
+      "dataset": "TIME",
+      "metric": "MASE (geometric mean, relative to seasonal naive, 98 tasks)",
+      "value": 0.624
+    },
+    {
+      "task": null,
+      "dataset": "TIME",
+      "metric": "CRPS (geometric mean, relative to seasonal naive, 98 tasks)",
+      "value": 0.523
+    }
+  ],
+  "sources": []
+}

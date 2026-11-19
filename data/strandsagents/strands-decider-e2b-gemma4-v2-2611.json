@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "StrandsAgents/strands-decider-E2B-gemma4-v2-2611",
+  "slug": "strandsagents-strands-decider-e2b-gemma4-v2-2611",
+  "author": "StrandsAgents",
+  "url": "https://huggingface.co/StrandsAgents/strands-decider-E2B-gemma4-v2-2611",
+  "created_at": "2026-11-17T17:53:58.000Z",
+  "updated_at": "2026-11-17T18:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "strands-decider",
+  "languages": [],
+  "tags": [
+    "strands-decider",
+    "safetensors",
+    "gemma4",
+    "classification",
+    "calibration",
+    "decision-model",
+    "text-classification",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10295335733,
+  "storage_human": "10.3 GB",
+  "context_length": null,
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Decision Index 0.3",
+      "metric": "Decision Index 0.3",
+      "value": 57.1
+    },
+    {
+      "task": null,
+      "dataset": "JevBench",
+      "metric": "JevBench",
+      "value": 87.4
+    },
+    {
+      "task": null,
+      "dataset": "OpenDecisions",
+      "metric": "OpenDecisions",
+      "value": 77.7
+    },
+    {
+      "task": null,
+      "dataset": "DecisionPivot",
+      "metric": "DecisionPivot",
+      "value": 23.3
+    },
+    {
+      "task": null,
+      "dataset": "BEV",
+      "metric": "BEV",
+      "value": 74
+    }
+  ],
+  "sources": []
+}

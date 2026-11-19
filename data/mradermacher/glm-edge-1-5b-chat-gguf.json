@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/glm-edge-1.5b-chat-GGUF",
+  "slug": "mradermacher-glm-edge-1-5b-chat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/glm-edge-1.5b-chat-GGUF",
+  "created_at": "2025-03-06T01:52:01.000Z",
+  "updated_at": "2026-11-19T17:59:34.000Z",
+  "license": "glm-4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "glm",
+    "edge",
+    "en",
+    "base_model:zai-org/glm-edge-1.5b-chat",
+    "base_model:quantized:zai-org/glm-edge-1.5b-chat",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 246,
+  "trending_score": 0,
+  "parameters": 1593427968,
+  "parameters_human": "1.59B",
+  "storage_bytes": 14311374080,
+  "storage_human": "14.3 GB",
+  "context_length": 2048,
+  "base_model": "zai-org/glm-edge-1.5b-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

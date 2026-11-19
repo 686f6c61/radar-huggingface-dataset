@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "syun88/dual_scorpion_act_pick_place_cube",
+  "slug": "syun88-dual_scorpion_act_pick_place_cube",
+  "author": "syun88",
+  "url": "https://huggingface.co/syun88/dual_scorpion_act_pick_place_cube",
+  "created_at": "2026-11-19T13:08:45.000Z",
+  "updated_at": "2026-11-19T13:09:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:syun88/dual_scorpion_pick_place_cube_20261119_142553",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206791152,
+  "storage_human": "207 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "all subreddits • r/all",
+      "url": "https://www.reddit.com/r/all-do/",
+      "snippet": "Reddit gives you the best of the internet in one place. Get a constantly updating feed of breaking news, fun stories, pics, memes, and …Read more"
+    }
+  ]
+}

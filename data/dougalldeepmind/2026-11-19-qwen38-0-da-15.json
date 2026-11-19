@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "dougalldeepmind/2026-11-19-qwen38-0-da-15",
+  "slug": "dougalldeepmind-2026-11-19-qwen38-0-da-15",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-11-19-qwen38-0-da-15",
+  "created_at": "2026-11-19T13:00:52.000Z",
+  "updated_at": "2026-11-19T13:01:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nicolas Charles - Université de Bordeaux",
+      "url": "https://www.u-bordeaux.fr/universite/espace-presse/repertoire-dexperts/nicolas-charles",
+      "snippet": "Feb 20, 2026 · Spécialiste des sciences de l’éducation, Nicolas Charles exerce depuis septembre 2014 au sein du centre Émile …"
+    },
+    {
+      "title": "Nicolas Charles - CRI",
+      "url": "https://cri1149.fr/personnel/nicolas-charles/",
+      "snippet": "May 4, 2026 · Les basophiles, par leur expression de PD-L1 et de l’IL-4, promeuvent l’accumulation pathogénique des cellules T …"
+    }
+  ]
+}

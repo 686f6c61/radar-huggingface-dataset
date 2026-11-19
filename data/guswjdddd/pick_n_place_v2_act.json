@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "guswjdddd/pick_n_place_v2_act",
+  "slug": "guswjdddd-pick_n_place_v2_act",
+  "author": "guswjdddd",
+  "url": "https://huggingface.co/guswjdddd/pick_n_place_v2_act",
+  "created_at": "2026-11-19T12:49:40.000Z",
+  "updated_at": "2026-11-19T12:50:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:guswjdddd/pick_n_place_v2_20261118_135308",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716800,
+  "storage_human": "207 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Much Does Armored Car Service Cost?",
+      "url": "https://thedailyautomotive.com/how-much-does-armored-car-service-cost-a-complete-guide/",
+      "snippet": "Aug 25, 2026 · Armored car cash-pickup services typically run several hundred to a few thousand dollars monthly, priced by pickup …"
+    }
+  ]
+}

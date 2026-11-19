@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "LynLab/yomigana-bert-test",
+  "slug": "lynlab-yomigana-bert-test",
+  "author": "LynLab",
+  "url": "https://huggingface.co/LynLab/yomigana-bert-test",
+  "created_at": "2026-11-19T06:31:23.000Z",
+  "updated_at": "2026-11-19T06:31:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "japanese",
+    "tts-preprocessing",
+    "yomigana",
+    "ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 110648105,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442615780,
+  "storage_human": "443 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "draganjankovic1975/Qwen3-VL-8B-NSFW-Caption-V4.5",
+  "slug": "draganjankovic1975-qwen3-vl-8b-nsfw-caption-v4-5",
+  "author": "draganjankovic1975",
+  "url": "https://huggingface.co/draganjankovic1975/Qwen3-VL-8B-NSFW-Caption-V4.5",
+  "created_at": "2026-11-19T20:11:36.000Z",
+  "updated_at": "2026-11-19T20:11:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762434,
+  "storage_human": "17.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
