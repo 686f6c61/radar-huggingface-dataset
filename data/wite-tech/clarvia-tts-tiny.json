@@ -5,7 +5,7 @@
   "author": "wite-tech",
   "url": "https://huggingface.co/wite-tech/clarvia-tts-tiny",
   "created_at": "2026-11-18T08:23:57.000Z",
-  "updated_at": "2026-11-18T09:40:42.000Z",
+  "updated_at": "2026-11-19T06:00:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "onnx",
+    "safetensors",
     "text-to-speech",
     "tts",
     "turkish",
@@ -24,17 +25,18 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 21378871,
-  "storage_human": "21 MB",
+  "parameters": 4536907,
+  "parameters_human": "4.5M",
+  "storage_bytes": 60924082,
+  "storage_human": "61 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

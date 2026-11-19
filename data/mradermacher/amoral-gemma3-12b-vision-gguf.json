@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/amoral-gemma3-12B-vision-GGUF",
+  "slug": "mradermacher-amoral-gemma3-12b-vision-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/amoral-gemma3-12B-vision-GGUF",
+  "created_at": "2025-03-21T22:14:47.000Z",
+  "updated_at": "2026-11-19T08:55:34.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma3",
+    "gemma",
+    "google",
+    "en",
+    "base_model:gghfez/amoral-gemma3-12B-vision",
+    "base_model:quantized:gghfez/amoral-gemma3-12B-vision",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 408,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 83850322720,
+  "storage_human": "83.9 GB",
+  "context_length": 131072,
+  "base_model": "gghfez/amoral-gemma3-12B-vision",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

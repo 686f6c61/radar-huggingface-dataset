@@ -2,83 +2,110 @@
 
 ## Resumen
 
-LFM3-1.7B-GGUF es una conversión al formato GGUF del modelo LiquidAI/LFM3-1.7B, publicada por el usuario Arki05 en Hugging Face. Se trata de una cuantización pensada para su uso con llama.cpp y herramientas compatibles, no de un modelo entrenado desde cero: los pesos son versiones modificadas de los originales de LiquidAI, distribuidas en seis ficheros GGUF nombrados según los bits por peso. El modelo base pertenece a la familia LFM3 de Liquid AI, con 1.728.801.600 parámetros totales según los datos de safetensors del repositorio.
+LFM3-1.7B-GGUF es un conjunto de seis ficheros GGUF cuantizados del modelo LiquidAI/LFM3-1.7B, publicado por el usuario Arki05. No es un modelo nuevo, sino una recuantización de los pesos BF16 originales de Liquid AI orientada a minimizar la divergencia KL respecto al modelo de referencia. El modelo base es un transformer de 1.728.801.600 parámetros (aproximadamente 1,7 mil millones) desarrollado por Liquid AI, con licencia LFM Open License v1.0.
 
-La relevancia de esta publicación es práctica: permite ejecutar un modelo de aproximadamente 1,7 mil millones de parámetros en hardware de consumo mediante llama.cpp, sin necesidad de infraestructura de GPU de datacenter. Al estar etiquetado como `endpoints_compatible` y `conversational`, está orientado a generación de texto conversacional. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 6,1 GB, lo que refleja que contiene varias cuantizaciones del mismo modelo.
+La propuesta de valor de esta publicación es técnica: cada tensor se cuantiza de forma independiente con un tipo elegido para un presupuesto de tamaño dado, usando cuantización basada en Hessian y una selección de tipo por tensor mediante la herramienta qalloc. El autor reporta aproximadamente la mitad de la divergencia KL que los ficheros publicados del mismo tamaño, con mejoras medibles en benchmarks de tareas como GSM8K, IFEval, MMLU-Pro, GPQA Diamond y BFCL v3 en los tres cuantizados más pequeños.
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada, más allá de su pertenencia a la familia LFM3 de Liquid AI. La licencia es LFM Open License v1.0 (`lfm1.0`), la misma del modelo original, lo que condiciona el uso comercial.
+Es relevante para desarrolladores que quieran ejecutar el modelo LFM3-1.7B en hardware modesto con la máxima fidelidad posible por byte. Al usar tipos GGUF estándar de llama.cpp, los ficheros funcionan en llama.cpp y en cualquier herramienta construida sobre él (Ollama, LM Studio, etc.) sin cambios.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base LFM3 de Liquid AI) |
-| Parámetros totales | 1.728.801.600 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base LiquidAI/LFM3-1.7B; esta publicacion es una cuantizacion GGUF) |
+| Parametros totales | 1.728.801.600 |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF en seis ficheros, nombrados por bits por peso |
+| Tipos de cuantizacion | GGUF a 2.97, 3.57, 4.22, 5.01, 5.78 y 6.56 bits por peso (bpw) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (`lfm1.0`) |
-| Formato de pesos | GGUF (llama.cpp) |
+| Licencia | LFM Open License v1.0 (lfm1.0) |
+| Formato de pesos | GGUF (compatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base en la documentación proporcionada. El repositorio es una conversión a GGUF de LiquidAI/LFM3-1.7B, y la model card no detalla si el modelo original emplea un transformer estándar, una arquitectura híbrida o alguna variante propietaria de Liquid AI. Tampoco se especifican los datos de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+Esta publicacion no entrena un modelo: recuantiza los pesos BF16 de LiquidAI/LFM3-1.7B. Cada tensor se cuantiza de nuevo de forma independiente con cuantizacion basada en Hessian, eligiendo los valores de cuantizacion que minimizan el impacto del error en la salida del modelo. Ademas, se asigna un tipo distinto a cada tensor (una mezcla de tipos por tensor) seleccionado por la herramienta qalloc para ajustarse a un presupuesto de tamano concreto, a partir de un almacen que contiene cada tensor en todos los tipos disponibles (Arki05/LFM3-1.7B-GGUF-shards).
 
-Lo único confirmado es el proceso de conversión: seis ficheros GGUF generados a partir de los pesos originales, con modificaciones para funcionar en llama.cpp estándar ("stock llama.cpp"), y nombrados según los bits por peso de cada cuantización. No se documentan innovaciones técnicas adicionales en esta publicación.
+La calibracion se realizo sobre aproximadamente 14,6 millones de tokens, de los cuales 9,6 millones son salida propia del modelo y texto en bruto. Los corpus se ponderan por igual: herramientas y agentic (4,03 M), instrucciones y salida estructurada (2,44 M), ciencia (1,62 M), matematicas (1,62 M), multilingue (1,54 M), codigo (1,52 M), contexto largo (1,15 M) y texto en bruto (0,67 M). La seleccion de tipo por tensor se calcula sobre una cuarta parte de las ventanas de cada corpus, excluyendo contexto largo. La arquitectura interna del modelo base (transformer, atencion, etc.) no se detalla en la informacion disponible.
 
 ## Capacidades
 
-- Generación de texto conversacional, según el pipeline declarado (`text-generation`) y la etiqueta `conversational`.
-- Compatible con endpoints de inferencia (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras que siguen la API estándar de Hugging Face.
-- Ejecutable mediante llama.cpp y herramientas que consumen GGUF.
-- Capacidades de tool calling, agentes, razonamiento multi-paso, visión o audio: no disponibles en la información proporcionada.
-- Capacidades multilingües: no disponibles; no se listan idiomas soportados.
+- Generacion de texto conversacional (etiqueta `conversational` en el repo).
+- Razonamiento y matematicas: el autor reporta puntuaciones en GSM8K y MMLU-Pro para los cuantizados.
+- Seguimiento de instrucciones: evaluado con IFEval.
+- Conocimiento cientifico: evaluado con GPQA Diamond.
+- Tool calling y uso de funciones: evaluado con BFCL v3 (AST), lo que indica soporte de function calling en el modelo base.
+- Capacidades agenticas: el corpus de calibracion incluye un bloque especifico de herramientas y agentic.
+- Capacidades multilingues: el corpus de calibracion incluye un bloque multilingue, aunque los idiomas concretos no estan disponibles.
+- Contexto largo: hay un corpus de calibracion dedicado, aunque la longitud de contexto del modelo base no se especifica.
 
 ## Casos de uso
 
-- Prototipado local de asistentes conversacionales: al ser un GGUF de 1,7B parámetros, se puede cargar en llama.cpp sobre un portátil o una estación de trabajo sin GPU dedicada, lo que permite iterar en el diseño de prompts y flujos conversacionales antes de pasar a producción.
-- Pruebas de integración con llama.cpp: sirve como modelo de referencia para validar pipelines de inferencia, plantillas de chat y parámetros de muestreo en entornos de desarrollo.
-- Despliegue en dispositivos con recursos limitados: las cuantizaciones de pocos bits por peso permiten ejecutar el modelo en CPU o en GPUs de consumo con poca VRAM, útil para demos y aplicaciones de borde.
-- Generación de texto de bajo coste en tareas simples: resúmenes cortos, reescritura de frases o clasificación ligera mediante prompting, donde un modelo de 1,7B es suficiente y el coste por token importa.
-- Evaluación comparativa de cuantizaciones: al incluir seis ficheros con distintos bits por peso, permite medir el compromiso entre calidad de salida y tamaño/velocidad en un mismo modelo base.
-- Base para fine-tuning ligero o experimentación: el formato GGUF y el tamaño reducido facilitan experimentos de adaptación en entornos con hardware modesto, siempre respetando la licencia LFM Open License v1.0.
+- Despliegue en hardware de gama baja: el fichero de 2.97 bpw ocupa 0.652 GB y mantiene un KLD bajo (0.146 en filas de asistente), lo que permite ejecutar el modelo en portatiles o mini-PC sin GPU dedicada mediante llama.cpp u Ollama.
+- Asistente conversacional local: el modelo esta etiquetado como conversacional y los cuantizados de 4.22 bpw en adelante (0.922 GB) ofrecen un KLD de 0.0266 en filas de asistente, adecuado para chatbots multi-turno en local.
+- Agentes con tool calling: el modelo base puntua en BFCL v3 y el cuantizado de 2.97 bpw alcanza 70.4 frente a 62.6 del fichero comparable de bartowski, lo que lo hace util para pipelines de agentes que invocan funciones.
+- Razonamiento matematico en produccion: GSM8K de 91.4 en el cuantizado de 3.57 bpw (0.781 GB) permite integrar resolucion de problemas aritmeticos en aplicaciones con recursos limitados.
+- Generacion de codigo asistida: el corpus de calibracion incluye codigo (1,52 M tokens) y el modelo base soporta instrucciones; util para autocompletado o generacion de fragmentos en editores.
+- Evaluacion e investigacion de cuantizacion: los ficheros y las mediciones de KLD publicadas sirven como referencia para comparar tecnicas de cuantizacion (Hessian, tipo por tensor) frente a cuantizaciones estandar.
+- Procesamiento de contexto largo en local: el corpus de calibracion incluye un bloque de contexto largo, lo que sugiere uso para resumir o analizar documentos extensos, aunque la ventana exacta no esta disponible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+El autor publica comparaciones de los tres ficheros mas pequenos frente a los ficheros de bartowski del mismo tamano, evaluados con la herramienta sma. Cada celda muestra la puntuacion de bartowski, luego la de este repo, en porcentaje, con la diferencia pareada ± un error estandar. En negrita donde la diferencia supera el doble del error estandar.
+
+| Fichero | Contra | GSM8K | IFEval | MMLU-Pro | GPQA Diamond | BFCL v3 |
+|---|---|---|---|---|---|---|
+| 2.97 bpw (0.652 GB) | bartowski IQ2_M | 79.6 → 80.6 (+1.0 ± 1.5) | 58.6 → 58.0 (−0.6 ± 2.1) | **45.9 → 53.4 (+7.5 ± 1.6)** | 39.9 → 44.9 (+5.1 ± 4.2) | **62.6 → 70.4 (+7.8 ± 1.5)** |
+| 3.57 bpw (0.781 GB) | bartowski IQ3_XXS | **84.8 → 91.4 (+6.6 ± 1.1)** | **68.0 → 72.3 (+4.3 ± 2.0)** | **58.0 → 62.6 (+4.6 ± 1.3)** | 58.6 → 55.1 (−3.5 ± 3.6) | 70.7 → 72.6 (+1.9 ± 1.2) |
+| 4.22 bpw (0.922 GB) | bartowski IQ3_M | 88.0 → 87.0 (−1.0 ± 1.1) | 70.2 → 71.0 (+0.7 ± 2.1) | 63.4 → 61.4 (−2.0 ± 1.3) | 57.6 → 59.1 (+1.5 ± 3.0) | 69.4 → 71.4 (+2.0 ± 1.1) |
+
+Divergencia KL media (filas de asistente) por fichero de este repo:
+
+| Fichero | Tamano (GB) | KLD asistente | KLD p99 asistente | KLD todas las filas | KLD p99 todas |
+|---|---|---|---|---|---|
+| 2.97 bpw | 0.652 | 0.146 | 1.35 | 0.409 | 4.62 |
+| 3.57 bpw | 0.781 | 0.0578 | 0.527 | 0.220 | 3.03 |
+| 4.22 bpw | 0.922 | 0.0266 | 0.250 | 0.128 | 2.04 |
+| 5.01 bpw | 1.092 | 0.0110 | 0.0982 | 0.0516 | 0.793 |
+| 5.78 bpw | 1.259 | 0.00456 | 0.0425 | 0.0237 | 0.355 |
+| 6.56 bpw | 1.428 | 0.00185 | 0.0166 | 0.0107 | 0.151 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma exacta; depende de la cuantización elegida entre los seis ficheros GGUF. El repositorio completo ocupa 6,1 GB, por lo que cada fichero individual es una fracción de ese tamaño.
-- GPU recomendadas: no disponibles en la información proporcionada. Por el tamaño del modelo (1,7B parámetros), es plausible su ejecución en GPUs de consumo, pero no se confirma con datos del repositorio.
-- Cabe en GPU de consumo: no confirmado explícitamente; el formato GGUF y el tamaño del modelo base sugieren que sí en configuraciones con suficiente VRAM o mediante descarga a CPU, pero no hay especificación oficial.
-- Opciones de despliegue: llama.cpp (objetivo declarado de la conversión) y herramientas compatibles con GGUF; también compatible con endpoints de inferencia según la etiqueta del repositorio.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: entre 0.652 GB (2.97 bpw) y 1.428 GB (6.56 bpw) solo para los pesos; hay que sumar la memoria de la cache KV segun el contexto configurado.
+- GPU recomendadas: cualquier GPU consumer con al menos 2-4 GB de VRAM libre puede ejecutar los cuantizados mas grandes; los mas pequenos caben incluso en GPUs integradas o en CPU.
+- Cabe en consumer GPU: si, en todas las GPU consumer modernas (RTX 3060, RTX 4060, RTX 4090, etc.) e incluso en hardware sin GPU dedicada.
+- Opciones de despliegue: llama.cpp y cualquier herramienta construida sobre el (Ollama, LM Studio, llama-cpp-python); el repo esta etiquetado como `endpoints_compatible`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Arki05/LFM3-1.7B-GGUF | 1.728.801.600 | no disponible | LFM Open License v1.0 | GGUF | Hugging Face |
-| LiquidAI/LFM3-1.7B (base) | 1,7B (aprox.) | no disponible | LFM Open License v1.0 | safetensors (original) | Hugging Face |
-| Alternativas de ~1,7B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Arki05/LFM3-1.7B-GGUF (este) | 1,73 B | no disponible | LFM 1.0 | GGUF | 6 cuantizados, KLD mas bajo por tamano segun el autor |
+| LiquidAI/LFM3-1.7B-GGUF | 1,73 B | no disponible | LFM 1.0 | GGUF | QAD-Q4_0 (destilado), Q4_K_M, Q5_K_M, Q6_K |
+| AtomicChat/LFM3-1.7B-GGUF | 1,73 B | no disponible | LFM 1.0 | GGUF | AD-IQ3_S, AD-IQ4_XS, AD-Q4_K_M, AD-Q5_K_M, AD-Q6_K |
+| bartowski/LFM3-1.7B-GGUF | 1,73 B | no disponible | LFM 1.0 | GGUF | IQ2_M, IQ3_XXS, IQ3_M, Q4_K_M, Q5_K_M, Q6_K |
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con modelos de la misma categoría. La única comparación fiable es con el modelo base del que deriva esta conversión.
+Los cuatro son cuantizaciones del mismo modelo base LiquidAI/LFM3-1.7B. La diferencia esta en la tecnica de cuantizacion y en la fidelidad resultante medida por KLD.
 
 ## Limitaciones y advertencias
 
-- La licencia LFM Open License v1.0 impone condiciones específicas para uso comercial; es necesario revisar el fichero `LICENSE` del repositorio antes de desplegar en producción.
-- Al ser una cuantización, la calidad de salida puede degradarse respecto a los pesos originales en safetensors, especialmente en las variantes de menos bits por peso.
-- No se documentan idiomas soportados, por lo que no se puede garantizar un rendimiento adecuado en castellano ni en otros idiomas distintos del inglés sin evaluación previa.
-- Riesgo de alucinación inherente a los modelos generativos de este tamaño; no hay información sobre alineación o mitigaciones aplicadas.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- El repositorio tiene 0 descargas y 0 likes, y fue creado recientemente; no hay evidencia de validación por parte de la comunidad.
-- No se especifica la longitud de contexto, lo que impide planificar aplicaciones que dependan de ventanas largas.
-- La autoría de la conversión corresponde a un usuario independiente (Arki05), no a Liquid AI; la responsabilidad sobre la fidelidad de los pesos cuantizados recae en el publicador.
+- Son pesos modificados (cuantizados), no el modelo original; la fidelidad respecto a BF16 depende del fichero elegido y se degrada en los bpw mas bajos.
+- Sesgos conocidos: no disponibles en la informacion proporcionada; al ser una cuantizacion, hereda los sesgos del modelo base LiquidAI/LFM3-1.7B.
+- Riesgo de alucinacion: inherente al modelo base; no se documenta una evaluacion especifica de alucinacion en esta publicacion.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan disponibles en la informacion proporcionada.
+- Licencia: LFM Open License v1.0; hay que revisar sus terminos para uso comercial, ya que no es una licencia permisiva estandar.
+- El cuantizado de 2.97 bpw muestra una degradacion notable en KLD (0.146 frente a 0.0266 del de 4.22 bpw); para produccion conviene usar 4.22 bpw o superior.
+- El fichero QAD-Q4_0 de LiquidAI es un checkpoint destilado, por lo que su KLD no es directamente comparable con el resto.
+- El autor indica que los ficheros funcionan en llama.cpp estandar, pero no se documentan pruebas en otros runtimes (vLLM, TGI).
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Arki05/LFM3-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Licencia LFM Open License v1.0: fichero `LICENSE` del repositorio
+- GGUF oficial de LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
+- Almacen de tensores por tipo: https://huggingface.co/Arki05/LFM3-1.7B-GGUF-shards
+- Herramienta qalloc: https://qalloc.arki05.com/?model=lfm3
+- Herramienta de evaluacion sma: https://github.com/iammrduncan/sma
+- GGUF de AtomicChat: https://huggingface.co/AtomicChat/LFM3-1.7B-GGUF
+- GGUF de bartowski: https://huggingface.co/bartowski/LFM3-1.7B-GGUF

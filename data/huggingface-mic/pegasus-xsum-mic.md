@@ -2,83 +2,83 @@
 
 ## Resumen
 
-`pegasus-xsum-mic` es un artefacto de prueba (test fixture) publicado por el usuario `huggingface-mic`, no un modelo entrenado ni utilizable en producción. Se trata de una versión reducida artificialmente de `google/pegasus-xsum`, el modelo Pegasus de Google especializado en resumen abstractivo de noticias (dataset XSum), con pesos aleatorios generados con semilla 17 y una configuración encogida a 2 capas de encoder y 2 de decoder. El repositorio contiene 6.414.375 parámetros reales en safetensors, lo que supone una reducción drástica frente a los aproximadamente 568 millones del checkpoint original.
+`huggingface-mic/pegasus-xsum-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic` dentro del proyecto Transformers MIC. No es un modelo entrenado ni utilizable para resumir texto: es una versión reducida ("slim") con pesos aleatorios que reproduce la arquitectura y el contrato de inferencia de `google/pegasus-xsum`, el conocido modelo PEGASUS de Google especializado en resumen abstractivo del dataset XSum.
 
-El propósito declarado es servir como fixture para el proyecto Transformers MIC: un repositorio ligero que empaqueta pesos, contrato de integración (`integration.json`), expectativas de framework y procedencia de construcción (`build.json`) en un único lugar. La model card indica explícitamente que es un "test artifact, not a usable model", etiquetado con `test-artifact` para excluirlo de búsquedas de modelos candidatos.
+El fixture mantiene la clase `PegasusForConditionalGeneration` pero con una configuración reducida (2 capas de encoder y 2 de decoder), lo que da un total de 6.414.375 parámetros. Los ficheros de procesador (tokenizador SentencePiece, `generation_config.json`, `special_tokens_map.json` y `tokenizer_config.json`) se copian byte a byte del checkpoint original, de modo que el pipeline de tokenización es idéntico al real. Los pesos se inicializan de forma aleatoria con semilla 17 y se guardan en float32.
 
-Es relevante únicamente para desarrolladores que trabajen en tooling de integración, CI de frameworks o validación de contratos de carga de modelos, no para tareas de NLP reales. Cualquier uso generativo producirá salidas sin sentido, ya que los pesos son aleatorios y nunca se entrenaron.
+Su relevancia es de infraestructura: sirve para validar que frameworks y pipelines (en este caso, Transformers) cargan, ejecutan y respetan las expectativas de un modelo PEGASUS sin necesidad de descargar los aproximadamente 568 millones de parámetros del checkpoint original. La etiqueta `test-artifact` lo excluye explícitamente de las búsquedas de modelos candidatos para uso real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | PegasusForConditionalGeneration (transformer encoder-decoder, reducido a 2+2 capas) |
+| Arquitectura | Transformer encoder-decoder (PegasusForConditionalGeneration) |
 | Parametros totales | 6.414.375 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; la model card menciona finitud en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | no disponible (heredada de la config de PEGASUS; no declarada en la informacion) |
+| Tipos de cuantizacion | no disponible (pesos en float32; validado tambien en bfloat16 y float16) |
+| Idiomas soportados | no disponible (el checkpoint base google/pegasus-xsum esta orientado a ingles, pero no se declara en la ficha) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es Pegasus, un transformer encoder-decoder con atención completa, diseñado originalmente para resumen abstractivo y preentrenado con un objetivo de gap-sentence generation sobre corpus web. En este repositorio, sin embargo, la configuración se ha encogido mediante la regla genérica de `sweep.py` del proyecto transformers-mic: `encoder_layers=2` y `decoder_layers=2`. Los ficheros de procesador (`generation_config.json`, `special_tokens_map.json`, `spiece.model`, `tokenizer.json`, `tokenizer_config.json`) se copian byte a byte desde `google/pegasus-xsum`.
+El modelo es un transformer encoder-decoder de tipo PEGASUS, la arquitectura de resumen abstractivo preentrenada con objetivo de gap-sentence generation. En este fixture, la configuración se ha reducido mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`: 2 capas de encoder y 2 capas de decoder, conservando los nombres de tensores del checkpoint original. En particular, se omite `model.decoder.embed_positions.weight` y `model.encoder.embed_positions.weight`, igual que en el checkpoint real, de forma que la inicialización al cargar se comporta como con el modelo verdadero.
 
-No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron porque superaron una puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato movía los logits al menos 0,001 (el caso más débil, `input_ids:reverse`, con 0,00311). Los nombres de tensores coinciden con el checkpoint real, incluida la omisión de `model.decoder.embed_positions.weight` y `model.encoder.embed_positions.weight`, que el checkpoint original tampoco incluye. El fixture se guarda en float32, el dtype por defecto de carga de `google/pegasus-xsum`, y se verifica que es finito en forward, loss y gradientes para float32, bfloat16 y float16.
+No ha habido entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron porque superaron la puerta de sensibilidad a la entrada: cada perturbación de las entradas del contrato desplazó los logits al menos 0,001 (el caso más débil, `input_ids:reverse`, con 0,00311). El fixture es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. El repositorio incluye además el manifiesto de contrato (`integration.json`), la guía de uso con Transformers, el directorio de expectativas del framework y la procedencia del fixture (`build.json`).
 
 ## Capacidades
 
-- No dispone de capacidades funcionales reales: los pesos son aleatorios y no han sido entrenados.
-- No genera resúmenes coherentes ni texto gramatical; las salidas son ruido estadístico.
-- No soporta tool calling ni function calling.
-- No soporta razonamiento multi-paso ni comportamiento agente.
-- No tiene capacidades multilingües verificadas (idiomas no disponibles).
-- Su utilidad es exclusivamente de integración: validar que un framework carga correctamente la arquitectura Pegasus, el tokenizador SentencePiece y el contrato de generación.
-- Sirve como fixture reproducible para pruebas de CI: pesos ligeros (2,3 GB de repo), mismos nombres de tensores y misma configuración de procesador que el modelo real.
+- Carga y ejecución mediante `PegasusForConditionalGeneration` de Transformers con los mismos nombres de tensores que el checkpoint real.
+- Tokenización idéntica a `google/pegasus-xsum` gracias a la copia byte a byte de `spiece.model`, `tokenizer.json` y ficheros asociados.
+- Ejecución de forward, cálculo de loss y retropropagación en float32, bfloat16 y float16.
+- Validación de contratos de integración: manifiesto `integration.json` y directorio de expectativas del framework.
+- No soporta generación de texto útil: los pesos son aleatorios y la salida no tiene significado.
+- No dispone de tool calling, capacidades de agente, visión ni audio.
+- No es multilingüe en la práctica: es un artefacto de prueba sin calidad lingüística.
 
 ## Casos de uso
 
-- Pruebas de integración en CI de frameworks: usar el fixture para verificar que una versión de Transformers carga `PegasusForConditionalGeneration`, aplica el tokenizador `spiece.model` y ejecuta `generate()` sin errores, sin descargar los 568M de parámetros reales.
-- Validación de contratos de modelo: comprobar que `integration.json` y el directorio `integrations/transformers/expectations` describen correctamente las entradas, salidas y dtypes esperados por el framework.
-- Desarrollo de tooling de conversión de formatos: probar pipelines de conversión safetensors a otros formatos con un checkpoint pequeño y de arquitectura idéntica a Pegasus.
-- Regresión de dtypes: verificar que forward, loss y gradientes son finitos en float32, bfloat16 y float16, tal como documenta la model card.
-- Reproducibilidad de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture pegasus-xsum-mic` y comparar hashes registrados en `build.json`.
-- Docencia y demos de arquitectura: inspeccionar la estructura de un encoder-decoder Pegasus con 2+2 capas y nombres de tensores reales sin coste computacional.
-- Pruebas de sensibilidad a entradas: reutilizar la puerta de sensibilidad (perturbaciones de `input_ids` que mueven logits al menos 0,001) como patrón para validar otros fixtures.
+- Pruebas de integración en CI/CD: validar que una versión nueva de Transformers carga un checkpoint PEGASUS, ejecuta el forward y respeta los nombres de tensores esperados sin descargar el modelo completo de 568M de parámetros.
+- Desarrollo de pipelines de resumen: probar el cableado de tokenizador, `generation_config` y bucle de decodificación con un fixture ligero antes de pasar al checkpoint real.
+- Validación de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` se cumplen en cada release.
+- Pruebas de dtype: verificar estabilidad numérica en float32, bfloat16 y float16 (forward, loss y gradientes) en entornos con distintas GPU.
+- Reproducción de fixtures: reconstruir el artefacto con `python example/build_fixtures.py --fixture pegasus-xsum-mic` y comparar hashes con `build.json`.
+- Docencia y demos de arquitectura: inspeccionar la estructura de un encoder-decoder PEGASUS con un repositorio de 2,3 GB y pesos rápidos de cargar.
+- Pruebas de regresión de tokenización: usar el tokenizador copiado del modelo original para validar cambios en el preprocesado de XSum.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (ROUGE, MMLU, etc.) carece de sentido y no se reporta.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (ROUGE, MMLU, etc.) carecería de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 para los 6,4M de parámetros; en la práctica cabe en CPU.
-- GPU recomendadas: no requiere GPU; cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es sobredimensionada para este fixture.
-- Cabe en cualquier GPU consumer e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers con PyTorch (ruta documentada en `integrations/transformers/usage.md`); no se documentan vLLM, llama.cpp, Ollama ni TGI para este artefacto.
-- Latencia y throughput: no disponibles; al ser un modelo de 2+2 capas y 6,4M de parámetros, la inferencia es prácticamente instantánea en CPU, pero no se publican cifras.
+- VRAM estimada para inferencia: inferior a 1 GB en float32 para los 6,4M de parámetros (los pesos ocupan unos 26 MB); el grueso del repositorio de 2,3 GB corresponde a ficheros auxiliares y al propio checkpoint en disco.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU; no requiere A100 ni H100.
+- Cabe holgadamente en cualquier GPU consumer e integrada.
+- Opciones de despliegue: Transformers con PyTorch (validado); no se declara soporte específico para vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles; al ser un modelo de 2+2 capas, la latencia sería muy baja, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/pegasus-xsum-mic | 6.414.375 | no disponible | Fixture de test | no disponible | Hugging Face |
-| google/pegasus-xsum | ~568M (no confirmado en la informacion) | no disponible | Resumen abstractivo XSum | no disponible | Hugging Face |
-| google/pegasus-cnn_dailymail | no disponible | no disponible | Resumen abstractivo CNN/DailyMail | no disponible | Hugging Face |
+| huggingface-mic/pegasus-xsum-mic | 6.414.375 | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| google/pegasus-xsum | ~568M (no confirmado en la informacion) | no disponible | Resumen abstractivo (XSum) | no disponible | Hugging Face |
+| google/pegasus-cnn_dailymail | no disponible | no disponible | Resumen abstractivo (CNN/DailyMail) | no disponible | Hugging Face |
 
-La comparación relevante es con el checkpoint base `google/pegasus-xsum`: misma arquitectura y mismos ficheros de procesador, pero con 2 capas por bloque en lugar de la configuración completa y pesos aleatorios en lugar de entrenados. No se dispone de datos suficientes para comparar con otros fixtures del ecosistema.
+La comparación relevante es con el checkpoint base `google/pegasus-xsum`: mismo tokenizador y misma arquitectura, pero con 2 capas por bloque en lugar de la configuración completa y pesos aleatorios en lugar de entrenados. No se dispone de datos de benchmarks para establecer comparaciones de rendimiento.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: la model card lo etiqueta explícitamente como `test-artifact` y advierte que no debe usarse como modelo.
-- Pesos aleatorios: cualquier salida generada es incoherente y no debe presentarse como resumen ni texto.
-- Sesgos: no evaluables, al no haber entrenamiento; no obstante, hereda la arquitectura y el tokenizador de Pegasus, cuyo vocabulario SentencePiece puede introducir sesgos de tokenización si se reutiliza.
-- Riesgo de alucinación: total, en el sentido de que toda la salida es inventada por definición.
-- Licencia no disponible: no se puede asumir uso comercial; conviene contactar con el autor antes de cualquier uso fuera de pruebas.
-- Idiomas y contexto no documentados: no se debe asumir compatibilidad multilingüe ni una ventana de contexto concreta.
-- No apto para producción: no incluye garantías de calidad, seguridad ni soporte.
-- El repositorio omite ficheros que deben regenerarse con `build_fixtures.py`; un clon incompleto puede fallar al cargar.
+- No es un modelo utilizable: los pesos son aleatorios y las salidas no tienen significado. La propia model card lo etiqueta como `test-artifact`.
+- No debe usarse en producción ni para generar resúmenes reales.
+- Sesgos: no aplica, al no haber entrenamiento; los sesgos del checkpoint original no se heredan porque los pesos no se copian.
+- Riesgo de alucinación: total, en el sentido de que cualquier texto generado es ruido sin relación con la entrada.
+- Limitaciones de contexto e idioma: no declaradas; el fixture no documenta ventana de contexto ni cobertura lingüística.
+- Licencia no disponible: no se especifican términos de uso comercial; hay que consultar la licencia de `google/pegasus-xsum` para el modelo base.
+- El tamaño del repositorio (2,3 GB) es desproporcionado para un modelo de 6,4M de parámetros, lo que puede confundir en despliegues automatizados.
+- La fecha de creación indicada (2026-10-29) es posterior a la de actualización (2026-11-12); conviene verificar metadatos antes de integrarlo en pipelines.
 
 ## Enlaces
 
@@ -88,7 +88,6 @@ La comparación relevante es con el checkpoint base `google/pegasus-xsum`: misma
 - Uso con Transformers: https://huggingface.co/huggingface-mic/pegasus-xsum-mic/blob/main/integrations/transformers/usage.md
 - Expectativas de Transformers: https://huggingface.co/huggingface-mic/pegasus-xsum-mic/tree/main/integrations/transformers/expectations
 - Procedencia del fixture: https://huggingface.co/huggingface-mic/pegasus-xsum-mic/blob/main/build.json
-- Explicación del encogimiento: https://huggingface-mic-mic-coverage.static.hf.space/shrink/pegasus-xsum-mic.html
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/pegasus-xsum-mic.html
+- Repositorio transformers-mic (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
 - Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

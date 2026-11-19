@@ -2,18 +2,18 @@
 
 ## Resumen
 
-Qwen3.8-1.0B-A0.6B-mic es un artefacto de prueba (fixture) publicado por el usuario huggingface-mic, no un modelo utilizable en produccion. Se trata de una version reducida y con pesos aleatorios del checkpoint `inference-optimization/Qwen3.8-1.0B-A0.6B`, un supuesto modelo Qwen3.5-MoE de tipo causal LM. El repositorio incluye los pesos "slim", ejemplos de uso ejecutables y un directorio de expectativas de framework, todo empaquetado para validar la integracion del modelo real con Transformers.
+Qwen3.8-1.0B-A0.6B-mic es un artefacto de prueba (fixture) publicado por el usuario huggingface-mic en Hugging Face. No es un modelo de lenguaje utilizable: se trata de una version reducida y con pesos aleatorios del checkpoint `inference-optimization/Qwen3.8-1.0B-A0.6B`, creada para validar contratos de integracion con frameworks (concretamente Transformers) dentro del proyecto transformers-mic. El propio autor lo etiqueta como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
 
-El fixture conserva la arquitectura declarada (`Qwen3_5MoeForCausalLM`) pero con una configuracion reducida a 2 capas ocultas, y copia byte a byte los ficheros de procesador del modelo original (`chat_template.jinja`, `generation_config.json`, `tokenizer.json`, `tokenizer_config.json`). Los pesos se generaron con semilla 17 y pasaron un test de sensibilidad a la entrada, pero no recibieron entrenamiento alguno. El repositorio esta etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
+El repositorio contiene unicamente 32.138.304 parametros reales (frente a los aproximadamente 1.000 millones que sugiere el nombre del modelo base), distribuidos en una configuracion reducida de la arquitectura `Qwen3_5MoeForCausalLM` con solo 2 capas ocultas. Los pesos son aleatorios (semilla 17) y se generaron sin entrenamiento alguno, tras superar una puerta de sensibilidad a las entradas que exige que cada perturbacion de los inputs mueva los logits al menos 0,001.
 
-Su relevancia es exclusivamente tecnica: sirve como banco de pruebas para verificar que la implementacion de `Qwen3_5MoeForCausalLM` en Transformers carga, ejecuta forward, calcula perdida y propaga gradientes de forma finita en float32, bfloat16 y float16. No debe emplearse para inferencia real, generacion de texto ni ninguna tarea de produccion.
+Su relevancia es, por tanto, puramente tecnica y de infraestructura: sirve como fixture reproducible para probar que una implementacion de framework (carga de pesos, tokenizador, plantilla de chat, generacion) se comporta igual con un checkpoint real y con uno sintetico de la misma arquitectura. No debe emplearse para inferencia real, generacion de texto ni ninguna tarea de IA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5MoeForCausalLM (transformer MoE, fixture reducido a 2 capas) |
-| Parametros totales | 32.138.304 (32,1 M) |
+| Arquitectura | Qwen3_5MoeForCausalLM (transformer MoE, configuracion reducida a 2 capas) |
+| Parametros totales | 32.138.304 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos en bfloat16) |
@@ -23,68 +23,65 @@ Su relevancia es exclusivamente tecnica: sirve como banco de pruebas para verifi
 
 ## Arquitectura y entrenamiento
 
-El modelo declara la arquitectura `Qwen3_5MoeForCausalLM`, un transformer de mezcla de expertos (MoE) para modelado causal de lenguaje. Sin embargo, el fixture es una version "slim" generada mediante la regla generica de `sweep.py`, que reduce la configuracion a `num_hidden_layers = 2`. Los ficheros de procesador se copiaron byte a byte desde el checkpoint original, de modo que la tokenizacion y la plantilla de chat coinciden con las del modelo de referencia.
+El modelo emplea la clase `Qwen3_5MoeForCausalLM`, una arquitectura de mezcla de expertos (MoE) propia de la familia Qwen3.5, pero con la configuracion reducida mediante la regla generica de `sweep.py` del repositorio transformers-mic: `num_hidden_layers` igual a 2. Los ficheros de procesador (`chat_template.jinja`, `generation_config.json`, `tokenizer.json`, `tokenizer_config.json`) se copiaron byte a byte desde el checkpoint base `inference-optimization/Qwen3.8-1.0B-A0.6B`, de modo que el tokenizador y la plantilla de chat son identicos a los del modelo real.
 
-No hubo entrenamiento: los pesos son aleatorios con semilla 17. El autor indica que pasaron un "input-sensitivity gate" segun el cual cada perturbacion de las entradas del contrato movia los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, con 0,71), por lo que no se considero necesario entrenar. Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en perdida y gradientes. El fixture se construyo con `build_fixtures.py` y su procedencia queda registrada en `build.json`.
+No hubo entrenamiento. Los pesos se generaron de forma aleatoria con semilla 17 y se validaron con una puerta de sensibilidad a las entradas: cada perturbacion de los inputs del contrato debe desplazar los logits al menos 0,001 (la mas debil, `attention_mask:all_ones`, alcanzo 0,71). Los tensores conservan exactamente los mismos nombres que el checkpoint real, y los pesos se guardaron en bfloat16, el dtype por defecto del modelo base. El fixture es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La clave del fixture es `dd78532107bc` y cubre todos los checkpoints cuyos ficheros de procesador son byte-identicos y cuya config coincide tras el shrink.
 
 ## Capacidades
 
-- No es un modelo funcional: no genera texto coherente ni resuelve tareas de razonamiento, codigo o matematicas.
-- Conserva la interfaz de un causal LM de Qwen3.5-MoE (forward, loss, gradientes) para pruebas de integracion.
-- Incluye plantilla de chat y tokenizer del modelo original, utiles para validar el pipeline de tokenizacion.
-- No dispone de tool calling, capacidades de agente, vision, audio ni modo de pensamiento.
-- No tiene capacidades multilingues reales, ya que los pesos son aleatorios.
+- No es un modelo funcional: los pesos son aleatorios y no producen texto coherente.
+- Sirve como fixture de conformidad para validar la carga de pesos, el tokenizador y la plantilla de chat en Transformers.
+- Permite comprobar la paridad de nombres de tensores con el checkpoint real `inference-optimization/Qwen3.8-1.0B-A0.6B`.
+- Valida el comportamiento numerico finito en float32, bfloat16 y float16 (forward, loss, gradientes).
+- No dispone de tool calling, capacidades de agente, vision, audio ni modo de razonamiento.
+- No tiene capacidades multilingues reales: el tokenizador copiado puede procesar texto, pero el modelo no genera respuestas utiles.
 
 ## Casos de uso
 
-- Validacion de la implementacion de `Qwen3_5MoeForCausalLM` en Transformers: ejecutar forward, calcular perdida y comprobar gradientes finitos en float32, bfloat16 y float16 antes de cargar el checkpoint real.
-- Pruebas de integracion de tokenizer y plantilla de chat: verificar que `tokenizer.json`, `tokenizer_config.json`, `generation_config.json` y `chat_template.jinja` se cargan y producen las secuencias esperadas.
-- CI de frameworks: usar el fixture como caso de prueba ligero (0,1 GB) en pipelines de integracion continua para detectar regresiones en la carga de modelos MoE sin descargar pesos completos.
-- Desarrollo de utilidades de inspeccion de pesos: comprobar que los nombres de tensores coinciden con el checkpoint real (`inference-optimization/Qwen3.8-1.0B-A0.6B`).
-- Pruebas de sensibilidad a entradas: reproducir el gate del autor perturbando `attention_mask` y otras entradas del contrato para validar que los logits cambian.
-- Verificacion de compatibilidad de dtypes: comprobar que el modelo se mantiene finito en float32, bfloat16 y float16 en todas las rutas de ejecucion.
+- Pruebas de integracion en Transformers: cargar el fixture con `AutoModelForCausalLM` y verificar que la API acepta la configuracion y los tensores sin errores, antes de probar con el checkpoint real.
+- Validacion de contratos de framework: usar `integration.json` y `integrations/transformers/expectations` para comprobar que una version nueva de Transformers sigue cumpliendo las expectativas de entrada/salida.
+- CI/CD de librerias de inferencia: ejecutar la suite de tests con un modelo de 0,1 GB en lugar de descargar el checkpoint completo de aproximadamente 1 GB, reduciendo tiempos y ancho de banda.
+- Desarrollo de herramientas de conversion de pesos: validar scripts de conversion o de sharding contra un modelo con los mismos nombres de tensor y menor tamano.
+- Pruebas de cuantizacion y serializacion: comprobar que las rutas de carga en bfloat16, float16 y float32 funcionan y producen valores finitos.
+- Reproducibilidad de fixtures: regenerar el artefacto con `python example/build_fixtures.py --fixture Qwen3.8-1.0B-A0.6B-mic` y verificar los hashes registrados en `build.json`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad (MMLU, HumanEval, GSM8K) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en bfloat16, dado el tamano del repositorio (0,1 GB) y los 32,1 M de parametros.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 o superior) e incluso CPU es suficiente para ejecutar el fixture.
-- Cabe en cualquier GPU consumer y en entornos sin GPU.
-- Opciones de despliegue: Transformers (ruta principal documentada en `integrations/transformers/usage.md`); no se documentan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; irrelevantes al no ser un modelo funcional.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (32,1 M de parametros, unos 64 MB de pesos) mas overhead de activaciones y cache.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) o incluso CPU; no requiere A100 ni H100.
+- Cabe holgadamente en cualquier GPU consumer y en la mayoria de entornos CPU.
+- Opciones de despliegue: Transformers (via `AutoModelForCausalLM`); otras rutas como vLLM, llama.cpp, Ollama o TGI no estan documentadas para este fixture.
+- Latencia y throughput: no disponibles; al ser un modelo de 2 capas, la inferencia seria practicamente instantanea, pero sin valor funcional.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-1.0B-A0.6B-mic | 32,1 M (fixture) | no disponible | Artefacto de prueba | no disponible | Hugging Face |
-| inference-optimization/Qwen3.8-1.0B-A0.6B | no disponible | no disponible | Modelo de referencia (Qwen3.5-MoE) | no disponible | Hugging Face |
-| Modelos Qwen3.5-MoE publicos | no disponible | no disponible | LLM causal MoE | no disponible | no disponible |
+| Qwen3.8-1.0B-A0.6B-mic | 32,1 M | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| inference-optimization/Qwen3.8-1.0B-A0.6B | ~1.000 M (segun nombre) | no disponible | Modelo base real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable | no disponible | Pruebas de contrato | no disponible | Hugging Face |
 
-No se dispone de datos suficientes para una comparativa de rendimiento con alternativas de la misma categoria.
+No se dispone de datos de rendimiento para establecer una comparativa funcional con modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y no han sido entrenados.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
-- Riesgo total de alucinacion y salidas sin sentido si se usa para generacion.
-- La configuracion esta reducida a 2 capas, por lo que no representa el comportamiento del checkpoint real.
-- Licencia no disponible: no se puede confirmar el uso comercial.
-- Idiomas soportados no disponibles.
-- Longitud de contexto no disponible.
-- Cualquier evaluacion de calidad sobre este artefacto es invalida.
+- Pesos aleatorios: el modelo no genera texto coherente ni responde a instrucciones; usarlo en produccion produciria salidas sin sentido.
+- Etiquetado como `test-artifact`: el autor lo excluye explicitamente de la busqueda de modelos candidatos.
+- Configuracion reducida: solo 2 capas ocultas, por lo que no reproduce el comportamiento numerico del checkpoint real mas alla de la estructura de tensores.
+- Licencia no disponible: no hay informacion sobre condiciones de uso comercial.
+- Idiomas no disponibles: no se puede garantizar soporte linguistico alguno.
+- Riesgo de confusion: el nombre "Qwen3.8-1.0B-A0.6B" sugiere un modelo de 1.000 M de parametros, pero el fixture tiene 32,1 M; conviene verificar siempre el numero real de parametros en safetensors.
+- No apto para benchmarks de calidad, evaluaciones de sesgo ni comparativas de rendimiento.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3.8-1.0B-A0.6B-mic
-- Modelo base: https://huggingface.co/inference-optimization/Qwen3.8-1.0B-A0.6B
-- Manifiesto del contrato: https://huggingface.co/huggingface-mic/Qwen3.8-1.0B-A0.6B-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/Qwen3.8-1.0B-A0.6B-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/Qwen3.8-1.0B-A0.6B-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/Qwen3.8-1.0B-A0.6B-mic/blob/main/build.json
-- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Qwen3.8-1.0B-A0.6B-mic.html
-- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla generica de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- [Modelo en Hugging Face](https://huggingface.co/huggingface-mic/Qwen3.8-1.0B-A0.6B-mic)
+- [Modelo base: inference-optimization/Qwen3.8-1.0B-A0.6B](https://huggingface.co/inference-optimization/Qwen3.8-1.0B-A0.6B)
+- [Como se redujo el fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/Qwen3.8-1.0B-A0.6B-mic.html)
+- [Repositorio transformers-mic](https://github.com/huggingface/transformers-mic)
+- [Script sweep.py](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
+- [Script build_fixtures.py](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)

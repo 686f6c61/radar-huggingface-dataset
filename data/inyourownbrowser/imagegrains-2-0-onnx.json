@@ -5,7 +5,7 @@
   "author": "inYourOwnBrowser",
   "url": "https://huggingface.co/inYourOwnBrowser/imagegrains-2.0-onnx",
   "created_at": "2026-11-13T07:11:48.000Z",
-  "updated_at": "2026-11-17T08:11:33.000Z",
+  "updated_at": "2026-11-18T23:51:43.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

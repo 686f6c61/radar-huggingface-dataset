@@ -49,7 +49,7 @@
   "base_model": "heretic-org/Qwen3.8-27B-heretic-ara",
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

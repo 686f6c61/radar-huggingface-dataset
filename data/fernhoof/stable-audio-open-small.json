@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "fernhoof/stable-audio-open-small",
+  "slug": "fernhoof-stable-audio-open-small",
+  "author": "fernhoof",
+  "url": "https://huggingface.co/fernhoof/stable-audio-open-small",
+  "created_at": "2026-09-04T15:05:30.000Z",
+  "updated_at": "2026-11-19T05:44:11.000Z",
+  "license": "stability-ai-community",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "executorch",
+    "audio",
+    "generative-audio",
+    "mobile",
+    "flutter",
+    "text-to-soundscape",
+    "stable-audio",
+    "text-to-audio",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9566326498,
+  "storage_human": "9.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

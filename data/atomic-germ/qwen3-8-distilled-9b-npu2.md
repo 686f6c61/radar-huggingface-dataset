@@ -2,78 +2,95 @@
 
 ## Resumen
 
-El repositorio `Atomic-Germ/Qwen3.8-Distilled-9B-NPU2` se presenta como una conversión cuantizada en formato **Q4NX** de un modelo de la familia Qwen, compilada para inferencia en NPU AMD XDNA mediante el runtime **FastFlowLM (FLM)**. Según la model card, el modelo fuente es `FastFlowLM/Qwen3.5-9B-NPU2`, que a su vez deriva de `Qwen/Qwen3.5-9B`, un modelo causal de lenguaje con encoder de visión, arquitectura híbrida (Gated Delta Networks + MoE) y 9 mil millones de parámetros. El nombre del repositorio sugiere una destilación de Qwen3.8, pero la información interna apunta a Qwen3.5-9B como base real, lo que genera ambigüedad.
+Qwen3.8-Distilled-9B-NPU2 es una conversión cuantizada del modelo empero-ai/Qwen3.8-9B-Distill, publicada por el usuario Atomic-Germ. No se trata de un modelo entrenado desde cero, sino de un port del modelo destilado de 9B a formato Q4NX para su ejecución sobre la NPU AMD XDNA mediante el runtime FastFlowLM (FLM). El repositorio incluye tanto los pesos de lenguaje como los del codificador visual, lo que confirma su naturaleza multimodal (image-text-to-text).
 
-El repositorio tiene **0 descargas, 0 likes y un tamaño de 0.0 GB**, lo que indica que probablemente no contiene los archivos de pesos (aunque la model card los lista: `model.q4nx`, `config.json`, `tokenizer.json`, etc.). Esto sugiere que el modelo podría no estar disponible públicamente o que el repositorio está vacío. La relevancia de esta ficha radica en documentar una conversión específica para hardware AMD, un nicho emergente en inferencia local eficiente, aunque la falta de artefactos verificables limita su utilidad práctica.
+El modelo base pertenece a la familia Qwen 3.5/3.8 y ha sido destilado, según los tags del repositorio, con énfasis en razonamiento, function calling y capacidades de visión. La conversión mantiene la licencia Apache 2.0 del original y se distribuye bajo la librería transformers, aunque el artefacto principal es un fichero propietario `model.q4nx` (7,11 GB) que no es compatible con llama.cpp ni con el ecosistema GGUF estándar.
+
+Su relevancia radica en dos factores: por un lado, permite ejecutar un modelo multimodal de ~9B parámetros en hardware con NPU integrada (AMD XDNA) sin GPU dedicada; por otro, ejemplifica el creciente ecosistema de formatos de cuantización específicos para aceleradores, en este caso Q4NX con mezcla de Q8_0, Q4_1 y BF16. El repositorio acumula 2013 descargas y 4 likes desde su creación en agosto de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: Gated Delta Networks + sparse Mixture-of-Experts (según modelo fuente Qwen3.5-9B) |
-| Parametros totales | 9B (según modelo fuente) |
-| Parametros activos | No disponible (la arquitectura MoE sugiere activación parcial, pero no se especifica) |
-| Longitud de contexto | 262,144 tokens nativos, extensible hasta 1,010,000 (según modelo fuente) |
-| Tipos de cuantizacion | Q4NX (mezcla de Q8_0, Q4_1 y BF16 según la model card) |
-| Idiomas soportados | No disponible (el modelo fuente declara 201 idiomas, pero la conversión no lo especifica) |
-| Licencia | No disponible en el repositorio; el modelo fuente usa apache-2.0 |
-| Formato de pesos | Q4NX (`model.q4nx`), no es GGUF |
+| Arquitectura | Transformer multimodal (image-text-to-text), familia Qwen 3.5/3.8; detalles internos no disponibles |
+| Parametros totales | 8.953.803.264 (~8,95B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4NX con mezcla Q8_0 / Q4_1 / BF16 (pesos de lenguaje); vision_weight.q4nx para el codificador visual |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Q4NX (model.q4nx, 7,11 GB); no es GGUF; repo de 33,6 GB con tokenizer.json, chat_template.jinja, config.json |
+| Runtime | FastFlowLM (FLM) 1.0.1 sobre NPU AMD XDNA |
+| Modelo base | empero-ai/Qwen3.8-9B-Distill |
+| Instalador | flm-add (pip / uv tool) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde al modelo fuente Qwen3.5-9B, descrita como un modelo de lenguaje causal con encoder de visión integrado mediante fusión temprana de tokens multimodales. El bloque principal sigue un patrón `8 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN))`, combinando capas de atención lineal (Gated DeltaNet) con capas de atención clásica (Gated Attention) y FFN con dimensión intermedia de 12288. El modelo emplea 32 capas, dimensión oculta 4096 y un vocabulario de 248320 tokens (con padding). El entrenamiento incluye pre-entrenamiento y post-entrenamiento con RL a gran escala en entornos multi-agente, según la model card fuente. La conversión Q4NX es una compilación para el runtime FastFlowLM, que optimiza los pesos para NPU AMD XDNA, pero no modifica la arquitectura subyacente.
+La información disponible no detalla la arquitectura interna del modelo base más allá de su pertenencia a la familia Qwen 3.5/3.8 y su carácter multimodal (procesa imagen y texto). Los tags indican que se trata de un modelo destilado, con capacidades declaradas de razonamiento, function calling y visión. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
+
+En cuanto a la conversión, el autor aplica una cuantización mixta Q4NX: capas en Q8_0, Q4_1 y BF16 según sensibilidad, más un fichero separado para el codificador visual. El resultado se compila para el runtime FastFlowLM, que ejecuta la inferencia sobre la NPU AMD XDNA. No hay información sobre innovaciones técnicas adicionales (atención lineal, decodificación especulativa, etc.) en la documentación proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo fuente destaca en tareas de razonamiento, coding y agentes, con soporte de modo thinking configurable.
-- Visión y lenguaje: el modelo original es multimodal (image-text-to-text), pero la conversión Q4NX declara modalidad solo lenguaje, por lo que la capacidad visual podría no estar disponible en esta versión.
-- Multilingüismo: el modelo fuente soporta 201 idiomas y dialectos, aunque la conversión no confirma esta característica.
-- Tool calling y agentes: el modelo fuente está entrenado para tareas de agente y multi-step reasoning, pero no se especifica si la conversión conserva estas capacidades.
-- Inferencia en NPU: diseñado específicamente para ejecutarse en AMD XDNA NPU mediante FastFlowLM, con soporte de servidor compatible con OpenAI.
+- Generación de texto conversacional multi-turno, según el tag `conversational`.
+- Razonamiento explícito, derivado del proceso de destilación del modelo base.
+- Function calling / tool calling, declarado en los tags del repositorio.
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`), con codificador visual incluido (`vision_weight.q4nx`).
+- Capacidades multilingües: no confirmadas en la información disponible.
+- Ejecución en NPU AMD XDNA mediante FastFlowLM, sin necesidad de GPU dedicada.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere integración vía API compatible con OpenAI.
+- No se documentan modos de pensamiento extendido, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Inferencia local en dispositivos AMD con NPU: el modelo está compilado para ejecutarse en hardware AMD XDNA, lo que permite desplegar un LLM de 9B en equipos con NPU sin depender de GPU dedicadas. Se usaría con el comando `flm run` o `flm serve` para exponer un endpoint OpenAI-compatible.
-- Edge AI y aplicaciones offline: al ser una cuantización Q4NX de 7.23 GB, cabe en sistemas con memoria unificada de 8 GB o más, habilitando asistentes conversacionales o generación de texto en entornos sin conexión.
-- Prototipado rápido con FastFlowLM: desarrolladores que usen el runtime FLM pueden integrar este modelo en pipelines existentes, aprovechando la compatibilidad con la API de OpenAI para pruebas de concepto.
-- Evaluación de rendimiento en NPU: sirve como referencia para comparar la eficiencia de la inferencia en NPU AMD frente a GPU o CPU, midiendo latencia y throughput en tareas de generación.
-- Investigación sobre cuantización Q4NX: el formato y la mezcla de precisión (Q8_0, Q4_1, BF16) pueden interesar a quienes estudian técnicas de compresión para hardware específico.
-- Despliegue en servidores de baja potencia: en entornos donde el consumo energético es crítico, la NPU ofrece una alternativa eficiente para servir modelos de tamaño medio.
+- Asistentes conversacionales en equipos con NPU AMD: el modelo puede desplegarse en portátiles o mini-PC con XDNA para mantener conversaciones multi-turno sin GPU dedicada, aprovechando el runtime FLM y el formato Q4NX.
+- Análisis de documentos con imágenes en local: al ser image-text-to-text, permite extraer información de capturas, formularios o diagramas en entornos de escritorio con NPU, sin enviar datos a la nube.
+- Automatización de tareas con function calling: el soporte declarado de tool calling permite integrarlo en flujos que consulten APIs o ejecuten acciones estructuradas desde un agente local.
+- Prototipado de agentes de razonamiento en hardware de consumo: la destilación orientada a reasoning facilita experimentar con cadenas de razonamiento multi-paso en equipos sin acelerador NVIDIA.
+- Evaluación de modelos multimodales en el ecosistema FastFlowLM: útil para desarrolladores que quieran comparar el rendimiento de la NPU XDNA frente a GPU en tareas de visión-lenguaje.
+- Integración en pipelines compatibles con endpoints: el tag `endpoints_compatible` sugiere su uso detrás de una API estilo OpenAI para servicios internos de inferencia en hardware AMD.
+- Docencia e investigación sobre cuantización Q4NX: el repositorio sirve como referencia práctica de conversión de un modelo de ~9B a un formato propietario para NPU, con pesos mixtos Q8_0/Q4_1/BF16.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks para esta conversión específica en la información disponible. La model card del modelo fuente (Qwen3.5-9B) incluye una tabla comparativa con otros modelos (GPT-OSS-120B, GPT-OSS-20B, Qwen3-Next-80B-A3B-Thinking, etc.) en métricas como MMLU-Pro, pero los datos están incompletos en el extracto proporcionado y no se pueden verificar. Por tanto, no se presentan números concretos para evitar inventar información.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio incluye un directorio `results/` con pruebas de FLM-Test, pero no se han proporcionado los valores numéricos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo de pesos `model.q4nx` ocupa 7.23 GB, por lo que se requiere al menos 8 GB de memoria disponible (unificada o dedicada) para cargar el modelo.
-- Hardware objetivo: AMD XDNA NPU, presente en procesadores como Ryzen AI (serie 7040/8040 y posteriores). No se especifican GPUs compatibles.
-- Opciones de despliegue: runtime FastFlowLM (FLM) con comandos `flm run` y `flm serve`; no es compatible con vLLM, llama.cpp u Ollama en su formato nativo.
-- Latencia y throughput: no disponibles; dependerán de la generación específica de NPU y de la configuración del sistema.
+- Inferencia sobre NPU AMD XDNA (requisito principal); no está pensado para GPU NVIDIA ni para CPU con llama.cpp.
+- Pesos de lenguaje en Q4NX: 7,11 GB; el repositorio completo ocupa 33,6 GB (incluye tokenizer, configuración, visión y resultados).
+- VRAM/RAM estimada: no disponible con precisión; el fichero de pesos de 7,11 GB sugiere un consumo de memoria en torno a esa cifra más overhead del runtime, pero no se confirma.
+- GPU recomendadas: no aplica; el destino es NPU AMD XDNA. No se indica compatibilidad con A100, H100 ni RTX 4090.
+- Despliegue: FastFlowLM (FLM) 1.0.1 con el instalador `flm-add` (`uv tool install flm-add`), seguido de `flm run qwen3.8-distilled:9b` con las variables `FLM_CONFIG_PATH` y `FLM_XCLBIN_PATH` apuntando al directorio de configuración del usuario.
+- No compatible con vLLM, llama.cpp, Ollama ni TGI de forma nativa, al no ser GGUF ni safetensors estándar.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato / runtime |
 |---|---|---|---|---|---|
-| Qwen3.8-Distilled-9B-NPU2 (este) | 9B | 262K (según fuente) | Q4NX | No disponible | Repositorio vacío (0.0 GB) |
-| Qwen3.5-9B (modelo fuente) | 9B | 262K | Transformers, GGUF, etc. | Apache-2.0 | Disponible en Hugging Face |
-| Qwen3.8-27B (familia Qwen3.8) | 27B | 262K | GGUF, safetensors | No especificada | Disponible en LM Studio y Unsloth |
+| Qwen3.8-Distilled-9B-NPU2 | ~8,95B | no disponible | imagen-texto | Apache 2.0 | Q4NX / FastFlowLM (NPU AMD) |
+| empero-ai/Qwen3.8-9B-Distill (base) | ~9B (no confirmado) | no disponible | imagen-texto | Apache 2.0 (según tag del port) | no disponible |
+| Alternativas GGUF de la familia Qwen 3.x | variable | variable | texto o multimodal | variable | GGUF / llama.cpp, Ollama |
 
-La comparativa se limita a modelos de la misma familia. No hay información sobre alternativas específicas para NPU AMD en el mismo rango de tamaño.
+La comparación con alternativas de la misma categoría (modelos multimodales de ~9B ejecutables en hardware de consumo) no puede completarse con datos verificables en la información proporcionada. El rasgo diferencial del modelo es su formato Q4NX y su runtime FLM para NPU AMD, frente a los formatos GGUF o safetensors habituales.
 
 ## Limitaciones y advertencias
 
-- El repositorio tiene un tamaño de 0.0 GB y 0 descargas, lo que sugiere que los archivos de pesos no están realmente publicados o el repositorio está vacío. Cualquier intento de uso fallará si no se suben los artefactos.
-- Existe una discrepancia en el nombre: el repositorio se llama "Qwen3.8-Distilled" pero la model card indica que el modelo fuente es Qwen3.5-9B. Esto puede generar confusión sobre la versión real del modelo.
-- La conversión Q4NX declara modalidad solo lenguaje, aunque el modelo original es multimodal. Las capacidades de visión podrían no estar disponibles en esta versión.
-- No se especifican los idiomas soportados en la conversión, aunque el modelo fuente declara 201 idiomas. La cobertura real en la versión cuantizada es incierta.
-- La licencia del repositorio no está indicada; aunque el modelo fuente usa Apache-2.0, la conversión podría tener restricciones adicionales no documentadas.
-- No hay benchmarks ni métricas de rendimiento para esta conversión, por lo que no se puede evaluar su calidad frente a otras cuantizaciones o modelos.
-- El runtime FastFlowLM es específico de AMD XDNA; no funcionará en hardware de otros fabricantes sin adaptación.
+- Modelo derivado y cuantizado: los sesgos y errores del modelo base se heredan y pueden amplificarse por la cuantización Q4_1 en algunas capas.
+- Riesgo de alucinación inherente a los modelos destilados de ~9B, especialmente en tareas de razonamiento largo o visión con imágenes de baja calidad.
+- Idiomas soportados no documentados; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas distintos del inglés.
+- Longitud de contexto no especificada; no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
+- Formato propietario Q4NX: no es portable a llama.cpp, vLLM, Ollama ni TGI; queda ligado al runtime FastFlowLM y a hardware AMD XDNA.
+- Dependencia de una versión concreta del runtime (FLM 1.0.1) y de variables de entorno específicas; posibles roturas en actualizaciones.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia y las condiciones del modelo base `empero-ai/Qwen3.8-9B-Distill` antes de producción.
+- El repositorio es una conversión de un tercero (Atomic-Germ), no una publicación oficial de Empero AI ni de Alibaba/Qwen; la trazabilidad del proceso de cuantización no está detallada.
+- No hay benchmarks publicados que permitan validar la pérdida de calidad frente al modelo base en fp16/bf16.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-9B-NPU2
-- Modelo fuente (FastFlowLM/Qwen3.5-9B-NPU2): https://huggingface.co/FastFlowLM/Qwen3.5-9B-NPU2
-- Modelo base (Qwen/Qwen3.5-9B): no se proporciona URL directa, pero se puede buscar en Hugging Face.
-- Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5 (referenciado en la model card fuente)
+- Modelo base: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
+- Instalador flm-add: disponible vía `pip install flm-add` o `uv tool install flm-add` (no se proporciona URL directa)
+- FastFlowLM: no se proporciona URL en la información disponible
+- Papers, blogs y demos: no disponibles

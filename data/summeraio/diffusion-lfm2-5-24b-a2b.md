@@ -2,105 +2,93 @@
 
 ## Resumen
 
-Diffusion LFM2.5-24B-A2B es un checkpoint experimental publicado por el usuario summerAIO en Hugging Face, consistente en un ajuste fino con difusión de máscaras por bloques (block masked-diffusion) sobre el modelo `LiquidAI/LFM2.5-24B-A2B`. No se trata de un lanzamiento oficial de Liquid AI: el autor lo describe explícitamente como un artefacto de investigación y evaluación, con advertencias severas sobre su calidad. El modelo conserva la arquitectura MoE del modelo base (23.971.587.712 parámetros totales según safetensors) y añade una cabeza de decodificación por difusión que sustituye la generación autorregresiva por un muestreador de bloques.
+`summerAIO/diffusion-lfm2.5-24b-a2b` es un checkpoint de investigación experimental publicado por el usuario summerAIO que adapta el modelo de lenguaje `LiquidAI/LFM2.5-24B-A2B` de Liquid AI para decodificación mediante difusión enmascarada por bloques, en lugar de la generación autorregresiva estándar token a token. El backbone sigue siendo la arquitectura LFM2 MoE de Liquid AI, con 40 capas, 64 expertos y enrutamiento top-4, 23.971.585.280 parámetros totales y aproximadamente 2,45B de parámetros activos por token.
 
-El interés técnico del checkpoint es acotado y muy específico: explorar la viabilidad de la decodificación por difusión sobre un MoE de 24B y medir latencias en un A100 80GB. El autor reporta cifras de hasta 639 tokens/s en configuraciones concretas, pero insiste en que esas cifras son experimentos de latencia y no recomendaciones de calidad. La pantalla de repetición de texto falla de forma grave, y no se encontró ningún ajuste de pasos de denoising (1–15) que superase simultáneamente las pruebas de aritmética, respuesta corta exacta y repetición.
+La adaptación consiste en un LoRA de rango 64 ya fusionado en los pesos base (no quedan parámetros LoRA en el checkpoint publicado) y un embedding de máscara aprendido de dimensión 2048 almacenado aparte en `diffusion.safetensors`, que se intercambia en las posiciones enmascaradas del lienzo de generación. Las capas de atención se conmutan a no causales para permitir atención bidireccional dentro del bloque de difusión.
 
-Por tanto, la ficha debe leerse como documentación de un experimento fallido o parcialmente fallido en calidad, útil para investigadores interesados en difusión sobre LLMs y en las dificultades de convertir un modelo autorregresivo en un decodificador de difusión. No es un modelo para producción ni para uso general.
+Es relevante ahora como material de investigación sobre samplers de difusión aplicados a modelos de lenguaje de gran escala, pero el propio autor advierte que las comprobaciones de calidad incluidas en el repositorio no aprobaron ninguna configuración de sampler probada: las pruebas de código y de respuesta exacta fallaron en un barrido de 1 a 15 pasos, y varias generaciones registradas son altamente repetitivas. No debe usarse como asistente de propósito general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (lfm2_moe) con decodificación por difusión de máscaras por bloques |
-| Parametros totales | 23.971.587.712 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en, ja |
-| Licencia | other (LFM Open License v1.0, con umbral comercial de 10M USD de ingresos anuales) |
-| Formato de pesos | safetensors (BF16, ~48 GB) |
+| Arquitectura | LFM2 MoE (`lfm2_moe`), clase `Lfm2MoeForCausalLM`; 40 capas (30 bloques de convolución corta + 10 bloques de atención GQA), hidden size 2048, vocabulario 128.000 |
+| Parametros totales | 23.971.585.280 (~24,0B) |
+| Parametros activos | 2,45B (64 expertos, 4 enrutados por token) |
+| Longitud de contexto | 131.072 tokens (según config) |
+| Tipos de cuantizacion | no disponible (los pesos publicados están en bfloat16) |
+| Idiomas soportados | en, ar, zh, fr, de, ja, ko, es, pt, it, vi, th, id, hi, ru, pl (etiquetas heredadas del modelo base; el entrenamiento documentado es en inglés) |
+| Licencia | `lfm1.0` (LFM Open License v1.0, marcada como "other") |
+| Formato de pesos | safetensors (bfloat16) + `diffusion.safetensors` con la clave `mask_embedding` de forma `[2048]`; requiere `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `LiquidAI/LFM2.5-24B-A2B` (revisión `3dc4cd09c9a2a99e1e819693e79d3aba5e9bb4f2`), un MoE de 24B parámetros totales con pesos de expertos empaquetados. Sobre esa base se aplicó un LoRA de rango 64 y alpha 128, entrenado para decodificación por difusión de máscaras por bloques y posteriormente fusionado en los pesos BF16 del modelo base. El checkpoint fusionado seleccionado corresponde a la actualización 3100, elegida mediante NLL de tokens enmascarados sobre validación fija.
+El modelo parte de `LiquidAI/LFM2.5-24B-A2B` en la revisión `3dc4cd09c9a2a99e1e819693e79d3aba5e9bb4f2`. La arquitectura base es un transformer MoE híbrido de 40 capas que combina 30 bloques de convolución corta con 10 bloques de atención con query agrupada (GQA), hidden size de 2048 y 64 expertos con enrutamiento top-4, lo que resulta en 2,45B de parámetros activos sobre 24,0B totales. Sobre esa base se fusionó un LoRA de rango 64, de modo que el checkpoint publicado no conserva parámetros LoRA separados.
 
-Los datos de entrenamiento fueron ejemplos de Alpaca (CC-BY-NC-4.0) y ARC-Easy (split de entrenamiento), excluyendo registros de validación y test final. En 64 ejemplos de validación fijos, la NLL de media máscara pasó de 3.0261 a 2.7118 (reducción del 10,39 %) y la de máscara completa de 5.8993 a 5.6291 (4,58 %). En el test final de 256 ejemplos, la NLL de media máscara pasó de 3.0005 a 2.7312 (8,97 %) y la de máscara completa de 5.8205 a 5.6774 (2,46 %). El objetivo acordado del 10 % en ambos niveles de corrupción no se alcanzó. Estas pérdidas son entropía cruzada de denoising, no perplejidad autorregresiva ni una medida de corrección en generación libre.
+La innovación técnica central es la sustitución de la decodificación autorregresiva por difusión enmascarada por bloques. La generación procede por lienzos de tamaño `block_size`: el prompt y los tokens ya aceptados forman un prefijo con atención causal; el lienzo se rellena con `pad_token_id` marcado como enmascarado y cada posición enmascarada recibe el embedding de máscara aprendido. Dentro del lienzo la atención es bidireccional (cada capa de atención fija `self_attn.is_causal = False`), con la regla de máscara: si el índice de query `q` está en el prefijo (`q < p`), solo se permite la clave `k <= q`; en caso contrario se permiten todas las claves. Cada paso de denoising predice tokens para las posiciones enmascaradas y confirma un subconjunto, que se desenmascara; el bloque termina cuando todas las posiciones están llenas o cuando se confirma un EOS con todo lo anterior ya relleno.
 
-La innovación técnica principal es el muestreador de bloques con un modo de atención distinto del causal ordinario. El autor advierte que `AutoModelForCausalLM.generate()` no invoca el muestreador de difusión; es necesario usar `modeling_diffusion_lfm.py` y `inference_recipe.json`. Además, la comparación estricta de logits enmascarados contra el adaptador sin fusionar falló (diferencia absoluta máxima de 8,44, con desajuste en top-1), por lo que el export fusionado debe tratarse como un artefacto experimental distinto y no como una conversión numéricamente equivalente.
+El repositorio incluye dos samplers. El sampler de pasos fijos (`modeling_diffusion_lfm.py`, `DiffusionLFM.generate`, el referenciado por `inference_recipe.json`) deja `count * (steps - s - 1) // steps` posiciones enmascaradas en el paso `s` y rellena el resto con las predicciones de mayor confianza, con opciones de `temperature`, `top_k`, `top_p`, `repetition_penalty` y `remask_low_conf`, y una optimización de reutilización de prefijo que se activa tras un autotest. El sampler por umbral de confianza (`modeling_diffusion_patched.py`, cargado vía `AutoModelForCausalLM` con `trust_remote_code=True`) no acepta `steps` y confirma posiciones con confianza ≥ `threshold` (por defecto 0,9) hasta llenar el lienzo. Los datos de entrenamiento citados en el repositorio son `tatsu-lab/alpaca` y `allenai/ai2_arc`, ambos en inglés; no se documenta RLHF ni DPO. La equivalencia numérica de la fusión del LoRA no superó los umbrales estrictos y `quality-selection-summary.json` registra `best_quality_setting: null`.
 
 ## Capacidades
 
-- Generación de texto mediante muestreo de difusión por bloques, no mediante decodificación autorregresiva estándar.
-- Soporte de conversación con plantilla de chat (`apply_chat_template`) y prompts multi-turno.
-- Idiomas declarados: inglés y japonés, aunque el autor reporta fragmentos mezclados de idiomas en las salidas.
-- No se documenta soporte de tool calling, function calling ni agentes multi-paso.
-- No se documenta soporte de visión, audio ni modo de razonamiento explícito.
-- No se documenta capacidad de código fiable; de hecho, el autor reporta Python malformado en las pruebas.
+- Generación de texto conversacional mediante decodificación por difusión en bloques, con atención bidireccional dentro del lienzo.
+- Generación de código: el modelo está etiquetado para `code-generation`, aunque las pruebas de código del propio repositorio fallaron en el barrido de 1 a 15 pasos.
+- Razonamiento y respuesta a preguntas: el tokenizador hereda la plantilla ChatML de LFM2.5, que antepone `<think>` cuando `add_generation_prompt=True`.
+- Soporte multilingüe nominal en 16 idiomas según las etiquetas del modelo base, sin evaluación de preservación de capacidades no inglesas en este repositorio.
+- Tool calling y function calling: no disponible (no documentado en la información proporcionada).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades de visión o audio: no disponibles.
+- Control de generación mediante dos samplers configurables (pasos fijos con knobs de temperatura, top-k, top-p, penalización de repetición y remask; o umbral de confianza).
 
 ## Casos de uso
 
-- Investigación sobre decodificación por difusión en LLMs: el checkpoint permite reproducir el muestreador de bloques y estudiar la degradación de calidad frente a la decodificación autorregresiva del modelo base, con la receta de inferencia incluida en el repositorio.
-- Reproducción de medidas de latencia: sirve para replicar los 601,95 tokens/s (canvas 1024, 12 pasos) o los 639,16 tokens/s (canvas 512, 7 pasos) en un A100-SXM4-80GB, siempre como experimento de rendimiento y no de calidad.
-- Estudio de fusión de adaptadores LoRA en MoE: el fallo de equivalencia numérica entre adaptador y checkpoint fusionado es un caso concreto para investigar errores de exportación en modelos con pesos de expertos empaquetados.
-- Análisis de modos de fallo: la repetición severa, los bucles de tokens y los fragmentos multilingües documentados permiten estudiar degeneración en difusión de máscaras y diseñar pantallas de salud de texto.
-- Evaluación comparativa de NLL de denoising: los valores de validación y test publicados permiten contrastar metodologías de evaluación de modelos de difusión frente a perplejidad autorregresiva.
-- Docencia y divulgación: como ejemplo práctico de las diferencias entre muestreadores de difusión y `generate()` estándar en Transformers, y de los requisitos de memoria (BF16 ~48 GB) para un MoE de 24B.
+- Investigación sobre samplers de difusión para modelos de lenguaje: el repositorio está pensado explícitamente para desarrollo de samplers, de modo que un investigador puede modificar las reglas de confirmación de tokens, el tamaño de bloque o el umbral de confianza y medir el efecto sobre la repetitividad y la exactitud en sondas de código.
+- Experimentos de decodificación no autorregresiva con atención bidireccional: permite estudiar cómo se comporta un MoE de 24B cuando el lienzo puede atender en ambas direcciones, algo imposible en el modelo base causal.
+- Estudio de la fusión de LoRA en modelos MoE grandes: el checkpoint documenta explícitamente que la equivalencia numérica de la fusión no pasó los umbrales estrictos, lo que lo convierte en un caso de análisis sobre los límites de las fusiones de rango 64 en arquitecturas con 64 expertos.
+- Reproducción de experimentos de difusión de texto en inglés: los datos de entrenamiento citados (`tatsu-lab/alpaca`, `allenai/ai2_arc`) son ingleses, por lo que las pruebas controladas de calidad deben plantearse en ese idioma.
+- Comparación de samplers de pasos fijos frente a samplers por umbral de confianza: el repositorio incluye ambas implementaciones, lo que permite medir latencia, número de pasos efectivos y calidad relativa bajo las mismas condiciones de hardware.
+- Docencia y divulgación sobre decodificación por difusión: el código de atención conmutable a no causal y el embedding de máscara separado sirven como material didáctico para explicar la diferencia entre generación causal y difusión enmascarada.
+- No es adecuado para atención al cliente, asistentes de producción ni generación de código en pipelines de CI/CD, dado que las comprobaciones de calidad del propio repositorio no aprobaron ninguna configuración.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor indica explícitamente que ninguna evaluación amplia de lenguaje, código, multilingüismo o seguridad establece la calidad del modelo.
-
-Los únicos datos numéricos publicados son de latencia y de pérdida de denoising:
-
-| Metrica | Configuracion | Resultado |
-|---|---|---|
-| Tokens/s (mediana) | batch 1, input 256, canvas 1024, 12 pasos, max output 1024, A100-SXM4-80GB | 601,95 |
-| Tokens/s (mediana) | batch 1, input 256, canvas 256, 4 pasos, max output 1024, A100-SXM4-80GB | 583,93 |
-| Tokens/s (mediana) | batch 1, input 256, canvas 512, 7 pasos, max output 1024, A100-SXM4-80GB | 639,16 |
-| NLL media mascara (validacion, 64 ejemplos) | antes → despues | 3,0261 → 2,7118 (-10,39 %) |
-| NLL mascara completa (validacion, 64 ejemplos) | antes → despues | 5,8993 → 5,6291 (-4,58 %) |
-| NLL media mascara (test, 256 ejemplos) | antes → despues | 3,0005 → 2,7312 (-8,97 %) |
-| NLL mascara completa (test, 256 ejemplos) | antes → despues | 5,8205 → 5,6774 (-2,46 %) |
-
-Las medidas de latencia se obtuvieron con 3 calentamientos y 5 repeticiones cronometradas. El autor subraya que la recomendación de 600 tokens/s es solo una configuración de experimento de latencia y no de calidad, y que las preguntas cortas producen longitudes de salida y tasas distintas.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio únicamente registra que las sondas de código y de respuesta exacta fallaron en un barrido de 1 a 15 pasos y que varias generaciones resultaron altamente repetitivas, sin cifras numéricas asociadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint BF16 fusionado ocupa aproximadamente 48 GB antes de overhead de runtime; se necesita una GPU con al menos 80 GB para cargar y ejecutar con comodidad.
-- GPU recomendadas: A100-SXM4-80GB, que fue el objetivo medido de empaquetado e inferencia. H100 80GB sería un candidato natural por memoria, aunque no se documentan medidas en ella.
-- No cabe en GPU de consumo: una RTX 4090 (24 GB) no puede cargar los pesos BF16 de ~48 GB sin cuantización, y no se documentan recetas de cuantización para este checkpoint.
-- Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI. La inferencia requiere el código personalizado `modeling_diffusion_lfm.py` y el `inference_recipe.json` del repositorio, con `transformers` para el tokenizador.
-- Latencia y throughput: hasta 639,16 tokens/s de salida en la configuración de canvas 512 y 7 pasos en A100 80GB; 601,95 tokens/s con canvas 1024 y 12 pasos. La latencia depende del prompt, la longitud de salida y el hardware.
+- VRAM estimada para inferencia: los pesos publicados están en bfloat16 con un total de 23.971.585.280 parámetros, lo que sitúa el peso del modelo en torno a 48 GB solo en pesos; a ello hay que sumar el estado KV y el lienzo de difusión. No se dispone de estimaciones de cuantización en la información proporcionada.
+- GPU recomendadas: no disponible de forma explícita; por volumen de pesos en bfloat16 se requiere al menos una GPU con 80 GB (A100 80GB, H100 80GB) para una carga holgada, o reparto multi-GPU.
+- ¿Cabe en GPU de consumo? No en bfloat16 completo. No se documentan variantes GGUF ni cuantizaciones que permitan ejecución en RTX 4090 u otras GPU de consumo.
+- Opciones de despliegue: Transformers con `trust_remote_code=True`; se requiere una build de Transformers 5.x que incluya `Lfm2MoeForCausalLM` (el repositorio registra la versión 5.22.2). El sampler de pasos fijos se invoca mediante `DiffusionLFM.generate`; el sampler por umbral se carga con `AutoModelForCausalLM`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y la naturaleza no causal de la atención y el código custom hacen improbable su integración directa en esos motores.
+- Latencia y throughput: no disponibles. El coste depende del número de pasos del sampler y del tamaño de bloque, parámetros que el repositorio no reporta con mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Tipo de decodificacion | Licencia | Calidad documentada |
+| Modelo | Parametros totales / activos | Contexto | Enfoque de decodificacion | Licencia | Estado |
 |---|---|---|---|---|---|
-| summerAIO/diffusion-lfm2.5-24b-a2b | 23.971.587.712 | no disponible | Difusion de mascaras por bloques | LFM Open License v1.0 (umbral comercial 10M USD) | Degeneracion severa; sin benchmarks de calidad |
-| LiquidAI/LFM2.5-24B-A2B (base) | 24B (MoE) | no disponible | Autorregresiva | LFM Open License v1.0 | Modelo upstream de referencia; el autor recomienda usarlo para respuestas generales |
-| Alternativas de difusion de texto de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| summerAIO/diffusion-lfm2.5-24b-a2b | 24,0B / 2,45B | 131.072 | Difusion enmascarada por bloques (experimental) | lfm1.0 | Experimental, sin configuracion de calidad aprobada |
+| LiquidAI/LFM2.5-24B-A2B | 24,0B / 2,45B | 131.072 | Autorregresiva causal | lfm1.0 | Modelo base estable de Liquid AI |
+| Alternativas de difusion de texto de gran escala | no disponible | no disponible | Difusion enmascarada | no disponible | no disponible |
 
-La comparación relevante es contra el propio modelo base: el autor indica que, hasta que el checkpoint pase evaluaciones independientes más amplias, se prefiera la decodificación autorregresiva del modelo upstream para respuestas generales.
+La comparación más directa es con el modelo base `LiquidAI/LFM2.5-24B-A2B`: comparten arquitectura, número de parámetros, contexto y licencia, y la única diferencia es el LoRA fusionado y el sampler de difusión. No se dispone de datos de benchmarks que permitan comparar el rendimiento de ambos en tareas estándar.
 
 ## Limitaciones y advertencias
 
-- Calidad no apta para uso general: el autor declara que el modelo no es adecuado para uso fiable de propósito general, con repetición severa, fragmentos mezclados de idiomas, Python malformado y bucles de tokens.
-- Sin benchmarks de calidad: no hay evaluación amplia de lenguaje, código, multilingüismo ni seguridad que establezca su rendimiento.
-- Ningún ajuste de inferencia recomendado por calidad: el barrido de 1–15 pasos de denoising no encontró ninguna configuración que superase a la vez la prueba de media aritmética en código, la de respuesta corta exacta y la pantalla de repetición.
-- Equivalencia numérica no verificada: la comparación estricta de logits enmascarados contra el adaptador sin fusionar falló (diferencia absoluta máxima 8,44, desajuste top-1); el export fusionado es un artefacto distinto.
-- Dependencia de código personalizado: `generate()` estándar no usa el muestreador de difusión; se requiere `modeling_diffusion_lfm.py` e `inference_recipe.json`.
-- Restricciones de licencia: la LFM Open License v1.0 permite redistribución de obras derivadas con atribución y copia de la licencia, pero el uso comercial por entidades con ingresos anuales iguales o superiores a 10 millones de USD no está licenciado por esta concesión.
-- Licencia de datos de entrenamiento: Alpaca es CC-BY-NC-4.0, lo que impone términos adicionales sobre los datos usados en el ajuste.
-- Sesgos: no documentados en la información disponible; la naturaleza experimental y la falta de evaluación impiden descartar sesgos del modelo base o introducidos por el ajuste.
-- Riesgo de alucinación: elevado por la degeneración observada y la ausencia de evaluación de corrección en generación libre.
-- Limitaciones de idioma: solo se declaran inglés y japonés, con evidencia de mezcla de idiomas en las salidas.
-- Medidas de latencia limitadas a una única configuración de A100 80GB; no son extrapolables a otro hardware.
+- Estado experimental explícito: el autor indica que es un checkpoint de investigación y que no debe usarse como asistente de propósito general.
+- Calidad no aprobada: las comprobaciones incluidas en el repositorio no aprobaron ninguna configuración de sampler; `quality-selection-summary.json` registra `best_quality_setting: null`.
+- Repetitividad: varias generaciones registradas son altamente repetitivas, lo que afecta directamente a cualquier uso conversacional o de generación de código.
+- Fallo en sondas de código y respuesta exacta: las pruebas fallaron en un barrido de 1 a 15 pasos, por lo que no hay evidencia de utilidad en tareas de programación o de respuesta factual.
+- Fusión LoRA no verificada numéricamente: la equivalencia de la fusión no superó los umbrales estrictos, lo que introduce incertidumbre sobre la fidelidad de los pesos publicados respecto al proceso de adaptación.
+- Idiomas: las etiquetas declaran 16 idiomas heredados del modelo base, pero el entrenamiento documentado es en inglés y no se evalúa la preservación de capacidades en otros idiomas; la ficha de Hugging Face lista solo `en` y `ja` en el campo de idiomas.
+- Riesgo de alucinación: no cuantificado, pero la naturaleza experimental y la repetitividad observada sugieren un riesgo elevado en producción.
+- Licencia: LFM Open License v1.0 (`lfm1.0`), marcada como "other"; deben revisarse las restricciones de uso comercial en el enlace de licencia del repositorio antes de cualquier despliegue.
+- Dependencia de código custom: requiere `trust_remote_code=True` y una build de Transformers 5.x con `Lfm2MoeForCausalLM`, lo que limita la portabilidad y añade superficie de riesgo al ejecutar código del repositorio.
+- Sin soporte documentado de cuantización: no hay variantes GGUF ni cuantizadas, lo que dificulta el despliegue en hardware de consumo.
+- Atención no causal: la conmutación de `self_attn.is_causal = False` en todas las capas impide reutilizar optimizaciones de inferencia causal estándar.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/summerAIO/diffusion-lfm2.5-24b-a2b
+- Modelo en Hugging Face: https://huggingface.co/summerAIO/diffusion-lfm2.5-24b-a2b
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
-- Licencia del modelo base (LFM Open License v1.0): https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
-- Dataset Alpaca: https://huggingface.co/datasets/tatsu-lab/alpaca
-- Dataset ARC: https://huggingface.co/datasets/allenai/ai2_arc
+- Licencia LFM Open License v1.0: https://huggingface.co/summerAIO/diffusion-lfm2.5-24b-a2b/blob/main/licenses/LFM-Open-License-v1.0.txt
+- Paper de referencia citado en los tags (arXiv:2511.23404): https://arxiv.org/abs/2511.23404

@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18108222440,
-  "storage_human": "18.1 GB",
+  "storage_bytes": 18847333560,
+  "storage_human": "18.8 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [

@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "boofin/opt1.3b-gamm-fixed",
+  "slug": "boofin-opt1-3b-gamm-fixed",
+  "author": "boofin",
+  "url": "https://huggingface.co/boofin/opt1.3b-gamm-fixed",
+  "created_at": "2026-11-19T09:13:32.000Z",
+  "updated_at": "2026-11-19T09:30:59.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opt",
+    "text-generation",
+    "machine-unlearning",
+    "llm-unlearning",
+    "safety",
+    "gradient-ascent",
+    "random-mismatch",
+    "vi",
+    "en",
+    "dataset:PKU-Alignment/PKU-SafeRLHF",
+    "dataset:truthfulqa/truthful_qa",
+    "arxiv:2310.10683",
+    "base_model:facebook/opt-1.3b",
+    "base_model:finetune:facebook/opt-1.3b",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1315758080,
+  "parameters_human": "1.32B",
+  "storage_bytes": 5263077728,
+  "storage_human": "5.3 GB",
+  "context_length": null,
+  "base_model": "facebook/opt-1.3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myt - best fixed, mobile, internet and TV services in Mauritius",
+      "url": "https://www.myt.mu/",
+      "snippet": "Send money, pay bills, top-up your phone and shop online — all from one app, available 24/7. Send money to any local bank or myt …"
+    }
+  ]
+}

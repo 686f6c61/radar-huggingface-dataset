@@ -5,7 +5,7 @@
   "author": "limxdynamics",
   "url": "https://huggingface.co/limxdynamics/tron2-robot-description",
   "created_at": "2026-11-16T06:38:26.000Z",
-  "updated_at": "2026-11-17T02:21:52.000Z",
+  "updated_at": "2026-11-19T03:31:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -17,7 +17,7 @@
   "tags": [
     "limx-dynamics",
     "robotics",
-    "legged-robot",
+    "legged-robots",
     "humanoid",
     "mobile-manipulation",
     "urdf",

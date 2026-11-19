@@ -21,8 +21,6 @@
     "sft",
     "en",
     "dataset:nex-agi/agent-sft",
-    "base_model:pranavupadhyaya52/Fermicode-1B-Instruct",
-    "base_model:quantized:pranavupadhyaya52/Fermicode-1B-Instruct",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",

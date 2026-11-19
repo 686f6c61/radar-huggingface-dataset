@@ -5,7 +5,7 @@
   "author": "fotiecodes",
   "url": "https://huggingface.co/fotiecodes/turaco-nano-tts-wes",
   "created_at": "2026-11-18T17:58:57.000Z",
-  "updated_at": "2026-11-18T17:59:29.000Z",
+  "updated_at": "2026-11-18T19:59:00.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -14,14 +14,15 @@
     "wes"
   ],
   "tags": [
-    "pocket-tts",
     "safetensors",
+    "gguf",
+    "turaco",
     "cameroon-pidgin",
     "experimental",
     "text-to-speech",
     "wes",
     "base_model:kyutai/pocket-tts",
-    "base_model:finetune:kyutai/pocket-tts",
+    "base_model:quantized:kyutai/pocket-tts",
     "license:cc-by-4.0",
     "region:us"
   ],
@@ -30,11 +31,12 @@
   "trending_score": 0,
   "parameters": 109502146,
   "parameters_human": "109.5M",
-  "storage_bytes": 447107976,
-  "storage_human": "447 MB",
+  "storage_bytes": 624360296,
+  "storage_human": "624 MB",
   "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": false,

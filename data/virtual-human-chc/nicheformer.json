@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "virtual-human-chc/Nicheformer",
+  "slug": "virtual-human-chc-nicheformer",
+  "author": "virtual-human-chc",
+  "url": "https://huggingface.co/virtual-human-chc/Nicheformer",
+  "created_at": "2026-08-25T08:06:27.000Z",
+  "updated_at": "2026-11-19T11:00:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nicheformer",
+    "single-cell",
+    "biology",
+    "transcriptomics",
+    "custom_code",
+    "en",
+    "base_model:theislab/Nicheformer",
+    "base_model:finetune:theislab/Nicheformer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 48956752,
+  "parameters_human": "49.0M",
+  "storage_bytes": 196918560,
+  "storage_human": "197 MB",
+  "context_length": null,
+  "base_model": "aletlvl/Nicheformer",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,116 +2,115 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-T3a392-Ampere-SM80-46GiB-GPU-Weights es una cuantizacion mixta de 2/3/4 bits en formato trellis (ring-coded) de los expertos enrutados del modelo Qwen3.8-Flash-Next, publicado por el usuario sachk0 sobre los pesos FP8 originales de Qwen y una base AutoRound de 3 bpw con MTP. El artefacto conserva los 512 expertos por capa y empaqueta los expertos en unos 39,2 GiB, con un total de pesos cargados en GPU medido en aproximadamente 46,16 GiB. No es un formato estandar (no es GPTQ, GGUF ni AWQ) y no funciona con `transformers.from_pretrained` ni con vLLM de serie: requiere un parche PLE-SSD, un cargador trellis y kernels CUDA propios.
+Qwen3.8-Flash-Next T3a392 es una cuantización mixta de 2/3/4 bits del modelo Qwen3.8-Flash-Next-FP8, publicada por el usuario sachk0. El trabajo se centra en los expertos enrutados de una arquitectura Mixture-of-Experts: se conservan los 512 expertos por capa y se comprimen mediante una codificación en anillo (ring-coded trellis) que reduce el peso de los expertos a unos 39,2 GiB, con un total de pesos cargados en GPU medido de 46,16 GiB. El objetivo declarado es hacer viable el despliegue de un modelo de 53.903 millones de parámetros en GPUs Ampere de clase 64 GiB (SM80), en concreto una CMP 170HX.
 
-El modelo resuelve un problema muy concreto de ingenieria: servir un modelo de gran tamano con arquitectura Mixture-of-Experts en GPUs Ampere SM80 (GA100) de 64 GiB, manteniendo el shard PLE en BF16 sobre SSD en lugar de en memoria. La validacion se ha hecho sobre una NVIDIA CMP 170HX (74 SM, 64 GiB HBM), una configuracion de hardware no estandar. El contexto maximo nativo por peticion es de 262.144 tokens, mientras que la capacidad de KV agrupada entre peticiones alcanza 906.051 tokens.
+La relevancia del artefacto es doble. Por un lado, demuestra que es posible mantener la calidad del modelo original con una divergencia KL reducida (0,090 frente a 0,168 de la cuantización AutoRound de referencia) en una GPU de minería reconvertida. Por otro, su model card es inusualmente rigurosa: publica resultados de GPQA Diamond (179/198, 90,40 %), latencias, capacidad de KV y registros de medición reproducibles, además de retirar explícitamente cifras anteriores por considerarlas medidas en configuraciones inestables.
 
-Es relevante para equipos que necesiten desplegar modelos de la familia Qwen3.8-Flash-Next en infraestructura Ampere antigua o de gama alta de segunda mano, aceptando un formato propietario y una licencia Qwen Community 1.0 con restricciones para uso comercial como servicio. La calidad se ha medido como divergencia KL contra un profesor FP32, no como exactitud en tareas, y las cifras de rendimiento no son extrapolables a otras GPUs.
+No obstante, conviene subrayar que no se trata de un modelo nuevo ni de un lanzamiento oficial de Qwen: es una cuantización de terceros con licencia heredada qwen-community-license-1.0, distribuida en formato trellis propietario y pensada para un stack de servicio muy concreto (vLLM con soporte trellis). La información sobre idiomas, datos de entrenamiento y benchmarks completos no está disponible en la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) con expertos enrutados cuantizados en trellis; mantiene 512 expertos por capa; base Qwen3.8-Flash-Next con PLE (probablemente "parallel layer experts" o shard PLE en BF16 sobre SSD) y MTP (multi-token prediction) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (modelo MoE, pero el numero de parametros activos no se especifica) |
-| Longitud de contexto | 262.144 tokens por peticion (maximo nativo); 906.051 tokens de capacidad KV agrupada entre peticiones |
-| Tipos de cuantizacion | Trellis mixta 2/3/4 bits en expertos enrutados; pesos densos y PLE en BF16 / AutoRound 3 bpw segun la base |
+| Arquitectura | Transformer Mixture-of-Experts (hereda la del modelo base Qwen3.8-Flash-Next; detalles internos no disponibles) |
+| Parametros totales | 53.903.345.776 (~53,9 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (límite nativo por petición); pool KV agregado de 906.051 tokens en GPU de 64 GiB |
+| Tipos de cuantizacion | Mixta 2/3/4 bits con trellis ring-coded en los expertos enrutados; capas densas reutilizadas de AutoRound 3bpw; PLE original en BF16 residente en SSD |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (no Apache-2.0 ni MIT) |
-| Formato de pesos | Trellis propietario (no GPTQ, GGUF ni AWQ); requiere cargador y kernels CUDA especificos; shard PLE en BF16 (~102,4 GB decimal) sobre SSD |
+| Licencia | qwen-community-license-1.0 (etiquetada como "other") |
+| Formato de pesos | safetensors (librería trellis); repo de 155,1 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-Flash-Next-FP8 (commit `236dfdf285828023ca3bcd3f37366c58a3469b13`) y de la base densa/PLE klee100/Qwen3.8-Flash-Next-AutoRound-3bpw-MTP (commit `ce0e0b94083895bd836b916f29bf105c40a8162a`). La arquitectura subyacente es un transformer Mixture-of-Experts con 512 expertos enrutados por capa. La intervencion del autor consiste en una cuantizacion trellis con codificacion en anillo (ring-coded) de 2/3/4 bits aplicada exclusivamente a los expertos enrutados, mientras que los pesos densos y el shard PLE se mantienen en BF16 o en la base AutoRound de 3 bpw. El shard PLE, de aproximadamente 102,4 GB decimales, reside en SSD y no en memoria de GPU.
+El modelo base es Qwen3.8-Flash-Next, un transformer con mezcla de expertos (MoE) del que se conservan los 512 expertos por capa. La contribución de esta ficha no es el entrenamiento, sino la cuantización post-entrenamiento: los expertos enrutados se comprimen con una codificación trellis en anillo a 2/3/4 bits mixtos, mientras que las capas densas se toman prestadas de `klee100/Qwen3.8-Flash-Next-AutoRound-3bpw-MTP`. El PLE (probablemente "Parallel Layer Experts" o un componente equivalente del modelo base) se mantiene en BF16 sobre SSD y no se carga en VRAM.
 
-No se detalla la composicion del dataset de entrenamiento original ni si hubo RLHF o DPO; esa informacion pertenece a la model card de Qwen y no se reproduce aqui. La innovacion tecnica del artefacto es el formato trellis con kernels CUDA especificos para Ampere SM80 (GA100), un cargador propio y un parche PLE-SSD sobre vLLM (revision `a5a30471ff2bb7f0824f2da10e358af98d304472`). Se emplea decodificacion especulativa con MTP de profundidad 3 y un vocabulario de borrador de 65.536 tokens. El autor advierte que la arquitectura de kernel validada es Ampere SM80 (GA100), no Ada, y que otras GPUs no estan verificadas.
+El pipeline de cuantización es AutoRound (referenciado en los tags y en el paper arXiv:2210.17323), con decodificación especulativa MTP (multi-token prediction) de profundidad 3 y un vocabulario de borrador de 65.536 tokens. La model card reporta una fidelidad teacher-forced con KL de 0,090 frente a un profesor FP32, aproximadamente la mitad de la divergencia de la variante AutoRound 3bpw (0,168). No se dispone de información sobre el dataset de calibración, el número de tokens de entrenamiento del modelo base ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva con contexto nativo de hasta 262.144 tokens por peticion.
-- Razonamiento multi-turno y conversaciones largas: la capacidad KV agrupada de 906.051 tokens permite atender varias sesiones concurrentes con contextos extensos.
-- Decodificacion especulativa con MTP de profundidad 3 y vocabulario de borrador de 65.536 tokens, orientada a reducir latencia por paso.
-- Capacidades multilingues: la evaluacion KL incluye un dominio "Multilingual" con divergencia 0,0365, lo que indica preservacion de la distribucion multilingue del profesor FP32, aunque no se enumeran los idiomas concretos.
-- Dominios especializados evaluados: medico (KL 0,0312), legal (KL 0,0271) y Nemotron (KL 0,0391), lo que sugiere un comportamiento estable en estos ambitos respecto al modelo fuente.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades de vision o audio: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento de largo alcance: la model card documenta respuestas de hasta 124.295 tokens generados, incluyendo razonamiento, dentro de la ventana de 262.144 tokens.
+- Razonamiento científico y de nivel experto: evaluado en GPQA Diamond con un 90,40 % de acierto, lo que sugiere capacidad sólida en preguntas de posgrado en física, química y biología.
+- Modo "thinking" o razonamiento extendido: el autor menciona "xhigh reasoning" como configuración de muestreo, lo que implica un modo de razonamiento ampliado.
+- Decodificación especulativa MTP: integrada en el stack de servicio, con 1,71 tokens de borrador aceptados por paso en un stream.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Servicio de chat de contexto largo en GPUs Ampere de 64 GiB: el modelo permite mantener conversaciones de hasta 262.144 tokens por peticion y varias sesiones concurrentes gracias a los 906.051 tokens de KV agrupada, adecuado para asistentes documentales o analisis de contratos extensos.
-- Analisis de documentos legales: la divergencia KL de 0,0271 en el dominio legal indica que la cuantizacion preserva la distribucion del profesor en este ambito, lo que lo hace apto para resumen y extraccion de clausulas en bufetes con infraestructura on-premise.
-- Procesamiento de historiales clinicos: con KL de 0,0312 en dominio medico y contexto largo, puede emplearse para resumir informes y responder preguntas sobre historiales, siempre con supervision humana y verificacion posterior.
-- Replay de produccion y evaluacion de modelos: el autor publica pares de replay baseline/candidate en `benchmarks.json`, lo que permite reproducir la comparacion de calidad y latencia en entornos propios antes de adoptar el artefacto.
-- Despliegue en infraestructura de segunda mano: la validacion sobre NVIDIA CMP 170HX (74 SM GA100, 64 GiB HBM) demuestra que el modelo puede servirse en GPUs Ampere no estandar, util para laboratorios con presupuesto limitado que acepten configuracion no soportada oficialmente.
-- Investigacion sobre cuantizacion trellis: el artefacto sirve como referencia reproducible para estudiar el impacto de la cuantizacion 2/3/4 bits en expertos enrutados, con metricas KL por dominio y datos de memoria y latencia.
-- Evaluacion de decodificacion especulativa con MTP: los datos de throughput por stream (189,25 tok/s en un stream, 383,04 tok/s en cuatro) permiten comparar configuraciones de MTP y ajustar la profundidad del borrador en funcion del caso de uso.
+- Razonamiento científico de alta exigencia: el modelo es adecuado para responder preguntas de nivel posgrado (GPQA Diamond) con cadenas de razonamiento largas, gracias a su ventana de 262.144 tokens y a la baja penalización de cuantización medida (KL 0,090).
+- Análisis de documentos extensos: con un pool KV de 906.051 tokens en una GPU de 64 GiB, puede procesar varios documentos largos en paralelo o un único documento de cientos de miles de tokens, útil para revisión de contratos, literatura científica o expedientes.
+- Servicio de inferencia en hardware de bajo coste: la cuantización está pensada para GPUs Ampere de 64 GiB (CMP 170HX), lo que permite desplegar un modelo de ~54B parámetros en hardware de segunda mano a un coste por token muy inferior al de una H100.
+- Evaluación de cuantizaciones: el artefacto sirve como referencia metodológica para investigadores que quieran reproducir evaluaciones de fidelidad (KL teacher-forced) y de rendimiento (tok/s, step time) en modelos MoE cuantizados.
+- Generación de código de contexto largo: aunque no hay benchmarks de código en la información disponible, el autor menciona pruebas con prompts de código de ~8K tokens y 1.024 tokens generados; el modelo puede integrarse en pipelines que requieran contexto amplio.
+- Investigación sobre decodificación especulativa: la configuración MTP con vocabulario de borrador de 65.536 tokens y profundidad 3 es un caso de estudio para medir la aceptación de borradores en GPUs Ampere.
+- Despliegue en entornos con VRAM limitada pero contexto largo: la separación entre pesos en GPU (46,16 GiB) y PLE en SSD permite reservar 14,6 GiB para KV y mantener 906.051 tokens de capacidad agregada.
 
 ## Benchmarks y rendimiento
 
-Rendimiento medido en NVIDIA CMP 170HX (74 SM GA100, 64 GiB HBM), replay de produccion del 2026-11-09, 72 rondas de un stream y 36 de cuatro streams, 400 tokens generados, temperatura 1, top-k 20, top-p 0,95, MTP profundidad 3:
-
-| Ejecucion | Un stream (tok/s) | Un stream (ms/paso) | Cuatro streams (tok/s total) | Cuatro streams (ms/paso) |
-|---|---:|---:|---:|---:|
-| 1 | 189,25 | 14,413 | 383,04 | 28,280 |
-| 2 | 185,27 | 14,429 | 375,48 | 28,139 |
-
-Prefill en un stream: 3.238–3.265 tok/s.
-
-Calidad medida como divergencia KL teacher-forced contra un profesor FP32 (menor es mejor; no es exactitud en tareas):
-
-| Dominio | Referencia antes de la actualizacion de memoria | Configuracion de servicio publicada |
+| Benchmark | T3a392 | Modelo original (publicado) |
 |---|---:|---:|
-| Replay propio/privado | 0,0919 | 0,0924 |
-| Nemotron | 0,0391 | 0,0391 |
-| Multilingue | 0,0366 | 0,0365 |
-| Medico | 0,0305 | 0,0312 |
-| Legal | 0,0273 | 0,0271 |
+| GPQA Diamond (precisión) | 179/198 (90,40 %) | 91,7 % |
+| GPQA Diamond con tope de 32.768 tokens | 159/198 (80,30 %) | no publicado |
+| GPQA Diamond con tope de 98.304 tokens | 178/198 (89,90 %) | no publicado |
+| KL teacher-forced vs. profesor FP32 | 0,090 | AutoRound 3bpw: 0,168 |
+| Tokens generados por pregunta (media / mediana) | 15.224 / 8.673 | no publicado |
+| Respuestas más largas | 124.295 tokens | no publicado |
+| Respuestas con NaN o colapso | 0/198 | — |
 
-Los cambios absolutos son como maximo de 0,0007, dentro del ruido de ejecucion registrado. El autor indica que esto no demuestra ausencia de perdida frente al modelo fuente. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Métrica de servicio (CMP 170HX, 64 GiB) | Valor |
+|---|---:|
+| Pesos del modelo en GPU | 46,16 GiB |
+| Pool KV en GPU | 14,6 GiB |
+| Capacidad KV agregada | 906.051 tokens |
+| Decodificación un stream | 166,5 tok/s |
+| Tiempo de paso un stream | 16,29 ms |
+| Decodificación cuatro streams (total) | 352,6 tok/s |
+| Tiempo de paso cuatro streams | 30,64 ms |
+| Prefill un stream | 3.073 tok/s |
+| Tokens de borrador aceptados por paso (1 / 4 streams) | 1,71 / 1,70 |
+
+El autor advierte que la comparación con el 91,7 % oficial no es una medida de la penalización de cuantización, ya que la referencia oficial no publica prompt, muestreo, agregación ni presupuesto de tokens, y una sola muestra por pregunta conlleva un ruido de ±2-3 puntos. Las cifras de velocidad se midieron con el reloj SM limitado a 1400 MHz y la tarjeta no está completamente desbloqueada, por lo que no son extrapolables a otras GPUs.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 46,16 GiB de pesos cargados en GPU, mas 14,6 GiB de pool KV, grafos, workspace y overhead de runtime; el autor indica que se requiere una GPU de clase 64 GiB.
-- GPU recomendadas: NVIDIA CMP 170HX (74 SM GA100, 64 GiB HBM) es la unica configuracion validada; arquitectura de kernel Ampere SM80 (GA100), no Ada. Otras GPUs no estan verificadas.
-- Cabe en consumer GPU: no, segun la informacion disponible; requiere 64 GiB de VRAM y arquitectura Ampere SM80.
-- Almacenamiento: descarga total de aproximadamente 155 GB decimales (~144 GiB), incluido el shard PLE de ~102,4 GB decimal; se recomienda SSD local rapido con espacio libre suficiente.
-- Opciones de despliegue: vLLM con revision fijada `a5a30471ff2bb7f0824f2da10e358af98d304472`, parche PLE-SSD, cargador trellis y kernels CUDA propios. No compatible con `transformers.from_pretrained`, llama.cpp, Ollama ni TGI. El repositorio complementario (Nix/codigo) es https://github.com/sachk/qwen-flash-trellis, actualmente privado mientras se valida el empaquetado.
-- Latencia y throughput medidos: 14,4 ms/paso en un stream y 28,1–28,3 ms/paso en cuatro streams; prefill de 3.238–3.265 tok/s. Los objetivos de 250 tok/s en un stream y 500 tok/s en cuatro streams no se alcanzaron.
-- Requisitos de software: driver NVIDIA adecuado para CUDA 13 y el runtime complementario.
+- VRAM estimada para inferencia: 46,16 GiB de pesos en GPU más 14,6 GiB de pool KV, grafos, workspace y overhead de runtime; el autor indica que se requiere una GPU de clase 64 GiB.
+- GPU recomendadas: NVIDIA CMP 170HX (74 SM GA100, 64 GiB HBM) es la plataforma medida; cualquier GPU Ampere SM80 con 64 GiB o más debería ser compatible en teoría, aunque no hay mediciones publicadas en A100 80GB, H100 ni RTX 4090.
+- ¿Cabe en consumer GPU? No: 46,16 GiB de pesos exceden los 24 GiB de una RTX 4090 y los 48 GiB de una RTX A6000 queda justo por debajo del total requerido con KV. No hay datos de despliegue en GPUs de consumo.
+- Opciones de despliegue: vLLM con soporte trellis (stack usado por el autor); no se mencionan llama.cpp, Ollama ni TGI, y el formato trellis probablemente no es compatible con ellos.
+- Latencia y throughput: 166,5 tok/s en un stream (16,29 ms por paso) y 352,6 tok/s agregados en cuatro streams (30,64 ms por paso); prefill de 3.073 tok/s en un stream. El autor retiró cifras anteriores (127,35 tok/s y 316,13 tok/s) por haberse medido en una configuración inestable.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-T3a392 (este) | no disponible (MoE, 512 expertos/capa) | 262.144 tokens por peticion; 906.051 KV agrupada | Trellis 2/3/4 bits + BF16 PLE | Qwen Community 1.0 | Hugging Face, requiere runtime propio |
-| Qwen/Qwen3.8-Flash-Next-FP8 | no disponible | no disponible | FP8 | Qwen Community 1.0 | Hugging Face |
-| klee100/Qwen3.8-Flash-Next-AutoRound-3bpw-MTP | no disponible | no disponible | AutoRound 3 bpw con MTP | no disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---:|---:|---|---|---|
+| T3a392 (esta ficha) | 53,9 B | 262.144 | 2/3/4 bits trellis | qwen-community-license-1.0 | Hugging Face, 2.170 descargas |
+| Qwen3.8-Flash-Next-FP8 (base) | 53,9 B | 262.144 | FP8 | qwen-community-license-1.0 | Hugging Face (oficial Qwen) |
+| Qwen3.8-Flash-Next-AutoRound-3bpw-MTP | no disponible | 262.144 (heredado) | 3 bits AutoRound | qwen-community-license-1.0 | Hugging Face (klee100) |
 
-No se dispone de datos de rendimiento ni de contexto de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a formato, licencia y disponibilidad.
+La comparativa se limita a las variantes del mismo modelo base, ya que la información proporcionada no incluye datos de modelos competidores de otros fabricantes. Frente a la variante AutoRound 3bpw, T3a392 reduce el KL de 0,168 a 0,090 y, según el autor, iguala o supera su velocidad en el benchmark de replay emparejado. Frente al modelo FP8 original, T3a392 ocupa menos VRAM pero introduce una divergencia de distribución medible y depende de un runtime específico.
 
 ## Limitaciones y advertencias
 
-- Formato propietario: no es GPTQ, GGUF ni AWQ; no funciona con `transformers.from_pretrained`, inferencia alojada en Hugging Face, llama.cpp, Ollama ni TGI. Requiere parche PLE-SSD, cargador trellis y kernels CUDA especificos.
-- Hardware validado unico: Ampere SM80 (GA100), en concreto NVIDIA CMP 170HX; no se ha verificado en Ada ni en otras GPUs. El autor advierte que las cifras no son extrapolables.
-- Requisito real de VRAM: 46 GiB corresponde solo a pesos; el total con pool KV, grafos y overhead asciende a una GPU de clase 64 GiB. El shard PLE de ~102,4 GB decimal reside en SSD, no en GPU.
-- Descarga de ~155 GB decimales (~144 GiB): requiere almacenamiento local rapido y suficiente espacio libre.
-- Calidad medida como divergencia KL, no como exactitud en tareas ni preferencia ciega; no se demuestra ausencia de perdida frente al modelo fuente.
-- El test de estres de memoria (dos contextos de 250k tokens y ocho streams cortos, pico de 64.710 MiB) es una prueba de memoria y ciclo de vida, no de calidad en contexto largo.
-- Objetivos de rendimiento no alcanzados: 250 tok/s en un stream y 500 tok/s en cuatro streams no se consiguieron.
-- Licencia Qwen Community 1.0: no es Apache-2.0 ni MIT; los negocios de Model-as-a-Service y AI Work Assistant tienen requisitos adicionales. Es obligatorio conservar los avisos de origen.
-- La calibracion incluyo trafico privado; las conversaciones, tokens, trazas, credenciales e identificadores de sesion no se distribuyen. Una recalibracion solo con datos publicos reproduce el procedimiento, no las estadisticas exactas ni los bytes del checkpoint.
-- Riesgo de alucinacion y sesgos: no disponible en la informacion proporcionada.
-- Idiomas concretos soportados: no disponible; solo se reporta una metrica KL agregada para el dominio multilingue.
-- El repositorio complementario de runtime esta actualmente privado, lo que limita la reproducibilidad por terceros hasta su publicacion.
+- Sesgos conocidos: no disponibles en la información proporcionada; al heredar el modelo base, es previsible que arrastre los sesgos de Qwen3.8-Flash-Next, pero no hay documentación al respecto.
+- Riesgo de alucinación: no cuantificado en la model card. El modo de razonamiento extendido con hasta 124.295 tokens generados aumenta la superficie de error y el coste por consulta.
+- Limitaciones de contexto: el límite nativo por petición es de 262.144 tokens, pero el pool KV agregado (906.051 tokens) se reparte entre peticiones concurrentes; con ocho streams el contexto efectivo por petición se reduce.
+- Restricciones de licencia: qwen-community-license-1.0 es una licencia "other" que puede imponer condiciones al uso comercial; es responsabilidad del usuario revisar el archivo LICENSE del repo antes de desplegar en producción.
+- Dependencia de runtime: el formato trellis y el stack vLLM modificado no son estándar; la portabilidad a llama.cpp, Ollama o TGI no está documentada y probablemente no sea directa.
+- Estabilidad: el autor documenta que una configuración de GPU no estándar produjo pasos de logits con NaN (unas 24 por hora de decodificación larga) que se manifestaban como salidas repetitivas; en ajustes de stock no se reprodujeron en 3,5 horas. Es un riesgo a vigilar en producción.
+- Ruido de medición: los resultados de GPQA Diamond se basan en una muestra por pregunta con ±2-3 puntos de ruido; las cifras de velocidad se midieron en una tarjeta no desbloqueada y no son extrapolables.
+- El PLE en BF16 reside en SSD, lo que introduce dependencia de almacenamiento y puede afectar a la latencia en el primer uso o bajo presión de caché.
+- No hay información sobre idiomas soportados, tool calling, agentes ni capacidades multimodales, lo que limita la evaluación para esos casos de uso.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sachk0/Qwen3.8-Flash-Next-T3a392-Ampere-SM80-46GiB-GPU-Weights
-- Modelo base FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8 (commit `236dfdf285828023ca3bcd3f37366c58a3469b13`)
-- Modelo base AutoRound 3bpw MTP: https://huggingface.co/klee100/Qwen3.8-Flash-Next-AutoRound-3bpw-MTP (commit `ce0e0b94083895bd836b916f29bf105c40a8162a`)
-- Repositorio complementario de runtime (Nix/codigo, actualmente privado): https://github.com/sachk/qwen-flash-trellis
-- Revision de vLLM utilizada: `a5a30471ff2bb7f0824f2da10e358af98d304472`
-- Ficheros de referencia del artefacto: `inventory.json`, `benchmarks.json`, `LICENSE`
+- Modelo base FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
+- Modelo base AutoRound 3bpw MTP: https://huggingface.co/klee100/Qwen3.8-Flash-Next-AutoRound-3bpw-MTP
+- README oficial de Qwen3.8-Flash-Next (referencia del 91,7 % en GPQA Diamond): https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/812d96e10a0dd82b69d749e68693698cf6c36daa/README.md
+- Registro de medición GPQA Diamond: https://github.com/sachk/qwen-flash-trellis/blob/master/benchmarks/gpqa-diamond-20261118.json
+- Repositorio del proyecto trellis: https://github.com/sachk/qwen-flash-trellis
+- Paper AutoRound: https://arxiv.org/abs/2210.17323
+- Paper referenciado en los tags (trellis): https://arxiv.org/abs/2406.11235

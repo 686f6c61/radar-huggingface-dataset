@@ -2,57 +2,57 @@
 
 ## Resumen
 
-Lythri-Tada-4B es un modelo de lenguaje multimodal (image-text-to-text) desarrollado por Lythri, parte de la familia Lythri 2.0. Está construido mediante fine-tuning del modelo base google/gemma-4-E2B y está especializado en soporte emocional y conversación de compañía, con un enfoque explícito en ejecución local ("on-device") en portátiles y teléfonos. Con 4.628.569.379 parámetros totales y una arquitectura Mixture of Experts (MoE) de aproximadamente 2.300 millones de parámetros activos, Tada se posiciona como la evolución de Lythri-4B-A2B.
+Lythri-Tada-4B es un modelo de lenguaje conversacional desarrollado por Lythri, orientado específicamente a soporte emocional y uso como compañero conversacional en dispositivos locales. Forma parte de la familia Lythri 2.0 y se construye como un fine-tuning del modelo base google/gemma-4-E2B, con 4.628.569.379 parámetros totales y 2.300 millones de parámetros activos, lo que lo sitúa en la categoría de modelos MoE (mixture of experts) de tamaño medio con huella de cómputo reducida. Su propuesta diferencial es responder de forma directa, sin fase de razonamiento explícita (thinking), priorizando la naturalidad del texto y la comprensión emocional sobre el conocimiento enciclopédico.
 
-La principal novedad de esta versión es la mejora en seguimiento de instrucciones y en conversaciones multi-turno: responde de forma directa, sin fase de "thinking", manteniendo el hilo emocional entre turnos. Su puntuación en IFEval (prompt-level strict) sube de 26,43 a 39,19, superando incluso al modelo mayor de la familia, Lythri-7B-A4B (31,05), con aproximadamente la mitad de parámetros activos.
+El modelo llega con mejoras notables frente a su predecesor Lythri-4B-A2B en tres frentes: seguimiento de instrucciones (IFEval de 39,19 frente a 26,43, superando incluso al Lythri-7B-A4B con 31,05), consistencia en conversaciones multi-turno y soporte de system prompt para definir persona, tono o reglas de aplicación. En la métrica EQ-Bench Slop Score, que mide la dependencia de muletillas típicas de IA (menor es mejor), obtiene 39,0, por delante de GPT-4o (47,7), DeepSeek-R1 (67,9), Qwen3-4B (62,2) y Gemma-3-4B (85,2).
 
-Es relevante ahora porque combina un tamaño reducido y una licencia Apache 2.0 con capacidades conversacionales orientadas a un dominio sensible como el acompañamiento emocional, lo que facilita su despliegue en entornos con recursos limitados y su integración en aplicaciones de asistencia personal.
+Su relevancia actual radica en la combinación de licencia Apache 2.0, tamaño contenido para inferencia on-device y un enfoque explícito en calidad conversacional y naturalidad de escritura, un nicho poco cubierto por los modelos generalistas de su rango. El repositorio ocupa 19,4 GB en formato safetensors y acumula 2.038 descargas desde su publicación en noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con Mixture of Experts (MoE), derivada de gemma4 (google/gemma-4-E2B) |
-| Parametros totales | 4.628.569.379 (4,63B) |
-| Parametros activos | ~2,3B (según model card) |
+| Arquitectura | Transformer MoE (derivada de google/gemma-4-E2B) |
+| Parametros totales | 4.628.569.379 |
+| Parametros activos | 2.300 millones (aproximado, según model card) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (GGUF anunciado como "coming soon") |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; se recomienda bfloat16 en el quickstart) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-Lythri-Tada-4B es un fine-tuning del modelo google/gemma-4-E2B, que emplea una arquitectura Mixture of Experts con 4,63B parámetros totales y unos 2,3B activos por token. El modelo mantiene la modalidad image-text-to-text del base (según los tags del repositorio) y está optimizado para respuestas directas, sin fase de razonamiento explícito ("thinking"), lo que reduce la latencia frente a su predecesor Lythri-4B-A2B, que sí evalúa con thinking.
+Lythri-Tada-4B es un fine-tuning del modelo google/gemma-4-E2B, un transformer con arquitectura de mezcla de expertos (MoE) que activa aproximadamente 2.300 millones de parámetros de un total de 4.630 millones. La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF, DPO o similares; esta información no está disponible. El modelo se distribuye con la plantilla de chat de Gemma y admite system prompt, una novedad respecto a la generación anterior.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La model card destaca dos focos de mejora respecto a la generación anterior: el seguimiento de instrucciones (medido en IFEval) y la consistencia en conversaciones multi-turno, incluyendo el mantenimiento del hilo emocional. Como contrapartida, el conocimiento de cola larga (por ejemplo, preguntas científicas de nivel de posgrado) es ligeramente inferior al de Lythri-4B-A2B.
+La innovación principal declarada por el autor es la eliminación de la fase de razonamiento explícito: Tada responde directamente, lo que reduce la latencia y produce texto más natural. El énfasis del entrenamiento se ha puesto en la comprensión emocional y la coherencia multi-turno, a costa de un ligero deterioro en conocimiento de cola larga (GPQA Diamond baja de 28,79 a 21,21 respecto a Lythri-4B-A2B). El quickstart recomienda decodificación por muestreo con temperatura 0,8 y top_p 0,95, y los benchmarks se han evaluado con la plantilla de chat aplicada para reflejar condiciones reales de inferencia.
 
 ## Capacidades
 
-- Generación de texto conversacional orientada a soporte emocional y acompañamiento.
-- Comprensión de imagen y texto (image-text-to-text), heredada del modelo base Gemma 4 E2B.
-- Respuesta directa sin fase de thinking, con menor latencia.
-- Seguimiento de instrucciones de formato, longitud y estilo (IFEval 39,19 en prompt-level strict).
-- Conversaciones multi-turno con mantenimiento del contexto previo y del hilo emocional.
-- Razonamiento social y comprensión de situaciones interpersonales (SocialIQA 51,43).
-- Capacidades básicas de código (HumanEval 24,39) y matemáticas (GSM8K 27,45), limitadas.
+- Generación de texto conversacional con respuestas directas, sin fase de thinking.
+- Comprensión y acompañamiento emocional: el modelo está entrenado para responder a situaciones de apoyo emocional y conversación de compañía.
+- Soporte de system prompt para definir persona, tono y reglas de comportamiento.
+- Conversaciones multi-turno con seguimiento del hilo emocional y de las peticiones previas del usuario.
+- Seguimiento de instrucciones mejorado (IFEval 39,19 en prompt-level strict).
+- Razonamiento social y sentido común conversacional (SocialIQA 51,43; HellaSwag 74,23).
+- Capacidades básicas de conocimiento general (MMLU 55,41; ARC-C 56,57).
+- Capacidades limitadas de matemáticas (GSM8K 27,45) y código (HumanEval 24,39).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Capacidades de visión: la etiqueta image-text-to-text aparece en los tags de Hugging Face, pero la model card no documenta uso multimodal; no disponible como capacidad confirmada.
 
 ## Casos de uso
 
-- Aplicaciones de acompañamiento emocional en dispositivo: el modelo puede mantener conversaciones de apoyo en un portátil o teléfono gracias a sus ~2,3B parámetros activos y licencia Apache 2.0, sin depender de la nube.
-- Chatbots de bienestar y escucha activa: adecuado para conversaciones multi-turno donde el modelo debe recordar lo dicho por el usuario y responder con coherencia emocional, una de las mejoras declaradas frente a Lythri-4B-A2B.
-- Asistentes personales locales: integrable en apps de escritorio o móviles mediante transformers, con respuestas directas (sin thinking) que reducen la latencia percibida.
-- Prototipado de investigación en IA afectiva: su especialización en emoción y su tamaño contenido lo hacen útil para experimentos académicos sobre diálogo empático, con la ventaja de una licencia permisiva.
-- Atención al cliente sensible: para sectores donde el tono y la empatía importan (salud, seguros, servicios sociales), el modelo puede gestionar primeras respuestas y derivación, siempre con supervisión humana.
-- Generación de respuestas con contexto visual: al ser image-text-to-text, puede describir o comentar imágenes enviadas por el usuario en un contexto conversacional (por ejemplo, fotos compartidas en un chat de apoyo).
-- Evaluación de sistemas conversacionales: como modelo pequeño y abierto, sirve de baseline para comparar calidad de diálogo empático frente a modelos mayores.
+- Aplicaciones de acompañamiento emocional on-device: el modelo puede gestionar conversaciones de apoyo en local gracias a su tamaño contenido (2.300 millones de parámetros activos) y su entrenamiento específico en comprensión emocional, sin enviar datos sensibles a la nube.
+- Chatbots de atención al cliente con tono humano: su Slop Score de 39,0 y su capacidad de mantener el hilo multi-turno lo hacen adecuado para conversaciones de soporte donde la naturalidad del lenguaje importa más que el conocimiento técnico profundo.
+- Asistentes personales con persona configurable: el soporte de system prompt permite definir el tono, las reglas y la personalidad del asistente directamente en el mensaje de sistema, algo que su predecesor no permitía.
+- Prototipado rápido de aplicaciones conversacionales: la licencia Apache 2.0 y el formato safetensors compatible con transformers permiten integrarlo en pipelines de desarrollo sin restricciones comerciales.
+- Journaling y reflexión guiada: el modelo puede actuar como interlocutor en aplicaciones de escritura terapéutica o diarios personales, manteniendo el contexto emocional entre turnos.
+- Educación socioemocional: puede utilizarse en entornos formativos para simular conversaciones sobre gestión emocional, empatía o resolución de conflictos, con la ventaja de ejecutarse localmente.
+- Despliegue en dispositivos con recursos limitados: al activar solo 2.300 millones de parámetros, es viable en hardware de consumo, lo que habilita asistentes conversacionales en portátiles o estaciones de trabajo sin GPU de datacenter.
 
 ## Benchmarks y rendimiento
-
-Resultados publicados en la model card, evaluados con ajustes oficiales y plantilla de chat aplicada. Lythri-4B-A2B se evalúa con thinking; Lythri-Tada-4B responde directamente sin thinking.
 
 | Benchmark | Lythri-4B-A2B | Lythri-Tada-4B |
 |---|---|---|
@@ -63,48 +63,50 @@ Resultados publicados en la model card, evaluados con ajustes oficiales y planti
 | GPQA Diamond | 28,79 | 21,21 |
 | GSM8K | 28,81 | 27,45 |
 | HumanEval | 28,66 | 24,39 |
-| IFEval (prompt-level strict) | 26,43 | 39,19 |
+| IFEval | 26,43 | 39,19 |
+| EQ-Bench Slop Score (menor es mejor) | no disponible | 39,0 |
 
-La model card también menciona que Lythri-Tada-4B supera a Lythri-7B-A4B en IFEval (31,05 frente a 39,19). No se han publicado resultados de benchmarks frente a modelos de otras familias en la información disponible.
+Comparativas adicionales del Slop Score citadas en la model card: GPT-4o 47,7; DeepSeek-R1 67,9; Qwen3-4B 62,2; Gemma-3-4B 85,2. Todos los benchmarks se evaluaron con la configuración oficial y la plantilla de chat aplicada; Lythri-4B-A2B se evaluó con thinking y Lythri-Tada-4B sin thinking.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; con 4,63B parámetros totales, en bfloat16 el peso ronda los 9,3 GB, por lo que se necesitan al menos ~10-12 GB de VRAM para inferencia completa en precisión nativa (estimación a partir del recuento de parámetros, no confirmada por el autor).
-- GPU recomendadas: no especificadas por el autor; por tamaño, cabría en GPUs consumer de gama alta con suficiente VRAM (por ejemplo, RTX 4090 de 24 GB) y en GPUs de datacenter (A100, H100) sin problema.
-- Cabe en GPU consumer: previsiblemente sí en tarjetas con 12 GB o más en bfloat16; con cuantización a 8 o 4 bits podría caber en GPUs de 8 GB, aunque no hay GGUF publicado todavía ("coming soon").
-- Opciones de despliegue: transformers (soporte nativo, con `AutoModelForCausalLM` y `device_map="auto"`); vLLM, llama.cpp, Ollama y TGI no están confirmados en la información disponible. El repositorio incluye el tag `endpoints_compatible`.
-- Latencia y throughput: no disponibles. La ausencia de fase de thinking reduce la latencia frente a Lythri-4B-A2B en condiciones equivalentes, según la model card.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 9,3 GB solo para pesos (4.630 millones de parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, entre 10 y 12 GB según longitud de contexto.
+- VRAM estimada en cuantización de 8 bits: alrededor de 4,6 GB para pesos; en 4 bits, unos 2,3 GB, aunque el autor no publica versiones cuantizadas oficiales.
+- GPU recomendadas: A100, H100 o L40S para despliegue en producción con concurrencia; RTX 4090, RTX 4080 o RTX 3090 para inferencia local en bfloat16.
+- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más en bfloat16; en cuantización de 8 o 4 bits cabría en GPUs de 6-8 GB, aunque sin pesos cuantizados publicados por el autor.
+- Opciones de despliegue: transformers (soporte oficial vía AutoModelForCausalLM), y previsiblemente vLLM, TGI o llama.cpp si se generan conversiones GGUF, aunque el autor solo documenta transformers.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Modelo base | IFEval | Licencia | GGUF |
-|---|---|---|---|---|---|---|
-| Lythri-Tada-4B | 4,63B | ~2,3B | Gemma 4 E2B | 39,19 | Apache 2.0 | Anunciado |
-| Lythri-4B-A2B | 4,63B | ~2,3B | Gemma 4 E2B | 26,43 | no disponible | Sí |
-| Lythri-7B-A4B | 7,46B | 4,5B | Gemma 4 E4B | 31,05 | no disponible | Sí |
+| Modelo | Parámetros totales / activos | Contexto | IFEval | Slop Score | Licencia |
+|---|---|---|---|---|---|
+| Lythri-Tada-4B | 4,63B / 2,3B | no disponible | 39,19 | 39,0 | Apache 2.0 |
+| Lythri-4B-A2B | no disponible | no disponible | 26,43 | no disponible | no disponible |
+| Lythri-7B-A4B | no disponible | no disponible | 31,05 | no disponible | no disponible |
+| Qwen3-4B | 4B (aproximado) | no disponible | no disponible | 62,2 | no disponible |
+| Gemma-3-4B | 4B (aproximado) | no disponible | no disponible | 85,2 | no disponible |
 
-No se dispone de comparaciones con modelos de otras familias (por ejemplo, Gemma, Qwen o Llama en tamaños equivalentes) en la información proporcionada.
+La comparativa se limita a los datos publicados en la model card; no se dispone de información sobre contexto, licencia o benchmarks completos de los modelos alternativos en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Conocimiento de cola larga más débil que Lythri-4B-A2B: GPQA Diamond cae de 28,79 a 21,21 y HumanEval de 28,66 a 24,39.
-- Rendimiento limitado en matemáticas y código (GSM8K 27,45; HumanEval 24,39), no apto como modelo principal para tareas técnicas.
-- Especialización en soporte emocional: puede no ser adecuado para dominios que requieran precisión factual alta.
-- Riesgo de alucinación: no se han publicado evaluaciones específicas de factualidad ni tasas de alucinación.
-- Idiomas soportados no documentados: se desconoce el alcance multilingüe real.
-- Longitud de contexto no documentada, lo que dificulta planificar despliegues con conversaciones muy largas.
-- Uso en contextos de salud mental: un modelo de acompañamiento emocional no sustituye a un profesional; debe desplegarse con salvaguardas y derivación a servicios humanos.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base (Gemma) y las políticas de uso de Google asociadas.
-- No hay pesos GGUF disponibles todavía, lo que limita el despliegue en entornos de bajos recursos hasta su publicación.
+- Conocimiento de cola larga debilitado: GPQA Diamond cae de 28,79 a 21,21 respecto a Lythri-4B-A2B, por lo que no es adecuado para preguntas científicas de nivel avanzado.
+- Rendimiento bajo en matemáticas (GSM8K 27,45) y código (HumanEval 24,39): no recomendado para tareas técnicas o de programación.
+- Riesgo de alucinación inherente a los modelos de lenguaje; el enfoque en naturalidad conversacional no elimina este riesgo, especialmente en dominios factuales.
+- Longitud de contexto no documentada: no se puede garantizar el comportamiento en conversaciones muy largas más allá de lo indicado cualitativamente por el autor.
+- Idiomas soportados no documentados: aunque el modelo base Gemma es multilingüe, no hay confirmación de cobertura idiomática para este fine-tuning.
+- Uso en soporte emocional: el modelo no sustituye a profesionales de salud mental; debe desplegarse con salvaguardas y avisos claros en aplicaciones reales.
+- Capacidad multimodal no confirmada: la etiqueta image-text-to-text aparece en Hugging Face pero la model card no documenta uso de visión; no asumir soporte de imagen.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base google/gemma-4-E2B, cuyos términos pueden imponer restricciones adicionales.
+- No se han publicado pesos cuantizados oficiales ni datos de latencia/throughput, lo que dificulta la planificación de despliegues en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Lythri/Lythri-Tada-4B
-- Modelo base: https://huggingface.co/google/gemma-4-E2B
+- Modelo en Hugging Face: https://huggingface.co/Lythri/Lythri-Tada-4B
 - Perfil del autor en Hugging Face: https://huggingface.co/Lythri
 - Perfil en ModelScope: https://www.modelscope.cn/profile/Spike8086
 - Informe técnico (Zenodo): https://zenodo.org/records/23179312
-- DOI: 10.5281/zenodo.23179311
-- Modelo predecesor: https://huggingface.co/Lythri/Lythri-4B-A2B
-- Modelo mayor de la familia: https://huggingface.co/Lythri/Lythri-7B-A4B
-- GGUF del predecesor: https://huggingface.co/Lythri/Lythri-4B-A2B-GGUF
+- DOI de la publicación: https://doi.org/10.5281/zenodo.23179311
+- Modelo base: https://huggingface.co/google/gemma-4-E2B
+- EQ-Bench Slop Score: https://eqbench.com/slop-score.html

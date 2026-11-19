@@ -5,7 +5,7 @@
   "author": "root-sys-n",
   "url": "https://huggingface.co/root-sys-n/Mima-1-Pico-15m",
   "created_at": "2026-10-23T12:37:55.000Z",
-  "updated_at": "2026-11-18T14:24:02.000Z",
+  "updated_at": "2026-11-19T00:51:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,6 +24,8 @@
     "conversational",
     "custom_code",
     "tr",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
     "license:apache-2.0",
     "region:us"
   ],
@@ -32,8 +34,8 @@
   "trending_score": 0,
   "parameters": 15537792,
   "parameters_human": "15.5M",
-  "storage_bytes": 62155928,
-  "storage_human": "62 MB",
+  "storage_bytes": 63167950,
+  "storage_human": "63 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

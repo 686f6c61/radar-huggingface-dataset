@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "postpostmodern/aquarium-9M",
+  "slug": "postpostmodern-aquarium-9m",
+  "author": "postpostmodern",
+  "url": "https://huggingface.co/postpostmodern/aquarium-9M",
+  "created_at": "2026-11-19T10:33:58.000Z",
+  "updated_at": "2026-11-19T10:34:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "aquarium",
+    "fish",
+    "character",
+    "roleplay",
+    "tiny-llm",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8873472,
+  "parameters_human": "8.9M",
+  "storage_bytes": 44543104,
+  "storage_human": "45 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

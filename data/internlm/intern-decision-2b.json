@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 19,
-  "downloads_30d": 2004,
+  "downloads_30d": 2003,
   "trending_score": 11,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "InternLM/Intern-Decision: Fast multi-modal decision model - GitHub",
-      "url": "https://github.com/internlm/Intern-Decision",
-      "snippet": "Fast multi-modal decision model. Contribute to InternLM/Intern-Decision development by creating an account on GitHub."
-    },
-    {
-      "title": "Intern-Decision - a internlm Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/internlm/intern-decision",
-      "snippet": "internlm &#x27;s Collections Intern-Decision Atria-Dawn Intern-S2 RNGBench Intern-S1 ETCHR InternVL3.5 InternLM3 CapRL JanusCoder POLAR InternLM2.5 InternLM-XComposer2.5 OREAL InternLM2-Reward InternLM2 InternLM2-Math InternLM-XComposer2 InternLM2-WQX"
-    },
-    {
-      "title": "Intern-Decision-2B: Local VRAM and Hardware Fit",
-      "url": "https://www.madebyagents.com/models/intern-decision-2b",
-      "snippet": "InternLM&#x27;s mid-size open decision model, fine-tuned from Qwen3.5-2B with the vision tower kept frozen. It answers several typed Choice, Score and Noul questions about text and images in one forward pass and returns calibrated probabilities."
-    },
-    {
-      "title": "Intern-Decision - a Hugging Face Space by internlm",
-      "url": "https://huggingface.co/spaces/internlm/Intern-Decision",
-      "snippet": "Upload up to eight images and optionally describe the situation, then enter your questions and answer options in a simple JSON format. The tool quickly returns the probability for each option, help..."
-    },
-    {
-      "title": "Intern-Decision-2B API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/internlm/Intern-Decision-2B",
-      "snippet": "Deploy Intern-Decision-2B with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    }
-  ]
+  "sources": []
 }

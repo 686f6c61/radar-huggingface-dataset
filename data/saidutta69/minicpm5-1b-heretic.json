@@ -50,7 +50,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 2048,
+  "downloads_30d": 2076,
   "trending_score": 0,
   "parameters": 1080632832,
   "parameters_human": "1.08B",
@@ -71,31 +71,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "saidutta69/MiniCPM5-1B-heretic · Hugging Face",
-      "url": "https://huggingface.co/saidutta69/MiniCPM5-1B-heretic",
-      "snippet": "MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data. It may produce inaccurate, biased, or unsafe outputs, and generated content should be reviewed and verified before use in high-stakes settings."
-    },
-    {
-      "title": "koshuro/MiniCPM5-1B-heretic · Hugging Face",
-      "url": "https://huggingface.co/koshuro/MiniCPM5-1B-heretic",
-      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
-    },
-    {
-      "title": "MiniCPM5-1B-heretic API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/saidutta69/MiniCPM5-1B-heretic",
-      "snippet": "MiniCPM5-1B is the first checkpoint in the MiniCPM5 series. It is designed for local assistants, coding agents, tool-use workflows, and reasoning scenarios where a compact model is preferred."
-    },
-    {
-      "title": "GitHub - blackboxprogramming/minicpm: MiniCPM5-1B: A SOTA 1B on-device ...",
-      "url": "https://github.com/blackboxprogramming/minicpm",
-      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
-    },
-    {
-      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5-1B: A SOTA 1B on-device LLM, small ...",
-      "url": "https://github.com/OpenBMB/MiniCPM",
-      "snippet": "We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA. 🏆 1B-class open-source SOTA: MiniCPM5-1B reaches an average score of 42.57 across reasoning, knowledge, code, instruction-following, math, logic and agentic benchmarks, above the ..."
-    }
-  ]
+  "sources": []
 }

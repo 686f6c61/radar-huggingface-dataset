@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "mhseo2/klear8b-planfmt-sftv9ptok-s387",
+  "slug": "mhseo2-klear8b-planfmt-sftv9ptok-s387",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/klear8b-planfmt-sftv9ptok-s387",
+  "created_at": "2026-11-19T05:41:36.000Z",
+  "updated_at": "2026-11-19T05:44:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939632,
+  "storage_human": "16.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

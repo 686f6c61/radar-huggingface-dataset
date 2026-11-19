@@ -30,8 +30,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "acso/multimodal_interface_poses",
+  "renamed_at": "2026-11-19T07:10:14.740Z",
   "benchmarks": [],
   "sources": []
 }

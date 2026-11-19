@@ -2,89 +2,83 @@
 
 ## Resumen
 
-`dinov2-with-registers-base-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo utilizable en produccion: se trata de una version "slim" del checkpoint `facebook/dinov2-with-registers-base`, reducida mediante la regla generica de `sweep.py` del repositorio `transformers-mic` hasta 2 capas ocultas y con pesos aleatorios (semilla 17). Su proposito es servir como fixture de integracion para validar contratos de uso y expectativas de framework (Transformers) sin necesidad de descargar ni ejecutar el modelo real.
+`dinov2-with-registers-base-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo usable: se trata de una version "slim" del checkpoint `facebook/dinov2-with-registers-base` de Meta, reducida a 2 capas y con pesos aleatorios (semilla 17), pensada para validar contratos de integracion y expectativas de framework en pipelines de CI. La model card lo etiqueta explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
-El modelo base, DINOv2 with registers, es un extractor de caracteristicas visuales auto-supervisado desarrollado por Meta AI. La variante "with registers" introduce tokens de registro en la arquitectura ViT para mitigar artefactos de atencion en los mapas de caracteristicas. El fixture conserva la misma arquitectura (`Dinov2WithRegistersModel`), los mismos nombres de tensores y los ficheros de procesador copiados byte a byte (`preprocessor_config.json`), pero con una configuracion drasticamente reducida.
+El modelo cubre la arquitectura `Dinov2WithRegistersModel`, un transformer de vision (ViT) con tokens de registro, pero con una configuracion encogida: `num_hidden_layers` reducido a 2 y un total de 226.112 parametros segun el recuento de safetensors. Los ficheros de procesador (`preprocessor_config.json`) se copian byte a byte del checkpoint original, de modo que la interfaz de preprocesado es identica a la del modelo real.
 
-Es relevante unicamente en el contexto de testing e integracion continua: permite verificar pipelines de carga, forward pass, gradientes y compatibilidad de framework con un consumo minimo de recursos. Esta etiquetado explicitamente como `test-artifact` para excluirlo de busquedas de modelos candidatos. El dato de "226.112 parametros totales" en safetensors corresponde a esa version reducida, no al modelo real.
+Su relevancia es puramente de ingenieria: permite a los mantenedores de `transformers-mic` verificar que la integracion con Transformers funciona (nombres de tensores, dtypes, sensibilidad a entradas) sin necesidad de descargar ni ejecutar el modelo completo de DINOv2. Cualquier uso como extractor de caracteristicas de imagen en produccion seria un error, ya que los pesos son aleatorios y la profundidad esta truncada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DINOv2 with registers (Vision Transformer con tokens de registro), variante reducida a 2 capas ocultas |
-| Parametros totales | 226.112 (fixture reducido; el modelo base completo no se especifica) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; se declara finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible (modelo de vision, no de lenguaje) |
+| Arquitectura | Dinov2WithRegistersModel (ViT con tokens de registro) |
+| Parametros totales | 226.112 (segun safetensors) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de vision, sin contexto textual) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32) |
+| Idiomas soportados | no disponible (modelo de vision, sin capacidades linguisticas) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Vision Transformer (ViT) de tipo DINOv2 con tokens de registro, implementado como `Dinov2WithRegistersModel` en Transformers. El fixture replica la estructura del checkpoint original pero con `num_hidden_layers` reducido a 2 mediante la regla generica de `sweep.py`. Los ficheros de procesador (`preprocessor_config.json`) se copian byte a byte desde `facebook/dinov2-with-registers-base`, de modo que el preprocesado de entrada es identico al del modelo real.
+La arquitectura subyacente es DINOv2 with registers, un transformer de vision auto-supervisado desarrollado por Meta AI que incorpora tokens de registro para mejorar la calidad de los mapas de atencion. Sin embargo, este fixture no entrena nada: los pesos son aleatorios con semilla 17 y la configuracion se ha encogido mediante la regla generica de `sweep.py` del repositorio `transformers-mic`, fijando `num_hidden_layers` a 2. Los ficheros de procesador se copian byte a byte del checkpoint original `facebook/dinov2-with-registers-base`.
 
-Los pesos son aleatorios (semilla 17), no entrenados. El autor indica que superaron la "input-sensitivity gate": cada perturbacion de las entradas del contrato movio los logits al menos 0,001 (el caso mas debil, `pixel_values:halve`, registro 0,373), por lo que no fue necesario entrenamiento. El fixture conserva los mismos nombres de tensores que el checkpoint real y se guarda en float32, el dtype con el que carga por defecto el modelo base. Se declara finito en forward, loss y gradientes para float32, bfloat16 y float16. La clave de fixture `6c80810e54a5` agrupa todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el proceso de reduccion.
+El fixture pasa una puerta de sensibilidad a entradas: cada perturbacion de las entradas del contrato mueve los logits al menos 0,001 (la mas debil, `pixel_values:halve`, con 0,373). Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. El identificador de fixture es `6c80810e54a5` y cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras el encogimiento.
 
 ## Capacidades
 
-- No es un modelo funcional: no genera caracteristicas visuales utiles ni representaciones semanticas, ya que sus pesos son aleatorios.
-- Sirve para validar la carga del modelo (`Dinov2WithRegistersModel`) y la compatibilidad de nombres de tensores con el checkpoint real.
-- Permite verificar el pipeline de preprocesado de imagen con el `preprocessor_config.json` original.
-- Soporta forward pass, calculo de loss y retropropagacion de gradientes en float32, bfloat16 y float16.
-- Util como fixture en tests de integracion de Transformers y en validacion de contratos de framework.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues (no es un modelo de lenguaje).
-- No dispone de modo "thinking", vision generativa, audio ni ninguna capacidad generativa.
+- No es un modelo funcional: los pesos son aleatorios y la profundidad esta truncada, por lo que no produce caracteristicas utiles.
+- Sirve como fixture de integracion para validar la carga del modelo en Transformers (`Dinov2WithRegistersModel`).
+- Verifica la compatibilidad de nombres de tensores y dtypes con el checkpoint real.
+- Comprueba la sensibilidad a entradas del contrato (perturbaciones de `pixel_values`).
+- No soporta tool calling, agentes, generacion de texto, razonamiento ni capacidades multilingues.
+- No dispone de modo thinking, vision real ni audio.
 
 ## Casos de uso
 
-- Tests de integracion en CI/CD: cargar el fixture con `AutoModel` y ejecutar un forward pass para verificar que la integracion de DINOv2 with registers en Transformers no se rompe entre versiones, con un coste de descarga y computo minimo.
-- Validacion de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` se cumplen (formas de entrada/salida, dtypes, nombres de tensores) sin necesidad de descargar el checkpoint completo.
-- Pruebas de preprocesado de imagen: usar el `preprocessor_config.json` copiado byte a byte para verificar que el pipeline de imagenes produce tensores con las formas y normalizacion esperadas.
-- Verificacion de precision mixta: ejecutar forward, loss y backward en float32, bfloat16 y float16 para validar que no aparecen NaN ni infinitos en las integraciones.
-- Desarrollo de herramientas de empaquetado y serializacion: probar flujos de guardado/carga en safetensors y comparacion de hashes de ficheros con un modelo de tamano despreciable.
-- Reproduccion de fixtures: reconstruir el artefacto con `build_fixtures.py --fixture dinov2-with-registers-base-mic` y comprobar que los hashes registrados en `build.json` coinciden, como test de reproducibilidad del pipeline de fixtures.
+- Pruebas de integracion en CI: ejecutar el fixture en pipelines de integracion continua para verificar que la clase `Dinov2WithRegistersModel` carga y hace forward sin errores, sin coste de descarga del modelo completo.
+- Validacion de contratos de framework: comprobar que los ficheros de procesador copiados del checkpoint original se cargan correctamente y que las expectativas de Transformers se cumplen.
+- Verificacion de dtypes: asegurar que el modelo es finito en float32, bfloat16 y float16 en forward, loss y gradientes antes de desplegar cambios en la libreria.
+- Regresion de nombres de tensores: detectar roturas cuando se renombran parametros o se modifica el mapeo de checkpoints en Transformers.
+- Pruebas de sensibilidad a entradas: validar que perturbaciones de `pixel_values` producen cambios medibles en los logits, como control de calidad del pipeline de evaluacion.
+- Desarrollo de herramientas de fixture: servir de ejemplo reproducible para construir fixtures de otros modelos mediante `build_fixtures.py` y `sweep.py`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un fixture con pesos aleatorios, los benchmarks carecen de sentido: no mide calidad de representacion visual.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios y solo 2 capas, cualquier metrica de calidad seria irrelevante.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB incluso en float32, dado el tamano de 226.112 parametros; cabe en cualquier GPU consumer e incluso en CPU.
-- GPU recomendadas: ninguna en particular; cualquier GPU con soporte de PyTorch (por ejemplo, GTX 1060, RTX 3060, RTX 4090, A100, H100) es mas que suficiente.
-- Cabe en GPU consumer: si, en todas las gamas, y tambien en CPU.
-- Opciones de despliegue: Transformers (carga estandar con `AutoModel`), y cualquier runtime compatible con safetensors. No se documentan opciones especificas de vLLM, llama.cpp, Ollama o TGI (no aplican a un modelo de vision de este tipo).
-- Latencia y throughput: no disponibles; por el tamano del fixture, el forward pass es practicamente instantaneo.
+- VRAM estimada para inferencia: inferior a 1 GB (226.112 parametros en float32, unos 0,9 MB de pesos).
+- GPU recomendadas: cualquier GPU consumer o incluso CPU es suficiente; no requiere A100, H100 ni RTX 4090.
+- Cabe en cualquier GPU consumer y en CPU.
+- Opciones de despliegue: carga directa con Transformers (`Dinov2WithRegistersModel`); no se ha validado con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un fixture de 2 capas, la latencia es practicamente despreciable.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dinov2-with-registers-base-mic (este) | 226.112 (fixture) | no aplica | no evaluable (pesos aleatorios) | no disponible | Hugging Face, etiquetado `test-artifact` |
-| facebook/dinov2-with-registers-base | no disponible en la informacion | no aplica | no disponible en la informacion | no disponible en la informacion | Hugging Face |
-| facebook/dinov2-base | no disponible en la informacion | no aplica | no disponible en la informacion | no disponible en la informacion | Hugging Face |
-| facebook/dinov2-with-registers-large | no disponible en la informacion | no aplica | no disponible en la informacion | no disponible en la informacion | Hugging Face |
+| `dinov2-with-registers-base-mic` | 226.112 (2 capas) | no aplica | Fixture de test | no disponible | Hugging Face |
+| `facebook/dinov2-with-registers-base` | no disponible en la informacion | no aplica | Extractor de caracteristicas de imagen | no disponible | Hugging Face |
+| Otros fixtures de `huggingface-mic` | variable | no aplica | Pruebas de integracion | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios: las salidas no tienen ningun valor semantico ni utilidad practica; no debe usarse para inferencia real.
-- Etiquetado explicitamente como `test-artifact`: no debe incluirse en busquedas de modelos candidatos ni en seleccion de modelos para produccion.
-- Licencia no declarada: no se puede asumir ninguna licencia de uso comercial; consultese el repositorio del modelo base para los terminos aplicables.
-- Configuracion reducida (2 capas ocultas): no reproduce el comportamiento numerico del checkpoint real, solo la estructura y los nombres de tensores.
-- Dependencia de la version de Transformers: los contratos y expectativas pueden quedar obsoletos si cambia la implementacion de `Dinov2WithRegistersModel`.
-- No apto para tareas de vision por computador reales (clasificacion, segmentacion, retrieval) ni para generacion de texto.
-- Riesgo de confusion: el nombre incluye "base" pero el modelo no corresponde al checkpoint base completo de DINOv2 with registers.
+- No es un modelo usable: pesos aleatorios (semilla 17) y solo 2 capas; las salidas carecen de valor semantico.
+- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
+- Licencia no disponible: no se puede confirmar el regimen de uso comercial.
+- Sin capacidades linguisticas ni multimodales reales; no soporta texto, tool calling ni agentes.
+- Los ficheros de procesador son identicos al checkpoint original, pero el resto de artefactos debe regenerarse con `build_fixtures.py`.
+- El repo ocupa 0,0 GB segun Hugging Face, coherente con un fixture minimo; no contiene pesos utiles para inferencia real.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/dinov2-with-registers-base-mic
-- Modelo base: https://huggingface.co/facebook/dinov2-with-registers-base
-- Explicacion del proceso de reduccion del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/dinov2-with-registers-base-mic.html
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construccion de fixtures (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Manifiesto de contrato (`integration.json`): https://huggingface.co/huggingface-mic/dinov2-with-registers-base-mic/blob/main/integration.json
-- Uso con Transformers (`usage.md`): https://huggingface.co/huggingface-mic/dinov2-with-registers-base-mic/blob/main/integrations/transformers/usage.md
-- Procedencia del fixture (`build.json`): https://huggingface.co/huggingface-mic/dinov2-with-registers-base-mic/blob/main/build.json
+- [Hugging Face: huggingface-mic/dinov2-with-registers-base-mic](https://huggingface.co/huggingface-mic/dinov2-with-registers-base-mic)
+- [Modelo base: facebook/dinov2-with-registers-base](https://huggingface.co/facebook/dinov2-with-registers-base)
+- [Repositorio transformers-mic](https://github.com/huggingface/transformers-mic)
+- [Script build_fixtures.py](https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py)
+- [Script sweep.py](https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py)
+- [Explicacion del encogimiento del fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/dinov2-with-registers-base-mic.html)

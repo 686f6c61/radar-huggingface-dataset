@@ -18,8 +18,6 @@
     "sft",
     "llama-cpp",
     "gguf-my-repo",
-    "base_model:malikithecat/smollm2-360m-coder-v1",
-    "base_model:quantized:malikithecat/smollm2-360m-coder-v1",
     "endpoints_compatible",
     "region:us"
   ],

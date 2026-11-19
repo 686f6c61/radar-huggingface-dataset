@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "ShadeEngine/bytegpt-hnet-100M",
+  "slug": "shadeengine-bytegpt-hnet-100m",
+  "author": "ShadeEngine",
+  "url": "https://huggingface.co/ShadeEngine/bytegpt-hnet-100M",
+  "created_at": "2026-11-19T10:54:23.000Z",
+  "updated_at": "2026-11-19T10:59:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "byte-level",
+    "tokenizer-free",
+    "h-net",
+    "mamba",
+    "language-modeling",
+    "text-generation",
+    "en",
+    "dataset:ShadeEngine/fineweb-edu-bytes-10BT",
+    "arxiv:2507.07955",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99765120,
+  "parameters_human": "99.8M",
+  "storage_bytes": 399078944,
+  "storage_human": "399 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

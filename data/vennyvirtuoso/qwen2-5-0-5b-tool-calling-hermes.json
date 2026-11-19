@@ -5,7 +5,7 @@
   "author": "vennyvirtuoso",
   "url": "https://huggingface.co/vennyvirtuoso/qwen2.5-0.5b-tool-calling-hermes",
   "created_at": "2026-11-17T02:47:40.000Z",
-  "updated_at": "2026-11-17T04:41:47.000Z",
+  "updated_at": "2026-11-18T18:59:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

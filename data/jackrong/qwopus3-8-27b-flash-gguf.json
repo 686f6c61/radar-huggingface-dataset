@@ -77,31 +77,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "JeuTarot : Jeu de tarot en ligne gratuit",
-      "url": "https://www.jeutarot.com/",
-      "snippet": "Découvrez le plaisir du tarot en ligne : une expérience simple, rapide et entièrement gratuite. Pas besoin de télécharger ni de …"
-    },
-    {
-      "title": "Jeu de tarot gratuit en ligne",
-      "url": "https://www.jeu-tarot-en-ligne.com/",
-      "snippet": "Jouez ici au tarot, gratuitement, sans inscription, illimité en nombre de parties, compatible mobile : cliquez simplement sur jouer pour …"
-    },
-    {
-      "title": "Tarot en ligne gratuit | Jeu de Tarot sans inscription",
-      "url": "https://monjeux.fr/jeu/tarot/",
-      "snippet": "Jouez au Tarot en ligne gratuit sans inscription : parties 3, 4 ou 5 joueurs contre l'ordinateur, règles officielles, mobile et PC."
-    },
-    {
-      "title": "Jeu de tarot gratuit en ligne à 3, 4 ou 5 | Jeu Tarot",
-      "url": "https://jeu-tarot.app/",
-      "snippet": "1 day ago · Joue au tarot français à 3, 4 ou 5, gratuitement, sans publicité ni inscription obligatoire, en ligne ou contre l’ordinateur. …"
-    },
-    {
-      "title": "Jeu de Tarot gratuit en ligne - 3, 4 ou 5 joueurs",
-      "url": "https://jeux-multijoueurs.fr/tarot/",
-      "snippet": "Joue au Tarot gratuitement en ligne, à 3, 4 ou 5 joueurs. Solo contre l'IA ou multijoueur avec tes amis, règles FFT officielles et défi du …"
-    }
-  ]
+  "sources": []
 }

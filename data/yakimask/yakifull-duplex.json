@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Yakimask/yakifull-duplex",
+  "slug": "yakimask-yakifull-duplex",
+  "author": "Yakimask",
+  "url": "https://huggingface.co/Yakimask/yakifull-duplex",
+  "created_at": "2026-11-19T08:44:17.000Z",
+  "updated_at": "2026-11-19T08:47:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "android",
+    "speech",
+    "local-inference",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88545566,
+  "storage_human": "89 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

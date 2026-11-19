@@ -27,9 +27,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 46,
-  "downloads_30d": 2060,
-  "trending_score": 11.5,
+  "likes": 77,
+  "downloads_30d": 2444,
+  "trending_score": 12.5,
   "parameters": 31273088876,
   "parameters_human": "31.27B",
   "storage_bytes": 62585618194,
@@ -50,8 +50,14 @@
   "benchmarks": [
     {
       "task": "typed decision (choice / noul / score)",
+      "dataset": "Decision Index 0.4.1, private tests (60% same skills, 40% new domains)",
+      "metric": "Decision Index 0.4.1, Full score (leaderboard, 12 November 2026; rank #1, the highest score)",
+      "value": 73.86
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
       "dataset": "Decision Index 0.3 public suite (140,178 scored requests; the index averages 37 benchmarks)",
-      "metric": "Decision Index 0.3, public index (chance-corrected, self-reported)",
+      "metric": "Decision Index 0.3, public index (chance-corrected; own run of the official kit, same value on the leaderboard)",
       "value": 75.05
     }
   ],

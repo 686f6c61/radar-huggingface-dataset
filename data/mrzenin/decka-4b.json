@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 43,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
@@ -58,8 +58,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "mrzenin/Qwen3.8-4B-Uncensored",
+  "renamed_at": "2026-11-19T09:22:14.601Z",
   "benchmarks": [],
   "sources": [
     {

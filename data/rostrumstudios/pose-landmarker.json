@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "rostrumstudios/pose-landmarker",
+  "slug": "rostrumstudios-pose-landmarker",
+  "author": "rostrumstudios",
+  "url": "https://huggingface.co/rostrumstudios/pose-landmarker",
+  "created_at": "2026-11-19T09:15:08.000Z",
+  "updated_at": "2026-11-19T09:15:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rostrum",
+    "pose-estimation",
+    "mediapipe",
+    "keypoint-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9398198,
+  "storage_human": "9 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sweeek | Maisons du Monde",
+      "url": "https://www.maisonsdumonde.com/FR/fr/edito/sweeek?msockid=2bdfac6a2f38684b15bdb47c2eb269df",
+      "snippet": "Sweeek, votre spécialiste de l'aménagement intérieur et extérieur, vous propose une large gamme de produits tendance et …"
+    },
+    {
+      "title": "Sweeek (Ex Alice's Garden) - La Redoute",
+      "url": "https://www.laredoute.fr/brnd/sweeek.aspx?brndid=sweeek&msockid=2bdfac6a2f38684b15bdb47c2eb269df",
+      "snippet": "SWEEEK vous propose de découvrir le top de ses références sur La Redoute. Promos, ventes flash pour ne plus rater une occasion …"
+    }
+  ]
+}

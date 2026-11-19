@@ -1,0 +1,130 @@
+{
+  "schema": 2,
+  "id": "fblgit/UNA-SimpleSmaug-34b-v1beta",
+  "slug": "fblgit-una-simplesmaug-34b-v1beta",
+  "author": "fblgit",
+  "url": "https://huggingface.co/fblgit/UNA-SimpleSmaug-34b-v1beta",
+  "created_at": "2024-02-05T12:49:36.000Z",
+  "updated_at": "2026-11-19T08:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "UNA",
+    "simple-math",
+    "juanako",
+    "conversational",
+    "dataset:fblgit/simple-math",
+    "dataset:jondurbin/bagel-v0.3",
+    "arxiv:2606.07524",
+    "arxiv:2509.22888",
+    "base_model:abacusai/Smaug-34B-v0.1",
+    "base_model:finetune:abacusai/Smaug-34B-v0.1",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 9167,
+  "trending_score": 0,
+  "parameters": 34388917248,
+  "parameters_human": "34.39B",
+  "storage_bytes": 68780465167,
+  "storage_human": "68.8 GB",
+  "context_length": null,
+  "base_model": "abacusai/Smaug-34B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AI2 Reasoning Challenge (25-Shot)",
+      "metric": "normalized accuracy",
+      "value": 74.57
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (10-Shot)",
+      "metric": "normalized accuracy",
+      "value": 86.74
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-Shot)",
+      "metric": "accuracy",
+      "value": 76.68
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA (0-shot)",
+      "metric": null,
+      "value": 70.17
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Winogrande (5-shot)",
+      "metric": "accuracy",
+      "value": 83.82
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8k (5-shot)",
+      "metric": "accuracy",
+      "value": 72.48
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "strict accuracy",
+      "value": 45.56
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 32.78
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 0.15
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 8.95
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 11.96
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 39.33
+    }
+  ],
+  "sources": []
+}

@@ -2,120 +2,104 @@
 
 ## Resumen
 
-Xyntetik-Kvist-14B es un modelo de lenguaje denso de 14.443.795.072 parámetros (según los metadatos de safetensors publicados; la model card indica 14.443.781.760) desarrollado por Joakimpalm-Zen. No es una copia cuantizada de otro modelo, sino un estudiante obtenido por poda de anchura (*width pruning*) a partir del modelo padre Muse-Glimmer-30B: se conservan las 52 capas, la anchura oculta se reduce de 6.656 a 5.760, la FFN de 19.968 a 10.240, las cabezas de atención de 32 a 24 y las cabezas KV quedan en 2. El estudiante se destiló de nuevo desde el padre congelado en BF16 durante 6.000 pasos (98,3 millones de tokens, 162 horas) y después se entrenó durante 1.440 pasos adicionales sobre trayectorias agénticas escritas en el formato de cable `muse` de Xyntetik Runner.
+Xyntetik-Kvist-14B es un modelo de lenguaje de 14.443.781.760 parámetros desarrollado por Joakimpalm-Zen, publicado originalmente en formato BF16 y distribuido en este repositorio en cuantizaciones GGUF. No es una copia cuantizada de un modelo mayor, sino un modelo nuevo: se construyó recortando por anchura (width pruning) el modelo de lenguaje de Muse-Glimmer-30B, conservando las 52 capas pero reduciendo la anchura oculta de 6.656 a 5.760, la FFN de 19.968 a 10.240 y las cabezas de atención de 32 a 24 (con 2 cabezas KV), y posteriormente se destiló desde el padre BF16 congelado.
 
-Este repositorio contiene exclusivamente los pesos en GGUF (BF16, Q8_0 y Q5_0-mix); los safetensors en BF16 residen en el repositorio base. El modelo es solo texto: no hereda el codificador de visión de 1,92 mil millones de parámetros del padre, de modo que los 27,9 mil millones de parámetros del modelo de lenguaje paterno son el punto de partida real de la destilación.
+El objetivo declarado del autor es muy concreto: ejecutar bucles de agentes con tool calling sobre Xyntetik Runner desde una tarjeta gráfica de 24 GB. El entrenamiento es deliberadamente modesto: 6.000 pasos de destilación (98,3 M de tokens, 162 horas) y 1.440 pasos adicionales sobre trayectorias agénticas escritas en el formato de cable `muse` de Runner. Es un modelo solo de texto: no incorpora el codificador visual de 1,92 B de parámetros del padre.
 
-Su relevancia práctica es doble. Por un lado, es un caso poco habitual de destilación por anchura publicada con evidencia preregistrada: incluye un registro de entrenamiento, puertas de validación (*envelope gate*) definidas antes de medir y tareas de entorno ejecutables con corrección por reejecución. Por otro, apunta a un nicho concreto: agentes con *tool calling* servidos en una única GPU de 24 GB, ya que los ficheros Q8_0 (15,4 GB) y Q5_0-mix (10,3 GB) caben enteros en esa tarjeta. Conviene tener presente que sus propias métricas lo sitúan lejos de un modelo cuantizado fiel (KLD 0,762 frente al umbral interno de KLD ≤ 0,05), algo que el autor declara explícitamente y no reclama.
+La relevancia de esta ficha está en su honestidad metodológica: el autor publica un registro de entrenamiento con prerregistros, compuertas de validación y manifiestos de corpus, y advierte explícitamente de que no es un sustituto directo de Muse-Glimmer-30B ni de modelos de propósito general. Los resultados medidos (KLD 0.762 y top-1 cualificado por margen del 84,0% frente al padre BF16) sitúan al modelo lejos del estándar habitual para copias cuantizadas, algo que el propio autor reconoce y contextualiza.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (sin MoE), 52 capas; anchura oculta 5.760; FFN 10.240; 24 cabezas de atención; 2 cabezas KV |
-| Parámetros totales | 14.443.795.072 (metadatos de safetensors); la model card indica 14.443.781.760 |
-| Parámetros activos | no aplicable (modelo denso, no MoE) |
+| Arquitectura | Transformer denso (derivado por width pruning de Muse-Glimmer-30B); 52 capas, anchura oculta 5.760, FFN 10.240, 24 cabezas de atención, 2 cabezas KV |
+| Parámetros totales | 14.443.781.760 (14,4 B) |
+| Parámetros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF BF16 (28,9 GB), Q8_0 (15,4 GB) y Q5_0-mix (10,3 GB); safetensors BF16 en el repositorio base |
+| Tipos de cuantización | BF16 (28,9 GB), Q8_0 (15,4 GB), Q5_0-mix (10,3 GB), IQ4_NL-mix (7,6 GB) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (este repositorio); safetensors (repositorio base Joakimpalm-Zen/Xyntetik-Kvist-14B) |
-| Modelo base | Joakimpalm-Zen/Xyntetik-Kvist-14B (relación: quantized) |
-| Modelo padre del estudio | meta-models/Muse-Glimmer-30B |
-| Modalidad | Solo texto (el codificador de visión de 1,92 B del padre no se conserva) |
-| Tamaño del repositorio | 54,6 GB |
-| Runtime de referencia | Xyntetik Runner v0.5.7 o posterior |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (los pesos BF16 en safetensors están en el repositorio base Xyntetik-Kvist-14B) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer denso de 52 capas al que se le ha aplicado poda de anchura sobre el modelo de lenguaje del padre Muse-Glimmer-30B, seguida de destilación desde el padre congelado en BF16. El recorte afecta a tres ejes simultáneamente: dimensión oculta (6.656 → 5.760), dimensión de la FFN (19.968 → 10.240) y número de cabezas de atención (32 → 24), manteniendo 2 cabezas KV según lo declarado. El resultado son 14,44 mil millones de parámetros, aproximadamente la mitad de los 27,9 mil millones del modelo de lenguaje paterno. La destilación consumió 6.000 pasos (98,3 millones de tokens, 162 horas) contra el padre congelado; después hubo una segunda fase de 1.440 pasos sobre trayectorias agénticas redactadas en el formato de cable `muse` de Xyntetik Runner. No se menciona en la información disponible el uso de RLHF o DPO.
+La arquitectura es un transformer denso obtenido por poda de anchura del modelo de lenguaje de Muse-Glimmer-30B. Se mantienen las 52 capas del padre, pero se reduce la dimensión oculta de 6.656 a 5.760, la FFN de 19.968 a 10.240 y las cabezas de atención de 32 a 24, con 2 cabezas KV. El resultado son 14,4 B de parámetros frente a los 27,9 B del modelo de lenguaje del padre. No se traslada el codificador visual de 1,92 B de parámetros, por lo que el modelo es exclusivamente de texto.
 
-El aspecto metodológico más destacable es la evaluación preregistrada: el autor publica un registro de entrenamiento (dataset `Xyntetik-Kvist-14B-training-record`) con preregistros K1 a K3, registros de las puertas de validación y manifiestos del corpus, y ejecuta una *envelope gate* con brazos E1, E2, E3 y E5 (el brazo E4 no se detalla). Las mediciones se hicieron en modo greedy (temperatura 0) y con `repeat_penalty` a 1,0, porque una penalización por encima de 1 actúa sobre los tokens de esquema que una llamada a herramienta debe repetir. El autor también documenta una salvaguarda de bucle (`--loop-guard`) que cierra un turno de razonamiento que empieza a repetirse; en este checkpoint su efecto es acotar el turno, no mejorar la puntuación.
+El entrenamiento consta de dos fases. La primera es una destilación desde el padre BF16 congelado durante 6.000 pasos, que consumieron 98,3 M de tokens en 162 horas. La segunda añade 1.440 pasos sobre trayectorias agénticas redactadas en el formato de cable `muse` de Xyntetik Runner. El autor publica un registro de entrenamiento con prerregistros (K1 a K3), registros de compuertas de validación, manifiestos de corpus y el código utilizado, lo que permite auditar el proceso. No se documentan en la información disponible detalles sobre RLHF o DPO, ni sobre la composición exacta del corpus más allá de los manifiestos referenciados.
 
 ## Capacidades
 
-- Generación de texto conversacional y de razonamiento en varios pasos, con turnos de pensamiento de longitud variable (media declarada de 147-154 tokens de pensamiento en las tareas de la puerta).
-- Escritura del formato de cable `muse` de Xyntetik Runner: 199 de 200 primeros turnos bien formados en el conjunto de validación.
-- *Tool calling* / *function calling*: 99 de 99 llamadas a herramienta válidas (parsean y validan contra el esquema ofrecido).
-- Ejecución de tareas agénticas de extremo a extremo en el entorno ejecutable del estudio: 57 de 60 tareas resueltas con corrección por reejecución contra la verdad de referencia.
-- Capacidad de planificación multi-paso dentro de un bucle cerrado de agente, ya que la puntuación se obtiene reejecutando las acciones del modelo.
-- Soporte de salvaguarda de bucle (`--loop-guard`, por petición como `loop_guard`) para truncar turnos que se repiten.
-- No dispone de visión: el codificador de visión de 1,92 B del padre no se ha transferido.
-- Capacidades multilingües: no disponible (no se declaran idiomas ni se aportan evaluaciones por idioma).
-- No se reclaman capacidades de *tool calling* derivadas de la fase de destilación general: según el autor, los corpus de destilación no contenían documentos de *tool calling*, por lo que el reclamo está acotado al entorno y a la ruta de servicio medidas.
+- Generación de texto conversacional y de propósito general, con la calidad propia de un estudiante destilado (KLD 0.762 frente al padre en texto retenido).
+- Tool calling: el modelo emite el formato de cable `muse` de Xyntetik Runner; en la evaluación del autor, 199 de 200 primeros turnos quedaron bien formados y 99 de 99 llamadas a herramientas parsearon y validaron contra el esquema ofrecido.
+- Razonamiento agéntico de múltiples pasos: resuelve 57 de 60 tareas de entorno retenidas, puntuadas por reejecución contra la verdad de referencia (el padre resuelve 60; el estudiante antes de la fase agéntica resolvía 0).
+- Integración con Xyntetik Runner v0.5.7 o posterior, con soporte de endpoints compatible.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Sin capacidades de visión ni de audio (el codificador visual del padre no se incluye).
+- No se documentan capacidades específicas de matemáticas o generación de código más allá de lo implícito en el tool calling.
 
 ## Casos de uso
 
-- Agentes locales con *tool calling* en una estación de trabajo de 24 GB: con el fichero Q8_0 (15,4 GB) el modelo se sirve residente en GPU mediante Xyntetik Runner, lo que permite desplegar un agente que invoca herramientas contra APIs internas sin depender de servicios en la nube.
-- Automatización de tareas de operaciones con verificación por reejecución: el modelo resuelve 57 de 60 tareas del entorno ejecutable del estudio, un perfil adecuado para flujos donde la acción del agente se puede volver a ejecutar y comprobar contra el estado real del sistema.
-- Integración en pipelines de agentes que necesitan un formato de cable estricto: al generar 199 de 200 primeros turnos válidos en el formato `muse` y 99 de 99 llamadas válidas contra esquema, encaja como capa de decisión en orquestadores que exigen salidas parseables sin post-procesado agresivo.
-- Ejecución en hardware modesto o sin GPU: el fichero Q5_0-mix (10,3 GB) abre la puerta a despliegues en una sola tarjeta de 12-16 GB o incluso en CPU para cargas no interactivas.
-- *Routing* y clasificación con salida estructurada: la validación estricta contra esquema hace viable su uso para decidir qué herramienta o endpoint invocar en un sistema mayor, siempre que el esquema se ofrezca en la petición.
-- Evaluación de destilación por anchura como línea de investigación: el paquete de evidencia (preregistros, registros de puertas, manifiestos de corpus y código) permite reproducir el protocolo y comparar con otras estrategias de compresión de modelos de 30B a 14B.
-- Investigación sobre bucles de razonamiento: con las métricas publicadas de terminación (98,3%) y de intervención de la salvaguarda, sirve como banco de pruebas para estudiar cuándo un modelo agéntico entra en repetición y cómo lo mitiga el *runtime*.
+- Bucles de agentes con tool calling en producción: el modelo está entrenado específicamente para emitir el formato `muse` de Xyntetik Runner y validar llamadas contra el esquema ofrecido, lo que permite construir agentes que encadenan herramientas con una tasa de llamadas válidas medida de 99/99 en la evaluación del autor.
+- Automatización de tareas de entorno cerrado: con 57 de 60 tareas retenidas resueltas por reejecución, encaja en escenarios donde el agente debe operar sobre un entorno acotado y verificable, como gestión de ficheros, consultas a APIs internas o flujos de aprovisionamiento.
+- Despliegue en estación de trabajo con GPU de 24 GB: las cuantizaciones Q8_0 (15,4 GB), Q5_0-mix (10,3 GB) e IQ4_NL-mix (7,6 GB) caben enteras en una tarjeta de 24 GB y se ejecutan con residencia completa en GPU, lo que habilita prototipado local de agentes sin infraestructura de servidor.
+- Investigación sobre destilación y poda de anchura: el registro de entrenamiento con prerregistros, compuertas y manifiestos permite reproducir y auditar el proceso de construcción del estudiante, útil para grupos que estudian compresión de modelos.
+- Evaluación de paradigmas de validación: las compuertas E1, E2, E3 y E5 y los umbrales publicados (KLD ≤ 0.05 y top-1 ≥ 97% para copias cuantizadas, frente a la fila propia del estudiante) sirven como caso de estudio de metodología de evaluación honesta.
+- Servicio de agentes con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial sin las restricciones de otros modelos, siempre que se acepten las limitaciones de calidad documentadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. Las únicas métricas publicadas son internas al estudio del autor y se midieron en modo greedy con `repeat_penalty` a 1,0.
+| Métrica | Resultado | Referencia |
+|---|---|---|
+| KLD frente al padre BF16 (45.056 posiciones retenidas) | 0.762 | Umbral para copias cuantizadas: ≤ 0.05 (no aplicable a este modelo) |
+| Top-1 cualificado por margen frente al padre | 84,0% | Padre BF16: 79,2% |
+| Tareas agénticas de entorno cerrado resueltas | 57 de 60 | Padre: 60 de 60; estudiante antes de la fase agéntica: 0 de 60 |
+| Primeros turnos bien formados en formato `muse` | 199 de 200 | no disponible |
+| Llamadas a herramientas válidas contra esquema | 99 de 99 | no disponible |
+| Compuertas de validación prerregistradas | Todas las ramas superadas | no disponible |
 
-| Métrica | Xyntetik-Kvist-14B (GGUF) | Padre BF16 (Muse-Glimmer-30B, LM) | Estudiante antes de la fase agéntica |
-|---|---|---|---|
-| KLD en 45.056 posiciones de validación | 0,762 | referencia | no disponible |
-| Top-1 cualificado por margen | 84,0% (top-1 79,2%) | no disponible | no disponible |
-| Tareas de entorno resueltas (60) | 57 | 60 | 0 |
-| Llamadas a herramienta válidas | 99 de 99 | no disponible | no disponible |
-| Primeros turnos en formato `muse` bien formados | 199 de 200 | no disponible | no disponible |
-| Terminación de turnos | 98,3% | no disponible | no disponible |
-| Tareas resueltas con Q8_0 en CPU, greedy, binario v0.5.7 | 58 de 60 con y sin `loop-guard` (falla las mismas dos) | no aplicable | no aplicable |
-
-Notas de lectura: el umbral interno del autor para copias cuantizadas es KLD ≤ 0,05 y top-1 cualificado ≥ 97%, y el propio autor declara que ese umbral no aplica a un estudiante con 14,4 B de los 27,9 B del padre y que no lo reclama. En la tarea que se descontrola sin salvaguarda (una petición de cálculo con dos decimales) la guarda intervino 5 veces y la tarea igualmente no terminó; en un checkpoint anterior del mismo estudio (intento 8, runner 53b4deb) la misma configuración subió la puntuación de 51 a 54 sobre 60 al cerrar 3 de sus 6 desbordes. En la medición de 60 tareas con Q8_0 en CPU y el binario v0.5.7 se obtienen 58 sobre 60, un conjunto distinto del 57 sobre 60 de la puerta, por lo que ambas cifras corresponden a configuraciones de servicio diferentes.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: BF16 en torno a 29-31 GB solo para pesos, más caché KV; Q8_0 alrededor de 15,4 GB más caché KV; Q5_0-mix en torno a 10,3 GB más caché KV.
-- Caché KV (estimación propia a partir de la arquitectura declarada: 52 capas, 2 cabezas KV, dimensión de cabeza 240, FP16): aproximadamente 0,095 MiB por token, es decir, cerca de 0,8 GiB para 8.192 tokens y 3,1 GiB para 32.768 tokens. No es un dato publicado por el autor.
-- BF16 (28,9 GB): no cabe entero en una tarjeta de 24 GB. El autor lo sirvió con 38 de las 52 capas en GPU (`--gpu-layers 38`). Para residencia total hacen falta GPU de 40-80 GB (A100 40/80 GB, H100, L40S de 48 GB).
-- Q8_0 (15,4 GB): cabe entero y se ejecuta residente en GPU en tarjetas de 24 GB (RTX 3090, RTX 4090, A5000, L4 no; RTX 4080 de 16 GB solo con contexto reducido).
-- Q5_0-mix (10,3 GB): es el fichero indicado para GPU de consumo de 12-16 GB (RTX 4070 Ti Super, RTX 4080, RTX 4060 Ti de 16 GB) con contexto moderado.
-- Opciones de despliegue: el runtime de referencia es Xyntetik Runner v0.5.7 o posterior, mediante `runner -m <fichero>.gguf --serve --port 8080`, con `--gpu auto --gpu-layers <n>` para reparto parcial y `--loop-guard` para acotar turnos repetitivos. Al ser GGUF, otros *runtimes* basados en llama.cpp podrían cargarlo, pero no hay mediciones publicadas en la información disponible y el reclamo de *tool calling* está acotado a la ruta de servicio medida con Xyntetik Runner.
-- Compatibilidad verificada: los brazos de puerta E1, E2, E3 y E5 se midieron sobre runner main 0bfa2ad y las mediciones de servicio sobre 53b4deb, ac5418e y el binario de la release v0.5.7 (las dos primeras están contenidas en v0.5.7).
-- Latencia y *throughput*: no disponibles. Solo se publican tokens de pensamiento medios (154 sin guarda, 147 con guarda) y tasa de terminación (98,3%) sobre las 60 tareas de la puerta.
-- Ajuste de muestreo obligatorio para *tool calling*: mantener `repeat_penalty` a 1,0 y servir en greedy; una penalización impuesta por el cliente actúa sobre los tokens de esquema que la llamada debe repetir.
+- VRAM estimada para inferencia: BF16 requiere 28,9 GB (con offload parcial en tarjeta de 24 GB); Q8_0 requiere 15,4 GB; Q5_0-mix requiere 10,3 GB; IQ4_NL-mix requiere 7,6 GB.
+- GPU recomendadas: no se especifican modelos concretos en la información disponible; el autor indica que las cuantizaciones Q8_0, Q5_0-mix e IQ4_NL-mix caben enteras en una tarjeta de 24 GB y se ejecutan con residencia completa en GPU.
+- Compatibilidad con GPU de consumo: sí, las cuantizaciones de 15,4 GB o menos caben en tarjetas de 24 GB; no se detalla el comportamiento en tarjetas de 16 GB o menos.
+- Opciones de despliegue: Xyntetik Runner v0.5.7 o posterior (entorno de referencia del autor, con endpoints compatibles). No se documenta soporte explícito de vLLM, llama.cpp, Ollama o TGI en la información proporcionada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No hay datos en la información disponible para comparar con modelos de terceros de la misma categoría (por ejemplo, otros transformers densos de 13-15 B). La comparación posible se limita a los artefactos del propio estudio:
+| Modelo | Parámetros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Xyntetik-Kvist-14B | 14,4 B densos | no disponible | KLD 0.762 y top-1 84,0% frente a su padre; 57/60 tareas agénticas | Apache 2.0 | GGUF en Hugging Face |
+| Muse-Glimmer-30B (padre) | 27,9 B de lenguaje + 1,92 B visión | no disponible | Resuelve 60/60 tareas agénticas del estudio | no disponible | Hugging Face |
+| Gemma (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parámetros | Contexto | KLD frente al padre | Top-1 cualificado | Tareas cerradas (60) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| Xyntetik-Kvist-14B-GGUF (Q8_0) | 14,44 B densos | no disponible | 0,762 | 84,0% (top-1 79,2%) | 57 de 60 (58 de 60 en CPU con v0.5.7) | Apache-2.0 | Este repositorio |
-| Xyntetik-Kvist-14B (BF16, safetensors) | 14,44 B densos | no disponible | mismo estudiante | idem | 57 de 60 | Apache-2.0 | Repositorio base |
-| Estudiante antes de la fase agéntica | 14,44 B densos | no disponible | no disponible | no disponible | 0 de 60 | Apache-2.0 | no disponible |
-| Muse-Glimmer-30B (padre, solo el LM) | 27,9 B densos (más 1,92 B de visión no transferidos) | no disponible | referencia | no disponible | 60 de 60 | no disponible | BF16, repo `meta-models/Muse-Glimmer-30B` |
-
-Lectura: frente al padre, el estudiante pierde 3 tareas de 60 y se queda en KLD 0,762, pero pasa de 0 a 57 tareas resueltas respecto al estudiante previo a la fase agéntica, lo que sugiere que esa segunda fase de entrenamiento es la responsable del comportamiento de *tool calling*, no la destilación general.
+La información proporcionada solo permite comparar con el modelo padre y menciona a Gemma como referencia de la que el autor advierte que este modelo no es sustituto. No hay datos suficientes para establecer comparaciones cuantitativas con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Fidelidad limitada al padre: KLD 0,762 y top-1 cualificado 84,0% frente al umbral interno de KLD ≤ 0,05 y top-1 ≥ 97% que el propio autor aplica a copias cuantizadas. No es un sustituto fiel del modelo de 30B.
-- Solo texto: no conserva el codificador de visión de 1,92 B del padre, por lo que cualquier caso de uso multimodal queda fuera.
-- Idiomas: no se declaran idiomas soportados ni se aportan evaluaciones multilingües, así que el comportamiento fuera del inglés no está caracterizado.
-- Riesgo de bucle en razonamiento: el modelo puede repetirse. La salvaguarda `--loop-guard` cierra el turno, no corrige la tarea; si el modelo se repite porque no tiene la respuesta, el turno acaba con una respuesta incorrecta. Además, no detecta bucles que cruzan peticiones: en una tarea medida con un checkpoint anterior, el modelo llamó tres veces a la misma herramienta con el mismo argumento en turnos individualmente bien formados.
-- Reclamo de *tool calling* acotado: los 99 de 99 y 57 de 60 corresponden a un entorno ejecutable concreto, un formato de cable concreto (`muse`) y una ruta de servicio concreta (Xyntetik Runner). No se extrapolan a otras herramientas, esquemas o *runtimes*.
-- Riesgo de alucinación: no se aportan evaluaciones de veracidad factual ni conjuntos de *hallucination*; el modelo no incluye mecanismos declarados de abstención.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero debe verificarse la licencia del modelo padre (`meta-models/Muse-Glimmer-30B`, marcada como no disponible) antes de un despliegue comercial, ya que la licencia derivada depende de la del modelo de origen.
-- Madurez y trazabilidad del ecosistema: el repositorio registra 0 descargas y 0 me gusta en el momento de la consulta, y el modelo depende de un *runtime* propio (Xyntetik Runner) del mismo autor. Ni el padre Muse-Glimmer-30B ni el ecosistema Xyntetik/Muse-Glimmer aparecen en la búsqueda web realizada, por lo que conviene validar de forma independiente la procedencia y reproducibilidad antes de llevarlo a producción.
-- Documentación incompleta: la model card proporcionada está truncada al final, no indica la longitud de contexto ni los idiomas, no detalla el brazo E4 de la puerta y no incluye benchmarks estándar comparables con el resto del ecosistema.
-- Discrepancia menor de parámetros: 14.443.795.072 en los metadatos de safetensors frente a 14.443.781.760 en la model card (diferencia de 13.312 parámetros).
+- El propio autor advierte de que no es un sustituto directo de Muse-Glimmer-30B, Gemma ni ningún modelo de propósito general.
+- La calidad en texto retenido es la de un estudiante: KLD 0.762 frente al padre, muy por encima del umbral de 0.05 que se aplica a copias cuantizadas.
+- El resultado de tool calling (57 de 60) solo es válido para el entorno del estudio y el formato de cable `muse` en Xyntetik Runner; no se generaliza a otros formatos o entornos.
+- El modelo es solo de texto: no incluye el codificador visual del padre.
+- No se documentan sesgos conocidos, riesgos de alucinación específicos, ni limitaciones de idioma o de longitud de contexto en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el autor recomienda descargarlo para servir bucles de agentes en Runner y para leer la evidencia, no esperando la calidad del padre.
+- La validación está ligada a versiones concretas de Xyntetik Runner (v0.5.7 o posterior; mediciones sobre commits específicos), lo que introduce una dependencia del entorno de ejecución.
+- El presupuesto de entrenamiento es reducido (98,3 M de tokens de destilación más 1.440 pasos agénticos), lo que limita la generalización fuera del dominio estudiado.
 
 ## Enlaces
 
-- Página de Hugging Face del modelo: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF
-- Modelo base (safetensors BF16): https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B
-- Registro de entrenamiento y evidencia: https://huggingface.co/datasets/Joakimpalm-Zen/Xyntetik-Kvist-14B-training-record
-- Modelo padre del estudio: https://huggingface.co/meta-models/Muse-Glimmer-30B
-- Runtime de servicio (Xyntetik Runner): https://github.com/Joakimpalm-Zen/xyntetik-runner
-- Referencia arXiv etiquetada por el autor (identificador 2408.11796; título no disponible en la información proporcionada): https://arxiv.org/abs/2408.11796
-- Referencia arXiv etiquetada por el autor (identificador 2602.01997; título no disponible en la información proporcionada): https://arxiv.org/abs/2602.01997
-- Colección «Xyntetik Kvist: distilled agents»: anunciada como en creación en la model card, sin URL disponible.
-- Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre el modelo, su autor o su ecosistema; los resultados devueltos corresponden a foros sin relación con el tema.
+- Repositorio GGUF: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF
+- Modelo base BF16: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B
+- Modelo padre: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Registro de entrenamiento: https://huggingface.co/datasets/Joakimpalm-Zen/Xyntetik-Kvist-14B-training-record
+- Colección Xyntetik Kvist: https://huggingface.co/collections/Joakimpalm-Zen/xyntetik-kvist-distilled-agents-6ab9f930af19ca84df9ebf6b
+- Xyntetik Runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
+- Roster de soporte de modelos: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/model-support.md
+- Resultados de la comunidad: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/community-results.md
+- Solicitud de modelo: https://github.com/Joakimpalm-Zen/xyntetik-runner/issues/new?template=model_request.yml
+- Informe de resultados: https://github.com/Joakimpalm-Zen/xyntetik-runner/issues/new?template=result_report.yml
+- Página de soporte: https://xyntetik.com
+- Paper referenciado: arxiv:2408.11796
+- Paper referenciado: arxiv:2602.01997

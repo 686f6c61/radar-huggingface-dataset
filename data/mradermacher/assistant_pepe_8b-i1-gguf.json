@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Assistant_Pepe_8B-i1-GGUF",
+  "slug": "mradermacher-assistant_pepe_8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Assistant_Pepe_8B-i1-GGUF",
+  "created_at": "2026-01-29T17:41:56.000Z",
+  "updated_at": "2026-11-19T06:34:22.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pepe",
+    "en",
+    "dataset:SicariusSicariiStuff/UBW_Tapestries",
+    "base_model:SicariusSicariiStuff/Assistant_Pepe_8B",
+    "base_model:quantized:SicariusSicariiStuff/Assistant_Pepe_8B",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 476,
+  "trending_score": 0,
+  "parameters": 8036552768,
+  "parameters_human": "8.04B",
+  "storage_bytes": 93901447840,
+  "storage_human": "93.9 GB",
+  "context_length": 1073152,
+  "base_model": "SicariusSicariiStuff/Assistant_Pepe_8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

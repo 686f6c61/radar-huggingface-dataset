@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/AG-Pose",
   "created_at": "2026-11-05T00:38:00.000Z",
-  "updated_at": "2026-11-05T00:38:00.000Z",
+  "updated_at": "2026-11-18T22:23:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "keypoint-detection",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "pytorch",
+    "robotics",
     "android",
     "keypoint-detection",
     "arxiv:2403.19527",

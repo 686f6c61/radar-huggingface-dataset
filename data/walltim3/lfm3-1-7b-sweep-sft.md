@@ -2,49 +2,49 @@
 
 ## Resumen
 
-`Walltim3/lfm3-1.7b-sweep-sft` es un fine-tune experimental del modelo base `LiquidAI/LFM3-1.7B-Base`, desarrollado por el usuario Walltim3 (no afiliado a Liquid AI). El objetivo declarado es especializar el modelo en tareas de autocompletado de codigo y prediccion de "next-edit" al estilo de Zed, es decir, sugerir el siguiente cambio en un fichero de codigo dentro de un editor. Se distribuye bajo la LFM Open License v1.0, con los umbrales de uso comercial que dicha licencia impone.
+lfm3-1.7b-sweep-sft es un ajuste fino experimental del modelo base LiquidAI/LFM3-1.7B-Base, publicado por el usuario Walltim3 en Hugging Face. El objetivo del proyecto es especializar un modelo compacto de 1.728 millones de parametros en tareas de completado de codigo y prediccion de "next-edit" (siguiente edicion) al estilo del editor Zed, es decir, anticipar la proxima modificacion que un desarrollador realizaria sobre un fichero de codigo. El repositorio se organiza mediante etiquetas git, donde cada etiqueta corresponde a una ejecucion de entrenamiento distinta.
 
-El modelo conserva el tamano del base: 1.728.801.536 parametros totales (aproximadamente 1,7 mil millones). La model card lo etiqueta explicitamente como "work in progress" y experimental, sin garantias de calidad. Cada ejecucion de entrenamiento se publica como una etiqueta git del repositorio, de modo que el usuario debe cargar una revision concreta (`revision="<tag>"`) en lugar de la rama principal.
+El modelo parte de la arquitectura LFM3 de Liquid AI, un transformer de 1.700 millones de parametros con licencia LFM Open License v1.0. La model card indica que se trata de un trabajo en curso (work in progress) y que las variantes publicadas no ofrecen garantias de calidad. La unica variante efectivamente descrita es `code-sft`, un ajuste supervisado en formato chat sobre 36.000 soluciones del dataset KodCode-V1, mientras que las variantes `code-fim` y `sweep-sft-*` aparecen como planificadas.
 
-La relevancia actual es limitada pero concreta: se trata de un intento de adaptar un modelo pequeno a tareas de asistencia en editor (FIM y next-edit) con datos de `bigcode/commitpack` y `KodCode-V1`. La informacion disponible sobre arquitectura interna, contexto, idiomas y benchmarks es escasa o inexistente en la model card, por lo que muchos campos de esta ficha quedan como "no disponible".
+La relevancia del modelo reside en su enfoque: modelos pequenos especializados en tareas concretas de asistencia al desarrollo (FIM y next-edit) pueden desplegarse en entornos locales con requisitos de hardware modestos, algo atractivo para integraciones en IDE. No obstante, la informacion disponible es limitada: no se publican benchmarks, idiomas soportados ni detalles de la arquitectura interna mas alla de lo heredado del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (hereda la del base LiquidAI/LFM3-1.7B-Base; la model card no la describe) |
+| Arquitectura | Transformer (heredada de LiquidAI/LFM3-1.7B-Base; detalles internos no disponibles) |
 | Parametros totales | 1.728.801.536 |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
-| Idiomas soportados | no disponibles |
-| Licencia | LFM Open License v1.0 (`license: other`, `license_name: lfm-open-license-v1.0`), con umbral de uso comercial |
-| Formato de pesos | safetensors (libreria transformers, requiere `trust_remote_code=True`) |
+| Tipos de cuantizacion | safetensors y GGUF (segun tags del repositorio); niveles concretos no disponibles |
+| Idiomas soportados | no disponible |
+| Licencia | LFM Open License v1.0 (con umbral de uso comercial); la variante `code-sft` queda restringida a uso no comercial por el dataset KodCode (CC BY-NC 4.0) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura del modelo base mas alla de identificarlo como `LiquidAI/LFM3-1.7B-Base`. El fine-tune se organiza en varias ejecuciones identificadas por etiquetas git: `code-sft` (SFT en formato chat sobre 36.000 soluciones de KodCode-V1, ya superada), `code-fim` (planificada, con codigo en bruto y fill-in-the-middle en el diseno `qwen` de Zed, usando ficheros con licencias permisivas de `bigcode/commitpack`) y `sweep-sft-*` (planificadas, para next-edit en el formato de prompt `sweep` de Zed, tambien sobre commits permisivos de `bigcode/commitpack`).
+El modelo hereda la arquitectura del base LiquidAI/LFM3-1.7B-Base, un transformer de aproximadamente 1.700 millones de parametros. La model card no detalla la composicion interna (numero de capas, dimension oculta, mecanismo de atencion) ni la longitud de contexto nativa, por lo que estos datos deben consultarse en la ficha del modelo base. El repositorio incluye codigo personalizado (`custom_code`), lo que obliga a cargar el modelo con `trust_remote_code=True`.
 
-No se documentan hiperparametros, numero de tokens de entrenamiento, composicion exacta del dataset, ni si hubo RLHF/DPO. Tampoco se describen innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.). El repositorio incluye un directorio `checkpoints/` con estado de entrenamiento en curso y un tamano total de 83,0 GB, lo que sugiere la acumulacion de multiples revisiones y checkpoints intermedios.
+El entrenamiento se organiza por ejecuciones etiquetadas. La variante `code-sft` se entreno con ajuste supervisado en formato chat sobre 36.000 soluciones de KodCode-V1, un dataset con licencia CC BY-NC 4.0, lo que restringe esa variante a uso no comercial. Las variantes planificadas `code-fim` (codigo en bruto con relleno en medio, usando el diseno `qwen` de Zed) y `sweep-sft-*` (prediccion de next-edit en el formato de prompt `sweep` de Zed) se entrenarian con ficheros y commits de licencia permisiva de bigcode/commitpack. No se documentan tecnicas de RLHF, DPO ni innovaciones arquitectonicas propias.
 
 ## Capacidades
 
 - Generacion de texto y codigo en formato conversacional (variante `code-sft`).
-- Relleno de huecos en codigo (fill-in-the-middle) segun el diseno `qwen` de Zed (variante `code-fim`, planificada).
-- Prediccion de next-edit en el formato de prompt `sweep` de Zed (variantes `sweep-sft-*`, planificadas).
-- Soporte de tool calling / function calling: no disponible en la informacion.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Completado de codigo con relleno en medio (FIM) planificado en la variante `code-fim`, con el diseno de prompt `qwen` empleado por Zed.
+- Prediccion de next-edit: anticipar la siguiente modificacion sobre un fichero, en el formato `sweep` de Zed (variante planificada).
+- Carga mediante `transformers` con `AutoModelForCausalLM` y `trust_remote_code=True`.
+- Pesos disponibles en safetensors y GGUF, lo que facilita su uso en runners locales.
+- Soporte de tool calling, agentes, vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Autocompletado de codigo en editor: la variante `code-fim` esta pensada para rellenar huecos en ficheros abiertos con el diseno FIM de Zed, integrandose en el flujo de edicion como motor de sugerencias a nivel de linea o bloque.
-- Prediccion de next-edit en IDE: las variantes `sweep-sft-*` se entrenan para sugerir el siguiente cambio coherente con el contexto de un commit, lo que encaja en editores que ofrecen "siguiente edicion" (estilo Zed sweep) sobre el cursor.
-- Asistente de refactorizacion local: al ser un modelo de 1,7 B de parametros, puede desplegarse en estaciones de trabajo para proponer cambios acotados sin enviar codigo a la nube, util en entornos con requisitos de privacidad.
-- Generacion de parches en pipelines de CI: un modelo de next-edit puede preproponer parches a partir de un diff y un mensaje de commit, para revision humana antes de aplicarlos.
-- Prototipado de herramientas de completado: sirve como banco de pruebas para evaluar formatos FIM y sweep antes de invertir en modelos mayores.
-- Experimentacion academica sobre SFT de codigo: el repositorio conserva checkpoints intermedios y etiquetas por ejecucion, lo que facilita estudiar el efecto de distintas mezclas de datos (KodCode frente a commitpack) en un modelo pequeno.
+- Autocompletado en el editor Zed: la variante `code-fim` (cuando este disponible) se integraria en el flujo de FIM de Zed usando el diseno de prompt `qwen`, aprovechando el tamano reducido del modelo para inferencia local.
+- Prediccion de next-edit en IDE: la variante `sweep-sft-*` se usaria para sugerir la proxima edicion sobre un fichero abierto, integrándose en el mecanismo `sweep` de Zed.
+- Asistente de codigo conversacional: la variante `code-sft` puede emplearse para responder preguntas sobre fragmentos de codigo o proponer soluciones, siempre en contextos no comerciales por la licencia del dataset.
+- Prototipado de herramientas de revision de codigo: el modelo puede servir como base para experimentar con sugerencias de parches en pipelines internos de investigacion.
+- Despliegue en estaciones de trabajo con GPU de consumo: al tener 1.700 millones de parametros y pesos GGUF, es viable ejecutarlo en hardware modesto para pruebas de latencia y calidad.
+- Investigacion sobre ajuste fino de modelos pequenos: el repositorio documenta ejecuciones por etiquetas git, lo que permite reproducir y comparar variantes de entrenamiento.
+- Evaluacion de licencias en pipelines de codigo: util para estudiar el impacto de datasets con licencia no comercial (KodCode) frente a alternativas permisivas (commitpack) en modelos de asistencia al desarrollo.
 
 ## Benchmarks y rendimiento
 
@@ -52,38 +52,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 1,73 mil millones de parametros, en FP16 se requieren aproximadamente 3,5 GB solo para pesos; en BF16, similar. En cuantizacion de 8 bits, alrededor de 1,8 GB; en 4 bits, alrededor de 1,0-1,2 GB. Estas cifras son estimaciones por tamano y no estan confirmadas en la model card.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16 con margen para el contexto; A100/H100 no son necesarias por tamano, pero pueden usarse para mayor throughput.
-- Cabe en GPU de consumo: si, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y superiores en FP16; en cuantizacion 4 bits, en GPUs de 4-6 GB.
-- Opciones de despliegue: transformers con `trust_remote_code=True` (unica via documentada). vLLM, llama.cpp, Ollama o TGI no estan confirmados para este fine-tune, y la ausencia de pesos GGUF en el repo limita el uso directo en llama.cpp/Ollama sin conversion previa.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 1.728 millones de parametros, una estimacion orientativa en FP16 ronda los 3,5 GB de pesos, y en cuantizaciones de 4 bits aproximadamente 1 GB, sin contar overhead de contexto y runtime.
+- GPU recomendadas: no especificadas por el autor; por tamano, el modelo es compatible con GPU de consumo tipo RTX 3060/4060 en adelante.
+- Cabe en GPU de consumo: si, por el numero de parametros, aunque no hay confirmacion oficial.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True`; los pesos GGUF permiten su uso con runners compatibles con llama.cpp, si bien no se documenta soporte explicito de vLLM, TGI u Ollama.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Walltim3/lfm3-1.7b-sweep-sft | 1,73 B | no disponible | FIM y next-edit sobre LFM3-1.7B-Base | LFM Open License v1.0 (umbral comercial) | Hugging Face, experimental |
-| LiquidAI/LFM3-1.7B-Base | 1,73 B | no disponible | Modelo base generalista | LFM Open License v1.0 | Hugging Face |
-| Modelos FIM de codigo de ~1-2 B (p. ej. variantes Qwen-Coder pequenas) | ~1-2 B | variable | FIM y completado | variable (Apache 2.0 en algunos) | Hugging Face |
-| Modelos next-edit especializados (p. ej. Zeta de Zed) | no disponible | no disponible | Next-edit | no disponible | no disponible |
-
-La comparativa con alternativas concretas no puede completarse con datos verificados en la informacion proporcionada; los modelos citados como referencia de categoria no se detallan aqui con cifras porque no estan en la fuente.
+| Walltim3/lfm3-1.7b-sweep-sft | 1.728 M | no disponible | FIM y next-edit (experimental) | LFM Open License v1.0; variante `code-sft` no comercial | Hugging Face, safetensors y GGUF |
+| LiquidAI/LFM3-1.7B-Base | ~1.700 M | no disponible | Modelo base generalista | LFM Open License v1.0 | Hugging Face |
+| Alternativas especializadas en FIM de tamano similar | no disponible | no disponible | Completado de codigo | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Modelo experimental y "work in progress": el autor no garantiza calidad ni idoneidad para ningun proposito.
-- La variante `code-sft` se entreno sobre KodCode-V1, que es CC BY-NC 4.0, por lo que esa revision concreta queda restringida a uso no comercial.
-- La licencia LFM Open License v1.0 incluye un umbral de uso comercial que debe revisarse antes de desplegar en produccion.
-- No hay informacion sobre sesgos, idiomas soportados ni riesgo de alucinacion especifico; al ser un modelo pequeno especializado en codigo, es esperable que falle en tareas generales fuera de dominio, aunque esto no esta documentado.
-- El repositorio pesa 83,0 GB por la acumulacion de checkpoints y revisiones; conviene descargar solo la revision necesaria.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio; debe auditarse antes de usarlo en entornos sensibles.
-- No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de mejora frente al modelo base.
+- La variante `code-sft` se entreno con KodCode-V1 (CC BY-NC 4.0), por lo que su uso queda restringido a fines no comerciales.
+- Las variantes `code-fim` y `sweep-sft-*` figuran como planificadas; pueden no estar disponibles o estar incompletas.
+- No se publican benchmarks, por lo que no hay evidencia cuantitativa de rendimiento.
+- No se documentan idiomas soportados ni longitud de contexto; ambos dependen del modelo base.
+- Riesgo de alucinacion y sesgos: no evaluado en la informacion disponible.
+- El repositorio ocupa 681,2 GB, lo que incluye estados de entrenamiento en `checkpoints/`; la descarga completa es costosa y conviene seleccionar la revision concreta.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio; conviene revisarlo antes de usarlo en produccion.
 - No esta afiliado ni respaldado por Liquid AI.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Walltim3/lfm3-1.7b-sweep-sft
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
-- Licencia (referenciada en el repo): LICENSE dentro del repositorio de Hugging Face
-- Dataset KodCode-V1 (usado en `code-sft`): no disponible enlace directo en la informacion
-- Dataset bigcode/commitpack (usado en variantes planificadas): no disponible enlace directo en la informacion
+- Licencia LFM Open License v1.0: incluida en el repositorio (`LICENSE`)
+- Dataset KodCode-V1 (referenciado en la model card): no disponible como enlace directo en la informacion proporcionada
+- Dataset bigcode/commitpack (referenciado): no disponible como enlace directo en la informacion proporcionada

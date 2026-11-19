@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "PimoZbx/informed-pocket-tts-nl",
+  "slug": "pimozbx-informed-pocket-tts-nl",
+  "author": "PimoZbx",
+  "url": "https://huggingface.co/PimoZbx/informed-pocket-tts-nl",
+  "created_at": "2026-11-19T09:43:33.000Z",
+  "updated_at": "2026-11-19T09:43:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "nl",
+    "base_model:kyutai/pocket-tts-without-voice-cloning",
+    "base_model:quantized:kyutai/pocket-tts-without-voice-cloning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155418559,
+  "storage_human": "155 MB",
+  "context_length": null,
+  "base_model": "kyutai/pocket-tts-without-voice-cloning",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

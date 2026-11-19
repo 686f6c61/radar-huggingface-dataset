@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "xgirls/HiDream-O1-Image-ov-int8",
+  "slug": "xgirls-hidream-o1-image-ov-int8",
+  "author": "xgirls",
+  "url": "https://huggingface.co/xgirls/HiDream-O1-Image-ov-int8",
+  "created_at": "2026-10-16T05:31:11.000Z",
+  "updated_at": "2026-11-19T07:39:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "qwen3_vl",
+    "hidream-o1",
+    "openvino",
+    "int8",
+    "image-generation",
+    "fern",
+    "text-to-image",
+    "en",
+    "base_model:HiDream-ai/HiDream-O1-Image",
+    "base_model:finetune:HiDream-ai/HiDream-O1-Image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10949652038,
+  "storage_human": "10.9 GB",
+  "context_length": null,
+  "base_model": "HiDream-ai/HiDream-O1-Image",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

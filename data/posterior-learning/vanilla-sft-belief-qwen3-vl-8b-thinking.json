@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "richmondsin/vanilla-sft-belief-qwen3-vl-8b-thinking",
+  "renamed_at": "2026-11-19T09:55:37.235Z",
   "benchmarks": [],
   "sources": []
 }

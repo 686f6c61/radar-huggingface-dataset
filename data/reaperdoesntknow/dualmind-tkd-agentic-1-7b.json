@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B",
   "created_at": "2026-07-12T08:47:10.000Z",
-  "updated_at": "2026-11-17T14:15:32.000Z",
+  "updated_at": "2026-11-18T14:15:32.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 2074,
+  "downloads_30d": 2098,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "reaperdoesntknow/DualMind-TKD-Agentic-1.7B · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B",
-      "snippet": "Instructions to use reaperdoesntknow/DualMind-TKD-Agentic-1.7B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF",
-      "snippet": "Instructions to use reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "DualMind-TKD-Agentic-1.7B API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/reaperdoesntknow/DualMind-TKD-Agentic-1.7B",
-      "snippet": "Deploy DualMind-TKD-Agentic-1.7B with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    },
-    {
-      "title": "DualMind TKD Agentic 1.7B by reaperdoesntknow",
-      "url": "https://llm-explorer.com/model/reaperdoesntknow%2FDualMind-TKD-Agentic-1.7B,60uiu1cSuPHByFDHBqFewz",
-      "snippet": "DualMind TKD Agentic 1.7B is an open-source 1.7b LLM by reaperdoesntknow. VRAM 3.4GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
-    },
-    {
-      "title": "GitHub - EonHao/DualMind",
-      "url": "https://github.com/EonHao/DualMind",
-      "snippet": "🖼️ System Overview DualMind is an LLM-driven multi-agent simulation platform that models the interplay between rapidly fluctuating emotions and the slower evolution of cognitive states. Figure 1: The DualMind Interactive Interface (Strategy Rehearsal Sandbox)."
-    }
-  ]
+  "sources": []
 }

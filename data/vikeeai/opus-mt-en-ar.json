@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "vikeeai/opus-mt-en-ar",
+  "slug": "vikeeai-opus-mt-en-ar",
+  "author": "vikeeai",
+  "url": "https://huggingface.co/vikeeai/opus-mt-en-ar",
+  "created_at": "2026-11-19T08:28:09.000Z",
+  "updated_at": "2026-11-19T08:28:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "base_model:Helsinki-NLP/opus-mt-en-ar",
+    "base_model:quantized:Helsinki-NLP/opus-mt-en-ar",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 464412385,
+  "storage_human": "464 MB",
+  "context_length": null,
+  "base_model": "Helsinki-NLP/opus-mt-en-ar",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/helsinki-nlp-opus-mt-en-ar",
+      "snippet": "helsinki-nlp-opus-mt-en-ar · Version: 11 · Hugging Face•Last updated May 2025 · OverviewBenchmarksBenchmarks · Helsinki-NLP/opus-mt-en-ar powered by Hugging Face Inference Toolkit · Original Model Card · translation Task on Hugging Face · You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    }
+  ]
+}

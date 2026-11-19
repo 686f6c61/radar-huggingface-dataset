@@ -22,8 +22,8 @@
     "automatic-speech-recognition",
     "tg",
     "dataset:Peacockery/tajik-asr-corpus-v3",
-    "base_model:alphacep/vosk-model-tg",
-    "base_model:quantized:alphacep/vosk-model-tg",
+    "base_model:alphacep/vosk-model-tajik",
+    "base_model:quantized:alphacep/vosk-model-tajik",
     "license:apache-2.0",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "cortex-ai-nova",
   "url": "https://huggingface.co/cortex-ai-nova/NOVA-Judex-4.8-Omni-ft",
   "created_at": "2026-10-31T15:32:48.000Z",
-  "updated_at": "2026-10-31T16:14:11.000Z",
+  "updated_at": "2026-11-18T11:57:19.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -23,8 +23,6 @@
     "fine-tuned",
     "conversational",
     "custom_code",
-    "base_model:LiquidAI/LFM3-Omni-2B",
-    "base_model:quantized:LiquidAI/LFM3-Omni-2B",
     "license:other",
     "endpoints_compatible",
     "region:us"
@@ -48,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "cortex-ai-nova/NOVA-Spark-4-Omni",
+  "renamed_at": "2026-11-19T06:25:25.142Z",
   "benchmarks": [],
   "sources": []
 }

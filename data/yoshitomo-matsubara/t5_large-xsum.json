@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "id": "yoshitomo-matsubara/t5_large-xsum",
+  "slug": "yoshitomo-matsubara-t5_large-xsum",
+  "author": "yoshitomo-matsubara",
+  "url": "https://huggingface.co/yoshitomo-matsubara/t5_large-xsum",
+  "created_at": "2026-11-19T05:39:05.000Z",
+  "updated_at": "2026-11-19T05:42:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "torchdistill",
+    "xsum",
+    "summarization",
+    "knowledge-distillation",
+    "en",
+    "dataset:EdinburghNLP/xsum",
+    "arxiv:2306.13649",
+    "base_model:google/t5-large-lm-adapt",
+    "base_model:finetune:google/t5-large-lm-adapt",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 3132668808,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": "google/t5-large-lm-adapt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Abstractive summarization",
+      "dataset": "XSum (test split)",
+      "metric": "ROUGE-1",
+      "value": 43.72
+    },
+    {
+      "task": "Abstractive summarization",
+      "dataset": "XSum (test split)",
+      "metric": "ROUGE-2",
+      "value": 20.44
+    },
+    {
+      "task": "Abstractive summarization",
+      "dataset": "XSum (test split)",
+      "metric": "ROUGE-L",
+      "value": 35.58
+    },
+    {
+      "task": "Abstractive summarization",
+      "dataset": "XSum (validation split)",
+      "metric": "ROUGE-1",
+      "value": 43.76
+    },
+    {
+      "task": "Abstractive summarization",
+      "dataset": "XSum (validation split)",
+      "metric": "ROUGE-2",
+      "value": 20.62
+    },
+    {
+      "task": "Abstractive summarization",
+      "dataset": "XSum (validation split)",
+      "metric": "ROUGE-L",
+      "value": 35.8
+    }
+  ],
+  "sources": []
+}

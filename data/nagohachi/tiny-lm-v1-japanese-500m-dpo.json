@@ -5,7 +5,7 @@
   "author": "nagohachi",
   "url": "https://huggingface.co/nagohachi/tiny-lm-v1-japanese-500m-dpo",
   "created_at": "2026-07-22T15:16:46.000Z",
-  "updated_at": "2026-11-15T09:06:57.000Z",
+  "updated_at": "2026-11-18T02:11:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 62,
+  "downloads_30d": 239,
   "trending_score": 0,
   "parameters": 479501312,
   "parameters_human": "479.5M",

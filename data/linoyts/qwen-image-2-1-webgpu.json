@@ -5,7 +5,7 @@
   "author": "linoyts",
   "url": "https://huggingface.co/linoyts/Qwen-Image-2.1-WebGPU",
   "created_at": "2026-11-18T11:41:39.000Z",
-  "updated_at": "2026-11-18T11:42:19.000Z",
+  "updated_at": "2026-11-18T16:21:27.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -14,7 +14,6 @@
   "tags": [
     "onnx",
     "webgpu",
-    "diffusers.js",
     "int4",
     "few-step",
     "text-to-image",
@@ -28,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7895100979,
-  "storage_human": "7.9 GB",
+  "storage_bytes": 9063497229,
+  "storage_human": "9.1 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1, linoyts/Qwen-Image-2.1-DMD2-2steps",
   "formats": [
@@ -41,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "linoyts/Qwen-Image-2.1-int4-ONNX",
+  "renamed_at": "2026-11-19T08:12:43.571Z",
   "benchmarks": [],
   "sources": []
 }

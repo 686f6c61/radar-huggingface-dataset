@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Sijo2.0-1.7B-GGUF",
   "created_at": "2026-11-18T01:04:53.000Z",
-  "updated_at": "2026-11-18T01:31:47.000Z",
+  "updated_at": "2026-11-18T10:54:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 265,
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",

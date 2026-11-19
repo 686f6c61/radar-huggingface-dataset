@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen3.6-35B-A3B-Westernized-i1-GGUF",
+  "slug": "mradermacher-qwen3-6-35b-a3b-westernized-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Westernized-i1-GGUF",
+  "created_at": "2026-11-19T07:02:02.000Z",
+  "updated_at": "2026-11-19T07:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 13631526560,
+  "storage_human": "13.6 GB",
+  "context_length": 262144,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

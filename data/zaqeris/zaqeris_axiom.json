@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 2078,
+  "downloads_30d": 2098,
   "trending_score": 0,
   "parameters": 30259936764,
   "parameters_human": "30.26B",
@@ -59,19 +59,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Code Generation",
-      "dataset": "HumanEval (Python Structural Evaluation)",
-      "metric": "Pass Rate",
-      "value": 97.14
-    },
-    {
-      "task": "Instruction Following",
-      "dataset": "IFEval (Strict Constraint Adherence)",
-      "metric": "Strict Accuracy",
-      "value": 82.5
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

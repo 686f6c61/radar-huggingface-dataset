@@ -2,86 +2,96 @@
 
 ## Resumen
 
-OxCoder-9B-i1-MTP-GGUF es una cuantización en formato GGUF publicada por el usuario nerun en Hugging Face. El nombre del repositorio indica que se trata de una conversión a GGUF de un modelo de la familia OxCoder con aproximadamente 9.000 millones de parámetros, en su variante "i1" (previsiblemente una destilación o ajuste de razonamiento) y con soporte "MTP" (multi-token prediction, predicción multi-token). El modelo base original no se identifica en la información disponible, por lo que no es posible confirmar su arquitectura exacta ni su procedencia.
+OxCoder-9B-i1-MTP-GGUF es un repositorio de cuantizaciones GGUF publicadas por el usuario nerun sobre el modelo de código OxCoder-9B, originalmente desarrollado por OrionLLM y derivado de Qwen3.5-9B. La particularidad de esta publicación no es el modelo base, sino la incorporación de un bloque MTP (Multi-Token Prediction) embebido que permite decodificación especulativa en llama.cpp mediante el flag `--spec-type draft-mtp`, sin necesidad de cargar un modelo draft separado.
 
-La relevancia de esta ficha es limitada por la escasez de metadatos: el repositorio no incluye pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. La model card únicamente declara la licencia Apache 2.0, sin aportar detalles sobre entrenamiento, contexto, cuantizaciones incluidas o rendimiento.
+El bloque MTP no fue entrenado sobre OxCoder-9B, sino transplantado tensor a tensor desde una extracción MTP-only de Qwen3.5-9B publicada por a4lg. Según el autor, la tasa de aceptación del draft se sitúa en torno a 0,6-0,7 en sus pruebas, lo que aporta aceleración real pese a no ser un cabezal específico del modelo. Al compartir `token_embd` y `output` con el modelo principal, el incremento de tamaño es de solo unos 0,2 GiB por fichero.
 
-Se trata, por tanto, de un artefacto de distribución (pesos cuantizados) más que de un modelo con documentación técnica propia. Cualquier evaluación rigurosa requeriría consultar el repositorio del modelo base original, que no se cita en la información proporcionada.
+El repositorio cubre un espectro amplio de cuantizaciones, desde IQ1_S (2,7 GiB) hasta Q6_K (7,1 GiB), e incluye los proyectores de visión (mmproj) tomados de mradermacher/OxCoder-9B-GGUF, entrenados para este modelo. La licencia es Apache 2.0 y el interés actual reside en combinar un modelo de código de 9B con decodificación especulativa integrada en un único fichero, lo que simplifica el despliegue en entornos con VRAM limitada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere transformer con multi-token prediction, sin confirmar) |
-| Parámetros totales | ~9B (inferido del nombre del repositorio, no confirmado) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (formato GGUF; niveles concretos no especificados) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso basado en Qwen3.5, con bloque MTP adicional (capa 32, atención completa) |
+| Parametros totales | 456.010.480 (dato de safetensors del repo; la designación comercial es 9B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada (el ejemplo de uso fija `-fitc 32768`) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (bloque MTP en Q4_K_M, Q5_K_M o Q6_K según fichero) |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (con proyectores mmproj para visión) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la documentación disponible. El sufijo "MTP" del nombre del repositorio sugiere la presencia de multi-token prediction, una técnica por la que el modelo predice varios tokens por paso de decodificación, lo que puede acelerar la inferencia y, en algunos diseños, actuar como objetivo auxiliar de entrenamiento. El sufijo "i1" es habitual en destilaciones de razonamiento de la comunidad, pero no hay confirmación de ello en la información proporcionada.
+El modelo principal es OxCoder-9B, un modelo de código basado en Qwen3.5-9B según los tags del repositorio. La arquitectura es un transformer denso con atención recurrente en algunas capas (la clave `qwen35.attention.recurrent_layers` aparece en el proceso de conversión, lo que indica un esquema híbrido de atención completa y recurrente). Sobre esa base se añade un bloque MTP en la posición 32, que es una capa de atención completa con `attn_q/k/v/output` y sin tensores `ssm_*`.
 
-Tampoco se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del corpus, la existencia de fases de RLHF o DPO, ni sobre innovaciones técnicas adicionales. El repositorio es una conversión a GGUF, de modo que el entrenamiento corresponde al modelo base original, no documentado aquí.
+El bloque MTP no procede de entrenamiento sobre OxCoder-9B: fue copiado tensor a tensor desde a4lg/Qwen3.5-9B-MTP-ONLY-GGUF, una extracción del Qwen3.5-9B original. El autor documenta que el script `convert.py` de buzz fallaba para la arquitectura `qwen35` porque incrementaba `block_count` de 32 a 33 sin extender los arrays por capa, provocando el error `key qwen35.attention.recurrent_layers has wrong array length; expected 33, got 32`. La corrección consistió en extender dichos arrays añadiendo `False` para el bloque MTP. No se dispone de información sobre el dataset de entrenamiento de OxCoder-9B ni sobre si hubo RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto: capacidad esperable en un modelo de ~9B, sin confirmación documental.
-- Razonamiento: el sufijo "i1" sugiere un ajuste orientado a razonamiento, no verificado.
-- Generación de código: el nombre "Coder" indica especialización en código, no confirmada por la documentación.
-- Predicción multi-token (MTP): sugerida por el nombre, sin detalles de implementación.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generación de código: el modelo está etiquetado como `code` y deriva de un modelo específicamente orientado a programación.
+- Razonamiento: incluye la etiqueta `reasoning`, lo que sugiere soporte de cadena de pensamiento.
+- Uso de herramientas: etiquetado como `tool-use`, con soporte de function calling.
+- Flujos agénticos: etiquetado como `agentic`, orientado a tareas multi-paso.
+- Visión: incluye proyectores mmproj entrenados para este modelo, por lo que admite entrada de imágenes.
+- Conversación multi-turno: etiquetado como `conversational`.
+- Decodificación especulativa integrada: el bloque MTP permite acelerar la generación en llama.cpp sin modelo draft externo.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo: al distribuirse en GGUF, el modelo puede ejecutarse con llama.cpp u Ollama en equipos sin GPU dedicada de gran capacidad, siempre que se seleccione una cuantización adecuada a la VRAM o RAM disponible.
-- Asistencia de código en el editor: un modelo de ~9B especializado en código puede integrarse mediante servidores compatibles con la API de OpenAI para autocompletado y explicación de fragmentos, sujeto a validación empírica de su calidad real.
-- Prototipado de pipelines de razonamiento: la variante "i1" podría emplearse para experimentar con cadenas de razonamiento en entornos de investigación, comparando su comportamiento frente al modelo base.
-- Despliegue en CPU con llama.cpp: el formato GGUF permite servir el modelo en servidores sin GPU, útil para entornos de desarrollo y pruebas de integración.
-- Evaluación comparativa de cuantizaciones: al ser un artefacto GGUF, sirve para medir la pérdida de calidad entre niveles de cuantización frente al modelo original en tareas de código.
-- Experimentación con decodificación multi-token: si la implementación MTP es funcional en el runtime elegido, permite estudiar ganancias de throughput en generación de código.
-- Base para ajuste fino con LoRA: un modelo de ~9B en licencia Apache 2.0 es un punto de partida razonable para adaptaciones de dominio, siempre que se verifique la licencia del modelo base original.
+- Asistencia de código en IDE con VRAM limitada: las cuantizaciones IQ3/IQ4 (4-6 GiB) caben en GPUs de consumo de 8 GB, permitiendo autocompletado y generación de código local con decodificación especulativa activa.
+- Agentes de refactorización multi-paso: la etiqueta `agentic` y el soporte de tool calling permiten encadenar lecturas de repositorio, ediciones y ejecución de tests dentro de un bucle controlado.
+- Revisión de código con contexto visual: los proyectores mmproj permiten adjuntar capturas de pantalla de errores o diagramas junto al código para obtener explicaciones contextualizadas.
+- Despliegue en portátiles y estaciones de trabajo sin GPU dedicada: las cuantizaciones IQ2 (3-4 GiB) permiten ejecución en CPU con llama.cpp manteniendo el bloque MTP para mitigar la baja velocidad de generación.
+- Servidor de inferencia de baja concurrencia: con `-np 1` y KV cache en q8_0, el modelo sirve como backend de un asistente de código interno con latencia aceptable en una sola GPU.
+- Generación de tests unitarios y documentación técnica: el modelo puede producir código y texto explicativo a partir de fragmentos de fuente, aprovechando su naturaleza conversacional.
+- Prototipado de pipelines de decodificación especulativa: sirve como banco de pruebas para evaluar `--spec-type draft-mtp` en llama.cpp con distintas cuantizaciones del bloque MTP (Q4_K_M, Q5_K_M, Q6_K).
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la información disponible.
 
+El autor sí reporta métricas operativas cualitativas: tasa de aceptación del draft MTP de aproximadamente 0,6-0,7; `--spec-draft-n-max 2` resultó consistentemente algo mejor que 3, y valores de 1 o 4 o superiores fueron más lentos. Con `-ub 1024` o `-ub 2048` en 8 GB de VRAM, la generación con MTP cayó a ~22 t/s, atribuido a un mayor búfer de cómputo que deja menos VRAM para las capas del modelo bajo `-fit on`.
+
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión al no confirmarse el número exacto de parámetros ni las cuantizaciones incluidas. Como referencia orientativa para un modelo de ~9B en GGUF: Q4_K_M requiere del orden de 5-6 GB, Q5_K_M en torno a 6-7 GB y Q8_0 alrededor de 9-10 GB, sin contar la caché KV.
-- GPU recomendadas: no disponible. Para un modelo de este tamaño, una RTX 3060 de 12 GB o superior permitiría cuantizaciones de 4 a 8 bits; A100 o H100 no serían necesarias salvo para servir muchas peticiones concurrentes.
-- Viabilidad en GPU de consumo: probable en tarjetas con 8 GB o más para cuantizaciones de 4 bits, condicionado a la longitud de contexto efectiva.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. vLLM y TGI no son opciones habituales para GGUF.
-- Latencia y throughput: no disponible.
+- VRAM estimada según cuantización: desde ~2,9 GB (IQ1_S) hasta ~7,6 GB (Q6_K); el bloque MTP añade ~0,2 GiB.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una RTX 4090 (24 GB) permite ejecutar Q6_K con contexto amplio y KV cache en q8_0; una RTX 3060/4060 de 8 GB cubre hasta Q4_K_M con `-ub 512`.
+- Cabe en GPU de consumo: sí, desde IQ1_S hasta Q6_K en tarjetas de 8 GB o más, según el contexto configurado.
+- Opciones de despliegue: llama.cpp con soporte de MTP draft (`llama-server` con `--spec-type draft-mtp`). No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- Throughput: ~22 t/s reportado en el escenario degradado con `-ub 1024`/`-ub 2048` en 8 GB de VRAM. No se proporcionan cifras de throughput en el escenario óptimo.
+- Configuración recomendada por el autor: `-ngl auto -c 0 -fit on -fitc 32768 -fa on -np 1 -ctk q8_0 -ctv q8_0 --temp 0.6 --top-k 20 --min-p 0.0 --spec-type draft-mtp --spec-draft-n-max 2`, con `-ub 512` en 8 GB de VRAM.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OxCoder-9B-i1-MTP-GGUF | ~9B (inferido) | no disponible | Apache 2.0 | GGUF | Hugging Face (nerun) |
-| Alternativas de ~7-9B en GGUF para código | ~7-9B | no disponible | variable según modelo base | GGUF | Hugging Face |
-| Modelo base original de OxCoder | no disponible | no disponible | no disponible | safetensors (previsible) | no disponible |
-
-No se dispone de información suficiente para identificar alternativas concretas con datos verificables de rendimiento, contexto o licencia en el momento de redactar esta ficha.
+| nerun/OxCoder-9B-i1-MTP-GGUF | 456 M (safetensors reportado); designación 9B | No disponible | Apache 2.0 | GGUF con MTP y mmproj | Decodificación especulativa integrada |
+| mradermacher/OxCoder-9B-i1-GGUF | Mismo modelo base | No disponible | Apache 2.0 | GGUF sin MTP | Modelo de origen de las cuantizaciones |
+| OrionLLM/OxCoder-9B | Mismo modelo base | No disponible | No disponible | No disponible | Modelo original de código |
+| a4lg/Qwen3.5-9B-MTP-ONLY-GGUF | Bloque MTP aislado | No aplica | No disponible | GGUF | Donante del bloque MTP |
+| Qwen/Qwen3.5-9B | 9B | No disponible | No disponible | No disponible | Modelo base de la familia |
 
 ## Limitaciones y advertencias
 
-- Documentación mínima: la model card no describe arquitectura, entrenamiento, contexto ni cuantizaciones, lo que impide una evaluación técnica rigurosa.
-- Procedencia del modelo base no identificada: sin conocer el modelo original, no puede verificarse la cadena de licencias ni las obligaciones de atribución.
-- Licencia Apache 2.0 declarada en el repositorio, pero su aplicabilidad depende de la licencia del modelo base, que no se cita.
-- Riesgo de alucinación: inherente a los modelos generativos; no hay evaluaciones publicadas que lo cuantifiquen.
-- Sesgos: no documentados.
-- Idiomas: no especificados; no debe asumirse un rendimiento multilingüe sin pruebas.
-- Contexto: desconocido; planificar el despliegue con margen para secuencias cortas hasta verificar el límite real.
-- Sin descargas ni interacciones registradas: no hay evidencia de uso comunitario ni de validación por terceros.
-- En producción, conviene validar la calidad frente al modelo original en las tareas objetivo antes de adoptar esta cuantización.
+- El bloque MTP fue entrenado sobre Qwen3.5-9B, no sobre OxCoder-9B; la tasa de aceptación de 0,6-0,7 es menor que la de un cabezal específico y puede degradar en dominios de código muy especializados.
+- El script de conversión original no funcionaba para la arquitectura `qwen35`; la corrección aplicada por el autor no está validada por terceros más allá de sus propias pruebas.
+- Requiere una build de llama.cpp con soporte de `--spec-type draft-mtp`; versiones sin ese flag no podrán aprovechar el bloque MTP.
+- El fichero no debe pasarse como `--model-draft`; hacerlo duplicaría la carga y rompería el uso previsto.
+- En 8 GB de VRAM, aumentar `-ub` por encima de 512 degrada el throughput hasta ~22 t/s.
+- No se dispone de información sobre sesgos, tasas de alucinación ni cobertura idiomática; al ser un modelo de código, el riesgo de generar APIs o funciones inexistentes es relevante en producción.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y el donante del bloque MTP deben verificarse por separado si se redistribuye.
+- El dato de parámetros totales en safetensors (456 M) no concuerda con la designación comercial de 9B; conviene tratar la cifra con cautela y verificar los pesos reales antes de dimensionar infraestructura.
+- No hay benchmarks publicados que permitan comparar calidad de código frente a alternativas de tamaño similar.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nerun/OxCoder-9B-i1-MTP-GGUF
+- Modelo base cuantizado: https://huggingface.co/mradermacher/OxCoder-9B-i1-GGUF
+- Modelo original: https://huggingface.co/OrionLLM/OxCoder-9B
+- Donante del bloque MTP: https://huggingface.co/a4lg/Qwen3.5-9B-MTP-ONLY-GGUF
+- Modelo Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Proyectores de visión: https://huggingface.co/mradermacher/OxCoder-9B-GGUF
+- Script de conversión de buzz: https://gist.github.com/buzz/1c439684d5e3f36492ae9f64ef7e3f67
+- Perfil de buzz en GitHub: https://github.com/buzz

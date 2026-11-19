@@ -19,8 +19,6 @@
     "axis",
     "openroboto",
     "netuid-80",
-    "base_model:ApexUltron/pi0.5-KX774qZu7mZD",
-    "base_model:finetune:ApexUltron/pi0.5-KX774qZu7mZD",
     "license:apache-2.0",
     "region:us"
   ],

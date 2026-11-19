@@ -5,7 +5,7 @@
   "author": "siva-0104",
   "url": "https://huggingface.co/siva-0104/qwen2.5-1.5b-toolcall-abstain-v6",
   "created_at": "2026-11-18T20:03:20.000Z",
-  "updated_at": "2026-11-18T20:09:29.000Z",
+  "updated_at": "2026-11-18T21:02:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,6 +29,7 @@
     "base_model:Qwen/Qwen2.5-1.5B-Instruct",
     "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
     "license:apache-2.0",
+    "model-index",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"

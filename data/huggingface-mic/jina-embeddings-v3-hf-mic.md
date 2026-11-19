@@ -2,92 +2,88 @@
 
 ## Resumen
 
-`huggingface-mic/jina-embeddings-v3-hf-mic` es un artefacto de prueba (fixture) publicado por el equipo `huggingface-mic` para el proyecto `transformers-mic`. No es un modelo entrenado ni utilizable en producción: se trata de una version reducida ("slim") del checkpoint `jinaai/jina-embeddings-v3-hf`, con la misma arquitectura de tensores pero con solo 2 capas ocultas y pesos aleatorios (semilla 17). Su funcion es servir como banco de pruebas reproducible para validar contratos de integracion de frameworks (en este caso, Transformers) sobre un modelo de embeddings real.
+`huggingface-mic/jina-embeddings-v3-hf-mic` es un artefacto de prueba (fixture) publicado por el equipo de Hugging Face MIC para validar la integración de `jinaai/jina-embeddings-v3-hf` con la librería Transformers. No es un modelo entrenado ni utilizable en producción: se trata de una versión "slim" del checkpoint original, reducida a 2 capas y con pesos aleatorios (semilla 17), pensada exclusivamente para tests de contrato de framework.
 
-El modelo original del que deriva, Jina Embeddings v3, es un modelo de embeddings de texto de Jina AI orientado a tareas de recuperacion, similitud semantica y clasificacion, con pooling por media. Este fixture hereda los ficheros de procesador (tokenizer, configuracion de Sentence Transformers, modulos) copiados byte a byte del original, de modo que el pipeline de preprocesado es identico al real, mientras que el cuerpo del transformer se reduce drasticamente para que el artefacto ocupe apenas 0,1 GB.
+El modelo conserva la arquitectura `JinaEmbeddingsV3Model` y los mismos nombres de tensor que el checkpoint real, pero con una configuración reducida (`num_hidden_layers: 2`) y un total de 16.071.424 parámetros. Los ficheros de procesador (`tokenizer.json`, `tokenizer_config.json`, `config_sentence_transformers.json`, `custom_st.py`, `modules.json`, `special_tokens_map.json`) se copian byte a byte del modelo base, de modo que el pipeline de tokenización es idéntico al original.
 
-La relevancia de este repositorio es exclusivamente de ingenieria: permite a los mantenedores de `transformers-mic` y a quienes integren frameworks verificar que la carga, el forward, la perdida y los gradientes son finitos en float32, bfloat16 y float16, y que las perturbaciones en las entradas del contrato mueven los logits por encima de un umbral minimo. Cualquier uso como modelo de embeddings en produccion seria incorrecto.
+Su relevancia es puramente de ingeniería: permite a los mantenedores de Transformers y de la integración MIC verificar que la carga, el forward pass y la sensibilidad a entradas funcionan correctamente sin descargar el checkpoint completo de Jina. Está etiquetado como `test-artifact` precisamente para excluirlo de búsquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | JinaEmbeddingsV3Model (transformer encoder), reducida a 2 capas ocultas |
+| Arquitectura | JinaEmbeddingsV3Model (transformer encoder, 2 capas en el fixture) |
 | Parametros totales | 16.071.424 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; finito en float32, bfloat16 y float16) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la arquitectura `JinaEmbeddingsV3Model` del checkpoint original `jinaai/jina-embeddings-v3-hf`, pero con la configuracion encogida mediante la regla generica de `sweep.py` del repositorio `transformers-mic`, que reduce `num_hidden_layers` a 2. Conserva exactamente los mismos nombres de tensores que el checkpoint real y copia byte a byte los ficheros de procesador: `config_sentence_transformers.json`, `custom_st.py`, `modules.json`, `special_tokens_map.json`, `tokenizer.json` y `tokenizer_config.json`. El contrato documentado es "Jina Embeddings v3: mean-pooled embeddings with Transformers", es decir, embeddings obtenidos por pooling de media sobre las salidas del encoder.
+El fixture replica la arquitectura `JinaEmbeddingsV3Model` del checkpoint `jinaai/jina-embeddings-v3-hf`, pero con `num_hidden_layers` reducido a 2 mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`. Los ficheros de procesador se copian byte a byte del modelo original, garantizando que la tokenización y la configuración de Sentence Transformers son idénticas a las del checkpoint real.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se aceptaron porque superaron la puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplazo los logits al menos 0,001 (la mas debil, `attention_mask:all_ones`, provoco un desplazamiento de 0,0156). El artefacto se guarda en bfloat16, el dtype con el que carga por defecto el modelo original, y se verifico que forward, perdida y gradientes son finitos en float32, bfloat16 y float16. La clave de fixture es `738094eeb2b6` y cubre todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya configuracion coincide tras el encogimiento.
+No hubo entrenamiento. Los pesos se inicializan de forma aleatoria con semilla 17 y se validan mediante un "input-sensitivity gate": cada perturbación de las entradas del contrato debe mover los logits al menos 0,001 (la más débil, `attention_mask:all_ones`, mueve 0,0156). Los pesos se guardan en bfloat16, el dtype por defecto de carga del modelo base, y se verifica que el forward, la loss y los gradientes son finitos en float32, bfloat16 y float16. El fixture cubre todos los checkpoints cuyos ficheros de procesador son byte-idénticos y cuya config coincide tras el shrink (clave de fixture `738094eeb2b6`).
 
 ## Capacidades
 
-- No es un modelo funcional: no genera embeddings utiles ni representaciones semanticas validas.
-- Sirve como fixture de integracion para validar la carga del modelo `JinaEmbeddingsV3Model` en Transformers.
-- Permite comprobar el contrato de preprocesado (tokenizer y modulos de Sentence Transformers) copiado del modelo original.
-- Verifica la finitud de forward, perdida y gradientes en float32, bfloat16 y float16.
-- Valida la sensibilidad de los logits ante perturbaciones de las entradas del contrato.
-- No soporta tool calling, agentes, vision, audio ni modo thinking.
-- Capacidades multilingues: no disponibles (los pesos no tienen conocimiento linguistico aprendido).
+- No es un modelo funcional: los pesos son aleatorios y no producen embeddings semánticamente útiles.
+- Sirve como fixture de contrato para validar la integración de `jinaai/jina-embeddings-v3-hf` en Transformers (carga, forward, pooling).
+- Reproduce la firma de tensores del checkpoint real, por lo que permite testear código que dependa de nombres y formas de parámetros.
+- Incluye ficheros de procesador idénticos al modelo base (tokenizer, `modules.json`, `custom_st.py`), útiles para tests de pipeline de Sentence Transformers.
+- No soporta tool calling, agentes, visión, audio ni razonamiento multi-paso.
+- No dispone de capacidades multilingües verificables en este artefacto (los idiomas del modelo base no se documentan en la información disponible).
 
 ## Casos de uso
 
-- Pruebas de integracion en CI de `transformers-mic`: ejecutar el fixture para comprobar que el pipeline de carga y forward de `JinaEmbeddingsV3Model` no rompe ante cambios de version de Transformers.
-- Validacion de contratos de framework: usar `integration.json` y `integrations/transformers/expectations` para verificar que las expectativas de entrada y salida se cumplen en cada release.
-- Pruebas de dtype: comprobar que forward, perdida y gradientes son finitos en float32, bfloat16 y float16 antes de desplegar cambios en el modelo real.
-- Test de regresion de tokenizer: al copiar `tokenizer.json` y `tokenizer_config.json` byte a byte del original, permite detectar desviaciones en el preprocesado sin cargar el checkpoint completo.
-- Desarrollo de utilidades de inspeccion de pesos: al conservar los nombres de tensores del checkpoint real, sirve para probar herramientas que enumeran o manipulan parametros sin descargar los pesos completos.
-- Reproducibilidad de fixtures: `build.json` registra fuentes fijadas, resultados de las puertas y hashes de ficheros, lo que permite reconstruir el artefacto con `python example/build_fixtures.py --fixture jina-embeddings-v3-hf-mic`.
-- Pruebas de carga en memoria reducida: con 0,1 GB de repositorio y 16,1 M de parametros, es adecuado para entornos de CI con recursos limitados.
+- Tests de integración en Transformers: cargar el fixture y verificar que `JinaEmbeddingsV3Model` se instancia, ejecuta forward y devuelve formas correctas sin descargar el checkpoint completo de 0,5 GB.
+- CI/CD de la librería `transformers-mic`: usar el fixture como caso de prueba reproducible con hash de ficheros (`build.json`) para detectar regresiones en la carga de safetensors en bfloat16.
+- Validación de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` se cumplen (nombres de tensor, dtypes, sensibilidad a entradas).
+- Desarrollo de utilidades de pooling: el fixture permite probar código de mean-pooling y normalización sin depender de pesos reales.
+- Reproducibilidad de builds: `build_fixtures.py` y `build.json` permiten reconstruir el fixture y auditar los hashes de los ficheros incluidos.
+- Formación de nuevos contribuidores: el repositorio documenta el flujo completo (manifest, usage, expectations, provenance) como ejemplo de fixture bien construido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que es un artefacto de prueba y no un modelo utilizable, por lo que no procede evaluacion de calidad de embeddings.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier métrica de calidad (MTEB, retrieval, STS) sería irrelevante.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 (16,1 M de parametros, aproximadamente 32 MB de pesos); el repositorio completo ocupa 0,1 GB.
-- GPU recomendadas: cualquier GPU con soporte de bfloat16 o float16; tambien ejecutable en CPU.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (via `AutoModel` con la configuracion `JinaEmbeddingsV3Model`); vLLM, llama.cpp, Ollama y TGI no estan indicados en la informacion disponible y no aplican a un fixture de embeddings.
-- Latencia y throughput: no disponibles; al tratarse de un artefacto de prueba no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 100 MB en bfloat16 (16,1 M parámetros × 2 bytes ≈ 32 MB de pesos, más overhead de activaciones y tokenizer).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU; no requiere A100 ni H100.
+- Cabe holgadamente en cualquier GPU consumer y en CPU.
+- Opciones de despliegue: `transformers` (carga estándar), `sentence-transformers` (los ficheros de procesador son compatibles), y cualquier runtime que soporte safetensors en bfloat16.
+- Latencia y throughput: no disponibles; al ser un fixture de 2 capas, la latencia sería muy baja pero no representativa del modelo real.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/jina-embeddings-v3-hf-mic | 16,1 M (2 capas) | no disponible | Fixture de test | no disponible | Hugging Face |
-| jinaai/jina-embeddings-v3-hf | no disponible en la informacion | no disponible | Embeddings de texto | no disponible en la informacion | Hugging Face |
-| Otros fixtures de `huggingface-mic` | variable | no disponible | Fixtures de test | no disponible | Hugging Face |
+| `huggingface-mic/jina-embeddings-v3-hf-mic` (este) | 16,1 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `jinaai/jina-embeddings-v3-hf` | no disponible en la informacion | no disponible | Embeddings multilingues de produccion | no disponible | Hugging Face |
+| `jinaai/jina-embeddings-v3` | no disponible en la informacion | no disponible | Embeddings multilingues de produccion | no disponible | Hugging Face |
 
-La unica comparacion relevante es con el checkpoint original `jinaai/jina-embeddings-v3-hf`, del que este repositorio es una version encogida con pesos aleatorios. No se dispone de datos de parametros, contexto ni licencia del original en la informacion proporcionada.
+La comparación relevante es únicamente con el modelo base: el fixture comparte arquitectura y procesador, pero no pesos ni utilidad. Frente a otros fixtures de la familia `transformers-mic`, la diferencia está en la clave de fixture y en los checkpoints cubiertos.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y no producen embeddings semanticamente validos.
-- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
-- No se han publicado sesgos porque no hay entrenamiento; cualquier evaluacion de sesgo carece de sentido sobre pesos aleatorios.
-- Riesgo de alucinacion no aplica (no es un modelo generativo), pero si el riesgo de uso erroneo si alguien lo confunde con el modelo real.
-- Licencia no disponible: no se puede confirmar si permite uso comercial; ademas, al derivar de `jinaai/jina-embeddings-v3-hf`, habria que verificar la licencia del modelo base.
-- Idiomas y contexto no disponibles; no debe asumirse ninguna capacidad multilingue.
-- Solo cubre el contrato de Transformers documentado; otros frameworks no estan validados en este repositorio.
-- El artefacto se reconstruye con `build_fixtures.py`; cambios en las fuentes fijadas pueden invalidar los hashes registrados en `build.json`.
+- Los pesos son aleatorios: los embeddings generados no tienen significado semántico y no deben usarse para búsqueda, clustering ni recuperación.
+- Está etiquetado explícitamente como `test-artifact`; no debe aparecer en catálogos de modelos candidatos ni en selecciones automáticas.
+- La licencia no está declarada en la información disponible; no se puede asumir uso comercial.
+- El contexto, los idiomas y las capacidades multilingües del modelo base no se documentan aquí, por lo que no es posible evaluar su idoneidad para producción.
+- La configuración reducida (2 capas) altera el comportamiento respecto al checkpoint real; los tests que pasen con el fixture no garantizan que pasen con el modelo completo en términos de calidad de salida.
+- El fixture solo cubre checkpoints con ficheros de procesador byte-idénticos y config coincidente tras el shrink (clave `738094eeb2b6`); otros checkpoints del modelo base pueden no estar cubiertos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/jina-embeddings-v3-hf-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/jina-embeddings-v3-hf-mic
 - Modelo base: https://huggingface.co/jinaai/jina-embeddings-v3-hf
-- Manifiesto de contrato (`integration.json`): https://huggingface.co/huggingface-mic/jina-embeddings-v3-hf-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/jina-embeddings-v3-hf-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/jina-embeddings-v3-hf-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture (`build.json`): https://huggingface.co/huggingface-mic/jina-embeddings-v3-hf-mic/blob/main/build.json
-- Como se encogio el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/jina-embeddings-v3-hf-mic.html
-- Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Repositorio `transformers-mic` (script `build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Manifest de contrato: `integration.json` (en el repositorio)
+- Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)
+- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
+- Provenance del fixture: `build.json` (en el repositorio)
+- Explicación del shrink: https://huggingface-mic-mic-coverage.static.hf.space/shrink/jina-embeddings-v3-hf-mic.html
+- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de shrink: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

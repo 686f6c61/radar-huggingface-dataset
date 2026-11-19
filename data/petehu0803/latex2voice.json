@@ -5,7 +5,7 @@
   "author": "petehu0803",
   "url": "https://huggingface.co/petehu0803/latex2voice",
   "created_at": "2026-11-18T01:59:21.000Z",
-  "updated_at": "2026-11-18T02:14:48.000Z",
+  "updated_at": "2026-11-18T03:05:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

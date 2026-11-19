@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/EasyOCR",
   "created_at": "2025-02-15T00:44:51.000Z",
-  "updated_at": "2026-11-05T00:46:27.000Z",
+  "updated_at": "2026-11-18T22:25:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 42,
-  "downloads_30d": 254,
+  "downloads_30d": 251,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "Kujira/SenseNova-Loop-9B-IQ4_NL-PS4-GGUF",
+  "slug": "kujira-sensenova-loop-9b-iq4_nl-ps4-gguf",
+  "author": "Kujira",
+  "url": "https://huggingface.co/Kujira/SenseNova-Loop-9B-IQ4_NL-PS4-GGUF",
+  "created_at": "2026-11-19T09:43:44.000Z",
+  "updated_at": "2026-11-19T09:49:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "iq4_nl",
+    "vulkan",
+    "playstation-4",
+    "sensenova-loop",
+    "en",
+    "zh",
+    "ja",
+    "base_model:sensenova/SenseNova-Loop-9B-GGUF",
+    "base_model:quantized:sensenova/SenseNova-Loop-9B-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2952344,
+  "parameters_human": "3.0M",
+  "storage_bytes": 11881856,
+  "storage_human": "12 MB",
+  "context_length": null,
+  "base_model": "sensenova/SenseNova-Loop-9B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kujira - cave-boirebon.fr",
+      "url": "https://cave-boirebon.fr/fr/brand/133-kujira",
+      "snippet": "Kujira est une ôde au terroir unique des îles d'Okinawa, l'Archipel du Royaume Ryukyu. La distillerie Kumesen Syuzo, fondée en …"
+    },
+    {
+      "title": "Kujira Single Grain 5 ans, Le whisky japonais élaboré à partir de riz",
+      "url": "https://allspiritsandmore.fr/kujira-single-grain-5-ans-le-whisky-japonais-elabore-a-partir-de-riz/",
+      "snippet": "Oct 26, 2023 · Les whiskies japonais Kujira, originaires d’Okinawa, sont un trésor unique, étant les premiers whiskies élaborés à …"
+    },
+    {
+      "title": "Kujira — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kujira",
+      "snippet": "Wakako Matsumoto (松本 和香子, Matsumoto Wakako?, née le 1er avril 1960), plus connue sous le nom de Kujira (くじら, Kujira?), …"
+    },
+    {
+      "title": "KUJIRA 10 Ans Ryukyu Whisky 43% 70cl",
+      "url": "https://www.prestigewhisky.fr/whisky-japonais/4092-kujira-10-ans-ryukyu-4955066435067.html",
+      "snippet": "KUJIRA 10 Ans est un single grain japonais produit à base de riz de type indica fermenté à l'aide de levures et de koji noir. Ce …"
+    },
+    {
+      "title": "Kujira - 20 ans - La Cave de Bacchus",
+      "url": "https://www.moncaviste.fr/produit/kujira-20-ans/",
+      "snippet": "Nov 8, 2026 · La tradition du Whisky Japonais comme vous ne l’avez jamais goûté… On pensait avoir tout découvert en matière de …"
+    }
+  ]
+}

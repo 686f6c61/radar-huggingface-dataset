@@ -5,7 +5,7 @@
   "author": "wildfellhall",
   "url": "https://huggingface.co/wildfellhall/shakespeare-plays-5m",
   "created_at": "2026-11-18T02:00:45.000Z",
-  "updated_at": "2026-11-18T02:06:30.000Z",
+  "updated_at": "2026-11-19T01:17:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

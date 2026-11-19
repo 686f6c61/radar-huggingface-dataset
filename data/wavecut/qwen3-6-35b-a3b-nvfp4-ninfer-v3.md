@@ -1,111 +1,101 @@
 # WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3
 
 ## Resumen
+Qwen3.6-35B-A3B-NVFP4-NInfer-v3 es un artefacto de inferencia publicado por WaveCut para NInfer, un motor de inferencia alternativo a llama.cpp, vLLM o TGI. No se trata de un modelo nuevo, sino de una reempaquetación del modelo base Qwen/Qwen3.6-35B-A3B en un único fichero `.ninfer` de 21,04 GiB, con los pesos de los expertos en NVFP4 procedentes del checkpoint de RedHatAI y el resto de componentes cuantizados de forma selectiva (Q8, Q6, Q4, BF16 y FP32 según la sensibilidad de cada matriz).
 
-Qwen3.6-35B-A3B-NVFP4-NInfer-v3 es un artefacto cuantizado del modelo Qwen/Qwen3.6-35B-A3B, preparado por el usuario WaveCut para el runtime NInfer (formato `.ninfer`, version v3). No es un modelo entrenado desde cero, sino una conversion de pesos: toma los expertos en NVFP4 del checkpoint RedHatAI/Qwen3.6-35B-A3B-NVFP4 copiados sin recuantizar, y aplica cuantizacion propia (Q8, Q6, Q5, Q4 segun componente) al resto de matrices a partir de la base en BF16. El objetivo es ejecutar un modelo MoE de 35B parametros totales y 3B activos en GPUs Blackwell consumer y de estacion de trabajo, aprovechando los tensor cores FP4.
+El modelo base es un transformer de tipo Mixture of Experts con 35.000 millones de parámetros totales y 3.000 millones activos por token, con una ventana de contexto de 262.144 tokens y capacidad multimodal imagen-texto. La particularidad de esta ficha es que el artefacto está optimizado para GPUs Blackwell (`sm_120a`), aprovechando los tensor cores FP4 para el prefill de los bancos de expertos en W4A4, algo que las arquitecturas Ampere y Ada rechazan explícitamente.
 
-La relevancia de este artefacto reside en su especializacion de hardware: los bancos de expertos NVFP4 se aceleran mediante W4A4 en las FP4 tensor cores de arquitecturas `sm_120a` (RTX 50 series y RTX PRO 6000 Blackwell). Esto lo hace inservible en A100, RTX 30 o RTX 40, cuyas builds (`sm_80`, `sm_86`, `sm_89`) rechazan estos bancos. A cambio, ofrece una ventana de contexto de 262.144 tokens, soporte de MTP (multi-token prediction) con cabeza de propuesta, torre de vision y un unico fichero de 21.895.523.588 bytes (20,39 GiB).
-
-El modelo base Qwen3.6-35B-A3B emplea una arquitectura MoE con 40 capas, 256 expertos enrutados por capa, un experto compartido y una combinacion hibrida de atencion (10 capas) y capas GDN (30 capas). El artefacto mantiene estas proporciones estructurales y anade cabezas MTP y de propuesta, ademas de un tower de vision que habilita la modalidad image-text-to-text.
+Su relevancia práctica es doble: por un lado demuestra que es posible servir un MoE de 35B con contexto completo de 262.144 tokens en una única RTX 5090 dejando 7,4 GiB libres; por otro, incorpora decodificación especulativa con dos drafters alternativos (MTP y DFlash2), con tasas de decodificación medidas de hasta 919 tok/s en prompts de código.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE hibrida: 40 capas, 256 expertos enrutados por capa + experto compartido; 10 capas de atencion y 30 capas GDN |
-| Parametros totales | 35B (segun denominacion del modelo base) |
-| Parametros activos | 3B (segun denominacion del modelo base) |
+| Arquitectura | Transformer MoE con atención híbrida: 10 capas de atención y 30 capas GDN (Gated DeltaNet), según los componentes del artefacto |
+| Parametros totales | 35B (modelo base Qwen3.6-35B-A3B) |
+| Parametros activos | 3B (aproximado por el sufijo A3B del modelo base) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | Expertos NVFP4 (FP4 con escala FP8 por cada 16 pesos y un divisor FP32 por matriz apilada); proyecciones de atencion y GDN en Q8 (grupos de 32); router, score de experto compartido, controles A/B de GDN, normas y convolucion en BF16; `A_log` y `dt_bias` en FP32; tabla de tokens y cabeza de salida en Q8 (grupos de 32) y Q6 (grupos de 64); cabeza MTP en Q8; cabeza de propuesta en Q4; tower de vision en Q4/Q5 grupales, merger Q8 y patch embedding Q6 |
+| Tipos de cuantizacion | NVFP4 (expertos enrutados y compartido: FP4 con escala FP8 por cada 16 pesos y divisor FP32 por matriz), Q8 grupos de 32 (atención, GDN, tabla de tokens, cabeza MTP), Q6 grupos de 64 (cabeza de salida), Q4 (cabeza de propuesta, torre de visión en Q4/Q5), BF16 (router, score de experto compartido, controles A/B de GDN, normas, convolución), FP32 (`A_log`, `dt_bias`) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | `.ninfer` (formato propietario del runtime NInfer); fichero unico de 21.895.523.588 bytes (20,39 GiB) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | `.ninfer` (fichero único de 22.586.296.580 bytes; 21,04 GiB; 19,13 GiB de pesos de texto residentes sin visión ni drafters) |
 
 ## Arquitectura y entrenamiento
+El modelo base Qwen3.6-35B-A3B emplea una arquitectura MoE con 256 expertos enrutados por capa más un experto compartido, distribuidos en 40 capas. La combinación de capas es híbrida: 10 capas usan atención estándar y 30 usan GDN (Gated DeltaNet), un mecanismo de estado recurrente lineal que reduce el coste de memoria KV en contextos largos. El artefacto conserva esa estructura y añade una cabeza MTP (Multi-Token Prediction) para decodificación especulativa.
 
-Este artefacto no implica entrenamiento nuevo: es una conversion de pesos. La model card indica que los expertos enrutados (256 por capa) y el experto compartido en las 40 capas son los pesos NVFP4 del checkpoint RedHatAI/Qwen3.6-35B-A3B-NVFP4, copiados codigo a codigo y sin recuantizacion. El resto de componentes se derivan de la base en BF16: proyecciones de atencion y GDN a Q8, router y controles auxiliares en BF16, `A_log` y `dt_bias` en FP32, tabla de tokens y cabeza de salida en Q8/Q6, cabeza MTP en Q8 y cabeza de propuesta en Q4. La torre de vision usa Q4/Q5 con merger Q8 y patch embedding Q6.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo base. Lo que sí está documentado es el proceso de conversión: los expertos NVFP4 se copian código a código desde el checkpoint de RedHatAI sin recuantizar, las proyecciones de atención y GDN se cuantizan a Q8 desde el BF16 base, y el router, las normas y los controles de GDN se mantienen en BF16 o FP32 por sensibilidad numérica. La conversión puede ejecutarse en CPU en unos cuatro minutos con `--device cpu`.
 
-La innovacion tecnica principal es la ruta de calculo FP4: los bancos de expertos NVFP4 pasan por W4A4 en las FP4 tensor cores de Blackwell, lo que exige GPUs `sm_120a` y builds de `ninfer-all` con `CMAKE_CUDA_ARCHITECTURES=120a` a partir del commit `a00d1636`. La arquitectura incorpora ademas una cabeza MTP para decodificacion especulativa (3 borradores configurables) y una cabeza de propuesta que reutiliza las filas de la cabeza de salida para los 131.072 tokens mas frecuentes del ranking interno de NInfer, cuantizadas en Q4. La plantilla de chat usada es la `qwen3_6.jinja` fijada por NInfer. No se documentan en la informacion disponible datos sobre el corpus de entrenamiento del modelo base ni sobre fases de RLHF/DPO.
+La innovación técnica destacable es la integración de dos drafters en el mismo fichero. El 10 de noviembre de 2026 se añadió DFlash2 (incoai/Qwen3.6-35B-A3B-DFlash2), un draft model de seis capas de ventana deslizante de anchura 2.048 que propone tokens a partir de los estados ocultos del modelo; el modelo verifica cada propuesta, de modo que todo token confirmado es del modelo principal. DFlash2 se entrenó con bloques de ocho posiciones, por lo que admite como máximo siete drafts por ronda.
 
 ## Capacidades
-
-- Generacion de texto y razonamiento multiuso, heredadas del modelo base Qwen3.6-35B-A3B.
-- Procesamiento de imagen y texto (pipeline `image-text-to-text`), con torre de vision cuantizada en Q4/Q5 y merger en Q8.
-- Decodificacion especulativa via cabeza MTP con 3 borradores y cabeza de propuesta de 131.072 tokens, con una tasa de aceptacion del 42 % documentada sobre prosa del corpus de benchmark.
-- Contexto largo de hasta 262.144 tokens, con gestion de KV en `rk8v4` y estado GDN en FP16.
-- Capacidad de ejecucion en una unica GPU Blackwell, con modo de contexto completo y vision activados.
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes, multi-step reasoning, thinking mode ni audio.
+- Generación de texto y razonamiento multi-turno con ventana de 262.144 tokens.
+- Procesamiento de imágenes: pipeline `image-text-to-text` con torre de visión cuantizada (Q4/Q5 en el cuerpo, Q8 en el merger, Q6 en el patch embedding).
+- Tool calling y function calling: la plantilla de chat fijada (`qwen3_6.jinja`) incorpora el formato de herramientas de la familia Qwen3.6, y el servidor expone APIs compatibles con OpenAI y Anthropic en `/v1`.
+- Decodificación especulativa con dos modos: MTP (3 drafts recomendados) y DFlash2 (hasta 7 drafts).
+- Cabeza de propuesta sobre los 131.072 tokens más frecuentes del ranking de NInfer, en Q4, para acelerar la verificación.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
-
-- Asistente multimodal de contexto largo en estacion de trabajo: con 262.144 tokens de ventana y torre de vision activa, puede procesar documentos extensos con imagenes intercaladas en una sola pasada sobre una RTX PRO 6000 Blackwell o RTX 5090.
-- Analisis de documentos tecnicos con figuras: la combinacion de vision Q4/Q5 y contexto amplio permite resumir informes, planos o articulos con tablas e imagenes sin trocear el contenido.
-- Chat interactivo de baja latencia: la decodificacion a 742 tok/s en respuesta corta sobre RTX 5090 lo hace apto para asistentes conversacionales donde la latencia percibida importa.
-- Procesamiento por lotes de prompts largos: los 30.938 tok/s de prefill a 4.096 tokens en RTX PRO 6000 permiten clasificacion o extraccion sobre lotes de documentos largos.
-- Investigacion en cuantizacion NVFP4: sirve como banco de pruebas para medir el impacto de W4A4 en expertos MoE frente a alternativas Q4/Q5 (perplejidad 4,410 frente a 4,364 del artefacto oficial de NInfer).
-- Despliegue local sin conectividad: al ser un fichero unico `.ninfer` con runtime NInfer, se puede ejecutar en equipos aislados con GPU Blackwell, sin depender de APIs externas.
-- Evaluacion comparativa de decodificacion especulativa: la cabeza MTP y la de propuesta permiten medir ganancias de throughput (541 tok/s con 3 borradores frente a 407 tok/s sin ellos en RTX 5090).
-- Prototipado de aplicaciones image-text-to-text: la modalidad `image-text-to-text` del base permite construir demos de captioning, VQA o descripcion de escenas con un unico fichero de 20,39 GiB.
+- Asistencia de código en local sobre una RTX 5090: con MTP y 3 drafts el artefacto decodifica a 829 tok/s en prompts de código, lo que permite autocompletado y generación de funciones completas de forma interactiva sin salir de una GPU de consumo.
+- Procesamiento de documentos largos: la ventana de 262.144 tokens con KV en `rk8v4` y estado GDN en FP16 permite analizar contratos, informes o bases de código completas en una sola pasada, sin troceado ni recuperación externa.
+- Análisis de capturas y diagramas: la torre de visión integrada admite entradas imagen-texto, útil para extraer datos de gráficos, revisar interfaces o transcribir documentación escaneada.
+- Despliegue de agentes con tool calling: el servidor expone endpoints compatibles con OpenAI y Anthropic, de modo que frameworks de agentes existentes pueden apuntar a `http://localhost:8080/v1` sin adaptadores.
+- Servicio de inferencia en estación de trabajo con RTX PRO 6000 Blackwell: el artefacto está pensado para `sm_120a` y el prefill W4A4 sobre tensor cores FP4, lo que encaja en entornos de desarrollo con una sola GPU profesional.
+- Evaluación comparativa de motores de inferencia: al ser un artefacto reproducible (comando de conversión documentado, revisiones fijadas, `SHA256SUMS`), sirve para medir throughput y latencia de NInfer frente a otras pilas sobre el mismo modelo base.
+- Prototipado de decodificación especulativa: la posibilidad de alternar `--spec mtp` y `--spec dflash2` con distintos números de drafts permite caracterizar el compromiso entre tasa de aceptación y throughput según el tipo de prompt.
 
 ## Benchmarks y rendimiento
+Rendimiento de decodificación medido por el autor en una RTX 5090 (575 W, CUDA 13.4, KV en BF16, todo residente; 400 tokens greedy, dos ejecuciones con desviación inferior al 1%):
 
-Perplejidad sobre el subconjunto rapido del corpus de evaluacion de NInfer (`ninfer-perplexity --quick`, 261.167 tokens puntuados, KV INT8), ambos artefactos en la misma RTX PRO 6000:
-
-| Modelo | Perplejidad |
-|---|---:|
-| Este artefacto | 4,410 |
-| Artefacto oficial Qwen3.6-35B-A3B NInfer (expertos Q4/Q5 grupales) | 4,364 |
-
-Rendimiento segun `ninfer_bench` sobre el corpus de benchmark de NInfer (KV BF16, greedy, tres repeticiones, build `120a` por defecto):
-
-| Metrica | RTX 5090 (550 W) | RTX PRO 6000 (600 W) | Artefacto oficial, RTX PRO 6000 |
+| Configuracion | Prompt de codigo | Prompt de prosa | Corpus de benchmark |
 |---|---:|---:|---:|
-| Prefill, 512 tokens | 21.622 tok/s | 21.705 tok/s | 18.040 tok/s |
-| Prefill, 4.096 tokens | 27.412 tok/s | 30.938 tok/s | 22.643 tok/s |
-| Decode, 128 tokens | 407 tok/s | 399 tok/s | 398 tok/s |
-| Decode con MTP (3 borradores, cabeza de propuesta) | 541 tok/s | no disponible | no disponible |
+| Sin drafts | 403 tok/s | 403 tok/s | 403 tok/s |
+| MTP, 3 drafts | 829 tok/s | 548 tok/s | 497 tok/s |
+| DFlash2, 3 drafts | 805 tok/s | 465 tok/s | 427 tok/s |
+| DFlash2, 5 drafts | 919 tok/s | 420 tok/s | 350 tok/s |
+| DFlash2, 7 drafts | 892 tok/s | 385 tok/s | 455 tok/s |
 
-Notas adicionales: la fila MTP se mide sobre prosa del corpus de benchmark con un 42 % de borradores aceptados; una respuesta de chat corta decodifica a 742 tok/s en RTX 5090. El decode lee aproximadamente los mismos bytes que el artefacto oficial, por lo que rinde de forma similar; las ganancias se concentran en prefill gracias a las FP4 tensor cores. El arranque en RTX 5090 tarda 17 segundos y deja 7,4 GiB libres. La conversion del artefacto se puede hacer sin GPU (`--device cpu`) en unos cuatro minutos.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El tiempo de arranque del servidor en RTX 5090 con la configuración completa es de 17 segundos.
 
 ## Requisitos de hardware
-
-- GPU obligatoria con arquitectura `sm_120a`: RTX 50 series (incluida RTX 5090) y RTX PRO 6000 Blackwell. Las builds `sm_80` (A100), `sm_86` (RTX 30) y `sm_89` (RTX 40) rechazan los bancos de expertos NVFP4.
-- Tamano del fichero: 21.895.523.588 bytes (20,39 GiB); 19,13 GiB de pesos de texto residentes sin contar vision ni cabezas de borrador.
-- En RTX 5090 el arranque consume lo suficiente como para dejar 7,4 GiB libres tras cargar el modelo con la configuracion de contexto completo.
-- VRAM estimada para otros modelos de GPU: no disponible.
-- Despliegue mediante `ninfer-serve` del proyecto NInfer-all, compilado con `CMAKE_CUDA_ARCHITECTURES=120a` a partir del commit `a00d1636` (commits anteriores solo ejecutan los bancos con `-DNINFER_SM120_NATIVE=ON`).
-- Comando de referencia: `ninfer-serve Qwen3.6-35B-A3B-NVFP4-ninfer-v3.ninfer --model-id qwen3.6-35b-a3b --max-context 262144 --kv-capacity 262144 --kv-dtype rk8v4 --gdn-state-fp16 --spec mtp --draft-tokens 3 --lm-head-draft --vision`.
-- Otras opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles; el formato `.ninfer` es especifico del runtime NInfer.
+- GPU obligatoria con arquitectura Blackwell `sm_120a`: RTX 50 series o RTX PRO 6000 Blackwell. Las compilaciones `sm_80`, `sm_86` y `sm_89` rechazan los bancos de expertos NVFP4.
+- VRAM: el fichero ocupa 21,04 GiB y los pesos de texto residentes 19,13 GiB sin visión ni drafters. En RTX 5090 (32 GB) quedan 7,4 GiB libres con todo cargado, suficiente para KV y estado GDN según la configuración indicada.
+- Driver NVIDIA de la rama CUDA 13, versión 580 o superior, más NVIDIA Container Toolkit si se usa Docker.
+- Compilación con `CMAKE_CUDA_ARCHITECTURES=120a` y CUDA 13.1 o superior; el commit `a00d1636` de `master` es el mínimo para cargar los bancos NVFP4 de forma nativa, y `ebaad2e26` para `--spec dflash2`.
+- Despliegue mediante la imagen `ghcr.io/iamwavecut/ninfer-all` o binario `ninfer-serve`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado el formato propietario `.ninfer`.
+- Flags de referencia: `--max-context 262144 --kv-capacity 262144 --kv-dtype rk8v4 --gdn-state-fp16 --spec mtp --draft-tokens 3 --lm-head-draft --vision`.
+- Throughput documentado: 403 tok/s sin drafts y hasta 919 tok/s con DFlash2 y 5 drafts en prompts de código sobre RTX 5090.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Perplejidad (NInfer quick) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3 | 35B / 3B activos | 262.144 | NVFP4 (expertos) + Q8/Q6/Q5/Q4/BF16 | 4,410 | Apache 2.0 | Hugging Face (0 descargas) |
-| neroued/Qwen3.6-35B-A3B-NInfer (artefacto oficial) | 35B / 3B activos | no disponible | Q4/Q5 grupales en expertos | 4,364 | Apache 2.0 | Hugging Face |
-| RedHatAI/Qwen3.6-35B-A3B-NVFP4 | 35B / 3B activos | no disponible | NVFP4 (expertos) | no disponible | no disponible | Hugging Face |
-| Qwen/Qwen3.6-35B-A3B (base BF16) | 35B / 3B activos | no disponible | BF16 | no disponible | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Formato y motor | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3 | 35B totales, 3B activos | 262.144 | `.ninfer` sobre NInfer, solo Blackwell | Apache-2.0 | Hugging Face, 1.995 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B totales, 3B activos | 262.144 | Safetensors BF16, cualquier motor compatible | Apache-2.0 | Hugging Face |
+| RedHatAI/Qwen3.6-35B-A3B-NVFP4 | 35B totales, 3B activos | no disponible | NVFP4 en safetensors, orientado a vLLM y TensorRT-LLM | Apache-2.0 | Hugging Face |
+| incoai/Qwen3.6-35B-A3B-DFlash2 | drafter de 690.772.992 bytes | no disponible | Draft model para decodificación especulativa | Apache-2.0 | Hugging Face |
 
-La comparativa directa con el artefacto oficial de NInfer muestra una perplejidad ligeramente superior (4,410 frente a 4,364) pero mejor prefill (hasta 30.938 tok/s frente a 22.643 tok/s a 4.096 tokens) y decode equivalente (407 frente a 398 tok/s). La contrapartida es la exigencia de hardware `sm_120a`, ausente en esta comparativa para los demas artefactos.
+La diferencia frente a las alternativas no está en capacidades del modelo, idénticas al base, sino en el empaquetado: un único fichero con texto, visión, MTP y drafter, cuantización mixta por componente y un motor que explota FP4 en prefill. Frente al checkpoint NVFP4 de RedHatAI, este artefacto añade la torre de visión, la cabeza de propuesta y los drafters en el mismo contenedor.
 
 ## Limitaciones y advertencias
-
-- Sesgos conocidos: no disponibles en la informacion proporcionada; al derivar del modelo base Qwen3.6-35B-A3B, hereda los sesgos de este, no documentados aqui.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; la perplejidad de 4,410 no permite inferir tasas de alucinacion.
-- Restriccion de hardware critica: solo funciona en GPUs `sm_120a`. No es ejecutable en A100, H100, RTX 30 ni RTX 40, lo que limita gravemente su portabilidad y su uso en infraestructura cloud convencional.
-- Dependencia del runtime: requiere compilar una build especifica de `ninfer-all` (commit `a00d1636` o posterior con `CMAKE_CUDA_ARCHITECTURES=120a`). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
-- Formato propietario: el fichero `.ninfer` no es interoperable con otros runtimes; la conversion se realiza mediante el propio toolchain de NInfer.
-- Idiomas soportados: no disponible; no se puede confirmar cobertura multilingue mas alla de lo que ofrezca el modelo base.
-- Adopcion y validacion: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe una comunidad que haya reportado comportamiento en produccion.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar el fichero `NOTICE` del repositorio, ya que los expertos NVFP4 provienen del checkpoint de RedHatAI, cuyos terminos originales deberian verificarse.
-- Contexto de 262.144 tokens: el modo de contexto completo con KV `rk8v4` y estado GDN en FP16 deja solo 7,4 GiB libres en RTX 5090, por lo que la concurrencia o cargas adicionales estan muy limitadas.
+- Dependencia total de hardware Blackwell: no arranca en A100, H100, RTX 4090 ni RTX 3090. Esto excluye la mayor parte del parque de GPUs de datacenter actual.
+- Formato propietario `.ninfer`: requiere NInfer y no es portable a vLLM, llama.cpp, Ollama ni TGI, lo que limita la integración con pilas existentes.
+- El repositorio acumula 1 único like y 1.995 descargas, con autor individual (WaveCut) y sin proceso de revisión por pares; la fiabilidad a largo plazo del proyecto upstream no está garantizada.
+- DFlash2 se entrenó con bloques de ocho posiciones: usar más de siete drafts queda fuera de su distribución de entrenamiento.
+- Las versiones 2026-11-09.2 y anteriores de NInfer cargan el fichero pero rechazan `--spec dflash2`; hay que verificar la versión antes de desplegar.
+- No hay información sobre sesgos, tasas de alucinación ni cobertura idiomática del modelo base en la documentación disponible; conviene evaluarlos antes de un uso en producción.
+- La licencia Apache-2.0 permite uso comercial, pero se heredan las condiciones del modelo base y de los checkpoints de origen (RedHatAI, incoai), que también son Apache-2.0 según lo indicado.
+- El rendimiento medido corresponde a una RTX 5090 a 575 W con todo residente; configuraciones con offloading o GPUs de menor VRAM no están documentadas.
 
 ## Enlaces
-
-- Hugging Face del artefacto: https://huggingface.co/WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3
+- Repositorio del artefacto: https://huggingface.co/WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Checkpoint NVFP4 de origen de los expertos: https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-NVFP4
-- Artefacto oficial de NInfer para comparacion: https://huggingface.co/neroued/Qwen3.6-35B-A3B-NInfer
-- Repositorio del runtime NInfer: https://github.com/Neroued/ninfer
+- Checkpoint NVFP4 de origen: https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-NVFP4
+- Drafter DFlash2: https://huggingface.co/incoai/Qwen3.6-35B-A3B-DFlash2
+- Motor NInfer (upstream): https://github.com/Neroued/ninfer
 - Fork NInfer-all: https://github.com/iamwavecut/ninfer-all
-- Commit de referencia para builds `120a`: https://github.com/iamwavecut/ninfer-all/commit/a00d1636
+- Commit mínimo para bancos NVFP4 nativos: https://github.com/iamwavecut/ninfer-all/commit/a00d1636
+- Commit mínimo para `--spec dflash2`: https://github.com/iamwavecut/ninfer-all/commit/ebaad2e26
+- Instrucciones Docker: https://github.com/iamwavecut/ninfer-all#docker
+- Instrucciones de compilación: https://github.com/iamwavecut/ninfer-all#building

@@ -2,124 +2,115 @@
 
 ## Resumen
 
-K2-Type-1B es un modelo de decisión de aproximadamente 1.078 millones de parámetros publicado por el usuario chen11003, construido mediante ajuste fino completo sobre IFM/K2-Horizon-0.9B. No es un modelo generativo: recibe un único estado (texto plano o JSON) y un conjunto de preguntas tipadas, y devuelve en una sola pasada forward una distribución de probabilidad sobre las opciones de cada pregunta. Su diseño sigue el estilo del modelo Jev de TypeSafe y es compatible con el formato de cable `/v1/systemone`, de modo que los clientes escritos para Jev o Kev funcionan sin cambios.
+K2-Type-1B es un modelo de decisión desarrollado por el usuario chen11003, un fine-tune completo del backbone IFM/K2-Horizon-0.9B (1.078.285.824 parámetros almacenados, incluyendo la cabeza de lenguaje del modelo base, que queda sin usar). No es un modelo generativo: recibe un estado (texto o JSON) y un conjunto de preguntas tipadas, y devuelve en un único forward pass una distribución de probabilidad sobre las opciones de cada pregunta. Está inspirado en el enfoque de "decision models" de TypeSafe (familia Jev/Kev) y adopta su formato de cable `/v1/systemone`.
 
-La relevancia del modelo está en su enfoque: en lugar de generar texto y parsearlo después, emplea una cabeza pointer que puntúa el estado oculto de cada opción contra el estado oculto del token de decisión de su pregunta, aplicando un softmax con temperatura 1.478. Esto permite resolver clasificación, elección múltiple y escalas ordenadas con latencias de decenas de milisegundos por decisión, algo poco habitual en modelos de este tamaño dentro de la categoría de "modelos de decisión" calibrados.
+El modelo resuelve un problema concreto: sustituir llamadas a LLM generativos en tareas de clasificación, enrutamiento y calibración donde la latencia y la consistencia importan. Soporta tres tipos de pregunta: `noul` (probabilidad de que un enunciado sea verdadero), `choice` (selección entre 1 y 255 opciones con descripciones opcionales) y `score` (nivel esperado sobre 2-255 niveles ordenados). Las preguntas comparten el estado pero no se ven entre sí gracias a una máscara de atención block-causal, de modo que añadir preguntas no altera las respuestas existentes.
 
-El modelo se distribuye bajo licencia Apache 2.0, solo en inglés, con pesos en safetensors y código de servido mínimo incluido en el repositorio (`jev/`). El autor no ha liberado ni el código de entrenamiento ni los datos. En el conjunto público de JevBench alcanza 176/231 aciertos (0.762) con un ECE de 0.065, y en las suites de Kev obtiene 0.813 en fuentes vistas y 0.688 en fuentes nuevas.
+Es relevante porque demuestra que un backbone de ~1B puede alcanzar 0.762 de acierto en el conjunto público de JevBench con latencias de 27 ms p50 y 60 ms p95 por decisión en una H200, compitiendo con sistemas mayores en una tarea donde la calibración (ECE 0.065, Brier 0.328) es tan importante como la precisión. La licencia Apache 2.0 y la disponibilidad de los pesos en safetensors facilitan su evaluación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (base IFM/K2-Horizon-0.9B) con cabeza pointer para decisión; máscara de atención block-causal |
-| Parametros totales | 1.078.285.824 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (el autor advierte de bajo rendimiento en documentos de más de 8192 tokens) |
-| Tipos de cuantizacion | no disponible (el repositorio solo distribuye safetensors; no se publican versiones GGUF, AWQ, GPTQ ni similares) |
+| Arquitectura | Transformer decoder con máscara de atención block-causal y cabeza pointer para scoring de opciones (fine-tune del backbone K2-Horizon-0.9B) |
+| Parametros totales | 1.078.285.824 (incluye la cabeza de lenguaje del modelo base, no usada) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens (límite indicado en la model card; documentos muy largos son un punto débil) |
+| Tipos de cuantizacion | no disponible (el repo publica safetensors sin variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (más `pointer_head.safetensors` y `decision_config.json`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (`pointer_head.safetensors`, pesos del backbone; repo de 2.2 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo reutiliza el backbone de IFM/K2-Horizon-0.9B y le añade una cabeza pointer entrenada específicamente para decidir. La entrada sigue el formato `<state> ... | <q> pregunta <opt> opción </opt> ... <decide> | <q> ...`, empleando cinco tokens reservados del tokenizador base definidos en `decision_config.json`. La cabeza pointer puntúa el estado oculto de cada `</opt>` contra el estado oculto del token `<decide>` de su propia pregunta; un softmax a temperatura 1.478 produce las probabilidades finales. Las preguntas comparten el estado pero no se ven entre sí gracias a una máscara block-causal, de modo que añadir una pregunta no altera las respuestas de las demás. Se admiten tres tipos: `noul` (enunciado con definiciones opcionales de falso/verdadero, devuelve P(true)), `choice` (entre 1 y 255 opciones nombradas, devuelve la mejor opción, su confianza y todas las probabilidades) y `score` (entre 2 y 255 niveles ordenados, devuelve el nivel esperado y la probabilidad por nivel).
+El modelo parte del backbone IFM/K2-Horizon-0.9B y se entrena mediante fine-tune completo para una tarea de decisión. La entrada se serializa con cinco tokens reservados del tokenizador base (`decision_config.json`) con el esquema `<state> ... | <q> question <opt> option </opt> ... <decide> | <q> ...`. Una cabeza pointer (`pointer_head.safetensors`) puntúa el estado oculto del token `</opt>` de cada opción contra el estado oculto del token `<decide>` de su pregunta; un softmax con temperatura 1.478 convierte esas puntuaciones en probabilidades. La máscara block-causal garantiza que cada pregunta solo atiende al estado y a su propio bloque, lo que hace las respuestas independientes entre preguntas.
 
-El entrenamiento consistió en un ajuste fino completo sobre aproximadamente 354.000 registros de decisión, procedentes de conjuntos públicos de clasificación, NLI y QA, de los datos de decisión de Kev, de posiciones de juego con etiquetas exactas o de búsqueda, y de elementos sintéticos escritos y verificados a ciegas por un modelo grande. Los objetivos se mezclaron con etiquetas suaves de un profesor de decisión de 7B. A continuación se aplicaron 50 iteraciones de PPO sobre el juego Snake y, por último, un reajuste de temperatura sobre datos de calibración reservados. El autor verificó que los datos de entrenamiento no presentan solapamiento exacto ni de contención con ninguna suite de evaluación de Kev ni con los 231 elementos públicos de JevBench.
+El entrenamiento se realizó sobre aproximadamente 354.000 registros de decisión: conjuntos públicos de clasificación, NLI y QA, datos de decisión de Kev, posiciones de juego con etiquetas exactas o de búsqueda, e ítems sintéticos escritos y verificados a ciegas por un modelo grande. Los objetivos se mezclaron con etiquetas suaves de un modelo profesor de decisión de 7B. Después se aplicaron 50 iteraciones de PPO sobre Snake y un reajuste de temperatura sobre datos de calibración reservados. Los datos se comprobaron contra todas las suites de evaluación de Kev y contra los 231 ítems públicos de JevBench, sin solapamiento exacto ni por contención. El código de entrenamiento y los datos no se han publicado.
 
 ## Capacidades
 
-- Clasificación binaria calibrada mediante preguntas `noul`, con definiciones personalizables de falso y verdadero.
-- Elección entre opciones nombradas (`choice`) con descripciones opcionales; devuelve la opción ganadora, su confianza y el vector completo de probabilidades.
-- Puntuación en escalas ordinales (`score`) de entre 2 y 255 niveles; devuelve el nivel esperado y la probabilidad de cada nivel.
-- Resolución de múltiples preguntas heterogéneas sobre un mismo estado en una única pasada forward, sin interferencia entre preguntas.
-- Aceptación de estado en texto plano o JSON, lo que permite inyectar metadatos estructurados (por ejemplo, campos de un ticket).
-- Calibración de confianza: ECE de 0.065 en el conjunto público de JevBench y Brier de 0.328.
-- Servido mediante API HTTP compatible con `/v1/systemone` y endpoint `GET /health`.
-- No soporta generación de texto, tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento. El autor indica explícitamente que el backbone no debe usarse para generar texto.
+- Clasificación y enrutamiento: devuelve la mejor opción, su confianza y la distribución completa sobre 1-255 opciones con descripciones opcionales.
+- Evaluación de enunciados: calcula P(true) para un enunciado, con definiciones opcionales de falso y verdadero.
+- Puntuación ordinal: estima el nivel esperado y la probabilidad por nivel sobre 2-255 niveles ordenados.
+- Multitarea en un solo forward pass: varias preguntas comparten estado sin interferirse entre sí.
+- Salida calibrada: probabilidades ajustadas por temperatura (ECE 0.065 en JevBench público).
+- Juego: los mismos pesos juegan a Snake sobre un tablero textual (una pregunta `choice` y cuatro de sí/no por movimiento), con 66 comidas de media en tablero 12x12 (máximo 101).
+- Servidor HTTP compatible con el formato `/v1/systemone` de TypeSafe, de modo que clientes escritos para Jev o Kev funcionan sin cambios.
+- No soporta tool calling, agentes, generación de texto, visión ni audio. El propio autor advierte de no usar el backbone para generación de texto.
 
 ## Casos de uso
 
-- Triaje de tickets de soporte: con un estado JSON que contenga asunto y cuerpo del mensaje, se definen preguntas `choice` para la cola de destino (facturación, técnico, general) y `noul` para detectar enfado, más una pregunta `score` de urgencia. El ejemplo incluido en la model card resuelve las tres decisiones en una sola llamada.
-- Enrutado de peticiones en producción: al devolver probabilidades completas por opción, el sistema puede derivar a un humano cuando la confianza cae por debajo de un umbral, en lugar de aceptar ciegamente la mejor opción.
-- Moderación de contenido con umbral calibrado: la salida probabilística y el ECE bajo permiten fijar umbrales operativos con una tasa de falsos positivos predecible.
-- Etiquetado a escala sobre corpus existentes: al procesar 590 tokens de entrada por decisión y resolver varias preguntas por pasada, resulta adecuado para anotar grandes volúmenes con coste por elemento bajo.
-- Evaluación de sistemas de decisión: sirve como referencia en las suites JevBench y Kev para comparar adaptadores, LoRA o modelos de decisión alternativos.
-- Investigación en calibración y decisión estructurada: el repositorio expone la cabeza pointer y el formato de entrada, lo que facilita reproducir los experimentos de temperatura y calibración.
-- Control de agentes en entornos simulados: los mismos pesos juegan a Snake sobre un tablero de texto con una pregunta `choice` y cuatro preguntas sí/no por movimiento, con una media de 66 comidas por partida en tableros de 12x12 (máximo 101).
+- Enrutamiento de tickets de soporte: el ejemplo de la model card clasifica un ticket en colas (facturación, técnico, general), estima si el cliente está enfadado y puntúa la urgencia en una sola llamada de 27 ms p50, lo que permite integrarlo en el front de un helpdesk sin coste perceptible.
+- Moderación y triaje de contenido: usar preguntas `noul` encadenadas ("el texto contiene amenazas", "el texto es spam") sobre un estado JSON con metadatos, aprovechando que las preguntas son independientes y no se contaminan entre sí.
+- Clasificación de documentos en pipelines ETL: preguntas `choice` con hasta 255 categorías nombradas y descripciones, útil para taxonomías internas donde un LLM generativo sería más caro y menos determinista.
+- Encuestas y formularios con escala ordinal: preguntas `score` sobre niveles ("Bajo", "Normal", "Alto", "Crítico") para derivar el nivel esperado y la incertidumbre por ítem, con calibración explícita.
+- Evaluación automática de respuestas: dado un par pregunta/respuesta como estado, preguntas `noul` sobre corrección factual o adecuación de tono, con probabilidades comparables entre ítems.
+- Decisión en agentes de juego o simulación: el caso Snake demuestra que el modelo puede actuar como política de decisión sobre un tablero textual con etiquetas de búsqueda, extensible a otros entornos discretos.
+- Filtro previo a un LLM mayor: usar las probabilidades del modelo para decidir si una consulta requiere un modelo generativo, reduciendo coste y latencia en el camino crítico.
 
 ## Benchmarks y rendimiento
 
-JevBench, conjunto público (231 elementos, commit 26eb72d de jevbench, adaptador `typesafe` contra el servidor de este repositorio, una H200, sin red):
+JevBench público (231 ítems, commit 26eb72d, adaptador `typesafe`, una H200, sin red):
 
-| Nivel | Aciertos |
-|---|---|
-| standard (72, `original.jsonl`) | 66 |
-| easy (48, `easy.jsonl`) | 47 |
-| hard (111, `hard.jsonl`) | 63 |
-| Total | 176 / 231 = 0.762 |
+| Tier | Aciertos | Total |
+|---|---|---|
+| standard (`original.jsonl`) | 66 | 72 |
+| easy (`easy.jsonl`) | 47 | 48 |
+| hard (`hard.jsonl`) | 63 | 111 |
+| Total | 176 | 231 (0.762) |
 
-Métricas complementarias: Brier 0.328, ECE 0.065, latencia p50 27 ms, p95 60 ms por decisión, media de 590 tokens de entrada por decisión. El autor advierte de que la puntuación oficial de JevBench también emplea elementos sellados y que todos los sistemas listados puntúan bastante por debajo de su precisión pública en ese conjunto.
+Métricas adicionales reportadas: Brier 0.328, ECE 0.065, latencia p50 27 ms y p95 60 ms por decisión, 590 tokens de entrada de media por decisión.
 
-Comparativa de precisión pública en el panel de JevBench v1.4:
+Comparativa con el tablero público de JevBench v1.4 (según la model card):
 
-| Sistema | Precision publica |
+| Sistema | Acierto público |
 |---|---|
 | Jev 1.13.0 | 0.866 |
-| Qwen3.5-4B (entradas) | 0.74 - 0.82 |
+| Qwen3.5-4B (entradas) | 0.74-0.82 |
 | K2-Type-1B | 0.762 |
 | Gemma 4 E2B + LoRA (system-one-open) | 0.732 |
 | decider-2b | 0.710 |
 | kev 0.6B | 0.667 |
 | kev 4B | 0.662 |
 
-Suites de Kev (conjuntos dev/test congelados de jaredpalmer/kev, precisión en test):
-
-| Modelo | Fuentes entrenadas | Fuentes nuevas |
-|---|---|---|
-| K2-Type-1B | 0.813 | 0.688 |
-| Kev-0.8B (publicado) | 0.834 | 0.684 |
-
-Snake: media de 66 comidas por partida en tableros de 12x12, con un máximo de 101.
+El autor advierte de que la puntuación oficial de JevBench usa ítems sellados y que todos los sistemas listados rinden bastante por debajo de su precisión pública en ellos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: alrededor de 2,2 GB en FP16/BF16 (el repositorio ocupa 2,2 GB para 1.078 M de parámetros), aproximadamente 1,1 GB en INT8 y 0,55 GB en INT4. Hay que sumar el coste de activaciones y de la caché KV, más la cabeza pointer.
-- El servidor oficial requiere una GPU CUDA. El autor no documenta ejecución en CPU ni versiones cuantizadas, por lo que en la práctica el despliegue estándar es en FP16 sobre GPU.
-- GPU recomendadas: cabe holgadamente en GPUs de consumo con 8 GB o más, como RTX 3060 12 GB, RTX 4070, RTX 4080 o RTX 4090. Las medidas de referencia del autor se tomaron sobre una NVIDIA H200, pero el tamaño del modelo no exige hardware de centro de datos.
-- Despliegue: el repositorio incluye su propio servidor (`python -m jev.serve --run . --port 8000`) con API HTTP compatible con TypeSafe `/v1/systemone`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y el modelo no debe usarse con un pipeline de generación de texto estándar.
-- Latencia: la primera petición tras el arranque tarda unos segundos (calentamiento de CUDA); las posteriores se sitúan entre 20 y 60 ms. En la medición con H200, p50 de 27 ms y p95 de 60 ms por decisión.
-- Dependencias: `transformers >= 5.17` con código remoto y `torch 2.8` probado.
+- VRAM estimada: no disponible de forma explícita; con 1.078 M de parámetros en fp16 los pesos ocupan aproximadamente 2,2 GB, más overhead de activaciones y del servidor. Se recomienda holgura sobre ese mínimo.
+- GPU recomendadas: el autor valida el servidor en una H200; cualquier GPU CUDA con memoria suficiente para los pesos en fp16 debería servir, aunque no se publican pruebas en otras tarjetas.
+- GPU de consumo: no confirmado. Por tamaño de pesos cabría en RTX 4090, RTX 4080 o RTX 3090, pero el repo no documenta despliegue en estas tarjetas ni cuantizaciones ligeras.
+- Despliegue: el repo incluye un servidor propio (`python -m jev.serve --run . --port 8000`) que requiere una GPU CUDA; expone `/v1/systemone` y `GET /health`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y el uso de `transformers` requiere versión >= 5.17 con código remoto (probado con torch 2.8).
+- Latencia: 20-60 ms por petición tras el calentamiento inicial de CUDA (unos segundos en la primera llamada); p50 27 ms y p95 60 ms por decisión en H200. Throughput no publicado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | JevBench publico | Kev (fuentes nuevas) | Licencia |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K2-Type-1B | 1,078 M | no disponible (>8192 tokens debil) | 0.762 | 0.688 | apache-2.0 |
-| Kev-0.8B | ~0,8 B (no confirmado) | no disponible | no disponible | 0.684 | no disponible |
-| Jev 1.13.0 (TypeSafe) | no disponible | no disponible | 0.866 | no disponible | no disponible |
-| Qwen3.5-4B (entradas) | ~4 B | no disponible | 0.74 - 0.82 | no disponible | no disponible |
-| decider-2b | ~2 B (no confirmado) | no disponible | 0.710 | no disponible | no disponible |
-| Gemma 4 E2B + LoRA (system-one-open) | no disponible | no disponible | 0.732 | no disponible | no disponible |
+| K2-Type-1B | 1.078 M (1B) | 8192 | Decisión por pointer head, sin generación | Apache 2.0 | Pesos y servidor en HF |
+| Jev 1.13.0 | no disponible | no disponible | Decisión (referencia de TypeSafe) | no disponible | Referencia en JevBench |
+| decider-2b | ~2B | no disponible | Decisión | no disponible | Referencia en JevBench |
+| kev 0.6B | 0.6B | no disponible | Decisión | no disponible | Referencia en JevBench |
+| Gemma 4 E2B + LoRA | ~2B efectivos | no disponible | LLM con LoRA para decisión | no disponible | Referencia en JevBench |
 
-La comparación es parcial: solo K2-Type-1B y Kev-0.8B publican resultados en las suites de Kev, y solo K2-Type-1B declara licencia Apache 2.0 entre los sistemas listados. Los parámetros de la mayoría de alternativas no aparecen en la información disponible.
+En acierto público, K2-Type-1B (0.762) supera a Gemma 4 E2B + LoRA (0.732), decider-2b (0.710) y kev 0.6B/4B (0.667/0.662), y queda por debajo de Jev 1.13.0 (0.866) y del rango de Qwen3.5-4B (0.74-0.82). No se dispone de datos de calibración ni latencia de los competidores para comparar en esas dimensiones.
 
 ## Limitaciones y advertencias
 
-- Una sola pasada sin razonamiento: la aritmética de varios pasos, el cálculo de diferencias entre fechas y los documentos muy largos (más de 8192 tokens) rinden mal.
-- La calibración se ajustó sobre la suite de calibración de Kev; en otras distribuciones las probabilidades pueden ser demasiado confiadas o demasiado conservadoras. El ECE público en JevBench es 0.065.
-- Las respuestas están acotadas por las opciones ofrecidas: el modelo no puede responder "ninguna de estas" salvo que se incluya esa opción explícitamente.
-- No genera texto bajo ninguna circunstancia. Usar el backbone como modelo de lenguaje produce resultados sin sentido, porque la cabeza de lenguaje procede del modelo base y los pesos se entrenaron para la cabeza de decisión.
-- Entrenado y evaluado únicamente en inglés; no hay soporte multilingüe declarado.
-- Sesgos: no se documenta ningún análisis de sesgo demográfico, social o de dominio en la información disponible.
-- Riesgo de alucinación: al ser un modelo de decisión sobre opciones cerradas, el riesgo se traslada a una elección incorrecta con confianza alta en distribuciones alejadas de los datos de calibración.
-- El código de entrenamiento y los datos no se han liberado, lo que impide auditar la composición real del corpus más allá de la verificación de solapamiento declarada por el autor.
-- Repositorio con 303 descargas y 0 likes en el momento de la consulta, sin validación independiente conocida de los resultados publicados.
-- Licencia Apache 2.0, por lo que el uso comercial está permitido, pero no se ofrecen garantías sobre el rendimiento en dominios distintos de los evaluados.
+- Una sola pasada, sin razonamiento: aritmética multi-paso, diferencias de fechas y documentos de más de 8192 tokens son puntos débiles reconocidos por el autor.
+- Calibración dependiente de la distribución: el ajuste de temperatura se hizo sobre la suite de calibración de Kev; en otras distribuciones las probabilidades pueden ser demasiado confiadas o demasiado conservadoras (ECE 0.065 en JevBench público).
+- Respuestas acotadas a las opciones dadas: no puede responder "ninguna de estas" salvo que se ofrezca esa opción explícitamente.
+- Idioma: solo inglés; no hay soporte declarado para castellano ni otros idiomas.
+- No es un modelo generativo: el backbone conserva la cabeza de lenguaje del modelo base pero no está entrenada para generar; usarla produciría texto sin garantías.
+- Datos de entrenamiento y código no publicados: dificulta la auditoría y la reproducción, aunque se declara ausencia de solapamiento con Kev y JevBench público.
+- Sin cuantizaciones oficiales: el despliegue en GPUs de consumo o en entornos sin CUDA no está documentado.
+- Riesgo de sesgo y alucinación: no se documentan análisis de sesgo; al ser un clasificador acotado el riesgo de alucinación de contenido es bajo, pero las etiquetas y descripciones de opciones condicionan fuertemente la salida.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base IFM/K2-Horizon-0.9B antes de redistribuir.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chen11003/K2-Type-1B
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
-- JevBench: https://github.com/fstandhartinger/jevbench
-- Suites de Kev: https://github.com/jaredpalmer/kev
+- Repositorio de JevBench: https://github.com/fstandhartinger/jevbench
+- Referencia de TypeSafe (Jev/Kev): no disponible en la información proporcionada
+- Paper o blog del autor: no disponible en la información proporcionada

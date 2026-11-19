@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "ManTle/lab-misc",
+  "slug": "mantle-lab-misc",
+  "author": "ManTle",
+  "url": "https://huggingface.co/ManTle/lab-misc",
+  "created_at": "2026-11-19T09:08:57.000Z",
+  "updated_at": "2026-11-19T09:20:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video",
+    "evaluation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5676077793,
+  "storage_human": "5.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mantle: High-Performance Layer 2 Solution for Ethereum",
+      "url": "https://v1-mantle.org/",
+      "snippet": "Mantle is a Layer 2 scaling solution for Ethereum, designed to increase transaction throughput while reducing costs. Learn how …"
+    },
+    {
+      "title": "Mantle (geology) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mantle_(geology)",
+      "snippet": "A mantle is a layer inside a planetary body bounded below by a core and above by a crust. Mantles are made of rock or ices, and are …"
+    },
+    {
+      "title": "MANTLE | Scandinavian Skincare Innovation",
+      "url": "https://mantleskin.com/",
+      "snippet": "MANTLE is Scandinavian Skincare Innovation. Born in the North, where long winters, dry air and shifting seasons shape both …"
+    },
+    {
+      "title": "Mantle8 | Unearthing natural hydrogen",
+      "url": "https://mantle8.com/",
+      "snippet": "Using bottom-up exploration and decades of geology experience, we are on a mission to deliver natural hydrogen to the world."
+    },
+    {
+      "title": "Mantle | Institutional Infrastructure for Real-World Assets",
+      "url": "https://www.mantle.xyz/",
+      "snippet": "Mantle is the institutional infrastructure connecting real-world assets to on-chain capital markets. Explore issuance, allocation, and …"
+    }
+  ]
+}

@@ -1,108 +1,99 @@
 # Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-GGUF
 
 ## Resumen
+Qwen3.8-Flash-Next-MaxQ-64GB-GGUF es una cuantizacion GGUF de 64 GB de RAM del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el usuario Synchopate dentro de su linea de cuantizaciones MaxQ v3.0. El checkpoint comprime el modelo original de 329,72 GiB en BF16 hasta 53,99 GiB, manteniendo la arquitectura completa y sin podar: 48 capas de tronco, 512 expertos enrutados por capa, una tabla de embeddings por capa (PLE) de 320 millones de filas y un modulo NextN de prediccion multi-token. El resultado es un modelo de aproximadamente 176.500 millones de parametros totales con unos 5.000 millones de parametros activos por token, disenado para inferencia en CPU sin GPU.
 
-Qwen3.8-Flash-Next-MaxQ-64GB-GGUF es una cuantización GGUF del modelo Qwen/Qwen3.8-Flash-Next publicada por el usuario Synchopate bajo el sello MaxQ v3.0. El objetivo declarado es comprimir un modelo MoE de gran tamaño (aproximadamente 176,5B parámetros totales, con unos 5,0B activos por token) hasta un fichero de 53,99 GiB que pueda ejecutarse íntegramente en CPU con 64 GB de RAM, sin GPU y sin podar expertos enrutados (se conservan los 512/512). La arquitectura del modelo base combina capas Gated DeltaNet con atención completa QSA y una capa integrada de predicción multi-token (NextN MTP) en `blk.48`.
+La relevancia de esta publicacion radica en su enfoque de compresion agresiva pero selectiva: en lugar de podar expertos (como hacen otras cuantizaciones de tamano similar), reinvierte el espacio ahorrado en la tabla PLE, que pasa de 26,82 GiB a 10,73 GiB mediante PCA-Wiener y RaBitQ, y en mantener intactos los 512 expertos y el modulo MTP. El autor reporta un rendimiento en perplejidad y divergencia KL claramente mejor que una cuantizacion comparable de ISTA-DASLab, con velocidades de 12,66 tok/s en generacion y 71,97 tok/s en prefill sobre una CPU Zen 5 de 16 nucleos. Es una opcion pensada para entornos con mucha RAM y sin acelerador grafico.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una técnica de cuantización agresiva orientada a inferencia en CPU: la tabla de embeddings por capa (PLE) de 320 millones de filas se comprime de 26,82 GiB a 10,73 GiB mediante PCA-Wiener con dimensión 256 y RaBitQ Q1_0, y el espacio liberado se reinvierte en mantener todos los expertos del MoE. Por otro lado, el pipeline declarado es `image-text-to-text`, con un proyector visual opcional en BF16 de 0,85 GiB, lo que añade capacidades multimodales al conjunto.
-
-El checkpoint se distribuye en dos shards GGUF más un `mmproj` opcional, con hashes SHA-256 publicados, licencia Apache 2.0 y compatibilidad declarada con `llama.cpp` a través del fork `llama-modchip`. No constan descargas ni valoraciones en el momento de redactar esta ficha, y el autor no publica datos de benchmarks estándar (MMLU, HumanEval, GSM8K), sino únicamente métricas de perplejidad y divergencia de la propia cuantización.
+La licencia es qwen-community-1.0, heredada del modelo base, lo que condiciona el uso comercial. El pipeline declarado es image-text-to-text, e incluye un proyector visual opcional en BF16 de 0,85 GiB para capacidades multimodales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE híbrido (`qwen4exp`): 48 capas troncales (36 Gated DeltaNet + 12 QSA full attention con `compress_ratio = 4`) + 1 capa NextN MTP (`blk.48`) |
-| Parametros totales | ~176,5B (~125,3B transformer + MoE de 512 expertos + MTP + 51,2B de tabla PLE de 320M filas) |
-| Parametros activos | ~5,0B por token (10 de 512 expertos enrutados + 1 experto compartido + tronco denso GDN/QSA) |
+| Arquitectura | Transformer hibrido con MoE: 36 capas Gated DeltaNet y 12 capas QSA de atencion completa, mas 1 capa NextN MTP (topologia qwen4exp) |
+| Parametros totales | ~176.500 millones (125.300 millones en transformer + MoE de 512 expertos + MTP + 51.200 millones en tabla PLE) |
+| Parametros activos | ~5.000 millones por token (10 de 512 expertos enrutados + 1 experto compartido + tronco denso GDN/QSA) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mezcla GGUF: F32, Q8_0, Q6_K, IQ2_S, BF16, Q2_0 (tipo 42), IQ3_XXS, MXFP4 (39), IQ4_NL, Q2_K, Q1_0 (41); `max_type = 42`, sin tipos personalizados >= 43 |
+| Tipos de cuantizacion | Mezcla de tipos ggml estandar: F32 (351 tensores), Q8_0 (339), Q6_K (198), IQ2_S (60), BF16 (49), Q2_0 (39), IQ3_XXS (36), MXFP4 (7), IQ4_NL (4), Q2_K (2), Q1_0 (1); max_type = 42, sin tipos personalizados |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (2 shards + `mmproj` BF16 opcional) |
+| Licencia | qwen-community-1.0 (other) |
+| Formato de pesos | GGUF (2 shards para el LLM + mmproj BF16 opcional para vision) |
 
 ## Arquitectura y entrenamiento
+El modelo base Qwen3.8-Flash-Next emplea una topologia hibrida denominada qwen4exp en la model card: 48 capas de tronco, de las cuales 36 son Gated DeltaNet con dimensiones [48x128x128] y 12 son QSA de atencion completa con compress_ratio = 4. Sobre esta columna se anade una capa NextN de prediccion multi-token (blk.48) que acelera la decodificacion especulativa. La capa MoE tiene 512 expertos enrutados con top-10 activos (K = 640 de ancho completo) mas un experto compartido, sin sesgo en ffn_down_exps. La tabla de embeddings por capa (PLE) contiene 320.001.536 filas con D = 256.
 
-El modelo base Qwen3.8-Flash-Next es un MoE con tronco híbrido: 36 capas de Gated DeltaNet (estado lineal con matrices de 48×128×128) alternadas con 12 capas de atención completa QSA, más una capa NextN de predicción multi-token que actúa como borrador integrado para decodificación especulativa. El MoE mantiene 512 expertos enrutados con top-10 activos y un experto compartido, con anchura `K = 640` y sin sesgo en `ffn_down_exps`. El vocabulario es de 248.320 tokens y la tabla PLE tiene 320.001.536 filas con dimensión interna de 256 (`qwen4exp.embedding_length_per_layer_input = 256`).
-
-Sobre el entrenamiento del modelo base no se proporciona información en la documentación disponible (número de tokens, composición del dataset, uso de RLHF/DPO). Lo que sí está documentado es el proceso de cuantización de esta versión: la tabla PLE se reduce de 26,82 GiB en IQ4_NL a 10,73 GiB mediante PCA-Wiener con D=256 y RaBitQ Q1_0, y los 16,09 GiB liberados se reinvierten en conservar los 512 expertos sin podar, aplicar escalas firmadas Q2_0 con Woodbury DualGram en FP64 y mantener el módulo MTP. El autor declara que la construcción es «100% donor-free», es decir, sin reutilizar tensores de otras cuantizaciones, y que todos los tipos de tensor son `ggml` estándar.
+La cuantizacion de Synchopate no modifica la topologia: mantiene los 512 expertos sin podar y comprime la tabla PLE de 26,82 GiB (IQ4_NL) a 10,73 GiB mediante subespacio PCA-Wiener con D = 256 y RaBitQ en Q1_0, reinvirtiendo los 16,09 GiB liberados en preservar el MoE completo, escalas firmadas Q2_0 con Woodbury DualGram en FP64 y el modulo MTP (0,81 GiB). Todos los tensores usan tipos ggml estandar, lo que garantiza compatibilidad con llama.cpp y derivados. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens ni si hubo RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
-
-- Generación de texto conversacional multi-turno, con pipeline declarado `image-text-to-text`.
-- Procesamiento de imagen y texto combinados mediante el proyector visual opcional `mmproj-Qwen3.8-Flash-Next-BF16.gguf` (0,85 GiB, 334 tensores).
-- Decodificación especulativa integrada mediante la capa NextN MTP (`blk.48`), con una tasa de aceptación declarada del 93,0 % en la prueba `tg128`.
-- Razonamiento y generación de código: no se documentan evaluaciones específicas, pero el modelo base pertenece a la familia Qwen3.8, orientada a tareas generales de lenguaje y código.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada (el campo de idiomas no está cumplimentado).
-- Ejecución en CPU sin GPU mediante `llama-modchip` v3.0, con binarios portables para AVX2 y AVX-512.
+- Generacion de texto conversacional multi-turno, segun el tag conversational y el pipeline declarado.
+- Razonamiento y respuesta a instrucciones heredados del modelo base Qwen3.8-Flash-Next.
+- Capacidades multimodales de imagen a texto mediante el proyector visual opcional mmproj-Qwen3.8-Flash-Next-BF16.gguf (0,85 GiB).
+- Decodificacion especulativa integrada mediante la capa NextN MTP, con una tasa de aceptacion reportada del 93,0 %.
+- Inferencia en CPU pura sin GPU, gracias a la cuantizacion mixta y a la integracion con llama-modchip.
+- Compatibilidad con llama.cpp y con el binario llama-server-modchip (variantes AVX2 y AVX-512).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible en la informacion proporcionada.
 
 ## Casos de uso
-
-- Inferencia local en estaciones de trabajo sin GPU: el checkpoint ocupa 53,99 GiB y el autor reporta un `VmHWM` de 45,08 GiB en una CPU Zen 5 de 16 núcleos, por lo que encaja en equipos con 64 GB de RAM y permite desplegar un MoE de ~176,5B parámetros sin acelerador dedicado.
-- Procesamiento de documentos con imagen y texto: al incluir un proyector visual BF16, el modelo puede recibir capturas, páginas escaneadas o diagramas junto a instrucciones textuales para tareas de extracción y resumen, siempre que se cargue el `mmproj` opcional.
-- Servicio de chat conversacional de baja concurrencia: con `llama-server` y el binario portable GLIBC 2.30, se puede exponer un endpoint compatible con la API de OpenAI en entornos Linux x86_64 sin dependencias de CUDA.
-- Prototipado e investigación sobre cuantización extrema: la ficha documenta métricas de PPL y KLD frente a una referencia cuantizada, lo que lo convierte en un artefacto útil para estudiar el impacto de técnicas como PCA-Wiener, RaBitQ o Q2_0 en modelos MoE de gran tamaño.
-- Evaluación de decodificación especulativa con MTP: la capa NextN integrada y la tasa de aceptación reportada permiten medir en condiciones reales la ganancia de throughput de la predicción multi-token en CPU.
-- Despliegue en entornos con restricciones de acelerador: al no requerir GPU, resulta adecuado para laboratorios, aulas o infraestructuras donde el acceso a A100/H100 no está disponible y se prioriza la reproducibilidad con hardware de consumo.
-- Generación de código en local para desarrolladores: el modelo base pertenece a una familia con capacidades de código, aunque esta versión cuantizada no publica evaluaciones específicas de HumanEval ni similares, por lo que su idoneidad en producción debe validarse empíricamente.
+- Despliegue en servidores sin GPU: el checkpoint ocupa 53,99 GiB y se ejecuta con un pico de memoria de 45,08 GiB en una CPU Zen 5 de 16 nucleos, lo que permite servir el modelo en maquinas con 64 GB de RAM y sin acelerador grafico.
+- Estaciones de trabajo de desarrollo con RAM abundante: un equipo con 64 GB puede cargar los dos shards y el proyector visual para tareas de prototipado conversacional y multimodal sin depender de la nube.
+- Procesamiento por lotes de documentos e imagenes: el pipeline image-text-to-text y el mmproj BF16 permiten extraer descripciones o responder preguntas sobre imagenes en pipelines offline donde la latencia no es critica.
+- Entornos con requisitos de privacidad: al ejecutarse localmente en CPU, los datos no salen de la maquina, lo que encaja en escenarios con datos sensibles que no pueden enviarse a APIs externas.
+- Evaluacion e investigacion de cuantizaciones: la model card documenta perplejidad, KLD, hashes SHA-256 y manifiesto de tensores, lo que facilita reproducir experimentos de compresion sobre arquitecturas MoE hibridas.
+- Chat interactivo de baja concurrencia: con 12,66 tok/s de generacion en CPU, es adecuado para un usuario o pocos usuarios simultaneos en tareas de asistencia conversacional.
+- Pruebas de decodificacion especulativa: la capa NextN MTP integrada y la tasa de aceptacion del 93,0 % permiten estudiar el impacto del MTP en entornos CPU-only.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K). Los datos disponibles son métricas de calidad de cuantización y de rendimiento en CPU sobre el conjunto held-out `wiki-alt.txt` (40 × 512 chunks, sin solapamiento de 8-gramas ni 13-gramas con la calibración):
-
-| Metrica | MaxQ-64GB | GSQ-RCO-Coder-IQ1_M (referencia) |
+| Metrica | MaxQ-64GB | ISTA-DASLab GSQ-RCO-Coder-IQ1_M |
 |---|---|---|
 | Tamano | 53,99 GiB | 54,40 GiB |
-| Expertos conservados | 512/512 | 256/512 (podados) |
-| MTP integrado | Si (`blk.48`) | No |
-| Mean PPL | 3,4325 ± 0,0708 | 5,0916 |
+| Expertos | 512/512 sin podar | 256/512 podados |
+| MTP | Si (blk.48) | No |
+| Mean PPL (wiki-alt.txt) | 3,4325 ± 0,0708 | 5,0916 |
 | Mean KLD | 0,4971 ± 0,0099 | 0,9302 |
-| Median KLD | no disponible en detalle (-64,3% frente a referencia) | referencia |
+| Median KLD | no disponible en detalle | -64,3 % respecto a MaxQ |
+| tg128 (generacion) | 12,66 tok/s | no disponible |
+| pp512 (prefill) | 71,97 tok/s | no disponible |
+| Aceptacion MTP | 93,0 % | no aplica |
+| VmHWM | 45,08 GiB | no disponible |
 
-| Metrica de inferencia (Zen 5, 16 nucleos, sin GPU) | Valor |
-|---|---|
-| Throughput `tg128` | 12,66 tok/s |
-| Tasa de aceptación MTP | 93,0 % |
-| Throughput `pp512` | 71,97 tok/s |
-| Memoria maxima (`VmHWM`) | 45,08 GiB |
+Las mediciones se realizaron sobre wiki-alt.txt con 40 x 512 fragmentos y 0,000000 % de solapamiento de 8-gramas y 13-gramas con el conjunto de calibracion, en una CPU Zen 5 de 16 nucleos sin GPU. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no aplica en el modo declarado; la ejecución es en CPU. El autor fija un techo de menos de 55,5 GiB de RAM para el conjunto LLM.
-- RAM necesaria: 64 GB recomendados (53,99 GiB de pesos + overhead de contexto y runtime); `VmHWM` medido de 45,08 GiB en la prueba del autor.
-- GPU recomendadas: no disponibles para este checkpoint; el autor no documenta ejecución en GPU. El binario distribuido es `llama-server-modchip` para Linux x86_64 con AVX2 o AVX-512.
-- ¿Cabe en GPU de consumo? No se documenta. El tamaño de 53,99 GiB excede la VRAM de cualquier GPU de consumo actual (máximo 24 GB en RTX 4090), por lo que requeriría offload parcial o CPU.
-- Opciones de despliegue: `llama.cpp` a través del fork `llama-modchip` v3.0 (`./install.sh --preset qwen38-64gb` o `llama-server` directo). No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: 12,66 tok/s en generación y 71,97 tok/s en prefill sobre un Zen 5 de 16 núcleos, con hilos configurados como `N_CORES - 1` y `--poll 0`.
+- RAM estimada: 53,99 GiB para los pesos del LLM; el autor reporta un pico de memoria (VmHWM) de 45,08 GiB durante la ejecucion con llama-modchip. Se recomienda un equipo con 64 GB de RAM para dejar margen al sistema y al contexto.
+- VRAM: no aplica para el modo CPU; no se documenta despliegue en GPU en la informacion proporcionada.
+- GPU recomendadas: no disponible; el checkpoint esta disenado para inferencia en CPU.
+- CPU: el benchmark se ejecuto en un procesador Zen 5 de 16 nucleos. El binario llama-server-modchip incluye variantes AVX2 y AVX-512 (con AVX-512 VBMI y VNNI), seleccionables automaticamente.
+- Cabe en GPU de consumo: no disponible; el foco es CPU.
+- Opciones de despliegue: llama.cpp, llama-server-modchip v3.0 (binario portable con GLIBC <= 2.30) y el preset qwen38-64gb de llama-modchip. vLLM, TGI y Ollama no se mencionan en la informacion disponible.
+- Latencia y throughput: 12,66 tok/s en generacion (tg128) y 71,97 tok/s en prefill (pp512) sobre Zen 5 de 16 nucleos; threading recomendado -t (N_CORES - 1) con --poll 0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-MaxQ-64GB (este) | ~176,5B totales / ~5,0B activos | no disponible | GGUF mixta, 53,99 GiB | Apache 2.0 | 512/512 expertos, MTP integrado, CPU-only |
-| ISTA-DASLab GSQ-RCO-Coder-IQ1_M | no disponible | no disponible | GGUF, 54,40 GiB | no disponible | 256/512 expertos podados, sin MTP; PPL 5,0916, KLD 0,9302 |
-| Qwen/Qwen3.8-Flash-Next (BF16 original) | ~176,5B totales / ~5,0B activos | no disponible | BF16, 329,72 GiB | Apache 2.0 | Modelo base sin cuantizar; requiere hardware de gran memoria |
+| Qwen3.8-Flash-Next-MaxQ-64GB (este) | ~176,5 B totales / ~5 B activos | no disponible | GGUF, 53,99 GiB | qwen-community-1.0 | 512/512 expertos, MTP integrado, PPL 3,4325 |
+| ISTA-DASLab GSQ-RCO-Coder-IQ1_M | no disponible | no disponible | GGUF, 54,40 GiB | no disponible | 256/512 expertos podados, sin MTP, PPL 5,0916 |
+| Qwen/Qwen3.8-Flash-Next (BF16 original) | ~176,5 B totales / ~5 B activos | no disponible | safetensors BF16, 329,72 GiB | qwen-community-1.0 | Referencia sin cuantizar, requiere hardware de gama alta |
 
-No se dispone de datos de benchmarks estándar para comparar con alternativas de la misma categoría; la comparación se limita a métricas de cuantización y tamaño.
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- El campo de idiomas no está cumplimentado: no hay garantía documentada de cobertura multilingüe más allá de la del modelo base, que no se detalla.
-- No se publican resultados en benchmarks estándar (MMLU, HumanEval, GSM8K), por lo que el rendimiento en tareas reales debe validarse de forma independiente.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan medidas específicas de mitigación en esta cuantización.
-- La cuantización es extremadamente agresiva (Q1_0 en la tabla PLE, Q2_0 en las escalas de expertos, IQ2_S e IQ3_XXS en otras partes), lo que puede degradar tareas sensibles a precisión numérica como matemáticas o código.
-- El autor advierte de una etiqueta `general.size_label = "5.0B"` heredada del proceso de conversión que no refleja el tamaño real (~176,5B totales); herramientas que lean ese campo pueden dimensionar mal el modelo.
-- El despliegue documentado depende del fork `llama-modchip` v3.0 y de binarios portables concretos; no se garantiza compatibilidad con `llama.cpp` upstream ni con otros runtimes.
-- La licencia Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen/Qwen3.8-Flash-Next, que deben verificarse por separado.
-- El repositorio registra 0 descargas y 0 valoraciones en el momento de la consulta, por lo que no existe validación comunitaria del checkpoint.
-- No se documentan requisitos de contexto máximo, por lo que el comportamiento con ventanas largas no está caracterizado.
+- La licencia qwen-community-1.0 impone condiciones especificas para uso comercial; es necesario revisar el texto completo en el repositorio del modelo base antes de desplegarlo en produccion.
+- La cuantizacion Q2_0 y Q1_0 introduce perdida de calidad respecto al BF16 original; el autor reporta Mean PPL 3,4325 y Mean KLD 0,4971 frente a la referencia, lo que implica cierta degradacion medible.
+- El modelo esta pensado para inferencia en CPU; no se documenta soporte para GPU ni para frameworks como vLLM o TGI, lo que limita su integracion en infraestructuras aceleradas.
+- El rendimiento de 12,66 tok/s en generacion es bajo para aplicaciones interactivas de alta concurrencia; no es adecuado para servir a muchos usuarios simultaneos.
+- El badge "5.0B" que Hugging Face detecta automaticamente es enganoso: corresponde a los parametros activos, no a los totales (~176,5 B); conviene tenerlo en cuenta al planificar recursos.
+- No se dispone de informacion sobre sesgos, riesgo de alucinacion, cobertura idiomatica ni limitaciones de contexto del modelo base en la documentacion proporcionada.
+- La tabla PLE se almacena en Q1_0, el tipo mas agresivo del checkpoint; es plausible que afecte a la calidad en tareas que dependan fuertemente de los embeddings por capa, aunque no se documenta un analisis especifico.
+- El binario llama-modchip es un fork especifico; la compatibilidad con versiones estandar de llama.cpp no esta garantizada en todos los casos.
 
 ## Enlaces
-
 - Repositorio Hugging Face: https://huggingface.co/Synchopate/Qwen3.8-Flash-Next-MaxQ-64GB-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Fork de inferencia: https://github.com/synchopate/llama-modchip
-- Releases del binario: https://github.com/synchopate/llama-modchip/releases/download/v3.0/
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada.
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Repositorio llama-modchip: https://github.com/synchopate/llama-modchip
+- Releases de llama-modchip v3.0: https://github.com/synchopate/llama-modchip/releases/download/v3.0

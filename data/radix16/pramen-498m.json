@@ -5,7 +5,7 @@
   "author": "radix16",
   "url": "https://huggingface.co/radix16/pramen-498m",
   "created_at": "2026-11-18T12:22:11.000Z",
-  "updated_at": "2026-11-18T12:24:54.000Z",
+  "updated_at": "2026-11-18T14:39:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "maxgfr",
   "url": "https://huggingface.co/maxgfr/s6-cast2-pico",
   "created_at": "2026-11-18T12:47:39.000Z",
-  "updated_at": "2026-11-18T12:47:42.000Z",
+  "updated_at": "2026-11-18T16:37:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "time-series-forecasting",

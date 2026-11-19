@@ -17,6 +17,7 @@
   "tags": [
     "onnx",
     "safetensors",
+    "qwen3",
     "zh",
     "en",
     "dataset:jingyaogong/minimind_dataset",
@@ -34,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 74,
+  "downloads_30d": 75,
   "trending_score": 0,
   "parameters": 63912192,
   "parameters_human": "63.9M",

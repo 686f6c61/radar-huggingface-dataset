@@ -57,8 +57,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "altertable-ai/onejev1.6-0.8b-onnx-int8",
+  "renamed_at": "2026-11-19T05:44:35.360Z",
   "benchmarks": [],
   "sources": []
 }

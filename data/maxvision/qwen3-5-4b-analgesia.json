@@ -5,7 +5,7 @@
   "author": "maxvision",
   "url": "https://huggingface.co/maxvision/Qwen3.5-4B-Analgesia",
   "created_at": "2026-10-02T14:50:48.000Z",
-  "updated_at": "2026-10-18T17:04:31.000Z",
+  "updated_at": "2026-11-18T14:36:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 209,
+  "downloads_30d": 177,
   "trending_score": 0,
   "parameters": 4841450496,
   "parameters_human": "4.84B",

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "AJ-Gonzalez/koda-lfm3-1.7b",
+  "slug": "aj-gonzalez-koda-lfm3-1-7b",
+  "author": "AJ-Gonzalez",
+  "url": "https://huggingface.co/AJ-Gonzalez/koda-lfm3-1.7b",
+  "created_at": "2026-11-19T10:57:26.000Z",
+  "updated_at": "2026-11-19T10:57:32.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lfm3",
+    "lora",
+    "cybersecurity",
+    "ids",
+    "reasoning",
+    "en",
+    "dataset:netgoat-ai/Koda-IDS-Frontier-SFT-Modes",
+    "base_model:LiquidAI/LFM3-1.7B-Base",
+    "base_model:adapter:LiquidAI/LFM3-1.7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83824500,
+  "storage_human": "84 MB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

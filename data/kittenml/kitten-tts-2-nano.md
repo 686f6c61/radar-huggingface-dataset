@@ -2,80 +2,84 @@
 
 ## Resumen
 
-Kitten TTS 2 Nano es un modelo de síntesis de voz (text-to-speech) desarrollado por KittenML, diseñado para inferencia en CPU con un consumo de recursos mínimo. Se distribuye en dos formatos: un grafo ONNX con pesos cuantizados a int8 de solo 17,4 MB y los pesos originales en float32 para PyTorch. El modelo cubre 8 idiomas (inglés, alemán, español, italiano, portugués, ruso, hindi y francés) y ofrece 37 voces predefinidas con una frecuencia de muestreo de 24 kHz.
+Kitten TTS 2 Nano es un modelo de síntesis de voz (text-to-speech) desarrollado por KittenML, diseñado para inferencia en CPU con un tamaño extremadamente reducido. Cada modelo de idioma cuenta con 17 millones de parámetros y el conjunto cubre 8 idiomas (inglés, alemán, español, italiano, portugués de Brasil, ruso, hindi y francés) con un total de 37 voces predefinidas, generando audio a 24 kHz.
 
-La propuesta de valor es clara: un modelo de 17 millones de parámetros por idioma que puede ejecutarse sin GPU y sin PyTorch instalado, lo que lo hace adecuado para despliegues en dispositivos de borde, aplicaciones de escritorio y servicios con requisitos estrictos de latencia y coste. La licencia Apache-2.0 cubre tanto los pesos como los paquetes de voz y los ficheros G2P (grapheme-to-phoneme) incluidos, lo que elimina fricciones para uso comercial.
+La propuesta diferencial es el despliegue ligero: los pesos ONNX en int8 ocupan 17,4 MB por idioma y los int4 apenas 8,8 MB, lo que permite ejecutar el modelo sin PyTorch ni GPU, únicamente con ONNX Runtime. Esto lo hace relevante para entornos con recursos muy limitados: dispositivos embebidos, navegadores, aplicaciones de escritorio o servicios con requisitos estrictos de latencia y memoria.
 
-El modelo se publicó en noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones en Hugging Face, por lo que se trata de un lanzamiento reciente sin validación comunitaria todavía. La información disponible proviene exclusivamente de la model card del autor.
+El modelo se distribuye bajo licencia Apache-2.0, incluyendo los pesos, los paquetes de voces y los ficheros G2P (grafema a fonema) incluidos. La integración se realiza mediante el paquete `kittenml`, que gestiona la descarga selectiva de los ficheros necesarios según el backend y el formato de pesos elegidos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo TTS; se distribuye como grafo ONNX y pesos PyTorch) |
-| Parámetros totales | 17 M por modelo de idioma |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | int8 (ONNX), float32 (PyTorch) |
-| Idiomas soportados | en, de, es, it, pt, ru, hi, fr |
+| Arquitectura | no disponible (modelo TTS; pesos en ONNX y PyTorch) |
+| Parametros totales | 17 M por modelo de idioma |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | int8 (17,4 MB por idioma), int4 (8,8 MB por idioma), float32 (PyTorch) |
+| Idiomas soportados | en, de, es, it, pt (Brasil), ru, hi, fr |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (int8), safetensors/PyTorch (float32) |
+| Formato de pesos | ONNX (int8 e int4), safetensors/PyTorch (float32) |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna del modelo más allá de indicar que se trata de un sistema TTS con 17 millones de parámetros por idioma y una frecuencia de salida de 24 kHz. Se distribuye como grafo ONNX para ejecución con ONNX Runtime (backend por defecto, pesos int8) y como pesos float32 para PyTorch (backend `torch`, con soporte de GPU vía CUDA). No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación.
+La información disponible no detalla la arquitectura interna del modelo (tipo de red, mecanismo de atención, componentes de prosodia o duración). Lo que sí se especifica es que cada idioma dispone de su propio modelo de 17 millones de parámetros y que la inferencia se ejecuta como un grafo ONNX mediante ONNX Runtime, con variantes cuantizadas en int8 e int4, además de los pesos originales en float32 para PyTorch.
 
-El modelo incorpora ficheros G2P empaquetados para la conversión de grafemas a fonemas, cubiertos por la misma licencia Apache-2.0. La selección de voz determina el idioma de síntesis, y el parámetro `speed` permite ajustar la velocidad del habla. No hay información pública sobre innovaciones técnicas adicionales como decodificación especulativa o mecanismos de atención lineal.
+El modelo incorpora ficheros G2P empaquetados para la conversión de texto a fonemas, y las voces se almacenan como paquetes separados por idioma en ficheros `voices_<lang>.npz`. No se han publicado datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de RLHF o ajuste fino preferencial.
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto en 8 idiomas: inglés, alemán, español, italiano, portugués (Brasil), ruso, hindi y francés.
-- 37 voces predefinidas con nombres y descripciones asociadas (por ejemplo, "Eleanor" como historiadora sombría en inglés, "Sofia" como voz femenina 1 en español).
+- Síntesis de voz a partir de texto en 8 idiomas: inglés, alemán, español, italiano, portugués de Brasil, ruso, hindi y francés.
+- 37 voces predefinidas con descripciones de estilo (por ejemplo, "historiador sombrío" o "locutor deportivo enérgico" en inglés; voces femeninas y masculinas numeradas en el resto de idiomas).
 - Selección de voz por nombre (insensible a mayúsculas) o por descripción; si no se especifica voz, se usa la primera del idioma.
-- Control de velocidad del habla mediante el parámetro `speed`.
-- Salida de audio a 24 kHz.
-- Ejecución en CPU sin necesidad de PyTorch (backend ONNX int8) o en GPU con PyTorch float32.
-- Conversión de grafemas a fonemas integrada mediante ficheros G2P empaquetados.
+- Control de velocidad mediante el parámetro `speed` (por ejemplo, `speed=1.1`).
+- Generación de audio a 24 kHz.
+- Ejecución en CPU sin necesidad de PyTorch mediante ONNX Runtime (backend por defecto), o en GPU con el backend PyTorch (`device="cuda"`).
+- Descarga selectiva de ficheros según backend y formato de pesos.
 - No se documentan capacidades de clonación de voz, emoción controlable, tool calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- **Lectura de notificaciones y accesibilidad en aplicaciones de escritorio**: el modelo ONNX int8 de 17,4 MB puede empaquetarse dentro de una aplicación sin dependencias pesadas y ejecutarse en CPU, lo que permite leer en voz alta notificaciones o contenido de pantalla en tiempo real sin conexión a red.
-- **Asistentes de voz embebidos en dispositivos de borde**: con 17 M de parámetros por idioma y ejecución en CPU, cabe en dispositivos con recursos limitados (Raspberry Pi, routers, electrodomésticos conectados) donde no hay GPU disponible.
-- **Generación de audiolibros y pódcasts automatizados**: las 10 voces en inglés con descripciones de personaje (historiador, periodista, locutor deportivo) permiten asignar voces diferenciadas a narradores o secciones de un mismo contenido.
-- **Atención al cliente telefónica o por voz**: la latencia reducida de un modelo pequeño en CPU y el soporte de 8 idiomas permiten construir sistemas IVR multilingües sin depender de servicios en la nube.
-- **Localización de contenido multimedia**: un mismo pipeline puede generar pistas de voz en español, francés, alemán, italiano, portugués, ruso e hindi a partir de guiones traducidos, usando las voces nativas de cada idioma.
-- **Prototipado rápido de interfaces de voz**: la API de Python (`pip install kittenml`) y la posibilidad de alternar entre backend ONNX y PyTorch facilitan la experimentación en notebooks y entornos de desarrollo sin infraestructura GPU.
-- **Sistemas de anuncios públicos y señalización**: la síntesis en CPU con bajo consumo permite generar anuncios pregrabados en múltiples idiomas para aeropuertos, estaciones o comercios.
+- Lectura por voz en aplicaciones de accesibilidad: el modelo puede convertir texto en audio en tiempo real en el propio dispositivo del usuario gracias a sus 17,4 MB en int8, sin depender de servicios en la nube.
+- Asistentes de voz embebidos: con 8,8 MB en int4 y ejecución en CPU, es viable integrarlo en dispositivos con memoria limitada (Raspberry Pi, routers, electrodomésticos) para respuestas habladas en varios idiomas.
+- Audiolibros y contenido largo por lotes: la generación a 24 kHz con control de velocidad permite producir narraciones en inglés, alemán, español, italiano, portugués, ruso, hindi y francés desde un mismo pipeline.
+- Localización de productos: un mismo flujo de texto puede sintetizarse en cualquiera de los 8 idiomas soportados, reutilizando las voces nativas de cada uno para doblaje o avisos multilingües.
+- Sistemas de megafonía y avisos automatizados: la baja latencia esperada al ejecutar en CPU y el tamaño reducido permiten desplegar anuncios dinámicos en estaciones, aeropuertos o comercios sin infraestructura GPU.
+- Prototipado e investigación en TTS: al ser Apache-2.0 y ofrecer pesos en float32 para PyTorch, sirve como base para experimentación, ajuste fino o comparación de técnicas de cuantización.
+- Aplicaciones web del lado del cliente: los pesos ONNX pueden servirse junto a la aplicación y ejecutarse con ONNX Runtime Web, evitando costes de servidor de síntesis.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: no aplica en el backend ONNX int8 (ejecución en CPU, sin VRAM). En el backend PyTorch float32, el modelo de 17 M de parámetros ocupa aproximadamente 68 MB en memoria (17 M × 4 bytes); con overhead de activaciones y del runtime, el consumo es marginal incluso en GPUs de gama baja.
-- **GPU recomendadas**: cualquier GPU con soporte CUDA puede ejecutar el backend `torch` (por ejemplo, RTX 4090, A100, H100), aunque el modelo está optimizado para CPU y no requiere GPU.
-- **Compatibilidad con GPU de consumo**: sí, cabe holgadamente en cualquier GPU de consumo, e incluso en iGPU y CPU sin aceleración.
-- **Opciones de despliegue**: ONNX Runtime (backend por defecto), PyTorch (backend `torch`, con `device="cuda"` opcional), y la librería `kittenml` como envoltorio de alto nivel.
-- **Latencia y throughput estimados**: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no aplica en el backend ONNX por defecto (ejecución en CPU); con el backend PyTorch en GPU, los pesos float32 de 17 M de parámetros ocupan del orden de decenas de MB, aunque no se especifica la VRAM total necesaria.
+- GPU recomendadas: no se documentan requisitos concretos; el backend PyTorch admite `device="cuda"` en cualquier GPU compatible con CUDA.
+- Cabe en GPU de consumo: sí, por el tamaño reducido de los pesos (17 M de parámetros), aunque no se detallan modelos concretos.
+- Cabe en CPU: sí, es el modo de ejecución principal; int8 requiere 17,4 MB por idioma e int4 8,8 MB por idioma.
+- Opciones de despliegue: ONNX Runtime (backend por defecto, con `onnxruntime>=1.20` para int4) y PyTorch (backend alternativo). El paquete `kittenml` gestiona la carga y la descarga selectiva.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni comparaciones con otros modelos TTS, por lo que no es posible establecer una comparativa rigurosa con alternativas de la misma categoría.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
+
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Kitten TTS 2 Nano | 17 M por idioma | no disponible | 8 | Apache-2.0 | ONNX int8/int4, PyTorch float32 |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- **Sin validación comunitaria**: el modelo no registra descargas ni interacciones en Hugging Face en el momento de la ficha, por lo que no hay evidencia externa sobre su calidad o estabilidad en producción.
-- **Riesgo de alucinación y errores de pronunciación**: al no publicarse benchmarks ni evaluaciones de naturalidad (MOS) o inteligibilidad (WER), no es posible cuantificar la fidelidad de la síntesis; los ficheros G2P incluidos pueden fallar en palabras fuera de vocabulario o nombres propios.
-- **Cobertura de voces desigual**: el inglés dispone de 10 voces, mientras que el francés solo tiene 3 y el resto de idiomas 4; la variedad de registros y géneros es limitada fuera del inglés.
-- **Sin control emocional ni clonación**: las voces son fijas y no se documentan parámetros de emoción, estilo o clonación de voz, lo que limita aplicaciones que requieran expresividad variable.
-- **Idiomas no cubiertos**: no hay soporte para árabe, chino, japonés, coreano ni otras lenguas no listadas; el portugués está limitado a la variante de Brasil.
-- **Licencia**: Apache-2.0 permite uso comercial, modificación y redistribución con atribución; no se identifican restricciones adicionales en la información disponible, pero conviene revisar los términos de los ficheros G2P empaquetados.
-- **Dependencia de la librería `kittenml`**: la API de referencia requiere instalar el paquete `kittenml`, cuyo mantenimiento y compatibilidad futura no están garantizados por la información disponible.
+- No se documentan sesgos conocidos del modelo; al ser un sistema TTS entrenado con datos no especificados, pueden aparecer sesgos de pronunciación, prosodia o estilo asociados a las voces y los idiomas.
+- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí puede producir pronunciaciones incorrectas, entonación artificial o errores en palabras poco frecuentes, siglas y nombres propios.
+- Limitaciones de contexto o idioma: la información no especifica la longitud máxima de texto de entrada; el modelo cubre 8 idiomas y no se documentan otros.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, modificación y redistribución, incluyendo pesos, voces y ficheros G2P, con las obligaciones habituales de atribución y aviso de licencia.
+- Caveats para producción: el formato int4 requiere `onnxruntime>=1.20`; el rendimiento y la calidad pueden variar entre cuantizaciones (int8, int4 y float32); no se han publicado métricas objetivas de calidad (MOS, WER) ni de latencia.
+- El repositorio tiene un tamaño de 0,8 GB, aunque la descarga selectiva reduce el espacio necesario según el backend y el formato elegidos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/KittenML/kitten-tts-2-nano
-- Paquete Python: `pip install kittenml` (no se proporciona URL del repositorio en la información disponible)
-- Paper, blog o demo: no disponible en la información proporcionada.
+- Paquete de Python: `pip install kittenml` (no se proporciona URL adicional en la información disponible)

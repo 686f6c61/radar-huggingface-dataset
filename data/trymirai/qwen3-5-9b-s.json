@@ -5,7 +5,7 @@
   "author": "trymirai",
   "url": "https://huggingface.co/trymirai/Qwen3.5-9B-S",
   "created_at": "2026-10-19T00:12:39.000Z",
-  "updated_at": "2026-11-18T08:38:07.000Z",
+  "updated_at": "2026-11-19T01:34:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

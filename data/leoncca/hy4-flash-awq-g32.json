@@ -5,7 +5,7 @@
   "author": "leoncca",
   "url": "https://huggingface.co/leoncca/Hy4-flash-AWQ-g32",
   "created_at": "2026-11-18T14:09:03.000Z",
-  "updated_at": "2026-11-18T14:17:24.000Z",
+  "updated_at": "2026-11-18T17:37:25.000Z",
   "license": "tencent-hy-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

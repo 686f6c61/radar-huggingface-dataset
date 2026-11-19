@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "richmondsin/grpo-qwen3-vl-4b-thinking",
+  "renamed_at": "2026-11-19T09:55:31.863Z",
   "benchmarks": [],
   "sources": []
 }

@@ -2,104 +2,89 @@
 
 ## Resumen
 
-`huggingface-mic/nomic-embed-text-v1.5-mic` no es un modelo utilizable para inferencia, sino un artefacto de prueba (*fixture*) publicado por la organización `huggingface-mic`, vinculada a la infraestructura de contratos de integración (MIC) del repositorio `transformers-mic` de Hugging Face. Su función es verificar de forma ligera que la arquitectura `NomicBertModel` (la de los modelos de embeddings de Nomic AI) se carga y ejecuta correctamente en la librería Transformers, sin necesidad de descargar los pesos completos del modelo real `nomic-ai/nomic-embed-text-v1.5`.
+`huggingface-mic/nomic-embed-text-v1.5-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic`, no un modelo de embeddings utilizable en producción. Se trata de una version reducida del modelo real `nomic-ai/nomic-embed-text-v1.5` de Nomic AI, generada con una regla de reduccion generica (reduccion a 2 capas ocultas) para conservar la misma arquitectura y los mismos nombres de tensores que el checkpoint original, pero con solo 2.036.480 parametros.
 
-El fixture conserva la misma arquitectura, los mismos nombres de tensores y los ficheros de tokenización byte a byte del modelo base, pero reduce `num_hidden_layers` a 2, lo que deja el total en 2.036.480 parámetros (frente a los 137M del modelo base). Sus pesos son aleatorios (semilla 17) y no han sido entrenados: solo se verificó que el modelo responde a las entradas y que forward, loss y gradientes son finitos en float32, bfloat16 y float16.
+El repositorio incluye pesos "slim", ejemplos de uso ejecutables y un directorio de expectativas de framework (contrato de integracion). Los pesos son aleatorios (semilla 17) y no han sido entrenados: pasaron un test de sensibilidad a la entrada que exigia que cada perturbacion de las entradas del contrato moviera los logits al menos 0,001. El propio autor lo etiqueta como `test-artifact` para excluirlo de busquedas de modelos candidatos.
 
-Es relevante para mantenedores de librerías, desarrolladores de tooling y equipos de CI/CD que necesitan validar integraciones de forma determinista y reproducible. Para producir embeddings reales debe usarse el modelo base `nomic-ai/nomic-embed-text-v1.5`, no este artefacto.
+Su relevancia es, por tanto, instrumental: sirve para validar integraciones, contratos de framework y pipelines de prueba que esperan la interfaz de `nomic-embed-text-v1.5` sin cargar el modelo completo. No debe confundirse con el modelo de embeddings de 137M de parametros del que deriva, ni usarse para generar embeddings reales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | NomicBertModel (encoder tipo BERT con rotary embeddings) |
-| Parámetros totales | 2.036.480 (dato real de safetensors) |
-| Parámetros activos | No aplica (arquitectura densa, no es MoE) |
-| Longitud de contexto | No disponible para el fixture; el modelo base nomic-embed-text-v1.5 admite 8192 tokens |
-| Tipos de cuantización | Publicado en float32; verificado finito en float32, bfloat16 y float16 (forward, loss y gradientes) |
-| Idiomas soportados | No disponible (el tokenizer copiado del modelo base está orientado principalmente al inglés) |
-| Licencia | No disponible (el modelo base es Apache 2.0) |
-| Formato de pesos | safetensors (float32); no hay GGUF ni otros formatos publicados |
-
-Otros datos: etiquetado como `test-artifact` y `custom_code`, 0 descargas, 0 likes, creado el 29/10/2026, tamaño de repositorio 0,0 GB.
+| Arquitectura | NomicBertModel (transformer tipo BERT), reducida a 2 capas ocultas |
+| Parametros totales | 2.036.480 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en float32; finito tambien en bfloat16 y float16) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-El fixture instancia `NomicBertModel`, la arquitectura de la familia `nomic_bert`: un encoder tipo BERT modificado con rotary position embeddings (en lugar de embeddings de posición absolutos) y kernels de atención y MLP optimizados. La regla genérica de reducción definida en `sweep.py` del repositorio `transformers-mic` fija `num_hidden_layers` en 2, lo que explica la diferencia de tamaño respecto al modelo base de 137M de parámetros. Los ficheros de procesamiento (`config_sentence_transformers.json`, `modules.json`, `sentence_bert_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.txt`) se copiaron byte a byte desde `nomic-ai/nomic-embed-text-v1.5`.
+El modelo es un `NomicBertModel` con la misma arquitectura que `nomic-ai/nomic-embed-text-v1.5`, pero con la configuracion reducida mediante la regla generica de `sweep.py` del proyecto `transformers-mic`: `num_hidden_layers = 2`. Los ficheros de procesador (`config_sentence_transformers.json`, `modules.json`, `sentence_bert_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.txt`) se copiaron byte a byte desde el checkpoint original, de modo que la interfaz de tokenizacion y de Sentence Transformers es identica.
 
-No hay entrenamiento: los pesos se inicializaron aleatoriamente con semilla 17 y se validaron mediante una puerta de sensibilidad a la entrada, que exige que cada perturbación de las entradas del contrato mueva los logits al menos 0,001 (el caso más débil fue `attention_mask:all_ones`, con 0,0149). Adicionalmente se comprobó que el modelo es finito en float32, bfloat16 y float16 en forward, loss y gradientes. El fixture cubre la clave `0b79d3783837`, que agrupa todos los checkpoints cuyos ficheros de procesador son byte-idénticos y cuya configuración coincide tras la reducción. El proceso de construcción está registrado con fuentes fijadas y hashes de fichero en `build.json`.
-
-Como referencia, el modelo base `nomic-ai/nomic-embed-text-v1.5` es un modelo de embeddings de 137M de parámetros entrenado por Nomic AI, con contexto de 8192 tokens, embeddings Matryoshka (dimensiones recortables de 64 a 768) y licencia Apache 2.0.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se validaron con un test de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplazo los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, 0,0149). Los tensores conservan los mismos nombres que el checkpoint real y el modelo es finito en float32, bfloat16 y float16 (forward, loss y gradientes). La clave de fixture es `0b79d3783837` y cubre todos los checkpoints cuyos ficheros de procesador son byte-identicos y cuya config coincide tras la reduccion.
 
 ## Capacidades
 
-Como artefacto de prueba (capacidades reales del fixture):
-
-- Carga y ejecución con la misma API y los mismos nombres de tensores que el checkpoint real de NomicBert.
-- Forward, cálculo de loss y retropropagación finitos en float32, bfloat16 y float16.
-- Sensibilidad verificada a todas las entradas del contrato (perturbaciones mínimas de 0,001 en logits).
-- Compatibilidad con los ficheros de procesamiento de `sentence-transformers` al ser copias byte a byte del modelo base.
-
-Capacidades funcionales como modelo de lenguaje:
-
-- Generación de texto: no (es un encoder de embeddings y, además, sus pesos son aleatorios).
-- Embeddings semánticamente útiles: no, los pesos no han sido entrenados.
-- Tool calling / function calling: no.
-- Agentes o razonamiento multi-paso: no.
-- Capacidades multilingües: no disponibles.
-- Visión, audio u otras modalidades: no.
+- No genera embeddings semanticos utiles: los pesos son aleatorios y el modelo no ha sido entrenado.
+- Conserva la interfaz de `NomicBertModel` y de Sentence Transformers, lo que permite validar codigo de carga, tokenizacion y forward pass.
+- Sirve como fixture para tests de integracion y de contrato de framework (Transformers).
+- Soporta ejecucion en float32, bfloat16 y float16 sin valores no finitos en forward, loss ni gradientes.
+- No dispone de tool calling, razonamiento multi-paso, vision, audio ni modo thinking.
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- Pruebas de integración en Transformers: verificar que `NomicBertModel` se instancia, carga pesos y ejecuta forward/loss/backward sin errores, usando solo unos 8 MB de pesos en lugar de los más de 500 MB del modelo real.
-- Regresión en CI/CD de librerías: ejecutar suites de tests en cada pull request contra la arquitectura nomic_bert de forma determinista (semilla 17 y hashes en `build.json`), reduciendo tiempo y ancho de banda.
-- Validación de contratos de API: comprobar que los ficheros de procesador (`tokenizer.json`, `vocab.txt`, etc.) coinciden byte a byte con lo esperado por el contrato definido en `integration.json`.
-- Desarrollo de tooling de cuantización y exportación: probar pipelines de conversión de dtype (float32 a bfloat16/float16) y de exportación de pesos sobre un checkpoint con nombres de tensores idénticos al modelo de producción.
-- Verificación de compatibilidad de entornos: confirmar que un runtime, driver o acelerador concreto maneja correctamente el modelo en los tres dtypes soportados, con un coste de memoria despreciable.
-- Formación y onboarding: servir como ejemplo mínimo y ejecutable para aprender a cargar modelos nomic_bert con Transformers o sentence-transformers sin descargar modelos grandes.
-- Reproducibilidad de experimentos: usar una fuente de verdad ligera y versionada (clave de fixture `0b79d3783837`) para comparar resultados entre versiones de la librería.
-
-No es adecuado para búsqueda semántica, RAG, clustering ni ninguna tarea real de embeddings: para eso debe usarse el modelo base entrenado.
+- Tests de integracion en CI: cargar el modelo con Transformers y verificar que la tokenizacion, las formas de los tensores y el forward pass coinciden con lo esperado, sin descargar el checkpoint completo de 137M de parametros.
+- Validacion de contratos de framework: comprobar que una integracion nueva respeta el manifiesto `integration.json` y el directorio de expectativas de Transformers antes de apuntar al modelo real.
+- Pruebas de compatibilidad de tipos: verificar que el pipeline funciona en float32, bfloat16 y float16 sin producir NaN ni infinitos.
+- Desarrollo de utilidades de embeddings: probar codigo de preprocesado, pooling y normalizacion contra una interfaz estable y ligera.
+- Reproduccion de fixtures: regenerar el artefacto con `python example/build_fixtures.py --fixture nomic-embed-text-v1.5-mic` y comparar hashes con `build.json`.
+- Docencia y demos de arquitectura: inspeccionar la estructura de un `NomicBertModel` con solo 2 capas y 2M de parametros en entornos con recursos minimos.
+- Validacion de pipelines de empaquetado: comprobar que el repositorio se sirve correctamente desde el Hub con pesos safetensors y ficheros de procesador asociados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Al tratarse de pesos aleatorios sin entrenamiento, cualquier métrica de calidad (MTEB, precisión de recuperación, etc.) carecería de significado. Los únicos datos de verificación publicados son de la puerta de sensibilidad: umbral mínimo de 0,001 en el cambio de logits por perturbación de entrada, con el caso más débil en `attention_mask:all_ones` (0,0149).
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, cualquier metrica de calidad de embeddings carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: aproximadamente 8 MB en float32 (2.036.480 parámetros × 4 bytes), más unos pocos MB de tokenizer y configuración. No requiere GPU.
-- GPU recomendadas: cualquiera; desde GPUs integradas hasta A100 o H100. No hay requisito mínimo relevante.
-- Consumer GPUs: cabe sobradamente en cualquier GPU doméstica (RTX 3060, RTX 4090, portátiles, etc.) e incluso ejecuta con holgura solo en CPU.
-- Despliegue: mediante `transformers` con `trust_remote_code=True` (el repositorio está etiquetado como `custom_code`) o `sentence-transformers`, dado que incluye los ficheros de configuración de esa librería. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no aplican; vLLM y TGI no tienen soporte publicado para este fixture.
-- Latencia y throughput: no disponible; al ser un encoder de 2M de parámetros con 2 capas, el forward es trivialmente rápido en cualquier hardware moderno.
+- VRAM estimada para inferencia: inferior a 100 MB en float32 (2,04M de parametros, unos 8 MB de pesos, mas overhead de activaciones y tokenizador).
+- GPU recomendadas: cualquier GPU consumer moderna o incluso CPU; no requiere A100 ni H100.
+- Cabe en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) y en CPU.
+- Opciones de despliegue: Transformers con `trust_remote_code` (el repo usa `custom_code`); no se documentan recetas para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; por el tamano, la latencia sera despreciable frente al modelo real.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tipo | Pesos entrenados | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| huggingface-mic/nomic-embed-text-v1.5-mic | 2,04 M | no disponible | NomicBert (encoder) | No (aleatorios, seed 17) | No declarada | safetensors fp32 |
-| nomic-ai/nomic-embed-text-v1.5 (modelo base) | 137 M | 8192 | NomicBert (encoder) | Sí | Apache 2.0 | safetensors |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 (max_seq_length) | BERT (encoder) | Sí | Apache 2.0 | safetensors |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `huggingface-mic/nomic-embed-text-v1.5-mic` | 2,04M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `nomic-ai/nomic-embed-text-v1.5` | no disponible en la informacion | no disponible | Embeddings de texto reales | no disponible | Hugging Face |
+| Otros fixtures de `huggingface-mic` | variable | no disponible | Fixtures de test | no disponible | Hugging Face |
 
-No existen fixtures comparables publicados con datos suficientes en la información disponible. La conclusión práctica es que el fixture solo comparte arquitectura y nombres de tensores con el modelo base; en calidad y utilidad real no es comparable con ningún modelo de embeddings entrenado.
+La comparacion relevante es con el modelo base: mismo nombre de tensores y misma interfaz, pero sin capacidad funcional de embeddings. Frente a otros modelos de embeddings de tamano similar, la comparacion no procede porque este artefacto no esta pensado para producir representaciones utiles.
 
 ## Limitaciones y advertencias
 
-- Pesos aleatorios sin entrenamiento: los embeddings que produce carecen de significado semántico. Usarlo en producción para búsqueda, RAG o clasificación produciría resultados inválidos.
-- Etiquetado explícito como `test-artifact`, excluido deliberadamente de las búsquedas de modelos candidatos; no debe confundirse con un modelo lanzado.
-- Licencia no declarada en el repositorio: antes de redistribuir el artefacto conviene revisar los términos; el modelo base es Apache 2.0, pero eso no cubre automáticamente este fixture.
-- Etiqueta `custom_code`: la carga con Transformers requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; evaluar el riesgo en entornos sensibles.
-- Sin validación comunitaria: 0 descargas y 0 likes; no hay reportes de terceros sobre su comportamiento.
-- Configuración reducida (2 capas ocultas frente a las 12 del modelo base): los tiempos y patrones de memoria observados con el fixture no son extrapolables al modelo real de 137M de parámetros.
-- Riesgo de alucinación, sesgos y soporte de idiomas: no aplicables como modelo generativo, pero tampoco evaluables, dado que no existe entrenamiento ni evaluación publicados.
+- Pesos aleatorios: los embeddings generados no tienen significado semantico; no usar en busqueda, RAG, clustering ni similitud.
+- Etiquetado explicitamente como `test-artifact` por el autor para excluirlo de busquedas de modelos candidatos.
+- Licencia no disponible: no puede asumirse uso comercial sin consultar el repositorio original de Nomic AI.
+- Idiomas y contexto no documentados en esta ficha; dependen de la configuracion copiada del modelo base.
+- El repositorio usa `custom_code`, por lo que la carga requiere `trust_remote_code=True`, con el riesgo de seguridad asociado.
+- El tamano del repo aparece como 0.0 GB en los metadatos, lo que puede indicar ficheros LFS no contabilizados o un empaquetado incompleto; conviene verificar antes de integrarlo.
+- No sustituye al checkpoint real en produccion: cualquier validacion funcional debe repetirse con `nomic-ai/nomic-embed-text-v1.5`.
 
 ## Enlaces
 
-- Ficha del modelo: https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic
 - Modelo base: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5
-- Manifiesto de contrato: https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic/blob/main/integration.json
-- Registro de construcción (fuentes, gates y hashes): https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic/blob/main/build.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic/blob/main/integrations/transformers/usage.md
-- Expectativas del framework: https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic/tree/main/integrations/transformers
-- Script de barrido de configuración: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/nomic-embed-text-v1.5-mic.html
+- Script de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Manifiesto de contrato (`integration.json`): https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic/blob/main/integration.json
+- Uso con Transformers (`usage.md`): https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic/blob/main/integrations/transformers/usage.md
+- Procedencia del fixture (`build.json`): https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic/blob/main/build.json

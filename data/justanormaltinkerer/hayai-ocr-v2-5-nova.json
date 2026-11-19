@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Aide & contact | Quartier-Rouge",
-      "url": "https://www.quartier-rouge.be/aide/",
-      "snippet": "Annoncer sur Quartier-Rouge Combien de temps faut-il pour que mon annonce soit approuvée? Est-ce gratuit d’insérer une annonce …"
-    },
-    {
-      "title": "Liège | Quartier-Rouge",
-      "url": "https://www.quartier-rouge.be/region/liege/vierset-barse/",
-      "snippet": "Communes de Liège, Région Wallonne V Vaux-et-Borset Vaux-sous-Chèvremont Velroux Verlaine Verviers Viemme Vierset-Barse …"
-    },
-    {
-      "title": "Liège | Quartier-Rouge",
-      "url": "https://www.quartier-rouge.be/region/liege/liege/",
-      "snippet": "C Celles Cérexhe-Heuseux Chaineux Chapon-Seraing Charneux Chaudfontaine Chênée Cheratte Chevron Chokier Ciplet Clavier …"
-    },
-    {
-      "title": "Politique de vie privée | Quartier-Rouge",
-      "url": "https://www.quartier-rouge.be/vie-privee/",
-      "snippet": "Politique de vie privée Link Media SRL Brusselstraat 51 B-2018 Antwerpen Numéro d’entreprise (TVA-BE): 0820.638.410 E-mail: …"
-    },
-    {
-      "title": "Brabant Wallon - Quartier-Rouge",
-      "url": "https://www.quartier-rouge.be/region/brabant-wallon/wavre/",
-      "snippet": "Communes de Brabant Wallon, Région Wallonne C Céroux-Mousty Chastre Chastre-Villeroux-Blanmont Chaumont-Gistoux Clabecq …"
-    }
-  ]
+  "sources": []
 }

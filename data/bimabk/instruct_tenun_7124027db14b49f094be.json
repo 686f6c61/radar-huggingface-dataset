@@ -19,8 +19,6 @@
     "transformers",
     "text-generation",
     "arxiv:1910.09700",
-    "base_model:gradients-io-tournaments/augmented-029b5c5241c15cdc",
-    "base_model:adapter:gradients-io-tournaments/augmented-029b5c5241c15cdc",
     "region:us"
   ],
   "likes": 0,

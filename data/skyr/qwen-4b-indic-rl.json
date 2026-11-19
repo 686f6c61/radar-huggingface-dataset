@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "SkyR/qwen-4b-Indic-RL",
+  "slug": "skyr-qwen-4b-indic-rl",
+  "author": "SkyR",
+  "url": "https://huggingface.co/SkyR/qwen-4b-Indic-RL",
+  "created_at": "2026-11-19T04:44:08.000Z",
+  "updated_at": "2026-11-19T05:08:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi",
+    "te",
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "hi",
+    "te",
+    "bn",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056412363,
+  "storage_human": "8.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skyr — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Skyr",
+      "snippet": "Le skyr est un produit conforme à la dénomination française de « fromage » 5 ; c'est plus précisément un fromage blanc, fromage …"
+    },
+    {
+      "title": "Yaourt Skyr : bienfaits, dangers, par quoi le remplacer ?",
+      "url": "https://www.passeportsante.net/fr/Nutrition/EncyclopedieAliments/Fiche.aspx?doc=yaourt-skyr-bienfaits-dangers-remplacer",
+      "snippet": "Le skyr se distingue par sa richesse en protéines de qualité et en calcium. Par ailleurs, il ne contient quasiment pas de matière …"
+    },
+    {
+      "title": "Qu’est-ce que le skyr ? Origine et caractéristiques",
+      "url": "https://www.danone.com/fr/fr/marques/produits-laitiers-frais-et-d-origine-vegetale/danone/qu-est-ce-que-le-skyr.html",
+      "snippet": "Depuis plus de mille ans, le skyr fait partie intégrante du patrimoine culinaire de l’Islande. Longtemps produit dans les fermes …"
+    },
+    {
+      "title": "Alimentation - Le skyr, une arnaque à l’islandaise ?",
+      "url": "https://www.quechoisir.org/actualite-alimentation-le-skyr-une-arnaque-a-l-islandaise-n112966/",
+      "snippet": "Nov 2, 2023 · Blanc et pur comme la neige, il rend fort comme un Viking ! Voilà ce que semble promettre le marketing du skyr, ce …"
+    },
+    {
+      "title": "Quelle est la différence entre un yaourt et un Skyr ?",
+      "url": "https://www.santemagazine.fr/alimentation/aliments-et-sante/produits-laitiers/quelle-difference-entre-un-yaourt-et-un-skyr-1139720",
+      "snippet": "Sep 9, 2025 · Le Skyr est un produit laitier entre yaourt et fromage blanc, fabriqué à partir de lait écrémé, riche en protéines (10 …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "carlclausewitz",
   "url": "https://huggingface.co/carlclausewitz/strands-decider-clinical-use",
   "created_at": "2026-11-18T03:50:51.000Z",
-  "updated_at": "2026-11-18T04:14:25.000Z",
+  "updated_at": "2026-11-18T15:53:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -23,8 +23,8 @@
     "int4",
     "quantization",
     "medical",
+    "clinical",
     "korean",
-    "emr",
     "text-classification",
     "ko",
     "en",
@@ -42,7 +42,7 @@
   "storage_bytes": 908019552,
   "storage_human": "908 MB",
   "context_length": null,
-  "base_model": "Qwen/Qwen3.5-2B-Base, StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+  "base_model": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610, Qwen/Qwen3.5-2B-Base",
   "formats": [
     "safetensors"
   ],

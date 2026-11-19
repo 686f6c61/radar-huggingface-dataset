@@ -1,0 +1,224 @@
+{
+  "schema": 2,
+  "id": "patronus-studio/tiger-guard-content-moderation",
+  "slug": "patronus-studio-tiger-guard-content-moderation",
+  "author": "patronus-studio",
+  "url": "https://huggingface.co/patronus-studio/tiger-guard-content-moderation",
+  "created_at": "2026-11-19T09:20:38.000Z",
+  "updated_at": "2026-11-19T09:20:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "content-moderation",
+    "content-safety",
+    "text-moderation",
+    "moderation",
+    "toxicity",
+    "toxicity-detection",
+    "toxic-comment-classification",
+    "hate-speech",
+    "hate-speech-detection",
+    "offensive-language",
+    "profanity",
+    "harassment",
+    "threat-detection",
+    "sexism",
+    "guardrails",
+    "guardrail",
+    "llm-guardrails",
+    "prompt-safety",
+    "response-safety",
+    "ai-safety",
+    "llm-security",
+    "ai-security",
+    "trust-and-safety",
+    "security",
+    "patronus",
+    "tiger-guard-content-moderation",
+    "multilingual",
+    "english",
+    "german",
+    "mmbert",
+    "sequence-classification",
+    "binary-classification",
+    "onnxruntime",
+    "quantized",
+    "int8",
+    "int4",
+    "local-inference",
+    "on-device",
+    "cpu",
+    "cpu-inference",
+    "v1.0",
+    "en",
+    "de",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307531778,
+  "parameters_human": "307.5M",
+  "storage_bytes": 4408504194,
+  "storage_human": "4.4 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Content-safety classification",
+      "dataset": "Content-safety benchmark, 1,500 prompts (HateCheck, Intuit toxicity and profanity, Aegis 1.0)",
+      "metric": "Accuracy",
+      "value": 0.888
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Content-safety benchmark, 1,500 prompts (HateCheck, Intuit toxicity and profanity, Aegis 1.0)",
+      "metric": "Unsafe prompts caught",
+      "value": 0.8373
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Content-safety benchmark, 1,500 prompts (HateCheck, Intuit toxicity and profanity, Aegis 1.0)",
+      "metric": "Precision",
+      "value": 0.9318
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Content-safety benchmark, 1,500 prompts (HateCheck, Intuit toxicity and profanity, Aegis 1.0)",
+      "metric": "F1",
+      "value": 0.882
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Content-safety benchmark, 1,500 prompts (HateCheck, Intuit toxicity and profanity, Aegis 1.0)",
+      "metric": "Harmless prompts flagged",
+      "value": 0.0613
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Content-safety benchmark, 1,500 prompts (HateCheck, Intuit toxicity and profanity, Aegis 1.0)",
+      "metric": "AUROC",
+      "value": 0.957
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "HateCheck (500 test cases, balanced)",
+      "metric": "Accuracy",
+      "value": 0.922
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "HateCheck (500 test cases, balanced)",
+      "metric": "AUROC",
+      "value": 0.972
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Intuit combined toxicity and profanity (500 validation examples, balanced)",
+      "metric": "Accuracy",
+      "value": 0.908
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Intuit combined toxicity and profanity (500 validation examples, balanced)",
+      "metric": "AUROC",
+      "value": 0.99
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Aegis AI Content Safety 1.0 (500 test examples, balanced)",
+      "metric": "Accuracy",
+      "value": 0.834
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Aegis AI Content Safety 1.0 (500 test examples, balanced)",
+      "metric": "AUROC",
+      "value": 0.925
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "PolyGuardPrompts, English and German (held-out test, 3,123 prompts)",
+      "metric": "Harmful prompts caught, English",
+      "value": 0.8328
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "PolyGuardPrompts, English and German (held-out test, 3,123 prompts)",
+      "metric": "Harmful prompts caught, German",
+      "value": 0.7529
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "PolyGuardPrompts, English and German (held-out test, 3,123 prompts)",
+      "metric": "Harmless prompts flagged, English",
+      "value": 0.0381
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "PolyGuardPrompts, English and German (held-out test, 3,123 prompts)",
+      "metric": "Harmless prompts flagged, German",
+      "value": 0.055
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Held-out validation set, English and German (28,996 texts)",
+      "metric": "Unsafe texts caught, English",
+      "value": 0.8034
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Held-out validation set, English and German (28,996 texts)",
+      "metric": "Unsafe texts caught, German",
+      "value": 0.6422
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Held-out validation set, English and German (28,996 texts)",
+      "metric": "Harmless texts flagged, English",
+      "value": 0.0379
+    },
+    {
+      "task": "Content-safety classification",
+      "dataset": "Held-out validation set, English and German (28,996 texts)",
+      "metric": "Harmless texts flagged, German",
+      "value": 0.0436
+    }
+  ],
+  "sources": [
+    {
+      "title": "Patronus Charm | Harry Potter Wiki | Fandom",
+      "url": "https://harrypotter.fandom.com/wiki/Patronus_Charm",
+      "snippet": "Patronus is the nominative singular case meaning \"protector\", \"guardian\", or simply \"patron\" in Latin, specifically reflecting the entire …"
+    }
+  ]
+}

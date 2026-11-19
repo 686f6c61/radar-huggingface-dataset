@@ -2,90 +2,86 @@
 
 ## Resumen
 
-`blenderbot-400M-distill-mic` es un artefacto de prueba publicado por la organizacion `huggingface-mic` en Hugging Face, no un modelo entrenado ni utilizable para inferencia real. Se trata de un "slim fixture" derivado de `facebook/blenderbot-400M-distill`: conserva la misma arquitectura (`BlenderbotForConditionalGeneration`) y los mismos nombres de tensores que el checkpoint original, pero con una configuracion reducida a 2 capas de encoder y 2 de decoder, lo que deja el total en 704.584 parametros (frente a los aproximadamente 400 millones del modelo base).
+`blenderbot-400M-distill-mic` es un artefacto de prueba publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable: se trata de un *fixture* (muestra sintetica) derivado de `facebook/blenderbot-400M-distill`, con la misma arquitectura `BlenderbotForConditionalGeneration` pero con una configuracion reducida (2 capas de encoder y 2 de decoder) y pesos aleatorios generados con semilla 17. Su unico proposito es servir como banco de pruebas reproducible para validar contratos de integracion en el ecosistema Transformers.
 
-Su proposito es servir como fixture de integracion para el proyecto `transformers-mic`: permite validar contratos de uso (manifiesto `integration.json`, expectativas de framework en `integrations/transformers/expectations`) y comprobar que un pipeline de Transformers carga, ejecuta y propaga gradientes correctamente sin necesidad de descargar pesos de cientos de megabytes. Los pesos son aleatorios (semilla 17) y se generaron sin entrenamiento, unicamente superando una puerta de sensibilidad a la entrada (cada perturbacion de las entradas mueve los logits al menos 0,001).
+El repositorio incluye los pesos reducidos en formato safetensors, ejemplos de uso ejecutables y un directorio de expectativas de framework (`integrations/transformers/expectations`), junto con un manifiesto de contrato (`integration.json`) y metadatos de procedencia (`build.json`). El modelo esta etiquetado explicitamente como `test-artifact`, precisamente para excluirlo de busquedas de modelos candidatos.
 
-Por tanto, cualquier evaluacion de calidad linguistica, razonamiento o generacion de texto sobre este repositorio carece de sentido: el modelo no produce respuestas coherentes. Es relevante unicamente para desarrolladores que mantienen o auditan el ecosistema de pruebas de Transformers y quieren reproducir el fixture de forma determinista.
+Es relevante en el contexto de ingenieria de software de IA porque ilustra una practica creciente: empaquetar junto al modelo los contratos de comportamiento esperados, de modo que los pipelines de CI puedan verificar la compatibilidad de una integracion sin descargar checkpoints de cientos de megabytes. No debe confundirse con un modelo conversacional operativo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (`BlenderbotForConditionalGeneration`), 2 capas de encoder y 2 de decoder |
+| Arquitectura | BlenderbotForConditionalGeneration (transformer encoder-decoder), reducida a 2 capas de encoder y 2 de decoder |
 | Parametros totales | 704.584 (0,7 M) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible (pesos guardados en float32; el autor declara finitud en float32, bfloat16 y float16) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible; pesos guardados en float32 y verificados como finitos en float32, bfloat16 y float16 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de BlenderBot: un transformer encoder-decoder con atencion multi-cabeza, pensado originalmente para dialogo abierto multi-turno. En este repositorio la configuracion se ha reducido mediante la regla generica de `sweep.py` (2 capas de encoder, 2 de decoder), manteniendo los nombres de tensores identicos a los del checkpoint real. Los ficheros de procesador (`added_tokens.json`, `generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde `facebook/blenderbot-400M-distill`, por lo que el tokenizador es el del modelo original.
+La arquitectura es la de Blenderbot, un transformer encoder-decoder orientado a dialogo. El fixture conserva los nombres de tensores del checkpoint original `facebook/blenderbot-400M-distill`, pero reduce la profundidad a 2 capas en encoder y decoder mediante la regla generica de reduccion implementada en `sweep.py`. Los ficheros de procesador (`added_tokens.json`, `generation_config.json`, `merges.txt`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copian byte a byte del modelo base, de modo que el tokenizador es identico al original.
 
-No hubo entrenamiento. Los pesos se inicializaron aleatoriamente con semilla 17 y se validaron con una puerta de sensibilidad a la entrada: se comprobo que perturbaciones de las entradas del contrato desplazan los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, dio 0,0602). El autor declara que el modelo es finito en forward, perdida y gradientes para float32, bfloat16 y float16. El fixture se identifica con la clave `7bd7cf661c75` y cubre cualquier checkpoint cuyos ficheros de procesador sean identicos byte a byte y cuya config coincida tras el proceso de reduccion.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron porque superaron una puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato movia los logits al menos 0,001 (el caso mas debil, `attention_mask:all_ones`, produjo 0,0602). El fixture se guarda en float32, el dtype por defecto del modelo base, y se verifico que forward, loss y gradientes son finitos en float32, bfloat16 y float16. La clave de fixture `7bd7cf661c75` agrupa todos los checkpoints cuyos ficheros de procesador son identicos byte a byte y cuya config coincide tras la reduccion.
 
 ## Capacidades
 
-- Carga y ejecucion en Transformers como `BlenderbotForConditionalGeneration` con los mismos nombres de tensores que el modelo base.
-- Validacion de contratos de integracion: manifiesto (`integration.json`), uso ejecutable (`integrations/transformers/usage.md`) y expectativas de framework (`integrations/transformers/expectations`).
-- Comprobacion de propagacion de gradientes y finitud numerica en float32, bfloat16 y float16.
-- Verificacion de sensibilidad a entradas (perturbaciones de `input_ids` y `attention_mask` alteran los logits).
-- No soporta generacion de texto coherente: los pesos son aleatorios.
-- No dispone de tool calling, capacidades de agente, vision, audio ni modo de razonamiento.
-- Capacidades multilingues: no disponibles (el tokenizador copiado es el de BlenderBot, pero el modelo no ha sido entrenado).
+- No tiene capacidades de generacion de texto utiles: los pesos son aleatorios y no han sido entrenados.
+- Sirve como fixture de integracion para validar la carga del modelo, el tokenizador y la configuracion en Transformers.
+- Permite verificar contratos de comportamiento: el directorio `integrations/transformers/expectations` define las salidas esperadas frente a entradas de prueba.
+- Soporta ejecucion en float32, bfloat16 y float16 sin producir NaN ni infinitos en forward, loss y gradientes.
+- Mantiene los nombres de tensores del checkpoint real, lo que permite probar rutas de carga y mapeo de pesos.
+- No dispone de tool calling, agentes, vision, audio ni modo de razonamiento.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI de Transformers: cargar el fixture con `AutoModelForSeq2SeqLM`, ejecutar un forward con entradas sinteticas y verificar que las formas de salida y los nombres de tensores coinciden con el contrato, sin descargar el checkpoint completo.
-- Validacion de pipelines de cuantizacion o conversion de formato: comprobar que una herramienta (por ejemplo, conversion a bfloat16 o float16) produce tensores finitos sobre este fixture antes de aplicarla al modelo real.
-- Desarrollo de utilidades de inspeccion de checkpoints: el fixture permite iterar rapidamente sobre scripts que enumeran tensores, comparan configs o auditan ficheros de procesador.
-- Reproduccion determinista de fallos: al tener semilla fija (17) y pesos versionados, sirve para reproducir bugs de carga o de forward reportados contra `facebook/blenderbot-400M-distill`.
-- Formacion y documentacion: ejemplo minimo de como se estructura un repositorio con pesos, uso ejecutable y expectativas de framework en un solo lugar.
-- Verificacion de contratos de tokenizador: al copiar los ficheros de procesador byte a byte, permite testear que un pipeline tokeniza igual que el modelo base sin cargar los 400 M de parametros.
+- Pruebas de integracion en CI/CD: el fixture pesa practicamente nada (tamano de repo 0,0 GB) y permite ejecutar la suite de tests de una integracion con Transformers sin descargar el checkpoint de 400M.
+- Validacion de contratos de framework: los ficheros de `integrations/transformers/expectations` permiten comprobar que una version nueva de Transformers sigue produciendo las salidas esperadas sobre el fixture.
+- Desarrollo de herramientas de reduccion de modelos: sirve como caso de referencia para verificar que la regla de `sweep.py` genera configuraciones coherentes con el modelo original.
+- Pruebas de compatibilidad de tokenizador: al copiar los ficheros de procesador byte a byte, permite validar cambios en el pipeline de tokenizacion sin depender del modelo completo.
+- Verificacion de dtypes y estabilidad numerica: util para comprobar que una nueva version del runtime mantiene la finitud de forward, loss y gradientes en float32, bfloat16 y float16.
+- Regresion de carga de pesos: al conservar los nombres de tensores del checkpoint real, permite detectar roturas en el mapeo de pesos entre versiones de la libreria.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que es un artefacto de prueba y no un modelo utilizable, por lo que no existen metricas de calidad (MMLU, HumanEval, GSM8K u otras).
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad seria carente de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 10 MB en float32 (0,7 M de parametros), sin contar overhead de runtime.
-- GPU recomendadas: cualquiera; no requiere GPU. Funciona en CPU sin problemas.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
-- Opciones de despliegue: Transformers (referencia del contrato), potencialmente llama.cpp u Ollama si se convierte a GGUF, aunque no se documenta esa ruta en el repositorio.
-- Latencia y throughput: no disponibles; al ser un fixture de test, no se han medido.
+- VRAM estimada para inferencia: inferior a 1 GB en float32; el modelo tiene 0,7 M de parametros.
+- GPU recomendadas: cualquier GPU consumer; el fixture cabe en CPU sin problema.
+- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU con memoria compartida.
+- Opciones de despliegue: Transformers (ruta principal documentada en `integrations/transformers/usage.md`); no se documentan vLLM, llama.cpp, Ollama ni TGI para este artefacto.
+- Latencia y throughput: no disponibles; al ser un fixture de test, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `huggingface-mic/blenderbot-400M-distill-mic` | 0,7 M | no disponible | Fixture de test | no disponible | Hugging Face |
-| `facebook/blenderbot-400M-distill` | ~400 M | no disponible | Dialogo abierto | no disponible en la informacion | Hugging Face |
-| Otros fixtures de `huggingface-mic` | variable (reducidos) | no disponible | Pruebas de integracion | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Proposito | Licencia |
+|---|---|---|---|---|
+| blenderbot-400M-distill-mic | 0,7 M | no disponible | Fixture de test | no disponible |
+| facebook/blenderbot-400M-distill | 400 M | no disponible en esta ficha | Dialogo conversacional | no disponible en esta ficha |
+| Otros fixtures de `huggingface-mic` | variable | no disponible | Fixtures de test | no disponible |
 
-La comparacion relevante es con el modelo base: mismo tokenizador y mismos nombres de tensores, pero 570 veces menos parametros y pesos aleatorios. Frente a otros fixtures del mismo proyecto, comparte el mismo enfoque (config reducida, pesos aleatorios, puerta de sensibilidad) pero cubre especificamente la familia BlenderBot.
+La comparativa con modelos conversacionales reales no es pertinente: este artefacto no compite en la categoria de modelos de dialogo, sino en la de fixtures de integracion.
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios y la salida no tiene coherencia linguistica.
-- Etiquetado como `test-artifact` por el autor para excluirlo de busquedas de modelos candidatos; no debe desplegarse en produccion.
-- La licencia no esta declarada en la informacion disponible; verificar los terminos del modelo base (`facebook/blenderbot-400M-distill`) antes de cualquier uso derivado.
-- El contexto maximo no esta documentado en este repositorio; la config reducida puede no reflejar el comportamiento del modelo base.
-- No se han publicado evaluaciones de sesgo, alucinacion ni robustez, y carecen de sentido para un fixture.
-- El repositorio tiene un tamano de 0,0 GB y 489 descargas; su mantenimiento depende del proyecto `transformers-mic`.
-- Cualquier conclusion sobre capacidades multilingues o de dialogo extraida de este repositorio seria invalida.
+- No es un modelo utilizable: los pesos son aleatorios y no producen respuestas coherentes.
+- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; usarlo en produccion seria un error de seleccion.
+- La licencia no esta disponible, lo que impide confirmar condiciones de uso comercial.
+- No se documentan sesgos porque no hay entrenamiento; cualquier analisis de sesgo seria inaplicable.
+- El riesgo de alucinacion es total en el sentido literal: la salida no tiene relacion con la entrada mas alla de la sensibilidad minima verificada.
+- La longitud de contexto no esta disponible; la configuracion reducida no refleja la del modelo base.
+- El tamano de repo indicado (0,0 GB) sugiere que el contenido puede estar incompleto o que los pesos se almacenan de forma comprimida; conviene verificar la integridad antes de usarlo en CI.
+- No debe confundirse con `facebook/blenderbot-400M-distill`; el sufijo `-mic` identifica el fixture.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/blenderbot-400M-distill-mic
 - Modelo base: https://huggingface.co/facebook/blenderbot-400M-distill
-- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/blenderbot-400M-distill-mic.html
-- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentacion de reduccion del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/blenderbot-400M-distill-mic.html
 - Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Uso en Transformers (en el repo): `integrations/transformers/usage.md`
-- Expectativas de framework (en el repo): `integrations/transformers/expectations`
-- Manifiesto de contrato (en el repo): `integration.json`
-- Procedencia del fixture (en el repo): `build.json`
+- Script de construccion (`build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

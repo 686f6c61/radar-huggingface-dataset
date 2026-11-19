@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "id": "sony3021919/layoutlm-document-qa",
+  "slug": "sony3021919-layoutlm-document-qa",
+  "author": "sony3021919",
+  "url": "https://huggingface.co/sony3021919/layoutlm-document-qa",
+  "created_at": "2026-11-19T05:33:00.000Z",
+  "updated_at": "2026-11-19T05:33:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "document-question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "safetensors",
+    "layoutlm",
+    "document-question-answering",
+    "pdf",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127793412,
+  "parameters_human": "127.8M",
+  "storage_bytes": 1533910649,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LayoutLMDocumentQA Documentation - Swarms Docs",
+      "url": "http://go/v1/AUDO_Xp2qSoxav6QnAGvf4qAfVER5XiB33aVGjctg0KJwGLi78h4JxoUs2fDoKvVOJx2vEzsrEeRTs1SBa5bVFIp-ylTxkk3AUfNkvg0oWXYorvNejjmB2miVIvGib9fIKP68SVkZ9Dsabjz6xFz-EEYgeDtT9D5iosfaLTRoiIrP0yvAiylp5UFSgQ2PKmwB3H9KtmqDnE_kfKcOGC3Y_6yIHv9yHeRyZzj7cWycblGXdKBHdMD",
+      "snippet": "LayoutLMDocumentQA is a versatile model that combines layout-based understanding of documents with natural language processing to answer questions about the content of documents. It is particularly useful for automating tasks like invoice processing, extracting information from PDFs, and handling ..."
+    }
+  ]
+}

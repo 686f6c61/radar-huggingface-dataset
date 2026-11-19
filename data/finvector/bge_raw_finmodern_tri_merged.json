@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "finvector/bge_raw_finmodern_tri_merged",
+  "slug": "finvector-bge_raw_finmodern_tri_merged",
+  "author": "finvector",
+  "url": "https://huggingface.co/finvector/bge_raw_finmodern_tri_merged",
+  "created_at": "2026-11-19T10:25:13.000Z",
+  "updated_at": "2026-11-19T10:25:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:11687",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 1152653074,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Triplet",
+      "dataset": "triplet eval",
+      "metric": "Cosine Accuracy",
+      "value": 0.9976047873497009
+    }
+  ],
+  "sources": []
+}

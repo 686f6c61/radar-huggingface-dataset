@@ -74,7 +74,7 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 2055,
+  "downloads_30d": 2056,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
@@ -94,31 +94,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Jev-Style-Qwen3.5-2B-Decision (GGUF) - Hugging Face",
-      "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF",
-      "snippet": "Jev (TypeSafe AI, 2026) introduced System One models: instead of generating text, the model takes a state plus a typed question and returns a decision with calibrated probabilities in a single pass."
-    },
-    {
-      "title": "Jev AI — Decisions at machine speed",
-      "url": "https://jevai.net/",
-      "snippet": "Jev AI is the first System One Model from TypeSafe AI: type-safe decisions in 70-500 ms, zero hallucinations, calibrated confidence. Founded by a ChatGPT co-inventor. Output tokens free, input from $0.042 per million."
-    },
-    {
-      "title": "Jev API & Hub for the Jev Model | Jev AI Community",
-      "url": "https://www.jevai.org/jev-api",
-      "snippet": "Explore Jev API documentation, trending community workflows, and use cases like code compaction powered by TypeSafe AI&#x27;s first System One Jev Model."
-    },
-    {
-      "title": "Jev by TypeSafe AI — Try the System One model & API",
-      "url": "https://jevtypesafeai.com/",
-      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it turns messy input into typed, calibrated decisions software can use directly — no hallucinations, 70-500ms. Try it free in the browser and learn the API."
-    },
-    {
-      "title": "GitHub - TianyuCodings/NanoJev: A nano replica of Jev: parallel ...",
-      "url": "https://github.com/TianyuCodings/NanoJev",
-      "snippet": "A 0.6B parallel decision model: states and questions in, complete probability distributions out. Zero output-token decoding. New project: JevHarness — Let an LLM build task-specific decision harnesses with Jev, with optional refinement using rewards and execution traces. Includes an interactive ..."
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "darija-asr-host/wav2vec2-darija-arabizi-int8",
+  "slug": "darija-asr-host-wav2vec2-darija-arabizi-int8",
+  "author": "darija-asr-host",
+  "url": "https://huggingface.co/darija-asr-host/wav2vec2-darija-arabizi-int8",
+  "created_at": "2026-11-19T10:07:32.000Z",
+  "updated_at": "2026-11-19T10:07:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "audio",
+    "automatic-speech-recognition",
+    "darija",
+    "moroccan-arabic",
+    "int8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 358618674,
+  "storage_human": "359 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arabe marocain — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Arabe_marocain",
+      "snippet": "Le mot darija désigne de façon spécifique les dialectes utilisés par la population marocaine arabophone, tandis qu'au Moyen-Orient …"
+    },
+    {
+      "title": "Apprendre la darija marocaine avec SpeakMoroccan.com",
+      "url": "https://speakmoroccan.com/fr/",
+      "snippet": "Pour apprendre la darija marocaine avec SpeakMoroccan.com, nous mettons à votre disposition des cours gratuits d'arabe marocain."
+    },
+    {
+      "title": "Darija pour les débutants : Guide Complet 2026",
+      "url": "https://www.moroccodarija.com/darija-pour-les-debutants-guide-complet/",
+      "snippet": "Ce guide de Darija pour les débutants est votre clé pour une aventure linguistique incroyable. Nous allons explorer les origines de la …"
+    },
+    {
+      "title": "Apprenez le marocain - La meilleure façon d'apprendre la darija",
+      "url": "https://www.learnmoroccan.com/fr",
+      "snippet": "Commencez votre voyage pour apprendre la darija marocaine avec des ressources conçues par des locuteurs natifs. Plongez dans …"
+    }
+  ]
+}

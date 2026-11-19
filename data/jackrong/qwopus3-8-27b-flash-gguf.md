@@ -2,77 +2,98 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Flash es un modelo de lenguaje multimodal (image-text-to-text) desarrollado por Jackrong como fine-tuning de Qwen/Qwen3.8-27B. Su objetivo principal es reducir el coste y la latencia de razonamiento en cargas de trabajo de agente prolongadas, manteniendo la capacidad general del modelo base. Para ello, combina un ajuste fino supervisado (SFT) de alta calidad con un refuerzo de razonamiento basado en NVIDIA NeMo-RL y GSPO. El modelo está disponible en formato GGUF para inferencia local y soporta técnicas de predicción múltiple de tokens (MTP) y decodificación especulativa. Se publica bajo licencia Apache 2.0, con soporte para cinco idiomas y capacidad de visión.
+Qwopus3.8-27B-Flash es un ajuste fino del modelo base Qwen3.8-27B, desarrollado por Jackrong y publicado en Hugging Face bajo licencia Apache 2.0. Su objetivo declarado no es maximizar la puntuación en benchmarks, sino reducir el coste y la latencia del razonamiento para cargas de trabajo agénticas de larga duración, manteniendo al mismo tiempo una capacidad general sólida. El modelo se distribuye principalmente en formato GGUF para inferencia local con llama.cpp, aunque el repositorio también incluye pesos en safetensors.
 
-## Especificaciones técnicas
+El modelo está etiquetado como multimodal (image-text-to-text), con soporte de visión, tool calling, function calling, generación de código y decodificación especulativa mediante MTP (multi-token prediction). La model card reporta una mejora del 12,8 % en velocidad de decodificación y una tasa de aceptación MTP del 80,7 % respecto al modelo base, junto con una reducción del razonamiento desbocado en tareas iterativas.
+
+La relevancia actual del modelo radica en su enfoque en la eficiencia por token y en la finalización limpia de tareas agénticas: en un bucle de agente con decenas de llamadas, cada segundo adicional por turno se acumula, y el modelo está optimizado explícitamente para ese escenario. El coste de esta optimización es un descenso en la puntuación MMLU-Pro respecto al modelo base, según reconoce el propio autor.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (fine-tuning de Qwen3.8-27B) |
-| Parametros totales | 460.730.096 (dato safetensors; el modelo base se denomina 27B) |
-| Parametros activos | no disponible (no es MoE según la informacion disponible) |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B), multimodal con vision; soporte de MTP para decodificacion especulativa |
+| Parametros totales | 460.730.096 segun safetensors del repo; el nombre del modelo indica 27B (no disponible la cifra exacta verificada) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (varias cuantizaciones; repo de 88.4 GB) |
+| Tipos de cuantizacion | GGUF (el repo incluye variantes GGUF; no se detallan los niveles exactos) |
 | Idiomas soportados | en, zh, es, ru, ja |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura multimodal de Qwen3.8-27B, que integra procesamiento de imagen y texto. El entrenamiento se realizó en dos etapas. En la primera, se partió de aproximadamente 1,5 millones de ejemplos SFT de modelos profesores. Tras un filtrado exhaustivo, se retuvo el 10% de mayor calidad (unos 150.000 ejemplos). Cada ejemplo se evaluó según relevancia semántica, dificultad, calidad de la cadena de pensamiento y consistencia de la respuesta, utilizando un conjunto de modelos de evaluación como Qwen3.7-Max, GLM-5, GPT-OSS-120B-High y Gemma4-27B. También se incluyeron trayectorias de agente y trazas reconstruidas de modelos cerrados como Claude y GPT.
+El modelo parte de Qwen3.8-27B, un transformer multimodal con capacidad de visión. Sobre esa base, el ajuste fino se estructura en dos etapas. La primera es un SFT de alta calidad: se partió de aproximadamente 1,5 millones de ejemplos de un modelo profesor, que tras un proceso de limpieza y filtrado se redujeron al 10 % de mayor calidad. Cada ejemplo se evaluó en sus tres componentes (pregunta, cadena de pensamiento y respuesta) con criterios de relevancia semántica, dificultad, calidad del razonamiento y consistencia de la respuesta, usando un ensemble de modelos de razonamiento (Qwen3.7-Max, GLM-5, GPT-OSS-120B-High y Gemma4-27B) con puntuación ponderada. La mezcla de entrenamiento incluye además datos de trayectorias agénticas y trazas reconstruidas de modelos cerrados como Claude y GPT.
 
-La segunda etapa aplica NVIDIA NeMo-RL con GSPO, un método de refuerzo de razonamiento que usa muestreo repetido y comparación de recompensas. El objetivo no es alargar el razonamiento, sino reforzar trayectorias útiles y la finalización eficiente de tareas. Según la model card, el modelo logra una decodificación un 12,8% más rápida y una tasa de aceptación MTP del 80,7%. El ajuste se realizó con el framework Unsloth, optimizado para reducir el consumo de memoria.
+La segunda etapa aplica refuerzo del razonamiento mediante NVIDIA NeMo-RL con GSPO, usando muestreo repetido y comparación de recompensas con una ratio de importancia a nivel de secuencia. El objetivo es reforzar trayectorias de razonamiento útiles y el comportamiento de finalización, no recompensar por defecto razonamientos más largos. El entrenamiento se apoyó en el framework Unsloth. La innovación destacable es la integración de MTP para decodificación especulativa, con una tasa de aceptación reportada del 80,7 % y una mejora del 12,8 % en velocidad de decodificación.
 
 ## Capacidades
 
-- Generación de texto e instrucciones con razonamiento y cadena de pensamiento.
-- Soporte de tool calling y function calling, adecuado para integración en pipelines de agentes.
-- Capacidad multimodal de imagen a texto (image-text-to-text), permitiendo analizar imágenes y responder en texto.
-- Optimizado para cargas de trabajo de agente con bucles de múltiples pasos, reduciendo el tiempo de respuesta por turno.
-- Soporte de MTP y decodificación especulativa para acelerar la inferencia.
-- Multilingüe en inglés, chino, español, ruso y japonés.
-- Entrenado para evitar razonamientos patológicos excesivamente largos, mejorando la eficiencia en tareas iterativas.
+- Generación de texto conversacional multi-turno.
+- Razonamiento explícito con modo de cadena de pensamiento, optimizado para evitar razonamientos excesivamente largos.
+- Comprensión de imágenes (image-text-to-text) y tareas visuales cualitativas.
+- Generación de código, con una limitación conocida en la indentación de Python en ciertos casos.
+- Tool calling y function calling para integración con herramientas externas.
+- Comportamiento agéntico: planificación multi-paso, ejecución de bucles de tipo leer-pensar-llamar-observar-editar-probar.
+- Decodificación especulativa mediante MTP para acelerar la inferencia.
+- Soporte multilingüe en inglés, chino, español, ruso y japonés.
+- Compatibilidad con endpoints y despliegue en llama.cpp, transformers y text-generation-inference.
 
 ## Casos de uso
 
-- Agentes autónomos de larga duración: el modelo está diseñado para tareas de 50 turnos o más, donde cada token y cada segundo de latencia impactan en el tiempo total. Su menor coste de razonamiento lo hace adecuado para bucles repetidos de lectura, herramienta, observación y edición.
-- Asistentes de programación con tool calling: puede integrarse en entornos de desarrollo para ejecutar comandos, revisar cambios, generar código y depurar, aprovechando su soporte de function calling y su capacidad de seguir instrucciones complejas.
-- Atención al cliente con análisis de capturas: gracias a su capacidad multimodal, puede recibir imágenes de pantallas, facturas o capturas de error y responder en varios idiomas, lo que facilita el soporte en escenarios multilingües.
-- Automatización de documentación técnica: procesa documentos que combinan texto e imágenes, generando resúmenes, traducciones o extracción de datos en formatos estructurados.
-- Razonamiento matemático y científico en producción: su entrenamiento con refuerzo de razonamiento busca respuestas correctas con cadenas de pensamiento más cortas, reduciendo el coste por consulta en aplicaciones de alto volumen.
-- Chatbots multilingües con contexto de imagen: puede mantener conversaciones coherentes en cinco idiomas y, a la vez, interpretar imágenes enviadas por el usuario, lo que amplía los casos de uso en aplicaciones de asistencia.
+- Agentes autónomos de larga duración: el modelo está diseñado para bucles de decenas o cientos de llamadas, donde la reducción de latencia por turno y la finalización limpia del razonamiento se acumulan en tiempo total de ejecución.
+- Automatización de tareas de desarrollo con tool calling: puede integrarse en pipelines que leen repositorios, ejecutan tests y aplican ediciones, con la advertencia de revisar la indentación en código Python generado.
+- Asistencia técnica con contexto multimodal: al aceptar imágenes además de texto, sirve para diagnosticar capturas de pantalla, diagramas o errores visuales en soporte a desarrolladores.
+- Despliegue local en hardware de gama alta: la disponibilidad de GGUF permite ejecución con llama.cpp en estaciones de trabajo sin depender de API externas.
+- Generación de código asistida en IDE: su soporte de function calling y su velocidad de decodificación lo hacen adecuado para autocompletado y refactorización interactiva.
+- Procesamiento multilingüe de documentación: cubre inglés, chino, español, ruso y japonés, útil para equipos con documentación distribuida.
+- Evaluación de razonamiento con coste controlado: para equipos que necesitan cadena de pensamiento sin el coste de modelos mayores, el trade-off de menor MMLU-Pro frente al base puede ser aceptable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados detallados de benchmarks en la información disponible. La model card menciona de forma cualitativa que el modelo es un 12,8% más rápido en decodificación y alcanza un 80,7% de aceptación MTP, pero no proporciona tablas numéricas. También indica que el rendimiento en MMLU-Pro (conjunto mixto) es inferior al del modelo base, como parte del equilibrio entre eficiencia y capacidad. No se aportan más cifras verificables.
+La información proporcionada incluye métricas de eficiencia, pero no una tabla completa de benchmarks académicos. Los datos disponibles son:
+
+| Metrica | Valor |
+|---|---|
+| Mejora en velocidad de decodificacion | 12,8 % frente al modelo base |
+| Tasa de aceptacion MTP | 80,7 % |
+| MMLU-Pro (mixed set) | inferior al modelo base (el autor reconoce el trade-off; no se da la cifra) |
+
+No se han publicado resultados de benchmarks en la informacion disponible para MMLU, HumanEval, GSM8K u otros conjuntos estándar con cifras numéricas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para un modelo de 27B, la inferencia en cuantización 4-bit (por ejemplo, Q4_K_M) puede requerir entre 16 y 20 GB de VRAM; en 8-bit, entre 28 y 32 GB; y en precisión FP16, alrededor de 54 GB. Estas cifras son orientativas y dependen de la implementación y la longitud de contexto.
-- GPU recomendadas: RTX 4090 o similar con 24 GB de VRAM para cuantizaciones 4-bit; A100 o H100 para precisión completa y despliegues de mayor concurrencia.
-- Compatibilidad con GPU de consumo: sí, siempre que se utilicen cuantizaciones GGUF y una ventana de contexto moderada.
-- Opciones de despliegue: llama.cpp y Ollama para formato GGUF; vLLM, TGI o transformers si se usan los pesos safetensors. El repo incluye etiquetas de compatibilidad con endpoints.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada: no disponible de forma explícita. El tamaño del repositorio es de 89,7 GB, lo que incluye múltiples cuantizaciones GGUF y pesos safetensors; la VRAM real dependerá de la variante elegida.
+- GPU recomendadas: no especificadas por el autor. Por el tamaño del modelo (etiquetado como 27B), se requiere hardware de gama alta; no se confirman modelos concretos como A100, H100 o RTX 4090.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible.
+- Opciones de despliegue: llama.cpp, transformers, text-generation-inference y endpoints compatibles; el repositorio incluye GGUF para inferencia local.
+- Latencia y throughput: la única métrica reportada es la mejora del 12,8 % en velocidad de decodificación y el 80,7 % de aceptación MTP; no se dan valores absolutos de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Diferencias clave |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Qwopus3.8-27B-Flash | 27B (según base) | no disponible | Apache 2.0 | Fine-tuning optimizado para eficiencia de razonamiento y velocidad; MMLU-Pro inferior al base |
-| Qwen3.8-27B (base) | 27B | no disponible | Apache 2.0 | Modelo original sin el ajuste de eficiencia; mayor rendimiento en MMLU-Pro pero mayor coste de razonamiento |
-| Otros modelos comparables | no disponible | no disponible | no disponible | No se dispone de información suficiente para comparar con alternativas de la misma categoría |
+| Qwopus3.8-27B-Flash | 27B (segun nombre; safetensors reporta 460,7 M) | no disponible | Apache 2.0 | Ajuste fino orientado a eficiencia agéntica; MMLU-Pro inferior al base |
+| Qwen3.8-27B (base) | 27B | no disponible | no disponible en la informacion | Modelo de referencia; mayor MMLU-Pro, menor velocidad de decodificacion |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | No se dispone de datos de otros modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- El rendimiento en MMLU-Pro (conjunto mixto) es inferior al del modelo base, lo que implica una pérdida de capacidad en algunas tareas de conocimiento general.
-- No se han publicado evaluaciones de seguridad, sesgos o robustez del modelo. El riesgo de alucinación no está cuantificado.
-- Los datos de entrenamiento incluyen trazas de modelos cerrados como Claude y GPT, lo que puede introducir sesgos no documentados.
-- La longitud de contexto no está especificada en la información disponible, por lo que el comportamiento con ventanas largas es incierto.
-- La licencia Apache 2.0 permite uso comercial, pero no se ofrecen garantías de idoneidad para producción sin una evaluación previa por parte del usuario.
-- El dato de parámetros safetensors (460.730.096) es inconsistente con la denominación de 27B; puede corresponder a un subconjunto del repo. Se recomienda verificar el contenido del repositorio antes de desplegarlo.
+- Problema conocido: en algunas tareas específicas de código Python el modelo puede generar indentación incorrecta; el autor indica que hay una corrección en curso y que el fallo se limita a ese caso.
+- Trade-off declarado: la puntuación MMLU-Pro en el conjunto mixto es inferior a la del modelo base Qwen3.8-27B, por lo que no es adecuado cuando se prioriza la precisión académica sobre la eficiencia.
+- Discrepancia en el recuento de parámetros: el nombre indica 27B pero los safetensors reportan 460.730.096 parámetros; conviene verificar la variante concreta antes de planificar el despliegue.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos.
+- Sesgos: no documentados por el autor.
+- Longitud de contexto: no especificada, lo que impide garantizar cargas con ventanas largas.
+- Idiomas: solo se declaran en, zh, es, ru y ja; el rendimiento fuera de esos idiomas no está garantizado.
+- Licencia Apache 2.0: permite uso comercial, pero debe conservarse el aviso de licencia y atribución correspondiente.
+- Los datos de entrenamiento incluyen trazas derivadas de modelos cerrados (Claude, GPT) cuyos ejemplos no se han divulgado, lo que limita la reproducibilidad del ajuste.
 
 ## Enlaces
 
-- https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-GGUF
-- https://huggingface.co/Qwen/Qwen3.8-27B
-- https://unsloth.ai/
+- Hugging Face: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Unsloth: https://unsloth.ai/
+- Imagen de portada: https://cdn-uploads.huggingface.co/production/uploads/66309bd090589b7c65950665/GvN4SANiFepBuWcsoWbOX.jpeg
+- Comparativa visual (base): https://cdn-uploads.huggingface.co/production/uploads/66309bd090589b7c65950665/r2jq2T2BEdtQJMYCMaMzR.png
+- Comparativa visual (ajustado): https://cdn-uploads.huggingface.co/production/uploads/66309bd090589b7c65950665/xI9kuvJwKjYHBi1Chuq19.png

@@ -5,7 +5,7 @@
   "author": "qwegnai",
   "url": "https://huggingface.co/qwegnai/Apex-35B-V1.0-hq4g32",
   "created_at": "2026-11-18T07:51:28.000Z",
-  "updated_at": "2026-11-18T08:01:59.000Z",
+  "updated_at": "2026-11-18T08:39:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

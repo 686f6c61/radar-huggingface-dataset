@@ -5,7 +5,7 @@
   "author": "sensenova",
   "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-AWQ",
   "created_at": "2026-11-18T03:25:53.000Z",
-  "updated_at": "2026-11-18T10:48:30.000Z",
+  "updated_at": "2026-11-18T20:52:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "awq",
     "region:us"
   ],
-  "likes": 10,
+  "likes": 14,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 9412963952,

@@ -2,89 +2,88 @@
 
 ## Resumen
 
-`granite-4.0-1b-speech-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` a partir del modelo `ibm-granite/granite-4.0-1b-speech` de IBM. No es un modelo usable para inferencia real: se trata de una version "adelgazada" del checkpoint original, con la misma arquitectura y los mismos nombres de tensores, pero con una configuracion reducida (2 capas en el texto, 2 capas en el encoder y 2 capas en el proyector) y pesos inicializados aleatoriamente (semilla 17). El objetivo declarado es servir como fixture reproducible para probar integraciones de frameworks (concretamente, la pila MIC de Hugging Face) sin necesidad de descargar el modelo completo.
+`granite-4.0-1b-speech-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic`, no un modelo entrenado ni utilizable para inferencia real. Se construye como una version reducida del modelo `ibm-granite/granite-4.0-1b-speech` de IBM, conservando la misma arquitectura (`GraniteSpeechForConditionalGeneration`) pero con una configuracion drasticamente menor y pesos aleatorios. Su proposito es servir como fixture de integracion para validar contratos de uso y expectativas de frameworks (concretamente Transformers) sin necesidad de descargar ni ejecutar el checkpoint completo.
 
-El repositorio incluye pesos en formato safetensors y bfloat16, el manifiesto de contrato (`integration.json`), instrucciones de uso con Transformers, un directorio de expectativas del framework y metadatos de procedencia de la construccion (`build.json`). Los ficheros del procesador (tokenizador, plantilla de chat, configuracion de preprocesado y un WAV multilingue de muestra) se han copiado byte a byte del checkpoint original de IBM, por lo que el comportamiento del pipeline de entrada es identico al del modelo real. La etiqueta `test-artifact` se aplica explicitamente para excluirlo de busquedas de modelos candidatos.
+El repositorio contiene pesos "slim" (14.674.716 parametros, segun los safetensors), el manifiesto de contrato (`integration.json`), documentacion de uso en Transformers y el registro de construccion (`build.json`). El modelo esta etiquetado explicitamente como `test-artifact`, lo que lo excluye de busquedas de modelos candidatos. No dispone de model card funcional con especificaciones de entrenamiento, licencia, idiomas ni benchmarks.
 
-Es relevante ahora porque el ecosistema de herramientas de validacion de integraciones (MIC) necesita fixtures ligeros y deterministas que reproduzcan fielmente la interfaz del modelo de produccion. Con 14.674.716 parametros y un tamano de repositorio practicamente nulo, permite ejecutar pruebas de contrato en CI sin apenas coste de almacenamiento ni de computo. No obstante, no debe confundirse con el modelo `granite-4.0-1b-speech` original: sus pesos son aleatorios y su calidad de transcripcion es nula.
+Es relevante unicamente en el contexto de ingenieria de software: permite a los mantenedores de Transformers y de otros frameworks comprobar que la carga, el preprocesado y la ejecucion forward del modelo de voz de Granite funcionan correctamente con un coste minimo de almacenamiento y computo. No debe confundirse con el modelo real `ibm-granite/granite-4.0-1b-speech`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `GraniteSpeechForConditionalGeneration` (encoder de audio + proyector + decoder de texto tipo transformer) |
-| Parametros totales | 14.674.716 |
+| Arquitectura | `GraniteSpeechForConditionalGeneration` (encoder de audio + proyector + decoder de texto) |
+| Parametros totales | 14.674.716 (fixture reducido) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; convertibles a float32 y float16 segun la model card) |
-| Idiomas soportados | no disponible (incluye un `multilingual_sample.wav` en el procesador copiado del modelo base) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
+| Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a `GraniteSpeechForConditionalGeneration`, un modelo multimodal de voz a texto compuesto por un encoder de audio, un proyector que alinea las representaciones acusticas con el espacio del decoder y un decoder de lenguaje. En este fixture se ha aplicado la regla generica de reduccion de `sweep.py`: 2 capas en el texto, 2 capas en el encoder y 2 capas en el proyector. Los nombres de los tensores coinciden exactamente con los del checkpoint real `ibm-granite/granite-4.0-1b-speech`, de modo que cualquier codigo que cargue el modelo original funcionara con este sin cambios en la logica de carga.
+El fixture replica la arquitectura del checkpoint original `ibm-granite/granite-4.0-1b-speech`, pero con la configuracion reducida mediante la regla generica de `sweep.py`: 2 capas en el decoder de texto, 2 capas en el encoder de audio y 2 capas en el proyector. Los ficheros del procesador (`tokenizer.json`, `vocab.json`, `merges.txt`, `preprocessor_config.json`, `chat_template.jinja`, `multilingual_sample.wav`, etc.) se copian byte a byte desde el modelo de IBM, de modo que el preprocesado y la tokenizacion son identicos a los del modelo real.
 
-No hubo entrenamiento. Los pesos se inicializaron aleatoriamente con semilla 17 y se validaron con una "input-sensitivity gate": cada perturbacion de las entradas definidas en el contrato debia mover los logits al menos 0,001; la perturbacion mas debil (`input_features:halve`) produjo un desplazamiento de 0,0205, por lo que se considero que no era necesario entrenar. El fixture es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. Los ficheros del procesador (`added_tokens.json`, `chat_template.jinja`, `merges.txt`, `multilingual_sample.wav`, `preprocessor_config.json`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte del modelo de IBM. El proceso de construccion esta documentado en `build.json` con fuentes fijadas, resultados del gate y hashes de ficheros.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y unicamente pasaron una compuerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato mueve los logits al menos 0.001 (el caso mas debil, `input_features:halve`, produce 0.0205). Los tensores conservan los mismos nombres que el checkpoint real y los pesos son finitos en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. La construccion la realiza `build_fixtures.py` y queda registrada, con hashes de ficheros y fuentes fijadas, en `build.json`.
 
 ## Capacidades
 
-- Carga y ejecucion del pipeline de `GraniteSpeechForConditionalGeneration` con la misma interfaz que el modelo base de IBM.
-- Reproduccion exacta del preprocesado de audio y tokenizacion del modelo original, gracias a la copia byte a byte de los ficheros del procesador.
-- Ejecucion de forward, calculo de loss y retropropagacion en float32, bfloat16 y float16.
-- Validacion de contratos de integracion con frameworks mediante `integration.json` y el directorio `integrations/transformers/expectations`.
-- Generacion de texto: tecnicamente posible a nivel de interfaz, pero sin ninguna calidad util, ya que los pesos son aleatorios.
-- No soporta tool calling, agentes, razonamiento multistep ni capacidades multilingues reales; es un artefacto de prueba, no un modelo funcional.
+- Carga y ejecucion forward de la arquitectura `GraniteSpeechForConditionalGeneration` en Transformers.
+- Validacion de contratos de integracion (manifiesto `integration.json`) y de las expectativas del framework.
+- Comprobacion de preprocesado de audio y tokenizacion con los mismos ficheros de procesador que el modelo real.
+- Verificacion de estabilidad numerica en float32, bfloat16 y float16.
+- No realiza transcripcion de voz real: los pesos son aleatorios y no generan salidas significativas.
+- No soporta tool calling, agentes, razonamiento ni capacidades multilingues funcionales.
 
 ## Casos de uso
 
-- Pruebas de integracion en CI/CD: usar el fixture para verificar que la version de Transformers carga correctamente `GraniteSpeechForConditionalGeneration` y que los tensores se mapean sin errores, sin descargar el checkpoint completo de IBM.
-- Desarrollo de pipelines de audio a texto: validar la plomeria (lectura de WAV, preprocesado, tokenizacion, generacion) contra un modelo de 14,7M parametros antes de pasar al modelo real, reduciendo el tiempo de iteracion.
-- Regresion de contratos de framework: comparar los logits y las expectativas registradas en `integrations/transformers/expectations` para detectar rupturas de compatibilidad en nuevas versiones de la libreria.
-- Pruebas de cuantizacion y dtypes: comprobar que la conversion entre float32, bfloat16 y float16 produce valores finitos en forward, loss y gradientes.
-- Docencia y ejemplos reproducibles: demostrar el flujo completo de un modelo de voz a texto multimodal con un repositorio de tamano despreciable.
-- Validacion de plantillas de chat y tokenizadores: al conservar la `chat_template.jinja` y el tokenizador del modelo de IBM, permite probar el formateo de conversaciones y tokens especiales sin coste.
+- Pruebas de integracion en Transformers: verificar que la clase `GraniteSpeechForConditionalGeneration` carga el checkpoint, aplica el procesador y ejecuta el forward sin errores, con un coste de descarga minimo.
+- CI/CD de librerias de inferencia: incluir el fixture en pipelines de integracion continua para detectar regresiones en la carga de pesos, nombres de tensores o configuracion del modelo.
+- Desarrollo de contratos de framework: validar que las expectativas documentadas en `integrations/transformers/expectations` se cumplen tras cambios en la libreria.
+- Pruebas de sensibilidad a la entrada: comprobar que perturbaciones en `input_features` alteran los logits por encima del umbral definido (0.001), como base para tests de robustez.
+- Reproduccion de builds: regenerar el fixture con `python example/build_fixtures.py --fixture granite-4.0-1b-speech-mic` y comparar hashes contra `build.json` para auditar procedencia.
+- Validacion de precisiones: ejecutar forward, loss y gradientes en float32, bfloat16 y float16 para asegurar que no aparecen valores no finitos en entornos de integracion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad (WER, MMLU, etc.) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en bfloat16 (14,7M parametros, aproximadamente 30 MB de pesos); en float32, unos 60 MB.
-- GPU recomendadas: cualquier GPU moderna es suficiente; no requiere A100 ni H100. Una GPU consumer de gama baja o incluso CPU basta para las pruebas.
-- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una iGPU con soporte de bfloat16/float16.
-- Despliegue: Transformers (referencia principal del fixture), con posibilidad de exportar a otros runners segun el soporte de `GraniteSpeechForConditionalGeneration`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles; al ser un fixture no se han publicado mediciones.
+- VRAM estimada para inferencia: inferior a 1 GB con 14,7 M de parametros en bfloat16 (unos 29 MB de pesos).
+- GPU recomendadas: cualquier GPU consumer moderna; tambien ejecutable en CPU.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en entornos sin GPU.
+- Opciones de despliegue: Transformers (uso previsto segun la documentacion del repositorio); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un fixture no se caracteriza rendimiento.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/granite-4.0-1b-speech-mic` | 14,67M | no disponible | Fixture de prueba (pesos aleatorios) | no disponible | Hugging Face |
-| `ibm-granite/granite-4.0-1b-speech` | 1B (aproximado por el nombre) | no disponible | Modelo de voz a texto real | no disponible | Hugging Face |
-| Fixtures equivalentes de otros modelos | no disponible | no disponible | Artefactos de prueba | no disponible | no disponible |
+| `huggingface-mic/granite-4.0-1b-speech-mic` (este) | 14,7 M | no disponible | Fixture de integracion | no disponible | Hugging Face |
+| `ibm-granite/granite-4.0-1b-speech` | no disponible en la informacion | no disponible | Reconocimiento de voz (ASR) | no disponible | Hugging Face |
+| Otros fixtures `*-mic` de `huggingface-mic` | variable | no disponible | Fixtures de integracion | no disponible | Hugging Face |
 
-La comparacion relevante es con el modelo base de IBM: comparten arquitectura, interfaz y procesador, pero difieren en escala (1B frente a 14,7M), en calidad (pesos entrenados frente a aleatorios) y en proposito (produccion frente a validacion de integraciones). No se dispone de datos de otros fixtures comparables en la informacion proporcionada.
+La comparativa relevante es con el modelo base de IBM, del que este fixture hereda arquitectura, procesador y nombres de tensores, pero no pesos utiles ni capacidades funcionales.
 
 ## Limitaciones y advertencias
 
-- No es un modelo usable: los pesos son aleatorios (semilla 17) y las transcripciones o generaciones resultantes carecen de cualquier valor semantico.
-- La configuracion esta truncada a 2 capas en texto, encoder y proyector, por lo que el comportamiento numerico no reproduce el del modelo de 1B.
-- La licencia no esta indicada en la informacion disponible; no debe asumirse que hereda los terminos del modelo base de IBM sin verificarlo.
-- La etiqueta `test-artifact` indica que debe excluirse de cualquier busqueda de modelos candidatos o de evaluaciones de calidad.
-- No hay informacion sobre sesgos, idiomas soportados ni riesgos de alucinacion, ya que al no estar entrenado no aplican en el sentido habitual.
-- Aunque el procesador es identico al de IBM, cualquier cambio en los ficheros del modelo base invalidaria el fixture; el campo `Fixture key f66289a81ea9` identifica el conjunto exacto de checkpoints cubiertos.
-- El repositorio no incluye todos los ficheros necesarios para reconstruir el fixture completo; hay que regenerarlos con `python example/build_fixtures.py --fixture granite-4.0-1b-speech-mic`.
+- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y las salidas no tienen significado.
+- Etiquetado como `test-artifact`; excluido deliberadamente de busquedas de modelos candidatos.
+- La configuracion esta reducida (2 capas por modulo), por lo que no representa el comportamiento numerico del checkpoint completo.
+- No dispone de licencia declarada en la informacion disponible; no debe asumirse uso comercial.
+- No hay datos de sesgos, alucinacion, idiomas ni contexto porque no aplica a un fixture.
+- No debe desplegarse en produccion ni presentarse como sustituto de `ibm-granite/granite-4.0-1b-speech`.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/huggingface-mic/granite-4.0-1b-speech-mic
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-1b-speech
-- Manifiesto de contrato (`integration.json`): https://huggingface.co/huggingface-mic/granite-4.0-1b-speech-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/granite-4.0-1b-speech-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/granite-4.0-1b-speech-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture (`build.json`): https://huggingface.co/huggingface-mic/granite-4.0-1b-speech-mic/blob/main/build.json
-- Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/granite-4.0-1b-speech-mic.html
-- Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Repositorio `transformers-mic` (script `build_fixtures.py`): https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentacion de uso en Transformers: `integrations/transformers/usage.md` (dentro del repositorio)
+- Expectativas de Transformers: `integrations/transformers/expectations` (dentro del repositorio)
+- Manifiesto de contrato: `integration.json` (dentro del repositorio)
+- Procedencia del fixture: `build.json` (dentro del repositorio)
+- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/granite-4.0-1b-speech-mic.html
+- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

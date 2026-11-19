@@ -2,121 +2,118 @@
 
 ## Resumen
 
-`XGeorgeCostanzaX/Qwen3.8-27B-Nyquant-preview` es un repositorio de cuantizaciones de precisión mixta (formato propietario "Nyquant") sobre el modelo base `Qwen/Qwen3.8-27B` (revision `1d4bf0f2`), publicado por el usuario XGeorgeCostanzaX. No es un modelo entrenado desde cero: es un paquete de artefactos comprimidos que incluye una exportación de 4,30 bits compatible con AWQ para vLLM sobre Intel Arc B70 y un GGUF de 3,29 bits pensado para Tesla P100 de 16 GB, acompañado de un conjunto de 11 parches para llama.cpp. El modelo base tiene 27.320.697.856 parámetros y licencia Apache-2.0.
+Qwen3.8-27B-Nyquant-preview es un conjunto de cuantizaciones de precisión mixta publicadas por el usuario XGeorgeCostanzaX sobre el modelo base Qwen/Qwen3.8-27B (revisión `1d4bf0f2`). El repositorio no contiene un modelo nuevo, sino varias versiones comprimidas del mismo transformer de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones), empaquetadas en formatos safetensors (export compatible con AWQ) y GGUF, con el objetivo de reducir el peso en memoria y hacer viable la inferencia en hardware modesto o antiguo.
 
-El problema que aborda es el despliegue de un modelo de ~27B en hardware con VRAM limitada o poco convencional: la variante NQ4MAX-B70 ocupa 20,1 GB (18,7 GiB) en 5 shards de safetensors y no requiere parches, mientras que RC3Y reduce el artefacto a 11,65 GB para caber en una P100 de 16 GB. El autor declara +0,012 nats de degradación frente a BF16 para la variante de 4 bits y un KLD macro D4 de 0,143355 para la de 3 bits en su propio banco de evaluación de cuatro dominios.
+La propuesta diferencial es el ajuste fino de la cuantización a hardware concreto: una variante de 4 bits pensada para Intel Arc B70 con vLLM, dos variantes de 3 bits optimizadas para Tesla P100 de 16 GB mediante un conjunto de parches propios para llama.cpp, y dos variantes de clase 2 bits (unos 8 GB) para CPU o cualquier backend soportado por llama.cpp. El autor publica métricas de divergencia KL frente al modelo BF16, resultados de benchmarks como GPQA Diamond o HumanEval y velocidades de decodificación medidas, lo que permite evaluar el compromiso entre tamaño y calidad.
 
-Es relevante ahora por dos motivos: por un lado, documenta con detalle inusual (intervalos de confianza bootstrap, comprobaciones de igualdad de runtime) el proceso de cualificación de cuantizaciones de muy baja precisión; por otro, es explícitamente una *preview* pública con cero descargas y cero likes, con puertas de calidad aún abiertas (el 2-bit falla el criterio K3) y sin resultados de benchmarks de tarea publicados.
+Es relevante ahora porque el modelo base es grande para GPUs de consumo y para aceleradores legacy sin soporte de tipos de dato modernos (P100, P40), y estas cuantizaciones ofrecen una vía concreta para desplegarlo en ese hardware. Se trata de una *preview* pública: el propio autor advierte de que las descargas son versiones tempranas y que la calidad se mide contra el BF16, no contra el modelo original completo en todos los casos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la informacion proporcionada no detalla la arquitectura del modelo base Qwen3.8-27B) |
-| Parametros totales | 27.320.697.856 (27,32 mil millones) |
-| Parametros activos | no disponible (no se indica que el modelo base sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4,30 bpw (NQ4MAX-B70, exportacion compatible con AWQ); 3,29 bpw (RC3Y, GGUF propietario); 3,58 bpw (B3, tipos GGUF estandar); 2 bits (q2lite, runtime de referencia FP32 empaquetado) |
-| Idiomas soportados | en (unico idioma declarado en la model card) |
+| Arquitectura | Transformer decoder-only (modelo base Qwen3.8-27B); cuantización de precisión mixta Nyquant |
+| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible en la model card (se citan pruebas con salida de 64k y 131k tokens) |
+| Tipos de cuantizacion | 4 bits (4,30 bpw cuerpo, AWQ-compatible), 3 bits (3,29 bpw cuerpo; 3,465 bpw completo), 2 bits (2,38 bpw completo); tipos GGUF estándar en U-X y KD-B, tipos de tensor personalizados en RC3Y |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (5 shards, exportacion AWQ-compatible para vLLM) y GGUF (RC3Y personalizado; B3 con tipos estandar de upstream) |
-
-Datos adicionales del repositorio: tamano total 31,7 GB, 0 descargas, 0 likes, creado el 2026-10-22 y actualizado el 2026-10-23. Artefactos descargables: `NQ4MAX-B70-AWQ/` (20.085.536.800 bytes en 5 safetensors + tokenizer y config, con `SHA256SUMS`) y `RC3Y/Qwen3.8-27B-RC3Y-P100.gguf` (11.650.719.040 bytes, SHA-256 `668faf132b4fcadcf6c36ebf834d83adac44ef621a2d3879342a793976f945ed`), mas `RC3Y/llama.cpp-p100-patches/` (11 parches MIT + `BUILD.md`, aplicar sobre llama.cpp `69f201a2`, build b11551).
+| Formato de pesos | safetensors (NQ4MAX-B70-AWQ) y GGUF (RC3Y, RC3Y-v2-K, U-X, KD-B) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura del modelo base ni sobre su proceso de entrenamiento (tokens, composicion del dataset, RLHF/DPO) en la informacion proporcionada. Este repositorio no entrena pesos: aplica cuantizacion de precision mixta sobre los tensores de `Qwen/Qwen3.8-27B`, con un promedio declarado de bits por peso referido al *body* del modelo, no al archivo completo.
+El modelo base es un transformer decoder-only de Qwen con 26.895.998.464 parámetros. Sobre él, Nyquant aplica cuantización de pesos de precisión mixta: distintas capas o tensores reciben un número de bits diferente según su sensibilidad, y el reparto se ajusta al hardware objetivo. No se trata de un reentrenamiento ni de un destilado, sino de una compresión post-entrenamiento; el autor mide la calidad como divergencia KL (KLD) frente al modelo BF16 y mediante benchmarks de tarea.
 
-La innovacion tecnica documentada esta en el proceso de cuantizacion y cualificacion, no en el modelo. El autor publica un banco de calidad "D4" que mide KLD macro sobre cuatro dominios frente a una referencia BF16, con ventanas de confianza bootstrap al 95 %, y distingue explicitamente entre artefactos puntuados en llama.cpp sobre GGUF nativos y artefactos puntuados en un runtime de referencia propio en FP32 empaquetado (caso de q2lite), advirtiendo que la comparacion cruzada de runtimes no es equivalente hasta que se complete una comprobacion de igualdad de runtime. Para la variante de 3 bits RC3Y se incluye un conjunto de parches que anade tipos de tensor personalizados que el llama.cpp upstream no puede cargar.
+Las variantes se diferencian en el compromiso tamaño/hardware. NQ4MAX-B70-AWQ usa 4,30 bpw en el cuerpo y se exporta en formato compatible con AWQ para vLLM sobre Intel Arc B70, con una divergencia de +0,012 nats respecto a BF16. RC3Y y RC3Y-v2-K emplean 3 bits (3,29 bpw de cuerpo y 3,465 bpw de archivo completo respectivamente) y requieren un conjunto de parches propios para llama.cpp (0001 a 0028) porque usan tipos de tensor personalizados que el llama.cpp upstream no puede cargar. U-X y KD-B son de clase 2 bits con 2,38 bpw completo y tipos GGUF estándar; KD-B se describe como destilado desde U-X y con menor KLD (0,2898 frente a 0,3457). El autor menciona además dos resultados de investigación sin descarga (q2lite y B3). No se detallan en la información disponible la composición del dataset de entrenamiento del modelo base, el número de tokens ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional (`pipeline_tag: text-generation`, etiqueta `conversational`); es la unica capacidad declarada de forma explicita.
-- No se documentan capacidades de razonamiento, codigo, matematicas, vision ni audio para estas variantes.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- Multilingue: limitado a ingles segun el campo `language: en` de la model card.
-- Capacidad destacada por el autor: decodificacion con MTP (multi-token prediction) activada en las mediciones de velocidad (58-59 t/s en NQ4MAX-B70; 38,9 t/s con MTP K=2 en RC3Y).
-- Compatibilidad declarada con endpoints (`endpoints_compatible`) y con vLLM en el caso de la exportacion AWQ.
+- Generación de texto conversacional multi-turno (pipeline `text-generation`, tag `conversational`).
+- Razonamiento en modo *thinking*: los benchmarks de GPQA Diamond e IFBench se midieron explícitamente en modo pensamiento.
+- Razonamiento científico y de posgrado: GPQA Diamond 82,3 con tope de salida de 64k y 86,4 al continuar las respuestas truncadas hasta 131k.
+- Seguimiento de instrucciones: IFBench 81,0 en la variante RC3Y-v2-K.
+- Generación de código: HumanEval 63,4 % en KD-B (2 bits) frente a 78,0 % del BF16, con pensamiento desactivado y n=164.
+- Salidas largas: las pruebas citadas emplean topes de 64k y 131k tokens de salida.
+- Decodificación especulativa con MTP (multi-token prediction): el autor reporta aceleraciones con MTP K=2 y K=3 en sus builds.
+- Compatibilidad con vLLM mediante export AWQ (NQ4MAX-B70) y con llama.cpp (resto de variantes, con parches en el caso de RC3Y).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponible; el pipeline es solo de texto.
+- Multilingüismo: limitado a inglés según el campo `language`.
 
 ## Casos de uso
 
-- Despliegue de un modelo de 27B en una Tesla P100 de 16 GB: RC3Y ocupa 11,65 GB, de modo que deja margen para cache KV y permite servir generacion de texto en hardware Pascal de segunda mano, aplicando los 11 parches incluidos a llama.cpp build b11551.
-- Inferencia en Intel Arc B70 con vLLM: la exportacion NQ4MAX-B70 (20,1 GB) funciona sin parches y es la opcion de mayor calidad del repositorio, adecuada para servir chat multi-turno en ingles con decodificacion MTP a 58-59 t/s en concurrencia 1.
-- Laboratorio de evaluacion de cuantizaciones: el repositorio publica KLD macro D4 con intervalos bootstrap y artefactos de control, por lo que sirve como referencia reproducible para comparar tecnicas de cuantizacion de 2 y 3 bits en igualdad de tamano.
-- Sustitucion de GGUF comunitarios en un pipeline de llama.cpp ya existente: para GPU distintas de P100 y para CPU, el autor recomienda usar GGUF estandar de unsloth o bartowski en lugar de RC3Y, que en esas plataformas cae a una ruta de referencia lenta.
-- Prototipado de asistentes conversacionales en ingles sobre hardware heterogeneo (Arc para calidad, P100 para coste): el mismo modelo base en dos formatos permite mantener una sola evaluacion funcional y dos backends de despliegue.
-- Validacion de integridad de artefactos en produccion: el repositorio incluye `SHA256SUMS` para los 5 shards y un hash explicito para el GGUF, util para verificar descargas en pipelines de CI/CD antes de cargar pesos.
+- Inferencia en Tesla P100 de 16 GB: usar `RC3Y-v2-K` con el conjunto de parches de llama.cpp incluido permite ejecutar un modelo de ~27B en una GPU de 16 GB con 33,4 t/s en decodificación plana y 50,5 t/s con MTP K=3 en contexto corto, un escenario habitual en clústeres de investigación con hardware legacy.
+- Despliegue en Intel Arc B70 con vLLM: la variante `NQ4MAX-B70-AWQ` (20,1 GB, 5 shards) se carga sin parches y ofrece 58–59 t/s en chat de un solo flujo con MTP, adecuada para servir una API interna sobre aceleradores Intel.
+- Equipos con unos 8 GB de memoria: `KD-B` (7.998.312.448 bytes) cabe en GPU de consumo de 8 GB o en CPU, con HumanEval 63,4 % y 55,4 t/s en A100, útil para asistentes de código locales en estaciones de trabajo modestas.
+- Razonamiento científico de posgrado en local: con GPQA Diamond 82,3 en RC3Y-v2-K, se puede montar un asistente de preguntas técnicas sobre una sola P100 sin depender de APIs externas.
+- Evaluación de cuantizaciones en investigación: el repositorio publica tableros de KLD por ventanas, comparaciones pareadas y metodología reproducible, lo que sirve para estudiar el impacto de la precisión mixta en modelos de ~27B.
+- Prototipado de chat conversacional en CPU: `U-X` o un GGUF comunitario estándar (unsloth, bartowski) permiten levantar un servidor llama.cpp en CPU para pruebas de integración antes de migrar a GPU.
+- Sustitución de modelos mayores en pipelines con restricciones de memoria: al reducir de ~54 GB en BF16 a 8–20 GB, se puede integrar el modelo en contenedores con límites estrictos de VRAM manteniendo buena parte de la calidad en tareas de texto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor solo publica un banco de divergencia (KLD macro D4 frente a BF16) y mediciones de velocidad.
+Datos medidos por el autor y publicados en la model card:
 
-Cuantizaciones de 2 bits y controles publicos:
+| Benchmark / metrica | RC3Y-v2-K (3 bits) | KD-B (2 bits) | BF16 (referencia) |
+|---|---|---|---|
+| GPQA Diamond (tope 64k salida) | 82,3 | no disponible | no disponible |
+| GPQA Diamond (continuado a 131k) | 86,4 | no disponible | no disponible |
+| IFBench | 81,0 | no disponible | no disponible |
+| HumanEval (thinking off, n=164) | no disponible | 63,4 % | 78,0 % |
+| KLD macro vs BF16 | −0,0144 frente a RC3Y-default | 0,2898 (U-X: 0,3457) | 0 |
+| KLD D4 macro (archivo original) | 0,143355 (RC3Y) | no disponible | 0 |
 
-| Cuantizacion | Bytes del artefacto | KLD macro D4 (menor es mejor) | IC 95 % bootstrap | Runtime |
-|---|---:|---:|---|---|
-| q2lite-native-late50 | 9.299.294.112 | 0,189467226 | [0,171098225; 0,210809274] | referencia FP32 empaquetada |
-| AP-IQ2_S | 9.607.980.896 | 0,205070357 | [0,186003907; 0,226723904] | GGUF nativo / llama.cpp |
-| UD-Q2_K_XL | 9.828.981.664 | 0,208431916 | [0,184685052; 0,235335855] | GGUF nativo / llama.cpp |
-| bartowski-IQ2_M | 10.522.248.928 | 0,223455428 | [0,203403342; 0,244315571] | GGUF nativo / llama.cpp |
-| ISTA GSQ-RCO-IQ2_S | 9.259.510.912 | 0,224526124 | [0,203575330; 0,247890046] | GGUF nativo / llama.cpp |
-| UD-IQ2_S | 8.371.970.048 | 0,275715745 | [0,252054192; 0,302576649] | GGUF nativo / llama.cpp |
-| bartowski-IQ2_S | 9.684.043.488 | 0,277955272 | [0,255661678; 0,301899920] | GGUF nativo / llama.cpp |
-| bartowski-IQ2_XS | 9.088.526.048 | 0,316145283 | [0,291040614; 0,343021908] | GGUF nativo / llama.cpp |
+Rendimiento medido:
 
-Variantes de 3 bits y de 4 bits:
+| Variante | Hardware | Throughput |
+|---|---|---|
+| NQ4MAX-B70-AWQ | Intel Arc B70, vLLM | 58–59 t/s single-stream con MTP |
+| RC3Y-v2-K | Tesla P100 16 GB | 33,4 t/s decodificación plana; 50,5 t/s con MTP K=3 |
+| RC3Y | Tesla P100 16 GB | 38,9 t/s con MTP K=2 (build de desarrollo) |
+| U-X / KD-B | A100 | 55,4 t/s single-stream (informativo) |
 
-| Variante | Tamano | Metrica declarada | Nota |
-|---|---:|---|---|
-| NQ4MAX-B70 | 20,1 GB (18,7 GiB) | +0,012 nats frente a BF16 | tareas evaluadas dentro de los errores estandar declarados |
-| RC3Y | 11,65 GB | KLD macro D4 0,143355 | por detras de AP-IQ3_S; medido sobre el archivo original |
-| B3 | 12.035.434.112 bytes (3,58 bpw) | KLD macro D4 0,099020051 | inferior a AP-IQ3_S en los 4 corpus a igual tamano; provisional, sin descarga |
-
-Velocidad declarada: 58-59 t/s en NQ4MAX-B70 sobre Intel Arc B70, concurrencia 1, chat con MTP; 38,9 t/s en RC3Y sobre Tesla P100 con MTP K=2, medido en build de desarrollo. No hay datos de latencia (TTFT) ni de throughput agregado a mayor concurrencia.
+No se han publicado en la información disponible resultados de MMLU, GSM8K ni comparaciones directas con otros modelos en la misma tabla.
 
 ## Requisitos de hardware
 
-- VRAM para NQ4MAX-B70: 20,1 GB de pesos en BF16/FP16 de activaciones aparte; encaja en GPUs de 24 GB o mas, y en Intel Arc B70 segun el autor.
-- VRAM para RC3Y: 11,65 GB de pesos; el objetivo declarado es Tesla P100 de 16 GB, lo que deja aproximadamente 4 GB para cache KV con contexto moderado.
-- GPU recomendadas por el autor: Intel Arc B70 con vLLM (NQ4MAX-B70, sin parches) y Tesla P100 16 GB con llama.cpp parcheado (RC3Y).
-- GPU no soportadas o no probadas: Tesla P40 y GPUs mas nuevas que la P100; la ruta rapida de RC3Y es exclusiva de P100 y los fallbacks se describen como "no probados y previsiblemente lentos".
-- Consumer GPU: no se declara soporte para RTX 4090 ni otras tarjetas consumer; para esos casos el autor remite a GGUF estandar de unsloth o bartowski (IQ3_S y Q3_K_XL tienen mejor calidad a 3 bits en su banco).
-- CPU: no recomendado con RC3Y (solo tiene una ruta de referencia lenta); usar GGUF comunitario.
-- Opciones de despliegue: vLLM con exportacion AWQ-compatible (NQ4MAX-B70); llama.cpp build b11551 con los 11 parches incluidos (RC3Y). No se mencionan Ollama ni TGI.
-- Throughput: 58-59 t/s (Arc B70, c1, MTP) y 38,9 t/s (P100, MTP K=2, build de desarrollo). Sin datos de latencia ni de escalado.
+- VRAM estimada: 20,1 GB (18,7 GiB) para NQ4MAX-B70-AWQ; 11,65 GB para RC3Y y RC3Y-v2-K; 7,998 GB para U-X y KD-B.
+- GPU objetivo declaradas: Intel Arc B70 (variante AWQ con vLLM), Tesla P100 16 GB (RC3Y y RC3Y-v2-K con parches), A100 (medición informativa de U-X y KD-B).
+- GPU de consumo: KD-B y U-X caben en tarjetas de 8 GB; NQ4MAX-B70 requiere al menos 20 GB, por lo que no cabe en GPUs de consumo de 16 GB o menos.
+- Tesla P40 y GPUs más nuevas: el autor recomienda GGUFs comunitarios estándar (unsloth, bartowski) y advierte de que la ruta rápida de RC3Y es exclusiva de P100; los fallbacks en P40 y GPUs nuevas no están probados y se esperan lentos.
+- Despliegue: vLLM con export AWQ (NQ4MAX-B70); llama.cpp con parches propios (RC3Y, RC3Y-v2-K); llama.cpp upstream con tipos estándar (U-X, KD-B); CPU con U-X o GGUF comunitario.
+- Latencia y throughput: ver tabla de benchmarks; el autor no publica latencias de primera token ni métricas de concurrencia.
 
 ## Comparativa con modelos similares
 
-La comparacion disponible es contra cuantizaciones del mismo modelo base, no contra modelos distintos. No hay informacion sobre modelos alternativos de ~27B.
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-Nyquant-preview (este) | ~26,9 mil M | no disponible | 4, 3 y 2 bits (Nyquant) | apache-2.0 | Optimizado por hardware; requiere parches en RC3Y |
+| Qwen/Qwen3.8-27B (BF16) | ~26,9 mil M | no disponible | BF16 | apache-2.0 | Referencia de calidad; ~54 GB en BF16 |
+| unsloth/Qwen3.8-27B-GGUF | ~26,9 mil M | no disponible | GGUF estándar (UD-IQ2_XXS y otros) | apache-2.0 | Carga en llama.cpp upstream; base de U-X |
+| bartowski (GGUF de Qwen3.8-27B) | ~26,9 mil M | no disponible | GGUF estándar (IQ3_S, Q3_K_XL, etc.) | apache-2.0 | Recomendado por el autor para P40 y GPUs nuevas |
 
-| Artefacto | Bits (body bpw) | Tamano | Formato / runtime | Licencia | Disponibilidad |
-|---|---:|---:|---|---|---|
-| NQ4MAX-B70 | 4,30 | 20,1 GB | safetensors AWQ-compatible / vLLM | Apache-2.0 | descargable (preview) |
-| RC3Y | 3,29 | 11,65 GB | GGUF personalizado / llama.cpp parcheado | Apache-2.0 | descargable (preview) |
-| AP-IQ3_S | no disponible | ~12 GB (referencia de igual tamano que B3) | GGUF estandar / llama.cpp | no disponible | control publico |
-| B3 | no declarado (3,58 bpw) | 12.035.434.112 bytes | GGUF estandar / llama.cpp upstream | Apache-2.0 (repo) | no descargable |
-| q2lite | 2 bits | 9.299.294.112 bytes | FP32 empaquetado de referencia | Apache-2.0 (repo) | no descargable |
-| GGUF comunitarios (unsloth, bartowski) | 2-3 bits | 8,37-10,52 GB (IQ2) / variable | GGUF estandar / llama.cpp | no disponible | publicos |
+Los datos de contexto y benchmarks de los modelos comparables no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una *preview* publica y temprana: cero descargas y cero likes en el momento de la ficha, sin historial de uso en produccion.
-- No hay benchmarks de tarea (MMLU, HumanEval, GSM8K, etc.); solo divergencia KLD frente a BF16. La calidad funcional real no esta cuantificada.
-- q2lite falla el criterio K3: la cota superior del intervalo de confianza macro es 0,21080927346309444, por encima del 0,205 exigido. Ademas, su puntuacion se obtuvo en un runtime de referencia FP32 propio y la comprobacion de igualdad de runtime sigue pendiente, por lo que no es comparable de forma directa con los controles en llama.cpp.
-- RC3Y queda por detras de AP-IQ3_S en KLD (0,143355) y su build rapida es de desarrollo; las comprobaciones de release siguen abiertas.
-- RC3Y usa tipos de tensor personalizados: el llama.cpp upstream no puede cargarlo y requiere aplicar 11 parches sobre la build b11551. Sin ellos, el modelo no es utilizable en la ruta rapida.
-- La ruta rapida esta limitada a Tesla P100; en P40, GPUs mas nuevas o CPU el rendimiento esperado es bajo o directamente no esta probado.
-- Idioma: solo ingles declarado. No hay soporte multilingue documentado, lo que excluye casos de uso en castellano sin evaluacion previa.
-- No se documenta longitud de contexto, soporte de tool calling ni capacidades de agente; no asumir ninguna de ellas en produccion.
-- Riesgo de alucinacion: inherente a un modelo de lenguaje de 27B, agravado por la cuantizacion a 3-4 bits; sin datos de evaluacion especificos de factualidad.
-- Sesgos: no se publica ninguna evaluacion de sesgo ni de seguridad en la informacion disponible.
-- Licencia Apache-2.0 en el repositorio, lo que permite uso comercial, pero el autor no ofrece garantias y los artefactos son experimentales. Verificar `LICENSE` y `NOTICE` por las atribuciones del modelo base.
-- B3 y q2lite se listan unicamente por sus resultados de investigacion: no son descargables. No planificar despliegues sobre ellos.
+- Es una *preview* pública: el autor advierte de que son versiones tempranas y que deben leerse las limitaciones de cada variante antes de usarlas en producción.
+- Resultados no replicados de forma independiente: RC3Y-v2-K se describe como un resultado expuesto en desarrollo y no replicado por terceros.
+- RC3Y y RC3Y-v2-K no cargan en llama.cpp upstream: requieren compilar con el conjunto de parches 0001–0028 incluido; sin ellos la inferencia no es posible.
+- La ruta rápida de RC3Y es exclusiva de P100; los fallbacks en P40 y GPUs más nuevas no están probados y se esperan lentos.
+- Pérdida de calidad medible: KD-B baja HumanEval de 78,0 % a 63,4 %; U-X presenta KLD de 0,3457 frente a 0,2898 de KD-B.
+- U-X es más grande que su base (UD-IQ2_XXS) y el autor no reclama paridad de tamaño con ella.
+- Idiomas: solo inglés declarado; no hay soporte multilingüe verificado.
+- Longitud de contexto: no declarada en la model card; las pruebas usan salidas de 64k y 131k, pero no se especifica la ventana de entrada.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; aplican los del modelo base Qwen3.8-27B.
+- Licencia apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los parches de llama.cpp incluidos.
+- No se declaran capacidades de tool calling ni de agentes; no asumirlas en producción sin validación.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/XGeorgeCostanzaX/Qwen3.8-27B-Nyquant-preview
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (revision `1d4bf0f2`)
-- GGUF comunitarios recomendados por el autor: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF y https://huggingface.co/bartowski
-- La busqueda web realizada no devolvio resultados relevantes para este modelo (papers, blogs, repos o demos); no se dispone de enlaces adicionales verificables.
+- Repositorio Hugging Face: https://huggingface.co/XGeorgeCostanzaX/Qwen3.8-27B-Nyquant-preview
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- GGUF comunitario de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- GGUF comunitario de bartowski: https://huggingface.co/bartowski
+- Paper, blog o demo del autor: no disponible en la información proporcionada.

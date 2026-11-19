@@ -5,7 +5,7 @@
   "author": "codebrandes",
   "url": "https://huggingface.co/codebrandes/GLM-5.3-Flash-Q4NX-2.6bpw",
   "created_at": "2026-11-17T22:55:50.000Z",
-  "updated_at": "2026-11-18T19:06:19.000Z",
+  "updated_at": "2026-11-18T21:39:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

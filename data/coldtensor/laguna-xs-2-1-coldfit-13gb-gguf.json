@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ColdTensor/Laguna-XS-2.1-Coldfit-13GB-GGUF",
+  "slug": "coldtensor-laguna-xs-2-1-coldfit-13gb-gguf",
+  "author": "ColdTensor",
+  "url": "https://huggingface.co/ColdTensor/Laguna-XS-2.1-Coldfit-13GB-GGUF",
+  "created_at": "2026-11-19T04:56:10.000Z",
+  "updated_at": "2026-11-19T04:58:23.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "moe",
+    "quantized",
+    "llama.cpp",
+    "laguna-xs-2.1",
+    "text-generation",
+    "en",
+    "base_model:poolside/Laguna-XS-2.1",
+    "base_model:quantized:poolside/Laguna-XS-2.1",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33442617088,
+  "parameters_human": "33.44B",
+  "storage_bytes": 13596050698,
+  "storage_human": "13.6 GB",
+  "context_length": 262144,
+  "base_model": "poolside/Laguna-XS-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

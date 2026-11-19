@@ -5,17 +5,16 @@
   "author": "limxdynamics",
   "url": "https://huggingface.co/limxdynamics/tron2-rl-locomotion-policies",
   "created_at": "2026-11-06T07:19:24.000Z",
-  "updated_at": "2026-11-17T02:22:21.000Z",
+  "updated_at": "2026-11-19T03:31:28.000Z",
   "license": "see-source-repository",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
-  "library": "limx-dynamics",
+  "library": "onnx",
   "languages": [
     "en",
     "zh"
   ],
   "tags": [
-    "limx-dynamics",
     "onnx",
     "robotics",
     "reinforcement-learning",
@@ -24,6 +23,8 @@
     "humanoid",
     "locomotion",
     "mujoco",
+    "sim2real",
+    "limx-dynamics",
     "tron2",
     "en",
     "zh",

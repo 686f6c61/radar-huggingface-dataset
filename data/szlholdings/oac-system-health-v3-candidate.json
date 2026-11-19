@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "SZLHOLDINGS/oac-system-health-v3-candidate",
+  "slug": "szlholdings-oac-system-health-v3-candidate",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/oac-system-health-v3-candidate",
+  "created_at": "2026-11-18T02:55:44.000Z",
+  "updated_at": "2026-11-18T02:55:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "logistic-regression",
+    "operations",
+    "observability",
+    "synthetic-data",
+    "standard-library",
+    "tabular-classification",
+    "dataset:SZLHOLDINGS/oac-clinical-transport-observability-synthetic",
+    "arxiv:2308.07832",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Synthetic operator-attention advisory",
+      "dataset": "SYNTHETIC test split only (seed 2500; not real-world telemetry)",
+      "metric": "ROC AUC (synthetic)",
+      "value": 0.830169104679
+    },
+    {
+      "task": "Synthetic operator-attention advisory",
+      "dataset": "SYNTHETIC test split only (seed 2500; not real-world telemetry)",
+      "metric": "Balanced accuracy at threshold 0.16 (synthetic)",
+      "value": 0.741363211951
+    },
+    {
+      "task": "Synthetic operator-attention advisory",
+      "dataset": "SYNTHETIC test split only (seed 2500; not real-world telemetry)",
+      "metric": "Recall (synthetic)",
+      "value": 0.78431372549
+    },
+    {
+      "task": "Synthetic operator-attention advisory",
+      "dataset": "SYNTHETIC test split only (seed 2500; not real-world telemetry)",
+      "metric": "Precision (synthetic)",
+      "value": 0.412371134021
+    },
+    {
+      "task": "Synthetic operator-attention advisory",
+      "dataset": "SYNTHETIC test split only (seed 2500; not real-world telemetry)",
+      "metric": "F1 (synthetic)",
+      "value": 0.540540540541
+    }
+  ],
+  "sources": []
+}

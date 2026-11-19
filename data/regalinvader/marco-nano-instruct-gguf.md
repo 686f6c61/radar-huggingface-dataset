@@ -2,105 +2,97 @@
 
 ## Resumen
 
-Marco-Nano-Instruct-GGUF es un conjunto de cinco cuantizaciones de baja precision (1, 2 y 3 bits) del modelo ATH-MaaS/Marco-Nano-Instruct, un transformer de mezcla de expertos (MoE) con 8.001.454.080 parametros totales, 232 expertos y unos 0,6B de parametros activos por token. Lo publica el usuario RegalInvader bajo licencia Apache 2.0, con pesos en formato GGUF listos para llama.cpp, PocketPal y Ollama. El modelo base cubre 29 idiomas, entre ellos castellano, catalan no incluido, arabe, hindi-urdu, bengali, nepalí, kazajo y azeri.
+Marco-Nano-Instruct-GGUF es una colección de cuantizaciones de baja precisión (1, 2 y 3 bits) del modelo Marco-Nano-Instruct, un modelo de mezcla de expertos (MoE) multilingüe de 8.000 millones de parámetros totales con 0,6 mil millones activos por token, 232 expertos y soporte para 29 idiomas. El modelo original lo desarrolla ATH-MaaS (Alibaba International Digital Commerce) y esta versión GGUF la publica el usuario RegalInvader, orientada específicamente a inferencia en dispositivos móviles mediante llama.cpp y PocketPal.
 
-La innovacion principal no es el modelo en si, sino el metodo de cuantizacion: en lugar de redondear los pesos de los expertos enrutados (que suponen el 96% de los parametros), el autor los entrena directamente en su formato de baja precision destilando del modelo original. El resultado son ficheros de 2,18 a 4,02 GB que conservan mucha mas fidelidad que las cuantizaciones nativas de llama.cpp del mismo tamano: el 3 bits alcanza una divergencia KL de 0,0277 nats por token frente al bf16 original, muy cerca del 0,0076 que obtiene un Q8_0 del mismo modelo.
+La innovación principal no es la cuantización convencional: los expertos enrutados, que representan el 96 % de los pesos, se entrenaron directamente en sus formatos de baja precisión mediante destilación del modelo original, en lugar de redondear los pesos a posteriori. Esto conserva mucha más calidad que las cuantizaciones estándar de llama.cpp al mismo tamaño de archivo. El resultado son ficheros de entre 2,18 GB y 4,02 GB que ejecutan a velocidades de 24,8 a 36,6 tokens/s en un Pixel 10a, muy por encima de alternativas como Gemma 4 E2B QAT (12,1 tok/s) o Qwen3.5-4B (5,2 tok/s) en el mismo dispositivo.
 
-El objetivo declarado es la inferencia en dispositivo (on-device): el fichero de 3 bits genera 24,8 tokens/s en un Pixel 10a (Tensor G4, 8 GB, 4 hilos de CPU), frente a 12,1 tokens/s de Gemma 4 E2B QAT y 5,2 tokens/s de Qwen3.5-4B en el mismo telefono y configuracion. Es relevante porque demuestra que un MoE de 8B puede ejecutarse de forma usable en un movil de gama alta sin conexion.
+El modelo es relevante ahora porque demuestra que es viable desplegar un MoE multilingüe de 8B con calidad cercana al original en hardware móvil de consumo, con licencia Apache 2.0 y compatibilidad con el ecosistema llama.cpp/Ollama. La ficha se centra en las builds GGUF publicadas, no en el modelo base original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) sobre transformer, 232 expertos, aproximadamente 0,6B de parametros activos por token |
-| Parametros totales | 8.001.454.080 (~8B) |
-| Parametros activos | ~0,6B por token |
-| Longitud de contexto | 8.192 tokens (los ejemplos de llama.cpp usan `-c 8192`; el autor indica entrenamiento y pruebas hasta 8K y caida de calidad por encima) |
-| Tipos de cuantizacion | IQ3_S (down projection IQ4_NL), IQ2_S (IQ4_NL), IQ2_XXS (IQ4_NL), Q2_0, TQ1_0 ternario a 1,69 bits por peso (down projection Q2_0). Atencion y embeddings (atados) en Q8_0; router y norms en f32 |
+| Arquitectura | Transformer con mezcla de expertos (MoE), 232 expertos enrutados |
+| Parametros totales | 8.001.454.080 (8B) |
+| Parametros activos | 0,6B por token |
+| Longitud de contexto | Entrenado y probado hasta 8K tokens; la calidad cae por encima |
+| Tipos de cuantizacion | IQ3_S (con down projection IQ4_NL), IQ2_S (IQ4_NL), IQ2_XXS (IQ4_NL), Q2_0, TQ1_0 ternario (down projection Q2_0). Atención y embeddings en Q8_0, router y norms en f32 |
 | Idiomas soportados | 29: en, zh, ar, de, es, fr, ko, ja, pt, tr, id, it, nl, pl, ru, vi, th, he, uk, ms, bn, cs, ur, kk, el, ro, hu, ne, az |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); repositorio de 15,3 GB con cinco ficheros |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos de 8B parametros totales y 232 expertos, de los cuales solo se activan unos 0,6B por token. Los expertos enrutados concentran el 96% de los pesos, lo que explica por que la estrategia de cuantizacion se centra en ellos. La publicacion mantiene en Q8_0 la atencion y los embeddings atados, y en f32 el router y las normas, de modo que las decisiones de enrutamiento no se degradan con la cuantizacion.
+El modelo base es un transformer con mezcla de expertos de 8B parámetros totales y 0,6B activos por token, distribuidos en 232 expertos enrutados. Los expertos enrutados concentran el 96 % de los pesos, mientras que la atención y los embeddings (atados) son una fracción menor. Esta distribución es la que hace posible la cuantización agresiva: al mantener atención y embeddings en Q8_0, el router y las normas en f32, y comprimir solo los expertos, se preserva la estabilidad del enrutamiento y la calidad de representación.
 
-El entrenamiento de cada fichero consiste en destilar el modelo original bf16 mientras los pesos de los expertos viven en su formato de baja precision: 24M tokens para IQ3_S, 50M para IQ2_S, 44M para IQ2_XXS (los ultimos 4M centrados en matematicas y codigo verificados), 200M para Q2_0 y 100M para TQ1_0. Los tres ficheros de mayor calidad usan escalas de codebook; los dos mas agresivos aplican entrenamiento consciente de la cuantizacion sobre la cuantizacion completa. El autor no detalla la composicion del dataset de destilacion ni si hubo RLHF o DPO en el modelo base; esa informacion no esta disponible en la model card.
+El entrenamiento de las builds GGUF es el aspecto diferencial. En lugar de aplicar cuantización post-entrenamiento convencional, los expertos se entrenaron en sus formatos de baja precisión mediante destilación del modelo original bf16. Los volúmenes de entrenamiento varían: 24M tokens para IQ3_S, 50M para IQ2_S, 44M para IQ2_XXS (los últimos 4M sobre matemáticas y código verificados), y 200M tokens para Q2_0 y TQ1_0 (los últimos 10M sobre matemáticas y código verificados en el caso de TQ1_0). La divergencia KL respecto a la distribución original del siguiente token se midió con `--kl-divergence` de llama.cpp sobre 40 secuencias multilingües de 4.096 tokens: 0,0277 (IQ3_S), 0,0566 (IQ2_S), 0,0914 (IQ2_XXS), 0,196 (Q2_0) y 0,243 (TQ1_0). Como referencia, un Q8_0 del original puntúa 0,0076.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno con plantilla de chat propia incluida en el fichero GGUF.
-- Razonamiento y matematicas: el autor separa explicitamente los ficheros por rendimiento en matematicas y codigo (IQ2_XXS es "el mejor 2 bits en matematicas"); el fichero de 1 bit sacrifica estas dos areas.
-- Codigo: presente en el modelo base y reforzado en la fase final del entrenamiento de IQ2_XXS; no hay datos de HumanEval.
-- Multilingue: 29 idiomas, con cobertura destacada de lenguas de bajos recursos (ur, bn, ne, kk, az, ms, el, hu).
-- Salida estructurada tipo JSON: el autor incluyo prompts JSON en la bateria de 72 pruebas de calidad.
-- Ejecucion en dispositivo sin conexion mediante PocketPal y llama.cpp.
-- Servidor compatible con la API de OpenAI a traves de `llama-server`.
-- No se documenta soporte de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
+- Generación de texto conversacional multi-turno con plantilla de chat original preservada.
+- Razonamiento y matemáticas: las builds de 2 y 3 bits mantienen capacidad funcional en GSM8K y MATH-500; la build de 1 bit sacrifica parcialmente matemáticas y código.
+- Generación de código: soportada, con refuerzo específico en los últimos millones de tokens de entrenamiento de las builds IQ2_XXS y TQ1_0.
+- Soporte multilingüe en 29 idiomas, incluyendo lenguas de bajos recursos como urdu, bengalí, nepalí, kazajo, azerí y malayo.
+- Salida estructurada tipo JSON (evaluada en el conjunto de 72 prompts de prueba del autor).
+- Instrucciones y formato conversacional (IFEval evaluado en la build de 1 bit).
+- Sin soporte documentado de tool calling, function calling, agentes o multi-step reasoning en la información disponible.
+- Sin capacidades de visión, audio ni modo thinking documentadas.
 
 ## Casos de uso
 
-- Asistente conversacional totalmente offline en movil: con el fichero IQ3_S (4,02 GB) y PocketPal 1.21.2 sobre un Pixel 10a se obtienen 24,8 tokens/s, suficiente para un chat fluido sin enviar datos a la nube.
-- Traduccion entre lenguas de bajos recursos: el modelo cubre ur, bn, ne, kk, az, ms y el, pares para los que hay pocos modelos abiertos; se usaria con prompts de traduccion directa y contexto de hasta 8K tokens.
-- Extraccion de datos estructurados en el borde: generacion de JSON a partir de texto libre en aplicaciones moviles o embebidas, con temperatura 0,7, top-p 0,9 y penalizacion de repeticion 1,1 para evitar bucles.
-- Atencion al cliente en kioscos o terminales sin conectividad: conversaciones multi-turno con contexto de varios miles de tokens y KV cache en Q8_0 para reducir memoria.
-- Backend ligero compatible con OpenAI: `llama-server -m Marco-Nano-Instruct-2bit-IQ2_XXS.gguf -c 8192 --jinja` permite integrar el modelo en herramientas que ya hablan el protocolo de OpenAI sin reescribir clientes.
-- Prototipado rapido en portatil sin GPU: los ficheros de 2,18 a 3,46 GB caben en RAM y permiten validar prompts, plantillas y flujos antes de pasar a una GPU.
-- Filtrado y resumen de documentos sensibles en local: al no requerir red, encaja en entornos con requisitos de privacidad donde el texto no puede salir del dispositivo.
-- Aplicaciones educativas multilingues: el tamano reducido del fichero de 1 bit (2,18 GB) permite distribuirlo en dispositivos de gama media con 6-8 GB de RAM.
+- Asistente conversacional offline en móvil: con ficheros de 2,18 a 3,46 GB, el modelo cabe en la memoria de un teléfono de gama alta y responde a 24-36 tok/s en CPU, permitiendo un asistente local sin conexión ni coste de API.
+- Traducción y atención multilingüe en dispositivo: los 29 idiomas soportados permiten atender consultas en urdu, bengalí, nepalí o kazajo sin depender de servicios en la nube, útil en contextos con conectividad limitada.
+- Generación de código en entornos con restricciones de red: la build IQ2_XXS, con refuerzo en código verificado, permite autocompletado y explicación de fragmentos en un portátil modesto o incluso en móvil.
+- Procesamiento de documentos y extracción de JSON: la ventana de 8K tokens y la evaluación específica en JSON lo hacen adecuado para tareas de extracción estructurada en pipelines ligeros.
+- Educación y tutoría en dispositivos de bajo coste: al ejecutarse en llama.cpp y PocketPal, puede desplegarse en aulas con hardware antiguo o sin infraestructura cloud.
+- Prototipado rápido de aplicaciones conversacionales: la licencia Apache 2.0 y la compatibilidad con Ollama permiten integrar el modelo en demos y validaciones de producto sin coste de licencia.
+- Investigación sobre cuantización y destilación: los ficheros publicados con sus métricas KL y volúmenes de entrenamiento sirven como referencia reproducible para estudiar el impacto de la cuantización consciente en MoE.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los unicos datos cuantitativos son la divergencia KL respecto al modelo bf16 original y la velocidad de generacion medida en un Pixel 10a con PocketPal 1.21.2 (512 tokens de prompt, 128 generados, 4 hilos de CPU, KV cache f16).
+| Metrica | IQ3_S | IQ2_S | IQ2_XXS | Q2_0 | TQ1_0 (1-bit) |
+|---|---|---|---|---|---|
+| Tamano | 4,02 GB | 3,46 GB | 3,14 GB | 2,54 GB | 2,18 GB |
+| KL vs original bf16 | 0,0277 | 0,0566 | 0,0914 | 0,196 | 0,243 |
+| Tokens de entrenamiento | 24M | 50M | 44M | 200M | 200M |
+| Pixel 10a (tok/s) | 24,8 | no medido | 31,6 | 32,2 | 36,6 |
 
-| Fichero | Tamano | Bits por peso | KL vs. original (nats/token) | Pixel 10a (tok/s) |
-|---|---|---|---|---|
-| Marco-Nano-Instruct-3bit-IQ3_S.gguf | 4,02 GB | IQ3_S + IQ4_NL | 0,0277 | 24,8 |
-| Marco-Nano-Instruct-2bit-IQ2_S.gguf | 3,46 GB | IQ2_S + IQ4_NL | 0,0566 | no medido |
-| Marco-Nano-Instruct-2bit-IQ2_XXS.gguf | 3,14 GB | IQ2_XXS + IQ4_NL | 0,0914 | 31,6 |
-| Marco-Nano-Instruct-2bit-Q2_0.gguf | 2,54 GB | Q2_0 (2,25 bits) | 0,196 | 32,2 |
-| Marco-Nano-Instruct-1bit-TQ1_0.gguf | 2,18 GB | TQ1_0 ternario (1,69 bits) + Q2_0 | 0,264 | 36,6 |
-
-Referencia del autor: un Q8_0 del modelo original obtiene una KL de 0,0076 en la misma prueba (40 secuencias multilingues retenidas de 4.096 tokens). La velocidad escala de forma inversa al tamano del fichero, con una ganancia de aproximadamente el 47% entre el 3 bits y el 1 bit.
+Referencia de velocidad en Pixel 10a (512 prompt / 128 generados, 4 hilos CPU, KV cache f16): Gemma 4 E2B QAT 12,1 tok/s; Qwen3.5-4B 5,2 tok/s. La build de 1 bit mejoró respecto a su primera versión en +6,8 puntos en GSM8K, +6,2 en MATH-500 y +8,5 en IFEval, pero perdió 3,2 puntos en Belebele (mayoritariamente húngaro, de 56,5 a 48,0). No se han publicado resultados absolutos de MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria: el fichero mas grande ocupa 4,02 GB y el mas pequeno 2,18 GB; hay que sumar la cache KV, que debe mantenerse en f16 o Q8_0. El autor advierte explicitamente de que una cache de claves Q4_0 rompe el modelo.
-- Moviles: probado en un Pixel 10a con Tensor G4 y 8 GB de RAM. Configurar los hilos de CPU al numero de nucleos rapidos (4 en un Pixel); con el valor por defecto de 6 en PocketPal el rendimiento cae aproximadamente a la mitad en telefonos Tensor (31,6 frente a 16,8 tok/s con IQ2_XXS).
-- GPU: no se han publicado mediciones en GPU en la informacion disponible. Por tamano de fichero, cualquier GPU consumer con 6 GB o mas de VRAM libre deberia poder alojar los ficheros de 2 y 3 bits, pero es una estimacion no verificada por el autor.
-- Despliegue: llama.cpp (probado con la build b11385), `llama-server` como API compatible con OpenAI, Ollama (probado en v0.40.12, excepto TQ1_0) y PocketPal 1.21.2 o superior.
-- Throughput conocido: de 24,8 a 36,6 tokens/s en Pixel 10a segun fichero. Latencia de primer token no disponible.
-- Aviso de compatibilidad: el fichero Q2_0 usa el tipo Q2_0 de llama.cpp mainline (grupos de 64, 2,25 bits por peso); algunos forks definen un Q2_0 incompatible con el mismo nombre y pueden cargarlo produciendo basura sin error.
+- VRAM/RAM estimada: de 2,18 GB (TQ1_0) a 4,02 GB (IQ3_S) para los pesos, más el KV cache. Con KV cache en Q8_0 se reduce a la mitad el consumo de caché respecto a f16.
+- GPU recomendadas: no se especifican en la información disponible; el enfoque del autor es CPU móvil. Para escritorio, cualquier GPU con 6-8 GB de VRAM puede alojar las builds de 2-3 bits con contexto moderado.
+- Cabe en GPU de consumo: sí, en tarjetas con 6 GB o más (RTX 3060, RTX 4060, RTX 4090 sobradamente) para las builds de 1-3 bits.
+- Despliegue: llama.cpp (stock), PocketPal 1.21.2 o superior, Ollama (probado en v0.40.12). No se mencionan vLLM ni TGI.
+- Latencia y throughput: 24,8-36,6 tok/s en Pixel 10a con 4 hilos. En Tensor phones, usar 6 hilos en lugar de 4 reduce el rendimiento a la mitad (31,6 → 16,8 tok/s en IQ2_XXS) por esperas en núcleos lentos.
 
 ## Comparativa con modelos similares
 
-Los unicos datos comparativos publicados son de velocidad en el mismo dispositivo (Pixel 10a, 4 hilos, KV cache f16); no hay comparaciones de calidad.
-
-| Modelo | Parametros | Contexto | Licencia | Velocidad en Pixel 10a | Notas |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Rendimiento en Pixel 10a |
 |---|---|---|---|---|---|
-| Marco-Nano-Instruct 3 bits (IQ3_S) | 8B totales / 0,6B activos | 8K | Apache 2.0 | 24,8 tok/s | MoE con 232 expertos, 29 idiomas |
-| Marco-Nano-Instruct 1 bit (TQ1_0) | 8B totales / 0,6B activos | 8K | Apache 2.0 | 36,6 tok/s | 2,18 GB, sacrifica matematicas y codigo |
-| Gemma 4 E2B QAT | no disponible | no disponible | no disponible | 12,1 tok/s | Referencia del autor, mismas condiciones |
-| Qwen3.5-4B | 4B (segun denominacion) | no disponible | no disponible | 5,2 tok/s | Referencia del autor, mismas condiciones |
-| Cuantizaciones nativas de llama.cpp del mismo tamano | 8B | 8K | Apache 2.0 | no disponible | El autor afirma que retienen menos calidad que estas destiladas, sin cifras publicadas |
+| Marco-Nano-Instruct 3-bit | 8B totales / 0,6B activos | 8K | Apache 2.0 | MoE multilingüe, cuantización consciente | 24,8 tok/s |
+| Gemma 4 E2B QAT | no disponible | no disponible | no disponible | Modelo denso con QAT | 12,1 tok/s |
+| Qwen3.5-4B | 4B | no disponible | no disponible | Denso | 5,2 tok/s |
+
+La comparación se limita a la velocidad publicada por el autor en el mismo dispositivo; no hay datos de calidad comparativa entre estos modelos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Bucles de repeticion: con temperatura baja el modelo entra en bucle con frecuencia. En 72 prompts de prueba, a temperatura 0,3 sin penalizacion, lo hicieron 26 respuestas con el 3 bits, 27 con el 2 bits y 45 con el 1 bit. El autor recomienda temperatura 0,7, top-p 0,9 y penalizacion de repeticion 1,1, lo que reduce los bucles a 2, 3 y 3 respectivamente.
-- Longitud de contexto: el modelo fue entrenado y probado hasta 8K tokens; por encima de ese valor la calidad cae. No se debe asumir una ventana mayor aunque la arquitectura base la soporte.
-- Respuestas sin terminacion: en algunos idiomas el modelo sigue generando en lugar de parar; se recomienda limitar la salida a 1.024-1.536 tokens.
-- Cache KV: una cache de claves Q4_0 rompe el modelo; usar f16 o Q8_0.
-- Compatibilidad: el fichero TQ1_0 de 1 bit no carga en Ollama (error de tensor no soportado) y requiere llama.cpp o PocketPal. El Q2_0 exige llama.cpp mainline b11385 o superior.
-- Degradacion en matematicas y codigo: el autor la declara explicitamente para el fichero de 1 bit, y la KL de 0,264 nats/token implica una divergencia notable respecto al original en el conjunto de pruebas.
-- Alucinacion: no hay evaluaciones de veracidad publicadas; se trata de un modelo de 8B con 0,6B activos cuantizado a 1-3 bits, por lo que el riesgo es alto en tareas factuales.
-- Sesgos: no se documenta ninguna evaluacion de sesgos ni de seguridad en la informacion disponible.
-- Traccion de la comunidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de las cifras del autor.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero conviene verificar la licencia del modelo base ATH-MaaS/Marco-Nano-Instruct antes de redistribuir derivados.
-- Fecha de publicacion: el repositorio figura creado el 2026-10-28, un dato que no se puede contrastar con la informacion disponible.
+- La calidad cae por encima de 8K tokens de contexto; el autor recomienda mantener conversaciones por debajo de ese umbral.
+- Las temperaturas bajas provocan bucles: a temperatura 0,3 sin penalización, 26 (3-bit), 27 (2-bit) y 45 (1-bit) de 72 respuestas entraron en bucle. Se recomienda temperatura 0,7, top-p 0,9 y repeat penalty 1,1.
+- En algunos idiomas el modelo no se detiene solo; conviene limitar la generación a 1.024-1.536 tokens.
+- No usar KV cache Q4_0: rompe el modelo. Usar f16 o Q8_0.
+- Sin system prompt, el modelo tiende a identificarse como GPT-4o, igual que el original.
+- La build de 1 bit sacrifica matemáticas y código y pierde calidad en húngaro (Belebele de 56,5 a 48,0).
+- Riesgo de alucinación inherente a modelos de 8B con 0,6B activos; no se documentan evaluaciones de sesgo.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base es de ATH-MaaS y conviene verificar condiciones del modelo original.
+- No hay soporte documentado de tool calling ni agentes, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/RegalInvader/Marco-Nano-Instruct-GGUF
+- Repositorio GGUF: https://huggingface.co/RegalInvader/Marco-Nano-Instruct-GGUF
 - Modelo base: https://huggingface.co/ATH-MaaS/Marco-Nano-Instruct
-- PocketPal (aplicacion movil): https://github.com/a-ghorbani/pocketpal-ai
-- llama.cpp (proyecto referenciado en la model card): https://github.com/ggml-org/llama.cpp
+- PocketPal: https://github.com/a-ghorbani/pocketpal-ai
+- Pal preconfigurado en PalsHub: https://palshub.ai/pals/30cad63c-602a-44ba-8db0-0bb6cae0f124
+- llama.cpp: https://github.com/ggml-org/llama.cpp

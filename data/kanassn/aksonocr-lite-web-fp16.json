@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "KanaSSN/AksonOCR-Lite-web-fp16",
+  "slug": "kanassn-aksonocr-lite-web-fp16",
+  "author": "KanaSSN",
+  "url": "https://huggingface.co/KanaSSN/AksonOCR-Lite-web-fp16",
+  "created_at": "2026-11-19T09:24:30.000Z",
+  "updated_at": "2026-11-19T09:26:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "thai",
+    "fp16",
+    "onnxruntime-web",
+    "image-to-text",
+    "th",
+    "en",
+    "base_model:Remtir/AksonOCR-Lite",
+    "base_model:quantized:Remtir/AksonOCR-Lite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164024647,
+  "storage_human": "164 MB",
+  "context_length": null,
+  "base_model": "Remtir/AksonOCR-Lite",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

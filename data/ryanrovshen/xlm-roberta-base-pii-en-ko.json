@@ -5,7 +5,7 @@
   "author": "ryanrovshen",
   "url": "https://huggingface.co/ryanrovshen/xlm-roberta-base-pii-en-ko",
   "created_at": "2026-11-18T13:58:49.000Z",
-  "updated_at": "2026-11-18T14:02:49.000Z",
+  "updated_at": "2026-11-18T15:05:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

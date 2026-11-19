@@ -5,7 +5,7 @@
   "author": "ePeryy",
   "url": "https://huggingface.co/ePeryy/sexist_detection_quant",
   "created_at": "2026-11-16T14:16:04.000Z",
-  "updated_at": "2026-11-17T17:18:06.000Z",
+  "updated_at": "2026-11-18T17:32:24.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ePeryy/sexist_detection_quantized",
+  "renamed_at": "2026-11-19T06:47:20.828Z",
   "benchmarks": [],
   "sources": []
 }

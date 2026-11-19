@@ -1,120 +1,88 @@
 # iapp/OpenThai-SystemOne
 
 ## Resumen
+OpenThai-SystemOne es un modelo de decisión de 0,75B parámetros desarrollado por iApp (en el marco del proyecto OpenThai, antes OpenThaiGPT) y publicado con la colaboración de AIEAT. No es un modelo generativo: dado un estado (texto libre o JSON) y una serie de preguntas tipadas, devuelve distribuciones de probabilidad calibradas sobre opciones en una única pasada forward. Resuelve tres tipos de tareas: elección entre hasta 255 opciones (`choice`), puntuación sobre 2-10 niveles ordenados (`score`) y probabilidad de "sí" para una pregunta binaria (`noul`).
 
-OpenThai-SystemOne es un modelo de decisión, no un modelo generativo: dado un estado arbitrario (texto libre o JSON) y una serie de preguntas tipadas, devuelve probabilidades calibradas sobre las opciones posibles en un único forward pass. Lo desarrolla iapp y se presenta como una implementación abierta del contrato de TypeSafe `POST /v1/systemone`, de modo que el código escrito para el SDK de TypeSafe puede apuntarse a este modelo sin cambios. Está etiquetado como `zero-shot-classification` y se distribuye bajo licencia Apache 2.0.
+La arquitectura parte del text tower de Qwen/Qwen3.5-0.8B-Base (24 capas, atención híbrida Gated-DeltaNet, contexto de 262k tokens), al que se elimina el codificador de visión y se sustituye la cabeza LM de 248k tokens por una cabeza de 256 slots. El modelo está especializado en tailandés e inglés y entrenado con ~5B tokens de continued pretraining en tailandés y 2-3M ejemplos de decisión.
 
-Su columna vertebral es la torre de texto de Qwen/Qwen3.5-0.8B-Base (24 capas, atención híbrida Gated-DeltaNet/atención, 262.144 tokens de contexto), a la que se le ha eliminado el codificador de visión y que fue sometida a un continued pretraining de unos 5.000 millones de tokens en tailandés (web, Wikipedia, pares paralelos tailandés-inglés y texto de estado de máquina como árboles de accesibilidad y JSON). Sobre ese backbone se sustituye la cabeza LM de 248.000 tokens por una cabeza de 256 slots, lo que da un total de 752.674.883 parámetros.
+Su relevancia actual radica en el nicho de "System One" (decisión rápida, estilo System 1 de Kahneman): clasificación y enrutamiento con probabilidades calibradas, verificación de salidas de LLM, selección de acciones en agentes de computer-use y enrutamiento de tickets, con un contrato HTTP compatible con `POST /v1/systemone`. Corre en CPU y GPU de consumo, con builds Ollama y GGUF, y licencia Apache-2.0.
 
-La relevancia del modelo está en su nicho: enrutado de tickets, moderación, detección de intención, evaluación de relevancia en RAG, verificación de salidas de LLM y selección de acciones en agentes de computer-use. Frente a resolver esas tareas con un LLM generativo y parsear su respuesta, aquí se obtiene directamente una distribución de probabilidad, con abstención explícita cuando ninguna opción encaja. El coste es un modelo de 0,75B, no de 9B, y el autor publica una comparativa en la que adelanta a Bespoke Nimble-9B en 4 de 13 subsets, aunque queda por detrás en la media macro (61,9 frente a 74,8).
-
-## Especificaciones tecnicas
-
+## Especificaciones técnicas
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder con atención híbrida Gated-DeltaNet/atención (24 capas), torre de texto de Qwen/Qwen3.5-0.8B-Base sin codificador de visión; cabeza de decisión de 256 slots en lugar de la cabeza LM |
+| Arquitectura | Transformer decoder-only (text tower de Qwen/Qwen3.5-0.8B-Base), 24 capas, atención híbrida Gated-DeltaNet / attention, sin vision encoder; cabeza de 256 slots en lugar de LM head |
 | Parametros totales | 752.674.883 |
-| Longitud de contexto | 262.144 tokens (262k, heredados del backbone) |
-| Tipos de cuantizacion | no disponible (el repositorio contiene pesos `safetensors` sin cuantizaciones publicadas) |
-| Idiomas soportados | tailandés (th) e inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, con código personalizado (`custom_code`, requiere `trust_remote_code=True`) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens (según model card del backbone) |
+| Tipos de cuantizacion | bf16, Q8_0, Q4_K_M (builds Ollama/GGUF) |
+| Idiomas soportados | th, en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (repo principal), GGUF (iapp/OpenThai-SystemOne-Ollama) |
 
 ## Arquitectura y entrenamiento
+El modelo reutiliza el text tower de Qwen3.5-0.8B-Base (24 capas, mecanismo híbrido entre Gated-DeltaNet y atención clásica, ventana de 262k tokens), descarta el codificador de visión y aplica continued pretraining sobre ~5B tokens de tailandés (web, Wikipedia, corpus paralelos th↔en y texto de estado máquina como accessibility trees y JSON). La cabeza LM original de 248k tokens se reemplaza por una cabeza de 256 slots: las opciones se introducen con tokens de control `<|ts_opt_0|>` … `<|ts_opt_254|>`, el hidden state en `<|ts_answer|>` se proyecta a 256 logits, los slots sobrantes se enmascaran y un softmax produce la distribución. El slot 255 representa "abstención" (ninguna opción encaja).
 
-El modelo parte del backbone de Qwen3.5-0.8B-Base, un transformer decoder de 24 capas con mecanismo de atención híbrido Gated-DeltaNet/atención y 262k tokens de contexto. Se elimina el codificador de visión y se continúa el preentrenamiento con aproximadamente 5.000 millones de tokens en tailandés: web, Wikipedia, corpus paralelos tailandés-inglés y texto de estado de máquina (árboles de accesibilidad, JSON). La innovación principal está en la cabeza: la cabeza LM de 248.000 tokens se reemplaza por una cabeza de 256 slots. Las opciones se introducen mediante tokens de control `<|ts_opt_0|> … <|ts_opt_254|>`, el estado oculto de cada token `<|ts_answer|>` se proyecta a 256 logits, los slots que exceden el número de opciones se enmascaran y un softmax produce la distribución. El slot 255 está reservado para abstenerse cuando ninguna opción encaja.
-
-El entrenamiento de la cabeza se hizo sobre entre 2 y 3 millones de ejemplos de decisión convertidos a partir de datasets públicos de clasificación, NLI, QA, rating, agentes y selección de herramientas en tailandés e inglés, más tareas de decisión sintéticas en ambos idiomas. Se aplicó barajado del orden de las opciones y se incluyeron ejemplos de abstención. Después hubo una fase corta de calibración con pérdida de Brier y temperatura por tipo de pregunta, de modo que una confianza mayor corresponda a una precisión mayor. El modelo soporta tres tipos de pregunta: `choice` (instrucciones más hasta 255 opciones con nombre y descripción o valor nulo), `score` (instrucciones más entre 2 y 10 descripciones de nivel ordenadas, devolviendo una puntuación fraccional ponderada por probabilidad) y `noul` (pregunta de sí/no que devuelve p(sí)).
+El entrenamiento de decisión usa ~2-3M ejemplos convertidos de datasets públicos de clasificación, NLI, QA, rating, agentes y selección de herramientas en tailandés e inglés, más tareas sintéticas, con barajado del orden de opciones y ejemplos de abstención. Después se aplica una fase corta de calibración con pérdida Brier y temperatura por tipo de pregunta, de modo que mayor confianza se corresponda con mayor precisión. El request/response replica el contrato de TypeSafe `POST /v1/systemone`; la build Ollama no ejecuta la cabeza de 256 slots, sino que formula cada pregunta como prompt de chat y lee las probabilidades de las letras A-Z (v0.3 ajustada al prompt de Ollama).
 
 ## Capacidades
-
-- Clasificación zero-shot de una sola pasada: devuelve `choice`, `probabilities` y `confidence` sin generar texto ni decodificación autorregresiva.
-- Preguntas de elección (`choice`) con hasta 255 opciones, cada una con nombre y descripción opcional.
-- Puntuación ordinal (`score`) sobre entre 2 y 10 niveles ordenados, con salida fraccional ponderada por probabilidad.
-- Preguntas binarias (`noul`) que devuelven la probabilidad de "sí".
-- Abstención explícita mediante el slot 255 cuando ninguna opción es adecuada.
-- Calibración por tipo de pregunta (temperatura específica y pérdida de Brier) para que la confianza sea interpretable.
-- Entrada de estado flexible: texto libre o JSON, incluido texto de estado de máquina como árboles de accesibilidad.
-- Bilingüe tailandés-inglés, con continued pretraining específico en tailandés.
-- Selección de acciones y de herramientas para agentes de computer-use y browser agents.
-- Compatibilidad de contrato con TypeSafe `POST /v1/systemone`, con SDK de Python (`openthai-systemone`) y servidor HTTP propio.
-- No soporta generación de texto, tool calling generativo ni razonamiento multi-paso de forma nativa: su salida es siempre una distribución sobre opciones.
+- Clasificación zero-shot con elección entre hasta 255 opciones, devolviendo `choice`, `probabilities` y `confidence`.
+- Puntuación ordinal sobre 2-10 niveles descriptivos, con `score` ponderado por probabilidad y fractional.
+- Preguntas binarias sí/no con probabilidad calibrada (`noul` = p(yes)).
+- Abstención explícita (slot 255) cuando ninguna opción encaja.
+- Procesamiento de estado arbitrario: texto libre o JSON, incluidos estados de máquina (accessibility trees).
+- Bilingüe tailandés-inglés, tanto en instrucciones como en opciones y estados.
+- Selección de acciones para agentes de computer-use y browser-agents (qué elemento pulsar, qué herramienta invocar).
+- Verificación de salidas de LLM y juicio de relevancia para RAG.
+- No genera texto libre: exclusivamente salidas estructuradas de decisión.
+- Servidor HTTP compatible con el contrato TypeSafe `POST /v1/systemone`; integración con `transformers` mediante `trust_remote_code`.
 
 ## Casos de uso
-
-- Enrutado de tickets de soporte: el modelo recibe el texto del ticket como estado y una pregunta `choice` con los departamentos posibles (`billing`, `technical`, `sales`) más sus descripciones, y devuelve la probabilidad de cada uno. El ejemplo de la model card usa exactamente este escenario con un ticket en tailandés sobre un cobro duplicado.
-- Moderación de contenido: con una pregunta `noul` o `choice` sobre categorías de toxicidad, se obtiene una probabilidad por categoría en una sola pasada. En el subset `civil_comments` el modelo logra 78,0, por delante de Nimble-9B (70,3), lo que lo hace competitivo como filtro de primera línea.
-- Detección de intención en asistentes: los subsets `massive-en-US` (75,7) y `massive-de-DE` (64,6) miden clasificación de intenciones sobre texto de usuario; el modelo puede resolver esa capa antes de invocar cualquier LLM generativo.
-- Juicio de relevancia y verificación de salidas de LLM en pipelines RAG: preguntas `choice` o `score` sobre si un pasaje recuperado responde a la consulta, o si una respuesta generada está sustentada por el contexto. Aviso: en `summeval-relevance` el modelo obtiene 13,8 con ECE 0,79, por lo que este uso requiere validación previa.
-- Selección de acciones en agentes de computer-use y browser agents: dado el árbol de accesibilidad o el JSON del DOM como estado, una pregunta `choice` con los elementos clicables como opciones devuelve cuál elegir, con abstención si ninguno encaja.
-- Selección de herramienta en pipelines de function calling: el estado es la conversación o el JSON de entrada y las opciones son las herramientas disponibles con sus descripciones; el modelo devuelve la herramienta a invocar y la confianza asociada.
-- Puntuación de calidad y satisfacción: con preguntas `score` se puntúan respuestas o resúmenes. Los resultados son mixtos: 42,8 en `helpsteer2` (por delante de Nimble-9B con 39,0) y 84,0 en `summeval-consistency`, pero 13,8 en `summeval-relevance`.
-- Detección de contradicción y fact checking: en `multinli` el modelo alcanza 85,6, ligeramente por encima de Nimble-9B (85,3) y de Jev 1.13.0 (82,9), con una ECE muy baja de 0,035.
-- Enrutador o guardrail de bajo coste: por su tamaño (752,7M parámetros) y su naturaleza de pasada única, puede decidir si una consulta merece invocar un modelo mayor, reduciendo coste en producción.
+- Enrutamiento de tickets de soporte: con `Choice` sobre departamentos (billing, technical, sales) y estado en JSON, el modelo devuelve la distribución de probabilidad en una pasada, apto para colas de atención con volumen alto y necesidad de confianza auditable.
+- Moderación de contenido: usar `Score` sobre niveles ordenados (por ejemplo, seguro / límite / prohibido) para obtener una puntuación ponderada en lugar de una etiqueta dura, facilitando umbrales configurables.
+- Detección de intención en asistentes conversacionales: `Choice` con las intenciones del dominio y `Noul` para flags binarios (por ejemplo, "¿el usuario pide cancelación?"), con contexto de hasta 262k tokens para historiales largos.
+- Juicio de relevancia en RAG: `Noul` sobre pares consulta-pasaje para filtrar documentos antes de pasarlos al LLM generador, reduciendo coste de contexto y alucinaciones.
+- Verificación de salidas de LLM: comprobar si una respuesta cumple criterios (`Noul`) o clasificar su calidad (`Score`), como paso de validación en pipelines de generación.
+- Selección de acciones en computer-use / browser-agents: dado un accessibility tree como estado, `Choice` sobre elementos o herramientas disponibles para decidir el siguiente clic o la siguiente llamada de herramienta.
+- Extracción de señales de cliente en atención: `Score` de frustración y `Noul` de petición de reembolso sobre el texto del ticket, como en el ejemplo de la model card (probabilidades ~0,95 para billing y ~0,98 para reembolso solicitado en Q8_0).
+- Despliegue local sin API externa: build Ollama (`iapp/openthai-systemone`) que sirve `POST /v1/systemone` en localhost, útil para entornos con restricciones de privacidad.
 
 ## Benchmarks y rendimiento
-
-Todos los números son zero-shot: el modelo solo ve el estado, las instrucciones y los nombres o descripciones de las opciones. La comparativa usa los mismos 13 subsets, splits, instrucciones y muestreador que `docs/PUBLIC_BENCHMARKS.md` de Bespoke Nimble. Los números de Nimble-9B y Jev son los publicados por Bespoke Labs (2026-09-18); los de OpenThai se midieron con `scripts/06_eval.py` sobre reconstrucciones de los mismos subsets.
-
-| Subset | Tipo | n | OpenThai 0,8B | Nimble-9B | Jev 1.13.0 | ECE propio |
-|---|---|---|---|---|---|---|
-| aegis2 | noul | 250 | 58,0 | 81,2 | 80,4 | 0,243 |
-| boolq | noul | 300 | 63,7 | 86,0 | 89,7 | 0,195 |
-| civil_comments | noul | 300 | 78,0 | 70,3 | 81,0 | 0,127 |
-| helpsteer2 | score | 250 | 42,8 | 39,0 | 34,1 | 0,400 |
-| massive-de-DE | choice | 350 | 64,6 | 83,4 | 86,9 | 0,199 |
-| massive-en-US | choice | 350 | 75,7 | 86,9 | 87,4 | 0,133 |
-| multinli | choice | 299 | 85,6 | 85,3 | 82,9 | 0,035 |
-| paws | noul | 250 | 67,2 | 82,8 | 89,2 | 0,143 |
-| pubmedqa | choice | 250 | 53,6 | 75,6 | 77,2 | 0,154 |
-| squad2 | noul | 299 | 50,2 | 80,6 | 82,9 | 0,461 |
-| summeval-consistency | score | 144 | 84,0 | 75,7 | 81,2 | 0,061 |
-| summeval-relevance | score | 240 | 13,8 | 49,2 | 35,0 | 0,791 |
-| vitaminc-dev | choice | 599 | 67,1 | 76,6 | 80,1 | 0,098 |
-| Media macro | | | 61,9 | 74,8 | 76,0 | |
-
-`choice` y `noul` reportan exactitud; `score` reporta coincidencia exacta de nivel. Como referencia, el Qwen3.5-0.8B sin modificar, con prompting y log-probabilidades por letra, obtiene 45,4 de media macro en el mismo banco (dato de Bespoke). El autor señala que el modelo adelanta a Nimble-9B en 4 de 13 subsets (NLI, consistencia de resumen, puntuación de utilidad y toxicidad) y queda claramente por detrás en tareas de comprensión lectora de tipo sí/no (`squad2` está en el nivel del azar, además de `boolq` y `pubmedqa`) y en la puntuación de relevancia de resúmenes, el único subset donde la cabeza de puntuación está claramente descalibrada (ECE 0,79). La model card incluye además una tabla de conjuntos retenidos en tailandés con columnas de exactitud, macro-F1/MAE y ECE, pero en la información disponible la tabla aparece truncada y sin valores.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia (cálculo a partir de los 752,7M parámetros, no publicada por el autor): en bf16/fp16 unos 1,5 GB solo de pesos; en int8 alrededor de 0,8 GB; en int4 alrededor de 0,4 GB. A esto hay que sumar la caché KV, que con 262k tokens de contexto puede dominar el consumo total.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM basta para los pesos en precisión reducida. No requiere A100 ni H100; tarjetas como RTX 3060, RTX 4090 o incluso GTX 1650 son suficientes para lotes pequeños.
-- Cabe en GPU de consumo: sí, con holgura. El repositorio ocupa 1,5 GB.
-- Opciones de despliegue documentadas: `transformers` con `trust_remote_code=True`, el SDK de Python `openthai-systemone` (`pip install openthai-systemone`) y el servidor HTTP incluido con contrato compatible con TypeSafe (`OPENTHAI_SYSTEMONE_MODEL=iapp/OpenThai-SystemOne uvicorn openthai_systemone.server:app --port 8000`).
-- Despliegue con vLLM, TGI, llama.cpp u Ollama: no disponible. La cabeza de 256 slots y el código personalizado hacen que estos motores no funcionen sin conversión.
-- Latencia y throughput: no se publican cifras. La arquitectura hace un único forward pass y evita la decodificación autorregresiva, por lo que la latencia esperada es sustancialmente menor que la de un modelo generativo de tamaño comparable en tareas equivalentes, pero no hay mediciones disponibles.
+- VRAM estimada: ~1,5 GB en bf16 (0,75B parámetros), ~0,8 GB en Q8_0 y ~0,5 GB en Q4_K_M, más overhead de contexto.
+- Cabe en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y similares; también en CPU.
+- GPU recomendadas para producción de alto throughput: A100, H100 o L40S con vLLM/TGI (si bien la cabeza custom puede requerir `trust_remote_code` o el servidor propio).
+- Opciones de despliegue: `openthai_systemone` (cliente + servidor uvicorn con contrato TypeSafe), `transformers` con `trust_remote_code=True`, Ollama ≥ 0.35 (`ollama pull iapp/openthai-systemone`, tags `0.8b` = q8_0, `0.8b-q4_K_M`, `0.8b-bf16`), GGUF en Hugging Face (`iapp/OpenThai-SystemOne-Ollama`).
+- Latencia y throughput: no disponible; al ser una única pasada forward sobre 0,75B parámetros, se espera latencia de decenas de milisegundos en GPU y de cientos en CPU, pero no hay cifras publicadas.
+- El repo principal ocupa 4,6 GB (incluye pesos en safetensors y código remoto).
 
 ## Comparativa con modelos similares
-
-| Modelo | Parametros | Contexto | Media macro (mismo banco) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThai-SystemOne | 752,7M | 262.144 tokens | 61,9 | Apache 2.0 | Pesos abiertos en Hugging Face |
-| Bespoke Nimble-9B | 9B (aproximado, no confirmado en la informacion) | no disponible | 74,8 | no disponible | Referencia publicada por Bespoke Labs |
-| Jev 1.13.0 | no disponible | no disponible | 76,0 | no disponible | Referencia publicada por Bespoke Labs |
-| Qwen3.5-0.8B-Base con prompting de letras | 0,8B | 262.144 tokens | 45,4 | no disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
+| OpenThai-SystemOne | 0,75B | 262k | Decisión zero-shot tipada (choice/score/noul) | Apache-2.0 | HF, Ollama, GGUF |
+| Qwen3.5-0.8B-Base (backbone) | 0,8B | 262k | Generación de texto | no disponible en la información | HF |
+| Modelos de clasificación zero-shot tipo NLI (p. ej., DeBERTa/BGE) | ~0,1-0,5B | 512-8k típicamente | Clasificación NLI | variable | HF |
+| TypeSafe System One (servicio propietario) | no disponible | no disponible | Decisión con contrato `/v1/systemone` | propietaria | API |
 
-Lectura de la comparativa: OpenThai-SystemOne pierde 12,9 puntos de media macro frente a Nimble-9B con una doceava parte de los parámetros, pero gana en 4 de 13 subsets y, a diferencia de los modelos comparados, devuelve distribuciones de probabilidad calibradas y un mecanismo de abstención en un solo forward pass. Frente a su propio backbone sin modificar mejora 16,5 puntos de media macro, lo que aísla el efecto del continued pretraining en tailandés y de la cabeza de decisión. No se dispone de datos de licencia ni de contexto de Nimble-9B y Jev 1.13.0 en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- No genera texto. Cualquier caso de uso que requiera salida libre, razonamiento multi-paso o respuestas conversacionales queda fuera de su alcance.
-- Comprensión lectora de tipo sí/no muy débil: `squad2` obtiene 50,2 (nivel de azar) con ECE 0,461, y también queda lejos en `boolq` (63,7) y `pubmedqa` (53,6).
-- Descalibración severa en `summeval-relevance`: 13,8 de exactitud de nivel con ECE 0,791. Cualquier uso para puntuar relevancia de resúmenes debe validarse antes de ir a producción.
-- ECE alto en varios subsets (`aegis2` 0,243, `helpsteer2` 0,400, `squad2` 0,461), lo que implica que la confianza devuelta no siempre es fiable aunque la calibración global se haya trabajado con pérdida de Brier y temperatura por tipo.
-- Sesgo de dominio esperado hacia el tailandés: el continued pretraining usó unos 5.000 millones de tokens en tailandés, y los subsets en inglés (`massive-en-US` 75,7) están por debajo de los resultados de los modelos de 9B.
-- Cobertura de idiomas limitada a tailandés e inglés. No hay soporte documentado para castellano ni para otros idiomas.
-- Límite estructural de 255 opciones por pregunta `choice` (slots 0 a 254, con el 255 reservado para abstención).
-- Riesgo de alucinación acotado por diseño (no genera texto libre), pero riesgo de elección incorrecta con confianza alta en dominios alejados del entrenamiento, especialmente en tareas de comprensión lectora.
-- Los datos de benchmark son en su mayoría autopublicados por el autor; solo las cifras de Nimble-9B y Jev 1.13.0 provienen de Bespoke Labs. Los números no son auditados de forma independiente.
-- Adopción mínima: 0 descargas y 1 like en el momento de la consulta, con lo que la validación por parte de la comunidad es prácticamente nula.
-- Sin cuantizaciones publicadas ni soporte en motores de inferencia habituales (llama.cpp, Ollama, vLLM, TGI), lo que limita las opciones de despliegue eficiente y obliga a usar `transformers` con código remoto (`trust_remote_code=True`), con el consiguiente riesgo de ejecutar código de terceros.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni se documentan cláusulas adicionales sobre los datasets de entrenamiento.
+- No genera texto libre; cualquier expectativa de uso generativo es un error de diseño.
+- La build Ollama no usa la cabeza de 256 slots: formula prompts de chat y lee probabilidades de letras A-Z, por lo que el comportamiento puede diferir del repo principal (v0.3 ajustada al prompt de Ollama).
+- La calibración se entrena con Brier loss y temperatura por tipo, pero no hay benchmarks publicados que verifiquen la fiabilidad de `confidence` en dominios fuera del entrenamiento.
+- Idiomas limitados a tailandés e inglés; el rendimiento en castellano no está documentado.
+- Riesgo de alucinación de probabilidades en estados de máquina (accessibility trees, JSON) si el formato difiere del visto en entrenamiento.
+- Sesgos potenciales heredados de los datasets públicos de clasificación, NLI y QA usados para construir los ejemplos de decisión, no auditados en la información disponible.
+- Licencia Apache-2.0 permite uso comercial, pero conviene revisar la procedencia de los datasets de entrenamiento y las condiciones del backbone Qwen3.5.
+- El servidor HTTP y la cabeza custom requieren `trust_remote_code` o el paquete `openthai_systemone`; no es un modelo estándar de `AutoModelForSequenceClassification`.
+- El contrato replica el de TypeSafe, pero no hay garantía de compatibilidad futura con esa API.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne
+- Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
-- Repositorio del SDK y del servidor: https://github.com/iapp-technology/openthai-systemone
-- Imagen de presentación del modelo: https://huggingface.co/iapp/OpenThai-SystemOne/resolve/main/assets/openthai-systemone-launch.jpg
-- Referencia de benchmarks públicos de Bespoke Labs (`docs/PUBLIC_BENCHMARKS.md` del repositorio de Bespoke Nimble): URL no disponible en la información proporcionada.
-- Búsqueda web: los resultados devueltos corresponden a páginas de producto de ChatGPT (chatgpt.com, openai.com/index/chatgpt) y a un portal de terceros (chatai.de); ninguno es relevante para este modelo y no se incluyen como fuentes.
+- Build Ollama (ollama.com): https://ollama.com/iapp/openthai-systemone
+- GGUF en Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne-Ollama
+- Repositorio del paquete: https://github.com/iapp-technology/openthai-systemone
+- Proyecto OpenThai (antes OpenThaiGPT): no disponible en la información proporcionada
+- Paper o blog técnico: no disponible en la información proporcionada

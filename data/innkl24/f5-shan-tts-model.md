@@ -2,96 +2,86 @@
 
 ## Resumen
 
-innkl24/f5-shan-tts-model es un repositorio de pesos alojado en Hugging Face por el usuario innkl24, publicado el 9 de septiembre de 2026 y actualizado el 14 de septiembre de 2026. El identificador del modelo sugiere que se trata de un sistema de sintesis de voz (TTS) derivado de la familia F5-TTS, posiblemente orientado al idioma shan, aunque la informacion proporcionada no confirma ni la tarea declarada (el campo pipeline aparece como no disponible) ni los idiomas soportados. No existe model card, paper, blog ni documentacion tecnica asociada en los resultados de busqueda disponibles.
+F5-TTS Shan es un modelo de síntesis de voz (text-to-speech) derivado de F5TTS_v1_Base, adaptado específicamente al idioma shan (shn), una lengua tai hablada principalmente en el estado de Shan, Birmania. Lo publica el usuario innkl24 en Hugging Face bajo una licencia CC BY-NC 4.0, lo que restringe su uso a fines no comerciales. El modelo emplea la librería f5-tts y se distribuye con un vocabulario "limpio" de 75 caracteres específicos del shan, junto con embeddings expandidos listos para fine-tuning.
 
-El dato mas relevante y verificable es el tamano del repositorio: 530,6 GB, una cifra muy superior a la habitual en checkpoints de sintesis de voz, lo que apunta a la presencia de multiples versiones de pesos, checkpoints intermedios de entrenamiento o estados de optimizador. El repositorio acumula 0 descargas y 1 like, por lo que se trata de una publicacion practicamente sin validacion por parte de la comunidad.
+El problema que aborda es la escasez de sistemas TTS de calidad para lenguas de bajos recursos como el shan, que habitualmente carecen de soporte en los motores comerciales. Al partir de F5TTS_v1_Base, hereda la arquitectura de flow matching con decodificación por difusión propia de la familia F5-TTS, aunque la información pública disponible no detalla el número de parámetros ni la longitud de contexto.
 
-Por el momento no es posible evaluar el modelo con criterios tecnicos: se desconocen arquitectura, numero de parametros, licencia, idiomas, formatos de pesos y resultados de benchmarks. Cualquier uso en produccion requeriria inspeccionar directamente los archivos del repositorio y contactar con el autor para aclarar la licencia y las condiciones de uso.
+La relevancia actual reside en su carácter de modelo de nicho para una comunidad lingüística concreta y en su licencia no comercial, que lo orienta a investigación y proyectos de preservación lingüística más que a despliegues productivos. La model card es extremadamente escueta y no aporta datos de entrenamiento, benchmarks ni instrucciones de uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | F5-TTS (basada en F5TTS_v1_Base; flow matching con decodificación por difusión, según la familia F5-TTS) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica / no disponible |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible |
-| Tamano del repositorio | 530,6 GB |
-| Autor | innkl24 |
-| Fecha de creacion | 2026-09-09 |
-| Ultima actualizacion | 2026-09-14 |
-| Descargas | 0 |
-| Likes | 1 |
-| Etiquetas declaradas | region:us |
+| Idiomas soportados | shan (shn) |
+| Licencia | CC BY-NC 4.0 |
+| Formato de pesos | no disponible (repositorio de 2465.1 GB, librería f5-tts) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en los datos disponibles. El identificador del repositorio contiene la cadena "f5", lo que sugiere una posible relacion con la familia F5-TTS (modelos de sintesis de voz basados en flow matching con transformer), pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna fuente. Tampoco se dispone de informacion sobre el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens o audio utilizado, ni sobre si se aplicaron tecnicas de ajuste fino supervisado, RLHF o DPO.
+El modelo se presenta como un derivado de F5TTS_v1_Base, el checkpoint base de la familia F5-TTS. La model card indica únicamente que incorpora un vocabulario limpio de 75 caracteres exclusivamente shan y embeddings expandidos preparados para fine-tuning. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO; tampoco se detallan innovaciones técnicas adicionales más allá de la adaptación del vocabulario y los embeddings.
 
-El unico indicio estructural es el tamano del repositorio (530,6 GB), que sugiere la presencia de artefactos de entrenamiento adicionales a un unico checkpoint de inferencia. No hay informacion sobre innovaciones tecnicas, mecanismos de atencion, estrategias de decodificacion ni detalles de tokenizacion.
+La arquitectura concreta (capas, dimensión oculta, mecanismo de atención) no está documentada en la información proporcionada. El tamaño del repositorio (2465.1 GB) sugiere la presencia de múltiples checkpoints o artefactos de entrenamiento, pero no permite inferir el número de parámetros del modelo.
 
 ## Capacidades
 
-No es posible enumerar capacidades verificadas: la informacion proporcionada no incluye model card, ejemplos de uso ni resultados de evaluacion.
-
-- Generacion de audio o sintesis de voz: plausible segun el nombre del repositorio, no confirmado.
-- Generacion de texto, razonamiento, codigo o matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Clonacion de voz o transferencia de estilo: no disponible.
+- Síntesis de voz (text-to-speech) para el idioma shan (shn).
+- Vocabulario específico de 75 caracteres shan, lo que evita contaminación con caracteres de otros sistemas de escritura.
+- Embeddings expandidos orientados a fine-tuning posterior sobre datos propios.
+- No se documenta soporte de tool calling, function calling ni capacidades de agente.
+- No se documentan capacidades multilingües más allá del shan.
+- No se documentan modos especiales (thinking, visión, audio de entrada) ni clonación de voz explícita en la información disponible.
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos y realistas sin conocer la tarea declarada, el rendimiento y la licencia del modelo. A modo de orientacion generica, un sistema de sintesis de voz de este tipo se emplearia en escenarios como los siguientes, todos ellos condicionados a la verificacion previa de las capacidades reales y de los permisos de uso:
-
-- Lectura de articulos y documentos: conversion de texto a audio para accesibilidad o consumo en formato podcast.
-- Audiolibros y narracion: generacion de voz sintetica a partir de textos largos, siempre que el modelo soporte entradas extensas y una calidad prosodica estable.
-- Asistentes de voz en aplicaciones: sintesis en tiempo real integrada en interfaces conversacionales.
-- Doblaje y localizacion de contenido: generacion de pistas de audio en el idioma objetivo.
-- Sistemas de aviso y notificacion: mensajes de voz dinamicos en entornos de telefonia o IoT.
-- Herramientas de accesibilidad para personas con discapacidad visual: lectura por voz de interfaces y documentos.
-- Prototipado de productos de audio: pruebas de concepto que requieran sintesis de voz rapida y local.
-
-En todos los casos, la viabilidad depende de datos que no estan disponibles: latencia, calidad auditiva, idiomas soportados, licencia y requisitos de hardware.
+- Preservación lingüística del shan: generar audiolibros y material didáctico en shan a partir de texto, aprovechando el vocabulario específico de 75 caracteres para una pronunciación consistente.
+- Investigación en TTS de bajos recursos: servir como punto de partida para fine-tuning con corpus propios de shan, gracias a los embeddings expandidos incluidos.
+- Accesibilidad para hablantes de shan: convertir texto digital (noticias, documentos) en audio para personas con dificultades de lectura.
+- Locución para medios locales: producir narraciones sintéticas en shan para radios comunitarias o canales informativos de bajo presupuesto.
+- Desarrollo de asistentes de voz en shan: integrar el modelo como backend TTS en aplicaciones de asistencia para hablantes de esta lengua.
+- Evaluación comparativa de TTS multilingüe: usar el modelo como referencia en estudios sobre cobertura de lenguas tai en sistemas neuronales.
+- Docencia de la lengua shan: generar ejemplos de pronunciación controlados para materiales de aprendizaje.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de evaluacion subjetiva (MOS), error de tasa de palabras (WER), similitud de hablante ni metricas objetivas de calidad de audio, ni comparaciones con otros sistemas de sintesis de voz.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Depende del tamano real de los parametros y del tipo de cuantizacion, datos ambos desconocidos.
+- VRAM estimada para inferencia: no disponible (no se especifica el número de parámetros ni el tamaño de los pesos).
 - GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible. No puede determinarse sin conocer el numero de parametros.
-- Opciones de despliegue: no disponible. No se confirma compatibilidad con llama.cpp, Ollama, vLLM, TGI ni con frameworks especificos de sintesis de voz.
-- Latencia y throughput estimados: no disponibles.
-- Nota sobre almacenamiento: el repositorio ocupa 530,6 GB, por lo que la descarga completa requiere un volumen de disco considerable. Se recomienda inspeccionar la lista de archivos antes de clonar el repositorio para descartar checkpoints de entrenamiento u otros artefactos no necesarios para inferencia.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: la librería declarada es f5-tts; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (estas herramientas están orientadas a modelos de lenguaje, no a TTS).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion suficiente para identificar modelos comparables de la misma categoria, tamano o tarea, ni para establecer comparaciones de parametros, contexto, rendimiento, licencia o disponibilidad. La ausencia de model card y de benchmarks impide cualquier comparacion fundamentada.
+| Modelo | Idioma | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| F5-TTS Shan (innkl24) | shan (shn) | no disponible | no disponible | CC BY-NC 4.0 | Hugging Face |
+| F5TTS_v1_Base (modelo base) | multilingüe (según familia F5-TTS) | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
+| Alternativas TTS para lenguas tai | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card, paper, blog ni repositorio de codigo asociado.
-- Licencia no especificada: no puede determinarse si el uso comercial esta permitido. En ausencia de licencia explicita, debe asumirse que no existen permisos concedidos por defecto.
-- Idiomas no declarados: se desconoce si el modelo funciona correctamente en castellano o en cualquier otro idioma.
-- Riesgo de alucinacion y artefactos: inherente a cualquier sistema generativo; en sintesis de voz se manifiesta como pronunciacion incorrecta, saltos, repeticiones o ruido. No hay evaluaciones que cuantifiquen este riesgo en este modelo concreto.
-- Sesgos: no evaluados. En modelos de voz, los sesgos se relacionan con el acento, el genero y las caracteristicas demograficas de los hablantes representados en los datos de entrenamiento.
-- Riesgo de uso indebido: cualquier sistema capaz de clonar voces puede emplearse para suplantacion de identidad o desinformacion. Se debe verificar el consentimiento sobre las voces utilizadas y cumplir la normativa aplicable en materia de datos personales y de identificacion de contenido sintetico.
-- Validacion inexistente por la comunidad: 0 descargas y 1 like. No hay pruebas independientes de funcionamiento.
-- Reproducibilidad: al no especificarse la procedencia de los datos de entrenamiento ni los hiperparametros, los resultados no son reproducibles.
-- Advertencia de seguridad: se recomienda auditar el contenido del repositorio antes de ejecutar cualquier archivo, dado que los repositorios con pesos en formatos no estandar pueden incluir codigo de carga no verificado.
+- Licencia CC BY-NC 4.0: prohibido el uso comercial sin autorización expresa del titular.
+- Model card muy escueta: no hay información sobre datos de entrenamiento, sesgos ni evaluación de calidad.
+- Cobertura limitada al shan: no apto para otros idiomas sin reentrenamiento.
+- Riesgo de alucinación acústica y errores de pronunciación en textos fuera del vocabulario de 75 caracteres.
+- Sin benchmarks publicados: la calidad real del modelo no está verificada de forma independiente.
+- Tamaño de repositorio muy elevado (2465.1 GB): puede implicar costes de almacenamiento y descarga considerables.
+- No se documentan limitaciones de contexto ni de longitud de audio generado.
+- Para producción comercial sería necesario contactar con el autor y negociar una licencia alternativa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/innkl24/f5-shan-tts-model
-- Paper, blog, repositorio de codigo o demo: no disponible.
-
-Los resultados de busqueda web obtenidos no contienen ningun enlace relevante sobre este modelo ni sobre la familia a la que podria pertenecer; consisten en paginas no relacionadas sobre cursos universitarios y gramatica inglesa, por lo que se descartan como fuentes.
+- Repositorio F5-TTS (librería declarada): no disponible en la información proporcionada
+- Paper de F5-TTS: no disponible en la información proporcionada
+- Demo o blog del autor: no disponible en la información proporcionada

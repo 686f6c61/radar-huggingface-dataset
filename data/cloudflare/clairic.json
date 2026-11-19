@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "Cloudflare/clairic",
+  "slug": "cloudflare-clairic",
+  "author": "Cloudflare",
+  "url": "https://huggingface.co/Cloudflare/clairic",
+  "created_at": "2026-10-16T15:07:01.000Z",
+  "updated_at": "2026-11-18T20:58:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "clairic",
+    "cloudflare",
+    "systemone",
+    "multimodal",
+    "structured-output",
+    "information-extraction",
+    "custom-code",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 34,
+  "trending_score": 17,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55866223524,
+  "storage_human": "55.9 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloudflare: Build for the agent era",
+      "url": "https://www.cloudflare.com/",
+      "snippet": "Join thousands of developers who've eliminated infrastructure complexity and deployed globally with Cloudflare. Start building for …"
+    },
+    {
+      "title": "Connectez, protégez et développez sur tous les fronts - Cloudflare",
+      "url": "https://www.cloudflare.com/fr-fr/",
+      "snippet": "Notre produit Cloudflare One constitue une offre de SASE agile. Prenez la voie rapide vers l'adoption sécurisée de l'IA et l'accès …"
+    },
+    {
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "url": "https://dash.cloudflare.com/login",
+      "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer …"
+    },
+    {
+      "title": "Download Cloudflare One Client stable releases",
+      "url": "https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/download/",
+      "snippet": "Sep 28, 2026 · Cloudflare also offers an unstable beta release track with the latest features and improvements, and an LTS release …"
+    },
+    {
+      "title": "Cloudflare | Web Performance & Security",
+      "url": "https://dash.cloudflare.com/sign-up",
+      "snippet": "Sign up for Cloudflare to enhance web performance and security for your websites, apps, and networks."
+    }
+  ]
+}

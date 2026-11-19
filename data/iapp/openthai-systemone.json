@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 38,
-  "downloads_30d": 2024,
+  "downloads_30d": 2055,
   "trending_score": 12,
   "parameters": 752674883,
   "parameters_human": "752.7M",
@@ -56,29 +56,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+      "title": "IAPP",
+      "url": "https://iapp.org/",
+      "snippet": "The IAPP is a policy neutral, not-for-profit association founded in 2000 with a mission to define, promote and improve the professions …"
     },
     {
-      "title": "ChatGPT",
-      "url": "https://chatgpt.com/auth/?locale=de-DE",
-      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+      "title": "Certification | IAPP",
+      "url": "https://iapp.org/certify",
+      "snippet": "The IAPP offers six distinct CIPP designation concentrations, demonstrating mastery in privacy laws, regulations and frameworks for …"
     },
     {
-      "title": "Introducing ChatGPT - OpenAI",
-      "url": "https://openai.com/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+      "title": "MyIAPP",
+      "url": "https://myiapp.org/",
+      "snippet": "Manage your IAPP account"
     },
     {
-      "title": "ChatGPT ist da | OpenAI",
-      "url": "https://openai.com/de-DE/index/chatgpt/",
-      "snippet": "Nov 30, 2022 · ChatGPT has evolved substantially since then. Wir haben ein Modell namens ChatGPT trainiert, das wie in einem …"
+      "title": "Préparation à la Certification IAPP : Gouvernance et gestion des ...",
+      "url": "https://www.avocats.ey.com/fr_fr/formations/certification-iapp-gouvernance-et-gestion-des-risques-de-l-ia",
+      "snippet": "Préparation à la Certification IAPP : Gouvernance et gestion des risques de l’intelligence artificielle EY Société d’Avocats vous …"
     },
     {
-      "title": "ChatGPT Deutsch",
-      "url": "https://chatai.de/",
-      "snippet": "Alles über ChatGPT Diese Seite bietet Informationen rund um ChatGPT sowie kostenlosen Zugriff auf aktuelle GPT-Modelle von …"
+      "title": "International Association of Privacy Professionals - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/International_Association_of_Privacy_Professionals",
+      "snippet": "The IAPP offers a full suite of educational and professional development services, including privacy training, certification programs, …"
     }
   ]
 }

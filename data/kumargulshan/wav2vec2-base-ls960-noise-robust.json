@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "kumargulshan/wav2vec2-base-ls960-noise-robust",
+  "slug": "kumargulshan-wav2vec2-base-ls960-noise-robust",
+  "author": "kumargulshan",
+  "url": "https://huggingface.co/kumargulshan/wav2vec2-base-ls960-noise-robust",
+  "created_at": "2026-11-19T11:39:33.000Z",
+  "updated_at": "2026-11-19T12:00:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "ctc",
+    "noise-robust",
+    "speech-recognition",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "base_model:facebook/wav2vec2-base",
+    "base_model:finetune:facebook/wav2vec2-base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94396320,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377611072,
+  "storage_human": "378 MB",
+  "context_length": null,
+  "base_model": "facebook/wav2vec2-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (greedy",
+      "value": 4.63
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (4-gram LM)",
+      "value": 2.97
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (greedy",
+      "value": 9.95
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (4-gram LM)",
+      "value": 7.01
+    }
+  ],
+  "sources": []
+}

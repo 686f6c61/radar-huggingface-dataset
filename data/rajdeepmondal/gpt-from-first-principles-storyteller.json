@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "rajdeepmondal/gpt-from-first-principles-storyteller",
+  "slug": "rajdeepmondal-gpt-from-first-principles-storyteller",
+  "author": "rajdeepmondal",
+  "url": "https://huggingface.co/rajdeepmondal/gpt-from-first-principles-storyteller",
+  "created_at": "2026-11-17T20:02:34.000Z",
+  "updated_at": "2026-11-18T11:17:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122745358,
+  "storage_human": "123 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT-Comparison-Detection Project - GitHub",
+      "url": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+      "snippet": "Jan 11, 2023 · Yes, we propose the first Human vs. ChatGPT comparison corpus, named HC3. 我们提出了第一个 Human vs. …"
+    }
+  ]
+}

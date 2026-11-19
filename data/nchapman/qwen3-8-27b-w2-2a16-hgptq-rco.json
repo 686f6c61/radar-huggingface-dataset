@@ -5,7 +5,7 @@
   "author": "nchapman",
   "url": "https://huggingface.co/nchapman/Qwen3.8-27B-W2.2A16-HGPTQ-RCO",
   "created_at": "2026-11-10T06:22:40.000Z",
-  "updated_at": "2026-11-11T00:35:13.000Z",
+  "updated_at": "2026-11-19T00:48:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 137,
+  "downloads_30d": 138,
   "trending_score": 0,
   "parameters": 18158121712,
   "parameters_human": "18.16B",

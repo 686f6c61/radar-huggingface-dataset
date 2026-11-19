@@ -2,88 +2,96 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF del modelo `llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved`, una versión "decensored" (abliterada) del modelo `meituan-longcat/LongCat-Flash-Lite-Sparse` desarrollado por Meituan. El autor, llmfan46, ha aplicado el método Heretic v1.4.0 con una variante de Magnitude-Preserving Orthogonal Ablation (MPOA) para eliminar los rechazos y restricciones de contenido del modelo original, reduciendo las negativas de 99/100 a 4/100 mientras mantiene una divergencia KL de 0.0779 respecto al modelo base.
+LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved-GGUF es una cuantizacion en formato GGUF de una version "decensored" (abliterated) del modelo LongCat-Flash-Lite-Sparse, desarrollado originalmente por Meituan-LongCat. La variante sin censura ha sido producida por el usuario independiente llmfan46 mediante la herramienta Heretic v1.4.0, aplicando una variante del metodo Magnitude-Preserving Orthogonal Ablation (MPOA) sobre las componentes attn.o_proj y mlp.down_proj del transformer.
 
-El modelo resultante tiene aproximadamente 69.1 mil millones de parámetros (según el peso safetensors del modelo base) y se distribuye en formato GGUF con múltiples niveles de cuantización, desde BF16 hasta Q2_K. Está diseñado para generación de texto y uso conversacional, con licencia MIT, lo que permite uso comercial sin restricciones. La relevancia de este modelo radica en su enfoque en la eliminación de censura, un tema controvertido pero demandado en ciertos ámbitos de investigación y desarrollo de aplicaciones de IA generativa.
+El modelo base cuenta con 69.127.158.912 parametros (aproximadamente 69,1 mil millones) y emplea una arquitectura de tipo Sparse (dispersa), presumiblemente con mezcla de expertos (MoE) segun la nomenclatura "Sparse" y la preservacion de componentes "Native-MTP" (Multi-Token Prediction) y "LSA" (Linear Sparse Attention, segun las siglas del nombre). El objetivo de esta version es eliminar los rechazos y el tono moralizante del modelo original: el autor reporta una reduccion de rechazos de 99/100 a 4/100, con una divergencia KL de 0,0779 respecto al modelo base.
+
+La relevancia actual radica en dos factores: por un lado, la existencia de una familia de modelos LongCat de gran tamano con atencion dispersa, y por otro, la creciente demanda de variantes sin censura para investigacion sobre alineamiento, red-teaming y generacion de contenido sin restricciones. No obstante, la licencia MIT del repositorio y la necesidad de un fork especifico de llama.cpp para su ejecucion condicionan su adopcion practica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (basada en LongCat-Flash-Lite-Sparse, sin detalles públicos) |
-| Parametros totales | 69.127.158.912 (~69,1 B) |
-| Parametros activos | no disponible (no se indica si es MoE o sparse activation) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K (además de una variante Q3_K_M-MLA-Q8) |
-| Idiomas soportados | no disponibles |
+| Arquitectura | Transformer sparse (MoE, segun nomenclatura "Sparse"); incluye Native-MTP y LSA |
+| Parametros totales | 69.127.158.912 (aprox. 69,1 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (el ejemplo de uso emplea `-c 8192`) |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (el modelo base usa safetensors) |
+| Formato de pesos | GGUF (repo de 571,1 GB); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información pública sobre la arquitectura del modelo original es escasa. El nombre "LongCat-Flash-Lite-Sparse" sugiere un transformer con atención sparse, pero no se han publicado detalles técnicos. El modelo base fue desarrollado por Meituan, una empresa china, y se distribuye bajo licencia MIT. El proceso de abliteración aplicado por llmfan46 utiliza Heretic v1.4.0 con una variante de MPOA, que modifica los pesos de las proyecciones de salida de atención (`attn.o_proj`) y de la proyección descendente del MLP (`mlp.down_proj`) para eliminar las direcciones asociadas a comportamientos de rechazo. Los parámetros de abliteración se detallan en la model card, incluyendo pesos máximos y mínimos por capa. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens, ni si se usó RLHF o DPO.
+El modelo base LongCat-Flash-Lite-Sparse, desarrollado por Meituan-LongCat, es un transformer de tipo sparse con 69,1 mil millones de parametros totales. La nomenclatura del nombre sugiere la presencia de componentes de atencion lineal/dispersa (LSA) y de prediccion multi-token nativa (Native-MTP), tecnicas orientadas a mejorar la eficiencia de decodificacion y el throughput. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
+
+La modificacion "Heretic" consiste en una ablacion ortogonal con preservacion de magnitud (MPOA) aplicada por capas sobre las proyecciones de salida de atencion (attn.o_proj) y las proyecciones descendentes del MLP (mlp.down_proj). Los pesos de ablacion varian por capa, con maximos de 1,98 en attn.o_proj y 2,17 en mlp.down_proj, y minimos de 0,87 y 1,27 respectivamente. El autor reporta una divergencia KL de 0,0779 frente al modelo original, lo que indica una modificacion moderada de la distribucion de salida. Las cuantizaciones GGUF han sido generadas con un fork especifico de llama.cpp (erm14254/llama.cpp-longcat-flash) que preserva las componentes MTP y LSA; no son compatibles con llama.cpp upstream.
 
 ## Capacidades
 
-- Generación de texto libre y conversacional, con énfasis en la ausencia de rechazos o restricciones de contenido.
-- Soporte de tool calling: no documentado.
-- Soporte de agentes y multi-step reasoning: no documentado.
-- Capacidades multilingües: no especificadas, aunque el modelo base es de origen chino y probablemente soporte chino e inglés, pero no hay confirmación.
-- Capacidades especiales: el modelo ha sido sometido a un proceso de "abliteration" que elimina los mecanismos de rechazo, lo que permite respuestas sin censura en temas sensibles. No se mencionan capacidades de visión, audio o thinking mode.
+- Generacion de texto conversacional y de formato largo, con soporte de plantillas de chat (`conversational` en los tags).
+- Generacion de contenido sin restricciones tematicas: el autor reporta solo 4 rechazos de cada 100 frente a 99 del modelo original.
+- Razonamiento multi-turno y mantenimiento de contexto en conversaciones (el ejemplo de despliegue usa 8192 tokens de contexto).
+- Preservacion de las capacidades nativas del modelo base: prediccion multi-token (MTP) y atencion lineal/dispersa (LSA), que afectan a la eficiencia de decodificacion.
+- No se documenta soporte explicito de tool calling, function calling, vision, audio ni modo "thinking"; no disponible.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Generación creativa de ficción y narrativa: el modelo puede producir textos extensos sin las restricciones típicas de otros modelos, lo que resulta útil para escritura de novelas, guiones o relatos con temáticas adultas o controvertidas.
-- Roleplay y simulación de personajes: su naturaleza "uncensored" permite interacciones más naturales en entornos de juego de rol, sin que el modelo se niegue a participar en escenarios complejos o moralmente ambiguos.
-- Investigación en seguridad de IA: el modelo sirve como caso de estudio para analizar los efectos de la abliteración en el comportamiento de los LLM, comparando su rendimiento y sesgos con el modelo original.
-- Desarrollo de asistentes conversacionales sin filtros: para aplicaciones donde se requiere una respuesta directa sin evasivas, como en entornos de entrenamiento de habilidades de comunicación o simulación de entrevistas.
-- Generación de contenido para nichos específicos: comunidades que demandan respuestas sin censura en áreas como poesía erótica, humor negro o crítica social sin tapujos.
-- Evaluación de técnicas de alineación: al comparar este modelo con su versión original, los investigadores pueden medir el impacto de la abliteración en métricas como la utilidad, la toxicidad y la coherencia.
+- Investigacion sobre alineamiento y abliteration: el modelo sirve como caso de estudio reproducible para medir el efecto de la ablacion ortogonal con preservacion de magnitud sobre la tasa de rechazos y la divergencia KL, comparando directamente con el modelo base original.
+- Red-teaming y evaluacion de seguridad: al reducir drasticamente los rechazos, permite a equipos de seguridad probar respuestas del modelo ante prompts adversarios y calibrar clasificadores o filtros externos.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa con tematicas sensibles donde el modelo original rechazaria o suavizaria el contenido, manteniendo coherencia en conversaciones de varios turnos.
+- Despliegue local en estaciones de trabajo con GPU de gran memoria: las cuantizaciones Q3 y Q4 permiten ejecutar un modelo de 69 B en hardware de consumo de gama alta mediante el fork de llama.cpp, con contexto de 8K.
+- Experimentacion con arquitecturas sparse y MTP: util para investigadores que quieran estudiar el comportamiento de la atencion dispersa y la prediccion multi-token en un modelo abierto de gran escala.
+- Generacion de datos sinteticos para entrenamiento: la baja tasa de rechazos facilita la produccion de datasets diversos en dominios donde el modelo alineado filtraria respuestas.
+- Servicio de inferencia en servidor local: el ejemplo del autor con `llama-server` permite exponer una API compatible con endpoints en `127.0.0.1:8080` para integraciones internas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo proporciona dos métricas comparativas frente al modelo original:
+| Metrica | Este modelo | Modelo original (LongCat-Flash-Lite-Sparse) |
+|---|---|---|
+| Divergencia KL | 0,0779 | 0 (por definicion) |
+| Rechazos | 4/100 | 99/100 |
 
-| Metrica | Este modelo | Original (LongCat-Flash-Lite-Sparse) |
-| :--- | :---: | :---: |
-| Divergencia KL | 0.0779 | 0 (por definicion) |
-| Tasa de rechazos (sobre 100 prompts) | 4/100 | 99/100 |
-
-Estos datos indican una reducción drástica de los rechazos con una desviación mínima respecto al comportamiento del modelo base, pero no ofrecen información sobre calidad de generación, razonamiento o precisión en tareas específicas.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 69,1 B de parámetros, las necesidades de VRAM varían según la cuantización. Para Q4_K_M se estima un consumo de aproximadamente 40-45 GB, para Q8_0 alrededor de 70-75 GB, y para BF16 más de 130 GB. Estas cifras son orientativas y dependen de la implementación y el contexto.
-- GPU recomendadas: para cuantizaciones bajas (Q3_K_M, Q4_K_M) se necesitan GPUs de gama alta como RTX 4090 (24 GB) no son suficientes; se requieren soluciones multi-GPU o GPUs profesionales como A100 (80 GB) o H100 (80 GB). Para Q8_0 o BF16, se necesitan al menos 2-4 GPUs A100/H100 o hardware especializado.
-- En consumer GPU: no cabe en ninguna GPU de consumo actual (máximo 24 GB en RTX 4090). Solo es viable con cuantizaciones extremadamente bajas (Q2_K) y aún así superaría los 20 GB, quedando al límite.
-- Opciones de despliegue: el autor recomienda un fork específico de llama.cpp (enlace en la model card). También podría usarse con otras herramientas compatibles con GGUF como Ollama o LM Studio, pero no hay confirmación oficial.
+- VRAM estimada: con 69,1 B de parametros, BF16 requiere aproximadamente 138 GB; Q8_0 unos 69 GB; Q6_K unos 52 GB; Q5_K_M unos 45 GB; Q4_K_M unos 38 GB; Q3_K_M unos 30 GB; Q2_K unos 22 GB (estimaciones teoricas a partir del numero de parametros, sin overhead).
+- GPU recomendadas: para BF16, multiples A100/H100 (2x80 GB o superior); para Q8_0, una H100 80 GB o A100 80 GB; para Q4_K_M, una RTX 4090 24 GB no es suficiente en una sola GPU, se requiere 2x RTX 4090 o una RTX 6000 Ada 48 GB.
+- Cabe en GPU de consumo: solo las cuantizaciones Q2_K y Q3_K_S en configuraciones de 24 GB con offload parcial a RAM; el resto requiere multiples GPU o CPU+GPU hibrido.
+- Opciones de despliegue: exclusivamente el fork `erm14254/llama.cpp-longcat-flash` (binario `llama-server`); no compatible con llama.cpp upstream, Ollama, vLLM ni TGI segun la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar con otros modelos de la misma categoría. El modelo más cercano es su versión original, `meituan-longcat/LongCat-Flash-Lite-Sparse`, que comparte arquitectura y tamaño pero mantiene los mecanismos de rechazo. Otros modelos "uncensored" del mismo autor (por ejemplo, `llmfan46/MiniMax-M3-uncensored-heretic-*`) existen en su perfil, pero no se han publicado métricas comparativas. Por tanto, la comparativa se limita a:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic (este) | 69,1 B | no disponible | MIT | GGUF | Variante abliterated, requiere fork de llama.cpp |
+| LongCat-Flash-Lite-Sparse (original) | 69,1 B | no disponible | no disponible | safetensors | Modelo base alineado, 99/100 rechazos |
+| Alternativas de ~70 B abliterated | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificables |
 
-| Modelo | Parametros | Contexto | Licencia | Refusals | KL divergence |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Este modelo (GGUF) | 69,1 B | no disponible | MIT | 4/100 | 0.0779 |
-| LongCat-Flash-Lite-Sparse (original) | 69,1 B | no disponible | MIT | 99/100 | 0 |
+No se dispone de informacion suficiente para comparar con modelos alternativos de la misma categoria en terminos de rendimiento o contexto.
 
 ## Limitaciones y advertencias
 
-- El proceso de abliteración puede degradar el rendimiento en tareas que requieren seguir instrucciones de seguridad o alineación, aunque la divergencia KL es baja (0.0779).
-- Al ser un modelo "uncensored", puede generar contenido ofensivo, ilegal o dañino sin filtros. El autor no ofrece garantías sobre el uso responsable.
-- No se han publicado evaluaciones de sesgos, alucinaciones o toxicidad. Es probable que herede los sesgos del modelo original, que no se han documentado.
-- La licencia MIT permite uso comercial, pero el usuario es responsable del cumplimiento legal en su jurisdicción.
-- El modelo requiere hardware de gama alta para inferencia local; las cuantizaciones bajas (Q2_K, Q3_K) pueden afectar significativamente la calidad de las respuestas.
-- No se ha confirmado la compatibilidad con herramientas estándar de inferencia GGUF (Ollama, LM Studio) más allá del fork de llama.cpp mencionado.
-- La información sobre arquitectura, contexto e idiomas es incompleta, lo que dificulta la evaluación técnica rigurosa.
+- La abliteration elimina los mecanismos de rechazo, lo que puede producir contenido danino, ilegal o sexualmente explicito; no es apta para aplicaciones de cara al publico sin filtros externos.
+- La divergencia KL de 0,0779 indica una desviacion no trivial respecto al modelo original; puede degradar sutilmente la calidad en tareas de razonamiento o codigo.
+- La ablacion se aplico solo a attn.o_proj y mlp.down_proj; otras componentes del modelo conservan el alineamiento original, lo que puede generar comportamientos inconsistentes.
+- Requiere un fork no oficial de llama.cpp; no hay soporte upstream, lo que implica riesgo de mantenimiento y falta de actualizaciones de seguridad.
+- El repositorio ocupa 571,1 GB; el autor advierte que ha alcanzado el limite de almacenamiento gratuito de Hugging Face y podria no subir nuevas versiones.
+- Licencia MIT declarada, pero el modelo base original no especifica licencia en la informacion disponible; conviene verificar los terminos del modelo de Meituan-LongCat antes de uso comercial.
+- Idiomas soportados no documentados; el rendimiento fuera del ingles es incierto.
+- Riesgo elevado de alucinacion en temas sensibles, agravado por la falta de benchmarks publicados.
+- Sin datos de contexto maximo oficial; el ejemplo de uso limita a 8192 tokens.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved-GGUF
-- Modelo base (safetensors): https://huggingface.co/llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved
-- Modelo original de Meituan: https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse
-- Proyecto Heretic: https://heretic-project.org/
-- Fork de llama.cpp recomendado: https://github.com/erm14254/llama.cpp-minimax-m3-combined/tree/claude/longcat-win11
-- Artículos arxiv referenciados (sin título disponible): https://arxiv.org/abs/2608.01662 y https://arxiv.org/abs/2601.21204
-- Perfil del autor: https://huggingface.co/llmfan46
+- Modelo base de la variante sin censura: https://huggingface.co/llmfan46/LongCat-Flash-Lite-Sparse-Ultra-Uncensored-Heretic-Native-MTP-And-LSA-Preserved
+- Modelo original: https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse
+- Fork de llama.cpp requerido: https://github.com/erm14254/llama.cpp-longcat-flash
+- Heretic: https://heretic-project.org/
+- Metodo MPOA (blog de referencia): https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration
+- Repositorio LongCat-Flash-Chat: https://github.com/meituan-longcat/LongCat-Flash-Chat
+- Apoyo al autor: https://ko-fi.com/llmfan46

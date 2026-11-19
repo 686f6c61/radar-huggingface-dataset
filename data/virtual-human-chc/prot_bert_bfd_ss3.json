@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "virtual-human-chc/prot_bert_bfd_ss3",
+  "slug": "virtual-human-chc-prot_bert_bfd_ss3",
+  "author": "virtual-human-chc",
+  "url": "https://huggingface.co/virtual-human-chc/prot_bert_bfd_ss3",
+  "created_at": "2025-11-08T19:01:29.000Z",
+  "updated_at": "2026-11-19T11:00:26.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "jax",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "biology",
+    "microbiology",
+    "deep-learning",
+    "en",
+    "license:afl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 418924611,
+  "parameters_human": "418.9M",
+  "storage_bytes": 5027536262,
+  "storage_human": "5.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

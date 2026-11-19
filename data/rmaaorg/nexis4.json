@@ -5,19 +5,16 @@
   "author": "rmaaorg",
   "url": "https://huggingface.co/rmaaorg/nexis4",
   "created_at": "2026-11-07T07:23:28.000Z",
-  "updated_at": "2026-11-09T18:06:58.000Z",
+  "updated_at": "2026-11-18T23:14:50.000Z",
   "license": "bsl-1.1",
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
-    "gguf",
     "doi:10.57967/hf/11621",
     "license:other",
-    "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 44,
@@ -28,10 +25,8 @@
   "storage_human": "54.3 GB",
   "context_length": 32768,
   "base_model": null,
-  "formats": [
-    "gguf"
-  ],
-  "is_conversational": true,
+  "formats": [],
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,

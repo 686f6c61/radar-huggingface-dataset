@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Jomify/MangaTrans-Diffusion-v3",
+  "slug": "jomify-mangatrans-diffusion-v3",
+  "author": "Jomify",
+  "url": "https://huggingface.co/Jomify/MangaTrans-Diffusion-v3",
+  "created_at": "2026-11-19T12:21:17.000Z",
+  "updated_at": "2026-11-19T12:24:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "diffusion-transformer",
+    "rectified-flow",
+    "manga",
+    "text-rendering",
+    "image-to-image",
+    "zh",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119291712,
+  "parameters_human": "119.3M",
+  "storage_bytes": 238600984,
+  "storage_human": "239 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

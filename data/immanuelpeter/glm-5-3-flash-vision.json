@@ -5,7 +5,7 @@
   "author": "immanuelpeter",
   "url": "https://huggingface.co/immanuelpeter/GLM-5.3-Flash-Vision",
   "created_at": "2026-09-17T17:22:46.000Z",
-  "updated_at": "2026-09-17T17:23:08.000Z",
+  "updated_at": "2026-11-16T07:12:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 563627008,
   "parameters_human": "563.6M",

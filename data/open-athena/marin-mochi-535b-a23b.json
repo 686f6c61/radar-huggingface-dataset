@@ -22,13 +22,13 @@
     "license:openmdw-1.1",
     "region:us"
   ],
-  "likes": 32,
-  "downloads_30d": 520,
-  "trending_score": 29,
+  "likes": 33,
+  "downloads_30d": 725,
+  "trending_score": 30,
   "parameters": 535477106688,
   "parameters_human": "535.48B",
-  "storage_bytes": 61044811461740,
-  "storage_human": "61044.8 GB",
+  "storage_bytes": 62115772764404,
+  "storage_human": "62115.8 GB",
   "context_length": null,
   "base_model": null,
   "formats": [

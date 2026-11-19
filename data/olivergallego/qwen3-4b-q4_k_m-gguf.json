@@ -5,7 +5,7 @@
   "author": "olivergallego",
   "url": "https://huggingface.co/olivergallego/Qwen3-4B-Q4_K_M-GGUF",
   "created_at": "2026-11-18T23:07:15.000Z",
-  "updated_at": "2026-11-18T23:07:28.000Z",
+  "updated_at": "2026-11-19T01:13:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

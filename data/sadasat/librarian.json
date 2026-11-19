@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "sadasat/librarian",
+  "slug": "sadasat-librarian",
+  "author": "sadasat",
+  "url": "https://huggingface.co/sadasat/librarian",
+  "created_at": "2026-11-19T06:24:16.000Z",
+  "updated_at": "2026-11-19T06:24:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 305797037,
+  "storage_human": "306 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

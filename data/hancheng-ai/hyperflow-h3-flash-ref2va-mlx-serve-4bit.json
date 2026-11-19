@@ -5,7 +5,7 @@
   "author": "hancheng-ai",
   "url": "https://huggingface.co/hancheng-ai/HyperFlow-H3-Flash-REF2VA-MLX-Serve-4bit",
   "created_at": "2026-11-11T17:18:23.000Z",
-  "updated_at": "2026-11-11T17:19:17.000Z",
+  "updated_at": "2026-11-19T00:46:30.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "non-commercial",
   "pipeline_tag": "image-to-video",

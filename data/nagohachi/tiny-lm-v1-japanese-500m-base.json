@@ -5,7 +5,7 @@
   "author": "nagohachi",
   "url": "https://huggingface.co/nagohachi/tiny-lm-v1-japanese-500m-base",
   "created_at": "2026-07-22T15:12:40.000Z",
-  "updated_at": "2026-11-15T09:06:54.000Z",
+  "updated_at": "2026-11-18T02:11:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 70,
+  "downloads_30d": 206,
   "trending_score": 0,
   "parameters": 479501312,
   "parameters_human": "479.5M",

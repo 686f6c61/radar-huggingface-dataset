@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "SZLHOLDINGS/salad-measurement-honesty-r1",
+  "slug": "szlholdings-salad-measurement-honesty-r1",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/salad-measurement-honesty-r1",
+  "created_at": "2026-11-16T03:28:32.000Z",
+  "updated_at": "2026-11-16T20:46:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "szl-holdings",
+    "candidate",
+    "provenance-incomplete",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 720407321,
+  "storage_human": "720 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

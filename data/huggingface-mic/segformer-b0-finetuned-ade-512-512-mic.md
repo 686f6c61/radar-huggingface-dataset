@@ -2,86 +2,91 @@
 
 ## Resumen
 
-`segformer-b0-finetuned-ade-512-512-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic` a partir del modelo `nvidia/segformer-b0-finetuned-ade-512-512`. No es un modelo utilizable para inferencia real: la propia model card lo etiqueta explícitamente como `test-artifact` y advierte que no debe emplearse como modelo de producción. Su propósito es servir como fixture reproducible para probar integraciones de frameworks (en concreto Transformers) con pesos reducidos pero con los mismos nombres de tensor que el checkpoint original.
+`segformer-b0-finetuned-ade-512-512-mic` es un artefacto de prueba (test fixture) publicado por la organizacion `huggingface-mic` a partir del modelo `nvidia/segformer-b0-finetuned-ade-512-512`. No es un modelo entrenado para uso real: es una version "slim" (reducida) del checkpoint original de segmentacion semantica SegFormer-B0, creada para validar contratos de integracion con frameworks (concretamente, la infraestructura MIC de Transformers). El autor lo etiqueta explicitamente como `test-artifact`.
 
-El modelo base es un SegFormer-B0, un transformer de segmentación semántica con arquitectura encoder-decoder jerárquica sin atención posicional clásica, ajustado sobre el dataset ADE20K a resolución 512×512. El fixture conserva la configuración de `SegformerForSemanticSegmentation` con 3.753.206 parámetros (aproximadamente 3,8 M), un tamaño muy inferior al del checkpoint original, lo que permite validar pipelines de carga, ejecución y expectativas de framework sin descargar pesos completos.
+El modelo conserva la arquitectura SegFormer (transformer jerarquico con decoder ligero para segmentacion semantica) y los mismos nombres de tensores que el checkpoint original, pero con solo 3.753.206 parametros. Segun la model card, el checkpoint original de SegFormer-B0 ya esta por debajo del umbral de 20M parametros que la herramienta de reduccion considera "mantener entero", de modo que los pesos del fixture son los pesos entrenados del checkpoint original, sin modificar.
 
-Es relevante para desarrolladores que mantienen integraciones de Transformers o que necesitan entornos de CI ligeros y deterministas para segmentación semántica. La licencia no está declarada en la información disponible, y el repositorio no incluye datos de benchmarks ni de rendimiento.
+Su relevancia es, por tanto, exclusivamente de ingenieria de software: sirve como fixture reproducible para probar cargas de modelo, expectativas de frameworks y flujos de integracion. No debe confundirse con un modelo listo para produccion ni usarse para tareas reales de segmentacion, ya que su proposito declarado es mantenerse fuera de las busquedas de modelos candidatos mediante la etiqueta `test-artifact`.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SegFormer (encoder jerárquico tipo transformer + decoder ligero, `SegformerForSemanticSegmentation`) |
-| Parametros totales | 3.753.206 (≈3,8 M) |
+| Arquitectura | SegFormer (transformer jerarquico para segmentacion semantica), clase `SegformerForSemanticSegmentation` |
+| Parametros totales | 3.753.206 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de visión; entrada 512×512 píxeles según el nombre del checkpoint) |
-| Tipos de cuantizacion | pesos guardados en float32; verificado finito en float32, bfloat16 y float16 |
-| Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
+| Longitud de contexto | no disponible (modelo de vision; resolucion de entrada 512x512 segun el nombre del checkpoint base) |
+| Tipos de cuantizacion | no disponible (pesos guardados en float32; verificado finito en float32, bfloat16 y float16) |
+| Idiomas soportados | no disponible (modelo de vision, sin capacidades linguisticas) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (dtype float32) |
+| Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un SegFormer-B0, una arquitectura de segmentación semántica que combina un encoder transformer jerárquico (con atención eficiente y sin codificación posicional explícita) con un decoder MLP ligero que fusiona características multi-escala. El checkpoint original `nvidia/segformer-b0-finetuned-ade-512-512` está ajustado sobre ADE20K (escenas interiores y exteriores, 150 clases) a resolución de entrada 512×512.
+El modelo sigue la arquitectura SegFormer, un transformer jerarquico disenado para segmentacion semantica que combina un encoder tipo transformer con atencion eficiente y un decoder ligero tipo MLP para producir mapas de segmentacion. La clase de implementacion es `SegformerForSemanticSegmentation`, y el checkpoint base es `nvidia/segformer-b0-finetuned-ade-512-512`, es decir, la variante B0 (la mas pequena de la familia) afinada sobre el dataset ADE20K a resolucion 512x512.
 
-El artefacto aquí descrito no ha sido reentrenado: la model card indica que conserva "the checkpoint's own trained weights, unchanged" y que, con 3,8 M parámetros, se mantiene por debajo del umbral de 20 M por el que una fuente se guarda entera. Los ficheros de procesador (`preprocessor_config.json`) se copian byte a byte del checkpoint original. El fixture pasa una puerta de sensibilidad a la entrada (la más débil, `pixel_values:halve`, con valor 4,01) y se guarda en float32, el dtype con el que carga por defecto el modelo original. La clave de fixture es `36235b6da949`.
+No se ha realizado ningun entrenamiento nuevo para este repositorio. Segun la model card, los pesos son "the checkpoint's own trained weights, unchanged": al tener el checkpoint original 3.8M parametros, queda por debajo del umbral de 20M de la herramienta de reduccion y se conserva entero. Los ficheros de procesador (`preprocessor_config.json`) se copiaron byte a byte del checkpoint original. El fixture paso una puerta de sensibilidad a la entrada (el test mas debil fue `pixel_values:halve`, con valor 4.01) y se verifico que es finito en float32, bfloat16 y float16 tanto en forward como en loss y gradientes. No hay informacion sobre datos de entrenamiento, numero de tokens ni tecnicas de RLHF/DPO, ya que no se entreno un modelo nuevo.
 
 ## Capacidades
 
-- Segmentación semántica de imágenes (predicción de máscaras por píxel) heredada del SegFormer-B0 original, aunque el fixture no está pensado para uso real.
-- Conserva los mismos nombres de tensor que el checkpoint real, lo que permite validar la carga de pesos y la compatibilidad de la API de Transformers.
-- Sirve como fixture ejecutable para pruebas de integración y de framework (uso y expectativas documentados en `integrations/transformers/`).
-- Verificado numéricamente estable (forward, loss y gradientes finitos) en float32, bfloat16 y float16.
-- No dispone de tool calling, capacidades de agente, multilingüismo ni modos de razonamiento: es un modelo de visión.
+- Segmentacion semantica de imagenes (hereda la tarea del checkpoint base SegFormer-B0 afinado en ADE20K), en teoria, pero el proposito del artefacto es de prueba, no de uso funcional.
+- Carga compatible con Transformers mediante `SegformerForSemanticSegmentation`.
+- Nombres de tensores identicos a los del checkpoint original, lo que permite probar rutas de carga y mapeo de pesos.
+- Verificacion de estabilidad numerica en float32, bfloat16 y float16 (forward, loss y gradientes).
+- No soporta generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes ni capacidades multilingues.
+- No dispone de modo thinking, vision generativa, audio ni ninguna capacidad conversacional.
 
 ## Casos de uso
 
-- Pruebas de integración en CI: usar el fixture para validar que la clase `SegformerForSemanticSegmentation` carga pesos, ejecuta forward y produce salidas con las formas esperadas, sin descargar el checkpoint completo.
-- Validación de pipelines de Transformers: comprobar que `preprocessor_config.json` y la configuración del modelo se comportan igual que en el checkpoint original en un entorno ligero.
-- Desarrollo de wrappers y librerías de segmentación: iterar sobre la API de inferencia con un artefacto de 3,8 M parámetros antes de conectar el modelo real.
-- Pruebas de compatibilidad de dtype: verificar que el modelo se mantiene finito en float32, bfloat16 y float16 en forward, loss y gradientes.
-- Reproducibilidad de fixtures: regenerar el artefacto con `build_fixtures.py --fixture segformer-b0-finetuned-ade-512-512-mic` y comparar hashes registrados en `build.json`.
-- Smoke tests de despliegue: comprobar que un servidor de inferencia (por ejemplo, un endpoint de segmentación) arranca y responde con el fixture antes de provisionar GPU para el modelo real.
+- Pruebas de integracion en Transformers: usar el fixture para validar que la clase `SegformerForSemanticSegmentation` carga correctamente pesos con los mismos nombres de tensores que el checkpoint real, sin descargar el modelo completo.
+- Validacion de contratos de framework: el repositorio incluye `integration.json`, `integrations/transformers/usage.md` y `integrations/transformers/expectations`, pensados para comprobar que una version de Transformers cumple las expectativas de carga y ejecucion.
+- CI/CD de la libreria: ejecutar tests automatizados de forward, loss y gradientes en float32, bfloat16 y float16 con un artefacto de 3.8M parametros, rapido y ligero, en lugar del checkpoint original.
+- Reproducibilidad de fixtures: `build.json` registra fuentes fijadas, resultados de las puertas de validacion y hashes de ficheros, lo que permite reconstruir el artefacto con `build_fixtures.py` y auditar cambios.
+- Pruebas de pipeline de preprocesado: al copiar `preprocessor_config.json` byte a byte del modelo original, sirve para verificar que el preprocesado de imagenes (redimensionado a 512x512) se comporta igual que con el checkpoint real.
+- Desarrollo de herramientas de reduccion de modelos: el enlace "How the fixture was shrunk" documenta el proceso, util para quienes trabajen en la herramienta de slim de modelos.
+- Formacion y demos de infraestructura: permite mostrar flujos de carga de modelos de vision sin coste de almacenamiento ni de computo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo documenta la puerta de sensibilidad a la entrada (`pixel_values:halve`, 4,01) y la estabilidad numérica en float32, bfloat16 y float16; no incluye métricas de segmentación como mIoU sobre ADE20K.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de mIoU ni comparaciones de rendimiento; solo documenta resultados de puertas de validacion internas (sensibilidad a la entrada, finitud numerica en varias precisiones) que no son benchmarks de calidad de segmentacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; con 3,8 M parámetros en float32 el peso ocupa aproximadamente 15 MB, por lo que cabe en cualquier GPU consumer.
-- GPU recomendadas: innecesarias para el fixture; válido en CPU. Para el modelo real SegFormer-B0 se recomienda una GPU con al menos 8-16 GB de VRAM para lotes moderados a 512×512.
-- Cabe en GPU consumer: sí, en cualquier GPU moderna (por ejemplo, RTX 3060, RTX 4090) y también en CPU.
-- Opciones de despliegue: Transformers (carga estándar con `SegformerForSemanticSegmentation`), y pipelines de visión de Hugging Face. No se documentan opciones específicas como vLLM, llama.cpp, Ollama o TGI para este artefacto.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: muy baja; con 3,75M parametros en float32 los pesos ocupan aproximadamente 15 MB, por lo que cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos unos pocos cientos de MB de VRAM; no requiere A100, H100 ni RTX 4090. Una GPU integrada o incluso CPU es suficiente para ejecutar el fixture.
+- Cabe en GPU consumer: si, en cualquier modelo (GTX 1050, RTX 3060, etc.) e incluso en CPU.
+- Opciones de despliegue: Transformers (PyTorch) es la via documentada en el repositorio; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a un modelo de segmentacion de este tipo.
+- Latencia y throughput estimados: no disponibles. Dado el tamano, la latencia sera minima, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Tarea | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/segformer-b0-finetuned-ade-512-512-mic` (este) | 3,8 M (fixture) | 512×512 | Segmentación semántica (fixture de test) | no disponible | Hugging Face |
-| `nvidia/segformer-b0-finetuned-ade-512-512` | no disponible en la información | 512×512 | Segmentación semántica ADE20K | no disponible | Hugging Face |
-| Otros SegFormer-B0 de segmentación | no disponible | 512×512 | Segmentación semántica | no disponible | no disponible |
+| `huggingface-mic/segformer-b0-finetuned-ade-512-512-mic` (este) | 3.753.206 | Fixture de pruebas de segmentacion semantica | 512x512 (segun nombre del base) | no disponible | Hugging Face, 2316 descargas |
+| `nvidia/segformer-b0-finetuned-ade-512-512` | no disponible en la informacion (checkpoint original, ~3.8M segun la model card) | Segmentacion semantica (ADE20K) | 512x512 | no disponible | Hugging Face (modelo base) |
+| Otras variantes SegFormer (B1-B5) | no disponible | Segmentacion semantica | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de parámetros del checkpoint original en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
+La unica comparacion directa disponible es con el checkpoint base `nvidia/segformer-b0-finetuned-ade-512-512`, del que este repositorio es una copia reducida/derivada para pruebas. No se dispone de datos de rendimiento para comparar con alternativas como DeepLab, Mask2Former u otros modelos de segmentacion.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de prueba (`test-artifact`): la model card indica explícitamente que "no es un modelo utilizable" y que se etiqueta así para excluirlo de la búsqueda de modelos candidatos.
-- No debe usarse en producción ni para inferencia real de segmentación; sus pesos son una versión reducida del checkpoint original.
-- Licencia no declarada: no hay información sobre permisos de uso comercial, por lo que no se puede asumir ningún régimen de uso.
-- Sin datos de sesgos, alucinación o limitaciones idiomáticas: al ser un modelo de visión, estas categorías no aplican directamente, pero tampoco hay evaluación publicada.
-- Sin benchmarks de calidad (mIoU u otros): no es posible comparar su rendimiento con el checkpoint original.
-- Depende de la herramienta de construcción (`build_fixtures.py`) para regenerar los ficheros auxiliares; el repositorio solo incluye pesos, uso y expectativas de framework.
+- Es un artefacto de prueba (`test-artifact`), no un modelo usable: el propio autor indica que no debe usarse como modelo real.
+- Aunque los pesos sean los del checkpoint original, el proposito y el contexto de publicacion no garantizan un uso funcional para segmentacion en produccion.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; hay que remitirse al checkpoint base `nvidia/segformer-b0-finetuned-ade-512-512` para conocer las condiciones.
+- Sin informacion sobre sesgos: al ser un modelo de vision afinado en ADE20K, heredaria los sesgos del dataset original, pero no se documentan.
+- Riesgo de alucinacion: no aplica en el sentido generativo, pero al ser un fixture no se garantiza la calidad de las predicciones de segmentacion.
+- Limitaciones de idioma: no aplica (modelo de vision sin capacidades linguisticas).
+- No dispone de pipeline declarado en Hugging Face ni de idiomas declarados, lo que limita su descubrimiento y uso automatico.
+- El repositorio pesa 0.0 GB segun los metadatos, coherente con un artefacto minimo; no incluye todos los ficheros necesarios para un uso completo, que deben regenerarse con `build_fixtures.py`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/huggingface-mic/segformer-b0-finetuned-ade-512-512-mic
 - Modelo base: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512
-- Manifest de contrato: https://huggingface.co/huggingface-mic/segformer-b0-finetuned-ade-512-512-mic/blob/main/integration.json
-- Uso con Transformers: https://huggingface.co/huggingface-mic/segformer-b0-finetuned-ade-512-512-mic/blob/main/integrations/transformers/usage.md
-- Expectativas de Transformers: https://huggingface.co/huggingface-mic/segformer-b0-finetuned-ade-512-512-mic/tree/main/integrations/transformers/expectations
-- Procedencia del fixture: https://huggingface.co/huggingface-mic/segformer-b0-finetuned-ade-512-512-mic/blob/main/build.json
-- Cómo se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/segformer-b0-finetuned-ade-512-512-mic.html
-- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Documentacion de como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/segformer-b0-finetuned-ade-512-512-mic.html
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Repositorio de la infraestructura MIC: https://github.com/huggingface/transformers-mic
+- Manifiesto de contrato (referenciado en la model card): `integration.json` en el repositorio del modelo
+- Uso con Transformers (referenciado): `integrations/transformers/usage.md` en el repositorio del modelo
+- Expectativas de Transformers (referenciado): `integrations/transformers/expectations` en el repositorio del modelo
+- Procedencia del fixture (referenciado): `build.json` en el repositorio del modelo

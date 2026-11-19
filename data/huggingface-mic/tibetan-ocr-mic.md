@@ -2,86 +2,86 @@
 
 ## Resumen
 
-`huggingface-mic/tibetan-ocr-mic` es un artefacto de prueba publicado por la organización `huggingface-mic`, no un modelo utilizable en producción. Se trata de un *fixture* de 535.680 parámetros construido a partir de `BDRC/tibetan-ocr` mediante una reducción de configuración (2 capas en el codificador de texto y 2 en el de visión) que conserva la arquitectura `PaddleOCRVLForConditionalGeneration` y los nombres de tensores del checkpoint original. Su propósito es servir como contrato ejecutable para validar integraciones de frameworks (en concreto Transformers) sin descargar los pesos completos del modelo real.
+`huggingface-mic/tibetan-ocr-mic` no es un modelo utilizable, sino un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` para validar integraciones de frameworks sobre el modelo real `BDRC/tibetan-ocr`, un sistema de OCR para tibetano basado en PaddleOCR-VL. El repositorio contiene pesos "slim" de 535.680 parametros (aproximadamente 0,5 M), generados con pesos aleatorios (semilla 17) y una configuracion reducida del modelo original: 2 capas en el text decoder y 2 capas en el vision encoder, manteniendo la clase `PaddleOCRVLForConditionalGeneration`.
 
-El modelo subyacente que representa es un OCR especializado en tibetano basado en PaddleOCR-VL, una arquitectura vision-language orientada a la transcripción de documentos. El fixture copia byte a byte los ficheros de procesador del modelo original (`chat_template.jinja`, `tokenizer.json`, `tokenizer.model`, `processor_config.json`, `generation_config.json`, `dry_logits_processor.py`), de modo que las expectativas de tokenización y preprocesado coinciden exactamente con las del checkpoint de referencia.
+Su proposito es servir como contrato ejecutable: incluye el manifiesto de integracion, ejemplos de uso con Transformers, las expectativas del framework y la procedencia de la fixture, de modo que los mantenedores puedan comprobar que una implementacion carga, ejecuta y propaga gradientes correctamente sin descargar el checkpoint completo. Esta etiquetado explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
 
-Es relevante ahora porque la comunidad de Transformers lo emplea para verificar que la integración de PaddleOCR-VL funciona correctamente en tests automatizados: pesos aleatorios con semilla 17 que superan una puerta de sensibilidad a entradas (toda perturbación mueve los logits al menos 0,001) y son finitos en float32, bfloat16 y float16. No debe confundirse con un modelo de OCR funcional: las etiquetas `mic` y `test-artifact` lo excluyen explícitamente de las búsquedas de modelos candidatos.
+Por tanto, no debe emplearse para inferencia real, evaluacion de calidad ni produccion: los pesos son aleatorios y el modelo no ha sido entrenado. Su relevancia es de ingenieria de software (verificacion de pipelines de carga y compatibilidad), no de capacidades de OCR.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | PaddleOCRVLForConditionalGeneration (vision-language transformer, PaddleOCR-VL) |
-| Parametros totales | 535.680 |
+| Arquitectura | PaddleOCR-VL (`PaddleOCRVLForConditionalGeneration`), vision encoder + text decoder, configuracion reducida (2 capas de texto, 2 capas de vision) |
+| Parametros totales | 535.680 (aproximadamente 0,5 M) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; finito en float32, bfloat16 y float16) |
-| Idiomas soportados | no disponible (el modelo de referencia está orientado a tibetano) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; se declara finito en float32, bfloat16 y float16) |
+| Idiomas soportados | no disponible (el modelo base esta orientado a OCR de tibetano) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El fixture replica la arquitectura `PaddleOCRVLForConditionalGeneration`, un modelo vision-language de PaddleOCR-VL compuesto por un codificador de visión y un decodificador de texto. La configuración se ha reducido mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`: 2 capas ocultas en el módulo de texto y 2 en el de visión. Los ficheros de procesador se copian sin modificar desde `BDRC/tibetan-ocr`, garantizando que el pipeline de preprocesado (tokenizador, plantilla de chat, procesador de imágenes) sea idéntico al del modelo real.
+El artefacto replica la arquitectura del modelo base `BDRC/tibetan-ocr`, un PaddleOCR-VL con clase `PaddleOCRVLForConditionalGeneration`, pero con una configuracion encogida mediante la regla generica de `sweep.py`: 2 capas en el decodificador de texto y 2 capas en el codificador de vision. Los nombres de tensores coinciden con los del checkpoint real, de modo que el codigo de carga y las rutas de ejecucion son identicas a las del modelo completo.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se aceptaron tras superar una puerta de sensibilidad a las entradas: cada perturbación de las entradas del contrato desplaza los logits al menos 0,001 (la más débil, `pixel_values:halve`, con 0,164). El artefacto se guarda en bfloat16, el dtype con el que carga por defecto `BDRC/tibetan-ocr`, y se verifica que forward, loss y gradientes son finitos en float32, bfloat16 y float16. La clave de fixture `dd50d80ac1a7` agrupa todos los checkpoints cuyos ficheros de procesador son idénticos byte a byte y cuya configuración coincide tras la reducción.
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron porque superaron la puerta de sensibilidad a la entrada: cada perturbacion de las entradas del contrato desplazo los logits al menos 0,001 (el caso mas debil, `pixel_values:halve`, produjo 0,164). Los ficheros de procesador (`chat_template.jinja`, `dry_logits_processor.py`, `generation_config.json`, `processor_config.json`, `tokenizer.json`, `tokenizer.model`, `tokenizer_config.json`) se copiaron byte a byte desde `BDRC/tibetan-ocr`. La fixture se genero con `build_fixtures.py` y su procedencia (fuentes fijadas, resultados de las puertas y hashes) queda registrada en `build.json`.
 
 ## Capacidades
 
-- No es un modelo funcional: no realiza OCR, generación de texto ni ninguna tarea real.
-- Conserva la interfaz de `PaddleOCRVLForConditionalGeneration`, por lo que puede cargarse con Transformers y ejecutar forward passes.
-- Los ficheros de procesador (tokenizador, plantilla de chat, configuración de generación) son idénticos a los de `BDRC/tibetan-ocr`, lo que permite validar el pipeline de preprocesado.
-- Admite ejecución en float32, bfloat16 y float16 con resultados finitos en forward, loss y gradientes.
-- Sirve como contrato de integración: expone `integration.json`, expectativas de Transformers y manifiesto de procedencia (`build.json`).
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües reales.
+- Carga y ejecucion del grafo `PaddleOCRVLForConditionalGeneration` con nombres de tensores identicos al checkpoint real.
+- Verificacion de propagacion de gradientes y calculo de perdida en float32, bfloat16 y float16 (forward, loss y gradients finitos).
+- Validacion de contratos de entrada/salida definidos en `integration.json` y en `integrations/transformers/expectations`.
+- Comprobacion de sensibilidad a perturbaciones de entrada (incluida la ruta de `pixel_values`).
+- Ejecucion reproducible de ejemplos de uso con Transformers documentados en `integrations/transformers/usage.md`.
+- No dispone de capacidades reales de OCR, generacion de texto, tool calling, agentes ni multilingues: los pesos son aleatorios.
 
 ## Casos de uso
 
-- Pruebas de integración en Transformers: el fixture permite ejecutar la suite de tests de `PaddleOCRVLForConditionalGeneration` sin descargar los pesos completos de `BDRC/tibetan-ocr`, reduciendo el tiempo de CI y el consumo de almacenamiento.
-- Validación de contratos de framework: los ficheros `integration.json` e `integrations/transformers/expectations` definen las entradas y salidas esperadas, de modo que un cambio incompatible en el framework rompe el test de forma determinista.
-- Verificación de preprocesado: al copiar byte a byte el tokenizador y el procesador de imágenes del modelo real, se puede comprobar que la tokenización y el preprocesado de documentos tibetanos producen las mismas secuencias que el checkpoint de referencia.
-- Tests de precisión numérica: el fixture es finito en float32, bfloat16 y float16, lo que permite validar rutas de mixed precision y autocast en el framework sin depender de pesos entrenados.
-- Desarrollo de nuevas reglas de reducción: el script `sweep.py` y `build_fixtures.py` documentan cómo se generó el fixture, sirviendo de plantilla para crear fixtures de otros modelos de la misma familia.
-- Reproducibilidad de artefactos: `build.json` registra fuentes fijadas, resultados de la puerta de sensibilidad y hashes de ficheros, permitiendo reconstruir el fixture de forma verificable.
+- Pruebas de integracion en CI: ejecutar el fixture en la suite de tests de Transformers para verificar que la clase `PaddleOCRVLForConditionalGeneration` carga y produce logits sin descargar el checkpoint completo.
+- Desarrollo de kernels y optimizaciones: validar cambios en atencion, capas de vision o decodificacion sobre un modelo de 0,5 M de parametros antes de probarlos con `BDRC/tibetan-ocr`.
+- Verificacion de contratos de framework: comprobar que las expectativas declaradas en `integrations/transformers/expectations` se cumplen (formas de tensores, dtypes, nombres de parametros).
+- Pruebas de precision numerica: confirmar comportamiento finito en float32, bfloat16 y float16 en forward, loss y retropropagacion.
+- Reproducibilidad de artefactos: reconstruir la fixture con `python example/build_fixtures.py --fixture tibetan-ocr-mic` y comparar hashes registrados en `build.json`.
+- Deteccion de regresiones en el procesador: al copiar byte a byte los ficheros de tokenizer y processor del modelo real, sirve para comprobar que cambios en el pipeline de preprocesado no rompen la carga.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un artefacto de prueba con pesos aleatorios, carece de sentido evaluar su precisión en tareas de OCR o generación.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB incluso en float32 (535.680 parámetros); en la práctica, unos pocos MB en bfloat16.
-- GPU recomendadas: no requiere GPU; puede ejecutarse en CPU para tests de integración.
-- Cabe en cualquier GPU consumer (RTX 4090, RTX 3060, e incluso iGPU) y en entornos sin GPU.
-- Opciones de despliegue: carga directa con Transformers (`PaddleOCRVLForConditionalGeneration`); no está pensado para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo funcional.
-- Latencia y throughput: no disponibles; al ser un fixture de test, el rendimiento no es un objetivo.
+- VRAM estimada: inferior a 1 GB en cualquier precision; el checkpoint ocupa aproximadamente 0,0 GB (pesos de 0,5 M de parametros en bfloat16).
+- GPU recomendadas: no requiere GPU; puede ejecutarse en CPU para pruebas de integracion. Cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es mas que suficiente.
+- Cabe en cualquier GPU consumer y en entornos sin acelerador.
+- Opciones de despliegue: Transformers (ruta documentada en `integrations/transformers/usage.md`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un artefacto de prueba con pesos aleatorios, las cifras no serian representativas del modelo real.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/tibetan-ocr-mic | 535.680 | no disponible | Fixture de test para integración de PaddleOCR-VL | no disponible | Hugging Face |
-| BDRC/tibetan-ocr | no disponible | no disponible | OCR real de tibetano (PaddleOCR-VL) | no disponible | Hugging Face |
-| huggingface-mic/tibetan-ocr-mic (otros fixtures de la familia MIC) | variable (reducidos) | no disponible | Fixtures de test de otros modelos | no disponible | Hugging Face |
-
-No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada.
+| `huggingface-mic/tibetan-ocr-mic` | 535.680 | no disponible | Fixture de test para integracion | no disponible | Hugging Face |
+| `BDRC/tibetan-ocr` | no disponible | no disponible | OCR de tibetano (PaddleOCR-VL) | no disponible | Hugging Face |
+| PaddleOCR-VL (modelo base de la familia) | no disponible | no disponible | OCR y comprension de documentos | no disponible | no disponible en la informacion |
 
 ## Limitaciones y advertencias
 
-- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y no producen OCR ni texto coherente.
-- Etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos; no debe desplegarse en producción.
-- La licencia no está declarada en la información disponible, por lo que no puede confirmarse su uso comercial.
-- El tamaño del repositorio figura como 0.0 GB, lo que sugiere que los pesos pueden no estar materializados o que el reporte es inexacto; conviene verificar los ficheros antes de usarlo.
-- La model card contiene secciones duplicadas y repetidas, lo que dificulta extraer información adicional fiable.
-- Al ser un fixture reducido (2 capas de texto y 2 de visión), no reproduce el comportamiento numérico del modelo completo más allá de la sensibilidad a entradas.
-- No hay información sobre sesgos, alucinación o limitaciones idiomáticas porque el modelo no genera contenido real.
+- No es un modelo utilizable: los pesos son aleatorios (semilla 17) y no han sido entrenados; cualquier salida es ruido.
+- Etiquetado como `test-artifact` para excluirlo de busquedas de modelos candidatos; no debe promocionarse a produccion.
+- La configuracion esta reducida a 2 capas de texto y 2 de vision, por lo que el comportamiento numerico no reproduce el del checkpoint completo.
+- No se declaran licencia, idiomas ni pipeline en la informacion disponible; verificar la licencia del modelo base `BDRC/tibetan-ocr` antes de cualquier uso derivado.
+- Riesgo de confusion: el nombre puede llevar a pensar que se trata de un OCR de tibetano funcional; no lo es.
+- No hay datos de sesgos, alucinacion ni rendimiento porque no se ha realizado entrenamiento ni evaluacion.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/huggingface-mic/tibetan-ocr-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/tibetan-ocr-mic
 - Modelo base: https://huggingface.co/BDRC/tibetan-ocr
-- Repositorio transformers-mic: https://github.com/huggingface/transformers-mic
-- Script de reducción: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/tibetan-ocr-mic.html
+- Manifiesto de contrato: https://huggingface.co/huggingface-mic/tibetan-ocr-mic/blob/main/integration.json
+- Uso con Transformers: https://huggingface.co/huggingface-mic/tibetan-ocr-mic/blob/main/integrations/transformers/usage.md
+- Expectativas de Transformers: https://huggingface.co/huggingface-mic/tibetan-ocr-mic/tree/main/integrations/transformers/expectations
+- Procedencia de la fixture: https://huggingface.co/huggingface-mic/tibetan-ocr-mic/blob/main/build.json
+- Documentacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/tibetan-ocr-mic.html
+- Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

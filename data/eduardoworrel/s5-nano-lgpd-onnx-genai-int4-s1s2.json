@@ -5,7 +5,7 @@
   "author": "eduardoworrel",
   "url": "https://huggingface.co/eduardoworrel/S5-nano-LGPD-ONNX-genai-int4-S1S2",
   "created_at": "2026-11-17T05:40:21.000Z",
-  "updated_at": "2026-11-17T20:45:42.000Z",
+  "updated_at": "2026-11-19T06:36:33.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

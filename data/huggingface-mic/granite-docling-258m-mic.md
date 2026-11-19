@@ -2,86 +2,91 @@
 
 ## Resumen
 
-`granite-docling-258M-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable para inferencia real: se trata de una version reducida artificialmente del modelo `ibm-granite/granite-docling-258M` de IBM, generada para validar contratos de integracion entre el modelo y distintos frameworks (en concreto, Transformers). El repositorio incluye pesos "slim", ejemplos de uso ejecutables y un directorio de expectativas de framework.
+`granite-docling-258M-mic` es un artefacto de prueba publicado por la organización `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable: se trata de un *fixture* de 6.743.936 parámetros construido a partir del checkpoint real `ibm-granite/granite-docling-258M` de IBM, con pesos aleatorios (semilla 17) y una configuración reducida del mismo transformer multimodal. Su propósito es servir como contrato de integración para validar el comportamiento de frameworks (principalmente Transformers) frente a la arquitectura original.
 
-El fixture conserva la arquitectura del modelo original (`Idefics3ForConditionalGeneration`, un modelo vision-lenguaje) pero con una configuracion drasticamente reducida: 2 capas en el codificador de vision y 2 capas en el decodificador de texto. Los pesos son aleatorios (semilla 17) y no han pasado por ningun proceso de entrenamiento; simplemente superaron una comprobacion de sensibilidad a las entradas (las perturbaciones de los inputs mueven los logits al menos 0,001). El recuento real de parametros en safetensors es de 6.743.936, muy lejos de los 258M que sugiere el nombre heredado del modelo base.
+El modelo base, Granite Docling 258M, es un modelo visión-lenguaje orientado a la conversión de documentos a formatos estructurados (DocTags/Markdown), construido sobre la arquitectura `Idefics3ForConditionalGeneration`. El fixture replica esa arquitectura con 2 capas en el codificador visual y 2 capas en el decodificador de texto, conservando los ficheros de procesador y tokenizador copiados byte a byte del checkpoint original.
 
-Su relevancia es exclusivamente para desarrolladores de infraestructura de modelos: permite probar pipelines de carga, procesadores, plantillas de chat y comprobaciones de integracion sin descargar ni ejecutar el checkpoint real de IBM. Esta etiquetado como `test-artifact` precisamente para excluirlo de busquedas de modelos candidatos a produccion. Cualquier uso como modelo funcional seria un error de interpretacion.
+La relevancia de este repositorio es puramente de ingeniería: permite ejecutar pruebas de integración y regresión de la arquitectura Granite Docling sin descargar los pesos completos, verificar nombres de tensores, dtypes (bfloat16 por defecto) y estabilidad numérica en float32, bfloat16 y float16. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Idefics3ForConditionalGeneration (vision-lenguaje, transformer) |
-| Parametros totales | 6.743.936 (segun safetensors) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Idefics3ForConditionalGeneration (transformer multimodal visión-lenguaje) |
+| Parametros totales | 6.743.936 (fixture reducido; el modelo base declara 258M en su nombre) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16) |
+| Tipos de cuantizacion | no disponible (pesos en bfloat16; se ha verificado estabilidad numérica en float32, bfloat16 y float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura `Idefics3ForConditionalGeneration`, un transformer multimodal que combina un codificador de vision con un decodificador de lenguaje. En este fixture, la configuracion se ha reducido mediante la regla generica de `sweep.py`: el codificador de vision conserva 2 capas (`vision num_hidden_layers 2`) y el decodificador de texto otras 2 (`text num_hidden_layers 2`). Los nombres de tensores coinciden con los del checkpoint real de IBM, de modo que las herramientas que esperan esa estructura pueden cargarlo sin cambios.
+El fixture emplea la misma clase de arquitectura que el modelo base: `Idefics3ForConditionalGeneration`, un transformer multimodal que combina un codificador visual con un decodificador de lenguaje. La configuración se ha reducido mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`, fijando 2 capas ocultas en la torre visual y 2 capas ocultas en la torre de texto. Los nombres de tensores coinciden exactamente con los del checkpoint real, de modo que el fixture puede sustituirlo en pruebas de carga y forward pass.
 
-No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron con una comprobacion de sensibilidad a entradas: cada perturbacion de los inputs del contrato desplaza los logits al menos 0,001 (la mas debil, `pixel_values:halve`, produce 0,131). Los ficheros de procesador (`added_tokens.json`, `chat_template.jinja`, `generation_config.json`, `merges.txt`, `preprocessor_config.json`, `processor_config.json`, `special_tokens_map.json`, `tokenizer.json`, `tokenizer_config.json`, `vocab.json`, entre otros) se copiaron byte a byte desde `ibm-granite/granite-docling-258M`. Los pesos se guardaron en bfloat16 y se verifico que son finitos en float32, bfloat16 y float16 (forward, loss y gradientes).
+No hubo entrenamiento. Los pesos son aleatorios (semilla 17) y se aceptaron tras superar una puerta de sensibilidad a las entradas: cada perturbación de las entradas del contrato desplazó los logits al menos 0,001 (el caso más débil, `pixel_values:halve`, produjo 0,131). Los ficheros de procesador y tokenizador (`tokenizer.json`, `tokenizer_config.json`, `vocab.json`, `merges.txt`, `chat_template.jinja`, `preprocessor_config.json`, `processor_config.json`, `special_tokens_map.json`, `added_tokens.json`, `generation_config.json`) se copiaron byte a byte desde `ibm-granite/granite-docling-258M`. El artefacto se guardó en bfloat16, el dtype con el que carga por defecto el modelo base, y se verificó que forward, loss y gradientes son finitos en float32, bfloat16 y float16.
 
 ## Capacidades
 
-- No dispone de capacidades funcionales reales: al tener pesos aleatorios, no genera texto, codigo ni descripciones coherentes.
-- Conserva la estructura de un modelo vision-lenguaje (entrada de imagenes y texto) a nivel de configuracion y procesador.
-- Incluye la plantilla de chat (`chat_template.jinja`) y los ficheros de tokenizer del modelo base, utiles para probar integraciones de tokenizacion.
-- Permite validar la carga del modelo en Transformers y comprobar que los nombres de tensores y la configuracion son compatibles.
-- No soporta tool calling, agentes ni razonamiento multi-paso de forma utilizable.
-- Capacidades multilingues: no disponibles (hereda el tokenizer del modelo base, pero sin pesos entrenados).
+- No es un modelo funcional: al tener pesos aleatorios, no genera texto, código ni descripciones de documentos con sentido.
+- Sirve como contrato ejecutable para validar la integración de la arquitectura `Idefics3ForConditionalGeneration` en Transformers.
+- Permite comprobar la paridad de nombres de tensores con el checkpoint real `ibm-granite/granite-docling-258M`.
+- Valida el pipeline de procesamiento multimodal (imagen + texto) usando los ficheros de procesador copiados del modelo original.
+- Verifica estabilidad numérica (forward, loss, gradientes) en float32, bfloat16 y float16.
+- Incluye expectativas de framework en `integrations/transformers/expectations` para pruebas automatizadas.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües reales, al carecer de entrenamiento.
 
 ## Casos de uso
 
-- Pruebas de integracion en Transformers: cargar el fixture para verificar que `Idefics3ForConditionalGeneration` acepta la configuracion y los ficheros de procesador del checkpoint de IBM sin errores.
-- Validacion de pipelines de CI/CD: usar el repositorio como dependencia ligera en tests automatizados que comprueben carga, forward y formas de tensores sin descargar los 258M reales.
-- Desarrollo de herramientas de inspeccion de modelos: al tener los mismos nombres de tensores que el checkpoint original, sirve para probar utilidades que recorren el grafo de parametros.
-- Pruebas de compatibilidad de tokenizer y chat template: los ficheros copiados byte a byte permiten validar plantillas de conversacion y tokenizacion en entornos aislados.
-- Verificacion de dtypes y estabilidad numerica: el fixture es finito en float32, bfloat16 y float16, lo que permite probar rutas de ejecucion con distintos tipos sin coste de memoria.
-- Reproducibilidad de contratos de framework: el directorio `integrations/transformers/expectations` documenta resultados esperados que pueden usarse como referencia en regresiones.
+- Pruebas de integración en Transformers: cargar el fixture con `Idefics3ForConditionalGeneration` y ejecutar un forward pass para detectar regresiones en la API antes de actualizar a un checkpoint completo.
+- CI/CD de librerías de inferencia: usar el fixture como sustituto ligero del modelo de 258M en pipelines de integración continua, reduciendo tiempos de descarga y memoria.
+- Validación de contratos de tokenizador y procesador: comprobar que los ficheros de tokenización y preprocesado copiados del modelo base se cargan correctamente en nuevas versiones del framework.
+- Verificación de nombres de tensores: asegurar que scripts de conversión, cuantización o sharding siguen encontrando los mismos identificadores de parámetros que en el checkpoint original.
+- Pruebas de estabilidad numérica: ejecutar forward, loss y backward en float32, bfloat16 y float16 para detectar problemas de precisión en kernels o capas nuevas.
+- Desarrollo de utilidades de inspección de modelos: usar el fixture para probar herramientas que analizan configuraciones, dtypes y arquitecturas sin consumir recursos del modelo real.
+- Docencia y experimentación: ilustrar la estructura de un modelo visión-lenguaje tipo Idefics3 con un repositorio de tamaño mínimo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad seria carente de sentido.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones de calidad, y al tratarse de un artefacto con pesos aleatorios, los benchmarks no serían significativos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en bfloat16 (6,7M parametros), aunque el peso real depende de los ficheros de procesador y del codigo de carga.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 o superior) e incluso CPU es suficiente.
-- Cabe en cualquier GPU consumer y en la mayoria de entornos sin GPU.
-- Opciones de despliegue: Transformers es el framework objetivo; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; al ser un fixture no se han medido.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 para los 6,7M de parámetros del fixture; el modelo base de 258M requeriría aproximadamente 0,5 GB en bfloat16, aunque este dato no se confirma en la información disponible.
+- GPU recomendadas: cualquier GPU con soporte de bfloat16 o float16; el fixture cabe en GPUs de consumo muy básicas e incluso puede ejecutarse en CPU.
+- Cabe en cualquier GPU de consumo (GTX 1650, RTX 3060, RTX 4090) y en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: Transformers con `Idefics3ForConditionalGeneration`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI para este artefacto.
+- Latencia y throughput: no disponibles; al ser un fixture de 2+2 capas, la latencia sería muy baja, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Uso previsto |
 |---|---|---|---|---|---|
-| `huggingface-mic/granite-docling-258M-mic` | 6,7M (fixture) | no disponible | Pruebas de integracion | no disponible | Hugging Face |
-| `ibm-granite/granite-docling-258M` | 258M | no disponible | Conversion de documentos a Markdown | no disponible | Hugging Face |
-| `HuggingFaceTB/SmolVLM-256M` | 256M | no disponible | Vision-lenguaje ligero | no disponible | Hugging Face |
+| granite-docling-258M-mic | 6,7M (fixture) | no disponible | no disponible | Hugging Face (`huggingface-mic`) | Artefacto de prueba |
+| ibm-granite/granite-docling-258M | 258M (según nombre) | no disponible | no disponible | Hugging Face (`ibm-granite`) | Conversión de documentos |
+| Idefics3 (familia) | no disponible | no disponible | no disponible | Hugging Face | Visión-lenguaje general |
 
-La comparativa con `SmolVLM-256M` es orientativa por tamano y familia arquitectonica (vision-lenguaje), no por rendimiento, ya que el fixture no es funcional. Frente al checkpoint real de IBM, la unica diferencia relevante es que este ultimo si esta entrenado y orientado a la conversion de documentos.
+La comparación con alternativas reales no está disponible en la información proporcionada; el fixture solo es comparable con su modelo base en términos de arquitectura y nombres de tensores.
 
 ## Limitaciones y advertencias
 
 - No es un modelo utilizable: los pesos son aleatorios y las salidas carecen de significado.
-- Etiquetado como `test-artifact`; no debe incluirse en busquedas de modelos candidatos ni en produccion.
-- El nombre "258M" es herencia del modelo base; el recuento real es de 6,7M de parametros, lo que puede inducir a error.
-- Licencia no disponible: no se puede asumir permiso de uso comercial.
-- Idiomas soportados no disponibles; el tokenizer se hereda del modelo base pero no hay capacidad linguistica real.
-- Riesgo de alucinacion total: cualquier texto generado es ruido estadistico.
-- No se documentan sesgos porque no hay entrenamiento que los introduzca de forma medible.
-- El repositorio indica que algunos ficheros deben regenerarse con `python example/build_fixtures.py --fixture granite-docling-258M-mic`, por lo que la copia puede estar incompleta para ciertos flujos.
+- Etiquetado como `test-artifact`; no debe emplearse en producción ni en evaluaciones de calidad.
+- No se especifica licencia, por lo que el uso comercial queda sin definir y debe consultarse con el autor.
+- No se documentan idiomas soportados ni sesgos, al no existir entrenamiento.
+- El tamaño real del repositorio aparece como 0.0 GB, lo que puede indicar que los pesos no están completamente subidos o que el campo no se ha actualizado.
+- La información sobre contexto, cuantización y benchmarks del modelo base no está disponible en esta ficha.
+- No debe confundirse con `ibm-granite/granite-docling-258M`, que es el checkpoint real y entrenado.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/granite-docling-258M-mic
+- Repositorio del fixture: https://huggingface.co/huggingface-mic/granite-docling-258M-mic
 - Modelo base: https://huggingface.co/ibm-granite/granite-docling-258M
-- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/granite-docling-258M-mic.html
-- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
-- Regla de reduccion (`sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Manifiesto del contrato: `integration.json` (en el repositorio)
+- Uso en Transformers: `integrations/transformers/usage.md` (en el repositorio)
+- Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)
+- Procedencia del fixture: `build.json` (en el repositorio)
+- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/granite-docling-258M-mic.html
+- Script de barrido: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

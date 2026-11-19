@@ -5,13 +5,14 @@
   "author": "prayphnadeak",
   "url": "https://huggingface.co/prayphnadeak/cadas-besemah",
   "created_at": "2026-11-09T10:27:18.000Z",
-  "updated_at": "2026-11-09T10:32:09.000Z",
+  "updated_at": "2026-11-18T10:29:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 0,
@@ -19,11 +20,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1699840,
-  "storage_human": "2 MB",
+  "storage_bytes": 135117940,
+  "storage_human": "135 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

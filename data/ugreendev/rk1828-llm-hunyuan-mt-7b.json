@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "UGREENDEV/RK1828-LLM-Hunyuan-MT-7B",
+  "slug": "ugreendev-rk1828-llm-hunyuan-mt-7b",
+  "author": "UGREENDEV",
+  "url": "https://huggingface.co/UGREENDEV/RK1828-LLM-Hunyuan-MT-7B",
+  "created_at": "2026-11-19T10:23:53.000Z",
+  "updated_at": "2026-11-19T10:24:08.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rknn",
+    "rk1828",
+    "llm",
+    "text-generation",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 5566373765,
+  "storage_human": "5.6 GB",
+  "context_length": 32768,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hunyuan-MT Technical Report",
+      "url": "http://go/v1/AbMWDhGI7tllav7OfAFfqerhIDIic8_P0fr2-Qa9gSTyXxJc2VUH-qbjBA83HITw0006vKh9En1wfN6p4h2xise0tm3dbLxkUlbXGCfY1qkfwf-IJ4p-83Kt7GVHez1p0q7tGt2D-ZKsIfvr5RRUrFZ-zu0ygP7XGDot0q39JPK5ZSgRZR0PmAlOFPQVxBSzA7vE5Y4J",
+      "snippet": "In this report, we introduce Hunyuan-MT-7B, our first open-source multilingual translation model, which supports bidirectional translation across 33 major languages and places a special emphasis on translation between Mandarin and several ethnic minority languages as well as dialects."
+    },
+    {
+      "title": "Hunyuan-MT Technical Report",
+      "url": "http://go/v1/AbMWDhGI7tllav7OfAFfqerhIDIic8_P0fr2-Qa9gsVw3XY_QudGkR6TH9vakuIWW32A96VdWhcwlQXx9GurGY7lUafSJII0o4XPEZz1NCuotU-54KOPhLq6sx-CzIzpq5fBjS3e-YhbY1PG3DIwzTfD5P8TPgW69lamuexwYBZGzPIoya22BBNB055JyHmr4oEqBw",
+      "snippet": "In this report, we introduce Hunyuan-MT-7B, our first open-source multilingual translation model, which supports bidirectional translation across 33 major languages and places a special emphasis on translation between Mandarin and several ethnic minority languages as well as dialects."
+    }
+  ]
+}

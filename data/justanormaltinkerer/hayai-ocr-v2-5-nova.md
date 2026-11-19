@@ -2,114 +2,102 @@
 
 ## Resumen
 
-Hayai OCR v2.5 Nova es un modelo vision-language de tipo image-to-text desarrollado por el usuario JustANormalTinkerer, especializado en reconocimiento óptico de caracteres (OCR) a nivel de recorte (*crop*) para japones, chino, coreano e ingles. Con 156.915.968 parametros (~157M) y un repositorio de 0,6 GB, combina un codificador visual SigLIP2 NaFlex (~86M) con un decodificador transformer causal propio de 12 capas, y esta disenado para transcribir texto denso, estilizado, horizontal y vertical en una sola pasada directa, sin necesidad de una etapa intermedia de deteccion de lineas de texto.
+Hayai OCR v2.5 Nova es un modelo visión-lenguaje ultraligero de aproximadamente 157 millones de parámetros, desarrollado por el usuario independiente JustANormalTinkerer, especializado en reconocimiento óptico de caracteres (OCR) a nivel de recorte sobre imágenes de texto japonés, chino, coreano e inglés. Combina un codificador visual SigLIP2 NaFlex (~86M parámetros) de Google con un decodificador transformer causal propio de 12 capas y atención GQA, y transcribe texto denso, estilizado, horizontal y vertical en un único paso hacia delante, sin necesidad de una etapa intermedia de detección de líneas (DBNet, YOLO).
 
-La innovacion principal de la version 2.5 es el `DSCProjector` (Downsampling Spatial Convolution), que reorganiza los embeddings de parches en una rejilla 2D y aplica un *pixel unshuffle* 2x para reducir cuatro parches a un unico token. Esto rebaja un 75% el numero de tokens visuales que consume el decodificador, con la consiguiente reduccion de la latencia de prefill y del consumo de KV cache. El modelo anade ademas escalado residual aprendible por canal y una cabeza auxiliar de clasificacion IDS de 226 clases usada solo durante el entrenamiento para reforzar la discriminacion de glifos CJK poco frecuentes.
+El modelo está diseñado específicamente para reconocimiento a nivel de recorte (crop-level), no de página completa: para escanear páginas enteras debe emparejarse con un detector de texto externo. Su principal innovación en esta versión es un proyector denominado DSCProjector que aplica un pixel unshuffle 2x sobre las embeddings de parches, reduciendo en un 75% el número de tokens visuales que consume el decodificador y, con ello, la latencia de prefill y el consumo de memoria de la caché KV.
 
-El modelo es relevante en el nicho de la digitalizacion de manga y documentos CJK porque ofrece una alternativa de muy bajo coste computacional a los VLM generalistas. Segun los datos publicados por el autor, con un presupuesto de 512 parches alcanza un CER del 3,10% y un *exact match* del 80,68% en el benchmark JMangaBench_Mixed (3.286 recortes), superando a MangaOCR (~150M) en el mismo conjunto. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial, aunque la fecha de creacion del repositorio indicada en Hugging Face (2026-09-20) y sus cero descargas sugieren un modelo muy reciente y sin validacion comunitaria independiente.
+La relevancia actual del modelo reside en su relación entre tamaño, velocidad y calidad para OCR de CJK estilizado (manga, light novels, paneles densos) en hardware modesto, con licencia Apache 2.0. No obstante, el propio autor marca esta versión como obsoleta en la model card y recomienda migrar a Hayai OCR v2.7 Supernova.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision-language: codificador SigLIP2 NaFlex (~86M) + decodificador transformer causal propio de 12 capas con GQA, SwiGLU y QK RMSNorm |
-| Parametros totales | 156.915.968 (~157M) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (la generacion se documenta con `max_new_tokens=128`; los tokens visuales del decodificador varian entre <=64 y <=128 segun `max_num_patches`) |
-| Tipos de cuantizacion | No disponible (no se documenta GGUF, AWQ, GPTQ ni FP8) |
-| Idiomas soportados | Ingles (en), japones (ja), chino (zh), coreano (ko) |
+| Arquitectura | Vision-language: codificador SigLIP2 NaFlex + decodificador transformer causal de 12 capas con GQA y mRoPE 2D |
+| Parámetros totales | 156.915.968 (~157M) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (el presupuesto espacial se controla con `max_num_patches`: 256, 384 o 512) |
+| Tipos de cuantización | No disponible (pesos en safetensors; el modelo card menciona autocasting FP16 en CUDA) |
+| Idiomas soportados | Inglés, japonés, chino, coreano |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (libreria `transformers`, requiere `trust_remote_code=True`) |
+| Formato de pesos | Safetensors (librería transformers, requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un VLM de arquitectura encoder-decoder asimetrica. El codificador es SigLIP2 NaFlex, que escala dinamicamente la imagen preservando la relacion de aspecto segun un presupuesto de parches (`max_num_patches` de 256, 384 o 512). El decodificador es un transformer causal de 12 capas con `d_model=512`, `d_ffn=2048`, 8 cabezas de consulta y 2 cabezas KV (GQA), activacion SwiGLU y RMSNorm aplicado a Q y K. Sobre la rejilla espacial comprimida se aplica un mRoPE bidimensional (2D multi-dimensional RoPE), y las conexiones residuales incorporan parametros de escala aprendibles por canal (`attn_res_scale`, `ffn_res_scale`, inicializados a 1,0) para estabilizar la propagacion en profundidad.
+El modelo acopla el codificador visual SigLIP2 NaFlex de Google (~86M parámetros, variante base patch16 con escalado dinámico que preserva la relación de aspecto) a un decodificador transformer causal propio de 12 capas con `d_model=512`, `d_ffn=2048`, 8 cabezas de consulta y 2 cabezas KV (GQA), activación SwiGLU y QK RMSNorm. La conexión entre ambos módulos se realiza mediante el DSCProjector: reordena las embeddings de parches en una rejilla 2D, aplica replicación de padding, un pixel unshuffle 2x (4 parches a 1 token), LayerNorm, una MLP y RMSNorm. El decodificador emplea atención causal por bloques y RoPE multidimensional 2D (mRoPE) sobre la rejilla espacial comprimida.
 
-La innovacion estructural es el `DSCProjector`: reshape de las embeddings de parches a rejilla 2D, *replicate pad*, *pixel unshuffle* 2x (4 parches -> 1 token), LayerNorm, MLP y RMSNorm. Con ello, los tokens visuales que ve el decodificador se reducen un 75% respecto a v2.1, lo que abarata los presupuestos altos de parches. Durante el entrenamiento se anade una cabeza auxiliar de clasificacion IDS de 226 clases para afinar la discriminacion a nivel de caracter en glifos CJK raros; esta cabeza no se usa en inferencia, por lo que no anade coste. La ruta de inferencia incluye KV-cache estatico preasignado, RoPE de texto 1D precalculado y autocasting FP16 en CUDA.
-
-No se detalla en la informacion disponible el numero de tokens de entrenamiento ni si hubo fases de RLHF o DPO. Los datasets citados en la model card son `globis-university/aozorabunko-clean`, `hal-utokyo/Manga109-s`, `JustANormalTinkerer/Japanese-Dialogue-Dataset`, `wikimedia/wikipedia`, `JustANormalTinkerer/hayai-dataset-merged` y `alpindale/light-novels`, lo que situa el dominio de entrenamiento en manga, novelas ligeras, literatura japonesa y texto enciclopedico.
+Entre las innovaciones técnicas destacan el escalado residual aprendible por canal (`attn_res_scale`, `ffn_res_scale`, inicializados a 1.0) para estabilizar la propagación en profundidad, una ruta de inferencia con caché KV estática preasignada y cachés RoPE de texto 1D precalculadas, y un entrenamiento auxiliar con una cabeza de clasificación de 226 clases de Ideographic Description Sequences (IDS) para afinar la discriminación de glifos CJK poco frecuentes (solo en entrenamiento, sin coste en inferencia). Los datos de entrenamiento citados en la model card incluyen Aozora Bunko Clean, Manga109-s, Japanese-Dialogue-Dataset, Wikipedia, hayai-dataset-merged y light-novels; no se especifica el número total de tokens ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Reconocimiento optico de caracteres a nivel de recorte en japones, chino, coreano e ingles, con soporte de texto horizontal y vertical.
-- Transcripcion de texto denso y estilizado (tipografias de manga, rotulacion, onomatopeyas) sin etapa previa de deteccion de lineas.
-- Extraccion de imagen a texto directa mediante `model.generate()`, con tokenizer `PreTrainedTokenizerFast` y procesador SigLIP2 NaFlex.
-- Ajuste del equilibrio precision/latencia mediante el presupuesto de parches (`max_num_patches` de 256, 384 o 512), que determina el numero de tokens visuales del decodificador.
-- Ejecucion en FP16 sobre CUDA con autocasting, KV-cache estatico y RoPE precalculado para maximizar throughput.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, modo thinking, audio ni vision general (la salida es texto transcrito).
-- Capacidades multilingues limitadas a los cuatro idiomas listados; no hay evidencia de soporte para otras lenguas.
+- Transcripción de texto a nivel de recorte en japonés, chino, coreano e inglés, incluyendo texto vertical, horizontal, denso y estilizado (manga, light novels, paneles).
+- Reconocimiento en un único paso hacia delante sin detector intermedio de líneas de texto.
+- Control del presupuesto espacial mediante `max_num_patches` (256 para throughput, 384 equilibrado, 512 para glifos pequeños o paneles densos).
+- Decodificación greedy estándar recomendada, con `repetition_penalty=1.0` para OCR.
+- Inferencia optimizada con caché KV estática y autocasting FP16 en CUDA.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión general (más allá de OCR), audio ni modo de pensamiento.
 
 ## Casos de uso
 
-- Digitalizacion de manga y comics: el modelo reconoce recortes de paneles con texto vertical japones y tipografias estilizadas, por lo que se integraria detras de un detector de texto (tipo DBNet o YOLO) que genere los recortes y los envie al OCR para obtener el guion transcrito.
-- Pipelines de scanlation y traduccion automatica: al ser un modelo de ~157M y 0,6 GB, puede ejecutarse en la misma GPU que el modelo de traduccion, transcribiendo cada recorte y encadenando la salida a un sistema de traduccion ja->es o ja->en.
-- Extraccion de texto en videojuegos y capturas de pantalla: con recortes de interfaz o cajas de dialogo en CJK, el modelo permite construir subtitulos o bases de datos de cadenas sin necesidad de OCR en la nube.
-- Indexacion y busqueda sobre documentos escaneados: transcripcion por lotes de libros y articulos en japones o chino para alimentar un indice de texto o un sistema RAG, aprovechando el bajo coste por pagina frente a VLM de mayor tamano.
-- Procesamiento de subtitulos quemados en video: extraccion fotograma a fotograma de los recortes de subtitulo y deduplicacion posterior, con el presupuesto de 256 parches para maximizar el throughput en emision o ingesta masiva.
-- Digitalizacion de fondos bibliograficos y archivos historicos en japones: el modelo fue entrenado sobre `aozorabunko-clean` y `wikipedia`, lo que lo hace adecuado para texto impreso limpio y columnas verticales tradicionales.
-- Moderacion y analitica de contenido en redes sociales: deteccion y transcripcion de texto incrustado en imagenes en cuatro idiomas para clasificacion posterior de contenido o busqueda interna.
-- Procesamiento por lotes de alto volumen en GPU de gama baja: gracias a los ~157M de parametros y a la compresion 4x de tokens visuales, es viable desplegarlo en una unica NVIDIA T4 para miles de recortes por hora.
+- Digitalización de manga y cómics: el modelo transcribe bocadillos y rótulos recortados por un detector externo, manejando texto vertical y tipografías estilizadas gracias a su entrenamiento sobre Manga109-s y datos de diálogo japonés.
+- Traducción asistida de obras japonesas y coreanas: integrado en un pipeline de detección de texto más OCR más traducción, permite extraer el texto original de cada globo con una CER del 3,10% con 512 parches en JMangaBench_Mixed.
+- Procesamiento por lotes de alto volumen: con `max_num_patches=256` y menos de 64 tokens visuales en el decodificador, es adecuado para pipelines masivos donde prima el throughput sobre la precisión máxima.
+- Extracción de texto de light novels y documentos escaneados: su entrenamiento con Aozora Bunko Clean, Wikipedia y light-novels lo orienta a texto impreso limpio en japonés e inglés.
+- Digitalización de señalización y cartelería CJK: recortes de texto corto en chino, japonés y coreano pueden transcribirse con latencias bajas en GPU de gama media o incluso consumer.
+- Preprocesado para sistemas RAG o bases de datos documentales: la salida de texto puede alimentar indexación y búsqueda sobre corpus de imágenes escaneadas.
+- Despliegue en entornos con recursos limitados: sus ~157M parámetros y su reducción de tokens visuales permiten ejecutarlo en GPUs modestas (el autor reporta latencias medidas en una NVIDIA T4).
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en JMangaBench_Mixed (3.286 recortes) bajo normalizacion Unicode NFKC, con latencias relativas medidas en una NVIDIA T4:
+Resultados publicados en la model card sobre JMangaBench_Mixed (3.286 recortes, normalización NFKC, latencias en NVIDIA T4):
 
-| `max_num_patches` | Tokens visuales | CER (↓) | Exact Match (↑) | CER solo texto (↓) | EM solo texto (↑) | Latencia relativa |
-| ---: | :--- | :--- | :--- | :--- | :--- | :--- |
-| 256 | <= 64 | 4,95% | 75,35% | 3,54% | 82,65% | 1,00x (base) |
-| 384 (por defecto) | <= 96 | 3,65% | 79,15% | 2,36% | 86,31% | ~1,19x |
-| 512 (maxima calidad) | <= 128 | 3,10% | 80,68% | 1,78% | 88,04% | ~1,34x |
+| `max_num_patches` | Tokens visuales (decodificador) | CER ↓ | Exact Match ↑ | CER solo texto ↓ | EM solo texto ↑ | Latencia relativa |
+|---|---|---|---|---|---|---|
+| 256 | ≤ 64 | 4,95% | 75,35% | 3,54% | 82,65% | 1,00x (base) |
+| 384 (por defecto) | ≤ 96 | 3,65% | 79,15% | 2,36% | 86,31% | ~1,19x |
+| 512 (calidad máxima) | ≤ 128 | 3,10% | 80,68% | 1,78% | 88,04% | ~1,34x |
 
-Comparativa parcial publicada en el mismo benchmark (la tabla de la model card aparece truncada en la informacion disponible):
-
-| Modelo | Parametros | CER (↓) | Exact Match (↑) | CER solo texto (↓) | EM solo texto (↑) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| MangaOCR | ~150M | 4,68% | 73,52% | 2,70% | 82,87% |
-| BaberuOCR | No disponible | No disponible | No disponible | No disponible | No disponible |
-| Hayai OCR v2.5 Nova (512 parches) | ~157M | 3,10% | 80,68% | 1,78% | 88,04% |
-
-El autor indica ademas que, en recortes densos, subir de 256 a 512 parches reduce el CER del 7,43% al 2,70%. No se han publicado resultados de benchmarks en la informacion disponible para tareas distintas del OCR (MMLU, HumanEval, GSM8K u otras).
+No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, ni comparativas numéricas con modelos de OCR alternativos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con ~157M de parametros, los pesos en FP16 ocupan aproximadamente 0,31 GB; sumando activaciones y KV-cache, el consumo se mantiene por debajo de 1-2 GB en los presupuestos de parches documentados.
-- GPU recomendadas: NVIDIA T4 (es la GPU en la que se midieron las latencias relativas publicadas), A100 y H100 para despliegues de alto volumen en lote; tambien es funcional en GPU de consumo.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050/3060/4090). Tambien puede ejecutarse en CPU, aunque el autor no publica cifras de latencia para ese caso.
-- Opciones de despliegue: `transformers` con `AutoModel.from_pretrained(..., trust_remote_code=True)`, tokenizer `PreTrainedTokenizerFast` y `AutoProcessor` de `google/siglip2-base-patch16-naflex`. No hay soporte documentado para vLLM, TGI, llama.cpp ni Ollama, y no se publican pesos GGUF; el codigo personalizado (atencion block-causal y mRoPE 2D) obliga a usar la implementacion del autor.
-- Latencia y throughput estimados: solo se publican latencias relativas sobre T4 (1,00x con 256 parches, ~1,19x con 384 y ~1,34x con 512). Los valores absolutos en milisegundos por recorte no estan disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita; con ~157M parámetros en FP16 el peso del modelo ronda los 0,3 GB, por lo que la mayor parte del consumo proviene de activaciones y caché KV, que se reducen un 75% en tokens visuales respecto a v2.1.
+- GPU recomendadas: el autor reporta mediciones de latencia en NVIDIA T4; por tamaño, el modelo cabe holgadamente en GPUs consumer (RTX 3060, RTX 4090, etc.) y en GPUs de datacenter (A100, H100).
+- Cabe en GPU consumer: sí, dado su tamaño de ~157M parámetros.
+- Opciones de despliegue: transformers con `trust_remote_code=True` (ruta oficial documentada); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no se publican valores absolutos, solo latencias relativas (1,00x, ~1,19x y ~1,34x según el presupuesto de parches) medidas en T4.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Contexto / tokens visuales | CER (JMangaBench_Mixed) | Licencia | Disponibilidad |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Hayai OCR v2.5 Nova | ~157M | en, ja, zh, ko | Hasta 128 tokens visuales (512 parches) | 3,10% | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
-| MangaOCR | ~150M | ja (principalmente) | No disponible | 4,68% | No disponible en la informacion proporcionada | Hugging Face |
-| BaberuOCR | No disponible | No disponible | No disponible | No disponible (tabla truncada) | No disponible | No disponible |
+| Modelo | Parámetros | Contexto / presupuesto espacial | Idiomas | Licencia | Estado |
+|---|---|---|---|---|---|
+| Hayai OCR v2.5 Nova | ~157M | `max_num_patches` 256–512 | en, ja, zh, ko | Apache 2.0 | Obsoleto según el autor; sustituido por v2.7 Supernova |
+| Hayai OCR v2.1 | No disponible (mismo backbone: SigLIP2 ~86M + decodificador 12 capas) | 1 parche = 1 token (sin compresión 4x) | en, ja, zh, ko | Apache 2.0 | Versión anterior |
+| Hayai OCR v2.7 Supernova | No disponible | No disponible | No disponible | No disponible | Versión recomendada por el autor |
 
-Frente a MangaOCR, el modelo declara un CER 1,58 puntos mejor y un exact match 7,16 puntos superior en el mismo benchmark, ademas de cubrir cuatro idiomas en lugar de centrarse en japones. La comparacion con BaberuOCR no puede completarse porque la tabla de la model card llega truncada en la informacion disponible. No se dispone de datos para comparar con VLM generalistas tipo Qwen2-VL o InternVL en esta tarea concreta.
+No se dispone en la información proporcionada de datos comparativos con otros modelos de OCR (por ejemplo, PaddleOCR, TrOCR o Manga OCR) en cuanto a parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- El modelo esta disenado exclusivamente para reconocimiento a nivel de recorte: para escanear paginas completas hay que emparejarlo con un detector de texto (DBNet, YOLO u otro), ya que no realiza deteccion de lineas.
-- El decodificador es muy compacto (12 capas, `d_model=512`), lo que limita su capacidad para tareas distintas del OCR y para contextos textuales largos; el propio autor recomienda `max_new_tokens=128`.
-- Riesgo de alucinacion en recortes vacios, ruidosos o con muy poco texto, comportamiento comun en modelos generativos de OCR sin validacion externa.
-- Cobertura idiomatica restringida a ingles, japones, chino y coreano; no hay evidencia de rendimiento en otras lenguas ni en alfabetos no CJK.
-- El dominio de entrenamiento esta sesgado hacia manga, novelas ligeras, Wikipedia y literatura japonesa; el rendimiento en documentos administrativos, formularios o manuscritos no esta documentado.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo publicado en el repositorio del autor; conviene auditar ese codigo antes de desplegarlo en produccion.
-- No hay soporte de cuantizacion ni formatos GGUF, y el codigo personalizado (atencion block-causal, mRoPE 2D) impide usar aceleradores estandar como vLLM o llama.cpp.
-- La licencia Apache 2.0 permite uso comercial, pero al no existir validacion independiente ni resultados replicados por terceros, la adopcion en produccion deberia ir precedida de una evaluacion propia sobre el corpus objetivo.
-- Se recomienda mantener `repetition_penalty=1.0` (desactivado); otros valores pueden degradar la transcripcion segun el autor.
+- Modelo marcado como obsoleto por el propio autor, que recomienda usar Hayai OCR v2.7 Supernova en su lugar.
+- Diseñado exclusivamente para reconocimiento a nivel de recorte: para páginas completas requiere un detector de texto externo, y su uso sin detector producirá resultados deficientes.
+- La calidad depende del presupuesto de parches elegido; con 256 parches la CER sube al 4,95% frente al 3,10% con 512.
+- Riesgo de alucinación inherente a los modelos generativos: puede producir caracteres o palabras plausibles no presentes en la imagen, especialmente en glifos raros o imágenes de baja calidad.
+- Cobertura lingüística limitada a inglés, japonés, chino y coreano; no se documenta soporte para otras lenguas.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del autor; conviene auditar el código antes de usarlo en producción.
+- No se documentan sesgos específicos ni evaluaciones de robustez fuera de JMangaBench; el rendimiento en dominios distintos (documentos administrativos, manuscritos, fotografías) no está validado en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero el estado obsoleto del modelo desaconseja adoptarlo en nuevos proyectos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2.5-nova
-- Repositorio de utilidades hayai-ocr en GitHub: https://github.com/NopeNopeGuy/hayai-ocr
-- Benchmark JMangaBench_Mixed: https://github.com/muscgab/JMangaBench_Mixed/
-- Procesador SigLIP2 NaFlex empleado: https://huggingface.co/google/siglip2-base-patch16-naflex
-- Dataset globis-university/aozorabunko-clean: https://huggingface.co/datasets/globis-university/aozorabunko-clean
-- Dataset hal-utokyo/Manga109-s: https://huggingface.co/datasets/hal-utokyo/Manga109-s
-- Dataset JustANormalTinkerer/Japanese-Dialogue-Dataset: https://huggingface.co/datasets/JustANormalTinkerer/Japanese-Dialogue-Dataset
-- Dataset JustANormalTinkerer/hayai-dataset-merged: https://huggingface.co/datasets/JustANormalTinkerer/hayai-dataset-merged
-- Dataset alpindale/light-novels: https://huggingface.co/datasets/alpindale/light-novels
-- Dataset wikimedia/wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia
-- No se han encontrado enlaces adicionales relevantes en la busqueda web; los resultados devueltos correspondian a un portal de anuncios sin relacion con el modelo.
+- Versión recomendada (v2.7 Supernova): https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2.7-supernova
+- Repositorio GitHub hayai-ocr: https://github.com/NopeNopeGuy/hayai-ocr
+- JMangaBench_Read: https://github.com/muscgab/JMangaBench_Read
+- JMangaBench_Mixed: https://github.com/muscgab/JMangaBench_Mixed/
+- Codificador SigLIP2 NaFlex: https://huggingface.co/google/siglip2-base-patch16-naflex
+- Dataset Aozora Bunko Clean: https://huggingface.co/datasets/globis-university/aozorabunko-clean
+- Dataset Manga109-s: https://huggingface.co/datasets/hal-utokyo/Manga109-s
+- Dataset Japanese-Dialogue-Dataset: https://huggingface.co/datasets/JustANormalTinkerer/Japanese-Dialogue-Dataset
+- Dataset hayai-dataset-merged: https://huggingface.co/datasets/JustANormalTinkerer/hayai-dataset-merged
+- Dataset light-novels: https://huggingface.co/datasets/alpindale/light-novels
+- Dataset Wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia

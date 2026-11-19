@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "w-run/mimi-0.5B-alpha",
+  "slug": "w-run-mimi-0-5b-alpha",
+  "author": "w-run",
+  "url": "https://huggingface.co/w-run/mimi-0.5B-alpha",
+  "created_at": "2026-11-19T06:11:16.000Z",
+  "updated_at": "2026-11-19T06:30:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "chinese",
+    "small-language-model",
+    "conversational",
+    "custom-architecture",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1061426743,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "W - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/W",
+      "snippet": "W (minuscule: w) is the twenty-third letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "Définitions : w - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/w/82670",
+      "snippet": "Vingt-troisième lettre de l'alphabet français, servant à noter soit la consonne [v] (par exemple wagon), soit la semi-voyelle [w] (par …"
+    }
+  ]
+}

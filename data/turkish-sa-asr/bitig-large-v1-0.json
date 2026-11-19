@@ -5,9 +5,9 @@
   "author": "turkish-sa-asr",
   "url": "https://huggingface.co/turkish-sa-asr/bitig-large-v1.0",
   "created_at": "2026-11-04T21:57:43.000Z",
-  "updated_at": "2026-11-18T09:57:50.000Z",
-  "license": "pre-release-evaluation",
-  "license_family": "unknown",
+  "updated_at": "2026-11-19T09:31:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
   "library": "transformers",
   "languages": [
@@ -27,7 +27,7 @@
     "dataset:mozilla-foundation/common_voice_17_0",
     "base_model:openai/whisper-large-v3",
     "base_model:finetune:openai/whisper-large-v3",
-    "license:other",
+    "license:apache-2.0",
     "model-index",
     "endpoints_compatible",
     "region:us"
@@ -45,7 +45,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": true,
+  "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,

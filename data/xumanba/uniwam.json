@@ -5,7 +5,7 @@
   "author": "xumanba",
   "url": "https://huggingface.co/xumanba/UniWAM",
   "created_at": "2026-11-18T08:07:31.000Z",
-  "updated_at": "2026-11-18T08:42:57.000Z",
+  "updated_at": "2026-11-18T12:38:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 78751381506,
+  "storage_human": "78.8 GB",
   "context_length": null,
   "base_model": null,
   "formats": [
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "xumanba/UniW-A-M",
+  "renamed_at": "2026-11-19T11:26:13.820Z",
   "benchmarks": [],
   "sources": []
 }

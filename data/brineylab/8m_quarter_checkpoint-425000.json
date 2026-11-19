@@ -5,7 +5,7 @@
   "author": "brineylab",
   "url": "https://huggingface.co/brineylab/8M_quarter_checkpoint-425000",
   "created_at": "2025-05-14T18:07:21.000Z",
-  "updated_at": "2026-11-12T20:41:43.000Z",
+  "updated_at": "2026-11-18T19:19:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",

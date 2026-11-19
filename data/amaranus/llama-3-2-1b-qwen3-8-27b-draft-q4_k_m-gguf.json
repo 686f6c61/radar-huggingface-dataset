@@ -5,7 +5,7 @@
   "author": "amaranus",
   "url": "https://huggingface.co/amaranus/Llama-3.2-1B-Qwen3.8-27B-Draft-Q4_K_M-GGUF",
   "created_at": "2026-11-18T10:07:23.000Z",
-  "updated_at": "2026-11-18T10:07:32.000Z",
+  "updated_at": "2026-11-18T10:24:25.000Z",
   "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

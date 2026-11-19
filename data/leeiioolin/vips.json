@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "leeiioolin/ViPS",
+  "slug": "leeiioolin-vips",
+  "author": "leeiioolin",
+  "url": "https://huggingface.co/leeiioolin/ViPS",
+  "created_at": "2026-10-24T12:50:33.000Z",
+  "updated_at": "2026-11-19T09:41:24.000Z",
+  "license": "vips",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "vips",
+    "spatial-understanding",
+    "video-question-answering",
+    "visual-priors",
+    "lora",
+    "arxiv:2607.15054",
+    "en",
+    "dataset:nyu-visionx/VSI-Bench",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11857126834,
+  "storage_human": "11.9 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

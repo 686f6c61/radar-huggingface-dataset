@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "chimbiwide/Gemma3NPC-4B-post-thinking",
+  "slug": "chimbiwide-gemma3npc-4b-post-thinking",
+  "author": "chimbiwide",
+  "url": "https://huggingface.co/chimbiwide/Gemma3NPC-4B-post-thinking",
+  "created_at": "2026-06-10T20:33:36.000Z",
+  "updated_at": "2026-11-19T06:02:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:chimbiwide/AIIDE-POST-THINKING",
+    "base_model:google/gemma-3-4b-pt",
+    "base_model:finetune:google/gemma-3-4b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238629594,
+  "storage_human": "17.2 GB",
+  "context_length": null,
+  "base_model": "google/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Rueil-Malmaison 92500 (adresse, téléphone et horaires)",
+      "url": "https://alternativi.fr/annuaire/lidl/rueil-malmaison-92500",
+      "snippet": "Nov 8, 2026 · Lidl à Rueil-Malmaison, situé dans le code postal 92500, est une destination incontournable pour les adeptes de …"
+    }
+  ]
+}

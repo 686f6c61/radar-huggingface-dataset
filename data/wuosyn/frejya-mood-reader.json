@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "wuosyn/frejya-mood-reader",
+  "slug": "wuosyn-frejya-mood-reader",
+  "author": "wuosyn",
+  "url": "https://huggingface.co/wuosyn/frejya-mood-reader",
+  "created_at": "2026-11-19T05:33:06.000Z",
+  "updated_at": "2026-11-19T05:33:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "frejya",
+    "mood",
+    "text-classification",
+    "en",
+    "dataset:google-research-datasets/go_emotions",
+    "base_model:google/bert_uncased_L-2_H-128_A-2",
+    "base_model:finetune:google/bert_uncased_L-2_H-128_A-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4387339,
+  "parameters_human": "4.4M",
+  "storage_bytes": 17553956,
+  "storage_human": "18 MB",
+  "context_length": null,
+  "base_model": "google/bert_uncased_L-2_H-128_A-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-modal Mood Reader: Pre-trained Model Empowers Cross-Subject ...",
+      "url": "http://go/v1/AeMQn_Kk2I1gav6QnAG3vy2IJLjGDpvMI2g635BrgWMpLdDsG4xOXB52KVmD4wzyB31lPvt0rgcPVtnNTlhVz1zGEpNstac2rmxwTTF-r6dqIixhXl4XlnG1u9uzzQPT65Q0ATw7dHJJdYMQi2eevuA8iIfTvayGR-fTLgkoR-1_KvqCNlNvd9DDyCJHej8K8a_9ai0E",
+      "snippet": "An attention-based interlinked spatial-temporal mechanism captures the intrinsic spatio-temporal information from DE features extracted from EEG data. Additionally, a set of similar temporal attention blocks analyzes corresponding eye movement features, aiming to complement the shortcomings ..."
+    },
+    {
+      "title": "Multi-modal Mood Reader: Pre-trained Model Empowers Cross-Subject ...",
+      "url": "http://go/v1/AeMQn_Kk2I1gav6QnAG3vy2IJLjGDpvMI2g635BrgteD9EkpnSj1Wa6Fi9lCCtzp6b7mnpY-nJ0HMomu1fjgRwUhA9AGfsyd3fOFei2EnrfA3m0NPAzwGKOUwSQ8YklvYZSRlXc9yHcbhMMgh4BkTG8dhFpucrhIPv6WKkIr0mZUTBvudm-vgTUGFU6GV9rjmeVRCg",
+      "snippet": "An attention-based interlinked spatial-temporal mechanism captures the intrinsic spatio-temporal information from DE features extracted from EEG data. Additionally, a set of similar temporal attention blocks analyzes corresponding eye movement features, aiming to complement the shortcomings ..."
+    }
+  ]
+}

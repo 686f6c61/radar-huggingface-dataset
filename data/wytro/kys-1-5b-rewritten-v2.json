@@ -12,6 +12,7 @@
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "kys",
     "know-your-sources",
     "nanotron",
@@ -28,7 +29,9 @@
   "storage_human": "343.0 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

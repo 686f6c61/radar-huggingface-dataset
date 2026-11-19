@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 665,
+  "downloads_30d": 3818,
   "trending_score": 0,
   "parameters": 122111526912,
   "parameters_human": "122.11B",
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Jetzt ROSSMANN Angebote entdecken | rossmann.de",
-      "url": "https://www.rossmann.de/de/angebote/m/angebote",
-      "snippet": "Jetzt noch mehr sparen: Entdeckt auch die ROSSMANN App, mit der ihr von besonderen Coupons und Angeboten profitiert. Einfach …"
-    },
-    {
-      "title": "Alle ROSSMANN Prospekte auf einen Blick | rossmann.de",
-      "url": "https://www.rossmann.de/de/angebote/prospekte",
-      "snippet": "Alle ROSSMANN Prospekte Entdeckt alle aktuell gültigen ROSSMANN Prospekte und werft einen Blick in unsere zukünftigen …"
-    },
-    {
-      "title": "Jetzt den ROSSMANN Angebote Blätterkatalog entdecken | rossmann.de",
-      "url": "https://www.rossmann.de/de/kataloge/angebote/index.html",
-      "snippet": "Aktuelle Produkte aus dem ROSSMANN Angebote Blätterkatalog finden Online im Prospekt blättern Artikel aus der Werbung im …"
-    },
-    {
-      "title": "ROSSMANN - Mein Drogeriemarkt, Meine Online-Drogerie",
-      "url": "https://www.rossmann.de/de/",
-      "snippet": "Über den ROSSMANN Onlineshop kannst du dich kostenlos für unseren Babyclub in der babywelt-App anmelden und von vielen …"
-    },
-    {
-      "title": "Jobs & Karriere bei ROSSMANN",
-      "url": "https://jobs.rossmann.de/",
-      "snippet": "Vielfältige Jobs und ein einzigartiges Miteinander – für uns ganz normal. Finden Sie Ihren Job bei ROSSMANN!"
-    }
-  ]
+  "sources": []
 }

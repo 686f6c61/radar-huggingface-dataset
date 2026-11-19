@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "compressionsavant/gpt2-124M",
+  "slug": "compressionsavant-gpt2-124m",
+  "author": "compressionsavant",
+  "url": "https://huggingface.co/compressionsavant/gpt2-124M",
+  "created_at": "2026-01-30T19:13:57.000Z",
+  "updated_at": "2026-11-19T10:34:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "ishiki-labs",
   "url": "https://huggingface.co/ishiki-labs/ishiki-asr-0.5",
   "created_at": "2026-11-16T20:08:53.000Z",
-  "updated_at": "2026-11-16T22:40:55.000Z",
+  "updated_at": "2026-11-19T01:32:03.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

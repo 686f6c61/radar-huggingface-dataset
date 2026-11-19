@@ -5,7 +5,7 @@
   "author": "disillusioned",
   "url": "https://huggingface.co/disillusioned/Huihui-CyberStrike-Offsec-35B-abliterated-NVFP4",
   "created_at": "2026-11-18T07:38:27.000Z",
-  "updated_at": "2026-11-18T08:07:44.000Z",
+  "updated_at": "2026-11-18T08:18:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",

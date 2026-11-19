@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "jrubiosainz/microduck-sock-heist-ca3-n19b-f1f7305a",
+  "slug": "jrubiosainz-microduck-sock-heist-ca3-n19b-f1f7305a",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-sock-heist-ca3-n19b-f1f7305a",
+  "created_at": "2026-11-19T07:39:13.000Z",
+  "updated_at": "2026-11-19T07:39:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1210624,
+  "storage_human": "1 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

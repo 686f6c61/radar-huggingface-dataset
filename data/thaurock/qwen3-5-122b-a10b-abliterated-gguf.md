@@ -2,109 +2,90 @@
 
 ## Resumen
 
-Thaurock/Qwen3.5-122B-A10B-abliterated-GGUF es una colección de cuantizaciones en formato GGUF del modelo Qwen3.5-122B-A10B-abliterated, un modelo de lenguaje de arquitectura MoE (mezcla de expertos) con 122 mil millones de parámetros totales y 10 mil millones de parámetros activos por token. El modelo original fue desarrollado por el equipo Qwen de Alibaba y posteriormente procesado por el usuario wangzhang mediante el framework Abliterix, que elimina los mecanismos internos de alineación y rechazo de seguridad. Este repositorio, publicado por Thaurock, se limita a ofrecer los pesos ya abliterados en distintos niveles de cuantización GGUF.
+Qwen3.5-122B-A10B-abliterated-GGUF es una colección de cuantizaciones en formato GGUF del modelo Qwen3.5-122B-A10B-abliterated, un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 122.111.526.912 parámetros totales según los pesos en safetensors. El modelo original procede del Qwen3.5-122B-A10B del equipo Qwen de Alibaba, que fue posteriormente procesado por wangzhang mediante el framework Abliterix para eliminar los mecanismos internos de alineación y rechazo de seguridad, dando lugar a la variante "abliterated" (sin censura). Thaurock se encarga de la compilación y publicación de las cuantizaciones GGUF.
 
-La aportación principal del repositorio es la variedad de cuantizaciones: desde F16 a ~244 GB hasta Q2_K a ~47 GB, pasando por Q5_K_M (~87 GB), que el autor señala como el punto de equilibrio recomendado, y Q4_K_M (~75 GB), descrito como la variante más buscada. Todos los archivos se distribuyen como ficheros únicos e íntegros, pensados para su uso directo con llama.cpp, Ollama, LM Studio o Text-Generation-WebUI.
+El problema que resuelve esta ficha es el de proporcionar una vía de despliegue local de un modelo MoE de gran escala (122B) en hardware de gama alta, mediante 11 variantes de cuantización que van desde F16 (~244,3 GB) hasta Q2_K (~44,9 GB). Al conservar la arquitectura MoE nativa, el modelo activa únicamente un subconjunto de parámetros por token (A10B sugiere aproximadamente 10 mil millones de parámetros activos), lo que reduce el coste computacional por token frente a un modelo denso del mismo tamaño total.
 
-El modelo resulta relevante para quienes necesitan ejecutar localmente un MoE de gran tamaño sin filtros de contenido y con una tasa de rechazo estimada del 0,5 % según el autor, conservando las capacidades de razonamiento lógico, generación de código y comprensión contextual del modelo base. La licencia declarada es Apache 2.0.
+Es relevante ahora porque combina tres factores poco habituales en un mismo artefacto: escala MoE de 122B, licencia Apache 2.0 (permisiva para uso comercial) y una variante sin filtros de seguridad con una tasa de rechazo estimada del 0,5% según la model card. Está pensado para desarrolladores e investigadores que necesitan inferencia local con llama.cpp, Ollama, LM Studio o Text-Generation-WebUI, y que aceptan la responsabilidad del contenido generado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos), transformer |
-| Parametros totales | 122 mil millones (122B) |
-| Parametros activos | 10 mil millones (A10B) |
+| Arquitectura | Mixture-of-Experts (MoE), familia Qwen3.5 |
+| Parametros totales | 122.111.526.912 (~122B) |
+| Parametros activos | no disponible (la nomenclatura A10B sugiere ~10B activos, sin confirmación oficial) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Tipos de cuantizacion | F16 (16,00 BPW), Q8_0 (8,50 BPW), Q6_K (6,59 BPW), Q5_K_M (5,69 BPW), Q5_K_S (5,54 BPW), Q4_K_M (4,85 BPW), Q4_K_S (4,58 BPW), Q3_K_L (4,01 BPW), Q3_K_M (3,66 BPW), Q3_K_S (3,44 BPW), Q2_K (2,90 BPW) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (ficheros unicos) |
-| Modelo base | wangzhang/Qwen3.5-122B-A10B-abliterix |
-| Framework de abliteracion | Abliterix |
-| Descargas | 0 |
-| Likes | 0 |
+| Formato de pesos | GGUF (archivos únicos); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es de tipo MoE (mezcla de expertos) con 122B de parametros totales y 10B activos. Esto implica que, aunque el modelo completo debe residir en memoria, el coste computacional por token se aproxima al de un modelo denso de unos 10B de parametros activos, mientras que la huella de memoria se corresponde con el total de 122B (mas el cache KV). El autor no documenta en la model card el numero de expertos, el numero de capas, la dimension oculta ni la longitud de contexto.
+La arquitectura es Mixture-of-Experts (MoE) dentro de la familia Qwen3.5. El repositorio no detalla el número de expertos, el número de expertos activados por token, la dimensión oculta ni la configuración de atención; solo se confirma la naturaleza MoE y el recuento total de parámetros (122.111.526.912). La designación A10B en el nombre apunta a un régimen de activación de aproximadamente 10 mil millones de parámetros por token, pero este dato no está verificado en la información disponible.
 
-Sobre el entrenamiento no se ofrece informacion en la model card: no se indica el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF o DPO. El unico proceso documentado es la abliteracion posterior mediante el framework Abliterix, que segun el autor desmantela los mecanismos internos de alineacion y rechazo, dejando una tasa de rechazo estimada del 0,5 %. Los pesos resultantes se han convertido a GGUF con distintas precisiones, desde 16,00 BPW (F16) hasta 2,90 BPW (Q2_K).
+El modelo base Qwen3.5-122B-A10B fue desarrollado por el equipo Qwen de Alibaba; no se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO en los materiales consultados. La modificación "abliterated" fue aplicada por wangzhang mediante el framework Abliterix, que según la model card desmantela los mecanismos internos de alineación y rechazo, con una tasa de rechazo estimada del 0,5%. Thaurock realizó la conversión y cuantización a GGUF, incluyendo archivos únicos por variante y un `SHA256SUMS.txt` para verificación de integridad.
 
 ## Capacidades
 
-- Generacion de texto general, con enfasis en razonamiento logico y comprension contextual segun la model card.
-- Generacion y asistencia en codigo.
-- Respuestas sin restricciones de contenido: al estar abliterado, no aplica rechazos de seguridad.
-- Instrucciones mediante plantilla de chat estilo ChatML (`<|im_start|>system`, `<|im_start|>user`, `<|im_start|>assistant`), tal como se muestra en el ejemplo de consola de la model card.
-- Compatibilidad de despliegue con llama.cpp, Ollama, LM Studio y Text-Generation-WebUI.
-- Soporte de tool calling, function calling, modo de razonamiento explicito (thinking), vision, audio o agentes multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno, orientada a diálogo.
+- Razonamiento lógico y comprensión contextual, según la model card.
+- Generación y asistencia en código (codificación), según la model card.
+- Respuestas sin rechazo ante peticiones que el modelo base rechazaría, con tasa de rechazo estimada del 0,5%.
+- Compatibilidad con endpoints y pipelines de text-generation-inference (tag `endpoints_compatible`).
+- Inferencia local mediante llama.cpp, Ollama, LM Studio y Text-Generation-WebUI.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y multi-step reasoning: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible (idiomas no declarados).
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo de gama alta: con la variante Q4_K_M (~75 GB) el modelo se puede ejecutar combinando VRAM y RAM en un equipo con una o varias GPUs consumer, sin depender de APIs externas.
-- Procesamiento de datos y textos sin restricciones tematicas: al no aplicar filtros de rechazo, resulta util para tareas de analisis o redaccion sobre contenidos que los modelos alineados suelen declinar.
-- Generacion de codigo en entornos controlados: el modelo conserva las capacidades de codificacion del base, por lo que puede asistir en tareas de programacion sobre un repositorio propio con llama.cpp o servidores compatibles con la API de OpenAI.
-- Investigacion sobre alineacion y seguridad: comparar este modelo abliterado con su version base permite estudiar que comportamientos y capacidades se ven afectados al eliminar las capas de rechazo.
-- Ajuste fino adicional (fine-tuning) o destilacion: las variantes de mayor precision (F16, Q8_0) sirven como referencia para trabajos posteriores, aunque el formato GGUF exige reconvertir antes de entrenar.
-- Despliegue en clusters con multiples GPUs empresariales: las variantes F16 (~244 GB) y Q8_0 (~130 GB) estan pensadas para infraestructuras tipo A100 o H100 en configuracion multi-GPU.
-- Experimentacion con cuantizacion extrema: las variantes Q2_K y Q3_K permiten evaluar el comportamiento de un MoE grande en entornos con memoria muy limitada, sabiendo que el autor advierte de posibles bucles gramaticales e incoherencias logicas.
+- Despliegue local de un MoE de 122B en estaciones de trabajo: con la variante Q4_K_M (~74,2 GB) se puede combinar RAM y VRAM para ejecutar el modelo en setups avanzados con GPU como la Nvidia A100, manteniendo el comportamiento MoE nativo.
+- Generación de texto creativo sin restricciones de contenido: la variante abliterated elimina los rechazos del modelo base, por lo que resulta adecuada para escritura de ficción, guiones o ensayos donde el modelo original declinaría la petición.
+- Investigación sobre alineación y seguridad: comparar las respuestas del modelo base Qwen3.5-122B-A10B con esta variante abliterated permite estudiar qué comportamientos cambian al eliminar los mecanismos de rechazo, con una tasa de rechazo residual del 0,5%.
+- Experimentación con cuantización extrema en arquitecturas MoE: las variantes Q3_K_S (~52,9 GB) y Q2_K (~44,9 GB) permiten medir la degradación de coherencia en MoE bajo compresión, documentada en la model card como propensa a bucles gramaticales e incoherencias lógicas severas.
+- Asistencia en código en entornos aislados: al ser Apache 2.0 y ejecutable con llama.cpp de forma totalmente local, puede integrarse en flujos de trabajo sin conexión a servicios externos, siempre que se valide la calidad del código generado.
+- Servicio de inferencia autohospedado: con la variante Q8_0 (~129,9 GB) o Q6_K (~100,3 GB) en GPUs de gran VRAM se obtiene una calidad prácticamente indistinguible del F16, útil para servir conversaciones multi-turno con alta fidelidad lógica.
+- Verificación de integridad en pipelines de descarga: el archivo `SHA256SUMS.txt` permite automatizar la comprobación de hashes tras la descarga de archivos de hasta 244,3 GB, evitando corrupción en despliegues reproducibles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de tamano que siguen son estimaciones del propio autor basadas en el peso nativo en safetensors; el tamano final en disco puede variar. Para inferencia hay que sumar a ese tamano el cache KV y el overhead del runtime.
-
-| Cuantizacion | Tamano estimado | BPW | Perfil de uso |
-|---|---|---|---|
-| F16 | ~244,0 GB | 16,00 | Multiples GPUs empresariales o clusters en la nube |
-| Q8_0 | ~130,0 GB | 8,50 | Tarjetas de gran VRAM (A100 y similares) |
-| Q6_K | ~101,0 GB | 6,59 | Setups de entusiastas extremos |
-| Q5_K_M | ~87,0 GB | 5,69 | Punto de equilibrio recomendado por el autor |
-| Q5_K_S | ~85,0 GB | 5,54 | Optimizacion de limites de VRAM en multi-GPU |
-| Q4_K_M | ~75,0 GB | 4,85 | Estacion de trabajo local combinando RAM y VRAM |
-| Q4_K_S | ~71,0 GB | 4,58 | Prioriza velocidad de inferencia |
-| Q3_K_L | ~63,0 GB | 4,01 | Sistemas donde los 4 bits exceden la memoria |
-| Q3_K_M | ~58,0 GB | 3,66 | Posible degradacion en respuestas avanzadas |
-| Q3_K_S | ~55,0 GB | 3,44 | Prioriza espacio fisico |
-| Q2_K | ~47,0 GB | 2,90 | Compresion extrema, solo experimentacion |
-
-- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas el cache KV y el overhead del runtime. No se dispone de cifras de cache KV porque se desconoce la longitud de contexto y la configuracion de capas.
-- GPU recomendadas segun el propio autor: A100 o Nvidia CMP 170HX para Q8_0; multiples GPUs empresariales para F16; configuraciones multi-GPU para Q5.
-- Cabe en GPU consumer: el autor situa Q4_K_M y variantes inferiores como aptas para estaciones de trabajo locales combinando RAM y VRAM, lo que sugiere offloading parcial a memoria del sistema.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y Text-Generation-WebUI.
-- Latencia y throughput: no disponible. Cabe senalar que, al tratarse de un MoE con solo 10B parametros activos, el coste de computo por token es inferior al de un denso de 122B, aunque el ancho de banda de memoria sigue condicionado por el tamano total de los pesos.
+- VRAM estimada según cuantización (tamaños de archivo de la model card): F16 ~244,3 GB; Q8_0 ~129,9 GB; Q6_K ~100,3 GB; Q5_K_M ~86,9 GB; Q5_K_S ~84,2 GB; Q4_K_M ~74,2 GB; Q4_K_S ~69,7 GB; Q3_K_L ~63,4 GB; Q3_K_M ~58,6 GB; Q3_K_S ~52,9 GB; Q2_K ~44,9 GB.
+- GPU recomendadas: el F16 requiere múltiples GPUs empresariales o clusters en la nube; Q8_0 y Q6_K están pensados para tarjetas de gran VRAM; Q4_K_M se cita para setups avanzados con Nvidia A100; Q3_K_L se menciona para setups con Nvidia CMP 170HX.
+- ¿Cabe en GPU de consumo? No se indica compatibilidad con GPUs de consumo; los perfiles citados son A100, CMP 170HX y clusters multi-GPU. Para Q4_K_M y variantes menores se sugiere combinar RAM del sistema y VRAM.
+- Opciones de despliegue: llama.cpp (CLI `llama-cli`), Ollama, LM Studio, Text-Generation-WebUI y text-generation-inference (tag `endpoints_compatible`).
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Thaurock/Qwen3.5-122B-A10B-abliterated-GGUF | 122B | 10B | no disponible | Apache 2.0 | GGUF | Abliterado, coleccion de cuantizaciones |
-| wangzhang/Qwen3.5-122B-A10B-abliterix | 122B | 10B | no disponible | Apache 2.0 | no disponible | Modelo base abliterado del que deriva este repositorio |
-| Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
-
-No se dispone de informacion sobre modelos de la misma categoria con la que establecer una comparacion cuantitativa fiable.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.5-122B-A10B-abliterated-GGUF (este) | ~122B (MoE) | no disponible | Apache 2.0 | GGUF | Sin censura, 11 cuantizaciones |
+| Qwen3.5-122B-A10B (modelo base, familia Qwen) | ~122B (MoE) | no disponible | no disponible | no disponible | Con alineación de seguridad original |
+| wangzhang/Qwen3.5-122B-A10B-abliterix | ~122B (MoE) | no disponible | no disponible | safetensors | Variante abliterated en safetensors |
+| Otros modelos de ~120B de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Ausencia de filtros de seguridad: el modelo ha sido abliterado y respondera a practicamente cualquier peticion. El contenido generado es responsabilidad exclusiva de quien ejecuta la inferencia.
-- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; el comportamiento del modelo base en este aspecto no esta documentado en la ficha.
-- Degradacion por cuantizacion: el propio autor advierte que las variantes Q3 y, de forma mas acusada, Q2_K pueden producir bucles gramaticales e incoherencias logicas severas en arquitecturas MoE.
-- Longitud de contexto desconocida: no se especifica la ventana de contexto, lo que impide planificar despliegues que dependan de conversaciones o documentos largos.
-- Idiomas no especificados: se desconoce el soporte real de idiomas distintos del ingles (o del chino, en el caso de la familia Qwen).
-- Informacion de entrenamiento ausente: no se documentan datos de entrenamiento, por lo que no se pueden evaluar sesgos de composicion del dataset.
-- Repositorio sin validacion social: 0 descargas y 0 likes en el momento de redactar la ficha, sin benchmarks publicados ni evaluaciones independientes.
-- Licencia: Apache 2.0, que permite uso comercial, pero el propio modelo declara carecer de filtros y traslada la responsabilidad del uso al operador.
-- Dependencia del modelo base: la calidad final depende enteramente del trabajo de abliteracion previo de wangzhang, que no se documenta en detalle.
+- Ausencia de filtros de seguridad: el modelo ha sido abliterated y puede generar contenido dañino, ilegal o socialmente inapropiado; la responsabilidad recae en quien ejecuta la inferencia, según el descargo de la model card.
+- Riesgo de alucinación: no se han publicado métricas de fiabilidad factual; al tratarse de un modelo sin benchmarks disponibles, la verificación humana de las salidas es imprescindible.
+- Degradación por cuantización: la model card advierte que las arquitecturas MoE complejas pueden sufrir degradación parcial en Q3_K_M y, en Q2_K, bucles gramaticales e incoherencias lógicas severas; Q2_K se recomienda solo para experimentación.
+- Idiomas: no se declaran los idiomas soportados, por lo que el rendimiento multilingüe no está garantizado ni documentado.
+- Contexto: la longitud de contexto no está especificada, lo que impide planificar aplicaciones que dependan de ventanas largas.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base procede de Qwen y la variante abliterated debe evaluarse legalmente en cada jurisdicción antes de su despliegue en producción.
+- Tamaño de descarga: el repositorio ocupa 1009,2 GB; los archivos individuales llegan a 244,3 GB, por lo que se recomienda verificar la integridad con `SHA256SUMS.txt` tras cada descarga.
+- Trazabilidad limitada: la información disponible no detalla la configuración MoE, el contexto ni los datos de entrenamiento, lo que dificulta reproducir o auditar el comportamiento del modelo.
 
 ## Enlaces
 
-- Repositorio Hugging Face de las cuantizaciones GGUF: https://huggingface.co/Thaurock/Qwen3.5-122B-A10B-abliterated-GGUF
-- Modelo base abliterado: https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix
-- Perfil del autor de la abliteracion: https://huggingface.co/wangzhang
-- Perfil del autor de las cuantizaciones: https://huggingface.co/Thaurock
-- Paper, blog, repositorio del framework Abliterix o demo: no disponible en la informacion proporcionada.
+- Repositorio GGUF: https://huggingface.co/Thaurock/Qwen3.5-122B-A10B-abliterated-GGUF
+- Modelo base abliterated (wangzhang): https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix
+- Perfil del autor de las cuantizaciones (Thaurock): https://huggingface.co/Thaurock
+- Equipo Qwen de Alibaba: no disponible enlace específico en la información proporcionada
+- Paper, blog o demo del framework Abliterix: no disponible enlace en la información proporcionada

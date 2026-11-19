@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 92,
+  "downloads_30d": 78,
   "trending_score": 0,
   "parameters": 125239296,
   "parameters_human": "125.2M",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "ikimyaii/OPT-125M-semi-structured-EHWS-80pct",
-  "renamed_at": "2026-11-11T05:39:09.379Z",
+  "renamed_to": "ikimyaii/OPT-125M-semi-structured-EHWS-80pct-v1",
+  "renamed_at": "2026-11-19T07:35:24.952Z",
   "benchmarks": [],
   "sources": []
 }

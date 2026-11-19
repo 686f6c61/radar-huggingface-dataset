@@ -2,106 +2,113 @@
 
 ## Resumen
 
-karpo-decision-31B es un modelo de decisión desarrollado por MachinePulseAI, un fine-tune de google/gemma-4-31B-it orientado a una tarea muy concreta: dado un estado (una página web, un documento, una conversación, cualquier texto o JSON) y un conjunto de preguntas tipadas sobre ese estado, devuelve una probabilidad para cada opción de cada pregunta en un único forward pass, sin generar texto. No es un modelo conversacional ni de generación: la salida es una distribución de probabilidad sobre opciones predefinidas.
+Karpo Decision 31B es un modelo de decisión multimodal desarrollado por MachinePulseAI, afinado a partir de google/gemma-4-31B-it. Su particularidad es que no genera texto: dado un estado (una página web con su captura de pantalla, un documento, una conversación en texto, JSON e imágenes) y una serie de preguntas tipadas, devuelve en una única pasada forward una probabilidad para cada opción de cada pregunta. Está pensado como un "modelo de sistema uno": decisiones rápidas y probabilísticas en lugar de generación autoregresiva.
 
-El modelo parte de los 31.273.088.876 parámetros de Gemma 4 31B-it en bf16 y añade un readout lineal de 255 × 5.376 en fp32 sobre las representaciones del decoder. Soporta tres tipos de pregunta: `choice` (hasta 255 opciones), `noul` (verdadero o falso) y `score` (un nivel en una escala). La ventana de contexto es de 32.768 tokens por secuencia y, si una petición excede ese límite, se divide por preguntas manteniendo el estado completo en cada parte.
+El modelo tiene 31.273.088.876 parámetros en bf16 más un readout lineal de 255 × 5.376 en fp32, con una ventana de contexto de 32.768 tokens por secuencia. Soporta tres tipos de pregunta: `choice` (hasta 255 opciones), `noul` (verdadero/falso) y `score` (un nivel en una escala). Se distribuye con licencia Apache-2.0 y una API Python junto con un servidor HTTP en el formato System One.
 
-Su relevancia radica en la sustitución de la generación de texto por una lectura directa de probabilidades en tareas de clasificación y decisión, lo que elimina el coste de decodificación autoregresiva y el riesgo de formatos inválidos en la salida. Se publica bajo licencia Apache-2.0 y declara un Decision Index 0.3 público de 75,05 (autoinformado, corregido por azar) sobre 140.178 peticiones puntuadas.
+Su relevancia actual radica en que ocupa el primer puesto del leaderboard Decision Index 0.4.1 (edición del 12 de noviembre de 2026) con una puntuación Full de 73,9, compartiendo el primer lugar con GLiDE 27B (73,4) dentro del margen de 0,9 puntos que agrupa a los modelos. Frente a los modelos generativos, ofrece latencia de 94 ms por petición en una sola GPU, lo que lo hace atractivo para pipelines de clasificación y enrutamiento de alta frecuencia.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Gemma 4) con readout lineal sobre opciones |
-| Parametros totales | 31.273.088.876 (31,3B) en bf16, más readout de 255 × 5.376 en fp32 |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer multimodal (base Gemma 4 31B) con readout lineal sobre opciones |
+| Parámetros totales | 31.273.088.876 (bf16) + readout 255 × 5.376 (fp32) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 32.768 tokens por secuencia |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del decoder de google/gemma-4-31B-it al que se le añade un readout lineal de 255 × 5.376 en fp32 sobre las representaciones del modelo base. En lugar de generar una secuencia de tokens, el modelo proyecta el estado oculto sobre las opciones de cada pregunta y produce directamente una distribución de probabilidad por opción en un solo forward pass. Las preguntas se tipifican en tres clases: `choice` con hasta 255 opciones con criterios etiquetados, `noul` con salida P(verdadero) y `score` con un nivel sobre una escala.
+El modelo parte de google/gemma-4-31B-it, un transformer multimodal que procesa texto e imágenes, y le añade un readout lineal de 255 × 5.376 en fp32 sobre las opciones de cada pregunta. En lugar de generar texto token a token, el modelo calcula en una sola pasada forward la probabilidad de cada opción de cada pregunta tipada (`choice`, `noul`, `score`). La entrada es multimodal: texto, JSON e imágenes, incluyendo una captura de pantalla en `state.viewport_screenshot` o data URLs en `images`. Cuando una petición excede los 32.768 tokens, se divide por preguntas, cada parte con el estado completo.
 
-Los detalles del entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO o técnicas de alineación) no están disponibles en la información proporcionada. La model card únicamente indica que se trata de un fine-tune con readout añadido y que los pesos de visión del modelo base permanecen en el checkpoint pero no se utilizan.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card solo indica que es un fine-tune del modelo base con un readout lineal, sin detallar la innovación técnica más allá de la propia formulación de decisión tipada en una pasada. La calibración declarada es de 4,8 puntos de error.
 
 ## Capacidades
 
-- Decisión tipada sobre un estado: responde preguntas `choice`, `noul` y `score` devolviendo probabilidades por opción en un único forward pass.
-- Procesamiento de estados heterogéneos: acepta texto libre, JSON, documentos, páginas web o conversaciones como estado de entrada.
-- Salida estructurada con probabilidades y nivel de confianza por pregunta, sin generación de texto.
-- Soporte de múltiples preguntas por petición, cada una con sus propias opciones y criterios.
-- Partición automática de peticiones que exceden los 32.768 tokens por preguntas, manteniendo el estado completo en cada parte.
-- Servidor HTTP integrado (`POST /v1/systemone`, `GET /healthz`) para despliegue como servicio.
-- Integración con el kit Decision Index mediante un engine dedicado.
-- Capacidades de visión: los pesos están presentes en el checkpoint pero no se utilizan (modelo solo texto).
+- Decisión tipada multimodal: responde preguntas de tipo `choice` (hasta 255 opciones), `noul` (verdadero/falso) y `score` (nivel en una escala) sobre un estado dado.
+- Entrada multimodal: procesa texto, JSON e imágenes, incluyendo capturas de pantalla de páginas web y data URLs.
+- Decisión en una pasada forward: devuelve probabilidades por opción sin generar texto, lo que reduce la latencia frente a modelos generativos.
+- Contexto de 32.768 tokens por secuencia, con división automática de peticiones largas por preguntas.
+- Interfaz Python y servidor HTTP en el formato System One (`POST /v1/systemone`).
+- Capacidades de conocimiento y razonamiento, comprensión del lenguaje, recuperación y clasificación, herramientas y automatización, y artes y gusto humano, según las categorías del Decision Index.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Enrutamiento y triaje de tickets de soporte: dado el texto de una incidencia y un conjunto de categorías, el modelo devuelve la probabilidad de cada categoría en un solo paso, lo que permite umbrales de confianza y escalado automático sin parsear texto generado.
-- Evaluación de elegibilidad en políticas internas: con el estado (pedido, cliente, política) y preguntas `noul` del tipo "¿cumple la política de devolución?", se obtiene P(verdadero) directamente, como en el ejemplo de la model card con la devolución de una batidora a los 45 días frente a una política de 30.
-- Moderación de contenido con escala: preguntas `score` para asignar un nivel de gravedad a un mensaje o documento, útil en pipelines donde se necesita una puntuación ordinal en lugar de una etiqueta binaria.
-- Clasificación de documentos en pipelines de ingestión: con hasta 255 opciones por pregunta `choice`, se puede mapear un documento a taxonomías amplias (tipo, departamento, sensibilidad) en una sola pasada.
-- Automatización de decisiones en agentes: el servidor HTTP permite que un orquestador consulte al modelo como un servicio de decisión de baja latencia, sin coste de decodificación autoregresiva y sin riesgo de formatos inválidos.
-- Extracción de señales en conversaciones multi-turno: dado el historial completo como estado (hasta 32.768 tokens), responder preguntas sobre intención, satisfacción o siguiente acción del agente.
-- Evaluación comparativa de modelos de decisión: el engine de Decision Index permite reproducir la suite pública y comparar el modelo con alternativas sobre las mismas 140.178 peticiones.
+- Clasificación y enrutamiento de tickets de soporte: el modelo recibe el texto del ticket y su captura de pantalla asociada y devuelve la probabilidad de cada categoría o cola de destino en una sola pasada, con latencia de 94 ms por petición, lo que permite procesar grandes volúmenes en tiempo real.
+- Decisión sobre páginas web y formularios: dado el DOM y la captura de pantalla de una página, responde preguntas `choice` sobre qué acción tomar (rellenar un campo, hacer clic en un botón, descartar), adecuado para automatización de navegación y testing de interfaces.
+- Evaluación de documentos con preguntas tipadas: sobre un documento o JSON, el modelo responde preguntas `noul` (¿contiene esta cláusula?) y `score` (nivel de riesgo en una escala), útil en revisión contractual y cumplimiento normativo.
+- Moderación y filtrado de contenido: con preguntas `noul` sobre texto e imágenes, el modelo emite probabilidades de que un contenido cumpla o incumpla una política, aprovechando la calibración declarada de 4,8 puntos de error.
+- Enrutamiento en pipelines de agentes: como "sistema uno" que decide rápidamente qué herramienta o subagente invocar a partir del estado de la conversación, antes de delegar en un modelo generativo de "sistema dos".
+- Análisis de conversaciones multi-turno: con 32.768 tokens de contexto, el modelo evalúa el estado completo de una conversación y responde preguntas `score` sobre satisfacción o intención, adecuado para analítica de atención al cliente.
+- Verificación de extracción de datos: comparar el JSON extraído con la imagen del documento original mediante preguntas `noul` por campo, como paso de control de calidad en pipelines de OCR y extracción estructurada.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (Decision Index 0.3, suite pública, 140.178 peticiones puntuadas, 11 no soportadas; autoinformado, no verificado):
+| Benchmark | Métrica | Valor | Notas |
+|---|---|---|---|
+| Decision Index 0.4.1, Full score | decision_index_full | 73,86 | Leaderboard del 12 de noviembre de 2026; rank #1 de 300 entradas |
+| Decision Index 0.4.1, tests privados mismas habilidades | escala pública | 70,7 | 60% de los tests privados |
+| Decision Index 0.4.1, tareas de nuevos dominios | escala pública | 78,6 | 40% de los tests privados |
+| Decision Index 0.3, índice público | decision_index | 75,05 | Corregido por azar; ejecución propia del kit oficial |
+| Índice bruto (0.3) | raw index | 80,9 | — |
+| Breadth (0.3) | breadth | 74,7 | — |
+| Knowledge & Reasoning (0.3) | — | 65,5 | — |
+| Language Understanding (0.3) | — | 76,8 | — |
+| Retrieval & Classification (0.3) | — | 76,4 | — |
+| Tools & Automation (0.3) | — | 88,4 | — |
+| Arts & Human Taste (0.3) | — | 68,2 | — |
+| Latencia mediana | — | 94 ms por petición | Una GPU, una petición a la vez |
+| Error de calibración | — | 4,8 puntos | — |
 
-| Metrica | Valor |
-|---|---|
-| Public index (corregido por azar) | 75,05 |
-| Raw index | 80,90 |
-| Breadth | 74,69 |
-| Knowledge & Reasoning | 65,46 |
-| Language Understanding | 76,78 |
-| Retrieval & Classification | 76,42 |
-| Tools & Automation | 88,39 |
-| Arts & Human Taste | 68,21 |
-
-El autor indica que la puntuación Full (tests privados del leaderboard) se añadirá cuando se publique. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+El suite público consta de 140.178 peticiones puntuadas, con 11 no soportadas (preguntas que junto con su estado superan los 32.768 tokens). El leaderboard agrupa en un mismo rank a los modelos dentro de 0,9 puntos del primero: karpo-decision-31B (73,9) y GLiDE 27B (73,4) comparten el #1.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan 62,5 GB en bf16, por lo que se necesita al menos una GPU con 80 GB de memoria para cargar el modelo completo; las peticiones largas requieren más memoria adicional.
-- GPU recomendadas: A100 80 GB, H100 80 GB o H200. No cabe en GPUs de consumo (RTX 4090 con 24 GB, RTX 3090 con 24 GB) sin cuantización, y no se documentan tipos de cuantización disponibles.
-- Despliegue: el autor proporciona un servidor HTTP propio (`torchrun --standalone --nproc_per_node 1 -m karpo_decision.serve.server`) y un engine para el kit Decision Index. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- La model card indica "una GPU" para la inferencia; no se publican cifras de latencia ni throughput.
-- Instalación del cliente: `pip install "karpo-decision @ git+https://github.com/machinepulse-ai/karpo-decision"`.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 31,3B parámetros en bf16 los pesos ocupan aproximadamente 62,6 GB, por lo que se necesita al menos una GPU de 80 GB en bf16.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, una A100 80 GB o H100 80 GB permitirían cargar los pesos en bf16.
+- ¿Cabe en GPU de consumo? No en bf16; se requeriría cuantización, cuyos tipos no están documentados.
+- Opciones de despliegue: API Python y servidor HTTP en el formato System One (`POST /v1/systemone`) incluidos por el autor; compatibilidad con vLLM, llama.cpp, Ollama o TGI no disponible.
+- Latencia y throughput: latencia mediana de 94 ms por petición en una GPU con una petición a la vez; throughput no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparables de otros modelos de decisión en la información proporcionada. La comparación con el modelo base es la siguiente:
+| Modelo | Parámetros | Contexto | Decision Index 0.4.1 Full | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| karpo-decision-31B | 31,3B | 32.768 | 73,9 (rank #1) | Apache-2.0 | Hugging Face |
+| GLiDE 27B | 27B (aprox.) | no disponible | 73,4 (rank #1 compartido) | no disponible | no disponible |
+| karpo-decision-12B | 12,0B | no disponible | no disponible | no disponible | Hugging Face |
+| karpo-decision-9B | 8,4B | no disponible | no disponible | no disponible | Hugging Face |
 
-| Modelo | Parametros | Contexto | Tarea | Licencia |
-|---|---|---|---|---|
-| karpo-decision-31B | 31,3B + readout 255×5.376 | 32.768 tokens | Decisión tipada con probabilidades | Apache-2.0 |
-| google/gemma-4-31B-it (base) | 31,3B | No disponible en la informacion | Generación de texto e imagen | Apache-2.0 |
-
-No se conocen alternativas públicas de la misma categoría (modelos de decisión con readout lineal sobre opciones) en la información disponible.
+Dentro de la propia familia Karpo Decision existen variantes de 12B (base Gemma 4 12B), 9B y 4B (base Qwen3.5) y 2B, pero no se han proporcionado sus puntuaciones en el Decision Index 0.4.1. No se dispone de datos de benchmarks de modelos comparables de otros autores más allá de GLiDE 27B.
 
 ## Limitaciones y advertencias
 
-- Modelo solo texto: los pesos de visión están en el checkpoint pero no se utilizan.
-- No es un modelo de chat ni de generación de texto; la generación no fue evaluada.
-- Las probabilidades no están calibradas (temperatura 1.0), por lo que los umbrales de confianza deben validarse en cada caso de uso.
-- Una pregunta que no cabe en 32.768 tokens junto con su estado se rechaza, nunca se trunca; en la suite pública esto afectó a 11 de 140.178 peticiones.
-- El modelo siempre elige una de las opciones proporcionadas: no puede responder "ninguna de las anteriores" salvo que se incluya como opción.
-- El resultado del Decision Index es autoinformado y no verificado; la puntuación Full (tests privados) aún no está publicada.
-- No se documentan sesgos conocidos, idiomas soportados ni limitaciones idiomáticas.
-- Licencia Apache-2.0 para pesos y código de inferencia, derivada de google/gemma-4-31B-it (Apache-2.0); no se indican restricciones adicionales para uso comercial.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en producción.
+- El modelo no genera texto: solo emite probabilidades sobre opciones predefinidas, por lo que no sirve para tareas generativas.
+- Límite de 32.768 tokens por secuencia; las peticiones más largas se dividen por preguntas, lo que puede perder contexto global.
+- Máximo de 255 opciones por pregunta de tipo `choice`.
+- Los resultados del Decision Index son declarados por el autor y no están verificados (`verified: false` en el model-index); conviene tratarlos con cautela.
+- El leaderboard agrupa a modelos dentro de 0,9 puntos, por lo que el #1 se comparte con GLiDE 27B y no es una ventaja concluyente.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades pueden estar mal calibradas fuera de la distribución de entrenamiento (error de calibración de 4,8 puntos en el suite evaluado).
+- Idiomas soportados: no disponible; no se garantiza cobertura multilingüe más allá de la del modelo base.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base google/gemma-4-31B-it, de la que depende.
+- No hay información sobre cuantizaciones disponibles ni sobre el rendimiento en GPUs de consumo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MachinePulseAI/karpo-decision-31B
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Modelo base (pre-entrenamiento): https://huggingface.co/google/gemma-4-31B
-- Código de inferencia: https://github.com/machinepulse-ai/karpo-decision
-- Kit Decision Index: https://github.com/apolinario/decision-index
-- Resultados del Decision Index: https://huggingface.co/datasets/MachinePulseAI/karpo-decision-31B-decision-index/tree/main/runs/karpo-decision-31B
-- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Repositorio GitHub: https://github.com/machinepulse-ai/karpo-decision
+- Leaderboard Decision Index: https://huggingface.co/spaces/multimodalart/jev-decision-index
+- Resultados del run en el Decision Index: https://huggingface.co/datasets/MachinePulseAI/karpo-decision-31B-decision-index
+- Licencia: https://huggingface.co/MachinePulseAI/karpo-decision-31B/blob/main/LICENSE
+- Variante 12B: https://huggingface.co/MachinePulseAI/karpo-decision-12B
+- Variante 9B: https://huggingface.co/MachinePulseAI/karpo-decision-9B
+- Variante 4B: https://huggingface.co/MachinePulseAI/karpo-decision-4B

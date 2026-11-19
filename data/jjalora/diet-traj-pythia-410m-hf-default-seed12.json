@@ -5,7 +5,7 @@
   "author": "jjalora",
   "url": "https://huggingface.co/jjalora/diet-traj-pythia-410m-hf-default-seed12",
   "created_at": "2026-10-24T17:11:12.000Z",
-  "updated_at": "2026-11-03T00:15:14.000Z",
+  "updated_at": "2026-11-19T00:20:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1521,
+  "downloads_30d": 1539,
   "trending_score": 0,
   "parameters": 405334016,
   "parameters_human": "405.3M",

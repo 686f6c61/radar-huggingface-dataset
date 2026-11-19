@@ -2,97 +2,91 @@
 
 ## Resumen
 
-`owlvit-base-patch32-mic` es un artefacto de prueba (fixture) publicado por la organización `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable en producción: se trata de una versión reducida artificialmente del modelo `google/owlvit-base-patch32` de Google, con pesos aleatorios (semilla 17) y una configuración de arquitectura encogida. Su propósito es servir como fixture de test para validar contratos de integración de frameworks (en este caso, Transformers) sin necesidad de descargar ni ejecutar el checkpoint original completo.
+`owlvit-base-patch32-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable en produccion: se trata de una version reducida artificialmente del modelo `google/owlvit-base-patch32`, un detector de objetos de vocabulario abierto basado en la arquitectura OWL-ViT. El repositorio empaqueta pesos "slim", uso ejecutable y expectativas de framework en un unico lugar, con el objetivo de servir como fixture de integracion para el proyecto transformers-mic.
 
-El modelo conserva la arquitectura `OwlViTForObjectDetection` (detección de objetos open-vocabulary que combina un codificador de texto tipo CLIP con un codificador visual ViT), pero con solo 2 capas ocultas en el codificador de texto y 2 en el codificador visual, frente a las 12 de la versión base de Google. El resultado son 3.552.198 parámetros totales, almacenados en float32. Los ficheros de procesador (tokenizer, preprocessor) se copian byte a byte del modelo original.
+El fixture conserva la misma arquitectura (`OwlViTForObjectDetection`) y los mismos nombres de tensores que el checkpoint real, pero reduce el numero de capas del encoder de texto y del encoder de vision a 2 en cada caso, lo que deja el modelo en 3.552.198 parametros. Los pesos son aleatorios (semilla 17), generados sin entrenamiento, y pasaron una puerta de sensibilidad de entrada que verifica que cada perturbacion de las entradas mueve los logits al menos 0,001. Los ficheros del procesador (tokenizer, preprocessor) se copian byte a byte desde el modelo original.
 
-La relevancia de este repositorio es puramente de ingeniería de software: permite a los mantenedores de Transformers y de frameworks de inferencia verificar que sus pipelines de carga, tokenización y forward pass funcionan correctamente con la arquitectura OWL-ViT, sin coste computacional ni de almacenamiento. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos. Cualquier uso como detector de objetos real produciría resultados sin sentido.
+Su relevancia no es la inferencia real, sino la validacion de integraciones: permite comprobar que un pipeline de Transformers carga, ejecuta y propaga gradientes correctamente para OWL-ViT sin descargar el checkpoint completo. El tag `test-artifact` lo excluye deliberadamente de las busquedas de modelos candidatos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | OWL-ViT (`OwlViTForObjectDetection`): codificador de texto tipo CLIP + codificador visual ViT, detección open-vocabulary |
-| Parámetros totales | 3.552.198 |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | OWL-ViT (OwlViTForObjectDetection), transformer dual texto-vision |
+| Parametros totales | 3.552.198 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (pesos en float32; el autor indica que es finito en float32, bfloat16 y float16) |
+| Tipos de cuantizacion | no disponible (pesos en float32; finito en float32, bfloat16 y float16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Modelo base | google/owlvit-base-patch32 |
-| Dtype de los pesos | float32 |
-| Capas ocultas (texto / visión) | 2 / 2 (reducidas desde 12 del modelo base) |
-| Semilla de los pesos | 17 (pesos aleatorios) |
-| Clave de fixture | 1e4ee370dc3d |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de OWL-ViT: un transformer dual con un codificador de texto (derivado de CLIP) que procesa las consultas en lenguaje natural y un codificador visual ViT que procesa la imagen; las representaciones resultantes se alinean para producir cajas delimitadoras y puntuaciones de similitud por consulta. En este fixture, la configuración se ha encogido mediante la regla genérica de `sweep.py` del repositorio `transformers-mic`, reduciendo el número de capas ocultas a 2 tanto en el codificador de texto como en el visual. Los nombres de los tensores coinciden exactamente con los del checkpoint real, de modo que la estructura de parámetros es idéntica aunque las dimensiones sean menores.
+El modelo sigue la arquitectura OWL-ViT, un detector de objetos de vocabulario abierto que combina un encoder de texto y un encoder de vision para alinear descripciones textuales con regiones de imagen. En este fixture se mantiene la clase `OwlViTForObjectDetection` pero se reduce la configuracion: el encoder de texto queda en 2 capas ocultas y el encoder de vision en 2 capas ocultas, aplicando la regla generica de reduccion del script `sweep.py` del proyecto transformers-mic.
 
-No hubo entrenamiento alguno. Los pesos son aleatorios (semilla 17) y se validaron únicamente con una "input-sensitivity gate": cada perturbación de las entradas del contrato movía los logits al menos 0,001 (la más débil, `input_ids:roll_batch`, con 0,194), lo que garantiza que el forward pass responde a las entradas. Los ficheros de procesador (`merges.txt`, `preprocessor_config.json`, `special_tokens_map.json`, `tokenizer_config.json`, `vocab.json`) se copiaron byte a byte desde `google/owlvit-base-patch32`. El fixture se generó con `build_fixtures.py` y los orígenes, resultados de la puerta y hashes quedan registrados en `build.json`.
+No hubo entrenamiento. Los pesos son aleatorios con semilla 17 y se validaron mediante una puerta de sensibilidad de entrada: cada perturbacion de las entradas del contrato desplaza los logits al menos 0,001 (la mas debil, `input_ids:roll_batch`, con 0,194). El fixture conserva exactamente los mismos nombres de tensores que el checkpoint real y se guarda en float32, el dtype por defecto de `google/owlvit-base-patch32`. Los ficheros del procesador (`merges.txt`, `preprocessor_config.json`, `special_tokens_map.json`, `tokenizer_config.json`, `vocab.json`) se copian byte a byte del modelo original, de modo que la tokenizacion y el preprocesado son identicos.
 
 ## Capacidades
 
-- Carga y ejecución del forward pass de `OwlViTForObjectDetection` con nombres de tensores idénticos al checkpoint real.
-- Validación de pipelines de tokenización de texto y preprocesado de imagen con los ficheros de procesador copiados del modelo base.
-- Verificación de contratos de integración de frameworks (directorio `integrations/transformers/expectations`).
-- Ejecución finita en float32, bfloat16 y float16 (forward, pérdida y gradientes).
-- No realiza detección de objetos real: los pesos son aleatorios y la configuración está encogida.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües verificables.
-- No dispone de modo thinking, visión real ni audio.
+- No es un modelo funcional: los pesos son aleatorios y no producen detecciones significativas.
+- Sirve como fixture de integracion para validar la carga y ejecucion de `OwlViTForObjectDetection` en Transformers.
+- Verifica la compatibilidad de los ficheros de procesador copiados de `google/owlvit-base-patch32`.
+- Comprueba la propagacion de gradientes y la finitud numerica en float32, bfloat16 y float16 (forward, loss y gradientes).
+- Mantiene los nombres de tensores del checkpoint real para validar mapeos de pesos.
+- No dispone de tool calling, capacidades de agente, modo thinking, vision generativa ni audio.
+- No hay capacidades multilingues declaradas.
 
 ## Casos de uso
 
-- Test de integración en Transformers: cargar el fixture con `OwlViTForObjectDetection` y comprobar que el pipeline de tokenización, preprocesado de imagen y forward pass se ejecuta sin errores en CI, sin descargar el checkpoint completo de Google.
-- Validación de contratos de framework: usar `integration.json` y `integrations/transformers/expectations` para verificar que una nueva versión de Transformers mantiene la compatibilidad de la interfaz con OWL-ViT.
-- Pruebas de regresión de carga de safetensors: comprobar que el cargador de pesos mapea correctamente los nombres de tensores y detecta discrepancias de forma o dtype.
-- Verificación de estabilidad numérica: ejecutar forward, pérdida y gradientes en float32, bfloat16 y float16 para detectar NaN o infinitos en pipelines de entrenamiento.
-- Desarrollo de herramientas de inspección de modelos: usar el fixture como entrada ligera para probar utilidades que analizan configuraciones, nombres de tensores o ficheros de procesador.
-- Pruebas de empaquetado y distribución: validar que los scripts de descarga, caché y reconstrucción (`build_fixtures.py`) funcionan con repositorios de tamaño reducido antes de aplicarlos a checkpoints reales.
-- Docencia y demostraciones de arquitectura: ilustrar la estructura de OWL-ViT con un modelo de 3,6 M de parámetros que cabe en cualquier entorno, sin necesidad de GPU.
+- Pruebas de integracion en CI: ejecutar el fixture en la suite de tests para verificar que el pipeline de OWL-ViT carga y produce logits sin descargar el checkpoint completo de 600 MB.
+- Validacion de mapeos de pesos: comprobar que las herramientas de conversion o carga (por ejemplo, scripts de sharding o conversion a otros formatos) respetan los nombres de tensores del checkpoint real.
+- Pruebas de precision numerica: verificar que el forward, la loss y los gradientes son finitos en float32, bfloat16 y float16 antes de desplegar el modelo real.
+- Desarrollo de harness de evaluacion: usar el fixture como sustituto rapido en tests de regresion de pipelines de deteccion de objetos de vocabulario abierto.
+- Validacion de procesadores: comprobar que la tokenizacion y el preprocesado de imagenes, copiados byte a byte, se comportan igual que en el modelo original.
+- Test de sensibilidad de entradas: reproducir la puerta de sensibilidad que exige que cada perturbacion mueva los logits al menos 0,001, como criterio de calidad del fixture.
+- Formacion y documentacion: ejemplo minimo y ligero para explicar la estructura de un repositorio OWL-ViT sin necesidad de infraestructura pesada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo es un artefacto de prueba con pesos aleatorios, por lo que cualquier metrica de calidad (mAP, precision, recall) carece de sentido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 (3,55 M de parámetros, aproximadamente 14 MB de pesos); no requiere GPU.
-- GPU recomendadas: ninguna en particular; funciona en CPU sin problema. Cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es sobradamente suficiente, pero innecesaria.
-- Cabe en cualquier GPU consumer y en entornos sin GPU.
-- Opciones de despliegue: carga directa con Transformers (`OwlViTForObjectDetection`); no se ha validado con vLLM, llama.cpp, Ollama ni TGI, y estos frameworks no están orientados a modelos de visión de este tipo.
-- Latencia y throughput: no disponible; al ser un fixture de test, no se han publicado mediciones.
+- VRAM estimada: inferior a 1 GB en float32 para los 3,55 M de parametros; cabe en cualquier GPU consumer e incluso en CPU.
+- GPU recomendadas: no requiere GPU dedicada; cualquier GPU con al menos 1 GB de VRAM es suficiente. Una RTX 4090 o A100 estarian sobredimensionadas para este fixture.
+- Cabe en GPU consumer: si, en cualquier modelo (GTX 1050, RTX 3060, etc.) e incluso en CPU.
+- Opciones de despliegue: Transformers con PyTorch es la via natural; llama.cpp, vLLM u Ollama no estan pensados para OWL-ViT y no se documentan para este fixture.
+- Latencia y throughput: no disponibles; al ser un modelo de 2 capas por encoder, la inferencia es practicamente instantanea en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Propósito |
+| Modelo | Parametros | Contexto | Licencia | Proposito |
 |---|---|---|---|---|
-| huggingface-mic/owlvit-base-patch32-mic | 3,55 M | no disponible | no disponible | Fixture de test |
-| google/owlvit-base-patch32 | no disponible en la información proporcionada | no disponible | no disponible | Detección open-vocabulary real |
-| google/owlvit-base-patch16 | no disponible en la información proporcionada | no disponible | no disponible | Detección open-vocabulary real (parche 16) |
-| google/owlvit-large-patch14 | no disponible en la información proporcionada | no disponible | no disponible | Detección open-vocabulary real (modelo grande) |
+| owlvit-base-patch32-mic | 3.552.198 | no disponible | no disponible | Fixture de test |
+| google/owlvit-base-patch32 | no disponible en la informacion | no disponible | no disponible | Deteccion de objetos de vocabulario abierto |
+| Otros fixtures de transformers-mic | variable | no disponible | no disponible | Pruebas de integracion |
 
-La comparación relevante es únicamente estructural: el fixture replica la interfaz de `google/owlvit-base-patch32` con una configuración encogida y pesos aleatorios. No es sustituible por los modelos reales de la familia OWL-ViT para ninguna tarea de detección.
+La comparativa directa con modelos de deteccion reales no es significativa: el fixture no compite en calidad de deteccion, solo en estructura y compatibilidad con el checkpoint original.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de test explícitamente etiquetado `test-artifact`; no debe usarse como modelo de producción.
-- Los pesos son aleatorios (semilla 17): las salidas no tienen ningún significado semántico.
-- La configuración está encogida (2 capas ocultas en texto y visión frente a 12 del modelo base), por lo que el comportamiento difiere del checkpoint original incluso en estructura.
-- No se ha entrenado con RLHF, DPO ni ningún otro procedimiento; no hay datos de entrenamiento asociados.
-- La licencia no está declarada en la información disponible; conviene consultar el repositorio antes de cualquier uso, aunque el uso previsto es únicamente de test.
-- No hay información sobre sesgos, alucinación o limitaciones idiomáticas porque el modelo no genera lenguaje ni realiza inferencia útil.
-- El repositorio tiene un tamaño de 0,0 GB según la información disponible, coherente con un fixture ligero; no incluye todos los ficheros necesarios para un uso completo, que deben reconstruirse con `python example/build_fixtures.py --fixture owlvit-base-patch32-mic`.
+- Pesos aleatorios: el modelo no produce detecciones utiles ni texto coherente; no debe usarse en produccion.
+- Artefacto de prueba: el tag `test-artifact` lo excluye de busquedas de modelos candidatos; su uso previsto es exclusivamente la validacion de integraciones.
+- Licencia no disponible: no se puede confirmar el regimen de uso comercial; al derivar de `google/owlvit-base-patch32`, habria que consultar la licencia del modelo base.
+- Idiomas no disponibles: no se declara cobertura linguistica.
+- Contexto no disponible: no se especifica la longitud maxima de secuencia.
+- Riesgo de confusion: al compartir nombre y estructura con el modelo real, podria confundirse con un checkpoint funcional; conviene revisar el README antes de integrarlo.
+- Sin garantias de calidad: no hay benchmarks ni evaluacion de sesgos o alucinacion porque no hay comportamiento aprendido.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/huggingface-mic/owlvit-base-patch32-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/owlvit-base-patch32-mic
 - Modelo base: https://huggingface.co/google/owlvit-base-patch32
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/owlvit-base-patch32-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/owlvit-base-patch32-mic/blob/main/integrations/transformers/usage.md
 - Expectativas de Transformers: https://huggingface.co/huggingface-mic/owlvit-base-patch32-mic/tree/main/integrations/transformers/expectations
 - Procedencia del fixture: https://huggingface.co/huggingface-mic/owlvit-base-patch32-mic/blob/main/build.json
-- Explicación del proceso de reducción: https://huggingface-mic-mic-coverage.static.hf.space/shrink/owlvit-base-patch32-mic.html
-- Script `sweep.py`: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
-- Script `build_fixtures.py`: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py
+- Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/owlvit-base-patch32-mic.html
+- Script de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py
+- Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

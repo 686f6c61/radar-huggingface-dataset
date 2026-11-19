@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "RunningHubAI/rh-z-image-japanese-schoolgirl-sailor-style-open-knit-cardigan-with-lace-thigh-high-stockin-lora",
+  "slug": "runninghubai-rh-z-image-japanese-schoolgirl-sailor-style-open-knit-cardigan-with-lace-thigh-high-stockin-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-z-image-japanese-schoolgirl-sailor-style-open-knit-cardigan-with-lace-thigh-high-stockin-lora",
+  "created_at": "2026-11-19T05:34:01.000Z",
+  "updated_at": "2026-11-19T05:35:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342822703,
+  "storage_human": "343 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DATA SHEET NVIDIA Jetson Orin NX Series",
+      "url": "https://developer.nvidia.com/downloads/jetson-orin-nx-series-data-sheet",
+      "snippet": "The following sections outline the interfaces available on the Jetson Orin NX module and details the module pins used to interact with …"
+    },
+    {
+      "title": "NVIDIA Jetson AGX Orin 64GB Developer Kit with Ethernet",
+      "url": "https://www.amazon.com/NVIDIA-Jetson-Orin-64GB-Developer/dp/B0BYGB3WV4",
+      "snippet": "The NVIDIA Jetson AGX Orin 64GB Developer Kit makes it easy to get started with Jetson Orin. Compact size, lots of connectors, …"
+    }
+  ]
+}

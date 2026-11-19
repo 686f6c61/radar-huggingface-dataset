@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "DuoNeural/RMSN-120M-ArnoldTongue-Omega34-EVEN-Base",
+  "slug": "duoneural-rmsn-120m-arnoldtongue-omega34-even-base",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/RMSN-120M-ArnoldTongue-Omega34-EVEN-Base",
+  "created_at": "2026-11-19T04:51:22.000Z",
+  "updated_at": "2026-11-19T04:51:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neurodynamics",
+    "non-euclidean",
+    "metriplectic",
+    "clifford-algebra",
+    "soliton-waveguide",
+    "arnold-tongue",
+    "even-parity",
+    "true-silent",
+    "upstream-topology",
+    "duoneural",
+    "en",
+    "dataset:wikitext",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 480008355,
+  "storage_human": "480 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Language Modeling",
+      "dataset": "WikiText-103 (204.8M tokens)",
+      "metric": "Best Validation Perplexity",
+      "value": 82.93
+    }
+  ],
+  "sources": []
+}
